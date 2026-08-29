@@ -1,7 +1,5 @@
 # 知识库问答 @文档：从 DOM 方案到 ProseMirror 落地
 
-## Ch01.1392 知识库问答 @文档：从 DOM 方案到 ProseMirror 落地
-
 > 📊 Level ⭐⭐ | 3.5KB | `entities/prosemirror-knowledge-base-mention-vivo.md`
 
 # 知识库问答 @文档：从 DOM 方案到 ProseMirror 落地

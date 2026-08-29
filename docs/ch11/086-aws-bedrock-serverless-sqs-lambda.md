@@ -1,7 +1,5 @@
 # AWS Bedrock Serverless 异步推理：SQS + Lambda
 
-## Ch11.086 AWS Bedrock Serverless 异步推理：SQS + Lambda
-
 > 📊 Level ⭐⭐ | 10.3KB | `entities/aws-bedrock-serverless-async-inference-sqs-lambda.md`
 
 # SQS+Lambda异步管道：2000并发0%限流的工程细节

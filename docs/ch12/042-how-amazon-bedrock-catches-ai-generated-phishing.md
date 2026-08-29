@@ -1,7 +1,5 @@
 # How Amazon Bedrock catches AI-generated phishing
 
-## Ch12.042 How Amazon Bedrock catches AI-generated phishing
-
 > 📊 Level ⭐⭐ | 9.8KB | `entities/how-amazon-bedrock-catches-ai-generated-phishing.md`
 
 # How Amazon Bedrock catches AI-generated phishing

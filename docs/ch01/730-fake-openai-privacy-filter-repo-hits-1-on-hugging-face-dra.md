@@ -1,7 +1,5 @@
 # Fake OpenAI Privacy Filter Repo Hits #1 on Hugging Face, Draws 244K Downloads
 
-## Ch01.730 Fake OpenAI Privacy Filter Repo Hits #1 on Hugging Face, Draws 244K Downloads
-
 > 📊 Level ⭐⭐ | 8.6KB | `entities/thehackernews-fake-openai-privacy-filter.md`
 
 # 伪装成 OpenAI 隐私过滤器的恶意仓库：AI 供应链攻击新形态

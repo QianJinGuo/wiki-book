@@ -1,7 +1,5 @@
 # 李飞飞署名具身新论文：Sim2Real烧不起，Real2Sim量大管饱
 
-## Ch01.1053 李飞飞署名具身新论文：Sim2Real烧不起，Real2Sim量大管饱
-
 > 📊 Level ⭐⭐ | 6.0KB | `entities/李飞飞署名具身新论文sim2real烧不起real2sim量大管饱.md`
 
 # 李飞飞署名具身新论文：Sim2Real烧不起，Real2Sim量大管饱

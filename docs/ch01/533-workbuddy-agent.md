@@ -1,7 +1,5 @@
 # WorkBuddy专家团提示词全曝光：多Agent协作原来是这样产品化的
 
-## Ch01.533 WorkBuddy专家团提示词全曝光：多Agent协作原来是这样产品化的
-
 > 📊 Level ⭐⭐ | 12.0KB | `entities/workbuddy专家团提示词全曝光多agent协作原来是这样产品化的.md`
 
 # WorkBuddy专家团提示词全曝光：多Agent协作原来是这样产品化的

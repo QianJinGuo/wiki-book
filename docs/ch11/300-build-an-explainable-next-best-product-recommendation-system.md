@@ -1,7 +1,5 @@
 # Build an explainable next-best-product recommendation system for banking on AWS
 
-## Ch11.300 Build an explainable next-best-product recommendation system for banking on AWS
-
 > 📊 Level ⭐⭐ | 3.1KB | `entities/build-an-explainable-nbp-recommendation-system-on-aws.md`
 
 # Build an explainable next-best-product recommendation system for banking on AWS

@@ -1,7 +1,5 @@
 # MCP tool design: Practical approaches and tradeoffs
 
-## Ch07.022 MCP tool design: Practical approaches and tradeoffs
-
 > 📊 Level ⭐⭐ | 12.1KB | `entities/mcp-tool-design-tradeoffs-anthropic-2026.md`
 
 # MCP tool design: Practical approaches and tradeoffs

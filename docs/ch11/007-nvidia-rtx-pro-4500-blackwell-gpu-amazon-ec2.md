@@ -1,7 +1,5 @@
 # 宣布推出由-nvidia-rtx-pro-4500-blackwell-服务器版-gpu-加速的-amazon-ec2-
 
-## Ch11.007 宣布推出由-nvidia-rtx-pro-4500-blackwell-服务器版-gpu-加速的-amazon-ec2-
-
 > 📊 Level ⭐ | 1.2KB | `entities/宣布推出由-nvidia-rtx-pro-4500-blackwell-服务器版-gpu-加速的-amazon-ec2-.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/宣布推出由-nvidia-rtx-pro-4500-blackwell-服务器版-gpu-加速的-amazon-ec2-.md)

@@ -1,7 +1,5 @@
 # Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore
 
-## Ch11.134 Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore
-
 > 📊 Level ⭐⭐ | 8.2KB | `entities/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazo.md`
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazo.md)

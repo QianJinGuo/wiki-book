@@ -1,7 +1,5 @@
 # Gemma 4 与开源模型成功标准 —— Interconnects 五维评估框架
 
-## Ch01.517 Gemma 4 与开源模型成功标准 —— Interconnects 五维评估框架
-
 > 📊 Level ⭐⭐ | 12.5KB | `entities/gemma-4-open-model-adoption-framework-interconnects.md`
 
 # Gemma 4 与开源模型成功标准 —— Interconnects 五维评估框架

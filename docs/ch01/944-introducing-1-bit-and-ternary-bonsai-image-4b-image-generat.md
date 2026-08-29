@@ -1,7 +1,5 @@
 # Introducing 1-bit and Ternary Bonsai Image 4B: Image Generation for Local Devices
 
-## Ch01.944 Introducing 1-bit and Ternary Bonsai Image 4B: Image Generation for Local Devices
-
 > 📊 Level ⭐⭐ | 6.9KB | `entities/news-bonsai-image-4b.md`
 
 # Introducing 1-bit and Ternary Bonsai Image 4B: Image Generation for Local Devices

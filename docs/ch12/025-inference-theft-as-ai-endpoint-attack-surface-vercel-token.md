@@ -1,7 +1,5 @@
 # Inference Theft as AI Endpoint Attack Surface — Vercel Token Theft Defense 2026
 
-## Ch12.025 Inference Theft as AI Endpoint Attack Surface — Vercel Token Theft Defense 2026
-
 > 📊 Level ⭐⭐ | 13.1KB | `entities/vercel-inference-theft-ai-endpoint-economics-2026.md`
 
 # Inference Theft as AI Endpoint Attack Surface — Vercel Token Theft Defense 2026

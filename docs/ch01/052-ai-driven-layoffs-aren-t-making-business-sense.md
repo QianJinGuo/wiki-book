@@ -1,7 +1,5 @@
 # AI-driven layoffs aren't making business sense
 
-## Ch01.052 AI-driven layoffs aren't making business sense
-
 > 📊 Level ⭐ | 8.4KB | `entities/ai-driven-layoffs-arent-making-business-sense.md`
 
 ## 核心要点

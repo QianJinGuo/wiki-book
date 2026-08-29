@@ -1,7 +1,5 @@
 # Claude Dispatch + 接口力量：AI 从 Chatbot 到 Agent Interface 的转变
 
-## Ch09.126 Claude Dispatch + 接口力量：AI 从 Chatbot 到 Agent Interface 的转变
-
 > 📊 Level ⭐⭐ | 7.4KB | `entities/claude-dispatch-interfaces-mollick.md`
 
 # Claude Dispatch + 接口力量：AI 从 Chatbot 到 Agent Interface 的转变

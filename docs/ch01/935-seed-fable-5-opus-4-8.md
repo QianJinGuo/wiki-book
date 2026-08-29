@@ -1,7 +1,5 @@
 # Seed 开启持续进化，Fable 5 点评：Opus 4.8 水准、不比我差
 
-## Ch01.935 Seed 开启持续进化，Fable 5 点评：Opus 4.8 水准、不比我差
-
 > 📊 Level ⭐⭐ | 6.9KB | `entities/seed-开启持续进化fable-5-点评opus-48-水准不比我差.md`
 
 # Seed 开启持续进化，Fable 5 点评：Opus 4.8 水准、不比我差

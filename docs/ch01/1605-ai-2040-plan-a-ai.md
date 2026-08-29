@@ -1,7 +1,5 @@
 # AI 2040 Plan A：人类在AI时代的「最不坏」结局
 
-## Ch01.1605 AI 2040 Plan A：人类在AI时代的「最不坏」结局
-
 > 📊 Level ⭐⭐⭐⭐ | 8.6KB | `entities/ai-2040-plan-a-humanity-ai-future-strategy.md`
 
 # AI 2040 Plan A：人类在AI时代的「最不坏」结局

@@ -1,7 +1,5 @@
 # 上下文工程：三种 Agent Memory 方案对比实验
 
-## Ch06.027 上下文工程：三种 Agent Memory 方案对比实验
-
 > 📊 Level ⭐⭐ | 7.5KB | `entities/context-engineering-three-memory-paradigms.md`
 
 ## 三种方案核心对比

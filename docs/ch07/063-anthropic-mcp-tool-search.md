@@ -1,7 +1,5 @@
 # Anthropic MCP 重新定义：Tool Search + 代码编排
 
-## Ch07.063 Anthropic MCP 重新定义：Tool Search + 代码编排
-
 > 📊 Level ⭐⭐ | 7.4KB | `entities/anthropic-mcp-revisited.md`
 
 ## 核心命题

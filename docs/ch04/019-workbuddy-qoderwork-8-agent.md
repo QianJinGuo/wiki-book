@@ -1,7 +1,5 @@
 # 豆包、WorkBuddy、QoderWork怎么选？我用8个真实办公任务把三家桌面Agent测明白了
 
-## Ch04.019 豆包、WorkBuddy、QoderWork怎么选？我用8个真实办公任务把三家桌面Agent测明白了
-
 > 📊 Level ⭐ | 5.6KB | `entities/豆包workbuddyqoderwork怎么选我用8个真实办公任务把三家桌面agent测明白了.md`
 
 # 豆包、WorkBuddy、QoderWork怎么选？我用8个真实办公任务把三家桌面Agent测明白了

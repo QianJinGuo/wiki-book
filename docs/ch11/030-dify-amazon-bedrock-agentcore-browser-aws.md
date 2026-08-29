@@ -1,7 +1,5 @@
 # Dify集成Amazon Bedrock AgentCore Browser  实现更强大的信息获取和分析能力 | 亚马逊AWS官方博客
 
-## Ch11.030 Dify集成Amazon Bedrock AgentCore Browser  实现更强大的信息获取和分析能力 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 20.5KB | `entities/amazon-bedrock-agentcore-browser-information-retrieval-and-analysis-capabilities.md`
 
 ## 概述

@@ -1,7 +1,5 @@
 # LLM Wiki / Obsidian Wiki / GBrain 自组织与自进化
 
-## Ch01.913 LLM Wiki / Obsidian Wiki / GBrain 自组织与自进化
-
 > 📊 Level ⭐⭐ | 7.1KB | `entities/llm-wiki-obsidian-wiki-gbrain-self-organization-self-evolution.md`
 
 # llm-wiki-obsidian-wiki-gbrain-self-organization-self-evolution

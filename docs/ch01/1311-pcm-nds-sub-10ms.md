@@ -1,7 +1,5 @@
 # 北大PCM忆阻器NDS芯片：sub-10ms神经动力学系统
 
-## Ch01.1311 北大PCM忆阻器NDS芯片：sub-10ms神经动力学系统
-
 > 📊 Level ⭐⭐ | 4.0KB | `entities/pku-neural-dynamical-system-pcm-memristor-chip-science-2026.md`
 
 # 北大PCM忆阻器NDS芯片：sub-10ms神经动力学系统

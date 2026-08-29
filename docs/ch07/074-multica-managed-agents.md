@@ -1,7 +1,5 @@
 # Multica — 开源 Managed Agents 平台
 
-## Ch07.074 Multica — 开源 Managed Agents 平台
-
 > 📊 Level ⭐⭐ | 5.8KB | `entities/multica-managed-agents-platform.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/multica-managed-agents-platform.md)

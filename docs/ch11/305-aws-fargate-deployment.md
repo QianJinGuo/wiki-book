@@ -1,7 +1,5 @@
 # AWS Fargate Deployment
 
-## Ch11.305 AWS Fargate Deployment
-
 > 📊 Level ⭐⭐ | 1.5KB | `entities/aws-fargate-deployment.md`
 
 # AWS Fargate Deployment

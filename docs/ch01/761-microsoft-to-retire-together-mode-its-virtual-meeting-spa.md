@@ -1,7 +1,5 @@
 # Microsoft to retire ‘Together Mode,’ its virtual meeting space for Teams
 
-## Ch01.761 Microsoft to retire ‘Together Mode,’ its virtual meeting space for Teams
-
 > 📊 Level ⭐⭐ | 8.2KB | `entities/microsoft-to-retire-together-mode-its-virtual-meeting-space-for-teams.md`
 
 # Microsoft 退役 Teams Together Mode：元宇宙办公愿景的一次撤退

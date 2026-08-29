@@ -1,7 +1,5 @@
 # Claude Code 性能基准评测
 
-## Ch09.046 Claude Code 性能基准评测
-
 > 📊 Level ⭐⭐ | 14.6KB | `entities/claude-code-performance-benchmarking.md`
 
 ## 概述

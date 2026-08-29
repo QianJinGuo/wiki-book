@@ -1,7 +1,5 @@
 # CLI Agent 模式：MCP 与 Shell Agent
 
-## Ch04.453 CLI Agent 模式：MCP 与 Shell Agent
-
 > 📊 Level ⭐⭐ | 8.0KB | `entities/cli-agent-patterns-mcp-shell-agents.md`
 
 # CLI Agent 模式：MCP 与 Shell Agent

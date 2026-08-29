@@ -1,7 +1,5 @@
 # Amazon Bedrock Managed Entitlements — 多账号模型访问治理
 
-## Ch11.266 Amazon Bedrock Managed Entitlements — 多账号模型访问治理
-
 > 📊 Level ⭐⭐ | 3.9KB | `entities/amazon-bedrock-managed-entitlements-multi-account.md`
 
 # Amazon Bedrock Managed Entitlements — 多账号模型访问治理

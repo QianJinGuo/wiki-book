@@ -1,7 +1,5 @@
 # LLM Wiki 架构解析：Karpathy 的 Markdown 知识库模式
 
-## Ch01.993 LLM Wiki 架构解析：Karpathy 的 Markdown 知识库模式
-
 > 📊 Level ⭐⭐ | 6.5KB | `entities/llm-wiki-architecture-karpathy-markdown-knowledge-base.md`
 
 # LLM Wiki 架构解析：Karpathy 的 Markdown 知识库模式

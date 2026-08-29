@@ -1,7 +1,5 @@
 # CrewAI Cognitive Memory: 5 认知操作的工程化设计
 
-## Ch06.020 CrewAI Cognitive Memory: 5 认知操作的工程化设计
-
 > 📊 Level ⭐⭐ | 10.5KB | `entities/how-we-built-cognitive-memory-for-agentic-systems.md`
 
 # CrewAI Cognitive Memory: 5 认知操作的工程化设计

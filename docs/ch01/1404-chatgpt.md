@@ -1,7 +1,5 @@
 # ChatGPT记忆大升级，十亿人免费用！
 
-## Ch01.1404 ChatGPT记忆大升级，十亿人免费用！
-
 > 📊 Level ⭐⭐ | 3.4KB | `entities/chatgpt-dreaming-v3-long-term-memory-xinzhiyuan.md`
 
 # ChatGPT记忆大升级，十亿人免费用！

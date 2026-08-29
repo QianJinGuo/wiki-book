@@ -1,7 +1,5 @@
 # Data modeling best practices for Amazon Quick Sight multi-dataset relationships
 
-## Ch11.260 Data modeling best practices for Amazon Quick Sight multi-dataset relationships
-
 > 📊 Level ⭐⭐ | 4.1KB | `entities/data-modeling-best-practices-for-amazon-quick-sight-multi-da.md`
 
 # Data modeling best practices for Amazon Quick Sight multi-dataset relationships

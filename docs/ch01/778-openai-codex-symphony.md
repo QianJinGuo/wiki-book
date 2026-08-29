@@ -1,7 +1,5 @@
 # 一文看懂 OpenAI 开源的 Codex 编排规范：Symphony
 
-## Ch01.778 一文看懂 OpenAI 开源的 Codex 编排规范：Symphony
-
 > 📊 Level ⭐⭐ | 8.1KB | `entities/openai-symphony-codex-orchestration-linear-control-plane-tutuai.md`
 
 # 一文看懂 OpenAI 开源的 Codex 编排规范：Symphony

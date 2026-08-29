@@ -1,7 +1,5 @@
 # Gemini AI (Google)
 
-## Ch01.057 Gemini AI (Google)
-
 > 📊 Level ⭐ | 8.2KB | `entities/gemini-ai.md`
 
 ## Overview

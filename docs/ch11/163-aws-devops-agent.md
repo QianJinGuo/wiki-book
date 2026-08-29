@@ -1,7 +1,5 @@
 # 将 AWS DevOps Agent 智能运维能力延伸到中国区
 
-## Ch11.163 将 AWS DevOps Agent 智能运维能力延伸到中国区
-
 > 📊 Level ⭐⭐ | 7.3KB | `entities/将-aws-devops-agent-智能运维能力延伸到中国区.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/将-aws-devops-agent-智能运维能力延伸到中国区.md)

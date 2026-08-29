@@ -1,7 +1,5 @@
 # EDV：Execute-Distill-Verify 框架 — 浙大大模型智能体进化新路径
 
-## Ch01.1568 EDV：Execute-Distill-Verify 框架 — 浙大大模型智能体进化新路径
-
 > 📊 Level ⭐⭐⭐ | 4.8KB | `entities/edv-execute-distill-verify-agent-self-evolution-zju.md`
 
 # EDV：Execute-Distill-Verify 框架 — 浙大大模型智能体进化新路径

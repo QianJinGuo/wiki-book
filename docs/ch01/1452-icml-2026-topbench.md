@@ -1,7 +1,5 @@
 # ICML 2026 | 会查表却不会预测未来：南大TopBench测出大模型数据盲区
 
-## Ch01.1452 ICML 2026 | 会查表却不会预测未来：南大TopBench测出大模型数据盲区
-
 > 📊 Level ⭐⭐ | 2.5KB | `entities/icml-2026-会查表却不会预测未来南大topbench测出大模型数据盲区.md`
 
 # ICML 2026 | 会查表却不会预测未来：南大TopBench测出大模型数据盲区

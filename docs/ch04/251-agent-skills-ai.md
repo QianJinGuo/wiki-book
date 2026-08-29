@@ -1,7 +1,5 @@
 # 要实现一个工作流选择-agent-skills-还是-ai-表格
 
-## Ch04.251 要实现一个工作流选择-agent-skills-还是-ai-表格
-
 > 📊 Level ⭐⭐ | 11.9KB | `entities/要实现一个工作流选择-agent-skills-还是-ai-表格.md`
 
 ## 核心要点

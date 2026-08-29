@@ -1,7 +1,5 @@
 # 撕开Claude Code真相：让它好用的98.4%，是工程不是AI
 
-## Ch01.1161 撕开Claude Code真相：让它好用的98.4%，是工程不是AI
-
 > 📊 Level ⭐⭐ | 5.3KB | `entities/claude-code-engineering-truth-1.6-98.4.md`
 
 # 撕开Claude Code真相：让它好用的98.4%，是工程不是AI

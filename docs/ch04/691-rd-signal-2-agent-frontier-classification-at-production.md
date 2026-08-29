@@ -1,7 +1,5 @@
 # rd-signal-2：生产规模下的 Agent 行为二元分类（Frontier Classification at Production Scale）
 
-## Ch04.691 rd-signal-2：生产规模下的 Agent 行为二元分类（Frontier Classification at Production Scale）
-
 > 📊 Level ⭐⭐ | 4.6KB | `entities/rd-signal-2-frontier-classification.md`
 
 # rd-signal-2：生产规模下的 Agent 行为二元分类

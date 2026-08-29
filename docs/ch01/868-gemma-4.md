@@ -1,7 +1,5 @@
 # 谷歌Gemma 4论文分析
 
-## Ch01.868 谷歌Gemma 4论文分析
-
 > 📊 Level ⭐⭐ | 7.4KB | `entities/谷歌gemma-4论文深夜解封31b直逼闭源前沿敲响云端ai丧钟.md`
 
 # 谷歌Gemma 4论文分析

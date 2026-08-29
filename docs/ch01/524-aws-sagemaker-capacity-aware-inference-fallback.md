@@ -1,7 +1,5 @@
 # AWS Sagemaker Capacity Aware Inference Fallback
 
-## Ch01.524 AWS Sagemaker Capacity Aware Inference Fallback
-
 > 📊 Level ⭐⭐ | 12.3KB | `entities/aws-sagemaker-capacity-aware-inference-fallback.md`
 
 # SageMaker容量感知推理：实例池+优先级Fallback

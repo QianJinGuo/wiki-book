@@ -1,7 +1,5 @@
 # Qoder 企业版全球发布：让 AI Coding 从\"个人工具\"长出\"组织能力\
 
-## Ch09.074 Qoder 企业版全球发布：让 AI Coding 从\"个人工具\"长出\"组织能力\
-
 > 📊 Level ⭐⭐ | 10.3KB | `entities/qoder-企业版全球发布让-ai-coding-从个人工具长出组织能力.md`
 
 # Qoder 企业版全球发布：让 AI Coding 从"个人工具"长出"组织能力"

@@ -1,7 +1,5 @@
 # The down fall of bug bounties
 
-## Ch12.072 The down fall of bug bounties
-
 > 📊 Level ⭐⭐ | 6.9KB | `entities/down-fall-of-bug-bounties.md`
 
 

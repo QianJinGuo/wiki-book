@@ -1,7 +1,5 @@
 # Enterprise Software Moats in the Agent Era — 系统性护城河分析框架
 
-## Ch04.264 Enterprise Software Moats in the Agent Era — 系统性护城河分析框架
-
 > 📊 Level ⭐⭐ | 11.6KB | `entities/enterprise-software-moats-agent-era.md`
 
 ## 核心问题

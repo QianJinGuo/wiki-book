@@ -1,7 +1,5 @@
 # 从人机协作到AI主导：我们是怎么把代码质量交给'数字SRE'的？
 
-## Ch01.1363 从人机协作到AI主导：我们是怎么把代码质量交给'数字SRE'的？
-
 > 📊 Level ⭐⭐ | 3.6KB | `entities/taobao-ai-sre-digital-employee-code-quality-governance.md`
 
 # 从人机协作到AI主导：我们是怎么把代码质量交给'数字SRE'的？

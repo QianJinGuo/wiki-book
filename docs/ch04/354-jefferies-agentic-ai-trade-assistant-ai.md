@@ -1,7 +1,5 @@
 # Jefferies 构建 Agentic AI Trade Assistant — 投行交易桌面 AI 优化实践
 
-## Ch04.354 Jefferies 构建 Agentic AI Trade Assistant — 投行交易桌面 AI 优化实践
-
 > 📊 Level ⭐⭐ | 9.6KB | `entities/jefferies-agentic-ai-trade-assistant-2026.md`
 
 # Jefferies 构建 Agentic AI Trade Assistant — 投行交易桌面 AI 优化实践

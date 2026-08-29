@@ -1,7 +1,5 @@
 # 企业 BI 洞察 Agent 可信推理链路与决策闭环
 
-## Ch04.594 企业 BI 洞察 Agent 可信推理链路与决策闭环
-
 > 📊 Level ⭐⭐ | 6.3KB | `entities/insight-agent-trustworthy-reasoning-guandata.md`
 
 # 企业 BI 洞察 Agent 可信推理链路与决策闭环

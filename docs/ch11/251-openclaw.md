@@ -1,7 +1,5 @@
 # OpenClaw 多用户部署（一）：五维挑战分析
 
-## Ch11.251 OpenClaw 多用户部署（一）：五维挑战分析
-
 > 📊 Level ⭐⭐ | 5.0KB | `entities/openclaw-multi-1.md`
 
 ## 深度分析

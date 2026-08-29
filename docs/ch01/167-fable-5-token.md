@@ -1,7 +1,5 @@
 # Fable 5 实战之：五亿 token 暴改我三年前的网站
 
-## Ch01.167 Fable 5 实战之：五亿 token 暴改我三年前的网站
-
 > 📊 Level ⭐ | 3.7KB | `entities/fable-5-实战之五亿-token-暴改我三年前的网站.md`
 
 # Fable 5 实战之：五亿 token 暴改我三年前的网站

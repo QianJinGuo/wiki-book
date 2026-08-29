@@ -1,7 +1,5 @@
 # State Lake：火山引擎面向 Agent 时代的存储基础设施重构
 
-## Ch04.790 State Lake：火山引擎面向 Agent 时代的存储基础设施重构
-
 > 📊 Level ⭐⭐ | 3.2KB | `entities/state-lake-volcano-engine-agent-storage-2026.md`
 
 > 火山引擎存储团队提出"从 Data Lake 到 State Lake"的范式转变，围绕 Sandbox Store、Artifact Store、Agent 观测&评测三大方向重新组织存储能力，支撑 Agent 时代的真实业务。

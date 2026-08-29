@@ -1,7 +1,5 @@
 # obsidian-llm-wiki-local: Obsidian本地AI知识图谱自动构建
 
-## Ch03.108 obsidian-llm-wiki-local: Obsidian本地AI知识图谱自动构建
-
 > 📊 Level ⭐⭐ | 7.7KB | `entities/obsidian-llm-wiki-local-kytmanov.md`
 
 ## 核心问题：笔记孤岛

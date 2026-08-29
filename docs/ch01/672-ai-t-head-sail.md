@@ -1,7 +1,5 @@
 # 真武 AI 芯片 T-Head Sail 软件栈开源
 
-## Ch01.672 真武 AI 芯片 T-Head Sail 软件栈开源
-
 > 📊 Level ⭐⭐ | 9.2KB | `entities/真武-ai-芯片-t-head-sail-软件栈正式开源开放.md`
 
 # 真武 AI 芯片 T-Head Sail 软件栈开源

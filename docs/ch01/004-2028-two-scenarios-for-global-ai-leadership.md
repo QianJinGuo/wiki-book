@@ -1,7 +1,5 @@
 # 2028: Two scenarios for global AI leadership
 
-## Ch01.004 2028: Two scenarios for global AI leadership
-
 > 📊 Level ⭐ | 17.7KB | `entities/2028-two-scenarios-for-global-ai-leadership.md`
 
 ## 核心观点

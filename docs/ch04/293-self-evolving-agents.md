@@ -1,7 +1,5 @@
 # Self-Evolving Agents 系统性综述
 
-## Ch04.293 Self-Evolving Agents 系统性综述
-
 > 📊 Level ⭐⭐ | 10.9KB | `entities/self-evolving-agents-survey.md`
 
 ## 核心贡献

@@ -1,7 +1,5 @@
 # 强化学习的进化 从PPO到MaxRL LLM推理训练的算法演进史 机器之心
 
-## Ch01.244 强化学习的进化 从PPO到MaxRL LLM推理训练的算法演进史 机器之心
-
 > 📊 Level ⭐ | 0.8KB | `entities/2026-05-01-强化学习的进化-从PPO到MaxRL-LLM推理训练的算法演进史-机器之心.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-05-01-强化学习的进化-从PPO到MaxRL-LLM推理训练的算法演进史-机器之心.md)

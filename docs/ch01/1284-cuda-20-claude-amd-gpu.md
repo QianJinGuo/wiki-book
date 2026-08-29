@@ -1,7 +1,5 @@
 # CUDA 20年护城河一个周末崩了：Claude独自跑通AMD新GPU
 
-## Ch01.1284 CUDA 20年护城河一个周末崩了：Claude独自跑通AMD新GPU
-
 > 📊 Level ⭐⭐ | 4.2KB | `entities/cuda-20年护城河一个周末崩了-claude独自跑通amd新gpu.md`
 
 # CUDA 20年护城河一个周末崩了：Claude独自跑通AMD新GPU

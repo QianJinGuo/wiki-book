@@ -1,7 +1,5 @@
 # Claude Sonnet 5 发布，性能接近 Opus 4.8，价格只有60%
 
-## Ch01.644 Claude Sonnet 5 发布，性能接近 Opus 4.8，价格只有60%
-
 > 📊 Level ⭐⭐ | 9.7KB | `entities/claude-sonnet-5-发布性能接近-opus-48价格只有60.md`
 
 # Claude Sonnet 5 发布，性能接近 Opus 4.8，价格只有60%

@@ -1,7 +1,5 @@
 # The Main Path to Truly Creative AI
 
-## Ch01.1634 The Main Path to Truly Creative AI
-
 > 📊 Level ⭐⭐⭐⭐⭐ | 7.4KB | `entities/the-main-path-to-truly-creative-ai.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-main-path-to-truly-creative-ai.md)

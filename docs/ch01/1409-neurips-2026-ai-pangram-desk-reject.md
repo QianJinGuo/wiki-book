@@ -1,7 +1,5 @@
 # NeurIPS 2026 使用闭源 AI 检测器 Pangram 批量 desk-reject 论文事件
 
-## Ch01.1409 NeurIPS 2026 使用闭源 AI 检测器 Pangram 批量 desk-reject 论文事件
-
 > 📊 Level ⭐⭐ | 3.4KB | `entities/neurips-2026-pangram-desk-reject-controversy.md`
 
 # NeurIPS 2026 使用闭源 AI 检测器 Pangram 批量 desk-reject 论文事件

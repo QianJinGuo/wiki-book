@@ -1,7 +1,5 @@
 # AWS Bedrock AgentCore
 
-## Ch11.268 AWS Bedrock AgentCore
-
 > 📊 Level ⭐⭐ | 4.2KB | `entities/aws-bedrock-agentcore.md`
 
 AWS Bedrock AgentCore 是 AWS 推出的 Agent 基础设施平台，旨在为开发者提供生产级 AI Agent 部署能力。通过 `CreateHarness` 和 `InvokeHarness` 两个核心 API，覆盖 Agent 运行所需的六大基础设施原语。

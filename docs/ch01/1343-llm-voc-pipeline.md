@@ -1,7 +1,5 @@
 # LLM + 语义聚类 VOC 四级标签体系 Pipeline
 
-## Ch01.1343 LLM + 语义聚类 VOC 四级标签体系 Pipeline
-
 > 📊 Level ⭐⭐ | 3.8KB | `entities/llm-semantic-clustering-voc-tag-hierarchy-pipeline.md`
 
 # LLM + 语义聚类 VOC 四级标签体系 Pipeline

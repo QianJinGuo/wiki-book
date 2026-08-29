@@ -1,7 +1,5 @@
 # AgentMemory：Coding Agent 本地记忆系统
 
-## Ch09.031 AgentMemory：Coding Agent 本地记忆系统
-
 > 📊 Level ⭐⭐ | 16.9KB | `entities/agentmemory-coding-agent-local-memory.md`
 
 ## 概述

@@ -1,7 +1,5 @@
 # 星合互娱借助 AWS DevOps Agent 构建多游戏智能运维体系
 
-## Ch11.272 星合互娱借助 AWS DevOps Agent 构建多游戏智能运维体系
-
 > 📊 Level ⭐⭐ | 3.1KB | `entities/星合互娱借助-aws-devops-agent-构建多游戏智能运维体系.md`
 
 # 星合互娱借助 AWS DevOps Agent 构建多游戏智能运维体系

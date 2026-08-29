@@ -1,7 +1,5 @@
 # 数据中心 GPU 液冷 vs 风冷：FLOPs 可用率与工程权衡
 
-## Ch11.192 数据中心 GPU 液冷 vs 风冷：FLOPs 可用率与工程权衡
-
 > 📊 Level ⭐⭐ | 6.4KB | `entities/gpu-liquid-cooling-vs-air-cooling-datacenter.md`
 
 # 数据中心 GPU 液冷 vs 风冷：FLOPs 可用率与工程权衡

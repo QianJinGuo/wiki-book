@@ -1,7 +1,5 @@
 # 算不上AGI，但Anthropic发现了Claude的潜意识！
 
-## Ch01.1575 算不上AGI，但Anthropic发现了Claude的潜意识！
-
 > 📊 Level ⭐⭐⭐ | 3.6KB | `entities/算不上agi但anthropic发现了claude的潜意识.md`
 
 # 算不上AGI，但Anthropic发现了Claude的潜意识！

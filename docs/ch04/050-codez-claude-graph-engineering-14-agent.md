@@ -1,7 +1,5 @@
 # Codez《Claude Graph Engineering》精读：用 14 步重构线性 Agent
 
-## Ch04.050 Codez《Claude Graph Engineering》精读：用 14 步重构线性 Agent
-
 > 📊 Level ⭐ | 0.8KB | `entities/graph-engineering-codez-14-step-zhixin-2026.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/graph-engineering-codez-14-step-zhixin-2026.md)

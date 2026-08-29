@@ -1,7 +1,5 @@
 # Claude Code /checkup 功能：清理 Skills/MCP 提升性能
 
-## Ch09.100 Claude Code /checkup 功能：清理 Skills/MCP 提升性能
-
 > 📊 Level ⭐⭐ | 8.6KB | `entities/claude-code-checkup-feature-boris-cherny-2026.md`
 
 # Claude Code /checkup 功能：清理 Skills/MCP 提升性能

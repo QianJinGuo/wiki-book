@@ -1,7 +1,5 @@
 # Scaling Camera File Processing at Netflix
 
-## Ch11.146 Scaling Camera File Processing at Netflix
-
 > 📊 Level ⭐⭐ | 7.8KB | `entities/scaling-camera-file-processing-at-netflix.md`
 
 # Scaling Camera File Processing at Netflix

@@ -1,7 +1,5 @@
 # Direct Connect (DX) 迁移最佳实践
 
-## Ch11.039 Direct Connect (DX) 迁移最佳实践
-
 > 📊 Level ⭐⭐ | 14.1KB | `entities/aws-direct-connect-dx-migration-best-practices.md`
 
 # Direct Connect (DX) 迁移最佳实践

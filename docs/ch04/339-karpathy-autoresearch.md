@@ -1,7 +1,5 @@
 # 我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了
 
-## Ch04.339 我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了
-
 > 📊 Level ⭐⭐ | 9.9KB | `entities/我把-karpathy-的-autoresearch-搬到了软件开发领域效果炸了.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/我把-karpathy-的-autoresearch-搬到了软件开发领域效果炸了.md)

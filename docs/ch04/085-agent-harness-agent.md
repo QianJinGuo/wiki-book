@@ -1,7 +1,5 @@
 # Agent Harness 架构设计与实现：生产级 Agent 系统落地指南
 
-## Ch04.085 Agent Harness 架构设计与实现：生产级 Agent 系统落地指南
-
 > 📊 Level ⭐⭐ | 39.1KB | `entities/agent-harness-architecture-design-production-guide.md`
 
 ## 1. 核心定义与演进脉络

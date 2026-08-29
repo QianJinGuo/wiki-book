@@ -1,7 +1,5 @@
 # AI Detection and Response Aidr a Zero Impact Operating Model
 
-## Ch12.078 AI Detection and Response Aidr a Zero Impact Operating Model
-
 > 📊 Level ⭐⭐ | 6.6KB | `entities/ai-detection-and-response-aidr-a-zero-impact-operating-model.md`
 
 # ai detection and response aidr a zero impact operating model

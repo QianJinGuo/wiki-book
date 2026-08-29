@@ -1,7 +1,5 @@
 # PagePilot — PC端AI测试Skill设计与实战
 
-## Ch07.085 PagePilot — PC端AI测试Skill设计与实战
-
 > 📊 Level ⭐⭐ | 4.1KB | `entities/pagepilot-pc-ai-test-skill-design-practice.md`
 
 # PagePilot — PC端AI测试Skill设计与实战

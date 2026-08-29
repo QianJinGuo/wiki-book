@@ -1,7 +1,5 @@
 # AlphaEvolve: A coding agent for scientific and algorithmic discovery
 
-## Ch01.813 AlphaEvolve: A coding agent for scientific and algorithmic discovery
-
 > 📊 Level ⭐⭐ | 7.9KB | `entities/alphaevolve-deepmind-discovery-agent.md`
 
 # AlphaEvolve: A coding agent for scientific and algorithmic discovery

@@ -1,7 +1,5 @@
 # Agent Harness 上下文管理：工作集视角
 
-## Ch06.054 Agent Harness 上下文管理：工作集视角
-
 > 📊 Level ⭐⭐⭐ | 24.6KB | `entities/agent-harness-context-management-working-set.md`
 
 ## 核心定位

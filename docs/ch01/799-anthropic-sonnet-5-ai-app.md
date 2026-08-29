@@ -1,7 +1,5 @@
 # Anthropic深夜连放两弹：Sonnet 5、全新AI科研App重磅上线
 
-## Ch01.799 Anthropic深夜连放两弹：Sonnet 5、全新AI科研App重磅上线
-
 > 📊 Level ⭐⭐ | 8.0KB | `entities/anthropic深夜连放两弹sonnet-5全新ai科研app重磅上线.md`
 
 # Anthropic深夜连放两弹：Sonnet 5、全新AI科研App重磅上线

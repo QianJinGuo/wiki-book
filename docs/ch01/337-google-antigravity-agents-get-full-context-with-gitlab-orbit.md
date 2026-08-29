@@ -1,7 +1,5 @@
 # Google Antigravity agents get full context with GitLab Orbit
 
-## Ch01.337 Google Antigravity agents get full context with GitLab Orbit
-
 > 📊 Level ⭐ | 0.7KB | `entities/google-antigravity-agents-get-full-context-with-gitlab-orbit.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/google-antigravity-agents-get-full-context-with-gitlab-orbit.md)

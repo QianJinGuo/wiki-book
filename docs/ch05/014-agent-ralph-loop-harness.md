@@ -1,7 +1,5 @@
 # 长周期 Agent 详解：从 Ralph Loop 到可接管 Harness
 
-## Ch05.014 长周期 Agent 详解：从 Ralph Loop 到可接管 Harness
-
 > 📊 Level ⭐⭐ | 23.4KB | `entities/long-running-agent-ralph-loop-handover-harness-ruofei.md`
 
 ## 5 张卡治理框架（若飞 2026-06 续篇）

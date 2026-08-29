@@ -1,7 +1,5 @@
 # Agent 的骨架:Agent Runtime 7 大职责 + 3 主流框架对比 (LangGraph / OpenAI Agents SDK / 自研)
 
-## Ch04.127 Agent 的骨架:Agent Runtime 7 大职责 + 3 主流框架对比 (LangGraph / OpenAI Agents SDK / 自研)
-
 > 📊 Level ⭐⭐ | 19.8KB | `entities/agent-runtime-7-responsibilities-secondcurve-2026.md`
 
 # Agent 的骨架：Agent Runtime 7 大职责 + 3 主流框架对比

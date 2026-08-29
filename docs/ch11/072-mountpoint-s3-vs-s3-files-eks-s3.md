@@ -1,7 +1,5 @@
 # Mountpoint S3 vs S3 Files：EKS 上 S3 数据接入的两种方案实战对比
 
-## Ch11.072 Mountpoint S3 vs S3 Files：EKS 上 S3 数据接入的两种方案实战对比
-
 > 📊 Level ⭐⭐ | 11.4KB | `entities/mountpoint-s3-vs-s3-files-eks-storage-comparison.md`
 
 # Mountpoint S3 vs S3 Files：EKS 上 S3 数据接入的两种方案实战对比

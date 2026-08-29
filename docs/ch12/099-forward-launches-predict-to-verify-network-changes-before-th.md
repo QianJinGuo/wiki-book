@@ -1,7 +1,5 @@
 # Forward launches Predict to verify network changes before they reach production - SiliconANGLE
 
-## Ch12.099 Forward launches Predict to verify network changes before they reach production - SiliconANGLE
-
 > 📊 Level ⭐⭐ | 5.2KB | `entities/forward-networks-predict-network-verification.md`
 
 

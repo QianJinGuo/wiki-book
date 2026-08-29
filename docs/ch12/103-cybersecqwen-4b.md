@@ -1,7 +1,5 @@
 # CyberSecQwen-4B
 
-## Ch12.103 CyberSecQwen-4B
-
 > 📊 Level ⭐⭐ | 5.0KB | `entities/cybersecqwen-4b.md`
 
 ## Key Capabilities

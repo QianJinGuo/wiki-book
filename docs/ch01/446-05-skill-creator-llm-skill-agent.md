@@ -1,7 +1,5 @@
 # 05—skill-creator 源码深度拆解：LLM Skill 触发率、防过拟合与三 Agent 评审完整指南
 
-## Ch01.446 05—skill-creator 源码深度拆解：LLM Skill 触发率、防过拟合与三 Agent 评审完整指南
-
 > 📊 Level ⭐⭐ | 15.5KB | `entities/ai-skill-skill-creator-源码拆解.md`
 
 ## skill-creator vs SkillSentry 分工

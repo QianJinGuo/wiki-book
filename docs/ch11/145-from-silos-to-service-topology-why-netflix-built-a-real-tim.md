@@ -1,7 +1,5 @@
 # From Silos to Service Topology: Why Netflix Built a Real-Time Service Map
 
-## Ch11.145 From Silos to Service Topology: Why Netflix Built a Real-Time Service Map
-
 > 📊 Level ⭐⭐ | 7.8KB | `entities/from-silos-to-service-topology-why-netflix-built-a-real-time.md`
 
 # From Silos to Service Topology: Why Netflix Built a Real-Time Service Map

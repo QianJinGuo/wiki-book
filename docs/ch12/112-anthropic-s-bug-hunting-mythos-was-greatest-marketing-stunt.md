@@ -1,7 +1,5 @@
 # Anthropic's bug-hunting Mythos was greatest marketing stunt ever, says cURL creator
 
-## Ch12.112 Anthropic's bug-hunting Mythos was greatest marketing stunt ever, says cURL creator
-
 > 📊 Level ⭐⭐ | 4.3KB | `entities/5238111.md`
 
 # Anthropic's bug-hunting Mythos was greatest marketing stunt ever, says cURL creator

@@ -1,7 +1,5 @@
 # aws aidl 范式迁移 platform driven data engineering
 
-## Ch11.167 aws aidl 范式迁移 platform driven data engineering
-
 > 📊 Level ⭐⭐ | 7.2KB | `entities/aws-aidl-paradigm-shift-platform-driven-data-engineering.md`
 
 # AI 驱动的大数据工程：从平台驱动到 AIDLC 的范式迁移

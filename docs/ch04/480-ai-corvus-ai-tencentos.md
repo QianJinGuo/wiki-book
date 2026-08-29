@@ -1,7 +1,5 @@
 # 科维斯 AI（Corvus AI）— TencentOS 内核漏洞研究智能体首秀
 
-## Ch04.480 科维斯 AI（Corvus AI）— TencentOS 内核漏洞研究智能体首秀
-
 > 📊 Level ⭐⭐ | 7.8KB | `entities/corvus-ai-tencentos-kernel-vulnerability-agent-2026.md`
 
 # 科维斯 AI（Corvus AI）— TencentOS 内核漏洞研究智能体首秀

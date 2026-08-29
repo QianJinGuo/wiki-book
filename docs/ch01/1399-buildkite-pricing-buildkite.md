@@ -1,7 +1,5 @@
 # Buildkite Pricing | Buildkite
 
-## Ch01.1399 Buildkite Pricing | Buildkite
-
 > 📊 Level ⭐⭐ | 3.5KB | `entities/buildkite-pricing-buildkite.md`
 
 → 原文存档

@@ -1,7 +1,5 @@
 # 4000行代码撑起一个Agent框架？nanobot架构深度解析
 
-## Ch01.861 4000行代码撑起一个Agent框架？nanobot架构深度解析
-
 > 📊 Level ⭐⭐ | 7.5KB | `entities/4000行代码撑起一个agent框架nanobot架构深度解析.md`
 
 # 4000行代码撑起一个Agent框架？nanobot架构深度解析

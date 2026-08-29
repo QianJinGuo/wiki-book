@@ -1,7 +1,5 @@
 # AgentCore Payments 与代理商务创新：技术深度解析
 
-## Ch11.066 AgentCore Payments 与代理商务创新：技术深度解析
-
 > 📊 Level ⭐⭐ | 11.2KB | `entities/agentcore-payments-x402-agentic-commerce.md`
 
 # AgentCore Payments 与代理商务创新：技术深度解析

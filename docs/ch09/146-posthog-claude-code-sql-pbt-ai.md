@@ -1,7 +1,5 @@
 # PostHog 用 Claude Code 重写 SQL 解析器：PBT + 影子模式的生产级 AI 重写实践
 
-## Ch09.146 PostHog 用 Claude Code 重写 SQL 解析器：PBT + 影子模式的生产级 AI 重写实践
-
 > 📊 Level ⭐⭐ | 6.4KB | `entities/posthog-claude-rewrite-sql-parser-pbt.md`
 
 # PostHog 用 Claude Code 重写 SQL 解析器

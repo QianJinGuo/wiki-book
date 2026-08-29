@@ -1,7 +1,5 @@
 # Designing with AI: Why Claude Design is not the future of enterprise design
 
-## Ch01.722 Designing with AI: Why Claude Design is not the future of enterprise design
-
 > 📊 Level ⭐⭐ | 8.7KB | `entities/penpot-claude-design-not-future-enterprise.md`
 
 # Designing with AI: Why Claude Design is not the future of enterprise design

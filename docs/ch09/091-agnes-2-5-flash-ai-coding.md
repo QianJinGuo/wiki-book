@@ -1,7 +1,5 @@
 # Agnes-2.5-Flash：免费AI Coding模型杀入全球第一梯队
 
-## Ch09.091 Agnes-2.5-Flash：免费AI Coding模型杀入全球第一梯队
-
 > 📊 Level ⭐⭐ | 8.9KB | `entities/agnes-2-5-flash-free-ai-coding-model-2026.md`
 
 # Agnes-2.5-Flash：免费AI Coding模型杀入全球第一梯队

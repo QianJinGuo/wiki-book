@@ -1,7 +1,5 @@
 # Hermes Agent SOUL.md：3 层提示词、14 个内置人格，从源码看身份定制的完整设计
 
-## Ch01.630 Hermes Agent SOUL.md：3 层提示词、14 个内置人格，从源码看身份定制的完整设计
-
 > 📊 Level ⭐⭐ | 9.9KB | `entities/hermes-agent-soul-md-personality-shugex.md`
 
 # Hermes Agent SOUL.md：3 层提示词、14 个内置人格，从源码看身份定制的完整设计

@@ -1,7 +1,5 @@
 # Loop+Harness：清华大学自进化 Agent 论文解读
 
-## Ch05.134 Loop+Harness：清华大学自进化 Agent 论文解读
-
 > 📊 Level ⭐⭐ | 1.0KB | `entities/tsinghua-self-improving-agent-survey-loop-harness-2026-07-17.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tsinghua-self-improving-agent-survey-loop-harness-2026-07-17.md)

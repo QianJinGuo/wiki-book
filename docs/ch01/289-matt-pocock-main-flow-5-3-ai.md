@@ -1,7 +1,5 @@
 # Matt Pocock main flow：5 环节 3 反例，把 AI 拽回工程纪律
 
-## Ch01.289 Matt Pocock main flow：5 环节 3 反例，把 AI 拽回工程纪律
-
 > 📊 Level ⭐ | 0.8KB | `entities/matt-pocock-main-flow-5-stages-3-antipatterns.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/matt-pocock-main-flow-5-stages-3-antipatterns.md)

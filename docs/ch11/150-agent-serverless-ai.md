@@ -1,7 +1,5 @@
 # 向量存储支撑 Agent 检索链路：三种索引取舍与 Serverless 化（千问AI平台）
 
-## Ch11.150 向量存储支撑 Agent 检索链路：三种索引取舍与 Serverless 化（千问AI平台）
-
 > 📊 Level ⭐⭐ | 8.3KB | `entities/vector-storage-agent-retrieval-qianwen-aliyun-2026.md`
 
 # 向量存储支撑 Agent 检索链路：三种索引取舍与 Serverless 化

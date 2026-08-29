@@ -1,7 +1,5 @@
 # 阿里云 EventHouse 企业级 Agent 上下文构建五维框架
 
-## Ch11.041 阿里云 EventHouse 企业级 Agent 上下文构建五维框架
-
 > 📊 Level ⭐⭐ | 13.6KB | `entities/alibaba-eventhouse-enterprise-agent-context.md`
 
 

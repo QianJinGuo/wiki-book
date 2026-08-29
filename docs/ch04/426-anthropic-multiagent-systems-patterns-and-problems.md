@@ -1,7 +1,5 @@
 # Anthropic Multiagent Systems: Patterns and Problems
 
-## Ch04.426 Anthropic Multiagent Systems: Patterns and Problems
-
 > 📊 Level ⭐⭐ | 8.4KB | `entities/anthropic-multiagent-systems-patterns-problems.md`
 
 # Anthropic Multiagent Systems: Patterns and Problems

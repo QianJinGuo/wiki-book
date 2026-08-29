@@ -1,7 +1,5 @@
 # 微软等提出 SkillOpt：把 Skill 当成模型一样训练
 
-## Ch01.866 微软等提出 SkillOpt：把 Skill 当成模型一样训练
-
 > 📊 Level ⭐⭐ | 7.5KB | `entities/skillopt-microsoft-train-skill-hyman's-blog.md`
 
 # 微软等提出 SkillOpt：把 Skill 当成模型一样训练

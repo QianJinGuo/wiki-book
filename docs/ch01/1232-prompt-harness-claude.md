@@ -1,7 +1,5 @@
 # 从 Prompt 到 Harness：Claude 官方学习资料
 
-## Ch01.1232 从 Prompt 到 Harness：Claude 官方学习资料
-
 > 📊 Level ⭐⭐ | 4.7KB | `entities/from-prompt-to-harness-claude-official.md`
 
 # 从 Prompt 到 Harness：Claude 官方学习资料

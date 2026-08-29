@@ -1,7 +1,5 @@
 # 仅11天claude重写百万行代码ai史诗级工程却引来愤怒
 
-## Ch01.267 仅11天claude重写百万行代码ai史诗级工程却引来愤怒
-
 > 📊 Level ⭐ | 0.8KB | `entities/仅11天claude重写百万行代码ai史诗级工程却引来愤怒.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/仅11天claude重写百万行代码ai史诗级工程却引来愤怒.md)

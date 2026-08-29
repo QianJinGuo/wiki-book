@@ -1,7 +1,5 @@
 # 我把Seed 2.1 Pro塞进Claude Code，让它修我自己产品的bug
 
-## Ch09.108 我把Seed 2.1 Pro塞进Claude Code，让它修我自己产品的bug
-
 > 📊 Level ⭐⭐ | 8.2KB | `entities/我把seed-21-pro塞进claude-code让它修我自己产品的bug.md`
 
 # 我把Seed 2.1 Pro塞进Claude Code，让它修我自己产品的bug

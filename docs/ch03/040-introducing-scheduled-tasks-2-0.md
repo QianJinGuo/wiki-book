@@ -1,7 +1,5 @@
 # Introducing Scheduled Tasks 2.0
 
-## Ch03.040 Introducing Scheduled Tasks 2.0
-
 > 📊 Level ⭐ | 5.7KB | `entities/manus.im-manus-schedules.md`
 
 ## 核心要点

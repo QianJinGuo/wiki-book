@@ -1,7 +1,5 @@
 # GenericAgent — 复旦肖仰华自进化智能体设计哲学
 
-## Ch04.680 GenericAgent — 复旦肖仰华自进化智能体设计哲学
-
 > 📊 Level ⭐⭐ | 4.8KB | `entities/genericagent-self-evolving-xiao-yanghua-fudan-2026.md`
 
 > 复旦大学肖仰华教授提出的 GenericAgent 自进化智能体设计哲学，核心主张"系统做减法"：密度大于长度、最小工具集、行动验证的记忆、效率驱动的进化度量。

@@ -1,7 +1,5 @@
 # 啊 我刚开源的 Skills 已经 7K Star 了  code秘密花园
 
-## Ch01.302 啊 我刚开源的 Skills 已经 7K Star 了  code秘密花园
-
 > 📊 Level ⭐ | 0.7KB | `entities/2026-06-02-啊-我刚开源的-Skills-已经-7K-Star-了--code秘密花园.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-06-02-啊-我刚开源的-Skills-已经-7K-Star-了--code秘密花园.md)

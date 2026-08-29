@@ -1,7 +1,5 @@
 # How I Build Software in June 2026
 
-## Ch01.1144 How I Build Software in June 2026
-
 > 📊 Level ⭐⭐ | 5.4KB | `entities/how-i-build-software-june-2026.md`
 
 # How I Build Software in June 2026

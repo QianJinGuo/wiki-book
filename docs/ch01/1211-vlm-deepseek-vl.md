@@ -1,7 +1,5 @@
 # 【VLM】详解视觉语言模型原理及代码，以DeepSeek-VL为例
 
-## Ch01.1211 【VLM】详解视觉语言模型原理及代码，以DeepSeek-VL为例
-
 > 📊 Level ⭐⭐ | 4.9KB | `entities/vlm详解视觉语言模型原理及代码以deepseek-vl为例.md`
 
 # 【VLM】详解视觉语言模型原理及代码，以DeepSeek-VL为例

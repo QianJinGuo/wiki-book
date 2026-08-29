@@ -1,7 +1,5 @@
 # Anthropic 模型性格研究 — 四条价值轴与语言差异
 
-## Ch01.1606 Anthropic 模型性格研究 — 四条价值轴与语言差异
-
 > 📊 Level ⭐⭐⭐⭐ | 8.0KB | `entities/anthropic-model-personality-four-axes-research-2026.md`
 
 # Anthropic 模型性格研究 — 四条价值轴与语言差异

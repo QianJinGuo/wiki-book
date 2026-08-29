@@ -1,7 +1,5 @@
 # GPT-5.6 Sol/Terra/Luna 分层定价，Codex 合并入 ChatGPT，ChatGPT Work 发布
 
-## Ch01.1048 GPT-5.6 Sol/Terra/Luna 分层定价，Codex 合并入 ChatGPT，ChatGPT Work 发布
-
 > 📊 Level ⭐⭐ | 6.0KB | `entities/gpt-56-sol-terra-luna-tiered-pricing-codex-merge-2026.md`
 
 # GPT-5.6 Sol/Terra/Luna 分层定价，Codex 合并入 ChatGPT，ChatGPT Work 发布

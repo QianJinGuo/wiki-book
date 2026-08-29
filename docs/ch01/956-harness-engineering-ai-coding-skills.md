@@ -1,7 +1,5 @@
 # Harness Engineering：长程自动化 AI Coding / Skills 开发实践
 
-## Ch01.956 Harness Engineering：长程自动化 AI Coding / Skills 开发实践
-
 > 📊 Level ⭐⭐ | 6.8KB | `entities/harness-engineering长程自动化-ai-coding-skills-开发实践.md`
 
 # Harness Engineering：长程自动化 AI Coding / Skills 开发实践

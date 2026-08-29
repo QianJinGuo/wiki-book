@@ -1,7 +1,5 @@
 # Amazon Bedrock Mantle 推理引擎 + LiteLLM 网关统一收敛
 
-## Ch11.299 Amazon Bedrock Mantle 推理引擎 + LiteLLM 网关统一收敛
-
 > 📊 Level ⭐⭐ | 3.2KB | `entities/amazon-bedrock-mantle-litellm-gateway-2026.md`
 
 # Amazon Bedrock Mantle 推理引擎 + LiteLLM 网关统一收敛

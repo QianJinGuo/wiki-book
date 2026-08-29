@@ -1,7 +1,5 @@
 # Anthropic 官方拆解 Claude Code Loop 工程：4 层能力、2 起事故、30 轮卡住的根因
 
-## Ch01.316 Anthropic 官方拆解 Claude Code Loop 工程：4 层能力、2 起事故、30 轮卡住的根因
-
 > 📊 Level ⭐ | 0.7KB | `entities/claude-code-loop-engineering-shuge-2026.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-loop-engineering-shuge-2026.md)

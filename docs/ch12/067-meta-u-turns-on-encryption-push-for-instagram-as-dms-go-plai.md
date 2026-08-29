@@ -1,7 +1,5 @@
 # Meta U-turns on encryption push for Instagram as DMs go plaintext
 
-## Ch12.067 Meta U-turns on encryption push for Instagram as DMs go plaintext
-
 > 📊 Level ⭐⭐ | 7.3KB | `entities/5235705.md`
 
 # Meta U-turns on encryption push for Instagram as DMs go plaintext

@@ -1,7 +1,5 @@
 # DiScoFormer: 单一 Transformer 实现跨分布密度与分数估计
 
-## Ch01.1531 DiScoFormer: 单一 Transformer 实现跨分布密度与分数估计
-
 > 📊 Level ⭐⭐⭐ | 8.2KB | `entities/discoformer-density-score-transformer-allenai.md`
 
 # DiScoFormer: 单一 Transformer 实现跨分布密度与分数估计

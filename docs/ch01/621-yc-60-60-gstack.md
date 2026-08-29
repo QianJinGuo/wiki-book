@@ -1,7 +1,5 @@
 # YC掌门人60天写了60万行代码：gstack开源
 
-## Ch01.621 YC掌门人60天写了60万行代码：gstack开源
-
 > 📊 Level ⭐⭐ | 10.0KB | `entities/gstack-garry-tan-600k-lines-60-days.md`
 
 ## 核心数据

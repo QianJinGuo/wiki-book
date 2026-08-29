@@ -1,7 +1,5 @@
 # ChatGPT Memory
 
-## Ch01.550 ChatGPT Memory
-
 > 📊 Level ⭐⭐ | 11.5KB | `entities/chatgpt-memory.md`
 
 # ChatGPT Memory & Knowledge Features

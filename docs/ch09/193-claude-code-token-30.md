@@ -1,7 +1,5 @@
 # Claude Code到底有多费token？对比实验来了：三大框架最多差30倍
 
-## Ch09.193 Claude Code到底有多费token？对比实验来了：三大框架最多差30倍
-
 > 📊 Level ⭐⭐ | 1.2KB | `entities/claude-code-token-cost-harness-comparison-30x-jiqizhixin-2026.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-token-cost-harness-comparison-30x-jiqizhixin-2026.md)

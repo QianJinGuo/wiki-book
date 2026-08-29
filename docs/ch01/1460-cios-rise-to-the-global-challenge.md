@@ -1,7 +1,5 @@
 # CIOs rise to the global challenge
 
-## Ch01.1460 CIOs rise to the global challenge
-
 > 📊 Level ⭐⭐ | 0.6KB | `entities/cios-rise-to-the-global-challenge.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cios-rise-to-the-global-challenge.md)

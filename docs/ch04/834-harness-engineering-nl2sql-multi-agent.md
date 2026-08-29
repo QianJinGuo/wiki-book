@@ -1,7 +1,5 @@
 # 阿里数据研发 Harness Engineering：NL2SQL × Multi-Agent × 知识工程
 
-## Ch04.834 阿里数据研发 Harness Engineering：NL2SQL × Multi-Agent × 知识工程
-
 > 📊 Level ⭐⭐⭐ | 10.3KB | `entities/alibaba-data-rd-harness-engineering-nl2sql.md`
 
 # 阿里数据研发 Harness Engineering 实践

@@ -1,7 +1,5 @@
 # How LendingTree built a multi-agent mortgage assistant on Amazon Bedrock
 
-## Ch04.797 How LendingTree built a multi-agent mortgage assistant on Amazon Bedrock
-
 > 📊 Level ⭐⭐ | 2.8KB | `entities/how-lendingtree-built-a-multi-agent-mortgage-assistant-on-amazon-bedrock.md`
 
 # How LendingTree built a multi-agent mortgage assistant on Amazon Bedrock

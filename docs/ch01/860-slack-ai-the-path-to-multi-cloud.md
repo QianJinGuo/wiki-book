@@ -1,7 +1,5 @@
 # Slack AI: The Path to Multi-Cloud
 
-## Ch01.860 Slack AI: The Path to Multi-Cloud
-
 > 📊 Level ⭐⭐ | 7.5KB | `entities/slack-ai-path-to-multi-cloud.md`
 
 # Slack AI: The Path to Multi-Cloud

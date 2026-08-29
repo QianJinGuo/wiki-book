@@ -1,7 +1,5 @@
 # 阿里重磅开源！Open Code Review：一周 5k star，为你的代码保驾护航
 
-## Ch09.086 阿里重磅开源！Open Code Review：一周 5k star，为你的代码保驾护航
-
 > 📊 Level ⭐⭐ | 9.3KB | `entities/阿里重磅开源open-code-review一周-5k-star为你的代码保驾护航.md`
 
 # 阿里重磅开源！Open Code Review：一周 5k star，为你的代码保驾护航

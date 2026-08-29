@@ -1,7 +1,5 @@
 # Notes on Amazon v. Perplexity
 
-## Ch04.364 Notes on Amazon v. Perplexity
-
 > 📊 Level ⭐⭐ | 9.4KB | `entities/amazon-v-perplexity-agentic-browsing-open-web.md`
 
 # Notes on Amazon v. Perplexity

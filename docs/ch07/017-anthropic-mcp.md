@@ -1,7 +1,5 @@
 # Anthropic 最新博客：MCP 没死，它又来了
 
-## Ch07.017 Anthropic 最新博客：MCP 没死，它又来了
-
 > 📊 Level ⭐⭐ | 14.1KB | `entities/anthropic-mcp-revisited-tool-search-code-orchestration.md`
 
 [Anthropic Mcp Revisited Tool Search Code Orchestration](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-mcp-revisited-tool-search-code-orchestration.md)

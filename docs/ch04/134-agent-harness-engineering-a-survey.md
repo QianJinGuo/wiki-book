@@ -1,7 +1,5 @@
 # Agent Harness Engineering: A Survey
 
-## Ch04.134 Agent Harness Engineering: A Survey
-
 > 📊 Level ⭐⭐ | 18.9KB | `entities/agent-harness-engineering-survey-2026.md`
 
 Agent Harness Engineering: A Survey

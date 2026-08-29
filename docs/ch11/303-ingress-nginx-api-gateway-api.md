@@ -1,7 +1,5 @@
 # 告别 Ingress Nginx：云原生 API 网关 Gateway API 使用指引
 
-## Ch11.303 告别 Ingress Nginx：云原生 API 网关 Gateway API 使用指引
-
 > 📊 Level ⭐⭐⭐ | 7.8KB | `entities/aliyun-cloud-native-api-gateway-gateway-api-guide.md`
 
 # 告别 Ingress Nginx：云原生 API 网关 Gateway API 使用指引

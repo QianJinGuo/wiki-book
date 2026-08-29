@@ -1,7 +1,5 @@
 # 2026 GOAI 世界人工智能开源大赛「Agent Infra 新智基座」赛道正式启动
 
-## Ch04.502 2026 GOAI 世界人工智能开源大赛「Agent Infra 新智基座」赛道正式启动
-
 > 📊 Level ⭐⭐ | 7.6KB | `entities/2026-goai-世界人工智能开源大赛agent-infra-新智基座赛道正式启动.md`
 
 # 2026 GOAI 世界人工智能开源大赛「Agent Infra 新智基座」赛道正式启动

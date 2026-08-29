@@ -1,7 +1,5 @@
 # 腾讯混元 Hy3 正式版：Agent 能力跃升与多产品落地
 
-## Ch01.857 腾讯混元 Hy3 正式版：Agent 能力跃升与多产品落地
-
 > 📊 Level ⭐⭐ | 7.5KB | `entities/tencent-hunyuan-hy3-full-release.md`
 
 # 腾讯混元 Hy3 正式版：Agent 能力跃升与多产品落地

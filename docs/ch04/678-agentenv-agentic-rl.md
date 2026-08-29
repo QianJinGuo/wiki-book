@@ -1,7 +1,5 @@
 # AgentENV：面向大规模 Agentic RL 的智能体执行环境
 
-## Ch04.678 AgentENV：面向大规模 Agentic RL 的智能体执行环境
-
 > 📊 Level ⭐⭐ | 4.8KB | `entities/agentenv-agentic-rl-execution-environment.md`
 
 # AgentENV：面向大规模 Agentic RL 的智能体执行环境

@@ -1,7 +1,5 @@
 # MNN-Sana-Edit-V2：端侧运行的图像漫画风编辑大模型
 
-## Ch01.417 MNN-Sana-Edit-V2：端侧运行的图像漫画风编辑大模型
-
 > 📊 Level ⭐⭐ | 17.7KB | `entities/mnn-sana-edit-v2端侧运行的图像漫画风编辑大模型.md`
 
 ## 摘要

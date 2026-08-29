@@ -1,7 +1,5 @@
 # 多轮 Agent 场景下，滴滴的 EAGLE-3 训推加速实践
 
-## Ch04.504 多轮 Agent 场景下，滴滴的 EAGLE-3 训推加速实践
-
 > 📊 Level ⭐⭐ | 7.6KB | `entities/taobao-smart-shopping-guide-agent-evaluation-pzmx.md`
 
 # 多轮 Agent 场景下，滴滴的 EAGLE-3 训推加速实践

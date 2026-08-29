@@ -1,7 +1,5 @@
 # Two days, one engineer, zero guesswork: Simplifying a complex modernization with IBM Bob
 
-## Ch01.262 Two days, one engineer, zero guesswork: Simplifying a complex modernization with IBM Bob
-
 > 📊 Level ⭐ | 0.8KB | `entities/two-days-one-engineer-zero-guesswork-simplifying-a-complex-modernization-with-ib.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/two-days-one-engineer-zero-guesswork-simplifying-a-complex-modernization-with-ib.md)

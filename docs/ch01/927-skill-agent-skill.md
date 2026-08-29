@@ -1,7 +1,5 @@
 # 别再手动复制 Skill 了：多 Agent 时代的 Skill 管理方案
 
-## Ch01.927 别再手动复制 Skill 了：多 Agent 时代的 Skill 管理方案
-
 > 📊 Level ⭐⭐ | 7.0KB | `entities/别再手动复制-skill-了多-agent-时代的-skill-管理方案.md`
 
 # 别再手动复制 Skill 了：多 Agent 时代的 Skill 管理方案

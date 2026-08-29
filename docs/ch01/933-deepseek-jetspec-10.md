@@ -1,7 +1,5 @@
 # DeepSeek点燃大模型效率之争，阶跃火速接棒：JetSpec让大模型解码速度最高提升近10倍
 
-## Ch01.933 DeepSeek点燃大模型效率之争，阶跃火速接棒：JetSpec让大模型解码速度最高提升近10倍
-
 > 📊 Level ⭐⭐ | 7.0KB | `entities/deepseek点燃大模型效率之争阶跃火速接棒jetspec让大模型解码速度最高提升近10倍.md`
 
 # DeepSeek点燃大模型效率之争，阶跃火速接棒：JetSpec让大模型解码速度最高提升近10倍

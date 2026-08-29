@@ -1,7 +1,5 @@
 # DeepSeek之后，中国AI「自己出题」杀进Nature通讯！全球仅4家
 
-## Ch01.825 DeepSeek之后，中国AI「自己出题」杀进Nature通讯！全球仅4家
-
 > 📊 Level ⭐⭐ | 7.8KB | `entities/deepseek之后中国ai自己出题杀进nature通讯全球仅4家.md`
 
 # DeepSeek之后，中国AI「自己出题」杀进Nature通讯！全球仅4家

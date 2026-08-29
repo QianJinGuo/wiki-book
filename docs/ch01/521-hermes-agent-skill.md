@@ -1,7 +1,5 @@
 # Hermes Agent Skill 系统深度解析
 
-## Ch01.521 Hermes Agent Skill 系统深度解析
-
 > 📊 Level ⭐⭐ | 12.4KB | `entities/hermes-skill-system.md`
 
 ## 核心定位

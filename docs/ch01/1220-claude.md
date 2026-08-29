@@ -1,7 +1,5 @@
 # Claude 的拍马屁报告
 
-## Ch01.1220 Claude 的拍马屁报告
-
 > 📊 Level ⭐⭐ | 4.8KB | `entities/claude-的拍马屁报告.md`
 
 # Claude 的拍马屁报告

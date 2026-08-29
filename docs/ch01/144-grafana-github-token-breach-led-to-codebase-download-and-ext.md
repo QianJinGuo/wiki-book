@@ -1,7 +1,5 @@
 # Grafana GitHub Token Breach Led to Codebase Download and Ext
 
-## Ch01.144 Grafana GitHub Token Breach Led to Codebase Download and Ext
-
 > 📊 Level ⭐ | 4.9KB | `entities/grafana-github-token-breach-led-to-html.md`
 
 ## 核心要点

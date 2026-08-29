@@ -1,7 +1,5 @@
 # Self-Improvements in Modern Agentic Systems: A Survey — Agent 自我改进综述
 
-## Ch04.681 Self-Improvements in Modern Agentic Systems: A Survey — Agent 自我改进综述
-
 > 📊 Level ⭐⭐ | 4.7KB | `entities/self-improvements-modern-agentic-systems-survey-arxiv-2607-13104.md`
 
 # Self-Improvements in Modern Agentic Systems: A Survey — Agent 自我改进综述

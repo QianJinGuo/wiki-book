@@ -1,7 +1,5 @@
 # claudemd-拆解agent-进仓库前的上下文入口
 
-## Ch04.068 claudemd-拆解agent-进仓库前的上下文入口
-
 > 📊 Level ⭐ | 0.7KB | `entities/claudemd-拆解agent-进仓库前的上下文入口.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claudemd-拆解agent-进仓库前的上下文入口.md)

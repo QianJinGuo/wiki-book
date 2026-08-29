@@ -1,7 +1,5 @@
 # Claude Code 身世：从安全对齐到开发工具的革命
 
-## Ch09.071 Claude Code 身世：从安全对齐到开发工具的革命
-
 > 📊 Level ⭐⭐ | 10.8KB | `entities/claude-code-origin-safety-alignment-boris-2026.md`
 
 > **Background**: 本文基于量子位公众号对 Claude Code 起源的报道，综合现有 coding agent 发展脉络整理。

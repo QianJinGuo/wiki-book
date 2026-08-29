@@ -1,7 +1,5 @@
 # Agent 后端架构
 
-## Ch04.459 Agent 后端架构
-
 > 📊 Level ⭐⭐ | 8.0KB | `entities/backend-for-agent.md`
 
 # Agent 后端架构

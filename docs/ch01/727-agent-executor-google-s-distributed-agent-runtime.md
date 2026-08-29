@@ -1,7 +1,5 @@
 # Agent Executor, Google's distributed Agent Runtime
 
-## Ch01.727 Agent Executor, Google's distributed Agent Runtime
-
 > 📊 Level ⭐⭐ | 8.6KB | `entities/agentexecutorgooglesdistributedagentruntime.md`
 
 ## 核心要点

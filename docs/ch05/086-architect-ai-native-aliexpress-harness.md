@@ -1,7 +1,5 @@
 # 从 Architect 视角看 AI-Native 落地：AliExpress Harness 生成能力建设
 
-## Ch05.086 从 Architect 视角看 AI-Native 落地：AliExpress Harness 生成能力建设
-
 > 📊 Level ⭐⭐ | 7.5KB | `entities/aliexpress-harness-ai-native-architect-2026.md`
 
 # 从 Architect 视角看 AI-Native 落地：AliExpress Harness 生成能力建设

@@ -1,7 +1,5 @@
 # NVIDIA 开源 Agentic RL 框架 Polar：支持任意 Harness，零改动 Agent 代码
 
-## Ch04.814 NVIDIA 开源 Agentic RL 框架 Polar：支持任意 Harness，零改动 Agent 代码
-
 > 📊 Level ⭐⭐ | 0.9KB | `entities/nvidia-polar-agentic-rl-harness-proxy-2026-07-22.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-polar-agentic-rl-harness-proxy-2026-07-22.md)

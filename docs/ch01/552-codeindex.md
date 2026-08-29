@@ -1,7 +1,5 @@
 # Codeindex · 让大模型更好地理解你的代码
 
-## Ch01.552 Codeindex · 让大模型更好地理解你的代码
-
 > 📊 Level ⭐⭐ | 11.5KB | `entities/codeindex-让大模型更好地理解你的代码.md`
 
 ## 核心要点

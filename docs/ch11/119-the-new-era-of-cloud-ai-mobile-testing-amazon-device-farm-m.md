@@ -1,7 +1,5 @@
 # The New Era of Cloud AI Mobile Testing: Amazon Device Farm MCP Server Practical Guide | 亚马逊AWS官方博客
 
-## Ch11.119 The New Era of Cloud AI Mobile Testing: Amazon Device Farm MCP Server Practical Guide | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 8.8KB | `entities/cloud-ai-mobile-testing-new-era-amazon-device-farm-mcp-server-practical-guide-en.md`
 
 

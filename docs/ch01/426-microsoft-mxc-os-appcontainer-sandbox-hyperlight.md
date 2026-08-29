@@ -1,7 +1,5 @@
 # Microsoft MXC — 跨 OS 代理代码执行容器：AppContainer/Sandbox/Hyperlight 三层隔离
 
-## Ch01.426 Microsoft MXC — 跨 OS 代理代码执行容器：AppContainer/Sandbox/Hyperlight 三层隔离
-
 > 📊 Level ⭐⭐ | 17.1KB | `entities/microsoft-mxc-execution-containers-agent-sandbox-origin.md`
 
 # Microsoft MXC — 跨 OS 代理代码执行容器

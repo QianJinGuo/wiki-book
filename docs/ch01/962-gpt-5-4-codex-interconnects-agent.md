@@ -1,7 +1,5 @@
 # GPT 5.4 Codex 评测：Interconnects 的 Agent 使用体验
 
-## Ch01.962 GPT 5.4 Codex 评测：Interconnects 的 Agent 使用体验
-
 > 📊 Level ⭐⭐ | 6.8KB | `entities/gpt54-codex-interconnects.md`
 
 # GPT 5.4 Codex 评测：Interconnects 的 Agent 使用体验

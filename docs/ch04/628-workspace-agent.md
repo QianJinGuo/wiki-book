@@ -1,7 +1,5 @@
 # Workspace：面向 Agent 的组织资产基座（百度实践）
 
-## Ch04.628 Workspace：面向 Agent 的组织资产基座（百度实践）
-
 > 📊 Level ⭐⭐ | 5.6KB | `entities/workspace-organizational-asset-base-baidu-2026.md`
 
 # Workspace：面向 Agent 的组织资产基座（百度实践）

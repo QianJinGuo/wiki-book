@@ -1,7 +1,5 @@
 # ICML 2026 | 免训练跑赢14B模型，Sonar-TS补上时序问答规模空白
 
-## Ch01.1451 ICML 2026 | 免训练跑赢14B模型，Sonar-TS补上时序问答规模空白
-
 > 📊 Level ⭐⭐ | 2.5KB | `entities/icml-2026-免训练跑赢14b模型sonar-ts补上时序问答规模空白.md`
 
 # ICML 2026 | 免训练跑赢14B模型，Sonar-TS补上时序问答规模空白

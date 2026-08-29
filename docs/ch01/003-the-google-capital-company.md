@@ -1,7 +1,5 @@
 # The Google Capital Company
 
-## Ch01.003 The Google Capital Company
-
 > 📊 Level ⭐ | 18.3KB | `entities/https-stratechery-com-2026-the-google-capital-company.md`
 
 # The Google Capital Company

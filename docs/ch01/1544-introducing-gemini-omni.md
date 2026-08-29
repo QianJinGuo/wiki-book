@@ -1,7 +1,5 @@
 # Introducing Gemini Omni
 
-## Ch01.1544 Introducing Gemini Omni
-
 > 📊 Level ⭐⭐⭐ | 7.5KB | `entities/introducing-gemini-omni.md`
 
 ## 核心要点

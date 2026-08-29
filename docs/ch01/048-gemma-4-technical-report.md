@@ -1,7 +1,5 @@
 # Gemma 4 Technical Report
 
-## Ch01.048 Gemma 4 Technical Report
-
 > 📊 Level ⭐ | 8.5KB | `entities/2607.02770v1.md`
 
 # Gemma 4 Technical Report

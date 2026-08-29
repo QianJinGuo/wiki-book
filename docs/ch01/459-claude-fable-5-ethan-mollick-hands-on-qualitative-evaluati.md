@@ -1,7 +1,5 @@
 # Claude Fable 5 — Ethan Mollick hands-on qualitative evaluation
 
-## Ch01.459 Claude Fable 5 — Ethan Mollick hands-on qualitative evaluation
-
 > 📊 Level ⭐⭐ | 14.7KB | `entities/claude-fable-5-mollick-patron-vs-wizard.md`
 
 # Claude Fable 5 — Ethan Mollick hands-on qualitative evaluation

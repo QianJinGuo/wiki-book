@@ -1,7 +1,5 @@
 # 百亿补贴 C 端 AI Coding 实战：基于 SDD 的服务端 AI Coding 实践
 
-## Ch05.049 百亿补贴 C 端 AI Coding 实战：基于 SDD 的服务端 AI Coding 实践
-
 > 📊 Level ⭐⭐ | 11.8KB | `entities/百亿补贴-c-端-ai-coding-实战基于-sdd-的服务端-ai-coding-实践.md`
 
 # 百亿补贴 C 端 AI Coding 实战：基于 SDD 的服务端 AI Coding 实践

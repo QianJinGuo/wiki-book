@@ -1,7 +1,5 @@
 # Harness 工程之道：Skill 原理与最佳实践
 
-## Ch05.131 Harness 工程之道：Skill 原理与最佳实践
-
 > 📊 Level ⭐⭐ | 2.0KB | `entities/harness-skill-原理与最佳实践-zhangmengjie-2026.md`
 
 # Harness 工程之道：Skill 原理与最佳实践

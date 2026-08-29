@@ -1,7 +1,5 @@
 # Yum Brands' tech chief on building its 'AI backbone' | CIO Dive
 
-## Ch03.121 Yum Brands' tech chief on building its 'AI backbone' | CIO Dive
-
 > 📊 Level ⭐⭐ | 6.0KB | `entities/819775.md`
 
 # Yum Brands' tech chief on building its 'AI backbone'

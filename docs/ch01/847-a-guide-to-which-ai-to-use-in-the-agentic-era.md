@@ -1,7 +1,5 @@
 # A Guide to Which AI to Use in the Agentic Era
 
-## Ch01.847 A Guide to Which AI to Use in the Agentic Era
-
 > 📊 Level ⭐⭐ | 7.6KB | `entities/a-guide-to-which-ai-to-use-in-the-agentic-era.md`
 
 # A Guide to Which AI to Use in the Agentic Era

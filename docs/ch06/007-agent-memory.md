@@ -1,7 +1,5 @@
 # Agent-Memory 评测全景：基准、评估与记忆系统
 
-## Ch06.007 Agent-Memory 评测全景：基准、评估与记忆系统
-
 > 📊 Level ⭐⭐ | 20.1KB | `entities/agent-memory-evaluation-landscape-taobao-survey.md`
 
 ## 核心定位

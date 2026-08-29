@@ -1,7 +1,5 @@
 # 基于AgentCore构建自学习、可进化的文旅行业近似信息抽取Agents | 亚马逊AWS官方博客
 
-## Ch11.149 基于AgentCore构建自学习、可进化的文旅行业近似信息抽取Agents | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 8.3KB | `entities/self-learning-evolvable-agents-for-cultural-tourism-info-extraction-with-agentcore.md`
 
 ## 概述

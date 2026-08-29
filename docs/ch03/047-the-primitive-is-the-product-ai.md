@@ -1,7 +1,5 @@
 # The Primitive is the Product — AI 时代的产品哲学：从功能到原语
 
-## Ch03.047 The Primitive is the Product — AI 时代的产品哲学：从功能到原语
-
 > 📊 Level ⭐ | 4.8KB | `entities/primitive-is-the-product-ai-native-product-philosophy.md`
 
 # The Primitive is the Product — AI 时代的产品哲学

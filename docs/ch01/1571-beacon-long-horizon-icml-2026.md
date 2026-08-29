@@ -1,7 +1,5 @@
 # BEACON：里程碑引导的 Long-Horizon 语言智能体策略学习（ICML 2026）
 
-## Ch01.1571 BEACON：里程碑引导的 Long-Horizon 语言智能体策略学习（ICML 2026）
-
 > 📊 Level ⭐⭐⭐ | 4.2KB | `entities/beacon-milestone-guided-policy-learning-long-horizon-agent-zju-2026.md`
 
 # BEACON：里程碑引导的 Long-Horizon 语言智能体策略学习（ICML 2026）

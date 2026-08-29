@@ -1,7 +1,5 @@
 # 从一键部署到 AI 洞察 — 基于 Serverless 架构与 LLM 的压测与分析平台
 
-## Ch11.226 从一键部署到 AI 洞察 — 基于 Serverless 架构与 LLM 的压测与分析平台
-
 > 📊 Level ⭐⭐ | 6.1KB | `entities/从一键部署到-ai-洞察基于-serverless-架构与-llm-的压测与分析平台-load-testing-pilo.md`
 
 # 从一键部署到 AI 洞察 — 基于 Serverless 架构与 LLM 的压测与分析平台

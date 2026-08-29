@@ -1,7 +1,5 @@
 # Agent 记忆系统的主矛盾：历史增长 vs 临场上下文调度
 
-## Ch06.044 Agent 记忆系统的主矛盾：历史增长 vs 临场上下文调度
-
 > 📊 Level ⭐⭐ | 3.8KB | `entities/agent-memory-main-contradiction-context-scheduling.md`
 
 # Agent 记忆系统的主矛盾：历史增长 vs 临场上下文调度

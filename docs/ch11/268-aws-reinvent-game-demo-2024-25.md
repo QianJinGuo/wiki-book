@@ -1,7 +1,5 @@
 # AWS Reinvent Game Demo 2024-25
 
-## Ch11.268 AWS Reinvent Game Demo 2024-25
-
 > 📊 Level ⭐⭐ | 4.3KB | `entities/aws-reinvent-game-demo-2024-25.md`
 
 → （无原始来源）

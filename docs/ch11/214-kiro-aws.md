@@ -1,7 +1,5 @@
 # 使用 Kiro 规范驱动开发加速数据质量建设 | 亚马逊AWS官方博客
 
-## Ch11.214 使用 Kiro 规范驱动开发加速数据质量建设 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 6.3KB | `entities/use-kiro-specification-driven-development-to-accelerate-data-quality-construction.md`
 
 ## 概述

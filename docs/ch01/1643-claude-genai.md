@@ -1,7 +1,5 @@
 # Claude 隐形水印 — GenAI 时代信息隐藏与可证安全隐写
 
-## Ch01.1643 Claude 隐形水印 — GenAI 时代信息隐藏与可证安全隐写
-
 > 📊 Level ⭐⭐⭐⭐⭐ | 2.6KB | `entities/claude-invisible-watermark-genai-steganography-xinzhiyuan.md`
 
 # Claude 隐形水印 — GenAI 时代信息隐藏与可证安全隐写

@@ -1,7 +1,5 @@
 # 如何轻量化的在亚马逊云科技中国区安全使用 Transfer Family SFTP
 
-## Ch11.196 如何轻量化的在亚马逊云科技中国区安全使用 Transfer Family SFTP
-
 > 📊 Level ⭐⭐ | 6.3KB | `entities/如何轻量化的在亚马逊云科技中国区安全使用-transfer-family-sftp.md`
 
 # 如何轻量化的在亚马逊云科技中国区安全使用 Transfer Family SFTP

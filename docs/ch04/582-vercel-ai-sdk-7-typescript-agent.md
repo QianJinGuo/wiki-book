@@ -1,7 +1,5 @@
 # Vercel AI SDK 7 — TypeScript Agent 开发框架全面升级
 
-## Ch04.582 Vercel AI SDK 7 — TypeScript Agent 开发框架全面升级
-
 > 📊 Level ⭐⭐ | 6.4KB | `entities/vercel-ai-sdk-7-typescript-agent-framework.md`
 
 # Vercel AI SDK 7 — TypeScript Agent 开发框架全面升级

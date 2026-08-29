@@ -1,7 +1,5 @@
 # Claude Science：AI 科研工作台，10 倍科研提速
 
-## Ch01.829 Claude Science：AI 科研工作台，10 倍科研提速
-
 > 📊 Level ⭐⭐ | 7.7KB | `entities/claude-science-10x-research-speedup-2026.md`
 
 # Claude Science：AI 科研工作台，10 倍科研提速

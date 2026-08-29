@@ -1,7 +1,5 @@
 # 我用阿里 AgentScope 复刻了一个 WorkBuddy — 从开源框架到可运行 Agent 的实践拆解
 
-## Ch04.629 我用阿里 AgentScope 复刻了一个 WorkBuddy — 从开源框架到可运行 Agent 的实践拆解
-
 > 📊 Level ⭐⭐ | 5.6KB | `entities/我用阿里-agentscope-复刻了一个-workbuddy.md`
 
 # 我用阿里 AgentScope 复刻了一个 WorkBuddy — 从开源框架到可运行 Agent 的实践拆解

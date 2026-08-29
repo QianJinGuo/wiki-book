@@ -1,7 +1,5 @@
 # Every AI Subscription Is a Ticking Time Bomb for Enterprise
 
-## Ch01.1398 Every AI Subscription Is a Ticking Time Bomb for Enterprise
-
 > 📊 Level ⭐⭐ | 3.5KB | `entities/every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.md`
 
 ## 核心要点

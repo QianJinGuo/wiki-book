@@ -1,7 +1,5 @@
 # LLM Wiki 知识管理
 
-## Ch06.026 LLM Wiki 知识管理
-
 > 📊 Level ⭐⭐ | 7.8KB | `entities/llm-wiki-knowledge-management.md`
 
 # LLM Wiki 知识管理

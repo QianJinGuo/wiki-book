@@ -1,7 +1,5 @@
 # 运行可全生命周期控制的隔离沙盒aws-lambda-推出-microvm
 
-## Ch11.007 运行可全生命周期控制的隔离沙盒aws-lambda-推出-microvm
-
 > 📊 Level ⭐ | 1.4KB | `entities/运行可全生命周期控制的隔离沙盒aws-lambda-推出-microvm.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/运行可全生命周期控制的隔离沙盒aws-lambda-推出-microvm.md)

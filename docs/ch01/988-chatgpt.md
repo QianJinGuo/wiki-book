@@ -1,7 +1,5 @@
 # 破案了！为啥ChatGPT老想着「稳稳地接住你」
 
-## Ch01.988 破案了！为啥ChatGPT老想着「稳稳地接住你」
-
 > 📊 Level ⭐⭐ | 6.5KB | `entities/chatgpt小心翼翼回复风格技术原因.md`
 
 ## 核心要点

@@ -1,7 +1,5 @@
 # 《Loop Engineering橙皮书》发布！免费，开源
 
-## Ch01.667 《Loop Engineering橙皮书》发布！免费，开源
-
 > 📊 Level ⭐⭐ | 9.3KB | `entities/2026-06-17--Loop-Engineering橙皮书-发布-免费-开源-花叔.md`
 
 # 《Loop Engineering橙皮书》发布！免费，开源

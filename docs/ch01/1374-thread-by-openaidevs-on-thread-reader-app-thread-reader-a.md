@@ -1,7 +1,5 @@
 # Thread by @OpenAIDevs on Thread Reader App – Thread Reader App
 
-## Ch01.1374 Thread by @OpenAIDevs on Thread Reader App – Thread Reader App
-
 > 📊 Level ⭐⭐ | 3.6KB | `entities/thread-openai-devs.md`
 
 ## 深度分析

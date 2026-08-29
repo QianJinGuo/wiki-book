@@ -1,7 +1,5 @@
 # Harness Engineering：AI 能在真正"出事会炸"的后端系统里写代码吗？
 
-## Ch05.135 Harness Engineering：AI 能在真正"出事会炸"的后端系统里写代码吗？
-
 > 📊 Level ⭐⭐⭐ | 62.1KB | `entities/harness-engineeringai-能在真正出事会炸的后端系统里写代码吗.md`
 
 [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineeringai-能在真正出事会炸的后端系统里写代码吗.md)

@@ -1,7 +1,5 @@
 # Amazon launches Supply Chain Services for businesses of all sizes
 
-## Ch11.248 Amazon launches Supply Chain Services for businesses of all sizes
-
 > 📊 Level ⭐⭐ | 4.2KB | `entities/amazon-supply-chain-services.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-supply-chain-services.md)

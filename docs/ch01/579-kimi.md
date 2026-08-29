@@ -1,7 +1,5 @@
 # kimi-回应马斯克隔空宣战
 
-## Ch01.579 kimi-回应马斯克隔空宣战
-
 > 📊 Level ⭐⭐ | 10.8KB | `entities/kimi-回应马斯克隔空宣战-xixiaoyao.md`
 
 # kimi-回应马斯克隔空宣战

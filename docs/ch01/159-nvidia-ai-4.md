@@ -1,7 +1,5 @@
 # NVIDIA 认证 | AI 基础架构与网络 4 大认证报考指南
 
-## Ch01.159 NVIDIA 认证 | AI 基础架构与网络 4 大认证报考指南
-
 > 📊 Level ⭐ | 4.0KB | `entities/nvidia-认证-ai-基础架构与网络-4-大认证报考指南.md`
 
 # NVIDIA 认证 | AI 基础架构与网络 4 大认证报考指南

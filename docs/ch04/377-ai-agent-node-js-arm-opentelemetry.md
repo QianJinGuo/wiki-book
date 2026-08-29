@@ -1,7 +1,5 @@
 # AI Agent Node.js ARM 探针 — 通过 OpenTelemetry 实现模型/工具/服务链路统一追踪
 
-## Ch04.377 AI Agent Node.js ARM 探针 — 通过 OpenTelemetry 实现模型/工具/服务链路统一追踪
-
 > 📊 Level ⭐⭐ | 9.1KB | `entities/ai-agent-nodejs-otel-arms-observability.md`
 
 # AI Agent Node.js ARM 探针 — 通过 OpenTelemetry 实现模型/工具/服务链路统一追踪

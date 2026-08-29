@@ -1,7 +1,5 @@
 # Opensquilla Launches Open-Source AI Agent to Cut Token Costs
 
-## Ch04.815 Opensquilla Launches Open-Source AI Agent to Cut Token Costs
-
 > 📊 Level ⭐⭐ | 0.8KB | `entities/opensquilla-launches-open-source-ai-agent-to-cut-token-costs-1.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/opensquilla-launches-open-source-ai-agent-to-cut-token-costs-1.md)

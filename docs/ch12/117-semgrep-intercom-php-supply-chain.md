@@ -1,7 +1,5 @@
 # Semgrep Intercom Php Supply Chain
 
-## Ch12.117 Semgrep Intercom Php Supply Chain
-
 > 📊 Level ⭐⭐ | 3.7KB | `entities/semgrep-intercom-php-supply-chain.md`
 
 # Malicious Intercom PHP Package Mini-Shai-Hulud

@@ -1,7 +1,5 @@
 # 面向复杂算法任务的 AI Agent：高德 Long-Running Harness 架构与 Uplift 模型迭代应用
 
-## Ch05.054 面向复杂算法任务的 AI Agent：高德 Long-Running Harness 架构与 Uplift 模型迭代应用
-
 > 📊 Level ⭐⭐ | 11.1KB | `entities/gaode-uplift-model-iteration-agent-harness.md`
 
 > 原文归档：[原文归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gaode-uplift-model-iteration-agent-long-running-harness.md)

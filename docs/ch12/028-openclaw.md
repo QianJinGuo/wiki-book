@@ -1,7 +1,5 @@
 # OpenClaw 安全和功能增强实践
 
-## Ch12.028 OpenClaw 安全和功能增强实践
-
 > 📊 Level ⭐⭐ | 12.6KB | `entities/openclaw-security-and-feature-enhancement-practices.md`
 
 # OpenClaw 安全和功能增强实践

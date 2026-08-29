@@ -1,7 +1,5 @@
 # token级，精准控制生成长度：3B模型击败GPT 5.4、Claude
 
-## Ch01.1002 token级，精准控制生成长度：3B模型击败GPT 5.4、Claude
-
 > 📊 Level ⭐⭐ | 6.4KB | `entities/token级精准控制生成长度3b模型击败gpt-54claude.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/token级精准控制生成长度3b模型击败gpt-54claude.md)

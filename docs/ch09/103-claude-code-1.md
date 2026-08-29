@@ -1,7 +1,5 @@
 # Claude Code 前 1% 用户指南：系统级架构与全栈工程化实践
 
-## Ch09.103 Claude Code 前 1% 用户指南：系统级架构与全栈工程化实践
-
 > 📊 Level ⭐⭐ | 8.5KB | `entities/claude-code-top-1-guide-system-engineering.md`
 
 Claude Code Top 1% 用户指南：从"自动补全助手"升级为一支可编程的工程团队。

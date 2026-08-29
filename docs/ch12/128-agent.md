@@ -1,7 +1,5 @@
 # Agent 审计：从海量噪音中捞出真风险
 
-## Ch12.128 Agent 审计：从海量噪音中捞出真风险
-
 > 📊 Level ⭐⭐ | 1.3KB | `entities/agent-audit-risk-noise-aliyun-agentloop-2026.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-audit-risk-noise-aliyun-agentloop-2026.md)

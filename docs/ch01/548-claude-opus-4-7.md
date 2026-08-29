@@ -1,7 +1,5 @@
 # Claude Opus 4.7 发布分析
 
-## Ch01.548 Claude Opus 4.7 发布分析
-
 > 📊 Level ⭐⭐ | 11.6KB | `entities/claude-opus-4-7-launch.md`
 
 ## 核心升级

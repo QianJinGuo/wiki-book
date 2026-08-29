@@ -1,7 +1,5 @@
 # Cheap code means formal verification is reasonable now — Antfly Blog
 
-## Ch09.039 Cheap code means formal verification is reasonable now — Antfly Blog
-
 > 📊 Level ⭐⭐ | 15.7KB | `entities/agent-formal-verification-ai-code.md`
 
 # Cheap code means formal verification is reasonable now — Antfly Blog

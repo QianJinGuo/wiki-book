@@ -1,7 +1,5 @@
 # AutoClaw 使用体验：自带 66 个 Skill、可接入聊天工具、安全性高
 
-## Ch04.363 AutoClaw 使用体验：自带 66 个 Skill、可接入聊天工具、安全性高
-
 > 📊 Level ⭐⭐ | 9.4KB | `entities/autoclaw-使用体验自带-66-个-skill可接入聊天工具安全性高.md`
 
 ## 摘要

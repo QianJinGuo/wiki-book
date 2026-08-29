@@ -1,7 +1,5 @@
 # 华为云码道（CodeArts）商用新版本
 
-## Ch04.456 华为云码道（CodeArts）商用新版本
-
 > 📊 Level ⭐⭐ | 8.0KB | `entities/华为云码道-codearts-商用新版本.md`
 
 # 华为云码道（CodeArts）商用新版本

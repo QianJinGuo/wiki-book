@@ -1,7 +1,5 @@
 # 火山引擎发布 Agentic 全栈数据管理服务
 
-## Ch04.298 火山引擎发布 Agentic 全栈数据管理服务
-
 > 📊 Level ⭐⭐ | 10.8KB | `entities/火山引擎-agentic-全栈数据管理服务-2026.md`
 
 # 火山引擎发布 Agentic 全栈数据管理服务

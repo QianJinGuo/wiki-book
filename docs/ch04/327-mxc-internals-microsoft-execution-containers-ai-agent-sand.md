@@ -1,7 +1,5 @@
 # MXC Internals — Microsoft eXecution Containers AI Agent Sandbox
 
-## Ch04.327 MXC Internals — Microsoft eXecution Containers AI Agent Sandbox
-
 > 📊 Level ⭐⭐ | 10.1KB | `entities/mxc-execution-containers-internals-origin.md`
 
 # MXC Internals — Microsoft eXecution Containers AI Agent Sandbox

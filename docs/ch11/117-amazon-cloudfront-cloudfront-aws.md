@@ -1,7 +1,5 @@
 # Amazon CloudFront部署小指南（二十四）：将CloudFront \"多域名\"改造为\"多租户\"架构 | 亚马逊AWS官方博客
 
-## Ch11.117 Amazon CloudFront部署小指南（二十四）：将CloudFront \"多域名\"改造为\"多租户\"架构 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 9.5KB | `entities/amazon-cloudfront-deploy-guide-cloudfront-domain-multi-tenant-architecture.md`
 
 # Amazon CloudFront部署小指南（二十四）：将CloudFront "多域名"改造为"多租户"架构 | 亚马逊AWS官方博客

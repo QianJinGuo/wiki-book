@@ -1,7 +1,5 @@
 # Browser Use：为 Agent 构建 Runtime Harness
 
-## Ch04.168 Browser Use：为 Agent 构建 Runtime Harness
-
 > 📊 Level ⭐⭐ | 15.7KB | `entities/browser-use-runtime-harness.md`
 
 # Browser Use：为 Agent 构建 Runtime Harness

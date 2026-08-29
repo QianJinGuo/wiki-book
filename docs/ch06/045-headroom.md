@@ -1,7 +1,5 @@
 # Headroom 是怎么省上下文的
 
-## Ch06.045 Headroom 是怎么省上下文的
-
 > 📊 Level ⭐⭐ | 3.5KB | `entities/headroom-context-compression-agent-vibecoder.md`
 
 # Headroom 是怎么省上下文的

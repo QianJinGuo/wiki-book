@@ -1,7 +1,5 @@
 # xHC: Expanded Hyper-Connections — 16-Way Residual Stream Architecture
 
-## Ch01.1581 xHC: Expanded Hyper-Connections — 16-Way Residual Stream Architecture
-
 > 📊 Level ⭐⭐⭐ | 3.5KB | `entities/xhc-expanded-hyper-connections.md`
 
 # xHC: Expanded Hyper-Connections

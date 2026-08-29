@@ -1,7 +1,5 @@
 # GLM-5.3: How Chinese labs keep stride with the frontier
 
-## Ch01.1206 GLM-5.3: How Chinese labs keep stride with the frontier
-
 > 📊 Level ⭐⭐ | 4.9KB | `entities/glm-53-how-chinese-labs-keep-stride-with-the-frontier.md`
 
 # GLM-5.3: How Chinese labs keep stride with the frontier

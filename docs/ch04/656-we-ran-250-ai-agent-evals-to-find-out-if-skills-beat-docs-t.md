@@ -1,7 +1,5 @@
 # We Ran 250 AI Agent Evals to Find Out if Skills Beat Docs. The Answer Is More Complicated Than We Expected
 
-## Ch04.656 We Ran 250 AI Agent Evals to Find Out if Skills Beat Docs. The Answer Is More Complicated Than We Expected
-
 > 📊 Level ⭐⭐ | 5.2KB | `entities/we-ran-250-ai-agent-evals-to-find-out-if-skills-beat-docs-th.md`
 
 # We Ran 250 AI Agent Evals to Find Out if Skills Beat Docs. The Answer Is More Complicated Than We Expected

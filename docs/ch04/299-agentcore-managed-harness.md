@@ -1,7 +1,5 @@
 # AgentCore Managed Harness
 
-## Ch04.299 AgentCore Managed Harness
-
 > 📊 Level ⭐⭐ | 10.8KB | `entities/agentcore-harness.md`
 
 ## Overview

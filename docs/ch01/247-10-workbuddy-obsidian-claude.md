@@ -1,7 +1,5 @@
 # 10万之后我用-workbuddy-obsidian-claude-重新搭了一遍个人知识库
 
-## Ch01.247 10万之后我用-workbuddy-obsidian-claude-重新搭了一遍个人知识库
-
 > 📊 Level ⭐ | 0.8KB | `entities/10万之后我用-workbuddy-obsidian-claude-重新搭了一遍个人知识库.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/10万之后我用-workbuddy-obsidian-claude-重新搭了一遍个人知识库.md)

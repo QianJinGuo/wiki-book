@@ -1,7 +1,5 @@
 # OpenAI GDPval and the Real AI Agents Threshold (Mollick View)
 
-## Ch04.155 OpenAI GDPval and the Real AI Agents Threshold (Mollick View)
-
 > 📊 Level ⭐⭐ | 16.5KB | `entities/openai-gdpval-real-ai-agents-threshold.md`
 
 # OpenAI GDPval and the Real AI Agents Threshold (Mollick View)

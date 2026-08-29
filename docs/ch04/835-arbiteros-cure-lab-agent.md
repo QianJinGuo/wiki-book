@@ -1,7 +1,5 @@
 # ArbiterOS — 港中文 CURE Lab 开源 Agent 运行时治理内核
 
-## Ch04.835 ArbiterOS — 港中文 CURE Lab 开源 Agent 运行时治理内核
-
 > 📊 Level ⭐⭐⭐ | 10.2KB | `entities/arbiteros-governance-kernel-cuhk-2026.md`
 
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/arbiteros-governance-kernel-cuhk-ruofei-2026-08-03.md)

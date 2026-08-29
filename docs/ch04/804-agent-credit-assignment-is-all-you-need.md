@@ -1,7 +1,5 @@
 # Agent训练最容易踩的坑：Credit Assignment Is All You Need
 
-## Ch04.804 Agent训练最容易踩的坑：Credit Assignment Is All You Need
-
 > 📊 Level ⭐⭐ | 2.6KB | `entities/agent训练最容易踩的坑credit-assignment-is-all-you-need.md`
 
 # Agent训练最容易踩的坑：Credit Assignment Is All You Need

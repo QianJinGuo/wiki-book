@@ -1,7 +1,5 @@
 # Built Technologies AI Document Intelligence — 房地产金融 AI 文档处理引擎
 
-## Ch01.660 Built Technologies AI Document Intelligence — 房地产金融 AI 文档处理引擎
-
 > 📊 Level ⭐⭐ | 9.4KB | `entities/built-technologies-ai-document-intelligence-2026.md`
 
 # Built Technologies AI Document Intelligence — 房地产金融 AI 文档处理引擎

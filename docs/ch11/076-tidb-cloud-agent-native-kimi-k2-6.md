@@ -1,7 +1,5 @@
 # TiDB Cloud — Agent-native 数据库与 Kimi K2.6 合作
 
-## Ch11.076 TiDB Cloud — Agent-native 数据库与 Kimi K2.6 合作
-
 > 📊 Level ⭐⭐ | 10.8KB | `entities/tidb-cloud-agent-database.md`
 
 

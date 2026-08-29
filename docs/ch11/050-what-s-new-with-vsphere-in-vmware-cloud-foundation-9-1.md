@@ -1,7 +1,5 @@
 # What’s New with vSphere in VMware Cloud Foundation 9.1?
 
-## Ch11.050 What’s New with vSphere in VMware Cloud Foundation 9.1?
-
 > 📊 Level ⭐⭐ | 13.4KB | `entities/whats-new-with-vsphere-9-1.md`
 
 # vSphere in VCF 9.1 新特性解析

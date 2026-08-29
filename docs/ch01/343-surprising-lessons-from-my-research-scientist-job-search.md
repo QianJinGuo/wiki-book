@@ -1,7 +1,5 @@
 # Surprising lessons from my research scientist job search
 
-## Ch01.343 Surprising lessons from my research scientist job search
-
 > 📊 Level ⭐ | 0.6KB | `entities/yongzx-research-scientist-job-search-surprising-lessons.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/yongzx-research-scientist-job-search-surprising-lessons.md)

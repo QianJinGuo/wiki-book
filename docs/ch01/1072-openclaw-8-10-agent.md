@@ -1,7 +1,5 @@
 # 拆解 OpenClaw 架构（二）：8 个文件 + 10 步流水线，Agent 人格系统的源码级设计
 
-## Ch01.1072 拆解 OpenClaw 架构（二）：8 个文件 + 10 步流水线，Agent 人格系统的源码级设计
-
 > 📊 Level ⭐⭐ | 5.9KB | `entities/拆解-openclaw-架构二8-个文件-10-步流水线agent-人格系统的源码级设计.md`
 
 # 拆解 OpenClaw 架构（二）：8 个文件 + 10 步流水线，Agent 人格系统的源码级设计

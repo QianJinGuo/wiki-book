@@ -1,7 +1,5 @@
 # Why the Human Genome's Tangled Physicality May Confound AI
 
-## Ch01.1340 Why the Human Genome's Tangled Physicality May Confound AI
-
 > 📊 Level ⭐⭐ | 3.8KB | `entities/human-genome-physicality-confounds-ai-genomic-foundation-models.md`
 
 # Why the Human Genome's Tangled Physicality May Confound AI

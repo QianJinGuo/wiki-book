@@ -1,7 +1,5 @@
 # 三器合一（Comet + OpenSpec + Superpowers）：用文件系统给 AI 编程上工程纪律 — 术哥源码级深度分析（WHAT/HOW/WHEN-NEXT 分工 + 9 平台 Hook + 上下文压缩 + 多 Agent 协作 + Shell+YAML 工程取舍）
 
-## Ch01.391 三器合一（Comet + OpenSpec + Superpowers）：用文件系统给 AI 编程上工程纪律 — 术哥源码级深度分析（WHAT/HOW/WHEN-NEXT 分工 + 9 平台 Hook + 上下文压缩 + 多 Agent 协作 + Shell+YAML 工程取舍）
-
 > 📊 Level ⭐⭐ | 24.9KB | `entities/three-tools-comet-openspec-superpowers-ai-coding-shuge-2026-06-17.md`
 
 # 三器合一（Comet + OpenSpec + Superpowers）：用文件系统给 AI 编程上工程纪律

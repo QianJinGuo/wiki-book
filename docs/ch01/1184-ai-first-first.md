@@ -1,7 +1,5 @@
 # AI First？不，这明明是软件工程 First！
 
-## Ch01.1184 AI First？不，这明明是软件工程 First！
-
 > 📊 Level ⭐⭐ | 5.1KB | `entities/ai-first不这明明是软件工程-first.md`
 
 # AI First？不，这明明是软件工程 First！

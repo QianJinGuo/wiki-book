@@ -1,7 +1,5 @@
 # AutoSDK AI Coding 可观测与自进化闭环（高德汽车工程 进化篇）
 
-## Ch09.137 AutoSDK AI Coding 可观测与自进化闭环（高德汽车工程 进化篇）
-
 > 📊 Level ⭐⭐ | 6.8KB | `entities/gaode-autosdk-observability-self-evolving-loop-2026.md`
 
 # AutoSDK AI Coding 可观测与自进化闭环（高德汽车工程 进化篇）

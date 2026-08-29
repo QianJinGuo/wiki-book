@@ -1,7 +1,5 @@
 # 把运维能力装进 Qoder，一句话就能定位根因
 
-## Ch09.014 把运维能力装进 Qoder，一句话就能定位根因
-
 > 📊 Level ⭐ | 0.7KB | `entities/qoder-starops-ai-ops-rootcause.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qoder-starops-ai-ops-rootcause.md)

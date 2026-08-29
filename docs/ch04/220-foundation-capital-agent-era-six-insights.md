@@ -1,7 +1,5 @@
 # Foundation Capital Agent Era Six Insights
 
-## Ch04.220 Foundation Capital Agent Era Six Insights
-
 > 📊 Level ⭐⭐ | 12.8KB | `entities/foundation-capital-agent-era-six-insights.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/foundation-capital-agent-era-six-insights.md)

@@ -1,7 +1,5 @@
 # 一次构建随处复用python-泛型仓库模式
 
-## Ch04.494 一次构建随处复用python-泛型仓库模式
-
 > 📊 Level ⭐⭐ | 7.7KB | `entities/一次构建随处复用python-泛型仓库模式.md`
 
 # 一次构建随处复用python-泛型仓库模式

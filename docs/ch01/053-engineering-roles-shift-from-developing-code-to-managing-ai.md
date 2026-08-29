@@ -1,7 +1,5 @@
 # Engineering roles shift from developing code to managing AI
 
-## Ch01.053 Engineering roles shift from developing code to managing AI
-
 > 📊 Level ⭐ | 8.4KB | `entities/engineering-roles-shift-from-developing-code-to-ma.md`
 
 ## 摘要

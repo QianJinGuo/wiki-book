@@ -1,7 +1,5 @@
 # Cursor Router: 生产流量驱动的模型路由系统
 
-## Ch01.1323 Cursor Router: 生产流量驱动的模型路由系统
-
 > 📊 Level ⭐⭐ | 3.9KB | `entities/cursor-router-production-model-routing-2026.md`
 
 # Cursor Router: 生产流量驱动的模型路由系统

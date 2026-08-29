@@ -1,7 +1,5 @@
 # AgentTeams 和 Claude Tag 都进入群聊模式 是新范式还是新叙 阿里云云原生
 
-## Ch01.223 AgentTeams 和 Claude Tag 都进入群聊模式 是新范式还是新叙 阿里云云原生
-
 > 📊 Level ⭐ | 0.9KB | `entities/2026-06-30-AgentTeams-和-Claude-Tag-都进入群聊模式-是新范式还是新叙-阿里云云原生.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-06-30-AgentTeams-和-Claude-Tag-都进入群聊模式-是新范式还是新叙-阿里云云原生.md)

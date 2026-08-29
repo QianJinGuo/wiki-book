@@ -1,7 +1,5 @@
 # Building Modelplane on Crossplane
 
-## Ch01.098 Building Modelplane on Crossplane
-
 > 📊 Level ⭐ | 7.0KB | `entities/building-modelplane.md`
 
 # Building Modelplane on Crossplane

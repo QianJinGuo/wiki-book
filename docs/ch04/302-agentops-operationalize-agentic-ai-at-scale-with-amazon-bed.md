@@ -1,7 +1,5 @@
 # AgentOps: Operationalize agentic AI at scale with Amazon Bedrock AgentCore
 
-## Ch04.302 AgentOps: Operationalize agentic AI at scale with Amazon Bedrock AgentCore
-
 > 📊 Level ⭐⭐ | 10.7KB | `entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md`
 
 # AgentOps: Operationalize agentic AI at scale with Amazon Bedrock AgentCore

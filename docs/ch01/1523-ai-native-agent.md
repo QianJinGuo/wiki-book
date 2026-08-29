@@ -1,7 +1,5 @@
 # AI Native 下的混沌工程：Agent 军团如何重新定义系统韧性验证
 
-## Ch01.1523 AI Native 下的混沌工程：Agent 军团如何重新定义系统韧性验证
-
 > 📊 Level ⭐⭐⭐ | 8.9KB | `entities/ai-native-混沌工程-agent军团.md`
 
 # AI Native 混沌工程：Agent 军团 + 共享黑板重定义系统韧性验证

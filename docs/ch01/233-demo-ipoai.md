@@ -1,7 +1,5 @@
 # 从验证demo到冲刺ipoai企业为何更需要一座产业小镇
 
-## Ch01.233 从验证demo到冲刺ipoai企业为何更需要一座产业小镇
-
 > 📊 Level ⭐ | 0.9KB | `entities/从验证demo到冲刺ipoai企业为何更需要一座产业小镇.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/从验证demo到冲刺ipoai企业为何更需要一座产业小镇.md)

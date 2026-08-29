@@ -1,7 +1,5 @@
 # Back up and restore your Amazon EKS cluster resources using Velero | Amazon Web Services
 
-## Ch01.086 Back up and restore your Amazon EKS cluster resources using Velero | Amazon Web Services
-
 > 📊 Level ⭐ | 7.4KB | `entities/back-up-and-restore-your-amazon-eks-cluster-resources-using-velero-amazon-web-se.md`
 
 ## 核心要点

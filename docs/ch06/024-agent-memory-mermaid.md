@@ -1,7 +1,5 @@
 # 腾讯云Agent Memory：Mermaid无限画布×上下文卸载
 
-## Ch06.024 腾讯云Agent Memory：Mermaid无限画布×上下文卸载
-
 > 📊 Level ⭐⭐ | 7.9KB | `entities/tencentdb-agent-memory-context-offloading.md`
 
 # 腾讯云Agent Memory：Mermaid无限画布×上下文卸载

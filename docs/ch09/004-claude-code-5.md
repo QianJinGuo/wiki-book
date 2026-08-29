@@ -1,7 +1,5 @@
 # Claude Code 个人学习系统：从答案机到学习工作台的 5 步法
 
-## Ch09.004 Claude Code 个人学习系统：从答案机到学习工作台的 5 步法
-
 > 📊 Level ⭐ | 6.9KB | `entities/claude-code-personal-learning-system-ruofei.md`
 
 # Claude Code 个人学习系统：从答案机到学习工作台

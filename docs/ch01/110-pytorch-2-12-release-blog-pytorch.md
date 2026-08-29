@@ -1,7 +1,5 @@
 # PyTorch 2.12 Release Blog – PyTorch
 
-## Ch01.110 PyTorch 2.12 Release Blog – PyTorch
-
 > 📊 Level ⭐ | 6.6KB | `entities/pytorch-2-12-release-blog.md`
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pytorch-2-12-release-blog.md)

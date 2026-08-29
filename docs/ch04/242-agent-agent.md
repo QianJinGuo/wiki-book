@@ -1,7 +1,5 @@
 # Agent 开发应小步快跑：第一个 Agent 只需做一件事（哪怕很烂）
 
-## Ch04.242 Agent 开发应小步快跑：第一个 Agent 只需做一件事（哪怕很烂）
-
 > 📊 Level ⭐⭐ | 12.1KB | `entities/agent-development-crawl-walk-run-crewai-iterative.md`
 
 # Agent 开发应小步快跑：第一个 Agent 只需做一件事（哪怕很烂）

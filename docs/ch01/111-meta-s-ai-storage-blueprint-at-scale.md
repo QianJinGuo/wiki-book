@@ -1,7 +1,5 @@
 # Meta’s AI Storage Blueprint at Scale
 
-## Ch01.111 Meta’s AI Storage Blueprint at Scale
-
 > 📊 Level ⭐ | 6.5KB | `entities/metas-ai-storage-blueprint-at-scale.md`
 
 # Meta’s AI Storage Blueprint at Scale

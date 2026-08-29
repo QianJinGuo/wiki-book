@@ -1,7 +1,5 @@
 # 丰饶之后：AI Coding 观察报告 2.0｜AI 透镜系列研究
 
-## Ch01.1193 丰饶之后：AI Coding 观察报告 2.0｜AI 透镜系列研究
-
 > 📊 Level ⭐⭐ | 5.0KB | `entities/丰饶之后ai-coding-观察报告-20ai-透镜系列研究.md`
 
 # 丰饶之后：AI Coding 观察报告 2.0｜AI 透镜系列研究

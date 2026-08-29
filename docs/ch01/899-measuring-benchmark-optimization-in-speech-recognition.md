@@ -1,7 +1,5 @@
 # Measuring benchmark optimization in speech recognition
 
-## Ch01.899 Measuring benchmark optimization in speech recognition
-
 > 📊 Level ⭐⭐ | 7.1KB | `entities/measuring-benchmark-optimization-in-speech-recognition.md`
 
 # Measuring benchmark optimization in speech recognition

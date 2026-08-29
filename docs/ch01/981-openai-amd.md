@@ -1,7 +1,5 @@
 # OpenAI公开大规模稳定训练的秘密，英伟达AMD英特尔都受益
 
-## Ch01.981 OpenAI公开大规模稳定训练的秘密，英伟达AMD英特尔都受益
-
 > 📊 Level ⭐⭐ | 6.6KB | `entities/openai公开大规模稳定训练的秘密英伟达amd英特尔都受益.md`
 
 # OpenAI公开大规模稳定训练的秘密，英伟达AMD英特尔都受益

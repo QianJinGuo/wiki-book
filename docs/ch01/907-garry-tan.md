@@ -1,7 +1,5 @@
 # Garry Tan
 
-## Ch01.907 Garry Tan
-
 > 📊 Level ⭐⭐ | 7.1KB | `entities/garry-tan-yc-ceo.md`
 
 ## 核心经历

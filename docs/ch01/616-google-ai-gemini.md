@@ -1,7 +1,5 @@
 # Google被曝正在研发一颗新的服务器AI芯片，把Gemini固化到硬件里
 
-## Ch01.616 Google被曝正在研发一颗新的服务器AI芯片，把Gemini固化到硬件里
-
 > 📊 Level ⭐⭐ | 10.1KB | `entities/google-frozen-v2-server-ai-chip-gemini-hardware.md`
 
 # Google被曝正在研发一颗新的服务器AI芯片，把Gemini固化到硬件里

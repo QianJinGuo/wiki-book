@@ -1,7 +1,5 @@
 # 腾讯混元新里程碑：Hy3 preview 发布开源，Agent 表现全面提升
 
-## Ch01.1231 腾讯混元新里程碑：Hy3 preview 发布开源，Agent 表现全面提升
-
 > 📊 Level ⭐⭐ | 4.7KB | `entities/tencent-hunyuan-hy3-preview-open-source.md`
 
 # 腾讯混元新里程碑：Hy3 preview 发布开源，Agent 表现全面提升

@@ -1,7 +1,5 @@
 # Claude Code 动态工作流源码解析：pi-dynamic-workflows 架构实现
 
-## Ch01.1381 Claude Code 动态工作流源码解析：pi-dynamic-workflows 架构实现
-
 > 📊 Level ⭐⭐ | 3.5KB | `entities/claude-code-dynamic-workflows-source-code-architecture.md`
 
 # Claude Code 动态工作流源码解析：pi-dynamic-workflows 架构实现

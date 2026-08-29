@@ -1,7 +1,5 @@
 # 高德 Push 发送门控 Agent 感知投放：三代架构与约束工程（Harness Engineering）
 
-## Ch04.561 高德 Push 发送门控 Agent 感知投放：三代架构与约束工程（Harness Engineering）
-
 > 📊 Level ⭐⭐ | 6.8KB | `entities/gaode-push-agent-gate-control-harness-engineering-2026.md`
 
 # 高德 Push 发送门控 Agent 感知投放：三代架构与约束工程（Harness Engineering）

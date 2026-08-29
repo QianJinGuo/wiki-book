@@ -1,7 +1,5 @@
 # SANA-Video 2.0: Hybrid Linear Attention with Attention Residuals for Efficient Video Generation
 
-## Ch01.1533 SANA-Video 2.0: Hybrid Linear Attention with Attention Residuals for Efficient Video Generation
-
 > 📊 Level ⭐⭐⭐ | 8.1KB | `entities/sana-video-2-hybrid-linear-attention-video-generation.md`
 
 # SANA-Video 2.0: Hybrid Linear Attention with Attention Residuals for Efficient Video Generation

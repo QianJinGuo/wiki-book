@@ -1,7 +1,5 @@
 # Claude code创始人最新揭秘：Claude Tag如何在团队内部「大杀四方」
 
-## Ch09.171 Claude code创始人最新揭秘：Claude Tag如何在团队内部「大杀四方」
-
 > 📊 Level ⭐⭐ | 4.5KB | `entities/claude-code创始人最新揭秘claude-tag如何在团队内部大杀四方.md`
 
 # Claude code创始人最新揭秘：Claude Tag如何在团队内部「大杀四方」

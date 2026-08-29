@@ -1,7 +1,5 @@
 # From Agent Protocol to Harness Skill
 
-## Ch04.526 From Agent Protocol to Harness Skill
-
 > 📊 Level ⭐⭐ | 7.2KB | `entities/from-agent-protocol-to-harness-skill.md`
 
 → （无原始来源）

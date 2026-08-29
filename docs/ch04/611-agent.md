@@ -1,7 +1,5 @@
 # 细思极恐！Agent暗藏风险，清华团队打出组合拳，全链路一网打尽
 
-## Ch04.611 细思极恐！Agent暗藏风险，清华团队打出组合拳，全链路一网打尽
-
 > 📊 Level ⭐⭐ | 6.0KB | `entities/tsinghua-agent-security-fangcun.md`
 
 # 细思极恐！Agent暗藏风险，清华团队打出组合拳，全链路一网打尽

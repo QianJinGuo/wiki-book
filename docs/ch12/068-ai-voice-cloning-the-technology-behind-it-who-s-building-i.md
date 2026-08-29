@@ -1,7 +1,5 @@
 # AI Voice Cloning: The Technology Behind It, Who's Building It, and Where It's Headed
 
-## Ch12.068 AI Voice Cloning: The Technology Behind It, Who's Building It, and Where It's Headed
-
 > 📊 Level ⭐⭐ | 7.2KB | `entities/ai-voice-cloning-the-technology-behind-it-whos-building-it-a.md`
 
 ## 核心要点

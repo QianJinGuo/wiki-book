@@ -1,7 +1,5 @@
 # Anthropic 发布 Computer Use 最佳实践
 
-## Ch01.1224 Anthropic 发布 Computer Use 最佳实践
-
 > 📊 Level ⭐⭐ | 4.8KB | `entities/anthropic-computer-use-best-practices.md`
 
 # Anthropic 发布 Computer Use 最佳实践

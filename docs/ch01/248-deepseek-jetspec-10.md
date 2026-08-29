@@ -1,7 +1,5 @@
 # 不只DeepSeek 阶跃等开源JetSpec 大模型解码提速近10倍 机器之心
 
-## Ch01.248 不只DeepSeek 阶跃等开源JetSpec 大模型解码提速近10倍 机器之心
-
 > 📊 Level ⭐ | 0.8KB | `entities/2026-06-30-不只DeepSeek-阶跃等开源JetSpec-大模型解码提速近10倍-机器之心.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-06-30-不只DeepSeek-阶跃等开源JetSpec-大模型解码提速近10倍-机器之心.md)

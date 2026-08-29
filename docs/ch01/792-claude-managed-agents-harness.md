@@ -1,7 +1,5 @@
 # Claude Managed Agents 官方 Harness 平台指南
 
-## Ch01.792 Claude Managed Agents 官方 Harness 平台指南
-
 > 📊 Level ⭐⭐ | 8.0KB | `entities/anthropic-claude-managed-agents-guide.md`
 
 ## 核心洞察

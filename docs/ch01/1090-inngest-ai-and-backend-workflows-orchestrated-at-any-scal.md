@@ -1,7 +1,5 @@
 # Inngest - AI and backend workflows, orchestrated at any scale
 
-## Ch01.1090 Inngest - AI and backend workflows, orchestrated at any scale
-
 > 📊 Level ⭐⭐ | 5.8KB | `entities/inngest-ai-and-backend-workflows-orchestrated-at-any-scale.md`
 
 ## 核心要点

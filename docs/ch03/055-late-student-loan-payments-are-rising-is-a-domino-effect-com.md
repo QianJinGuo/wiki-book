@@ -1,7 +1,5 @@
 # late-student-loan-payments-are-rising-is-a-domino-effect-com
 
-## Ch03.055 late-student-loan-payments-are-rising-is-a-domino-effect-com
-
 > 📊 Level ⭐ | 0.8KB | `entities/late-student-loan-payments-are-rising-is-a-domino-effect-com.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/late-student-loan-payments-are-rising-is-a-domino-effect-com.md)

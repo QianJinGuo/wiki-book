@@ -1,7 +1,5 @@
 # Static Devirtualization of Themida
 
-## Ch12.064 Static Devirtualization of Themida
-
 > 📊 Level ⭐⭐ | 7.4KB | `entities/static-devirtualization-of-themida.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/static-devirtualization-of-themida.md)

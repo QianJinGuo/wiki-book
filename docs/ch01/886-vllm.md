@@ -1,7 +1,5 @@
 # vLLM
 
-## Ch01.886 vLLM
-
 > 📊 Level ⭐⭐ | 7.2KB | `entities/vllm.md`
 
 # vLLM

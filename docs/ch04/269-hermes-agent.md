@@ -1,7 +1,5 @@
 # 拆完 Hermes 源码发现 Agent 自我进化不需要训练模型
 
-## Ch04.269 拆完 Hermes 源码发现 Agent 自我进化不需要训练模型
-
 > 📊 Level ⭐⭐ | 11.4KB | `entities/hermes-agent-self-evolution-源码解析.md`
 
 # 拆完 Hermes 源码发现 Agent 自我进化不需要训练模型

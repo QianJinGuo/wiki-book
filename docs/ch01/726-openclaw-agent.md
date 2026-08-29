@@ -1,7 +1,5 @@
 # 拆解OpenClaw架构（八）：多Agent编排与自主运行
 
-## Ch01.726 拆解OpenClaw架构（八）：多Agent编排与自主运行
-
 > 📊 Level ⭐⭐ | 8.6KB | `entities/拆解openclaw架构八多agent编排与自主运行.md`
 
 # 拆解OpenClaw架构（八）：多Agent编排与自主运行

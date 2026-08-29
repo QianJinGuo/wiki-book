@@ -1,7 +1,5 @@
 # 《从零实现 Agent 系统》连载 01｜Agent 系统是什么：问题空间与架构切片
 
-## Ch04.621 《从零实现 Agent 系统》连载 01｜Agent 系统是什么：问题空间与架构切片
-
 > 📊 Level ⭐⭐ | 5.7KB | `entities/agent-system-zero-to-one-01-architecture-slices-2026.md`
 
 # 《从零实现 Agent 系统》连载 01｜Agent 系统是什么：问题空间与架构切片

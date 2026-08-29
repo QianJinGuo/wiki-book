@@ -1,7 +1,5 @@
 # LLM Agent 怎么测评：IBM+Yale 评测综述与 2026 三条新范式
 
-## Ch04.049 LLM Agent 怎么测评：IBM+Yale 评测综述与 2026 三条新范式
-
 > 📊 Level ⭐ | 0.8KB | `entities/agent-evaluation-survey-ibm-yale-2026.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-evaluation-survey-ibm-yale-2026.md)

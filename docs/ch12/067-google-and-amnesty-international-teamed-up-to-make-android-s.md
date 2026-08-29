@@ -1,7 +1,5 @@
 # Google and Amnesty International teamed up to make Android spyware detectable
 
-## Ch12.067 Google and Amnesty International teamed up to make Android spyware detectable
-
 > 📊 Level ⭐⭐ | 7.1KB | `entities/google-and-amnesty-international-teamed-up-to-make-android-s.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/google-and-amnesty-international-teamed-up-to-make-android-s.md)

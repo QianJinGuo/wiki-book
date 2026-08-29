@@ -1,7 +1,5 @@
 # IBM Granite 4.2：首个稠密推理 LLM 家族（3B/8B/30B）
 
-## Ch01.909 IBM Granite 4.2：首个稠密推理 LLM 家族（3B/8B/30B）
-
 > 📊 Level ⭐⭐ | 7.1KB | `entities/ibm-granite-4-2-reasoning-architecture-2026.md`
 
 # IBM Granite 4.2：首个稠密推理 LLM 家族（3B/8B/30B）

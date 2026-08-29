@@ -1,7 +1,5 @@
 # claude-上线reflect功能让你回顾和反思如何使用-ai
 
-## Ch01.296 claude-上线reflect功能让你回顾和反思如何使用-ai
-
 > 📊 Level ⭐ | 0.7KB | `entities/claude-上线reflect功能让你回顾和反思如何使用-ai.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-上线reflect功能让你回顾和反思如何使用-ai.md)

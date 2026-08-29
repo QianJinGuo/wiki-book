@@ -1,7 +1,5 @@
 # ML Intern Huggingface Autonomous ML Agent
 
-## Ch04.643 ML Intern Huggingface Autonomous ML Agent
-
 > 📊 Level ⭐⭐ | 5.4KB | `entities/ml-intern-huggingface-autonomous-ml-agent.md`
 
 # ml-intern: Hugging Face 开源自主 ML 工程代理

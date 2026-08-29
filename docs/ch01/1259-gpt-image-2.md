@@ -1,7 +1,5 @@
 # GPT -Image 2神级提示词分享
 
-## Ch01.1259 GPT -Image 2神级提示词分享
-
 > 📊 Level ⭐⭐ | 4.4KB | `entities/gpt-image-2神级提示词分享.md`
 
 # GPT -Image 2神级提示词分享

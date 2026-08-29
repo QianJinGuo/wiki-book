@@ -1,7 +1,5 @@
 # The Data Canary: How Netflix Validates Catalog Metadata
 
-## Ch11.240 The Data Canary: How Netflix Validates Catalog Metadata
-
 ```mermaid
 graph TB
     subgraph "边缘层"

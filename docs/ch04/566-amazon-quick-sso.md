@@ -1,7 +1,5 @@
 # Amazon Quick 飞书SSO对接指南
 
-## Ch04.566 Amazon Quick 飞书SSO对接指南
-
 > 📊 Level ⭐⭐ | 6.7KB | `entities/amazon-quick-飞书sso对接指南.md`
 
 # Amazon Quick 飞书SSO对接指南

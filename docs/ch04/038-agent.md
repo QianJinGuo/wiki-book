@@ -1,7 +1,5 @@
 # Agent时代如何做好多模态数据管理？
 
-## Ch04.038 Agent时代如何做好多模态数据管理？
-
 > 📊 Level ⭐ | 0.9KB | `entities/oceanbase-multimodal-table-ai-database-2026.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/oceanbase-multimodal-table-ai-database-2026.md)

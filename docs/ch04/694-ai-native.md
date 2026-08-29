@@ -1,7 +1,5 @@
 # 迈向AI Native：快手技术团队的范式跃迁与组织进化
 
-## Ch04.694 迈向AI Native：快手技术团队的范式跃迁与组织进化
-
 > 📊 Level ⭐⭐ | 4.5KB | `entities/迈向ai-native快手技术团队的范式跃迁与组织进化.md`
 
 # 迈向AI Native：快手技术团队的范式跃迁与组织进化

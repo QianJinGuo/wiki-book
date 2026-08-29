@@ -1,7 +1,5 @@
 # Codex can now control other desktop devices via Computer Use
 
-## Ch09.160 Codex can now control other desktop devices via Computer Use
-
 > 📊 Level ⭐⭐ | 5.2KB | `entities/codex-can-now-control-other-desktop-devices-via-computer-use.md`
 
 ## 核心要点

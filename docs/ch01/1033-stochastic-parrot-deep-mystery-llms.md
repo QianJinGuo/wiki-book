@@ -1,7 +1,5 @@
 # Stochastic Parrot Deep Mystery Llms
 
-## Ch01.1033 Stochastic Parrot Deep Mystery Llms
-
 > 📊 Level ⭐⭐ | 6.2KB | `entities/stochastic-parrot-deep-mystery-llms.md`
 
 # On the deep mystery of language models

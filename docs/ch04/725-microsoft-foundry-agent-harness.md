@@ -1,7 +1,5 @@
 # Microsoft Foundry 生产级 Agent 工程：Harness 与模型的等价重要性
 
-## Ch04.725 Microsoft Foundry 生产级 Agent 工程：Harness 与模型的等价重要性
-
 > 📊 Level ⭐⭐ | 4.0KB | `entities/bytebytego-microsoft-foundry-production-agent-harness-model-equal-importance-2026.md`
 
 # Microsoft Foundry 生产级 Agent 工程：Harness 与模型的等价重要性

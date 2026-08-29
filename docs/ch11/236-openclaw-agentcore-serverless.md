@@ -1,7 +1,5 @@
 # OpenClaw 多用户部署（四）：AgentCore Serverless 容器化
 
-## Ch11.236 OpenClaw 多用户部署（四）：AgentCore Serverless 容器化
-
 > 📊 Level ⭐⭐ | 4.8KB | `entities/openclaw-multi-4.md`
 
 

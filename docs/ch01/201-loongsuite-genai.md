@@ -1,7 +1,5 @@
 # 阿里巴巴 蚂蚁 LoongSuite GenAI 可观测语义规范 从统一数据语言到规模化落地 阿里技术
 
-## Ch01.201 阿里巴巴 蚂蚁 LoongSuite GenAI 可观测语义规范 从统一数据语言到规模化落地 阿里技术
-
 > 📊 Level ⭐ | 1.0KB | `entities/2026-05-12-阿里巴巴-蚂蚁-LoongSuite-GenAI-可观测语义规范-从统一数据语言到规模化落地-阿里技术.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-05-12-阿里巴巴-蚂蚁-LoongSuite-GenAI-可观测语义规范-从统一数据语言到规模化落地-阿里技术.md)

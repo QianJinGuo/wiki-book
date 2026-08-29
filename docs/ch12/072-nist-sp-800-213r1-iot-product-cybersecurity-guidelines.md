@@ -1,7 +1,5 @@
 # NIST SP 800-213r1 — IoT Product Cybersecurity Guidelines
 
-## Ch12.072 NIST SP 800-213r1 — IoT Product Cybersecurity Guidelines
-
 > 📊 Level ⭐⭐ | 7.0KB | `entities/nist-sp-800-213r1-iot-product-cybersecurity-guidelines.md`
 
 # NIST SP 800-213r1 — IoT Product Cybersecurity Guidelines

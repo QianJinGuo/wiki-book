@@ -1,7 +1,5 @@
 # GRC Now | Free virtual event | 8 CPEs
 
-## Ch03.140 GRC Now | Free virtual event | 8 CPEs
-
 > 📊 Level ⭐⭐ | 3.6KB | `entities/grcnow.md`
 
 # GRC Now | Free virtual event | 8 CPEs

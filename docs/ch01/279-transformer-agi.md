@@ -1,7 +1,5 @@
 # transformer能通向agi吗布林能但它已经变了
 
-## Ch01.279 transformer能通向agi吗布林能但它已经变了
-
 > 📊 Level ⭐ | 0.8KB | `entities/transformer能通向agi吗布林能但它已经变了.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/transformer能通向agi吗布林能但它已经变了.md)

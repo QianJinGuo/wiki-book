@@ -1,7 +1,5 @@
 # 设计系统的新作者：从 Agent 读到 Agent 写
 
-## Ch03.093 设计系统的新作者：从 Agent 读到 Agent 写
-
 > 📊 Level ⭐⭐ | 9.4KB | `entities/design-systems-agent-author-evolution.md`
 
 # 设计系统的新作者：从 Agent 读到 Agent 写

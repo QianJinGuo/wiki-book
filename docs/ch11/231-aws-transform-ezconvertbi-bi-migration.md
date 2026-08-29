@@ -1,7 +1,5 @@
 # AWS Transform Ezconvertbi BI Migration
 
-## Ch11.231 AWS Transform Ezconvertbi BI Migration
-
 > 📊 Level ⭐⭐ | 5.9KB | `entities/aws-transform-ezconvertbi-bi-migration.md`
 
 # AWS Transform now automates BI migration to Amazon Quick in days

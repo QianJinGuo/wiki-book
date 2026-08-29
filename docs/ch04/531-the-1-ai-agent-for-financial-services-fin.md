@@ -1,7 +1,5 @@
 # The #1 AI Agent for financial services | Fin
 
-## Ch04.531 The #1 AI Agent for financial services | Fin
-
 > 📊 Level ⭐⭐ | 7.1KB | `entities/the-1-ai-agent-for-financial-services-fin.md`
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-1-ai-agent-for-financial-services-fin.md)

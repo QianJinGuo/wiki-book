@@ -1,7 +1,5 @@
 # LLM RL中的熵 part 1: 熵的调控
 
-## Ch01.1129 LLM RL中的熵 part 1: 熵的调控
-
 > 📊 Level ⭐⭐ | 5.5KB | `entities/llm-rl中的熵-part-1-熵的调控.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-rl中的熵-part-1-熵的调控.md)

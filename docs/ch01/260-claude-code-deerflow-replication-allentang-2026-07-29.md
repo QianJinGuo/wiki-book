@@ -1,7 +1,5 @@
 # claude-code-deerflow-replication-allentang-2026-07-29
 
-## Ch01.260 claude-code-deerflow-replication-allentang-2026-07-29
-
 > 📊 Level ⭐ | 0.8KB | `entities/claude-code-deerflow-replication-allentang-2026-07-29.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-deerflow-replication-allentang-2026-07-29.md)

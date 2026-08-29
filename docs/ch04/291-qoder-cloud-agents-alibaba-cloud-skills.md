@@ -1,7 +1,5 @@
 # 用云新范式：Qoder Cloud Agents × Alibaba Cloud Skills
 
-## Ch04.291 用云新范式：Qoder Cloud Agents × Alibaba Cloud Skills
-
 > 📊 Level ⭐⭐ | 10.9KB | `entities/qoder-cloud-agents-alibaba-skills.md`
 
 # 用云新范式：Qoder Cloud Agents × Alibaba Cloud Skills

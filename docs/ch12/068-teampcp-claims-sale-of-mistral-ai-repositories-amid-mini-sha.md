@@ -1,7 +1,5 @@
 # TeamPCP Claims Sale of Mistral AI Repositories Amid Mini Shai-Hulud Attack
 
-## Ch12.068 TeamPCP Claims Sale of Mistral AI Repositories Amid Mini Shai-Hulud Attack
-
 > 📊 Level ⭐⭐ | 7.3KB | `entities/teampcp-claims-sale-of-mistral-ai-repositories-amid-mini-shai-hulud-attack-1.md`
 
 ## 核心要点

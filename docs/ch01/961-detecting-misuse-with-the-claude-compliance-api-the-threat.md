@@ -1,7 +1,5 @@
 # Detecting Misuse with the Claude Compliance API: The Threat Is in the Content
 
-## Ch01.961 Detecting Misuse with the Claude Compliance API: The Threat Is in the Content
-
 > 📊 Level ⭐⭐ | 6.8KB | `entities/claude-compliance-api-misuse-detection-papermtn.md`
 
 # Detecting Misuse with the Claude Compliance API: The Threat Is in the Content

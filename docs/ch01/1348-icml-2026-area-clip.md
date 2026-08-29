@@ -1,7 +1,5 @@
 # ICML 2026 | 从提取漂移到聚合漂移，南大AREA重做CLIP增量学习
 
-## Ch01.1348 ICML 2026 | 从提取漂移到聚合漂移，南大AREA重做CLIP增量学习
-
 > 📊 Level ⭐⭐ | 3.7KB | `entities/icml-2026-从提取漂移到聚合漂移南大area重做clip增量学习.md`
 
 # ICML 2026 | 从提取漂移到聚合漂移，南大AREA重做CLIP增量学习

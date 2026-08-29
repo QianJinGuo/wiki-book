@@ -1,7 +1,5 @@
 # Build an agentic AI healthcare claims pipeline with Amazon Bedrock and AWS HealthLake
 
-## Ch04.067 Build an agentic AI healthcare claims pipeline with Amazon Bedrock and AWS HealthLake
-
 > 📊 Level ⭐ | 0.7KB | `entities/build-an-agentic-ai-healthcare-claims-pipeline-with-amazon-b.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-an-agentic-ai-healthcare-claims-pipeline-with-amazon-b.md)

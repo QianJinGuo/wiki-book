@@ -1,7 +1,5 @@
 # EdgeClaw — 端云两栖龙虾框架
 
-## Ch01.1216 EdgeClaw — 端云两栖龙虾框架
-
 > 📊 Level ⭐⭐ | 4.9KB | `entities/edgeclaw-openbmb.md`
 
 # EdgeClaw

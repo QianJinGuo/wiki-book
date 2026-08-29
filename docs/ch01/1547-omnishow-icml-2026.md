@@ -1,7 +1,5 @@
 # OmniShow：极简干预统一多模态可控视频生成（ICML 2026）
 
-## Ch01.1547 OmniShow：极简干预统一多模态可控视频生成（ICML 2026）
-
 > 📊 Level ⭐⭐⭐ | 7.0KB | `entities/omnishow-unified-multimodal-video-generation-icml-2026.md`
 
 # OmniShow：极简干预统一多模态可控视频生成（ICML 2026）

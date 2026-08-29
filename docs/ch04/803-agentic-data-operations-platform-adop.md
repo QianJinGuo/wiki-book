@@ -1,7 +1,5 @@
 # Agentic Data Operations Platform (ADOP): 数据工程压缩到小时级
 
-## Ch04.803 Agentic Data Operations Platform (ADOP): 数据工程压缩到小时级
-
 > 📊 Level ⭐⭐ | 2.7KB | `entities/agentic-data-operations-platform-adop-architecture.md`
 
 # Agentic Data Operations Platform (ADOP): 数据工程压缩到小时级

@@ -1,7 +1,5 @@
 # 直击GPU集群真实故障，首个AI Infra运维智能体基准开源
 
-## Ch04.542 直击GPU集群真实故障，首个AI Infra运维智能体基准开源
-
 > 📊 Level ⭐⭐ | 7.0KB | `entities/直击gpu集群真实故障首个ai-infra运维智能体基准开源.md`
 
 # 直击GPU集群真实故障，首个AI Infra运维智能体基准开源

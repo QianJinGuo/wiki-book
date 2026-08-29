@@ -1,7 +1,5 @@
 # 十年老技术开发的 AI Agent 探索之路
 
-## Ch04.376 十年老技术开发的 AI Agent 探索之路
-
 > 📊 Level ⭐⭐ | 9.1KB | `entities/十年老技术开发的-ai-agent-探索之路-v2.md`
 
 ## 相关实体

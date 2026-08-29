@@ -1,7 +1,5 @@
 # Codex、Claude Code 的推理 effort 本质就是往 prompt 里塞了一句话
 
-## Ch01.1020 Codex、Claude Code 的推理 effort 本质就是往 prompt 里塞了一句话
-
 > 📊 Level ⭐⭐ | 6.3KB | `entities/codexclaude-code-推理-effort本质-就是往prompt里塞了一句话.md`
 
 # Codex、Claude Code 的推理 effort 本质就是往 prompt 里塞了一句话

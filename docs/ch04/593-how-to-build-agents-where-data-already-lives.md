@@ -1,7 +1,5 @@
 # How to build Agents Where Data Already Lives
 
-## Ch04.593 How to build Agents Where Data Already Lives
-
 > 📊 Level ⭐⭐ | 6.3KB | `entities/how-to-build-agents-where-data-already-lives.md`
 
 # How to build Agents Where Data Already Lives

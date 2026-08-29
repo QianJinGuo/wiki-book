@@ -1,7 +1,5 @@
 # Agent Harnesses Are Dead. Long Live Agent Harnesses.
 
-## Ch04.840 Agent Harnesses Are Dead. Long Live Agent Harnesses.
-
 > 📊 Level ⭐⭐⭐ | 8.5KB | `entities/agent-harnesses-are-dead-long-live-agent-harnesses.md`
 
 # Agent Harnesses Are Dead. Long Live Agent Harnesses.

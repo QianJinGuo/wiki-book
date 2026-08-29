@@ -1,7 +1,5 @@
 # ai-黑客真的来了hugging-face-遭遇-agent-自主攻击靠自建glm-52反击成功
 
-## Ch04.552 ai-黑客真的来了hugging-face-遭遇-agent-自主攻击靠自建glm-52反击成功
-
 > 📊 Level ⭐⭐ | 6.9KB | `entities/ai-黑客真的来了hugging-face-遭遇-agent-自主攻击靠自建glm-52反击成功-xixiaoyao.md`
 
 # AI 黑客真的来了：Hugging Face 遭遇自主 AI Agent 攻击事件分析

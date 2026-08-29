@@ -1,7 +1,5 @@
 # Harness Engineering 驾御工程：AI Agent 系统性约束设计
 
-## Ch04.520 Harness Engineering 驾御工程：AI Agent 系统性约束设计
-
 > 📊 Level ⭐⭐ | 7.3KB | `entities/harness-engineering-concept.md`
 
 # Harness Engineering 驾御工程：AI Agent 系统性约束设计

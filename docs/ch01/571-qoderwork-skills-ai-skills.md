@@ -1,7 +1,5 @@
 # QoderWork Skills 开发实践：从传统数科到 AI 数科的转型探索-我的Skills进阶之旅
 
-## Ch01.571 QoderWork Skills 开发实践：从传统数科到 AI 数科的转型探索-我的Skills进阶之旅
-
 > 📊 Level ⭐⭐ | 10.9KB | `entities/qoderwork-skills-开发实践从传统数科到-ai-数科的转型探索-我的skills进阶之旅.md`
 
 # QoderWork Skills 开发实践：从传统数科到 AI 数科的转型探索-我的Skills进阶之旅

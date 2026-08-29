@@ -1,7 +1,5 @@
 # Agent之间，有互联网了！
 
-## Ch04.588 Agent之间，有互联网了！
-
 > 📊 Level ⭐⭐ | 6.4KB | `entities/agent之间有互联网了.md`
 
 # Agent之间，有互联网了！

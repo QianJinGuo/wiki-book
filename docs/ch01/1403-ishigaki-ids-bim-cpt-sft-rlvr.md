@@ -1,7 +1,5 @@
 # Ishigaki-IDS — 建筑 BIM 领域专用基础模型（合成数据 + CPT/SFT/RLVR）
 
-## Ch01.1403 Ishigaki-IDS — 建筑 BIM 领域专用基础模型（合成数据 + CPT/SFT/RLVR）
-
 > 📊 Level ⭐⭐ | 3.4KB | `entities/ishigaki-ids-domain-specialized-foundation-model-construction-2026.md`
 
 # Ishigaki-IDS — 建筑 BIM 领域专用基础模型

@@ -1,7 +1,5 @@
 # 让GUI Agent不再「边做边忘」：快手、浙大提出MemGUI-Agent，攻克长程GUI任务
 
-## Ch04.839 让GUI Agent不再「边做边忘」：快手、浙大提出MemGUI-Agent，攻克长程GUI任务
-
 > 📊 Level ⭐⭐⭐ | 8.7KB | `entities/让gui-agent不再边做边忘快手浙大提出memgui-agent攻克长程gui任务.md`
 
 # 让GUI Agent不再「边做边忘」：快手、浙大提出MemGUI-Agent，攻克长程GUI任务

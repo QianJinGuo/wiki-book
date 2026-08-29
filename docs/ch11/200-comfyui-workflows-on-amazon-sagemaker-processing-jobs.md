@@ -1,7 +1,5 @@
 # ComfyUI Workflows on Amazon SageMaker Processing Jobs
 
-## Ch11.200 ComfyUI Workflows on Amazon SageMaker Processing Jobs
-
 > 📊 Level ⭐⭐ | 6.1KB | `entities/comfyui-sagemaker-processing-workflows.md`
 
 # ComfyUI Workflows on Amazon SageMaker Processing Jobs

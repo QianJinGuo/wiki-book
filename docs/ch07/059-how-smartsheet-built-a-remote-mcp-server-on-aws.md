@@ -1,7 +1,5 @@
 # How Smartsheet built a remote MCP server on AWS
 
-## Ch07.059 How Smartsheet built a remote MCP server on AWS
-
 > 📊 Level ⭐⭐ | 7.6KB | `entities/smartsheet-remote-mcp-server-aws-architecture.md`
 
 # How Smartsheet built a remote MCP server on AWS

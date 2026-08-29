@@ -1,7 +1,5 @@
 # 从代码到分子系列：一场由 AI 驱动的 EGFR 抑制剂发现之旅 — 深度融合 AWS Bedrock与 Claude Code/Claude Agent Skills，生命健康行业的科学活动探微 | 亚马逊AWS官方博客
 
-## Ch11.095 从代码到分子系列：一场由 AI 驱动的 EGFR 抑制剂发现之旅 — 深度融合 AWS Bedrock与 Claude Code/Claude Agent Skills，生命健康行业的科学活动探微 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 10.0KB | `entities/from-code-to-molecules-an-ai-driven-egfr-inhibitor-discovery-journey.md`
 
 

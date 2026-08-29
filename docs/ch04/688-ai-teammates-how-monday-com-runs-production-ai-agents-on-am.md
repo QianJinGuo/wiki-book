@@ -1,7 +1,5 @@
 # AI Teammates: How monday.com Runs Production AI Agents on Amazon Bedrock
 
-## Ch04.688 AI Teammates: How monday.com Runs Production AI Agents on Amazon Bedrock
-
 > 📊 Level ⭐⭐ | 4.6KB | `entities/ai-teammates-mondaycom-production-ai-agents-bedrock.md`
 
 # AI Teammates: How monday.com Runs Production AI Agents on Amazon Bedrock

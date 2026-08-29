@@ -1,7 +1,5 @@
 # Fanling：AI Agent 时代的组织反思
 
-## Ch04.258 Fanling：AI Agent 时代的组织反思
-
 > 📊 Level ⭐⭐ | 11.8KB | `entities/fanling-company-as-agent-ai-org-reflection-v2.md`
 
 # 范凌：当公司变成Agent，关于 AI 时代组织的 5 个反思

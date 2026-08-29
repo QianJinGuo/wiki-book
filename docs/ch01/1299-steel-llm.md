@@ -1,7 +1,5 @@
 # 【从零训练Steel-LLM】模型设计
 
-## Ch01.1299 【从零训练Steel-LLM】模型设计
-
 > 📊 Level ⭐⭐ | 4.1KB | `entities/从零训练steel-llm模型设计.md`
 
 # 【从零训练Steel-LLM】模型设计

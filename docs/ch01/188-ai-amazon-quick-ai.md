@@ -1,7 +1,5 @@
 # 项目经理的-ai-提效实践amazon-quick-飞书打通碎片化工具链构建-ai-整合入口
 
-## Ch01.188 项目经理的-ai-提效实践amazon-quick-飞书打通碎片化工具链构建-ai-整合入口
-
 > 📊 Level ⭐ | 1.4KB | `entities/项目经理的-ai-提效实践amazon-quick-飞书打通碎片化工具链构建-ai-整合入口.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/项目经理的-ai-提效实践amazon-quick-飞书打通碎片化工具链构建-ai-整合入口.md)

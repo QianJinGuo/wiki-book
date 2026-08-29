@@ -1,7 +1,5 @@
 # 百炼网关：用RocketMQ LiteTopic重构大模型限流架构
 
-## Ch01.622 百炼网关：用RocketMQ LiteTopic重构大模型限流架构
-
 > 📊 Level ⭐⭐ | 10.0KB | `entities/bailian-gateway-rocketmq-litetopic-llm-rate-limiting.md`
 
 # 百炼网关：用RocketMQ LiteTopic重构大模型限流架构

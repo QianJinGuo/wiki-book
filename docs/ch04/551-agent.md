@@ -1,7 +1,5 @@
 # 特赞企业级生成式 Agent
 
-## Ch04.551 特赞企业级生成式 Agent
-
 > 📊 Level ⭐⭐ | 6.9KB | `entities/tezign-generative-enterprise-agent.md`
 
 # 特赞企业级生成式 Agent

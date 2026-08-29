@@ -1,7 +1,5 @@
 # 全网最全的Claude Fable 5 省钱攻略都在这了
 
-## Ch01.634 全网最全的Claude Fable 5 省钱攻略都在这了
-
 > 📊 Level ⭐⭐ | 9.8KB | `entities/全网最全的claude-fable-5-省钱攻略都在这了.md`
 
 # 全网最全的Claude Fable 5 省钱攻略都在这了

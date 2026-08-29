@@ -1,7 +1,5 @@
 # 百度 AI Coding 质量关卡实践
 
-## Ch09.167 百度 AI Coding 质量关卡实践
-
 > 📊 Level ⭐⭐ | 4.7KB | `entities/baidu-ai-coding-quality-gates.md`
 
 # 百度 AI Coding 质量关卡实践

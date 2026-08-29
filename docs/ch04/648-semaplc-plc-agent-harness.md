@@ -1,7 +1,5 @@
 # SemaPLC：验证门控的 PLC 代码生成 Agent Harness
 
-## Ch04.648 SemaPLC：验证门控的 PLC 代码生成 Agent Harness
-
 > 📊 Level ⭐⭐ | 5.3KB | `entities/semaplc-verification-gated-agent-harness-plc-codegen-2026-08-26.md`
 
 # SemaPLC：验证门控的 PLC 代码生成 Agent Harness

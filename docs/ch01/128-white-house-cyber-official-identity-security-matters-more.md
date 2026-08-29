@@ -1,7 +1,5 @@
 # White House cyber official: identity security matters more
 
-## Ch01.128 White House cyber official: identity security matters more
-
 > 📊 Level ⭐ | 5.8KB | `entities/white-house-federal-identity-security-ai.md`
 
 ## 核心要点

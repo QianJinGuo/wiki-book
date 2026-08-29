@@ -1,7 +1,5 @@
 # RocketMQ-A2A：会话级可重放事件流驱动的多智能体可靠协作
 
-## Ch04.837 RocketMQ-A2A：会话级可重放事件流驱动的多智能体可靠协作
-
 > 📊 Level ⭐⭐⭐ | 9.8KB | `entities/rocketmq-a2a-multi-agent-reliable-communication-fse.md`
 
 # RocketMQ-A2A：会话级可重放事件流驱动的多智能体可靠协作

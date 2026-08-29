@@ -1,7 +1,5 @@
 # Agentic search models
 
-## Ch04.608 Agentic search models
-
 > 📊 Level ⭐⭐ | 6.1KB | `entities/agentic-search-models-softwaredoug.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentic-search-models-softwaredoug.md)

@@ -1,7 +1,5 @@
 # AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客
 
-## Ch09.023 AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 26.1KB | `entities/ai-network-claude-code-kiro-cli-implement-aws-ipsec-vpn.md`
 
 ## 概述

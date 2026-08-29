@@ -1,7 +1,5 @@
 # How Open Model Ecosystems Compound
 
-## Ch01.1212 How Open Model Ecosystems Compound
-
 > 📊 Level ⭐⭐ | 4.9KB | `entities/how-open-model-ecosystems-compound.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-open-model-ecosystems-compound.md)

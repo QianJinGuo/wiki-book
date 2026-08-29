@@ -1,7 +1,5 @@
 # 场景营销前端 AI Coding — 从问题到方案
 
-## Ch01.836 场景营销前端 AI Coding — 从问题到方案
-
 > 📊 Level ⭐⭐ | 7.7KB | `entities/场景营销前端-ai-coding-从问题到方案.md`
 
 # 场景营销前端 AI Coding — 从问题到方案

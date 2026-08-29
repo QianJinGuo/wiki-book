@@ -1,7 +1,5 @@
 # Klarna delivers strong start to 2026 with $1bn revenue and $68m adj. operating profit | Klarna International
 
-## Ch01.102 Klarna delivers strong start to 2026 with $1bn revenue and $68m adj. operating profit | Klarna International
-
 > 📊 Level ⭐ | 7.0KB | `entities/klarna-delivers-strong-start-to-2026-with-1bn-revenue-and-68m-adj-operating-prof.md`
 
 ## 核心要点

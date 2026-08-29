@@ -1,7 +1,5 @@
 # Grafana GitHub Token Breach Led to Codebase Download and Extortion Attempt
 
-## Ch12.069 Grafana GitHub Token Breach Led to Codebase Download and Extortion Attempt
-
 > 📊 Level ⭐⭐ | 7.2KB | `entities/grafana-github-token-breach-led-to-codebase-download-and-extortion-attempt.md`
 
 ## 事件概要

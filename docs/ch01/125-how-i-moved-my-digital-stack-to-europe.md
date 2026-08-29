@@ -1,7 +1,5 @@
 # How I Moved My Digital Stack to Europe
 
-## Ch01.125 How I Moved My Digital Stack to Europe
-
 > 📊 Level ⭐ | 6.0KB | `entities/how-i-moved-my-digital-stack-to-europe.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-i-moved-my-digital-stack-to-europe.md)

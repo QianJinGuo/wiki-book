@@ -1,7 +1,5 @@
 # AGenUI：高德端云一体生成式 UI（A2UI 三端原生渲染引擎）
 
-## Ch01.741 AGenUI：高德端云一体生成式 UI（A2UI 三端原生渲染引擎）
-
 > 📊 Level ⭐⭐ | 8.4KB | `entities/agenui-generative-ui-end-cloud-amap-2026.md`
 
 # AGenUI：高德端云一体生成式 UI（A2UI 三端原生渲染引擎）

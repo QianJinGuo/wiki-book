@@ -1,7 +1,5 @@
 # 改 Skill 的可重复流程 — 评测与轨迹驱动（孙成心）
 
-## Ch07.049 改 Skill 的可重复流程 — 评测与轨迹驱动（孙成心）
-
 > 📊 Level ⭐⭐ | 8.4KB | `entities/skill-iteration-evaluation-trajectory-sunchengxin-2026.md`
 
 # 改 Skill 的可重复流程 — 评测与轨迹驱动（孙成心）

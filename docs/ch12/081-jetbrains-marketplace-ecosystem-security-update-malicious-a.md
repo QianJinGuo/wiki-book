@@ -1,7 +1,5 @@
 # JetBrains Marketplace Ecosystem Security Update: Malicious AI Plugins
 
-## Ch12.081 JetBrains Marketplace Ecosystem Security Update: Malicious AI Plugins
-
 > 📊 Level ⭐⭐ | 6.7KB | `entities/jetbrains-marketplace-malicious-ai-plugins-security-update.md`
 
 # JetBrains Marketplace Ecosystem Security Update: Malicious AI Plugins

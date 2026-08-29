@@ -1,7 +1,5 @@
 # Google Open-Sources OKF, a Markdown Format for AI Agents
 
-## Ch04.712 Google Open-Sources OKF, a Markdown Format for AI Agents
-
 > 📊 Level ⭐⭐ | 4.3KB | `entities/implicator.md`
 
 # Google Open-Sources OKF, a Markdown Format for AI Agents

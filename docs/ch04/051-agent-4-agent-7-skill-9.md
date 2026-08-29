@@ -1,7 +1,5 @@
 # 一个多 Agent 零人工运维系统的设计复盘：4 个 Agent、7 个 Skill 与 9 条工程判断
 
-## Ch04.051 一个多 Agent 零人工运维系统的设计复盘：4 个 Agent、7 个 Skill 与 9 条工程判断
-
 > 📊 Level ⭐ | 0.8KB | `entities/opspilot-zero-multi-agent-ops-9-judgments.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/opspilot-zero-multi-agent-ops-9-judgments.md)

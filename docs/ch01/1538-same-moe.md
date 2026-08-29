@@ -1,7 +1,5 @@
 # SAME：稳定MoE持续微调
 
-## Ch01.1538 SAME：稳定MoE持续微调
-
 > 📊 Level ⭐⭐⭐ | 8.0KB | `entities/nju-same-moe-continual-learning.md`
 
 # SAME：稳定MoE持续微调

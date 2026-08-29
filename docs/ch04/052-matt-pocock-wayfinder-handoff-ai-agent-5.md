@@ -1,7 +1,5 @@
 # Matt Pocock wayfinder + handoff：AI Agent 跨 5 次会话接力赛不掉链
 
-## Ch04.052 Matt Pocock wayfinder + handoff：AI Agent 跨 5 次会话接力赛不掉链
-
 > 📊 Level ⭐ | 0.8KB | `entities/matt-pocock-wayfinder-handoff-shuge-2026.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/matt-pocock-wayfinder-handoff-shuge-2026.md)

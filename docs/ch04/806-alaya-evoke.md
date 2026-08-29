@@ -1,7 +1,5 @@
 # Alaya-EVOKE：小时级视频世界模型（外部世界状态银行）
 
-## Ch04.806 Alaya-EVOKE：小时级视频世界模型（外部世界状态银行）
-
 > 📊 Level ⭐⭐ | 2.4KB | `entities/alaya-evoke-hour-level-video-world-model.md`
 
 # Alaya-EVOKE：小时级视频世界模型

@@ -1,7 +1,5 @@
 # 百型智能 OntoZ：企业本体论 + 群智能体协同体系，新一代企业级 AI 基础设施
 
-## Ch04.777 百型智能 OntoZ：企业本体论 + 群智能体协同体系，新一代企业级 AI 基础设施
-
 > 📊 Level ⭐⭐ | 3.4KB | `entities/baixing-ontoz-enterprise-ontology-xinzhiyuan.md`
 
 # 百型智能 OntoZ：企业本体论 + 群智能体协同体系，新一代企业级 AI 基础设施

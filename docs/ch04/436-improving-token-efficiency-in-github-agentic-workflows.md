@@ -1,7 +1,5 @@
 # Improving token efficiency in GitHub Agentic Workflows
 
-## Ch04.436 Improving token efficiency in GitHub Agentic Workflows
-
 > 📊 Level ⭐⭐ | 8.3KB | `entities/github-token-efficiency-agentic-workflows.md`
 
 ## Overview

@@ -1,7 +1,5 @@
 # Solution overview
 
-## Ch01.937 Solution overview
-
 > 📊 Level ⭐⭐ | 6.9KB | `entities/process-financial-documents-using-amazon-bedrock-data-automa.md`
 
 # Solution overview

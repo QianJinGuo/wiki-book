@@ -1,7 +1,5 @@
 # Agent Memory 架构解析
 
-## Ch04.179 Agent Memory 架构解析
-
 > 📊 Level ⭐⭐ | 15.2KB | `entities/agent-memory-architecture-ruofei.md`
 
 ## 核心论点

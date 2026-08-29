@@ -1,7 +1,5 @@
 # NVIDIA BlueField DPU：助力 AI 云兼顾效率与可信
 
-## Ch01.1026 NVIDIA BlueField DPU：助力 AI 云兼顾效率与可信
-
 > 📊 Level ⭐⭐ | 6.3KB | `entities/nvidia-bluefield-dpu-助力-ai-云兼顾效率与可信.md`
 
 # NVIDIA BlueField DPU：助力 AI 云兼顾效率与可信

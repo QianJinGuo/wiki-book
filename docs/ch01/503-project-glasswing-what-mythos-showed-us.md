@@ -1,7 +1,5 @@
 # Project Glasswing: what Mythos showed us
 
-## Ch01.503 Project Glasswing: what Mythos showed us
-
 > 📊 Level ⭐⭐ | 13.2KB | `entities/cloudflare-glasswing-mythos-security.md`
 
 ## 核心要点

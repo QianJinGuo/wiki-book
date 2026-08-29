@@ -1,7 +1,5 @@
 # LLMReaper - DOM Based AI Conversation Exfiltration
 
-## Ch01.936 LLMReaper - DOM Based AI Conversation Exfiltration
-
 > 📊 Level ⭐⭐ | 6.9KB | `entities/llmreaper-dom-based-ai-exfiltration.md`
 
 # LLMReaper - DOM Based AI Conversation Exfiltration

@@ -1,7 +1,5 @@
 # The UI is dead, long live the agent: ServiceNow goes headless and opens its platform - Techzine Global
 
-## Ch04.394 The UI is dead, long live the agent: ServiceNow goes headless and opens its platform - Techzine Global
-
 > 📊 Level ⭐⭐ | 8.8KB | `entities/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless.md`
 
 [Skip to content](https://www.techzine.eu/blogs/analytics/141272/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless-and-opens-its-platform/#main)

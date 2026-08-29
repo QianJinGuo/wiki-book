@@ -1,7 +1,5 @@
 # 小米 Harness 工程：从个人实践到团队标准的 Prompts→Hooks→Plugin 三次跨越
 
-## Ch05.116 小米 Harness 工程：从个人实践到团队标准的 Prompts→Hooks→Plugin 三次跨越
-
 > 📊 Level ⭐⭐ | 4.3KB | `entities/xiaomi-harness-engineering-prompt-to-hook-to-plugin.md`
 
 # 小米 Harness 工程：从个人实践到团队标准

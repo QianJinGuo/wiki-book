@@ -1,7 +1,5 @@
 # 使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊AWS官方博客
 
-## Ch11.226 使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 5.6KB | `entities/using-kiro-cli-agent-client-protocol-build-ai-chat.md`
 
 

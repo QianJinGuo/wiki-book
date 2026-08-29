@@ -1,7 +1,5 @@
 # Knowledge Base Layer Architecture: From RAG to Agent-native Knowledge Context Layer
 
-## Ch06.011 Knowledge Base Layer Architecture: From RAG to Agent-native Knowledge Context Layer
-
 > 📊 Level ⭐⭐ | 15.4KB | `entities/pyramid-kb-knowledge-context-layer-banya.md`
 
 # Knowledge Base Layer Architecture: From RAG to Agent-native Knowledge Context Layer

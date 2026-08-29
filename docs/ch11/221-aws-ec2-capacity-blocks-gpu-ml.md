@@ -1,7 +1,5 @@
 # AWS EC2 Capacity Blocks GPU ML
 
-## Ch11.221 AWS EC2 Capacity Blocks GPU ML
-
 > 📊 Level ⭐⭐ | 5.7KB | `entities/aws-ec2-capacity-blocks-gpu-ml.md`
 
 # EC2 Capacity Blocks：GPU短期容量决策指南

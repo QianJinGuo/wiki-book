@@ -1,7 +1,5 @@
 # AI Infra 全景图：9 层 Agent 生产架构
 
-## Ch11.229 AI Infra 全景图：9 层 Agent 生产架构
-
 > 📊 Level ⭐⭐ | 5.1KB | `entities/ai-infra-panorama-9-layer-agent-production.md`
 
 # AI Infra 全景图：9 层 Agent 生产架构

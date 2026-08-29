@@ -1,7 +1,5 @@
 # State of Open Models: Summer 2026 Observations
 
-## Ch01.1051 State of Open Models: Summer 2026 Observations
-
 > 📊 Level ⭐⭐ | 6.0KB | `entities/state-of-open-models-summer-2026.md`
 
 # State of Open Models：2026 夏季观察

@@ -1,7 +1,5 @@
 # Self-Taught RLVR 综述
 
-## Ch01.1176 Self-Taught RLVR 综述
-
 > 📊 Level ⭐⭐ | 5.1KB | `entities/self-taught-rlvr.md`
 
 ## 三种 Self 框架

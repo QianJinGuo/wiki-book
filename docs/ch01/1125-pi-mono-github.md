@@ -1,7 +1,5 @@
 # pi mono github
 
-## Ch01.1125 pi mono github
-
 > 📊 Level ⭐⭐ | 5.5KB | `entities/pi-mono-github.md`
 
 # pi-mono — AI agent toolkit

@@ -1,7 +1,5 @@
 # Profiling in PyTorch (Part 3) — Attention is all you profile
 
-## Ch01.1457 Profiling in PyTorch (Part 3) — Attention is all you profile
-
 > 📊 Level ⭐⭐ | 1.2KB | `entities/profiling-pytorch-part3-attention-is-all-you-profile.md`
 
 # Profiling in PyTorch (Part 3) — Attention is all you profile

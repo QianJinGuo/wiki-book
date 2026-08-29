@@ -1,7 +1,5 @@
 # FastAPI APIRouter：如何正确组织路由
 
-## Ch01.878 FastAPI APIRouter：如何正确组织路由
-
 > 📊 Level ⭐⭐ | 7.3KB | `entities/fastapi-apirouter如何正确组织路由.md`
 
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fastapi-apirouter如何正确组织路由.md)

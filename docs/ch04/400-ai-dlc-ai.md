@@ -1,7 +1,5 @@
 # AI-DLC：紫讯落地 AI 原生研发新范式的实践
 
-## Ch04.400 AI-DLC：紫讯落地 AI 原生研发新范式的实践
-
 > 📊 Level ⭐⭐ | 8.7KB | `entities/ai-dlc-zixun-ai-native-development-lifecycle.md`
 
 # AI-DLC：紫讯落地 AI 原生研发新范式的实践

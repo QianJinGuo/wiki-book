@@ -1,7 +1,5 @@
 # MiroFlow：Deep Research Agent 脚手架 —— 与 Code Agent 的 6 大工程差异
 
-## Ch06.053 MiroFlow：Deep Research Agent 脚手架 —— 与 Code Agent 的 6 大工程差异
-
 > 📊 Level ⭐⭐⭐ | 29.7KB | `entities/miroflow-deep-research-agent-harness-mirothinker.md`
 
 # MiroFlow：Deep Research Agent 脚手架

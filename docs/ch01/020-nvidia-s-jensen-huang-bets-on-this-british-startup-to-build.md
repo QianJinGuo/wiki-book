@@ -1,7 +1,5 @@
 # Nvidia's Jensen Huang bets on this British startup to build 'next frontier' of AI
 
-## Ch01.020 Nvidia's Jensen Huang bets on this British startup to build 'next frontier' of AI
-
 > 📊 Level ⭐ | 10.1KB | `entities/nvidias-jensen-huang-bets-on-this-british-startup-to-build-next-frontier-of-ai.md`
 
 ## 核心要点

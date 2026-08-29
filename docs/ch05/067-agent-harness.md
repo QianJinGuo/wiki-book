@@ -1,7 +1,5 @@
 # 生产级 Agent 全景：架构、Harness 工程、组织与人才
 
-## Ch05.067 生产级 Agent 全景：架构、Harness 工程、组织与人才
-
 > 📊 Level ⭐⭐ | 9.5KB | `entities/生产级-agent-全景架构harness-工程组织与人才.md`
 
 # 生产级 Agent 全景：架构、Harness 工程、组织与人才

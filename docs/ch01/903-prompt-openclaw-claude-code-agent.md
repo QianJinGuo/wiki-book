@@ -1,7 +1,5 @@
 # 别再亲自写Prompt了！OpenClaw与Claude Code创始人已经用'循环'让一堆Agent自动打工了
 
-## Ch01.903 别再亲自写Prompt了！OpenClaw与Claude Code创始人已经用'循环'让一堆Agent自动打工了
-
 > 📊 Level ⭐⭐ | 7.1KB | `entities/openclaw-boris-cherny-agent-loop-design-patterns.md`
 
 # OpenClaw Boris Cherny Agent Loop Design Patterns

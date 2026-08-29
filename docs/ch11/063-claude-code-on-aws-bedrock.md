@@ -1,7 +1,5 @@
 # Claude Code on AWS Bedrock 配置指南
 
-## Ch11.063 Claude Code on AWS Bedrock 配置指南
-
 > 📊 Level ⭐⭐ | 12.2KB | `entities/claude-code-aws-bedrock-guide.md`
 
 # Claude Code on AWS Bedrock 配置指南

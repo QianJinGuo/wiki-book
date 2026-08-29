@@ -1,7 +1,5 @@
 # AI 原生搭建指南：都在用AI，公司为什么更慢了？
 
-## Ch04.600 AI 原生搭建指南：都在用AI，公司为什么更慢了？
-
 > 📊 Level ⭐⭐ | 6.2KB | `entities/ai-native-org-guide-slowdown.md`
 
 ## 核心论点

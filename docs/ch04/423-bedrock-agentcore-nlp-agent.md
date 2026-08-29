@@ -1,7 +1,5 @@
 # Bedrock AgentCore NLP 仪表盘自动化 Agent
 
-## Ch04.423 Bedrock AgentCore NLP 仪表盘自动化 Agent
-
 > 📊 Level ⭐⭐ | 8.4KB | `entities/build-ai-powered-dashboard-automation-agents-with-nlp-on-amazon-bedrock-agentcor.md`
 
 ## 核心要点

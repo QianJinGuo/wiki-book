@@ -1,7 +1,5 @@
 # Vibe Coding 与 AI 软件工程
 
-## Ch09.120 Vibe Coding 与 AI 软件工程
-
 > 📊 Level ⭐⭐ | 7.9KB | `entities/vibe-coding-ai-software-engineering.md`
 
 # Vibe Coding 与 AI 软件工程

@@ -1,7 +1,5 @@
 # Hermes Agent 9 模块系统架构
 
-## Ch01.1556 Hermes Agent 9 模块系统架构
-
 > 📊 Level ⭐⭐⭐ | 6.4KB | `entities/hermes-9-module-architecture.md`
 
 ## 三条主线

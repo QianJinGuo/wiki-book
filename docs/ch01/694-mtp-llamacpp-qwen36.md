@@ -1,7 +1,5 @@
 # mtp 加速推理最佳实践在亚马逊云科技中国区使用 llamacpp 部署 qwen36 的实测指南
 
-## Ch01.694 mtp 加速推理最佳实践在亚马逊云科技中国区使用 llamacpp 部署 qwen36 的实测指南
-
 > 📊 Level ⭐⭐ | 8.9KB | `entities/mtp-加速推理最佳实践在亚马逊云科技中国区使用-llamacpp-部署-qwen36-的实测指南.md`
 
 # MTP 加速推理最佳实践：在亚马逊云科技中国区使用 llama.cpp 部署 Qwen3.6 的实测指南

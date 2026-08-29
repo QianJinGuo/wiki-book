@@ -1,7 +1,5 @@
 # Natera 语音 Agent 架构：双 WebSocket 桥接 + 延迟掩蔽 + 渐进信任
 
-## Ch01.1559 Natera 语音 Agent 架构：双 WebSocket 桥接 + 延迟掩蔽 + 渐进信任
-
 > 📊 Level ⭐⭐⭐ | 6.2KB | `entities/natera-voice-agent-dual-websocket-bridge-2026.md`
 
 # Natera 语音 Agent 架构：双 WebSocket 桥接 + 延迟掩蔽 + 渐进信任

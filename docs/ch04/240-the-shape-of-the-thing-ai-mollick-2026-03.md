@@ -1,7 +1,5 @@
 # The Shape of the Thing：AI 指数曲线·软件工厂·滚动颠覆（Mollick 2026-03）
 
-## Ch04.240 The Shape of the Thing：AI 指数曲线·软件工厂·滚动颠覆（Mollick 2026-03）
-
 > 📊 Level ⭐⭐ | 12.1KB | `entities/the-shape-of-the-thing-mollick.md`
 
 # The Shape of the Thing：AI 指数曲线·软件工厂·滚动颠覆（Mollick 2026-03）

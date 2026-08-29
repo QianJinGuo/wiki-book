@@ -1,7 +1,5 @@
 # lightseek tokenspeed
 
-## Ch01.1435 lightseek tokenspeed
-
 > 📊 Level ⭐⭐ | 3.2KB | `entities/lightseek-tokenspeed.md`
 
 ## 深度分析

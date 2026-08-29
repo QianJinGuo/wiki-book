@@ -1,7 +1,5 @@
 # What Job Interviews Taught Me About Kubernetes
 
-## Ch01.173 What Job Interviews Taught Me About Kubernetes
-
 > 📊 Level ⭐ | 3.4KB | `entities/notnotp-k8s-interviews-non-technical.md`
 
 # What Job Interviews Taught Me About Kubernetes

@@ -1,7 +1,5 @@
 # 基于Strands SDK 构建的企业智能问数解决方案实践 | 亚马逊AWS官方博客
 
-## Ch11.177 基于Strands SDK 构建的企业智能问数解决方案实践 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 7.1KB | `entities/enterprise-intelligent-data-query-solution-practice-based-on-strands-sdk.md`
 
 

@@ -1,7 +1,5 @@
 # 快手首个打工人Agent来了！工作秒变桌面软件：零代码、不烧token
 
-## Ch01.094 快手首个打工人Agent来了！工作秒变桌面软件：零代码、不烧token
-
 > 📊 Level ⭐ | 7.2KB | `entities/快手首个打工人agent来了工作秒变桌面软件零代码不烧token.md`
 
 ## 摘要

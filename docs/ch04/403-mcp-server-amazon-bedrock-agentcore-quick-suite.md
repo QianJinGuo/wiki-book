@@ -1,7 +1,5 @@
 # 自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南
 
-## Ch04.403 自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南
-
 > 📊 Level ⭐⭐ | 8.6KB | `entities/mcp-serveramazon-bedrock-agentcorequick-suite.md`
 
 ## 摘要

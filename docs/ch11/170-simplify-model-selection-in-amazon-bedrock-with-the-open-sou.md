@@ -1,7 +1,5 @@
 # Simplify model selection in Amazon Bedrock with the open source Model Router
 
-## Ch11.170 Simplify model selection in Amazon Bedrock with the open source Model Router
-
 > 📊 Level ⭐⭐ | 7.2KB | `entities/simplify-model-selection-in-amazon-bedrock-with-open-source-model-router.md`
 
 # Simplify model selection in Amazon Bedrock with the open source Model Router

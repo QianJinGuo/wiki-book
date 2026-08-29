@@ -1,7 +1,5 @@
 # 规格驱动开发与 Harness
 
-## Ch05.080 规格驱动开发与 Harness
-
 > 📊 Level ⭐⭐ | 8.0KB | `entities/spec-driven-development-harness.md`
 
 # 规格驱动开发与 Harness

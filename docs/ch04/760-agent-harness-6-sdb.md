@@ -1,7 +1,5 @@
 # Agent Harness 6 种运行模式与 SDB 方法论
 
-## Ch04.760 Agent Harness 6 种运行模式与 SDB 方法论
-
 > 📊 Level ⭐⭐ | 3.6KB | `entities/agent-harness-6-runtime-patterns-sdb.md`
 
 # Agent Harness 6 种运行模式与 SDB 方法论

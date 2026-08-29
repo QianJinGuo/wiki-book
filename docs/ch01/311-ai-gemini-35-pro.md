@@ -1,7 +1,5 @@
 # 谷歌史上最差ai模型发布-gemini-35-pro延期
 
-## Ch01.311 谷歌史上最差ai模型发布-gemini-35-pro延期
-
 > 📊 Level ⭐ | 0.7KB | `entities/谷歌史上最差ai模型发布-gemini-35-pro延期.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/谷歌史上最差ai模型发布-gemini-35-pro延期.md)

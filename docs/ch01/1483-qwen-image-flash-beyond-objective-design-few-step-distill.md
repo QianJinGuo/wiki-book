@@ -1,7 +1,5 @@
 # Qwen-Image-Flash: Beyond Objective Design — Few-step Distillation Training Recipe
 
-## Ch01.1483 Qwen-Image-Flash: Beyond Objective Design — Few-step Distillation Training Recipe
-
 > 📊 Level ⭐⭐⭐ | 13.1KB | `entities/qwen-image-flash-beyond-objective-design.md`
 
 # Qwen-Image-Flash: Beyond Objective Design

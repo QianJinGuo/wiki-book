@@ -1,7 +1,5 @@
 # AI Memory Architecture: Deep Dive
 
-## Ch06.052 AI Memory Architecture: Deep Dive
-
 > 📊 Level ⭐⭐⭐ | 36.6KB | `entities/ai-memory-architecture-deep-dive.md`
 
 ## Executive Summary

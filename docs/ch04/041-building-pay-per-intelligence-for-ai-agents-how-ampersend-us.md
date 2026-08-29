@@ -1,7 +1,5 @@
 # building-pay-per-intelligence-for-ai-agents-how-ampersend-us
 
-## Ch04.041 building-pay-per-intelligence-for-ai-agents-how-ampersend-us
-
 > 📊 Level ⭐ | 0.9KB | `entities/building-pay-per-intelligence-for-ai-agents-how-ampersend-us.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/building-pay-per-intelligence-for-ai-agents-how-ampersend-us.md)

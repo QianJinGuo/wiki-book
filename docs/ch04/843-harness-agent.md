@@ -1,7 +1,5 @@
 # Harness 范式：Agent 的工程基座
 
-## Ch04.843 Harness 范式：Agent 的工程基座
-
 > 📊 Level ⭐⭐⭐ | 8.2KB | `entities/harness-paradigm.md`
 
 # Harness 范式：Agent 的工程基座

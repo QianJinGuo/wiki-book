@@ -1,7 +1,5 @@
 # Personal AI 工作台：Claude 18 动作框架
 
-## Ch01.438 Personal AI 工作台：Claude 18 动作框架
-
 > 📊 Level ⭐⭐ | 16.3KB | `entities/ruofei-personal-ai-workbench-18-actions.md`
 
 ## 核心立场

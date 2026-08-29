@@ -1,7 +1,5 @@
 # A Missing Layer in Agentic Systems?
 
-## Ch04.439 A Missing Layer in Agentic Systems?
-
 > 📊 Level ⭐⭐ | 8.2KB | `entities/a-missing-layer-in-agentic-systems.md`
 
 # A Missing Layer in Agentic Systems?

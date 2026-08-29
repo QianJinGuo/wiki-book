@@ -1,7 +1,5 @@
 # Claude Code 在大型代码库中的实战经验：从哪里入手？怎么做对？
 
-## Ch09.019 Claude Code 在大型代码库中的实战经验：从哪里入手？怎么做对？
-
 > 📊 Level ⭐⭐ | 30.9KB | `entities/claude-code-large-codebase-harness-configuration.md`
 
 # Claude Code 大型代码库套具配置

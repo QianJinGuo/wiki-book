@@ -1,7 +1,5 @@
 # 一次构建，随处复用：Python 中的泛型仓库模式
 
-## Ch01.980 一次构建，随处复用：Python 中的泛型仓库模式
-
 > 📊 Level ⭐⭐ | 6.6KB | `entities/一次构建随处复用python-中的泛型仓库模式.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/一次构建随处复用python-中的泛型仓库模式.md)

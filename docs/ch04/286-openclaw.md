@@ -1,7 +1,5 @@
 # OpenCLAW 完全指南
 
-## Ch04.286 OpenCLAW 完全指南
-
 > 📊 Level ⭐⭐ | 11.0KB | `entities/openclaw-comprehensive-guide.md`
 
 ## 核心主题

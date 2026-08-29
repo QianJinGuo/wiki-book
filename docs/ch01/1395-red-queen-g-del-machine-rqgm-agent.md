@@ -1,7 +1,5 @@
 # Red Queen Gödel Machine (RQGM)：共进化 Agent 与评估器的递归自改进框架
 
-## Ch01.1395 Red Queen Gödel Machine (RQGM)：共进化 Agent 与评估器的递归自改进框架
-
 > 📊 Level ⭐⭐ | 3.5KB | `entities/rqgm-red-queen-godel-machine-cambridge-nvidia-2026.md`
 
 # Red Queen Gödel Machine (RQGM)：共进化 Agent 与评估器的递归自改进框架

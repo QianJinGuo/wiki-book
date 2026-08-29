@@ -1,7 +1,5 @@
 # Prime Agent — 以 RLM + Continual Harness 双抽象为核心的自改进编码 Harness
 
-## Ch09.166 Prime Agent — 以 RLM + Continual Harness 双抽象为核心的自改进编码 Harness
-
 > 📊 Level ⭐⭐ | 4.7KB | `entities/prime-agent-self-improving-rlm-agent.md`
 
 # Prime Agent — 以 RLM + Continual Harness 双抽象为核心的自改进编码 Harness

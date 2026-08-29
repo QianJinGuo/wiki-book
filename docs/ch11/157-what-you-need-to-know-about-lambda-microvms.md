@@ -1,7 +1,5 @@
 # What You Need to Know About Lambda MicroVMs
 
-## Ch11.157 What You Need to Know About Lambda MicroVMs
-
 > 📊 Level ⭐⭐ | 7.6KB | `entities/theburningmonk-com-2026-06-what-you-need-to-know-about-lambda-microvms.md`
 
 # What You Need to Know About Lambda MicroVMs

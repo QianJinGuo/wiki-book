@@ -1,7 +1,5 @@
 # LangGraph 状态机执行引擎深度解析
 
-## Ch04.271 LangGraph 状态机执行引擎深度解析
-
 > 📊 Level ⭐⭐ | 11.4KB | `entities/langgraph-state-machine.md`
 
 ## Overview

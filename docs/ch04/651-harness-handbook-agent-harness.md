@@ -1,7 +1,5 @@
 # Harness Handbook — 行为级 Agent Harness 手册：可理解、可审计、可编辑
 
-## Ch04.651 Harness Handbook — 行为级 Agent Harness 手册：可理解、可审计、可编辑
-
 > 📊 Level ⭐⭐ | 5.2KB | `entities/harness-handbook-tencent-behavior-level-manual-2026.md`
 
 # Harness Handbook — 行为级 Agent Harness 手册：可理解、可审计、可编辑

@@ -1,7 +1,5 @@
 # Need Series C? Call a16z
 
-## Ch11.154 Need Series C? Call a16z
-
 > 📊 Level ⭐⭐ | 7.6KB | `entities/www-a16z-news-need-series-c-call-a16z.md`
 
 # Need Series C? Call a16z

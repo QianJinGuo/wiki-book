@@ -1,7 +1,5 @@
 # AWS re:Invent 2026 Agent 技术要点
 
-## Ch01.1291 AWS re:Invent 2026 Agent 技术要点
-
 > 📊 Level ⭐⭐ | 4.2KB | `entities/e9ffy3r5kwa1ja5pywbbrg.md`
 
 # E9Ffy3R5Kwa1Ja5Pywbbrg

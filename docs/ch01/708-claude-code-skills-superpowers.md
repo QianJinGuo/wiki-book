@@ -1,7 +1,5 @@
 # Claude Code Skills 与 Superpowers 实践
 
-## Ch01.708 Claude Code Skills 与 Superpowers 实践
-
 > 📊 Level ⭐⭐ | 8.8KB | `entities/claude-code-skills-superpowers-practice.md`
 
 # claude-code-skills-superpowers-practice

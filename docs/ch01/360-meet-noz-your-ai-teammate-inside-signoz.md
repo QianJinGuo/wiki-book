@@ -1,7 +1,5 @@
 # Meet Noz, your AI teammate inside SigNoz
 
-## Ch01.360 Meet Noz, your AI teammate inside SigNoz
-
 > 📊 Level ⭐ | 0.5KB | `entities/meet-noz-your-ai-teammate-inside-signoz.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/meet-noz-your-ai-teammate-inside-signoz.md)

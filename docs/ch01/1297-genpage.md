@@ -1,7 +1,5 @@
 # GenPage
 
-## Ch01.1297 GenPage
-
 > 📊 Level ⭐⭐ | 4.1KB | `entities/genpage-towards-end-to-end-generative-homepage-construction-.md`
 
 # GenPage: Towards End-to-End Generative Homepage Construction at Netflix

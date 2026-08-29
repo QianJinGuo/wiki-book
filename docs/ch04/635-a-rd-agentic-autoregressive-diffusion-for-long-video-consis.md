@@ -1,7 +1,5 @@
 # A²RD: Agentic Autoregressive Diffusion for Long Video Consistency
 
-## Ch04.635 A²RD: Agentic Autoregressive Diffusion for Long Video Consistency
-
 > 📊 Level ⭐⭐ | 5.6KB | `entities/a2rd-agentic-autoregressive-diffusion-long-video.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/a2rd-agentic-autoregressive-diffusion-long-video.md)

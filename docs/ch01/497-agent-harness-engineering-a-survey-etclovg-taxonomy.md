@@ -1,7 +1,5 @@
 # Agent Harness Engineering: A Survey — ETCLOVG Taxonomy
 
-## Ch01.497 Agent Harness Engineering: A Survey — ETCLOVG Taxonomy
-
 > 📊 Level ⭐⭐ | 13.3KB | `entities/agent-harness-engineering-survey-etcvlovg-taxonomy.md`
 
 ## Overview

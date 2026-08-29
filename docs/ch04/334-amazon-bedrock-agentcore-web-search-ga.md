@@ -1,7 +1,5 @@
 # Amazon Bedrock AgentCore Web Search: 托管式网页搜索能力 GA
 
-## Ch04.334 Amazon Bedrock AgentCore Web Search: 托管式网页搜索能力 GA
-
 > 📊 Level ⭐⭐ | 10.0KB | `entities/amazon-bedrock-agentcore-web-search-ga.md`
 
 # Amazon Bedrock AgentCore Web Search: 托管式网页搜索能力 GA

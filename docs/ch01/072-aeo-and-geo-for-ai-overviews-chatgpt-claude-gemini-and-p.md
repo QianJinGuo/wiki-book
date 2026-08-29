@@ -1,7 +1,5 @@
 # AEO and GEO for AI Overviews, ChatGPT, Claude, Gemini, and Perplexity
 
-## Ch01.072 AEO and GEO for AI Overviews, ChatGPT, Claude, Gemini, and Perplexity
-
 > 📊 Level ⭐ | 7.7KB | `entities/aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-perplexity.md`
 
 ## 核心要点

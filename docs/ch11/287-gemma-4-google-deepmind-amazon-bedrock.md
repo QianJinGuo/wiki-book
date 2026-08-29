@@ -1,7 +1,5 @@
 # Gemma 4 模型发布 — Google DeepMind 开源权重家族在 Amazon Bedrock 上线
 
-## Ch11.287 Gemma 4 模型发布 — Google DeepMind 开源权重家族在 Amazon Bedrock 上线
-
 > 📊 Level ⭐⭐ | 3.7KB | `entities/gemma-4-models-amazon-bedrock-deepmind-open-weights.md`
 
 # Gemma 4 模型发布 — Google DeepMind 开源权重家族在 Amazon Bedrock 上线

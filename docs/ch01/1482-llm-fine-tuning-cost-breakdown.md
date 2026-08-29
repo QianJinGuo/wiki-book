@@ -1,7 +1,5 @@
 # LLM Fine-Tuning Cost Breakdown
 
-## Ch01.1482 LLM Fine-Tuning Cost Breakdown
-
 > 📊 Level ⭐⭐⭐ | 13.3KB | `entities/llm-finetuning-cost-breakdown.md`
 
 ## 一、成本构成总览

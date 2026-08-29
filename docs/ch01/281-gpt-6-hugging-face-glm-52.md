@@ -1,7 +1,5 @@
 # gpt-6为刷榜黑进hugging-face捅篓子还得靠glm-52追查
 
-## Ch01.281 gpt-6为刷榜黑进hugging-face捅篓子还得靠glm-52追查
-
 > 📊 Level ⭐ | 0.8KB | `entities/gpt-6为刷榜黑进hugging-face捅篓子还得靠glm-52追查.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gpt-6为刷榜黑进hugging-face捅篓子还得靠glm-52追查.md)

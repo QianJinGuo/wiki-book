@@ -1,7 +1,5 @@
 # AI 时代的 EKS 升级范式：Kiro-cli Agent 接管识别、升级与排障
 
-## Ch04.773 AI 时代的 EKS 升级范式：Kiro-cli Agent 接管识别、升级与排障
-
 > 📊 Level ⭐⭐ | 3.5KB | `entities/ai-eks-upgrade-kiro-cli-agent-paradigm-2026.md`
 
 # AI 时代的 EKS 升级范式：Kiro-cli Agent 接管识别、升级与排障

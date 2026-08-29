@@ -1,7 +1,5 @@
 # 以Kiro快速部署云上Agent：只需几个小时，从业务需求到部署于Amazon Bedrock Agentcore落地 | 亚马逊AWS官方博客
 
-## Ch11.064 以Kiro快速部署云上Agent：只需几个小时，从业务需求到部署于Amazon Bedrock Agentcore落地 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 11.4KB | `entities/kiro-quick-deploy-agent-deploy-amazon-bedrock-agentcore.md`
 
 

@@ -1,7 +1,5 @@
 # 如视借助 NVIDIA Jetson 将毫米级三维重建带到边缘端
 
-## Ch01.921 如视借助 NVIDIA Jetson 将毫米级三维重建带到边缘端
-
 > 📊 Level ⭐⭐ | 7.0KB | `entities/如视借助-nvidia-jetson-将毫米级三维重建带到边缘端.md`
 
 # 如视借助 NVIDIA Jetson 将毫米级三维重建带到边缘端

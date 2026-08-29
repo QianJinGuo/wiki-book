@@ -1,7 +1,5 @@
 # Agent Harness 可观测性：生产级 AI 项目必须补上的一课
 
-## Ch04.741 Agent Harness 可观测性：生产级 AI 项目必须补上的一课
-
 > 📊 Level ⭐⭐ | 3.8KB | `entities/agent-harness-observability-production.md`
 
 # Agent Harness 可观测性：生产级 AI 项目必须补上的一课

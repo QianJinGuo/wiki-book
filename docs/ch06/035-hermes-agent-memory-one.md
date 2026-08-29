@@ -1,7 +1,5 @@
 # Hermes Agent 三级 Memory 架构解析（One掌柜视角）
 
-## Ch06.035 Hermes Agent 三级 Memory 架构解析（One掌柜视角）
-
 > 📊 Level ⭐⭐ | 5.3KB | `entities/hermes-agent-three-layer-memory-one.md`
 
 ## 与 VibeCoder 版本的关系

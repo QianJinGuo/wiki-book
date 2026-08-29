@@ -1,7 +1,5 @@
 # MSA 稀疏注意力三国杀：NSA / DSA / MoBA / MSA 四方案深度对比
 
-## Ch01.403 MSA 稀疏注意力三国杀：NSA / DSA / MoBA / MSA 四方案深度对比
-
 > 📊 Level ⭐⭐ | 21.0KB | `entities/msa-sparse-attention-three-kingdoms-huashu.md`
 
 # MSA 稀疏注意力三国杀：NSA / DSA / MoBA / MSA 四方案深度对比

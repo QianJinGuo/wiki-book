@@ -1,7 +1,5 @@
 # Amazon Bedrock AgentCore 为部署可信人工智能代理增加了质量评估和策略控制 | 亚马逊AWS官方博客
 
-## Ch11.054 Amazon Bedrock AgentCore 为部署可信人工智能代理增加了质量评估和策略控制 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 13.2KB | `entities/amazon-bedrock-agentcore-adds-quality-evaluations-and-policy-controls-for-deploying-trusted-ai-agents.md`
 
 ## 概述

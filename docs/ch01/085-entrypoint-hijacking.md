@@ -1,7 +1,5 @@
 # EntryPoint Hijacking
 
-## Ch01.085 EntryPoint Hijacking
-
 > 📊 Level ⭐ | 7.4KB | `entities/entrypointhijacking.md`
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/entrypointhijacking.md)

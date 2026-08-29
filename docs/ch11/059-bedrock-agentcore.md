@@ -1,7 +1,5 @@
 # Bedrock AgentCore 自定义代码评估器
 
-## Ch11.059 Bedrock AgentCore 自定义代码评估器
-
 > 📊 Level ⭐⭐ | 12.8KB | `entities/build-custom-code-based-evaluators-in-amazon-bedrock-agentco.md`
 
 ## 摘要

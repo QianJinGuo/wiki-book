@@ -1,7 +1,5 @@
 # 从「不敢发」到「天天发」：AI Agent 时代的 CI/CD 生存指南
 
-## Ch04.670 从「不敢发」到「天天发」：AI Agent 时代的 CI/CD 生存指南
-
 > 📊 Level ⭐⭐ | 4.9KB | `entities/从不敢发到天天发ai-agent-时代的-cicd-生存指南.md`
 
 # 从「不敢发」到「天天发」：AI Agent 时代的 CI/CD 生存指南

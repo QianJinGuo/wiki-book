@@ -1,7 +1,5 @@
 # SkillScan 智能体技能安全扫描：字节跳动生产级实践
 
-## Ch04.417 SkillScan 智能体技能安全扫描：字节跳动生产级实践
-
 > 📊 Level ⭐⭐ | 8.5KB | `entities/skillscan-agent-skill-security-scanning-bytedance.md`
 
 # SkillScan 智能体技能安全扫描

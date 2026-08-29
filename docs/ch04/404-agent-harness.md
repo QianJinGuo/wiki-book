@@ -1,7 +1,5 @@
 # Agent架构关键变化：Harness正在成为新后端
 
-## Ch04.404 Agent架构关键变化：Harness正在成为新后端
-
 > 📊 Level ⭐⭐ | 8.6KB | `entities/agent架构关键变化harness正在成为新后端.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent架构关键变化harness正在成为新后端.md)

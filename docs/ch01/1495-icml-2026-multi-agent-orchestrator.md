@@ -1,7 +1,5 @@
 # ICML 2026｜如何对Multi-Agent系统进行过程评估？重新认识多智能体系统中的Orchestrator
 
-## Ch01.1495 ICML 2026｜如何对Multi-Agent系统进行过程评估？重新认识多智能体系统中的Orchestrator
-
 > 📊 Level ⭐⭐⭐ | 11.7KB | `entities/icml-2026如何对multi-agent系统进行过程评估重新认识多智能体系统中的orchestrator.md`
 
 # ICML 2026｜如何对Multi-Agent系统进行过程评估？重新认识多智能体系统中的Orchestrator

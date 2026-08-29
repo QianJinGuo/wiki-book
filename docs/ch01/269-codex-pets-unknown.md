@@ -1,7 +1,5 @@
 # 编程时养只 小跟班 Codex Pets全攻略 附自定义方法  unknown
 
-## Ch01.269 编程时养只 小跟班 Codex Pets全攻略 附自定义方法  unknown
-
 > 📊 Level ⭐ | 0.8KB | `entities/2026-05-06-编程时养只-小跟班-Codex-Pets全攻略-附自定义方法--unknown.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-05-06-编程时养只-小跟班-Codex-Pets全攻略-附自定义方法--unknown.md)

@@ -1,7 +1,5 @@
 # MoleculeOS（MOS）——许锦波团队AI原生生物经济操作系统
 
-## Ch01.738 MoleculeOS（MOS）——许锦波团队AI原生生物经济操作系统
-
 > 📊 Level ⭐⭐ | 8.4KB | `entities/moleculeos-ai-biology-operating-system-xujinbo-2026.md`
 
 # MoleculeOS（MOS）——许锦波团队AI原生生物经济操作系统

@@ -1,7 +1,5 @@
 # deepseek-v4深度拆解一篇论文同时做了五件大事
 
-## Ch01.835 deepseek-v4深度拆解一篇论文同时做了五件大事
-
 > 📊 Level ⭐⭐ | 7.7KB | `entities/deepseek-v4深度拆解一篇论文同时做了五件大事.md`
 
 > -> 原文存档

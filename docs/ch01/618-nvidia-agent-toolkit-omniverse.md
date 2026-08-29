@@ -1,7 +1,5 @@
 # NVIDIA Agent Toolkit + Omniverse
 
-## Ch01.618 NVIDIA Agent Toolkit + Omniverse
-
 > 📊 Level ⭐⭐ | 10.0KB | `entities/nvidia-agent-toolkit-扩展全新-omniverse-库赋能-ai-智能体构建仿真就绪世界.md`
 
 # NVIDIA Agent Toolkit + Omniverse

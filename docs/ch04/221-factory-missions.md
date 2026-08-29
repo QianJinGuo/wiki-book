@@ -1,7 +1,5 @@
 # Factory Missions：多智能体工程纪律
 
-## Ch04.221 Factory Missions：多智能体工程纪律
-
 > 📊 Level ⭐⭐ | 12.6KB | `entities/factory-missions-architecture.md`
 
 ## 概述

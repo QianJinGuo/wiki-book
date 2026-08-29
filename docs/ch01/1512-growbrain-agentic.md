@@ -1,7 +1,5 @@
 # 淘宝内容生态：GrowBrain - 淘宝Agentic内容成长引擎
 
-## Ch01.1512 淘宝内容生态：GrowBrain - 淘宝Agentic内容成长引擎
-
 > 📊 Level ⭐⭐⭐ | 9.9KB | `entities/淘宝内容生态-growbrain-淘宝agentic内容成长引擎.md`
 
 # 淘宝内容生态：GrowBrain - 淘宝Agentic内容成长引擎

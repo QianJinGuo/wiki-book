@@ -1,7 +1,5 @@
 # 万级实时推理的商品领域Agent实践思考和总结
 
-## Ch04.772 万级实时推理的商品领域Agent实践思考和总结
-
 > 📊 Level ⭐⭐ | 3.5KB | `entities/taobao-product-domain-agent-architecture.md`
 
 # 万级实时推理的商品领域Agent实践思考和总结

@@ -1,7 +1,5 @@
 # AI 驱动的裁员没有商业意义 — Gartner 研究
 
-## Ch01.685 AI 驱动的裁员没有商业意义 — Gartner 研究
-
 > 📊 Level ⭐⭐ | 9.0KB | `entities/www.cio-4171054-ai-driven-layoffs-arent-making-business-sense.md`
 
 # AI 驱动的裁员没有商业意义 — Gartner 研究

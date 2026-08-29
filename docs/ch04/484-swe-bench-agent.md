@@ -1,7 +1,5 @@
 # SWE-bench Agent 评估方法论
 
-## Ch04.484 SWE-bench Agent 评估方法论
-
 > 📊 Level ⭐⭐ | 7.8KB | `entities/swe-bench-agent-evaluation.md`
 
 # SWE-bench Agent 评估方法论

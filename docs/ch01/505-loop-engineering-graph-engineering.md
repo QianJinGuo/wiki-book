@@ -1,7 +1,5 @@
 # Loop Engineering 已死？一文带你了解 Graph Engineering
 
-## Ch01.505 Loop Engineering 已死？一文带你了解 Graph Engineering
-
 > 📊 Level ⭐⭐ | 13.0KB | `entities/graph-engineering-取代loop-engineering.md`
 
 # Graph Engineering：从"编排一个智能体"到"编排一群智能体"

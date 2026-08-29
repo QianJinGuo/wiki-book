@@ -1,7 +1,5 @@
 # 高德AI Native数据Agent：LLM + 知识工程 + 规约约束的NL2SQL生产实践
 
-## Ch01.1118 高德AI Native数据Agent：LLM + 知识工程 + 规约约束的NL2SQL生产实践
-
 > 📊 Level ⭐⭐ | 5.6KB | `entities/gaode-ai-native-data-agent.md`
 
 # 高德AI Native数据Agent：LLM + 知识工程 + 规约约束的NL2SQL生产实践

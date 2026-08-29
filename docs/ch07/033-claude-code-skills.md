@@ -1,7 +1,5 @@
 # Claude Code Skills 实战指南 — 发现机制、编写与安全
 
-## Ch07.033 Claude Code Skills 实战指南 — 发现机制、编写与安全
-
 > 📊 Level ⭐⭐ | 10.4KB | `entities/claude-code-skills-practical-guide-discovery-frontmatter.md`
 
 # Claude Code Skills 实战指南 — 发现机制、编写与安全

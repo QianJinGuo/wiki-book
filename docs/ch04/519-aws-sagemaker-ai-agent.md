@@ -1,7 +1,5 @@
 # AWS SageMaker AI Agent 引导式工作流微调
 
-## Ch04.519 AWS SageMaker AI Agent 引导式工作流微调
-
 > 📊 Level ⭐⭐ | 7.3KB | `entities/aws-sagemaker-ai-agent-guided-workflows-finetuning.md`
 
 # Agent-guided workflows to accelerate model customization in Amazon SageMaker AI

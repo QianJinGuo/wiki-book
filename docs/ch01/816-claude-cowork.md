@@ -1,7 +1,5 @@
 # Claude Cowork 大更新：彻夜自动编程的新时代
 
-## Ch01.816 Claude Cowork 大更新：彻夜自动编程的新时代
-
 > 📊 Level ⭐⭐ | 7.8KB | `entities/claude-cowork-2026-big-update.md`
 
 # Claude Cowork 大更新

@@ -1,7 +1,5 @@
 # 全球医疗榜第一，中国AI杀疯了！医疗AI迈入Harness时代
 
-## Ch01.822 全球医疗榜第一，中国AI杀疯了！医疗AI迈入Harness时代
-
 > 📊 Level ⭐⭐ | 7.8KB | `entities/全球医疗榜第一中国ai杀疯了医疗ai迈入harness时代.md`
 
 # 全球医疗榜第一，中国AI杀疯了！医疗AI迈入Harness时代

@@ -1,7 +1,5 @@
 # Embabel
 
-## Ch07.025 Embabel
-
 > 📊 Level ⭐⭐ | 11.4KB | `entities/embabel.md`
 
 # Embabel

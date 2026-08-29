@@ -1,7 +1,5 @@
 # 刚刚，Anthropic切开Claude大脑！AI自发长出类人「意识器官」
 
-## Ch01.1505 刚刚，Anthropic切开Claude大脑！AI自发长出类人「意识器官」
-
 > 📊 Level ⭐⭐⭐ | 10.5KB | `entities/刚刚anthropic切开claude大脑ai自发长出类人意识器官.md`
 
 # 刚刚，Anthropic切开Claude大脑！AI自发长出类人「意识器官」**

@@ -1,7 +1,5 @@
 # Self-Evolving Agent：自进化的隐藏陷阱
 
-## Ch04.813 Self-Evolving Agent：自进化的隐藏陷阱
-
 > 📊 Level ⭐⭐ | 1.0KB | `entities/skillboost-skill-overfitting-self-evolving-agent-arxiv-2026.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillboost-skill-overfitting-self-evolving-agent-arxiv-2026.md)

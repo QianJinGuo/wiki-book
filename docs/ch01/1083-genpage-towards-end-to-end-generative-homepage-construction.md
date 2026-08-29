@@ -1,7 +1,5 @@
 # GenPage: Towards End-to-End Generative Homepage Construction at Netflix
 
-## Ch01.1083 GenPage: Towards End-to-End Generative Homepage Construction at Netflix
-
 > 📊 Level ⭐⭐ | 5.8KB | `entities/genpage-end-to-end-generative-homepage-construction-netflix.md`
 
 # GenPage: Towards End-to-End Generative Homepage Construction at Netflix

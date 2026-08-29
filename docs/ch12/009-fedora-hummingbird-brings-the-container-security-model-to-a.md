@@ -1,7 +1,5 @@
 # fedora hummingbird brings the container security model to a linux host os
 
-## Ch12.009 fedora hummingbird brings the container security model to a linux host os
-
 > 📊 Level ⭐ | 5.6KB | `entities/fedora-hummingbird-brings-the-container-security-model-to-li.md`
 
 ## 深度分析

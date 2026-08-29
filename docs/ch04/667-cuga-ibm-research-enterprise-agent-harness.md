@@ -1,7 +1,5 @@
 # CUGA: IBM Research Enterprise Agent Harness
 
-## Ch04.667 CUGA: IBM Research Enterprise Agent Harness
-
 > 📊 Level ⭐⭐ | 5.0KB | `entities/cuga-ibm-research-agent-harness-enterprise.md`
 
 # CUGA: IBM Research Enterprise Agent Harness

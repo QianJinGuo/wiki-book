@@ -1,7 +1,5 @@
 # Agentic时代用户主导个性化推荐范式
 
-## Ch04.757 Agentic时代用户主导个性化推荐范式
-
 > 📊 Level ⭐⭐ | 3.7KB | `entities/user-governed-personalization-agentic-recommendation-paradigm-2026.md`
 
 # Agentic时代用户主导个性化推荐范式

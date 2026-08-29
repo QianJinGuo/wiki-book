@@ -1,7 +1,5 @@
 # Karpathy最新开喷：一句话让全场Agent开发者安静了
 
-## Ch01.499 Karpathy最新开喷：一句话让全场Agent开发者安静了
-
 > 📊 Level ⭐⭐ | 13.2KB | `entities/karpathy最新开喷一句话让全场agent开发者安静了.md`
 
 # Karpathy最新开喷：一句话让全场Agent开发者安静了

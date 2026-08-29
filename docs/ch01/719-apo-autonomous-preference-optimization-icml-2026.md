@@ -1,7 +1,5 @@
 # APO — Autonomous Preference Optimization（ICML 2026）
 
-## Ch01.719 APO — Autonomous Preference Optimization（ICML 2026）
-
 > 📊 Level ⭐⭐ | 8.7KB | `entities/apo-autonomous-preference-optimization.md`
 
 ## 核心问题：概念漂移（Concept Drift）

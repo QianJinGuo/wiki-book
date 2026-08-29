@@ -1,7 +1,5 @@
 # Apache RocketMQ 5.5.0 LiteTopic：AI Agent 异步通信消息模型
 
-## Ch04.210 Apache RocketMQ 5.5.0 LiteTopic：AI Agent 异步通信消息模型
-
 > 📊 Level ⭐⭐ | 13.2KB | `entities/rocket-mq-5-litetopic-ai-agent-async-cloudnative.md`
 
 ## 背景：Agent 异步通信成为行业共识

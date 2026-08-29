@@ -1,7 +1,5 @@
 # AWS Bedrock Agentcore Quality Optimization Flywheel
 
-## Ch11.121 AWS Bedrock Agentcore Quality Optimization Flywheel
-
 > 📊 Level ⭐⭐ | 8.6KB | `entities/aws-bedrock-agentcore-quality-optimization-flywheel.md`
 
 # Introducing agent quality optimization in AgentCore, now in preview

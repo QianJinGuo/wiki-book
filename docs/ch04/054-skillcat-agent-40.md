@@ -1,7 +1,5 @@
 # 武大团队提出SkillCAT：Agent技能进化效率暴涨40%
 
-## Ch04.054 武大团队提出SkillCAT：Agent技能进化效率暴涨40%
-
 > 📊 Level ⭐ | 0.8KB | `entities/skillcat-contrastive-skill-self-evolution-whu-2026.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillcat-contrastive-skill-self-evolution-whu-2026.md)

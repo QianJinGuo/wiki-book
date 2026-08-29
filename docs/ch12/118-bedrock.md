@@ -1,7 +1,5 @@
 # 中国用户安全高性能访问海外 Bedrock
 
-## Ch12.118 中国用户安全高性能访问海外 Bedrock
-
 > 📊 Level ⭐⭐ | 3.5KB | `entities/user-security-high-performance-bedrock-aws-china.md`
 
 # 中国用户安全高性能访问海外 Bedrock

@@ -1,7 +1,5 @@
 # AWS Bedrock 多智能体协作指南
 
-## Ch11.020 AWS Bedrock 多智能体协作指南
-
 > 📊 Level ⭐⭐ | 29.9KB | `entities/aws-bedrock-multi-agent-collaboration-guide.md`
 
 ## 一、AWS Bedrock 多智能体核心架构

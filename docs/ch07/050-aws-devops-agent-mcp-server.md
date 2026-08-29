@@ -1,7 +1,5 @@
 # AWS DevOps Agent × MCP Server：打通混合云网络排障的最后一公里
 
-## Ch07.050 AWS DevOps Agent × MCP Server：打通混合云网络排障的最后一公里
-
 > 📊 Level ⭐⭐ | 8.3KB | `entities/aws-devops-agent-mcp-server打通混合云网络排障的最后一公里.md`
 
 ## 核心要点

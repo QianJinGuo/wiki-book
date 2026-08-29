@@ -1,7 +1,5 @@
 # 一文看懂三种 RAG 架构：Classic RAG、Graph RAG 与 Agentic RAG
 
-## Ch04.472 一文看懂三种 RAG 架构：Classic RAG、Graph RAG 与 Agentic RAG
-
 > 📊 Level ⭐⭐ | 7.9KB | `entities/three-rag-architectures-classic-graph-agentic.md`
 
 # 一文看懂三种 RAG 架构：Classic RAG、Graph RAG 与 Agentic RAG

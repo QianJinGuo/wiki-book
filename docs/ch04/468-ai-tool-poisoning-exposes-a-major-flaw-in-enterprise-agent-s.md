@@ -1,7 +1,5 @@
 # AI tool poisoning exposes a major flaw in enterprise agent security | VentureBeat
 
-## Ch04.468 AI tool poisoning exposes a major flaw in enterprise agent security | VentureBeat
-
 > 📊 Level ⭐⭐ | 7.9KB | `entities/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security-v2.md)

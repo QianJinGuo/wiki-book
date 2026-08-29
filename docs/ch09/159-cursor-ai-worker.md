@@ -1,7 +1,5 @@
 # Cursor AI 蜂群：规划器+Worker 架构与多模型经济学的突破
 
-## Ch09.159 Cursor AI 蜂群：规划器+Worker 架构与多模型经济学的突破
-
 > 📊 Level ⭐⭐ | 5.2KB | `entities/cursor-ai-swarm-document-to-database.md`
 
 # Cursor AI 蜂群：规划器+Worker 架构与多模型经济学的突破

@@ -1,7 +1,5 @@
 # It’s safe to close your laptop now: Hosting coding agents on Amazon Bedrock AgentCore
 
-## Ch09.042 It’s safe to close your laptop now: Hosting coding agents on Amazon Bedrock AgentCore
-
 > 📊 Level ⭐⭐ | 15.0KB | `entities/bedrock-agentcore-coding-agent-hosting.md`
 
 # It’s safe to close your laptop now: Hosting coding agents on Amazon Bedrock AgentCore

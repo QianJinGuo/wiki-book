@@ -1,7 +1,5 @@
 # CoDA-Bench：Code Agent 数据智能基准
 
-## Ch09.109 CoDA-Bench：Code Agent 数据智能基准
-
 > 📊 Level ⭐⭐ | 8.2KB | `entities/coda-bench-code-agent-data-benchmark-renmin-2026.md`
 
 # CoDA-Bench：Code Agent 数据智能基准

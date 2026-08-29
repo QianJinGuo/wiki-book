@@ -1,7 +1,5 @@
 # Full-Bandwidth Transformer：Latent Feedback 拓宽解码垂直反馈通道
 
-## Ch01.1578 Full-Bandwidth Transformer：Latent Feedback 拓宽解码垂直反馈通道
-
 > 📊 Level ⭐⭐⭐ | 3.6KB | `entities/full-bandwidth-transformer-latent-feedback-arxiv-2608-08888.md`
 
 # Full-Bandwidth Transformer：Latent Feedback 拓宽解码垂直反馈通道

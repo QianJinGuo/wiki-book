@@ -1,7 +1,5 @@
 # 前端如何消费 Agent 的 SSE 流 — Agent 前端工程实践
 
-## Ch04.004 前端如何消费 Agent 的 SSE 流 — Agent 前端工程实践
-
 > 📊 Level ⭐ | 9.7KB | `entities/前端消费agent-sse流-工程实践.md`
 
 # 前端如何消费 Agent 的 SSE 流 — Agent 前端工程实践

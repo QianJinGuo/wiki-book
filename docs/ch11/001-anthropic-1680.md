@@ -1,7 +1,5 @@
 # Anthropic 招人底牌：1680 份员工履历揭示「基础设施老兵」吃香
 
-## Ch11.001 Anthropic 招人底牌：1680 份员工履历揭示「基础设施老兵」吃香
-
 > 📊 Level ⭐ | 12.4KB | `entities/anthropic-hiring-1680-resumes-infrastructure-veterans.md`
 
 # Anthropic 招人底牌：1680 份员工履历揭示「基础设施老兵」吃香

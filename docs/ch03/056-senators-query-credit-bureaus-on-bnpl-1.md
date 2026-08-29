@@ -1,7 +1,5 @@
 # senators-query-credit-bureaus-on-bnpl-1
 
-## Ch03.056 senators-query-credit-bureaus-on-bnpl-1
-
 > 📊 Level ⭐ | 0.6KB | `entities/senators-query-credit-bureaus-on-bnpl-1.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/senators-query-credit-bureaus-on-bnpl-1.md)

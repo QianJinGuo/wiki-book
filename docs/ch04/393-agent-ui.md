@@ -1,7 +1,5 @@
 # Agent 自规划执行能力体系：让新需求 UI 测试自动跑起来
 
-## Ch04.393 Agent 自规划执行能力体系：让新需求 UI 测试自动跑起来
-
 > 📊 Level ⭐⭐ | 8.8KB | `entities/agent-self-planning-ui-testing-capability-system-aliexpress-2026.md`
 
 # Agent 自规划执行能力体系（AliExpress UI 测试）

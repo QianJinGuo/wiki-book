@@ -1,7 +1,5 @@
 # TriWorldBench：首个三视角具身世界模型榜单（北大/清华/北航/上交/中科大）
 
-## Ch01.1407 TriWorldBench：首个三视角具身世界模型榜单（北大/清华/北航/上交/中科大）
-
 > 📊 Level ⭐⭐ | 3.4KB | `entities/triworldbench-three-view-embodied-world-model-benchmark-2026.md`
 
 # TriWorldBench：首个三视角具身世界模型榜单（北大/清华/北航/上交/中科大）

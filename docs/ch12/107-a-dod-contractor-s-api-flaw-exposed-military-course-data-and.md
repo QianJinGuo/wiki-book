@@ -1,7 +1,5 @@
 # A DOD contractor’s API flaw exposed military course data and service member records
 
-## Ch12.107 A DOD contractor’s API flaw exposed military course data and service member records
-
 > 📊 Level ⭐⭐ | 4.6KB | `entities/schemata-dod-contractor-api-flaw-military-data-exposure.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/schemata-dod-contractor-api-flaw-military-data-exposure.md)

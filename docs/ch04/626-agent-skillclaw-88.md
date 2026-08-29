@@ -1,7 +1,5 @@
 # Agent 技能夜间自进化——阿里开源 SkillClaw，最高提升 88%
 
-## Ch04.626 Agent 技能夜间自进化——阿里开源 SkillClaw，最高提升 88%
-
 > 📊 Level ⭐⭐ | 5.7KB | `entities/skillclaw-hyman-nightly-evolution-alibaba.md`
 
 # Agent 技能夜间自进化——阿里开源 SkillClaw，最高提升 88%

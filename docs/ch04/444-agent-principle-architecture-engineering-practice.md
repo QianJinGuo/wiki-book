@@ -1,7 +1,5 @@
 # Agent Principle Architecture Engineering Practice
 
-## Ch04.444 Agent Principle Architecture Engineering Practice
-
 > 📊 Level ⭐⭐ | 8.2KB | `entities/agent-principle-architecture-engineering-practice.md`
 
 # 你不知道的 Agent：原理、架构与工程实践

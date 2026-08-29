@@ -1,7 +1,5 @@
 # ComBodied Agents：以人为中心的 Agentic AI 新范式（伴身智能体）
 
-## Ch04.782 ComBodied Agents：以人为中心的 Agentic AI 新范式（伴身智能体）
-
 > 📊 Level ⭐⭐ | 3.3KB | `entities/combodied-agents-human-centric-agentic-ai.md`
 
 # ComBodied Agents：以人为中心的 Agentic AI 新范式（伴身智能体）

@@ -1,7 +1,5 @@
 # Claude 最歧视的，是印度三哥
 
-## Ch01.1241 Claude 最歧视的，是印度三哥
-
 > 📊 Level ⭐⭐ | 4.6KB | `entities/claude-最歧视的是印度三哥.md`
 
 # Claude 最歧视的，是印度三哥

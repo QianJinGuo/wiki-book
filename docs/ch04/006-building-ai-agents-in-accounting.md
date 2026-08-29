@@ -1,7 +1,5 @@
 # Building AI Agents in Accounting
 
-## Ch04.006 Building AI Agents in Accounting
-
 > 📊 Level ⭐ | 9.2KB | `entities/building-ai-agents-in-accounting.md`
 
 ## 核心要点

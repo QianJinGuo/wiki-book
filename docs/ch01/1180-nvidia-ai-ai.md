@@ -1,7 +1,5 @@
 # NVIDIA AI 前沿 — 打造从云端到终端的智能体 AI 全栈（上集）
 
-## Ch01.1180 NVIDIA AI 前沿 — 打造从云端到终端的智能体 AI 全栈（上集）
-
 > 📊 Level ⭐⭐ | 5.1KB | `entities/nvidia-ai-前沿-打造从云端到终端的智能体-ai-全栈上集.md`
 
 # NVIDIA AI 前沿 — 打造从云端到终端的智能体 AI 全栈（上集）

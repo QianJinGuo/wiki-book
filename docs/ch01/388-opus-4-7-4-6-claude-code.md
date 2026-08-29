@@ -1,7 +1,5 @@
 # 刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践
 
-## Ch01.388 刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践
-
 > 📊 Level ⭐⭐ | 26.9KB | `entities/opus-4-7-launch-claude-code-best-practices-wechat.md`
 
 ###  Claude Opus 4.7 正式发布：

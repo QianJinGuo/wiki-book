@@ -1,7 +1,5 @@
 # ICML 2026 | 南大SAME稳住MoE，缓解多模态持续微调双重遗忘
 
-## Ch01.964 ICML 2026 | 南大SAME稳住MoE，缓解多模态持续微调双重遗忘
-
 > 📊 Level ⭐⭐ | 6.7KB | `entities/icml-2026-南大same稳住moe缓解多模态持续微调双重遗忘.md`
 
 # ICML 2026 | 南大SAME稳住MoE，缓解多模态持续微调双重遗忘

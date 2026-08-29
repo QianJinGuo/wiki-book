@@ -1,7 +1,5 @@
 # Meta Muse Glimmer — 本地级 Agentic 多模态开源模型
 
-## Ch01.1598 Meta Muse Glimmer — 本地级 Agentic 多模态开源模型
-
 > 📊 Level ⭐⭐⭐ | 1.7KB | `entities/meta-muse-glimmer-local-agentic-multimodal-open-source.md`
 
 # Meta Muse Glimmer — 本地级 Agentic 多模态开源模型

@@ -1,7 +1,5 @@
 # Amazon Bedrock 构建货运物流双语命名实体识别系统
 
-## Ch11.162 Amazon Bedrock 构建货运物流双语命名实体识别系统
-
 > 📊 Level ⭐⭐ | 7.5KB | `entities/building-bilingual-ner-for-cargo-logistics-with-amazon-bedro.md`
 
 # Amazon Bedrock 构建货运物流双语命名实体识别系统

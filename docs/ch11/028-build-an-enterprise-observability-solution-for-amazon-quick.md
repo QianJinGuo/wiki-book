@@ -1,7 +1,5 @@
 # Build an enterprise observability solution for Amazon Quick
 
-## Ch11.028 Build an enterprise observability solution for Amazon Quick
-
 > 📊 Level ⭐⭐ | 21.9KB | `entities/build-an-enterprise-observability-solution-for-amazon-quick.md`
 
 # Build an enterprise observability solution for Amazon Quick

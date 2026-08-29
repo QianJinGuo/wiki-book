@@ -1,7 +1,5 @@
 # 腾讯 AI Team 知识沉淀体系（Harness Engineering 实践）
 
-## Ch05.073 腾讯 AI Team 知识沉淀体系（Harness Engineering 实践）
-
 > 📊 Level ⭐⭐ | 8.8KB | `entities/tencent-ai-team-knowledge-harness.md`
 
 # 腾讯 AI Team 知识沉淀体系

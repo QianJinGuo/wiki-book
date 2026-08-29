@@ -1,7 +1,5 @@
 # The next big breakthrough will be AIs learning on the job
 
-## Ch01.342 The next big breakthrough will be AIs learning on the job
-
 > 📊 Level ⭐ | 0.7KB | `entities/the-next-big-breakthrough-will-be-ais-learning-on-the-job.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-next-big-breakthrough-will-be-ais-learning-on-the-job.md)

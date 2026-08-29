@@ -1,7 +1,5 @@
 # 解析Graph Engineering ：AI 多智能体协作的本质与底层逻辑
 
-## Ch04.070 解析Graph Engineering ：AI 多智能体协作的本质与底层逻辑
-
 > 📊 Level ⭐ | 0.7KB | `entities/graph-engineering-multi-agent-essence-xiaozhi.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/graph-engineering-multi-agent-essence-xiaozhi.md)

@@ -1,7 +1,5 @@
 # 让 Agent 成为音视频工作台：AI MediaKit CLI + Skill 发布
 
-## Ch04.619 让 Agent 成为音视频工作台：AI MediaKit CLI + Skill 发布
-
 > 📊 Level ⭐⭐ | 5.8KB | `entities/ai-mediakit-cli-skill-音视频工作台.md`
 
 # 让 Agent 成为音视频工作台：AI MediaKit CLI + Skill 发布

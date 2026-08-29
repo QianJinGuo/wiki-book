@@ -1,7 +1,5 @@
 # Build Enterprise Search for Agents with Amazon Bedrock Managed Ingestion
 
-## Ch04.789 Build Enterprise Search for Agents with Amazon Bedrock Managed Ingestion
-
 > 📊 Level ⭐⭐ | 3.2KB | `entities/build-enterprise-search-for-agents-with-amazon-bedrock-manag.md`
 
 # Build Enterprise Search for Agents with Amazon Bedrock Managed Ingestion

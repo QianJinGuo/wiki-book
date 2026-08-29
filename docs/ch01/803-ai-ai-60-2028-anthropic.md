@@ -1,7 +1,5 @@
 # AI自己造AI，概率60%，2028年底前！Anthropic联创坐不住了
 
-## Ch01.803 AI自己造AI，概率60%，2028年底前！Anthropic联创坐不住了
-
 > 📊 Level ⭐⭐ | 8.0KB | `entities/2026-05-05-AI自己造AI-概率60-2028年底前-Anthropic联创坐不住了-新智元.md`
 
 # AI自己造AI，概率60%，2028年底前！Anthropic联创坐不住了

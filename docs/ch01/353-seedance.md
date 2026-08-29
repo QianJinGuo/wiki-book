@@ -1,7 +1,5 @@
 # 字节跳动-seedance-占领好莱坞
 
-## Ch01.353 字节跳动-seedance-占领好莱坞
-
 > 📊 Level ⭐ | 0.6KB | `entities/字节跳动-seedance-占领好莱坞.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/字节跳动-seedance-占领好莱坞.md)

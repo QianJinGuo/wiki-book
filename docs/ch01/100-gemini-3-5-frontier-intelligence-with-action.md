@@ -1,7 +1,5 @@
 # Gemini 3.5: frontier intelligence with action
 
-## Ch01.100 Gemini 3.5: frontier intelligence with action
-
 > 📊 Level ⭐ | 7.0KB | `entities/gemini-3-5-frontier-intelligence-with-action.md`
 
 # Gemini 3.5: frontier intelligence with action

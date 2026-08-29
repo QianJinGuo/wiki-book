@@ -1,7 +1,5 @@
 # Marvis — 腾讯多智能体桌面助手
 
-## Ch03.096 Marvis — 腾讯多智能体桌面助手
-
 > 📊 Level ⭐⭐ | 9.2KB | `entities/marvis-multi-agent-desktop-tencent-2026.md`
 
 # Marvis — 腾讯多智能体桌面助手

@@ -1,7 +1,5 @@
 # 复旦北大 AHE：Agentic Harness Engineering 瓶颈分析
 
-## Ch04.305 复旦北大 AHE：Agentic Harness Engineering 瓶颈分析
-
 > 📊 Level ⭐⭐ | 10.6KB | `entities/fudan-peking-ahe-agentic-harness-engineering.md`
 
 ## 1. 被忽视的「Harness Engineering」瓶颈

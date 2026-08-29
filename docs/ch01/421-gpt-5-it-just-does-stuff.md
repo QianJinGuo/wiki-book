@@ -1,7 +1,5 @@
 # GPT-5: It Just Does Stuff
 
-## Ch01.421 GPT-5: It Just Does Stuff
-
 > 📊 Level ⭐⭐ | 17.5KB | `entities/gpt-5-it-just-does-stuff.md`
 
 # GPT-5: It Just Does Stuff

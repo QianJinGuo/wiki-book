@@ -1,7 +1,5 @@
 # Langsmith Evaluation Concepts
 
-## Ch03.141 Langsmith Evaluation Concepts
-
 > 📊 Level ⭐⭐ | 3.6KB | `entities/langsmith-evaluation-concepts.md`
 
 # LangSmith Evaluation Concepts

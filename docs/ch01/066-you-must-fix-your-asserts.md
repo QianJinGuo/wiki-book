@@ -1,7 +1,5 @@
 # You Must Fix Your Asserts
 
-## Ch01.066 You Must Fix Your Asserts
-
 > 📊 Level ⭐ | 7.9KB | `entities/kristoffit-blog-fix-your-asserts.md`
 
 # You Must Fix Your Asserts

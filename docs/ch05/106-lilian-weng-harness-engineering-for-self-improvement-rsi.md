@@ -1,7 +1,5 @@
 # Lilian Weng Harness Engineering for Self-Improvement — RSI 从 Harness 开始
 
-## Ch05.106 Lilian Weng Harness Engineering for Self-Improvement — RSI 从 Harness 开始
-
 > 📊 Level ⭐⭐ | 5.4KB | `entities/lilian-weng-harness-engineering-self-improvement.md`
 
 # Lilian Weng Harness Engineering for Self-Improvement — RSI 从 Harness 开始

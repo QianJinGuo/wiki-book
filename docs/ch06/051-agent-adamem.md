@@ -1,7 +1,5 @@
 # 别让Agent什么都记 上交×腾讯提出 AdaMem
 
-## Ch06.051 别让Agent什么都记 上交×腾讯提出 AdaMem
-
 > 📊 Level ⭐⭐ | 0.9KB | `entities/admem-memory-policy-selective-memory-sjtu-tencent-2026.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/admem-memory-policy-selective-memory-sjtu-tencent-2026.md)

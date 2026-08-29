@@ -1,7 +1,5 @@
 # FastAPI 之父的 PydanticAI 是真的夯！
 
-## Ch01.994 FastAPI 之父的 PydanticAI 是真的夯！
-
 > 📊 Level ⭐⭐ | 6.5KB | `entities/fastapi-之父的-pydanticai-是真的夯.md`
 
 # FastAPI 之父的 PydanticAI 是真的夯！

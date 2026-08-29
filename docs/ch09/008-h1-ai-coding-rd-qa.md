@@ -1,7 +1,5 @@
 # 电商搜索h1提升ai-coding质量实践-rd-qa
 
-## Ch09.008 电商搜索h1提升ai-coding质量实践-rd-qa
-
 > 📊 Level ⭐ | 1.3KB | `entities/电商搜索h1提升ai-coding质量实践-rd-qa.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/电商搜索h1提升ai-coding质量实践-rd-qa.md)

@@ -1,7 +1,5 @@
 # CaRE: Bi-Level Routing MoE — 港大ICML 2026持续学习架构
 
-## Ch01.1609 CaRE: Bi-Level Routing MoE — 港大ICML 2026持续学习架构
-
 > 📊 Level ⭐⭐⭐⭐ | 7.5KB | `entities/care-bi-level-routing-moe-continual-learning-hku-2026.md`
 
 # CaRE: Bi-Level Routing MoE — 港大ICML 2026持续学习架构

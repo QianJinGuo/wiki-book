@@ -1,7 +1,5 @@
 # Claude Opus 4.8: The System Card
 
-## Ch01.1003 Claude Opus 4.8: The System Card
-
 > 📊 Level ⭐⭐ | 6.4KB | `entities/claude-opus-4-8-system-card-zvi.md`
 
 # Claude Opus 4.8: The System Card

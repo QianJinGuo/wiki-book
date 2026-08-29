@@ -1,7 +1,5 @@
 # Auto Research又进化了：贝叶斯联手大模型，AI自己设计关键实验
 
-## Ch01.1141 Auto Research又进化了：贝叶斯联手大模型，AI自己设计关键实验
-
 > 📊 Level ⭐⭐ | 5.4KB | `entities/auto-research-贝叶斯-大模型设计关键实验.md`
 
 # Auto Research 又进化了：贝叶斯联手大模型，AI 自己设计关键实验

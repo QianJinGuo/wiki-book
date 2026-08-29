@@ -1,7 +1,5 @@
 # Explicit vs. Implicit in the Age of Intelligences — Le secrétaire de Fernand
 
-## Ch01.688 Explicit vs. Implicit in the Age of Intelligences — Le secrétaire de Fernand
-
 > 📊 Level ⭐⭐ | 9.0KB | `entities/lesecretairedefernand-co-en-tech-explicit-vs-implicit-in-the-age-of-intelligence.md`
 
 # Explicit vs. Implicit in the Age of Intelligences — Le secretary de Fernand

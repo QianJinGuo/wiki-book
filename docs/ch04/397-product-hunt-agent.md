@@ -1,7 +1,5 @@
 # Product Hunt 日榜第一！把任何网站变成可被 Agent 复用的技能
 
-## Ch04.397 Product Hunt 日榜第一！把任何网站变成可被 Agent 复用的技能
-
 > 📊 Level ⭐⭐ | 8.7KB | `entities/browser-act-agent-skill-tool.md`
 
 # Product Hunt 日榜第一！把任何网站变成可被 Agent 复用的技能

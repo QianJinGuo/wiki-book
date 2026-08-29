@@ -1,7 +1,5 @@
 # AIOps MCP Agent
 
-## Ch07.061 AIOps MCP Agent
-
 > 📊 Level ⭐⭐ | 7.5KB | `entities/aiops-mcp-agent.md`
 
 # AIOps MCP Agent

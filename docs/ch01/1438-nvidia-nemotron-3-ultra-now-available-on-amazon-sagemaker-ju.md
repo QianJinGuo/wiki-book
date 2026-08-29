@@ -1,7 +1,5 @@
 # NVIDIA Nemotron 3 Ultra now available on Amazon SageMaker JumpStart
 
-## Ch01.1438 NVIDIA Nemotron 3 Ultra now available on Amazon SageMaker JumpStart
-
 > 📊 Level ⭐⭐ | 3.2KB | `entities/nvidia-nemotron-3-ultra-now-available-on-amazon-sagemaker-ju.md`
 
 # NVIDIA Nemotron 3 Ultra now available on Amazon SageMaker JumpStart

@@ -1,7 +1,5 @@
 # 阿里云 AgentTeams 企业级多 Agent 平台
 
-## Ch04.698 阿里云 AgentTeams 企业级多 Agent 平台
-
 > 📊 Level ⭐⭐ | 4.5KB | `entities/alibaba-cloud-agentteams-enterprise-multi-agent.md`
 
 # 阿里云 AgentTeams 企业级多 Agent 平台

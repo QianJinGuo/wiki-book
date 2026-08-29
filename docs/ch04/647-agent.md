@@ -1,7 +1,5 @@
 # 想让 Agent 在你睡觉时继续干活？先给它排好夜班
 
-## Ch04.647 想让 Agent 在你睡觉时继续干活？先给它排好夜班
-
 > 📊 Level ⭐⭐ | 5.3KB | `entities/agent-nightshift-cron-task-scheduling.md`
 
 # 想让 Agent 在你睡觉时继续干活？先给它排好夜班

@@ -1,7 +1,5 @@
 # 小米 Harness 工程落地：提示词是建议，Harness 让规则落地
 
-## Ch05.079 小米 Harness 工程落地：提示词是建议，Harness 让规则落地
-
 > 📊 Level ⭐⭐ | 8.0KB | `entities/xiaomi-harness-prompt-is-advice-rules-land-2026.md`
 
 # 小米 Harness 工程落地：提示词是建议，Harness 让规则落地

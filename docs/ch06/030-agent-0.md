@@ -1,7 +1,5 @@
 # 蚂蚁阿福医疗 Agent：从 0 到生产的工业级工程化落地
 
-## Ch06.030 蚂蚁阿福医疗 Agent：从 0 到生产的工业级工程化落地
-
 > 📊 Level ⭐⭐ | 7.1KB | `entities/ant-group-medical-agent-afu.md`
 
 # 蚂蚁阿福医疗 Agent：从 0 到生产的工业级工程化落地

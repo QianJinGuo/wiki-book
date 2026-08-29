@@ -1,7 +1,5 @@
 # Ollama 已经不是 2024 年那个了！一键配齐 Claude Code/Codex/OpenClaw
 
-## Ch01.772 Ollama 已经不是 2024 年那个了！一键配齐 Claude Code/Codex/OpenClaw
-
 > 📊 Level ⭐⭐ | 8.2KB | `entities/ollama-已经不是-2024-年那个了一键配齐-claude-codecodexopenclaw.md`
 
 # Ollama 已经不是 2024 年那个了！一键配齐 Claude Code/Codex/OpenClaw

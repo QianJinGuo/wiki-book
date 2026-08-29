@@ -1,7 +1,5 @@
 # Lambda MicroVMs vs Bedrock AgentCore：AI Agent 开发者该怎么选？
 
-## Ch11.099 Lambda MicroVMs vs Bedrock AgentCore：AI Agent 开发者该怎么选？
-
 > 📊 Level ⭐⭐ | 9.9KB | `entities/lambda-microvms-vs-bedrock-agentcore-ai-agent-comparison.md`
 
 # Lambda MicroVMs vs Bedrock AgentCore：AI Agent 开发者该怎么选？

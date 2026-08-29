@@ -1,7 +1,5 @@
 # GPT-Image-2 完全指南！附大量玩法案例，顺便开源我的生图 Skill ～
 
-## Ch01.1197 GPT-Image-2 完全指南！附大量玩法案例，顺便开源我的生图 Skill ～
-
 > 📊 Level ⭐⭐ | 5.0KB | `entities/gpt-image-2-完全指南附大量玩法案例顺便开源我的生图-skill.md`
 
 > -> [（来源：raw）]

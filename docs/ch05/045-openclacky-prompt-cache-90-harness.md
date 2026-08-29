@@ -1,7 +1,5 @@
 # OpenClacky — Prompt Cache 命中率 90% 的 Harness 工程实践
 
-## Ch05.045 OpenClacky — Prompt Cache 命中率 90% 的 Harness 工程实践
-
 > 📊 Level ⭐⭐ | 13.5KB | `entities/openclacky-harness-prompt-cache.md`
 
 ## 核心结论

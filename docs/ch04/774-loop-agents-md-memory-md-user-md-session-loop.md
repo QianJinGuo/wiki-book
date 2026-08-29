@@ -1,7 +1,5 @@
 # 意识×Loop：AGENTS.md/MEMORY.md/USER.md 三层文件驱动的跨 Session Loop 自进化
 
-## Ch04.774 意识×Loop：AGENTS.md/MEMORY.md/USER.md 三层文件驱动的跨 Session Loop 自进化
-
 > 📊 Level ⭐⭐ | 3.5KB | `entities/意识-loop跨session自进化最佳实践.md`
 
 # 意识×Loop：AGENTS.md/MEMORY.md/USER.md 三层文件驱动的跨 Session Loop 自进化

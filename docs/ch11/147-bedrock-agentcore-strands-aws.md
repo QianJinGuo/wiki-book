@@ -1,7 +1,5 @@
 # 基于Bedrock AgentCore+Strands构建企业级智能搜索平台实践 | 亚马逊AWS官方博客
 
-## Ch11.147 基于Bedrock AgentCore+Strands构建企业级智能搜索平台实践 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 7.8KB | `entities/building-enterprise-level-with-bedrock-agentcore-and-strands.md`
 
 

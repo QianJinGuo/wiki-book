@@ -1,7 +1,5 @@
 # 如何为 Agent 设计产品？
 
-## Ch01.1238 如何为 Agent 设计产品？
-
 > 📊 Level ⭐⭐ | 4.6KB | `entities/如何为-agent-设计产品.md`
 
 # 如何为 Agent 设计产品？

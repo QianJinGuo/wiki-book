@@ -1,7 +1,5 @@
 # Exploring Self-Distilled Reasoning for SFT
 
-## Ch01.818 Exploring Self-Distilled Reasoning for SFT
-
 > 📊 Level ⭐⭐ | 7.8KB | `entities/exploring-self-distilled-reasoning-for-supervised-fine-tunin.md`
 
 # Exploring Self-Distilled Reasoning for SFT

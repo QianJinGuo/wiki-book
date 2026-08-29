@@ -1,7 +1,5 @@
 # Claude's next enterprise battle is not models: it's the agent control plane
 
-## Ch01.022 Claude's next enterprise battle is not models: it's the agent control plane
-
 > 📊 Level ⭐ | 10.0KB | `entities/claudes_next_enterprise_battle_is_not_mo.md`
 
 ## 核心要点

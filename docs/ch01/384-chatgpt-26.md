@@ -1,7 +1,5 @@
 # ChatGPT 官宣 26 位未来之星：穿墙少年、街头摊贩、盲童的朋友
 
-## Ch01.384 ChatGPT 官宣 26 位未来之星：穿墙少年、街头摊贩、盲童的朋友
-
 > 📊 Level ⭐⭐ | 28.2KB | `entities/chatgpt-官宣-26-位未来之星他们是穿墙少年街头摊贩盲童的朋友.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/chatgpt-官宣-26-位未来之星他们是穿墙少年街头摊贩盲童的朋友.md)

@@ -1,7 +1,5 @@
 # 三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战
 
-## Ch05.053 三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战
-
 > 📊 Level ⭐⭐ | 11.4KB | `entities/three-tools-in-one-gstack-superpowers-openspec-engineering-ai-coding.md`
 
 ## 元信息

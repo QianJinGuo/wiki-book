@@ -1,7 +1,5 @@
 # AWS Bedrock Dynamic Document Extraction Pipeline
 
-## Ch11.038 AWS Bedrock Dynamic Document Extraction Pipeline
-
 > 📊 Level ⭐⭐ | 15.7KB | `entities/extract-data-with-on-demand-and-batch-pipelines-dynamically.md`
 
 # AWS Bedrock Dynamic Document Extraction Pipeline

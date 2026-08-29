@@ -1,7 +1,5 @@
 # 开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南
 
-## Ch03.089 开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南
-
 > 📊 Level ⭐⭐ | 10.1KB | `entities/开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南-v2.md`
 
 ## 相关实体

@@ -1,7 +1,5 @@
 # Cursor Origin：面向智能体时代的 Git Forge（并购 Graphite 后落地）
 
-## Ch04.778 Cursor Origin：面向智能体时代的 Git Forge（并购 Graphite 后落地）
-
 > 📊 Level ⭐⭐ | 3.4KB | `entities/cursor-origin-agent-github-2026.md`
 
 # Cursor Origin：面向智能体时代的 Git Forge

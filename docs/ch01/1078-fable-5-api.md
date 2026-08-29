@@ -1,7 +1,5 @@
 # 降维打击！群体智能半价打平Fable 5，同款API已上线
 
-## Ch01.1078 降维打击！群体智能半价打平Fable 5，同款API已上线
-
 > 📊 Level ⭐⭐ | 5.8KB | `entities/降维打击群体智能半价打平fable-5同款api已上线.md`
 
 # 降维打击！群体智能半价打平Fable 5，同款API已上线

@@ -1,7 +1,5 @@
 # d-OPSD —— 扩散语言模型的在线自蒸馏框架
 
-## Ch01.181 d-OPSD —— 扩散语言模型的在线自蒸馏框架
-
 > 📊 Level ⭐ | 3.0KB | `entities/d-opsd-diffusion-llm-on-policy-self-distillation.md`
 
 # d-OPSD —— 扩散语言模型的在线自蒸馏框架

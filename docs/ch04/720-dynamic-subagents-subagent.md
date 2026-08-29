@@ -1,7 +1,5 @@
 # Dynamic Subagents: 代码驱动的 Subagent 编排
 
-## Ch04.720 Dynamic Subagents: 代码驱动的 Subagent 编排
-
 > 📊 Level ⭐⭐ | 4.1KB | `entities/dynamic-subagents-code-driven-orchestration.md`
 
 # Dynamic Subagents: 代码驱动的 Subagent 编排

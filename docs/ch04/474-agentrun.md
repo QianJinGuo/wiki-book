@@ -1,7 +1,5 @@
 # 用两行代码将 AgentRun 集成到你的应用
 
-## Ch04.474 用两行代码将 AgentRun 集成到你的应用
-
 > 📊 Level ⭐⭐ | 7.9KB | `entities/aliyun-agentrun-2line-integration.md`
 
 # 用两行代码将 AgentRun 集成到你的应用

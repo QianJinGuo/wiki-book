@@ -1,7 +1,5 @@
 # Hermes 上线 /learn 模式：从任何地方提炼任何 Skill
 
-## Ch07.096 Hermes 上线 /learn 模式：从任何地方提炼任何 Skill
-
 > 📊 Level ⭐⭐ | 0.6KB | `entities/hermes-learn-mode-skill-distillation.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-learn-mode-skill-distillation.md)

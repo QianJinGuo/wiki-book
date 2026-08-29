@@ -1,7 +1,5 @@
 # 三层 Agent 架构：Skill / SubAgent / Agent Team 工程实践
 
-## Ch07.020 三层 Agent 架构：Skill / SubAgent / Agent Team 工程实践
-
 > 📊 Level ⭐⭐ | 12.7KB | `entities/baidu-netdisk-three-layer-agent-architecture.md`
 
 ## 三层职责分层

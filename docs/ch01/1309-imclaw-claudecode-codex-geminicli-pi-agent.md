@@ -1,7 +1,5 @@
 # IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群
 
-## Ch01.1309 IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群
-
 > 📊 Level ⭐⭐ | 4.0KB | `entities/imclaw通过微信飞书操控claudecodecodexgeminiclipi-agent蜂群.md`
 
 # IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群

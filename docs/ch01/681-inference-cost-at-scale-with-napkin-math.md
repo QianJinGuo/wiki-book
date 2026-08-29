@@ -1,7 +1,5 @@
 # Inference cost at scale with napkin math
 
-## Ch01.681 Inference cost at scale with napkin math
-
 > 📊 Level ⭐⭐ | 9.1KB | `entities/napkin-inference-cost-injuly-2026.md`
 
 # Inference cost at scale with napkin math

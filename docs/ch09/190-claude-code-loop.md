@@ -1,7 +1,5 @@
 # Claude Code Loop 四档控制权：自检→目标→定时→工作域
 
-## Ch09.190 Claude Code Loop 四档控制权：自检→目标→定时→工作域
-
 > 📊 Level ⭐⭐ | 3.2KB | `entities/claude-code-loop-control-rights-four-levels.md`
 
 # Claude Code Loop 四档控制权：自检→目标→定时→工作域

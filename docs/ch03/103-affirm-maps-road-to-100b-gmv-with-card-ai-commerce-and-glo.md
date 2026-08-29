@@ -1,7 +1,5 @@
 # Affirm Maps Road to $100B GMV With Card, AI Commerce and Global Expansion
 
-## Ch03.103 Affirm Maps Road to $100B GMV With Card, AI Commerce and Global Expansion
-
 > 📊 Level ⭐⭐ | 8.4KB | `entities/affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-global-expansion.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-global-expansion.md)

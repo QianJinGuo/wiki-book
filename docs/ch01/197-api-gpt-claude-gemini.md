@@ -1,7 +1,5 @@
 # 有人只用API就猜出了GPT、Claude、Gemini的参数量？社区吵翻了
 
-## Ch01.197 有人只用API就猜出了GPT、Claude、Gemini的参数量？社区吵翻了
-
 > 📊 Level ⭐ | 1.0KB | `entities/2026-05-01-有人只用API就猜出了GPT-Claude-Gemini的参数量-社区吵翻了-机器之心.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-05-01-有人只用API就猜出了GPT-Claude-Gemini的参数量-社区吵翻了-机器之心.md)

@@ -1,7 +1,5 @@
 # OpenAI Skills/Shell/Compaction：终结提示词工程的三位一体Agent原语
 
-## Ch05.028 OpenAI Skills/Shell/Compaction：终结提示词工程的三位一体Agent原语
-
 > 📊 Level ⭐⭐ | 17.0KB | `entities/openai-skills-shell-compaction-agent-primitives.md`
 
 > -> [OpenAI Skills/Shell/Compaction：终结提示词工程的三位一体Agent原语](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-skills-shell-compaction-agent-primitives.md)

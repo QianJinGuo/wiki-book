@@ -1,7 +1,5 @@
 # Latest open artifacts (#20): New orgs! New types of models! With Nemotron Super, Sarvam, Cohere Transcribe, & others
 
-## Ch01.1338 Latest open artifacts (#20): New orgs! New types of models! With Nemotron Super, Sarvam, Cohere Transcribe, & others
-
 > 📊 Level ⭐⭐ | 3.8KB | `entities/latest-open-artifacts-20-new-orgs-new-types-of-models-with-n.md`
 
 # Latest open artifacts (#20): New orgs! New types of models! With Nemotron Super, Sarvam, Cohere Transcribe, & others

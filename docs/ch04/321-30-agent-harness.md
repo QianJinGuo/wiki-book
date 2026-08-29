@@ -1,7 +1,5 @@
 # 从 30 分钟手搓 Agent，到 Harness 成为\"新后端
 
-## Ch04.321 从 30 分钟手搓 Agent，到 Harness 成为\"新后端
-
 > 📊 Level ⭐⭐ | 10.2KB | `entities/cong-30-fen-zhong-shou-gu-agent-dao-harness-cheng-wei-xin-hou-duan.md`
 
 # 从 30 分钟手搓 Agent，到 Harness 成为"新后端"

@@ -1,7 +1,5 @@
 # Spec Kit / OpenSpec / Superpowers 融合：棕地项目的三层Harness架构
 
-## Ch05.065 Spec Kit / OpenSpec / Superpowers 融合：棕地项目的三层Harness架构
-
 > 📊 Level ⭐⭐ | 9.6KB | `entities/spec-kit-openspec-superpowers-hybrid-harness.md`
 
 # Spec Kit / OpenSpec / Superpowers 融合：棕地项目的三层 Harness 架构

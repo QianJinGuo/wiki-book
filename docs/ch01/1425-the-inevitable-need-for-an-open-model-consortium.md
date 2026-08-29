@@ -1,7 +1,5 @@
 # The inevitable need for an open model consortium
 
-## Ch01.1425 The inevitable need for an open model consortium
-
 > 📊 Level ⭐⭐ | 3.2KB | `entities/the-inevitable-need-for-an-open-model-consortium.md`
 
 # The inevitable need for an open model consortium

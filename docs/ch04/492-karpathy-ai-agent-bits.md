@@ -1,7 +1,5 @@
 # Karpathy AI Agent（七）：bits 与程序员价值
 
-## Ch04.492 Karpathy AI Agent（七）：bits 与程序员价值
-
 > 📊 Level ⭐⭐ | 7.7KB | `entities/karpathy-ai-agent-7-bits-value-decline.md`
 
 # Karpathy AI Agent（七）：bits 与程序员价值

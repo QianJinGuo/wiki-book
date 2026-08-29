@@ -1,7 +1,5 @@
 # 算力风洞：GPU 集群的 AI Native 稳定性验证系统
 
-## Ch01.982 算力风洞：GPU 集群的 AI Native 稳定性验证系统
-
 > 📊 Level ⭐⭐ | 6.6KB | `entities/算力风洞-ai-native-gpu-stability-wind-tunnel.md`
 
 # 算力风洞：GPU 集群的 AI Native 稳定性验证系统

@@ -1,7 +1,5 @@
 # UltraEP：300微秒实时 MoE 专家负载均衡
 
-## Ch01.1561 UltraEP：300微秒实时 MoE 专家负载均衡
-
 > 📊 Level ⭐⭐⭐ | 5.9KB | `entities/ultaep-moe-expert-load-balancing-300us.md`
 
 # UltraEP：实时 MoE 专家负载均衡

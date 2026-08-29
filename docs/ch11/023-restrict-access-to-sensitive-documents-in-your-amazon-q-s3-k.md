@@ -1,7 +1,5 @@
 # Restrict Access to Sensitive Documents in Your Amazon Q S3 Knowledge Bases
 
-## Ch11.023 Restrict Access to Sensitive Documents in Your Amazon Q S3 Knowledge Bases
-
 > 📊 Level ⭐⭐ | 18.7KB | `entities/restrict-access-to-sensitive-documents-in-your-amazon-q-s3-knowledge-bases.md`
 
 

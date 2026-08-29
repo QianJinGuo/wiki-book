@@ -1,7 +1,5 @@
 # SWE-1.7: Frontier Intelligence at a Fraction of the Cost
 
-## Ch01.641 SWE-1.7: Frontier Intelligence at a Fraction of the Cost
-
 > 📊 Level ⭐⭐ | 9.7KB | `entities/swe-1-7.md`
 
 # SWE-1.7: Frontier Intelligence at a Fraction of the Cost

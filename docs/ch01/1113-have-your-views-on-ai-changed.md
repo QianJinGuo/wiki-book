@@ -1,7 +1,5 @@
 # Have your views on AI changed
 
-## Ch01.1113 Have your views on AI changed
-
 > 📊 Level ⭐⭐ | 5.6KB | `entities/creativeboom-ai-views-changed.md`
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/creativeboom-ai-views-changed.md)

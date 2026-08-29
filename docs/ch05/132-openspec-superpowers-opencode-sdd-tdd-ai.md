@@ -1,7 +1,5 @@
 # OpenSpec + Superpowers：用 OpenCode 搭建 SDD+TDD 双驱动 AI 编程工作流
 
-## Ch05.132 OpenSpec + Superpowers：用 OpenCode 搭建 SDD+TDD 双驱动 AI 编程工作流
-
 > 📊 Level ⭐⭐ | 1.1KB | `entities/openspec-superpowers-opencode-sdd-tdd-workflow-2026.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openspec-superpowers-opencode-sdd-tdd-workflow-2026.md)

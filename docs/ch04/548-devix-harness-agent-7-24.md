@@ -1,7 +1,5 @@
 # 阿里 Devix Harness 运维 Agent：7×24 自动化故障诊断-决策-处置闭环
 
-## Ch04.548 阿里 Devix Harness 运维 Agent：7×24 自动化故障诊断-决策-处置闭环
-
 > 📊 Level ⭐⭐ | 7.0KB | `entities/alibaba-devix-harness-ops-agent-7x24.md`
 
 # 阿里 Devix Harness 运维 Agent：7×24 自动化运维闭环

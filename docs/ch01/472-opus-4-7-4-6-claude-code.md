@@ -1,7 +1,5 @@
 # 刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践
 
-## Ch01.472 刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践
-
 > 📊 Level ⭐⭐ | 14.2KB | `entities/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践.md`
 
 [[raw/articles/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践.md]

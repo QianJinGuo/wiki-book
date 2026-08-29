@@ -1,7 +1,5 @@
 # Client-Side Load Balancing at a Million Requests Per Second
 
-## Ch11.094 Client-Side Load Balancing at a Million Requests Per Second
-
 > 📊 Level ⭐⭐ | 10.0KB | `entities/zalando-client-side-load-balancing-million-rps.md`
 
 # Client-Side Load Balancing at a Million Requests Per Second

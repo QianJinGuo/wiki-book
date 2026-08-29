@@ -1,7 +1,5 @@
 # 上下文工程 - 三种Memory方案对比
 
-## Ch06.016 上下文工程 - 三种Memory方案对比
-
 > 📊 Level ⭐⭐ | 12.4KB | `entities/context-engineering-three-memory-paradigms-comparison.md`
 
 # 上下文工程 - 三种Memory方案对比

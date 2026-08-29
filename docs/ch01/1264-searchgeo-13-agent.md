@@ -1,7 +1,5 @@
 # SearchGEO：13个大模型检索Agent可信度评测
 
-## Ch01.1264 SearchGEO：13个大模型检索Agent可信度评测
-
 > 📊 Level ⭐⭐ | 4.4KB | `entities/schmidhuber-retrieval-agent-trust-13-llm-2026.md`
 
 # SearchGEO：13个大模型检索Agent可信度评测

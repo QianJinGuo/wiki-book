@@ -1,7 +1,5 @@
 # Perplexity 内部 Skill 设计指南：四维体系与维护方法论
 
-## Ch07.018 Perplexity 内部 Skill 设计指南：四维体系与维护方法论
-
 > 📊 Level ⭐⭐ | 13.0KB | `entities/perplexity-internal-skill-design-guide.md`
 
 ## 核心框架：Skill 的四个维度

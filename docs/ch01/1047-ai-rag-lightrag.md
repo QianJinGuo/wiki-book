@@ -1,7 +1,5 @@
 # AI 答疑助手优化实践：从 RAG 到 LightRAG 的全链路升级
 
-## Ch01.1047 AI 答疑助手优化实践：从 RAG 到 LightRAG 的全链路升级
-
 > 📊 Level ⭐⭐ | 6.1KB | `entities/ai-答疑助手优化实践从-rag-到-lightrag-的全链路升级.md`
 
 # AI 答疑助手优化实践：从 RAG 到 LightRAG 的全链路升级

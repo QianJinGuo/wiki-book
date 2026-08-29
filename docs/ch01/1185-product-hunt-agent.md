@@ -1,7 +1,5 @@
 # Product Hunt 日榜第一！这个工具绝了：把任何网站变成可被 Agent 复用的技能
 
-## Ch01.1185 Product Hunt 日榜第一！这个工具绝了：把任何网站变成可被 Agent 复用的技能
-
 > 📊 Level ⭐⭐ | 5.1KB | `entities/product-hunt-日榜第一这个工具绝了把任何网站变成可被-agent-复用的技能.md`
 
 # Product Hunt 日榜第一！这个工具绝了：把任何网站变成可被 Agent 复用的技能

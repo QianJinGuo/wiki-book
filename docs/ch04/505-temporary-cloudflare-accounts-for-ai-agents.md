@@ -1,7 +1,5 @@
 # Temporary Cloudflare Accounts for AI agents
 
-## Ch04.505 Temporary Cloudflare Accounts for AI agents
-
 > 📊 Level ⭐⭐ | 7.5KB | `entities/cloudflare-temporary-accounts-ai-agents.md`
 
 # Temporary Cloudflare Accounts for AI agents

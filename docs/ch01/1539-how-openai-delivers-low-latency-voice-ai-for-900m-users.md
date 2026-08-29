@@ -1,7 +1,5 @@
 # How OpenAI Delivers Low-Latency Voice AI for 900M Users
 
-## Ch01.1539 How OpenAI Delivers Low-Latency Voice AI for 900M Users
-
 > 📊 Level ⭐⭐⭐ | 7.9KB | `entities/openai-low-latency-voice-ai-900m-users-bytebytego.md`
 
 # How OpenAI Delivers Low-Latency Voice AI for 900M Users

@@ -1,7 +1,5 @@
 # openJiuwen 算力亲和 — Agent 任务状态与推理引擎的语义通道
 
-## Ch04.556 openJiuwen 算力亲和 — Agent 任务状态与推理引擎的语义通道
-
 > 📊 Level ⭐⭐ | 6.8KB | `entities/openjiuwen-compute-affinity-kv-cache-scheduling-2026.md`
 
 # openJiuwen 算力亲和 — Agent 任务状态与推理引擎的语义通道

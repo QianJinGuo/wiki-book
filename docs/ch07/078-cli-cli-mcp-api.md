@@ -1,7 +1,5 @@
 # CLI系列④·选型CLI、MCP还是API？
 
-## Ch07.078 CLI系列④·选型CLI、MCP还是API？
-
 > 📊 Level ⭐⭐ | 5.0KB | `entities/cli-mcp-sdk-agent-tool-selection.md`
 
 # CLI系列④·选型CLI、MCP还是API？

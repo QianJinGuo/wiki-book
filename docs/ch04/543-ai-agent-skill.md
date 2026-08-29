@@ -1,7 +1,5 @@
 # 告别复杂接入流程：用 AI Agent Skill 驱动云监控可观测接入
 
-## Ch04.543 告别复杂接入流程：用 AI Agent Skill 驱动云监控可观测接入
-
 > 📊 Level ⭐⭐ | 7.0KB | `entities/aliyun-cms2-cli-skill-natural-language-observability.md`
 
 # 告别复杂接入流程：用 AI Agent Skill 驱动云监控可观测接入

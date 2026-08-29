@@ -1,7 +1,5 @@
 # openpangu-20-flash模型正式开源上线
 
-## Ch01.252 openpangu-20-flash模型正式开源上线
-
 > 📊 Level ⭐ | 0.8KB | `entities/openpangu-20-flash模型正式开源上线.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openpangu-20-flash模型正式开源上线.md)

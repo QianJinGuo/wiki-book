@@ -1,7 +1,5 @@
 # xz-utils Backdoor 2 Years On — Maintainer Trust Hijack Pattern Beyond CVE Scanners
 
-## Ch12.029 xz-utils Backdoor 2 Years On — Maintainer Trust Hijack Pattern Beyond CVE Scanners
-
 > 📊 Level ⭐⭐ | 11.3KB | `entities/xz-utils-backdoor-maintainer-trust-hijack-2-years-on.md`
 
 # xz-utils Backdoor 2 Years On — Maintainer Trust Hijack Pattern Beyond CVE Scanners

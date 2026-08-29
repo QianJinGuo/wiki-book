@@ -1,7 +1,5 @@
 # AutoCLI
 
-## Ch03.132 AutoCLI
-
 > 📊 Level ⭐⭐ | 5.0KB | `entities/autocli.md`
 
 ## Overview

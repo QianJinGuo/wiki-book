@@ -1,7 +1,5 @@
 # Tapered Language Models：锥形参数分配的免费午餐
 
-## Ch01.1558 Tapered Language Models：锥形参数分配的免费午餐
-
 > 📊 Level ⭐⭐⭐ | 6.2KB | `entities/tapered-language-models-cosine-width-redistribution-mila-2026.md`
 
 # Tapered Language Models：锥形参数分配的免费午餐

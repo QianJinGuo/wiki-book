@@ -1,7 +1,5 @@
 # Codex Discovered a Hidden HTTP/2 Bomb
 
-## Ch09.122 Codex Discovered a Hidden HTTP/2 Bomb
-
 > 📊 Level ⭐⭐ | 7.6KB | `entities/califio-codex-http2-hpack-bomb-880k-servers.md`
 
 # Codex Discovered a Hidden HTTP/2 Bomb

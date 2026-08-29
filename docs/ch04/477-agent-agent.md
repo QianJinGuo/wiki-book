@@ -1,7 +1,5 @@
 # Agent 评测漫谈 — 美团图灵 Agent 评测体系与长程框架影响
 
-## Ch04.477 Agent 评测漫谈 — 美团图灵 Agent 评测体系与长程框架影响
-
 > 📊 Level ⭐⭐ | 7.8KB | `entities/agent-evaluation-turing-meituan-2026.md`
 
 # Agent 评测漫谈 — 美团图灵 Agent 评测体系与长程框架影响

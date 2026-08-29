@@ -1,7 +1,5 @@
 # 去哪儿 AI Coding 驱动大型核心系统重构 — Harness+Loop+Task 工程化方法论
 
-## Ch05.097 去哪儿 AI Coding 驱动大型核心系统重构 — Harness+Loop+Task 工程化方法论
-
 > 📊 Level ⭐⭐ | 6.4KB | `entities/qunar-ai-coding-large-core-system-refactor-2026.md`
 
 # 去哪儿 AI Coding 驱动大型核心系统重构 — Harness+Loop+Task 工程化方法论

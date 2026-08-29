@@ -1,7 +1,5 @@
 # Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式
 
-## Ch04.091 Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式
-
 > 📊 Level ⭐⭐ | 33.4KB | `entities/anthropic-14-skill-patterns-best-practices.md`
 
 # Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式

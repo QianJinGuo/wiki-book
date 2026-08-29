@@ -1,7 +1,5 @@
 # 微软 Agent Framework 全栈指南：从 Hello Agent 到生产托管（Python）
 
-## Ch01.1054 微软 Agent Framework 全栈指南：从 Hello Agent 到生产托管（Python）
-
 > 📊 Level ⭐⭐ | 6.0KB | `entities/microsoft-agent-framework-python-full-guide-zizhi.md`
 
 Agent Framework 是微软面向 .NET / Python 的统一 Agent 开发框架，承接 Semantic Kernel 与 AutoGen 的核心能力，并新增：

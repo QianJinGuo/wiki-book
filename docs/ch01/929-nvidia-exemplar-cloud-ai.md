@@ -1,7 +1,5 @@
 # NVIDIA Exemplar Cloud: AI 训练基础设施性能差距诊断
 
-## Ch01.929 NVIDIA Exemplar Cloud: AI 训练基础设施性能差距诊断
-
 > 📊 Level ⭐⭐ | 7.0KB | `entities/nvidia-exemplar-cloud-ai-training-infra-performance-diagnostics.md`
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-exemplar-cloud-lessons-ai-infra-performance-2026-07-30.md)

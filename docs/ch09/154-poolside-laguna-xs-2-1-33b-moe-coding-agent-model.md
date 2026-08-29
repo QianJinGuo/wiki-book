@@ -1,7 +1,5 @@
 # Poolside Laguna XS 2.1: 33B MoE Coding Agent Model
 
-## Ch09.154 Poolside Laguna XS 2.1: 33B MoE Coding Agent Model
-
 > 📊 Level ⭐⭐ | 5.8KB | `entities/poolside-laguna-xs-2-1-coding-agent-model-2026.md`
 
 # Poolside Laguna XS 2.1: 33B MoE Coding Agent Model

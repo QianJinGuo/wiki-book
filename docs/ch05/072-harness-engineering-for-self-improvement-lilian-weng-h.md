@@ -1,7 +1,5 @@
 # Harness Engineering for Self-Improvement — 翁荔 Lilian Weng 系统梳理 Harness 自我提升研究全景
 
-## Ch05.072 Harness Engineering for Self-Improvement — 翁荔 Lilian Weng 系统梳理 Harness 自我提升研究全景
-
 > 📊 Level ⭐⭐ | 8.8KB | `entities/harness-engineering-self-improvement-survey-lilian-weng.md`
 
 # Harness Engineering for Self-Improvement — 翁荔系统梳理 Harness 自我提升研究全景

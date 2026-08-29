@@ -1,7 +1,5 @@
 # AI短漫剧的Netflix来了！恒星AI推出全球首个影视级AI Agent「Starfilm」，打造AI短漫剧制作的"超级梦工厂
 
-## Ch04.601 AI短漫剧的Netflix来了！恒星AI推出全球首个影视级AI Agent「Starfilm」，打造AI短漫剧制作的"超级梦工厂
-
 > 📊 Level ⭐⭐ | 6.2KB | `entities/starfilm-ai-agent-ai-short-film-platform.md`
 
 ## 核心要点

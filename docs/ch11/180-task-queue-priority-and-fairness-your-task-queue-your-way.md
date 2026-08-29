@@ -1,7 +1,5 @@
 # Task Queue Priority and Fairness Your Task Queue Your Way
 
-## Ch11.180 Task Queue Priority and Fairness Your Task Queue Your Way
-
 > 📊 Level ⭐⭐ | 7.0KB | `entities/task-queue-priority-and-fairness-your-task-queue-your-way.md`
 
 

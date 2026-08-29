@@ -1,7 +1,5 @@
 # Agent Hooks：把 Agent 工作流变成可编程的
 
-## Ch04.353 Agent Hooks：把 Agent 工作流变成可编程的
-
 > 📊 Level ⭐⭐ | 9.6KB | `entities/agent-hooks-programmable-workflow.md`
 
 # Agent Hooks：把 Agent 工作流变成可编程的

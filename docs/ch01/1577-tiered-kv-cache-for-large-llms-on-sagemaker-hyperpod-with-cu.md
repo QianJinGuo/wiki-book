@@ -1,7 +1,5 @@
 # Tiered KV Cache for Large LLMs on SageMaker HyperPod with Curvine
 
-## Ch01.1577 Tiered KV Cache for Large LLMs on SageMaker HyperPod with Curvine
-
 > 📊 Level ⭐⭐⭐ | 3.6KB | `entities/tiered-kv-cache-large-llms-sagemaker-hyperpod-curvine.md`
 
 # Tiered KV Cache for Large LLMs on SageMaker HyperPod with Curvine

@@ -1,7 +1,5 @@
 # 如何构建生产准备的AI代理：MCP、CLI与技能——适合合适的工作的工具
 
-## Ch07.077 如何构建生产准备的AI代理：MCP、CLI与技能——适合合适的工作的工具
-
 > 📊 Level ⭐⭐ | 5.2KB | `entities/production-ai-agents-mcp-cli-skills-stack-ayi.md`
 
 # 如何构建生产准备的AI代理：MCP、CLI与技能——适合合适的工作的工具

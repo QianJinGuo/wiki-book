@@ -1,7 +1,5 @@
 # Anthropic Claude Community 插件仓库劫持事件：SHA 校验如何避免供应链攻击
 
-## Ch01.504 Anthropic Claude Community 插件仓库劫持事件：SHA 校验如何避免供应链攻击
-
 > 📊 Level ⭐⭐ | 13.1KB | `entities/repo-jacking-anthropics-claude-community-plugins.md`
 
 # Anthropic Claude Community 插件仓库劫持事件：SHA 校验如何避免供应链攻击

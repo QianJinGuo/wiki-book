@@ -1,7 +1,5 @@
 # The art and science of hyperparameter optimization on Amazon Nova Forge
 
-## Ch11.278 The art and science of hyperparameter optimization on Amazon Nova Forge
-
 > 📊 Level ⭐⭐ | 3.5KB | `entities/the-art-and-science-of-hyperparameter-optimization-on-amazon-nova-forge.md`
 
 # The art and science of hyperparameter optimization on Amazon Nova Forge

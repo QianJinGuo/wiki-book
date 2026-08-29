@@ -1,7 +1,5 @@
 # Miro + Amazon Bedrock 路由 Bug 排查
 
-## Ch11.172 Miro + Amazon Bedrock 路由 Bug 排查
-
 > 📊 Level ⭐⭐ | 7.1KB | `entities/miro-amazon-bedrock-bug-routing.md`
 
 [Miro Amazon Bedrock Bug Routing](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/miro-amazon-bedrock-bug-routing.md)

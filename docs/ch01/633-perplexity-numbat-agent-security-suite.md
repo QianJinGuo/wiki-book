@@ -1,7 +1,5 @@
 # Perplexity Numbat: Agent Security Suite
 
-## Ch01.633 Perplexity Numbat: Agent Security Suite
-
 > 📊 Level ⭐⭐ | 9.8KB | `entities/perplexity-numbat-agent-security-2026-07-29.md`
 
 # Perplexity Numbat: Agent Security Suite

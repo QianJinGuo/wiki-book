@@ -1,7 +1,5 @@
 # Claude Code 工具设计复盘（官方）
 
-## Ch01.628 Claude Code 工具设计复盘（官方）
-
 > 📊 Level ⭐⭐ | 9.9KB | `entities/claude-code-tool-design-evolution-anthropic.md`
 
 [Claude Code 工具设计复盘（官方）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-tool-design-evolution-anthropic.md)

@@ -1,7 +1,5 @@
 # The Shape of the Thing
 
-## Ch01.397 The Shape of the Thing
-
 > 📊 Level ⭐⭐ | 22.5KB | `entities/the-shape-of-the-thing.md`
 
 # The Shape of the Thing

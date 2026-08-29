@@ -1,7 +1,5 @@
 # How Semgrep Cut Taint Analysis Time by 75%
 
-## Ch12.120 How Semgrep Cut Taint Analysis Time by 75%
-
 > 📊 Level ⭐⭐ | 4.1KB | `entities/how-semgrep-cut-taint-analysis-time-by-75.md`
 
 # How Semgrep Cut Taint Analysis Time by 75%

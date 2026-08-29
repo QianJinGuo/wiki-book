@@ -1,7 +1,5 @@
 # Qwen-Image-Agent: Bridging the Context Gap in Real-World Image Generation
 
-## Ch04.728 Qwen-Image-Agent: Bridging the Context Gap in Real-World Image Generation
-
 > 📊 Level ⭐⭐ | 3.9KB | `entities/abs-2606-26907.md`
 
 # Qwen-Image-Agent: Bridging the Context Gap in Real-World Image Generation

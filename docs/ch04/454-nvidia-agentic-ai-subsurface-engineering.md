@@ -1,7 +1,5 @@
 # Nvidia Agentic AI Subsurface Engineering
 
-## Ch04.454 Nvidia Agentic AI Subsurface Engineering
-
 > 📊 Level ⭐⭐ | 8.0KB | `entities/nvidia-agentic-ai-subsurface-engineering.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-agentic-ai-subsurface-engineering.md)

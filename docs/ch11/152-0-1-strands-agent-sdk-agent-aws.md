@@ -1,7 +1,5 @@
 # 从0到1:联想基于Strands Agent SDK的资源智能巡检Agent创新 | 亚马逊AWS官方博客
 
-## Ch11.152 从0到1:联想基于Strands Agent SDK的资源智能巡检Agent创新 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 8.1KB | `entities/strands-agent-sdk-resource-intelligent-inspection-agent-innovation.md`
 
 ## 概述

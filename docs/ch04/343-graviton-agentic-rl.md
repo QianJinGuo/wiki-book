@@ -1,7 +1,5 @@
 # Graviton 优化 Agentic RL 沙箱层：架构与成本优势分析
 
-## Ch04.343 Graviton 优化 Agentic RL 沙箱层：架构与成本优势分析
-
 > 📊 Level ⭐⭐ | 9.8KB | `entities/graviton-optimize-agentic-rl-sandbox-architecture-cost.md`
 
 # Graviton 优化 Agentic RL 沙箱层：架构与成本优势分析

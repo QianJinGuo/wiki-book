@@ -1,7 +1,5 @@
 # 当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客
 
-## Ch11.186 当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 7.4KB | `entities/when-ai-agents-learn-to-forget-amazon-bedrock-agentcore-memory-philosophy.md`
 
 ## 概述

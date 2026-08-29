@@ -1,7 +1,5 @@
 # Sovereign cloud is only possible if you're Chinese or American: Gartner
 
-## Ch11.223 Sovereign cloud is only possible if you're Chinese or American: Gartner
-
 > 📊 Level ⭐⭐ | 5.3KB | `entities/5237660.md`
 
 # 主权云仅中美可行：Gartner 分析师的悲观预判

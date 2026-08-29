@@ -1,7 +1,5 @@
 # How to Build an AI-Native Startup
 
-## Ch04.668 How to Build an AI-Native Startup
-
 > 📊 Level ⭐⭐ | 4.9KB | `entities/ai-native-startup-cyberfund-guide.md`
 
 # How to Build an AI-Native Startup

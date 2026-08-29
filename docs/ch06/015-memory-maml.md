@@ -1,7 +1,5 @@
 # 参数化 Memory 漫谈：从 MAML 到测试时学习的完整谱系
 
-## Ch06.015 参数化 Memory 漫谈：从 MAML 到测试时学习的完整谱系
-
 > 📊 Level ⭐⭐ | 12.7KB | `entities/parametric-memory-survey-chenzikang-alitech-2026.md`
 
 # 参数化 Memory 漫谈：从 MAML 到测试时学习的完整谱系

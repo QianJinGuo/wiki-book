@@ -1,7 +1,5 @@
 # 浪潮信息 2026 OCP — Agent 规模化基础设施
 
-## Ch04.478 浪潮信息 2026 OCP — Agent 规模化基础设施
-
 > 📊 Level ⭐⭐ | 7.8KB | `entities/langchao-ocp-agent-scale-infrastructure-2026.md`
 
 # 浪潮信息 2026 OCP — Agent 规模化基础设施

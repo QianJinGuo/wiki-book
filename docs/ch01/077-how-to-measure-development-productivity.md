@@ -1,7 +1,5 @@
 # How To Measure Development Productivity?
 
-## Ch01.077 How To Measure Development Productivity?
-
 > 📊 Level ⭐ | 7.5KB | `entities/how-dev-productivity.md`
 
 # How To Measure Development Productivity?

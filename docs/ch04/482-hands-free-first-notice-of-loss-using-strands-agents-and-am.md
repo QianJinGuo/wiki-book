@@ -1,7 +1,5 @@
 # Hands-free first notice of loss: Using Strands Agents and Amazon Bedrock AgentCore Browser Tool for intelligent claims intake
 
-## Ch04.482 Hands-free first notice of loss: Using Strands Agents and Amazon Bedrock AgentCore Browser Tool for intelligent claims intake
-
 > 📊 Level ⭐⭐ | 7.8KB | `entities/hands-free-first-notice-of-loss-using-strands-agents-and-ama.md`
 
 # Hands-free first notice of loss: Using Strands Agents and Amazon Bedrock AgentCore Browser Tool for intelligent claims intake

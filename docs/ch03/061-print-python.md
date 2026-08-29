@@ -1,7 +1,5 @@
 # 日志别再print了！深入对比Python三大日志方案
 
-## Ch03.061 日志别再print了！深入对比Python三大日志方案
-
 > 📊 Level ⭐⭐ | 19.9KB | `entities/日志别再print了深入对比python三大日志方案.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/日志别再print了深入对比python三大日志方案.md)

@@ -1,7 +1,5 @@
 # Meet Bluekit: The AI-Powered All-in-One Phishing Kit
 
-## Ch12.098 Meet Bluekit: The AI-Powered All-in-One Phishing Kit
-
 > 📊 Level ⭐⭐ | 5.7KB | `entities/bluekit.md`
 
 # Meet Bluekit: The AI-Powered All-in-One Phishing Kit

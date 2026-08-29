@@ -1,7 +1,5 @@
 # Agentic Vision: Building Visual Intelligence with Amazon Bedrock and MCP Servers
 
-## Ch11.264 Agentic Vision: Building Visual Intelligence with Amazon Bedrock and MCP Servers
-
 > 📊 Level ⭐⭐ | 4.0KB | `entities/agentic-vision-building-visual-intelligence-bedrock-mcp.md`
 
 # Agentic Vision: Building Visual Intelligence with Amazon Bedrock and MCP Servers

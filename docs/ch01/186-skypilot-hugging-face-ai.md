@@ -1,7 +1,5 @@
 # SkyPilot × Hugging Face — 零出口流量 AI 工作负载存储
 
-## Ch01.186 SkyPilot × Hugging Face — 零出口流量 AI 工作负载存储
-
 > 📊 Level ⭐ | 1.5KB | `entities/skypilot-hf-zero-egress-storage.md`
 
 # SkyPilot × Hugging Face — 零出口流量 AI 工作负载存储

@@ -1,7 +1,5 @@
 # The recent history of AI in 32 otters
 
-## Ch01.840 The recent history of AI in 32 otters
-
 > 📊 Level ⭐⭐ | 7.7KB | `entities/the-recent-history-of-ai-in-32-otters.md`
 
 # The Recent History of AI in 32 Otters

@@ -1,7 +1,5 @@
 # LangChain Deep Agents v0.7: 精简 Agent Harness
 
-## Ch04.265 LangChain Deep Agents v0.7: 精简 Agent Harness
-
 > 📊 Level ⭐⭐ | 11.6KB | `entities/langchain-deep-agents-v0-7-2026-07-29.md`
 
 # LangChain Deep Agents v0.7: 精简 Agent Harness

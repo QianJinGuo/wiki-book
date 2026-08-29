@@ -1,7 +1,5 @@
 # 0%完成率！Claude、GPT、Gemini 全灭，SWE-Bench作者新作把AI圈干沉默了
 
-## Ch01.684 0%完成率！Claude、GPT、Gemini 全灭，SWE-Bench作者新作把AI圈干沉默了
-
 > 📊 Level ⭐⭐ | 9.0KB | `entities/2026-05-07-0-完成率-Claude-GPT-Gemini-全灭-SWE-Bench作者新作-机器之心.md`
 
 # 0%完成率！Claude、GPT、Gemini 全灭，SWE-Bench作者新作把AI圈干沉默了

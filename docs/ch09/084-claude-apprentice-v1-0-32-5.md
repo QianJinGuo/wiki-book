@@ -1,7 +1,5 @@
 # claude-apprentice v1.0：32 文件设计取舍与 5 层架构工程实现
 
-## Ch09.084 claude-apprentice v1.0：32 文件设计取舍与 5 层架构工程实现
-
 > 📊 Level ⭐⭐ | 9.4KB | `entities/claude-apprentice-v1.0-5-layer-arch-32-files.md`
 
 # claude-apprentice v1.0：32 文件设计取舍与 5 层架构工程实现

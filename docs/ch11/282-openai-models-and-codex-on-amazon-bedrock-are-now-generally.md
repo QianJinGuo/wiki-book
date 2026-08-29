@@ -1,7 +1,5 @@
 # OpenAI models and Codex on Amazon Bedrock are now generally available
 
-## Ch11.282 OpenAI models and Codex on Amazon Bedrock are now generally available
-
 > 📊 Level ⭐⭐ | 3.4KB | `entities/openai-models-and-codex-on-amazon-bedrock-are-now-generally-.md`
 
 # OpenAI models and Codex on Amazon Bedrock are now generally available

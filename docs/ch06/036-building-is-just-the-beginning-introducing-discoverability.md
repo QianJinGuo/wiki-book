@@ -1,7 +1,5 @@
 # Building is just the beginning: Introducing Discoverability
 
-## Ch06.036 Building is just the beginning: Introducing Discoverability
-
 > 📊 Level ⭐⭐ | 5.3KB | `entities/lovable-discoverability-intro.md`
 
 ## 核心要点

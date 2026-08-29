@@ -1,7 +1,5 @@
 # MCP-based Interactive PDF Text Extraction from Amazon S3
 
-## Ch07.023 MCP-based Interactive PDF Text Extraction from Amazon S3
-
 > 📊 Level ⭐⭐ | 11.9KB | `entities/mcp-pdf-text-extraction-s3-interactive-aws.md`
 
 # MCP-based Interactive PDF Text Extraction from Amazon S3

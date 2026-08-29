@@ -1,7 +1,5 @@
 # 《语音操控 + 记忆觉醒：Hermes 高级功能完整指南》
 
-## Ch01.291 《语音操控 + 记忆觉醒：Hermes 高级功能完整指南》
-
 > 📊 Level ⭐ | 0.7KB | `entities/2026-05-02-语音操控-记忆觉醒-Hermes-高级功能完整指南-unknown.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-05-02-语音操控-记忆觉醒-Hermes-高级功能完整指南-unknown.md)

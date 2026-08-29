@@ -1,7 +1,5 @@
 # Atlassian Confluence Cloud 与 Amazon Quick Suite 集成
 
-## Ch11.049 Atlassian Confluence Cloud 与 Amazon Quick Suite 集成
-
 > 📊 Level ⭐⭐ | 14.0KB | `entities/integrate-atlassian-confluence-cloud-with-amazon-quick.md`
 
 ## 概述

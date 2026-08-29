@@ -1,7 +1,5 @@
 # I Sold My AI Startup Before Revenue: Here’s What Investors Missed — And Founders Shouldn’t
 
-## Ch01.156 I Sold My AI Startup Before Revenue: Here’s What Investors Missed — And Founders Shouldn’t
-
 > 📊 Level ⭐ | 4.1KB | `entities/i-sold-my-ai-startup-before-revenue-here-s-what-investors-missed-and-founders-sh.md`
 
 # I Sold My AI Startup Before Revenue: Here’s What Investors Missed — And Founders Shouldn’t

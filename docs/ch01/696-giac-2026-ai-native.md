@@ -1,7 +1,5 @@
 # GIAC 2026 圆满落幕：AI Native 进入深水区，技术组织如何重构？
 
-## Ch01.696 GIAC 2026 圆满落幕：AI Native 进入深水区，技术组织如何重构？
-
 > 📊 Level ⭐⭐ | 8.9KB | `entities/2026-06-27-GIAC-2026-圆满落幕-AI-Native-进入深水区-技术组织如何重构--高可用架构.md`
 
 # GIAC 2026 圆满落幕：AI Native 进入深水区，技术组织如何重构？

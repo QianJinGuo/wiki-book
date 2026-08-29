@@ -1,7 +1,5 @@
 # Obsidian
 
-## Ch06.028 Obsidian
-
 > 📊 Level ⭐⭐ | 7.4KB | `entities/obsidian.md`
 
 ## Overview

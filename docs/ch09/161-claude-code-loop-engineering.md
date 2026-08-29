@@ -1,7 +1,5 @@
 # Claude Code Loop Engineering 完整攻略
 
-## Ch09.161 Claude Code Loop Engineering 完整攻略
-
 > 📊 Level ⭐⭐ | 5.2KB | `entities/claude-code-loop-engineering-guide.md`
 
 # Claude Code Loop Engineering 完整攻略

@@ -1,7 +1,5 @@
 # gpu kernel
 
-## Ch01.372 gpu kernel
-
 > 📊 Level ⭐ | 0.4KB | `entities/gpu-kernel.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gpu-kernel.md)

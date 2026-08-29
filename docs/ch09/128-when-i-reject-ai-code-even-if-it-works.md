@@ -1,7 +1,5 @@
 # When I reject AI code even if it works
 
-## Ch09.128 When I reject AI code even if it works
-
 > 📊 Level ⭐⭐ | 7.3KB | `entities/when-i-reject-ai-code-even-if-it-works-vinibrasil.md`
 
 # When I reject AI code even if it works

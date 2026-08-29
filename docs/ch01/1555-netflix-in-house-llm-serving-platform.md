@@ -1,7 +1,5 @@
 # Netflix In-House LLM Serving Platform
 
-## Ch01.1555 Netflix In-House LLM Serving Platform
-
 > 📊 Level ⭐⭐⭐ | 6.4KB | `entities/in-house-llm-serving-at-netflix.md`
 
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/in-house-llm-serving-at-netflix.md)

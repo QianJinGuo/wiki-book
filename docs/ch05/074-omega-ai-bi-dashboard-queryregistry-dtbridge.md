@@ -1,7 +1,5 @@
 # 腾讯 Omega：AI BI 生成式 Dashboard 产品（QueryRegistry + DTBridge）
 
-## Ch05.074 腾讯 Omega：AI BI 生成式 Dashboard 产品（QueryRegistry + DTBridge）
-
 > 📊 Level ⭐⭐ | 8.7KB | `entities/tencent-omega-ai-bi-marmos-2026.md`
 
 # 腾讯 Omega：AI BI 生成式 Dashboard 产品（QueryRegistry + DTBridge）

@@ -1,7 +1,5 @@
 # Introducing AIMap: Security Testing For AI Agent… | Bishop Fox
 
-## Ch04.536 Introducing AIMap: Security Testing For AI Agent… | Bishop Fox
-
 > 📊 Level ⭐⭐ | 7.1KB | `entities/introducing-aimap-security-testing-for-ai-agent-bishop-fox.md`
 
 # Introducing AIMap: Security Testing For AI Agent… | Bishop Fox

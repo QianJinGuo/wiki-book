@@ -1,7 +1,5 @@
 # Habby 游戏借助 AWS DevOps Agent 实现智能运维最佳实践
 
-## Ch04.385 Habby 游戏借助 AWS DevOps Agent 实现智能运维最佳实践
-
 > 📊 Level ⭐⭐ | 9.0KB | `entities/habby-game-aws-devops-agent.md`
 
 ## 核心要点

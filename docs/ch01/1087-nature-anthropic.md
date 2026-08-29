@@ -1,7 +1,5 @@
 # Nature | Anthropic：蒸馏过程潜意识传递行为偏好
 
-## Ch01.1087 Nature | Anthropic：蒸馏过程潜意识传递行为偏好
-
 > 📊 Level ⭐⭐ | 5.8KB | `entities/anthopic-distillation-behavioural-traits-nature.md`
 
 # Nature | Anthropic：蒸馏过程潜意识传递行为偏好

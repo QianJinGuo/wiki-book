@@ -1,7 +1,5 @@
 # Anthropic Agent Platform 进化：三位高管深度对谈
 
-## Ch04.707 Anthropic Agent Platform 进化：三位高管深度对谈
-
 > 📊 Level ⭐⭐ | 4.4KB | `entities/anthropic-agent-platform-evolution-three-executives.md`
 
 # Anthropic Agent Platform 进化：三位高管深度对谈

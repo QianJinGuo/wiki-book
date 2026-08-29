@@ -1,7 +1,5 @@
 # Some ideas for what comes next, May 2026 (Interconnects)
 
-## Ch01.1633 Some ideas for what comes next, May 2026 (Interconnects)
-
 > 📊 Level ⭐⭐⭐⭐⭐ | 8.8KB | `entities/some-ideas-for-what-comes-next-may-2026.md`
 
 # Some ideas for what comes next, May 2026 (Interconnects)

@@ -1,7 +1,5 @@
 # markupextension-com
 
-## Ch01.371 markupextension-com
-
 > 📊 Level ⭐ | 0.4KB | `entities/markupextension-com.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/markupextension-com.md)

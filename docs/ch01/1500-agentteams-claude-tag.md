@@ -1,7 +1,5 @@
 # AgentTeams 和 Claude Tag 都进入群聊模式，是新范式还是新叙事？
 
-## Ch01.1500 AgentTeams 和 Claude Tag 都进入群聊模式，是新范式还是新叙事？
-
 > 📊 Level ⭐⭐⭐ | 11.1KB | `entities/agentteams-和-claude-tag-都进入群聊模式是新范式还是新叙事.md`
 
 # AgentTeams 和 Claude Tag 都进入群聊模式，是新范式还是新叙事？

@@ -1,7 +1,5 @@
 # Agent Harness Skill 系统实战指南 — Reference/Action 类型、动态注入与 frontmatter 全解
 
-## Ch05.099 Agent Harness Skill 系统实战指南 — Reference/Action 类型、动态注入与 frontmatter 全解
-
 > 📊 Level ⭐⭐ | 6.2KB | `entities/agent-harness-skill-system-practical-guide.md`
 
 # Agent Harness Skill 系统实战指南 — Reference/Action 类型、动态注入与 frontmatter 全解

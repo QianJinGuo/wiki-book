@@ -1,7 +1,5 @@
 # What happened after 2,000 people tried to hack my AI assistant — Fernando Irarrázaval
 
-## Ch04.669 What happened after 2,000 people tried to hack my AI assistant — Fernando Irarrázaval
-
 > 📊 Level ⭐⭐ | 4.9KB | `entities/what-happened-after-2-000-people-tried-to-hack-my-ai-assista.md`
 
 # What happened after 2,000 people tried to hack my AI assistant — Fernando Irarrázaval

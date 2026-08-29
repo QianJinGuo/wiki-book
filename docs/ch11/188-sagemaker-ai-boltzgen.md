@@ -1,7 +1,5 @@
 # 在 SageMaker AI 上使用 BoltzGen 加速蛋白质设计
 
-## Ch11.188 在 SageMaker AI 上使用 BoltzGen 加速蛋白质设计
-
 > 📊 Level ⭐⭐ | 6.8KB | `entities/boltzgen-protein-design-amazon-sagemaker-ai.md`
 
 # 在 SageMaker AI 上使用 BoltzGen 加速蛋白质设计

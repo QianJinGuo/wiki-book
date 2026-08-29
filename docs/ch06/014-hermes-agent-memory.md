@@ -1,7 +1,5 @@
 # Hermes Agent 爱马仕的三级 memory，到底在记什么？
 
-## Ch06.014 Hermes Agent 爱马仕的三级 memory，到底在记什么？
-
 > 📊 Level ⭐⭐ | 13.5KB | `entities/hermes-agent-three-layer-memory-architecture-one.md`
 
 [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-three-layer-memory-architecture-one.md)

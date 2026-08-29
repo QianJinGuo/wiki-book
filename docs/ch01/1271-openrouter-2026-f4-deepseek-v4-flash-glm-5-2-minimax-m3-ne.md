@@ -1,7 +1,5 @@
 # OpenRouter 2026 开源 F4：DeepSeek V4 Flash、GLM 5.2、MiniMax M3、Nemotron 3 Ultra 全景分析
 
-## Ch01.1271 OpenRouter 2026 开源 F4：DeepSeek V4 Flash、GLM 5.2、MiniMax M3、Nemotron 3 Ultra 全景分析
-
 > 📊 Level ⭐⭐ | 4.3KB | `entities/openrouter-f4-open-source-models-analysis-2026.md`
 
 # OpenRouter 2026 开源 F4：DeepSeek V4 Flash、GLM 5.2、MiniMax M3、Nemotron 3 Ultra 全景分析

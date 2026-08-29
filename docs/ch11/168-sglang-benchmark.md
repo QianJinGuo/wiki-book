@@ -1,7 +1,5 @@
 # 基于SGLang的大模型推理部署实践——Benchmark方法论、方案选型与调优
 
-## Ch11.168 基于SGLang的大模型推理部署实践——Benchmark方法论、方案选型与调优
-
 > 📊 Level ⭐⭐ | 7.8KB | `entities/sglang-inference-deployment-practice-benchmark-tuning.md`
 
 # 基于SGLang的大模型推理部署实践——Benchmark方法论、方案选型与调优

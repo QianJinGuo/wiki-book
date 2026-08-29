@@ -1,7 +1,5 @@
 # 强化学习的进化：从PPO到MaxRL，LLM推理训练的算法演进史
 
-## Ch01.1319 强化学习的进化：从PPO到MaxRL，LLM推理训练的算法演进史
-
 > 📊 Level ⭐⭐ | 4.0KB | `entities/强化学习的进化从ppo到maxrlllm推理训练的算法演进史.md`
 
 # 强化学习的进化：从PPO到MaxRL，LLM推理训练的算法演进史

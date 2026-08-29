@@ -1,7 +1,5 @@
 # Anthropic Claude 托管 Agent 平台发布
 
-## Ch04.509 Anthropic Claude 托管 Agent 平台发布
-
 > 📊 Level ⭐⭐ | 7.5KB | `entities/anthropic-claude-managed-agents-platform-launch.md`
 
 ## 深度分析

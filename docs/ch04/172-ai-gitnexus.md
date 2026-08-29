@@ -1,7 +1,5 @@
 # 打造 AI 智能体专属的代码知识库：GitNexus 完整上手攻略
 
-## Ch04.172 打造 AI 智能体专属的代码知识库：GitNexus 完整上手攻略
-
 > 📊 Level ⭐⭐ | 15.5KB | `entities/打造-ai-智能体专属的代码知识库gitnexus-完整上手攻略.md`
 
 # 打造 AI 智能体专属的代码知识库：GitNexus 完整上手攻略

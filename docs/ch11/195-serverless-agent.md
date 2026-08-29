@@ -1,7 +1,5 @@
 # 异步调用模式：Serverless 流水线中调用 Agent（避免空闲计算成本）
 
-## Ch11.195 异步调用模式：Serverless 流水线中调用 Agent（避免空闲计算成本）
-
 > 📊 Level ⭐⭐ | 7.2KB | `entities/asynchronous-agent-invocation-patterns-serverless-pipelines.md`
 
 # 异步调用模式：Serverless 流水线中调用 Agent（避免空闲计算成本）

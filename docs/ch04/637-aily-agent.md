@@ -1,7 +1,5 @@
 # 飞书aily：企业级Agent智能伙伴
 
-## Ch04.637 飞书aily：企业级Agent智能伙伴
-
 > 📊 Level ⭐⭐ | 5.5KB | `entities/feishu-aily-agent-lobster.md`
 
 # 飞书aily：企业级Agent智能伙伴

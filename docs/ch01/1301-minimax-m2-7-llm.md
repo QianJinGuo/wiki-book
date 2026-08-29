@@ -1,7 +1,5 @@
 # MiniMax M2.7 — 自我进化LLM
 
-## Ch01.1301 MiniMax M2.7 — 自我进化LLM
-
 > 📊 Level ⭐⭐ | 4.1KB | `entities/minimax-m2-7.md`
 
 # MiniMax M2.7

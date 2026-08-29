@@ -1,7 +1,5 @@
 # Memory Prices - Stanford DAM Interactive Dataset
 
-## Ch01.1145 Memory Prices - Stanford DAM Interactive Dataset
-
 > 📊 Level ⭐⭐ | 5.4KB | `entities/memory-prices-stanford.md`
 
 # Memory Prices - Stanford DAM Interactive Dataset

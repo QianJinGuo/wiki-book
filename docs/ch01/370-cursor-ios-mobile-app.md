@@ -1,7 +1,5 @@
 # cursor ios mobile app
 
-## Ch01.370 cursor ios mobile app
-
 > 📊 Level ⭐ | 0.4KB | `entities/cursor-ios-mobile-app.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cursor-ios-mobile-app.md)

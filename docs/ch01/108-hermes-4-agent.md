@@ -1,7 +1,5 @@
 # 我给Hermes配了4个Agent，真正有用的是这些事
 
-## Ch01.108 我给Hermes配了4个Agent，真正有用的是这些事
-
 > 📊 Level ⭐ | 6.6KB | `entities/我给hermes配了4个agent真正有用的是这些事.md`
 
 ## 摘要

@@ -1,7 +1,5 @@
 # OpenAI 发布 GPT-Live：实时语音的前台/后台分解架构
 
-## Ch01.1526 OpenAI 发布 GPT-Live：实时语音的前台/后台分解架构
-
 > 📊 Level ⭐⭐⭐ | 8.7KB | `entities/openai-gpt-live-real-time-voice-frontend-backend-delegation.md`
 
 # OpenAI 发布 GPT-Live：实时语音的前台/后台分解架构

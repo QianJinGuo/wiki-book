@@ -1,7 +1,5 @@
 # ML Agent Predict-Before-Execute — ACL 2026 SAC Highlight (浙大×蚂蚁)
 
-## Ch04.583 ML Agent Predict-Before-Execute — ACL 2026 SAC Highlight (浙大×蚂蚁)
-
 > 📊 Level ⭐⭐ | 6.4KB | `entities/ml-agent-predict-before-execute-acl-2026-zju-ant.md`
 
 # ML Agent Predict-Before-Execute — ACL 2026 SAC Highlight (浙大×蚂蚁)

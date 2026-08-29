@@ -1,7 +1,5 @@
 # AI 内容创作开始进入画布 Agent 时代
 
-## Ch04.592 AI 内容创作开始进入画布 Agent 时代
-
 > 📊 Level ⭐⭐ | 6.3KB | `entities/ai-内容创作开始进入画布-agent时代.md`
 
 ## 核心要点

@@ -1,7 +1,5 @@
 # The best argument I’ve heard for why AI won't take your job
 
-## Ch01.801 The best argument I’ve heard for why AI won't take your job
-
 > 📊 Level ⭐⭐ | 8.0KB | `entities/platformer-ai-job-loss-levie.md`
 
 # The best argument I’ve heard for why AI won't take your job

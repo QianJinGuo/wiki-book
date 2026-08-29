@@ -1,7 +1,5 @@
 # Scammers Send Physical Phishing Letters to Steal Ledger Wallet Seed Phrases
 
-## Ch12.089 Scammers Send Physical Phishing Letters to Steal Ledger Wallet Seed Phrases
-
 > 📊 Level ⭐⭐ | 5.6KB | `entities/Scammers-Send-Physical-Phishing-Letters-to-Steal-Ledger-Wall.md`
 
 

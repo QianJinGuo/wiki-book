@@ -1,7 +1,5 @@
 # Book a Demo | See PlayerZero in Action
 
-## Ch03.044 Book a Demo | See PlayerZero in Action
-
 > 📊 Level ⭐ | 5.1KB | `entities/playerzero-request-demo.md`
 
 > -> [Book a Demo | See PlayerZero in Action](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/playerzero-request-demo.md)

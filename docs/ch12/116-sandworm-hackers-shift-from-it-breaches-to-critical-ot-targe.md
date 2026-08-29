@@ -1,7 +1,5 @@
 # Sandworm Hackers Shift From IT Breaches to Critical OT Targets
 
-## Ch12.116 Sandworm Hackers Shift From IT Breaches to Critical OT Targets
-
 > 📊 Level ⭐⭐ | 4.0KB | `entities/sandworm-hackers-shift-it-breaches-ot-gbhackers.md`
 
 ## 核心要点

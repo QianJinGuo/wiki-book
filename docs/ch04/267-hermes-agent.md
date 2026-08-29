@@ -1,7 +1,5 @@
 # Hermes Agent 九模块架构解析
 
-## Ch04.267 Hermes Agent 九模块架构解析
-
 > 📊 Level ⭐⭐ | 11.5KB | `entities/hermes-9-module-architecture-winty.md`
 
 ## 9 大模块

@@ -1,7 +1,5 @@
 # LLMjacking: what these attacks are, and how to protect AI servers
 
-## Ch01.484 LLMjacking: what these attacks are, and how to protect AI servers
-
 > 📊 Level ⭐⭐ | 13.7KB | `entities/llm-raiders-private-ai-server.md`
 
 # LLMjacking: what these attacks are, and how to protect AI servers

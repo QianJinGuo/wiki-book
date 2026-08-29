@@ -1,7 +1,5 @@
 # DiScoFormer — 跨分布密度和分数估计的统一 Transformer
 
-## Ch01.1530 DiScoFormer — 跨分布密度和分数估计的统一 Transformer
-
 > 📊 Level ⭐⭐⭐ | 8.4KB | `entities/discoformer-density-score-transformer-allen-ai.md`
 
 # DiScoFormer — 跨分布密度和分数估计的统一 Transformer

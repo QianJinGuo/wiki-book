@@ -1,7 +1,5 @@
 # Databricks 收购 Panther：AI 驱动的 Agentic SOC 安全运营
 
-## Ch04.534 Databricks 收购 Panther：AI 驱动的 Agentic SOC 安全运营
-
 > 📊 Level ⭐⭐ | 7.1KB | `entities/databricks-panther-ai-threat-detection.md`
 
 # Databricks 收购 Panther：AI 驱动的 Agentic SOC 安全运营

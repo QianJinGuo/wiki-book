@@ -1,7 +1,5 @@
 # NVIDIA Nemotron 3：Agent / RAG / 语音安全
 
-## Ch04.108 NVIDIA Nemotron 3：Agent / RAG / 语音安全
-
 > 📊 Level ⭐⭐ | 24.5KB | `entities/nvidia-nemotron-3-agents-rag-voice-safety.md`
 
 # Building NVIDIA Nemotron 3 Agents for Reasoning, Multimodal RAG, Voice, and Safety | NVIDIA Technical Blog

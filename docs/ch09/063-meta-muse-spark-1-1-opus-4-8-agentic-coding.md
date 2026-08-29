@@ -1,7 +1,5 @@
 # Meta Muse Spark 1.1 — 匹敌 Opus 4.8 的 Agentic/Coding 模型
 
-## Ch09.063 Meta Muse Spark 1.1 — 匹敌 Opus 4.8 的 Agentic/Coding 模型
-
 > 📊 Level ⭐⭐ | 11.7KB | `entities/meta-muse-spark-11-agentic-coding-model-2026.md`
 
 # Meta Muse Spark 1.1 — 匹敌 Opus 4.8 的 Agentic/Coding 模型

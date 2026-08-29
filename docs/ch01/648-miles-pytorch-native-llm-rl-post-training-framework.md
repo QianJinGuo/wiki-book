@@ -1,7 +1,5 @@
 # Miles: PyTorch-Native LLM RL Post-Training Framework
 
-## Ch01.648 Miles: PyTorch-Native LLM RL Post-Training Framework
-
 > 📊 Level ⭐⭐ | 9.6KB | `entities/pytorch-miles-llm-rl-post-training.md`
 
 # Miles: PyTorch-Native LLM RL Post-Training Framework

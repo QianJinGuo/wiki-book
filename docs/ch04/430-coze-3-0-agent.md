@@ -1,7 +1,5 @@
 # Coze 3.0 本地 Agent 项目编排
 
-## Ch04.430 Coze 3.0 本地 Agent 项目编排
-
 > 📊 Level ⭐⭐ | 8.4KB | `entities/coze-3-0-local-agent-project-orchestration.md`
 
 # Coze 3.0 本地 Agent 项目编排

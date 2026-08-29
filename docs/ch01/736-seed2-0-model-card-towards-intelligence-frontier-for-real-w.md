@@ -1,7 +1,5 @@
 # Seed2.0 Model Card: Towards Intelligence Frontier for Real-World Complexity
 
-## Ch01.736 Seed2.0 Model Card: Towards Intelligence Frontier for Real-World Complexity
-
 > 📊 Level ⭐⭐ | 8.5KB | `entities/seed2-0-model-card-bytedance-seed-2026.md`
 
 # Seed2.0 Model Card: Towards Intelligence Frontier for Real-World Complexity

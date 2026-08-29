@@ -1,7 +1,5 @@
 # Nearly every enterprise is investing in AI, but only 5% say their data is ready
 
-## Ch01.158 Nearly every enterprise is investing in AI, but only 5% say their data is ready
-
 > 📊 Level ⭐ | 4.0KB | `entities/www.cio-4170978-nearly-every-enterprise-is-investing-in-ai-but-only-5-say-their-.md`
 
 ## 深度分析

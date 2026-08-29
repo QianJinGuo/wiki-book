@@ -1,7 +1,5 @@
 # Browser Harness Github
 
-## Ch05.109 Browser Harness Github
-
 > 📊 Level ⭐⭐ | 5.2KB | `entities/browser-harness-github.md`
 
 # Browser Harness — 自愈型浏览器 Agent 框架

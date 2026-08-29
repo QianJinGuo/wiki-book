@@ -1,7 +1,5 @@
 # FastAPI 生产级认证与限流实战
 
-## Ch11.226 FastAPI 生产级认证与限流实战
-
 > 📊 Level ⭐⭐ | 6.0KB | `entities/fastapi-auth-rate-limit-zero-downtime.md`
 
 ## 核心洞察

@@ -1,7 +1,5 @@
 # 开启Harness Engineering探索之旅
 
-## Ch05.082 开启Harness Engineering探索之旅
-
 > 📊 Level ⭐⭐ | 7.6KB | `entities/harness-engineering-exploration-journey-tencent.md`
 
 > 原文归档：[原文归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-exploration-journey-tencent-2026-06-29.md)

@@ -1,7 +1,5 @@
 # 翁荔再写万字长文：AI自我改进，先从Harness开始
 
-## Ch05.075 翁荔再写万字长文：AI自我改进，先从Harness开始
-
 > 📊 Level ⭐⭐ | 8.7KB | `entities/翁荔再写万字长文ai自我改进先从harness开始.md`
 
 # 翁荔再写万字长文：AI自我改进，先从Harness开始

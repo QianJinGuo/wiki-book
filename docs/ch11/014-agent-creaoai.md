@@ -1,7 +1,5 @@
 # 云端 Agent 基础设施两条硬经验：CreaoAI 联合创始人的状态/代码解耦 + 凭据隔离
 
-## Ch11.014 云端 Agent 基础设施两条硬经验：CreaoAI 联合创始人的状态/代码解耦 + 凭据隔离
-
 > 📊 Level ⭐⭐ | 26.8KB | `entities/cloud-agent-infrastructure-creaoai-state-code-credential-isolation-20260606.md`
 
 

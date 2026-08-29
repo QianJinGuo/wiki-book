@@ -1,7 +1,5 @@
 # Anthropic Claude Managed Agents 平台正式发布
 
-## Ch01.396 Anthropic Claude Managed Agents 平台正式发布
-
 > 📊 Level ⭐⭐ | 23.1KB | `entities/anthropic-claude-managed-agents-platform-2026.md`
 
 ## 概述

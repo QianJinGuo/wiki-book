@@ -1,7 +1,5 @@
 # Sandboxing an AI Agent
 
-## Ch04.455 Sandboxing an AI Agent
-
 > 📊 Level ⭐⭐ | 8.0KB | `entities/sandboxing-an-ai-agent.md`
 
 # Sandboxing an AI Agent

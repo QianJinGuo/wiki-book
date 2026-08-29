@@ -1,7 +1,5 @@
 # APPO (Agentic Procedural Policy Optimization)：阿里高德 AMAP-ML 把 Agent RL 信用分配细化到每个决策点
 
-## Ch04.822 APPO (Agentic Procedural Policy Optimization)：阿里高德 AMAP-ML 把 Agent RL 信用分配细化到每个决策点
-
 > 📊 Level ⭐⭐⭐ | 16.5KB | `entities/appo-agentic-procedural-policy-optimization-amap-ml-2026.md`
 
 # APPO：阿里高德 AMAP-ML 把 Agent RL 信用分配细化到每个决策点

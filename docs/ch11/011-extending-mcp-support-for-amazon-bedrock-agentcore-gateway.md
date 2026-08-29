@@ -1,7 +1,5 @@
 # Extending MCP support for Amazon Bedrock AgentCore Gateway
 
-## Ch11.011 Extending MCP support for Amazon Bedrock AgentCore Gateway
-
 > 📊 Level ⭐⭐ | 32.1KB | `entities/amazon-bedrock-agentcore-gateway-mcp-extension.md`
 
 # Extending MCP support for Amazon Bedrock AgentCore Gateway

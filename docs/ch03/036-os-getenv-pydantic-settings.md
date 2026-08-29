@@ -1,7 +1,5 @@
 # 还在手写 os.getenv？pydantic-settings 让你配置管理效率翻倍
 
-## Ch03.036 还在手写 os.getenv？pydantic-settings 让你配置管理效率翻倍
-
 > 📊 Level ⭐ | 6.1KB | `entities/还在手写-osgetenvpydantic-settings-让你配置管理效率翻倍.md`
 
 # 还在手写 os.getenv？pydantic-settings 让你配置管理效率翻倍

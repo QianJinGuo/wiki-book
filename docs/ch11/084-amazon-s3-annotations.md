@@ -1,7 +1,5 @@
 # Amazon S3 Annotations：对象级丰富可查询元数据
 
-## Ch11.084 Amazon S3 Annotations：对象级丰富可查询元数据
-
 > 📊 Level ⭐⭐ | 10.4KB | `entities/amazon-s3-annotations-queryable-context.md`
 
 # Amazon S3 Annotations：对象级丰富可查询元数据

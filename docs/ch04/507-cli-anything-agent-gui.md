@@ -1,7 +1,5 @@
 # CLI-Anything：让 Agent 自主驱动任意 GUI 软件
 
-## Ch04.507 CLI-Anything：让 Agent 自主驱动任意 GUI 软件
-
 > 📊 Level ⭐⭐ | 7.5KB | `entities/cli-anything-wechat-demo-conglin.md`
 
 # CLI-Anything：让 Agent 自主驱动任意 GUI 软件

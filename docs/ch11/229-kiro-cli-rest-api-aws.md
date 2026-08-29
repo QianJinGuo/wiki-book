@@ -1,7 +1,5 @@
 # 将 Kiro CLI 封装为 REST API：双通道架构实践 | 亚马逊AWS官方博客
 
-## Ch11.229 将 Kiro CLI 封装为 REST API：双通道架构实践 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 5.1KB | `entities/kiro-cli-rest-api-architecture-practice.md`
 
 

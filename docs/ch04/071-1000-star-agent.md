@@ -1,7 +1,5 @@
 # 一周多狂揽1000+Star！金融Agent开始进入真实工作流
 
-## Ch04.071 一周多狂揽1000+Star！金融Agent开始进入真实工作流
-
 > 📊 Level ⭐ | 0.7KB | `entities/dojoagents-financial-agent-alphadojo-2026.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/dojoagents-financial-agent-alphadojo-2026.md)

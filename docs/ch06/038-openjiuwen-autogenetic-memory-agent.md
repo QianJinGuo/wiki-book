@@ -1,7 +1,5 @@
 # OpenJiuwen AutoGenetic Memory — 华为开源自主生长Agent记忆引擎
 
-## Ch06.038 OpenJiuwen AutoGenetic Memory — 华为开源自主生长Agent记忆引擎
-
 > 📊 Level ⭐⭐ | 4.6KB | `entities/openjiuwen-autogenetic-memory-agent-2026-07-02.md`
 
 # OpenJiuwen AutoGenetic Memory — 华为开源自主生长Agent记忆引擎

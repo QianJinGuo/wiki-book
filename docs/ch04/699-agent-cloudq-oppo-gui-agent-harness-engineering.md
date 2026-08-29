@@ -1,7 +1,5 @@
 # Agent 从演示到生产：腾讯云 CloudQ 与 OPPO GUI Agent 对话 Harness Engineering
 
-## Ch04.699 Agent 从演示到生产：腾讯云 CloudQ 与 OPPO GUI Agent 对话 Harness Engineering
-
 > 📊 Level ⭐⭐ | 4.4KB | `entities/agent-从演示到生产腾讯云-cloudq-与-oppo-gui-agent-对话-harness-engineering.md`
 
 # Agent 从演示到生产：腾讯云 CloudQ 与 OPPO GUI Agent 对话 Harness Engineering

@@ -1,7 +1,5 @@
 # Agent Memory 模块化框架与评测：Memory in the LLM Era 4 模块 + 10 方案对比 + 新方法 F1 38.79 + 4 条工程原则
 
-## Ch01.455 Agent Memory 模块化框架与评测：Memory in the LLM Era 4 模块 + 10 方案对比 + 新方法 F1 38.79 + 4 条工程原则
-
 > 📊 Level ⭐⭐ | 15.0KB | `entities/agent-memory-modular-framework.md`
 
 ## 核心命题

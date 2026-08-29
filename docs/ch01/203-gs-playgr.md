@@ -1,7 +1,5 @@
 # 万帧照片级仿真 打通视觉机器人学习的感知与物理鸿沟 国产仿真器GS Playgr 机器之心
 
-## Ch01.203 万帧照片级仿真 打通视觉机器人学习的感知与物理鸿沟 国产仿真器GS Playgr 机器之心
-
 > 📊 Level ⭐ | 1.0KB | `entities/2026-05-07-万帧照片级仿真-打通视觉机器人学习的感知与物理鸿沟-国产仿真器GS-Playgr-机器之心.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-05-07-万帧照片级仿真-打通视觉机器人学习的感知与物理鸿沟-国产仿真器GS-Playgr-机器之心.md)

@@ -1,7 +1,5 @@
 # Agentic Incident Triage Assistant with Amazon Quick, New Relic MCP Server, and Asana
 
-## Ch04.324 Agentic Incident Triage Assistant with Amazon Quick, New Relic MCP Server, and Asana
-
 > 📊 Level ⭐⭐ | 10.1KB | `entities/agentic-incident-triage-assistant-amazon-quick-new-relic-asana.md`
 
 # Agentic Incident Triage Assistant with Amazon Quick, New Relic MCP Server, and Asana

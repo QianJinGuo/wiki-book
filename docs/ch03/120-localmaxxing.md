@@ -1,7 +1,5 @@
 # Localmaxxing：局部最优陷阱
 
-## Ch03.120 Localmaxxing：局部最优陷阱
-
 > 📊 Level ⭐⭐ | 6.2KB | `entities/localmaxxing.md`
 
 ## Summary

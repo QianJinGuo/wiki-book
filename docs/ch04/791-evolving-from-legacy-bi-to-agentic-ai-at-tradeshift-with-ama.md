@@ -1,7 +1,5 @@
 # Evolving from legacy BI to agentic AI at Tradeshift with Amazon Quick
 
-## Ch04.791 Evolving from legacy BI to agentic AI at Tradeshift with Amazon Quick
-
 > 📊 Level ⭐⭐ | 3.1KB | `entities/evolving-from-legacy-bi-to-agentic-ai-at-tradeshift.md`
 
 # Evolving from legacy BI to agentic AI at Tradeshift with Amazon Quick

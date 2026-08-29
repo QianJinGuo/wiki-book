@@ -1,7 +1,5 @@
 # AI Native 时代研发组织何去何从
 
-## Ch05.022 AI Native 时代研发组织何去何从
-
 > 📊 Level ⭐⭐ | 19.6KB | `entities/ai-native-rd-org-design.md`
 
 ## 核心洞察

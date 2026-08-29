@@ -1,7 +1,5 @@
 # 基于 Amazon ECS Fargate 自建 Keycloak 作为 AWS IAM Identity Center 外部 IdP，为 Kiro 提供企业级 SSO 登录
 
-## Ch11.133 基于 Amazon ECS Fargate 自建 Keycloak 作为 AWS IAM Identity Center 外部 IdP，为 Kiro 提供企业级 SSO 登录
-
 > 📊 Level ⭐⭐ | 8.3KB | `entities/基于-amazon-ecs-fargate-自建-keycloak-作为-aws-iam-identity-center.md`
 
 

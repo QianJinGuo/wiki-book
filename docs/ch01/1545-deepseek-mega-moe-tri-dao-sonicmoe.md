@@ -1,7 +1,5 @@
 # DeepSeek做大→Mega MoE，Tri Dao团队加快→SonicMoE
 
-## Ch01.1545 DeepSeek做大→Mega MoE，Tri Dao团队加快→SonicMoE
-
 > 📊 Level ⭐⭐⭐ | 7.4KB | `entities/deepseek做大mega-moetri-dao团队加快sonicmoe.md`
 
 # DeepSeek做大→Mega MoE，Tri Dao团队加快→SonicMoE

@@ -1,7 +1,5 @@
 # Navigating EU AI Act Requirements for LLM Fine-Tuning
 
-## Ch01.557 Navigating EU AI Act Requirements for LLM Fine-Tuning
-
 > 📊 Level ⭐⭐ | 11.3KB | `entities/navigating-eu-ai-act-requirements-for-llm-fine-tuning-on-amazon-sagemaker-ai.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/navigating-eu-ai-act-requirements-for-llm-fine-tuning-on-amazon-sagemaker-ai.md)

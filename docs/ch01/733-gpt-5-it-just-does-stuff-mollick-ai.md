@@ -1,7 +1,5 @@
 # GPT-5：It Just Does Stuff — Mollick 的主动式 AI 原语
 
-## Ch01.733 GPT-5：It Just Does Stuff — Mollick 的主动式 AI 原语
-
 > 📊 Level ⭐⭐ | 8.5KB | `entities/gpt5-just-does-stuff-mollick.md`
 
 # GPT-5：It Just Does Stuff — Mollick 的主动式 AI 原语

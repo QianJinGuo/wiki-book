@@ -1,7 +1,5 @@
 # Browser Use Firecracker：云端浏览器成本降 3 倍的 microVM 架构
 
-## Ch11.196 Browser Use Firecracker：云端浏览器成本降 3 倍的 microVM 架构
-
 > 📊 Level ⭐⭐ | 6.6KB | `entities/browser-use-firecracker-cloud-browsers-3x-cheaper.md`
 
 # Browser Use Firecracker：云端浏览器成本降 3 倍的 microVM 架构

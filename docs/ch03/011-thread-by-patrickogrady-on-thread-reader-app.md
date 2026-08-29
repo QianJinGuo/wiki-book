@@ -1,7 +1,5 @@
 # Thread by @_patrickogrady on Thread Reader App
 
-## Ch03.011 Thread by @_patrickogrady on Thread Reader App
-
 > 📊 Level ⭐ | 9.9KB | `entities/thread-patrickogrady.md`
 
 ## 核心内容

@@ -1,7 +1,5 @@
 # 百度百舸 AI Infra 助力具身智能模型加速迭代
 
-## Ch01.965 百度百舸 AI Infra 助力具身智能模型加速迭代
-
 > 📊 Level ⭐⭐ | 6.7KB | `entities/百度百舸-ai-infra-助力具身智能模型加速迭代.md`
 
 # 百度百舸 AI Infra 助力具身智能模型加速迭代

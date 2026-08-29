@@ -1,7 +1,5 @@
 # 驾驭AI Coding：面向团队的Harness Engineering落地规范
 
-## Ch05.124 驾驭AI Coding：面向团队的Harness Engineering落地规范
-
 > 📊 Level ⭐⭐ | 3.7KB | `entities/tencent-harness-engineering-team-specification-2026.md`
 
 # 驾驭AI Coding：面向团队的Harness Engineering落地规范

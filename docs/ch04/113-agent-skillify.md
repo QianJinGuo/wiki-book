@@ -1,7 +1,5 @@
 # Agent 可靠性的工程解法：从 Skillify 看持续改进机制
 
-## Ch04.113 Agent 可靠性的工程解法：从 Skillify 看持续改进机制
-
 > 📊 Level ⭐⭐ | 23.0KB | `entities/agent-reliability-engineering-skillify-continuous-improvement.md`
 
 ## 概述

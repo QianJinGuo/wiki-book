@@ -1,7 +1,5 @@
 # 从 Vibe Coding 到 Harness Engineering：小米 JDK21 升级中可控演进的 AI 工程实践
 
-## Ch05.040 从 Vibe Coding 到 Harness Engineering：小米 JDK21 升级中可控演进的 AI 工程实践
-
 > 📊 Level ⭐⭐ | 15.1KB | `entities/xiaomi-harness-engineering-jdk-upgrade.md`
 
 # 从 Vibe Coding 到 Harness Engineering：小米 JDK21 升级中可控演进的 AI 工程实践

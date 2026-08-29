@@ -1,7 +1,5 @@
 # 从渐进式 SDD 到 Lattice Harness：AI Coding 团队级闭环实践
 
-## Ch05.090 从渐进式 SDD 到 Lattice Harness：AI Coding 团队级闭环实践
-
 > 📊 Level ⭐⭐ | 7.1KB | `entities/sdd-practice-lattice-harness-team-ai-coding.md`
 
 ## 核心概述

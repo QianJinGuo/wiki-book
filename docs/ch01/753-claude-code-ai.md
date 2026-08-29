@@ -1,7 +1,5 @@
 # 实锤了：Claude Code偷查用户，时区、中国AI实验室全是关键词
 
-## Ch01.753 实锤了：Claude Code偷查用户，时区、中国AI实验室全是关键词
-
 > 📊 Level ⭐⭐ | 8.3KB | `entities/实锤了claude-code偷查用户时区中国ai实验室全是关键词.md`
 
 # 实锤了：Claude Code偷查用户，时区、中国AI实验室全是关键词

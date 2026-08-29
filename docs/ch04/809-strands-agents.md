@@ -1,7 +1,5 @@
 # Strands Agents
 
-## Ch04.809 Strands Agents
-
 > 📊 Level ⭐⭐ | 1.7KB | `entities/strands-agents.md`
 
 # Strands Agents

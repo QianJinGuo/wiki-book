@@ -1,7 +1,5 @@
 # 基于 Amazon EKS 和 Graviton 构建多租户 AI Agent 平台：OpenClaw on Kubernetes 实践 | 亚马逊AWS官方博客
 
-## Ch11.062 基于 Amazon EKS 和 Graviton 构建多租户 AI Agent 平台：OpenClaw on Kubernetes 实践 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 12.5KB | `entities/build-multi-tenant-ai-agent-on-eks-graviton-openclaw-k8s-practice.md`
 
 ## 概述

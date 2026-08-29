@@ -1,7 +1,5 @@
 # crewai-fintech-compliance-reporting-agentic-ai
 
-## Ch04.036 crewai-fintech-compliance-reporting-agentic-ai
-
 > 📊 Level ⭐ | 0.9KB | `entities/crewai-fintech-compliance-reporting-agentic-ai.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/crewai-fintech-compliance-reporting-agentic-ai.md)

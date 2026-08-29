@@ -1,7 +1,5 @@
 # GenPage: Towards End-to-End Generative Homepage Construction at Netflix
 
-## Ch11.248 GenPage: Towards End-to-End Generative Homepage Construction at Netflix
-
 ```mermaid
 graph TB
     subgraph "边缘层"

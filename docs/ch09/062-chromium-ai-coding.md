@@ -1,7 +1,5 @@
 # Chromium AI Coding 开发体系
 
-## Ch09.062 Chromium AI Coding 开发体系
-
 > 📊 Level ⭐⭐ | 11.8KB | `entities/chromium-ai-coding-development-system.md`
 
 # Chromium AI Coding 开发体系

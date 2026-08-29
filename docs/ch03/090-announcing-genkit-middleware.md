@@ -1,7 +1,5 @@
 # Announcing Genkit Middleware
 
-## Ch03.090 Announcing Genkit Middleware
-
 > 📊 Level ⭐⭐ | 9.5KB | `entities/developers.googleblog-announcing-genkit-middleware-intercept-extend-and-harden-y.md`
 
 ## 核心架构：三层拦截体系

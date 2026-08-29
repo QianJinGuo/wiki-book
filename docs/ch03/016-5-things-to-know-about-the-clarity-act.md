@@ -1,7 +1,5 @@
 # 5 Things to Know about the CLARITY Act
 
-## Ch03.016 5 Things to Know about the CLARITY Act
-
 > 📊 Level ⭐ | 9.1KB | `entities/5-things-to-know-about-the-clarity-act.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/5-things-to-know-about-the-clarity-act.md)

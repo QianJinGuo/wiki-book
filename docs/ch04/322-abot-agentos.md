@@ -1,7 +1,5 @@
 # 高德 ABot-AgentOS：面向机器人智能体的通用自进化操作系统
 
-## Ch04.322 高德 ABot-AgentOS：面向机器人智能体的通用自进化操作系统
-
 > 📊 Level ⭐⭐ | 10.2KB | `entities/abot-agentos-robot-agent-os-amap-2026.md`
 
 # ABot-AgentOS：面向通用机器人智能体的 Agent OS

@@ -1,7 +1,5 @@
 # Anthropic又叒发现AI意识了，这次要读写Claude的前额叶
 
-## Ch01.1632 Anthropic又叒发现AI意识了，这次要读写Claude的前额叶
-
 > 📊 Level ⭐⭐⭐⭐⭐ | 8.9KB | `entities/anthropic又叒发现ai意识了这次要读写claude的前额叶.md`
 
 # Anthropic又叒发现AI意识了，这次要读写Claude的前额叶

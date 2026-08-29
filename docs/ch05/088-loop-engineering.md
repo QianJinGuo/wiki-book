@@ -1,7 +1,5 @@
 # Loop Engineering 系统框架：四次跃迁、五要素模型、成本公式与三大风险
 
-## Ch05.088 Loop Engineering 系统框架：四次跃迁、五要素模型、成本公式与三大风险
-
 > 📊 Level ⭐⭐ | 7.4KB | `entities/loop-engineering-deep-dive-mengzhaosixi-2026.md`
 
 # Loop Engineering 系统框架：四次跃迁、五要素模型、成本公式与三大风险

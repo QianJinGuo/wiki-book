@@ -1,7 +1,5 @@
 # openai最终能否盈利
 
-## Ch01.189 openai最终能否盈利
-
 > 📊 Level ⭐ | 1.3KB | `entities/openai最终能否盈利.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai最终能否盈利.md)

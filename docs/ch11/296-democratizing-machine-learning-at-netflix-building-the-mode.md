@@ -1,7 +1,5 @@
 # Democratizing Machine Learning at Netflix: Building the Model Lifecycle Graph
 
-## Ch11.296 Democratizing Machine Learning at Netflix: Building the Model Lifecycle Graph
-
 > 📊 Level ⭐⭐ | 3.2KB | `entities/democratizing-machine-learning-at-netflix-building-the-model.md`
 
 # Democratizing Machine Learning at Netflix: Building the Model Lifecycle Graph

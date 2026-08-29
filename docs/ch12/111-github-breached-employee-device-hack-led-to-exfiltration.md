@@ -1,7 +1,5 @@
 # GitHub Breached — Employee Device Hack Led to Exfiltration
 
-## Ch12.111 GitHub Breached — Employee Device Hack Led to Exfiltration
-
 > 📊 Level ⭐⭐ | 5.0KB | `entities/thehackernews-com-github-breached-employee-device-hack-led-to-exfilt.md`
 
 ## 核心要点

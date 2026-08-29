@@ -1,7 +1,5 @@
 # MiniMax M2.7：开启模型的自我进化
 
-## Ch03.117 MiniMax M2.7：开启模型的自我进化
-
 > 📊 Level ⭐⭐ | 6.3KB | `entities/minimax-m2-7-self-evolution.md`
 
 # MiniMax M2.7：开启模型的自我进化

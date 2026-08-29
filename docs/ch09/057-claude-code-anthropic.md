@@ -1,7 +1,5 @@
 # Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南
 
-## Ch09.057 Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南
-
 > 📊 Level ⭐⭐ | 12.3KB | `entities/claude-code-large-codebase-enterprise-deployment.md`
 
 ## 核心判断

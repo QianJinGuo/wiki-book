@@ -1,7 +1,5 @@
 # Bedrock AgentCore Pool Model Multi-Tenancy
 
-## Ch03.135 Bedrock AgentCore Pool Model Multi-Tenancy
-
 > 📊 Level ⭐⭐ | 4.2KB | `entities/shared-infrastructure-isolated-tenants-pool-model-multi-tenancy-with-amazon-bedrock-agentcore.md`
 
 # Bedrock AgentCore Pool Model Multi-Tenancy

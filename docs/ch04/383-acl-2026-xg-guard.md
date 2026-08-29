@@ -1,7 +1,5 @@
 # ACL 2026 | XG-Guard：用图异常检测抓出多智能体网络中的内鬼
 
-## Ch04.383 ACL 2026 | XG-Guard：用图异常检测抓出多智能体网络中的内鬼
-
 > 📊 Level ⭐⭐ | 9.1KB | `entities/acl-2026-xg-guard-mas-anomaly-detection-graph.md`
 
 # ACL 2026 | XG-Guard：用图异常检测抓出多智能体网络中的内鬼

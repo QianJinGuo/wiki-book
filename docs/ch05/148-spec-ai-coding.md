@@ -1,7 +1,5 @@
 # 从 Spec 驱动转向环境与验证驱动：AI Coding 提效的投资账
 
-## Ch05.148 从 Spec 驱动转向环境与验证驱动：AI Coding 提效的投资账
-
 > 📊 Level ⭐⭐⭐ | 7.3KB | `entities/from-spec-driven-to-environment-verification-driven-ai-coding-wu-zuoyan-2026.md`
 
 # 从 Spec 驱动转向环境与验证驱动：AI Coding 提效的投资账

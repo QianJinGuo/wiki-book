@@ -1,7 +1,5 @@
 # 从 PRD 到代码：Ralph 驱动的自治 AI 智能体执行循环
 
-## Ch01.1191 从 PRD 到代码：Ralph 驱动的自治 AI 智能体执行循环
-
 > 📊 Level ⭐⭐ | 5.0KB | `entities/从-prd-到代码ralph-驱动的自治-ai-智能体执行循环.md`
 
 # 从 PRD 到代码：Ralph 驱动的自治 AI 智能体执行循环

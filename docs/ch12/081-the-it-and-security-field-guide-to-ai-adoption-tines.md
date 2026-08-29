@@ -1,7 +1,5 @@
 # The IT and security field guide to AI adoption | Tines
 
-## Ch12.081 The IT and security field guide to AI adoption | Tines
-
 > 📊 Level ⭐⭐ | 6.2KB | `entities/the-it-and-security-field-guide-to-ai-adoption-tines.md`
 
 

@@ -1,7 +1,5 @@
 # Development environments for your cloud agents
 
-## Ch01.348 Development environments for your cloud agents
-
 > 📊 Level ⭐ | 0.6KB | `entities/cloud-agent-development-environments-1778979924.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cloud-agent-development-environments-1778979924.md)

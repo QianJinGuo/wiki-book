@@ -1,7 +1,5 @@
 # 发布-amazon-bedrock-agentcore-web-搜索功能为人工智能代理提供实时准确的网络知识支撑
 
-## Ch04.029 发布-amazon-bedrock-agentcore-web-搜索功能为人工智能代理提供实时准确的网络知识支撑
-
 > 📊 Level ⭐ | 1.4KB | `entities/发布-amazon-bedrock-agentcore-web-搜索功能为人工智能代理提供实时准确的网络知识支撑.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/发布-amazon-bedrock-agentcore-web-搜索功能为人工智能代理提供实时准确的网络知识支撑.md)

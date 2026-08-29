@@ -1,7 +1,5 @@
 # Claude Fable 5 发布：AI 工作流的关键正在转向 Loop 循环
 
-## Ch01.562 Claude Fable 5 发布：AI 工作流的关键正在转向 Loop 循环
-
 > 📊 Level ⭐⭐ | 11.2KB | `entities/claude-fable-5-发布ai-工作流的关键正在转向-loop-循环.md`
 
 # Claude Fable 5 发布：AI 工作流的关键正在转向 Loop 循环

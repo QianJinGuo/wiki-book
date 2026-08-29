@@ -1,7 +1,5 @@
 # Nano Banana 2 Lite 与 Gemini Omni Flash：Google DeepMind 最新生成式媒体模型
 
-## Ch01.1576 Nano Banana 2 Lite 与 Gemini Omni Flash：Google DeepMind 最新生成式媒体模型
-
 > 📊 Level ⭐⭐⭐ | 3.6KB | `entities/nano-banana-2-lite-gemini-omni-flash-google-deepmind-2026.md`
 
 # Nano Banana 2 Lite 与 Gemini Omni Flash：Google DeepMind 最新生成式媒体模型

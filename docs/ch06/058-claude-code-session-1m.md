@@ -1,7 +1,5 @@
 # Claude Code Session 管理与 1M 上下文最佳实践
 
-## Ch06.058 Claude Code Session 管理与 1M 上下文最佳实践
-
 > 📊 Level ⭐⭐⭐ | 7.3KB | `entities/claude-code-session-management-1m-context.md`
 
 ## 核心洞察：每轮对话都是一个分叉决策点

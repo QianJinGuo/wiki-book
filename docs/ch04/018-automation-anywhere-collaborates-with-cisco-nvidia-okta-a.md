@@ -1,7 +1,5 @@
 # Automation Anywhere Collaborates with Cisco, NVIDIA, Okta, and OpenAI, Launching EnterpriseClaw to Run Next-Generation AI Agents Inside Enterprise Systems
 
-## Ch04.018 Automation Anywhere Collaborates with Cisco, NVIDIA, Okta, and OpenAI, Launching EnterpriseClaw to Run Next-Generation AI Agents Inside Enterprise Systems
-
 > 📊 Level ⭐ | 5.8KB | `entities/automation-anywhere-collaborates-with-cisco-nvidia-okta-and-openai-launching-ent.md`
 
 ## 核心要点

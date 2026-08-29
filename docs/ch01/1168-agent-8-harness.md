@@ -1,7 +1,5 @@
 # 长时自主Agent，先解决这8个Harness核心问题
 
-## Ch01.1168 长时自主Agent，先解决这8个Harness核心问题
-
 > 📊 Level ⭐⭐ | 5.2KB | `entities/长时自主agent先解决这8个harness核心问题.md`
 
 # 长时自主Agent，先解决这8个Harness核心问题

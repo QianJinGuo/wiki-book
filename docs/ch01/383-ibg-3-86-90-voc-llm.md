@@ -1,7 +1,5 @@
 # 滴滴 IBG 智能客服质检系统：3 管线（意图 86% / 合规 90%+ / VOC）+ 企业 LLM 落地方法论
 
-## Ch01.383 滴滴 IBG 智能客服质检系统：3 管线（意图 86% / 合规 90%+ / VOC）+ 企业 LLM 落地方法论
-
 > 📊 Level ⭐⭐ | 28.5KB | `entities/didi-ibg-customer-experience-llm-quality-inspection-3-pipelines.md`
 
 # 滴滴 IBG 智能客服质检系统

@@ -1,7 +1,5 @@
 # From Kubernetes Dev Setup to Production: What Actually Changes
 
-## Ch11.085 From Kubernetes Dev Setup to Production: What Actually Changes
-
 > 📊 Level ⭐⭐ | 10.4KB | `entities/from-kubernetes-dev-setup-to-production-what-actually-change.md`
 
 

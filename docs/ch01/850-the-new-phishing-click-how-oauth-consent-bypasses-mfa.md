@@ -1,7 +1,5 @@
 # The New Phishing Click: How OAuth Consent Bypasses MFA
 
-## Ch01.850 The New Phishing Click: How OAuth Consent Bypasses MFA
-
 > 📊 Level ⭐⭐ | 7.6KB | `entities/thehackernews-com-the-new-phishing-click-how-oauth.md`
 
 # The New Phishing Click: How OAuth Consent Bypasses MFA

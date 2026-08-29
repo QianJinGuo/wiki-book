@@ -1,7 +1,5 @@
 # Claude工程师终于交出Fable 5焚诀！教你打破和模型之间的信息差
 
-## Ch01.154 Claude工程师终于交出Fable 5焚诀！教你打破和模型之间的信息差
-
 > 📊 Level ⭐ | 4.3KB | `entities/claude工程师终于交出fable-5焚诀教你打破和模型之间的信息差.md`
 
 # Claude工程师终于交出Fable 5焚诀！教你打破和模型之间的信息差

@@ -1,7 +1,5 @@
 # Grok 4.5：Opus 4.8 级能力，四分之一价格
 
-## Ch01.700 Grok 4.5：Opus 4.8 级能力，四分之一价格
-
 > 📊 Level ⭐⭐ | 8.9KB | `entities/grok-4-5-model-release-xai-2026-07.md`
 
 # Grok 4.5：Opus 4.8 级能力，四分之一价格

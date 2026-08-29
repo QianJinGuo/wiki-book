@@ -1,7 +1,5 @@
 # DeepSeek DSpark：推测性解码工程落地
 
-## Ch01.990 DeepSeek DSpark：推测性解码工程落地
-
 > 📊 Level ⭐⭐ | 6.5KB | `entities/deepseek-dspark-speculative-decoding-2026.md`
 
 # DeepSeek DSpark：推测性解码工程落地

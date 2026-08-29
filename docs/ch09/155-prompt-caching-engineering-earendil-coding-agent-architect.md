@@ -1,7 +1,5 @@
 # Prompt Caching Engineering — Earendil Coding Agent Architecture
 
-## Ch09.155 Prompt Caching Engineering — Earendil Coding Agent Architecture
-
 > 📊 Level ⭐⭐ | 5.7KB | `entities/earendil-prompt-caching-coding-agents.md`
 
 # Prompt Caching Engineering — Coding Agent System Architecture

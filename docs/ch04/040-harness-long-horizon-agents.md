@@ -1,7 +1,5 @@
 # Harness + 模型优化：Long-Horizon Agents重磅综述深度解读
 
-## Ch04.040 Harness + 模型优化：Long-Horizon Agents重磅综述深度解读
-
 > 📊 Level ⭐ | 0.9KB | `entities/towards-long-horizon-agents-survey-mozi-space.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/towards-long-horizon-agents-survey-mozi-space.md)

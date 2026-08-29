@@ -1,7 +1,5 @@
 # Introducing Claude for Small Business
 
-## Ch01.032 Introducing Claude for Small Business
-
 > 📊 Level ⭐ | 8.9KB | `entities/introducing-claude-for-small-business.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/introducing-claude-for-small-business.md)

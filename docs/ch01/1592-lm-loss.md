@@ -1,7 +1,5 @@
 # 重新审视交叉熵：LM Loss还有哪些选择？
 
-## Ch01.1592 重新审视交叉熵：LM Loss还有哪些选择？
-
 > 📊 Level ⭐⭐⭐ | 2.7KB | `entities/重新审视交叉熵lm-loss还有哪些选择.md`
 
 # 重新审视交叉熵：LM Loss还有哪些选择？

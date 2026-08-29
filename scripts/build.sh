@@ -25,6 +25,11 @@ echo "=== Building curated course ==="
 echo "=== Building dashboard article catalog ==="
 "$PYTHON" scripts/rank-articles.py
 
+# Strip the duplicated chapter-prefixed H2 that the external wiki-sync
+# re-adds to entity pages on every run (idempotent; no-op when clean).
+echo "=== Deduping entity page titles ==="
+"$PYTHON" scripts/dedupe-entity-titles.py --apply
+
 # Build via Docker
 docker run --rm -v "$(pwd):/build" -w /build wiki-book-builder:latest mkdocs build
 

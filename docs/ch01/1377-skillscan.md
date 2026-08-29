@@ -1,7 +1,5 @@
 # 一文了解｜SkillScan 智能体技能安全扫描最佳实践
 
-## Ch01.1377 一文了解｜SkillScan 智能体技能安全扫描最佳实践
-
 > 📊 Level ⭐⭐ | 3.6KB | `entities/一文了解skillscan-智能体技能安全扫描最佳实践.md`
 
 # 一文了解｜SkillScan 智能体技能安全扫描最佳实践

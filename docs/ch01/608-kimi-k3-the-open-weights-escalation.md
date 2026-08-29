@@ -1,7 +1,5 @@
 # Kimi K3: The Open-Weights Escalation
 
-## Ch01.608 Kimi K3: The Open-Weights Escalation
-
 > 📊 Level ⭐⭐ | 10.2KB | `entities/kimi-k3-the-open-weights-escalation.md`
 
 # Kimi K3: The Open-Weights Escalation

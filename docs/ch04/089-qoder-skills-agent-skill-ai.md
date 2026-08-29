@@ -1,7 +1,5 @@
 # Qoder Skills 完全指南 + Agent Skill 迭代式编写 — AI 按你的标准执行
 
-## Ch04.089 Qoder Skills 完全指南 + Agent Skill 迭代式编写 — AI 按你的标准执行
-
 > 📊 Level ⭐⭐ | 35.4KB | `entities/qoder-skills-完全指南从零开始让-ai-按你的标准执行-v2.md`
 
 ## 核心概念

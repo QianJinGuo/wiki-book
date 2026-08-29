@@ -1,7 +1,5 @@
 # AgentCore Identity: 3-legged OAuth+Session Binding的安全架构
 
-## Ch04.245 AgentCore Identity: 3-legged OAuth+Session Binding的安全架构
-
 > 📊 Level ⭐⭐ | 12.0KB | `entities/aws-bedrock-agentcore-identity-security.md`
 
 ## 核心内容

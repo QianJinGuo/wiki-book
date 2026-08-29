@@ -1,7 +1,5 @@
 # Using Local Coding Agents
 
-## Ch09.179 Using Local Coding Agents
-
 > 📊 Level ⭐⭐ | 4.3KB | `entities/using-local-coding-agents.md`
 
 # Using Local Coding Agents

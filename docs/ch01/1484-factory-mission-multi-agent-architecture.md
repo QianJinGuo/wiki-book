@@ -1,7 +1,5 @@
 # Factory Mission Multi Agent Architecture
 
-## Ch01.1484 Factory Mission Multi Agent Architecture
-
 > 📊 Level ⭐⭐⭐ | 13.0KB | `entities/factory-mission-multi-agent-architecture.md`
 
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/factory-mission-multi-agent-architecture.md)

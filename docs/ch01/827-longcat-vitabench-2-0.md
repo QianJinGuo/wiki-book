@@ -1,7 +1,5 @@
 # 美团 LongCat 开源 VitaBench 2.0：长期动态智能体基准新标杆
 
-## Ch01.827 美团 LongCat 开源 VitaBench 2.0：长期动态智能体基准新标杆
-
 > 📊 Level ⭐⭐ | 7.8KB | `entities/美团-longcat-开源-vitabench-20长期动态智能体基准新标杆.md`
 
 # 美团 LongCat 开源 VitaBench 2.0：长期动态智能体基准新标杆

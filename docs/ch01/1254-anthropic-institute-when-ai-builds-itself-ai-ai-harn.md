@@ -1,7 +1,5 @@
 # Anthropic Institute《When AI builds itself》深度解读：AI 进入 AI 研发执行层、瓶颈迁移与研发级 Harness（架构师 JiaGouX）
 
-## Ch01.1254 Anthropic Institute《When AI builds itself》深度解读：AI 进入 AI 研发执行层、瓶颈迁移与研发级 Harness（架构师 JiaGouX）
-
 > 📊 Level ⭐⭐ | 4.5KB | `entities/anthropic-institute-when-ai-builds-itself-jiagoux-interpretation.md`
 
 # Anthropic Institute《When AI builds itself》深度解读：AI 进入 AI 研发执行层、瓶颈迁移与研发级 Harness（架构师 JiaGouX）

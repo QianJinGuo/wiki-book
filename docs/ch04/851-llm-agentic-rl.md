@@ -1,7 +1,5 @@
 # 训练LLM智能体的七条实战经验——Agentic RL最佳实践
 
-## Ch04.851 训练LLM智能体的七条实战经验——Agentic RL最佳实践
-
 > 📊 Level ⭐⭐⭐ | 4.1KB | `entities/agentic-rl-seven-lessons-six-frameworks.md`
 
 > **Background**: 本文基于 ChallengeHub 对 Cameron Wolfe《Agentic RL: Frameworks and Best Practices》的解读，综合 ToRL、AgentGym-RL、Agent-R1、AgentRL、AutoForge、RAGEN/RAGEN-2 六个框架的实践经验，提炼出训练 LLM 智能体的七条实战清单。

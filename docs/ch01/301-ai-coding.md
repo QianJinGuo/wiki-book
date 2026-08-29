@@ -1,7 +1,5 @@
 # 场景营销前端 AI Coding 从问题到方案 大淘宝技术
 
-## Ch01.301 场景营销前端 AI Coding 从问题到方案 大淘宝技术
-
 > 📊 Level ⭐ | 0.7KB | `entities/2026-06-22-场景营销前端-AI-Coding-从问题到方案-大淘宝技术.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-06-22-场景营销前端-AI-Coding-从问题到方案-大淘宝技术.md)

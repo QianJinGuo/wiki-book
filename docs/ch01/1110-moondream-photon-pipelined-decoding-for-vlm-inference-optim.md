@@ -1,7 +1,5 @@
 # Moondream Photon: Pipelined Decoding for VLM Inference Optimization
 
-## Ch01.1110 Moondream Photon: Pipelined Decoding for VLM Inference Optimization
-
 > 📊 Level ⭐⭐ | 5.7KB | `entities/moondream-photon-pipelined-decoding-gpu-bubble.md`
 
 # Moondream Photon: Pipelined Decoding for VLM Inference Optimization

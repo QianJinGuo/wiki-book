@@ -1,7 +1,5 @@
 # Open Defense Initiative
 
-## Ch01.1148 Open Defense Initiative
-
 > 📊 Level ⭐⭐ | 5.4KB | `entities/open-defense-initiative.md`
 
 # Open Defense Initiative

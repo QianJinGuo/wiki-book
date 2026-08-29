@@ -1,7 +1,5 @@
 # Funnel Builder 漏洞正被利用于 WooCommerce 支付 skimming
 
-## Ch12.071 Funnel Builder 漏洞正被利用于 WooCommerce 支付 skimming
-
 > 📊 Level ⭐⭐ | 7.0KB | `entities/funnel-builder-flaw-under-active-exploitation-enables-woocom.md`
 
 

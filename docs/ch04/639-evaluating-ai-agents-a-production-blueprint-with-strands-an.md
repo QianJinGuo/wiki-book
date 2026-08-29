@@ -1,7 +1,5 @@
 # Evaluating AI Agents: A Production Blueprint with Strands and AgentCore
 
-## Ch04.639 Evaluating AI Agents: A Production Blueprint with Strands and AgentCore
-
 > 📊 Level ⭐⭐ | 5.5KB | `entities/evaluating-ai-agents-production-blueprint-strands-agentcore.md`
 
 # Evaluating AI Agents: A Production Blueprint with Strands and AgentCore

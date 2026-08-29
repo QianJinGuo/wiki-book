@@ -1,7 +1,5 @@
 # 从AI Coding到Harness Engineering的端到端工程开发实践
 
-## Ch05.052 从AI Coding到Harness Engineering的端到端工程开发实践
-
 > 📊 Level ⭐⭐ | 11.6KB | `entities/从ai-coding到harness-engineering的端到端工程开发实践.md`
 
 # 从AI Coding到Harness Engineering的端到端工程开发实践

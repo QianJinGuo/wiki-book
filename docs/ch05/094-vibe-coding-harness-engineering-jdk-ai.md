@@ -1,7 +1,5 @@
 # 从 Vibe Coding 到 Harness Engineering：JDK 升级中可控演进的 AI 工程实践
 
-## Ch05.094 从 Vibe Coding 到 Harness Engineering：JDK 升级中可控演进的 AI 工程实践
-
 > 📊 Level ⭐⭐ | 6.8KB | `entities/vibe-coding-到-harness-engineering-jdk-可控演进.md`
 
 # 从 Vibe Coding 到 Harness Engineering：JDK 升级中可控演进的 AI 工程实践

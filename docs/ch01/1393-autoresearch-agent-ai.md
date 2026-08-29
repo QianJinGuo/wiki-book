@@ -1,7 +1,5 @@
 # AutoResearch 异步多 Agent AI 寒武纪新阶段
 
-## Ch01.1393 AutoResearch 异步多 Agent AI 寒武纪新阶段
-
 > 📊 Level ⭐⭐ | 3.5KB | `entities/autoresearch-next-phase-async-multi-agent-ai寒武纪.md`
 
 # Autoresearch Next Phase Async Multi Agent Ai寒武纪

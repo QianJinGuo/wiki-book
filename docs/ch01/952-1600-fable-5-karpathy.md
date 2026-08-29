@@ -1,7 +1,5 @@
 # 1600代码造出水下曼哈顿，Fable 5让Karpathy看呆了
 
-## Ch01.952 1600代码造出水下曼哈顿，Fable 5让Karpathy看呆了
-
 > 📊 Level ⭐⭐ | 6.8KB | `entities/1600代码造出水下曼哈顿-fable-5让karpathy看呆了.md`
 
 # 1600代码造出水下曼哈顿，Fable 5让Karpathy看呆了

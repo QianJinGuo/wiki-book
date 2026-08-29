@@ -1,7 +1,5 @@
 # Lossy self-improvement
 
-## Ch01.474 Lossy self-improvement
-
 > 📊 Level ⭐⭐ | 14.1KB | `entities/lossy-self-improvement.md`
 
 # Lossy self-improvement

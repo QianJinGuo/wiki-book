@@ -1,7 +1,5 @@
 # Hermes Agent 记忆系统 vs OpenClaw 记忆观
 
-## Ch06.023 Hermes Agent 记忆系统 vs OpenClaw 记忆观
-
 > 📊 Level ⭐⭐ | 8.4KB | `entities/hermes-agent-memory-system.md`
 
 ## 四层分框架

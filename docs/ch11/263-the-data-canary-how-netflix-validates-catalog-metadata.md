@@ -1,7 +1,5 @@
 # The Data Canary: How Netflix Validates Catalog Metadata
 
-## Ch11.263 The Data Canary: How Netflix Validates Catalog Metadata
-
 > 📊 Level ⭐⭐ | 4.5KB | `entities/the-data-canary-how-netflix-validates-catalog-metadata.md`
 
 # The Data Canary: How Netflix Validates Catalog Metadata

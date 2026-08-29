@@ -1,7 +1,5 @@
 # 京东海博 AI-Native 研发工程体系：Harness+双Loop+知识库+技能自迭代
 
-## Ch04.562 京东海博 AI-Native 研发工程体系：Harness+双Loop+知识库+技能自迭代
-
 > 📊 Level ⭐⭐ | 6.7KB | `entities/jd-haibo-ai-native-harness-dual-loop-knowledge.md`
 
 # 京东海博 AI-Native 研发工程体系

@@ -1,7 +1,5 @@
 # Netflix OCI-Agent: 人机协同因果推断 Agentic Workflow
 
-## Ch11.273 Netflix OCI-Agent: 人机协同因果推断 Agentic Workflow
-
 > 📊 Level ⭐⭐ | 4.1KB | `entities/netflix-oci-agent-human-augmenting-causal-inference.md`
 
 # Netflix OCI-Agent: 人机协同因果推断 Agentic Workflow

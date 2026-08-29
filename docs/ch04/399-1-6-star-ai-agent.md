@@ -1,7 +1,5 @@
 # 1.6万 Star，AI Agent 赛道又杀出一匹黑马！
 
-## Ch04.399 1.6万 Star，AI Agent 赛道又杀出一匹黑马！
-
 > 📊 Level ⭐⭐ | 8.7KB | `entities/openhuman-ai-agent-memory-tree-tokenjuice.md`
 
 # 1.6万 Star，AI Agent 赛道又杀出一匹黑马！

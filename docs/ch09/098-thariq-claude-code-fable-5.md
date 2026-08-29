@@ -1,7 +1,5 @@
 # Thariq（Claude Code工程师）的Fable 5使用心法：地图≠领土，用未知消除法突破模型瓶颈
 
-## Ch09.098 Thariq（Claude Code工程师）的Fable 5使用心法：地图≠领土，用未知消除法突破模型瓶颈
-
 > 📊 Level ⭐⭐ | 8.6KB | `entities/thariq-fable-5-usage-mindset-map-territory-unknown-unknowns.md`
 
 # Thariq（Claude Code工程师）的Fable 5使用心法：地图≠领土，用未知消除法突破模型瓶颈

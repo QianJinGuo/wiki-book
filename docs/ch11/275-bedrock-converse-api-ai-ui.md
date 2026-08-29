@@ -1,7 +1,5 @@
 # Bedrock 多模态模型对比测试平台：基于 Converse API 的统一游戏 AI UI 定位评估
 
-## Ch11.275 Bedrock 多模态模型对比测试平台：基于 Converse API 的统一游戏 AI UI 定位评估
-
 > 📊 Level ⭐⭐ | 4.0KB | `entities/amazon-bedrock-multimodal-model-benchmark-gaming-qa-2026.md`
 
 # Bedrock 多模态模型对比测试平台：基于 Converse API 的统一游戏 AI UI 定位评估

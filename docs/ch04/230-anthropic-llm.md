@@ -1,7 +1,5 @@
 # Anthropic最新论文：检测LLM内省意识的方法
 
-## Ch04.230 Anthropic最新论文：检测LLM内省意识的方法
-
 > 📊 Level ⭐⭐ | 12.4KB | `entities/anthropic-llm-introspection-awareness-mechanisms.md`
 
 ## 核心摘要

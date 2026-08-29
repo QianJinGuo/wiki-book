@@ -1,7 +1,5 @@
 # Netflix Nebula ArchRules: 跨越数千个 Java 仓库的 ArchUnit 规模化实践
 
-## Ch11.089 Netflix Nebula ArchRules: 跨越数千个 Java 仓库的 ArchUnit 规模化实践
-
 > 📊 Level ⭐⭐ | 10.2KB | `entities/netflix-nebula-archrules.md`
 
 # Netflix Nebula ArchRules: 跨越数千个 Java 仓库的 ArchUnit 规模化实践

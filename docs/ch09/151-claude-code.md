@@ -1,7 +1,5 @@
 # Claude Code 命令使用指南
 
-## Ch09.151 Claude Code 命令使用指南
-
 > 📊 Level ⭐⭐ | 6.0KB | `entities/claude-code-commands-usage-guide.md`
 
 # claude-code-commands-usage-guide

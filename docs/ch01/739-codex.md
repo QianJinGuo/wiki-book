@@ -1,7 +1,5 @@
 # Codex 自主赚钱：全自动商业闭环实验
 
-## Ch01.739 Codex 自主赚钱：全自动商业闭环实验
-
 > 📊 Level ⭐⭐ | 8.4KB | `entities/codex-autonomous-earning-money.md`
 
 # codex-autonomous-earning-money

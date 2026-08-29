@@ -1,7 +1,5 @@
 # Back up and restore your Amazon EKS cluster resources using Velero | Amazon Web Services
 
-## Ch11.012 Back up and restore your Amazon EKS cluster resources using Velero | Amazon Web Services
-
 > 📊 Level ⭐⭐ | 28.9KB | `entities/back-up-and-restore-your-amazon-eks-cluster-resources-using-.md`
 
 When you accidentally delete a production namespace or a cluster upgrade fails, rebuilding your Amazon Elastic Kubernetes Service (Amazon EKS) cluster resources means recreating every deployment, service, and persistent volume manually. With Velero, a backup and restore tool for Kubernetes, you capture resource definitions to Amazon Simple Storage Service (Amazon S3) and persistent volume data as Amazon Elastic Block Store (Amazon EBS) snapshots. Velero supports cross-cluster restores, namespace-level granularity, and portability across Kubernetes distributions. If you need centralized, fully managed backup scheduling instead, [AWS Backup for Amazon EKS](https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html) handles that for you.

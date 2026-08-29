@@ -1,7 +1,5 @@
 # QQ 浏览器团队 Agent 经验管理 — 从个人记忆到团队语境
 
-## Ch04.458 QQ 浏览器团队 Agent 经验管理 — 从个人记忆到团队语境
-
 > 📊 Level ⭐⭐ | 8.0KB | `entities/qq-browser-agent-team-experience-management-2026.md`
 
 # QQ 浏览器团队 Agent 经验管理 — 从个人记忆到团队语境

@@ -1,7 +1,5 @@
 # 国产模型 这回终于也有了 Opus 级体验  code秘密花园
 
-## Ch01.287 国产模型 这回终于也有了 Opus 级体验  code秘密花园
-
 > 📊 Level ⭐ | 0.8KB | `entities/2026-05-26-国产模型-这回终于也有了-Opus-级体验--code秘密花园.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-05-26-国产模型-这回终于也有了-Opus-级体验--code秘密花园.md)

@@ -1,7 +1,5 @@
 # 德适科技iMedLoop：全球医疗影像数据平台
 
-## Ch01.1572 德适科技iMedLoop：全球医疗影像数据平台
-
 > 📊 Level ⭐⭐⭐ | 4.0KB | `entities/imedloop-medical-image-platform-deshi-2026.md`
 
 # 德适科技iMedLoop：全球医疗影像数据平台

@@ -1,7 +1,5 @@
 # 第 08 篇 · MCP：让 Agent 跟外部生态对接
 
-## Ch04.342 第 08 篇 · MCP：让 Agent 跟外部生态对接
-
 > 📊 Level ⭐⭐ | 9.8KB | `entities/mcp-agent-external-ecosystem-integration-guide-2026.md`
 
 # 第 08 篇 · MCP：让 Agent 跟外部生态对接

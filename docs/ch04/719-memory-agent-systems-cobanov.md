@@ -1,7 +1,5 @@
 # Memory Agent Systems Cobanov
 
-## Ch04.719 Memory Agent Systems Cobanov
-
 > 📊 Level ⭐⭐ | 4.1KB | `entities/memory-agent-systems-cobanov.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/memory-agent-systems-cobanov.md)

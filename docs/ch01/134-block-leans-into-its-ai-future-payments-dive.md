@@ -1,7 +1,5 @@
 # Block leans into its AI future | Payments Dive
 
-## Ch01.134 Block leans into its AI future | Payments Dive
-
 > 📊 Level ⭐ | 5.3KB | `entities/block-leans-into-its-ai-future-payments-dive.md`
 
 # Block leans into its AI future | Payments Dive

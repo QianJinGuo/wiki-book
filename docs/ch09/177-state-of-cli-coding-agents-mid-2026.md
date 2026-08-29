@@ -1,7 +1,5 @@
 # State of CLI Coding Agents, Mid-2026
 
-## Ch09.177 State of CLI Coding Agents, Mid-2026
-
 > 📊 Level ⭐⭐ | 4.4KB | `entities/state-of-cli-coding-agents-mid-2026.md`
 
 > **Background**: 本文基于社区博客对 2026 年中 CLI 编码代理生态系统的全面调查，涵盖 35 个活跃维护的 CLI 编码代理以及市场格局分析。

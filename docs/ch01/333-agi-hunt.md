@@ -1,7 +1,5 @@
 # 被蒸馏 分身 克隆后 你 还是你吗  AGI Hunt
 
-## Ch01.333 被蒸馏 分身 克隆后 你 还是你吗  AGI Hunt
-
 > 📊 Level ⭐ | 0.7KB | `entities/2026-05-03-被蒸馏-分身-克隆后-你-还是你吗--AGI-Hunt.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-05-03-被蒸馏-分身-克隆后-你-还是你吗--AGI-Hunt.md)

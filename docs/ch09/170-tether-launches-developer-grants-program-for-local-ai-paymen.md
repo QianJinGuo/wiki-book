@@ -1,7 +1,5 @@
 # Tether launches developer grants program for local AI payments
 
-## Ch09.170 Tether launches developer grants program for local AI payments
-
 > 📊 Level ⭐⭐ | 4.7KB | `entities/tether-launches-developer-grants-program-for-local-ai-paymen.md`
 
 # Tether Developer Grants: 端侧 AI + 自托管支付的生态扩张

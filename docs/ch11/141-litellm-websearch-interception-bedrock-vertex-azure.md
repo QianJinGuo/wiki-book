@@ -1,7 +1,5 @@
 # LiteLLM WebSearch Interception 配置指南：让 Bedrock/Vertex/Azure 走代理 + 实时联网
 
-## Ch11.141 LiteLLM WebSearch Interception 配置指南：让 Bedrock/Vertex/Azure 走代理 + 实时联网
-
 > 📊 Level ⭐⭐ | 7.8KB | `entities/litellm-websearch-interception-bedrock-vertex-azure.md`
 
 > [!abstract] **WebSearch Interception 是 LiteLLM 在 1.84.0+ 引入的"代理自动加 web search"能力**：当上游 provider（Bedrock/Vertex/Azure）本身不暴露原生 web search 工具时，LiteLLM 中间层会拦截 LLM 的 tool call 调用，自动改走本地 SearXNG 实例执行搜索，把结果以 Anthropic `web_search_20250305` 工具的格式回传给模型。整篇文章是 AWS China Blog 2026-06-12 发布的一份"踩坑 + 配置 + 调用 + 引用实现"实操手册，价值在于把 LiteLLM 官方文档没写清楚的版本要求、env 变量命名、agentic loop 限制全部用实跑案例补齐。

@@ -1,7 +1,5 @@
 # Claude Code Subagent 详解：把探索过程关进独立工作区
 
-## Ch04.389 Claude Code Subagent 详解：把探索过程关进独立工作区
-
 > 📊 Level ⭐⭐ | 9.0KB | `entities/qy_zacztcs1ql3bifmbmgg.md`
 
 # Claude Code Subagent 详解：把探索过程关进独立工作区

@@ -1,7 +1,5 @@
 # 拆解 Hermes Agent 的记忆系统：一个生产级 AI 记忆是怎么设计的
 
-## Ch04.390 拆解 Hermes Agent 的记忆系统：一个生产级 AI 记忆是怎么设计的
-
 > 📊 Level ⭐⭐ | 8.9KB | `entities/hermes-agent-memory-system-three-layer-architecture.md`
 
 ## 三层记忆架构

@@ -1,7 +1,5 @@
 # 阿里开源 skill-up：让 Agent Skill 可评测可回归
 
-## Ch04.414 阿里开源 skill-up：让 Agent Skill 可评测可回归
-
 > 📊 Level ⭐⭐ | 8.5KB | `entities/alibaba-skill-up-agent-skill评测回归.md`
 
 # 阿里开源 skill-up：让 Agent Skill 可评测可回归

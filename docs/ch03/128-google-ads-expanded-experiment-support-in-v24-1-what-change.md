@@ -1,7 +1,5 @@
 # Google Ads Expanded Experiment Support in v24.1: What Changed for AI Max, Video, Demand Gen, and Performance Max
 
-## Ch03.128 Google Ads Expanded Experiment Support in v24.1: What Changed for AI Max, Video, Demand Gen, and Performance Max
-
 > 📊 Level ⭐⭐ | 5.4KB | `entities/almcorp-google-ads-expanded-experiment-v24-1.md`
 
 ## 核心要点

@@ -1,7 +1,5 @@
 # AI Coding Agent 记忆系统
 
-## Ch04.409 AI Coding Agent 记忆系统
-
 > 📊 Level ⭐⭐ | 8.5KB | `entities/ai-coding-agent-memory-system.md`
 
 ## 相关实体

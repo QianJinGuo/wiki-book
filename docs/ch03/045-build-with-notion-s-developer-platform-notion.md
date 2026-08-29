@@ -1,7 +1,5 @@
 # Build with Notion's Developer Platform – Notion
 
-## Ch03.045 Build with Notion's Developer Platform – Notion
-
 > 📊 Level ⭐ | 5.0KB | `entities/notion-dev-platform.md`
 
 ## 深度分析

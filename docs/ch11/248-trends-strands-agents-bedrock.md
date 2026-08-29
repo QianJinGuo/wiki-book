@@ -1,7 +1,5 @@
 # TReNDS 自动化根因分析（Strands Agents + Bedrock）
 
-## Ch11.248 TReNDS 自动化根因分析（Strands Agents + Bedrock）
-
 > 📊 Level ⭐⭐ | 5.3KB | `entities/how-trends-automates-root-cause-analysis-with-amazon-bedrock.md`
 
 # TReNDS 自动化根因分析（Strands Agents + Bedrock）

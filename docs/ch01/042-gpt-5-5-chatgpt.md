@@ -1,7 +1,5 @@
 # GPT-5.5来了！我撤回了退订ChatGPT的决定
 
-## Ch01.042 GPT-5.5来了！我撤回了退订ChatGPT的决定
-
 > 📊 Level ⭐ | 8.7KB | `entities/gpt-55来了我撤回了退订chatgpt的决定.md`
 
 # GPT-5.5来了！我撤回了退订ChatGPT的决定

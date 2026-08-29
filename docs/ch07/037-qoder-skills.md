@@ -1,7 +1,5 @@
 # Qoder Skills 完全指南
 
-## Ch07.037 Qoder Skills 完全指南
-
 > 📊 Level ⭐⭐ | 9.8KB | `entities/qoder-skills-complete-guide.md`
 
 ## 核心概念

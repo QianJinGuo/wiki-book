@@ -1,7 +1,5 @@
 # 京东 Oxygen xLLM 大模型推理引擎捐赠开源
 
-## Ch01.976 京东 Oxygen xLLM 大模型推理引擎捐赠开源
-
 > 📊 Level ⭐⭐ | 6.6KB | `entities/jd-oxygen-xllm-inference-engine.md`
 
 # 京东 Oxygen xLLM 大模型推理引擎捐赠开源

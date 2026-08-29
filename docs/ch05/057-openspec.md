@@ -1,7 +1,5 @@
 # OpenSpec 四步法深度复盘：流程完整 ≠ 代码正确
 
-## Ch05.057 OpenSpec 四步法深度复盘：流程完整 ≠ 代码正确
-
 > 📊 Level ⭐⭐ | 10.7KB | `entities/openspec-四步法深度复盘-流程完整不等于代码正确.md`
 
 ## 核心洞察

@@ -1,7 +1,5 @@
 # What it feels like to work with Mythos
 
-## Ch04.396 What it feels like to work with Mythos
-
 > 📊 Level ⭐⭐ | 8.7KB | `entities/what-it-feels-like-to-work-with-mythos.md`
 
 # What it feels like to work with Mythos

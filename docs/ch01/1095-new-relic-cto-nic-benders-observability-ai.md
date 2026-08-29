@@ -1,7 +1,5 @@
 # New Relic CTO Nic Benders：Observability 三大时代演进与 AI 可观测性的双面挑战
 
-## Ch01.1095 New Relic CTO Nic Benders：Observability 三大时代演进与 AI 可观测性的双面挑战
-
 > 📊 Level ⭐⭐ | 5.7KB | `entities/new-relic-observability-evolution-ai-nic-benders-infoq-2026-06-30.md`
 
 # New Relic CTO Nic Benders：Observability 三大时代演进与 AI 可观测性的双面挑战

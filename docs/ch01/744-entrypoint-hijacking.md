@@ -1,7 +1,5 @@
 # EntryPoint Hijacking
 
-## Ch01.744 EntryPoint Hijacking
-
 > 📊 Level ⭐⭐ | 8.3KB | `entities/entrypoint-hijacking.md`
 
 # "EntryPoint Hijacking"

@@ -1,7 +1,5 @@
 # Why Use App-Level Auth When Every Database Has Auth? (Splunk CVE-2026-20253)
 
-## Ch01.179 Why Use App-Level Auth When Every Database Has Auth? (Splunk CVE-2026-20253)
-
 > 📊 Level ⭐ | 3.2KB | `entities/why-use-app-level-auth-when-every-database-has-auth-splunk-e.md`
 
 # Why Use App-Level Auth When Every Database Has Auth? (Splunk CVE-2026-20253)

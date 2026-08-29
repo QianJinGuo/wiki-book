@@ -1,7 +1,5 @@
 # 国产双开源 让Mac成为你的私人AI工作站 机器之心
 
-## Ch01.297 国产双开源 让Mac成为你的私人AI工作站 机器之心
-
 > 📊 Level ⭐ | 0.7KB | `entities/2026-05-06-国产双开源-让Mac成为你的私人AI工作站-机器之心.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-05-06-国产双开源-让Mac成为你的私人AI工作站-机器之心.md)

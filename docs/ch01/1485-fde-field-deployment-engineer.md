@@ -1,7 +1,5 @@
 # FDE（Field Deployment Engineer）非共识与落地指南 — 硅谷一线实践者圆桌
 
-## Ch01.1485 FDE（Field Deployment Engineer）非共识与落地指南 — 硅谷一线实践者圆桌
-
 > 📊 Level ⭐⭐⭐ | 12.9KB | `entities/fde-field-deployment-engineer-tencent-roundtable.md`
 
 # FDE（Field Deployment Engineer）非共识与落地指南

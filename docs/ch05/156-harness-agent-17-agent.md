@@ -1,7 +1,5 @@
 # 阿里 Harness 工程实战：Agent 自主迭代 17 小时优化业务 Agent
 
-## Ch05.156 阿里 Harness 工程实战：Agent 自主迭代 17 小时优化业务 Agent
-
 > 📊 Level ⭐⭐⭐ | 4.1KB | `entities/alibaba-harness-autonomous-agent-iteration.md`
 
 # 阿里 Harness 工程实战：Agent 自主迭代 17 小时优化业务 Agent

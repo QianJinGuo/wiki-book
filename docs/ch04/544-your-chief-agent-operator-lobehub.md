@@ -1,7 +1,5 @@
 # Your Chief Agent Operator · LobeHub
 
-## Ch04.544 Your Chief Agent Operator · LobeHub
-
 > 📊 Level ⭐⭐ | 7.0KB | `entities/your-chief-agent-operator-lobehub.md`
 
 ## 产品概述

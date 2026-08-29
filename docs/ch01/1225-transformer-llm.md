@@ -1,7 +1,5 @@
 # 给Transformer变个形，LLM竟能变得更聪明
 
-## Ch01.1225 给Transformer变个形，LLM竟能变得更聪明
-
 > 📊 Level ⭐⭐ | 4.8KB | `entities/给transformer变个形llm竟能变得更聪明.md`
 
 # 给Transformer变个形，LLM竟能变得更聪明

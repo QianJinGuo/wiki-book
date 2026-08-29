@@ -1,7 +1,5 @@
 # Anthropic Global Workspace (J-Space) — Claude 的内部心理工作区
 
-## Ch01.745 Anthropic Global Workspace (J-Space) — Claude 的内部心理工作区
-
 > 📊 Level ⭐⭐ | 8.3KB | `entities/anthropic-global-workspace-j-space-2026.md`
 
 # Anthropic Global Workspace (J-Space) — Claude 的内部心理工作区

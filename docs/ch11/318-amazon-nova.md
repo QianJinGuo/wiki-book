@@ -1,7 +1,5 @@
 # 微调 Amazon Nova 模型实现精准邮件数据提取
 
-## Ch11.318 微调 Amazon Nova 模型实现精准邮件数据提取
-
 > 📊 Level ⭐⭐⭐ | 7.1KB | `entities/fine-tune-amazon-nova-models-for-accurate-email-data-extract.md`
 
 # 微调 Amazon Nova 模型实现精准邮件数据提取

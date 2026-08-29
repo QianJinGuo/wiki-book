@@ -1,7 +1,5 @@
 # ELF: Embedded Language Flows (何恺明)
 
-## Ch01.1504 ELF: Embedded Language Flows (何恺明)
-
 > 📊 Level ⭐⭐⭐ | 10.6KB | `entities/elf-embedded-language-flows-hekaiming.md`
 
 # ELF: Embedded Language Flows (何恺明)

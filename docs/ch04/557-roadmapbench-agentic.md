@@ -1,7 +1,5 @@
 # RoadmapBench — 跨版本升级的长周期 Agentic 软件开发评估基准
 
-## Ch04.557 RoadmapBench — 跨版本升级的长周期 Agentic 软件开发评估基准
-
 > 📊 Level ⭐⭐ | 6.8KB | `entities/roadmapbench-long-horizon-agentic-software-development-benchmark.md`
 
 # RoadmapBench — 跨版本升级的长周期 Agentic 软件开发评估基准

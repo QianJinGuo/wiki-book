@@ -1,7 +1,5 @@
 # Notes From Inside Chinas AI Labs
 
-## Ch09.150 Notes From Inside Chinas AI Labs
-
 > 📊 Level ⭐⭐ | 6.1KB | `entities/notes-from-inside-chinas-ai-labs.md`
 
 # Notes from inside China's AI labs

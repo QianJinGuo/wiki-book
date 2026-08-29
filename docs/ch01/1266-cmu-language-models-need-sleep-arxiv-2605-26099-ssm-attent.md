@@ -1,7 +1,5 @@
 # CMU Language Models Need Sleep (arxiv 2605.26099)：SSM-Attention 睡眠巩固机制
 
-## Ch01.1266 CMU Language Models Need Sleep (arxiv 2605.26099)：SSM-Attention 睡眠巩固机制
-
 > 📊 Level ⭐⭐ | 4.3KB | `entities/arxiv-2605-26099-ssm-attention-sleep-consolidation-cmu.md`
 
 # CMU Language Models Need Sleep (arxiv 2605.26099)：SSM-Attention 睡眠巩固机制

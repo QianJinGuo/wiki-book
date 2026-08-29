@@ -1,7 +1,5 @@
 # Hermes Agent /goal 长任务运行时架构拆解：状态持久化、Judge 闭环与自主续航
 
-## Ch04.554 Hermes Agent /goal 长任务运行时架构拆解：状态持久化、Judge 闭环与自主续航
-
 > 📊 Level ⭐⭐ | 6.8KB | `entities/hermes-agent-goal-runtime-architecture-state-persistence-judge-closed-loop.md`
 
 # Hermes Agent /goal 长任务运行时架构拆解：状态持久化、Judge 闭环与自主续航

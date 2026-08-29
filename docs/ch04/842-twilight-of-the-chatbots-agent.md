@@ -1,7 +1,5 @@
 # Twilight of the Chatbots：从聊天机器人到自主 Agent 的转型
 
-## Ch04.842 Twilight of the Chatbots：从聊天机器人到自主 Agent 的转型
-
 > 📊 Level ⭐⭐⭐ | 8.2KB | `entities/the-twilight-of-the-chatbots-mollick-2026.md`
 
 # Twilight of the Chatbots：从聊天机器人到自主 Agent 的转型

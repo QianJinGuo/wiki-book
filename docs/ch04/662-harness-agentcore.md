@@ -1,7 +1,5 @@
 # Harness工程火遍硅谷，AgentCore今天交卷!
 
-## Ch04.662 Harness工程火遍硅谷，AgentCore今天交卷!
-
 > 📊 Level ⭐⭐ | 5.0KB | `entities/agentcore-managed-harness.md`
 
 # Harness工程火遍硅谷，AgentCore今天交卷!

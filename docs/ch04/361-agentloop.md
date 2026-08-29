@@ -1,7 +1,5 @@
 # 阿里云刚发布的 AgentLoop 是什么？
 
-## Ch04.361 阿里云刚发布的 AgentLoop 是什么？
-
 > 📊 Level ⭐⭐ | 9.5KB | `entities/阿里云刚发布的-agentloop-是什么.md`
 
 # 阿里云刚发布的 AgentLoop 是什么？

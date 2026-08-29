@@ -1,7 +1,5 @@
 # Multi-Agent 的四种协作模式：Supervisor、Swarm、网状、流水线，怎么选？
 
-## Ch04.437 Multi-Agent 的四种协作模式：Supervisor、Swarm、网状、流水线，怎么选？
-
 > 📊 Level ⭐⭐ | 8.3KB | `entities/james-multi-agent-collaboration-modes.md`
 
 # Multi-Agent 的四种协作模式：Supervisor、Swarm、网状、流水线，怎么选？

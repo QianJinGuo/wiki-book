@@ -1,7 +1,5 @@
 # Airbyte Agents: A New Era for Airbyte | Airbyte
 
-## Ch04.695 Airbyte Agents: A New Era for Airbyte | Airbyte
-
 > 📊 Level ⭐⭐ | 4.5KB | `entities/airbyte-agents.md`
 
 ## **The Real Reason Agents Fail**

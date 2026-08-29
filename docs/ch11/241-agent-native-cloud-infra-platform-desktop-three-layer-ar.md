@@ -1,7 +1,5 @@
 # 阿里云 Agent Native Cloud — Infra-Platform-Desktop Three-Layer Architecture
 
-## Ch11.241 阿里云 Agent Native Cloud — Infra-Platform-Desktop Three-Layer Architecture
-
 > 📊 Level ⭐⭐ | 4.4KB | `entities/aliyun-agent-native-cloud.md`
 
 # 阿里云 Agent Native Cloud

@@ -1,7 +1,5 @@
 # Scaling Law一招鲜？首个晶体结构操作基准，顶级大模型集体翻车
 
-## Ch01.1458 Scaling Law一招鲜？首个晶体结构操作基准，顶级大模型集体翻车
-
 > 📊 Level ⭐⭐ | 1.0KB | `entities/scaling-law-atomworld-icml2026-crystal-structure-benchmark.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/scaling-law-atomworld-icml2026-crystal-structure-benchmark.md)

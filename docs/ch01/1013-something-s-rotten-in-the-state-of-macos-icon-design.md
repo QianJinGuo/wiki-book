@@ -1,7 +1,5 @@
 # Something's Rotten in the State of macOS Icon Design
 
-## Ch01.1013 Something's Rotten in the State of macOS Icon Design
-
 > 📊 Level ⭐⭐ | 6.3KB | `entities/somethings-rotten-in-the-state-of-macos-icon-design.md`
 
 # Something's Rotten in the State of macOS Icon Design

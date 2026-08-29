@@ -1,7 +1,5 @@
 # 把 OpenClaw 从个人助手变成客服：一次信任模型的翻转 | 亚马逊AWS官方博客
 
-## Ch11.110 把 OpenClaw 从个人助手变成客服：一次信任模型的翻转 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 9.9KB | `entities/openclaw-from-personal-assistant-to-customer-service-a-trust-model-flip.md`
 
 ## 概述

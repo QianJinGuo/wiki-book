@@ -1,7 +1,5 @@
 # 使用 Amazon Cognito 多区域复制提高应用程序韧性
 
-## Ch11.275 使用 Amazon Cognito 多区域复制提高应用程序韧性
-
 > 📊 Level ⭐⭐ | 3.5KB | `entities/使用-amazon-cognito-多区域复制提高应用程序韧性.md`
 
 # 使用 Amazon Cognito 多区域复制提高应用程序韧性

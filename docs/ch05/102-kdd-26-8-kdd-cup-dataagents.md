@@ -1,7 +1,5 @@
 # KDD'26 美团 8 篇论文精选 + KDD Cup DataAgents 冠军思路
 
-## Ch05.102 KDD'26 美团 8 篇论文精选 + KDD Cup DataAgents 冠军思路
-
 > 📊 Level ⭐⭐ | 6.0KB | `entities/kdd26-美团学术论文精选及kdd-cup26-dataagents赛道冠军思路解读.md`
 
 # KDD'26 美团 8 篇论文精选 + KDD Cup DataAgents 冠军思路

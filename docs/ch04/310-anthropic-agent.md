@@ -1,7 +1,5 @@
 # Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化
 
-## Ch04.310 Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化
-
 > 📊 Level ⭐⭐ | 10.5KB | `entities/anthropic-long-running-agent-adversarial-architecture.md`
 
 ## 背景数据

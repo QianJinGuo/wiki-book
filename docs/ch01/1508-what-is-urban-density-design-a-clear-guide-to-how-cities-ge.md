@@ -1,7 +1,5 @@
 # What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser
 
-## Ch01.1508 What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser
-
 > 📊 Level ⭐⭐⭐ | 10.4KB | `entities/what-is-urban-density-design-a-clear-guide.md`
 
 # Urban Density Design：城市密度设计完全指南

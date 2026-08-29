@@ -1,7 +1,5 @@
 # 基于 amazon sagemaker ai 部署 chronos bolt 实现零样本时序预测
 
-## Ch01.729 基于 amazon sagemaker ai 部署 chronos bolt 实现零样本时序预测
-
 > 📊 Level ⭐⭐ | 8.6KB | `entities/基于-amazon-sagemaker-ai-部署-chronos-bolt-实现零样本时序预测.md`
 
 # 基于 Amazon SageMaker AI 部署 Chronos-Bolt 实现零样本时序预测

@@ -1,7 +1,5 @@
 # Stealing Reasoning Traces from Proprietary LLM APIs（加密推理块跨模型解码攻击）
 
-## Ch01.1433 Stealing Reasoning Traces from Proprietary LLM APIs（加密推理块跨模型解码攻击）
-
 > 📊 Level ⭐⭐ | 3.2KB | `entities/stealing-reasoning-traces-proprietary-llm-apis.md`
 
 # Stealing Reasoning Traces from Proprietary LLM APIs

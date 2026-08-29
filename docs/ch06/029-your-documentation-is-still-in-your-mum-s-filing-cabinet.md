@@ -1,7 +1,5 @@
 # Your documentation is still in your Mum's filing cabinet
 
-## Ch06.029 Your documentation is still in your Mum's filing cabinet
-
 > 📊 Level ⭐⭐ | 7.1KB | `entities/documentation-organisation-humans-ai.md`
 
 # Your documentation is still in your Mum's filing cabinet

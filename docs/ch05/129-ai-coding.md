@@ -1,7 +1,5 @@
 # 场景营销前端 AI Coding — 从问题到方案
 
-## Ch05.129 场景营销前端 AI Coding — 从问题到方案
-
 > 📊 Level ⭐⭐ | 3.4KB | `entities/frontend-ai-coding-problem-to-solution-taobao.md`
 
 > 原文归档：[原文归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/frontend-ai-coding-problem-to-solution-taobao-2026-06-22.md)

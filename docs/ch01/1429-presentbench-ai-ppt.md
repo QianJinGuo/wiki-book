@@ -1,7 +1,5 @@
 # 华为云 PresentBench AI PPT 评测登顶
 
-## Ch01.1429 华为云 PresentBench AI PPT 评测登顶
-
 > 📊 Level ⭐⭐ | 3.2KB | `entities/huawei-cloud-presentbench-ai-ppt-hwc-mmi-aippt-2026.md`
 
 # 华为云行业大模型多模态智能团队 PresentBench 评测夺冠

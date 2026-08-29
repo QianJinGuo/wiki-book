@@ -1,7 +1,5 @@
 # AI Native 时代 —— 研发组织何去何从
 
-## Ch01.540 AI Native 时代 —— 研发组织何去何从
-
 > 📊 Level ⭐⭐ | 11.7KB | `entities/ai-native-rd-org-design-xiaobin.md`
 
 # "AI Native 时代 —— 研发组织何去何从"

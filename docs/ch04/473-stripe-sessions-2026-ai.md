@@ -1,7 +1,5 @@
 # Stripe Sessions 2026 AI
 
-## Ch04.473 Stripe Sessions 2026 AI
-
 > 📊 Level ⭐⭐ | 7.9KB | `entities/stripe-sessions-2026-ai.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/stripe-sessions-2026-ai-agents.md)

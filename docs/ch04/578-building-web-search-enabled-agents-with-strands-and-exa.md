@@ -1,7 +1,5 @@
 # Building web search-enabled agents with Strands and Exa
 
-## Ch04.578 Building web search-enabled agents with Strands and Exa
-
 > 📊 Level ⭐⭐ | 6.5KB | `entities/building-web-search-enabled-agents-with-strands-and-exa.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/building-web-search-enabled-agents-with-strands-and-exa.md)

@@ -1,7 +1,5 @@
 # Accelerating Transformers Fine-Tuning with NVIDIA NeMo AutoModel
 
-## Ch01.1550 Accelerating Transformers Fine-Tuning with NVIDIA NeMo AutoModel
-
 > 📊 Level ⭐⭐⭐ | 6.9KB | `entities/nvidia-nemo-automodel-fine-tuning.md`
 
 # Accelerating Transformers Fine-Tuning with NVIDIA NeMo AutoModel

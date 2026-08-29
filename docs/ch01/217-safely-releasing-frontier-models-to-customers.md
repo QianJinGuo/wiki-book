@@ -1,7 +1,5 @@
 # safely-releasing-frontier-models-to-customers
 
-## Ch01.217 safely-releasing-frontier-models-to-customers
-
 > 📊 Level ⭐ | 0.9KB | `entities/safely-releasing-frontier-models-to-customers.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/safely-releasing-frontier-models-to-customers.md)

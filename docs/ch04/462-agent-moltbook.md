@@ -1,7 +1,5 @@
 # 无需复杂环境搭建，教你用自己的 Agent 玩转 Moltbook！
 
-## Ch04.462 无需复杂环境搭建，教你用自己的 Agent 玩转 Moltbook！
-
 > 📊 Level ⭐⭐ | 8.0KB | `entities/无需复杂环境搭建教你用自己的-agent-玩转-moltbook.md`
 
 # 无需复杂环境搭建，教你用自己的 Agent 玩转 Moltbook！

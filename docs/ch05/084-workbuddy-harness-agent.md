@@ -1,7 +1,5 @@
 # WorkBuddy 产品实践：从模型到 Harness 的 Agent 可用产品架构
 
-## Ch05.084 WorkBuddy 产品实践：从模型到 Harness 的 Agent 可用产品架构
-
 > 📊 Level ⭐⭐ | 7.5KB | `entities/workbuddy-product-framework-agent-harness-anne-2026.md`
 
 # WorkBuddy 产品实践：从模型到 Harness 的 Agent 可用产品架构

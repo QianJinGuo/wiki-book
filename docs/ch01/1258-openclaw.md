@@ -1,7 +1,5 @@
 # OpenClaw长期记忆：优秀管线与玄学效果
 
-## Ch01.1258 OpenClaw长期记忆：优秀管线与玄学效果
-
 > 📊 Level ⭐⭐ | 4.4KB | `entities/openclaw长期记忆优秀管线与玄学效果.md`
 
 # OpenClaw长期记忆：优秀管线与玄学效果

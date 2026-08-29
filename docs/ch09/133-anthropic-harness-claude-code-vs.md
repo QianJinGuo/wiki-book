@@ -1,7 +1,5 @@
 # Anthropic 的 Harness 没管住 Claude Code？软规则 vs 硬约束
 
-## Ch09.133 Anthropic 的 Harness 没管住 Claude Code？软规则 vs 硬约束
-
 > 📊 Level ⭐⭐ | 7.0KB | `entities/claude-code-governance-soft-rules-hard-constraints.md`
 
 ## 核心洞察

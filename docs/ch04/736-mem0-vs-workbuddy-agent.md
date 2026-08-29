@@ -1,7 +1,5 @@
 # Mem0 vs WorkBuddy：Agent 记忆层的两条路线
 
-## Ch04.736 Mem0 vs WorkBuddy：Agent 记忆层的两条路线
-
 > 📊 Level ⭐⭐ | 3.9KB | `entities/mem0-vs-workbuddy-agent-memory-comparison.md`
 
 # Mem0 vs WorkBuddy：Agent 记忆层的两条路线

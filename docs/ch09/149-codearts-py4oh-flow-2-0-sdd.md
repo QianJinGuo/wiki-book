@@ -1,7 +1,5 @@
 # 华为云码道（CodeArts）重构图形编程项目实践 — Py4OH-Flow 2.0 SDD 案例
 
-## Ch09.149 华为云码道（CodeArts）重构图形编程项目实践 — Py4OH-Flow 2.0 SDD 案例
-
 > 📊 Level ⭐⭐ | 6.1KB | `entities/codearts-py4oh-graphics-refactoring-sdd.md`
 
 # 华为云码道（CodeArts）重构图形编程项目实践 — Py4OH-Flow 2.0 SDD 案例

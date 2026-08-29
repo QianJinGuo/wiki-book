@@ -1,7 +1,5 @@
 # Attention-Only Transformers 受控研究（SANs vs 标准 Transformer）
 
-## Ch01.1585 Attention-Only Transformers 受控研究（SANs vs 标准 Transformer）
-
 > 📊 Level ⭐⭐⭐ | 3.0KB | `entities/attention-only-transformers-controlled-study-sans-arxiv-2607-18363.md`
 
 # Attention-Only Transformers 受控研究（SANs vs 标准 Transformer）

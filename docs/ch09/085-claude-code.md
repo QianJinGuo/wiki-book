@@ -1,7 +1,5 @@
 # Claude Code 集成其他工具指南
 
-## Ch09.085 Claude Code 集成其他工具指南
-
 > 📊 Level ⭐⭐ | 9.3KB | `entities/claude-code-integration-other-tools.md`
 
 ## 概述

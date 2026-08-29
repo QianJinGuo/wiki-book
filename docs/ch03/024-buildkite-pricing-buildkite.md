@@ -1,7 +1,5 @@
 # Buildkite Pricing | Buildkite
 
-## Ch03.024 Buildkite Pricing | Buildkite
-
 > 📊 Level ⭐ | 7.5KB | `entities/buildkite-pricing-buildkite-v2.md`
 
 # Buildkite Pricing | Buildkite

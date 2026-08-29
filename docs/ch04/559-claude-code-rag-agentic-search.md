@@ -1,7 +1,5 @@
 # Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search
 
-## Ch04.559 Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search
-
 > 📊 Level ⭐⭐ | 6.8KB | `entities/claude-code开发负责人-为何放弃rag而选择agentic-search.md`
 
 # Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search

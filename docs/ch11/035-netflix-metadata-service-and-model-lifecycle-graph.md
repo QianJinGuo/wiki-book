@@ -1,7 +1,5 @@
 # Netflix Metadata Service and Model Lifecycle Graph
 
-## Ch11.035 Netflix Metadata Service and Model Lifecycle Graph
-
 > 📊 Level ⭐⭐ | 14.5KB | `entities/netflix-metadata-service-model-lifecycle-graph.md`
 
 # Netflix Metadata Service and Model Lifecycle Graph

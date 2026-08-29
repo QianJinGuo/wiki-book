@@ -1,7 +1,5 @@
 # Fable 5 两年后笔记本运行？端侧模型将爆发
 
-## Ch01.788 Fable 5 两年后笔记本运行？端侧模型将爆发
-
 > 📊 Level ⭐⭐ | 8.0KB | `entities/fable5-on-device-timeline-two-years-2026.md`
 
 # Fable 5 两年后笔记本运行？端侧模型将爆发

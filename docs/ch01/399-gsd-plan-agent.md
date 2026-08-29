@@ -1,7 +1,5 @@
 # GSD 上下文管理工具：用 Plan 约束 Agent 行为边界
 
-## Ch01.399 GSD 上下文管理工具：用 Plan 约束 Agent 行为边界
-
 > 📊 Level ⭐⭐ | 22.3KB | `entities/gsd-get-shit-done-context-management-tool.md`
 
 [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gsd-get-shit-done-context-management-tool.md)

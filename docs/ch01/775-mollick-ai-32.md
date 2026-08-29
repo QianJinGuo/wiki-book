@@ -1,7 +1,5 @@
 # Mollick AI 进展的 32 只水獭基准
 
-## Ch01.775 Mollick AI 进展的 32 只水獭基准
-
 > 📊 Level ⭐⭐ | 8.1KB | `entities/mollick-ai-32-otters-benchmark.md`
 
 # Mollick AI 进展的 32 只水獭基准

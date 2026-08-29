@@ -1,7 +1,5 @@
 # 飞来汇借助 AWS Security Agent 构建跨境支付应用的智能安全防线
 
-## Ch12.011 飞来汇借助 AWS Security Agent 构建跨境支付应用的智能安全防线
-
 > 📊 Level ⭐⭐ | 34.0KB | `entities/飞来汇借助-aws-security-agent-构建跨境支付应用的智能安全防线.md`
 
 # 飞来汇借助 AWS Security Agent 构建跨境支付应用的智能安全防线

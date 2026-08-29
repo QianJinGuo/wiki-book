@@ -1,7 +1,5 @@
 # Skill 设计模式
 
-## Ch07.003 Skill 设计模式
-
 > 📊 Level ⭐⭐ | 25.4KB | `entities/skill-design-patterns.md`
 
 ## Overview

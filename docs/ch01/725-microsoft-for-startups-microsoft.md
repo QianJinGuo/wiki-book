@@ -1,7 +1,5 @@
 # Microsoft for Startups | Microsoft
 
-## Ch01.725 Microsoft for Startups | Microsoft
-
 > 📊 Level ⭐⭐ | 8.7KB | `entities/microsoft-for-startups-microsoft-v2.md`
 
 ## 核心要点

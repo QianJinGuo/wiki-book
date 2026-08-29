@@ -1,7 +1,5 @@
 # 基于 Amazon IoT Core 与 Kiro 构建可迁移的工业 IoT 数据管道
 
-## Ch11.121 基于 Amazon IoT Core 与 Kiro 构建可迁移的工业 IoT 数据管道
-
 > 📊 Level ⭐⭐ | 9.4KB | `entities/amazon-iot-core-kiro-industrial-data-pipeline.md`
 
 # 基于 Amazon IoT Core 与 Kiro 构建可迁移的工业 IoT 数据管道

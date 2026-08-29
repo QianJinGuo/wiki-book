@@ -1,7 +1,5 @@
 # 万字长文拆解 Agent 架构设计（二）：工具系统设计
 
-## Ch04.434 万字长文拆解 Agent 架构设计（二）：工具系统设计
-
 > 📊 Level ⭐⭐ | 8.3KB | `entities/claude-code-tool-system-architecture-deep-dive.md`
 
 # Claude Code 工具系统架构深度拆解

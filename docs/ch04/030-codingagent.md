@@ -1,7 +1,5 @@
 # codingagent-的原始森林困境一张地图能解决什么
 
-## Ch04.030 codingagent-的原始森林困境一张地图能解决什么
-
 > 📊 Level ⭐ | 1.2KB | `entities/codingagent-的原始森林困境一张地图能解决什么.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/codingagent-的原始森林困境一张地图能解决什么.md)

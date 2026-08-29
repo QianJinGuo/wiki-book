@@ -1,7 +1,5 @@
 # 在 macOS 上用 AI Coding 搭一个隐私优先的会议纪要助手
 
-## Ch03.042 在 macOS 上用 AI Coding 搭一个隐私优先的会议纪要助手
-
 > 📊 Level ⭐ | 5.2KB | `entities/在-macos-上用-ai-coding-搭一个隐私优先的会议纪要助手.md`
 
 ## 标签

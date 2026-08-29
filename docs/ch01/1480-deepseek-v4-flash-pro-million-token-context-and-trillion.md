@@ -1,7 +1,5 @@
 # DeepSeek V4 Flash & Pro: Million-Token Context and Trillion-Parameter Inference
 
-## Ch01.1480 DeepSeek V4 Flash & Pro: Million-Token Context and Trillion-Parameter Inference
-
 > 📊 Level ⭐⭐⭐ | 13.5KB | `entities/deepseek-v4-flash-pro-通往百万级上下文与万亿参数推理的新纪元-v2.md`
 
 # DeepSeek V4 Flash & Pro: Million-Token Context and Trillion-Parameter Inference

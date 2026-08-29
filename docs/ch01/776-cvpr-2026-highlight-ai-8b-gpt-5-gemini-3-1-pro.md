@@ -1,7 +1,5 @@
 # CVPR 2026 Highlight｜让AI像电影人一样「看」视频，8B小模型反超GPT-5与Gemini 3.1 Pro
 
-## Ch01.776 CVPR 2026 Highlight｜让AI像电影人一样「看」视频，8B小模型反超GPT-5与Gemini 3.1 Pro
-
 > 📊 Level ⭐⭐ | 8.1KB | `entities/CVPR-2026-Highlight-让AI像电影人一样-看-视频-8B小模型反超GPT-5与Gemini-3-1-Pro.md`
 
 ## 核心要点

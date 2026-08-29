@@ -1,7 +1,5 @@
 # Cursor如何把一个通用模型，训成顶级编程 Agent
 
-## Ch01.1163 Cursor如何把一个通用模型，训成顶级编程 Agent
-
 > 📊 Level ⭐⭐ | 5.2KB | `entities/cursor如何把一个通用模型训成顶级编程-agent.md`
 
 # Cursor如何把一个通用模型，训成顶级编程 Agent

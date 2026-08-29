@@ -1,7 +1,5 @@
 # Claude Code Agent Memory Systems — L0~L3 四层记忆方案
 
-## Ch06.042 Claude Code Agent Memory Systems — L0~L3 四层记忆方案
-
 > 📊 Level ⭐⭐ | 4.1KB | `entities/claude-code-agent-memory-four-levels-analysis.md`
 
 # Claude Code Agent Memory Systems — L0~L3 四层记忆方案

@@ -1,7 +1,5 @@
 # 从 Hy3 preview 看 AI 下半场：单位智能时代的一次工程答卷
 
-## Ch01.1114 从 Hy3 preview 看 AI 下半场：单位智能时代的一次工程答卷
-
 > 📊 Level ⭐⭐ | 5.6KB | `entities/从-hy3-preview-看-ai-下半场单位智能时代的一次工程答卷.md`
 
 # 从 Hy3 preview 看 AI 下半场：单位智能时代的一次工程答卷

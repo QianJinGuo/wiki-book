@@ -1,7 +1,5 @@
 # Secure AI agents with Policy and Lambda interceptors in Amazon Bedrock AgentCore gateway
 
-## Ch11.289 Secure AI agents with Policy and Lambda interceptors in Amazon Bedrock AgentCore gateway
-
 > 📊 Level ⭐⭐ | 3.0KB | `entities/secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz.md`
 
 # Secure AI agents with Policy and Lambda interceptors in Amazon Bedrock AgentCore gateway

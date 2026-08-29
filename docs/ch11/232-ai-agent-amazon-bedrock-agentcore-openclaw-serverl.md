@@ -1,7 +1,5 @@
 # AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第三篇 | 亚马逊AWS官方博客
 
-## Ch11.232 AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第三篇 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 5.8KB | `entities/using-amazon-bedrock-agentcore-openclaw-multi-3.md`
 
 ## 概述

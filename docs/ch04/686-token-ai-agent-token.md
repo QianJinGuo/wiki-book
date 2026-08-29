@@ -1,7 +1,5 @@
 # 鹅厂 Token 刺客：AI Agent 使用中的 Token 浪费反模式与实践教训
 
-## Ch04.686 鹅厂 Token 刺客：AI Agent 使用中的 Token 浪费反模式与实践教训
-
 > 📊 Level ⭐⭐ | 4.7KB | `entities/tencent-token-刺客-token浪费反模式-2026-07-23.md`
 
 # 鹅厂 Token 刺客：AI Agent 使用中的 Token 浪费反模式与实践教训

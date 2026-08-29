@@ -1,7 +1,5 @@
 # Amazon EKS MCP Server
 
-## Ch07.094 Amazon EKS MCP Server
-
 > 📊 Level ⭐⭐ | 2.0KB | `entities/amazon-eks-mcp-server.md`
 
 # Amazon EKS MCP Server

@@ -1,7 +1,5 @@
 # TACO: 让 CLI Agent 在自主迭代中学会丢掉无用上下文
 
-## Ch01.905 TACO: 让 CLI Agent 在自主迭代中学会丢掉无用上下文
-
 > 📊 Level ⭐⭐ | 7.1KB | `entities/taco-让-cli-agent-在自主迭代中学会丢掉无用上下文.md`
 
 # TACO: 让 CLI Agent 在自主迭代中学会丢掉无用上下文

@@ -1,7 +1,5 @@
 # The Inference Shift
 
-## Ch01.1490 The Inference Shift
-
 > 📊 Level ⭐⭐⭐ | 12.3KB | `entities/the-inference-shift.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-inference-shift.md)

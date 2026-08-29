@@ -1,7 +1,5 @@
 # Paperclip · AI 公司操作系统 · 第 5 篇（完结）
 
-## Ch01.1215 Paperclip · AI 公司操作系统 · 第 5 篇（完结）
-
 > 📊 Level ⭐⭐ | 4.9KB | `entities/hermes-agent-newbie-guide-dotta.md`
 
 ## 深度分析

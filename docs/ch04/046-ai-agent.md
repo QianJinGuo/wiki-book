@@ -1,7 +1,5 @@
 # 最新！万字综述 AI Agent 从记忆到自我进化！
 
-## Ch04.046 最新！万字综述 AI Agent 从记忆到自我进化！
-
 > 📊 Level ⭐ | 0.8KB | `entities/ai-agent-survey-memory-reasoning-evolution-datawhale.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-agent-survey-memory-reasoning-evolution-datawhale.md)

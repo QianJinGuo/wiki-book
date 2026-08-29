@@ -1,7 +1,5 @@
 # 腾讯混元Hy3-preview发布
 
-## Ch01.142 腾讯混元Hy3-preview发布
-
 > 📊 Level ⭐ | 4.9KB | `entities/tencent-hunyuan-hy3-preview-open-source-agent.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-hunyuan-hy3-preview-open-source-agent.md)

@@ -1,7 +1,5 @@
 # AutoCLI / OpenCLI / AgentBrowser / CLI-Anything 调研
 
-## Ch01.673 AutoCLI / OpenCLI / AgentBrowser / CLI-Anything 调研
-
 > 📊 Level ⭐⭐ | 9.2KB | `entities/autocli-opencli-agentbrowser-research.md`
 
 # AutoCLI / OpenCLI / AgentBrowser / CLI-Anything 调研

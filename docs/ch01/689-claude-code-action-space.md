@@ -1,7 +1,5 @@
 # Claude Code 核心开发者经验：Action Space 设计
 
-## Ch01.689 Claude Code 核心开发者经验：Action Space 设计
-
 > 📊 Level ⭐⭐ | 8.9KB | `entities/claude-code-core-developer-lessons-action-space-design.md`
 
 # Lessons from Building Claude Code: Seeing like an Agent

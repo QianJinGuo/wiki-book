@@ -1,7 +1,5 @@
 # OpenAgents Workspace：多 Agent 协作平台
 
-## Ch03.094 OpenAgents Workspace：多 Agent 协作平台
-
 > 📊 Level ⭐⭐ | 9.2KB | `entities/openagents-workspace-multi-agent-collaboration-itech.md`
 
 # OpenAgents Workspace：多 Agent 协作平台

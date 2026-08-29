@@ -1,7 +1,5 @@
 # SciAgentGym：多步科学工具使用的 LLM Agent 评测基准
 
-## Ch04.624 SciAgentGym：多步科学工具使用的 LLM Agent 评测基准
-
 > 📊 Level ⭐⭐ | 5.7KB | `entities/sciagentgym-benchmark-multi-step-scientific-tool-use.md`
 
 # SciAgentGym：多步科学工具使用的 LLM Agent 评测基准

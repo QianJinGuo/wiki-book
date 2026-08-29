@@ -1,7 +1,5 @@
 # Agent 记忆注入实战：5 维框架（选什么/放哪里/怎么放/放多少/何时放）+ 4 前沿论文（MemGuide/STITCH/ACE/Lost in the Middle）
 
-## Ch01.558 Agent 记忆注入实战：5 维框架（选什么/放哪里/怎么放/放多少/何时放）+ 4 前沿论文（MemGuide/STITCH/ACE/Lost in the Middle）
-
 > 📊 Level ⭐⭐ | 11.3KB | `entities/agent-memory-injection-5-dimensions-4-papers-agent-shouji-2026.md`
 
 # Agent 记忆注入实战：5 维框架 + 4 前沿论文

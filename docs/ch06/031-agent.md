@@ -1,7 +1,5 @@
 # Agent 自进化四齿飞轮：评测→记忆→落地→控制（腾讯技术工程）
 
-## Ch06.031 Agent 自进化四齿飞轮：评测→记忆→落地→控制（腾讯技术工程）
-
 > 📊 Level ⭐⭐ | 7.0KB | `entities/agent-self-evolution-four-gear-flywheel-tencent-2026.md`
 
 # Agent 自进化四齿飞轮：评测→记忆→落地→控制（腾讯技术工程）

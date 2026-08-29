@@ -1,7 +1,5 @@
 # 全新开源RL框架Vime-Ascend介绍及ModelArts实战指南
 
-## Ch01.172 全新开源RL框架Vime-Ascend介绍及ModelArts实战指南
-
 > 📊 Level ⭐ | 3.5KB | `entities/全新开源rl框架vime-ascend介绍及modelarts实战指南.md`
 
 # 全新开源RL框架Vime-Ascend介绍及ModelArts实战指南

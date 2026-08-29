@@ -1,7 +1,5 @@
 # SkillOpt — 微软训练 Skill 文档的方法论
 
-## Ch07.028 SkillOpt — 微软训练 Skill 文档的方法论
-
 > 📊 Level ⭐⭐ | 10.7KB | `entities/skillopt-microsoft-research-skill-training.md`
 
 # SkillOpt — 微软训练 Skill 文档的方法论

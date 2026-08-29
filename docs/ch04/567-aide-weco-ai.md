@@ -1,7 +1,5 @@
 # AIDE² — 递归自我改进首获实验证据（Weco AI）
 
-## Ch04.567 AIDE² — 递归自我改进首获实验证据（Weco AI）
-
 > 📊 Level ⭐⭐ | 6.7KB | `entities/aide2-recursive-self-improvement-weco-2026.md`
 
 # AIDE² — 递归自我改进首获实验证据（Weco AI）

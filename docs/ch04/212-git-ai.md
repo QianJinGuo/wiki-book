@@ -1,7 +1,5 @@
 # Git仓库 + AI 编码助手做项目管理
 
-## Ch04.212 Git仓库 + AI 编码助手做项目管理
-
 > 📊 Level ⭐⭐ | 13.2KB | `entities/git-repo-based-pm-automation.md`
 
 # Git仓库 + AI 编码助手做项目管理

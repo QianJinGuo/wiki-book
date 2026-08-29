@@ -1,7 +1,5 @@
 # CAMEL: 置信度门控反思机制用于奖励建模 — TikTok/NUS (ICML 2026)
 
-## Ch01.1608 CAMEL: 置信度门控反思机制用于奖励建模 — TikTok/NUS (ICML 2026)
-
 > 📊 Level ⭐⭐⭐⭐ | 7.5KB | `entities/icml-2026-camel-confidence-gated-reward-model-tiktok.md`
 
 # CAMEL: 置信度门控反思机制用于奖励建模 — TikTok/NUS (ICML 2026)

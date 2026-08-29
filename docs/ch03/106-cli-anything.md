@@ -1,7 +1,5 @@
 # CLI-Anything
 
-## Ch03.106 CLI-Anything
-
 > 📊 Level ⭐⭐ | 8.0KB | `entities/cli-anything.md`
 
 ## Overview

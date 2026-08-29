@@ -1,7 +1,5 @@
 # 啊？我刚开源的 Skills 已经 7K Star 了？！
 
-## Ch07.038 啊？我刚开源的 Skills 已经 7K Star 了？！
-
 > 📊 Level ⭐⭐ | 9.8KB | `entities/conardli-skills-7k-star-open-source-agent-2026.md`
 
 # 啊？我刚开源的 Skills 已经 7K Star 了？！

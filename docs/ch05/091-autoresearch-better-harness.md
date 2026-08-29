@@ -1,7 +1,5 @@
 # 从 Autoresearch 到 Better-Harness：自动优化真正难在评价信号
 
-## Ch05.091 从 Autoresearch 到 Better-Harness：自动优化真正难在评价信号
-
 > 📊 Level ⭐⭐ | 7.1KB | `entities/better-harness-eval-trace-harness-hill-climbing.md`
 
 # 从 Autoresearch 到 Better-Harness：自动优化真正难在评价信号

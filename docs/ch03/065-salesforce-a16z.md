@@ -1,7 +1,5 @@
 # Salesforce 主动砍掉了界面，a16z 合伙人说：护城河从来不在那里
 
-## Ch03.065 Salesforce 主动砍掉了界面，a16z 合伙人说：护城河从来不在那里
-
 > 📊 Level ⭐⭐ | 16.9KB | `entities/salesforce-headless-software-losing-head-a16z.md`
 
 ## 核心命题

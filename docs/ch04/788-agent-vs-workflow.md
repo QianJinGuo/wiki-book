@@ -1,7 +1,5 @@
 # Agent vs Workflow：控制权连续谱与生产级选型框架
 
-## Ch04.788 Agent vs Workflow：控制权连续谱与生产级选型框架
-
 > 📊 Level ⭐⭐ | 3.2KB | `entities/agent-vs-workflow-control-continuum-framework.md`
 
 # Agent vs Workflow：控制权连续谱与生产级选型框架

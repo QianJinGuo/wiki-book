@@ -1,7 +1,5 @@
 # Harness Engineering：AI工程的三次进化
 
-## Ch05.034 Harness Engineering：AI工程的三次进化
-
 > 📊 Level ⭐⭐ | 15.9KB | `entities/harness-engineering-three-evolutions.md`
 
 ## 概述

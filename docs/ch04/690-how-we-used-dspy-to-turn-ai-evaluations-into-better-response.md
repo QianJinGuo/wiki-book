@@ -1,7 +1,5 @@
 # How we used DSPy to turn AI evaluations into better responses in Dash chat
 
-## Ch04.690 How we used DSPy to turn AI evaluations into better responses in Dash chat
-
 > 📊 Level ⭐⭐ | 4.6KB | `entities/how-we-used-dspy-to-turn-ai-evaluations-into-better-response.md`
 
 # How we used DSPy to turn AI evaluations into better responses in Dash chat

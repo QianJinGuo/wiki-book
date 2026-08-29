@@ -1,7 +1,5 @@
 # Hermes Agent /goal 长任务运行时架构
 
-## Ch04.371 Hermes Agent /goal 长任务运行时架构
-
 > 📊 Level ⭐⭐ | 9.3KB | `entities/hermes-agent-goal-runtime-architecture.md`
 
 ## 元信息

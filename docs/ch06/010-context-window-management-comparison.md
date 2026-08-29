@@ -1,7 +1,5 @@
 # Context Window Management Comparison
 
-## Ch06.010 Context Window Management Comparison
-
 > 📊 Level ⭐⭐ | 15.8KB | `entities/context-window-management-comparison.md`
 
 # Context Window 管理框架深度对比：Pi、OpenClaw、Claude Code、Letta
