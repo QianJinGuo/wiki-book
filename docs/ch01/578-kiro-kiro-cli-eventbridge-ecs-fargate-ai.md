@@ -1,0 +1,50 @@
+# 构建无服务器Kiro调度平台：用Kiro CLI + EventBridge + ECS Fargate实现定时AI任务
+
+> 📊 Level ⭐⭐ | 5.3KB | `entities/构建无服务器kiro调度平台用kiro-cli-eventbridge-ecs-fargate实现定时ai任务.md`
+
+# 构建无服务器Kiro调度平台：用Kiro CLI + EventBridge + ECS Fargate实现定时AI任务
+
+## 相关实体
+
+- [xz, two years on: what scanners still cannot catch](458-xz.html)
+- [autoresearch 迁移到软件开发：多 agent 交叉审核的工程实践](https://github.com/QianJinGuo/wiki/blob/main/entities/autoresearch-software-development.md)
+- [扣子 3.0 正式发布：@ 一下全员开工](https://github.com/QianJinGuo/wiki/blob/main/entities/coze-3-release-official-quantum-bit.md)
+- [知识库问答 @文档：从 dom 方案到 prosemirror 落地](https://github.com/QianJinGuo/wiki/blob/main/entities/prosemirror-knowledge-base-mention-vivo.md)
+- [valkey 为什么这么快？盘点 valkey 中提升性能的黑科技](https://github.com/QianJinGuo/wiki/blob/main/entities/valkey-why-valkey-performance.md)
+- [zapocalypse: the attack chain that could have hijacked zapie](../ch11/193-zapocalypse-the-attack-chain-that-could-have-hijacked-zapie.html)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/构建无服务器kiro调度平台用kiro-cli-eventbridge-ecs-fargate实现定时ai任务.md)
+
+## 深度分析
+
+构建无服务器Kiro调度平台：用Kiro CLI + EventBridge + ECS Fargate实现定时AI任务 涉及agent领域的核心技术议题。
+### 核心观点
+1. # 构建无服务器Kiro调度平台：用Kiro CLI + EventBridge + ECS Fargate实现定时AI任务
+摘要：AI 编程助手如 Kiro CLI 能力日益强大，但使用场景局限于开发者本地终端。
+2. 本文介绍 Kiro Job Scheduler——一个完全基于 AWS 无服务器架构的 AI 任务调度平台。
+3. 它让团队中的任何人（包括非技术人员）都能通过 Web 界面配置定时 AI 任务：自定义 Agent 角色、挂载 MCP 工具服务器、编排 Skills 技能包，实现从「每日新闻摘要」到「定期代码审计」的各类自动化场景。
+4. 任务结果自动推送到飞书或 Telegram，真正实现 AI 助手的 7×24 小时无人值守运行。
+5. **目录**
+01 一、背景：从交互式到自动化
+02 二、平台能力概览
+03 三、核心功能：自定义 Agent + MCP + Skills
+04 四、整体架构
+05 五、业务价值：让非技术人员也能驾驭 AI 自动化
+06 六、部署与快速开始
+07 七、安全设计
+08 八、扩展方向
+09 九、结论
+10 十、参考链接
+## **一、背景：从交互式到自动化**
+Kiro 是 AWS 推出的下一代 AI 编程助手，提供 IDE 与 CLI 两种形态。
+
+### 关联实体
+
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/004-agent.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch04/176-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04/176-openclaw.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/193-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [你不知道的 Agent原理架构与工程实践 V2](../ch03/004-agent.html)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch04/176-openclaw.html)
+
+---
+

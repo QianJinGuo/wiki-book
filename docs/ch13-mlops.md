@@ -2,7 +2,7 @@
 
 > 不能观测就不能改进：评估体系、基准测试、实验追踪
 
-> 本章收录 **28 篇**实体，按深度递增排列。
+> 本章收录 **15 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,8 +11,8 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 1 |
-| ⭐⭐ 工程师 | 需编程基础 | 24 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 2 |
+| ⭐⭐ 工程师 | 需编程基础 | 12 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 1 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 
 ---
@@ -292,7 +292,7 @@ AI Skill 测评报告是一套**分层置信机制**：用颜色横幅给出确�
 
 ## Ch13.002 Agent 评测方法论——美团图灵两年 BP 实践（人人一致/人机一致 + 桥梁指标 + 长程范式）
 
-> 📊 Level ⭐⭐ | 20.5KB | `entities/meituan-turing-agent-evaluation-methodology-2026-08-06.md`
+> 📊 Level ⭐⭐ | 20.4KB | `entities/meituan-turing-agent-evaluation-methodology-2026-08-06.md`
 
 # Agent 评测方法论——美团图灵两年 BP 实践
 
@@ -418,7 +418,7 @@ ChatAgent 时代：核心评测员对齐 → 外包对齐 → 机评对齐。长
 - [Agent 可观测性五层架构](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-observability-5-layer-architecture.md)——「观测是评测的基石」与其 Trace 分层设计互证；长程评测对 Trace 的结构性依赖
 - [美团 LongCat 长程动态 Agent 评测基准](https://github.com/QianJinGuo/wiki/blob/main/entities/meituan-longcat-vitabench-20-long-term-dynamic-agent-benchmark.md)——同团队评测基建的基准侧产物
 - [Harness 减法工程（腾讯 tdsql-harness）](https://github.com/QianJinGuo/wiki/blob/main/entities/tdsql-harness-subtraction-l0-l3-tencent-2026-08-06.md)——「判据必须能被机械判定」与本文「Rubric 二元化」是同一原则在评测与指令两侧的体现；验证类 skill 影响最可测量与此处人机一致方法论互证
-- [Harness Gate 评估](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-gate-evaluation.md)——准入准出门禁嵌入开发发布流程与其 gate 设计思想同源
+- Harness Gate 评估——准入准出门禁嵌入开发发布流程与其 gate 设计思想同源
 - [AliExpress 细粒度 Agent 评测体系](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-evaluation-fine-grained-system-aliexpress-2026.md)——另一家大厂工业评测实践，可横向对比
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/meituan-turing-agent-evaluation-methodology-2026-08-06.md)
@@ -538,11 +538,11 @@ Token 级可观测数据对于定位 vLLM/SGLang/TensorRT-LLM 等引擎的并发
 ### 对于推动 OTel 标准的社区贡献者
 LoongSuite 的演进路径——内部验证后贡献社区——是大型企业参与开源标准的最佳实践 。在 OTel 社区提案 Skill 语义的经历表明，社区对有充分生产验证的提案接受度更高，建议其他厂商在类似领域也采用这一路径 。
 ## 相关实体
-- [[entities/loongsuite-genai-semconv]
-- [[entities/alibaba-agent-observability-audit-loongsuite-pilot-coding-agent-blackbox-to-transparent]
-- [[entities/deeppotential-alibabacloud-agentrun-scientific-ai]
-- [[entities/从多智能体编排到ai自主决策资损防控体系的架构演进]
-- [[entities/给氛围编程系上安全带阿里集团-ai-代码评审实践与-benchmark-开源]
+- [Loongsuite Genai Semconv](https://github.com/QianJinGuo/wiki/blob/main/entities/loongsuite-genai-semconv.md)
+- [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](https://github.com/QianJinGuo/wiki/blob/main/entities/alibaba-agent-observability-audit-loongsuite-pilot-coding-agent-blackbox-to-transparent.md)
+- [Deeppotential Alibabacloud Agentrun Scientific Ai](https://github.com/QianJinGuo/wiki/blob/main/entities/deeppotential-alibabacloud-agentrun-scientific-ai.md)
+- [从多智能体编排到Ai自主决策资损防控体系的架构演进](https://github.com/QianJinGuo/wiki/blob/main/entities/从多智能体编排到ai自主决策资损防控体系的架构演进.md)
+- [给氛围编程系上安全带阿里集团 Ai 代码评审实践与 Benchmark 开源](https://github.com/QianJinGuo/wiki/blob/main/entities/给氛围编程系上安全带阿里集团-ai-代码评审实践与-benchmark-开源.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/阿里巴巴蚂蚁-loongsuite-genai-可观测语义规范从统一数据语言到规模化落地.md)
 
@@ -552,7 +552,7 @@ LoongSuite 的演进路径——内部验证后贡献社区——是大型企业
 
 > 📊 Level ⭐⭐ | 17.2KB | `entities/ai-skill-测评指标体系.md`
 
-[[raw/articles/ai-skill-测评指标体系]
+[Ai Skill 测评指标体系](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-skill-测评指标体系.md)
 
 # 02—通过率、增益 Δ、IFR 怎么看？AI Skill 测评指标体系完整解读
 系列：AI Skill 测评体系从零到一（二）
@@ -814,18 +814,216 @@ Stddev > 0.1 时，按以下顺序排查：
 | Stddev | < 0.05 | 0.08 | 🟡 |
 让决策者一目了然地看到哪些是绿灯放行、哪些需要人工判断。
 ## 相关实体
-- [[entities/ai-skill-metrics-system]
-- [[entities/ai-skill-evolution-framework]
-- [[entities/ai-skill-测评报告解读]
-- [[entities/ai-skill-skill-creator-源码拆解]
-- [[entities/harness-engineered-business-agent-evaluation-aliyun-boyu]
+- [Ai Skill Metrics System](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-skill-metrics-system.md)
+- [Ai Skill Evolution Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-skill-evolution-framework.md)
+- [Ai Skill 测评报告解读](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-skill-测评报告解读.md)
+- [Ai Skill Skill Creator 源码拆解](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-skill-skill-creator-源码拆解.md)
+- [Harness Engineered Business Agent Evaluation Aliyun Boyu](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineered-business-agent-evaluation-aliyun-boyu.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-skill-测评指标体系.md)
 
 ---
 
-## Ch13.005 循环工程 (Loop Engineering) — 清华 2026 框架
+## Ch13.005 NICE：浙大提出的理论驱动型 LLM 社会智能诊断基准
+
+> 📊 Level ⭐⭐ | 16.7KB | `entities/nice-zhejiang-university-social-intelligence-benchmark-hyman.md`
+
+# NICE：浙大提出的理论驱动型 LLM 社会智能诊断基准
+
+> 本实体整理自 [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nice-zhejiang-university-social-intelligence-benchmark-hyman-2026-06-12.md)，并参考浙大 arXiv 论文 *NICE: A Theory-Grounded Diagnostic Benchmark for Social Intelligence of LLMs*（https://arxiv.org/abs/2605.29685 ）。
+
+## 一句话总结
+
+NICE（**N**ot **I**ust **C**orrectness, **E**valuation of social intelligence）由浙江大学心理与行为科学系与人工智能学院联合团队提出，将社会智能组织为 **4 大类、11 维度、34 个能力内涵**，用 **137 道中国情境排序题**评测 5 个前沿 LLM（GPT-5.5、Claude-Opus-4.7、Gemini-3.1-pro-preview、DeepSeek-V4-pro、Qwen3.6-plus），发现模型总体准确率（75.1%）高于人类参考组（70.4%），但「**沟通**」是集体短板，且模型在多轮沟通、非言语沟通、同步性三个内涵上系统失效。
+
+## NICE 解决的关键问题
+
+社会智能（Social Intelligence）通常指个体理解、融入并适应社会环境的能力，对 LLM 来说直接关系到人机交互的质量与安全。现有评测基准存在三个关键 gap：
+
+- **Gap 1**：缺少整体全面、理论驱动的社会智能评测框架（多数基准聚焦心理理论/情绪理解等单一切片）
+- **Gap 2**：缺少精细到能力内涵的诊断能力（错误只能归到维度总分，无法定位到具体能力内涵）
+- **Gap 3**：缺少贯穿全流程的严谨心理测量学方法
+
+NICE 的定位正是系统补齐这三条 gap。
+
+## 理论框架：4 大类 × 11 维度 × 34 能力内涵
+
+NICE 的理论框架由系统文献综述 + 16 位专家多轮评分修订而成，采用层次分析法（AHP）确定各层级权重。
+
+| 类别 | 维度 | 模型需具备的能力 |
+|------|------|------------------|
+| **Cognition（社会认知）** | 社会感知、社会理解与洞察 | 感知、理解和推断社会信息 |
+| **Interaction（社会交互）** | 沟通、情绪利用、关系管理、自我一致性 | 选择合适的沟通、情绪、关系和行为策略 |
+| **Experience（社会学习）** | 观察模仿、适应性学习 | 从观察、互动结果和反馈中学习 |
+| **Norm（社会规范）** | 社会文化智能、社会责任、道德与伦理智能 | 理解社会文化规则、道德约束和责任要求 |
+
+NICE 是第一个将社会智能**全面理论化**的评测框架，且每一道题与唯一的能力内涵清晰对应，这是它"可诊断"的基础。
+
+## 题目设计：排序题替代单选
+
+NICE 共 137 题，基于**中国情境**设计，每题包含：
+
+- 一个社会情境
+- 一个问题
+- 若干候选回应（按"最优—次优—最差"梯度排列）
+
+测试要求模型**完整排序**候选回应，与专家标准答案**完全一致**才算正确。这跳出"非黑即白"的判断，考察模型社会判断的合理性和**边界敏感性**——能否识别最差选项是 NICE 与其他 benchmark 的最大差异。
+
+### 为什么用排序而不是单选？
+
+单选测试中模型可能"碰巧选对最优"但仍把夸张的礼貌行为排在第二位；排序任务把边界敏感性显式化，**让模型识别"什么行为不该做"**成为可测量信号。
+
+## 心理测量学四阶段构建流程
+
+NICE 的构建分四阶段，全程引入心理测量原则：
+
+1. **框架构建**：人类 + AI 社会智能理论 + 16 位专家评分 + 焦点小组 + AHP 权重
+2. **素材收集**：18 个社会智能相关 LLM 评测基准 + 43 个经典心理学范式作为参考
+3. **题项构建**：2 位具 7–8 年心理学研究经验的研究者严格按目标维度设计
+4. **题项评估与验证**：三轮修订 + 12 位评估者 5 点评分（阈值 3.5 分；不达标题项重测）
+
+这一流程的工程意义：避免多个子任务简单拼凑，增强理论框架有效性和诊断结果可解释性。
+
+## 五大核心发现
+
+### 发现 1：LLM 总体准确率高于人类参考组
+
+| 模型 | NICE 准确率 |
+|------|------------|
+| LLM 平均 | **75.1%** |
+| Gemini-3.1-pro-preview | ~75%+（与 GPT-5.5 并列前二） |
+| GPT-5.5 | ~75%+ |
+| Claude-Opus-4.7 | **71.1%**（最低） |
+| 人类参考组（14 人） | **70.4%** |
+
+LLM 平均比人类高 4.7 个百分点，但前二差距极小，分布紧凑。
+
+### 发现 2：优势集中在部分维度，尚未全面领先
+
+LLM 优势集中在：**社会感知、情绪运用、自我一致性、适应性学习、社会责任** 5 个维度。其余 6 个维度（尤其沟通 D3）未显示稳定优势。
+
+### 发现 3：沟通是集体短板
+
+在所有 11 个维度中，**D3 沟通（Communication）是人类参考组显著优于 LLM 的唯一维度**，且对 5 个被测模型都是得分最低维度。
+
+### 发现 4：沟通短板集中在三个内涵
+
+模型在 D3 的失效集中在：
+
+- **多轮沟通**（multi-turn）
+- **非言语沟通**（non-verbal）
+- **同步性**（synchrony）
+
+这三类任务的共同点是：高度依赖互动节奏、非语言线索、上下文连续性——而当前 LLM 的"上下文窗口 + 文本生成"范式与这三类需求存在结构性错配。
+
+### 发现 5：模型可能过度偏好显性礼貌行为
+
+经典反例：初次见面场景中，对"180 度鞠躬"的判断
+
+- 71.43% 的人类参与者认为是最差选择（夸张、不自然）
+- Claude-Opus-4.7 和 GPT-5.5 在 3 次独立测试中**从未把它排为最差**，稳定放在第二位
+- 后续解释显示模型把它理解为"礼貌表达"
+
+这暴露了模型的"礼貌偏好"——能识别正确答案的"对"，但无法识别"过了"。"总分高"掩盖了这种边界敏感性。
+
+## 深度分析
+
+### 排序题作为诊断信号的设计哲学
+
+NICE 的排序题本质上是在测试"边界敏感性"——模型能否识别"什么行为不该做"，而不仅"什么行为最该做"。这与 RLHF 的偏好对齐训练目标高度同构，但又有重要差异：
+
+- **RLHF** 关注"输出对人类偏好的拟合度"，但**不显式测试"违规行为的识别"**
+- **NICE** 把"识别最差选项"作为评分项之一，**强制模型展示对越界行为的判别能力**
+
+这意味着 NICE 不仅是评测工具，还可以作为**对齐训练的目标函数**——把"排序的边界敏感性"作为奖励信号，可能比单纯"对齐到人类偏好"更能培养出对情境敏感的智能体。
+
+### D3 沟通短板的范式根源
+
+LLM 在"多轮/非言语/同步性"三个沟通内涵上的集体失效，根源在于**模型架构与沟通任务的结构性错配**：
+
+| 沟通内涵 | LLM 范式缺陷 |
+|---------|-------------|
+| 多轮沟通 | 上下文窗口限制 + 位置编码衰减 → 长对话中后段信息丢失 |
+| 非言语沟通 | 文本模型**根本没有**对肢体、表情、语调的通道 → 即使把话写成文字也缺乏情境感 |
+| 同步性 | 单次生成模式无法观察"对方此刻的反应" → 无法做互动节拍（pacing）调整 |
+
+这一发现对多模态 Agent、对话系统、陪护机器人都有直接启示：单文本 LLM 永远无法"看起来懂沟通"，必须引入多模态输入 + 反应性生成机制。
+
+### 礼貌偏好与对齐的隐性代价
+
+NICE 暴露的"过度偏好显性礼貌"现象可能是 RLHF 的隐性代价——人类标注员普遍偏好"礼貌"输出，模型学到了"礼貌 = 好"的启发式，却丢失了"礼貌过头 = 越界"的判断力。
+
+这指向一个深度对齐问题：**对齐到人类偏好的均值，会让模型在长尾的"反共识"判断上失灵**。社会智能的对齐可能需要"反事实人类评估"——专门训练模型识别"多数人偏好但实际越界"的场景。
+
+### 中国情境 vs 西方情境的迁移性
+
+NICE 全部基于中国情境设计（人际边界、面子、关系等文化负载强），5 个被测 LLM 总体表现仍能超过人类参考组，这本身是一个**跨文化稳健性信号**——前训练的语料混合让 LLM 在不同文化情境下都获得了基础社会判断能力。
+
+但 D3 沟通短板的根因之一可能正是**文化负载的中和**：模型学到了"礼貌"的一般模式，但在"中国式 180 度鞠躬"这种文化特异性信号上失灵。这对部署在特定文化语境的 Agent 是重要警示。
+
+## 实践启示
+
+### 对 LLM 评测的启示
+
+1. **从总分竞赛走向能力诊断**：当一个模型的"社会智能"总分高于人类，开发者更应关心"它在哪些具体内涵上仍不如人类"，而非"它总分多少"
+2. **排序题比单选更能暴露细微缺陷**：单选测试的高分可能掩盖边界敏感性的缺失
+3. **理论驱动优于数据驱动**：从框架出发设计题项（如 NICE 的 4×11×34）比从语料库随机抽题更具诊断价值
+
+### 对 Agent 设计的启示
+
+1. **沟通型 Agent 需多模态**：单文本 LLM 注定在非言语沟通、同步性上有结构性缺陷，客服/陪护/教育等强沟通场景的 Agent 必须考虑引入语音、视觉、节奏感知
+2. **边界敏感性可作为对齐目标**：把"识别最差选项"的能力作为训练信号，可能比"输出最礼貌回应"更接近真正的社会智能
+3. **文化情境的本地化训练**：把特定文化的人际边界、关系模式、情境规约做成领域数据，可提升 Agent 在该文化下的可信度
+
+### 对 AI 安全与对齐的启示
+
+1. **礼貌偏好的隐性代价**：模型学到了"礼貌 = 好"，但失去了"礼貌过头 = 越界"的判别力 — 显式测试"反共识边界"是对齐评估的关键
+2. **社会智能短板 ≠ 安全风险**：D3 沟通短板目前表现为"过度礼貌"，未直接造成安全风险；但同一短板模式若出现在"伦理判断"维度，可能引发更严重问题 — 需扩展 NICE 类评测到安全边界
+
+## 与其他评测基准的对比
+
+| 维度 | NICE | 心理理论/情绪类基准 | 开放式多轮交互基准 |
+|------|------|------------------|------------------|
+| 理论驱动 | ✅ 4×11×34 完整框架 | ❌ 通常聚焦单一能力 | ⚠️ 部分有理论背景 |
+| 能力内涵级诊断 | ✅ 34 个内涵 | ❌ 仅总体分数 | ⚠️ 子任务分数 |
+| 心理测量学方法 | ✅ 全程 AHP + 专家验证 | ⚠️ 部分有 | ❌ 多为语料抽样 |
+| 排序题（边界敏感） | ✅ | ❌ 多为单选 | ❌ 多为开放式 |
+| 中国情境 | ✅ 137 题 | ⚠️ 部分有 | ⚠️ 部分有 |
+
+NICE 真正的差异化定位是**「理论 + 内涵级 + 排序题」三位一体**——三者结合才能既给出"模型社会智能如何"的总体判断，又给出"具体在哪条能力上失效"的可操作信号。
+
+## 局限与未来方向
+
+- 137 题规模相对有限，未覆盖更多文化语境
+- 5 个被测 LLM 均为通用模型，未涵盖专门微调的"对话/陪护"类模型
+- 14 人的人类参考组规模小，统计功效有限
+- 排序题评估方法本身需要专家一致性验证
+
+未来方向：拓展到复杂互动场景、更广泛文化语境、更大规模人类样本，从静态诊断走向贴近真实世界的人机互动评估。
+
+## 相关实体
+
+- [EVA-Bench Data 2.0](https://github.com/QianJinGuo/wiki/blob/main/entities/eva-bench-data-2-voice-agent-evaluation.md) — 语音 Agent 垂直领域评估
+- [MobileGym](https://github.com/QianJinGuo/wiki/blob/main/entities/mobilegym-cas-mobile-agent-benchmark.md) — Mobile Agent 训练与评测基础设施
+- [YAML 驱动的 Agent 评估框架](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-eval-wallezhang-yaml-driven-agent-evaluation.md)
+- [Agent 记忆评估综述](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-evaluation-landscape-taobao-survey.md)
+- [Frontier Code Cognition Mergeability Benchmark](https://github.com/QianJinGuo/wiki/blob/main/entities/frontier-code-cognition-mergeability-benchmark.md)
+- [AI 评估的三种方法](https://github.com/QianJinGuo/wiki/blob/main/entities/evals-three-methods-of-ai-evaluation.md)
+- [Agent Skill 写作评估](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing-evaluation.md)
+- [AI 工作面试与模型评估](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-job-interview-model-evaluation-mollick.md)
+- [Inngest 2026 AI 评测报告](https://github.com/QianJinGuo/wiki/blob/main/entities/inngest-ai-in-production-the-2026-benchmark-report.md)
+- [Agent Harness 生产设计指南](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-architecture-design-production-guide.md)
+- [Agent 工程原则](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-engineering-principles-architecture-practice.md)
+- [SkillClaw Hyman 阿里 Skill 框架](https://github.com/QianJinGuo/wiki/blob/main/entities/skillclaw-hyman-nightly-evolution-alibaba.md)
+- [SkillX 浙大 Hyman](https://github.com/QianJinGuo/wiki/blob/main/entities/skillx-zhejiang-university-hyman.md)
+- [Claude Code 最佳社区 Fork 演进](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-best-community-fork-evolution-vibecoder.md)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nice-zhejiang-university-social-intelligence-benchmark-hyman-2026-06-12.md)
+
+---
+
+## Ch13.006 循环工程 (Loop Engineering) — 清华 2026 框架
 
 > 📊 Level ⭐⭐ | 16.7KB | `entities/loop-engineering-tsinghua-2026.md`
 
@@ -1028,204 +1226,6 @@ Agent 时代研究焦点从单次生成转向持续运行，三个关键事实�
 ## 相关实体
 - [清华 ai 自进化组织研究报告：ai 业务资产化与公司形态重构](https://github.com/QianJinGuo/wiki/blob/main/entities/tsinghua-ai-self-evolving-organization-corp-paradigm.md)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tsinghua-loop-engineering-report.md)
-
----
-
-## Ch13.006 NICE：浙大提出的理论驱动型 LLM 社会智能诊断基准
-
-> 📊 Level ⭐⭐ | 16.6KB | `entities/nice-zhejiang-university-social-intelligence-benchmark-hyman.md`
-
-# NICE：浙大提出的理论驱动型 LLM 社会智能诊断基准
-
-> 本实体整理自 [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nice-zhejiang-university-social-intelligence-benchmark-hyman-2026-06-12.md)，并参考浙大 arXiv 论文 *NICE: A Theory-Grounded Diagnostic Benchmark for Social Intelligence of LLMs*（https://arxiv.org/abs/2605.29685 ）。
-
-## 一句话总结
-
-NICE（**N**ot **I**ust **C**orrectness, **E**valuation of social intelligence）由浙江大学心理与行为科学系与人工智能学院联合团队提出，将社会智能组织为 **4 大类、11 维度、34 个能力内涵**，用 **137 道中国情境排序题**评测 5 个前沿 LLM（GPT-5.5、Claude-Opus-4.7、Gemini-3.1-pro-preview、DeepSeek-V4-pro、Qwen3.6-plus），发现模型总体准确率（75.1%）高于人类参考组（70.4%），但「**沟通**」是集体短板，且模型在多轮沟通、非言语沟通、同步性三个内涵上系统失效。
-
-## NICE 解决的关键问题
-
-社会智能（Social Intelligence）通常指个体理解、融入并适应社会环境的能力，对 LLM 来说直接关系到人机交互的质量与安全。现有评测基准存在三个关键 gap：
-
-- **Gap 1**：缺少整体全面、理论驱动的社会智能评测框架（多数基准聚焦心理理论/情绪理解等单一切片）
-- **Gap 2**：缺少精细到能力内涵的诊断能力（错误只能归到维度总分，无法定位到具体能力内涵）
-- **Gap 3**：缺少贯穿全流程的严谨心理测量学方法
-
-NICE 的定位正是系统补齐这三条 gap。
-
-## 理论框架：4 大类 × 11 维度 × 34 能力内涵
-
-NICE 的理论框架由系统文献综述 + 16 位专家多轮评分修订而成，采用层次分析法（AHP）确定各层级权重。
-
-| 类别 | 维度 | 模型需具备的能力 |
-|------|------|------------------|
-| **Cognition（社会认知）** | 社会感知、社会理解与洞察 | 感知、理解和推断社会信息 |
-| **Interaction（社会交互）** | 沟通、情绪利用、关系管理、自我一致性 | 选择合适的沟通、情绪、关系和行为策略 |
-| **Experience（社会学习）** | 观察模仿、适应性学习 | 从观察、互动结果和反馈中学习 |
-| **Norm（社会规范）** | 社会文化智能、社会责任、道德与伦理智能 | 理解社会文化规则、道德约束和责任要求 |
-
-NICE 是第一个将社会智能**全面理论化**的评测框架，且每一道题与唯一的能力内涵清晰对应，这是它"可诊断"的基础。
-
-## 题目设计：排序题替代单选
-
-NICE 共 137 题，基于**中国情境**设计，每题包含：
-
-- 一个社会情境
-- 一个问题
-- 若干候选回应（按"最优—次优—最差"梯度排列）
-
-测试要求模型**完整排序**候选回应，与专家标准答案**完全一致**才算正确。这跳出"非黑即白"的判断，考察模型社会判断的合理性和**边界敏感性**——能否识别最差选项是 NICE 与其他 benchmark 的最大差异。
-
-### 为什么用排序而不是单选？
-
-单选测试中模型可能"碰巧选对最优"但仍把夸张的礼貌行为排在第二位；排序任务把边界敏感性显式化，**让模型识别"什么行为不该做"**成为可测量信号。
-
-## 心理测量学四阶段构建流程
-
-NICE 的构建分四阶段，全程引入心理测量原则：
-
-1. **框架构建**：人类 + AI 社会智能理论 + 16 位专家评分 + 焦点小组 + AHP 权重
-2. **素材收集**：18 个社会智能相关 LLM 评测基准 + 43 个经典心理学范式作为参考
-3. **题项构建**：2 位具 7–8 年心理学研究经验的研究者严格按目标维度设计
-4. **题项评估与验证**：三轮修订 + 12 位评估者 5 点评分（阈值 3.5 分；不达标题项重测）
-
-这一流程的工程意义：避免多个子任务简单拼凑，增强理论框架有效性和诊断结果可解释性。
-
-## 五大核心发现
-
-### 发现 1：LLM 总体准确率高于人类参考组
-
-| 模型 | NICE 准确率 |
-|------|------------|
-| LLM 平均 | **75.1%** |
-| Gemini-3.1-pro-preview | ~75%+（与 GPT-5.5 并列前二） |
-| GPT-5.5 | ~75%+ |
-| Claude-Opus-4.7 | **71.1%**（最低） |
-| 人类参考组（14 人） | **70.4%** |
-
-LLM 平均比人类高 4.7 个百分点，但前二差距极小，分布紧凑。
-
-### 发现 2：优势集中在部分维度，尚未全面领先
-
-LLM 优势集中在：**社会感知、情绪运用、自我一致性、适应性学习、社会责任** 5 个维度。其余 6 个维度（尤其沟通 D3）未显示稳定优势。
-
-### 发现 3：沟通是集体短板
-
-在所有 11 个维度中，**D3 沟通（Communication）是人类参考组显著优于 LLM 的唯一维度**，且对 5 个被测模型都是得分最低维度。
-
-### 发现 4：沟通短板集中在三个内涵
-
-模型在 D3 的失效集中在：
-
-- **多轮沟通**（multi-turn）
-- **非言语沟通**（non-verbal）
-- **同步性**（synchrony）
-
-这三类任务的共同点是：高度依赖互动节奏、非语言线索、上下文连续性——而当前 LLM 的"上下文窗口 + 文本生成"范式与这三类需求存在结构性错配。
-
-### 发现 5：模型可能过度偏好显性礼貌行为
-
-经典反例：初次见面场景中，对"180 度鞠躬"的判断
-
-- 71.43% 的人类参与者认为是最差选择（夸张、不自然）
-- Claude-Opus-4.7 和 GPT-5.5 在 3 次独立测试中**从未把它排为最差**，稳定放在第二位
-- 后续解释显示模型把它理解为"礼貌表达"
-
-这暴露了模型的"礼貌偏好"——能识别正确答案的"对"，但无法识别"过了"。"总分高"掩盖了这种边界敏感性。
-
-## 深度分析
-
-### 排序题作为诊断信号的设计哲学
-
-NICE 的排序题本质上是在测试"边界敏感性"——模型能否识别"什么行为不该做"，而不仅"什么行为最该做"。这与 RLHF 的偏好对齐训练目标高度同构，但又有重要差异：
-
-- **RLHF** 关注"输出对人类偏好的拟合度"，但**不显式测试"违规行为的识别"**
-- **NICE** 把"识别最差选项"作为评分项之一，**强制模型展示对越界行为的判别能力**
-
-这意味着 NICE 不仅是评测工具，还可以作为**对齐训练的目标函数**——把"排序的边界敏感性"作为奖励信号，可能比单纯"对齐到人类偏好"更能培养出对情境敏感的智能体。
-
-### D3 沟通短板的范式根源
-
-LLM 在"多轮/非言语/同步性"三个沟通内涵上的集体失效，根源在于**模型架构与沟通任务的结构性错配**：
-
-| 沟通内涵 | LLM 范式缺陷 |
-|---------|-------------|
-| 多轮沟通 | 上下文窗口限制 + 位置编码衰减 → 长对话中后段信息丢失 |
-| 非言语沟通 | 文本模型**根本没有**对肢体、表情、语调的通道 → 即使把话写成文字也缺乏情境感 |
-| 同步性 | 单次生成模式无法观察"对方此刻的反应" → 无法做互动节拍（pacing）调整 |
-
-这一发现对多模态 Agent、对话系统、陪护机器人都有直接启示：单文本 LLM 永远无法"看起来懂沟通"，必须引入多模态输入 + 反应性生成机制。
-
-### 礼貌偏好与对齐的隐性代价
-
-NICE 暴露的"过度偏好显性礼貌"现象可能是 RLHF 的隐性代价——人类标注员普遍偏好"礼貌"输出，模型学到了"礼貌 = 好"的启发式，却丢失了"礼貌过头 = 越界"的判断力。
-
-这指向一个深度对齐问题：**对齐到人类偏好的均值，会让模型在长尾的"反共识"判断上失灵**。社会智能的对齐可能需要"反事实人类评估"——专门训练模型识别"多数人偏好但实际越界"的场景。
-
-### 中国情境 vs 西方情境的迁移性
-
-NICE 全部基于中国情境设计（人际边界、面子、关系等文化负载强），5 个被测 LLM 总体表现仍能超过人类参考组，这本身是一个**跨文化稳健性信号**——前训练的语料混合让 LLM 在不同文化情境下都获得了基础社会判断能力。
-
-但 D3 沟通短板的根因之一可能正是**文化负载的中和**：模型学到了"礼貌"的一般模式，但在"中国式 180 度鞠躬"这种文化特异性信号上失灵。这对部署在特定文化语境的 Agent 是重要警示。
-
-## 实践启示
-
-### 对 LLM 评测的启示
-
-1. **从总分竞赛走向能力诊断**：当一个模型的"社会智能"总分高于人类，开发者更应关心"它在哪些具体内涵上仍不如人类"，而非"它总分多少"
-2. **排序题比单选更能暴露细微缺陷**：单选测试的高分可能掩盖边界敏感性的缺失
-3. **理论驱动优于数据驱动**：从框架出发设计题项（如 NICE 的 4×11×34）比从语料库随机抽题更具诊断价值
-
-### 对 Agent 设计的启示
-
-1. **沟通型 Agent 需多模态**：单文本 LLM 注定在非言语沟通、同步性上有结构性缺陷，客服/陪护/教育等强沟通场景的 Agent 必须考虑引入语音、视觉、节奏感知
-2. **边界敏感性可作为对齐目标**：把"识别最差选项"的能力作为训练信号，可能比"输出最礼貌回应"更接近真正的社会智能
-3. **文化情境的本地化训练**：把特定文化的人际边界、关系模式、情境规约做成领域数据，可提升 Agent 在该文化下的可信度
-
-### 对 AI 安全与对齐的启示
-
-1. **礼貌偏好的隐性代价**：模型学到了"礼貌 = 好"，但失去了"礼貌过头 = 越界"的判别力 — 显式测试"反共识边界"是对齐评估的关键
-2. **社会智能短板 ≠ 安全风险**：D3 沟通短板目前表现为"过度礼貌"，未直接造成安全风险；但同一短板模式若出现在"伦理判断"维度，可能引发更严重问题 — 需扩展 NICE 类评测到安全边界
-
-## 与其他评测基准的对比
-
-| 维度 | NICE | 心理理论/情绪类基准 | 开放式多轮交互基准 |
-|------|------|------------------|------------------|
-| 理论驱动 | ✅ 4×11×34 完整框架 | ❌ 通常聚焦单一能力 | ⚠️ 部分有理论背景 |
-| 能力内涵级诊断 | ✅ 34 个内涵 | ❌ 仅总体分数 | ⚠️ 子任务分数 |
-| 心理测量学方法 | ✅ 全程 AHP + 专家验证 | ⚠️ 部分有 | ❌ 多为语料抽样 |
-| 排序题（边界敏感） | ✅ | ❌ 多为单选 | ❌ 多为开放式 |
-| 中国情境 | ✅ 137 题 | ⚠️ 部分有 | ⚠️ 部分有 |
-
-NICE 真正的差异化定位是**「理论 + 内涵级 + 排序题」三位一体**——三者结合才能既给出"模型社会智能如何"的总体判断，又给出"具体在哪条能力上失效"的可操作信号。
-
-## 局限与未来方向
-
-- 137 题规模相对有限，未覆盖更多文化语境
-- 5 个被测 LLM 均为通用模型，未涵盖专门微调的"对话/陪护"类模型
-- 14 人的人类参考组规模小，统计功效有限
-- 排序题评估方法本身需要专家一致性验证
-
-未来方向：拓展到复杂互动场景、更广泛文化语境、更大规模人类样本，从静态诊断走向贴近真实世界的人机互动评估。
-
-## 相关实体
-
-- [EVA-Bench Data 2.0](https://github.com/QianJinGuo/wiki/blob/main/entities/eva-bench-data-2-voice-agent-evaluation.md) — 语音 Agent 垂直领域评估
-- [MobileGym](https://github.com/QianJinGuo/wiki/blob/main/entities/mobilegym-cas-mobile-agent-benchmark.md) — Mobile Agent 训练与评测基础设施
-- [YAML 驱动的 Agent 评估框架](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-eval-wallezhang-yaml-driven-agent-evaluation.md)
-- [Agent 记忆评估综述](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-evaluation-landscape-taobao-survey.md)
-- [Frontier Code Cognition Mergeability Benchmark](https://github.com/QianJinGuo/wiki/blob/main/entities/frontier-code-cognition-mergeability-benchmark.md)
-- [AI 评估的三种方法](https://github.com/QianJinGuo/wiki/blob/main/entities/evals-three-methods-of-ai-evaluation.md)
-- [Agent Skill 写作评估](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing-evaluation.md)
-- [AI 工作面试与模型评估](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-job-interview-model-evaluation-mollick.md)
-- [Inngest 2026 AI 评测报告](https://github.com/QianJinGuo/wiki/blob/main/entities/inngest-ai-in-production-the-2026-benchmark-report.md)
-- [Agent Harness 生产设计指南](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-architecture-design-production-guide.md)
-- [Agent 工程原则](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-engineering-principles-architecture-practice.md)
-- [SkillClaw Hyman 阿里 Skill 框架](https://github.com/QianJinGuo/wiki/blob/main/entities/skillclaw-hyman-nightly-evolution-alibaba.md)
-- [SkillX 浙大 Hyman](https://github.com/QianJinGuo/wiki/blob/main/entities/skillx-zhejiang-university-hyman.md)
-- [Claude Code 最佳社区 Fork 演进](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-best-community-fork-evolution-vibecoder.md)
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nice-zhejiang-university-social-intelligence-benchmark-hyman-2026-06-12.md)
 
 ---
 
@@ -1763,225 +1763,7 @@ pass@3 相比 pass@1 整体提升约 8pp，Sonnet 4.6 多模态任务提升 18.2
 
 ---
 
-## Ch13.010 AI Agent 应用精细化评测：评测体系设计与工程实践
-
-> 📊 Level ⭐⭐ | 9.6KB | `entities/agent-evaluation-fine-grained-system-aliexpress-2026.md`
-
-# AI Agent 精细化评测体系
-
-## 一句话总结
-
-AliExpress 技术团队提出了面向生产级 AI Agent 的**全链路精细化评测体系**，将 Agent 按照架构模块（感知/规划/记忆/工具）逐层拆解、按"质量 × 成本 × 性能"三维度构建 35+ 项指标，配合 8 类分层评测数据集、6 种结构化 Judge Task 和自动化执行引擎，将 Agent 评测从黑盒成绩单升级为白盒诊断系统。
-
----
-
-## 核心贡献
-
-### 1. 评测面向架构：模块级白盒诊断
-
-Agent 按内部结构拆解为四个模块，评测指标与架构同构——意图识别准确率低直接定位感知模块，路由决策出错对应调整规划策略。端到端评测定义"好车"标准，模块级评测提供"修好车"路径。
-
-### 2. 质量 × 成本 × 性能三维指标
-
-突破传统仅关注回答质量的局限，将**成本（模型调用次数、Token 消耗、工具调用次数）**和**性能（首 Token 延迟、端到端延迟、模块级延迟）**纳入正式评测体系。健康的 Agent 是三个维度在当前业务场景下的最优平衡。
-
-### 3. 6 种结构化 Judge Task
-
-将 LLM-as-Judge 从"让 LLM 打分"升级为标准化判断任务：
-
-| Task 类型 | 核心能力 | 代表指标 |
-|----------|---------|---------|
-| 二元判断 | 语义级是否判定 | 任务完成率、意图识别准确率 |
-| 一致性判断 | 忠实性+合规性核查 | 幻觉率、指令遵循能力 |
-| 多标签匹配 | 列表交集/差集对比 | 多意图识别率、工具调用准确率 |
-| 上下文保留 | 多轮记忆评估 | 短期记忆保留率、记忆衰减曲线 |
-| 相关性判断 | RAG 检索质量 | 长期记忆检索精确率/召回率 |
-| 行为判断 | 交互行为分类 | 模糊意图澄清率 |
-
-每个 Prompt 遵循**单一职责、先推理后判断、负例引导、结构化输出**四原则。
-
-### 4. 8 类分层评测数据集
-
-"基础覆盖 + 专项探测"结构：基础技能 + 知识问答为基座，多轮对话/异常输入/工具调用/多意图/模糊意图/长对话衰减为专项探测。
-
-关键设计：Mock 模式（E2E_MOCK）保证可复现；真实模式（E2E_REAL）反映真实表现；包含负例（如虚构接口名检测幻觉）；主指标判定 + 旁路指标诊断的双层评判。
-
-### 5. 自动化执行引擎
-
-- 数据集自动装配（15 种评测范围）
-- 轻量级 EvalTrace 运行时采集（不侵入 Agent 业务逻辑）
-- 路由错误时下游指标自动跳过（不污染其他模块数据）
-- 3 线程并行 + 120s 超时 + 重试
-
-### 6. LLM 自动生成评测集
-
-"Aone 文档知识工具集"输入文档 URL → 按数据集类型 Prompt 模板生成结构化用例 → 人工审核 → 入库。
-
----
-
-## 与现有 wiki 知识的关系
-
-- **填补空白**：wiki 此前没有专门的 Agent 评测体系内容。本文提供了从指标设计→数据集工程→Judge Task→执行引擎→可视化的完整方法论
-- **互补 WorkBuddy**：[WorkBuddy](https://github.com/QianJinGuo/wiki/blob/main/entities/workbuddy-product-framework-agent-harness-anne-2026.md) 关注 Agent 产品架构（Harness/Loop/Memory），本文关注"如何评测 Agent 做得好不好"
-- **互补 Loop Engineering**：[Loop Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-next-keyword-for-ai-2026.md) 定义了三层概念，本文将评测拆解到对应模块（感知/规划/记忆/工具）——评测结构应与架构同构
-- **前作关联**：本文是《全球化商品中心智能答疑Agent实践》的续篇，从"验证基础能力"演进到"全链路精细化诊断"
-
----
-
-## 关键数据
-
-- 来源：AliExpress技术（★★★★★ 1st-party Alibaba Group），作者砚东
-- 指标总数：35+ 项（端到端 11 项 + 核心模块 24 项 + 成本/性能指标）
-- 数据集类型：8 类
-- Judge Task 类型：6 种
-- Mock 模式：E2E_MOCK / E2E_REAL 双模式
-- 评测范围：15 种
-
----
-
-## 深度分析
-
-### 1. "评测面向架构"原则是 Agent 评测体系设计的核心突破
-
-传统 Agent 评测要么是端到端的黑盒打分（如 BLEU/ROUGE），要么是孤立的模块测试。AliExpress 的核心理念——**评测结构应与 Agent 架构同构**——将评测从"成绩单"升级为"诊断报告"。感知模块的意图识别准确率低直接定位感知层问题，规划模块的路由决策出错直接指向规划策略，无需在端到端指标中逐层推导。这种设计使得评测结果可操作，而非仅仅可报告。
-
-### 2. "质量 × 成本 × 性能"三维指标定义了生产级 Agent 的评估标准
-
-生产环境中，一个"正确"但调用 10 次模型、耗时 30 秒的 Agent 是不可用的。AliExpress 体系将成本和性能提升到与质量同等重要的地位，这反映了 Agent 从研究原型到生产部署的核心转变。**三维平衡**是健康 Agent 的标志——质量是底线，成本和性能决定了 Agent 能否在真实用户场景中落地。这一思维对其他团队的评测体系建设有直接的指导意义。
-
-### 3. 结构化 Judge Task 超越了传统的 LLM-as-Judge 模糊打分
-
-传统 LLM-as-Judge 让模型"打个分"，结果受模型偏好、Prompt 措辞、上下文长度等影响，稳定性差。AliExpress 将评判拆解为 6 种结构化任务（二元判断、一致性判断、多标签匹配等），每种有明确的判定逻辑和量化方法。**"单一职责、先推理后判断、负例引导、结构化输出"**四原则确保了评判的稳定性和可复现性。这种工程化的 Judge 设计使得评测结果不容易随模型版本更换而波动。
-
-### 4. Mock 模式设计解决了评测可复现性的根本难题
-
-Agent 评测的天然挑战是工具调用的不确定性——真实 API 可能超时、返回不一致数据、或被限流。AliExpress 的 E2E_MOCK 模式通过预注入 Mock 数据替代真实工具调用，使评测结果可以完全复现。同时保留 E2E_REAL 模式用于生产环境下的真实表现验证。**双模式并存**的设计兼顾了"可复现性"和"真实性"两种需求，是将 Agent 评测纳入 CI/CD 流水线的关键前提。
-
-### 5. 路由错误时下游指标自动跳过机制体现了评测系统的鲁棒性
-
-当路由决策出错（如本该走 SKILL_MISS 却走了 SKILL_HIT），依赖下游模块数据的 Judge Task 自动标记为 error 并跳过统计。这一设计避免了**错误传播**——路由错误只体现在"路由决策准确率"一项指标上，不污染其他模块的数据。这种容错机制使得评测系统在 Agent 行为异常时仍然能提供有价值的诊断信息，而非直接崩溃或产生误导性结果。
-
----
-
-## 实践启示
-
-1. **评测体系应与 Agent 架构同构**：设计评测时，先拆解 Agent 的内部模块结构，再为每个模块设计对应的评测指标。这比先列指标再对号入座的方法更系统——评测结构天然是 Agent 架构的镜像。
-
-2. **将成本和性能纳入 Agent 评测的正式指标**：生产级 Agent 的评估不能只看答案质量。从第一天起就将模型调用次数、Token 消耗、端到端延迟纳入评测指标，避免 Agent 在"准确性尚可但成本高昂"的状态下上线。
-
-3. **用结构化 Judge Task 替代模糊的 LLM-as-Judge 打分**：将评判拆解为明确的判断类型（二元/多标签/相关性等），每个类型设计独立的 Prompt 和判定逻辑。这比让 LLM 直接打分更稳定、更可解释。
-
-4. **评测集需要 Mock 模式和真实模式双轨制**：Mock 模式（E2E_MOCK）用于开发阶段的回归测试和 CI/CD；真实模式（E2E_REAL）用于生产环境验收。没有 Mock 模式的 Agent 评测无法真正嵌入研发流程。
-
-5. **从 8 类分层评测数据集中选择"基础覆盖 + 专项探测"的结构**：不要试图一次性构建全面评测集。先从基础技能和知识问答两类构建基座，再根据业务场景逐步增加多轮对话、异常输入、工具调用等专项数据集。每一类数据集都有明确的规模建议（如基础技能 ≥50 条）。
-
----
-
-## 延伸阅读
-
-- [WorkBuddy：LLM 产品实践](https://github.com/QianJinGuo/wiki/blob/main/entities/workbuddy-product-framework-agent-harness-anne-2026.md) — Agent 产品架构对比
-- [Loop Engineering 会是 AI 的下个关键词吗？](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-next-keyword-for-ai-2026.md) — Loop/Harness/Graph 三层概念
-- [高德 ABot-AgentOS](https://github.com/QianJinGuo/wiki/blob/main/entities/abot-agentos-robot-agent-os-amap-2026.md) — 具身 AI 的 Agent OS（含 EmbodiedWorldBench 评测）
-- [后端系统「AI 知识库体系」建设实践](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-knowledge-base-system-backend-practice-alibaba-2026.md) — Alibaba 知识库方法论
-
----
-
-## Ch13.011 世界模型评估立场论文 — 南京大学 (2026)
-
-> 📊 Level ⭐⭐ | 9.6KB | `entities/world-model-evaluation-position-paper-nju-2026.md`
-
-# 世界模型评估立场论文 — 南京大学
-
-## 摘要
-
-南京大学人工智能学院团队发布综述性立场论文《How Should World Models Be Evaluated for Embodied Decision-Making? A Decision-Making-Centric Position》，系统回答世界模型的评估问题。论文指出，当前世界模型研究常提出 6 类能力主张，但评估证据与能力主张之间存在"落差"——视觉质量高不等于决策价值高。论文提出从 L0（视觉合理性）到 L7（规划与优化效用）的 7 级评估阶梯，并给出了包含干预式动作保真测试、闭环策略 rollout 评估、奖励校准等核心指标的一套"以决策为中心"的评测框架。
-
-## 核心要点
-
-1. **6 类能力主张**：当前世界模型研究通常提出预测未来观测、评估策略表现、支持策略优化、生成可执行规划、生成训练数据、提供隐式表征六种能力主张。评估的关键在于让证据与主张保持一致。
-2. **L0-L7 评估阶梯**：从视觉合理性（L0）、已记录未来预测（L1）、语义对齐（L2）、物理合理性（L3）、动作可控性与干预保真（L4）、奖励价值与结果保真（L5）、策略评估与排序（L6）、规划与优化效用（L7）共 8 个层级，形成递进的评估证据链。
-3. **生成质量 ≠ 决策价值**：论文强调，生成逼真的未来视频与支持可靠决策是两类能力。一个模型可以生成非常逼真的视频，也可能在动作干预时表现迟钝；另一个模型即使画面不华丽，只要稳定预测任务相关变量和策略优劣，反而可能在规划中发挥更高价值。
-4. **"决策契约"概念**：评估前需要明确声明模型的"决策契约"——模型面向什么任务家族、什么策略类型、什么动作接口、什么时间跨度，以及具体服务于预测、评估、规划还是优化。
-5. **优化器"高估区域"问题**：优化器会主动搜索世界模型中的"高估区域"——一旦世界模型给出错误乐观判断，系统在模型内显得表现优异，落到真实环境中却出现明显落差。这对工程应用中的决策可靠性有直接影响。
-
-## 深度分析
-
-### 世界模型的概念扩张与评估困境
-
-"世界模型"这一术语在短短两年内经历了显著的语义扩张。 从最初面向机器人控制与规划的环境动力学模型，扩展到涵盖视频生成模型、具身大模型、可交互神经模拟器、隐空间表征预测器、数据合成引擎等多种技术对象。概念的宽泛化带来了研究活力，但也使"世界模型"成为一个高度模糊的标签——不同论文中的世界模型承担的角色和功能差异显著。
-
-这一扩张带来的核心评估困境是：**衡量生成质量的指标（FVD、IS、FID 等）无法反映模型在决策闭环中的实际表现**。论文将此概括为"能力主张与评估证据之间的落差"。 一个世界模型声称"服务具身决策"，但评估却只用了视频生成质量指标——这就像用阅读理解题来评估自动驾驶系统。
-
-### L0-L7 评估阶梯：从感知到决策的统一坐标
-
-论文提出的 L0-L7 评估阶梯是当前世界模型评估领域最完整的层次化框架：
-
-| 层级 | 评估内容 | 对应能力 |
-|------|----------|----------|
-| **L0** | 视觉合理性 | 生成结果是否看起来真实 |
-| **L1** | 已记录未来预测 | 对日志轨迹未来片段的预测能力 |
-| **L2** | 语义对齐 | 是否符合指令、任务和场景语义 |
-| **L3** | 物理合理性 | 是否满足基本物理和几何一致性 |
-| **L4** | 动作可控性与干预保真 | 动作变化能否引起正确的任务相关变化 |
-| **L5** | 奖励、价值与结果保真 | 能否准确预测成功率、奖励和进度 |
-| **L6** | 策略评估与排序 | 对候选策略优劣的判断是否与真实环境一致 |
-| **L7** | 规划与优化效用 | 进入规划器或强化学习闭环后能否提升决策质量 |
-
-这一框架的贡献在于将原本"平行的"评估指标（视觉质量、语义对齐、任务成功率）重新排列为递进的证据层级。对于机器人、自动驾驶、具身智能等高影响力应用场景，L4-L7 层级的评估证据更为关键，因为它们直接对应模型在真实决策闭环中的表现。
-
-与世界模型领域中其他评估方法相比，L0-L7 框架的可贵之处在于它没有否认低层级指标的价值——视觉合理性和语义对齐作为诊断工具和可解释性支撑仍有重要意义——而是明确提出：**仅凭低层级指标不足以支持高层级的能力主张**。
-
-### 闭环评估：从"生成得像"到"决策上可信"
-
-论文的核心方法论贡献在于将评估重心从开环生成质量转向闭环决策价值。这体现在三个具体建议中：
-
-1. **干预式动作保真测试**：固定历史条件，改变动作分支，观察模型是否给出正确的任务相关变化。这是检验模型是否真正理解"动作→后果"因果关系的关键测试。
-2. **闭环策略 rollout 评估**：让策略直接在模型内运行，检查闭环行为与真实环境的一致性。开环预测准确不代表闭环行为可靠——预测误差在闭环中会累积并放大。
-3. **策略排序一致性**：比较模型内评估的策略排序与真实环境中的策略排序。即使模型对绝对值的预测有偏，只要排序一致，就能基于模型进行策略优化。
-
-此外，论文敏锐地指出了"可利用性"问题：优化器会主动搜索世界模型中的高估区域。这实质上是模型被"逆向工程"——一旦优化器找到模型在某个状态-动作空间上的乐观偏差，就会不断利用这一偏差，导致模型内的高分轨迹在真实执行时表现欠佳。 这一风险与 Reward Hacking 问题和 RL 过优化现象高度同源。
-
-### 最小可行报告方案：从理想框架到工程实践
-
-论文并未停留在理论框架层面——它给出了面向真实机器人实验的"最小可行报告方案"，建议至少补充 3 类证据：
-
-1. 少量重置匹配的动作分支实验
-2. 几组强弱差异明显的固定策略（用于成功率校准和策略排序）
-3. 对模型内高分轨迹进行执行验证
-
-这一务实的设计降低了评估框架的落地门槛，使学术界和小型团队能在有限资源下开展有意义的评估。对于产业界而言，这套方案可以直接集成到仿真到真实迁移的质量验证流程中。
-
-## 实践启示
-
-1. **评估世界模型时，必须明确其"决策契约"**：在评估任何声称具备"世界模型"能力的系统前，先明确其服务的目标（预测、规划、优化）、动作空间、时间跨度和评估场景。脱离"决策契约"的评估是盲目的。
-
-2. **不能仅用视频生成质量（FVD/IS）来评估世界模型**：如果声称模型支持具身决策，评估中必须包含 L4 级以上的指标（动作干预测试、策略排序、闭环 rollout 评估）。视频质量作为诊断指标可以保留，但不能作为唯一的能力证据。
-
-3. **建立"优化器防御"机制**：将世界模型用于规划或策略优化时，必须通过不确定性量化、集成模型（Ensemble）、保守估计等方法防止优化器利用模型的高估区域。这是世界模型在工程部署中最容易被忽视的风险。
-
-4. **从开环评估到闭环评估的迁移**：开发世界模型时，开环评估（单步预测准确率）仅作为快速验证手段。最终评估必须在闭环设置下进行——让策略在模型内运行，测量累积误差和决策退化。
-
-5. **最小可行报告方案可以降低评估门槛**：即使不具备大规模真实机器人实验条件，也可以通过"少量干预测试 + 固定策略排序 + 高分轨迹验证"三件套提供有意义的决策能力证据。
-
-## 相关实体
-
-- 世界模型
-- NVIDIA Gamma World Model
-- 仿真到现实迁移
-- Reward Hacking
-- LeCun JEPA 世界模型
-- Loop World Models
-- 具身原生 LLM
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/world-model-evaluation-position-paper-nju-2026.md)
-
----
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-
----
-
-## Ch13.012 Hermes 可观测性方案
+## Ch13.010 Hermes 可观测性方案
 
 > 📊 Level ⭐⭐ | 8.2KB | `entities/hermes-observability.md`
 
@@ -2079,7 +1861,7 @@ hermes gateway start  # 后台
 
 ---
 
-## Ch13.013 CEOs’ top priorities for IT leaders today
+## Ch13.011 CEOs’ top priorities for IT leaders today
 
 > 📊 Level ⭐⭐ | 7.5KB | `entities/www.cio.com-ceos-top-priorities-for-it-leaders-today-2-html.md`
 
@@ -2132,154 +1914,7 @@ PwC 的 Leinwand 认为，CEO 期望 IT 通过连接数据、工作流与决策�
 
 ---
 
-## Ch13.014 AI Skill Evolution Framework
-
-> 📊 Level ⭐⭐ | 7.3KB | `entities/ai-skill-evolution-framework.md`
-
-## 相关实体
-- [AI Skill 测评指标体系](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-skill-metrics-system.md)
-- [Skill工程化设计：把Agent当算法用](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-engineering-ai-as-algorithm.md)
-- [Agentic AI 系统架构与分层模型](https://github.com/QianJinGuo/wiki/blob/main/entities/agentic-ai-system-architecture-harness-skill-mcp.md)
-- [AWS Model Agility: 6步LLM跨代际迁移框架](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-generative-ai-model-agility-framework.md)
-
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
-## 深度分析
-### AI Skill 的本质定义
-AI Skill 是一种以 Markdown 编写的「给模型看的说明书」，是 LLM 应用质量的核心载体。它告诉大模型在特定场景下该怎么做：模型读懂了才能按规则执行，模型没读懂，规则就形同虚设。
-Skill 的核心是 `SKILL.md`，包含：
-
-- **触发条件**：什么情况下使用这个 Skill
-- **业务规则**：具体怎么做，有哪些约束
-- **接口调用**：调用哪些工具，参数怎么传
-- **异常处理**：出错了怎么办
-
-### 三个传统软件测试覆盖不了的结构性问题
-**问题一：自判卷偏差**
-传统测试：代码执行 → 断言框架验证（执行者和验证者完全分离）
-AI Skill 测试（不设计好时）：模型执行 Skill → **同一个模型**判断结果是否正确
-这就像让学生自己批改自己的试卷。模型倾向于认为自己做对了，即使实际上规则没有被正确执行。
-**问题二：随机性**
-同一个 prompt，今天运行通过，明天运行失败。这不是 bug，是大模型的本质特性——采样温度大于 0，导致每次生成略有差异。
-单次测试的结论不可靠。需要多次运行，用统计方法描述 Skill 的真实表现。例如：「通过率 87% ± 5%」比「通过了」提供的信息量大得多。
-**问题三：负向增益**
-最隐蔽的问题：84 个有效任务里，约 19%（16 个）加了 Skill 反而比没加更差。
-原因可能是：
-
-- Skill 的规则过于死板，限制了模型本来能做好的灵活性
-- Skill 的指令和模型的默认行为冲突，模型「不知道该听谁的」
-- Skill 文档太长太复杂，模型「选择性忽略」了部分规则
-如果你只测「加了 Skill 之后能不能跑通」，永远发现不了这个问题。需要同时测「没有 Skill 时模型表现如何」，然后对比增益差值 Δ（delta）= 有 Skill 时通过率 − 无 Skill 时通过率。Δ 为负就是发布红线。
-
-### 三个核心测评设计
-**1. 执行者和评审者分离（解决自判卷偏差）**
-执行 Skill 的 Agent 和评审结果的 Agent 完全独立，运行在不同的上下文中。评审 Agent 必须引用原文证据，不能凭感觉判断。
-**2. 多次运行取均值（解决随机性）**
-标准模式下每个用例运行 3 次，计算通过率的均值和标准差。标准差 > 0.3 说明结果高度不稳定，通常意味着 prompt 存在歧义或 Skill 规则有冲突。
-**3. 有 Skill vs 无 Skill 对比（解决负向增益）**
-每个用例同时跑两个版本：
-
-- **with_skill**：加载 Skill 指令，模型按规则执行
-- **without_skill**：不加载任何 Skill，纯模型通用能力
-计算增益 Δ = with_skill 通过率 − without_skill 通过率。Δ < 0 立即触发预警，必须查明根因再决定是否上线。
-
-## 实践启示
-### 1. 建立 Skill 测评意识
-AI Skill 需要专门测评，因为它有三个传统软件测试根本覆盖不了的结构性问题。在发布任何 Skill 之前，必须：
-
-- 用独立评审者验证执行结果
-- 多次运行取统计均值
-- 对比有/无 Skill 的增益差
-
-### 2. 识别负向增益是发布红线
-负向增益（Δ < 0）比直接失败更危险，因为它极度隐蔽。解决方案是强制进行有/无 Skill 对比测试。
-
-### 3. 设计 Skill 规则时的关键原则
-Skill 规则不只是"做什么"，还要说清楚"为什么"和"做不到会怎样"。
-报销助手的真实踩坑案例：SKILL.md 里写「最终调用 saveExpenseDoc 保存草稿」，但没有明确约束 docStatus 参数必须固定为 "10"。模型自行推断参数值，有时传了 "20"（提交审批），直接提交了用户根本没有核对过的单据。
-修复方式：补一句「docStatus 固定为 '10'，对应草稿状态，传其他值会导致单据直接进入审批流，不可撤回」——加上「为什么」之后，模型正确执行概率显著提升。
-
-### 4. 判断 Skill 是否可以上线
-同时满足三条标准：
-1. 通过率达到该风险等级的准入阈值（S 级关键场景要求 ≥ 95%）
-2. 增益 Δ > 0，确认 Skill 有正向价值而非帮倒忙
-3. IFR（指令遵循率）达标，S 级要求 100%
-Δ < 0 是硬性红线，不接受「先上线再观察」。
-
-### 5. 测评前的三类资产准备
-1. **测试账号**：拥有对应权限，能触发 Skill 的目标流程
-2. **测试数据**：对应场景的发票、单据等，类型必须和测试用例匹配
-3. **规则清单**：对被测 Skill 的规则清单，测评工具可以自动从 SKILL.md 提炼，但人工确认一遍更准确
-
-### 6. 理解 AI Skill 测评与传统软件测试的区别
-| 维度 | 传统软件测试 | AI Skill 测评 |
-|------|------------|--------------|
-| 输出特性 | 确定性，同输入同输出 | 概率性，需多次运行取均值 |
-| 执行方式 | 代码执行 | 模型推理，规则可能被忽略 |
-| 结果验证 | 断言框架直接比较 | 需独立 Agent 评审，防自判卷 |
-| 测评目标 | 能不能跑通 | 还要测「加了有没有帮助」（Δ） |
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-skill-evolution底层逻辑.md)
-
----
-
-## Ch13.015 STAROps UModel 运维数字孪生 + OpenAPI 嵌入：精臣智能运维底座实践
-
-> 📊 Level ⭐⭐ | 6.9KB | `entities/starops-umodel-digital-twin-openapi-embedding-jingchen-2026-08-04.md`
-
-# STAROps UModel 运维数字孪生 + OpenAPI 嵌入
-
-精臣（NIIMBOT，智能标签打印云服务商，累计服务全球 2200 万+用户）全栈上云后的智能运维底座选型案例：自建 SRE 平台保留，可观测数据底座 + 运维数字孪生交给阿里云，STAROps 诊断能力通过 OpenAPI 嵌入客户自有平台。
-
-> 与 [STAROps 主机智能巡检](https://github.com/QianJinGuo/wiki/blob/main/entities/starops-host-intelligent-inspection.md)（基础设施层）、[STAROps RUM 智能巡检](https://github.com/QianJinGuo/wiki/blob/main/entities/starops-rum-intelligent-inspection.md)（体验层）构成姊妹关系——本文是 **UModel 数字孪生拓扑 + OpenAPI 客户集成模式** 层，三者为同一平台的不同能力层。
-
-## 客户背景与三结构性难题
-
-精臣已用齐阿里云可观测矩阵：RUM（前端用户体验）、Prometheus（容器/云资源指标）、ARMS（应用性能追踪）、SLS（日志），自建 Grafana 统一展示。但工具栈完备仍有三难：
-
-1. **全局拓扑看不清** — 应用内接口调用（ARMS 可见）与应用外云资源依赖（RDS/Redis/MQ 散落各自监控）拼不成一张动态图；人工梳理低效，一次发布就过期
-2. **多维数据串不起** — Metric/Log/Trace/Event 都采到，但排查要在四者间手动对时间戳，"数据在、线索靠人拼"
-3. **告警噪音大** — 故障时全链路组件同时告警，根因被淹没，跨域定位动辄数十分钟
-
-## 四层方案
-
-### 多维观测数据统一底座（CMS 2.0）
-
-RUM/Prometheus/ARMS/SLS 不推倒重来，基于阿里云云监控 2.0（CMS 2.0）统一采集、存储、查看、分析——指标/日志/链路/事件/变更进入统一口径的关联底座。
-
-### UModel 运维数字孪生（核心创新）
-
-自动为业务系统建模全链路拓扑关系图：前端 → 后端 → 中间件 → 数据库 → 容器，一张图完整呈现，**动态实时更新**（应用发布/依赖变化/扩缩容自动刷新，无需人工维护）。点开拓扑图任一节点即可看到其关联观测数据——"活地图"而非静态架构示意图。这是精臣从自建转向采用的核心原因。
-
-### STAROps 智能诊断（基于拓扑跨域找根因）
-
-沿 UModel 上下游链路自动找相关节点、拉观测数据、给排查思路。单域分析（Pod 资源水位/云资源指标异常）稳定；跨域场景（如"Pod 频繁 GC"需容器层下钻到应用层 JVM 指标）也能沿链路完整关联定位——把"数据在、线索靠人拼"升级为"AI 自动贯通多维数据"。
-
-### OpenAPI 嵌入自建 SRE 平台（能力嵌入而非平台替换）
-
-STAROps 以 OpenAPI 方式作为诊断引擎被客户平台直接调用，分析过程与诊断结果**流式返回**。工程师在自有 SRE 平台点击一键诊断即实时看到推理过程与结论，全域诊断在客户平台内闭环。保留了客户平台承载自身业务逻辑的自主性。
-
-## 泛化 RCA：从单点诊断到系统能力（阿里云第一方，2026-08）
-
-RCA 是 AgenticOps 核心——根因判断错则影响评估/修复/变更/验证全围绕错误对象。UModel 进一步成为「泛化根因定位」的稳定系统地图：不同系统对同一对象用不同名字（APM Service/Trace Span/K8s Deployment-Pod/ECS/Node），UModel 组织对象与关系，让 Agent 知道自己正在查谁。
-
-泛化的现实标准不是知道所有故障答案，而是没有完全匹配工作流时 Agent 仍知道如何开始调查（确认告警对象→沿关系找相关服务资源→多候选补证据/查时间序/排假设→证据不够时停下而非勉强给根因）。为此在 UModel 之上维护**动态调查拓扑**（哪些对象已检查、哪里异常、当前怀疑谁、哪些分支未解释——既是调查地图也是过程记录，工程师可接管）。
-
-用 RCA-Bench 拆穿「看起来正确」：RCA-100 含 103 个故障用例/6 大类/28 故障类型，记录根因对象/故障类型/传播路径/关键证据；约 82% 综合分由确定性规则完成，LLM 只辅助判断调查方向与证据充分性（避免一个模型决定另一个答得好不好）。线上低分任务判断问题出在对象识别/数据获取/调查方向/证据质量/结论，可复现的进回归样本。
-
-RCA-100 横评（同任务/UModel MCP/brise 评分器）：STAROps vs OpenClaw+DeepSeek-V4-Pro = 综合分 75.23 vs 51.02、根因实体 90 vs 52.8（+37.2）、故障类型 58 vs 33.3、调查过程 75 vs 69.8（差距仅 5.2，说明通用 Agent 已能多轮查询，真正的差距在根因实体与故障类型判断）。典型案例证明「告警离根因很远」：product-catalog 流量下降根因在底层 Node CPU 99.98%（STAROps 94 vs ReAct 15/OpenClaw 12）；前端 Checkout 变慢根因是 inventory 慢 SQL（10.8s SELECT，STAROps 84 vs 两基线 15）。
-
-## 价值与未来方向
-
-- **一键闭环全域诊断**: 过去在 ARMS/Prometheus/SLS/Grafana 间反复横跳定位数十分钟 → 现在 SRE 平台一键触发，STAROps 沿 UModel 拓扑自动跨域关联
-- **不重复造轮子**: 拓扑建模/多维关联这类"投入大、需持续维护"的重活交给阿里云，团队精力放回云资源管理/架构优化
-- **运维角色重塑**: 从"被动救火"到"主动经营"——动态拓扑 + AI 化分析驱动主动巡检
-- **未来方向**: ①跨域根因关联从"链路引导"走向"任意入口自动贯通"（不依赖切入角度）②OpenAPI 流式返回的实时性与信息完整度持续优化
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/starops-umodel-digital-twin-openapi-embedding-jingchen-2026-08-04.md)
-→ [泛化 RCA 2026-08](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/starops-generalizable-rca-umodel-rcabench-aliyun-2026-08-18.md)
-
----
-
-## Ch13.016 NVIDIA MCG Toolkit 模型文档自动化
+## Ch13.012 NVIDIA MCG Toolkit 模型文档自动化
 
 > 📊 Level ⭐⭐ | 6.7KB | `entities/nvidia-mcg-model-documentation.md`
 
@@ -2345,239 +1980,7 @@ Oracle 将 MCG 部署在 OCI Container Engine for Kubernetes 上，结合 DAC（
 
 ---
 
-## Ch13.017 The Ramanujan Challenge for AI
-
-> 📊 Level ⭐⭐ | 6.1KB | `entities/ramanujan-challenge-ai-gil-kalai-2026-07-02.md`
-
-# The Ramanujan Challenge for AI
-
-## 摘要
-
-吉尔·卡莱（Gil Kalai）分享了由伊多·卡米纳（Ido Kaminer）发起的"拉马努金 AI 挑战赛"（Ramanujan Challenge for AI），该挑战于 2026 年 7 月 2 日启动，将持续至 2026 年 8 月 1 日。挑战旨在系统测试 AI 系统在数学研究中的能力，特别是从具体公式出发生成有效证明或符号推导的能力。
-
-## 核心要点
-
-- **十个研究级问题**：基于数学常数显式公式方向，专门设计用于测试 AI 的证明生成与符号推导能力
-- **多种提交形式**：接受形式化验证证明、计算机代数系统（CAS）推导、以及附带可复现代码的人可读证明
-- **评估从"答案"转向"过程"**：核心目标是检验 AI 能否以可结构化验证的方式生成推导过程，而非仅仅输出正确答案
-- **兼容现有工具链**：规则设计兼容形式化验证系统（如 Lean、Coq）、CAS 系统（如 Mathematica、SymPy）及可复现代码辅助证明
-
-## 深度分析
-
-### 数学 AI 评估的范式转变
-
-拉马努金挑战代表了 AI 数学能力评估从"答案导向"向"过程导向"的深刻转变。传统的数学基准（如 MATH、GSM8K）主要测试 AI 对已知问题的答案生成能力，而本挑战要求 AI 从给定公式出发，构建完整的推导链条。这与当前 AI 评估领域从"输出正确性"向"推理可验证性"转变的大趋势一致。
-
-这种评估方式的转变触及了 AI 数学能力的本质：数学不仅仅是找到正确答案，更重要的是展示出可被同行验证的推理过程。挑战的规则设计——允许形式化证明、CAS 推导或可复现代码辅助证明——实际上是在测试 AI 是否具备"数学家的思维方式"，而不仅仅是"计算器的输出能力"。
-
-### 与形式化验证的深层关联
-
-该挑战兼容形式化验证系统（如 Lean、Coq），这一设计选择极具前瞻性。近年来，[LEAN 在形式化定理证明](https://github.com/QianJinGuo/wiki/blob/main/entities/leap-agentic-formal-theorem-proving-google-2026.md)领域的进展表明，AI 辅助的形式化数学正在成为现实。拉马努金挑战将形式化证明作为可接受的提交形式，实际上是在推动 AI 数学研究向"可机器验证"的方向发展——这不仅降低了人工审校的成本，也为 AI 生成的数学内容建立了一条质量控制基线。
-
-### 拉马努金机器项目背景
-
-该挑战由拉马努金机器（Ramanujan Machine）项目发起。拉马努金机器项目是一个致力于利用 AI 发现新的数学常数公式的开源研究项目，其核心理念与拉马努金（Srinivasa Ramanujan）的直觉式数学发现精神一脉相承。该项目此前已在数学常数公式发现方面取得了多项成果，本挑战是其将研究重心从"公式发现"向"证明生成"拓展的重要一步。
-
-### 对 AI 推理能力评估的启示
-
-拉马努金挑战的设计对更广泛的 AI 推理能力评估具有启示意义：
-
-1. **结构化验证**：通过要求可结构化验证的推导过程，挑战建立了一个可自动检查的评估框架，避免了传统评估中的人工主观偏差
-2. **多路径求解**：允许形式化证明、CAS 推导、代码辅助证明等多种提交路径，反映了数学研究本身的多元化方法论
-3. **时间压力**：一个月的挑战周期为 AI 系统提供了充足的多轮迭代空间，这与 METR、AISI 等机构对 AI 自主任务完成能力的长时间评估方法一致
-
-### 数学 AI 的未来方向
-
-拉马努金挑战预示了数学 AI 的三大发展方向：从答案生成向证明生成演进、从封闭测试向开放挑战演进、以及从单一模态向形式化系统集成演进。这些方向与 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的核心理念——系统性地评估和提升 AI 能力——高度一致。
-
-## 实践启示
-
-1. **重视过程验证**：在评估 AI 的数学能力时，应优先关注推导过程的可验证性而非答案的正确性——前者才是衡量"理解"的真实标尺
-2. **拥抱形式化工具**：将形式化验证系统（Lean、Coq 等）纳入 AI 数学研究的评估工具链，可以大幅降低结果验证成本并提高可靠性
-3. **跨学科合作**：拉马努金挑战的跨学科性质（数学、AI、形式化验证）提示我们，最前沿的 AI 突破往往发生在学科交叉点
-4. **时间维度的评估**：给 AI 系统充足的时间进行多轮尝试和迭代（如本挑战的一个月窗口），往往比单次评估更能反映真实能力——这一原则同样适用于 [Agent 评估基准](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-evaluation-benchmarks.md) 设计
-5. **从"发现"到"证明"**：AI 在数学领域的应用正从"公式发现"（如拉马努金机器项目的早期工作）向"定理证明"拓展，这一演进路径与 AI 从"模式匹配"向"推理理解"的整体进化趋势一致
-
-## 相关实体
-
-- [LEAP: Agentic Formal Theorem Proving](https://github.com/QianJinGuo/wiki/blob/main/entities/leap-agentic-formal-theorem-proving-google-2026.md)
-- [CODA Bench: Code Agent Data Benchmark](https://github.com/QianJinGuo/wiki/blob/main/entities/coda-bench-code-agent-data-benchmark-renmin-2026.md)
-- [Karpathy LLM Wiki Knowledge Management](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-llm-wiki-obsidian-tutorial-shuge-2026.md)
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ramanujan-challenge-ai-gil-kalai-2026-07-02.md)
-
----
-
-## Ch13.018 Agent Skill 评估与迭代
-
-> 📊 Level ⭐⭐ | 5.8KB | `entities/agent-skill-writing-evaluation.md`
-
-## 优化 description 的系统性方法
-1. 准备 20 个提示词（一半触发 / 一半不触发）
-2. 运行测试，每个用例测 3 次以上取触发概率
-3. 分析：应该触发的没触发 → 描述太窄；不应该触发的触发了 → 描述太宽
-4. 迭代直到通过率满意
-
-## 测试用例设计
-结构：`提示词 + 预期输出 + 输入文件（可选）`
-技巧：
-
-- 从 2-3 个开始，不要一开始就写很多
-- 变化措辞（随意 ↔ 精确）
-- 覆盖边缘情况
-- 使用真实上下文（文件路径、列名等）
-
-## 运行评估
-两次对比：**with_skill vs without_skill**
-```
-iteration-1/
-├── eval-top-months-chart/
-│   ├── with_skill/outputs/ + timing.json + grading.json
-│   └── without_skill/...
-└── benchmark.json（汇总统计）
-```
-
-## 断言编写原则
-| 好的断言 | 弱的断言 |
-|---------|---------|
-| 可编程验证 | 太模糊（"输出很好"）|
-| 具体可观察 | 太脆弱（措辞一变就失败）|
-| 可计数 | |
-
-## 聚合结果分析
-```json
-{
-  "delta": {
-    "pass_rate": 0.50,
-    "time_seconds": 13.0,
-    "tokens": 1700
-  }
-}
-```
-分析模式：
-
-- 两种配置都通过 → 移除断言，无有用信息
-- 两种都失败 → 断言本身有问题
-- 带Skill才通过 → Skill 明显增加价值的地方
-- 高标准差 → 收紧指令，减少模糊性
-
-## 迭代原则
-- 从反馈中泛化，不做狭隘补丁
-- 保持精简：少而好的指令 > 详尽规则
-- 解释为什么：基于推理的指令 > 僵化指令
-- 打包重复工作：测试用例都写类似脚本 → 应打包进 Skill
-
-## 三类测试
-**测试一：触发测试（最关键）**
-
-- ✅ 至少 10 个应该触发的用例 + 5 个不应该触发的用例
-- 快速诊断：直接问 AI"你什么时候会用这个 Skill"，根据回答判断 description 是否准确
-**测试二：功能测试**
-
-- 同一请求运行 3-5 次
-- 检查：输出结果一致、API 调用成功（0 错误）、关键步骤无遗漏
-**测试三：与无 Skill 基线对比**
-| 指标 | 无 Skill | 有 Skill |
-|------|---------|---------|
-| 用户需要提供的说明 | 每次都要解释 | 无需解释 |
-| 来回对话轮次 | 15 轮 | 2 轮 |
-| API 调用失败次数 | 3 次 | 0 次 |
-| Token 消耗 | 12,000 | 6,000 |
-
-## 动态优化
-> "你刚才的输出中，[具体描述问题]。请把这个改进固化到 [skill-name] 这个 Skill 文件中。"
-Skill 是**活文档**，每次修正都可以沉淀，减少下次犯同样错误的概率。
-
-## 深度分析
-评估的本质是**建立因果链**：Skill 带来的改变是否可归因于 Skill 本身，而非随机波动或测试偏差。三类测试构成递进防线——触发测试验证「该不该用」，功能测试验证「用对了吗」，基线对比验证「用了有多大价值」。其中触发测试最易被忽视，却最能暴露 description 关键词的遗漏或歧义。
-迭代的核心不在于修复单个失败用例，而在于**从错误模式中提炼通用约束**。一个断言失败背后往往是一个隐含假设——要么指令太模糊，要么边界条件未被显式声明。将每次修正视为 Skill 边界的一次微调，而非对一个偶然错误的补丁。
-delta 指标（pass_rate / time_seconds / tokens）的标准差同样携带信息：高标准差意味着 Skill 在不同输入上的表现不稳定，反映的是指令中存在未被约束的模糊性，需要通过收紧条件或增加示例来消除。
-
-## 实践启示
-1. **先触发，后功能**：写 Skill 时优先打磨 description，确保激活条件准确，再投入精力在执行逻辑和 Gotchas 上。触发错了，功能再完美也白费。
-2. **让测试用例自己说话**：好的测试用例集是一份「边界合同」——AI 看到这些输入和期望输出，应该能推断出 Skill 的适用范围和限制。
-3. **量化优先，感观次之**：用 pass_rate 说话而非「感觉更好用了」。数据才能支撑迭代决策。
-4. **把重复测试脚本打包进 Skill**：当多个测试用例都包含相同的辅助脚本时，说明这段逻辑应该下沉到 Skill 的 scripts/ 中，避免测试与 Skill 之间的逻辑重复。
-5. **让 Skill 自己记录成长**：每次从对话中修正一个问题时，显式地将改进固化到 SKILL.md 中，而非仅留在记忆里。Skill 是持续演进的文档而非一次性的产物。
-
-## 相关实体
-- [Agent Skill 高质量编写规范](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing-practices.md)
-- [Agent Skill 进阶模式与治理](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing-advanced.md)
-
-- [SkillSieve — Agent Skill 安全检测三层框架（arXiv 2604.06550）](https://github.com/QianJinGuo/wiki/blob/main/entities/skillsieve-agent-skill-security.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
-
----
-
-## Ch13.019 WorkBuddy Bench：从「修 Bug」到「完成工作」的 Agent 交付验收基准
-
-> 📊 Level ⭐⭐ | 5.4KB | `entities/workbuddy-bench-delivery-validation-tencent.md`
-
-# WorkBuddy Bench：从「修 Bug」到「完成工作」的 Agent 交付验收基准
-
-腾讯 WorkBuddy 团队的评测基准：**Prompt/Context/Harness/Loop/Graph 管运行，WorkBuddy Bench 补验收端**——Agent 的"完成"由工件、状态和证据证明，而非对话结束。
-
-## 核心问题：假完成
-
-Agent 找到失败测试改几行代码目标用例绿了，但跨时区订单没覆盖、接口少兼容字段、发布说明引用旧配置——修了 Bug 却没把工作交到下一个人手里。月度分析写完工作簿没更新；架构方案讲得顺但迁移顺序/回滚条件没落下来。
-
-## 完成四层
-
-| 层次 | 看到了什么 | 还缺什么 |
-|------|-----------|---------|
-| 回答 | 一段解释/方案/代码片段 | 没有进入真实工作区 |
-| 动作 | 改了文件、调用了工具 | 不确定结果是否完整交付 |
-| 交付 | 留下补丁/网页/报表/PoC | 还要核对状态与约束 |
-| 完成 | 交付物可用、状态一致、证据可复核 | 可以进入交接/发布/下一步 |
-
-## 任务形态设计
-
-不直接复用公开 Issue：从历史 commit、PR、真实 CVE 或业务场景反向还原任务，改写为同事间短请求。Code 任务用开发/算法/产品/QA/运维五种角色提需求，省略目标文件/根因/参考 diff/字段结构/边界条件。"请求可以留白，工作区不能没有线索"——信息缺失时 Agent 只能猜，评测失去稳定依据。隐私：借任务分布而非生产会话。
-
-## 任务包封装（可复跑）
-
-```
-task/
-├── instruction.md # 自然语言请求
-├── task.toml      # 类别、难度、资源与超时
-├── environment/   # Docker 与 Agent 可见的工作区
-├── tests/         # 任务结束后执行的评测资产
-└── gold.patch     # Code 任务可选的诊断参考
-```
-
-固定边界：起点、可见性、工具/网络/资源权限、结果位置、验收程序。防污染：重构请求关闭"搜题面找答案"路径 + 数据集版本更新管理暴露；隐藏测试仅在求解期间不可见，公开后全量开放。
-
-## 四赛道与验收边界
-
-| 赛道 | 任务数 | 验收方式 |
-|------|--------|---------|
-| Code | 80（18 细分类目，5 角色） | 找到契约：gold patch 验证 + 接口/字段检查 |
-| Web | 70（35 从零 + 35 分布） | 留下工件：规则检查 + LLM/VLM 判断 + Agent Judge 实操 |
-| Office | 50（xlsx/csv/PDF/文档/JSON/MD/文件树） | 保持一致：确定性规则（权重 0.70-0.95）+ LLM Judge 读固定证据 |
-| Security | 60（38 红队 + 22 蓝队，真实 CVE） | 形成证据：确定性程序评分 + 五层反作弊 |
-
-质量门槛：未修改基线得分 ≤ 0.3（防"什么都不做也能过"）；gold patch 后必须 1.0（确认可行解存在）。实测：bug_fix/api_contract 平均 0.47，feature_pipeline 0.94，testing 0.88——遗漏必需字段/参数形状/输出格式导致接口检查失败。
-
-## 评测结果与 Harness 敏感性
-
-八张榜（CodeBuddy Code + Claude Code × 4 赛道）榜首：Code 双榜 Claude Opus 4.8（74.43/77.90）；Web Claude Opus 4.8（68.14/69.86）；Office Opus 4.8 82.37 / GPT-5.5 86.05；Security GLM-5.2（76.32/80.86）。**无模型包办四类工作**；同一模型换 Harness 表现变化显著（GPT-5.5 Security 从 cbc 第六升 cc 第二；MiniMax-M3 第二落第五；HY-3 passback 开启 Code +1.92~3.82）。评测记录必须保留模型+Harness+数据集+工具权限+指令协议。
-
-## 五份小合同（团队自建评测指南）
-
-任务合同（目标/约束/停止点）→ 现场合同（基线/版本/数据/可见范围）→ 动作合同（工具/审批）→ 交付合同（结果位置/格式）→ 验收合同（规则/证据）。
-
-## 与其他实体的关系
-
-- [MirrorCode](https://github.com/QianJinGuo/wiki/blob/main/entities/mirrorcode-long-horizon-benchmark-epoch-ai-metr.md)（长时程编码基准）测"能跑多久多远"，WorkBuddy Bench 测"交付物是否真的完成"——互补
-- [LHTB](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lhtb-long-horizon-terminal-bench-musk-retweet-yucheng-shi-2026.md)（长时程终端评测）同样聚焦长任务，WorkBuddy Bench 扩展 Code/Web/Office/Security 四类工作现场
-- [ArbiterOS](https://github.com/QianJinGuo/wiki/blob/main/entities/arbiteros-governance-kernel-cuhk-2026.md) 管执行前授权，WorkBuddy Bench 管交付后验收——一个管开工前，一个管交付后
-- [Agent 评估基准](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-evaluation-benchmarks.md) 概念体系的新实例
-
-→ [原文存档（若飞/架构师解读）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/workbuddy-bench-delivery-validation-tencent-ruofei-2026-08-05.md)
-
----
-
-## Ch13.020 EVA-Bench Data 2.0
+## Ch13.013 EVA-Bench Data 2.0
 
 > 📊 Level ⭐⭐ | 4.6KB | `entities/eva-bench-data-2-voice-agent.md`
 
@@ -2672,177 +2075,7 @@ EVA-Bench 的 121 工具 × 213 场景设计，正是为了量化这些垂直维
 
 ---
 
-## Ch13.021 STAROps RUM Intelligent Inspection — Detecting Experience Degradation Early
-
-> 📊 Level ⭐⭐ | 3.7KB | `entities/starops-rum-intelligent-inspection.md`
-
-# STAROps RUM Intelligent Inspection
-
-STAROps is `Alibaba Cloud`'s full-scenario intelligent运维 (AIOps) platform built on large models and agent technology. Its **RUM (Real User Monitoring) Intelligent Inspection** capability addresses the "gray zone" between alert thresholds and visible failures — where individual metrics (LCP, INP, API p95, slow sessions) may not cross alerting lines individually, but collectively signal real experience degradation.
-
-## The Gray Zone Problem
-
-Traditional monitoring relies on deterministic alerts for clear failures (error rate spikes, complete unavailability) and dashboards for current state. But the most insidious problems live in between: conversion drops of a few percent, slightly slower LCP on mobile, a few more repeated clicks. Any single metric can be dismissed as noise — but when multiple signals converge on the same object (same page, same version, same device segment), the composite evidence demands attention.
-
-## Object-Based Inspection
-
-STAROps RUM Inspection flips the traditional metric-first approach: first identify the **object** (a page, business path, version, device class, region, or channel combination), then evaluate indicators against it. The inspection pipeline:
-
-1. **Hourly scans** — Detect objects beginning to deviate from baseline
-2. **Daily diagnostics** — Compile evidence chains for recurring degradation
-3. **Weekly reports** — Surface chronic issues (e.g., low-end device tail latency) for governance
-4. **Full RCA** — Complete root-cause analysis with timeline, impact scope, evidence chain, and remediation recommendations
-
-## Integration with STAROps Long-Running Tasks
-
-RUM Inspection uses STAROps' long-running task service to power alert-triggered auto-analysis and periodic report generation. The platform's agents autonomously execute inspection plans, correlate multi-signal degradation, and produce reports linking performance signals, user behavior (Replay, heatmaps, repeated clicks), crash data, and business metrics into actionable evidence chains.
-
-## Two Often-Missed Problem Types
-
-1. **Business Weakness Before Technical Failure** — Conversion drops 3% with no error rate spike. Inspection correlates checkout page load, submit button response, payment API p95, slow session version distribution, and repeated clicks into a single actionable finding.
-2. **Chronic Low-End Device Degradation** — Marginal but persistent LCP/INP regression on low-end Android devices. Never urgent enough for a night call, but continuously impacting a user segment. Periodic inspection surfaces these for prioritization.
-
-STAROps RUM Inspection is publicly available through the Alibaba Cloud STAROps console.
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/starops-rum-智能巡检实践把体验退化提前看清楚.md)
-
----
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- 姊妹能力: [STAROps UModel 数字孪生 + OpenAPI 嵌入（客户集成模式）](https://github.com/QianJinGuo/wiki/blob/main/entities/starops-umodel-digital-twin-openapi-embedding-jingchen-2026-08-04.md)
-
----
-
-## Ch13.022 AutoResearchEval：AutoResearch 的元认知闭环缺口与过程级失败诊断
-
-> 📊 Level ⭐⭐ | 3.4KB | `entities/autoresearch-eval-agent-failure-meta-cognitive-loop-2026.md`
-
-# AutoResearchEval：AutoResearch 的元认知闭环缺口与过程级失败诊断
-
-## 核心发现
-
-Prentis AI 与斯坦福等机构发布 AutoResearchEval，对当前 AutoResearch 系统的自主科研能力做了端到端的过程级诊断。核心结论：**当前 Agent 的主要瓶颈已不再是工程执行，而是科研过程中的判断与修正能力——即「元认知闭环（Metacognitive Loop）」的缺失**。Agent 能完成实验、生成报告，却难以像研究者一样持续检查结论、质疑方法、根据新证据调整方向。
-
-## 评测设计
-
-研究基于真实前沿科研工作构建任务环境，让 Claude、GPT、Qwen、DeepSeek 等多个模型系列及多个 Agent 系统完成从研究设想、文献检索、实验执行、结果分析、论文撰写到自我验证审查的完整流程，分析 100 个真实科研任务、8 组 Agent–模型组合与 800 条完整科研轨迹，归纳出 **45 类失败模式**。
-
-- 任务覆盖生物、医学、化学、材料科学、物理、科学计算、地球物理 7 个领域
-- 100 个任务分为 70 个开放式科学发现任务（无明确指标）+ 30 个目标锚定优化任务（以人类 SOTA 为锚）
-- 与多数只看最终结果的 benchmark 不同，AutoResearchEval 保留完整执行轨迹（代码、工具调用、实验结果、报告）
-
-## 关键方法：Artifact-aware Agent-as-a-Judge
-
-为把过程级诊断扩展到全部 800 条轨迹，研究构建了经过人工校准的 Artifact-aware Agent-as-a-Judge——不只读取最终报告，还检查代码、执行日志和数据等中间产物。在 50 条人工标注轨迹上，其 failure pattern 和根因分类的 Cohen's κ 分别达到 **0.75 和 0.83**，明显高于单次 LLM-as-a-Judge 的 **0.53 和 0.62**。
-
-## 意义
-
-这项研究把「Agent 能做科研」的讨论推进到「Agent 为什么做不好科研」——把失败归因到元认知闭环这一可操作的能力缺口，为后续在科研 Agent 中显式引入反思/验证/纠偏回路提供了诊断依据与评测基准。
-
-## 相关实体
-
-- → [AI 科研 L0-L4 分级综述](https://github.com/QianJinGuo/wiki/blob/main/entities/autoresearch-ai-scientific-discovery-l0-l4-challengehub.md)
-- → [自改进智能体反馈回路](https://github.com/QianJinGuo/wiki/blob/main/entities/autoresearch-feedback-loop-self-improving-agents-introspection.md)
-- → [Perplexity WANDR 研究智能体基准](https://github.com/QianJinGuo/wiki/blob/main/entities/perplexity-wandr-benchmark-research-agents-wide-deep-2026.md)
-- → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/autoresearch-eval-agent-failure-meta-cognitive-loop-2026.md)
-
-> [!contradiction] 参见 [Autoresearch Ai Scientific Discovery L0 L4 Challengehub](https://github.com/QianJinGuo/wiki/blob/main/entities/autoresearch-ai-scientific-discovery-l0-l4-challengehub.md) 对 AutoResearch 成熟度的乐观分级——AutoResearchEval 用过程级失败数据指出元认知闭环缺口仍是当前自主科研的主瓶颈。
-
----
-
-## Ch13.023 WANDR Benchmark — 评估 Research Agent 的 Wide-and-Deep 研究能力
-
-> 📊 Level ⭐⭐ | 3.3KB | `entities/perplexity-wandr-benchmark-research-agents-wide-deep-2026.md`
-
-# WANDR Benchmark — 评估 Research Agent 的 Wide-and-Deep 研究能力
-
-WANDR（Wide ANd Deep Research）是 Perplexity 发布的开源 benchmark，用于评估 Research Agent 在**高容量、强证据**的知识工作中的表现。包含 500 个真实场景的数据收集任务，共计 170,495 条可验证记录。与 DRACO（评估深度报告质量）互补，WANDR 聚焦于能否**大规模构建证据支撑的集合**。
-
-## 核心设计
-
-### 分层资格键（Qualification Key Hierarchy）
-
-任务使用灵活的树状结构定义：`company(n) → employee(m) → url(k)` 表示找 n 家公司，每家 m 名员工，每人 k 个支持页面。每个完整路径可独立验证。支持扁平列表、嵌套搜索、矩阵和多证据分支。
-
-### 无参考评分（Reference-Free Grading）
-
-使用固定答案集（answer key）不适合开放式研究。WANDR 在每个记录中同时要求 item、URL、摘要（excerpts）和答案。评分器重新抓取页面，检查页面可用性、声明清晰度、摘要忠实度和证据充分性。
-
-评分指标：
-- **Soft scores**：对不完整成员给部分分
-- **Hard scores**：仅计完全正确的成员
-- **Precision/Recall/F1**：在两级粒度上分别计算
-
-## 主要发现
-
-Perplexity Search as Code 在 0.363 soft F1 / 0.133 hard F1 领先，Anthropic 以 0.249 / 0.072 第二，其余系统上限为 0.121 / 0.035。
-
-**四个核心发现**：
-1. **部分进展常见，完整覆盖困难** — 最佳 hard precision 仅 0.150
-2. **规模放大问题** — 从最小到最大任务桶，Perplexity hard precision 从 0.235 降至 0.096
-3. **层级深度是杀手** — 三层 vs 零层层级 hard precision 从 0.392 降至 0.019
-4. **发现（Discovery）是首要瓶颈** — top-level 发现完成率 0.611-0.951，最大损失在 URL 附上前
-
-## 结构化的失败诊断
-
-每个维度可独立定位：发现不足、丰富化失败、身份处理错误、语义资格判断失误、证据构建失败。这种结构化为 RL 训练提供细粒度信号——可以在记录和分支级别给予奖励，替代单一的稀疏终端奖励。
-
-## 与现有实体的关系
-
-- 与 [MiroFlow Deep Research Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/miroflow-deep-research-agent-harness-mirothinker.md) 构成同一主题的评估与实现两极——MiroFlow 是 deep research 脚手架，WANDR 是测评框架
-- 补充 [Perplexity Search as Code](https://github.com/QianJinGuo/wiki/blob/main/entities/perplexity-search-as-code-generation.md) 的评估维度
-- 与 [Agent Evaluation Benchmarks](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-evaluation-benchmarks.md) 相比，WANDR 聚焦于"wide"而非"deep"维度
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/perplexity-wandr-benchmark-research-agents-wide-deep-2026.md)
-
----
-
-## Ch13.024 Observability Platform
-
-> 📊 Level ⭐⭐ | 1.5KB | `entities/observability-platform.md`
-
-# Observability Platform
-
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-observability-4-layer-quant67.md)
-
-## 概述
-
-可观测性在传统微服务已经是老生常谈：Metrics + Logs + Traces 三件套 + 一点 Profiling 就能覆盖 90% 排障。但直接搬到 LLM 系统上远远不够： - 成本不是"CPU 秒"而是"token × 单价"，input/output/cached 三档价格不同 - 延迟不是单一 latency，要拆 TTFT（Time To First Token）/ TPOT（Time Per Output Token）/ E2E - 一个 Agent 请求可能产生 20 次子 LLM 调用、5 次工具调用、3 次 retriever - 请求返回 HTTP 200、延迟正常、成本正常，**但答案是幻觉** — 传统监控一个告警都不会响 文章目标：把 LLM 可观测性拆成 4 层，串联主流通用栈，目标是"出问题时 5 分钟定位、3 小时修复，下次不再出现"。
-
-## 主要内容
-
-- 文章定位
-- 1. 为什么 LLM 需要新的可观测性
-- 1.1 与传统微服务差异
-- 1.2 四层观测模型
-- 2. 核心指标体系
-- 2.1 延迟：TTFT / TPOT / E2E
-- 2.2 吞吐：tokens / req / GPU
-- 2.3 GPU 与引擎内部信号
-
-## 来源
-
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-observability-4-layer-quant67.md)
-- 原始链接: https://quant67.com/post/llm-infra/23-observability/23-observability.html
-
----
-
-## Ch13.025 IG-Bench：AI 生成论文 idea 的「想法基因组」谱系评测
-
-> 📊 Level ⭐⭐ | 0.9KB | `entities/ideas-have-genomes-ig-bench-sjtu.md`
-
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ideas-have-genomes-ig-bench-sjtu.md)
-
-AI Scientist 等自动科研系统已能生成像模像样的论文，但现有评测只测检索准不准、事实错没错、文笔顺不顺。更关键的问题无人测过：**当一个 idea 声称「在延续某个研究方向」时，它有没有继承对的机制、修对的缺陷？**
-
-## 来源
-
-- 原文: [IG-Bench：AI 生成论文 idea 的「想法基因组」谱系评测](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ideas-have-genomes-ig-bench-sjtu.md)
-- 原始链接: : "https://mp.weixin.qq.com/s/_jskmg_sY5txJs0iVFbFiw
-
----
-
-## Ch13.026 美团海报生成 AIGC 技术体系：PosterCraft/PosterOmni/PosterReward（ICLR/CVPR 2026 三连发）
+## Ch13.014 美团海报生成 AIGC 技术体系：PosterCraft/PosterOmni/PosterReward（ICLR/CVPR 2026 三连发）
 
 > 📊 Level ⭐⭐⭐ | 22.1KB | `entities/meituan-poster-aigc-postercraft-posteromni-posterreward-meigen.md`
 
@@ -3058,45 +2291,7 @@ AI Scientist 等自动科研系统已能生成像模像样的论文，但现有�
 
 ---
 
-## Ch13.027 Seedream 5.0 Pro 交互式精准编辑实测
-
-> 📊 Level ⭐⭐⭐ | 4.8KB | `entities/字节把-ps-做进了生图模型里实测-seedream-50-pro-指哪改哪.md`
-
-# Seedream 5.0 Pro 交互式精准编辑实测
-
-夕小瑶编辑部 2026-07-13 对火山引擎 Seedream 5.0 Pro（7 月 8 日发布）的深度实测——核心升级是「交互式精准编辑」：把"PS 的能力装进生图模型"，从自然语言模糊描述转向坐标级、色号级、草图级的可操作编辑指令。文章以 8 组对照实验拆解了这套编辑交互范式。
-
-## 交互式精准编辑的四种输入范式
-
-- **点选/框选坐标指令（@Mark/@Region）**：用户在图上打点（Mark 坐标）或拖框（Region 区域），提示词直接 @ 该点/框说明"这块改成什么"——把模糊方位描述变成明确坐标。实测在多人合照中标记四个人的位置并圈中一棵树，一句指令完成两两换位 + 移除大树。
-- **草图勾画**：语言说不清的形状直接用涂鸦表达——在男模特肖像上乱涂蓝色线团/歪方框/红色领带，模型将其转化为贝雷帽、棕色板材镜框、印花领带与金属耳饰，五官位置零偏移。"画得越丑，改得越准"。
-- **色号级改图**：颜色从形容词变成 sRGB 色号——同一提示词将瓶身改为 `#FF6B35`，Seedream 准确换色且保留高光，对照 gpt image 2 换色不准确、高光质感缺失。
-- **图层分离**：生成结果默认分离元素，可按文字要求切出指定对象输出透明通道 PNG 图层，人物/文字/装饰/背景可继续进入 PS/PPT 设计流程，不必整图重生成。
-
-## 能力边界与对照
-
-- **真实感**：千禧年生活照测试——"太干净"是 AI 生图真实感的最大陷阱，Seedream 保留生活化细节（互相遮挡、微偏色、年代家具）并用右下角时间戳钉死照片年代感；对照 nano 2 / image 2。
-- **多图融合**：最多 10 张参考图融合——10 张暗黑系角色立绘合成战斗壁纸，要求画风/光源/透视统一（暖橙轮廓光 + 瞳孔红点 + 禁止背景退化），生成结果人物/服装/纹饰逐一对得上参考图；反向场景是 3 张物品图（王冠/盾牌/长剑）落到同一位角色身上。后续可接 AI 漫剧（参考图定人物 → 群像定世界观 → 拆连续分镜）。
-- **复杂信息可视化**：整篇科普长稿 → 医学风信息图（半透明大脑 + 前额叶高亮 + 全可读文字），模型需要自主决定主结论/箭头关系/主视觉；错误可圈出单独修（"崩的那张里错字、箭头、数字可以圈出来修"）。
-- **多语种文字生成**：支持 14 种语言，日/阿语海报保留同一套场景/主体/视觉层级，并根据字面密度重新组织文字占位。
-
-## 行业含义
-
-真实生图需求里文生图只占 20% 多、图片编辑占 70% 多——"抽卡"（生成结果不可控、局部改不动只能重抽）正从玄学变成可点选、框选、圈出来改的工程问题。模型的可控编辑能力（修订权）比首图惊艳度更重要：用户手里的已有图片"把它改对"成为主需求。
-
-## 相关实体
-
-- [Seed 2.0 Model Card](https://github.com/QianJinGuo/wiki/blob/main/entities/seed2-0-model-card-bytedance-seed-2026.md) — 字节 Seed 家族
-- [Doubao Seed 2 Lite](https://github.com/QianJinGuo/wiki/blob/main/entities/doubao-seed-2-lite-agent-multimodal.md) — 多模态 Agent 版本
-- [字节跳动 Seedance](https://github.com/QianJinGuo/wiki/blob/main/entities/字节跳动-seedance-占领好莱坞.md) — 视频生成家族对照
-- [AI 生图三阶段流水线](https://github.com/QianJinGuo/wiki/blob/main/entities/ai生图免训练提速1000办法最简洁的三阶段流水线.md) — 生图工程实践
-- [FLUX.3](https://github.com/QianJinGuo/wiki/blob/main/entities/flux-3-multimodal-flow-model-black-forest-labs-2026.md) — 竞品多模态生成模型
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/字节把-ps-做进了生图模型里实测-seedream-50-pro-指哪改哪.md)
-
----
-
-## Ch13.028 Discretizing Reward Models
+## Ch13.015 Discretizing Reward Models
 
 > 📊 Level ⭐⭐⭐⭐ | 6.2KB | `entities/abs-2606-21795.md`
 

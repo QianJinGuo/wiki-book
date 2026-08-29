@@ -48,7 +48,7 @@ CLARITY Act 的策略是**间接调控**：不直接说「稳定币不能提供�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/clarity-act-5-things.md)
 
 ## 相关实体
-- [5 Things to Know about the CLARITY Act](../ch03/016-5-things-to-know-about-the-clarity-act.html)
+- [5 Things to Know about the CLARITY Act](../ch03/010-5-things-to-know-about-the-clarity-act.html)
 
 ---
 ## 关联

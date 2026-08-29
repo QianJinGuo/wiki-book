@@ -1,416 +1,190 @@
 # 基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构
 
-```mermaid
-graph TB
-    subgraph "边缘层"
-        CDN[CDN/缓存] --> LB[负载均衡]
-        LB --> GW[API Gateway<br/>认证+限流]
-    end
-    subgraph "服务层"
-        SVC_A[业务服务A]
-        SVC_B[业务服务B]
-        AGENT_SVC[Agent 服务]
-    end
-    GW --> SVC_A & SVC_B & AGENT_SVC
-    subgraph "Agent 运行时"
-        SANDBOX[沙箱隔离]
-        RUNTIME[执行引擎]
-        POOL[连接池]
-    end
-    AGENT_SVC --> SANDBOX --> RUNTIME
-    RUNTIME --> POOL
-    subgraph "数据层"
-        DB[(关系数据库)]
-        CACHE[(Redis缓存)]
-        OBJ[(对象存储)]
-        VDB[(向量数据库)]
-    end
-    SVC_A --> DB & CACHE
-    AGENT_SVC --> OBJ & VDB
-    classDef edge fill:#fef3c7,stroke:#d97706
-    classDef svc fill:#dbeafe,stroke:#2563eb
-    classDef runtime fill:#ede9fe,stroke:#7c3aed
-    classDef data fill:#d1fae5,stroke:#059669
-    class CDN,LB,GW edge
-    class SVC_A,SVC_B,AGENT_SVC svc
-    class SANDBOX,RUNTIME,POOL runtime
-    class DB,CACHE,OBJ,VDB data
-```
-
-> 📊 Level ⭐⭐ | 28.8KB | `entities/using-amazon-bedrock-agentcore-openclaw-multi-2.md`
+> 📊 Level ⭐⭐ | 22.3KB | `entities/using-amazon-bedrock-agentcore-openclaw-multi-5.md`
 
 # "基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构"
 ---
-title: "AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第二篇 | Amazon Web Services"
-url: https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-2/
+title: "AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第五篇 | Amazon Web Services"
+url: https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-5/
 source: rss
 feed_name: AWS China Blog
 ---
-
-
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("基于 AWS 示例项目，展示如何将 OpenClaw 迁…"))
-    概念导图
-    亚马逊AWS官方博客https://aw…
-    一、环境准备
-      第一步：设置 AWS 账号和区域环境变量
-      第二步：安装基础依赖
-      第三步：启动 Docker 服务
-      第四步：配置 AWS X-Rayhttp…
-    二、获取代码
-      第一步：克隆项目代码
-      第二步：设置部署区域
-      第三步：创建 Python 虚拟环境并安装依赖
-      了解 cdk.json 配置项
-    三、CDK 初始化（Bootstrap）
-      第一步：初始化 CDK 工作台
-      第二步：预览将要创建的资源
-      第三步：应用部署补丁
-    相关链接
-    本篇作者
-    AWS 架构师中心：云端创新的引领者
-```
-
-## 概念导图
-
-```mermaid
-mindmap
-  root(("基于 AWS 示例项目 展示如何将 OpenClaw 迁移为基于"))
-    亚马逊AWS官方博客
-    一 环境准备
-      第一步 设置 AWS 账号和区域环境变量
-      第二步 安装基础依赖
-      第三步 启动 Docker 服务
-    二 获取代码
-      第一步 克隆项目代码
-      第二步 设置部署区域
-      第三步 创建 Python 虚拟环境并安装依赖
-    三 CDK 初始化 Bootstrap
-      第一步 初始化 CDK 工作台
-      第二步 预览将要创建的资源
-      第三步 应用部署补丁
-    本篇作者
-    AWS 架构师中心 云端创新的引领者
-```
-
-## [亚马逊AWS官方博客](https://aws.amazon.com/cn/blogs/china/)
-摘要：基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构。全系列 6 篇，涵盖 Replatform 与 Refactor 两种策略。本篇为第二篇：环境准备与代码获取，安装依赖工具、配置 AWS 环境、克隆项目代码、了解 cdk.json 配置项，以及初始化 CDK。
+摘要：基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构。全系列 6 篇，涵盖 Replatform 与 Refactor 两种策略。本篇为第五篇：配置消息渠道与端到端验证，配置 Telegram / 飞书 Bot、发送第一条消息、查看监控大盘和日志。
 **目录**
-01[一、环境准备](https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-2/#section1)
-02[二、获取代码](https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-2/#section2)
-04[相关链接](https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-2/#section4)
+01[七、配置消息渠道](https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-5/#section1)
+02[八、发送消息验证](https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-5/#section2)
+03[九、查看监控和日志](https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-5/#section3)
+04[相关链接](https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-5/#section4)
 
 * * *
 
-## 一、环境准备
-在开始部署之前，需要准备好开发环境。以下步骤假设你使用的是 Amazon Linux 2023 或类似的 Linux 环境（比如 AWS CloudShell 或 [Amazon EC2](https://aws.amazon.com/cn/ec2/) 实例）。
+## 七、配置消息渠道
+基础设施和运行时都部署完了，现在需要把 IM 渠道的消息推送接到我们的 [Amazon API Gateway](https://aws.amazon.com/cn/api-gateway/) 上。这一步对应的是 Refactor 中"消息接入"维度的改造 — 传统 OpenClaw 的 Gateway 直接监听端口，现在改为通过 webhook 回调的方式接入。
+本步骤至少选一个渠道配置。
+选哪个渠道？Telegram 配置步骤最少；飞书适合国内企业环境但步骤多。本节先讲 Telegram，飞书见后半部分。
 
-### 第一步：设置 AWS 账号和区域环境变量
-先告诉系统你要部署到哪个 AWS 账号的哪个区域。
-```
-export TARGET_REGION=us-west-2
-export CDK_DEFAULT_REGION=$TARGET_REGION
-export CDK_DEFAULT_ACCOUNT=$(aws sts get-caller-identity --query Account --output text)
-export PATH="$HOME/.local/bin:$PATH"
-mkdir -p ~/openclaw-$TARGET_REGION && cd ~/openclaw-$TARGET_REGION
-```
-PowerShell
-为什么做这一步：AWS CDK 需要知道部署目标（账号 + 区域）才能工作。创建一个专属工作目录便于管理，如果以后想部署到多个区域，每个区域一个目录互不干扰。
+### 选项 A：配置 Telegram
+A1：用 BotFather 创建 Telegram Bot
 
-### 第二步：安装基础依赖
-```
-sudo dnf update -y
-sudo dnf install -y python3.12-pip screen nodejs20 docker
-```
-PowerShell
-为什么做这一步：
+*   在 Telegram 中搜索 `@BotFather`（官方账号，带蓝色对勾）并开启对话
+*   发送 `/newbot`
+*   BotFather 提示：请起个显示名字（Name），例如 `OpenClaw Demo`
+*   BotFather 提示：请起个 username，必须以 `bot` 结尾，全局唯一，例如 `my_openclaw_demo_bot`
+*   成功后 BotFather 会回复一段包含 Token 的消息，格式类似：
+`123456789:***`
 
-*   Python 3.12：CDK 应用用 Python 编写
-*   Node.js 20：CDK CLI 工具需要 Node.js 运行
-*   Docker：本文用 CodeBuild 模式构建镜像，实际不会用到本地 Docker。安装它是为了环境完整性和后续可能的本地调试
-*   screen：部署过程比较长，用 screen 可以防止 SSH 断开导致中断
-
-### 第三步：启动 Docker 服务
+*   把这个 Token 复制保存（后面要用）
+为什么做这一步：BotFather 是 Telegram 官方的 Bot 管理入口。Token 相当于 Bot 的身份凭证，请像密码一样妥善保管，不要提交到公开代码仓库。
+A2：把 Token 存入 AWS Secrets Manager
 ```
-sudo systemctl start docker
-sudo systemctl enable docker
-sudo usermod -aG docker $USER
-newgrp docker
-docker -v
-```
-PowerShell
-为什么做这一步：让当前用户不用 sudo 就能运行 docker 命令。最后 `docker -v` 验证能正常使用。
-
-### 第四步：配置 [AWS X-Ray](https://aws.amazon.com/cn/xray/) 日志权限
-```
-aws logs put-resource-policy \
-  --policy-name XRayLogGroupPolicy \
-  --policy-document '{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":{"Service":"xray.amazonaws.com"},"Action":["logs:CreateLogGroup","logs:CreateLogStream","logs:PutLogEvents","logs:PutRetentionPolicy"],"Resource":"*"}]}' \
-  --region $TARGET_REGION
-aws xray update-trace-segment-destination \
-  --destination CloudWatchLogs \
+aws secretsmanager update-secret \
+  --secret-id openclaw/channels/telegram \
+  --secret-string 'YOUR_BOT_TOKEN' \
   --region $TARGET_REGION
 ```
 PowerShell
-为什么做这一步：什么是 AWS X-Ray？AWS X-Ray 是分布式追踪服务，能完整记录一次用户请求经过的所有组件（API Gateway → Router Lambda → AgentCore 容器 → Bedrock → Guardrails）及每段耗时。这对于迁移后的多组件架构尤为重要 — 原来单进程时出问题看一份日志就行，现在十几个组件串联，X-Ray 能把整条链路串起来，哪里慢、哪里错一目了然。
-这两条命令做什么？第一条授权 X-Ray 服务往 [Amazon CloudWatch](https://aws.amazon.com/cn/cloudwatch/) Logs 写追踪数据；第二条把 X-Ray 追踪数据的输出目标设为 CloudWatch Logs，这样日志和追踪数据都在一个地方，排错更方便。
-
-### 第五步：检查并开通 Amazon Bedrock Claude 模型访问
+把上面的 `YOUR_BOT_TOKEN` 替换成 BotFather 给你的真实 Token。
+为什么做这一步：在 Phase 1 部署时，`openclaw/channels/telegram` 这个 Secret 就已经创建了但里面是空占位值，现在把真实 Token 填进去。容器和 Router Lambda 会从 Secrets Manager 读取这个 Token 与 Telegram 通信。这也是迁移中安全维度的改进 — 传统 OpenClaw 把 API 密钥存在本地的 `auth-profiles.json` 文件里，现在统一由 AWS Secrets Manager 加密管理。
+这一步必须在运行 setup-telegram.sh 之前完成，因为脚本会从 Secrets Manager 读取 Token 来注册 webhook。
+A3：运行 Telegram 配置脚本
 ```
-aws bedrock list-foundation-models \
-  --region $TARGET_REGION \
-  --query "modelSummaries[?contains(modelId,'claude')].[modelId]" \
-  --output table
+./scripts/setup-telegram.sh
 ```
 PowerShell
-为什么做这一步：Amazon Bedrock 的模型访问是账号级别的设置，每个 AWS 账号首次使用 Bedrock 时都要手动开通想用的模型，否则调用会返回 AccessDeniedException。
-上面命令的作用：列出当前区域你已经能访问的 Claude 模型。如果列表为空或缺少你要用的模型（本项目默认用 `global.anthropic.claude-sonnet-4-6`），需要到 Bedrock 控制台开通。
-如何开通模型访问（控制台操作）
-1.   进入 Amazon Bedrock 控制台（确保区域切到你部署的目标区域）
-2.   左侧菜单找到 Model access（模型访问）
-3.   点击 Modify model access 或 Enable specific models
-4.   勾选 Anthropic 下的 Claude Sonnet 4（或项目配置的其他模型）
-5.   Anthropic 模型需要填一个简短的用例说明表单（What's your industry / use case 等）
-6.   提交后等待状态变成 Access granted
-Claude 系列模型现在通常几秒到几分钟就能开通。如果命令已经能列出 Claude 模型，说明已经开通过，可以跳过控制台操作。
+脚本会自动：
+1.   从 Secrets Manager 读取你刚存的 Token
+2.   从 [AWS CloudFormation](https://aws.amazon.com/cn/cloudformation/) 读取 API Gateway URL
+3.   调用 Telegram `setWebhook` API，把 webhook 指向 `{ApiUrl}/webhook/telegram`，同时传入 secret_token 用于后续的签名验证
+4.   提示你输入 Telegram user ID（纯数字，不是 username），自动写入 DynamoDB 白名单
+为什么做这一步：如何找到自己的 Telegram user ID？有两种方法：
+① 在 Telegram 里搜索 `@userinfobot`，给它发任意消息，它会回复你的数字 user ID
+② 或者先给你的新 Bot 发一条消息（会被系统拒绝，但拒绝消息里会显示你的 user ID）
+为什么需要白名单？默认 `registration_open=false`，只有 DynamoDB 里有 `ALLOW#telegram:xxx` 记录的用户才能用 Bot。这样你的 Bot 不会被陌生人滥用。后续想加更多用户，用 `./scripts/manage-allowlist.sh add telegram:user_id`。
 
-### 第六步：安装 AWS CDK 和 AgentCore Starter Toolkit
+### 选项 B：配置飞书
+B1：创建飞书自建应用
+1.   打开飞书开放平台 [https://open.feishu.cn/app](https://open.feishu.cn/app)（需要企业飞书账号）
+2.   点击"创建企业自建应用"，填写应用名称、描述、图标
+3.   创建后进入应用详情页，在左侧菜单找到"添加应用能力"，添加机器人能力
+为什么做这一步：飞书的 Bot 能力挂在"自建应用"下，一个应用可以开启多种能力（机器人、网页应用、小程序等），这里我们只需要机器人。
+B2：配置权限
+在应用详情页 → 权限管理，添加以下 5 个权限：
+
+*   `im:message` — 接收用户消息
+*   `im:message:send_as_bot` — 以机器人身份发消息
+*   `im:message.content:readonly` — 读取消息内容
+*   `im:chat:readonly` — 读取群组信息
+*   `im:resource` — 下载图片/文件
+为什么做这一步：这些权限是 Bot 能收发消息和处理图片的基础。飞书的权限比较细粒度，需要逐个开启。
+B3：配置事件订阅
+在应用详情页 → 事件订阅：
+1.   先开启加密策略：生成 `Encrypt Key` 和 `Verification Token`，保存备用（后面要填入 Secrets Manager）
+2.   请求地址填入：`{API_URL}webhook/feishu`（API_URL 从 CloudFormation `OpenClawRouter` stack 的 `ApiUrl` 输出获取）
+3.   订阅模式选择"将事件发送至开发者服务器"
+4.   添加事件：
+
+    *   `im.message.receive_v1`（必须）— 接收用户消息
+    *   `im.chat.member.bot.added_v1`（推荐）— 机器人被加入群
+    *   `im.chat.member.bot.deleted_v1`（推荐）— 机器人被移出群
+为什么做这一步：飞书的 webhook 事件是 AES-256-CBC 加密的（需要 Encrypt Key 解密），Verification Token 用来验证请求确实来自飞书。Router Lambda 已经内置了解密和验证逻辑。
+B4：发布应用
+在应用详情页 → 版本管理与发布，提交发布申请并等待企业管理员审批通过。
+重要：没发布的应用只有开发者自己能看到，其他用户在飞书里搜不到你的 Bot。必须发布后才能实际使用。
+B5：运行飞书配置脚本
 ```
-sudo npm install -g aws-cdk
-cdk --version
-pip3.12 install bedrock-agentcore-starter-toolkit --break-system-packages
-echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
-agentcore --help
+./scripts/setup-feishu.sh
 ```
 PowerShell
-为什么做这一步：
+脚本会交互式提示你输入 4 个凭证（都能在飞书开发者后台找到）：
 
-*   AWS CDK：用于部署 Phase 1 和 Phase 3 的基础设施代码
-*   AgentCore Starter Toolkit：CDK 不直接管理 AgentCore Runtime，需要通过这个工具在 Phase 2 创建 Runtime 和构建镜像
+*   App ID：凭证与基础信息 → App ID
+*   App Secret：凭证与基础信息 → App Secret
+*   Verification Token：事件订阅 → 加密策略
+*   Encrypt Key：事件订阅 → 加密策略
+然后脚本会：
 
-### 第七步：运行环境检查脚本
-```
-cat > check.sh /dev/null; then echo "✅ $1"; ((PASS++)); else echo "❌ $1"; ((FAIL++)); fi
-}
-check "AWS CLI v2"        "aws --version 2>&1 | grep -q 'aws-cli/2'"
-check "AWS 凭证"          "aws sts get-caller-identity"
-check "Node.js >= 18"     "node -e 'var v=parseInt(process.version.slice(1));process.exit(v>=18?0:1)'"
-check "Python >= 3.11"    "python3.12 -c 'import sys; exit(0 if sys.version_info >= (3,11) else 1)'"
-check "Docker"            "docker version"
-check "AWS CDK v2"        "cdk --version 2>&1 | grep -q '^2'"
-check "agentcore CLI"     "agentcore --help"
-echo ""
-echo "通过: $PASS / 失败: $FAIL"
-[ $FAIL -eq 0 ] && echo "???? 环境就绪！" || echo "⚠️ 请修复上述失败项"
-EOF
-bash check.sh
-```
-PowerShell
-为什么做这一步：一次性检查 7 项必备工具是否正常。全部通过才能进入下一步，避免后面部署时才发现某个工具没装。
+*   把 4 个凭证以 JSON 格式存入 Secrets Manager（`openclaw/channels/feishu`）
+*   提示你输入自己的飞书 open_id（格式 `ou_xxxxxxxx`），加入白名单
+为什么做这一步：如何找到自己的 open_id？先给 Bot 发一条消息，因为你还没在白名单里，系统会拒绝并在日志里记录你的 open_id，可以去 CloudWatch `/openclaw/lambda/router` Log Group 查看。
 
-## 二、获取代码
-### 第一步：克隆项目代码
-```
-git clone https://github.com/aws-samples/sample-host-openclaw-on-amazon-bedrock-agentcore.git
-cd sample-host-openclaw-on-amazon-bedrock-agentcore
-```
-PowerShell
-为什么做这一步：从 AWS Samples 官方仓库克隆完整的项目代码（包含 CDK 基础设施、容器代码、Lambda 函数、部署脚本）。
-
-### 第二步：设置部署区域
-```
-sed -i "s/\"region\": \"\"/\"region\": \"${TARGET_REGION}\"/" cdk.json
-cat cdk.json
-```
-PowerShell
-为什么做这一步：把 `cdk.json` 里空的区域字段替换成你的目标区域。`cdk.json` 是 CDK 的配置文件，里面还有模型 ID、每日预算、会话超时等可调参数。
-
-### 第三步：创建 Python 虚拟环境并安装依赖
-```
-python3.12 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-pip install boto3
-python -c "import boto3; import aws_cdk; print('Dependencies installed successfully')"
-```
-PowerShell
-为什么做这一步：虚拟环境（venv）可以把项目依赖和系统 Python 隔离开，避免污染系统环境。`requirements.txt` 里列了 CDK 需要的 Python 包（主要是 aws-cdk-lib 和 cdk-nag）。最后一行验证依赖都装好了。
-
-### 了解 cdk.json 配置项
-在进入部署之前，先了解项目的配置。`cdk.json` 的 `context` 对象是项目所有可调参数的集中地。Stack 代码通过 `self.node.try_get_context("xxx")` 读取这些值。这里只是让你了解有哪些配置，本次部署你不需要修改任何配置项。
-**部署目标配置**
-| 配置项 | 当前值 | 作用 |
+## 八、发送消息验证
+到这一步，整个迁移改造已经完成。现在来验证端到端的消息链路是否打通。下面的时序图展示了一条消息从用户发出到 AI 回复的完整旅程 — 这也是迁移后架构的实际运行路径：
+**容器内部：microVM 里的三个进程**
+| 进程 | 角色 | 职责 |
 | --- | --- | --- |
-| `account` | （空） | AWS 账号 ID。为空时读取环境变量 `CDK_DEFAULT_ACCOUNT` |
-| `region` | 部署区域 | 部署区域。为空时读取 `CDK_DEFAULT_REGION`。已通过上一步的 sed 命令填入 |
-| `availability_zones` | [] | VPC 使用的可用区列表。留空则 CDK 自动选 2 个。仅当目标区域 AgentCore 有 AZ 限制时才需要手动指定 |
-**Amazon Bedrock 模型配置**
-| 配置项 | 当前值 | 作用 |
-| --- | --- | --- |
-| `default_model_id` | global.anthropic.claude-sonnet-4-6 | 主 Agent 使用的 Claude 模型。`global.` 前缀表示跨区域推理（Cross Region Inference），Amazon Bedrock 会自动将请求路由到可用区域 |
-| `subagent_model_id` | （空） | 子代理模型。空值表示复用主模型。可设置成更便宜/更快的模型省成本 |
-**AgentCore Runtime 运行配置**
-| 配置项 | 当前值 | 作用 |
-| --- | --- | --- |
-| `runtime_id` | openclaw_agent-21FHcrBssV | AgentCore Runtime ID。Phase 2 部署后由 deploy.sh 自动写入，Phase 3 的 Stack 会读取这个值 |
-| `runtime_endpoint_id` | DEFAULT | Runtime Endpoint ID。Starter Toolkit 默认创建的 Endpoint 名就叫 DEFAULT |
-| `image_version` | 70 | 容器镜像版本号。改这个值 + 重新部署，会强制 AgentCore 重新拉取镜像 |
-| `session_idle_timeout` | 1800（30 分钟） | 会话空闲超时（秒），超时后 AgentCore 销毁 microVM。官方默认 900 秒（15 分钟） |
-| `session_max_lifetime` | 28800（8 小时） | 会话最大生命周期（秒），上限 28800（8 小时） |
-| `workspace_sync_interval_seconds` | 300（5 分钟） | 容器内 `.openclaw/` 工作区同步到 S3 的间隔（秒）。这是数据持久化迁移的关键参数 |
-| `enable_browser` | true | 是否开启 AgentCore Browser（无头浏览器）。仅在支持的区域生效 |
-**AWS Lambda 配置**
-| 配置项 | 当前值 | 作用 |
-| --- | --- | --- |
-| `router_lambda_timeout_seconds` | 600 | Router Lambda 超时（秒）。冷启动时 Lightweight Agent 约 10-15 秒响应，加上 Bedrock 推理时间，整个请求可能超过 30 秒，所以设 600 秒留足余量 |
-| `router_lambda_memory_mb` | 256 | Router Lambda 内存，影响 CPU 配额 |
-| `cron_lambda_timeout_seconds` | 900 | 定时任务 Lambda 超时（秒）。需要够长以完成预热、消息处理、回复推送 |
-| `cron_lambda_memory_mb` | 256 | 定时任务 Lambda 内存 |
-| `cron_lead_time_minutes` | 5 | 定时任务预热提前量：任务触发前 5 分钟先启动容器（减少冷启动等待） |
-**预算和告警配置**
-| 配置项 | 当前值 | 作用 |
-| --- | --- | --- |
-| `daily_token_budget` | 1000000 | Token 预算告警阈值（100 万）。注意：虽然配置项名叫 daily，但实际 alarm 的检查周期是 1 小时，即 1 小时内 Token 总量超过此值就触发告警 |
-| `daily_cost_budget_usd` | 5 | 成本预算告警阈值（美元）。同上，实际检查周期是 1 小时 |
-| `anomaly_band_width` | 2 | Token 异常检测带宽（标准差倍数） |
-**数据保留配置**
-| 配置项 | 当前值 | 作用 |
-| --- | --- | --- |
-| `cloudwatch_log_retention_days` | 30 | CloudWatch 日志保留天数 |
-| `token_ttl_days` | 90 | Amazon DynamoDB Token 用量记录的 TTL（生存时间，Time to Live），90 天自动删除 |
-| `user_files_ttl_days` | 365 | S3 用户文件的生命周期（365 天后自动过期） |
-**安全和开关**
-| 配置项 | 当前值 | 作用 |
-| --- | --- | --- |
-| `registration_open` | false | 是否开放自助注册。false 表示只有白名单（DynamoDB 中有 ALLOW# 记录）的用户才能使用 Bot |
-| `enable_cloudtrail` | false | 是否部署专用 AWS CloudTrail Trail。默认关闭（多数账号已有组织级 Trail） |
-| `enable_guardrails` | （未设置，视为 true） | 是否启用 Amazon Bedrock Guardrails 内容过滤。代码逻辑是：未设置或设为 true 时启用，设为 false 时不创建 Guardrail。具体过滤规则在 `stacks/guardrails_stack.py` 中定义 |
-| `guardrails_pii_action` | （未设置，默认 ANONYMIZE） | PII 检测动作。ANONYMIZE 表示匿名化替换，BLOCK 表示直接阻断 |
-**CDK 框架配置（不需要改）**
-以 `@aws-cdk/` 开头的配置是 CDK 框架自身的行为开关（比如最小化 IAM 策略、使用 IMDSv2 等），这些是最佳实践默认值，一般不要改动。
-
-## 三、CDK 初始化（Bootstrap）
-### 第一步：初始化 CDK 工作台
+| Contract Server | 管家 | microVM 的入口进程。负责健康检查（`/ping`）、请求路由（`/invocations`）、工作区同步（S3 ↔ 本地）、STS 限制版凭证管理（每 45 分钟刷新）。OpenClaw 启动前，由内置的 Lightweight Agent 临时应答 |
+| OpenClaw | 主力 | 真正的 AI Agent 进程。启动后接管所有用户请求，执行 17 个内置工具和 5 个预装社区技能 |
+| Bedrock Proxy | 翻译官 | OpenClaw 原生使用 OpenAI 格式的 API 调用，Proxy 将其转换为 Amazon Bedrock ConverseStream API 格式，同时注入 Guardrails 配置 |
+第一步：给 Bot 发送第一条消息
+在 Telegram 中找到你的 Bot，发送：
 ```
-cdk bootstrap aws://$CDK_DEFAULT_ACCOUNT/$CDK_DEFAULT_REGION
+你好，介绍一下你自己
 ```
 PowerShell
-为什么做这一步：CDK 部署时需要一个"工作台"来存放中间产物（[AWS CloudFormation](https://aws.amazon.com/cn/cloudformation/) 模板、Lambda 代码包等）。bootstrap 命令会在你的 AWS 账号里创建一个叫 `CDKToolkit` 的 Stack，包含一个 S3 桶、一个 ECR 仓库、几个 IAM 角色。
-每个账号 + 区域组合只需要执行一次，后续所有 CDK 项目都会共用这个工作台。
-验证方法：去 AWS 控制台的 CloudFormation 页面，应该能看到一个名为 `CDKToolkit` 的 Stack，状态 CREATE_COMPLETE。
+为什么做这一步：第一条消息会触发冷启动：AgentCore Runtime 为你的会话创建一个新的 microVM，大约 10-15 秒后由 Lightweight Agent 先响应。后续消息不需要重新创建 microVM，响应速度取决于 AI 回复的复杂度（简单问题几秒，复杂问题可能十几秒）。
+第二步：测试常用功能
+| 发送什么 | 测试什么能力 | 涉及的迁移改造点 |
+| --- | --- | --- |
+| "帮我搜一下今天北京天气" | web_search 工具（NAT Gateway 出网） | 网络架构（VPC + NAT） |
+| 发一张图片并问"这是什么" | 图片上传 + Bedrock 多模态 | S3 存储 + 模型调用 Replatform |
+| "帮我把这段文字存到 notes.md" | write_user_file 工具（S3 用户文件） | 数据持久化 Refactor |
+| "列出我的文件" | list_user_files 工具 | Per-User S3 前缀隔离 |
+| "每天早上 8 点提醒我喝水" | create_schedule 工具（EventBridge 定时任务） | 定时任务 Refactor |
+为什么做这一步：每种测试对应架构中的一个组件，验证整个迁移链路是否打通。
 
-### 第二步：预览将要创建的资源
-```
-cdk synth
-```
-PowerShell
-为什么做这一步：把 Python CDK 代码"编译"成 CloudFormation 模板（YAML 格式），不会真的创建任何 AWS 资源。这一步主要是：
-
-*   验证代码能正确生成模板
-*   运行 cdk-nag 安全检查（检查是否有明显的安全配置错误）
-*   生成的模板会在 `cdk.out/` 目录下，可以查看每个 Stack 会创建哪些资源
-
-### 第三步：应用部署补丁
-```
-sed -i '/# --- S3 Bucket for Per-User File Storage/i\        # AWS Marketplace — required for Bedrock model access verification\n        self.execution_role.add_to_policy(\n            iam.PolicyStatement(\n                actions=[\n                    "aws-marketplace:ViewSubscriptions",\n                    "aws-marketplace:Subscribe",\n                ],\n                resources=["*"],\n            )\n        )\n' stacks/agentcore_stack.py
-sed -i 's/dashboard_name="OpenClaw-Operations"/dashboard_name=f"OpenClaw-Operations-{region}"/' stacks/observability_stack.py
-sed -i 's/dashboard_name="OpenClaw-Token-Analytics"/dashboard_name=f"OpenClaw-Token-Analytics-{self.region}"/' stacks/token_monitoring_stack.py
-```
-PowerShell
-为什么做这一步：两处小补丁：
-
-*   第一条（第一个 sed）：给 AgentCore 执行角色添加 AWS Marketplace 权限，Amazon Bedrock 某些模型的访问验证需要这个权限
-*   第二、三条（后两个 sed）：给两个 CloudWatch Dashboard 的名称加上区域后缀，防止在多区域部署时名称冲突
+## 九、查看监控和日志
+监控是 Replatform 带来的直观运维体验提升。迁移后，所有组件的日志、指标、告警都集中在 Amazon CloudWatch 里，通过统一的 Dashboard 即可掌握系统运行状态。
+第一步：查看 Router Lambda 日志
+去 CloudWatch → Log groups → `/openclaw/lambda/router`
+为什么做这一步：这里能看到每条消息的完整处理过程：webhook 验证、用户查询、调用 AgentCore、响应返回。排错时第一站。
+第二步：查看 AgentCore 容器日志
+去 CloudWatch → Log groups → 搜 `bedrock-agentcore/runtimes/openclaw_agent`
+为什么做这一步：容器内部的运行日志：Contract Server 启动过程、Proxy 调用 Bedrock、OpenClaw 工具执行等。
+第三步：查看用量大盘
+去 CloudWatch → Dashboards → `OpenClaw-Token-Analytics-`
+为什么做这一步：看到你刚才对话消耗了多少 Token、估算成本。用量大盘的数据来自 Bedrock 调用日志 → Token Metrics Lambda → DynamoDB + CloudWatch 指标。
+第四步：查看 [Amazon DynamoDB](https://aws.amazon.com/cn/dynamodb/) 数据
+去 DynamoDB 控制台 → `openclaw-identity` 表 → Explore items
+为什么做这一步：能看到几种记录：`CHANNEL#telegram:xxx`（渠道映射）、`USER#xxx`（用户信息）、`SESSION`（当前会话）、`ALLOW#`（白名单）、`CRON#`（定时任务）。
 
 ## 相关链接
 **➡️ 下一步行动：**
 **相关产品：**
 
-*   [Amazon CDK](https://aws.amazon.com/cn/cdk/?p=bl_pr_cdk_l=1) — 基础设施即代码框架
-*   [Amazon Bedrock](https://aws.amazon.com/cn/bedrock/?p=bl_pr_bedrock_l=2) — 用于构建生成式人工智能应用程序和代理的端到端平台
-*   [AWS Lambda](https://aws.amazon.com/cn/lambda/?p=bl_pr_lambda_l=3) — 无需服务器即可运行代码
-*   [Amazon X-Ray](https://aws.amazon.com/cn/xray/?p=bl_pr_x-ray_l=4) — 分布式应用调试
-*   [Amazon CloudWatch](https://aws.amazon.com/cn/cloudwatch/?p=bl_pr_cloudwatch_l=5) — 可观测性工具
+*   [Amazon Bedrock](https://aws.amazon.com/cn/bedrock/?p=bl_pr_bedrock_l=1) — 用于构建生成式人工智能应用程序和代理的端到端平台
+*   [Amazon S3](https://aws.amazon.com/cn/s3/?p=bl_pr_s3_l=2) — 适用于 AI、分析和存档的几乎无限的安全对象存储
+*   [Amazon CloudWatch](https://aws.amazon.com/cn/cloudwatch/?p=bl_pr_cloudwatch_l=3) — 可观测性工具
+*   [Amazon Secrets Manager](https://aws.amazon.com/cn/secrets-manager/?p=bl_pr_secrets-manager_l=4) — 密钥管理
+*   [Amazon DynamoDB](https://aws.amazon.com/cn/dynamodb/?p=bl_pr_dynamodb_l=5) — 无服务器分布式 NoSQL 数据库
 **系列文章：**
 
 *   [第一篇：为什么要把 OpenClaw 从单机搬到 AWS](https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-1/?p=bl_ar_l=1)
-*   [第三篇：Phase 1 — 部署基础设施](https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-3/?p=bl_ar_l=2)
-*   [第四篇：Phase 2 & 3 — 部署 AgentCore Runtime 与业务层](https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-4/?p=bl_ar_l=3)
-*   [第五篇：配置消息渠道与端到端验证](https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-5/?p=bl_ar_l=4)
+*   [第二篇：环境准备与代码获取](https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-2/?p=bl_ar_l=2)
+*   [第三篇：Phase 1 — 部署基础设施](https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-3/?p=bl_ar_l=3)
+*   [第四篇：Phase 2 & 3 — 部署 AgentCore Runtime 与业务层](https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-4/?p=bl_ar_l=4)
 *   [第六篇：清理资源与总结展望](https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-6/?p=bl_ar_l=5)
-*前述特定亚马逊云科技生成式人工智能相关的服务目前在亚马逊云科技海外区域可用。亚马逊云科技中国区域相关云服务由西云数据和光环新网运营，具体信息以中国区域官网为准。
-
-## 本篇作者
-* * *
-
-## AWS 架构师中心：云端创新的引领者
-探索 AWS 架构师中心，获取经实战验证的最佳实践与架构指南，助您高效构建安全、可靠的云上应用
-**[![Image 1](https://d2908q01vomqb2.cloudfront.net/472b07b9fcf2c2451e8781e944bf5f77cd8457c8/2025/11/13/sa-button.png)](https://aws.amazon.com/cn/solutions/architect-center/)**![Image 2](https://d2908q01vomqb2.cloudfront.net/472b07b9fcf2c2451e8781e944bf5f77cd8457c8/2025/11/13/sa.png)
 
 ## 深度分析
-本文作为 OpenClaw 迁移至 Amazon Bedrock AgentCore 架构系列的第二篇，重点聚焦于**环境准备与代码获取**阶段。通过 7 步环境检查 + 3 步代码获取 + CDK 初始化的结构，为后续三阶段部署（Phase 1 基础设施、Phase 2 AgentCore Runtime、Phase 3 业务层）奠定了可复现的标准化基础。
-**1. 环境准备的设计意图**
-文章将环境准备拆分为 7 个独立检查项，这种"原子化验证"的设计值得称道。每个检查项都有明确的失败条件和修复指导，确保部署失败能在最早阶段被发现而非等到 Phase 1/2/3 运行时才暴露。这体现了 DevOps"fail fast"的原则——特别是 X-Ray 配置这一项，揭示了迁移前后架构复杂度变化的本质：原来单进程看一份日志，现在多组件串联需要分布式追踪。
-**2. cdk.json 配置的架构哲学**
-文章用大量篇幅解释 cdk.json 的每一项配置，揭示了该项目设计的几个关键决策：
-
-- **跨区域推理模型** (`global.anthropic.claude-sonnet-4-6`)：通过 `global.` 前缀启用 Amazon Bedrock 的 Cross Region Inference特性，实现请求自动路由至可用区域，提升可用性同时降低延迟
-- **会话生命周期管理**：30 分钟空闲超时 + 8 小时最大生命周期的组合，反映了对成本和资源的权衡——AgentCore 的 microVM 启动有冷启动开销，过短的超时会导致频繁重建，过长则增加资源占用成本
-- **工作区同步间隔 300 秒**：这是数据持久化迁移的关键参数，将容器内 `.openclaw/` 目录定期同步至 S3，解决容器无状态与服务有状态需求之间的矛盾
-**3. 安全架构的层次**
-从配置项可见项目的多层安全设计：
-
-- **注册层**：`registration_open: false` 强制白名单机制，防止未授权访问
-- **传输层**：enable_cloudtrail 实现 API 操作审计
-- **内容层**：enable_guardrails + guardrails_pii_action 实现 PII 检测与处理
-- **IAM 层**：执行角色的最小权限原则（通过 CDK cdk-nag 检查）
-**4. 补丁机制的技术债信号**
-文章第三步要求手动应用三个 sed 补丁，这反映出示例项目在多区域支持方面的技术债：CloudWatch Dashboard 名称冲突问题说明项目初期未充分考虑多区域部署场景，AWS Marketplace 权限缺失说明对 Bedrock 模型访问验证流程的理解存在盲区。这提醒我们在生产项目中应尽早进行多区域/多账号的测试覆盖。
+本文是 OpenClaw → Bedrock AgentCore 迁移系列的第五篇，聚焦于**消息渠道接入与端到端验证**，是整个迁移路径的"最后一公里"。从架构视角看，这一阶段完成了两个关键转变：
+**从端口监听到 Webhook 回调**：传统 OpenClaw 的 Gateway 直接在服务器端口上监听 IM 平台的推送，这种模式在 Serverless 环境下无法复用。迁移后，Telegram 和飞书都通过各自平台的 Webhook 机制将消息推送到 Amazon API Gateway，再由 Router Lambda 分发。这一设计将"消息接收"从应用层解耦到网关层，实现了真正的无状态接入。
+**安全模型的升级**：原有的 `auth-profiles.json` 本地存储模式存在明显的密钥泄露风险。迁移后，所有渠道凭证统一管理于 AWS Secrets Manager，Router Lambda 和容器运行时通过 IAM 权限按需读取，无需在代码或配置文件中明文存放凭证。白名单机制（`registration_open=false` + DynamoDB ALLOW 记录）进一步将访问控制细化到用户粒度。
+**microVM 内三进程协作模型**揭示了容器内部的精细分工：Contract Server 作为入口代理（承担健康检查、凭证轮换、工作区同步），OpenClaw 作为真正的业务进程，Bedrock Proxy 作为协议翻译层。这种职责分离使得每个组件可以独立演进（例如 Proxy 的替换不需要改动 OpenClaw 本身），也便于独立扩缩容。
+端到端验证表格的设计逻辑值得借鉴——每条测试用例都映射到具体的架构组件和改造维度，这种"验证即文档"的方法让非作者也能快速理解迁移的完整覆盖范围。
 
 ## 实践启示
-**1. 标准化环境检查流程**
-在团队内部推广环境检查脚本的使用，将 7 项检查项固化到 CI/CD 流水线的初始阶段。建议将其封装为 `setup-check.sh` 放在项目根目录，新成员 clone 后一键执行即可验证环境就绪状态。
-**2. 配置管理的最佳实践**
-cdk.json 的 `context` 对象是基础设施即代码场景下配置管理的好范例。建议：
-
-- 将敏感配置（API keys、account IDs）保留在环境变量中，通过 CDK context 读取
-- 为每个可调参数添加注释说明，便于团队成员理解修改影响
-- 使用 `cdk context` 命令查看当前生效的配置值，避免与预期不符
-**3. 多区域部署的前瞻设计**
-从补丁中学习，在项目初期就考虑多区域/多账号场景：
-
-- 所有命名型资源（Bucket、Queue、Dashboard）使用动态命名（region变量）而非静态命名
-- IAM 策略使用最小权限原则，为未来跨账号访问预留扩展空间
-- 提前申请 AWS Marketplace 订阅权限，避免部署时才发现缺失
-**4. 可观测性建设的优先级**
-X-Ray 配置步骤应在环境准备阶段优先完成，因为：
-
-- 后续 Phase 1/2/3 部署的所有组件都会产生追踪数据
-- 迁移完成后的调试高度依赖完整的调用链追踪
-- CloudWatch Logs 与 X-Ray 的集成是排错的基础设施
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/using-amazon-bedrock-agentcore-openclaw-multi-2.md)
-
+1. **优先配置 Telegram 再飞书**：如果时间有限，优先验证 Telegram 渠道（步骤最少），确认端到端链路畅通后再投入飞书配置。飞书的加密策略（Encrypt Key + Verification Token）和发布审批流程会使调试周期显著拉长。
+2. **凭证写入先于脚本运行**：Telegram 的 `setup-telegram.sh` 和飞书的 `setup-feishu.sh` 依赖 Secrets Manager 中已就绪的凭证。错误顺序（先跑脚本再填凭证）会导致脚本执行失败，需要重新运行。
+3. **白名单是生产安全的基础**：`registration_open=false` + DynamoDB 白名单是防止 Bot 被陌生人滥用的第一道防线。初始配置完成后，建议立即通过 `./scripts/manage-allowlist.sh` 添加所有受信任用户，再开放渠道。
+4. **冷启动延迟需要纳入 UX 设计**：首次消息触发 microVM 创建约需 10-15 秒，用户体验上这是"等待但有响应"。建议在 Bot 欢迎消息或文档中告知用户首次交互会有稍长延迟，避免用户误以为 Bot 无响应而重复发送消息。
+5. **监控大盘是运维的主入口**：CloudWatch 的 Router Lambda 日志是排查消息路由失败的第一站；AgentCore 容器日志用于排查 OpenClaw 本身的问题；Token Analytics 大盘用于实时评估 AI 成本。三个视角缺一不可，建议运维团队为每个视角准备标准化的查询过滤条件。
 ## 相关实体
-- [OpenClaw多租户迁移: Phase 2&3部署](ch11/235-openclaw.html)
-- [Amazon Nova Multimodal Embeddings 制造业智能应用](ch11/304-amazon-nova.html)
-- [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04/060-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
-- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/686-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
-- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/556-amazon-bedrock-agentcore.html)
-- [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
-- [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](ch11/298-bedrock.html)
-- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/741-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
-- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch11/135-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/383-amazon-bedrock-agentcore.html)
+- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](../ch04/383-amazon-bedrock-agentcore.html)
+- [Openclaw Multi 2](../ch04/176-openclaw.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 3](../ch04/383-amazon-bedrock-agentcore.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 6](../ch04/383-amazon-bedrock-agentcore.html)
 
-- [AgentCore Runtime部署Apache Doris MCP Server](ch11/175-apache-doris-mcp-server-quick-suite-ai.html)
-- [OpenClaw多租户迁移: 背景与架构概览](ch11/235-openclaw.html)
-- [OpenClaw多租户迁移: Phase 1 基础设施部署](ch11/235-openclaw.html)
-- [Amazon Bedrock模型推理的Serverless异步架构](ch11/293-amazon-bedrock.html)
-- [Agent 原理、架构与工程实践](../ch03/035-agent.html)
-- [from pdfs to insights: architecting an intelligent document](ch11/247-from-pdfs-to-insights-architecting-an-intelligent-document.html)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/using-amazon-bedrock-agentcore-openclaw-multi-5.md)
 
 ---
 

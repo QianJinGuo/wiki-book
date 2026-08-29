@@ -1,60 +1,111 @@
-# 改 Skill 的可重复流程 — 评测与轨迹驱动（孙成心）
+# 重新定义Skill开发：保姆级教程&一站式开发助手发布
 
-> 📊 Level ⭐⭐ | 8.4KB | `entities/skill-iteration-evaluation-trajectory-sunchengxin-2026.md`
+> 📊 Level ⭐⭐ | 7.3KB | `entities/skill-development-guide-aliyun-2026.md`
 
-# 改 Skill 的可重复流程 — 评测与轨迹驱动（孙成心）
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-development-guide-aliyun-2026.md)
 
-> 陈成（孙成心）2026-08-13 第 51 篇。解决"改 skill 越改越乱"问题：把改 SKILL.md 变成一套**可重复的评测 + 轨迹回归流程**。
+## 核心价值
+阿里内部工程师分享的 **Skill（技能）开发完整教程**，从概念定义到一站式开发助手，覆盖 Skill 整个生命周期。
 
-## 核心方法论
+## 关键知识点
+### Skill 定义与加载机制
+- **定义**：结构化指令文档，告诉 Agent「在什么场景下、按什么步骤、用什么工具、完成什么任务」
+- **三级加载**：渐进式加载策略，按需提供信息，节省上下文空间
 
-- 写 skill（SKILL.md 工作手册）决定 agent 处理一类任务的上限，但迭代改 skill 缺乏反馈回路时必然退化
-- 用**评测**（task 通过率/质量分）与**轨迹**（执行路径回放）构成回归基线，每次改动可验证、可回滚
-- 属于 [Skill 写作评测](../ch04/620-agent-skill.html) 方向的实践补充：不止于写 skill 规范，而是 skill 迭代的工程闭环
-- 适用前提：任务输出能被**客观判对错**（结论收敛、有标准答案）——安全审计的二元输出天然满足，开放式任务不适用
-- 架构原则：诊断/验证/回滚/黑名单全交给可复查的规则，LLM 只负责把诊断转写成 diff
+### Skill 平台生态
+| 平台 | 类型 | 特点 |
+|------|------|------|
+| skills.sh | 外部 | 开源工作流自动化 |
+| ClawHub | 外部 | 社区驱动，版本管理 |
+| SkillsMP | 外部 | 283K+ 最大数据库 |
+| Aone Skills | 内部 | 阿里内部，与 Aone Copilot 深度集成 |
 
-与 [Agent 评测闭环](../ch03/006-agent.html) 和 [Skill-Up 评测框架](../ch04/365-alibaba-skill-up-agent-skill.html) 同一主题域：skill 可评测可回归是 2026 年 agent 工程的核心收敛方向。
+### Agent 平台 Skill 使用
+- **Aone Copilot**：放入 ~/.aone_copilot/skills/ 或市场一键安装
+- **AccioWork**：内置 Skill 直接安装，自定义需上传安装包
+- **QCoder**：放入项目级 .skills/ 目录
+- **悟空**：平台 UI 上传或系统提示词加载
+
+### SKILL.md 规范
+- **必需字段**：name（最长64字符）、description（最长1024字符，是触发关键）
+- **可选字段**：license, compatibility, allowed-tools, metadata
+- **正文结构**：快速开始 → 参数列表 → 工作流 → 错误处理 → 附加资源引用
+
+### 三大痛点与解决方案
+**痛点一：跨平台一致性**
+
+- 三纯净原则：正文纯文本、工具用能力描述、路径不写死
+- 用 HTML 注释隔离平台增量语法
+- 确定性逻辑下沉到 scripts/
+**痛点二：版本管理和更新分发**
+
+- 强制 PR + 1人 CR
+- CI 跑 schema 校验、prompt-lint
+- 平台支持时优先发 beta 通道
+- 弃用时在 description 加 [DEPRECATED]
+**痛点三：开发调试效率低**
+
+- Hot Reload（Claude Code 2.1+）
+- Symlink 软链方案
+- 双窗口对照：dev 版 vs prod 版并排对比
+
+### Skill 自我进化机制
+- Binary Eval 自动打分（pass/fail）
+- 失败时 Reflection Agent 提炼修复 patch
+- 每次改完跑回归用例，通过率不达标自动阻断
 
 ## 深度分析
+### 跨平台一致性的工程挑战
+三纯净原则（正文纯文本、工具用能力描述、路径不写死）是该文最核心的方法论创新。本质上，这是将 Skill 从"平台绑定指令"转化为"语义驱动指令"的范式转变。HTML 注释隔离增量语法的设计尤为巧妙——允许多平台共存而不引入冗余维护成本，同时也为未来新平台预留扩展空间。
 
-### 越改越乱是结构性必然：缺少客观反馈信号
+### 版本管理的流水线设计
+强制 PR + 1人 CR + CI schema 校验构成三重门禁，将版本管理从人力驱动转为流程驱动。beta 通道设计体现了灰度发布的工程思维，description 加 [DEPRECATED] 则是一种低技术成本的优雅弃用协议。这些设计共同构成一个小型但完整的软件交付流水线。
 
-「打地鼠」不是巧合而是必然：skill 不可能一次性写对，只能一版版补，人工盯着既慢又顾此失彼——修好这个 case，弄坏之前能做对的几个。
-
-真实数据证明「修复与回归总是一起发生」：63 个 case 上，Kimi 修复 10 个同时新增 6 个错误（净 +4），GLM 修复 9 新增 2（净 +7），DeepSeek 修复 6 新增 4（净 +2）——总分上涨会掩盖逐 case 的隐性回归。缺的不是更好的文本，而是客观信号回答「这次改得好不好」：二元结论与人工标注机械对照，算出 TP/FP/TN/FN。
-
-### 评测 + 轨迹：把改手册变成回归闭环
-
-输入只有两份数据：`results.jsonl`（case_id / ground_truth / pass_fail / failure_kind）与 `sessions/` 操作日志，缺一样都无法闭环。评测还须跑在**真实任务环境**（同模型同工具链），防「实验室假象」带偏进化方向。
-
-诊断 = 压缩 + 规则：trace_parser 把 10-50 万 token 的 session 压成约 100:1 的三层摘要，第三层「进度交叉验证」能抓 progress_mismatch（声称走了 STEP 3 但无证据）。根因靠**联合归因**：结果类型 × 流程异常交叉，只有交集才触发进化，同一根因覆盖 ≥30% 失败 case 才改。实测：进化前平均 80.6% → 86.8%，GLM 77.8%→88.9% 最好。
-
-### 稳定性优先：LLM 只生成、规则做裁决
-
-最反直觉的设计是**诊断不用 LLM**：实验显示 LLM 评判 skill 好坏接近随机、随 prompt/温度漂移，规则覆盖面有限但绝不漂移——「宁可少判，不要飘着判」。LLM 唯一职责是把诊断转写成 unified diff（输入压到 <10KB），diff 才能机器回滚。
-
-LLM 输出过三重确定性过滤：taboo 黑名单预拦截（签名 = rule_id + 诊断方向）、结构检查（diff 三件套、≤80 行、禁新增标题）、反口号文本质量（步骤行必须含工具名或文件路径）。≤80 行 = skill 迭代的 learning rate：便于定位回归、防灾难性遗忘。验证用四层 gate：target（≥1 修复）/ guardrail（0 回归）/ holdout（每 5 轮 F1 掉 ≤1pp）/ verify（文本质量 ≥75），任何一层不过即丢弃；holdout 60/25/15 三路隔离防「背答案」。
-
-### 收敛、回滚与数据怀疑：闭环的收尾机制
-
-收敛与止损：F1 ≥ 0.95、连续 5 轮 gate 失败、SKILL.md 超 15KB、预算达——四信号任一满足即停；「连续没进展」加权计数，guardrail 回归权重 1.0 是 target 未改善（0.3）的 3 倍多；加权停滞超阈值自动回滚到历史最佳 holdout 版本，拦截累积负迁移；SKILL.md 过长触发精简模式只删不增。
-
-数据怀疑与留痕：gt_auditor 用五信号加权算 GT 可疑度（≥0.5 标记），嫌疑 case 不排除出评测，但 patch 时告知 LLM 别迁就错标；版本管理「文件系统即数据库」：回滚 = 重指软链且写审计日志，taboo 黑名单跨版本共享、回滚不清空。局限：只能改「怎么做」不能改「做什么」、纯认知错误检测不到、F1 0.90+ 后边际递减——本质是「用工程纪律约束 LLM 的不确定性」，与 [Agent 自我改进六层模型](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-self-improvement-loops.md) 同构。
+### 自我进化机制的战略价值
+Binary Eval + Reflection Agent 的组合，实质上是将 Agent 的自我改进从"隐式经验积累"变成"显式可度量的迭代优化"。每次改完跑回归用例、通过率不达标自动阻断——这引入了一个自动化的质量门禁，填补了传统 skill 开发中缺失的测试环节。这一机制与学术界关于 LLM 自动评估（LLM-Eval）的研究方向高度吻合，表明阿里内部已在将学术前沿转化为工程实践。
 
 ## 实践启示
+### 开发阶段
+- **起点**：严格遵循 SKILL.md 规范，特别是 name（≤64字符）和 description（≤1024字符）字段——description 是触发的关键，措辞要精准
+- **结构化**：采用标准五段正文（快速开始 → 参数列表 → 工作流 → 错误处理 → 附加资源引用），便于用户理解和平台解析
+- **调试效率**：善用 Hot Reload 和 Symlink 软链方案，特别是 Claude Code 2.1+ 环境，可显著缩短迭代周期
 
-1. **先过判据关**：任务输出必须能客观判对错（结论收敛、有标准答案），开放式任务别上自进化。
+### 发布阶段
+- **跨平台**：始终以三纯净原则为基准，用 HTML 注释隔离平台增量语法，避免"写死平台"的常见陷阱
+- **版本控制**：提交前必走 CI 流程（schema 校验、prompt-lint），发布前优先走 beta 通道验证
+- **协作规范**：强制 PR + 1人 CR，代码审查不只是质量保障，也是知识传递机制
 
-2. **双数据缺一不可**：结果文件 + 操作轨迹一起收集，且评测跑在真实任务环境（同模型同工具链），防实验室假象。
+### 运维阶段
+- **质量门禁**：建立 Binary Eval 回归机制，每次修改后必须通过自动化评估，不达标则阻断发布
+- **弃用协议**：需要弃用时，在 description 首行加 [DEPRECATED]，不要直接删除——保障用户侧的平稳过渡
+- **持续进化**：Reflection Agent 思路可推广至其他 AI 工作流，将人工修复经验结构化为可复用的 patch 资产
 
-3. **规则裁决、LLM 只生成 diff**：用「结果 × 流程」联合归因找根因，同一根因覆盖 ≥30% 失败 case 才动手；别让 LLM 直接评 skill 好坏。
+## 相关页面
+- [Skill 写作基础指南](../ch01/283-agent-skill.html) — 入门级别的 Skill 写作教程
+- [Skill 写作进阶](../ch01/283-agent-skill.html) — 高级技巧
+- [Skill 评估方法](../ch01/283-agent-skill.html) — 如何评估 Skill 质量
 
-4. **小步快跑过四层 gate**：单次 patch ≤80 行 unified diff；target / guardrail / holdout / verify 全过才接受，任何一层不过就丢弃。
+## 相关实体
+- [十年老技术开发的 AI Agent 探索之路](../ch04/423-ai-agent.html)
+- [9个Agent技能模块化SageMaker微调生命周期](../ch04/423-ai-agent.html)
+- [SkillX — 层次化技能知识库](054-skill.html)
+- [Anthropic 14 个 Agent Skills 设计模式](../ch04/077-anthropic-agent.html)
+- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](054-skill.html)
+- [SkillClaw](../ch04/333-skillclaw-nacos-agent-skill-registry.html)
+- [Skill 系统：Agent 如何把经验沉淀成可复用能力](016-hermes-skill.html)
+- [四种 Sub Agent 模式](../ch03/004-agent.html)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/300-agent-skills.html)
 
-5. **留痕、回滚、止损、疑数据**：taboo 黑名单跨版本共享、回滚不清空；软链回滚 + 审计日志防失忆；用 gt_auditor 甄别错标，别为迁就错标改歪 skill。
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-越改越乱之后我用评测和轨迹把它拉回来了.md)
+- [Qoder Skills 完全指南](031-qoder-skills.html)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](../ch04/300-agent-skills.html)
+- [Garry Tan](https://github.com/QianJinGuo/wiki/blob/main/entities/garry-tan-yc-ceo.md)
+- [Agent Workflows](../ch03/004-agent.html)
+- [Hermes Agent](../ch04/161-hermes-agent.html)
+- [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)
+- [你写的 Skill，及格了吗？](054-skill.html)
+- [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
+- [AI Agent 工程师能力地图](../ch04/423-ai-agent.html)
+- [阿里云端到端业务需求专家 agent：multica 平台 + superai-* 技能集群 + tdd/pre-pus](../ch03/004-agent.html)
 
 ---
 

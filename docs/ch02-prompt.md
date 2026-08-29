@@ -2,7 +2,7 @@
 
 > 与 AI 高效对话的科学与艺术：Prompt、CoT、Context Engineering
 
-> 本章收录 **44 篇**实体，按深度递增排列。
+> 本章收录 **31 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 1 |
-| ⭐⭐ 工程师 | 需编程基础 | 42 |
+| ⭐⭐ 工程师 | 需编程基础 | 29 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 1 |
 
 ---
@@ -449,7 +449,7 @@ Environment/Rollout/Reward/Trainer 这四个概念，直接对应强化学习（
 
 ## Ch02.003 反向审计 Prompt 范式 — 从 VB 50 行 Codex 自我蒸馏到 5 行核心
 
-> 📊 Level ⭐⭐ | 25.5KB | `entities/reverse-audit-prompt-paradigm-codex-5-line-version.md`
+> 📊 Level ⭐⭐ | 25.6KB | `entities/reverse-audit-prompt-paradigm-codex-5-line-version.md`
 
 ## 概述
 
@@ -715,166 +715,7 @@ worker 边界、skill description 触发词、producer 链路回执——这三�
 
 ---
 
-## Ch02.004 腾讯 Token 优化实战 — 省 Token 和用好 AI 是同一件事
-
-> 📊 Level ⭐⭐ | 18.5KB | `entities/tencent-token-optimization-agent-architecture.md`
-
-# 腾讯 Token 优化实战 — 省 Token 和用好 AI 是同一件事
-
-腾讯工程师 Kario Chen 提出的 AI Token 优化体系，核心命题：**在合适的时间，把合适的上下文，装载进合适的模型**。
-
-## 核心框架
-
-### Context Rot 分析
-
-Transformer 架构的固有限制：n 个 token 之间是 n² 的两两关联，上下文越长注意力被摊得越薄。无效信息冲淡有效上下文，导致模型"越用越笨"。
-
-Context Rot（上下文腐烂）是一种渐进式退化现象：
-
-- **FRESH 阶段（0-20 轮）**：上下文新鲜，模型召回率高，适合精密推理
-- **DRIFT 阶段（20-60 轮）**：上下文开始漂移，需要主动压缩或开启新会话
-- **ROT 阶段（60+ 轮）**：上下文深度腐烂，必须重开会话
-
-### 四步工程化动作
-
-| 动作 | 核心方法 | Token 节省效果 |
-|------|---------|---------------|
-| **最小上下文** | JIT 检索 + 分层卸载 + Prompt Caching | 输入成本降低 ≤90% |
-| **清晰理想态** | 约束金字塔：示例 > 规则 > 需求 | 减少返工轮次 |
-| **Harness 分层** | 会话三段生命周期：FRESH→DRIFT→ROT | 主动压缩避免上下文腐烂 |
-| **动态选型** | 大脑+手脚子智能体架构 | 总成本降至 20-30% |
-
-#### 1. 最小上下文：JIT 检索 + 分层卸载
-
-AI 上下文当存储系统来管理，采用三级缓存架构：
-
-| 层级 | 类比 | 策略 |
-|------|------|------|
-| L1 缓存 | 当前会话 | 最活跃的上下文 |
-| L2 内存 | Prompt Caching | 系统提示词 / 工具定义前缀 |
-| L3 磁盘 | 文件系统 | 历史摘要存档 |
-
-- **JIT（Just-in-Time）**：不把整个代码库塞进上下文，只维护轻量索引（文件路径 / 查询语句 / 链接），用到时 grep/glob/read 现场搜索。
-- **Prompt Caching**：固定系统指令和工具定义放前缀，重复部分按零头计费。可降低 90% 输入成本（DeepSeek 尤其明显）。
-
-#### 2. 清晰理想态：约束金字塔
-
-出发前回答三个问题：
-1. 你希望 AI 用什么语言/风格输出？（示例）
-2. 有什么限制条件？（规则 / Spec）
-3. 核心目标是什么？（需求）
-
-递进金字塔：**示例（One-Shot）> 规则（Spec）> 光提需求**。约束越精确 → AI 越不用猜 → 一次到位 → 返工越少 → Token 越省。
-
-> 护栏是信任的基础。没有护栏，你只敢让 AI 做简单的事；有了护栏，你才敢把复杂的活交给它。
-
-#### 3. Harness 架构分层：会话三段生命周期
-
-| 阶段 | 轮次 | 状态 | 策略 |
-|------|------|------|------|
-| **FRESH** | 0-20 | 最佳 | 放心用，不用省 |
-| **DRIFT** | 20-60 | 开始漂移 | 主动摘要压缩，新会话继续 |
-| **ROT** | 60+ | 腐烂 | 没救了，必须重开 |
-
-这种生命周期划分启发了 [Loop Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-feedback-control-system.md) 中的反馈控制设计——当检测到 Context Rot 信号时触发会话切换。
-
-#### 4. 动态选型：大脑+手脚（子智能体架构）
-
-不是一个大模型从头到位，而是**主虾（大脑）+ 子虾（手脚）**：
-
-- **主虾（强模型）**：理解全局、拆分任务到原子粒度、调度执行、汇总决策。上下文永不积压。
-- **子虾（便宜模型）**：接收原子任务、一次完成、只交结果、可并行执行。
-
-核心设计原则：拆分到**原子任务粒度**——每个完全独立，不需要跨轮上下文，可用中等模型一把搞定（如"补充单测""校验 JSON""提取关键信息"）。
-
-**效果**：总成本降到全程最强模型的 20-30%，子虾可并行执行，主虾永不疲劳。恰似软件工程的高内聚、低耦合——把模型当团队编制，大脑和手脚职责明确，信息流清晰。
-
-## 深度分析
-
-### Context Rot 的本质是注意力经济学
-
-Token 优化表面上是个"省钱"问题，其本质是**注意力资源的稀缺性经济学**。Transformer 的自注意力机制中，每个 token 与其他所有 token 建立关联，有效信息密度随上下文增长呈指数级下降。 Context Rot 不是 bug，而是架构约束的必然结果——就像人类的短期记忆一样，信息过载时最先丢失的是边缘细节。腾讯的四步法本质上是在给 AI 的"工作记忆"设计缓存替换策略：L1（上下文窗口）、L2（Prompt Caching）、L3（文件系统），对应计算机体系架构中经典的 cache hierarchy。
-
-### 约束金字塔：从"喂数据"到"喂约束"的 Agent 工程范式
-
-"清晰理想态"中的约束金字塔（示例 > 规则 > 需求）揭示了一个更深层的 Agent 工程原理：**Agent 不需要更多数据，它需要更好的约束**。 传统软件工程中，约束以类型系统、接口契约、测试用例的形式存在；AI Agent 时代，约束以自然语言示例、结构化 Spec、分层需求的形式存在。这两种范式本质相同——都在定义"什么可以做、什么不可以做"的边界。当约束足够精确时，Agent 的搜索空间被有效裁剪，返工轮次减少，Token 消耗自然下降。这与 [Spec-Driven Development](https://github.com/QianJinGuo/wiki/blob/main/entities/spec-driven-development-harness.md) 的核心思想一致。
-
-### 大脑+手脚架构：Harness 工程中的分层智力分配
-
-主虾-子虾架构是 Harness Engineering 中"分层智力分配"的典型实践。 强模型充当"架构师"角色——理解全局、分解任务、集成结果；弱模型充当"工程师"角色——执行原子任务、输出确定结果。这种分层的价值不仅在于成本节省（20-30%），更在于：
-
-1. **隔离复杂度**：主虾不需要了解每个子任务的内部细节，只关心任务分割和结果集成
-2. **并行度提升**：子虾互不依赖，可以全并行执行，突破单模型推理的串行瓶颈
-3. **容错性增强**：单个子虾失败不影响主线，主虾可以重新调度
-
-这与 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/lilian-weng-harness-engineering-self-improvement.md) 的模式三（子智能体与后台任务）一脉相承。
-
-### Prompt Caching 的成本结构革命
-
-2026 年多家模型厂商（Anthropic、DeepSeek、OpenAI）推出 Prompt Caching 定价——系统提示词和工具定义前缀按缓存命中率折扣计费。 这一变化对 Agent 架构设计产生了深远影响：
-
-- **前缀固定化**：将系统提示词、工具 Schema、技能定义放在前缀中，利用缓存降低 90% 输入成本
-- **会话持久化**：长会话的前缀会被持续缓存，设计 Agent 时应确保前缀在会话期间不变
-- **模型选择策略**：不同模型的 Prompt Caching 机制不同（DeepSeek 缓存粒度更细），选型时应纳入成本考量
-
-## 实践启示
-
-1. **上下文分级管理**：将 Agent 上下文视为"缓存系统"而非"无限窗口"。建立 JIT 检索 + 分层卸载机制，主动管理上下文健康度。任何超过 60 轮的会话都应当触发「存档→重启」策略，而不是继续堆叠上下文。
-
-2. **约束优先于数据**：在向 Agent 提供更多信息之前，先问"约束是否足够精确"。写好 Spec、提供示例、明确规则，比塞进整份文档更有效。将 "示例 > 规则 > 需求" 的金字塔原则集成到 Agent 的 prompt 设计中。
-
-3. **分层智力分配**：不要用旗舰模型做所有事。识别 Agent 任务中的"大脑"部分（全局决策、任务分解）和"手脚"部分（原子执行、数据提取），分别分配强模型和弱模型，总成本可降低 70-80%。
-
-4. **Prompt Caching 优先的架构设计**：在设计 Agent 系统时，将系统提示词、工具定义、技能描述组织为固定前缀结构，利用上下文缓存降低长期运行成本。单次会话内避免频繁变更前缀内容。
-
-5. **Context Rot 监控作为运行时指标**：在 Agent 运行框架中埋入 Context Rot 检测——跟踪每轮输入 token 数与输出质量的关联。当质量开始下降（DRIFT），主动触发摘要压缩或会话切换，而不是被动等待用户察觉。
-
-## 第 2 来源 — Multi-Agent 工作流成本降 50%+（lemonye，腾讯技术工程，2026-08-21）
-
-腾讯程序员 lemonye 用 AI Agent 驱动前后端全流程开发（tech-leader 调度，1 TL + 6 子 Agent），先以 AgentLens 拆成本看清"钱烧在哪"（系统提示词/工具返回/历史消息是大头），再围绕"让 AI 只看到当前需要的上下文 / 减少无关上下文 / 减少重复上下文"三原则落地 10 个方向，全流程预估降本 50%~65%。
-
-**六类 token 来源**：system prompt（固定）、工具 schema（固定）、MCP 返回（各轮）、Skill 正文（条件性常驻）、历史对话（append-only 滚雪球，真正的大头）、用户提示词。没有按 Wave 粒度拆分前完全不知道钱烧在哪。
-
-**让 AI 只看到当前需要的上下文**：
-
-- **渐进式披露（L2/L3 分层）**：SKILL.md 条件性内容外移到资源层，正文只留骨架。自动化测试 Skill 从 198 行降到 128 行（-35%）；tech-leader 主调度 Skill 把各步骤详细内容拆到 references/，正文只保留核心职责/规模预判/分流规则/进度追踪/容错机制。骨架负责"决定下一步走哪"，"怎么走"按需 read_file。安装 20 个 Skill 初始加载仅 1000-2000 token。
-- **确定性操作由脚本执行**：AI 不拼 `mysql -u root -p` 这类命令，只提供参数给 dev-env.sh 脚本（数据库迁移/编译/服务启动/健康检查）。**能用 CLI 就不用 MCP**——每次 MCP 调用是完整 LLM 推理轮次（决策 + JSON Schema 常驻 + 结果进 context + 处理结果），不可重跑、无法并行。Playwright MCP 换 Playwright CLI：大模型做推理（生成 spec），脚本做执行（跑 CLI），两者拆开。
-- **MCP 数据获取子 Agent 化**：主 Agent 直接调 MCP，原始 payload（TAPD 需求描述、Figma 节点树 JSON 上万行）永久卡在最长生命周期 Agent（TL）的 context 里后续每轮重计费。给 TAPD/Figma 各建专属子 Agent 只返回结构化摘要。实测单轮 input token 从 1,030,000 降到 634,905（-38.4%）。
-- **长期记忆按需索引加载**：context-keeper 先 read_file INDEX.md（几十行标题+标签+摘要表格），按关键词匹配 + 类别权重算相关度，取 Top 3 命中条目才 read_file 正文。INDEX 不存在才回退全文 search_content。
-
-**减少无关上下文**：
-
-- **单 Agent 拆分为多 Agent**：拆分本身不靠"减少历史堆叠"直接省钱（6 Agent 并行 = 6 份 system prompt 计费），真正收益是分散滚雪球效应 + 打开后续优化空间。**必须先做规模预判（S/M/L）**：小需求单 Agent，中大型才拆。
-- **Agent 专属配置（工具白名单 + 模型分层）**：给每个角色创建自定义 Agent，frontmatter tools 字段指定白名单（未列出工具对该 Agent 完全不可见）。主 Agent 派发提示词从 10-15 行精简到 2 行动态内容。按角色模型分层：规则性强、轮次多的测试/视觉角色换 GLM-5v（成本约 Sonnet 36%），测试/视觉 Agent 成本 -64%。
-- **代码图谱替代盲搜**：graphify 用 AST + 语义建文件索引和依赖关系，搜代码前先搜目录锁定范围再 read_file。实测总 token -22.7%（87.5万→67.7万），输入 token -22.8%，缓存命中率 -3.4pp（因探索轮次减少）。代码图谱的收益主要体现在减少探索轮次（少一轮工具调用 = 少一次 API 请求 = 少一整个 context window 计费）。
-
-**减少重复上下文**：
-
-- **稳定前缀设计（状态外化）**：KV Cache 本质——请求前缀与上次完全一致则服务商直接复用，只收缓存读取低价（约正常价 10%）。把派发子 Agent 提示词里稳定指令和动态内容交错排列改法为动态内容后置。**主 Agent 隐藏前缀破坏者**：进度状态每阶段切换输出完整进度看板堆积历史——改法把进度外化到文件，每次唤醒先 read_file 进度文件而非回放历史，阶段切换改单行输出（✅ Wave 1 完成 → Wave 2 🔄 已启动）。
-- **避免重复加载 Skill**：前端 Agent 发现"调用知识沉淀 Skill 加载项目上下文"没必要——主 Agent 已加载过并写入技术方案文档，前端 Agent 直接读文档拿结论即可。信息在最上游收集一次、通过文档传递下游，而非每个 Agent 各自重复获取。
-- **rtk 压缩 CLI 输出**：拦截命令执行前重写为压缩版本的开源 CLI 代理（官方实测 60-90%，但幅度因命令而异：ps aux -98.9%，纯 git status 仅 -31%）。坑：官方 --agent 不支持 CodeBuddy（改用 PreToolUse Hook 自己实现）；rtk 输出字段 updatedInput vs CodeBuddy 要求 modifiedInput 不匹配会静默失效。评估方法论：不能用"同一需求跑两遍"对比（大模型执行路径不确定噪声大），用 rtk gain 统计或命令行对比（纯文本过滤 100% 可复现）。
-- **工具调用并行化**：无依赖的多次工具调用串行时，每次都是一轮独立 LLM 推理，前面所有轮次历史重新打包计费。TAPD/Figma 摘要获取互不依赖，改同一轮消息内并行发起（Task 工具同时传两个 subagent_name）。测试用例同理：Playwright CLI 一次接收多个 spec 文件内置多 worker 并行。判断原则：两次调用无数据依赖就该并行，"沉默的串行"藏在顺序思维里需专门排查。
-
-**效果数据**：主 Agent 端到端 token 708,783（17 轮）→ 315,266（9 轮），-55.5%、轮次 -47%；子 Agent 单轮固定开销常见几十万 → 约 2 万；CLI 输出 rtk 压缩 -60%~90%；测试/视觉模型成本 -64%。全流程反推（以实测 Wave 消耗分布代入各分项降幅区间）中型需求 token 成本降 50%~65%。
-
-**核心经验**：① 省 token 不等于功能降级，只是调整"何时加载/怎么表达"；② 上游收集一次、通过文档传递（最贵冗余是每个 Agent 各自重新发现同一份信息）；③ 最省钱的调用是不调用——确定性操作用 CLI/数据预取解决；④ 能并行就不要串行。落地优先级：规模预判 + Agent 拆分（架构前提）→ 度量 + SKILL.md 重排 + 全局接入 rtk（一个下午见效）→ 条件内容移出 SKILL.md 等。
-
-> **互补角度**：与第 1 来源（Kario Chen 的 Context Rot / 最小上下文 / 动态选型理论框架）不同，本来源提供 lemonye 的多 Agent 团队落地工程细节——渐进式披露实操（SKILL.md 骨架化 + references 外移）、MCP 数据子 Agent 化（-38.4%）、代码图谱（-22.7%）、rtk CLI 压缩、工具并行化、模型分层路由（GLM-5v -64%），并给出 S/M/L 规模预判与"拆分先行"的架构判断。
-
-## 相关实体
-
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/lilian-weng-harness-engineering-self-improvement.md)
-- [Loop Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/loop-engineering-feedback-control-system.md)
-- [Skills For Real Engineers](https://github.com/QianJinGuo/wiki/blob/main/entities/mattpocock-skills-grill-me-grill-with-docs-caveman.md)
-- [Spec-Driven Development](https://github.com/QianJinGuo/wiki/blob/main/entities/spec-driven-development-harness.md)
-- [上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md)
-- [Agent 架构模式](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-architecture-harness-new-backend.md)
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-token-optimization-agent-architecture.md)
-
----
-
-## Ch02.005 Using Claude
+## Ch02.004 Using Claude
 
 > 📊 Level ⭐⭐ | 18.4KB | `entities/claude-code-html-artifacts.md`
 
@@ -1091,7 +932,7 @@ Markdown 在 AI 输出场景中的根本局限在于它是「被动消费」型�
 
 ---
 
-## Ch02.006 Headroom：上下文压缩与缓存稳定化框架（live zone + CCR + RawValue 字节级 patch）
+## Ch02.005 Headroom：上下文压缩与缓存稳定化框架（live zone + CCR + RawValue 字节级 patch）
 
 > 📊 Level ⭐⭐ | 16.1KB | `entities/headroom-context-compression-cache-stabilization.md`
 
@@ -1290,9 +1131,9 @@ Schema 语义没变，但 **bytes 稳定了**。
 
 ---
 
-## Ch02.007 Codex 上下文工程 — Prompt Layout + Append-only + Latent Space Moat（LastWhisper 解读）
+## Ch02.006 Codex 上下文工程 — Prompt Layout + Append-only + Latent Space Moat（LastWhisper 解读）
 
-> 📊 Level ⭐⭐ | 15.7KB | `entities/codex-context-engineering-lastwhisper-thinking-in-context.md`
+> 📊 Level ⭐⭐ | 15.8KB | `entities/codex-context-engineering-lastwhisper-thinking-in-context.md`
 
 # Codex 上下文工程 — Prompt Layout + Append-only + Latent Space Moat（LastWhisper 解读）
 
@@ -1471,9 +1312,9 @@ LastWhisper 开源了 **context-kit**（教学原型），覆盖三大模块：
 
 ---
 
-## Ch02.008 Hermes Agent 自进化机制源码解析
+## Ch02.007 Hermes Agent 自进化机制源码解析
 
-> 📊 Level ⭐⭐ | 15.3KB | `entities/hermes-agent-self-evolving.md`
+> 📊 Level ⭐⭐ | 15.4KB | `entities/hermes-agent-self-evolving.md`
 
 ## 核心定位
 Hermes Agent 是一个通用日常 AI Agent 脚手架，相比 Claude Code（专注文档编程），定位更广泛：覆盖问答、代码、分析、创作、工具执行等全场景任务，支持 Telegram/Discord/微信多平台。
@@ -1659,9 +1500,9 @@ GEPA（Genetic-Pareto Prompt Evolution）是独立于 Hermes runtime 的离线�
 
 ---
 
-## Ch02.009 Hermes Agent 深度解析（阿里云/飞樰）
+## Ch02.008 Hermes Agent 深度解析（阿里云/飞樰）
 
-> 📊 Level ⭐⭐ | 14.6KB | `entities/hermes-agent-deep-dive.md`
+> 📊 Level ⭐⭐ | 14.7KB | `entities/hermes-agent-deep-dive.md`
 
 ## Overview
 飞樰（阿里云开发者）对 Hermes Agent 的深度源码解析文章，从 Self-Evolving / Prompt Engineering / Context Engineering / Harness Engineering 四个维度展开，附 Agent 演进三阶段框架。
@@ -1837,7 +1678,7 @@ OpenClaw 用绝对 Token 数（18K）触发压缩，在上下文窗口较小的�
 
 ---
 
-## Ch02.010 Development environments for your cloud agents
+## Ch02.009 Development environments for your cloud agents
 
 > 📊 Level ⭐⭐ | 14.6KB | `entities/cloud-agent-development-environments.md`
 
@@ -1920,9 +1761,9 @@ Secrets scoped per environment 是一个关键的安全设计：即使某一环�
 
 ---
 
-## Ch02.011 视觉 AI 的下一前沿是代码：a16z 关于视觉生成范式转移的论述
+## Ch02.010 视觉 AI 的下一前沿是代码：a16z 关于视觉生成范式转移的论述
 
-> 📊 Level ⭐⭐ | 14.3KB | `entities/a16z-com-the-next-frontier-of-visual-ai-is-code.md`
+> 📊 Level ⭐⭐ | 14.2KB | `entities/a16z-com-the-next-frontier-of-visual-ai-is-code.md`
 
 # 视觉 AI 的下一前沿是代码：a16z 关于视觉生成范式转移的论述
 
@@ -1936,7 +1777,7 @@ a16z 的署名文章（2026 年 6 月 2 日）提出一个核心论点：视觉 
 
 1. **两大视觉生成栈**：① 像素原生（pixel-native）——直接生成图像/视频，擅长纹理、光照、氛围、真实感；② 代码原生（code-native）——生成可被其他引擎执行或渲染的表征（SVG、HTML/CSS、Lottie JSON、Blender 脚本、USD scene graph、shader、游戏引擎场景等）。
 2. **关键差异在于"生成之后"**：生产工作流关心生成后的可编辑性、可复用性、可版本化、可集成性、可验证性。代码原生生成将视觉产物变成可被设计师、工程师和 Agent 共同操作的工件。
-3. **代码 → 渲染 → 检查 → 修订**：代码原生生成形成精确的循环，模型生成工件、渲染、看到错误、打补丁源——而非简单地"重新采样"。这与 [Agent 循环设计](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-loop-design.md) 的核心模式一致。
+3. **代码 → 渲染 → 检查 → 修订**：代码原生生成形成精确的循环，模型生成工件、渲染、看到错误、打补丁源——而非简单地"重新采样"。这与 Agent 循环设计 的核心模式一致。
 4. **测试时计算（test-time compute）的天然契合**：代码原生生成处于"受益于生成更多 token 与测试时计算"的直线上，模型在闭环可验证环境中调试视觉程序，而非仅仅采样更多图像。
 5. **市场结构围绕运行时分化**：每个运行时（浏览器、SVG 渲染器、Lottie player、Blender、游戏引擎、模拟器）构成不同的市场楔子，因为每个都有自己的源表征、反馈循环与生产工作流。
 6. **3D 是下一前沿**：3D 资产不能仅"看起来对"——它需要一致的底层 3D 表征（几何、材质、部件层级、场景上下文），VIGA 与 Articraft3D 是这一方向的代表项目。
@@ -2026,7 +1867,7 @@ VIGA 与 Articraft3D 是这一方向的代表项目：
 ## 实践启示
 
 1. **重新定义"视觉 AI 产品"的形态**：视觉 AI 创业公司不应只做"更美的输出"，而应**拥有完整循环**：生成工件、渲染、检查、修订源代码。拥有运行时 + 闭环反馈的产品将构筑更高壁垒。
-2. **测试时计算在视觉场景的应用逻辑**：不要被"采样更多图像"的诱惑带偏——更高效的方式是"源代码级定向改进"。在 [Agent 循环设计](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-loop-design.md) 中，应将代码 → 渲染 → 检查 → 修订作为视觉场景的标准模式。
+2. **测试时计算在视觉场景的应用逻辑**：不要被"采样更多图像"的诱惑带偏——更高效的方式是"源代码级定向改进"。在 Agent 循环设计 中，应将代码 → 渲染 → 检查 → 修订作为视觉场景的标准模式。
 3. **围绕运行时选市场楔子**：与其做一个"通用视觉 AI 工具"，不如聚焦一个运行时（浏览器 SVG、Lottie player、Blender 等），把该运行时的源表征、反馈循环、生产工作流吃透。这是 a16z 给出的市场地图核心建议。
 4. **3D 是更大的蓝海**：相比 2D 设计已相对拥挤，3D 资产的一致性问题仍未被根本解决。VIGA、Articraft3D 的路径（Blender 作为闭环环境 + 语义工具 + 部件/关节/约束的程序化定义）值得创业团队深入研究。
 5. **OmniLottie 模式可迁移到其他格式**：把不友好的格式（原始 JSON、视频、栅格图）转换为模型更易生成与编辑的中间表征，是一种通用工程范式。SVG、USD scene graph、shader 等都存在类似改造机会。
@@ -2040,7 +1881,7 @@ VIGA 与 Articraft3D 是这一方向的代表项目：
 - [Ethan He: Cosmos / Grok Imagine / Latent Space 视频 Agent](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ethan-he-cosmos-grok-imagine-latent-space-video-agent-20260606.md) — 视频生成的 Agent 化方向
 - [AI 硬件寒武纪时刻](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-hardware-cambrian-baidu-intelligent-cloud-catalyst-geekpark.md) — AI 硬件的爆发与基础设施工具的关系
 - [Ethan He: Cosmos / Grok Imagine / Latent Space 视频 Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/ethan-he-cosmos-grok-imagine-latent-space-video-agent-20260606.md) — 视频与多模态生成的前沿
-- [Agent 循环设计](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-loop-design.md) — Code → Render → Inspect → Revise 正是 Agent 循环的标准范式
+- Agent 循环设计 — Code → Render → Inspect → Revise 正是 Agent 循环的标准范式
 - [Agentic 工程范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-engineering-paradigm.md) — 反馈驱动改进的工程化方法
 
 ## 相关实体
@@ -2049,7 +1890,7 @@ VIGA 与 Articraft3D 是这一方向的代表项目：
 
 ---
 
-## Ch02.012 Claude Code Prompt 提示词体系源码解析
+## Ch02.011 Claude Code Prompt 提示词体系源码解析
 
 > 📊 Level ⭐⭐ | 13.9KB | `entities/claude-code-prompt-source-analysis.md`
 
@@ -2234,7 +2075,7 @@ BashTool 的 prompt 已经复杂到像高风险工具专用操作 SOP（定义 g
 
 ---
 
-## Ch02.013 Claude Fable 5 提示词泄漏 — 1585 行 120K 字符的产品运行时控制平面与安全工程启示
+## Ch02.012 Claude Fable 5 提示词泄漏 — 1585 行 120K 字符的产品运行时控制平面与安全工程启示
 
 > 📊 Level ⭐⭐ | 12.0KB | `entities/claude-fable-5-prompt-leak-runtime-control-plane-vibecoder-2026.md`
 
@@ -2305,481 +2146,7 @@ BashTool 的 prompt 已经复杂到像高风险工具专用操作 SOP（定义 g
 
 ---
 
-## Ch02.014 Skills赏析：使用skills-refiner提升skill质量
-
-> 📊 Level ⭐⭐ | 10.8KB | `entities/skills-refiner-design-quality-evaluation-framework.md`
-
-## 断言测试的结构性盲区
-skill-creator 提供了创建-测试-断言迭代的完整循环，但断言测试有结构性盲区——一个 skill 可以通过所有测试用例，同时存在以下问题：
-
-- **定位偏差**：description 决定何时激活，过宽导致误触发，过窄导致忽略
-- **上下文工程浪费**：instructions 层包含 Claude 已内化的通用知识
-- **低可移植性**：依赖特定工作流或工具调用链，换环境就失效
-- **边界模糊**：与其他 skill 存在重叠，或对某些输入默默降级
-断言测试通过，证明 skill 在已知场景下按预期执行。它证明不了 skill 设计是否正确。
-
-## skills-refiner 两阶段框架
-### 第一阶段：诊断与精炼（Diagnose & Refine）
-诊断对象：Skill 仓库、单个 skill、工作流框架、eval 集。
-诊断不是打分，而是定位真实状态：真正解决什么问题、边界在哪、哪些设计选择有实质作用、哪些只是表面修饰、哪些是隐患。
-精炼是诊断的直接下游：哪些应当保留，哪些应当改进，哪些应当简化或重新划定范围，哪些应当去掉。
-
-### 第二阶段：提取与整合（Extract & Integrate）
-当给出目标 Skill 仓库（target_repo）时启动。
-关注这个 Skill/Skills 仓库对目标仓库有什么价值——哪些可以直接采纳，哪些需要重新设计，哪些应当放弃，整合后哪些部分面临最大风险。
-
-## 六维评估框架
-- **定位**：skill 真正解决什么问题，边界在哪
-- **机制**：哪些设计选择真正驱动了它的行为
-- **价值**：什么是真正强的和可复用的，什么只是表面修饰
-- **风险**：什么是脆弱的或难以维护的
-- **改进**：具体的提升方向
-- **集成**：哪些可以直接用，哪些需要重新设计，哪些应当放弃
-
-## 证据纪律原则
-分析必须区分三类判断：
-
-- **直接证据**：文件中直接可读的内容
-- **合理推断**：基于可见证据的有理由但非确定的判断
-- **未解决的不确定性**：证据不足以支撑的问题，应明确标注
-不能用宏观判断掩盖证据的局限。
-
-## 目的决定标准
-工程和工作流类 skill → 结构严谨性、上下文工程质量、可维护性、跨仓可移植性
-研究分析类 skill → 推理质量和证据纪律
-写作或教学类 skill → 清晰度和输出质感
-用工程标准去诊断创意写作 skill，结论通常是错的。
-
-## 与 skill-creator 的分工
-| 工具 | 职责 |
-|------|------|
-| skill-creator | 创建、A/B 测试、断言迭代、description 优化、打包分发 |
-| skills-refiner | 设计判断：定位是否准确、上下文工程有无浪费、可移植性、边界清晰度 |
-典型路径：skill-creator 创建并迭代 → 测试通过后 skills-refiner 做设计诊断 → 把改进点带回 skill-creator 做下一轮迭代。
-
-## 安装
-```bash
-npx skills add yknothing/skills-refiner
-```
-
-## 深度分析
-skills-refiner 的核心贡献在于它填补了 skill-creator 的质量盲区。skill-creator 是一个**创建工具**，擅长快速迭代和测试，但它无法回答"这个 skill 本身设计得好不好"——这是两个不同维度的问题。
-
-### 设计质量 vs. 功能正确性
-断言测试只能证明功能正确性，即"skill 能不能用"。但设计质量涉及更深层的问题：这个 skill 是否被正确地放在上下文中？它的激活边界是否清晰？它的上下文工程是否有冗余？这些问题在测试通过后依然存在。
-skills-refiner 的两阶段框架（诊断→精炼 / 提取→整合）本质上是一个**元评估（meta-evaluation）过程**：它不是评估 skill 的输出，而是评估 skill 本身的设计决策。
-
-### 六维评估的内在逻辑
-六个维度之间存在隐含的递进关系：
-1. **定位**（Scope）→ 这是最根本的问题：skill 解决的是什么，不解决的是什么
-2. **机制**（Mechanism）→ 基于定位，理解哪些设计选择驱动了行为
-3. **价值**（Value）→ 区分核心价值与表面装饰
-4. **风险**（Risk）→ 识别脆弱点和维护负担
-5. **改进**（Improvement）→ 基于上述分析给出具体方向
-6. **集成**（Integration）→ 考虑在实际仓库中的可用性
-这个顺序是有意义的：不能先讨论改进，而要先理解定位和机制。
-
-### 证据纪律的核心价值
-"证据纪律"原则是我认为整个框架中最有价值的部分。它明确要求区分三种不同类型的判断：
-
-- **直接证据**：文件可直接读取的内容
-- **合理推断**：基于证据的有根据推测
-- **未解决的不确定性**：明确标注证据不足之处
-这直接对抗了 LLM 输出中常见的"幻觉自信"问题——当分析者无法区分自己是在陈述事实还是在推断时，结论的质量是不可靠的。
-
-### 目的决定标准的相对性
-"目的决定标准"看起来像是一句正确的废话，但实际上它有重要的实践意义：它要求评估者**先理解 skill 的目的，再选择评估维度**，而不是用一套通用标准去套所有 skill。
-这对 skill 设计的启示是：在创建 skill 之前，应该先明确它的**目的类型**（工程类 / 研究分析类 / 写作教学类），因为这会直接影响后续所有设计决策。
-
-## 实践启示
-### 对 skill 创建者的建议
-1. **不要用测试通过替代设计审查**：断言测试是必要条件，不是充分条件。skill 通过所有测试后，还应该用 skills-refiner 做一次设计诊断。
-2. **先定位，再写 instructions**：description 决定了激活边界，这比 instructions 的内容质量更重要。先把"这个 skill 解决什么问题、不解决什么问题"想清楚，再开始写 instructions。
-3. **区分上下文工程中的冗余内容**：instructions 中如果包含 Claude 已内化的通用知识，这是上下文工程的浪费。应该把这部分内容剥离，让 instructions 只包含 model 不知道的特定信息。
-
-### 对 skill 评估者的建议
-1. **建立评估前的目的确认流程**：在开始评估之前，先确认 skill 的目的类型，再选择对应的评估维度。用工程标准评估写作 skill，结论通常是错的。
-2. **保持证据纪律**：在分析时明确标注每项判断的证据类型。不要用宏观结论掩盖证据的局限性。
-3. **关注边界而非中间**：skill 在典型输入下的表现通常是可以预期的，真正的风险在于边界情况——过宽的激活条件、低可移植性、与其他 skill 的重叠。
-
-### 对组织或团队的建议
-1. **建立 skill 设计的双人审核机制**：一人负责功能正确性（skill-creator 流程），一人负责设计质量（skills-refiner 流程）。这两个角色不应当由同一人承担，因为关注点不同。
-2. **维护 skill 仓库的分层评估**：定期对仓库中的 skill 做六维评估，识别需要重构或废弃的 skill，保持仓库的整体质量。
-3. **集成到 CI/CD 流程**：如果团队使用 skill-creator 流程，可以将 skills-refiner 作为 assertion 测试之后的第二次 gate，只有通过设计诊断的 skill 才能进入正式仓库。
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skills-refiner-design-quality-evaluation-framework.md)
-
-## 相关实体
-- [LBS-IntentBench — 首个真实出行隐式意图评测基准](https://github.com/QianJinGuo/wiki/blob/main/entities/lbs-intentbench.md)
-- [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](https://github.com/QianJinGuo/wiki/blob/main/entities/perplexity-internal-skill-design-guide.md)
-- [AI Skill 测评指标体系](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-skill-metrics-system.md)
-- [上下文工程 - 三种Memory方案对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md)
-
-- [AgentEval：YAML驱动的Agent评测框架](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-eval-wallezhang-yaml-driven-agent-evaluation-framework.md)
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lightfield-introducing-skills.md)
-
-- [AI Agent 工程师能力地图](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-engineer-capability-map.md)
-
----
-
-## Ch02.015 Karpathy CLAUDE.md — 四条行为准则让 AI 编程 Agent 减少结构性失败
-
-> 📊 Level ⭐⭐ | 10.8KB | `entities/karpathy-claude-md-rules.md`
-
-## 背景与传播轨迹
-
-- **Karpathy 原始推文**：2026 年 1 月 26 日发布，分享 AI 编程工作流最大变化——从 80% 手动写代码 → 80% 靠 Agent 生成
-- **推文热度**：近 800 万次浏览
-- **GitHub Star 增长曲线**：一天 6000 Star，一周 4 万，三个月 11 万，跻身 GitHub 历史 Star 数 Top 100
-- **文件规模**：原始 CLAUDE.md 仅 65 行，MIT 协议，采用成本极低
-
-## 原始 CLAUDE.md 全文
-
-```markdown
-
-# CLAUDE.md
-Behavioral guidelines to reduce common LLM coding mistakes.
-
-## 1. Think Before Coding
-Don't assume. Don't hide confusion. Surface tradeoffs.
-
-- State your assumptions explicitly. If uncertain, ask.
-- If multiple interpretations exist, present them.
-- If a simpler approach exists, say so. Push back when warranted.
-- If something is unclear, stop. Name what's confusing. Ask.
-
-## 2. Simplicity First
-Minimum code that solves the problem. Nothing speculative.
-
-- No features beyond what was asked.
-- No abstractions for single-use code.
-- No "flexibility" or "configurability" that wasn't requested.
-- No error handling for impossible scenarios.
-- If you write 200 lines and it could be 50, rewrite it.
-
-## 3. Surgical Changes
-Touch only what you must. Clean up only your own mess.
-
-- Don't "improve" adjacent code, comments, or formatting.
-- Don't refactor things that aren't broken.
-- Match existing style.
-- Your changes create orphans: remove unused imports/variables/functions.
-- Don't remove pre-existing dead code unless asked.
-- Test: every changed line should trace directly to the user's request.
-
-## 4. Goal-Driven Execution
-Define success criteria. Loop until verified.
-
-- "Add validation" → "Write tests for invalid inputs, then make them pass"
-- "Fix the bug" → "Write a test that reproduces it, then make it pass"
-- "Refactor X" → "Ensure tests pass before and after"
-- For multi-step tasks: state plan with verify checkpoints.
-
-These guidelines are working if:
-fewer unnecessary changes in diffs, fewer rewrites due to overcomplication,
-and clarifying questions come before implementation rather than after mistakes.
-```
-
-## 经典失败案例
-
-每个用过 AI 编程工具的开发者都碰过同样的墙：
-
-> 让 AI 加一个小的缓存层，它把函数签名重写了，引入了一个没有要求的依赖注入模式，把缓存包在了一个暴露出八个方法的类里——缓存本身只有三行。
-
-这不是极端案例，这是**默认行为**。
-
-## 四条行为准则
-
-### 1. Think Before Coding
-
-**针对**：AI 遇到模糊需求时用"听起来合理"的答案填上空，然后往下冲，不停下来问。
-
-**规则**：State your assumptions explicitly. If uncertain, ask. If multiple interpretations exist, present them.
-
-**改变交互流程**：用户给需求 → AI **先提出歧义** → 澄清之后再实现（而不是：用户纠错多轮循环）。
-
-### 2. Simplicity First
-
-**针对**：AI 偏向生成比必要更多的代码（复杂=更完整/专业的训练信号）。
-
-**规则**：Minimum code that solves the problem. Nothing speculative.
-
-- 没人要求的 feature 不加
-- 用一次的代码不抽象
-- 不可能发生的异常不防御
-- 没被要求"灵活可配置"就不搞扩展性
-
-**自检问题**："一个老工程师看到这些代码会不会觉得过度设计？"如果会，重写。
-
-### 3. Surgical Changes
-
-**针对**：AI 改代码时"顺便优化一下"——在真实系统里很危险。
-
-**规则**：Touch only what you must. Clean up only your own mess.
-
-- 只改任务要求的部分，不顺便优化周边
-- 不重构没坏的东西
-- 你的改动带来的孤儿代码要清掉；之前存在的死代码不删，除非明确要求
-
-**验收标准**：每一行改动都能追溯回用户的请求。
-
-### 4. Goal-Driven Execution
-
-**针对**：没有明确完成标准，AI 在"感觉差不多了"停下来，而不是在"确实对了"时停下。
-
-**规则**：Transform tasks into verifiable goals.
-
-- "加校验" → "为无效输入写测试，然后让测试通过"
-- "修 bug" → "写一个能复现 bug 的测试，然后让它通过"
-- "重构 X" → "确保重构前后测试都通过"
-
-多步骤任务先列计划，每步说清楚验收方式。
-
-## 适用场景
-
-| 场景 | 用法 |
-|------|------|
-| 全新项目 | 直接放进根目录，或 `/init` 生成后合并 |
-| 已有 CLAUDE.md | 末尾加 `## Behavioral Guidelines` 小节叠加 |
-| 全局生效 | 放 home 目录，提交版本控制，团队共享 |
-| Cursor | 换文件名即可（仓库提供两个版本） |
-
-## 为什么爆火
-
-Karpathy 做的事情是用准确的语言把大家的挫败感说了出来。Forrest Chang 把它变成了一个可以直接用的文件（65 行，MIT 协议），采用成本极低——粘贴进根目录，三十秒搞定。
-
-这不是泛泛的"编程建议"，而是直指 AI 编程 Agent 的四种**结构性失败模式**——这些失败不是偶发的，而是 AI 训练目标和工程执行之间的系统性错配。
-
-## 量化效果
-
-| 配置 | 错误率 | 遵循率 |
-|------|--------|--------|
-| 无 CLAUDE.md | 41% | — |
-| Karpathy 4 条 | ~3% | 78% |
-| 扩展 12 条 | 3% | 76% |
-| 14+ 条 | — | 52%（骤降）|
-
-> **关键发现**：超过 14 条规则后遵循率骤降 24 个点，存在认知带宽的物理限制。规则数量与遵循率呈倒 U 型曲线——在 6-12 条范围内时每条规则的边际认知成本低于临界值，超过后规则之间开始竞争上下文资源。
-
-## 深度分析
-
-### 四条准则针对的结构性失败根因
-
-Karpathy 总结的四条准则不是泛泛的"编程建议"，而是直指 AI 编程 Agent 的四种**结构性失败模式**——这些失败不是偶发的，而是 AI 训练目标和工程执行之间的系统性错配。
-
-**自信猜测（Think Before Coding 针对）**：AI 在预训练中学习的是"给出完整答案"，奖励信号来自答案的完整性而非正确性。遇到模糊需求时，AI 的默认策略是"补全"而非"提问"——因为训练数据中，提问者通常会持续提供信息，而完整的方案更受奖励。这是 AI 不主动澄清的根本原因，不是态度问题，是训练目标问题。
-
-**过度设计（Simplicity First 针对）**：AI 偏向生成更多代码，是因为复杂代码在训练语料中往往与"专业""完整""高级"等正面标签共现。少写代码在训练信号上是"懒惰"的，模型没有内在动机选择最小化实现。
-
-**顺手优化（Surgical Changes 针对）**：改代码时"顺手优化周边"在人类工程师中是良好习惯，但 AI 这样做会导致两类问题：一是改动范围不可控，引入原本不需要修的 bug；二是优化方向的奖励信号缺失（没有人在代码审查中给"顺手清理"打高分）。
-
-**模糊完成标准（Goal-Driven Execution 针对）**：AI 停止的时机由"模型觉得自己答完了"决定，而不是"是否真正满足用户需求"。这是 RL 环境中稀疏奖励的标准问题——没有明确的完成信号，AI 会在"差不多对了"时停止，而不是在"确实对了"时停止。
-
-### 为什么这四条规则能真正起作用
-
-65 行 MIT 协议的 CLAUDE.md 能获得 11 万星，不只是因为"说得好听"，而是因为它把抽象原则转化成了**可验证的检查条件**。
-
-- Think Before Coding → "每一行改动都能追溯回用户的请求"
-- Simplicity First → "一个老工程师看到这些代码会不会觉得过度设计"
-- Surgical Changes → 改动范围的边界是可枚举的
-- Goal-Driven Execution → 任务先列计划，每步有验收方式
-
-这种"原则 → 可检查条件"的转化，是让规则真正被执行而非被忽略的关键。
-
-## 实践启示
-
-### 对 AI 编程 Agent 开发者的建议
-
-1. **在 Agent 系统层面实现 Think Before Coding**：不要依赖模型的自觉，而要在调度层强制要求模型先输出"歧义列表"再执行。可以在任务初始化阶段插入一个强制性的"澄清节点"，只有当歧义列表为空或全部标记为 resolved 时，才允许进入执行阶段。
-
-2. **用约束而非引导来实施 Simplicity First**：与其告诉模型"要简洁"，不如在系统层面对代码输出的 token 预算进行硬性限制，或者在调度层增加"复杂度惩罚"——对超出必要规模的代码变更要求模型额外论证每个新增组件的必要性。
-
-3. **把 Surgical Changes 变成审计日志**：在代码变更的 diff 阶段，记录每一行改动与原始用户请求的映射关系。这不仅有助于验收，也能在模型做出超范围变更时提供可追溯的证据。
-
-4. **Goal-Driven Execution 的工程实现**：将任务验收条件结构化——不是自然语言描述的"完成标准"，而是可执行的验证脚本或测试用例。AI 生成的测试本身就是完成标准的外化形式。
-
-### 对团队引入 CLAUDE.md 的建议
-
-1. **优先级：全新项目 > 已有项目**：在已有项目中使用时，CLAUDE.md 会对历史代码产生"不一致性感"，建议先在 feature branch 或新模块中试用。
-
-2. **不要直接覆盖已有的 CLAUDE.md**：叠加 `## Behavioral Guidelines` 小节，比替换整个文件更安全，也更容易被团队接受。
-
-3. **针对团队工作流定制 Simplicity First 规则**：原文四条基础规则是通用版，但每个团队的"过度设计"标准不同。建议在 CLAUDE.md 中明确哪些是团队不允许的结构（如没有要求的依赖注入、过度抽象的接口），使其可检查。
-
-### 对 AI 编程评估框架的启示
-
-当前的 AI 编程 benchmark 主要评估**正确性**（代码能否跑通）和**效率**（用了多少步/时间），但缺乏对**结构性失败率**的测量。建议增加以下指标：
-
-- **歧义未澄清率**：任务有歧义时，模型主动提问的比例
-- **超范围变更率**：实际改动超出任务要求的比例
-- **最小化实现率**：新增代码中真正必要的代码行数占比
-- **验收条件达成率**：任务完成后是否真正满足最初的需求
-
-## 相关链接
-
-- **GitHub**：https://github.com/forrestchang/andrej-karpathy-skills（65 行，MIT 协议，134K+ stars）
-- **Karpathy 原推**：2026-01-26
-- **扩展版本**：[[entities/claude-code-12-rules-karpathy-extension]（新增 8 条覆盖 agent 编排场景）
-
-## 相关实体
-
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
-
----
-
-## Ch02.016 第 09 篇 · Agent 配置：模型、工具、技能、MCP 与提示词的组合
-
-> 📊 Level ⭐⭐ | 10.5KB | `entities/agent-config-model-tool-skill-mcp-prompt-combination-yexiaochai-09.md`
-
-# 第 09 篇 · Agent 配置：模型、工具、技能、MCP 与提示词的组合
-
-> Author: 叶小钗 | Source: 微信公众号
-
-本文是叶小钗 Agent 系列教程的第 09 篇，聚焦于 Agent 配置层的设计与实现 —— 将 Agent 的模型选择、工具、技能、MCP 和系统提示词从代码中解耦为外部配置，实现**"一套代码，多 Agent 组装"**的能力。
-
-## 代码 vs 配置的分界线
-
-叶小钗提出明确的分离原则： 不是所有内容都适合抽取为配置 —— 需要区分系统机制与业务策略。
-
-**代码实现（系统机制，不因用户改变）**：
-
-- 工具的具体实现（Python 函数）
-- 技能的执行引擎（加载、解析、执行流程）
-- Agent Loop 循环机制（消息调度、状态管理）
-- SSE 协议（通信层）
-- MCP 协议处理
-
-**配置部分（产生不同的业务 Agent）**：
-
-- 模型的选择（LLM 后端、参数配置）
-- Agent 需要使用的工具列表
-- Agent 需要使用的技能列表
-- MCP 服务器配置
-- Agent 的系统提示词（长文本行为定义）
-
-这些配置的不同组合可以组装出不同的业务 Agent。同一套代码基，差异化的就是这几样配置项，形成**数据驱动行为**的架构模式。
-
-## 配置设计方案
-
-### 为什么用 JSON 文件而非数据库
-
-对于个人 / 团队级 Agent 工具，JSON 文件配置相比传统数据库方案有显著优势：
-
-- **可读可手编**：直接打开 JSON 文件即可查看所有 Agent 配置，无需额外 UI 开发
-- **可版本化**：配置文件纳入 Git 管理，任何变更通过 `git diff` 一目了然
-- **简化部署**：无数据库依赖，Agent 分享给其他人无需同步数据库 Schema
-- **无并发问题**：个人 Agent 通常单机单用户使用，无并发写入竞争
-
-### 配置的物理结构
-
-配置采用的是**文件 + 目录**的组合方案：
-
-```
-workspace/
-├── models.json          # 模型配置
-├── tools.json           # 工具配置
-├── skills/              # 技能目录（每个技能一个子目录）
-├── agents.json          # Agent 索引（结构化字段）
-├── agents/              # Agent 提示词目录
-│   └── 00000000/
-│       └── agent.md     # Agent 长文本系统提示词
-└── mcp_servers.json     # MCP 服务器配置
-```
-
-这种分离设计是有意为之：
-- `agents.json` 保存结构化字段（模型 ID、工具 ID 列表、技能 ID），适合校验和筛选
-- `agent.md` 保存长文本系统提示词，适合用 Markdown 编辑和版本管理
-
-### Agent Schema 设计
-
-核心 Schema 将 Agent 定义为一个**关联聚合**，不直接内联工具定义或模型密钥：
-
-```
-Agent
-├── model_id → models.json 中的一条模型配置
-├── tool_ids → tools.json 中的配置 ID 列表
-├── skill_ids → skills.json 中的配置 ID 列表
-├── mcp_server_ids → mcp_servers.json 中的配置
-└── agent.md → 该 Agent 自己的角色与行为要求的提示词
-```
-
-这种通过 ID 引用的松耦合设计，使得 Agent 可以灵活组合各项能力而不需要重复存储基础配置。
-
-## 与 Harness Engineering 的关系
-
-本文的"配置驱动 Agent"思想与 Harness Engineering 中 Context Management 和 Working Set 概念一致 —— 关注的是 Agent 的能力边界定义与运行时编排，而非底层实现的细节。
-
-具体映射关系：
-- Agent 的模型/工具/技能选择 → **Working Set 定义**（Agent 在当前任务中可用的资源集合）
-- Agent 配置的 JSON 存储 → **Skill 的外部化配置**（将技能参数从代码解耦）
-- Agent.md 长提示词 → **Context Template**（固定化的行为规范注入）
-
-## 深度分析
-
-### 配置驱动 vs 代码驱动的分界线哲学
-
-本文最重要的贡献不是技术实现，而是提出了 Agent 系统中"什么应该写死、什么应该可配"的分界原则。 这一原则在软件工程中有长期实践的：Unix 哲学（机制与策略分离）、IoC 容器（控制反转）、微服务配置中心。Agent 工程正在经历同样的架构演进 —— 从 monolith Agent（一个 Agent 做所有事）进化为组合式 Agent 平台（配置驱动多 Agent 组装）。
-
-分界线判断标准：**是否因用户/场景变化而变化**。工具的实现逻辑不因用户变化（所有用户都用同一个 Python `read_file` 函数），但模型选择、技能组合因场景不同而异。
-
-### JSON 文件 vs 数据库：Agent 配置存储的取舍
-
-选择 JSON 文件而非数据库反映了个人 Agent 与生产级 Agent 的核心差异：
-
-| 维度 | JSON 文件 | 数据库 |
-|------|-----------|--------|
-| **可读性** | 直接编辑，零学习成本 | 需管理工具 |
-| **版本管理** | 天然 Git 友好 | 需额外工具 |
-| **并发控制** | 无（单用户场景） | ACID 事务 |
-| **扩展性** | 不适用于多用户 | 高并发支撑 |
-| **部署复杂度** | 低（启动即用） | 高（需维护 DB） |
-
-选择 JSON 的关键前提是**配置文件无并发写入问题**。当 Agent 从个人工具演变为多人协作平台时，数据库迁移是必要的架构升级。
-
-### ID 引用式 Schema：松耦合的 Agent 组件模型
-
-通过 ID 引用而非内联存储的 Schema 设计，体现了**组件化 Agent 构建**的思想。 每个 Agent 是一个"组件装配图"而不是"自包含单体"：
-
-- **复用性**：同一模型配置可在多个 Agent 间共享，一处修改全局生效
-- **可组合性**：工具、技能、MCP 服务器可自由组合成不同 Agent
-- **可观测性**：通过查看 Agent 引用的 ID 即可了解其能力边界
-
-这与当代前端框架（React 组件组合）和后端微服务（服务编排）的设计理念一致 —— Agent 组件化是 Harness Engineering 的自然演进方向。
-
-### 长文本提示词与结构化配置的分离设计
-
-将 Agent 配置拆分为 `agents.json`（结构化字段）和 `agent.md`（长文本提示词）展示了一重要的设计模式：**结构化数据的校验友好性与自由文本的表达力之间的平衡**。
-
-- 结构化数据（JSON）适合：ID 关联、字段校验、列表筛选、自动补全
-- 自由文本（Markdown）适合：角色定义、行为规范、复杂约束、Few-Shot 示例
-
-这种分离类似于编程语言中类型声明与实现体分离 —— Schema 定义"有什么"，`agent.md` 定义"怎么用"。
-
-## 实践启示
-
-1. **尽早建立代码/配置分界线**：设计 Agent 系统时，预先定义"哪些是可变的业务策略、哪些是稳定的系统机制"。可变部分设计为外部配置，减少未来改动代码的需求。分界线判断标准：是否因用户/场景变化而变化。
-
-2. **配置版本化是必选项**：将 Agent 配置纳入版本管理（Git），确保配置变更可追溯、可回滚。即使使用数据库存储，也应保持配置变更的审计日志。
-
-3. **组件化 Agent 构建**：通过 ID 引用而非内联存储组装 Agent。模型、工具、技能、MCP 作为独立组件管理，Agent 是这些组件的装配体。设计时关注组件间的接口兼容性。
-
-4. **结构化 + 自由文本混合配置**：将 Agent 的关键配置拆分为结构化部分（校验友好、适合筛选）和自由文本部分（表达力强、适合复杂约束）。不要把长文本提示词塞进 JSON 字段，也不要把结构化数据硬编码在 Markdown 中。
-
-5. **从单 Agent 到多 Agent 平台的演进路径**：先以 JSON 文件快速启动个人 Agent 工具，当 Agent 数量增长到需要多用户协作时，平滑迁移到数据库存储。保持配置 Schema 不变，只换存储层。
-
-## 相关实体
-
-- [Harness 工程核心模式](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-core-patterns-claude-code.md)
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/lilian-weng-harness-engineering-self-improvement.md)
-- [MCP 协议与工具编排](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-mcp-revisited-tool-search-code-orchestration.md)
-- [Skill 驱动开发](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-14-skill-patterns-best-practices.md)
-- [Working Set 上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-harness-context-management-working-set.md)
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-config-model-tool-skill-mcp-prompt-combination-yexiaochai-09.md)
-
----
-
-## Ch02.017 Superpowers 6.0 跑了 25 个实验才发现：prompt 里写的每一条\"不要\"，可能都在帮倒忙
+## Ch02.013 Superpowers 6.0 跑了 25 个实验才发现：prompt 里写的每一条\"不要\"，可能都在帮倒忙
 
 > 📊 Level ⭐⭐ | 10.4KB | `entities/superpowers-prompt-dont-experiment-shuge.md`
 
@@ -2875,7 +2242,7 @@ Superpowers 的微测方法论最大的贡献不是某一条具体结论，而�
 
 ---
 
-## Ch02.018 Prompt 调试器：A/B 对比 + 自动评分 + 模板沉淀
+## Ch02.014 Prompt 调试器：A/B 对比 + 自动评分 + 模板沉淀
 
 > 📊 Level ⭐⭐ | 9.7KB | `entities/prompt-debugger-a-b-compare-winty.md`
 
@@ -2985,164 +2352,7 @@ AI 评分是「效率」工具，用户评分是「质量」工具。两者结�
 
 ---
 
-## Ch02.019 qoder skills
-
-> 📊 Level ⭐⭐ | 9.4KB | `entities/qoder-skills.md`
-
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qoder-skills-完全指南从零开始让-ai-按你的标准执行-v2.md)
-
-## 核心概念
-Skill 是 AI 世界里的菜谱（Recipe），告诉 AI 如何处理特定任务或工作流。
-
-### 三级渐进式披露机制
-1. **YAML Frontmatter** - 元数据头部，始终加载在系统提示词中 
-2. **SKILL.md 正文** - 当 AI 判断相关时加载完整正文 
-3. **scripts/references/assets** - 按需加载的参考文件 
-
-### Skill vs 其他工具
-| 维度 | Skill | Slash Command | MCP | Rules | 
-|------|-------|---------------|-----|-------| 
-| 触发方式 | AI 自主判断 + 可主动 `/` 调用 | 用户主动输入 `/xxx` | 工具调用时自动触发 | 始终在上下文中生效 | 
-| 内容复杂度 | 高：多步骤、脚本、资源 | 低：固定短提示词 | 中：工具接口定义 | 低：全局约束规则 | 
-| 可分发性 | ✅ 适合团队共享 | ❌ 难以共享 | ✅ 通过服务端共享 | ❌ 通常个人配置 | 
-
-## 使用场景
-1. **文档与资产创建** - 生成符合特定风格、规范的输出物 
-2. **工作流自动化** - 多步骤流程，期望每次输出结果一致 
-3. **MCP 能力增强** - 有了工具访问权限，但缺乏"怎么用好"的工作流知识 
-
-## 安装方式
-```bash 
-npx skills add <skill-name> 
-``` 
-
-## 深度分析
-### 1. Skill 的本质：从"提示词"到"工作流知识"
-Skill 的设计哲学超越了传统提示词工程（prompt engineering）的范畴。传统提示词本质上是"给 AI 的指令"，是一次性、上下文绑定的；而 Skill 本质上是"可复用的工作流知识"，是跨会话、跨项目的资产。
-
-这一定位的转变意义重大：当 AI 编程工具能够记住你的偏好、流程和领域知识时，人机协作的边际成本才能真正下降。否则，每次新会话都需要重新"调教"AI，高成本、低确定性、难以复现。Skill 正是解决这一问题的标准化方案。
-
-### 2. 三级渐进式披露机制的设计智慧
-Progressive Disclosure（渐进式披露）是 Skill 架构中最精妙的设计。它解决了一个核心矛盾：**上下文窗口有限 vs. 知识容量无限**。
-
-传统的解决方案是"要么全加载（撑爆上下文），要么不加载（无法利用知识）"。Skill 的三级机制提供了第三种路径：
-
-- 第一级（Frontmatter）：始终可见，提供"目录"功能，让 AI 知道何时应该调用该 Skill
-- 第二级（SKILL.md）：按需加载，提供完整执行细节
-- 第三级（references/scripts）：仅在执行过程中引用，保持主文件精简
-这一设计的隐含假设是：**知识的使用频率呈幂律分布**。少数 Skill 会被频繁调用，多数 Skill 则长期闲置。渐进式披露确保高频 Skill 的完整知识高效加载，低频 Skill 的元数据也能让 AI 在需要时准确识别。
-
-### 3. Skill 与 MCP 的互补关系
-文章清晰阐明了 Skill 与 MCP 的分工：**MCP 解决"AI 能做什么"（工具访问），Skill 解决"AI 应该怎么做"（工作流知识）**。
-
-这是一个常被忽视的关键区分。许多 AI 开发者热衷于"连接更多工具"（MCP），却忽略了"如何用好工具"（Skill）。结果是：AI 拥有了执行能力，但缺乏执行策略——可以调用 API，但不知道何时调用、调用后如何处理结果。
-
-两者结合的范式是：**MCP 提供专业厨房，Skill 提供菜谱**。用户无需每次从头解释，AI 也能稳定交付高质量结果。
-
-### 4. Skill 作为团队知识沉淀载体
-Skill 的可分发性和开放标准属性，使其成为团队知识管理的理想载体。传统情况下，团队最佳实践存在于"老员工的脑子里"或个人笔记中，难以系统化传承。Skill 将这些隐性知识显性化、标准化：
-
-- **显性化**：将模糊的"经验"转化为清晰的"执行步骤"
-- **版本化**：通过 Git 管理 Skill，追踪知识演进
-- **可测试**：Skill 的执行结果可以验证，知识的质量有客观标准
-- **可分发**：一份 Skill，多个平台通用，避免重复维护
-这对于 AI 时代的团队知识管理具有深远意义：**当 AI 能够可靠地执行 Skill 时，团队的工作流知识就变成了一种可自动化的资产**。
-
-### 5. Skill 的测试与迭代机制
-文章提出的 Skill 生命周期管理方法值得关注。与传统软件开发类似，Skill 需要"测试"和"迭代"：
-
-- **触发测试**：确保 Skill 在正确的时机加载
-- **功能测试**：确保输出结果稳定一致
-- **基线对比**：量化 Skill 带来的改善（减少对话轮次、降低 token 消耗等）
-更值得关注的是"动态优化"机制：**"你刚才的输出中，[问题描述]。请把这个改进固化到 Skill 文件中"**——这意味着 Skill 是"活"的文档，能够随着使用过程中的反馈持续优化。这是 Skill 区别于传统配置文件的核心优势。
-
-## 实践启示
-### 快速上手路线图
-1. **从安装第一个 Skill 开始** 
-   ```bash 
-   npx skills add remotion-best-practice  # 选择 Qoder，Global 安装 
-   ``` 
-   先体验 Skill 的效果，再深入理解原理
-
-2. **用 Quest 模式生成你的第一个 Skill** 
-   ``` 
-   帮我创建一个 Skill，用于 [描述你的需求]
-   ``` 
-   AI 会引导完成所有步骤，降低学习门槛 
-3. **理解三级披露机制** 
-
-   - Frontmatter 的 description 是触发器，决定 AI 何时调用
-   - 正文只写"做什么"和"关键步骤"，5000 词以内
-   - 复杂文档放到 references/，保持主文件精简
-
-### 团队落地策略
-1. **建立团队 Skill 库** 
-
-   - 路径：`<项目根>/.qoder/skills/`（项目级，纳入 Git 版本控制）
-   - 每个团队规范对应一个 Skill
-   - 提交时写清楚变更内容：`feat: add api-standard skill v1.0`
-2. **识别适合 Skill 化的场景** 
-
-   - 重复性工作流（每次都要解释相同流程）
-   - 多步骤流程（期望输出结果一致）
-   - 跨项目规范（团队成员需要遵循相同标准）
-3. **区分 Skill 与其他工具** 
-
-   - 需要调用外部系统 → MCP
-   - 全局约束（语言、格式） → Rules
-   - 一次性快捷操作 → Slash Command
-   - **可复用的标准化工作流 → Skill** ✅
-
-### 避免常见陷阱
-1. **Description 写得太模糊** 
-
-   - ❌ "帮助处理项目"
-   - ✅ "当开发者新增、修改或删除 API 接口时，自动执行本 Skill，完成 API 文档同步、向后兼容性检查和单元测试框架生成"
-2. **Frontmatter 中使用 XML 尖括号** 
-
-   - ❌ `description: Use for <important> cases`
-   - ✅ 纯文本描述，不含 XML 标签
-3. **name 包含保留词或空格** 
-
-   - ❌ `name: My Cool Skill` 或 `name: claude-helper`
-   - ✅ `name: my-cool-skill`（kebab-case，无空格，无 "claude"/"anthropic"）
-4. **正文过于冗长** 
-
-   - 将复杂文档放到 references/，主文件只写引用路径
-   - 步骤编号化，每步只做一件事
-   - 关键验证前置，用 `## 重要` 或 `CRITICAL:` 标注
-
-### 持续优化方法
-1. **诊断触发问题** 
-   ``` 
-   "你什么时候会用 [skill-name] 这个 Skill？" 
-   ``` 
-   AI 会复述 description，根据复述结果判断是否需要调整
-
-2. **监控迭代信号** 
-
-   - Skill 没有自动调用 → description 太模糊或缺少触发词
-   - Skill 总是莫名被调用 → description 太宽泛，加入负向说明
-   - Skill 被调用但 AI 没按步骤执行 → 指令太冗长，关键步骤前置
-3. **用自然语言修改 Skill** 
-   ``` 
-   你刚才的输出中，[问题]。请把这个改进固化到 [skill-name] 中 
-   ``` 
-   这是 Skill 区别于 Slash Command 的核心优势：每次修正都能沉淀
-
-## 参考文章
--  - Qoder Skills 完全指南
-
-## 相关实体
-- [Qoder Skills 完全指南](https://github.com/QianJinGuo/wiki/blob/main/entities/qoder-skills-complete-guide.md)
-
----
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-
----
-
-## Ch02.020 深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践
+## Ch02.015 深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践
 
 > 📊 Level ⭐⭐ | 9.2KB | `entities/openclaw-prompt-context-harness.md`
 
@@ -3220,97 +2430,7 @@ before_tool_call阶段的参数校验不仅能防止错误，还能作为"AI行�
 
 ---
 
-## Ch02.021 淘宝主播 Agent Harness 工程：六元组框架与直播场景八项实战
-
-> 📊 Level ⭐⭐ | 9.0KB | `entities/taobao-live-anchor-agent-harness-engineering-2026.md`
-
-# 淘宝主播 Agent Harness 工程：六元组框架与直播场景八项实战
-
-## 摘要
-
-淘天集团直播技术团队（大淘宝技术）把 Harness 工程推到极端压力测试场：主播 Agent 面对操作即时生效面向公众（错误无法撤回）、主播注意力极度稀缺（安全必须工程兜底）、多话题高频交织（上下文易污染漂移）、长程可中断要恢复（直播数小时跨端切换）。核心产出：Harness 六元组形式化 H = (E, T, C, S, L, V) + 八项实战（上下文工程/工具调用/Hook/沙箱/五层防御/异常降级/DAG PlanEngine/评测体系）+ Harness 思想重塑的记忆体系（三层记忆/记忆对账/信任度进化/多因子遗忘）。
-
-## Harness 六元组
-
-H = (E, T, C, S, L, V)：
-
-| 元组 | 含义 |
-|------|------|
-| E | Execution Loop 执行循环 |
-| T | Tool Registry 工具注册 |
-| C | Context Management 上下文管理 |
-| S | State Storage 状态存储 |
-| L | Lifecycle Hooks 生命周期钩子 |
-| V | Evaluation Interface 评估接口 |
-
-价值：把 Agent 工程从零散 Prompt 技巧和 if-else 升级为有明确分工的系统架构，任何项目可拿六维度对照。配套「水流理论」：人控方向设边界，AI 边界内自主推进，工程师建「河道闸门护栏」即 Harness。
-
-## 分层架构：业务方写 Skill，框架层兜底
-
-「会变的」与「不变的」彻底拆分：框架层提供执行循环、上下文治理、安全防护、状态持久化、审计观测；业务方以 Skill 声明能力域/风险等级/参数校验，其余框架兜底。存储「逻辑统一、物理分治」——记忆存 Hologres（向量+全文+标量三位一体，混合检索）、技能存 GitLab（版本化管理+预检+Code Review+灰度）、会话存 MySQL（user_id+session_id+state_key 索引，共享存储保多副本状态一致）。
-
-## 八项实战
-
-### 上下文工程：分层压缩 + Reducer + 大上下文卸载
-
-1. **分层压缩**：Token 超阈值走 3 层压缩（历史工具调用/摘要对话轮次/当前轮消息）；超 N 轮触发 Session 级话题分段打场景标签（pre-live/on-live/post-live）
-2. **Reducer 模式**（最值得强调）：传统做法把每轮工具调用完整 JSON 追加聊天历史——状态模糊/上下文膨胀/不可回放三问题。借鉴前端 Reducer 职责分离：**LLM 只决策（Action），Reducer 管状态变更（纯函数确定性）**，每轮把最新结构化 State 经 system-hint 注入替代冗长系统提示词
-3. **大上下文卸载**：大结果卸载 oss/tair（路径 id+预览），消费时 fileKey + 沙箱 shell 过滤取摘要
-
-### 工具调用：能力边界 + Schema 强约束 + 幂等
-
-Skill 注册声明能力范围，调用前校验防越权；JSON Schema 强约束结构层杜绝非法参数；**幂等键（UUID）**——任何有副作用写操作（改价/切品/发券）必须携带，框架层去重校验，杜绝「双切品」「双改价」；结构化错误码 + 自动修复。
-
-### 生命周期 Hook 五时机
-
-PreReasoning（注入上下文/按需加载记忆）→ PreToolCall（安全拦截/幂等键/审批判断）→ PostToolCall（交叉验证/Reducer 更新）→ PostReasoning（幻觉检测，防凭空编造商品信息）→ OnSessionEnd/LiveEnd（记忆回写）。设计哲学：不改模型推理循环，关键时机插钩子拦截/注入/记录。
-
-### 沙箱执行防护
-
-代码类执行统一沙箱：非特权用户 + 根文件系统只读；CPU ≤50%/进程 ≤64；网络默认禁出站仅最小化 allowlist；系统调用白名单；不注入宿主机环境变量；timeout 上限且 Agent 只能缩小不能放大；stdout/stderr 64KB 截断；system prompt 声明「沙箱输出不可信」；全量审计日志。
-
-### 五层纵深防御
-
-1. Prompt 边界硬编码（能力边界+行为禁区+Skill 预校验）
-2. Schema 强约束（强类型+幂等）
-3. **Approval 审批分层**（平衡安全与流畅：平台级红线框架层定义，Skill 级风险业务方声明，soft-gate/hard-gate 分层）
-4. 工具执行验证层（业务规则校验+结构化错误码）
-5. 执行审计记录（实时监控/事后复盘/模型优化/争议处理四用途）
-
-### DAG PlanEngine：从 ReAct 单步到 DAG 全局
-
-复合指令（开播提案→建直播间→同步历史商品→生成手卡→智能标题）用 DAG 全局规划替代 ReAct 单步局部最优。五目标：可恢复（三层 Checkpoint：每轮/每子任务/计划变更快照）、可观测（子任务独立 TraceID + Plan/SubTask/Tool Call 三级实时监控）、执行效率（无依赖并行）、成功率（**增量 Replan**——失败只重规划受影响后续节点 + Token 额度控制）、降低上下文漂移（执行进度外挂不占 Context Window + SubAgent 隔离 + Plan 快照持久化 + System-Hint 动态注入）。PlanEngine vs ReAct 对比（平均 7 步复杂 query，qwen3.7-max）：执行效率（工具执行冗余率/迭代轮次）和准确率（执行成功率/子任务覆盖率）均优于。
-
-### 评测体系
-
-Langfuse trace 可视化 + 离线（播前/播中/播后标注数据集 + 对抗样本验证五层防护）+ 在线（操作成功率/审批通过率/主播干预率/端到端延迟四指标）+ 主播满意度（1-5 分会话级主观信号）。
-
-## 记忆体系：Harness 思想重塑
-
-按「信任来源」三层：**L1 会话层**（主播主观行为和声明）、**L2 事实层**（客观信息补充）、**L3 行为层**（信任度评分）。冷启动基于 L2/L3 推荐，随使用交互反馈进化。
-
-### 记忆对账与信任度进化
-
-洞察：主播「说的」和「做的」不一致（说上引流款，实际 3 场都上氛围款且效果不错）。**记忆对账机制**：矛盾不粗暴覆盖，累积证据达阈值后 Agent 主动和主播确认——尊重 L1 主观意图同时基于客观事实进化，避免「AI 自作主张」破坏信任。**Decision Trace Log** 记录「问什么/Agent 答什么/主播选什么/最终效果」，把 Harness 评估接口（V）可观测数据反向喂给记忆系统。**trust_score** 播后逐条 trace 归因更新，反向决定输出形态：信任度高大胆建议，低则只摆数据不下结论。
-
-### 多因子遗忘
-
-比通用时间衰减精细：直播场景相关性（品类集中度/常播品类策略）+ 信息新鲜度分级（经验型慢衰减/波动型快衰减）+ 时间衰减 + 可信度因子（验证加成/证伪急剧降权/未验证基础衰减）。定时清理（采纳/召回次数 ≤ 阈值）+ 记忆冲突处理（LWW + 自定义优先级，或召回时呈现冲突主动确认）。
-
-## 与其他 Harness 实体的关系
-
-- **与 tdsql-harness-subtraction-l0-l3**：tdsql 讲「删什么」的减法方法论（L0-L3 归属/五道关卡），本文讲「建什么」的加法体系（六元组+八项实战）——互补视角
-- **与 agent-harness-6-runtime-patterns-sdb**：6 运行时模式是通用抽象，本文是直播场景完整落地实例（含记忆/安全/规划特色）
-- **与 tencentdb-agent-memory-hierarchical**：TencentDB 记忆治理侧重检索/晋升/冲突仲裁，本文增加「信任度演化+输出形态自适应」维度——记忆可靠性从正确性扩展到信任关系
-- **与 aws-china-enterprise-agent-evaluation-adlc**：AWS 评估方法论偏框架（两支柱/证据权重），本文给出直播场景的离在线指标落地点（操作成功率/审批通过率/主播干预率/端到端延迟）
-
-## 来源
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/taobao-live-anchor-agent-harness-engineering-chengfen-2026.md)
-
----
-
-## Ch02.022 LLM Wiki 架构
+## Ch02.016 LLM Wiki 架构
 
 > 📊 Level ⭐⭐ | 8.6KB | `entities/llm-wiki-architecture.md`
 
@@ -3414,9 +2534,9 @@ LLM Wiki 体现了一种范式转移：从"检索已有知识"到"构建可演�
 
 ---
 
-## Ch02.023 Skills Registry 公测开启：为企业打造私有的 Skill 管理中心
+## Ch02.017 Skills Registry 公测开启：为企业打造私有的 Skill 管理中心
 
-> 📊 Level ⭐⭐ | 8.4KB | `entities/skills-registry-公测开启为企业打造私有的-skill-管理中心.md`
+> 📊 Level ⭐⭐ | 8.5KB | `entities/skills-registry-公测开启为企业打造私有的-skill-管理中心.md`
 
 # Skills Registry 公测开启：为企业打造私有的 Skill 管理中心
 AI Registry 是阿里云微服务引擎 MSE 推出的全托管 AI 资产注册中心，是 Nacos AI Registry 能力的云服务 SaaS 版本。底层基于 Nacos 构建，客户端直接使用 Nacos SDK 接入，已经在用 Nacos 的团队可以零学习成本上手。它为 Prompt、Skill、Agent 等 AI 资产提供统一的注册、版本管理、发现与治理能力，帮助企业建立规范化的 AI 资产管理体系。  ** 01  **
@@ -3460,164 +2580,9 @@ Skills Registry 解决的四类困扰（散落各处、权限失控、外部 Ski
 
 ---
 
-## Ch02.024 Prompt Context Harness 三次演进
+## Ch02.018 Claude Design 系统提示词 → web-design-engineer Skill
 
-> 📊 Level ⭐⭐ | 8.1KB | `entities/prompt-context-harness-three-evolutions.md`
-
-# 从Prompt、Context到Harness，工程的三次进化与终局之战
-> 原文：[从Prompt、Context到Harness，工程的三次进化与终局之战](https://mp.weixin.qq.com/s/b1VL28GX5d17sKPfkSbIsw)
-**OpenAI 内部实验**：3-7人团队，5个月，AI生成近**100万行**生产级代码。全程没有工程师手写业务代码。
-
-## 相关实体
-- [Openclaw Prompt Context Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-prompt-context-harness.md)
-- [From Prompt To Harness Claude Official](https://github.com/QianJinGuo/wiki/blob/main/entities/from-prompt-to-harness-claude-official.md)
-- [Agentcore Managed Harness](https://github.com/QianJinGuo/wiki/blob/main/entities/agentcore-managed-harness.md)
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-framework.md)
-- [Hermes Agent Deep Dive Alibaba](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent-deep-dive-alibaba.md)
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/prompt-context-harness-three-evolutions.md)
-
-## 深度分析
-
-**Harness 衰变定律指向了 AI 工程化的核心矛盾：模型的快速进化正在压缩人工 Harness 的价值窗口。** 文章提出的「模型能力越强，所需的 Harness 越简单」这一洞察，在 2026 年的模型能力背景下具有特殊的工程含义。Claude 3.0 时代需要极严格的 Harness 约束——逐点执行、频繁重置上下文、大量硬编码检查——到了 Claude 3.5 时代许多规则自然消失。这个现象背后是一个更深层的问题：当模型能力提升的速度快于团队构建 Harness 的速度时，今天精心设计的 Harness 体系可能在 6-12 个月后成为冗余约束。这要求团队在设计 Harness 时必须区分「因模型能力不足而必需的约束」和「业务逻辑本身必需的约束」，前者是过渡性的、应该在模型升级后主动移除，后者则是持久的设计选择。
-
-**F-Harness 三角色模式揭示了多 Agent 协作中「权力分立」的工程价值。** Anthropic 发现的「AI 倾向于给自己的 Bug 打高分」这一「自恋问题」，本质上反映了一个通用认知偏见在 AI 系统中的具体表现。Planner-Generator-Evaluator 三角色架构的精髓在于：Evaluator 必须与 Generator 完全独立，不受生成偏见影响，才能有效履行审核职责。这一设计的工程价值远超单纯的分工：它本质上是把「构建者」和「验证者」分属到不同的激励体系和能力边界中，避免了单一 Agent 在自我生成和自我验证时的利益冲突。效率数据的对比极具说服力——单 Agent 模式 20 分钟、$9，但输出质量勉强可用；三角色模式 6 小时、$200，却是生产环境级别。20 倍时间代价和 22 倍成本代价换来的是质的飞跃，这说明在高质量 Agent 应用中，评估和验证的成本不是浪费，而是质量的必要代价。
-
-**上下文治理的「百行原则」揭示了 Agent 系统中最容易被忽视的信号衰减问题。** OpenAI 百万行代码实验中，「巨型 agent.md 导致 Agent 什么都抓不住重点」是一个极具代表性的工程失败模式。当 Agent 的上下文文档过长时，有效信息被淹没在噪声中，模型对关键指令的注意力被稀释——这本质上是注意力机制在系统设计层面的具象化表现。文章提出的「压缩至百行只保留索引」方案背后的原理是：与其让模型在长上下文中进行信息检索（这会消耗大量 token 且检索质量不稳定），不如在源头就强制执行严格的信息过滤，只保留索引和指向代码仓库的引用。这一原则在工程实践中具有广泛适用性：任何面向 Agent 的上下文文档，都应该先问「如果只能保留 100 行，哪些是绝对必要的？」然后果断丢弃其余内容。
-
-**「Human Steer, Agents Execute」标志着 AI 工程评价标准的根本性范式转移。** 文章列举的新旧衡量标准对比（从「每天能写多少行代码」到「Harness 能支撑多高的代码产出率」，从「能实现多复杂的业务逻辑」到「能设计多健壮的 Agent 系统」）揭示了一个深刻转变：个人生产力的衡量维度正在被系统性杠杆所取代。这个转变对工程团队的影响是深远的——在旧标准下，工程师的价值体现在「自己能写多少行」；在新标准下，工程师的价值体现在「能构建多完善的自动闭环机制」。这意味着技术面试、项目评估、团队配置等一系列工程管理实践都需要重新校准标准。那些仍然以代码产出量评估工程师生产力的团队，正在用工业时代的尺子测量知识经济时代的产出。
-
-**三层嵌套关系的澄清，对于防止 AI 工程中的「技术时尚病」具有重要价值。** 最大的误解——认为 Harness Engineering 最高级、前两个过时了——在 AI 圈子里有相当普遍的代表性。这种线性升级思维的误区在于，它把三个层次看成相互替代的关系，而实际上它们是相互依存的嵌套结构。没有好的 Prompt，Context 注入的信息无法被正确理解；没有好的 Context，Harness 的 Agent 在信息真空中瞎跑；没有好的 Harness，再好的 Prompt 和 Context 只是沙滩上的城堡。对于工程团队而言，这个嵌套结构意味着：任何一个层次的短板都会成为系统能力的上限。因此，资源的分配不应该追逐「最先进」的概念，而应该优先补足当前系统中最薄弱的层次。
-
-## 实践启示
-
-1. **建立 Harness 的「必要性审查」清单**：每次设计新的 Harness 约束时，明确标注该约束是「因模型能力不足而必需」（模型升级后应移除）还是「业务逻辑本身必需」（持久保留）。每季度回顾一次 Harness 体系，移除那些模型能力已经覆盖但仍然存在的冗余约束，避免 Harness 体系随时间累积变得臃肿低效。
-
-2. **在关键代码路径上强制引入独立的 Evaluator 角色**：当 Agent 输出涉及金额、权限、安全策略等高风险决策时，必须有一个与 Generator 完全独立的 Evaluator 进行独立验证。即使评估成本较高，也应该视为高风险场景的必要工程投入，而非可选项。可以先从规则驱动的 Evaluator 起步，逐步过渡到模型辅助的评估。
-
-3. **对所有面向 Agent 的上下文文档执行「百行压缩测试」**：在将技术规范、决策文档、API 文档接入 Agent 上下文之前，先问自己：如果只能保留 100 行，哪些是让 Agent 正确执行任务绝对必要的信息？超过这个阈值的文档都应该被压缩、切片或建立索引式引用，而非直接整块塞入上下文。
-
-4. **重新校准工程团队的能力评估标准**：从「代码产出量」向「系统杠杆率」迁移。具体的评估维度应包括：能否设计有效的验证闭环、能否构建可靠的 Agent 协作架构、能否建立可持续的 Harness 演进机制。在招聘、晋升和技术方案评审中，将系统设计能力置于个人编码速度之上。
-
-5. **每次系统能力出现瓶颈时，首先诊断是哪一层的问题**：Agent 系统表现不佳时，团队容易第一时间怀疑 Prompt 不够好、或者模型能力不够强，而实际上很多问题的根因在 Context 层（上下文信息错误或缺失）或 Harness 层（缺少有效的验证和反馈机制）。建立系统性的根因诊断流程，先确认是哪一层的问题再行动，可以避免大量的无效 Prompt 调优和模型切换成本。
-
----
-
-## Ch02.025 从Prompt、Context到Harness，工程的三次进化与终局之战
-
-> 📊 Level ⭐⭐ | 7.7KB | `entities/prompt-context-harness-three-evolutions-tencent.md`
-
-# 从Prompt、Context到Harness，工程的三次进化与终局之战
-
-## 相关实体
-
-- [滴滴 ibg 智能客服质检系统：3 管线（意图 86% / 合规 90%+ / voc）+ 企业 llm 落地方法论](https://github.com/QianJinGuo/wiki/blob/main/entities/didi-ibg-customer-experience-llm-quality-inspection-3-pipelines.md)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/prompt-context-harness-three-evolutions-tencent.md)
-
-## 深度分析
-
-从Prompt、Context到Harness，工程的三次进化与终局之战 涉及agent领域的核心技术议题。
-### 核心观点
-1. # 从Prompt、Context到Harness，工程的三次进化与终局之战
-OpenAI 内部 3-7 人小团队，在五个月内让 AI 生成了将近 100 万行生产级别代码。
-2. 全程没有一个工程师亲手写过一行业务逻辑代码。
-3. 三个关键概念：Prompt Engineering、Context Engineering、Harness Engineering。
-4. ## 第一进化：Prompt Engineering
-### 核心本质
-LLM 底层逻辑是一个极其擅长续写的系统。
-5. 给它一段输入，它预测接下来最有可能出现的内容，不断生成，直到任务完成。
-
-### 内容结构
-- 从Prompt、Context到Harness，工程的三次进化与终局之战
-- 第一进化：Prompt Engineering
-- 核心本质
-- 武器库
-- 繁荣与衰退
-- 第二进化：Context Engineering
-- 核心比喻：失忆症患者困境
-- 上下文窗口的层次
-
-### 技术要点
-
-- **agent架构**: 本文在agent方向提出的设计理念与实现路径
-- **工程挑战**: 实际落地中面临的关键问题与应对策略
-- **code趋势**: 相关技术演进方向与新兴范式
-### 关联实体
-
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
-- [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](https://github.com/QianJinGuo/wiki/blob/main/entities/深入理解-claude-code-源码中的-agent-harness-构建之道.md)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](https://github.com/QianJinGuo/wiki/blob/main/entities/ethan-he-cosmos-grok-imagine-latent-space-video-agent-20260606.md)
-
-## 实践启示
-1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率
-2. **技术选型**: 根据场景选择合适的技术栈，避免过度设计或盲目追新
-3. **持续迭代**: 建立数据驱动的反馈闭环，持续优化系统表现
-4. **风险管控**: 引入新技术需评估对现有系统稳定性的影响，做好降级预案
-
-## [MERGE 新增] 2024→2026 范式图谱：旧零件如何被新底座吸收
-
-*新增来源：raw/articles/agent-paradigm-2024-to-2026-skills-harness-loop-parsevolve*
-
-### 演化主线
-
-完整的演化路径：**Prompt Engineering → Context Engineering → Harness Engineering → Loop Engineering**。每一阶段并不取代前一阶段，而是将其"吃进去"作为实现细节。
-
-### 旧概念与新底座映射
-
-| 2024 零件 | 解决的问题 | 2026 如何被吸收 |
-|-----------|-----------|----------------|
-| **RAG** | 模型不知道你的私有知识 | 降级为 Agent 手里一个按需调用的检索工具（如 Claude Code 用 grep 而非 RAG 检索代码库）|
-| **ReAct** | 模型只会一次性作答 | 变成 Loop 内部的一圈"心跳"，包进更大的自驱循环中 |
-| **Function Call** | 模型碰不到真实世界 | 标准化为 MCP 协议，成为工具调用的统一接口 |
-| **Prompt Engineering** | 模型不理解你的意图 | 变成 Context Engineering 的一个子集 |
-
-### 三个新底座
-
-1. **Skills（技能底座）** — 接管"知识怎么给"。渐进式披露：只给模型看能力目录，用了才现取。技能图谱正在取代向量检索成为默认底座。
-
-2. **Harness（驾驭底座）** — 接管"怎么不让模型跑偏"。套上工具、记忆、权限边界、反馈回路、出错恢复，让长链路运行可控。公式：Agent = 模型 + Harness。注意：Harness 策略会随每次模型升级被重新定价。
-
-3. **Loop（循环底座）** — 接管"谁来按回车"。你从"亲自接电话的接线员"升级为"设计工单系统的人"。设计那个替你给 agent 打 prompt 的循环。ReAct 被包进这个更大的自动循环里。
-
-### 核心洞察
-
-旧地图没死，只是颗粒度不对了。旧地图是"零件级"（一个问题配一个零件），新地图是"系统级"（三个底座管三大类问题）。零件会被不断重新打包，但"知识、稳定、自驱"这三个底座要解决的问题会一直在。
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-paradigm-2024-to-2026-skills-harness-loop-parsevolve.md)
-
-## 补充：企业级实战案例（千问AI平台 2026-07-20）
-
-千问AI平台储旭(槿柏)提供了该演进路径的企业级实战案例，从大模型四个结构性约束（上下文有效容量、数据搬运失真、注意力自恶化、无状态）出发，详述了从 Prompt→Context→Harness 每个阶段的落地细节。
-
-### 结构性约束的具体表现
-
-| 约束 | 表现 | 工程方案 |
-|------|------|----------|
-| 上下文容量 ≠ 有效容量 | 128K 窗口 70% 是噪音数据 | 渐进式披露 + 信息生命周期管理 |
-| 数据搬运失真 | LLM 搬运 UUID 时截断/混淆 | parameterBindings 声明式绑定 |
-| 注意力自恶化循环 | 上下文膨胀→参数错误→更多重试 | 逐步骤 dump 上下文诊断 |
-| 无状态 | 跨执行遗忘，重复犯错 | 信息生命周期（产生→压缩→索引→恢复） |
-
-### 核心工程原则
-
-> 不要用更大的模型掩盖工程层面的问题。让 LLM 做它擅长的事（理解、规划、推理），让系统做它擅长的事（数据搬运、格式转换、精确传递）。
-
-### 五层 Harness 架构
-
-1. 原始证据层 → 2. 状态管理层 → 3. 技能层 → 4. 治理层 → 5. 运行时层
-
-每层解决前一阶段遇到的天花板，与本文"Prompt→Context→Harness"的三次进化叙事一致。
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/prompt-to-harness-enterprise-agent-evolution-qwen-ai-2026-07-20.md)
-
----
-
-## Ch02.026 Claude Design 系统提示词 → web-design-engineer Skill
-
-> 📊 Level ⭐⭐ | 7.6KB | `entities/claude-design-skill.md`
+> 📊 Level ⭐⭐ | 7.7KB | `entities/claude-design-skill.md`
 
 ## 核心命题
 Claude Design 的核心竞争力 = 50% Opus 4.7 模型能力 + 50% 精心设计的 Prompt Engineering。将这套 420 行系统提示词的设计理念提炼成可复用的 web-design-engineer Skill。
@@ -3689,148 +2654,7 @@ Claude Design 的验证机制包含一个关键设计：调用 `fork_verifier_ag
 
 ---
 
-## Ch02.027 腾讯 AI Coding 深水区 — 事实vs判断尺子与提示词→框架→runtime 下沉方法论
-
-> 📊 Level ⭐⭐ | 7.6KB | `entities/tencent-ai-coding-deep-water-fact-vs-judgment-2026.md`
-
-# 腾讯 AI Coding 深水区 — 事实vs判断尺子与提示词→框架→runtime 下沉方法论
-
-## 核心命题：事实 vs 判断尺子
-
-"手上这件事，是事实，还是判断？是事实就交给机器，别让人去核对，也别听 AI 声明；是判断就留给人，别指望机制替他拍板。"这是贯穿全文的尺子，也是 AI Coding 深水区里"编码让位、人退到哪里"的回答——人退到判断、把取事实的活交给机器。
-
-背景实证：纯 AI 交付的内部平台（对照组）——三个月、七个服务、三十多万行代码、人一行没写（16万行生产+11万行测试+8万多行前端），设计文档全由 AI 落笔；但真实业务是百万行 Lua、自研框架、模型几乎没见过的深水区。
-
-## 核心洞察
-
-### 人的工作量没减少，只是从落笔挪到拍板
-读的东西从"读代码"变"读方案/结论/证据"，拍板从"这段怎么写"变"这条路走不走/这个失败算不算问题"。核心从来不是 spec 载体，而是产出它过程中被迫想清楚的事（brainstorming）——动手前的 spec 用完可扔，事后沉淀的设计说明得留着。
-
-### AI 犯错是规模问题不是概率问题
-错误绝对数量由累积量决定，不随单次准确率降低。模型越强产出越多越快，人这端上限不动，缺口更大——"模型越强 harness 就该越薄"是想当然。有一类错 AI 特别容易犯：**失败不可见**（AI 交付功能的能力明显强于交付"让失败可见"的纪律）。
-
-## 方法论一：提示词的尽头是基础设施
-提示词边际收益会耗尽，解法在 agent 底下的框架层——提示词只能"叮嘱"，框架可以"取消这个错误的存在"。
-- 声明式 mock + 自动还原（像自动 GC）消掉一整类错误，把 AI 注意力还给主任务。
-- 超时报错时框架自动返回准确原因+链路分析包（反向探测分类+下一步动作+代码执行路径）——**报错通道本身就是提示词注入通道，"最好的提示词是恰到好处的反馈"**。
-- **两种"厚"别混**：写提示词里越厚模型越笨，写进框架越厚越省心主任务越强。打补丁档（"严禁 mock ss"）尤其不要写——有限规则覆盖无限问题。
-- 下沉判断标准：**判据是确定的事实才能做硬门禁，判据是代理指标最多做提醒**（路径前缀=硬拦截；"读过编码规范"=代理指标降警告）。信号要能从外部取到，不能靠 AI 自述（防假测试：抄内部逻辑重算再断言，断言全过覆盖率零，只有从外面看"被测函数行一次没执行"戳得穿）。门禁误报代价高（逼人和 AI 为过检查写更差代码）。
-
-## 方法论二：编排的尽头是 runtime（runtime 主权）
-workflow-engine（状态机固定流程）换来稳定但子 agent 反复探索/不透明/主 agent 闲置。agent teams 实验（产物驱动状态、七角色、审查点对点）踩坑：模型不认机制、中断活锁（不催正在工作的 agent 只认 DONE/BLOCKED=PROTOCOL-A）、成员生命周期靠不住（一切以磁盘产物为准）、机制反直觉。完整流程太脆没推广，但熬出 agent-teams skill（纪律全是"不信声明，信事实"）。收窄的 /module-test（spec 自带答案+双成员点对点）跑稳。
-
-三起黑盒事故证明 agent loop 每环节（上下文压缩/工具参数拼接/限额/遥测）必须可审计可干预：①Claude Code 遥测投毒；②CLI 写长中文 UTF-8 损坏（按字节切断多字节字符）；③压缩 bug 11 小时空转（压缩摘要误把"生成摘要"当用户请求+阈值卡 100K，203 轮压缩=203 次从头再来）。→ **自建 agent runtime**。选型的真问题不是"选哪个产品"而是**主权的边界划在哪**（插件化能划到哪一层）；审计底线是上下文注入/遥测能按来源回看（append-only 会话日志）。决策：pi agent 先动（最小 harness + 上下文治理压伤口）、DeepSeek Harness 跟进（"一切皆插件"，元框架只管装卸，但"可预期"要自己验）。
-
-## 方法论三：分数不可信，问题在题集（评测）
-- **撞墙**：107 天 17 万行评测平台只留下两个分数（69.9/51.9）后被删。四问题：判据不能执行（主指标交给 Cohen's Kappa 0.10-0.21 的 LLM 裁判）、判分器自己有 bug（同一日志 0 分 vs 98 分差 98 分）、把流水线维持住是份全职工作、卷子追不上考生。教训：**值钱的是想清楚，不是承载它的载体（文档如此，平台也如此）**；判据能不能执行、结论能不能变成一次提交才重要。立了纪律：一行平台代码都不写——只有题集/配置/脚本/跑数记录。
-- **V1 卡死**：挖空回填测评序——评分器量错东西（按文件粒度）+ 单次跑数追噪声。**错误的评测信号比没有更危险**。
-- **V2**：业界调研（50+ 论文）后用业界尺子量自己方案——唯一自研的挖空回填塌掉（人造缺陷普遍比真实缺陷好发现）。**判据必须是执行结果，不能是合成清单**。主指标落**变异击杀率**（五道闸门：有产出→lint→能跑→连跑三次稳定→杀死多少变异体），因为覆盖率能靠无断言测试刷出来（GPT-4o 覆盖率 35.2% 变异分仅 18.8%），杀变异体必须有真断言。变异体算子取自代码评审 checklist（真实 bug 分类学）。
-
-## 方法论四/五：人退到决策点 + 把判据变成流程
-机器提供事实的难点不在"人做判断"这一半，而在**机器给出的那个事实本身是不是真的——提供事实的机器自己也要被验证**。结尾哲学：模型每季度变强，提示词/编排/评测数字都会随之作废（**它们是流**）；但把问题想清楚的过程、运维纪律、runtime 主权判断、框架层能力、验收杠杆、评测题集、治理判据依然值钱（**它们是常**）——"做 AI 工程，就是在湍急的流里，找到并守住那些常的东西"。
-
-## 相关实体
-- → [腾讯 Token 优化 Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/tencent-token-optimization-agent-architecture.md) — 同团队前作（workflow-engine 编排）
-- → [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 边界约束与下沉
-- → [去哪儿 AI Coding 大型重构](https://github.com/QianJinGuo/wiki/blob/main/entities/qunar-ai-coding-large-core-system-refactor-2026.md) — 同类 AI 驱动工程化实践
-- → [Harness 自进化实证批判](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rethinking-harness-evolution-evaluation-mozhi-space-2026.md) — 评测与自进化边界（互为参照）
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-ai-coding-deep-water-fact-vs-judgment-2026.md)
-
----
-
-## Ch02.028 Agent Skill 编写指南
-
-> 📊 Level ⭐⭐ | 7.0KB | `entities/agent-skill-writing.md`
-
-## Overview
-Agent Skill = **岗位职责说明书 + 操作SOP + 避坑指南**的合集。让通用大模型秒变领域专家，不改变模型本身，通过结构化上下文注入实现。
-核心设计哲学：**渐进式披露**（Progressive Disclosure）——AI 的上下文窗口不会被所有 Skill 细节塞满，只有在需要时才加载必要信息。
-
-## Skill 目录结构
-```
-my-skill/
-├── SKILL.md         # 必须：YAML元数据 + Markdown正文
-├── scripts/         # 可选：可执行脚本（Python/Bash等）
-├── references/       # 可选：参考文档（API说明、详细指南等）
-└── assets/          # 可选：静态资源（模板、图片等）
-```
-
-## 渐进式披露三阶段
-| 阶段 | AI 行为 | 对应比喻 |
-|------|---------|---------|
-| 发现 | 只加载 name + description，轻量判断是否匹配 | 外卖骑手看订单概要 |
-| 激活 | 加载完整 SKILL.md 到上下文 | 骑手接单看详情 |
-| 执行 | 按需加载 references/ 或执行 scripts/ | 看地图/联系客户 |
-
-## SKILL.md 格式
-### YAML 元数据字段
-```yaml
----
-name: pdf-processing
-description: 从PDF中提取文本和表格、填写表单、合并文件。当用户需要处理PDF文档时使用此技能。
-license: Apache-2.0
-compatibility: "Python 3.10+, uv 包管理器"
-metadata:
-  author: your-team
-  version: "1.0"
----
-```
-| 字段 | 必须 | 说明 |
-|------|------|------|
-| name | 是 | 小写字母、数字、连字符，不超过64字符，必须与父目录名一致 |
-| description | 是 | 核心！告诉Agent何时激活，最多1024字符，要包含关键词 |
-| license | 否 | 许可证 |
-| compatibility | 否 | 环境要求 |
-| metadata | 否 | 自定义键值对 |
-| allowed-tools | 否 | 实验性，预批准工具列表 |
-> ⚠️ **90%的人踩的坑**：description 不准确或缺少关键词 → Agent 根本不激活 Skill。
-
-## 子页面
-- [高质量编写规范](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing-practices.md) — 6 条核心编写原则
-- [评估与迭代](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing-evaluation.md) — 触发测试、功能测试、基线对比方法论
-- [进阶模式与治理](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-skill-writing-advanced.md) — Anthropic 5 种进阶模式、安装部署、YAML 完整规范、实战调试案例
-
-## Related
-- [Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-agent.md) — Skill 机制是 Hermes 的核心特性之一
-- [OpenClaw 架构解析](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md) — OpenClaw 内置 Skill 系统实现
-- [MemOS Hermes 插件](https://github.com/QianJinGuo/wiki/blob/main/entities/memos-hermes-plugin.md) — MemOS 的 Skill 管理能力
-- [原始文章存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-skill-writing-guide.md)
-- [Skill 设计模式](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-design-patterns.md) — 5种设计模式系统指南
-
-## 深度分析
-### 渐进式披露的工程价值
-渐进式披露（Progressive Disclosure）不只是一个 UX 模式，更是一种**上下文经济学**。当 Agent 需要在数千个 Skill 中做选择时，每次都加载完整文档会迅速耗尽上下文窗口。分阶段加载机制让 AI 在"发现阶段"只获取最小线索，在"激活阶段"才注入完整指令，在"执行阶段"才调用外部资源。这种分层策略本质上是在用空间换时间和精度。
-
-### Description 字段的决定性作用
-文章指出"90%的人踩的坑"集中在 description 字段，其核心问题在于：**Agent 的激活逻辑本质上是语义匹配**，而不是精确查找。如果 description 缺少领域关键词，Agent 的路由层就无法将用户请求正确路由到这个 Skill。这意味着 description 的编写质量直接决定了 Skill 是否被触发。一个好的 description 需要包含触发场景的多个变体（同义词、场景描述、用户可能的表达方式），而不仅仅是功能堆砌。
-
-### 评估方法论的核心逻辑
-对比评估（with_skill vs without_skill）的设计体现了**增量价值度量**的思想。Skill 的价值不在于它做了什么，而在于它相比基线模型带来了什么提升。通过 delta 指标（pass_rate、time_seconds、tokens）可以量化 Skill 对最终效果的影响。但关键在于：断言设计必须可验证、可观察、可计数——模糊的评估标准只会产生噪音而非信号。
-
-### Agentic 脚本的设计约束
-脚本设计规范中，"避免交互式提示"被作为硬性要求提出，这是因为 Agent 运行在非交互式 Shell 环境中。这揭示了一个核心原则：**工具的调用方式必须与执行环境匹配**。其他约束（--help、幂等性、空运行支持、有意义的退出码）都服务于同一个目标：让 AI 能够可靠地预测和验证脚本行为，而不是在运行时遭遇意外。
-
-## 实践启示
-### 从最小可用 Skill 开始
-不要试图一开始就设计一个"完美"的 Skill。正确的姿势是：从真实任务中提炼，从 2-3 个测试用例开始。先让 Skill 能工作，再通过评估结果迭代优化。过于宏大的设计只会让 Skill 变得臃肿且难以调试。
-
-### Description 编写要"多触点"
-在编写 description 时，需要考虑用户会用哪些自然语言表达来请求这个功能。建议列出至少 5-10 种不同的触发方式，包括正式请求、口语化表达、错误尝试场景等。例如，"PDF处理"的 description 不仅要写"处理PDF文档"，还应该包含"提取PDF内容"、"合并PDF文件"、"填写PDF表单"等具体场景。
-
-### 用评估驱动迭代
-建立**量化反馈闭环**：每次修改 Skill 后，运行评估对比 with_skill 和 without_skill 的差异。重点关注"带 Skill 才通过"的断言，这些是 Skill 真正产生价值的地方。如果某些断言在两种配置下都通过，说明这不是 Skill 的增量贡献，可以考虑移除。
-
-### Scripts 作为 Skill 的延伸
-当 Skill 中的描述性知识不足以完成复杂任务时，应该将重复性操作封装为 scripts。但必须遵循 agentic 脚本规范：非交互式、有 --help、支持 --dry-run、幂等性、结构化输出。这些约束不是负担，而是让 AI 能够可靠调用脚本的信任基础设施。
-## 相关实体
-
-- [gene/gep — evomap×清华 提出的「策略基因」经验对象框架（arxiv 2604.15097）](https://github.com/QianJinGuo/wiki/blob/main/entities/gene-gep-evomap-qinghua-strategy-genes-arxiv-2604-15097-2026.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
-
----
-
-## Ch02.029 System Prompt vs Post-Training：行为约束该写还是该训？
+## Ch02.019 System Prompt vs Post-Training：行为约束该写还是该训？
 
 > 📊 Level ⭐⭐ | 6.9KB | `entities/system-prompt-vs-post-training-behavioral-constraints-2026.md`
 
@@ -3885,7 +2709,7 @@ System Prompt 与 Post-training 是两种截然不同的"行为约束注入方�
 
 ---
 
-## Ch02.030 深度解析 Hermes Agent 如何实现自进化及其 Prompt / Context / Harness 的设计实践
+## Ch02.020 深度解析 Hermes Agent 如何实现自进化及其 Prompt / Context / Harness 的设计实践
 
 > 📊 Level ⭐⭐ | 6.8KB | `entities/agent-tools-research.md`
 
@@ -4002,7 +2826,7 @@ Hermes Agent 的 Skill 系统具有潜在的网络效应：
 
 ---
 
-## Ch02.031 Claude Code Prompt 与上下文 Harness 设计
+## Ch02.021 Claude Code Prompt 与上下文 Harness 设计
 
 > 📊 Level ⭐⭐ | 6.7KB | `entities/claude-code-prompt-context-harness.md`
 
@@ -4048,7 +2872,98 @@ Harness Engineering 的 Permission Engine 三行为模型（Allow/Deny/Ask）是
 
 ---
 
-## Ch02.032 深度解析 Hermes Agent 如何实现\"自进化\"及其 Prompt / Context / Harness 的设计实践
+## Ch02.022 从Prompt、Context到Harness，工程的三次进化与终局之战
+
+> 📊 Level ⭐⭐ | 6.6KB | `entities/prompt-context-harness-three-evolutions-tencent.md`
+
+# 从Prompt、Context到Harness，工程的三次进化与终局之战
+
+## 相关实体
+
+- [滴滴 ibg 智能客服质检系统：3 管线（意图 86% / 合规 90%+ / voc）+ 企业 llm 落地方法论](https://github.com/QianJinGuo/wiki/blob/main/entities/didi-ibg-customer-experience-llm-quality-inspection-3-pipelines.md)
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/prompt-context-harness-three-evolutions-tencent.md)
+
+## 深度分析
+
+从Prompt、Context到Harness，工程的三次进化与终局之战 涉及agent领域的核心技术议题。
+### 核心观点
+1. # 从Prompt、Context到Harness，工程的三次进化与终局之战
+OpenAI 内部 3-7 人小团队，在五个月内让 AI 生成了将近 100 万行生产级别代码。
+2. 全程没有一个工程师亲手写过一行业务逻辑代码。
+3. 三个关键概念：Prompt Engineering、Context Engineering、Harness Engineering。
+4. ## 第一进化：Prompt Engineering
+### 核心本质
+LLM 底层逻辑是一个极其擅长续写的系统。
+5. 给它一段输入，它预测接下来最有可能出现的内容，不断生成，直到任务完成。
+
+### 关联实体
+
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
+- [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](https://github.com/QianJinGuo/wiki/blob/main/entities/深入理解-claude-code-源码中的-agent-harness-构建之道.md)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](https://github.com/QianJinGuo/wiki/blob/main/entities/ethan-he-cosmos-grok-imagine-latent-space-video-agent-20260606.md)
+
+## [MERGE 新增] 2024→2026 范式图谱：旧零件如何被新底座吸收
+
+*新增来源：raw/articles/agent-paradigm-2024-to-2026-skills-harness-loop-parsevolve*
+
+### 演化主线
+
+完整的演化路径：**Prompt Engineering → Context Engineering → Harness Engineering → Loop Engineering**。每一阶段并不取代前一阶段，而是将其"吃进去"作为实现细节。
+
+### 旧概念与新底座映射
+
+| 2024 零件 | 解决的问题 | 2026 如何被吸收 |
+|-----------|-----------|----------------|
+| **RAG** | 模型不知道你的私有知识 | 降级为 Agent 手里一个按需调用的检索工具（如 Claude Code 用 grep 而非 RAG 检索代码库）|
+| **ReAct** | 模型只会一次性作答 | 变成 Loop 内部的一圈"心跳"，包进更大的自驱循环中 |
+| **Function Call** | 模型碰不到真实世界 | 标准化为 MCP 协议，成为工具调用的统一接口 |
+| **Prompt Engineering** | 模型不理解你的意图 | 变成 Context Engineering 的一个子集 |
+
+### 三个新底座
+
+1. **Skills（技能底座）** — 接管"知识怎么给"。渐进式披露：只给模型看能力目录，用了才现取。技能图谱正在取代向量检索成为默认底座。
+
+2. **Harness（驾驭底座）** — 接管"怎么不让模型跑偏"。套上工具、记忆、权限边界、反馈回路、出错恢复，让长链路运行可控。公式：Agent = 模型 + Harness。注意：Harness 策略会随每次模型升级被重新定价。
+
+3. **Loop（循环底座）** — 接管"谁来按回车"。你从"亲自接电话的接线员"升级为"设计工单系统的人"。设计那个替你给 agent 打 prompt 的循环。ReAct 被包进这个更大的自动循环里。
+
+### 核心洞察
+
+旧地图没死，只是颗粒度不对了。旧地图是"零件级"（一个问题配一个零件），新地图是"系统级"（三个底座管三大类问题）。零件会被不断重新打包，但"知识、稳定、自驱"这三个底座要解决的问题会一直在。
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-paradigm-2024-to-2026-skills-harness-loop-parsevolve.md)
+
+## 补充：企业级实战案例（千问AI平台 2026-07-20）
+
+千问AI平台储旭(槿柏)提供了该演进路径的企业级实战案例，从大模型四个结构性约束（上下文有效容量、数据搬运失真、注意力自恶化、无状态）出发，详述了从 Prompt→Context→Harness 每个阶段的落地细节。
+
+### 结构性约束的具体表现
+
+| 约束 | 表现 | 工程方案 |
+|------|------|----------|
+| 上下文容量 ≠ 有效容量 | 128K 窗口 70% 是噪音数据 | 渐进式披露 + 信息生命周期管理 |
+| 数据搬运失真 | LLM 搬运 UUID 时截断/混淆 | parameterBindings 声明式绑定 |
+| 注意力自恶化循环 | 上下文膨胀→参数错误→更多重试 | 逐步骤 dump 上下文诊断 |
+| 无状态 | 跨执行遗忘，重复犯错 | 信息生命周期（产生→压缩→索引→恢复） |
+
+### 核心工程原则
+
+> 不要用更大的模型掩盖工程层面的问题。让 LLM 做它擅长的事（理解、规划、推理），让系统做它擅长的事（数据搬运、格式转换、精确传递）。
+
+### 五层 Harness 架构
+
+1. 原始证据层 → 2. 状态管理层 → 3. 技能层 → 4. 治理层 → 5. 运行时层
+
+每层解决前一阶段遇到的天花板，与本文"Prompt→Context→Harness"的三次进化叙事一致。
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/prompt-to-harness-enterprise-agent-evolution-qwen-ai-2026-07-20.md)
+
+---
+
+## Ch02.023 深度解析 Hermes Agent 如何实现\"自进化\"及其 Prompt / Context / Harness 的设计实践
 
 > 📊 Level ⭐⭐ | 6.0KB | `entities/hermes-agent-deep-dive-alibaba.md`
 
@@ -4094,9 +3009,9 @@ Harness Engineering层面的全生命周期Hook机制（14种错误分类与自�
 
 ---
 
-## Ch02.033 阿里巴巴 & 蚂蚁 LoongSuite GenAI 可观测语义规范：从统一数据语言到规模化落地
+## Ch02.024 阿里巴巴 & 蚂蚁 LoongSuite GenAI 可观测语义规范：从统一数据语言到规模化落地
 
-> 📊 Level ⭐⭐ | 5.9KB | `entities/loongsuite-genai-semconv-alibaba.md`
+> 📊 Level ⭐⭐ | 6.0KB | `entities/loongsuite-genai-semconv-alibaba.md`
 
 # 阿里巴巴 & 蚂蚁 LoongSuite GenAI 可观测语义规范：从统一数据语言到规模化落地
 > 原创 铖朴、瑜棕、顺岭 阿里云开发者 2026年5月12日
@@ -4140,7 +3055,7 @@ GenAI Utils 提供的统一 Invocation 数据类 + Context Manager 编程模型�
 
 ---
 
-## Ch02.034 AINMM：存量生产级工程向 AI Native 演进的五级成熟度模型
+## Ch02.025 AINMM：存量生产级工程向 AI Native 演进的五级成熟度模型
 
 > 📊 Level ⭐⭐ | 5.9KB | `entities/ainmm-ai-native-maturity-model.md`
 
@@ -4219,7 +3134,7 @@ AINMM 继承 CMMI 的"逐级递进、每级是下一级基础"原则——ML1 �
 
 ---
 
-## Ch02.035 新程Alpha认知模型：4B参数端侧部署，群体智能以小搏大比肩GPT-5.4
+## Ch02.026 新程Alpha认知模型：4B参数端侧部署，群体智能以小搏大比肩GPT-5.4
 
 > 📊 Level ⭐⭐ | 5.4KB | `entities/nextie-alpha-cognitive-model-4b-on-device.md`
 
@@ -4282,9 +3197,9 @@ Proactive Agent长期受限于推理成本——7×24运行千亿参数模型的
 
 ---
 
-## Ch02.036 AI 导购在 vivo 官网的落地实践
+## Ch02.027 AI 导购在 vivo 官网的落地实践
 
-> 📊 Level ⭐⭐ | 5.1KB | `entities/vivo-ai-sales-guide-ecommerce-agent.md`
+> 📊 Level ⭐⭐ | 5.2KB | `entities/vivo-ai-sales-guide-ecommerce-agent.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vivo-ai-sales-guide-ecommerce-agent.md)
 
@@ -4344,7 +3259,7 @@ vivo AI 导购项目的核心工程价值在于**小模型 + 大模型协同**�
 
 ---
 
-## Ch02.037 Skills 重新定义 Agent 喂知识：从'提前给'到'按需取'的范式反转
+## Ch02.028 Skills 重新定义 Agent 喂知识：从'提前给'到'按需取'的范式反转
 
 > 📊 Level ⭐⭐ | 4.4KB | `entities/skills-redefine-agent-knowledge-allen-tang-2026.md`
 
@@ -4402,72 +3317,7 @@ Anthropic 重新定义的不是"知识的格式"，是**"知识被调用的时�
 
 ---
 
-## Ch02.038 vivo LLM 游戏推荐表达层：从\"推什么\"到\"怎么选\
-
-> 📊 Level ⭐⭐ | 4.1KB | `entities/vivo-llm-game-recommendation-expression-decision-layer.md`
-
-# vivo LLM 游戏推荐表达层：从"推什么"到"怎么选"
-
-> vivo 互联网产品团队在生产级游戏分发场景中，用 LLM 补上推荐系统的"最后一公里"——不改排序，通过 LLM 理解游戏、表达差异，帮用户走完从"给结果"到"帮决策"的最后一步。
-
-## 背景
-
-推荐系统擅长回答"推什么"，用户却卡在"怎么选"。尤其游戏场景决策成本高（下载试玩需投入时间、可能的付费、社交关系），用户需要先看懂差异才愿意尝试。排序的边际收益递减，真正没被接住的是"看懂差异、把选择走完"。
-
-## 方法：探索→收敛双阶段
-
-**第一阶段（模型探索）**：用大模型见多识广的优势自由拆解游戏——玩家为什么持续玩、爽感从哪来、成长循环怎么转、付费被什么驱动。这一步要的不是标准答案，而是尽可能多的"惊喜"和"边界"。
-
-**第二阶段（人工收敛）**：把探索里反复出现、真正能解释差异的维度挑出来，定成闭集 schema，再让模型在体系内做填空。**仅保留同时满足可解释、可比较、可复用、有决策价值的维度。**
-
-> 自由生成是大模型的能力上限，稳定输出得靠约束。
-
-## 核心架构：品类配置三层解耦
-
-```
-品类配置 = core_dimensions + expression_schema + highlight_priority
-```
-
-| 模块 | 职责 | 设计原则 |
-|------|------|---------|
-| **core_dimensions** | 比什么 | 跨品类对齐比较维度（成长驱动、刷宝驱动、爽感刺激……） |
-| **expression_schema** | 怎么说 | 预定义表达模板，把描述格式钉死 |
-| **highlight_priority** | 谁上卡片 | 按品类玩家最先想知道什么人工排序 |
-
-新品类原则上加一行配置、不动代码。
-
-## 五条可复用工程经验
-
-1. **探索和生产用模型的两副面孔** — 先发散探索再收敛执行，不可混用
-2. **模型的原始输出不算接口** — normalize 层（闭集 schema + 缺字段回落 + 脏值过滤）是进生产的前提
-3. **Prompt 的结构决定理解的深度** — 喂给模型的结构就是它输出的上界
-4. **把"比什么""怎么说""谁上卡片"解耦** — 三件事塞一个 prompt 一把出，跨品类必飘
-5. **让能力不绑上下文才能复用** — 无状态、不绑定调用场景的 LLM 插件
-
-## 与现有知识体系的关系
-
-- **normalize 层是 Harness 工程的具体实现** — 与 腾讯 Token 优化 的"约束金字塔"理念一致：模型的原始输出不做接口，外层确定性结构才是接口
-- **探索→收敛的工作流** 与 improving-agents-data-mining-perspective-langchain 的 Agent 迭代思路相通：先发散再收敛，先探索再约束
-- **AI 把"系统结构"变成产品的一部分** — 印证了 [Agent Vs Workflow Control Continuum Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-vs-workflow-control-continuum-framework.md) 中控制权漂移的趋势：工程实现与产品设计的边界正在模糊
-- **LLM normalize 层** 对应 Harness 工程中"评估器"的工程化落地——非确定性 LLM 输出的结构化封装
-
-## 局限
-
-- 当前产出仍属验证阶段，部分场景正在接入但未全量上线
-- 品类配置依赖人工维护（但已做到"加一行配置、不动代码"）
-- 准确性的保障依赖 normalize 兜底而非模型自身可靠性
-
----
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vivo-llm-game-recommendation-expression-decision-layer.md)
-
----
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-
----
-
-## Ch02.039 Enrich your datasets with business context
+## Ch02.029 Enrich your datasets with business context
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/enrich-your-datasets-with-business-context-migrating-from-le.md`
 
@@ -4499,9 +3349,9 @@ Legacy Topics provided the initial approach to adding business context to datase
 
 ---
 
-## Ch02.040 PROJECT_ANALYSIS.md — PromptQueue + OpenGorilla 项目全景分析
+## Ch02.030 PROJECT_ANALYSIS.md — PromptQueue + OpenGorilla 项目全景分析
 
-> 📊 Level ⭐⭐ | 3.6KB | `entities/promptqueue-opengorilla-project-analysis-ljguo.md`
+> 📊 Level ⭐⭐ | 2.5KB | `entities/promptqueue-opengorilla-project-analysis-ljguo.md`
 
 # PROJECT_ANALYSIS.md — PromptQueue + OpenGorilla 项目全景分析
 
@@ -4525,21 +3375,6 @@ PROJECT_ANALYSIS.md — PromptQueue + OpenGorilla 项目全景分析 涉及agent
 1.
 5. **同步阻塞瓶颈** — 直接调用 LLM API 是同步阻塞的，一次对话可能耗时 30–120 秒。
 
-### 内容结构
-- PROJECT_ANALYSIS.md — PromptQueue + OpenGorilla 项目全景分析
-- 一、立项目的（Purpose）
-- 1.1 解决的核心问题
-- 1.2 目标用户
-- 二、项目价值（Value Proposition）
-- 2.1 与竞品的差异化
-- 2.2 量化价值
-- 三、架构与功能（Architecture & Features）
-
-### 技术要点
-
-- **agent架构**: 本文在agent方向提出的设计理念与实现路径
-- **工程挑战**: 实际落地中面临的关键问题与应对策略
-- **architecture趋势**: 相关技术演进方向与新兴范式
 ### 关联实体
 
 - [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md)
@@ -4549,94 +3384,9 @@ PROJECT_ANALYSIS.md — PromptQueue + OpenGorilla 项目全景分析 涉及agent
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏-v2.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
 
-## 实践启示
-1. **工程落地**: agent领域方案需关注可观测性、可维护性和成本效率
-2. **技术选型**: 根据场景选择合适的技术栈，避免过度设计或盲目追新
-3. **持续迭代**: 建立数据驱动的反馈闭环，持续优化系统表现
-4. **风险管控**: 引入新技术需评估对现有系统稳定性的影响，做好降级预案
-
 ---
 
-## Ch02.041 从 Prompt 到 Harness：企业级 Agent 工程的完整演进之路（阿里云开发者）
-
-> 📊 Level ⭐⭐ | 2.8KB | `entities/from-prompt-to-harness-enterprise-agent-engineering-evolution-2026-07-20.md`
-
-# 从 Prompt 到 Harness：企业级 Agent 工程的完整演进之路
-
-## 核心论点
-
-企业级 Agent 工程不是"更好的 Prompt"，而是沿 **Prompt → 上下文工程 → Harness** 的完整演进路径，最终以 Harness 作为系统化约束层把 Agent 从"能跑"推向"可信"。文章以阿里云开发者的企业实践为背景，给出了一套可落地的分层演进框架。
-
-## 演进三阶段
-
-- **Prompt 阶段**：靠提示词约束模型行为，适用于单轮/浅层任务，无法承载状态与长期约束
-- **上下文工程阶段**：通过压缩、缓存、检索管理输入上下文（L1 工具结果压缩 → L2 语义压缩 → L3 对话压缩 → L4 数据总线按需取回），解决 token 膨胀
-- **Harness 阶段**：把规则、记忆、编排、治理沉淀为系统层，Agent 只负责推理决策，约束由 harness 强制执行
-
-## 关键组件
-
-| 组件 | 作用 |
-|------|------|
-| PERO 编排架构 | 有状态执行引擎 + 断点续传 + 步骤并行化 |
-| 四层记忆架构 | 行为记忆 + 冲突裁决 + 个人记忆三层递进 |
-| Prompt Compiler | 把企业规范编译为结构化 prompt 约束 |
-| Self-Feedback Engine | 自进化认知闭环，三条闭环驱动持续改进 |
-| Capability Runtime | 从 Skill-first 转向 Capability-first |
-| 多 Agent 协调 | 四层嵌套循环 + 治理闭环 |
-
-## 与既有实体的关系
-
-本文是 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering.md) 家族的企业级完整演进版，与 [Context Engineering 三记忆范式](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms.md) 互补——前者聚焦工程化落地路径，后者聚焦记忆理论分类。文章把 [Agent 可靠性工程](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-reliability-engineering-skillify-continuous-improvement.md) 的"可信"目标具象化为治理闭环与防护体系。
-
-> [!contradiction] 参见 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering.md) 持相反观点
-> 部分实践者认为 Harness 是过渡态、Graph Engineering 才是终局；本文持"Harness 即终点"立场（详见 [Graph Engineering：从单循环到多节点编排](https://github.com/QianJinGuo/wiki/blob/main/entities/graph-engineering-loop-to-graph-tencent.md)）
-
-## 引用来源
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/from-prompt-to-harness-enterprise-agent-engineering-evolution-2026-07-20.md)
-
----
-
-## Ch02.042 Claude Opus 5 系统提示词疑似泄露：Agent 规则到底该如何定？
-
-> 📊 Level ⭐⭐ | 2.2KB | `entities/claude-opus-5-系统提示词疑似泄露agent-规则到底该如何定.md`
-
-# Claude Opus 5 系统提示词疑似泄露：Agent 规则到底该如何定？
-
-## 核心问题：规则该放 Prompt 还是交给工具/记忆/权限/评测？
-
-作者（架构师 JiaGouX）指出一个做 Agent 绕不开的规则归属问题：**一条规则，到底该放进 Prompt，还是交给工具、记忆、权限和评测？** 核心判断原则：**离事实越近、失败代价越高，越不能只靠 Prompt。** 团队常见的不良习惯是"每出一次问题就往系统提示词里补一句"，半年后 Prompt 越写越长，却说不清哪些规则仍有效、哪些早该交给工具、代码和权限系统。
-
-## Opus 5 泄露样本的三个版本
-
-作者收集了三份公开流传的 Claude Opus 5 样本，分别为 135,669 / 202,762 / 224,359 字节，行数、哈希和结构都对不上，无法确认哪份是官方逐字原文。恰恰是这些差异说明：大家口中的"系统提示词"可能早已混入工具 Schema、记忆规则、Skill 注册表和运行环境——提示词与运行时配置的边界正在模糊化。
-
-## 与 Wiki 现有知识的关联
-
-- 规则归属决策与 [System Prompt vs Post-Training 行为约束](https://github.com/QianJinGuo/wiki/blob/main/entities/system-prompt-vs-post-training-behavioral-constraints-2026.md) 是同一问题的两面：前者是"放哪一层"，后者是"Prompt 与权重约束哪个更可靠"
-- 与 [Agent Harness Engineering 范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-harness-engineering-paradigm.md) 一致：规则应下沉到 harness 的工具/记忆/权限层
-- Prompt 膨胀与失效问题见 [Attention Collapse 与上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md)
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-opus-5-系统提示词疑似泄露agent-规则到底该如何定.md)
-
----
-
-## Ch02.043 从 Prompt 到 Graph：一文理解五层 Agent 工程
-
-> 📊 Level ⭐⭐ | 1.1KB | `entities/graph-engineering-prompt-to-graph-five-layer-ruofei-2026.md`
-
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/graph-engineering-prompt-to-graph-five-layer-ruofei-2026.md)
-
-以 Peter Steinberger 的玩笑（"Are we still talking loops or did we shift to graphs yet?"）切入，回应 Agent 领域新词焦虑：Prompt、Context、Harness、Loop、Graph 不是互相取代的关系，而是各管一段边界的五层工程。系统不稳时先看缺的是哪一层的能力，Graph 不是每个 Agent 的下一站，Loop 也没有过时。
-
-## 来源
-
-- 原文: [从 Prompt 到 Graph：一文理解五层 Agent 工程](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/graph-engineering-prompt-to-graph-five-layer-ruofei-2026.md)
-- 原始链接: : "https://mp.weixin.qq.com/s/y3SDhYPGU8UOuYtE6F_1gg
-
----
-
-## Ch02.044 OneReason：快手将推理注入推荐基模的系统性尝试
+## Ch02.031 OneReason：快手将推理注入推荐基模的系统性尝试
 
 > 📊 Level ⭐⭐⭐ | 7.4KB | `entities/onereason-kuaishou-reasoning-recommender-system.md`
 
