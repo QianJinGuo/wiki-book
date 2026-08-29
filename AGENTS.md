@@ -58,7 +58,9 @@ deploy/
 │   ├── deploy.sh          # 上传 R2 + 部署 Pages
 │   └── ai-proxy/          # Cloudflare Worker: AI Chat CORS 代理
 └── github/
-    └── deploy.yml         # GitHub Actions (含近邻图构建)
+    └── deploy.yml         # GitHub Actions 副本 — ⚠️ 真正生效的是
+                           # .github/workflows/deploy.yml，改工作流请改那份，
+                           # 两份文件必须保持一致 (2026-08-29 曾因改错副本漏掉建图)
 
 scripts/
 ├── build.sh               # 共享构建脚本 (mkdocs → slim → 近邻图, 顺序不可换)
