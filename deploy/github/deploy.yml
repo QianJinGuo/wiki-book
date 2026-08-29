@@ -30,6 +30,11 @@ jobs:
       - name: Build curated course data
         run: python3 scripts/build-course.py
 
+      # Wiki-sync re-adds duplicated chapter-prefix H2 titles to entity
+      # pages; strip them before building (idempotent).
+      - name: Dedupe entity page titles
+        run: python3 scripts/dedupe-entity-titles.py --apply
+
       - name: Build site
         run: mkdocs build
 
