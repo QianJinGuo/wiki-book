@@ -63,8 +63,9 @@ deploy/
                            # 两份文件必须保持一致 (2026-08-29 曾因改错副本漏掉建图)
 
 scripts/
-├── build.sh               # 共享构建脚本 (mkdocs → slim → 近邻图, 顺序不可换)
+├── build.sh               # 共享构建脚本 (去重标题 → mkdocs → slim → 近邻图, 顺序不可换)
 ├── deploy.sh              # 主部署脚本 (docker|cloudflare|github|all)
+├── dedupe-entity-titles.py  # 删除实体页重复 H2 标题 (每日 sync 会重新引入, build.sh 已内置)
 ├── build-neighbor-graph.py  # TF-IDF 近邻图构建 (输入必须为 slim 后索引)
 ├── build-vectorize.py       # Vectorize 索引构建 (Phase 3)
 └── slim-search-index.py     # 搜索索引裁剪 (支持 --input, 默认 site/search/)

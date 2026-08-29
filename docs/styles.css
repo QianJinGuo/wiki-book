@@ -163,4 +163,6 @@
   .home-hero__title { font-size: 1.7rem; }
   .home-stats__item { flex: 1 1 40%; min-width: 6.4rem; }
   .home-chapters blockquote + ul { columns: 1; }
+  /* 左下角 AI Chat 悬浮球固定定位，预留底部空间避免遮挡末行内容 */
+  .md-content__inner { padding-bottom: 6rem; }
 }
