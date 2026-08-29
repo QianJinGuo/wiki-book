@@ -1,6 +1,6 @@
 # Mozilla warns UK: Breaking VPNs will not magically fix Britain's age-check mess
 
-> 📊 Level ⭐ | 8.5KB | `entities/mozilla-warns-uk-breaking-vpns-will-not-magically-fix-britain-s-age-check-mess.md`
+> 📊 Level ⭐ | 8.6KB | `entities/mozilla-warns-uk-breaking-vpns-will-not-magically-fix-britain-s-age-check-mess.md`
 
 ## 背景与事件
 Mozilla 于 2026 年 5 月向英国科学、创新与技术部（Department for Science, Innovation and Technology）提交的"Growing up in the online world"consultation 提交了书面意见，反对对 VPS 提供商强制实施 VPN 阻断措施。
@@ -70,11 +70,11 @@ Mozilla 测试浏览器内置 VPN 的事实表明，技术行业正在用集成�
 ## 相关事件
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mozilla-warns-uk-breaking-vpns-will-not-magically-fix-britain-s-age-check-mess.md)
 ## 相关实体
-- [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britai](../ch11/009-mozilla-warns-uk-breaking-vpns-will-not-magically-fix-brita.html)
-- [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britain S Age Check Mess](../ch11/009-mozilla-warns-uk-breaking-vpns-will-not-magically-fix-brita.html)
+- [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britai](069-mozilla-warns-uk-breaking-vpns-will-not-magically-fix-brita.html)
+- [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britain S Age Check Mess](069-mozilla-warns-uk-breaking-vpns-will-not-magically-fix-brita.html)
 - You Ll Soon Be Able To Bet On Bitcoin Volatility Not Just Price On Cme
-- [Computerweekly Ico Fines Cl0P South Staffs Water](../ch01/1479-0.html)
-- [Nathan Lambert Claude Mythos Open Weights](../ch01/613-nathan-lambert.html)
+- [Computerweekly Ico Fines Cl0P South Staffs Water](https://github.com/QianJinGuo/wiki/blob/main/entities/computerweekly-ico-fines-cl0p-south-staffs-water.md)
+- [Nathan Lambert Claude Mythos Open Weights](../ch01/325-nathan-lambert.html)
 
 ---
 

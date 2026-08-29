@@ -1,6 +1,6 @@
 # 🧠 The Token Economy pt2: The Intelligence Company Gets Built
 
-> 📊 Level ⭐ | 22.9KB | `entities/the-token-economy-pt2-the-intelligence-company-gets-built.md`
+> 📊 Level ⭐ | 23.0KB | `entities/the-token-economy-pt2-the-intelligence-company-gets-built.md`
 
 ## 核心要点
 - **核心公式**：Outcome = Tokens × Intelligent Operating Model（有效运营模型 = 可观测性 × 自主性 × 部署速度 × 问责制）
@@ -185,11 +185,11 @@ Anthropic-Blackstone $1.5B JV 模式展示 PE 作为 AI 转型加速器的潜力
 - [Anthropic Financial Services Agents](https://www.anthropic.com/news/finance-agents) 
 
 ## 相关实体
-- [Vercel Com How Superset Built The Ide For Ai Agents On Vercel](ch01/089-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
-- [Https Stratechery Com 2026 The Google Capital Company](ch01/003-the-google-capital-company.html)
-- [The Token Economy](ch01/765-the-token-economy.html)
-- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](ch01/1146-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.html)
-- [Anthropic 联创2028 年实现 Ai 自我构建的概率超过 60](ch01/783-anthropic.html)
+- [Vercel Com How Superset Built The Ide For Ai Agents On Vercel](071-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
+- [Https Stratechery Com 2026 The Google Capital Company](003-the-google-capital-company.html)
+- [The Token Economy](002-the-token-economy-pt2-the-intelligence-company-gets-built.html)
+- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](575-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.html)
+- [Anthropic 联创2028 年实现 Ai 自我构建的概率超过 60](../ch04/135-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/code-intelligence-changelog.md)
 

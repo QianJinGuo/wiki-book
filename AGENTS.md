@@ -185,6 +185,23 @@ git push origin main
 
 ---
 
+## 质量闭环 (2026-08-29 上线)
+
+知识库现在是**代谢闭环**: 入库(上游评分门禁) → 每日 check & eval → 出口精选门禁 → 指标回流 → 次日优先级。
+
+```
+~/wiki/scripts/vault-metrics.py    指标采集 → metrics/history.jsonl (每日一行, 孤儿率/精炼率/stub/重复)
+~/wiki/scripts/daily-checkup.py    每日评审: --plan / --execute (确定性归档 stub/副本/0分, 留 redirect stub)
+                                   --archive-file F (执行 LLM 评审后的归档清单)
+~/wiki/book/compile-report.json    book_compiler 出口门禁拒绝名单 → 自动回流 checkup 复审队列
+~/wiki/reports/checkup-<date>.md   每日日报 (指标环比 + 动作 + 复审队列 + LLM 评审结论)
+```
+
+- 调度: ZCode 定时自动化每天 04:30 (daily-vault-checkup)；上游入口 cron 见 ~/wiki/CRON.md
+- 出口门禁 (book_compiler.py, 2026-08-29): review_value≥7 + 溯源完整 + blacklist + fallback 封顶 200 → 成书 2,201 篇精选 (此前 4,069 全量)。环境变量 `BOOK_QUALITY_GATE=0` 关闭, `BOOK_FALLBACK_CAP` 调整封顶
+- 站内链接 9,277 条实测 0 死链 (fix-docs-links 同章链接 bug 已修); 僵尸子页 2,898 → 0 (sync 改 `rm -rf docs/ch*/`)
+- 蓝图与度量北极星: VAULT-BLUEPRINT.md
+
 ## 验证
 
 ### Playwright 端到端测试
