@@ -1,10 +1,22 @@
-# 《AI 第一书：从入门到院士》
+<header class="home-hero">
+  <p class="home-hero__eyebrow">开源 · CC BY-SA 4.0 · 每日更新 · AI 辅助编撰</p>
+  <h1 class="home-hero__title">《AI 工程》</h1>
+  <p class="home-hero__subtitle">从 LLM 原理到生产级 Agent —— 基于 4,000+ 篇一手文章系统编撰的开源读物</p>
+  <p class="home-hero__desc">20 章 · 5 篇，覆盖 LLM、Agent、Harness、MCP、RAG、安全、训练与推理；每个条目均溯源一手原文并标注难度，可按学习路径循序渐进。</p>
+  <div class="home-hero__cta">
+    <a href="course.html" class="md-button md-button--primary">🚀 开始阅读主课程</a>
+    <a href="PATH.html" class="md-button">学习路径</a>
+    <a href="https://github.com/QianJinGuo/wiki-book" class="md-button">GitHub</a>
+  </div>
+  <div class="home-stats">
+    <div class="home-stats__item"><span class="home-stats__num">4,087</span><span class="home-stats__label">编撰实体</span></div>
+    <div class="home-stats__item"><span class="home-stats__num">20 章 · 5 篇</span><span class="home-stats__label">全书结构</span></div>
+    <div class="home-stats__item"><span class="home-stats__num">4,024</span><span class="home-stats__label">一手原文</span></div>
+    <div class="home-stats__item"><span class="home-stats__num">★ × 5</span><span class="home-stats__label">难度分级</span></div>
+  </div>
+</header>
 
-> 全球第一部基于 4087 篇编撰实体系统编撰的开源读物。
-
-> 从零基础到 AI 专家到 AI 科学家到 AI 院士，博采众长，一路到底。
-
-> **作者：AI 社区众创 | 编撰：Hermes Agent | 开源协议：CC BY-SA 4.0**
+<div class="home-chapters" markdown>
 
 ## 全书结构
 
@@ -17,6 +29,7 @@
 | 第五篇 · 大师篇 | 哲学、安全与未来 | 思考者 | 54 篇 |
 
 ---
+
 
 ## 第一篇 · 入门篇 — 从零理解 AI
 
@@ -308,6 +321,8 @@
 
 ---
 
-**📊 全书收录：4087 篇编撰实体 | 20 章 5 篇 | 开源读物**
+**📊 全书收录：4,087 篇编撰条目 | 20 章 · 5 篇 | 开源 · 每日更新**
 
-生成时间: 2026-08-29 | 来源: ~/wiki/entities/
+最近同步：2026-08-29
+
+</div>
