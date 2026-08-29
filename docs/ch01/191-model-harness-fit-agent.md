@@ -1,5 +1,7 @@
 # Model-Harness Fit：Agent 脚手架适配模型
 
+## Ch01.191 Model-Harness Fit：Agent 脚手架适配模型
+
 > 📊 Level ⭐⭐ | 16.8KB | `entities/model-harness-fit-agent-harness.md`
 
 # Model-Harness-Fit：模型与壳的适配性

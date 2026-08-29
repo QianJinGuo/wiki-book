@@ -1,5 +1,7 @@
 # LBS-IntentBench — 首个真实出行隐式意图评测基准
 
+## Ch04.220 LBS-IntentBench — 首个真实出行隐式意图评测基准
+
 > 📊 Level ⭐⭐ | 9.6KB | `entities/lbs-intentbench.md`
 
 ## 核心定位
@@ -84,7 +86,7 @@ Qwen3.5-35B-A3B 在 POI 语义理解和事实检索上逼近顶级闭源模型�
 
 ## 项目信息
 - 开源地址：https://github.com/lbs-researcher/LBS-IntentBench
-- 相关体系：[Skillclaw](333-skillclaw-nacos-agent-skill-registry.html)（同属高德 AMAP-ML）
+- 相关体系：[Skillclaw](334-skillclaw-nacos-agent-skill-registry.html)（同属高德 AMAP-ML）
 
 ## 关联条目
 -  — 同属高德 AMAP-ML，群体智能进化系统

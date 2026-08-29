@@ -1,5 +1,7 @@
 # Language Models and Meaning
 
+## Ch01.342 Language Models and Meaning
+
 > 📊 Level ⭐⭐ | 9.6KB | `entities/stochastic-parrot-language-models-and-meaning.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/stochastic-parrot-language-models-and-meaning.md)
@@ -42,7 +44,7 @@
 ## 相关实体
 - [Language Models and Meaning](342-language-models-and-meaning.html)
 - [Reinforcing Recursive Language Models | alphaXiv](570-reinforcing-recursive-language-models-alphaxiv.html)
-- [Cost effective deployment of vision-language models for pet behavior detection on AWS Inferentia2](../ch11/166-cost-effective-deployment-of-vision-language-models-for-pet.html)
+- [Cost effective deployment of vision-language models for pet behavior detection on AWS Inferentia2](../ch11/167-cost-effective-deployment-of-vision-language-models-for-pet.html)
 - [On the Deep Mystery of Language Models](448-llm.html)
 - [A Thought Experiment](https://github.com/QianJinGuo/wiki/blob/main/entities/stochastic-parrot-thought-experiment.md)
 - [Marcus on AI Productivity](../ch04/135-ai.html)

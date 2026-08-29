@@ -1,5 +1,7 @@
 # Personal AI 工作台：Claude 18 动作框架
 
+## Ch01.196 Personal AI 工作台：Claude 18 动作框架
+
 > 📊 Level ⭐⭐ | 16.3KB | `entities/ruofei-personal-ai-workbench-18-actions.md`
 
 ## 核心立场
@@ -232,7 +234,7 @@ good example:
 ## 关联阅读
 - 原文：https://mp.weixin.qq.com/s/pAVt6MeapUIDyVu256FI4w（若飞/架构师，2026-05-18）
 - 属于 JiaGouX 公众号 Harness 系列文章之一（Agent Harness、Memory、Goal、Skills、Personal Harness）
-- [Agent Memory 架构本质](../ch04/320-perplexity-brain-self-improving-agent-memory-architecture.html)
+- [Agent Memory 架构本质](../ch04/321-perplexity-brain-self-improving-agent-memory-architecture.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026.md)
 

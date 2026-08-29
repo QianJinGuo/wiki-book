@@ -1,5 +1,7 @@
 # peerd: 浏览器原生的 AI Agent Harness
 
+## Ch12.093 peerd: 浏览器原生的 AI Agent Harness
+
 > 📊 Level ⭐⭐ | 4.6KB | `entities/peerd-browser-native-agent-harness.md`
 
 # peerd: 浏览器原生的 AI Agent Harness

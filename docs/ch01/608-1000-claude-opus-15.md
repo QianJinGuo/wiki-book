@@ -1,5 +1,7 @@
 # 微软 1000 行代码，把 Claude Opus 干翻了 15 分
 
+## Ch01.608 微软 1000 行代码，把 Claude Opus 干翻了 15 分
+
 > 📊 Level ⭐⭐ | 4.6KB | `entities/webwright-microsoft-1000-lines.md`
 
 # 微软 1000 行代码，把 Claude Opus 干翻了 15 分

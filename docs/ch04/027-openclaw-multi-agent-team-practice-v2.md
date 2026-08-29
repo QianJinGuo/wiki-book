@@ -1,5 +1,7 @@
 # Openclaw Multi Agent Team Practice V2
 
+## Ch04.027 Openclaw Multi Agent Team Practice V2
+
 > 📊 Level ⭐⭐ | 26.7KB | `entities/openclaw-multi-agent-team-practice-v2.md`
 
 ## 核心观点

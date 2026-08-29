@@ -1,5 +1,7 @@
 # Build financial document processing with Pulse AI and Amazon Bedrock
 
+## Ch11.119 Build financial document processing with Pulse AI and Amazon Bedrock
+
 > 📊 Level ⭐⭐ | 8.1KB | `entities/build-financial-document-processing-with-pulse-ai-and-amazon-bedrock.md`
 
 ## 核心要点
@@ -12,7 +14,7 @@
 - [Amazon Bedrock AgentCore 为部署可信人工智能代理增加了质量评估和策略控制 | 亚马逊AWS官方博客](../ch04/383-amazon-bedrock-agentcore.html)
 - [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇](../ch04/383-amazon-bedrock-agentcore.html)
 - [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](135-amazon-bedrock.html)
-- [Automate Schema Generation for Intelligent Document Processing](139-automate-schema-generation-for-intelligent-document-processi.html)
+- [Automate Schema Generation for Intelligent Document Processing](140-automate-schema-generation-for-intelligent-document-processi.html)
 - [Navigating EU AI Act Requirements for LLM Fine-Tuning](../ch01/292-navigating-eu-ai-act-requirements-for-llm-fine-tuning.html)
 - [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](../ch04/423-ai-agent.html)
 - [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](../ch01/467-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)

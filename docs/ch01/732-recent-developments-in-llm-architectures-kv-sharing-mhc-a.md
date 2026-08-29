@@ -1,5 +1,7 @@
 # Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention（机器之心中文全文）
 
+## Ch01.732 Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention（机器之心中文全文）
+
 > 📊 Level ⭐⭐⭐ | 32.7KB | `entities/recent-developments-in-llm-architectures-jiqizhixin.md`
 
 # Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention（机器之心中文全文）

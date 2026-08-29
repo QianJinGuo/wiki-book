@@ -1,5 +1,7 @@
 # Harness 之后：Agent 可靠性的关键，是状态边界和失败闭环
 
+## Ch04.424 Harness 之后：Agent 可靠性的关键，是状态边界和失败闭环
+
 > 📊 Level ⭐⭐ | 3.1KB | `entities/harness-之后-状态边界与失败闭环-若飞.md`
 
 # Harness 之后：Agent 可靠性的关键，是状态边界和失败闭环

@@ -1,5 +1,7 @@
 # Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering
 
+## Ch04.109 Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering
+
 > 📊 Level ⭐⭐ | 14.2KB | `entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md`
 
 # Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering
@@ -71,7 +73,7 @@ Karpathy 自己做了一个 MenuGen 小应用：拍菜单照片 → OCR 抽菜�
 - [Gsd Get Shit Done Context Management Tool](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/057-harness-engineering.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](176-openclaw.html)
-- [protecting against token theft](../ch01/233-protecting-against-token-theft.html)
+- [protecting against token theft](../ch01/232-protecting-against-token-theft.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 
 ---

@@ -1,5 +1,7 @@
 # MiniMax M3 开源 Frontier 模型
 
+## Ch09.052 MiniMax M3 开源 Frontier 模型
+
 > 📊 Level ⭐⭐ | 9.9KB | `entities/minimax-m3-frontier-open-source-model.md`
 
 # MiniMax M3 开源 Frontier 模型

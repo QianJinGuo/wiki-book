@@ -1,5 +1,7 @@
 # Reward hacking is swamping model intelligence gains
 
+## Ch09.079 Reward hacking is swamping model intelligence gains
+
 > 📊 Level ⭐⭐ | 7.0KB | `entities/cursor-reward-hacking-coding-benchmarks.md`
 
 # Reward hacking is swamping model intelligence gains

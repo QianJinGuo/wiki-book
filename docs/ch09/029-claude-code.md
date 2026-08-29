@@ -1,5 +1,7 @@
 # Claude Code 性能基准评测
 
+## Ch09.029 Claude Code 性能基准评测
+
 > 📊 Level ⭐⭐ | 14.6KB | `entities/claude-code-performance-benchmarking.md`
 
 ## 概述
@@ -268,7 +270,7 @@ Claude Code 性能评测揭示了 Agent 编程工具的核心性能规律：**�
 - [Claude Code 架构深度解析](../ch03/057-claude-code.html)
 - [12 个 Harness 设计模式](../ch03/048-claude-code-agent.html)
 - [Prompt Caching 工程实践](../ch01/161-anthropic-prompt-caching-claude-code.html)
-- [Subagent 上下文卫生](../ch04/243-claude-code-subagent.html)
+- [Subagent 上下文卫生](../ch04/244-claude-code-subagent.html)
 - [上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-deep-architecture-analysis.md)

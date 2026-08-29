@@ -1,5 +1,7 @@
 # How LLMs Actually Work: 0xkato Transformer Walkthrough
 
+## Ch01.763 How LLMs Actually Work: 0xkato Transformer Walkthrough
+
 > 📊 Level ⭐⭐⭐ | 8.8KB | `entities/how-llms-actually-work-0xkato.md`
 
 # How LLMs Actually Work: 0xkato Transformer Walkthrough

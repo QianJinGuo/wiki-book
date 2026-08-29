@@ -1,5 +1,7 @@
 # Cognitive Alpha Mining via LLM-Driven Code-Based Evolution
 
+## Ch01.502 Cognitive Alpha Mining via LLM-Driven Code-Based Evolution
+
 > 📊 Level ⭐⭐ | 6.7KB | `entities/cogalpha-acl2026-alpha-mining.md`
 
 # Cognitive Alpha Mining via LLM-Driven Code-Based Evolution

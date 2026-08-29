@@ -1,5 +1,7 @@
 # Enable safe agentic payments with built-in guardrails using Amazon Bedrock AgentCore payments
 
+## Ch04.434 Enable safe agentic payments with built-in guardrails using Amazon Bedrock AgentCore payments
+
 > 📊 Level ⭐⭐ | 2.4KB | `entities/enable-safe-agentic-payments-with-built-in-guardrails-using-.md`
 
 # Enable safe agentic payments with built-in guardrails using Amazon Bedrock AgentCore payments
@@ -23,7 +25,7 @@ Enable safe agentic payments with built-in guardrails using Amazon Bedrock Agent
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/035-agent-harness.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/057-harness-engineering.html)
 - [Karpathy Vibe Coding Agentic Engineering](098-karpathy-vibe-coding-agentic-engineering.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](193-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 
 ## 相关实体
 

@@ -1,5 +1,7 @@
 # Temporarily disabling new user registrations
 
+## Ch12.064 Temporarily disabling new user registrations
+
 > 📊 Level ⭐⭐ | 7.2KB | `entities/temporarily-disabling-new-user-registrations.md`
 
 ## 摘要

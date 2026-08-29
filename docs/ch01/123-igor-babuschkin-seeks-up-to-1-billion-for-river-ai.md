@@ -1,5 +1,7 @@
 # Igor Babuschkin Seeks Up To $1 Billion For River AI
 
+## Ch01.123 Igor Babuschkin Seeks Up To $1 Billion For River AI
+
 > 📊 Level ⭐ | 3.8KB | `entities/igor-babuschkin-seeks-up-to-1-billion-for-river-ai.md`
 
 ## 核心要点

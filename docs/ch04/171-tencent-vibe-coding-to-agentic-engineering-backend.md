@@ -1,5 +1,7 @@
 # Tencent Vibe Coding to Agentic Engineering Backend
 
+## Ch04.171 Tencent Vibe Coding to Agentic Engineering Backend
+
 > 📊 Level ⭐⭐ | 11.2KB | `entities/tencent-vibe-coding-to-agentic-engineering-backend.md`
 
 # 从Vibe Coding到Agentic Engineering：重构后台开发全流程
@@ -111,7 +113,7 @@ Skill/Command/MCP 三层架构的核心价值在于分离了不同层次的关�
 ## 相关实体
 - [从Vibe Coding到Agentic Engineering重构后台开发全流程](../ch03/004-agent.html)
 - [Karpathy Vibe Coding To Agentic Engineering](../ch03/004-agent.html)
-- [Fudan Peking Ahe Agentic Harness Engineering](191-ahe-agentic-harness-engineering.html)
+- [Fudan Peking Ahe Agentic Harness Engineering](192-ahe-agentic-harness-engineering.html)
 - [Vibe Coding Agentic Engineering Convergence Simon Willison](../ch09/038-coding-agent.html)
 - [Karpathy Vibe Coding Agentic Engineering V4](098-karpathy-vibe-coding-agentic-engineering.html)
 

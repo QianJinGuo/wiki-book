@@ -1,5 +1,7 @@
 # Agent 记忆注入实战：5 维框架（选什么/放哪里/怎么放/放多少/何时放）+ 4 前沿论文（MemGuide/STITCH/ACE/Lost in the Middle）
 
+## Ch01.291 Agent 记忆注入实战：5 维框架（选什么/放哪里/怎么放/放多少/何时放）+ 4 前沿论文（MemGuide/STITCH/ACE/Lost in the Middle）
+
 > 📊 Level ⭐⭐ | 11.3KB | `entities/agent-memory-injection-5-dimensions-4-papers-agent-shouji-2026.md`
 
 # Agent 记忆注入实战：5 维框架 + 4 前沿论文
@@ -178,7 +180,7 @@ LLM → 个性化推荐结果
 → [Agent Memory 模块化框架与评测](../ch04/133-agent-memory.html) — Memory 4 模块框架（ICLR 2026 论文）
 → [Agent Memory 架构本质](../ch04/133-agent-memory.html) — Memory 治理理论
 → [三种 Agent Memory 方案对比实验](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms.md) — MSA/Doc-to-lora/RAG 量化对比
-→ [Agent Loop 8 痛点](../ch04/348-loop-engineering.html) — 记忆大小是痛点 4（同模型盲区）
+→ [Agent Loop 8 痛点](../ch04/349-loop-engineering.html) — 记忆大小是痛点 4（同模型盲区）
 → [Agent Memory 评测综述 (淘天)](../ch04/133-agent-memory.html) — Mem0 评测视角
 → [原文存档（本篇）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-memory-injection-5-dimensions-4-papers-agent-shouji-2026.md)
 

@@ -1,5 +1,7 @@
 # Choosing to Stay Human
 
+## Ch03.007 Choosing to Stay Human
+
 > 📊 Level ⭐ | 10.8KB | `entities/choosing-to-stay-human.md`
 
 # Choosing to Stay Human

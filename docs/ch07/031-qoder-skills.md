@@ -1,5 +1,7 @@
 # Qoder Skills 完全指南
 
+## Ch07.031 Qoder Skills 完全指南
+
 > 📊 Level ⭐⭐ | 9.8KB | `entities/qoder-skills-complete-guide.md`
 
 ## 核心概念
@@ -79,7 +81,7 @@
 - [qoder skills](031-qoder-skills.html)
 - [Agent/Skills/Teams 架构演进过程及技术选型之道](../ch04/199-agent-skills-teams.html)
 - [Agent 时代架构师技能指南](../ch03/050-skills.html)
-- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch01/283-agent-skill.html)
+- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch01/284-agent-skill.html)
 - [Hermes Agent](../ch04/161-hermes-agent.html)
 - [你写的 Skill，及格了吗？](054-skill.html)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
@@ -88,12 +90,12 @@
 - [SkillX — 层次化技能知识库](054-skill.html)
 - [Anthropic 14 个 Agent Skills 设计模式](../ch04/077-anthropic-agent.html)
 - [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](054-skill.html)
-- [SkillClaw](../ch04/333-skillclaw-nacos-agent-skill-registry.html)
+- [SkillClaw](../ch04/334-skillclaw-nacos-agent-skill-registry.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](016-hermes-skill.html)
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/300-agent-skills.html)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/301-agent-skills.html)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/171-tencent-vibe-coding-to-agentic-engineering-backend.html)
 - [Thin Harness Fat Skills](../ch05/065-thin-harness-fat-skills-ai.html)
-- [Code Intelligence Changelog](../ch04/350-code-intelligence-changelog.html)
+- [Code Intelligence Changelog](../ch04/351-code-intelligence-changelog.html)
 
 ---
 

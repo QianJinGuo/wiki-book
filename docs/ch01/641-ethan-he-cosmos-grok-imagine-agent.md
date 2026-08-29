@@ -1,5 +1,7 @@
 # Ethan He：Cosmos Grok Imagine 潜空间视频 Agent
 
+## Ch01.641 Ethan He：Cosmos Grok Imagine 潜空间视频 Agent
+
 > 📊 Level ⭐⭐ | 3.3KB | `entities/ethan-he-cosmos-grok-imagine-latent-space-video-agent-20260606.md`
 
 # Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606

@@ -1,5 +1,7 @@
 # LFM2.5-Encoders: Fast Long-Context Inference on CPU
 
+## Ch01.137 LFM2.5-Encoders: Fast Long-Context Inference on CPU
+
 > 📊 Level ⭐ | 3.0KB | `entities/liquid-ai-lfm2-5-encoders-fast-long-context-cpu.md`
 
 # LFM2.5-Encoders: Fast Long-Context Inference on CPU

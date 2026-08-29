@@ -1,5 +1,7 @@
 # 突发！Anthropic拿下马斯克Colossus 1全部算力：Claude要放开用了
 
+## Ch01.389 突发！Anthropic拿下马斯克Colossus 1全部算力：Claude要放开用了
+
 > 📊 Level ⭐⭐ | 8.5KB | `entities/突发anthropic拿下马斯克colossus-1全部算力claude要放开用了.md`
 
 ###  马斯克闲置的超级算力中心终于有用途了，  这对吗？马斯克直接和阿迪王对上眼了，前一段时间老马还在怒喷阿迪王啊，马斯克的说法是上周花了很多时间与 Anthropic 团队的高级成员交流，以了解他们为确保 Claude 对人类有益所做的工作，对此印象深刻，Claude 很可能会有益。在那之后，老马同意将 Colossus 1 租给 Anthropic,更夸张的是A厂还要和老马合作轨道超级计算，这下马斯克的卫星轨道计算发射的饼具象化了

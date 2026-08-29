@@ -1,5 +1,7 @@
 # PyTorch 2.12 Release Blog – PyTorch
 
+## Ch01.103 PyTorch 2.12 Release Blog – PyTorch
+
 > 📊 Level ⭐ | 5.7KB | `entities/pytorch212releaseblogpytorch.md`
 
 ## 核心要点

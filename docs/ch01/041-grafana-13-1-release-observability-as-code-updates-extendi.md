@@ -1,5 +1,7 @@
 # Grafana 13.1 release: observability as code updates, extending Grafana Assistant across more data sources, and more
 
+## Ch01.041 Grafana 13.1 release: observability as code updates, extending Grafana Assistant across more data sources, and more
+
 > 📊 Level ⭐ | 8.2KB | `entities/blog-grafana-13-1-release-all-the-latest-features.md`
 
 # Grafana 13.1 release: observability as code updates, extending Grafana Assistant across more data sources, and more

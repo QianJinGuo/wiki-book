@@ -1,5 +1,7 @@
 # 从渐进式 SDD 到 Lattice Harness：AI Coding 团队级闭环实践
 
+## Ch05.059 从渐进式 SDD 到 Lattice Harness：AI Coding 团队级闭环实践
+
 > 📊 Level ⭐⭐ | 7.1KB | `entities/sdd-practice-lattice-harness-team-ai-coding.md`
 
 ## 核心概述
@@ -63,7 +65,7 @@ Lattice 的 Context 工程提出了一个可操作的三层结构：Context Map�
 4. **Drift Check 应从 spec-lint 阶段开始抓**：Lattice 的 drift 检测覆盖新增 error code、新增 API route、修改 DB schema 三类常见漂移场景，且从 spec-lint 阶段开始检测，不在 CI 中漏掉。建议团队在 CI pipeline 中增加类似的自动化漂移检测门禁。
 
 ## 相关实体
-- [Loop Engineering 半年实战拆解：claude-ship](../ch04/348-loop-engineering.html) — 另一 AI Coding 闭环开源实现
+- [Loop Engineering 半年实战拆解：claude-ship](../ch04/349-loop-engineering.html) — 另一 AI Coding 闭环开源实现
 - [Agent Harness 架构](035-agent-harness.html) — Harness Engineering 概念框架
 
 ---

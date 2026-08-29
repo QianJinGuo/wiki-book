@@ -1,5 +1,7 @@
 # 被裁了想转 AI Agent？先看面试官到底在筛你哪 7 样东西
 
+## Ch01.593 被裁了想转 AI Agent？先看面试官到底在筛你哪 7 样东西
+
 > 📊 Level ⭐⭐ | 4.9KB | `entities/agent-interview-7-capabilities.md`
 
 # 被裁了想转 AI Agent？先看面试官到底在筛你哪 7 样东西

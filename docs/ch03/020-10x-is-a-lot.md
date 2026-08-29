@@ -1,5 +1,7 @@
 # 10x Is a Lot
 
+## Ch03.020 10x Is a Lot
+
 > 📊 Level ⭐ | 7.0KB | `entities/10x-is-a-lot.md`
 
 # 10x Is a Lot — Quarter Mile

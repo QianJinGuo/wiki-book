@@ -1,5 +1,7 @@
 # Making Claude a chemist
 
+## Ch01.443 Making Claude a chemist
+
 > 📊 Level ⭐⭐ | 7.6KB | `entities/anthropic-com-research-making-claude-a-chemist.md`
 
 # Making Claude a chemist

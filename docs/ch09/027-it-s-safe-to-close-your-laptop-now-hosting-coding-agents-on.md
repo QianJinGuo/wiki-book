@@ -1,5 +1,7 @@
 # It’s safe to close your laptop now: Hosting coding agents on Amazon Bedrock AgentCore
 
+## Ch09.027 It’s safe to close your laptop now: Hosting coding agents on Amazon Bedrock AgentCore
+
 > 📊 Level ⭐⭐ | 15.0KB | `entities/bedrock-agentcore-coding-agent-hosting.md`
 
 # It’s safe to close your laptop now: Hosting coding agents on Amazon Bedrock AgentCore
@@ -87,7 +89,7 @@ Let’s see how AgentCore gets you both.
 - [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/383-amazon-bedrock-agentcore.html)
 - [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch04/383-amazon-bedrock-agentcore.html)
 - [Amazon Quick Bedrock Agentcore Finops Chat](../ch11/112-amazon-quick-bedrock-agentcore-finops.html)
-- [deep agents + bedrock agentcore：多 agent 编排 + 隔离基础设施的端到端研究 ag](../ch04/360-agent-orchestration.html)
+- [deep agents + bedrock agentcore：多 agent 编排 + 隔离基础设施的端到端研究 ag](../ch04/241-agent-orchestration.html)
 - [development environments for your cloud agents](087-development-environments-for-your-cloud-agents.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 

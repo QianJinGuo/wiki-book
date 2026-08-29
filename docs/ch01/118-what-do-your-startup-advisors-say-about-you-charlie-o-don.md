@@ -1,5 +1,7 @@
 # What Do Your Startup Advisors Say About You? — Charlie O'Donnell - Coach, Author, VC
 
+## Ch01.118 What Do Your Startup Advisors Say About You? — Charlie O'Donnell - Coach, Author, VC
+
 > 📊 Level ⭐ | 4.2KB | `entities/what-do-your-startup-advisors-say-about-you-charlie-odonnell---coach-author-vc.md`
 
 coach-author-vc]

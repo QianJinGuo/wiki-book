@@ -1,5 +1,7 @@
 # DeepSeek Code Harness
 
+## Ch09.003 DeepSeek Code Harness
+
 > 📊 Level ⭐⭐ | 46.1KB | `entities/deepseek-code-harness.md`
 
 ## Overview

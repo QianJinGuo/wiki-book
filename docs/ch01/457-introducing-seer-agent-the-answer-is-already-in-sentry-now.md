@@ -1,5 +1,7 @@
 # Introducing Seer Agent: The answer is already in Sentry. Now you can ask for it.
 
+## Ch01.457 Introducing Seer Agent: The answer is already in Sentry. Now you can ask for it.
+
 > 📊 Level ⭐⭐ | 7.2KB | `entities/introducing-seer-agent-the-answer-is-already-in-sentry-now-you-can-ask-for-it.md`
 
 # Introducing Seer Agent: The answer is already in Sentry. Now you can ask for it.

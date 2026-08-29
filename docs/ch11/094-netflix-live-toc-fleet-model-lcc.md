@@ -1,5 +1,7 @@
 # Netflix Live 运营体系：TOC Fleet Model 与 LCC 分层指挥架构
 
+## Ch11.094 Netflix Live 运营体系：TOC Fleet Model 与 LCC 分层指挥架构
+
 > 📊 Level ⭐⭐ | 9.4KB | `entities/netflix-live-operations-human-infrastructure.md`
 
 # Netflix Live 运营体系：TOC Fleet Model 与 LCC 分层指挥架构
@@ -68,7 +70,7 @@ LOL 分级的核心价值不是"更快响应"，而是"避免倦怠"——如果
 - [Netflix Druid Interval Aware Caching](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-druid-interval-aware-caching.md)
 - [High Throughput Graph Abstraction At Netflix](087-high-throughput-graph-abstraction-at-netflix-part-i.html)
 - [High Throughput Graph Abstraction At Netflix Part I](087-high-throughput-graph-abstraction-at-netflix-part-i.html)
-- [Netflix Nebula Archrules](078-netflix-nebula-archrules-java-archunit.html)
+- [Netflix Nebula Archrules](077-netflix-nebula-archrules-java-archunit.html)
 
 ## 相关引用
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/netflix-live-operations-human-infrastructure.md)

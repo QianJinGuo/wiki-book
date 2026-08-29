@@ -1,5 +1,7 @@
 # Claude Code Dynamic Workflows 第 6 译本（玉澄 / 51CTO 视角）
 
+## Ch01.665 Claude Code Dynamic Workflows 第 6 译本（玉澄 / 51CTO 视角）
+
 > 📊 Level ⭐⭐ | 2.9KB | `entities/claude-code-dynamic-workflows-zhuge6-yucheng-translation.md`
 
 # Claude Code Dynamic Workflows 第 6 译本（玉澄 / 51CTO 视角）

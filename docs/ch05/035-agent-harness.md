@@ -1,5 +1,7 @@
 # Agent生产级Harness工程指南
 
+## Ch05.035 Agent生产级Harness工程指南
+
 > 📊 Level ⭐⭐ | 14.6KB | `entities/agent-production-harness-engineering.md`
 
 ## 核心定位
@@ -122,7 +124,7 @@ Demo 级循环抹掉关键信息（哪个工具失败/为什么/下一步），�
 → [Cursor Harness 复盘](../ch01/205-cursor-harness-model-production-floor.html)（模型 vs Harness 组合）
 → [Claude Code 提示词体系](../ch09/050-claude-code-prompt.html)
 → [Agent Harness 上下文管理](035-agent-harness.html)
-→ [Agent Memory 架构](../ch04/320-perplexity-brain-self-improving-agent-memory-architecture.html)
+→ [Agent Memory 架构](../ch04/321-perplexity-brain-self-improving-agent-memory-architecture.html)
 
 ## 相关实体
 - [Harness Engineering - 让 Coding Agent 可靠完成长程任务](057-harness-engineering.html)

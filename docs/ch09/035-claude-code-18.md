@@ -1,5 +1,7 @@
 # Claude Code 18个隐藏设置
 
+## Ch09.035 Claude Code 18个隐藏设置
+
 > 📊 Level ⭐⭐ | 12.9KB | `entities/claude-code-hidden-settings-18.md`
 
 # Claude Code 18个隐藏设置

@@ -1,5 +1,7 @@
 # LLM-Driven Feature Discovery
 
+## Ch01.781 LLM-Driven Feature Discovery
+
 > 📊 Level ⭐⭐⭐⭐ | 4.2KB | `entities/llm-driven-feature-discovery.md`
 
 # LLM-Driven Feature Discovery

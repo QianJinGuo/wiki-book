@@ -1,5 +1,7 @@
 # Microsoft / GitHub / AWS AI 算力承压事件分析（RuntimeWire 2026-06）
 
+## Ch11.057 Microsoft / GitHub / AWS AI 算力承压事件分析（RuntimeWire 2026-06）
+
 > 📊 Level ⭐⭐ | 11.3KB | `entities/runtimewire-microsoft-github-aws-ai-capacity-crunch-2026-06.md`
 
 # Microsoft / GitHub / AWS AI 算力承压事件分析（RuntimeWire 2026-06）

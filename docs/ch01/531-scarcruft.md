@@ -1,5 +1,7 @@
 # ScarCruft 游戏平台供应链攻击分析
 
+## Ch01.531 ScarCruft 游戏平台供应链攻击分析
+
 > 📊 Level ⭐⭐ | 6.2KB | `entities/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack.md)

@@ -1,5 +1,7 @@
 # Skill 系统：Agent 如何把经验沉淀成可复用能力
 
+## Ch04.110 Skill 系统：Agent 如何把经验沉淀成可复用能力
+
 > 📊 Level ⭐⭐ | 14.2KB | `entities/hermes-skill-system-winty.md`
 
 # "Skill 系统：Agent 如何把经验沉淀成可复用能力"
@@ -128,7 +130,7 @@ Trigger 关键字粗筛 + 语义打分 tie-breaker 的两层检索机制，本�
 → [winty·Hermes Self-Improving 概览](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-self-improving-overview-winty.md)（同系列）
 
 ## 相关实体
-- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch01/283-agent-skill.html)
+- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch01/284-agent-skill.html)
 - [企业级AI记忆基质三层架构：事实/交互/行动记忆](135-ai.html)
 - [9个Agent技能模块化SageMaker微调生命周期](423-ai-agent.html)
 - [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](../ch07/054-skill.html)
@@ -141,7 +143,7 @@ Trigger 关键字粗筛 + 语义打分 tie-breaker 的两层检索机制，本�
 - [Anthropic 14 个 Agent Skills 设计模式](077-anthropic-agent.html)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
 - [OpenHuman: AI Agent 持久记忆框架](133-agent-memory.html)
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](300-agent-skills.html)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](301-agent-skills.html)
 - [上下文工程 - 三种Memory方案对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md)
 
 - [你写的 Skill，及格了吗？](../ch07/054-skill.html)

@@ -1,5 +1,7 @@
 # Hunk - Review-first Terminal Diff Viewer
 
+## Ch03.024 Hunk - Review-first Terminal Diff Viewer
+
 > 📊 Level ⭐ | 5.8KB | `entities/hunk-diff-viewer.md`
 
 # Hunk - Review-first Terminal Diff Viewer

@@ -1,5 +1,7 @@
 # 全球首个完全AI编写的训练框架：面壁ForgeTrain速度反超英伟达Megatron，年底要把国产算力软件重写一遍
 
+## Ch05.064 全球首个完全AI编写的训练框架：面壁ForgeTrain速度反超英伟达Megatron，年底要把国产算力软件重写一遍
+
 > 📊 Level ⭐⭐ | 6.0KB | `entities/forgetrain-ai-written-training-framework-bidian-infoq.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/forgetrain-ai-written-training-framework-bidian-infoq.md)
@@ -61,7 +63,7 @@ AI 写代码成本趋近于零 → 没有必要继续做大而全通用框架 �
 **4. 国产算力生态的追赶路径。** 通过 AI 自动化弥补人类工程师数量和经验上的差距，是一个值得关注的思路。但前提是能够建立有效的评测体系，让 AI 知道往哪个方向优化。
 
 ## 相关实体
-- [Ai Coding Agent Memory System](../ch04/251-ai-coding-agent.html)
+- [Ai Coding Agent Memory System](../ch04/252-ai-coding-agent.html)
 - [Deepseek Cost Migration System Layer Kv Cache Harness](../ch01/416-deepseek.html)
 - [Gaode Ai Native 7X24 Pipeline Self Healing](018-ai-native.html)
 - [Karpathy Claude Md Rules](../ch01/181-claude-md.html)

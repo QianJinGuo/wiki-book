@@ -1,5 +1,7 @@
 # Harness Engineering 从理论到实战：行为正确性死结 + 上下文腐烂 + 可驾驭性 + Ashby 定律
 
+## Ch05.081 Harness Engineering 从理论到实战：行为正确性死结 + 上下文腐烂 + 可驾驭性 + Ashby 定律
+
 > 📊 Level ⭐⭐⭐ | 20.1KB | `entities/harness-engineering-theory-to-practice-helen.md`
 
 # Harness Engineering 从理论到实战：行为正确性死结 + 上下文腐烂 + 可驾驭性 + Ashby 定律
@@ -262,7 +264,7 @@ harness 是 AI 的"操作系统"——每个组件都应有单元测试和集成
 
 ## 相关实体
 - [Harness Engineering](057-harness-engineering.html)
-- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/191-ahe-agentic-harness-engineering.html)
+- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/192-ahe-agentic-harness-engineering.html)
 - [Fudan Agentic Harness Engineering Ahe Gpt54 7Points](057-harness-engineering.html)
 - [Harness Engineering Alibaba Java Case Study](057-harness-engineering.html)
 - [Tencent Cdn Lego Harness](008-harness.html)

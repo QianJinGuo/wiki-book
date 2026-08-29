@@ -1,5 +1,7 @@
 # Prompt 调试器：A/B 测试模板对比
 
+## Ch01.563 Prompt 调试器：A/B 测试模板对比
+
 > 📊 Level ⭐⭐ | 5.6KB | `entities/prompt-debugger-compare-templates-winty.md`
 
 # prompt-debugger-compare-templates-winty
@@ -15,7 +17,7 @@ Prompt 调试器要解决的问题：把"凭感觉调 Prompt"变成"有数据对
 - [Claude Opus 47](339-claude.html)
 - [Pi Mono Github](471-github.html)
 - [From Prompt To Harness Claude Official](../ch05/008-harness.html)
-- [Aliyun Agentrun 2Line Integration](../ch04/270-agentrun.html)
+- [Aliyun Agentrun 2Line Integration](../ch04/289-agentrun.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/prompt-debugger-compare-templates-winty.md)
 

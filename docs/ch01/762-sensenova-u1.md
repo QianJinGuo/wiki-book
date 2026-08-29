@@ -1,5 +1,7 @@
 # SenseNova-U1 — 商汤原生统一多模态模型
 
+## Ch01.762 SenseNova-U1 — 商汤原生统一多模态模型
+
 > 📊 Level ⭐⭐⭐ | 9.1KB | `entities/sensnova-u1.md`
 
 ## 核心架构：NEO-Unify

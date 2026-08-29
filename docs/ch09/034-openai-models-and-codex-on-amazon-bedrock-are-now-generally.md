@@ -1,5 +1,7 @@
 # OpenAI models and Codex on Amazon Bedrock are now generally available
 
+## Ch09.034 OpenAI models and Codex on Amazon Bedrock are now generally available
+
 > 📊 Level ⭐⭐ | 13.4KB | `entities/openai-models-codex-amazon-bedrock-ga.md`
 
 # OpenAI models and Codex on Amazon Bedrock are now generally available
@@ -88,7 +90,7 @@ Codex 无座机、无按开发者收费的模式打破了 AI 编程工具的企�
 
 ### 4. 关注 Bedrock Managed Agents (Powered by OpenAI) 发布节奏
 
-即将推出的 Bedrock Managed Agents 基于 OpenAI agent harness 构建，提供更快执行和长任务可靠引导 ^。建议通过 [interest form](https://pages.awscloud.com/GLOBAL-ln-GC-openai-bedrock-interest.html) 提前登记，结合 [Agentcore Managed Harness](../ch04/186-agentcore-managed-harness.html) 和 [Agentic Workflow Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-workflow-patterns.md) 评估与现有 AgentCore 工作流的集成方案。
+即将推出的 Bedrock Managed Agents 基于 OpenAI agent harness 构建，提供更快执行和长任务可靠引导 ^。建议通过 [interest form](https://pages.awscloud.com/GLOBAL-ln-GC-openai-bedrock-interest.html) 提前登记，结合 [Agentcore Managed Harness](../ch04/187-agentcore-managed-harness.html) 和 [Agentic Workflow Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-workflow-patterns.md) 评估与现有 AgentCore 工作流的集成方案。
 
 ### 5. 追踪 Daybreak GA 并评估安全工程扩展路径
 

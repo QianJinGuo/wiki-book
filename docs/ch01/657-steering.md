@@ -1,5 +1,7 @@
 # 大模型可控新突破：Steering 机制、评估体系与开源落地
 
+## Ch01.657 大模型可控新突破：Steering 机制、评估体系与开源落地
+
 > 📊 Level ⭐⭐ | 2.9KB | `entities/steering-mechanism-evaluation-easyedit2-zju-alibaba.md`
 
 # 大模型可控新突破：Steering 机制、评估体系与开源落地
@@ -25,7 +27,7 @@
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04/176-openclaw.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/098-karpathy-vibe-coding-agentic-engineering.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/193-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/004-agent.html)
 
 ---

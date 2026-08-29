@@ -1,5 +1,7 @@
 # Self-Evolving Agents 系统性综述
 
+## Ch04.181 Self-Evolving Agents 系统性综述
+
 > 📊 Level ⭐⭐ | 10.9KB | `entities/self-evolving-agents-survey.md`
 
 ## 核心贡献
@@ -29,7 +31,7 @@
 
 ## 与 Wiki 现有页面的关系
 - [Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md) — Hermes 的自进化机制，侧重 Skill 生成 + RL 训练双路径
-- [Memento Skills Agent Self Evolving](306-memento-skills-agent.html) — 技能外部记忆维度，与 Environment-Centric Static Knowledge Evolution 相关
+- [Memento Skills Agent Self Evolving](307-memento-skills-agent.html) — 技能外部记忆维度，与 Environment-Centric Static Knowledge Evolution 相关
 - [Agent Self Improvement Six Mechanisms](../ch03/004-agent.html) — Agent 自我改进六条路，与本文 taxonomy 有重叠但视角不同
 - [Agent Memory Modular Framework](133-agent-memory.html) — Memory 模块化框架，与 Environment-Centric Modular Architecture Evolution 相关
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/self-evolving-agents-survey-papersagent.md)

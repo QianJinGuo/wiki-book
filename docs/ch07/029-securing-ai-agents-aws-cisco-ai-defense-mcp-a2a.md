@@ -1,5 +1,7 @@
 # Securing AI Agents: AWS × Cisco AI Defense 给 MCP / A2A 加上企业级护栏
 
+## Ch07.029 Securing AI Agents: AWS × Cisco AI Defense 给 MCP / A2A 加上企业级护栏
+
 > 📊 Level ⭐⭐ | 10.2KB | `entities/securing-ai-agents-how-aws-and-cisco-ai-defense-scale-mcp-and-a2a.md`
 
 # Securing AI Agents: AWS × Cisco AI Defense 给 MCP / A2A 加上企业级护栏
@@ -109,7 +111,7 @@ AWS 在合作中开源的 **MCP Gateway Registry** 提供"agent 和 server 治�
 - [Claude Code Harness Deep Understanding](../ch01/336-claude-code-harness-deep-understanding.html)
 - [Harness Engineering Core Patterns Claude Code](../ch05/057-harness-engineering.html)
 - [Ai Agent Engineer Learning Roadmap Backend 2026](../ch04/423-ai-agent.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/193-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [Agent Security Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-architecture.md)
 - "MCP 协议生态"
 - "LLM 安全与红队测试"

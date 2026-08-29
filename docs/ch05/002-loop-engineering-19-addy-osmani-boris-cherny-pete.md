@@ -1,5 +1,7 @@
 # Loop Engineering:不再写提示词,而是设计替你写提示词的循环——先写刹车再写循环（19 来源深度合并：Addy Osmani / Boris Cherny+Peter Steinberger / 教科书 / 若飞 工程现场 / TechFarrari 批判 / 若飞 实用指南 / 爱范儿 科普批判 / AllenTang Karpathy 尺子 / winty 7架构中文主流视角 / AutoResearch 5 决策 / 三层结构 + 三款产品对比 + Ralph Loop + 准备度总表 / Shubham Saboo PM 视角 / 若飞 吴恩达三层Loop）
 
+## Ch05.002 Loop Engineering:不再写提示词,而是设计替你写提示词的循环——先写刹车再写循环（19 来源深度合并：Addy Osmani / Boris Cherny+Peter Steinberger / 教科书 / 若飞 工程现场 / TechFarrari 批判 / 若飞 实用指南 / 爱范儿 科普批判 / AllenTang Karpathy 尺子 / winty 7架构中文主流视角 / AutoResearch 5 决策 / 三层结构 + 三款产品对比 + Ralph Loop + 准备度总表 / Shubham Saboo PM 视角 / 若飞 吴恩达三层Loop）
+
 > 📊 Level ⭐⭐ | 134.4KB | `entities/loop-engineering-addy-osmani-challengehub.md`
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-addy-osmani-challengehub.md)
@@ -62,8 +64,8 @@ Loop Engineering 不是 Harness 的替代品，而是 Harness 之上的编排层
 
 ---
 
-- [loop engineering: 把反馈循环放进工程现场](../ch04/348-loop-engineering.html)
-- [循环工程 (loop engineering) — 清华 2026 框架](../ch04/348-loop-engineering.html)
+- [loop engineering: 把反馈循环放进工程现场](../ch04/349-loop-engineering.html)
+- [循环工程 (loop engineering) — 清华 2026 框架](../ch04/349-loop-engineering.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/loop-engineering.md)
@@ -302,7 +304,7 @@ TechFarrari 公众号 2026-06-15 10:30 发布的独立解读,作者是 TechFarra
 - **跨域应用案例**(第 5 来源独家): 与 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 在 SaaS / DevOps / 客服 / 编程 的多领域应用模式相同,Loop Engineering 也已扩展到**内容选题**。这是 Loop 工具链成熟的标志——"凌晨 4 点 bot → 8 点选题会 agenda"是 24h Agent 工作流在内容产业的真实落地
 - **范式迁移叙事 4 阶段时间线**(第 5 来源独家): 与前 4 来源的"Loop > Harness > Prompt"层级关系**互为表里**——前 4 来源给"层级",第 5 来源给"时间线",合起来是"Loop 演化的完整画像"
 - **生命周期短预言**(第 5 来源独家): 与 [Anthropic 缓存 Token 经济](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic_cache_tokenomics.md) 等 raw 中对"AI 圈造词速度"的批评态度**一致**——"每过几个月就有个新词,每个新词都宣称自己要杀死上一个"——但**保持冷静的"造词速度观察期"**是工程师理性态度
-- **商业动机批判**(第 5 来源独家): 与 [纳德拉「Token 资本」论](../ch12/002-token.html) 的"前沿模型 ≠ 价值"警告**同源**——都反对"造词 = 价值"的偷换;与 [Fable 5 Runtime Contract](../ch01/225-claude-fable-5.html) 的"系统能不能跑完任务"判断**同源**——都强调工程责任换形态
+- **商业动机批判**(第 5 来源独家): 与 [纳德拉「Token 资本」论](../ch12/002-token.html) 的"前沿模型 ≠ 价值"警告**同源**——都反对"造词 = 价值"的偷换;与 [Fable 5 Runtime Contract](../ch01/226-claude-fable-5.html) 的"系统能不能跑完任务"判断**同源**——都强调工程责任换形态
 
 ### 实践启示
 

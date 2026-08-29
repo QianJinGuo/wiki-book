@@ -1,5 +1,7 @@
 # Gemini 深度导读生成器 Prompt：让 AI 重写而非摘要
 
+## Ch01.343 Gemini 深度导读生成器 Prompt：让 AI 重写而非摘要
+
 > 📊 Level ⭐⭐ | 9.5KB | `entities/gemini-deep-guide-prompt.md`
 
 # Gemini 深度导读生成器 Prompt：让 AI 重写而非摘要
@@ -128,7 +130,7 @@ Prompt 提供了三种输出模式：
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/057-harness-engineering.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/098-karpathy-vibe-coding-agentic-engineering.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/193-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - "Prompt 工程模式"
 - [Prompt Engineering Fundamentals](https://github.com/QianJinGuo/wiki/blob/main/concepts/prompt-engineering-fundamentals.md)
 

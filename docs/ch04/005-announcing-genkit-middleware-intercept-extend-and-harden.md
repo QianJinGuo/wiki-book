@@ -1,5 +1,7 @@
 # Announcing Genkit Middleware: Intercept, extend, and harden your agentic apps
 
+## Ch04.005 Announcing Genkit Middleware: Intercept, extend, and harden your agentic apps
+
 > 📊 Level ⭐ | 8.5KB | `entities/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps.md`
 
 > -> [Announcing Genkit Middleware: Intercept, extend, and harden your agentic apps](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps.md)
@@ -63,8 +65,8 @@ Genkit 明确指出中间件从左到右组合，第一个列出的在最外层�
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-model-research-latest-directions.md)
 
-- [Task Queue Priority and Fairness: Your Task Queue, Your Way](../ch11/140-task-queue-priority-and-fairness-your-task-queue-your-way.html)
-- [Task Queue Priority and Fairness: Your Task Queue, your way](../ch11/140-task-queue-priority-and-fairness-your-task-queue-your-way.html)
+- [Task Queue Priority and Fairness: Your Task Queue, Your Way](../ch11/168-task-queue-priority-and-fairness-your-task-queue-your-way.html)
+- [Task Queue Priority and Fairness: Your Task Queue, your way](../ch11/168-task-queue-priority-and-fairness-your-task-queue-your-way.html)
 - [Exaforce | Agentic SOC Platform and MDR](../ch03/004-agent.html)
 
 ---

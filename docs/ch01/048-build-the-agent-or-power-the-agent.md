@@ -1,5 +1,7 @@
 # Build the Agent or Power the Agent?
 
+## Ch01.048 Build the Agent or Power the Agent?
+
 > 📊 Level ⭐ | 7.9KB | `entities/p-build-the-agent-or-power-the-agent.md`
 
 # Build the Agent or Power the Agent?

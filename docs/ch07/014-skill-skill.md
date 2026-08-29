@@ -1,5 +1,7 @@
 # Skill 产品哲学：歸藏做了爆款 Skill 后的产品反思
 
+## Ch07.014 Skill 产品哲学：歸藏做了爆款 Skill 后的产品反思
+
 > 📊 Level ⭐⭐ | 16.7KB | `entities/skill-product-philosophy-guicang-爆款经验-2026-06-12.md`
 
 # Skill 产品哲学：歸藏做了爆款 Skill 后的产品反思
@@ -222,7 +224,7 @@
 
 - [Skill Design Patterns](054-skill.html) — 5 种核心设计模式(模式/结构视角)
 - [Skill Development Guide Linyi](054-skill.html) — 工程教程/保姆级(工程实现视角)
-- [Agent Skill Writing Practices](../ch01/283-agent-skill.html) — 高质量编写规范(写作规范视角)
+- [Agent Skill Writing Practices](../ch01/284-agent-skill.html) — 高质量编写规范(写作规范视角)
 - [Skill Writing Patterns Best Practices](054-skill.html) — 7 个顶级 Skill 提炼模式
 - [Skill Design Spec 8 Block Checklist Winty](054-skill.html) — 8 块检查清单
 

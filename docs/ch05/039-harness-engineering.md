@@ -1,5 +1,7 @@
 # Harness Engineering 核心模式
 
+## Ch05.039 Harness Engineering 核心模式
+
 > 📊 Level ⭐⭐ | 12.5KB | `entities/harness-engineering-core-patterns.md`
 
 # Harness Engineering 核心模式

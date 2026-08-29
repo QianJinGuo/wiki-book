@@ -1,5 +1,7 @@
 # 三年从 GPT-3 到 Gemini 3：Mollick 对 Agent 时代 AI 演进的实测
 
+## Ch04.196 三年从 GPT-3 到 Gemini 3：Mollick 对 Agent 时代 AI 演进的实测
+
 > 📊 Level ⭐⭐ | 10.5KB | `entities/three-years-gpt3-gemini3-mollick.md`
 
 # 三年从 GPT-3 到 Gemini 3：Mollick 对 Agent 时代 AI 演进的实测

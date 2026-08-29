@@ -1,5 +1,7 @@
 # Co-Existence and the End of Co-Intelligence
 
+## Ch01.451 Co-Existence and the End of Co-Intelligence
+
 > 📊 Level ⭐⭐ | 7.4KB | `entities/co-existence-and-the-end-of-co-intelligence.md`
 
 # Co-Existence and the End of Co-Intelligence
@@ -37,7 +39,7 @@ Mollick 的实际工作流是分层的：
 - **网站搭建**：AI 全权（用 Claude Code + Opus 4.8，几分钟完成）
 - **AI 友好性测试**：让 AI 当目标读者，做 A/B 测试
 
-这种"高价值产出人工 + 流程性产出 AI"的分层策略，与 [The Bitter Lesson Versus The Garbage Can](../ch04/261-the-bitter-lesson-versus-the-garbage-can.html) 提出的"AI 找自己的路径通过组织混乱"形成有趣对照——Mollick 在写作领域亲自示范了"定义好结果，让 AI 找到实现路径"的工作模式。
+这种"高价值产出人工 + 流程性产出 AI"的分层策略，与 [The Bitter Lesson Versus The Garbage Can](../ch04/262-the-bitter-lesson-versus-the-garbage-can.html) 提出的"AI 找自己的路径通过组织混乱"形成有趣对照——Mollick 在写作领域亲自示范了"定义好结果，让 AI 找到实现路径"的工作模式。
 
 ### 4. Prompt Injection 伦理的觉醒
 
@@ -45,7 +47,7 @@ Mollick 的实际工作流是分层的：
 
 ### 5. 协同工作的"协商"性质
 
-Mollick 强调"协商"而非"解决"——模型能力快速变化，最佳工作模式是动态调整。这与 [Your First Ai Agent Should Do One Thing Badly](../ch04/298-your-first-ai-agent-should-do-one-thing-badly.html) 的"crawl, walk, run"迭代哲学同源：不要追求一次性完美配置，而是建立反馈闭环持续调整。
+Mollick 强调"协商"而非"解决"——模型能力快速变化，最佳工作模式是动态调整。这与 [Your First Ai Agent Should Do One Thing Badly](../ch04/299-your-first-ai-agent-should-do-one-thing-badly.html) 的"crawl, walk, run"迭代哲学同源：不要追求一次性完美配置，而是建立反馈闭环持续调整。
 
 ### 与相邻观点的张力
 
@@ -65,9 +67,9 @@ Mollick 强调"协商"而非"解决"——模型能力快速变化，最佳工�
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/098-karpathy-vibe-coding-agentic-engineering.html)
-- [The Bitter Lesson Versus The Garbage Can](../ch04/261-the-bitter-lesson-versus-the-garbage-can.html)
+- [The Bitter Lesson Versus The Garbage Can](../ch04/262-the-bitter-lesson-versus-the-garbage-can.html)
 - [Claude Code And What Comes Next](305-claude-code-and-what-comes-next.html)
-- [Your First Ai Agent Should Do One Thing Badly](../ch04/298-your-first-ai-agent-should-do-one-thing-badly.html)
+- [Your First Ai Agent Should Do One Thing Badly](../ch04/299-your-first-ai-agent-should-do-one-thing-badly.html)
 - [Management As Ai Superpower](360-management-as-ai-superpower.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/004-agent.html)
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html)

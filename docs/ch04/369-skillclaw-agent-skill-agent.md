@@ -1,5 +1,7 @@
 # 高德 SkillClaw：让 Agent Skill 学会进化——跨会话、跨Agent、跨设备、跨用户
 
+## Ch04.369 高德 SkillClaw：让 Agent Skill 学会进化——跨会话、跨Agent、跨设备、跨用户
+
 > 📊 Level ⭐⭐ | 5.2KB | `entities/skillclaw-collective-intelligence.md`
 
 # 高德 SkillClaw：让 Agent Skill 学会进化——跨会话、跨Agent、跨设备、跨用户
@@ -12,7 +14,7 @@
 - [Hermes Skill System Winty](../ch07/016-hermes-skill.html)
 - [Ai Skill Skill Creator 源码拆解](234-skill-skill.html)
 - [Agentic Ai System Architecture Harness Skill Mcp](../ch05/067-harness-skill.html)
-- [Agent Skill Writing Guide](../ch01/283-agent-skill.html)
+- [Agent Skill Writing Guide](../ch01/284-agent-skill.html)
 - [Agent Memory Engineering Tax Aws China 2026](133-agent-memory.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillclaw-collective-intelligence.md)

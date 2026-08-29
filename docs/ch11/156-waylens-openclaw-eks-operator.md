@@ -1,5 +1,7 @@
 # Waylens OpenClaw 多智能体平台 EKS+Operator 改造案例
 
+## Ch11.156 Waylens OpenClaw 多智能体平台 EKS+Operator 改造案例
+
 > 📊 Level ⭐⭐ | 6.6KB | `entities/waylens-openclaw-multi-agent-eks-operator-case.md`
 
 ## 深度分析
@@ -78,7 +80,7 @@ AWS Samples 提供 `sample-your-opc-eks-agents` 仓库，包含：
 
 - 多智能体编排（概念层）
 - [AWS Bedrock AgentCore OS-level 浏览器工具](045-bedrock-agentcore.html)
-- [Aliyun AgentRun 5min 快速上手](../ch04/270-agentrun.html)
+- [Aliyun AgentRun 5min 快速上手](../ch04/289-agentrun.html)
 
 ---
 

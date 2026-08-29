@@ -1,5 +1,7 @@
 # Habby 游戏借助 AWS DevOps Agent 实现智能运维最佳实践
 
+## Ch04.239 Habby 游戏借助 AWS DevOps Agent 实现智能运维最佳实践
+
 > 📊 Level ⭐⭐ | 9.0KB | `entities/habby-game-aws-devops-agent.md`
 
 ## 核心要点
@@ -56,8 +58,8 @@ DevOps Agent 的 Skill 上传功能和 RCA 报告是团队知识沉淀的载体�
 ## 相关实体
 - [9个Agent技能模块化SageMaker微调生命周期](423-ai-agent.html)
 
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](308-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
-- [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](214-aws-devops-agent.html)- [基于 aws 智能设备助手行业资产，构建社交渠道触达的消费级 agent 交互应用](../ch03/004-agent.html)- [使用 aws security agent 构建应用安全闭环：从代码提交到漏洞修复的自动化之路](242-aws-security-agent.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](309-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](214-aws-devops-agent.html)- [基于 aws 智能设备助手行业资产，构建社交渠道触达的消费级 agent 交互应用](../ch03/004-agent.html)- [使用 aws security agent 构建应用安全闭环：从代码提交到漏洞修复的自动化之路](243-aws-security-agent.html)
 
 ---
 

@@ -1,5 +1,7 @@
 # Giving your AI a Job Interview
 
+## Ch11.111 Giving your AI a Job Interview
+
 > 📊 Level ⭐⭐ | 8.5KB | `entities/giving-your-ai-a-job-interview.md`
 
 # Giving your AI a Job Interview
@@ -74,7 +76,7 @@ Vibes 测试看似不严谨，实际上在探测一个标准基准无法捕获�
 
 ### 5. 评估的新范式：从"有多好"到"哪里好、怎么好"
 
-Mollick 的文章暗示了 AI 评估范式的转变：从单一维度的"有多好"（MMLU 分数），到多维度的"哪里好"（GDPval 按职业拆分），再到行为维度的"怎么好"（GuacaDrone 式态度测试）。这个三层递进——能力→分布→行为——对 [AgentOps](../ch04/193-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html) 的评估四层模型有直接启发：工具级评估是"有多好"，会话级评估是"哪里好"，系统级评估需要加入"怎么好"（态度/风险偏好）的维度。
+Mollick 的文章暗示了 AI 评估范式的转变：从单一维度的"有多好"（MMLU 分数），到多维度的"哪里好"（GDPval 按职业拆分），再到行为维度的"怎么好"（GuacaDrone 式态度测试）。这个三层递进——能力→分布→行为——对 [AgentOps](../ch04/190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html) 的评估四层模型有直接启发：工具级评估是"有多好"，会话级评估是"哪里好"，系统级评估需要加入"怎么好"（态度/风险偏好）的维度。
 
 ## 实践启示
 
@@ -86,9 +88,9 @@ Mollick 的文章暗示了 AI 评估范式的转变：从单一维度的"有多�
 
 ### 相关实体
 
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/193-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [Ai Job Interview Model Evaluation Mollick](../ch04/135-ai.html)
-- [The Shape Of Ai Jaggedness Bottlenecks And Salients](../ch01/335-the-shape-of-ai-jaggedness-bottlenecks-and-salients.html)
+- [The Shape Of Ai Jaggedness Bottlenecks And Salients](../ch01/333-the-shape-of-ai-jaggedness-bottlenecks-and-salients.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
 - [Youre Building Agent Security In The Wrong Order](../ch03/004-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)

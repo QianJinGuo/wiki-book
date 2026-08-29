@@ -1,5 +1,7 @@
 # 基于 Amazon WorkSpaces Applications 快速搭建企业级应用培训环境
 
+## Ch11.017 基于 Amazon WorkSpaces Applications 快速搭建企业级应用培训环境
+
 > 📊 Level ⭐⭐ | 18.8KB | `entities/amazon-workspaces-applications-quick-build.md`
 
 ## 核心要点

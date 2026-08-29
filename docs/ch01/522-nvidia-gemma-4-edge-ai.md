@@ -1,5 +1,7 @@
 # Nvidia Gemma 4 Edge AI
 
+## Ch01.522 Nvidia Gemma 4 Edge AI
+
 > 📊 Level ⭐⭐ | 6.3KB | `entities/nvidia-gemma-4-edge-ai.md`
 
 # Bringing AI Closer to the Edge and On&#x2d;Device with Gemma 4 | NVIDIA Technical Blog
@@ -9,8 +11,8 @@ Bringing AI Closer to the Edge and On&#x2d;Device with Gemma 4 | NVIDIA Technica
 - [Nvidia Telco Reasoning Models Nemo](155-nvidia-telco-reasoning-models-nemo.html)
 - [Nvidia Edge First Llms Av Robotics](170-nvidia-edge-first-llms-av-robotics.html)
 - [Nvidia Multimodal Rag Knowledge Systems](168-rag.html)
-- [Nvidia Agentic Ai Subsurface Engineering](../ch04/281-nvidia-agentic-ai-subsurface-engineering.html)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](../ch04/313-nvidia-secure-local-agent-nemoclaw-openclaw.html)
+- [Nvidia Agentic Ai Subsurface Engineering](../ch04/282-nvidia-agentic-ai-subsurface-engineering.html)
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](../ch04/314-nvidia-secure-local-agent-nemoclaw-openclaw.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-gemma-4-edge-ai.md)
 

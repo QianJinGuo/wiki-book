@@ -1,5 +1,7 @@
 # Claude Code 团队 10 条经验：Boris 数据派 THU 分享
 
+## Ch01.706 Claude Code 团队 10 条经验：Boris 数据派 THU 分享
+
 > 📊 Level ⭐⭐ | 2.3KB | `entities/claude-code-team-10-tips-boris-data派THU.md`
 
 # Claude Code Team 10 Tips Boris Data派Thu

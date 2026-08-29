@@ -1,5 +1,7 @@
 # Code Simulation for Enterprise Engineering | PlayerZero
 
+## Ch01.096 Code Simulation for Enterprise Engineering | PlayerZero
+
 > 📊 Level ⭐ | 6.2KB | `entities/hs.playerzero-ai-code-review.md`
 
 ## 核心要点

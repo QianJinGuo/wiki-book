@@ -1,5 +1,7 @@
 # Claude Code 集成其他工具指南
 
+## Ch09.057 Claude Code 集成其他工具指南
+
 > 📊 Level ⭐⭐ | 9.3KB | `entities/claude-code-integration-other-tools.md`
 
 ## 概述
@@ -115,7 +117,7 @@ MCP 是"连接协议"，解决的是"如何让 Claude Code talk to X"的问题�
 
 ## 相关实体
 - [Obsidian + Claude Code 集成指南](../ch03/002-obsidian-claude-code.html) — 知识管理工具集成
-- [Claude Code MCP Server](../ch07/026-claude-code-mcp-server.html) — MCP 协议集成
+- [Claude Code MCP Server](../ch07/027-claude-code-mcp-server.html) — MCP 协议集成
 - [IMClaw](../ch03/057-claude-code.html) — IM 平台操控
 - [OpenClaw 安全增强](../ch04/176-openclaw.html) — 自托管 Agent 平台
 - [Kiro + Claude Code](../ch04/135-ai.html) — AI IDE 协同

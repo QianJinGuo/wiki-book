@@ -1,5 +1,7 @@
 # Workflow architecture
 
+## Ch01.477 Workflow architecture
+
 > 📊 Level ⭐⭐ | 7.0KB | `entities/comprehensive-observability-for-amazon-sagemaker-ai-llm-infe.md`
 
 # Workflow architecture

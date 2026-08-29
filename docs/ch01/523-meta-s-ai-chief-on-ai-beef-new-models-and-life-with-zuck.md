@@ -1,5 +1,7 @@
 # Meta's AI Chief On AI Beef, New Models And Life With Zuck - EP 71 Alex Wang
 
+## Ch01.523 Meta's AI Chief On AI Beef, New Models And Life With Zuck - EP 71 Alex Wang
+
 > 📊 Level ⭐⭐ | 6.3KB | `entities/meta-ai-chief-alex-wang-muse-spark-ai-wars.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/meta-ai-chief-alex-wang-muse-spark-ai-wars.md)

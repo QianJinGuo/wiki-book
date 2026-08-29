@@ -1,5 +1,7 @@
 # 用 Amazon Bedrock AgentCore Payment 构建自主支付 AI Agent：x402 协议实战
 
+## Ch11.004 用 Amazon Bedrock AgentCore Payment 构建自主支付 AI Agent：x402 协议实战
+
 > 📊 Level ⭐⭐ | 55.3KB | `entities/bedrock-agentcore-payment-x402-agent.md`
 
 # 用 Amazon Bedrock AgentCore Payment 构建自主支付 AI Agent：x402 协议实战

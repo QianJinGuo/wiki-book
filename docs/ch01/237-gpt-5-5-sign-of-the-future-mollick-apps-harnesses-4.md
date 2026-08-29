@@ -1,5 +1,7 @@
 # GPT-5.5：Sign of the Future — Mollick 的模型/Apps/Harnesses 三层框架与 4 提示 PhD 论文实验
 
+## Ch01.237 GPT-5.5：Sign of the Future — Mollick 的模型/Apps/Harnesses 三层框架与 4 提示 PhD 论文实验
+
 > 📊 Level ⭐⭐ | 13.6KB | `entities/sign-of-the-future-gpt-55-mollick.md`
 
 # GPT-5.5：Sign of the Future — Mollick 的模型/Apps/Harnesses 三层框架与 4 提示 PhD 论文实验

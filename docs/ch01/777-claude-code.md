@@ -1,5 +1,7 @@
 # 我用 Claude Code 做需求调研，像多了一个产品经理
 
+## Ch01.777 我用 Claude Code 做需求调研，像多了一个产品经理
+
 > 📊 Level ⭐⭐⭐⭐ | 7.3KB | `entities/claude-code-demand-research-taosecho.md`
 
 # 我用 Claude Code 做需求调研，像多了一个产品经理

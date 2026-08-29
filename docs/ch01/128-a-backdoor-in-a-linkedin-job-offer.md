@@ -1,5 +1,7 @@
 # A backdoor in a LinkedIn job offer
 
+## Ch01.128 A backdoor in a LinkedIn job offer
+
 > 📊 Level ⭐ | 3.5KB | `entities/roman-linkedin-backdoor-supply-chain.md`
 
 # A backdoor in a LinkedIn job offer

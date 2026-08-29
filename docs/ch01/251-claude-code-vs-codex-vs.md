@@ -1,5 +1,7 @@
 # Claude Code vs Codex 上下文架构：五层压缩管道 vs 容器文件系统
 
+## Ch01.251 Claude Code vs Codex 上下文架构：五层压缩管道 vs 容器文件系统
+
 > 📊 Level ⭐⭐ | 12.9KB | `entities/claude-code-vs-codex-context-architecture-02.md`
 
 ## 核心命题

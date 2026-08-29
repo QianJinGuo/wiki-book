@@ -1,5 +1,7 @@
 # The Anatomy of an Agent Harness 解读
 
+## Ch04.372 The Anatomy of an Agent Harness 解读
+
 > 📊 Level ⭐⭐ | 5.1KB | `entities/langchain-anatomy-agent-harness.md`
 
 # The Anatomy of an Agent Harness 解读

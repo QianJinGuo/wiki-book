@@ -1,5 +1,7 @@
 # OpenClaw、WorkBuddy、Loop 工程：谁在火，谁有用，谁还在 Demo
 
+## Ch04.381 OpenClaw、WorkBuddy、Loop 工程：谁在火，谁有用，谁还在 Demo
+
 > 📊 Level ⭐⭐ | 4.9KB | `entities/openclaw-workbuddy-loop-engineering-who-is-hot-useful-demo.md`
 
 # OpenClaw、WorkBuddy、Loop 工程：谁在火，谁有用，谁还在 Demo
@@ -22,7 +24,7 @@
 
 本文的价值在于提供了一个务实的 Agent 市场冷热判断框架。与市面上大量技术深潜文章不同，叶小钗从"有人付钱才是真有用"的朴素标准出发，区分了"Demo 火"和"生产火"的差异。
 
-其四象限模型（容错空间 × 行动复杂度）和 Agent 成功三前提是对之前多个 Loop Engineering 话题（如 [Loop Engineering Feedback Control System](348-loop-engineering.html)、[Loop Engineering Concept Analysis Feixue Ali 2026](348-loop-engineering.html)、[Loop Engineering Langchain Four Layer Loopcraft](348-loop-engineering.html)）的有益补充——它们提供了工程视角的 Why 和 When，本文补充了市场视角的 Who 和 Where。
+其四象限模型（容错空间 × 行动复杂度）和 Agent 成功三前提是对之前多个 Loop Engineering 话题（如 [Loop Engineering Feedback Control System](349-loop-engineering.html)、[Loop Engineering Concept Analysis Feixue Ali 2026](349-loop-engineering.html)、[Loop Engineering Langchain Four Layer Loopcraft](349-loop-engineering.html)）的有益补充——它们提供了工程视角的 Why 和 When，本文补充了市场视角的 Who 和 Where。
 
 文章也巧妙回应了"为什么跑出来的是 Coding Agent 和 AI 客服"这个问题：因为它们天然存在于高度结构化的数字环境，且容易做到可观测性。这与 [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/004-agent.html) 中论述的 Agent 演进阶段互为印证，也与 [Vivo Agent Brain Body Icu Harness Evolutionary Framework 2026](../ch05/008-harness.html) 中的 Harness 工程框架一脉相承。
 
@@ -38,10 +40,10 @@
 
 ## 相关实体
 
-- [Loop Engineering Feedback Control System](348-loop-engineering.html)
-- [Loop Engineering Concept Analysis Feixue Ali 2026](348-loop-engineering.html)
-- [Loop Engineering Langchain Four Layer Loopcraft](348-loop-engineering.html)
-- [Loop Engineering Deep Dive Mengzhaosixi 2026](348-loop-engineering.html)
+- [Loop Engineering Feedback Control System](349-loop-engineering.html)
+- [Loop Engineering Concept Analysis Feixue Ali 2026](349-loop-engineering.html)
+- [Loop Engineering Langchain Four Layer Loopcraft](349-loop-engineering.html)
+- [Loop Engineering Deep Dive Mengzhaosixi 2026](349-loop-engineering.html)
 - [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/004-agent.html)
 - [Harness Engineering](../ch05/057-harness-engineering.html)
 - [Vivo Agent Brain Body Icu Harness Evolutionary Framework 2026](../ch05/008-harness.html)

@@ -1,5 +1,7 @@
 # OpenAI Quietly Bought Voice-Cloning Startup Weights.gg
 
+## Ch01.500 OpenAI Quietly Bought Voice-Cloning Startup Weights.gg
+
 > 📊 Level ⭐⭐ | 6.7KB | `entities/openai-quietly-bought-voice-cloning-star.md`
 
 ## 核心要点

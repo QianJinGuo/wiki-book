@@ -1,5 +1,7 @@
 # OpenSpec 规范驱动开发（SDD）框架 — proposal/design/tasks/specs 四类文档意图锁定
 
+## Ch05.017 OpenSpec 规范驱动开发（SDD）框架 — proposal/design/tasks/specs 四类文档意图锁定
+
 > 📊 Level ⭐⭐ | 20.0KB | `entities/openspec-spec-driven-development-trae-solo.md`
 
 # OpenSpec 规范驱动开发（SDD）框架

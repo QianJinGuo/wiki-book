@@ -1,5 +1,7 @@
 # Disgruntled researcher releases two more Microsoft zero-days
 
+## Ch12.027 Disgruntled researcher releases two more Microsoft zero-days
+
 > 📊 Level ⭐⭐ | 11.2KB | `entities/disgruntled-researcher-releases-two-more-microsoft-zero-days-5239758.md`
 
 # Disgruntled researcher releases two more Microsoft zero-days

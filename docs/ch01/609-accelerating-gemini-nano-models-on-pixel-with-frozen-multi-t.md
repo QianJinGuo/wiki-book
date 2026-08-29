@@ -1,5 +1,7 @@
 # Accelerating Gemini Nano models on Pixel with frozen Multi-Token Prediction
 
+## Ch01.609 Accelerating Gemini Nano models on Pixel with frozen Multi-Token Prediction
+
 > 📊 Level ⭐⭐ | 4.6KB | `entities/blog-accelerating-gemini-nano-models-on-pixel-with-frozen-multi-token-prediction.md`
 
 # Accelerating Gemini Nano models on Pixel with frozen Multi-Token Prediction

@@ -1,5 +1,7 @@
 # Harness Engineering：让 Coding Agent 可靠完成长程任务
 
+## Ch04.141 Harness Engineering：让 Coding Agent 可靠完成长程任务
+
 > 📊 Level ⭐⭐ | 12.4KB | `entities/harness-engineering-long-term-agent-tasks.md`
 
 ## 核心定义
@@ -114,10 +116,10 @@ Agent 在执行过程中被中断时，状态会停留在 IN_PROGRESS，但实�
 
 ## 相关实体
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/336-claude-code-harness-deep-understanding.html)
-- [AI Coding Agent 记忆系统](251-ai-coding-agent.html)
-- [你不知道的 Agent 原理架构与工程实践](274-agent-principle-architecture-engineering-practice.html)
+- [AI Coding Agent 记忆系统](252-ai-coding-agent.html)
+- [你不知道的 Agent 原理架构与工程实践](275-agent-principle-architecture-engineering-practice.html)
 - [柚漫剧 AI 全流程提效拆解](135-ai.html)
-- [Agent Skill 设计模式](300-agent-skills.html)
+- [Agent Skill 设计模式](301-agent-skills.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
 - [Thin Harness Fat Skills](../ch05/065-thin-harness-fat-skills-ai.html)

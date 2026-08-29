@@ -1,5 +1,7 @@
 # OpenAI三个语音模型发布同传被杀死
 
+## Ch01.131 OpenAI三个语音模型发布同传被杀死
+
 > 📊 Level ⭐ | 3.4KB | `entities/openai-three-voice-models-kill-simultaneous-translation.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-three-voice-models-kill-simultaneous-translation.md)

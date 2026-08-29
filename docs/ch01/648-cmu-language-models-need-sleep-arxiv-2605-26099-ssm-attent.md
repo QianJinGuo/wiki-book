@@ -1,5 +1,7 @@
 # CMU Language Models Need Sleep (arxiv 2605.26099)：SSM-Attention 睡眠巩固机制
 
+## Ch01.648 CMU Language Models Need Sleep (arxiv 2605.26099)：SSM-Attention 睡眠巩固机制
+
 > 📊 Level ⭐⭐ | 3.1KB | `entities/arxiv-2605-26099-ssm-attention-sleep-consolidation-cmu.md`
 
 # CMU Language Models Need Sleep (arxiv 2605.26099)：SSM-Attention 睡眠巩固机制
@@ -28,7 +30,7 @@ CMU Language Models Need Sleep (arxiv 2605.26099)：SSM-Attention 睡眠巩固�
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04/176-openclaw.html)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/004-agent.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/098-karpathy-vibe-coding-agentic-engineering.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/193-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 
 ## 相关实体
 

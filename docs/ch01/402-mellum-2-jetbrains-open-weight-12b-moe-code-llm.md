@@ -1,5 +1,7 @@
 # Mellum 2 (JetBrains open-weight 12B MoE code LLM)
 
+## Ch01.402 Mellum 2 (JetBrains open-weight 12B MoE code LLM)
+
 > 📊 Level ⭐⭐ | 8.1KB | `entities/mellum-2-jetbrains-open-12b-moe-code-model.md`
 
 # Mellum 2 (JetBrains open-weight 12B MoE code LLM)

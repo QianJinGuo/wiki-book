@@ -1,5 +1,7 @@
 # AutoResearch-LLM：让 Agent 接手 LLM 训练优化
 
+## Ch01.554 AutoResearch-LLM：让 Agent 接手 LLM 训练优化
+
 > 📊 Level ⭐⭐ | 5.7KB | `entities/autoresearch-llm-agent-llm-training-optimization-1688.md`
 
 # AutoResearch-LLM：让 Agent 接手 LLM 训练优化

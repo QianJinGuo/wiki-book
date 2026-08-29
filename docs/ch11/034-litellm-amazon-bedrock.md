@@ -1,5 +1,7 @@
 # LiteLLM 驱动的 Amazon Bedrock 成本治理：四层防护体系
 
+## Ch11.034 LiteLLM 驱动的 Amazon Bedrock 成本治理：四层防护体系
+
 > 📊 Level ⭐⭐ | 13.5KB | `entities/litellm-amazon-bedrock-cost-control-four-layer.md`
 
 > [!abstract]

@@ -1,5 +1,7 @@
 # Hermes-Agent 官方 Kanban 深度实测：让商业 CLI 工具当 Orchestrator
 
+## Ch01.278 Hermes-Agent 官方 Kanban 深度实测：让商业 CLI 工具当 Orchestrator
+
 > 📊 Level ⭐⭐ | 11.8KB | `entities/hermes-agent-kanban-deep-test-by-wjjagi-2026.md`
 
 ## 核心结论

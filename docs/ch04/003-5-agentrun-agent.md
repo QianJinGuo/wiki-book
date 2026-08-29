@@ -1,5 +1,7 @@
 # 5 分钟上手 AgentRun：从注册到第一个 Agent 运行
 
+## Ch04.003 5 分钟上手 AgentRun：从注册到第一个 Agent 运行
+
 > 📊 Level ⭐ | 9.0KB | `entities/aliyun-agentrun-5min-quickstart.md`
 
 ## 核心定位
@@ -87,13 +89,13 @@
 ## 资源链接
 ## 相关实体
 - [深势科技携手阿里云 Agentrun加速科研 Ai Agent 全速运行](423-ai-agent.html)
-- [Aliyun Agentrun](270-agentrun.html)
-- [Agentrun Cli V010 正式开源一行命令运行您的托管 Agent](270-agentrun.html)
+- [Aliyun Agentrun](289-agentrun.html)
+- [Agentrun Cli V010 正式开源一行命令运行您的托管 Agent](289-agentrun.html)
 - [Skill Development Guide Aliyun 2026](../ch07/054-skill.html)
 - [Strands Agents Cloud Cost Optimizer](../ch03/004-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aliyun-agentrun-5min-quickstart.md)
-- [agentrun：阿里云多 agent 生产级协作方案（a2a 开放协议）](270-agentrun.html)
+- [agentrun：阿里云多 agent 生产级协作方案（a2a 开放协议）](289-agentrun.html)
 
 ---
 

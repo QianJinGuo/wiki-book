@@ -1,5 +1,7 @@
 # What the design-to-code loop unlocks
 
+## Ch03.006 What the design-to-code loop unlocks
+
 > 📊 Level ⭐ | 11.3KB | `entities/design-to-code-loop-figma.md`
 
 ## 核心要点

@@ -1,5 +1,7 @@
 # RAG vs LLM Wiki 深度对比：企业知识库架构选型指南
 
+## Ch01.035 RAG vs LLM Wiki 深度对比：企业知识库架构选型指南
+
 > 📊 Level ⭐ | 8.5KB | `entities/rag-vs-llm-wiki-enterprise-knowledge-base.md`
 
 ## 评分

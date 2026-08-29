@@ -1,5 +1,7 @@
 # Salesforce 主动砍掉了界面，a16z 合伙人说：护城河从来不在那里
 
+## Ch03.038 Salesforce 主动砍掉了界面，a16z 合伙人说：护城河从来不在那里
+
 > 📊 Level ⭐⭐ | 16.9KB | `entities/salesforce-headless-software-losing-head-a16z.md`
 
 ## 核心命题
@@ -162,12 +164,12 @@ Agent 治理是尚未被解决的难题，企业应该现在开始试点而非�
 - [Enterprise Software Moats Agent Era](004-agent.html)
 - from-system-of-record-to-system-of-intelligence.md-intelligence-1
 - [我用 Skillmd 做了一个简历生成器](../ch07/054-skill.html)
-- [Aliyun Agentrun 2Line Integration](../ch04/270-agentrun.html)
+- [Aliyun Agentrun 2Line Integration](../ch04/289-agentrun.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/salesforce-headless-software-losing-head-a16z.md)
 - [from](../ch01/195-from-system-of-record-to-system-of-intelligence.html)
 - [From System Of Record To System Of Intelligence](../ch01/195-from-system-of-record-to-system-of-intelligence.html)
-- [meet customers where they are: agentforce contact center now](../ch04/316-meet-customers-where-they-are-agentforce-contact-center-now.html)
+- [meet customers where they are: agentforce contact center now](../ch04/317-meet-customers-where-they-are-agentforce-contact-center-now.html)
 
 ---
 

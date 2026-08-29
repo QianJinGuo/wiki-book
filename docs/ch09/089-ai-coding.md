@@ -1,5 +1,7 @@
 # AI Coding 的底层框架：一切优化都是在对抗熵增——信息论视角
 
+## Ch09.089 AI Coding 的底层框架：一切优化都是在对抗熵增——信息论视角
+
 > 📊 Level ⭐⭐ | 6.5KB | `entities/ai-coding-entropy-framework-baidu-geek-2026.md`
 
 ## 核心概述

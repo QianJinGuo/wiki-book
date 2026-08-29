@@ -1,5 +1,7 @@
 # 小刘商业 Agent 增强层通用基座
 
+## Ch04.425 小刘商业 Agent 增强层通用基座
+
 > 📊 Level ⭐⭐ | 2.9KB | `entities/ai-xiaolaoliu-business-agent-augmentation-layer-general-base-20260606.md`
 
 # Ai Xiaolaoliu Business Agent Augmentation Layer General Base 20260606
@@ -26,7 +28,7 @@ Ai Xiaolaoliu Business Agent Augmentation Layer General Base 20260606 涉及agen
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/004-agent.html)
 - [Karpathy Vibe Coding Agentic Engineering](098-karpathy-vibe-coding-agentic-engineering.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](193-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](176-openclaw.html)
 
 ## 相关实体

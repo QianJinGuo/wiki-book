@@ -1,5 +1,7 @@
 # Edge AI Networking — Wi-Fi 7/8 Convergence Analysis
 
+## Ch03.090 Edge AI Networking — Wi-Fi 7/8 Convergence Analysis
+
 > 📊 Level ⭐⭐ | 4.4KB | `entities/edge-ai-networking-wifi-convergence-2026.md`
 
 # Edge AI Networking — Wi-Fi 7/8 Convergence Analysis

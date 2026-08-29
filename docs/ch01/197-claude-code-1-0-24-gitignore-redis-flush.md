@@ -1,5 +1,7 @@
 # Claude Code 1.0.24 工具调用安全事故：静默删 .gitignore 与 Redis flush 复盘
 
+## Ch01.197 Claude Code 1.0.24 工具调用安全事故：静默删 .gitignore 与 Redis flush 复盘
+
 > 📊 Level ⭐⭐ | 16.0KB | `entities/claude-code-tool-call-security-incident-gitignore-redis-anthropic-apology-2026-06-17.md`
 
 # Claude Code 1.0.24 工具调用安全事故：静默删 .gitignore 与 Redis flush 复盘

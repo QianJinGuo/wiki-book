@@ -1,5 +1,7 @@
 # 科大讯飞星火Token Factory：企业AI模型路由与成本管理统一中间层
 
+## Ch11.113 科大讯飞星火Token Factory：企业AI模型路由与成本管理统一中间层
+
 > 📊 Level ⭐⭐ | 8.4KB | `entities/xunfei-spark-token-factory-model-routing-cost.md`
 
 # 科大讯飞星火Token Factory：企业AI模型路由与成本管理统一中间层
@@ -107,7 +109,7 @@
 - [AI Coding Agent Token 成本控制五层模型](../ch09/038-coding-agent.html) — Token成本工程化的五层优化模型，侧重AI Coding场景
 - [AI Gateways vs MCP Gateways](067-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html) — AI网关在推理路由与成本控制中的定位分析
 - [LLM 缓存原理与实践](../ch01/448-llm.html) — 语义缓存/Prefix Caching的技术原理深化
-- [State of Routing in Model Serving](151-state-of-routing-in-model-serving.html) — Netflix模型服务路由架构演进
+- [State of Routing in Model Serving](152-state-of-routing-in-model-serving.html) — Netflix模型服务路由架构演进
 
 ---
 

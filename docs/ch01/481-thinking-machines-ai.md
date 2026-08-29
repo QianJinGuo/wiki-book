@@ -1,5 +1,7 @@
 # Thinking Machines 交互模型：离真正实时 AI 近了一步
 
+## Ch01.481 Thinking Machines 交互模型：离真正实时 AI 近了一步
+
 > 📊 Level ⭐⭐ | 7.0KB | `entities/thinking-machines-interaction-models-ai-cold.md`
 
 # thinking-machines-interaction-models-ai-cold

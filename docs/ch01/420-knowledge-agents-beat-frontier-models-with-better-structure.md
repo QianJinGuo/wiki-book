@@ -1,5 +1,7 @@
 # Knowledge Agents: Beat Frontier Models with Better Structure
 
+## Ch01.420 Knowledge Agents: Beat Frontier Models with Better Structure
+
 > 📊 Level ⭐⭐ | 7.9KB | `entities/knowledge-agents-beat-frontier-models.md`
 
 # Knowledge Agents: Beat Frontier Models with Better Structure

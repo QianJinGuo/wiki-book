@@ -1,5 +1,7 @@
 # optimize_anything: A Universal API for Optimizing any Text Parameter
 
+## Ch01.654 optimize_anything: A Universal API for Optimizing any Text Parameter
+
 > 📊 Level ⭐⭐ | 3.0KB | `entities/gepa-optimize-anything-universal-text-optimization.md`
 
 # optimize_anything: A Universal API for Optimizing any Text Parameter
@@ -36,7 +38,7 @@ oa.
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/004-agent.html)
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](651-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/193-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/004-agent.html)
 
 ---

@@ -1,5 +1,7 @@
 # Netflix Druid 区间感知缓存：指数 TTL + 分桶查询去重
 
+## Ch11.079 Netflix Druid 区间感知缓存：指数 TTL + 分桶查询去重
+
 > 📊 Level ⭐⭐ | 10.1KB | `entities/netflix-druid-interval-aware-caching.md`
 
 # Netflix Druid 区间感知缓存：指数 TTL + 分桶查询去重
@@ -70,7 +72,7 @@ Netflix 选择拦截代理而非修改 Druid 源码，这是一个务实的工�
 - [High Throughput Graph Abstraction At Netflix Part I](087-high-throughput-graph-abstraction-at-netflix-part-i.html)
 - [Netflix Live Operations Human Infrastructure](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-live-operations-human-infrastructure.md)
 - [Netflix Metadata Service Model Lifecycle Graph](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-metadata-service-model-lifecycle-graph.md)
-- [Netflix Nebula Archrules](078-netflix-nebula-archrules-java-archunit.html)
+- [Netflix Nebula Archrules](077-netflix-nebula-archrules-java-archunit.html)
 
 ## 相关引用
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/netflix-druid-interval-aware-caching.md)

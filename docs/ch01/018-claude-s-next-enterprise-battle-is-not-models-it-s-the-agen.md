@@ -1,5 +1,7 @@
 # Claude's next enterprise battle is not models: it's the agent control plane
 
+## Ch01.018 Claude's next enterprise battle is not models: it's the agent control plane
+
 > 📊 Level ⭐ | 10.0KB | `entities/claudes_next_enterprise_battle_is_not_mo.md`
 
 ## 核心要点
@@ -61,7 +63,7 @@ OpenAI 的 Assistants 和 Responses API 稳居第二（23.2% → 25.7%），这�
 
 ## 关联阅读
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claudes_next_enterprise_battle_is_not_mo.md)
-- [Agent Orchestration](../ch04/360-agent-orchestration.html)
+- [Agent Orchestration](../ch04/241-agent-orchestration.html)
 
 ## ## 相关实体
 - [Anthropic最危险路线图曝光: 无限记忆、多智能体! 硅谷AI终局仅剩双雄决顶](../ch04/135-ai.html)

@@ -1,5 +1,7 @@
 # ICML 2026 Position Paper — Transformer 图灵完备性高度依赖上下文管理 (RUC 魏哲巍团队)
 
+## Ch01.757 ICML 2026 Position Paper — Transformer 图灵完备性高度依赖上下文管理 (RUC 魏哲巍团队)
+
 > 📊 Level ⭐⭐⭐ | 10.4KB | `entities/icml-2026-position-turing-completeness-context-management-ruc-wei-2026.md`
 
 ## 概述
@@ -64,7 +66,7 @@ ICML 2026 Position Paper **"Position: The Turing-Completeness of Autoregressive 
 - [Headroom 上下文压缩 + 缓存稳定化](https://github.com/QianJinGuo/wiki/blob/main/entities/headroom-context-compression-cache-stabilization.md) — 压缩算法
 - [Codex Context Engineering](391-codex.html)
 - [Claude Code Context Engineering (Anthropic Thariq)](../ch03/057-claude-code.html)
-- [Claude Fable 5 提示词泄漏](225-claude-fable-5.html) — 同样指出 "系统 = 模型 + 上下文管理"
+- [Claude Fable 5 提示词泄漏](226-claude-fable-5.html) — 同样指出 "系统 = 模型 + 上下文管理"
 - [LLM Post-Training 全景指南](448-llm.html) — 可学习性维度对照
 
 ---

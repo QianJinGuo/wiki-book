@@ -1,5 +1,7 @@
 # Harness 工程搭建式业务 Agent 评测方案：Claude Code 作 Harness 搭建者
 
+## Ch04.073 Harness 工程搭建式业务 Agent 评测方案：Claude Code 作 Harness 搭建者
+
 > 📊 Level ⭐⭐ | 17.4KB | `entities/harness-engineered-business-agent-evaluation-aliyun-boyu.md`
 
 # Harness 工程搭建式业务 Agent 评测方案：Claude Code 作 Harness 搭建者
@@ -175,7 +177,7 @@
 - [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md) — AHE 通用 Harness 工程框架
 - [Claude Code Architecture](../ch03/057-claude-code.html) — Claude Code 架构（作为 Harness 搭建者的能力来源）
 - LLM-as-Judge 通用方法
-- [Ai Coding Agent Quality Defense Five Control Mechanisms](251-ai-coding-agent.html) — AI Coding Agent 质量防御五机制（评测即其中一环）
+- [Ai Coding Agent Quality Defense Five Control Mechanisms](252-ai-coding-agent.html) — AI Coding Agent 质量防御五机制（评测即其中一环）
 
 ---
 

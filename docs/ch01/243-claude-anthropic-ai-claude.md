@@ -1,5 +1,7 @@
 # Claude思考黑箱终结了！Anthropic 祭出AI读心术：揭秘Claude的隐藏想法！
 
+## Ch01.243 Claude思考黑箱终结了！Anthropic 祭出AI读心术：揭秘Claude的隐藏想法！
+
 > 📊 Level ⭐⭐ | 13.3KB | `entities/anthropic-nla-natural-language-autoencoders-interpretability.md`
 
 ## 背景：为什么需要 NLAs

@@ -1,5 +1,7 @@
 # Latest Open Artifacts #19：Qwen 3.5·GLM-5·MiniMax M2.5 中国开源模型前沿
 
+## Ch01.399 Latest Open Artifacts #19：Qwen 3.5·GLM-5·MiniMax M2.5 中国开源模型前沿
+
 > 📊 Level ⭐⭐ | 8.2KB | `entities/latest-open-artifacts-19-qwen-glm-minimax-interconnects.md`
 
 # Latest Open Artifacts #19：Qwen 3.5·GLM-5·MiniMax M2.5 中国开源模型前沿

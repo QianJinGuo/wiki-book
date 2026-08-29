@@ -1,5 +1,7 @@
 # Agent 时间性策略（Temporal Policies）：基于轨迹的有状态授权架构
 
+## Ch04.182 Agent 时间性策略（Temporal Policies）：基于轨迹的有状态授权架构
+
 > 📊 Level ⭐⭐ | 10.9KB | `entities/securing-ai-agents-temporal-policies-agentcore.md`
 
 # Agent 时间性策略（Temporal Policies）：基于轨迹的有状态授权架构

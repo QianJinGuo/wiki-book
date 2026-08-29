@@ -1,5 +1,7 @@
 # Xero Announces Integration with Anthropic's Claude
 
+## Ch01.401 Xero Announces Integration with Anthropic's Claude
+
 > 📊 Level ⭐⭐ | 8.2KB | `entities/xero-announces-integration-with-anthropics-claude.md`
 
 ## 核心要点

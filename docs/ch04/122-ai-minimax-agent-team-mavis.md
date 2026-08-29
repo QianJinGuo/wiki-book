@@ -1,5 +1,7 @@
 # 一个 AI 还是不够的：MiniMax Agent Team（Mavis）
 
+## Ch04.122 一个 AI 还是不够的：MiniMax Agent Team（Mavis）
+
 > 📊 Level ⭐⭐ | 13.4KB | `entities/minimax-agent-team-mavis-owner-worker-verifier.md`
 
 [Minimax Agent Team Mavis Owner Worker Verifier](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/minimax-agent-team-mavis-owner-worker-verifier.md)
@@ -118,7 +120,7 @@ MiniMax 的 Owner-Worker-Verifier 模型揭示了一个关键认知：多 Agent 
 - [Minimax Agent Team Mavis](122-ai-minimax-agent-team-mavis.html)
 - [Gepa Optimize Anything](../ch01/235-gepa-optimize-anything.html)
 - [Sub Agent Vs Agent Team Selection Guide](422-vs-agent.html)
-- [要实现一个工作流选择 Agent Skills 还是 Ai 表格](300-agent-skills.html)
+- [要实现一个工作流选择 Agent Skills 还是 Ai 表格](301-agent-skills.html)
 - [Memory Agent Systems Cobanov](../ch03/004-agent.html)
 
 ---

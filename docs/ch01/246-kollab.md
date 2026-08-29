@@ -1,5 +1,7 @@
 # **一、关于 Kollab**
 
+## Ch01.246 **一、关于 Kollab**
+
 > 📊 Level ⭐⭐ | 13.2KB | `entities/对抗-agent-遗忘kollab-基于amazon-bedrock-agentcore-的团队ai工作空间实践.md`
 
 # **一、关于 Kollab**
@@ -115,7 +117,7 @@ S3 作为真值源，Runtime 与 S3 之间的同步是由两个动作构成：hy
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/对抗-agent-遗忘kollab-基于amazon-bedrock-agentcore-的团队ai工作空间实践.md)
 
-- [stop hand-tuning kernels: how neuron agentic development acc](../ch04/249-stop-hand-tuning-kernels-how-neuron-agentic-development-acc.html)
+- [stop hand-tuning kernels: how neuron agentic development acc](../ch04/250-stop-hand-tuning-kernels-how-neuron-agentic-development-acc.html)
 
 ## 相关主题
 

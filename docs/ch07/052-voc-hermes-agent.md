@@ -1,5 +1,7 @@
 # 高德交易 VOC 自动排查：基于 Hermes 的多 Agent 架构实践
 
+## Ch07.052 高德交易 VOC 自动排查：基于 Hermes 的多 Agent 架构实践
+
 > 📊 Level ⭐⭐ | 7.1KB | `entities/gaode-voc-hermes-multi-agent-auto-triage-2026.md`
 
 # 高德交易 VOC 自动排查：基于 Hermes 的多 Agent 架构实践

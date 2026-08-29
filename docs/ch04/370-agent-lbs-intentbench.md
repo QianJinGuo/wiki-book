@@ -1,5 +1,7 @@
 # 智能时空思考Agent｜首个真实出行隐式意图评测基准LBS-IntentBench正式开源
 
+## Ch04.370 智能时空思考Agent｜首个真实出行隐式意图评测基准LBS-IntentBench正式开源
+
 > 📊 Level ⭐⭐ | 5.1KB | `entities/lbs-intent-bench-lbs-intentbench.md`
 
 # 智能时空思考Agent｜首个真实出行隐式意图评测基准LBS-IntentBench正式开源

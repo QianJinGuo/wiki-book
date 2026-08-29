@@ -1,5 +1,7 @@
 # AI Native 团队搭建：七层模型与六步演进路线
 
+## Ch04.169 AI Native 团队搭建：七层模型与六步演进路线
+
 > 📊 Level ⭐⭐ | 11.3KB | `entities/ai-native-team-building-yexiaochai.md`
 
 ## 相关实体

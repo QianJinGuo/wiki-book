@@ -1,5 +1,7 @@
 # Trail of Bits: Skill Scanner Bypass 实证研究
 
+## Ch01.152 Trail of Bits: Skill Scanner Bypass 实证研究
+
 > 📊 Level ⭐⭐ | 25.1KB | `entities/trail-of-bits-skill-scanner-bypass-distribution.md`
 
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/trail-of-bits-skill-scanner-bypass-distribution.md)
@@ -63,7 +65,7 @@ Trail of Bits 报告称攻击使用的不是高级技术，而是"标准技巧 +
 - trail-of-bits 实体 = 攻击维度（SKILL.md 怎么被恶意构造）
 - 共存：cross-link 为 skill 开发者的"威胁模型"
 
-### 与 [Skillclaw](../ch04/333-skillclaw-nacos-agent-skill-registry.html) 的关系
+### 与 [Skillclaw](../ch04/334-skillclaw-nacos-agent-skill-registry.html) 的关系
 
 - skillclaw = 阿里 SkillClaw：让 Agent 技能在真实使用中集体进化
 - trail-of-bits 实体 = 这些"技能市场"的安全现状
@@ -167,7 +169,7 @@ Cisco scanner 使用了相对强的模型（Sonnet 4.6），但依然被 prompt 
 
 4. **了解 skill 的实际文件组成**：检查 skill 包中是否包含预编译二进制（.pyc、.so、.dll）或非预期文件类型，必要时要求 source code 而非预编译版本。
 
-5. **企业内 skill hub + 代码审计**：相比公共 marketplace，企业自建 skill hub 并对 skill 进行代码审计是更可靠的安全模型。可参考 [Skillsieve Agent Skill Security](../ch04/332-skillsieve-agent-skill.html) 中的企业级 skill 安全实践。
+5. **企业内 skill hub + 代码审计**：相比公共 marketplace，企业自建 skill hub 并对 skill 进行代码审计是更可靠的安全模型。可参考 [Skillsieve Agent Skill Security](../ch04/333-skillsieve-agent-skill.html) 中的企业级 skill 安全实践。
 
 ### 对 Agent 系统设计者
 
@@ -183,7 +185,7 @@ Cisco scanner 使用了相对强的模型（Sonnet 4.6），但依然被 prompt 
 
 **相关实体**：
 - [Skill Design Patterns](../ch07/054-skill.html) — skill 的设计维度（与攻击维度互补）
-- [Skillsieve Agent Skill Security](../ch04/332-skillsieve-agent-skill.html) — 企业级 skill 安全实践
+- [Skillsieve Agent Skill Security](../ch04/333-skillsieve-agent-skill.html) — 企业级 skill 安全实践
 - [Agent Security Three Step Sequence Harness Governance Identity Crewai](../ch05/008-harness.html) — agent 安全的通用框架
 - [Prompt Injection Defense](https://github.com/QianJinGuo/wiki/blob/main/concepts/prompt-injection-defense.md) — prompt injection 的防御思路
 - [Agent Security Attack Defense](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-attack-defense.md) — agent 安全攻击与防御全景

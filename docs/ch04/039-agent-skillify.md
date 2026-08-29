@@ -1,5 +1,7 @@
 # Agent 可靠性的工程解法：从 Skillify 看持续改进机制
 
+## Ch04.039 Agent 可靠性的工程解法：从 Skillify 看持续改进机制
+
 > 📊 Level ⭐⭐ | 23.0KB | `entities/agent-reliability-engineering-skillify-continuous-improvement.md`
 
 ## 概述
@@ -95,7 +97,7 @@ OpenAI 的"garbage collection"思路值得借鉴：后台定期运行清理 Agen
 - [GBrain 自进化体系](../ch01/473-llm-wiki-obsidian-wiki-gbrain.html) — skillify 是 gbrain 自演化的核心机制
 - [Harness Engineering](../ch05/057-harness-engineering.html) — 传感器失效是 latent space 工作分类错位的体现
 - [Harness 从 Prompt 到工程体系](../ch05/008-harness.html) — 约束与自主权的辩证关系
-- [AIAIGC峰会嘉宾阵容](359-aiaigc.html)
+- [AIAIGC峰会嘉宾阵容](360-aiaigc.html)
 - [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](176-openclaw.html)
 - [从提需求到部署发布全AI全自动化后研发效能全面跃升](135-ai.html)
 - [Hermes Agent vs OpenClaw 对比分析](161-hermes-agent.html)

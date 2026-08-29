@@ -1,5 +1,7 @@
 # 用好 Claude 的 18 个动作：搭一个个人 AI 工作台（Personal Harness）
 
+## Ch01.322 用好 Claude 的 18 个动作：搭一个个人 AI 工作台（Personal Harness）
+
 > 📊 Level ⭐⭐ | 10.3KB | `entities/ruofei-claude-18-actions-personal-ai-workbench.md`
 
 # 用好 Claude 的 18 个动作：搭一个个人 AI 工作台（Personal Harness）

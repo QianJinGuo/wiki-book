@@ -1,5 +1,7 @@
 # Products are out, brains are in
 
+## Ch01.021 Products are out, brains are in
+
 > 📊 Level ⭐ | 9.4KB | `entities/products-are-out-brains-are-in.md`
 
 # Products are out, brains are in

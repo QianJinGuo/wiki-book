@@ -1,5 +1,7 @@
 # Hermes Self-Improving 闭环详解（winty）
 
+## Ch04.174 Hermes Self-Improving 闭环详解（winty）
+
 > 📊 Level ⭐⭐ | 11.0KB | `entities/hermes-self-improving-loop-winty.md`
 
 ## 核心定义

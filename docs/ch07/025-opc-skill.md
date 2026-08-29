@@ -1,5 +1,7 @@
 # 京东健康 OPC 团队产品全流程 Skill 探索
 
+## Ch07.025 京东健康 OPC 团队产品全流程 Skill 探索
+
 > 📊 Level ⭐⭐ | 10.4KB | `entities/jd-health-opc-skill-full-process.md`
 
 # 京东健康 OPC 团队产品全流程 Skill 探索
@@ -104,7 +106,7 @@ OPC（One Person Company）模式的核心理念是让小型团队拥有端到�
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Agent Harness Engineering Paradigm](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-harness-engineering-paradigm.md)
 - [面向 Agent 的后端设计](../ch03/004-agent.html)
-- [企业 Agent 编排](../ch04/360-agent-orchestration.html)
+- [企业 Agent 编排](../ch04/241-agent-orchestration.html)
 
 ## 来源
 

@@ -1,5 +1,7 @@
 # The 2026 State of AI Traffic & Cyberthreat Benchmark Report - HUMAN Security
 
+## Ch01.253 The 2026 State of AI Traffic & Cyberthreat Benchmark Report - HUMAN Security
+
 > 📊 Level ⭐⭐ | 12.7KB | `entities/ai-traffic-cyberthreat-benchmark-2026.md`
 
 # The 2026 State of AI Traffic & Cyberthreat Benchmark Report - HUMAN Security
@@ -146,7 +148,7 @@ AI 驱动的凭证填充要求企业重新审视登录安全策略：
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/098-karpathy-vibe-coding-agentic-engineering.html) — Karpathy 对 AI 时代安全问题的讨论
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/004-agent.html) — Agent 架构中的安全考量
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html) — AI 工具化的安全影响
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/193-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html) — 企业级 Agent 部署的安全考量
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html) — 企业级 Agent 部署的安全考量
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/004-agent.html) — Agent 系统的可观测性与安全审计
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)
 

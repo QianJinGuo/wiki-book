@@ -1,5 +1,7 @@
 # Coinbase Becomes Hyperliquid’s Official USDC Treasury Deployer as USDH Sunsets
 
+## Ch01.076 Coinbase Becomes Hyperliquid’s Official USDC Treasury Deployer as USDH Sunsets
+
 > 📊 Level ⭐ | 7.2KB | `entities/coinbase-becomes-hyperliquids-official-usdc-treasury-deployer-as-usdh-sunsets.md`
 
 ## 核心要点

@@ -1,5 +1,7 @@
 # Designers are a rare breed
 
+## Ch03.077 Designers are a rare breed
+
 > 📊 Level ⭐⭐ | 6.9KB | `entities/designers-are-a-rare-breed.md`
 
 # Designers are a rare breed
@@ -43,7 +45,7 @@ Claude Design 引发的行业焦虑，源于把「设计普及」误读为「设
 - AI UX 设计模式 —— AI 时代交互设计范式的方法论集合
 - [Top 10 Design Gadgets（2026）](https://github.com/QianJinGuo/wiki/blob/main/entities/top-10-design-gadgets-creative-professionals-2026.md) —— 创意专业人士的工具装备清单
 - [柚漫剧 AI 全流程提效拆解](../ch04/135-ai.html) —— AI 提效从单点到工程化的行业案例
-- [Agent Skill 设计模式](../ch04/300-agent-skills.html) —— Agent 能力封装进入设计模式阶段的趋势观察
+- [Agent Skill 设计模式](../ch04/301-agent-skills.html) —— Agent 能力封装进入设计模式阶段的趋势观察
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/designers-are-a-rare-breed.md)
 

@@ -1,5 +1,7 @@
 # 【图解】Claude Code 源码解析 ｜Prompt 提示词模块
 
+## Ch09.050 【图解】Claude Code 源码解析 ｜Prompt 提示词模块
+
 > 📊 Level ⭐⭐ | 10.4KB | `entities/claude-code-prompt-source-analysis-fanone.md`
 
 [Claude Code Prompt Source Analysis Fanone](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-prompt-source-analysis-fanone.md)

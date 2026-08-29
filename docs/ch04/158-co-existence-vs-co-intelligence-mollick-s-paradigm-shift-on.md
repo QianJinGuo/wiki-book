@@ -1,5 +1,7 @@
 # Co-Existence vs Co-Intelligence: Mollick's Paradigm Shift on AI Autonomy
 
+## Ch04.158 Co-Existence vs Co-Intelligence: Mollick's Paradigm Shift on AI Autonomy
+
 > 📊 Level ⭐⭐ | 11.8KB | `entities/co-existence-paradigm-shift-agentic-ai-mollick-2026.md`
 
 # Co-Existence vs Co-Intelligence: Mollick's Paradigm Shift on AI Autonomy

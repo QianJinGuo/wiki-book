@@ -1,5 +1,7 @@
 # How we made WINDOW JOIN parallel and vectorized
 
+## Ch01.030 How we made WINDOW JOIN parallel and vectorized
+
 > 📊 Level ⭐ | 8.8KB | `entities/how-we-made-window-join-parallel-and-vectorized.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-we-made-window-join-parallel-and-vectorized.md)

@@ -1,5 +1,7 @@
 # 万字保姆级教程：Hermes+Kimi K2.6 打造7x24h Agent军团
 
+## Ch04.363 万字保姆级教程：Hermes+Kimi K2.6 打造7x24h Agent军团
+
 > 📊 Level ⭐⭐ | 5.5KB | `entities/hermes-agent-k2-6-multi-agent.md`
 
 # 万字保姆级教程：Hermes+Kimi K2.6 打造7x24h Agent军团

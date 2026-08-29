@@ -1,5 +1,7 @@
 # AI Skill 测评指标体系
 
+## Ch01.350 AI Skill 测评指标体系
+
 > 📊 Level ⭐⭐ | 9.4KB | `entities/ai-skill-metrics-system.md`
 
 ## 八个核心指标

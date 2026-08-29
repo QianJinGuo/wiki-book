@@ -1,5 +1,7 @@
 # 从手动到自动化：用AgentEval构建Agent评测体系
 
+## Ch01.675 从手动到自动化：用AgentEval构建Agent评测体系
+
 > 📊 Level ⭐⭐ | 2.7KB | `entities/agent-eval-wallezhang-yaml-driven-agent-evaluation.md`
 
 # 从手动到自动化：用AgentEval构建Agent评测体系

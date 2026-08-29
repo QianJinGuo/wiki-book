@@ -1,5 +1,7 @@
 # Matt Pocock Skills vs Superpowers：Agent 技能工程的两条路线
 
+## Ch04.389 Matt Pocock Skills vs Superpowers：Agent 技能工程的两条路线
+
 > 📊 Level ⭐⭐ | 4.6KB | `entities/matt-pocock-skills-vs-superpowers-comparison.md`
 
 # Matt Pocock Skills vs Superpowers：Agent 技能工程的两条路线

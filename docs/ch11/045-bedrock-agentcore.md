@@ -1,5 +1,7 @@
 # Bedrock AgentCore 自定义代码评估器
 
+## Ch11.045 Bedrock AgentCore 自定义代码评估器
+
 > 📊 Level ⭐⭐ | 12.9KB | `entities/build-custom-code-based-evaluators-in-amazon-bedrock-agentco.md`
 
 ## 摘要
@@ -76,7 +78,7 @@ On-Demand 评估在 CI/CD 中的角色是**门禁（gate）而非建议**——�
 ## 相关实体
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](217-amazon-nova.html)
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](048-prowler-genai.html)
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/308-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/309-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](211-bedrock.html)
 - [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](135-amazon-bedrock.html)
 

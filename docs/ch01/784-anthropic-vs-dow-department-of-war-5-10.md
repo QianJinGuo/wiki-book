@@ -1,5 +1,7 @@
 # Anthropic vs DoW (Department of War) 与开源模型的 5-10 年权力均衡
 
+## Ch01.784 Anthropic vs DoW (Department of War) 与开源模型的 5-10 年权力均衡
+
 > 📊 Level ⭐⭐⭐⭐⭐ | 11.2KB | `entities/anthropic-vs-dow-open-models-power-equilibrium-2026.md`
 
 # Anthropic vs DoW 与开源模型的 5-10 年权力均衡

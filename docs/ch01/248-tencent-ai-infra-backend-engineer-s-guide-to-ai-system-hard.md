@@ -1,5 +1,7 @@
 # Tencent AI Infra: Backend Engineer's Guide to AI System Hardware and Software
 
+## Ch01.248 Tencent AI Infra: Backend Engineer's Guide to AI System Hardware and Software
+
 > 📊 Level ⭐⭐ | 13.0KB | `entities/tencent-ai-infra-backend-engineer-huangrunpeng.md`
 
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-ai-infra-backend-engineer-huangrunpeng.md)
@@ -115,7 +117,7 @@ LLM 推理每次都需要把之前生成的所有 token 重新输入模型计算
 ## 相关实体
 
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 后台工程方法论的更高层抽象
-- [Pydantic AI Progressive Agent Skills](../ch04/300-agent-skills.html) — Python-first AI 框架的另一视角
+- [Pydantic AI Progressive Agent Skills](../ch04/301-agent-skills.html) — Python-first AI 框架的另一视角
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-ai-infra-backend-engineer-huangrunpeng.md)
 
 ---

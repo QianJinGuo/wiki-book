@@ -1,5 +1,7 @@
 # Harness Engineering：AI 能在真正\"出事会炸\"的后端系统里写代码吗？
 
+## Ch05.049 Harness Engineering：AI 能在真正\"出事会炸\"的后端系统里写代码吗？
+
 > 📊 Level ⭐⭐ | 9.7KB | `entities/tencent-cdn-lego-harness-engineering.md`
 
 # Harness Engineering：AI 能在真正"出事会炸"的后端系统里写代码吗？
@@ -9,7 +11,7 @@
 
 ## 相关实体
 - [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗 V2](057-harness-engineering.html)
-- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/191-ahe-agentic-harness-engineering.html)
+- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/192-ahe-agentic-harness-engineering.html)
 - [Fudan Agentic Harness Engineering Ahe Gpt54 7Points](057-harness-engineering.html)
 - [Harness Engineering Reliable Long Term Agent](057-harness-engineering.html)
 - [Harness Engineering Long Term Agent Tasks](057-harness-engineering.html)

@@ -1,5 +1,7 @@
 # QQ音乐 Harness Engineering 实践（大仓多服务场景）
 
+## Ch05.005 QQ音乐 Harness Engineering 实践（大仓多服务场景）
+
 > 📊 Level ⭐⭐ | 29.2KB | `entities/qq-music-harness-engineering-monorepo-microservices.md`
 
 # QQ音乐 Harness Engineering 实践（大仓多服务场景）
@@ -429,7 +431,7 @@ Harness Engineering 对效率的定义更接近**软件工程的总成本**：�
 
 ## 相关实体
 - [Harness Engineering](057-harness-engineering.html)
-- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/191-ahe-agentic-harness-engineering.html)
+- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/192-ahe-agentic-harness-engineering.html)
 - [Fudan Agentic Harness Engineering Ahe Gpt54 7Points](057-harness-engineering.html)
 - [Harness Engineering Alibaba Java Case Study](057-harness-engineering.html)
 - [Tencent Cdn Lego Harness](008-harness.html)

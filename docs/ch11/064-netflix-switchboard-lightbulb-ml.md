@@ -1,5 +1,7 @@
 # Netflix Switchboard → Lightbulb: 百万请求/秒 ML 模型路由架构演进
 
+## Ch11.064 Netflix Switchboard → Lightbulb: 百万请求/秒 ML 模型路由架构演进
+
 > 📊 Level ⭐⭐ | 10.8KB | `entities/netflix-switchboard-lightbulb-model-routing.md`
 
 # Netflix Switchboard → Lightbulb: 百万请求/秒 ML 模型路由架构演进
@@ -87,7 +89,7 @@ OpenAI 的 auto 模式也做模型路由，但规则不透明且偏向成本优�
 ## 相关实体
 - [Netflix Metadata Service Model Lifecycle Graph](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-metadata-service-model-lifecycle-graph.md)
 - [Netflix Live Operations Human Infrastructure](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-live-operations-human-infrastructure.md)
-- [Netflix Nebula Archrules](078-netflix-nebula-archrules-java-archunit.html)
+- [Netflix Nebula Archrules](077-netflix-nebula-archrules-java-archunit.html)
 - [Netflix Druid Interval Aware Caching](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-druid-interval-aware-caching.md)
 - [High Throughput Graph Abstraction At Netflix](087-high-throughput-graph-abstraction-at-netflix-part-i.html)
 

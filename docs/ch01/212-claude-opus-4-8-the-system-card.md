@@ -1,5 +1,7 @@
 # Claude Opus 4.8: The System Card
 
+## Ch01.212 Claude Opus 4.8: The System Card
+
 > 📊 Level ⭐⭐ | 14.8KB | `entities/claude-opus-48-the-system-card-b8460f.md`
 
 # Claude Opus 4.8: The System Card

@@ -1,5 +1,7 @@
 # N-Day Research with AI: Using Ollama and n8n | Nikhil&#x27;s Cybersec Blog
 
+## Ch01.490 N-Day Research with AI: Using Ollama and n8n | Nikhil&#x27;s Cybersec Blog
+
 > 📊 Level ⭐⭐ | 6.9KB | `entities/ghostbyt3-github-io-blog-nday-research-ai.md`
 
 # "N-Day Research with AI: Using Ollama and n8n | Nikhil&#x27;s Cybersec Blog"
@@ -52,7 +54,7 @@
 ## 相关实体
 - [Affirmmapsroadto100Bgmvwithcardaicommerc](../ch04/135-ai.html)
 - [Amazon Quick Research Agentic Multi Source Citation](../ch03/004-agent.html)
-- [Building Web Search Enabled Agents With Strands And Exa](../ch04/338-building-web-search-enabled-agents-with-strands-and-exa.html)
+- [Building Web Search Enabled Agents With Strands And Exa](../ch04/339-building-web-search-enabled-agents-with-strands-and-exa.html)
 - [Build Real Time Voice Streaming With Amazon Nova Sonic And Webrtc](../ch11/217-amazon-nova.html)
 - [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](467-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
 

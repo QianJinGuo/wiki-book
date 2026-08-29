@@ -1,5 +1,7 @@
 # On Working with Wizards: AI 从协作到召唤的范式转变
 
+## Ch04.179 On Working with Wizards: AI 从协作到召唤的范式转变
+
 > 📊 Level ⭐⭐ | 11.0KB | `entities/on-working-with-wizards.md`
 
 # On Working with Wizards: AI 从协作到召唤的范式转变

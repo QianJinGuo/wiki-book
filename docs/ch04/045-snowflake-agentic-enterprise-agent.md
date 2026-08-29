@@ -1,5 +1,7 @@
 # Snowflake Agentic Enterprise — 迈向可信的 Agent 平台
 
+## Ch04.045 Snowflake Agentic Enterprise — 迈向可信的 Agent 平台
+
 > 📊 Level ⭐⭐ | 21.6KB | `entities/snowflake-agentic-enterprise-summit-2026.md`
 
 ## 概述

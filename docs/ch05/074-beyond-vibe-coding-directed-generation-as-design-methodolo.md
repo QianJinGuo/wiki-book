@@ -1,5 +1,7 @@
 # Beyond Vibe Coding — Directed Generation as Design Methodology
 
+## Ch05.074 Beyond Vibe Coding — Directed Generation as Design Methodology
+
 > 📊 Level ⭐⭐ | 3.8KB | `entities/beyond-vibe-coding-directed-generation-design-uxmag.md`
 
 # Beyond Vibe Coding — Directed Generation as Design Methodology

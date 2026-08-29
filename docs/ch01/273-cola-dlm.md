@@ -1,5 +1,7 @@
 # Cola DLM：字节跳动连续潜空间扩散语言模型
 
+## Ch01.273 Cola DLM：字节跳动连续潜空间扩散语言模型
+
 > 📊 Level ⭐⭐ | 12.0KB | `entities/cola-dlm-byte-dance-continuous-latent-diffusion-language-model.md`
 
 # Cola DLM：字节跳动连续潜空间扩散语言模型

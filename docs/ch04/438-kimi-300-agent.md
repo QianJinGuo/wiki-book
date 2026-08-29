@@ -1,5 +1,7 @@
 # Kimi 决定，要用 300 个 Agent 解救非程序员们
 
+## Ch04.438 Kimi 决定，要用 300 个 Agent 解救非程序员们
+
 > 📊 Level ⭐⭐ | 2.2KB | `entities/kimi-work-300-agent-cluster-yin-john-agi-hunt.md`
 
 # Kimi 决定，要用 300 个 Agent 解救非程序员们

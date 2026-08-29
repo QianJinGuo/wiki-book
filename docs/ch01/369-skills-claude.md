@@ -1,5 +1,7 @@
 # Skills：让 Claude 记住「怎么做」，告别重复教学
 
+## Ch01.369 Skills：让 Claude 记住「怎么做」，告别重复教学
+
 > 📊 Level ⭐⭐ | 8.9KB | `entities/claude-code-skills-workflow-encapsulation-costa-long.md`
 
 # Skills：让 Claude 记住「怎么做」，告别重复教学

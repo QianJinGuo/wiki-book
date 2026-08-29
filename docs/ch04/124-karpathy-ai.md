@@ -1,5 +1,7 @@
 # 连Karpathy都开始恐慌：AI正在重新定义「程序员」｜硅基时间
 
+## Ch04.124 连Karpathy都开始恐慌：AI正在重新定义「程序员」｜硅基时间
+
 > 📊 Level ⭐⭐ | 13.3KB | `entities/karpathy-vibe-engineering-silicon-era-jiangtao.md`
 
 # 连Karpathy都开始恐慌：AI正在重新定义「程序员」｜硅基时间

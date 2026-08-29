@@ -1,5 +1,7 @@
 # Agent 记忆存储方案深度洞察
 
+## Ch01.702 Agent 记忆存储方案深度洞察
+
 > 📊 Level ⭐⭐ | 2.4KB | `entities/agent-memory-storage-six-schools-quantumtransf-debate-frank.md`
 
 # Agent 记忆存储方案深度洞察
@@ -23,7 +25,7 @@ Agent 记忆存储方案深度洞察 涉及agent领域的核心技术议题。
 
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch04/176-openclaw.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04/176-openclaw.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/193-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/004-agent.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/004-agent.html)
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](../ch04/176-openclaw.html)

@@ -1,5 +1,7 @@
 # SAP Unveils the Autonomous Enterprise | SAP Sapphire 2026
 
+## Ch04.129 SAP Unveils the Autonomous Enterprise | SAP Sapphire 2026
+
 > 📊 Level ⭐⭐ | 13.1KB | `entities/news-sap-com-sap-unveils-the-autonomous-enterprise.md`
 
 # SAP Autonomous Enterprise 发布 | SAP Sapphire 2026
@@ -123,10 +125,10 @@ SAP 的多基础模型策略值得借鉴。在企业内部，应尽早评估不�
 ## 相关链接
 
 ## 相关实体
-- [Sap Unveils The Autonomous Enterprise](079-sap-unveils-the-autonomous-enterprise.html)
+- [Sap Unveils The Autonomous Enterprise](059-sap-unveils-the-autonomous-enterprise.html)
 - [Sap Unveils Autonomous Enterprise](https://github.com/QianJinGuo/wiki/blob/main/entities/sap-unveils-autonomous-enterprise.md)
 - [Enterprise Software Moats Agent Era](../ch03/004-agent.html)
-- [The Ui Is Dead Long Live The Agent](286-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
+- [The Ui Is Dead Long Live The Agent](403-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
 - [Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions](135-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/news-sap-com-sap-unveils-the-autonomous-enterprise.md)

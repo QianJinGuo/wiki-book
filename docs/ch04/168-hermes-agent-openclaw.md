@@ -1,5 +1,7 @@
 # Hermes Agent 为什么火了？和 OpenClaw 龙虾比一比
 
+## Ch04.168 Hermes Agent 为什么火了？和 OpenClaw 龙虾比一比
+
 > 📊 Level ⭐⭐ | 11.4KB | `entities/hermes-agent-vs-openclaw-comparison.md`
 
 ## 一句话格局定位
@@ -111,7 +113,7 @@ Hermes 在中国社区的爆发，微信集成、Notion 知识管理、股票盯
 
 - [Hermes Agent 记忆系统深度拆解](161-hermes-agent.html)
 - [AI Agent Gateway 架构设计 — OpenClaw/Claude Code/Hermes 三框架对比](176-openclaw.html)
-- [DeerFlow vs Hermes vs OpenClaw 深度对比](346-deerflow-hermes-openclaw.html)
+- [DeerFlow vs Hermes vs OpenClaw 深度对比](347-deerflow-hermes-openclaw.html)
 - [Hermes Agent 深度解析](161-hermes-agent.html)
 - [OpenClaw 架构八部总结](176-openclaw.html)
 - [Hermes Agent 记忆系统](161-hermes-agent.html)

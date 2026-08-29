@@ -1,5 +1,7 @@
 # AWS FSx for Lustre + GPUDirect Storage + TurboQuant: Sharded LLM Model Loading
 
+## Ch11.026 AWS FSx for Lustre + GPUDirect Storage + TurboQuant: Sharded LLM Model Loading
+
 > 📊 Level ⭐⭐ | 15.1KB | `entities/aws-fsx-lustre-gpudirect-sharded-llm-loading.md`
 
 # AWS FSx for Lustre + GPUDirect Storage + TurboQuant: Sharded LLM Model Loading

@@ -1,5 +1,7 @@
 # Harness Engineering 实战：AI Coding 率从 25% 提升至 90%
 
+## Ch05.030 Harness Engineering 实战：AI Coding 率从 25% 提升至 90%
+
 > 📊 Level ⭐⭐ | 15.9KB | `entities/harness-engineering-90-percent-ai-coding-rate.md`
 
 ## 核心结论

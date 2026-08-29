@@ -1,5 +1,7 @@
 # 让 Coding Agent 从黑盒到透明：阿里云 Agent 观测审计数据采集实践
 
+## Ch01.644 让 Coding Agent 从黑盒到透明：阿里云 Agent 观测审计数据采集实践
+
 > 📊 Level ⭐⭐ | 3.2KB | `entities/alibaba-agent-observability-audit-loongsuite-pilot-coding-agent-blackbox-transparent.md`
 
 # 让 Coding Agent 从黑盒到透明：阿里云 Agent 观测审计数据采集实践

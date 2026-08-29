@@ -1,5 +1,7 @@
 # When Growth Slows, Is It Sales' Fault or the Product's Fault? The Answer Has Changed.
 
+## Ch03.075 When Growth Slows, Is It Sales' Fault or the Product's Fault? The Answer Has Changed.
+
 > 📊 Level ⭐⭐ | 7.3KB | `entities/when-growth-slows-is-it-sales-fault-or-the-products-fault-the-answer-has-changed.md`
 
 ## 核心要点

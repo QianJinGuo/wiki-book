@@ -1,5 +1,7 @@
 # Airbyte Agents: A New Era for Airbyte
 
+## Ch04.226 Airbyte Agents: A New Era for Airbyte
+
 > 📊 Level ⭐⭐ | 9.5KB | `entities/airbyte-agents-a-new-era-for-airbyte-airbyte.md`
 
 ## 核心定位
@@ -115,7 +117,7 @@ Airbyte 的数据表明，当 Agent 能先在 Context Store 中完成实体发�
 - [Airbyte Agents](226-airbyte-agents-a-new-era-for-airbyte.html)
 - [Skillos Learning Skill Curation For Self Evolving Agents](115-skillos-learning-skill-curation-for-self-evolving-agents.html)
 - [Building Ai Agents For Business Support Using Amazon Bedrock](052-building-ai-agents-for-business-support-using-amazon-bedrock.html)
-- [Oz Multi Harness Cloud Agent Orchestration](360-agent-orchestration.html)
+- [Oz Multi Harness Cloud Agent Orchestration](241-agent-orchestration.html)
 - [Skill Os Learning Skill Curation Self Evolving Agents](181-self-evolving-agents.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 

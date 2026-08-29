@@ -1,5 +1,7 @@
 # GBrain — YC CEO Garry Tan 的 Postgres-native AI 第二大脑：5 大设计决策 + 零 LLM 知识图谱 + 8 阶段检索 + Brain⊥Source 正交维度
 
+## Ch01.194 GBrain — YC CEO Garry Tan 的 Postgres-native AI 第二大脑：5 大设计决策 + 零 LLM 知识图谱 + 8 阶段检索 + Brain⊥Source 正交维度
+
 > 📊 Level ⭐⭐ | 16.4KB | `entities/gbrain.md`
 
 ## 概述
@@ -132,20 +134,20 @@ GBrain 将传统 RAG 的 4 层扩展为 8 层，从"找得到"升级到"真正�
 **性能基准**：P@5 49.1%、R@5 97.9%。关闭 KG 功能后 P@5 下降 31.4pp，优于纯 ripgrep-BM25+向量 RAG 。
 
 ## 相关实体
-- [AgentBrowser](../ch04/269-chromium-blink-v8-agent-browser-use.html)
+- [AgentBrowser](../ch04/270-chromium-blink-v8-agent-browser-use.html)
 - [企业级AI记忆基质三层架构：事实/交互/行动记忆](../ch04/135-ai.html)
 - [Agent 自我改进的六条路](../ch03/004-agent.html)
 - [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](https://github.com/QianJinGuo/wiki/blob/main/entities/demis-hassabis-yc-interview-2026.md)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
-- [SkillClaw](../ch04/333-skillclaw-nacos-agent-skill-registry.html)
+- [SkillClaw](../ch04/334-skillclaw-nacos-agent-skill-registry.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](../ch07/016-hermes-skill.html)
 - [OpenHuman: AI Agent 持久记忆框架](../ch04/133-agent-memory.html)
 - [上下文工程 - 三种Memory方案对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md)
 
 - [AutoCLI](https://github.com/QianJinGuo/wiki/blob/main/entities/autocli.md)
 - [阿里巴巴 Aone 面向 Agent 的研发模式探索](../ch04/035-aone-agentic.html)
-- [CLI-Anything](../ch04/309-cli-anything-agent-gui.html)
-- [AgentRun](../ch04/270-agentrun.html)
+- [CLI-Anything](../ch04/310-cli-anything-agent-gui.html)
+- [AgentRun](../ch04/289-agentrun.html)
 - [OpenCLI](../ch03/063-opencli.html)
 - [CLI-Tools 横向对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/cli-tools-comparison.md)
 - [24h打工人](../ch03/004-agent.html)

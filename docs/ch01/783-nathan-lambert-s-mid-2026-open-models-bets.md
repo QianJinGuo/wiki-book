@@ -1,5 +1,7 @@
 # Nathan Lambert's Mid-2026 Open Models Bets
 
+## Ch01.783 Nathan Lambert's Mid-2026 Open Models Bets
+
 > 📊 Level ⭐⭐⭐⭐⭐ | 12.0KB | `entities/nathan-lambert-open-models-bets-2026.md`
 
 # Nathan Lambert's Mid-2026 Open Models Bets

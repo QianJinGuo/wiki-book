@@ -1,5 +1,7 @@
 # AutoResearch：多 Agent 自动化软件开发
 
+## Ch09.028 AutoResearch：多 Agent 自动化软件开发
+
 > 📊 Level ⭐⭐ | 14.8KB | `entities/autoresearch-multi-agent-software.md`
 
 ## 核心命题

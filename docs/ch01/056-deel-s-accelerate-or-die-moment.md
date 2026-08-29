@@ -1,5 +1,7 @@
 # Deel's "Accelerate or Die" Moment
 
+## Ch01.056 Deel's "Accelerate or Die" Moment
+
 > 📊 Level ⭐ | 7.6KB | `entities/deels-accelerate-or-die-moment.md`
 
 # Deel 的「加速或死亡」时刻：AI 时代的增长再架构

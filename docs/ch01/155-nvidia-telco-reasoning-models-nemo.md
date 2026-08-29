@@ -1,5 +1,7 @@
 # Nvidia Telco Reasoning Models Nemo
 
+## Ch01.155 Nvidia Telco Reasoning Models Nemo
+
 > 📊 Level ⭐⭐ | 24.5KB | `entities/nvidia-telco-reasoning-models-nemo.md`
 
 # Building Telco Reasoning Models for Autonomous Networks with NVIDIA NeMo | NVIDIA Technical Blog
@@ -8,8 +10,8 @@ Building Telco Reasoning Models for Autonomous Networks with NVIDIA NeMo | NVIDI
 ## 相关实体
 - [Nvidia Gemma 4 Edge Ai](522-nvidia-gemma-4-edge-ai.html)
 - [Nvidia Multimodal Rag Knowledge Systems](168-rag.html)
-- [Nvidia Agentic Ai Subsurface Engineering](../ch04/281-nvidia-agentic-ai-subsurface-engineering.html)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](../ch04/313-nvidia-secure-local-agent-nemoclaw-openclaw.html)
+- [Nvidia Agentic Ai Subsurface Engineering](../ch04/282-nvidia-agentic-ai-subsurface-engineering.html)
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](../ch04/314-nvidia-secure-local-agent-nemoclaw-openclaw.html)
 - [Nvidia Gpu Kernel Translation Cute Python Julia](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-gpu-kernel-translation-cute-python-julia.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-telco-reasoning-models-nemo.md)

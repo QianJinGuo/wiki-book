@@ -1,5 +1,7 @@
 # Martin Fowler 的 AI 研发提醒：非确定性进了研发链路，Harness 才真正开始承重
 
+## Ch05.038 Martin Fowler 的 AI 研发提醒：非确定性进了研发链路，Harness 才真正开始承重
+
 > 📊 Level ⭐⭐ | 13.0KB | `entities/martin-fowler-的-ai-研发提醒非确定性进了研发链路harness-才真正开始承重.md`
 
 ## 太长不看版

@@ -1,5 +1,7 @@
 # 欢迎来到 AGI 时代的 AI 治理 — Nathan Lambert 论美国政府强制 Anthropic 限制 Fable/Mythos 访问
 
+## Ch01.792 欢迎来到 AGI 时代的 AI 治理 — Nathan Lambert 论美国政府强制 Anthropic 限制 Fable/Mythos 访问
+
 > 📊 Level ⭐⭐⭐⭐⭐ | 5.2KB | `entities/welcome-to-the-agi-era-of-ai-governance-interconnects.md`
 
 # 欢迎来到 AGI 时代的 AI 治理 — Nathan Lambert 论美国政府强制 Anthropic 限制 Fable/Mythos 访问

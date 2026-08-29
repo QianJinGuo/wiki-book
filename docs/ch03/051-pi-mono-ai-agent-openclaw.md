@@ -1,5 +1,7 @@
 # pi-mono — 模块化 AI Agent 构建平台（OpenClaw 执行引擎核心）
 
+## Ch03.051 pi-mono — 模块化 AI Agent 构建平台（OpenClaw 执行引擎核心）
+
 > 📊 Level ⭐⭐ | 11.8KB | `entities/pi-mono.md`
 
 ## 项目信息

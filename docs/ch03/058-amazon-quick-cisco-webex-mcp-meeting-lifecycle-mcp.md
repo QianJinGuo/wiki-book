@@ -1,5 +1,7 @@
 # Amazon Quick + Cisco Webex MCP 会议准备与跟进助手：meeting-lifecycle MCP 编排实战
 
+## Ch03.058 Amazon Quick + Cisco Webex MCP 会议准备与跟进助手：meeting-lifecycle MCP 编排实战
+
 > 📊 Level ⭐⭐ | 10.3KB | `entities/amazon-quick-cisco-webex-mcp-meeting-prep-followup-assistant.md`
 
 # Amazon Quick + Cisco Webex MCP 会议准备与跟进助手
@@ -84,7 +86,7 @@ Webex MCP server 提供了**完整 read/write scope 分离**，Amazon Quick 集�
 - [Amazon Quick + KDB-X MCP 时序市场](../ch07/065-amazon-quick-mcp.html) — 金融时序场景 MCP 集成
 - [Amazon Quick 操作飞书：自建远程 MCP](https://github.com/QianJinGuo/wiki/blob/main/entities/让-amazon-quick-操作飞书构建远程-mcp-服务的设计实践.md) — 对比案例，国产办公协同自建 MCP 模式
 - [Amazon Quick + Snowflake MCP AML 反洗钱](https://github.com/QianJinGuo/wiki/blob/main/entities/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md) — 合规场景 MCP 集成
-- [Aderant 法律云运营案例](../ch11/162-aderant-transforms-cloud-operations-with-amazon-quick.html) — Amazon Quick 行业 case study（legal-tech 角度）
+- [Aderant 法律云运营案例](../ch11/163-aderant-transforms-cloud-operations-with-amazon-quick.html) — Amazon Quick 行业 case study（legal-tech 角度）
 - [Amazon Bedrock AgentCore](../ch05/008-harness.html) — 另一种 Amazon MCP 部署 runtime（vs Amazon Quick 原生 MCP 集成）
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 

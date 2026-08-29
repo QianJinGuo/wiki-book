@@ -1,5 +1,7 @@
 # 使用 Kiro 和 MCP 自动化大规模升级 RDS MySQL 8.0 至 RDS MySQL 8.4
 
+## Ch07.038 使用 Kiro 和 MCP 自动化大规模升级 RDS MySQL 8.0 至 RDS MySQL 8.4
+
 > 📊 Level ⭐⭐ | 8.9KB | `entities/kiro-mcp-rds-mysql-upgrade.md`
 
 ## 概述

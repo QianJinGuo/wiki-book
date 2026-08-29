@@ -1,5 +1,7 @@
 # Hermes Agent 九模块架构解析
 
+## Ch04.163 Hermes Agent 九模块架构解析
+
 > 📊 Level ⭐⭐ | 11.5KB | `entities/hermes-9-module-architecture-winty.md`
 
 ## 9 大模块
@@ -120,7 +122,7 @@ SOUL.md 作为人格层，解决的不是"Agent 说什么"的问题，而是"Age
 ## 相关实体
 - [Claude Code Search Architecture Tencent 2026](../ch03/057-claude-code.html)
 - [Openclaw Prompt Context Harness](176-openclaw.html)
-- [Fudan Peking Ahe Agentic Harness Engineering](191-ahe-agentic-harness-engineering.html)
+- [Fudan Peking Ahe Agentic Harness Engineering](192-ahe-agentic-harness-engineering.html)
 - [Loongsuite Genai Semconv Alibaba](135-ai.html)
 - [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/004-agent.html)
 

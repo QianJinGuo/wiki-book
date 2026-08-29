@@ -1,5 +1,7 @@
 # Meta Skill
 
+## Ch07.024 Meta Skill
+
 > 📊 Level ⭐⭐ | 10.6KB | `entities/meta-skill.md`
 
 # Meta Skill
@@ -106,9 +108,9 @@
 - [OpenSquilla](../ch01/009-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.html) —— Meta Skill 的实现载体
 - [SkillOpt](../ch05/028-skillopt.html) —— 互补（Skill 变好 vs Skill 变多）
 - [Impeccable](../ch05/001-impeccable.html) —— skill 内命令的范例
-- [Agent Skill 编写指南](../ch01/283-agent-skill.html)
+- [Agent Skill 编写指南](../ch01/284-agent-skill.html)
 - [10 篇论文看懂 AI Agent Skill](054-skill.html)
-- [Agent Skills 系统性综述](../ch04/300-agent-skills.html)
+- [Agent Skills 系统性综述](../ch04/301-agent-skills.html)
 - [Skills 系统设计三路对比](054-skill.html)
 - [Agent/Skills/Teams 架构演进](../ch04/199-agent-skills-teams.html)
 

@@ -1,13 +1,15 @@
 # 从 Anthropic 到 Google：Agent Skills 进入设计模式阶段
 
+## Ch04.157 从 Anthropic 到 Google：Agent Skills 进入设计模式阶段
+
 > 📊 Level ⭐⭐ | 11.8KB | `entities/anthropic-google-agent-skills-design-patterns.md`
 
 ## 相关实体
 - [Anthropic 14 个 Agent Skills 设计模式](077-anthropic-agent.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](300-agent-skills.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](301-agent-skills.html)
 - [Anthropic 官方 14 种 Skill 设计模式](../ch07/054-skill.html)
 - [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](../ch01/316-openai.html)
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](300-agent-skills.html)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](301-agent-skills.html)
 - [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](../ch03/004-agent.html)
 - [Mythos for Offensive Security: XBOW's Evaluation](https://github.com/QianJinGuo/wiki/blob/main/entities/mythos_offensive_security_xbow_evaluatio.md)
 - [Anthropic Claude Managed Agents 平台正式发布](../ch01/158-anthropic-claude-managed-agents.html)

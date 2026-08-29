@@ -1,5 +1,7 @@
 # Anthropic knowledge-work-plugins 源码拆解：4 种组件、3 级加载、2 层记忆、岗位型插件市场
 
+## Ch07.022 Anthropic knowledge-work-plugins 源码拆解：4 种组件、3 级加载、2 层记忆、岗位型插件市场
+
 > 📊 Level ⭐⭐ | 10.9KB | `entities/knowledge-work-plugins-anthropic-source-analysis.md`
 
 # Anthropic knowledge-work-plugins 源码拆解：4 种组件、3 级加载、2 层记忆、岗位型插件市场
@@ -107,7 +109,7 @@ Engineering 插件的 `CONNECTORS.md` 定义了 6 个连接器类别，每个用
 - [Knowledge Work Plugins Shuge Anthropic Deep Source](https://github.com/QianJinGuo/wiki/blob/main/entities/knowledge-work-plugins-shuge-anthropic-deep-source.md) — 同源姊妹篇：数滴云对同一仓库的深度解读，互补视角
 - [Anthropic Agent Skills Design Patterns 14](../ch04/077-anthropic-agent.html) — Anthropic 官方 14 条 Skill 设计模式
 - [Skill System Design Three Way Comparison](054-skill.html) — OpenClaw / Claude Code / Hermes 三方 Skill 系统对比
-- [Claude Code Skills Workflow Encapsulation Costa Long](027-claude-code-skills.html) — Claude Code Skills 工作流封装机制
+- [Claude Code Skills Workflow Encapsulation Costa Long](028-claude-code-skills.html) — Claude Code Skills 工作流封装机制
 
 ---
 

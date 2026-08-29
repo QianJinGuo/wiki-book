@@ -1,5 +1,7 @@
 # Karpathy LLM Wiki 搭建实战——Obsidian + AGENTS.md 实现三层架构与三大操作
 
+## Ch03.071 Karpathy LLM Wiki 搭建实战——Obsidian + AGENTS.md 实现三层架构与三大操作
+
 > 📊 Level ⭐⭐ | 7.9KB | `entities/karpathy-llm-wiki-obsidian-tutorial-shuge-2026.md`
 
 # Karpathy LLM Wiki 搭建实战——Obsidian + AGENTS.md 实现三层架构与三大操作

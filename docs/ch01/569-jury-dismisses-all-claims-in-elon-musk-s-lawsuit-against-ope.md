@@ -1,5 +1,7 @@
 # Jury dismisses all claims in Elon Musk's lawsuit against OpenAI CEO Sam Altman
 
+## Ch01.569 Jury dismisses all claims in Elon Musk's lawsuit against OpenAI CEO Sam Altman
+
 > 📊 Level ⭐⭐ | 5.5KB | `entities/jury-dismisses-all-claims-in-elon-musk-s-lawsuit-against-ope.md`
 
 ## 核心要点

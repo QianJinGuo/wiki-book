@@ -1,5 +1,7 @@
 # 用 Amazon Quick + Bedrock AgentCore 打造对话式 FinOps 助手
 
+## Ch11.112 用 Amazon Quick + Bedrock AgentCore 打造对话式 FinOps 助手
+
 > 📊 Level ⭐⭐ | 8.5KB | `entities/amazon-quick-bedrock-agentcore-finops-chat.md`
 
 # 用 Amazon Quick + Bedrock AgentCore 打造对话式 FinOps 助手

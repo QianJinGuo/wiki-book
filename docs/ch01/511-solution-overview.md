@@ -1,5 +1,7 @@
 # Solution overview
 
+## Ch01.511 Solution overview
+
 > 📊 Level ⭐⭐ | 6.6KB | `entities/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md`
 
 # Solution overview

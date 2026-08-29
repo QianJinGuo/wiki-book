@@ -1,5 +1,7 @@
 # This redesign of Stokes Coffee is a masterclass in 'change everything, but don't change a thing' | Creative Boom
 
+## Ch03.062 This redesign of Stokes Coffee is a masterclass in 'change everything, but don't change a thing' | Creative Boom
+
 > 📊 Level ⭐⭐ | 9.4KB | `entities/this-redesign-of-stokes-coffee-is-a-masterclass-in-change-everything-but-don-t-c.md`
 
 ## 概述

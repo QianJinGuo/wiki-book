@@ -1,5 +1,7 @@
 # AI GPUs probably live longer than three years
 
+## Ch01.049 AI GPUs probably live longer than three years
+
 > 📊 Level ⭐ | 7.9KB | `entities/seangoedecke-ai-gpus-live-longer-than-three-years-2026.md`
 
 # AI GPUs probably live longer than three years

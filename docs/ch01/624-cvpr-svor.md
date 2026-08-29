@@ -1,5 +1,7 @@
 # CVPR冠军代码开源：小米SVOR破解视频消除三大顽疾，连人带影一键抹除
 
+## Ch01.624 CVPR冠军代码开源：小米SVOR破解视频消除三大顽疾，连人带影一键抹除
+
 > 📊 Level ⭐⭐ | 3.9KB | `entities/cvpr-xiaomi-svor-video-masking.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cvpr-xiaomi-svor-video-masking.md)

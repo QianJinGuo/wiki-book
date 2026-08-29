@@ -1,5 +1,7 @@
 # GitLab 14% 裁员 + Duo Agent Platform 扩张（FY2027 Q1 财报 + 智能体治理）
 
+## Ch04.223 GitLab 14% 裁员 + Duo Agent Platform 扩张（FY2027 Q1 财报 + 智能体治理）
+
 > 📊 Level ⭐⭐ | 9.6KB | `entities/gitlab-14pct-layoff-agent-platform-ai-2026q1.md`
 
 # GitLab 14% 裁员 + Duo Agent Platform 扩张
@@ -44,9 +46,9 @@ GitLab Duo Agent Platform 仍处于早期阶段——评估它是否已覆盖你
 
 ## 相关实体
 - [Gitlab Layoffs Memo 2026 5](https://github.com/QianJinGuo/wiki/blob/main/entities/gitlab-layoffs-memo-2026-5.md)
-- [The Ui Is Dead Long Live The Agent Servicenow Goes Headless](286-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
+- [The Ui Is Dead Long Live The Agent Servicenow Goes Headless](403-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
 - [Auto Improving Agent Platform Ashpreetbedi](../ch03/004-agent.html)
-- [The Ui Is Dead Long Live The Agent](286-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
+- [The Ui Is Dead Long Live The Agent](403-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
 - [Servicenow Ui Is Dead Agent](../ch03/004-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gitlab-14pct-layoff-agent-platform-ai-2026q1.md)

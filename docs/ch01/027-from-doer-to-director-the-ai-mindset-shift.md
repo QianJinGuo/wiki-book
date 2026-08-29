@@ -1,5 +1,7 @@
 # From Doer To Director: The AI Mindset Shift
 
+## Ch01.027 From Doer To Director: The AI Mindset Shift
+
 > 📊 Level ⭐ | 8.8KB | `entities/from-doer-to-director-the-ai-mindset-shift.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/from-doer-to-director-the-ai-mindset-shift.md)

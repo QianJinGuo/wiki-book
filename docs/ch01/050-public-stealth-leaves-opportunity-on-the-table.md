@@ -1,5 +1,7 @@
 # Public Stealth Leaves Opportunity on the Table
 
+## Ch01.050 Public Stealth Leaves Opportunity on the Table
+
 > 📊 Level ⭐ | 7.9KB | `entities/thisisgoingtobebig-public-stealth.md`
 
 # Public Stealth Leaves Opportunity on the Table

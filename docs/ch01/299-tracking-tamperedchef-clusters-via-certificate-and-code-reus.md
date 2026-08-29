@@ -1,5 +1,7 @@
 # Tracking TamperedChef Clusters via Certificate and Code Reuse
 
+## Ch01.299 Tracking TamperedChef Clusters via Certificate and Code Reuse
+
 > 📊 Level ⭐⭐ | 10.9KB | `entities/trackingtamperedchefclustersviacertificateandcodereuse.md`
 
 ## 核心要点
@@ -130,7 +132,7 @@ TamperedChef攻击链展现出高度结构化的入侵策略：
 
 ## 相关实体
 - [Tracking Tampered Chef Clusters Aef374](https://github.com/QianJinGuo/wiki/blob/main/entities/tracking-tampered-chef-clusters-aef374.md)
-- [Agentexecutorgooglesdistributedagentruntime](../ch04/270-agentrun.html)
+- [Agentexecutorgooglesdistributedagentruntime](../ch04/289-agentrun.html)
 - [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](https://github.com/QianJinGuo/wiki/blob/main/entities/howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve-2026-310.md)
 - [Shub Reaper Macos Stealer Attack Chain](../ch04/135-ai.html)
 - [Liteframeefficientvisionencodersunlockframescalinginvideollms](448-llm.html)

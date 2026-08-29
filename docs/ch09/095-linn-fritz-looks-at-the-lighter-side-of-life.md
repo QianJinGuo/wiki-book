@@ -1,5 +1,7 @@
 # Linn Fritz looks at the lighter side of life
 
+## Ch09.095 Linn Fritz looks at the lighter side of life
+
 > 📊 Level ⭐⭐ | 5.3KB | `entities/linn-fritz-looks-at-the-lighter-side-of-life.md`
 
 ## 核心要点

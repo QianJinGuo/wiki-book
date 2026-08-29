@@ -1,5 +1,7 @@
 # Can We Agree on a Storage/Workload Architecture Taxonomy? — Jack Vanlightly
 
+## Ch01.289 Can We Agree on a Storage/Workload Architecture Taxonomy? — Jack Vanlightly
+
 > 📊 Level ⭐⭐ | 11.4KB | `entities/storage-workload-architecture-taxonomy-vanlightly.md`
 
 # Can We Agree on a Storage/Workload Architecture Taxonomy? — Jack Vanlightly

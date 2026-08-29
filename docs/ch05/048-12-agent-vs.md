@@ -1,5 +1,7 @@
 # 12 个 Agent 工程设计底层逻辑：脚手架 vs 承重墙
 
+## Ch05.048 12 个 Agent 工程设计底层逻辑：脚手架 vs 承重墙
+
 > 📊 Level ⭐⭐ | 9.9KB | `entities/twelve-agent-design-patterns-yunduojun-datastudio.md`
 
 > 原文归档：[原文归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/twelve-agent-design-patterns-yunduojun-datastudio.md)
@@ -104,7 +106,7 @@ Claude Code 实现：MEMORY.md（索引）→ memory/（分类文件）→ 磁�
 - [Harness Engineering](057-harness-engineering.html)
 - [Claude Code Agentic Harness 设计模式](../ch03/048-claude-code-agent.html)
 - [Harness Engineering Core Patterns](057-harness-engineering.html)
-- [fudan-peking AHE](../ch04/191-ahe-agentic-harness-engineering.html)
+- [fudan-peking AHE](../ch04/192-ahe-agentic-harness-engineering.html)
 
 ---
 

@@ -1,6 +1,8 @@
 # Three Years from GPT-3 to Gemini 3
 
-> 📊 Level ⭐⭐ | 16.4KB | `entities/three-years-from-gpt-3-to-gemini-3.md`
+## Ch01.193 Three Years from GPT-3 to Gemini 3
+
+> 📊 Level ⭐⭐ | 16.5KB | `entities/three-years-from-gpt-3-to-gemini-3.md`
 
 # Three Years from GPT-3 to Gemini 3
 
@@ -189,7 +191,7 @@ Human-in-the-loop 的角色在演变，团队需要相应升级：
 - [GPT-5.4 Codex 进展](391-codex.html)
 - [Karpathy Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
 - [Karpathy Agentic Engineering 综述](../ch04/098-karpathy-vibe-coding-agentic-engineering.html)
-- [AgentOps on Bedrock](../ch04/193-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [AgentOps on Bedrock](../ch04/190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [Yann Dubois OpenAI 后训练访谈](316-openai.html)
 - [GPT-5.5 Copilot Session 设计](../ch07/015-wiki-evolver.html)
 - [AI Agent Harness 构建](../ch05/035-agent-harness.html)

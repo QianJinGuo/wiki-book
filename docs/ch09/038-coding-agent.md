@@ -1,5 +1,7 @@
 # Coding Agent在百度的落地实践：从反馈闭环到工程范式重构
 
+## Ch09.038 Coding Agent在百度的落地实践：从反馈闭环到工程范式重构
+
 > 📊 Level ⭐⭐ | 12.5KB | `entities/baidu-comate-coding-agent-feedback-loop-wanpeng.md`
 
 # Coding Agent在百度的落地实践：从反馈闭环到工程范式重构

@@ -1,5 +1,7 @@
 # 阿里SkillClaw：让 Agent 技能在真实使用中集体进化
 
+## Ch04.387 阿里SkillClaw：让 Agent 技能在真实使用中集体进化
+
 > 📊 Level ⭐⭐ | 4.7KB | `entities/skillclaw-alibaba-paperagent.md`
 
 # 阿里SkillClaw：让 Agent 技能在真实使用中集体进化
@@ -9,7 +11,7 @@
 > 代码：https://github.com/AMAP-ML/SkillClaw
 
 ## 相关实体
-- [Skillclaw](333-skillclaw-nacos-agent-skill-registry.html)
+- [Skillclaw](334-skillclaw-nacos-agent-skill-registry.html)
 - [Skillclaw Collective Intelligence](../ch07/054-skill.html)
 - [Skillclaw Hyman Nightly Evolution Alibaba](../ch07/054-skill.html)
 - [Skill Rag Tsinghua Sra](../ch07/054-skill.html)

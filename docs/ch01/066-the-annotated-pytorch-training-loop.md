@@ -1,5 +1,7 @@
 # The annotated PyTorch training loop
 
+## Ch01.066 The annotated PyTorch training loop
+
 > 📊 Level ⭐ | 7.4KB | `entities/essays-pytorch-training-loop.md`
 
 # The annotated PyTorch training loop

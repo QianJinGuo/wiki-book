@@ -1,5 +1,7 @@
 # Toto 2: Context-aware log analytics for complex distributed systems
 
+## Ch11.143 Toto 2: Context-aware log analytics for complex distributed systems
+
 > 📊 Level ⭐⭐ | 7.4KB | `entities/toto-2-context-aware-log-analytics-for-complex-distributed-systems.md`
 
 ## 核心要点
@@ -53,8 +55,8 @@ Toto 2.0包含连续分块掩码（CPM）优化，允许模型在一次并行传
 - [Nvidia Agentic Systems Extreme Co Design](../ch03/004-agent.html)
 - [Gemma 4 Qat Models Optimizing Compression](https://github.com/QianJinGuo/wiki/blob/main/entities/gemma-4-qat-models-optimizing-compression.md)
 - [Datadog Pathfinding Labs Security](https://github.com/QianJinGuo/wiki/blob/main/entities/datadog-pathfinding-labs-security.md)
-- [Task Queue Priority And Fairness](140-task-queue-priority-and-fairness-your-task-queue-your-way.html)
-- [Task Queue Priority And Fairness Your Task Queue Your Way](140-task-queue-priority-and-fairness-your-task-queue-your-way.html)
+- [Task Queue Priority And Fairness](168-task-queue-priority-and-fairness-your-task-queue-your-way.html)
+- [Task Queue Priority And Fairness Your Task Queue Your Way](168-task-queue-priority-and-fairness-your-task-queue-your-way.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/toto-2-context-aware-log-analytics-for-complex-distributed-systems.md)
 

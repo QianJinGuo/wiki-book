@@ -1,5 +1,7 @@
 # Harness Engineering 详解：如何将 AI Coding 率提升至 90%
 
+## Ch03.033 Harness Engineering 详解：如何将 AI Coding 率提升至 90%
+
 > 📊 Level ⭐⭐ | 31.4KB | `entities/harness-engineering耗时一周我是如何将应用的ai-coding率提升至90的.md`
 
 > -> [harness-engineering耗时一周我是如何将应用的ai-coding率提升至90的.md](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering耗时一周我是如何将应用的ai-coding率提升至90的.md)

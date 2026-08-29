@@ -1,5 +1,7 @@
 # 🧠 The Token Economy pt2: The Intelligence Company Gets Built
 
+## Ch01.002 🧠 The Token Economy pt2: The Intelligence Company Gets Built
+
 > 📊 Level ⭐ | 23.0KB | `entities/the-token-economy-pt2-the-intelligence-company-gets-built.md`
 
 ## 核心要点

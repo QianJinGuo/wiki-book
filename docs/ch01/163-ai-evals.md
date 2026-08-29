@@ -1,5 +1,7 @@
 # AI Evals 评估方法论
 
+## Ch01.163 AI Evals 评估方法论
+
 > 📊 Level ⭐⭐ | 22.1KB | `entities/ai-evals-methodology.md`
 
 ## 三种评估方法
@@ -156,8 +158,8 @@ Agent 评估需要额外的维度： ^["Evals到底在评什么？一文拆解AI
 - **定期生产监控**：确保生产质量没有漂移
 ## 相关实体
 - [Better Harness Eval Trace Methodology](../ch05/008-harness.html)
-- [Anthropic Claude Next Gen Alex Infoq](786-anthropic-claude.html)
-- [Agent Skill Writing](283-agent-skill.html)
+- [Anthropic Claude Next Gen Alex Infoq](787-anthropic-claude.html)
+- [Agent Skill Writing](284-agent-skill.html)
 - [Programbench Agent Benchmark](../ch04/136-programbench-agent-benchmark.html)
 - [Llm As A Verifier Framework](448-llm.html)
 

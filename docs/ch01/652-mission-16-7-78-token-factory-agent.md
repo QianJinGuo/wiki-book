@@ -1,5 +1,7 @@
 # 一个 Mission 跑 16 天、烧 7.78 亿 Token：Factory 公开了多 Agent 系统的构建哲学
 
+## Ch01.652 一个 Mission 跑 16 天、烧 7.78 亿 Token：Factory 公开了多 Agent 系统的构建哲学
+
 > 📊 Level ⭐⭐ | 3.0KB | `entities/factory-missions-multi-agent-shipping-for-days-luke.md`
 
 # 一个 Mission 跑 16 天、烧 7.78 亿 Token：Factory 公开了多 Agent 系统的构建哲学

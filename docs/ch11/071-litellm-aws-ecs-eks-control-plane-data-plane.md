@@ -1,5 +1,7 @@
 # LiteLLM 生产级部署：AWS ECS/EKS 双方案 + Control Plane / Data Plane 分离多区域
 
+## Ch11.071 LiteLLM 生产级部署：AWS ECS/EKS 双方案 + Control Plane / Data Plane 分离多区域
+
 > 📊 Level ⭐⭐ | 10.4KB | `entities/litellm-aws-ecs-eks-ai-gateway-architecture.md`
 
 > [!abstract]

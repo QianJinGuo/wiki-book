@@ -1,5 +1,7 @@
 # Reimagining the mouse pointer for the AI era
 
+## Ch01.326 Reimagining the mouse pointer for the AI era
+
 > 📊 Level ⭐⭐ | 10.1KB | `entities/deepmind-ai-pointer.md`
 
 ## 摘要

@@ -1,5 +1,7 @@
 # Agent 的骨架:Agent Runtime 7 大职责 + 3 主流框架对比 (LangGraph / OpenAI Agents SDK / 自研)
 
+## Ch04.053 Agent 的骨架:Agent Runtime 7 大职责 + 3 主流框架对比 (LangGraph / OpenAI Agents SDK / 自研)
+
 > 📊 Level ⭐⭐ | 19.8KB | `entities/agent-runtime-7-responsibilities-secondcurve-2026.md`
 
 # Agent 的骨架：Agent Runtime 7 大职责 + 3 主流框架对比
@@ -109,7 +111,7 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 
 **同主题(Agent Runtime)**:
 
-- vs **[若飞 Fable 5 Runtime Contract 工程化拆解](../ch01/225-claude-fable-5.html)** — 若飞文是**Runtime Contract 框架**(Task Brief 9 字段 / 能力路由 8 维度 / 状态账本 5 类),**深度工程协议视角**;本文是**7 职责概念入门视角** + **3 主流框架对比**。两者**完全互补**: 若飞 = Runtime **如何被设计** (契约层);二曲线 = Runtime **包含什么职责** + **用什么框架实现** (职责 + 工具层)
+- vs **[若飞 Fable 5 Runtime Contract 工程化拆解](../ch01/226-claude-fable-5.html)** — 若飞文是**Runtime Contract 框架**(Task Brief 9 字段 / 能力路由 8 维度 / 状态账本 5 类),**深度工程协议视角**;本文是**7 职责概念入门视角** + **3 主流框架对比**。两者**完全互补**: 若飞 = Runtime **如何被设计** (契约层);二曲线 = Runtime **包含什么职责** + **用什么框架实现** (职责 + 工具层)
 - vs **[阿里云云原生安全护栏三域演进](135-ai.html)** — 那是从云资源到 AI 模型到模型间路由的**三域护栏**;本文的"风险控制"职责是 Guardrail 的**单点实现**视角
 
 **Agent Loop / Context / Tool 系列**(本文 7 职责的前 3 块与这些 entity 强相关):
@@ -120,10 +122,10 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 
 **框架生态**(本文 3 主流框架):
 
-- vs **[Google Agent Executor Distributed Runtime](270-agentrun.html)** — Google 自家 Runtime 实现;与本文 LangGraph / OpenAI SDK 平行
+- vs **[Google Agent Executor Distributed Runtime](289-agentrun.html)** — Google 自家 Runtime 实现;与本文 LangGraph / OpenAI SDK 平行
 - vs **[Anthropic Claude Managed Agents Platform](../ch01/158-anthropic-claude-managed-agents.html)** — Anthropic Managed Agents 视角
 - vs **[Amazon Bedrock AgentCore Runtime 深度分析](383-amazon-bedrock-agentcore.html)** — AWS Bedrock AgentCore 视角;与本文 LangGraph / OpenAI SDK 平行
-- vs **[AgentCore Harness](../ch05/008-harness.html)** / **[AgentCore Managed Harness](186-agentcore-managed-harness.html)** — AWS 实现的 8 职责具体形态
+- vs **[AgentCore Harness](../ch05/008-harness.html)** / **[AgentCore Managed Harness](187-agentcore-managed-harness.html)** — AWS 实现的 8 职责具体形态
 
 **Runtime 7 职责 ↔ 二曲线系列 13 篇主题映射**(本文是系列 4/13,后续 9 篇已规划):
 
@@ -141,7 +143,7 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 
 ### 1. 七职责是通用"契约清单",不是某一框架的私有设计
 
-7 大职责（工具管理 / 上下文组装 / 状态管理 / 终止判断 / 风险控制 / Trace / 可观测性）本质上是 **Agent Runtime 的概念性契约** — 无论用 LangGraph、OpenAI Agents SDK 还是自研 Runtime，都必须回答这 7 个问题。这一结论与 [若飞 Fable 5 Runtime Contract](../ch01/225-claude-fable-5.html) 的"工程契约"思路同源：二曲线给出**职责层面的概念契约**（"要做什么"），若飞给出**协议层面的工程契约**（"怎么做"）。两者结合构成完整的 Runtime 设计图谱。
+7 大职责（工具管理 / 上下文组装 / 状态管理 / 终止判断 / 风险控制 / Trace / 可观测性）本质上是 **Agent Runtime 的概念性契约** — 无论用 LangGraph、OpenAI Agents SDK 还是自研 Runtime，都必须回答这 7 个问题。这一结论与 [若飞 Fable 5 Runtime Contract](../ch01/226-claude-fable-5.html) 的"工程契约"思路同源：二曲线给出**职责层面的概念契约**（"要做什么"），若飞给出**协议层面的工程契约**（"怎么做"）。两者结合构成完整的 Runtime 设计图谱。
 
 ### 2. 状态管理 + 终止判断 = 运行时"自控"机制,是 Second Curve 的核心
 
@@ -194,12 +196,12 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 ## 相关实体
 
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-runtime-7-responsibilities-secondcurve-2026.md)
-- [若飞 Fable 5 Runtime Contract](../ch01/225-claude-fable-5.html)
+- [若飞 Fable 5 Runtime Contract](../ch01/226-claude-fable-5.html)
 - [阿里云安全护栏三域](135-ai.html)
 - [阿里云 Agent 演化四阶段](../ch03/004-agent.html)
 - [Harness Engineering Framework](../ch05/057-harness-engineering.html)
 - [Agent Harness 架构设计与生产实践](../ch05/035-agent-harness.html)
-- [Google Agent Executor Runtime](270-agentrun.html)
+- [Google Agent Executor Runtime](289-agentrun.html)
 - [Anthropic Claude Managed Agents](../ch01/158-anthropic-claude-managed-agents.html)
 - [Amazon Bedrock AgentCore Runtime](383-amazon-bedrock-agentcore.html)
 - [AgentCore Harness](../ch05/008-harness.html)

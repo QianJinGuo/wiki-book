@@ -1,5 +1,7 @@
 # Bitter Lesson vs Garbage Can：组织理论视角下的 AI 采用
 
+## Ch04.240 Bitter Lesson vs Garbage Can：组织理论视角下的 AI 采用
+
 > 📊 Level ⭐⭐ | 9.0KB | `entities/bitter-lesson-garbage-can-mollick.md`
 
 # Bitter Lesson vs Garbage Can：组织理论视角下的 AI 采用

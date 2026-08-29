@@ -1,5 +1,7 @@
 # Nvidia Extreme Co Design Agentic Systems
 
+## Ch04.030 Nvidia Extreme Co Design Agentic Systems
+
 > 📊 Level ⭐⭐ | 25.3KB | `entities/nvidia-extreme-co-design-agentic-systems.md`
 
 # Building for the Rising Complexity of Agentic Systems with Extreme Co&#x2d;Design | NVIDIA Technical Blog
@@ -8,8 +10,8 @@ Building for the Rising Complexity of Agentic Systems with Extreme Co&#x2d;Desig
 ## 相关实体
 - [Nvidia Agentic Systems Extreme Co Design](../ch03/004-agent.html)
 - [Nvidia Multimodal Rag Knowledge Systems](../ch01/168-rag.html)
-- [Nvidia Agentic Ai Subsurface Engineering](281-nvidia-agentic-ai-subsurface-engineering.html)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](313-nvidia-secure-local-agent-nemoclaw-openclaw.html)
+- [Nvidia Agentic Ai Subsurface Engineering](282-nvidia-agentic-ai-subsurface-engineering.html)
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](314-nvidia-secure-local-agent-nemoclaw-openclaw.html)
 - [Nvidia Telco Reasoning Models Nemo](../ch01/155-nvidia-telco-reasoning-models-nemo.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-extreme-co-design-agentic-systems.md)

@@ -1,5 +1,7 @@
 # Hermes Agent Skills 源码级拆解：3级渐进加载 × 6步调度 × 5维安全扫描
 
+## Ch04.420 Hermes Agent Skills 源码级拆解：3级渐进加载 × 6步调度 × 5维安全扫描
+
 > 📊 Level ⭐⭐ | 3.3KB | `entities/hermes-agent-skills-source-code-analysis-shuge.md`
 
 # Hermes Agent Skills 源码级拆解：3级渐进加载 × 6步调度 × 5维安全扫描
@@ -36,7 +38,7 @@ Skills 遵循 **agentskills.
 ### 关联实体
 
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](193-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/004-agent.html)
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](176-openclaw.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)

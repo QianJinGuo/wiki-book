@@ -1,5 +1,7 @@
 # code-review-graph：Claude Code 本地知识图谱，减少 6.8 倍代码审查 Token
 
+## Ch01.564 code-review-graph：Claude Code 本地知识图谱，减少 6.8 倍代码审查 Token
+
 > 📊 Level ⭐⭐ | 5.5KB | `entities/code-review-graph.md`
 
 # code-review-graph：Claude Code 本地知识图谱，减少 6.8 倍代码审查 Token

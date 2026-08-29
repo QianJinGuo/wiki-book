@@ -1,5 +1,7 @@
 # 重新定义Skill开发：保姆级教程&一站式开发助手发布
 
+## Ch07.049 重新定义Skill开发：保姆级教程&一站式开发助手发布
+
 > 📊 Level ⭐⭐ | 7.3KB | `entities/skill-development-guide-aliyun-2026.md`
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-development-guide-aliyun-2026.md)
@@ -81,9 +83,9 @@ Binary Eval + Reflection Agent 的组合，实质上是将 Agent 的自我改进
 - **持续进化**：Reflection Agent 思路可推广至其他 AI 工作流，将人工修复经验结构化为可复用的 patch 资产
 
 ## 相关页面
-- [Skill 写作基础指南](../ch01/283-agent-skill.html) — 入门级别的 Skill 写作教程
-- [Skill 写作进阶](../ch01/283-agent-skill.html) — 高级技巧
-- [Skill 评估方法](../ch01/283-agent-skill.html) — 如何评估 Skill 质量
+- [Skill 写作基础指南](../ch01/284-agent-skill.html) — 入门级别的 Skill 写作教程
+- [Skill 写作进阶](../ch01/284-agent-skill.html) — 高级技巧
+- [Skill 评估方法](../ch01/284-agent-skill.html) — 如何评估 Skill 质量
 
 ## 相关实体
 - [十年老技术开发的 AI Agent 探索之路](../ch04/423-ai-agent.html)
@@ -91,13 +93,13 @@ Binary Eval + Reflection Agent 的组合，实质上是将 Agent 的自我改进
 - [SkillX — 层次化技能知识库](054-skill.html)
 - [Anthropic 14 个 Agent Skills 设计模式](../ch04/077-anthropic-agent.html)
 - [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](054-skill.html)
-- [SkillClaw](../ch04/333-skillclaw-nacos-agent-skill-registry.html)
+- [SkillClaw](../ch04/334-skillclaw-nacos-agent-skill-registry.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](016-hermes-skill.html)
 - [四种 Sub Agent 模式](../ch03/004-agent.html)
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/300-agent-skills.html)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/301-agent-skills.html)
 
 - [Qoder Skills 完全指南](031-qoder-skills.html)
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](../ch04/300-agent-skills.html)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](../ch04/301-agent-skills.html)
 - [Garry Tan](https://github.com/QianJinGuo/wiki/blob/main/entities/garry-tan-yc-ceo.md)
 - [Agent Workflows](../ch03/004-agent.html)
 - [Hermes Agent](../ch04/161-hermes-agent.html)

@@ -1,5 +1,7 @@
 # Pwn2Own Berlin 2026, Day Three: DEVCORE Crowned Master of Pwn, $1.298 Million Total
 
+## Ch12.050 Pwn2Own Berlin 2026, Day Three: DEVCORE Crowned Master of Pwn, $1.298 Million Total
+
 > 📊 Level ⭐⭐ | 8.0KB | `entities/pwn2own-berlin-2026-day-three-devcore-crowned-master-of-pwn-1298-million-total.md`
 
 ## 核心要点

@@ -1,5 +1,7 @@
 # Anthropic Coding Agent 社会科学家采用调查
 
+## Ch09.033 Anthropic Coding Agent 社会科学家采用调查
+
 > 📊 Level ⭐⭐ | 13.5KB | `entities/anthropic-coding-agents-social-science-survey-2026.md`
 
 ## 背景与方法
@@ -173,8 +175,8 @@ Top 25 大学 +40%、博士生 >25%、终身教授 ~10%——这些数字背后�
 ## 相关实体
 - [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](../ch03/004-agent.html)
 - [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式](../ch03/004-agent.html)
-- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch04/300-agent-skills.html)
-- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch04/300-agent-skills.html)
+- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch04/301-agent-skills.html)
+- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch04/301-agent-skills.html)
 - [Anthropic 14 Skill Patterns Best Practices](../ch07/054-skill.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
 

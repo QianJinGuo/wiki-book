@@ -1,5 +1,7 @@
 # PersonaVLM: Long-term Personalized Multimodal LLM
 
+## Ch01.588 PersonaVLM: Long-term Personalized Multimodal LLM
+
 > 📊 Level ⭐⭐ | 5.1KB | `entities/personavlm-long-term-personalization.md`
 
 # PersonaVLM: Long-term Personalized Multimodal LLM
@@ -12,7 +14,7 @@
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/008-harness.html)
 - [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch05/008-harness.html)
 - [Two Harness Papers Microsoft Google](../ch05/008-harness.html)
-- [Trace2Skill Trajectory Distillation Agent Skills](../ch04/300-agent-skills.html)
+- [Trace2Skill Trajectory Distillation Agent Skills](../ch04/301-agent-skills.html)
 - [05 11 The Great Memory Panic Of 2026](582-the-great-memory-panic-of-2026.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/personavlm-long-term-personalization.md)

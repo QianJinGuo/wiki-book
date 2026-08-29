@@ -1,5 +1,7 @@
 # Semis Memo: Supply Chain Inheritance
 
+## Ch01.452 Semis Memo: Supply Chain Inheritance
+
 > 📊 Level ⭐⭐ | 7.4KB | `entities/citriniresearch-supply-chain-inheritance.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/citriniresearch-supply-chain-inheritance.md)

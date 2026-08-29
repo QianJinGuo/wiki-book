@@ -1,5 +1,7 @@
 # Multi-Agent 架构在零售供应链运营中的实践：贯穿数据、洞察与行动 | 亚马逊AWS官方博客
 
+## Ch11.181 Multi-Agent 架构在零售供应链运营中的实践：贯穿数据、洞察与行动 | 亚马逊AWS官方博客
+
 > 📊 Level ⭐⭐ | 4.9KB | `entities/multi-agent-architecture-retail-practice.md`
 
 ## 概述
@@ -12,7 +14,7 @@ Amazon Web Services (AWS)
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/multi-agent-architecture-retail-practice/)
 
 ## 相关实体
-- [你不知道的 Agent 原理架构与工程实践](../ch04/274-agent-principle-architecture-engineering-practice.html)
+- [你不知道的 Agent 原理架构与工程实践](../ch04/275-agent-principle-architecture-engineering-practice.html)
 - [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](../ch04/027-openclaw-multi-agent-team-practice-v2.html)
 - [Agent 原理、架构与工程实践](../ch03/004-agent.html)
 - [OpenClaw 多智能体团队搭建实战经验](../ch04/027-openclaw-multi-agent-team-practice-v2.html)

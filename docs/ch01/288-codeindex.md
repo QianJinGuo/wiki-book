@@ -1,5 +1,7 @@
 # Codeindex · 让大模型更好地理解你的代码
 
+## Ch01.288 Codeindex · 让大模型更好地理解你的代码
+
 > 📊 Level ⭐⭐ | 11.5KB | `entities/codeindex-让大模型更好地理解你的代码.md`
 
 ## 核心要点
@@ -59,7 +61,7 @@ Codeindex的Parser适配层和GraphDB适配层设计体现了分层架构的工�
 - [LLM-as-a-Verifier: A General-Purpose Verification Framework](448-llm.html)
 - [你不知道的 Agent：原理、架构与工程实践](../ch03/004-agent.html)
 - [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](../ch05/008-harness.html)
-- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/270-agentrun.html)
+- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/289-agentrun.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
 - [RAG深度解析：分块、向量化、召回、重排，才是"蒸馏同事skill"的关键](../ch07/054-skill.html)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/057-harness-engineering.html)

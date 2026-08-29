@@ -1,5 +1,7 @@
 # 高德广告工程 Harness/SDD 体系演进：从\"氛围编程\"治理到 AI Native 全流程闭环
 
+## Ch05.016 高德广告工程 Harness/SDD 体系演进：从\"氛围编程\"治理到 AI Native 全流程闭环
+
 > 📊 Level ⭐⭐ | 20.3KB | `entities/gaode-sdd-harness-team-ai-coding-paradigm-ibjfu.md`
 
 # 告别"氛围编程"：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践
@@ -11,7 +13,7 @@
 
 ## 相关实体
 - [Claude Code Prompt Context Harness](../ch09/050-claude-code-prompt.html)
-- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/191-ahe-agentic-harness-engineering.html)
+- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/192-ahe-agentic-harness-engineering.html)
 - [Pi Openclaw Coding Harness](../ch04/176-openclaw.html)
 - [Ai Production Development Workflow Openspec Superpowers Gstack](046-openspec.html)
 - [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗 V2](057-harness-engineering.html)
@@ -194,7 +196,7 @@ Harness 的类比值得深思：不改变马的基因（模型本身），而是
 
 ## 相关实体（更新）
 - [Claude Code Prompt Context Harness](../ch09/050-claude-code-prompt.html)
-- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/191-ahe-agentic-harness-engineering.html)
+- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/192-ahe-agentic-harness-engineering.html)
 - [Pi Openclaw Coding Harness](../ch04/176-openclaw.html)
 - [Ai Production Development Workflow Openspec Superpowers Gstack](046-openspec.html)
 - [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗 V2](057-harness-engineering.html)

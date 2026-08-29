@@ -1,5 +1,7 @@
 # 协同文档下的 Agent 透明化编辑：可回滚、可对比的协作闭环
 
+## Ch04.238 协同文档下的 Agent 透明化编辑：可回滚、可对比的协作闭环
+
 > 📊 Level ⭐⭐ | 9.1KB | `entities/vivo-agent-transparent-collaborative-editing.md`
 
 # 协同文档下的 Agent 透明化编辑：可回滚、可对比的协作闭环

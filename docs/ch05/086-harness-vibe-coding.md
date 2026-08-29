@@ -1,5 +1,7 @@
 # Harness 工程可视化：Vibe Coding 中重建工程可控性
 
+## Ch05.086 Harness 工程可视化：Vibe Coding 中重建工程可控性
+
 > 📊 Level ⭐⭐⭐ | 13.0KB | `entities/routa-harness-engineering-visualization.md`
 
 # Harness 工程可视化：Vibe Coding 中重建工程可控性

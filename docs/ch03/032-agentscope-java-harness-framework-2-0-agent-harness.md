@@ -1,5 +1,7 @@
 # AgentScope Java Harness Framework 2.0 — 企业级 Agent 分布式场景的 Harness 实现 (Java 2.0 重大升级)
 
+## Ch03.032 AgentScope Java Harness Framework 2.0 — 企业级 Agent 分布式场景的 Harness 实现 (Java 2.0 重大升级)
+
 > 📊 Level ⭐⭐ | 45.9KB | `entities/agentscope-java-harness-framework-enterprise-distributed.md`
 
 ## 背景：个人助手型 Agent 与企业级 Agent 是两种工程形态
@@ -538,8 +540,8 @@ Sandbox 设计需要在安全性与性能之间做出权衡 。状态快照和�
 
 **2.0 升级围绕 9 大主题**（每节标题都带"Cloud Native"标签 — **阿里云云原生**出品）：
 
-- [agentrun：阿里云多 agent 生产级协作方案（a2a 开放协议）](../ch04/270-agentrun.html)
-- [这个开源 agent 框架的核心设计，可能是目前最「聪明」的取舍](../ch04/259-pi-agent.html)
+- [agentrun：阿里云多 agent 生产级协作方案（a2a 开放协议）](../ch04/289-agentrun.html)
+- [这个开源 agent 框架的核心设计，可能是目前最「聪明」的取舍](../ch04/260-pi-agent.html)
 
 ## ① 企业级分布式部署 — 无状态水平扩展 + 零停机发布 + 多租户隔离
 

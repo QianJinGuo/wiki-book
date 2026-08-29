@@ -1,5 +1,7 @@
 # ChatGPT Dreaming V3：长期记忆架构级重构（时效 75.1% / 偏好 71.3% / 算力 -80%）
 
+## Ch01.213 ChatGPT Dreaming V3：长期记忆架构级重构（时效 75.1% / 偏好 71.3% / 算力 -80%）
+
 > 📊 Level ⭐⭐ | 14.8KB | `entities/chatgpt-dreaming-v3-long-term-memory-architecture.md`
 
 # ChatGPT Dreaming V3：长期记忆架构级重构
@@ -112,8 +114,8 @@ OpenAI 2026-06-05 凌晨正式推出 **Dreaming V3**——ChatGPT 真正意义�
 **本实体关注"OpenAI Dreaming V3 新架构 + 量化数据"**（架构级重构 / 时效 75.1% / 偏好 71.3% / 算力 -80% / 个人助手定位）。
 
 - [Anthropic Dreaming Claude Managed Agents Ovz5V7Jjkqdksu9Xmxwt8W](294-claude-managed-agents.html) — **同名 "Dreaming" 不同应用场景**：Anthropic 面向 Agent 后台（Developer-facing，整理 memory store 让 Agent 越用越聪明）；OpenAI 面向个人用户长期记忆（Consumer-facing，整理 ChatGPT 用户偏好）。**两者技术路径相似（异步整理）但目标受众完全相反**。
-- [Chatgpt Memory](286-chatgpt-memory.html) — 10KB 旧版 ChatGPT Memory 概览（2026-04 写入），覆盖 V1 自动/手动记忆机制。本实体是**V3 新架构**补充——形成"V1/V0/V3 三阶段演进 + 量化数据 + 工程突破"完整时间线。
-- [Agent Memory Architecture](../ch04/320-perplexity-brain-self-improving-agent-memory-architecture.html) / [Agent Memory Architecture Ruofei](../ch04/133-agent-memory.html) / [Agent Memory Architecture Past Influence Future Ruofei](../ch04/133-agent-memory.html) — 若飞系列：Agent 记忆架构深度分析（双视角 / 五模块 / 几何级数据增长等）。本实体是**OpenAI 官方视角的 ChatGPT 端到端**消费者记忆实现。
+- [Chatgpt Memory](287-chatgpt-memory.html) — 10KB 旧版 ChatGPT Memory 概览（2026-04 写入），覆盖 V1 自动/手动记忆机制。本实体是**V3 新架构**补充——形成"V1/V0/V3 三阶段演进 + 量化数据 + 工程突破"完整时间线。
+- [Agent Memory Architecture](../ch04/321-perplexity-brain-self-improving-agent-memory-architecture.html) / [Agent Memory Architecture Ruofei](../ch04/133-agent-memory.html) / [Agent Memory Architecture Past Influence Future Ruofei](../ch04/133-agent-memory.html) — 若飞系列：Agent 记忆架构深度分析（双视角 / 五模块 / 几何级数据增长等）。本实体是**OpenAI 官方视角的 ChatGPT 端到端**消费者记忆实现。
 - [05 11 The Great Memory Panic Of 2026](582-the-great-memory-panic-of-2026.html) — 5-11 memory 供应链恐慌（与本话题同名 "memory" 但实际是 DRAM 内存供应链），**不同主题**，仅做反例参照。
 - [Agentmemory Coding Agent Local Memory](../ch09/015-agentmemory-coding-agent.html) / [Agentmemory Source Analysis Coding Agent Local Memory](../ch09/038-coding-agent.html) — AgentMemory Coding Agent 本地记忆。本实体是 OpenAI 云端 ChatGPT 端到端记忆，对比形成"云端 vs 本地"记忆路径。
 
@@ -144,7 +146,7 @@ OpenAI 2026-06-05 凌晨正式推出 **Dreaming V3**——ChatGPT 真正意义�
 
 - **用"状态机"视角审视 AI 的记忆时效性**：不要假设 AI 知道"现在"是什么时间。对于需要地理位置、时间上下文的任务，主动在对话中嵌入时间戳比依赖系统自动感知更可靠——尤其在旅行、健康、金融等时效敏感场景。 
 
-- **监控偏好跟随成功率作为产品核心指标**：31.4% → 71.3% 的跃升说明偏好跟随率是衡量 AI 记忆系统成熟度的关键北极星指标。产品迭代中应持续追踪该指标，并与 [Agent Memory Architecture](../ch04/320-perplexity-brain-self-improving-agent-memory-architecture.html) 中的评估框架对标，识别记忆系统的瓶颈所在。 
+- **监控偏好跟随成功率作为产品核心指标**：31.4% → 71.3% 的跃升说明偏好跟随率是衡量 AI 记忆系统成熟度的关键北极星指标。产品迭代中应持续追踪该指标，并与 [Agent Memory Architecture](../ch04/321-perplexity-brain-self-improving-agent-memory-architecture.html) 中的评估框架对标，识别记忆系统的瓶颈所在。 
 
 - 为 AI 记忆系统设计数据导出和删除功能**：当用户对 AI 记忆拥有完整读写权限成为标配时，竞品需要在数据透明性上跟进。参考记忆摘要功能的实现逻辑，为企业版产品设计合规的"记忆审计"和"记忆清除"接口。 
 

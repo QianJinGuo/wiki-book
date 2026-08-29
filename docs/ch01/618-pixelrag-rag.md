@@ -1,5 +1,7 @@
 # PixelRAG：用截图替代文本解析的视觉 RAG 范式
 
+## Ch01.618 PixelRAG：用截图替代文本解析的视觉 RAG 范式
+
 > 📊 Level ⭐⭐ | 4.2KB | `entities/pixelrag-screen-shot-visual-rag-berkeley-2026.md`
 
 # PixelRAG：用截图替代文本解析的视觉 RAG 范式

@@ -1,5 +1,7 @@
 # AI 写前端 ≠ 设计 —— Anomaly 创始人对 Vibe Coding 哲学批判
 
+## Ch09.112 AI 写前端 ≠ 设计 —— Anomaly 创始人对 Vibe Coding 哲学批判
+
 > 📊 Level ⭐⭐ | 2.5KB | `entities/impeccable-anomaly-vibe-design-vs-vibe-coding.md`
 
 # AI 写前端 ≠ 设计 —— Anomaly 创始人对 Vibe Coding 哲学批判

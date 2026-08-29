@@ -1,5 +1,7 @@
 # Forward launches Predict to verify network changes before they reach production - SiliconANGLE
 
+## Ch12.088 Forward launches Predict to verify network changes before they reach production - SiliconANGLE
+
 > 📊 Level ⭐⭐ | 5.1KB | `entities/forward-networks-predict-network-verification.md`
 
 ## 核心要点
@@ -9,7 +11,7 @@
 ## 相关实体
 - [Huntress Edr Itdr](https://github.com/QianJinGuo/wiki/blob/main/entities/huntress-edr-itdr.md)
 - [Huntress Edr Itdr Unified Detection](https://github.com/QianJinGuo/wiki/blob/main/entities/huntress-edr-itdr-unified-detection.md)
-- [From Kubernetes Dev Setup To Production What Actually Change](../ch11/073-from-kubernetes-dev-setup-to-production-what-actually-chang.html)
+- [From Kubernetes Dev Setup To Production What Actually Change](../ch11/072-from-kubernetes-dev-setup-to-production-what-actually-chang.html)
 - [Habby Game Aws Devops Agent](../ch04/214-aws-devops-agent.html)
 - [Aws Devops Agent Mcp Server打通混合云网络排障的最后一公里](../ch07/041-aws-devops-agent-mcp-server.html)
 

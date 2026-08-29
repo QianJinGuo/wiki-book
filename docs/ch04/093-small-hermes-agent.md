@@ -1,5 +1,7 @@
 # Small Hermes 自我进化 Agent 架构
 
+## Ch04.093 Small Hermes 自我进化 Agent 架构
+
 > 📊 Level ⭐⭐ | 15.3KB | `entities/small-hermes-self-evolving-agent-architecture.md`
 
 ## 核心洞察

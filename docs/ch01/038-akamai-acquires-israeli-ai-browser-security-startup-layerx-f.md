@@ -1,5 +1,7 @@
 # Akamai acquires Israeli AI browser security startup LayerX for $205 million in cash
 
+## Ch01.038 Akamai acquires Israeli AI browser security startup LayerX for $205 million in cash
+
 > 📊 Level ⭐ | 8.4KB | `entities/akamai-acquires-israeli-ai-browser-security-startup-layerx-for-205-million-in-ca.md`
 
 ## 核心要点

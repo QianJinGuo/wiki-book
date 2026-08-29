@@ -1,5 +1,7 @@
 # Have your views on AI changed
 
+## Ch01.562 Have your views on AI changed
+
 > 📊 Level ⭐⭐ | 5.6KB | `entities/creativeboom-ai-views-changed.md`
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/creativeboom-ai-views-changed.md)
@@ -48,8 +50,8 @@ Matthew Gallagher 的观察触及核心："When I speak with folks about AI, man
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/creativeboom-ai-views-changed.md)
 
 ## 相关实体
-- [Task Queue Priority and Fairness: Your Task Queue, Your Way](../ch11/140-task-queue-priority-and-fairness-your-task-queue-your-way.html)
-- [Task Queue Priority and Fairness: Your Task Queue, your way](../ch11/140-task-queue-priority-and-fairness-your-task-queue-your-way.html)
+- [Task Queue Priority and Fairness: Your Task Queue, Your Way](../ch11/168-task-queue-priority-and-fairness-your-task-queue-your-way.html)
+- [Task Queue Priority and Fairness: Your Task Queue, your way](../ch11/168-task-queue-priority-and-fairness-your-task-queue-your-way.html)
 - [The best argument I've heard for why AI won't take your job](../ch04/135-ai.html)
 
 ---

@@ -1,5 +1,7 @@
 # Claude Code Skills / MCP / Rules 源码分析
 
+## Ch07.006 Claude Code Skills / MCP / Rules 源码分析
+
 > 📊 Level ⭐⭐ | 23.5KB | `entities/claude-code-skills-mcp-rules-source-analysis.md`
 
 ## 核心命题

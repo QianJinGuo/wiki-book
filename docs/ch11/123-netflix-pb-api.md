@@ -1,5 +1,7 @@
 # Netflix 高吞吐图抽象层：PB 级图数据的统一 API 与实时遍历
 
+## Ch11.123 Netflix 高吞吐图抽象层：PB 级图数据的统一 API 与实时遍历
+
 > 📊 Level ⭐⭐ | 7.9KB | `entities/high-throughput-graph-abstraction-at-netflix-part-i.md`
 
 # Netflix 高吞吐图抽象层：PB 级图数据的统一 API 与实时遍历
@@ -77,7 +79,7 @@ Netflix 的 10M ops/sec + 毫秒级延迟 + 650TB 数据规模是特定业务需
 - [Netflix Druid Interval Aware Caching](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-druid-interval-aware-caching.md)
 - [Netflix Metadata Service Model Lifecycle Graph](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-metadata-service-model-lifecycle-graph.md)
 - [Netflix Live Operations Human Infrastructure](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-live-operations-human-infrastructure.md)
-- [Netflix Nebula Archrules](078-netflix-nebula-archrules-java-archunit.html)
+- [Netflix Nebula Archrules](077-netflix-nebula-archrules-java-archunit.html)
 
 ## 原文链接
 

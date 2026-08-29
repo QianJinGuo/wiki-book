@@ -1,5 +1,7 @@
 # Mythos for Offensive Security: XBOW's Evaluation
 
+## Ch01.257 Mythos for Offensive Security: XBOW's Evaluation
+
 > 📊 Level ⭐⭐ | 12.6KB | `entities/mythos_offensive_security_xbow_evaluatio.md`
 
 ## 核心要点
@@ -95,14 +97,14 @@ Point Estimate 对 AI Security Institute 基准测试的分析也印证了这一
 - [Claude Code Agent 工程设计](../ch03/048-claude-code-agent.html)
 - [AI 行业就业八大变化（腾讯研究院纵向对比）](../ch04/135-ai.html)
 - [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](../ch03/004-agent.html)
-- [Agent Skill 设计模式](../ch04/300-agent-skills.html)
+- [Agent Skill 设计模式](../ch04/301-agent-skills.html)
 - [CDP Bridge MCP：真实浏览器直连 MCP 工具](../ch03/004-agent.html)
 
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/004-agent.html)
 - [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch03/004-agent.html)
 - [Anthropic Claude Managed Agents 平台正式发布](158-anthropic-claude-managed-agents.html)
 
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/300-agent-skills.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/301-agent-skills.html)
 - [Anthropic 14 个 Agent Skills 设计模式](../ch04/077-anthropic-agent.html)
 - [Anthropic Computer Use 最佳实践](601-anthropic-computer-use.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/anthropic-ecosystem.md)

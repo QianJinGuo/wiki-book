@@ -1,5 +1,7 @@
 # Useful Memories Become Faulty When Continuously Updated by LLMs
 
+## Ch01.075 Useful Memories Become Faulty When Continuously Updated by LLMs
+
 > 📊 Level ⭐ | 7.2KB | `entities/useful-memories-become-faulty-when-continuously-updated-by-llms.md`
 
 # Useful Memories Become Faulty When Continuously Updated by LLMs

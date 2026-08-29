@@ -1,5 +1,7 @@
 # Amazon Cognito 多区域复制：跨区域用户认证韧性方案
 
+## Ch11.063 Amazon Cognito 多区域复制：跨区域用户认证韧性方案
+
 > 📊 Level ⭐⭐ | 11.0KB | `entities/aws-cognito-multi-region-replication.md`
 
 # Amazon Cognito 多区域复制：跨区域用户认证韧性方案

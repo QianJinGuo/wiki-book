@@ -1,5 +1,7 @@
 # K-Dense — The Model Is No Longer the Bottleneck
 
+## Ch04.137 K-Dense — The Model Is No Longer the Bottleneck
+
 > 📊 Level ⭐⭐ | 12.6KB | `entities/k-dense-the-model-is-no-longer-the-bottleneck.md`
 
 # K-Dense — The Model Is No Longer the Bottleneck

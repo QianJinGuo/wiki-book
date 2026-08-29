@@ -1,5 +1,7 @@
 # Domain Expertise Has Always Been the Real Moat
 
+## Ch01.026 Domain Expertise Has Always Been the Real Moat
+
 > 📊 Level ⭐ | 8.8KB | `entities/brethorstingcom-blog-2026-05-domain-expertise-has-always-been-the-.md`
 
 # Domain Expertise Has Always Been the Real Moat
@@ -48,7 +50,7 @@ Agentic AI 突然拉平了这一环。现在，一个具备合理提示技巧的
 - **能做**：转录（transcription）——将清晰的领域理解转化为代码
 - **不能做**：构建领域模型——理解一个行业的规则、约束、隐性知识
 
-这与 [真实的 AI Agent 与真实工作](../ch04/185-real-ai-agents-and-real-work.html) 中关于 AI 在生产环境中的"上半场 vs 下半场"论点形成呼应：AI 擅长的是"执行已知模式"的上半场，而"建立问题框架"的下半场仍然需要人类。
+这与 [真实的 AI Agent 与真实工作](../ch04/183-real-ai-agents-and-real-work.html) 中关于 AI 在生产环境中的"上半场 vs 下半场"论点形成呼应：AI 擅长的是"执行已知模式"的上半场，而"建立问题框架"的下半场仍然需要人类。
 
 ## 实践启示
 

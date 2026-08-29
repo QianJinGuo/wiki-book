@@ -1,5 +1,7 @@
 # Hermes Agent Skill 系统深度解析
 
+## Ch01.261 Hermes Agent Skill 系统深度解析
+
 > 📊 Level ⭐⭐ | 12.5KB | `entities/hermes-skill-system.md`
 
 ## 核心定位
@@ -159,7 +161,7 @@ Skill 退役时切忌直接删除——工具栈过时不代表经验过时。�
 → [Hermes Agent 自进化机制](../ch04/161-hermes-agent.html)（Skills 系统概述 + 三层架构）
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-skill-system-winty.md)
 → [winty·Self-Improving 概览](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-self-improving-overview-winty.md)（同系列）
-→ [Agent Memory 架构对比](../ch04/320-perplexity-brain-self-improving-agent-memory-architecture.html)
+→ [Agent Memory 架构对比](../ch04/321-perplexity-brain-self-improving-agent-memory-architecture.html)
 
 ## 相关实体
 - [AI Skill 测评指标体系](350-ai-skill.html)

@@ -1,5 +1,7 @@
 # Superpowers 6.0 SDD 评审重写：文件交接 + 多平台支持
 
+## Ch05.051 Superpowers 6.0 SDD 评审重写：文件交接 + 多平台支持
+
 > 📊 Level ⭐⭐ | 9.4KB | `entities/superpowers-6-sdd-review-redesign-file-handoff.md`
 
 # Superpowers 6.0 SDD 评审重写

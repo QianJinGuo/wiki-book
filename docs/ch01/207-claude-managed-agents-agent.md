@@ -1,5 +1,7 @@
 # Claude Managed Agents 新更新\"专属云\"模式：把Agent的手放回企业内部
 
+## Ch01.207 Claude Managed Agents 新更新\"专属云\"模式：把Agent的手放回企业内部
+
 > 📊 Level ⭐⭐ | 15.3KB | `entities/claude-managed-agents-self-hosted-sandbox-mcp-tunnels-enterprise.md`
 
 author: VibeCoder

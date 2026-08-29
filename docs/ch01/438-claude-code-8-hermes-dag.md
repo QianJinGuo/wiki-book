@@ -1,5 +1,7 @@
 # Claude Code 动态工作流 8 译本（行小招译注 + Hermes DAG 对比）
 
+## Ch01.438 Claude Code 动态工作流 8 译本（行小招译注 + Hermes DAG 对比）
+
 > 📊 Level ⭐⭐ | 7.6KB | `entities/claude-code-dynamic-workflows-8th-translation-xingxiaozhao.md`
 
 # Claude Code 动态工作流 8 译本（行小招译注 + Hermes DAG 对比）

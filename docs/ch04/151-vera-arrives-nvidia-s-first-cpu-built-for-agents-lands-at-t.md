@@ -1,5 +1,7 @@
 # Vera Arrives: NVIDIA's First CPU Built for Agents Lands at Top AI Labs
 
+## Ch04.151 Vera Arrives: NVIDIA's First CPU Built for Agents Lands at Top AI Labs
+
 > 📊 Level ⭐⭐ | 12.0KB | `entities/blogs.nvidia.com-vera-cpu-delivery.md`
 
 ## 核心要点
@@ -91,7 +93,7 @@ NVLink Fusion 向第三方 XPU 开放 NVIDIA 基础设施平台，使合作伙�
 ## 相关实体
 - [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](151-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t.html)
 - [Nvidia Agentic Systems Extreme Co Design](../ch03/004-agent.html)
-- [Sap Unveils The Autonomous Enterprise](079-sap-unveils-the-autonomous-enterprise.html)
+- [Sap Unveils The Autonomous Enterprise](059-sap-unveils-the-autonomous-enterprise.html)
 - [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](../ch03/004-agent.html)
 - [Nemotron 3 5 Content Safety](../ch01/367-nemotron-3-5-content-safety-customizable-multimodal-safety.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)

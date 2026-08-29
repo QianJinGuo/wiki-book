@@ -1,5 +1,7 @@
 # EnvHarness: Awakening Static Worlds for Agent Learning
 
+## Ch05.041 EnvHarness: Awakening Static Worlds for Agent Learning
+
 > 📊 Level ⭐⭐ | 11.7KB | `entities/envharness-awakening-static-worlds-agent-learning-google-2026.md`
 
 # EnvHarness: Awakening Static Worlds for Agent Learning

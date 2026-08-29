@@ -1,5 +1,7 @@
 # 让 Amazon Quick 操作飞书：构建远程 MCP 服务的设计实践
 
+## Ch07.065 让 Amazon Quick 操作飞书：构建远程 MCP 服务的设计实践
+
 > 📊 Level ⭐⭐ | 3.7KB | `entities/让-amazon-quick-操作飞书构建远程-mcp-服务的设计实践.md`
 
 # 让 Amazon Quick 操作飞书：构建远程 MCP 服务的设计实践
@@ -29,7 +31,7 @@
 
 ### 关联实体
 
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/193-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01/651-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch04/176-openclaw.html)

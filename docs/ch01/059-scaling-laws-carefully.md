@@ -1,5 +1,7 @@
 # Scaling Laws, Carefully
 
+## Ch01.059 Scaling Laws, Carefully
+
 > 📊 Level ⭐ | 7.6KB | `entities/posts-2026-06-24-scaling-laws.md`
 
 # Scaling Laws, Carefully

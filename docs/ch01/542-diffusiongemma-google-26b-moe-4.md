@@ -1,5 +1,7 @@
 # DiffusionGemma：扩散式文本生成模型（Google 26B MoE，4× 推理加速）
 
+## Ch01.542 DiffusionGemma：扩散式文本生成模型（Google 26B MoE，4× 推理加速）
+
 > 📊 Level ⭐⭐ | 6.0KB | `entities/diffusiongemma-4x-faster-text-generation-google-2026-06.md`
 
 # DiffusionGemma：扩散式文本生成模型（Google 26B MoE，4× 推理加速）

@@ -1,5 +1,7 @@
 # 两篇Harness论文：微软M⋆记忆进化 + 谷歌AutoHarness动作约束
 
+## Ch01.528 两篇Harness论文：微软M⋆记忆进化 + 谷歌AutoHarness动作约束
+
 > 📊 Level ⭐⭐ | 6.3KB | `entities/two-harness-papers-microsoft-google.md`
 
 # 两篇Harness论文：微软M⋆记忆进化 + 谷歌AutoHarness动作约束
@@ -15,7 +17,7 @@
 - [Code As Agent Harness Survey](../ch09/044-code-as-agent-harness.html)
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/008-harness.html)
 - [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch05/008-harness.html)
-- [Agentexecutorgooglesdistributedagentruntime](../ch04/270-agentrun.html)
+- [Agentexecutorgooglesdistributedagentruntime](../ch04/289-agentrun.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/two-harness-papers-microsoft-google.md)
 
