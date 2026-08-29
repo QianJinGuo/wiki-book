@@ -9,7 +9,7 @@
     <a href="https://github.com/QianJinGuo/wiki-book" class="md-button">GitHub</a>
   </div>
   <div class="home-stats">
-    <div class="home-stats__item"><span class="home-stats__num">4,087</span><span class="home-stats__label">编撰实体</span></div>
+    <div class="home-stats__item"><span class="home-stats__num">4,087</span><span class="home-stats__label">编撰条目</span></div>
     <div class="home-stats__item"><span class="home-stats__num">20 章 · 5 篇</span><span class="home-stats__label">全书结构</span></div>
     <div class="home-stats__item"><span class="home-stats__num">4,024</span><span class="home-stats__label">一手原文</span></div>
     <div class="home-stats__item"><span class="home-stats__num">★ × 5</span><span class="home-stats__label">难度分级</span></div>
@@ -20,7 +20,7 @@
 
 ## 全书结构
 
-| 篇 | 定位 | 读者 | 代表实体数 |
+| 篇 | 定位 | 读者 | 编撰条目 |
 |---|------|------|----------|
 | 第一篇 · 入门篇 | 从零理解 AI | 任何人 | 1830 篇 |
 | 第二篇 · 工程师篇 | 构建 AI 应用 | 有编程基础 | 1455 篇 |
