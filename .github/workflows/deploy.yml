@@ -33,8 +33,18 @@ jobs:
       - name: Build site
         run: mkdocs build
 
-      - name: Slim search index for browser
-        run: python3 scripts/slim-search-index.py || true
+      # ORDER MATTERS: slim first, then build the neighbor graph from the
+      # slimmed index so graph indices align with the docs array the
+      # browser fetches (same ordering as scripts/build.sh).
+      - name: Slim search index
+        run: python3 scripts/slim-search-index.py
+
+      - name: Build neighbor graph (Tier 1 RAG)
+        run: >
+          python3 scripts/build-neighbor-graph.py
+          --input site/search/search_index.json
+          --output site/assets/neighbor_graph.json
+          --top-k 20
 
       - uses: actions/upload-pages-artifact@v3
         with:
