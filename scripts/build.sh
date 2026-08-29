@@ -7,35 +7,46 @@ cd "$PROJECT_DIR"
 
 echo "=== Building wiki-book ==="
 
+# Host-side Python for course/dashboard/slim/graph steps.
+# Prefers the project venv (numpy/scipy for the graph build); CI installs
+# deps into the system interpreter instead. Override with PYTHON=<path>.
+PYTHON="${PYTHON:-python3}"
+if [ "$PYTHON" = "python3" ] && [ -x ".venv/bin/python" ]; then
+  PYTHON=".venv/bin/python"
+fi
+
 # Regenerate index JSONs from the actual docs/ tree before MkDocs copies
 # docs/ into site/.  The auto-sync ("sync: auto-update from wiki entities")
 # renumbers files, so these indexes must be rebuilt every build or the
 # dashboard / course UI will emit links to stale file numbers (404s).
 echo "=== Building curated course ==="
-python3 scripts/build-course.py
+"$PYTHON" scripts/build-course.py
 
 echo "=== Building dashboard article catalog ==="
-python3 scripts/rank-articles.py
+"$PYTHON" scripts/rank-articles.py
 
 # Build via Docker
 docker run --rm -v "$(pwd):/build" -w /build wiki-book-builder:latest mkdocs build
 
-# Build semantic neighbor graph (Tier 1 RAG)
-# 从完整 search_index.json 生成，在 slim 之前
-echo "=== Building neighbor graph (Tier 1 RAG) ==="
+# ORDER MATTERS: slim the search index FIRST, then build the neighbor graph
+# from the slimmed index.  rag-client.js searches over the slimmed docs array
+# and keys the graph by position in that same array — building the graph from
+# the full index (the old order) shifted every index and silently returned
+# wrong neighbor documents.
+echo "=== Slimming search index ==="
+"$PYTHON" scripts/slim-search-index.py
+
+echo "=== Building neighbor graph (Tier 1 RAG, aligned with slimmed index) ==="
 if [ -f "site/search/search_index.json" ]; then
-  python3 scripts/build-neighbor-graph.py \
+  "$PYTHON" scripts/build-neighbor-graph.py \
     --input site/search/search_index.json \
-    --output /tmp/neighbor_graph.json \
+    --output site/assets/neighbor_graph.json \
     --top-k 20 2>&1 | tail -5
-  echo "Neighbor graph: /tmp/neighbor_graph.json"
+  cp site/assets/neighbor_graph.json /tmp/neighbor_graph.json
+  echo "Neighbor graph: site/assets/neighbor_graph.json (also /tmp for R2 upload)"
 else
   echo "WARNING: site/search/search_index.json not found, skipping neighbor graph"
 fi
-
-# Slim search index (68MB → ~8MB)
-echo "=== Slimming search index ==="
-python3 scripts/slim-search-index.py
 
 # Copy Cloudflare Pages _headers for cache control
 if [ -f "docs/_headers" ]; then

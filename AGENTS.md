@@ -6,11 +6,11 @@
 
 ```
 站点名称: AI 工程
-源文件:   docs/ (2,675 篇文章)
+源文件:   docs/ (4,024 篇 raw 原文)
 章节:     20 章 5 篇 (Ch01-Ch20)
-实体数:   2,983
-子页面:   2,652
-域名:     jinguo.tech
+编撰实体: 4,087 (与首页/章节目录口径一致)
+拆分页面: 6,509 (ch*/ 目录，含部分章节未精选实体)
+域名:     jinguo.tech (CF Pages) / wiki.jinguo.tech (GH Pages)
 仓库:     github.com/QianJinGuo/wiki-book
 版本:     v1.3.8
 ```
@@ -61,11 +61,11 @@ deploy/
     └── deploy.yml         # GitHub Actions (含近邻图构建)
 
 scripts/
-├── build.sh               # 共享构建脚本 (mkdocs + 近邻图 + slim)
+├── build.sh               # 共享构建脚本 (mkdocs → slim → 近邻图, 顺序不可换)
 ├── deploy.sh              # 主部署脚本 (docker|cloudflare|github|all)
-├── build-neighbor-graph.py  # TF-IDF 近邻图构建
+├── build-neighbor-graph.py  # TF-IDF 近邻图构建 (输入必须为 slim 后索引)
 ├── build-vectorize.py       # Vectorize 索引构建 (Phase 3)
-└── slim-search-index.py     # 搜索索引裁剪
+└── slim-search-index.py     # 搜索索引裁剪 (支持 --input, 默认 site/search/)
 
 functions/                  # Cloudflare Pages Functions
 ├── rag-query.js            # RAG 查询 (Phase 1+2)
@@ -74,8 +74,8 @@ functions/                  # Cloudflare Pages Functions
     └── graph.js            # 近邻图端点 (R2 流式)
 
 overrides/assets/javascripts/
-├── rag-client.js           # 客户端 RAG 引擎 (关键词+近邻图)
-└── ai-chat.js              # AI Chat 面板 (doRagSearch + 三路降级)
+├── rag-client.js           # 客户端 RAG 引擎 (关键词+近邻图, 缓存前缀 rag-v2)
+└── ai-chat.js              # AI Chat 面板 (doRagSearch + 三路降级 + 429/503 自动重试)
 ```
 
 ---
@@ -96,7 +96,7 @@ Layer 3: 讯飞 + Vectorize (CF)    — 语义搜索, ~300ms
 | 能力 | Docker | GitHub Pages | Cloudflare Pages |
 |------|--------|-------------|-----------------|
 | 客户端搜索 | ✅ | ✅ | ✅ |
-| 近邻图扩展 | ✅ (注入) | ✅ (GHA 构建) | ✅ (R2) |
+| 近邻图扩展 | ✅ (site/assets 静态) | ✅ (GHA slim+建图) | ✅ (R2 /rag/graph，静态兜底) |
 | 语义搜索 (Layer 3) | ❌ | ❌ | ✅ 讯飞 + Vectorize |
 | Reranker | ❌ nginx 兜底 | ❌ 无服务器 | ⚠️ Free 503 |
 
@@ -115,8 +115,9 @@ Layer 3: 讯飞 + Vectorize (CF)    — 语义搜索, ~300ms
 
 ### 客户端 RAG 引擎 (rag-client.js)
 
-- 浏览器 IndexedDB 缓存 search_index.json (61K 文档)
-- 关键词搜索 (tokenize + 词频打分)
+- 浏览器 IndexedDB 缓存 search_index.json (31,883 篇 slim 文档, ~11MB)
+- 缓存前缀 `rag-v2`：索引结构变更时必须递增，否则老访客命中失效缓存
+- 关键词搜索 (tokenize + 词频打分, 标题分词 init 时预计算)
 - 近邻图扩展 (top-10 种子 × 20 近邻, TF-IDF 余弦)
 - 融合排序 (关键词分 × 0.3 + 近邻分 × 10)
 - 三路降级: 客户端 → 服务器 → 空结果
@@ -125,14 +126,20 @@ Layer 3: 讯飞 + Vectorize (CF)    — 语义搜索, ~300ms
 ### 近邻图构建
 
 ```bash
+# 必须在 slim-search-index.py 之后运行（下标对齐，见 build.sh 顺序说明）
 python3 scripts/build-neighbor-graph.py \
   --input site/search/search_index.json \
   --output site/assets/neighbor_graph.json \
   --top-k 20
-# 输入: 63K 文档, TF-IDF → CSR 稀疏矩阵 → A@A.T
-# 输出: 30MB, 57K 节点, 每节点 top-20 近邻
+# 输入: 31,883 篇 slim 文档, TF-IDF → CSR 稀疏矩阵 → A@A.T
+# 输出: 15MB, 30,339 节点, 每节点 top-20 近邻 (v2 修复后)
 # 耗时: ~1 分钟 (M1 MacBook)
 ```
+
+> ⚠️ 历史教训 (v1): 图曾基于全量索引 (92,915 条) 构建，而浏览器检索的是
+> slim 数组 (31,883 条)，下标空间错位导致近邻扩展返回错误文档且无报错。
+> 任何一端 (slim 逻辑 / 建图输入) 变更都必须重新走完整 build.sh 并做
+> 「max(graph keys) < len(slim docs)」对齐校验。
 
 ---
 
@@ -157,9 +164,14 @@ git push origin main
 
 ### 构建流程 (build.sh)
 
-1. `mkdocs build` — 生成 site/ (含 HTML/JS/搜索索引)
-2. `build-neighbor-graph.py` — 从完整搜索索引生成近邻图
-3. `slim-search-index.py` — 裁剪搜索索引 (68MB → 21MB)
+1. `mkdocs build` — 生成 site/ (含 HTML/JS/全量搜索索引)
+2. `slim-search-index.py` — 裁剪搜索索引 (92,915 → 31,883 条, 82MB → 11MB)
+3. `build-neighbor-graph.py` — 基于 **slim 后**索引生成近邻图
+   (30,339 节点, 15MB)，写入 `site/assets/` (静态环境自愈) + `/tmp/` (供 R2 上传)
+
+> 顺序不可换：rag-client.js 按 slim 数组下标查图，图必须与最终下发的
+> 索引同源。本地跑 build.sh 需 numpy/scipy：`PYTHON=.venv/bin/python bash scripts/build.sh`
+> (一次性: `python3 -m venv .venv && .venv/bin/pip install -r requirements.txt`)
 
 ### Cloudflare 部署 (deploy/cloudflare/deploy.sh)
 
@@ -195,16 +207,16 @@ curl https://jinguo.tech/rag/graph        # → 200
 curl https://jinguo.tech/rag-query?q=test # → 200 或 503
 
 # RAG 客户端日志 (浏览器 Console)
-# [RagClient] 搜索索引加载完成: 61669 篇
-# [RagClient] 近邻图加载完成: 57380 个节点
-# [RagClient] 就绪 (61669 篇文档)
+# [RagClient] 搜索索引加载完成: 31883 篇
+# [RagClient] 近邻图加载完成: 30339 个节点
+# [RagClient] 就绪 (31883 篇文档)
 ```
 
 ---
 
 ## 已知问题
 
-### 1. Free 计划 503
+### 1. Free 计划 503 / 上游 429
 
 ```
 单次查询:         ✅ 200
@@ -212,15 +224,21 @@ curl https://jinguo.tech/rag-query?q=test # → 200 或 503
 等待 2-4s 后重试: ✅ 恢复
 ```
 
-解决方案: 升级 Workers Paid ($5/月) 或部署 QMD 到 HP。
+2026-08-29 线上实测：ai-proxy 上游免费额度耗尽时返回 429 `FreeUsageLimitError`。
+前端 (ai-chat.js) 已内置: 429/503 自动等待 3s 重试一次 + 友好错误文案
+(提示用户在设置中填自己的 Key)。根治: 升级 Workers Paid ($5/月)、更换
+provider 或引导用户 BYO Key。
 
 ### 2. Docker 文件权限
 
 `docker cp` 注入文件后权限为 600，需手动 `chmod 644`。当前容器内已修复。
 
-### 3. 搜索索引太大 (200MB)
+### 3. 搜索索引太大 (200MB) — 已结构性修复 (2026-08-29)
 
-Docker 构建的搜索索引未 slim (200MB)，浏览器 fetch 会超时。通过 `docker cp` 注入 21MB 裁剪版解决。正式修复需修改 Dockerfile 添加 slim 步骤。
+根因是绕过 build.sh 直接 mkdocs build 后 compose。现在 build.sh 固定产出
+slim 索引 (11MB) + 对齐近邻图 (site/assets/, 15MB)，Dockerfile 直接 COPY
+site/，`bash scripts/build.sh && docker compose up -d --build` 即自愈，
+无需 docker cp。
 
 ---
 
@@ -264,6 +282,6 @@ node test-rag.mjs
 
 ---
 
-*更新时间: 2026-07-27 (v1.3.8)*
+*更新时间: 2026-08-29 (v1.3.8, RAG 对齐修复)*
 *维护者: Hermes Agent*
 *RAG 复盘: RAG-RETROSPECTIVE.md*

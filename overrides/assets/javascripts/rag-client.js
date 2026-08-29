@@ -1,14 +1,16 @@
 /**
  * rag-client.js — 客户端 RAG 引擎
  *
- * 能力：
- *   Tier 1: 关键词搜索 + 语义近邻图扩展（零模型加载）
- *   Tier 2: transformers.js 语义搜索（渐进增强，模型加载失败自动降级）
+ * 能力：关键词搜索 + 语义近邻图扩展（零模型加载，纯浏览器运行）
  *
  * 架构：
- *   - 从服务器端点加载 search_index.json + neighbor_graph.json
- *   - IndexedDB 持久缓存（首次加载后秒开）
- *   - Web Worker 中执行检索（不阻塞主线程）
+ *   - 从服务器端点加载 search_index.json + neighbor_graph.json。
+ *     两者必须出自同一次「slim 后」的索引构建，下标才对齐
+ *     （见 scripts/build.sh 的流水线顺序注释）。
+ *   - IndexedDB 持久缓存，首次加载后秒开；CACHE_PREFIX 随索引结构版本递增，
+ *     部署新索引后旧缓存自动失效。
+ *   - 检索在主线程执行；标题分词在 init 时预计算一次，
+ *     正文为 slim 后 ≤300 字符的截断文本，单次查询开销可控。
  *
  * 用法：
  *   const rag = new RagClient({ searchUrl: '/rag/search', graphUrl: '/rag/graph' });
@@ -22,7 +24,8 @@
   var DB_NAME = "wiki-book-rag";
   var DB_VERSION = 1;
   var STORE_NAME = "assets";
-  var CACHE_PREFIX = "rag-v1";
+  // v2: 索引切换为 slim 后构建的近邻图（下标对齐），旧 v1 缓存不可用
+  var CACHE_PREFIX = "rag-v2";
 
   // ========== 停用词（与 functions/rag-query.js 保持一致） ==========
   var STOP_WORDS = new Set([
@@ -186,6 +189,8 @@
       }
 
       self._ready = true;
+      // 标题分词只与文档集相关，预计算一次供每次查询复用
+      self._titleTokens = (self._docs || []).map(function(d) { return tokenize(d.title); });
       console.log("[RagClient] 就绪 (" + self._docs.length + " 篇文档)");
     })();
 
@@ -193,12 +198,12 @@
   };
 
   // ========== 关键词搜索（与服务器端逻辑一致） ==========
-  function keywordSearch(query, docs) {
+  function keywordSearch(query, docs, titleTokens) {
     var queryTokens = tokenize(query);
     if (queryTokens.length === 0) return [];
 
     var scored = docs.map(function(doc, idx) {
-      var titleTokens = tokenize(doc.title);
+      var titleTokens = titleTokens ? titleTokens[idx] : tokenize(doc.title);
       var textTokens = tokenize(doc.text);
       var score = 0;
       for (var qi = 0; qi < queryTokens.length; qi++) {
@@ -241,7 +246,7 @@
 
     return new Promise(function(resolve) {
       // 1. 关键词搜索
-      var keywordHits = keywordSearch(query, self._docs);
+      var keywordHits = keywordSearch(query, self._docs, self._titleTokens);
       var seenDocIds = new Set();
       var candidates = [];
 

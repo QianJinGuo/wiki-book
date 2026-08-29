@@ -41,35 +41,35 @@
     {
      "role": "核心原理",
      "title": "Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention（机器之心中文全文）",
-     "file": "ch01/1417-recent-developments-in-llm-architectures-kv-sharing-mhc-a.md",
-     "url": "/ch01/1417-recent-developments-in-llm-architectures-kv-sharing-mhc-a.html",
+     "file": "ch01/1465-recent-developments-in-llm-architectures-kv-sharing-mhc-a.md",
+     "url": "/ch01/1465-recent-developments-in-llm-architectures-kv-sharing-mhc-a.html",
      "chapter": "ch01",
      "chapterName": "AI 与 LLM 基础",
      "essence": "长上下文成本优化成为 2026 年 LLM 架构设计的主线；2026 年发布的新一代开源模型（Gemma 4、Laguna XS.2、ZAYA1-8B、DeepSeek V4）不约而同地将「降低长上下文推理成本」作为架构核心目标。这并非通过简单缩小模型参数量实现，而是通过大量结构级精细优化——跨层 KV 共享、分层注意力预算、压缩注意力等——在保持模型容量的同时减少计算和存储开销。这标志着 LLM 架构设计从「能力优先」向「效率与能力并重」的转型",
-     "words": 17884,
-     "level": 3
+     "words": 17891,
+     "level": 1
     },
     {
      "role": "工程案例",
      "title": "How LLMs Actually Work: 0xkato Transformer Walkthrough",
-     "file": "ch01/1475-how-llms-actually-work-0xkato-transformer-walkthrough.md",
-     "url": "/ch01/1475-how-llms-actually-work-0xkato-transformer-walkthrough.html",
+     "file": "ch01/1524-how-llms-actually-work-0xkato-transformer-walkthrough.md",
+     "url": "/ch01/1524-how-llms-actually-work-0xkato-transformer-walkthrough.html",
      "chapter": "ch01",
      "chapterName": "AI 与 LLM 基础",
      "essence": "How LLMs Actually Work: 0xkato Transformer Walkthrough；📊 Level ⭐⭐⭐ | 8.8KB | entities/how-llms-actually-work-0xkato.md。",
-     "words": 4942,
-     "level": 3
+     "words": 4904,
+     "level": 1
     },
     {
      "role": "延伸阅读",
-     "title": "NVIDIA 推理软件栈：如何助力实现更低 Token 成本",
-     "file": "ch01/1496-nvidia-token.md",
-     "url": "/ch01/1496-nvidia-token.html",
+     "title": "TokenSpeed: A Speed-of-Light LLM Inference Engine for AI Agents",
+     "file": "ch01/841-tokenspeed-a-speed-of-light-llm-inference-engine-for-ai-age.md",
+     "url": "/ch01/841-tokenspeed-a-speed-of-light-llm-inference-engine-for-ai-age.html",
      "chapter": "ch01",
      "chapterName": "AI 与 LLM 基础",
-     "essence": "随着企业从 AI 试点转向生产型 AI 工厂，基础设施的决策核心已从芯片峰值规格转向每 Token 成本——即每美元、每瓦特以及在规定的延迟目标内能够交付多少有用的 Token。 NVIDIA 的全栈推理软件与 NVIDIA GPU、CPU、网络和系统协同设计，在 Blackwell 平台上仅一个月内就将 DeepSeek V4 模型的 Token 成本降低至原来的五分之一。 多家头部推理服务提供商（Baseten、Cognition、Deep Infra、Together AI 等）已通过 NVIDIA 推理软件栈获得显著的性能提升和成本优化。；从峰值算力到每 Token 成本的思维转变：基础设施选型的核心指标已从 FLOPS 等峰值规格转向实际可交付的有用 Token 数量/美元。",
-     "words": 2951,
-     "level": 3
+     "essence": "TokenSpeed 是 LightSeek Foundation 开发的开源 LLM 推理引擎，专为 Agentic 工作负载（如 Claude Code、Codex、Cursor 等 Coding Agent）从第一性原理设计。其核心创新包括：编译器支持的并行建模机制、C++/Python 混合的高性能调度器、编译时 KV 缓存安全管理、可插拔分层内核系统，以及与 SMG 集成的低开销 CPU 请求入口。在 NVIDIA Blackwell 上，TokenSpeed 对标 TensorRT-LLM，在 Coding Agent 场景下 Pareto 前沿全面领先约 9-11%。；推理优化是 Agent 落地的关键瓶颈：选择 LLM 服务商或部署方案时，推理延迟应作为核心评估维度，尤其在 Coding Age。",
+     "words": 4020,
+     "level": 1
     }
    ],
    "lab": {
@@ -111,34 +111,34 @@
     {
      "role": "核心原理",
      "title": "Residual Context Diffusion (RCD)：Apple 残差上下文扩散语言模型",
-     "file": "ch01/1472-residual-context-diffusion-rcd-apple.md",
-     "url": "/ch01/1472-residual-context-diffusion-rcd-apple.html",
+     "file": "ch01/1520-residual-context-diffusion-rcd-apple.md",
+     "url": "/ch01/1520-residual-context-diffusion-rcd-apple.html",
      "chapter": "ch01",
      "chapterName": "AI 与 LLM 基础",
      "essence": "增量集成策略：RCD 的两阶段训练表明，核心模型能力与后处理增强模块可以解耦训练。在 Agent 系统的架构设计中，同样可以将\"基础理解能力\"和\"上下文增强能力\"分离——先有稳定的基座，再增量叠加优化模块，降低系统级风险。；残差思维的价值：不仅是 dLLM，很多 AI 系统中被\"丢弃\"的中间表示可能仍有价值。在 Agent 对话历史管理、工具调用结果缓存等场景中，\"被丢弃\"的信息可能包含对后续决策有用的上下文信号。设计系统时应考虑中间表示的复用策略而非简单丢弃",
-     "words": 3663,
-     "level": 3
+     "words": 3665,
+     "level": 1
     },
     {
      "role": "工程案例",
-     "title": "Subagents 详解：Claude Code 如何避免上下文污染",
-     "file": "ch01/1413-subagents-claude-code.md",
-     "url": "/ch01/1413-subagents-claude-code.html",
+     "title": "PromptQueue + OpenGorilla 集成 — AI-Native 异步任务引擎与自进化认知层",
+     "file": "ch01/395-promptqueue-opengorilla-ai-native.md",
+     "url": "/ch01/395-promptqueue-opengorilla-ai-native.html",
      "chapter": "ch01",
      "chapterName": "AI 与 LLM 基础",
-     "essence": "Subagents机制揭示了当前AI编程工具的一个核心工程挑战：上下文污染问题。当Claude Code运行超过半小时后，主窗口可能积累80k token的噪音——搜索结果、日志、目录列表等一次性信息填满了窗口，而真正重要的项目事实和决策依据反而被稀释。这种\"变脏\"的过程不是简单的上下文溢出，而是信息密度的恶化。；Subagent的核心价值在于主动的信息过滤和压缩。它不是简单地把任务分派给多个Agent，而是建立了一种上下文工作区的边界管理机制：探索性工作在独立窗口完成，主窗口只接收高密度的结论。Kaxil Naik的那句\"Harness matters more than the model\"点出了本质——模型能力固然重要，但长任务能否稳定运行更多取决于外围的工程结构",
-     "words": 18845,
-     "level": 3
+     "essence": "PromptQueue + OpenGorilla 集成 — AI-Native 异步任务引擎与自进化认知层；📊 Level ⭐⭐ | 23.6KB | entities/promptqueue-async-task-queue-opengorilla-integration.md。",
+     "words": 13450,
+     "level": 2
     },
     {
      "role": "延伸阅读",
-     "title": "300万人在存的Claude提示词",
-     "file": "ch01/648-300-claude.md",
-     "url": "/ch01/648-300-claude.html",
+     "title": "Hermes Agent SOUL.md：3 层提示词、14 个内置人格，从源码看身份定制的完整设计",
+     "file": "ch01/630-hermes-agent-soul-md-3-14.md",
+     "url": "/ch01/630-hermes-agent-soul-md-3-14.html",
      "chapter": "ch01",
      "chapterName": "AI 与 LLM 基础",
-     "essence": "原文发表于 AI 研究者 @engkhairallah1 的 Twitter/X 帖子，核心主张是：当前大多数\"提示词合集\"过于泛化（\"帮我写博客\"\"总结这段文字\"），它们是 wish（愿望） 而非 prompt（提示词）。真正的工程化提示词包含五个要素——角色设定、上下文约束、输出格式、质量标准、具体示例——并且在 Claude、ChatGPT、Gemini 三大模型上都做过交叉验证。；覆盖六大场景：写作与内容（10）、分析与策略（10）、技术开发（10）、生产力（5）、数据解读（5）、沟通（5），共 40 个模板",
-     "words": 4506,
+     "essence": "Hermes Agent（Nous Research 开发，GitHub Star 突破 60,000）用三层提示词架构解决 Agent 身份定义问题：SOUL.md 管身份、AGENTS.md 管项目、/personality 管临时风格切换。本文从源码层面深度分析了 loadsoulmd() 函数链路、stable 层 14 部分分解、scancontextcontent() 安全扫描与截断机制、14 个内置 personality + overlay 机制、SOUL.md vs AGENTS.md 职责分离、Cron/子代理/多 Profile 场景下的继承规则，以及容器写入保护等完整设计",
+     "words": 5440,
      "level": 2
     }
    ],
@@ -180,29 +180,29 @@
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "Harness 模式正在成为 Agent 架构的\"操作系统层\"。传统的 Agent 实现将工具调用、知识检索、输出验证都耦合在 prompt 和代码中；Harness 模式将这些能力抽象为可配置组件，Agent 本身变成声明式描述而非过程式代码。这一转变使得 Agent 的能力升级可以从\"重写 Agent\"变为\"更新 Harness 配置\"，大幅提升迭代效率。；Multi-Agent 协作模式从\"固定流水线\"演进到\"动态组织\"。2025 年的 Multi-Agent 主要是固定角色（研究员、写作、审核）的顺序 pipeline；2026 年的新模式允许 Agent 根据任务动态决定角色数量、协作拓扑和消息协议。这带来更高的灵活性的同时，也引入了协调复杂性和通信开销的新挑战",
-     "words": 6321,
-     "level": 2
+     "words": 6320,
+     "level": 1
     },
     {
      "role": "工程案例",
      "title": "阿里云 AgentLoop：企业级智能体自进化飞轮（4 环闭环 + LoongSuite 84% 字段覆盖 + Trace2Dataset 90% 节省 + Agent-as-a-Judge 90% 一致 + 记忆库/经验库）",
-     "file": "ch04/122-agentloop-4-loongsuite-84-trace2dataset-90.md",
-     "url": "/ch04/122-agentloop-4-loongsuite-84-trace2dataset-90.html",
+     "file": "ch04/818-agentloop-4-loongsuite-84-trace2dataset-90.md",
+     "url": "/ch04/818-agentloop-4-loongsuite-84-trace2dataset-90.html",
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
-     "essence": "阿里云 AgentLoop：企业级智能体自进化飞轮（4 环闭环 + LoongSuite 84% 字段覆盖 + Trace2Dataset 90% 节省 + Agent-as-a-Judge 90% 一致 + 记忆库/经验库）；📊 Level ⭐⭐ | 21.3KB | entities/aliyun-agentloop-enterprise-agent-self-evolution-flywheel.md。",
-     "words": 10777,
-     "level": 2
+     "essence": "阿里云 AgentLoop：企业级智能体自进化飞轮（4 环闭环 + LoongSuite 84% 字段覆盖 + Trace2Dataset 90% 节省 + Agent-as-a-Judge 90% 一致 + 记忆库/经验库）；📊 Level ⭐⭐⭐ | 31.0KB | entities/aliyun-agentloop-enterprise-agent-self-evolution-flywheel.md。",
+     "words": 14760,
+     "level": 1
     },
     {
      "role": "延伸阅读",
-     "title": "Agent Loop 源码导读：一次 Hermes 任务的完整生命周期",
-     "file": "ch04/117-agent-loop-hermes.md",
-     "url": "/ch04/117-agent-loop-hermes.html",
+     "title": "Hermes Agent Loop 架构",
+     "file": "ch04/311-hermes-agent-loop.md",
+     "url": "/ch04/311-hermes-agent-loop.html",
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
-     "essence": "Insight 1: Agent Loop 的 5 阶段抽象揭示了当前主流框架的共同范式；不同框架（Hermes、LangGraph、Cursor、Claude Code）命名不同，但本质都是这 5 个阶段：接收输入、拼装 Prompt、调用模型、执行工具、检查退出。这种一致性说明当前的 Agent 设计已经形成了相对稳定的设计模式",
-     "words": 11793,
+     "essence": "\"极简主循环\"范式的工程必然性 ^[\"Agent Loop 源码导读：一次 Hermes 任务的完整生命周期 (winty, 2026-05-20)\"]；Hermes 主循环 <200 行代码并非刻意追求简短，而是模块化分离后的自然结果。winty 的源码分析揭示了一个关键洞察：当 Agent 系统复杂度超过临界点，所有逻辑都堆在主循环里是头号杀手。业界常见的 \"Agent 泥球\"（Big Ball of Mud）几乎都源于此——Loop 里堆满了 if skill == X then do Y 的业务判断，新能力叠加变成改一处断三处的噩梦。Hermes 的解法是把业务差异上浮到 Prompt（通过 Skill 注入），Loop 本身退化成 pure scheduler，天然获得\"加新能力不碰 Loop\"的免疫。",
+     "words": 6017,
      "level": 2
     }
    ],
@@ -245,8 +245,8 @@
     {
      "role": "核心原理",
      "title": "Browser Use：为 Agent 构建 Runtime Harness",
-     "file": "ch04/169-browser-use-agent-runtime-harness.md",
-     "url": "/ch04/169-browser-use-agent-runtime-harness.html",
+     "file": "ch04/168-browser-use-agent-runtime-harness.md",
+     "url": "/ch04/168-browser-use-agent-runtime-harness.html",
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "Browser Use：为 Agent 构建 Runtime Harness；📊 Level ⭐⭐ | 15.7KB | entities/browser-use-runtime-harness.md。",
@@ -326,24 +326,24 @@
     {
      "role": "工程案例",
      "title": "Anthropic MCP 重新定义：Tool Search + 代码编排",
-     "file": "ch07/062-anthropic-mcp-tool-search.md",
-     "url": "/ch07/062-anthropic-mcp-tool-search.html",
+     "file": "ch07/063-anthropic-mcp-tool-search.md",
+     "url": "/ch07/063-anthropic-mcp-tool-search.html",
      "chapter": "ch07",
      "chapterName": "技能、工具与 MCP",
      "essence": "Anthropic MCP 重新定义：Tool Search + 代码编排；📊 Level ⭐⭐ | 7.4KB | entities/anthropic-mcp-revisited.md。",
-     "words": 3529,
+     "words": 3499,
      "level": 2
     },
     {
      "role": "延伸阅读",
      "title": "MCP tool design: Practical approaches and tradeoffs",
-     "file": "ch07/021-mcp-tool-design-practical-approaches-and-tradeoffs.md",
-     "url": "/ch07/021-mcp-tool-design-practical-approaches-and-tradeoffs.html",
+     "file": "ch07/022-mcp-tool-design-practical-approaches-and-tradeoffs.md",
+     "url": "/ch07/022-mcp-tool-design-practical-approaches-and-tradeoffs.html",
      "chapter": "ch07",
      "chapterName": "技能、工具与 MCP",
      "essence": "当 MCP（Model Context Protocol）工具表现不佳时，问题通常不在协议本身，而在工具设计。许多团队直接将现有 API 暴露给 Agent，期望 LLM 自行理解——这在简单场景下可行，但在复杂系统中经常导致调用失败、参数错误和重试消耗上下文。本文系统性地探讨了 6 种 MCP 工具设计策略，从简单的描述增强到完整的 Agent-as-Tool 架构，并通过一个 K-12 教育资源搜索的后端示例进行了对比验证。；从 V2 开始，不要从 V1 开始：即使是最简单的最优化——改进文档字符串、提供有效值列表、添加指导性错误信息——也能显著提升准确率。这是零后端重构的\"最低果实\"",
      "words": 6075,
-     "level": 1
+     "level": 2
     }
    ],
    "lab": {
@@ -384,36 +384,36 @@
    "lessons": [
     {
      "role": "核心原理",
-     "title": "State of Memory in Agent Harness — mem0 视角的九大 harness 横评",
-     "file": "ch04/201-state-of-memory-in-agent-harness-mem0-harness.md",
-     "url": "/ch04/201-state-of-memory-in-agent-harness-mem0-harness.html",
-     "chapter": "ch04",
-     "chapterName": "Agent 核心架构",
-     "essence": "一、harness boundary 是 memory 系统的根本限制。九大 harness 共同面临的五个短板（bounded local 存储、keyword 式检索、memory 不跨 harness、staleness 处理弱、isolation 不够），本质上都来自\"数据不出 harness\"这个边界约束。这不是任何一家公司工程能力不足的问题，而是单 harness 架构的固有局限。跨 harness 的 memory layer 之所以难，不是因为技术复杂，而是因为行业没有动力去标准化。；二、现有 memory benchmark 偏重 recall 而非 decision quality，是系统性偏差。LoCoMo 只有 10 段对话、很多题不需要 memory；LongMemEval 覆盖 ex。",
-     "words": 7333,
-     "level": 1
+     "title": "AgentMemory 源码分析：给 Coding Agent 装上本地长期记忆",
+     "file": "ch06/005-agentmemory-coding-agent.md",
+     "url": "/ch06/005-agentmemory-coding-agent.html",
+     "chapter": "ch06",
+     "chapterName": "记忆与上下文",
+     "essence": "AgentMemory 源码分析：给 Coding Agent 装上本地长期记忆；📊 Level ⭐⭐ | 22.0KB | entities/agentmemory-source-analysis-coding-agent-local-memory.md。",
+     "words": 12481,
+     "level": 2
     },
     {
      "role": "工程案例",
-     "title": "意识×Loop：AGENTS.md/MEMORY.md/USER.md 三层文件驱动的跨 Session Loop 自进化",
-     "file": "ch04/739-loop-agents-md-memory-md-user-md-session-loop.md",
-     "url": "/ch04/739-loop-agents-md-memory-md-user-md-session-loop.html",
-     "chapter": "ch04",
-     "chapterName": "Agent 核心架构",
-     "essence": "意识×Loop：AGENTS.md/MEMORY.md/USER.md 三层文件驱动的跨 Session Loop 自进化；📊 Level ⭐⭐ | 3.5KB | entities/意识-loop跨session自进化最佳实践.md。",
-     "words": 1887,
-     "level": 1
+     "title": "Agent 记忆架构：先别急着把 Memory 当数据库",
+     "file": "ch06/003-agent-memory.md",
+     "url": "/ch06/003-agent-memory.html",
+     "chapter": "ch06",
+     "chapterName": "记忆与上下文",
+     "essence": "📊 Level ⭐⭐ | 31.3KB | entities/agent-memory-architecture-past-influence-future-ruofei.md；先是 Cursor 的 Harness 复盘，让我印象比较深的一点是：Agent 真进了生产，一次回答有多聪明只是表层，后面还要看能不能评估、能不能观测、出问题能不能回滚、迭代时能不能持续调优",
+     "words": 11796,
+     "level": 2
     },
     {
      "role": "延伸阅读",
-     "title": "CPU 缓存类比下的 Agent 上下文管理：L1/L2/L3 层级架构与 executecode 单工具设计",
-     "file": "ch04/772-cpu-agent-l1-l2-l3-execute-code.md",
-     "url": "/ch04/772-cpu-agent-l1-l2-l3-execute-code.html",
-     "chapter": "ch04",
-     "chapterName": "Agent 核心架构",
-     "essence": "CPU 缓存类比下的 Agent 上下文管理：L1/L2/L3 层级架构与 executecode 单工具设计；📊 Level ⭐⭐⭐ | 23.5KB | entities/cpu-cache-analogy-agent-context-management-liwen.md。",
-     "words": 9529,
-     "level": 1
+     "title": "TencentDB Agent Memory：符号化短期记忆+分层式长期记忆",
+     "file": "ch06/009-tencentdb-agent-memory.md",
+     "url": "/ch06/009-tencentdb-agent-memory.html",
+     "chapter": "ch06",
+     "chapterName": "记忆与上下文",
+     "essence": "腾讯开源的 TencentDB Agent Memory，解决长程 Agent 的记忆管理问题。核心设计：短期记忆用压缩索引结构（非简单摘要）卸载工具日志，长期记忆用 L0-L3 语义金字塔（Conversation→Atom→Scenario→Persona）实现跨会话用户理解。WideSearch 成功率 +17pp，Token 降 61%。；优先采用压缩索引而非简单摘要：如果 Agent 的记忆面临 token 膨胀问题，不要简单地用 LLM 摘要来压缩历史。采用指针+索引的模式（将详细日志外存化，仅保留结构化的访问路径），可以在降低 token 消耗的同时保留完整的证据链",
+     "words": 7777,
+     "level": 2
     }
    ],
    "lab": {
@@ -454,36 +454,36 @@
    "lessons": [
     {
      "role": "核心原理",
-     "title": "Google出手统一全模态检索：Gemini Embedding 2把文本、图片、音频和视频压进同一向量空间",
-     "file": "ch01/1498-google-gemini-embedding-2.md",
-     "url": "/ch01/1498-google-gemini-embedding-2.html",
-     "chapter": "ch01",
-     "chapterName": "AI 与 LLM 基础",
-     "essence": "架构决策：双向注意力是关键。 生成式 Gemini 模型使用单向注意力，而 embedding 任务需要双向上下文来完整理解输入。Gemini Embedding 2 通过双向 Transformer 结构解决这一问题，配合 Mean Pooling + 线性投影输出 3072 维向量，并通过 Matryoshka Representation Learning 支持 768/1536/3072 维自适应压缩，兼顾精度与效率。；两阶段训练：先拉方向，再精修。 PFT 阶段用大 batch 把模型从「偏生成」往「偏编码」拉；FT 阶段带 hard negative 精修真正的多模态统一空间。NCE 风格对比学习 + batch 内负例的设计使跨模态对齐更紧密。Model Soup 权重平均多任务结果，有效对冲多任。",
-     "words": 3113,
-     "level": 3
+     "title": "Knowledge Base Layer Architecture: From RAG to Agent-native Knowledge Context Layer",
+     "file": "ch06/011-knowledge-base-layer-architecture-from-rag-to-agent-native.md",
+     "url": "/ch06/011-knowledge-base-layer-architecture-from-rag-to-agent-native.html",
+     "chapter": "ch06",
+     "chapterName": "记忆与上下文",
+     "essence": "板牙 / 阿里云开发者文章系统分析了从 RAG 到 Agent-native Knowledge Context Layer 的演进路径：先指出 RAG 的 3 个结构性缺陷（Karpathy \"无积累\"、GraphRAG \"连点成线\" 失败、\"粒度混乱\"），再对比 4 种知识库范式（Naive RAG / LLM Wiki / Graphify / GraphRAG），最后提出原创 Pyramid KB 五层框架 + 7 种有向边 + 角色感知访问矩阵，并通过 831 篇文档 × 200 条 QA 的实测证明 Pyramid+RAG Hybrid 是最优组合（Hit@3 89%）。；RAG 三缺陷：每次从零推导、无法连点成线、粒度混乱。",
+     "words": 7055,
+     "level": 2
     },
     {
      "role": "工程案例",
-     "title": "使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？",
-     "file": "ch04/375-agent-skills-rag.md",
-     "url": "/ch04/375-agent-skills-rag.html",
-     "chapter": "ch04",
-     "chapterName": "Agent 核心架构",
-     "essence": "Skills 是 Anthropic 推出的 Agent 领域行业标准，本质是一个文件夹，内含使用说明（SKILL.md）、参考文档（reference）、可执行脚本（script）；渐进式加载策略：启动时仅加载 Skill 基本描述，触发时才按需读取详细文档，避免无谓的 Token 消耗。",
-     "words": 3593,
-     "level": 1
+     "title": "Claude Code vs OpenClaw 记忆：向量数据库是否必要",
+     "file": "ch06/006-claude-code-vs-openclaw.md",
+     "url": "/ch06/006-claude-code-vs-openclaw.html",
+     "chapter": "ch06",
+     "chapterName": "记忆与上下文",
+     "essence": "Claude Code vs OpenClaw 记忆：向量数据库是否必要；📊 Level ⭐⭐ | 20.2KB | entities/claude-code-openclaw-memory-vector-db-doubt.md。",
+     "words": 9079,
+     "level": 2
     },
     {
      "role": "延伸阅读",
-     "title": "向量检索、知识图谱与 LLM Wiki：RAG 被嘲笑了三年，但企业还是离不开它",
-     "file": "ch01/1182-llm-wiki-rag.md",
-     "url": "/ch01/1182-llm-wiki-rag.html",
-     "chapter": "ch01",
-     "chapterName": "AI 与 LLM 基础",
-     "essence": "向量检索、知识图谱与 LLM Wiki：RAG 被嘲笑了三年，但企业还是离不开它；📊 Level ⭐⭐ | 4.9KB | entities/向量检索知识图谱与-llm-wikirag-被嘲笑了三年但企业还是离不开它.md。",
-     "words": 1390,
-     "level": 1
+     "title": "Memory 不是 RAG：Agent 记忆的系统性框架",
+     "file": "ch06/013-memory-rag-agent.md",
+     "url": "/ch06/013-memory-rag-agent.html",
+     "chapter": "ch06",
+     "chapterName": "记忆与上下文",
+     "essence": "📊 Level ⭐⭐ | 14.1KB | entities/memory-vs-rag-agent-memory-systematic-framework.md；Memory Vs Rag Agent Memory Systematic Framework。",
+     "words": 5398,
+     "level": 2
     }
    ],
    "lab": {
@@ -531,30 +531,30 @@
     {
      "role": "核心原理",
      "title": "Fable 5 的信号:Agent 开始拼 Runtime — 架构师若飞的 Runtime Contract 工程化拆解",
-     "file": "ch04/123-fable-5-agent-runtime-runtime-contract.md",
-     "url": "/ch04/123-fable-5-agent-runtime-runtime-contract.html",
+     "file": "ch04/122-fable-5-agent-runtime-runtime-contract.md",
+     "url": "/ch04/122-fable-5-agent-runtime-runtime-contract.html",
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "Fable 5 的信号:Agent 开始拼 Runtime — 架构师若飞的 Runtime Contract 工程化拆解；📊 Level ⭐⭐ | 21.2KB | entities/claude-fable-5-agent-runtime-contract-ruofei-2026.md。",
      "words": 10103,
-     "level": 2
+     "level": 1
     },
     {
      "role": "工程案例",
      "title": "Agent 的骨架:Agent Runtime 7 大职责 + 3 主流框架对比 (LangGraph / OpenAI Agents SDK / 自研)",
-     "file": "ch04/160-agent-agent-runtime-7-3-langgraph-openai-agents-s.md",
-     "url": "/ch04/160-agent-agent-runtime-7-3-langgraph-openai-agents-s.html",
+     "file": "ch04/127-agent-agent-runtime-7-3-langgraph-openai-agents-s.md",
+     "url": "/ch04/127-agent-agent-runtime-7-3-langgraph-openai-agents-s.html",
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
-     "essence": "Agent 的骨架:Agent Runtime 7 大职责 + 3 主流框架对比 (LangGraph / OpenAI Agents SDK / 自研)；📊 Level ⭐⭐ | 16.1KB | entities/agent-runtime-7-responsibilities-secondcurve-2026.md。",
-     "words": 8229,
+     "essence": "Agent 的骨架:Agent Runtime 7 大职责 + 3 主流框架对比 (LangGraph / OpenAI Agents SDK / 自研)；📊 Level ⭐⭐ | 19.8KB | entities/agent-runtime-7-responsibilities-secondcurve-2026.md。",
+     "words": 9516,
      "level": 1
     },
     {
      "role": "延伸阅读",
      "title": "Agent Protocol 不变层：跨框架的 6 个稳定 Runtime 对象",
-     "file": "ch04/800-agent-protocol-6-runtime.md",
-     "url": "/ch04/800-agent-protocol-6-runtime.html",
+     "file": "ch04/847-agent-protocol-6-runtime.md",
+     "url": "/ch04/847-agent-protocol-6-runtime.html",
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "Agent Protocol 不变层：跨框架的 6 个稳定 Runtime 对象；📊 Level ⭐⭐⭐ | 6.9KB | entities/agent-protocol-unchanged-across-frameworks-aliyun-2026-07-02.md。",
@@ -607,8 +607,8 @@
     {
      "role": "核心原理",
      "title": "Multi-Agent 的四种协作模式：Supervisor、Swarm、网状、流水线，怎么选？",
-     "file": "ch04/424-multi-agent-supervisor-swarm.md",
-     "url": "/ch04/424-multi-agent-supervisor-swarm.html",
+     "file": "ch04/437-multi-agent-supervisor-swarm.md",
+     "url": "/ch04/437-multi-agent-supervisor-swarm.html",
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "单 Agent 的结构性瓶颈是系统性问题，而非 Prompt 技巧问题。 James 在文章开头用三个「死法」精准地描述了单 Agent 在复杂任务下的崩溃路径：上下文窗口污染导致关键信息被稀释、角色指令相互抢占优先级导致行为混乱、故障无隔离导致错误传播污染全链路。这三种死法并非可以通过优化 Prompt 措辞来解决的表层问题，而是单个 Agent 架构在处理多角色、多步骤任务时必然遭遇的结构性矛盾 。这意味着在设计阶段就应当选择 Multi-Agent 架构，而非在上线后遇到瓶颈再寻求 Prompt 层面的补救。；Supervisor 模式的核心价值在于路由逻辑的可审计性与故障定位的便捷性。 这种模式将所有调度决策集中于中央 Supervisor Agent，所有 Worker 之间的信息流都经由 Super。",
@@ -617,25 +617,25 @@
     },
     {
      "role": "工程案例",
-     "title": "阿里云 AgentTeams 企业级多 Agent 平台",
-     "file": "ch04/665-agentteams-agent.md",
-     "url": "/ch04/665-agentteams-agent.html",
-     "chapter": "ch04",
-     "chapterName": "Agent 核心架构",
-     "essence": "📊 Level ⭐⭐ | 4.5KB | entities/alibaba-cloud-agentteams-enterprise-multi-agent.md；阿里云云原生团队推出的企业级多 Agent 协作平台，核心命题不是「一次任务怎么并行跑快」，而是「一个 Agent 组织怎么长期运转」。与 Claude Managed Agents 的设计哲学形成对照",
-     "words": 2315,
-     "level": 1
-    },
-    {
-     "role": "延伸阅读",
      "title": "从 Coding 到 Anything：Qoder 多 Agent 协作与托管运行时",
-     "file": "ch04/695-coding-anything-qoder-agent.md",
-     "url": "/ch04/695-coding-anything-qoder-agent.html",
+     "file": "ch04/731-coding-anything-qoder-agent.md",
+     "url": "/ch04/731-coding-anything-qoder-agent.html",
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "从 Coding 到 Anything：Qoder 多 Agent 协作与托管运行时；📊 Level ⭐⭐ | 3.9KB | entities/qoder-desktop-coding-to-anything-aicon-2026.md。",
      "words": 1664,
-     "level": 1
+     "level": 2
+    },
+    {
+     "role": "延伸阅读",
+     "title": "阿里云 AgentTeams 企业级多 Agent 平台",
+     "file": "ch04/698-agentteams-agent.md",
+     "url": "/ch04/698-agentteams-agent.html",
+     "chapter": "ch04",
+     "chapterName": "Agent 核心架构",
+     "essence": "📊 Level ⭐⭐ | 4.5KB | entities/alibaba-cloud-agentteams-enterprise-multi-agent.md；阿里云云原生团队推出的企业级多 Agent 协作平台，核心命题不是「一次任务怎么并行跑快」，而是「一个 Agent 组织怎么长期运转」。与 Claude Managed Agents 的设计哲学形成对照",
+     "words": 2315,
+     "level": 2
     }
    ],
    "lab": {
@@ -683,8 +683,8 @@
     {
      "role": "核心原理",
      "title": "AI Agent 落地：如何攻克稳定性、成本与评估难题？ — Trace即Evals",
-     "file": "ch04/432-ai-agent-trace-evals.md",
-     "url": "/ch04/432-ai-agent-trace-evals.html",
+     "file": "ch04/446-ai-agent-trace-evals.md",
+     "url": "/ch04/446-ai-agent-trace-evals.html",
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "张雁飞在 Databend Meetup 2026 北京站的演讲，提出\"Trace 即 Evals\"的核心主张 — AI Agent 的稳定性、成本归因和效果评估，必须建立在完整执行轨迹之上。文章用 Claude Code、Evot、Pi 等 Agent 对比案例，梳理了从 Prompt Engineering、Context Engineering 到 Harness Engineering 的演进。；AI Agent 落地的三大难题：稳定性（相同输入不同输出）、成本归因（无法追踪 Token 去向）、效果评估（缺乏可复现的基准）。",
@@ -694,8 +694,8 @@
     {
      "role": "工程案例",
      "title": "CMU PACE — Proxy for Agentic Capability Evaluation",
-     "file": "ch04/552-cmu-pace-proxy-for-agentic-capability-evaluation.md",
-     "url": "/ch04/552-cmu-pace-proxy-for-agentic-capability-evaluation.html",
+     "file": "ch04/574-cmu-pace-proxy-for-agentic-capability-evaluation.md",
+     "url": "/ch04/574-cmu-pace-proxy-for-agentic-capability-evaluation.html",
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "成本降低 100 倍：单模型完整 Agent 评测需数千美元和数天时间，PACE 仅需不到 1% 的成本即可获得高度相关的预测分数；自动选题：从 19 个非 Agent 基准（覆盖 11 类能力）中自动选出最具预测力的 100 道题，无需人工设计。",
@@ -704,14 +704,14 @@
     },
     {
      "role": "延伸阅读",
-     "title": "How we used DSPy to turn AI evaluations into better responses in Dash chat",
-     "file": "ch04/658-how-we-used-dspy-to-turn-ai-evaluations-into-better-response.md",
-     "url": "/ch04/658-how-we-used-dspy-to-turn-ai-evaluations-into-better-response.html",
+     "title": "Agent 自进化评估瓶颈 — 外置 evaluator 是自动自进化的前提条件",
+     "file": "ch04/729-agent-evaluator.md",
+     "url": "/ch04/729-agent-evaluator.html",
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
-     "essence": "The AI features in Dropbox bring together company knowledge from documents, messages, meetings, and other sources. Users can then ask questions in one place and get answers from the Dash chat agent. Agent quality—how well our chat agent helps users accomplish their goals—is evaluated using a suite of large language model-as-judge evaluations. These evaluatio。",
-     "words": 3934,
-     "level": 1
+     "essence": "Agent 自进化评估瓶颈 — 外置 evaluator 是自动自进化的前提条件；📊 Level ⭐⭐ | 3.9KB | entities/agent-self-evolution-evaluator-bottleneck.md。",
+     "words": 1907,
+     "level": 2
     }
    ],
    "lab": {
@@ -759,19 +759,19 @@
     {
      "role": "核心原理",
      "title": "小米 MiMo Code — 长程编程 Agent 三大主线（计算/记忆/进化）+ 与 Claude Code 工程分化",
-     "file": "ch09/018-mimo-code-agent-claude-code.md",
-     "url": "/ch09/018-mimo-code-agent-claude-code.html",
+     "file": "ch09/020-mimo-code-agent-claude-code.md",
+     "url": "/ch09/020-mimo-code-agent-claude-code.html",
      "chapter": "ch09",
      "chapterName": "AI 编程",
-     "essence": "小米 MiMo Code — 长程编程 Agent 三大主线（计算/记忆/进化）+ 与 Claude Code 工程分化；📊 Level ⭐⭐ | 28.0KB | entities/mimo-code-xiaomi-coding-harness-2026.md。",
-     "words": 16025,
+     "essence": "小米 MiMo Code — 长程编程 Agent 三大主线（计算/记忆/进化）+ 与 Claude Code 工程分化；📊 Level ⭐⭐ | 29.3KB | entities/mimo-code-xiaomi-coding-harness-2026.md。",
+     "words": 16388,
      "level": 2
     },
     {
      "role": "工程案例",
      "title": "Codex 5.21 更新：AI 编程助手开始变成电脑工作代理",
-     "file": "ch09/102-codex-5-21-ai.md",
-     "url": "/ch09/102-codex-5-21-ai.html",
+     "file": "ch09/106-codex-5-21-ai.md",
+     "url": "/ch09/106-codex-5-21-ai.html",
      "chapter": "ch09",
      "chapterName": "AI 编程",
      "essence": "Codex 5.21 把 Appshots（Mac 窗口截图直传）、/goal 目标模式、浏览器标注增强、锁屏后继续工作四块拼图连成完整链路。AI 编程助手的角色从\"代码生成器\"切换到\"电脑工作代理\"——人从\"逐步指挥\"变成\"设目标和把关\"，AI 负责执行、试错、长任务推进。；Appshots 把\"看见现场\"成本降到几乎为零：Mac 当前窗口截图 + 可读取文本一键发给 Codex，省去\"截图-复制-文字解释\"三步。",
@@ -781,8 +781,8 @@
     {
      "role": "延伸阅读",
      "title": "让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客",
-     "file": "ch09/148-kiro-claude-code-im-acp-bridge-ai-aws.md",
-     "url": "/ch09/148-kiro-claude-code-im-acp-bridge-ai-aws.html",
+     "file": "ch09/153-kiro-claude-code-im-acp-bridge-ai-aws.md",
+     "url": "/ch09/153-kiro-claude-code-im-acp-bridge-ai-aws.html",
      "chapter": "ch09",
      "chapterName": "AI 编程",
      "essence": "让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客；📊 Level ⭐⭐ | 6.0KB | entities/enable-kiro-and-claude-code-for-im-with-acp-bridge-async-ai-workflow.md。",
@@ -993,8 +993,8 @@
     {
      "role": "核心原理",
      "title": "强化学习的进化：从PPO到MaxRL，LLM推理训练的算法演进史",
-     "file": "ch01/1293-ppo-maxrl-llm.md",
-     "url": "/ch01/1293-ppo-maxrl-llm.html",
+     "file": "ch01/1319-ppo-maxrl-llm.md",
+     "url": "/ch01/1319-ppo-maxrl-llm.html",
      "chapter": "ch01",
      "chapterName": "AI 与 LLM 基础",
      "essence": "强化学习的进化：从PPO到MaxRL，LLM推理训练的算法演进史；📊 Level ⭐⭐ | 4.0KB | entities/强化学习的进化从ppo到maxrlllm推理训练的算法演进史.md。",
@@ -1003,25 +1003,25 @@
     },
     {
      "role": "工程案例",
-     "title": "TRL 微调实践",
-     "file": "ch01/1478-trl.md",
-     "url": "/ch01/1478-trl.html",
+     "title": "Yann Dubois × Matt Turck：OpenAI 后训练与强化学习的内部视角",
+     "file": "ch01/619-yann-dubois-matt-turck-openai.md",
+     "url": "/ch01/619-yann-dubois-matt-turck-openai.html",
      "chapter": "ch01",
      "chapterName": "AI 与 LLM 基础",
-     "essence": "TRL（Transformer Reinforcement Learning）是 Hugging Face 生态中面向 LLM 后训练与对齐的开源工具库，将 SFT、DPO、PPO、GRPO 等策略统一在同一套 API 之下，覆盖「指令微调 → 偏好对齐 → 强化学习优化」的完整链路，是实践 RLHF/RLVR 的默认入口。本页结合知识库中微调成本、GRPO 与 SFT+DPO 实践等实体，梳理方法选型与常见陷阱。；TRL 提供 SFTTrainer、DPOTrainer、PPOTrainer、GRPOTrainer 一套化接口，同一份数据与配置可在不同策略间切换，显著降低对齐实验的工程成本",
-     "words": 4397,
-     "level": 3
+     "essence": "Yann Dubois（OpenAI Post-Training Frontiers 联合负责人）与纽约 VC Matt Turck（FirstMark Capital）的深度访谈，涵盖 GPT-5.5 发布内幕后训练团队的运作机制、强化学习从\"竞赛玩具\"转向\"现实生产力\"的关键转折、预训练是否撞墙的争论、以及 OpenAI 对持续学习、Harness 工程化、模型评估等核心议题的判断。对构建 Agent 系统、后训练流水线、RL 训练循环的从业者有直接参考价值。；可靠性跨过临界点：Yann 认为 AI 的进步其实一直是连续的，但人们的感受像台阶函数，因为 Agent 模型的每步出错概率降到足够低后，使用体验发生质变",
+     "words": 4172,
+     "level": 2
     },
     {
      "role": "延伸阅读",
      "title": "AWS 强化微调：LLM-as-Judge 训练范式",
-     "file": "ch01/766-aws-llm-as-judge.md",
-     "url": "/ch01/766-aws-llm-as-judge.html",
+     "file": "ch01/774-aws-llm-as-judge.md",
+     "url": "/ch01/774-aws-llm-as-judge.html",
      "chapter": "ch01",
      "chapterName": "AI 与 LLM 基础",
      "essence": "RLAIF 本质上是用一个 LLM 裁判替代手工设计的奖励函数，但其核心价值在于引入了多维度推理评估能力。传统 RLVR 依赖精确的规则匹配（如 substring matching），只能捕捉表面特征；而 LLM-as-a-judge 能够跨越正确性、语气、安全性、相关性等多个维度进行上下文感知评分。AWS 的实验证明，当奖励信号模糊、难以手工定义时（如法律合同审查中\"评论是否有价值\"这类主观判断），基于规则的奖励函数很快失效，而 LLM 法官却能通过系统化的评分维度（TargetDocumentGrounding、ReferenceConsistency、Actionability）给出可靠的相对评估^。；复合奖励架构是生产级 RFT 系统的关键设计决策。AWS 建议永远不要单独依赖 LLM judge，而。",
-     "words": 5124,
-     "level": 2
+     "words": 5125,
+     "level": 1
     }
    ],
    "lab": {
@@ -1069,8 +1069,8 @@
     {
      "role": "核心原理",
      "title": "Amazon Bedrock AgentCore Web Search: 托管式网页搜索能力 GA",
-     "file": "ch04/329-amazon-bedrock-agentcore-web-search-ga.md",
-     "url": "/ch04/329-amazon-bedrock-agentcore-web-search-ga.html",
+     "file": "ch04/334-amazon-bedrock-agentcore-web-search-ga.md",
+     "url": "/ch04/334-amazon-bedrock-agentcore-web-search-ga.html",
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "Amazon Bedrock AgentCore Web Search 以全托管 MCP 兼容方式为 AI Agent 提供实时网页搜索能力。底层是 Amazon 自建的数百亿文档索引，持续分钟级刷新，查询流量不离开 AWS。定价 $7/1,000 次查询。；→ 原文存档 (GA 公告) | → 原文存档 (中国区实战教程)。",
@@ -1079,6 +1079,17 @@
     },
     {
      "role": "工程案例",
+     "title": "Browser Harness — 自愈型浏览器 Agent 框架",
+     "file": "ch04/485-browser-harness-agent.md",
+     "url": "/ch04/485-browser-harness-agent.html",
+     "chapter": "ch04",
+     "chapterName": "Agent 核心架构",
+     "essence": "Browser Harness（browser-use/browser-harness，~8.9K Stars）是一个基于 Chrome DevTools Protocol (CDP) 直连的自愈型浏览器 Agent 框架，核心理念是去框架化：薄 CDP 桥接 + mid-task 自愈机制 + domain-skills 自动沉淀。；与 AgentBrowser、Playwright/Selenium 等方案不同，Browser Harness 不构建厚重抽象层，而是让 Agent 直接通过 CDP WebSocket 与浏览器原生状态交互",
+     "words": 3928,
+     "level": 2
+    },
+    {
+     "role": "延伸阅读",
      "title": "五款浏览器自动化工具横向对比：browser-use / Playwright / chrome-devtools-mcp / agent-browser / BrowserAct",
      "file": "ch04/002-browser-use-playwright-chrome-devtools-mcp-agent-bro.md",
      "url": "/ch04/002-browser-use-playwright-chrome-devtools-mcp-agent-bro.html",
@@ -1086,17 +1097,6 @@
      "chapterName": "Agent 核心架构",
      "essence": "五款浏览器自动化工具横向对比：browser-use / Playwright / chrome-devtools-mcp / agent-browser / BrowserAct；📊 Level ⭐ | 11.7KB | entities/four-browser-automation-tools-comparison.md。",
      "words": 6548,
-     "level": 1
-    },
-    {
-     "role": "延伸阅读",
-     "title": "Browser Harness — 自愈型浏览器 Agent 框架",
-     "file": "ch04/468-browser-harness-agent.md",
-     "url": "/ch04/468-browser-harness-agent.html",
-     "chapter": "ch04",
-     "chapterName": "Agent 核心架构",
-     "essence": "Browser Harness（browser-use/browser-harness，~8.9K Stars）是一个基于 Chrome DevTools Protocol (CDP) 直连的自愈型浏览器 Agent 框架，核心理念是去框架化：薄 CDP 桥接 + mid-task 自愈机制 + domain-skills 自动沉淀。；与 AgentBrowser、Playwright/Selenium 等方案不同，Browser Harness 不构建厚重抽象层，而是让 Agent 直接通过 CDP WebSocket 与浏览器原生状态交互",
-     "words": 3928,
      "level": 1
     }
    ],
@@ -1192,30 +1192,30 @@
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "Skills 是 Anthropic 推出的 Agent 领域行业标准，本质是一个文件夹，内含使用说明（SKILL.md）、参考文档（reference）、可执行脚本（script）；渐进式加载策略：启动时仅加载 Skill 基本描述，触发时才按需读取详细文档，避免无谓的 Token 消耗。",
-     "words": 3593,
+     "words": 3592,
      "level": 1
     },
     {
      "role": "工程案例",
+     "title": "Knowledge Base Layer Architecture: From RAG to Agent-native Knowledge Context Layer",
+     "file": "ch06/011-knowledge-base-layer-architecture-from-rag-to-agent-native.md",
+     "url": "/ch06/011-knowledge-base-layer-architecture-from-rag-to-agent-native.html",
+     "chapter": "ch06",
+     "chapterName": "记忆与上下文",
+     "essence": "板牙 / 阿里云开发者文章系统分析了从 RAG 到 Agent-native Knowledge Context Layer 的演进路径：先指出 RAG 的 3 个结构性缺陷（Karpathy \"无积累\"、GraphRAG \"连点成线\" 失败、\"粒度混乱\"），再对比 4 种知识库范式（Naive RAG / LLM Wiki / Graphify / GraphRAG），最后提出原创 Pyramid KB 五层框架 + 7 种有向边 + 角色感知访问矩阵，并通过 831 篇文档 × 200 条 QA 的实测证明 Pyramid+RAG Hybrid 是最优组合（Hit@3 89%）。；RAG 三缺陷：每次从零推导、无法连点成线、粒度混乱。",
+     "words": 7055,
+     "level": 2
+    },
+    {
+     "role": "延伸阅读",
      "title": "SkillX: Automatically Constructing Skill Knowledge Bases for Agents",
-     "file": "ch04/611-skillx-automatically-constructing-skill-knowledge-bases-for.md",
-     "url": "/ch04/611-skillx-automatically-constructing-skill-knowledge-bases-for.html",
+     "file": "ch04/641-skillx-automatically-constructing-skill-knowledge-bases-for.md",
+     "url": "/ch04/641-skillx-automatically-constructing-skill-knowledge-bases-for.html",
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "三层技能设计重构经验复用粒度。 SkillX 将 Agent 经验垂直分解为 Planning Skills（任务规划层）、Functional Skills（子任务工具调用层）和 Atomic Skills（底层工具使用模式层），同时每层内部支持水平分解（如分解为多个 Functional Skills 并行执行）。这种多维分解使跨任务的经验复用成为可能——一个任务的 Planning Skill 可以迁移到另一个任务，而无需重新学习底层工具使用模式。；迭代精炼机制解决技能质量维护问题。 传统经验学习方法（如 A-Mem、AWM、ExpeL）将经验以原始形式存储，容易积累噪声和质量参差。SkillX 的 Iterative Skills Refinement 通过 merge、filter 和 update。",
      "words": 2882,
-     "level": 1
-    },
-    {
-     "role": "延伸阅读",
-     "title": "Deep Agents + Bedrock AgentCore：多 Agent 编排 + 隔离基础设施的端到端研究 Agent 实战",
-     "file": "ch04/288-deep-agents-bedrock-agentcore-agent-agent.md",
-     "url": "/ch04/288-deep-agents-bedrock-agentcore-agent-agent.html",
-     "chapter": "ch04",
-     "chapterName": "Agent 核心架构",
-     "essence": "双层编排的架构价值：框架层（Deep Agents）和基础设施层（AgentCore）的职责分离是本文的核心设计模式Multi Agent Orchestration。框架层负责 subagent 的生命周期管理、生成和消息路由，基础设施层提供隔离的 MicroVM 执行环境。这种分层使编排逻辑与执行环境可以独立演进——框架可以在不同后端 runtime 间迁移，而不必重写编排策略。；Subagent 并发压缩时间的本质：三个 research subagent 并行执行将端到端耗时从串行的 12-18 分钟压缩至 4-6 分钟（3x 提升）。这一收益的来源不是并发本身，而是 coordinator 只接收结构化摘要而非原始网页内容，从而保持 context window 高效利用Harness Context。",
-     "words": 6808,
-     "level": 1
+     "level": 2
     }
    ],
    "lab": {
@@ -1231,7 +1231,7 @@
   }
  ],
  "stats": {
-  "scannedArticles": 5723,
+  "scannedArticles": 6440,
   "moduleCount": 16,
   "lessonsPerModule": 3
  }
