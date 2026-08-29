@@ -1,7 +1,5 @@
 # Evaluating Netflix Show Synopses with LLM-as-a-Judge
 
-## Ch01.458 Evaluating Netflix Show Synopses with LLM-as-a-Judge
-
 > 📊 Level ⭐⭐ | 14.8KB | `entities/evaluating-netflix-show-synopses-with-llm-as-a-judge.md`
 
 # Evaluating Netflix Show Synopses with LLM-as-a-Judge

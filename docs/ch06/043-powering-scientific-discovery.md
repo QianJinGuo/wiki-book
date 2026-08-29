@@ -1,7 +1,5 @@
 # Powering scientific discovery
 
-## Ch06.043 Powering scientific discovery
-
 > 📊 Level ⭐⭐ | 4.0KB | `entities/powering-scientific-discovery-byokg-and-graphrag-for-intelli.md`
 
 # Powering scientific discovery: BYOKG and GraphRAG for intelligent pharmaceutical research

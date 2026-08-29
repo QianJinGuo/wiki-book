@@ -1,7 +1,5 @@
 # Memento-Skills：让 Agent 通过技能外部记忆持续进化
 
-## Ch04.503 Memento-Skills：让 Agent 通过技能外部记忆持续进化
-
 > 📊 Level ⭐⭐ | 7.6KB | `entities/memento-skills-agent-self-evolving.md`
 
 # Memento-Skills：让 Agent 通过技能外部记忆持续进化

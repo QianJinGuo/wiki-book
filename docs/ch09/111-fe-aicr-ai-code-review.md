@@ -1,7 +1,5 @@
 # 百度网盘主端 FE AICR：AI Code Review 准入实践
 
-## Ch09.111 百度网盘主端 FE AICR：AI Code Review 准入实践
-
 > 📊 Level ⭐⭐ | 8.1KB | `entities/baidu-aicr-ai-code-review-ci-cd.md`
 
 # 百度网盘主端 FE AICR：AI Code Review 准入实践

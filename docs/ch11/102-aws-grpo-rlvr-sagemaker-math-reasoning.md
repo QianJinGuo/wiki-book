@@ -1,7 +1,5 @@
 # AWS GRPO RLVR Sagemaker Math Reasoning
 
-## Ch11.102 AWS GRPO RLVR Sagemaker Math Reasoning
-
 > 📊 Level ⭐⭐ | 9.8KB | `entities/aws-grpo-rlvr-sagemaker-math-reasoning.md`
 
 # Overcoming reward signal challenges: Verifiable rewards-based reinforcement learning with GRPO on SageMaker AI

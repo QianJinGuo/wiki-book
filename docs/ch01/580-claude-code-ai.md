@@ -1,7 +1,5 @@
 # Claude Code 太折腾？这个国产开源 AI 编程平台打开就能用
 
-## Ch01.580 Claude Code 太折腾？这个国产开源 AI 编程平台打开就能用
-
 > 📊 Level ⭐⭐ | 10.8KB | `entities/claude-code-太折腾这个国产开源-ai-编程平台打开就能用.md`
 
 # Claude Code 太折腾？这个国产开源 AI 编程平台打开就能用

@@ -1,7 +1,5 @@
 # CloudSectiDbits: Masso - Cognito SSO Bypass
 
-## Ch11.210 CloudSectiDbits: Masso - Cognito SSO Bypass
-
 > 📊 Level ⭐⭐ | 6.0KB | `entities/cloudsectidbits-masso-cognito-sso.html.md`
 
 

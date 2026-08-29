@@ -1,7 +1,5 @@
 # 腾讯混元AI Infra如何优化Hy3 Preview 一次大模型推理性能提升的 腾讯技术工程
 
-## Ch01.212 腾讯混元AI Infra如何优化Hy3 Preview 一次大模型推理性能提升的 腾讯技术工程
-
 > 📊 Level ⭐ | 0.9KB | `entities/2026-06-26-腾讯混元AI-Infra如何优化Hy3-Preview-一次大模型推理性能提升的-腾讯技术工程.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-06-26-腾讯混元AI-Infra如何优化Hy3-Preview-一次大模型推理性能提升的-腾讯技术工程.md)

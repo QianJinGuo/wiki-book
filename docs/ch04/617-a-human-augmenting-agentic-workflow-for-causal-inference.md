@@ -1,7 +1,5 @@
 # A Human-Augmenting Agentic Workflow for Causal Inference
 
-## Ch04.617 A Human-Augmenting Agentic Workflow for Causal Inference
-
 > 📊 Level ⭐⭐ | 5.8KB | `entities/human-augmenting-agentic-workflow-causal-inference-netflix.md`
 
 # A Human-Augmenting Agentic Workflow for Causal Inference

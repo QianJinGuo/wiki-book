@@ -1,7 +1,5 @@
 # 改造 Multica 再让它读懂 AgentWaker
 
-## Ch04.053 改造 Multica 再让它读懂 AgentWaker
-
 > 📊 Level ⭐ | 0.8KB | `entities/multica-agentwaker-agent-system-code2rich-2026-07-22.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/multica-agentwaker-agent-system-code2rich-2026-07-22.md)

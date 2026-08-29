@@ -1,7 +1,5 @@
 # You.com | Download the Guide: Why API Latency Is a Misleading Metric
 
-## Ch01.034 You.com | Download the Guide: Why API Latency Is a Misleading Metric
-
 > 📊 Level ⭐ | 8.8KB | `entities/youcom-download-the-guide-why-api-latency-is-a-misleading-metric.md`
 
 # You.com | Download the Guide: Why API Latency Is a Misleading Metric

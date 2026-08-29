@@ -1,7 +1,5 @@
 # 刚刚，DeepMind经典巨作再封神！ICML 2026大奖公布
 
-## Ch01.1635 刚刚，DeepMind经典巨作再封神！ICML 2026大奖公布
-
 > 📊 Level ⭐⭐⭐⭐⭐ | 7.0KB | `entities/刚刚deepmind经典巨作再封神icml-2026大奖公布.md`
 
 # 刚刚，DeepMind经典巨作再封神！ICML 2026大奖公布

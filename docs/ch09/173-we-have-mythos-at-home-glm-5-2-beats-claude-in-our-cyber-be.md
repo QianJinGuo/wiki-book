@@ -1,7 +1,5 @@
 # We have Mythos at Home: GLM 5.2 beats Claude in our Cyber Benchmarks
 
-## Ch09.173 We have Mythos at Home: GLM 5.2 beats Claude in our Cyber Benchmarks
-
 > 📊 Level ⭐⭐ | 4.5KB | `entities/we-have-mythos-at-home-glm-5-2-beats-claude-in-our-cyber-ben.md`
 
 # We have Mythos at Home: GLM 5.2 beats Claude in our Cyber Benchmarks

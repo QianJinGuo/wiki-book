@@ -1,7 +1,5 @@
 # 面向复杂业务场景的智能分析 Skills 架构设计与演进实践
 
-## Ch06.046 面向复杂业务场景的智能分析 Skills 架构设计与演进实践
-
 > 📊 Level ⭐⭐ | 3.4KB | `entities/alibaba-complex-business-skills-architecture-evolution.md`
 
 # 面向复杂业务场景的智能分析 Skills 架构设计与演进实践

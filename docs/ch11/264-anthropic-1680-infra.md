@@ -1,7 +1,5 @@
 # Anthropic 工程团队 1680 人画像：不是博士实验室，是 Infra 工程军团
 
-## Ch11.264 Anthropic 工程团队 1680 人画像：不是博士实验室，是 Infra 工程军团
-
 > 📊 Level ⭐⭐ | 4.0KB | `entities/anthropic-engineering-team-1680-portrait-sebastian-cuadros.md`
 
 > 原文归档：[原文归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-engineering-team-1680-portrait-sebastian-cuadros.md)

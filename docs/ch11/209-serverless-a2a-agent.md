@@ -1,7 +1,5 @@
 # 构建 Serverless A2A 网关：Agent 发现、路由与访问控制
 
-## Ch11.209 构建 Serverless A2A 网关：Agent 发现、路由与访问控制
-
 > 📊 Level ⭐⭐ | 5.9KB | `entities/building-serverless-a2a-gateway-agent-discovery-routing-access-control.md`
 
 # 构建 Serverless A2A 网关：Agent 发现、路由与访问控制

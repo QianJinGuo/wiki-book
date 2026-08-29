@@ -1,7 +1,5 @@
 # 全网骂Claude变笨，Anthropic下场揭秘：坑你的不是模型
 
-## Ch01.614 全网骂Claude变笨，Anthropic下场揭秘：坑你的不是模型
-
 > 📊 Level ⭐⭐ | 10.1KB | `entities/claude-perceived-degradation-anthropic-effort-model-explanation-2026.md`
 
 # 全网骂Claude变笨，Anthropic下场揭秘：坑你的不是模型

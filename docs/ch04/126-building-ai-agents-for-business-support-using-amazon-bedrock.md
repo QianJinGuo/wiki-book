@@ -1,7 +1,5 @@
 # Building AI agents for business support using Amazon Bedrock
 
-## Ch04.126 Building AI agents for business support using Amazon Bedrock
-
 > 📊 Level ⭐⭐ | 19.9KB | `entities/building-ai-agents-for-business-support-using-amazon-bedrock.md`
 
 # Building AI agents for business support using Amazon Bedrock

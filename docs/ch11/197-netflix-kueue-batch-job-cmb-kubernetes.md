@@ -1,7 +1,5 @@
 # Netflix Kueue 迁移：百万级 Batch Job 从 CMB 到 Kubernetes 原生调度
 
-## Ch11.197 Netflix Kueue 迁移：百万级 Batch Job 从 CMB 到 Kubernetes 原生调度
-
 > 📊 Level ⭐⭐ | 6.3KB | `entities/netflix-kueue-batch-compute-migration.md`
 
 # Netflix Kueue 迁移：百万级 Batch Job 从 CMB 到 Kubernetes 原生调度

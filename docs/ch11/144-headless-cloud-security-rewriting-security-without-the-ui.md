@@ -1,7 +1,5 @@
 # Headless cloud security: Rewriting security without the UI.
 
-## Ch11.144 Headless cloud security: Rewriting security without the UI.
-
 > 📊 Level ⭐⭐ | 7.8KB | `entities/sysdig-headless-cloud-security.md`
 
 

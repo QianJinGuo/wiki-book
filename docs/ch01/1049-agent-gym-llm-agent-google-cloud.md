@@ -1,7 +1,5 @@
 # Agent Gym：人机协同的 LLM Agent 持续评估与演化框架（Google Cloud）
 
-## Ch01.1049 Agent Gym：人机协同的 LLM Agent 持续评估与演化框架（Google Cloud）
-
 > 📊 Level ⭐⭐ | 6.0KB | `entities/agent-gym-continuous-eval-evolution-google-2026.md`
 
 # Agent Gym：人机协同的 LLM Agent 持续评估与演化框架（Google Cloud）

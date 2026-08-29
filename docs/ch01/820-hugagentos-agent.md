@@ -1,7 +1,5 @@
 # HugAgentOS — 浙大三引擎一体自进化 Agent 操作系统
 
-## Ch01.820 HugAgentOS — 浙大三引擎一体自进化 Agent 操作系统
-
 > 📊 Level ⭐⭐ | 7.8KB | `entities/hugagentos-zju-self-evolution-agent-os-2026.md`
 
 # HugAgentOS — 浙大三引擎一体自进化 Agent 操作系统

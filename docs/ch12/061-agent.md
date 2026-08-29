@@ -1,7 +1,5 @@
 # Agent 提示词注入攻击防护实践（字节/火山引擎）
 
-## Ch12.061 Agent 提示词注入攻击防护实践（字节/火山引擎）
-
 > 📊 Level ⭐⭐ | 7.9KB | `entities/agent-prompt-injection-defense-volcano-engine-2026.md`
 
 # Agent 提示词注入攻击防护实践（字节/火山引擎）

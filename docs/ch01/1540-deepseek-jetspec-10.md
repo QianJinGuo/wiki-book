@@ -1,7 +1,5 @@
 # 不只DeepSeek，阶跃等开源JetSpec：大模型解码提速近10倍
 
-## Ch01.1540 不只DeepSeek，阶跃等开源JetSpec：大模型解码提速近10倍
-
 > 📊 Level ⭐⭐⭐ | 7.9KB | `entities/不只deepseek阶跃等开源jetspec大模型解码提速近10倍.md`
 
 # 不只DeepSeek，阶跃等开源JetSpec：大模型解码提速近10倍

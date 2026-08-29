@@ -1,7 +1,5 @@
 # Claude Opus 5 on AWS：Anthropic 最强 Opus 模型发布
 
-## Ch11.254 Claude Opus 5 on AWS：Anthropic 最强 Opus 模型发布
-
 > 📊 Level ⭐⭐ | 4.0KB | `entities/introducing-claude-opus-5-on-aws-anthropics-most-capable-opus-model.md`
 
 # Claude Opus 5 on AWS：Anthropic 最强 Opus 模型发布

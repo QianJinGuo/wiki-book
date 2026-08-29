@@ -1,7 +1,5 @@
 # SEAGym: 自进化Agent评测环境 — 清华大学
 
-## Ch05.117 SEAGym: 自进化Agent评测环境 — 清华大学
-
 > 📊 Level ⭐⭐ | 4.2KB | `entities/seagym-self-evolving-agent-evaluation-environment-tsinghua-2026.md`
 
 # SEAGym: 自进化Agent评测环境 — 清华大学

@@ -1,7 +1,5 @@
 # Mem0、Letta、Zep 和 VoltMem —— Agent记忆系统该选哪个？
 
-## Ch06.002 Mem0、Letta、Zep 和 VoltMem —— Agent记忆系统该选哪个？
-
 > 📊 Level ⭐ | 0.8KB | `entities/agent-memory-four-schools-comparison-2026-07-22.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-memory-four-schools-comparison-2026-07-22.md)

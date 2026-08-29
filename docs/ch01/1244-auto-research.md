@@ -1,7 +1,5 @@
 # 大厂不再迷信顶会：Auto Research时代，论文含金量正在缩水
 
-## Ch01.1244 大厂不再迷信顶会：Auto Research时代，论文含金量正在缩水
-
 > 📊 Level ⭐⭐ | 4.6KB | `entities/大厂不再迷信顶会-auto-research论文含金量.md`
 
 # 大厂不再迷信顶会：Auto Research 时代论文含金量正在缩水

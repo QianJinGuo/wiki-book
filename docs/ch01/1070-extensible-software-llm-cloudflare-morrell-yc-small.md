@@ -1,7 +1,5 @@
 # 可扩展软件（Extensible Software）：LLM 时代的软件形态——Cloudflare Morrell 与 YC Small Software
 
-## Ch01.1070 可扩展软件（Extensible Software）：LLM 时代的软件形态——Cloudflare Morrell 与 YC Small Software
-
 > 📊 Level ⭐⭐ | 5.9KB | `entities/extensible-software-llm-era-cloudflare-morrell-small-software-2026.md`
 
 # 可扩展软件（Extensible Software）：LLM 时代的软件形态——Cloudflare Morrell 与 YC Small Software

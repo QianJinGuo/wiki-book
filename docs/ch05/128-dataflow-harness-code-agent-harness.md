@@ -1,7 +1,5 @@
 # DataFlow-Harness — 北大 Code Agent 数据处理管线 Harness
 
-## Ch05.128 DataFlow-Harness — 北大 Code Agent 数据处理管线 Harness
-
 > 📊 Level ⭐⭐ | 3.5KB | `entities/dataflow-harness-pku-code-agent-data-pipeline.md`
 
 # DataFlow-Harness — 北大 Code Agent 数据处理管线 Harness

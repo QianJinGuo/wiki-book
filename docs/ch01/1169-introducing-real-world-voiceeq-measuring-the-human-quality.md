@@ -1,7 +1,5 @@
 # Introducing Real World VoiceEQ: Measuring the human quality of voice AI
 
-## Ch01.1169 Introducing Real World VoiceEQ: Measuring the human quality of voice AI
-
 > 📊 Level ⭐⭐ | 5.2KB | `entities/real-world-voiceeq-语音质量评测.md`
 
 # Real World VoiceEQ：衡量语音 AI 的人类质量

@@ -1,7 +1,5 @@
 # U of T researchers demonstrate AI worm: self-spreading malware using open-weight models
 
-## Ch12.129 U of T researchers demonstrate AI worm: self-spreading malware using open-weight models
-
 > 📊 Level ⭐⭐⭐⭐ | 11.0KB | `entities/u-of-t-ai-worm-cleverhans-papernot-2026.md`
 
 # U of T researchers demonstrate AI worm: self-spreading malware using open-weight models

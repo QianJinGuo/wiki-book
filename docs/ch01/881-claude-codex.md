@@ -1,7 +1,5 @@
 # Claude 做方案，Codex 写代码：多模型协作怎么交接才稳
 
-## Ch01.881 Claude 做方案，Codex 写代码：多模型协作怎么交接才稳
-
 > 📊 Level ⭐⭐ | 7.3KB | `entities/claude-做方案codex-写代码多模型协作怎么交接才稳.md`
 
 ## 摘要

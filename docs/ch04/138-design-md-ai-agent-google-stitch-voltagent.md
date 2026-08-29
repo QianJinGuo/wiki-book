@@ -1,7 +1,5 @@
 # DESIGN.md：AI 设计 Agent 的视觉约束对齐文件（Google Stitch × VoltAgent）
 
-## Ch04.138 DESIGN.md：AI 设计 Agent 的视觉约束对齐文件（Google Stitch × VoltAgent）
-
 > 📊 Level ⭐⭐ | 18.2KB | `entities/design-md-google-stitch-voltagent-ai-design-agent.md`
 
 # DESIGN.md：AI 设计 Agent 的视觉约束对齐文件（Google Stitch × VoltAgent）

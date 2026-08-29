@@ -1,7 +1,5 @@
 # Claude Code 写得越快，越要把错误控制在可回滚范围内
 
-## Ch09.195 Claude Code 写得越快，越要把错误控制在可回滚范围内
-
 > 📊 Level ⭐⭐ | 0.7KB | `entities/claude-code-safety-gates-engineering-practices.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-safety-gates-engineering-practices.md)

@@ -1,7 +1,5 @@
 # Claude Fable 5 and new AI safety fables
 
-## Ch01.1198 Claude Fable 5 and new AI safety fables
-
 > 📊 Level ⭐⭐ | 5.0KB | `entities/claude-fable-5-and-new-ai-safety-fables.md`
 
 # Claude Fable 5 and new AI safety fables

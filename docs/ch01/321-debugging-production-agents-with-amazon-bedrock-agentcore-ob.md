@@ -1,7 +1,5 @@
 # Debugging production agents with Amazon Bedrock AgentCore Observability
 
-## Ch01.321 Debugging production agents with Amazon Bedrock AgentCore Observability
-
 > 📊 Level ⭐ | 0.7KB | `entities/debugging-production-agents-with-amazon-bedrock-agentcore-ob.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/debugging-production-agents-with-amazon-bedrock-agentcore-ob.md)

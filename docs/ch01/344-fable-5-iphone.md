@@ -1,7 +1,5 @@
 # fable-5-原生编译游戏-到-iphone
 
-## Ch01.344 fable-5-原生编译游戏-到-iphone
-
 > 📊 Level ⭐ | 0.6KB | `entities/fable-5-原生编译游戏-到-iphone.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fable-5-原生编译游戏-到-iphone.md)

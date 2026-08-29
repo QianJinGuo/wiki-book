@@ -1,7 +1,5 @@
 # CLAUDE.md 规则从 Karpathy 的 4 条增加到 12 条
 
-## Ch09.044 CLAUDE.md 规则从 Karpathy 的 4 条增加到 12 条
-
 > 📊 Level ⭐⭐ | 14.9KB | `entities/claude-md-12-rules-mnilax.md`
 
 ## 评分

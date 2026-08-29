@@ -1,7 +1,5 @@
 # Introducing Composer 2.5
 
-## Ch04.610 Introducing Composer 2.5
-
 > 📊 Level ⭐⭐ | 6.0KB | `entities/cursor.com-composer-2-5.md`
 
 ## 核心要点

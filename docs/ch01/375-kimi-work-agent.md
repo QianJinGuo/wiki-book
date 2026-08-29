@@ -1,7 +1,5 @@
 # Kimi Work：通用 Agent 战场从云端迁移到本地
 
-## Ch01.375 Kimi Work：通用 Agent 战场从云端迁移到本地
-
 > 📊 Level ⭐⭐ | 39.2KB | `entities/kimi-work-codex-vibe-working-paradigm-shift.md`
 
 # Kimi Work：通用 Agent 战场从云端迁移到本地

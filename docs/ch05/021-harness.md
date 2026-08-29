@@ -1,7 +1,5 @@
 # 长时间运行应用的 Harness 设计
 
-## Ch05.021 长时间运行应用的 Harness 设计
-
 > 📊 Level ⭐⭐ | 19.8KB | `entities/harness-design-long-running-apps.md`
 
 ## 正文

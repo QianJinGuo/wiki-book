@@ -1,7 +1,5 @@
 # 为游戏业务团队构建只读代码问答 Agent：架构、性能与安全实践
 
-## Ch04.595 为游戏业务团队构建只读代码问答 Agent：架构、性能与安全实践
-
 > 📊 Level ⭐⭐ | 6.2KB | `entities/readonly-code-qa-agent-game-business-team-aws-2026.md`
 
 # 为游戏业务团队构建只读代码问答 Agent：架构、性能与安全实践

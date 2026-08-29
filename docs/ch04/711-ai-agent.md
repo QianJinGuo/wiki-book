@@ -1,7 +1,5 @@
 # AI Agent 工程师学习路线：面向资深后端/大数据工程师的能力地图
 
-## Ch04.711 AI Agent 工程师学习路线：面向资深后端/大数据工程师的能力地图
-
 > 📊 Level ⭐⭐ | 4.3KB | `entities/ai-agent-engineer-learning-roadmap-backend-2026.md`
 
 # AI Agent 工程师学习路线：面向资深后端/大数据工程师的能力地图

@@ -1,7 +1,5 @@
 # Google shipped Gemini 3.1 Flash-Lite in General Availability
 
-## Ch01.920 Google shipped Gemini 3.1 Flash-Lite in General Availability
-
 > 📊 Level ⭐⭐ | 7.0KB | `entities/google-shipped-gemini-31-flash-lite-in-general-availability.md`
 
 # Google shipped Gemini 3.1 Flash-Lite in General Availability

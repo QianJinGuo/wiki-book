@@ -1,7 +1,5 @@
 # Obsidian Claude Code Integration Guide
 
-## Ch09.157 Obsidian Claude Code Integration Guide
-
 > 📊 Level ⭐⭐ | 5.3KB | `entities/obsidian-claude-code-integration-guide.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/obsidian-claude-code-integration-guide.md)

@@ -1,7 +1,5 @@
 # Optimize blueprint extraction accuracy in Amazon Bedrock Data Automation
 
-## Ch12.041 Optimize blueprint extraction accuracy in Amazon Bedrock Data Automation
-
 > 📊 Level ⭐⭐ | 10.0KB | `entities/optimize-blueprint-extraction-accuracy-in-amazon-bedrock-dat.md`
 
 # Optimize blueprint extraction accuracy in Amazon Bedrock Data Automation

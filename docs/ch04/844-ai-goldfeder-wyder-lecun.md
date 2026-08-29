@@ -1,7 +1,5 @@
 # AI 专业化不可避免：Goldfeder/Wyder/LeCun 多学科论据
 
-## Ch04.844 AI 专业化不可避免：Goldfeder/Wyder/LeCun 多学科论据
-
 > 📊 Level ⭐⭐⭐ | 8.2KB | `entities/ai-specialization-inevitable-goldfeder-wyder-lecun.md`
 
 # AI 专业化不可避免：Goldfeder/Wyder/LeCun 多学科论据

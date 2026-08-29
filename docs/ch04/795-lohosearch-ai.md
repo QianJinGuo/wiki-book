@@ -1,7 +1,5 @@
 # 下一代搜索智能体评测基准！美团开源LoHoSearch，用知识图谱校准AI能力认知
 
-## Ch04.795 下一代搜索智能体评测基准！美团开源LoHoSearch，用知识图谱校准AI能力认知
-
 > 📊 Level ⭐⭐ | 2.9KB | `entities/下一代搜索智能体评测基准美团开源lohosearch用知识图谱校准ai能力认知.md`
 
 # 下一代搜索智能体评测基准！美团开源LoHoSearch，用知识图谱校准AI能力认知

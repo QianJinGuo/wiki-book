@@ -1,7 +1,5 @@
 # Transformer能通向AGI吗？布林：能，但它已经变了
 
-## Ch01.1514 Transformer能通向AGI吗？布林：能，但它已经变了
-
 > 📊 Level ⭐⭐⭐ | 9.7KB | `entities/transformer-通向agi-布林-谷歌deepmind-2026-07-09.md`
 
 # Transformer能通向AGI吗？布林：能，但它已经变了

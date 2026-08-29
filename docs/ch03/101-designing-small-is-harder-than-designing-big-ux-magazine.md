@@ -1,7 +1,5 @@
 # Designing Small Is Harder than Designing Big - UX Magazine
 
-## Ch03.101 Designing Small Is Harder than Designing Big - UX Magazine
-
 > 📊 Level ⭐⭐ | 8.4KB | `entities/designing-small-is-harder-than-designing-big-ux-magazine.md`
 
 ## Summary

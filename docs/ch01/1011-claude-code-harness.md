@@ -1,7 +1,5 @@
 # Claude Code Harness 深度分析
 
-## Ch01.1011 Claude Code Harness 深度分析
-
 > 📊 Level ⭐⭐ | 6.4KB | `entities/claude-code-harness-deep-dive-founder-park.md`
 
 ## TAOR Loop：Orchestrator 越笨越稳定

@@ -1,7 +1,5 @@
 # Claude Code vs Kimi vs MiniMax：Agent Teams 到底拼的是什么？
 
-## Ch01.676 Claude Code vs Kimi vs MiniMax：Agent Teams 到底拼的是什么？
-
 > 📊 Level ⭐⭐ | 9.1KB | `entities/claude-code-vs-kimi-vs-minimaxagent-teams-到底拼的是什么.md`
 
 # Claude Code vs Kimi vs MiniMax：Agent Teams 到底拼的是什么？

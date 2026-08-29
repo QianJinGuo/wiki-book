@@ -1,7 +1,5 @@
 # 我把Mac留在家，用手机让TRAE SOLO替我打了一天工
 
-## Ch01.764 我把Mac留在家，用手机让TRAE SOLO替我打了一天工
-
 > 📊 Level ⭐⭐ | 8.2KB | `entities/我把mac留在家用手机让trae-solo替我打了一天工.md`
 
 # 我把Mac留在家，用手机让TRAE SOLO替我打了一天工

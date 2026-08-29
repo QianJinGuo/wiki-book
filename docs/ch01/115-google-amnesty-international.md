@@ -1,7 +1,5 @@
 # Google 与 Amnesty International 合作加大间谍软件检测难度
 
-## Ch01.115 Google 与 Amnesty International 合作加大间谍软件检测难度
-
 > 📊 Level ⭐ | 6.5KB | `entities/google-and-amnesty-international-teamed-up-to-make-it-harder.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/google-and-amnesty-international-teamed-up-to-make-it-harder.md)

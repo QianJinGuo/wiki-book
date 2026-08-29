@@ -1,7 +1,5 @@
 # When Impressive Performance Gains Do Not Matter
 
-## Ch01.1553 When Impressive Performance Gains Do Not Matter
-
 > 📊 Level ⭐⭐⭐ | 6.4KB | `entities/when-impressive-performance-gains-do-not-matter.md`
 
 # When Impressive Performance Gains Do Not Matter

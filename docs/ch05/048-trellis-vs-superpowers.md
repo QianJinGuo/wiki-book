@@ -1,7 +1,5 @@
 # Trellis vs Superpowers 源码对比：不同抽象层的工程框架
 
-## Ch05.048 Trellis vs Superpowers 源码对比：不同抽象层的工程框架
-
 > 📊 Level ⭐⭐ | 12.5KB | `entities/trellis-superpowers-source-code-comparison-abstraction-layer.md`
 
 # Trellis vs Superpowers 源码对比：不同抽象层的工程框架

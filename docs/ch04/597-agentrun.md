@@ -1,7 +1,5 @@
 # 看 AgentRun 如何玩转记忆存储，最佳实践来了！
 
-## Ch04.597 看 AgentRun 如何玩转记忆存储，最佳实践来了！
-
 > 📊 Level ⭐⭐ | 6.2KB | `entities/看-agentrun-如何玩转记忆存储最佳实践来了.md`
 
 # 看 AgentRun 如何玩转记忆存储，最佳实践来了！

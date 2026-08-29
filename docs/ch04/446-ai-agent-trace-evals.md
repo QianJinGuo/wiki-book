@@ -1,7 +1,5 @@
 # AI Agent 落地：如何攻克稳定性、成本与评估难题？ — Trace即Evals
 
-## Ch04.446 AI Agent 落地：如何攻克稳定性、成本与评估难题？ — Trace即Evals
-
 > 📊 Level ⭐⭐ | 8.1KB | `entities/ai-agent-trace-evals-stability-cost-evaluation-zhangyanfei.md`
 
 # AI Agent 落地：如何攻克稳定性、成本与评估难题？ — Trace即Evals

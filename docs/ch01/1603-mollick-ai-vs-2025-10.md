@@ -1,7 +1,5 @@
 # Mollick 的 AI 实用指南：免费 vs 付费·模型选择·深度研究（2025-10）
 
-## Ch01.1603 Mollick 的 AI 实用指南：免费 vs 付费·模型选择·深度研究（2025-10）
-
 > 📊 Level ⭐⭐⭐⭐ | 10.4KB | `entities/opinionated-guide-ai-right-now-mollick.md`
 
 # Mollick 的 AI 实用指南：免费 vs 付费·模型选择·深度研究（2025-10）

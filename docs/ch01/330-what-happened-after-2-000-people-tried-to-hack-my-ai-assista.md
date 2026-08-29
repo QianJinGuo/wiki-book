@@ -1,7 +1,5 @@
 # What happened after 2,000 people tried to hack my AI assistant
 
-## Ch01.330 What happened after 2,000 people tried to hack my AI assistant
-
 > 📊 Level ⭐ | 0.7KB | `entities/what-happened-after-2-000-people-tried-to-hack-my-ai-assistant.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/what-happened-after-2-000-people-tried-to-hack-my-ai-assistant.md)

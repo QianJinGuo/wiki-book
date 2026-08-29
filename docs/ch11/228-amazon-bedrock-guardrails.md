@@ -1,7 +1,5 @@
 # Amazon Bedrock Guardrails 代码生成工作流六大架构模式
 
-## Ch11.228 Amazon Bedrock Guardrails 代码生成工作流六大架构模式
-
 > 📊 Level ⭐⭐ | 5.4KB | `entities/amazon-bedrock-guardrails-code-generation-six-patterns.md`
 
 # Amazon Bedrock Guardrails 代码生成工作流六大架构模式

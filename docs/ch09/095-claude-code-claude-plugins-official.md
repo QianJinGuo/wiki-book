@@ -1,7 +1,5 @@
 # Claude Code 官方插件系统 (claude-plugins-official)
 
-## Ch09.095 Claude Code 官方插件系统 (claude-plugins-official)
-
 > 📊 Level ⭐⭐ | 8.8KB | `entities/claude-code-official-plugins-anthropic.md`
 
 # Claude Code 官方插件系统 (claude-plugins-official)

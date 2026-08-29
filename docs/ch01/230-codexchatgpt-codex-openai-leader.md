@@ -1,7 +1,5 @@
 # codexchatgpt为何合体codex未来何去何从openai核心leader回应一切
 
-## Ch01.230 codexchatgpt为何合体codex未来何去何从openai核心leader回应一切
-
 > 📊 Level ⭐ | 0.9KB | `entities/codexchatgpt为何合体codex未来何去何从openai核心leader回应一切.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/codexchatgpt为何合体codex未来何去何从openai核心leader回应一切.md)

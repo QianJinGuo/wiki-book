@@ -1,7 +1,5 @@
 # amazon-ecs-引入新的高分辨率指标以实现服务快速自动扩缩
 
-## Ch01.190 amazon-ecs-引入新的高分辨率指标以实现服务快速自动扩缩
-
 > 📊 Level ⭐ | 1.2KB | `entities/amazon-ecs-引入新的高分辨率指标以实现服务快速自动扩缩.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-ecs-引入新的高分辨率指标以实现服务快速自动扩缩.md)

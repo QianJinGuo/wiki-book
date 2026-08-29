@@ -1,7 +1,5 @@
 # The Unbearable Cheapness of Open Weight Models – James O'Claire
 
-## Ch01.146 The Unbearable Cheapness of Open Weight Models – James O'Claire
-
 > 📊 Level ⭐ | 4.8KB | `entities/25-the-unbearable-cheapness-of-open-weight-models.md`
 
 # The Unbearable Cheapness of Open Weight Models – James O'Claire

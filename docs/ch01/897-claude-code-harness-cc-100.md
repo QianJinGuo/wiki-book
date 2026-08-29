@@ -1,7 +1,5 @@
 # 最新Claude Code创始人：编程已经解决了，Harness重要性持续降低，CC未来只有100行代码
 
-## Ch01.897 最新Claude Code创始人：编程已经解决了，Harness重要性持续降低，CC未来只有100行代码
-
 > 📊 Level ⭐⭐ | 7.2KB | `entities/claude-code-founder-harness-100-lines.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-founder-harness-100-lines.md)

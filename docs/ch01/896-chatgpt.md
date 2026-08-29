@@ -1,7 +1,5 @@
 # 破案了为啥chatgpt老想着稳稳地接住你
 
-## Ch01.896 破案了为啥chatgpt老想着稳稳地接住你
-
 > 📊 Level ⭐⭐ | 7.2KB | `entities/破案了为啥chatgpt老想着稳稳地接住你.md`
 
 # 破案了：为啥ChatGPT老想着「稳稳地接住你」

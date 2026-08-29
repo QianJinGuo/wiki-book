@@ -1,7 +1,5 @@
 # AWS API MCP Server + Quick Suite + Bedrock AgentCore 集成
 
-## Ch11.204 AWS API MCP Server + Quick Suite + Bedrock AgentCore 集成
-
 > 📊 Level ⭐⭐ | 6.8KB | `entities/integrating-aws-api-mcp-server-with-amazon-quick-suite-using-amazon-bedrock-agen.md`
 
 ## 核心要点

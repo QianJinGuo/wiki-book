@@ -1,7 +1,5 @@
 # 基于钉钉机器人的 Qoder CLI / Claude Code 双引擎 AI 助手实践
 
-## Ch01.1351 基于钉钉机器人的 Qoder CLI / Claude Code 双引擎 AI 助手实践
-
 > 📊 Level ⭐⭐ | 3.7KB | `entities/dingtalk-qoder-claudecode-dual-engine-ai-assistant.md`
 
 # 基于钉钉机器人的 Qoder CLI / Claude Code 双引擎 AI 助手实践

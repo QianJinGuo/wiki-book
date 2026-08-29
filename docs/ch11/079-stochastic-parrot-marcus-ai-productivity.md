@@ -1,7 +1,5 @@
 # Stochastic Parrot Marcus AI Productivity
 
-## Ch11.079 Stochastic Parrot Marcus AI Productivity
-
 > 📊 Level ⭐⭐ | 11.1KB | `entities/stochastic-parrot-marcus-ai-productivity.md`
 
 # Marcus on AI Productivity

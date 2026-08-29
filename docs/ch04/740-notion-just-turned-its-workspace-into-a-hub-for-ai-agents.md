@@ -1,7 +1,5 @@
 # Notion just turned its workspace into a hub for AI agents | TechCrunch
 
-## Ch04.740 Notion just turned its workspace into a hub for AI agents | TechCrunch
-
 > 📊 Level ⭐⭐ | 3.8KB | `entities/notion-ai-agents.md`
 
 ## 深度分析

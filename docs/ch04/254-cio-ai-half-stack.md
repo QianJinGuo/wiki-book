@@ -1,7 +1,5 @@
 # 阿里云CIO：AI产研效能规模化提升实践（抛弃生码率、重构Half-Stack）
 
-## Ch04.254 阿里云CIO：AI产研效能规模化提升实践（抛弃生码率、重构Half-Stack）
-
 > 📊 Level ⭐⭐ | 11.9KB | `entities/aliyun-cio-ai-rd-efficiency.md`
 
 ## 相关实体

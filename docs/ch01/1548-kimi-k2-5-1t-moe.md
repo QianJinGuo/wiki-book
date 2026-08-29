@@ -1,7 +1,5 @@
 # Kimi K2.5 架构创新 — 1T MoE 一层路由 + 三能力跃迁
 
-## Ch01.1548 Kimi K2.5 架构创新 — 1T MoE 一层路由 + 三能力跃迁
-
 > 📊 Level ⭐⭐⭐ | 7.0KB | `entities/kimi-k2-5-architecture-innovation-moonshot-2026.md`
 
 ## 概述

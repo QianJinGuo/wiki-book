@@ -1,7 +1,5 @@
 # TencentDB Agent Memory：L0-L3 语义金字塔长期记忆
 
-## Ch06.047 TencentDB Agent Memory：L0-L3 语义金字塔长期记忆
-
 > 📊 Level ⭐⭐ | 3.3KB | `entities/tencentdb-agent-memory-long-term-pyramid.md`
 
 # TencentDB Agent Memory：L0-L3 语义金字塔长期记忆

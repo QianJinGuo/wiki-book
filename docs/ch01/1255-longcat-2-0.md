@@ -1,7 +1,5 @@
 # 美团 LongCat-2.0
 
-## Ch01.1255 美团 LongCat-2.0
-
 > 📊 Level ⭐⭐ | 4.5KB | `entities/meituan-longcat-2-0.md`
 
 # 美团 LongCat-2.0

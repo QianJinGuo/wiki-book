@@ -1,7 +1,5 @@
 # 淘宝闪购爆品团精排 Scaling Up 迭代实践
 
-## Ch01.1615 淘宝闪购爆品团精排 Scaling Up 迭代实践
-
 > 📊 Level ⭐⭐⭐⭐ | 6.3KB | `entities/taobao-flash-sale-ranking-scaling-up-2026.md`
 
 > 阿里云开发者团队李伟康撰写的淘宝闪购爆品团频道排序模型升级实践，核心是将 DLRM 架构的碎片化模块堆叠重构为 Token-Based RankMixer 统一主干，经过三期迭代从 85M 参数扩展到 243M 参数，取得稳定线上收益。

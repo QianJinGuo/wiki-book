@@ -1,7 +1,5 @@
 # 55+ models, every modality. One API key, one bill.
 
-## Ch11.319 55+ models, every modality. One API key, one bill.
-
 > 📊 Level ⭐⭐⭐ | 6.3KB | `entities/digitalocean-serverless-inference-55-models.md`
 
 ## 核心要点

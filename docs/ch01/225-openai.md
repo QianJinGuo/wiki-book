@@ -1,7 +1,5 @@
 # 太抓马了 马斯克OpenAI开庭 硅谷巨富互揭老底像极了村口吵架 量子位
 
-## Ch01.225 太抓马了 马斯克OpenAI开庭 硅谷巨富互揭老底像极了村口吵架 量子位
-
 > 📊 Level ⭐ | 0.9KB | `entities/2026-05-01-太抓马了-马斯克OpenAI开庭-硅谷巨富互揭老底像极了村口吵架-量子位.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-05-01-太抓马了-马斯克OpenAI开庭-硅谷巨富互揭老底像极了村口吵架-量子位.md)

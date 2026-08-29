@@ -1,7 +1,5 @@
 # OpenAI 承认黑进 Hugging Face 的是自家模型
 
-## Ch01.875 OpenAI 承认黑进 Hugging Face 的是自家模型
-
 > 📊 Level ⭐⭐ | 7.4KB | `entities/openal承认黑进hugging-face的是自家模型.md`
 
 # OpenAI 承认黑进 Hugging Face 的是自家模型

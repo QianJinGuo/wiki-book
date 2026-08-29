@@ -1,7 +1,5 @@
 # Openai GPT Realtime Voice Models Qbitai
 
-## Ch01.1104 Openai GPT Realtime Voice Models Qbitai
-
 > 📊 Level ⭐⭐ | 5.7KB | `entities/openai-gpt-realtime-voice-models-qbitai.md`
 
 # GPT-5级推理能力塞进语音模型，OpenAI把同传翻译成本砍穿地板价

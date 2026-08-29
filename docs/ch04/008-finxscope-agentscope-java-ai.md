@@ -1,7 +1,5 @@
 # FinXScope：基于 AgentScope Java 的金融级 AI 原生智能体底座
 
-## Ch04.008 FinXScope：基于 AgentScope Java 的金融级 AI 原生智能体底座
-
 > 📊 Level ⭐ | 8.6KB | `entities/finxscope-financial-agent-harness-aliyun-2026.md`
 
 # FinXScope：基于 AgentScope Java 的金融级 AI 原生智能体底座

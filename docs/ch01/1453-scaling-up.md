@@ -1,7 +1,5 @@
 # 淘宝闪购-爆品团精排Scaling Up迭代实践
 
-## Ch01.1453 淘宝闪购-爆品团精排Scaling Up迭代实践
-
 > 📊 Level ⭐⭐ | 2.3KB | `entities/淘宝闪购-爆品团精排scaling-up迭代实践.md`
 
 # 淘宝闪购-爆品团精排Scaling Up迭代实践

@@ -1,7 +1,5 @@
 # Claude Code 架构深度解析
 
-## Ch01.1464 Claude Code 架构深度解析
-
 > 📊 Level ⭐⭐⭐ | 33.2KB | `entities/claude-code-deep-architecture-analysis.md`
 
 # Claude Code 架构深度解析

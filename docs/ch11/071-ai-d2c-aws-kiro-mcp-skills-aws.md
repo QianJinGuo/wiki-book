@@ -1,7 +1,5 @@
 # 让 AI 理解你的组件库：新一代智能 D2C架构 — 基于 AWS Kiro MCP Skills 的智能转换实践 | 亚马逊AWS官方博客
 
-## Ch11.071 让 AI 理解你的组件库：新一代智能 D2C架构 — 基于 AWS Kiro MCP Skills 的智能转换实践 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 11.0KB | `entities/ai-understanding-component-library-intelligent-d2c-architecture-aws-kiro-mcp-skills.md`
 
 

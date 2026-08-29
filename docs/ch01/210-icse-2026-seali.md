@@ -1,7 +1,5 @@
 # ICSE 2026杰出论文 突破代码模型真实工程落地瓶颈 北大团队提出SEAli 机器之心
 
-## Ch01.210 ICSE 2026杰出论文 突破代码模型真实工程落地瓶颈 北大团队提出SEAli 机器之心
-
 > 📊 Level ⭐ | 1.0KB | `entities/2026-05-07-ICSE-2026杰出论文-突破代码模型真实工程落地瓶颈-北大团队提出SEAli-机器之心.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-05-07-ICSE-2026杰出论文-突破代码模型真实工程落地瓶颈-北大团队提出SEAli-机器之心.md)

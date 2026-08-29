@@ -1,7 +1,5 @@
 # The stablecoin 24x7 money loop: business case for banks
 
-## Ch03.070 The stablecoin 24x7 money loop: business case for banks
-
 > 📊 Level ⭐⭐ | 13.9KB | `entities/the-stablecoin-24x7-money-loop-fintechbrainfood.md`
 
 # The stablecoin 24x7 money loop: business case for banks

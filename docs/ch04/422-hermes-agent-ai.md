@@ -1,7 +1,5 @@
 # Hermes Agent 保姆级教程：一句话组建你的 AI 打工团队
 
-## Ch04.422 Hermes Agent 保姆级教程：一句话组建你的 AI 打工团队
-
 > 📊 Level ⭐⭐ | 8.5KB | `entities/hermes-agent-getting-started-guide-2026.md`
 
 ## 你能做到什么

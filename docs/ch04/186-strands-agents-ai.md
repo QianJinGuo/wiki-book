@@ -1,7 +1,5 @@
 # 基于 Strands Agents 构建亚马逊云科技云成本分析与优化 AI 助手
 
-## Ch04.186 基于 Strands Agents 构建亚马逊云科技云成本分析与优化 AI 助手
-
 > 📊 Level ⭐⭐ | 14.7KB | `entities/strands-agents-cloud-cost-optimizer.md`
 
 # 基于 Strands Agents 构建亚马逊云科技云成本分析与优化 AI 助手

@@ -1,7 +1,5 @@
 # Giving your AI a Job Interview
 
-## Ch11.140 Giving your AI a Job Interview
-
 > 📊 Level ⭐⭐ | 8.5KB | `entities/giving-your-ai-a-job-interview.md`
 
 # Giving your AI a Job Interview

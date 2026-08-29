@@ -1,7 +1,5 @@
 # AWS Quicksight Dataset QA Tara Case
 
-## Ch11.192 AWS Quicksight Dataset QA Tara Case
-
 > 📊 Level ⭐⭐ | 7.2KB | `entities/aws-quicksight-dataset-qa-tara-case.md`
 
 # Beyond BI: How the Dataset Q&A feature of Amazon Quick powers the next generation of data decisions

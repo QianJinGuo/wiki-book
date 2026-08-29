@@ -1,7 +1,5 @@
 # The text in Claude Code’s “Extended Thinking” output is not authentic. – blog
 
-## Ch09.144 The text in Claude Code’s “Extended Thinking” output is not authentic. – blog
-
 > 📊 Level ⭐⭐ | 6.5KB | `entities/claude-code-extended-thinking-not-authentic.md`
 
 # The text in Claude Code’s “Extended Thinking” output is not authentic. – blog

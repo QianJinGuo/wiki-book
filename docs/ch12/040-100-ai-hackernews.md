@@ -1,7 +1,5 @@
 # 100万+AI服务暴露在公网——HackerNews扫描报告
 
-## Ch12.040 100万+AI服务暴露在公网——HackerNews扫描报告
-
 > 📊 Level ⭐⭐ | 10.3KB | `entities/1-million-exposed-ai-services-hackernews.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/1-million-exposed-ai-services-hackernews.md)

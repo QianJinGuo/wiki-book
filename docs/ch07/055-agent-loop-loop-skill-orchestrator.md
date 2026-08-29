@@ -1,7 +1,5 @@
 # Agent Loop 架构三层模型：Loop + Skill + Orchestrator
 
-## Ch07.055 Agent Loop 架构三层模型：Loop + Skill + Orchestrator
-
 > 📊 Level ⭐⭐ | 7.9KB | `entities/inngest-cto-agent-loop-architecture-three-layers-2026-06-27.md`
 
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/inngest-cto-agent-loop-architecture-three-layers-2026-06-27.md)

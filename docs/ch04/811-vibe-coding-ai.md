@@ -1,7 +1,5 @@
 # 从 Vibe Coding 到 AI 原生研发团队：一套能落地的工程实践
 
-## Ch04.811 从 Vibe Coding 到 AI 原生研发团队：一套能落地的工程实践
-
 > 📊 Level ⭐⭐ | 1.5KB | `entities/从-vibe-coding-到-ai-原生研发团队一套能落地的工程实践.md`
 
 # 从 Vibe Coding 到 AI 原生研发团队：一套能落地的工程实践

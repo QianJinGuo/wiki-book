@@ -1,7 +1,5 @@
 # 姚顺雨评测腾讯混元 Hy3 Agent 能力
 
-## Ch04.475 姚顺雨评测腾讯混元 Hy3 Agent 能力
-
 > 📊 Level ⭐⭐ | 7.9KB | `entities/hunyuan-hy3-agent-benchmark-yaoshunyu-2026.md`
 
 # 姚顺雨 Agent 能力交卷：腾讯混元 Hy3 把元宝练成了打工人

@@ -1,7 +1,5 @@
 # 快时尚电商行业智能体设计思路与应用实践（七）Amazon Bedrock AgentCore Runtime 深度解析和场景分析 | 亚马逊AWS官方博客
 
-## Ch11.068 快时尚电商行业智能体设计思路与应用实践（七）Amazon Bedrock AgentCore Runtime 深度解析和场景分析 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 11.2KB | `entities/amazon-bedrock-agentcore-runtime-deep-dive-and-scenario-analysis.md`
 
 

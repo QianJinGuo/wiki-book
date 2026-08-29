@@ -1,7 +1,5 @@
 # AI Native 混沌工程——Agent 军团 + 共享黑板的韧性验证平台
 
-## Ch04.831 AI Native 混沌工程——Agent 军团 + 共享黑板的韧性验证平台
-
 > 📊 Level ⭐⭐⭐ | 11.6KB | `entities/qwen-ai-native-chaos-engineering-agent-corps-2026-08-06.md`
 
 # AI Native 混沌工程——Agent 军团 + 共享黑板的韧性验证平台

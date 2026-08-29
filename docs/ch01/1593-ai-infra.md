@@ -1,7 +1,5 @@
 # AI Infra进阶：如何让大模型输出确定的结果
 
-## Ch01.1593 AI Infra进阶：如何让大模型输出确定的结果
-
 > 📊 Level ⭐⭐⭐ | 2.5KB | `entities/ai-infra进阶如何让大模型输出确定的结果.md`
 
 # AI Infra进阶：如何让大模型输出确定的结果

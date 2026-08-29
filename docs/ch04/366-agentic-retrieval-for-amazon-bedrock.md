@@ -1,7 +1,5 @@
 # Agentic Retrieval for Amazon Bedrock
 
-## Ch04.366 Agentic Retrieval for Amazon Bedrock
-
 > 📊 Level ⭐⭐ | 9.4KB | `entities/agentic-retrieval-for-amazon-bedrock-managed-knowledge-base.md`
 
 # Agentic Retrieval for Amazon Bedrock

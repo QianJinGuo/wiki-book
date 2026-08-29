@@ -1,7 +1,5 @@
 # 开源模型回顾：Kimi K3、Qwen 3.8、WAIC 演讲、蒸馏与中美竞争
 
-## Ch01.626 开源模型回顾：Kimi K3、Qwen 3.8、WAIC 演讲、蒸馏与中美竞争
-
 > 📊 Level ⭐⭐ | 10.0KB | `entities/open-models-recap-more-on-kimi-k3-qwen-38-xis-waic-speech.md`
 
 # 开源模型回顾：Kimi K3、Qwen 3.8、WAIC 演讲、蒸馏与中美竞争

@@ -1,7 +1,5 @@
 # 快手 AgentX
 
-## Ch04.614 快手 AgentX
-
 > 📊 Level ⭐⭐ | 5.9KB | `entities/kuaishou-agentx.md`
 
 # 快手 AgentX

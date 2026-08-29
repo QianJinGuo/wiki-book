@@ -1,7 +1,5 @@
 # 企业级 Agent 编排
 
-## Ch04.550 企业级 Agent 编排
-
 > 📊 Level ⭐⭐ | 6.9KB | `entities/enterprise-agent-orchestration.md`
 
 # 企业级 Agent 编排

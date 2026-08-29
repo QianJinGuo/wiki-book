@@ -1,7 +1,5 @@
 # The analytics engineer in 2026: system designer, governance owner, AI context provider
 
-## Ch01.1270 The analytics engineer in 2026: system designer, governance owner, AI context provider
-
 > 📊 Level ⭐⭐ | 4.3KB | `entities/the-analytics-engineer-in-2026-system-designer-governance-owner-ai-context-provi.md`
 
 # The analytics engineer in 2026: system designer, governance owner, AI context provider

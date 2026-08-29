@@ -1,7 +1,5 @@
 # skill-up: 阿里开源 Agent Skill 评测框架
 
-## Ch07.054 skill-up: 阿里开源 Agent Skill 评测框架
-
 > 📊 Level ⭐⭐ | 8.0KB | `entities/alibaba-skill-up-agent-skill-evaluation.md`
 
 # skill-up：阿里开源 Agent Skill 评测框架

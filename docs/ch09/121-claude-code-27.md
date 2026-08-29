@@ -1,7 +1,5 @@
 # Claude Code 27 条技巧：从工具清单到工程升级路径
 
-## Ch09.121 Claude Code 27 条技巧：从工具清单到工程升级路径
-
 > 📊 Level ⭐⭐ | 7.8KB | `entities/claude-code-27-tips-engineering-upgrade-jiagoux-2026.md`
 
 # Claude Code 27 条技巧：从工具清单到工程升级路径

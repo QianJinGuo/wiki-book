@@ -1,7 +1,5 @@
 # Codex 48小时两次被迫重置Token额度——消耗太快的真相来了
 
-## Ch09.127 Codex 48小时两次被迫重置Token额度——消耗太快的真相来了
-
 > 📊 Level ⭐⭐ | 7.3KB | `entities/codex-token-quota-exhaustion-debug-2026.md`
 
 # Codex 48小时两次被迫重置Token额度——消耗太快的真相来了

@@ -1,7 +1,5 @@
 # MIT团队把泛化写进Harness：短任务训练，解锁32倍长度外推
 
-## Ch05.133 MIT团队把泛化写进Harness：短任务训练，解锁32倍长度外推
-
 > 📊 Level ⭐⭐ | 1.0KB | `entities/mit-rlm-harness-length-extrapolation-paperweekly-2026.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mit-rlm-harness-length-extrapolation-paperweekly-2026.md)

@@ -1,7 +1,5 @@
 # MiniMax Token调用第一后：AgentOS现实与模型厂商的系统适配挑战
 
-## Ch06.055 MiniMax Token调用第一后：AgentOS现实与模型厂商的系统适配挑战
-
 > 📊 Level ⭐⭐⭐ | 13.7KB | `entities/agentos-minimax-forge-model-adaptation-yaoge.md`
 
 > -> [MiniMax Token调用第一后：AgentOS现实与模型厂商的系统适配挑战](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentos-minimax-forge-model-adaptation-yaoge.md)

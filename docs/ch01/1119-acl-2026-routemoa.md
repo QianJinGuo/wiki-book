@@ -1,7 +1,5 @@
 # ACL 2026 | RouteMoA：无需预推理的动态路由，实现高效多智能体混合
 
-## Ch01.1119 ACL 2026 | RouteMoA：无需预推理的动态路由，实现高效多智能体混合
-
 > 📊 Level ⭐⭐ | 5.6KB | `entities/acl-2026-routemoa无需预推理的动态路由实现高效多智能体混合.md`
 
 # ACL 2026 | RouteMoA：无需预推理的动态路由，实现高效多智能体混合

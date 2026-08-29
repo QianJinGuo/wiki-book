@@ -1,7 +1,5 @@
 # Best Practices for Multi-Turn Reinforcement Learning in Amazon SageMaker AI
 
-## Ch04.832 Best Practices for Multi-Turn Reinforcement Learning in Amazon SageMaker AI
-
 > 📊 Level ⭐⭐⭐ | 11.5KB | `entities/best-practices-multi-turn-reinforcement-learning-sagemaker-ai.md`
 
 # Best Practices for Multi-Turn Reinforcement Learning in Amazon SageMaker AI

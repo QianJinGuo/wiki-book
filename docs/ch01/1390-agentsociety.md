@@ -1,7 +1,5 @@
 # 清华发布智能体社会AgentSociety第二代：让社会科学研究真正「跑起来」
 
-## Ch01.1390 清华发布智能体社会AgentSociety第二代：让社会科学研究真正「跑起来」
-
 > 📊 Level ⭐⭐ | 3.5KB | `entities/清华发布智能体社会agentsociety第二代让社会科学研究真正跑起来.md`
 
 # 清华发布智能体社会AgentSociety第二代：让社会科学研究真正「跑起来」

@@ -1,7 +1,5 @@
 # AWS 一周综述：AWS Transform 上线一周年、AWS 云端 Claude Platform、EC2 M3 Ultra Mac 实例等（2026 年 5 月 18 日）
 
-## Ch01.1063 AWS 一周综述：AWS Transform 上线一周年、AWS 云端 Claude Platform、EC2 M3 Ultra Mac 实例等（2026 年 5 月 18 日）
-
 > 📊 Level ⭐⭐ | 5.9KB | `entities/aws-一周综述aws-transform-上线一周年aws-云端-claude-platformec2-m3-ultr.md`
 
 ## 概述

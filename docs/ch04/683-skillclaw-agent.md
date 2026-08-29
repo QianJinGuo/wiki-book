@@ -1,7 +1,5 @@
 # 阿里SkillClaw：让 Agent 技能在真实使用中集体进化
 
-## Ch04.683 阿里SkillClaw：让 Agent 技能在真实使用中集体进化
-
 > 📊 Level ⭐⭐ | 4.7KB | `entities/skillclaw-alibaba-paperagent.md`
 
 # 阿里SkillClaw：让 Agent 技能在真实使用中集体进化

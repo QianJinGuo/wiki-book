@@ -1,7 +1,5 @@
 # 如何利用 AgentCore + OpenViking 快速搭建具备高效记忆的 Agent
 
-## Ch01.953 如何利用 AgentCore + OpenViking 快速搭建具备高效记忆的 Agent
-
 > 📊 Level ⭐⭐ | 6.8KB | `entities/如何利用-agentcore-openviking-快速搭建具备高效记忆的-agent.md`
 
 # 如何利用 AgentCore + OpenViking 快速搭建具备高效记忆的 Agent

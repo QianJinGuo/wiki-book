@@ -1,7 +1,5 @@
 # ai短漫剧的netflix来了恒星ai推出全球首个影视级ai-agentstarfilm打造ai短漫剧制作的超级梦工厂
 
-## Ch04.666 ai短漫剧的netflix来了恒星ai推出全球首个影视级ai-agentstarfilm打造ai短漫剧制作的超级梦工厂
-
 > 📊 Level ⭐⭐ | 5.0KB | `entities/ai短漫剧的netflix来了恒星ai推出全球首个影视级ai-agentstarfilm打造ai短漫剧制作的超级梦工厂.md`
 
 > -> 原文存档

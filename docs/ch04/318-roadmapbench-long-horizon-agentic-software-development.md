@@ -1,7 +1,5 @@
 # RoadmapBench: Long-Horizon Agentic Software Development 基准评估
 
-## Ch04.318 RoadmapBench: Long-Horizon Agentic Software Development 基准评估
-
 > 📊 Level ⭐⭐ | 10.2KB | `entities/roadmapbench-long-horizon-agentic-software-development.md`
 
 # RoadmapBench: Long-Horizon Agentic Software Development 基准评估

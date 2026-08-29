@@ -1,7 +1,5 @@
 # MCP Protocol
 
-## Ch07.095 MCP Protocol
-
 > 📊 Level ⭐⭐ | 1.4KB | `entities/mcp-protocol.md`
 
 # MCP Protocol

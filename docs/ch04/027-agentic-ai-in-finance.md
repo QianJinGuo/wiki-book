@@ -1,7 +1,5 @@
 # Agentic AI in Finance
 
-## Ch04.027 Agentic AI in Finance
-
 > 📊 Level ⭐ | 1.8KB | `entities/agentic-ai-finance.md`
 
 # Agentic AI in Finance

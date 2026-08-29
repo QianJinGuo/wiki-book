@@ -1,7 +1,5 @@
 # 云效 AI Code Review — GitLab Integration for Private-Network Code Review
 
-## Ch09.118 云效 AI Code Review — GitLab Integration for Private-Network Code Review
-
 > 📊 Level ⭐⭐ | 7.9KB | `entities/yunxiao-ai-code-review-gitlab.md`
 
 # 云效 AI Code Review: GitLab Integration for Private-Network Code Review

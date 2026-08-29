@@ -1,7 +1,5 @@
 # 中金 Loop Engineering 自动化因子发现引擎
 
-## Ch01.1207 中金 Loop Engineering 自动化因子发现引擎
-
 > 📊 Level ⭐⭐ | 4.9KB | `entities/cicc-loop-engineering-factor-discovery-engine-2026-08-06.md`
 
 # 中金 Loop Engineering 自动化因子发现引擎

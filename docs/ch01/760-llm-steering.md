@@ -1,7 +1,5 @@
 # LLM Steering 行为引导
 
-## Ch01.760 LLM Steering 行为引导
-
 > 📊 Level ⭐⭐ | 8.2KB | `entities/llm-steering-behavior-guidance.md`
 
 # LLM Steering 行为引导

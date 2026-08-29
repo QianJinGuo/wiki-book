@@ -1,7 +1,5 @@
 # Codex /goal 实现拆解：长任务 Agent 不只是多跑几轮
 
-## Ch04.246 Codex /goal 实现拆解：长任务 Agent 不只是多跑几轮
-
 > 📊 Level ⭐⭐ | 12.0KB | `entities/codex-goal-implementation-breakdown.md`
 
 ## 文章背景

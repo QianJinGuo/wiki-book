@@ -1,7 +1,5 @@
 # Karpathy 怎么看 AI Agent（七）：当程序员贡献的 bits 越来越少，什么技能还值钱
 
-## Ch04.194 Karpathy 怎么看 AI Agent（七）：当程序员贡献的 bits 越来越少，什么技能还值钱
-
 > 📊 Level ⭐⭐ | 14.2KB | `entities/karpathy-ai-agent-7-bits-value-decline-2026-allentan.md`
 
 [[raw/articles/karpathy-ai-agent-7-bits-value-decline-2026-allentan.md]

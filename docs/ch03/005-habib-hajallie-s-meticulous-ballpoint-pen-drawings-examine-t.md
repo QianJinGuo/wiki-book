@@ -1,7 +1,5 @@
 # Habib Hajallie's Meticulous Ballpoint Pen Drawings Examine the Depths of Emotion
 
-## Ch03.005 Habib Hajallie's Meticulous Ballpoint Pen Drawings Examine the Depths of Emotion
-
 > 📊 Level ⭐ | 12.6KB | `entities/habib-hajallie-s-meticulous-ballpoint-pen-drawings-examine-the-depths-of-emotion.md`
 
 ## 艺术家背景

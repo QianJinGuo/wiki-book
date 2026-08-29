@@ -1,7 +1,5 @@
 # 腾讯混元新里程碑：Hy3 preview 发布开源，Agent 表现全面提升
 
-## Ch04.180 腾讯混元新里程碑：Hy3 preview 发布开源，Agent 表现全面提升
-
 > 📊 Level ⭐⭐ | 15.1KB | `entities/腾讯混元新里程碑hy3-preview-发布开源agent-表现全面提升.md`
 
 [[raw/articles/腾讯混元新里程碑hy3-preview-发布开源agent-表现全面提升.md]

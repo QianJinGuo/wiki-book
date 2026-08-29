@@ -1,7 +1,5 @@
 # Anthropic 官方 14 种 Skill 设计模式
 
-## Ch01.453 Anthropic 官方 14 种 Skill 设计模式
-
 > 📊 Level ⭐⭐ | 15.0KB | `entities/skill-design-patterns-anthropic.md`
 
 ## Anthropic 官方 14 种设计模式（5 大类）

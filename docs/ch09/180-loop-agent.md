@@ -1,7 +1,5 @@
 # Loop 的产品视角——项目中心从人挪到 Agent 系统
 
-## Ch09.180 Loop 的产品视角——项目中心从人挪到 Agent 系统
-
 > 📊 Level ⭐⭐ | 4.2KB | `entities/dittos-loop-codex-product-pm-zhongshiliu-2026.md`
 
 # Loop 的产品视角——项目中心从人挪到 Agent 系统

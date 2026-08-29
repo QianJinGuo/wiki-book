@@ -1,7 +1,5 @@
 # III Dev Worker 触发函数架构
 
-## Ch01.380 III Dev Worker 触发函数架构
-
 > 📊 Level ⭐⭐ | 30.0KB | `entities/iii-dev-worker-trigger-function.md`
 
 当下 AI 基础设施里最重要的架构问题，重点不在该用哪个模型，而在需要多少基础设施，才能用它构建出真正有用的东西。

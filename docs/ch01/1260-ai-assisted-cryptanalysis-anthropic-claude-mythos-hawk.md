@@ -1,7 +1,5 @@
 # AI Assisted Cryptanalysis: Anthropic Claude Mythos 破解 HAWK 和 AES
 
-## Ch01.1260 AI Assisted Cryptanalysis: Anthropic Claude Mythos 破解 HAWK 和 AES
-
 > 📊 Level ⭐⭐ | 4.4KB | `entities/ai-assisted-cryptanalysis-anthropic-claude-mythos-hawk-aes.md`
 
 # AI Assisted Cryptanalysis: Anthropic Claude Mythos 破解 HAWK 和 AES

@@ -1,7 +1,5 @@
 # Thread by @ZeusRWA on Thread Reader App
 
-## Ch01.099 Thread by @ZeusRWA on Thread Reader App
-
 > 📊 Level ⭐ | 7.0KB | `entities/zeus-rwa-thread-reader.md`
 
 # Thread by @ZeusRWA on Thread Reader App

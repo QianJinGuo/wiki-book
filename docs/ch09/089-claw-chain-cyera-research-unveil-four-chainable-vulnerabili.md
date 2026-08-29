@@ -1,7 +1,5 @@
 # Claw Chain: Cyera Research Unveil Four Chainable Vulnerabilities in OpenClaw
 
-## Ch09.089 Claw Chain: Cyera Research Unveil Four Chainable Vulnerabilities in OpenClaw
-
 > 📊 Level ⭐⭐ | 8.9KB | `entities/claw-chain-cyera-research-unveil-four-chainable-vulnerabilities-in-openclaw.md`
 
 ## 核心要点

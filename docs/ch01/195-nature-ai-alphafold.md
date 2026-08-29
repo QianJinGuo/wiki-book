@@ -1,7 +1,5 @@
 # 斯坦福重磅研究登Nature！AI凭空造出前所未有蛋白质，超越AlphaFold
 
-## Ch01.195 斯坦福重磅研究登Nature！AI凭空造出前所未有蛋白质，超越AlphaFold
-
 > 📊 Level ⭐ | 1.1KB | `entities/2026-05-03-斯坦福重磅研究登Nature-AI凭空造出前所未有蛋白质-超越AlphaFold-新智元.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-05-03-斯坦福重磅研究登Nature-AI凭空造出前所未有蛋白质-超越AlphaFold-新智元.md)

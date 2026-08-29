@@ -1,7 +1,5 @@
 # WorldTrace：视频世界模型的可寻址记忆（Addressable Memory for Video World Models）
 
-## Ch06.037 WorldTrace：视频世界模型的可寻址记忆（Addressable Memory for Video World Models）
-
 > 📊 Level ⭐⭐ | 4.8KB | `entities/worldtrace-addressable-memory-video-world-models.md`
 
 # WorldTrace：视频世界模型的可寻址记忆

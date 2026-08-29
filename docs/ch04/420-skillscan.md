@@ -1,7 +1,5 @@
 # SkillScan — 智能体技能安全扫描最佳实践
 
-## Ch04.420 SkillScan — 智能体技能安全扫描最佳实践
-
 > 📊 Level ⭐⭐ | 8.5KB | `entities/skillscan-agent-skill-security-scanning-best-practices.md`
 
 # SkillScan — 智能体技能安全扫描最佳实践

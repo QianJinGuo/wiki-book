@@ -1,7 +1,5 @@
 # Valkey 为什么这么快？盘点 Valkey 中提升性能的黑科技
 
-## Ch01.950 Valkey 为什么这么快？盘点 Valkey 中提升性能的黑科技
-
 > 📊 Level ⭐⭐ | 6.9KB | `entities/valkey-why-valkey-performance.md`
 
 # Valkey 为什么这么快？盘点 Valkey 中提升性能的黑科技

@@ -1,7 +1,5 @@
 # Hardwood 1.0: A Fast, Lightweight Apache Parquet Reader for the JVM
 
-## Ch09.007 Hardwood 1.0: A Fast, Lightweight Apache Parquet Reader for the JVM
-
 > 📊 Level ⭐ | 4.3KB | `entities/hardwood-1-0-a-fast-lightweight-apache-parquet-reader-for-th.md`
 
 # Hardwood 1.0: A Fast, Lightweight Apache Parquet Reader for the JVM

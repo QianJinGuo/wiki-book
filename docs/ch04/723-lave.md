@@ -1,7 +1,5 @@
 # LAVE：面向扩散语言模型的约束解码
 
-## Ch04.723 LAVE：面向扩散语言模型的约束解码
-
 > 📊 Level ⭐⭐ | 4.0KB | `entities/lave-lookahead-then-verify-diffusion-lm-constrained-decoding-issta-2026.md`
 
 # LAVE：基于前瞻验证的扩散语言模型约束解码

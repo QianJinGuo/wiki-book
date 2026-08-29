@@ -1,7 +1,5 @@
 # How Inscribe uses Amazon Bedrock to stop document fraud in seconds
 
-## Ch11.217 How Inscribe uses Amazon Bedrock to stop document fraud in seconds
-
 > 📊 Level ⭐⭐ | 6.3KB | `entities/how-inscribe-uses-amazon-bedrock-to-stop-document-fraud.md`
 
 # How Inscribe uses Amazon Bedrock to stop document fraud in seconds

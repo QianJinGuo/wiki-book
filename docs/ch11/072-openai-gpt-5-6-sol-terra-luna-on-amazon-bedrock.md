@@ -1,7 +1,5 @@
 # OpenAI GPT-5.6 Sol/Terra/Luna on Amazon Bedrock 部署指南
 
-## Ch11.072 OpenAI GPT-5.6 Sol/Terra/Luna on Amazon Bedrock 部署指南
-
 > 📊 Level ⭐⭐ | 11.0KB | `entities/get-started-with-openai-gpt-56-sol-terra-and-luna-on-amazon-bedrock.md`
 
 # OpenAI GPT-5.6 Sol/Terra/Luna on Amazon Bedrock 部署指南

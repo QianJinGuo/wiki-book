@@ -1,7 +1,5 @@
 # GenPage: Netflix 端到端生成式首页构建
 
-## Ch11.309 GenPage: Netflix 端到端生成式首页构建
-
 > 📊 Level ⭐⭐⭐ | 4.9KB | `entities/genpage-netflix-generative-homepage-construction.md`
 
 # GenPage: Netflix 端到端生成式首页构建

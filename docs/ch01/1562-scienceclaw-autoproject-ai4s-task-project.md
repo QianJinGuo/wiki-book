@@ -1,7 +1,5 @@
 # ScienceClaw AutoProject：紫东太初把 AI4S 从 Task 推向 Project（项目级自主科研引擎）
 
-## Ch01.1562 ScienceClaw AutoProject：紫东太初把 AI4S 从 Task 推向 Project（项目级自主科研引擎）
-
 > 📊 Level ⭐⭐⭐ | 5.9KB | `entities/scienceclaw-autoproject-project-level-ai4s-zidong-taichu-2026.md`
 
 # ScienceClaw AutoProject：紫东太初把 AI4S 从 Task 推向 Project

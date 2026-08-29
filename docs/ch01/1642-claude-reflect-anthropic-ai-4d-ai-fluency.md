@@ -1,7 +1,5 @@
 # Claude Reflect：Anthropic 的 AI 使用反思框架与 4D AI Fluency
 
-## Ch01.1642 Claude Reflect：Anthropic 的 AI 使用反思框架与 4D AI Fluency
-
 > 📊 Level ⭐⭐⭐⭐⭐ | 3.3KB | `entities/anthropic-claude-reflect-4d-ai-fluency-framework-2026.md`
 
 # Claude Reflect：Anthropic 的 AI 使用反思框架与 4D AI Fluency

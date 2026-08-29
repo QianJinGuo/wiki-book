@@ -1,7 +1,5 @@
 # 开放模型生态快报 #22：Zyphra、Cohere、Poolside 扩张开放模型版图
 
-## Ch01.743 开放模型生态快报 #22：Zyphra、Cohere、Poolside 扩张开放模型版图
-
 > 📊 Level ⭐⭐ | 8.4KB | `entities/latest-open-artifacts-22-zyphra-cohere-and-poolside-are-expa.md`
 
 # 开放模型生态快报 #22：Zyphra、Cohere、Poolside 扩张开放模型版图

@@ -1,7 +1,5 @@
 # 基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构
 
-## Ch11.013 基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构
-
 ```mermaid
 graph TB
     subgraph "边缘层"

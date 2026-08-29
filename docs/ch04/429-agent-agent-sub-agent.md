@@ -1,7 +1,5 @@
 # Agent 如何管理其他 Agent：四种 Sub Agent 模式
 
-## Ch04.429 Agent 如何管理其他 Agent：四种 Sub Agent 模式
-
 > 📊 Level ⭐⭐ | 8.4KB | `entities/four-sub-agent-patterns.md`
 
 # Agent 如何管理其他 Agent：四种 Sub Agent 模式

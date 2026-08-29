@@ -1,7 +1,5 @@
 # Harness 即后端：当Agent基础设施消解于统一原语
 
-## Ch01.1510 Harness 即后端：当Agent基础设施消解于统一原语
-
 > 📊 Level ⭐⭐⭐ | 9.9KB | `entities/harness-即后端当agent基础设施消解于统一原语.md`
 
 # Harness 即后端：当Agent基础设施消解于统一原语

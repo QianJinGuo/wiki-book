@@ -1,7 +1,5 @@
 # Anthropic创始人行动手册：打造一家AI-Native创业公司（附36页中文PDF）
 
-## Ch01.963 Anthropic创始人行动手册：打造一家AI-Native创业公司（附36页中文PDF）
-
 > 📊 Level ⭐⭐ | 6.7KB | `entities/anthropic-founder-playbook-ai-native-startup.md`
 
 # Anthropic创始人行动手册：打造一家AI-Native创业公司（附36页中文PDF）

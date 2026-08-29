@@ -1,7 +1,5 @@
 # Qwen-RobotWorld Technical Report: Unifying Embodied World Modeling through Langu
 
-## Ch01.1294 Qwen-RobotWorld Technical Report: Unifying Embodied World Modeling through Langu
-
 > 📊 Level ⭐⭐ | 4.1KB | `entities/arxiv-2606.17030.md`
 
 # Qwen-RobotWorld Technical Report: Unifying Embodied World Modeling through Language-Conditioned Video Generation

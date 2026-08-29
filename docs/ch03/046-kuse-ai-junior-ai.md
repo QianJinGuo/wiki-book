@@ -1,7 +1,5 @@
 # Kuse.ai Junior — 全球第一个AI员工
 
-## Ch03.046 Kuse.ai Junior — 全球第一个AI员工
-
 > 📊 Level ⭐ | 4.9KB | `entities/kuse-junior-ai-employee.md`
 
 # Kuse.ai Junior

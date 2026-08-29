@@ -1,7 +1,5 @@
 # QQ浏览器团队经验管理系统：从AI Coding对话中提纯团队经验
 
-## Ch04.580 QQ浏览器团队经验管理系统：从AI Coding对话中提纯团队经验
-
 > 📊 Level ⭐⭐ | 6.4KB | `entities/team-experience-management-ai-coding-tencent-qqbrowser.md`
 
 # QQ浏览器团队经验管理系统：从AI Coding对话中提纯团队经验

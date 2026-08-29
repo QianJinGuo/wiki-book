@@ -1,7 +1,5 @@
 # 如何在 ChatGPT 中投放广告  AGI Hunt
 
-## Ch01.352 如何在 ChatGPT 中投放广告  AGI Hunt
-
 > 📊 Level ⭐ | 0.6KB | `entities/2026-06-30-如何在-ChatGPT-中投放广告--AGI-Hunt.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-06-30-如何在-ChatGPT-中投放广告--AGI-Hunt.md)

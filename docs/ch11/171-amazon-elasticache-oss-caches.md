@@ -1,7 +1,5 @@
 # 构建 Amazon ElastiCache OSS Caches 慢查询监控方案
 
-## Ch11.171 构建 Amazon ElastiCache OSS Caches 慢查询监控方案
-
 > 📊 Level ⭐⭐ | 7.7KB | `entities/构建-amazon-elasticache-oss-caches-慢查询监控方案.md`
 
 # 构建 Amazon ElastiCache OSS Caches 慢查询监控方案

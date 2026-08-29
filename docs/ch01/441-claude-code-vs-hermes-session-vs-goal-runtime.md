@@ -1,7 +1,5 @@
 # Claude Code vs Hermes — Session 工程师 vs Goal Runtime
 
-## Ch01.441 Claude Code vs Hermes — Session 工程师 vs Goal Runtime
-
 > 📊 Level ⭐⭐ | 15.9KB | `entities/claude-code-vs-hermes-session-vs-goal-lifecycle.md`
 
 # Claude Code vs Hermes — Session 工程师 vs Goal Runtime

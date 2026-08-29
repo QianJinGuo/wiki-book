@@ -1,7 +1,5 @@
 # 从 Anthropic 到 Google：Agent Skills 正在进入\"设计模式\"阶段
 
-## Ch04.618 从 Anthropic 到 Google：Agent Skills 正在进入\"设计模式\"阶段
-
 > 📊 Level ⭐⭐ | 5.8KB | `entities/从-anthropic-到-googleagent-skills-正在进入设计模式阶段.md`
 
 ## 深度分析

@@ -1,7 +1,5 @@
 # 我给 WorkBuddy 加浏览器 Skill
 
-## Ch07.046 我给 WorkBuddy 加浏览器 Skill
-
 > 📊 Level ⭐⭐ | 8.7KB | `entities/我给-workbuddy-加了一个浏览器-skill它开始自己上网干活了.md`
 
 # 我给 WorkBuddy 加浏览器 Skill

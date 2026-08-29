@@ -1,7 +1,5 @@
 # AWS DevOps Agent 实战：如何使用生成式 AI 加速故障演练
 
-## Ch11.300 AWS DevOps Agent 实战：如何使用生成式 AI 加速故障演练
-
 > 📊 Level ⭐⭐ | 3.2KB | `entities/aws-devops-agent-实战如何使用生成式-ai-加速故障演练.md`
 
 # AWS DevOps Agent 实战：如何使用生成式 AI 加速故障演练

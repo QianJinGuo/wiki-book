@@ -1,7 +1,5 @@
 # 拆解OpenClaw架构（七）：安全漏洞，阿喀琉斯之踵
 
-## Ch01.1192 拆解OpenClaw架构（七）：安全漏洞，阿喀琉斯之踵
-
 > 📊 Level ⭐⭐ | 5.0KB | `entities/拆解openclaw架构七安全漏洞阿喀琉斯之踵.md`
 
 # 拆解OpenClaw架构（七）：安全漏洞，阿喀琉斯之踵

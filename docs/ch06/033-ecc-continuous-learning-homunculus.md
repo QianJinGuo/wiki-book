@@ -1,7 +1,5 @@
 # ECC Continuous Learning：从工具调用轨迹到本能沉淀的持续学习闭环（homunculus 观察式本能提取）
 
-## Ch06.033 ECC Continuous Learning：从工具调用轨迹到本能沉淀的持续学习闭环（homunculus 观察式本能提取）
-
 > 📊 Level ⭐⭐ | 6.6KB | `entities/ecc-continuous-learning-homunculus-observation-instinct-aliexpress-2026.md`
 
 # ECC Continuous Learning：从工具调用轨迹到本能沉淀的持续学习闭环

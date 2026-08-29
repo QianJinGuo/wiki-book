@@ -1,7 +1,5 @@
 # Tsinghua AIR AIM：AI 数学家从解题到参与前沿研究的协同工作流
 
-## Ch04.746 Tsinghua AIR AIM：AI 数学家从解题到参与前沿研究的协同工作流
-
 > 📊 Level ⭐⭐ | 3.8KB | `entities/tsinghua-air-aim-ai-mathematician.md`
 
 # Tsinghua AIR AIM：AI 数学家从解题到参与前沿研究的协同工作流

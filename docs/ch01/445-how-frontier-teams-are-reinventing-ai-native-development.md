@@ -1,7 +1,5 @@
 # How Frontier Teams Are Reinventing AI-Native Development
 
-## Ch01.445 How Frontier Teams Are Reinventing AI-Native Development
-
 > 📊 Level ⭐⭐ | 15.6KB | `entities/how-frontier-teams-are-reinventing-ai-native-development.md`
 
 # How Frontier Teams Are Reinventing AI-Native Development

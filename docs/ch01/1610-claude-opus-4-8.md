@@ -1,7 +1,5 @@
 # Claude Opus 4.8 系统卡片深度分析
 
-## Ch01.1610 Claude Opus 4.8 系统卡片深度分析
-
 > 📊 Level ⭐⭐⭐⭐ | 7.5KB | `entities/claude-opus-48-system-card-analysis.md`
 
 # Claude Opus 4.8 系统卡片深度分析

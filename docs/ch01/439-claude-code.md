@@ -1,7 +1,5 @@
 # Claude Code 大型代码库最佳实践
 
-## Ch01.439 Claude Code 大型代码库最佳实践
-
 > 📊 Level ⭐⭐ | 16.3KB | `entities/claude-code-best-practices.md`
 
 ## 核心导航机制

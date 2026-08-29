@@ -1,7 +1,5 @@
 # 用 Kiro CLI 自动搭建 FluentBit 日志采集方案：两种 EKS 埋点数据落地 S3 Parquet 的实战对比 | 亚马逊AWS官方博客
 
-## Ch11.264 用 Kiro CLI 自动搭建 FluentBit 日志采集方案：两种 EKS 埋点数据落地 S3 Parquet 的实战对比 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 4.4KB | `entities/kiro-cli-fluentbit-logging-solution-eks-s3-parquet-comparison.md`
 
 ## 概述

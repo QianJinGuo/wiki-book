@@ -1,7 +1,5 @@
 # 大模型推理模型DoS攻击——浙大阿里HGA方法
 
-## Ch01.1607 大模型推理模型DoS攻击——浙大阿里HGA方法
-
 > 📊 Level ⭐⭐⭐⭐ | 7.6KB | `entities/hga-reasoning-model-dos-zheda-alibaba-2026.md`
 
 # 大模型推理模型DoS攻击——浙大阿里HGA方法

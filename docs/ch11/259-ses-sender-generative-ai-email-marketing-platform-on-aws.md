@@ -1,7 +1,5 @@
 # SES Sender: Generative AI Email Marketing Platform on AWS
 
-## Ch11.259 SES Sender: Generative AI Email Marketing Platform on AWS
-
 > 📊 Level ⭐⭐ | 4.1KB | `entities/ses-sender-generative-ai-email-marketing-aws.md`
 
 # SES Sender: Generative AI Email Marketing Platform on AWS

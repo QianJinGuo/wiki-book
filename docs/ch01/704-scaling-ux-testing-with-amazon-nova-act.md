@@ -1,7 +1,5 @@
 # Scaling UX Testing with Amazon Nova Act
 
-## Ch01.704 Scaling UX Testing with Amazon Nova Act
-
 > 📊 Level ⭐⭐ | 8.8KB | `entities/scaling-ux-testing-with-amazon-nova-act-a-new-approach-to-us.md`
 
 # Scaling UX Testing with Amazon Nova Act

@@ -1,7 +1,5 @@
 # 投毒！Meta竟雇外包，大规模给ChatGPT和Gemini下套
 
-## Ch01.1638 投毒！Meta竟雇外包，大规模给ChatGPT和Gemini下套
-
 > 📊 Level ⭐⭐⭐⭐⭐ | 6.4KB | `entities/投毒meta竟雇外包大规模给chatgpt和gemini下套.md`
 
 # 投毒！Meta竟雇外包，大规模给ChatGPT和Gemini下套

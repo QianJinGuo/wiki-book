@@ -1,7 +1,5 @@
 # 南洋理工开源 IDEAgent：兼顾idea的质量和多样性，超最强基线 3.89 倍
 
-## Ch04.042 南洋理工开源 IDEAgent：兼顾idea的质量和多样性，超最强基线 3.89 倍
-
 > 📊 Level ⭐ | 0.9KB | `entities/ideagent-research-idea-generation-hyman-2026.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ideagent-research-idea-generation-hyman-2026.md)

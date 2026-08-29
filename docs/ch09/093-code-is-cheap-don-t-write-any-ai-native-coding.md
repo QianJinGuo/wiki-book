@@ -1,7 +1,5 @@
 # Code is cheap. Don't write any.——AI Native，程序员如何提升五倍coding效率
 
-## Ch09.093 Code is cheap. Don't write any.——AI Native，程序员如何提升五倍coding效率
-
 > 📊 Level ⭐⭐ | 8.9KB | `entities/code-is-cheap-ai-native-five-times-efficiency-2026.md`
 
 # Code is cheap. Don't write any.——AI Native，程序员如何提升五倍coding效率

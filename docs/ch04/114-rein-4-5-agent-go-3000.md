@@ -1,7 +1,5 @@
 # Rein：4 模块 + 5 类型边界防止 agent.go 膨胀到 3000 行
 
-## Ch04.114 Rein：4 模块 + 5 类型边界防止 agent.go 膨胀到 3000 行
-
 > 📊 Level ⭐⭐ | 22.6KB | `entities/rein-go-agent-4-modules-5-type-boundaries.md`
 
 # Rein：4 模块 + 5 类型边界防止 agent.go 膨胀到 3000 行

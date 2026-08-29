@@ -1,7 +1,5 @@
 # Language Model Harnesses as Compositional Generalizers (Alex Zhang, 2026)
 
-## Ch05.122 Language Model Harnesses as Compositional Generalizers (Alex Zhang, 2026)
-
 > 📊 Level ⭐⭐ | 3.7KB | `entities/language-model-harnesses-compositional-generalizers-alex-zhang-2026.md`
 
 # Language Model Harnesses as Compositional Generalizers (Alex Zhang, 2026)

@@ -1,7 +1,5 @@
 # The Unsustainable Subsidy
 
-## Ch01.999 The Unsustainable Subsidy
-
 > 📊 Level ⭐⭐ | 6.5KB | `entities/tomtunguz-ai-model-inflation.md`
 
 ## 核心要点

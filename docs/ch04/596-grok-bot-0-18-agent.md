@@ -1,7 +1,5 @@
 # Grok Bot 0.18 运行时重建：Agent 的五层运行时与可靠性协议
 
-## Ch04.596 Grok Bot 0.18 运行时重建：Agent 的五层运行时与可靠性协议
-
 > 📊 Level ⭐⭐ | 6.2KB | `entities/grok-bot-agent-runtime-five-layer-vibecoder-2026.md`
 
 # Grok Bot 0.18 运行时重建：Agent 的五层运行时与可靠性协议

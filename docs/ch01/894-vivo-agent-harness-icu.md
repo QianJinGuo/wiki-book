@@ -1,7 +1,5 @@
 # vivo Agent 系统分析：大模型是大脑不是马，Harness 是 ICU 不是马鞍
 
-## Ch01.894 vivo Agent 系统分析：大模型是大脑不是马，Harness 是 ICU 不是马鞍
-
 > 📊 Level ⭐⭐ | 7.2KB | `entities/vivo-agent-brain-body-icu-harness-evolutionary-framework-2026.md`
 
 # vivo Agent 系统分析：大模型是大脑不是马，Harness 是 ICU 不是马鞍

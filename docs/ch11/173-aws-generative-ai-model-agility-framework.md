@@ -1,7 +1,5 @@
 # AWS Generative AI Model Agility Framework
 
-## Ch11.173 AWS Generative AI Model Agility Framework
-
 > 📊 Level ⭐⭐ | 7.7KB | `entities/aws-generative-ai-model-agility-framework.md`
 
 # AWS Model Agility: 6步LLM跨代际迁移框架

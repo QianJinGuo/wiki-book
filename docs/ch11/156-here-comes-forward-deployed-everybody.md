@@ -1,7 +1,5 @@
 # Here Comes (Forward Deployed) Everybody
 
-## Ch11.156 Here Comes (Forward Deployed) Everybody
-
 > 📊 Level ⭐⭐ | 7.6KB | `entities/here-comes-forward-deployed-everybody.md`
 
 

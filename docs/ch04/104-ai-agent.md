@@ -1,7 +1,5 @@
 # AI伴行技术解析：基于空间智能的高可用Agent架构实践
 
-## Ch04.104 AI伴行技术解析：基于空间智能的高可用Agent架构实践
-
 > 📊 Level ⭐⭐ | 25.3KB | `entities/gaode-ai-companion-agent-architecture.md`
 
 ## 一、引言与背景

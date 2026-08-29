@@ -1,7 +1,5 @@
 # 从数据库到 Agent 原生数据底座，火山引擎发布 Agentic 全栈数据管理服务
 
-## Ch04.024 从数据库到 Agent 原生数据底座，火山引擎发布 Agentic 全栈数据管理服务
-
 > 📊 Level ⭐ | 3.9KB | `entities/从数据库到-agent-原生数据底座火山引擎发布-agentic-全栈数据管理服务.md`
 
 # 从数据库到 Agent 原生数据底座，火山引擎发布 Agentic 全栈数据管理服务

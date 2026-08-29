@@ -1,7 +1,5 @@
 # Cyberscammers are bypassing banks’ security with illicit tools sold on Telegram
 
-## Ch12.125 Cyberscammers are bypassing banks’ security with illicit tools sold on Telegram
-
 > 📊 Level ⭐⭐ | 3.3KB | `entities/2026-04-15.md`
 
 # Cyberscammers are bypassing banks’ security with illicit tools sold on Telegram

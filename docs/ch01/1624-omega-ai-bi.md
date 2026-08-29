@@ -1,7 +1,5 @@
 # 腾讯Omega：下一代“AI BI”的答案？
 
-## Ch01.1624 腾讯Omega：下一代“AI BI”的答案？
-
 > 📊 Level ⭐⭐⭐⭐ | 2.6KB | `entities/腾讯omega下一代ai-bi的答案.md`
 
 # 腾讯Omega：下一代“AI BI”的答案？

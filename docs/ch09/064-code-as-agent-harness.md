@@ -1,7 +1,5 @@
 # Code as Agent Harness 综述
 
-## Ch09.064 Code as Agent Harness 综述
-
 > 📊 Level ⭐⭐ | 11.7KB | `entities/code-as-agent-harness-survey.md`
 
 ## 核心框架

@@ -1,7 +1,5 @@
 # 怎样才算是好的Agent记忆系统？
 
-## Ch01.1599 怎样才算是好的Agent记忆系统？
-
 > 📊 Level ⭐⭐⭐ | 0.9KB | `entities/what-makes-good-agent-memory-system-yuanrunzi-2026.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/what-makes-good-agent-memory-system-yuanrunzi-2026.md)

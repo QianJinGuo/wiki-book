@@ -1,7 +1,5 @@
 # 刚刚，翁荔博客又上新：通过Harness工程实现AI自我提升
 
-## Ch05.062 刚刚，翁荔博客又上新：通过Harness工程实现AI自我提升
-
 > 📊 Level ⭐⭐ | 10.1KB | `entities/刚刚翁荔博客又上新通过harness工程实现ai自我提升.md`
 
 # 刚刚，翁荔博客又上新：通过Harness工程实现AI自我提升

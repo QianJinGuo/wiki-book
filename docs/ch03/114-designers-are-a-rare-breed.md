@@ -1,7 +1,5 @@
 # Designers are a rare breed
 
-## Ch03.114 Designers are a rare breed
-
 > 📊 Level ⭐⭐ | 6.9KB | `entities/designers-are-a-rare-breed.md`
 
 # Designers are a rare breed

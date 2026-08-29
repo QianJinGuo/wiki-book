@@ -1,7 +1,5 @@
 # Agent的自演进，被刚刚开源的AReaL 2.0按下了加速键
 
-## Ch04.833 Agent的自演进，被刚刚开源的AReaL 2.0按下了加速键
-
 > 📊 Level ⭐⭐⭐ | 10.5KB | `entities/agent的自演进被刚刚开源的areal-20按下了加速键.md`
 
 # Agent的自演进，被刚刚开源的AReaL 2.0按下了加速键

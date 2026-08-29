@@ -1,7 +1,5 @@
 # 6 Months to Live for Open Models
 
-## Ch01.1631 6 Months to Live for Open Models
-
 > 📊 Level ⭐⭐⭐⭐⭐ | 9.0KB | `entities/6-months-to-live-for-open-models.md`
 
 # 6 Months to Live for Open Models

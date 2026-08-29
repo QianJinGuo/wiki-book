@@ -1,7 +1,5 @@
 # Loop 不够用了？AI 工程下一站叫 Graph
 
-## Ch01.317 Loop 不够用了？AI 工程下一站叫 Graph
-
 > 📊 Level ⭐ | 0.7KB | `entities/graph-engineering-next-stop-frontendq-winty-2026.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/graph-engineering-next-stop-frontendq-winty-2026.md)

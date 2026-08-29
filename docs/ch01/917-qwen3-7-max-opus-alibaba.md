@@ -1,7 +1,5 @@
 # Qwen3.7-Max Opus 级体验 - Alibaba 旗舰模型长程任务实测
 
-## Ch01.917 Qwen3.7-Max Opus 级体验 - Alibaba 旗舰模型长程任务实测
-
 > 📊 Level ⭐⭐ | 7.0KB | `entities/qwen3.7-max-opus-level-experience-code-secret-garden.md`
 
 # Qwen3.7-Max Opus 级体验 - Alibaba 旗舰模型长程任务实测

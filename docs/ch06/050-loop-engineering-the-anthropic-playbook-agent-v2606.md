@@ -1,7 +1,5 @@
 # Loop Engineering: The Anthropic Playbook — 设计替你提示 Agent 的系统（花叔橙皮书 v260615 conference 重排版）
 
-## Ch06.050 Loop Engineering: The Anthropic Playbook — 设计替你提示 Agent 的系统（花叔橙皮书 v260615 conference 重排版）
-
 > 📊 Level ⭐⭐ | 1.7KB | `entities/loop-engineering-anthropic-playbook-orange-book-v260615-2026.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-anthropic-playbook-orange-book-v260615-2026.md)

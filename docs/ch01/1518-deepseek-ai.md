@@ -1,7 +1,5 @@
 # DeepSeek被曝自研AI推理芯片
 
-## Ch01.1518 DeepSeek被曝自研AI推理芯片
-
 > 📊 Level ⭐⭐⭐ | 9.3KB | `entities/deepseek-自研ai推理芯片-路透社-2026-07-08.md`
 
 # DeepSeek被曝自研AI推理芯片

@@ -1,7 +1,5 @@
 # Fundamental’s Large Tabular Model NEXUS is now available on Amazon SageMaker JumpStart
 
-## Ch01.415 Fundamental’s Large Tabular Model NEXUS is now available on Amazon SageMaker JumpStart
-
 > 📊 Level ⭐⭐ | 17.9KB | `entities/aws-fundamentals-large-tabular-model-nexus-is-now-available-on-amazon-sagemaker-jump.md`
 
 # Fundamental’s Large Tabular Model NEXUS is now available on Amazon SageMaker JumpStart

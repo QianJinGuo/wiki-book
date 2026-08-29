@@ -1,7 +1,5 @@
 # Crypto Inflows Hit $858M as CLARITY Lifts Sentiment
 
-## Ch01.1200 Crypto Inflows Hit $858M as CLARITY Lifts Sentiment
-
 > 📊 Level ⭐⭐ | 5.0KB | `entities/crypto-funds-six-week-inflow-streak-4-9-billion-coinshares.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/crypto-funds-six-week-inflow-streak-4-9-billion-coinshares.md)

@@ -1,7 +1,5 @@
 # Loop Engineering，应该赞成还是反对？
 
-## Ch05.125 Loop Engineering，应该赞成还是反对？
-
 > 📊 Level ⭐⭐ | 3.6KB | `entities/loop-engineering应该赞成还是反对.md`
 
 ## 摘要

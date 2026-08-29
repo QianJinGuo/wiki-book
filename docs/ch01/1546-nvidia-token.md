@@ -1,7 +1,5 @@
 # NVIDIA 推理软件栈：如何助力实现更低 Token 成本
 
-## Ch01.1546 NVIDIA 推理软件栈：如何助力实现更低 Token 成本
-
 > 📊 Level ⭐⭐⭐ | 7.0KB | `entities/nvidia-推理软件栈-如何助力实现更低-token-成本.md`
 
 # NVIDIA 推理软件栈：如何助力实现更低 Token 成本

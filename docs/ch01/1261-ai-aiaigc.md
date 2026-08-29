@@ -1,7 +1,5 @@
 # 快来和ai实战派一起aiaigc峰会最新嘉宾阵容来了
 
-## Ch01.1261 快来和ai实战派一起aiaigc峰会最新嘉宾阵容来了
-
 > 📊 Level ⭐⭐ | 4.4KB | `entities/快来和ai实战派一起aiaigc峰会最新嘉宾阵容来了.md`
 
 ## 摘录

@@ -1,7 +1,5 @@
 # Anthropic创始人行动手册 — 花叔x Claude Code译本
 
-## Ch01.024 Anthropic创始人行动手册 — 花叔x Claude Code译本
-
 > 📊 Level ⭐ | 9.7KB | `entities/anthropic-founders-playbook-huashu-2026.md`
 
 ## 核心框架

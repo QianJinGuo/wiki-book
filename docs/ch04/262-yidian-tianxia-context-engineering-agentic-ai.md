@@ -1,7 +1,5 @@
 # Yidian Tianxia Context Engineering Agentic AI
 
-## Ch04.262 Yidian Tianxia Context Engineering Agentic AI
-
 > 📊 Level ⭐⭐ | 11.7KB | `entities/yidian-tianxia-context-engineering-agentic-ai.md`
 
 # 易点天下 Context Engineering — 企业级 Agentic AI 工程化实践

@@ -1,7 +1,5 @@
 # 深入理解 AI Agent 时代的驾驭工程 Harness Engineerin 技术极简主义
 
-## Ch01.246 深入理解 AI Agent 时代的驾驭工程 Harness Engineerin 技术极简主义
-
 > 📊 Level ⭐ | 0.8KB | `entities/2026-06-17-深入理解-AI-Agent-时代的驾驭工程-Harness-Engineerin-技术极简主义.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-06-17-深入理解-AI-Agent-时代的驾驭工程-Harness-Engineerin-技术极简主义.md)

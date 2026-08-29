@@ -1,7 +1,5 @@
 # Meta Brain2Qwerty v2: 非侵入式脑机接口解码，LLM微调+AI Agent优化，代码全开源
 
-## Ch01.898 Meta Brain2Qwerty v2: 非侵入式脑机接口解码，LLM微调+AI Agent优化，代码全开源
-
 > 📊 Level ⭐⭐ | 7.2KB | `entities/meta-brain2qwerty-v2-bci-2026.md`
 
 # Meta Brain2Qwerty v2: 非侵入式脑机接口解码，LLM微调+AI Agent优化，代码全开源

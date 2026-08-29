@@ -1,7 +1,5 @@
 # 从 pi-main 源码拆解：顶尖 AI Agent 的工程设计（17 维度全解）
 
-## Ch04.233 从 pi-main 源码拆解：顶尖 AI Agent 的工程设计（17 维度全解）
-
 > 📊 Level ⭐⭐ | 12.3KB | `entities/pi-main-agent-engineering-17-dimensions.md`
 
 [[raw/articles/pi-main-agent-engineering-17-dimensions.md]

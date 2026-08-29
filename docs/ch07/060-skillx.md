@@ -1,7 +1,5 @@
 # SkillX — 层次化技能知识库
 
-## Ch07.060 SkillX — 层次化技能知识库
-
 > 📊 Level ⭐⭐ | 7.5KB | `entities/skillx-hierarchical-skill-library.md`
 
 ## 概述

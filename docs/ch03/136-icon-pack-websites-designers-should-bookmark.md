@@ -1,7 +1,5 @@
 # Icon Pack Websites Designers Should Bookmark
 
-## Ch03.136 Icon Pack Websites Designers Should Bookmark
-
 > 📊 Level ⭐⭐ | 3.9KB | `entities/icon-pack-websites-designers-should-bookmark.md`
 
 ## Summary

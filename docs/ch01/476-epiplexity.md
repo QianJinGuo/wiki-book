@@ -1,7 +1,5 @@
 # Epiplexity：有限算力信息论
 
-## Ch01.476 Epiplexity：有限算力信息论
-
 > 📊 Level ⭐⭐ | 14.1KB | `entities/epiplexity-finite-compute-information-theory.md`
 
 ## 核心定义

@@ -1,7 +1,5 @@
 # Qoder 发布团队知识引擎：组织级知识记忆是 Harness 自进化的重要组件
 
-## Ch06.041 Qoder 发布团队知识引擎：组织级知识记忆是 Harness 自进化的重要组件
-
 > 📊 Level ⭐⭐ | 4.2KB | `entities/qoder-team-knowledge-engine-compiled-knowledge.md`
 
 # Qoder 发布团队知识引擎：组织级知识记忆是 Harness 自进化的重要组件

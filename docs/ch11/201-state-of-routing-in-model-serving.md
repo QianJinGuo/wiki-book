@@ -1,7 +1,5 @@
 # State of Routing in Model Serving
 
-## Ch11.201 State of Routing in Model Serving
-
 > 📊 Level ⭐⭐ | 6.8KB | `entities/state-of-routing-in-model-serving.md`
 
 # State of Routing in Model Serving

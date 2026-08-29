@@ -1,7 +1,5 @@
 # 使用 lm evaluation harness 评估 amazon bedrock 模型以 humaneval 为例
 
-## Ch01.804 使用 lm evaluation harness 评估 amazon bedrock 模型以 humaneval 为例
-
 > 📊 Level ⭐⭐ | 8.0KB | `entities/使用-lm-evaluation-harness-评估-amazon-bedrock-模型以-humaneval-为例.md`
 
 # 使用 lm evaluation harness 评估 amazon bedrock 模型以 humaneval 为例

@@ -1,7 +1,5 @@
 # 构建 AI 时代的知识底座 直播数据 LLM Wiki 实践 阿里云开发者
 
-## Ch01.250 构建 AI 时代的知识底座 直播数据 LLM Wiki 实践 阿里云开发者
-
 > 📊 Level ⭐ | 0.8KB | `entities/2026-06-26-构建-AI-时代的知识底座-直播数据-LLM-Wiki-实践-阿里云开发者.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-06-26-构建-AI-时代的知识底座-直播数据-LLM-Wiki-实践-阿里云开发者.md)

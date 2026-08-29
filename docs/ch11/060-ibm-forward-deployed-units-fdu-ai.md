@@ -1,7 +1,5 @@
 # IBM Forward Deployed Units (FDU) AI 部署模型
 
-## Ch11.060 IBM Forward Deployed Units (FDU) AI 部署模型
-
 > 📊 Level ⭐⭐ | 12.8KB | `entities/ibm-forward-deployed-units-ai-deployment.md`
 
 ## 背景：企业 AI 交付的痛点

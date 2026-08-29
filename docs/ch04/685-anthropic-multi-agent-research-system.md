@@ -1,7 +1,5 @@
 # Anthropic Multi Agent Research System
 
-## Ch04.685 Anthropic Multi Agent Research System
-
 > 📊 Level ⭐⭐ | 4.7KB | `entities/anthropic-multi-agent-research-system.md`
 
 # Anthropic Multi-Agent Research System

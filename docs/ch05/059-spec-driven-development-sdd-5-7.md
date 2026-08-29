@@ -1,7 +1,5 @@
 # Spec-Driven Development (SDD) 全面总结：从5人7天案例到方法论全集
 
-## Ch05.059 Spec-Driven Development (SDD) 全面总结：从5人7天案例到方法论全集
-
 > 📊 Level ⭐⭐ | 10.4KB | `entities/sdd-spec-driven-development-summary-qoder.md`
 
 # Spec-Driven Development (SDD) 全面总结：从5人7天案例到方法论全集

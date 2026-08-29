@@ -1,7 +1,5 @@
 # Ethan Mollick: Claude Code and What Comes Next (Practitioner View)
 
-## Ch09.030 Ethan Mollick: Claude Code and What Comes Next (Practitioner View)
-
 > 📊 Level ⭐⭐ | 17.2KB | `entities/oneusefulthing-claude-code-what-comes-next.md`
 
 # Ethan Mollick: Claude Code and What Comes Next (Practitioner View)

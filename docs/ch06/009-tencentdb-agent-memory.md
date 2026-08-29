@@ -1,7 +1,5 @@
 # TencentDB Agent Memory：符号化短期记忆+分层式长期记忆
 
-## Ch06.009 TencentDB Agent Memory：符号化短期记忆+分层式长期记忆
-
 > 📊 Level ⭐⭐ | 17.8KB | `entities/tencentdb-agent-memory-hierarchical.md`
 
 # TencentDB Agent Memory：符号化短期记忆+分层式长期记忆

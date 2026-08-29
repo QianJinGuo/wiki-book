@@ -1,7 +1,5 @@
 # dig.bench — 文本游戏科学发现智能体基准
 
-## Ch05.130 dig.bench — 文本游戏科学发现智能体基准
-
 > 📊 Level ⭐⭐ | 2.1KB | `entities/digbench-scientific-discovery-text-games-agent-benchmark.md`
 
 # dig.bench — 文本游戏科学发现智能体基准

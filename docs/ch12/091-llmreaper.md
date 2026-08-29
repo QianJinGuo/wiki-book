@@ -1,7 +1,5 @@
 # LLMReaper: 浏览器扩展的对话窃取攻击
 
-## Ch12.091 LLMReaper: 浏览器扩展的对话窃取攻击
-
 > 📊 Level ⭐⭐ | 5.5KB | `entities/llmreaper-dom-conversation-exfiltration.md`
 
 # LLMReaper: 浏览器扩展的对话窃取攻击

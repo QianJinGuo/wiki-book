@@ -1,7 +1,5 @@
 # Building Blocks for Foundation Model Training and Inference on AWS
 
-## Ch11.122 Building Blocks for Foundation Model Training and Inference on AWS
-
 > 📊 Level ⭐⭐ | 9.3KB | `entities/building-blocks-for-foundation-model-training-and-inference-on-aws.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/building-blocks-for-foundation-model-training-and-inference-on-aws.md)

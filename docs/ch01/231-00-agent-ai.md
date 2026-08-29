@@ -1,7 +1,5 @@
 # 00后下场整顿Agent 啥都不学就能用好AI 这才是正确打开方式 量子位
 
-## Ch01.231 00后下场整顿Agent 啥都不学就能用好AI 这才是正确打开方式 量子位
-
 > 📊 Level ⭐ | 0.9KB | `entities/2026-05-07-00后下场整顿Agent-啥都不学就能用好AI-这才是正确打开方式-量子位.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-05-07-00后下场整顿Agent-啥都不学就能用好AI-这才是正确打开方式-量子位.md)

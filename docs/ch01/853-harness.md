@@ -1,7 +1,5 @@
 # Harness 实践：将任何文字编辑成精美的文章
 
-## Ch01.853 Harness 实践：将任何文字编辑成精美的文章
-
 > 📊 Level ⭐⭐ | 7.6KB | `entities/harness-实践将任何文字编辑成精美的文章.md`
 
 # Harness 实践：将任何文字编辑成精美的文章

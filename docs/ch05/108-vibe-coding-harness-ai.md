@@ -1,7 +1,5 @@
 # 从Vibe Coding到Harness—— 一套大仓AI工程化实战
 
-## Ch05.108 从Vibe Coding到Harness—— 一套大仓AI工程化实战
-
 > 📊 Level ⭐⭐ | 5.2KB | `entities/从vibe-coding到harness-一套大仓ai工程化实战.md`
 
 # 从Vibe Coding到Harness—— 一套大仓AI工程化实战

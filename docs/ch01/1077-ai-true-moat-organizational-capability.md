@@ -1,7 +1,5 @@
 # Ai True Moat Organizational Capability
 
-## Ch01.1077 Ai True Moat Organizational Capability
-
 > 📊 Level ⭐⭐ | 5.8KB | `entities/ai-true-moat-organizational-capability.md`
 
 # AI 时代的真正护城河：组织能力

@@ -1,7 +1,5 @@
 # How I Cut an AI Agent's Token Use by 94% — 将 Skill 从自然语言编译为确定性代码
 
-## Ch05.066 How I Cut an AI Agent's Token Use by 94% — 将 Skill 从自然语言编译为确定性代码
-
 > 📊 Level ⭐⭐ | 9.5KB | `entities/vivekhaldar-compiling-agent-skill-token-cut-94pct-2026.md`
 
 # How I Cut an AI Agent's Token Use by 94% — 将 Skill 从自然语言编译为确定性代码

@@ -1,7 +1,5 @@
 # NVIDIA 开源 Molt：8600 行 RL 代码训万亿 MoE 模型
 
-## Ch01.271 NVIDIA 开源 Molt：8600 行 RL 代码训万亿 MoE 模型
-
 > 📊 Level ⭐ | 0.8KB | `entities/nvidia-molt-agentic-rl-framework-8k-lines.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-molt-agentic-rl-framework-8k-lines.md)

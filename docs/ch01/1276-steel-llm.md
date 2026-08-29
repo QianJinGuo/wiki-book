@@ -1,7 +1,5 @@
 # 【从零训练Steel-LLM】微调阶段优化
 
-## Ch01.1276 【从零训练Steel-LLM】微调阶段优化
-
 > 📊 Level ⭐⭐ | 4.3KB | `entities/从零训练steel-llm微调阶段优化.md`
 
 # 【从零训练Steel-LLM】微调阶段优化

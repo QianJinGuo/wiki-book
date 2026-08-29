@@ -1,7 +1,5 @@
 # Skills Anthropic Openai Comparison Frontend Design
 
-## Ch01.974 Skills Anthropic Openai Comparison Frontend Design
-
 > 📊 Level ⭐⭐ | 6.7KB | `entities/skills-anthropic-openai-comparison-frontend-design.md`
 
 # Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异

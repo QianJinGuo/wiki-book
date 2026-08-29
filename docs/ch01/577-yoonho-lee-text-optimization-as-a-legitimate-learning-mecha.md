@@ -1,7 +1,5 @@
 # Yoonho Lee: Text Optimization as a Legitimate Learning Mechanism
 
-## Ch01.577 Yoonho Lee: Text Optimization as a Legitimate Learning Mechanism
-
 > 📊 Level ⭐⭐ | 10.8KB | `entities/yoonho-lee-text-optimization-as-legitimate-learning-mechanism.md`
 
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/yoonholee-text-optimization-as-legitimate-learning-mechanism.md)

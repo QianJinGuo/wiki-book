@@ -1,7 +1,5 @@
 # AgentScope Java 2.0：企业级分布式 Harness 框架
 
-## Ch11.276 AgentScope Java 2.0：企业级分布式 Harness 框架
-
 > 📊 Level ⭐⭐⭐ | 24.3KB | `entities/agentscope-java-2.0-enterprise-distributed-harness.md`
 
 # AgentScope Java 2.0：企业级分布式 Harness 框架

@@ -1,7 +1,5 @@
 # Structured Memory Filtering with Metadata in AgentCore Memory
 
-## Ch04.783 Structured Memory Filtering with Metadata in AgentCore Memory
-
 > 📊 Level ⭐⭐ | 3.3KB | `entities/structured-memory-filtering-metadata-agentcore-memory.md`
 
 # Structured Memory Filtering with Metadata in AgentCore Memory

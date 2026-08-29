@@ -1,7 +1,5 @@
 # Thinkst Package Proxy: Supply Chain Safety Checks
 
-## Ch12.075 Thinkst Package Proxy: Supply Chain Safety Checks
-
 > 📊 Level ⭐⭐ | 7.1KB | `entities/thinkst-package-proxy-supply-chain-security.md`
 
 # Thinkst Package Proxy: Supply Chain Safety Checks

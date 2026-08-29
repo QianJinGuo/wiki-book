@@ -1,7 +1,5 @@
 # 百炼网关实践：用 RocketMQ LiteTopic 让限流比降了 10 倍
 
-## Ch11.130 百炼网关实践：用 RocketMQ LiteTopic 让限流比降了 10 倍
-
 > 📊 Level ⭐⭐ | 8.8KB | `entities/百炼网关实践用-rocketmq-litetopic-让限流比降了-10-倍.md`
 
 # 百炼网关实践：用 RocketMQ LiteTopic 让限流比降了 10 倍

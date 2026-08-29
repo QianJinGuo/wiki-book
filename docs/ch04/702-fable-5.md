@@ -1,7 +1,5 @@
 # Fable 5 使用硬核指南：搞定未知盲区
 
-## Ch04.702 Fable 5 使用硬核指南：搞定未知盲区
-
 > 📊 Level ⭐⭐ | 4.4KB | `entities/fable-5-field-guide-unknowns.md`
 
 > Anthropic Claude Code 团队成员 Thariq 撰写的 Fable 5 使用指南，核心观点是「地图不等于疆域」，提出四类未知数框架和一套在实施前、中、后不断发现未知数的迭代工作流。

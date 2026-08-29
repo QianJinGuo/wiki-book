@@ -1,7 +1,5 @@
 # Claude Code SKILL.md 写作指南
 
-## Ch07.026 Claude Code SKILL.md 写作指南
-
 > 📊 Level ⭐⭐ | 11.3KB | `entities/claude-code-skill-writing-guide.md`
 
 # Claude Code SKILL.md 写作指南

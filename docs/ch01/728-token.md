@@ -1,7 +1,5 @@
 # Token不经济
 
-## Ch01.728 Token不经济
-
 > 📊 Level ⭐⭐ | 8.6KB | `entities/token不经济.md`
 
 # Token不经济

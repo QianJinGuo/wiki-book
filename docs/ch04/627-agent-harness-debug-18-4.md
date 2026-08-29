@@ -1,7 +1,5 @@
 # Agent Harness 开始自动修复：系统级 Debug 最高提升 18.4 点
 
-## Ch04.627 Agent Harness 开始自动修复：系统级 Debug 最高提升 18.4 点
-
 > 📊 Level ⭐⭐ | 5.7KB | `entities/agent-harness-auto-repair-debug-184.md`
 
 # Agent Harness 开始自动修复：系统级 Debug 最高提升 18.4 点

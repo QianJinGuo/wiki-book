@@ -1,7 +1,5 @@
 # 声音基座模型怎么做？Xiaomi Dasheng：8 卡起步的 AI 工程实践
 
-## Ch01.1554 声音基座模型怎么做？Xiaomi Dasheng：8 卡起步的 AI 工程实践
-
 > 📊 Level ⭐⭐⭐ | 6.4KB | `entities/xiaomi-dasheng-声音基座模型-8卡工程实践.md`
 
 # Xiaomi Dasheng：一台 8 卡机器起步的声音基座模型工程实践

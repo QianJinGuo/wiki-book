@@ -1,7 +1,5 @@
 # AI 网关 FinOps 最佳实践：如何为不同消费者控制 AI 调用预算
 
-## Ch11.009 AI 网关 FinOps 最佳实践：如何为不同消费者控制 AI 调用预算
-
 > 📊 Level ⭐ | 1.0KB | `entities/aliyun-ai-gateway-finops-budget-control-2026-07-20.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aliyun-ai-gateway-finops-budget-control-2026-07-20.md)

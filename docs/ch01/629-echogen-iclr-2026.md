@@ -1,7 +1,5 @@
 # EchoGen — ICLR 2026 首个基于视觉自回归模型的前馈式主体驱动图像生成
 
-## Ch01.629 EchoGen — ICLR 2026 首个基于视觉自回归模型的前馈式主体驱动图像生成
-
 > 📊 Level ⭐⭐ | 9.9KB | `entities/echogen-var-subject-driven-generation-iclr2026.md`
 
 # EchoGen — ICLR 2026 首个基于视觉自回归(VAR)模型的前馈式主体驱动图像生成

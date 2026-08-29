@@ -1,7 +1,5 @@
 # Scaling medical content review at Flo Health with Amazon Bedrock
 
-## Ch11.288 Scaling medical content review at Flo Health with Amazon Bedrock
-
 > 📊 Level ⭐⭐ | 1.6KB | `entities/flo-health-medical-content-review-bedrock.md`
 
 # Scaling medical content review at Flo Health with Amazon Bedrock – Part 2

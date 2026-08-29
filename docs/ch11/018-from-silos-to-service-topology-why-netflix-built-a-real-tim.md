@@ -1,7 +1,5 @@
 # From silos to service topology: why Netflix built a real-time architecture
 
-## Ch11.018 From silos to service topology: why Netflix built a real-time architecture
-
 > 📊 Level ⭐⭐ | 33.1KB | `entities/netflix-real-time-service-topology.md`
 
 # From silos to service topology: why Netflix built a real-time architecture

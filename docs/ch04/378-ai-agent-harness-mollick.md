@@ -1,7 +1,5 @@
 # AI Agent 时代选型指南：模型·应用· Harness（Mollick）
 
-## Ch04.378 AI Agent 时代选型指南：模型·应用· Harness（Mollick）
-
 > 📊 Level ⭐⭐ | 9.1KB | `entities/guide-ai-agents-models-apps-harnesses-mollick.md`
 
 # AI Agent 时代选型指南：模型·应用· Harness（Mollick）

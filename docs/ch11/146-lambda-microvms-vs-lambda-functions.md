@@ -1,7 +1,5 @@
 # Lambda MicroVMs vs Lambda Functions：全方位深度对比
 
-## Ch11.146 Lambda MicroVMs vs Lambda Functions：全方位深度对比
-
 > 📊 Level ⭐⭐ | 8.4KB | `entities/lambda-microvms-vs-lambda-functions全方位深度对比.md`
 
 # Lambda MicroVMs vs Lambda Functions：全方位深度对比

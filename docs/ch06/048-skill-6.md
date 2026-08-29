@@ -1,7 +1,5 @@
 # Skill 编排的 6 种依赖关系
 
-## Ch06.048 Skill 编排的 6 种依赖关系
-
 > 📊 Level ⭐⭐ | 3.0KB | `entities/skill-orchestration-6-dependencies.md`
 
 # Skill 编排的 6 种依赖关系

@@ -1,7 +1,5 @@
 # 竞赛编程Agent进入全球前十！南大、清华新模型CF rating超3500
 
-## Ch04.765 竞赛编程Agent进入全球前十！南大、清华新模型CF rating超3500
-
 > 📊 Level ⭐⭐ | 3.5KB | `entities/竞赛编程agent进入全球前十南大清华新模型cf-rating超3500.md`
 
 # 竞赛编程Agent进入全球前十！南大、清华新模型CF rating超3500

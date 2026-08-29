@@ -1,7 +1,5 @@
 # Harness Engineering 系统性解读
 
-## Ch05.041 Harness Engineering 系统性解读
-
 > 📊 Level ⭐⭐ | 15.0KB | `entities/harness-engineering-systematic-explainer.md`
 
 ## 核心主线

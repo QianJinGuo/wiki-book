@@ -1,7 +1,5 @@
 # Matt Van Horn 的 22 个 Claude Code 黑客技巧：让 AI 写 plan.md 但不读 plan.md
 
-## Ch09.049 Matt Van Horn 的 22 个 Claude Code 黑客技巧：让 AI 写 plan.md 但不读 plan.md
-
 > 📊 Level ⭐⭐ | 13.7KB | `entities/matt-van-horn-claude-code-workflow-philosophy.md`
 
 ## 摘要

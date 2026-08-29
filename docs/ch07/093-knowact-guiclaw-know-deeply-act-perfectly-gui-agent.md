@@ -1,7 +1,5 @@
 # KnowAct-GUIClaw — 哈工大「Know Deeply, Act Perfectly」自进化 GUI Agent
 
-## Ch07.093 KnowAct-GUIClaw — 哈工大「Know Deeply, Act Perfectly」自进化 GUI Agent
-
 > 📊 Level ⭐⭐ | 2.3KB | `entities/knowact-guiclaw-self-evolving-gui-agent-harbin-hitsz.md`
 
 # KnowAct-GUIClaw — 哈工大「Know Deeply, Act Perfectly」自进化 GUI Agent

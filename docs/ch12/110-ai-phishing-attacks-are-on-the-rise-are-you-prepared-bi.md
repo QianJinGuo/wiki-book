@@ -1,7 +1,5 @@
 # AI phishing attacks are on the rise — Are you prepared? | Bitwarden
 
-## Ch12.110 AI phishing attacks are on the rise — Are you prepared? | Bitwarden
-
 > 📊 Level ⭐⭐ | 5.0KB | `entities/ai-phishing-attacks-are-on-the-rise-are-you-prepared-bitward.md`
 
 ## 核心要点

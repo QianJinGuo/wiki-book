@@ -1,7 +1,5 @@
 # Cat Wu — Anthropic Claude Code/Cowork产品负责人
 
-## Ch03.014 Cat Wu — Anthropic Claude Code/Cowork产品负责人
-
 > 📊 Level ⭐ | 9.5KB | `entities/cat-wu-claude-code-pm.md`
 
 ## 核心洞察

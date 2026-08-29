@@ -1,7 +1,5 @@
 # Private Fintech Has Quietly Become Bigger Than Public Fintech. Now What?
 
-## Ch01.723 Private Fintech Has Quietly Become Bigger Than Public Fintech. Now What?
-
 > 📊 Level ⭐⭐ | 8.7KB | `entities/private-fintech-has-quietly-become-bigger-than-public-fintec.md`
 
 # Private Fintech Has Quietly Become Bigger Than Public Fintech. Now What?

@@ -1,7 +1,5 @@
 # ICML 2026: GPS — 小模型「指挥」大模型RL后训练，最高减少69% Rollout成本
 
-## Ch01.1580 ICML 2026: GPS — 小模型「指挥」大模型RL后训练，最高减少69% Rollout成本
-
 > 📊 Level ⭐⭐⭐ | 3.5KB | `entities/icml-2026-gps-prompt-predictive-model-rl-post-training-tsinghua-tencent.md`
 
 # ICML 2026: GPS — 小模型「指挥」大模型RL后训练，最高减少69% Rollout成本

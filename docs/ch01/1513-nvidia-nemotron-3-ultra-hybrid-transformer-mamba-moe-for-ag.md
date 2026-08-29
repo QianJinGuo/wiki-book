@@ -1,7 +1,5 @@
 # NVIDIA Nemotron 3 Ultra: Hybrid Transformer-Mamba MoE for Agentic AI on SageMaker JumpStart
 
-## Ch01.1513 NVIDIA Nemotron 3 Ultra: Hybrid Transformer-Mamba MoE for Agentic AI on SageMaker JumpStart
-
 > 📊 Level ⭐⭐⭐ | 9.8KB | `entities/nvidia-nemotron-3-ultra-sagemaker-jumpstart-moe-agentic.md`
 
 # NVIDIA Nemotron 3 Ultra: Hybrid Transformer-Mamba MoE for Agentic AI on SageMaker JumpStart

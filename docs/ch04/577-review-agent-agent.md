@@ -1,7 +1,5 @@
 # Review Agent：后台复盘 Agent 如何判断什么值得保存
 
-## Ch04.577 Review Agent：后台复盘 Agent 如何判断什么值得保存
-
 > 📊 Level ⭐⭐ | 6.5KB | `entities/review-agent-how-it-decides-what-to-save-winty.md`
 
 # Review Agent：后台复盘 Agent 如何判断什么值得保存

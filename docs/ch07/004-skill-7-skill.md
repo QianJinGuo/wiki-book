@@ -1,7 +1,5 @@
 # 工作流的 Skill 怎么写？从 7 个顶级 Skill 中提炼的模式与最佳实践
 
-## Ch07.004 工作流的 Skill 怎么写？从 7 个顶级 Skill 中提炼的模式与最佳实践
-
 > 📊 Level ⭐⭐ | 24.6KB | `entities/skill-writing-patterns-best-practices.md`
 
 ## 一、Skill 是什么

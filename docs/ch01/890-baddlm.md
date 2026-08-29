@@ -1,7 +1,5 @@
 # BadDLM — 扩散语言模型后门攻击统一框架
 
-## Ch01.890 BadDLM — 扩散语言模型后门攻击统一框架
-
 > 📊 Level ⭐⭐ | 7.2KB | `entities/baddlm-diffusion-language-model-backdoor-2026.md`
 
 # BadDLM — 扩散语言模型后门攻击统一框架

@@ -1,7 +1,5 @@
 # FastAPI SSE — LLM流式传输的WebSocket替代方案
 
-## Ch03.105 FastAPI SSE — LLM流式传输的WebSocket替代方案
-
 > 📊 Level ⭐⭐ | 8.0KB | `entities/fastapi-sse-llm-streaming.md`
 
 ## 核心结论

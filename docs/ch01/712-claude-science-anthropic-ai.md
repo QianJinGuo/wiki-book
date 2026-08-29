@@ -1,7 +1,5 @@
 # Claude Science — Anthropic 推出面向科研的 AI 工作台
 
-## Ch01.712 Claude Science — Anthropic 推出面向科研的 AI 工作台
-
 > 📊 Level ⭐⭐ | 8.7KB | `entities/claude-science-anthropic-research-ai-workbench.md`
 
 # Claude Science — Anthropic 推出面向科研的 AI 工作台

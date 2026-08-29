@@ -1,7 +1,5 @@
 # 一年吃掉一块固态硬盘，Codex日志bug被骂「劣质软件
 
-## Ch09.112 一年吃掉一块固态硬盘，Codex日志bug被骂「劣质软件
-
 > 📊 Level ⭐⭐ | 8.1KB | `entities/一年吃掉一块固态硬盘codex日志bug被骂劣质软件.md`
 
 # 一年吃掉一块固态硬盘，Codex日志bug被骂「劣质软件

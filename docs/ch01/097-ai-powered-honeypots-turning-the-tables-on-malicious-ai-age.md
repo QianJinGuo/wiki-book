@@ -1,7 +1,5 @@
 # AI-powered honeypots: Turning the tables on malicious AI agents
 
-## Ch01.097 AI-powered honeypots: Turning the tables on malicious AI agents
-
 > 📊 Level ⭐ | 7.1KB | `entities/ai-powered-honeypots-turning-the-tables-on-malicious-ai-agents.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-powered-honeypots-turning-the-tables-on-malicious-ai-agents.md)

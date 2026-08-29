@@ -1,7 +1,5 @@
 # 从 Coding 到 Anything：Qoder 多 Agent 协作与托管运行时
 
-## Ch04.731 从 Coding 到 Anything：Qoder 多 Agent 协作与托管运行时
-
 > 📊 Level ⭐⭐ | 3.9KB | `entities/qoder-desktop-coding-to-anything-aicon-2026.md`
 
 > 2026 AICon 上海站专题分享，阿里巴巴 Qoder 与慧博科技四位实践者完整呈现了 AI 工作流重构路径：从 Coding 出发，通过多 Agent 协作、桌面 Agent、托管运行时，走向更广泛的 Anything 场景。

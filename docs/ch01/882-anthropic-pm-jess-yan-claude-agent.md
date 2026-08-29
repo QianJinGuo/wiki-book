@@ -1,7 +1,5 @@
 # Anthropic PM Jess Yan 的三个 Claude Agent 实践
 
-## Ch01.882 Anthropic PM Jess Yan 的三个 Claude Agent 实践
-
 > 📊 Level ⭐⭐ | 7.3KB | `entities/anthropic-pm-jess-yan-managed-agents.md`
 
 ## 核心观点

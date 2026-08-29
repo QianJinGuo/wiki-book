@@ -1,7 +1,5 @@
 # Pi Agent：极简核心 + 事件总线扩展框架
 
-## Ch01.1557 Pi Agent：极简核心 + 事件总线扩展框架
-
 > 📊 Level ⭐⭐⭐ | 6.3KB | `entities/pi-agent-framework.md`
 
 ## 概述

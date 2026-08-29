@@ -1,7 +1,5 @@
 # 对图像内容进行精确分析 — Bedrock 多模态案例实践（汽车油表识别）
 
-## Ch11.288 对图像内容进行精确分析 — Bedrock 多模态案例实践（汽车油表识别）
-
 > 📊 Level ⭐⭐⭐ | 10.4KB | `entities/bedrock-image-content-precise-analysis.md`
 
 # 对图像内容进行精确分析 — Bedrock 多模态案例实践（汽车油表识别）

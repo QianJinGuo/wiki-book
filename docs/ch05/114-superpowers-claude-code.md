@@ -1,7 +1,5 @@
 # Superpowers 深度解析：给 Claude Code 装上工程大脑
 
-## Ch05.114 Superpowers 深度解析：给 Claude Code 装上工程大脑
-
 > 📊 Level ⭐⭐ | 4.7KB | `entities/superpowers-claude-code-engineering-brain-baidu-geek.md`
 
 > 原文归档：[原文归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/superpowers-claude-code-engineering-brain-baidu-geek.md)

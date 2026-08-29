@@ -1,7 +1,5 @@
 # ECCV 2026｜自驾VLA Scaling有戏了，北航清华DriveTeach-VLA：用图像轨迹打通驾驶场景与基模预训练
 
-## Ch01.1586 ECCV 2026｜自驾VLA Scaling有戏了，北航清华DriveTeach-VLA：用图像轨迹打通驾驶场景与基模预训练
-
 > 📊 Level ⭐⭐⭐ | 2.9KB | `entities/eccv-2026自驾vla-scaling有戏了北航清华driveteach-vla用图像轨迹打通驾驶场景与基模预训练.md`
 
 # ECCV 2026｜自驾VLA Scaling有戏了，北航清华DriveTeach-VLA：用图像轨迹打通驾驶场景与基模预训练

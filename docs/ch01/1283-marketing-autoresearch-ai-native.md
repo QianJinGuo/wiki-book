@@ -1,7 +1,5 @@
 # 高德 Marketing AutoResearch：AI Native 营销增长经营托管框架
 
-## Ch01.1283 高德 Marketing AutoResearch：AI Native 营销增长经营托管框架
-
 > 📊 Level ⭐⭐ | 4.2KB | `entities/autoresearch-marketing-growth-amap-ai-native.md`
 
 # 高德 Marketing AutoResearch：AI Native 营销增长经营托管框架

@@ -1,7 +1,5 @@
 # GPT-2 权重之谜：为什么 OpenAI 的原始权重比自训练模型更擅长指令跟随
 
-## Ch01.496 GPT-2 权重之谜：为什么 OpenAI 的原始权重比自训练模型更擅长指令跟随
-
 > 📊 Level ⭐⭐ | 13.3KB | `entities/gilesthomas-gpt2-weights-ift-comparison-2026-07-29.md`
 
 # GPT-2 权重之谜：为什么 OpenAI 的原始权重比自训练模型更擅长指令跟随

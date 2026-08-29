@@ -1,7 +1,5 @@
 # AWS Hapag Lloyd Bedrock Customer Feedback
 
-## Ch11.183 AWS Hapag Lloyd Bedrock Customer Feedback
-
 > 📊 Level ⭐⭐ | 6.8KB | `entities/aws-hapag-lloyd-bedrock-customer-feedback.md`
 
 # How Hapag-Lloyd uses Amazon Bedrock to transform customer feedback into actionable insights

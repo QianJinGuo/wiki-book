@@ -1,7 +1,5 @@
 # Model Genome: LLM 血统指纹识别方法论
 
-## Ch01.1325 Model Genome: LLM 血统指纹识别方法论
-
 > 📊 Level ⭐⭐ | 3.9KB | `entities/model-genome-llm-lineage-fingerprinting-2026.md`
 
 # Model Genome: LLM 血统指纹识别方法论

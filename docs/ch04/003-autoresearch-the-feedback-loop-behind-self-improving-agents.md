@@ -1,7 +1,5 @@
 # Autoresearch: The feedback loop behind self-improving agents
 
-## Ch04.003 Autoresearch: The feedback loop behind self-improving agents
-
 > 📊 Level ⭐ | 10.0KB | `entities/autoresearch-feedback-loop-self-improving-agents-introspection.md`
 
 # Autoresearch: The feedback loop behind self-improving agents

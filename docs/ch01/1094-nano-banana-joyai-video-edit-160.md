@@ -1,7 +1,5 @@
 # 实时视频版 Nano Banana 来了：京东开源 JoyAI-Video-Edit 160 亿参数
 
-## Ch01.1094 实时视频版 Nano Banana 来了：京东开源 JoyAI-Video-Edit 160 亿参数
-
 > 📊 Level ⭐⭐ | 5.7KB | `entities/实时视频编辑模型-nano-banana-160亿.md`
 
 # JoyAI-Video-Edit：160 亿参数的实时流式视频编辑模型

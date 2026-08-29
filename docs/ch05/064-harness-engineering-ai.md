@@ -1,7 +1,5 @@
 # Harness Engineering：AI 能在真正\"出事会炸\"的后端系统里写代码吗？
 
-## Ch05.064 Harness Engineering：AI 能在真正\"出事会炸\"的后端系统里写代码吗？
-
 > 📊 Level ⭐⭐ | 9.7KB | `entities/tencent-cdn-lego-harness-engineering.md`
 
 # Harness Engineering：AI 能在真正"出事会炸"的后端系统里写代码吗？

@@ -1,7 +1,5 @@
 # Anthropic 前沿红队多智能体冲突实验 — 安全是整体属性而非个体属性
 
-## Ch01.1618 Anthropic 前沿红队多智能体冲突实验 — 安全是整体属性而非个体属性
-
 > 📊 Level ⭐⭐⭐⭐ | 4.7KB | `entities/anthropic-multi-agent-conflict-frontier-red-team-2026-08.md`
 
 # Anthropic 前沿红队多智能体冲突实验

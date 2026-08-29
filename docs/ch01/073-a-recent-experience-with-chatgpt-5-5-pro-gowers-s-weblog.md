@@ -1,7 +1,5 @@
 # A recent experience with ChatGPT 5.5 Pro | Gowers's Weblog
 
-## Ch01.073 A recent experience with ChatGPT 5.5 Pro | Gowers's Weblog
-
 > 📊 Level ⭐ | 7.7KB | `entities/a-recent-experience-with-chatgpt-55-pro-gowerss-weblog.md`
 
 # A recent experience with ChatGPT 5.5 Pro | Gowers's Weblog

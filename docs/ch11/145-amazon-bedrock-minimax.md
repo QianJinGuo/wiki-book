@@ -1,7 +1,5 @@
 # 在 Amazon Bedrock 上运行 MiniMax 模型
 
-## Ch11.145 在 Amazon Bedrock 上运行 MiniMax 模型
-
 > 📊 Level ⭐⭐ | 7.8KB | `entities/minimax-models-on-amazon-bedrock-deployment-guide.md`
 
 # 在 Amazon Bedrock 上运行 MiniMax 模型

@@ -1,7 +1,5 @@
 # The Evolution of Cassandra Data Movement at Netflix
 
-## Ch11.261 The Evolution of Cassandra Data Movement at Netflix
-
 ```mermaid
 graph TB
     subgraph "边缘层"

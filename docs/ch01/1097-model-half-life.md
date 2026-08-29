@@ -1,7 +1,5 @@
 # model half-life
 
-## Ch01.1097 model half-life
-
 > 📊 Level ⭐⭐ | 5.7KB | `entities/model-half-life-aifoc.md`
 
 ## 摘要

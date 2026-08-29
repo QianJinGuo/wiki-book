@@ -1,7 +1,5 @@
 # gpt-image-2完全指南
 
-## Ch01.1288 gpt-image-2完全指南
-
 > 📊 Level ⭐⭐ | 4.2KB | `entities/gpt-image-2完全指南.md`
 
 ## 相关实体

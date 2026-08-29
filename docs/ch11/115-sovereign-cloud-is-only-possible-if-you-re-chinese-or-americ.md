@@ -1,7 +1,5 @@
 # Sovereign cloud is only possible if you're Chinese or American: Gartner
 
-## Ch11.115 Sovereign cloud is only possible if you're Chinese or American: Gartner
-
 > 📊 Level ⭐⭐ | 9.0KB | `entities/5237660-sovereign-cloud-gartner.md`
 
 > -> **5237660.md**

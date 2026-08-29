@@ -1,7 +1,5 @@
 # google-hits-50-ipv6
 
-## Ch01.366 google-hits-50-ipv6
-
 > 📊 Level ⭐ | 0.5KB | `entities/google-hits-50-ipv6.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/google-hits-50-ipv6.md)

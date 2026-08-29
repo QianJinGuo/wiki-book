@@ -1,7 +1,5 @@
 # AI Native SDLC Playbook：Anthropic 应用 AI 团队的软件开发生命周期重构方法论
 
-## Ch04.486 AI Native SDLC Playbook：Anthropic 应用 AI 团队的软件开发生命周期重构方法论
-
 > 📊 Level ⭐⭐ | 7.8KB | `entities/ai-native-sdlc-playbook-anthropic.md`
 
 # AI Native SDLC Playbook：Anthropic 应用 AI 团队的软件开发生命周期重构方法论

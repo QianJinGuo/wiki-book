@@ -1,7 +1,5 @@
 # 限流比降 10 倍：百炼网关如何用 RocketMQ LiteTopic 重构大模型限流
 
-## Ch01.536 限流比降 10 倍：百炼网关如何用 RocketMQ LiteTopic 重构大模型限流
-
 > 📊 Level ⭐⭐ | 12.0KB | `entities/百炼网关-rocketmq-litetopic-大模型限流重构.md`
 
 # 百炼网关限流重构：RocketMQ LiteTopic 把漏桶变成分布式基础设施

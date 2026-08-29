@@ -1,7 +1,5 @@
 # ICML 2026 Spotlight｜Agentic RL 下半场：JitRL——无需梯度更新的即时强化学习
 
-## Ch04.045 ICML 2026 Spotlight｜Agentic RL 下半场：JitRL——无需梯度更新的即时强化学习
-
 > 📊 Level ⭐ | 0.8KB | `entities/jitrl-just-in-time-reinforcement-learning-icml-2026-spotlight.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jitrl-just-in-time-reinforcement-learning-icml-2026-spotlight.md)

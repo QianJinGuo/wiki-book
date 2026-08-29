@@ -1,7 +1,5 @@
 # RFC 9958: Post-Quantum Cryptography for Engineers
 
-## Ch12.072 RFC 9958: Post-Quantum Cryptography for Engineers
-
 > 📊 Level ⭐⭐ | 7.1KB | `entities/rfc9958.md`
 
 # RFC 9958: Post-Quantum Cryptography for Engineers

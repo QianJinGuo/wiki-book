@@ -1,7 +1,5 @@
 # 手把手教你撰写 Agent Skill.md
 
-## Ch01.1221 手把手教你撰写 Agent Skill.md
-
 > 📊 Level ⭐⭐ | 4.8KB | `entities/手把手教你撰写-agent-skillmd.md`
 
 # 手把手教你撰写 Agent Skill.md

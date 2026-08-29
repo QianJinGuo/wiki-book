@@ -1,7 +1,5 @@
 # 用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客
 
-## Ch11.215 用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 5.7KB | `entities/strands-agents-sdk-build-analytics-layer-vqr-amazon-bedrock-practice.md`
 
 

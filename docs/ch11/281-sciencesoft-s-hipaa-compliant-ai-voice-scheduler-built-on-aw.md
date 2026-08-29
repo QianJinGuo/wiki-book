@@ -1,7 +1,5 @@
 # ScienceSoft's HIPAA-Compliant AI Voice Scheduler Built on AWS
 
-## Ch11.281 ScienceSoft's HIPAA-Compliant AI Voice Scheduler Built on AWS
-
 > 📊 Level ⭐⭐ | 3.1KB | `entities/sciencesofts-hipaa-compliant-ai-voice-scheduler-built-on-aws.md`
 
 # ScienceSoft's HIPAA-Compliant AI Voice Scheduler Built on AWS

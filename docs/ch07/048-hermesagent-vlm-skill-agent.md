@@ -1,7 +1,5 @@
 # 高德扫街榜 HermesAgent 配图系统：VLM + Skill + 语言驱动的生产级 Agent 架构
 
-## Ch07.048 高德扫街榜 HermesAgent 配图系统：VLM + Skill + 语言驱动的生产级 Agent 架构
-
 > 📊 Level ⭐⭐ | 8.6KB | `entities/gaode-saojie-image-selection-hermesagent-vlm-production-2026.md`
 
 # 高德扫街榜 HermesAgent 配图系统：VLM + Skill + 语言驱动的生产级 Agent 架构

@@ -1,7 +1,5 @@
 # Claude Managed Agents 开发者指南
 
-## Ch01.563 Claude Managed Agents 开发者指南
-
 > 📊 Level ⭐⭐ | 11.2KB | `entities/claude-managed-agents-developer-guide.md`
 
 ## Overview

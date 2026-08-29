@@ -1,7 +1,5 @@
 # 一份可信来源，终结 Skill 管理混乱：Skill 治理最佳实践
 
-## Ch07.090 一份可信来源，终结 Skill 管理混乱：Skill 治理最佳实践
-
 > 📊 Level ⭐⭐ | 3.2KB | `entities/skill-governance-nacos-ai-registry-aliyun-2026.md`
 
 # 一份可信来源，终结 Skill 管理混乱：Skill 治理最佳实践

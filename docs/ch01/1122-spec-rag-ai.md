@@ -1,7 +1,5 @@
 # 告别“伪智能”代码：用 Spec + RAG 打造真正懂你的AI程序员
 
-## Ch01.1122 告别“伪智能”代码：用 Spec + RAG 打造真正懂你的AI程序员
-
 > 📊 Level ⭐⭐ | 5.5KB | `entities/告别伪智能代码用-spec-rag-打造真正懂你的ai程序员.md`
 
 # 告别“伪智能”代码：用 Spec + RAG 打造真正懂你的AI程序员

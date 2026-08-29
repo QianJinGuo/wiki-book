@@ -1,7 +1,5 @@
 # The Code-as-Content Era
 
-## Ch01.692 The Code-as-Content Era
-
 > 📊 Level ⭐⭐ | 8.9KB | `entities/the-code-as-content-era-20260606.md`
 
 # The Code-as-Content Era

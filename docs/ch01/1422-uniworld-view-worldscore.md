@@ -1,7 +1,5 @@
 # UniWorld-View：登顶 WorldScore 的世界模型（单图/视频新视角合成）
 
-## Ch01.1422 UniWorld-View：登顶 WorldScore 的世界模型（单图/视频新视角合成）
-
 > 📊 Level ⭐⭐ | 3.3KB | `entities/uniworld-view-novel-view-synthesis-world-model-pku-2026.md`
 
 # UniWorld-View：登顶 WorldScore 的世界模型（单图/视频新视角合成）

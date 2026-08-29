@@ -1,7 +1,5 @@
 # GPT 5.4 是 Codex 的一次大跨越：四维评估视角与 Agent 战争回归
 
-## Ch01.670 GPT 5.4 是 Codex 的一次大跨越：四维评估视角与 Agent 战争回归
-
 > 📊 Level ⭐⭐ | 9.2KB | `entities/gpt-54-is-a-big-step-for-codex.md`
 
 # GPT 5.4 是 Codex 的一次大跨越：四维评估视角与 Agent 战争回归

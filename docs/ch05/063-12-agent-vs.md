@@ -1,7 +1,5 @@
 # 12 个 Agent 工程设计底层逻辑：脚手架 vs 承重墙
 
-## Ch05.063 12 个 Agent 工程设计底层逻辑：脚手架 vs 承重墙
-
 > 📊 Level ⭐⭐ | 9.9KB | `entities/twelve-agent-design-patterns-yunduojun-datastudio.md`
 
 > 原文归档：[原文归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/twelve-agent-design-patterns-yunduojun-datastudio.md)

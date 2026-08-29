@@ -1,7 +1,5 @@
 # AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环
 
-## Ch04.226 AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环
-
 > 📊 Level ⭐⭐ | 12.5KB | `entities/aws-bedrock-agentcore-os-level-actions-browser.md`
 
 ## 核心内容

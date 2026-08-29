@@ -1,7 +1,5 @@
 # Couchbase Capella iQ — 多模型 AI 推理架构的 Bedrock 实践
 
-## Ch11.293 Couchbase Capella iQ — 多模型 AI 推理架构的 Bedrock 实践
-
 > 📊 Level ⭐⭐ | 3.6KB | `entities/couchbase-capella-iq-multi-model-ai-architecture-bedrock-case-study.md`
 
 # Couchbase Capella iQ — 多模型 AI 推理架构的 Bedrock 实践

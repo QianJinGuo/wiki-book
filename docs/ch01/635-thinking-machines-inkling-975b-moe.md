@@ -1,7 +1,5 @@
 # Thinking Machines Inkling — 975B MoE 开放权重模型
 
-## Ch01.635 Thinking Machines Inkling — 975B MoE 开放权重模型
-
 > 📊 Level ⭐⭐ | 9.8KB | `entities/thinking-machines-inkling-975b-moe-open-weights-2026.md`
 
 # Thinking Machines Inkling — 975B MoE 开放权重模型

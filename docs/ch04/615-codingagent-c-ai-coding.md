@@ -1,7 +1,5 @@
 # 端到端 CodingAgent 设计：百亿补贴 C 端 AI Coding 实战
 
-## Ch04.615 端到端 CodingAgent 设计：百亿补贴 C 端 AI Coding 实战
-
 > 📊 Level ⭐⭐ | 5.8KB | `entities/end-to-end-codingagent-design-taobao-subsidy-2026.md`
 
 # 端到端 CodingAgent 设计：百亿补贴 C 端 AI Coding 实战

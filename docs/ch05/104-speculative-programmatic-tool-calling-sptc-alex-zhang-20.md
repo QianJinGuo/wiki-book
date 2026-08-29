@@ -1,7 +1,5 @@
 # Speculative Programmatic Tool Calling (sPTC) — Alex Zhang 2026
 
-## Ch05.104 Speculative Programmatic Tool Calling (sPTC) — Alex Zhang 2026
-
 > 📊 Level ⭐⭐ | 5.6KB | `entities/speculative-programmatic-tool-calling-sptc-alex-zhang-2026.md`
 
 # Speculative Programmatic Tool Calling (sPTC) — Alex Zhang 2026

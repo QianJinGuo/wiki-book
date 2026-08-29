@@ -1,7 +1,5 @@
 # Memory 不是 RAG：Agent 记忆的系统性框架
 
-## Ch06.013 Memory 不是 RAG：Agent 记忆的系统性框架
-
 > 📊 Level ⭐⭐ | 14.1KB | `entities/memory-vs-rag-agent-memory-systematic-framework.md`
 
 [Memory Vs Rag Agent Memory Systematic Framework](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/memory-vs-rag-agent-memory-systematic-framework.md)

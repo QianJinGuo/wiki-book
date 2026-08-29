@@ -1,7 +1,5 @@
 # 万字长文拆解Agent 架构设计（六）：用 LangChain 复刻 Claude Code
 
-## Ch04.048 万字长文拆解Agent 架构设计（六）：用 LangChain 复刻 Claude Code
-
 > 📊 Level ⭐ | 0.8KB | `entities/agent-architecture-deep-agents-allen-tang-2026.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-architecture-deep-agents-allen-tang-2026.md)

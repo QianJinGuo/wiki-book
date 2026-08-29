@@ -1,7 +1,5 @@
 # Gemini app rolling out 'Extended' thinking level, new 3rd-party app integrations
 
-## Ch01.1242 Gemini app rolling out 'Extended' thinking level, new 3rd-party app integrations
-
 > 📊 Level ⭐⭐ | 4.6KB | `entities/9to5google-gemini-app-extended-thinking.md`
 
 # Gemini app rolling out 'Extended' thinking level, new 3rd-party app integrations

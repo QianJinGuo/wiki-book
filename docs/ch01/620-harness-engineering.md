@@ -1,7 +1,5 @@
 # 开启Harness Engineering探索之旅
 
-## Ch01.620 开启Harness Engineering探索之旅
-
 > 📊 Level ⭐⭐ | 10.0KB | `entities/开启harness-engineering探索之旅.md`
 
 # 开启Harness Engineering探索之旅

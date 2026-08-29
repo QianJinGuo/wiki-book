@@ -1,7 +1,5 @@
 # 我把-claude-cowork-搬进-codex踩了-4-个坑发现了顶级模型的秘密
 
-## Ch01.211 我把-claude-cowork-搬进-codex踩了-4-个坑发现了顶级模型的秘密
-
 > 📊 Level ⭐ | 0.9KB | `entities/我把-claude-cowork-搬进-codex踩了-4-个坑发现了顶级模型的秘密.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/我把-claude-cowork-搬进-codex踩了-4-个坑发现了顶级模型的秘密.md)

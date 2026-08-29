@@ -1,7 +1,5 @@
 # Cilium Tetragon — Kubernetes Runtime Security with eBPF
 
-## Ch11.203 Cilium Tetragon — Kubernetes Runtime Security with eBPF
-
 > 📊 Level ⭐⭐ | 6.0KB | `entities/cilium-tetragon-kubernetes-runtime-security-ebpf.md`
 
 # Cilium Tetragon — Kubernetes Runtime Security with eBPF

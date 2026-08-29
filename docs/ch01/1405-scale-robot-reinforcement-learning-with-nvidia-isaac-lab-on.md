@@ -1,7 +1,5 @@
 # Scale Robot Reinforcement Learning with NVIDIA Isaac Lab on Amazon SageMaker AI
 
-## Ch01.1405 Scale Robot Reinforcement Learning with NVIDIA Isaac Lab on Amazon SageMaker AI
-
 > 📊 Level ⭐⭐ | 3.4KB | `entities/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md`
 
 # Scale Robot Reinforcement Learning with NVIDIA Isaac Lab on Amazon SageMaker AI

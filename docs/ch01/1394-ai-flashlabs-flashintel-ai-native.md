@@ -1,7 +1,5 @@
 # 垂类 AI 创企的自救：FlashLabs 从 FlashIntel 到 AI Native
 
-## Ch01.1394 垂类 AI 创企的自救：FlashLabs 从 FlashIntel 到 AI Native
-
 > 📊 Level ⭐⭐ | 3.5KB | `entities/flashlabs-vertical-ai-startup-pivot.md`
 
 # 垂类 AI 创企的自救：FlashLabs 从 FlashIntel 到 AI Native

@@ -1,7 +1,5 @@
 # 一份可信来源，终结 Skill 管理混乱：Skill 治理最佳实践
 
-## Ch04.374 一份可信来源，终结 Skill 管理混乱：Skill 治理最佳实践
-
 > 📊 Level ⭐⭐ | 9.2KB | `entities/一份可信来源终结-skill-管理混乱skill-治理最佳实践.md`
 
 # 一份可信来源，终结 Skill 管理混乱：Skill 治理最佳实践

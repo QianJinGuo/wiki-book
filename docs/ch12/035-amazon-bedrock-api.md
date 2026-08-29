@@ -1,7 +1,5 @@
 # 别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南
 
-## Ch12.035 别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南
-
 > 📊 Level ⭐⭐ | 10.5KB | `entities/amazon-bedrock-api-security-guide.md`
 
 > → [[raw/articles/amazon-bedrock-api-security-guide.md|原文存档]

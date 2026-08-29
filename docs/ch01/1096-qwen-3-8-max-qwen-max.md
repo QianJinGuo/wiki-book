@@ -1,7 +1,5 @@
 # Qwen 3.8-Max：首个开源权重的 Qwen-Max 级模型
 
-## Ch01.1096 Qwen 3.8-Max：首个开源权重的 Qwen-Max 级模型
-
 > 📊 Level ⭐⭐ | 5.7KB | `entities/qwen38-max-first-open-weights-release.md`
 
 # Qwen 3.8-Max：首个开源权重的 Qwen-Max 级模型

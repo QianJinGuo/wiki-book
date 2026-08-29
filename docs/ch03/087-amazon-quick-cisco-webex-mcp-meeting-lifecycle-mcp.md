@@ -1,7 +1,5 @@
 # Amazon Quick + Cisco Webex MCP 会议准备与跟进助手：meeting-lifecycle MCP 编排实战
 
-## Ch03.087 Amazon Quick + Cisco Webex MCP 会议准备与跟进助手：meeting-lifecycle MCP 编排实战
-
 > 📊 Level ⭐⭐ | 10.3KB | `entities/amazon-quick-cisco-webex-mcp-meeting-prep-followup-assistant.md`
 
 # Amazon Quick + Cisco Webex MCP 会议准备与跟进助手

@@ -1,7 +1,5 @@
 # MoE Architecture
 
-## Ch01.1456 MoE Architecture
-
 > 📊 Level ⭐⭐ | 1.4KB | `entities/moe-architecture.md`
 
 # MoE Architecture

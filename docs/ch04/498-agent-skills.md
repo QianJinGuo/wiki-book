@@ -1,7 +1,5 @@
 # 高德供给质量 Agent：业务 Skills 外化 + 非对称进化（稳定执行/旁路进化）
 
-## Ch04.498 高德供给质量 Agent：业务 Skills 外化 + 非对称进化（稳定执行/旁路进化）
-
 > 📊 Level ⭐⭐ | 7.6KB | `entities/gaode-supply-quality-agent-asymmetric-evolution-2026.md`
 
 # 高德供给质量 Agent：业务 Skills 外化 + 非对称进化（稳定执行/旁路进化）

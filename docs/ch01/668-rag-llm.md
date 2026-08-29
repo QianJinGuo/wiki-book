@@ -1,7 +1,5 @@
 # 视频 RAG 分块策略：停顿 / 滑动窗口 / LLM 主题分块
 
-## Ch01.668 视频 RAG 分块策略：停顿 / 滑动窗口 / LLM 主题分块
-
 > 📊 Level ⭐⭐ | 9.3KB | `entities/video-rag-chunking-strategy.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/video-rag-chunking-strategy-deephub-imba.md)

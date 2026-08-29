@@ -1,7 +1,5 @@
 # Token 撤销触发设备擦除的安全漏洞
 
-## Ch12.003 Token 撤销触发设备擦除的安全漏洞
-
 > 📊 Level ⭐ | 10.0KB | `entities/cybersecurityreach-revoke-token-wipe-computer.md`
 
 > → [[raw/articles/cybersecurityreach-revoke-token-wipe-computer|原文存档]

@@ -1,7 +1,5 @@
 # 浙大开源SkillX：全自动构建Agent技能知识库，即插即用提升10%性能
 
-## Ch01.1045 浙大开源SkillX：全自动构建Agent技能知识库，即插即用提升10%性能
-
 > 📊 Level ⭐⭐ | 6.1KB | `entities/skillx-zhejiang-university-hyman.md`
 
 # 浙大开源SkillX：全自动构建Agent技能知识库，即插即用提升10%性能

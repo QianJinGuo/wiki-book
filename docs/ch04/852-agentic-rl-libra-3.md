@@ -1,7 +1,5 @@
 # Agentic RL 后训练资源怎么分？港中文、恒生大学提出 Libra，吞吐最高提升 3 倍
 
-## Ch04.852 Agentic RL 后训练资源怎么分？港中文、恒生大学提出 Libra，吞吐最高提升 3 倍
-
 > 📊 Level ⭐⭐⭐ | 3.7KB | `entities/agentic-rl-后训练资源怎么分港中文恒生大学提出-libra吞吐最高提升-3-倍.md`
 
 # Agentic RL 后训练资源怎么分？港中文、恒生大学提出 Libra，吞吐最高提升 3 倍

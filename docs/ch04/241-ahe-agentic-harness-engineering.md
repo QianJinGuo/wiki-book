@@ -1,7 +1,5 @@
 # AHE：Agentic Harness Engineering
 
-## Ch04.241 AHE：Agentic Harness Engineering
-
 > 📊 Level ⭐⭐ | 12.1KB | `entities/agentic-harness-engineering-ahe.md`
 
 ## 核心问题

@@ -1,7 +1,5 @@
 # Agent Skill 高质量编写规范
 
-## Ch04.347 Agent Skill 高质量编写规范
-
 > 📊 Level ⭐⭐ | 9.7KB | `entities/agent-skill-writing-practices.md`
 
 ### 1. 从真实经验提炼

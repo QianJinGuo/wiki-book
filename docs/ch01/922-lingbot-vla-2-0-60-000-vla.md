@@ -1,7 +1,5 @@
 # 蚂蚁灵波 LingBot-VLA 2.0：60,000 小时开源通用 VLA 模型
 
-## Ch01.922 蚂蚁灵波 LingBot-VLA 2.0：60,000 小时开源通用 VLA 模型
-
 > 📊 Level ⭐⭐ | 7.0KB | `entities/lingbot-vla-2-60000h-open-source-vla.md`
 
 # 蚂蚁灵波 LingBot-VLA 2.0

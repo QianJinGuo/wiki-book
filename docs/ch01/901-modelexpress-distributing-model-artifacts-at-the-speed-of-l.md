@@ -1,7 +1,5 @@
 # ModelExpress: Distributing Model Artifacts at the Speed of Light
 
-## Ch01.901 ModelExpress: Distributing Model Artifacts at the Speed of Light
-
 > 📊 Level ⭐⭐ | 7.1KB | `entities/modelexpress-distributing-model-artifacts-nvidia-2026.md`
 
 # ModelExpress: Distributing Model Artifacts at the Speed of Light

@@ -1,7 +1,5 @@
 # 从生成到交付，音视频 Agent 要有生产级开发套件
 
-## Ch04.344 从生成到交付，音视频 Agent 要有生产级开发套件
-
 > 📊 Level ⭐⭐ | 9.8KB | `entities/ai-video-agent-production-kit-mediakit-volcano.md`
 
 # 从生成到交付，音视频 Agent 要有生产级开发套件

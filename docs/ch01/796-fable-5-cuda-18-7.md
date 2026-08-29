@@ -1,7 +1,5 @@
 # Fable 5 手搓 CUDA 超级内核 18.7 倍加速
 
-## Ch01.796 Fable 5 手搓 CUDA 超级内核 18.7 倍加速
-
 > 📊 Level ⭐⭐ | 8.0KB | `entities/fable-5-cuda-super-kernel-187x-speedup-2026.md`
 
 # Fable 5 手搓 CUDA 超级内核 2.5 小时狂飙 18.7 倍

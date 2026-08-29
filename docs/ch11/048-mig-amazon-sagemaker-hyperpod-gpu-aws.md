@@ -1,7 +1,5 @@
 # 基于 MIG 技术在 Amazon SageMaker HyperPod 上实现 GPU 虚拟化的最佳实践 | 亚马逊AWS官方博客
 
-## Ch11.048 基于 MIG 技术在 Amazon SageMaker HyperPod 上实现 GPU 虚拟化的最佳实践 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 13.1KB | `entities/gpu-virtualization-using-mig-technology-on-amazon-sagemaker-hyperpod.md`
 
 

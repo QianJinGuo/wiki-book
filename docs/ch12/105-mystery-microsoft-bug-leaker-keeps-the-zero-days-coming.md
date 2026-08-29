@@ -1,7 +1,5 @@
 # Mystery Microsoft bug leaker keeps the zero-days coming
 
-## Ch12.105 Mystery Microsoft bug leaker keeps the zero-days coming
-
 > 📊 Level ⭐⭐ | 5.0KB | `entities/microsoft-zero-days-researcher-disgruntled.md`
 
 # Mystery Microsoft bug leaker keeps the zero-days coming

@@ -1,7 +1,5 @@
 # 给 Openclaw瘦身-利用Nova MME 和 S3 Vector实现Skill按需召回 | 亚马逊AWS官方博客
 
-## Ch11.145 给 Openclaw瘦身-利用Nova MME 和 S3 Vector实现Skill按需召回 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 8.4KB | `entities/openclaw-leveraging-nova-mme-s3-vector-implement-skill.md`
 
 ## 概述

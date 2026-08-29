@@ -1,7 +1,5 @@
 # Agentic RL: Token-In, Token-Out Done Right
 
-## Ch04.770 Agentic RL: Token-In, Token-Out Done Right
-
 > 📊 Level ⭐⭐ | 3.5KB | `entities/agentic-rl-token-in-token-out-done-right-c6aaa4.md`
 
 # Agentic RL: Token-In, Token-Out Done Right

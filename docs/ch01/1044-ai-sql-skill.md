@@ -1,7 +1,5 @@
 # AI 取数信任基础设施：代号层 + 确定性 SQL 引擎 + Skill 门禁
 
-## Ch01.1044 AI 取数信任基础设施：代号层 + 确定性 SQL 引擎 + Skill 门禁
-
 > 📊 Level ⭐⭐ | 6.1KB | `entities/trust-infrastructure-ai-data-retrieval-taobao-2026.md`
 
 # AI 取数信任基础设施：代号层 + 确定性 SQL 引擎 + Skill 门禁

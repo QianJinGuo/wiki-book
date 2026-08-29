@@ -1,7 +1,5 @@
 # Claude Code Openclaw Memory Comparison
 
-## Ch06.008 Claude Code Openclaw Memory Comparison
-
 > 📊 Level ⭐⭐ | 19.0KB | `entities/claude-code-openclaw-memory-comparison.md`
 
 ## 概述

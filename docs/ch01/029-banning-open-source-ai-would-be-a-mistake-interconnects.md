@@ -1,7 +1,5 @@
 # Banning Open Source AI Would Be A Mistake — Interconnects 开源 AI 政策评论
 
-## Ch01.029 Banning Open Source AI Would Be A Mistake — Interconnects 开源 AI 政策评论
-
 > 📊 Level ⭐ | 9.2KB | `entities/banning-open-source-ai-would-be-a-mistake.md`
 
 # Banning Open Source AI Would Be A Mistake — Interconnects 开源 AI 政策评论

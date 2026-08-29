@@ -1,7 +1,5 @@
 # Spotify Logo Gets a Makeover, Turns Into a Disco Ball
 
-## Ch03.134 Spotify Logo Gets a Makeover, Turns Into a Disco Ball
-
 > 📊 Level ⭐⭐ | 4.2KB | `entities/spotify-logo-gets-a-makeover-turns-into-a-disco-ball.md`
 
 ## 核心要点

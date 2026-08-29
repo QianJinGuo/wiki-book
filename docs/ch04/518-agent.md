@@ -1,7 +1,5 @@
 # 百度搭子Agent平台全面升级
 
-## Ch04.518 百度搭子Agent平台全面升级
-
 > 📊 Level ⭐⭐ | 7.4KB | `entities/刚刚百度搭子全面升级要让agent接住人类90以上的活.md`
 
 # 百度搭子Agent平台全面升级

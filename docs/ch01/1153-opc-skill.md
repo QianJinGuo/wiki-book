@@ -1,7 +1,5 @@
 # 京东健康OPC团队的产品全流程Skill探索
 
-## Ch01.1153 京东健康OPC团队的产品全流程Skill探索
-
 > 📊 Level ⭐⭐ | 5.3KB | `entities/京东健康opc团队的产品全流程skill探索.md`
 
 # 京东健康OPC团队的产品全流程Skill探索

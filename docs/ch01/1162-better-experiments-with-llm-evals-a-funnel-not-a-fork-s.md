@@ -1,7 +1,5 @@
 # Better Experiments with LLM Evals — A funnel, not a fork | Spotify Engineering
 
-## Ch01.1162 Better Experiments with LLM Evals — A funnel, not a fork | Spotify Engineering
-
 > 📊 Level ⭐⭐ | 5.3KB | `entities/spotify-llm-evals-funnel-not-fork.md`
 
 ## 核心要点

@@ -1,7 +1,5 @@
 # A Framework for AI Threat Readiness
 
-## Ch12.002 A Framework for AI Threat Readiness
-
 > 📊 Level ⭐ | 10.3KB | `entities/ai_threat_readiness_framework.md`
 
 ## 核心要点

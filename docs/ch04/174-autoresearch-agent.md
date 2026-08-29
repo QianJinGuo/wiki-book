@@ -1,7 +1,5 @@
 # AutoResearch 分类法：四种 Agent 循环设计与四维分析框架
 
-## Ch04.174 AutoResearch 分类法：四种 Agent 循环设计与四维分析框架
-
 > 📊 Level ⭐⭐ | 15.3KB | `entities/autoresearch-taxonomy-chengzihong-chengzihong.md`
 
 # AutoResearch 分类法：四种 Agent 循环设计与四维分析框架

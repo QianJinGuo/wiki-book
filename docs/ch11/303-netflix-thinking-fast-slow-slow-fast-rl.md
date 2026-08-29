@@ -1,7 +1,5 @@
 # Netflix 分层通知系统：Thinking Fast & Slow 的 Slow-Fast RL 架构
 
-## Ch11.303 Netflix 分层通知系统：Thinking Fast & Slow 的 Slow-Fast RL 架构
-
 > 📊 Level ⭐⭐⭐ | 7.0KB | `entities/netflix-notification-slow-fast-hierarchical-rl.md`
 
 # Netflix 分层通知系统：Thinking Fast & Slow 的 Slow-Fast RL 架构

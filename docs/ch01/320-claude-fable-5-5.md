@@ -1,7 +1,5 @@
 # 刚刚claude-fable-5续命5天省钱攻略来了
 
-## Ch01.320 刚刚claude-fable-5续命5天省钱攻略来了
-
 > 📊 Level ⭐ | 0.7KB | `entities/刚刚claude-fable-5续命5天省钱攻略来了.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/刚刚claude-fable-5续命5天省钱攻略来了.md)

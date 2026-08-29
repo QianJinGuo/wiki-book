@@ -1,7 +1,5 @@
 # AI Agent Hype Meets Reality
 
-## Ch04.017 AI Agent Hype Meets Reality
-
 > 📊 Level ⭐ | 6.2KB | `entities/ai-agent-hype-reality-churn.md`
 
 # AI Agent Hype Meets Reality

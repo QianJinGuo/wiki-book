@@ -1,7 +1,5 @@
 # Viktor | Not a tool. A hire.
 
-## Ch01.071 Viktor | Not a tool. A hire.
-
 > 📊 Level ⭐ | 7.7KB | `entities/viktor-not-a-tool-a-hire.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/viktor-not-a-tool-a-hire.md)

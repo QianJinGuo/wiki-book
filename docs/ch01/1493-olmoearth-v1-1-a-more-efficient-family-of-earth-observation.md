@@ -1,7 +1,5 @@
 # OlmoEarth v1.1: A more efficient family of Earth observation models
 
-## Ch01.1493 OlmoEarth v1.1: A more efficient family of Earth observation models
-
 > 📊 Level ⭐⭐⭐ | 12.2KB | `entities/olmoearth-v1-1-efficiency.md`
 
 ## 概述

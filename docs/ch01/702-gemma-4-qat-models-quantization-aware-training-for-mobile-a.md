@@ -1,7 +1,5 @@
 # Gemma 4 QAT Models: Quantization-Aware Training for Mobile and Edge
 
-## Ch01.702 Gemma 4 QAT Models: Quantization-Aware Training for Mobile and Edge
-
 > 📊 Level ⭐⭐ | 8.8KB | `entities/gemma-4-qat-models-optimizing-compression.md`
 
 # Gemma 4 QAT Models: Quantization-Aware Training for Mobile and Edge

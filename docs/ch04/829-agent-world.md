@@ -1,7 +1,5 @@
 # Agent-World：扩展真实世界环境，让智能体与环境协同进化！
 
-## Ch04.829 Agent-World：扩展真实世界环境，让智能体与环境协同进化！
-
 > 📊 Level ⭐⭐⭐ | 11.8KB | `entities/agent-world扩展真实世界环境让智能体与环境协同进化.md`
 
 # Agent-World：扩展真实世界环境，让智能体与环境协同进化！

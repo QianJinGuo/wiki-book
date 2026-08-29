@@ -1,7 +1,5 @@
 # Cursor让马斯克的Grok4.5咸鱼翻身，追平Opus 4.8，成本比GLM5.2还低
 
-## Ch01.871 Cursor让马斯克的Grok4.5咸鱼翻身，追平Opus 4.8，成本比GLM5.2还低
-
 > 📊 Level ⭐⭐ | 7.4KB | `entities/cursor让马斯克的grok45咸鱼翻身追平opus-48成本比glm52还低.md`
 
 # Cursor让马斯克的Grok4.5咸鱼翻身，追平Opus 4.8，成本比GLM5.2还低

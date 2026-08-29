@@ -1,7 +1,5 @@
 # Claude Code Agent Teams 架构分析
 
-## Ch09.052 Claude Code Agent Teams 架构分析
-
 > 📊 Level ⭐⭐ | 13.2KB | `entities/claude-code-agent-teams-architecture.md`
 
 ## 核心结论

@@ -1,7 +1,5 @@
 # Proactive Memory Agent — Meta AI (Wu et al. 2026)
 
-## Ch04.616 Proactive Memory Agent — Meta AI (Wu et al. 2026)
-
 > 📊 Level ⭐⭐ | 5.8KB | `entities/remember-when-it-matters-proactive-memory-agent-long-horizon-wu-meta-2026.md`
 
 # Proactive Memory Agent — Meta AI (Wu et al. 2026)

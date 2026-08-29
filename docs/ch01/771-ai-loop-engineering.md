@@ -1,7 +1,5 @@
 # 一文看懂 AI 编程智能体工程化新范式：Loop Engineering
 
-## Ch01.771 一文看懂 AI 编程智能体工程化新范式：Loop Engineering
-
 > 📊 Level ⭐⭐ | 8.2KB | `entities/一文看懂-ai-编程智能体工程化新范式loop-engineering.md`
 
 # 一文看懂 AI 编程智能体工程化新范式：Loop Engineering

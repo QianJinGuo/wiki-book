@@ -1,7 +1,5 @@
 # Nathan Lambert：开源权重安全论的三个认知陷阱
 
-## Ch01.613 Nathan Lambert：开源权重安全论的三个认知陷阱
-
 > 📊 Level ⭐⭐ | 10.1KB | `entities/nathan-lambert-claude-mythos-open-weights.md`
 
 # Nathan Lambert：开源权重安全论的三个认知陷阱

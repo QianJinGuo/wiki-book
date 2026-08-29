@@ -1,7 +1,5 @@
 # Crawler vs Opencli Doubao
 
-## Ch03.032 Crawler vs Opencli Doubao
-
 > 📊 Level ⭐ | 6.4KB | `entities/crawler-vs-opencli-doubao.md`
 
 ### 1. 网络爬虫（Web Crawler/Spider）

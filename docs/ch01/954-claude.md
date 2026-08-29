@@ -1,7 +1,5 @@
 # 面对对齐研究者，Claude会心虚
 
-## Ch01.954 面对对齐研究者，Claude会心虚
-
 > 📊 Level ⭐⭐ | 6.8KB | `entities/transluce-user-awareness-frontier-models.md`
 
 # 面对对齐研究者，Claude 会心虚：Transluce 用户意识研究

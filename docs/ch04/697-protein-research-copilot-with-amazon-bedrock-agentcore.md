@@ -1,7 +1,5 @@
 # Protein Research Copilot with Amazon Bedrock AgentCore
 
-## Ch04.697 Protein Research Copilot with Amazon Bedrock AgentCore
-
 > 📊 Level ⭐⭐ | 4.5KB | `entities/protein-research-copilot-amazon-bedrock-agentcore.md`
 
 # Protein Research Copilot with Amazon Bedrock AgentCore

@@ -1,7 +1,5 @@
 # taobao-shopx-ai-shopping-agent-interface-loss-2026
 
-## Ch04.060 taobao-shopx-ai-shopping-agent-interface-loss-2026
-
 > 📊 Level ⭐ | 0.8KB | `entities/taobao-shopx-ai-shopping-agent-interface-loss-2026.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/taobao-shopx-ai-shopping-agent-interface-loss-2026.md)

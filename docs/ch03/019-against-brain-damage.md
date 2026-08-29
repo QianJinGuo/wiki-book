@@ -1,7 +1,5 @@
 # Against \"Brain Damage\
 
-## Ch03.019 Against \"Brain Damage\
-
 > 📊 Level ⭐ | 8.3KB | `entities/against-brain-damage.md`
 
 # Against "Brain Damage"

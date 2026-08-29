@@ -1,7 +1,5 @@
 # 你天天用的Claude和Codex，Meta内部不让随便用了
 
-## Ch01.236 你天天用的Claude和Codex，Meta内部不让随便用了
-
 > 📊 Level ⭐ | 0.9KB | `entities/2026-06-30-你天天用的Claude和Codex-Meta内部不让随便用了-新智元.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-06-30-你天天用的Claude和Codex-Meta内部不让随便用了-新智元.md)

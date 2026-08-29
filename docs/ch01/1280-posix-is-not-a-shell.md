@@ -1,7 +1,5 @@
 # POSIX Is Not A Shell
 
-## Ch01.1280 POSIX Is Not A Shell
-
 > 📊 Level ⭐⭐ | 4.2KB | `entities/posix-is-not-a-shell.md`
 
 # POSIX Is Not A Shell

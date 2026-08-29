@@ -1,7 +1,5 @@
 # Anthropic 实战分享：如何让 AI Agent 持续工作几天？
 
-## Ch01.589 Anthropic 实战分享：如何让 AI Agent 持续工作几天？
-
 > 📊 Level ⭐⭐ | 10.6KB | `entities/anthropic-long-running-agent-architecture-6h-retroforge.md`
 
 # Anthropic 实战分享：如何让 AI Agent 持续工作几天？

@@ -1,7 +1,5 @@
 # Figma Make, Now on Your Local Code: Closing the Design-to-Code Loop
 
-## Ch03.073 Figma Make, Now on Your Local Code: Closing the Design-to-Code Loop
-
 > 📊 Level ⭐⭐ | 12.4KB | `entities/figma-make-now-on-your-local-code-3e6a33.md`
 
 # Figma Make, Now on Your Local Code: Closing the Design-to-Code Loop

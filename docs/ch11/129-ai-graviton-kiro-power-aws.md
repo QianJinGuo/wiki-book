@@ -1,7 +1,5 @@
 # AI 驱动的 Graviton 迁移评估：Kiro Power 实战指南 | 亚马逊AWS官方博客
 
-## Ch11.129 AI 驱动的 Graviton 迁移评估：Kiro Power 实战指南 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 9.0KB | `entities/ai-graviton-migration-kiro-power-guide.md`
 
 ## 概述

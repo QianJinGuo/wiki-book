@@ -1,7 +1,5 @@
 # Production-Ready Autonomous Incident Resolution with AWS DevOps Agent (now GA) and Datadog MCP Server
 
-## Ch04.445 Production-Ready Autonomous Incident Resolution with AWS DevOps Agent (now GA) and Datadog MCP Server
-
 > 📊 Level ⭐⭐ | 8.2KB | `entities/aws-devops-agent-autonomous-incident-resolution-datadog.md`
 
 # AWS DevOps Agent × Datadog MCP Server: 生产级自主事件解决

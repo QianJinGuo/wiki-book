@@ -1,7 +1,5 @@
 # 刷榜AI全挂了！Meta斯坦福地狱级测试，GPT/Claude/Gemini交出0分
 
-## Ch01.599 刷榜AI全挂了！Meta斯坦福地狱级测试，GPT/Claude/Gemini交出0分
-
 > 📊 Level ⭐⭐ | 10.4KB | `entities/2026-05-06-刷榜AI全挂了-Meta斯坦福地狱级测试-GPT-Claude-Gemini交出-新智元.md`
 
 # 刷榜AI全挂了！Meta斯坦福地狱级测试，GPT/Claude/Gemini交出0分

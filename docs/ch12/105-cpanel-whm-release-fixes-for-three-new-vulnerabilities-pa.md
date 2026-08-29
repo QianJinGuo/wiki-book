@@ -1,7 +1,5 @@
 # cPanel, WHM Release Fixes for Three New Vulnerabilities — Patch Now
 
-## Ch12.105 cPanel, WHM Release Fixes for Three New Vulnerabilities — Patch Now
-
 > 📊 Level ⭐⭐ | 4.9KB | `entities/cpanel-whm-patch-3-new-vulnerabilities.md`
 
 # cPanel, WHM Release Fixes for Three New Vulnerabilities — Patch Now

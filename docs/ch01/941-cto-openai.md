@@ -1,7 +1,5 @@
 # 奥特曼最险一战前女cto当庭翻脸openai权斗彻底打到台前
 
-## Ch01.941 奥特曼最险一战前女cto当庭翻脸openai权斗彻底打到台前
-
 > 📊 Level ⭐⭐ | 6.9KB | `entities/奥特曼最险一战前女cto当庭翻脸openai权斗彻底打到台前.md`
 
 ## 摘录

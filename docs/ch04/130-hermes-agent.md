@@ -1,7 +1,5 @@
 # Hermes Agent 记忆系统深度拆解
 
-## Ch04.130 Hermes Agent 记忆系统深度拆解
-
 > 📊 Level ⭐⭐ | 19.2KB | `entities/hermes-agent-memory-system-vs-openclaw.md`
 
 [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-memory-system-vs-openclaw.md)

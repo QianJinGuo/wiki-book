@@ -1,7 +1,5 @@
 # 一个文件让 AI Coding 效率翻倍：AGENTS.md 实践指南
 
-## Ch04.253 一个文件让 AI Coding 效率翻倍：AGENTS.md 实践指南
-
 > 📊 Level ⭐⭐ | 11.9KB | `entities/一个文件让-ai-coding-效率翻倍agentsmd-实践指南.md`
 
 ## AGENTS.md 是什么

@@ -1,7 +1,5 @@
 # 新概念 AI 编程第五章：Graph Engineering
 
-## Ch01.280 新概念 AI 编程第五章：Graph Engineering
-
 > 📊 Level ⭐ | 0.8KB | `entities/graph-engineering-vibecoder-chapter5-2026.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/graph-engineering-vibecoder-chapter5-2026.md)

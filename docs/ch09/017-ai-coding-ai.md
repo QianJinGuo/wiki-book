@@ -1,7 +1,5 @@
 # AI Coding 入门指南 - 如何更好地让AI真正帮你干活
 
-## Ch09.017 AI Coding 入门指南 - 如何更好地让AI真正帮你干活
-
 > 📊 Level ⭐⭐ | 34.1KB | `entities/ai-coding-入门指南-如何更好地让ai真正帮你干活-v2.md`
 
 ## 核心摘要

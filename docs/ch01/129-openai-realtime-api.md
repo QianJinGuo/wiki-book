@@ -1,7 +1,5 @@
 # OpenAI Realtime API 架构首次公开
 
-## Ch01.129 OpenAI Realtime API 架构首次公开
-
 > 📊 Level ⭐ | 5.8KB | `entities/openai-realtime-api-architecture.md`
 
 # OpenAI Realtime API 架构首次公开

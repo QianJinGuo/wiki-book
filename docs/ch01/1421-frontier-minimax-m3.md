@@ -1,7 +1,5 @@
 # 国内首个 Frontier 三件套开源大模型：MiniMax M3 完整技术拆解
 
-## Ch01.1421 国内首个 Frontier 三件套开源大模型：MiniMax M3 完整技术拆解
-
 > 📊 Level ⭐⭐ | 3.3KB | `entities/minimax-m3-frontier-three-set-open-source.md`
 
 # 国内首个 Frontier 三件套开源大模型：MiniMax M3 完整技术拆解

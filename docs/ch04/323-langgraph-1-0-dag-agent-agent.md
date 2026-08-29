@@ -1,7 +1,5 @@
 # LangGraph 1.0：别再用 DAG 写 Agent 了，你的 Agent 需要一个操作系统
 
-## Ch04.323 LangGraph 1.0：别再用 DAG 写 Agent 了，你的 Agent 需要一个操作系统
-
 > 📊 Level ⭐⭐ | 10.1KB | `entities/langgraph-10别再用-dag-写-agent-了你的-agent-需要一个操作系统.md`
 
 # LangGraph 1.0：别再用 DAG 写 Agent 了，你的 Agent 需要一个操作系统

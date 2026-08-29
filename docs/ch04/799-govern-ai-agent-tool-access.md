@@ -1,7 +1,5 @@
 # Govern AI Agent Tool Access: 四阶段治理成熟度框架
 
-## Ch04.799 Govern AI Agent Tool Access: 四阶段治理成熟度框架
-
 > 📊 Level ⭐⭐ | 2.7KB | `entities/govern-ai-agent-tool-access-four-scope-maturity.md`
 
 # Govern AI Agent Tool Access: 四阶段治理成熟度框架

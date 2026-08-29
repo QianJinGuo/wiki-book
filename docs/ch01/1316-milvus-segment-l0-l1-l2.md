@@ -1,7 +1,5 @@
 # 拆解 Milvus Segment 生命周期：L0/L1/L2 三级分层与删除机制源码分析
 
-## Ch01.1316 拆解 Milvus Segment 生命周期：L0/L1/L2 三级分层与删除机制源码分析
-
 > 📊 Level ⭐⭐ | 4.0KB | `entities/milvus-segment-lifecycle-delete-4-states-shuge-2026.md`
 
 ## 核心概述

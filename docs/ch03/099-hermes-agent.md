@@ -1,7 +1,5 @@
 # Hermes Agent 工具系统架构分析
 
-## Ch03.099 Hermes Agent 工具系统架构分析
-
 > 📊 Level ⭐⭐ | 8.7KB | `entities/hermes-agent-tool-system-architecture.md`
 
 ## 核心结论

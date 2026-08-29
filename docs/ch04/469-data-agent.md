@@ -1,7 +1,5 @@
 # 什么是数据智能体Data Agent--数据智能体-火山引擎
 
-## Ch04.469 什么是数据智能体Data Agent--数据智能体-火山引擎
-
 > 📊 Level ⭐⭐ | 7.9KB | `entities/volcengine-data-agent-product-overview.md`
 
 # 什么是数据智能体Data Agent--数据智能体-火山引擎

@@ -1,7 +1,5 @@
 # 场景营销前端 AI Coding — AI Native 的视觉稿还原
 
-## Ch01.010 场景营销前端 AI Coding — AI Native 的视觉稿还原
-
 > 📊 Level ⭐ | 11.4KB | `entities/场景营销前端-ai-coding-ai-native-的视觉稿还原.md`
 
 # 场景营销前端 AI Coding — AI Native 的视觉稿还原

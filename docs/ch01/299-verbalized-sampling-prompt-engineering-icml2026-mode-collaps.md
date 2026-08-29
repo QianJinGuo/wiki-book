@@ -1,7 +1,5 @@
 # verbalized-sampling-prompt-engineering-icml2026-mode-collapse
 
-## Ch01.299 verbalized-sampling-prompt-engineering-icml2026-mode-collapse
-
 > 📊 Level ⭐ | 0.7KB | `entities/verbalized-sampling-prompt-engineering-icml2026-mode-collapse.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/verbalized-sampling-prompt-engineering-icml2026-mode-collapse.md)

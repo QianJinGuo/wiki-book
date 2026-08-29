@@ -1,7 +1,5 @@
 # AI 浏览器三条技术路线：侧栏 / Agent / AI 原生
 
-## Ch04.428 AI 浏览器三条技术路线：侧栏 / Agent / AI 原生
-
 > 📊 Level ⭐⭐ | 8.4KB | `entities/ai-native-browser-three-routes-tabbit-meituan-2026.md`
 
 # AI 浏览器三条技术路线：侧栏 / Agent / AI 原生

@@ -1,7 +1,5 @@
 # Google brings local AI agents to laptops with Gemma 4 12B
 
-## Ch01.1290 Google brings local AI agents to laptops with Gemma 4 12B
-
 > 📊 Level ⭐⭐ | 4.2KB | `entities/google-brings-local-ai-agents-to-laptops-with-gemma-4-12b-20260606.md`
 
 # Google brings local AI agents to laptops with Gemma 4 12B

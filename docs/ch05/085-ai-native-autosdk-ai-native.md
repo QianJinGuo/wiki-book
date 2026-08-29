@@ -1,7 +1,5 @@
 # 高德汽车工程 AI Native：AutoSDK 全链路 AI Native 开发（架构篇）
 
-## Ch05.085 高德汽车工程 AI Native：AutoSDK 全链路 AI Native 开发（架构篇）
-
 > 📊 Level ⭐⭐ | 7.5KB | `entities/gaode-autosdk-ai-native-pipeline-2026.md`
 
 # 高德汽车工程 AI Native：AutoSDK 全链路 AI Native 开发（架构篇）

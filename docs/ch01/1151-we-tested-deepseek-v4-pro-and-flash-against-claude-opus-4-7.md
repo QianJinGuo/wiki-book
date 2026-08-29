@@ -1,7 +1,5 @@
 # We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6
 
-## Ch01.1151 We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6
-
 > 📊 Level ⭐⭐ | 5.4KB | `entities/deepseek-v4-pro-vs-claude.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek-v4-pro-vs-claude.md)

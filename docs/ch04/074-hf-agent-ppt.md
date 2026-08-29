@@ -1,7 +1,5 @@
 # 登顶hf榜首这个agent做ppt还是太强了
 
-## Ch04.074 登顶hf榜首这个agent做ppt还是太强了
-
 > 📊 Level ⭐ | 0.6KB | `entities/登顶hf榜首这个agent做ppt还是太强了.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/登顶hf榜首这个agent做ppt还是太强了.md)

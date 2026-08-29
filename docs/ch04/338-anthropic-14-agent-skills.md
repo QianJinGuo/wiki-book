@@ -1,7 +1,5 @@
 # Anthropic 14 个 Agent Skills 设计模式
 
-## Ch04.338 Anthropic 14 个 Agent Skills 设计模式
-
 > 📊 Level ⭐⭐ | 9.9KB | `entities/anthropic-agent-skills-design-patterns-14.md`
 
 ## 核心洞察

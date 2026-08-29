@@ -1,7 +1,5 @@
 # AutoResearch 迁移到软件开发：多 Agent 交叉审核的工程实践
 
-## Ch01.808 AutoResearch 迁移到软件开发：多 Agent 交叉审核的工程实践
-
 > 📊 Level ⭐⭐ | 7.9KB | `entities/autoresearch-software-development.md`
 
 # AutoResearch 迁移到软件开发：多 Agent 交叉审核的工程实践

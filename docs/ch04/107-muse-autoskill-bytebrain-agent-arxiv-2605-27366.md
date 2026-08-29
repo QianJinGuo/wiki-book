@@ -1,7 +1,5 @@
 # MUSE-Autoskill：字节 ByteBrain 自进化 Agent 五阶段技能生命周期，arXiv 2605.27366
 
-## Ch04.107 MUSE-Autoskill：字节 ByteBrain 自进化 Agent 五阶段技能生命周期，arXiv 2605.27366
-
 > 📊 Level ⭐⭐ | 24.6KB | `entities/muse-autoskill-bytebrain-self-evolving-agent-arxiv-2605-27366.md`
 
 # MUSE-Autoskill：字节 ByteBrain 自进化 Agent 五阶段技能生命周期，arXiv 2605.27366

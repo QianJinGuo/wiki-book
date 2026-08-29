@@ -1,7 +1,5 @@
 # 不改一行代码，看透 AI Agent 的每一次调用
 
-## Ch01.710 不改一行代码，看透 AI Agent 的每一次调用
-
 > 📊 Level ⭐⭐ | 8.7KB | `entities/不改一行代码看透-ai-agent-的每一次调用.md`
 
 # 不改一行代码，看透 AI Agent 的每一次调用

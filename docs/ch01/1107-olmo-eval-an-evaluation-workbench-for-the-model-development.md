@@ -1,7 +1,5 @@
 # olmo-eval: An evaluation workbench for the model development
 
-## Ch01.1107 olmo-eval: An evaluation workbench for the model development
-
 > 📊 Level ⭐⭐ | 5.7KB | `entities/olmo-eval.md`
 
 # olmo-eval: An evaluation workbench for the model development

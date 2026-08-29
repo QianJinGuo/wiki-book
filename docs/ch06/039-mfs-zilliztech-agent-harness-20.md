@@ -1,7 +1,5 @@
 # MFS：zilliztech 的 Agent 统一上下文 harness，一套动词打通 20+ 数据源
 
-## Ch06.039 MFS：zilliztech 的 Agent 统一上下文 harness，一套动词打通 20+ 数据源
-
 > 📊 Level ⭐⭐ | 4.5KB | `entities/zilliztech-mfs-open-tag-claude-tag-shuge-2026.md`
 
 ## 核心概述

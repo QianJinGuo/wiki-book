@@ -1,7 +1,5 @@
 # Macaron V1 — LoRA即架构：基于GLM-5.2的748B个人模型
 
-## Ch01.1313 Macaron V1 — LoRA即架构：基于GLM-5.2的748B个人模型
-
 > 📊 Level ⭐⭐ | 4.0KB | `entities/macaron-v1-lora-moe-architecture.md`
 
 # Macaron V1 — LoRA即架构：基于GLM-5.2的748B个人模型

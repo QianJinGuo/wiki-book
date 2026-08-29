@@ -1,7 +1,5 @@
 # SageMaker 推理可观测性：100+ 详细指标 + CloudWatch Insights Dashboard
 
-## Ch11.118 SageMaker 推理可观测性：100+ 详细指标 + CloudWatch Insights Dashboard
-
 > 📊 Level ⭐⭐ | 9.5KB | `entities/sagemaker-inference-observability-cloudwatch-insights.md`
 
 # SageMaker 推理可观测性：100+ 详细指标 + CloudWatch Insights Dashboard

@@ -1,7 +1,5 @@
 # 5 Years and $5M Later: Inventing a New Programming Language for Web Development Was a Mistake (Wasp 复盘)
 
-## Ch03.082 5 Years and $5M Later: Inventing a New Programming Language for Web Development Was a Mistake (Wasp 复盘)
-
 > 📊 Level ⭐⭐ | 11.4KB | `entities/5-years-and-5m-later-inventing-a-new.md`
 
 # 5 Years and $5M Later: Inventing a New Programming Language for Web Development Was a Mistake

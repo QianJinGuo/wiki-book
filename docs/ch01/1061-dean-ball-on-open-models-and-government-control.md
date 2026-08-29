@@ -1,7 +1,5 @@
 # Dean Ball on open models and government control
 
-## Ch01.1061 Dean Ball on open models and government control
-
 > 📊 Level ⭐⭐ | 6.0KB | `entities/dean-ball-on-open-models-and-government-control.md`
 
 # Dean Ball on open models and government control

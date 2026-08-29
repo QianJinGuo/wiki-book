@@ -1,7 +1,5 @@
 # 复旦 AHE：让 Harness 自进化的 Agentic Harness Engineering
 
-## Ch04.360 复旦 AHE：让 Harness 自进化的 Agentic Harness Engineering
-
 > 📊 Level ⭐⭐ | 9.5KB | `entities/fudan-agentic-harness-engineering-ahe-gpt54-7points.md`
 
 # 复旦 AHE：让 Harness 自进化的 Agentic Harness Engineering

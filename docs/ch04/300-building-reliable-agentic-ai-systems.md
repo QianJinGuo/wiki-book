@@ -1,7 +1,5 @@
 # Building Reliable Agentic AI Systems
 
-## Ch04.300 Building Reliable Agentic AI Systems
-
 > 📊 Level ⭐⭐ | 10.8KB | `entities/building-reliable-agentic-ai-systems-martinfowler.md`
 
 # Building Reliable Agentic AI Systems

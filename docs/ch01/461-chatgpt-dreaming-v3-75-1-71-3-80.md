@@ -1,7 +1,5 @@
 # ChatGPT Dreaming V3：长期记忆架构级重构（时效 75.1% / 偏好 71.3% / 算力 -80%）
 
-## Ch01.461 ChatGPT Dreaming V3：长期记忆架构级重构（时效 75.1% / 偏好 71.3% / 算力 -80%）
-
 > 📊 Level ⭐⭐ | 14.7KB | `entities/chatgpt-dreaming-v3-long-term-memory-architecture.md`
 
 # ChatGPT Dreaming V3：长期记忆架构级重构

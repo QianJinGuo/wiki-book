@@ -1,7 +1,5 @@
 # Pathfinding Labs: Deploy, test, and learn from 100+ intentional security bad code
 
-## Ch11.085 Pathfinding Labs: Deploy, test, and learn from 100+ intentional security bad code
-
 > 📊 Level ⭐⭐ | 10.8KB | `entities/datadog-pathfinding-labs-security.md`
 
 # Pathfinding Labs

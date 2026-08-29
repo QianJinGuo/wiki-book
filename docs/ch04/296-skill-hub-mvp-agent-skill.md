@@ -1,7 +1,5 @@
 # Skill Hub MVP：可评估、可回滚、可发布的 Agent Skill 治理平台
 
-## Ch04.296 Skill Hub MVP：可评估、可回滚、可发布的 Agent Skill 治理平台
-
 > 📊 Level ⭐⭐ | 10.8KB | `entities/skill-hub-mvp-evaluation-rollback-release.md`
 
 # Skill Hub MVP：可评估、可回滚、可发布的 Agent Skill 治理平台

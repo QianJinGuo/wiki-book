@@ -1,7 +1,5 @@
 # AlphaEvolve: Gemini-powered coding agent scaling impact across fields
 
-## Ch04.525 AlphaEvolve: Gemini-powered coding agent scaling impact across fields
-
 > 📊 Level ⭐⭐ | 7.3KB | `entities/alphaevolve-impact.md`
 
 # AlphaEvolve: Gemini-powered coding agent scaling impact across fields

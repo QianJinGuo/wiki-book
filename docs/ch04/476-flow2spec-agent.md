@@ -1,7 +1,5 @@
 # Flow2Spec：开发过程自然长出知识图谱的 Agent 工程框架
 
-## Ch04.476 Flow2Spec：开发过程自然长出知识图谱的 Agent 工程框架
-
 > 📊 Level ⭐⭐ | 7.8KB | `entities/flow2spec-structured-knowledge-routing-ctrip-2026.md`
 
 # Flow2Spec：开发过程自然长出知识图谱的 Agent 工程框架

@@ -1,7 +1,5 @@
 # Market surveillance agent with LangGraph and Strands on AgentCore
 
-## Ch04.724 Market surveillance agent with LangGraph and Strands on AgentCore
-
 > 📊 Level ⭐⭐ | 4.0KB | `entities/market-surveillance-agent-langgraph-strands-agentcore.md`
 
 # Market surveillance agent with LangGraph and Strands on AgentCore

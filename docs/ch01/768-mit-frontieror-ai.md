@@ -1,7 +1,5 @@
 # 大模型能写出工业级优化算法吗？MIT提出FrontierOR给AI设下考场
 
-## Ch01.768 大模型能写出工业级优化算法吗？MIT提出FrontierOR给AI设下考场
-
 > 📊 Level ⭐⭐ | 8.2KB | `entities/大模型能写出工业级优化算法吗mit提出frontieror给ai设下考场.md`
 
 # 大模型能写出工业级优化算法吗？MIT提出FrontierOR给AI设下考场

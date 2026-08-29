@@ -1,7 +1,5 @@
 # How to Build Audio Transcription Agent
 
-## Ch04.589 How to Build Audio Transcription Agent
-
 > 📊 Level ⭐⭐ | 6.4KB | `entities/how-to-build-audio-transcription-agent.md`
 
 → （无原始来源）

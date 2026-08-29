@@ -1,7 +1,5 @@
 # DeliAutoResearch SKILL：DeepSeek陈德里的自主科研智能体框架
 
-## Ch01.677 DeliAutoResearch SKILL：DeepSeek陈德里的自主科研智能体框架
-
 > 📊 Level ⭐⭐ | 9.1KB | `entities/deli-auto-research-skill-deepseek.md`
 
 ## 核心价值

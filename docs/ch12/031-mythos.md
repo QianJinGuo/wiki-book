@@ -1,7 +1,5 @@
 # Mythos 对企业安全架构影响的思考
 
-## Ch12.031 Mythos 对企业安全架构影响的思考
-
 > 📊 Level ⭐⭐ | 10.9KB | `entities/mythos-对企业安全架构影响的思考.md`
 
 # Mythos 对企业安全架构影响的思考

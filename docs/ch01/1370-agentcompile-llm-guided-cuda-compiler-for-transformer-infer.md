@@ -1,7 +1,5 @@
 # AgentCompile: LLM-Guided CUDA Compiler for Transformer Inference
 
-## Ch01.1370 AgentCompile: LLM-Guided CUDA Compiler for Transformer Inference
-
 > 📊 Level ⭐⭐ | 3.6KB | `entities/agentcompile-llm-guided-cuda-compiler.md`
 
 # AgentCompile: LLM-Guided CUDA Compiler

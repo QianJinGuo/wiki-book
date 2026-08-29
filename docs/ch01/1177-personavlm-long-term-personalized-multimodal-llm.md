@@ -1,7 +1,5 @@
 # PersonaVLM: Long-term Personalized Multimodal LLM
 
-## Ch01.1177 PersonaVLM: Long-term Personalized Multimodal LLM
-
 > 📊 Level ⭐⭐ | 5.1KB | `entities/personavlm-long-term-personalization.md`
 
 # PersonaVLM: Long-term Personalized Multimodal LLM

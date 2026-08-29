@@ -1,7 +1,5 @@
 # AWS Bedrock AgentCore Equipment Repair Assistant — 农业机械 AI 诊断助手实战
 
-## Ch11.286 AWS Bedrock AgentCore Equipment Repair Assistant — 农业机械 AI 诊断助手实战
-
 > 📊 Level ⭐⭐ | 3.8KB | `entities/aws-bedrock-agentcore-equipment-repair-assistant.md`
 
 # AWS Bedrock AgentCore Equipment Repair Assistant — 农业机械 AI 诊断助手实战

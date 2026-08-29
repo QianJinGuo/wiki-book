@@ -1,7 +1,5 @@
 # Qoder Skill UI — Agent 与人类的协作界面层
 
-## Ch03.072 Qoder Skill UI — Agent 与人类的协作界面层
-
 > 📊 Level ⭐⭐ | 13.0KB | `entities/qoder-skill-ui.md`
 
 ## Overview

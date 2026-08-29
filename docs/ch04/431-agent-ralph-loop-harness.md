@@ -1,7 +1,5 @@
 # 长周期-agent-详解-从-ralph-loop-到可接管-harness
 
-## Ch04.431 长周期-agent-详解-从-ralph-loop-到可接管-harness
-
 > 📊 Level ⭐⭐ | 8.4KB | `entities/长周期-agent-详解-从-ralph-loop-到可接管-harness.md`
 
 # 长周期-agent-详解-从-ralph-loop-到可接管-harness

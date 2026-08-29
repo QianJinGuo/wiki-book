@@ -1,7 +1,5 @@
 # 精选 10 个开发者常用的 AI 智能体技能（Agent Skills）
 
-## Ch04.330 精选 10 个开发者常用的 AI 智能体技能（Agent Skills）
-
 > 📊 Level ⭐⭐ | 10.0KB | `entities/精选-10-个开发者常用的-ai-智能体技能agent-skills.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/精选-10-个开发者常用的-ai-智能体技能agent-skills.md)

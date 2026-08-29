@@ -1,7 +1,5 @@
 # 火山引擎 AI 搜索千万级 Agent 架构演进 — 从 ReAct 三节点到 Unified Policy
 
-## Ch04.838 火山引擎 AI 搜索千万级 Agent 架构演进 — 从 ReAct 三节点到 Unified Policy
-
 > 📊 Level ⭐⭐⭐ | 9.0KB | `entities/volcano-engine-ai-search-million-agent-architecture-up-react.md`
 
 # 火山引擎 AI 搜索千万级 Agent 架构演进 — 从 ReAct 三节点到 Unified Policy

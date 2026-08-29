@@ -1,7 +1,5 @@
 # Cost effective deployment of vision-language models for pet behavior detection on AWS Inferentia2
 
-## Ch11.207 Cost effective deployment of vision-language models for pet behavior detection on AWS Inferentia2
-
 > 📊 Level ⭐⭐ | 6.1KB | `entities/cost-effective-deployment-of-vision-language-models-for-pet-behavior-detection-o.md`
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cost-effective-deployment-of-vision-language-models-for-pet-behavior-detection-o.md)

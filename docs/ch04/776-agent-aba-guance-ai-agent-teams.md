@@ -1,7 +1,5 @@
 # Agent 时代可观测性：ABA、统一上下文与 Guance AI Agent Teams
 
-## Ch04.776 Agent 时代可观测性：ABA、统一上下文与 Guance AI Agent Teams
-
 > 📊 Level ⭐⭐ | 3.4KB | `entities/agent-era-observability-guance-cloud.md`
 
 # Agent 时代可观测性：ABA、统一上下文与 Guance AI Agent Teams

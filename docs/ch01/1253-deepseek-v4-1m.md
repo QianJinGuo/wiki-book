@@ -1,7 +1,5 @@
 # DeepSeek V4 详解：1M 上下文背后，真正发生了什么
 
-## Ch01.1253 DeepSeek V4 详解：1M 上下文背后，真正发生了什么
-
 > 📊 Level ⭐⭐ | 4.5KB | `entities/deepseek-v4-详解1m-上下文背后真正发生了什么.md`
 
 # DeepSeek V4 详解：1M 上下文背后，真正发生了什么

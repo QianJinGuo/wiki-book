@@ -1,7 +1,5 @@
 # UniGOOD：统一图分布外泛化与检测框架（南开×北航，WWW 2026）
 
-## Ch01.1616 UniGOOD：统一图分布外泛化与检测框架（南开×北航，WWW 2026）
-
 > 📊 Level ⭐⭐⭐⭐ | 5.8KB | `entities/www-2026-unigood-unified-graph-ood-generalization-detection.md`
 
 # UniGOOD：统一图分布外泛化与检测框架（南开×北航，WWW 2026）

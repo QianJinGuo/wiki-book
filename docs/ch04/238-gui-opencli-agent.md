@@ -1,7 +1,5 @@
 # 浏览器自动化：从 GUI 到 OpenCLI — Agent 时代的可调用性竞争
 
-## Ch04.238 浏览器自动化：从 GUI 到 OpenCLI — Agent 时代的可调用性竞争
-
 > 📊 Level ⭐⭐ | 12.2KB | `entities/opencli-browser-automation-jingxing.md`
 
 # 浏览器自动化：从 GUI 到 OpenCLI — Agent 时代的可调用性竞争

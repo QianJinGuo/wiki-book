@@ -1,7 +1,5 @@
 # GPT-5.6 Sol：Workhorse vs Architect — Zvi 深度对比分析
 
-## Ch09.132 GPT-5.6 Sol：Workhorse vs Architect — Zvi 深度对比分析
-
 > 📊 Level ⭐⭐ | 7.0KB | `entities/better-call-sol-the-workhorse-openai-gpt-56-sol-vs-fable-zvi-2026.md`
 
 # GPT-5.6 Sol：Workhorse vs Architect — Zvi 深度对比分析

@@ -1,7 +1,5 @@
 # Enterprise Readiness Maturity Model
 
-## Ch11.224 Enterprise Readiness Maturity Model
-
 > 📊 Level ⭐⭐ | 5.4KB | `entities/enterprise-readiness-maturity-model.md`
 
 → （无原始来源）

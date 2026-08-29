@@ -1,7 +1,5 @@
 # 京东健康 OPC 团队产品全流程 Skill 探索
 
-## Ch07.031 京东健康 OPC 团队产品全流程 Skill 探索
-
 > 📊 Level ⭐⭐ | 10.4KB | `entities/jd-health-opc-skill-full-process.md`
 
 # 京东健康 OPC 团队产品全流程 Skill 探索

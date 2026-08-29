@@ -1,7 +1,5 @@
 # Hermes Agent 与 Agent Skill 设计解析
 
-## Ch04.270 Hermes Agent 与 Agent Skill 设计解析
-
 > 📊 Level ⭐⭐ | 11.4KB | `entities/hermes-agent-skill-design-analysis.md`
 
 # Hermes Agent 与 Agent Skill 设计解析

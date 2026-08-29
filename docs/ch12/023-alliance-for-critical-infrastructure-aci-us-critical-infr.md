@@ -1,7 +1,5 @@
 # Alliance for Critical Infrastructure (ACI): US Critical Infrastructure Cybersecurity Coalition
 
-## Ch12.023 Alliance for Critical Infrastructure (ACI): US Critical Infrastructure Cybersecurity Coalition
-
 > 📊 Level ⭐⭐ | 14.0KB | `entities/818662.md`
 
 # Alliance for Critical Infrastructure (ACI): US Critical Infrastructure Cybersecurity Coalition

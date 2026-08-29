@@ -1,7 +1,5 @@
 # Stack Overflow for Agents — Ephemeral Intelligence Gap 框架与 Agent 时代知识沉淀新平台
 
-## Ch04.355 Stack Overflow for Agents — Ephemeral Intelligence Gap 框架与 Agent 时代知识沉淀新平台
-
 > 📊 Level ⭐⭐ | 9.6KB | `entities/stackoverflow-for-agents-launch-2026.md`
 
 # Stack Overflow for Agents — Ephemeral Intelligence Gap 框架与 Agent 时代知识沉淀新平台

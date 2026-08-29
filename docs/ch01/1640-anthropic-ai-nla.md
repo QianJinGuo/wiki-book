@@ -1,7 +1,5 @@
 # Anthropic出手！AI的内心独白曝光了——NLA研究解读
 
-## Ch01.1640 Anthropic出手！AI的内心独白曝光了——NLA研究解读
-
 > 📊 Level ⭐⭐⭐⭐⭐ | 5.3KB | `entities/anthropic出手ai的内心独白曝光了.md`
 
 ## 概述

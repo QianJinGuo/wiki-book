@@ -1,7 +1,5 @@
 # Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%
 
-## Ch01.016 Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%
-
 > 📊 Level ⭐ | 10.5KB | `entities/anthropic-联创2028-年实现-ai-自我构建的概率超过-60.md`
 
 # Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%

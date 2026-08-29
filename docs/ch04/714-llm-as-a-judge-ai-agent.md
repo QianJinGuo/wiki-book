@@ -1,7 +1,5 @@
 # LLM-as-a-Judge 离线评估引擎：货拉拉 AI 外呼 Agent 实践
 
-## Ch04.714 LLM-as-a-Judge 离线评估引擎：货拉拉 AI 外呼 Agent 实践
-
 > 📊 Level ⭐⭐ | 4.2KB | `entities/llm-as-a-judge-agent-eval-offline-huolala-2026.md`
 
 # LLM-as-a-Judge 离线评估引擎：货拉拉 AI 外呼 Agent 实践

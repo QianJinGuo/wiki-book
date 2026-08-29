@@ -1,7 +1,5 @@
 # Tarot Pixel 视觉稿还原：上下文工程降噪 + 循环工程收敛
 
-## Ch01.636 Tarot Pixel 视觉稿还原：上下文工程降噪 + 循环工程收敛
-
 > 📊 Level ⭐⭐ | 9.8KB | `entities/tarot-pixel-context-loop-engineering-visual-reduction-aliyun-2026.md`
 
 # Tarot Pixel 视觉稿还原：上下文工程降噪 + 循环工程收敛

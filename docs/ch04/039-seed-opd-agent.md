@@ -1,7 +1,5 @@
 # 清华浙大等开源发布SEED：自进化OPD的长程Agent强化学习训练方法
 
-## Ch04.039 清华浙大等开源发布SEED：自进化OPD的长程Agent强化学习训练方法
-
 > 📊 Level ⭐ | 0.9KB | `entities/seed-self-evolving-opd-long-horizon-agent-rl-tsinghua-zju-2026.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/seed-self-evolving-opd-long-horizon-agent-rl-tsinghua-zju-2026.md)

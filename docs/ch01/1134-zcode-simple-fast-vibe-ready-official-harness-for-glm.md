@@ -1,7 +1,5 @@
 # ZCode - Simple, Fast, Vibe-Ready | Official Harness for GLM-5.2
 
-## Ch01.1134 ZCode - Simple, Fast, Vibe-Ready | Official Harness for GLM-5.2
-
 > 📊 Level ⭐⭐ | 5.4KB | `entities/zcode-glm-5-2-harness.md`
 
 # ZCode - Simple, Fast, Vibe-Ready | Official Harness for GLM-5.2

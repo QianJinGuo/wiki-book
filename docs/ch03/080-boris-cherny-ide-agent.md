@@ -1,7 +1,5 @@
 # Boris Cherny — 从 IDE 到 Agent 控制台
 
-## Ch03.080 Boris Cherny — 从 IDE 到 Agent 控制台
-
 > 📊 Level ⭐⭐ | 11.6KB | `entities/boris-cherny-ide-to-agent-console.md`
 
 ## 人物背景

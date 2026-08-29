@@ -1,7 +1,5 @@
 # 世界模型太慢？西交大提出Fast LeWorldModel：用「动作前缀并行预测」让动态估计加速4倍
 
-## Ch01.1362 世界模型太慢？西交大提出Fast LeWorldModel：用「动作前缀并行预测」让动态估计加速4倍
-
 > 📊 Level ⭐⭐ | 3.6KB | `entities/世界模型太慢西交大提出fast-leworldmodel用动作前缀并行预测让动态估计加速4倍.md`
 
 # 世界模型太慢？西交大提出Fast LeWorldModel：用「动作前缀并行预测」让动态估计加速4倍

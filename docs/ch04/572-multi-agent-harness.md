@@ -1,7 +1,5 @@
 # 数据研发 Multi-Agent 架构的 Harness 工程实践
 
-## Ch04.572 数据研发 Multi-Agent 架构的 Harness 工程实践
-
 > 📊 Level ⭐⭐ | 6.6KB | `entities/数据研发-multi-agent-harness-工程实践.md`
 
 # 数据研发 Multi-Agent 架构的 Harness 工程实践

@@ -1,7 +1,5 @@
 # Claude Code Subagent 上下文卫生
 
-## Ch06.056 Claude Code Subagent 上下文卫生
-
 > 📊 Level ⭐⭐⭐ | 10.2KB | `entities/claude-code-subagent-context-hygiene.md`
 
 ## 核心定位

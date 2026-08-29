@@ -1,7 +1,5 @@
 # Palantir Foundry 闭环操作范式：Ontology 三层 + 开源 Foundry MVP
 
-## Ch04.433 Palantir Foundry 闭环操作范式：Ontology 三层 + 开源 Foundry MVP
-
 > 📊 Level ⭐⭐ | 8.3KB | `entities/palantir-foundry-closed-loop-ontology-open-source-mvp-2026.md`
 
 # Palantir Foundry 闭环操作范式：Ontology 三层 + 开源 Foundry MVP

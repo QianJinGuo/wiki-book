@@ -1,7 +1,5 @@
 # 开启Harness Engineering探索之旅
 
-## Ch05.068 开启Harness Engineering探索之旅
-
 > 📊 Level ⭐⭐ | 9.4KB | `entities/harness-engineering-exploration-tencent-tech.md`
 
 # 开启Harness Engineering探索之旅

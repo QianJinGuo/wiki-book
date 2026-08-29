@@ -1,7 +1,5 @@
 # 五款浏览器自动化工具横向对比：browser-use / Playwright / chrome-devtools-mcp / agent-browser / BrowserAct
 
-## Ch04.002 五款浏览器自动化工具横向对比：browser-use / Playwright / chrome-devtools-mcp / agent-browser / BrowserAct
-
 > 📊 Level ⭐ | 11.7KB | `entities/four-browser-automation-tools-comparison.md`
 
 > 来源：[行小招 - 科技充电站](https://mp.weixin.qq.com/s/2aqrTvswa6FtqI-GK-EmvQ)，2026-05-19

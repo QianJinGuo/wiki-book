@@ -1,7 +1,5 @@
 # 5 Things to Know about the CLARITY Act
 
-## Ch01.139 5 Things to Know about the CLARITY Act
-
 > 📊 Level ⭐ | 5.1KB | `entities/5thingstoknowabouttheclarityact.md`
 
 ## 深度分析

@@ -1,7 +1,5 @@
 # 今天起，Claude正式接入Office全家桶，跨应用还能共享记忆
 
-## Ch01.1355 今天起，Claude正式接入Office全家桶，跨应用还能共享记忆
-
 > 📊 Level ⭐⭐ | 3.7KB | `entities/今天起claude正式接入office全家桶跨应用还能共享记忆.md`
 
 # 今天起，Claude正式接入Office全家桶，跨应用还能共享记忆

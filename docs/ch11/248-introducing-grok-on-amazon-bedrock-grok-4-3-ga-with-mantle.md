@@ -1,7 +1,5 @@
 # Introducing Grok on Amazon Bedrock — Grok 4.3 GA with Mantle Inference Engine
 
-## Ch11.248 Introducing Grok on Amazon Bedrock — Grok 4.3 GA with Mantle Inference Engine
-
 > 📊 Level ⭐⭐ | 5.0KB | `entities/grok-43-ga-amazon-bedrock.md`
 
 # Introducing Grok on Amazon Bedrock — Grok 4.3 GA with Mantle Inference Engine

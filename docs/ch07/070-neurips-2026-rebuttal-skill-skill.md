@@ -1,7 +1,5 @@
 # NeurIPS 2026 Rebuttal Skill — 开源论文回复 Skill 工作流
 
-## Ch07.070 NeurIPS 2026 Rebuttal Skill — 开源论文回复 Skill 工作流
-
 > 📊 Level ⭐⭐ | 6.5KB | `entities/neurips-2026-rebuttal-skill.md`
 
 # NeurIPS 2026 Rebuttal Skill — 开源论文回复 Skill 工作流

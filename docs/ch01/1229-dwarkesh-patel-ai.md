@@ -1,7 +1,5 @@
 # Dwarkesh Patel：下一代AI，可能是干活干出来的
 
-## Ch01.1229 Dwarkesh Patel：下一代AI，可能是干活干出来的
-
 > 📊 Level ⭐⭐ | 4.8KB | `entities/dwarkesh-patel下一代ai可能是干活干出来的.md`
 
 # Dwarkesh Patel：下一代AI，可能是干活干出来的

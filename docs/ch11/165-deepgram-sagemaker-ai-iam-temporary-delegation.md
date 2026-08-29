@@ -1,7 +1,5 @@
 # Deepgram SageMaker AI IAM Temporary Delegation
 
-## Ch11.165 Deepgram SageMaker AI IAM Temporary Delegation
-
 > 📊 Level ⭐⭐ | 7.4KB | `entities/deepgram-sagemaker-ai-iam-temporary-delegation.md`
 
 # Deepgram SageMaker AI IAM Temporary Delegation 集成

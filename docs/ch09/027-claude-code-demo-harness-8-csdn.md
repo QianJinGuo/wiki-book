@@ -1,7 +1,5 @@
 # Claude Code 从 Demo 到产线 · 企业 Harness 工程化的 8 道关卡（黄佳/咖哥 CSDN）
 
-## Ch09.027 Claude Code 从 Demo 到产线 · 企业 Harness 工程化的 8 道关卡（黄佳/咖哥 CSDN）
-
 > 📊 Level ⭐⭐ | 18.7KB | `entities/claude-code-demo-to-production-8-gates-huang-jia-csdn-2026.md`
 
 ## 核心定位

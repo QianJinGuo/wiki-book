@@ -1,7 +1,5 @@
 # 向量数据库选型：Chroma vs Qdrant
 
-## Ch11.199 向量数据库选型：Chroma vs Qdrant
-
 > 📊 Level ⭐⭐ | 6.2KB | `entities/vector-db-chroma-vs-qdrant.md`
 
 

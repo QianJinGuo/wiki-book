@@ -1,7 +1,5 @@
 # 浏览器自动化：从GUI到OpenCLI
 
-## Ch01.1292 浏览器自动化：从GUI到OpenCLI
-
 > 📊 Level ⭐⭐ | 4.1KB | `entities/浏览器自动化从gui到opencli.md`
 
 # 浏览器自动化：从GUI到OpenCLI

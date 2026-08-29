@@ -1,7 +1,5 @@
 # CyberSecQwen-4B: Why Defensive Cyber Needs Small, Specialized, Locally-Runnable Models
 
-## Ch01.043 CyberSecQwen-4B: Why Defensive Cyber Needs Small, Specialized, Locally-Runnable Models
-
 > 📊 Level ⭐ | 8.7KB | `entities/cybersecqwen-4b-why-defensive-cyber-needs-small-specialized-locally-runnable-mod.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cybersecqwen-4b-why-defensive-cyber-needs-small-specialized-locally-runnable-mod.md)

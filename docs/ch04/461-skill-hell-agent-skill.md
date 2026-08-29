@@ -1,7 +1,5 @@
 # Skill Hell：Agent Skill 工程方法论
 
-## Ch04.461 Skill Hell：Agent Skill 工程方法论
-
 > 📊 Level ⭐⭐ | 8.0KB | `entities/skill-hell-agent-skill-engineering-ruofei.md`
 
 > 本文基于 Matt Pocock 的 "writing-great-skills" 与 AI Engineer World's Fair 2026 Keynote，由公众号"架构师"（若飞）深度解读，系统梳理了 Agent Skill 从设计、触发、执行、维护到安全审计的工程方法论。

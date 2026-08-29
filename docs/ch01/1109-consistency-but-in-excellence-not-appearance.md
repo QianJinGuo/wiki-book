@@ -1,7 +1,5 @@
 # Consistency, But in Excellence Not Appearance
 
-## Ch01.1109 Consistency, But in Excellence Not Appearance
-
 > 📊 Level ⭐⭐ | 5.7KB | `entities/consistency-excellence-jim-nielsen.md`
 
 # Consistency, But in Excellence Not Appearance

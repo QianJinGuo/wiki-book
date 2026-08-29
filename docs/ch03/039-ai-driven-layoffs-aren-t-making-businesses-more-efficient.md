@@ -1,7 +1,5 @@
 # AI-Driven Layoffs Aren't Making Businesses More Efficient
 
-## Ch03.039 AI-Driven Layoffs Aren't Making Businesses More Efficient
-
 > 📊 Level ⭐ | 5.7KB | `entities/www.cio-4171054-ai-driven-layoffs-arent-making-bus.md`
 
 ## 摘要

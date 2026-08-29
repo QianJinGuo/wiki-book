@@ -1,7 +1,5 @@
 # AI 的形状：Jagged Frontier·Bottleneck·Reverse Salient（Mollick）
 
-## Ch06.017 AI 的形状：Jagged Frontier·Bottleneck·Reverse Salient（Mollick）
-
 > 📊 Level ⭐⭐ | 12.2KB | `entities/jagged-ai-frontier-mollick.md`
 
 # AI 的形状：Jagged Frontier·Bottleneck·Reverse Salient（Mollick）

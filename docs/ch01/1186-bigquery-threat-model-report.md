@@ -1,7 +1,5 @@
 # BigQuery Threat Model Report
 
-## Ch01.1186 BigQuery Threat Model Report
-
 > 📊 Level ⭐⭐ | 5.1KB | `entities/google-bigquery-threat-model.md`
 
 ## 深度分析

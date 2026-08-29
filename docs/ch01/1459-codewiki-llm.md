@@ -1,7 +1,5 @@
 # CodeWiki: 为 LLM 自动生成代码知识库的工程实践
 
-## Ch01.1459 CodeWiki: 为 LLM 自动生成代码知识库的工程实践
-
 > 📊 Level ⭐⭐ | 0.9KB | `entities/codewiki-llm-code-knowledge-base-gaode-2026-07-22.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/codewiki-llm-code-knowledge-base-gaode-2026-07-22.md)

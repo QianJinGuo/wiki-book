@@ -1,7 +1,5 @@
 # AWS 正式发布 Lambda MicroVMs：面向 AI 时代的无服务器安全代码执行环境
 
-## Ch11.092 AWS 正式发布 Lambda MicroVMs：面向 AI 时代的无服务器安全代码执行环境
-
 > 📊 Level ⭐⭐ | 10.4KB | `entities/aws-正式发布-lambda-microvms面向-ai-时代的无服务器安全代码执行环境.md`
 
 # AWS 正式发布 Lambda MicroVMs：面向 AI 时代的无服务器安全代码执行环境

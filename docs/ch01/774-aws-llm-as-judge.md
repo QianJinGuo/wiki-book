@@ -1,7 +1,5 @@
 # AWS 强化微调：LLM-as-Judge 训练范式
 
-## Ch01.774 AWS 强化微调：LLM-as-Judge 训练范式
-
 > 📊 Level ⭐⭐ | 8.1KB | `entities/aws-reinforcement-fine-tuning-llm-as-judge.md`
 
 # Reinforcement fine-tuning with LLM-as-a-judge

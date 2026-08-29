@@ -1,7 +1,5 @@
 # Rod Johnson 回归：Embabel 与「最后一波由人类选择的框架」
 
-## Ch01.1376 Rod Johnson 回归：Embabel 与「最后一波由人类选择的框架」
-
 > 📊 Level ⭐⭐ | 3.6KB | `entities/embabel-rod-johnson-framework-era-interview.md`
 
 # Rod Johnson 回归：Embabel 与「最后一波由人类选择的框架」

@@ -1,7 +1,5 @@
 # OpenWorker — 吴恩达开源桌面 Agent：Local-First 运行时与四层控制架构
 
-## Ch04.277 OpenWorker — 吴恩达开源桌面 Agent：Local-First 运行时与四层控制架构
-
 > 📊 Level ⭐⭐ | 11.2KB | `entities/openworker-desktop-agent-local-first-architecture-ruofei-2026.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openworker-desktop-agent-local-first-architecture-ruofei-2026.md)

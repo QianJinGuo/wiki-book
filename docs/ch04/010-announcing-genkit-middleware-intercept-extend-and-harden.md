@@ -1,7 +1,5 @@
 # Announcing Genkit Middleware: Intercept, extend, and harden your agentic apps
 
-## Ch04.010 Announcing Genkit Middleware: Intercept, extend, and harden your agentic apps
-
 > 📊 Level ⭐ | 8.5KB | `entities/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps.md`
 
 > -> [Announcing Genkit Middleware: Intercept, extend, and harden your agentic apps](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps.md)

@@ -1,7 +1,5 @@
 # Netflix Switchboard → Lightbulb: 百万请求/秒 ML 模型路由架构演进
 
-## Ch11.075 Netflix Switchboard → Lightbulb: 百万请求/秒 ML 模型路由架构演进
-
 > 📊 Level ⭐⭐ | 10.9KB | `entities/netflix-switchboard-lightbulb-model-routing.md`
 
 # Netflix Switchboard → Lightbulb: 百万请求/秒 ML 模型路由架构演进

@@ -1,7 +1,5 @@
 # eBay 生成式检索（GR）工业实践：RQ-VAE 语义 ID + 20 亿商品全量训练
 
-## Ch01.1583 eBay 生成式检索（GR）工业实践：RQ-VAE 语义 ID + 20 亿商品全量训练
-
 > 📊 Level ⭐⭐⭐ | 3.3KB | `entities/ebay-generative-retrieval-rq-vae-semantic-id-2026-06-30.md`
 
 # eBay 生成式检索（GR）工业实践：RQ-VAE 语义 ID + 20 亿商品全量训练

@@ -1,7 +1,5 @@
 # MattPocock Skills
 
-## Ch04.775 MattPocock Skills
-
 > 📊 Level ⭐⭐ | 3.5KB | `entities/mattpocock-skills.md`
 
 # MattPocock Skills

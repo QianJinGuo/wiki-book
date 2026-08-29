@@ -1,7 +1,5 @@
 # Generalization Dynamics of LM Pre-training — Jiaxin Wen
 
-## Ch01.329 Generalization Dynamics of LM Pre-training — Jiaxin Wen
-
 > 📊 Level ⭐ | 0.7KB | `entities/generalization-dynamics-of-lm-pre-training-jiaxin-wen-1.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/generalization-dynamics-of-lm-pre-training-jiaxin-wen-1.md)

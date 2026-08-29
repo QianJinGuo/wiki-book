@@ -1,7 +1,5 @@
 # Task Queue Priority and Fairness: Your Task Queue, your way
 
-## Ch11.266 Task Queue Priority and Fairness: Your Task Queue, your way
-
 > 📊 Level ⭐⭐ | 3.7KB | `entities/task-queue-priority-and-fairness-your-task-queue.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/task-queue-priority-and-fairness-your-task-queue.md)

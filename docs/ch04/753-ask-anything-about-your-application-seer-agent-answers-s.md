@@ -1,7 +1,5 @@
 # Ask anything about your application — Seer Agent answers | Sentry
 
-## Ch04.753 Ask anything about your application — Seer Agent answers | Sentry
-
 > 📊 Level ⭐⭐ | 3.7KB | `entities/seer-agent-workshop.md`
 
 ## 深度分析

@@ -1,7 +1,5 @@
 # Turn repeated instructions into reusable skills in Lovable | Lovable
 
-## Ch03.021 Turn repeated instructions into reusable skills in Lovable | Lovable
-
 > 📊 Level ⭐ | 8.0KB | `entities/turn-repeated-instructions-into-reusable-skills-in-lovable-l.md`
 
 ## 核心要点

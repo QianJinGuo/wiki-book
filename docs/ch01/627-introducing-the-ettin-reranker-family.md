@@ -1,7 +1,5 @@
 # Introducing the Ettin Reranker Family
 
-## Ch01.627 Introducing the Ettin Reranker Family
-
 > 📊 Level ⭐⭐ | 9.9KB | `entities/introducing-the-ettin-reranker-family.md`
 
 ## 核心要点

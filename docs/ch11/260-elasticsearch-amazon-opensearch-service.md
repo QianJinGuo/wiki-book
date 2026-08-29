@@ -1,7 +1,5 @@
 # 从自建 Elasticsearch 迁移到 Amazon OpenSearch Service 实践（一）：数据迁移与同步
 
-## Ch11.260 从自建 Elasticsearch 迁移到 Amazon OpenSearch Service 实践（一）：数据迁移与同步
-
 > 📊 Level ⭐⭐ | 3.8KB | `entities/elasticsearch-migration-amazon-opensearch-service-1.md`
 
 # 从自建 Elasticsearch 迁移到 Amazon OpenSearch Service 实践（一）：数据迁移与同步

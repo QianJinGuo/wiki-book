@@ -1,7 +1,5 @@
 # 如何基于Trace归因Agent效果问题
 
-## Ch04.031 如何基于Trace归因Agent效果问题
-
 > 📊 Level ⭐ | 1.1KB | `entities/trace-based-causal-attribution-agent-effects-2026-07-16.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/trace-based-causal-attribution-agent-effects-2026-07-16.md)

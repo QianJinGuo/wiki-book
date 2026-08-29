@@ -1,7 +1,5 @@
 # Amazon Bedrock AgentCore 数据持久化文件系统：Session Storage、EFS、S3 Files
 
-## Ch04.744 Amazon Bedrock AgentCore 数据持久化文件系统：Session Storage、EFS、S3 Files
-
 > 📊 Level ⭐⭐ | 3.8KB | `entities/amazon-bedrock-agentcore-data-persistence-file-system-session-storage-efs-s3.md`
 
 # Amazon Bedrock AgentCore 数据持久化文件系统：Session Storage、EFS、S3 Files

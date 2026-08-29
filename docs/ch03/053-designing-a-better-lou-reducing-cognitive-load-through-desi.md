@@ -1,7 +1,5 @@
 # Designing A Better Lou: Reducing Cognitive Load Through Design, Content, and Systems
 
-## Ch03.053 Designing A Better Lou: Reducing Cognitive Load Through Design, Content, and Systems
-
 > 📊 Level ⭐ | 1.0KB | `entities/designing-better-lou-cognitive-load-design-systems.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/designing-better-lou-cognitive-load-design-systems.md)

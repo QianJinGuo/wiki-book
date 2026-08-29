@@ -1,7 +1,5 @@
 # Claude Code 多智能体协作体系设计：从单Agent到多Agent工作流
 
-## Ch01.1475 Claude Code 多智能体协作体系设计：从单Agent到多Agent工作流
-
 > 📊 Level ⭐⭐⭐ | 17.0KB | `entities/claude-code-multi-agent-collaboration-多智能体协作体系设计.md`
 
 ## 概述

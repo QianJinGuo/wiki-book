@@ -1,7 +1,5 @@
 # 百度百舸 Cosmos3-Super 512 卡 Scaling：无 NVLink 通用 GPU 集群的 AI Infra 工程优化
 
-## Ch11.324 百度百舸 Cosmos3-Super 512 卡 Scaling：无 NVLink 通用 GPU 集群的 AI Infra 工程优化
-
 > 📊 Level ⭐⭐⭐⭐ | 4.9KB | `entities/baidu-baige-cosmos3-super-512gpu-scaling-2026.md`
 
 # 百度百舸 Cosmos3-Super 512 卡 Scaling：无 NVLink 通用 GPU 集群的 AI Infra 工程优化

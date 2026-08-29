@@ -1,7 +1,5 @@
 # Claude Code Agent View
 
-## Ch09.003 Claude Code Agent View
-
 > 📊 Level ⭐ | 8.2KB | `entities/claude-code-agent-view.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-agent-view-huashu.md)

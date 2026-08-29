@@ -1,7 +1,5 @@
 # Codex Goal Six Hour Run
 
-## Ch09.068 Codex Goal Six Hour Run
-
 > 📊 Level ⭐⭐ | 10.9KB | `entities/codex-goal-six-hour-run.md`
 
 ## 概述

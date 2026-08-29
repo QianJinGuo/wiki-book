@@ -1,7 +1,5 @@
 # 火山引擎 PostgreSQL Serverless 为 AI Vibe Coding 重塑数据库底座
 
-## Ch11.267 火山引擎 PostgreSQL Serverless 为 AI Vibe Coding 重塑数据库底座
-
 > 📊 Level ⭐⭐ | 4.0KB | `entities/volcengine-postgresql-serverless-feishu-ai-vibe-coding-2026.md`
 
 # 火山引擎 PostgreSQL Serverless 为 AI Vibe Coding 重塑数据库底座

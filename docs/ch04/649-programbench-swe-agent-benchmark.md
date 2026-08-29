@@ -1,7 +1,5 @@
 # Programbench Swe Agent Benchmark
 
-## Ch04.649 Programbench Swe Agent Benchmark
-
 > 📊 Level ⭐⭐ | 5.3KB | `entities/programbench-swe-agent-benchmark.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/programbench-swe-agent-benchmark.md)

@@ -1,7 +1,5 @@
 # Claude Code 静默识别中国 API 路由
 
-## Ch09.090 Claude Code 静默识别中国 API 路由
-
 > 📊 Level ⭐⭐ | 8.9KB | `entities/claude-code-china-api-router-fingerprint.md`
 
 # Claude Code 静默识别中国 API 路由

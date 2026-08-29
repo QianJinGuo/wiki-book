@@ -1,7 +1,5 @@
 # 用好 Qoder Credits：优化的不是花费多少，而是单位 Credits 的产出
 
-## Ch09.200 用好 Qoder Credits：优化的不是花费多少，而是单位 Credits 的产出
-
 > 📊 Level ⭐⭐⭐ | 4.7KB | `entities/用好-qoder-credits优化的不是花费多少而是单位-credits-的产出.md`
 
 # 用好 Qoder Credits：优化的不是花费多少，而是单位 Credits 的产出

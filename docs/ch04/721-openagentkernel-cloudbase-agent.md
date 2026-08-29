@@ -1,7 +1,5 @@
 # OpenAgentKernel：腾讯云 CloudBase 的 Agent 开发框架层
 
-## Ch04.721 OpenAgentKernel：腾讯云 CloudBase 的 Agent 开发框架层
-
 > 📊 Level ⭐⭐ | 4.1KB | `entities/open-agent-kernel-cloudbase-tencent-2026.md`
 
 # OpenAgentKernel：腾讯云 CloudBase 的 Agent 开发框架层

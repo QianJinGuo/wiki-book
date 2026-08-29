@@ -1,7 +1,5 @@
 # Learning to Replicate Expert Judgment in Financial Tasks - Thinking Machines Lab
 
-## Ch01.182 Learning to Replicate Expert Judgment in Financial Tasks - Thinking Machines Lab
-
 > 📊 Level ⭐ | 2.9KB | `entities/learning-to-replicate-expert-judgment-in-financial-tasks.md`
 
 # Learning to Replicate Expert Judgment in Financial Tasks - Thinking Machines Lab

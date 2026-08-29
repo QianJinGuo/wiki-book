@@ -1,7 +1,5 @@
 # 拒绝“感觉有效”：用数据证明 AI Coding 的真实团队价值【天猫AI Coding实践系列】
 
-## Ch01.1010 拒绝“感觉有效”：用数据证明 AI Coding 的真实团队价值【天猫AI Coding实践系列】
-
 > 📊 Level ⭐⭐ | 6.4KB | `entities/拒绝感觉有效用数据证明-ai-coding-的真实团队价值天猫ai-coding实践系列.md`
 
 # 拒绝“感觉有效”：用数据证明 AI Coding 的真实团队价值【天猫AI Coding实践系列】

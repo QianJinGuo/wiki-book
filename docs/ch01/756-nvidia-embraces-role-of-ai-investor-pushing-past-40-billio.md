@@ -1,7 +1,5 @@
 # Nvidia embraces role of AI investor, pushing past $40 billion in equity bets this year
 
-## Ch01.756 Nvidia embraces role of AI investor, pushing past $40 billion in equity bets this year
-
 > 📊 Level ⭐⭐ | 8.3KB | `entities/nvidia-embraces-ai-investor-topping-40-billion-in-equity-bets-2026.md`
 
 # Nvidia embraces role of AI investor, pushing past $40 billion in equity bets this year

@@ -1,7 +1,5 @@
 # Toto 2: Context-aware log analytics for complex distributed systems
 
-## Ch11.189 Toto 2: Context-aware log analytics for complex distributed systems
-
 > 📊 Level ⭐⭐ | 7.4KB | `entities/toto-2-context-aware-log-analytics-for-complex-distributed-systems.md`
 
 ## 核心要点

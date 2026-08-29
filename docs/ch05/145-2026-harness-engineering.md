@@ -1,7 +1,5 @@
 # 为什么 2026 年真正重要的是 Harness Engineering？
 
-## Ch05.145 为什么 2026 年真正重要的是 Harness Engineering？
-
 > 📊 Level ⭐⭐⭐ | 12.7KB | `entities/harness-engineering-2026-why-it-matters.md`
 
 # 为什么 2026 年真正重要的是 Harness Engineering？

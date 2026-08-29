@@ -1,7 +1,5 @@
 # 你写的 Skill，及格了吗？
 
-## Ch07.065 你写的 Skill，及格了吗？
-
 > 📊 Level ⭐⭐ | 7.1KB | `entities/ni-xie-de-skill-ji-ge-liao-ma.md`
 
 ## 核心概念

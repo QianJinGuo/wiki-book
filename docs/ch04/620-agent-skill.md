@@ -1,7 +1,5 @@
 # Agent Skill 规范、构建与设计模式
 
-## Ch04.620 Agent Skill 规范、构建与设计模式
-
 > 📊 Level ⭐⭐ | 5.8KB | `entities/agent-skill-spec-building-design-patterns.md`
 
 # Agent Skill 规范、构建与设计模式

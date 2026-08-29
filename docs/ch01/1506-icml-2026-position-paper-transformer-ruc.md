@@ -1,7 +1,5 @@
 # ICML 2026 Position Paper — Transformer 图灵完备性高度依赖上下文管理 (RUC 魏哲巍团队)
 
-## Ch01.1506 ICML 2026 Position Paper — Transformer 图灵完备性高度依赖上下文管理 (RUC 魏哲巍团队)
-
 > 📊 Level ⭐⭐⭐ | 10.4KB | `entities/icml-2026-position-turing-completeness-context-management-ruc-wei-2026.md`
 
 ## 概述

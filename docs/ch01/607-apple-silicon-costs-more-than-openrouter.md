@@ -1,7 +1,5 @@
 # Apple Silicon costs more than OpenRouter
 
-## Ch01.607 Apple Silicon costs more than OpenRouter
-
 > 📊 Level ⭐⭐ | 10.2KB | `entities/apple-silicon-costs-more-than-openrouter.md`
 
 ## 核心发现：本地推理成本是云端的 3~10 倍

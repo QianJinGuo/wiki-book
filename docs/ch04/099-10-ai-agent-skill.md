@@ -1,7 +1,5 @@
 # 10篇论文看懂AI Agent Skill：表示、执行、评估与进化
 
-## Ch04.099 10篇论文看懂AI Agent Skill：表示、执行、评估与进化
-
 > 📊 Level ⭐⭐ | 26.7KB | `entities/skill-formal-theory-survey-10papers.md`
 
 [Skill Formal Theory Survey 10Papers](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-formal-theory-survey-10papers.md)

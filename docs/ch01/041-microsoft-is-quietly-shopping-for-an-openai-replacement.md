@@ -1,7 +1,5 @@
 # Microsoft is quietly shopping for an OpenAI replacement
 
-## Ch01.041 Microsoft is quietly shopping for an OpenAI replacement
-
 > 📊 Level ⭐ | 8.7KB | `entities/microsoft-is-quietly-shopping-for-an-openai-replac.md`
 
 ## 核心要点

@@ -1,7 +1,5 @@
 # OpenSandbox：阿里开源的云端 Agent 安全沙箱（凭据 Vault + egress sidecar）
 
-## Ch12.116 OpenSandbox：阿里开源的云端 Agent 安全沙箱（凭据 Vault + egress sidecar）
-
 > 📊 Level ⭐⭐ | 4.5KB | `entities/opensandbox-aliyun-cloud-agent-sandbox-vibecoder.md`
 
 # OpenSandbox：阿里开源的云端 Agent 安全沙箱（凭据 Vault + egress sidecar）

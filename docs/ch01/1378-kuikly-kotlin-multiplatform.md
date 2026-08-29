@@ -1,7 +1,5 @@
 # Kuikly — 腾讯开源跨端框架（Kotlin Multiplatform）
 
-## Ch01.1378 Kuikly — 腾讯开源跨端框架（Kotlin Multiplatform）
-
 > 📊 Level ⭐⭐ | 3.6KB | `entities/kuikly-tencent-cross-platform-kotlin-multiplatform.md`
 
 # Kuikly — 腾讯开源跨端框架（Kotlin Multiplatform）

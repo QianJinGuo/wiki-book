@@ -1,7 +1,5 @@
 # PyTorch 2.12 Release Blog
 
-## Ch01.387 PyTorch 2.12 Release Blog
-
 > 📊 Level ⭐⭐ | 27.0KB | `entities/pytorch-2-12-release.md`
 
 ### Featured projects

@@ -1,7 +1,5 @@
 # Agent 安全三步法：先 Harness、再 Governance、最后 Identity（顺序反了一切白做）
 
-## Ch04.232 Agent 安全三步法：先 Harness、再 Governance、最后 Identity（顺序反了一切白做）
-
 > 📊 Level ⭐⭐ | 12.4KB | `entities/agent-security-three-step-sequence-harness-governance-identity-crewai.md`
 
 # Agent 安全三步法：先 Harness、再 Governance、最后 Identity

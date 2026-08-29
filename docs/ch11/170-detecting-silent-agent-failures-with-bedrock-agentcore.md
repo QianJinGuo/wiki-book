@@ -1,7 +1,5 @@
 # Detecting Silent Agent Failures with Bedrock AgentCore
 
-## Ch11.170 Detecting Silent Agent Failures with Bedrock AgentCore
-
 > 📊 Level ⭐⭐ | 7.7KB | `entities/detecting-silent-agent-failures-with-amazon-bedrock-agentcor.md`
 
 # Detecting Silent Agent Failures with Bedrock AgentCore

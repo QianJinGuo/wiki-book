@@ -1,7 +1,5 @@
 # Haptics design and implementation - Microsoft Design
 
-## Ch01.758 Haptics design and implementation - Microsoft Design
-
 > 📊 Level ⭐⭐ | 8.2KB | `entities/haptics-design-implementation-microsoft-windows11.md`
 
 # Haptics Design and Implementation — Microsoft Windows 11

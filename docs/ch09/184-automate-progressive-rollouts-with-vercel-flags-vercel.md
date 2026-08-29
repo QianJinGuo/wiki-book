@@ -1,7 +1,5 @@
 # Automate progressive rollouts with Vercel Flags - Vercel
 
-## Ch09.184 Automate progressive rollouts with Vercel Flags - Vercel
-
 > 📊 Level ⭐⭐ | 4.0KB | `entities/automate-progressive-rollouts-with-vercel-flags-vercel.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/automate-progressive-rollouts-with-vercel-flags-vercel.md)

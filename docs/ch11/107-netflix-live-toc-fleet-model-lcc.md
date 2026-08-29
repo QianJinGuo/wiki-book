@@ -1,7 +1,5 @@
 # Netflix Live 运营体系：TOC Fleet Model 与 LCC 分层指挥架构
 
-## Ch11.107 Netflix Live 运营体系：TOC Fleet Model 与 LCC 分层指挥架构
-
 > 📊 Level ⭐⭐ | 9.4KB | `entities/netflix-live-operations-human-infrastructure.md`
 
 # Netflix Live 运营体系：TOC Fleet Model 与 LCC 分层指挥架构

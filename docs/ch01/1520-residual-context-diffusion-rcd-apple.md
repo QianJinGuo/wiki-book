@@ -1,7 +1,5 @@
 # Residual Context Diffusion (RCD)：Apple 残差上下文扩散语言模型
 
-## Ch01.1520 Residual Context Diffusion (RCD)：Apple 残差上下文扩散语言模型
-
 > 📊 Level ⭐⭐⭐ | 9.3KB | `entities/residual-context-diffusion-apple-ml-2026-07.md`
 
 # Residual Context Diffusion (RCD)：Apple 残差上下文扩散语言模型

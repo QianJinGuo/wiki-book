@@ -1,7 +1,5 @@
 # Agent 时代的生产力悖论：协作成为新瓶颈
 
-## Ch03.006 Agent 时代的生产力悖论：协作成为新瓶颈
-
 > 📊 Level ⭐ | 12.5KB | `entities/agent-productivity-paradox-collaboration-bottleneck.md`
 
 # Agent 时代的生产力悖论：协作成为新瓶颈

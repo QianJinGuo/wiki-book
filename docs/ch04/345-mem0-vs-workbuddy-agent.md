@@ -1,7 +1,5 @@
 # Mem0 vs WorkBuddy：Agent 记忆层的两条路线，谁才是终极答案？
 
-## Ch04.345 Mem0 vs WorkBuddy：Agent 记忆层的两条路线，谁才是终极答案？
-
 > 📊 Level ⭐⭐ | 9.7KB | `entities/mem0-vs-workbuddyagent-记忆层的两条路线谁才是终极答案.md`
 
 # Mem0 vs WorkBuddy：Agent 记忆层的两条路线，谁才是终极答案？

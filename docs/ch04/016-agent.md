@@ -1,7 +1,5 @@
 # 这个开源 Agent 框架的核心设计，可能是目前最「聪明」的取舍
 
-## Ch04.016 这个开源 Agent 框架的核心设计，可能是目前最「聪明」的取舍
-
 > 📊 Level ⭐ | 6.3KB | `entities/pi-agent-framework-event-bus-design.md`
 
 # 这个开源 Agent 框架的核心设计，可能是目前最「聪明」的取舍

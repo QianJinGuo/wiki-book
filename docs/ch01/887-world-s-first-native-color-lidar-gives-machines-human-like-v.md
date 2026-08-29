@@ -1,7 +1,5 @@
 # World’s first native color LiDAR gives machines human-like vision
 
-## Ch01.887 World’s first native color LiDAR gives machines human-like vision
-
 > 📊 Level ⭐⭐ | 7.2KB | `entities/technology-ouster-rev8-native-color-lidar.md`
 
 # World’s first native color LiDAR gives machines human-like vision

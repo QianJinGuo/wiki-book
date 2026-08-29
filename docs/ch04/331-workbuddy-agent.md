@@ -1,7 +1,5 @@
 # 腾讯 WorkBuddy 实践：如何把 Agent 做成可用产品
 
-## Ch04.331 腾讯 WorkBuddy 实践：如何把 Agent 做成可用产品
-
 > 📊 Level ⭐⭐ | 10.0KB | `entities/腾讯-workbuddy-agent产品化-上下文工程.md`
 
 # 腾讯 WorkBuddy 实践：如何把 Agent 做成可用产品

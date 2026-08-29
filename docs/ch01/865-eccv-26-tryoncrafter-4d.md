@@ -1,7 +1,5 @@
 # ECCV'26 | 为视频虚拟试衣解锁自由视角，TryOnCrafter玩转4D试衣代理
 
-## Ch01.865 ECCV'26 | 为视频虚拟试衣解锁自由视角，TryOnCrafter玩转4D试衣代理
-
 > 📊 Level ⭐⭐ | 7.5KB | `entities/eccv26-为视频虚拟试衣解锁自由视角tryoncrafter玩转4d试衣代理.md`
 
 # ECCV'26 | 为视频虚拟试衣解锁自由视角，TryOnCrafter玩转4D试衣代理

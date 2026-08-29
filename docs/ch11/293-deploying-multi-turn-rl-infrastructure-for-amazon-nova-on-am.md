@@ -1,7 +1,5 @@
 # Deploying Multi-Turn RL Infrastructure for Amazon Nova on Amazon SageMaker HyperPod
 
-## Ch11.293 Deploying Multi-Turn RL Infrastructure for Amazon Nova on Amazon SageMaker HyperPod
-
 > 📊 Level ⭐⭐⭐ | 7.3KB | `entities/deploying-multi-turn-rl-infrastructure-for-amazon-nova-on-amazon-sagemaker-hyper.md`
 
 # Deploying Multi-Turn RL Infrastructure for Amazon Nova on Amazon SageMaker HyperPod

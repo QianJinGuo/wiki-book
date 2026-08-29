@@ -1,7 +1,5 @@
 # Stripe 高管 Emily Sands：agent 是互联网的新经济主体 — 5 套基础设施全面上线
 
-## Ch04.761 Stripe 高管 Emily Sands：agent 是互联网的新经济主体 — 5 套基础设施全面上线
-
 > 📊 Level ⭐⭐ | 3.6KB | `entities/stripe-agent-economic-infrastructure-emily-sands.md`
 
 # Stripe 高管 Emily Sands：agent 是互联网的新经济主体 — 5 套基础设施全面上线

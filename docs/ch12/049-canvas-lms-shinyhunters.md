@@ -1,7 +1,5 @@
 # Canvas LMS 攻击者 ShinyHunters 官方域名被暂停：转向暗网的运营安全转向
 
-## Ch12.049 Canvas LMS 攻击者 ShinyHunters 官方域名被暂停：转向暗网的运营安全转向
-
 > 📊 Level ⭐⭐ | 8.8KB | `entities/canvas-hackers-shinyhunters-say-their-official-domain-suspen.md`
 
 # Canvas LMS 攻击者 ShinyHunters 官方域名被暂停：转向暗网的运营安全转向

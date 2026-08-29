@@ -1,7 +1,5 @@
 # Lessons From 2 Billion Agentic Workflows
 
-## Ch04.539 Lessons From 2 Billion Agentic Workflows
-
 > 📊 Level ⭐⭐ | 7.1KB | `entities/lessons-from-2-billion-agentic-workflows.md`
 
 # Lessons From 2 Billion Agentic Workflows

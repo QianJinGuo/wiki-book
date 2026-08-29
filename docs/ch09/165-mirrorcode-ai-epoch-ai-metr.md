@@ -1,7 +1,5 @@
 # MirrorCode: AI 从行为重建完整程序的长时程基准（Epoch AI × METR）
 
-## Ch09.165 MirrorCode: AI 从行为重建完整程序的长时程基准（Epoch AI × METR）
-
 > 📊 Level ⭐⭐ | 4.8KB | `entities/mirrorcode-long-horizon-benchmark-epoch-ai-metr.md`
 
 # MirrorCode: AI 从行为重建完整程序的长时程基准（Epoch AI × METR）

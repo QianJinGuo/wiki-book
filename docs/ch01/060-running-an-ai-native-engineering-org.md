@@ -1,7 +1,5 @@
 # Running an AI-native engineering org
 
-## Ch01.060 Running an AI-native engineering org
-
 > 📊 Level ⭐ | 8.1KB | `entities/running-an-ai-native-engineering-org.md`
 
 # Running an AI-native engineering org

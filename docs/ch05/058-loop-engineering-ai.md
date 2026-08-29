@@ -1,7 +1,5 @@
 # Loop Engineering 会是 AI 的下个关键词吗？
 
-## Ch05.058 Loop Engineering 会是 AI 的下个关键词吗？
-
 > 📊 Level ⭐⭐ | 10.5KB | `entities/loop-engineering-next-keyword-for-ai-2026.md`
 
 # Loop Engineering 会是 AI 的下个关键词吗？

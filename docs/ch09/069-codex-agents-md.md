@@ -1,7 +1,5 @@
 # Codex AGENTS.md 项目说明书完整指南
 
-## Ch09.069 Codex AGENTS.md 项目说明书完整指南
-
 > 📊 Level ⭐⭐ | 10.9KB | `entities/codex-agentsmd-project-instructions-rookie.md`
 
 # Codex AGENTS.md 项目说明书完整指南

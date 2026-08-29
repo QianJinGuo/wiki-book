@@ -1,7 +1,5 @@
 # 开源 Claude Code 本地代码知识图谱：code-review-graph 完整上手攻略
 
-## Ch01.983 开源 Claude Code 本地代码知识图谱：code-review-graph 完整上手攻略
-
 > 📊 Level ⭐⭐ | 6.6KB | `entities/code-review-graph-upper-intermediate-guide-20260513.md`
 
 # 开源 Claude Code 本地代码知识图谱：code-review-graph 完整上手攻略

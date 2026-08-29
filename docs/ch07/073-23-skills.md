@@ -1,7 +1,5 @@
 # 李继刚 23 个 Skills 深度拆解——认知工序流水线
 
-## Ch07.073 李继刚 23 个 Skills 深度拆解——认知工序流水线
-
 > 📊 Level ⭐⭐ | 5.8KB | `entities/ljg-skills-deep-dive-datastudio-2026.md`
 
 # 李继刚 23 个 Skills 深度拆解——认知工序流水线

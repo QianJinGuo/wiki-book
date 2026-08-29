@@ -1,7 +1,5 @@
 # Outpost VFX: Multi-GPU AI Training on AWS P5 for Visual Effects
 
-## Ch11.282 Outpost VFX: Multi-GPU AI Training on AWS P5 for Visual Effects
-
 > 📊 Level ⭐⭐ | 3.0KB | `entities/outpost-vfx-multi-gpu-ai-training-aws-p5.md`
 
 # Outpost VFX: Multi-GPU AI Training on AWS P5 for Visual Effects

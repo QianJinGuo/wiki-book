@@ -1,7 +1,5 @@
 # AI Agent 上下文瓶颈：从原理到实战的完整解决方案
 
-## Ch04.816 AI Agent 上下文瓶颈：从原理到实战的完整解决方案
-
 > 📊 Level ⭐⭐ | 0.7KB | `entities/agent-context-bottleneck-complete-solution.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-context-bottleneck-complete-solution.md)

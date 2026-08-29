@@ -1,7 +1,5 @@
 # 追求-ai-记忆力的路线下rag-是否终将被抛弃
 
-## Ch06.001 追求-ai-记忆力的路线下rag-是否终将被抛弃
-
 > 📊 Level ⭐ | 1.5KB | `entities/追求-ai-记忆力的路线下rag-是否终将被抛弃.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/追求-ai-记忆力的路线下rag-是否终将被抛弃.md)

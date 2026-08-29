@@ -1,7 +1,5 @@
 # VLM会描述视频，却未必用对参考图：RefCaptioner让参考图与视频语义精准对应
 
-## Ch01.1588 VLM会描述视频，却未必用对参考图：RefCaptioner让参考图与视频语义精准对应
-
 > 📊 Level ⭐⭐⭐ | 2.9KB | `entities/vlm会描述视频却未必用对参考图refcaptioner让参考图与视频语义精准对应.md`
 
 # VLM会描述视频，却未必用对参考图：RefCaptioner让参考图与视频语义精准对应

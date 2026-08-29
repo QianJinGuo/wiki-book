@@ -1,7 +1,5 @@
 # Multi-Agent 架构在零售供应链运营中的实践：贯穿数据、洞察与行动 | 亚马逊AWS官方博客
 
-## Ch11.229 Multi-Agent 架构在零售供应链运营中的实践：贯穿数据、洞察与行动 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 5.0KB | `entities/multi-agent-architecture-retail-practice.md`
 
 

@@ -1,7 +1,5 @@
 # Semgrep Intercom Php Security
 
-## Ch12.106 Semgrep Intercom Php Security
-
 > 📊 Level ⭐⭐ | 4.7KB | `entities/semgrep-intercom-php-security.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/semgrep-intercom-php-security.md)

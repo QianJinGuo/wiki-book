@@ -1,7 +1,5 @@
 # Harness Engineering 实践指南：10 步路线图 + 8 失败模式 + 设计 Checklist — 系列第 15 篇收官
 
-## Ch05.076 Harness Engineering 实践指南：10 步路线图 + 8 失败模式 + 设计 Checklist — 系列第 15 篇收官
-
 > 📊 Level ⭐⭐ | 8.5KB | `entities/harness-engineering-10-step-practical-guide-2026.md`
 
 「Agent Harness Engineering 技术连载」第 15 篇（收官篇），将前 14 篇理论提炼为可立即使用的实践指南——10 步从零到生产路线图、8 种常见失败模式速查表、Harness 设计 Checklist、给不同角色的具体建议。

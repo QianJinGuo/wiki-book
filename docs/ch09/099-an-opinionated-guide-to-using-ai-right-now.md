@@ -1,7 +1,5 @@
 # An Opinionated Guide to Using AI Right Now
 
-## Ch09.099 An Opinionated Guide to Using AI Right Now
-
 > 📊 Level ⭐⭐ | 8.6KB | `entities/an-opinionated-guide-to-using-ai-right-now.md`
 
 # An Opinionated Guide to Using AI Right Now

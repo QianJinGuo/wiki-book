@@ -1,7 +1,5 @@
 # How we keep GPUs reliable across Databricks AI
 
-## Ch01.055 How we keep GPUs reliable across Databricks AI
-
 > 📊 Level ⭐ | 8.3KB | `entities/how-we-keep-gpus-reliable-across-databricks-ai.md`
 
 # How we keep GPUs reliable across Databricks AI

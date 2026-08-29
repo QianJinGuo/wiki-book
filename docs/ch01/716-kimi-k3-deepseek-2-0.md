@@ -1,7 +1,5 @@
 # Kimi K3，这是 DeepSeek 2.0 时刻
 
-## Ch01.716 Kimi K3，这是 DeepSeek 2.0 时刻
-
 > 📊 Level ⭐⭐ | 8.7KB | `entities/kimi-k3这是-deepseek-20-时刻.md`
 
 ## 摘要

@@ -1,7 +1,5 @@
 # 阿里重磅开源！OpenSandbox：专为 AI Agent 打造的下一代沙箱
 
-## Ch01.773 阿里重磅开源！OpenSandbox：专为 AI Agent 打造的下一代沙箱
-
 > 📊 Level ⭐⭐ | 8.2KB | `entities/阿里重磅开源opensandbox专为-ai-agent-打造的下一代沙箱.md`
 
 # 阿里重磅开源！OpenSandbox：专为 AI Agent 打造的下一代沙箱

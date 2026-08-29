@@ -1,7 +1,5 @@
 # Building is just the beginning: Introducing Discoverability
 
-## Ch01.137 Building is just the beginning: Introducing Discoverability
-
 > 📊 Level ⭐ | 5.1KB | `entities/building-is-just-the-beginning-introducing-discove.md`
 
 ## 核心要点

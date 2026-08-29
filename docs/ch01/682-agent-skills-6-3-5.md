@@ -1,7 +1,5 @@
 # Agent Skills 开发指南：6 字段规范、3 级加载、5 步评估闭环
 
-## Ch01.682 Agent Skills 开发指南：6 字段规范、3 级加载、5 步评估闭环
-
 > 📊 Level ⭐⭐ | 9.1KB | `entities/agent-skills-development-guide.md`
 
 # Agent Skills 开发指南：6 字段规范、3 级加载、5 步评估闭环

@@ -1,7 +1,5 @@
 # Claude Code 七层记忆架构
 
-## Ch01.1474 Claude Code 七层记忆架构
-
 > 📊 Level ⭐⭐⭐ | 17.2KB | `entities/claude-code-7-layer-memory-architecture.md`
 
 ## 文章概要

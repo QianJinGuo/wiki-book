@@ -1,7 +1,5 @@
 # Thread by @0xCheeezzyyyy on Thread Reader App – Thread Reader App
 
-## Ch01.1350 Thread by @0xCheeezzyyyy on Thread Reader App – Thread Reader App
-
 > 📊 Level ⭐⭐ | 3.7KB | `entities/thread-0xcheeezzyyyy.md`
 
 ## 深度分析

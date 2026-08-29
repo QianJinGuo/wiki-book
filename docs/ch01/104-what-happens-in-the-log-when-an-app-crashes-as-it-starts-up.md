@@ -1,7 +1,5 @@
 # What happens in the log when an app crashes as it starts up?
 
-## Ch01.104 What happens in the log when an app crashes as it starts up?
-
 > 📊 Level ⭐ | 6.8KB | `entities/eclecticlightco-2026-05-29-what-happens-in-the-log-when-an-app-cra.md`
 
 # What happens in the log when an app crashes as it starts up?

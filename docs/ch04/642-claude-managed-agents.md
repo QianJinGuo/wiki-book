@@ -1,7 +1,5 @@
 # Claude Managed Agents
 
-## Ch04.642 Claude Managed Agents
-
 > 📊 Level ⭐⭐ | 5.4KB | `entities/claude-managed-agents.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-managed-agents-official.md)

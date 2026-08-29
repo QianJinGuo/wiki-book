@@ -1,7 +1,5 @@
 # 面向 LLM 的架构设计：什么是真正的 AI Friendly 架构？
 
-## Ch01.1159 面向 LLM 的架构设计：什么是真正的 AI Friendly 架构？
-
 > 📊 Level ⭐⭐ | 5.3KB | `entities/ai-friendly-architecture-design-taobao.md`
 
 # 面向 LLM 的架构设计：什么是真正的 AI Friendly 架构？

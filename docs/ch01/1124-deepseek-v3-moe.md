@@ -1,7 +1,5 @@
 # DeepSeek V3 MoE 架构
 
-## Ch01.1124 DeepSeek V3 MoE 架构
-
 > 📊 Level ⭐⭐ | 5.5KB | `entities/deepseek-v3-moe-architecture.md`
 
 ## 定义

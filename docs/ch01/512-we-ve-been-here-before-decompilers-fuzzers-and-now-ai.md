@@ -1,7 +1,5 @@
 # We've Been Here Before: Decompilers, Fuzzers, and Now AI
 
-## Ch01.512 We've Been Here Before: Decompilers, Fuzzers, and Now AI
-
 > 📊 Level ⭐⭐ | 12.6KB | `entities/weve-been-here-before-decompilers-fuzzers-and-now-ai.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/weve-been-here-before-decompilers-fuzzers-and-now-ai.md)

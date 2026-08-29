@@ -1,7 +1,5 @@
 # 面向 Coding Agent 的多仓库 Git Worktree
 
-## Ch09.114 面向 Coding Agent 的多仓库 Git Worktree
-
 > 📊 Level ⭐⭐ | 8.0KB | `entities/面向-coding-agent-的多仓库-git-worktree.md`
 
 # 面向 Coding Agent 的多仓库 Git Worktree

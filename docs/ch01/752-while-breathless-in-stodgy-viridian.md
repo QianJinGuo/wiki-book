@@ -1,7 +1,5 @@
 # While Breathless in Stodgy Viridian
 
-## Ch01.752 While Breathless in Stodgy Viridian
-
 > 📊 Level ⭐⭐ | 8.3KB | `entities/while-breathless-in-stodgy-viridian.md`
 
 ## 三个关键洞察

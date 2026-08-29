@@ -1,7 +1,5 @@
 # Google Open Knowledge Format (OKF) v0.1：AI 知识库通用格式标准 — 让 Markdown 知识库互通
 
-## Ch06.019 Google Open Knowledge Format (OKF) v0.1：AI 知识库通用格式标准 — 让 Markdown 知识库互通
-
 > 📊 Level ⭐⭐ | 11.6KB | `entities/google-okf-open-knowledge-format-v0-1-2026.md`
 
 # Google Open Knowledge Format (OKF) v0.1：AI 知识库通用格式标准

@@ -1,7 +1,5 @@
 # Scaling Domain Data Repetition in LLM Pretraining — 域数据重复率随规模扩展
 
-## Ch01.1455 Scaling Domain Data Repetition in LLM Pretraining — 域数据重复率随规模扩展
-
 > 📊 Level ⭐⭐ | 1.8KB | `entities/arxiv-2608-14071-scaling-domain-data-repetition-llm-pretraining.md`
 
 # Scaling Domain Data Repetition in LLM Pretraining — 域数据重复率随规模扩展

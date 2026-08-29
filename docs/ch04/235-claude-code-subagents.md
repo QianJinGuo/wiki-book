@@ -1,7 +1,5 @@
 # Claude Code Subagents 深度指南：上下文卫生实战
 
-## Ch04.235 Claude Code Subagents 深度指南：上下文卫生实战
-
 > 📊 Level ⭐⭐ | 12.3KB | `entities/claude-code-subagents-context-hygiene.md`
 
 # "Claude Code Subagents 深度指南：上下文卫生实战"

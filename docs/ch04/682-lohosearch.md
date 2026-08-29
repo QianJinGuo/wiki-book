@@ -1,7 +1,5 @@
 # LoHoSearch — 下一代搜索智能体评测基准
 
-## Ch04.682 LoHoSearch — 下一代搜索智能体评测基准
-
 > 📊 Level ⭐⭐ | 4.7KB | `entities/meituan-lohosearch-search-agent-benchmark-knowledge-graph-2026.md`
 
 # LoHoSearch — 下一代搜索智能体评测基准

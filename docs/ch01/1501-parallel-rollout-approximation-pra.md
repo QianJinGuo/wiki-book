@@ -1,7 +1,5 @@
 # Parallel Rollout Approximation (PRA) — 像素空间自回归图像生成
 
-## Ch01.1501 Parallel Rollout Approximation (PRA) — 像素空间自回归图像生成
-
 > 📊 Level ⭐⭐⭐ | 10.9KB | `entities/peking-pra-pixel-space-ar-image-generation-2026.md`
 
 # Parallel Rollout Approximation (PRA) — 像素空间自回归图像生成

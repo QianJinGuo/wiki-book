@@ -1,7 +1,5 @@
 # Unlocking the Cloudflare app ecosystem with OAuth for all
 
-## Ch12.086 Unlocking the Cloudflare app ecosystem with OAuth for all
-
 > 📊 Level ⭐⭐ | 6.1KB | `entities/cloudflare-oauth-for-all.md`
 
 # Unlocking the Cloudflare app ecosystem with OAuth for all

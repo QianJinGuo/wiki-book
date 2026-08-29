@@ -1,7 +1,5 @@
 # 专为 Managed Agents 而生的 Harness 底座：AgentScope 2.0
 
-## Ch04.279 专为 Managed Agents 而生的 Harness 底座：AgentScope 2.0
-
 > 📊 Level ⭐⭐ | 11.1KB | `entities/专为-managed-agents-而生的-harness-底座agentscope-20.md`
 
 # 专为 Managed Agents 而生的 Harness 底座：AgentScope 2.0

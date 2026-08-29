@@ -1,7 +1,5 @@
 # Macaron-V1：基于 GLM-5.2 的混合 LoRA 个人智能体模型
 
-## Ch01.1371 Macaron-V1：基于 GLM-5.2 的混合 LoRA 个人智能体模型
-
 > 📊 Level ⭐⭐ | 3.6KB | `entities/glm-5-2-mixed-lora-200m-context.md`
 
 # Macaron-V1：基于 GLM-5.2 的混合 LoRA 个人智能体模型

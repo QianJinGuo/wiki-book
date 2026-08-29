@@ -1,7 +1,5 @@
 # LangChain创始人解读：AI智能体两种沙盒架构
 
-## Ch04.256 LangChain创始人解读：AI智能体两种沙盒架构
-
 > 📊 Level ⭐⭐ | 11.8KB | `entities/langchain-harrison-chase-sandbox-architecture.md`
 
 ## 核心命题

@@ -1,7 +1,5 @@
 # Agent架构关键变化：Harness正在成为新后端
 
-## Ch04.092 Agent架构关键变化：Harness正在成为新后端
-
 > 📊 Level ⭐⭐ | 32.5KB | `entities/agent-architecture-harness-new-backend.md`
 
 本文讨论 AI 基础设施的核心问题：智能体 harness 与传统后端分离导致的复杂性，强调当前架构难以处理随机性强的 agent 系统。

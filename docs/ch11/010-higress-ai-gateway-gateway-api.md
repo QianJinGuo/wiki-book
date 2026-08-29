@@ -1,7 +1,5 @@
 # Higress 新发布 AI Gateway 能力增强 Gateway API  阿里云云原生
 
-## Ch11.010 Higress 新发布 AI Gateway 能力增强 Gateway API  阿里云云原生
-
 > 📊 Level ⭐ | 0.8KB | `entities/2026-06-29-Higress-新发布-AI-Gateway-能力增强-Gateway-API--阿里云云原生.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-06-29-Higress-新发布-AI-Gateway-能力增强-Gateway-API--阿里云云原生.md)

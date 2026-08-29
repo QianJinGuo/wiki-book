@@ -1,7 +1,5 @@
 # 【揭秘】如何打造一支凌晨3点还在交付的AI军团——腾讯Multica Agent协作实践
 
-## Ch04.828 【揭秘】如何打造一支凌晨3点还在交付的AI军团——腾讯Multica Agent协作实践
-
 > 📊 Level ⭐⭐⭐ | 11.9KB | `entities/ai-army-multica-agent-collaboration-loop-engineering-2026.md`
 
 # 【揭秘】如何打造一支凌晨3点还在交付的AI军团——腾讯Multica Agent协作实践

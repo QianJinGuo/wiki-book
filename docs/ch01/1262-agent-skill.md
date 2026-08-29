@@ -1,7 +1,5 @@
 # 从入门到精通：彻底讲懂Agent的Skill，不做“炫技式浪费”
 
-## Ch01.1262 从入门到精通：彻底讲懂Agent的Skill，不做“炫技式浪费”
-
 > 📊 Level ⭐⭐ | 4.4KB | `entities/从入门到精通彻底讲懂agent的skill不做炫技式浪费.md`
 
 # 从入门到精通：彻底讲懂Agent的Skill，不做“炫技式浪费”

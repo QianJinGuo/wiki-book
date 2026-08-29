@@ -1,7 +1,5 @@
 # 【从零训练Steel-LLM】微调探索与评估
 
-## Ch01.1250 【从零训练Steel-LLM】微调探索与评估
-
 > 📊 Level ⭐⭐ | 4.5KB | `entities/从零训练steel-llm微调探索与评估.md`
 
 # 【从零训练Steel-LLM】微调探索与评估

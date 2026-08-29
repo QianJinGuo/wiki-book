@@ -1,7 +1,5 @@
 # Mass Intelligence: AI 普及的拐点
 
-## Ch01.748 Mass Intelligence: AI 普及的拐点
-
 > 📊 Level ⭐⭐ | 8.3KB | `entities/mass-intelligence.md`
 
 # Mass Intelligence: AI 普及的拐点

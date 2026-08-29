@@ -1,7 +1,5 @@
 # Ralph Loop 不够用：长时间 Agent 还缺这 3 件事
 
-## Ch01.532 Ralph Loop 不够用：长时间 Agent 还缺这 3 件事
-
 > 📊 Level ⭐⭐ | 12.0KB | `entities/ralph-loop-不够用长时间-agent-还缺这-3-件事.md`
 
 ## 核心要点

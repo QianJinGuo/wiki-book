@@ -1,7 +1,5 @@
 # InstEmb：未来感知指令嵌入（ICML 2026）
 
-## Ch01.1570 InstEmb：未来感知指令嵌入（ICML 2026）
-
 > 📊 Level ⭐⭐⭐ | 4.4KB | `entities/instemb-instruction-following-embeddings-2026.md`
 
 # InstEmb：未来感知指令嵌入

@@ -1,7 +1,5 @@
 # Anthropic让AI先读员工手册再上岗：失控率从54%降到7%
 
-## Ch01.665 Anthropic让AI先读员工手册再上岗：失控率从54%降到7%
-
 > 📊 Level ⭐⭐ | 9.3KB | `entities/2026-05-06-Anthropic让AI先读员工手册再上岗-失控率从54-降到7--新智元.md`
 
 # Anthropic让AI先读员工手册再上岗：失控率从54%降到7%

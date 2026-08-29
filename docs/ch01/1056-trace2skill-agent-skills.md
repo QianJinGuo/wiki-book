@@ -1,7 +1,5 @@
 # Trace2Skill 把\"轨迹里的局部经验\"蒸馏成可迁移的 Agent Skills
 
-## Ch01.1056 Trace2Skill 把\"轨迹里的局部经验\"蒸馏成可迁移的 Agent Skills
-
 > 📊 Level ⭐⭐ | 6.0KB | `entities/trace2skill-trajectory-distillation-agent-skills.md`
 
 # Trace2Skill 把"轨迹里的局部经验"蒸馏成可迁移的 Agent Skills

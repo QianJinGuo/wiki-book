@@ -1,7 +1,5 @@
 # AReaL 2.0：面向自演进 Agent 的在线强化学习系统基础设施
 
-## Ch04.573 AReaL 2.0：面向自演进 Agent 的在线强化学习系统基础设施
-
 > 📊 Level ⭐⭐ | 6.6KB | `entities/areal-2-agentic-rl-online-learning-self-evolving.md`
 
 # AReaL 2.0：在线强化学习系统基础设施

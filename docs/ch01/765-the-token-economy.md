@@ -1,7 +1,5 @@
 # the token economy
 
-## Ch01.765 the token economy
-
 > 📊 Level ⭐⭐ | 8.2KB | `entities/the-token-economy.md`
 
 # The Token Economy

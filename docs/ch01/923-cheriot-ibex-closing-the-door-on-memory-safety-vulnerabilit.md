@@ -1,7 +1,5 @@
 # CHERIoT-Ibex: Closing the door on memory safety vulnerabilities with hardware-enforced protection
 
-## Ch01.923 CHERIoT-Ibex: Closing the door on memory safety vulnerabilities with hardware-enforced protection
-
 > 📊 Level ⭐⭐ | 7.0KB | `entities/cheriot-ibex-memory-safety-hardware-enforcement.md`
 
 ## 深度分析

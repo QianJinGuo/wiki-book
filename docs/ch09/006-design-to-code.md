@@ -1,7 +1,5 @@
 # 设计稿转代码（Design to Code）
 
-## Ch09.006 设计稿转代码（Design to Code）
-
 > 📊 Level ⭐ | 6.0KB | `entities/design-to-code.md`
 
 # 设计稿转代码（Design to Code）

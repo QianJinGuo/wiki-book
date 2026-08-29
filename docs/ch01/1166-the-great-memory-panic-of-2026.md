@@ -1,7 +1,5 @@
 # The great memory panic of 2026
 
-## Ch01.1166 The great memory panic of 2026
-
 > 📊 Level ⭐⭐ | 5.2KB | `entities/05-11-the-great-memory-panic-of-2026.md`
 
 ## 核心要点

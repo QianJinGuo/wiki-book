@@ -1,7 +1,5 @@
 # 唐杰预告glm史诗级升级技术论文入选顶会colm
 
-## Ch01.295 唐杰预告glm史诗级升级技术论文入选顶会colm
-
 > 📊 Level ⭐ | 0.7KB | `entities/唐杰预告glm史诗级升级技术论文入选顶会colm.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/唐杰预告glm史诗级升级技术论文入选顶会colm.md)

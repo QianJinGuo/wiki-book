@@ -1,7 +1,5 @@
 # Enterprise AI Agent Development Tools (n8n Report 2026)
 
-## Ch03.119 Enterprise AI Agent Development Tools (n8n Report 2026)
-
 > 📊 Level ⭐⭐ | 6.2KB | `entities/n8n-io-reports-2026-ai-agent-development-tools.md`
 
 # Enterprise AI Agent Development Tools (n8n Report 2026)

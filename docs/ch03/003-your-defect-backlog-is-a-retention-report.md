@@ -1,7 +1,5 @@
 # Your defect backlog is a retention report
 
-## Ch03.003 Your defect backlog is a retention report
-
 > 📊 Level ⭐ | 13.1KB | `entities/defect-backlog-retention-report.md`
 
 [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/defect-backlog-retention-report.md)

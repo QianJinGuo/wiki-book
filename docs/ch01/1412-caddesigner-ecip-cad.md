@@ -1,7 +1,5 @@
 # CADDesigner: 浙大ECIP范式驱动的多模态CAD建模智能体
 
-## Ch01.1412 CADDesigner: 浙大ECIP范式驱动的多模态CAD建模智能体
-
 > 📊 Level ⭐⭐ | 3.4KB | `entities/caddesigner-ecip-cad-agent-zheda-2026.md`
 
 # CADDesigner: 浙大ECIP范式驱动的多模态CAD建模智能体

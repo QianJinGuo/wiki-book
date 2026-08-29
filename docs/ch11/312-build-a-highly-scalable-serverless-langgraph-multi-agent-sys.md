@@ -1,7 +1,5 @@
 # Build a highly scalable serverless LangGraph multi-agent system
 
-## Ch11.312 Build a highly scalable serverless LangGraph multi-agent system
-
 > 📊 Level ⭐⭐⭐ | 8.9KB | `entities/serverless-langgraph-multi-agent-aws.md`
 
 # Build a highly scalable serverless LangGraph multi-agent system

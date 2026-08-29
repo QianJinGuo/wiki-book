@@ -1,7 +1,5 @@
 # 利用-amazon-bedrock-agentcore-快速为您的-agent-接入联网搜索和网页浏览
 
-## Ch04.034 利用-amazon-bedrock-agentcore-快速为您的-agent-接入联网搜索和网页浏览
-
 > 📊 Level ⭐ | 1.0KB | `entities/利用-amazon-bedrock-agentcore-快速为您的-agent-接入联网搜索和网页浏览.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/利用-amazon-bedrock-agentcore-快速为您的-agent-接入联网搜索和网页浏览.md)

@@ -1,7 +1,5 @@
 # AI and Liability
 
-## Ch01.101 AI and Liability
-
 > 📊 Level ⭐ | 7.0KB | `entities/06-ai-and-liability-html.md`
 
 # AI and Liability

@@ -1,7 +1,5 @@
 # Agent 工程原理、架构与实践
 
-## Ch04.673 Agent 工程原理、架构与实践
-
 > 📊 Level ⭐⭐ | 4.9KB | `entities/agent-engineering-principles-architecture-practice.md`
 
 # agent-engineering-principles-architecture-practice

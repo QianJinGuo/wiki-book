@@ -1,7 +1,5 @@
 # Build a self-improving AI PM OS with Claude Code
 
-## Ch01.793 Build a self-improving AI PM OS with Claude Code
-
 > 📊 Level ⭐⭐ | 8.0KB | `entities/p-ai-pms-guide-to-claude.md`
 
 ## 摘要

@@ -1,7 +1,5 @@
 # 让Skill\"有图可依\"：openJiuwen首发多模态Skill范式Skill-Omni
 
-## Ch07.053 让Skill\"有图可依\"：openJiuwen首发多模态Skill范式Skill-Omni
-
 > 📊 Level ⭐⭐ | 8.0KB | `entities/让skill有图可依openjiuwen首发多模态skill范式skill-omni.md`
 
 # 让Skill"有图可依"：openJiuwen首发多模态Skill范式Skill-Omni

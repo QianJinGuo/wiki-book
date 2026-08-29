@@ -1,7 +1,5 @@
 # TaoLive HAT：让 Agent 与 Harness 共同演化（Harness-Aware Training）
 
-## Ch04.715 TaoLive HAT：让 Agent 与 Harness 共同演化（Harness-Aware Training）
-
 > 📊 Level ⭐⭐ | 4.2KB | `entities/taolive-hat-harness-aware-training-arxiv-2608-15763.md`
 
 # TaoLive HAT：让 Agent 与 Harness 共同演化（Harness-Aware Training）

@@ -1,7 +1,5 @@
 # The Minimum Viable Unit of Saleable Software
 
-## Ch01.830 The Minimum Viable Unit of Saleable Software
-
 > 📊 Level ⭐⭐ | 7.7KB | `entities/minimum-viable-unit-saleable-software-brandur.md`
 
 # The Minimum Viable Unit of Saleable Software

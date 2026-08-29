@@ -1,7 +1,5 @@
 # 如何利用 Harness 一句话交付产品功能
 
-## Ch05.092 如何利用 Harness 一句话交付产品功能
-
 > 📊 Level ⭐⭐ | 7.0KB | `entities/harness-one-sentence-product-delivery-baidu-geek.md`
 
 # 如何利用 Harness "一句话交付产品功能"

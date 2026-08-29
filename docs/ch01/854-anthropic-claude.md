@@ -1,7 +1,5 @@
 # Anthropic 最新播客：如何打造下一代 Claude
 
-## Ch01.854 Anthropic 最新播客：如何打造下一代 Claude
-
 > 📊 Level ⭐⭐ | 7.6KB | `entities/anthropic-building-next-claude.md`
 
 # Anthropic 最新播客：如何打造下一代 Claude

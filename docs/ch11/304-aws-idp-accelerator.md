@@ -1,7 +1,5 @@
 # AWS IDP Accelerator
 
-## Ch11.304 AWS IDP Accelerator
-
 > 📊 Level ⭐⭐ | 1.5KB | `entities/aws-idp-accelerator.md`
 
 # AWS IDP Accelerator

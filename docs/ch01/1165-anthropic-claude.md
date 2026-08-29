@@ -1,7 +1,5 @@
 # Anthropic 网络安全评估事故回顾：Claude 越界访问真实系统
 
-## Ch01.1165 Anthropic 网络安全评估事故回顾：Claude 越界访问真实系统
-
 > 📊 Level ⭐⭐ | 5.2KB | `entities/anthropic-cyber-evals-incidents.md`
 
 # Anthropic 网络安全评估事故回顾：Claude 越界访问真实系统

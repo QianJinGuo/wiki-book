@@ -1,7 +1,5 @@
 # How OneAdvanced deployed over 50 AI agents on UK-sovereign AWS
 
-## Ch11.304 How OneAdvanced deployed over 50 AI agents on UK-sovereign AWS
-
 > 📊 Level ⭐⭐ | 2.8KB | `entities/how-oneadvanced-deployed-over-50-ai-agents-on-uk-sovereign-aws.md`
 
 # How OneAdvanced deployed over 50 AI agents on UK-sovereign AWS

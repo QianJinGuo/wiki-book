@@ -1,7 +1,5 @@
 # Hermes Agent Skill 互优化实验：SkillEvolver × Darwin × EmbodiSkill
 
-## Ch04.272 Hermes Agent Skill 互优化实验：SkillEvolver × Darwin × EmbodiSkill
-
 > 📊 Level ⭐⭐ | 11.4KB | `entities/hermes-agent-skill-crossover-optimization-skillevolver-darwin.md`
 
 # Hermes Agent Skill 互优化实验：SkillEvolver × Darwin × EmbodiSkill

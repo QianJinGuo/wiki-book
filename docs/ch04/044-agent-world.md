@@ -1,7 +1,5 @@
 # Agent World 扩展真实世界环境 让智能体与环境协同进化  机器之心
 
-## Ch04.044 Agent World 扩展真实世界环境 让智能体与环境协同进化  机器之心
-
 > 📊 Level ⭐ | 0.9KB | `entities/2026-05-05-Agent-World-扩展真实世界环境-让智能体与环境协同进化--机器之心.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-05-05-Agent-World-扩展真实世界环境-让智能体与环境协同进化--机器之心.md)

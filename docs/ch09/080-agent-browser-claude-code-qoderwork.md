@@ -1,7 +1,5 @@
 # Agent Browser 僵尸进程排查与定时清理（Claude Code + QoderWork 实战）
 
-## Ch09.080 Agent Browser 僵尸进程排查与定时清理（Claude Code + QoderWork 实战）
-
 > 📊 Level ⭐⭐ | 9.6KB | `entities/agent-browser-zombie-process-cleanup-qoderwork-2026.md`
 
 # Agent Browser 僵尸进程排查与定时清理

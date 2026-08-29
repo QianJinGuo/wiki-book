@@ -1,7 +1,5 @@
 # Graph Engineering 来了：Claude Code 让 Agent 从一条直线变成一张图
 
-## Ch09.194 Graph Engineering 来了：Claude Code 让 Agent 从一条直线变成一张图
-
 > 📊 Level ⭐⭐ | 0.8KB | `entities/graph-engineering-claude-code-seebin-2026.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/graph-engineering-claude-code-seebin-2026.md)

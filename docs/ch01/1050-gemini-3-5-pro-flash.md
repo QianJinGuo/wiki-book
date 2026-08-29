@@ -1,7 +1,5 @@
 # Gemini 3.5 Pro继续跳票，谷歌端上三款Flash模型强行交作业
 
-## Ch01.1050 Gemini 3.5 Pro继续跳票，谷歌端上三款Flash模型强行交作业
-
 > 📊 Level ⭐⭐ | 6.0KB | `entities/gemini-35-pro继续跳票谷歌端上三款flash模型强行交作业.md`
 
 # Gemini 3.5 Pro继续跳票，谷歌端上三款Flash模型强行交作业

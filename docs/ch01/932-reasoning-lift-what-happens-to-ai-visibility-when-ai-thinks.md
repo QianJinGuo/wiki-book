@@ -1,7 +1,5 @@
 # Reasoning lift: What happens to AI visibility when AI thinks harder
 
-## Ch01.932 Reasoning lift: What happens to AI visibility when AI thinks harder
-
 > 📊 Level ⭐⭐ | 7.0KB | `entities/reasoning-lift.md`
 
 ## 核心要点

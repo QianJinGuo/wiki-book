@@ -1,7 +1,5 @@
 # The Race to Own the Agentic Future | Tidemark
 
-## Ch04.563 The Race to Own the Agentic Future | Tidemark
-
 > 📊 Level ⭐⭐ | 6.7KB | `entities/the-race-to-own-the-agentic-future-tidemark.md`
 
 ## 深度分析

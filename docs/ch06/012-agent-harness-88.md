@@ -1,7 +1,5 @@
 # Agent 终章（Harness 成本篇）：一次百炼账单降低 88% 实战
 
-## Ch06.012 Agent 终章（Harness 成本篇）：一次百炼账单降低 88% 实战
-
 > 📊 Level ⭐⭐ | 15.0KB | `entities/agent-终章harness-成本篇一次百炼账单降低-88-实战.md`
 
 # Agent 终章（Harness 成本篇）：一次百炼账单降低 88% 实战

@@ -1,7 +1,5 @@
 # Gemma 4 Multi Token Prediction Drafters
 
-## Ch01.430 Gemma 4 Multi Token Prediction Drafters
-
 > 📊 Level ⭐⭐ | 16.9KB | `entities/gemma-4-multi-token-prediction-drafters.md`
 
 ## 概述

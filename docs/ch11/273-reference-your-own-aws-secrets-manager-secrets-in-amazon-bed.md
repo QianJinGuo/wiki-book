@@ -1,7 +1,5 @@
 # Reference your own AWS Secrets Manager secrets in Amazon Bedrock AgentCore Identity
 
-## Ch11.273 Reference your own AWS Secrets Manager secrets in Amazon Bedrock AgentCore Identity
-
 > 📊 Level ⭐⭐ | 3.1KB | `entities/bedrock-agentcore-secrets-manager-identity.md`
 
 # Reference your own AWS Secrets Manager secrets in Amazon Bedrock AgentCore Identity

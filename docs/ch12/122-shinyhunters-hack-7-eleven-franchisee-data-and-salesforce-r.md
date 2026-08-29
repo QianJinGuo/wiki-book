@@ -1,7 +1,5 @@
 # ShinyHunters hack 7-Eleven: franchisee data and Salesforce records exposed
 
-## Ch12.122 ShinyHunters hack 7-Eleven: franchisee data and Salesforce records exposed
-
 > 📊 Level ⭐⭐ | 3.2KB | `entities/shinyhunters-7-eleven-data-breach.md`
 
 

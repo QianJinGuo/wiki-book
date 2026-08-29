@@ -1,7 +1,5 @@
 # 从 Coder 到 Designer：电商团队数据研发的 Harness Engineering 实践
 
-## Ch05.098 从 Coder 到 Designer：电商团队数据研发的 Harness Engineering 实践
-
 > 📊 Level ⭐⭐ | 6.4KB | `entities/从coder到designer-电商数据研发-harness-engineering.md`
 
 # 从 Coder 到 Designer：电商团队数据研发的 Harness Engineering 实践

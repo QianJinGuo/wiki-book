@@ -1,7 +1,5 @@
 # 3D 指标超过 Nano Banana Pro：浙大开源 PhyEdit 让 AI 在平面图像里进行立体编辑
 
-## Ch01.1565 3D 指标超过 Nano Banana Pro：浙大开源 PhyEdit 让 AI 在平面图像里进行立体编辑
-
 > 📊 Level ⭐⭐⭐ | 5.4KB | `entities/浙大-立体编辑-acm-mm26-phyedit.md`
 
 # 浙大 PhyEdit：用显式 3D 几何约束让 AI 在平面图像里做立体编辑

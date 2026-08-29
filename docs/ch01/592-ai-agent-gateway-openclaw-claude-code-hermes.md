@@ -1,7 +1,5 @@
 # AI Agent Gateway 架构设计 — OpenClaw/Claude Code/Hermes 三框架对比
 
-## Ch01.592 AI Agent Gateway 架构设计 — OpenClaw/Claude Code/Hermes 三框架对比
-
 > 📊 Level ⭐⭐ | 10.5KB | `entities/gateway-architecture-openclaw-claude-hermes-comparison.md`
 
 ## 评分

@@ -1,7 +1,5 @@
 # GPT-5 Is Here and OpenAI Has Some Tips
 
-## Ch01.891 GPT-5 Is Here and OpenAI Has Some Tips
-
 > 📊 Level ⭐⭐ | 7.2KB | `entities/gpt-5-is-here-and-openai-has-some-tips.md`
 
 → （无原始来源）

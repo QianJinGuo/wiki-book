@@ -1,7 +1,5 @@
 # 京东 Oxygen AIIC：工业级百亿商品大模型商品中心
 
-## Ch01.949 京东 Oxygen AIIC：工业级百亿商品大模型商品中心
-
 > 📊 Level ⭐⭐ | 6.9KB | `entities/jd-oxygen-aiic-industrial-item-center.md`
 
 # 京东 Oxygen AIIC：工业级百亿商品大模型商品中心

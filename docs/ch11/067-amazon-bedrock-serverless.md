@@ -1,7 +1,5 @@
 # Amazon Bedrock 模型推理 Serverless 架构案例
 
-## Ch11.067 Amazon Bedrock 模型推理 Serverless 架构案例
-
 > 📊 Level ⭐⭐ | 11.2KB | `entities/amazon-bedrock-model-inference-serverless-architecture-case-study.md`
 
 Amazon Bedrock模型推理的Serverless 异步架构 – 处理在线多模态高负载案例 | 亚马逊AWS官方博客

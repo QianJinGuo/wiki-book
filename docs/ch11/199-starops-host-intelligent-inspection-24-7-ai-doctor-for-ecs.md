@@ -1,7 +1,5 @@
 # STAROps Host Intelligent Inspection — 24/7 AI Doctor for ECS
 
-## Ch11.199 STAROps Host Intelligent Inspection — 24/7 AI Doctor for ECS
-
 > 📊 Level ⭐⭐ | 6.9KB | `entities/starops-host-intelligent-inspection.md`
 
 # STAROps Host Intelligent Inspection

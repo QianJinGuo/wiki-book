@@ -1,7 +1,5 @@
 # How to Land a Frontier Lab Job：如何拿到一份前沿实验室的工作
 
-## Ch01.037 How to Land a Frontier Lab Job：如何拿到一份前沿实验室的工作
-
 > 📊 Level ⭐ | 8.8KB | `entities/how-to-land-frontier-lab-job-vlad-feinberg.md`
 
 # How to Land a Frontier Lab Job：如何拿到一份前沿实验室的工作

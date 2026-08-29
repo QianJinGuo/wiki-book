@@ -1,7 +1,5 @@
 # 开源 AI 编程可查询的软件工程知识图谱：Graphify 完整上手攻略
 
-## Ch03.020 开源 AI 编程可查询的软件工程知识图谱：Graphify 完整上手攻略
-
 > 📊 Level ⭐ | 8.0KB | `entities/graphify-software-engineering-knowledge-graph.md`
 
 # Graphify：可查询的软件工程知识图谱

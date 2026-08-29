@@ -1,7 +1,5 @@
 # Agent Skills 无依赖设计：Skill 之间不传数据的哲学与实践
 
-## Ch04.655 Agent Skills 无依赖设计：Skill 之间不传数据的哲学与实践
-
 > 📊 Level ⭐⭐ | 5.2KB | `entities/agent-skills-no-dependency-design-philosophy.md`
 
 # Agent Skills 无依赖设计：Skill 之间不传数据的哲学与实践

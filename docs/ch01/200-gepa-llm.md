@@ -1,7 +1,5 @@
 # GEPA：让 LLM 用反思进化提示词，样本效率甚至超过强化学习
 
-## Ch01.200 GEPA：让 LLM 用反思进化提示词，样本效率甚至超过强化学习
-
 > 📊 Level ⭐ | 1.0KB | `entities/gepa-reflective-prompt-evolution-iclr2026-oral.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gepa-reflective-prompt-evolution-iclr2026-oral.md)

@@ -1,7 +1,5 @@
 # Top 10 Design Gadgets for Creative Professionals That Will Change How You Work in 2026
 
-## Ch03.028 Top 10 Design Gadgets for Creative Professionals That Will Change How You Work in 2026
-
 > 📊 Level ⭐ | 7.1KB | `entities/top-10-design-gadgets-creative-professionals-2026.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/top-10-design-gadgets-creative-professionals-2026.md)

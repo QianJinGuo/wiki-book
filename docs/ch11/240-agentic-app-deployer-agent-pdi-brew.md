@@ -1,7 +1,5 @@
 # Agentic App Deployer — 规划/供给双 Agent 分离模式（PDI Brew）
 
-## Ch11.240 Agentic App Deployer — 规划/供给双 Agent 分离模式（PDI Brew）
-
 > 📊 Level ⭐⭐ | 5.5KB | `entities/building-an-agentic-app-deployer-with-amazon-bedrock-and-aws-lambda.md`
 
 # Agentic App Deployer — 规划/供给双 Agent 分离模式（PDI Brew）

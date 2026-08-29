@@ -1,7 +1,5 @@
 # Trading Desk AI
 
-## Ch01.187 Trading Desk AI
-
 > 📊 Level ⭐ | 1.4KB | `entities/trading-desk-ai.md`
 
 # Trading Desk AI

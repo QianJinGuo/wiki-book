@@ -1,7 +1,5 @@
 # LINE 论文 WWW 2026 时间检验奖与 GeoFlow：图神经网络十年远征
 
-## Ch04.512 LINE 论文 WWW 2026 时间检验奖与 GeoFlow：图神经网络十年远征
-
 > 📊 Level ⭐⭐ | 7.5KB | `entities/line-www-test-of-time-award-jiantang-geoflow.md`
 
 # LINE 论文 WWW 2026 时间检验奖与 GeoFlow：图神经网络十年远征

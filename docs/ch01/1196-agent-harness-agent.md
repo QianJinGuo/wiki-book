@@ -1,7 +1,5 @@
 # Agent Harness 综述：同一个模型，为什么做出来的 Agent 差这么远
 
-## Ch01.1196 Agent Harness 综述：同一个模型，为什么做出来的 Agent 差这么远
-
 > 📊 Level ⭐⭐ | 5.0KB | `entities/agent-harness-综述同一个模型为什么做出来的-agent-差这么远.md`
 
 # Agent Harness 综述：同一个模型，为什么做出来的 Agent 差这么远

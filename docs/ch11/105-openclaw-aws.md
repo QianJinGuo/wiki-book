@@ -1,7 +1,5 @@
 # 企业级OpenClaw安全部署架构指南 | 亚马逊AWS官方博客
 
-## Ch11.105 企业级OpenClaw安全部署架构指南 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 10.1KB | `entities/enterprise-openclaw-security-deploy-architecture-guide.md`
 
 ## 概述

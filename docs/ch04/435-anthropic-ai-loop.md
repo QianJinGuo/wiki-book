@@ -1,7 +1,5 @@
 # Anthropic发布循环设计指南：权威拆解当下最火的AI新范式loop
 
-## Ch04.435 Anthropic发布循环设计指南：权威拆解当下最火的AI新范式loop
-
 > 📊 Level ⭐⭐ | 8.3KB | `entities/anthropic发布循环设计指南权威拆解当下最火的ai新范式loop.md`
 
 # Anthropic发布循环设计指南：权威拆解当下最火的AI新范式loop

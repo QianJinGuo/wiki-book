@@ -1,7 +1,5 @@
 # Nvidia Secure Local Agent Nemoclaw Openclaw
 
-## Ch04.514 Nvidia Secure Local Agent Nemoclaw Openclaw
-
 > 📊 Level ⭐⭐ | 7.5KB | `entities/nvidia-secure-local-agent-nemoclaw-openclaw.md`
 
 # Build a More Secure, Always&#x2d;On Local AI Agent with OpenClaw and NVIDIA NemoClaw | NVIDIA Technical Blog

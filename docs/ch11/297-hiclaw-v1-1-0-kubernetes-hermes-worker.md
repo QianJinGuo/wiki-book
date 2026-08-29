@@ -1,7 +1,5 @@
 # HiClaw 发布 v1.1.0，提供 Kubernetes 集群部署实现，支持 Hermes Worker 运行时
 
-## Ch11.297 HiClaw 发布 v1.1.0，提供 Kubernetes 集群部署实现，支持 Hermes Worker 运行时
-
 > 📊 Level ⭐⭐⭐ | 11.3KB | `entities/hiclaw-发布-v110提供-kubernetes-集群部署实现支持-hermes-worker-运行时.md`
 
 [Hiclaw 发布 V110提供 Kubernetes 集群部署实现支持 Hermes Worker 运行时](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hiclaw-发布-v110提供-kubernetes-集群部署实现支持-hermes-worker-运行时.md)

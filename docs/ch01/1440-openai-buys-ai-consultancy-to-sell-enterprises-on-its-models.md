@@ -1,7 +1,5 @@
 # OpenAI buys AI consultancy to sell enterprises on its models
 
-## Ch01.1440 OpenAI buys AI consultancy to sell enterprises on its models
-
 > 📊 Level ⭐⭐ | 3.0KB | `entities/5238213.md`
 
 # OpenAI buys AI consultancy to sell enterprises on its models

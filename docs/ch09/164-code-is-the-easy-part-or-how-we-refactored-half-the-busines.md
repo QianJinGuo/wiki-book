@@ -1,7 +1,5 @@
 # Code is the easy part, or how we refactored half the business to fix a janky script | Swizec Teller
 
-## Ch09.164 Code is the easy part, or how we refactored half the business to fix a janky script | Swizec Teller
-
 > 📊 Level ⭐⭐ | 4.8KB | `entities/code-is-the-easy-part-or-how-we-refactored-half-the-business.md`
 
 # Code is the easy part, or how we refactored half the business to fix a janky script | Swizec Teller

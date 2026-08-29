@@ -1,7 +1,5 @@
 # 给野马套上缰绳：Agent Harness 工程实践 — 从范式理论到钉钉AI招聘的真实落地
 
-## Ch04.523 给野马套上缰绳：Agent Harness 工程实践 — 从范式理论到钉钉AI招聘的真实落地
-
 > 📊 Level ⭐⭐ | 7.3KB | `entities/agent-harness-dingtalk-recruitment.md`
 
 > 原文归档：[原文归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-harness-dingtalk-recruitment-alicloud-2026-06-30.md)

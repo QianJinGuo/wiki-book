@@ -1,7 +1,5 @@
 # Build high-performance generative AI systems with Strands Agents + NVIDIA NIM + Bedrock AgentCore
 
-## Ch11.129 Build high-performance generative AI systems with Strands Agents + NVIDIA NIM + Bedrock AgentCore
-
 > 📊 Level ⭐⭐ | 9.1KB | `entities/strands-agents-high-performance-genai-systems.md`
 
 # Build high-performance generative AI systems with Strands Agents + NVIDIA NIM + Bedrock AgentCore

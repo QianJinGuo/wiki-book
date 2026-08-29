@@ -1,7 +1,5 @@
 # Owner-Worker-Verifier 架构
 
-## Ch01.1543 Owner-Worker-Verifier 架构
-
 > 📊 Level ⭐⭐⭐ | 7.6KB | `entities/owner-worker-verifier-architecture.md`
 
 ## 三角色

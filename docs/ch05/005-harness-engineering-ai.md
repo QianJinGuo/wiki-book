@@ -1,7 +1,5 @@
 # Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式
 
-## Ch05.005 Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式
-
 > 📊 Level ⭐⭐ | 37.1KB | `entities/harness-engineering.md`
 
 ## 核心命题

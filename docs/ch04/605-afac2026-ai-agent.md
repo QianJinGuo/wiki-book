@@ -1,7 +1,5 @@
 # AFAC2026 金融AI武道大会：四道业务真题考验Agent工程落地
 
-## Ch04.605 AFAC2026 金融AI武道大会：四道业务真题考验Agent工程落地
-
 > 📊 Level ⭐⭐ | 6.1KB | `entities/afac2026-financial-ai-agent-competition-harness.md`
 
 # AFAC2026 金融AI武道大会：四道业务真题考验Agent工程落地

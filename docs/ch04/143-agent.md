@@ -1,7 +1,5 @@
 # 上下文漂移与工具调用幻觉：Agent 长对话可靠性两大核心问题
 
-## Ch04.143 上下文漂移与工具调用幻觉：Agent 长对话可靠性两大核心问题
-
 > 📊 Level ⭐⭐ | 17.9KB | `entities/kamacoder-agent-context-drift-tool-hallucination.md`
 
 ## 概述

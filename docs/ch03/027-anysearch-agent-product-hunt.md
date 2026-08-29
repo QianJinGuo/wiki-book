@@ -1,7 +1,5 @@
 # AnySearch — Agent专用搜索引擎，登顶Product Hunt
 
-## Ch03.027 AnySearch — Agent专用搜索引擎，登顶Product Hunt
-
 > 📊 Level ⭐ | 7.2KB | `entities/anysearch-agent-search-engine-product-hunt-2026.md`
 
 # AnySearch — Agent专用搜索引擎，登顶Product Hunt

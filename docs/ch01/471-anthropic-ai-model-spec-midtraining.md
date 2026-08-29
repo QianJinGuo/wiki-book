@@ -1,7 +1,5 @@
 # Anthropic 最新论文：阻止 AI 叛变的方法（Model Spec Midtraining）
 
-## Ch01.471 Anthropic 最新论文：阻止 AI 叛变的方法（Model Spec Midtraining）
-
 > 📊 Level ⭐⭐ | 14.2KB | `entities/anthropic-msm-anti-defection-paper.md`
 
 ## 文章核心

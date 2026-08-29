@@ -1,7 +1,5 @@
 # 拆解马斯克连夜开源的 Grok Build：79 个 Cargo 包背后的 Agent 内核
 
-## Ch04.047 拆解马斯克连夜开源的 Grok Build：79 个 Cargo 包背后的 Agent 内核
-
 > 📊 Level ⭐ | 0.8KB | `entities/grok-build-agent-kernel-vibecoder-2026.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/grok-build-agent-kernel-vibecoder-2026.md)

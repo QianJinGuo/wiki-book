@@ -1,7 +1,5 @@
 # MemSlides — 层级记忆驱动的 AI Slide 生成 Agent
 
-## Ch04.398 MemSlides — 层级记忆驱动的 AI Slide 生成 Agent
-
 > 📊 Level ⭐⭐ | 8.7KB | `entities/memslides-hierarchical-memory-ai-slide-agent-tsinghua-shanghaijiao.md`
 
 # MemSlides — 层级记忆驱动的 AI Slide 生成 Agent

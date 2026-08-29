@@ -1,7 +1,5 @@
 # AgentScope Java Harness Framework — 企业级 Agent 分布式场景的 Harness 实现
 
-## Ch11.316 AgentScope Java Harness Framework — 企业级 Agent 分布式场景的 Harness 实现
-
 > 📊 Level ⭐⭐⭐ | 8.0KB | `entities/agentscope-java-harness-framework.md`
 
 ## 核心定位

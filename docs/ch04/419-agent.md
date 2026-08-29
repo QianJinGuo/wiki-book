@@ -1,7 +1,5 @@
 # Agent 开发范式演进：从环境工程出发，“简化”多源实时上下文
 
-## Ch04.419 Agent 开发范式演进：从环境工程出发，“简化”多源实时上下文
-
 > 📊 Level ⭐⭐ | 8.5KB | `entities/agent-开发范式演进从环境工程出发简化多源实时上下文.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-开发范式演进从环境工程出发简化多源实时上下文.md)

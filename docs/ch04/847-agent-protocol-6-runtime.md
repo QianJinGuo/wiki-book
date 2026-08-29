@@ -1,7 +1,5 @@
 # Agent Protocol 不变层：跨框架的 6 个稳定 Runtime 对象
 
-## Ch04.847 Agent Protocol 不变层：跨框架的 6 个稳定 Runtime 对象
-
 > 📊 Level ⭐⭐⭐ | 6.9KB | `entities/agent-protocol-unchanged-across-frameworks-aliyun-2026-07-02.md`
 
 # Agent Protocol 不变层：跨框架的 6 个稳定 Runtime 对象

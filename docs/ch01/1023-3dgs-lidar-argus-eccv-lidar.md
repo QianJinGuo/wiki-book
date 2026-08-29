@@ -1,7 +1,5 @@
 # 谁说3DGS必须靠LiDAR？如视Argus入选ECCV，让图像也能提供LiDAR级位姿约束
 
-## Ch01.1023 谁说3DGS必须靠LiDAR？如视Argus入选ECCV，让图像也能提供LiDAR级位姿约束
-
 > 📊 Level ⭐⭐ | 6.3KB | `entities/谁说3dgs必须靠lidar如视argus入选eccv让图像也能提供lidar级位姿约束.md`
 
 # 谁说3DGS必须靠LiDAR？如视Argus入选ECCV，让图像也能提供LiDAR级位姿约束

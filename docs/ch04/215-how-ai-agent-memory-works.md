@@ -1,7 +1,5 @@
 # How AI Agent Memory Works
 
-## Ch04.215 How AI Agent Memory Works
-
 > 📊 Level ⭐⭐ | 13.0KB | `entities/how-ai-agent-memory-works.md`
 
 ## 记忆的类型

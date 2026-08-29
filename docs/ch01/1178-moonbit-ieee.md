@@ -1,7 +1,5 @@
 # MoonBit与无资源语言代码生成：IEEE论文评估与改进
 
-## Ch01.1178 MoonBit与无资源语言代码生成：IEEE论文评估与改进
-
 > 📊 Level ⭐⭐ | 5.1KB | `entities/moonbit-llm-code-generation-no-resource-languages-ieee-2026.md`
 
 # MoonBit与无资源语言代码生成：IEEE论文评估与改进

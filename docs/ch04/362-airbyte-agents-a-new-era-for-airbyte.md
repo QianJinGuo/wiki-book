@@ -1,7 +1,5 @@
 # Airbyte Agents: A New Era for Airbyte
 
-## Ch04.362 Airbyte Agents: A New Era for Airbyte
-
 > 📊 Level ⭐⭐ | 9.5KB | `entities/airbyte-agents-a-new-era-for-airbyte-airbyte.md`
 
 ## 核心定位

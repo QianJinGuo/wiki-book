@@ -1,7 +1,5 @@
 # SchemaFlow: OpenAI Cookbook Partner — Agentic Database Change Impact Analysis, SQL Generation, and Eval Guardrails
 
-## Ch04.268 SchemaFlow: OpenAI Cookbook Partner — Agentic Database Change Impact Analysis, SQL Generation, and Eval Guardrails
-
 > 📊 Level ⭐⭐ | 11.5KB | `entities/schemaflow-openai-cookbook-staged-agentic-workflow.md`
 
 # SchemaFlow: OpenAI Cookbook Partner — Agentic Database Change Impact Analysis, SQL Generation, and Eval Guardrails

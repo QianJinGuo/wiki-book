@@ -1,7 +1,5 @@
 # 使用Amazon EMR Serverless Storage简化运维节省成本 | 亚马逊AWS官方博客
 
-## Ch11.204 使用Amazon EMR Serverless Storage简化运维节省成本 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 6.7KB | `entities/using-amazon-emr-serverless-storage-to-simplify-operations-and-reduce-costs.md`
 
 ## 概述

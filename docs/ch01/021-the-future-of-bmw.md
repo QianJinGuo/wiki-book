@@ -1,7 +1,5 @@
 # The Future of BMW
 
-## Ch01.021 The Future of BMW
-
 > 📊 Level ⭐ | 10.1KB | `entities/the-future-of-bmw-design-a-conversation-with-max-missoni.md`
 
 # The Future of BMW Design: A Conversation with Max Missoni

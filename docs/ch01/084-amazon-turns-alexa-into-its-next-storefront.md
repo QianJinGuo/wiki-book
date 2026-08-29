@@ -1,7 +1,5 @@
 # Amazon Turns Alexa Into Its Next Storefront
 
-## Ch01.084 Amazon Turns Alexa Into Its Next Storefront
-
 > 📊 Level ⭐ | 7.4KB | `entities/amazon-turns-alexa-into-its-next-storefront.md`
 
 ## 核心要点

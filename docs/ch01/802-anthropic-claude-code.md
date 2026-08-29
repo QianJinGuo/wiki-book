@@ -1,7 +1,5 @@
 # Anthropic Claude Code 木马门：隐私遥测争议
 
-## Ch01.802 Anthropic Claude Code 木马门：隐私遥测争议
-
 > 📊 Level ⭐⭐ | 8.0KB | `entities/anthropic-claude-code-trojan-telemetry-security-2026.md`
 
 # Anthropic Claude Code 木马门：隐私遥测争议

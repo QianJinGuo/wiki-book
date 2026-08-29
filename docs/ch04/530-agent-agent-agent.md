@@ -1,7 +1,5 @@
 # 低代码 Agent、框架 Agent、自研 Agent，分别适合谁
 
-## Ch04.530 低代码 Agent、框架 Agent、自研 Agent，分别适合谁
-
 > 📊 Level ⭐⭐ | 7.2KB | `entities/lowcode-framework-custom-agent-decision-framework-hello-agents.md`
 
 # 低代码 Agent、框架 Agent、自研 Agent，分别适合谁

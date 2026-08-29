@@ -1,7 +1,5 @@
 # Google adds llms.txt check to Chrome Lighthouse
 
-## Ch01.1167 Google adds llms.txt check to Chrome Lighthouse
-
 > 📊 Level ⭐⭐ | 5.2KB | `entities/searchengineland-com-google-adds-llms-txt-check-to-chrome-lighthouse.md`
 
 ## 核心要点

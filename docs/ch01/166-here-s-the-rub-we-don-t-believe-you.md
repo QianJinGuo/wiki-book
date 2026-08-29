@@ -1,7 +1,5 @@
 # Here's The Rub: We Don't Believe You
 
-## Ch01.166 Here's The Rub: We Don't Believe You
-
 > 📊 Level ⭐ | 3.7KB | `entities/randsinrepose-we-dont-believe-you-rub.md`
 
 # Here's The Rub: We Don't Believe You

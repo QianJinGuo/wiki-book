@@ -1,7 +1,5 @@
 # Introducing AWS Continuum for security at machine speed
 
-## Ch11.311 Introducing AWS Continuum for security at machine speed
-
 > 📊 Level ⭐⭐ | 0.7KB | `entities/aws-continuum-security-machine-speed.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-continuum-security-machine-speed.md)

@@ -1,7 +1,5 @@
 # Martin Fowler AI 研发提醒：Harness 承重层
 
-## Ch05.018 Martin Fowler AI 研发提醒：Harness 承重层
-
 > 📊 Level ⭐⭐ | 20.7KB | `entities/martin-fowler-ai-rd-harness-nondeterminism-devnote.md`
 
 ## 核心洞察

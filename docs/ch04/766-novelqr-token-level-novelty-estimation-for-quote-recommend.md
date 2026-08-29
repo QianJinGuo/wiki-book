@@ -1,7 +1,5 @@
 # NOVELQR — Token-Level Novelty Estimation for Quote Recommendation
 
-## Ch04.766 NOVELQR — Token-Level Novelty Estimation for Quote Recommendation
-
 > 📊 Level ⭐⭐ | 3.5KB | `entities/novelqr-token-level-novelty-estimation.md`
 
 # NOVELQR — Token-Level Novelty Estimation for Quote Recommendation

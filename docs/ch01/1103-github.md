@@ -1,7 +1,5 @@
 # 明星开源项目为什么开始离开 github
 
-## Ch01.1103 明星开源项目为什么开始离开 github
-
 > 📊 Level ⭐⭐ | 5.7KB | `entities/明星开源项目为什么开始离开-github.md`
 
 ## 深度分析

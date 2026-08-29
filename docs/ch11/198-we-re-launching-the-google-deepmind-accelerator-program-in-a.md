@@ -1,7 +1,5 @@
 # We're launching the Google DeepMind Accelerator program in Asia Pacific to tackle environmental risks
 
-## Ch11.198 We're launching the Google DeepMind Accelerator program in Asia Pacific to tackle environmental risks
-
 > 📊 Level ⭐⭐ | 7.0KB | `entities/google-deepmind-accelerator-asia-pacific.md`
 
 # We're launching the Google DeepMind Accelerator program in Asia Pacific to tackle environmental risks

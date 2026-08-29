@@ -1,7 +1,5 @@
 # Mattel163 MARP：多智能体报告自动生成平台（异步长任务 × 证据链 × Agent-as-Code × 项目级凭证）
 
-## Ch04.490 Mattel163 MARP：多智能体报告自动生成平台（异步长任务 × 证据链 × Agent-as-Code × 项目级凭证）
-
 > 📊 Level ⭐⭐ | 7.7KB | `entities/mattel163-marp-multi-agent-report-platform-aws-2026-08-17.md`
 
 # Mattel163 MARP：多智能体报告自动生成平台

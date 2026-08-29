@@ -1,7 +1,5 @@
 # Incendium Fuzzing Ms Rpc
 
-## Ch12.118 Incendium Fuzzing Ms Rpc
-
 > 📊 Level ⭐⭐ | 4.1KB | `entities/incendium-fuzzing-ms-rpc.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/incendium-fuzzing-ms-rpc.md)

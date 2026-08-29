@@ -1,7 +1,5 @@
 # Document Processing Agent
 
-## Ch04.812 Document Processing Agent
-
 > 📊 Level ⭐⭐ | 1.5KB | `entities/document-processing-agent.md`
 
 # Document Processing Agent

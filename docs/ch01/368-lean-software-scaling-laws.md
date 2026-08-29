@@ -1,7 +1,5 @@
 # Lean Software Scaling Laws
 
-## Ch01.368 Lean Software Scaling Laws
-
 > 📊 Level ⭐ | 0.5KB | `entities/lean-software-scaling-laws.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lean-software-scaling-laws.md)

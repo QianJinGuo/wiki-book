@@ -1,7 +1,5 @@
 # Build real-time voice streaming applications with Amazon Nova Sonic and WebRTC
 
-## Ch01.811 Build real-time voice streaming applications with Amazon Nova Sonic and WebRTC
-
 > 📊 Level ⭐⭐ | 7.9KB | `entities/build-real-time-voice-streaming-with-amazon-nova-sonic-and-webrtc.md`
 
 ## 核心要点

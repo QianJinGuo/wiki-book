@@ -1,7 +1,5 @@
 # Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise
 
-## Ch01.691 Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise
-
 > 📊 Level ⭐⭐ | 8.9KB | `entities/nemotron-3-5-content-safety-multimodal.md`
 
 # Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise

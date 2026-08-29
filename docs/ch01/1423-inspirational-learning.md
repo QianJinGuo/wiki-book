@@ -1,7 +1,5 @@
 # 启发学习（Inspirational Learning）：让大模型认知从外化到内生
 
-## Ch01.1423 启发学习（Inspirational Learning）：让大模型认知从外化到内生
-
 > 📊 Level ⭐⭐ | 3.3KB | `entities/inspirational-learning-isaac-llm.md`
 
 # 启发学习（Inspirational Learning）：让大模型认知从外化到内生

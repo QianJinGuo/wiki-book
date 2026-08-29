@@ -1,7 +1,5 @@
 # Introducing Claude apps gateway for AWS
 
-## Ch11.270 Introducing Claude apps gateway for AWS
-
 > 📊 Level ⭐⭐ | 3.9KB | `entities/introducing-claude-apps-gateway-for-aws.md`
 
 # Introducing Claude apps gateway for AWS

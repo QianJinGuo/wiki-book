@@ -1,7 +1,5 @@
 # 在 Amazon EC2 GPU 实例上部署 NVIDIA NemoClaw — 以 Amazon Bedrock 作为推理后端的生产级参考架构
 
-## Ch11.053 在 Amazon EC2 GPU 实例上部署 NVIDIA NemoClaw — 以 Amazon Bedrock 作为推理后端的生产级参考架构
-
 > 📊 Level ⭐⭐ | 13.2KB | `entities/在-amazon-ec2-gpu-实例上部署-nvidia-nemoclaw-以-amazon-bedrock-作为推理.md`
 
 ## 核心要点

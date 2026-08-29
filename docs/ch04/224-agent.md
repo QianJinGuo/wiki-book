@@ -1,7 +1,5 @@
 # 音视频 Agent 生产级开发套件
 
-## Ch04.224 音视频 Agent 生产级开发套件
-
 > 📊 Level ⭐⭐ | 12.5KB | `entities/从生成到交付音视频-agent-要有生产级开发套件.md`
 
 # 音视频 Agent 生产级开发套件

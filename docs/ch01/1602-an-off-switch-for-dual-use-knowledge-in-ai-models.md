@@ -1,7 +1,5 @@
 # An off switch for dual use knowledge in AI models
 
-## Ch01.1602 An off switch for dual use knowledge in AI models
-
 > 📊 Level ⭐⭐⭐⭐ | 10.9KB | `entities/off-switch-dual-use.md`
 
 # An off switch for dual use knowledge in AI models

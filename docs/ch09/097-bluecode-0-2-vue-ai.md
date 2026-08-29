@@ -1,7 +1,5 @@
 # BlueCode 0 行手写代码重构 2 万行 Vue：约束体系驱动 AI 大规模重构
 
-## Ch09.097 BlueCode 0 行手写代码重构 2 万行 Vue：约束体系驱动 AI 大规模重构
-
 > 📊 Level ⭐⭐ | 8.7KB | `entities/vivo-bluecode-zero-code-2day-refactor.md`
 
 # BlueCode 0 行手写代码重构 2 万行 Vue：约束体系驱动 AI 大规模重构

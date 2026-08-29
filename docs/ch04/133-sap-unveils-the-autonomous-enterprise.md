@@ -1,7 +1,5 @@
 # SAP Unveils the Autonomous Enterprise
 
-## Ch04.133 SAP Unveils the Autonomous Enterprise
-
 > 📊 Level ⭐⭐ | 18.9KB | `entities/sap-unveils-the-autonomous-enterprise.md`
 
 # SAP Unveils the Autonomous Enterprise

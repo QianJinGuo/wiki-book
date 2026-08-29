@@ -1,7 +1,5 @@
 # Data modeling patterns for Amazon Quick Sight multi-dataset relationships
 
-## Ch11.240 Data modeling patterns for Amazon Quick Sight multi-dataset relationships
-
 > 📊 Level ⭐⭐ | 4.5KB | `entities/data-modeling-patterns-for-amazon-quick-sight-multi-dataset-.md`
 
 # Data modeling patterns for Amazon Quick Sight multi-dataset relationships

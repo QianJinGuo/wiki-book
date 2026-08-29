@@ -1,7 +1,5 @@
 # Agent 作为软件架构的新一层：Codex Harness 平台化 + DSH Subagent（Agent-as-Execution-Unit）
 
-## Ch05.100 Agent 作为软件架构的新一层：Codex Harness 平台化 + DSH Subagent（Agent-as-Execution-Unit）
-
 > 📊 Level ⭐⭐ | 6.1KB | `entities/codex-harness-platform-dsh-subagent-agent-as-execution-unit-ruofei-2026.md`
 
 # Agent 作为软件架构的新一层：Codex Harness 平台化 + DSH Subagent

@@ -1,7 +1,5 @@
 # Aderant transforms cloud operations with Amazon Quick
 
-## Ch11.216 Aderant transforms cloud operations with Amazon Quick
-
 > 📊 Level ⭐⭐ | 6.2KB | `entities/aderant-transforms-cloud-operations-with-amazon-quick.md`
 
 ## 核心要点

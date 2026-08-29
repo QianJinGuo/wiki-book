@@ -1,7 +1,5 @@
 # Canvas Breach Disrupts Schools & Colleges Nationwide
 
-## Ch12.033 Canvas Breach Disrupts Schools & Colleges Nationwide
-
 > 📊 Level ⭐⭐ | 10.6KB | `entities/canvas-breach-disrupts-schools-colleges-nationwide.md`
 
 # Canvas Breach Disrupts Schools & Colleges Nationwide – Krebs on Security

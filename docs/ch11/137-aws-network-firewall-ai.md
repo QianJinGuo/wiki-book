@@ -1,7 +1,5 @@
 # AWS Network Firewall 规则冲突 AI 实时检测方案（部署小指南六）
 
-## Ch11.137 AWS Network Firewall 规则冲突 AI 实时检测方案（部署小指南六）
-
 > 📊 Level ⭐⭐ | 8.6KB | `entities/aws-network-firewall-ai-conflict-detection-bedrock.md`
 
 # AWS Network Firewall 规则冲突 AI 实时检测方案（部署小指南六）

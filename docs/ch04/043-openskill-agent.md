@@ -1,7 +1,5 @@
 # 深读 OpenSkill：不给答案不看测试，Agent 自进化
 
-## Ch04.043 深读 OpenSkill：不给答案不看测试，Agent 自进化
-
 > 📊 Level ⭐ | 0.9KB | `entities/openskill-open-world-self-evolution-agent-2026-07-22.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openskill-open-world-self-evolution-agent-2026-07-22.md)

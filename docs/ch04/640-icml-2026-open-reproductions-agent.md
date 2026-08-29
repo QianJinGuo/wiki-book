@@ -1,7 +1,5 @@
 # ICML 2026 Open Reproductions — 大规模 Agent 驱动的论文复现审计
 
-## Ch04.640 ICML 2026 Open Reproductions — 大规模 Agent 驱动的论文复现审计
-
 > 📊 Level ⭐⭐ | 5.4KB | `entities/icml-2026-open-reproductions-agent-audit.md`
 
 # ICML 2026 Open Reproductions — 大规模 Agent 驱动的论文复现审计

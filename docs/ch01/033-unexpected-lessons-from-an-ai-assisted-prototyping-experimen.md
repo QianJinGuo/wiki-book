@@ -1,7 +1,5 @@
 # Unexpected lessons from an AI-assisted prototyping experiment
 
-## Ch01.033 Unexpected lessons from an AI-assisted prototyping experiment
-
 > 📊 Level ⭐ | 8.8KB | `entities/adobe-design-unexpected-lessons-ai-prototyping-2026.md`
 
 # Unexpected lessons from an AI-assisted prototyping experiment

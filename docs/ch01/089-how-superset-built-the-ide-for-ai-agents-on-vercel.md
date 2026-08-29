@@ -1,7 +1,5 @@
 # How Superset built the IDE for AI agents on Vercel
 
-## Ch01.089 How Superset built the IDE for AI agents on Vercel
-
 > 📊 Level ⭐ | 7.3KB | `entities/vercel-com-how-superset-built-the-ide-for-ai-agents-on-vercel.md`
 
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vercel-com-how-superset-built-the-ide-for-ai-agents-on-vercel.md)

@@ -1,7 +1,5 @@
 # Introducing the MDN MCP server
 
-## Ch07.080 Introducing the MDN MCP server
-
 > 📊 Level ⭐⭐ | 4.5KB | `entities/introducing-mdn-mcp-server-2026.md`
 
 # Introducing the MDN MCP server

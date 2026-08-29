@@ -1,7 +1,5 @@
 # 基于 Application Inference Profile 为 Amazon Bedrock 构建分业务单元的近实时成本告警
 
-## Ch11.276 基于 Application Inference Profile 为 Amazon Bedrock 构建分业务单元的近实时成本告警
-
 > 📊 Level ⭐⭐ | 3.7KB | `entities/amazon-bedrock-application-inference-profile-per-bu-cost-alert.md`
 
 # 基于 Application Inference Profile 为 Amazon Bedrock 构建分业务单元的近实时成本告警

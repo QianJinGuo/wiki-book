@@ -1,7 +1,5 @@
 # Qoder 开源 Better Harness，专门审查 Coding Agent 的外部系统
 
-## Ch09.013 Qoder 开源 Better Harness，专门审查 Coding Agent 的外部系统
-
 > 📊 Level ⭐ | 0.8KB | `entities/qoder-better-harness-code-level-analysis-vibecoder.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qoder-better-harness-code-level-analysis-vibecoder.md)

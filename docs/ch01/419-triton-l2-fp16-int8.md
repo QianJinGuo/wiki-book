@@ -1,7 +1,5 @@
 # Triton L2缓存命中优化矩阵乘法(fp16&int8)详解及性能测试
 
-## Ch01.419 Triton L2缓存命中优化矩阵乘法(fp16&int8)详解及性能测试
-
 > 📊 Level ⭐⭐ | 17.6KB | `entities/triton-l2缓存命中优化矩阵乘法fp16int8详解及性能测试.md`
 
 ## 文章概要

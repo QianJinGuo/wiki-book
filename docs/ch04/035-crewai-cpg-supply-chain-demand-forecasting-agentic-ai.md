@@ -1,7 +1,5 @@
 # crewai-cpg-supply-chain-demand-forecasting-agentic-ai
 
-## Ch04.035 crewai-cpg-supply-chain-demand-forecasting-agentic-ai
-
 > 📊 Level ⭐ | 1.0KB | `entities/crewai-cpg-supply-chain-demand-forecasting-agentic-ai.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/crewai-cpg-supply-chain-demand-forecasting-agentic-ai.md)

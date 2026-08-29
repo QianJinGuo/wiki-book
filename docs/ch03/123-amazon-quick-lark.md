@@ -1,7 +1,5 @@
 # 零代码快速体验 Amazon Quick 操作飞书/Lark
 
-## Ch03.123 零代码快速体验 Amazon Quick 操作飞书/Lark
-
 > 📊 Level ⭐⭐ | 5.8KB | `entities/零代码快速体验-amazon-quick-操作飞书lark.md`
 
 # 零代码快速体验 Amazon Quick 操作飞书/Lark

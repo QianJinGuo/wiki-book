@@ -1,7 +1,5 @@
 # UtopAI Studios 模型 PAI 2.0 爆火出圈 — 全球顶流 AI 导演 PJ Ace 借助 PAI 2.0 复活真实的美国独立日
 
-## Ch01.1532 UtopAI Studios 模型 PAI 2.0 爆火出圈 — 全球顶流 AI 导演 PJ Ace 借助 PAI 2.0 复活真实的美国独立日
-
 > 📊 Level ⭐⭐⭐ | 8.2KB | `entities/utopai-studios模型pai-20爆火出圈全球顶流ai导演pj-ace借助pai-20复活真实的美国独立日.md`
 
 # UtopAI Studios 模型 PAI 2.0 爆火出圈 — 全球顶流 AI 导演 PJ Ace 借助 PAI 2.0 复活真实的美国独立日

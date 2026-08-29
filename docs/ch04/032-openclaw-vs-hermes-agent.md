@@ -1,7 +1,5 @@
 # openclaw-vs-hermes-agent-三个重度日常场景深度体验后我为什么放弃了爱马仕选择了小龙虾
 
-## Ch04.032 openclaw-vs-hermes-agent-三个重度日常场景深度体验后我为什么放弃了爱马仕选择了小龙虾
-
 > 📊 Level ⭐ | 1.0KB | `entities/openclaw-vs-hermes-agent-三个重度日常场景深度体验后我为什么放弃了爱马仕选择了小龙虾.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-vs-hermes-agent-三个重度日常场景深度体验后我为什么放弃了爱马仕选择了小龙虾.md)

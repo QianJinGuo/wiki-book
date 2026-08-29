@@ -1,7 +1,5 @@
 # Agent-Assisted SGLang 开发：AI 辅助 LLM 推理框架工程实践
 
-## Ch04.748 Agent-Assisted SGLang 开发：AI 辅助 LLM 推理框架工程实践
-
 > 📊 Level ⭐⭐ | 3.8KB | `entities/agent-assisted-sglang-development-lmsys-2026-07.md`
 
 # Agent-Assisted SGLang 开发：AI 辅助 LLM 推理框架工程实践

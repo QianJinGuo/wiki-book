@@ -1,7 +1,5 @@
 # Noam Brown：推理预算应成为AI评估的基础变量
 
-## Ch01.578 Noam Brown：推理预算应成为AI评估的基础变量
-
 > 📊 Level ⭐⭐ | 10.8KB | `entities/noam-brown-ai-evaluation-reasoning-budget-performance-cost-curve.md`
 
 > 原文归档：[原文归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/noam-brown-ai-evaluation-reasoning-budget-performance-cost-curve.md)

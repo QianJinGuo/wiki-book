@@ -1,7 +1,5 @@
 # OpenChronicle — AI可复用记忆层
 
-## Ch06.040 OpenChronicle — AI可复用记忆层
-
 > 📊 Level ⭐⭐ | 4.3KB | `entities/openchronicle-memory-layer.md`
 
 # OpenChronicle

@@ -1,7 +1,5 @@
 # WorkBuddy Skill 全拆解
 
-## Ch07.068 WorkBuddy Skill 全拆解
-
 > 📊 Level ⭐⭐ | 6.8KB | `entities/workbuddy-skill-全拆解从创建到自进化.md`
 
 # WorkBuddy Skill 全拆解

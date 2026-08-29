@@ -1,7 +1,5 @@
 # Python 3.15 Beta 实测：实战视角的技术特性评估
 
-## Ch03.052 Python 3.15 Beta 实测：实战视角的技术特性评估
-
 > 📊 Level ⭐ | 3.5KB | `entities/python-315-beta-practical-test-new-features.md`
 
 # Python 3.15 Beta 实测：实战视角的技术特性评估

@@ -1,7 +1,5 @@
 # 你的一人公司品牌部，带着Image-2模型的lovart中文版来了
 
-## Ch01.759 你的一人公司品牌部，带着Image-2模型的lovart中文版来了
-
 > 📊 Level ⭐⭐ | 8.2KB | `entities/你的一人公司品牌部带着image-2模型的lovart中文版来了.md`
 
 ## 摘要

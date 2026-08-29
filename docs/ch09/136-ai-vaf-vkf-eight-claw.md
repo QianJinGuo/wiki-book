@@ -1,7 +1,5 @@
 # 小米零售研发团队 AI 工程化三层实践：VAF + VKF + eight-claw
 
-## Ch09.136 小米零售研发团队 AI 工程化三层实践：VAF + VKF + eight-claw
-
 > 📊 Level ⭐⭐ | 6.8KB | `entities/xiaomi-retail-ai-engineering-three-layer-practice.md`
 
 # 小米零售研发团队 AI 工程化三层实践

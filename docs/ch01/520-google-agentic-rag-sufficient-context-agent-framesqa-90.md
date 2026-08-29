@@ -1,7 +1,5 @@
 # Google Agentic RAG — Sufficient Context Agent + FramesQA 90.1% Cross-Corpus
 
-## Ch01.520 Google Agentic RAG — Sufficient Context Agent + FramesQA 90.1% Cross-Corpus
-
 > 📊 Level ⭐⭐ | 12.4KB | `entities/google-agentic-rag-sufficient-context-agent-framesqa.md`
 
 # Google Agentic RAG — Sufficient Context Agent + FramesQA 90.1% Cross-Corpus

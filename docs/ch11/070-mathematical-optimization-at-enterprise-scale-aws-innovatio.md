@@ -1,7 +1,5 @@
 # Mathematical Optimization at Enterprise Scale: AWS Innovation Center Methodology and Case Studies
 
-## Ch11.070 Mathematical Optimization at Enterprise Scale: AWS Innovation Center Methodology and Case Studies
-
 > 📊 Level ⭐⭐ | 11.4KB | `entities/mathematical-optimization-aws-innovation-center-enterprise.md`
 
 # Mathematical Optimization at Enterprise Scale: AWS Innovation Center Methodology and Case Studies

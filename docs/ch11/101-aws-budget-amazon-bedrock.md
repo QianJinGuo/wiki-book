@@ -1,7 +1,5 @@
 # 利用 AWS Budget 实现 Amazon Bedrock 用量监控、超预算告警与自动中断方案
 
-## Ch11.101 利用 AWS Budget 实现 Amazon Bedrock 用量监控、超预算告警与自动中断方案
-
 > 📊 Level ⭐⭐ | 9.8KB | `entities/aws-budget-bedrock-cost-governance.md`
 
 # 利用 AWS Budget 实现 Amazon Bedrock 用量监控、超预算告警与自动中断方案

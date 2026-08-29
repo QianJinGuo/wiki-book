@@ -1,7 +1,5 @@
 # Anthropic 上线「做梦」功能，让 Agent 越睡越聪明
 
-## Ch04.315 Anthropic 上线「做梦」功能，让 Agent 越睡越聪明
-
 > 📊 Level ⭐⭐ | 10.3KB | `entities/anthropic-dreaming-claude-managed-agents-ovz5v7jjkqdksu9xmxwt8w.md`
 
 ## 核心功能

@@ -1,7 +1,5 @@
 # It's Time to Walk
 
-## Ch03.004 It's Time to Walk
-
 > 📊 Level ⭐ | 12.7KB | `entities/dictation-agents-human-workspace.md`
 
 ### The main points

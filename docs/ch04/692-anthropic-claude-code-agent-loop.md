@@ -1,7 +1,5 @@
 # Anthropic 大规模代码迁移方法论 — Claude Code 多 Agent Loop 的工程实践
 
-## Ch04.692 Anthropic 大规模代码迁移方法论 — Claude Code 多 Agent Loop 的工程实践
-
 > 📊 Level ⭐⭐ | 4.5KB | `entities/anthropic-claude-code-large-scale-code-migration-2026.md`
 
 # Anthropic 大规模代码迁移方法论 — Claude Code 多 Agent Loop 的工程实践

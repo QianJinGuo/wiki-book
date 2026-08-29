@@ -1,7 +1,5 @@
 # Polaris — 浙大 ZJU-REAL 开源端到端科研智能体
 
-## Ch04.633 Polaris — 浙大 ZJU-REAL 开源端到端科研智能体
-
 > 📊 Level ⭐⭐ | 5.6KB | `entities/polaris-zju-open-source-research-agent-2026.md`
 
 # Polaris — 浙大 ZJU-REAL 开源端到端科研智能体

@@ -1,7 +1,5 @@
 # Deploying Kimi K3 on AWS
 
-## Ch11.171 Deploying Kimi K3 on AWS
-
 > 📊 Level ⭐⭐ | 7.3KB | `entities/deploying-kimi-k3-on-aws.md`
 
 # Deploying Kimi K3 on AWS

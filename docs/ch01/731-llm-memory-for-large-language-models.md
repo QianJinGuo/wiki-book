@@ -1,7 +1,5 @@
 # LLM 记忆架构三维分类体系（清华《Memory for Large Language Models》综述）
 
-## Ch01.731 LLM 记忆架构三维分类体系（清华《Memory for Large Language Models》综述）
-
 > 📊 Level ⭐⭐ | 8.5KB | `entities/memory-for-llms-tsinghua-taxonomy-2026.md`
 
 # LLM 记忆架构三维分类体系

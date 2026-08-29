@@ -1,7 +1,5 @@
 # Repricing of Software Engineering Labor
 
-## Ch01.090 Repricing of Software Engineering Labor
-
 > 📊 Level ⭐ | 7.3KB | `entities/posts-repricing-of-software-engineering-labor.md`
 
 # Repricing of Software Engineering Labor

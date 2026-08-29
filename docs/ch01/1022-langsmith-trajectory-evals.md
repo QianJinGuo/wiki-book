@@ -1,7 +1,5 @@
 # Langsmith Trajectory Evals
 
-## Ch01.1022 Langsmith Trajectory Evals
-
 > 📊 Level ⭐⭐ | 6.3KB | `entities/langsmith-trajectory-evals.md`
 
 # LangSmith Trajectory Evaluations

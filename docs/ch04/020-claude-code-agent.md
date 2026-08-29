@@ -1,7 +1,5 @@
 # Claude Code 的 Agent 工程
 
-## Ch04.020 Claude Code 的 Agent 工程
-
 > 📊 Level ⭐ | 5.5KB | `entities/claude-code-agent-engineering.md`
 
 # Claude Code 的 Agent 工程

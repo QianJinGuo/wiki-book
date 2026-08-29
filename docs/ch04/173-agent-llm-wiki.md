@@ -1,7 +1,5 @@
 # 高德内容数字员工：从基础问答到事实核查的证据化 Agent（业务地图 + LLM Wiki + 证据信封）
 
-## Ch04.173 高德内容数字员工：从基础问答到事实核查的证据化 Agent（业务地图 + LLM Wiki + 证据信封）
-
 > 📊 Level ⭐⭐ | 15.4KB | `entities/gaode-content-digital-employee-evidence-agent-2026-08-11.md`
 
 # 高德内容数字员工：从基础问答到事实核查的证据化 Agent

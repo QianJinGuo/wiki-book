@@ -1,7 +1,5 @@
 # PyTorch Monarch: AMD GPU Distributed Training on ROCm
 
-## Ch01.1240 PyTorch Monarch: AMD GPU Distributed Training on ROCm
-
 > 📊 Level ⭐⭐ | 4.6KB | `entities/pytorch-monarch-amd-gpus-rocm-distributed-training.md`
 
 > **Background**: 本文基于 PyTorch 官方博客分析 PyTorch Monarch 在 AMD Instinct GPU 上通过 ROCm 实现的单控制器分布式训练框架，涵盖容错、弹性扩展和多 GPU 通信。

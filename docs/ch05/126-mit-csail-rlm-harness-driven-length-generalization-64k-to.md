@@ -1,7 +1,5 @@
 # MIT CSAIL RLM: Harness-Driven Length Generalization — 64K to 2M Tokens
 
-## Ch05.126 MIT CSAIL RLM: Harness-Driven Length Generalization — 64K to 2M Tokens
-
 > 📊 Level ⭐⭐ | 3.6KB | `entities/mit-csail-rlm-harness-length-generalization.md`
 
 # MIT CSAIL RLM: Harness-Driven Length Generalization

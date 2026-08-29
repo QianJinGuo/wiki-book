@@ -1,7 +1,5 @@
 # 领先于Transformer！新架构首个1200万上下文模型SubQ，成本仅Opus的5%
 
-## Ch01.1321 领先于Transformer！新架构首个1200万上下文模型SubQ，成本仅Opus的5%
-
 > 📊 Level ⭐⭐ | 3.9KB | `entities/领先于transformer新架构首个1200万上下文模型subq成本仅opus的5.md`
 
 # 领先于Transformer！新架构首个1200万上下文模型SubQ，成本仅Opus的5%

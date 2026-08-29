@@ -1,7 +1,5 @@
 # Harness 工程实践：如何让 Agent 完成自主迭代
 
-## Ch04.239 Harness 工程实践：如何让 Agent 完成自主迭代
-
 > 📊 Level ⭐⭐ | 12.2KB | `entities/harness-工程实践如何让-agent-完成自主迭代.md`
 
 # Harness 工程实践：如何让 Agent 完成自主迭代

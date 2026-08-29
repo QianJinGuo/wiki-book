@@ -1,7 +1,5 @@
 # 小米零售 AI 问数实践：从 Text-to-SQL 到 Text-to-Metrics
 
-## Ch01.1454 小米零售 AI 问数实践：从 Text-to-SQL 到 Text-to-Metrics
-
 > 📊 Level ⭐⭐ | 2.2KB | `entities/xiaomi-retail-ai-qshu-问数实践-2026.md`
 
 # 小米零售 AI 问数实践：从 Text-to-SQL 到 Text-to-Metrics

@@ -1,7 +1,5 @@
 # Stealing Passwords via HTML Injection Under a Strict CSP
 
-## Ch12.067 Stealing Passwords via HTML Injection Under a Strict CSP
-
 > 📊 Level ⭐⭐ | 7.3KB | `entities/afine-csp-html-injection-password-exfiltration.md`
 
 # Stealing Passwords via HTML Injection Under a Strict CSP

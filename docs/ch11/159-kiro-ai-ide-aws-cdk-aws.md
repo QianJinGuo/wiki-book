@@ -1,7 +1,5 @@
 # 使用 Kiro AI IDE 开发 AWS CDK 部署架构：从模糊需求到三层堆栈的协作实战 | 亚马逊AWS官方博客
 
-## Ch11.159 使用 Kiro AI IDE 开发 AWS CDK 部署架构：从模糊需求到三层堆栈的协作实战 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 7.6KB | `entities/blog-03-kiro-ai-cdk-development.md`
 
 

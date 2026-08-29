@@ -1,7 +1,5 @@
 # Agentic Code Review
 
-## Ch01.177 Agentic Code Review
-
 > 📊 Level ⭐ | 3.2KB | `entities/agentic-code-review-addyosmani.md`
 
 # Agentic Code Review

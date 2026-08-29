@@ -1,7 +1,5 @@
 # Karpathy's Autoresearch found a 3-year-old bug in our query engine (and improved performance by 11%) - PostHog
 
-## Ch01.007 Karpathy's Autoresearch found a 3-year-old bug in our query engine (and improved performance by 11%) - PostHog
-
 > 📊 Level ⭐ | 14.3KB | `entities/https-posthog-com-blog-karpathy-autoresearch-query-engine-bug.md`
 
 # Karpathy's Autoresearch found a 3-year-old bug in our query engine (and improved performance by 11%) - PostHog

@@ -1,7 +1,5 @@
 # 阿里重磅开源 Open Code Review：一周 5k Star，为你的代码提效
 
-## Ch09.010 阿里重磅开源 Open Code Review：一周 5k Star，为你的代码提效
-
 > 📊 Level ⭐ | 1.1KB | `entities/2026-06-24-阿里重磅开源-Open-Code-Review-一周-5k-star-为你的代码-阿里云开发者.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-06-24-阿里重磅开源-Open-Code-Review-一周-5k-star-为你的代码-阿里云开发者.md)

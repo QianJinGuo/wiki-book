@@ -1,7 +1,5 @@
 # 当 OpenClaw 学会”团队记忆”：一个面向多客户服务的企业级共享记忆系统设计 | 亚马逊AWS官方博客
 
-## Ch11.059 当 OpenClaw 学会”团队记忆”：一个面向多客户服务的企业级共享记忆系统设计 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 11.6KB | `entities/openclaw-service-enterprise-share-system-design.md`
 
 

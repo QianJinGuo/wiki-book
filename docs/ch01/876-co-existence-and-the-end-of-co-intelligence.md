@@ -1,7 +1,5 @@
 # Co-Existence and the End of Co-Intelligence
 
-## Ch01.876 Co-Existence and the End of Co-Intelligence
-
 > 📊 Level ⭐⭐ | 7.4KB | `entities/co-existence-and-the-end-of-co-intelligence.md`
 
 # Co-Existence and the End of Co-Intelligence

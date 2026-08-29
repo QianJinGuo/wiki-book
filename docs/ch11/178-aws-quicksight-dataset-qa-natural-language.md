@@ -1,7 +1,5 @@
 # AWS Quicksight Dataset QA Natural Language
 
-## Ch11.178 AWS Quicksight Dataset QA Natural Language
-
 > 📊 Level ⭐⭐ | 7.0KB | `entities/aws-quicksight-dataset-qa-natural-language.md`
 
 # Introducing Dataset Q&A: Expanding natural language querying for structured datasets in Amazon Quick

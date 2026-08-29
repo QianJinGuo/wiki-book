@@ -1,7 +1,5 @@
 # score by collisions, patch by panic
 
-## Ch04.466 score by collisions, patch by panic
-
 > 📊 Level ⭐⭐ | 7.9KB | `entities/blog-himanshuanand-com-score-by-collisions-patch-by-panic.md`
 
 # score by collisions, patch by panic

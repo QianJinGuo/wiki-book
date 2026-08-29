@@ -1,7 +1,5 @@
 # FastAPI上线实战：认证、限流、零停机，一套代码搞定
 
-## Ch11.083 FastAPI上线实战：认证、限流、零停机，一套代码搞定
-
 > 📊 Level ⭐⭐ | 10.4KB | `entities/fastapi上线实战认证限流零停机一套代码搞定.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fastapi上线实战认证限流零停机一套代码搞定.md)

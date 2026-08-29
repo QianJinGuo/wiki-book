@@ -1,7 +1,5 @@
 # ICO fines South Staffordshire £963K over 2022 breach
 
-## Ch12.056 ICO fines South Staffordshire £963K over 2022 breach
-
 > 📊 Level ⭐⭐ | 8.5KB | `entities/ico-fines-south-staffordshire-2022-breach.md`
 
 ## 摘要

@@ -1,7 +1,5 @@
 # 从日志学习到风洞验证：构建 GPU 集群的 AI Native 稳定性闭环
 
-## Ch01.1354 从日志学习到风洞验证：构建 GPU 集群的 AI Native 稳定性闭环
-
 > 📊 Level ⭐⭐ | 3.7KB | `entities/从日志学习到风洞验证构建-gpu-集群的-ai-native-稳定性闭环.md`
 
 # 从日志学习到风洞验证：构建 GPU 集群的 AI Native 稳定性闭环

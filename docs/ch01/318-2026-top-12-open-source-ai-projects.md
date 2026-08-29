@@ -1,7 +1,5 @@
 # 2026-top-12-open-source-ai-projects-上半年度盘点
 
-## Ch01.318 2026-top-12-open-source-ai-projects-上半年度盘点
-
 > 📊 Level ⭐ | 0.7KB | `entities/2026-top-12-open-source-ai-projects-上半年度盘点.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-top-12-open-source-ai-projects-上半年度盘点.md)

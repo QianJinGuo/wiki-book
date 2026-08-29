@@ -1,7 +1,5 @@
 # 给 AI 做工作面试：Mollick 的模型评估方法论
 
-## Ch01.831 给 AI 做工作面试：Mollick 的模型评估方法论
-
 > 📊 Level ⭐⭐ | 7.7KB | `entities/ai-job-interview-model-evaluation-mollick.md`
 
 # 给 AI 做工作面试：Mollick 的模型评估方法论

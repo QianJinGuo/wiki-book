@@ -1,7 +1,5 @@
 # TencentDB Agent Memory 短期记忆压缩方案
 
-## Ch06.032 TencentDB Agent Memory 短期记忆压缩方案
-
 > 📊 Level ⭐⭐ | 6.7KB | `entities/tencentdb-agent-memory-short-term-compression.md`
 
 ## 核心方案

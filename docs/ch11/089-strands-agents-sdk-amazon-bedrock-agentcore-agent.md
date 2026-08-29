@@ -1,7 +1,5 @@
 # 基于 Strands Agents SDK 和 Amazon Bedrock AgentCore 的商品广告图审查 Agent
 
-## Ch11.089 基于 Strands Agents SDK 和 Amazon Bedrock AgentCore 的商品广告图审查 Agent
-
 > 📊 Level ⭐⭐ | 10.6KB | `entities/product-ad-review-agent-with-strands-sdk-bedrock.md`
 
 # 基于 Strands Agents SDK 和 Amazon Bedrock AgentCore 的商品广告图审查 Agent

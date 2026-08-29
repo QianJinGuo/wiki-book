@@ -1,7 +1,5 @@
 # Agent Lightning v1.0：面向 Harnessed Agentic RL 的轻量框架
 
-## Ch04.792 Agent Lightning v1.0：面向 Harnessed Agentic RL 的轻量框架
-
 > 📊 Level ⭐⭐ | 3.0KB | `entities/agent-lightning-v1-harnessed-agentic-rl-arxiv-2608-17528.md`
 
 # Agent Lightning v1.0：面向 Harnessed Agentic RL 的轻量框架

@@ -1,7 +1,5 @@
 # The Bitter Lesson versus The Garbage Can
 
-## Ch04.408 The Bitter Lesson versus The Garbage Can
-
 > 📊 Level ⭐⭐ | 8.5KB | `entities/the-bitter-lesson-versus-the-garbage-can.md`
 
 # The Bitter Lesson versus The Garbage Can

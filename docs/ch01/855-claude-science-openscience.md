@@ -1,7 +1,5 @@
 # Claude Science 开源平替 OpenScience
 
-## Ch01.855 Claude Science 开源平替 OpenScience
-
 > 📊 Level ⭐⭐ | 7.6KB | `entities/claude-science-开源平替-open-science-2026.md`
 
 # Claude Science 开源平替 OpenScience

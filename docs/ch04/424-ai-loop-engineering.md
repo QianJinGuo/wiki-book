@@ -1,7 +1,5 @@
 # 一文看懂 AI 编程智能体工程化新范式：Loop Engineering
 
-## Ch04.424 一文看懂 AI 编程智能体工程化新范式：Loop Engineering
-
 > 📊 Level ⭐⭐ | 8.4KB | `entities/loop-engineering-overview-tech-minimalism.md`
 
 # 一文看懂 AI 编程智能体工程化新范式：Loop Engineering

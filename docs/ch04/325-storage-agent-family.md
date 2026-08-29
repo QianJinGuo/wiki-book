@@ -1,7 +1,5 @@
 # Storage Agent Family: 云存储人机交互重构
 
-## Ch04.325 Storage Agent Family: 云存储人机交互重构
-
 > 📊 Level ⭐⭐ | 10.1KB | `entities/storage-agent-family-agent-时代重构云存储的人机交互.md`
 
 # Storage Agent Family: 云存储人机交互重构

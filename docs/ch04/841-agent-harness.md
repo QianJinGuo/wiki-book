@@ -1,7 +1,5 @@
 # Agent 生产级 Harness 工程实践
 
-## Ch04.841 Agent 生产级 Harness 工程实践
-
 > 📊 Level ⭐⭐⭐ | 8.3KB | `entities/agent-harness-production.md`
 
 # Agent 生产级 Harness 工程实践

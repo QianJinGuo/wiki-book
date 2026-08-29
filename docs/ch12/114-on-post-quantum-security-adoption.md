@@ -1,7 +1,5 @@
 # On Post-Quantum Security Adoption
 
-## Ch12.114 On Post-Quantum Security Adoption
-
 > 📊 Level ⭐⭐ | 4.0KB | `entities/on-post-quantum-security-adoption.md`
 
 # On Post-Quantum Security Adoption

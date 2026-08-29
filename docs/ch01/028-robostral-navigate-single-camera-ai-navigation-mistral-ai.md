@@ -1,7 +1,5 @@
 # Robostral Navigate: single-camera AI navigation | Mistral AI
 
-## Ch01.028 Robostral Navigate: single-camera AI navigation | Mistral AI
-
 > 📊 Level ⭐ | 9.3KB | `entities/robostral-navigate.md`
 
 # Robostral Navigate: single-camera AI navigation | Mistral AI

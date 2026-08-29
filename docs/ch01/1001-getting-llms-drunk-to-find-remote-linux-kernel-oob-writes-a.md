@@ -1,7 +1,5 @@
 # Getting LLMs Drunk to Find Remote Linux Kernel OOB Writes (and More)
 
-## Ch01.1001 Getting LLMs Drunk to Find Remote Linux Kernel OOB Writes (and More)
-
 > 📊 Level ⭐⭐ | 6.4KB | `entities/drinking-llms.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/drinking-llms.md)

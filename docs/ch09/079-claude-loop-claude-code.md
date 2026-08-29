@@ -1,7 +1,5 @@
 # Claude官方教你用 Loop：如何让Claude Code上夜班的四个交接点
 
-## Ch09.079 Claude官方教你用 Loop：如何让Claude Code上夜班的四个交接点
-
 > 📊 Level ⭐⭐ | 9.8KB | `entities/claude官方教你用-loop如何让claude-code上夜班的四个交接点.md`
 
 # Claude官方教你用 Loop：如何让Claude Code上夜班的四个交接点

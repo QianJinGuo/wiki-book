@@ -1,7 +1,5 @@
 # Americans still feel pessimistic about the economy. When will it change?
 
-## Ch01.851 Americans still feel pessimistic about the economy. When will it change?
-
 > 📊 Level ⭐⭐ | 7.6KB | `entities/consumer-confidence-economy-cnbc.md`
 
 ## 核心要点

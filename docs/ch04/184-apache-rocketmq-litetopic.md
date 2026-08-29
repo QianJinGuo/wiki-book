@@ -1,7 +1,5 @@
 # Apache RocketMQ LiteTopic 消息模型
 
-## Ch04.184 Apache RocketMQ LiteTopic 消息模型
-
 > 📊 Level ⭐⭐ | 14.9KB | `entities/rocketmq-litetopic-ai-agent-messaging.md`
 
 # Apache RocketMQ LiteTopic 消息模型

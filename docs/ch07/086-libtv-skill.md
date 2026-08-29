@@ -1,7 +1,5 @@
 # LibTV把导演的手艺装进了Skill商店，我拿三支片子验了验
 
-## Ch07.086 LibTV把导演的手艺装进了Skill商店，我拿三支片子验了验
-
 > 📊 Level ⭐⭐ | 3.9KB | `entities/libtv-ai-video-agent-skill-store-creative.md`
 
 # LibTV把导演的手艺装进了Skill商店，我拿三支片子验了验

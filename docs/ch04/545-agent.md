@@ -1,7 +1,5 @@
 # Agent落地真相：协议、成本与进化——一场关于智能体从能跑通到能投产的讨论
 
-## Ch04.545 Agent落地真相：协议、成本与进化——一场关于智能体从能跑通到能投产的讨论
-
 > 📊 Level ⭐⭐ | 7.0KB | `entities/agent-protocol-cost-evolution-roundtable-2026.md`
 
 # Agent落地真相：协议、成本与进化——一场关于智能体从能跑通到能投产的讨论

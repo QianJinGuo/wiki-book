@@ -1,7 +1,5 @@
 # Agent orchestration
 
-## Ch04.631 Agent orchestration
-
 > 📊 Level ⭐⭐ | 5.6KB | `entities/aws-agent-orchestration-workshop.md`
 
 ## 核心要点

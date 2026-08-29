@@ -1,7 +1,5 @@
 # Securing Amazon Bedrock AgentCore Runtime with AWS WAF
 
-## Ch11.259 Securing Amazon Bedrock AgentCore Runtime with AWS WAF
-
 > 📊 Level ⭐⭐ | 4.1KB | `entities/securing-amazon-bedrock-agentcore-runtime-with-aws-waf.md`
 
 # Securing Amazon Bedrock AgentCore Runtime with AWS WAF

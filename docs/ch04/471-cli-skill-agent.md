@@ -1,7 +1,5 @@
 # 下一代企业数字化架构：系统CLI化、流程Skill化、员工Agent化
 
-## Ch04.471 下一代企业数字化架构：系统CLI化、流程Skill化、员工Agent化
-
 > 📊 Level ⭐⭐ | 7.9KB | `entities/enterprise-next-gen-architecture-system-cli-process-skill-employee-agent-zhan.md`
 
 # 下一代企业数字化架构：系统CLI化、流程Skill化、员工Agent化

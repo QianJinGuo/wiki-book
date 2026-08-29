@@ -1,7 +1,5 @@
 # Spec-Driven AI 编程半年实战 — 有损管道、三工具比较与三大认知陷阱
 
-## Ch09.182 Spec-Driven AI 编程半年实战 — 有损管道、三工具比较与三大认知陷阱
-
 > 📊 Level ⭐⭐ | 4.1KB | `entities/spec-driven-development-cognitive-framework.md`
 
 # Spec-Driven AI 编程半年实战 — 有损管道、三工具比较与三大认知陷阱

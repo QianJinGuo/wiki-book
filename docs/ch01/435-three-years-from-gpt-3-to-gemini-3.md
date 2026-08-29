@@ -1,7 +1,5 @@
 # Three Years from GPT-3 to Gemini 3
 
-## Ch01.435 Three Years from GPT-3 to Gemini 3
-
 > 📊 Level ⭐⭐ | 16.4KB | `entities/three-years-from-gpt-3-to-gemini-3.md`
 
 # Three Years from GPT-3 to Gemini 3

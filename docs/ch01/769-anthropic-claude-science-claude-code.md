@@ -1,7 +1,5 @@
 # Anthropic推出Claude Science——科研界的Claude Code
 
-## Ch01.769 Anthropic推出Claude Science——科研界的Claude Code
-
 > 📊 Level ⭐⭐ | 8.2KB | `entities/anthropic推出claude-science-科研界的claude-code.md`
 
 # Anthropic推出Claude Science——科研界的Claude Code

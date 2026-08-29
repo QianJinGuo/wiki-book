@@ -1,7 +1,5 @@
 # 构建 ai 驱动的 eks 集群健康诊断 saas 平台 从静态规则到 mcp agent 自主分析
 
-## Ch01.603 构建 ai 驱动的 eks 集群健康诊断 saas 平台 从静态规则到 mcp agent 自主分析
-
 > 📊 Level ⭐⭐ | 10.3KB | `entities/构建-ai-驱动的-eks-集群健康诊断-saas-平台-从静态规则到-mcp-agent-自主分析.md`
 
 # 构建 AI 驱动的 EKS 集群健康诊断 SaaS 平台 — 从静态规则到 MCP Agent 自主分析

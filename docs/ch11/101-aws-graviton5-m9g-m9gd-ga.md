@@ -1,7 +1,5 @@
 # AWS Graviton5 M9g/M9gd 实例 GA 公告
 
-## Ch11.101 AWS Graviton5 M9g/M9gd 实例 GA 公告
-
 > 📊 Level ⭐⭐ | 10.2KB | `entities/aws-graviton5-m9g-m9gd-launch-2026.md`
 
 # AWS Graviton5 M9g/M9gd 实例 GA 公告

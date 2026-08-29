@@ -1,7 +1,5 @@
 # Agent Evolution: Four Stages and Six Dimensions (Alibaba Cloud)
 
-## Ch04.204 Agent Evolution: Four Stages and Six Dimensions (Alibaba Cloud)
-
 > 📊 Level ⭐⭐ | 13.5KB | `entities/agent-evolution-four-stages-six-dimensions-aliyun.md`
 
 # Agent Evolution: Four Stages and Six Dimensions (Alibaba Cloud)

@@ -1,7 +1,5 @@
 # OpenAI塌房！Scaling law原作曝bug，万亿算力全白烧
 
-## Ch01.157 OpenAI塌房！Scaling law原作曝bug，万亿算力全白烧
-
 > 📊 Level ⭐ | 4.1KB | `entities/openai塌房scaling-law原作曝bug万亿算力全白烧.md`
 
 # OpenAI塌房！Scaling law原作曝bug，万亿算力全白烧

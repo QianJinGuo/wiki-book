@@ -1,7 +1,5 @@
 # OpenSquilla：Meta 开源 Agent 框架
 
-## Ch04.538 OpenSquilla：Meta 开源 Agent 框架
-
 > 📊 Level ⭐⭐ | 7.1KB | `entities/opensquilla.md`
 
 → [原文存档 — Meta Skill](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/meta-skill-skill-orchestration-opensquilla-jay.md)

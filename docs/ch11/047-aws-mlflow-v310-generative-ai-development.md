@@ -1,7 +1,5 @@
 # AWS Mlflow V310 Generative AI Development
 
-## Ch11.047 AWS Mlflow V310 Generative AI Development
-
 > 📊 Level ⭐⭐ | 14.0KB | `entities/aws-mlflow-v310-generative-ai-development.md`
 
 # Streamlining generative AI development with MLflow v3.10 on Amazon SageMaker AI

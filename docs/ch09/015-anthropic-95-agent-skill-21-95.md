@@ -1,7 +1,5 @@
 # Anthropic 内部 95% 数据分析自动化：分析 Agent 技术栈 + Skill 框架（21%→95% 准确率）
 
-## Ch09.015 Anthropic 内部 95% 数据分析自动化：分析 Agent 技术栈 + Skill 框架（21%→95% 准确率）
-
 > 📊 Level ⭐⭐ | 49.2KB | `entities/anthropic-95pct-data-analysis-skill-stack-architecture.md`
 
 # Anthropic 内部 95% 数据分析自动化

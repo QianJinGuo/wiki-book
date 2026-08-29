@@ -1,7 +1,5 @@
 # 火山引擎 SearchCLI：Agent 驱动的搜索自迭代与 SPA 策略优化
 
-## Ch04.763 火山引擎 SearchCLI：Agent 驱动的搜索自迭代与 SPA 策略优化
-
 > 📊 Level ⭐⭐ | 3.6KB | `entities/volcengine-searchcli-agent-driven-search-self-iteration.md`
 
 # 火山引擎 SearchCLI：Agent 驱动的搜索自迭代

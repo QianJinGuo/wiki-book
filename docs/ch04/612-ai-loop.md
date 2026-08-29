@@ -1,7 +1,5 @@
 # 企业 AI Loop 落地框架：五类工程对象
 
-## Ch04.612 企业 AI Loop 落地框架：五类工程对象
-
 > 📊 Level ⭐⭐ | 6.0KB | `entities/enterprise-ai-loop-landing-five-objects.md`
 
 # 企业 AI Loop 落地框架：五类工程对象

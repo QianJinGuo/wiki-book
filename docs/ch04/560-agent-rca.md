@@ -1,7 +1,5 @@
 # Agent 评测体系化指南：指标体系、数据集建设、评分、RCA 与闭环
 
-## Ch04.560 Agent 评测体系化指南：指标体系、数据集建设、评分、RCA 与闭环
-
 > 📊 Level ⭐⭐ | 6.8KB | `entities/agent-evaluation-systematic-guide-metrics-to-closed-loop.md`
 
 # Agent 评测体系化指南

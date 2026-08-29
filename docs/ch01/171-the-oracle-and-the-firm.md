@@ -1,7 +1,5 @@
 # The Oracle and the Firm
 
-## Ch01.171 The Oracle and the Firm
-
 > 📊 Level ⭐ | 3.5KB | `entities/calv-oracle-and-the-firm.md`
 
 # The Oracle and the Firm

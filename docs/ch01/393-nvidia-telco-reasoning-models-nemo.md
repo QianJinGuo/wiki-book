@@ -1,7 +1,5 @@
 # Nvidia Telco Reasoning Models Nemo
 
-## Ch01.393 Nvidia Telco Reasoning Models Nemo
-
 > 📊 Level ⭐⭐ | 24.5KB | `entities/nvidia-telco-reasoning-models-nemo.md`
 
 # Building Telco Reasoning Models for Autonomous Networks with NVIDIA NeMo | NVIDIA Technical Blog

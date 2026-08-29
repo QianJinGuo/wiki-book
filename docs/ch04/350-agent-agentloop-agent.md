@@ -1,7 +1,5 @@
 # 让 Agent 越用越准、成本越来越低：AgentLoop 的 Agent 经验自进化闭环
 
-## Ch04.350 让 Agent 越用越准、成本越来越低：AgentLoop 的 Agent 经验自进化闭环
-
 > 📊 Level ⭐⭐ | 9.6KB | `entities/agentloop-agent经验自进化闭环.md`
 
 # 让 Agent 越用越准、成本越来越低：AgentLoop 的 Agent 经验自进化闭环

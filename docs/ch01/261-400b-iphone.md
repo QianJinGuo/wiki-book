@@ -1,7 +1,5 @@
 # 不可思议！400B大模型在iPhone上跑起来了
 
-## Ch01.261 不可思议！400B大模型在iPhone上跑起来了
-
 > 📊 Level ⭐ | 0.8KB | `entities/2026-05-01-不可思议-400B大模型在iPhone上跑起来了-机器之心.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-05-01-不可思议-400B大模型在iPhone上跑起来了-机器之心.md)

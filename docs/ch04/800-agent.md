@@ -1,7 +1,5 @@
 # 豆包搜索走出豆包：面向 Agent 的可信搜索与权威分级
 
-## Ch04.800 豆包搜索走出豆包：面向 Agent 的可信搜索与权威分级
-
 > 📊 Level ⭐⭐ | 2.7KB | `entities/doubao-search-agent-claude-code-datawhale-2026.md`
 
 # 豆包搜索走出豆包：面向 Agent 的可信搜索与权威分级

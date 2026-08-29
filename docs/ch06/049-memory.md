@@ -1,7 +1,5 @@
 # 参数化 Memory 漫谈（纯干货）
 
-## Ch06.049 参数化 Memory 漫谈（纯干货）
-
 > 📊 Level ⭐⭐ | 2.5KB | `entities/参数化-memory-漫谈纯干货.md`
 
 # 参数化 Memory 漫谈（纯干货）

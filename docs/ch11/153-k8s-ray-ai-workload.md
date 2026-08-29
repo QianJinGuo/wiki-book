@@ -1,7 +1,5 @@
 # 腾讯 K8s + Ray 超大规模 AI Workload 调度实践
 
-## Ch11.153 腾讯 K8s + Ray 超大规模 AI Workload 调度实践
-
 > 📊 Level ⭐⭐ | 8.1KB | `entities/tencent-k8s-ray-ai-workload-scheduling.md`
 
 # 腾讯 K8s + Ray 超大规模 AI Workload 调度实践

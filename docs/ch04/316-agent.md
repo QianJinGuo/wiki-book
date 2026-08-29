@@ -1,7 +1,5 @@
 # 为了让agent更安全的工作，有多少人操碎了心
 
-## Ch04.316 为了让agent更安全的工作，有多少人操碎了心
-
 > 📊 Level ⭐⭐ | 10.2KB | `entities/ath-agent-trust-handshake-protocol.md`
 
 # 为了让agent更安全的工作，有多少人操碎了心

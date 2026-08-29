@@ -1,7 +1,5 @@
 # AgentCore Harness 行程分配与优化多智能体系统
 
-## Ch04.794 AgentCore Harness 行程分配与优化多智能体系统
-
 > 📊 Level ⭐⭐ | 2.9KB | `entities/agentcore-harness-trip-allocation-multi-agent-system-aws.md`
 
 # AgentCore Harness 行程分配与优化多智能体系统

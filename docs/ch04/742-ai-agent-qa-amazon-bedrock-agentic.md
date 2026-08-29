@@ -1,7 +1,5 @@
 # 用 AI Agent 加速游戏 QA：基于 Amazon Bedrock 的 Agentic 自动化测试系统
 
-## Ch04.742 用 AI Agent 加速游戏 QA：基于 Amazon Bedrock 的 Agentic 自动化测试系统
-
 > 📊 Level ⭐⭐ | 3.8KB | `entities/ai-agent-game-qa-agentic-testing-bedrock-automation-2026.md`
 
 # 用 AI Agent 加速游戏 QA：基于 Amazon Bedrock 的 Agentic 自动化测试系统

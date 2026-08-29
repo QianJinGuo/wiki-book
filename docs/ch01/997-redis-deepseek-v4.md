@@ -1,7 +1,5 @@
 # Redis之父下场，给DeepSeek V4单独造了一台推理引擎
 
-## Ch01.997 Redis之父下场，给DeepSeek V4单独造了一台推理引擎
-
 > 📊 Level ⭐⭐ | 6.5KB | `entities/redis之父下场给deepseek-v4单独造了一台推理引擎.md`
 
 > → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/redis之父下场给deepseek-v4单独造了一台推理引擎.md)

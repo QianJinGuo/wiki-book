@@ -1,7 +1,5 @@
 # Hermes Agent 闭环学习机制
 
-## Ch01.556 Hermes Agent 闭环学习机制
-
 > 📊 Level ⭐⭐ | 11.4KB | `entities/hermes-agent-closed-learning-loop.md`
 
 [Hermes Agent Closed Learning Loop](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-closed-learning-loop.md)

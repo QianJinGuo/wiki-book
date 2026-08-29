@@ -1,7 +1,5 @@
 # Agent 记忆架构：先别急着把 Memory 当数据库
 
-## Ch06.003 Agent 记忆架构：先别急着把 Memory 当数据库
-
 > 📊 Level ⭐⭐ | 31.3KB | `entities/agent-memory-architecture-past-influence-future-ruofei.md`
 
 > 原创 若飞 架构师（JiaGouX）2026年5月12日

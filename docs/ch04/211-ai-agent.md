@@ -1,7 +1,5 @@
 # AI Agent 工程师能力地图
 
-## Ch04.211 AI Agent 工程师能力地图
-
 > 📊 Level ⭐⭐ | 13.2KB | `entities/ai-agent-engineer-capability-map.md`
 
 ## 核心判断

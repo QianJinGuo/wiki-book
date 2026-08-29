@@ -1,7 +1,5 @@
 # Databricks CEO用3000名程序员真实任务测试GLM 5.2 — Harness选择比模型更重要
 
-## Ch05.121 Databricks CEO用3000名程序员真实任务测试GLM 5.2 — Harness选择比模型更重要
-
 > 📊 Level ⭐⭐ | 3.8KB | `entities/databricks-glm-52-3000-engineer-benchmark-coding-agent.md`
 
 # Databricks CEO用3000名程序员真实任务测试GLM 5.2 — Harness选择比模型更重要

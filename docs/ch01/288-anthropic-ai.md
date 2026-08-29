@@ -1,7 +1,5 @@
 # anthropic造了套ai越狱刑法你的请求四种死法
 
-## Ch01.288 anthropic造了套ai越狱刑法你的请求四种死法
-
 > 📊 Level ⭐ | 0.8KB | `entities/anthropic造了套ai越狱刑法你的请求四种死法.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic造了套ai越狱刑法你的请求四种死法.md)

@@ -1,7 +1,5 @@
 # Netflix is building an AI animation studio
 
-## Ch11.230 Netflix is building an AI animation studio
-
 > 📊 Level ⭐⭐ | 5.1KB | `entities/netflix-is-building-an-ai-animation-studio.md`
 
 

@@ -1,7 +1,5 @@
 # Claude、GLM、GPT谁才是真正的AI软件工程师？首个持续更新Visual Spec-to-App Benchmark发布
 
-## Ch01.559 Claude、GLM、GPT谁才是真正的AI软件工程师？首个持续更新Visual Spec-to-App Benchmark发布
-
 > 📊 Level ⭐⭐ | 11.3KB | `entities/claudeglmgpt谁才是真正的ai软件工程师首个持续更新visual-spec-to-app-benchmark发布.md`
 
 # Claude、GLM、GPT谁才是真正的AI软件工程师？首个持续更新Visual Spec-to-App Benchmark发布

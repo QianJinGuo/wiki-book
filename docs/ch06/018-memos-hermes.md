@@ -1,7 +1,5 @@
 # MemOS Hermes 记忆插件
 
-## Ch06.018 MemOS Hermes 记忆插件
-
 > 📊 Level ⭐⭐ | 11.9KB | `entities/memos-hermes-plugin.md`
 
 ## Overview

@@ -1,7 +1,5 @@
 # 两万字详解Claude Code源码核心机制
 
-## Ch01.1328 两万字详解Claude Code源码核心机制
-
 > 📊 Level ⭐⭐ | 3.9KB | `entities/两万字详解claude-code源码核心机制.md`
 
 # 两万字详解Claude Code源码核心机制

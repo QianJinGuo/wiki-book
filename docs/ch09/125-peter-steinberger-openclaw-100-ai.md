@@ -1,7 +1,5 @@
 # Peter Steinberger / OpenClaw — 100个AI程序员案例
 
-## Ch09.125 Peter Steinberger / OpenClaw — 100个AI程序员案例
-
 > 📊 Level ⭐⭐ | 7.5KB | `entities/peter-steinberger-openclaw-100-ai-agents.md`
 
 ## 概述

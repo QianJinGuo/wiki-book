@@ -1,7 +1,5 @@
 # Private Fintech Has Quietly Become Bigger Than Public Fintech. Now What?
 
-## Ch01.263 Private Fintech Has Quietly Become Bigger Than Public Fintech. Now What?
-
 > 📊 Level ⭐ | 0.8KB | `entities/private-fintech-has-quietly-become-bigger-than-public-fintec-569278.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/private-fintech-has-quietly-become-bigger-than-public-fintec-569278.md)

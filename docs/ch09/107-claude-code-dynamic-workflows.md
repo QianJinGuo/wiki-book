@@ -1,7 +1,5 @@
 # Claude Code Dynamic Workflows 实战模式与构建技巧
 
-## Ch09.107 Claude Code Dynamic Workflows 实战模式与构建技巧
-
 > 📊 Level ⭐⭐ | 8.3KB | `entities/claude-code-dynamic-workflows-thariq-practical-patterns.md`
 
 # Claude Code Dynamic Workflows 实战模式与构建技巧

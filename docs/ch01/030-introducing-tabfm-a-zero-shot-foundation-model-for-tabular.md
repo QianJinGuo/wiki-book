@@ -1,7 +1,5 @@
 # Introducing TabFM: A zero-shot foundation model for tabular data
 
-## Ch01.030 Introducing TabFM: A zero-shot foundation model for tabular data
-
 > 📊 Level ⭐ | 9.1KB | `entities/introducing-tabfm-a-zero-shot-foundation-model-for-tabular-d.md`
 
 # Introducing TabFM: A zero-shot foundation model for tabular data

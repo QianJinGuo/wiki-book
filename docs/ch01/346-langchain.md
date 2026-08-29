@@ -1,7 +1,5 @@
 # 为什么我们不用LangChain？
 
-## Ch01.346 为什么我们不用LangChain？
-
 > 📊 Level ⭐ | 0.6KB | `entities/2026-05-01-为什么我们不用LangChain--叶小钗.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-05-01-为什么我们不用LangChain--叶小钗.md)

@@ -1,7 +1,5 @@
 # 这届 Agent，全是草台班子：到底什么 Agent 在产生价值？
 
-## Ch01.1356 这届 Agent，全是草台班子：到底什么 Agent 在产生价值？
-
 > 📊 Level ⭐⭐ | 3.7KB | `entities/这届-agent全是草台班子到底什么-agent-在产生价值.md`
 
 # 这届 Agent，全是草台班子：到底什么 Agent 在产生价值？

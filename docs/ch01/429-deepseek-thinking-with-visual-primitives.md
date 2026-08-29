@@ -1,7 +1,5 @@
 # DeepSeek Thinking with Visual Primitives 深度解读
 
-## Ch01.429 DeepSeek Thinking with Visual Primitives 深度解读
-
 > 📊 Level ⭐⭐ | 17.1KB | `entities/deepseek-visual-primitives-thinking.md`
 
 # "DeepSeek Thinking with Visual Primitives 深度解读"

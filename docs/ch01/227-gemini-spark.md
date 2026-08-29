@@ -1,7 +1,5 @@
 # 谷歌风雨飘摇，市值蒸发数千亿美元！Gemini Spark能救场吗？
 
-## Ch01.227 谷歌风雨飘摇，市值蒸发数千亿美元！Gemini Spark能救场吗？
-
 > 📊 Level ⭐ | 0.9KB | `entities/谷歌风雨飘摇市值蒸发数千亿美元gemini-spark能救场吗-1.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/谷歌风雨飘摇市值蒸发数千亿美元gemini-spark能救场吗-1.md)

@@ -1,7 +1,5 @@
 # MiniCPM-V 4.6 (1.3B) 面壁智能
 
-## Ch01.1080 MiniCPM-V 4.6 (1.3B) 面壁智能
-
 > 📊 Level ⭐⭐ | 5.8KB | `entities/minicpm-v-46-13b.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/minicpm-v-46-13b-xinazhiyuan.md)

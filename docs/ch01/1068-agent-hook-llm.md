@@ -1,7 +1,5 @@
 # Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆
 
-## Ch01.1068 Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆
-
 > 📊 Level ⭐⭐ | 5.9KB | `entities/agent-治理-hook-llm偷懒越权失忆.md`
 
 # Agent 治理：用 Hook 堵住 LLM 的偷懒、越权与失忆

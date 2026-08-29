@@ -1,7 +1,5 @@
 # 腾讯CDN LEGO Harness Engineering实战
 
-## Ch05.083 腾讯CDN LEGO Harness Engineering实战
-
 > 📊 Level ⭐⭐ | 7.5KB | `entities/tencent-cdn-lego-harness.md`
 
 ## 概述

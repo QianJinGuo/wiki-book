@@ -1,7 +1,5 @@
 # Anthropic puts Claude agents on a meter across its subscriptions
 
-## Ch01.1028 Anthropic puts Claude agents on a meter across its subscriptions
-
 > 📊 Level ⭐⭐ | 6.2KB | `entities/anthropic-claude-agents-meter-infoworld.md`
 
 ## 核心要点

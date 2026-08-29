@@ -1,7 +1,5 @@
 # Better-Harness：Agent Harness 自动优化方法论
 
-## Ch05.149 Better-Harness：Agent Harness 自动优化方法论
-
 > 📊 Level ⭐⭐⭐ | 6.9KB | `entities/better-harness-eval-trace-methodology.md`
 
 # Better-Harness：Agent Harness 自动优化方法论

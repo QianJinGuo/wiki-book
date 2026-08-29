@@ -1,7 +1,5 @@
 # 超级AI背后的秘密武器：Agent Harness深度解析
 
-## Ch01.1201 超级AI背后的秘密武器：Agent Harness深度解析
-
 > 📊 Level ⭐⭐ | 5.0KB | `entities/超级ai背后的秘密武器agent-harness深度解析.md`
 
 # 超级AI背后的秘密武器：Agent Harness深度解析

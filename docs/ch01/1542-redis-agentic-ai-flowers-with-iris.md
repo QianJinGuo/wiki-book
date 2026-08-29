@@ -1,7 +1,5 @@
 # Redis agentic AI flowers with Iris
 
-## Ch01.1542 Redis agentic AI flowers with Iris
-
 > 📊 Level ⭐⭐⭐ | 7.6KB | `entities/www.blocksandfiles.com-5241795.md`
 
 # Redis agentic AI flowers with Iris

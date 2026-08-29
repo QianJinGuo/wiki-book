@@ -1,7 +1,5 @@
 # Amazon Quick ARNs: Cross-account migration and namespace permissions
 
-## Ch11.028 Amazon Quick ARNs: Cross-account migration and namespace permissions
-
 > 📊 Level ⭐⭐ | 16.1KB | `entities/amazon-quick-arns-cross-account-namespace-permissions.md`
 
 # Amazon Quick ARNs: Cross-account migration and namespace permissions

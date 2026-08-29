@@ -1,7 +1,5 @@
 # Why Real Workload Performance is the Metric that Matters
 
-## Ch04.677 Why Real Workload Performance is the Metric that Matters
-
 > 📊 Level ⭐⭐ | 4.8KB | `entities/why-real-workload-performance-is-the-metric-that-matters.md`
 
 # Why Real Workload Performance is the Metric that Matters

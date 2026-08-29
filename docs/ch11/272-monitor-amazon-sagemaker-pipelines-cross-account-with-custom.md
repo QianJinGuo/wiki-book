@@ -1,7 +1,5 @@
 # Monitor Amazon SageMaker Pipelines cross-account with custom Amazon CloudWatch dashboards
 
-## Ch11.272 Monitor Amazon SageMaker Pipelines cross-account with custom Amazon CloudWatch dashboards
-
 > 📊 Level ⭐⭐ | 3.6KB | `entities/monitor-sagemaker-pipelines-cross-account.md`
 
 # Monitor Amazon SageMaker Pipelines cross-account with custom Amazon CloudWatch dashboards

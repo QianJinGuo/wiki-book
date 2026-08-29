@@ -1,7 +1,5 @@
 # 百度 Unlimited OCR：R-SWA 参考滑动窗口注意力实现超长文档连续解析
 
-## Ch01.1275 百度 Unlimited OCR：R-SWA 参考滑动窗口注意力实现超长文档连续解析
-
 > 📊 Level ⭐⭐ | 4.3KB | `entities/baidu-unlimited-ocr-rswa-attention.md`
 
 # 百度 Unlimited OCR：R-SWA 参考滑动窗口注意力

@@ -1,7 +1,5 @@
 # DeepSeek V4 (Flash & Pro) ：通往百万级上下文与万亿参数推理的新纪元
 
-## Ch01.1312 DeepSeek V4 (Flash & Pro) ：通往百万级上下文与万亿参数推理的新纪元
-
 > 📊 Level ⭐⭐ | 4.0KB | `entities/deepseek-v4-flash-pro-通往百万级上下文与万亿参数推理的新纪元.md`
 
 # DeepSeek V4 (Flash & Pro) ：通往百万级上下文与万亿参数推理的新纪元

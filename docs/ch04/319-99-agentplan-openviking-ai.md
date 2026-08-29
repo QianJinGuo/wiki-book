@@ -1,7 +1,5 @@
 # 99-元月用-agentplan-openviking-给销售团队配一个不会忘事的-ai-助手
 
-## Ch04.319 99-元月用-agentplan-openviking-给销售团队配一个不会忘事的-ai-助手
-
 > 📊 Level ⭐⭐ | 10.2KB | `entities/99-元月用-agentplan-openviking-给销售团队配一个不会忘事的-ai-助手-bytedance.md`
 
 # 99-元月用-agentplan-openviking-给销售团队配一个不会忘事的-ai-助手

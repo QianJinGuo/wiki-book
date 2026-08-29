@@ -1,7 +1,5 @@
 # Kimi Attention Residuals（AttnRes）— PreNorm 稀释问题与 Block 折中方案
 
-## Ch01.1541 Kimi Attention Residuals（AttnRes）— PreNorm 稀释问题与 Block 折中方案
-
 > 📊 Level ⭐⭐⭐ | 7.7KB | `entities/kimi-attention-residuals-prenorm-dilution-block-attnres.md`
 
 ## 一句话总结

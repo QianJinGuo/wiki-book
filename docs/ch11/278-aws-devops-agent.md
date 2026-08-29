@@ -1,7 +1,5 @@
 # AWS DevOps Agent 接入中国区（二）：多账号扩展与跨云接入
 
-## Ch11.278 AWS DevOps Agent 接入中国区（二）：多账号扩展与跨云接入
-
 > 📊 Level ⭐⭐ | 3.3KB | `entities/aws-devops-agent-接入-aws-中国区二多账号扩展跨云接入与无长期-aksk-认证.md`
 
 # AWS DevOps Agent 接入中国区（二）：多账号扩展、跨云接入与无长期 AK/SK 认证

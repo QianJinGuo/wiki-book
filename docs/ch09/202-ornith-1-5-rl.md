@@ -1,7 +1,5 @@
 # Ornith-1.5：模型自出题、自搭脚手架、自跑轨迹的编码 RL 闭环
 
-## Ch09.202 Ornith-1.5：模型自出题、自搭脚手架、自跑轨迹的编码 RL 闭环
-
 > 📊 Level ⭐⭐⭐⭐ | 6.1KB | `entities/ornith-15-self-play-self-generated-tasks-coding-rl-2026.md`
 
 # Ornith-1.5：模型自出题、自搭脚手架、自跑轨迹的编码 RL 闭环

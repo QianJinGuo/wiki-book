@@ -1,7 +1,5 @@
 # AML（Agent Memory Leaderboard）：机制级 Agent 记忆评测榜单
 
-## Ch06.034 AML（Agent Memory Leaderboard）：机制级 Agent 记忆评测榜单
-
 > 📊 Level ⭐⭐ | 5.6KB | `entities/agent-memory-leaderboard-aml-2026.md`
 
 # AML（Agent Memory Leaderboard）：机制级 Agent 记忆评测榜单

@@ -1,7 +1,5 @@
 # Meta 首个 Agent 生图模型：LLM controlled generation 新范式
 
-## Ch01.742 Meta 首个 Agent 生图模型：LLM controlled generation 新范式
-
 > 📊 Level ⭐⭐ | 8.4KB | `entities/meta-agent-image-generation-model.md`
 
 # Meta 首个 Agent 生图模型

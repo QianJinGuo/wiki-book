@@ -1,7 +1,5 @@
 # 推出-amazon-bedrock-managed-knowledge-base助力企业人工智能应用程序更快速更准确
 
-## Ch12.010 推出-amazon-bedrock-managed-knowledge-base助力企业人工智能应用程序更快速更准确
-
 > 📊 Level ⭐ | 1.6KB | `entities/推出-amazon-bedrock-managed-knowledge-base助力企业人工智能应用程序更快速更准确.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/推出-amazon-bedrock-managed-knowledge-base助力企业人工智能应用程序更快速更准确.md)

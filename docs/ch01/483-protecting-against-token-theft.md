@@ -1,7 +1,5 @@
 # Protecting against token theft
 
-## Ch01.483 Protecting against token theft
-
 > 📊 Level ⭐⭐ | 13.8KB | `entities/vercel-com-blog-protecting-against-token-theft.md`
 
 # Protecting against token theft

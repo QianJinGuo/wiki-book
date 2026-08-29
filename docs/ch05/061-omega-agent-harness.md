@@ -1,7 +1,5 @@
 # OMEGA: 面向多机器人协作的具身Agent Harness
 
-## Ch05.061 OMEGA: 面向多机器人协作的具身Agent Harness
-
 > 📊 Level ⭐⭐ | 10.2KB | `entities/omega-orchestration-multiple-embodied-generalist-agents-ustc-2026.md`
 
 # OMEGA: 面向多机器人协作的具身Agent Harness

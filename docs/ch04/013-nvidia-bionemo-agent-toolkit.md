@@ -1,7 +1,5 @@
 # NVIDIA BioNeMo Agent Toolkit — 加速科学发现的智能体工具包
 
-## Ch04.013 NVIDIA BioNeMo Agent Toolkit — 加速科学发现的智能体工具包
-
 > 📊 Level ⭐ | 6.6KB | `entities/nvidia-bionemo-agent-toolkit-science-discovery.md`
 
 # NVIDIA BioNeMo Agent Toolkit — 加速科学发现的智能体工具包

@@ -1,7 +1,5 @@
 # Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战
 
-## Ch11.173 Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战
-
 > 📊 Level ⭐⭐ | 7.7KB | `entities/zenjoy-aiops-agent-bedrock-eks-prometheus.md`
 
 ## 核心要点

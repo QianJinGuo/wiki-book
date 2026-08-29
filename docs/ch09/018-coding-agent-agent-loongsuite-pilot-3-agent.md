@@ -1,7 +1,5 @@
 # 让 Coding Agent 从黑盒到透明：阿里云 Agent 观测审计数据采集实践（LoongSuite Pilot 端侧平台 + 3 类 Agent 形态 + 4 大观测审计能力）
 
-## Ch09.018 让 Coding Agent 从黑盒到透明：阿里云 Agent 观测审计数据采集实践（LoongSuite Pilot 端侧平台 + 3 类 Agent 形态 + 4 大观测审计能力）
-
 > 📊 Level ⭐⭐ | 32.5KB | `entities/alibaba-agent-observability-audit-loongsuite-pilot-coding-agent-blackbox-to-transparent.md`
 
 # 让 Coding Agent 从黑盒到透明：阿里云 Agent 观测审计数据采集实践

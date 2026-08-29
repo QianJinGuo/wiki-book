@@ -1,7 +1,5 @@
 # 使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？
 
-## Ch04.375 使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？
-
 > 📊 Level ⭐⭐ | 9.2KB | `entities/使用-agent-skills-做知识库检索能比传统-rag-效果更好吗.md`
 
 ## 核心要点

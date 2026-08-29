@@ -1,7 +1,5 @@
 # TRAE SOLO Work 模式 + 飞书多维表格：5 步搭建全自动作品采集系统（3400+ 帖子稳定运行）
 
-## Ch04.129 TRAE SOLO Work 模式 + 飞书多维表格：5 步搭建全自动作品采集系统（3400+ 帖子稳定运行）
-
 > 📊 Level ⭐⭐ | 19.4KB | `entities/trae-solo-work-feishu-bitable-pipeline-tutorial.md`
 
 # TRAE SOLO Work 模式 + 飞书多维表格：5 步搭建全自动作品采集系统

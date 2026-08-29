@@ -1,7 +1,5 @@
 # Agentic Abstention—Agent 能及时停止吗？华盛顿大学/Allen AI 28000+ 任务基准评测
 
-## Ch04.768 Agentic Abstention—Agent 能及时停止吗？华盛顿大学/Allen AI 28000+ 任务基准评测
-
 > 📊 Level ⭐⭐ | 3.5KB | `entities/agentic-abstention-washington-allen-2026.md`
 
 # Agentic Abstention—Agent 能及时停止吗？

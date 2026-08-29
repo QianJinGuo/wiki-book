@@ -1,7 +1,5 @@
 # 阿里云端到端业务需求专家 Agent：Multica 平台 + superai-* 技能集群 + TDD/pre-push 质量门禁
 
-## Ch04.096 阿里云端到端业务需求专家 Agent：Multica 平台 + superai-* 技能集群 + TDD/pre-push 质量门禁
-
 > 📊 Level ⭐⭐ | 28.1KB | `entities/aliyun-end-to-end-business-requirements-agent-multica-2026.md`
 
 # 阿里云端到端业务需求专家 Agent：Multica + superai-* 技能集群 + TDD/pre-push 质量门禁

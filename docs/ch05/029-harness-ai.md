@@ -1,7 +1,5 @@
 # Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践
 
-## Ch05.029 Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践
-
 > 📊 Level ⭐⭐ | 16.9KB | `entities/tencent-ai-team-knowledge-mgmt-harness-moat.md`
 
 [[raw/articles/tencent-ai-team-knowledge-mgmt-harness-moat.md]

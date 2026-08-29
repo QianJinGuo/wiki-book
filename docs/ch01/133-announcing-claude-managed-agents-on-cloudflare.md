@@ -1,7 +1,5 @@
 # Announcing Claude Managed Agents on Cloudflare
 
-## Ch01.133 Announcing Claude Managed Agents on Cloudflare
-
 > 📊 Level ⭐ | 5.4KB | `entities/announcing-claude-managed-agents-on-cloudflare.md`
 
 ## 核心要点

@@ -1,7 +1,5 @@
 # HiClaw v1.1.0 — Kubernetes 集群部署与 Hermes Worker 运行时
 
-## Ch11.102 HiClaw v1.1.0 — Kubernetes 集群部署与 Hermes Worker 运行时
-
 > 📊 Level ⭐⭐ | 10.2KB | `entities/hiclaw-v110-k8s-hermes-worker.md`
 
 ## 核心变化

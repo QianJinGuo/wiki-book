@@ -1,7 +1,5 @@
 # Temporarily disabling new user registrations
 
-## Ch12.126 Temporarily disabling new user registrations
-
 > 📊 Level ⭐⭐ | 3.0KB | `entities/temporarily-disabling-new-user-registrations.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/temporarily-disabling-new-user-registrations.md)

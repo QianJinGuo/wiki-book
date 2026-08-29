@@ -1,7 +1,5 @@
 # Apple Silicon costs more than OpenRouter
 
-## Ch01.124 Apple Silicon costs more than OpenRouter
-
 > 📊 Level ⭐ | 6.0KB | `entities/offline-llm-energy-use-html.md`
 
 # Apple Silicon costs more than OpenRouter

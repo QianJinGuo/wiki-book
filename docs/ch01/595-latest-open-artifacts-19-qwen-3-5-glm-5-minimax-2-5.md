@@ -1,7 +1,5 @@
 # Latest open artifacts (#19)：Qwen 3.5、GLM 5、MiniMax 2.5 — 中国实验室的前沿推进
 
-## Ch01.595 Latest open artifacts (#19)：Qwen 3.5、GLM 5、MiniMax 2.5 — 中国实验室的前沿推进
-
 > 📊 Level ⭐⭐ | 10.5KB | `entities/latest-open-artifacts-19-qwen-35-glm-5-minimax-25-chinese-la.md`
 
 # Latest open artifacts (#19)：Qwen 3.5、GLM 5、MiniMax 2.5 — 中国实验室的前沿推进

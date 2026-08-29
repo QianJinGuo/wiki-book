@@ -1,7 +1,5 @@
 # Devin Fusion: 多模型路由 Harness 实现 35% 成本降低
 
-## Ch05.071 Devin Fusion: 多模型路由 Harness 实现 35% 成本降低
-
 > 📊 Level ⭐⭐ | 8.9KB | `entities/devin-fusion-multi-model-harness-cognition.md`
 
 # Devin Fusion: 多模型路由 Harness 实现 35% 成本降低

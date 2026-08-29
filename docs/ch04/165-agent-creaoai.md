@@ -1,7 +1,5 @@
 # 云端 Agent 基础设施两条硬经验：CreaoAI 状态/代码解耦 + 凭据隔离
 
-## Ch04.165 云端 Agent 基础设施两条硬经验：CreaoAI 状态/代码解耦 + 凭据隔离
-
 > 📊 Level ⭐⭐ | 15.8KB | `entities/ai-techliwen-creaoai-cloud-agent-infrastructure-two-lessons-20260606.md`
 
 # 云端 Agent 基础设施两条硬经验：CreaoAI 状态/代码解耦 + 凭据隔离

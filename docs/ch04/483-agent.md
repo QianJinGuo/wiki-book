@@ -1,7 +1,5 @@
 # Agent 自进化四齿飞轮：评测→记忆→落地→控制
 
-## Ch04.483 Agent 自进化四齿飞轮：评测→记忆→落地→控制
-
 > 📊 Level ⭐⭐ | 7.8KB | `entities/agent-self-evolution-flywheel-tencent-2026.md`
 
 # Agent 自进化四齿飞轮：评测→记忆→落地→控制

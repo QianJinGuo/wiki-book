@@ -1,7 +1,5 @@
 # AI Agent 存储选型：Curvine 如何在 EKS 上支撑万级Agent运行
 
-## Ch04.689 AI Agent 存储选型：Curvine 如何在 EKS 上支撑万级Agent运行
-
 > 📊 Level ⭐⭐ | 4.6KB | `entities/ai-agent-storage-curvine-eks-2026.md`
 
 # AI Agent 存储选型：Curvine 如何在 EKS 上支撑万级Agent运行

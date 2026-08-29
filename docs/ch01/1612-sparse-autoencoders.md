@@ -1,7 +1,5 @@
 # Sparse Autoencoders
 
-## Ch01.1612 Sparse Autoencoders
-
 > 📊 Level ⭐⭐⭐⭐ | 7.2KB | `entities/sparse-autoencoders.md`
 
 ## 关联

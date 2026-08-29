@@ -1,7 +1,5 @@
 # Shannon & Epiplexity: Finite Compute Information Theory
 
-## Ch01.1075 Shannon & Epiplexity: Finite Compute Information Theory
-
 > 📊 Level ⭐⭐ | 5.9KB | `entities/shannon-epiplexity-finite-compute-information-theory.md`
 
 # Shannon 没有想到的事——当信息论遇上有限算力

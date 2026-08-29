@@ -1,7 +1,5 @@
 # 从Loop到Graph Engineering:一个循环不够用之后会发生什么
 
-## Ch01.290 从Loop到Graph Engineering:一个循环不够用之后会发生什么
-
 > 📊 Level ⭐ | 0.7KB | `entities/graph-engineering-loop-to-graph-challengehub-2026.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/graph-engineering-loop-to-graph-challengehub-2026.md)

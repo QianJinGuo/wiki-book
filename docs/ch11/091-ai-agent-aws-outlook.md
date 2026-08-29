@@ -1,7 +1,5 @@
 # 用 AI Agent 自动化日常办公工作流 — 在 AWS 上构建 Outlook 邮件助手
 
-## Ch11.091 用 AI Agent 自动化日常办公工作流 — 在 AWS 上构建 Outlook 邮件助手
-
 > 📊 Level ⭐⭐ | 10.2KB | `entities/outlook-ai-agent-aws-fargate-claude-agent-sdk.md`
 
 # 用 AI Agent 自动化日常办公工作流 — 在 AWS 上构建 Outlook 邮件助手

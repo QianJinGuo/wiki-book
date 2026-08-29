@@ -1,7 +1,5 @@
 # 淘宝直播数字人 Agentic 架构升级：AgentTuning + RLVR + Multi-Agent RL
 
-## Ch04.827 淘宝直播数字人 Agentic 架构升级：AgentTuning + RLVR + Multi-Agent RL
-
 > 📊 Level ⭐⭐⭐ | 12.2KB | `entities/taobao-digital-human-agentic-architecture.md`
 
 # 淘宝直播数字人 Agentic 架构升级

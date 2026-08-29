@@ -1,7 +1,5 @@
 # 一文看懂 AI 编程智能体工程化新范式 Loop Engineering 技术极简主义
 
-## Ch01.239 一文看懂 AI 编程智能体工程化新范式 Loop Engineering 技术极简主义
-
 > 📊 Level ⭐ | 0.9KB | `entities/2026-06-12-一文看懂-AI-编程智能体工程化新范式-Loop-Engineering-技术极简主义.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-06-12-一文看懂-AI-编程智能体工程化新范式-Loop-Engineering-技术极简主义.md)

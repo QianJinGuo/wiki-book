@@ -1,7 +1,5 @@
 # Canvas Hackers ShinyHunters Say Their Official Domain Was Suspended
 
-## Ch12.037 Canvas Hackers ShinyHunters Say Their Official Domain Was Suspended
-
 > 📊 Level ⭐⭐ | 10.2KB | `entities/canvas-hackers-shinyhunters-say-their-official-domain-was-suspended.md`
 
 # Canvas Hackers ShinyHunters Say Their Official Domain Was Suspended

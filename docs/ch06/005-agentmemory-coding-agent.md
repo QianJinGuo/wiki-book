@@ -1,7 +1,5 @@
 # AgentMemory 源码分析：给 Coding Agent 装上本地长期记忆
 
-## Ch06.005 AgentMemory 源码分析：给 Coding Agent 装上本地长期记忆
-
 > 📊 Level ⭐⭐ | 22.0KB | `entities/agentmemory-source-analysis-coding-agent-local-memory.md`
 
 # AgentMemory 源码分析：给 Coding Agent 装上本地长期记忆

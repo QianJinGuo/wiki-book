@@ -1,7 +1,5 @@
 # LFM2.5-230M: Built to Run Anywhere
 
-## Ch04.553 LFM2.5-230M: Built to Run Anywhere
-
 > 📊 Level ⭐⭐ | 6.9KB | `entities/liquid-ai-lfm2-5-230m.md`
 
 # LFM2.5-230M: Built to Run Anywhere

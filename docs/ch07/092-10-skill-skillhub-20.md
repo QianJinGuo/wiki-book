@@ -1,7 +1,5 @@
 # 10万+Skill 背后：腾讯SkillHub如何帮用户找到真正好用的那20%
 
-## Ch07.092 10万+Skill 背后：腾讯SkillHub如何帮用户找到真正好用的那20%
-
 > 📊 Level ⭐⭐ | 2.6KB | `entities/10万skill-背后腾讯skillhub如何帮用户找到真正好用的那20.md`
 
 # 10万+Skill 背后：腾讯SkillHub如何帮用户找到真正好用的那20%

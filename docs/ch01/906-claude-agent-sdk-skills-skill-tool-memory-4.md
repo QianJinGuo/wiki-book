@@ -1,7 +1,5 @@
 # Claude Agent SDK Skills：可复用的专业知识体系 — Skill ≠ Tool ≠ Memory，渐进加载 + 4 方分工 + 团队 Skill 库设计
 
-## Ch01.906 Claude Agent SDK Skills：可复用的专业知识体系 — Skill ≠ Tool ≠ Memory，渐进加载 + 4 方分工 + 团队 Skill 库设计
-
 > 📊 Level ⭐⭐ | 7.1KB | `entities/claude-agent-sdk-skills-reusable-knowledge.md`
 
 Claude Agent SDK 系列第 11 篇，系统阐述 Skills 在 Agent 架构中的定位——将团队经验沉淀为可复用、可审查、可版本管理的「操作手册」，而非一次性 prompt。

@@ -1,7 +1,5 @@
 # rlvr-entropy-collapse-steer-acl-2026-outstanding
 
-## Ch01.241 rlvr-entropy-collapse-steer-acl-2026-outstanding
-
 > 📊 Level ⭐ | 0.9KB | `entities/rlvr-entropy-collapse-steer-acl-2026-outstanding.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rlvr-entropy-collapse-steer-acl-2026-outstanding.md)

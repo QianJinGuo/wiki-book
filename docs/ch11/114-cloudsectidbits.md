@@ -1,7 +1,5 @@
 # CloudSecTidbits：云安全研究摘要
 
-## Ch11.114 CloudSecTidbits：云安全研究摘要
-
 > 📊 Level ⭐⭐ | 9.8KB | `entities/cloudsectidbits.md`
 
 # CloudSecTidbits：云安全研究摘要

@@ -1,7 +1,5 @@
 # Claw-Anything：首个面向个人助理 Agent 的三维上下文扩展评测基准
 
-## Ch04.340 Claw-Anything：首个面向个人助理 Agent 的三维上下文扩展评测基准
-
 > 📊 Level ⭐⭐ | 9.9KB | `entities/claw-anything-personal-assistant-agent-benchmark.md`
 
 # Claw-Anything：See Anything, then Do Anything

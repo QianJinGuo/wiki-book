@@ -1,7 +1,5 @@
 # Apache Doris MCP Server + Quick Suite AI 分析部署
 
-## Ch11.167 Apache Doris MCP Server + Quick Suite AI 分析部署
-
 > 📊 Level ⭐⭐ | 7.2KB | `entities/runtime-deploy-apache-doris-mcp-server-quick-suite-ai-analytics.md`
 
 

@@ -1,7 +1,5 @@
 # Apple Foundation Models
 
-## Ch01.165 Apple Foundation Models
-
 > 📊 Level ⭐ | 3.7KB | `entities/anthropic-apple-foundation-models-claude.md`
 
 # Apple Foundation Models

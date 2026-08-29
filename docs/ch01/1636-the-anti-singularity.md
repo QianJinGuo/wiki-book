@@ -1,7 +1,5 @@
 # the anti singularity
 
-## Ch01.1636 the anti singularity
-
 > 📊 Level ⭐⭐⭐⭐⭐ | 6.9KB | `entities/the-anti-singularity.md`
 
 # the anti singularity

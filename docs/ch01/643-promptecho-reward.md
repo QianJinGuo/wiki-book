@@ -1,7 +1,5 @@
 # 阿里开源PromptEcho：用冻结多模态大模型为文生图训练提供高质量Reward
 
-## Ch01.643 阿里开源PromptEcho：用冻结多模态大模型为文生图训练提供高质量Reward
-
 > 📊 Level ⭐⭐ | 9.7KB | `entities/2026-05-06-阿里开源PromptEcho-用冻结多模态大模型为文生图训练提供高质量Rewar-机器之心.md`
 
 # 阿里开源PromptEcho：用冻结多模态大模型为文生图训练提供高质量Reward

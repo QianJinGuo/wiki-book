@@ -1,7 +1,5 @@
 # 民生银行基于规格驱动开发（SDD）的 CodeAgent 私域研发探索与实践
 
-## Ch04.257 民生银行基于规格驱动开发（SDD）的 CodeAgent 私域研发探索与实践
-
 > 📊 Level ⭐⭐ | 11.8KB | `entities/民生银行基于规格驱动开发sdd的-codeagent-私域研发探索与实践.md`
 
 ## 背景与挑战

@@ -1,7 +1,5 @@
 # 多 Agent 不是虚拟公司：从 Anthropic 五种模式看信息流怎么设计
 
-## Ch01.1173 多 Agent 不是虚拟公司：从 Anthropic 五种模式看信息流怎么设计
-
 > 📊 Level ⭐⭐ | 5.2KB | `entities/多-agent-不是虚拟公司从-anthropic-五种模式看信息流怎么设计.md`
 
 # 多 Agent 不是虚拟公司：从 Anthropic 五种模式看信息流怎么设计

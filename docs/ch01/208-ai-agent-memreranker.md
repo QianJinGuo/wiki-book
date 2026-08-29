@@ -1,7 +1,5 @@
 # AI Agent 记忆重排序：MemReranker
 
-## Ch01.208 AI Agent 记忆重排序：MemReranker
-
 > 📊 Level ⭐ | 1.0KB | `entities/memreranker-reasoning-aware-agent-memory-reranking-2026.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/memreranker-reasoning-aware-agent-memory-reranking-2026.md)

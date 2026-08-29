@@ -1,7 +1,5 @@
 # Loop Engineering 半年实战拆解：claude-ship 开源自进化开发系统
 
-## Ch01.1427 Loop Engineering 半年实战拆解：claude-ship 开源自进化开发系统
-
 > 📊 Level ⭐⭐ | 3.2KB | `entities/loop-engineering-6-month-practice-claude-ship-peakstone.md`
 
 ## 核心概述

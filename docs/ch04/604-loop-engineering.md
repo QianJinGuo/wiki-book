@@ -1,7 +1,5 @@
 # 阿里云 Loop Engineering 实战：日志扫描到预发部署的全自主闭环
 
-## Ch04.604 阿里云 Loop Engineering 实战：日志扫描到预发部署的全自主闭环
-
 > 📊 Level ⭐⭐ | 6.1KB | `entities/aliyun-loop-engineering-log-scan-auto-fix-deploy.md`
 
 # 阿里云 Loop Engineering 实战：日志扫描到预发部署的全自主闭环

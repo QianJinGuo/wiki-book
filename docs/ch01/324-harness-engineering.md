@@ -1,7 +1,5 @@
 # 开启Harness Engineering探索之旅 腾讯技术工程
 
-## Ch01.324 开启Harness Engineering探索之旅 腾讯技术工程
-
 > 📊 Level ⭐ | 0.7KB | `entities/2026-06-29-开启Harness-Engineering探索之旅-腾讯技术工程.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-06-29-开启Harness-Engineering探索之旅-腾讯技术工程.md)

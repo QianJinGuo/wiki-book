@@ -1,7 +1,5 @@
 # Microsoft Open-Sources RAMPART and Clarity to Secure AI Agents During Development
 
-## Ch01.1128 Microsoft Open-Sources RAMPART and Clarity to Secure AI Agents During Development
-
 > 📊 Level ⭐⭐ | 5.5KB | `entities/microsoft-open-sources-rampart-clarity.md`
 
 ## 核心要点

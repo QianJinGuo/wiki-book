@@ -1,7 +1,5 @@
 # Pair Nova 2 Lite with Claude for cost-optimized document processing
 
-## Ch01.325 Pair Nova 2 Lite with Claude for cost-optimized document processing
-
 > 📊 Level ⭐ | 0.7KB | `entities/pair-nova-2-lite-with-claude-for-cost-optimized-document-pro.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pair-nova-2-lite-with-claude-for-cost-optimized-document-pro.md)

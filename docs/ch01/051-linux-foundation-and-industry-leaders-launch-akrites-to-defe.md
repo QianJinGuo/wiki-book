@@ -1,7 +1,5 @@
 # Linux Foundation and Industry Leaders Launch Akrites to Defend Critical Open Source Software Against AI-Enabled Cyber Threats
 
-## Ch01.051 Linux Foundation and Industry Leaders Launch Akrites to Defend Critical Open Source Software Against AI-Enabled Cyber Threats
-
 > 📊 Level ⭐ | 8.4KB | `entities/press-linux-foundation-and-industry-leaders-launch-akrites-to-defend-critical-op.md`
 
 # Linux Foundation and Industry Leaders Launch Akrites to Defend Critical Open Source Software Against AI-Enabled Cyber Threats

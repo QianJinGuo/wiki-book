@@ -1,7 +1,5 @@
 # Program-as-Weights (PAW) — 神经编译模糊函数为 LoRA 权重
 
-## Ch01.732 Program-as-Weights (PAW) — 神经编译模糊函数为 LoRA 权重
-
 > 📊 Level ⭐⭐ | 8.5KB | `entities/program-as-weights-paw-fuzzy-functions-waterloo.md`
 
 # Program-as-Weights (PAW) — 神经编译模糊函数为 LoRA 权重

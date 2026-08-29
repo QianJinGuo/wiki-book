@@ -1,7 +1,5 @@
 # Ant SingGuard-NSFA: 蚂蚁开源AI Agent安全双模推理护栏框架
 
-## Ch04.706 Ant SingGuard-NSFA: 蚂蚁开源AI Agent安全双模推理护栏框架
-
 > 📊 Level ⭐⭐ | 4.4KB | `entities/ant-singguard-nsfa-agent-security-2026.md`
 
 # Ant SingGuard-NSFA: 蚂蚁开源AI Agent安全双模推理护栏框架

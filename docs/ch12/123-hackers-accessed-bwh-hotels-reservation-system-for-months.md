@@ -1,7 +1,5 @@
 # Hackers accessed BWH Hotels reservation system for months
 
-## Ch12.123 Hackers accessed BWH Hotels reservation system for months
-
 > 📊 Level ⭐⭐ | 3.2KB | `entities/securityaffairs-bwh-hotels-breach.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/securityaffairs-bwh-hotels-breach.md)

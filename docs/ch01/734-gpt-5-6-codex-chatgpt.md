@@ -1,7 +1,5 @@
 # 不止是GPT-5.6！Codex正式上位替换ChatGPT
 
-## Ch01.734 不止是GPT-5.6！Codex正式上位替换ChatGPT
-
 > 📊 Level ⭐⭐ | 8.5KB | `entities/不止是gpt-56codex正式上位替换chatgpt.md`
 
 # 不止是GPT-5.6！Codex正式上位替换ChatGPT

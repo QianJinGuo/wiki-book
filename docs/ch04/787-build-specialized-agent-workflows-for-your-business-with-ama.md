@@ -1,7 +1,5 @@
 # Build Specialized Agent Workflows for Your Business with Amazon Bedrock
 
-## Ch04.787 Build Specialized Agent Workflows for Your Business with Amazon Bedrock
-
 > 📊 Level ⭐⭐ | 3.2KB | `entities/build-specialized-agent-workflows-for-your-business-with-ama.md`
 
 # Build Specialized Agent Workflows for Your Business with Amazon Bedrock

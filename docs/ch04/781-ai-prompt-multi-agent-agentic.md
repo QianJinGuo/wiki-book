@@ -1,7 +1,5 @@
 # 快手AI测试四阶进化实践 — Prompt→Multi-Agent→知识工程→Agentic自进化
 
-## Ch04.781 快手AI测试四阶进化实践 — Prompt→Multi-Agent→知识工程→Agentic自进化
-
 > 📊 Level ⭐⭐ | 3.3KB | `entities/kuaishou-四阶进化ai-testing.md`
 
 # 快手AI测试四阶进化实践 — Prompt→Multi-Agent→知识工程→Agentic自进化

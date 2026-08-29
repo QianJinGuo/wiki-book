@@ -1,7 +1,5 @@
 # Anthropic 8x 产出复盘：从代码吞吐到验证协作接口
 
-## Ch09.104 Anthropic 8x 产出复盘：从代码吞吐到验证协作接口
-
 > 📊 Level ⭐⭐ | 8.3KB | `entities/anthropic-8x-output-verification-bottleneck-fiona-fung.md`
 
 # Anthropic 8x 产出复盘：从代码吞吐到验证协作接口

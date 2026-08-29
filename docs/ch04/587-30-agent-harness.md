@@ -1,7 +1,5 @@
 # 从 30 分钟手搓 Agent，到 Harness 成为\"新后端\
 
-## Ch04.587 从 30 分钟手搓 Agent，到 Harness 成为\"新后端\
-
 > 📊 Level ⭐⭐ | 6.4KB | `entities/从-30-分钟手搓-agent到-harness-成为新后端.md`
 
 # 从 30 分钟手搓 Agent，到 Harness 成为"新后端"

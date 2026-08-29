@@ -1,7 +1,5 @@
 # How we built an MCP bridge: AgentCore-hosted AI agent 访问本地 MCP 工具
 
-## Ch04.796 How we built an MCP bridge: AgentCore-hosted AI agent 访问本地 MCP 工具
-
 > 📊 Level ⭐⭐ | 2.8KB | `entities/how-we-built-an-mcp-bridge-to-give-our-agentcore-hosted-ai-agent-access-to-local-mcp-tools.md`
 
 # How we built an MCP bridge: 云上 Agent 访问本地 MCP 工具的桥接架构

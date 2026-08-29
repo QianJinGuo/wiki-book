@@ -1,7 +1,5 @@
 # TennisVAR：基于击球证据的体育视频战术推理（Event→Relation→Evidence→Tactic）
 
-## Ch01.1263 TennisVAR：基于击球证据的体育视频战术推理（Event→Relation→Evidence→Tactic）
-
 > 📊 Level ⭐⭐ | 4.4KB | `entities/tennisvar-stroke-evidence-tactical-reasoning-sports-video-2026.md`
 
 # TennisVAR：基于击球证据的体育视频战术推理

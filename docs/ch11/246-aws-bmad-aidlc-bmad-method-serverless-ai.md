@@ -1,7 +1,5 @@
 # AWS BMad + AIDLC：用 BMAD Method 在 Serverless 上跑通可复制的 AI 驱动开发流程
 
-## Ch11.246 AWS BMad + AIDLC：用 BMAD Method 在 Serverless 上跑通可复制的 AI 驱动开发流程
-
 > 📊 Level ⭐⭐ | 4.6KB | `entities/aws-bmad-aidlc-spec-ship-reproducible-engineering.md`
 
 # AWS BMad + AIDLC：用 BMAD Method 在 Serverless 上跑通可复制的 AI 驱动开发流程

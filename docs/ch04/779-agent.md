@@ -1,7 +1,5 @@
 # 生产级 Agent 全景框架 (叶小钗)
 
-## Ch04.779 生产级 Agent 全景框架 (叶小钗)
-
 > 📊 Level ⭐⭐ | 3.4KB | `entities/production-grade-agent-framework-yexiaochai.md`
 
 # 生产级 Agent 全景框架 (叶小钗)

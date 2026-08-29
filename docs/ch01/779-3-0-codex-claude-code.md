@@ -1,7 +1,5 @@
 # 扣子 3.0 离谱更新：把 Codex、Claude Code 拉进一个项目工作？
 
-## Ch01.779 扣子 3.0 离谱更新：把 Codex、Claude Code 拉进一个项目工作？
-
 > 📊 Level ⭐⭐ | 8.1KB | `entities/coze-3-0-local-agent-codex-claude-code-project.md`
 
 # 扣子 3.0 离谱更新：把 Codex、Claude Code 拉进一个项目工作？

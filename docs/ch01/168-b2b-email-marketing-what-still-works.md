@@ -1,7 +1,5 @@
 # B2B Email Marketing: What Still Works?
 
-## Ch01.168 B2B Email Marketing: What Still Works?
-
 > 📊 Level ⭐ | 3.7KB | `entities/b2b-email-marketing-what-still-works.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/b2b-email-marketing-what-still-works.md)

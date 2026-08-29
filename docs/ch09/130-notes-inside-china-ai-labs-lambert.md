@@ -1,7 +1,5 @@
 # Notes Inside China AI Labs Lambert
 
-## Ch09.130 Notes Inside China AI Labs Lambert
-
 > 📊 Level ⭐⭐ | 7.0KB | `entities/notes-inside-china-ai-labs-lambert.md`
 
 # Notes from inside China's AI labs - by Nathan Lambert Subscribe Sign in Notes from inside China's AI

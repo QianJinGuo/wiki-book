@@ -1,7 +1,5 @@
 # Loop Engineering 概念解析：Agent Loop vs Loop Engineering、六大框架与实践思考
 
-## Ch04.579 Loop Engineering 概念解析：Agent Loop vs Loop Engineering、六大框架与实践思考
-
 > 📊 Level ⭐⭐ | 6.5KB | `entities/loop-engineering-concept-analysis-feixue-ali-2026.md`
 
 # Loop Engineering 概念解析：Agent Loop vs Loop Engineering、六大框架与实践思考

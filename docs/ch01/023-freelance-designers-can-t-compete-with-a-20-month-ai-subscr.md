@@ -1,7 +1,5 @@
 # Freelance Designers Can't Compete With a $20/Month AI Subscription - Here's What Actually Works Now
 
-## Ch01.023 Freelance Designers Can't Compete With a $20/Month AI Subscription - Here's What Actually Works Now
-
 > 📊 Level ⭐ | 9.8KB | `entities/freelance-designers-cant-compete-ai-subscription.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/freelance-designers-cant-compete-ai-subscription.md)

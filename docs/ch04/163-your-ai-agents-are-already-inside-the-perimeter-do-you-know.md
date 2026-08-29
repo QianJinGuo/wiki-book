@@ -1,7 +1,5 @@
 # Your AI Agents Are Already Inside the Perimeter. Do You Know What They're Doing?
 
-## Ch04.163 Your AI Agents Are Already Inside the Perimeter. Do You Know What They're Doing?
-
 > 📊 Level ⭐⭐ | 16.0KB | `entities/ai-agents-inside-perimeter-hackernews.md`
 
 ## 背景：AI 代理部署速度超过治理成熟度

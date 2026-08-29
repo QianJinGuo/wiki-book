@@ -1,7 +1,5 @@
 # Consumer Confidence
 
-## Ch01.1630 Consumer Confidence
-
 > 📊 Level ⭐⭐⭐⭐⭐ | 10.4KB | `entities/consumer-confidence-us-economy-inflation-iran-war-trade-html.md`
 
 ## 核心要点

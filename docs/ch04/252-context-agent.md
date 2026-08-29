@@ -1,7 +1,5 @@
 # Context不是免费的：长文档Agent性能天花板与架构优化
 
-## Ch04.252 Context不是免费的：长文档Agent性能天花板与架构优化
-
 > 📊 Level ⭐⭐ | 11.9KB | `entities/context-not-free-long-document-agent-architecture-raunak.md`
 
 > -> [Context不是免费的：长文档Agent性能天花板与架构优化](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/context-not-free-long-document-agent-architecture-raunak.md)

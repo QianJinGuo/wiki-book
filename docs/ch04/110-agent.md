@@ -1,7 +1,5 @@
 # Agent 自我改进的六条路
 
-## Ch04.110 Agent 自我改进的六条路
-
 > 📊 Level ⭐⭐ | 24.0KB | `entities/agent-self-improvement-six-mechanisms.md`
 
 ## 概述

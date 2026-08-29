@@ -1,7 +1,5 @@
 # AI Context Layer 框架
 
-## Ch06.025 AI Context Layer 框架
-
 > 📊 Level ⭐⭐ | 7.9KB | `entities/ai-context-layer-kgc-2026.md`
 
 ## 核心论点

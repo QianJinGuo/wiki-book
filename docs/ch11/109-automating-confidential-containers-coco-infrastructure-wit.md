@@ -1,7 +1,5 @@
 # Automating Confidential Containers (CoCo) Infrastructure with Kyverno
 
-## Ch11.109 Automating Confidential Containers (CoCo) Infrastructure with Kyverno
-
 > 📊 Level ⭐⭐ | 9.9KB | `entities/automating-confidential-containers-coco-infrastructure-with-kyverno.md`
 
 ## CoCo 工作负载的必备配置

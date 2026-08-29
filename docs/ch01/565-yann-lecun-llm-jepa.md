@@ -1,7 +1,5 @@
 # Yann LeCun 谈 LLM 不是智能与世界模型 JEPA
 
-## Ch01.565 Yann LeCun 谈 LLM 不是智能与世界模型 JEPA
-
 > 📊 Level ⭐⭐ | 11.1KB | `entities/yann-lecun-llm-not-intelligence-jepa.md`
 
 # Yann LeCun 谈 LLM 不是智能与世界模型 JEPA

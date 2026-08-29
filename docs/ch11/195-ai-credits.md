@@ -1,7 +1,5 @@
 # AI 网关 Credits 配额计量体系
 
-## Ch11.195 AI 网关 Credits 配额计量体系
-
 > 📊 Level ⭐⭐ | 7.1KB | `entities/ai-gateway-credits-quota-alibaba-cloud-native-2026.md`
 
 # AI 网关 Credits 配额计量体系

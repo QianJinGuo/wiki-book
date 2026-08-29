@@ -1,7 +1,5 @@
 # ScarfBench: Benchmarking AI Agents for Enterprise Java Framework Migration
 
-## Ch01.1036 ScarfBench: Benchmarking AI Agents for Enterprise Java Framework Migration
-
 > 📊 Level ⭐⭐ | 6.2KB | `entities/scarfbench-ai-agents-enterprise-java-framework-migration-ibm.md`
 
 # ScarfBench: Benchmarking AI Agents for Enterprise Java Framework Migration

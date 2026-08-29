@@ -1,7 +1,5 @@
 # Qoder 团队知识引擎
 
-## Ch06.021 Qoder 团队知识引擎
-
 > 📊 Level ⭐⭐ | 10.2KB | `entities/qoder-team-knowledge-engine.md`
 
 # Qoder 团队知识引擎

@@ -1,7 +1,5 @@
 # INTERPOL Operation Ramz MENA Cybercrime Networks
 
-## Ch12.044 INTERPOL Operation Ramz MENA Cybercrime Networks
-
 > 📊 Level ⭐⭐ | 9.4KB | `entities/interpol-operation-ramz-mena-cybercrime.md`
 
 

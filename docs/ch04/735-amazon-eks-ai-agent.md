@@ -1,7 +1,5 @@
 # 在 Amazon EKS 上构建安全的 AI Agent 沙箱
 
-## Ch04.735 在 Amazon EKS 上构建安全的 AI Agent 沙箱
-
 > 📊 Level ⭐⭐ | 3.9KB | `entities/amazon-eks-ai-agent-sandbox-2026.md`
 
 # 在 Amazon EKS 上构建安全的 AI Agent 沙箱

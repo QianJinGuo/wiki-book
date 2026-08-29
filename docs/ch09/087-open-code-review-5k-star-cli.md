@@ -1,7 +1,5 @@
 # 阿里开源 Open Code Review：一周揽下 5k star，更专业的代码评审 CLI
 
-## Ch09.087 阿里开源 Open Code Review：一周揽下 5k star，更专业的代码评审 CLI
-
 > 📊 Level ⭐⭐ | 9.2KB | `entities/阿里开源-open-code-review一周揽下-5k-star更专业的代码评审-cli.md`
 
 # 阿里开源 Open Code Review：一周揽下 5k star，更专业的代码评审 CLI

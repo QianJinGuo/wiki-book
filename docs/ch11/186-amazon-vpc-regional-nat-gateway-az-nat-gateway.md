@@ -1,7 +1,5 @@
 # Amazon VPC Regional NAT Gateway 与 AZ NAT Gateway 全面对比
 
-## Ch11.186 Amazon VPC Regional NAT Gateway 与 AZ NAT Gateway 全面对比
-
 > 📊 Level ⭐⭐ | 6.9KB | `entities/amazon-vpc-regional-nat-gateway-与-az-nat-gateway-全面对比.md`
 
 # Amazon VPC Regional NAT Gateway 与 AZ NAT Gateway 全面对比

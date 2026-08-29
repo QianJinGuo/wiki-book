@@ -1,7 +1,5 @@
 # An agent capability library
 
-## Ch04.762 An agent capability library
-
 > 📊 Level ⭐⭐ | 3.6KB | `entities/agent-capability-library.md`
 
 # An agent capability library

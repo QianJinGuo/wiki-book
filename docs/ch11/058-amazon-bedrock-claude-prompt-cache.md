@@ -1,7 +1,5 @@
 # 在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略
 
-## Ch11.058 在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略
-
 > 📊 Level ⭐⭐ | 11.6KB | `entities/amazon-bedrock-claude-prompt-cache-strategy.md`
 
 

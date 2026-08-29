@@ -1,7 +1,5 @@
 # Luma Uni 1 1 API开放 图像模型榜单第三 文字渲染直逼GPT im 机器之心
 
-## Ch01.238 Luma Uni 1 1 API开放 图像模型榜单第三 文字渲染直逼GPT im 机器之心
-
 > 📊 Level ⭐ | 0.9KB | `entities/2026-05-06-Luma-Uni-1-1-API开放-图像模型榜单第三-文字渲染直逼GPT-im-机器之心.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-05-06-Luma-Uni-1-1-API开放-图像模型榜单第三-文字渲染直逼GPT-im-机器之心.md)

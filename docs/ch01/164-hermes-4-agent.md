@@ -1,7 +1,5 @@
 # 我给Hermes配了4个Agent
 
-## Ch01.164 我给Hermes配了4个Agent
-
 > 📊 Level ⭐ | 3.7KB | `entities/hermes-four-agents-setup.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-four-agents-setup.md)

@@ -1,7 +1,5 @@
 # LLaMA.cpp Deployment
 
-## Ch11.168 LLaMA.cpp Deployment
-
 > 📊 Level ⭐⭐ | 7.8KB | `entities/llama-cpp-deployment.md`
 
 # LLaMA.cpp Deployment

@@ -1,7 +1,5 @@
 # GraphPlanner — 图记忆网络驱动多智能体 LLM 工作流路由
 
-## Ch01.1368 GraphPlanner — 图记忆网络驱动多智能体 LLM 工作流路由
-
 > 📊 Level ⭐⭐ | 3.6KB | `entities/graphplanner-multi-agent-workflow-router-uiuc-2026.md`
 
 # GraphPlanner — 图记忆网络驱动多智能体 LLM 工作流路由

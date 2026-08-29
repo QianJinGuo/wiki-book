@@ -1,7 +1,5 @@
 # Amazon Quick Research: Agentic Multi-Source Research Workflow with Citation Provenance and Versioned Revisions
 
-## Ch04.261 Amazon Quick Research: Agentic Multi-Source Research Workflow with Citation Provenance and Versioned Revisions
-
 > 📊 Level ⭐⭐ | 11.7KB | `entities/amazon-quick-research-agentic-multi-source-citation.md`
 
 # Amazon Quick Research: Agentic Multi-Source Research Workflow with Citation Provenance and Versioned Revisions

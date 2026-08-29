@@ -1,7 +1,5 @@
 # Hermes Agent 自我改进机制概述
 
-## Ch04.263 Hermes Agent 自我改进机制概述
-
 > 📊 Level ⭐⭐ | 11.6KB | `entities/hermes-self-improving-overview-winty.md`
 
 [[raw/articles/hermes-self-improving-overview-winty]

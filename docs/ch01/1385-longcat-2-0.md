@@ -1,7 +1,5 @@
 # 美团 LongCat-2.0：万亿参数大模型
 
-## Ch01.1385 美团 LongCat-2.0：万亿参数大模型
-
 > 📊 Level ⭐⭐ | 3.5KB | `entities/meituan-longcat-2-trillion-parameter.md`
 
 # 美团 LongCat-2.0：万亿参数大模型

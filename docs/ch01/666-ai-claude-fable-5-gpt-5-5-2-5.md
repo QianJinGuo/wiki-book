@@ -1,7 +1,5 @@
 # AI打工大排行：Claude Fable 5自动赚钱的能力，是GPT-5.5的2.5倍
 
-## Ch01.666 AI打工大排行：Claude Fable 5自动赚钱的能力，是GPT-5.5的2.5倍
-
 > 📊 Level ⭐⭐ | 9.3KB | `entities/ai-agent-rli-benchmark-fable5-gpt55-comparison-2026.md`
 
 # AI打工大排行：Claude Fable 5自动赚钱的能力，是GPT-5.5的2.5倍

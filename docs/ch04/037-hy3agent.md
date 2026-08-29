@@ -1,7 +1,5 @@
 # 首发限时免费两周实测腾讯混元hy3agent能力飞升日常主力毫无压力
 
-## Ch04.037 首发限时免费两周实测腾讯混元hy3agent能力飞升日常主力毫无压力
-
 > 📊 Level ⭐ | 0.9KB | `entities/首发限时免费两周实测腾讯混元hy3agent能力飞升日常主力毫无压力.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/首发限时免费两周实测腾讯混元hy3agent能力飞升日常主力毫无压力.md)

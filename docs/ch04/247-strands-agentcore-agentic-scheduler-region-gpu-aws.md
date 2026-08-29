@@ -1,7 +1,5 @@
 # 基于Strands和AgentCore 实现Agentic Scheduler 在多Region自动编排推理GPU算力 | 亚马逊AWS官方博客
 
-## Ch04.247 基于Strands和AgentCore 实现Agentic Scheduler 在多Region自动编排推理GPU算力 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 12.0KB | `entities/agentic-scheduler-with-strands-agentcore-for-multi-region-gpu-inference.md`
 
 ## 概述

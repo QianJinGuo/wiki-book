@@ -1,7 +1,5 @@
 # 把 Kiro CLI 当作 Agent SDK：一键订阅即可构建你的Agent应用 | 亚马逊AWS官方博客
 
-## Ch11.217 把 Kiro CLI 当作 Agent SDK：一键订阅即可构建你的Agent应用 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 5.9KB | `entities/use-kiro-cli-as-agent-sdk-build-your-agent-app-with-one-click-subscription.md`
 
 

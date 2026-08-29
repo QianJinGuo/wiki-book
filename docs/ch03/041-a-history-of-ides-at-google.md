@@ -1,7 +1,5 @@
 # A History of IDEs at Google
 
-## Ch03.041 A History of IDEs at Google
-
 > 📊 Level ⭐ | 5.5KB | `entities/a-history-of-ides-at-google.md`
 
 ## A fragmented ecosystem

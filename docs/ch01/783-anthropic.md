@@ -1,7 +1,5 @@
 # Anthropic
 
-## Ch01.783 Anthropic
-
 > 📊 Level ⭐⭐ | 8.1KB | `entities/anthropic.md`
 
 # Anthropic

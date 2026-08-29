@@ -1,7 +1,5 @@
 # Alibaba Skill-Up：声明式 Agent Skill 评测框架
 
-## Ch04.365 Alibaba Skill-Up：声明式 Agent Skill 评测框架
-
 > 📊 Level ⭐⭐ | 9.4KB | `entities/alibaba-skill-up-agent-skill-evaluation-framework-2026.md`
 
 # Alibaba Skill-Up：声明式 Agent Skill 评测框架

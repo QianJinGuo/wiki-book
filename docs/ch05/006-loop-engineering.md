@@ -1,7 +1,5 @@
 # Loop Engineering: 把反馈循环放进工程现场
 
-## Ch05.006 Loop Engineering: 把反馈循环放进工程现场
-
 > 📊 Level ⭐⭐ | 32.1KB | `entities/loop-engineering-feedback-control-system.md`
 
 # Loop Engineering: 把反馈循环放进工程现场

@@ -1,7 +1,5 @@
 # 高德路线规划双路线：MobilityBench（Agent 基准）+ TransitLM（端到端 RLLM）
 
-## Ch01.1472 高德路线规划双路线：MobilityBench（Agent 基准）+ TransitLM（端到端 RLLM）
-
 > 📊 Level ⭐⭐⭐ | 19.0KB | `entities/gaode-routing-dual-pathway-mobilitybench-transitlm-2026.md`
 
 # 高德路线规划双路线：MobilityBench（Agent 基准）+ TransitLM（端到端 RLLM）

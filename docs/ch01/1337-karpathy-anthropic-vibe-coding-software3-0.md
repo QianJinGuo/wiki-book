@@ -1,7 +1,5 @@
 # Karpathy加入Anthropic后首讲：Vibe Coding已死，Software3.0来了
 
-## Ch01.1337 Karpathy加入Anthropic后首讲：Vibe Coding已死，Software3.0来了
-
 > 📊 Level ⭐⭐ | 3.8KB | `entities/karpathy-software3-vibe-coding-dead-agentic-engineering.md`
 
 # Karpathy加入Anthropic后首讲：Vibe Coding已死，Software3.0来了

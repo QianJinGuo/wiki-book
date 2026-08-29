@@ -1,7 +1,5 @@
 # 突发，马斯克xAI解散了！22万张GPU忍痛全给Claude
 
-## Ch01.206 突发，马斯克xAI解散了！22万张GPU忍痛全给Claude
-
 > 📊 Level ⭐ | 1.0KB | `entities/2026-05-07-突发-马斯克xAI解散了-22万张GPU忍痛全给Claude-新智元.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-05-07-突发-马斯克xAI解散了-22万张GPU忍痛全给Claude-新智元.md)

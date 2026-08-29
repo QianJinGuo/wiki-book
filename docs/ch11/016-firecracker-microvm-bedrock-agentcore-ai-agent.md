@@ -1,7 +1,5 @@
 # 基于 Firecracker microVM 与 Bedrock AgentCore 的生产级多租户 AI Agent
 
-## Ch11.016 基于 Firecracker microVM 与 Bedrock AgentCore 的生产级多租户 AI Agent
-
 > 📊 Level ⭐⭐ | 41.4KB | `entities/firecracker-bedrock-agentcore-multi-tenant.md`
 
 # 基于 Firecracker microVM 与 Bedrock AgentCore 的生产级多租户 AI Agent

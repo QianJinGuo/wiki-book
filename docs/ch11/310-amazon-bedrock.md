@@ -1,7 +1,5 @@
 # Amazon Bedrock
 
-## Ch11.310 Amazon Bedrock
-
 > 📊 Level ⭐⭐ | 1.1KB | `entities/amazon-bedrock.md`
 
 # Amazon Bedrock

@@ -1,7 +1,5 @@
 # The State of the AI Economy — $110B Revenue, Bottom-Up Deduplicated Model
 
-## Ch01.1397 The State of the AI Economy — $110B Revenue, Bottom-Up Deduplicated Model
-
 > 📊 Level ⭐⭐ | 3.5KB | `entities/exponentialview-ai-economy-110b-2026.md`
 
 # The State of the AI Economy — $110B Revenue, Bottom-Up Deduplicated Model

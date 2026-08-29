@@ -1,7 +1,5 @@
 # Claude的脑子里，也长出了一块「意识」
 
-## Ch01.1492 Claude的脑子里，也长出了一块「意识」
-
 > 📊 Level ⭐⭐⭐ | 12.3KB | `entities/claude的脑子里也长出了一块意识.md`
 
 # Claude的脑子里，也长出了一块「意识」

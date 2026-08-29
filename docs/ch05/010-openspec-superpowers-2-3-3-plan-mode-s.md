@@ -1,7 +1,5 @@
 # 缝合怪识别与减法决策论：OpenSpec + Superpowers 融合方案下线记（2 周 3 次实测 + 3 个测试 + 加法传播学 + Plan Mode + Superpowers + ASD 最终方案）
 
-## Ch05.010 缝合怪识别与减法决策论：OpenSpec + Superpowers 融合方案下线记（2 周 3 次实测 + 3 个测试 + 加法传播学 + Plan Mode + Superpowers + ASD 最终方案）
-
 > 📊 Level ⭐⭐ | 26.6KB | `entities/openspec-superpowers-decommissioning-frankenstein-three-questions-shuge-2026-06-18.md`
 
 # 缝合怪识别与减法决策论：OpenSpec + Superpowers 融合方案下线记

@@ -1,7 +1,5 @@
 # 阿里SkillClaw：让 Agent 技能在真实使用中集体进化
 
-## Ch04.463 阿里SkillClaw：让 Agent 技能在真实使用中集体进化
-
 > 📊 Level ⭐⭐ | 8.0KB | `entities/skillclaw.md`
 
 # 阿里SkillClaw：让 Agent 技能在真实使用中集体进化

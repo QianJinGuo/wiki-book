@@ -1,7 +1,5 @@
 # Amazon Bedrock AgentCore Harness GA：两 API 调用生产级 Agent 基础设施
 
-## Ch04.598 Amazon Bedrock AgentCore Harness GA：两 API 调用生产级 Agent 基础设施
-
 > 📊 Level ⭐⭐ | 6.2KB | `entities/amazon-bedrock-agentcore-harness-ga.md`
 
 # Amazon Bedrock AgentCore Harness GA

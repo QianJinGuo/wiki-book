@@ -1,7 +1,5 @@
 # 十年老技术开发的 AI Agent 探索之路
 
-## Ch04.083 十年老技术开发的 AI Agent 探索之路
-
 > 📊 Level ⭐⭐ | 60.8KB | `entities/ai-agent-exploration-legacy-developer.md`
 
 # 十年老技术开发的 AI Agent 探索之路

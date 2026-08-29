@@ -1,7 +1,5 @@
 # 京东 Taro Native 框架静态布局直渲提速
 
-## Ch01.604 京东 Taro Native 框架静态布局直渲提速
-
 > 📊 Level ⭐⭐ | 10.3KB | `entities/京东-taro-native-框架静态布局直渲提速.md`
 
 # 京东 Taro Native 框架静态布局直渲提速

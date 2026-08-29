@@ -1,7 +1,5 @@
 # Why and how to implement an AI asset rationalization strategy
 
-## Ch01.824 Why and how to implement an AI asset rationalization strategy
-
 > 📊 Level ⭐⭐ | 7.8KB | `entities/why-and-how-to-implement-an-ai-asset-rationalization-strateg.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/why-and-how-to-implement-an-ai-asset-rationalization-strateg.md)

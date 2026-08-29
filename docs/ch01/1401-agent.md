@@ -1,7 +1,5 @@
 # 曾经爆火的小龙虾凉了？现在圈内都在用这款新 Agent
 
-## Ch01.1401 曾经爆火的小龙虾凉了？现在圈内都在用这款新 Agent
-
 > 📊 Level ⭐⭐ | 3.5KB | `entities/pilotdeck-data派thu-2026.md`
 
 # 曾经爆火的小龙虾凉了？现在圈内都在用这款新 Agent

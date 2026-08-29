@@ -1,7 +1,5 @@
 # Anthropic 博客：Claude Code 大型代码库最佳实践
 
-## Ch01.479 Anthropic 博客：Claude Code 大型代码库最佳实践
-
 > 📊 Level ⭐⭐ | 14.0KB | `entities/anthropic-claude-code-large-codebase-best-practices-50002a089323.md`
 
 ## 核心结论

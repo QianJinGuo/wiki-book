@@ -1,7 +1,5 @@
 # Graphsignal: LLM Inference Profiler
 
-## Ch01.1142 Graphsignal: LLM Inference Profiler
-
 > 📊 Level ⭐⭐ | 5.4KB | `entities/graphsignal-inference-profiler.md`
 
 # Graphsignal: LLM Inference Profiler

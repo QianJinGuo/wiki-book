@@ -1,7 +1,5 @@
 # Claude Code 多 Agent Harness 源码拆解：留纸条、抠上下文、抠缓存、捆手脚
 
-## Ch05.103 Claude Code 多 Agent Harness 源码拆解：留纸条、抠上下文、抠缓存、捆手脚
-
 > 📊 Level ⭐⭐ | 5.8KB | `entities/claude-code-multi-agent-harness-source-analysis.md`
 
 # Claude Code 多 Agent Harness 源码拆解

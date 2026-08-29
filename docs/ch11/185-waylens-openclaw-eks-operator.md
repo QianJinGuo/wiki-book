@@ -1,7 +1,5 @@
 # Waylens OpenClaw 多智能体平台 EKS+Operator 改造案例
 
-## Ch11.185 Waylens OpenClaw 多智能体平台 EKS+Operator 改造案例
-
 > 📊 Level ⭐⭐ | 6.7KB | `entities/waylens-openclaw-multi-agent-eks-operator-case.md`
 
 

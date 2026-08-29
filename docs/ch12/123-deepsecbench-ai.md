@@ -1,7 +1,5 @@
 # DeepSecBench：评估 AI 模型在网络安全漏洞发现中的性能
 
-## Ch12.123 DeepSecBench：评估 AI 模型在网络安全漏洞发现中的性能
-
 > 📊 Level ⭐⭐ | 3.2KB | `entities/deepsecbench-evaluating-model-performance-cybersecurity-vulnerabilities-vercel-2026.md`
 
 # DeepSecBench：评估 AI 模型在网络安全漏洞发现中的性能

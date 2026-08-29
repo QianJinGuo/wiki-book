@@ -1,7 +1,5 @@
 # 让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客
 
-## Ch09.153 让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 6.0KB | `entities/enable-kiro-and-claude-code-for-im-with-acp-bridge-async-ai-workflow.md`
 
 ## 概述

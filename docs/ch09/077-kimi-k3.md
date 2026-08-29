@@ -1,7 +1,5 @@
 # Kimi K3 实测：半天复刻录屏工具
 
-## Ch09.077 Kimi K3 实测：半天复刻录屏工具
-
 > 📊 Level ⭐⭐ | 9.8KB | `entities/kimi-k3实测把一个29美元月的录屏工具半天复刻成免费mac-app.md`
 
 # Kimi K3 实测：半天复刻录屏工具

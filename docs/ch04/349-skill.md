@@ -1,7 +1,5 @@
 # 你写的 Skill，及格了吗？
 
-## Ch04.349 你写的 Skill，及格了吗？
-
 > 📊 Level ⭐⭐ | 9.7KB | `entities/你写的-skill及格了吗.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/你写的-skill及格了吗.md)

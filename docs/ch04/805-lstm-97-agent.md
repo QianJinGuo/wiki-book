@@ -1,7 +1,5 @@
 # LSTM之父最新97页综述：Agent如何真正学会「自我进化」？
 
-## Ch04.805 LSTM之父最新97页综述：Agent如何真正学会「自我进化」？
-
 > 📊 Level ⭐⭐ | 2.4KB | `entities/lstm之父最新97页综述agent如何真正学会自我进化.md`
 
 # LSTM之父最新97页综述：Agent如何真正学会「自我进化」？

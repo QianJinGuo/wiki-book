@@ -1,7 +1,5 @@
 # How Yahoo enhances search retargeting using Amazon Bedrock
 
-## Ch03.086 How Yahoo enhances search retargeting using Amazon Bedrock
-
 > 📊 Level ⭐⭐ | 10.4KB | `entities/how-yahoo-enhances-search-retargeting-using-amazon-bedrock.md`
 
 # How Yahoo enhances search retargeting using Amazon Bedrock

@@ -1,7 +1,5 @@
 # LingBot-Video：全球首个具身专属MoE视频模型
 
-## Ch01.1251 LingBot-Video：全球首个具身专属MoE视频模型
-
 > 📊 Level ⭐⭐ | 4.5KB | `entities/lingbot-video-moe-embodied-video-2026.md`
 
 # LingBot-Video：全球首个具身专属MoE视频模型

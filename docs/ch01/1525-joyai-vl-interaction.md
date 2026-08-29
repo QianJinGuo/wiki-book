@@ -1,7 +1,5 @@
 # 京东JoyAI-VL-Interaction：全球首个全栈开源实时视频交互模型
 
-## Ch01.1525 京东JoyAI-VL-Interaction：全球首个全栈开源实时视频交互模型
-
 > 📊 Level ⭐⭐⭐ | 8.7KB | `entities/joyai-vl-interaction-jd-open-source-real-time-video-2026.md`
 
 # 京东JoyAI-VL-Interaction：全球首个全栈开源实时视频视觉语言交互模型

@@ -1,7 +1,5 @@
 # Anthropic Claude Skill 9 类任务分类法
 
-## Ch07.069 Anthropic Claude Skill 9 类任务分类法
-
 > 📊 Level ⭐⭐ | 6.8KB | `entities/anthropic-claude-skill-9-categories-datawhale-2026.md`
 
 # Anthropic Claude Skill 9 类任务分类法

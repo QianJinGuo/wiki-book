@@ -1,7 +1,5 @@
 # Harness 实践 将任何文字编辑成精美的文章 code秘密花园
 
-## Ch01.276 Harness 实践 将任何文字编辑成精美的文章 code秘密花园
-
 > 📊 Level ⭐ | 0.8KB | `entities/2026-06-18-Harness-实践-将任何文字编辑成精美的文章-code秘密花园.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-06-18-Harness-实践-将任何文字编辑成精美的文章-code秘密花园.md)

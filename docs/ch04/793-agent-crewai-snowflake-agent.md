@@ -1,7 +1,5 @@
 # 在数据所在处构建 Agent: CrewAI + Snowflake 企业级 Agent 部署
 
-## Ch04.793 在数据所在处构建 Agent: CrewAI + Snowflake 企业级 Agent 部署
-
 > 📊 Level ⭐⭐ | 3.0KB | `entities/crewai-snowflake-enterprise-agent-deployment.md`
 
 # 在数据所在处构建 Agent: CrewAI + Snowflake 企业级 Agent 部署

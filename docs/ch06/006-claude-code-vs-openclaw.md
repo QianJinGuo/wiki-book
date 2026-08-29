@@ -1,7 +1,5 @@
 # Claude Code vs OpenClaw 记忆：向量数据库是否必要
 
-## Ch06.006 Claude Code vs OpenClaw 记忆：向量数据库是否必要
-
 > 📊 Level ⭐⭐ | 20.2KB | `entities/claude-code-openclaw-memory-vector-db-doubt.md`
 
 ## 概述

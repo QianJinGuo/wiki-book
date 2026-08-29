@@ -1,7 +1,5 @@
 # 长周期 Agent 详解：从 Ralph Loop 到可接管 Harness
 
-## Ch01.1418 长周期 Agent 详解：从 Ralph Loop 到可接管 Harness
-
 > 📊 Level ⭐⭐ | 3.3KB | `entities/long-running-agent-ralph-loop-harness-takeover.md`
 
 # 长周期 Agent 详解：从 Ralph Loop 到可接管 Harness

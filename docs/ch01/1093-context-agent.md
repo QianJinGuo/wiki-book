@@ -1,7 +1,5 @@
 # Context 不是免费的：解析长文档 agent 的性能天花板与架构优化
 
-## Ch01.1093 Context 不是免费的：解析长文档 agent 的性能天花板与架构优化
-
 > 📊 Level ⭐⭐ | 5.8KB | `entities/context-不是免费的解析长文档-agent-的性能天花板与架构优化.md`
 
 # Context 不是免费的：解析长文档 agent 的性能天花板与架构优化
