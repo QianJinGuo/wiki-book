@@ -60,7 +60,17 @@
   }
 
   // ========== API 调用 ==========
- function chat(messages, onChunk, onDone, onError) {
+  function friendlyError(msg) {
+    if (/429|rate ?limit|FreeUsageLimit/i.test(msg)) {
+      return "站点内置 AI 额度暂时用完，请几分钟后再试；或在设置 ⚙️ 中填入自己的 API Key / 接口地址。";
+    }
+    if (/Failed to fetch|NetworkError|network/i.test(msg)) {
+      return "网络请求失败，请检查网络连接后重试。";
+    }
+    return "错误: " + msg;
+  }
+
+ function chat(messages, onChunk, onDone, onError, retried) {
    var cfg = getConfig();
    var endpoint = cfg.endpoint || PROXY_URL;
    var headers = { "Content-Type": "application/json" };
@@ -85,6 +95,12 @@
     }).then(function(resp) {
       if (!resp.ok) {
         return resp.text().then(function(t) {
+          // Free 计划限流/过载（429）与 Worker 过载（503）：等待后自动重试一次
+          if (!retried && (resp.status === 429 || resp.status === 503)) {
+            return new Promise(function(resolve) { setTimeout(resolve, 3000); }).then(function() {
+              return chat(messages, onChunk, onDone, onError, true);
+            });
+          }
           throw new Error("API error " + resp.status + ": " + t.substring(0, 200));
         });
       }
@@ -689,7 +705,7 @@
             },
             function(err) {
               isStreaming = false;
-              if (bubble) bubble.innerHTML = '<span style="color:#e74c3c">错误: ' + err + '</span>';
+              if (bubble) bubble.innerHTML = '<span style="color:#e74c3c">' + friendlyError(err) + '</span>';
             }
           );
         })
