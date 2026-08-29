@@ -149,13 +149,14 @@
 - 实测效果: 站点 HTML 6,601 → ~2,000 页；首页统计改为实测值（编撰条目 2,201 / 一手原文 4,016）
 - [x] **每日 check & eval 已上线**: ZCode 定时自动化每天 04:30 执行 vault-metrics + daily-checkup + LLM 抽样评审（见 ~/wiki/CRON.md daily-vault-checkup 节）
 
-### P1 门禁重建（~1 周）
-- [ ] 评分锚点化 + review_value_v2 + 批内强制分布
+### P1 门禁重建（~1 周）— 进行中 (2026-08-29 完成前两项)
+- [x] 评分锚点化 + 批内强制分布 ✅（score-inbox-files.py + cron-score-canonical.py: 分值锚点、≤20% ≥8、30 秒反问降分；保留 review_value 字段名以保证门禁兼容，放弃改名 v2）
+- [x] 删除实体旁路 ✅（batch-score-ingest{,2,3}.py / orphan-processor.py / ingest_articles.py 共 5 个 create_entity 脚本移入 _archive/disabled-scripts/）
+- [x] 首轮 LLM 评审 ✅（队列 #1-16 逐篇核验: keep 8 / refresh 4 / archive 4，refresh 待重写要点入日报；评审结论格式即后续每日自动化的模板）
 - [ ] 实体契约 lint（SYNTHESIS / COPY-PASTE / BOILERPLATE 三检）
-- [ ] 删除 batch-score-ingest3.py / orphan-processor.py 的 create_entity() 旁路
 - [ ] 两层发布上线 + ch04 主编导读试点
 - [ ] metrics/history.jsonl 基线建立 ✅（2026-08-29 首日: orphan_rate 26.8%, copy_paste_fingerprint 1,357, boilerplate 639）
-- [ ] half_life 字段补录（LLM 批判 4,069 篇，~2 天跑完）
+- [ ] half_life 字段补录（LLM 批判 4,069 篇，~2 天跑完；评审时逐篇补录）
 
 ### P2 代谢闭环（第 3-4 周起持续 100 天）
 - [ ] daily-vault-checkup cron 上线（40/天）
