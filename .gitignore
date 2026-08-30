@@ -13,3 +13,6 @@ deploy/cloudflare/*/worker.js
 
 # Personal learning notes
 wiki-notes/
+
+# Local agent-tool state
+.omx/

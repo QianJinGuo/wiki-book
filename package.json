@@ -1,8 +1,7 @@
 {
   "name": "wiki-book",
   "version": "1.0.0",
-  "description": "从 LLM 原理到生产级 Agent —— 基于 4,000+ 篇一手文章系统编撰的开源 AI 工程读物",
-  "main": "worker.js",
+  "description": "AI Engineering - an open-source book curated from 4,000+ first-hand articles (MkDocs Material + RAG)",
   "directories": {
     "doc": "docs"
   },
@@ -15,7 +14,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/QianJinGuo/wiki-book/issues"
