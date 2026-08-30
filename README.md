@@ -79,6 +79,14 @@ PYTHON=.venv/bin/python bash scripts/build.sh   # mkdocs → 索引裁剪 → �
 - 代码（构建脚本、RAG 前后端）：[MIT](LICENSE)
 - 书籍内容（docs/）：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.zh)
 
+## 贡献 🤝
+
+欢迎贡献！你可以：
+- 提交高质量 AI 工程文章（参考 [贡献指南](CONTRIBUTING.md)）
+- 报告错误或提出建议
+- 优化 RAG 系统或构建流程
+- 分享给更多人
+
 ---
 
 *更新时间: 2026-08-30 (v1.3.8)*
