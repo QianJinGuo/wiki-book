@@ -3,7 +3,7 @@
 # Usage: reading-progress.sh [stats|check|next|peek|summary|random]
 
 CD="$(cd "$(dirname "$0")/.." && pwd)"
-LIST="$CD/READING-LIST.md"
+LIST="$CD/meta/READING-LIST.md"
 
 count_pattern() {
   local n
