@@ -1,9 +1,26 @@
-# AI 工程
+# 《AI 工程》 · AI Engineering
 
-> 从 LLM 原理到生产级 Agent —— 基于 4,000+ 篇一手文章系统编撰的开源读物。
-> 覆盖 LLM、Agent、Harness、MCP、RAG、安全、训练与推理全栈，开源（CC BY-SA 4.0），每日更新。
+> 从 LLM 原理到生产级 Agent —— 基于 4,000+ 篇一手文章系统编撰的开源读物，每日更新。
+>
+> An open-source book on AI Engineering — from LLM fundamentals to production-grade Agents, curated from 4,000+ first-hand articles, updated daily.
 
-**在线阅读：https://jinguo.tech | 编撰：AI 社区众创 × Hermes Agent | 开源协议：CC BY-SA 4.0**
+[![在线阅读](https://img.shields.io/badge/在线阅读-jinguo.tech-blue)](https://jinguo.tech)
+[![GitHub stars](https://img.shields.io/github/stars/QianJinGuo/wiki-book?style=social)](https://github.com/QianJinGuo/wiki-book/stargazers)
+[![Content License: CC BY-SA 4.0](https://img.shields.io/badge/内容协议-CC_BY--SA_4.0-lightgrey)](https://creativecommons.org/licenses/by-sa/4.0/deed.zh)
+[![Code License: MIT](https://img.shields.io/badge/代码协议-MIT-green)](LICENSE)
+[![MkDocs Material](https://img.shields.io/badge/MkDocs-Material-526cfe)](https://squidfunk.github.io/mkdocs-material/)
+
+![《AI 工程》首页](docs/assets/images/screenshot-home.png)
+
+**在线阅读：https://jinguo.tech | 编撰：AI 社区众创 × Hermes Agent**
+
+## 亮点 ✨
+
+- **2,201 篇精选编撰条目** · 20 章 5 篇全书结构 · 源自 4,016 篇一手原文
+- **每个条目溯源一手原文并标注难度**，可按学习路径循序渐进
+- **四层 RAG 检索**：浏览器 IndexedDB 客户端搜索（0ms）→ BM25 → 语义搜索 → Pages Function 兜底，内置 AI Chat
+- **三环境部署**：Cloudflare Pages（生产）/ GitHub Pages（纯静态）/ Docker（本地一条命令起站）
+- **质量闭环**：每日自动 check & eval，入库评分门禁 + 出口精选门禁，指标回流驱动次日优先级
 
 ## 全书结构
 
@@ -31,29 +48,38 @@
 | | Ch20 AI 哲学、安全与未来 | | 24 |
 | **总计** | **20 章 5 篇** | | **4,087 篇** |
 
-## 三环境部署
-
-| 环境 | URL | 用途 |
-|------|-----|------|
-| **Cloudflare Pages** | https://jinguo.tech | 生产域名 |
-| **GitHub Pages** | https://wiki.jinguo.tech | 纯静态站点 |
-| **Docker** | http://localhost:8002 | 本地开发 |
-
-## 快速启动
+## 快速启动 🚀
 
 ### Docker（推荐）
 
 ```bash
-docker compose up -d
+git clone https://github.com/QianJinGuo/wiki-book.git
+cd wiki-book
+docker compose up -d --build
+# → http://localhost:8002
 ```
 
 ### 本地构建
 
 ```bash
-.venv/bin/python -m mkdocs build --dirty
+python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+PYTHON=.venv/bin/python bash scripts/build.sh   # mkdocs → 索引裁剪 → 近邻图，顺序不可换
 ```
+
+## 三环境部署
+
+| 环境 | URL | 用途 |
+|------|-----|------|
+| **Cloudflare Pages** | https://jinguo.tech | 生产域名（Pages Functions + R2 + Vectorize） |
+| **GitHub Pages** | https://wiki.jinguo.tech | 纯静态站点（GitHub Actions） |
+| **Docker** | http://localhost:8002 | 本地开发 |
+
+## 许可 📄
+
+- 代码（构建脚本、RAG 前后端）：[MIT](LICENSE)
+- 书籍内容（docs/）：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.zh)
 
 ---
 
-*更新时间: 2026-08-29 (v1.3.8)*
+*更新时间: 2026-08-30 (v1.3.8)*
 *维护者: Hermes Agent*
