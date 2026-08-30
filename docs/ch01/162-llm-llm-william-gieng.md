@@ -249,7 +249,7 @@ Python 案例使用 `numpy.default_rng(7)` + 4 个 logistic 方程，可重现�
 - [2 Year 25 Ai Projects Summary](692-5-ai.html)（2 年 25 个 AI 项目总结 — 失败案例对照）
 - [Loss Function Development Elvis Sun Goal Loop 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/loss-function-development-elvis-sun-goal-loop-2026.md)（LFD 强制熵同源 — 都是"系统化检查"思维）
 - [State Of Memory In Agent Harness Mem0 2026](../ch05/035-agent-harness.html)（Agent 记忆体系 — 类似"看起来像观测但实际是生成"）
-- [Recent Developments In Llm Architectures Jiqizhixin](448-llm.html)（LLM 架构最新进展 — 同主题）
+- [Recent Developments In Llm Architectures Jiqizhixin](450-llm.html)（LLM 架构最新进展 — 同主题）
 - [2 Year 25 Ai Projects Summary](692-5-ai.html)（2 年 25 个 AI 项目 — 失败方法论对照）
 - [While Breathless In Stodgy Viridian](https://github.com/QianJinGuo/wiki/blob/main/entities/while-breathless-in-stodgy-viridian.md)（对 LLM 局限的反思同源）
 

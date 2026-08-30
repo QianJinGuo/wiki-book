@@ -42,7 +42,7 @@ Alpamayo 1 使用 Flow Matching 轨迹解码（超越简单回归）、历史轨
 5. **VLA 端到端轨迹规划已成生产现实**：APlamayo 表明端到端 VLA 生产级部署已到达临界点，自动驾驶团队应加速从模块化栈向 VLA 的技术路线迁移。
 
 ## 相关实体
-- [Nvidia Gemma 4 Edge Ai](522-nvidia-gemma-4-edge-ai.html)
+- [Nvidia Gemma 4 Edge Ai](524-nvidia-gemma-4-edge-ai.html)
 - [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](../ch04/151-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t.html)
 - [Nvidia Gpu Kernel Translation Cute Python Julia](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-gpu-kernel-translation-cute-python-julia.md)
 - [Nvidia Cut Checkpoint Costs Nvcomp](../ch03/022-nvidia-cut-checkpoint-costs-nvcomp.html)

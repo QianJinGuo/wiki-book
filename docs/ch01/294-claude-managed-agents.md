@@ -76,7 +76,7 @@ SSE（Server-Sent Events）流式通信。
 Token = 思考成本，Runtime = 环境成本。
 
 ## 与 PM 视角的关系
-| 视角 | 本文（开发者指南） | [PM 视角](../ch04/340-anthropic-pm-agentic.html) |
+| 视角 | 本文（开发者指南） | [PM 视角](../ch04/341-anthropic-pm-agentic.html) |
 |------|-----------------|-----------------|
 | 焦点 | API 接口/代码示例/架构 | PM 工作流/效率提升 |
 | 代码 | ✅ 完整 Python SDK 示例 | ❌ 无代码 |

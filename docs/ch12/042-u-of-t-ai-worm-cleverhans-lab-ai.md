@@ -93,7 +93,7 @@ Papernot 团队的措辞很值得注意："It was imperative for us to understan
 ## 相关实体
 
 - [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](../ch04/423-ai-agent.html)
-- [Disgruntled Researcher Releases Two More Microsoft Zero Days 5239758](067-disgruntled-researcher-releases-two-more-microsoft-zero-days.html)
+- [Disgruntled Researcher Releases Two More Microsoft Zero Days 5239758](027-disgruntled-researcher-releases-two-more-microsoft-zero-days.html)
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
 - [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md)

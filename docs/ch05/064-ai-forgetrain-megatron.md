@@ -64,7 +64,7 @@ AI 写代码成本趋近于零 → 没有必要继续做大而全通用框架 �
 
 ## 相关实体
 - [Ai Coding Agent Memory System](../ch04/252-ai-coding-agent.html)
-- [Deepseek Cost Migration System Layer Kv Cache Harness](../ch01/416-deepseek.html)
+- [Deepseek Cost Migration System Layer Kv Cache Harness](../ch01/417-deepseek.html)
 - [Gaode Ai Native 7X24 Pipeline Self Healing](018-ai-native.html)
 - [Karpathy Claude Md Rules](../ch01/181-claude-md.html)
 - [Tmall Ai Coding Practice Guide](076-ai-coding.html)

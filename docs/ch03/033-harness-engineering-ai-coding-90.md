@@ -234,7 +234,7 @@ Anthropic 反复强调："将做事的 Agent 和评判的 Agent 分开，是一�
 
 - [两万字详解Claude Code源码核心机制](057-claude-code.html) — Claude Code 源码级机制详解，与本文互补
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/035-agent-harness.html) — Claude Code harness 设计的深度剖析
-- [Claude Code Harness Deep Understanding](../ch01/336-claude-code-harness-deep-understanding.html) — Claude Code harness 另一深度解析
+- [Claude Code Harness Deep Understanding](../ch01/337-claude-code-harness-deep-understanding.html) — Claude Code harness 另一深度解析
 - [Claude Code Harness Deep Dive Founder Park](../ch05/058-claude-code-harness.html) — 同主题的另一种解读视角
 - [Claude Code Dynamic Workflows 8Th Translation Xingxiaozhao](../ch09/069-claude-code-dynamic-workflows.html) — Claude Code 动态工作流的翻译对照
 - [Gsd Get Shit Done Context Management Tool](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md) — 上下文管理工具

@@ -91,7 +91,7 @@ Point Estimate 对 AI Security Institute 基准测试的分析也印证了这一
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mythos_offensive_security_xbow_evaluatio.md)
 
 ## 相关实体
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](339-claude.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](340-claude.html)
 - [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](../ch07/031-qoder-skills.html)
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/057-claude-code.html)
 - [Claude Code Agent 工程设计](../ch03/048-claude-code-agent.html)

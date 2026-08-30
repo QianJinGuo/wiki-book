@@ -87,13 +87,13 @@ LLM-as-a-Judge 试图对轨迹形成整体判断并输出决策，适用于需�
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](448-llm.html)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](450-llm.html)
 - [LLM-as-a-Verifier: A General-Purpose Verification Framework](097-llm-as-a-verifier-a-general-purpose-verification-framework.html)
 - [LLM-as-a-Verifier: A General-Purpose Verification](297-llm-as-a-verifier-a-general-purpose-verification.html)
 - [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](../ch04/161-hermes-agent.html)
 - [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04/115-skillos-learning-skill-curation-for-self-evolving-agents.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/098-karpathy-vibe-coding-agentic-engineering.html)
-- [AI Skill 测评指标体系](350-ai-skill.html)
+- [AI Skill 测评指标体系](351-ai-skill.html)
 - [Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](../ch05/057-harness-engineering.html)
 - [在 RDS PostgreSQL 中实现 RaBitQ 量化](https://github.com/QianJinGuo/wiki/blob/main/entities/在-rds-postgresql-中实现-rabitq-量化.md)
 - [Codeindex · 让大模型更好地理解你的代码](288-codeindex.html)

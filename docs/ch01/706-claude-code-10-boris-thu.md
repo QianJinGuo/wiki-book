@@ -8,8 +8,8 @@
 
 ## 相关实体
 
-- [claude skill 质检工具 skill craft](339-claude.html)
-- [karpathy × boris 访谈：software 3.0 时代编程完整地图](448-llm.html)
+- [claude skill 质检工具 skill craft](340-claude.html)
+- [karpathy × boris 访谈：software 3.0 时代编程完整地图](450-llm.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-team-10-tips-boris-data派THU.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)

@@ -258,7 +258,7 @@ Hooks 系统是 Claude Code 区别于其他框架最显著的能力，但它同�
 - [深度拆解 Claude Code 12 个可复用的 Agentic Harness 设计模式](../ch03/048-claude-code-agent.html)
 - [Claude Code 架构深度解析](../ch03/057-claude-code.html)
 - [From Agent Protocol to Harness Skill](../ch05/067-harness-skill.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](336-claude-code-harness-deep-understanding.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](337-claude-code-harness-deep-understanding.html)
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html)
 - [Agent Harness 架构](../ch05/035-agent-harness.html)
 - [Claude Code 设计原则与对照分析](../ch03/057-claude-code.html)

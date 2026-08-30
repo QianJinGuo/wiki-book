@@ -17,8 +17,8 @@ Grafana 披露一起安全事件：一名"未授权方"获取了一个可访问�
 - 事件发生数天前，教育科技公司 Instructure 刚做出与 ShinyHunters 和解的争议决定，形成对照
 
 ## 相关实体
-- [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt](../ch12/063-grafana-github-token-breach-led-to-codebase-download-and-ext.html)
-- [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt](../ch12/063-grafana-github-token-breach-led-to-codebase-download-and-ext.html)
+- [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt](../ch12/064-grafana-github-token-breach-led-to-codebase-download-and-ext.html)
+- [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt](../ch12/064-grafana-github-token-breach-led-to-codebase-download-and-ext.html)
 - [From Doer To Director The Ai Mindset Shift](027-from-doer-to-director-the-ai-mindset-shift.html)
 - [Microsoft For Startups Microsoft](610-microsoft-for-startups-microsoft.html)
 

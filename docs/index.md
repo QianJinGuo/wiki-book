@@ -24,7 +24,7 @@
 
     <div class="home-stats__item"><span class="home-stats__num">20 章 · 5 篇</span><span class="home-stats__label">全书结构</span></div>
 
-    <div class="home-stats__item"><span class="home-stats__num">4,042</span><span class="home-stats__label">一手原文</span></div>
+    <div class="home-stats__item"><span class="home-stats__num">4,050</span><span class="home-stats__label">一手原文</span></div>
 
     <div class="home-stats__item"><span class="home-stats__num">★ × 5</span><span class="home-stats__label">难度分级</span></div>
 

@@ -10,7 +10,7 @@
 >
 ## 相关实体
 
-- [discord 全平台端到端加密](085-discord.html)
+- [discord 全平台端到端加密](086-discord.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-security-and-feature-enhancement-practices.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openclaw-architecture.md)

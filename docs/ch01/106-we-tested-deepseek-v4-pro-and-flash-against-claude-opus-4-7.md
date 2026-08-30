@@ -12,7 +12,7 @@
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](416-deepseek.html)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](417-deepseek.html)
 - [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](708-deepseek-v4.html)
 - We Tested DeepSeek V4 Pro and Flash Against Claude
 

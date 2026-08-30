@@ -55,7 +55,7 @@ Manus 是工艺典范：几百行手工 system prompts、明确的工作流脚�
 
 - 与 [Claude Code 现状](../ch01/305-claude-code-and-what-comes-next.html)对照：Claude Code 是"工艺派"——精心设计的 harness + Opus 4.5 智能 + Skills + Subagents + MCP。属于"精心打造"的 agent 范式——但其作者团队同时投入算力与训练。
 - 与 [CrewAI 迭代论](299-your-first-ai-agent-should-do-one-thing-badly.html)的张力：迭代论强调"先做糟糕的 agent 再迭代"；苦味教训暗示"算力取代工艺"。前者是工程路径，后者是范式断言。
-- 与 [管理即超能力](../ch01/360-management-as-ai-superpower.html)互补：Mollick 在商业文章中强调"管理能力"为稀缺资源；本文同一作者暗示 AI 找到路径后，管理定义"好结果"的能力成为新稀缺。
+- 与 [管理即超能力](../ch01/361-management-as-ai-superpower.html)互补：Mollick 在商业文章中强调"管理能力"为稀缺资源；本文同一作者暗示 AI 找到路径后，管理定义"好结果"的能力成为新稀缺。
 
 ## 实践启示
 
@@ -69,7 +69,7 @@ Manus 是工艺典范：几百行手工 system prompts、明确的工作流脚�
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
 - [Karpathy Vibe Coding Agentic Engineering](098-karpathy-vibe-coding-agentic-engineering.html)
-- [Management As Ai Superpower](../ch01/360-management-as-ai-superpower.html)
+- [Management As Ai Superpower](../ch01/361-management-as-ai-superpower.html)
 - [Claude Code And What Comes Next](../ch01/305-claude-code-and-what-comes-next.html)
 - [Your First Ai Agent Should Do One Thing Badly](299-your-first-ai-agent-should-do-one-thing-badly.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)

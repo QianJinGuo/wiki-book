@@ -89,7 +89,7 @@ MCP Server 可以通过 `initialize` 响应的 `instructions` 字段，向模型
 - [Boris Cherny — 从 IDE 到 Agent 控制台](../ch03/004-agent.html)
 - [读完 Claude Code 源码才发现 Skills/MCP/Rules 的区别远没有你想的那么大](006-claude-code-skills-mcp-rules.html)
 - [AI Agent 探索之路：从 Task-Driven 到 Goal-Driven](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-agent-exploration-path.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/336-claude-code-harness-deep-understanding.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/337-claude-code-harness-deep-understanding.html)
 - [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch03/004-agent.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/057-claude-code.html)
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/301-agent-skills.html)
@@ -98,7 +98,7 @@ MCP Server 可以通过 `initialize` 响应的 `instructions` 字段，向模型
 - [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/004-agent.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/004-agent.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/339-claude.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/340-claude.html)
 
 - [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/057-claude-code.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/008-harness.html)

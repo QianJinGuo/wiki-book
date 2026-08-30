@@ -20,7 +20,7 @@
 - [Prompt Context Harness Three Evolutions](../ch05/008-harness.html)
 - [From Prompt To Harness Claude Official](../ch05/008-harness.html)
 - [Claude Code Large Codebase Harness Configuration](../ch03/057-claude-code.html)
-- [Openai Skills Shell Compaction Agent Primitives](350-ai-skill.html)
+- [Openai Skills Shell Compaction Agent Primitives](351-ai-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/promptqueue-opengorilla-project-analysis-ljguo.md)
 

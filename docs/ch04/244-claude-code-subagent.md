@@ -106,7 +106,7 @@ Claude Code 自动扫描这些文件，根据 `description` 决定何时调用�
 
 - [Harness Engineering Core Patterns Claude Code](../ch05/057-harness-engineering.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/004-agent.html)
-- [Claude Code Harness Deep Understanding](../ch01/336-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Understanding](../ch01/337-claude-code-harness-deep-understanding.html)
 - [Claude Code Harness Deep Dive Founder Park](../ch05/058-claude-code-harness.html)
 - [Hermes Agent V014 Architecture Shugex](161-hermes-agent.html)
 - [Ai Agent Engineer Learning Roadmap Backend 2026](423-ai-agent.html)

@@ -37,7 +37,7 @@ Mini Shai-Hulud 攻击标志着 AI 开源生态系统的供应链攻击进入新
 ## 相关实体
 - [Postmortem Tanstack Npm Supply Chain Compromise Tanstack Blog](../ch12/033-postmortem-tanstack-npm-supply-chain-compromise-tanstack.html)
 - [Npm Supply Chain Compromise Postmortem](../ch04/135-ai.html)
-- [Teampcp Claims Sale Of Mistral Ai Repositories Amid Mini Shai Hulud Attack 1](../ch12/060-teampcp-claims-sale-of-mistral-ai-repositories-amid-mini-sha.html)
+- [Teampcp Claims Sale Of Mistral Ai Repositories Amid Mini Shai Hulud Attack 1](../ch12/061-teampcp-claims-sale-of-mistral-ai-repositories-amid-mini-sha.html)
 - [Cybersecurityreach Revoke Token Wipe Computer](../ch12/002-token.html)
 - [Thehackernews Fake Openai Privacy Filter](316-openai.html)
 

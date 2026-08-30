@@ -59,7 +59,7 @@
 
 ## 关联
 
-- [Loop Engineering](349-loop-engineering.html) — Agent 的循环决策架构
+- [Loop Engineering](350-loop-engineering.html) — Agent 的循环决策架构
 - [Claude Code 工具系统](../ch03/057-claude-code.html) — 生产级 Agent 工具系统设计
 - [AI Agent 工具数量陷阱](423-ai-agent.html) — Agent 工具工程
 - [阿里 Harness 工程实战：Agent 自主迭代 17 小时](../ch05/008-harness.html) — 父子 Agent 模式体现了控制权连续谱的层级 delegation

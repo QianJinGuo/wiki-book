@@ -63,7 +63,7 @@ Claude for Small Business 的发布及其配套的非营利合作，揭示了 AI
 ## 相关实体
 - [Introducing Claude for Small Business](023-introducing-claude-for-small-business.html)
 - [Anthropic puts Claude agents on a meter across its subscriptions](787-anthropic-claude.html)
-- [Xero Announces Integration with Anthropic's Claude](339-claude.html)
+- [Xero Announces Integration with Anthropic's Claude](340-claude.html)
 - [Anthropic 首次揭秘下一代 Claude 怎么造](787-anthropic-claude.html)
 - [Anthropic Claude Managed Agents 平台正式发布](158-anthropic-claude-managed-agents.html)
 - [Claude Managed Agents 官方 Harness 平台指南](158-anthropic-claude-managed-agents.html)

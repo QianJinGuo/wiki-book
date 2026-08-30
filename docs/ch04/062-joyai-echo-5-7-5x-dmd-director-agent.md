@@ -147,7 +147,7 @@ JoyAI-Echo 带来的，不仅是一款新长视频模型，更是一次**AI 视�
 - [别让格式杀死思想Logics Parsing V2定义文档解析新边界](https://github.com/QianJinGuo/wiki/blob/main/entities/别让格式杀死思想logics-parsing-v2定义文档解析新边界.md)
 
 - [Wall Oss 05 Pretraining Embodied Ai X Square Robot](135-ai.html)
-- [Www Latent Space P Github](../ch01/471-github.html)
+- [Www Latent Space P Github](../ch01/473-github.html)
 - [Cline Agent Runtime Sdk](../ch03/004-agent.html)
 - [Minimax M3 Frontier Three Set Open Source](../ch09/052-minimax-m3-frontier.html)
 - [Tencent Hunyuan Hy3 Preview Open Source](../ch01/110-hy3-preview.html)
@@ -158,7 +158,7 @@ JoyAI-Echo 带来的，不仅是一款新长视频模型，更是一次**AI 视�
 —
 - 视频 Agent 范式 — [Video Agent Paradigm Compute Talent Flywheel Ethan He 20260606](../ch03/004-agent.html)
 - 记忆架构在多模态的延伸 — [Chatgpt Dreaming V3 Long Term Memory Architecture](../ch01/699-chatgpt-dreaming-v3.html)（同 2026-06 发布，Dreaming 强调"会话级记忆"，JoyAI-Echo 强调"角色级记忆"——都是"长期记忆"概念在不同模态的工程化）
-- 多模态记忆库设计 — [Agent Memory Architecture](321-perplexity-brain-self-improving-agent-memory-architecture.html)
+- 多模态记忆库设计 — [Agent Memory Architecture](322-perplexity-brain-self-improving-agent-memory-architecture.html)
 —
 
 ## 深度分析

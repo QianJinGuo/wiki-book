@@ -186,7 +186,7 @@ Content-Security-Policy:
 - [Automate Progressive Rollouts With Vercel Flags Vercel](../ch09/108-automate-progressive-rollouts-with-vercel-flags-vercel.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/afine-csp-html-injection-password-exfiltration.md)
-- [discord 全平台端到端加密](../ch12/085-discord.html)
+- [discord 全平台端到端加密](../ch12/086-discord.html)
 - [incendium fuzzing ms rpc](https://github.com/QianJinGuo/wiki/blob/main/entities/incendium-fuzzing-ms-rpc.md)
 - [the interface is no longer the product](../ch04/135-ai.html)
 - [a route to root in a 4g industrial router](https://github.com/QianJinGuo/wiki/blob/main/entities/tantosec-com-blog-2026-04-route-to-root-in-4g-industrial-router.md)

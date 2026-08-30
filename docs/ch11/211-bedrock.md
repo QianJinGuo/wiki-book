@@ -59,7 +59,7 @@
 ## 相关实体
 - [Aws Bedrock Serverless Async Inference Multimodal](211-bedrock.html)
 - [Verizon Connect Agentic Ai 100K Users](../ch04/084-verizon-connect-agentic-ai-10.html)
-- [Deepseek Vision Primitives](../ch01/416-deepseek.html)
+- [Deepseek Vision Primitives](../ch01/417-deepseek.html)
 - [Agentcore Harness](../ch05/008-harness.html)
 - [Aws Bedrock Ops Alert](211-bedrock.html)
 

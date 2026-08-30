@@ -93,7 +93,7 @@ Boris 预测将涌现 10 倍数量创业公司。小团队能做出大公司量�
 - [Claude Code](https://claude.ai/code)
 
 ## 相关实体
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](448-llm.html)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](168-rag.html)
 - [你不知道的 Agent：原理、架构与工程实践](../ch03/004-agent.html)
 - [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](../ch05/008-harness.html)
 - [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/289-agentrun.html)

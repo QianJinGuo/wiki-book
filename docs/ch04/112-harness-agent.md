@@ -112,7 +112,7 @@ AgentLeak benchmark 显示多智能体系统暴露面（68.9%）显著高于单�
 
 ## 相关实体
 - [Claude Code 可控性：软规则无法变成硬约束](../ch03/057-claude-code.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/339-claude.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/340-claude.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/004-agent.html)
 - [AutoResearch：多 Agent 自动化软件开发](../ch03/004-agent.html)
 - [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)

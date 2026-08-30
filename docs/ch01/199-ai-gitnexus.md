@@ -122,7 +122,7 @@ GitNexus 的本地化架构（代码不离开机器）是其企业推广的关�
 →
 ## 相关实体
 - [Tmall Ai Coding Practice Team Knowledge Base](../ch05/076-ai-coding.html)
-- [Introducing Claude Platform On Aws Anthropics Native Platfor](339-claude.html)
+- [Introducing Claude Platform On Aws Anthropics Native Platfor](340-claude.html)
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/057-claude-code.html)
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/057-claude-code.html)
 - [Anthropic Nla Natural Language Autoencoders Interpretability](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-nla-natural-language-autoencoders-interpretability.md)

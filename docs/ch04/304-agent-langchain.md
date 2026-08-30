@@ -84,7 +84,7 @@ Scaling Dreaming（规模化造梦）描述的是在大规模数据、长时间�
 ## 关联
 
 - [Agent vs Workflow 控制权连续谱](421-agent-vs-workflow.html) — Agent 工程化
-- [Loop Engineering](349-loop-engineering.html) — Agent 循环决策与 Harness 工程的交叉
+- [Loop Engineering](350-loop-engineering.html) — Agent 循环决策与 Harness 工程的交叉
 - [Spec Kit/OpenSpec/Superpowers 融合 Harness](../ch05/046-openspec.html) — Harness 工程实践
 
 ---

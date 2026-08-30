@@ -88,7 +88,7 @@ AutoClaw 目前仍处于早期阶段，建议持续关注：
 - [语音输入喊了这么多年，千问电脑版一出手就把键盘卷没了？](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
 - [特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验](135-ai.html)
 - [我给Hermes配了4个Agent，真正有用的是这些事](../ch03/004-agent.html)
-- [AIAIGC峰会嘉宾阵容](360-aiaigc.html)
+- [AIAIGC峰会嘉宾阵容](361-aiaigc.html)
 - [Hermes Agent vs OpenClaw 对比分析](161-hermes-agent.html)
 - [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](176-openclaw.html)
 - [OpenCLAW 完全指南](176-openclaw.html)

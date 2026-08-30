@@ -16,7 +16,7 @@
 - [Fake Job Interview Apps Drop Jobstealer Malware On Windows And Macos](045-fake-job-interview-apps-drop-jobstealer-malware-on-windows-a.html)
 - [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
 - [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](../ch01/280-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html)
-- [Rigged Game Scarcruft Compromises Gaming Platform Supply Chain Attack](../ch01/531-scarcruft.html)
+- [Rigged Game Scarcruft Compromises Gaming Platform Supply Chain Attack](../ch01/533-scarcruft.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/shub-reaper-macos-stealer-attack-chain.md)
 

@@ -56,7 +56,7 @@ Claude Code 生成的知识资产分散在多个位置：`~/.claude/CLAUDE.md`�
 - **sync-claude-sessions**：会话结束时自动导出为 Markdown
 - **/recall 技能**：新会话开始前把相关上下文拉回来
 
-这套方案对应的不是「更好用的笔记」，而是「让每一次 Agent 对话都不是一次性消耗」。它和 [Agent 长期记忆架构](../ch04/321-perplexity-brain-self-improving-agent-memory-architecture.html)、Warp Oz 的 [cross-harness Agent Memory](../ch04/241-agent-orchestration.html) 处于同一个赛道——都是在解决「Agent 失忆」这个根本问题，只是 QMD 选择了「本地优先 + Markdown 原生」的路径。
+这套方案对应的不是「更好用的笔记」，而是「让每一次 Agent 对话都不是一次性消耗」。它和 [Agent 长期记忆架构](../ch04/322-perplexity-brain-self-improving-agent-memory-architecture.html)、Warp Oz 的 [cross-harness Agent Memory](../ch04/241-agent-orchestration.html) 处于同一个赛道——都是在解决「Agent 失忆」这个根本问题，只是 QMD 选择了「本地优先 + Markdown 原生」的路径。
 
 ### 文件混乱治理：四层防线
 
@@ -103,12 +103,12 @@ Claude Code 生成的知识资产分散在多个位置：`~/.claude/CLAUDE.md`�
 - [Obsidian Claude Code Integration Guide](002-obsidian-claude-code.html) — 早期版本的集成指南
 - [Obsidian Claude Code Integration](002-obsidian-claude-code.html) — 集成实践综述
 - [Obsidian](071-karpathy-llm-wiki-obsidian-agents-md.html) — Obsidian 实体页
-- [Obsidian Llm Wiki Local Kytmanov](../ch01/448-llm.html) — 本地 LLM Wiki 实践
+- [Obsidian Llm Wiki Local Kytmanov](../ch01/450-llm.html) — 本地 LLM Wiki 实践
 - [Claude Code 7 Layer Memory Architecture](057-claude-code.html) — Claude Code 的 7 层记忆架构
-- [Agent Memory Architecture](../ch04/321-perplexity-brain-self-improving-agent-memory-architecture.html) — Agent 记忆架构综述
+- [Agent Memory Architecture](../ch04/322-perplexity-brain-self-improving-agent-memory-architecture.html) — Agent 记忆架构综述
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness 工程框架
 - [Agent Memory Lifecycle Philosophies](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md) — Agent 记忆生命周期哲学
-- [我用claude搭了个自动新闻简报，30天后比我刷了一年的信息还有用](../ch01/339-claude.html)
+- [我用claude搭了个自动新闻简报，30天后比我刷了一年的信息还有用](../ch01/340-claude.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
 
 ---
