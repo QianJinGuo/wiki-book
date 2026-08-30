@@ -161,10 +161,10 @@ Skill 退役时切忌直接删除——工具栈过时不代表经验过时。�
 → [Hermes Agent 自进化机制](../ch04/161-hermes-agent.html)（Skills 系统概述 + 三层架构）
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-skill-system-winty.md)
 → [winty·Self-Improving 概览](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-self-improving-overview-winty.md)（同系列）
-→ [Agent Memory 架构对比](../ch04/321-perplexity-brain-self-improving-agent-memory-architecture.html)
+→ [Agent Memory 架构对比](../ch04/322-perplexity-brain-self-improving-agent-memory-architecture.html)
 
 ## 相关实体
-- [AI Skill 测评指标体系](350-ai-skill.html)
+- [AI Skill 测评指标体系](351-ai-skill.html)
 - [Agentic AI 系统架构与分层模型](../ch05/067-harness-skill.html)
 - [Hermes Agent 记忆系统 vs OpenClaw 记忆观](../ch04/161-hermes-agent.html)
 - [深度拆解 Hermes Agent 记忆系统](../ch04/161-hermes-agent.html)

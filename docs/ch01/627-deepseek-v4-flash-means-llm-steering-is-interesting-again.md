@@ -9,8 +9,8 @@
 - Well-structured technical article explaining steering vectors with good clarity and logical flow. Demonstrates solid understanding of both naive and sophisticated steering approaches, referencing rele
 ## 相关实体
 - [Llm Steering Behavior Guidance](657-steering.html)
-- [Wetesteddeepseekv4Proandflashagainstclau](416-deepseek.html)
-- [Wetesteddeepseekv4Proandflashagainstclau](416-deepseek.html)
+- [Wetesteddeepseekv4Proandflashagainstclau](417-deepseek.html)
+- [Wetesteddeepseekv4Proandflashagainstclau](417-deepseek.html)
 - [Deepseek V4 Flash Pro 通往百万级上下文与万亿参数推理的新纪元 V2](661-deepseek-v4-flash-pro.html)
 - [Deepseek V4 Pro Vs Claude](708-deepseek-v4.html)
 

@@ -15,7 +15,7 @@
 - [Anthropic Claude Managed Agents 平台正式发布](../ch01/158-anthropic-claude-managed-agents.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/004-agent.html)
 - [Anthropic Computer Use 最佳实践](../ch01/601-anthropic-computer-use.html)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/339-claude.html)
+- [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/340-claude.html)
 
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/057-claude-code.html)
 - [Claude Code Agent 工程设计](../ch03/048-claude-code-agent.html)

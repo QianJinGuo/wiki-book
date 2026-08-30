@@ -102,11 +102,11 @@ CoT（Chain of Thought）之所以"低效"，是因为它要求 LLM 用"逐步�
 - [stealing passwords via html injection under a strict csp](https://github.com/QianJinGuo/wiki/blob/main/entities/afine-csp-html-injection-password-exfiltration.md)
 - [better decisions at scale: how mathematical optimization del](../ch11/130-better-decisions-at-scale-how-mathematical-optimization-del.html)
 - [farewell ai2](../ch04/135-ai.html)
-- [introducing 1-bit and ternary bonsai image 4b: image generat](489-introducing-1-bit-and-ternary-bonsai-image-4b-image-generat.html)
+- [introducing 1-bit and ternary bonsai image 4b: image generat](491-introducing-1-bit-and-ternary-bonsai-image-4b-image-generat.html)
 - [面壁让ai写了训练框架forgetrain，然后它自己训出了最强1b模型](../ch04/135-ai.html)
 - [introducing 1-bit and ternary bonsai image 4b: image generat](../ch04/135-ai.html)
-- [private fintech has quietly become bigger than public fintec](384-private-fintech-has-quietly-become-bigger-than-public-fintec.html)
-- [Private Fintech Has Quietly Become Bigger Than Public Fintec](384-private-fintech-has-quietly-become-bigger-than-public-fintec.html)
+- [private fintech has quietly become bigger than public fintec](385-private-fintech-has-quietly-become-bigger-than-public-fintec.html)
+- [Private Fintech Has Quietly Become Bigger Than Public Fintec](385-private-fintech-has-quietly-become-bigger-than-public-fintec.html)
 - [the inevitable need for an open model consortium](710-the-inevitable-need-for-an-open-model-consortium.html)
 
 ---

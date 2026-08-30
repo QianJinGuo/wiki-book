@@ -15,7 +15,7 @@ Anthropic + Cerebral Valley 联合黑客松：用 Opus 4.7 + Claude Code，一�
 
 ## 相关实体
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](229-anthropic-claude-code.html)
-- [Claude Code Harness Deep Understanding](336-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Understanding](337-claude-code-harness-deep-understanding.html)
 - [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](../ch03/057-claude-code.html)
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch03/057-claude-code.html)
 - [Claude Code Agent Teams Task Decomposition Ruofei](260-claude-code-agent-teams.html)

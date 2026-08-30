@@ -277,7 +277,7 @@ AI Team 的设计哲学：**文件系统即状态机**。所有状态、产物�
 - [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](301-agent-skills.html)
 - [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](https://github.com/QianJinGuo/wiki/blob/main/entities/国产顶尖模型-benchmark-评分那么高可实际效果为什么差看完-anthropic-这篇博客刷分的因素太单一了.md)
 - [你写的 Skill，及格了吗？](../ch07/054-skill.html)
-- [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](../ch01/339-claude.html)
+- [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](../ch01/340-claude.html)
 - [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](../ch01/294-claude-managed-agents.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/057-claude-code.html)
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html)

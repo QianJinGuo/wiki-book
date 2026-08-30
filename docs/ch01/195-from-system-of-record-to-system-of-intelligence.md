@@ -99,8 +99,8 @@ GTM 软件的 TAM 正在从"软件支出"扩展到"软件+AI 驱动的工作流�
 - from-system-of-record-to-system-of-intelligence.md-intelligence
 - [Salesforce Headless Software Losing Head A16Z](https://github.com/QianJinGuo/wiki/blob/main/entities/salesforce-headless-software-losing-head-a16z.md)
 - [Enterprise Software Moats Agent Era](../ch03/004-agent.html)
-- [Is Software Losing Its Head](460-is-software-losing-its-head.html)
-- [Is Software Losing Its Head A16Z](460-is-software-losing-its-head.html)
+- [Is Software Losing Its Head](462-is-software-losing-its-head.html)
+- [Is Software Losing Its Head A16Z](462-is-software-losing-its-head.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/from-system-of-record-to-system-of-intelligence-1.md)
 

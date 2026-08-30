@@ -95,7 +95,7 @@ Hermes选择"写入memory时不更新当前会话的system prompt，而是等到
 - [KAIROS — Claude Code 常驻协作范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/kairos-claude-code-paradigm.md)
 - [上下文工程：三种 Agent Memory 方案对比实验](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms.md)
 
-- [SkillClaw](334-skillclaw-nacos-agent-skill-registry.html)
+- [SkillClaw](335-skillclaw-nacos-agent-skill-registry.html)
 - [Agent 自我改进的六条路](../ch03/004-agent.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](../ch07/016-hermes-skill.html)
 - [GBrain](../ch01/194-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)

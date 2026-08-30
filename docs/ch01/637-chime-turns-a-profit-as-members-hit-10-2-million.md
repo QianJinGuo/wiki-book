@@ -26,7 +26,7 @@ Chime Prime 的推出（要求 $3,000+ 月薪 direct deposit）标志着从「�
 - **监管风险随规模扩大而上升**：Chime 类业务在触及 10M+ 会员后，合规成本和数据安全投入将成为不可忽视的利润压力
 
 ## 相关实体
-- [Inngest - AI in Production: The 2026 Benchmark Report](414-inngest-ai-in-production-the-2026-benchmark-report.html)
+- [Inngest - AI in Production: The 2026 Benchmark Report](415-inngest-ai-in-production-the-2026-benchmark-report.html)
 - 吴恩达2026新课上线！3小时包教包会，零代码小白也能成为AI超级玩家
 
 - [stripe sessions 2026 ai](../ch04/135-ai.html)

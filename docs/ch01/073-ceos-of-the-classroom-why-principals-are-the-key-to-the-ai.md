@@ -30,7 +30,7 @@ Salesforce 高管以 Oakland 学区二十余年教育者视角指出，K-12 教�
 
 ### 校长作为「学校的 CEO」：灵活资金与信任机制
 
-Principal Innovation Fund 的核心设计不是金额，而是权力结构：把决策权下放给最了解学校需求的人。相比「资助方定义指标、学校证明 impact」的传统模式，非限定资金让校长以教育者专业判断主导投入方向。这与 [管理作为 AI 时代的超能力](360-management-as-ai-superpower.html) 的判断一致——AI 转型中组织成败的关键往往不是技术本身，而是拥有判断力的管理者；校长正是学校这一「组织」的 AI 转型管理者。
+Principal Innovation Fund 的核心设计不是金额，而是权力结构：把决策权下放给最了解学校需求的人。相比「资助方定义指标、学校证明 impact」的传统模式，非限定资金让校长以教育者专业判断主导投入方向。这与 [管理作为 AI 时代的超能力](361-management-as-ai-superpower.html) 的判断一致——AI 转型中组织成败的关键往往不是技术本身，而是拥有判断力的管理者；校长正是学校这一「组织」的 AI 转型管理者。
 
 ### 从效率工具到 agentic 时代：AI 与教师的角色重构
 
@@ -54,7 +54,7 @@ Summit 上的讨论发生了范式转移：从「把 AI 当作效率工具」转
 - [The best argument I've heard for why AI won't take your job](../ch04/135-ai.html)
 - [Jagged AI Frontier](../ch04/135-ai.html)
 - [Agentic AI 与人类共存范式](../ch04/395-agentic-ai.html)
-- [管理作为 AI 时代的超能力](360-management-as-ai-superpower.html)
+- [管理作为 AI 时代的超能力](361-management-as-ai-superpower.html)
 - [Canvas 泄露事件：教育平台安全的警钟](https://github.com/QianJinGuo/wiki/blob/main/entities/canvas-breach-disrupts-schools-colleges-nationwide.md)
 - [Salesforce 无头软件化](https://github.com/QianJinGuo/wiki/blob/main/entities/salesforce-headless-software-losing-head-a16z.md)
 

@@ -53,12 +53,12 @@ The 62.5-minute rule presumes you will actually make another request against tha
 
 ## 相关实体
 
-- [同源姊妹篇：62.5 分钟规则](339-claude.html)
+- [同源姊妹篇：62.5 分钟规则](340-claude.html)
 - [Claude Code 提示缓存实战](161-anthropic-prompt-caching-claude-code.html)
 - [Amazon Bedrock 提示缓存策略](../ch11/135-amazon-bedrock.html)
 - [编码代理的提示缓存](../ch09/038-coding-agent.html)
 - [Harness 提示缓存](../ch05/008-harness.html)
-- [Claude Opus 4.7](339-claude.html)
+- [Claude Opus 4.7](340-claude.html)
 - [Harness token 成本对比](../ch03/057-claude-code.html)
 - [上下文压缩](../ch03/004-agent.html)
 

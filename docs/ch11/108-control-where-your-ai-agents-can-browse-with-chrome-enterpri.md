@@ -62,7 +62,7 @@ AgentCore 的方案是将组织根 CA 存储在 AWS Secrets Manager，引用时�
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04/038-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](217-amazon-nova.html)
-- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/517-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
+- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/519-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](211-bedrock.html)
 - [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/383-amazon-bedrock-agentcore.html)
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/309-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
@@ -81,7 +81,7 @@ AgentCore 的方案是将组织根 CA 存储在 AWS Secrets Manager，引用时�
 - [Amazon Bedrock模型推理的Serverless异步架构](135-amazon-bedrock.html)
 - [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](../ch04/383-amazon-bedrock-agentcore.html)
 - [基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](../ch04/383-amazon-bedrock-agentcore.html)
-- [anthropic acquires stainless](../ch04/330-anthropic-acquires-stainless.html)
+- [anthropic acquires stainless](../ch04/331-anthropic-acquires-stainless.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
 
 ---

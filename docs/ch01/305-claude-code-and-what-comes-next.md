@@ -99,7 +99,7 @@ Karpathy："我从未感觉自己作为程序员这么落后。程序员贡献�
 
 - 与 [苦味教训](../ch04/262-the-bitter-lesson-versus-the-garbage-can.html) 的对照：Claude Code 是"工艺派"——精心设计的 harness + 强大模型。ChatGPT agent 才是"结果训练派"。两者代表了 harness 工程的两种路线。
 - 与 [CrewAI 迭代论](../ch04/299-your-first-ai-agent-should-do-one-thing-badly.html)的对照：Claude Code 体现了"小时级自治"，CrewAI 强调"周迭代"——节奏不同，原则相通（都是迭代式而非瀑布式）。
-- 与 [管理即超能力](360-management-as-ai-superpower.html) 的同源：Karpathy 编程工作"变成管理 AI agent"是 Mollick 商业观察在技术领域的镜像。
+- 与 [管理即超能力](361-management-as-ai-superpower.html) 的同源：Karpathy 编程工作"变成管理 AI agent"是 Mollick 商业观察在技术领域的镜像。
 
 ## 实践启示
 
@@ -116,18 +116,18 @@ Karpathy："我从未感觉自己作为程序员这么落后。程序员贡献�
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/098-karpathy-vibe-coding-agentic-engineering.html)
 - [Your First Ai Agent Should Do One Thing Badly](../ch04/299-your-first-ai-agent-should-do-one-thing-badly.html)
 - [The Bitter Lesson Versus The Garbage Can](../ch04/262-the-bitter-lesson-versus-the-garbage-can.html)
-- [Management As Ai Superpower](360-management-as-ai-superpower.html)
+- [Management As Ai Superpower](361-management-as-ai-superpower.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/004-agent.html)
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/035-agent-harness.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
-- [Co Existence And The End Of Co Intelligence](451-co-existence-and-the-end-of-co-intelligence.html)
+- [Co Existence And The End Of Co Intelligence](453-co-existence-and-the-end-of-co-intelligence.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - Model Context Protocol
 - [Agentic Engineering Paradigm](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-engineering-paradigm.md)
 - [Context Management](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-management-agent-systems.md)
 - [an opinionated guide to using ai right now](../ch09/065-an-opinionated-guide-to-using-ai-right-now.html)
-- [我用claude搭了个自动新闻简报，30天后比我刷了一年的信息还有用](339-claude.html)
+- [我用claude搭了个自动新闻简报，30天后比我刷了一年的信息还有用](340-claude.html)
 - [boris cherny 新访谈：开发工具正在从 ide 变成 agent 控制台](https://github.com/QianJinGuo/wiki/blob/main/entities/iqsixinp9lxnkg7avfhfcq.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 

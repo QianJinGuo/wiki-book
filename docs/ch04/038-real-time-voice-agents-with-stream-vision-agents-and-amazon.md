@@ -143,7 +143,7 @@ Vision Agents + Nova 2 Sonic 非常适合用户无法可靠使用屏幕的场景
 - [Amazon Bedrock AgentCore Memory](383-amazon-bedrock-agentcore.html) — Bedrock Agent 记忆哲学
 - [Strands Agents SDK](../ch11/135-amazon-bedrock.html) — 确定性数据分析实践
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](../ch11/108-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
-- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/517-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
+- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/519-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](../ch11/211-bedrock.html)
 - [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](383-amazon-bedrock-agentcore.html)
 - [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](../ch11/045-bedrock-agentcore.html)

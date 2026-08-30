@@ -12,9 +12,9 @@
 - Nathan 的焦虑：硅谷能否在开源模型领域保持领导地位？
 ## 相关实体
 - [Deepseek Code Harness](../ch09/003-deepseek-code-harness.html)
-- [Nathan Lambert Claude Mythos Open Weights](325-nathan-lambert.html)
+- [Nathan Lambert Claude Mythos Open Weights](326-nathan-lambert.html)
 - [Deepseek V4 Pro Vs Claude](708-deepseek-v4.html)
-- [Deepseek Moe Parallel Strategy](416-deepseek.html)
+- [Deepseek Moe Parallel Strategy](417-deepseek.html)
 - [Deepseek V4 Training Methodology](708-deepseek-v4.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/chinese-ai-lab-insights-nathan.md)

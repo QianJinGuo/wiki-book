@@ -112,7 +112,7 @@ Harness 的渐进披露信息系统：
 - [Harness Engineering - 让 Coding Agent 可靠完成长程任务](057-harness-engineering.html)
 - [Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式](057-harness-engineering.html)
 - [Harness Engineering 四根支柱与四要素架构](057-harness-engineering.html)
-- [Harness Engineering 指南（字节跳动TRAE）](../ch01/462-trae-harness-engineering.html)
+- [Harness Engineering 指南（字节跳动TRAE）](../ch01/464-trae-harness-engineering.html)
 
 ---
 

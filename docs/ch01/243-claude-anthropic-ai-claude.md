@@ -126,7 +126,7 @@ NLAs 揭示的"模型内部评估意识"现象值得重视：当模型意识到�
 *入库时间：2026-05-08*
 ## 相关实体
 - [Anthropic Msm Anti Defection Paper](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-msm-anti-defection-paper.md)
-- [腾讯研究院ai速递 20260506](485-ai-20260506.html)
+- [腾讯研究院ai速递 20260506](487-ai-20260506.html)
 
 ---
 

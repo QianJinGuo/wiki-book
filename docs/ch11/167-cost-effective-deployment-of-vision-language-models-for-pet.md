@@ -52,12 +52,12 @@ Furbo 的系统架构采用双层设计：
 
 ## 相关实体
 - [Amazon Nova Lite Fine-Tuning: 高性价比的视觉检测模型微调案例与实践 | 亚马逊AWS官方博客](217-amazon-nova.html)
-- [Reinforcing Recursive Language Models | alphaXiv](../ch01/570-reinforcing-recursive-language-models-alphaxiv.html)
-- [Language Models and Meaning](../ch01/342-language-models-and-meaning.html)
+- [Reinforcing Recursive Language Models | alphaXiv](../ch01/572-reinforcing-recursive-language-models-alphaxiv.html)
+- [Language Models and Meaning](../ch01/343-language-models-and-meaning.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-sun-finance-ai-id-extraction-fraud-detection.md)
 
-- [Language Models and Meaning](../ch01/342-language-models-and-meaning.html)
+- [Language Models and Meaning](../ch01/343-language-models-and-meaning.html)
 - [llava-onevision-2：全帧率视频理解](https://github.com/QianJinGuo/wiki/blob/main/entities/llava-onevision-2-full-frame-rate-vlm.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
 

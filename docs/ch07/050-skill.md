@@ -66,7 +66,7 @@
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
 - [9个Agent技能模块化SageMaker微调生命周期](../ch04/423-ai-agent.html)
 - [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](054-skill.html)
-- [SkillClaw](../ch04/334-skillclaw-nacos-agent-skill-registry.html)
+- [SkillClaw](../ch04/335-skillclaw-nacos-agent-skill-registry.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](016-hermes-skill.html)
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](054-skill.html)
 - [SkillX — 层次化技能知识库](054-skill.html)

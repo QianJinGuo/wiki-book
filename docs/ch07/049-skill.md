@@ -93,7 +93,7 @@ Binary Eval + Reflection Agent 的组合，实质上是将 Agent 的自我改进
 - [SkillX — 层次化技能知识库](054-skill.html)
 - [Anthropic 14 个 Agent Skills 设计模式](../ch04/077-anthropic-agent.html)
 - [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](054-skill.html)
-- [SkillClaw](../ch04/334-skillclaw-nacos-agent-skill-registry.html)
+- [SkillClaw](../ch04/335-skillclaw-nacos-agent-skill-registry.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](016-hermes-skill.html)
 - [四种 Sub Agent 模式](../ch03/004-agent.html)
 - [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/301-agent-skills.html)

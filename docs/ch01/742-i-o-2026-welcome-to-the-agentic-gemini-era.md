@@ -186,7 +186,7 @@ SynthID 三年累计标记 1000 亿张图片/视频和约 6 万年音频，新�
 **Gemini Omni 的 any-to-any 模态生成**代表着世界模拟能力的重要进步。当模型可以从任意输入模态生成任意输出模态时，其对物理世界建模的保真度将远超单模态模型。Gemini for Science 将 agentic 平台连接至 30+ 生命科学数据库的实验设计，则展示了 AI Agent 在科研场景落地的具体路径——数据库集成比通用搜索更能发挥深度推理的优势。
 
 ## 相关实体
-- [Gemini 3 5 Frontier Intelligence](371-gemini-3-5-frontier-intelligence-with-action.html)
+- [Gemini 3 5 Frontier Intelligence](372-gemini-3-5-frontier-intelligence-with-action.html)
 - [Building The Agentic Future Developer Highlights From Io 2026](../ch04/011-building-the-agentic.html)
 - [Gemini Embedding 2 Multimodal Unified Vector Hyman](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-embedding-2-multimodal-unified-vector-hyman.md)
 - [Google Debuts Gemini Focused Updates At Io 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/google-debuts-gemini-focused-updates-at-io-2026.md)

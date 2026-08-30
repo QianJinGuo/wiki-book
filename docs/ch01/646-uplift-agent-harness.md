@@ -8,9 +8,9 @@
 
 ## 相关实体
 
-- [xz, two years on: what scanners still cannot catch](458-xz.html)
+- [xz, two years on: what scanners still cannot catch](460-xz.html)
 - [一个 mission 跑 16 天、烧 7.78 亿 token：factory 公开了多 agent 系统的构建哲学](../ch03/004-agent.html)
-- [gemma 4 and what makes an open model succeed](454-gemma-4-and-what-makes-an-open-model-succeed.html)
+- [gemma 4 and what makes an open model succeed](456-gemma-4-and-what-makes-an-open-model-succeed.html)
 - [model-harness-fit-agent-harness](191-model-harness-fit-agent.html)
 - [what i’ve been building: atom report, post-training course,](../ch04/135-ai.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gaode-uplift-model-iteration-agent-long-running-harness.md)

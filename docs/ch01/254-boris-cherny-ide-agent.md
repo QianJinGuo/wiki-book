@@ -174,7 +174,7 @@ Boris 谈到的"Loop"概念值得专门关注："它让 Agent 从一次回答，
 
 - [两万字详解 Claude Code 源码核心机制](../ch03/057-claude-code.html)
 - [Claude Code Harness 深度解析](../ch05/058-claude-code-harness.html)
-- [Claude Code Harness 深度理解](336-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness 深度理解](337-claude-code-harness-deep-understanding.html)
 - [深入理解 Claude Code Agent Harness 构建之道](../ch05/035-agent-harness.html)
 - [GSD 上下文管理工具](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
 - [Agent 记忆系统工程实践](../ch03/004-agent.html)

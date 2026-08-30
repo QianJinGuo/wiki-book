@@ -104,7 +104,7 @@ Anthropic 的 Agent 产品矩阵按"用户自管理程度"排列，覆盖从完�
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/057-harness-engineering.html)
 - [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch04/176-openclaw.html)
 - [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](../ch05/057-harness-engineering.html)
-- [llm 自我提升系统综述 — yang 等 113 页四阶段闭环框架（zesearch nlp lab）](448-llm.html)
+- [llm 自我提升系统综述 — yang 等 113 页四阶段闭环框架（zesearch nlp lab）](450-llm.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
 ## 第 2 来源：claude.com 官方 blog 视角（2026-06-10，演进叙事）

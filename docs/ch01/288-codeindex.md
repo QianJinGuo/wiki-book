@@ -58,7 +58,7 @@ Codeindex的Parser适配层和GraphDB适配层设计体现了分层架构的工�
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/codeindex-让大模型更好地理解你的代码.md)
 
 ## 相关实体
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](448-llm.html)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](168-rag.html)
 - [你不知道的 Agent：原理、架构与工程实践](../ch03/004-agent.html)
 - [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](../ch05/008-harness.html)
 - [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/289-agentrun.html)

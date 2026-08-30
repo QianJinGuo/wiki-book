@@ -145,7 +145,7 @@ Memory 出错时，工程师要能查、能追溯、能回滚。这意味着：
 记住：Memory 系统早期，先做到"像工程系统一样能查账"，再追求"像人一样记忆"。
 
 ## 相关实体
-- [Agent Memory 架构本质](321-perplexity-brain-self-improving-agent-memory-architecture.html)
+- [Agent Memory 架构本质](322-perplexity-brain-self-improving-agent-memory-architecture.html)
 - [memory agent systems cobanov](../ch03/004-agent.html)
 
 - [AI Agent 记忆系统架构](131-how-ai-agent-memory-works.html)

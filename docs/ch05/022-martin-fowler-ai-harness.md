@@ -104,7 +104,7 @@ Google 工程师把日常工作自动化掉一大半后剩下的是判断、拆�
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](057-harness-engineering.html)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](008-harness.html)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/336-claude-code-harness-deep-understanding.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/337-claude-code-harness-deep-understanding.html)
 - [Agent Harness 架构](035-agent-harness.html)
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html)
 - [Agent 自我改进的六条路](../ch03/004-agent.html)

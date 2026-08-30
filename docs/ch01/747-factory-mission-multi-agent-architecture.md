@@ -88,7 +88,7 @@ worker 做完 feature 必须填写：完成了什么 / 未完成项 / 执行命�
 > **验证独立于实现、交接强制结构化** — 适用于任何想让 agent 持续运行多日的产品，不只限于 coding。
 
 ## 相关框架对比
-- **[DeerFlow vs Hermes vs OpenClaw](../ch04/347-deerflow-hermes-openclaw.html)** — 都是 multi-agent 编排框架，与 Mission 的三角架构有相通之处
+- **[DeerFlow vs Hermes vs OpenClaw](../ch04/348-deerflow-hermes-openclaw.html)** — 都是 multi-agent 编排框架，与 Mission 的三角架构有相通之处
 
 ## 深度分析
 ### 1. 核心矛盾：人类注意力 vs 模型并行能力

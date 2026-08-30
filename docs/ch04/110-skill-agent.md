@@ -147,7 +147,7 @@ Trigger 关键字粗筛 + 语义打分 tie-breaker 的两层检索机制，本�
 - [上下文工程 - 三种Memory方案对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md)
 
 - [你写的 Skill，及格了吗？](../ch07/054-skill.html)
-- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/473-llm-wiki-obsidian-wiki-gbrain.html)
+- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/475-llm-wiki-obsidian-wiki-gbrain.html)
 - [Hermes Agent](161-hermes-agent.html)
 - [Qoder Skills 完全指南](../ch07/031-qoder-skills.html)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
