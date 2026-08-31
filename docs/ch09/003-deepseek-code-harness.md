@@ -2,7 +2,7 @@
 
 ## Ch09.003 DeepSeek Code Harness
 
-> 📊 Level ⭐⭐ | 46.1KB | `entities/deepseek-code-harness.md`
+> 📊 Level ⭐⭐ | 48.1KB | `entities/deepseek-code-harness.md`
 
 ## Overview
 DeepSeek 正在组建团队，从零开始构建对标 Claude Code 的代码智能体产品。核心公式：**Model + Harness = Agent**。除模型本身以外的所有工作，都属于 Harness 的范畴。官网职位描述明确："他们正在把 DeepSeek 的前沿模型能力转化为领先的 Agent 产品。"
@@ -263,6 +263,19 @@ DSH 用 node:worker_threads 跑模型写的编排代码：node:vm 同进程沙�
 3. **DSH 自带观测 vs 缺口** — DSH 自带会话轨迹视图/Session 事件流落盘/工具调用检索，但作用域是本机、单会话、实时，过程数据是按时间排列的会话事件序列、无调用关系与时间占用统计；规模化后需跨机器汇聚、调用关系还原、长期留存。
 4. **接入链路** — tencentcloud-agentobs-sdk-dsh 插件（已发正式版、被 DSH 社区插件市场收录，支持 DSH >=0.1.0-rc.6 <0.2.0、Node.js >=22.19.0）以原生插件形态挂载在 DSH 能力插件层，对接运行时事件总线与流式管道；dsh plugin --profile web/headless/harness add。
 5. **规模化关注点** — 规模上来后三件事：耗时花在模型推理还是工具执行、Token 消耗集中在哪些会话/模型、失败中断发生在哪一步能否回溯；配合链路检索、聚合分析、告警仪表盘构成全景方案。
+
+## 第 12 来源 — Agent Plan x DeepSeek Harness 实践指南（火山方舟，2026-08-19）
+
+v×c=56, stars=4. 火山方舟（字节跳动技术团队）发布 Agent Plan 与 DSH 的集成实践指南。^[Agent Plan X Deepseek Harness 实践指南](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-plan-x-deepseek-harness-实践指南.md)
+
+**互补角度 5 条：**
+1. **Agent Plan 作为 Plugin 工具箱** — DSH 提供插槽，Agent Plan 提供"量大管饱"的组件包：模型、搜索、专业数据集、Agent 记忆、Agent 进化、AI Native 开发底座。^[Agent Plan X Deepseek Harness 实践指南](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-plan-x-deepseek-harness-实践指南.md)
+2. **Agent 记忆（OpenViking Context）** — 虚拟文件系统 + 语义检索的上下文数据库，把记忆/资源/技能统一抽象为文件，分层加载、按需召回，会话结束后自动沉淀长期记忆。^[Agent Plan X Deepseek Harness 实践指南](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-plan-x-deepseek-harness-实践指南.md)
+3. **Agent 进化（Evolve 组件）** — 学习近期会话，识别可优化的指令文件（CLAUDE.md、AGENTS.md、Skills），生成带 diff、证据、风险值和置信度的优化建议，确认后才写入。^[Agent Plan X Deepseek Harness 实践指南](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-plan-x-deepseek-harness-实践指南.md)
+4. **AI Native 开发底座** — 基于火山引擎 Supabase 的 Serverless PostgreSQL + 认证 + 对象存储 + 边缘函数 + 实时同步 + 推送即发布前端部署，agent 可用自然语言建表、写策略、部署。^[Agent Plan X Deepseek Harness 实践指南](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-plan-x-deepseek-harness-实践指南.md)
+5. **投资研究助手实战案例** — 完整演示 DSH + Agent Plan 五组件协作：专业数据集查财务指标 → 豆包搜索获取实时新闻 → AI Native 底座建页面 → Agent 记忆跨会话保持偏好 → Agent 进化学习分析方法。^[Agent Plan X Deepseek Harness 实践指南](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-plan-x-deepseek-harness-实践指南.md)
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-plan-x-deepseek-harness-实践指南.md)
 
 ## 相关实体
 
