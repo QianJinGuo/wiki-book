@@ -12060,12 +12060,12 @@ O$2 = {
 title: "国风搭配测试测测",
 shopInfo: {
 shopName: "麦当劳",
-path: "/main/pages/shop/shop?&realappid=wxxxxxxxxxxxxxxxxx&shopId=10000000089216",
-appid: "wxxxxxxxxxxxxxxxxx",
+path: "/main/pages/shop/shop?&realappid=wx2b255582a7b4bfd0&shopId=10000000089216",
+appid: "wx2b255582a7b4bfd0",
 shopTag: "https://res.wx.qq.com/shop/public/2024-09-26/eb336270-6883-4391-8e4c-4c26230baa2e.svg"
 },
 shopName: "麦当劳",
-shopAppid: "wxxxxxxxxxxxxxxxxx",
+shopAppid: "wx2b255582a7b4bfd0",
 shopIcon: "https://store.mp.video.tencent-cloud.com/161/20304/snscosdownload/SZ/reserved/67aac669000122322aba0bcd0e745415000000a100004f50?imageView2/1/w/583/h/583/format/webp|imageMogr2/auto-orient/strip/ignore-error/1",
 headSwiper: [{
 index: 0,
@@ -12078,10 +12078,10 @@ x: "96",
 y: "32",
 productId: "10000151274966",
 productShortName: "休闲裤",
-productAppid: "wxxxxxxxxxxxxxxxxx",
+productAppid: "wx2b255582a7b4bfd0",
 labelPage: {
-appid: "wxxxxxxxxxxxxxxxxx",
-path: "/main/pages/productDetail/productDetail?&realappid=wxxxxxxxxxxxxxxxxx&productId=10000151274966"
+appid: "wx2b255582a7b4bfd0",
+path: "/main/pages/productDetail/productDetail?&realappid=wx2b255582a7b4bfd0&productId=10000151274966"
 },
 labelName: "休闲裤",
 productName: "限购-开发自动化测试专用-勿动！！！",
@@ -12092,10 +12092,10 @@ x: "30",
 y: "54",
 productId: "10000128560001",
 productShortName: "宠物配饰",
-productAppid: "wxxxxxxxxxxxxxxxxx",
+productAppid: "wx2b255582a7b4bfd0",
 labelPage: {
-appid: "wxxxxxxxxxxxxxxxxx",
-path: "/main/pages/productDetail/productDetail?&realappid=wxxxxxxxxxxxxxxxxx&productId=10000128560001"
+appid: "wx2b255582a7b4bfd0",
+path: "/main/pages/productDetail/productDetail?&realappid=wx2b255582a7b4bfd0&productId=10000128560001"
 },
 labelName: "宠物配饰",
 productName: "狗狗的漂亮衣服-多个限时抢购",
@@ -12106,10 +12106,10 @@ x: "18",
 y: "20",
 productId: "10000072904047",
 productShortName: "羽绒服",
-productAppid: "wxxxxxxxxxxxxxxxxx",
+productAppid: "wx2b255582a7b4bfd0",
 labelPage: {
-appid: "wxxxxxxxxxxxxxxxxx",
-path: "/main/pages/productDetail/productDetail?&realappid=wxxxxxxxxxxxxxxxxx&productId=10000072904047"
+appid: "wx2b255582a7b4bfd0",
+path: "/main/pages/productDetail/productDetail?&realappid=wx2b255582a7b4bfd0&productId=10000072904047"
 },
 labelName: "羽绒服",
 productName: "（搭配购）预售测试款女外套冬款黑色M",
@@ -12120,10 +12120,10 @@ x: "48",
 y: "22",
 productId: "10000163612743",
 productShortName: "休闲裤",
-productAppid: "wxxxxxxxxxxxxxxxxx",
+productAppid: "wx2b255582a7b4bfd0",
 labelPage: {
-appid: "wxxxxxxxxxxxxxxxxx",
-path: "/main/pages/productDetail/productDetail?&realappid=wxxxxxxxxxxxxxxxxx&productId=10000163612743"
+appid: "wx2b255582a7b4bfd0",
+path: "/main/pages/productDetail/productDetail?&realappid=wx2b255582a7b4bfd0&productId=10000163612743"
 },
 labelName: "休闲裤",
 productName: "(搭配购)韩版牛仔裤修身版型好大码将军同款",
@@ -12144,10 +12144,10 @@ x: "51",
 y: "40",
 productId: "10000151274966",
 productShortName: "休闲裤",
-productAppid: "wxxxxxxxxxxxxxxxxx",
+productAppid: "wx2b255582a7b4bfd0",
 labelPage: {
-appid: "wxxxxxxxxxxxxxxxxx",
-path: "/main/pages/productDetail/productDetail?&realappid=wxxxxxxxxxxxxxxxxx&productId=10000151274966"
+appid: "wx2b255582a7b4bfd0",
+path: "/main/pages/productDetail/productDetail?&realappid=wx2b255582a7b4bfd0&productId=10000151274966"
 },
 labelName: "休闲裤",
 productName: "限购-开发自动化测试专用-勿动！！！",
@@ -12158,10 +12158,10 @@ x: "56",
 y: "74",
 productId: "10000128560001",
 productShortName: "宠物配饰",
-productAppid: "wxxxxxxxxxxxxxxxxx",
+productAppid: "wx2b255582a7b4bfd0",
 labelPage: {
-appid: "wxxxxxxxxxxxxxxxxx",
-path: "/main/pages/productDetail/productDetail?&realappid=wxxxxxxxxxxxxxxxxx&productId=10000128560001"
+appid: "wx2b255582a7b4bfd0",
+path: "/main/pages/productDetail/productDetail?&realappid=wx2b255582a7b4bfd0&productId=10000128560001"
 },
 labelName: "宠物配饰",
 productName: "狗狗的漂亮衣服-多个限时抢购",
@@ -12172,10 +12172,10 @@ x: "25",
 y: "64",
 productId: "10000072904047",
 productShortName: "羽绒服",
-productAppid: "wxxxxxxxxxxxxxxxxx",
+productAppid: "wx2b255582a7b4bfd0",
 labelPage: {
-appid: "wxxxxxxxxxxxxxxxxx",
-path: "/main/pages/productDetail/productDetail?&realappid=wxxxxxxxxxxxxxxxxx&productId=10000072904047"
+appid: "wx2b255582a7b4bfd0",
+path: "/main/pages/productDetail/productDetail?&realappid=wx2b255582a7b4bfd0&productId=10000072904047"
 },
 labelName: "羽绒服",
 productName: "（搭配购）预售测试款女外套冬款黑色M",
@@ -12186,10 +12186,10 @@ x: "77",
 y: "54",
 productId: "10000163612743",
 productShortName: "休闲裤",
-productAppid: "wxxxxxxxxxxxxxxxxx",
+productAppid: "wx2b255582a7b4bfd0",
 labelPage: {
-appid: "wxxxxxxxxxxxxxxxxx",
-path: "/main/pages/productDetail/productDetail?&realappid=wxxxxxxxxxxxxxxxxx&productId=10000163612743"
+appid: "wx2b255582a7b4bfd0",
+path: "/main/pages/productDetail/productDetail?&realappid=wx2b255582a7b4bfd0&productId=10000163612743"
 },
 labelName: "休闲裤",
 productName: "(搭配购)韩版牛仔裤修身版型好大码将军同款",
@@ -12200,10 +12200,10 @@ x: "64",
 y: "8",
 productId: "10000000089216",
 productShortName: "家居服套装",
-productAppid: "wxxxxxxxxxxxxxxxxx",
+productAppid: "wx2b255582a7b4bfd0",
 labelPage: {
-appid: "wxxxxxxxxxxxxxxxxx",
-path: "/main/pages/productDetail/productDetail?&realappid=wxxxxxxxxxxxxxxxxx&productId=10000000089216"
+appid: "wx2b255582a7b4bfd0",
+path: "/main/pages/productDetail/productDetail?&realappid=wx2b255582a7b4bfd0&productId=10000000089216"
 },
 labelName: "家居服套装",
 productName: "(搭配购)2025款冬季男女保暖睡衣",
@@ -12224,10 +12224,10 @@ x: "29",
 y: "66",
 productId: "10000151274966",
 productShortName: "休闲裤",
-productAppid: "wxxxxxxxxxxxxxxxxx",
+productAppid: "wx2b255582a7b4bfd0",
 labelPage: {
-appid: "wxxxxxxxxxxxxxxxxx",
-path: "/main/pages/productDetail/productDetail?&realappid=wxxxxxxxxxxxxxxxxx&productId=10000151274966"
+appid: "wx2b255582a7b4bfd0",
+path: "/main/pages/productDetail/productDetail?&realappid=wx2b255582a7b4bfd0&productId=10000151274966"
 },
 labelName: "休闲裤",
 productName: "限购-开发自动化测试专用-勿动！！！",
@@ -12238,10 +12238,10 @@ x: "34",
 y: "58",
 productId: "10000128560001",
 productShortName: "宠物配饰",
-productAppid: "wxxxxxxxxxxxxxxxxx",
+productAppid: "wx2b255582a7b4bfd0",
 labelPage: {
-appid: "wxxxxxxxxxxxxxxxxx",
-path: "/main/pages/productDetail/productDetail?&realappid=wxxxxxxxxxxxxxxxxx&productId=10000128560001"
+appid: "wx2b255582a7b4bfd0",
+path: "/main/pages/productDetail/productDetail?&realappid=wx2b255582a7b4bfd0&productId=10000128560001"
 },
 labelName: "宠物配饰",
 productName: "狗狗的漂亮衣服-多个限时抢购",
@@ -12252,10 +12252,10 @@ x: "8",
 y: "32",
 productId: "10000072904047",
 productShortName: "羽绒服",
-productAppid: "wxxxxxxxxxxxxxxxxx",
+productAppid: "wx2b255582a7b4bfd0",
 labelPage: {
-appid: "wxxxxxxxxxxxxxxxxx",
-path: "/main/pages/productDetail/productDetail?&realappid=wxxxxxxxxxxxxxxxxx&productId=10000072904047"
+appid: "wx2b255582a7b4bfd0",
+path: "/main/pages/productDetail/productDetail?&realappid=wx2b255582a7b4bfd0&productId=10000072904047"
 },
 labelName: "羽绒服",
 productName: "（搭配购）预售测试款女外套冬款黑色M",
@@ -12266,10 +12266,10 @@ x: "52",
 y: "32",
 productId: "10000163612743",
 productShortName: "休闲裤",
-productAppid: "wxxxxxxxxxxxxxxxxx",
+productAppid: "wx2b255582a7b4bfd0",
 labelPage: {
-appid: "wxxxxxxxxxxxxxxxxx",
-path: "/main/pages/productDetail/productDetail?&realappid=wxxxxxxxxxxxxxxxxx&productId=10000163612743"
+appid: "wx2b255582a7b4bfd0",
+path: "/main/pages/productDetail/productDetail?&realappid=wx2b255582a7b4bfd0&productId=10000163612743"
 },
 labelName: "休闲裤",
 productName: "(搭配购)韩版牛仔裤修身版型好大码将军同款",
@@ -12280,10 +12280,10 @@ x: "71",
 y: "54",
 productId: "10000000089216",
 productShortName: "家居服套装",
-productAppid: "wxxxxxxxxxxxxxxxxx",
+productAppid: "wx2b255582a7b4bfd0",
 labelPage: {
-appid: "wxxxxxxxxxxxxxxxxx",
-path: "/main/pages/productDetail/productDetail?&realappid=wxxxxxxxxxxxxxxxxx&productId=10000000089216"
+appid: "wx2b255582a7b4bfd0",
+path: "/main/pages/productDetail/productDetail?&realappid=wx2b255582a7b4bfd0&productId=10000000089216"
 },
 labelName: "家居服套装",
 productName: "(搭配购)2025款冬季男女保暖睡衣",
@@ -12304,10 +12304,10 @@ x: "66",
 y: "32",
 productId: "10000151274966",
 productShortName: "休闲裤",
-productAppid: "wxxxxxxxxxxxxxxxxx",
+productAppid: "wx2b255582a7b4bfd0",
 labelPage: {
-appid: "wxxxxxxxxxxxxxxxxx",
-path: "/main/pages/productDetail/productDetail?&realappid=wxxxxxxxxxxxxxxxxx&productId=10000151274966"
+appid: "wx2b255582a7b4bfd0",
+path: "/main/pages/productDetail/productDetail?&realappid=wx2b255582a7b4bfd0&productId=10000151274966"
 },
 labelName: "休闲裤",
 productName: "限购-开发自动化测试专用-勿动！！！",
@@ -12318,10 +12318,10 @@ x: "30",
 y: "54",
 productId: "10000128560001",
 productShortName: "宠物配饰",
-productAppid: "wxxxxxxxxxxxxxxxxx",
+productAppid: "wx2b255582a7b4bfd0",
 labelPage: {
-appid: "wxxxxxxxxxxxxxxxxx",
-path: "/main/pages/productDetail/productDetail?&realappid=wxxxxxxxxxxxxxxxxx&productId=10000128560001"
+appid: "wx2b255582a7b4bfd0",
+path: "/main/pages/productDetail/productDetail?&realappid=wx2b255582a7b4bfd0&productId=10000128560001"
 },
 labelName: "宠物配饰",
 productName: "狗狗的漂亮衣服-多个限时抢购",
@@ -12332,10 +12332,10 @@ x: "18",
 y: "20",
 productId: "10000072904047",
 productShortName: "羽绒服",
-productAppid: "wxxxxxxxxxxxxxxxxx",
+productAppid: "wx2b255582a7b4bfd0",
 labelPage: {
-appid: "wxxxxxxxxxxxxxxxxx",
-path: "/main/pages/productDetail/productDetail?&realappid=wxxxxxxxxxxxxxxxxx&productId=10000072904047"
+appid: "wx2b255582a7b4bfd0",
+path: "/main/pages/productDetail/productDetail?&realappid=wx2b255582a7b4bfd0&productId=10000072904047"
 },
 labelName: "羽绒服",
 productName: "（搭配购）预售测试款女外套冬款黑色M",
@@ -12346,10 +12346,10 @@ x: "48",
 y: "22",
 productId: "10000163612743",
 productShortName: "休闲裤",
-productAppid: "wxxxxxxxxxxxxxxxxx",
+productAppid: "wx2b255582a7b4bfd0",
 labelPage: {
-appid: "wxxxxxxxxxxxxxxxxx",
-path: "/main/pages/productDetail/productDetail?&realappid=wxxxxxxxxxxxxxxxxx&productId=10000163612743"
+appid: "wx2b255582a7b4bfd0",
+path: "/main/pages/productDetail/productDetail?&realappid=wx2b255582a7b4bfd0&productId=10000163612743"
 },
 labelName: "休闲裤",
 productName: "(搭配购)韩版牛仔裤修身版型好大码将军同款",
@@ -16871,7 +16871,7 @@ ticket: '',
 pt: 2,
 image_url: 'http://wxsnsdythumb.wxs.qq.com/141/20204/snscosdownload/SH/reserved/5f4604790009bfd700000000b3679d090000008d00004eec?m=1c9e9086c11018ef774e28ee3b744a67&ck=1c9e9086c11018ef774e28ee3b744a67',
 ad_desc: '',
-biz_appid: 'wxxxxxxxxxxxxxxxxx',
+biz_appid: 'wx69618ae091cf2c76',
 biz_info: {
 user_name: 'gh_1e80bb81a1d2',
 nick_name: '微信广告',
@@ -17610,7 +17610,7 @@ ticket: '',
 pt: 2,
 image_url: 'http://wxsnsdythumb.wxs.qq.com/141/20204/snscosdownload/SH/reserved/5f4604790009bfd700000000b3679d090000008d00004eec?m=1c9e9086c11018ef774e28ee3b744a67&ck=1c9e9086c11018ef774e28ee3b744a67',
 ad_desc: '',
-biz_appid: 'wxxxxxxxxxxxxxxxxx',
+biz_appid: 'wx69618ae091cf2c76',
 biz_info: {
 user_name: 'gh_1e80bb81a1d2',
 nick_name: '微信广告',
@@ -18189,7 +18189,7 @@ cityName: '',
 cityId: ''
 };
 window.show_ip_wording = '1' * 1;
-window.source_appid = 'wxxxxxxxxxxxxxxxxx' || 'wxxxxxxxxxxxxxxxxx';
+window.source_appid = 'wxd8585069aeaf0427' || 'wxc3923acb47c0d396';
 window.is_over_sea = '0' * 1;
 window.showAdMark = "0" * 1;
 window.is_title_modified = "" * 1;

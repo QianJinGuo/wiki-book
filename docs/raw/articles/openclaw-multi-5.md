@@ -54,7 +54,7 @@ source_url: "https://aws.amazon.com/cn/api-gateway/"
  <li style="color: #5f6368;font-size: 16px">BotFather 提示：请起个 username，必须以 <code style="background-color: #f5f5f5;padding: 2px 6px;border-radius: 3px;font-family: Consolas,monospace;font-size: 14px;color: #d63384">bot</code> 结尾，全局唯一，例如 <code style="background-color: #f5f5f5;padding: 2px 6px;border-radius: 3px;font-family: Consolas,monospace;font-size: 14px;color: #d63384">my_openclaw_demo_bot</code></li> 
  <li style="color: #5f6368;font-size: 16px">成功后 BotFather 会回复一段包含 Token 的消息，格式类似：</li> 
  </ul> 
- <p style="color: #5f6368;font-size: 16px"><code style="background-color: #f5f5f5;padding: 2px 6px;border-radius: 3px;font-family: Consolas,monospace;font-size: 14px;color: #d63384">123456789:REDACTED</code></p> 
+ <p style="color: #5f6368;font-size: 16px"><code style="background-color: #f5f5f5;padding: 2px 6px;border-radius: 3px;font-family: Consolas,monospace;font-size: 14px;color: #d63384">123456789:AAFD39kkdpWt3ywyRZergyOLMaJhac60qc</code></p> 
  <ul style="color: #5f6368;font-size: 16px"> 
  <li style="color: #5f6368;font-size: 16px">把这个 Token 复制保存（后面要用）</li> 
  </ul> 
