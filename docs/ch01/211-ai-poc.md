@@ -98,7 +98,7 @@ AI 项目从 PoC 到生产的失败，本质上是一个**系统工程问题**�
 - [Google Agentic Rag Sufficient Context Agent Framesqa](../ch03/004-agent.html)
 - [Karpathy Ai Agent 7 Bits Value Decline](../ch04/124-karpathy-ai.html)
 - [Skill Formal Theory Survey 10Papers](../ch07/054-skill.html)
-- [Generalization Dynamics Of Lm Pre Training Jiaxin Wen](../ch04/135-ai.html)
+- [Generalization Dynamics Of Lm Pre Training Jiaxin Wen](../ch04/257-ai.html)
 - [Agent Framework Owl Principles](../ch03/004-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/很多企业做完-ai-poc为什么还是上不了生产.md)

@@ -104,7 +104,7 @@ ExecTool 的三层防护说明了一个通用原则：安全设计不能依赖�
 
 ## 相关实体
 - [800行代码实现 Open Claw 的 Tool消息总线子Agent管理架构](../ch03/004-agent.html)
-- [Stripe Sessions 2026 Ai Agents](../ch04/423-ai-agent.html)
+- [Stripe Sessions 2026 Ai Agents](../ch04/312-ai-agent.html)
 - [Claude Code Prompt Source Analysis](../ch09/050-claude-code-prompt.html)
 - [Anthropic Claude Managed Agents Platform Launch](158-anthropic-claude-managed-agents.html)
 - [Agent Memory Architecture Past Influence Future Ruofei](../ch04/133-agent-memory.html)

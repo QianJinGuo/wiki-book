@@ -46,11 +46,11 @@ Anthropic 在总结中特别强调了渐进式 rollout 的重要性：任何可�
 
 ## 相关实体
 - [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](../ch04/157-anthropic-google-agent-skills.html)
-- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/423-ai-agent.html)
+- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/312-ai-agent.html)
 - [claude-code-agent-view](../ch03/048-claude-code-agent.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](337-claude-code-harness-deep-understanding.html)
 - [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch03/004-agent.html)
-- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](559-anthropic-ai.html)
+- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](560-anthropic-ai.html)
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html)
 - [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
 - [Claude Opus 4.7 发布分析](285-claude-opus-4-7.html)

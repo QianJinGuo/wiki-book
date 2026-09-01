@@ -46,7 +46,7 @@ Claude Code 的架构设计体现了"工程化 Agent 系统"的核心理念：�
 - [Agent Harness 架构](../ch05/035-agent-harness.html)
 - [Agent 自我改进的六条路](../ch03/004-agent.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/098-karpathy-vibe-coding-agentic-engineering.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/301-agent-skills.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/302-agent-skills.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/057-claude-code.html)
 - [Claude Code 源码核心机制详解](../ch03/057-claude-code.html)
 - [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)

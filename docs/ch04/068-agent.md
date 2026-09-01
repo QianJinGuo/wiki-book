@@ -209,7 +209,7 @@ Type 3（无意义调用）的根因不在推理阶段，而在训练阶段—�
 - [Tmic Ai Xiaoxin Deepagent Architecture Evolution](../ch03/004-agent.html)
 - [Minimal Cli Agent 250 Line Python Ollama 7 Stages](../ch03/004-agent.html)
 - [Agent Reliability Engineering Skillify Continuous Improvement](../ch07/054-skill.html)
-- [Production Ai Agents Mcp Cli Skills Stack Ayi](423-ai-agent.html)
+- [Production Ai Agents Mcp Cli Skills Stack Ayi](312-ai-agent.html)
 
 ---
 

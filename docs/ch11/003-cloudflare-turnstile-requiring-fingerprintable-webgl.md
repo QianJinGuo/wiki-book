@@ -26,7 +26,7 @@ Mozilla Firefox 在 WebGL 指纹保护方面存在已知漏洞（Bugzilla#191627
 
 ## 相关实体
 - [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](https://github.com/QianJinGuo/wiki/blob/main/entities/rajveerbachkaniwalacom-blog-2026-05-24-on-the-difficulty-of-pasting-a-pic.md)
-- [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](../ch04/135-ai.html)
+- [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](../ch04/257-ai.html)
 - [Kristoffit Blog Fix Your Asserts](https://github.com/QianJinGuo/wiki/blob/main/entities/kristoffit-blog-fix-your-asserts.md)
 - [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](https://github.com/QianJinGuo/wiki/blob/main/entities/eclecticlightco-2026-05-29-what-happens-in-the-log-when-an-app-cra.md)
 - [Seangoedeckecom Build Agents Not Pipelines](../ch04/012-build-agents-not-pipelines.html)

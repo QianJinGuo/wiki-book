@@ -243,8 +243,8 @@ Cortex Sense 从 Snowflake 已有数据和活动中构建信号，自动增强 A
 - [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](../ch05/018-ai-native.html)（Spec-as-AIOS — 治理即架构同思路）
 - [Taobao Ai Sre Digital Employee Code Quality Governance](../ch01/705-ai-sre.html)（数字员工治理 — 行业对照）
 - [Agentops Operationalize Agentic Ai Amazon Bedrock](../ch11/135-amazon-bedrock.html)（AgentOps — 智能体可观测性对照）
-- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](225-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)（企业 Agent 安全风险同主题）
-- [Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions](135-ai.html)（Amazon Quick — 另一家企业数据分析平台）
+- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](226-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)（企业 Agent 安全风险同主题）
+- [Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions](257-ai.html)（Amazon Quick — 另一家企业数据分析平台）
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/snowflake-agentic-enterprise-summit-2026-infoq.md)
 

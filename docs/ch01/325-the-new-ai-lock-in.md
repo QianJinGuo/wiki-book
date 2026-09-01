@@ -30,7 +30,7 @@ AI 供应商的锁定策略正在从模型层上移到 workflow 编排层和实�
 
 Greyhound Research 的 Sanchit Vir Gogia 精确地指出了这一点："锁定不会消失，它正在迁移。在模型层，替换正变得更容易；但在 orchestration 层，替换依然困难。一旦你的 workflows、controls、identity layers 和 governance structures 围绕某个系统构建起来，更换该系统绝非小事。"这意味着企业的 AI 战略决策重心应该从"选哪个模型"转向"选哪个 orchestration 框架、哪个 workflow surface、哪个服务伙伴"。
 
-这一观察与 [企业级 Agent 编排](../ch04/241-agent-orchestration.html) 的实践高度吻合：模型的可替换性是表面的，而编排层的粘性才是真实的。企业花在 eval 框架、恢复逻辑、可观测性追踪上的代码和人力投入，构成了比模型 API 更深层的锁定。
+这一观察与 [企业级 Agent 编排](../ch04/242-agent-orchestration.html) 的实践高度吻合：模型的可替换性是表面的，而编排层的粘性才是真实的。企业花在 eval 框架、恢复逻辑、可观测性追踪上的代码和人力投入，构成了比模型 API 更深层的锁定。
 
 ### MCP 与 Kubernetes 的历史镜像：标准化一层，锁定上移一层
 
@@ -42,7 +42,7 @@ MCP 正在对 AI agent 生态做同样的事：将"模型如何连接工具和�
 
 文章识别出三个不同性质的粘性层，每一层的锁定机制和迁移成本都不同：
 
-**Orchestration 层**（LangGraph 等框架）：框架本身不是陷阱，但编排层会自然积累粘性——无论是否有人刻意设计。Klarna、Replit、Elastic、Ally 等企业如果花了一年时间在 LangGraph 内构建 agent 行为、eval 体系、恢复逻辑和可观测性追踪，它们不会因为竞争对手发布了一个更快/更便宜的模型就把这些全部推倒重来。模型是可替换的；之上的 orchestration 不是。这与 [Agent orchestration](../ch04/241-agent-orchestration.html) 的实际困境一致。
+**Orchestration 层**（LangGraph 等框架）：框架本身不是陷阱，但编排层会自然积累粘性——无论是否有人刻意设计。Klarna、Replit、Elastic、Ally 等企业如果花了一年时间在 LangGraph 内构建 agent 行为、eval 体系、恢复逻辑和可观测性追踪，它们不会因为竞争对手发布了一个更快/更便宜的模型就把这些全部推倒重来。模型是可替换的；之上的 orchestration 不是。这与 [Agent orchestration](../ch04/242-agent-orchestration.html) 的实际困境一致。
 
 **Vendor-controlled workflow surface**（Claude Cowork 等）：2026 年 2 月的扩展推出了私有插件市场、per-user provisioning 和 HR/finance/investment banking/design 预建 agent。但真正的粘性不在 agent 本身，而在管理面——企业 IT 管理员不想让 400 个随机 agent 接入合同系统、HR 数据和客户记录。Administrative surface 围绕 agent 形成的治理结构，比 agent 本身更难替换。
 
@@ -66,8 +66,8 @@ Anthropic 开源 Agent Skills 并强调"skills you create aren't locked to Claud
 ## 相关实体
 
 - [MCP Protocol](https://github.com/QianJinGuo/wiki/blob/main/entities/mcp-protocol.md) — MCP 协议本身的标准化与局限性，是本文"协议不等于平台"论点的技术基础
-- [企业级 Agent 编排](../ch04/241-agent-orchestration.html) — 企业场景下 agent 编排的实际挑战，与本文 orchestration 层锁定的分析直接相关
-- [Agent orchestration](../ch04/241-agent-orchestration.html) — Agent 编排框架的通用讨论，对应本文 LangGraph 等框架的锁定分析
+- [企业级 Agent 编排](../ch04/242-agent-orchestration.html) — 企业场景下 agent 编排的实际挑战，与本文 orchestration 层锁定的分析直接相关
+- [Agent orchestration](../ch04/242-agent-orchestration.html) — Agent 编排框架的通用讨论，对应本文 LangGraph 等框架的锁定分析
 
 ---
 

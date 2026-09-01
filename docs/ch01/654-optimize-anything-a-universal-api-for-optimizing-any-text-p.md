@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [读完这篇，你就搞懂 deepseek v4 了](708-deepseek-v4.html)
+- [读完这篇，你就搞懂 deepseek v4 了](459-deepseek-v4.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gepa-optimize-anything-universal-text-optimization.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)

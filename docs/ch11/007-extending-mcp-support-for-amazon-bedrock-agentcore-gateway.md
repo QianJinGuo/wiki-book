@@ -191,11 +191,11 @@ MCP 使工具一次集成、多 agent 复用——不要为每个 agent 单独�
 Gateway 是 agent 工具调用的单点——监控其延迟、错误率和可用性，确保不影响 agent 性能。
 
 ## 相关实体
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/222-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
+- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/223-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
 - [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/383-amazon-bedrock-agentcore.html)
 - [Building Ai Agents For Business Support Using Amazon Bedrock](../ch04/052-building-ai-agents-for-business-support-using-amazon-bedrock.html)
 - [Amazon Quick Bedrock Agentcore Finops Chat](112-amazon-quick-bedrock-agentcore-finops.html)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/309-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/310-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 
 → [原文存档（Gateway 基本功能）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/extending-mcp-support-for-amazon-bedrock-agentcore-gateway.md)

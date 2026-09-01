@@ -69,7 +69,7 @@
 
 ## 相关实体
 
-- [Anthropic](577-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.html)
+- [Anthropic](523-anthropic-puts-claude-agents-on-a-meter-across-its-subscript.html)
 - AI 安全与治理
 - [云 AI 基础设施](https://github.com/QianJinGuo/wiki/blob/main/concepts/cloud-ai-infrastructure.md)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/大反转马斯克牵手对手-darioanthropic-与-spacex-罕见合作.md)

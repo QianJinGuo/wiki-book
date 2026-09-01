@@ -167,20 +167,20 @@ LLM Wiki 在企业级知识库场景面临结构性限制，不能简单替代 R
 | **权限管理** | 缺乏细粒度访问控制，难满足企业安全合规 | 文档级/段落级权限隔离成熟 |
 | **可溯源性** | 依赖模型理解重构，幻觉风险高，错误关联一旦写入会污染后续所有查询 | 可精确定位"回答来自哪篇文档哪一段" |
 
-> [!contradiction] 参见 [Karpathy LLM Wiki 第二大脑](450-llm.html) — 原始方案认为 LLM Wiki 的全局推理能力优于 RAG 切片，但企业场景下规模和溯源问题使这一优势反转
+> [!contradiction] 参见 [Karpathy LLM Wiki 第二大脑](451-llm.html) — 原始方案认为 LLM Wiki 的全局推理能力优于 RAG 切片，但企业场景下规模和溯源问题使这一优势反转
 
 **适用场景判断**：个人知识库、学习研究等低风险场景 → LLM Wiki 效率高体验好；企业知识库 → 需按数据规模、权限要求、引用准确性综合评估
 
 ## 相关实体
-- [Llm Wiki Architecture](450-llm.html)
+- [Llm Wiki Architecture](451-llm.html)
 - [Karpathy Claude Md Rules](181-claude-md.html)
-- [Obsidian Llm Wiki Local Kytmanov](450-llm.html)
+- [Obsidian Llm Wiki Local Kytmanov](451-llm.html)
 - [Claude Md 12 Rules Mnilax](181-claude-md.html)
 - [Karpathy Vibe Coding Agentic Engineering V3](../ch04/098-karpathy-vibe-coding-agentic-engineering.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/karpathy-llm-wiki-second-brain-awkthole.md)
 - [yc掌门人60天写了60万行代码：gstack开源](https://github.com/QianJinGuo/wiki/blob/main/entities/gstack-garry-tan-600k-lines-60-days.md)
-- [markdown 不会过时](545-markdown.html)
+- [markdown 不会过时](546-markdown.html)
 - [Hermes Skills + LLM Wiki 知识系统](../ch07/016-hermes-skill.html)
 
 → [补充存档：WorkBuddy + LLM Wiki + Obsidian 实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/workbuddy-llm-wiki-obsidian-practice.md)

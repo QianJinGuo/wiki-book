@@ -75,7 +75,7 @@ user happy
 - [Skill System Design Three Way Comparison](054-skill.html)
 - [Openclaw Agent Loop Design Patterns](../ch04/384-agent-loop.html)
 - [Tencent Skill Writing Complete Playbook Jackjchou](054-skill.html)
-- [Ai Skill Skill Creator 源码拆解](../ch04/234-skill-skill.html)
+- [Ai Skill Skill Creator 源码拆解](../ch04/235-skill-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/steipete-skill-cleaner-liangzide.md)
 

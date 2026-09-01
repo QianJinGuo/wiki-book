@@ -24,7 +24,7 @@
 - [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/383-amazon-bedrock-agentcore.html)
 - [How A Mid Tier Enterprise Saas Provider Automates Cloud Supp](../ch03/041-how-a-mid-tier-enterprise-saas-provider-automates-cloud-supp.html)
 - [Aws Devops Agent 实战云网络故障自主调查与修复建议](../ch04/214-aws-devops-agent.html)
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/222-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
+- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/223-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
 - [Eks Gpu Operator Custom Driver Cuda Workload](https://github.com/QianJinGuo/wiki/blob/main/entities/eks-gpu-operator-custom-driver-cuda-workload.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kiro-mcp-rds-mysql-upgrade.md)

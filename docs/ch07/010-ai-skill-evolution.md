@@ -175,7 +175,7 @@ Skill 规则只写「必须约束」的部分，不写「可以推断」的部�
 ## 相关实体
 - [Yidian Tianxia Context Engineering Agentic Ai](../ch04/395-agentic-ai.html)
 - [Skill Formal Theory Survey 10Papers](054-skill.html)
-- [Glm5 Scaling Pain Inference](../ch04/135-ai.html)
+- [Glm5 Scaling Pain Inference](../ch04/257-ai.html)
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/057-claude-code.html)
 - [Gepa Optimize Anything](../ch01/235-gepa-optimize-anything.html)
 

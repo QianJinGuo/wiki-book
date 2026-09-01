@@ -120,7 +120,7 @@ MCP 是"连接协议"，解决的是"如何让 Claude Code talk to X"的问题�
 - [Claude Code MCP Server](../ch07/027-claude-code-mcp-server.html) — MCP 协议集成
 - [IMClaw](../ch03/057-claude-code.html) — IM 平台操控
 - [OpenClaw 安全增强](../ch04/176-openclaw.html) — 自托管 Agent 平台
-- [Kiro + Claude Code](../ch04/135-ai.html) — AI IDE 协同
+- [Kiro + Claude Code](../ch04/257-ai.html) — AI IDE 协同
 - [企业级 Agentic AI](../ch04/395-agentic-ai.html) — AWS 集成
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 > 本页整合来源：Claude Code 官方文档、Anthropic 源码分析、AWS China Blog、OpenClaw 社区实践

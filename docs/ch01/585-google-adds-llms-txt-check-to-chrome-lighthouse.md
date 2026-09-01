@@ -10,10 +10,10 @@
 - 来源：https://searchengineland.com/google-llms-txt-chrome-lighthouse-478246
 
 ## 相关实体
-- [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](473-github.html)
-- [Blog Himanshuanand Com Score By Collisions Patch By Panic](../ch04/286-score-by-collisions-patch-by-panic.html)
+- [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](474-github.html)
+- [Blog Himanshuanand Com Score By Collisions Patch By Panic](../ch04/287-score-by-collisions-patch-by-panic.html)
 - [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](168-rag.html)
-- [Npm Supply Chain Compromise Postmortem](../ch04/135-ai.html)
+- [Npm Supply Chain Compromise Postmortem](../ch04/257-ai.html)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/searchengineland-com-google-adds-llms-txt-check-to-chrome-lighthouse.md)

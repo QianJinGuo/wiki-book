@@ -116,10 +116,10 @@ Agent 在执行过程中被中断时，状态会停留在 IN_PROGRESS，但实�
 
 ## 相关实体
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/337-claude-code-harness-deep-understanding.html)
-- [AI Coding Agent 记忆系统](252-ai-coding-agent.html)
-- [你不知道的 Agent 原理架构与工程实践](275-agent-principle-architecture-engineering-practice.html)
-- [柚漫剧 AI 全流程提效拆解](135-ai.html)
-- [Agent Skill 设计模式](301-agent-skills.html)
+- [AI Coding Agent 记忆系统](253-ai-coding-agent.html)
+- [你不知道的 Agent 原理架构与工程实践](276-agent-principle-architecture-engineering-practice.html)
+- [柚漫剧 AI 全流程提效拆解](257-ai.html)
+- [Agent Skill 设计模式](302-agent-skills.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 - [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
 - [Thin Harness Fat Skills](../ch05/065-thin-harness-fat-skills-ai.html)

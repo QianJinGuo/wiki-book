@@ -80,7 +80,7 @@ AWS Samples 提供 `sample-your-opc-eks-agents` 仓库，包含：
 
 - 多智能体编排（概念层）
 - [AWS Bedrock AgentCore OS-level 浏览器工具](045-bedrock-agentcore.html)
-- [Aliyun AgentRun 5min 快速上手](../ch04/289-agentrun.html)
+- [Aliyun AgentRun 5min 快速上手](../ch04/290-agentrun.html)
 
 ---
 

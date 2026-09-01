@@ -96,7 +96,7 @@
 相对 4.6，这是一次极具意义的升级，精准命中 Anthropic 核心客户群的三个痛点：**Agent 编程可靠性**、**Computer-Use Agent 视觉能力**、**知识工作基准表现**（GDPval-AA）。
 
 ## Cross-links
-- → [Anthropic](577-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.html)
+- → [Anthropic](523-anthropic-puts-claude-agents-on-a-meter-across-its-subscript.html)
 - → [Claude Code 深度架构分析](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-deep-architecture-analysis.md)
 - → [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)
 - → [KAIROS Claude Code 常驻协作范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/kairos-claude-code-paradigm.md)
@@ -107,9 +107,9 @@
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/057-claude-code.html)
 - [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/057-claude-code.html)
 - [claude-code-agent-view](../ch03/048-claude-code-agent.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/301-agent-skills.html)
-- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/423-ai-agent.html)
-- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](559-anthropic-ai.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/302-agent-skills.html)
+- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/312-ai-agent.html)
+- [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](560-anthropic-ai.html)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/057-claude-code.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/004-agent.html)
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](340-claude.html)

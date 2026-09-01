@@ -108,7 +108,7 @@ SaaS 产品经理每周评估 1-10 家客户定制需求工作量，认真做完
 - [Agent Skill 高质量编写规范](284-agent-skill.html)
 
 - [Agent Skill 评估与迭代](284-agent-skill.html)
-- [SkillSieve — Agent Skill 安全检测三层框架（arXiv 2604.06550）](../ch04/334-skillsieve-agent-skill.html)
+- [SkillSieve — Agent Skill 安全检测三层框架（arXiv 2604.06550）](../ch04/335-skillsieve-agent-skill.html)
 
 ## 深度分析
 ### 渐进式披露是五种进阶模式的底层架构

@@ -353,21 +353,21 @@ skills.sh 提供了配套的 skill 管理工具。多人协作时，可在 code 
 - [Qoder Skills 完全指南](../ch07/031-qoder-skills.html)（同主题旧版）
 - [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch01/284-agent-skill.html)（同主题不同 MP — 实操指引）
 - [Anthropic 14 个 Agent Skills 设计模式](077-anthropic-agent.html)
-- [Agent Skill 设计模式](301-agent-skills.html)（Anthropic → Google 演进）
+- [Agent Skill 设计模式](302-agent-skills.html)（Anthropic → Google 演进）
 - [重新定义Skill开发：保姆级教程](../ch07/054-skill.html)
 - [你写的 Skill，及格了吗？](../ch07/054-skill.html)（skill-judge 对照）
 - [Harness Engineering 90 Percent Pillars](../ch05/057-harness-engineering.html)（与 Skill 同源的工程化思路）
 - [Qoder Skills 完全指南](../ch07/031-qoder-skills.html)
 - [qoder skills](../ch07/031-qoder-skills.html)
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](301-agent-skills.html)
-- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](301-agent-skills.html)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](302-agent-skills.html)
+- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](302-agent-skills.html)
 - [让 AI 理解你的组件库：新一代智能 D2C 架构 — 基于 AWS Kiro MCP Skills 的智能转换实践](../ch03/050-skills.html)
 - [Anthropic 14 个 Agent Skills 设计模式](077-anthropic-agent.html)
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch07/054-skill.html)
-- [Agent Skill 设计模式](301-agent-skills.html)
-- [AI 行业就业八大变化（腾讯研究院纵向对比）](135-ai.html)
+- [Agent Skill 设计模式](302-agent-skills.html)
+- [AI 行业就业八大变化（腾讯研究院纵向对比）](257-ai.html)
 - [CDP Bridge MCP：真实浏览器直连 MCP 工具](../ch03/004-agent.html)
-- [十年老技术开发的 AI Agent 探索之路](423-ai-agent.html)
+- [十年老技术开发的 AI Agent 探索之路](312-ai-agent.html)
 - [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch01/284-agent-skill.html)
 - [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](157-anthropic-google-agent-skills.html)
 - [Garry Tan](https://github.com/QianJinGuo/wiki/blob/main/entities/garry-tan-yc-ceo.md)
@@ -380,7 +380,7 @@ skills.sh 提供了配套的 skill 管理工具。多人协作时，可在 code 
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/05-11-the-great-memory-panic-of-2026.md)
 
-- [AI Agent 工程师能力地图](423-ai-agent.html)
+- [AI Agent 工程师能力地图](312-ai-agent.html)
 - [Skillx Zhejiang University](../ch07/054-skill.html)
 - [Wiki Audit Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/wiki-audit-skill.md)
 - [Gemini Deep Guide Prompt](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-deep-guide-prompt.md)

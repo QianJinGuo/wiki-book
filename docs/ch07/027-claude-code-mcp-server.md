@@ -84,7 +84,7 @@ MCP Server 可以通过 `initialize` 响应的 `instructions` 字段，向模型
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html)
 - [Claude Code 源码深度解析（13 核心机制）](../ch03/057-claude-code.html)
 - [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-12-mcp-production-patterns.md)
-- [AgentCore Runtime 部署 Apache Doris MCP Server](../ch04/135-ai.html)
+- [AgentCore Runtime 部署 Apache Doris MCP Server](../ch04/257-ai.html)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/171-tencent-vibe-coding-to-agentic-engineering-backend.html)
 - [Boris Cherny — 从 IDE 到 Agent 控制台](../ch03/004-agent.html)
 - [读完 Claude Code 源码才发现 Skills/MCP/Rules 的区别远没有你想的那么大](006-claude-code-skills-mcp-rules.html)
@@ -92,7 +92,7 @@ MCP Server 可以通过 `initialize` 响应的 `instructions` 字段，向模型
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/337-claude-code-harness-deep-understanding.html)
 - [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch03/004-agent.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/057-claude-code.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/301-agent-skills.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/302-agent-skills.html)
 - [Claude Code 源码核心机制详解](../ch03/057-claude-code.html)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/057-claude-code.html)
 - [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
@@ -105,7 +105,7 @@ MCP Server 可以通过 `initialize` 响应的 `instructions` 字段，向模型
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xero-announces-integration-with-anthropics-claude.md)
 
-- [AI Agent 工程师能力地图](../ch04/423-ai-agent.html)
+- [AI Agent 工程师能力地图](../ch04/312-ai-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
 
 ---

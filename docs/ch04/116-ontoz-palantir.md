@@ -181,7 +181,7 @@
 - 多智能体协同 — [Openclaw Multi Agent Team Practice V2](027-openclaw-multi-agent-team-practice-v2.html)
 - 出海/跨境 AI — [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](../ch01/028-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode.html)
 - 智能体协议 — [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md)
-- Kimi Work / Codex — [Kimi Work Codex Vibe Working Paradigm Shift](../ch01/392-codex.html)
+- Kimi Work / Codex — [Kimi Work Codex Vibe Working Paradigm Shift](../ch01/393-codex.html)
 - Claude Code 架构 — [Claude Code Architecture](../ch03/057-claude-code.html)
 - Harness 工程 — [Harness Engineering Systematic Framework](../ch05/057-harness-engineering.html)
 - A2A / Agent 自主经济 — [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/004-agent.html)
@@ -191,7 +191,7 @@
 - 企业 AI 数据准备 — [Enterprise Ai Investment Data Readiness Cio](../ch03/009-cio.html)
 ## 相关实体
 
-- [how grab is using ai agents to boost team productivity](423-ai-agent.html)
+- [how grab is using ai agents to boost team productivity](312-ai-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
 
 ---

@@ -6,10 +6,10 @@
 
 ## 相关实体
 - [Anthropic 14 个 Agent Skills 设计模式](077-anthropic-agent.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](301-agent-skills.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](302-agent-skills.html)
 - [Anthropic 官方 14 种 Skill 设计模式](../ch07/054-skill.html)
 - [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](../ch01/316-openai.html)
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](301-agent-skills.html)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](302-agent-skills.html)
 - [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](../ch03/004-agent.html)
 - [Mythos for Offensive Security: XBOW's Evaluation](https://github.com/QianJinGuo/wiki/blob/main/entities/mythos_offensive_security_xbow_evaluatio.md)
 - [Anthropic Claude Managed Agents 平台正式发布](../ch01/158-anthropic-claude-managed-agents.html)
@@ -20,7 +20,7 @@
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/057-claude-code.html)
 - [Claude Code Agent 工程设计](../ch03/048-claude-code-agent.html)
 - [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](../ch07/031-qoder-skills.html)
-- [AI 行业就业八大变化（腾讯研究院纵向对比）](135-ai.html)
+- [AI 行业就业八大变化（腾讯研究院纵向对比）](257-ai.html)
 - [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](../ch03/004-agent.html)
 - [CDP Bridge MCP：真实浏览器直连 MCP 工具](../ch03/004-agent.html)
 

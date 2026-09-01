@@ -19,7 +19,7 @@
 - [Google Agentic Rag Sufficient Context Agent Framesqa](../ch03/004-agent.html)
 - [Ai Native Startup Cyberfund Guide](018-ai-native.html)
 - [Harness Engineering Comprehensive Guide Conardli](057-harness-engineering.html)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](../ch04/423-ai-agent.html)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](../ch04/312-ai-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/is-grep-all-you-need-pwc-retrieval-harness-coupling.md)
 

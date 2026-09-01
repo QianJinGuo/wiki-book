@@ -60,7 +60,7 @@ POPO 用约 **30%** 的 DAPO rollout 预算达到接近 DAPO 的性能，通常�
 
 ## 相关实体
 
-- [2026 年面向 LLM 的 RL 方法总结](450-llm.html) — PPO/DPO/GRPO 全景综述
+- [2026 年面向 LLM 的 RL 方法总结](451-llm.html) — PPO/DPO/GRPO 全景综述
 - [APPO：阿里高德 Agent RL 信用分配到每个决策点](../ch03/004-agent.html) — 另一 ARPO 系列 RL 方法
 - [Self-Taught RLVR：京东让大模型自己教自己](587-self-taught-rlvr.html)
 

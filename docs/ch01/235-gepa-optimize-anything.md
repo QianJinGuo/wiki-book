@@ -130,9 +130,9 @@ KK大叔用 `optimize_anything` 框架在 Hermes Agent 上落地了一个 4 轮�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026.md)
 
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gepa-optimize-anything-universal-text-optimization.md)
-- [腾讯研究院Ai速递 20260507](../ch04/135-ai.html)
+- [腾讯研究院Ai速递 20260507](../ch04/257-ai.html)
 - [Karpathy Ai Agent 7 Bits Value Decline 2026 Allentan](../ch04/124-karpathy-ai.html)
-- [Kasra Blog Llm Hacking Empirical Test](450-llm.html)
+- [Kasra Blog Llm Hacking Empirical Test](451-llm.html)
 - [Hermes Agent V014 Architecture Shugex](../ch04/161-hermes-agent.html)
 ## 与 Hermes Agent Skill 互优化的关联
 

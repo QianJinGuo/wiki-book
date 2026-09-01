@@ -163,7 +163,7 @@ JiaGouX 建议避开"公司级聊天查数入口"，更小一点反而更稳。�
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/004-agent.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch04/176-openclaw.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04/176-openclaw.html)
-- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](../ch04/135-ai.html)
+- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](../ch04/257-ai.html)
 - [Claude Code Dynamic Workflows Jiagoux Architect Perspective](../ch09/069-claude-code-dynamic-workflows.html)
 - [Agent Reliability Engineering Skillify Continuous Improvement](../ch07/054-skill.html)
 - [Agent Skill Writing Evaluation](284-agent-skill.html)

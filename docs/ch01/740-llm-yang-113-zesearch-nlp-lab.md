@@ -114,7 +114,7 @@
 | **医疗（Medicine）** | 领域知识图谱、合规约束 | Med-PaLM、 Hippocratic |
 | **金融（Finance）** | 时序数据、风险评估 | BloombergGPT、量化交易 Agent |
 | **算法发现（Algorithm）** | 元学习、搜索空间探索 | AlphaTensor、FunSearch |
-| **科学研究（Science）** | 自主假设提出、实验执行 | [Prime Intellect / nanoGPT Opus 4.7 突破人类纪录](../ch04/135-ai.html) |
+| **科学研究（Science）** | 自主假设提出、实验执行 | [Prime Intellect / nanoGPT Opus 4.7 突破人类纪录](../ch04/257-ai.html) |
 
 ## 四大未来方向
 
@@ -130,7 +130,7 @@
 | 维度 | 本文（Yang 等综述） | 既有覆盖 |
 |------|-------------------|---------|
 | **canonical artifact** | arXiv 2603.25681 + GitHub Zesearch/self-improvement-llm（**113 页 500+ 论文**） | 多为单点应用/单一框架 |
-| **问题域** | LLM 自我提升的**系统级闭环** | 多为单点机制（[六条路](../ch03/004-agent.html)）/ 单点实验（[nanoGPT](../ch04/135-ai.html)）/ 单点产品（[LangSmith](../ch03/004-agent.html)） |
+| **问题域** | LLM 自我提升的**系统级闭环** | 多为单点机制（[六条路](../ch03/004-agent.html)）/ 单点实验（[nanoGPT](../ch04/257-ai.html)）/ 单点产品（[LangSmith](../ch03/004-agent.html)） |
 | **方法学** | 学术全景综述 + GRO 框架 + 6 风险 + 6 应用 + 4 方向 | 工业实战 / 单一案例 |
 | **目标读者** | 学术研究者 + 系统架构师 | 工程开发者 / 特定工具用户 |
 | **可复用抽象** | **极高**（4 阶段闭环 + 1 控制层可直接用作系统设计 checklist） | 中等（需自行抽象） |
@@ -170,7 +170,7 @@
   - [AI 自我改进与自举](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-self-improvement-bootstrapping.md)（4 类自举路径统一视角 + lossy 风险 + 工程实践）
 - **同主题不同 artifact**：
   - [Agent 自我改进的六条路](../ch03/004-agent.html)（J0hn 视角：L1-L6 机制分类）
-  - [AI 科研超越人类 — Prime Intellect 递归自改进实验](../ch04/135-ai.html)（单点实验：nanoGPT 突破人类纪录）
+  - [AI 科研超越人类 — Prime Intellect 递归自改进实验](../ch04/257-ai.html)（单点实验：nanoGPT 突破人类纪录）
   - [Lossy Self-Improvement](224-lossy-self-improvement.html)（自噬数据风险的理论分析）
   - [编排自演化 Agent — CrewAI + NVIDIA Nemotron](../ch04/181-self-evolving-agents.html)（多 Agent 仿真环境）
   - [MUSE AutoSkill — 字节 ByteBrain 自演化 Agent](../ch07/054-skill.html)（arXiv 2605.27366 工业级实现）

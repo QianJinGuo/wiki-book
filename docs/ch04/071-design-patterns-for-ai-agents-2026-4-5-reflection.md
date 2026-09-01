@@ -60,17 +60,17 @@ Thought → Action → Observation 循环，仍是大多数单步任务的基础
 - [AI Native 时代 —— 研发组织何去何从](../ch05/018-ai-native.html)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/008-harness.html)
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch03/004-agent.html)
-- [从多智能体编排到AI自主决策：资损防控体系的架构演进](135-ai.html)
-- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](../ch01/708-deepseek-v4.html)
+- [从多智能体编排到AI自主决策：资损防控体系的架构演进](257-ai.html)
+- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](../ch01/459-deepseek-v4.html)
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/057-harness-engineering.html)
 - [Transformer Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/transformer-architecture.md)
 - [Agent 与后端统一架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-backend-unification.md)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
 
 - [Thin Harness Fat Skills](../ch05/065-thin-harness-fat-skills-ai.html)
-- [你不知道的 Agent 原理架构与工程实践](275-agent-principle-architecture-engineering-practice.html)
+- [你不知道的 Agent 原理架构与工程实践](276-agent-principle-architecture-engineering-practice.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [AI Agent 工程师能力地图](423-ai-agent.html)
+- [AI Agent 工程师能力地图](312-ai-agent.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 ## 第 2 来源：前端 T 站 4 模式选型决策树（2026-06-07）

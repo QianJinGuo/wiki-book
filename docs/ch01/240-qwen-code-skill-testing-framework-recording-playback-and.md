@@ -172,7 +172,7 @@ Issue 本身处于 proposal 阶段（v1），距离生产可用还需解决：
 ## 相关链接
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qwen-code-skill-testing-framework-issue-2447.md)
 ## 相关实体
-- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](570-skill-issues-compromising-claude-code-with-malicious-skills.html)
+- [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](571-skill-issues-compromising-claude-code-with-malicious-skills.html)
 - [How Claude Code Works In Large Codebases Best Practices And Where To Start](349-how-claude-code-works-in-large-codebases-best-practices-and.html)
 - [Claude Code Skill Writing Guide](../ch03/057-claude-code.html)
 - [Ai Skill Evolution Framework](../ch07/010-ai-skill-evolution.html)

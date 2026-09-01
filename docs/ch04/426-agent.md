@@ -10,7 +10,7 @@
 
 - [《从零实现 agent 系统》连载 01｜agent 系统是什么：问题空间与架构切片](../ch03/004-agent.html)
 - [cola dlm：字节跳动连续潜空间扩散语言模型](../ch01/273-cola-dlm.html)
-- [explicit vs. implicit in the age of intelligences — le secré](135-ai.html)
+- [explicit vs. implicit in the age of intelligences — le secré](257-ai.html)
 - [review agent：后台复盘 agent 如何判断什么值得保存](../ch03/004-agent.html)
 - [不用再学ai了！生成结果包稳的agent来了](../ch03/004-agent.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-paradigm-evolution-feipeng-alibaba.md)

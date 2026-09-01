@@ -73,7 +73,7 @@ clip-listener.exe + wsl-clip-bridge + Alt+V 的组合体现了一个重要的工
 
 ## 相关实体
 
-- [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](../ch04/135-ai.html) — 同一技术文章系列的领域工程讨论
+- [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](../ch04/257-ai.html) — 同一技术文章系列的领域工程讨论
 - [Kristoffit Blog Fix Your Asserts](https://github.com/QianJinGuo/wiki/blob/main/entities/kristoffit-blog-fix-your-asserts.md) — 同为 TLDR AI Newsletter 推荐的技术深度分析
 - [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](https://github.com/QianJinGuo/wiki/blob/main/entities/eclecticlightco-2026-05-29-what-happens-in-the-log-when-an-app-cra.md) — 系统内部机制调试方法
 - [Seangoedeckecom Build Agents Not Pipelines](../ch04/012-build-agents-not-pipelines.html) — 软件工程实践讨论

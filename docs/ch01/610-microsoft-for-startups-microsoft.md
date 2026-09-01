@@ -38,10 +38,10 @@ $1,000 → $150,000 的阶梯式解锁机制，本质上是将云厂商常见的
 3. **多云不等于零云**：计划允许保留现有云环境，这对已有一定云支出的公司是重要信号——无需做全有或全无的迁移决策，可以选择性迁移对 Microsoft 生态有协同效应的部分（如 Teams 集成、Dynamics 挂钩的应用）。
 4. **生态深度影响技术决策**：如果初创公司的产品规划涉及 Copilot 插件、工作流自动化或企业数据集成，Microsoft 生态的集成收益远大于对抗性选择。
 ## 相关实体
-- [Finanser Retail Banking Broken](../ch04/135-ai.html)
-- [Microsoft For Startups Microsoft V2](610-microsoft-for-startups-microsoft.html)
+- [Finanser Retail Banking Broken](../ch04/257-ai.html)
+- [Microsoft For Startups Microsoft V2](387-microsoft-for-startups-microsoft.html)
 - [Microsoft Is Quietly Shopping For An Openai Replac](031-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
-- [Microsoft For Startups Microsoft](610-microsoft-for-startups-microsoft.html)
+- [Microsoft For Startups Microsoft](387-microsoft-for-startups-microsoft.html)
 - [5Thingstoknowabouttheclarityact](https://github.com/QianJinGuo/wiki/blob/main/entities/5thingstoknowabouttheclarityact.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/microsoft-startups.md)

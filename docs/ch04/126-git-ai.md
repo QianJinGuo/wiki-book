@@ -184,7 +184,7 @@ Git 作为 Source of Truth 的选择看似朴素，实则精妙。Git 的内容�
 - [Ai Native Project Management Git](../ch05/018-ai-native.html)
 - [P Ai Pms Guide To Claude](../ch01/340-claude.html)
 - [Harness不是目的知识才是护城河 一个Ai工程交付团队的知识沉淀实践](../ch05/008-harness.html)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](423-ai-agent.html)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](312-ai-agent.html)
 - [Building Ai Agents In Accounting](002-building-ai-agents-in-accounting.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/git-repo-based-pm-automation.md)

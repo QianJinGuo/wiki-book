@@ -80,7 +80,7 @@ OpenClaw 这类自托管 AI Agent 与传统 Web 应用的安全模型有本质�
 - 危险操作的二次确认（删除文件、修改配置、转账）
 - 沙箱化 Agent 进程（chroot / 容器 / separate user）
 
-这与 [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](../ch04/225-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html) 中讨论的"工具返回值被恶意篡改"是同一类问题——L3 prompt injection 是 2026 年 Agent 安全的头号威胁。
+这与 [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](../ch04/226-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html) 中讨论的"工具返回值被恶意篡改"是同一类问题——L3 prompt injection 是 2026 年 Agent 安全的头号威胁。
 
 ### 四、4 种 AWS 部署方式的工程含义
 
@@ -121,7 +121,7 @@ OpenClaw 不是孤例——任何"本地优先、用户自治、跨消息通道"
 - [EKS Graviton 多租户 OpenClaw K8s 实践](../ch04/176-openclaw.html)
 - [CI/CD on Bedrock AgentCore OpenClaw 企业智能运营最佳实践](../ch04/383-amazon-bedrock-agentcore.html)
 - [Agent Security 三步走: Harness + Governance + Identity](../ch05/008-harness.html)
-- [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](../ch04/225-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](../ch04/226-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 - [Claude Code vs OpenClaw Memory 对比](../ch03/057-claude-code.html)
 - [Claude Code vs OpenClaw Memory 向量数据库之争](../ch03/057-claude-code.html)
 - [Claude Code vs OpenClaw 使用 Ettin](../ch09/025-claude-code-openclaw-usage-ettin.html)

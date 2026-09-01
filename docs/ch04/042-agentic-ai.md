@@ -135,8 +135,8 @@ AWS China Blog（2026-06-12）从**经济学经典命题"生产力决定生产�
 ## 相关实体
 
 - [Agentic AI 系统架构：Harness + Skill + MCP](../ch05/067-harness-skill.html) — Anthropic/agent 视角的架构总览
-- [AIDLC 范式迁移](135-ai.html) — 数据工程视角 AIDLC（互补不重叠）
-- [AIDL 范式迁移：平台驱动数据工程](135-ai.html) — 另一 AIDL 视角
+- [AIDLC 范式迁移](257-ai.html) — 数据工程视角 AIDLC（互补不重叠）
+- [AIDL 范式迁移：平台驱动数据工程](257-ai.html) — 另一 AIDL 视角
 - [Agent Harness 架构设计生产指南](../ch05/035-agent-harness.html) — Aksahy 实战视角
 - [Agent 工程原则与架构实践](../ch03/004-agent.html) — 通用 Agent 工程框架
 - [Strands + AgentCore 多区域 GPU 推理调度](../ch03/004-agent.html) — 实战案例
@@ -160,7 +160,7 @@ AWS China Blog（2026-06-12）从**经济学经典命题"生产力决定生产�
 
 ### 技术要点：AIDLC 是 Agent 时代的软件开发范式转移
 
-传统 SDLC 的三个核心假设在 Agentic AI 场景全部失效：(1) 确定性假设 → Agent 行为是统计性的，Evaluation 替代单元测试；(2) Guardrail 可选假设 → 自主决策系统必须有强制边界；(3) 部署即终点假设 → Agent 需要持续监控而非一次性验收。这个范式转移与 [Ai Engineering Platform Aidlc Migration](135-ai.html) 中的描述一致，但本文从 Agent 应用层（而非数据工程层）验证了 AIDLC 的必要性。Generative AI → AI Agent → Agentic AI 的三阶段演进，每个阶段都对应更复杂的生命周期管理需求。
+传统 SDLC 的三个核心假设在 Agentic AI 场景全部失效：(1) 确定性假设 → Agent 行为是统计性的，Evaluation 替代单元测试；(2) Guardrail 可选假设 → 自主决策系统必须有强制边界；(3) 部署即终点假设 → Agent 需要持续监控而非一次性验收。这个范式转移与 [Ai Engineering Platform Aidlc Migration](257-ai.html) 中的描述一致，但本文从 Agent 应用层（而非数据工程层）验证了 AIDLC 的必要性。Generative AI → AI Agent → Agentic AI 的三阶段演进，每个阶段都对应更复杂的生命周期管理需求。
 
 ### 实践价值：MCP + A2A 是接口标准化层面的 N×M → M 降维
 
@@ -168,7 +168,7 @@ AWS China Blog（2026-06-12）从**经济学经典命题"生产力决定生产�
 
 ### 深层博弈："代理人困境"的微观机制与宏观代价
 
-130 名中层管理者的实验揭示了完整的信息不对称链条：员工用 AI → 绩效更好 → 管理者无法分辨 → 知道用了反而低估员工努力（β₂=-0.387, p<0.01）→ 员工理性选择隐瞒 → AI 使用进入暗处。这与 [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](423-ai-agent.html) 中讨论的 Agent 安全问题（工具毒化、Prompt 注入）共同构成了"AI 影子采纳"的不同切面：安全是技术层的影子，可信度是组织层的影子。
+130 名中层管理者的实验揭示了完整的信息不对称链条：员工用 AI → 绩效更好 → 管理者无法分辨 → 知道用了反而低估员工努力（β₂=-0.387, p<0.01）→ 员工理性选择隐瞒 → AI 使用进入暗处。这与 [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](312-ai-agent.html) 中讨论的 Agent 安全问题（工具毒化、Prompt 注入）共同构成了"AI 影子采纳"的不同切面：安全是技术层的影子，可信度是组织层的影子。
 
 ### 技术判断：框架无关 + 模型无关是战略灵活性而非技术偏好
 

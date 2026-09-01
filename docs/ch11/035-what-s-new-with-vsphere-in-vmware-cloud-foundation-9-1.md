@@ -199,10 +199,10 @@ vMotion 加密一直是 CPU 开销的大户——即便使用 AES-NI，8 个并�
 
 ## 相关实体
 - [Cloud Agent Infrastructure Creaoai State Code Credential Isolation 20260606](../ch03/004-agent.html)
-- [Llm Raiders How To Repel](../ch01/450-llm.html)
+- [Llm Raiders How To Repel](../ch01/451-llm.html)
 - [Amazon Bedrock Api Security Guide](../ch12/031-amazon-bedrock-api.html)
 - [Aderant Transforms Cloud Operations With Amazon Quick](163-aderant-transforms-cloud-operations-with-amazon-quick.html)
-- [Cloud Ai Mobile Testing New Era Amazon Device Farm Mcp Server Practical Guide En](../ch04/135-ai.html)
+- [Cloud Ai Mobile Testing New Era Amazon Device Farm Mcp Server Practical Guide En](../ch04/257-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/whats-new-with-vsphere-9-1.md)
 

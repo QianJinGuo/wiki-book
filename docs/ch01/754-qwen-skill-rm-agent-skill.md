@@ -86,7 +86,7 @@ Skill-RM 的核心优势是「默认协议下就能涨分」，不需要为每�
 - **[Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)**：Skill-RM 把 Skill范式从 Agent 执行层延伸到 RM评估层——同一套「说明书 +工具箱」抽象在两个不同域落地
 - **[Skill 系统设计](../ch07/054-skill.html)**：Reward-Evaluation Skill 是 SKILL.md范式在 reward域的扩展，证明 Skill抽象可复用、可编排、可审计
 - **[Token-in-Token-out Agentic RL](../ch04/439-agentic-rl-token-in-token-out-done-right.html)**：Skill-RM 是 agentic RL闭环中「奖励信号可审计化」的关键拼图——flat prompt 的奖励信号难复现，Skill化的评估轨迹可复查
-- **[AWS RL LLM-as-Judge](450-llm.html)**：AWS 的同方向探索，但 Skill-RM给出更系统的资源分层 +编排协议
+- **[AWS RL LLM-as-Judge](451-llm.html)**：AWS 的同方向探索，但 Skill-RM给出更系统的资源分层 +编排协议
 - **[Agent 自改进六机制](../ch03/004-agent.html)**：Skill-RM属于「外部奖励 + Skill化」机制，与 L4 对抗训练形成对照
 
 ###渐进式披露 vs append
@@ -136,7 +136,7 @@ TIR-Judge-Zero、OpenRS 等已有 agentic judge路线，但 Skill-RM 的差异�
 
 ## 与已有实体的差异化
 
-- **vs [AWS RL LLM-as-Judge](450-llm.html)**：AWS走 Amazon Bedrock集成路线；Skill-RM走 Skill协议 +跨骨干通用路线
+- **vs [AWS RL LLM-as-Judge](451-llm.html)**：AWS走 Amazon Bedrock集成路线；Skill-RM走 Skill协议 +跨骨干通用路线
 - **vs [Evaluating Netflix with LLM-as-a-Judge](214-evaluating-netflix-show-synopses-with-llm-as-a-judge.html)**：Netflix案例是 judge 应用层；Skill-RM 是 judge框架层
 - **vs [Multimodal Evaluators](239-mllm-as-judge.html)**：多模态 judge 是另一维度（输入模态）；Skill-RM 是单模态但评估协议层
 

@@ -270,7 +270,7 @@ OWL适合以下场景：
 - [Karpathy Ai Agent 7 Bits Value Decline](../ch04/124-karpathy-ai.html)
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/057-claude-code.html)
 - [Gepa Optimize Anything](235-gepa-optimize-anything.html)
-- [Tmall Marketing Ai Workflow Best Practices](../ch04/135-ai.html)
+- [Tmall Marketing Ai Workflow Best Practices](../ch04/257-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 
 ---

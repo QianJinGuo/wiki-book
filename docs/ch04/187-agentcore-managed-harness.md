@@ -142,20 +142,20 @@ AgentCore 基于 Strands Agents 开源框架构建，这一选择创造了两条
 ## Related
 - [原始文章存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentcore-managed-harness.md)
 - [OpenClaw多租户迁移: Phase 2&3部署](176-openclaw.html)
-- [AgentCore Runtime部署Apache Doris MCP Server](135-ai.html)
+- [AgentCore Runtime部署Apache Doris MCP Server](257-ai.html)
 - [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](../ch11/045-bedrock-agentcore.html)
 - [OpenClaw多租户迁移: 背景与架构概览](176-openclaw.html)
 - [OpenClaw多租户迁移: Phase 1 基础设施部署](176-openclaw.html)
-- [柚漫剧 AI 全流程提效拆解](135-ai.html)
+- [柚漫剧 AI 全流程提效拆解](257-ai.html)
 - [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](../ch11/045-bedrock-agentcore.html)
 - [Amazon Bedrock模型推理的Serverless异步架构](../ch11/135-amazon-bedrock.html)
 - [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](176-openclaw.html)
 - [Code as Agent Harness 综述](../ch09/044-code-as-agent-harness.html)
 - [harness-engineering-systematic-explainer](../ch05/057-harness-engineering.html)
-- [AI Agent 工程师能力地图](423-ai-agent.html)
+- [AI Agent 工程师能力地图](312-ai-agent.html)
 
 ## 相关实体
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](309-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](310-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 
 - [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](214-aws-devops-agent.html)
 - [Your Chief Agent Operator Lobehub](../ch03/004-agent.html)

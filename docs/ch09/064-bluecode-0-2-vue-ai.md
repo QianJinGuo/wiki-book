@@ -74,7 +74,7 @@ Skills、AGENTS.md、飞轮三者其实在解决同一个问题：让 AI 的上�
 ## 相关实体
 
 - [2 小时 0 行手写代码 VSCode 插件](../ch01/340-claude.html)（同主题不同框架）
-- [古法程序员复杂任务 Spec 写作](../ch01/392-codex.html)（spec 方法论）
+- [古法程序员复杂任务 Spec 写作](../ch01/393-codex.html)（spec 方法论）
 - [Agent Skill Spec 构建设计模式](../ch01/284-agent-skill.html)
 - [Harness Engineering](../ch05/057-harness-engineering.html)
 

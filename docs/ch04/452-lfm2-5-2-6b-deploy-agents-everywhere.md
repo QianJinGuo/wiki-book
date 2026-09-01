@@ -6,7 +6,7 @@
 
 # LFM2.5-2.6B: Deploy Agents Everywhere
 
-> **Background**：Liquid AI 于 2026-08-04 发布 LFM2.5-2.6B，定位端侧（on-device）Agentic 模型：小到可跑在手机上、CPU 上保持响应、能力足以支撑 Agentic 工作流（规划、工具调用、多步任务）。与同系列 [LFM2.5-230M](135-ai.html)（边缘小模型）和 [LFM2.5 Encoders](135-ai.html)（长上下文编码器）形成互补。
+> **Background**：Liquid AI 于 2026-08-04 发布 LFM2.5-2.6B，定位端侧（on-device）Agentic 模型：小到可跑在手机上、CPU 上保持响应、能力足以支撑 Agentic 工作流（规划、工具调用、多步任务）。与同系列 [LFM2.5-230M](257-ai.html)（边缘小模型）和 [LFM2.5 Encoders](257-ai.html)（长上下文编码器）形成互补。
 
 ## 核心定位：端侧 Agent 的经济学转变
 
@@ -32,7 +32,7 @@ LFM2.5-2.6B 的核心论点：**移除 per-token 成本会改变开发者构建�
 
 | 模型 | 定位 | 关键差异 |
 |------|------|----------|
-| [LFM2.5-230M](135-ai.html) | 最小边缘模型，19T tokens | 工具调用/数据提取，213 tok/s（S25 Ultra） |
+| [LFM2.5-230M](257-ai.html) | 最小边缘模型，19T tokens | 工具调用/数据提取，213 tok/s（S25 Ultra） |
 | LFM2.5-2.6B | 端侧 Agentic 主力 | ~34T tokens、128K 词表、四阶段 Agentic 后训练 |
 | LFM2.5-8B-A1B | 更大体量（A1B = 1B 激活） | MOPD/词表扩展流程的同源参考 |
 

@@ -7,13 +7,13 @@
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/from-doer-to-director-the-ai-mindset-shift.md)
 
 ## 相关实体
-- [独家对话罗福莉：AI范式已然巨变！](../ch04/135-ai.html)
+- [独家对话罗福莉：AI范式已然巨变！](../ch04/257-ai.html)
 - [agentic code review](133-agentic-code-review.html)
 - [apple foundation models](125-apple-foundation-models.html)
 - [the oracle and the firm](https://github.com/QianJinGuo/wiki/blob/main/entities/calv-oracle-and-the-firm.md)
 - [what job interviews taught me about kubernetes](https://github.com/QianJinGuo/wiki/blob/main/entities/notnotp-k8s-interviews-non-technical.md)
 - [here](https://github.com/QianJinGuo/wiki/blob/main/entities/randsinrepose-we-dont-believe-you-rub.md)
-- [a backdoor in a linkedin job offer](../ch04/135-ai.html)
+- [a backdoor in a linkedin job offer](../ch04/257-ai.html)
 - [every frame perfect](132-every-frame-perfect.html)
 - [the golden rule of customizable select](https://github.com/QianJinGuo/wiki/blob/main/entities/webkit-customizable-select-golden-rule.md)
 

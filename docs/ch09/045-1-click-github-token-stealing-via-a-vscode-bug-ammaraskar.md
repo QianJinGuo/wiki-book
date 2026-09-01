@@ -52,7 +52,7 @@ VSCode 在 webview 与扩展 host 之间使用 `postMessage` API 通信。ammara
 - **Autonomous Vulnerability Hunting with MCP** — MCP 驱动的自动化漏洞狩猎趋势
 
 ## 相关实体
-- [Auditing Gitlab Cicd Kill Chain Black Hills 2026](../ch04/135-ai.html)
+- [Auditing Gitlab Cicd Kill Chain Black Hills 2026](../ch04/257-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vscode-github-token-stealing-1-click-pwn-ammaraskar-2026.md)
 

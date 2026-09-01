@@ -39,7 +39,7 @@
 ### 新 SOTA
 组合 MemTree/MemOS 的树状组织能力与 MemoryOS 的分层存储架构，设计出低 token 开销新框架（lme-sota）。
 
-## 与 [Agent Memory Architecture](../ch04/322-perplexity-brain-self-improving-agent-memory-architecture.html) 的关系
+## 与 [Agent Memory Architecture](../ch04/323-perplexity-brain-self-improving-agent-memory-architecture.html) 的关系
  从**架构本质**层面探讨 Agent Memory 的治理命题（write–manage–read 闭环、四类建模对象、六维度记忆单元）。本文在此基础上提供**模块化抽象 + 实验验证**：四组件框架将的直觉概念分解为可评测的子系统，并量化了不同设计选择的效果。
 
 ## 相关主题

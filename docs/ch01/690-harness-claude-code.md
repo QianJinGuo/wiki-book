@@ -9,7 +9,7 @@
 ## 相关实体
 
 - [boris cherny 新访谈：开发工具正在从 ide 变成 agent 控制台](https://github.com/QianJinGuo/wiki/blob/main/entities/iqsixinp9lxnkg7avfhfcq.md)
-- [现在如何使用 ai：一份快速指南（ethan mollick）](../ch04/135-ai.html)
+- [现在如何使用 ai：一份快速指南（ethan mollick）](../ch04/257-ai.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-dynamic-workflows-thariq-blog-gaia.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)

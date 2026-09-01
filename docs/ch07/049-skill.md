@@ -88,25 +88,25 @@ Binary Eval + Reflection Agent 的组合，实质上是将 Agent 的自我改进
 - [Skill 评估方法](../ch01/284-agent-skill.html) — 如何评估 Skill 质量
 
 ## 相关实体
-- [十年老技术开发的 AI Agent 探索之路](../ch04/423-ai-agent.html)
-- [9个Agent技能模块化SageMaker微调生命周期](../ch04/423-ai-agent.html)
+- [十年老技术开发的 AI Agent 探索之路](../ch04/312-ai-agent.html)
+- [9个Agent技能模块化SageMaker微调生命周期](../ch04/312-ai-agent.html)
 - [SkillX — 层次化技能知识库](054-skill.html)
 - [Anthropic 14 个 Agent Skills 设计模式](../ch04/077-anthropic-agent.html)
 - [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](054-skill.html)
-- [SkillClaw](../ch04/335-skillclaw-nacos-agent-skill-registry.html)
+- [SkillClaw](../ch04/336-skillclaw-nacos-agent-skill-registry.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](016-hermes-skill.html)
 - [四种 Sub Agent 模式](../ch03/004-agent.html)
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/301-agent-skills.html)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/302-agent-skills.html)
 
 - [Qoder Skills 完全指南](031-qoder-skills.html)
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](../ch04/301-agent-skills.html)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](../ch04/302-agent-skills.html)
 - [Garry Tan](https://github.com/QianJinGuo/wiki/blob/main/entities/garry-tan-yc-ceo.md)
 - [Agent Workflows](../ch03/004-agent.html)
 - [Hermes Agent](../ch04/161-hermes-agent.html)
 - [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)
 - [你写的 Skill，及格了吗？](054-skill.html)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
-- [AI Agent 工程师能力地图](../ch04/423-ai-agent.html)
+- [AI Agent 工程师能力地图](../ch04/312-ai-agent.html)
 - [阿里云端到端业务需求专家 agent：multica 平台 + superai-* 技能集群 + tdd/pre-pus](../ch03/004-agent.html)
 
 ---

@@ -136,7 +136,7 @@ prompt filter + input validation + output monitoring + human review——多层�
 红队发现的攻击路径应反馈到 harness 的约束设计——持续改进安全边界。
 
 ## 相关实体
-- [Ai Skill Skill Creator 源码拆解](../ch04/234-skill-skill.html)
+- [Ai Skill Skill Creator 源码拆解](../ch04/235-skill-skill.html)
 - [Llm Agent脚手架如何具备自进化能力以Hermes Agent为例](../ch04/161-hermes-agent.html)
 - [Agentic Ai System Architecture Harness Skill Mcp](../ch05/067-harness-skill.html)
 

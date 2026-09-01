@@ -139,7 +139,7 @@ ChatGPT Futures名单揭示的机会图谱表明，AI的真正价值在于使此
 
 ## 相关实体
 - [全球Ai新王诞生Anthropic估值冲爆12万亿首次反超Openai](316-openai.html)
-- [Jury Dismisses All Claims In Elon Musk S Lawsuit Against Ope](571-jury-dismisses-all-claims-in-elon-musk-s-lawsuit-against-ope.html)
+- [Jury Dismisses All Claims In Elon Musk S Lawsuit Against Ope](572-jury-dismisses-all-claims-in-elon-musk-s-lawsuit-against-ope.html)
 - [Thehackernews Fake Openai Privacy Filter](316-openai.html)
 - [Openai Buys Ai Consultancy Enterprises](316-openai.html)
 - [Microsoft Is Quietly Shopping For An Openai Replac](031-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
