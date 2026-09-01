@@ -30,8 +30,8 @@ Linux 的成功不仅因为开源，更因为 Linux Foundation 提供了治理�
 
 ## 相关实体
 - [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](../ch12/050-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes.html)
-- [Fedora Hummingbird Container Security](../ch04/135-ai.html)
-- [Pixel 10 Zero Click Exploit Chain](../ch04/135-ai.html)
+- [Fedora Hummingbird Container Security](../ch04/257-ai.html)
+- [Pixel 10 Zero Click Exploit Chain](../ch04/257-ai.html)
 - [Anthropic_Cache_Tokenomics](../ch12/002-token.html)
 - [Novee Security How To Get A 100 Conference Acceptance Rate The No](https://github.com/QianJinGuo/wiki/blob/main/entities/novee-security-how-to-get-a-100-conference-acceptance-rate-the-no.md)
 

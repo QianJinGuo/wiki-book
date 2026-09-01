@@ -33,9 +33,9 @@ source_published: 2026-04-01
 - [Hermes Agent V014 Architecture Shugex](../ch04/161-hermes-agent.html)
 - [Claude Code Team 10 Tips Boris Data派Thu](../ch03/057-claude-code.html)
 - [Hermes Agent Soul Md Personality Shugex](../ch04/161-hermes-agent.html)
-- [Imclaw通过微信飞书操控Claudecodecodexgeminiclipi Agent蜂群](../ch04/260-pi-agent.html)
+- [Imclaw通过微信飞书操控Claudecodecodexgeminiclipi Agent蜂群](../ch04/261-pi-agent.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/035-agent-harness.html)
-- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](../ch04/135-ai.html)
+- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](../ch04/257-ai.html)
 
 ## 实践启示
 

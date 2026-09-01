@@ -2,7 +2,7 @@
 
 ## Ch04.441 阿里云 AgentLoop：企业级智能体自进化飞轮（4 环闭环 + LoongSuite 84% 字段覆盖 + Trace2Dataset 90% 节省 + Agent-as-a-Judge 90% 一致 + 记忆库/经验库）
 
-> 📊 Level ⭐⭐⭐ | 31.0KB | `entities/aliyun-agentloop-enterprise-agent-self-evolution-flywheel.md`
+> 📊 Level ⭐⭐⭐ | 34.2KB | `entities/aliyun-agentloop-enterprise-agent-self-evolution-flywheel.md`
 
 # 阿里云 AgentLoop：企业级智能体自进化飞轮
 
@@ -149,7 +149,7 @@
 | 实体 | 关系 | 互补角度 |
 |---|---|---|
 | [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](../ch09/038-coding-agent.html) | **第 1 环底层** | LoongSuite Pilot 端侧 + 3 类 Agent 形态 + 4 大观测审计能力（401 行深度文档） |
-| [Loongsuite Genai Semconv Alibaba](135-ai.html) | **第 1 环语义规范** | OTel GenAI semconv + STEP/MCP span 扩展的统一数据语言 |
+| [Loongsuite Genai Semconv Alibaba](257-ai.html) | **第 1 环语义规范** | OTel GenAI semconv + STEP/MCP span 扩展的统一数据语言 |
 | [Aliyun Cms2 Cli Skill Natural Language Observability](../ch07/054-skill.html) | **接入层** | CMS2 Skill 化（CLI 6 步 + K8s 自动注入 + 5 大场景） |
 | [Harness Engineering实践做了一个平台让Ai一晚上自动评测和优化你的系统](../ch05/057-harness-engineering.html) | **同源早期表述** | 2026-04-29 阿里云"一晚上自动评测和优化你的系统"平台（评测→优化三轮 90.7→97.4→99.1），可能是 AgentLoop 早期形态或同系列产品 |
 | [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/004-agent.html) | **理论框架** | 阿里"四阶段六维度"Agent 进化理论框架 |
@@ -334,6 +334,40 @@ AgentLoop 不只关注单一分数，而是同时衡量：成功率、同类任�
 **AgentSpace 工作空间**概念：数据、数据集、评估器、实验都归属在某个空间之下，"自动创建"可预置场景基础资源。演示基于 Claude Code / Claude Agent SDK 构建的客服 Agent，接入走探针或 webhook 两条路。**消融实验预告**：经验注入收益 耗时降低 30%~40%、成本降低 20%~47%（本系列最后一篇详述）。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentloop-data-flywheel-overview-aliyun-2026.md)
+
+## 十五、2026-09-01 补充：评估体系方法论（5 篇系列第三篇）
+
+>
+
+### 评估器两层结构
+
+评估分两层：**评估器（Evaluator）** 定义"怎么评"——包含类型、输出定义、Rubric 评判标准，与具体数据无关可复用；**评估任务（Evaluation Task）** 定义"评什么数据、何时评"——指定评估器和数据源的执行配置。比喻：评估器是考卷和评分标准，评估任务是组织考试。
+
+### 评估器类型：Agent 评估 vs Code 评估
+
+- **Code 评估**：代码规则打分，确定便宜，只覆盖格式/长度/字段完整性等可规则化指标
+- **Agent 评估（Custom Agent）**：评估 Agent 像人一样阅读 input/output/轨迹，按 Rubric 判断打分，覆盖语义级指标（回答是否切题/流程是否合理），代价是消耗更大
+
+### 黄金指标 → Rubric 拆解
+
+黄金指标分两类：**回答质量**（最终答案对不对）和**执行过程**（工具调用是否合理）。可让 AI 基于业务场景自动拆解成 Rubric——每个指标的分档规则、权重、总分公式。Rubric 把抽象的"好"拆成可判定评分细则，评估从"凭感觉"变成"可复现"。特别关注的指标（如"是否泄露隐私"）可提出来作为顶层评估器单独评估。
+
+### 评估器输入/输出变量
+
+三个输入变量：input（用户输入）、output（Agent 输出）、trace.agent（运行轨迹）——既能评结果也能评过程。输出结构化字段：score / raw-weighted score（0~1）/ final score / decision / scenario type / summary / explanation / **rubric version**（Rubric 迭代时区分"Agent 变了还是标准变了"）。
+
+### 评估任务四配置
+
+1. **轨迹数据 vs Trace 数据**：评估 Agent 行为用轨迹数据（智能体行为视角），非 Trace 数据（微服务基础设施视角）
+2. **运行策略**：持续评估（来一条评一条，线上盯盘）/ 历史评估（某时段完整评估，复盘分析）
+3. **采样配置**：最大样本数+采样比例控制成本，先采样跑通再全量
+4. **字段映射**：trace.input→input, trace.output→output, 轨迹数据→trace.agent
+
+### Badcase 闭环
+
+评估结果不只打分，还给出"为什么是这个分"——证据字段提供判定依据，低分条目可直接定位调优方向。多次评估看均值消除浮动。在线评估抓出的 badcase 沉淀进数据集，成为实验回测弹药——评估是飞轮承上启下一环：上承观测数据，下接实验回测。
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentloop-eval-golden-metrics-rubric-mayunlei-aliyun-2026-09-01.md)
 
 ---
 

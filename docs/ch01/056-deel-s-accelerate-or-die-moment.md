@@ -33,7 +33,7 @@ Deel 的增长之所以反直觉，在于它所在的赛道看起来过于「传
 
 ### 产品与销售的再平衡
 
-Deel 的增长引擎不是纯 PLG 也不是纯企业销售，而是「以产品为加速器、以销售为收割机」的混合体。文章明确指出：加速主要指产品，收入会随之而来；不加速产品的公司 2026 年将面临 churn 飙升与 CAC 上涨。Deel 的 AI 产品线直接嵌入客户既有工作流——CFO 在 ChatGPT 里查询 Deel 数据、IT 用 Sastrify 管理软件采购、员工绩效被 token 用量量化——本质是把 AI 时代的对话式入口与自动化流程嫁接到既有 system of record 上，用产品打开新市场，而非依赖销售团队硬推。与 [SaaStr 对 enterprise AI 竞争格局的分析](../ch04/135-ai.html) 中「谁在赢」的讨论相比，Deel 的差异化在于：它不卖「AI 功能」，而是卖「AI 时代的基础设施席位」。
+Deel 的增长引擎不是纯 PLG 也不是纯企业销售，而是「以产品为加速器、以销售为收割机」的混合体。文章明确指出：加速主要指产品，收入会随之而来；不加速产品的公司 2026 年将面临 churn 飙升与 CAC 上涨。Deel 的 AI 产品线直接嵌入客户既有工作流——CFO 在 ChatGPT 里查询 Deel 数据、IT 用 Sastrify 管理软件采购、员工绩效被 token 用量量化——本质是把 AI 时代的对话式入口与自动化流程嫁接到既有 system of record 上，用产品打开新市场，而非依赖销售团队硬推。与 [SaaStr 对 enterprise AI 竞争格局的分析](../ch04/257-ai.html) 中「谁在赢」的讨论相比，Deel 的差异化在于：它不卖「AI 功能」，而是卖「AI 时代的基础设施席位」。
 
 ### 「加速或死亡」的操作含义
 
@@ -52,9 +52,9 @@ Deel 的增长引擎不是纯 PLG 也不是纯企业销售，而是「以产品�
 
 - [Running an AI-Native Engineering Org](044-running-an-ai-native-engineering-org.html)
 - [AI-Native 组织方法论（叶小钗）](../ch05/018-ai-native.html)
-- [Anthropic AI-Native Startup Handbook](559-anthropic-ai.html)
-- [SaaStr: Who's Winning Enterprise AI](../ch04/135-ai.html)
-- [AI 时代真正的护城河是组织能力](../ch04/135-ai.html)
+- [Anthropic AI-Native Startup Handbook](560-anthropic-ai.html)
+- [SaaStr: Who's Winning Enterprise AI](../ch04/257-ai.html)
+- [AI 时代真正的护城河是组织能力](../ch04/257-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deels-accelerate-or-die-moment.md)
 

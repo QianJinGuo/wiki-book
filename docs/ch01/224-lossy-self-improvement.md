@@ -90,10 +90,10 @@ AutoML 的历史教训是：自动化在明确定义的搜索空间内效果拔�
 
 ## 相关实体
 - [The Shape Of The Thing Mollick](159-the-shape-of-the-thing.html)
-- [World Knowledge Agent Self Evolution Tencent Hkustgz](../ch04/228-world-knowledge-agent.html)
+- [World Knowledge Agent Self Evolution Tencent Hkustgz](../ch04/229-world-knowledge-agent.html)
 - [Claude Code Self Repair Hooks Memory Config](../ch03/057-claude-code.html)
 - [Problem With Mathematically Proven Claims About Llms](267-problem-with-mathematically-proven-claims-about-llms.html)
-- [Deli Auto Research Skill Deepseek](417-deepseek.html)
+- [Deli Auto Research Skill Deepseek](418-deepseek.html)
 
 ## 相关引用
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lossy-self-improvement.md)

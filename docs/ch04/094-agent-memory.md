@@ -145,19 +145,19 @@ Memory 出错时，工程师要能查、能追溯、能回滚。这意味着：
 记住：Memory 系统早期，先做到"像工程系统一样能查账"，再追求"像人一样记忆"。
 
 ## 相关实体
-- [Agent Memory 架构本质](322-perplexity-brain-self-improving-agent-memory-architecture.html)
+- [Agent Memory 架构本质](323-perplexity-brain-self-improving-agent-memory-architecture.html)
 - [memory agent systems cobanov](../ch03/004-agent.html)
 
 - [AI Agent 记忆系统架构](131-how-ai-agent-memory-works.html)
 - [深度拆解 Hermes Agent 记忆系统](161-hermes-agent.html)
 - [ai agent memory systems](133-agent-memory.html)
-- [你不知道的 Agent 原理架构与工程实践](275-agent-principle-architecture-engineering-practice.html)
+- [你不知道的 Agent 原理架构与工程实践](276-agent-principle-architecture-engineering-practice.html)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
 - [Agent Harness 架构](../ch05/035-agent-harness.html)
 - [Agent 自我改进的六条路](../ch03/004-agent.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/008-harness.html)
 - [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](176-openclaw.html)
-- [AI Coding Agent 记忆系统](252-ai-coding-agent.html)
+- [AI Coding Agent 记忆系统](253-ai-coding-agent.html)
 - [Agent Memory System Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-system-design.md)
 - [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
 - [Thin Harness Fat Skills](../ch05/065-thin-harness-fat-skills-ai.html)

@@ -110,7 +110,7 @@
 - [Impeccable](../ch05/001-impeccable.html) —— skill 内命令的范例
 - [Agent Skill 编写指南](../ch01/284-agent-skill.html)
 - [10 篇论文看懂 AI Agent Skill](054-skill.html)
-- [Agent Skills 系统性综述](../ch04/301-agent-skills.html)
+- [Agent Skills 系统性综述](../ch04/302-agent-skills.html)
 - [Skills 系统设计三路对比](054-skill.html)
 - [Agent/Skills/Teams 架构演进](../ch04/199-agent-skills-teams.html)
 

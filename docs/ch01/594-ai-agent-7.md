@@ -15,7 +15,7 @@
 - [Claude Code Source Leak Lifecycle Analysis](../ch03/057-claude-code.html)
 - [Vibe Coding Agentic Engineering Convergence Simon Willison](../ch09/038-coding-agent.html)
 - [Claude Code Harness Deep Understanding](337-claude-code-harness-deep-understanding.html)
-- [Pi Mono Github](473-github.html)
+- [Pi Mono Github](474-github.html)
 - [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](../ch03/057-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-interview-7-capabilities.md)

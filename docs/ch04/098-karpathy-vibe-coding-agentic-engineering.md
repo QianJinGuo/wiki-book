@@ -101,7 +101,7 @@ Karpathy 给出了他未来 6-12 个月关注的三个信号，可作为行业�
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/008-harness.html)
 - [harness-engineering-systematic-explainer](../ch05/057-harness-engineering.html)
 - [Agent 原理、架构与工程实践](../ch03/004-agent.html)
-- [AI Agent 工程师能力地图](423-ai-agent.html)
+- [AI Agent 工程师能力地图](312-ai-agent.html)
 
 ---
 

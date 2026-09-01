@@ -70,7 +70,7 @@
 
 ### 与 Agent 安全研究的连接
 
-这项研究也直接呼应了 [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](../ch04/423-ai-agent.html) 的核心议题：MCP / A2A 协议让 AI Agent 拥有更强的工具调用和跨系统能力，但同样的能力既可以被良性 Agent 使用，也可以被恶意 Agent 武器化。AI 蠕虫本质上就是"恶意 Agent 在网络中的传播"。
+这项研究也直接呼应了 [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](../ch04/312-ai-agent.html) 的核心议题：MCP / A2A 协议让 AI Agent 拥有更强的工具调用和跨系统能力，但同样的能力既可以被良性 Agent 使用，也可以被恶意 Agent 武器化。AI 蠕虫本质上就是"恶意 Agent 在网络中的传播"。
 
 U of T 的研究在企业 Agent 部署的语境下有额外含义：当企业部署 MCP 服务器、A2A 协议时，**这些 Agent 通信通道本身也可能是 AI 蠕虫的传播介质**。安全审计不仅要审计代码，还要审计 Agent 之间的通信模式。
 
@@ -92,7 +92,7 @@ Papernot 团队的措辞很值得注意："It was imperative for us to understan
 
 ## 相关实体
 
-- [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](../ch04/423-ai-agent.html)
+- [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](../ch04/312-ai-agent.html)
 - [Disgruntled Researcher Releases Two More Microsoft Zero Days 5239758](027-disgruntled-researcher-releases-two-more-microsoft-zero-days.html)
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)

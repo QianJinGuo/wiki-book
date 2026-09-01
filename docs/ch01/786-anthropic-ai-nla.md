@@ -108,9 +108,9 @@ Anthropic选择将NLA完全开源——包括训练代码（GitHub: kitft/natura
 
 ## 相关研究
 
-- [Anthropic最新论文：阻止AI叛变的方法](../ch04/135-ai.html) — 探讨AI自我保护行为与安全边界
-- [Anthropic联创2028年AI自我构建概率超60%](../ch04/135-ai.html) — 关于AI自我改进的前瞻预测
-- [Anthropic最危险路线图曝光](../ch04/135-ai.html) — 涉及Anthropic技术路线与AI安全挑战
+- [Anthropic最新论文：阻止AI叛变的方法](../ch04/257-ai.html) — 探讨AI自我保护行为与安全边界
+- [Anthropic联创2028年AI自我构建概率超60%](../ch04/257-ai.html) — 关于AI自我改进的前瞻预测
+- [Anthropic最危险路线图曝光](../ch04/257-ai.html) — 涉及Anthropic技术路线与AI安全挑战
 
 ---
 

@@ -235,7 +235,7 @@ DIPG 的独特贡献是：**把"verify 闭环"工程化到具体代码级别**�
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/dipg-ant-insurance-host-research-verify-offline-closed-loop.md)
 
-- [how grab is using ai agents to boost team productivity](../ch04/423-ai-agent.html)
+- [how grab is using ai agents to boost team productivity](../ch04/312-ai-agent.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
 ## 深度分析

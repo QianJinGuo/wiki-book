@@ -140,7 +140,7 @@ opencli cascade https://api.example.com/hot
 - [Impeccable Frontend Design Skill Harness Vibecoder](../ch05/001-impeccable.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/opencli-browser-automation-jingxing.md)
-- [how developers can build agentic agreement workflows on docu](236-how-developers-can-build-agentic-agreement-workflows-on-docu.html)
+- [how developers can build agentic agreement workflows on docu](237-how-developers-can-build-agentic-agreement-workflows-on-docu.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
 
 ---

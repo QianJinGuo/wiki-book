@@ -49,9 +49,9 @@ Crone Consulting 数据显示，现金的年度成本达 $124/人（ATM 费用�
 1. **GDP 1-2% 的现金成本**说明完全无现金化将带来巨大效率收益，但短期社会成本（金融排斥）不可忽视
 2. **低收入群体现金依赖**要求监管机构在推动数字支付转型时必须设计配套的普惠金融保护机制
 ## 相关实体
-- [Plaid Effects](../ch04/135-ai.html)
-- [The Stablecoin 24X7 Money Loop Fintechbrainfood](../ch04/135-ai.html)
-- [Tether Developer Grants Local Ai](../ch04/135-ai.html)
+- [Plaid Effects](../ch04/257-ai.html)
+- [The Stablecoin 24X7 Money Loop Fintechbrainfood](../ch04/257-ai.html)
+- [Tether Developer Grants Local Ai](../ch04/257-ai.html)
 - [Affirm Maps Road To 100B Gmv With Card Ai Commerce](065-affirm-maps-road-to-100b-gmv-with-card-ai-commerce.html)
 - [Amazon Bedrock Agentic Payments Guardrails](../ch11/135-amazon-bedrock.html)
 

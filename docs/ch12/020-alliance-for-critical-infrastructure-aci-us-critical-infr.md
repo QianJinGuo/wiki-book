@@ -64,17 +64,17 @@ ACI 接下来 18 个月的工作包括：建立工作组、定义试点项目、
 
 ## 相关实体
 
-- [Ai Agents Security Survey Attack Defense](../ch04/423-ai-agent.html)
+- [Ai Agents Security Survey Attack Defense](../ch04/312-ai-agent.html)
 - [Anthropic Llm Attck Navigator Cyber Operations](../ch04/142-anthropic-llm.html)
 - [Agent Security Three Step Sequence Harness Governance Identity Crewai](../ch05/008-harness.html)
 - [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](../ch11/067-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html)
-- [Aws Software Supply Chain Security Well Architected Best Practices](../ch04/135-ai.html)
+- [Aws Software Supply Chain Security Well Architected Best Practices](../ch04/257-ai.html)
 - [Cilium Tetragon Kubernetes Runtime Security Ebpf](../ch01/168-rag.html)
-- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](../ch04/225-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
-- [Ai Traffic Cyberthreat Benchmark 2026](../ch04/135-ai.html)
+- [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](../ch04/226-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [Ai Traffic Cyberthreat Benchmark 2026](../ch04/257-ai.html)
 - [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](../ch01/028-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode.html)
-- [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](../ch04/423-ai-agent.html)
-- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](../ch01/577-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.html)
+- [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](../ch04/312-ai-agent.html)
+- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](../ch01/578-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.html)
 - [5238213](https://github.com/QianJinGuo/wiki/blob/main/entities/5238213.md)
 - [5237875](https://github.com/QianJinGuo/wiki/blob/main/entities/5237875.md)
 - [820297](https://github.com/QianJinGuo/wiki/blob/main/entities/820297.md)

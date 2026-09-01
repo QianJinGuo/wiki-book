@@ -64,8 +64,8 @@ Loop Engineering 不是 Harness 的替代品，而是 Harness 之上的编排层
 
 ---
 
-- [loop engineering: 把反馈循环放进工程现场](../ch04/350-loop-engineering.html)
-- [循环工程 (loop engineering) — 清华 2026 框架](../ch04/350-loop-engineering.html)
+- [loop engineering: 把反馈循环放进工程现场](../ch04/351-loop-engineering.html)
+- [循环工程 (loop engineering) — 清华 2026 框架](../ch04/351-loop-engineering.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/loop-engineering.md)

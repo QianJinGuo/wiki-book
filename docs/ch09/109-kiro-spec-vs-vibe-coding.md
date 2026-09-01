@@ -37,7 +37,7 @@ Kiro 是一个 AI 原生开发环境。在一项为期 5 天、实际编码约�
 - [Spec-Driven Development 认知框架](https://github.com/QianJinGuo/wiki/blob/main/entities/spec-driven-development-cognitive-framework.md)
 - [Spec-Driven Development 总结](https://github.com/QianJinGuo/wiki/blob/main/entities/sdd-spec-driven-development-summary-qoder.md)
 - [Beyond Vibe Coding](https://github.com/QianJinGuo/wiki/blob/main/entities/beyond-vibe-coding-directed-generation-design-uxmag.md)
-- [AI 生产力悖论](../ch04/135-ai.html)
+- [AI 生产力悖论](../ch04/257-ai.html)
 
 ---
 

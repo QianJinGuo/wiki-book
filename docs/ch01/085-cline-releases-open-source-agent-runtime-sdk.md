@@ -47,7 +47,7 @@ Agent teams/subagents 直接在核心 runtime 内实现，session 可委派专�
 - [Cline open-source agent runtime SDK（姊妹条目）](../ch03/004-agent.html)
 - [State of CLI coding agents（2026 年中）](../ch09/038-coding-agent.html)
 - [OpenSquilla 开源 AI Agent](009-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.html)
-- [AI Gateway Production Index](../ch04/135-ai.html)
+- [AI Gateway Production Index](../ch04/257-ai.html)
 - 开源 Agent 框架
 
 ---

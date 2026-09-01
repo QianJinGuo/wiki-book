@@ -8,8 +8,8 @@
 
 ## 相关实体
 
-- [百型智能 ontoz：企业本体论 + 群智能体协同体系，新一代企业级 ai 基础设施](../ch04/135-ai.html)
-- [面壁让ai写了训练框架forgetrain，然后它自己训出了最强1b模型](../ch04/135-ai.html)
+- [百型智能 ontoz：企业本体论 + 群智能体协同体系，新一代企业级 ai 基础设施](../ch04/257-ai.html)
+- [面壁让ai写了训练框架forgetrain，然后它自己训出了最强1b模型](../ch04/257-ai.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fundamentals-large-tabular-model-nexus-is-now-available-on-a.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)

@@ -8,8 +8,8 @@
 
 ## 相关实体
 
-- [从零构建大语言模型 —— 读完这篇你就懂了](../ch01/450-llm.html)
-- [canvas hackers shinyhunters say their official domain was su](135-ai.html)
+- [从零构建大语言模型 —— 读完这篇你就懂了](../ch01/451-llm.html)
+- [canvas hackers shinyhunters say their official domain was su](257-ai.html)
 - [canvas hackers shinyhunters say their official domain was su](../ch12/010-canvas-hackers-shinyhunters-say-their-official-domain-was-su.html)
 - [democratizing machine learning at netflix: building the mode](../ch11/207-democratizing-machine-learning-at-netflix-building-the-mode.html)
 - [from silos to service topology: why netflix built a real-tim](../ch11/116-from-silos-to-service-topology-why-netflix-built-a-real-tim.html)
@@ -21,8 +21,8 @@
 - [scaling camera file processing at netflix](../ch11/011-scaling-camera-file-processing-at-netflix.html)
 - [state of routing in model serving](../ch11/152-state-of-routing-in-model-serving.html)
 - [大模型可控新突破：steering 机制、评估体系与开源落地](../ch01/657-steering.html)
-- [the recent history of ai in 32 otters](../ch01/434-the-recent-history-of-ai-in-32-otters.html)
-- [吴恩达2026新课上线！3小时包教包会，零代码小白也能成为ai超级玩家](135-ai.html)
+- [the recent history of ai in 32 otters](../ch01/435-the-recent-history-of-ai-in-32-otters.html)
+- [吴恩达2026新课上线！3小时包教包会，零代码小白也能成为ai超级玩家](257-ai.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-agent-harness-construction-akshay-baoyu.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)

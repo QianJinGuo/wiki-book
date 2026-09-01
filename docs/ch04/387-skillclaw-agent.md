@@ -11,7 +11,7 @@
 > 代码：https://github.com/AMAP-ML/SkillClaw
 
 ## 相关实体
-- [Skillclaw](335-skillclaw-nacos-agent-skill-registry.html)
+- [Skillclaw](336-skillclaw-nacos-agent-skill-registry.html)
 - [Skillclaw Collective Intelligence](../ch07/054-skill.html)
 - [Skillclaw Hyman Nightly Evolution Alibaba](../ch07/054-skill.html)
 - [Skill Rag Tsinghua Sra](../ch07/054-skill.html)

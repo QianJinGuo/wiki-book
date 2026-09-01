@@ -152,16 +152,16 @@ DeepSeek V4 不仅是技术里程碑，也是中国 LLM 团队在**架构创新*
 - 之前中国 LLM 的标签是"工程优化 + 性价比"
 - V4 之后中国 LLM 也有了自己的"架构创新"标签——mHC / CSA / HCA 都有理论贡献
 
-这与 [DeepSeek MoE 并行策略](417-deepseek.html)、[DeepSeek 成本迁移系统层 KV Cache Harness](417-deepseek.html)、[DeepSeek V4 Training 58-page Paper Deep Dive](708-deepseek-v4.html) 等文章形成完整图景。
+这与 [DeepSeek MoE 并行策略](418-deepseek.html)、[DeepSeek 成本迁移系统层 KV Cache Harness](418-deepseek.html)、[DeepSeek V4 Training 58-page Paper Deep Dive](459-deepseek-v4.html) 等文章形成完整图景。
 
 ### 六、与其他 V4 解读的关系
 
 - [DeepSeek V4 Flash/Pro: 百万级上下文与万亿参数推理新纪元](661-deepseek-v4-flash-pro.html) 关注产品侧
 - [DeepSeek V4 Flash/Pro v2](661-deepseek-v4-flash-pro.html) 是上一条的更新版
-- [DeepSeek V4 Pro vs Claude](708-deepseek-v4.html) 关注对比评测
+- [DeepSeek V4 Pro vs Claude](459-deepseek-v4.html) 关注对比评测
 - [DeepSeek V4 Flash Means LLM Steering is Interesting Again](627-deepseek-v4-flash-means-llm-steering-is-interesting-again.html) 关注 V4 Flash 的"可控生成"能力
 - [DeepSeek V4 DS4C / Antirez 本地推理](../ch09/037-deepseek-v4-ds4c-antirez.html) 关注本地部署
-- [DeepSeek V4 Training 58-page Paper Deep Dive](708-deepseek-v4.html) 关注训练侧
+- [DeepSeek V4 Training 58-page Paper Deep Dive](459-deepseek-v4.html) 关注训练侧
 - [DeepSeek Code Harness](../ch09/003-deepseek-code-harness.html) 关注 V4 在 Agent / Harness 场景的工程实践
 - [DeepSeek Code Harness 竞争者 Tina](../ch09/003-deepseek-code-harness.html) 关注竞品分析
 
@@ -179,12 +179,12 @@ DeepSeek V4 不仅是技术里程碑，也是中国 LLM 团队在**架构创新*
 
 - [DeepSeek V4 Flash/Pro: 百万级上下文与万亿参数推理新纪元](661-deepseek-v4-flash-pro.html)
 - [DeepSeek V4 Flash/Pro v2](661-deepseek-v4-flash-pro.html)
-- [DeepSeek V4 Pro vs Claude](708-deepseek-v4.html)
+- [DeepSeek V4 Pro vs Claude](459-deepseek-v4.html)
 - [DeepSeek V4 Flash Means LLM Steering is Interesting Again](627-deepseek-v4-flash-means-llm-steering-is-interesting-again.html)
 - [DeepSeek V4 DS4C / Antirez 本地推理](../ch09/037-deepseek-v4-ds4c-antirez.html)
-- [DeepSeek V4 Training 58-page Paper Deep Dive](708-deepseek-v4.html)
-- [DeepSeek MoE 并行策略](417-deepseek.html)
-- [DeepSeek 成本迁移系统层 KV Cache Harness](417-deepseek.html)
+- [DeepSeek V4 Training 58-page Paper Deep Dive](459-deepseek-v4.html)
+- [DeepSeek MoE 并行策略](418-deepseek.html)
+- [DeepSeek 成本迁移系统层 KV Cache Harness](418-deepseek.html)
 - [DeepSeek Code Harness](../ch09/003-deepseek-code-harness.html)
 - [DeepSeek Code Harness 竞争者 Tina](../ch09/003-deepseek-code-harness.html)
 - [17 种 agent 架构演进](../ch04/440-17-agent.html)

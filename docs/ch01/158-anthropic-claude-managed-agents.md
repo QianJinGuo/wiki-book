@@ -107,7 +107,7 @@ Multiagent Sessions、Outcomes、Dreams 目前均处于研究预览阶段，需�
 - [Anthropic Computer Use 最佳实践](601-anthropic-computer-use.html)
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/057-claude-code.html)
 - [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](../ch03/004-agent.html) — 另一篇技术解读，覆盖 API 细节和定价
-- [Anthropic PM 的 Agentic 工作流](../ch04/341-anthropic-pm-agentic.html) — 同一时期 Jess Yan 的 PM 视角，同一产品不同维度
+- [Anthropic PM 的 Agentic 工作流](../ch04/342-anthropic-pm-agentic.html) — 同一时期 Jess Yan 的 PM 视角，同一产品不同维度
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-claude-managed-agents-platform-launch.md)
 
 ## 架构图
@@ -129,7 +129,7 @@ Multiagent Sessions、Outcomes、Dreams 目前均处于研究预览阶段，需�
 - [Anthropic 首次揭秘下一代 Claude 怎么造](787-anthropic-claude.html)
 - [Anthropic 14 个 Agent Skills 设计模式](../ch04/077-anthropic-agent.html)
 - [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch03/004-agent.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/301-agent-skills.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/302-agent-skills.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/004-agent.html)
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](340-claude.html)
 

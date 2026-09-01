@@ -70,7 +70,7 @@ Claude for Small Business 代表了一种新兴的「AI Native SMB 产品」范�
 - [Claude Managed Agents 官方 Harness 平台指南](158-anthropic-claude-managed-agents.html)
 - [Anthropic Computer Use 最佳实践](601-anthropic-computer-use.html)
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/057-claude-code.html)
-- [Anthropic最危险路线图曝光: 无限记忆、多智能体! 硅谷AI终局仅剩双雄决顶](../ch04/135-ai.html)
+- [Anthropic最危险路线图曝光: 无限记忆、多智能体! 硅谷AI终局仅剩双雄决顶](../ch04/257-ai.html)
 - [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](../ch03/004-agent.html)
 
 ---

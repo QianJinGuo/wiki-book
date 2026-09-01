@@ -277,7 +277,7 @@ IP 白名单解决的问题是：**网络层拒绝所有非内网来源的请求
 - **本文 = 关注 execution boundary 内的多租户隔离**——**两者维度不同，但思想相通**："默认不可信 + 强制隔离 + 边界归一"
 
 ### 与阿里云 Agentic Cloud
-- [阿里云 Agentic Cloud](../ch04/272-agentic-cloud.html) = 关注 **云平台级别的 agent-as-a-service**（Bailian/Qwen/MaaS）——**关注平台对外的能力**
+- [阿里云 Agentic Cloud](../ch04/273-agentic-cloud.html) = 关注 **云平台级别的 agent-as-a-service**（Bailian/Qwen/MaaS）——**关注平台对外的能力**
 - **本文 = 关注平台对内的工程化**（snapshot + hot-swap + 凭据隔离）——**关注平台自身的建设**
 
 ## 实战检查清单（4 条铁律 → 9 项检查）

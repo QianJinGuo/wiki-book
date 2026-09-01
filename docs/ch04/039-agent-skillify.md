@@ -94,12 +94,12 @@ OpenAI 的"garbage collection"思路值得借鉴：后台定期运行清理 Agen
 每个 skill 都是对当前模型能力边界的假设。Anthropic 的演进经验：context reset 先被淘汰，sprint 分解随后被淘汰，evaluator 仍然有价值。正确的做法：**逐一移除旧组件，测试质量是否真的下降**，而不是继续叠加新组件。Skill 腐朽有 Context Rot 式、数据漂移式、架构错位式三种形态。
 
 ## 相关概念
-- [GBrain 自进化体系](../ch01/475-llm-wiki-obsidian-wiki-gbrain.html) — skillify 是 gbrain 自演化的核心机制
+- [GBrain 自进化体系](../ch01/476-llm-wiki-obsidian-wiki-gbrain.html) — skillify 是 gbrain 自演化的核心机制
 - [Harness Engineering](../ch05/057-harness-engineering.html) — 传感器失效是 latent space 工作分类错位的体现
 - [Harness 从 Prompt 到工程体系](../ch05/008-harness.html) — 约束与自主权的辩证关系
-- [AIAIGC峰会嘉宾阵容](361-aiaigc.html)
+- [AIAIGC峰会嘉宾阵容](362-aiaigc.html)
 - [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](176-openclaw.html)
-- [从提需求到部署发布全AI全自动化后研发效能全面跃升](135-ai.html)
+- [从提需求到部署发布全AI全自动化后研发效能全面跃升](257-ai.html)
 - [Hermes Agent vs OpenClaw 对比分析](161-hermes-agent.html)
 - [AutoClaw 使用体验：自带 66 个 Skill、可接入聊天工具、安全性高](../ch07/054-skill.html)
 - [Harness Engineering 实战：AI Coding 率从 25% 提升至 90%](../ch05/057-harness-engineering.html)

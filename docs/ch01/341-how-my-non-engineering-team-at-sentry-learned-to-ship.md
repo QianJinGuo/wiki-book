@@ -74,7 +74,7 @@ Sentry 给每种页面类型写了 Skills（AI 指令文件）：landing pages�
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](651-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 - [DDoSing Software Delivery Pipelines](https://github.com/QianJinGuo/wiki/blob/main/entities/varoa-ddosing-software-delivery-pipelines-2026.md)
-- [Unexpected lessons from an AI-assisted prototyping experiment](../ch04/135-ai.html)
+- [Unexpected lessons from an AI-assisted prototyping experiment](../ch04/257-ai.html)
 
 ## 实践启示
 

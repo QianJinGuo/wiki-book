@@ -182,7 +182,7 @@ Boris 谈到的"Loop"概念值得专门关注："它让 Agent 从一次回答，
 - [Anthropic 内部实践](https://github.com/QianJinGuo/wiki/blob/main/entities/e9ffy3r5kwa1ja5pywbbrg.md)
 - [DeepSeek V4 Flash Pro](661-deepseek-v4-flash-pro.html)
 - [加速 LLM 模型加载与上下文窗口](695-accelerate-llm-model-loading-and-increase-context-windows-wi.html)
-- [大型表格模型基础](../ch04/135-ai.html)
+- [大型表格模型基础](../ch04/257-ai.html)
 
 ---
 

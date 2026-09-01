@@ -115,7 +115,7 @@ SkillRepo 作为外部 Markdown 文件存在，带来了传统记忆系统不具
 ## 相关实体
 - [SkillOS: Learning Skill Curation for Self-Evolving Agents](115-skillos-learning-skill-curation-for-self-evolving-agents.html)
 - [Self-Evolving Agents 系统性综述](181-self-evolving-agents.html)
-- [Memento-Skills — 技能外部记忆让 Agent 自进化](307-memento-skills-agent.html)
+- [Memento-Skills — 技能外部记忆让 Agent 自进化](308-memento-skills-agent.html)
 - [Hermes Agent 自进化机制源码解析](161-hermes-agent.html)
 - [Native Parallel Reasoner: 原生并行推理](https://github.com/QianJinGuo/wiki/blob/main/entities/native-parallel-reasoner-icml2026.md)
 - [self-evolving agents 系统性综述（厦门大学等多机构联合）](181-self-evolving-agents.html)

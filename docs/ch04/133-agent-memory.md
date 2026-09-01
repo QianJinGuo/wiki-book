@@ -157,7 +157,7 @@ Perplexity 推出 [Brain](https://www.perplexity.ai/computer/memory) 系统，�
 - [AI Agent 记忆系统架构](131-how-ai-agent-memory-works.html)
 - [深度拆解 Hermes Agent 记忆系统](161-hermes-agent.html)
 - [ai agent memory systems](133-agent-memory.html)
-- [Personal AI 工作台：Claude 18 动作框架](135-ai.html)
+- [Personal AI 工作台：Claude 18 动作框架](257-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
 
 ---

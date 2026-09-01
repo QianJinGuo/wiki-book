@@ -78,16 +78,16 @@ On-Demand 评估在 CI/CD 中的角色是**门禁（gate）而非建议**——�
 ## 相关实体
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](217-amazon-nova.html)
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](048-prowler-genai.html)
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/309-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/310-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](211-bedrock.html)
 - [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](135-amazon-bedrock.html)
 
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04/038-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
-- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/495-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
+- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/496-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
 - [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/383-amazon-bedrock-agentcore.html)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](211-bedrock.html)
-- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/519-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
+- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/520-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](108-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)
 

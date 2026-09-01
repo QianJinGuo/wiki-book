@@ -8,7 +8,7 @@
 
 ## 相关实体
 
-- [interconnects ai p open and closed models are on different](../ch04/135-ai.html)
+- [interconnects ai p open and closed models are on different](../ch04/257-ai.html)
 - [llmshare: using shared chatbot pages to distribute malware](653-llmshare-using-shared-chatbot-pages-to-distribute-malware.html)
 - [zapocalypse: the attack chain that could have hijacked zapie](../ch11/193-zapocalypse-the-attack-chain-that-could-have-hijacked-zapie.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/google-brings-local-ai-agents-to-laptops-with-gemma-4-12b-20260606.md)

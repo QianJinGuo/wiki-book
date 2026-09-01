@@ -177,7 +177,7 @@ Generator 提出构建计划时，evaluator 要审查的是「这个功能怎么
 - [Agentscope Java 2.0 Enterprise Distributed Harness](008-harness.html)
 - [Gaode Uplift Model Iteration Agent Long Running Harness](008-harness.html)
 - [Long Running Agent Ralph Loop Harness Takeover](011-agent-ralph-loop-harness.html)
-- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](../ch04/135-ai.html)
+- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](../ch04/257-ai.html)
 - [Langgraph A2A Adversarial Agent Team](../ch04/165-langgraph.html)
 
 ---

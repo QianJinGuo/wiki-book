@@ -124,7 +124,7 @@ autoscaling:
 
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/litellm-生产级部署基于-aws-ecseks-的-ai-gateway-架构.md)
 - [LiteLLM Bedrock 成本治理](034-litellm-amazon-bedrock.html) — 姐妹篇（运行时限额 + 审计）
-- [LiteLLM + QuickSight 可视化](../ch01/450-llm.html) — 姐妹篇（运维监控）
+- [LiteLLM + QuickSight 可视化](../ch01/451-llm.html) — 姐妹篇（运维监控）
 - [AWS NFW AI 冲突检测](110-aws-network-firewall-ai.html) — NFW 与 ECS/EKS 部署组合使用
 
 ## 架构图

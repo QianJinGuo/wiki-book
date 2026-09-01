@@ -12,7 +12,7 @@
 
 ## 相关实体
 - [OpenAI buys AI consultancy to sell enterprises on its models](316-openai.html)
-- [Interaction Models: A Scalable Approach to Human-AI Collaboration](../ch04/135-ai.html)
+- [Interaction Models: A Scalable Approach to Human-AI Collaboration](../ch04/257-ai.html)
 - [OpenAI三个语音模型发布同传被杀死](316-openai.html)
 
 ## 深度分析

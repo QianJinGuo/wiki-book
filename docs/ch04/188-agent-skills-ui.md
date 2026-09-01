@@ -125,8 +125,8 @@ Dashboard 作为输出端的意义被低估了。当前大多数 Agent 系统侧
 ## 相关实体
 - [Agent Skills Teams Architecture Evolution Selection Guide](199-agent-skills-teams.html)
 - [Anthropic 14 Skill Patterns Best Practices](../ch07/054-skill.html)
-- [精选 8 个 Ui 设计师必备的 Ai 智能体技能Agent Skills](301-agent-skills.html)
-- [Agent Skills Comprehensive Survey](301-agent-skills.html)
+- [精选 8 个 Ui 设计师必备的 Ai 智能体技能Agent Skills](302-agent-skills.html)
+- [Agent Skills Comprehensive Survey](302-agent-skills.html)
 - [Skill System Design Three Way Comparison](../ch07/054-skill.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
 

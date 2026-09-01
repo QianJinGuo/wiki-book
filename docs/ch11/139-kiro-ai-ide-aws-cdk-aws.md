@@ -83,7 +83,7 @@ FrontendStack（前端应用，经常更新）
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/autoresearch-software-development.md)
 
-- [AI 驱动的 Graviton 迁移评估：Kiro Power 实战指南 | 亚马逊AWS官方博客](../ch04/135-ai.html)
+- [AI 驱动的 Graviton 迁移评估：Kiro Power 实战指南 | 亚马逊AWS官方博客](../ch04/257-ai.html)
 
 ---
 

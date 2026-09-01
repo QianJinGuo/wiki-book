@@ -66,12 +66,12 @@ Lambert 指出"依赖单一私人公司来评估国际关键基础设施的安�
 
 ## 相关实体
 - [Nathan Lambert Open Models Bets 2026](326-nathan-lambert.html)
-- [Chinese Ai Lab Insights Nathan](../ch04/135-ai.html)
+- [Chinese Ai Lab Insights Nathan](../ch04/257-ai.html)
 - [How Open Model Ecosystems Compound](598-how-open-model-ecosystems-compound.html)
 - [Deepseek V4 Flash Pro 通往百万级上下文与万亿参数推理的新纪元 V2](661-deepseek-v4-flash-pro.html)
-- [Multilingual Ai](../ch04/135-ai.html)
+- [Multilingual Ai](../ch04/257-ai.html)
 
-- [dean ball on open models and government control](546-dean-ball-on-open-models-and-government-control.html)
+- [dean ball on open models and government control](547-dean-ball-on-open-models-and-government-control.html)
 
 ## 相关引用
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nathan-lambert-claude-mythos-open-weights.md)

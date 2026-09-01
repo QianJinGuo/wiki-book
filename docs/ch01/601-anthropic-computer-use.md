@@ -41,7 +41,7 @@ Anthropic 发布的这份最佳实践揭示了 Computer Use 技术落地的几�
 8. **复杂长任务考虑教学模式。** 当任务涉及多步骤 UI 操作时，让模型观看人类示范比编写详细指令更有效。
 
 ## 相关实体
-- [Computer Use 45X More Expensive Than Structured Apis](../ch04/219-computer-use-45x-more-expensive-than-structured-apis.html)
+- [Computer Use 45X More Expensive Than Structured Apis](../ch04/220-computer-use-45x-more-expensive-than-structured-apis.html)
 - [Claude Opus 47](340-claude.html)
 - [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](294-claude-managed-agents.html)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](229-anthropic-claude-code.html)

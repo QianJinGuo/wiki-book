@@ -18,7 +18,7 @@ Strands Agent SDK、Amazon Bedrock、AgentCore
 - [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](135-amazon-bedrock.html)
 - [从0到1:联想基于Strands Agent SDK的资源智能巡检Agent创新 | 亚马逊AWS官方博客](../ch03/004-agent.html)
 - [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](../ch03/057-claude-code.html)
-- [Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions](../ch04/135-ai.html)
+- [Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions](../ch04/257-ai.html)
 - [基于Bedrock AgentCore+Strands构建企业级智能搜索平台实践 | 亚马逊AWS官方博客](045-bedrock-agentcore.html)
 
 ## 深度分析

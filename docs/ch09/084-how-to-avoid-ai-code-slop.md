@@ -8,7 +8,7 @@
 - 来源：eng-leadership
 - 评分：v=7 × c=8
 ## 相关实体
-- [Ai Coding Agent Quality Defense Five Control Mechanisms](../ch04/252-ai-coding-agent.html)
+- [Ai Coding Agent Quality Defense Five Control Mechanisms](../ch04/253-ai-coding-agent.html)
 - [How Claude Code Works In Large Codebases Best Practices And Where To Start](../ch01/349-how-claude-code-works-in-large-codebases-best-practices-and.html)
 - [Low Code Api Integration](../ch03/054-how-to-build-low-code-api-integrations-for-enterprise-apps-u.html)
 - [How_Claude_Code_Works_In_Large_Codebases](../ch01/340-claude.html)

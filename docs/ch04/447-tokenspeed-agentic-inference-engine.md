@@ -152,7 +152,7 @@ TokenSpeed 的连续批处理针对 Agent 场景进行了专门调优，但实�
 ## 相关实体
 
 - [LightSeek TokenSpeed — TokenSpeed 的姐妹项目，专注于轻量级推理优化](../ch12/002-token.html)
-- [GLM-5 Scaling Pain 推理优化 — 高并发 Coding Agent 场景的推理问题复盘](135-ai.html)
+- [GLM-5 Scaling Pain 推理优化 — 高并发 Coding Agent 场景的推理问题复盘](257-ai.html)
 - [AgentCore Managed Harness — AWS 的托管 Harness 平台，与推理引擎紧密配合](../ch05/008-harness.html)
 
 ## 延伸阅读

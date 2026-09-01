@@ -56,7 +56,7 @@ EC2 M8/R8 实例的性能提升（单 vCPU 提升 43%）和带宽升级（600Gbp
 - [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](045-bedrock-agentcore.html)
 - [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](../ch04/383-amazon-bedrock-agentcore.html)
 - [OpenClaw多租户迁移: Phase 2&3部署](../ch04/176-openclaw.html)
-- [AgentCore Runtime部署Apache Doris MCP Server](../ch04/135-ai.html)
+- [AgentCore Runtime部署Apache Doris MCP Server](../ch04/257-ai.html)
 - [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](045-bedrock-agentcore.html)
 - [OpenClaw多租户迁移: 背景与架构概览](../ch04/176-openclaw.html)
 - [基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](../ch04/383-amazon-bedrock-agentcore.html)
@@ -65,7 +65,7 @@ EC2 M8/R8 实例的性能提升（单 vCPU 提升 43%）和带宽升级（600Gbp
 - [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](045-bedrock-agentcore.html)
 - [Amazon Bedrock模型推理的Serverless异步架构](135-amazon-bedrock.html)
 
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/309-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/310-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](211-bedrock.html)
 - [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](135-amazon-bedrock.html)
 - [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](135-amazon-bedrock.html)- [aws graviton5 m9g/m9gd 实例 ga 公告](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-graviton5-m9g-m9gd-launch-2026.md)- [ec2 nat 实例选型与部署实践（aws 中国宁夏区域）](https://github.com/QianJinGuo/wiki/blob/main/entities/ec2-nat-instance-deploy-practice-aws-china-2026.md)

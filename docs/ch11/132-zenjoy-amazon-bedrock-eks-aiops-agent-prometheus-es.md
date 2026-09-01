@@ -43,11 +43,11 @@ AgentCore Runtime 的使用表明，Serverless Agent 托管正在成为 AI 原�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/zenjoy-aiops-agent-bedrock-eks-prometheus.md)
 
 ## 相关实体
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/309-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/310-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](045-bedrock-agentcore.html)
 - [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](../ch04/383-amazon-bedrock-agentcore.html)
 - [OpenClaw多租户迁移: Phase 2&3部署](../ch04/176-openclaw.html)
-- [AgentCore Runtime部署Apache Doris MCP Server](../ch04/135-ai.html)
+- [AgentCore Runtime部署Apache Doris MCP Server](../ch04/257-ai.html)
 - [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](045-bedrock-agentcore.html)
 - [OpenClaw多租户迁移: 背景与架构概览](../ch04/176-openclaw.html)
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12/031-amazon-bedrock-api.html)

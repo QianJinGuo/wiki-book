@@ -9,9 +9,9 @@
 ## 相关实体
 
 - [claude skill 质检工具 skill craft](340-claude.html)
-- [code intelligence – changelog](../ch04/352-code-intelligence-changelog.html)
+- [code intelligence – changelog](../ch04/353-code-intelligence-changelog.html)
 - [opd revisiting failure modes simple fixes storm](668-opd.html)
-- [what i’ve been building: atom report, post-training course,](../ch04/135-ai.html)
+- [what i’ve been building: atom report, post-training course,](../ch04/257-ai.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xinzhiyuan-openai-tax-ai-self-improving-codex-eval-loop-20260606.md)
 
 ## 深度分析

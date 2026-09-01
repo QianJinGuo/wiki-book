@@ -56,7 +56,7 @@ AI 生成的文本分析应配合 SVG/HTML 可视化图，并通过邮件/IM 主
 
 ## 相关实体
 - [Amazon Bedrock Api Security Guide](../ch12/031-amazon-bedrock-api.html)
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/222-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
+- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/223-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
 - [Based On Prowler Genai Build Fintech Intelligent Compliance 2](048-prowler-genai.html)
 - [Aws Bedrock Serverless Async Inference Multimodal](211-bedrock.html)
 - [Aws Bedrock Agentcore Identity Security](045-bedrock-agentcore.html)

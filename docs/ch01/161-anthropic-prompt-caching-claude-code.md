@@ -199,7 +199,7 @@ Anthropic 把缓存命中率当作基础设施级别指标来监控，一旦下�
 - [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/057-claude-code.html)
 - [Introducing Claude Platform On Aws Anthropics Native Platfor](340-claude.html)
 - [Anthropic Claude Managed Agents Platform Launch](158-anthropic-claude-managed-agents.html)
-- [腾讯研究院ai速递 20260506](487-ai-20260506.html)
+- [腾讯研究院ai速递 20260506](488-ai-20260506.html)
 - [claude-code-kairos-paradigm-2026](../ch03/057-claude-code.html)
 - [你的ai代码越写越乱，他72小时合了14个pr每个都更好——差距只在一个机制](https://github.com/QianJinGuo/wiki/blob/main/entities/complexity-ratchet-garry-tan.md)
 

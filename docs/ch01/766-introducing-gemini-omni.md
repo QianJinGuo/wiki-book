@@ -66,7 +66,7 @@ Avatar 功能本质上复现了 Deepfake 的核心能力，而 Deepfake 监管�
 - [Agi Road May Be Wrong From The Start Wang Peng Tencent](167-agi.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/introducing-gemini-omni.md)
-- [perceptron mk1 shocks with highly performant video analysis](../ch04/135-ai.html)
+- [perceptron mk1 shocks with highly performant video analysis](../ch04/257-ai.html)
 
 ---
 

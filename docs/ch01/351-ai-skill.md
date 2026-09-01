@@ -37,17 +37,17 @@ SkillsBench研究：84个任务中19%出现负向增益。
 - [Hermes Agent Skill 系统深度解析](../ch07/016-hermes-skill.html)
 
 - [Skill工程化设计：把Agent当算法用](../ch07/054-skill.html)
-- [使用 Kiro AI IDE 开发 基于Amazon EMR 的Flink 智能监控系统实践 | 亚马逊AWS官方博客](../ch04/135-ai.html)
+- [使用 Kiro AI IDE 开发 基于Amazon EMR 的Flink 智能监控系统实践 | 亚马逊AWS官方博客](../ch04/257-ai.html)
 - [LLM-as-a-Verifier: A General-Purpose Verification Framework](168-rag.html)
 - [AgentEval：YAML驱动的Agent评测框架](../ch03/004-agent.html)
-- [LBS-IntentBench — 首个真实出行隐式意图评测基准](../ch04/220-lbs-intentbench.html)
+- [LBS-IntentBench — 首个真实出行隐式意图评测基准](../ch04/221-lbs-intentbench.html)
 - [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](../ch04/161-hermes-agent.html)
 - [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04/115-skillos-learning-skill-curation-for-self-evolving-agents.html)
 - [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](../ch07/054-skill.html)
 - [Skills赏析：使用skills-refiner提升skill质量](../ch03/050-skills.html)
 - [harness-engineering-systematic-explainer](../ch05/057-harness-engineering.html)
 - [Agent 原理、架构与工程实践](../ch03/004-agent.html)
-- [AI Agent 工程师能力地图](../ch04/423-ai-agent.html)
+- [AI Agent 工程师能力地图](../ch04/312-ai-agent.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
 ## 深度分析

@@ -16,8 +16,8 @@
 - [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](135-amazon-bedrock.html)
 - [Automate Schema Generation for Intelligent Document Processing](140-automate-schema-generation-for-intelligent-document-processi.html)
 - [Navigating EU AI Act Requirements for LLM Fine-Tuning](../ch01/292-navigating-eu-ai-act-requirements-for-llm-fine-tuning.html)
-- [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](../ch04/423-ai-agent.html)
-- [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](../ch01/469-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
+- [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](../ch04/312-ai-agent.html)
+- [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](../ch01/470-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12/031-amazon-bedrock-api.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)

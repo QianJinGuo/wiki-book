@@ -61,7 +61,7 @@ Codeindex的Parser适配层和GraphDB适配层设计体现了分层架构的工�
 - [LLM-as-a-Verifier: A General-Purpose Verification Framework](168-rag.html)
 - [你不知道的 Agent：原理、架构与工程实践](../ch03/004-agent.html)
 - [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](../ch05/008-harness.html)
-- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/289-agentrun.html)
+- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/290-agentrun.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
 - [RAG深度解析：分块、向量化、召回、重排，才是"蒸馏同事skill"的关键](../ch07/054-skill.html)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/057-harness-engineering.html)
@@ -69,7 +69,7 @@ Codeindex的Parser适配层和GraphDB适配层设计体现了分层架构的工�
 
 - [Hermes Agent /goal 长任务运行时架构](../ch04/161-hermes-agent.html)
 - [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](../ch04/161-hermes-agent.html)
-- [LoongSuite GenAI 可观测语义规范](../ch04/135-ai.html)
+- [LoongSuite GenAI 可观测语义规范](../ch04/257-ai.html)
 - [低代码 Agent、框架 Agent、自研 Agent 决策框架](../ch03/004-agent.html)
 - [三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战](../ch05/076-ai-coding.html)
 

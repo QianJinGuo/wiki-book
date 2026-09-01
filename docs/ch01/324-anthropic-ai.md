@@ -125,12 +125,12 @@ Sean Ellis 测试（>40% 用户回答"如果不能继续使用会非常失望"�
 - [Building AI Agents for Startups](https://claude.com/blog/building-ai-agents-for-startups) — 手册的姐妹篇
 
 ## 相关实体
-- [Claude Code Skills 实践与 Superpowers 利器推荐](380-claude-code-skills-superpowers.html)
-- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/423-ai-agent.html)
+- [Claude Code Skills 实践与 Superpowers 利器推荐](381-claude-code-skills-superpowers.html)
+- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](../ch04/312-ai-agent.html)
 - [claude-code-agent-view](../ch03/048-claude-code-agent.html)
 - [Claude Opus 4.7 发布分析](285-claude-opus-4-7.html)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/057-claude-code.html)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/301-agent-skills.html)
+- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/302-agent-skills.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/004-agent.html)
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](340-claude.html)
 

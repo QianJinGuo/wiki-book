@@ -136,9 +136,9 @@ ActionTrail 操作审计            ←  每次拒绝可审计
   - [Amazon Bedrock Agentic Payments Guardrails](../ch11/135-amazon-bedrock.html)
   - [Enable Safe Agentic Payments with Built-in Guardrails](../ch04/434-enable-safe-agentic-payments-with-built-in-guardrails-using.html)
   - [Nemotron 3.5 Content Safety](368-nemotron-3-5-content-safety-customizable-multimodal-safety.html)
-  - [阿里集团 AI 代码评审安全带](../ch04/135-ai.html)
+  - [阿里集团 AI 代码评审安全带](../ch04/257-ai.html)
 - **同阿里云生态**：
-  - [Aliyun AgentRun](../ch04/289-agentrun.html)
+  - [Aliyun AgentRun](../ch04/290-agentrun.html)
   - [阿里云 CMS CLI 可观测](../ch07/054-skill.html)
   - [阿里云 哈勃业务 Agent 评估](../ch05/008-harness.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)

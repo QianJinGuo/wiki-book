@@ -134,27 +134,27 @@ GBrain 将传统 RAG 的 4 层扩展为 8 层，从"找得到"升级到"真正�
 **性能基准**：P@5 49.1%、R@5 97.9%。关闭 KG 功能后 P@5 下降 31.4pp，优于纯 ripgrep-BM25+向量 RAG 。
 
 ## 相关实体
-- [AgentBrowser](../ch04/270-chromium-blink-v8-agent-browser-use.html)
-- [企业级AI记忆基质三层架构：事实/交互/行动记忆](../ch04/135-ai.html)
+- [AgentBrowser](../ch04/271-chromium-blink-v8-agent-browser-use.html)
+- [企业级AI记忆基质三层架构：事实/交互/行动记忆](../ch04/257-ai.html)
 - [Agent 自我改进的六条路](../ch03/004-agent.html)
 - [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](https://github.com/QianJinGuo/wiki/blob/main/entities/demis-hassabis-yc-interview-2026.md)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
-- [SkillClaw](../ch04/335-skillclaw-nacos-agent-skill-registry.html)
+- [SkillClaw](../ch04/336-skillclaw-nacos-agent-skill-registry.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](../ch07/016-hermes-skill.html)
 - [OpenHuman: AI Agent 持久记忆框架](../ch04/133-agent-memory.html)
 - [上下文工程 - 三种Memory方案对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md)
 
 - [AutoCLI](https://github.com/QianJinGuo/wiki/blob/main/entities/autocli.md)
 - [阿里巴巴 Aone 面向 Agent 的研发模式探索](../ch04/035-aone-agentic.html)
-- [CLI-Anything](../ch04/310-cli-anything-agent-gui.html)
-- [AgentRun](../ch04/289-agentrun.html)
+- [CLI-Anything](../ch04/311-cli-anything-agent-gui.html)
+- [AgentRun](../ch04/290-agentrun.html)
 - [OpenCLI](../ch03/063-opencli.html)
 - [CLI-Tools 横向对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/cli-tools-comparison.md)
 - [24h打工人](../ch03/004-agent.html)
-- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](475-llm-wiki-obsidian-wiki-gbrain.html)
+- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](476-llm-wiki-obsidian-wiki-gbrain.html)
 - [hermes-agent-self-evolving-source-analysis](../ch04/161-hermes-agent.html)
 - [Agent 原理、架构与工程实践](../ch03/004-agent.html)
-- [AI Agent 工程师能力地图](../ch04/423-ai-agent.html)
+- [AI Agent 工程师能力地图](../ch04/312-ai-agent.html)
 
 - [agent 记忆注入实战：5 维框架（选什么/放哪里/怎么放/放多少/何时放）+ 4 前沿论文（memguide/sti](../ch04/133-agent-memory.html)
 

@@ -131,7 +131,7 @@ AHE 的架构选择（Tool Description、Middleware、Skill 作为独立可编�
 ## 相关实体
 - [Harness Engineering Framework](../ch05/057-harness-engineering.html)
 - [Harness Engineering 第三代工程范式](../ch05/057-harness-engineering.html)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](423-ai-agent.html)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](312-ai-agent.html)
 - [Tencent Vibe Coding To Agentic Engineering Backend](171-tencent-vibe-coding-to-agentic-engineering-backend.html)
 - [Agentic Ai System Architecture Harness Skill Mcp](../ch05/067-harness-skill.html)
 

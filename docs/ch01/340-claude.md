@@ -99,7 +99,7 @@
 - [这样的程序员应该招吗](https://github.com/QianJinGuo/wiki/blob/main/entities/这样的程序员应该招吗.md)
 - [今天起Claude正式接入Office全家桶跨应用还能共享记忆](340-claude.html)
 - [Claude Code Prompt Source Analysis Fanone](../ch09/050-claude-code-prompt.html)
-- [Claude Code Html Artifact Workflow Ifanr](429-claude-code-html-artifact-workflow-ifanr-analysis.html)
+- [Claude Code Html Artifact Workflow Ifanr](430-claude-code-html-artifact-workflow-ifanr-analysis.html)
 - [Claude Code Team 10 Tips Boris Data派Thu](../ch03/057-claude-code.html)
 - [Claude Md 12 Rules Mnilax Cf2019](181-claude-md.html)
 - [Claude Code Dynamic Workflows Thariq Practical Patterns](../ch09/069-claude-code-dynamic-workflows.html)

@@ -153,7 +153,7 @@ Boris 明确表态："一年后的使用方式如果还跟现在一样，我反�
 - [Anthropic Prompt Caching 与 Claude Code](../ch01/161-anthropic-prompt-caching-claude-code.html)
 - [24h Worker Agent](../ch03/004-agent.html)
 - [Agent Security 三步走: Harness + Governance + Identity](../ch05/008-harness.html)
-- [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](../ch04/225-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](../ch04/226-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 - [Karpathy: Software 3.0 与 vibe coding 时代的终结](../ch03/004-agent.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
 

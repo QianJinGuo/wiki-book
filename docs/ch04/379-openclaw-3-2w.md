@@ -35,7 +35,7 @@ OpenClaw 的爆火并非偶然，而是精准击中了 AI Agent 落地的三个�
 - [OpenCLAW 完全指南](176-openclaw.html)
 - [企业级OpenClaw安全部署架构指南 | 亚马逊AWS官方博客](176-openclaw.html)
 - [Harness Engineering 全面解读 — 从 Prompt 到 Context 再到 Harness 的三次演进](../ch05/057-harness-engineering.html)
-- [AIAIGC峰会嘉宾阵容](361-aiaigc.html)
+- [AIAIGC峰会嘉宾阵容](362-aiaigc.html)
 - [Hermes Agent vs OpenClaw 对比分析](161-hermes-agent.html)
 - [AutoClaw 使用体验：自带 66 个 Skill、可接入聊天工具、安全性高](../ch07/054-skill.html)
 - [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)

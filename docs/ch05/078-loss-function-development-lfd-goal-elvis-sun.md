@@ -295,8 +295,8 @@ LFD / /goal 是**提示时**的、$40 就能跑 30 小时的、任何人都能�
 
 ## 相关实体
 
-- [Interconnects The Distillation Panic](../ch01/231-the-distillation-panic.html)（蒸馏恐慌 — 同期产业反应）
-- [Loop Engineering Addy Osmani Challengehub](../ch04/350-loop-engineering.html)（Loop Engineering — Addy Osmani 同主线）
+- [Interconnects The Distillation Panic](../ch01/477-the-distillation-panic.html)（蒸馏恐慌 — 同期产业反应）
+- [Loop Engineering Addy Osmani Challengehub](../ch04/351-loop-engineering.html)（Loop Engineering — Addy Osmani 同主线）
 - [Openspec Spec Driven Development Trae Solo](046-openspec.html)（Spec-driven 同对照）
 - [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](018-ai-native.html)（Spec-as-AIOS — 抗熵增架构）
 - [Claude Code Vs Hermes Session Vs Goal Lifecycle](../ch03/057-claude-code.html)（session vs goal lifecycle 对照）

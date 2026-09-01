@@ -93,10 +93,10 @@ Diagrimo 的核心价值主张在于**降低可视化门槛**。传统图表制�
 - 复杂的自定义设计可能受限，有高度定制需求时建议使用专业设计工具
 
 ## 相关实体
-- [Imagetovideoai Generator](../ch04/135-ai.html)
-- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch04/135-ai.html)
+- [Imagetovideoai Generator](../ch04/257-ai.html)
+- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch04/257-ai.html)
 - [From Doer To Director The Ai Mindset Shift](027-from-doer-to-director-the-ai-mindset-shift.html)
-- [Anthropic Puts Claude Agents On A Meter Across Its](522-anthropic-puts-claude-agents-on-a-meter-across-its-subscript.html)
+- [Anthropic Puts Claude Agents On A Meter Across Its](523-anthropic-puts-claude-agents-on-a-meter-across-its-subscript.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tenorshare-ai-diagrimo---free-ai-diagram-generator-online.md)
 

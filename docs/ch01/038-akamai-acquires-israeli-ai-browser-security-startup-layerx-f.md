@@ -11,7 +11,7 @@
 - [Igor Babuschkin Seeks Up To 1 Billion For River Ai](123-igor-babuschkin-seeks-up-to-1-billion-for-river-ai.html)
 - [Amazon Turns Alexa Into Its Next Storefront](067-amazon-turns-alexa-into-its-next-storefront.html)
 - [Code Simulation For Enterprise Engineering Playerz](096-code-simulation-for-enterprise-engineering-playerzero.html)
-- [Thrive Capital Bets 100 Million On Shopifys Ai Future](../ch04/135-ai.html)
+- [Thrive Capital Bets 100 Million On Shopifys Ai Future](../ch04/257-ai.html)
 - [Microsoft Is Quietly Shopping For An Openai Replac](031-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/Akamai-acquires-Israeli-AI-browser-security-startup-LayerX-for-205-million-in-ca.md)

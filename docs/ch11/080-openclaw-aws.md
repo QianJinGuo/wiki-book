@@ -56,10 +56,10 @@ AgentCore Runtime 的核心价值在于为每个任务提供独立隔离执行�
 → （架构图待生成: C4 架构图）
 
 ## 相关实体
-- [Amazon CloudFront部署小指南（二十四）：将CloudFront “多域名”改造为”多租户”架构 | 亚马逊AWS官方博客](../ch04/135-ai.html)
+- [Amazon CloudFront部署小指南（二十四）：将CloudFront “多域名”改造为”多租户”架构 | 亚马逊AWS官方博客](../ch04/257-ai.html)
 - [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](../ch01/168-rag.html)
-- [AI tool poisoning exposes a major flaw in enterprise agent security](../ch04/225-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
-- [AI tool poisoning exposes a major flaw in enterprise agent security | VentureBeat](../ch04/225-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](../ch04/226-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [AI tool poisoning exposes a major flaw in enterprise agent security | VentureBeat](../ch04/226-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 - [当 OpenClaw 学会”团队记忆”：一个面向多客户服务的企业级共享记忆系统设计 | 亚马逊AWS官方博客](../ch04/176-openclaw.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-cloudfront-deploy-guide-cloudfront-domain-multi-tenant-architecture.md)

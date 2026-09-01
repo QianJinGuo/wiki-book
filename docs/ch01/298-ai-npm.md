@@ -151,7 +151,7 @@ AI 通过 curl 直接读取 npm cdn 资源（不依赖具体编码工具）
 - [Tmall Ai Coding Practice Team Knowledge Base](../ch05/076-ai-coding.html)
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/057-claude-code.html)
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/057-claude-code.html)
-- [柚漫剧 Ai全流程提效拆解 从单点提效到工程融合](../ch04/135-ai.html)
+- [柚漫剧 Ai全流程提效拆解 从单点提效到工程融合](../ch04/257-ai.html)
 - [Boris Cherny Interview 2026 Ide To Agent Console](../ch03/004-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tmall-ai-coding-practice-team-knowledge-base-npm.md)
