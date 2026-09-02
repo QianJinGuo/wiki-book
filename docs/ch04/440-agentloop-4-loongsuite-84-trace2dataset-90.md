@@ -1,8 +1,8 @@
 # 阿里云 AgentLoop：企业级智能体自进化飞轮（4 环闭环 + LoongSuite 84% 字段覆盖 + Trace2Dataset 90% 节省 + Agent-as-a-Judge 90% 一致 + 记忆库/经验库）
 
-## Ch04.441 阿里云 AgentLoop：企业级智能体自进化飞轮（4 环闭环 + LoongSuite 84% 字段覆盖 + Trace2Dataset 90% 节省 + Agent-as-a-Judge 90% 一致 + 记忆库/经验库）
+## Ch04.440 阿里云 AgentLoop：企业级智能体自进化飞轮（4 环闭环 + LoongSuite 84% 字段覆盖 + Trace2Dataset 90% 节省 + Agent-as-a-Judge 90% 一致 + 记忆库/经验库）
 
-> 📊 Level ⭐⭐⭐ | 34.2KB | `entities/aliyun-agentloop-enterprise-agent-self-evolution-flywheel.md`
+> 📊 Level ⭐⭐⭐ | 36.5KB | `entities/aliyun-agentloop-enterprise-agent-self-evolution-flywheel.md`
 
 # 阿里云 AgentLoop：企业级智能体自进化飞轮
 
@@ -368,6 +368,28 @@ AgentLoop 不只关注单一分数，而是同时衡量：成功率、同类任�
 评估结果不只打分，还给出"为什么是这个分"——证据字段提供判定依据，低分条目可直接定位调优方向。多次评估看均值消除浮动。在线评估抓出的 badcase 沉淀进数据集，成为实验回测弹药——评估是飞轮承上启下一环：上承观测数据，下接实验回测。
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentloop-eval-golden-metrics-rubric-mayunlei-aliyun-2026-09-01.md)
+
+## 补充：离线实验平台与题目级 Rubric（第 4 篇）
+
+> 以下内容来自系列第 4 篇，补充飞轮实体未覆盖的实验平台实现细节。
+
+### 离线实验平台架构
+
+AgentLoop 离线实验平台直接部署在客户内网，解决云端平台无法访问内网 Agent 的问题。架构分工：云端负责存储实验记录和展示大盘；内网平台负责执行——既能出网访问 AgentLoop 云端，又能在内网直接调用本地 Agent。数据不出内网，能力不打折扣。
+
+### 实验计划与变量映射
+
+创建实验计划时指定数据集，配置变量映射解决"评估器用哪个变量"的问题——一边是实验内置变量（input/output/轨迹），另一边是 dataset 原始内容。自定义变量标记实验上下文（版本号、实验记录 ID），版本号是大盘对比不同版本分数差异的前提。
+
+### 题目级 Rubric 四步改造
+
+在线评估用通用标准，但实验场景下每道题的评估标准不同——同一套 Rubric 评多道题会让优化失去方向。正确做法：Rubric 定义到题目级别，每道题绑定自己的评估标准。四步改造：①整理每道题 Rubric → ②数据集 schema 加 rubric 列 → ③评估器新增 rubric 变量（输出 rubric_id/score/reason/item_scores）→ ④实验侧从 dataset 读取 Rubric。
+
+### 实验大盘与分数三步排查法
+
+实验大盘提供整体分数、变化趋势、按题目下钻。为消除浮动可按时间窗口计算均值。分数分析三步法：①分数变低及时关注 → ②先排查 Rubric 定义（频繁波动多半是标准模糊）→ ③再看版本差异（评估器没问题后版本间差异才是真实差异）。避免最常见误判：把"尺子不准"当成"东西变差"。
+
+→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentloop-experiment-offline-platform-rubric-mayunlei-aliyun-2026-09-02.md)
 
 ---
 

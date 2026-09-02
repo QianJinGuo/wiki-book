@@ -146,7 +146,7 @@ Headless 软件面向 agent，不面向人，但最终仍然需要有人来解�
 - [ServiceNow Headless 实践](324-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html) — ITSM 领域的 headless 转型案例
 - [Headless Cloud Security](https://github.com/QianJinGuo/wiki/blob/main/entities/sysdig-headless-cloud-security.md) — 云安全领域的 headless 实践
 - [日抛软件：AI时代的认知滑坡](257-ai.html) — 对"AI 替代复杂系统"论调的批判性分析
-- [17种Agent架构演进](440-17-agent.html) — Agent 控制流设计对 headless 架构的影响
+- [17种Agent架构演进](441-17-agent.html) — Agent 控制流设计对 headless 架构的影响
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 约束 agent 行为的工程方法论
 
 ---
