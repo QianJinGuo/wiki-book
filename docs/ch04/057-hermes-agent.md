@@ -157,7 +157,7 @@ Honcho 这类外部 provider 引入深层用户建模，但带来了额外的治
 - [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](176-openclaw.html)
 - [MemOS Hermes 记忆插件](https://github.com/QianJinGuo/wiki/blob/main/entities/memos-hermes-plugin.md)
 - [深度拆解 Hermes Agent 记忆系统](161-hermes-agent.html)
-- [17种Agent架构演进：控制流设计的完整演化史](440-17-agent.html)
+- [17种Agent架构演进：控制流设计的完整演化史](441-17-agent.html)
 - [AIAIGC峰会嘉宾阵容](362-aiaigc.html)
 - [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](176-openclaw.html)
 - [Agent Memory 架构解析](133-agent-memory.html)
