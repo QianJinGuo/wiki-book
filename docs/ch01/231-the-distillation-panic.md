@@ -1,7 +1,5 @@
 # The distillation panic
 
-## Ch01.231 The distillation panic
-
 > 📊 Level ⭐⭐ | 14.0KB | `entities/the-distillation-panic.md`
 
 # The distillation panic

@@ -1,7 +1,5 @@
 # Let's be honest: retail banking is broken
 
-## Ch01.373 Let's be honest: retail banking is broken
-
 > 📊 Level ⭐⭐ | 8.9KB | `entities/finanser-retail-banking-broken.md`
 
 ## 摘要

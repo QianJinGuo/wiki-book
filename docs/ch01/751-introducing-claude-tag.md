@@ -1,7 +1,5 @@
 # Introducing Claude Tag
 
-## Ch01.751 Introducing Claude Tag
-
 > 📊 Level ⭐⭐⭐ | 12.6KB | `entities/introducing-claude-tag.md`
 
 # Introducing Claude Tag

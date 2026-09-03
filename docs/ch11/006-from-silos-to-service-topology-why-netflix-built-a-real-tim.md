@@ -1,7 +1,5 @@
 # From silos to service topology: why Netflix built a real-time architecture
 
-## Ch11.006 From silos to service topology: why Netflix built a real-time architecture
-
 > 📊 Level ⭐⭐ | 33.1KB | `entities/netflix-real-time-service-topology.md`
 
 # From silos to service topology: why Netflix built a real-time architecture
@@ -286,7 +284,7 @@ Service Topology 同时服务于人类工程师（UI 探索）和自动化系统
 ## 相关实体
 - [Serverless Langgraph Multi Agent Aws](181-multi-agent-aws.html)
 - [Build Real Time Voice Streaming With Amazon Nova Sonic And Webrtc](217-amazon-nova.html)
-- [Why Internally Built Ai Fails Fund Accounting Audits](../ch01/551-why-internally-built-ai-fails-fund-accounting-audits.html)
+- [Why Internally Built Ai Fails Fund Accounting Audits](../ch01/064-why-internally-built-ai-fails-fund-accounting-audits.html)
 - [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](../ch04/038-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
 - [Netflix Metadata Service Model Lifecycle Graph](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-metadata-service-model-lifecycle-graph.md)
 

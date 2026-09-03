@@ -1,7 +1,5 @@
 # Hacker News 热帖：AI 会写代码了，为啥还要用 Python？
 
-## Ch09.059 Hacker News 热帖：AI 会写代码了，为啥还要用 Python？
-
 > 📊 Level ⭐⭐ | 8.9KB | `entities/hackernews-ai-coding-why-python-20260513.md`
 
 # Hacker News 热帖：AI 会写代码了，为啥还要用 Python？

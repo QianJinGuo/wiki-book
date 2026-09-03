@@ -1,7 +1,5 @@
 # Claude Code 2026 黑客松获奖项目
 
-## Ch01.632 Claude Code 2026 黑客松获奖项目
-
 > 📊 Level ⭐⭐ | 3.6KB | `entities/claude-code-hackathon-winners-2026.md`
 
 # claude-code-hackathon-winners-2026

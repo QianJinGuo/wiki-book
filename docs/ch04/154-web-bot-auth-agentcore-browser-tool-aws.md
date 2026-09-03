@@ -1,7 +1,5 @@
 # 智能体驱动测试变革：让智能体成为测试第一性 之三 用 Web Bot Auth 为 AgentCore Browser Tool 打造可信身份 | 亚马逊AWS官方博客
 
-## Ch04.154 智能体驱动测试变革：让智能体成为测试第一性 之三 用 Web Bot Auth 为 AgentCore Browser Tool 打造可信身份 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 11.9KB | `entities/intelligence-agent-driven-testing-transformation-making-agents-the-first-principle-of-testing.md`
 
 ## 概述

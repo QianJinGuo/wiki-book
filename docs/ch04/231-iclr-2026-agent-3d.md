@@ -1,7 +1,5 @@
 # ICLR 2026 | 英伟达×普渡大学：用Agent闭环实现文生3D
 
-## Ch04.231 ICLR 2026 | 英伟达×普渡大学：用Agent闭环实现文生3D
-
 > 📊 Level ⭐⭐ | 9.4KB | `entities/iclr-agent-3d-generation.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/iclr-agent-3d-generation.md)

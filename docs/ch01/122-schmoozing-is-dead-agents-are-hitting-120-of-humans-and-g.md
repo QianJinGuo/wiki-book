@@ -1,7 +1,5 @@
 # Schmoozing Is Dead, Agents Are Hitting 120% of Humans, and Growth Is the Only Thing That
 
-## Ch01.122 Schmoozing Is Dead, Agents Are Hitting 120% of Humans, and Growth Is the Only Thing That
-
 > 📊 Level ⭐ | 3.9KB | `entities/schmoozing-is-dead-agents-are-hitting-120-of-humans-and-growth-is-the-only-thing.md`
 
 ## 核心要点
@@ -35,7 +33,7 @@ SaaStr AI Annual 2026 的闭门 Q&A 环节揭示了 AI 原生软件公司的关�
 ## 相关实体
 - [Deels Accelerate Or Die Moment](https://github.com/QianJinGuo/wiki/blob/main/entities/deels-accelerate-or-die-moment.md)
 - 1000 Record Covers The Taschen Book That Proves
-- [Vercel Com How Superset Built The Ide For Ai Agents On Vercel](071-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
+- [Vercel Com How Superset Built The Ide For Ai Agents On Vercel](074-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
 - [Ai Powered Honeypots Turning The Tables On Malicious Ai Agents](../ch04/312-ai-agent.html)
 - [Automation Anywhere Collaborates With Cisco Nvidia Okta And Openai Launching Ent](../ch04/009-automation-anywhere-collaborates-with-cisco-nvidia-okta-a.html)
 

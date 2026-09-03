@@ -1,7 +1,5 @@
 # AMD 免费云 GPU 私有化部署 DeepSeek-R1
 
-## Ch01.602 AMD 免费云 GPU 私有化部署 DeepSeek-R1
-
 > 📊 Level ⭐⭐ | 4.8KB | `entities/amd-free-gpu-deepseek-r1-private-deployment.md`
 
 # AMD 免费云 GPU 私有化部署 DeepSeek-R1

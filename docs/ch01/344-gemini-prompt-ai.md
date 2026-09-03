@@ -1,7 +1,5 @@
 # Gemini 深度导读生成器 Prompt：让 AI 重写而非摘要
 
-## Ch01.344 Gemini 深度导读生成器 Prompt：让 AI 重写而非摘要
-
 > 📊 Level ⭐⭐ | 9.5KB | `entities/gemini-deep-guide-prompt.md`
 
 # Gemini 深度导读生成器 Prompt：让 AI 重写而非摘要

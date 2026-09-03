@@ -1,7 +1,5 @@
 # GPT-5级推理能力塞进语音模型，OpenAI把同传翻译成本砍穿地板价
 
-## Ch01.501 GPT-5级推理能力塞进语音模型，OpenAI把同传翻译成本砍穿地板价
-
 > 📊 Level ⭐⭐ | 6.7KB | `entities/gpt-5级推理能力塞进语音模型openai把同传翻译成本砍穿地板价.md`
 
 # GPT-5级推理能力塞进语音模型，OpenAI把同传翻译成本砍穿地板价
@@ -11,7 +9,7 @@
 - GPT-5.5 实测
 - [Yann Dubois Openai Post Training Interview](316-openai.html)
 - [Gpt 5 Is Here And Openai Has Some Tips](316-openai.html)
-- [Useful Memories Become Faulty When Continuously Updated By Llms](075-useful-memories-become-faulty-when-continuously-updated-by-l.html)
+- [Useful Memories Become Faulty When Continuously Updated By Llms](078-useful-memories-become-faulty-when-continuously-updated-by-l.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gpt-5级推理能力塞进语音模型openai把同传翻译成本砍穿地板价.md)
 

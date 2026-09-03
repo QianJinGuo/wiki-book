@@ -1,7 +1,5 @@
 # Anthropic 首次揭秘下一代 Claude 怎么造
 
-## Ch01.787 Anthropic 首次揭秘下一代 Claude 怎么造
-
 > 📊 Level ⭐⭐⭐⭐⭐ | 10.6KB | `entities/anthropic-claude-next-gen-alex-infoq.md`
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-claude-next-gen-alex-infoq.md)

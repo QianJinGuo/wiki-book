@@ -1,7 +1,5 @@
 # Self-Harness：上海AI Lab 提出的 Agent 自我改进 Harness 范式
 
-## Ch04.037 Self-Harness：上海AI Lab 提出的 Agent 自我改进 Harness 范式
-
 > 📊 Level ⭐⭐ | 23.3KB | `entities/self-harness-shanghai-ai-lab-agent-improves-harness.md`
 
 # Self-Harness：上海AI Lab 提出的 Agent 自我改进 Harness 范式

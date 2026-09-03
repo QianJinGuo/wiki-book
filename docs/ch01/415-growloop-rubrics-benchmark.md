@@ -1,7 +1,5 @@
 # GrowLoop：开放域对话的真人感评测 — 用种子+Rubrics自动生长Benchmark
 
-## Ch01.415 GrowLoop：开放域对话的真人感评测 — 用种子+Rubrics自动生长Benchmark
-
 > 📊 Level ⭐⭐ | 8.0KB | `entities/growloop-dialogue-human-likeness-evaluation-benchmark.md`
 
 # GrowLoop：开放域对话的真人感评测 — 用种子+Rubrics自动生长Benchmark

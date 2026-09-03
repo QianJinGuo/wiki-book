@@ -1,7 +1,5 @@
 # DeepSeek Visual Primitives：视觉原语作为思考媒介
 
-## Ch09.118 DeepSeek Visual Primitives：视觉原语作为思考媒介
-
 > 📊 Level ⭐⭐⭐ | 11.1KB | `entities/deepseek-visual-primitives.md`
 
 ## 核心定位

@@ -1,7 +1,5 @@
 # Agivar 录屏教学桌面 Agent：清华非十科技 大脑小脑双层架构 + Jittor 推理引擎 + 2.3× 速度 + 三层确定性
 
-## Ch04.143 Agivar 录屏教学桌面 Agent：清华非十科技 大脑小脑双层架构 + Jittor 推理引擎 + 2.3× 速度 + 三层确定性
-
 > 📊 Level ⭐⭐ | 12.3KB | `entities/agivar-screen-recording-teaching-brain-cerebellum-architecture-2026.md`
 
 # Agivar 录屏教学桌面 Agent

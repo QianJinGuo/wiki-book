@@ -1,7 +1,5 @@
 # JoyAI-Echo：京东开源长音视频生成框架（5 分钟一致性 + 7.5x DMD 加速 + Director Agent）
 
-## Ch04.062 JoyAI-Echo：京东开源长音视频生成框架（5 分钟一致性 + 7.5x DMD 加速 + Director Agent）
-
 > 📊 Level ⭐⭐ | 18.3KB | `entities/joyai-echo-long-video-framework-jd.md`
 
 # JoyAI-Echo：京东开源长音视频生成框架
@@ -150,7 +148,7 @@ JoyAI-Echo 带来的，不仅是一款新长视频模型，更是一次**AI 视�
 - [Www Latent Space P Github](../ch01/474-github.html)
 - [Cline Agent Runtime Sdk](../ch03/004-agent.html)
 - [Minimax M3 Frontier Three Set Open Source](../ch09/052-minimax-m3-frontier.html)
-- [Tencent Hunyuan Hy3 Preview Open Source](../ch01/110-hy3-preview.html)
+- [Tencent Hunyuan Hy3 Preview Open Source](../ch01/113-hy3-preview.html)
 - [pixelle-video — 阿里国际 aidc 开源的全自动视频生成 pipeline 装配工](257-ai.html)
 
 ## 相关主题

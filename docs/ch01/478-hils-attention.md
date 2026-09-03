@@ -1,7 +1,5 @@
 # 腾讯混元 HiLS-Attention：可学习层级稀疏注意力实现无限上下文建模
 
-## Ch01.478 腾讯混元 HiLS-Attention：可学习层级稀疏注意力实现无限上下文建模
-
 > 📊 Level ⭐⭐ | 7.1KB | `entities/tencent-hunyuan-hils-attention.md`
 
 # 腾讯混元 HiLS-Attention：可学习层级稀疏注意力实现无限上下文建模

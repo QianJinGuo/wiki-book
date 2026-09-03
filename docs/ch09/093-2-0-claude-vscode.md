@@ -1,7 +1,5 @@
 # 2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件
 
-## Ch09.093 2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件
-
 > 📊 Level ⭐⭐ | 6.1KB | `entities/2-小时0-行手写代码我用-claude-做了一个生产级-vscode-插件.md`
 
 ## 核心摘要

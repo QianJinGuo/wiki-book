@@ -1,7 +1,5 @@
 # 打造 AI 智能体专属的代码知识库：GitNexus 完整上手攻略
 
-## Ch01.199 打造 AI 智能体专属的代码知识库：GitNexus 完整上手攻略
-
 > 📊 Level ⭐⭐ | 15.8KB | `entities/gitnexus-ai-zhi-neng-ti-kai-fa-dai-ma-zhi-shi-ku.md`
 
 [Gitnexus Ai Zhi Neng Ti Kai Fa Dai Ma Zhi Shi Ku](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gitnexus-ai-zhi-neng-ti-kai-fa-dai-ma-zhi-shi-ku.md)

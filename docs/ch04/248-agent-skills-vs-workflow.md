@@ -1,7 +1,5 @@
 # Agent Skills vs Workflow低代码平台：选型分析
 
-## Ch04.248 Agent Skills vs Workflow低代码平台：选型分析
-
 > 📊 Level ⭐⭐ | 8.8KB | `entities/agent-skills-vs-coze-dify-n8n-lowcode-yexiaocha.md`
 
 # Agent Skills vs Workflow低代码平台：选型分析

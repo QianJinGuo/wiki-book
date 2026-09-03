@@ -1,7 +1,5 @@
 # MAC（multi-agent-coding）：Skills + Hooks 两层 Harness —— 完全委托 0-20% 的解法
 
-## Ch05.025 MAC（multi-agent-coding）：Skills + Hooks 两层 Harness —— 完全委托 0-20% 的解法
-
 > 📊 Level ⭐⭐ | 16.8KB | `entities/mac-multi-agent-coding-skills-hooks-harness.md`
 
 # MAC（multi-agent-coding）：Skills + Hooks 两层 Harness

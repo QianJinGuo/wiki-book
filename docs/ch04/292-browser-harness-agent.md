@@ -1,7 +1,5 @@
 # Browser Harness — 自愈型浏览器 Agent 框架
 
-## Ch04.292 Browser Harness — 自愈型浏览器 Agent 框架
-
 > 📊 Level ⭐⭐ | 7.8KB | `entities/browser-harness.md`
 
 ## Overview

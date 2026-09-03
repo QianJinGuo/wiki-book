@@ -1,7 +1,5 @@
 # Agentic Loop Engineering 工程手册：17 种 Loop 工程化技术的可复现实证框架
 
-## Ch04.354 Agentic Loop Engineering 工程手册：17 种 Loop 工程化技术的可复现实证框架
-
 > 📊 Level ⭐⭐ | 6.0KB | `entities/agentic-loop-engineering-handbook-empirical-framework.md`
 
 # Agentic Loop Engineering 工程手册：17 种 Loop 工程化技术的可复现实证框架

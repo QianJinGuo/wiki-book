@@ -1,7 +1,5 @@
 # Evals 到底在评什么？一文拆解 AI 评估的三种方法
 
-## Ch01.468 Evals 到底在评什么？一文拆解 AI 评估的三种方法
-
 > 📊 Level ⭐⭐ | 7.1KB | `entities/evals-three-methods-of-ai-evaluation.md`
 
 # Evals 到底在评什么？一文拆解 AI 评估的三种方法

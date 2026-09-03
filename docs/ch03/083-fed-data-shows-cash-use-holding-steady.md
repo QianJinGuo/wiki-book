@@ -1,7 +1,5 @@
 # Fed Data Shows Cash Use Holding Steady
 
-## Ch03.083 Fed Data Shows Cash Use Holding Steady
-
 > 📊 Level ⭐⭐ | 5.9KB | `entities/fed-cash-use.md`
 
 ## 核心要点

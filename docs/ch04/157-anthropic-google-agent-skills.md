@@ -1,7 +1,5 @@
 # 从 Anthropic 到 Google：Agent Skills 进入设计模式阶段
 
-## Ch04.157 从 Anthropic 到 Google：Agent Skills 进入设计模式阶段
-
 > 📊 Level ⭐⭐ | 11.8KB | `entities/anthropic-google-agent-skills-design-patterns.md`
 
 ## 相关实体

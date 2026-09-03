@@ -1,7 +1,5 @@
 # AgentScope Java Harness Framework 2.0 — 企业级 Agent 分布式场景的 Harness 实现 (Java 2.0 重大升级)
 
-## Ch03.032 AgentScope Java Harness Framework 2.0 — 企业级 Agent 分布式场景的 Harness 实现 (Java 2.0 重大升级)
-
 > 📊 Level ⭐⭐ | 45.9KB | `entities/agentscope-java-harness-framework-enterprise-distributed.md`
 
 ## 背景：个人助手型 Agent 与企业级 Agent 是两种工程形态

@@ -1,7 +1,5 @@
 # Hermes新顶流Agent Skills闭环系统深度解析
 
-## Ch04.325 Hermes新顶流Agent Skills闭环系统深度解析
-
 > 📊 Level ⭐⭐ | 7.1KB | `entities/hermes-skill-system-deep-dive.md`
 
 # Hermes新顶流Agent Skills闭环系统深度解析

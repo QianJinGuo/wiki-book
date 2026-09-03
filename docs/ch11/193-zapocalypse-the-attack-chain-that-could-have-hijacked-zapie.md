@@ -1,7 +1,5 @@
 # Zapocalypse: The Attack Chain That Could Have Hijacked Zapier
 
-## Ch11.193 Zapocalypse: The Attack Chain That Could Have Hijacked Zapier
-
 > 📊 Level ⭐⭐ | 3.9KB | `entities/zapocalypse-the-attack-chain-that-could-have-hijacked-zapier-20260606.md`
 
 # Zapocalypse: The Attack Chain That Could Have Hijacked Zapier

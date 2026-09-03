@@ -1,7 +1,5 @@
 # Agent 记忆存储方案深度洞察：6 大流派分歧、Wiki 编译 vs 原始数据之争、Hermes Agent 启示
 
-## Ch07.012 Agent 记忆存储方案深度洞察：6 大流派分歧、Wiki 编译 vs 原始数据之争、Hermes Agent 启示
-
 > 📊 Level ⭐⭐ | 18.2KB | `entities/agent-memory-storage-six-schools-wiki-compile-vs-raw-data-debate.md`
 
 # Agent 记忆存储方案深度洞察：6 大流派分歧与 Hermes 启示

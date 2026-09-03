@@ -1,7 +1,5 @@
 # 我用 SKILL.md 做了一个简历生成器
 
-## Ch07.051 我用 SKILL.md 做了一个简历生成器
-
 > 📊 Level ⭐⭐ | 7.1KB | `entities/我用-skillmd-做了一个简历生成器.md`
 
 # 我用 SKILL.md 做了一个简历生成器

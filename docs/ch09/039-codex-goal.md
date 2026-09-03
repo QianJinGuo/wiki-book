@@ -1,7 +1,5 @@
 # Codex /goal 源码深度解析：状态表 + 续跑条件 + 预算账本
 
-## Ch09.039 Codex /goal 源码深度解析：状态表 + 续跑条件 + 预算账本
-
 > 📊 Level ⭐⭐ | 12.2KB | `entities/codex-goal-source-code-deep-dive.md`
 
 # Codex /goal 源码深度解析：状态表 + 续跑条件 + 预算账本

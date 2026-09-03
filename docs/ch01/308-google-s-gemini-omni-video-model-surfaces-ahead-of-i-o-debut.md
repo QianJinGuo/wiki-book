@@ -1,7 +1,5 @@
 # Google's Gemini Omni video model surfaces ahead of I/O debut
 
-## Ch01.308 Google's Gemini Omni video model surfaces ahead of I/O debut
-
 > 📊 Level ⭐⭐ | 10.7KB | `entities/googles-gemini-omni-video-model-surfaces-ahead-of-i-o-debut.md`
 
 ## 核心要点

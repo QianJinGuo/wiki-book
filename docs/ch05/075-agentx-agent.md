@@ -1,7 +1,5 @@
 # 快手 AgentX——推荐系统自我迭代的 Agent 驱动研发闭环
 
-## Ch05.075 快手 AgentX——推荐系统自我迭代的 Agent 驱动研发闭环
-
 > 📊 Level ⭐⭐ | 3.7KB | `entities/kuaishou-agentx-self-iteration-recsys-2026.md`
 
 # 快手 AgentX——推荐系统自我迭代的 Agent 驱动研发闭环

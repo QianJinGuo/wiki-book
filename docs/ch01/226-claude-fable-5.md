@@ -1,7 +1,5 @@
 # 安全护栏的三域演进 — 阿里云云原生从 Claude Fable 5 提炼的护栏设计原则
 
-## Ch01.226 安全护栏的三域演进 — 阿里云云原生从 Claude Fable 5 提炼的护栏设计原则
-
 > 📊 Level ⭐⭐ | 14.1KB | `entities/aliyun-cloud-native-safety-guardrails-three-domains.md`
 
 ## 概述

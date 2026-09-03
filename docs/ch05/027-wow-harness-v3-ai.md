@@ -1,7 +1,5 @@
 # wow-harness v3：AI 开发的治理协议
 
-## Ch05.027 wow-harness v3：AI 开发的治理协议
-
 > 📊 Level ⭐⭐ | 16.3KB | `entities/wow-harness-v3-governance-protocol.md`
 
 # wow-harness v3：AI 开发的治理协议

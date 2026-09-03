@@ -1,7 +1,5 @@
 # Skill Retrieval Augmentation for Agentic AI — 清华 Skill-RAG
 
-## Ch04.378 Skill Retrieval Augmentation for Agentic AI — 清华 Skill-RAG
-
 > 📊 Level ⭐⭐ | 5.0KB | `entities/skill-rag-tsinghua-sra.md`
 
 # Skill Retrieval Augmentation for Agentic AI — 清华 Skill-RAG

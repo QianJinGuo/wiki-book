@@ -1,7 +1,5 @@
 # Anthropic puts Claude agents on a meter across its subscriptions
 
-## Ch01.532 Anthropic puts Claude agents on a meter across its subscriptions
-
 > 📊 Level ⭐⭐ | 6.2KB | `entities/anthropic-claude-agents-meter-infoworld.md`
 
 ## 核心要点
@@ -35,8 +33,8 @@
 - [Claude Managed Agents 开发者指南](294-claude-managed-agents.html)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/057-claude-code.html)
 - [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](294-claude-managed-agents.html)
-- [Introducing Claude for Small Business](023-introducing-claude-for-small-business.html)
-- [Introducing Claude for Small Business](023-introducing-claude-for-small-business.html)
+- [Introducing Claude for Small Business](026-introducing-claude-for-small-business.html)
+- [Introducing Claude for Small Business](026-introducing-claude-for-small-business.html)
 - [Xero Announces Integration with Anthropic's Claude](340-claude.html)
 - [Anthropic 首次揭秘下一代 Claude 怎么造](787-anthropic-claude.html)
 - [Anthropic Claude Managed Agents 平台正式发布](158-anthropic-claude-managed-agents.html)

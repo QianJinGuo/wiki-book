@@ -1,7 +1,5 @@
 # LLM-as-a-Verifier: A General-Purpose Verification Framework
 
-## Ch01.266 LLM-as-a-Verifier: A General-Purpose Verification Framework
-
 > 📊 Level ⭐⭐ | 12.3KB | `entities/llm-as-a-verifierageneral-purposeverific.md`
 
 ## 核心要点
@@ -88,7 +86,7 @@ LLM-as-a-Judge 试图对轨迹形成整体判断并输出决策，适用于需�
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
 
 - [LLM-as-a-Verifier: A General-Purpose Verification Framework](451-llm.html)
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](097-llm-as-a-verifier-a-general-purpose-verification-framework.html)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](100-llm-as-a-verifier-a-general-purpose-verification-framework.html)
 - [LLM-as-a-Verifier: A General-Purpose Verification](297-llm-as-a-verifier-a-general-purpose-verification.html)
 - [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](../ch04/161-hermes-agent.html)
 - [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04/115-skillos-learning-skill-curation-for-self-evolving-agents.html)

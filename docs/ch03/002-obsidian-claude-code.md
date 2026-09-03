@@ -1,7 +1,5 @@
 # Obsidian + Claude Code 集成指南
 
-## Ch03.002 Obsidian + Claude Code 集成指南
-
 > 📊 Level ⭐ | 14.8KB | `entities/obsidian-claude-code-integration.md`
 
 ## 概述

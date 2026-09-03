@@ -1,7 +1,5 @@
 # Nvidia Edge First Llms Av Robotics
 
-## Ch01.170 Nvidia Edge First Llms Av Robotics
-
 > 📊 Level ⭐⭐ | 19.7KB | `entities/nvidia-edge-first-llms-av-robotics.md`
 
 # Build Next&#x2d;Gen Physical AI with Edge‑First LLMs for Autonomous Vehicles and Robotics | NVIDIA Technical Blog

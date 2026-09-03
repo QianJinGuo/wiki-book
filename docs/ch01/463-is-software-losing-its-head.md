@@ -1,7 +1,5 @@
 # Is Software Losing Its Head?
 
-## Ch01.463 Is Software Losing Its Head?
-
 > 📊 Level ⭐⭐ | 7.2KB | `entities/is-software-losing-its-head-a16z.md`
 
 ## 核心要点

@@ -1,7 +1,5 @@
 # Amazon Bedrock AgentCore: 知识扩展与持续学习新能力
 
-## Ch04.383 Amazon Bedrock AgentCore: 知识扩展与持续学习新能力
-
 > 📊 Level ⭐⭐ | 4.9KB | `entities/new-in-amazon-bedrock-agentcore-build-agents-with-broader-kn.md`
 
 # Amazon Bedrock AgentCore: 知识扩展与持续学习新能力

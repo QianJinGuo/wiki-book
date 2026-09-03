@@ -1,7 +1,5 @@
 # Is Grep All You Need? — 检索 × Harness × 交付方式耦合三元组（PwC 论文 arXiv 2605.15184 解读）
 
-## Ch05.044 Is Grep All You Need? — 检索 × Harness × 交付方式耦合三元组（PwC 论文 arXiv 2605.15184 解读）
-
 > 📊 Level ⭐⭐ | 11.0KB | `entities/is-grep-all-you-need-pwc-retrieval-harness-coupling.md`
 
 # Is Grep All You Need? — 检索 × Harness × 交付方式耦合三元组

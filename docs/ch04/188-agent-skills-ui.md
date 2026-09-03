@@ -1,7 +1,5 @@
 # Agent Skills 终于有 UI 了
 
-## Ch04.188 Agent Skills 终于有 UI 了
-
 > 📊 Level ⭐⭐ | 10.7KB | `entities/qoder-skill-ui-agent-human-collaboration.md`
 
 [Qoder Skill Ui Agent Human Collaboration](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qoder-skill-ui-agent-human-collaboration.md)

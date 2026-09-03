@@ -1,7 +1,5 @@
 # Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南
 
-## Ch01.245 Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南
-
 > 📊 Level ⭐⭐ | 13.2KB | `entities/anthropic-官方-agent-harness-平台claude-managed-agents-完整指南.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-官方-agent-harness-平台claude-managed-agents-完整指南.md)

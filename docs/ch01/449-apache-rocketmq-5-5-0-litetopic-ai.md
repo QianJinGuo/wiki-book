@@ -1,7 +1,5 @@
 # Apache RocketMQ 5.5.0 开源 LiteTopic：百万级 AI 会话专属通道
 
-## Ch01.449 Apache RocketMQ 5.5.0 开源 LiteTopic：百万级 AI 会话专属通道
-
 > 📊 Level ⭐⭐ | 7.5KB | `entities/rocketmq-5-5-0-litetopics-ai-agent-messaging.md`
 
 # Apache RocketMQ 5.5.0 开源 LiteTopic：百万级 AI 会话专属通道

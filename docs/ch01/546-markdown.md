@@ -1,7 +1,5 @@
 # Markdown 不会过时
 
-## Ch01.546 Markdown 不会过时
-
 > 📊 Level ⭐⭐ | 6.0KB | `entities/markdown-ai-era-ifanr-20260513.md`
 
 ## Thariq 的 HTML 主张 vs Markdown

@@ -1,7 +1,5 @@
 # 企业 AI 的非技术困境：本体驱动 Agent 与知识治理
 
-## Ch04.275 企业 AI 的非技术困境：本体驱动 Agent 与知识治理
-
 > 📊 Level ⭐⭐ | 8.2KB | `entities/enterprise-ai-ontology-agent-knowledge-governance.md`
 
 # 企业 AI 的非技术困境：本体驱动 Agent 与知识治理

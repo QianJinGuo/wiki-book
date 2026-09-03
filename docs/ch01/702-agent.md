@@ -1,7 +1,5 @@
 # Agent 记忆存储方案深度洞察
 
-## Ch01.702 Agent 记忆存储方案深度洞察
-
 > 📊 Level ⭐⭐ | 2.4KB | `entities/agent-memory-storage-six-schools-quantumtransf-debate-frank.md`
 
 # Agent 记忆存储方案深度洞察

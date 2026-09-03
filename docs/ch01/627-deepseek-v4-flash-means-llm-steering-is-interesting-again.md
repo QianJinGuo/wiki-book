@@ -1,7 +1,5 @@
 # DeepSeek-V4-Flash means LLM steering is interesting again
 
-## Ch01.627 DeepSeek-V4-Flash means LLM steering is interesting again
-
 > 📊 Level ⭐⭐ | 3.8KB | `entities/deepseek-v4-flash-means-llm-steering-is-interesting-again.md`
 
 ## 核心要点

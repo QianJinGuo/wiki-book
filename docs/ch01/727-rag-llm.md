@@ -1,7 +1,5 @@
 # 视频 RAG 中分块策略：基于停顿、滑动窗口与基于 LLM 的方法
 
-## Ch01.727 视频 RAG 中分块策略：基于停顿、滑动窗口与基于 LLM 的方法
-
 > 📊 Level ⭐⭐ | 2.0KB | `entities/video-rag-chunking-strategy-deephub-imba.md`
 
 # 视频 RAG 中分块策略：基于停顿、滑动窗口与基于 LLM 的方法

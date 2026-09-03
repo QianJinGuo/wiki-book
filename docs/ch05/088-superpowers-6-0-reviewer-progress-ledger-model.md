@@ -1,7 +1,5 @@
 # Superpowers 6.0 反作弊重写：reviewer 只读怀疑论者 + 上下文经济学 + progress ledger + model 纪律 —— 术哥源码级拆解 158 commits
 
-## Ch05.088 Superpowers 6.0 反作弊重写：reviewer 只读怀疑论者 + 上下文经济学 + progress ledger + model 纪律 —— 术哥源码级拆解 158 commits
-
 > 📊 Level ⭐⭐⭐ | 6.4KB | `entities/superpowers-6-reviewer-anti-cheating-shuge-2026.md`
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/superpowers-6-reviewer-anti-cheating-shuge-2026.md)

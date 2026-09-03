@@ -1,7 +1,5 @@
 # Meta Skill
 
-## Ch07.024 Meta Skill
-
 > 📊 Level ⭐⭐ | 10.6KB | `entities/meta-skill.md`
 
 # Meta Skill

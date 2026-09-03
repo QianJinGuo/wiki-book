@@ -1,7 +1,5 @@
 # Tokenspeed Agentic Inference Engine
 
-## Ch04.447 Tokenspeed Agentic Inference Engine
-
 > 📊 Level ⭐⭐⭐ | 15.2KB | `entities/tokenspeed-agentic-inference-engine.md`
 
 ## Overview

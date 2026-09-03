@@ -1,7 +1,5 @@
 # The New Bottleneck: Theory of Constraints in the Age of AI Coding
 
-## Ch09.102 The New Bottleneck: Theory of Constraints in the Age of AI Coding
-
 > 📊 Level ⭐⭐ | 4.5KB | `entities/the-new-bottleneck-theory-of-constraints-ai-coding-tools.md`
 
 # The New Bottleneck: Theory of Constraints in the Age of AI Coding

@@ -1,7 +1,5 @@
 # Spec as AIOS：AI-Native 全栈交付的抗熵架构（高德技术系列第二期）
 
-## Ch05.012 Spec as AIOS：AI-Native 全栈交付的抗熵架构（高德技术系列第二期）
-
 > 📊 Level ⭐⭐ | 23.1KB | `entities/spec-as-aios-anti-entropy-architecture-gaode-ai-native-series-2.md`
 
 # Spec as AIOS：AI-Native 全栈交付的抗熵架构

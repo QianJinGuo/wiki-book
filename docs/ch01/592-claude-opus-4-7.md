@@ -1,7 +1,5 @@
 # Claude Opus 4.7 并不是一次全面升级，甚至部分能力大幅衰退
 
-## Ch01.592 Claude Opus 4.7 并不是一次全面升级，甚至部分能力大幅衰退
-
 > 📊 Level ⭐⭐ | 5.0KB | `entities/claude-opus-47.md`
 
 # Claude Opus 4.7 并不是一次全面升级，甚至部分能力大幅衰退

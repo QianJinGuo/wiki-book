@@ -1,7 +1,5 @@
 # What Job Interviews Taught Me About Kubernetes
 
-## Ch01.129 What Job Interviews Taught Me About Kubernetes
-
 > 📊 Level ⭐ | 3.4KB | `entities/notnotp-k8s-interviews-non-technical.md`
 
 # What Job Interviews Taught Me About Kubernetes
@@ -47,9 +45,9 @@ First one was **uniformity**. Every service deploys the same way. No one secretl
 - 与现有实体的差异化角度：本文来自 notnotp.com 视角
 - 引用源：[Notnotp K8S Interviews Non Technical](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/notnotp-k8s-interviews-non-technical.md)
 ## 相关实体
-- [from doer to director: the ai mindset shift](027-from-doer-to-director-the-ai-mindset-shift.html)
-- [why internally-built ai fails fund accounting audits](551-why-internally-built-ai-fails-fund-accounting-audits.html)
-- [back up and restore your amazon eks cluster resources using](069-back-up-and-restore-your-amazon-eks-cluster-resources-using.html)
+- [from doer to director: the ai mindset shift](029-from-doer-to-director-the-ai-mindset-shift.html)
+- [why internally-built ai fails fund accounting audits](064-why-internally-built-ai-fails-fund-accounting-audits.html)
+- [back up and restore your amazon eks cluster resources using](072-back-up-and-restore-your-amazon-eks-cluster-resources-using.html)
 
 ---
 

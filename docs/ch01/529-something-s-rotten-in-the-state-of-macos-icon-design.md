@@ -1,7 +1,5 @@
 # Something's Rotten in the State of macOS Icon Design
 
-## Ch01.529 Something's Rotten in the State of macOS Icon Design
-
 > 📊 Level ⭐⭐ | 6.3KB | `entities/somethings-rotten-in-the-state-of-macos-icon-design.md`
 
 # Something's Rotten in the State of macOS Icon Design
@@ -50,7 +48,7 @@ Capo、BBEdit、Fantastical、Cot Editor 等应用在 squircle 框架内依然�
 ## 相关实体
 
 - [设计师必收的图标资源站](../ch03/092-icon-pack-websites-designers-should-bookmark.html)
-- [BMW 设计对话](017-the-future-of-bmw.html)
+- [BMW 设计对话](018-the-future-of-bmw.html)
 - [Windows 11 触觉设计实现](https://github.com/QianJinGuo/wiki/blob/main/entities/haptics-design-implementation-microsoft-windows11.md)
 - [设计师是稀缺物种](../ch03/077-designers-are-a-rare-breed.html)
 - AI UX 设计模式

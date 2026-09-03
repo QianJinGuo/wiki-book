@@ -1,7 +1,5 @@
 # Better decisions at scale: How mathematical optimization delivers where intuition fails
 
-## Ch11.130 Better decisions at scale: How mathematical optimization delivers where intuition fails
-
 > 📊 Level ⭐⭐ | 7.8KB | `entities/better-decisions-at-scale-how-mathematical-optimization-deli.md`
 
 # 数学优化：在直觉失效的复杂决策中寻找确定性最优解

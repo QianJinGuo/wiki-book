@@ -1,7 +1,5 @@
 # OpenTelemetry eBPF Instrumentation (OBI) — 零代码全栈可观测性的内核级实现
 
-## Ch01.172 OpenTelemetry eBPF Instrumentation (OBI) — 零代码全栈可观测性的内核级实现
-
 > 📊 Level ⭐⭐ | 19.0KB | `entities/open-telemetry-ebpf-instrumentation-obi-zero-code-observability-aliyun-2026.md`
 
 # OpenTelemetry eBPF Instrumentation (OBI) — 零代码全栈可观测性的内核级实现

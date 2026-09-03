@@ -1,7 +1,5 @@
 # AI can write code, but the CIOs still owns the operating model
 
-## Ch09.083 AI can write code, but the CIOs still owns the operating model
-
 > 📊 Level ⭐⭐ | 6.8KB | `entities/ai-can-write-code-cios-operating-model.md`
 
 ## 核心要点

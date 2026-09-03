@@ -1,7 +1,5 @@
 # Interaction Models: A Scalable Approach to Human-AI Collaboration
 
-## Ch01.507 Interaction Models: A Scalable Approach to Human-AI Collaboration
-
 > 📊 Level ⭐⭐ | 6.6KB | `entities/interaction-models-human-ai.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/interaction-models-human-ai.md)

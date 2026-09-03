@@ -1,7 +1,5 @@
 # Mythos for Offensive Security: XBOW's Evaluation
 
-## Ch01.257 Mythos for Offensive Security: XBOW's Evaluation
-
 > 📊 Level ⭐⭐ | 12.6KB | `entities/mythos_offensive_security_xbow_evaluatio.md`
 
 ## 核心要点

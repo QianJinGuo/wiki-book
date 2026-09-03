@@ -1,7 +1,5 @@
 # 去哪儿网 AI Coding 研发平台实践：L0-L5 自动化分级 + Harness 四把锁 + QunarDevCenter + 天弦 QDO
 
-## Ch05.071 去哪儿网 AI Coding 研发平台实践：L0-L5 自动化分级 + Harness 四把锁 + QunarDevCenter + 天弦 QDO
-
 > 📊 Level ⭐⭐ | 4.3KB | `entities/qunar-ai-coding-platform-practice-l0-l5-harness.md`
 
 ## 核心概述

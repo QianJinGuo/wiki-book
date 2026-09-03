@@ -1,7 +1,5 @@
 # 腾讯企业微信团队 Skill 流水线：AI代码生成率94%的需求开发全流程
 
-## Ch07.058 腾讯企业微信团队 Skill 流水线：AI代码生成率94%的需求开发全流程
-
 > 📊 Level ⭐⭐ | 5.2KB | `entities/tencent-wework-skill-requirement-development-pipeline.md`
 
 # 腾讯企业微信团队 Skill 流水线：AI代码生成率94%的需求开发全流程

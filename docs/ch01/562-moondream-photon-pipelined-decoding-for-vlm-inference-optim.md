@@ -1,7 +1,5 @@
 # Moondream Photon: Pipelined Decoding for VLM Inference Optimization
 
-## Ch01.562 Moondream Photon: Pipelined Decoding for VLM Inference Optimization
-
 > 📊 Level ⭐⭐ | 5.7KB | `entities/moondream-photon-pipelined-decoding-gpu-bubble.md`
 
 # Moondream Photon: Pipelined Decoding for VLM Inference Optimization
@@ -52,7 +50,7 @@ Moondream Photon 的 pipelined decoding 与传统的推理优化方法（如 [LL
 ## 相关实体
 - [LLM Inference Pipeline Internals](451-llm.html)
 - [MorphLLM Inference Optimization](451-llm.html)
-- [Tencent Hunyuan Hopper Inference Optimization](110-hy3-preview.html)
+- [Tencent Hunyuan Hopper Inference Optimization](113-hy3-preview.html)
 - [LLaVA-OneVision VLM](https://github.com/QianJinGuo/wiki/blob/main/entities/llava-onevision-2-full-frame-rate-vlm-glintlab.md)
 - [高德 VLM 生产实践](../ch03/004-agent.html)
 

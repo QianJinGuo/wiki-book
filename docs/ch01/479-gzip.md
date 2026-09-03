@@ -1,7 +1,5 @@
 # gzip 作为语言模型：压缩-预测等价性的信息论探索
 
-## Ch01.479 gzip 作为语言模型：压缩-预测等价性的信息论探索
-
 > 📊 Level ⭐⭐ | 7.0KB | `entities/gzip-lm-compression-as-language-model.md`
 
 # gzip 作为语言模型：压缩-预测等价性的信息论探索

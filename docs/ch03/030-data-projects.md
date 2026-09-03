@@ -1,7 +1,5 @@
 # Data Projects
 
-## Ch03.030 Data Projects
-
 > 📊 Level ⭐ | 3.9KB | `entities/data-projects-managing-data-assets-at-netflix-scale.md`
 
 # Data Projects: Managing Data Assets at Netflix Scale

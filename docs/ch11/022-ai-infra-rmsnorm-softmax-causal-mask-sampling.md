@@ -1,7 +1,5 @@
 # AI Infra 入门：RMSNorm、Softmax、Causal Mask、Sampling 的数学与底层优化
 
-## Ch11.022 AI Infra 入门：RMSNorm、Softmax、Causal Mask、Sampling 的数学与底层优化
-
 > 📊 Level ⭐⭐ | 16.2KB | `entities/ai-infra-math-foundations-rmsnorm-softmax-causal-mask-sampling-binnnliu-2026-06-17.md`
 
 # AI Infra 入门：RMSNorm、Softmax、Causal Mask、Sampling 的数学与底层优化

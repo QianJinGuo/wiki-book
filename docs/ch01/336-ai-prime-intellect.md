@@ -1,7 +1,5 @@
 # AI科研超越人类 — Prime Intellect递归自改进实验
 
-## Ch01.336 AI科研超越人类 — Prime Intellect递归自改进实验
-
 > 📊 Level ⭐⭐ | 9.9KB | `entities/ai-recursive-self-improvement-nanogpt-prime-intellect.md`
 
 ## Event Overview

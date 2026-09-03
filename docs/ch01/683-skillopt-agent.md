@@ -1,7 +1,5 @@
 # SkillOpt：把 Agent 技能文档变成可训练对象
 
-## Ch01.683 SkillOpt：把 Agent 技能文档变成可训练对象
-
 > 📊 Level ⭐⭐ | 2.5KB | `entities/skillopt-skill-document-training-microsoft-sjtu.md`
 
 # SkillOpt：把 Agent 技能文档变成可训练对象

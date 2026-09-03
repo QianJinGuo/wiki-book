@@ -1,7 +1,5 @@
 # LLM 主题 = 生成变量 — 别把 LLM 提取的主题当成真实变量（William Gieng 因果推断方法论）
 
-## Ch01.162 LLM 主题 = 生成变量 — 别把 LLM 提取的主题当成真实变量（William Gieng 因果推断方法论）
-
 > 📊 Level ⭐⭐ | 22.3KB | `entities/llm-themes-not-observations-causal-inference-william-gieng-2026.md`
 
 ## 概述

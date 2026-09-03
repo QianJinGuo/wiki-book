@@ -1,7 +1,5 @@
 # Amazon Bedrock Ops Alert 三层监控架构
 
-## Ch11.081 Amazon Bedrock Ops Alert 三层监控架构
-
 > 📊 Level ⭐⭐ | 10.0KB | `entities/aws-bedrock-ops-alert.md`
 
 # Amazon Bedrock Ops Alert 三层监控架构

@@ -1,7 +1,5 @@
 # TokenSpeed: A Speed-of-Light LLM Inference Engine for AI Agents
 
-## Ch01.437 TokenSpeed: A Speed-of-Light LLM Inference Engine for AI Agents
-
 > 📊 Level ⭐⭐ | 7.7KB | `entities/lightseek-token-speed-inference.md`
 
 # TokenSpeed: A Speed-of-Light LLM Inference Engine for AI Agents

@@ -1,7 +1,5 @@
 # 百度提出 Unlimited OCR：用 Reference Sliding Window Attention 实现长文档 OCR 常量 KV Cache
 
-## Ch01.761 百度提出 Unlimited OCR：用 Reference Sliding Window Attention 实现长文档 OCR 常量 KV Cache
-
 > 📊 Level ⭐⭐⭐ | 9.4KB | `entities/baidu-unlimited-ocr-sliding-window-attention.md`
 
 # 百度提出 Unlimited OCR：用 Reference Sliding Window Attention 实现长文档 OCR 常量 KV Cache

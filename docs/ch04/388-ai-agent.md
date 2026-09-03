@@ -1,7 +1,5 @@
 # AI 内容创作，开始进入"画布 Agent"时代
 
-## Ch04.388 AI 内容创作，开始进入"画布 Agent"时代
-
 > 📊 Level ⭐⭐ | 4.7KB | `entities/ai-canvas-agent-era-content-creation.md`
 
 # AI 内容创作，开始进入“画布 Agent”时代

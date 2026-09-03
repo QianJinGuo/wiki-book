@@ -1,7 +1,5 @@
 # Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践
 
-## Ch05.084 Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践
-
 > 📊 Level ⭐⭐⭐ | 18.2KB | `entities/tencent-knowledge-harness-practice.md`
 
 [Tencent Knowledge Harness Practice](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-knowledge-harness-practice.md)

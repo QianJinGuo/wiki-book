@@ -1,7 +1,5 @@
 # Claude Code MCP Server
 
-## Ch07.027 Claude Code MCP Server
-
 > 📊 Level ⭐⭐ | 10.4KB | `entities/claude-code-mcp-server.md`
 
 ## 核心洞察

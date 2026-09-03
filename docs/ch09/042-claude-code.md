@@ -1,7 +1,5 @@
 # Claude Code 黑客松：技艺数字化六项目
 
-## Ch09.042 Claude Code 黑客松：技艺数字化六项目
-
 > 📊 Level ⭐⭐ | 11.9KB | `entities/claude-code-hackathon-expertise-digitization.md`
 
 ## 概述

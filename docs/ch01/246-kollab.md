@@ -1,7 +1,5 @@
 # **一、关于 Kollab**
 
-## Ch01.246 **一、关于 Kollab**
-
 > 📊 Level ⭐⭐ | 13.2KB | `entities/对抗-agent-遗忘kollab-基于amazon-bedrock-agentcore-的团队ai工作空间实践.md`
 
 # **一、关于 Kollab**

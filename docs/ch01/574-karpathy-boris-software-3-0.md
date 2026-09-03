@@ -1,7 +1,5 @@
 # Karpathy × Boris 访谈：Software 3.0 时代编程完整地图
 
-## Ch01.574 Karpathy × Boris 访谈：Software 3.0 时代编程完整地图
-
 > 📊 Level ⭐⭐ | 5.4KB | `entities/karpathy-boris-software3-llm-era-programming-2026.md`
 
 # Karpathy × Boris 访谈：Software 3.0 时代编程完整地图

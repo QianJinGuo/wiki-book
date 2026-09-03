@@ -1,7 +1,5 @@
 # Bedrock AgentCore 构建 BI 智能体
 
-## Ch04.217 Bedrock AgentCore 构建 BI 智能体
-
 > 📊 Level ⭐⭐ | 9.8KB | `entities/build-ai-agents-for-business-intelligence-with-amazon-bedrock-agentcore.md`
 
 ## 核心要点

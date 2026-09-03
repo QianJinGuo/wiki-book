@@ -1,7 +1,5 @@
 # Harness 之后：状态边界与失败闭环（若飞续篇）
 
-## Ch05.014 Harness 之后：状态边界与失败闭环（若飞续篇）
-
 > 📊 Level ⭐⭐ | 21.9KB | `entities/harness-之后-状态边界与失败闭环-ruofei.md`
 
 ## 摘要

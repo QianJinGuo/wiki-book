@@ -1,7 +1,5 @@
 # AI in Cybersecurity Training Resources | SANS Institute
 
-## Ch12.040 AI in Cybersecurity Training Resources | SANS Institute
-
 > 📊 Level ⭐⭐ | 9.4KB | `entities/www-sans-org-ai-in-cybersecurity-training-resources-sans-instit.md`
 
 # SANS Institute AI 安全培训体系

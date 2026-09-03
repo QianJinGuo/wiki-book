@@ -1,7 +1,5 @@
 # GPT-5.6一发布，Claude终于舍得重置Fable 5额度了
 
-## Ch01.013 GPT-5.6一发布，Claude终于舍得重置Fable 5额度了
-
 > 📊 Level ⭐ | 10.5KB | `entities/gpt-56一发布claude终于舍得重置fable-5额度了.md`
 
 # GPT-5.6一发布，Claude终于舍得重置Fable 5额度了

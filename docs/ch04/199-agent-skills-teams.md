@@ -1,7 +1,5 @@
 # Agent/Skills/Teams 架构演进过程及技术选型之道
 
-## Ch04.199 Agent/Skills/Teams 架构演进过程及技术选型之道
-
 > 📊 Level ⭐⭐ | 10.5KB | `entities/agent-skills-teams-architecture-evolution-selection-guide.md`
 
 ## 核心命题

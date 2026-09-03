@@ -1,7 +1,5 @@
 # 两篇Harness论文：微软M⋆记忆进化 + 谷歌AutoHarness动作约束
 
-## Ch01.531 两篇Harness论文：微软M⋆记忆进化 + 谷歌AutoHarness动作约束
-
 > 📊 Level ⭐⭐ | 6.3KB | `entities/two-harness-papers-microsoft-google.md`
 
 # 两篇Harness论文：微软M⋆记忆进化 + 谷歌AutoHarness动作约束

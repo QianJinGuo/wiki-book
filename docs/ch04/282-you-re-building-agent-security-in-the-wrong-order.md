@@ -1,7 +1,5 @@
 # You're building agent security in the wrong order
 
-## Ch04.282 You're building agent security in the wrong order
-
 > 📊 Level ⭐⭐ | 8.1KB | `entities/youre-building-agent-security-in-the-wrong-order.md`
 
 # You're building agent security in the wrong order

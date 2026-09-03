@@ -1,7 +1,5 @@
 # 钉钉 Stream + CLI 代理双引擎 AI 助手架构
 
-## Ch04.064 钉钉 Stream + CLI 代理双引擎 AI 助手架构
-
 > 📊 Level ⭐⭐ | 18.1KB | `entities/dingtalk-stream-cli-dual-engine-ai-assistant.md`
 
 # 钉钉 Stream + CLI 代理双引擎 AI 助手架构

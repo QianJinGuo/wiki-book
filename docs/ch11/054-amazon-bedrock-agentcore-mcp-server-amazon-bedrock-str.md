@@ -1,7 +1,5 @@
 # 快时尚电商行业智能体设计思路与应用实践（六）借助 Amazon Bedrock AgentCore MCP Server，Amazon Bedrock，Strands Agents，Kiro 实现智能体极速研发 | 亚马逊AWS官方博客
 
-## Ch11.054 快时尚电商行业智能体设计思路与应用实践（六）借助 Amazon Bedrock AgentCore MCP Server，Amazon Bedrock，Strands Agents，Kiro 实现智能体极速研发 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 11.4KB | `entities/design-and-practical-application-of-intelligent-agents-in-e-commerce-industry.md`
 
 ## 概述

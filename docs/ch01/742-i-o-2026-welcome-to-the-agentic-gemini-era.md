@@ -1,7 +1,5 @@
 # I/O 2026: Welcome to the agentic Gemini era
 
-## Ch01.742 I/O 2026: Welcome to the agentic Gemini era
-
 > 📊 Level ⭐⭐⭐ | 16.6KB | `entities/google-io-2026-agentic-gemini-era.md`
 
 ## 概述

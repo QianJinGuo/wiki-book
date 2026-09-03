@@ -1,7 +1,5 @@
 # 数据级 Harness：架构师 JiaGouX 解读 Anthropic 95% 数据分析与 5 个反直觉边界
 
-## Ch01.252 数据级 Harness：架构师 JiaGouX 解读 Anthropic 95% 数据分析与 5 个反直觉边界
-
 > 📊 Level ⭐⭐ | 12.8KB | `entities/anthropic-95pct-data-analysis-jiagoux-data-level-harness-20260606.md`
 
 # 数据级 Harness：架构师 JiaGouX 解读 Anthropic 95% 数据分析与 5 个反直觉边界

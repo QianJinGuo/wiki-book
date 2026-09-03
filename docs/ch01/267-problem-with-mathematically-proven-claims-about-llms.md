@@ -1,7 +1,5 @@
 # Problem with Mathematically Proven Claims About Llms
 
-## Ch01.267 Problem with Mathematically Proven Claims About Llms
-
 > 📊 Level ⭐⭐ | 12.3KB | `entities/problem-with-mathematically-proven-claims-about-llms.md`
 
 ## 概述

@@ -1,7 +1,5 @@
 # Building a secure auth code flow setup using AgentCore Gateway with MCP clients
 
-## Ch04.223 Building a secure auth code flow setup using AgentCore Gateway with MCP clients
-
 > 📊 Level ⭐⭐ | 9.6KB | `entities/building-a-secure-auth-code-flow-setup-using-agentcore-gatew.md`
 
 # Building a secure auth code flow setup using AgentCore Gateway with MCP clients

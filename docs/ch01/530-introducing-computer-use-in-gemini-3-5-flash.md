@@ -1,7 +1,5 @@
 # Introducing computer use in Gemini 3.5 Flash
 
-## Ch01.530 Introducing computer use in Gemini 3.5 Flash
-
 > 📊 Level ⭐⭐ | 6.3KB | `entities/gemini-3-5-flash-computer-use.md`
 
 # Introducing computer use in Gemini 3.5 Flash

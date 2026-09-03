@@ -1,7 +1,5 @@
 # SkillOpt
 
-## Ch05.028 SkillOpt
-
 > 📊 Level ⭐⭐ | 16.0KB | `entities/skillopt.md`
 
 # SkillOpt

@@ -1,7 +1,5 @@
 # 国产预训练具身大模型开源：Wall-OSS-0.5零样本上真机，预训练即可部署
 
-## Ch01.436 国产预训练具身大模型开源：Wall-OSS-0.5零样本上真机，预训练即可部署
-
 > 📊 Level ⭐⭐ | 7.7KB | `entities/wall-oss-05-pretraining-embodied-ai-x-square-robot.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/wall-oss-05-pretraining-embodied-ai-x-square-robot.md)

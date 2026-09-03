@@ -1,7 +1,5 @@
 # Agent生产级Harness工程指南
 
-## Ch05.035 Agent生产级Harness工程指南
-
 > 📊 Level ⭐⭐ | 14.6KB | `entities/agent-production-harness-engineering.md`
 
 ## 核心定位

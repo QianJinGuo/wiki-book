@@ -1,7 +1,5 @@
 # EdgeClaw：端云两栖龙虾框架
 
-## Ch04.374 EdgeClaw：端云两栖龙虾框架
-
 > 📊 Level ⭐⭐ | 5.1KB | `entities/edgeclaw-bemit-lobster.md`
 
 # EdgeClaw：端云两栖龙虾框架

@@ -1,7 +1,5 @@
 # Agent Skills 系统性综述：表示→获取→检索→进化
 
-## Ch04.302 Agent Skills 系统性综述：表示→获取→检索→进化
-
 > 📊 Level ⭐⭐ | 7.6KB | `entities/agent-skills-comprehensive-survey.md`
 
 ## 核心问题

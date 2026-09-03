@@ -1,7 +1,5 @@
 # OpenAI Quietly Bought Voice-Cloning Startup Weights.gg
 
-## Ch01.503 OpenAI Quietly Bought Voice-Cloning Startup Weights.gg
-
 > 📊 Level ⭐⭐ | 6.7KB | `entities/openai-quietly-bought-voice-cloning-star.md`
 
 ## 核心要点
@@ -59,10 +57,10 @@ OpenAI 已在 2026 年 2 月聘请 Instagram 前明星合作负责人 Charles Po
 - 即便无法阻止技术扩散，通过商标等工具建立Consent框架，仍能在商业层面保持控制力
 ## 相关实体
 - [Openai Gpt Realtime Voice Models Qbitai](316-openai.html)
-- [Microsoft Is Quietly Shopping For An Openai Replac](031-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
+- [Microsoft Is Quietly Shopping For An Openai Replac](033-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
 - [Ai Voice Cloning The Technology Behind It Whos Building It A](../ch04/257-ai.html)
-- [Useful Memories Become Faulty When Continuously Updated By Llms](075-useful-memories-become-faulty-when-continuously-updated-by-l.html)
-- [Build Live Translation Apps With Gpt Realtime Translate](081-build-live-translation-apps-with-gpt-realtime-translate.html)
+- [Useful Memories Become Faulty When Continuously Updated By Llms](078-useful-memories-become-faulty-when-continuously-updated-by-l.html)
+- [Build Live Translation Apps With Gpt Realtime Translate](084-build-live-translation-apps-with-gpt-realtime-translate.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-quietly-bought-voice-cloning-star.md)
 

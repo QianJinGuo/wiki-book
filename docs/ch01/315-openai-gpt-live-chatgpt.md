@@ -1,7 +1,5 @@
 # OpenAI深夜放出GPT-Live，ChatGPT终于像真人一样说话
 
-## Ch01.315 OpenAI深夜放出GPT-Live，ChatGPT终于像真人一样说话
-
 > 📊 Level ⭐⭐ | 10.5KB | `entities/openai深夜放出gpt-livechatgpt终于像真人一样说话.md`
 
 # OpenAI深夜放出GPT-Live，ChatGPT终于像真人一样说话

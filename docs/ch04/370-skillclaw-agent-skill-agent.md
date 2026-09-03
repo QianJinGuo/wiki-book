@@ -1,7 +1,5 @@
 # 高德 SkillClaw：让 Agent Skill 学会进化——跨会话、跨Agent、跨设备、跨用户
 
-## Ch04.370 高德 SkillClaw：让 Agent Skill 学会进化——跨会话、跨Agent、跨设备、跨用户
-
 > 📊 Level ⭐⭐ | 5.2KB | `entities/skillclaw-collective-intelligence.md`
 
 # 高德 SkillClaw：让 Agent Skill 学会进化——跨会话、跨Agent、跨设备、跨用户

@@ -1,7 +1,5 @@
 # World Knowledge：Agent推理前先探索环境生成可迁移知识
 
-## Ch04.229 World Knowledge：Agent推理前先探索环境生成可迁移知识
-
 > 📊 Level ⭐⭐ | 9.4KB | `entities/world-knowledge-agent-self-evolution-tencent-hkustgz.md`
 
 # World Knowledge：Agent推理前先探索环境生成可迁移知识
@@ -120,7 +118,7 @@ R(K) = Success(T_E | K) - Success(T_E | ∅)
 5. **将 World Knowledge 视为可版本化的共享资产**：静态 Markdown 格式天然支持 Git 版本化管理，后续可引人动态更新机制（定期 re-explore + diff 合并），使环境知识随网站结构演变保持新鲜度，而非一次性生成后僵化。
 
 ## 相关实体
-- [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](../ch01/028-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode.html)
+- [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](../ch01/030-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode.html)
 - [Tencent Skill Writing Complete Playbook Jackjchou](../ch07/054-skill.html)
 - [Agent Self Improvement Six Mechanisms](../ch03/004-agent.html)
 - [Llm Agent脚手架如何具备自进化能力以Hermes Agent为例](161-hermes-agent.html)

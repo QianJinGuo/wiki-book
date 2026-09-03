@@ -1,7 +1,5 @@
 # MiniMax M3 开源 Frontier 模型
 
-## Ch09.052 MiniMax M3 开源 Frontier 模型
-
 > 📊 Level ⭐⭐ | 9.9KB | `entities/minimax-m3-frontier-open-source-model.md`
 
 # MiniMax M3 开源 Frontier 模型
@@ -131,7 +129,7 @@ MiniMax M3 的三件套不是功能堆砌，而是一个系统能力的三个接
 
 ## 相关实体
 - [Claude Code Open Source Model Enterprise Practice](../ch03/057-claude-code.html)
-- [Tencent Hunyuan Hy3 Preview Open Source Agent](../ch01/110-hy3-preview.html)
+- [Tencent Hunyuan Hy3 Preview Open Source Agent](../ch01/113-hy3-preview.html)
 - [Cline Open Source Agent Runtime Sdk](../ch03/004-agent.html)
 - [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](../ch01/009-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.html)
 - [How Open Model Ecosystems Compound](../ch01/598-how-open-model-ecosystems-compound.html)

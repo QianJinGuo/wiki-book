@@ -1,7 +1,5 @@
 # score by collisions, patch by panic
 
-## Ch04.287 score by collisions, patch by panic
-
 > 📊 Level ⭐⭐ | 7.9KB | `entities/blog-himanshuanand-com-score-by-collisions-patch-by-panic.md`
 
 # score by collisions, patch by panic
@@ -53,7 +51,7 @@
 - [AI Agent 安全攻防综述](312-ai-agent.html)
 - [npm 供应链投毒复盘](257-ai.html)
 - [Thinkst Package Proxy：供应链防护](257-ai.html)
-- [Akamai 收购 AI 浏览器安全公司 LayerX](../ch01/038-akamai-acquires-israeli-ai-browser-security-startup-layerx-f.html)
+- [Akamai 收购 AI 浏览器安全公司 LayerX](../ch01/040-akamai-acquires-israeli-ai-browser-security-startup-layerx-f.html)
 - [Entry Point Hijacking：入口点劫持](https://github.com/QianJinGuo/wiki/blob/main/entities/entrypointhijacking.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/blog-himanshuanand-com-score-by-collisions-patch-by-panic.md)

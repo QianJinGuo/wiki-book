@@ -1,7 +1,5 @@
 # Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic
 
-## Ch04.038 Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic
-
 > 📊 Level ⭐⭐ | 23.2KB | `entities/real-time-voice-agents-with-stream-vision-agents-and-amazon-nova-2-sonic.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/real-time-voice-agents-with-stream-vision-agents-and-amazon-nova-2-sonic.md)

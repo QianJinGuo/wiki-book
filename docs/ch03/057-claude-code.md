@@ -1,7 +1,5 @@
 # Claude Code 命令完全指南
 
-## Ch03.057 Claude Code 命令完全指南
-
 > 📊 Level ⭐⭐ | 10.4KB | `entities/claude-code-commands-guide.md`
 
 ## 概述

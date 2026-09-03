@@ -1,7 +1,5 @@
 # 科大讯飞星火Token Factory：企业AI模型路由与成本管理统一中间层
 
-## Ch11.113 科大讯飞星火Token Factory：企业AI模型路由与成本管理统一中间层
-
 > 📊 Level ⭐⭐ | 8.4KB | `entities/xunfei-spark-token-factory-model-routing-cost.md`
 
 # 科大讯飞星火Token Factory：企业AI模型路由与成本管理统一中间层

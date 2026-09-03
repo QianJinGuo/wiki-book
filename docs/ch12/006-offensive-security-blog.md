@@ -1,7 +1,5 @@
 # Offensive Security Blog
 
-## Ch12.006 Offensive Security Blog
-
 > 📊 Level ⭐ | 8.4KB | `entities/offensive-security-blog.md`
 
 > -> [offensive-security-blog](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/offensive-security-blog.md)

@@ -1,7 +1,5 @@
 # Well-architected best practices for software supply chain security
 
-## Ch01.687 Well-architected best practices for software supply chain security
-
 > 📊 Level ⭐⭐ | 2.5KB | `entities/aws-software-supply-chain-security-well-architected.md`
 
 # Well-architected best practices for software supply chain security

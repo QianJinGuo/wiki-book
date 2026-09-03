@@ -1,7 +1,5 @@
 # GLM-5.2: Built for Long-Horizon Tasks
 
-## Ch01.506 GLM-5.2: Built for Long-Horizon Tasks
-
 > 📊 Level ⭐⭐ | 6.6KB | `entities/z-glm-5.2.md`
 
 # GLM-5.2: Built for Long-Horizon Tasks

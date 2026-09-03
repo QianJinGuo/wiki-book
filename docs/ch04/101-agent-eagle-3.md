@@ -1,7 +1,5 @@
 # 多轮 Agent 场景下，滴滴的 EAGLE-3 训推加速实践
 
-## Ch04.101 多轮 Agent 场景下，滴滴的 EAGLE-3 训推加速实践
-
 > 📊 Level ⭐⭐ | 15.0KB | `entities/didi-eagle-3-speculative-decoding-agents.md`
 
 ## 背景：为什么 Agent 场景对推理速度要求更高

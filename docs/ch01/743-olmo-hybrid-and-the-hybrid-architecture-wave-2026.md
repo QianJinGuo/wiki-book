@@ -1,7 +1,5 @@
 # Olmo Hybrid and the Hybrid Architecture Wave (2026)
 
-## Ch01.743 Olmo Hybrid and the Hybrid Architecture Wave (2026)
-
 > 📊 Level ⭐⭐⭐ | 16.6KB | `entities/olmo-hybrid-gdn-wave-2026.md`
 
 # Olmo Hybrid and the Hybrid Architecture Wave (2026)

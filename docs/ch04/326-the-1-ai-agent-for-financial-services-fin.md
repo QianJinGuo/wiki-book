@@ -1,7 +1,5 @@
 # The #1 AI Agent for financial services | Fin
 
-## Ch04.326 The #1 AI Agent for financial services | Fin
-
 > 📊 Level ⭐⭐ | 7.1KB | `entities/the-1-ai-agent-for-financial-services-fin.md`
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-1-ai-agent-for-financial-services-fin.md)
@@ -49,7 +47,7 @@ Fin 展示了一条垂直行业 Agent 的完整商业化路径：用"最高准�
 - [Agent Reliability：Context Drift 与 Tool Hallucination](../ch03/004-agent.html)
 - 法律 AI 与合规
 - [AI 伦理与负责任 AI](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-ethics-responsible-ai.md)
-- [How Superset built the IDE for AI agents on Vercel](../ch01/071-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
+- [How Superset built the IDE for AI agents on Vercel](../ch01/074-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
 - [The UI is dead, long live the agent：ServiceNow goes headless and opens its platform](324-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
 - [The UI is dead, long live the agent：ServiceNow goes headless](324-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
 

@@ -1,7 +1,5 @@
 # Vera Arrives: NVIDIA's First CPU Built for Agents Lands at Top AI Labs
 
-## Ch04.151 Vera Arrives: NVIDIA's First CPU Built for Agents Lands at Top AI Labs
-
 > 📊 Level ⭐⭐ | 12.0KB | `entities/blogs.nvidia.com-vera-cpu-delivery.md`
 
 ## 核心要点

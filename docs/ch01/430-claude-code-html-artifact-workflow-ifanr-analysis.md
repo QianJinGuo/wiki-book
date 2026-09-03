@@ -1,7 +1,5 @@
 # Claude Code HTML Artifact Workflow (IFanR Analysis)
 
-## Ch01.430 Claude Code HTML Artifact Workflow (IFanR Analysis)
-
 > 📊 Level ⭐⭐ | 7.7KB | `entities/claude-code-html-artifact-workflow-ifanr.md`
 
 # Claude Code HTML Artifact Workflow (IFanR Analysis)

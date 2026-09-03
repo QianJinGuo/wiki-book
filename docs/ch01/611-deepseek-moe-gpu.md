@@ -1,7 +1,5 @@
 # DeepSeek MoE 并行策略与GPU通信优化
 
-## Ch01.611 DeepSeek MoE 并行策略与GPU通信优化
-
 > 📊 Level ⭐⭐ | 4.6KB | `entities/deepseek-moe-parallel-strategy.md`
 
 ## 核心观点

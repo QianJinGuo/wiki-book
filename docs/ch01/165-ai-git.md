@@ -1,7 +1,5 @@
 # AI 时代的 Git 版本管理最佳实践
 
-## Ch01.165 AI 时代的 Git 版本管理最佳实践
-
 > 📊 Level ⭐⭐ | 21.0KB | `entities/ai-era-git-version-control-agentic-coding-practices.md`
 
 ## 核心信息

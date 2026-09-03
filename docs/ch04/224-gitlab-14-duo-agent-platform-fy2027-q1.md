@@ -1,7 +1,5 @@
 # GitLab 14% 裁员 + Duo Agent Platform 扩张（FY2027 Q1 财报 + 智能体治理）
 
-## Ch04.224 GitLab 14% 裁员 + Duo Agent Platform 扩张（FY2027 Q1 财报 + 智能体治理）
-
 > 📊 Level ⭐⭐ | 9.6KB | `entities/gitlab-14pct-layoff-agent-platform-ai-2026q1.md`
 
 # GitLab 14% 裁员 + Duo Agent Platform 扩张

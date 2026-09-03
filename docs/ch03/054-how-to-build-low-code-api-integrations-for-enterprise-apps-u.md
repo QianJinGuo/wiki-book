@@ -1,7 +1,5 @@
 # How to Build Low-Code API Integrations for Enterprise Apps Using Okta
 
-## Ch03.054 How to Build Low-Code API Integrations for Enterprise Apps Using Okta
-
 > 📊 Level ⭐⭐ | 11.5KB | `entities/low-code-api-integration.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/low-code-api-integration.md)
@@ -162,7 +160,7 @@ OIN + API Integration Actions 的组合创造了：
 ## 相关实体
 - [Build An Enterprise Observability Solution For Amazon Quick](../ch11/014-build-an-enterprise-observability-solution-for-amazon-quick.html)
 - [Hs.Playerzero Ai Code Review](../ch04/257-ai.html)
-- [Code Simulation For Enterprise Engineering Playerz](../ch01/096-code-simulation-for-enterprise-engineering-playerzero.html)
+- [Code Simulation For Enterprise Engineering Playerz](../ch01/057-code-simulation-for-enterprise-engineering-playerzero.html)
 - [Announcing Openai Compatible Api Support For Amazon Sagemaker](../ch01/515-announcing-openai-compatible-api-support-for-amazon-sagemake.html)
 - [Top 10 Design Gadgets Creative Professionals 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/top-10-design-gadgets-creative-professionals-2026.md)
 

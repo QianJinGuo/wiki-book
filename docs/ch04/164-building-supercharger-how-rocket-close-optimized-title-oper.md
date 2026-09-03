@@ -1,7 +1,5 @@
 # Building Supercharger: How Rocket Close optimized title operations with agentic AI
 
-## Ch04.164 Building Supercharger: How Rocket Close optimized title operations with agentic AI
-
 > 📊 Level ⭐⭐ | 11.5KB | `entities/building-supercharger-how-rocket-close-optimized-title-opera.md`
 
 # Building Supercharger: How Rocket Close optimized title operations with agentic AI

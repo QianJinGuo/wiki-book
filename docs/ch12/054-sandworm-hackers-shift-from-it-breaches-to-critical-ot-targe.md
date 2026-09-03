@@ -1,7 +1,5 @@
 # Sandworm Hackers Shift From IT Breaches to Critical OT Targets
 
-## Ch12.054 Sandworm Hackers Shift From IT Breaches to Critical OT Targets
-
 > 📊 Level ⭐⭐ | 7.8KB | `entities/sandworm-hackers-shift-it-breaches-ot-gbhackers.md`
 
 # Sandworm：从 IT 网络到关键 OT 目标的攻击转向
@@ -47,7 +45,7 @@ Sandworm 的能力演进呈现出清晰的"IT 渗透 → 物理破坏"升级路�
 - [New cybersecurity industry coalition aims to lead US critical infrastructure protection](https://github.com/QianJinGuo/wiki/blob/main/entities/new-cybersecurity-coalition-us-policy.md) — 美国关基保护产业联盟动向
 - [A Route to Root in a 4G Industrial Router](https://github.com/QianJinGuo/wiki/blob/main/entities/tantosec-com-blog-2026-04-route-to-root-in-4g-industrial-router.md) — OT 边缘设备真实漏洞案例
 - [NIST SP 800-213r1 — IoT Product Cybersecurity Guidelines](058-nist-sp-800-213r1-iot-product-cybersecurity-guidelines.html) — IoT/OT 产品安全基线标准
-- [Linux Foundation 携手业界推出 Akrites 保护关键开源软件](../ch01/039-linux-foundation-and-industry-leaders-launch-akrites-to-defe.html) — 关键基础设施供应链防御倡议
+- [Linux Foundation 携手业界推出 Akrites 保护关键开源软件](../ch01/041-linux-foundation-and-industry-leaders-launch-akrites-to-defe.html) — 关键基础设施供应链防御倡议
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/sandworm-hackers-shift-it-breaches-ot-gbhackers.md)
 

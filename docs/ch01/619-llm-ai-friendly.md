@@ -1,14 +1,12 @@
 # 面向 LLM 的架构设计：什么是真正的 AI Friendly 架构？
 
-## Ch01.619 面向 LLM 的架构设计：什么是真正的 AI Friendly 架构？
-
 > 📊 Level ⭐⭐ | 4.2KB | `entities/ai-friendly-architecture-design-taobao.md`
 
 # 面向 LLM 的架构设计：什么是真正的 AI Friendly 架构？
 
 ## 相关实体
 
-- [why internally-built ai fails fund accounting audits](551-why-internally-built-ai-fails-fund-accounting-audits.html)
+- [why internally-built ai fails fund accounting audits](064-why-internally-built-ai-fails-fund-accounting-audits.html)
 - [ai 硬件迎来寒武纪时刻：百度智能云如何成为爆发催化剂](../ch04/257-ai.html)
 - [how to build an ai-native startup](../ch05/018-ai-native.html)
 - [百型智能 ontoz：企业本体论 + 群智能体协同体系，新一代企业级 ai 基础设施](../ch04/257-ai.html)

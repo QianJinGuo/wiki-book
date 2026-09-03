@@ -1,7 +1,5 @@
 # 5 分钟上手 AgentRun：从注册到第一个 Agent 运行
 
-## Ch04.003 5 分钟上手 AgentRun：从注册到第一个 Agent 运行
-
 > 📊 Level ⭐ | 9.0KB | `entities/aliyun-agentrun-5min-quickstart.md`
 
 ## 核心定位

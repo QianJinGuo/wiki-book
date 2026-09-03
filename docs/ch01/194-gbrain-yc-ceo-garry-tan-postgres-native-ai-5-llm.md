@@ -1,7 +1,5 @@
 # GBrain — YC CEO Garry Tan 的 Postgres-native AI 第二大脑：5 大设计决策 + 零 LLM 知识图谱 + 8 阶段检索 + Brain⊥Source 正交维度
 
-## Ch01.194 GBrain — YC CEO Garry Tan 的 Postgres-native AI 第二大脑：5 大设计决策 + 零 LLM 知识图谱 + 8 阶段检索 + Brain⊥Source 正交维度
-
 > 📊 Level ⭐⭐ | 16.4KB | `entities/gbrain.md`
 
 ## 概述

@@ -1,7 +1,5 @@
 # Yann LeCun JEPA世界模型与AMI Labs
 
-## Ch04.328 Yann LeCun JEPA世界模型与AMI Labs
-
 > 📊 Level ⭐⭐ | 7.0KB | `entities/yann-lecun-jepa-world-model.md`
 
 ## 核心论点

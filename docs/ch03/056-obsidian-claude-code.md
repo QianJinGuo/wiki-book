@@ -1,7 +1,5 @@
 # Obsidian + Claude Code 完整集成指南：五种知识管理策略
 
-## Ch03.056 Obsidian + Claude Code 完整集成指南：五种知识管理策略
-
 > 📊 Level ⭐⭐ | 10.5KB | `entities/57u6xekcgtvkqxnnqg9djq.md`
 
 # Obsidian + Claude Code 完整集成指南

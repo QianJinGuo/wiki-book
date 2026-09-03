@@ -1,7 +1,5 @@
 # Amazon Nova Lite Fine-Tuning: 高性价比的视觉检测模型微调案例与实践 | 亚马逊AWS官方博客
 
-## Ch11.055 Amazon Nova Lite Fine-Tuning: 高性价比的视觉检测模型微调案例与实践 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 11.3KB | `entities/amazon-nova-lite-fine-tuning-cost-effective-vision-detection-model-tuning-case-and-practice.md`
 
 ## 概述

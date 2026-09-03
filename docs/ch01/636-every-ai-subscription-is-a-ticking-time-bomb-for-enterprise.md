@@ -1,7 +1,5 @@
 # Every AI Subscription Is a Ticking Time Bomb for Enterprise
 
-## Ch01.636 Every AI Subscription Is a Ticking Time Bomb for Enterprise
-
 > 📊 Level ⭐⭐ | 3.5KB | `entities/every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.md`
 
 ## 核心要点
@@ -46,7 +44,7 @@ AI 订阅模式的结构性陷阱在于：企业正在用锁定换效率，用�
 
 ## 相关实体
 - [Www.Cio 4170978 Nearly Every Enterprise Is Investing In Ai But Only 5 Say Their ](120-nearly-every-enterprise-is-investing-in-ai-but-only-5-say.html)
-- [Code Simulation For Enterprise Engineering Playerz](096-code-simulation-for-enterprise-engineering-playerzero.html)
+- [Code Simulation For Enterprise Engineering Playerz](057-code-simulation-for-enterprise-engineering-playerzero.html)
 - [Hs.Playerzero Ai Code Review](../ch04/257-ai.html)
 - [From System Of Record To System Of Intelligence](195-from-system-of-record-to-system-of-intelligence.html)
 - [要实现一个工作流选择 Agent Skills 还是 Ai 表格](../ch04/302-agent-skills.html)

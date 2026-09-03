@@ -1,7 +1,5 @@
 # Build financial document processing with Pulse AI and Amazon Bedrock
 
-## Ch11.119 Build financial document processing with Pulse AI and Amazon Bedrock
-
 > 📊 Level ⭐⭐ | 8.1KB | `entities/build-financial-document-processing-with-pulse-ai-and-amazon-bedrock.md`
 
 ## 核心要点

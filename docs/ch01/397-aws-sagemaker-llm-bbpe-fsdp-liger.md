@@ -1,7 +1,5 @@
 # AWS SageMaker 阿塞拜疆语 LLM 训练：BBPE 分词 + FSDP + Liger 三阶段方案
 
-## Ch01.397 AWS SageMaker 阿塞拜疆语 LLM 训练：BBPE 分词 + FSDP + Liger 三阶段方案
-
 > 📊 Level ⭐⭐ | 8.3KB | `entities/aws-sagemaker-azerbaijani-lm.md`
 
 # AWS SageMaker 阿塞拜疆语 LLM 训练：BBPE 分词 + FSDP + Liger 三阶段方案

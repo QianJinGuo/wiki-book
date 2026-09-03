@@ -1,7 +1,5 @@
 # Nvidia Cut Checkpoint Costs Nvcomp
 
-## Ch03.022 Nvidia Cut Checkpoint Costs Nvcomp
-
 > 📊 Level ⭐ | 6.2KB | `entities/nvidia-cut-checkpoint-costs-nvcomp.md`
 
 # Cut Checkpoint Costs with About 30 Lines of Python and NVIDIA nvCOMP | NVIDIA Technical Blog

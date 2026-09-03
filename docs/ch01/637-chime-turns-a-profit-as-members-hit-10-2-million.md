@@ -1,7 +1,5 @@
 # Chime Turns a Profit as Members Hit 10.2 Million
 
-## Ch01.637 Chime Turns a Profit as Members Hit 10.2 Million
-
 > 📊 Level ⭐⭐ | 3.4KB | `entities/chime-earnings-q1-2026-ai-upmarket.md`
 
 ## 核心要点

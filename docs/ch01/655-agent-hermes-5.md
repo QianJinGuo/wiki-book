@@ -1,7 +1,5 @@
 # 长期运行的 Agent 怎么管：Hermes 治理分层与 5 张卡
 
-## Ch01.655 长期运行的 Agent 怎么管：Hermes 治理分层与 5 张卡
-
 > 📊 Level ⭐⭐ | 3.0KB | `entities/hermes-agent-long-running-governance-five-cards-ruofei.md`
 
 # 长期运行的 Agent 怎么管：Hermes 治理分层与 5 张卡

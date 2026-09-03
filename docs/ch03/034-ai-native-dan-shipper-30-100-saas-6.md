@@ -1,7 +1,5 @@
 # AI Native 公司 Dan Shipper 30 人做出 100 人产出：层次化思维 + SaaS 6 维能力框架
 
-## Ch03.034 AI Native 公司 Dan Shipper 30 人做出 100 人产出：层次化思维 + SaaS 6 维能力框架
-
 > 📊 Level ⭐⭐ | 23.0KB | `entities/ai-native-dan-shipper-every-layered-thinking-walkwalk.md`
 
 # AI Native 公司 Dan Shipper 30 人做出 100 人产出：层次化思维 + SaaS 6 维能力框架
@@ -317,7 +315,7 @@ Dan Shipper 的"every layered thinking"模型将 AI-native 分为多个层次：
 到达范式层需要的不只是技术变革，还有组织文化变革——从"AI 辅助人"到"人辅助 AI"。
 
 ## 相关实体
-- [Running An Ai Native Engineering Org](../ch01/044-running-an-ai-native-engineering-org.html)
+- [Running An Ai Native Engineering Org](../ch01/046-running-an-ai-native-engineering-org.html)
 - [Agentic Engineering Leadership](004-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-native-dan-shipper-every-layered-thinking-walkwalk.md)

@@ -1,7 +1,5 @@
 # 阿里云 Agentic Cloud
 
-## Ch04.273 阿里云 Agentic Cloud
-
 > 📊 Level ⭐⭐ | 8.2KB | `entities/alibaba-agentic-cloud.md`
 
 # 阿里云 Agentic Cloud

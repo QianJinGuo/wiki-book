@@ -1,7 +1,5 @@
 # Pydantic 早就不只是校验了——Rust 引擎 + 可观测 + Agent 类型约束（含 agentcanvas 可视化补充）
 
-## Ch04.089 Pydantic 早就不只是校验了——Rust 引擎 + 可观测 + Agent 类型约束（含 agentcanvas 可视化补充）
-
 > 📊 Level ⭐⭐ | 15.7KB | `entities/pydantic-three-piece-suite-yunduo.md`
 
 > -> **Pydantic早就不只是校验了——Rust引擎 + 可观测 + Agent 类型约束**

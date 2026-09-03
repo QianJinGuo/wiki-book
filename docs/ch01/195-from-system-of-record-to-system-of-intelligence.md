@@ -1,7 +1,5 @@
 # From "System of Record" to "System of Intelligence
 
-## Ch01.195 From "System of Record" to "System of Intelligence
-
 > 📊 Level ⭐⭐ | 16.4KB | `entities/from-system-of-record-to-system-of-intelligence.md`
 
 ## 核心要点

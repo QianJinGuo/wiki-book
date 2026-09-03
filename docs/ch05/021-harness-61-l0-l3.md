@@ -1,7 +1,5 @@
 # Harness 减法工程——删掉 61% 之后什么该留（L0-L3 四层归属）
 
-## Ch05.021 Harness 减法工程——删掉 61% 之后什么该留（L0-L3 四层归属）
-
 > 📊 Level ⭐⭐ | 18.6KB | `entities/tdsql-harness-subtraction-l0-l3-tencent-2026-08-06.md`
 
 # Harness 减法工程——删掉 61% 之后什么该留

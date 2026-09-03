@@ -1,7 +1,5 @@
 # Sakana Fugu 发布：Claude 禁令后的多 Agent 编排 API，LiveCodeBench 93.2
 
-## Ch09.080 Sakana Fugu 发布：Claude 禁令后的多 Agent 编排 API，LiveCodeBench 93.2
-
 > 📊 Level ⭐⭐ | 7.0KB | `entities/sakana-fugu-livecodebench-93-2.md`
 
 # Sakana Fugu 发布：Claude 禁令后的多 Agent 编排 API，LiveCodeBench 93.2

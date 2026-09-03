@@ -1,7 +1,5 @@
 # 精选 8 个 UI 设计师必备的 AI 智能体技能（Agent Skills）
 
-## Ch04.153 精选 8 个 UI 设计师必备的 AI 智能体技能（Agent Skills）
-
 > 📊 Level ⭐⭐ | 11.9KB | `entities/精选-8-个-ui-设计师必备的-ai-智能体技能agent-skills.md`
 
 [精选 8 个 Ui 设计师必备的 Ai 智能体技能Agent Skills](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/精选-8-个-ui-设计师必备的-ai-智能体技能agent-skills.md)

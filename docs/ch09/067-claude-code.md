@@ -1,7 +1,5 @@
 # Claude Code 可控性：软规则无法变成硬约束
 
-## Ch09.067 Claude Code 可控性：软规则无法变成硬约束
-
 > 📊 Level ⭐⭐ | 8.3KB | `entities/claude-code-governance-soft-rules.md`
 
 ## 核心洞察

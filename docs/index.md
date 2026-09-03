@@ -30,7 +30,7 @@
 
   </div>
 
-  <p class="home-hero__joke">🔥 “老东西，终于肯把《AI 工程·焚决》交出来了！”</p>
+  <p class="home-hero__joke">🔥 “老东西，终于肯把《AI 工程·焚诀》交出来了！”</p>
 
   <p class="home-hero__evolve">这是一部会<strong>自进化</strong>的功法秘卷：每日自动收录新文、炼去糟粕，按四阶递进 —— <strong>黄阶</strong> · 入门筑基 → <strong>玄阶</strong> · 构建应用 → <strong>地阶</strong> · 参透架构 → <strong>天阶</strong> · 问道前沿；炼至大成，即可亲手炼制生产级 Agent。</p>
 

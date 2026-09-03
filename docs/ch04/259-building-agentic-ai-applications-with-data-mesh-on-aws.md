@@ -1,7 +1,5 @@
 # Building Agentic AI Applications with Data Mesh on AWS
 
-## Ch04.259 Building Agentic AI Applications with Data Mesh on AWS
-
 > 📊 Level ⭐⭐ | 8.5KB | `entities/agentic-ai-data-mesh-aws-s3-vectors-mcp.md`
 
 # Building Agentic AI Applications with Data Mesh on AWS

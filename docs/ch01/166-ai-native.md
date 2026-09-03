@@ -1,7 +1,5 @@
 # AI Native 时代 —— 研发组织何去何从
 
-## Ch01.166 AI Native 时代 —— 研发组织何去何从
-
 > 📊 Level ⭐⭐ | 20.7KB | `entities/ai-native-时代-研发组织何去何从.md`
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-native-时代-研发组织何去何从.md)

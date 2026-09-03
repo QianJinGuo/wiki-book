@@ -1,7 +1,5 @@
 # Introducing eve
 
-## Ch01.400 Introducing eve
-
 > 📊 Level ⭐⭐ | 8.3KB | `entities/introducing-eve.md`
 
 # Introducing eve

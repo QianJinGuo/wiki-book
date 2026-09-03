@@ -1,7 +1,5 @@
 # TRAE SOLO Work 模式 + 飞书多维表格 5 步教程
 
-## Ch04.314 TRAE SOLO Work 模式 + 飞书多维表格 5 步教程
-
 > 📊 Level ⭐⭐ | 7.5KB | `entities/trae-solo-work-feishu-bitable-tutorial.md`
 
 # TRAE SOLO Work 模式 + 飞书多维表格 5 步教程

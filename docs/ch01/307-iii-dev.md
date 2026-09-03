@@ -1,7 +1,5 @@
 # iii.dev
 
-## Ch01.307 iii.dev
-
 > 📊 Level ⭐⭐ | 10.7KB | `entities/iii-dev.md`
 
 ## 概述

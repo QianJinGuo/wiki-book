@@ -1,7 +1,5 @@
 # Spec Review Agent: Multi-Agent Code-to-Product Validation with MCP + Browser Tool
 
-## Ch04.195 Spec Review Agent: Multi-Agent Code-to-Product Validation with MCP + Browser Tool
-
 > 📊 Level ⭐⭐ | 10.5KB | `entities/spec-review-agent-baz-bedrock-agentcore-multi-agent.md`
 
 # Spec Review Agent: Multi-Agent Code-to-Product Validation with MCP + Browser Tool

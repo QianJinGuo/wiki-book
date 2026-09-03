@@ -1,7 +1,5 @@
 # Code Intelligence – Changelog
 
-## Ch04.353 Code Intelligence – Changelog
-
 > 📊 Level ⭐⭐ | 6.1KB | `entities/code-intelligence-changelog.md`
 
 ## 核心要点

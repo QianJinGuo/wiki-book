@@ -1,7 +1,5 @@
 # Agent 上下文窗口管理对比
 
-## Ch04.123 Agent 上下文窗口管理对比
-
 > 📊 Level ⭐⭐ | 13.3KB | `entities/context-window-management.md`
 
 ## Overview

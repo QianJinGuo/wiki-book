@@ -1,7 +1,5 @@
 # SAP Unveils the Autonomous Enterprise
 
-## Ch04.079 SAP Unveils the Autonomous Enterprise
-
 > 📊 Level ⭐⭐ | 16.5KB | `entities/sap-unveils-autonomous-enterprise.md`
 
 ## 核心架构：SAP Business AI Platform

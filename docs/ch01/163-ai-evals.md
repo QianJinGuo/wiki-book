@@ -1,7 +1,5 @@
 # AI Evals 评估方法论
 
-## Ch01.163 AI Evals 评估方法论
-
 > 📊 Level ⭐⭐ | 22.1KB | `entities/ai-evals-methodology.md`
 
 ## 三种评估方法

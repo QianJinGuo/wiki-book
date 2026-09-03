@@ -1,7 +1,5 @@
 # ProseMirror @文档 mention：知识库 Agent 输入框的工程化实现
 
-## Ch04.201 ProseMirror @文档 mention：知识库 Agent 输入框的工程化实现
-
 > 📊 Level ⭐⭐ | 10.2KB | `entities/prosemirror-knowledge-base-mention.md`
 
 # ProseMirror @文档 mention：知识库 Agent 输入框的工程化实现

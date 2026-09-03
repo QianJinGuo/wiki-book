@@ -1,7 +1,5 @@
 # 高德 AI-Native 生产线（第 3 期）：7x24 Self-Healing Pipeline + Agent 自进化
 
-## Ch04.020 高德 AI-Native 生产线（第 3 期）：7x24 Self-Healing Pipeline + Agent 自进化
-
 > 📊 Level ⭐⭐ | 31.7KB | `entities/gaode-ai-native-7x24-pipeline-self-healing.md`
 
 # 高德 AI-Native 生产线（第 3 期）：7x24 Self-Healing Pipeline + Agent 自进化

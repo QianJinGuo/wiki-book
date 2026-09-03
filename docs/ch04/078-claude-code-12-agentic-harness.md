@@ -1,7 +1,5 @@
 # 深度拆解 Claude Code：12 个可复用的 Agentic Harness 设计模式
 
-## Ch04.078 深度拆解 Claude Code：12 个可复用的 Agentic Harness 设计模式
-
 > 📊 Level ⭐⭐ | 16.5KB | `entities/claude-code-agentic-harness-design-patterns.md`
 
 [Claude Code Agentic Harness Design Patterns](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-agentic-harness-design-patterns.md)

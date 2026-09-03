@@ -1,7 +1,5 @@
 # 基于Bedrock Agentcore 实现智能成本分析与告警系统 | 亚马逊AWS官方博客
 
-## Ch11.078 基于Bedrock Agentcore 实现智能成本分析与告警系统 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 10.2KB | `entities/intelligent-cost-analysis-and-alerting-system-powered-by-bedrock-agentcore.md`
 
 ## 概述

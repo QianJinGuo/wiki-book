@@ -1,7 +1,5 @@
 # 电商 AI 操作系统崛起：从「工具人」到「All in One」+ 行业 KnowHow Skill 化 + 5 巨头 Headless 布局
 
-## Ch07.030 电商 AI 操作系统崛起：从「工具人」到「All in One」+ 行业 KnowHow Skill 化 + 5 巨头 Headless 布局
-
 > 📊 Level ⭐⭐ | 10.2KB | `entities/ecommerce-ai-os-all-in-one-storeclaw-geek-park-2026.md`
 
 # 电商 AI 操作系统崛起：从「工具人」到「All in One」

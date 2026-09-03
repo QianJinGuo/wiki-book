@@ -1,7 +1,5 @@
 # ICO 对 South Staffordshire 处以 96.3 万英镑罚款：2022 年 Cl0p 勒索软件攻击暴露的安全失败
 
-## Ch12.046 ICO 对 South Staffordshire 处以 96.3 万英镑罚款：2022 年 Cl0p 勒索软件攻击暴露的安全失败
-
 > 📊 Level ⭐⭐ | 8.6KB | `entities/5237875.md`
 
 # ICO 对 South Staffordshire 处以 96.3 万英镑罚款：2022 年 Cl0p 勒索软件攻击暴露的安全失败

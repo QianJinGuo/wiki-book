@@ -1,7 +1,5 @@
 # 百型智能 OntoZ：企业本体论 + 群智能体协同体系（出海企业数字大脑 / Palantir 中国类比）
 
-## Ch04.116 百型智能 OntoZ：企业本体论 + 群智能体协同体系（出海企业数字大脑 / Palantir 中国类比）
-
 > 📊 Level ⭐⭐ | 13.7KB | `entities/baixing-ontoz-enterprise-ontology-multi-agent.md`
 
 # 百型智能 OntoZ：企业本体论 + 群智能体协同体系
@@ -179,7 +177,7 @@
 ## 相关主题
 
 - 多智能体协同 — [Openclaw Multi Agent Team Practice V2](027-openclaw-multi-agent-team-practice-v2.html)
-- 出海/跨境 AI — [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](../ch01/028-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode.html)
+- 出海/跨境 AI — [Cisco Preps For A World Of Ai Agent Coworkers Frontier Model Threats](../ch01/030-cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-mode.html)
 - 智能体协议 — [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md)
 - Kimi Work / Codex — [Kimi Work Codex Vibe Working Paradigm Shift](../ch01/393-codex.html)
 - Claude Code 架构 — [Claude Code Architecture](../ch03/057-claude-code.html)

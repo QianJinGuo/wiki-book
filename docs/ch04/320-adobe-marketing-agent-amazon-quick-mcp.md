@@ -1,7 +1,5 @@
 # Adobe Marketing Agent 与 Amazon Quick MCP 集成实战
 
-## Ch04.320 Adobe Marketing Agent 与 Amazon Quick MCP 集成实战
-
 > 📊 Level ⭐⭐ | 7.4KB | `entities/adobe-marketing-agent-amazon-quick-mcp-integration.md`
 
 # Adobe Marketing Agent 与 Amazon Quick MCP 集成实战

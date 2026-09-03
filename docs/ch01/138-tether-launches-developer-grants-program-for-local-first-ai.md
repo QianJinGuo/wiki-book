@@ -1,7 +1,5 @@
 # Tether launches developer grants program for local-first AI and payments infrastructure
 
-## Ch01.138 Tether launches developer grants program for local-first AI and payments infrastructure
-
 > 📊 Level ⭐ | 2.9KB | `entities/tether-launches-developer-grants-program-for-local-first-ai-.md`
 
 > -> 原文存档

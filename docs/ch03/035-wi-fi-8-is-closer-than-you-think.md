@@ -1,7 +1,5 @@
 # Wi-Fi 8 is closer than you think
 
-## Ch03.035 Wi-Fi 8 is closer than you think
-
 > 📊 Level ⭐⭐ | 19.8KB | `entities/wi-fi-8-is-closer-than-you-think.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/wi-fi-8-is-closer-than-you-think.md)

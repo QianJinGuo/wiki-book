@@ -1,7 +1,5 @@
 # 重新定义Skill开发：保姆级教程&一站式开发助手
 
-## Ch07.009 重新定义Skill开发：保姆级教程&一站式开发助手
-
 > 📊 Level ⭐⭐ | 20.7KB | `entities/skill-development-guide-linyi.md`
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-development-guide-linyi.md)（凜一 / 阿里云开发者，2026-05-18）

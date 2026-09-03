@@ -1,7 +1,5 @@
 # Vibe Coding in Production — Erik Schluntz / Anthropic
 
-## Ch09.096 Vibe Coding in Production — Erik Schluntz / Anthropic
-
 > 📊 Level ⭐⭐ | 5.3KB | `entities/erik-schluntz-vibe-coding-in-production.md`
 
 # Vibe Coding in Production — Erik Schluntz / Anthropic

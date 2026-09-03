@@ -1,7 +1,5 @@
 # SAP Unveils the Autonomous Enterprise | SAP Sapphire 2026
 
-## Ch04.129 SAP Unveils the Autonomous Enterprise | SAP Sapphire 2026
-
 > 📊 Level ⭐⭐ | 13.1KB | `entities/news-sap-com-sap-unveils-the-autonomous-enterprise.md`
 
 # SAP Autonomous Enterprise 发布 | SAP Sapphire 2026

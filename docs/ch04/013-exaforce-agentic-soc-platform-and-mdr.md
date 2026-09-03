@@ -1,7 +1,5 @@
 # Exaforce | Agentic SOC Platform and MDR
 
-## Ch04.013 Exaforce | Agentic SOC Platform and MDR
-
 > 📊 Level ⭐ | 3.2KB | `entities/exaforce-agentic-soc-platform-and-mdr.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/exaforce-agentic-soc-platform-and-mdr.md)

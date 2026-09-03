@@ -1,7 +1,5 @@
 # Postmortem: TanStack npm supply-chain compromise | TanStack Blog
 
-## Ch01.156 Postmortem: TanStack npm supply-chain compromise | TanStack Blog
-
 > 📊 Level ⭐⭐ | 24.3KB | `entities/npm-supply-chain-compromise-postmortem.md`
 
 # "Postmortem: TanStack npm supply-chain compromise | TanStack Blog"

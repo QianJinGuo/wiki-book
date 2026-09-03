@@ -1,7 +1,5 @@
 # Claude Code 在大型代码库中的实战经验：从哪里入手？怎么做对？
 
-## Ch09.005 Claude Code 在大型代码库中的实战经验：从哪里入手？怎么做对？
-
 > 📊 Level ⭐⭐ | 30.9KB | `entities/claude-code-large-codebase-harness-configuration.md`
 
 # Claude Code 大型代码库套具配置
@@ -256,7 +254,7 @@ AHE 是通用的 Harness 工程方法论；本文是 Claude Code 的具体场景
 - [Emergent Collaboration Ai High Quality Decision Agent Room](../ch04/449-agent-room.html)
 - [Iclr 2026 英伟达 普渡大学用Agent闭环实现文生3D](../ch03/004-agent.html)
 - [Agent Guide Core Concepts Overview](../ch03/004-agent.html)
-- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](../ch01/110-hy3-preview.html)
+- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](../ch01/113-hy3-preview.html)
 - [Headroom Context Compression Agent Vibecoder](../ch03/004-agent.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/004-agent.html)
 - [Kimi Work Beta Foundation Model Company Advantage](https://github.com/QianJinGuo/wiki/blob/main/entities/kimi-work-beta-foundation-model-company-advantage.md)

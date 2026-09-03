@@ -1,7 +1,5 @@
 # Google Workspace Updates: Small businesses can now seamlessly import users from Microsoft to Google Workspace
 
-## Ch01.276 Google Workspace Updates: Small businesses can now seamlessly import users from Microsoft to Google Workspace
-
 > 📊 Level ⭐⭐ | 11.8KB | `entities/workspaceupdates-googleblog-com-google-workspace-updates.md`
 
 ## 核心要点

@@ -1,7 +1,5 @@
 # Claude Code 学术文献综述：45 页 SCI 一区级产出
 
-## Ch01.256 Claude Code 学术文献综述：45 页 SCI 一区级产出
-
 > 📊 Level ⭐⭐ | 12.6KB | `entities/claude-code-academic-literature-review-sci.md`
 
 # Claude Code 学术文献综述：45 页 SCI 一区级产出

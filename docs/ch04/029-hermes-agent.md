@@ -1,7 +1,5 @@
 # Hermes Agent 自进化源码分析
 
-## Ch04.029 Hermes Agent 自进化源码分析
-
 > 📊 Level ⭐⭐ | 26.4KB | `entities/hermes-agent-self-evolving-source-analysis.md`
 
 前言笔者之前讲解了claude code这一code agent脚手架(两万字详解Claude Code源码核心机制)，和cc相比，最近大火的 hermes agent 定位则是更加日常的、通用的agent脚手架，体现在system prompt内容（强调用来完成问答、代码、分析、创作、工具执行等全场景任务）、工具集设计（更加丰富的Web 与浏览器工具、文本&语音等多模态工具）、多平台使用（Telegram、Discord、微信等多平台发送消息、调用远端执行后段）等方面。hermes agent更加强调是其"自进化（self-improve）"机制，本文将会基于hermes agent，讲解如果想让agent脚手架具备自进化能力，需要配套构建哪些机制。

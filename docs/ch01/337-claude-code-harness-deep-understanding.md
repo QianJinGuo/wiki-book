@@ -1,7 +1,5 @@
 # Claude Code Harness Deep Understanding
 
-## Ch01.337 Claude Code Harness Deep Understanding
-
 > 📊 Level ⭐⭐ | 9.8KB | `entities/claude-code-harness-deep-understanding.md`
 
 # 深入理解 Claude Code 源码中的 Agent Harness 构建之道

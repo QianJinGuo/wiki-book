@@ -1,7 +1,5 @@
 # 深入理解 Claude Code 源码中的 Agent Harness 构建之道
 
-## Ch01.148 深入理解 Claude Code 源码中的 Agent Harness 构建之道
-
 > 📊 Level ⭐⭐ | 28.2KB | `entities/深入理解-claude-code-源码中的-agent-harness-构建之道.md`
 
 # 深入理解 Claude Code 源码中的 Agent Harness 构建之道

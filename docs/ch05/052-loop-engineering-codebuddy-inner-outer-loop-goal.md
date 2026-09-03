@@ -1,7 +1,5 @@
 # Loop Engineering 实践指南：CodeBuddy 中的自主循环系统 — Inner/Outer Loop + /goal + /loop + Team 对抗验证 + 状态外置
 
-## Ch05.052 Loop Engineering 实践指南：CodeBuddy 中的自主循环系统 — Inner/Outer Loop + /goal + /loop + Team 对抗验证 + 状态外置
-
 > 📊 Level ⭐⭐ | 9.2KB | `entities/loop-engineering-codebuddy-tencent-eliqiao-2026.md`
 
 > 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-codebuddy-tencent-eliqiao-2026.md)

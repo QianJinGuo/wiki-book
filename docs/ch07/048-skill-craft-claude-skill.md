@@ -1,7 +1,5 @@
 # Skill Craft：Claude Skill 质量工程工具
 
-## Ch07.048 Skill Craft：Claude Skill 质量工程工具
-
 > 📊 Level ⭐⭐ | 7.4KB | `entities/claude-skill-quality-tool-skill-craft.md`
 
 # Skill Craft：Claude Skill 质量工程工具

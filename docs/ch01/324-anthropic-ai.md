@@ -1,7 +1,5 @@
 # Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了
 
-## Ch01.324 Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了
-
 > 📊 Level ⭐⭐ | 10.2KB | `entities/anthropic-ai-native-startup-handbook.md`
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-ai-native-startup-handbook.md)

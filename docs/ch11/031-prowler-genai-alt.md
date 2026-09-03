@@ -1,7 +1,5 @@
 # 基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）
 
-## Ch11.031 基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）
-
 > 📊 Level ⭐⭐ | 14.3KB | `entities/based-on-prowler-genai-build-fintech-intelligent-compliance-2.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/based-on-prowler-genai-build-fintech-intelligent-compliance-2.md)

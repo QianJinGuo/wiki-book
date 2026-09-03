@@ -1,7 +1,5 @@
 # 明星开源项目，为什么开始离开 GitHub？
 
-## Ch01.474 明星开源项目，为什么开始离开 GitHub？
-
 > 📊 Level ⭐⭐ | 7.1KB | `entities/open-source-projects-leaving-github.md`
 
 # 明星开源项目，为什么开始离开 GitHub？
@@ -35,7 +33,7 @@ Hashimoto 在脚注中预先回应了「Git 是分布式的」这一常见反驳
 
 ### 迁移的示范效应与双轨策略
 
-Ghostty 的迁移选择了务实的渐进路径：先制定依赖移除计划、逐步执行，GitHub 上保留只读镜像且 URL 不变；个人项目暂不迁移，仅将受影响最大的 Ghostty 作为重点。这既是工程上的稳妥选择，也保留了网络效应——URL 不变、镜像可读、社区可见度不中断，为维护者与贡献者争取了适应窗口。作为高能见度的个人项目，其公开、分步、可验证的迁移流程为其他「想走但犹豫」的项目提供了操作模板，也呼应了 [开源项目的消亡方式](112-dumb-ways-for-an-open-source-project-to-die.html) 中关于项目治理与平台依赖的讨论；双轨制有望从个案演化为开源项目的标准退出范式。
+Ghostty 的迁移选择了务实的渐进路径：先制定依赖移除计划、逐步执行，GitHub 上保留只读镜像且 URL 不变；个人项目暂不迁移，仅将受影响最大的 Ghostty 作为重点。这既是工程上的稳妥选择，也保留了网络效应——URL 不变、镜像可读、社区可见度不中断，为维护者与贡献者争取了适应窗口。作为高能见度的个人项目，其公开、分步、可验证的迁移流程为其他「想走但犹豫」的项目提供了操作模板，也呼应了 [开源项目的消亡方式](115-dumb-ways-for-an-open-source-project-to-die.html) 中关于项目治理与平台依赖的讨论；双轨制有望从个案演化为开源项目的标准退出范式。
 
 ## 实践启示
 
@@ -54,7 +52,7 @@ Ghostty 的迁移选择了务实的渐进路径：先制定依赖移除计划、
 - [Joyai Echo Long Video Framework Jd](../ch04/257-ai.html)
 - [Openchronicle Memory Layer](https://github.com/QianJinGuo/wiki/blob/main/entities/openchronicle-memory-layer.md)
 - [github multilingual repositories dataset — 4000 万仓库多语言元数据](474-github.html)
-- [开源项目的消亡方式](112-dumb-ways-for-an-open-source-project-to-die.html)
+- [开源项目的消亡方式](115-dumb-ways-for-an-open-source-project-to-die.html)
 - [GitHub 平台安全事件](474-github.html)
 - [GitLab 2026 裁员](https://github.com/QianJinGuo/wiki/blob/main/entities/gitlab-layoffs-memo-2026-5.md)
 

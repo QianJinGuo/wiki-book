@@ -1,7 +1,5 @@
 # Device Code Phishing Forensics: What We Learned from BEC Investigations in the Wild
 
-## Ch09.116 Device Code Phishing Forensics: What We Learned from BEC Investigations in the Wild
-
 > 📊 Level ⭐⭐ | 2.2KB | `entities/device-code-phishing-forensics-what-we-learned-from-bec-investigations-in-the-wi.md`
 
 # Device Code Phishing Forensics: What We Learned from BEC Investigations in the Wild

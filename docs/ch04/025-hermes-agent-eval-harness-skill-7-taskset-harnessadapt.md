@@ -1,7 +1,5 @@
 # Hermes Agent Eval Harness：可验证 Skill 进化的 7 模块闭环（TaskSet/HarnessAdapter/TrajectoryStore/Verifier/Selection Gate/Regression Gate/Report & Replay + 6 类 Verifier + 3 类 Regression + 6 阶段落地路径）
 
-## Ch04.025 Hermes Agent Eval Harness：可验证 Skill 进化的 7 模块闭环（TaskSet/HarnessAdapter/TrajectoryStore/Verifier/Selection Gate/Regression Gate/Report & Replay + 6 类 Verifier + 3 类 Regression + 6 阶段落地路径）
-
 > 📊 Level ⭐⭐ | 26.9KB | `entities/sota-ai-hermes-agent-eval-harness-skillopt-implementation.md`
 
 # Hermes Agent Eval Harness：可验证 Skill 进化的 7 模块闭环

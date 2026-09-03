@@ -1,7 +1,5 @@
 # Harness Engineering Deletable Worksite Ruofei
 
-## Ch05.054 Harness Engineering Deletable Worksite Ruofei
-
 > 📊 Level ⭐⭐ | 7.8KB | `entities/harness-engineering-deletable-worksite-ruofei.md`
 
 # Harness Engineering Deletable Worksite Ruofei

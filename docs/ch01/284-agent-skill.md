@@ -1,7 +1,5 @@
 # Agent Skill 进阶模式与治理
 
-## Ch01.284 Agent Skill 进阶模式与治理
-
 > 📊 Level ⭐⭐ | 11.6KB | `entities/agent-skill-writing-advanced.md`
 
 ## 五种进阶模式（Anthropic 官方实践经验）

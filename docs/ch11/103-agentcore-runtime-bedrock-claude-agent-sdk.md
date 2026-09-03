@@ -1,7 +1,5 @@
 # 快时尚电商行业智能体设计思路与应用实践（五）借助 AgentCore Runtime 与 Bedrock 模型平台，轻松实现 Claude Agent SDK 的生产级部署 | 亚马逊AWS官方博客
 
-## Ch11.103 快时尚电商行业智能体设计思路与应用实践（五）借助 AgentCore Runtime 与 Bedrock 模型平台，轻松实现 Claude Agent SDK 的生产级部署 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 8.9KB | `entities/easy-deployment-of-claude-agent-sdk-in-production.md`
 
 ## 概述

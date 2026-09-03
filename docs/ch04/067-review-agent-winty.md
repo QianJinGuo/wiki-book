@@ -1,7 +1,5 @@
 # Review Agent 机制深度解析（winty）
 
-## Ch04.067 Review Agent 机制深度解析（winty）
-
 > 📊 Level ⭐⭐ | 17.9KB | `entities/review-agent-deep-dive-winty.md`
 
 # Review Agent 机制深度解析

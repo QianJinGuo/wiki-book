@@ -1,7 +1,5 @@
 # Agent Loop 源码导读：一次 Hermes 任务的完整生命周期
 
-## Ch04.043 Agent Loop 源码导读：一次 Hermes 任务的完整生命周期
-
 > 📊 Level ⭐⭐ | 22.0KB | `entities/hermes-agent-loop-source-code-anatomy.md`
 
 ## 核心发现

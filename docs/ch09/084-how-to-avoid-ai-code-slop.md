@@ -1,7 +1,5 @@
 # How to Avoid AI Code Slop
 
-## Ch09.084 How to Avoid AI Code Slop
-
 > 📊 Level ⭐⭐ | 6.8KB | `entities/how-to-avoid-ai-code-slop.md`
 
 ## 核心要点

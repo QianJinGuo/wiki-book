@@ -1,7 +1,5 @@
 # Agent 自进化评估瓶颈 — 外置 evaluator 是自动自进化的前提条件
 
-## Ch04.402 Agent 自进化评估瓶颈 — 外置 evaluator 是自动自进化的前提条件
-
 > 📊 Level ⭐⭐ | 3.9KB | `entities/agent-self-evolution-evaluator-bottleneck.md`
 
 # Agent 自进化评估瓶颈 — 外置 evaluator 是自动自进化的前提条件

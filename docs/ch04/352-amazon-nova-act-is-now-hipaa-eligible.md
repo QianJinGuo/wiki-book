@@ -1,7 +1,5 @@
 # Amazon Nova Act is now HIPAA eligible
 
-## Ch04.352 Amazon Nova Act is now HIPAA eligible
-
 > 📊 Level ⭐⭐ | 6.1KB | `entities/amazon-nova-act-is-now-hipaa-eligible.md`
 
 ## 核心要点

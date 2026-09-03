@@ -1,7 +1,5 @@
 # NomShub — Cursor 远程隧道利用链：Shell Builtin 沙箱逃逸 + Dev Tunnels 武器化
 
-## Ch01.182 NomShub — Cursor 远程隧道利用链：Shell Builtin 沙箱逃逸 + Dev Tunnels 武器化
-
 > 📊 Level ⭐⭐ | 17.4KB | `entities/nomshub-cursor-remote-tunnel-sandbox-breakout-straiker.md`
 
 # NomShub — Cursor 远程隧道利用链

@@ -1,7 +1,5 @@
 # How to Detect AI Agents on Your Website
 
-## Ch04.198 How to Detect AI Agents on Your Website
-
 > 📊 Level ⭐⭐ | 10.5KB | `entities/detect-ai-agent-traffic.md`
 
 [Detect Ai Agent Traffic](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/detect-ai-agent-traffic.md)

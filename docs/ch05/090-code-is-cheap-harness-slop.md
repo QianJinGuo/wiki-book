@@ -1,7 +1,5 @@
 # Code is cheap: Harness 方法论——水流理论、最小混沌单元与反 slop
 
-## Ch05.090 Code is cheap: Harness 方法论——水流理论、最小混沌单元与反 slop
-
 > 📊 Level ⭐⭐⭐ | 5.4KB | `entities/code-is-cheap-harness-water-flow-wuyue-aliyun-2026.md`
 
 # Code is cheap: Harness 方法论——水流理论、最小混沌单元与反 slop

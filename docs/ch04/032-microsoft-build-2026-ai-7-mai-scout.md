@@ -1,7 +1,5 @@
 # Microsoft Build 2026：微软 AI 独立日 —— 7 款 MAI 模型 + Scout 智能体
 
-## Ch04.032 Microsoft Build 2026：微软 AI 独立日 —— 7 款 MAI 模型 + Scout 智能体
-
 > 📊 Level ⭐⭐ | 24.9KB | `entities/microsoft-build-2026-mai-models-scout-agent.md`
 
 # Microsoft Build 2026：微软 AI 独立日
