@@ -9871,19 +9871,6 @@
    "mtime": 1788414539
   },
   {
-   "file": "ch07/034-wiki-evolver-skill-system-design-gpt-5-5-copilot-session.md",
-   "title": "Wiki Evolver Skill System Design (GPT-5.5 Copilot Session)",
-   "words": 5266,
-   "level": 2,
-   "chapter": "ch07",
-   "chapterName": "🛠️ 技能/工具/MCP",
-   "entity": "wiki-evolver-skill-system-design-gpt55-copilot-session.md",
-   "hasSummary": true,
-   "score": 30.53,
-   "phase": 5,
-   "mtime": 1788414539
-  },
-  {
    "file": "ch07/023-skillopt-skill.md",
    "title": "SkillOpt — 微软训练 Skill 文档的方法论",
    "words": 5016,
