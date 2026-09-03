@@ -119,7 +119,7 @@ Claude Code 命令系统化指南——5 分类（会话/模型/权限/扩展/�
 - [CLAUDE.md 12 条规则：Karpathy 扩展模板](057-claude-code.html)
 - [两万字详解Claude Code源码核心机制](057-claude-code.html)
 - [Claude Code Subagent 上下文卫生](../ch04/245-claude-code-subagent.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/workflow-orchestration.md)
 
 ---
 

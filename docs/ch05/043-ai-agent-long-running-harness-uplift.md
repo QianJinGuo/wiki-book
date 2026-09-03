@@ -142,7 +142,7 @@ Agent harness 不只控制行为，还作为实验基础设施——控制变量
 
 ## 相关实体
 
-- [高德路线规划双路线：mobilitybench（agent 基准）+ transitlm（端到端 rllm）](https://github.com/QianJinGuo/wiki/blob/main/entities/gaode-routing-dual-pathway-mobilitybench-transitlm-2026.md)
+- [高德路线规划双路线：mobilitybench（agent 基准）+ transitlm（端到端 rllm）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gaode-routing-dual-pathway-mobilitybench-transitlm-2026.md)
 
 ---
 

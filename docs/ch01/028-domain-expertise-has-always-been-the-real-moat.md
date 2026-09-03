@@ -60,15 +60,15 @@ Agentic AI 突然拉平了这一环。现在，一个具备合理提示技巧的
 
 4. **AI 产品的设计应降低"正确性验证"的认知负担**。工具应当不仅帮用户写代码，还要帮用户验证结果。例如：自动生成测试数据、提供等价类分析、高亮可能的偏差值。
 
-5. **个人发展：构建"T 型"甚至"π 型"能力结构**。垂直一根（领域深度）加上 AI 工具的使用能力（新水平线），比纯粹的技术深度更有竞争力。这也印证了 [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 中关于"人在环中"（human-in-the-loop）的定位——人的价值不在于对抗 AI 的能力，而在于 AI 能力之外的那些判断。
+5. **个人发展：构建"T 型"甚至"π 型"能力结构**。垂直一根（领域深度）加上 AI 工具的使用能力（新水平线），比纯粹的技术深度更有竞争力。这也印证了 [Harness Engineering 框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 中关于"人在环中"（human-in-the-loop）的定位——人的价值不在于对抗 AI 的能力，而在于 AI 能力之外的那些判断。
 
 ## 相关实体
 
 - [Seangoedeckecom Build Agents Not Pipelines](../ch04/012-build-agents-not-pipelines.html) — 同一系列关于软件工程方法论的文章
-- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](https://github.com/QianJinGuo/wiki/blob/main/entities/rajveerbachkaniwalacom-blog-2026-05-24-on-the-difficulty-of-pasting-a-pic.md) — 同为 TLDR AI Newsletter 推荐的深度技术分析
-- [Kristoffit Blog Fix Your Asserts](https://github.com/QianJinGuo/wiki/blob/main/entities/kristoffit-blog-fix-your-asserts.md) — 同一技术文章系列的姊妹篇
-- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](https://github.com/QianJinGuo/wiki/blob/main/entities/eclecticlightco-2026-05-29-what-happens-in-the-log-when-an-app-cra.md) — 技术深度分析系列
-- [Hacktivisme Articles Cloudflare Turnstile Webgl Fingerprinting](https://github.com/QianJinGuo/wiki/blob/main/entities/hacktivisme-articles-cloudflare-turnstile-webgl-fingerprinting.md) — 安全与工程实践交叉话题
+- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rajveerbachkaniwalacom-blog-2026-05-24-on-the-difficulty-of-pasting-a-pic.md) — 同为 TLDR AI Newsletter 推荐的深度技术分析
+- [Kristoffit Blog Fix Your Asserts](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kristoffit-blog-fix-your-asserts.md) — 同一技术文章系列的姊妹篇
+- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](https://github.com/QianJinGuo/wiki-public/blob/main/entities/eclecticlightco-2026-05-29-what-happens-in-the-log-when-an-app-cra.md) — 技术深度分析系列
+- [Hacktivisme Articles Cloudflare Turnstile Webgl Fingerprinting](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hacktivisme-articles-cloudflare-turnstile-webgl-fingerprinting.md) — 安全与工程实践交叉话题
 
 ## 相关主题
 

@@ -104,7 +104,7 @@ Mountpoint S3 的核心设计理念是"不尝试模拟 S3 无法实现的操作"
 
 ### 2. 混合部署是 EKS 上的最优解
 
-同一 EKS 集群中同时部署 Mountpoint S3 CSI 和 S3 Files + EFS CSI 是当前 AWS 上 S3 数据接入的最佳实践。大文件顺序读（模型加载、checkpoint 保存）用 Mountpoint S3，小文件随机访问（训练数据加载、Embedding 查找）用 S3 Files。两种 CSI Driver 可以共存，根据不同业务的 PV 配置选择对应的方案。这种混合部署模式充分发挥了各自优势：[Eks Gpu Operator Custom Driver Cuda Workload](https://github.com/QianJinGuo/wiki/blob/main/entities/eks-gpu-operator-custom-driver-cuda-workload.md) 等 GPU 运维场景下，数据加载性能直接影响 GPU 利用率，尤其需要这种精细化的存储选型。
+同一 EKS 集群中同时部署 Mountpoint S3 CSI 和 S3 Files + EFS CSI 是当前 AWS 上 S3 数据接入的最佳实践。大文件顺序读（模型加载、checkpoint 保存）用 Mountpoint S3，小文件随机访问（训练数据加载、Embedding 查找）用 S3 Files。两种 CSI Driver 可以共存，根据不同业务的 PV 配置选择对应的方案。这种混合部署模式充分发挥了各自优势：[Eks Gpu Operator Custom Driver Cuda Workload](https://github.com/QianJinGuo/wiki-public/blob/main/entities/eks-gpu-operator-custom-driver-cuda-workload.md) 等 GPU 运维场景下，数据加载性能直接影响 GPU 利用率，尤其需要这种精细化的存储选型。
 
 ### 3. FUSE 用户态文件系统的内在限制
 
@@ -130,8 +130,8 @@ S3 Files 采用 NFS close-to-open 一致性模型：当一个客户端 close 文
 
 | 实体 | 关注点 | 本文差异 |
 |------|--------|---------|
-| [Kiro Cli Fluentbit Logging Solution Eks S3 Parquet Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/kiro-cli-fluentbit-logging-solution-eks-s3-parquet-comparison.md) | Kiro CLI + FluentBit 日志采集 + EKS S3 Parquet | 偏日志管道，非 S3 挂载方案 |
-| [Eks Gpu Operator Custom Driver Cuda Workload](https://github.com/QianJinGuo/wiki/blob/main/entities/eks-gpu-operator-custom-driver-cuda-workload.md) | EKS + GPU Operator + 自定义驱动 | 算力层，非存储层 |
+| [Kiro Cli Fluentbit Logging Solution Eks S3 Parquet Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kiro-cli-fluentbit-logging-solution-eks-s3-parquet-comparison.md) | Kiro CLI + FluentBit 日志采集 + EKS S3 Parquet | 偏日志管道，非 S3 挂载方案 |
+| [Eks Gpu Operator Custom Driver Cuda Workload](https://github.com/QianJinGuo/wiki-public/blob/main/entities/eks-gpu-operator-custom-driver-cuda-workload.md) | EKS + GPU Operator + 自定义驱动 | 算力层，非存储层 |
 | [Openclaw Leveraging Nova Mme S3 Vector Implement Skill](../ch04/176-openclaw.html) | S3 Vector + Nova MME 实现 Skill 按需召回 | S3 Vector 语义检索，非挂载方案 |
 | [Litellm Aws Ecs Eks Ai Gateway Architecture](../ch01/451-llm.html) | LiteLLM AI 网关 + ECS/EKS | 推理网关，非存储 |
 

@@ -67,7 +67,7 @@ Tomassetti 归纳了软件持续提供价值的四个维度：
 └─────────────────────────────────────┘
 ```
 
-这与 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的核心理念完全一致：
+这与 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 的核心理念完全一致：
 
 - LLM 做意图理解和任务规划（概率层）
 - 工具做确定性执行（确定性层）
@@ -95,7 +95,7 @@ LLM 时代软件工程师的核心技能：
 - 建立验证机制（确保 LLM 输出的正确性）
 - 管理概率层与确定性层的边界
 
-这与 [Anthropic 数据分析](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-95pct-data-analysis-summary-189-chars.md) 的实践相呼应——即使 LLM 能生成分析，数据的结构化组织仍然是前提。
+这与 [Anthropic 数据分析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-95pct-data-analysis-summary-189-chars.md) 的实践相呼应——即使 LLM 能生成分析，数据的结构化组织仍然是前提。
 
 ### 对 "Vibe Coding" 的隐含回应
 
@@ -123,7 +123,7 @@ LLM 时代软件工程师的核心技能：
 
 ## 相关实体
 
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 概率层与确定性层的边界管理
+- [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — 概率层与确定性层的边界管理
 - [Agent Harnesses](../ch04/451-agent-harnesses-are-dead-long-live-agent-harnesses.html) — Agent 架构的演进
 - [Claude Code Workflows](../ch09/069-claude-code-dynamic-workflows.html) — Agent 工作流设计
 - [本文实体](451-llm.html) — Tomassetti 的分析

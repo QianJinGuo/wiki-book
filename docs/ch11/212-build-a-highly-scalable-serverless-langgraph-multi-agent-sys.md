@@ -42,7 +42,7 @@ LangGraph orchestrator 和 specialized agents 被打包为 Docker 容器，这�
 
 ### 5. Campaign Review 作为多 Agent 编排的典型场景
 
-该方案选择营销活动审核作为演示场景，展示了多 Agent 协作的完整链路：从多角度 persona 评审、合规验证到最终建议合成。这个场景体现了 [Agent Orchestration Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md) 中描述的 Fan-Out 与 Agent Pool 模式的组合应用——多个独立 Agent 并行运行，结果被收集后进行增量聚合。
+该方案选择营销活动审核作为演示场景，展示了多 Agent 协作的完整链路：从多角度 persona 评审、合规验证到最终建议合成。这个场景体现了 [Agent Orchestration Patterns](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-orchestration-patterns.md) 中描述的 Fan-Out 与 Agent Pool 模式的组合应用——多个独立 Agent 并行运行，结果被收集后进行增量聚合。
 
 ## 实践启示
 
@@ -69,11 +69,11 @@ Docker 容器化提供了移植性但引入了冷启动问题。在选择部署�
 ## 参考来源
 
 ## 相关实体
-- [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
+- [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [Anthropic Multi Agent Research System](../ch03/004-agent.html)
 - [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](217-amazon-nova.html)
-- [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
-- [Netflix Real Time Service Topology](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-real-time-service-topology.md)
+- [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
+- [Netflix Real Time Service Topology](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-real-time-service-topology.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/serverless-langgraph-multi-agent-aws.md)
 

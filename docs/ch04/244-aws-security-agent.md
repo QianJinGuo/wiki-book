@@ -72,11 +72,11 @@ AWS 官方发布的 **AWS Security Agent 应用安全生命周期指南**，系�
 
 ### 1. 三阶段生命周期将安全评审从"上线后"迁移到"设计时"
 
-AWS Security Agent 的设计揭示了一个关键范式转换：传统 AppSec 的痛点是"安全漏洞发现滞后于代码部署"，而本文的解法是将安全评审嵌入 SDLC 的三个节点——**设计阶段（Design Review）→ 开发阶段（Code Audit）→ 部署后（Penetration Testing）**。这对应了安全工程中的"左移（Shift Left）"原则，但本文的创新在于每个阶段都有 AI agent 驱动而非人工触发，实现了**安全验证的自动化而非只是规范化**。这与 [Agentic 工作流模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-workflow-patterns.md) 中的条件触发模式完全一致。
+AWS Security Agent 的设计揭示了一个关键范式转换：传统 AppSec 的痛点是"安全漏洞发现滞后于代码部署"，而本文的解法是将安全评审嵌入 SDLC 的三个节点——**设计阶段（Design Review）→ 开发阶段（Code Audit）→ 部署后（Penetration Testing）**。这对应了安全工程中的"左移（Shift Left）"原则，但本文的创新在于每个阶段都有 AI agent 驱动而非人工触发，实现了**安全验证的自动化而非只是规范化**。这与 [Agentic 工作流模式](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agentic-workflow-patterns.md) 中的条件触发模式完全一致。
 
 ### 2. Agent Space 隔离是安全即代码的基础设施模型
 
-Agent Space 作为逻辑隔离的工作空间，不仅是技术隔离，更是一种**安全即代码的组织边界**：一个 Space 对应一个应用，Space 内的安全要求、GitHub 集成、审计日志都在应用维度隔离。这意味着安全策略可以随应用独立演进，而不需要跨团队协调。这与 [多智能体系统](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-systems.md) 中的上下文隔离原则同构——每个 agent 有自己的执行空间，每个应用有自己的安全空间。
+Agent Space 作为逻辑隔离的工作空间，不仅是技术隔离，更是一种**安全即代码的组织边界**：一个 Space 对应一个应用，Space 内的安全要求、GitHub 集成、审计日志都在应用维度隔离。这意味着安全策略可以随应用独立演进，而不需要跨团队协调。这与 [多智能体系统](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/multi-agent-systems.md) 中的上下文隔离原则同构——每个 agent 有自己的执行空间，每个应用有自己的安全空间。
 
 ### 3. LLM 推理 vs. 传统 SAST 的本质差异是上下文感知能力
 

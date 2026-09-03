@@ -139,7 +139,7 @@ LLM 当 judge 互打分会漂移——**上午 0.85，下午同样的输出 0.6*
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/memory-context-systems.md)
 
 ---
 

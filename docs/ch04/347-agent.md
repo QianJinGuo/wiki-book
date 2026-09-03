@@ -92,10 +92,10 @@ Agent 不是普通服务，每一次推理、工具调用、检索、子 Agent �
 **OpenClaw 六层 SLI 实测**：Channel（连接/端到端成功率+耗时，北极星）→ Message/Session（初始化/卡顿恢复）→ 调度（出入队列延迟）→ 执行层 → 大模型工具层 → 缓存命中层；自研 Hook 插件在会话/推理/工具调用/任务分配关键点采集，MTTR 整体降 80% 以上。
 
 ## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 - 相关: Agent 架构
 - 相关: [阿里 LoongSuite 可观测审计](../ch09/038-coding-agent.html)
-- 相关: [LLM 可观测四层模型](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-observability-4-layer-model.md)
+- 相关: [LLM 可观测四层模型](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/llm-observability-4-layer-model.md)
 
 ---
 

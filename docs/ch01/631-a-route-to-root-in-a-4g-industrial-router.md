@@ -26,7 +26,7 @@
 - **实施安全的默认配置**：新设备应强制要求用户更改默认密码，或在首次启动时进行安全配置向导
 ## 相关实体
 - [Npm Supply Chain Compromise Postmortem](../ch04/257-ai.html)
-- [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
+- [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 - [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](280-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html)
 - [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](628-mini-shai-hulud-strikes-again-tanstack-more-npm-packages.html)
 - [Clinereleasesopen Sourceagentruntimesdk](../ch04/290-agentrun.html)

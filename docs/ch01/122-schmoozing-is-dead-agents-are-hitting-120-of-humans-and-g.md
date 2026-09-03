@@ -31,7 +31,7 @@ SaaStr AI Annual 2026 的闭门 Q&A 环节揭示了 AI 原生软件公司的关�
 4. **人机协作**：最佳策略是 AI 处理标准化任务，人类专注关系建立和复杂决策
 5. **数据驱动**：AI Agent 产生的大量交互数据可以帮助优化产品和营销策略
 ## 相关实体
-- [Deels Accelerate Or Die Moment](https://github.com/QianJinGuo/wiki/blob/main/entities/deels-accelerate-or-die-moment.md)
+- [Deels Accelerate Or Die Moment](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deels-accelerate-or-die-moment.md)
 - 1000 Record Covers The Taschen Book That Proves
 - [Vercel Com How Superset Built The Ide For Ai Agents On Vercel](074-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
 - [Ai Powered Honeypots Turning The Tables On Malicious Ai Agents](../ch04/312-ai-agent.html)

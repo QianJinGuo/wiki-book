@@ -70,8 +70,8 @@ Sentry 给每种页面类型写了 Skills（AI 指令文件）：landing pages�
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/035-agent-harness.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](651-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
-- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
-- [DDoSing Software Delivery Pipelines](https://github.com/QianJinGuo/wiki/blob/main/entities/varoa-ddosing-software-delivery-pipelines-2026.md)
+- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
+- [DDoSing Software Delivery Pipelines](https://github.com/QianJinGuo/wiki-public/blob/main/entities/varoa-ddosing-software-delivery-pipelines-2026.md)
 - [Unexpected lessons from an AI-assisted prototyping experiment](../ch04/257-ai.html)
 
 ## 实践启示
@@ -91,7 +91,7 @@ Sentry 给每种页面类型写了 Skills（AI 指令文件）：landing pages�
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/vision-multimodal.md)
 
 ---
 

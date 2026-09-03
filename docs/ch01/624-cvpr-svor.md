@@ -21,7 +21,7 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cvpr-xiaomi-svor-video-masking.md)
 
 - [Joyai Echo Long Video Jd Qbitai](../ch04/257-ai.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/vision-multimodal.md)
 ## 深度分析
 ### 技术架构：从单点优化到系统协同
 SVOR的设计哲学并非追求单一指标的SOTA，而是**在不完美条件下保证可用性**。

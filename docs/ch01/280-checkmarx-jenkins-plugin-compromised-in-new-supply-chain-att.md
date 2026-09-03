@@ -64,7 +64,7 @@ TeamPCP 并非首次对 Checkmarx 发起攻击——2026 年 3 月就曾入侵 c
 - [Semgrep Intercom Php Supply Chain](../ch04/257-ai.html)
 - [Shub Reaper Macos Stealer Attack Chain](../ch04/257-ai.html)
 - [Postmortem Tanstack Npm Supply Chain Compromise Tanstack Blog](../ch12/033-postmortem-tanstack-npm-supply-chain-compromise-tanstack.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-landscape.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/checkmarx-jenkins-plugin-compromised-in-new-supply-chain-attack.md)
 

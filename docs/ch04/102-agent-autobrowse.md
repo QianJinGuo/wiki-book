@@ -133,7 +133,7 @@ Autobrowse 将探索成本显性化——每次迭代都有明确的 token 消�
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
 
 ---
 

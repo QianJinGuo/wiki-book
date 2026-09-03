@@ -1,84 +1,92 @@
+#!/usr/bin/env node
 /**
- * Convert GitHub wiki URLs to relative wiki-book links.
- * 
- * Reads all wiki-book docs, builds a mapping from wiki entity/concept slugs
- * to wiki-book filenames, then replaces all GitHub URLs with relative links.
+ * Rewrite generated wiki-book links to the two public layers.
+ *
+ * Published chapter markdown is allowed to point to:
+ *   - wiki-book/docs/raw/articles for source indexes; and
+ *   - wiki-public for curated entity/concept/navigation pages.
+ *
+ * Raw source copies are deliberately excluded from --apply because their
+ * bodies are source material and must remain byte-for-byte untouched.
  */
 
-import { readFileSync, writeFileSync, readdirSync } from 'fs';
-import { join, basename } from 'path';
+import { readdirSync, readFileSync, writeFileSync } from "node:fs";
+import { join } from "node:path";
+import { wikiBookRawUrl, wikiPublicUrl } from "./link-config.mjs";
 
-const DOCS_DIR = join(process.cwd(), 'docs');
+const DOCS_DIR = join(process.cwd(), "docs");
+const APPLY = process.argv.includes("--apply");
+const PUBLIC_TYPES = new Set(["entities", "concepts", "comparisons", "queries", "moc"]);
 
-// Step 1: Build mapping from wiki slug → wiki-book filename
-console.log('Building slug mapping...');
-const slugMap = new Map(); // wiki-slug → wiki-book-filename (without .md)
-const files = readdirSync(DOCS_DIR).filter(f => f.endsWith('.md') && f.startsWith('ch'));
-
-for (const file of files) {
-  const content = readFileSync(join(DOCS_DIR, file), 'utf-8');
-  const bookSlug = file.replace('.md', '');
-  
-  // Extract wiki entity reference: `entities/slug.md` or `concepts/slug.md`
-  const entityMatch = content.match(/`(?:entities|concepts|comparisons|queries|moc)\/([^`]+)\.md`/);
-  if (entityMatch) {
-    const wikiSlug = entityMatch[1];
-    slugMap.set(wikiSlug, bookSlug);
+function walkMarkdown(directory, result = []) {
+  for (const entry of readdirSync(directory, { withFileTypes: true }).sort((a, b) =>
+    a.name.localeCompare(b.name),
+  )) {
+    if (entry.name === "raw" || entry.name === "site" || entry.name === "node_modules") continue;
+    const path = join(directory, entry.name);
+    if (entry.isDirectory()) walkMarkdown(path, result);
+    else if (entry.isFile() && entry.name.endsWith(".md")) result.push(path);
   }
-  
-  // Also map by filename similarity
-  const fileSlug = file.replace(/^ch\d+-\d+-/, '').replace('.md', '');
-  if (fileSlug) {
-    slugMap.set(fileSlug, bookSlug);
-  }
+  return result;
 }
 
-console.log(`Mapped ${slugMap.size} slugs`);
+function rewriteUrl(url) {
+  const match = url.match(
+    /^https:\/\/github\.com\/QianJinGuo\/wiki\/(?:blob|tree|raw)\/main\/(.+)$/,
+  );
+  if (!match) return null;
 
-// Step 2: Replace GitHub URLs in all files
-let totalReplaced = 0;
+  const target = match[1].replace(/[.,;!?]+$/, "").replace(/\.md\.md$/, ".md");
+  const rawMatch = target.match(/^raw\/articles\/(.+\.md)$/);
+  if (rawMatch) return wikiBookRawUrl(rawMatch[1]);
+
+  const publicMatch = target.match(
+    /^(entities|concepts|comparisons|queries|moc)\/(.+\.md)$/,
+  );
+  if (publicMatch && PUBLIC_TYPES.has(publicMatch[1])) return wikiPublicUrl(target);
+  return null;
+}
+
+function rewriteContent(content) {
+  let replacements = 0;
+  const rewritten = content.replace(
+    /https:\/\/github\.com\/QianJinGuo\/wiki\/(?:blob|tree|raw)\/main\/[^\s<>`)]+/g,
+    (url) => {
+      const replacement = rewriteUrl(url);
+      if (!replacement) return url;
+      replacements += 1;
+      return replacement;
+    },
+  );
+  return { content: rewritten, replacements };
+}
+
+const files = walkMarkdown(DOCS_DIR);
 let filesModified = 0;
+let totalReplaced = 0;
+let staleUrls = 0;
 
 for (const file of files) {
-  const filepath = join(DOCS_DIR, file);
-  let content = readFileSync(filepath, 'utf-8');
-  const original = content;
-  
-  // Pattern: [text](https://github.com/QianJinGuo/wiki/blob/main/TYPE/SLUG.md)
-  content = content.replace(
-    /\[([^\]]+)\]\(https:\/\/github\.com\/QianJinGuo\/wiki\/blob\/main\/(?:entities|concepts|comparisons|queries|moc)\/([^)]+)\.md\)/g,
-    (match, text, slug) => {
-      const bookSlug = slugMap.get(slug);
-      if (bookSlug) {
-        totalReplaced++;
-        return `[${text}](../${bookSlug}/)`;
-      }
-      // No mapping found - keep as plain text
-      totalReplaced++;
-      return text;
-    }
-  );
-  
-  // Also handle bare URLs (not in markdown links)
-  content = content.replace(
-    /https:\/\/github\.com\/QianJinGuo\/wiki\/blob\/main\/(?:entities|concepts|comparisons|queries|moc)\/([^\s)]+)\.md/g,
-    (match, slug) => {
-      const bookSlug = slugMap.get(slug);
-      if (bookSlug) {
-        totalReplaced++;
-        return `../${bookSlug}/`;
-      }
-      totalReplaced++;
-      return slug;
-    }
-  );
-  
-  if (content !== original) {
-    writeFileSync(filepath, content);
-    filesModified++;
+  const original = readFileSync(file, "utf8");
+  const result = rewriteContent(original);
+  totalReplaced += result.replacements;
+  if (result.content !== original) {
+    filesModified += 1;
+    if (APPLY) writeFileSync(file, result.content, "utf8");
   }
+  staleUrls += (result.content.match(
+    /https:\/\/github\.com\/QianJinGuo\/wiki\/(?:blob|tree|raw)\/main\//g,
+  ) || []).length;
 }
 
-console.log(`\nDone!`);
-console.log(`  Files modified: ${filesModified}`);
-console.log(`  URLs replaced: ${totalReplaced}`);
+console.log(
+  `${APPLY ? "Applied" : "Found"} ${totalReplaced} two-layer link rewrites in ${filesModified} files`,
+);
+
+if (!APPLY && filesModified > 0) {
+  console.log("Run with --apply to write the generated links.");
+}
+if (staleUrls > 0) {
+  console.error(`Unmapped private wiki URLs remain: ${staleUrls}`);
+  process.exitCode = 1;
+}

@@ -108,7 +108,7 @@ Hermes 主循环 <200 行代码并非刻意追求简短，而是模块化分离�
 - [Hermes Agent Loop Source Code Anatomy](197-hermes-agent-loop.html)
 - [Small Hermes Self Evolving Agent Architecture](../ch03/004-agent.html)
 - [Hermes Agent Operator上手 把一个 Agent 养成可运营系统 若飞](161-hermes-agent.html)
-- [Hermes Observability Aliyun](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-observability-aliyun.md)
+- [Hermes Observability Aliyun](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-observability-aliyun.md)
 - [Gateway Architecture Openclaw Claude Hermes Comparison](176-openclaw.html)
 
 ---

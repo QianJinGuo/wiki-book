@@ -11,9 +11,9 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/toto-2.md)
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-model-research-latest-directions.md)
+> [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-model-research-latest-directions.md)
 
-- [时间序列预测数据增强方法](https://github.com/QianJinGuo/wiki/blob/main/entities/time-series-forecasting-augmentation.md)
+- [时间序列预测数据增强方法](https://github.com/QianJinGuo/wiki-public/blob/main/entities/time-series-forecasting-augmentation.md)
 - [CEOs of the classroom: Why principals are the key to the AI era](../ch04/257-ai.html)
 - [How Superset built the IDE for AI agents on Vercel](074-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
 

@@ -45,7 +45,7 @@ Recent [analysis](https://www.icij.org/investigations/coin-laundry/cryptocurrenc
 - [Llmreaper Dom Based Ai Conversation Exfiltration Via Browser](014-llmreaper-dom-based-ai-conversation-exfiltration-via-brows.html)
 - [Ai_Threat_Readiness_Framework](../ch04/257-ai.html)
 - [Npm Supply Chain Compromise Postmortem](../ch04/257-ai.html)
-- [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
+- [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cyberscammers-bypassing-bank-telegram.md)
 

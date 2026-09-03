@@ -45,8 +45,8 @@ NVIDIA 2026 年技术博客指出，生成式 AI 的第一章由「人类发请�
 | 压缩前累计处理输入 tokens | ~3.5M |
 
 > [!info] 参见
-> → [Claude Code 深层架构分析](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-deep-architecture-analysis.md) — Claude Code 编码轨迹数据与源码分析
-> → [上下文管理 Agent 系统](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-management-agent-systems.md) — Agent 上下文管理核心机制
+> → [Claude Code 深层架构分析](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/claude-code-deep-architecture-analysis.md) — Claude Code 编码轨迹数据与源码分析
+> → [上下文管理 Agent 系统](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/context-management-agent-systems.md) — Agent 上下文管理核心机制
 
 ### Prompt Caching：系统级挑战
 
@@ -87,8 +87,8 @@ Extreme Co-Design 涉及 NVIDIA 全栈硬件协同设计：
 | **NVLink-C2C** | Vera 与 Rubin 统一内存互联，消除 CPU-GPU 数据传输瓶颈 |
 
 > [!info] 参见
-> → [Inference Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md) — NVIDIA 推理优化技术栈（Dynamo, TRT-LLM, Speculative Decoding）
-> → [Cloud AI Infrastructure](https://github.com/QianJinGuo/wiki/blob/main/concepts/cloud-ai-infrastructure.md) — AI 原生网络与大规模部署技术
+> → [Inference Optimization](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/inference-optimization.md) — NVIDIA 推理优化技术栈（Dynamo, TRT-LLM, Speculative Decoding）
+> → [Cloud AI Infrastructure](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/cloud-ai-infrastructure.md) — AI 原生网络与大规模部署技术
 
 ### 软件优化层
 
@@ -104,7 +104,7 @@ Extreme Co-Design 的核心思想是：
 2. **统一内存架构**：Vera 和 Rubin 共享统一内存，减少数据传输开销
 3. **系统级协同优化**：从核心微架构到机架架构的全栈优化
 
-这与 [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 中上下文管理层需要硬件支持的观点高度一致。
+这与 [Harness Engineering 框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 中上下文管理层需要硬件支持的观点高度一致。
 
 ## 深度分析
 
@@ -163,7 +163,7 @@ NVIDIA 的 Extreme Co-Design 强调 Vera CPU 承担「长上下文检索操作�
 -  — 真实 trace 数据对齐，sub-agent 调用模式
 -  — Primary/Sub-Agent 上下文独立性设计
 -  — NVIDIA 推理优化技术栈，MoE 专家并行
-- [Agent Memory System Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-system-design.md) — 记忆系统与上下文压缩机制
+- [Agent Memory System Design](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-system-design.md) — 记忆系统与上下文压缩机制
 
 ## 相关实体
 - [Nvidia Extreme Co Design Agentic Systems](030-nvidia-extreme-co-design-agentic-systems.html)
@@ -171,7 +171,7 @@ NVIDIA 的 Extreme Co-Design 强调 Vera CPU 承担「长上下文检索操作�
 - [Subagents 详解Claude Code 如何避免上下文污染 V2](../ch03/057-claude-code.html)
 - [Amazon Bedrock Agentic Payments Guardrails](../ch11/135-amazon-bedrock.html)
 - [Break The Context Window Barrier With Amazon Bedrock Agentcore](383-amazon-bedrock-agentcore.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-agentic-systems-extreme-co-design.md)
 

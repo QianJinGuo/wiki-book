@@ -58,7 +58,7 @@ GenAIOps 解决的是"模型推理 + RAG + Prompt"的运维问题，核心变量
 
 ### 2. 确定性策略 + 非确定性执行的二元治理
 
-Agent 本质上是非确定性系统，但治理要求确定性。AWS 的解法是**将确定性边界外推到工具调用层**——Agent 的推理过程可以非确定，但工具调用必须经过 Cedar 策略引擎的确定性校验。这种"内层自由、外层受控"的思路，与 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的核心理念高度一致：先建 Harness（确定性外壳），再放 Agent（非确定性内核）。
+Agent 本质上是非确定性系统，但治理要求确定性。AWS 的解法是**将确定性边界外推到工具调用层**——Agent 的推理过程可以非确定，但工具调用必须经过 Cedar 策略引擎的确定性校验。这种"内层自由、外层受控"的思路，与 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 的核心理念高度一致：先建 Harness（确定性外壳），再放 Agent（非确定性内核）。
 
 ### 3. 记忆的账号级隔离是安全刚需，也是运维负担
 
@@ -87,8 +87,8 @@ AgentCore Memory 按 actor 级隔离数据，多账号部署时每个账号独�
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/004-agent.html)
 - [Youre Building Agent Security In The Wrong Order](../ch03/004-agent.html)
 - [Tencentdb Agent Memory Context Offloading](133-agent-memory.html)- [aws bedrock agentcore equipment repair assistant — 农业机械 ai 诊](../ch11/195-aws-bedrock-agentcore-equipment-repair-assistant-ai.html)
-- [what it feels like to work with mythos](https://github.com/QianJinGuo/wiki/blob/main/entities/what-it-feels-like-to-work-with-mythos.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
+- [what it feels like to work with mythos](https://github.com/QianJinGuo/wiki-public/blob/main/entities/what-it-feels-like-to-work-with-mythos.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
 
 ---
 

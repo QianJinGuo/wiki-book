@@ -84,7 +84,7 @@ A²RD 展示了一个重要的设计模式：**将感知/记忆/规划/执行分
 ## 相关实体
 - [A²RD: Agentic Autoregressive Diffusion for Long Video Consistency](../ch03/004-agent.html)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/004-agent.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/vision-multimodal.md)
 
 ---
 

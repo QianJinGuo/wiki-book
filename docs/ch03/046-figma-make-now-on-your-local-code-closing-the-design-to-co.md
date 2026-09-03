@@ -31,7 +31,7 @@ Figma 给出的行业判断是「尽管有这么多创新，我们用来处理�
 
 ### 2. 直接编辑 + 标注的混合交互模式
 
-Make 的核心交互是「选中元素 → 调整属性 → Agent 编辑代码」——这是「直接编辑」（Direct Editing）。 但当变化超出属性范围（如交互/动画），就用「标注」（Annotation）——在屏幕上注释，Agent 据此操作。 这套设计的精妙在于：① 简单变化是确定性的（颜色、字体、尺寸），用直接编辑；② 复杂变化是非确定性的（交互逻辑、动画），用 prompt 风格的标注。把「哪些变化应该用确定性操作、哪些用 prompt 风格操作」显式建模为产品选择，而不是把所有变化都塞进同一个 chat box。这是 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 在设计工具上的具体体现：**工具的交互模式本身就是一种 control plane 设计**。
+Make 的核心交互是「选中元素 → 调整属性 → Agent 编辑代码」——这是「直接编辑」（Direct Editing）。 但当变化超出属性范围（如交互/动画），就用「标注」（Annotation）——在屏幕上注释，Agent 据此操作。 这套设计的精妙在于：① 简单变化是确定性的（颜色、字体、尺寸），用直接编辑；② 复杂变化是非确定性的（交互逻辑、动画），用 prompt 风格的标注。把「哪些变化应该用确定性操作、哪些用 prompt 风格操作」显式建模为产品选择，而不是把所有变化都塞进同一个 chat box。这是 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 在设计工具上的具体体现：**工具的交互模式本身就是一种 control plane 设计**。
 
 ### 3. Git 流程是生产代码的「质量门槛」
 
@@ -39,11 +39,11 @@ Figma 明确把「生产代码发布应该通过团队的开发流程有意图�
 
 ### 4. 画布与代码库的双向同步是「闭环」
 
-Make 的真正野心是「完全关闭循环」——把屏幕和元素从 Make 拿到 Figma Design 让团队评论、编辑、玩，决策完成后再带回代码。 「画布和代码库在同一个地方，没有正确的开始地点，只有工作和最适合你所在阶段的工具。」 这种「双向同步」模式的关键技术挑战是：① 视觉层的更改（设计工具侧）如何映射到代码层（哪些文件、哪些属性）；② 代码层的更改（Agent 自动修改）如何反映回设计工具侧；③ 如何处理「一方更新、另一方在编辑中」的冲突。Figma 用的策略是「Figma 检测到更改后会提示带回 Make」——这是乐观合并 + 用户确认的模式。这种「无缝切换工具」的设计哲学，本质上是在做 [Harness](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 在设计-代码工作流上的应用：让 Agent 能够在两个语义层之间无损转换。
+Make 的真正野心是「完全关闭循环」——把屏幕和元素从 Make 拿到 Figma Design 让团队评论、编辑、玩，决策完成后再带回代码。 「画布和代码库在同一个地方，没有正确的开始地点，只有工作和最适合你所在阶段的工具。」 这种「双向同步」模式的关键技术挑战是：① 视觉层的更改（设计工具侧）如何映射到代码层（哪些文件、哪些属性）；② 代码层的更改（Agent 自动修改）如何反映回设计工具侧；③ 如何处理「一方更新、另一方在编辑中」的冲突。Figma 用的策略是「Figma 检测到更改后会提示带回 Make」——这是乐观合并 + 用户确认的模式。这种「无缝切换工具」的设计哲学，本质上是在做 [Harness](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 在设计-代码工作流上的应用：让 Agent 能够在两个语义层之间无损转换。
 
 ### 5. Agent 可控性边界：哪些变化绕过 review
 
-值得注意的是，Figma Make 的直接编辑模式（属性调整）绕过了用户对生成代码的 review——用户只看到 UI 变化，Agent 在背后改代码。 但通过 PR 工作流，所有最终更改都会进入正常的 review 流程。 这种「即时反馈 + 延迟审核」的模式是 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的典型设计：让 Agent 在小颗粒度上自由行动（属性编辑是低风险的），但在大颗粒度上接受人类 review（PR review 是高门槛的）。给做内部工具架构师的启示是：**设计 Agent 工具时，要分清楚哪些操作可以「即时反馈 + 延迟 review」组合，哪些必须「即时 review + 同步审核」**。属性编辑属于前者，代码生成属于后者。
+值得注意的是，Figma Make 的直接编辑模式（属性调整）绕过了用户对生成代码的 review——用户只看到 UI 变化，Agent 在背后改代码。 但通过 PR 工作流，所有最终更改都会进入正常的 review 流程。 这种「即时反馈 + 延迟审核」的模式是 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 的典型设计：让 Agent 在小颗粒度上自由行动（属性编辑是低风险的），但在大颗粒度上接受人类 review（PR review 是高门槛的）。给做内部工具架构师的启示是：**设计 Agent 工具时，要分清楚哪些操作可以「即时反馈 + 延迟 review」组合，哪些必须「即时 review + 同步审核」**。属性编辑属于前者，代码生成属于后者。
 
 ### 6. Beta 限制透露的产品策略
 

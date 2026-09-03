@@ -48,7 +48,7 @@ Chromium 胜在墙钟（JIT 已见该页），Kitesurf 胜在 CPU/内存（决�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cloudflare-kitesurf-agent-first-browser-workers-2026.md)
 
 ## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

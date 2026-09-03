@@ -79,9 +79,9 @@ GitOps 让你能更安全地加快变更速度，但需要显式工程优化才�
 - **Alert 修剪（Alert Pruning）**：每次 incident 后问：这个 alert 是否帮助了我们，还是只是一个噪音？持续修剪是保持可观测性信号纯净的必要工作
 ## 相关实体
 - [What Marketing Can Learn From It About Running Complex Technology](../ch03/076-what-marketing-can-learn-from-it-about-running-complex-techn.html)
-- [Forward Networks Predict Network Verification](https://github.com/QianJinGuo/wiki/blob/main/entities/forward-networks-predict-network-verification.md)
+- [Forward Networks Predict Network Verification](https://github.com/QianJinGuo/wiki-public/blob/main/entities/forward-networks-predict-network-verification.md)
 - [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](../ch04/176-openclaw.html)
-- [Hiclaw V110 K8S Hermes Worker](https://github.com/QianJinGuo/wiki/blob/main/entities/hiclaw-v110-k8s-hermes-worker.md)
+- [Hiclaw V110 K8S Hermes Worker](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hiclaw-v110-k8s-hermes-worker.md)
 - [Alibabacloud Cms Manage Skill Natural Language Observability](../ch07/054-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/from-kubernetes-dev-setup-to-production-what-actually-change.md)

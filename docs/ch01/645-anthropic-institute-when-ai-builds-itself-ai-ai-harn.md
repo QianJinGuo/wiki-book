@@ -6,10 +6,10 @@
 
 ## 相关实体
 
-- [淘天营销中后台生码工作流最佳实践](https://github.com/QianJinGuo/wiki/blob/main/entities/淘天营销中后台生码工作流最佳实践.md)
+- [淘天营销中后台生码工作流最佳实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/淘天营销中后台生码工作流最佳实践.md)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-institute-when-ai-builds-itself-jiagoux-interpretation.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
 ## 深度分析
 
 Anthropic Institute《When AI builds itself》深度解读：AI 进入 AI 研发执行层、瓶颈迁移与研发级 Harness（架构师 JiaGouX） 涉及agent领域的核心技术议题。

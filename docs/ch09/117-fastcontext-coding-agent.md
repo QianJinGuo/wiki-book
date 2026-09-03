@@ -124,7 +124,7 @@
 - [Coding Agent 在百度的落地实践](038-coding-agent.html)
 - [AgentMemory：Coding Agent 本地记忆](015-agentmemory-coding-agent.html)
 - [阿里 LoongSuite Pilot：Coding Agent 从黑盒到透明](038-coding-agent.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/coding-agent-practice.md)
 
 ---
 

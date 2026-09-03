@@ -56,11 +56,11 @@ Claw Chain 再次验证了一个趋势：**AI Agent 正在成为下一代攻击�
 
 - Agent 行为图谱建模（而非基于系统调用的规则）
 - 跨操作步骤的关联分析（检测长链路攻击链）
-- 来自 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 等框架的安全设计原则融入 Agent 开发工作流
+- 来自 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 等框架的安全设计原则融入 Agent 开发工作流
 
 ## 相关实体
 - [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](../ch04/176-openclaw.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-landscape.md)
 
 ---
 

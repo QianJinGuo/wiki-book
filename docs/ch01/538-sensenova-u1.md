@@ -33,7 +33,7 @@ NEO-unify 架构的核心创新在于**移除了视觉编码器（VE）和变分
 5. **关注 38B MoE 版本的能力跃升和配套推理成本**：38B MoE 在开源基准上的登顶意味着更强能力，但 MoE 的显存占用和推理调度复杂度也更高。在选型前需要实测 H100 单节点 vs 8B 版本的生成质量差距，判断是否值得为该差距付出额外的工程复杂度。
 
 ## 相关实体
-- [Sensnova U1](https://github.com/QianJinGuo/wiki/blob/main/entities/sensnova-u1.md)
+- [Sensnova U1](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sensnova-u1.md)
 - [Loongsuite Genai Semconv Alibaba](../ch04/257-ai.html)
 - [Harness Engineering Framework](../ch05/057-harness-engineering.html)
 - [Aws Sagemaker Ai Agent Guided Workflows Finetuning](../ch04/312-ai-agent.html)

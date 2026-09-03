@@ -115,11 +115,11 @@ Agent Room的价值不只是"自动创建了变更、分支和环境"。真正�
 
 ## 相关实体
 - [Rag技术框架的演进方向](../ch01/168-rag.html)
-- [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
+- [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [Wow Harness V3 Governance Protocol](../ch05/008-harness.html)
 - [Hermes Agent 12 Layer Full Configuration Guide](161-hermes-agent.html)
-- [Hiclaw V110 K8S Hermes Worker](https://github.com/QianJinGuo/wiki/blob/main/entities/hiclaw-v110-k8s-hermes-worker.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
+- [Hiclaw V110 K8S Hermes Worker](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hiclaw-v110-k8s-hermes-worker.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/multi-agent-coordination.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/emergent-collaboration-ai-high-quality-decision-agent-room.md)
 

@@ -6,7 +6,7 @@
 
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/sap-unveils-the-autonomous-enterprise.md)
 
-**SAP Autonomous Enterprise** 是 SAP 于 2026 年 5 月 12 日在 [SAP Sapphire 2026](https://news.sap.com/topics/sap-sapphire/) 大会上正式发布的 AI 驱动企业转型愿景，由 CEO Christian Klein 在 Orlando 主题演讲中正式揭晓。该战略旨在将 [agentic AI（AI Agent）](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-systems.md) 深度嵌入企业核心业务流程，实现从 ERP 运营到财务、供应链、采购、人力资源、客户体验的全链路自动化。
+**SAP Autonomous Enterprise** 是 SAP 于 2026 年 5 月 12 日在 [SAP Sapphire 2026](https://news.sap.com/topics/sap-sapphire/) 大会上正式发布的 AI 驱动企业转型愿景，由 CEO Christian Klein 在 Orlando 主题演讲中正式揭晓。该战略旨在将 [agentic AI（AI Agent）](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/multi-agent-systems.md) 深度嵌入企业核心业务流程，实现从 ERP 运营到财务、供应链、采购、人力资源、客户体验的全链路自动化。
 
 > "For the mission-critical processes of our customers, 'almost right' just isn't good enough." — **Christian Klein**, CEO of SAP SE
 
@@ -18,9 +18,9 @@
 
 SAP Business AI Platform 是此次发布的基石，它将原有的 [SAP Business Technology Platform](https://www.sap.com/products/business-technology-platform.html)（SAP BTP）、SAP Business Data Cloud 和 SAP Business AI 统一为单一托管环境，为企业 AI 提供安全、可扩展的部署底座 。
 
-该平台的核心是 **SAP Knowledge Graph**——一种结构化的业务知识图谱，为 AI Agent 提供企业 SAP 系统中业务实体、流程和关联关系的语义映射，使 Agent 能够理解业务上下文而非仅处理离散的命令 。这一知识图谱方法与 [RAG（检索增强生成）](https://github.com/QianJinGuo/wiki/blob/main/concepts/retrieval-augmented-generation-rag.md) 的语义增强理念高度一致，但在企业场景中针对结构化的业务实体做了深度定制。
+该平台的核心是 **SAP Knowledge Graph**——一种结构化的业务知识图谱，为 AI Agent 提供企业 SAP 系统中业务实体、流程和关联关系的语义映射，使 Agent 能够理解业务上下文而非仅处理离散的命令 。这一知识图谱方法与 [RAG（检索增强生成）](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/retrieval-augmented-generation-rag.md) 的语义增强理念高度一致，但在企业场景中针对结构化的业务实体做了深度定制。
 
-在 Knowledge Graph 之上，**Joule Studio** 是 SAP 的 AI-first 开发环境，支持低代码（no-code）、专业代码（pro-code）和 AI 框架多种开发模式，允许合作伙伴和客户在 SAP 托管的基础设施上构建定制化 Agent 。开发者可以利用 NVIDIA OpenShell 提供的可信安全运行时来执行企业级 Agent，这一点体现了 [agent security architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-architecture.md) 的重要性。
+在 Knowledge Graph 之上，**Joule Studio** 是 SAP 的 AI-first 开发环境，支持低代码（no-code）、专业代码（pro-code）和 AI 框架多种开发模式，允许合作伙伴和客户在 SAP 托管的基础设施上构建定制化 Agent 。开发者可以利用 NVIDIA OpenShell 提供的可信安全运行时来执行企业级 Agent，这一点体现了 [agent security architecture](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-security-architecture.md) 的重要性。
 
 ---
 
@@ -44,7 +44,7 @@ SAP Autonomous Suite 是部署在 Business AI Platform 之上的自主运营层�
 
 ### 典型案例：Autonomous Close Assistant
 
-**Autonomous Close Assistant** 可将财务月结流程从数周压缩至数天，通过自动化日记账分录、对账和跨流程误差解决实现端到端闭环 。这直接体现了 [enterprise AI adoption](https://github.com/QianJinGuo/wiki/blob/main/concepts/enterprise-ai-adoption.md) 中"AI 落地成功 = 领域专精 + 流程闭环"的核心原则。
+**Autonomous Close Assistant** 可将财务月结流程从数周压缩至数天，通过自动化日记账分录、对账和跨流程误差解决实现端到端闭环 。这直接体现了 [enterprise AI adoption](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/enterprise-ai-adoption.md) 中"AI 落地成功 = 领域专精 + 流程闭环"的核心原则。
 
 ### Industry AI：7 大行业垂直方案
 

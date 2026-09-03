@@ -45,7 +45,7 @@ AWS 将在河内部署轻量级 Local Zones，阿里巴巴云和华为云也有�
 
 ## 相关实体
 - [Vietnam to develop domestic cloud](../ch11/142-vietnam-to-develop-domestic-cloud.html)
-- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](https://github.com/QianJinGuo/wiki/blob/main/entities/vietnam-domestic-cloud.md)
+- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vietnam-domestic-cloud.md)
 
 ---
 

@@ -108,7 +108,7 @@ Black Hills Info Security 在 2026-06-03 发布的审计研究是 GitLab 生态*
 ## 相关实体
 
 - [bagel — fleet 级 secret scanning 守护开发工作站](048-bagel-fleet-secret-scanning.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-privacy-landscape.md)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/auditing-gitlab-cicd-kill-chain-black-hills-2026.md)
 
 ---

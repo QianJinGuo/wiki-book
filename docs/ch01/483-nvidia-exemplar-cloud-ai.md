@@ -21,9 +21,9 @@
 
 ## 相关概念
 
-- [Cloud AI Infrastructure](https://github.com/QianJinGuo/wiki/blob/main/concepts/cloud-ai-infrastructure.md)
-- [推理优化](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md)
-- [LLM 预训练 vs SFT](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-pretraining-vs-sft.md)
+- [Cloud AI Infrastructure](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/cloud-ai-infrastructure.md)
+- [推理优化](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/inference-optimization.md)
+- [LLM 预训练 vs SFT](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/llm-pretraining-vs-sft.md)
 
 ## 深度分析
 

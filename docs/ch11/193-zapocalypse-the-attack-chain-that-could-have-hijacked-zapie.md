@@ -58,8 +58,8 @@ def lambda_handler(event, context=None):
 - [构建无服务器Kiro调度平台用Kiro Cli Eventbridge Ecs Fargate实现定时Ai任务](../ch04/257-ai.html)
 - [Ai Friendly Architecture Design Taobao](../ch05/019-ai-friendly.html)
 - [Headroom Context Compression Agent Vibecoder](../ch03/004-agent.html)
-- [5237875](https://github.com/QianJinGuo/wiki/blob/main/entities/5237875.md)
-- [Demis Hassabis Yc Interview Jiedaotixi](https://github.com/QianJinGuo/wiki/blob/main/entities/demis-hassabis-yc-interview-jiedaotixi.md)
+- [5237875](https://github.com/QianJinGuo/wiki-public/blob/main/entities/5237875.md)
+- [Demis Hassabis Yc Interview Jiedaotixi](https://github.com/QianJinGuo/wiki-public/blob/main/entities/demis-hassabis-yc-interview-jiedaotixi.md)
 
 ## 实践启示
 

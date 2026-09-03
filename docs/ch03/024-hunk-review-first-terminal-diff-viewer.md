@@ -88,7 +88,7 @@ Hunk 的设计正好回应了这些需求，使其成为 agentic coding 时代�
 
 ### 与其他 developer tools 的定位
 
-Hunk 聚焦于 **review 环节**，与 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 中的其他工具形成互补：
+Hunk 聚焦于 **review 环节**，与 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 中的其他工具形成互补：
 
 - **代码生成**：Claude Code、Codex 等 agent 负责
 - **代码审查**：Hunk 提供 review-first 的交互界面
@@ -113,7 +113,7 @@ Hunk 聚焦于 **review 环节**，与 [Harness Engineering](https://github.com/
 
 ---
 ## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

@@ -112,11 +112,11 @@ NVIDIA 在 Nemotron 3 Ultra（5,500 亿参数）上使用 NVFP4 完成预训练�
 
 ## 相关实体
 
-- [AWS GRPO RLVR SageMaker](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-grpo-rlvr-sagemaker-math-reasoning.md) — AWS 后训练栈
-- [Foundation Model Building Blocks](https://github.com/QianJinGuo/wiki/blob/main/entities/foundation-model-building-blocks.md) — 通用基础组件
-- [750B MoE PD 分离推理 EFA vs RoCE](https://github.com/QianJinGuo/wiki/blob/main/entities/750b-moe-pd-disaggregation-aws-efa-vs-roce.md) — AWS 上的 MoE 推理对比
-- [Microsoft / GitHub / AWS AI 算力承压](https://github.com/QianJinGuo/wiki/blob/main/entities/runtimewire-microsoft-github-aws-ai-capacity-crunch-2026-06.md) — 超大规模算力承压事件
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
+- [AWS GRPO RLVR SageMaker](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-grpo-rlvr-sagemaker-math-reasoning.md) — AWS 后训练栈
+- [Foundation Model Building Blocks](https://github.com/QianJinGuo/wiki-public/blob/main/entities/foundation-model-building-blocks.md) — 通用基础组件
+- [750B MoE PD 分离推理 EFA vs RoCE](https://github.com/QianJinGuo/wiki-public/blob/main/entities/750b-moe-pd-disaggregation-aws-efa-vs-roce.md) — AWS 上的 MoE 推理对比
+- [Microsoft / GitHub / AWS AI 算力承压](https://github.com/QianJinGuo/wiki-public/blob/main/entities/runtimewire-microsoft-github-aws-ai-capacity-crunch-2026-06.md) — 超大规模算力承压事件
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
 
 > [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-blackwell-mlperf-training-6-0-benchmark-results-2026-06.md)
 
@@ -264,8 +264,8 @@ PRISM 的"基础迭代 + low rank 旁路"结构与 LoRA 形式完全对应：冻
 
 ## 相关实体
 
-- [Olmo Hybrid and the Hybrid Architecture Wave (2026)](https://github.com/QianJinGuo/wiki/blob/main/entities/olmo-hybrid-gdn-wave-2026.md) — 同一架构趋势下 GDN 3:1 混合的工业实践
-- [最新开放模型快照](https://github.com/QianJinGuo/wiki/blob/main/entities/interconnects-latest-open-artifacts-20-new-orgs-new-types-of-models-with-nemotron-super-sarvam.md) — Nemotron 3 Nano 线性架构对比
+- [Olmo Hybrid and the Hybrid Architecture Wave (2026)](https://github.com/QianJinGuo/wiki-public/blob/main/entities/olmo-hybrid-gdn-wave-2026.md) — 同一架构趋势下 GDN 3:1 混合的工业实践
+- [最新开放模型快照](https://github.com/QianJinGuo/wiki-public/blob/main/entities/interconnects-latest-open-artifacts-20-new-orgs-new-types-of-models-with-nemotron-super-sarvam.md) — Nemotron 3 Nano 线性架构对比
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/icml-2026-prism-parallel-residual-iterative-sequence-model.md)
 
@@ -336,14 +336,14 @@ tool calling 的评估需要多维度：工具选择准确率、参数格式正�
 SFT→DPO 两阶段之间可能有数小时的调试和评估间隙。设置 keep_alive_period_in_seconds=3600 保持训练集群活跃，避免重复等待集群启动（约 10-15 分钟）。
 
 ## 相关实体
-- [Aws Reinforcement Fine Tuning Llm As Judge](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-reinforcement-fine-tuning-llm-as-judge.md)
-- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
-- [Build Real Time Voice Applications With Amazon Sagemaker Ai](https://github.com/QianJinGuo/wiki/blob/main/entities/build-real-time-voice-applications-with-amazon-sagemaker-ai.md)
-- [Agent Reliability Context Drift Tool Hallucination](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-reliability-context-drift-tool-hallucination.md)
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](https://github.com/QianJinGuo/wiki/blob/main/entities/mcp-serveramazon-bedrock-agentcorequick-suite.md)
+- [Aws Reinforcement Fine Tuning Llm As Judge](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-reinforcement-fine-tuning-llm-as-judge.md)
+- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
+- [Build Real Time Voice Applications With Amazon Sagemaker Ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-real-time-voice-applications-with-amazon-sagemaker-ai.md)
+- [Agent Reliability Context Drift Tool Hallucination](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-reliability-context-drift-tool-hallucination.md)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mcp-serveramazon-bedrock-agentcorequick-suite.md)
 
-- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-core-technology.md)
+- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/llm-core-technology.md)
 ## 相关引用
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-sagemaker-sft-dpo-tool-calling.md)
 
@@ -403,10 +403,10 @@ Transformer 功能沿深度分层：底层做 token 级局部句法与低层特�
 
 ## 相关实体
 
-- [2026 年面向 LLM 的 RL 方法总结](https://github.com/QianJinGuo/wiki/blob/main/entities/2026-llm-rl-algorithms-deeplog-imba-ppo-dpo-grpo-marl.md) — 从 PPO 到 GRPO 的 RL 后训练全览
-- [Agentic RL 六框架实践地图](https://github.com/QianJinGuo/wiki/blob/main/entities/agentic-rl-frameworks-practices-long-horizon-wolfe-2026.md) — 长程智能体训练框架对比
-- [AWS GRPO/RLVR 数学推理实践](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-grpo-rlvr-sagemaker-math-reasoning.md) — GRPO/RLVR 的真实推理落地
-- [AlphaXIV：RL 时代的强化学习](https://github.com/QianJinGuo/wiki/blob/main/entities/alphaxiv-reinforcement-learning-for-rlms.md) — RL for LLM 的宏观方法迭代
+- [2026 年面向 LLM 的 RL 方法总结](https://github.com/QianJinGuo/wiki-public/blob/main/entities/2026-llm-rl-algorithms-deeplog-imba-ppo-dpo-grpo-marl.md) — 从 PPO 到 GRPO 的 RL 后训练全览
+- [Agentic RL 六框架实践地图](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentic-rl-frameworks-practices-long-horizon-wolfe-2026.md) — 长程智能体训练框架对比
+- [AWS GRPO/RLVR 数学推理实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-grpo-rlvr-sagemaker-math-reasoning.md) — GRPO/RLVR 的真实推理落地
+- [AlphaXIV：RL 时代的强化学习](https://github.com/QianJinGuo/wiki-public/blob/main/entities/alphaxiv-reinforcement-learning-for-rlms.md) — RL for LLM 的宏观方法迭代
 
 ---
 
@@ -443,11 +443,11 @@ Grok对马斯克而言有三个战略价值：X平台AI能力的核心支柱、�
 **4. 并购整合是AI格局重塑的常态路径。** xAI并入SpaceX后获得1.25万亿美元估值背书，融资能力大幅提升。在AI竞争日益激烈的背景下，单打独斗的AI创业公司面临巨大的资金压力，被大厂整合可能是更务实的出路。
 **5. 基础设施代差需要提前布局。** Blackwell已经是最新一代旗舰模型的标配，Hopper正在快速折旧。企业如果还在基于上一代芯片规划AI战略，需要尽快评估迁移路径和时间窗口。
 ## 相关实体
-- [Xai Shutdown Grok Still Alive](https://github.com/QianJinGuo/wiki/blob/main/entities/xai-shutdown-grok-still-alive.md)
-- [Xai Grok Musk Training New Model Wechat](https://github.com/QianJinGuo/wiki/blob/main/entities/xai-grok-musk-training-new-model-wechat.md)
-- [Video Agent Paradigm Compute Talent Flywheel Ethan He 20260606](https://github.com/QianJinGuo/wiki/blob/main/entities/video-agent-paradigm-compute-talent-flywheel-ethan-he-20260606.md)
-- [奥特曼最险一战 前女Cto当庭翻脸 Openai权斗彻底打到台前 6Bf26E92E29B](https://github.com/QianJinGuo/wiki/blob/main/entities/奥特曼最险一战-前女cto当庭翻脸-openai权斗彻底打到台前-6bf26e92e29b.md)
-- [Jury Dismisses All Claims In Elon Musk S Lawsuit Against Ope](https://github.com/QianJinGuo/wiki/blob/main/entities/jury-dismisses-all-claims-in-elon-musk-s-lawsuit-against-ope.md)
+- [Xai Shutdown Grok Still Alive](https://github.com/QianJinGuo/wiki-public/blob/main/entities/xai-shutdown-grok-still-alive.md)
+- [Xai Grok Musk Training New Model Wechat](https://github.com/QianJinGuo/wiki-public/blob/main/entities/xai-grok-musk-training-new-model-wechat.md)
+- [Video Agent Paradigm Compute Talent Flywheel Ethan He 20260606](https://github.com/QianJinGuo/wiki-public/blob/main/entities/video-agent-paradigm-compute-talent-flywheel-ethan-he-20260606.md)
+- [奥特曼最险一战 前女Cto当庭翻脸 Openai权斗彻底打到台前 6Bf26E92E29B](https://github.com/QianJinGuo/wiki-public/blob/main/entities/奥特曼最险一战-前女cto当庭翻脸-openai权斗彻底打到台前-6bf26e92e29b.md)
+- [Jury Dismisses All Claims In Elon Musk S Lawsuit Against Ope](https://github.com/QianJinGuo/wiki-public/blob/main/entities/jury-dismisses-all-claims-in-elon-musk-s-lawsuit-against-ope.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xai-dissolved-grok-colossus2-analysis.md)
 
@@ -525,8 +525,8 @@ MiniCPM5-1B 的特殊之处：
 5. **端侧部署生态已成熟**：INT4/Q4 仅 0.5GB、手机平板车机都能跑，支持纯 CPU 和浏览器部署，门槛已大幅降低。
 
 ## 相关实体
-- [Thousand Token Wood Sim V2 Hackathon](https://github.com/QianJinGuo/wiki/blob/main/entities/thousand-token-wood-sim-v2-hackathon.md)
-- [Pilotdeck Agent Os Openbmb Tsinghua](https://github.com/QianJinGuo/wiki/blob/main/entities/pilotdeck-agent-os-openbmb-tsinghua.md)
+- [Thousand Token Wood Sim V2 Hackathon](https://github.com/QianJinGuo/wiki-public/blob/main/entities/thousand-token-wood-sim-v2-hackathon.md)
+- [Pilotdeck Agent Os Openbmb Tsinghua](https://github.com/QianJinGuo/wiki-public/blob/main/entities/pilotdeck-agent-os-openbmb-tsinghua.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/minicpm5-1b-forgetrain-machine-heart.md)
 
@@ -540,9 +540,9 @@ MiniCPM5-1B 的特殊之处：
 - 评分：v=7 × c=9 = 63
 - 来源：dwarkesh
 ## 相关实体
-- [Building Blocks For Foundation Model Training And Inference On Aws](https://github.com/QianJinGuo/wiki/blob/main/entities/building-blocks-for-foundation-model-training-and-inference-on-aws.md)
-- [Gemma 4 Qat Models Optimizing Compression](https://github.com/QianJinGuo/wiki/blob/main/entities/gemma-4-qat-models-optimizing-compression.md)
-- [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](https://github.com/QianJinGuo/wiki/blob/main/entities/how-harnesses-and-post-training-close-the-open-weight-bug-finding-gap-20260606.md)
+- [Building Blocks For Foundation Model Training And Inference On Aws](https://github.com/QianJinGuo/wiki-public/blob/main/entities/building-blocks-for-foundation-model-training-and-inference-on-aws.md)
+- [Gemma 4 Qat Models Optimizing Compression](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gemma-4-qat-models-optimizing-compression.md)
+- [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-harnesses-and-post-training-close-the-open-weight-bug-finding-gap-20260606.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/notes-on-pretraining-parallelisms-and-failed-training-runs.md)
 
@@ -603,16 +603,16 @@ PhoneWorld (arxiv 2605.29486)：腾讯混元+港中深+人大+武大 规模化�
 
 ### 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
-- [Karpathy Vibe Coding Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-agentic-engineering.md)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](https://github.com/QianJinGuo/wiki/blob/main/entities/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md)
-- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
+- [Karpathy Vibe Coding Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-agentic-engineering.md)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](https://github.com/QianJinGuo/wiki-public/blob/main/entities/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md)
+- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/reinforcement-learning-rlhf.md)
 
 ---
 
@@ -646,12 +646,12 @@ PhoneWorld (arxiv 2605.29486)：腾讯混元+港中深+人大+武大 规模化�
 
 ### 关联实体
 
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏-v2.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](https://github.com/QianJinGuo/wiki/blob/main/entities/ethan-he-cosmos-grok-imagine-latent-space-video-agent-20260606.md)
-- [Karpathy Vibe Coding Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-agentic-engineering.md)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏-v2.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ethan-he-cosmos-grok-imagine-latent-space-video-agent-20260606.md)
+- [Karpathy Vibe Coding Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-agentic-engineering.md)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
 
 ---
 
@@ -832,7 +832,7 @@ Mindverse（心洲科技）这家中国原生的 Neo Lab 跑通了**低成本高
 ---
 
 ## 相关实体
-- [Huawei Fuxi Recommendation System Ascend Npu Scaling Law](https://github.com/QianJinGuo/wiki/blob/main/entities/huawei-fuxi-recommendation-system-ascend-npu-scaling-law.md)
+- [Huawei Fuxi Recommendation System Ascend Npu Scaling Law](https://github.com/QianJinGuo/wiki-public/blob/main/entities/huawei-fuxi-recommendation-system-ascend-npu-scaling-law.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mind-lab-lora-continual-learning-system.md)
 
@@ -970,7 +970,7 @@ OPSD 是 OPD 的一种新变体，teacher 和 student 是同一模型，但在�
 
 OPSD 揭示了一个有趣现象：**style token（如"wait"、"alright"）的 per-token KL 远高于 math token（如"power"、"exponent"）**。如果对这些高 KL token 应用激进的更新，模型可能崩溃。解决方案是引入 per-token clipping 机制，对高 KL token 使用独立的衰减策略。
 
-这一发现对 [Skill Rm Qwen Agent Skill Reward Model](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-rm-qwen-agent-skill-reward-model.md) 有直接启示：Skill-RM 的渐进式披露机制可以类比为 OPSD 的 per-token KL 分析——资源应该在需要时才激活，而不是一股脑全部暴露。
+这一发现对 [Skill Rm Qwen Agent Skill Reward Model](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-rm-qwen-agent-skill-reward-model.md) 有直接启示：Skill-RM 的渐进式披露机制可以类比为 OPSD 的 per-token KL 分析——资源应该在需要时才激活，而不是一股脑全部暴露。
 
 ## 核心实验：OPD 的 teacher 来源重要吗？
 
@@ -1052,7 +1052,7 @@ Mukherjee et al. 发现 RL 更新只作用于模型的一个小子网络（稀�
 
 OPSD 实验发现 style token 的 per-token KL 远高于 math token，这意味着某些 token 上的梯度更新实际上是在无关紧要的风格层面浪费计算资源。
 
-这与 [Skill Rm Qwen Agent Skill Reward Model](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-rm-qwen-agent-skill-reward-model.md) 中"append resources 反而降分"的消融实验形成强烈呼应：把大量资源（rubric、checklist、verifier）一股脑 append 进 prompt，等价于对所有 token 无差别地增加信息密度，结果是 key signal 被稀释。OPSD 的 per-token clipping 机制和 Skill-RM 的渐进式披露机制，本质上是在解决同一个问题：如何让关键信息在需要的地方出现，而不是均匀分布在所有地方。
+这与 [Skill Rm Qwen Agent Skill Reward Model](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-rm-qwen-agent-skill-reward-model.md) 中"append resources 反而降分"的消融实验形成强烈呼应：把大量资源（rubric、checklist、verifier）一股脑 append 进 prompt，等价于对所有 token 无差别地增加信息密度，结果是 key signal 被稀释。OPSD 的 per-token clipping 机制和 Skill-RM 的渐进式披露机制，本质上是在解决同一个问题：如何让关键信息在需要的地方出现，而不是均匀分布在所有地方。
 
 ### 多阶段后训练流水线的选择逻辑
 
@@ -1091,11 +1091,11 @@ OPSD 的研究发现 style token 的 per-token KL 显著高于 math token。建�
 
 ## 相关实体
 
-- [Skill Rm Qwen Agent Skill Reward Model](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-rm-qwen-agent-skill-reward-model.md)
-- [Skill Hub Organization Asset Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-hub-organization-asset-winty.md)
-- [Skill Design Spec 8 Block Checklist Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-design-spec-8-block-checklist-winty.md)
-- [Hermes Self Evolution Closed Loop Skill Reuse Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-self-evolution-closed-loop-skill-reuse-winty.md)
-- [Normalizing Trajectory Models](https://github.com/QianJinGuo/wiki/blob/main/entities/normalizing-trajectory-models.md)
+- [Skill Rm Qwen Agent Skill Reward Model](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-rm-qwen-agent-skill-reward-model.md)
+- [Skill Hub Organization Asset Winty](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-hub-organization-asset-winty.md)
+- [Skill Design Spec 8 Block Checklist Winty](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-design-spec-8-block-checklist-winty.md)
+- [Hermes Self Evolution Closed Loop Skill Reuse Winty](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-self-evolution-closed-loop-skill-reuse-winty.md)
+- [Normalizing Trajectory Models](https://github.com/QianJinGuo/wiki-public/blob/main/entities/normalizing-trajectory-models.md)
 
 ---
 
@@ -1245,11 +1245,11 @@ OPD虽然解决了Mode-Covering问题，但引入了自己的隐患：Mode Colla
 - **实验验证**：Qwen2.5-7B-Instruct + OpenThinker3-7B teacher，多任务（数学推理+智能体），Teacher Top-K 方法在 MATH500/AIME24/AIME25 等基准稳定优于 sampled-token OPD
 **合并判断：** 现有 entity 覆盖 OPD 基础理论（Forward KL vs Reverse KL、数学原理、Mode Seeking/Covering），本篇补充工程实践中的失败模式与解决方案，merge 后覆盖"理论 + 失败分析 + 修复方案"完整闭环。
 ## 相关实体
-- [Yann Dubois Openai Post Training Interview](https://github.com/QianJinGuo/wiki/blob/main/entities/yann-dubois-openai-post-training-interview.md)
-- [Ettin Reranker Family](https://github.com/QianJinGuo/wiki/blob/main/entities/ettin-reranker-family.md)
-- [Rag Chunking Vectorization Rerank Distillation](https://github.com/QianJinGuo/wiki/blob/main/entities/rag-chunking-vectorization-rerank-distillation.md)
-- [Apo Autonomous Preference Optimization](https://github.com/QianJinGuo/wiki/blob/main/entities/apo-autonomous-preference-optimization.md)
-- [Introducing The Ettin Reranker Family](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-the-ettin-reranker-family.md)
+- [Yann Dubois Openai Post Training Interview](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yann-dubois-openai-post-training-interview.md)
+- [Ettin Reranker Family](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ettin-reranker-family.md)
+- [Rag Chunking Vectorization Rerank Distillation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-chunking-vectorization-rerank-distillation.md)
+- [Apo Autonomous Preference Optimization](https://github.com/QianJinGuo/wiki-public/blob/main/entities/apo-autonomous-preference-optimization.md)
+- [Introducing The Ettin Reranker Family](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-the-ettin-reranker-family.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/on-policy-distillation-vs-offline-distillation-loster.md)
 
@@ -1426,7 +1426,7 @@ i7 Pro刚进场测试的时候，直接当场“翻车”。
 
 ---
 ## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -1447,7 +1447,7 @@ V4 没有推倒 V3 重来，MoE 框架沿用 DeepSeekMoE，MTP 模块未动。�
 - 残差连接升级：解决深度扩展时的数值不稳定问题
 - **核心创新**：给残差连接加「只准收缩不准放大」的数学护栏，使用双随机矩阵约束信号守恒
 - **效果**：模型从 V3 的 671B 推到 1.6T（2.4 倍），训练稳定性反而更好
-- → [Scaling Laws](https://github.com/QianJinGuo/wiki/blob/main/concepts/scaling-laws.md)
+- → [Scaling Laws](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/scaling-laws.md)
 
 ### 2. CSA + HCA 混合注意力
 - **CSA（Compressed Sparse Attention）**：每 64 个 token 压缩为 1 块，用 Lightning Indexer 打分，只挑 top-k 块精读
@@ -1549,16 +1549,16 @@ V4 的实现用激进前 8 步 + 温和后 2 步做精度平衡，这个工程�
 ## Cross-links
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek-v4-training-58-page-paper-deep-dive.md)
 - → 
-- → [灾难性遗忘](https://github.com/QianJinGuo/wiki/blob/main/concepts/catastrophic-forgetting.md)
-- → [DeepSeek V4 Triton FP4 优化](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-v4-triton-fp4-optimization.md)
-- → [ds4.c — DeepSeek V4 本地推理](https://github.com/QianJinGuo/wiki/blob/main/entities/ds4c-deepseek-v4-antirez.md)
+- → [灾难性遗忘](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/catastrophic-forgetting.md)
+- → [DeepSeek V4 Triton FP4 优化](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-v4-triton-fp4-optimization.md)
+- → [ds4.c — DeepSeek V4 本地推理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ds4c-deepseek-v4-antirez.md)
 
 ## 相关实体
-- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-v4.md)
+- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-v4.md)
 
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](https://github.com/QianJinGuo/wiki/blob/main/entities/deepseek-v4-pro-vs-claude.md)
-- [Redis之父下场，给DeepSeek V4单独造了一台推理引擎](https://github.com/QianJinGuo/wiki/blob/main/entities/redis之父下场给deepseek-v4单独造了一台推理引擎.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-core-technology.md)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-v4-pro-vs-claude.md)
+- [Redis之父下场，给DeepSeek V4单独造了一台推理引擎](https://github.com/QianJinGuo/wiki-public/blob/main/entities/redis之父下场给deepseek-v4单独造了一台推理引擎.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/llm-core-technology.md)
 
 ---
 
@@ -1777,9 +1777,9 @@ OpenRubrics 等工作现在专注于规模化生成这些评分标准。这是�
 
 ## 相关实体
 
-- [Self-Taught RLVR](https://github.com/QianJinGuo/wiki/blob/main/entities/self-taught-rlvr.md) — 自监督 RLVR 训练方法
-- [AWS GRPO RLVR](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-grpo-rlvr-sagemaker-math-reasoning.md) — AWS 在 SageMaker 上实现的 RLVR
-- [Verifiable Rewards RL](https://github.com/QianJinGuo/wiki/blob/main/entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md) — 可验证奖励 RL 的技术细节
+- [Self-Taught RLVR](https://github.com/QianJinGuo/wiki-public/blob/main/entities/self-taught-rlvr.md) — 自监督 RLVR 训练方法
+- [AWS GRPO RLVR](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-grpo-rlvr-sagemaker-math-reasoning.md) — AWS 在 SageMaker 上实现的 RLVR
+- [Verifiable Rewards RL](https://github.com/QianJinGuo/wiki-public/blob/main/entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md) — 可验证奖励 RL 的技术细节
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rl-beyond-the-verifiable.md)
 
@@ -1878,11 +1878,11 @@ Cosmos Predict 2.5 作为通用世界模型，在处理**机器人领域特定�
 3. **批量生成**：使用同一 LoRA 批量生成多样本，筛选高质量轨迹用于策略学习
 
 ## 相关实体
-- [Nvidia Cosmos Fine Tuning Robot Video Generation](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-cosmos-fine-tuning-robot-video-generation.md)
-- [Fine Tuning Nvidia Cosmos Predict 2 5 With Lora Dora For Robot Video Generation](https://github.com/QianJinGuo/wiki/blob/main/entities/fine-tuning-nvidia-cosmos-predict-2-5-with-lora-dora-for-robot-video-generation.md)
-- [Fine Tuning Cosmos](https://github.com/QianJinGuo/wiki/blob/main/entities/fine-tuning-cosmos.md)
-- [Navigating Eu Ai Act Requirements For Llm Fine Tuning On Amazon Sagemaker Ai](https://github.com/QianJinGuo/wiki/blob/main/entities/navigating-eu-ai-act-requirements-for-llm-fine-tuning-on-amazon-sagemaker-ai.md)
-- [A2Rd Agentic Autoregressive Diffusion Long Video](https://github.com/QianJinGuo/wiki/blob/main/entities/a2rd-agentic-autoregressive-diffusion-long-video.md)
+- [Nvidia Cosmos Fine Tuning Robot Video Generation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-cosmos-fine-tuning-robot-video-generation.md)
+- [Fine Tuning Nvidia Cosmos Predict 2 5 With Lora Dora For Robot Video Generation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tuning-nvidia-cosmos-predict-2-5-with-lora-dora-for-robot-video-generation.md)
+- [Fine Tuning Cosmos](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tuning-cosmos.md)
+- [Navigating Eu Ai Act Requirements For Llm Fine Tuning On Amazon Sagemaker Ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/navigating-eu-ai-act-requirements-for-llm-fine-tuning-on-amazon-sagemaker-ai.md)
+- [A2Rd Agentic Autoregressive Diffusion Long Video](https://github.com/QianJinGuo/wiki-public/blob/main/entities/a2rd-agentic-autoregressive-diffusion-long-video.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fine-tuning-nvidia-cosmos-predict-2-5-with-lora-dora-for-robot-video-generation.md)
 
@@ -2056,7 +2056,7 @@ Qi 50W 标准正是无线充电标准向更高功率演进的重要方向。目�
 
 ---
 ## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -2174,12 +2174,12 @@ Dubois 提到的一个关键设计哲学是：能力（capability）和安全性
 如果一个模型的能力边界和行为模式是不可预测的，把它放在 Agent 系统里会是危险的。选择模型时，稳定性（行为可预测）和能力同样重要。
 
 ## 相关实体
-- [Llm Rl Algorithms Ppo Dpo Grpo Marl Evolution 2026](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026.md)
+- [Llm Rl Algorithms Ppo Dpo Grpo Marl Evolution 2026](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026.md)
 
-- [frontier post-training recipe review with finbarr timbers](https://github.com/QianJinGuo/wiki/blob/main/entities/finbarr-timbers-frontier-post-training-recipe-review-2026.md)
+- [frontier post-training recipe review with finbarr timbers](https://github.com/QianJinGuo/wiki-public/blob/main/entities/finbarr-timbers-frontier-post-training-recipe-review-2026.md)
 
 ## 相关主题
-- [OpenAI 推理模型（o1/o3/o4-mini）](https://github.com/QianJinGuo/wiki/blob/main/entities/openai-reasoning-models.md) — OpenAI 推理模型系列
+- [OpenAI 推理模型（o1/o3/o4-mini）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openai-reasoning-models.md) — OpenAI 推理模型系列
 
 ---
 
@@ -2421,7 +2421,7 @@ Gabriel 和牛津研
 
 ---
 ## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -2543,7 +2543,7 @@ Session Replay 帮你看到“一个人的故事”，热力图则帮你看到�
 
 ---
 ## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -2636,11 +2636,11 @@ TBA 不适合以下场景：
 
 TBA 把采样从训练闭环里解耦出来——这是 LLM RL 后训练数量级效率提升的核心。
 ## 相关实体
-- [On Policy Distillation Vs Offline Distillation Loster](https://github.com/QianJinGuo/wiki/blob/main/entities/on-policy-distillation-vs-offline-distillation-loster.md)
-- [Overcoming Reward Signal Challenges Verifiable Rewards Based Reinforcement Learn](https://github.com/QianJinGuo/wiki/blob/main/entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md)
-- [Reinforcing Recursive Language Models Alphaxiv](https://github.com/QianJinGuo/wiki/blob/main/entities/reinforcing-recursive-language-models-alphaxiv.md)
-- [Skillos](https://github.com/QianJinGuo/wiki/blob/main/entities/skillos.md)
-- [Yann Dubois Openai Post Training Interview](https://github.com/QianJinGuo/wiki/blob/main/entities/yann-dubois-openai-post-training-interview.md)
+- [On Policy Distillation Vs Offline Distillation Loster](https://github.com/QianJinGuo/wiki-public/blob/main/entities/on-policy-distillation-vs-offline-distillation-loster.md)
+- [Overcoming Reward Signal Challenges Verifiable Rewards Based Reinforcement Learn](https://github.com/QianJinGuo/wiki-public/blob/main/entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md)
+- [Reinforcing Recursive Language Models Alphaxiv](https://github.com/QianJinGuo/wiki-public/blob/main/entities/reinforcing-recursive-language-models-alphaxiv.md)
+- [Skillos](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skillos.md)
+- [Yann Dubois Openai Post Training Interview](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yann-dubois-openai-post-training-interview.md)
 
 ---
 
@@ -2731,11 +2731,11 @@ warmup_steps: 100      # 渐进式学习率预热
 - 任务需要更精细的方向控制
 
 ## 相关实体
-- [Fine Tuning Nvidia Cosmos Predict 25 With Loradora For Robot Video Generation](https://github.com/QianJinGuo/wiki/blob/main/entities/fine-tuning-nvidia-cosmos-predict-25-with-loradora-for-robot-video-generation.md)
-- [Fine Tuning Nvidia Cosmos Predict 2 5 With Lora Dora For Robot Video Generation](https://github.com/QianJinGuo/wiki/blob/main/entities/fine-tuning-nvidia-cosmos-predict-2-5-with-lora-dora-for-robot-video-generation.md)
-- [Fine Tuning Cosmos](https://github.com/QianJinGuo/wiki/blob/main/entities/fine-tuning-cosmos.md)
-- [Navigating Eu Ai Act Requirements For Llm Fine Tuning On Amazon Sagemaker Ai](https://github.com/QianJinGuo/wiki/blob/main/entities/navigating-eu-ai-act-requirements-for-llm-fine-tuning-on-amazon-sagemaker-ai.md)
-- [Video Agent Paradigm Compute Talent Flywheel Ethan He 20260606](https://github.com/QianJinGuo/wiki/blob/main/entities/video-agent-paradigm-compute-talent-flywheel-ethan-he-20260606.md)
+- [Fine Tuning Nvidia Cosmos Predict 25 With Loradora For Robot Video Generation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tuning-nvidia-cosmos-predict-25-with-loradora-for-robot-video-generation.md)
+- [Fine Tuning Nvidia Cosmos Predict 2 5 With Lora Dora For Robot Video Generation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tuning-nvidia-cosmos-predict-2-5-with-lora-dora-for-robot-video-generation.md)
+- [Fine Tuning Cosmos](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tuning-cosmos.md)
+- [Navigating Eu Ai Act Requirements For Llm Fine Tuning On Amazon Sagemaker Ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/navigating-eu-ai-act-requirements-for-llm-fine-tuning-on-amazon-sagemaker-ai.md)
+- [Video Agent Paradigm Compute Talent Flywheel Ethan He 20260606](https://github.com/QianJinGuo/wiki-public/blob/main/entities/video-agent-paradigm-compute-talent-flywheel-ethan-he-20260606.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fine-tuning-nvidia-cosmos-predict-2-5-with-lora-dora-for-robot-video-generation.md)
 
@@ -2757,7 +2757,7 @@ warmup_steps: 100      # 渐进式学习率预热
    └─ 域适应微调
 ```
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-cosmos-fine-tuning-robot-video-generation.md)
-- [mind lab lora 持续学习体系：δ-mem + mint + lora scaling law + macar](https://github.com/QianJinGuo/wiki/blob/main/entities/mind-lab-lora-continual-learning-system.md)
+- [mind lab lora 持续学习体系：δ-mem + mint + lora scaling law + macar](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mind-lab-lora-continual-learning-system.md)
 
 ---
 
@@ -2876,7 +2876,7 @@ structlog 把日志从字符串流变成了结构化事件流：
 
 ---
 ## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -2951,7 +2951,7 @@ ZPPO 的命名直接致敬教育心理学家 Vygotsky 的 Zone of Proximal Devel
 - **Proximal**: 通过反复暴露 + BCQ/NCQ 引导，模型逐步掌握
 - **Policy Optimization**: 保持 RL 的 on-policy 特性，避免 distillation 的 overfitting
 
-这一框架为 [LLM RL 算法演进](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026.md) 在 LLM training 中的应用提供了新的理论视角。
+这一框架为 [LLM RL 算法演进](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026.md) 在 LLM training 中的应用提供了新的理论视角。
 
 ### 与 GRPO 的关键区别
 
@@ -2976,10 +2976,10 @@ ZPPO 的实验结果进一步证实了一个趋势：naive knowledge distillatio
 
 ## 相关实体
 
-- [LLM RL 算法演进](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026.md) — ZPPO 的理论基础
+- [LLM RL 算法演进](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026.md) — ZPPO 的理论基础
 - RLHF/DPO/GRPO Alignment — ZPPO 对比的传统方法
-- [NVIDIA ZPPO](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-zppo-zone-proximal-policy-optimization.md) — 本实体
-- [LLM RL 算法演进](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026.md) — LLM 强化学习训练范式
+- [NVIDIA ZPPO](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-zppo-zone-proximal-policy-optimization.md) — 本实体
+- [LLM RL 算法演进](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026.md) — LLM 强化学习训练范式
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-zppo-zone-proximal-policy-optimization.md)
 
@@ -2991,7 +2991,7 @@ ZPPO 的实验结果进一步证实了一个趋势：naive knowledge distillatio
 
 ## 核心架构
 - **TransNets（Transformer 中的 Transformer）**：Intra-FFN 改造，多个头共享 FFN，每个头以不同精度（FP8/FP16/BF16）计算，打破 KV-Normality 问题 
-- **Twinlight 混合推理架构**：强推理路径 + 高效路径，由模型自主选择推理路径（[Claude Managed Agents Developer Guide](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-managed-agents-developer-guide.md) 中的混合推理思路类似但工程实现不同） 
+- **Twinlight 混合推理架构**：强推理路径 + 高效路径，由模型自主选择推理路径（[Claude Managed Agents Developer Guide](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-managed-agents-developer-guide.md) 中的混合推理思路类似但工程实现不同）
 - **25 个激活参数实现大模型性能**：MoE 稀疏激活 + 混合精度 FFN 的组合杠杆 
 
 ## RL 后训练分阶段飞轮
@@ -3034,13 +3034,13 @@ KV-Normality 问题是 Transformer 训练不稳定的重要来源之一（KL div
 5. **即时信号与延迟信号不混训练**：Agent 训练中若混合工具调用成功率和意图满足度，会导致模型偏向过程指标。解法是分离数据池：用过程数据单独训练 Grounding，用结果数据单独训练 Goal adherence，最后做轻量级联合微调。
 
 ## 交叉参考
-- [Skill Design Patterns](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-design-patterns.md) — Anthropic 14 模式中的 RL 后训练相关策略对比
+- [Skill Design Patterns](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-design-patterns.md) — Anthropic 14 模式中的 RL 后训练相关策略对比
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/baidu-wenxin-post-training-evolution.md)
 
 ## 相关实体
-- [LLM Post-Training全景指南：从RLHF到GRPO再到AgenticRL](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-post-training-full-guide.md)
-- [Llm Rl Algorithms Ppo Dpo Grpo Marl Evolution 2026](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-core-technology.md)
+- [LLM Post-Training全景指南：从RLHF到GRPO再到AgenticRL](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-post-training-full-guide.md)
+- [Llm Rl Algorithms Ppo Dpo Grpo Marl Evolution 2026](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/llm-core-technology.md)
 
 ---
 
@@ -3081,9 +3081,9 @@ KV-Normality 问题是 Transformer 训练不稳定的重要来源之一（KL div
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/reinforcing-recursive-language-models-alphaxiv.md)
 
 ## 相关实体
-- [Language Models and Meaning](https://github.com/QianJinGuo/wiki/blob/main/entities/stochastic-parrot-language-models-and-meaning.md)
-- [Cost effective deployment of vision-language models for pet behavior detection on AWS Inferentia2](https://github.com/QianJinGuo/wiki/blob/main/entities/cost-effective-deployment-of-vision-language-models-for-pet-behavior-detection-o.md)
-- [Language Models and Meaning](https://github.com/QianJinGuo/wiki/blob/main/entities/stochastic-parrot-language-models-and-meaning.md)
+- [Language Models and Meaning](https://github.com/QianJinGuo/wiki-public/blob/main/entities/stochastic-parrot-language-models-and-meaning.md)
+- [Cost effective deployment of vision-language models for pet behavior detection on AWS Inferentia2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cost-effective-deployment-of-vision-language-models-for-pet-behavior-detection-o.md)
+- [Language Models and Meaning](https://github.com/QianJinGuo/wiki-public/blob/main/entities/stochastic-parrot-language-models-and-meaning.md)
 
 ---
 
@@ -3099,11 +3099,11 @@ KV-Normality 问题是 Transformer 训练不稳定的重要来源之一（KL div
 |------|---------|------|
 
 ## 相关实体
-- [Stochastic Parrot Thought Experiment](https://github.com/QianJinGuo/wiki/blob/main/entities/stochastic-parrot-thought-experiment.md)
-- [While Breathless In Stodgy Viridian](https://github.com/QianJinGuo/wiki/blob/main/entities/while-breathless-in-stodgy-viridian.md)
-- [Aws Grpo Rlvr Sagemaker Math Reasoning](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-grpo-rlvr-sagemaker-math-reasoning.md)
-- [Ai True Moat Not Llm But Organization](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-true-moat-not-llm-but-organization.md)
-- [Nvidia Gemma 4 Edge Ai](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-gemma-4-edge-ai.md)
+- [Stochastic Parrot Thought Experiment](https://github.com/QianJinGuo/wiki-public/blob/main/entities/stochastic-parrot-thought-experiment.md)
+- [While Breathless In Stodgy Viridian](https://github.com/QianJinGuo/wiki-public/blob/main/entities/while-breathless-in-stodgy-viridian.md)
+- [Aws Grpo Rlvr Sagemaker Math Reasoning](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-grpo-rlvr-sagemaker-math-reasoning.md)
+- [Ai True Moat Not Llm But Organization](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-true-moat-not-llm-but-organization.md)
+- [Nvidia Gemma 4 Edge Ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-gemma-4-edge-ai.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/time-series-forecasting-augmentation-methods.md)
 
@@ -3173,11 +3173,11 @@ Allen Institute for AI的Nathan Lambert提出，随着AI系统复杂度增加，
 
 ## 相关实体
 
-- [elasticpp重塑elasticsearch查询性能的c内核引擎](https://github.com/QianJinGuo/wiki/blob/main/entities/elasticpp重塑elasticsearch查询性能的c内核引擎.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
+- [elasticpp重塑elasticsearch查询性能的c内核引擎](https://github.com/QianJinGuo/wiki-public/blob/main/entities/elasticpp重塑elasticsearch查询性能的c内核引擎.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/alphaevolve交出一周年炸裂成绩单ai自我改进不再科幻.md)
 
-→ [GEPA优化框架](https://github.com/QianJinGuo/wiki/blob/main/entities/gepa-optimize-anything.md) — 包含AlphaEvolve等传统LLM进化框架的对比分析
+→ [GEPA优化框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gepa-optimize-anything.md) — 包含AlphaEvolve等传统LLM进化框架的对比分析
 
 ---
 
@@ -3237,10 +3237,10 @@ Evidence 是 Heidi 微调过的最难模型，也是第一个 agentic 模型。�
 
 ## 相关实体
 
-- [LLM RL 算法综述](https://github.com/QianJinGuo/wiki/blob/main/entities/2026-llm-rl-algorithms-deeplog-imba-ppo-dpo-grpo-marl.md) — DPO 作为本文核心训练方法的算法背景
-- [Amazon Nova Lite 微调](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-nova-lite-fine-tuning-cost-effective-vision-detection-model-tuning-case-and-practice.md) — 另一个垂直领域微调的工程实践
-- [递归强化语言模型](https://github.com/QianJinGuo/wiki/blob/main/entities/reinforcing-recursive-language-models-alphaxiv.md) — 奖励模型与偏好学习的理论框架
-- [腾讯 Token 经济学](https://github.com/QianJinGuo/wiki/blob/main/entities/tencent-token-economics-ai-productivity.md) — AI 模型的成本-质量权衡分析
+- [LLM RL 算法综述](https://github.com/QianJinGuo/wiki-public/blob/main/entities/2026-llm-rl-algorithms-deeplog-imba-ppo-dpo-grpo-marl.md) — DPO 作为本文核心训练方法的算法背景
+- [Amazon Nova Lite 微调](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-nova-lite-fine-tuning-cost-effective-vision-detection-model-tuning-case-and-practice.md) — 另一个垂直领域微调的工程实践
+- [递归强化语言模型](https://github.com/QianJinGuo/wiki-public/blob/main/entities/reinforcing-recursive-language-models-alphaxiv.md) — 奖励模型与偏好学习的理论框架
+- [腾讯 Token 经济学](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tencent-token-economics-ai-productivity.md) — AI 模型的成本-质量权衡分析
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/heidi-health-clinical-ai-model-fine-tuning-frontier-parity.md)
 
@@ -3278,7 +3278,7 @@ This isn’t unexpected — productions are dynamic, facing frequent changes, sc
 
 ---
 ## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -3318,7 +3318,7 @@ I have loved and will still love Ai2. Ai2 has a deep culture of caring about the
 
 ---
 ## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -3346,14 +3346,14 @@ I have loved and will still love Ai2. Ai2 has a deep culture of caring about the
 
 ## 与既有知识的连接
 
-- 与 [LM 预训练泛化动力学](https://github.com/QianJinGuo/wiki/blob/main/entities/generalization-dynamics-lm-pretraining.md) 互补：后者关注单模态 LM 预训练损失曲线规律，本文扩展至跨模态交互机制
-- 与 [EMO MoE 预训练涌现模块化](https://github.com/QianJinGuo/wiki/blob/main/entities/emo-pretraining-mixture-of-experts-for-emergent-modularity-ai2.md) 同属预训练机制研究族，本文的模态专属 FFN 设计直接关联 MoE 路由结构
-- vision laziness 现象为 [多模态思维链推理](https://github.com/QianJinGuo/wiki/blob/main/entities/colt-eccv-2026-latent-thought-chain-multimodal-reasoning.md) 提供训练侧解释：晚期对齐的模型其"推理"可能实为语言先验复述
+- 与 [LM 预训练泛化动力学](https://github.com/QianJinGuo/wiki-public/blob/main/entities/generalization-dynamics-lm-pretraining.md) 互补：后者关注单模态 LM 预训练损失曲线规律，本文扩展至跨模态交互机制
+- 与 [EMO MoE 预训练涌现模块化](https://github.com/QianJinGuo/wiki-public/blob/main/entities/emo-pretraining-mixture-of-experts-for-emergent-modularity-ai2.md) 同属预训练机制研究族，本文的模态专属 FFN 设计直接关联 MoE 路由结构
+- vision laziness 现象为 [多模态思维链推理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/colt-eccv-2026-latent-thought-chain-multimodal-reasoning.md) 提供训练侧解释：晚期对齐的模型其"推理"可能实为语言先验复述
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/multimodal-pretraining-physics-knowledge-flow-arxiv-2608-05000.md)
 
 ## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -3728,11 +3728,11 @@ Mode-hopping 在不同数据集上的普遍性如何？例如，在 Flipped Answ
 - 作者认为具有强泛化先验的 LM 可能会以符合人类意图的"求真"方式拟合我们的监督
 
 ## 相关实体
-- [Generalization Dynamics Of Lm Pre Training Jiaxin Wen](https://github.com/QianJinGuo/wiki/blob/main/entities/generalization-dynamics-of-lm-pre-training-jiaxin-wen.md)
-- [Generalization Dynamics Pre Training Jiaxin Wen](https://github.com/QianJinGuo/wiki/blob/main/entities/generalization-dynamics-pre-training-jiaxin-wen.md)
-- [Generalization Dynamics Of Lm Pre Training Jiaxin Wen](https://github.com/QianJinGuo/wiki/blob/main/entities/generalization-dynamics-of-lm-pre-training-jiaxin-wen.md)
-- [New Ai Lock In](https://github.com/QianJinGuo/wiki/blob/main/entities/new-ai-lock-in.md)
-- [Ai Driven Layoffs Business Sense Cio](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-driven-layoffs-business-sense-cio.md)
+- [Generalization Dynamics Of Lm Pre Training Jiaxin Wen](https://github.com/QianJinGuo/wiki-public/blob/main/entities/generalization-dynamics-of-lm-pre-training-jiaxin-wen.md)
+- [Generalization Dynamics Pre Training Jiaxin Wen](https://github.com/QianJinGuo/wiki-public/blob/main/entities/generalization-dynamics-pre-training-jiaxin-wen.md)
+- [Generalization Dynamics Of Lm Pre Training Jiaxin Wen](https://github.com/QianJinGuo/wiki-public/blob/main/entities/generalization-dynamics-of-lm-pre-training-jiaxin-wen.md)
+- [New Ai Lock In](https://github.com/QianJinGuo/wiki-public/blob/main/entities/new-ai-lock-in.md)
+- [Ai Driven Layoffs Business Sense Cio](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-driven-layoffs-business-sense-cio.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/generalization-dynamics-lm-pretraining.md)
 
@@ -3752,10 +3752,10 @@ Mode-hopping 在不同数据集上的普遍性如何？例如，在 Flipped Answ
 - 意义：挑战了"LM 在预训练中逐渐从鹦鹉进化为智能体"的传统观念，揭示预训练 loss 下降和下游基准提升掩盖了剧烈的泛化振荡
 
 ## 相关实体
-- [Generalization Dynamics Of Lm Pre Training Jiaxin Wen](https://github.com/QianJinGuo/wiki/blob/main/entities/generalization-dynamics-of-lm-pre-training-jiaxin-wen.md)
-- [Generalization Dynamics Lm Pretraining](https://github.com/QianJinGuo/wiki/blob/main/entities/generalization-dynamics-lm-pretraining.md)
-- [Generalization Dynamics Of Lm Pre Training Jiaxin Wen](https://github.com/QianJinGuo/wiki/blob/main/entities/generalization-dynamics-of-lm-pre-training-jiaxin-wen.md)
-- [Yann Dubois Openai Post Training Interview](https://github.com/QianJinGuo/wiki/blob/main/entities/yann-dubois-openai-post-training-interview.md)
+- [Generalization Dynamics Of Lm Pre Training Jiaxin Wen](https://github.com/QianJinGuo/wiki-public/blob/main/entities/generalization-dynamics-of-lm-pre-training-jiaxin-wen.md)
+- [Generalization Dynamics Lm Pretraining](https://github.com/QianJinGuo/wiki-public/blob/main/entities/generalization-dynamics-lm-pretraining.md)
+- [Generalization Dynamics Of Lm Pre Training Jiaxin Wen](https://github.com/QianJinGuo/wiki-public/blob/main/entities/generalization-dynamics-of-lm-pre-training-jiaxin-wen.md)
+- [Yann Dubois Openai Post Training Interview](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yann-dubois-openai-post-training-interview.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/generalization-dynamics-pre-training-jiaxin-wen.md)
 
@@ -4117,12 +4117,12 @@ Meta-RL with Self-Reflection 的核心洞察是：当前 LLM 的 RL 训练完全
 - RLHF
 - Post-training
 - Agent 记忆系统
-- [Karpathy: Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-agentic-engineering.md)
+- [Karpathy: Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-agentic-engineering.md)
 - MOC: Evaluation Landscape
 
 ---
 ## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 - 相关: Agent 架构
 
 ---
@@ -4185,11 +4185,11 @@ Meta-RL with Self-Reflection 的核心洞察是：当前 LLM 的 RL 训练完全
 - **上下文学习 (In-context Learning)** — 智能模式的核心能力，根据上下文演示推断任务
 - **System 1 / System 2 Thinking** — 快速直觉思维与慢速分析思维的对比
 ## 相关实体
-- [Generalization Dynamics Pre Training Jiaxin Wen](https://github.com/QianJinGuo/wiki/blob/main/entities/generalization-dynamics-pre-training-jiaxin-wen.md)
-- [Generalization Dynamics Lm Pretraining](https://github.com/QianJinGuo/wiki/blob/main/entities/generalization-dynamics-lm-pretraining.md)
-- [Generalization Dynamics Of Lm Pre Training Jiaxin Wen](https://github.com/QianJinGuo/wiki/blob/main/entities/generalization-dynamics-of-lm-pre-training-jiaxin-wen.md)
-- [Yann Dubois Openai Post Training Interview](https://github.com/QianJinGuo/wiki/blob/main/entities/yann-dubois-openai-post-training-interview.md)
-- [Olmo Hybrid Gdn Wave 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/olmo-hybrid-gdn-wave-2026.md)
+- [Generalization Dynamics Pre Training Jiaxin Wen](https://github.com/QianJinGuo/wiki-public/blob/main/entities/generalization-dynamics-pre-training-jiaxin-wen.md)
+- [Generalization Dynamics Lm Pretraining](https://github.com/QianJinGuo/wiki-public/blob/main/entities/generalization-dynamics-lm-pretraining.md)
+- [Generalization Dynamics Of Lm Pre Training Jiaxin Wen](https://github.com/QianJinGuo/wiki-public/blob/main/entities/generalization-dynamics-of-lm-pre-training-jiaxin-wen.md)
+- [Yann Dubois Openai Post Training Interview](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yann-dubois-openai-post-training-interview.md)
+- [Olmo Hybrid Gdn Wave 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/olmo-hybrid-gdn-wave-2026.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/generalization-dynamics-of-lm-pre-training-jiaxin-wen.md)
 

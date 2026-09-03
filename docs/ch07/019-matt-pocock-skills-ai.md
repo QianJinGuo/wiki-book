@@ -105,7 +105,7 @@ Matt Pocock Skills 不只是零散命令，它们串成一条完整开发流：
 | Superpowers | TDD + 评审纪律 | 重视测试质量 | 对测试纪律要求高 |
 | Spec-Kit | 规格驱动开发 | 企业项目、需求评审先行 | 前期投入大，过程可控 |
 
-→ [Superpowers 6.0 SDD 评审重写](https://github.com/QianJinGuo/wiki/blob/main/entities/superpowers-6-sdd-review-redesign-file-handoff.md)
+→ [Superpowers 6.0 SDD 评审重写](https://github.com/QianJinGuo/wiki-public/blob/main/entities/superpowers-6-sdd-review-redesign-file-handoff.md)
 → [三器合一工程化实战](../ch05/076-ai-coding.html)
 
 ## 相关概念
@@ -114,7 +114,7 @@ Matt Pocock Skills 不只是零散命令，它们串成一条完整开发流：
 ## 相关实体
 - [Andrej Karpathy Claude Md 134K Stars 2026](../ch01/181-claude-md.html)
 - [Openai Codex 521 Update Appshots Goal Computer Use](../ch09/115-openai-codex.html)
-- [Graphify Software Engineering Knowledge Graph](https://github.com/QianJinGuo/wiki/blob/main/entities/graphify-software-engineering-knowledge-graph.md)
+- [Graphify Software Engineering Knowledge Graph](https://github.com/QianJinGuo/wiki-public/blob/main/entities/graphify-software-engineering-knowledge-graph.md)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/229-anthropic-claude-code.html)
 - [Stepan Gershuni Ai Native Startup Guide](../ch05/018-ai-native.html)
 - [Matt Pocock Skills vs Superpowers](../ch03/050-skills.html)

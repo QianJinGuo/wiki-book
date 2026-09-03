@@ -101,7 +101,7 @@ Prompt 提供了三种输出模式：
 
 `<constraints>` 中最后一条特别有意思：**"不在输出中体现格式或字数要求"**。这意味着模型不应该在导读末尾写"（以上为高度浓缩版，仅供参考）"或"（约 500 字）"这类元信息——这些元信息会破坏导读的"完整阅读"体验。
 
-这条约束反映了一个深层原则：导读的"伪装"是"完整阅读"。一旦在输出中暴露"这是 AI 生成的摘要"，读者会自动降级信任，进入"挑刺模式"而非"理解模式"。这与 [Qy_Zacztcs1Ql3Bifmbmgg](https://github.com/QianJinGuo/wiki/blob/main/entities/qy_zacztcs1ql3bifmbmgg.md) 中"Subagent 隔离探索过程"的思路异曲同工——表面越像完整阅读，认知负担越低。
+这条约束反映了一个深层原则：导读的"伪装"是"完整阅读"。一旦在输出中暴露"这是 AI 生成的摘要"，读者会自动降级信任，进入"挑刺模式"而非"理解模式"。这与 [Qy_Zacztcs1Ql3Bifmbmgg](https://github.com/QianJinGuo/wiki-public/blob/main/entities/qy_zacztcs1ql3bifmbmgg.md) 中"Subagent 隔离探索过程"的思路异曲同工——表面越像完整阅读，认知负担越低。
 
 ### 作者反思的诚实性
 
@@ -130,7 +130,7 @@ Prompt 提供了三种输出模式：
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/098-karpathy-vibe-coding-agentic-engineering.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - "Prompt 工程模式"
-- [Prompt Engineering Fundamentals](https://github.com/QianJinGuo/wiki/blob/main/concepts/prompt-engineering-fundamentals.md)
+- [Prompt Engineering Fundamentals](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/prompt-engineering-fundamentals.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gemini-deep-guide-prompt.md)
 

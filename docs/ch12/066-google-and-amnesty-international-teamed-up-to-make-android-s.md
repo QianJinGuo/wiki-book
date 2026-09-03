@@ -9,11 +9,11 @@
 - 针对商业间谍软件（如 NSO Group 的 Pegasus）提供持久化取证日志
 - 目前仅支持 Pixel 设备，需要 Android 16 和 Google 账户
 ## 相关实体
-- [Google Amnesty Spyware Detection](https://github.com/QianJinGuo/wiki/blob/main/entities/google-amnesty-spyware-detection.md)
+- [Google Amnesty Spyware Detection](https://github.com/QianJinGuo/wiki-public/blob/main/entities/google-amnesty-spyware-detection.md)
 - [Google And Amnesty International Teamed Up To Make Android S](066-google-and-amnesty-international-teamed-up-to-make-android-s.html)
 - [Shub Reaper Macos Stealer Attack Chain](../ch04/257-ai.html)
-- [Google And Amnesty International Teamed Up To Make It Harder](https://github.com/QianJinGuo/wiki/blob/main/entities/google-and-amnesty-international-teamed-up-to-make-it-harder.md)
-- [Google Bigquery Threat Model](https://github.com/QianJinGuo/wiki/blob/main/entities/google-bigquery-threat-model.md)
+- [Google And Amnesty International Teamed Up To Make It Harder](https://github.com/QianJinGuo/wiki-public/blob/main/entities/google-and-amnesty-international-teamed-up-to-make-it-harder.md)
+- [Google Bigquery Threat Model](https://github.com/QianJinGuo/wiki-public/blob/main/entities/google-bigquery-threat-model.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/google-and-amnesty-international-teamed-up-to-make-android-s.md)
 

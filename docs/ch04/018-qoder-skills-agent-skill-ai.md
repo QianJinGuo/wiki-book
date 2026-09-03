@@ -368,24 +368,24 @@ skills.sh 提供了配套的 skill 管理工具。多人协作时，可在 code 
 - [十年老技术开发的 AI Agent 探索之路](312-ai-agent.html)
 - [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch01/284-agent-skill.html)
 - [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](157-anthropic-google-agent-skills.html)
-- [Garry Tan](https://github.com/QianJinGuo/wiki/blob/main/entities/garry-tan-yc-ceo.md)
+- [Garry Tan](https://github.com/QianJinGuo/wiki-public/blob/main/entities/garry-tan-yc-ceo.md)
 - [Agent Workflows](../ch03/004-agent.html)
 - [Hermes Agent](161-hermes-agent.html)
-- [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)
+- [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/hermes-agent-onboarding.md)
 - [你写的 Skill，及格了吗？](../ch07/054-skill.html)
-- [Mythos for Offensive Security: XBOW's Evaluation](https://github.com/QianJinGuo/wiki/blob/main/entities/mythos_offensive_security_xbow_evaluatio.md)
-- [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
+- [Mythos for Offensive Security: XBOW's Evaluation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mythos_offensive_security_xbow_evaluatio.md)
+- [Hermes Agent Skill](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/hermes-agent-skill.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/05-11-the-great-memory-panic-of-2026.md)
 
 - [AI Agent 工程师能力地图](312-ai-agent.html)
 - [Skillx Zhejiang University](../ch07/054-skill.html)
-- [Wiki Audit Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/wiki-audit-skill.md)
-- [Gemini Deep Guide Prompt](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-deep-guide-prompt.md)
-- [Promptqueue Opengorilla Project Analysis Ljguo](https://github.com/QianJinGuo/wiki/blob/main/entities/promptqueue-opengorilla-project-analysis-ljguo.md)
-- [qoder 团队知识引擎](https://github.com/QianJinGuo/wiki/blob/main/entities/qoder-team-knowledge-engine.md)
+- [Wiki Audit Skill](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/wiki-audit-skill.md)
+- [Gemini Deep Guide Prompt](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gemini-deep-guide-prompt.md)
+- [Promptqueue Opengorilla Project Analysis Ljguo](https://github.com/QianJinGuo/wiki-public/blob/main/entities/promptqueue-opengorilla-project-analysis-ljguo.md)
+- [qoder 团队知识引擎](https://github.com/QianJinGuo/wiki-public/blob/main/entities/qoder-team-knowledge-engine.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/ai-skill-design.md)
 ## 2nd Source 原文存档
 → [Agent skill 迭代式编写实战 — 淘天物流其林 2026-06-12](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-skill-iterative-writing-taobao-logistics.md)
 

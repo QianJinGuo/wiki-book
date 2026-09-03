@@ -17,8 +17,8 @@
 
 ## 相关实体
 - [Cat Wu Claude Code Pm](../ch03/057-claude-code.html)
-- [Anthropic Founders Playbook Huashu 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-founders-playbook-huashu-2026.md)
-- [Cat Wu Anthropic Pm Interview](https://github.com/QianJinGuo/wiki/blob/main/entities/cat-wu-anthropic-pm-interview.md)
+- [Anthropic Founders Playbook Huashu 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-founders-playbook-huashu-2026.md)
+- [Cat Wu Anthropic Pm Interview](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cat-wu-anthropic-pm-interview.md)
 - [Introducing Claude Platform On Aws Anthropics Native Platfor](340-claude.html)
 - [Anthropic Claude Managed Agents Platform Launch](158-anthropic-claude-managed-agents.html)
 

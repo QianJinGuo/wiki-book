@@ -31,10 +31,10 @@ TamperedChef 绝非普通的广告软件（adware）活动，其背后是三个�
 - **建立供应链来源审查机制**：对下载量极高的"免费工具"（PDF编辑器、压缩工具、日历应用）建立可信来源清单，优先在企业浏览器（如 Prisma Browser）中运行，并持续监控其代码签名实体的公司注册信息变化 
 
 ## 相关实体
-- [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
-- [Nginx Rift Achieving Nginx Rce Via An 18 Year Old Vulnerability](https://github.com/QianJinGuo/wiki/blob/main/entities/nginx-rift-achieving-nginx-rce-via-an-18-year-old-vulnerability.md)
+- [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki-public/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
+- [Nginx Rift Achieving Nginx Rce Via An 18 Year Old Vulnerability](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nginx-rift-achieving-nginx-rce-via-an-18-year-old-vulnerability.md)
 - [Github Investigating Teampcp Claimed 17Cc77](474-github.html)
-- [Exiftool Compromise Mac 592994](https://github.com/QianJinGuo/wiki/blob/main/entities/exiftool-compromise-mac-592994.md)
+- [Exiftool Compromise Mac 592994](https://github.com/QianJinGuo/wiki-public/blob/main/entities/exiftool-compromise-mac-592994.md)
 - [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](571-skill-issues-compromising-claude-code-with-malicious-skills.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tracking-tampered-chef-clusters-aef374.md)

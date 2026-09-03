@@ -6,12 +6,12 @@
 
 ## 相关实体
 
-- [stealing passwords via html injection under a strict csp](https://github.com/QianJinGuo/wiki/blob/main/entities/afine-csp-html-injection-password-exfiltration.md)
+- [stealing passwords via html injection under a strict csp](https://github.com/QianJinGuo/wiki-public/blob/main/entities/afine-csp-html-injection-password-exfiltration.md)
 - [reducing container cold start times using soci index on dlam](711-reducing-container-cold-start-times-using-soci-index-on-dlam.html)
 - [大模型可控新突破：steering 机制、评估体系与开源落地](657-steering.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-to-automate-ai-model-documentation-with-the-nvidia-mcg-t-806efb.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/data-infrastructure.md)
 ## 深度分析
 
 How to Automate AI Model Documentation with the NVIDIA MCG Toolkit 涉及architecture领域的核心技术议题。

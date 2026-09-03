@@ -235,16 +235,16 @@ AHE 是通用的 Harness 工程方法论；本文是 Claude Code 的具体场景
 - [QQ音乐 Harness Engineering 实践原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qq-music-harness-engineering-monorepo-microservices.md)
 
 ## 相关实体
-- [Claude Code Best Practices Prompt Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-best-practices-prompt-engineering.md)
+- [Claude Code Best Practices Prompt Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/claude-code-best-practices-prompt-engineering.md)
 
 - [Feishu Aily Agent Lobster](../ch04/364-aily-agent.html)
-- [Colaos Listenhub Agency Native Organization Juzi](https://github.com/QianJinGuo/wiki/blob/main/entities/colaos-listenhub-agency-native-organization-juzi.md)
+- [Colaos Listenhub Agency Native Organization Juzi](https://github.com/QianJinGuo/wiki-public/blob/main/entities/colaos-listenhub-agency-native-organization-juzi.md)
 - [Red Sequoia Ai Summit Agi Declaration](../ch01/167-agi.html)
-- [Hermes Self Improving Overview Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-self-improving-overview-winty.md)
-- [Cursor.Com Composer 2 5](https://github.com/QianJinGuo/wiki/blob/main/entities/cursor.com-composer-2-5.md)
+- [Hermes Self Improving Overview Winty](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-self-improving-overview-winty.md)
+- [Cursor.Com Composer 2 5](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cursor.com-composer-2-5.md)
 - [100 年压缩到 100 天红杉资本这就是 Agi](../ch01/167-agi.html)
 - [Stripe Agent Economic Infrastructure Emily Sands](../ch03/004-agent.html)
-- [Pilotdeck Data派Thu 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/pilotdeck-data派thu-2026.md)
+- [Pilotdeck Data派Thu 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/pilotdeck-data派thu-2026.md)
 - [Four Sub Agent Patterns](../ch03/004-agent.html)
 - [A Guide To Which Ai To Use In The Agentic Era](../ch01/441-a-guide-to-which-ai-to-use-in-the-agentic-era.html)
 - [Ai Xiaolaoliu Business Agent Augmentation Layer General Base 20260606](../ch03/004-agent.html)
@@ -257,7 +257,7 @@ AHE 是通用的 Harness 工程方法论；本文是 Claude Code 的具体场景
 - [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](../ch01/113-hy3-preview.html)
 - [Headroom Context Compression Agent Vibecoder](../ch03/004-agent.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/004-agent.html)
-- [Kimi Work Beta Foundation Model Company Advantage](https://github.com/QianJinGuo/wiki/blob/main/entities/kimi-work-beta-foundation-model-company-advantage.md)
+- [Kimi Work Beta Foundation Model Company Advantage](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kimi-work-beta-foundation-model-company-advantage.md)
 - [Agent Paradigm Evolution Feipeng Alibaba](../ch03/004-agent.html)
 - [Hermes Agent Long Running Governance Five Cards Ruofei](../ch04/161-hermes-agent.html)
 - [Agentic Rl Token In Token Out Done Right C6Aaa4](../ch04/439-agentic-rl-token-in-token-out-done-right.html)
@@ -278,7 +278,7 @@ AHE 是通用的 Harness 工程方法论；本文是 Claude Code 的具体场景
 - [Hermes Agent Tool System Analysis](../ch04/161-hermes-agent.html)
 - [How To Build Agents Where Data Already Lives](../ch04/346-how-to-build-agents-where-data-already-lives.html)
 - [Rocketmq 5 5 0 Litetopics Ai Agent Messaging](../ch04/312-ai-agent.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/claude-code-complete-guide.md)
 
 ---
 

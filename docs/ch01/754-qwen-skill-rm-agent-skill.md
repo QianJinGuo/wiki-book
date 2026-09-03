@@ -81,7 +81,7 @@ Skill-RM 的核心优势是「默认协议下就能涨分」，不需要为每�
 
 ### 与现有 wiki概念的呼应
 
-- **[Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)**：Skill-RM 把 Skill范式从 Agent 执行层延伸到 RM评估层——同一套「说明书 +工具箱」抽象在两个不同域落地
+- **[Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)**：Skill-RM 把 Skill范式从 Agent 执行层延伸到 RM评估层——同一套「说明书 +工具箱」抽象在两个不同域落地
 - **[Skill 系统设计](../ch07/054-skill.html)**：Reward-Evaluation Skill 是 SKILL.md范式在 reward域的扩展，证明 Skill抽象可复用、可编排、可审计
 - **[Token-in-Token-out Agentic RL](../ch04/439-agentic-rl-token-in-token-out-done-right.html)**：Skill-RM 是 agentic RL闭环中「奖励信号可审计化」的关键拼图——flat prompt 的奖励信号难复现，Skill化的评估轨迹可复查
 - **[AWS RL LLM-as-Judge](451-llm.html)**：AWS 的同方向探索，但 Skill-RM给出更系统的资源分层 +编排协议

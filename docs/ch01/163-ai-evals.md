@@ -163,7 +163,7 @@ Agent 评估需要额外的维度： ^["Evals到底在评什么？一文拆解AI
 
 ---
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/evaluation-and-benchmarks.md)
 ## 第 2 来源 — 腾讯 TEG 网关测试团队「AI Agent & Skill 测评方案及落地实践」(2026-06-16)
 
 > Source: [第2原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-teg-agent-skill-evaluation-tperf-martinskxu-2026-06-16.md)

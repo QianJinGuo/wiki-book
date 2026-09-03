@@ -31,7 +31,7 @@ ChatGPT 的'失忆症'终于被治好了！Dreaming V3 让大模型拥有长期�
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/memory-context-systems.md)
 
 ---
 

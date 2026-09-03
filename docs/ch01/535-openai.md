@@ -9,7 +9,7 @@ OpenAI今天在API中推出三款全新音频模型，面向开发者开放。
 ** GPT-Realtime-Translate  ** ：实时翻译模型，支持70多种输入语言翻译成13种输出语言，翻译速度与说话者同步。
 
 ## 相关实体
-- [Prompt Debugger Compare Templates Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/prompt-debugger-compare-templates-winty.md)
+- [Prompt Debugger Compare Templates Winty](https://github.com/QianJinGuo/wiki-public/blob/main/entities/prompt-debugger-compare-templates-winty.md)
 - [Aliyun Agentrun 2Line Integration](../ch04/290-agentrun.html)
 - [Pi Mono Github](474-github.html)
 - [2 Year 25 Ai Projects Summary](692-5-ai.html)

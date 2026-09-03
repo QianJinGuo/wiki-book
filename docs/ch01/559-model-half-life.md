@@ -46,8 +46,8 @@
 
 ## 相关实体
 
-- [开源模型的寿命之争](https://github.com/QianJinGuo/wiki/blob/main/entities/6-months-to-live-for-open-models.md)
-- [Open Weight 模型的廉价化](https://github.com/QianJinGuo/wiki/blob/main/entities/25-the-unbearable-cheapness-of-open-weight-models.md)
+- [开源模型的寿命之争](https://github.com/QianJinGuo/wiki-public/blob/main/entities/6-months-to-live-for-open-models.md)
+- [Open Weight 模型的廉价化](https://github.com/QianJinGuo/wiki-public/blob/main/entities/25-the-unbearable-cheapness-of-open-weight-models.md)
 - [AI Evals 评估方法论](163-ai-evals.html)
 - LLM 评估基准全景
 - [Rag技术框架的演进方向](168-rag.html)

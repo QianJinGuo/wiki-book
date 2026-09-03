@@ -7,10 +7,10 @@
 ## 相关实体
 
 - [xz, two years on: what scanners still cannot catch](461-xz.html)
-- [autoresearch 迁移到软件开发：多 agent 交叉审核的工程实践](https://github.com/QianJinGuo/wiki/blob/main/entities/autoresearch-software-development.md)
-- [扣子 3.0 正式发布：@ 一下全员开工](https://github.com/QianJinGuo/wiki/blob/main/entities/coze-3-release-official-quantum-bit.md)
-- [知识库问答 @文档：从 dom 方案到 prosemirror 落地](https://github.com/QianJinGuo/wiki/blob/main/entities/prosemirror-knowledge-base-mention-vivo.md)
-- [valkey 为什么这么快？盘点 valkey 中提升性能的黑科技](https://github.com/QianJinGuo/wiki/blob/main/entities/valkey-why-valkey-performance.md)
+- [autoresearch 迁移到软件开发：多 agent 交叉审核的工程实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/autoresearch-software-development.md)
+- [扣子 3.0 正式发布：@ 一下全员开工](https://github.com/QianJinGuo/wiki-public/blob/main/entities/coze-3-release-official-quantum-bit.md)
+- [知识库问答 @文档：从 dom 方案到 prosemirror 落地](https://github.com/QianJinGuo/wiki-public/blob/main/entities/prosemirror-knowledge-base-mention-vivo.md)
+- [valkey 为什么这么快？盘点 valkey 中提升性能的黑科技](https://github.com/QianJinGuo/wiki-public/blob/main/entities/valkey-why-valkey-performance.md)
 - [zapocalypse: the attack chain that could have hijacked zapie](../ch11/193-zapocalypse-the-attack-chain-that-could-have-hijacked-zapie.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/构建无服务器kiro调度平台用kiro-cli-eventbridge-ecs-fargate实现定时ai任务.md)
 

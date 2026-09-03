@@ -131,12 +131,12 @@ Old 范式下，工程师是 supervisor——监控 AI 运行，随时准备干�
 - [Anthropic Claude Code 大型代码库最佳实践](../ch01/229-anthropic-claude-code.html) — Claude Code 在大规模代码库中的实践
 - [Claude Code Session 管理 1M Context](../ch03/057-claude-code.html) — 长上下文会话管理
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/openai-developer-ecosystem.md)
 ## 相关概念
 
-- [Multi-Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-systems.md) — 多 Agent 协作框架
-- [Production Agent Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/production-agent-engineering.md) — 生产级 Agent 工程实践
-- [Inference Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md) — 推理效率优化（cache hit rate 相关）
+- [Multi-Agent Systems](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/multi-agent-systems.md) — 多 Agent 协作框架
+- [Production Agent Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/production-agent-engineering.md) — 生产级 Agent 工程实践
+- [Inference Optimization](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/inference-optimization.md) — 推理效率优化（cache hit rate 相关）
 
 ## 原始存档
 

@@ -102,9 +102,9 @@ AI Infra 工程纪律正在变成可执行的 skill artifact——推理框架�
 - [Openclaw Agent Loop Design Patterns](../ch04/384-agent-loop.html)
 - [Claude Code Vs Codex Context Architecture 02](../ch03/057-claude-code.html)
 
-- [Claude Code Hiring Engineers](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-hiring-engineers.md)- [tliveomni vllm 适配与量化方案](../ch01/451-llm.html)
+- [Claude Code Hiring Engineers](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/claude-code-hiring-engineers.md)- [tliveomni vllm 适配与量化方案](../ch01/451-llm.html)
 - [claude code 从 demo 到产线 · 企业 harness 工程化的 8 道关卡（黄佳/咖哥 csdn）](../ch03/057-claude-code.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/workflow-orchestration.md)
 
 ---
 

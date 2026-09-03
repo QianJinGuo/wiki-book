@@ -9,7 +9,7 @@
 - [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](../ch01/316-openai.html)
 - [要实现一个工作流选择-agent-skills-还是-ai-表格](302-agent-skills.html)
 - [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](../ch03/004-agent.html)
-- [Mythos for Offensive Security: XBOW's Evaluation](https://github.com/QianJinGuo/wiki/blob/main/entities/mythos_offensive_security_xbow_evaluatio.md)
+- [Mythos for Offensive Security: XBOW's Evaluation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mythos_offensive_security_xbow_evaluatio.md)
 - [Anthropic Claude Managed Agents 平台正式发布](../ch01/158-anthropic-claude-managed-agents.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/004-agent.html)
 - [Anthropic Computer Use 最佳实践](../ch01/601-anthropic-computer-use.html)
@@ -22,7 +22,7 @@
 - [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](../ch03/004-agent.html)
 - [CDP Bridge MCP：真实浏览器直连 MCP 工具](../ch03/004-agent.html)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/claude-code-complete-guide.md)
 ## 深度分析
 Google ADK 提出的 5 种 Skill 设计模式——Tool Wrapper、Generator、Reviewer、Inversion、Pipeline——并非简单的分类标签，而是一套经过实践验证的工作流结构化方案。这套模式的演进轨迹清晰地呈现出 Agent 工程的一个核心趋势：从"如何让模型理解指令"转向"如何让模型按正确顺序执行任务"。
 **设计模式本质上是 5 类失败模式的解决方案。** 每一模式都对应 Agent 在实际场景中的典型失败：

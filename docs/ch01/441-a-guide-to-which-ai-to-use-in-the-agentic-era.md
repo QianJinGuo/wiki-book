@@ -75,7 +75,7 @@ OpenClaw 代表了 AI Agent 的一个极端方向——24/7 个人助手，具�
 - NotebookLM
 - Agent Harness
 - [Karpathy: Agentic Engineering](../ch04/098-karpathy-vibe-coding-agentic-engineering.html)
-- [MOC: Prompt Engineering](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
+- [MOC: Prompt Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/moc/prompt-engineering-guide.md)
 
 ---
 

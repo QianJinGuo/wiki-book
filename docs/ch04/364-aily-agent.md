@@ -27,7 +27,7 @@ aily 的 AI编辑部引入了 6 种角色（总编虾、记者虾、编辑虾、
 
 **3. Skills 配置是人设工程的落地实践**
 
-总编虾的 Skills 配置示例展示了如何将角色人设转化为机器可执行的指令集：核心职责描述 + 硬性规则 + 结束条件 。这与 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 中"约束即能力"的理念高度一致——越明确的边界定义，越能减少 Agent 的越权行为。对于企业级部署而言，Skills 配置的版本管理和灰度发布是生产级别的挑战，目前飞书尚未公开这一部分的能力。
+总编虾的 Skills 配置示例展示了如何将角色人设转化为机器可执行的指令集：核心职责描述 + 硬性规则 + 结束条件 。这与 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 中"约束即能力"的理念高度一致——越明确的边界定义，越能减少 Agent 的越权行为。对于企业级部署而言，Skills 配置的版本管理和灰度发布是生产级别的挑战，目前飞书尚未公开这一部分的能力。
 
 **4. 企业级优势的安全设计：操作权限与用户本人一致**
 
@@ -56,7 +56,7 @@ aily 的 AI编辑部引入了 6 种角色（总编虾、记者虾、编辑虾、
 - [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](161-hermes-agent.html)
 - [Ath Agent Trust Handshake Protocol](../ch03/004-agent.html)
 - [Hermes Self Evolution Closed Loop Skill Reuse Winty](../ch07/054-skill.html)
-- [Four Browser Automation Tools Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/four-browser-automation-tools-comparison.md)
+- [Four Browser Automation Tools Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/four-browser-automation-tools-comparison.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/feishu-aily-agent-lobster.md)
 

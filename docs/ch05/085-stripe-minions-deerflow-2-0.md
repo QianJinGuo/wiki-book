@@ -92,7 +92,7 @@ Anthropic 研究了大量 AI 在长任务中的失败案例，发现 3 个反复
 
 本文的核心贡献是**3 个具体行业案例**（Stripe/DeerFlow/支小助）的对照分析 + "墙比模型" 统一论断 + 3 阶段 AI 工程进化史。已有 entities 覆盖的角度：
 
-- [Harness Engineering 概念框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 抽象框架（Compaction vs Reset, Generator + Evaluator 分离）
+- [Harness Engineering 概念框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — 抽象框架（Compaction vs Reset, Generator + Evaluator 分离）
 - [Agent Harness Engineering: A Survey](057-harness-engineering.html) — 学术 7 层 ETCLOVG 分类法
 - [AHE：Agentic Harness Engineering](057-harness-engineering.html) — 复旦/北大自动优化 Harness
 - [长周期 Agent：Ralph Loop → 可接管 Harness](008-harness.html) — Ralph Loop 漂移治理 + 5 张卡框架
@@ -105,7 +105,7 @@ Anthropic 研究了大量 AI 在长任务中的失败案例，发现 3 个反复
 
 ### 1. 三家案例揭示的"墙"本质上是风险管理
 
-Stripe、字节、蚂蚁三家做法各异，但核心机制都指向同一个底层逻辑：**把 AI 的不确定性边界做死**。Stripe 的重试上限、DeerFlow 的独立隔离空间、支小助的分工评审，都是在给 AI 的失控风险设置物理边界。这与传统的 [Generator + Evaluator 分离](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 原则一脉相承——让一个模块负责生产，另一个模块负责判断，而不是让同一个 AI 既生产又自评。
+Stripe、字节、蚂蚁三家做法各异，但核心机制都指向同一个底层逻辑：**把 AI 的不确定性边界做死**。Stripe 的重试上限、DeerFlow 的独立隔离空间、支小助的分工评审，都是在给 AI 的失控风险设置物理边界。这与传统的 [Generator + Evaluator 分离](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 原则一脉相承——让一个模块负责生产，另一个模块负责判断，而不是让同一个 AI 既生产又自评。
 
 ### 2. Anthropic 失败模式的三层结构性根源
 
@@ -121,7 +121,7 @@ Anthropic 揭示的三个失败模式——假完成、跳步骤、一口气做�
 
 ### 5. 支小助分工结构的镜像：人类组织 -> AI 系统
 
-支小助的规划/执行/表达/评审分工，本质上是把金融行业的人类分析师团队结构镜像到了 AI 系统上。金融分析的信息密度和判断多样性，使得单一 AI 根本无法承载完整任务，这与 [多智能体编排模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md) 中的角色分离原则完全一致。不同的是，支小助把这个分工结构做成了完整的闭环评审机制，每个角色的输出都要经过下一级的验证，而不是线性传递。
+支小助的规划/执行/表达/评审分工，本质上是把金融行业的人类分析师团队结构镜像到了 AI 系统上。金融分析的信息密度和判断多样性，使得单一 AI 根本无法承载完整任务，这与 [多智能体编排模式](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-orchestration-patterns.md) 中的角色分离原则完全一致。不同的是，支小助把这个分工结构做成了完整的闭环评审机制，每个角色的输出都要经过下一级的验证，而不是线性传递。
 
 ## 实践启示
 

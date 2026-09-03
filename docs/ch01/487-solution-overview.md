@@ -59,7 +59,7 @@ The following screenshot illustrates the blueprint prompt for one of the documen
 The next section describes the four documents tried as a part of this project and extraction achieved using custom blueprints based on needs. Output is available in JSON, CSV, and raw data formats, highlighting the solution’s adaptability to diverse integration
 
 ## 相关实体
-- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](https://github.com/QianJinGuo/wiki/blob/main/entities/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md)
+- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](https://github.com/QianJinGuo/wiki-public/blob/main/entities/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md)
 - [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch04/257-ai.html)
 - [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](../ch11/135-amazon-bedrock.html)
 - [Comprehensive Observability For Amazon Sagemaker Ai Llm Infe](451-llm.html)

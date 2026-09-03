@@ -57,10 +57,10 @@ Avatar 功能本质上复现了 Deepfake 的核心能力，而 Deepfake 监管�
 2. **视频生成中的版权与肖像权**：Omni 的 Avatar 功能使用用户自己的声音和形象，但合成的视频内容可能涉及第三方版权（如模仿名人形象）。Avatar 政策的执行边界值得持续关注
 ---
 ## 相关实体
-- [Gemini Embedding 2 Multimodal Unified Vector Hyman](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-embedding-2-multimodal-unified-vector-hyman.md)
+- [Gemini Embedding 2 Multimodal Unified Vector Hyman](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gemini-embedding-2-multimodal-unified-vector-hyman.md)
 - [Google Io 2026 Agentic Gemini Era](../ch03/004-agent.html)
 - [Gemini 3 5 Frontier Intelligence](372-gemini-3-5-frontier-intelligence-with-action.html)
-- [Promptqueue Async Task Queue Opengorilla Integration](https://github.com/QianJinGuo/wiki/blob/main/entities/promptqueue-async-task-queue-opengorilla-integration.md)
+- [Promptqueue Async Task Queue Opengorilla Integration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/promptqueue-async-task-queue-opengorilla-integration.md)
 - [Agi Road May Be Wrong From The Start Wang Peng Tencent](167-agi.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/introducing-gemini-omni.md)

@@ -13,7 +13,7 @@
 - [what i’ve been building: atom report, post-training course,](../ch04/257-ai.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gaode-uplift-model-iteration-agent-long-running-harness.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/data-infrastructure.md)
 ## 深度分析
 
 Gaode Uplift Model Iteration Agent Long Running Harness 涉及agent领域的核心技术议题。

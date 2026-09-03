@@ -99,11 +99,11 @@ Kiro CLI 的非交互模式意味着结果完全由输出内容决定。建议�
 → （架构图待生成: C4 架构图）
 
 ## 相关实体
-- [基于 Amazon Ecs Fargate 自建 Keycloak 作为 Aws Iam Identity Center](https://github.com/QianJinGuo/wiki/blob/main/entities/基于-amazon-ecs-fargate-自建-keycloak-作为-aws-iam-identity-center.md)
+- [基于 Amazon Ecs Fargate 自建 Keycloak 作为 Aws Iam Identity Center](https://github.com/QianJinGuo/wiki-public/blob/main/entities/基于-amazon-ecs-fargate-自建-keycloak-作为-aws-iam-identity-center.md)
 - [Using Kiro Cli Agent Client Protocol Build Ai Chat](../ch03/004-agent.html)
-- [From Manual To Smart Use Kiro Cli Opensearch Mcp To Make Everyone An Opensearch Expert](https://github.com/QianJinGuo/wiki/blob/main/entities/from-manual-to-smart-use-kiro-cli-opensearch-mcp-to-make-everyone-an-opensearch-expert.md)
+- [From Manual To Smart Use Kiro Cli Opensearch Mcp To Make Everyone An Opensearch Expert](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-manual-to-smart-use-kiro-cli-opensearch-mcp-to-make-everyone-an-opensearch-expert.md)
 - [Ai Network Claude Code Kiro Cli Implement Aws Ipsec Vpn](../ch03/057-claude-code.html)
-- [Kiro Cli Fluentbit Logging Solution Eks S3 Parquet Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/kiro-cli-fluentbit-logging-solution-eks-s3-parquet-comparison.md)
+- [Kiro Cli Fluentbit Logging Solution Eks S3 Parquet Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kiro-cli-fluentbit-logging-solution-eks-s3-parquet-comparison.md)
 
 ## 相关引用
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/构建无服务器kiro调度平台用kiro-cli-eventbridge-ecs-fargate实现定时ai任务.md)

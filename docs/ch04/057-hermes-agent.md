@@ -153,7 +153,7 @@ Honcho 这类外部 provider 引入深层用户建模，但带来了额外的治
 
 ## 相关实体
 - [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](176-openclaw.html)
-- [MemOS Hermes 记忆插件](https://github.com/QianJinGuo/wiki/blob/main/entities/memos-hermes-plugin.md)
+- [MemOS Hermes 记忆插件](https://github.com/QianJinGuo/wiki-public/blob/main/entities/memos-hermes-plugin.md)
 - [深度拆解 Hermes Agent 记忆系统](161-hermes-agent.html)
 - [17种Agent架构演进：控制流设计的完整演化史](441-17-agent.html)
 - [AIAIGC峰会嘉宾阵容](362-aiaigc.html)
@@ -166,12 +166,12 @@ Honcho 这类外部 provider 引入深层用户建模，但带来了额外的治
 - [hermes-agent-self-evolving-source-analysis](161-hermes-agent.html)
 - [从多智能体编排到AI自主决策：资损防控体系的架构演进](257-ai.html)
 - [Agent 原理、架构与工程实践](../ch03/004-agent.html)
-- [Agent 与后端统一架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-backend-unification.md)
-- [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md)
+- [Agent 与后端统一架构](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-backend-unification.md)
+- [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/karpathy-llm-wiki-v2.md)
 - [Hermes Agent 三级 Memory 架构解析（One掌柜视角）](161-hermes-agent.html)
 
 - [AI Agent 记忆系统架构](131-how-ai-agent-memory-works.html)
-- [Agent Memory System Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-system-design.md)
+- [Agent Memory System Design](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-system-design.md)
 - [AI Agent 工程师能力地图](312-ai-agent.html)
 
 ---

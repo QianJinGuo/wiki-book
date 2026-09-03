@@ -74,8 +74,8 @@
 - [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](../ch03/057-claude-code.html)
 - [Claude Code 设计原则与对照分析](../ch03/057-claude-code.html)
 - [Claude Code Integration Other Tools](../ch03/057-claude-code.html)
-- [Local Vs Cloud Agent Deployment Strategy](https://github.com/QianJinGuo/wiki/blob/main/concepts/local-vs-cloud-agent-deployment-strategy.md)
-- [Openclaw Architecture](https://github.com/QianJinGuo/wiki/blob/main/moc/openclaw-architecture.md)
+- [Local Vs Cloud Agent Deployment Strategy](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/local-vs-cloud-agent-deployment-strategy.md)
+- [Openclaw Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/moc/openclaw-architecture.md)
 - [claude dispatch + 接口力量：ai 从 chatbot 到 agent interface 的转变](340-claude.html)
 
 ---

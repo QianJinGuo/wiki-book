@@ -20,7 +20,7 @@ Agent 在模糊需求前反复揣摩、多轮尝试、走了一半发现方向�
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-engineering-ai-as-algorithm.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/ai-skill-design.md)
 ## 深度分析
 
 **1. 概率模型与确定性执行的根本矛盾**

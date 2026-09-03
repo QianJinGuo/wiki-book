@@ -30,7 +30,7 @@ DeepSeek 研究员陈德里（Deli Chen）和 AI 合作的第二篇论文，聚�
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/vision-multimodal.md)
 
 ---
 

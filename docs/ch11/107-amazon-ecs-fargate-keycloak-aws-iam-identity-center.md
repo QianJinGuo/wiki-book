@@ -62,7 +62,7 @@ ALB 安全组在网络层做来源 IP 控制，Keycloak 自定义 IP Check SPI �
 - **开源工具链的长期维护成本**：Keycloak 版本需要定期升级（本文用 26.2.4），自建镜像意味着安全补丁和功能更新的责任在团队内部。如果团队缺乏 Keycloak 运维经验，迁移至 AWS 托管的 IAM Identity Center 内置目录可能是更低门槛的替代方案——代价是无法自定义 IP 白名单等高级策略。
 
 ## 相关实体
-- [Kiro Job Scheduler Eventbridge Ecs Fargate](https://github.com/QianJinGuo/wiki/blob/main/entities/kiro-job-scheduler-eventbridge-ecs-fargate.md)
+- [Kiro Job Scheduler Eventbridge Ecs Fargate](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kiro-job-scheduler-eventbridge-ecs-fargate.md)
 - [How Amazon Finance Streamlines Regulatory Inquiries By Using](008-how-amazon-finance-streamlines-regulatory-inquiries-by-using.html)
 - [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/383-amazon-bedrock-agentcore.html)
 - [Introducing Claude Platform On Aws](../ch01/365-introducing-claude-platform-on-aws-anthropic-s-native-platf.html)

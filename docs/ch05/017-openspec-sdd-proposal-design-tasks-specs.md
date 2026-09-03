@@ -23,7 +23,7 @@
 
 ## 相关实体
 - [Openspec 四步法深度复盘 流程完整不等于代码正确](046-openspec.html)
-- [Spec Kit Bmad Sdd Practice Yexiaocha](https://github.com/QianJinGuo/wiki/blob/main/entities/spec-kit-bmad-sdd-practice-yexiaocha.md)
+- [Spec Kit Bmad Sdd Practice Yexiaocha](https://github.com/QianJinGuo/wiki-public/blob/main/entities/spec-kit-bmad-sdd-practice-yexiaocha.md)
 - [民生银行基于规格驱动开发Sdd的 Codeagent 私域研发探索与实践](../ch03/004-agent.html)
 - [24H Worker Agent](../ch03/004-agent.html)
 - [十年老技术开发的 Ai Agent 探索之路 V2](../ch04/312-ai-agent.html)

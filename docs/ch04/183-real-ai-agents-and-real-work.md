@@ -74,7 +74,7 @@ METR 的任务长度测试覆盖了 GPT-3 到 GPT-5 全系列，是少数跨模�
 
 ### 判断与执行的分离：Agentic AI 重构认知工作价值链
 
-Mollick 的 agentic AI 图景揭示了一个根本性转变：AI 接管执行性任务，人类保留判断性任务。这不只是效率提升，而是认知工作价值链的倒置——当执行可以批量自动化，"判断什么值得做"成为最稀缺的能力。Mollick 的"17 份 PowerPoint"警示并非技术失败，而是价值判断缺失的失败：Agent 可以无限生成，但生成什么必须由人类决定。这种分离为 harness engineering 等 [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 提供了核心前提：人类的判断力成为整个系统的瓶颈和杠杆。
+Mollick 的 agentic AI 图景揭示了一个根本性转变：AI 接管执行性任务，人类保留判断性任务。这不只是效率提升，而是认知工作价值链的倒置——当执行可以批量自动化，"判断什么值得做"成为最稀缺的能力。Mollick 的"17 份 PowerPoint"警示并非技术失败，而是价值判断缺失的失败：Agent 可以无限生成，但生成什么必须由人类决定。这种分离为 harness engineering 等 [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 提供了核心前提：人类的判断力成为整个系统的瓶颈和杠杆。
 
 ## 实践启示
 
@@ -94,7 +94,7 @@ Mollick 的 agentic AI 图景揭示了一个根本性转变：AI 接管执行性
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html)
 - [The Shape Of Ai Jaggedness Bottlenecks And Salients](../ch01/334-the-shape-of-ai-jaggedness-bottlenecks-and-salients.html)
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

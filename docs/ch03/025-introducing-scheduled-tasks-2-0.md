@@ -78,11 +78,11 @@ Project 在此版本中成为定时任务的「**上下文容器**」——定�
 - [Skill Development Guide Aliyun 2026](../ch07/054-skill.html)
 - [Openclaw Multi Agent Team Practice](../ch04/027-openclaw-multi-agent-team-practice-v2.html)
 - [Strands Agents Cloud Cost Optimizer](004-agent.html)
-- [别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](https://github.com/QianJinGuo/wiki/blob/main/entities/别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个.md)
+- [别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](https://github.com/QianJinGuo/wiki-public/blob/main/entities/别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/manus.im-manus-schedules.md)
 - [10x is a lot](020-10x-is-a-lot.html)
-- [还在手写 os.getenv？pydantic-settings 让你配置管理效率翻倍](https://github.com/QianJinGuo/wiki/blob/main/entities/还在手写-osgetenvpydantic-settings-让你配置管理效率翻倍.md)
+- [还在手写 os.getenv？pydantic-settings 让你配置管理效率翻倍](https://github.com/QianJinGuo/wiki-public/blob/main/entities/还在手写-osgetenvpydantic-settings-让你配置管理效率翻倍.md)
 
 ---
 

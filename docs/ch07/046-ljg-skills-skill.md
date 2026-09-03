@@ -30,7 +30,7 @@ ljg 的表达写作 Skill 体系隐含着一条"从消极到积极"的递进路�
 
 **第二层：聚焦观点（ljg-writes）**。当表达已无障碍后，下一个挑战是"不跑题"。ljg-writes 强调对准一个观点下刀，这要求作者在动笔前就对核心论题有清晰界定。在 AI 辅助写作日益普及的今天，这一 Skill 的价值尤为突出——因为 LLM 天然倾向于生成面面俱到但浅尝辄止的内容，而 ljg-writes 的"聚焦"原则恰恰是反 LLM 本能的，它要求人类作者保留对信息密度的判断权。
 
-**第三层：建立框架（ljg-invest）**。最高层次不是"写得好"，而是"看得深"。ljg-invest 用"秩序创造机器"的隐喻，鼓励作者将复杂项目视为需要被解构的系统。这一视角与 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 中的"系统思维"不谋而合——在理解一个复杂系统之前，需要先找到其内在的秩序和结构。
+**第三层：建立框架（ljg-invest）**。最高层次不是"写得好"，而是"看得深"。ljg-invest 用"秩序创造机器"的隐喻，鼓励作者将复杂项目视为需要被解构的系统。这一视角与 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 中的"系统思维"不谋而合——在理解一个复杂系统之前，需要先找到其内在的秩序和结构。
 
 ### 从 Skill 设计看 ljg 的方法论哲学
 

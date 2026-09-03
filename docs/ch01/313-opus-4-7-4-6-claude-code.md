@@ -9,7 +9,7 @@
 - [claude opus 4.8 系统卡片深度分析](340-claude.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践-v2.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/claude-code-complete-guide.md)
 ## 摘要
 
 Anthropic 于 2026-04-16 发布 Opus 4.7，定价保持 $5/$25 per million tokens 不变，定位为公开可用的最强通用模型。本文汇总 Opus 4.7 相对 4.6 的核心能力升级（自我验证、视觉、指令遵循、长程记忆、金融/法律知识工作），Claude Code 配套新功能（xhigh effort、auto mode、`/ultrareview`、`/fewer-permission-prompts`、`/focus`、Recaps），以及 Anthropic 官方推荐的 Claude Code 最佳实践。
@@ -122,7 +122,7 @@ Auto mode 通过**模型驱动的分类器**判定命令是否安全可执行，
 - [Claude Code Dynamic Workflows Multi Agent Orchestration](../ch09/069-claude-code-dynamic-workflows.html) — Claude Code 多 Agent 编排完整指南
 - [Claude Code Dynamic Workflows 8Th Translation Xingxiaozhao](../ch09/069-claude-code-dynamic-workflows.html) — Claude Code 动态工作流译注
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html) — Claude Code 源码机制
-- [Gsd Get Shit Done Context Management Tool](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md) — GSD 上下文管理工具
+- [Gsd Get Shit Done Context Management Tool](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gsd-get-shit-done-context-management-tool.md) — GSD 上下文管理工具
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/004-agent.html) — Agent 原理架构与工程实践
 
 ---

@@ -47,7 +47,7 @@
 
 ## 相关实体
 
-- [Attention Collapse与上下文管理](https://github.com/QianJinGuo/wiki/blob/main/entities/attention-collapse-context-management.md)
+- [Attention Collapse与上下文管理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/attention-collapse-context-management.md)
 - [Spec驱动开发](008-harness.html)
 - [AI Coding效率分析](076-ai-coding.html)
 

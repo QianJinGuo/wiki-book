@@ -91,9 +91,9 @@ SenseNova-U1 的开源选择（GitHub + HuggingFace + arXiv）是一个完整的
 
 ## 相关技术
 - [DeepSeek Visual Primitives](../ch09/118-deepseek-visual-primitives.html) — 视觉原语作为思考媒介（同期多模态前沿）
-- [Kimi AttnRes](https://github.com/QianJinGuo/wiki/blob/main/entities/kimi-attention-residuals-prenorm-dilution-block-attnres.md) — 训练效率优化
-- [Attention Mechanism](https://github.com/QianJinGuo/wiki/blob/main/concepts/attention-mechanism.md) — 注意力机制基础
-- [Transformer Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/transformer-architecture.md) — Transformer 架构演进
+- [Kimi AttnRes](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kimi-attention-residuals-prenorm-dilution-block-attnres.md) — 训练效率优化
+- [Attention Mechanism](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/attention-mechanism.md) — 注意力机制基础
+- [Transformer Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/transformer-architecture.md) — Transformer 架构演进
 
 ## 局限
 - 上下文 32K 上限
@@ -102,7 +102,7 @@ SenseNova-U1 的开源选择（GitHub + HuggingFace + arXiv）是一个完整的
 - 连续性图文创作仍在 beta
 ## 相关实体
 
-- [商汤开源 sensenova-u1：一个模型，同时「看懂」和「画懂」](https://github.com/QianJinGuo/wiki/blob/main/entities/sensnova-u1-sensetime.md)
+- [商汤开源 sensenova-u1：一个模型，同时「看懂」和「画懂」](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sensnova-u1-sensetime.md)
 
 ---
 

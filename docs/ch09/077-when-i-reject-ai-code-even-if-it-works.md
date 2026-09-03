@@ -34,7 +34,7 @@ AI 代理改变了这一模式。即使遵循了最佳实践——从 plan mode 
 
 ### 从 Harness Engineering 视角看代码审查
 
-这篇文章本质上是在讨论 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-7-layers-framework.md) 中的一个关键控制点：**人类审查回路**。在 Agent 系统中，harness 的作用是在 Agent 的自主性与系统可靠性之间建立边界。代码审查正是这个边界的具体体现——它是 Agent 输出进入生产系统的最后一道关卡。
+这篇文章本质上是在讨论 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-7-layers-framework.md) 中的一个关键控制点：**人类审查回路**。在 Agent 系统中，harness 的作用是在 Agent 的自主性与系统可靠性之间建立边界。代码审查正是这个边界的具体体现——它是 Agent 输出进入生产系统的最后一道关卡。
 
 从控制论的角度，AI 编码代理的工作流可以建模为一个开环系统（open-loop system），因为 Agent 生成代码后缺乏对代码长期影响的反馈。人类审查者的角色是将这个开环系统转变为闭环系统（closed-loop system），通过拒绝不当代码提供负反馈信号，从而校准 Agent 的后续输出。
 
@@ -50,7 +50,7 @@ AI 生成的代码往往同时增加了内在负荷（方案可能不是最优�
 
 ### 工程实践的演化
 
-文章提出的五条标准实际上是对传统代码审查标准的重新校准。在 AI 之前，「能否运行」很少成为审查的主要关注点，因为手动编写的代码通常在提交前已经过本地测试。AI 时代，「能否运行」成为了最容易达到的标准，而「是否应该合并」成为了新的核心问题。这与 [Agentic Coding Workflow](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-engineering-paradigm.md) 中讨论的质量控制层直接相关。
+文章提出的五条标准实际上是对传统代码审查标准的重新校准。在 AI 之前，「能否运行」很少成为审查的主要关注点，因为手动编写的代码通常在提交前已经过本地测试。AI 时代，「能否运行」成为了最容易达到的标准，而「是否应该合并」成为了新的核心问题。这与 [Agentic Coding Workflow](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agentic-engineering-paradigm.md) 中讨论的质量控制层直接相关。
 
 作者也承认了一个重要的现实约束：AI 编码代理确实需要优秀的工程师来引导它们产出优秀的方案。这不是对 AI 能力的否定，而是对人机协作模式的准确定位——**AI 是加速器，不是替代品**。
 
@@ -64,8 +64,8 @@ AI 生成的代码往往同时增加了内在负荷（方案可能不是最优�
 
 ## 相关实体
 
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-7-layers-framework.md) — 代码审查作为 Agent 系统的控制层
-- [Agentic Coding Workflow](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-engineering-paradigm.md) — AI 辅助编码的完整工作流
+- [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-7-layers-framework.md) — 代码审查作为 Agent 系统的控制层
+- [Agentic Coding Workflow](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agentic-engineering-paradigm.md) — AI 辅助编码的完整工作流
 - [Building Reliable Agentic AI Systems](../ch04/189-building-reliable-agentic-ai-systems.html) — 同样关注 AI 系统的工程可靠性
 - [Claude Code Dynamic Workflows](069-claude-code-dynamic-workflows.html) — AI 编码代理的实践模式
 

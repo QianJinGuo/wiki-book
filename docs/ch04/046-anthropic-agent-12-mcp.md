@@ -166,7 +166,7 @@ Anthropic 原文提到  Cloudflare MCP Server  [2]  是典型案例：两个工�
 
 ## Related entities
 - [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch03/004-agent.html)
-- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-12-mcp-production-patterns.md)
+- [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-12-mcp-production-patterns.md)
 
 ##  交互语义（Interaction Semantics）
 很多早期 Agent 工具，都默认工具返回文本或 JSON。
@@ -175,7 +175,7 @@ Anthropic 原文提到  Cloudflare MCP Server  [2]  是典型案例：两个工�
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/tool-use-mcp-patterns.md)
 
 ---
 

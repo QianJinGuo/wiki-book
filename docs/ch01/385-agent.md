@@ -66,7 +66,7 @@ CLI-Hub 的"元技能"是最具前瞻性的设计：Agent 不需要人类告诉�
 
 ### 4. REPL 模式 + undo/redo：Agent 长流程任务的关键支撑
 
-生成的 CLI 自带 REPL 模式，保持会话状态，支持 undo/redo。这对 Agent 的长流程任务至关重要——不用每次调用都重新初始化软件上下文。**会话状态保持是 Agent 可靠执行长任务的基础设施**。undo/redo 则为 Agent 提供了"试错-回退"的能力，这与 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 中的"确定性回退路径"理念一致。
+生成的 CLI 自带 REPL 模式，保持会话状态，支持 undo/redo。这对 Agent 的长流程任务至关重要——不用每次调用都重新初始化软件上下文。**会话状态保持是 Agent 可靠执行长任务的基础设施**。undo/redo 则为 Agent 提供了"试错-回退"的能力，这与 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 中的"确定性回退路径"理念一致。
 
 ### 5. 7 阶段流水线的工程质量与局限
 
@@ -90,7 +90,7 @@ CLI-Hub 的"元技能"是最具前瞻性的设计：Agent 不需要人类告诉�
 - [agent 开发范式演进：从环境工程出发](../ch03/004-agent.html)
 - [ai 写前端 ≠ 设计 —— anomaly 创始人对 vibe coding 哲学批判](../ch05/001-impeccable.html)
 - [工作流的 skill 怎么写？从 7 个顶级 skill 中提炼的模式与最佳实践](../ch07/054-skill.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/wiki-master-map.md)
 
 ---
 

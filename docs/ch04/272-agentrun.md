@@ -116,9 +116,9 @@ AgentRun 实现了平均 TCO 降低 60%，这主要来自：
 对于需要大规模部署科研 Agent 的机构，这个成本优化数字是真实有意义的。
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/chinese-ai-ecosystem-silicon-valley-differences-agent-development-impact.md)
+> [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/chinese-ai-ecosystem-silicon-valley-differences-agent-development-impact.md)
 
-- [语音输入喊了这么多年，千问电脑版一出手就把键盘卷没了？](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
+- [语音输入喊了这么多年，千问电脑版一出手就把键盘卷没了？](https://github.com/QianJinGuo/wiki-public/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
 - [特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验](257-ai.html)
 - [我给Hermes配了4个Agent，真正有用的是这些事](../ch03/004-agent.html)
 - [ai4s 2026 h1 跨学科前沿全景（弦论泰斗、ai 提速百倍、与](257-ai.html)

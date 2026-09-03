@@ -112,10 +112,10 @@ def review_content(self, content):
 - [Agentcore Harness](../ch05/008-harness.html) — AgentCore 工程化
 - [Hands Free First Notice Of Loss Using Strands Agents And Ama](297-hands-free-first-notice-of-loss-using-strands-agents-and-am.html) — 保险 FNOL 中的人类角色重置
 - [Build An Ai Powered Equipment Repair Assistant Using Amazon ](194-build-an-ai-powered-equipment-repair-assistant-using-amazon.html) — AgentCore 维修助手的记忆层设计
-- [Production Agent Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/production-agent-engineering.md) — 生产级 Agent 工程
+- [Production Agent Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/production-agent-engineering.md) — 生产级 Agent 工程
 - "Agent 部署策略" — Agent 部署策略
 - "AI 安全治理" — AI 安全治理
-- [Autonomous Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/autonomous-agent-systems.md) — 自主 Agent 系统
+- [Autonomous Agent Systems](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/autonomous-agent-systems.md) — 自主 Agent 系统
 - "Agent 框架对比" — Agent 框架对比
 - "多 Agent 协作编排" — 多 Agent 编排
 

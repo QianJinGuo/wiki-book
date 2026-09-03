@@ -136,7 +136,7 @@ MiniMax M3 的三件套不是功能堆砌，而是一个系统能力的三个接
 
 - [minimax token调用第一后：agentos现实与模型厂商的系统适配挑战](../ch03/004-agent.html)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/coding-agent-practice.md)
 ## 相关主题
 
 - MiniMax M2.7 模型 — 参考 `Minimax M2 7`

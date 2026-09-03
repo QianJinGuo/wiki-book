@@ -154,7 +154,7 @@ H2D/D2H 带宽因卡而异的特性，说明不同 GPU 型号对 PPCIe 的支持
 - [Baidu Confidential Computing Cpu Gpu Full Chain](../ch04/257-ai.html)
 - [Nemotron 3 5 Content Safety](368-nemotron-3-5-content-safety-customizable-multimodal-safety.html)
 - [Nvidia Secure Local Agent Nemoclaw Openclaw](../ch04/315-nvidia-secure-local-agent-nemoclaw-openclaw.html)
-- [Fine Tuning Cosmos](https://github.com/QianJinGuo/wiki/blob/main/entities/fine-tuning-cosmos.md)
+- [Fine Tuning Cosmos](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tuning-cosmos.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/从-cpu-到-gpu-全链路可信百度智能云新一代-ai-机密计算实例的探索与落地.md)
 

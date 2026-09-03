@@ -77,7 +77,7 @@ RLVR 的结果更可复现、更难刷榜，是评估模型真实能力的更好
 - [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](../ch03/004-agent.html)
 - [Ai Job Interview Model Evaluation Mollick](../ch04/257-ai.html)
 - [Claude Code Performance Benchmarking](../ch03/057-claude-code.html)
-- [Mythos_Offensive_Security_Xbow_Evaluatio](https://github.com/QianJinGuo/wiki/blob/main/entities/mythos_offensive_security_xbow_evaluatio.md)
+- [Mythos_Offensive_Security_Xbow_Evaluatio](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mythos_offensive_security_xbow_evaluatio.md)
 
 ## 相关引用
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/reading-todays-open-closed-performance-gap.md)

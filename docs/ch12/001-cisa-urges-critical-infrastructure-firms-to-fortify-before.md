@@ -77,9 +77,9 @@ CI Fortify 是国际倡议，澳大利亚政府于2025年率先发布了类似�
 3. **OT 安全监控**：能够在隔离状态下独立运营、提供实时监控和异常检测的 OT 安全解决方案将成为关键投资。
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
+> [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/moc/cybersecurity-privacy.md)
 
-- [New cybersecurity industry coalition aims to lead US critical infrastructure protection](https://github.com/QianJinGuo/wiki/blob/main/entities/new-cybersecurity-coalition-us-policy.md)
+- [New cybersecurity industry coalition aims to lead US critical infrastructure protection](https://github.com/QianJinGuo/wiki-public/blob/main/entities/new-cybersecurity-coalition-us-policy.md)
 - [AI in Cybersecurity Training Resources | SANS Institute](../ch04/257-ai.html)
 - [U.S. Bank shifts critical apps to AWS for AI push | CIO Dive](../ch04/257-ai.html)
 

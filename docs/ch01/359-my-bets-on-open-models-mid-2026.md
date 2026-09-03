@@ -9,7 +9,7 @@
 - [dean ball on open models and government control](547-dean-ball-on-open-models-and-government-control.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/my-bets-on-open-models-mid-2026.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/reinforcement-learning-rlhf.md)
 ## 摘要
 
 Nathan Lambert（Interconnects AI）2026 年 4 月发表的这篇长文把"开源 vs 闭源模型谁会赢"这个常见但失焦的问题，拆成了 13 个具体可下注的判断。核心论断：这是一个经济学问题，而不是能力问题 — 闭源在 RL 训练范式下占据真实使用场景的数据优势，开源在重复性自动化场景的 API 份额会继续扩大；中国开源实验室的"benchmark 焦点"和"美国开源实验室的复苏"会同时发生。

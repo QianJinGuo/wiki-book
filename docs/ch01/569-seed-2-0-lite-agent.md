@@ -34,13 +34,13 @@
 - [Doubao Seed 2 Lite Agent Multimodal](../ch03/004-agent.html)
 - [Hermes Agent Newbie Guide Dotta](../ch04/161-hermes-agent.html)
 - [Skill Rag Tsinghua Sra](../ch07/054-skill.html)
-- [Doubao Seed 2 Lite](https://github.com/QianJinGuo/wiki/blob/main/entities/doubao-seed-2-lite.md)
+- [Doubao Seed 2 Lite](https://github.com/QianJinGuo/wiki-public/blob/main/entities/doubao-seed-2-lite.md)
 - [Deepseek Code Harness](../ch09/003-deepseek-code-harness.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/豆包-seed-20-lite升级给-agent-装上眼睛和耳朵.md)
 
-- [注定改变历史的一代人](https://github.com/QianJinGuo/wiki/blob/main/entities/注定改变历史的一代人.md)
-- [这张信息图居然是8B开源模型做的](https://github.com/QianJinGuo/wiki/blob/main/entities/这张信息图居然是8b开源模型做的.md)
+- [注定改变历史的一代人](https://github.com/QianJinGuo/wiki-public/blob/main/entities/注定改变历史的一代人.md)
+- [这张信息图居然是8B开源模型做的](https://github.com/QianJinGuo/wiki-public/blob/main/entities/这张信息图居然是8b开源模型做的.md)
 
 ---
 

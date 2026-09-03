@@ -43,7 +43,7 @@ Microsoft Build 2026 全景：7 款 MAI 模型 + Scout + OpenClaw 登 Windows + 
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
 
 ---
 

@@ -17,7 +17,7 @@
 - [基于Strands Agents SDK和Amazon Bedrock AgentCore构建商品详情图广告词审查Agent | 亚马逊AWS官方博客](../ch11/211-bedrock.html)
 - [CLI、MCP、API 选型：Agent 接入层决策指南](../ch03/004-agent.html)
 
-- [淘宝动效解决方案分享](https://github.com/QianJinGuo/wiki/blob/main/entities/淘宝动效解决方案分享.md)
+- [淘宝动效解决方案分享](https://github.com/QianJinGuo/wiki-public/blob/main/entities/淘宝动效解决方案分享.md)
 
 ## 深度分析
 **Cline SDK的分层架构**代表了对早期agent系统技术债的系统性清理。原文指出，团队没有继续在"与IDE宿主紧耦合的架构上叠加新功能"，而是选择重建核心agent循环为独立、可移植的SDK 。这一决策的代价是VS Code和JetBrains扩展需要迁移到新架构，但从长期看这是一次正确的技术解耦。

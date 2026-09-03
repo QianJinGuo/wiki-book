@@ -7,27 +7,27 @@
 - [Agent 记忆架构](323-perplexity-brain-self-improving-agent-memory-architecture.html)
 - [Agent 记忆模块化框架](133-agent-memory.html)
 - [AI Agent 记忆系统](133-agent-memory.html)
-- [上下文窗口管理](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
+- [上下文窗口管理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-window-management.md)
 - [Agent Harness 上下文管理：工作集模型](../ch05/035-agent-harness.html)
 - [Agent 自我改进的六条路](../ch03/004-agent.html)
 - [OpenHuman: AI Agent 持久记忆框架](133-agent-memory.html)
-- [Agent Memory System Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-system-design.md)
+- [Agent Memory System Design](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-system-design.md)
 - [Agent Memory 架构解析](133-agent-memory.html)
 - [Martin Fowler AI 研发 Harness：非确定性承重层](../ch05/008-harness.html)
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch03/004-agent.html)
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/057-harness-engineering.html)
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/057-harness-engineering.html)
-- [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md)
+- [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/karpathy-llm-wiki-v2.md)
 - [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/476-llm-wiki-obsidian-wiki-gbrain.html)
 - [AI Context Layer 框架](257-ai.html)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/008-harness.html)
 - [hermes-agent-self-evolving-source-analysis](161-hermes-agent.html)
-- [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
+- [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki-public/blob/main/queries/harness-peer-review-framework.md)
 - [AI Agent 工程师能力地图](312-ai-agent.html)
 
 - [全球首个完全ai编写的训练框架：面壁forgetrain速度反超英伟达megatron，年底要把国产算力软件重写一遍](257-ai.html)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/memory-context-systems.md)
 ## 深度分析
 ### 1. 记忆的本质是分层成本管理
 AI Coding Agent 记忆系统的核心问题不是"记什么"，而是"以什么成本、在哪一层被召回"。这个思路把记忆从存储容量问题转化为召回路径设计问题。

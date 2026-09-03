@@ -23,7 +23,7 @@
 
 水务公司处于独特的监管位置：客户无法选择由哪家水务公司供水，却必须提交个人信息并信任该供应商。ICO 临时执行董事 Ian Hulme 在声明中明确指出，ICO 期待所有组织——尤其是作为关键国家基础设施（CNI）、处理大量个人信息的机构——落实那些「成熟、广为人知且有效」的防护控制。
 
-这实质上把 CNI 运营者的数据保护义务从「合规底线」抬升为「公共信任责任」。与 [Sandworm 转向 OT 关键基础设施攻击](https://github.com/QianJinGuo/wiki/blob/main/entities/sandworm-hackers-shift-it-breaches-ot-gbhackers.md) 等威胁趋势叠加，公用事业机构已成为国家级攻击者与勒索团伙的共同靶标，监管与攻击两端的关注度同步上升。
+这实质上把 CNI 运营者的数据保护义务从「合规底线」抬升为「公共信任责任」。与 [Sandworm 转向 OT 关键基础设施攻击](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sandworm-hackers-shift-it-breaches-ot-gbhackers.md) 等威胁趋势叠加，公用事业机构已成为国家级攻击者与勒索团伙的共同靶标，监管与攻击两端的关注度同步上升。
 
 ### 二、Cl0p 的运营模式：从钓鱼入口到长期潜伏再到数据公开
 
@@ -35,7 +35,7 @@ South Staffordshire 事件几乎完整呈现了 Cl0p 的攻击手册：以钓鱼
 
 此案最值得注意的执法信号是：ICO 并未纠结于响应速度，而是将处罚核心放在 GDPR 所要求的技术与组织安全措施上——权限提升路径未被切断、日志审计形同虚设、Windows Server 2003 仍在服役、补丁与扫描流程缺失，这些都属于「本应早已就位」的基础控制。
 
-Hulme 的表述「等待性能问题或勒索信才发现入侵是不可接受的」直接点出问题本质：该组织不是被安全团队发现，而是被 IT 性能故障暴露。对监管者而言，「是否提前建立可检测、可防御的体系」正取代「是否及时通知」成为问责主轴，这与 [同一事件的 The Register 报道](https://github.com/QianJinGuo/wiki/blob/main/entities/ico-fines-south-staffordshire-2022-breach.md) 所呈现的处罚逻辑一致。
+Hulme 的表述「等待性能问题或勒索信才发现入侵是不可接受的」直接点出问题本质：该组织不是被安全团队发现，而是被 IT 性能故障暴露。对监管者而言，「是否提前建立可检测、可防御的体系」正取代「是否及时通知」成为问责主轴，这与 [同一事件的 The Register 报道](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ico-fines-south-staffordshire-2022-breach.md) 所呈现的处罚逻辑一致。
 
 ### 四、自愿和解与罚款减免的激励设计
 
@@ -54,11 +54,11 @@ ICO 将罚金从原始拟议金额减免 40%，理由是自愿和解：South Sta
 
 ## 相关实体
 
-- [ICO fines South Staffordshire £963K over 2022 breach](https://github.com/QianJinGuo/wiki/blob/main/entities/ico-fines-south-staffordshire-2022-breach.md)
-- [Sandworm Hackers Shift From IT Breaches to Critical OT Targets](https://github.com/QianJinGuo/wiki/blob/main/entities/sandworm-hackers-shift-it-breaches-ot-gbhackers.md)
+- [ICO fines South Staffordshire £963K over 2022 breach](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ico-fines-south-staffordshire-2022-breach.md)
+- [Sandworm Hackers Shift From IT Breaches to Critical OT Targets](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sandworm-hackers-shift-it-breaches-ot-gbhackers.md)
 - [GitHub Breached — Employee Device Hack Led to Exfiltration](../ch01/474-github.html)
 - [Hackers accessed BWH Hotels reservation system for months](../ch04/257-ai.html)
-- [Canvas Breach Disrupts Schools & Colleges Nationwide](https://github.com/QianJinGuo/wiki/blob/main/entities/canvas-breach-disrupts-schools-colleges-nationwide.md)
+- [Canvas Breach Disrupts Schools & Colleges Nationwide](https://github.com/QianJinGuo/wiki-public/blob/main/entities/canvas-breach-disrupts-schools-colleges-nationwide.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/computerweekly-ico-fines-cl0p-south-staffs-water.md)
 

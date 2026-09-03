@@ -8,7 +8,7 @@
 - 技术层面的可访问性（渲染、爬取、snippet 配置）是一切优化工作的前提 
 - AI surfaces 的爬取生态与传统的 SEO bot 完全不同，需要分别管理索引爬虫和训练爬虫 
 ## 相关实体
-- [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md)
+- [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md)
 - [Tether Launches Developer Grants Program For Local First Ai ](../ch11/166-tether-launches-developer-grants-program-for-local-first-ai.html)
 - [Anthropic_Cache_Tokenomics](../ch12/002-token.html)
 - [Introducing Claude For Small Business](026-introducing-claude-for-small-business.html)

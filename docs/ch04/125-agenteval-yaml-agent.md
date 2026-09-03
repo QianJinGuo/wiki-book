@@ -122,7 +122,7 @@ Agent 和 Grader 两个接口的极简设计（各两个方法）降低了插件
 - [AI Skill 测评指标体系](../ch01/351-ai-skill.html)
 - [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](../ch07/054-skill.html)
 - [Skills赏析：使用skills-refiner提升skill质量](../ch03/050-skills.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/evaluation-benchmarks-extended.md)
 
 ---
 

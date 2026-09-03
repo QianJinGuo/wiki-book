@@ -120,14 +120,14 @@ Karpathy："我从未感觉自己作为程序员这么落后。程序员贡献�
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/035-agent-harness.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [Co Existence And The End Of Co Intelligence](454-co-existence-and-the-end-of-co-intelligence.html)
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 - Model Context Protocol
-- [Agentic Engineering Paradigm](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-engineering-paradigm.md)
-- [Context Management](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-management-agent-systems.md)
+- [Agentic Engineering Paradigm](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agentic-engineering-paradigm.md)
+- [Context Management](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/context-management-agent-systems.md)
 - [an opinionated guide to using ai right now](../ch09/065-an-opinionated-guide-to-using-ai-right-now.html)
 - [我用claude搭了个自动新闻简报，30天后比我刷了一年的信息还有用](340-claude.html)
-- [boris cherny 新访谈：开发工具正在从 ide 变成 agent 控制台](https://github.com/QianJinGuo/wiki/blob/main/entities/iqsixinp9lxnkg7avfhfcq.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
+- [boris cherny 新访谈：开发工具正在从 ide 变成 agent 控制台](https://github.com/QianJinGuo/wiki-public/blob/main/entities/iqsixinp9lxnkg7avfhfcq.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/memory-context-systems.md)
 
 ---
 

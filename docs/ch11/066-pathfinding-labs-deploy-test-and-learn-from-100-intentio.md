@@ -107,7 +107,7 @@ Pathfinding Labs 的核心创新在于将 Terraform 模块封装为可一键部�
 - [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](../ch01/168-rag.html)
 - [Based On Prowler Genai Build Fintech Intelligent Compliance 2](048-prowler-genai.html)
 - [Aws Bedrock Agentcore Identity Security](045-bedrock-agentcore.html)
-- [Aws Cognito Multi Region Replication](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-cognito-multi-region-replication.md)
+- [Aws Cognito Multi Region Replication](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-cognito-multi-region-replication.md)
 - [Restrict Access To Sensitive Documents In Your Amazon Q S3 Knowledge Bases](018-restrict-access-to-sensitive-documents-in-your-amazon-q-s3-k.html)
 
 ---

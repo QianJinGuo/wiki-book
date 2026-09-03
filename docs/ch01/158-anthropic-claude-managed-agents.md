@@ -123,7 +123,7 @@ Multiagent Sessions、Outcomes、Dreams 目前均处于研究预览阶段，需�
 - [Introducing Claude for Small Business](026-introducing-claude-for-small-business.html)
 - [Introducing Claude for Small Business](026-introducing-claude-for-small-business.html)
 - [Xero Announces Integration with Anthropic's Claude](340-claude.html)
-- [Mythos for Offensive Security: XBOW's Evaluation](https://github.com/QianJinGuo/wiki/blob/main/entities/mythos_offensive_security_xbow_evaluatio.md)
+- [Mythos for Offensive Security: XBOW's Evaluation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mythos_offensive_security_xbow_evaluatio.md)
 - [Anthropic 首次揭秘下一代 Claude 怎么造](787-anthropic-claude.html)
 - [Anthropic 14 个 Agent Skills 设计模式](../ch04/077-anthropic-agent.html)
 - [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch03/004-agent.html)

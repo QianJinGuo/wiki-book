@@ -80,7 +80,7 @@ AI Native 三大硬性标准：①全链路 AI 驱动（任何环节不能有人
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qwen-ai-native-chaos-engineering-agent-corps-2026-08-06.md)
 
-- [MOC：Agent 工程指南](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
+- [MOC：Agent 工程指南](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-engineering-guide.md)
 
 ---
 

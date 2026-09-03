@@ -29,7 +29,7 @@ DeepSeek V4是怎么训练出来的？58页论文深入解读 涉及agent领域�
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-core-technology.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/llm-core-technology.md)
 
 ---
 

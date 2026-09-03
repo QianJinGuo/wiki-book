@@ -47,9 +47,9 @@ BWH 于 4 月 22 日发现入侵、5 月 12 日对外披露，间隔约三周。
 
 ## 相关实体
 
-- [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
-- [ShinyHunters 7-Eleven 数据泄露](https://github.com/QianJinGuo/wiki/blob/main/entities/shinyhunters-7-eleven-data-breach.md)
-- [ICO 处罚 South Staffordshire 2022 泄露事件](https://github.com/QianJinGuo/wiki/blob/main/entities/ico-fines-south-staffordshire-2022-breach.md)
+- [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/moc/cybersecurity-privacy.md)
+- [ShinyHunters 7-Eleven 数据泄露](https://github.com/QianJinGuo/wiki-public/blob/main/entities/shinyhunters-7-eleven-data-breach.md)
+- [ICO 处罚 South Staffordshire 2022 泄露事件](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ico-fines-south-staffordshire-2022-breach.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/securityaffairs-bwh-hotels-breach.md)
 

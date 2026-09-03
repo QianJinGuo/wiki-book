@@ -68,7 +68,7 @@ EnvHarness 的适用范围划出一条清晰边界：它依赖可重置的 reset
 
 ## 相关实体
 - [Agent World：真实世界环境与智能体协同进化](../ch03/004-agent.html)
-- [Scaling Laws](https://github.com/QianJinGuo/wiki/blob/main/concepts/scaling-laws.md)
+- [Scaling Laws](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/scaling-laws.md)
 
 → [模智空间 EnvHarness 解读存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/envharness-awakening-static-worlds-google-mozhi-2026-08-24.md)
 

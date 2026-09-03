@@ -8,12 +8,12 @@
 - [独家对话罗福莉：AI范式已然巨变！](../ch04/257-ai.html)
 - [agentic code review](133-agentic-code-review.html)
 - [apple foundation models](125-apple-foundation-models.html)
-- [the oracle and the firm](https://github.com/QianJinGuo/wiki/blob/main/entities/calv-oracle-and-the-firm.md)
-- [what job interviews taught me about kubernetes](https://github.com/QianJinGuo/wiki/blob/main/entities/notnotp-k8s-interviews-non-technical.md)
-- [here](https://github.com/QianJinGuo/wiki/blob/main/entities/randsinrepose-we-dont-believe-you-rub.md)
+- [the oracle and the firm](https://github.com/QianJinGuo/wiki-public/blob/main/entities/calv-oracle-and-the-firm.md)
+- [what job interviews taught me about kubernetes](https://github.com/QianJinGuo/wiki-public/blob/main/entities/notnotp-k8s-interviews-non-technical.md)
+- [here](https://github.com/QianJinGuo/wiki-public/blob/main/entities/randsinrepose-we-dont-believe-you-rub.md)
 - [a backdoor in a linkedin job offer](../ch04/257-ai.html)
 - [every frame perfect](132-every-frame-perfect.html)
-- [the golden rule of customizable select](https://github.com/QianJinGuo/wiki/blob/main/entities/webkit-customizable-select-golden-rule.md)
+- [the golden rule of customizable select](https://github.com/QianJinGuo/wiki-public/blob/main/entities/webkit-customizable-select-golden-rule.md)
 
 ## 文章摘要
 AI 正在从根本上改变我们工作的本质——不是让我们变得更快，而是改变工作的性质。作者 Paul Boag 认为 AI 正在将我们从"执行者"转变为"指挥者"，这需要一种完全不同的思维模式。从设计师到设计主管的转型与这一 AI 转型高度相似，那些能够提前适应这种思维转变的人将在 AI 增强的世界中脱颖而出。

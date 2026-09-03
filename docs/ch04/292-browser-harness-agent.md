@@ -46,7 +46,7 @@ Agent 在处理 GitHub、LinkedIn、Amazon 等特定网站时，自动沉淀交�
 | Domain Skills | ✅ 自动沉淀 | ❌ 无 | ❌ 无 | ❌ |
 | 安装复杂度 | 低（uv install -e .） | 中等 | 高（需配置 WebDriver） | 中等 |
 | 适用场景 | Agent 原生操作浏览器 | Agent 浏览器运行时 | 测试自动化 | Agent 浏览器操作 |
-与 [CLI-Anything](311-cli-anything-agent-gui.html)/[OpenCLI](../ch03/063-opencli.html)/[AutoCLI](https://github.com/QianJinGuo/wiki/blob/main/entities/autocli.md) 等 CLI 化方案不同，Browser Harness 走的是**浏览器原生操作**路线而非命令行封装，二者互补而非替代。
+与 [CLI-Anything](311-cli-anything-agent-gui.html)/[OpenCLI](../ch03/063-opencli.html)/[AutoCLI](https://github.com/QianJinGuo/wiki-public/blob/main/entities/autocli.md) 等 CLI 化方案不同，Browser Harness 走的是**浏览器原生操作**路线而非命令行封装，二者互补而非替代。
 
 ## 安全边界
 连接到用户真实 Chrome，遵循原则：

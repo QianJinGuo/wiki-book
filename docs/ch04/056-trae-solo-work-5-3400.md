@@ -18,13 +18,13 @@
 **最终成果**：自动采集 **3400+ 个参赛作品**，**7×24 小时稳定运行**。
 
 ## 相关实体
-- [我把Mac留在家用手机让Trae Solo替我打了一天工](https://github.com/QianJinGuo/wiki/blob/main/entities/我把mac留在家用手机让trae-solo替我打了一天工.md)
+- [我把Mac留在家用手机让Trae Solo替我打了一天工](https://github.com/QianJinGuo/wiki-public/blob/main/entities/我把mac留在家用手机让trae-solo替我打了一天工.md)
 - [Hermes Agent K2 6 Tutorial](161-hermes-agent.html)
 - [要实现一个工作流选择 Agent Skills 还是 Ai 表格](302-agent-skills.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/trae-solo-work-feishu-bitable-tutorial.md)
 
-- [trae solo work 模式 + 飞书多维表格 5 步教程](https://github.com/QianJinGuo/wiki/blob/main/entities/trae-solo-work-feishu-bitable-tutorial.md)
+- [trae solo work 模式 + 飞书多维表格 5 步教程](https://github.com/QianJinGuo/wiki-public/blob/main/entities/trae-solo-work-feishu-bitable-tutorial.md)
 
 ## SOLO 两种模式定位
 

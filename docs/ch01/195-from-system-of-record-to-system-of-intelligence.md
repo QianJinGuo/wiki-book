@@ -95,7 +95,7 @@ System of Intelligence 的核心竞争力在于"多源上下文合成"能力—�
 GTM 软件的 TAM 正在从"软件支出"扩展到"软件+AI 驱动的工作流优化"——一个数量级更大的市场 。下一个十年，企业 GTM 价值将在 System of Intelligence 层积累，而非在 System of Record 层 。关键问题是：哪些公司将在这个新层级占据主导地位，以及 Salesforce/HubSpot 能否成功完成从"数据库所有者"到"编排平台"的转型 。
 ## 相关实体
 - from-system-of-record-to-system-of-intelligence.md-intelligence
-- [Salesforce Headless Software Losing Head A16Z](https://github.com/QianJinGuo/wiki/blob/main/entities/salesforce-headless-software-losing-head-a16z.md)
+- [Salesforce Headless Software Losing Head A16Z](https://github.com/QianJinGuo/wiki-public/blob/main/entities/salesforce-headless-software-losing-head-a16z.md)
 - [Enterprise Software Moats Agent Era](../ch03/004-agent.html)
 - [Is Software Losing Its Head](463-is-software-losing-its-head.html)
 - [Is Software Losing Its Head A16Z](463-is-software-losing-its-head.html)

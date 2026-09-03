@@ -30,7 +30,7 @@ OpenAI 用三条硬标准衡量"好记忆"：记得住、用得对、跟得上�
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/memory-context-systems.md)
 
 ---
 

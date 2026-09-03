@@ -17,7 +17,7 @@ AI 智能体 = SOTA 模型（野马）+ Harness（控制系统）= 卓越执行�
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/bytedance-trae-harness-engineering-guide.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/openai-developer-ecosystem.md)
 ## 深度分析
 
 **Harness Engineering 的范式意义：** 这份指南揭示了 LLM 应用开发从「调优」向「架构」的根本转变。传统软件工程关注代码本身的逻辑正确性，而 Harness Engineering 将视野扩展到模型运行的整体环境——上下文管理、函数路由、反馈机制等基础设施层。

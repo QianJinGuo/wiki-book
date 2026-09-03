@@ -79,7 +79,7 @@ DRAM 和 NAND $/GB 从 Keepa **月度刷新**；HBM 季度更新（Epoch AI）�
 
 ---
 ## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

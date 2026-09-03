@@ -216,7 +216,7 @@ Skill 没触发
 - Anthropic 95% 数据分析 Skill 栈 — [Anthropic 95Pct Data Analysis Skill Stack Architecture](../ch07/054-skill.html)
 - AI 技能自动演进 — [Ai Skill Evolution Framework](../ch07/010-ai-skill-evolution.html)
 - Claude Code 架构 — [Claude Code Architecture](../ch03/057-claude-code.html)
-- AHE 通用 Harness — [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md)
+- AHE 通用 Harness — [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/ahe-agentic-harness-engineering.md)
 
 ---
 

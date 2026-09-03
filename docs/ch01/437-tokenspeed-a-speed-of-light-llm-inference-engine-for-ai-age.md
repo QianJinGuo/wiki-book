@@ -6,7 +6,7 @@
 
 ## 摘要
 
-**TokenSpeed** 是 LightSeek Foundation 开发的开源 LLM 推理引擎，专为 Agentic 工作负载（如 [Claude Code](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-coding-agent-from-helloworld-to-production.md)、Codex、Cursor 等 Coding Agent）从第一性原理设计。其核心创新包括：编译器支持的并行建模机制、C++/Python 混合的高性能调度器、编译时 KV 缓存安全管理、可插拔分层内核系统，以及与 SMG 集成的低开销 CPU 请求入口。在 NVIDIA Blackwell 上，TokenSpeed 对标 TensorRT-LLM，在 Coding Agent 场景下 Pareto 前沿全面领先约 9-11%。
+**TokenSpeed** 是 LightSeek Foundation 开发的开源 LLM 推理引擎，专为 Agentic 工作负载（如 [Claude Code](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/ai-coding-agent-from-helloworld-to-production.md)、Codex、Cursor 等 Coding Agent）从第一性原理设计。其核心创新包括：编译器支持的并行建模机制、C++/Python 混合的高性能调度器、编译时 KV 缓存安全管理、可插拔分层内核系统，以及与 SMG 集成的低开销 CPU 请求入口。在 NVIDIA Blackwell 上，TokenSpeed 对标 TensorRT-LLM，在 Coding Agent 场景下 Pareto 前沿全面领先约 9-11%。
 
 ## 核心要点
 
@@ -119,10 +119,10 @@ TokenSpeed 的开发涉及广泛的行业协作：
 ## 相关实体
 
 - [NVIDIA Agentic Systems Co-Design](../ch03/004-agent.html)
-- [Agentic Coding](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-coding-agent-from-helloworld-to-production.md)
-- [LLM 推理优化](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md)
+- [Agentic Coding](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/ai-coding-agent-from-helloworld-to-production.md)
+- [LLM 推理优化](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/inference-optimization.md)
 - [vLLM](451-llm.html)
-- [MOC: LLM 研究前沿](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-research-frontiers.md)
+- [MOC: LLM 研究前沿](https://github.com/QianJinGuo/wiki-public/blob/main/moc/llm-research-frontiers.md)
 
 ---
 

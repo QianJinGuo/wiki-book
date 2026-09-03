@@ -65,7 +65,7 @@
 - [OpenAI: Harness engineering: leveraging Codex in an agent-first world](https://openai.com/index/harness-engineering/)
 
 ## 相关页面
-- [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 六层结构与核心方程
+- [Harness Engineering 框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — 六层结构与核心方程
 - [Cursor Harness 复盘](../ch01/205-cursor-harness-model-production-floor.html) — 模型决定上限，Harness 决定生产下限
 - [字节跳动 TRAE Harness Engineering 指南](../ch01/465-trae-harness-engineering.html) — R.E.S.T 框架/PPAF 循环/上下文 Token 流水线
 
@@ -75,10 +75,10 @@
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](057-harness-engineering.html)
 - [Harness Engineering实践，做了一个平台让AI一晚上自动评测和优化你的系统](057-harness-engineering.html)
 - [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](008-harness.html)
-- [AI 领域专家学习路径](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-expert-learning-path.md)
+- [AI 领域专家学习路径](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-expert-learning-path.md)
 - [Agent 可靠性的工程解法：从 Skillify 看持续改进机制](../ch07/054-skill.html)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/coding-agent-practice.md)
 ## 深度分析
 ### 从「能力」到「可信赖产出」的系统性鸿沟
 文章揭示了 AI Coding 领域一个核心矛盾：模型原始能力已足够强，但从「能力」到「可信赖的工程产出」之间横亘着系统性鸿沟。企业级 Java 场景的特殊性加剧了这一鸿沟——隐性知识散落（价格字段用 `long` 分而非 `double`、某配置 85 处引用、高频变更链路），这些从未被系统化记录，Agent 的知识边界等于代码库的文件边界。

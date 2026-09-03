@@ -43,7 +43,7 @@ Microsoft 在 OpenAI 身上押注 130 亿美元后寻求替代方案，这一动
 
 ## 相关实体
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/microsoft-is-quietly-shopping-for-an-openai-replac.md)
-- [OpenAI携手五巨头开源革命性超算协议：一举解决超大集群LLM训练不稳定和网络性能难题](316-openai.html)- [anthropic](../ch04/312-ai-agent.html)- [inference cost at scale with napkin math](https://github.com/QianJinGuo/wiki/blob/main/entities/napkin-inference-cost-injuly-2026.md)- [olmo-eval: an evaluation workbench for the model development](563-olmo-eval-an-evaluation-workbench-for-the-model-development.html)- [why use app-level auth when every database has auth? (splunk](134-why-use-app-level-auth-when-every-database-has-auth-splunk.html)
+- [OpenAI携手五巨头开源革命性超算协议：一举解决超大集群LLM训练不稳定和网络性能难题](316-openai.html)- [anthropic](../ch04/312-ai-agent.html)- [inference cost at scale with napkin math](https://github.com/QianJinGuo/wiki-public/blob/main/entities/napkin-inference-cost-injuly-2026.md)- [olmo-eval: an evaluation workbench for the model development](563-olmo-eval-an-evaluation-workbench-for-the-model-development.html)- [why use app-level auth when every database has auth? (splunk](134-why-use-app-level-auth-when-every-database-has-auth-splunk.html)
 
 ---
 

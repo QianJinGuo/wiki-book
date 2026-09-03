@@ -80,7 +80,7 @@
 
 4. **异步自调用模式优雅解决了 IM 平台超时与深度分析的矛盾**：飞书 Webhook 要求 3 秒内返回 HTTP 200，但 AI Agent 的多工具编排天然需要更长时间。方案用 Lambda 异步 invoke 自身 + DynamoDB 条件写入去重，实现零额外组件的可靠异步链路。这是 [Harness Engineering](../ch05/057-harness-engineering.html) 中"外部系统集成 Harness"的经典解法——不改变外部系统约束，而是在内部构建异步桥接层。
 
-5. **Session 记忆按群隔离是多租户 IM Agent 的标准范式**：系统将每个飞书群映射为独立 session_id，AgentCore Memory 按 session 管理对话历史。这保证了不同团队（DBA 群、SRE 群、管理层群）的上下文完全隔离、互不干扰。这与 [Agent Memory Substrate Three Layer](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-substrate-three-layer.md) 中"租户级记忆隔离"原则一致，是企业级 IM Agent 部署的必要设计。
+5. **Session 记忆按群隔离是多租户 IM Agent 的标准范式**：系统将每个飞书群映射为独立 session_id，AgentCore Memory 按 session 管理对话历史。这保证了不同团队（DBA 群、SRE 群、管理层群）的上下文完全隔离、互不干扰。这与 [Agent Memory Substrate Three Layer](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-substrate-three-layer.md) 中"租户级记忆隔离"原则一致，是企业级 IM Agent 部署的必要设计。
 
 ## 实践启示
 

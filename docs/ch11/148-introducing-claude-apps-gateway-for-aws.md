@@ -58,7 +58,7 @@ The gateway handles five core responsibilities:
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deploying-anthropic-claude-apps-gateway-for-aws-for-enterprise-workloads.md)
 
 ## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 - 相关: [AI Gateways vs MCP Gateways](067-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html)
 
 ---

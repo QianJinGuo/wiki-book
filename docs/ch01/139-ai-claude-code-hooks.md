@@ -525,7 +525,7 @@ PostToolUse hook 如果修改了文件，会再次触发 PostToolUse，形成连
 - [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/057-claude-code.html)
 - [Claude Code Founder Harness 100 Lines](../ch03/057-claude-code.html)
 - [Subagents 详解Claude Code 如何避免上下文污染 V2](../ch03/057-claude-code.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/claude-code-complete-guide.md)
 
 ---
 

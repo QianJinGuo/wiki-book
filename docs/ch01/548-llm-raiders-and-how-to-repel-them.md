@@ -40,10 +40,10 @@ AI 资源消耗监控应当成为日常安全运营的一部分。建立基于�
 
 ## 相关实体
 - [LLM raiders and how to repel them](544-llm-raiders-and-how-to-repel-them.html)
-- [主题导航：网络安全](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
+- [主题导航：网络安全](https://github.com/QianJinGuo/wiki-public/blob/main/moc/cybersecurity-privacy.md)
 - [Autonomous Vulnerability Hunting with MCP](451-llm.html)
 - [LLM raiders and how to repel them](451-llm.html)
-- [Project Glasswing: what Mythos showed us](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
+- [Project Glasswing: what Mythos showed us](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12/031-amazon-bedrock-api.html)
 
 ---

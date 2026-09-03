@@ -42,7 +42,7 @@ AI Agent 工程师学习路线：面向资深后端/大数据工程师的能力�
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
 
 ---
 

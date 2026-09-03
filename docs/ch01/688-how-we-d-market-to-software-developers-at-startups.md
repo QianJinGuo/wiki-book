@@ -10,7 +10,7 @@
 - [the code-as-content era](369-the-code-as-content-era.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-wed-market-to-software-developers-at-startups-20260606.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/data-infrastructure.md)
 ## 深度分析
 
 How We’d Market to Software Developers at Startups 涉及article领域的核心技术议题。
@@ -28,7 +28,7 @@ How We’d Market to Software Developers at Startups 涉及article领域的核�
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04/176-openclaw.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/057-harness-engineering.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
-- [E9Ffy3R5Kwa1Ja5Pywbbrg](https://github.com/QianJinGuo/wiki/blob/main/entities/e9ffy3r5kwa1ja5pywbbrg.md)
+- [E9Ffy3R5Kwa1Ja5Pywbbrg](https://github.com/QianJinGuo/wiki-public/blob/main/entities/e9ffy3r5kwa1ja5pywbbrg.md)
 
 ---
 

@@ -27,7 +27,7 @@ ESET researchers uncovered a multiplatform supply-chain attack by North Korea-al
 
 - [xz-utils backdoor 2 years on — maintainer trust hijack patte](../ch04/257-ai.html)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-landscape.md)
 ## 深度分析
 ### 攻击链解析
 ScarCruft（APT37/Reaper）此次行动展现了朝鲜国家黑客组织日益成熟的供应链攻击能力。攻击分为两条路径：

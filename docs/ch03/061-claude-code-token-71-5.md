@@ -112,7 +112,7 @@ CLAUDE.md 文件在此方案中承担双重角色：
 ## 相关实体
 - `官方Memory Setup` — 同一工作流的官方版本
 - `Hermes自我进化` — AI记忆系统的架构设计
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/memory-context-systems.md)
 
 ---
 

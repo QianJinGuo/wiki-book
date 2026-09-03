@@ -46,7 +46,7 @@ Product Led SEO 的框架价值在于，它迫使组织明确自己的信息战�
 - **战略层面**：对于依赖内容营销获客的 SaaS 公司，SEO 和 AEO 应作为两个独立的战略投资方向，而非相互竞争的资源池
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/digital-commerce-ai-agent-scenarios-challenges.md)
+> [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/digital-commerce-ai-agent-scenarios-challenges.md)
 
 - [SEO is a product, AEO is brand](087-seo-is-a-product-aeo-is-brand.html)
 

@@ -53,14 +53,14 @@ AI 代码分析需要分层策略，而不是对所有代码一视同仁。首�
 - [Clinereleasesopen Sourceagentruntimesdk](../ch04/290-agentrun.html)
 - [Where Openclaw Security Is Heading Openclaw Blog](028-where-openclaw-security-is-heading-openclaw-blog.html)
 - [Vietnamtodevelopdomesticcloud](../ch01/668-opd.html)
-- [5Thingstoknowabouttheclarityact](https://github.com/QianJinGuo/wiki/blob/main/entities/5thingstoknowabouttheclarityact.md)
+- [5Thingstoknowabouttheclarityact](https://github.com/QianJinGuo/wiki-public/blob/main/entities/5thingstoknowabouttheclarityact.md)
 - [Cybersecqwen 4B Why Defensive Cyber Needs Small Specialized Locally Runnable Mod](090-cybersecqwen-4b.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai_threat_readiness_framework.md)
 
-- [from ssh to rest: a security-driven modernization of slack](https://github.com/QianJinGuo/wiki/blob/main/entities/from-ssh-to-rest-a-security-driven-modernization-of-slacks-e.md)
+- [from ssh to rest: a security-driven modernization of slack](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-ssh-to-rest-a-security-driven-modernization-of-slacks-e.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-privacy-landscape.md)
 ## 关联阅读
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai_threat_readiness_framework.md) — Wiz 官方原文
 

@@ -35,7 +35,7 @@
 
 ### 隐性经验显式化：Agent Harness 的本质是知识工程
 
-贯穿全文的主线是「隐性经验 → 显式机制」：repo map 的目录说明、settings.json 的排除规则、hook 绑定的检查、skill 封装的流程，都是把资深工程师脑中「应该先看这里」「这个目录别动」翻译成 agent 可稳定执行的机制。这与 [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)「从上下文提示到 hook 机制再到 plugin 打包」的演化主线一致，也与 [小米从 prompt 到 hook 到 plugin 的实践](../ch05/057-harness-engineering.html)呼应——规则承载层级越靠后，执行越确定。
+贯穿全文的主线是「隐性经验 → 显式机制」：repo map 的目录说明、settings.json 的排除规则、hook 绑定的检查、skill 封装的流程，都是把资深工程师脑中「应该先看这里」「这个目录别动」翻译成 agent 可稳定执行的机制。这与 [Harness Engineering 框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)「从上下文提示到 hook 机制再到 plugin 打包」的演化主线一致，也与 [小米从 prompt 到 hook 到 plugin 的实践](../ch05/057-harness-engineering.html)呼应——规则承载层级越靠后，执行越确定。
 
 ### 与既有工程实践的互补关系
 
@@ -57,9 +57,9 @@
 - [一文带你弄懂 Harness Engineering](../ch05/057-harness-engineering.html)
 - [腾讯 Harness 工程团队规范](../ch05/057-harness-engineering.html)
 - [小米 Harness 工程：从 prompt 到 hook 到 plugin](../ch05/057-harness-engineering.html)
-- [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [Agent Harness 工程范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-harness-engineering-paradigm.md)
-- [Claude Code 完全指南 MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
+- [Harness Engineering 框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- [Agent Harness 工程范式](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-harness-engineering-paradigm.md)
+- [Claude Code 完全指南 MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/claude-code-complete-guide.md)
 
 ---
 

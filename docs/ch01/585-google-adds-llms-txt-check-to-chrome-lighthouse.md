@@ -12,13 +12,13 @@
 - [Blog Himanshuanand Com Score By Collisions Patch By Panic](../ch04/287-score-by-collisions-patch-by-panic.html)
 - [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](168-rag.html)
 - [Npm Supply Chain Compromise Postmortem](../ch04/257-ai.html)
-- [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
+- [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/searchengineland-com-google-adds-llms-txt-check-to-chrome-lighthouse.md)
 
 - [从 pi-main 源码拆解：顶尖 ai agent 的工程设计（17 维度全解）](../ch03/004-agent.html)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-landscape.md)
 ## 深度分析
 
 Chrome Lighthouse 新增的「Agentic Browsing」审核类别，标志着 Google 对 AI 代理可见性基础设施的认知发生了根本性转变。与传统的 SEO 排名信号不同，llms.txt 被明确定位为「AI 代理的可发现性与效率信号」，而非爬取指令。这一区分至关重要：Google 搜索不需要 llms.txt，但 Chrome 的代理浏览能力检查正在强制执行这一标准。

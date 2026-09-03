@@ -3,7 +3,7 @@
 > 目标：从 Agent 初学者成长为能做工程落地、能过高质量面试、能设计生产系统、能读前沿论文、能形成个人方法论的 Agent 领域高手。
 > 方法：以本仓库 `docs/` 中的章节、实体（entity）和原文（raw）为主线，采用"读实体 → 查 raw → 复述 → 实作 → 评估 → 作品集"的闭环。
 
-> raw 文章链接指向 GitHub 仓库永久地址（三个部署环境通用，不会 404）。
+> 实体、概念和导航页链接指向公开 wiki 镜像；raw 文章链接指向 wiki-book 自己的 GitHub 永久地址（三个部署环境通用，不会 404）。
 > - Docker 构建: `http://localhost:8002`
 > - GitHub Pages: `https://wiki.jinguo.tech`  
 > - Cloudflare Pages: `https://jinguo.tech`
@@ -223,7 +223,7 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 | RAG 到知识图谱到本体论 | [向量库是Rag的前菜知识图谱是答案本体论是灵魂](ch01/168-rag.html) | [向量库是rag的前菜知识图谱是答案本体论是灵魂.md](https://github.com/QianJinGuo/wiki-book/blob/main/docs/raw/articles/向量库是rag的前菜知识图谱是答案本体论是灵魂.md) |
 | Google Agentic RAG 5 阶段 | [Ai Cambrian Google Agentic Rag Sufficient Context Cross Corpus 20260606](ch04/091-google-agentic-rag-5.html) | [ai-cambrian-google-agentic-rag-sufficient-context-cross-corpus-20260606.md](https://github.com/QianJinGuo/wiki-book/blob/main/docs/raw/articles/ai-cambrian-google-agentic-rag-sufficient-context-cross-corpus-20260606.md) |
 | Protocol H 分层 Agentic RAG | [Protocol H Hierarchical Agentic Rag Enterprise](ch04/069-protocol-h-agentic-rag.html) | [protocol-h-hierarchical-agentic-rag-enterprise.md](https://github.com/QianJinGuo/wiki-book/blob/main/docs/raw/articles/protocol-h-hierarchical-agentic-rag-enterprise.md) |
-| Chroma 到 Qdrant 迁移 | [Chroma To Qdrant 1M Vector Migration](https://github.com/QianJinGuo/wiki/blob/main/entities/chroma-to-qdrant-1m-vector-migration.md) | [chroma-to-qdrant-1m-vector-migration.md](https://github.com/QianJinGuo/wiki-book/blob/main/docs/raw/articles/chroma-to-qdrant-1m-vector-migration.md) |
+| Chroma 到 Qdrant 迁移 | [Chroma To Qdrant 1M Vector Migration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/chroma-to-qdrant-1m-vector-migration.md) | [chroma-to-qdrant-1m-vector-migration.md](https://github.com/QianJinGuo/wiki-book/blob/main/docs/raw/articles/chroma-to-qdrant-1m-vector-migration.md) |
 | RAG vs LLM Wiki | `docs/ch01/037-rag-vs-llm-wiki.md` | 先读实体页 |
 
 ### 4.7 Talk-to-data / Data Agent 精读清单
@@ -235,7 +235,7 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 | 智能问数 Agent | [Data Agent Product Design](ch04/292-data-agent.html) | [volcengine-data-agent-intelligent-query-agent.md](https://github.com/QianJinGuo/wiki-book/blob/main/docs/raw/articles/volcengine-data-agent-intelligent-query-agent.md) |
 | 营销策略 Agent | [Data Agent Product Design](ch04/292-data-agent.html) | [volcengine-data-agent-marketing-strategy-agent.md](https://github.com/QianJinGuo/wiki-book/blob/main/docs/raw/articles/volcengine-data-agent-marketing-strategy-agent.md) |
 | TiDB Cloud Agent-native Database | [Tidb Cloud Agent Database](ch11/041-tidb-cloud-agent-native-kimi-k2-6.html) | [kimi-k2-tidb-agent-database-huangdongxu-20260513.md](https://github.com/QianJinGuo/wiki-book/blob/main/docs/raw/articles/kimi-k2-tidb-agent-database-huangdongxu-20260513.md) |
-| ClickHouse 大规模摄取 | [Clickhouse Ingestion At Scale An Open Source Zepto Engineering Story](https://github.com/QianJinGuo/wiki/blob/main/entities/clickhouse-ingestion-at-scale-an-open-source-zepto-engineering-story.md) | [clickhouse-ingestion-at-scale-an-open-source-zepto-engineering-story.md](https://github.com/QianJinGuo/wiki-book/blob/main/docs/raw/articles/clickhouse-ingestion-at-scale-an-open-source-zepto-engineering-story.md) |
+| ClickHouse 大规模摄取 | [Clickhouse Ingestion At Scale An Open Source Zepto Engineering Story](https://github.com/QianJinGuo/wiki-public/blob/main/entities/clickhouse-ingestion-at-scale-an-open-source-zepto-engineering-story.md) | [clickhouse-ingestion-at-scale-an-open-source-zepto-engineering-story.md](https://github.com/QianJinGuo/wiki-book/blob/main/docs/raw/articles/clickhouse-ingestion-at-scale-an-open-source-zepto-engineering-story.md) |
 | Kafka × Iceberg 零 ETL | [Aliyun Kafka Iceberg Zero Etl Architecture Subtraction 2026 06 18](ch12/022-static-devirtualization-of-themida.html) | [aliyun-kafka-iceberg-zero-etl-architecture-subtraction-2026-06-18.md](https://github.com/QianJinGuo/wiki-book/blob/main/docs/raw/articles/aliyun-kafka-iceberg-zero-etl-architecture-subtraction-2026-06-18.md) |
 
 ### 4.8 工程师期必须完成的 4 个项目
@@ -419,9 +419,9 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 
 | 主题 | entity | raw |
 |---|---|---|
-| Chroma → Qdrant | [Chroma To Qdrant 1M Vector Migration](https://github.com/QianJinGuo/wiki/blob/main/entities/chroma-to-qdrant-1m-vector-migration.md) | [chroma-to-qdrant-1m-vector-migration.md](https://github.com/QianJinGuo/wiki-book/blob/main/docs/raw/articles/chroma-to-qdrant-1m-vector-migration.md) |
+| Chroma → Qdrant | [Chroma To Qdrant 1M Vector Migration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/chroma-to-qdrant-1m-vector-migration.md) | [chroma-to-qdrant-1m-vector-migration.md](https://github.com/QianJinGuo/wiki-book/blob/main/docs/raw/articles/chroma-to-qdrant-1m-vector-migration.md) |
 | 实时语音推理 vLLM + SageMaker | [Build Real Time Voice Applications With Amazon Sagemaker Ai](ch09/110-ai.html) | [build-real-time-voice-applications-with-amazon-sagemaker-ai.md](https://github.com/QianJinGuo/wiki-book/blob/main/docs/raw/articles/build-real-time-voice-applications-with-amazon-sagemaker-ai.md) |
-| Apple Private Inference | [Apple Siri Private Inference Cryptography Green](https://github.com/QianJinGuo/wiki/blob/main/entities/apple-siri-private-inference-cryptography-green.md) | [apple-siri-private-inference-cryptography-green.md](https://github.com/QianJinGuo/wiki-book/blob/main/docs/raw/articles/apple-siri-private-inference-cryptography-green.md) |
+| Apple Private Inference | [Apple Siri Private Inference — Lethal Trifecta](https://github.com/QianJinGuo/wiki-public/blob/main/entities/apple-siri-private-inference-lethal-trifecta-matthew-green.md) | [apple-siri-private-inference-cryptography-green.md](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/apple-siri-private-inference-cryptography-green.md) |
 | Didi EAGLE-3 投机解码 | [Didi Eagle 3 Speculative Decoding Agents](ch04/101-agent-eagle-3.html) | [didi-eagle-3-speculative-decoding-agents.md](https://github.com/QianJinGuo/wiki-book/blob/main/docs/raw/articles/didi-eagle-3-speculative-decoding-agents.md) |
 
 ### 6.4 前沿研究精读清单

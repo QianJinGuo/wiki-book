@@ -48,7 +48,7 @@ Boris 强调"过去一年最重要的理念是：每次 Claude 犯错不要告�
 2. **应用层面**——Claude 启动模拟器（iOS/Android/desktop），通过 computer use 走完用户流程，验证功能真的工作。
 3. **流程层面**——发现预发布环境挂了，去读 Slack 确认，然后更新 Skill 防止下次再踩。
 
-第三层是 Anthropic 真正的护城河：**Agent 通过 Skill 把"工程经验"沉淀为可重放的代码**。这与 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的核心命题完全一致——harness 不是单次 prompt，而是"输入约束 + 评估机制 + Skill 沉淀"的闭环。
+第三层是 Anthropic 真正的护城河：**Agent 通过 Skill 把"工程经验"沉淀为可重放的代码**。这与 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 的核心命题完全一致——harness 不是单次 prompt，而是"输入约束 + 评估机制 + Skill 沉淀"的闭环。
 
 ### 三、Routines：Agent 同步 → 异步的关键跃迁
 
@@ -153,7 +153,7 @@ Boris 明确表态："一年后的使用方式如果还跟现在一样，我反�
 - [Agent Security 三步走: Harness + Governance + Identity](../ch05/008-harness.html)
 - [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](../ch04/226-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 - [Karpathy: Software 3.0 与 vibe coding 时代的终结](../ch03/004-agent.html)
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

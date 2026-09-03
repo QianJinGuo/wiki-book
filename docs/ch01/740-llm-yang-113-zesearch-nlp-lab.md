@@ -83,7 +83,7 @@
 | **智能体系统增强（Agentic System-based Improvement）** | 提示词、工具、记忆、工作流整合 | [LangSmith 链路追踪](../ch03/004-agent.html)、harness 编排 |
 | **测试时训练（Test-Time Training, TTT）** | 利用任务反馈临时更新参数再生成 | TTT 层、LoRA 在线适配 |
 
-> 与 [Hermes 自我改进闭环](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-self-improving-loop-winty.md) 在"运行时改进"维度高度共振——Hermes 是工业级实现（基于 Hermes Agent 的 SKILL.md 自我迭代），本综述是学术级分类。
+> 与 [Hermes 自我改进闭环](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-self-improving-loop-winty.md) 在"运行时改进"维度高度共振——Hermes 是工业级实现（基于 Hermes Agent 的 SKILL.md 自我迭代），本综述是学术级分类。
 
 ### 5. 自动评估（Autonomous Evaluation）— 贯穿全程控制层
 
@@ -145,7 +145,7 @@
 
 2. **数据自噬（Data Autophagy）是自我提升系统的根本性风险，而非边缘问题**：当模型反复学习自身生成数据时，偏差会被放大、能力会退化——这不是小概率边界条件，而是**任何高自主度自我提升系统都会触发的结构性陷阱**。[Lossy Self-Improvement](224-lossy-self-improvement.html) 的理论分析在这里是必读关联——它解释了为什么合成数据必须配合严格的模型引导评分机制。
 
-3. **GRO 框架的三种范式揭示了自我提升的工程化路径**：迭代拒绝采样（规则/模型评分 → SFT）、自我验证与精炼（自我检查 → DPO 偏好对）、自我对弈（竞争协作 →胜负信号）——这三种范式代表了从"规则驱动"到"模型驱动"到"环境驱动"的渐进路径，也是 [AI 自我改进与自举](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-self-improvement-bootstrapping.md) 中四类自举路径的工程化实例。
+3. **GRO 框架的三种范式揭示了自我提升的工程化路径**：迭代拒绝采样（规则/模型评分 → SFT）、自我验证与精炼（自我检查 → DPO 偏好对）、自我对弈（竞争协作 →胜负信号）——这三种范式代表了从"规则驱动"到"模型驱动"到"环境驱动"的渐进路径，也是 [AI 自我改进与自举](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/ai-self-improvement-bootstrapping.md) 中四类自举路径的工程化实例。
 
 4. **推理细化（Inference Refinement）代表了参数不更新的轻量化路径**：与模型优化（需更新权重）不同，推理细化关注如何在**测试时通过搜索、反思、工具调用、临时参数更新**来提升输出质量。Test-Time Training（TTT）是这个方向最前沿的技术——在推理时利用任务反馈临时更新参数，是资源受限场景的可行选择。
 
@@ -165,7 +165,7 @@
 ## 相关实体
 
 - **核心概念（必读）**：
-  - [AI 自我改进与自举](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-self-improvement-bootstrapping.md)（4 类自举路径统一视角 + lossy 风险 + 工程实践）
+  - [AI 自我改进与自举](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/ai-self-improvement-bootstrapping.md)（4 类自举路径统一视角 + lossy 风险 + 工程实践）
 - **同主题不同 artifact**：
   - [Agent 自我改进的六条路](../ch03/004-agent.html)（J0hn 视角：L1-L6 机制分类）
   - [AI 科研超越人类 — Prime Intellect 递归自改进实验](../ch04/257-ai.html)（单点实验：nanoGPT 突破人类纪录）
@@ -173,7 +173,7 @@
   - [编排自演化 Agent — CrewAI + NVIDIA Nemotron](../ch04/181-self-evolving-agents.html)（多 Agent 仿真环境）
   - [MUSE AutoSkill — 字节 ByteBrain 自演化 Agent](../ch07/054-skill.html)（arXiv 2605.27366 工业级实现）
   - [LangSmith Engine — 基于链路追踪的自改进 Agent](../ch03/004-agent.html)（工业级 trace-based 自改进）
-  - [Hermes 自我改进闭环](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-self-improving-loop-winty.md)（Winty 视角：基于 SKILL.md 自我迭代）
+  - [Hermes 自我改进闭环](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-self-improving-loop-winty.md)（Winty 视角：基于 SKILL.md 自我迭代）
 - **同领域框架**：
   - [Agent Harness Engineering 综述](../ch05/057-harness-engineering.html)（harness 视角）
   - [Harness 演化论文集](../ch05/008-harness.html)（harness 论文集合）

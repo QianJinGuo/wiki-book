@@ -49,12 +49,12 @@ tap 24 是承诺点：最后用户 token 处中文 top-1 比例 Tiananmen≈100%
 
 ## 相关实体
 
-- [Mechanistic Interpretability](https://github.com/QianJinGuo/wiki/blob/main/concepts/mechanistic-interpretability.md)
-- [Activation Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/activation-engineering.md)
-- [Shieldstral 安全分类器](https://github.com/QianJinGuo/wiki/blob/main/entities/mistral-shieldstral-policy-adaptive-safety-classifier.md)
-- [AI 伦理与负责任 AI](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-ethics-responsible-ai.md)
-- [预训练 vs 微调](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-pretraining-vs-sft.md)
-- [注意力机制](https://github.com/QianJinGuo/wiki/blob/main/concepts/attention-mechanism.md)
+- [Mechanistic Interpretability](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/mechanistic-interpretability.md)
+- [Activation Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/activation-engineering.md)
+- [Shieldstral 安全分类器](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mistral-shieldstral-policy-adaptive-safety-classifier.md)
+- [AI 伦理与负责任 AI](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/ai-ethics-responsible-ai.md)
+- [预训练 vs 微调](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/llm-pretraining-vs-sft.md)
+- [注意力机制](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/attention-mechanism.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/what-political-censorship-looks-like-inside-an-llm-s-weights.md)
 

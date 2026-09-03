@@ -170,7 +170,7 @@ https://skills.aliyun.com/skills/alibabacloud-cms-manage
 ## 与现有实体差异化
 
 - [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](../ch09/038-coding-agent.html) — **LoongSuite Pilot** 是 Agent 观测的**数据采集应用层**（OTel SemConv + 三类 Agent 形态 + 四大观测能力）。**alibabacloud-cms-manage Skill 是 Agent 接入层**（如何让 AI Agent 自己完成可观测接入）。**LoongSuite = 数据从 Agent 流出的标准化**；**alibabacloud-cms-manage = AI Agent 自动化完成接入编排**。两者**互补**：LoongSuite 让你能看到 Agent 行为，cms-manage Skill 让 Agent 自己接入观测。
-- [Hermes Observability Aliyun](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-observability-aliyun.md) — Hermes 装上显微镜的 ARMS 观测实践（**Hermes-specific**）。本实体是**通用 CMS 2.0 接入**（不绑定具体 Agent 框架），适用更广。
+- [Hermes Observability Aliyun](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-observability-aliyun.md) — Hermes 装上显微镜的 ARMS 观测实践（**Hermes-specific**）。本实体是**通用 CMS 2.0 接入**（不绑定具体 Agent 框架），适用更广。
 - [Aliyun Agentrun](../ch04/290-agentrun.html) / [Aliyun Agentrun 5Min Quickstart](../ch04/290-agentrun.html) / [Aliyun Agentrun 2Line Integration](../ch04/290-agentrun.html) — **AgentRun** 是阿里云 AI Agent 运行时（运行 Agent 的平台）。**alibabacloud-cms-manage Skill 是观测接入工具**（为已部署的 AI Agent 接入 CMS 监控）。两者**关系**：Agent 跑在 AgentRun 上 → 通过 cms-manage Skill 接入 CMS 监控 → 通过 LoongSuite 上报 Agent 行为数据。
 - [Skill Development Guide Aliyun 2026](../ch07/054-skill.html) — Aliyun 团队发布的 **Skill 开发保姆级教程**（教你如何写 Skill）。**alibabacloud-cms-manage Skill 是 Skill 教程落地的一个具体生产 Skill 案例**——是 Skill 教程的"现身说法"。
 - [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](../ch03/050-skills.html) — 阿里云 **Skills Registry 公测**（企业私有 Skill 管理中心）。**alibabacloud-cms-manage** 是部署在 Skills Registry（`skills.aliyun.com`）上的官方 Skill，是 Registry 生态的具体产品实例。
@@ -188,9 +188,9 @@ https://skills.aliyun.com/skills/alibabacloud-cms-manage
 
 —
 - Agent Skill 生态 — [Agent Skills Comprehensive Survey](../ch04/302-agent-skills.html)
-- 可观测性 — [Hermes Observability Aliyun](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-observability-aliyun.md)
+- 可观测性 — [Hermes Observability Aliyun](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-observability-aliyun.md)
 - OTel / APM 接入 — [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](../ch09/038-coding-agent.html)
-- K8s 自动注入 — [Higress Cncf Sandbox Ingress Nginx Replacement](https://github.com/QianJinGuo/wiki/blob/main/entities/higress-cncf-sandbox-ingress-nginx-replacement.md)
+- K8s 自动注入 — [Higress Cncf Sandbox Ingress Nginx Replacement](https://github.com/QianJinGuo/wiki-public/blob/main/entities/higress-cncf-sandbox-ingress-nginx-replacement.md)
 
 ## 深度分析
 
@@ -273,8 +273,8 @@ https://skills.aliyun.com/skills/alibabacloud-cms-manage
 - **阿里云 CLI 安装指南**：https://help.aliyun.com/zh/cli/install-update-alibaba-cloud-cli
 ## 相关实体
 
-- [opentelemetry ebpf instrumentation (obi) — 零代码全栈可观测性的内核级实现](https://github.com/QianJinGuo/wiki/blob/main/entities/open-telemetry-ebpf-instrumentation-obi-zero-code-observability-aliyun-2026.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
+- [opentelemetry ebpf instrumentation (obi) — 零代码全栈可观测性的内核级实现](https://github.com/QianJinGuo/wiki-public/blob/main/entities/open-telemetry-ebpf-instrumentation-obi-zero-code-observability-aliyun-2026.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/observability-monitoring.md)
 
 ---
 

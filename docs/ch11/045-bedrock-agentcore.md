@@ -83,11 +83,11 @@ On-Demand 评估在 CI/CD 中的角色是**门禁（gate）而非建议**——�
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04/038-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
 - [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/496-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
 - [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/383-amazon-bedrock-agentcore.html)
-- [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
+- [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki-public/blob/main/entities/航班变更信息智能识别解决方案.md)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](211-bedrock.html)
 - [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/520-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](108-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/evaluation-and-benchmarks.md)
 
 ---
 

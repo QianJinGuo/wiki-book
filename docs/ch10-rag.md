@@ -382,11 +382,11 @@ PS：从这里也可以看出来，图谱的存在其实是为了解决工程维
 
 ## 关联阅读
 ## 相关实体
-- [Google Agentic Rag Sufficient Context Agent Framesqa](https://github.com/QianJinGuo/wiki/blob/main/entities/google-agentic-rag-sufficient-context-agent-framesqa.md)
-- [Architecture Data Foundations For Ai Powered Search](https://github.com/QianJinGuo/wiki/blob/main/entities/architecture-data-foundations-for-ai-powered-search.md)
-- [Rag技术框架的演进方向](https://github.com/QianJinGuo/wiki/blob/main/entities/rag技术框架的演进方向.md)
-- [Skill Rag Tsinghua Sra](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-rag-tsinghua-sra.md)
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-framework.md)
+- [Google Agentic Rag Sufficient Context Agent Framesqa](https://github.com/QianJinGuo/wiki-public/blob/main/entities/google-agentic-rag-sufficient-context-agent-framesqa.md)
+- [Architecture Data Foundations For Ai Powered Search](https://github.com/QianJinGuo/wiki-public/blob/main/entities/architecture-data-foundations-for-ai-powered-search.md)
+- [Rag技术框架的演进方向](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag技术框架的演进方向.md)
+- [Skill Rag Tsinghua Sra](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-rag-tsinghua-sra.md)
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-framework.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/向量库是rag的前菜知识图谱是答案本体论是灵魂-v2.md)
 
@@ -405,17 +405,17 @@ PS：从这里也可以看出来，图谱的存在其实是为了解决工程维
 向量（embedding），可以将一段文本、图片、音频等内容，通过embedding模型编码成一个高维数组；
 
 ## 相关实体
-- [Three Rag Architectures Classic Graph Agentic](https://github.com/QianJinGuo/wiki/blob/main/entities/three-rag-architectures-classic-graph-agentic.md)
-- [Nvidia Multimodal Rag Knowledge Systems](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-multimodal-rag-knowledge-systems.md)
-- [Rag技术框架的演进方向](https://github.com/QianJinGuo/wiki/blob/main/entities/rag技术框架的演进方向.md)
-- [Skill Rag Tsinghua Sra](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-rag-tsinghua-sra.md)
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-framework.md)
+- [Three Rag Architectures Classic Graph Agentic](https://github.com/QianJinGuo/wiki-public/blob/main/entities/three-rag-architectures-classic-graph-agentic.md)
+- [Nvidia Multimodal Rag Knowledge Systems](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-multimodal-rag-knowledge-systems.md)
+- [Rag技术框架的演进方向](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag技术框架的演进方向.md)
+- [Skill Rag Tsinghua Sra](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-rag-tsinghua-sra.md)
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-framework.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rag-vector-knowledge-graph-ontology.md)
 
-- [knowledge base layer architecture: from rag to agent-native](https://github.com/QianJinGuo/wiki/blob/main/entities/pyramid-kb-knowledge-context-layer-banya.md)
+- [knowledge base layer architecture: from rag to agent-native](https://github.com/QianJinGuo/wiki-public/blob/main/entities/pyramid-kb-knowledge-context-layer-banya.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/rag-knowledge-retrieval.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/rag-knowledge-retrieval.md)
 ## 深度分析
 
 **一、向量库的"语义检索"神话在工程实践中存在根本性脆弱性。** 向量库将知识压缩为孤立的"向量点"，依赖语义相似度匹配（Top-K检索），但这无法捕捉完整上下文。典型失败场景是：文档分块导致"上下文割裂"——如医疗场景中药物适用症与妊娠期禁用警示被切分到不同向量块，召回时只返回部分信息，导致误诊风险。文章犀利指出"什么JB语义检索，还是关键词检索靠谱"，揭示了向量检索在实际生产环境中的局限被长期低估 。
@@ -744,12 +744,12 @@ NVIDIA Nemotron Nano 2 VL (12B) VLM 将视觉推理引入 RAG 管道，使系统
 5. **推进数据基础设施现代化为 AI 原生**：存储层嵌入 RAG 能力（向量检索+语义理解）是企业数据基础设施的未来方向，应纳入 AI 转型路线图。
 
 ## 相关实体
-- [Nvidia Nemotron 3 Agents Rag Voice Safety](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-nemotron-3-agents-rag-voice-safety.md)
-- [Nvidia Extreme Co Design Agentic Systems](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-extreme-co-design-agentic-systems.md)
-- [Nvidia Agentic Ai Subsurface Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-agentic-ai-subsurface-engineering.md)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-secure-local-agent-nemoclaw-openclaw.md)
-- [Nvidia Telco Reasoning Models Nemo](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-telco-reasoning-models-nemo.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
+- [Nvidia Nemotron 3 Agents Rag Voice Safety](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-nemotron-3-agents-rag-voice-safety.md)
+- [Nvidia Extreme Co Design Agentic Systems](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-extreme-co-design-agentic-systems.md)
+- [Nvidia Agentic Ai Subsurface Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-agentic-ai-subsurface-engineering.md)
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-secure-local-agent-nemoclaw-openclaw.md)
+- [Nvidia Telco Reasoning Models Nemo](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-telco-reasoning-models-nemo.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-multimodal-rag-knowledge-systems.md)
 
@@ -761,7 +761,7 @@ NVIDIA Nemotron Nano 2 VL (12B) VLM 将视觉推理引入 RAG 管道，使系统
 
 ## 相关实体
 
-- [elasticpp重塑elasticsearch查询性能的c内核引擎](https://github.com/QianJinGuo/wiki/blob/main/entities/elasticpp重塑elasticsearch查询性能的c内核引擎.md)
+- [elasticpp重塑elasticsearch查询性能的c内核引擎](https://github.com/QianJinGuo/wiki-public/blob/main/entities/elasticpp重塑elasticsearch查询性能的c内核引擎.md)
 → [原文存档：分块向量化召回重排](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rag-chunking-vectorization-rerank-distillation.md)
 → [原文存档：全链路技术详解](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rag-full-pipeline-taobao.md)
 → [原文存档：流水线](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rag-chunk-embedding-rerank-pipeline.md)
@@ -875,11 +875,11 @@ RAG 系统的效果瓶颈不在模型，而在**入库质量**。同样的 Embed
 
 ## Related
 
-- [RAG 深度解析：分块向量化召回重排](https://github.com/QianJinGuo/wiki/blob/main/entities/rag-chunking-vectorization-rerank-distillation.md)
-- [RAG 全链路技术详解](https://github.com/QianJinGuo/wiki/blob/main/entities/rag-full-pipeline-taobao.md)
-- [RAG 分块向量化召回重排流水线](https://github.com/QianJinGuo/wiki/blob/main/entities/rag-chunk-embedding-rerank-pipeline.md)
-- [向量库 vs 知识图谱：RAG 的进阶路径](https://github.com/QianJinGuo/wiki/blob/main/entities/rag-vector-knowledge-graph-ontology.md)
-- [AI Agent 记忆系统工作原理](https://github.com/QianJinGuo/wiki/blob/main/entities/how-ai-agent-memory-works.md)
+- [RAG 深度解析：分块向量化召回重排](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-chunking-vectorization-rerank-distillation.md)
+- [RAG 全链路技术详解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-full-pipeline-taobao.md)
+- [RAG 分块向量化召回重排流水线](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-chunk-embedding-rerank-pipeline.md)
+- [向量库 vs 知识图谱：RAG 的进阶路径](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-vector-knowledge-graph-ontology.md)
+- [AI Agent 记忆系统工作原理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-ai-agent-memory-works.md)
 
 ## 深度分析
 
@@ -993,7 +993,7 @@ Amazon Nova Multimodal Embeddings 在 Amazon Bedrock 上可用，能为文本、
 
 **Amazon S3 Vectors**：作为托管式向量存储和查询层，无需集群管理或容量规划，按请求计费无持久基础设施。
 
-## 与 [Amazon Nova Lite 微调](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-nova-lite-fine-tuning-cost-effective-vision-detection-model-tuning-case-and-practice.md) 的关系
+## 与 [Amazon Nova Lite 微调](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-nova-lite-fine-tuning-cost-effective-vision-detection-model-tuning-case-and-practice.md) 的关系
 
 Amazon Nova Multimodal Embeddings 与  同属 Amazon Nova 家族的多模态能力，但定位不同：MME 专注于跨模态语义检索，将不同模态映射到统一向量空间；Lite 微调则针对特定视觉检测任务的端到端优化。两者都利用 Amazon Bedrock 的托管推理能力，但在下游任务上形成互补——检索 vs 判别。
 
@@ -1045,17 +1045,17 @@ Amazon Nova MME 的 `GENERIC_INDEX`（文档索引用）和 `GENERIC_RETRIEVAL`�
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-nova-manufacturing-intelligence.md)
 
-→ [Amazon Bedrock 模型推理无服务器架构案例](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-bedrock-model-inference-serverless-architecture-case-study.md)
+→ [Amazon Bedrock 模型推理无服务器架构案例](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-model-inference-serverless-architecture-case-study.md)
 
-→ [Amazon Nova Sonic 可扩展语音代理设计](https://github.com/QianJinGuo/wiki/blob/main/entities/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session.md)
+→ [Amazon Nova Sonic 可扩展语音代理设计](https://github.com/QianJinGuo/wiki-public/blob/main/entities/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session.md)
 
-→ [Amazon Nova 2 内容审核提示工程](https://github.com/QianJinGuo/wiki/blob/main/entities/prompting-amazon-nova-2-for-content-moderation.md)
+→ [Amazon Nova 2 内容审核提示工程](https://github.com/QianJinGuo/wiki-public/blob/main/entities/prompting-amazon-nova-2-for-content-moderation.md)
 
-→ [Amazon Bedrock AgentCore 运行时深度解析](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-bedrock-agentcore-runtime-deep-dive-and-scenario-analysis.md)
+→ [Amazon Bedrock AgentCore 运行时深度解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-agentcore-runtime-deep-dive-and-scenario-analysis.md)
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/amazon-aws-ai.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/amazon-aws-ai.md)
 
 ---
 
@@ -1090,19 +1090,19 @@ Amazon Nova MME 的 `GENERIC_INDEX`（文档索引用）和 `GENERIC_RETRIEVAL`�
 5. **建立 RAG 可观测性飞轮，从用户真实日志中迭代优化。** 调优顺序应该从真实问题日志出发：分析是漏召回多还是噪音多。RAG 项目需要回答的五个问题是——文档本身干净吗？chunk 切得合理吗？索引模式选对了吗？召回方式适合业务问题吗？是否需要 Rerank？ 建议逐步建立：回答是否有依据可追溯、Bad Case 是否能定位到具体环节、TopK/Score 调整是否有数据支撑。
 
 ## 相关实体
-- [Rag Chunking Optimization 2025](https://github.com/QianJinGuo/wiki/blob/main/entities/rag-chunking-optimization-2025.md)
-- [Rag Full Pipeline Taobao](https://github.com/QianJinGuo/wiki/blob/main/entities/rag-full-pipeline-taobao.md)
-- [Ai Agent Engineer Capability Map](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-engineer-capability-map.md)
-- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
-- [Claude Code Search Architecture Tencent 2026](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-search-architecture-tencent-2026.md)
+- [Rag Chunking Optimization 2025](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-chunking-optimization-2025.md)
+- [Rag Full Pipeline Taobao](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-full-pipeline-taobao.md)
+- [Ai Agent Engineer Capability Map](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-engineer-capability-map.md)
+- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
+- [Claude Code Search Architecture Tencent 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-search-architecture-tencent-2026.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rag-chunk-embedding-rerank-pipeline.md)
 
 RAG（Retrieval-Augmented Generation）流水线是 RAG 知识库从文档入库到答案生成的全链路工程实践，涵盖**离线阶段**（文档解析→清洗→分块→向量化→建索引）和**在线阶段**（查询改写→知识库路由→召回→重排→TopK/Score过滤→上下文拼接→大模型生成）。
 
-- [prosemirror @文档 mention：知识库 agent 输入框的工程化实现](https://github.com/QianJinGuo/wiki/blob/main/entities/prosemirror-knowledge-base-mention.md)
+- [prosemirror @文档 mention：知识库 agent 输入框的工程化实现](https://github.com/QianJinGuo/wiki-public/blob/main/entities/prosemirror-knowledge-base-mention.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/rag-knowledge-retrieval.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/rag-knowledge-retrieval.md)
 ## 核心定位：Skill 与 RAG 的分工
 
 Skill 负责**流程复制**（第一步做什么、第二步做什么），RAG 负责**知识调用**（做这件事需要参考哪些资料、历史经验、信息从哪里来）。两者组合才接近真正"蒸馏同事"的能力。
@@ -1287,10 +1287,10 @@ Graph RAG 常常被误解为"知识图谱 + 向量检索"的简单组合。它�
 7. **评测集生成要覆盖四种查询类型**：Single-Hop/Specific（简单事实）、Single-Hop/Abstract（概念解释）、Multi-Hop/Specific（多步推理）、Multi-Hop/Abstract（综合分析）。单一类型的测试集会导致对其他类型 query 的覆盖盲区。
 
 ## Related
-- [harness-engineering-systematic-explainer](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-systematic-explainer.md)
+- [harness-engineering-systematic-explainer](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-systematic-explainer.md)
 
-- [Agent 原理、架构与工程实践](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-engineering-principles-architecture-practice.md)
-- [AI Agent 工程师能力地图](https://github.com/QianJinGuo/wiki/blob/main/entities/ai-agent-engineer-capability-map.md)
+- [Agent 原理、架构与工程实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-engineering-principles-architecture-practice.md)
+- [AI Agent 工程师能力地图](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-engineer-capability-map.md)
 
 ---
 
@@ -1302,9 +1302,9 @@ Graph RAG 常常被误解为"知识图谱 + 向量检索"的简单组合。它�
 
 Rohit Ghumare 在 Karpathy 的 LLM Wiki gist 上更新的 V2 版本，把原版"让知识开始复利"的思路推到了"复利系统别烂掉"。核心新增：记忆生命周期、类型化知识图谱、混合检索、事件驱动、质量治理。
 
-与 [Karpathy LLM Wiki V2 中文概述](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-llm-wiki-v2-2026.md) 互补——原 entity 是中文入门解读，本文是 V2 深度技术分析 + 落地路线图 + 评测方法论。
+与 [Karpathy LLM Wiki V2 中文概述](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-llm-wiki-v2-2026.md) 互补——原 entity 是中文入门解读，本文是 V2 深度技术分析 + 落地路线图 + 评测方法论。
 
-→ [LLM Wiki 范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-wiki-paradigm.md) — 原版三层架构（Raw → Wiki → Schema）
+→ [LLM Wiki 范式](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/llm-wiki-paradigm.md) — 原版三层架构（Raw → Wiki → Schema）
 
 ## 原版回顾
 
@@ -1443,10 +1443,10 @@ V2 的评估方法论强调"围绕决策做"而非"功能全覆盖"。BM25、向
 
 ## 相关链接
 
-- → [Karpathy LLM Wiki V2 中文概述](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-llm-wiki-v2-2026.md) — 原版入门
-- → [LLM Wiki 范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-wiki-paradigm.md) — 概念定义
+- → [Karpathy LLM Wiki V2 中文概述](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-llm-wiki-v2-2026.md) — 原版入门
+- → [LLM Wiki 范式](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/llm-wiki-paradigm.md) — 概念定义
 - → 知识图谱 RAG — 图检索方法论
-- → [LLM Wiki 架构哲学](https://github.com/QianJinGuo/wiki/blob/main/entities/llm-wiki-architecture.md)
+- → [LLM Wiki 架构哲学](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-wiki-architecture.md)
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/karpathy-llm-wiki-v2-deep-analysis-rohit-ghumare.md)
 
 ---
@@ -1485,7 +1485,7 @@ MRAgent 的核心主张：**检索应该跟着推理一起走**——每发现�
 
 先通过 Cue 激活候选 Tag，再基于选定的 Tag 检索 Content——把关联推理和内容检索解耦。
 
-→ [Agent 记忆系统框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-systematic-framework.md)
+→ [Agent 记忆系统框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-systematic-framework.md)
 
 ## 多粒度记忆层
 
@@ -1499,7 +1499,7 @@ MRAgent 的核心主张：**检索应该跟着推理一起走**——每发现�
 
 构建阶段保持轻量，复杂关系推理推迟到检索阶段按需执行。
 
-→ [Agent Memory 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-architecture.md)
+→ [Agent Memory 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture.md)
 
 ## 主动重建算法
 
@@ -1601,10 +1601,10 @@ Single-hop 涨幅温和（83→91），Multi-hop 跳幅巨大（75→90）。这
 
 - 论文：https://arxiv.org/abs/2606.06036
 - GitHub：https://github.com/Ji-shuo/MRAgent
-- → [Agent Memory 架构](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-architecture.md) — 记忆系统设计模式
-- → [Agent Memory 模块化框架](https://github.com/QianJinGuo/wiki/blob/main/entities/agent-memory-modular-framework.md) — ICLR 2026 评测基准
-- → [Mem0：Agent Harness 记忆现状](https://github.com/QianJinGuo/wiki/blob/main/entities/state-of-memory-in-agent-harness-mem0-2026.md) — Mem0 等基线对比
-- → [Agent 记忆生命周期](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md)
+- → [Agent Memory 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture.md) — 记忆系统设计模式
+- → [Agent Memory 模块化框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-modular-framework.md) — ICLR 2026 评测基准
+- → [Mem0：Agent Harness 记忆现状](https://github.com/QianJinGuo/wiki-public/blob/main/entities/state-of-memory-in-agent-harness-mem0-2026.md) — Mem0 等基线对比
+- → [Agent 记忆生命周期](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-lifecycle-philosophies.md)
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mragent-memory-reconstructed-not-retrieved-nus-icml2026.md)
 
 ---
@@ -1700,8 +1700,8 @@ CR 模型依赖原子产品 ID 作为独立 token，这定义了模型能理解�
 
 ## 相关实体
 
-- [RAG 与检索技术](https://github.com/QianJinGuo/wiki/blob/main/concepts/retrieval-augmented-generation-rag.md)
-- [From Silos To Service Topology Why Netflix Built A Real Time](https://github.com/QianJinGuo/wiki/blob/main/entities/from-silos-to-service-topology-why-netflix-built-a-real-time.md)
+- [RAG 与检索技术](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/retrieval-augmented-generation-rag.md)
+- [From Silos To Service Topology Why Netflix Built A Real Time](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-silos-to-service-topology-why-netflix-built-a-real-time.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/instacart-ads-retrieval-generative-token-by-token.md)
 
@@ -1757,10 +1757,10 @@ CR 模型依赖原子产品 ID 作为独立 token，这定义了模型能理解�
 
 ## 相关实体
 
-- [RAG技术框架的演进方向](https://github.com/QianJinGuo/wiki/blob/main/entities/rag技术框架的演进方向.md) — Classic → Graph → Agentic RAG 演进路线，本文为其经典 RAG 打法提供实证对照
-- [AFAC2026 金融 AI Agent 竞赛](https://github.com/QianJinGuo/wiki/blob/main/entities/afac2026-financial-ai-agent-competition-harness.md) — 另一金融 AI 竞赛方案，可对比"RAG 问答"与"Agent 编排"两条路线
-- [RAG 分块-嵌入-重排全链路](https://github.com/QianJinGuo/wiki/blob/main/entities/rag-chunk-embedding-rerank-pipeline.md) — 与本文混合检索+重排设计互补的管道细节
-- [Stripe 金融合规 AI Agent 实践](https://github.com/QianJinGuo/wiki/blob/main/entities/stripe-financial-compliance-ai-agent-production-lessons.md) — 同为金融合规场景，可从生产侧视角印证本文的可追溯、可审计原则
+- [RAG技术框架的演进方向](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag技术框架的演进方向.md) — Classic → Graph → Agentic RAG 演进路线，本文为其经典 RAG 打法提供实证对照
+- [AFAC2026 金融 AI Agent 竞赛](https://github.com/QianJinGuo/wiki-public/blob/main/entities/afac2026-financial-ai-agent-competition-harness.md) — 另一金融 AI 竞赛方案，可对比"RAG 问答"与"Agent 编排"两条路线
+- [RAG 分块-嵌入-重排全链路](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-chunk-embedding-rerank-pipeline.md) — 与本文混合检索+重排设计互补的管道细节
+- [Stripe 金融合规 AI Agent 实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/stripe-financial-compliance-ai-agent-production-lessons.md) — 同为金融合规场景，可从生产侧视角印证本文的可追溯、可审计原则
 
 ---
 
@@ -1775,11 +1775,11 @@ CR 模型依赖原子产品 ID 作为独立 token，这定义了模型能理解�
 今天的话，我们会上点更硬的货，会结合空气小猪这个案例，讲清楚我们如何从 0 到 1 搭建一套 AI 客服，包括：
 
 ## 相关实体
-- [Rag技术框架的演进方向](https://github.com/QianJinGuo/wiki/blob/main/entities/rag技术框架的演进方向.md)
-- [Skill Rag Tsinghua Sra](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-rag-tsinghua-sra.md)
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/entities/harness-engineering-framework.md)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-claude-code-large-codebase-best-practices-50002a089323.md)
-- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
+- [Rag技术框架的演进方向](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag技术框架的演进方向.md)
+- [Skill Rag Tsinghua Sra](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-rag-tsinghua-sra.md)
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-framework.md)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-claude-code-large-codebase-best-practices-50002a089323.md)
+- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/实践教程真实ai客服落地全流程意图识别混合检索到数据飞轮.md)
 
@@ -1873,8 +1873,8 @@ SkillCorpus 是由 EverMind、盛大集团与北京大学联合提出的框架�
 
 ## 相关实体
 
-- [SkillOS: Learning Skill Curation for Self-Evolving Agents](https://github.com/QianJinGuo/wiki/blob/main/entities/skill-os-learning-skill-curation-self-evolving-agents.md)
-- [SkillComposer: 生成式技能组合](https://github.com/QianJinGuo/wiki/blob/main/entities/skillcomposer-generative-skill-composition-agent.md)
+- [SkillOS: Learning Skill Curation for Self-Evolving Agents](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-os-learning-skill-curation-self-evolving-agents.md)
+- [SkillComposer: 生成式技能组合](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skillcomposer-generative-skill-composition-agent.md)
 
 → [论文原文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillcorpus-arxiv-2607-15557.md) | [中文解读](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillcorpus-skill-screening-framework-mozhi-2026.md) | [PDF](assets/skillcorpus-arxiv-2607-15557.pdf)
 
@@ -1903,12 +1903,12 @@ SkillCorpus 是由 EverMind、盛大集团与北京大学联合提出的框架�
 
 ### 关联实体
 
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
-- [Karpathy Vibe Coding Agentic Engineering](https://github.com/QianJinGuo/wiki/blob/main/entities/karpathy-vibe-coding-agentic-engineering.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](https://github.com/QianJinGuo/wiki/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
-- [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
+- [Karpathy Vibe Coding Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-agentic-engineering.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
+- [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md)
 
 ---
 
@@ -2090,14 +2090,14 @@ ranked = reranker.rank(query, top_k_docs, top_k=5, return_documents=True)
 **5. 关注 embedding model + reranker 配对效应**：单独比较 reranker 质量不够——6 个 embedding model 搭配 Ettin Reranker 家族产生 36 种组合。固定 reranker 切换 embedder，或固定 embedder 切换 reranker，组合效果差异可能超过单个组件的升级收益。生产选型时应以端到端 pipeline（NDCG@10）为评估指标，而非孤立的模型 benchmark 。
 
 ## 相关实体
-- [Introducing The Ettin Reranker Family](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-the-ettin-reranker-family.md)
-- [Claude Code Openclaw Usage Ettin](https://github.com/QianJinGuo/wiki/blob/main/entities/claude-code-openclaw-usage-ettin.md)
-- [Gemma 4 Multi Token Prediction Drafters](https://github.com/QianJinGuo/wiki/blob/main/entities/gemma-4-multi-token-prediction-drafters.md)
-- [Continuousasync](https://github.com/QianJinGuo/wiki/blob/main/entities/continuousasync.md)
-- [Continuous Async](https://github.com/QianJinGuo/wiki/blob/main/entities/continuous-async.md)
+- [Introducing The Ettin Reranker Family](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-the-ettin-reranker-family.md)
+- [Claude Code Openclaw Usage Ettin](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-openclaw-usage-ettin.md)
+- [Gemma 4 Multi Token Prediction Drafters](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gemma-4-multi-token-prediction-drafters.md)
+- [Continuousasync](https://github.com/QianJinGuo/wiki-public/blob/main/entities/continuousasync.md)
+- [Continuous Async](https://github.com/QianJinGuo/wiki-public/blob/main/entities/continuous-async.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ettin-reranker-family.md)
-- [the next generation of speculative decoding: dflash and spec](https://github.com/QianJinGuo/wiki/blob/main/entities/lmsys-dflash-speculative-decoding-2026-06.md)
+- [the next generation of speculative decoding: dflash and spec](https://github.com/QianJinGuo/wiki-public/blob/main/entities/lmsys-dflash-speculative-decoding-2026-06.md)
 
 ## 参考文献
 

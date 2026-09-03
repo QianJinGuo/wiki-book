@@ -64,7 +64,7 @@ MCP 放弃会引发：身份验证碎片化、无审计追踪、供应商锁定�
 - [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](../ch03/004-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/production-ai-agents-mcp-cli-skills-stack-ayi.md)
-- [Mcp Server Patterns](https://github.com/QianJinGuo/wiki/blob/main/moc/mcp-server-patterns.md)
+- [Mcp Server Patterns](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mcp-server-patterns.md)
 
 ---
 

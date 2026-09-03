@@ -152,14 +152,14 @@ Skills 有两种执行模式，**Inline 是默认模式**，Fork 需要 Skill �
 ## 相关实体
 
 - [Claude Code 架构解析：从 Skill 调用到 Prompt Cache](../ch03/057-claude-code.html)
-- [Anthropic MCP 最新博客：Token 成本解法 + Tool Search](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-mcp-revisited-tool-search-code-orchestration.md)
+- [Anthropic MCP 最新博客：Token 成本解法 + Tool Search](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-mcp-revisited-tool-search-code-orchestration.md)
 - [Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式](../ch05/057-harness-engineering.html)
 - [Claude Code 12 个可复用的 Agentic Harness 设计模式](../ch03/048-claude-code-agent.html)
 - [Claude Code Governance：软规则与项目级行为规范](../ch03/057-claude-code.html)
 - [Agent Harness Context Management：Working Set 策略](../ch05/035-agent-harness.html)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/anthropic-ecosystem.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/claude-code-complete-guide.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/anthropic-ecosystem.md)
 ## 深度分析
 
 **1. "注入位置"是理解 Rules/MCP/Skills 本质差异的第一性原理**

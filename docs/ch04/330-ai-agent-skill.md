@@ -54,8 +54,8 @@ K8s 场景采用 DaemonSet 在集群节点运行 Agent Pod，Deployment 打上�
 - [Claude Code 团队部署与 Agent Harness](../ch05/035-agent-harness.html)
 - [下一代企业架构：CLI 流程与 Skill](../ch07/054-skill.html)
 - [阿里云 LLM Wiki 实践](../ch01/451-llm.html)
-- [可观测与监控 MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
+- [可观测与监控 MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/observability-monitoring.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
 
 ---
 

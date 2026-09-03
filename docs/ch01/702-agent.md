@@ -30,7 +30,7 @@ Agent 记忆存储方案深度洞察 涉及agent领域的核心技术议题。
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
 
 ---
 

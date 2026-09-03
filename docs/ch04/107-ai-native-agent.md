@@ -66,14 +66,14 @@
 
 ## 与库内相关实体关系
 
-- 与 [下一代企业数字化架构（系统CLI化/流程Skill化/员工Agent化）](https://github.com/QianJinGuo/wiki/blob/main/entities/enterprise-next-gen-architecture-zhan.md) 同属"企业数字化重构"主题，但本文从**协同/串联者**视角切入（Agent 作为新串联者重建流程），zhan 从**系统接口**视角切入（CLI/Skill/Agent 三层能力化），维度互补。
+- 与 [下一代企业数字化架构（系统CLI化/流程Skill化/员工Agent化）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/enterprise-next-gen-architecture-zhan.md) 同属"企业数字化重构"主题，但本文从**协同/串联者**视角切入（Agent 作为新串联者重建流程），zhan 从**系统接口**视角切入（CLI/Skill/Agent 三层能力化），维度互补。
 - 与 [高德广告工程的 AI Native 知识库体系](../ch05/018-ai-native.html) 同论"知识底座/知识库"，但高德是**工程实现视角**（接入层/检索/意图路由），本文是**组织协同形态视角**（知识底座在业务闭环中的位置与瓶颈）。
 - 与 [企业 AI 非技术困境（本体驱动 Agent 与知识治理）](257-ai.html) 共享本体论语言，但本文把 TBox/ABox 映射到知识底座的内容结构（规则/流程=类型层，数据=事实层）。
 - 与 [阿里 Devix Harness](../ch05/008-harness.html) 和 Qoder 系列实体同属文中点名的一线探索产品（协同工具概念雏形来源）。
 
 ## 相关实体
 
-- [下一代企业数字化架构：系统CLI化、流程Skill化、员工Agent化](https://github.com/QianJinGuo/wiki/blob/main/entities/enterprise-next-gen-architecture-zhan.md)
+- [下一代企业数字化架构：系统CLI化、流程Skill化、员工Agent化](https://github.com/QianJinGuo/wiki-public/blob/main/entities/enterprise-next-gen-architecture-zhan.md)
 - [高德广告工程的 AI Native 知识库体系](../ch05/018-ai-native.html)
 - [企业 AI 非技术困境](257-ai.html)
 - [阿里 Devix Harness](../ch05/008-harness.html)

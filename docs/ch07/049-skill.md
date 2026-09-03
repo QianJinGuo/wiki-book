@@ -98,12 +98,12 @@ Binary Eval + Reflection Agent 的组合，实质上是将 Agent 的自我改进
 
 - [Qoder Skills 完全指南](031-qoder-skills.html)
 - [要实现一个工作流选择-agent-skills-还是-ai-表格](../ch04/302-agent-skills.html)
-- [Garry Tan](https://github.com/QianJinGuo/wiki/blob/main/entities/garry-tan-yc-ceo.md)
+- [Garry Tan](https://github.com/QianJinGuo/wiki-public/blob/main/entities/garry-tan-yc-ceo.md)
 - [Agent Workflows](../ch03/004-agent.html)
 - [Hermes Agent](../ch04/161-hermes-agent.html)
-- [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-onboarding.md)
+- [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/hermes-agent-onboarding.md)
 - [你写的 Skill，及格了吗？](054-skill.html)
-- [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
+- [Hermes Agent Skill](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/hermes-agent-skill.md)
 - [AI Agent 工程师能力地图](../ch04/312-ai-agent.html)
 - [阿里云端到端业务需求专家 agent：multica 平台 + superai-* 技能集群 + tdd/pre-pus](../ch03/004-agent.html)
 

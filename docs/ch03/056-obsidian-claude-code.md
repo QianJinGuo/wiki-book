@@ -44,7 +44,7 @@ Claude Code 生成的知识资产分散在多个位置：`~/.claude/CLAUDE.md`�
 2. **REST API（社区插件）** → 灵活但多一层调用
 3. **文件系统 grep/glob** → 最慢、最耗 token
 
-这与 [harness 工程](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)中的「索引优先于扫描」原则完全一致——当你的知识库足够大时，让 Agent 调用索引比让它读文件便宜一到两个数量级。对正在选型的人来说，这意味着「Obsidian 是否提供官方 CLI/Skill」会成为是否值得作为 Agent 后端的关键指标。
+这与 [harness 工程](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)中的「索引优先于扫描」原则完全一致——当你的知识库足够大时，让 Agent 调用索引比让它读文件便宜一到两个数量级。对正在选型的人来说，这意味着「Obsidian 是否提供官方 CLI/Skill」会成为是否值得作为 Agent 后端的关键指标。
 
 ### QMD + 会话同步：把对话本身变成可检索资产
 
@@ -71,7 +71,7 @@ Claude Code 生成的知识资产分散在多个位置：`~/.claude/CLAUDE.md`�
 
 这是整篇文章里最有分量的一句话。直接含义是：让 Vault 保持「人类思考的密度」，把 Claude 的输出（计划、会话日志、生成的中间产物）单独放在 `~/.claude/`，避免 Vault 沦为「AI 输出垃圾场」。
 
-更深一层是：当 Vault 被 AI 自己生成的内容污染后，Claude 下次读 Vault 时会被自己之前生成的二手内容误导，形成「自我喂养」的反馈环。这是 [Agent 记忆生命周期](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md)里被反复强调的失败模式。
+更深一层是：当 Vault 被 AI 自己生成的内容污染后，Claude 下次读 Vault 时会被自己之前生成的二手内容误导，形成「自我喂养」的反馈环。这是 [Agent 记忆生命周期](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-lifecycle-philosophies.md)里被反复强调的失败模式。
 
 落地手段是几个自定义 slash command：
 
@@ -104,10 +104,10 @@ Claude Code 生成的知识资产分散在多个位置：`~/.claude/CLAUDE.md`�
 - [Obsidian Llm Wiki Local Kytmanov](../ch01/451-llm.html) — 本地 LLM Wiki 实践
 - [Claude Code 7 Layer Memory Architecture](057-claude-code.html) — Claude Code 的 7 层记忆架构
 - [Agent Memory Architecture](../ch04/323-perplexity-brain-self-improving-agent-memory-architecture.html) — Agent 记忆架构综述
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness 工程框架
-- [Agent Memory Lifecycle Philosophies](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md) — Agent 记忆生命周期哲学
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — Harness 工程框架
+- [Agent Memory Lifecycle Philosophies](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-lifecycle-philosophies.md) — Agent 记忆生命周期哲学
 - [我用claude搭了个自动新闻简报，30天后比我刷了一年的信息还有用](../ch01/340-claude.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/workflow-orchestration.md)
 
 ---
 

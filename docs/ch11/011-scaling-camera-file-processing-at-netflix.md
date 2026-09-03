@@ -5,7 +5,7 @@
 # Scaling Camera File Processing at Netflix
 
 ## 相关实体
-- [Netflix Real Time Service Topology](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-real-time-service-topology.md)
+- [Netflix Real Time Service Topology](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-real-time-service-topology.md)
 - [Netflix Nebula Archrules](077-netflix-nebula-archrules-java-archunit.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/scaling-camera-file-processing-at-netflix.md)

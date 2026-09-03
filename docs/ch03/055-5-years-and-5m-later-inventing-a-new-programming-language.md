@@ -70,7 +70,7 @@ Wasp 团队是 Haskell 老兵，对 DSL + 编译器 + 形式化规范有深厚�
 
 文中提到一个客户「试了 10 种 stack 最后落到 Wasp」的案例——这条产品 / market fit 信号现在反而比 5 年前更强。Wasp 的护城河在 AI 时代不是减弱而是放大。
 
-这与 [AI Coding Agent 走向生产](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-coding-agent-from-helloworld-to-production.md)中的「framework opinionation 是 AI 时代的新需求」论点完全互锁。
+这与 [AI Coding Agent 走向生产](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/ai-coding-agent-from-helloworld-to-production.md)中的「framework opinionation 是 AI 时代的新需求」论点完全互锁。
 
 ### 「不是用户告诉我们语言不行，是我们自己受不了维护成本」
 
@@ -83,7 +83,7 @@ Wasp 团队是 Haskell 老兵，对 DSL + 编译器 + 形式化规范有深厚�
 - 错的是「**面向用户**的 DSL 选择」（输入端）
 - 对的是「编译期理解整个应用」这件事本身（中间表示与输出端）
 
-把这个例子做成 [harness 工程](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)的反面教材也很合适：harness 的中间表示（IR）应该尽可能稳定，输入语言可以多样。把 IR 和输入语言绑定到 1:1 是过早优化。
+把这个例子做成 [harness 工程](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)的反面教材也很合适：harness 的中间表示（IR）应该尽可能稳定，输入语言可以多样。把 IR 和输入语言绑定到 1:1 是过早优化。
 
 ## 实践启示
 
@@ -99,9 +99,9 @@ Wasp 团队是 Haskell 老兵，对 DSL + 编译器 + 形式化规范有深厚�
 
 - [Ai Friendly Architecture Design Taobao](../ch05/019-ai-friendly.html) — AI 友好架构设计
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/229-anthropic-claude-code.html) — 大代码库最佳实践
-- [Ai Coding Agent From Helloworld To Production](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-coding-agent-from-helloworld-to-production.md) — AI Coding Agent 走向生产
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness 工程框架
-- [Harness Engineering Paradigm Shift](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-paradigm-shift.md) — Harness 工程范式转移
+- [Ai Coding Agent From Helloworld To Production](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/ai-coding-agent-from-helloworld-to-production.md) — AI Coding Agent 走向生产
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — Harness 工程框架
+- [Harness Engineering Paradigm Shift](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-paradigm-shift.md) — Harness 工程范式转移
 - [qwen code skill testing framework: recording, playback, and](../ch07/054-skill.html)
 
 ---

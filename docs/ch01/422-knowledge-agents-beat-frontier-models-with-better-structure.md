@@ -75,7 +75,7 @@ Knowledge Agent 与朴素 RAG 的核心区别在于知识的**预处理粒度**�
 
 Knowledge Agent 模式的一个核心经济驱动是 Anthropic 的计费变更。James Wang 计算，如果 Claude Code 的 headless 模式按 API 价格计费，他每月的 token 成本将超过 2000 美元。通过 Knowledge Agent + 本地 Qwen 模型，他将这一成本降至几乎为零（仅需一次性硬件投资）。
 
-这一经济逻辑与 [Moebius](https://github.com/QianJinGuo/wiki/blob/main/entities/moebius.md) 的"task-specific specialist > general-purpose giant"范式形成共振——在明确场景下，小模型 + 结构化知识 > 大模型 + 通用推理。
+这一经济逻辑与 [Moebius](https://github.com/QianJinGuo/wiki-public/blob/main/entities/moebius.md) 的"task-specific specialist > general-purpose giant"范式形成共振——在明确场景下，小模型 + 结构化知识 > 大模型 + 通用推理。
 
 ## 实践启示
 
@@ -87,7 +87,7 @@ Knowledge Agent 模式的一个核心经济驱动是 Anthropic 的计费变更�
 
 ## 相关实体
 
-- [Moebius](https://github.com/QianJinGuo/wiki/blob/main/entities/moebius.md) — 任务特化小模型超越通用大模型的另一范式
+- [Moebius](https://github.com/QianJinGuo/wiki-public/blob/main/entities/moebius.md) — 任务特化小模型超越通用大模型的另一范式
 - RAG（Retrieval-Augmented Generation）是 Knowledge Agent 的理论基础和差异化点
 - [Claude Code 动态工作流](../ch09/069-claude-code-dynamic-workflows.html) — Knowledge Agent 的主要使用场景之一
 

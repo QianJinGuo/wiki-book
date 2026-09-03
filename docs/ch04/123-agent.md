@@ -92,7 +92,7 @@ Letta 的双存储（向量库 + 原始文本）理论上可以兼顾检索效�
 - 如果你的场景是"短任务高并发"（如客服 bot），Pi 的进程隔离模型更安全；如果是"长任务深度推理"（如代码生成），OpenClaw/Claude Code 的 fork + 压缩模型更高效
 
 ## Related
-- [OpenClaw 架构解析](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md) — bootstrap 文件机制、工具结果预算、compaction 实现
+- [OpenClaw 架构解析](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/openclaw-architecture.md) — bootstrap 文件机制、工具结果预算、compaction 实现
 - [Claude Code 架构解析](../ch03/057-claude-code.html) — 文件读取双层门禁、查询前优化、compaction 触发机制
 - [Agent Skill 编写指南](../ch01/284-agent-skill.html) — Skill 的渐进式上下文注入机制
 - [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](312-ai-agent.html)
@@ -112,7 +112,7 @@ Letta 的双存储（向量库 + 原始文本）理论上可以兼顾检索效�
 
 - [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/057-claude-code.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/008-harness.html)
-- [Harness Engineering 七层框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-7-layers-framework.md)
+- [Harness Engineering 七层框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-7-layers-framework.md)
 [Context Window 管理对比](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/context-window-management-comparison.md)
 
 ## 相关实体
@@ -122,7 +122,7 @@ Letta 的双存储（向量库 + 原始文本）理论上可以兼顾检索效�
 - [Boris Cherny — 从 IDE 到 Agent 控制台](../ch03/004-agent.html)
 - [Hermes Agent vs OpenClaw 对比分析](161-hermes-agent.html)
 - [AutoClaw 使用体验：自带 66 个 Skill、可接入聊天工具、安全性高](../ch07/054-skill.html)
-- [Skills 系统设计三方对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/skill-system-design-comparison.md)
+- [Skills 系统设计三方对比](https://github.com/QianJinGuo/wiki-public/blob/main/comparisons/skill-system-design-comparison.md)
 - [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](../ch03/057-claude-code.html)
 
 ---

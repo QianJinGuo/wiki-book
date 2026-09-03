@@ -104,7 +104,7 @@ Service Topology 提供的知识图谱基础使这种智能自动化成为可能
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/data-infrastructure.md)
 - 分布式追踪
 - 爆炸半径分析
 
@@ -112,7 +112,7 @@ Service Topology 提供的知识图谱基础使这种智能自动化成为可能
 
 ---
 ## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

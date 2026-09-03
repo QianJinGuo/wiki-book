@@ -129,9 +129,9 @@ TamperedChef攻击链展现出高度结构化的入侵策略：
 3. **垂直整合深化**：广告公司与恶意软件开发商的整合模式可能成为行业新常态
 
 ## 相关实体
-- [Tracking Tampered Chef Clusters Aef374](https://github.com/QianJinGuo/wiki/blob/main/entities/tracking-tampered-chef-clusters-aef374.md)
+- [Tracking Tampered Chef Clusters Aef374](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tracking-tampered-chef-clusters-aef374.md)
 - [Agentexecutorgooglesdistributedagentruntime](../ch04/290-agentrun.html)
-- [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](https://github.com/QianJinGuo/wiki/blob/main/entities/howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve-2026-310.md)
+- [Howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve 2026 310](https://github.com/QianJinGuo/wiki-public/blob/main/entities/howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve-2026-310.md)
 - [Shub Reaper Macos Stealer Attack Chain](../ch04/257-ai.html)
 - [Liteframeefficientvisionencodersunlockframescalinginvideollms](451-llm.html)
 

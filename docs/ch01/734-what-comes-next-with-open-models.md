@@ -153,13 +153,13 @@ The path forward for open models is to solve different problems than the frontie
 
 文章的核心论点之一是开源模型社区需要从"单点突破"思维转向"生态系统构建"思维。历史上，安卓和 Chrome 的成功案例表明，开放系统能够通过**自我强化的网络效应**产生巨大价值——参与者越多，整个生态系统的创新速度越快，每个参与者的平均成本越低 。
 
-AI 领域的类比是：真正有价值的开放生态系统应该围绕**特定任务的工具链**（代码执行环境、检索系统、专用推理引擎）构建，而非单纯追求模型权重的开放。当前的开源社区在这方面严重不足——大多数努力仍集中在追赶通用基准测试，而非构建差异化的工具和中间件基础设施。这与 [对开源模型差距的分析](https://github.com/QianJinGuo/wiki/blob/main/entities/how-far-behind-are-open-models-2026.md) 中指出的问题相呼应：开源社区需要重新定位其在 AI 价值链中的位置。
+AI 领域的类比是：真正有价值的开放生态系统应该围绕**特定任务的工具链**（代码执行环境、检索系统、专用推理引擎）构建，而非单纯追求模型权重的开放。当前的开源社区在这方面严重不足——大多数努力仍集中在追赶通用基准测试，而非构建差异化的工具和中间件基础设施。这与 [对开源模型差距的分析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-far-behind-are-open-models-2026.md) 中指出的问题相呼应：开源社区需要重新定位其在 AI 价值链中的位置。
 
 ### 小模型专业化：被低估的赛道
 
 文章最具前瞻性的观点之一是小型专用开源模型的价值尚未被充分认识。当前的社区共识是小模型应该"在通用基准测试上表现良好"，但这恰恰是错误的目标函数——真正的价值在于用极低成本完成高频率重复任务，实现 10 倍速和 100 倍成本降低 。
 
-这一观点与 [Qwen 和 MiniMax 等模型系列的发展方向](https://github.com/QianJinGuo/wiki/blob/main/entities/latest-open-artifacts-19-qwen-glm-minimax-interconnects.md) 形成有趣的对照：即便是这些相对领先的开放模型家族，其产品策略仍以通用任务基准为主，而非特定领域的专业化。这一错位意味着市场存在显著的未满足需求——对于能够将小模型与精细化微调和专用工具链结合的团队而言，存在巨大的机会窗口。
+这一观点与 [Qwen 和 MiniMax 等模型系列的发展方向](https://github.com/QianJinGuo/wiki-public/blob/main/entities/latest-open-artifacts-19-qwen-glm-minimax-interconnects.md) 形成有趣的对照：即便是这些相对领先的开放模型家族，其产品策略仍以通用任务基准为主，而非特定领域的专业化。这一错位意味着市场存在显著的未满足需求——对于能够将小模型与精细化微调和专用工具链结合的团队而言，存在巨大的机会窗口。
 
 ## 实践启示
 

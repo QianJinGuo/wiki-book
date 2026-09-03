@@ -32,7 +32,7 @@ Anthropic 开发的 Agent SDK 核心思想是：**不要让模型在单一对话
 - **程序化工具调用**：Agent 即时编写脚本来批量处理数据，不需要把海量原始信息全部塞进对话背景
 - **文件系统 > 模型记忆**：对于长程智能体，本地磁盘上的 JSON 或 Markdown 文件记录进度比依赖上下文更可靠
 
-这套设计与 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的理念一致——通过外部结构化约束弥补模型内在局限。
+这套设计与 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 的理念一致——通过外部结构化约束弥补模型内在局限。
 
 ### 对抗式架构（Adversarial Architecture）
 
@@ -136,8 +136,8 @@ Rakuten 观察到委派单位从小块任务上移到决策级——人的注意
 - [Claude Code Large Codebase Team Deployment Agent Harness](../ch05/035-agent-harness.html)
 - [Hidden Technical Debt Agent Harness](../ch05/035-agent-harness.html)
 - [Long Running Agent Ralph Loop Harness Takeover](../ch05/011-agent-ralph-loop-harness.html)
-- [Harness Engineering 核心模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
+- [Harness Engineering 核心模式](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
 
 ---
 
