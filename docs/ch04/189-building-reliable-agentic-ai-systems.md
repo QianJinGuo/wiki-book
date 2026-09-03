@@ -71,7 +71,7 @@ PRINCE 的 RAG 管道展示了生产级检索系统的完整工程：
 
 ### Harness Engineering 的教科书实现
 
-PRINCE 系统是 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-7-layers-framework.md) 最完整的公开案例。文章明确使用了「harness engineering」这一术语来描述其架构方法论：
+PRINCE 系统是 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-7-layers-framework.md) 最完整的公开案例。文章明确使用了「harness engineering」这一术语来描述其架构方法论：
 
 > "Harness engineering shaped the scaffolding around the models: orchestration, tool boundaries, state persistence, retries, fallbacks, validation, reflection loops, observability, and human review."
 
@@ -79,7 +79,7 @@ PRINCE 系统是 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/m
 
 ### Context Engineering 的实践模式
 
-文章同时展示了 [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-context-window-management.md) 的系统性实践。核心思想是：**不是给模型更多信息，而是在正确的时间给正确的模型正确的信息**。这体现在：
+文章同时展示了 [Context Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-context-window-management.md) 的系统性实践。核心思想是：**不是给模型更多信息，而是在正确的时间给正确的模型正确的信息**。这体现在：
 
 - 不同 Agent 接收不同类型的上下文（规划 vs 检索 vs 证据 vs 合成）
 - Text-to-SQL 只注入相关 schema 而非完整数据库 schema
@@ -112,8 +112,8 @@ PRINCE 的三层反思机制可以映射到传统软件工程的质量保障实�
 
 ## 相关实体
 
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-7-layers-framework.md) — PRINCE 是该框架的教科书实现
-- [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-context-window-management.md) — 上下文纪律是该概念的实践模式
+- [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-7-layers-framework.md) — PRINCE 是该框架的教科书实现
+- [Context Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-context-window-management.md) — 上下文纪律是该概念的实践模式
 - Agentic RAG Patterns — PRINCE 展示了生产级 Agentic RAG 的完整实现
 - [AWS DevOps Agent](214-aws-devops-agent.html) — 另一个生产级多 Agent 系统案例
 - [When I Reject AI Code](../ch09/077-when-i-reject-ai-code-even-if-it-works.html) — 同样关注 AI 系统的工程可靠性

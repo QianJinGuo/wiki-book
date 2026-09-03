@@ -57,8 +57,8 @@ Reasoning Engine 在数据被触碰前验证用户问题是否映射到系统支
 
 ## Related
 
-- [Agent 安全架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-architecture.md)
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- [Agent 安全架构](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-security-architecture.md)
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/multi-tenant-llm-analytics-row-level-security-aws.md)
 

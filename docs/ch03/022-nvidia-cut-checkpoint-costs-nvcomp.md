@@ -43,12 +43,12 @@ Optimizer state（FP32）通常是检查点体积的最大组成部分。在考�
 文章标题强调通过"约30行Python代码"即可完成集成，这大幅降低了工程门槛。建议将nvCOMP checkpoint compression作为标准训练流程的一部分，而非事后的优化项。
 
 ## 相关实体
-- [Nvidia Gpu Kernel Translation Cute Python Julia](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-gpu-kernel-translation-cute-python-julia.md)
+- [Nvidia Gpu Kernel Translation Cute Python Julia](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-gpu-kernel-translation-cute-python-julia.md)
 - [Nvidia Edge First Llms Av Robotics](../ch01/170-nvidia-edge-first-llms-av-robotics.html)
 - [Nvidia Secure Local Agent Nemoclaw Openclaw](../ch04/315-nvidia-secure-local-agent-nemoclaw-openclaw.html)
 - [Nvidia Gemma 4 Edge Ai](../ch01/525-nvidia-gemma-4-edge-ai.html)
-- [Nvidia Mcg Toolkit Model Documentation](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-mcg-toolkit-model-documentation.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
+- [Nvidia Mcg Toolkit Model Documentation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-mcg-toolkit-model-documentation.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-cut-checkpoint-costs-nvcomp.md)
 

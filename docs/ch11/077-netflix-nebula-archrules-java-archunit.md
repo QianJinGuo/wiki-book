@@ -80,10 +80,10 @@ Netflix 的 ArchRules 是针对自身微服务生态设计的，但规则模式�
 架构规则 + 实时服务拓扑 = 完整治理：规则定义预期，拓扑展示现实，差异驱动行动。
 
 ## 相关实体
-- [Netflix Metadata Service Model Lifecycle Graph](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-metadata-service-model-lifecycle-graph.md)
-- [Netflix Live Operations Human Infrastructure](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-live-operations-human-infrastructure.md)
-- [Netflix Switchboard Lightbulb Model Routing](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-switchboard-lightbulb-model-routing.md)
-- [Netflix Druid Interval Aware Caching](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-druid-interval-aware-caching.md)
+- [Netflix Metadata Service Model Lifecycle Graph](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-metadata-service-model-lifecycle-graph.md)
+- [Netflix Live Operations Human Infrastructure](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-live-operations-human-infrastructure.md)
+- [Netflix Switchboard Lightbulb Model Routing](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-switchboard-lightbulb-model-routing.md)
+- [Netflix Druid Interval Aware Caching](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-druid-interval-aware-caching.md)
 - [High Throughput Graph Abstraction At Netflix](087-high-throughput-graph-abstraction-at-netflix-part-i.html)
 
 ## 相关引用

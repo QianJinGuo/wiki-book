@@ -60,8 +60,8 @@ Indexer 算子启动前引入与 Load Stream 的同步点，确保数据就绪�
 
 ## 相关页面
 [原始存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/glm5-scaling-pain-inference.md) — 完整正文
-[SGLang](https://github.com/QianJinGuo/wiki/blob/main/entities/sglang.md) — 本次 BugFix #2 修复代码已提交至 SGLang 开源社区
-[推理系统优化](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md) — LayerSplit 等推理效率优化技术
+[SGLang](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sglang.md) — 本次 BugFix #2 修复代码已提交至 SGLang 开源社区
+[推理系统优化](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/inference-optimization.md) — LayerSplit 等推理效率优化技术
 
 ## 深度分析
 ### 1. PD 分离架构的根本矛盾
@@ -93,6 +93,6 @@ LayerSplit 通过让每张 GPU 仅持有部分层的 KV Cache 以降低单卡显
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/coding-agent-practice.md)
 
 ---

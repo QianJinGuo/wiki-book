@@ -30,7 +30,7 @@ Symphony 因此不是让 Codex 多写几行代码，而是推动范式跃迁：�
 
 ### 线性控制平面：任务系统即 agent 工作流的状态机
 
-设计极简：把 Linear 变成 coding agent 的控制平面。每个 issue 对应独立 workspace，任务从 open 到 in progress、review、merging，每个状态都对应下一步动作，工程师只在任务系统里看工作流推进。这与 [orchestrator-worker 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/orchestrator-worker-architecture.md)、multi-agent orchestration 范式同源，但控制信号不是自定义协议，而是团队已在用的任务看板。
+设计极简：把 Linear 变成 coding agent 的控制平面。每个 issue 对应独立 workspace，任务从 open 到 in progress、review、merging，每个状态都对应下一步动作，工程师只在任务系统里看工作流推进。这与 [orchestrator-worker 架构](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/orchestrator-worker-architecture.md)、multi-agent orchestration 范式同源，但控制信号不是自定义协议，而是团队已在用的任务看板。
 
 「线性」的价值在于可观察性与可干预性：状态机外化在 Linear 里，人既看清全局也能随时介入；ticket 承载更大的工作单元——跨仓库多 PR、纯调研、带依赖的任务树，自然形成 DAG 并行执行，agent 还能反向创建 follow-up issue 实现自我扩展。
 
@@ -38,7 +38,7 @@ Symphony 因此不是让 Codex 多写几行代码，而是推动范式跃迁：�
 
 落地依赖整套工程配套：agent 友好的仓库结构（领任务、checkout、移状态都有约定）、自动化测试与防护栏（guardrails），以及持续盯 CI、rebase、解冲突、重试 flaky checks 的「最后一公里」护送，把变更护送到 Merging 状态。
 
-另一关键经验是「不要把 agent 当状态机里的死板节点」：Codex 可以创建多个 PR、读 review feedback 继续修改、借助 `gh` CLI 与 CI 日志技能完成远超「写代码」的工作，所以应给 agent 目标、工具和上下文，让它自行推理推进——这正是 [spec-driven agent development](https://github.com/QianJinGuo/wiki/blob/main/concepts/specification-driven-agent-development.md) 的形态。
+另一关键经验是「不要把 agent 当状态机里的死板节点」：Codex 可以创建多个 PR、读 review feedback 继续修改、借助 `gh` CLI 与 CI 日志技能完成远超「写代码」的工作，所以应给 agent 目标、工具和上下文，让它自行推理推进——这正是 [spec-driven agent development](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/specification-driven-agent-development.md) 的形态。
 
 ### 与编排框架的比较：Symphony 是规范，不是框架
 
@@ -59,8 +59,8 @@ Symphony 因此不是让 Codex 多写几行代码，而是推动范式跃迁：�
 
 - [Openai Symphony Codex Orchestration Linear Control Plane](316-openai.html) — 同源文章的深度分析版本
 - "多 Agent 协作编排" — 多智能体编排通用范式
-- [Orchestrator Worker Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/orchestrator-worker-architecture.md) — orchestrator-worker 架构模式
-- [Specification Driven Agent Development](https://github.com/QianJinGuo/wiki/blob/main/concepts/specification-driven-agent-development.md) — 规范驱动的 agent 开发
+- [Orchestrator Worker Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/orchestrator-worker-architecture.md) — orchestrator-worker 架构模式
+- [Specification Driven Agent Development](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/specification-driven-agent-development.md) — 规范驱动的 agent 开发
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html) — vibe coding 到 agentic engineering 的范式演进
 - [Ai Agent Loops Claude Code Codex](../ch03/057-claude-code.html) — Claude Code 与 Codex 的 agent 循环实践
 

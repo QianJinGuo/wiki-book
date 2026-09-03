@@ -55,8 +55,8 @@ devirtualized 代码要被 IDA、Binary Ninja 等工具正常加载，关键约�
 - Themida 的嵌套虚拟化（nested virtualization）能力——VM context 存在于二进制自身——是其区别于 VMProtect 的架构优势，也是更难 devirtualize 的原因之一
 
 ## 相关实体
-- [Static Devirtualization of Themida](https://github.com/QianJinGuo/wiki/blob/main/entities/back-engineering-static-devirtualization-themida.md)
-- [Static Devirtualization of Themida](https://github.com/QianJinGuo/wiki/blob/main/entities/static-devirtualization-themida.md)
+- [Static Devirtualization of Themida](https://github.com/QianJinGuo/wiki-public/blob/main/entities/back-engineering-static-devirtualization-themida.md)
+- [Static Devirtualization of Themida](https://github.com/QianJinGuo/wiki-public/blob/main/entities/static-devirtualization-themida.md)
 - [static devirtualization of themida](059-cve-2026-20182-unauthenticated-cisco-sd-wan-control-plane-c.html)
 
 ---

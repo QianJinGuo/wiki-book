@@ -29,7 +29,7 @@ LFM2.5-Encoders 与 [LFM2.5-230M](../ch04/257-ai.html)（decoder 小模型，面
 
 ## 相关概念
 
-- [推理优化](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md) — CPU 长上下文推理速度是核心卖点
+- [推理优化](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/inference-optimization.md) — CPU 长上下文推理速度是核心卖点
 - 长上下文技术 — 8192 token 上下文扩展
 - [LFM2.5-230M](../ch04/257-ai.html) — 同家族 decoder 模型
 

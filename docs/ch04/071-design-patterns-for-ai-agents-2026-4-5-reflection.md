@@ -61,16 +61,16 @@ Thought → Action → Observation 循环，仍是大多数单步任务的基础
 - [从多智能体编排到AI自主决策：资损防控体系的架构演进](257-ai.html)
 - [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](../ch01/459-deepseek-v4.html)
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/057-harness-engineering.html)
-- [Transformer Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/transformer-architecture.md)
-- [Agent 与后端统一架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-backend-unification.md)
-- [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
+- [Transformer Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/transformer-architecture.md)
+- [Agent 与后端统一架构](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-backend-unification.md)
+- [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki-public/blob/main/queries/harness-peer-review-framework.md)
 
 - [Thin Harness Fat Skills](../ch05/065-thin-harness-fat-skills-ai.html)
 - [你不知道的 Agent 原理架构与工程实践](276-agent-principle-architecture-engineering-practice.html)
-- [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- [Harness Engineering 框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 - [AI Agent 工程师能力地图](312-ai-agent.html)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/multi-agent-coordination.md)
 ## 第 2 来源：前端 T 站 4 模式选型决策树（2026-06-07）
 
 tabzhan / 前端T站 2026-06-07 发布的 4 执行模式对比 + 5 步选型决策树 + AgentScope 3 完整 Demo — 补齐了第 1 来源（综合设计模式概览）**只列模式不教选型** 的缺口。

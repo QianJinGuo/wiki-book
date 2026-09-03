@@ -174,7 +174,7 @@ Issue 本身处于 proposal 阶段（v1），距离生产可用还需解决：
 - [How Claude Code Works In Large Codebases Best Practices And Where To Start](349-how-claude-code-works-in-large-codebases-best-practices-and.html)
 - [Claude Code Skill Writing Guide](../ch03/057-claude-code.html)
 - [Ai Skill Evolution Framework](../ch07/010-ai-skill-evolution.html)
-- [Tracking Tampered Chef Clusters Aef374](https://github.com/QianJinGuo/wiki/blob/main/entities/tracking-tampered-chef-clusters-aef374.md)
+- [Tracking Tampered Chef Clusters Aef374](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tracking-tampered-chef-clusters-aef374.md)
 
 ---
 

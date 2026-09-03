@@ -64,8 +64,8 @@ LOL 分级的核心价值不是"更快响应"，而是"避免倦怠"——如果
 多时区运营的最大风险不是时差而是交接时的信息损失。设计标准化的交接协议（当前状态、活跃事件、待解决异常），而非依赖口头沟通。
 
 ## 相关实体
-- [Netflix Metadata Service Model Lifecycle Graph](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-metadata-service-model-lifecycle-graph.md)
-- [Netflix Druid Interval Aware Caching](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-druid-interval-aware-caching.md)
+- [Netflix Metadata Service Model Lifecycle Graph](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-metadata-service-model-lifecycle-graph.md)
+- [Netflix Druid Interval Aware Caching](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-druid-interval-aware-caching.md)
 - [High Throughput Graph Abstraction At Netflix](087-high-throughput-graph-abstraction-at-netflix-part-i.html)
 - [High Throughput Graph Abstraction At Netflix Part I](087-high-throughput-graph-abstraction-at-netflix-part-i.html)
 - [Netflix Nebula Archrules](077-netflix-nebula-archrules-java-archunit.html)

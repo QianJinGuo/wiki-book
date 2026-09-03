@@ -15,11 +15,11 @@ Chris 是这样评论的："ChatGPT 就像个猎人，他出去帮我找食物�
 - [Useful Memories Become Faulty When Continuously Updated By Llms](078-useful-memories-become-faulty-when-continuously-updated-by-l.html)
 - [Build Live Translation Apps With Gpt Realtime Translate](084-build-live-translation-apps-with-gpt-realtime-translate.html)
 - [Chatgpt Search Web Run Fanout Searchengineland](712-chatgpt.html)
-- [Stochastic Parrot Thought Experiment](https://github.com/QianJinGuo/wiki/blob/main/entities/stochastic-parrot-thought-experiment.md)
+- [Stochastic Parrot Thought Experiment](https://github.com/QianJinGuo/wiki-public/blob/main/entities/stochastic-parrot-thought-experiment.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/codex-autonomous-earning-money.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/openai-developer-ecosystem.md)
 ## 深度分析
 
 **1. Codex 实现了"自主经济闭环"——从任务发现到货币化，不需要人类介入**

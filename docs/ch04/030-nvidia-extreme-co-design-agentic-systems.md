@@ -14,7 +14,7 @@ Building for the Rising Complexity of Agentic Systems with Extreme Co&#x2d;Desig
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-extreme-co-design-agentic-systems.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
 ## 深度分析
 
 **1. Agentic token消耗是"结构性概率"而非"线性可预测"——这是Serving Economics的根本挑战**

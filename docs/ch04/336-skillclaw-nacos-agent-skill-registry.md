@@ -19,7 +19,7 @@ Agent Skill 的落地面临两个核心难题：
 1. **产生之困**：Agent 在真实任务中沉淀的经验难以从"一次个人成功实践"转化为可复用 Skill。经验停留在本地 memory，没有形成团队资产
 2. **共享之困**：即使提炼成 Skill，如何被团队发现、使用、版本管理、审核、回滚？Skill 只是本地文件就无法团队级复用
 
-这两个困境本质上是 [Agent 记忆系统](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-architecture.md) 从"个人记忆"到"组织知识"跃迁的核心瓶颈。
+这两个困境本质上是 [Agent 记忆系统](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-architecture.md) 从"个人记忆"到"组织知识"跃迁的核心瓶颈。
 
 ### SkillClaw 与 Nacos 各解决什么问题
 
@@ -101,8 +101,8 @@ SkillClaw × Nacos 的联合工作流程：
 - [Qoder Skills 完全指南从零开始让 Ai 按你的标准执行](../ch07/031-qoder-skills.html)
 - [Perplexity Internal Skill Design Guide Xiaojianke](../ch07/054-skill.html)
 - [Deli Auto Research Skill V2 Continual Learning Self Improvement](../ch07/054-skill.html)
-- [Agent 记忆系统六大学派](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-architecture.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
+- [Agent 记忆系统六大学派](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-architecture.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
 
 ---
 

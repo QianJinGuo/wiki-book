@@ -8,13 +8,13 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/continuousasync.md)
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-model-research-latest-directions.md)
+> [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-model-research-latest-directions.md)
 
 - [Development environments for your cloud agents](004-agent.html)
 - [AI Infra 系统性拆解：传统后台工程师视角](../ch01/748-ai-infra.html)
 - [ml-intern — Hugging Face 自主 ML 工程代理](004-agent.html)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
 ## 深度分析
 ### 1. 同步批处理的根本性低效
 Continuous Batching 通过紧密打包的批次调度来提高 GPU 利用率，消除了因 padding 造成的计算浪费。然而，同步批处理本身存在第二个效率瓶颈：默认情况下，CPU 和 GPU 是串行工作的——GPU 计算时 CPU 等待，CPU 准备下一个批次时 GPU 等待。 在每秒运行数百步的连续批处理循环中，这些空闲间隙累积起来可以达到总运行时间的近四分之一。Hugging Face 的实测数据显示，在生成 8K tokens、批大小为 32、使用 8B 模型的场景下，总生成时间为 300.6 秒，其中 GPU 处于空闲等待 CPU 完成的比例为 24.0%。 换言之，如果能消除 CPU 开销，理论上可以免费获得 24% 的加速——不需要任何新的 kernel 或模型修改。

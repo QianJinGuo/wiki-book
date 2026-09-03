@@ -128,8 +128,8 @@ graph TB
 
 ## 与现有 Wiki 的关联
 与 [Hermes Agent Deep Dive](161-hermes-agent.html) 互补：Hermes Agent 的 Skill 提炼和 nudging 在本文有更系统化的分类定位。
-与 [Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md) 互补：self-evolution 主题的完整六条路归类，ADCA-GRPO/HyperAgents/Meta-Harness 是新维度。
-与 [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 互补：第六条"编排自优化"是 Harness 工程化的最新前沿（Stanford Meta-Harness）。
+与 [Hermes Agent](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/hermes-agent.md) 互补：self-evolution 主题的完整六条路归类，ADCA-GRPO/HyperAgents/Meta-Harness 是新维度。
+与 [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 互补：第六条"编排自优化"是 Harness 工程化的最新前沿（Stanford Meta-Harness）。
 与 [Agent Engineering Principles Architecture Practice](../ch03/004-agent.html) 互补：后者 Harness 比模型关键 → 前者第六条机制具体展示如何自动化 Harness。
 
 ## 核心命题
@@ -145,18 +145,18 @@ graph TB
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch03/004-agent.html)
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/057-harness-engineering.html)
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/057-harness-engineering.html)
-- [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md)
+- [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/karpathy-llm-wiki-v2.md)
 - [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/476-llm-wiki-obsidian-wiki-gbrain.html)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/008-harness.html)
 - [hermes-agent-self-evolving-source-analysis](161-hermes-agent.html)
-- [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
+- [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki-public/blob/main/queries/harness-peer-review-framework.md)
 - [Agent Memory 架构解析](133-agent-memory.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/337-claude-code-harness-deep-understanding.html)
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html)
 - [Agent Harness 架构](../ch05/035-agent-harness.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](098-karpathy-vibe-coding-agentic-engineering.html)
 - [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](176-openclaw.html)
-- [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
+- [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki-public/blob/main/queries/agent-memory-system-design.md)
 - [企业级AI记忆基质三层架构：事实/交互/行动记忆](257-ai.html)
 - [GBrain](../ch01/194-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/004-agent.html)
@@ -165,7 +165,7 @@ graph TB
 - [OpenHuman: AI Agent 持久记忆框架](133-agent-memory.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/008-harness.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/008-harness.html)
-- [上下文工程 - 三种Memory方案对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md)
+- [上下文工程 - 三种Memory方案对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md)
 - [AI Agent 工程师能力地图](312-ai-agent.html)
 
 - [Chatgpt Dreaming V3 Long Term Memory Xinzhiyuan](../ch01/699-chatgpt-dreaming-v3.html)
@@ -173,7 +173,7 @@ graph TB
 - [llm 自我提升系统综述 — yang 等 113 页四阶段闭环框架（zesearch nlp lab）](../ch01/451-llm.html)
 - [recursive first steps toward automated ai research：sota 三基准自](257-ai.html)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-engineering-guide.md)
 ## 深度分析
 ### 六条路的层次结构
 六种机制并非在同一平面竞争，而是在**认知层次**上层层递进：

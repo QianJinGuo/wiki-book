@@ -143,7 +143,7 @@ SkillEvo 从**进化梯度的持续供给**角度补全自进化路线（腾讯�
 - [Hermes Agent 自进化](../ch04/161-hermes-agent.html)
 - [Agent 自改进六机制](../ch03/004-agent.html)
 - [阿里 Agentic Cloud](../ch04/273-agentic-cloud.html)
-- [MOC: LLM 研究前沿](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-research-frontiers.md)
+- [MOC: LLM 研究前沿](https://github.com/QianJinGuo/wiki-public/blob/main/moc/llm-research-frontiers.md)
 
 ---
 

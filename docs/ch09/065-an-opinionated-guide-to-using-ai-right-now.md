@@ -84,7 +84,7 @@ OpenAI 的使用数据揭示了一个重要事实：AI 的最大用途是**实�
 
 ### Agent 模型的范式转变
 
-Mollick 对 Chat/Agent/Wizard 三种模型的区分反映了 AI 产品设计的核心张力：**速度 vs 深度**。Agent 模型本质上是把 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的理念内置到了模型推理过程中——它不只是回答问题，而是自主执行多步骤工作流。这与 [Claude Code](../ch03/057-claude-code.html) 的自主循环异曲同工，但以更轻量的方式呈现在普通用户面前。
+Mollick 对 Chat/Agent/Wizard 三种模型的区分反映了 AI 产品设计的核心张力：**速度 vs 深度**。Agent 模型本质上是把 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 的理念内置到了模型推理过程中——它不只是回答问题，而是自主执行多步骤工作流。这与 [Claude Code](../ch03/057-claude-code.html) 的自主循环异曲同工，但以更轻量的方式呈现在普通用户面前。
 
 ### 模型选择的战略意义
 
@@ -107,7 +107,7 @@ Mollick 明确指出：如果你的使用场景在图表中显示免费模型就
 
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
-- [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md)
+- [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04/176-openclaw.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/035-agent-harness.html)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/004-agent.html)

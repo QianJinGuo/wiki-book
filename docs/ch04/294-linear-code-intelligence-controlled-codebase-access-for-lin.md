@@ -89,12 +89,12 @@ Code Intelligence 的访问权限直接继承 GitHub 权限模型——"Limited 
 
 ## 相关实体
 
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Agent 工程化的更高层抽象
+- [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — Agent 工程化的更高层抽象
 - `Pydantic Ai Progressive Agent Skills Automatorrunner` — Agent 框架的另一视角
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-05-14-code-intelligence-1778979927.md)
 - [Code Intelligence Changelog](353-code-intelligence-changelog.html)
 - [stack overflow for agents — ephemeral intelligence gap 框架与 a](../ch03/004-agent.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/tool-use-mcp-patterns.md)
 
 ---
 

@@ -11,7 +11,7 @@
 - [zapocalypse: the attack chain that could have hijacked zapie](../ch11/193-zapocalypse-the-attack-chain-that-could-have-hijacked-zapie.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/google-brings-local-ai-agents-to-laptops-with-gemma-4-12b-20260606.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/data-infrastructure.md)
 ## 深度分析
 
 Google brings local AI agents to laptops with Gemma 4 12B 涉及agent领域的核心技术议题。

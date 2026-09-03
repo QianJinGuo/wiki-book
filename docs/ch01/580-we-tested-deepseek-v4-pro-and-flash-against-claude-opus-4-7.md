@@ -17,7 +17,7 @@
 
 - [deepseek-v4深度拆解一篇论文同时做了五件大事](459-deepseek-v4.html)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/evaluation-benchmarks-extended.md)
 ## 深度分析
 ### 评测方法论的价值
 本次评测采用 FlowGraph 规范，一个包含 20 个端点、持久状态、租约管理、重试和事件流的基础设施级工作流编排后端。这比典型的编码基准测试更重，更能push模型到极限 ^。
@@ -42,7 +42,7 @@ DeepSeek V4 Flash 还有另一个致命问题：路由前缀错误。规范要�
 
 ## 相关查询
 
-- [DeepSeek 模型技术优势与 Agent 开发选型](https://github.com/QianJinGuo/wiki/blob/main/queries/deepseek-model-technical-advantages-agent-development-considerations.md) — DeepSeek V4 技术优势、训练方法、推理成本与 Agent 开发场景选型
+- [DeepSeek 模型技术优势与 Agent 开发选型](https://github.com/QianJinGuo/wiki-public/blob/main/queries/deepseek-model-technical-advantages-agent-development-considerations.md) — DeepSeek V4 技术优势、训练方法、推理成本与 Agent 开发场景选型
 
 ## 实践启示
 ### 对于 AI 应用开发者的建议

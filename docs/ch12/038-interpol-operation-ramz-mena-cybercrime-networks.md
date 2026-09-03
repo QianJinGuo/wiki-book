@@ -73,11 +73,11 @@ Group-IB 和 Team Cymru 的参与表明私营部门威胁情报已成为执法�
 1. **警惕"境外就业"陷阱**：约旦案例显示犯罪组织利用虚假就业承诺招募受害者，个人应对境外工作机会进行尽职调查，避免交出证件。
 2. **定期检查设备入侵迹象**：卡塔尔案例中设备所有者对入侵不知情，个人应定期检查是否有异常进程、未授权连接或性能异常。
 ## 相关实体
-- [London Met Police Big Tech Data Requests](https://github.com/QianJinGuo/wiki/blob/main/entities/london-met-police-big-tech-data-requests.md)
+- [London Met Police Big Tech Data Requests](https://github.com/QianJinGuo/wiki-public/blob/main/entities/london-met-police-big-tech-data-requests.md)
 - [Nathan Lambert Claude Mythos Open Weights](../ch01/326-nathan-lambert.html)
-- [Shinyhunters 7 Eleven Data Breach](https://github.com/QianJinGuo/wiki/blob/main/entities/shinyhunters-7-eleven-data-breach.md)
-- [Japan Pm Cybersecurity Review Anthropic Mythos](https://github.com/QianJinGuo/wiki/blob/main/entities/japan-pm-cybersecurity-review-anthropic-mythos.md)
-- [New Cybersecurity Coalition Us Policy](https://github.com/QianJinGuo/wiki/blob/main/entities/new-cybersecurity-coalition-us-policy.md)
+- [Shinyhunters 7 Eleven Data Breach](https://github.com/QianJinGuo/wiki-public/blob/main/entities/shinyhunters-7-eleven-data-breach.md)
+- [Japan Pm Cybersecurity Review Anthropic Mythos](https://github.com/QianJinGuo/wiki-public/blob/main/entities/japan-pm-cybersecurity-review-anthropic-mythos.md)
+- [New Cybersecurity Coalition Us Policy](https://github.com/QianJinGuo/wiki-public/blob/main/entities/new-cybersecurity-coalition-us-policy.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/interpol-operation-ramz-mena-cybercrime.md)
 

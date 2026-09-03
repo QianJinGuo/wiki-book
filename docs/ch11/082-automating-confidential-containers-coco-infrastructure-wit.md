@@ -37,15 +37,15 @@ Kyverno 本身运行在 CoCo 信任模型中标记为不可信的 Kubernetes 控
 4. **条件密钥分发**：凭证或密钥仅在证明成功后才会送达，确保敏感数据仅在已验证的可信运行环境中可用
 
 ## 相关实体
-- [Eks Gpu Operator Custom Driver Cuda Workload](https://github.com/QianJinGuo/wiki/blob/main/entities/eks-gpu-operator-custom-driver-cuda-workload.md)
+- [Eks Gpu Operator Custom Driver Cuda Workload](https://github.com/QianJinGuo/wiki-public/blob/main/entities/eks-gpu-operator-custom-driver-cuda-workload.md)
 - [From Kubernetes Dev Setup To Production What Actually Change](072-from-kubernetes-dev-setup-to-production-what-actually-chang.html)
 - [Back Up And Restore Your Amazon Eks Cluster Resources Using ](../ch01/072-back-up-and-restore-your-amazon-eks-cluster-resources-using.html)
-- [Hiclaw V110 K8S Hermes Worker](https://github.com/QianJinGuo/wiki/blob/main/entities/hiclaw-v110-k8s-hermes-worker.md)
+- [Hiclaw V110 K8S Hermes Worker](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hiclaw-v110-k8s-hermes-worker.md)
 - [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](../ch04/176-openclaw.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/automating-confidential-containers-coco-infrastructure-with-kyverno.md)（CNCF Blog, 2026-05-19）
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-privacy-landscape.md)
 ## 深度分析
 ### 1. 零信任安全模型的工程化代价
 CoCo 将"控制平面不可信"作为核心安全公理，这从设计上是对的——但这把安全验证的复杂度从基础设施层推到了应用层。Kyverno 的价值在于将这部分复杂度重新封装回平台层，让应用开发者无需理解 TEE、RTMR、initdata 等底层概念即可部署可信工作负载。这是一种典型的**平台工程（Platform Engineering）** 思路：通过 API 抽象掉安全复杂性。

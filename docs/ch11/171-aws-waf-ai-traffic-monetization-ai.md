@@ -99,7 +99,7 @@ WAF Bot Control 必须**先启用**（Common 或 Targeted level），monetizatio
 ## 原文链接
 
 ## 相关实体
-- [使用 amazon cloudfront 和 aws waf 大规模交付 wordpress](https://github.com/QianJinGuo/wiki/blob/main/entities/使用-amazon-cloudfront-和-aws-waf-大规模交付-wordpress.md)
+- [使用 amazon cloudfront 和 aws waf 大规模交付 wordpress](https://github.com/QianJinGuo/wiki-public/blob/main/entities/使用-amazon-cloudfront-和-aws-waf-大规模交付-wordpress.md)
 - [让 ai 代理自己付钱：基于 amazon bedrock agentcore 与 x402 的 agentic pay](045-bedrock-agentcore.html)
 - [introducing claude platform on aws: anthropic’s native platf](../ch01/365-introducing-claude-platform-on-aws-anthropic-s-native-platf.html)
 

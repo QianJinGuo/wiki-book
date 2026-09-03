@@ -101,7 +101,7 @@ Harness Engineering 的第一个局限是**复杂度爆炸**——设计一个�
 
 ### 洞察 2：Rahul Patil / AI 技术立文论述的方法论价值
 
-Rahul 的论述核心贡献在于**把「概率性工程的最佳实践」系统化**——传统软件工程的确定性测试范式在 LLM 场景失效后，社区急需新的工程纪律。Rahul 提出的多层 verifier、context 作为稀缺资源、工具即产品等命题，本质上是在为「**概率性软件工程**」建立方法论基础。AI 技术立文的 4 层架构（应用 / 编排 / 控制 / 运行时）则为这个方法论提供了可操作的结构框架。两文结合，第一次让 Harness Engineering 从业者有了「**从哪里入手、往哪里演进**」的共同语言。 [Verifier 驱动开发](https://github.com/QianJinGuo/wiki/blob/main/concepts/verifier-driven-development.md) 的兴起是这个方法论价值的直接体现。
+Rahul 的论述核心贡献在于**把「概率性工程的最佳实践」系统化**——传统软件工程的确定性测试范式在 LLM 场景失效后，社区急需新的工程纪律。Rahul 提出的多层 verifier、context 作为稀缺资源、工具即产品等命题，本质上是在为「**概率性软件工程**」建立方法论基础。AI 技术立文的 4 层架构（应用 / 编排 / 控制 / 运行时）则为这个方法论提供了可操作的结构框架。两文结合，第一次让 Harness Engineering 从业者有了「**从哪里入手、往哪里演进**」的共同语言。 [Verifier 驱动开发](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/verifier-driven-development.md) 的兴起是这个方法论价值的直接体现。
 
 ### 洞察 3：LLM 作为新运行时的工程范式重塑
 
@@ -117,7 +117,7 @@ Karpathy 的「Software 3.0」类比在 2026 年已经不只是隐喻，而是�
 
 ## 实践启示
 
-团队启动 Harness Engineering 时遵循 4 步。**Step 1：从现有工具的痛点出发**——不要「先搭 harness 再找场景」，而是「**有 3+ 个真实 agent 任务痛点**」再投入 harness 工程。**Step 2：先 100 行原型再产品化**——参考 Claude Code 演化路径，先用最少代码跑通主循环，验证假设后再产品化。**Step 3：选 platform 优先选 OpenAI 兼容 API**——避免被单家平台锁定。**Step 4：每月 review harness 质量**——verifier 通过率、tool 调用成功率、context 命中率、成本/token 等指标作为月度 review 输入。**关键原则：harness 应该是「**慢慢长出来**」而非「**一次到位**」**——这与 [Agent 作为 Software 3.0 基础设施](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-as-software-3-0-substrate.md) 的整体哲学一致。^[concepts/agent-as-software-3-0-substrate]
+团队启动 Harness Engineering 时遵循 4 步。**Step 1：从现有工具的痛点出发**——不要「先搭 harness 再找场景」，而是「**有 3+ 个真实 agent 任务痛点**」再投入 harness 工程。**Step 2：先 100 行原型再产品化**——参考 Claude Code 演化路径，先用最少代码跑通主循环，验证假设后再产品化。**Step 3：选 platform 优先选 OpenAI 兼容 API**——避免被单家平台锁定。**Step 4：每月 review harness 质量**——verifier 通过率、tool 调用成功率、context 命中率、成本/token 等指标作为月度 review 输入。**关键原则：harness 应该是「**慢慢长出来**」而非「**一次到位**」**——这与 [Agent 作为 Software 3.0 基础设施](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-as-software-3-0-substrate.md) 的整体哲学一致。^[concepts/agent-as-software-3-0-substrate]
 
 ## 2026 落地的 4 个工程重点
 
@@ -155,7 +155,7 @@ harness 不会「**一次到位**」——它在生产中会不断暴露问题�
 - 每次任务平均 token 消耗（趋势）
 - 用户 feedback rate
 
-根据指标调整 harness 配置——这与 [Agent 自我改进循环](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-self-improvement-loops.md) 的「harness 也是 agent 的一部分」理念一致。
+根据指标调整 harness 配置——这与 [Agent 自我改进循环](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-self-improvement-loops.md) 的「harness 也是 agent 的一部分」理念一致。
 
 ## 2026 Harness Engineering vs 2024 比较
 

@@ -10,7 +10,7 @@
 - [karpathy × boris 访谈：software 3.0 时代编程完整地图](451-llm.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-team-10-tips-boris-data派THU.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/workflow-orchestration.md)
 ## 深度分析
 
 Claude Code Team 10 Tips Boris Data派Thu 涉及agent领域的核心技术议题。

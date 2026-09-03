@@ -198,7 +198,7 @@ Nacos Skill/Worker Registry 将互联网公司久经考验的微服务治理体�
 ## 相关资源
 
 ## 相关实体
-- [Hiclaw V110 K8S Hermes Worker](https://github.com/QianJinGuo/wiki/blob/main/entities/hiclaw-v110-k8s-hermes-worker.md)
+- [Hiclaw V110 K8S Hermes Worker](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hiclaw-v110-k8s-hermes-worker.md)
 - [Defense_At_Ai_Speed_Microsofts_New_Multi](257-ai.html)
 - [Agentscope Java Harness Framework Enterprise Distributed](../ch05/008-harness.html)
 - [Ai Enhanced Data Solutions With Database 26Ai](257-ai.html)

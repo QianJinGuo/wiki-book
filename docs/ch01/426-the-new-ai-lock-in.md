@@ -48,7 +48,7 @@ Model Context Protocol 是有用的：它把模型连接工具与数据源的成
 
 ## 相关实体
 
-- [Model Context Protocol (MCP)](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-context-protocol-mcp.md)
+- [Model Context Protocol (MCP)](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/model-context-protocol-mcp.md)
 - [企业级 Agent 编排](../ch04/242-agent-orchestration.html)
 - [Claude Cowork](340-claude.html)
 - [LangGraph](../ch04/165-langgraph.html)

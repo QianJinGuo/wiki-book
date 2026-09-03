@@ -164,7 +164,7 @@ Fable 5 是"有保护措施的 Mythos 级功能"，而非"无限制的 Mythos"�
 - [Skill Rm Qwen Agent Skill Reward Model](284-agent-skill.html)
 - [Subagents 详解Claude Code 如何避免上下文污染](../ch03/057-claude-code.html)
 - [Skill Hub Organization Asset Winty](../ch07/054-skill.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/vision-multimodal.md)
 
 ---
 

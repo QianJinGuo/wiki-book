@@ -73,7 +73,7 @@ Boris Cherny 这套配置的深层逻辑，是把「错误修复」从人力密�
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/workflow-orchestration.md)
 
 ---
 

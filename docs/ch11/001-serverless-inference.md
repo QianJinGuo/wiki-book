@@ -7,9 +7,9 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/serverless-inference.md)
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-model-research-latest-directions.md)
+> [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-model-research-latest-directions.md)
 
-- [How to Calculate the Inference Efficiency Ratio](https://github.com/QianJinGuo/wiki/blob/main/entities/how-to-calculate-the-inference-efficiency-ratio.md)
+- [How to Calculate the Inference Efficiency Ratio](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-to-calculate-the-inference-efficiency-ratio.md)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](211-bedrock.html)
 
 - [55+ models, every modality. one api key, one bill.](001-serverless-inference.html)

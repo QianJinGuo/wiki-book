@@ -235,7 +235,7 @@ DIPG 的独特贡献是：**把"verify 闭环"工程化到具体代码级别**�
 
 - [how grab is using ai agents to boost team productivity](../ch04/312-ai-agent.html)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/multi-agent-coordination.md)
 ## 深度分析
 
 ### 分析 1：架构翻转背后的工程哲学

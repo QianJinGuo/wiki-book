@@ -33,7 +33,7 @@ Sell more 的落地机制是微软创业计划较独特的商业化设计。初�
 风险在于依赖度不对称——初创的销售通路高度依赖微软的企业资源和 Marketplace 流量，一旦生态规则或分成政策变化，其商业化路径会受影响。与之对照的是 [AI 原生创业基金指南](../ch05/018-ai-native.html) 与 [Anthropic AI 原生创业手册](560-anthropic-ai.html) 所代表的另一极：强调从第一天就在自家产品内构建可持续业务，而非依赖单一云厂商的单向通道。
 
 ### 4. 与竞品及近邻条款的边界
-允许与现有云提供商并行使用、零一次性迁移要求，是该计划刻意降低进入门槛的设计，避免初创因「迁移成本」而放弃申请。但这也意味着微软的锁定靠的是後续的使用量成长而非前期合约。作为对比，[云 AI 基础设施](https://github.com/QianJinGuo/wiki/blob/main/concepts/cloud-ai-infrastructure.md) 语境下的各家超大规模厂商都在用类似「积分 + 生态」的手段争夺 AI 工作负载，Microsoft for Startups 的差异化在于它是把企业采购通路（Marketplace + co-sell）作为一等公民打包进创业计划的方案。
+允许与现有云提供商并行使用、零一次性迁移要求，是该计划刻意降低进入门槛的设计，避免初创因「迁移成本」而放弃申请。但这也意味着微软的锁定靠的是後续的使用量成长而非前期合约。作为对比，[云 AI 基础设施](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/cloud-ai-infrastructure.md) 语境下的各家超大规模厂商都在用类似「积分 + 生态」的手段争夺 AI 工作负载，Microsoft for Startups 的差异化在于它是把企业采购通路（Marketplace + co-sell）作为一等公民打包进创业计划的方案。
 
 ## 实践启示
 1. **尽早申请、用 MVP 量级验证。** 无需等到「完美时机」，获批即有最高 $1,000 启动积分，足以用最小成本覆盖 MVP 阶段的核心云消耗，验证产品假设后再决定是否深入。
@@ -44,14 +44,14 @@ Sell more 的落地机制是微软创业计划较独特的商业化设计。初�
 6. **警惕单一通道依赖。** 让企业销售通路高度依赖微软的 Marketplace 与 seller 资源意味着议价权部分旁落；对照 [AI 原生创业](../ch05/018-ai-native.html) 的独立通路思路，设计 go-to-market 时应保留自身直接获客能力。
 
 ## 相关实体
-- [Microsoft Startups](https://github.com/QianJinGuo/wiki/blob/main/entities/microsoft-startups.md) — 近邻实体，主题高度重叠
+- [Microsoft Startups](https://github.com/QianJinGuo/wiki-public/blob/main/entities/microsoft-startups.md) — 近邻实体，主题高度重叠
 - [Microsoft for Startups v2](387-microsoft-for-startups-microsoft.html) — 同主题的复本排版
 - [Microsoft 为 OpenAI 替代者布局](033-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
 - [Nadella 论 AI 经济中的 Token 资本](../ch12/002-token.html)
 - [AI 原生创业基金指南](../ch05/018-ai-native.html)
 - [Anthropic AI 原生创业手册](560-anthropic-ai.html)
-- [云 AI 基础设施](https://github.com/QianJinGuo/wiki/blob/main/concepts/cloud-ai-infrastructure.md)
-- [开源 AI 生态](https://github.com/QianJinGuo/wiki/blob/main/concepts/open-source-ai-ecosystem.md)
+- [云 AI 基础设施](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/cloud-ai-infrastructure.md)
+- [开源 AI 生态](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/open-source-ai-ecosystem.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/microsoft-for-startups-microsoft.md)
 

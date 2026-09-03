@@ -23,10 +23,10 @@ Turnstile 的官方解释是："Turnstile 使用浏览器指纹来验证您是�
 Mozilla Firefox 在 WebGL 指纹保护方面存在已知漏洞（Bugzilla#1916271），其 Gecko 引擎会泄露经过清理的 GPU 特性，而 WebKit 和 Blink 则为所有用户返回硬编码字符串。更关键的是，即使用户在 Firefox 设置中选择了"严格"增强隐私保护，`privacy.resistfingerprinting` 也未被默认启用，意味着大多数 Firefox 用户在不知不觉中暴露了可追踪的 WebGL 信息 ^。
 
 ## 相关实体
-- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](https://github.com/QianJinGuo/wiki/blob/main/entities/rajveerbachkaniwalacom-blog-2026-05-24-on-the-difficulty-of-pasting-a-pic.md)
+- [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rajveerbachkaniwalacom-blog-2026-05-24-on-the-difficulty-of-pasting-a-pic.md)
 - [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](../ch04/257-ai.html)
-- [Kristoffit Blog Fix Your Asserts](https://github.com/QianJinGuo/wiki/blob/main/entities/kristoffit-blog-fix-your-asserts.md)
-- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](https://github.com/QianJinGuo/wiki/blob/main/entities/eclecticlightco-2026-05-29-what-happens-in-the-log-when-an-app-cra.md)
+- [Kristoffit Blog Fix Your Asserts](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kristoffit-blog-fix-your-asserts.md)
+- [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](https://github.com/QianJinGuo/wiki-public/blob/main/entities/eclecticlightco-2026-05-29-what-happens-in-the-log-when-an-app-cra.md)
 - [Seangoedeckecom Build Agents Not Pipelines](../ch04/012-build-agents-not-pipelines.html)
 
 ## 相关主题

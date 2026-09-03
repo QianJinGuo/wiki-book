@@ -47,7 +47,7 @@ Wang 将 Scale AI 时期的「瑞士」策略（在各方之间保持中立、�
 > 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/meta-ai-chief-alex-wang-muse-spark-ai-wars.md)
 
 ## 相关实体
-- [Meta announced Muse Spark in Voice Mode and Meta Glasses](https://github.com/QianJinGuo/wiki/blob/main/entities/meta-muse-spark-voice-mode-meta-glasses.md)
+- [Meta announced Muse Spark in Voice Mode and Meta Glasses](https://github.com/QianJinGuo/wiki-public/blob/main/entities/meta-muse-spark-voice-mode-meta-glasses.md)
 - [Yum Brands' tech chief on building its AI backbone](../ch04/257-ai.html)
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/meta-ai-chief-alex-wang-muse-spark-ai-wars.md)
 

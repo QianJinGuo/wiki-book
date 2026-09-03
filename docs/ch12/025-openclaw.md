@@ -11,7 +11,7 @@
 - [discord 全平台端到端加密](086-discord.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-security-and-feature-enhancement-practices.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openclaw-architecture.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/openclaw-architecture.md)
 ## 摘要
 
 OpenClaw 是一款开源、自托管的 AI Agent 平台，通过 Telegram / WhatsApp / Discord / Slack / Teams / 飞书 / iMessage / Signal 等多通道与用户交互。其核心设计是"本地优先"——数据、配置、对话历史全部留在用户自己的基础设施上。原文是一篇典型的"自托管 Agent 安全实战"指南，系统梳理了 OpenClaw 部署中四类核心安全风险（自治权限、凭证散落、网络暴露、提示注入），并配套给出"龙虾阿含"个人部署的架构图与缓解策略，最后介绍 4 种在 AWS 上的部署方式（单机 EC2 / 多租户 Bedrock AgentCore / EKS Graviton / CI/CD 集成）。
@@ -61,7 +61,7 @@ OpenClaw 这类自托管 AI Agent 与传统 Web 应用的安全模型有本质�
 - Bot Token / OAuth → 环境变量从 Secrets Manager 注入
 - Gateway Token → 必须不暴露在公网可达的配置文件
 
-这种"凭证管理"实践是 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 中"工具调用沙箱化"的延伸——凭证不应与 Agent 代码同位，而应通过受控的 secret manager 注入。
+这种"凭证管理"实践是 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 中"工具调用沙箱化"的延伸——凭证不应与 Agent 代码同位，而应通过受控的 secret manager 注入。
 
 ### 三、提示注入：理论风险 vs 真实风险
 
@@ -124,7 +124,7 @@ OpenClaw 不是孤例——任何"本地优先、用户自治、跨消息通道"
 - [Claude Code vs OpenClaw Memory 向量数据库之争](../ch03/057-claude-code.html)
 - [Claude Code vs OpenClaw 使用 Ettin](../ch09/025-claude-code-openclaw-usage-ettin.html)
 - [Claude Managed Agents 自托管沙箱企业版](../ch01/294-claude-managed-agents.html)
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

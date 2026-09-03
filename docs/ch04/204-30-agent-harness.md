@@ -18,7 +18,7 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cong-30-fen-zhong-shou-gu-agent-dao-harness-cheng-wei-xin-hou-duan.md)
 
-- [yoonho lee: text optimization as a legitimate learning mecha](https://github.com/QianJinGuo/wiki/blob/main/entities/yoonho-lee-text-optimization-as-legitimate-learning-mechanism.md)
+- [yoonho lee: text optimization as a legitimate learning mecha](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yoonho-lee-text-optimization-as-legitimate-learning-mechanism.md)
 
 ## 深度分析
 

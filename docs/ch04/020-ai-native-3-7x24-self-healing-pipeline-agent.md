@@ -15,7 +15,7 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gaode-ai-native-7x24-pipeline-self-healing.md)
 → 系列：超级应用的 AI 原生研发模式探索（第 3 期）
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/evaluation-benchmarks-extended.md)
 ## 一句话定位
 
 **"Human on the Loop" 范式转移** —— 减少 Human in the Loop = 释放 AI 产能。**指数级（10x+）效率跃迁** = 时间解放（24h）× 注意力解放（决策审查）的乘法。

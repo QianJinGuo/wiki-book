@@ -14,7 +14,7 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-to-avoid-ai-code-slop.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/coding-agent-practice.md)
 ## 深度分析
 AI 代码质量问题的根源在于代码生成速度与审查速度的剪刀差。当 AI 能以 10 倍速度产出代码，而人类审查能力无法同步扩展时，团队被迫在"严格人工审查"和"AI 辅助轻量审查"之间二选一——但两者都有致命缺陷 。
 **AI 代码 Slop 的六种形态：**
@@ -50,7 +50,7 @@ Aviator 的实验回答了核心问题：**如果审查发生在代码写出来�
 **起步建议**：对于刚开始的团队，最有价值的第一步通常是：对于超过一定复杂度阈值的 AI 辅助任务，要求捕获提示词中的意图 。
 
 ## 关联阅读
-- [SDD (Spec-Driven Development)](https://github.com/QianJinGuo/wiki/blob/main/concepts/sdd-specification-driven-development-harness.md) — 规格驱动开发方法论，与本文"审意图而非审代码"核心理念高度契合
+- [SDD (Spec-Driven Development)](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/sdd-specification-driven-development-harness.md) — 规格驱动开发方法论，与本文"审意图而非审代码"核心理念高度契合
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-to-avoid-ai-code-slop.md) — Ankit Jain 的完整原文
 
 ---

@@ -107,11 +107,11 @@ Trueman 坦诚地承认，他自己也不确定这是真正的结构性问题还
 
 ## 相关实体
 
-- [Design-to-Code Loop: Figma](https://github.com/QianJinGuo/wiki/blob/main/entities/design-to-code-loop-figma.md)
+- [Design-to-Code Loop: Figma](https://github.com/QianJinGuo/wiki-public/blob/main/entities/design-to-code-loop-figma.md)
 - [Figma Make](028-figma-make.html)
 - [Agent Harnesses](../ch04/451-agent-harnesses-are-dead-long-live-agent-harnesses.html)
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [Haptics Design — Microsoft](https://github.com/QianJinGuo/wiki/blob/main/entities/haptics-design-implementation-microsoft-windows11.md)
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- [Haptics Design — Microsoft](https://github.com/QianJinGuo/wiki-public/blob/main/entities/haptics-design-implementation-microsoft-windows11.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/what-figma-made-visible.md)
 

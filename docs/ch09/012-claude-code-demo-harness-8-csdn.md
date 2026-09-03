@@ -179,7 +179,7 @@ Haiku (60%) → Sonnet (30%) → Opus (10%)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-demo-to-production-8-gates-huang-jia-csdn-2026.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/memory-context-systems.md)
 ## 深度分析
 
 ### 核心洞察：Harness 是比模型更大的变量

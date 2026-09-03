@@ -164,7 +164,7 @@ Claude Code 的 7 层记忆架构本质上是一个**成本递增、能力递增
 ## 相关实体
 - [Claude Code 架构解析](../ch03/057-claude-code.html)
 - [Claude Code 源码核心机制详解](../ch03/057-claude-code.html)
-- [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
+- [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](../ch03/057-claude-code.html)
 
 - [From Agent Protocol to Harness Skill](../ch05/067-harness-skill.html)
@@ -176,7 +176,7 @@ Claude Code 的 7 层记忆架构本质上是一个**成本递增、能力递增
 
 - [harness-engineering-systematic-explainer](../ch05/057-harness-engineering.html)
 - [claude code 多智能体协作体系设计：从单agent到多agent工作流](../ch03/057-claude-code.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/memory-context-systems.md)
 
 ---
 

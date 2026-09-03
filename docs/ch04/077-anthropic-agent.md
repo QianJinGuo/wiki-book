@@ -129,13 +129,13 @@ Laura Luebbert 在博客结尾提出的原则值得所有科学 Agent 建设者�
 
 ## 相关实体
 
-- [Anthropic Mcp Revisited Tool Search Code Orchestration](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-mcp-revisited-tool-search-code-orchestration.md) — Anthropic 的工具调用架构
+- [Anthropic Mcp Revisited Tool Search Code Orchestration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-mcp-revisited-tool-search-code-orchestration.md) — Anthropic 的工具调用架构
 - [Harness Engineering](../ch05/057-harness-engineering.html) — Harness 工程与 Agent 可靠性的关系
 - [Agent Harness Context Management Working Set](../ch05/035-agent-harness.html) — 上下文管理在 Agent 执行中的作用
-- [Kimi Work Beta Foundation Model Company Advantage](https://github.com/QianJinGuo/wiki/blob/main/entities/kimi-work-beta-foundation-model-company-advantage.md) — 模型公司做 Agent 的路线对比
+- [Kimi Work Beta Foundation Model Company Advantage](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kimi-work-beta-foundation-model-company-advantage.md) — 模型公司做 Agent 的路线对比
 - [Claude Code First Year Retrospective Boris Cat 2026](../ch03/057-claude-code.html) — Claude Code 验证了「工具层可靠性」的重要性
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/004-agent.html) — Agent 记忆与上下文管理
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/evaluation-benchmarks-extended.md)
 
 ---
 

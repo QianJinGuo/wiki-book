@@ -55,7 +55,7 @@ DeepMind 已分析 100 万条 coding agent 任务轨迹，关键发现：
 
 AI Control Roadmap 的核心假设是：**如果一个高度 capable 的 AI Agent 不 aligned 且以意外方式行动怎么办？** 这与传统安全工程中的 threat modeling 一脉相承——不假设组件可信，而是建立验证机制。
 
-这代表了 AI 安全领域的范式转变：从"确保 AI 对齐"到"即使不对齐也能安全运行"的双保险策略。对于 [Agent 安全威胁模型](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-threat-models.md) 领域而言，这是一个重要的方法论贡献。
+这代表了 AI 安全领域的范式转变：从"确保 AI 对齐"到"即使不对齐也能安全运行"的双保险策略。对于 [Agent 安全威胁模型](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-security-threat-models.md) 领域而言，这是一个重要的方法论贡献。
 
 ### Detection-Response 矩阵的工程意义
 
@@ -68,7 +68,7 @@ D1-D4 × R1-R3 的矩阵为不同风险等级的部署场景提供了明确的�
 
 ### 百万轨迹数据的启示
 
-"大多数标记事件非对抗性"这一发现意义深远。它意味着当前阶段的主要安全风险不是 AI 故意作恶，而是 AI 的 misinterpretation 和 overeagerness——这对 [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 设计有直接影响：需要在 harness 层面建立更精确的行为边界，而不是仅依赖 alignment training。
+"大多数标记事件非对抗性"这一发现意义深远。它意味着当前阶段的主要安全风险不是 AI 故意作恶，而是 AI 的 misinterpretation 和 overeagerness——这对 [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 设计有直接影响：需要在 harness 层面建立更精确的行为边界，而不是仅依赖 alignment training。
 
 ## 实践启示
 
@@ -81,10 +81,10 @@ D1-D4 × R1-R3 的矩阵为不同风险等级的部署场景提供了明确的�
 ## 相关实体
 
 - [Agentic 渗透测试法律问题](../ch03/004-agent.html) — Agent 安全的法律维度
-- [GlassWASM 恶意软件](https://github.com/QianJinGuo/wiki/blob/main/entities/glasswasm-webassembly-malware-open-vsx.md) — 供应链安全威胁案例
-- [CVE 实践](https://github.com/QianJinGuo/wiki/blob/main/entities/getting-cve-without-shipping-slop.md) — 安全漏洞发现的实操视角
-- [Agent 安全威胁模型](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-threat-models.md) — Agent 安全概念框架
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Agent 运行环境安全
+- [GlassWASM 恶意软件](https://github.com/QianJinGuo/wiki-public/blob/main/entities/glasswasm-webassembly-malware-open-vsx.md) — 供应链安全威胁案例
+- [CVE 实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/getting-cve-without-shipping-slop.md) — 安全漏洞发现的实操视角
+- [Agent 安全威胁模型](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-security-threat-models.md) — Agent 安全概念框架
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — Agent 运行环境安全
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepmind-securing-future-ai-agents.md)
 

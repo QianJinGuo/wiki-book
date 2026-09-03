@@ -7,10 +7,10 @@
 ## 相关实体
 
 - [hermes新顶流agent skills闭环系统深度解析](../ch07/016-hermes-skill.html)
-- [淘天营销中后台生码工作流最佳实践](https://github.com/QianJinGuo/wiki/blob/main/entities/淘天营销中后台生码工作流最佳实践.md)
+- [淘天营销中后台生码工作流最佳实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/淘天营销中后台生码工作流最佳实践.md)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-long-running-governance-five-cards-ruofei.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/data-infrastructure.md)
 ## 深度分析
 
 长期运行的 Agent 怎么管：Hermes 治理分层与 5 张卡 涉及agent领域的核心技术议题。

@@ -110,7 +110,7 @@ xz、OpenSSL 等关键基础设施项目长期缺乏资源。组织应系统性�
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/cybersecurity-privacy.md)
 
 ---
 

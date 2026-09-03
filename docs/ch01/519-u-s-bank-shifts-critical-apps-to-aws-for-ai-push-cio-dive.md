@@ -41,7 +41,7 @@ Goldman Sachs 将数据准确性列为 AI 运营模型的基础，说明数据�
 - [MLflow v3.10：生成式AI开发新特性](../ch04/257-ai.html)
 - [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](../ch04/395-agentic-ai.html)
 - [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](../ch03/057-claude-code.html)
-- [EZConvertBI：Power BI/Tableau到QuickSight的自动迁移](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-transform-ezconvertbi-bi-migration.md)
+- [EZConvertBI：Power BI/Tableau到QuickSight的自动迁移](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-transform-ezconvertbi-bi-migration.md)
 
 ---
 

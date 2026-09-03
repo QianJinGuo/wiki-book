@@ -53,7 +53,7 @@ Local      Remote     Sandbox
 - [Harness Engineering 系统梳理](../ch05/057-harness-engineering.html)
 - [OpenHuman: AI Agent 持久记忆框架](../ch04/133-agent-memory.html)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/memory-context-systems.md)
 ## 深度分析
 ### 在 Harness 工程体系中的坐标
 AgentScope Java 是 Java 生态首个完整落地 Harness Framework 理念的框架，将 OpenClaw/Hermes 的工作区思想从个人单机扩展到企业级分布式场景。

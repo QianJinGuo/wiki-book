@@ -86,8 +86,8 @@
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/004-agent.html)
 - [17 种 agent 架构演进](../ch04/441-17-agent.html)
 - [Karpathy: Software 3.0 与 vibe coding 时代的终结](../ch03/004-agent.html)
-- [Erik Schluntz: vibe coding 在生产环境](https://github.com/QianJinGuo/wiki/blob/main/entities/erik-schluntz-vibe-coding-in-production.md)
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- [Erik Schluntz: vibe coding 在生产环境](https://github.com/QianJinGuo/wiki-public/blob/main/entities/erik-schluntz-vibe-coding-in-production.md)
+- [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

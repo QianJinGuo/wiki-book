@@ -61,7 +61,7 @@
 - [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch01/284-agent-skill.html)
 - [Hermes Agent](../ch04/161-hermes-agent.html)
 - [Qoder Skills 完全指南](031-qoder-skills.html)
-- [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
+- [Hermes Agent Skill](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/hermes-agent-skill.md)
 - [9个Agent技能模块化SageMaker微调生命周期](../ch04/312-ai-agent.html)
 - [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](054-skill.html)
 - [SkillClaw](../ch04/336-skillclaw-nacos-agent-skill-registry.html)

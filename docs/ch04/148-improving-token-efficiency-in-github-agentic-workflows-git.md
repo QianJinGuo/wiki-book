@@ -14,7 +14,7 @@ Landon Cox（Microsoft Research）和 Mara Kiefer（GitHub）分享 GitHub 内�
 **问题**：Agent runtime 在每次请求中都会携带所有注册的 MCP 工具名和 JSON schema。GitHub MCP server 有 40 个工具时，每轮对话额外携带 10-15 KB schema 开销。如果 agent 只用其中 2 个，剩下 38 个就是纯浪费。
 **优化**：通过 Optimizer workflow cross-reference 工具 manifest vs 实际调用记录，自动裁剪未使用的 MCP 工具配置。
 **效果**：Smoke-test workflows 中每轮上下文减少 8-12 KB，节省数千 tokens，**零行为变化**。
-这与 [Anthropic MCP 优化](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-mcp-revisited.md) 中 Tool Search 减少 85% tool definition token 的思路一脉相承。
+这与 [Anthropic MCP 优化](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-mcp-revisited.md) 中 Tool Search 减少 85% tool definition token 的思路一脉相承。
 
 ### 2. CLI 替代 MCP 工具调用
 

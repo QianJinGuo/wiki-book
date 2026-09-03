@@ -35,6 +35,9 @@ jobs:
       - name: Dedupe entity page titles
         run: python3 scripts/dedupe-entity-titles.py --apply
 
+      - name: Check two-layer wiki links
+        run: node scripts/check-wiki-links.mjs
+
       - name: Build site
         run: mkdocs build
 

@@ -109,7 +109,7 @@ S3 作为真值源，Runtime 与 S3 之间的同步是由两个动作构成：hy
 ## 相关实体
 - [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch04/257-ai.html)
 - [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](../ch11/135-amazon-bedrock.html)
-- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](https://github.com/QianJinGuo/wiki/blob/main/entities/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md)
+- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](https://github.com/QianJinGuo/wiki-public/blob/main/entities/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md)
 - [Comprehensive Observability For Amazon Sagemaker Ai Llm Infe](451-llm.html)
 - [Process Financial Documents Using Amazon Bedrock Data Automa](../ch11/135-amazon-bedrock.html)
 

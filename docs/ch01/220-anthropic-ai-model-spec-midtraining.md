@@ -129,19 +129,19 @@ MSM 的核心创新在于：**在预训练与对齐微调之间插入一个「�
 ---
 
 ## 与 Wiki 现有内容的关系
-- [Managed Agents Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/managed-agents-architecture.md) — Anthropic 官方 Managed Agents 架构（Token 不可达安全、Session/Harness/Sandbox 分离）与 MSM 的安全对齐形成互补
-- [Agent Security Full Lifecycle System](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-full-lifecycle-system.md) — 清华方寸跃迁的安全体系（Observer × Guard × Skill Ward）vs Anthropic 的 Model Spec 对齐——一个是运行时防护，一个是训练时对齐
+- [Managed Agents Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/managed-agents-architecture.md) — Anthropic 官方 Managed Agents 架构（Token 不可达安全、Session/Harness/Sandbox 分离）与 MSM 的安全对齐形成互补
+- [Agent Security Full Lifecycle System](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-security-full-lifecycle-system.md) — 清华方寸跃迁的安全体系（Observer × Guard × Skill Ward）vs Anthropic 的 Model Spec 对齐——一个是运行时防护，一个是训练时对齐
 
 ## 相关实体
-- [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
+- [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 - [Introducing Claude Platform On Aws Anthropics Native Platfor](340-claude.html)
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/057-claude-code.html)
-- [Anthropic Nla Natural Language Autoencoders Interpretability](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-nla-natural-language-autoencoders-interpretability.md)
+- [Anthropic Nla Natural Language Autoencoders Interpretability](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-nla-natural-language-autoencoders-interpretability.md)
 - [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/057-claude-code.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-msm-anti-defection-paper.md)
 
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Harness Engineering 六层结构中的「约束校验」层，与 MSM 的宪法设计原则相关
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — Harness Engineering 六层结构中的「约束校验」层，与 MSM 的宪法设计原则相关
 
 ---
 

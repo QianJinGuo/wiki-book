@@ -305,7 +305,7 @@ LFD / /goal 是**提示时**的、$40 就能跑 30 小时的、任何人都能�
 - [Snowflake Agentic Enterprise Summit 2026](../ch03/004-agent.html)（Snowflake — 可审计治理同主线）
 - [Hermes Agent Goal And Kanban](../ch04/161-hermes-agent.html)（Hermes Goal + Kanban 对照）
 - [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](../ch11/067-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html)（接触面控制对照）
-- [Good Qc For Rl Data](https://github.com/QianJinGuo/wiki/blob/main/entities/good-qc-for-rl-data.md)（RL 数据质量对照 — 强制熵的同源思想）
+- [Good Qc For Rl Data](https://github.com/QianJinGuo/wiki-public/blob/main/entities/good-qc-for-rl-data.md)（RL 数据质量对照 — 强制熵的同源思想）
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)
 

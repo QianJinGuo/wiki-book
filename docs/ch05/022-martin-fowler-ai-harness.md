@@ -79,8 +79,8 @@ Google 工程师把日常工作自动化掉一大半后剩下的是判断、拆�
 3. **从六件小事开始**：与其急着建"全自动 AI 团队"，不如先把六件小事补上——小切片、强验证、仓库内知识、权限边界、错误分类、持续清理。这是更现实的起点。
 
 ## 与现有知识库内容的关联
-- [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 三层演进（Prompt→Context→Harness），Fowler 的观点进一步印证 Harness 的核心地位
-- [Harness Engineering 三次范式跃迁](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-paradigm-shift.md) — 非确定性引入是第四次跃迁的驱动力
+- [Harness Engineering 框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — 三层演进（Prompt→Context→Harness），Fowler 的观点进一步印证 Harness 的核心地位
+- [Harness Engineering 三次范式跃迁](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-paradigm-shift.md) — 非确定性引入是第四次跃迁的驱动力
 - [腾讯 CDN LEGO Harness Engineering](008-harness.html) — 57 案例 13 类问题中，不确定性处理是核心挑战之一
 
 ## 原始存档
@@ -101,7 +101,7 @@ Google 工程师把日常工作自动化掉一大半后剩下的是判断、拆�
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](057-harness-engineering.html)
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](057-harness-engineering.html)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](008-harness.html)
-- [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
+- [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki-public/blob/main/queries/harness-peer-review-framework.md)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/337-claude-code-harness-deep-understanding.html)
 - [Agent Harness 架构](035-agent-harness.html)
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html)
@@ -114,7 +114,7 @@ Google 工程师把日常工作自动化掉一大半后剩下的是判断、拆�
 - [AI Coding Agent 记忆系统](../ch04/253-ai-coding-agent.html)
 - [柚漫剧 AI 全流程提效拆解](../ch04/257-ai.html)
 - [Agent Skill 设计模式](../ch04/302-agent-skills.html)
-- [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
+- [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/coding-harness-engineering.md)
 - [Thin Harness Fat Skills](065-thin-harness-fat-skills-ai.html)
 - [Design Patterns for AI Agents 2026](../ch04/071-design-patterns-for-ai-agents-2026-4-5-reflection.html)
 

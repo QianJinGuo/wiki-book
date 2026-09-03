@@ -120,7 +120,7 @@ OpenAI 2026-06-05 凌晨正式推出 **Dreaming V3**——ChatGPT 真正意义�
 ## 相关主题
 
 - 长期记忆架构 — [Ai Memory Architecture Deep Dive](../ch04/257-ai.html)
-- 个人助手 / Agent 状态 — [Personavlm Personalized Memory](https://github.com/QianJinGuo/wiki/blob/main/entities/personavlm-personalized-memory.md)
+- 个人助手 / Agent 状态 — [Personavlm Personalized Memory](https://github.com/QianJinGuo/wiki-public/blob/main/entities/personavlm-personalized-memory.md)
 - 算力优化 — [Harness Engineering Comprehensive Guide Conardli](../ch05/057-harness-engineering.html)
 - 2026-06-05 开发者期待 GPT 5.6 — [Chatgpt默认模型大升级Gpt 55 Instant正式上线新增记忆来源功能](712-chatgpt.html)（同 ChatGPT 系列）
 
@@ -138,7 +138,7 @@ OpenAI 2026-06-05 凌晨正式推出 **Dreaming V3**——ChatGPT 真正意义�
 
 ## 实践启示
 
-- **重新设计用户 onboarding 流程**：当 AI 能自动记住用户偏好后，"首次对话自我介绍"不再是必要步骤。产品设计应假设用户已有记忆档案，直接进入任务完成模式，而非引导用户重复自我介绍。参考 [Personavlm Personalized Memory](https://github.com/QianJinGuo/wiki/blob/main/entities/personavlm-personalized-memory.md) 的个性化 memory 设计思路。 
+- **重新设计用户 onboarding 流程**：当 AI 能自动记住用户偏好后，"首次对话自我介绍"不再是必要步骤。产品设计应假设用户已有记忆档案，直接进入任务完成模式，而非引导用户重复自我介绍。参考 [Personavlm Personalized Memory](https://github.com/QianJinGuo/wiki-public/blob/main/entities/personavlm-personalized-memory.md) 的个性化 memory 设计思路。
 
 - **评估内部知识管理工具的记忆能力**：如果你的 AI 助手在跨会话中持续推荐"过时"或"不相关"的信息，说明缺乏时间感知和偏好跟随机制。可以对比 [Ai Memory Architecture Deep Dive](../ch04/257-ai.html) 中的架构评估框架，检查是否有类似 Dreaming V3 的异步向量聚类层。 
 
@@ -163,7 +163,6 @@ OpenAI 2026-06-05 凌晨正式推出 **Dreaming V3**——ChatGPT 真正意义�
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/openai-developer-ecosystem.md)
 
 ---
-

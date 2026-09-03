@@ -96,7 +96,7 @@ memory-agentcore 的核心架构决策是**不占用 OpenClaw 独占 Slot**，�
 - [把 OpenClaw 从个人助手变成客服：一次信任模型的翻转 | 亚马逊AWS官方博客](../ch04/176-openclaw.html)
 - [深度拆解 Hermes Agent 记忆系统](../ch04/161-hermes-agent.html)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openclaw-architecture.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/openclaw-architecture.md)
 ## Related
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-managed-agents-self-hosted-sandbox-mcp-tunnels-enterprise.md)

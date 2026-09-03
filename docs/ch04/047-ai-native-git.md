@@ -155,7 +155,7 @@ Level 3（远期）: AI 做决策辅助
 这才是 AI Native 项目管理的真正价值：**用 AI 做人做不了的横向模式识别**。
 
 ## 相关实体
-- [Git Repo Based Pm Automation](https://github.com/QianJinGuo/wiki/blob/main/entities/git-repo-based-pm-automation.md)
+- [Git Repo Based Pm Automation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/git-repo-based-pm-automation.md)
 - [Harness Engineering Jk Launcher Baijiajie](../ch05/057-harness-engineering.html)
 - [Harness Design Long Running Apps](../ch05/008-harness.html)
 - [Staragent Webterminal Cli Ali Infra Cli As Agent Hands](../ch03/004-agent.html)

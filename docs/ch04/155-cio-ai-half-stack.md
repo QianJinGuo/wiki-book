@@ -6,7 +6,7 @@
 - [Yumanju Ai Full Flow Efficiency](257-ai.html)
 - [Skill Development Guide Aliyun 2026](../ch07/054-skill.html)
 - [Harness Engineered Business Agent Evaluation Aliyun Boyu](../ch05/008-harness.html)
-- [Hermes Observability Aliyun](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-observability-aliyun.md)
+- [Hermes Observability Aliyun](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-observability-aliyun.md)
 - [Aliyun Agentrun](290-agentrun.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aliyun-cio-ai-rd-efficiency.md)
@@ -14,7 +14,7 @@
 # 阿里云CIO：AI产研效能规模化提升
 阿里云 CIO 蒋林泉团队一年实战复盘：前端有效代码 3x、后端 2x、缺陷率-30%/-55%，在不增人力前提下实现 。
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/coding-agent-practice.md)
 ## 评分
 | 维度 | 分数 |
 |------|------|

@@ -21,7 +21,7 @@ A crisp, printmaking-like aesthetic with bold outlines and natural deformation. 
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gpt-image-2神级提示词分享.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/vision-multimodal.md)
 ## 深度分析
 
 这篇分享的核心是一个**版画风格（printmaking aesthetic）的图像生成提示词**。其设计逻辑值得拆解：

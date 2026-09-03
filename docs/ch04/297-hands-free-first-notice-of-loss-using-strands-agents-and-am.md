@@ -62,7 +62,7 @@ AWS 展示的保险理赔 FNOL（First Notice of Loss）自动化方案，将 St
 
 ### 人在环路的位置重置
 
-方案的核心论点不是移除人，而是重置人参与的位置：从"验证摄入完整性"（重复性、注意力密集型）转向"应用判断做决策"（专家价值所在）。这呼应了 [Production Agent Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/production-agent-engineering.md) 的核心主张——生产级 Agent 系统的关键不在智能本身，而在将人的注意力从低价值任务重新分配到高价值决策。
+方案的核心论点不是移除人，而是重置人参与的位置：从"验证摄入完整性"（重复性、注意力密集型）转向"应用判断做决策"（专家价值所在）。这呼应了 [Production Agent Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/production-agent-engineering.md) 的核心主张——生产级 Agent 系统的关键不在智能本身，而在将人的注意力从低价值任务重新分配到高价值决策。
 
 ### 合规性内建于执行轨迹
 
@@ -80,10 +80,10 @@ AWS 展示的保险理赔 FNOL（First Notice of Loss）自动化方案，将 St
 
 - [Build An Ai Powered Equipment Repair Assistant Using Amazon ](194-build-an-ai-powered-equipment-repair-assistant-using-amazon.html) — AgentCore + Knowledge Base 的维修助手
 - [Building Web Search Enabled Agents With Strands And Exa](341-building-web-search-enabled-agents-with-strands-and-exa.html) — Strands SDK 搜索 Agent
-- [Enterprise Intelligent Data Query Solution Practice Based On Strands Sdk](https://github.com/QianJinGuo/wiki/blob/main/entities/enterprise-intelligent-data-query-solution-practice-based-on-strands-sdk.md) — Strands SDK 企业级方案
+- [Enterprise Intelligent Data Query Solution Practice Based On Strands Sdk](https://github.com/QianJinGuo/wiki-public/blob/main/entities/enterprise-intelligent-data-query-solution-practice-based-on-strands-sdk.md) — Strands SDK 企业级方案
 - [Agentcore Harness](../ch05/008-harness.html) — AgentCore 工程化
 - [Aws Bedrock Agentcore Doris Mcp Server](../ch11/045-bedrock-agentcore.html) — AgentCore + MCP Server
-- [Autonomous Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/autonomous-agent-systems.md) — 自主 Agent 系统
+- [Autonomous Agent Systems](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/autonomous-agent-systems.md) — 自主 Agent 系统
 - "Agent 部署策略" — Agent 部署策略
 - "AI 安全治理" — AI 安全治理
 - "AWS AI 服务生态" — AWS AI 服务

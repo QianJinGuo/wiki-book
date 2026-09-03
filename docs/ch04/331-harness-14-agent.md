@@ -102,7 +102,7 @@ Agent 即时编写 JavaScript 编排逻辑：`agent()` 生成子进程、`parall
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-engineering-guide.md)
 
 ---
 

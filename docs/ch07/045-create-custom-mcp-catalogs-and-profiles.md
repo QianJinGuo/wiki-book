@@ -41,7 +41,7 @@ MCP 协议标准化了"如何接入工具"，却从未回答"哪些工具可信�
 ## 相关实体
 - `MCP 12 生产模式` — 12 种 Agent 连接外部工具的工程模式，与 Catalogs/Profiles 的薄交互面、按意图组织工具设计互补
 - [AWS DevOps Agent × MCP Server](041-aws-devops-agent-mcp-server.html) — 混合云 MCP 运维闭环实践，体现基础设施标准化与业务侧自由组合的分层原则
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md) — 工具使用与 MCP 模式总览
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/tool-use-mcp-patterns.md) — 工具使用与 MCP 模式总览
 
 ---
 

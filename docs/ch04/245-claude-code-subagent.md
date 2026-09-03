@@ -108,7 +108,7 @@ Claude Code 自动扫描这些文件，根据 `description` 决定何时调用�
 - [Claude Code Harness Deep Dive Founder Park](../ch05/058-claude-code-harness.html)
 - [Hermes Agent V014 Architecture Shugex](161-hermes-agent.html)
 - [Ai Agent Engineer Learning Roadmap Backend 2026](312-ai-agent.html)
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 - [k-dense — the model is no longer the bottleneck](137-k-dense-the-model-is-no-longer-the-bottleneck.html)
 
 ---

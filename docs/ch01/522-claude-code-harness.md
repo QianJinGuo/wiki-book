@@ -61,7 +61,7 @@ Claude Code 实现了 fake_tool_injection 防御以污染训练数据，connecto
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/prompt-engineering-guide.md)
 
 ---
 

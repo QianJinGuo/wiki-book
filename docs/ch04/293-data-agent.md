@@ -40,7 +40,7 @@ Data Agent 已构建三大核心应用领域：智能分析聚焦数据查询与
 
 ### 数据智能体的技术架构：NL2SQL、工具调用与治理底座
 
-从产品模块反推，Data Agent 的架构可归纳为三层：交互层承接自然语言问题与多轮会话；推理与执行层由大模型驱动，通过 Agent 架构 完成需求解析与框架构建，并以工具调用的方式生成 SQL 与 Python 代码执行分析；数据与治理层依赖语义模型解析、业务知识调用（类 [RAG](https://github.com/QianJinGuo/wiki/blob/main/concepts/rag-retrieval-augmented-generation.md) 知识注入机制）保障问数准确性，同时通过非结构化数据打标（文本、语音、图像、视频 → 标准化业务标签）将多模态数据纳入资产体系。
+从产品模块反推，Data Agent 的架构可归纳为三层：交互层承接自然语言问题与多轮会话；推理与执行层由大模型驱动，通过 Agent 架构 完成需求解析与框架构建，并以工具调用的方式生成 SQL 与 Python 代码执行分析；数据与治理层依赖语义模型解析、业务知识调用（类 [RAG](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/rag-retrieval-augmented-generation.md) 知识注入机制）保障问数准确性，同时通过非结构化数据打标（文本、语音、图像、视频 → 标准化业务标签）将多模态数据纳入资产体系。
 
 值得注意的是，Data Agent 的「底座依赖」模式折射出企业级数据智能体的现实约束：智能分析类模块可与 DataWind 解耦，但营销与用户研究类模块强依赖 VeCDP、GMP、DataFinder 等数据产品底座。这说明数据智能体的能力边界由数据资产的治理深度决定——脱离治理底座，智能体只是「无米之炊」。这本质上也是 智能体驱动的数据访问 命题在企业数据场景中的落地形态。
 
@@ -57,7 +57,7 @@ Data Agent 已构建三大核心应用领域：智能分析聚焦数据查询与
 
 - [高德 AI 原生数据智能体](293-data-agent.html)
 - [火山引擎 SearchCLI 智能体](../ch03/004-agent.html)
-- [火山引擎 RTM 低延迟流式传输](https://github.com/QianJinGuo/wiki/blob/main/entities/volcano-engine-rtm-low-latency-streaming.md)
+- [火山引擎 RTM 低延迟流式传输](https://github.com/QianJinGuo/wiki-public/blob/main/entities/volcano-engine-rtm-low-latency-streaming.md)
 - [你不知道的 Agent 原理架构与工程实践](../ch03/004-agent.html)
 - [Karpathy：从 Vibe Coding 到 Agentic Engineering](098-karpathy-vibe-coding-agentic-engineering.html)
 - 智能体驱动的数据访问

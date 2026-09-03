@@ -8,10 +8,10 @@
 
 - [cola dlm：字节跳动连续潜空间扩散语言模型](273-cola-dlm.html)
 - [explicit vs. implicit in the age of intelligences — le secré](../ch04/257-ai.html)
-- [what it feels like to work with mythos](https://github.com/QianJinGuo/wiki/blob/main/entities/what-it-feels-like-to-work-with-mythos.md)
+- [what it feels like to work with mythos](https://github.com/QianJinGuo/wiki-public/blob/main/entities/what-it-feels-like-to-work-with-mythos.md)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-engineering-guide.md)
 ## 深度分析
 
 source: wechat

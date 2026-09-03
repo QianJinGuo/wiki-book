@@ -122,7 +122,7 @@ StoreClaw 预装几十个电商相关 Skills（Listing 优化/关键词研究/GE
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/tool-use-mcp-patterns.md)
 
 ---
 

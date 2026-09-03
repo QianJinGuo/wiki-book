@@ -89,7 +89,7 @@ budget_limit 模板：到点了，别开新工作，把进展、剩下的事、�
 - [Cline releases open-source agent runtime SDK](../ch03/004-agent.html)
 
 - [Openai Symphony Codex Orchestration Linear Control Plane](../ch01/316-openai.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/workflow-orchestration.md)
 ## 深度分析
 ### 目标状态机的本质：把"意图"变成"运行时对象"
 `/goal` 的核心设计不是让模型多跑几轮，而是把目标从 prompt 里的文字提升为运行时里具备生命周期状态的对象。普通 loop 里，目标活在聊天上下文、脚本或临时文件里——上下文一压缩，目标就变薄；模型自我修改目标时，没有机制可以拦截。`/goal` 的 state-db 把这件事倒了过来：目标有自己的状态字段（active/paused/complete/budget_limited），有 token 和 wall clock 记账，有外部可mutation接口，运行时在每个边界事件上检查目标状态。

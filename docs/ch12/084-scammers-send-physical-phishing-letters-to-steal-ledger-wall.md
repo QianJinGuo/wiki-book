@@ -13,12 +13,12 @@
 - [Ai Voice Cloning The Technology Behind It Whos Building It A](../ch04/257-ai.html)
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](092-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi.html)
 - [Npm Supply Chain Compromise Postmortem](../ch04/257-ai.html)
-- [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
-- [Funnel Builder Flaw Woocommerce Checkout Skimm](https://github.com/QianJinGuo/wiki/blob/main/entities/funnel-builder-flaw-woocommerce-checkout-skimm.md)
+- [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloudflare-glasswing-mythos-security.md)
+- [Funnel Builder Flaw Woocommerce Checkout Skimm](https://github.com/QianJinGuo/wiki-public/blob/main/entities/funnel-builder-flaw-woocommerce-checkout-skimm.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/Scammers-Send-Physical-Phishing-Letters-to-Steal-Ledger-Wall.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-privacy-landscape.md)
 ## 深度分析
 ### 攻击维度的升级：从数字到物理
 传统钓鱼攻击聚焦于数字渠道（email、SMS、仿冒网站），但此案代表攻击维度的实质性扩展——实体邮件。

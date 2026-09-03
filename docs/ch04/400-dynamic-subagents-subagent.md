@@ -37,7 +37,7 @@ Dynamic Subagents 的代码编排是**显式编排**：编排逻辑写成 JavaSc
 
 ## 相关实体
 
-- [Anthropic Dynamic Workflows](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-dynamic-workflows-ultracode-deep-research-lyuyuebannzi.md)
+- [Anthropic Dynamic Workflows](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-dynamic-workflows-ultracode-deep-research-lyuyuebannzi.md)
 - [Generator-Evaluator 对抗验证](../ch05/008-harness.html)
 - [Claude Code Subagent 规则](../ch03/057-claude-code.html)
 

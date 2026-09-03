@@ -320,7 +320,7 @@ Dan Shipper 的"every layered thinking"模型将 AI-native 分为多个层次：
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-native-dan-shipper-every-layered-thinking-walkwalk.md)
 - [how frontier teams are reinventing ai-native development](../ch05/018-ai-native.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-privacy-landscape.md)
 
 ---
 

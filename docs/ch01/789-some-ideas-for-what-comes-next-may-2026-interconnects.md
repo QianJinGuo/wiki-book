@@ -125,7 +125,7 @@ Lambert 强调个体需要对抗群体思维——不追"今天赚钱"，不迷�
 
 ### 对开发者和研究者的行动建议
 
-开源模型适用于自动化场景和企业级 Agent 部署，而闭源模型则是知识工作核心流程的首选工具。在 AI 技术快速迭代的当下，最好在两个生态系统都有产品布局，以应对不同场景的需求。同时关注 [open-source-ai-ecosystem](https://github.com/QianJinGuo/wiki/blob/main/concepts/open-source-ai-ecosystem.md) 的演进，特别是美国大厂 permissive license 策略的长期影响。
+开源模型适用于自动化场景和企业级 Agent 部署，而闭源模型则是知识工作核心流程的首选工具。在 AI 技术快速迭代的当下，最好在两个生态系统都有产品布局，以应对不同场景的需求。同时关注 [open-source-ai-ecosystem](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/open-source-ai-ecosystem.md) 的演进，特别是美国大厂 permissive license 策略的长期影响。
 
 ### 对组织战略规划的启示
 

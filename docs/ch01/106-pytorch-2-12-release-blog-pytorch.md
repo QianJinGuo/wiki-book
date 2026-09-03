@@ -8,10 +8,10 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pytorch212releaseblogpytorch.md)
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
+> [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
 
 - [PyTorch 2.12 Release Blog – PyTorch](106-pytorch-2-12-release-blog-pytorch.html)
-- [PyTorch 2.12 Release Blog – PyTorch](https://github.com/QianJinGuo/wiki/blob/main/entities/pytorch212releaseblogpytorch.md)
+- [PyTorch 2.12 Release Blog – PyTorch](https://github.com/QianJinGuo/wiki-public/blob/main/entities/pytorch212releaseblogpytorch.md)
 
 ## 深度分析
 PyTorch 2.12 标志着 PyTorch 从研究优先框架向统一硬件无关生产平台的转型进入关键阶段。

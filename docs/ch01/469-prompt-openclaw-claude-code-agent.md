@@ -102,7 +102,7 @@ Steinberger 的观点：做某件事超过一次 → 转化为自动化技能；
 - [Karpathy: Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
 - [Agent 原理与工程实践](../ch03/004-agent.html)
 - [Figma Make](../ch03/028-figma-make.html)
-- [华术设计 2.0](https://github.com/QianJinGuo/wiki/blob/main/entities/huashu-design-2-0-flower-uncle-3-patterns.md)
+- [华术设计 2.0](https://github.com/QianJinGuo/wiki-public/blob/main/entities/huashu-design-2-0-flower-uncle-3-patterns.md)
 
 ---
 

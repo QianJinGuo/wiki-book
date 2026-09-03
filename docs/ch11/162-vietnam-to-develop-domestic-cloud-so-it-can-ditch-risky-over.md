@@ -13,7 +13,7 @@
 ## 相关实体
 - [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](162-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
 - [Vietnam to develop domestic cloud](142-vietnam-to-develop-domestic-cloud.html)
-- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](https://github.com/QianJinGuo/wiki/blob/main/entities/vietnam-domestic-cloud.md)
+- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vietnam-domestic-cloud.md)
 
 ## 深度分析
 越南政府通过 Decision 808/QD-TTg 将"国家云平台"列为第 13 项战略技术，是东南亚地区数据主权运动中最具代表性的政策信号之一。这一决策的底层逻辑并非单纯的技术民族主义，而是对**数据本地化法律合规性与地缘政治风险的双重响应**。

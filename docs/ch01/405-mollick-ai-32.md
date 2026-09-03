@@ -33,9 +33,9 @@ AI 不再是单一「聊天机器人」概念，而是分化为四类：图像�
 > 以下关联实体（`oneusefulthing-claude-code-what-comes-next`、`gpt5-just-does-stuff-mollick`、`jagged-ai-frontier-mollick`、`mass-intelligence`）经验证尚不存在于本 wiki 中，链接为占位符，待后续创建。
 
 - `[Oneusefulthing Claude Code What Comes Next](../ch03/057-claude-code.html)` — Mollick 早期对 Claude Code 实战评估（实体待建）
-- `[Gpt5 Just Does Stuff Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/gpt5-just-does-stuff-mollick.md)` — Mollick 对 GPT-5 自主性的判断（实体待建）
+- `[Gpt5 Just Does Stuff Mollick](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gpt5-just-does-stuff-mollick.md)` — Mollick 对 GPT-5 自主性的判断（实体待建）
 - `[Jagged Ai Frontier Mollick](../ch04/257-ai.html)` — Mollick 锯齿前沿理论（实体待建）
-- `[Mass Intelligence](https://github.com/QianJinGuo/wiki/blob/main/entities/mass-intelligence.md)` — 群体智能边界（实体待建）
+- `[Mass Intelligence](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mass-intelligence.md)` — 群体智能边界（实体待建）
 
 ## 相关实体
 

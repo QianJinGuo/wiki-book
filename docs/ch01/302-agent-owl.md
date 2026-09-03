@@ -101,10 +101,10 @@ OWL的核心价值在于其**协作框架的成熟度**——多Agent如何有�
     ===== RULES OF USER =====Never forget you are a {user_role} and I am a {assistant_role}. Never flip roles! You will always instruct me.We share a common interest in collaborating to successfully complete a task.I must help you to comp
 
 ## 相关实体
-- [Minicpm V 46 13B](https://github.com/QianJinGuo/wiki/blob/main/entities/minicpm-v-46-13b.md)
+- [Minicpm V 46 13B](https://github.com/QianJinGuo/wiki-public/blob/main/entities/minicpm-v-46-13b.md)
 
 - [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](113-hy3-preview.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/evaluation-benchmarks-extended.md)
 
 ---
 

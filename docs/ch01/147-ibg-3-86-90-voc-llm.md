@@ -17,14 +17,14 @@
 
 ## 相关实体
 - [Multilingual Ai](../ch04/257-ai.html)
-- [Eagle 3 Speculative Decoding Optimization](https://github.com/QianJinGuo/wiki/blob/main/entities/eagle-3-speculative-decoding-optimization.md)
+- [Eagle 3 Speculative Decoding Optimization](https://github.com/QianJinGuo/wiki-public/blob/main/entities/eagle-3-speculative-decoding-optimization.md)
 - [Didi Eagle 3 Speculative Decoding Agents](../ch09/038-coding-agent.html)
 - [Be More Expressive To Close More Sales](089-be-more-expressive-to-close-more-sales.html)
-- [Datacomp For Language Models](https://github.com/QianJinGuo/wiki/blob/main/entities/datacomp-for-language-models.md)
+- [Datacomp For Language Models](https://github.com/QianJinGuo/wiki-public/blob/main/entities/datacomp-for-language-models.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/didi-ibg-customer-experience-llm-quality-inspection-3-pipelines.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/prompt-engineering-guide.md)
 ## 4 大业务挑战
 
 | # | 挑战 | 表现 |

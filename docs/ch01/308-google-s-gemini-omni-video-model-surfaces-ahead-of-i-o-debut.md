@@ -50,11 +50,11 @@ Omni 被定位为 Agent（类似 Deep Research）意味着其能力不仅止于�
 Nano Banana 1 发布时并非最强图像模型，但通过迭代升级最终成为前沿图像系统 。如果 Google 对视频模型采用相同演进逻辑，那么 Flash 层发布后 2-4 个月内 Pro 层的能力跃升是可以合理预期的。技术规划应预留集成升级的灵活窗口。
 
 ## 相关实体
-- [Google's Gemini Omni video model surfaces ahead of I/O debut](https://github.com/QianJinGuo/wiki/blob/main/entities/googles-gemini-omni-video-model-surfaces-ahead-of-io-debut.md)
+- [Google's Gemini Omni video model surfaces ahead of I/O debut](https://github.com/QianJinGuo/wiki-public/blob/main/entities/googles-gemini-omni-video-model-surfaces-ahead-of-io-debut.md)
 
 ---
 ## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

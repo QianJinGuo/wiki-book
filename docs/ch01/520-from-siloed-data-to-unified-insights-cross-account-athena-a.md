@@ -10,11 +10,11 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/from-siloed-data-to-unified-insights-cross-account-athena-access-for-amazon-quic.md)
 
 ## 相关实体
-- [基于 Amazon Kinesis Data Streams 实现 DynamoDB 历史数据清理与增量同步](https://github.com/QianJinGuo/wiki/blob/main/entities/基于-amazon-kinesis-data-streams-实现-dynamodb-历史数据清理与增量同步.md)
+- [基于 Amazon Kinesis Data Streams 实现 DynamoDB 历史数据清理与增量同步](https://github.com/QianJinGuo/wiki-public/blob/main/entities/基于-amazon-kinesis-data-streams-实现-dynamodb-历史数据清理与增量同步.md)
 - [Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions](../ch04/257-ai.html)
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](../ch11/217-amazon-nova.html)
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04/038-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
-- [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
+- [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki-public/blob/main/entities/航班变更信息智能识别解决方案.md)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](../ch11/108-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](../ch11/211-bedrock.html)
 - [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/383-amazon-bedrock-agentcore.html)
@@ -35,7 +35,7 @@
 - [Amazon Bedrock模型推理的Serverless异步架构](../ch11/135-amazon-bedrock.html)
 - [基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](../ch04/383-amazon-bedrock-agentcore.html)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/aws-cloud-ai-infrastructure.md)
 ## 深度分析
 Cross-account Athena Access for Amazon Quick 本质上是一个**企业级数据治理架构问题**的 AWS 原生解决方案。它解决的并非新问题——跨账户数据访问、成本归属、数据主权——而是首次将这些需求落地为 QuickSight 与 Athena 的原生集成能力。
 文章提出的三种架构模式（Basic、Hub-and-Spoke、Data Mesh）对应了企业数据成熟度的三个阶段。值得注意的是** Hub-and-Spoke 被推荐为默认选择**，这反映了 AWS 的务实立场：大多数企业并不需要完整的 Data Mesh 复杂度，但需要一个可扩展、成本清晰、信任边界简单的方案。

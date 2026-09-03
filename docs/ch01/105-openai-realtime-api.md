@@ -13,7 +13,7 @@
 - [Openai Gpt Realtime Voice Models Qbitai](316-openai.html)
 - [Aliyun Agentrun 2Line Integration](../ch04/290-agentrun.html)
 - [Pi Mono Github](474-github.html)
-- [Prompt Debugger Compare Templates Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/prompt-debugger-compare-templates-winty.md)
+- [Prompt Debugger Compare Templates Winty](https://github.com/QianJinGuo/wiki-public/blob/main/entities/prompt-debugger-compare-templates-winty.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-realtime-api-architecture.md)
 

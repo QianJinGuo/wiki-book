@@ -41,7 +41,7 @@ Claude Design 引发的行业焦虑，源于把「设计普及」误读为「设
 - [Penpot 与 Claude Design](../ch01/340-claude.html) —— 关于 Claude Design 是否代表企业级设计未来的相反观点，可对照阅读
 - [自由设计师 vs AI 订阅](../ch04/257-ai.html) —— AI 订阅制冲击自由设计师市场的另一视角
 - AI UX 设计模式 —— AI 时代交互设计范式的方法论集合
-- [Top 10 Design Gadgets（2026）](https://github.com/QianJinGuo/wiki/blob/main/entities/top-10-design-gadgets-creative-professionals-2026.md) —— 创意专业人士的工具装备清单
+- [Top 10 Design Gadgets（2026）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/top-10-design-gadgets-creative-professionals-2026.md) —— 创意专业人士的工具装备清单
 - [柚漫剧 AI 全流程提效拆解](../ch04/257-ai.html) —— AI 提效从单点到工程化的行业案例
 - [Agent Skill 设计模式](../ch04/302-agent-skills.html) —— Agent 能力封装进入设计模式阶段的趋势观察
 

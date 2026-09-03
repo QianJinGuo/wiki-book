@@ -114,7 +114,7 @@ LingBot-Vision 的"空间原生"定位与 具身智能 的需求高度契合。�
 
 ---
 ## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -131,11 +131,11 @@ LingBot-Vision 的"空间原生"定位与 具身智能 的需求高度契合。�
 - 四足机器人制造成本从 2022 年约 3,300 降至 2025 年中约 1,800 美元，降幅 46%
 - IPO 融资款约一半（3 亿美元）将用于 AI 模型训练，包括"Embodied Large Model"
 ## 相关实体
-- [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
-- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](https://github.com/QianJinGuo/wiki/blob/main/entities/a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes-a-window-opens.md)
-- [Fine Tuning Nvidia Cosmos Predict 25 With Loradora For Robot Video Generation](https://github.com/QianJinGuo/wiki/blob/main/entities/fine-tuning-nvidia-cosmos-predict-25-with-loradora-for-robot-video-generation.md)
-- [User Interviews Guide Pro](https://github.com/QianJinGuo/wiki/blob/main/entities/user-interviews-guide-pro.md)
-- [估值3000亿63家新实验室杀疯了Murati贝佐斯集体押注下一代Ai](https://github.com/QianJinGuo/wiki/blob/main/entities/估值3000亿63家新实验室杀疯了murati贝佐斯集体押注下一代ai.md)
+- [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloudflare-glasswing-mythos-security.md)
+- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](https://github.com/QianJinGuo/wiki-public/blob/main/entities/a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes-a-window-opens.md)
+- [Fine Tuning Nvidia Cosmos Predict 25 With Loradora For Robot Video Generation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tuning-nvidia-cosmos-predict-25-with-loradora-for-robot-video-generation.md)
+- [User Interviews Guide Pro](https://github.com/QianJinGuo/wiki-public/blob/main/entities/user-interviews-guide-pro.md)
+- [估值3000亿63家新实验室杀疯了Murati贝佐斯集体押注下一代Ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/估值3000亿63家新实验室杀疯了murati贝佐斯集体押注下一代ai.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/unitree-ipo-robotics-market.md)
 
@@ -232,8 +232,8 @@ Unitree 计划将 IPO 融资款约 3 亿美元（每年约 1 亿美元）用于 
 
 ## 与现有知识的链接
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/weilan-babyalpha-a3-machine-dog.md)
-- → [Yann LeCun JEPA世界模型](https://github.com/QianJinGuo/wiki/blob/main/entities/yann-lecun-jepa-world-model.md) — AMI Labs具身智能方向
-- → [NVIDIA边缘端LLM for机器人](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-edge-first-llms-av-robotics.md) — 英伟达边缘AI方案对比
+- → [Yann LeCun JEPA世界模型](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yann-lecun-jepa-world-model.md) — AMI Labs具身智能方向
+- → [NVIDIA边缘端LLM for机器人](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-edge-first-llms-av-robotics.md) — 英伟达边缘AI方案对比
 
 ## 深度分析
 ### 异构计算vs单芯片：架构选择的工程哲学
@@ -351,7 +351,7 @@ Google DeepMind 2026-06-09 启动 **Google DeepMind Accelerator: Robotics** 欧�
 
 ---
 ## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -363,12 +363,12 @@ Google DeepMind 2026-06-09 启动 **Google DeepMind Accelerator: Robotics** 欧�
 
 ## 相关实体
 
-- [farewell ai2](https://github.com/QianJinGuo/wiki/blob/main/entities/farewell-ai2.md)
-- [无惧off-policy偏移！bengio团队解绑后训练，大模型rl提速50倍](https://github.com/QianJinGuo/wiki/blob/main/entities/trajectory-balance-asynchrony-tba-bengio-papweekly.md)
-- [sft, rl, and on-policy distillation through a distributional](https://github.com/QianJinGuo/wiki/blob/main/entities/untitled-v2.md)
+- [farewell ai2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/farewell-ai2.md)
+- [无惧off-policy偏移！bengio团队解绑后训练，大模型rl提速50倍](https://github.com/QianJinGuo/wiki-public/blob/main/entities/trajectory-balance-asynchrony-tba-bengio-papweekly.md)
+- [sft, rl, and on-policy distillation through a distributional](https://github.com/QianJinGuo/wiki-public/blob/main/entities/untitled-v2.md)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
 ## 深度分析
 
 # Scale Robot Reinforcement Learning with NVIDIA Isaac Lab on Amazon SageMaker AI
@@ -384,12 +384,12 @@ Physical AI is moving from research into production.
 
 ### 关联实体
 
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](https://github.com/QianJinGuo/wiki/blob/main/entities/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md)
-- [Latest Open Artifacts 20 New Orgs New Types Of Models With N](https://github.com/QianJinGuo/wiki/blob/main/entities/latest-open-artifacts-20-new-orgs-new-types-of-models-with-n.md)
-- [Fundamentals Large Tabular Model Nexus Is Now Available On A](https://github.com/QianJinGuo/wiki/blob/main/entities/fundamentals-large-tabular-model-nexus-is-now-available-on-a.md)
-- [5238213](https://github.com/QianJinGuo/wiki/blob/main/entities/5238213.md)
-- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](https://github.com/QianJinGuo/wiki/blob/main/entities/腾讯混元新里程碑hy3-preview-发布开源agent-表现全面提升.md)
-- [Code As Agent Harness Survey](https://github.com/QianJinGuo/wiki/blob/main/entities/code-as-agent-harness-survey.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](https://github.com/QianJinGuo/wiki-public/blob/main/entities/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md)
+- [Latest Open Artifacts 20 New Orgs New Types Of Models With N](https://github.com/QianJinGuo/wiki-public/blob/main/entities/latest-open-artifacts-20-new-orgs-new-types-of-models-with-n.md)
+- [Fundamentals Large Tabular Model Nexus Is Now Available On A](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fundamentals-large-tabular-model-nexus-is-now-available-on-a.md)
+- [5238213](https://github.com/QianJinGuo/wiki-public/blob/main/entities/5238213.md)
+- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](https://github.com/QianJinGuo/wiki-public/blob/main/entities/腾讯混元新里程碑hy3-preview-发布开源agent-表现全面提升.md)
+- [Code As Agent Harness Survey](https://github.com/QianJinGuo/wiki-public/blob/main/entities/code-as-agent-harness-survey.md)
 
 ## 实践启示
 
@@ -437,11 +437,11 @@ Physical AI is moving from research into production.
 
 ### 关联实体
 
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](https://github.com/QianJinGuo/wiki/blob/main/entities/ethan-he-cosmos-grok-imagine-latent-space-video-agent-20260606.md)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](https://github.com/QianJinGuo/wiki/blob/main/entities/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md)
-- [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md)
-- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验-v2.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏-v2.md)
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ethan-he-cosmos-grok-imagine-latent-space-video-agent-20260606.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](https://github.com/QianJinGuo/wiki-public/blob/main/entities/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md)
+- [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md)
+- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验-v2.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏-v2.md)
 
 ---

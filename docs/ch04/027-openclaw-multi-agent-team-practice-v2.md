@@ -294,7 +294,7 @@ subagents: {
 ## 相关实体
 - [Hermes Agent Memory System](161-hermes-agent.html)
 - [Openclaw Agent Loop Design Patterns](384-agent-loop.html)
-- [Hiclaw V110 K8S Hermes Worker](https://github.com/QianJinGuo/wiki/blob/main/entities/hiclaw-v110-k8s-hermes-worker.md)
+- [Hiclaw V110 K8S Hermes Worker](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hiclaw-v110-k8s-hermes-worker.md)
 - [Openclaw Multi 2](176-openclaw.html)
 - [Using Amazon Bedrock Agentcore Openclaw Multi 3](383-amazon-bedrock-agentcore.html)
 

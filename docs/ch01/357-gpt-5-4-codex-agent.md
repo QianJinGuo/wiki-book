@@ -52,7 +52,7 @@ Nathan 给出了一个简洁的对比框架：
 | 适用场景 | 新手、需要观点、需要"温度" | 高级 agent 协调员、明确 TODO 列表 |
 | 风险 | 误解时仍会做 | 字面执行时易错 |
 
-这是两种截然不同的 agent 设计哲学：**意图推测 vs 字面执行**。对应 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的不同分支——Claude harness 倾向于"宽松意图补全 + 安全感"，GPT harness 倾向于"严格指令执行 + 透明可控"。
+这是两种截然不同的 agent 设计哲学：**意图推测 vs 字面执行**。对应 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 的不同分支——Claude harness 倾向于"宽松意图补全 + 安全感"，GPT harness 倾向于"严格指令执行 + 透明可控"。
 
 ### 四、Agent 工具的下一形态 = Slack
 
@@ -84,11 +84,11 @@ Nathan 报告了一个跨模型的共同问题：
 
 - [Yann Dubois Openai Post Training Matt Turck Interview](316-openai.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 - **Agent 评估方法**
 - **Reasoning Efficiency**
 - Multi-Agent Orchestration
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/evaluation-benchmarks-extended.md)
 
 ---
 

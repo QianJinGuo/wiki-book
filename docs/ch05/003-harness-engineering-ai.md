@@ -97,7 +97,7 @@ Harness Engineering 是 AI Skill 测评体系的**上位工程框架**：
 2. **高风险场景（运维/金融/医疗）必须部署完整六层并加人工审核节点** — 不能心存侥幸。自动化运维 Agent 需额外配备回滚机制和变更审计日志，确保任何 destructive 操作都有可逆路径。
 3. **建立"错误→规则"的自动化管道，把每次失败变成系统进化机会** — AI 犯错后，不仅修正这一次的输出，还要把这次错误转化为一条规则/测试/约束，更新到约束库。让错误数据成为 Harness 迭代的核心燃料。
 4. **约束库内容缓存可节省 10-20% Token** — 约束库变化不频繁，缓存为系统提示前缀，避免每次推理都重新注入完整约束定义。按风险分级调用：低风险读/查询用轻量 Harness，高风险写/执行用完整 Harness。
-5. **用 Trace 监控熵增速度，在失控前主动干预** — 追踪 Agent 状态大小变化趋势，通过 LangSmith/Arize Phoenix 等工具建立熵增预警阈值。当系统熵增速度超过阈值时触发人工复核，防止副作用无限累积。 → 见 [多 Agent 深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
+5. **用 Trace 监控熵增速度，在失控前主动干预** — 追踪 Agent 状态大小变化趋势，通过 LangSmith/Arize Phoenix 等工具建立熵增预警阈值。当系统熵增速度超过阈值时触发人工复核，防止副作用无限累积。 → 见 [多 Agent 深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 
 ## Harness Engineering 的未来演进
 
@@ -144,13 +144,13 @@ Harness Engineering 是 AI Skill 测评体系的**上位工程框架**：
 - [Agent 原理、架构与工程实践](../ch03/004-agent.html)
 - [AI Agent 工程师能力地图](../ch04/312-ai-agent.html)
 
-- [Harness Component Expiry Evidence](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-evidence.md)
-- [Harness Component Expiry Build To Delete](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-build-to-delete.md)
+- [Harness Component Expiry Evidence](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-component-expiry-evidence.md)
+- [Harness Component Expiry Build To Delete](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-component-expiry-build-to-delete.md)
 - [Harness Engineering Theory To Practice Helen](057-harness-engineering.html)
 - [Evaluating Netflix Show Synopses With Llm As A Judge](../ch01/214-evaluating-netflix-show-synopses-with-llm-as-a-judge.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-core-technology.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/loop-engineering.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/llm-core-technology.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-engineering-guide.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/loop-engineering.md)
 ## Related
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-harness-engineering-survey-2026.md)

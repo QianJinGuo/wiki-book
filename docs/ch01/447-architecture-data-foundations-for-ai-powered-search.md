@@ -34,9 +34,9 @@ Algolia 这份技术白皮书勾勒了一套面向生产环境的 AI 驱动搜�
 5. **冷热数据分层降低运营成本**：高频访问数据用高性能索引，低频数据用低成本存储；对相似 query 缓存生成结果以避免重复 LLM 调用（语义缓存），是当前最实用的成本优化手段。
 6. **增量更新优先于全量重建**：在新闻、电商等实时性场景中，增量更新策略比全量索引重建更具成本效益，同时能显著降低索引更新延迟。评估平台能力时应关注索引更新延迟指标，而非仅关注查询延迟。
 ## 相关实体
-- [RAG 检索增强生成](https://github.com/QianJinGuo/wiki/blob/main/concepts/rag-retrieval-augmented-generation.md) — 白皮书 RAG 接口设计的理论基础，详解检索增强生成的原理与实践
-- [上下文工程](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md) — RAG 系统中检索结果如何组装为有效上下文的方法论
-- [数据质量框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/data-quality-framework.md) — 摄取与丰富化阶段数据质量保障的系统化方法
+- [RAG 检索增强生成](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/rag-retrieval-augmented-generation.md) — 白皮书 RAG 接口设计的理论基础，详解检索增强生成的原理与实践
+- [上下文工程](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/context-engineering.md) — RAG 系统中检索结果如何组装为有效上下文的方法论
+- [数据质量框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/data-quality-framework.md) — 摄取与丰富化阶段数据质量保障的系统化方法
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/architecture-data-foundations-for-ai-powered-search.md)
 
 ---

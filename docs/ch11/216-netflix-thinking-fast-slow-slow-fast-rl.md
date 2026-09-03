@@ -108,9 +108,9 @@ Universal Message Cost 的引入是一个工程上的 pragmatic 解决方案：�
 
 ## 相关实体
 
-- [Netflix Kueue 迁移](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-kueue-batch-compute-migration.md) — Netflix 平台工程实践
-- [VMAF v1](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-vmaf-v1-video-quality-metric-upgrade.md) — Netflix 视频质量度量
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 约束与验证框架
+- [Netflix Kueue 迁移](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-kueue-batch-compute-migration.md) — Netflix 平台工程实践
+- [VMAF v1](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-vmaf-v1-video-quality-metric-upgrade.md) — Netflix 视频质量度量
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — 约束与验证框架
 
 ---
 

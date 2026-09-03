@@ -66,7 +66,7 @@ ISO 42001 出现在框架矩阵中同样具有信号意义：AI 治理（AI gove
 - [Stripe Financial Compliance AI Agent](249-stripe-financial-compliance-ai-agent-production-lessons.html) — 生产级合规 Agent 的架构决策与经验，与 Drata 互为实践参照
 - [CrewAI Fintech Compliance Agentic AI](395-agentic-ai.html) — agentic AI 在合规报告场景的另一种落地
 - Legal AI Compliance — AI 与合规交叉领域的概念页
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — AI Agent 系统化工程范式，解释 Drata 各 Agent 场景的底层架构逻辑
+- [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — AI Agent 系统化工程范式，解释 Drata 各 Agent 场景的底层架构逻辑
 
 ---
 

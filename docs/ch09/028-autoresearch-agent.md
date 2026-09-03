@@ -128,7 +128,7 @@ API 不稳定时的指数退避+随机抖动（最大 60 秒、最多 10 次重�
 本项目和达尔文.skill（Skill 优化）、Karpathy AutoResearch（ML 研究）三者核心机制相同——量化目标+自动迭代+只保留改进。这个模式可以被迁移到任何可以用量化指标定义"改进"的领域：测试自动化、文档生成、数据管道优化等。关键是要找到那个可以被量化的核心 metric。
 
 ## 相关主题
-- [Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md) — 自进化机制与 AutoResearch 的"只保留改进"思想同源
+- [Hermes Agent](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/hermes-agent.md) — 自进化机制与 AutoResearch 的"只保留改进"思想同源
 -  — Harness Engineering 让 Agent 产出可预期、可衡量、可持续
 - [Thin Harness Fat Skills](../ch05/065-thin-harness-fat-skills-ai.html) — Fat Skills + Thin Harness 架构与 program.md 宪法约束异曲同工
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/autoresearch-software-development.md)
@@ -137,7 +137,7 @@ API 不稳定时的指数退避+随机抖动（最大 60 秒、最多 10 次重�
 - [快手首个打工人Agent](../ch03/004-agent.html)
 - [Enterprise Software Moats in the Agent Era — 系统性护城河分析框架](../ch03/004-agent.html)
 - [factory mission multi agent architecture](../ch01/747-factory-mission-multi-agent-architecture.html)
-- [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
+- [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [OpenClaw 多智能体团队搭建实战经验](../ch04/027-openclaw-multi-agent-team-practice-v2.html)
 - [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](../ch04/027-openclaw-multi-agent-team-practice-v2.html)
 - [Claude Code 可控性：软规则无法变成硬约束](../ch03/057-claude-code.html)
@@ -149,7 +149,7 @@ API 不稳定时的指数退避+随机抖动（最大 60 秒、最多 10 次重�
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/004-agent.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/008-harness.html)
 - [Agent 原理、架构与工程实践](../ch03/004-agent.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/multi-agent-coordination.md)
 
 ---
 

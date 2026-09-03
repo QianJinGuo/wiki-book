@@ -11,7 +11,7 @@
 ## 相关实体
 - [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](162-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
 - [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](162-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
-- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](https://github.com/QianJinGuo/wiki/blob/main/entities/vietnam-domestic-cloud.md)
+- [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vietnam-domestic-cloud.md)
 
 ## 深度分析
 **1. 数据主权与合规压力形成政策倒逼机制**

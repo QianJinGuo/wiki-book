@@ -69,7 +69,7 @@ Bedrock Ops Alert 体现的范式转变是：将"监控→告警→人工判断�
 - [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/310-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [Amazon Bedrock Claude Prompt Cache Strategy](135-amazon-bedrock.html)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
 ## 相关引用
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-bedrock-ops-alert.md)
 

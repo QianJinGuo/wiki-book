@@ -165,14 +165,14 @@
 - [Better Harness Eval Trace Harness Hill Climbing](../ch05/008-harness.html) — Trace-driven 评测 + Harness hill-climbing 自优化循环。本实体是"评测方案设计"的人工智能辅助；那个是"评测驱动的 Harness 优化"反馈环。
 
 ## 相关实体
-- [Claude Code Best Practices Prompt Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-best-practices-prompt-engineering.md)
+- [Claude Code Best Practices Prompt Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/claude-code-best-practices-prompt-engineering.md)
 
-- [perplexity computer empirical study: how ai agents reshape k](https://github.com/QianJinGuo/wiki/blob/main/entities/perplexity-computer-knowledge-work-empirical-study.md)
+- [perplexity computer empirical study: how ai agents reshape k](https://github.com/QianJinGuo/wiki-public/blob/main/entities/perplexity-computer-knowledge-work-empirical-study.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/evaluation-benchmarks-extended.md)
 ## 相关主题
 
-- [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md) — AHE 通用 Harness 工程框架
+- [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/ahe-agentic-harness-engineering.md) — AHE 通用 Harness 工程框架
 - [Claude Code Architecture](../ch03/057-claude-code.html) — Claude Code 架构（作为 Harness 搭建者的能力来源）
 - LLM-as-Judge 通用方法
 - [Ai Coding Agent Quality Defense Five Control Mechanisms](253-ai-coding-agent.html) — AI Coding Agent 质量防御五机制（评测即其中一环）

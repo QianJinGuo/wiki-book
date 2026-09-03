@@ -236,7 +236,7 @@ Anthropic 原文提到：Canva、Notion、Sentry 等已经在 Claude 中把 Skil
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/tool-use-mcp-patterns.md)
 
 ---
 

@@ -37,7 +37,7 @@ Effects 2026 传递的隐含信号是：开放银行（Open Banking）基础设�
 - [Affirm Maps Road To 100B Gmv With Card Ai Commerce And Global Expansion](069-affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-glo.html)
 - [Affirm Maps Road To 100B Gmv With Card Ai Commerce](065-affirm-maps-road-to-100b-gmv-with-card-ai-commerce.html)
 - Bnpl Walmart
-- [5Thingstoknowabouttheclarityact](https://github.com/QianJinGuo/wiki/blob/main/entities/5thingstoknowabouttheclarityact.md)
+- [5Thingstoknowabouttheclarityact](https://github.com/QianJinGuo/wiki-public/blob/main/entities/5thingstoknowabouttheclarityact.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/plaid-effects.md)
 

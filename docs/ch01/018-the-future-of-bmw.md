@@ -16,7 +16,7 @@
 
 ## 相关实体
 - [The Race To Own The Agentic Future Tidemark](../ch04/334-the-race-to-own-the-agentic-future-tidemark.html)
-- [Sign Of The Future Gpt 55 Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/sign-of-the-future-gpt-55-mollick.md)
+- [Sign Of The Future Gpt 55 Mollick](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sign-of-the-future-gpt-55-mollick.md)
 - [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch04/257-ai.html)
 - [From Doer To Director The Ai Mindset Shift](029-from-doer-to-director-the-ai-mindset-shift.html)
 

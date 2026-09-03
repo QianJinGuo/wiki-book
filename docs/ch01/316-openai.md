@@ -10,10 +10,10 @@
 - **企业应用**：德国电信（P customer system）、Priceline（travel voice assistant）、Vimeo（video real-time voice） 
 ## 相关实体
 - [Gpt 5级推理能力塞进语音模型Openai把同传翻译成本砍穿地板价](316-openai.html)
-- [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
+- [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](https://github.com/QianJinGuo/wiki-public/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
 - [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](../ch03/004-agent.html)
 - [Chatgpt 官宣 26 位未来之星他们是穿墙少年街头摊贩盲童的朋友](712-chatgpt.html)
-- [国产顶尖模型 Benchmark 评分那么高可实际效果为什么差看完 Anthropic 这篇博客刷分的因素太单一了](https://github.com/QianJinGuo/wiki/blob/main/entities/国产顶尖模型-benchmark-评分那么高可实际效果为什么差看完-anthropic-这篇博客刷分的因素太单一了.md)
+- [国产顶尖模型 Benchmark 评分那么高可实际效果为什么差看完 Anthropic 这篇博客刷分的因素太单一了](https://github.com/QianJinGuo/wiki-public/blob/main/entities/国产顶尖模型-benchmark-评分那么高可实际效果为什么差看完-anthropic-这篇博客刷分的因素太单一了.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/刚刚openai-放出三个语音模型顺便杀死了同传.md)
 
@@ -40,7 +40,7 @@ GPT-Realtime-Translate目前还算不上完美的"同声传译"。从Demo来看�
 OpenAI在技术文档中表示："随着模型变得更快、更高效，这个延迟会显著降低，翻译会变得更加无缝。"  这意味着当前的局限是技术演进而非不可逾越的障碍。
 
 ## 与实时语音架构的关联
-OpenAI的语音模型发布与[Openai Realtime Voice Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/openai-realtime-voice-architecture.md)构成了理论与实践的对照——该文深入分析了OpenAI Realtime API的底层架构设计，而本文则聚焦于这一技术发布的行业影响和产品意义。两者结合可以看到：端到端语音处理、128K上下文窗口、Preamble机制等技术特性如何转化为实际的产品能力和商业影响。
+OpenAI的语音模型发布与[Openai Realtime Voice Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/openai-realtime-voice-architecture.md)构成了理论与实践的对照——该文深入分析了OpenAI Realtime API的底层架构设计，而本文则聚焦于这一技术发布的行业影响和产品意义。两者结合可以看到：端到端语音处理、128K上下文窗口、Preamble机制等技术特性如何转化为实际的产品能力和商业影响。
 
 ## 实践启示
 ### 语音AI应用开发的关键考量

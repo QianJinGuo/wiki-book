@@ -74,11 +74,11 @@ AI 原生创业公司每周改进一次操作系统，分内环和外环：
 
 ### Context 即护城河
 
-Gershuni 的核心洞察是：模型是锅，context 是你和你业务之间的默契库。每家公司都有相同的模型，但 context 不同——那些从真实交互中提炼出的隐性知识（「客户说再考虑考虑其实意思是价格太高」）才是真正的护城河。这与 [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md) 的理念高度一致：context 的质量决定了 AI 系统的输出质量。
+Gershuni 的核心洞察是：模型是锅，context 是你和你业务之间的默契库。每家公司都有相同的模型，但 context 不同——那些从真实交互中提炼出的隐性知识（「客户说再考虑考虑其实意思是价格太高」）才是真正的护城河。这与 [Context Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/context-engineering.md) 的理念高度一致：context 的质量决定了 AI 系统的输出质量。
 
 ### Harness 的必要性
 
-文章中提到的「每个智能体外面必须套一个防护层」直接呼应了 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的核心原则。六个阶段的 harness 流程（预检→计划→审批→执行→验证→记录）与 [Claude Code](../ch03/057-claude-code.html) 的内部机制异曲同工。Replit 事件则是一个典型的反面案例——提示词层面的安全约束在实际工程中是不可靠的。
+文章中提到的「每个智能体外面必须套一个防护层」直接呼应了 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 的核心原则。六个阶段的 harness 流程（预检→计划→审批→执行→验证→记录）与 [Claude Code](../ch03/057-claude-code.html) 的内部机制异曲同工。Replit 事件则是一个典型的反面案例——提示词层面的安全约束在实际工程中是不可靠的。
 
 ### 评估驱动的复利增长
 

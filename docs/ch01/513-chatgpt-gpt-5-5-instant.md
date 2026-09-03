@@ -4,7 +4,7 @@
 
 ## 深度分析
 
-GPT-5.5 Instant的升级体现了OpenAI在模型优化方向上的重大转变——从追求更强的能力表现，转向更精准、可控、个性化的用户体验。这一转向有三个关键维度值得深入探讨。 See also [Context Window Management](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
+GPT-5.5 Instant的升级体现了OpenAI在模型优化方向上的重大转变——从追求更强的能力表现，转向更精准、可控、个性化的用户体验。这一转向有三个关键维度值得深入探讨。 See also [Context Window Management](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-window-management.md)
 
 **1. 幻觉率大幅下降意味着什么**
 
@@ -52,7 +52,7 @@ GPT-5.5 Instant的升级体现了OpenAI在模型优化方向上的重大转变�
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/openai-developer-ecosystem.md)
 
 ---
 

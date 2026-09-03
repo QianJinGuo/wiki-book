@@ -67,9 +67,9 @@ IRT 校准后的得分更能反映模型的真实能力，减少了"简单题目
 主流 benchmark 的区分度在下降，关注 LiveCodeBench、SWE-bench 等动态更新的评测，它们更能反映模型的真实能力。
 
 ## 相关实体
-- [Latest Open Artifacts 19 Qwen Glm Minimax Interconnects](https://github.com/QianJinGuo/wiki/blob/main/entities/latest-open-artifacts-19-qwen-glm-minimax-interconnects.md)
+- [Latest Open Artifacts 19 Qwen Glm Minimax Interconnects](https://github.com/QianJinGuo/wiki-public/blob/main/entities/latest-open-artifacts-19-qwen-glm-minimax-interconnects.md)
 - [Interconnects Latest Open Artifacts 20 New Orgs New Types Of Models With Nemotron Super Sarvam](647-latest-open-artifacts-20-new-orgs-new-types-of-models.html)
-- [Reading Todays Open Closed Performance Gap](https://github.com/QianJinGuo/wiki/blob/main/entities/reading-todays-open-closed-performance-gap.md)
+- [Reading Todays Open Closed Performance Gap](https://github.com/QianJinGuo/wiki-public/blob/main/entities/reading-todays-open-closed-performance-gap.md)
 - [How Open Model Ecosystems Compound](598-how-open-model-ecosystems-compound.html)
 - [Wetesteddeepseekv4Proandflashagainstclau](418-deepseek.html)
 

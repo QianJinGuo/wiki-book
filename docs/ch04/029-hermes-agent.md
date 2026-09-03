@@ -89,18 +89,18 @@ Hermes选择"写入memory时不更新当前会话的system prompt，而是等到
 - [AI Agent 记忆系统架构](131-how-ai-agent-memory-works.html)
 - [Self-Evolving Agents 系统性综述](181-self-evolving-agents.html)
 - [Hermes Agent 记忆系统深度拆解](161-hermes-agent.html)
-- [Agent Memory System Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-system-design.md)
-- [KAIROS — Claude Code 常驻协作范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/kairos-claude-code-paradigm.md)
-- [上下文工程：三种 Agent Memory 方案对比实验](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms.md)
+- [Agent Memory System Design](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-system-design.md)
+- [KAIROS — Claude Code 常驻协作范式](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/kairos-claude-code-paradigm.md)
+- [上下文工程：三种 Agent Memory 方案对比实验](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-engineering-three-memory-paradigms.md)
 
 - [SkillClaw](336-skillclaw-nacos-agent-skill-registry.html)
 - [Agent 自我改进的六条路](../ch03/004-agent.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](../ch07/016-hermes-skill.html)
 - [GBrain](../ch01/194-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
-- [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](https://github.com/QianJinGuo/wiki/blob/main/entities/demis-hassabis-yc-interview-2026.md)
+- [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](https://github.com/QianJinGuo/wiki-public/blob/main/entities/demis-hassabis-yc-interview-2026.md)
 - [OpenHuman: AI Agent 持久记忆框架](133-agent-memory.html)
-- [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki/blob/main/queries/agent-memory-system-design.md)
-- [上下文工程 - 三种Memory方案对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md)
+- [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki-public/blob/main/queries/agent-memory-system-design.md)
+- [上下文工程 - 三种Memory方案对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md)
 
 ---
 

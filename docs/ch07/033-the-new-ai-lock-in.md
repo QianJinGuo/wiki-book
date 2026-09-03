@@ -27,7 +27,7 @@ AI 价值正在向实施层面迁移。OpenAI、Anthropic、PwC、Accenture、De
 
 ### MCP 的局限：一个协议不是平台
 Model Context Protocol 的价值是真实的——它降低了连接模型与工具、数据源的成本，压缩了维护半打定制化 connectors 的痛苦。但正如文章所强调的，**协议无法解决企业级问题**：谁批准了那个 agent？它能访问哪些数据？其操作如何记录？如何安全关闭一个已经启动但启动者已离开公司的 agent？
-这个局限与 [Anthropic Mcp Revisited](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-mcp-revisited.md) 的分析形成互补：MCP 管「能力」连接，Skills 管「编排」逻辑——两者结合才能构建完整的 agent 集成方案。但即便如此，它们仍然无法解决治理和运营信任问题。
+这个局限与 [Anthropic Mcp Revisited](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-mcp-revisited.md) 的分析形成互补：MCP 管「能力」连接，Skills 管「编排」逻辑——两者结合才能构建完整的 agent 集成方案。但即便如此，它们仍然无法解决治理和运营信任问题。
 Kubernetes 的类比特别恰当：K8s 标准化了容器层，但下一场战斗转移到托管服务、身份、网络、可观测性和数据重力。MCP 正在做类似的事情——**让建筑的一层变得可移植，但将更难的企业问题留在了上一层**。
 
 ### 95% 失败率的真正含义

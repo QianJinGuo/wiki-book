@@ -84,7 +84,7 @@ Anthropic 的 Agent 产品矩阵按"用户自管理程度"排列，覆盖从完�
 - [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](../ch04/302-agent-skills.html)
 - [Agent 开发范式演进：从环境工程出发，“简化”多源实时上下文](../ch03/004-agent.html)
 - [Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%](../ch04/257-ai.html)
-- [我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了](https://github.com/QianJinGuo/wiki/blob/main/entities/我把-karpathy-的-autoresearch-搬到了软件开发领域效果炸了.md)
+- [我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了](https://github.com/QianJinGuo/wiki-public/blob/main/entities/我把-karpathy-的-autoresearch-搬到了软件开发领域效果炸了.md)
 - [吴恩达：AI 将最先杀死前端](../ch04/257-ai.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/057-claude-code.html)
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html)
@@ -92,7 +92,7 @@ Anthropic 的 Agent 产品矩阵按"用户自管理程度"排列，覆盖从完�
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/035-agent-harness.html)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程](../ch03/004-agent.html)
 - [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](../ch05/008-harness.html)
-- [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki/blob/main/entities/别再把上下文当聊天记录.md)
+- [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki-public/blob/main/entities/别再把上下文当聊天记录.md)
 - [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](../ch05/008-harness.html)
 - [深度拆解 Hermes Agent 记忆系统：它修正了 OpenClaw 的哪层误区？](../ch04/161-hermes-agent.html)
 - [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](../ch05/008-harness.html)
@@ -104,7 +104,7 @@ Anthropic 的 Agent 产品矩阵按"用户自管理程度"排列，覆盖从完�
 - [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](../ch05/057-harness-engineering.html)
 - [llm 自我提升系统综述 — yang 等 113 页四阶段闭环框架（zesearch nlp lab）](451-llm.html)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
 ## 第 2 来源：claude.com 官方 blog 视角（2026-06-10，演进叙事）
 
 补充自 [Claude Managed Agents Evolution of Agentic Surfaces 官方 blog](https://claude.com/blog/building-with-claude-managed-agents)，提供 Anthropic 第一方对平台架构演进的官方叙事。

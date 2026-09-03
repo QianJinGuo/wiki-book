@@ -23,7 +23,7 @@ Cline 于 2026 年 5 月发布开源 Agent 运行时 SDK（`@cline/sdk`），将
 Cline 的关键决策是时机选择：在架构与 IDE 宿主强绑定到难以拆分之前，主动将核心 agent loop 抽离为独立 SDK，并先把自有 CLI 与 Kanban 迁移上去，VS Code 和 JetBrains 扩展随后跟进。这个顺序说明重构是产品级战略而非技术演练——runtime 成为可移植的基础设施，UI 变成其上的"产品层"，所有表面共享同一套 agent 实现，避免每个入口各自维护一套分叉的 agent 逻辑。对任何已在积累 IDE/CLI 强耦合代码的团队，这提供了"解耦要趁早"的参照。
 
 ### 分层与 Provider 解耦：多模型是架构而非功能
-`@cline/shared` 打底、`@cline/llms` 收敛 provider、`@cline/agents` 运行无状态循环、`@cline/core` 管理有状态编排，每层单一职责。关键设计在于 provider 逻辑被完全挡在 agent loop 之外——切换 Anthropic、OpenAI、Bedrock 或任意 OpenAI 兼容端点只是配置变化，不触碰循环代码；同时 `npm install @cline/sdk` 支持整装安装，也可按需拉取单个包以缩减依赖面。这印证了 [Agent Harness 工程范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-harness-engineering-paradigm.md) 中"模型可替换、harness 沉淀为可复用资产"的思路。
+`@cline/shared` 打底、`@cline/llms` 收敛 provider、`@cline/agents` 运行无状态循环、`@cline/core` 管理有状态编排，每层单一职责。关键设计在于 provider 逻辑被完全挡在 agent loop 之外——切换 Anthropic、OpenAI、Bedrock 或任意 OpenAI 兼容端点只是配置变化，不触碰循环代码；同时 `npm install @cline/sdk` 支持整装安装，也可按需拉取单个包以缩减依赖面。这印证了 [Agent Harness 工程范式](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-harness-engineering-paradigm.md) 中"模型可替换、harness 沉淀为可复用资产"的思路。
 
 ### Benchmark 解读：优势与模型强弱强相关
 Terminal Bench 2.0 数据呈现出清晰的模型相关性：同用 claude-opus-4.7，Cline CLI 74.2% 对 Claude Code 69.4%，领先约 4.8pp；同用开源权重 kimi-k2.6，Cline CLI 55.1% 对 OpenCode 37.1%，领先约 18pp。领先幅度随模型变化显著，说明 Cline 的增益并非来自"模型更聪明"，而是来自 harness 层面的兑现：重写后的 prompts、更紧的上下文管理、更合理的工具呈现，在模型自身能力较弱时（开源权重模型）放大效应更明显。这对评估任何 agent runtime 都有启发——benchmark 差异应优先归因到 harness 还是模型。
@@ -40,7 +40,7 @@ Agent teams/subagents 直接在核心 runtime 内实现，session 可委派专�
 6. 商业产品二次分发前需确认许可证边界：engine 与 SDK 许可不同（engine 采用 Elastic License 2.0，SDK 采用 Apache 2.0），内部研究与架构验证无碍，闭源衍生需法务把关。
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
+> [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/moc/cybersecurity-privacy.md)
 
 - [Cline open-source agent runtime SDK（姊妹条目）](../ch03/004-agent.html)
 - [State of CLI coding agents（2026 年中）](../ch09/038-coding-agent.html)

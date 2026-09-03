@@ -64,7 +64,7 @@ program.md 的权限边界设计 体现了"防止 Agent 改写自己的规则"�
 - [Karpathy Vibe Coding](../ch04/098-karpathy-vibe-coding-agentic-engineering.html)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/004-agent.html)
 - [OpenClaw 多智能体团队搭建](../ch04/176-openclaw.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
 
 ---
 

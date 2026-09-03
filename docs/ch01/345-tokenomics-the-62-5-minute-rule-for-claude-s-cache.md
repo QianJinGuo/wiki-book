@@ -141,7 +141,7 @@ assert usage.cache_creation_input_tokens > 0 or usage.cache_read_input_tokens > 
 ---
 ## 关联
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tokenomics-the-625-minute-rule-for-claudes-cache.md)
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

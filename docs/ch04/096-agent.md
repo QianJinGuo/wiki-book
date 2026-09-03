@@ -20,7 +20,7 @@
 |------|---------|---------|---------|
 | **理解层**（上下文） | 个人上下文 | 用户意图理解、上下文记忆、偏好推断 | [Agent Harness 工作集管理](../ch05/035-agent-harness.html) |
 | **学习层**（进化） | 自我进化 | 经验沉淀、Skills 版本化、可审计的回滚 | [Small Hermes 自我进化架构](../ch03/004-agent.html) |
-| **行动层**（执行力） | 执行力 | 工具调用、任务分解、可靠执行 | [Agent 编排模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md) |
+| **行动层**（执行力） | 执行力 | 工具调用、任务分解、可靠执行 | [Agent 编排模式](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-orchestration-patterns.md) |
 
 ## 短期分化原因
 
@@ -72,7 +72,7 @@ Agent能力越强，治理越重要。成熟Agent的关键词不是"完全自主
 
 Agent不是消灭软件，而是让软件之间协作更自然。
 
-用户以"我要完成什么目标"为起点，Agent协调跨软件数据流转。[多Agent编排](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md)是将这一协调能力工程化落地的核心手段。
+用户以"我要完成什么目标"为起点，Agent协调跨软件数据流转。[多Agent编排](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-orchestration-patterns.md)是将这一协调能力工程化落地的核心手段。
 
 三层协调：
 - **工具层** — Agent调用各软件的API和工具能力
@@ -97,7 +97,7 @@ ROI可见性 + 风险控制 + 信任积累 = Agent商业化的三重门。
 
 ## 记忆系统的三重角色
 
-[Agent Memory 生命周期哲学](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md)揭示了记忆在三路线中的关键地位：
+[Agent Memory 生命周期哲学](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-lifecycle-philosophies.md)揭示了记忆在三路线中的关键地位：
 
 > 记忆的最终转变：从"记住过去"到"能做事"（Skills = 记忆的成熟产品形式）
 
@@ -112,7 +112,7 @@ ROI可见性 + 风险控制 + 信任积累 = Agent商业化的三重门。
 
 - [fanling company as agent ai org reflection v2](../ch03/004-agent.html)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/memory-context-systems.md)
 ## 深度分析
 
 ### 三路线汇聚的深层逻辑

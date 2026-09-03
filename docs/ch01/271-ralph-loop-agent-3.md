@@ -91,7 +91,7 @@ Codex goals允许设置token预算来控制agent运行成本。实际项目中�
 - [从 30 分钟手搓 Agent，到 Harness 成为"新后端"](../ch05/008-harness.html)
 
 ## ## 相关实体
-- [gsd-get-shit-done-context-management-tool](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
+- [gsd-get-shit-done-context-management-tool](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
 
 ## ## 相关实体
 - [Hermes Agent /goal 长任务运行时架构](../ch04/161-hermes-agent.html)

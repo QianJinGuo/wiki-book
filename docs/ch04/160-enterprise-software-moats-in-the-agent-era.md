@@ -14,7 +14,7 @@
 | **网络效应** | 历史上对记录系统几乎没用（Salesforce 无飞轮） |
 **数据护城河**：受监管/专有/需持续更新的数据天然有优势
 
-值得注意是，Salesforce Marketing Cloud（ExactTarget）的邮件加密实现曾被披露存在架构性缺陷——服务商自身保留解密能力而非真正的端到端加密（参见 [Ghosts of Encryption Past](https://github.com/QianJinGuo/wiki/blob/main/entities/slcyber-io-research-center-ghosts-of-encryption-past-salesforce-exacttarget.md)）。这意味着企业将敏感通信托付给 SaaS 平台时，数据控制权的边界往往比合同条款所描述的更模糊。
+值得注意是，Salesforce Marketing Cloud（ExactTarget）的邮件加密实现曾被披露存在架构性缺陷——服务商自身保留解密能力而非真正的端到端加密（参见 [Ghosts of Encryption Past](https://github.com/QianJinGuo/wiki-public/blob/main/entities/slcyber-io-research-center-ghosts-of-encryption-past-salesforce-exacttarget.md)）。这意味着企业将敏感通信托付给 SaaS 平台时，数据控制权的边界往往比合同条款所描述的更模糊。
 **金句**：替换 CRM 是开胸手术。替换 ERP，是给正在跑马拉松的人做开胸手术。
 
 ## Agent 时代的护城河重塑
@@ -93,7 +93,7 @@ SaaS 时代记录系统几乎没有飞轮效应，因为软件是单向记录工
 
 ## 与 vault 知识关联
 - [Agent Harness 架构](../ch05/035-agent-harness.html) — Agent 与企业软件的交互层，Harness 是 Agent 执行时的"护城河"
-- [Multi-Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-systems.md) — 多 Agent 协作世界里，跨 Agent 身份认证和授权是全新机会（深思SenseAI 补充）
+- [Multi-Agent Systems](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/multi-agent-systems.md) — 多 Agent 协作世界里，跨 Agent 身份认证和授权是全新机会（深思SenseAI 补充）
 - [Agent Memory 模块化框架](133-agent-memory.html) — 数据排放（data exhaust）与记忆系统的关系
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/salesforce-headless-software-losing-head-a16z.md)
 

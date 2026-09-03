@@ -59,7 +59,7 @@ Every semiconductor boom has been followed by a bust — without exception. The 
 - [Google正在研发新的服务器AI芯片](../ch04/257-ai.html)
 - [AI Chip Architecture First Principles](../ch04/257-ai.html)
 - [Nvidia: $40B+ AI Investments](../ch04/257-ai.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/05-11-the-great-memory-panic-of-2026.md)
 
 ---

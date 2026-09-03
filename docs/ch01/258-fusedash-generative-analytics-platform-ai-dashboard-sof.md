@@ -130,11 +130,11 @@ MCP 协议支持是一个值得关注的长期差异化方向。随着 AI Agent 
 对于规模在 50 人以下、尚未建立专职 BI 团队的团队，Fusedash 的 ROI 优势明显。对于已有成熟 BI 体系的大型企业，Fusedash 更适合作为「快速原型工具」或「业务自助分析层」，而非核心 BI 替代品。
 
 ## 相关实体
-- [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
+- [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 - [Langgraph State Machine Under The Hood](../ch04/165-langgraph.html)
 - [Deepseek V4 Training 58 Page Paper Deep Dive](459-deepseek-v4.html)
 - [Minimax Agent Team Mavis Owner Worker Verifier](../ch03/004-agent.html)
-- [Anthropic Nla Natural Language Autoencoders Interpretability](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-nla-natural-language-autoencoders-interpretability.md)
+- [Anthropic Nla Natural Language Autoencoders Interpretability](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-nla-natural-language-autoencoders-interpretability.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fusedash-generative-analytics-platform.md)
 

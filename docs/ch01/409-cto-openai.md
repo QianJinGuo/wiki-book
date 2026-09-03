@@ -26,19 +26,19 @@
 - [Ciodive Openai Daybreak Cyber Threats](316-openai.html)
 - "快来和ai实战派一起aiaigc峰会最新嘉宾阵容来了"
 - [Ai True Moat Organizational Capability](../ch04/257-ai.html)
-- [The Anti Singularity](https://github.com/QianJinGuo/wiki/blob/main/entities/the-anti-singularity.md)
+- [The Anti Singularity](https://github.com/QianJinGuo/wiki-public/blob/main/entities/the-anti-singularity.md)
 - [Wiki Evolver Skill System Design Gpt55 Copilot Session](../ch07/015-wiki-evolver.html)
 - [Gpt 54 Is A Big Step For Codex](393-codex.html)
 - [Yann Dubois Openai Post Training Matt Turck Interview](316-openai.html)
 - [Codex Sites Cloudflare Worker One Click Deploy Geekhome](393-codex.html)
-- [Prime Intellect Auto Nanogpt Opus 2930](https://github.com/QianJinGuo/wiki/blob/main/entities/prime-intellect-auto-nanogpt-opus-2930.md)
+- [Prime Intellect Auto Nanogpt Opus 2930](https://github.com/QianJinGuo/wiki-public/blob/main/entities/prime-intellect-auto-nanogpt-opus-2930.md)
 - [Gpt 5 It Just Does Stuff](179-gpt-5-it-just-does-stuff.html)
 - [Three Years From Gpt 3 To Gemini 3](193-three-years-from-gpt-3-to-gemini-3.html)
 - [Openai Symphony Codex Orchestration Linear Control Plane Tutuai](316-openai.html)
 - [Xinzhiyuan Openai Tax Ai Self Improving Codex Eval Loop 20260606](316-openai.html)
 - [Openai Codex Jasonliu Maxxing Playbook](../ch09/115-openai-codex.html)
-- [5238213](https://github.com/QianJinGuo/wiki/blob/main/entities/5238213.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-ecosystem.md)
+- [5238213](https://github.com/QianJinGuo/wiki-public/blob/main/entities/5238213.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/openai-ecosystem.md)
 ## 深度分析
 
 ### 1. OpenAI 的治理失败是结构性的，而非偶发的

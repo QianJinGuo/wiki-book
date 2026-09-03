@@ -90,7 +90,7 @@ LLMReaper 的技术与 2024-2025 年 Chrome Web Store 大规模恶意扩展事�
 ## 相关实体
 
 - `Cve 2026 20182 Cisco Sd Wan Vhub Bypass` — 类似的概念（浏览器扩展供应链攻击）
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 安全工程是 harness 的一部分
+- [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — 安全工程是 harness 的一部分
 - `Shub Reaper Macos Stealer Attack Chain` — 类似命名（macOS stealer）的攻击链
 - `Llmshare Using Shared Chatbot Pages To Distribute Malware 20260606` — LLM 相关恶意软件分发
 - `Zapocalypse The Attack Chain That Could Have Hijacked Zapier 20260606` — AI 平台攻击链分析

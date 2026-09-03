@@ -16,7 +16,7 @@ Amazon Bedrock AgentCore Web Search 以全托管 MCP 兼容方式为 AI Agent �
 ## 核心要点
 
 1. **解决 Agent 知识冻结问题**：Agent 的知识停留在训练时间，无法获取实时信息（股价、比分、刚发布的版本）。Web Search on AgentCore 直接解决这一结构性限制
-2. **零基础设施开销**：作为 AgentCore Gateway 的 managed target/connector，Agent 通过标准 `tools/list` 发现，像其他 [MCP](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-context-protocol-mcp.md) 工具一样调用
+2. **零基础设施开销**：作为 AgentCore Gateway 的 managed target/connector，Agent 通过标准 `tools/list` 发现，像其他 [MCP](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/model-context-protocol-mcp.md) 工具一样调用
 3. **Amazon 自建搜索索引**：非第三方搜索 API wrapper，覆盖数百亿文档，持续分钟级刷新
 4. **隐私保证**：查询流量不离开 AWS 基础设施，满足数据驻留和第三方出口合规要求
 5. **知识图谱 + 语义片段提取**：内置知识图谱提供高置信度事实答案；语义片段提取针对 LLM context window 优化
@@ -136,7 +136,7 @@ AWS 中国区解决方案架构师团队发布了 Web Search Tool 的端到端�
 
 ## 实践启示
 
-1. **Agent 架构设计**：将 Web Search 作为 Agent 的「外部记忆」层，与内部 [RAG](https://github.com/QianJinGuo/wiki/blob/main/concepts/retrieval-augmented-generation-rag.md) 知识库配合，形成完整的知识获取架构
+1. **Agent 架构设计**：将 Web Search 作为 Agent 的「外部记忆」层，与内部 [RAG](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/retrieval-augmented-generation-rag.md) 知识库配合，形成完整的知识获取架构
 2. **成本优化**：$7/1,000 queries 意味着每个问题不到 1 美分——对于需要实时信息的 Agent 场景（金融分析、新闻摘要、竞品监控），成本可控
 3. **合规考量**：对数据驻留有严格要求的企业（金融、医疗、政府），AWS 内部查询路径消除了第三方数据出口的合规障碍
 4. **MCP 生态价值**：作为 MCP 工具暴露意味着任何兼容 MCP 的 Agent 框架均可零代码接入——这是 MCP 协议生态的实际价值体现
@@ -144,7 +144,7 @@ AWS 中国区解决方案架构师团队发布了 Web Search Tool 的端到端�
 
 ## 相关实体
 
-- [RAG (检索增强生成)](https://github.com/QianJinGuo/wiki/blob/main/concepts/retrieval-augmented-generation-rag.md)
+- [RAG (检索增强生成)](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/retrieval-augmented-generation-rag.md)
 
 ---
 

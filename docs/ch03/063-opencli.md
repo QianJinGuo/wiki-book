@@ -27,7 +27,7 @@ OpenCLI 通过 **Chrome 扩展 + 本地微守护进程**建立浏览器桥接：
 2. OpenCLI 拦截浏览器与网站后端的原生 API 调用
 3. 将这些 API 封装为标准化命令行接口
 4. AI Agent / 脚本直接调用，绕过前端 GUI
-对比爬虫的关键差异见 [爬虫 vs OpenCLI 深度对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/crawler-vs-opencli.md)。
+对比爬虫的关键差异见 [爬虫 vs OpenCLI 深度对比](https://github.com/QianJinGuo/wiki-public/blob/main/comparisons/crawler-vs-opencli.md)。
 
 ## Directory Structure
 ```
@@ -110,12 +110,12 @@ Agent 不会欣赏按钮做得多圆，只在乎能不能稳定调用。GUI 服�
 
 ## Related
 - [CLI-Anything](../ch04/311-cli-anything-agent-gui.html) — 让所有软件 Agent 原生化
-- [AutoCLI](https://github.com/QianJinGuo/wiki/blob/main/entities/autocli.md) — 极速网页信息获取
+- [AutoCLI](https://github.com/QianJinGuo/wiki-public/blob/main/entities/autocli.md) — 极速网页信息获取
 - [AgentBrowser](../ch04/271-chromium-blink-v8-agent-browser-use.html) — AI 专用浏览器
   > **补充**（行小招/科技充电站，2026-05-19）：四工具横向对比（browser-use / Playwright / chrome-devtools-mcp / agent-browser）核心结论：agent-browser 用 accessibility tree + @eN ref，token 最省、session 跨命令持久，适合 AI Coding 即时验证；browser-use 适合目标模糊的完整自动化；Playwright 适合 CI 稳定回归；chrome-devtools-mcp 适合底层网络/性能/JS 调试。
 
 - [Hermes-Agent](../ch04/161-hermes-agent.html) — 支持从 OpenCLI 无缝迁移
-- [OpenClaw](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md) — **注意：与 OpenClaw（淘天 Agent 框架）无关系**，两者仅命名相似，实为完全不同项目：OpenCLI = 网页自动化工具，OpenClaw = AI Agent 执行框架
+- [OpenClaw](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/openclaw-architecture.md) — **注意：与 OpenClaw（淘天 Agent 框架）无关系**，两者仅命名相似，实为完全不同项目：OpenCLI = 网页自动化工具，OpenClaw = AI Agent 执行框架
 
 ## 相关实体
 

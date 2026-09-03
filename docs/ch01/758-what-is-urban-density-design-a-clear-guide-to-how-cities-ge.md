@@ -125,8 +125,8 @@
 ## 相关实体
 
 - [What Figma Made Visible — 设计系统思维](../ch03/011-what-figma-made-visible-component-model-bridging-design-and.html)
-- [Haptics Design — 交互设计](https://github.com/QianJinGuo/wiki/blob/main/entities/haptics-design-implementation-microsoft-windows11.md)
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- [Haptics Design — 交互设计](https://github.com/QianJinGuo/wiki-public/blob/main/entities/haptics-design-implementation-microsoft-windows11.md)
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/what-is-urban-density-design-a-clear-guide.md)
 

@@ -164,7 +164,7 @@ Dead Store Elimination 在一般情况下是不安全的（MMIO、异常流可�
 ## 关联实体
 
 - [Nanobot Agent Framework Architecture Deep Dive](../ch03/004-agent.html) — "通用机制 + 范围约束"的元模式在 Agent 领域的应用
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 系统工程中"通用 + 可配置"的范式
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — 系统工程中"通用 + 可配置"的范式
 
 ## 相关链接
 

@@ -92,12 +92,12 @@ CoT（Chain of Thought）之所以"低效"，是因为它要求 LLM 用"逐步�
 
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/004-agent.html)
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](651-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
-- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
+- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 - [Karpathy 从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
 - [OpenClaw 多 Agent 协同开发](../ch04/176-openclaw.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/098-karpathy-vibe-coding-agentic-engineering.html)
 
-- [stealing passwords via html injection under a strict csp](https://github.com/QianJinGuo/wiki/blob/main/entities/afine-csp-html-injection-password-exfiltration.md)
+- [stealing passwords via html injection under a strict csp](https://github.com/QianJinGuo/wiki-public/blob/main/entities/afine-csp-html-injection-password-exfiltration.md)
 - [better decisions at scale: how mathematical optimization del](../ch11/130-better-decisions-at-scale-how-mathematical-optimization-del.html)
 - [farewell ai2](../ch04/257-ai.html)
 - [introducing 1-bit and ternary bonsai image 4b: image generat](713-introducing-1-bit-and-ternary-bonsai-image-4b-image-generat.html)

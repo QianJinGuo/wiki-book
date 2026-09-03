@@ -66,14 +66,14 @@
 ## 相关实体
 - [Based On Prowler Genai Build Fintech Intelligent Compliance 2](048-prowler-genai.html)
 - [Restrict Access To Sensitive Documents In Your Amazon Q S3 Knowledge Bases](018-restrict-access-to-sensitive-documents-in-your-amazon-q-s3-k.html)
-- [Aws Cognito Multi Region Replication](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-cognito-multi-region-replication.md)
-- [Aws Transform Ezconvertbi Bi Migration](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-transform-ezconvertbi-bi-migration.md)
+- [Aws Cognito Multi Region Replication](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-cognito-multi-region-replication.md)
+- [Aws Transform Ezconvertbi Bi Migration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-transform-ezconvertbi-bi-migration.md)
 - [Amazon Bedrock Agentic Payments Guardrails](135-amazon-bedrock.html)
-- [基于 Amazon Ecs Fargate 自建 Keycloak 作为 Aws Iam Identity Center](https://github.com/QianJinGuo/wiki/blob/main/entities/基于-amazon-ecs-fargate-自建-keycloak-作为-aws-iam-identity-center.md)
+- [基于 Amazon Ecs Fargate 自建 Keycloak 作为 Aws Iam Identity Center](https://github.com/QianJinGuo/wiki-public/blob/main/entities/基于-amazon-ecs-fargate-自建-keycloak-作为-aws-iam-identity-center.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-software-supply-chain-security-well-architected.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-privacy-landscape.md)
 ## 深度分析
 
 1. **临时凭证是供应链安全的基石**：Shai-Hulud 成功的核心原因是 long-term npm token 和 GitHub token 被窃取后可直接传播恶意代码。OIDC federation 让 CI/CD job 每次获取短期凭证，token 泄漏的窗口期从"永久"缩小到"本次构建"，从根本上限制了攻击者的横向移动能力。

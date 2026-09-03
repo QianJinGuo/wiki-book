@@ -63,7 +63,7 @@ Activity-Focused Design 的核心价值在于将设计视角从"用户是谁"转
 
 ## 相关实体
 - [Icon Pack Websites Designers Should Bookmark](092-icon-pack-websites-designers-should-bookmark.html)
-- [Blog.Tubikstudio.Com Form Over Function Mistakes](https://github.com/QianJinGuo/wiki/blob/main/entities/blog.tubikstudio.com-form-over-function-mistakes.md)
+- [Blog.Tubikstudio.Com Form Over Function Mistakes](https://github.com/QianJinGuo/wiki-public/blob/main/entities/blog.tubikstudio.com-form-over-function-mistakes.md)
 - [Designing Small Is Harder Than Designing Big Ux Magazine](067-designing-small-is-harder-than-designing-big-ux-magazine.html)
 - [Deepmind Ai Pointer](../ch04/257-ai.html)
 - [Qoder Skill Ui](045-qoder-skill-ui-agent.html)

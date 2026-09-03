@@ -8,7 +8,7 @@
 
 ### Working Memory（工作记忆）
 
-Working Memory 对应 LLM 的[上下文窗口](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)，是最短期的记忆形式。当上下文满时，新信息通过 FIFO（先进先出）策略覆盖旧信息——即 **FIFO dropping**。这种机制的局限性在于：信息寿命极短，仅在当前对话轮次内有效，且上下文窗口大小直接决定可用的记忆带宽。实际的工程实现中，Working Memory 的容量通常以 token 数量计量（GPT-4o 支持 128K tokens，Claude 3.5 支持 200K tokens），超出部分要么被截断，要么需要依赖外部存储。
+Working Memory 对应 LLM 的[上下文窗口](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-window-management.md)，是最短期的记忆形式。当上下文满时，新信息通过 FIFO（先进先出）策略覆盖旧信息——即 **FIFO dropping**。这种机制的局限性在于：信息寿命极短，仅在当前对话轮次内有效，且上下文窗口大小直接决定可用的记忆带宽。实际的工程实现中，Working Memory 的容量通常以 token 数量计量（GPT-4o 支持 128K tokens，Claude 3.5 支持 200K tokens），超出部分要么被截断，要么需要依赖外部存储。
 
 ### Long-term Memory（长期记忆）
 
@@ -95,11 +95,11 @@ Agent 记忆系统与多个相邻技术存在交集： 提供了长期记忆的�
 **5. 设计 Memory API 时预留 `memory.forget(criteria)` 和版本化回滚能力。** 记忆系统不是只写不删的：GDPR 等隐私法规要求删除特定用户的所有记忆数据，可条件删除的 API 能力是合规必需品；版本化回滚则是应对 Agent 错误编辑记忆（Self-editing 架构）的最后安全网。
 
 ## 相关实体
-- [Rag Knowledge Retrieval](https://github.com/QianJinGuo/wiki/blob/main/moc/rag-knowledge-retrieval.md)
+- [Rag Knowledge Retrieval](https://github.com/QianJinGuo/wiki-public/blob/main/moc/rag-knowledge-retrieval.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-ai-agent-memory-works.md)
 
-- [Wiki Entities Architecture Map](https://github.com/QianJinGuo/wiki/blob/main/queries/wiki-entities-architecture-map.md)
+- [Wiki Entities Architecture Map](https://github.com/QianJinGuo/wiki-public/blob/main/queries/wiki-entities-architecture-map.md)
 - [Video Rag Chunking Strategy Deephub Imba](../ch01/168-rag.html)
 
 ---

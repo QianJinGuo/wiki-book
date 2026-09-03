@@ -66,8 +66,8 @@ SeedVR2 专注于**修复/超分辨率**（输入低清 → 输出高清），�
 
 ## 相关实体
 
-- [推理优化](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md)
-- [推理优化](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md)
+- [推理优化](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/inference-optimization.md)
+- [推理优化](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/inference-optimization.md)
 
 ---
 

@@ -89,8 +89,8 @@ Sandu 在犯罪链条中担任 money mule——负责将数字盗窃转化为物
 ## 相关实体
 
 - [Npm Supply Chain Compromise Postmortem](../ch04/257-ai.html)
-- [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
-- [Funnel Builder Flaw Woocommerce Checkout Skimm](https://github.com/QianJinGuo/wiki/blob/main/entities/funnel-builder-flaw-woocommerce-checkout-skimm.md)
+- [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloudflare-glasswing-mythos-security.md)
+- [Funnel Builder Flaw Woocommerce Checkout Skimm](https://github.com/QianJinGuo/wiki-public/blob/main/entities/funnel-builder-flaw-woocommerce-checkout-skimm.md)
 - [Ath Agent Trust Handshake Protocol](../ch03/004-agent.html)
 - [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](../ch01/280-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html)
 

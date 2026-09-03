@@ -103,7 +103,7 @@ KK大叔用 `optimize_anything` 框架在 Hermes Agent 上落地了一个 4 轮�
 **延伸引用论文**：清华 SkillEvolver（角色分离闭环进化）、微软 SkillLens（9 维评估 + 棘轮）、南大+微软+清华 AIR EmbodiSkill（技能体/附录分离 + 四类归因）。
 
 ## 相关概念
-- [LLM Artifact Optimization](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-artifact-optimization.md) — 文本/制品进化优化专题
+- [LLM Artifact Optimization](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/llm-artifact-optimization.md) — 文本/制品进化优化专题
 - [AlphaEvolve](../ch03/004-agent.html) — DeepMind 代码进化型科学发现 Agent
 - [Agent Memory 模块化框架与评测](../ch04/133-agent-memory.html) — ICLR 2026 评测基准
 - [Skill RAG 清华 SRA](../ch07/054-skill.html) — 技能增强型检索
@@ -123,7 +123,7 @@ KK大叔用 `optimize_anything` 框架在 Hermes Agent 上落地了一个 4 轮�
 5. **优先在 Generalization 模式构建可迁移 skill library**：对于需要在新问题上快速适配的场景（如 Agent skill 自动化），先用 Generalization 模式将优化结果固化为 skill，再用 Multi-Task 模式让 skill 在任务间互相增强^。
 
 ## 相关实体
-- [2026年最值得关注的15款开发者工具你用过几个](https://github.com/QianJinGuo/wiki/blob/main/entities/2026年最值得关注的15款开发者工具你用过几个.md)
+- [2026年最值得关注的15款开发者工具你用过几个](https://github.com/QianJinGuo/wiki-public/blob/main/entities/2026年最值得关注的15款开发者工具你用过几个.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026.md)
 

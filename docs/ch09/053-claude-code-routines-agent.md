@@ -123,7 +123,7 @@ Maya 的"新员工"类比揭示了一个关键洞察：**Agent 的可信赖程�
 ---
 ## 关联
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-routines-proactive-agent.md)
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

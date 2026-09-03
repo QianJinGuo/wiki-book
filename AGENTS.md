@@ -16,7 +16,7 @@
 版本:     v1.3.8
 ```
 
-公开边界：`docs/raw/` 虽由 `mkdocs.yml` 的 `exclude_docs` 排除、不生成站点页面，仍然是公开 GitHub 仓库的一部分；`meta/` 是不进站点的公开内部过程文档。两者都不得提交密钥、个人凭据或不适合公开的内容。`docs/AGENTS.md`、`docs/sprint.html` 和 `tests/archive/` 已清理，不应重新加入。
+公开边界：`docs/raw/` 虽由 `mkdocs.yml` 的 `exclude_docs` 排除、不生成站点页面，仍然是公开 GitHub 仓库的一部分；当前 raw 目录只保留来源索引，不保留私有 wiki 的原文正文。`meta/` 是不进站点的公开内部过程文档。两者都不得提交密钥、个人凭据或不适合公开的内容。`docs/AGENTS.md`、`docs/sprint.html` 和 `tests/archive/` 已清理，不应重新加入。
 
 ## 链接规则
 
@@ -24,9 +24,9 @@
 |---------|------|------|
 | `[[entities/xxx]]` | 站内章节目录 | `ch01/045-agent.md` → MkDocs 转 `.html` |
 | `[[raw/articles/xxx]]` | 本仓库 GitHub blob（`github.com/QianJinGuo/wiki-book/blob/main/docs/raw/articles/...`） | 带 GitHub UI |
-| `[[concepts/xxx]]` / `[[moc/xxx]]` | 上游 wiki GitHub blob（`github.com/QianJinGuo/wiki/blob/main/...`） | 带 GitHub UI |
+| `[[concepts/xxx]]` / `[[moc/xxx]]` | 公开 wiki 镜像 GitHub blob（`github.com/QianJinGuo/wiki-public/blob/main/...`） | 带 GitHub UI |
 
-`docs/raw/` 的链接是有意指向 GitHub 永久地址；修改链接规则时必须同时检查 `docs/PATH.md` 和 `scripts/fix-github-links.mjs`。
+`docs/raw/` 的链接有意指向 wiki-book 自己的 GitHub 永久地址；实体、概念和导航页链接指向 `wiki-public`。URL 由仓库根目录的 `site-links.json` 统一配置，修改链接规则时必须同时运行 `scripts/fix-github-links.mjs --apply`、检查 `docs/PATH.md`，并通过 `scripts/check-wiki-links.mjs`。
 
 ### 常见问题
 

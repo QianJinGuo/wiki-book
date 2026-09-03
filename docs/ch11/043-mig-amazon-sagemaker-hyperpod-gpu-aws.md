@@ -91,7 +91,7 @@ MIG的价值最终体现在成本降低上，需要建立配套的监控体系�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagemaker.md)
 
 - [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](../ch01/470-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/amazon-aws-ai.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/amazon-aws-ai.md)
 
 ---
 

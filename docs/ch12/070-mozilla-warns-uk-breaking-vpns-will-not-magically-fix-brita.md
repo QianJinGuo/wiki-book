@@ -13,12 +13,12 @@
 - [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britain S Age Check Mess](070-mozilla-warns-uk-breaking-vpns-will-not-magically-fix-brita.html)
 - [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britain S Age Check Mess](070-mozilla-warns-uk-breaking-vpns-will-not-magically-fix-brita.html)
 - You Ll Soon Be Able To Bet On Bitcoin Volatility Not Just Price On Cme
-- [London Met Police Big Tech Data Requests](https://github.com/QianJinGuo/wiki/blob/main/entities/london-met-police-big-tech-data-requests.md)
-- [Clarity Act 5 Things](https://github.com/QianJinGuo/wiki/blob/main/entities/clarity-act-5-things.md)
+- [London Met Police Big Tech Data Requests](https://github.com/QianJinGuo/wiki-public/blob/main/entities/london-met-police-big-tech-data-requests.md)
+- [Clarity Act 5 Things](https://github.com/QianJinGuo/wiki-public/blob/main/entities/clarity-act-5-things.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mozilla-warns-uk-breaking-vpns-will-not-magically-fix-britai.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-landscape.md)
 ## 深度分析
 ### 安全工具被政治化的危险性
 此案的核心矛盾：VPN 作为基本安全基础设施，被英国政府因为-age check 政策副作用而重新定义为"teenage contraband"。Mozilla 的立场是"VPNs are basic security infrastructure, not teenage contraband"。

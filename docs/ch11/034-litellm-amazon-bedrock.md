@@ -142,7 +142,7 @@ LiteLLM 内置 `/metrics` 端点暴露 Prometheus 指标，配合 Grafana 看板
 
 - `concepts/llm-cost-control`（LLM 成本控制，概念层，待创建）
 - [AWS Bedrock AgentCore Gateway MCP 扩展](../ch04/383-amazon-bedrock-agentcore.html)
-- [阿里云云原生 API Gateway Gateway API 指南](https://github.com/QianJinGuo/wiki/blob/main/entities/aliyun-cloud-native-api-gateway-gateway-api-guide.md)
+- [阿里云云原生 API Gateway Gateway API 指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aliyun-cloud-native-api-gateway-gateway-api-guide.md)
 
 ---
 

@@ -57,7 +57,7 @@ Skill 文件结构支持主文件和支撑文件的分离：主 SKILL.md 保持�
 
 ## 相关实体
 
-- [Lovable Discoverability 介绍](https://github.com/QianJinGuo/wiki/blob/main/entities/lovable-discoverability-intro.md)
+- [Lovable Discoverability 介绍](https://github.com/QianJinGuo/wiki-public/blob/main/entities/lovable-discoverability-intro.md)
 
 - [Claude Code Skills 超能力实战](../ch01/381-claude-code-skills-superpowers.html)
 - [Anthropic Agent Skills 设计模式14条](../ch04/077-anthropic-agent.html)

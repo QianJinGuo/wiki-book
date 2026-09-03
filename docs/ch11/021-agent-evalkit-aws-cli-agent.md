@@ -88,7 +88,7 @@ Agent-EvalKit 团队在 Strands Agents SDK + Bedrock 旅行研究 agent 上跑 1
 
 - [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](../ch03/004-agent.html) — YAML 驱动的 AgentEval 框架，Go 实现
 - [Harness Engineered Business Agent Evaluation Aliyun Boyu](../ch05/008-harness.html) — 阿里云泊予用 Claude Code 搭建评测 Harness
-- [Langsmith Evaluation Concepts](https://github.com/QianJinGuo/wiki/blob/main/entities/langsmith-evaluation-concepts.md) — LangSmith 评测概念框架
+- [Langsmith Evaluation Concepts](https://github.com/QianJinGuo/wiki-public/blob/main/entities/langsmith-evaluation-concepts.md) — LangSmith 评测概念框架
 - [Agent Harness Observability Production](../ch05/035-agent-harness.html) — Agent harness 生产可观测性
 - [Agent Memory Evaluation Landscape Taobao Survey](../ch04/133-agent-memory.html) — Agent 记忆评估方法论全景
 - [基于 aws 智能设备助手行业资产，构建社交渠道触达的消费级 agent 交互应用](../ch03/004-agent.html)
@@ -96,7 +96,7 @@ Agent-EvalKit 团队在 Strands Agents SDK + Bedrock 旅行研究 agent 上跑 1
 
 - [基于浏览器请求录制与ai代码生成的e2e接口自动化测试实践](../ch04/257-ai.html)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/evaluation-and-benchmarks.md)
 ## 深度分析
 
 ### 核心观点：AI 编码助手作为评测引擎是新范式

@@ -181,7 +181,7 @@ Self-Harness 真实运行更像**分支搜索**，会有平台期和回撤。绿
 
 ### 1. Self-Harness 与 L6 Meta-Harness 的关系
 
-[L6 Meta-Harness 编排自优化](../ch03/004-agent.html) 是 [Agent 自我改进六层模型](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-self-improvement-loops.md) 的最顶层，强调"Big Harness > Big Model"。Stanford 的 Meta-Harness 用 **Claude Code + Opus 4.6** 迭代优化 Harness（强模型改弱模型），7 轮迭代把文本分类推到比 ACE 高 7.7 个百分点。
+[L6 Meta-Harness 编排自优化](../ch03/004-agent.html) 是 [Agent 自我改进六层模型](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-self-improvement-loops.md) 的最顶层，强调"Big Harness > Big Model"。Stanford 的 Meta-Harness 用 **Claude Code + Opus 4.6** 迭代优化 Harness（强模型改弱模型），7 轮迭代把文本分类推到比 ACE 高 7.7 个百分点。
 
 Self-Harness 是**同模型自举**版本——把"需要更强模型"这个外部依赖彻底拿掉。这条路线走通后有几个深远含义：
 
@@ -205,7 +205,7 @@ Meta-Harness 消融实验 显示：给 AI 完整信息（50%）vs 摘要（34%�
 - GLM-5 held-out 涨 14.2 个百分点
 - Qwen3.5 held-in 涨 20.9 个百分点（**相对 138%**）
 
-如果用 [Harness-as-Product-Surface](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-as-product-surface.md) 的视角看，**模型是 0、1 之争，Harness 是中间地带的全部竞争**。Self-Harness 把这条 thesis 用"模型自举"的方式做了实证。
+如果用 [Harness-as-Product-Surface](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-as-product-surface.md) 的视角看，**模型是 0、1 之争，Harness 是中间地带的全部竞争**。Self-Harness 把这条 thesis 用"模型自举"的方式做了实证。
 
 ### 4. 接受规则的工程严谨性
 
@@ -215,13 +215,13 @@ Self-Harness 的接受门 **接受 ⟺ (Δa ≥ 0 AND Δb ≥ 0) AND (Δa > 0 OR
 - **必须至少一个 split 有提升**——避免"无用但无害"的修改堆积
 - **held-out 不暴露给 Proposer**——专门做回归门，模拟"面对新任务"的能力
 
-这个设计直接对标 [验证工程](https://github.com/QianJinGuo/wiki/blob/main/concepts/verifier-driven-development.md) 里的**双向门控**原则：既要 in-distribution 提升，也要 out-of-distribution 不退步。这与传统的 RLHF 用单一 reward signal 不一样，**Self-Harness 的奖励信号是结构化的（held-in、held-out 两个 pass 计数）**，本质上是在 Harness 层做了**轻量 RLHF**。
+这个设计直接对标 [验证工程](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/verifier-driven-development.md) 里的**双向门控**原则：既要 in-distribution 提升，也要 out-of-distribution 不退步。这与传统的 RLHF 用单一 reward signal 不一样，**Self-Harness 的奖励信号是结构化的（held-in、held-out 两个 pass 计数）**，本质上是在 Harness 层做了**轻量 RLHF**。
 
 ### 5. 与现有"自进化"工作的层级区分
 
 | 方向 | 代表 | 改进对象 | Self-Harness 差异 |
 |------|------|---------|------------------|
-| 上下文/记忆自适应 | [Reflexion](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-self-improvement-loops.md), ACE | 回复策略、上下文 | 改**声明式 Harness 状态** |
+| 上下文/记忆自适应 | [Reflexion](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-self-improvement-loops.md), ACE | 回复策略、上下文 | 改**声明式 Harness 状态** |
 | 外部 Agent 设计搜索 | [ADAS](../ch03/004-agent.html), [Meta-Harness](../ch03/004-agent.html) | Harness 代码空间 | **无更强外部优化器** |
 | 开放 ended 自进化 | AI Scientist, DGM | 算法/能力扩展 | **有界编辑 + 固定基准** |
 
@@ -272,18 +272,18 @@ Self-Harness 把自己定位在**"可控、可审计"**的一端：每次 Harnes
 - [Agent Harness 工程学调研 2026](../ch05/057-harness-engineering.html) — Self-Harness 是该领域的最新论文
 - [Agent Harness 工程学调研 etcvlovg Taxonomy](../ch05/057-harness-engineering.html)
 - [Agent Production Harness Engineering](../ch05/057-harness-engineering.html)
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [Harness as Product Surface](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-as-product-surface.md)
-- [Agent 自我改进循环](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-self-improvement-loops.md)
-- [AI 自我改进自举](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-self-improvement-bootstrapping.md)
-- [Evaluation Harness Design](https://github.com/QianJinGuo/wiki/blob/main/concepts/evaluation-harness-design.md)
-- [Verifier-Driven Development](https://github.com/QianJinGuo/wiki/blob/main/concepts/verifier-driven-development.md)
-- [SGLang](https://github.com/QianJinGuo/wiki/blob/main/entities/sglang.md) — Qwen3.5 部署用到的推理引擎
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- [Harness as Product Surface](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-as-product-surface.md)
+- [Agent 自我改进循环](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-self-improvement-loops.md)
+- [AI 自我改进自举](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/ai-self-improvement-bootstrapping.md)
+- [Evaluation Harness Design](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/evaluation-harness-design.md)
+- [Verifier-Driven Development](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/verifier-driven-development.md)
+- [SGLang](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sglang.md) — Qwen3.5 部署用到的推理引擎
 - [DeepAgent 架构演进](../ch03/004-agent.html) — 初始 Harness 基于 DeepAgent SDK
 - [ByteDance TRAE Harness Engineering Guide](../ch01/465-trae-harness-engineering.html)
 - [复旦 AHE Agentic Harness Engineering](../ch05/057-harness-engineering.html)
 - [Harness Engineering 七层架构](../ch05/057-harness-engineering.html)
-- [Harness Component Expiry and Build-to-Delete](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-component-expiry-and-build-to-delete.md) — Self-Harness 的"接受门"是这一思想的工程化实现
+- [Harness Component Expiry and Build-to-Delete](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-component-expiry-and-build-to-delete.md) — Self-Harness 的"接受门"是这一思想的工程化实现
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/self-harness-shanghai-ai-lab-agent-improves-harness-hyman-2026-06-12.md)
 

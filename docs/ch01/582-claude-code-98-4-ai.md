@@ -18,7 +18,7 @@ Mohamed bin Zayed AI University VILA-Lab 发表的论文（arxiv: 2604.14228）�
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-engineering-truth-1.6-98.4.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/openai-developer-ecosystem.md)
 ## 深度分析
 
 VILA-Lab 的量化研究揭示了一个长期被从业者直觉回避的结论：AI 编程工具的核心竞争力不在模型本身，而在工程基础设施的确定性程度。98.4% vs 1.6% 的悬殊比例，指向的并非模型能力的边界，而是当前 AI 编程工具设计中大量"非智能"工作的体量——权限网关、上下文窗口管理、工具路由、错误恢复——这些恰恰是传统软件工程中最枯燥、也最影响用户体验的部分。

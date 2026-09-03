@@ -177,7 +177,7 @@ LLM Wiki 在企业级知识库场景面临结构性限制，不能简单替代 R
 - [Karpathy Vibe Coding Agentic Engineering V3](../ch04/098-karpathy-vibe-coding-agentic-engineering.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/karpathy-llm-wiki-second-brain-awkthole.md)
-- [yc掌门人60天写了60万行代码：gstack开源](https://github.com/QianJinGuo/wiki/blob/main/entities/gstack-garry-tan-600k-lines-60-days.md)
+- [yc掌门人60天写了60万行代码：gstack开源](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gstack-garry-tan-600k-lines-60-days.md)
 - [markdown 不会过时](546-markdown.html)
 - [Hermes Skills + LLM Wiki 知识系统](../ch07/016-hermes-skill.html)
 

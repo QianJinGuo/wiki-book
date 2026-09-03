@@ -48,7 +48,7 @@ Voice Notes 的设计值得玩味：它不是简单地把语音转成文字，�
 ## 相关实体
 
 - [Who Winning Enterprise AI Now](257-ai.html)
-- [Salesforce 主动砍掉了界面：护城河从来不在那里](https://github.com/QianJinGuo/wiki/blob/main/entities/salesforce-headless-software-losing-head-a16z.md)
+- [Salesforce 主动砍掉了界面：护城河从来不在那里](https://github.com/QianJinGuo/wiki-public/blob/main/entities/salesforce-headless-software-losing-head-a16z.md)
 - [3小时蒸发200万：一个AI客服引发的灾难](257-ai.html)
 - [LiveKit Agents 语音 AI 框架工程解析](../ch03/004-agent.html)
 - [Agentic AI in Finance](395-agentic-ai.html)

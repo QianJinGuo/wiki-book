@@ -108,7 +108,7 @@ EventHouse 的定位是 AI 时代面向 Agent 的"标准插座"。
 
 - [Agent Harness 上下文管理：工作集视角](../ch05/035-agent-harness.html)：从 Harness 视角看上下文工作集管理
 - [Agent Memory 架构本质](../ch04/323-perplexity-brain-self-improving-agent-memory-architecture.html)：记忆管理层
-- [Context Management in Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-management-agent-systems.md)：Agent 系统中的上下文管理框架
+- [Context Management in Agent Systems](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/context-management-agent-systems.md)：Agent 系统中的上下文管理框架
 - [智能体编排层中的上下文管理架构](../ch03/004-agent.html)：上下文管理架构模式
 
 ## 第 2 来源 — 阿里云 EventHouse 正式商业化（Luma 层 + Catalog/Analysis 三层架构）
@@ -125,7 +125,7 @@ EventHouse 的定位是 AI 时代面向 Agent 的"标准插座"。
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/memory-context-systems.md)
 
 ---
 

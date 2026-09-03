@@ -55,8 +55,8 @@
 ## 相关实体
 
 - [How to Build an AI-Native Startup](../ch05/018-ai-native.html)
-- [YC Spring 2026 全批 196 家公司分析：AI 不再是差异点](https://github.com/QianJinGuo/wiki/blob/main/entities/yc-spring-2026-196-companies-chris-lu-analysis.md)
-- [What Do Your Startup Advisors Say About You? — Charlie O'Donnell](https://github.com/QianJinGuo/wiki/blob/main/entities/what-do-your-startup-advisors-say-about-you-charlie-odonnell---coach-author-vc.md)
+- [YC Spring 2026 全批 196 家公司分析：AI 不再是差异点](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yc-spring-2026-196-companies-chris-lu-analysis.md)
+- [What Do Your Startup Advisors Say About You? — Charlie O'Donnell](https://github.com/QianJinGuo/wiki-public/blob/main/entities/what-do-your-startup-advisors-say-about-you-charlie-odonnell---coach-author-vc.md)
 - [How Superset built the IDE for AI agents on Vercel](074-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/thisisgoingtobebig-public-stealth.md)

@@ -216,7 +216,7 @@ CronService 的 cron 解析是简化版本，复杂表达式会静默降级为�
 
 ## Related
 
-- [OpenClaw 架构解析](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md)
+- [OpenClaw 架构解析](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/openclaw-architecture.md)
 
 ## Related
 
@@ -229,7 +229,7 @@ CronService 的 cron 解析是简化版本，复杂表达式会静默降级为�
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/memory-context-systems.md)
 
 ---
 

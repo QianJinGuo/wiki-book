@@ -55,11 +55,11 @@ Amazon Nova 2 Lite 是 AWS Bedrock 上的多模态基础模型，通过**自然�
 
 ### 零训练检测的实现机制
 
-Nova 2 Lite 的零样本能力源于其多模态预训练阶段积累的视觉-语言对齐。在传统计算机视觉流程中，每新增一类目标都需要重新标注数据、训练模型、验证调优；而 Nova 2 Lite 将"目标类别"作为自然语言输入，通过 prompt 中的 `elements` 变量注入，绕过了这一成本。 这一设计与 [Prompt Engineering 基础](https://github.com/QianJinGuo/wiki/blob/main/concepts/prompt-engineering-fundamentals.md) 中强调的"任务描述即规格"范式一脉相承——模型依赖语言理解能力而非记忆特定类别的视觉特征。AWS 官方博客的 street scene 示例验证了这一点：仅凭 "vehicle" 和 "stop sign" 两个词，模型能检测小目标、远处目标和部分遮挡目标，且 bounding box 贴合紧密。
+Nova 2 Lite 的零样本能力源于其多模态预训练阶段积累的视觉-语言对齐。在传统计算机视觉流程中，每新增一类目标都需要重新标注数据、训练模型、验证调优；而 Nova 2 Lite 将"目标类别"作为自然语言输入，通过 prompt 中的 `elements` 变量注入，绕过了这一成本。 这一设计与 [Prompt Engineering 基础](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/prompt-engineering-fundamentals.md) 中强调的"任务描述即规格"范式一脉相承——模型依赖语言理解能力而非记忆特定类别的视觉特征。AWS 官方博客的 street scene 示例验证了这一点：仅凭 "vehicle" 和 "stop sign" 两个词，模型能检测小目标、远处目标和部分遮挡目标，且 bounding box 贴合紧密。
 
 ### 归一化坐标系统的工程影响
 
-Nova 采用 0-1000 归一化坐标而非直接的像素坐标，这是一个影响下游处理的关键设计选择。归一化坐标使 API 响应与图像分辨率解耦——同一坐标在不同尺寸图像上都能通过简单线性变换还原为对应像素位置。 这一机制对 [Inference 优化](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md) 有直接意义：图像预处理（resize、normalize）不需要在调用 Bedrock 前完成，客户端只需在渲染阶段做一次坐标变换，降低了端到端延迟。
+Nova 采用 0-1000 归一化坐标而非直接的像素坐标，这是一个影响下游处理的关键设计选择。归一化坐标使 API 响应与图像分辨率解耦——同一坐标在不同尺寸图像上都能通过简单线性变换还原为对应像素位置。 这一机制对 [Inference 优化](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/inference-optimization.md) 有直接意义：图像预处理（resize、normalize）不需要在调用 Bedrock 前完成，客户端只需在渲染阶段做一次坐标变换，降低了端到端延迟。
 
 ### Serverless 架构的成本经济学
 
@@ -67,7 +67,7 @@ Nova 采用 0-1000 归一化坐标而非直接的像素坐标，这是一个影�
 
 ### 三行业用例的泛化性分析
 
-三个应用场景（制造业质量控制、精确农业、物流分拣）覆盖了工业视觉的核心场景，其共同特征是：目标类别随业务需求动态变化（"dent"vs"scratch"、病害类型、损坏形态），且数据标注成本高、专家稀缺。 这与 [Agentic Workflow Patterns](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-workflow-patterns.md) 中描述的"动态任务分配"场景高度吻合——Nova 2 Lite 在这类场景中替代了传统的专用检测模型，降低了 AI 落地的门槛。值得注意的是，这些用例均未使用任何额外训练数据，验证了 prompt-driven 范式在垂直行业的泛化潜力。
+三个应用场景（制造业质量控制、精确农业、物流分拣）覆盖了工业视觉的核心场景，其共同特征是：目标类别随业务需求动态变化（"dent"vs"scratch"、病害类型、损坏形态），且数据标注成本高、专家稀缺。 这与 [Agentic Workflow Patterns](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agentic-workflow-patterns.md) 中描述的"动态任务分配"场景高度吻合——Nova 2 Lite 在这类场景中替代了传统的专用检测模型，降低了 AI 落地的门槛。值得注意的是，这些用例均未使用任何额外训练数据，验证了 prompt-driven 范式在垂直行业的泛化潜力。
 
 ### Prompt 模板的可复用性工程
 
@@ -81,7 +81,7 @@ Nova 采用 0-1000 归一化坐标而非直接的像素坐标，这是一个影�
 
 ### Prompt 模板是核心工程资产
 
-`elements` + `schema` 的模板化设计是整个方案最重要的工程决策。模板质量直接决定检测准确率和 JSON 输出可用性。关键要素包括：CoT（step-by-step）推理开启、tightly fit bounding box 约束、去重逻辑明确。 建议将模板作为代码资产纳入版本控制，并在 [Prompt Engineering 基础](https://github.com/QianJinGuo/wiki/blob/main/concepts/prompt-engineering-fundamentals.md) 框架下建立评估集，持续优化模板在不同场景下的准确率。
+`elements` + `schema` 的模板化设计是整个方案最重要的工程决策。模板质量直接决定检测准确率和 JSON 输出可用性。关键要素包括：CoT（step-by-step）推理开启、tightly fit bounding box 约束、去重逻辑明确。 建议将模板作为代码资产纳入版本控制，并在 [Prompt Engineering 基础](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/prompt-engineering-fundamentals.md) 框架下建立评估集，持续优化模板在不同场景下的准确率。
 
 ### 生产部署优先考虑 Serverless 弹性
 

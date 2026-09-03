@@ -39,7 +39,7 @@ Eric Winograd（AllianceBernstein 首席经济学家，前纽约联储经济学�
 **对政策制定者的启示：** 通胀率回落与消费者信心回暖之间的时间差可能比历史平均水平更长——心理价格锚的重置需要价格持续稳定在"消费者感知合理"的水平相当长时间才会发生。美联储面临两难：即使通胀率回到 2% 目标，消费者信心的修复仍可能滞后 1-2 年，这意味着过度收紧货币政策可能在通胀已受控后对经济造成不必要的非对称伤害。
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
+> [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
 
 - [Americans still feel pessimistic about the economy. When will it change?](788-consumer-confidence.html)
 

@@ -54,7 +54,7 @@ Anthropic Skills 的渐进式加载策略在此场景中展现了独特的优势
 - [看 AgentRun 如何玩转记忆存储，最佳实践来了！](290-agentrun.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
 - [RAG深度解析：分块、向量化、召回、重排，才是"蒸馏同事skill"的关键](../ch07/054-skill.html)
-- [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki/blob/main/entities/别再把上下文当聊天记录.md)
+- [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki-public/blob/main/entities/别再把上下文当聊天记录.md)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/057-harness-engineering.html)
 - [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](176-openclaw.html)
 

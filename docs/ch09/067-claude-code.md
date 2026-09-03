@@ -58,7 +58,7 @@ Claude 的自我评估不是"不够准确"，而是方向性的：它倾向于�
 - [Claude Code 设计原则与对照分析](../ch03/057-claude-code.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/004-agent.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/008-harness.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/claude-code-complete-guide.md)
 *评分 9×8=72 | 入库 2026-05-12*
 
 ---

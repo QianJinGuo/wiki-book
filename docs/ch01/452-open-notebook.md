@@ -4,7 +4,7 @@
 
 # Open Notebook
 
-Open Notebook 是一个开源的 AI 知识管理工具，定位为 Google [NotebookLM](https://github.com/QianJinGuo/wiki/blob/main/entities/notebook-lm.md) 的自托管替代品。由 lfnovo 在 GitHub 上开源，MIT 协议，2025 年 10 月发布首个正式版。
+Open Notebook 是一个开源的 AI 知识管理工具，定位为 Google [NotebookLM](https://github.com/QianJinGuo/wiki-public/blob/main/entities/notebook-lm.md) 的自托管替代品。由 lfnovo 在 GitHub 上开源，MIT 协议，2025 年 10 月发布首个正式版。
 
 ## 核心差异
 
@@ -38,7 +38,7 @@ Chat Model、Transformation Model、Embedding Model 三个槽位独立配置。�
 
 ### RAG 聊天
 
-基于 [RAG](https://github.com/QianJinGuo/wiki/blob/main/concepts/retrieval-augmented-generation-rag.md) 的对话系统：向量检索 → 上下文注入 → LLM 生成。支持全文/摘要切换（小灯泡功能），回答标注引用来源可溯源。支持多会话（NotebookLM 尚无此功能）。
+基于 [RAG](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/retrieval-augmented-generation-rag.md) 的对话系统：向量检索 → 上下文注入 → LLM 生成。支持全文/摘要切换（小灯泡功能），回答标注引用来源可溯源。支持多会话（NotebookLM 尚无此功能）。
 
 ### 双层搜索
 
@@ -53,7 +53,7 @@ Chat Model、Transformation Model、Embedding Model 三个槽位独立配置。�
 
 ### MCP 集成
 
-作为 [MCP Server](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-context-protocol-mcp.md) 接入 Claude Desktop 和 VS Code，实现：
+作为 [MCP Server](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/model-context-protocol-mcp.md) 接入 Claude Desktop 和 VS Code，实现：
 
 - VS Code 中 AI 插件实时引用知识库技术文档
 - Claude Desktop 搜私有知识库回答问题
@@ -80,7 +80,7 @@ REST API（端口 5055）支持全功能编程调用：上传资料、建笔记�
 | 定价 | 免费（自付模型费） | 免费 |
 | 引用 | 基础 | 原文高亮 |
 
-→ [AI 知识工具全景对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/ai-knowledge-tools-comparison.md)
+→ [AI 知识工具全景对比](https://github.com/QianJinGuo/wiki-public/blob/main/comparisons/ai-knowledge-tools-comparison.md)
 
 ## 深度分析
 
@@ -115,7 +115,7 @@ Open Notebook 支持 1-4 个 AI 说话人（NotebookLM 固定 2 人），每个�
 ## 相关链接
 
 - GitHub: https://github.com/lfnovo/open-notebook
-- → [NotebookLM](https://github.com/QianJinGuo/wiki/blob/main/entities/notebook-lm.md) — Google 的对标产品
+- → [NotebookLM](https://github.com/QianJinGuo/wiki-public/blob/main/entities/notebook-lm.md) — Google 的对标产品
 - → MCP 协议生态 — MCP 集成的技术背景
 - → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/open-notebook-open-source-notebook-lm-alternative.md)
 

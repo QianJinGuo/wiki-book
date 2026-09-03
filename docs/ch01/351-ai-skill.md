@@ -47,7 +47,7 @@ SkillsBench研究：84个任务中19%出现负向增益。
 - [Agent 原理、架构与工程实践](../ch03/004-agent.html)
 - [AI Agent 工程师能力地图](../ch04/312-ai-agent.html)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/ai-skill-design.md)
 ## 深度分析
 ### 九层洋葱结构的本质含义
 AI Skill 测评指标体系的九层结构（触发→输出→规则→对话→容错→效率→设计→覆盖→维护）并非随意排列，而是一条**从用户感知到工程内核的洋葱剖面**。每一层对应不同的质量维度，层级越高意味着该维度的验证成本越大，但对发布决策的影响力也越直接。

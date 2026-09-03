@@ -58,11 +58,11 @@ VIF 设置上强调两点：新 VIF 必须与主连接同类型（Private VIF / 
 ## 相关实体
 
 - [Direct Connect (DX) 迁移最佳实践（英文实体）](../ch11/024-direct-connect-dx.html)
-- [AWS Network Firewall VGW BGP 流量检查](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-network-firewall-vgw-bgp-traffic-inspection.md)
-- [Amazon VPC NAT Gateway 对比](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-vpc-regional-nat-gateway-与-az-nat-gateway-全面对比.md)
-- [AWS Glue 大规模迁移方法论](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-glue-30-到-50-版本升级实践中国区大规模-etl-平台的迁移方法论.md)
-- [MOC: Amazon AWS AI](https://github.com/QianJinGuo/wiki/blob/main/moc/amazon-aws-ai.md)
-- [MOC: 数据基础设施](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
+- [AWS Network Firewall VGW BGP 流量检查](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-network-firewall-vgw-bgp-traffic-inspection.md)
+- [Amazon VPC NAT Gateway 对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-vpc-regional-nat-gateway-与-az-nat-gateway-全面对比.md)
+- [AWS Glue 大规模迁移方法论](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-glue-30-到-50-版本升级实践中国区大规模-etl-平台的迁移方法论.md)
+- [MOC: Amazon AWS AI](https://github.com/QianJinGuo/wiki-public/blob/main/moc/amazon-aws-ai.md)
+- [MOC: 数据基础设施](https://github.com/QianJinGuo/wiki-public/blob/main/moc/data-infrastructure.md)
 
 ---
 

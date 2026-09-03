@@ -17,7 +17,7 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/langchain-anatomy-agent-harness.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/wiki-master-map.md)
 ## 深度分析
 
 **Model 与 Harness 的本质分离是 Agent 架构的第一性原理。** 模型的本质是输入到输出的函数映射——它无法自行维持跨轮对话的状态、无法执行代码、无法获取实时信息、无法操作外部环境。这些能力缺陷并非模型本身的缺陷，而是模型作为"能力来源"这一定位的固有局限。所有这些缺失的能力，都必须在 Harness 层补足 。这意味着当我们评估一个 Agent 系统的能力时，不能仅看模型参数大小，更需要审视其 Harness 是否完整、是否设计合理。

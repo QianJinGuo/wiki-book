@@ -6,7 +6,7 @@
 
 ## 摘要
 
-AWS 官方博客展示了一个名为 **Chaplin**（Customer Health and Planned Lifecycle Intelligence Nexus）的开源解决方案，通过 [MCP](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-context-protocol-mcp.md) 工具将 AWS Health API 封装为 AI Agent 可调用的能力，让运维团队通过自然语言查询健康事件、获取影响分析和运维建议。该方案解决了传统 AWS Health 事件管理中依赖 TAM（技术客户经理）分析、缺乏自助分析能力的痛点。
+AWS 官方博客展示了一个名为 **Chaplin**（Customer Health and Planned Lifecycle Intelligence Nexus）的开源解决方案，通过 [MCP](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/model-context-protocol-mcp.md) 工具将 AWS Health API 封装为 AI Agent 可调用的能力，让运维团队通过自然语言查询健康事件、获取影响分析和运维建议。该方案解决了传统 AWS Health 事件管理中依赖 TAM（技术客户经理）分析、缺乏自助分析能力的痛点。
 
 ## 核心要点
 
@@ -35,7 +35,7 @@ Chaplin 采用三层架构：
 **2. 中间层（Middle Tier）— MCP Server + 智能分析**
 
 - **基于规则的分类引擎**：用正则模式将事件映射到五大业务类别（迁移需求、安全合规、维护更新、成本影响、运维通知），大部分事件无需 AI 处理
-- **AI 分析引擎**：基于 [Strands Agents](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-agent-patterns.md) 框架 + Claude 4.5 Sonnet，包含三个专业化 Agent：
+- **AI 分析引擎**：基于 [Strands Agents](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/ai-agent-patterns.md) 框架 + Claude 4.5 Sonnet，包含三个专业化 Agent：
   - **SQL Query Agent**：自然语言 → DynamoDB 结构化查询
   - **Impact Analysis Agent**：结合客户元数据（环境、业务单元、所有权）评估非结构化事件描述
   - **DBQueryBuilder Agent**：生成多维聚合的优化数据库查询
@@ -110,10 +110,10 @@ Chaplin 的长期愿景是与 AWS DevOps Agent 集成，实现从自助分析到
 
 ## 相关实体
 
-- [MCP 模型上下文协议](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-context-protocol-mcp.md)
-- [Agent 架构模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-agent-patterns.md)
+- [MCP 模型上下文协议](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/model-context-protocol-mcp.md)
+- [Agent 架构模式](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/ai-agent-patterns.md)
 - [AWS Bedrock AgentCore](../ch11/195-aws-bedrock-agentcore-equipment-repair-assistant-ai.html)
-- [MOC: MCP 工具使用模式](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
+- [MOC: MCP 工具使用模式](https://github.com/QianJinGuo/wiki-public/blob/main/moc/tool-use-mcp-patterns.md)
 
 ---
 

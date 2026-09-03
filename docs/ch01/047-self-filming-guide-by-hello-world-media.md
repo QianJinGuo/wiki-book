@@ -40,10 +40,10 @@ Hello World Media 是一家端到端视频创意工作室（video creative studi
 5. **守住设备底线、避免过度投资**：三脚架（稳定与机位）和领夹麦（收音）是最划算的两笔投入；其余（手机、灯光、白色薄布、黑色毛毡布做 negative fill）多是廉价或家中已有的物件，不必迷信昂贵器材。
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
+> [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
 
 - [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](758-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.html)
-- [World's first native color LiDAR gives machines human-like vision](https://github.com/QianJinGuo/wiki/blob/main/entities/technology-ouster-rev8-native-color-lidar.md)
+- [World's first native color LiDAR gives machines human-like vision](https://github.com/QianJinGuo/wiki-public/blob/main/entities/technology-ouster-rev8-native-color-lidar.md)
 - [AI Canvas: Agent-Era Content Creation](../ch03/004-agent.html)
 
 ---

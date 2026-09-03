@@ -39,7 +39,7 @@ Cloudflare 在 Agent 部署领域的布局不止于临时账户：
 
 Cloudflare 的 Temporary Accounts 代表了 Agent 基础设施设计的一个重要范式转移：从「Agent 适应人类系统」到「系统适应 Agent」。这种转变的核心设计原则是**零配置部署**（zero-configuration deployment）——Agent 不需要预先的账户设置、权限配置或凭证管理即可开始工作。
 
-从 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-7-layers-framework.md) 的角度看，这解决的是 Agent 工作流中的一个关键瓶颈：**harness 的启动成本**。传统上，为 Agent 搭建可用的工作环境需要大量的人类准备工作。临时账户将这个启动成本降为零，使得 Agent 可以真正实现「即开即用」。
+从 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-7-layers-framework.md) 的角度看，这解决的是 Agent 工作流中的一个关键瓶颈：**harness 的启动成本**。传统上，为 Agent 搭建可用的工作环境需要大量的人类准备工作。临时账户将这个启动成本降为零，使得 Agent 可以真正实现「即开即用」。
 
 ### 安全模型分析
 
@@ -66,7 +66,7 @@ Agent → 人类注册账户 → 人类配置权限 → Agent 获取凭证 → A
 Agent → Agent 部署（自动获取临时凭证）→ 人类可选认领
 ```
 
-这种变化使得 Agent 的核心循环（write → deploy → verify）可以在无人干预的情况下完整执行。对于 [Agentic Coding Workflow](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-engineering-paradigm.md) 而言，这是一个关键的基础设施突破。
+这种变化使得 Agent 的核心循环（write → deploy → verify）可以在无人干预的情况下完整执行。对于 [Agentic Coding Workflow](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agentic-engineering-paradigm.md) 而言，这是一个关键的基础设施突破。
 
 ### 与 auth.md 的互补关系
 
@@ -82,10 +82,10 @@ Cloudflare 与 WorkOS 合作推出的 auth.md 协议解决的是另一个层面�
 
 ## 相关实体
 
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-7-layers-framework.md) — Agent 部署基础设施作为 harness 的一部分
+- [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-7-layers-framework.md) — Agent 部署基础设施作为 harness 的一部分
 - [AWS DevOps Agent](214-aws-devops-agent.html) — 另一个生产级 Agent 基础设施案例
 - [ATH Agent Trust Handshake Protocol](../ch03/004-agent.html) — Agent 信任协议设计
-- [Agentic Coding Workflow](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-engineering-paradigm.md) — Agent 编码工作流中的部署环节
+- [Agentic Coding Workflow](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agentic-engineering-paradigm.md) — Agent 编码工作流中的部署环节
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cloudflare-temporary-accounts-ai-agents.md)
 

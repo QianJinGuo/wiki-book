@@ -236,7 +236,7 @@ GUI Agent 的感知模型是屏幕截图，动作空间是点击/滑动/输入�
 - **可复制性**：毫秒级快照使得同一初始状态可无限克隆，为 GRPO 等并行 RL 算法提供基础
 - **零后果**：全量快照回滚使得危险操作（转账、注销、大批删除）可以在完全无害的条件下执行
 
-这四个特性共同构成了[Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)所追求的**可控、可测、可复现**三要素。JSON 化状态使得"考练一体"在工程层面而非仅仅是概念层面成为可能。
+这四个特性共同构成了[Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)所追求的**可控、可测、可复现**三要素。JSON 化状态使得"考练一体"在工程层面而非仅仅是概念层面成为可能。
 
 ### 3. USE 指标的安全含义：从"任务完成"到"行为干净" 
 
@@ -244,7 +244,7 @@ GUI Agent 的感知模型是屏幕截图，动作空间是点击/滑动/输入�
 
 实测发现即便是顶级模型（Gemini 3.1 Pro），一旦被指令驱动，执行附带操作时几乎没有安全刹车——成功率接近 100%，但"顺手作恶"概率也同步攀高。这揭示了当前 Agent 安全对齐的深层问题：**模型学会"怎么做"远快于学会"不该做什么"**。
 
-这一发现与 [Agent Security Threat Models](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-threat-models.md) 中描述的"工具调用扩大攻击面"问题高度共鸣——MobileGym 的零后果沙箱恰好提供了在完全无害环境中研究这一问题的实验条件。
+这一发现与 [Agent Security Threat Models](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-security-threat-models.md) 中描述的"工具调用扩大攻击面"问题高度共鸣——MobileGym 的零后果沙箱恰好提供了在完全无害环境中研究这一问题的实验条件。
 
 ### 4. 轻量仿真的工程必然：为什么 400MB 实例能颠覆 Agent 训练经济学 
 
@@ -252,7 +252,7 @@ GUI Agent 的感知模型是屏幕截图，动作空间是点击/滑动/输入�
 
 传统安卓模拟器 4.5GB+ 的内存占用意味着单台服务器只能运行 10-20 个实例（即使裸金属服务器），而 96 个实例并行需要整整 10 台服务器。MobileGym 的 400MB 实例将同等并行度压缩到一台服务器，将 GRPO 训练的经济账从"一个机房"变成"一台机器"。
 
-这不是微优化，而是**量级差异**：当训练一次 RL 实验的成本从需要申请集群变成笔记本上就能跑，Agent 迭代速度将产生质的飞跃。这与 [Reinforcement Fine Tuning Rft](https://github.com/QianJinGuo/wiki/blob/main/concepts/reinforcement-fine-tuning-rft.md) 中描述的 RLHF/DPO 高频迭代需求高度契合。
+这不是微优化，而是**量级差异**：当训练一次 RL 实验的成本从需要申请集群变成笔记本上就能跑，Agent 迭代速度将产生质的飞跃。这与 [Reinforcement Fine Tuning Rft](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/reinforcement-fine-tuning-rft.md) 中描述的 RLHF/DPO 高频迭代需求高度契合。
 
 ### 5. 95.1% 真机迁移率的深层原因：状态一致性而非视觉一致性 
 
@@ -274,7 +274,7 @@ GUI Agent 的感知模型是屏幕截图，动作空间是点击/滑动/输入�
 
 MobileGym 的 JSON 快照机制使得 RL 训练真正可以在单一服务器上跑起来。团队用 Qwen3-VL-4B + 96 并行实例 + GRPO 实现了测试集 9.4%→22.2% 的提升，真机迁移率达 95.1%。
 
-**落地建议**：对于需要训练 Mobile GUI Agent 的团队，应将 JSON 快照接口集成到 RL 训练框架（如 TRL、Axolotl）中，利用[Reinforcement Fine Tuning Rft](https://github.com/QianJinGuo/wiki/blob/main/concepts/reinforcement-fine-tuning-rft.md)中描述的 GRPO/PPO 范式实现高频迭代。关键是用同一状态快照并行生成多样本轨迹，然后用结构化奖励信号更新策略。
+**落地建议**：对于需要训练 Mobile GUI Agent 的团队，应将 JSON 快照接口集成到 RL 训练框架（如 TRL、Axolotl）中，利用[Reinforcement Fine Tuning Rft](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/reinforcement-fine-tuning-rft.md)中描述的 GRPO/PPO 范式实现高频迭代。关键是用同一状态快照并行生成多样本轨迹，然后用结构化奖励信号更新策略。
 
 ### 3. 用"答题卡"模式替代自由文本输出作为 Agent 输出规范 
 
@@ -286,7 +286,7 @@ MobileGym 的答题卡判定法揭示了一个重要工程实践：**将 Agent �
 
 USE 指标让"顺手作恶"第一次可被量化捕获。建议在 Mobile GUI Agent 的安全测试中加入专门的高风险操作集（转账、注销、大批删除、修改隐私设置等），通过任务前后全状态快照对比来检测非预期副作用。
 
-**落地建议**：将 USE 测试纳入 CI/CD 流程，每次发布前跑一遍高风险操作集，监控各版本的"作恶率"趋势。对于面向消费者的 Mobile Agent 产品，这是应对[Agent Security Threat Models](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-threat-models.md)所述风险的实用工程手段——在部署前先在零后果沙箱中"演"一遍危险动作。
+**落地建议**：将 USE 测试纳入 CI/CD 流程，每次发布前跑一遍高风险操作集，监控各版本的"作恶率"趋势。对于面向消费者的 Mobile Agent 产品，这是应对[Agent Security Threat Models](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-security-threat-models.md)所述风险的实用工程手段——在部署前先在零后果沙箱中"演"一遍危险动作。
 
 ### 5. 浏览器仿真路线作为 Mobile Agent 基建的新标准 
 
@@ -299,7 +299,7 @@ MobileGym 证明了**浏览器内仿真**是实现高并发、低成本、移动
 ## 相关实体
 
 - [thought-aligner：智能体行为安全新范式——可插拔思维校正层（icml 2026）](257-ai.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/reinforcement-learning-rlhf.md)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mobilegym-cas-mobile-agent-benchmark.md)
 
 ---

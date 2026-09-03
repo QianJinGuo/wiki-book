@@ -6,7 +6,7 @@
 - **价值**：9/10 — 系统性对比 RAG 五大痛点的根因分析 + 场景选型决策矩阵 + 趋势预判，对该 wiki 自身建设有直接参考价值
 - **置信度**：8/10 — 源自 Karpathy/微软 GraphRAD/公开工程案例，作者有独立判断
 - **乘积**：72 — strong ★★★★★
-- **策略对齐**：与 [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md) 互补（概念介绍 vs 系统对比）；本文 wiki 本身就是 LLM Wiki 实践案例
+- **策略对齐**：与 [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/karpathy-llm-wiki-v2.md) 互补（概念介绍 vs 系统对比）；本文 wiki 本身就是 LLM Wiki 实践案例
 
 ## 与现有 wiki 的关系
 - **互补**： 介绍 LLM Wiki V2 的 5 项核心升级，本文是 RAG vs LLM Wiki 的全面对抗性对比
@@ -83,9 +83,9 @@ Schema 设计的失误在后期修正成本极高（需要重新 Ingest 全量�
 - [5 Essential Multimodal RAG Capabilities for AI-Ready Knowledge Systems (NVIDIA)](168-rag.html)
 - [向量库·知识图谱·本体论：RAG知识系统演进](168-rag.html)
 - [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化](476-llm-wiki-obsidian-wiki-gbrain.html)
-- [google open knowledge format (okf) v0.1：ai 知识库通用格式标准 — 让 mar](https://github.com/QianJinGuo/wiki/blob/main/entities/google-okf-open-knowledge-format-v0-1-2026.md)
-- [knowledge base layer architecture: from rag to agent-native](https://github.com/QianJinGuo/wiki/blob/main/entities/pyramid-kb-knowledge-context-layer-banya.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/rag-knowledge-retrieval.md)
+- [google open knowledge format (okf) v0.1：ai 知识库通用格式标准 — 让 mar](https://github.com/QianJinGuo/wiki-public/blob/main/entities/google-okf-open-knowledge-format-v0-1-2026.md)
+- [knowledge base layer architecture: from rag to agent-native](https://github.com/QianJinGuo/wiki-public/blob/main/entities/pyramid-kb-knowledge-context-layer-banya.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/rag-knowledge-retrieval.md)
 
 ---
 

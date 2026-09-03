@@ -83,7 +83,7 @@ LLM与CTGAN"各展所长"：CTGAN最大化枚举字段丰富度，LLM学习复�
 ---
 ## 关联
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ctgan-llm-test-data-generation-ctrip.md)
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 - 相关: Agent 架构
 
 ---

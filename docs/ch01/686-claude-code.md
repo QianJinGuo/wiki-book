@@ -9,7 +9,7 @@
 - [现在如何使用 ai：一份快速指南（ethan mollick）](../ch04/257-ai.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-dynamic-workflows-jiqizhixin-9th-translation.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/memory-context-systems.md)
 ## 深度分析
 
 Claude Code 团队成员亲述：动态工作流该怎么用（机器之心译本） 涉及agent领域的核心技术议题。

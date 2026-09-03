@@ -133,9 +133,9 @@ Sean Ellis 测试（>40% 用户回答"如果不能继续使用会非常失望"�
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](340-claude.html)
 
 - [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/057-claude-code.html)
-- [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)
-- [Claude Code Hiring Engineers](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-hiring-engineers.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
+- [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/claude-code-tool-design-evolution.md)
+- [Claude Code Hiring Engineers](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/claude-code-hiring-engineers.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/workflow-orchestration.md)
 
 ---
 

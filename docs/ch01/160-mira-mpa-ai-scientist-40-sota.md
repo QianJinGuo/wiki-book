@@ -271,7 +271,7 @@ MIRA 展现了科学 Agent 的能力分级体系：
 
 **L2 研究能力**：假设生成、研究路径设计、实验结果分析。MIRA 在这一层级展现出自主判断能力，例如"模型从预训练直接跳到下游微调，中间缺了一层物理直觉"。
 
-**L3 架构能力**：模型架构代码级重构。MIRA 操作的对象不仅是超参数空间，而是整个模型架构和训练管线的源代码。这是科学 Agent 的最高能力层级，也是 MPA 区别于其他科研工具的关键特征。 [自主智能体系统](https://github.com/QianJinGuo/wiki/blob/main/concepts/autonomous-agent-systems.md) 的设计原则在此具有直接参考价值。
+**L3 架构能力**：模型架构代码级重构。MIRA 操作的对象不仅是超参数空间，而是整个模型架构和训练管线的源代码。这是科学 Agent 的最高能力层级，也是 MPA 区别于其他科研工具的关键特征。 [自主智能体系统](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/autonomous-agent-systems.md) 的设计原则在此具有直接参考价值。
 
 ### 5. 分布外泛化作为核心评估维度
 

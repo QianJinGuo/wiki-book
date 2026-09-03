@@ -82,10 +82,10 @@ ChatGPT 的 /learn、Gemini 的 Guided Learning、Claude 的 learning style sele
 
 ## 相关实体
 - [Against Brain Damage](013-against-brain-damage.html)
-- [Frontier Code Cognition Mergeability Benchmark](https://github.com/QianJinGuo/wiki/blob/main/entities/frontier-code-cognition-mergeability-benchmark.md)
-- [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
-- [Yc Ceo Garry Tan 200 Dollar Vs 4 Million](https://github.com/QianJinGuo/wiki/blob/main/entities/yc-ceo-garry-tan-200-dollar-vs-4-million.md)
-- [Defect Backlog Retention Report](https://github.com/QianJinGuo/wiki/blob/main/entities/defect-backlog-retention-report.md)
+- [Frontier Code Cognition Mergeability Benchmark](https://github.com/QianJinGuo/wiki-public/blob/main/entities/frontier-code-cognition-mergeability-benchmark.md)
+- [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](https://github.com/QianJinGuo/wiki-public/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
+- [Yc Ceo Garry Tan 200 Dollar Vs 4 Million](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yc-ceo-garry-tan-200-dollar-vs-4-million.md)
+- [Defect Backlog Retention Report](https://github.com/QianJinGuo/wiki-public/blob/main/entities/defect-backlog-retention-report.md)
 
 ## 相关引用
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/choosing-to-stay-human.md)

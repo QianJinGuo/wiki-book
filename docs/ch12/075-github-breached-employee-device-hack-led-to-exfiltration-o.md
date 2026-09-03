@@ -32,9 +32,9 @@ FIRESCALE 技术（C2 地址隐藏在 GitHub 公开提交信息中）和针对�
 
 ## 相关实体
 - [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](../ch01/474-github.html)
-- [Exiftool Compromise Mac 592994](https://github.com/QianJinGuo/wiki/blob/main/entities/exiftool-compromise-mac-592994.md)
+- [Exiftool Compromise Mac 592994](https://github.com/QianJinGuo/wiki-public/blob/main/entities/exiftool-compromise-mac-592994.md)
 - [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](../ch01/571-skill-issues-compromising-claude-code-with-malicious-skills.html)
-- [Tracking Tampered Chef Clusters Aef374](https://github.com/QianJinGuo/wiki/blob/main/entities/tracking-tampered-chef-clusters-aef374.md)
+- [Tracking Tampered Chef Clusters Aef374](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tracking-tampered-chef-clusters-aef374.md)
 - [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt](064-grafana-github-token-breach-led-to-codebase-download-and-ext.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/github-investigating-teampcp-claimed-17cc77.md)
