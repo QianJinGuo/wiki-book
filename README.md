@@ -169,7 +169,8 @@ cover/                          封面 SVG、渲染脚本和可编辑素材
 | 内容 | 协议 |
 |:---|:---|
 | 构建脚本、RAG 前后端与工程代码 | [MIT](LICENSE) |
-| 书籍内容与文档（`docs/`） | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.zh) |
+| 书籍原创章节与项目文档（不含 `docs/raw/`） | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.zh) |
+| `docs/raw/articles/` | 不提供统一许可；各文件须遵循原始作者的许可或逐篇再发布授权 |
 
 ---
 
