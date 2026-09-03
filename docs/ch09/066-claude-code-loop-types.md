@@ -90,9 +90,8 @@ Claude Code 里 agent 的自动化触发有五种形态：/loop（时间表）�
 ## 参考
 
 → [raw/articles/claude-code-loop-types-official-taxonomy-four-modes|原文存档 1](../ch04/351-loop-engineering.html)
-→ [raw/articles/fyjE5EhnV1jKzE8NnscZDQ|原文存档 2 (AI寒武纪)]
+→ [raw/articles/anthropic发布循环设计指南权威拆解当下最火的ai新范式loop|原文存档 2 (AI寒武纪)]
 → [raw/articles/anthropic-loop-four-types-practical-guide-jiagoux-2026-07-15|原文存档 3 (架构师)]
 → [raw/articles/claude-code-loop-practical-cron-prompt-datathu-2026-08-06|原文存档 4 (数据派THU)]
 
 ---
-

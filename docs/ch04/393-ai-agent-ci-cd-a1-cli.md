@@ -88,9 +88,6 @@ beta 构建时记录 commit SHA + 版本号 + 发布时刻为 artifact。打 tag
 
 ## 参考
 
-→ [raw/articles/0NuS75Bcys0xNCp9wNl8aw|原文存档]
-
-[^1]: raw/articles/0NuS75Bcys0xNCp9wNl8aw
+→ [raw/articles/从不敢发到天天发ai-agent-时代的-cicd-生存指南|原文存档]
 
 ---
-

@@ -3,7 +3,7 @@ type: source-card
 title: "用 Amazon Bedrock AgentCore Payment 构建自主支付 AI Agent: x402 协议实战"
 source: "rss"
 author: "未标注作者；来源机构见 source"
-source_url: "https://faucet.circle.com/"
+source_url: "https://aws.amazon.com/cn/blogs/china/amazon-bedrock-agentcore-payment-build-payment-ai/"
 published: "未标注"
 collected: "2026-06-01"
 license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
