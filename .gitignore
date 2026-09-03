@@ -7,6 +7,9 @@ __pycache__/
 node_modules/
 .wrangler/
 
+# Generated cover exports; keep editable SVGs, renderer, and source art tracked.
+cover/exports/
+
 # Worker secrets — API keys set via wrangler secret, not in source
 deploy/cloudflare/*/worker.js
 .workbuddy/
