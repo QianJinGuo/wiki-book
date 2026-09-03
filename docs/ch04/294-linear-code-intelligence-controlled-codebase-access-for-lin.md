@@ -1,7 +1,5 @@
 # Linear Code Intelligence: Controlled Codebase Access for Linear Agent
 
-## Ch04.294 Linear Code Intelligence: Controlled Codebase Access for Linear Agent
-
 > 📊 Level ⭐⭐ | 7.8KB | `entities/2026-05-14-code-intelligence-1778979927.md`
 
 # Linear Code Intelligence: Controlled Codebase Access for Linear Agent

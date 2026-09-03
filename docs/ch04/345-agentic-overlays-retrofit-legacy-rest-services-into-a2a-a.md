@@ -1,7 +1,5 @@
 # Agentic Overlays -- Retrofit Legacy REST Services into A2A Agents
 
-## Ch04.345 Agentic Overlays -- Retrofit Legacy REST Services into A2A Agents
-
 > 📊 Level ⭐⭐ | 6.4KB | `entities/agentic-overlays-rest-to-a2a-enterprise.md`
 
 # Agentic Overlays -- Retrofit Legacy REST Services into A2A Agents

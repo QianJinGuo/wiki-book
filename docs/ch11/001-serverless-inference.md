@@ -1,7 +1,5 @@
 # Serverless Inference
 
-## Ch11.001 Serverless Inference
-
 > 📊 Level ⭐ | 9.2KB | `entities/serverless-inference.md`
 
 ## 核心要点

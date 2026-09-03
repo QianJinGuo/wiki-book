@@ -1,7 +1,5 @@
 # LLM Wiki 架构解析：Karpathy 的 Markdown 知识库模式
 
-## Ch01.517 LLM Wiki 架构解析：Karpathy 的 Markdown 知识库模式
-
 > 📊 Level ⭐⭐ | 6.5KB | `entities/llm-wiki-architecture-karpathy-markdown-knowledge-base.md`
 
 # LLM Wiki 架构解析：Karpathy 的 Markdown 知识库模式
@@ -12,7 +10,7 @@ Karpathy 在 `llm-wiki.md` 里提出：让 LLM 在上下文窗口之外维护一
 
 ## 相关实体
 - [Karpathy Llm Wiki V2 2026](451-llm.html)
-- [Rag Vs Llm Wiki Enterprise Knowledge Base](035-rag-vs-llm-wiki.html)
+- [Rag Vs Llm Wiki Enterprise Knowledge Base](037-rag-vs-llm-wiki.html)
 - [Claude Code Search Architecture Tencent 2026](../ch03/057-claude-code.html)
 - [Three Rag Architectures Classic Graph Agentic](../ch03/004-agent.html)
 - [How Ai Agent Memory Works](../ch04/131-how-ai-agent-memory-works.html)

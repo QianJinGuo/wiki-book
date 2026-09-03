@@ -1,7 +1,5 @@
 # CLAUDE.md 12 条规则：Karpathy 扩展模板
 
-## Ch09.036 CLAUDE.md 12 条规则：Karpathy 扩展模板
-
 > 📊 Level ⭐⭐ | 12.9KB | `entities/claude-code-12-rules-karpathy-extension.md`
 
 ## 概述

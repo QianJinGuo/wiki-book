@@ -1,7 +1,5 @@
 # Skill 版本对比五大原则：从'两个数字比大小'到工程化质量门禁
 
-## Ch07.054 Skill 版本对比五大原则：从'两个数字比大小'到工程化质量门禁
-
 > 📊 Level ⭐⭐ | 5.9KB | `entities/skill-version-comparison-five-principles-winty.md`
 
 > 原文归档：[原文归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-version-comparison-five-principles-winty.md)

@@ -1,7 +1,5 @@
 # A Route to Root in a 4G Industrial Router
 
-## Ch01.631 A Route to Root in a 4G Industrial Router
-
 > 📊 Level ⭐⭐ | 3.6KB | `entities/tantosec-com-blog-2026-04-route-to-root-in-4g-industrial-router.md`
 
 ## 深度分析

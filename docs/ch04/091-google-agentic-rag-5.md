@@ -1,7 +1,5 @@
 # Google Agentic RAG 跨语料库框架：充分上下文智能体 + 5 阶段管线
 
-## Ch04.091 Google Agentic RAG 跨语料库框架：充分上下文智能体 + 5 阶段管线
-
 > 📊 Level ⭐⭐ | 15.5KB | `entities/ai-cambrian-google-agentic-rag-sufficient-context-cross-corpus-20260606.md`
 
 # Google Agentic RAG 跨语料库框架：充分上下文智能体 + 5 阶段管线

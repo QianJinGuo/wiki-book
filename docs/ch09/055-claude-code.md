@@ -1,7 +1,5 @@
 # 两万字详解Claude Code源码核心机制
 
-## Ch09.055 两万字详解Claude Code源码核心机制
-
 > 📊 Level ⭐⭐ | 9.5KB | `entities/claude-code-20000-char-source-analysis.md`
 
 ## 关键洞察

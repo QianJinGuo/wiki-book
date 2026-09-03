@@ -1,7 +1,5 @@
 # Harness Engineering 概念框架
 
-## Ch05.040 Harness Engineering 概念框架
-
 > 📊 Level ⭐⭐ | 11.8KB | `entities/harness-engineering-framework.md`
 
 ## 核心方程

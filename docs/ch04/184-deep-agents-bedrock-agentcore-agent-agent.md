@@ -1,7 +1,5 @@
 # Deep Agents + Bedrock AgentCore：多 Agent 编排 + 隔离基础设施的端到端研究 Agent 实战
 
-## Ch04.184 Deep Agents + Bedrock AgentCore：多 Agent 编排 + 隔离基础设施的端到端研究 Agent 实战
-
 > 📊 Level ⭐⭐ | 10.9KB | `entities/deep-agents-bedrock-agentcore-subagent-orchestration-aws.md`
 
 # Deep Agents + Bedrock AgentCore：多 Agent 编排 + 隔离基础设施的端到端研究 Agent 实战

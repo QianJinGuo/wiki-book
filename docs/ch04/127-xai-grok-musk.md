@@ -1,7 +1,5 @@
 # xAI Grok：Musk 训练新一代模型
 
-## Ch04.127 xAI Grok：Musk 训练新一代模型
-
 > 📊 Level ⭐⭐ | 13.2KB | `entities/xai-grok-musk-training-new-model-wechat.md`
 
 ---

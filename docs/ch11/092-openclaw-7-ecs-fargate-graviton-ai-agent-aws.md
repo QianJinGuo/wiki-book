@@ -1,7 +1,5 @@
 # OpenClaw 多租户系列 #7 — 基于 ECS Fargate + Graviton 的轻量级企业 AI Agent 平台 | 亚马逊AWS官方博客
 
-## Ch11.092 OpenClaw 多租户系列 #7 — 基于 ECS Fargate + Graviton 的轻量级企业 AI Agent 平台 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 9.5KB | `entities/openclaw-multi-7-ecs-fargate-graviton.md`
 
 # OpenClaw 多租户系列 #7 — 基于 ECS Fargate + Graviton 的轻量级企业 AI Agent 平台

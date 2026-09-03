@@ -1,7 +1,5 @@
 # Real AI Agents and Real Work
 
-## Ch04.183 Real AI Agents and Real Work
-
 > 📊 Level ⭐⭐ | 10.9KB | `entities/real-ai-agents-and-real-work.md`
 
 # Real AI Agents and Real Work

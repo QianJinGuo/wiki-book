@@ -1,7 +1,5 @@
 # Lightfield Skills 系统介绍
 
-## Ch03.068 Lightfield Skills 系统介绍
-
 > 📊 Level ⭐⭐ | 8.4KB | `entities/lightfield-introducing-skills.md`
 
 ## 摘要

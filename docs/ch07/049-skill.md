@@ -1,7 +1,5 @@
 # 重新定义Skill开发：保姆级教程&一站式开发助手发布
 
-## Ch07.049 重新定义Skill开发：保姆级教程&一站式开发助手发布
-
 > 📊 Level ⭐⭐ | 7.3KB | `entities/skill-development-guide-aliyun-2026.md`
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-development-guide-aliyun-2026.md)

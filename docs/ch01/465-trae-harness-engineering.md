@@ -1,7 +1,5 @@
 # 来自字节跳动TRAE的Harness Engineering指南
 
-## Ch01.465 来自字节跳动TRAE的Harness Engineering指南
-
 > 📊 Level ⭐⭐ | 7.2KB | `entities/bytedance-trae-harness-engineering-guide.md`
 
 # 来自字节跳动TRAE的Harness Engineering指南

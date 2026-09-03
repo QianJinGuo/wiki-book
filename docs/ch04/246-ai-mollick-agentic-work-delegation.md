@@ -1,7 +1,5 @@
 # 管理作为 AI 超级能力：Mollick 的 Agentic Work Delegation 方程
 
-## Ch04.246 管理作为 AI 超级能力：Mollick 的 Agentic Work Delegation 方程
-
 > 📊 Level ⭐⭐ | 8.9KB | `entities/management-as-ai-superpower-mollick.md`
 
 # 管理作为 AI 超级能力：Mollick 的 Agentic Work Delegation 方程

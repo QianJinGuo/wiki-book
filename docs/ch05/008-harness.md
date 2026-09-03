@@ -1,7 +1,5 @@
 # 阿里工程师 Harness 工程化实践 (双案例合并)
 
-## Ch05.008 阿里工程师 Harness 工程化实践 (双案例合并)
-
 > 📊 Level ⭐⭐ | 26.4KB | `entities/harness-engineering-alibaba-java-case-study.md`
 
 ## 文章概要

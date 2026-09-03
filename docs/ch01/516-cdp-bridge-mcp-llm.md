@@ -1,7 +1,5 @@
 # CDP Bridge MCP：让 LLM 操作真实浏览器
 
-## Ch01.516 CDP Bridge MCP：让 LLM 操作真实浏览器
-
 > 📊 Level ⭐⭐ | 6.5KB | `entities/cdp-bridge-mcp-real-browser-agent.md`
 
 # CDP Bridge MCP：让 LLM 操作真实浏览器

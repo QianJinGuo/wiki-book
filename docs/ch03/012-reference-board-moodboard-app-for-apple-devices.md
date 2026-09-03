@@ -1,7 +1,5 @@
 # Reference Board — Moodboard App for Apple Devices
 
-## Ch03.012 Reference Board — Moodboard App for Apple Devices
-
 > 📊 Level ⭐ | 8.4KB | `entities/www-referenceboard-app.md`
 
 ## 核心定位

@@ -1,7 +1,5 @@
 # 逆天的架构：用 Harness+LangGraph+A2A 写一个 Agent Team
 
-## Ch04.437 逆天的架构：用 Harness+LangGraph+A2A 写一个 Agent Team
-
 > 📊 Level ⭐⭐ | 2.2KB | `entities/langgraph-a2a-adversarial-agent-team.md`
 
 # 逆天的架构：用 Harness+LangGraph+A2A 写一个 Agent Team

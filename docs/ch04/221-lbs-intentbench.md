@@ -1,7 +1,5 @@
 # LBS-IntentBench — 首个真实出行隐式意图评测基准
 
-## Ch04.221 LBS-IntentBench — 首个真实出行隐式意图评测基准
-
 > 📊 Level ⭐⭐ | 9.6KB | `entities/lbs-intentbench.md`
 
 ## 核心定位

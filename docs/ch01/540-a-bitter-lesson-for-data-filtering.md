@@ -1,7 +1,5 @@
 # A Bitter Lesson for Data Filtering
 
-## Ch01.540 A Bitter Lesson for Data Filtering
-
 > 📊 Level ⭐⭐ | 6.1KB | `entities/a-bitter-lesson-for-data-filtering-e8807d.md`
 
 # A Bitter Lesson for Data Filtering
@@ -50,7 +48,7 @@ Rich Sutton 的经典教训是：AI 研究数十年的经验表明，把人类�
 
 - [Agent Executor Googles Distributed Agent Runtime Da1Bb4](../ch03/004-agent.html)
 - [Architecture Data Foundations For Ai Powered Search](447-architecture-data-foundations-for-ai-powered-search.html)
-- [Running An Ai Native Engineering Org](044-running-an-ai-native-engineering-org.html)
+- [Running An Ai Native Engineering Org](046-running-an-ai-native-engineering-org.html)
 - [Minimax Agent Team Mavis Owner Worker Verifier](../ch03/004-agent.html)
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/057-claude-code.html)
 

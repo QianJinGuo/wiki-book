@@ -1,7 +1,5 @@
 # Protocol H：分层 Agentic RAG 企业架构
 
-## Ch04.069 Protocol H：分层 Agentic RAG 企业架构
-
 > 📊 Level ⭐⭐ | 17.7KB | `entities/protocol-h-hierarchical-agentic-rag-enterprise.md`
 
 # protocol-h-hierarchical-agentic-rag-enterprise

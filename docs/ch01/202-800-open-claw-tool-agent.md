@@ -1,7 +1,5 @@
 # 800行代码实现 Open Claw 的 Tool、消息总线、子Agent管理架构
 
-## Ch01.202 800行代码实现 Open Claw 的 Tool、消息总线、子Agent管理架构
-
 > 📊 Level ⭐⭐ | 15.4KB | `entities/open-claw-tool-bus-subagent-architecture.md`
 
 这篇文章记录对 Open Claw 中 Tool、消息总线和子 Agent 管理架构的研究学习，以及一个最小可运行实现。

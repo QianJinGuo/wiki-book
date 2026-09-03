@@ -1,7 +1,5 @@
 # Anthropic Claude Managed Agents 平台正式发布
 
-## Ch01.158 Anthropic Claude Managed Agents 平台正式发布
-
 > 📊 Level ⭐⭐ | 23.1KB | `entities/anthropic-claude-managed-agents-platform-2026.md`
 
 ## 概述
@@ -122,8 +120,8 @@ Multiagent Sessions、Outcomes、Dreams 目前均处于研究预览阶段，需�
 
 - [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](../ch04/157-anthropic-google-agent-skills.html)
 - [Anthropic puts Claude agents on a meter across its subscriptions](787-anthropic-claude.html)
-- [Introducing Claude for Small Business](023-introducing-claude-for-small-business.html)
-- [Introducing Claude for Small Business](023-introducing-claude-for-small-business.html)
+- [Introducing Claude for Small Business](026-introducing-claude-for-small-business.html)
+- [Introducing Claude for Small Business](026-introducing-claude-for-small-business.html)
 - [Xero Announces Integration with Anthropic's Claude](340-claude.html)
 - [Mythos for Offensive Security: XBOW's Evaluation](https://github.com/QianJinGuo/wiki/blob/main/entities/mythos_offensive_security_xbow_evaluatio.md)
 - [Anthropic 首次揭秘下一代 Claude 怎么造](787-anthropic-claude.html)

@@ -1,7 +1,5 @@
 # How Unified EDR and ITDR Stop Attacks Before They Spread
 
-## Ch11.176 How Unified EDR and ITDR Stop Attacks Before They Spread
-
 > 📊 Level ⭐⭐ | 5.3KB | `entities/huntress-edr-itdr-unified-detection.md`
 
 ## 核心要点
@@ -26,7 +24,7 @@
 - [Llm Raiders Private Ai Server](../ch01/451-llm.html)
 - [How Claude Code Works In Large Codebases Best Practices And Where To Start](../ch01/349-how-claude-code-works-in-large-codebases-best-practices-and.html)
 - [Llm Raiders And How To Repel Them](../ch01/544-llm-raiders-and-how-to-repel-them.html)
-- [How To Create Websites With Great Ux Designs](../ch01/032-how-to-create-websites-with-great-ux-designs-principles-and.html)
+- [How To Create Websites With Great Ux Designs](../ch01/034-how-to-create-websites-with-great-ux-designs-principles-and.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/huntress-edr-itdr-unified-detection.md)
 

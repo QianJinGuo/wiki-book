@@ -1,7 +1,5 @@
 # AgentRun CLI v0.1.0 正式开源：一行命令运行您的托管 Agent
 
-## Ch04.274 AgentRun CLI v0.1.0 正式开源：一行命令运行您的托管 Agent
-
 > 📊 Level ⭐⭐ | 8.2KB | `entities/agentrun-cli-v010-正式开源一行命令运行您的托管-agent.md`
 
 # AgentRun CLI v0.1.0 正式开源：一行命令运行您的托管 Agent

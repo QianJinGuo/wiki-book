@@ -1,7 +1,5 @@
 # LLM Thonking：推理努力与安全分诊效果的实证研究
 
-## Ch01.473 LLM Thonking：推理努力与安全分诊效果的实证研究
-
 > 📊 Level ⭐⭐ | 7.1KB | `entities/llm-thonking-reasoning-effort-security-triage.md`
 
 # LLM Thonking：推理努力与安全分诊效果的实证研究

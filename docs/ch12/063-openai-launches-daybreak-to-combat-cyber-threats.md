@@ -1,7 +1,5 @@
 # OpenAI launches Daybreak to combat cyber threats
 
-## Ch12.063 OpenAI launches Daybreak to combat cyber threats
-
 > 📊 Level ⭐⭐ | 7.2KB | `entities/ciodive-openai-daybreak-cyber-threats.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ciodive-openai-daybreak-cyber-threats.md)
@@ -42,7 +40,7 @@ OpenAI 将 Daybreak 设计为三阶段流程： (1) 用 AI 推理和 token 使�
 
 ## 相关实体
 
-- [Useful Memories Become Faulty When Continuously Updated by LLMs](../ch01/075-useful-memories-become-faulty-when-continuously-updated-by-l.html)
+- [Useful Memories Become Faulty When Continuously Updated by LLMs](../ch01/078-useful-memories-become-faulty-when-continuously-updated-by-l.html)
 - [Tether launches developer grants program for local-first AI and payments infrastructure](../ch11/166-tether-launches-developer-grants-program-for-local-first-ai.html)
 - [Tether launches developer grants program for local AI payments](../ch09/100-tether-launches-developer-grants-program-for-local-ai-paymen.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)

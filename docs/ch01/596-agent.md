@@ -1,7 +1,5 @@
 # 存之有序，治之有矩——Agent 记忆系统的工程实践与演进
 
-## Ch01.596 存之有序，治之有矩——Agent 记忆系统的工程实践与演进
-
 > 📊 Level ⭐⭐ | 4.9KB | `entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md`
 
 # 存之有序，治之有矩——Agent 记忆系统的工程实践与演进
@@ -34,7 +32,7 @@
 - [Hermes Agent V014 Architecture Shugex](../ch04/161-hermes-agent.html)
 - [Extending Mcp Support For Amazon Bedrock Agentcore Gateway](../ch11/007-extending-mcp-support-for-amazon-bedrock-agentcore-gateway.html)
 - [Agent Eval Wallezhang Yaml Driven Agent Evaluation](../ch03/004-agent.html)
-- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](110-hy3-preview.html)
+- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](113-hy3-preview.html)
 
 ## 补充：Agent 经验变更系统视角（若飞/架构师 2026-07-19）
 

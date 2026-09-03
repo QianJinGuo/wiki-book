@@ -1,7 +1,5 @@
 # 深度拆解：AI 智能体 Harness 的构造（译）
 
-## Ch04.060 深度拆解：AI 智能体 Harness 的构造（译）
-
 > 📊 Level ⭐⭐ | 18.9KB | `entities/ai-agent-harness-construction-akshay.md`
 
 # 深度拆解：AI 智能体 Harness 的构造（译）

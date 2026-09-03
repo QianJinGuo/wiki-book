@@ -1,7 +1,5 @@
 # Cursor Harness Model Production Floor
 
-## Ch01.205 Cursor Harness Model Production Floor
-
 > 📊 Level ⭐⭐ | 15.4KB | `entities/cursor-harness-model-production-floor.md`
 
 # Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限

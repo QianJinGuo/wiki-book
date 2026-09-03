@@ -1,7 +1,5 @@
 # Claude Code Dynamic Workflows 第 7 译本（架构师 JiaGouX 视角：任务级 Harness 统一框架）
 
-## Ch01.680 Claude Code Dynamic Workflows 第 7 译本（架构师 JiaGouX 视角：任务级 Harness 统一框架）
-
 > 📊 Level ⭐⭐ | 2.6KB | `entities/claude-code-dynamic-workflows-jiagoux-architect-perspective.md`
 
 # Claude Code Dynamic Workflows 第 7 译本（架构师 JiaGouX 视角：任务级 Harness 统一框架）

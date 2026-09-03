@@ -1,7 +1,5 @@
 # Multi-Agent 架构：Factory Mission 系统的方法论
 
-## Ch04.446 Multi-Agent 架构：Factory Mission 系统的方法论
-
 > 📊 Level ⭐⭐⭐ | 15.3KB | `entities/multi-agent-mission-factory-luke-aiengineer.md`
 
 # Multi-Agent 架构：Factory Mission 系统的方法论

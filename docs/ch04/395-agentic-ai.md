@@ -1,7 +1,5 @@
 # 维纳智能：高精度推理数据生成与工业级 Agentic AI
 
-## Ch04.395 维纳智能：高精度推理数据生成与工业级 Agentic AI
-
 > 📊 Level ⭐⭐ | 4.3KB | `entities/wiener-intelligence-reasoning-data-generation.md`
 
 # 维纳智能：高精度推理数据生成与工业级 Agentic AI

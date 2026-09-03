@@ -1,7 +1,5 @@
 # FrontierCode — Cognition AI 的 PR Mergeability 编码基准
 
-## Ch01.228 FrontierCode — Cognition AI 的 PR Mergeability 编码基准
-
 > 📊 Level ⭐⭐ | 14.1KB | `entities/frontier-code-cognition-mergeability-benchmark.md`
 
 # FrontierCode — Cognition AI 的 PR Mergeability 编码基准

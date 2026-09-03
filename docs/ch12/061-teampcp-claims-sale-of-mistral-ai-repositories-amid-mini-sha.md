@@ -1,7 +1,5 @@
 # TeamPCP Claims Sale of Mistral AI Repositories Amid Mini Shai-Hulud Attack
 
-## Ch12.061 TeamPCP Claims Sale of Mistral AI Repositories Amid Mini Shai-Hulud Attack
-
 > 📊 Level ⭐⭐ | 7.3KB | `entities/teampcp-claims-sale-of-mistral-ai-repositories-amid-mini-shai-hulud-attack-1.md`
 
 ## 核心要点
@@ -27,7 +25,7 @@ Mistral AI 在事件后的声明确认了代码库管理系统被短暂攻破，
 
 ## 相关实体
 - [Restrict Access to Sensitive Documents in Amazon QuickSight](../ch11/124-restrict-access-to-sensitive-documents-in-your-amazon-quick.html) — 企业级文档访问控制实践
-- [PyTorch 2.12 Release Blog – PyTorch](../ch01/088-pytorch-2-12-release-blog-pytorch.html) — AI 框架生态安全
+- [PyTorch 2.12 Release Blog – PyTorch](../ch01/106-pytorch-2-12-release-blog-pytorch.html) — AI 框架生态安全
 
 ---
 

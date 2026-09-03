@@ -1,7 +1,5 @@
 # 腾讯研究院 2026 Q2 Agent 产业回顾——Agent 跌跌撞撞进入世界
 
-## Ch04.363 腾讯研究院 2026 Q2 Agent 产业回顾——Agent 跌跌撞撞进入世界
-
 > 📊 Level ⭐⭐ | 5.6KB | `entities/tencent-research-agent-q2-2026-industry-review.md`
 
 # 腾讯研究院 2026 Q2 Agent 产业回顾——Agent 跌跌撞撞进入世界

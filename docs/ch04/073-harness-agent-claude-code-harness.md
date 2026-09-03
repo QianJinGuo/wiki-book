@@ -1,7 +1,5 @@
 # Harness 工程搭建式业务 Agent 评测方案：Claude Code 作 Harness 搭建者
 
-## Ch04.073 Harness 工程搭建式业务 Agent 评测方案：Claude Code 作 Harness 搭建者
-
 > 📊 Level ⭐⭐ | 17.4KB | `entities/harness-engineered-business-agent-evaluation-aliyun-boyu.md`
 
 # Harness 工程搭建式业务 Agent 评测方案：Claude Code 作 Harness 搭建者

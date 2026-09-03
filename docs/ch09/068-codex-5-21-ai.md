@@ -1,7 +1,5 @@
 # Codex 5.21 更新：AI 编程助手开始变成电脑工作代理
 
-## Ch09.068 Codex 5.21 更新：AI 编程助手开始变成电脑工作代理
-
 > 📊 Level ⭐⭐ | 8.3KB | `entities/openai-codex-521-update-appshots-goal-computer-use.md`
 
 # Codex 5.21 更新：AI 编程助手开始变成电脑工作代理

@@ -1,7 +1,5 @@
 # 从Cursor返聘归来，90后华裔女高管带Claude开启日更模式
 
-## Ch09.041 从Cursor返聘归来，90后华裔女高管带Claude开启日更模式
-
 > 📊 Level ⭐⭐ | 12.0KB | `entities/cursor-recall-anthropic-daily-release-cat-wu.md`
 
 ## 元信息

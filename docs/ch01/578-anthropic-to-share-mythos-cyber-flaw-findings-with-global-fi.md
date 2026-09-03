@@ -1,7 +1,5 @@
 # Anthropic to share Mythos cyber flaw findings with global finance watchdog
 
-## Ch01.578 Anthropic to share Mythos cyber flaw findings with global finance watchdog
-
 > 📊 Level ⭐⭐ | 5.4KB | `entities/anthropic-to-share-mythos-cyber-flaw-findings-with-global-finance-watchdog.md`
 
 ## 核心要点

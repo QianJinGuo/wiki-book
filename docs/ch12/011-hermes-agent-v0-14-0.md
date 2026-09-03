@@ -1,7 +1,5 @@
 # Hermes Agent v0.14.0 核心架构与快速上手
 
-## Ch12.011 Hermes Agent v0.14.0 核心架构与快速上手
-
 > 📊 Level ⭐⭐ | 21.6KB | `entities/hermes-agent-v014-core-architecture-shugex.md`
 
 ## 核心定位

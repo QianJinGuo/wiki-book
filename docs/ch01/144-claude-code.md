@@ -1,7 +1,5 @@
 # Claude Code 源码核心机制详解
 
-## Ch01.144 Claude Code 源码核心机制详解
-
 > 📊 Level ⭐⭐ | 31.6KB | `entities/claude-code-core-internals.md`
 
 ## 核心设计亮点

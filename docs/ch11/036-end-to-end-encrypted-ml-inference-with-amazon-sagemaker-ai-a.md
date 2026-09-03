@@ -1,7 +1,5 @@
 # End-to-end encrypted ML inference with Amazon SageMaker AI and FHE
 
-## Ch11.036 End-to-end encrypted ML inference with Amazon SageMaker AI and FHE
-
 > 📊 Level ⭐⭐ | 13.4KB | `entities/end-to-end-encrypted-ml-inference-sagemaker-fhe.md`
 
 # End-to-end encrypted ML inference with Amazon SageMaker AI and FHE

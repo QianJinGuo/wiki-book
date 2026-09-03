@@ -1,7 +1,5 @@
 # 超级个体到超级组织：李志飞 CodeBanana 组织转型实践
 
-## Ch04.140 超级个体到超级组织：李志飞 CodeBanana 组织转型实践
-
 > 📊 Level ⭐⭐ | 12.4KB | `entities/super-individual-to-super-organization-tencent-research-2026.md`
 
 # 超级个体到超级组织：李志飞 CodeBanana 组织转型实践

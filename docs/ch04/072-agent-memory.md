@@ -1,7 +1,5 @@
 # Agent Memory 架构本质
 
-## Ch04.072 Agent Memory 架构本质
-
 > 📊 Level ⭐⭐ | 17.4KB | `entities/agent-memory-architecture-essence.md`
 
 ## 瓶颈在持续理解

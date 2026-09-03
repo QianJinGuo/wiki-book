@@ -1,7 +1,5 @@
 # Matt Pocock Skills — AI编程技能集合
 
-## Ch07.019 Matt Pocock Skills — AI编程技能集合
-
 > 📊 Level ⭐⭐ | 11.7KB | `entities/mattpocock-skills-grill-me-grill-with-docs-caveman.md`
 
 ## 概述

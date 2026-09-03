@@ -1,7 +1,5 @@
 # Codex 重磅升级：Appshots / Goal 毕业 / 锁屏远程操控
 
-## Ch01.221 Codex 重磅升级：Appshots / Goal 毕业 / 锁屏远程操控
-
 > 📊 Level ⭐⭐ | 14.3KB | `entities/codex-major-update-appshots-goal-xinzhiyuan.md`
 
 # Codex 重磅升级：Appshots / Goal 毕业 / 锁屏远程操控

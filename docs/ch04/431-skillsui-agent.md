@@ -1,7 +1,5 @@
 # SkillsUI 企业 Agent 中间层
 
-## Ch04.431 SkillsUI 企业 Agent 中间层
-
 > 📊 Level ⭐⭐ | 2.6KB | `entities/skillsui-enterprise-agent-middle-layer.md`
 
 # SkillsUI 企业 Agent 中间层

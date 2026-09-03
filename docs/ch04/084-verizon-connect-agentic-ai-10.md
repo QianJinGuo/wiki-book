@@ -1,7 +1,5 @@
 # Verizon Connect Agentic AI: 10万用户规模的工程实践
 
-## Ch04.084 Verizon Connect Agentic AI: 10万用户规模的工程实践
-
 > 📊 Level ⭐⭐ | 16.0KB | `entities/verizon-connect-agentic-ai-100k-users.md`
 
 # Verizon Connect Agentic AI: 10万用户规模的工程实践

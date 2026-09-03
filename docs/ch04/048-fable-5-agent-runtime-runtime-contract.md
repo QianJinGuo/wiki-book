@@ -1,7 +1,5 @@
 # Fable 5 的信号:Agent 开始拼 Runtime — 架构师若飞的 Runtime Contract 工程化拆解
 
-## Ch04.048 Fable 5 的信号:Agent 开始拼 Runtime — 架构师若飞的 Runtime Contract 工程化拆解
-
 > 📊 Level ⭐⭐ | 21.2KB | `entities/claude-fable-5-agent-runtime-contract-ruofei-2026.md`
 
 # Fable 5 的信号：Agent 开始拼 Runtime — 架构师若飞的 Runtime Contract 工程化拆解

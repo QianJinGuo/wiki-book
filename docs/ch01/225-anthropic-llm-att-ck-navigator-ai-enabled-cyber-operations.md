@@ -1,7 +1,5 @@
 # Anthropic LLM ATT&CK Navigator: AI-Enabled Cyber Operations
 
-## Ch01.225 Anthropic LLM ATT&CK Navigator: AI-Enabled Cyber Operations
-
 > 📊 Level ⭐⭐ | 14.2KB | `entities/anthropic-llm-attck-navigator-cyber-operations.md`
 
 # Anthropic LLM ATT&CK Navigator: AI-Enabled Cyber Operations

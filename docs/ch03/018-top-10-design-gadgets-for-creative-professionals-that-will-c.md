@@ -1,7 +1,5 @@
 # Top 10 Design Gadgets for Creative Professionals That Will Change How You Work in 2026
 
-## Ch03.018 Top 10 Design Gadgets for Creative Professionals That Will Change How You Work in 2026
-
 > 📊 Level ⭐ | 7.1KB | `entities/top-10-design-gadgets-creative-professionals-2026.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/top-10-design-gadgets-creative-professionals-2026.md)
@@ -76,8 +74,8 @@ Acoustic        → Sony WH-1000XM6（声学环境管理）
 - **e-Ink 全彩化**：reMarkable Paper Pro 的后续产品可能在两个周期内提供接近完整的专业色彩支持
 
 ## 相关实体
-- [Self-Filming Guide by Hello World Media](../ch01/115-self-filming-guide-by-hello-world-media.html) — 自拍摄指南，含 Key Light MK.2 类似的打光建议
-- [How Superset built the IDE for AI agents on Vercel](../ch01/071-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
+- [Self-Filming Guide by Hello World Media](../ch01/047-self-filming-guide-by-hello-world-media.html) — 自拍摄指南，含 Key Light MK.2 类似的打光建议
+- [How Superset built the IDE for AI agents on Vercel](../ch01/074-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
 
 ---
 

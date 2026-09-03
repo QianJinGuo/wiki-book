@@ -1,7 +1,5 @@
 # OpenClaw + Amazon Bedrock + Amazon EKS 联动实践：打印机包装质检助手实战
 
-## Ch11.042 OpenClaw + Amazon Bedrock + Amazon EKS 联动实践：打印机包装质检助手实战
-
 > 📊 Level ⭐⭐ | 12.9KB | `entities/openclaw-amazon-bedrock-eks-printer-qc.md`
 
 # OpenClaw + Amazon Bedrock + Amazon EKS 联动实践：打印机包装质检助手实战

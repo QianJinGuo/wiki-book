@@ -1,7 +1,5 @@
 # Agent Harness 解析：智能体架构深度拆解
 
-## Ch01.282 Agent Harness 解析：智能体架构深度拆解
-
 > 📊 Level ⭐⭐ | 11.6KB | `entities/agent-harness-architecture-deep-dive-aksahy.md`
 
 ## 核心定义

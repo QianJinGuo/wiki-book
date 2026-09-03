@@ -1,7 +1,5 @@
 # GitHub's plan for Agents — Kyle Daigle, GitHub
 
-## Ch04.303 GitHub's plan for Agents — Kyle Daigle, GitHub
-
 > 📊 Level ⭐⭐ | 7.6KB | `entities/www-latent-space-p-github.md`
 
 # GitHub's plan for Agents — Kyle Daigle, GitHub

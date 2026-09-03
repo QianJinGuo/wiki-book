@@ -1,7 +1,5 @@
 # Codex 自主赚钱：全自动商业闭环实验
 
-## Ch01.393 Codex 自主赚钱：全自动商业闭环实验
-
 > 📊 Level ⭐⭐ | 8.5KB | `entities/codex-autonomous-earning-money.md`
 
 # codex-autonomous-earning-money
@@ -14,8 +12,8 @@ Chris 是这样评论的："ChatGPT 就像个猎人，他出去帮我找食物�
 
 ## 相关实体
 - [Skill Rag Tsinghua Sra](../ch07/054-skill.html)
-- [Useful Memories Become Faulty When Continuously Updated By Llms](075-useful-memories-become-faulty-when-continuously-updated-by-l.html)
-- [Build Live Translation Apps With Gpt Realtime Translate](081-build-live-translation-apps-with-gpt-realtime-translate.html)
+- [Useful Memories Become Faulty When Continuously Updated By Llms](078-useful-memories-become-faulty-when-continuously-updated-by-l.html)
+- [Build Live Translation Apps With Gpt Realtime Translate](084-build-live-translation-apps-with-gpt-realtime-translate.html)
 - [Chatgpt Search Web Run Fanout Searchengineland](712-chatgpt.html)
 - [Stochastic Parrot Thought Experiment](https://github.com/QianJinGuo/wiki/blob/main/entities/stochastic-parrot-thought-experiment.md)
 

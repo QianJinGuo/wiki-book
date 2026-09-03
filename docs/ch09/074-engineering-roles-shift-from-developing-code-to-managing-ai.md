@@ -1,7 +1,5 @@
 # Engineering roles shift from developing code to managing AI | CIO Dive
 
-## Ch09.074 Engineering roles shift from developing code to managing AI | CIO Dive
-
 > 📊 Level ⭐⭐ | 7.5KB | `entities/820297.md`
 
 # Engineering roles shift from developing code to managing AI | CIO Dive

@@ -1,7 +1,5 @@
 # Anthropic Coding Agent 社会科学家采用调查
 
-## Ch09.033 Anthropic Coding Agent 社会科学家采用调查
-
 > 📊 Level ⭐⭐ | 13.5KB | `entities/anthropic-coding-agents-social-science-survey-2026.md`
 
 ## 背景与方法

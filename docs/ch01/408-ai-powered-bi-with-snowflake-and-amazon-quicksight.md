@@ -1,7 +1,5 @@
 # AI-powered BI with Snowflake and Amazon QuickSight
 
-## Ch01.408 AI-powered BI with Snowflake and Amazon QuickSight
-
 > 📊 Level ⭐⭐ | 8.1KB | `entities/ai-powered-bi-with-snowflake-and-amazon-quick.md`
 
 # AI-powered BI with Snowflake and Amazon QuickSight

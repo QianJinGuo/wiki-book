@@ -1,7 +1,5 @@
 # Skill Factory：三天手搓面向Harness设计的技能工厂
 
-## Ch05.066 Skill Factory：三天手搓面向Harness设计的技能工厂
-
 > 📊 Level ⭐⭐ | 5.4KB | `entities/skill-factory-yueheng.md`
 
 ## 背景：三种 Skill 创建方式对比

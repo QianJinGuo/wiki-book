@@ -1,7 +1,5 @@
 # 腾讯混元 CL-Bench Life：让大模型读懂你的日常生活
 
-## Ch01.780 腾讯混元 CL-Bench Life：让大模型读懂你的日常生活
-
 > 📊 Level ⭐⭐⭐⭐ | 5.8KB | `entities/cl-bench-life-tencent-context-learning.md`
 
 # 腾讯混元 CL-Bench Life：让大模型读懂你的日常生活

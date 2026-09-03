@@ -1,7 +1,5 @@
 # Perplexity Brain: Self-improving Agent Memory Architecture
 
-## Ch04.323 Perplexity Brain: Self-improving Agent Memory Architecture
-
 > 📊 Level ⭐⭐ | 7.3KB | `entities/perplexity-brain-self-improving-memory.md`
 
 # Perplexity Brain: Self-improving Agent Memory Architecture

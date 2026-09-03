@@ -1,7 +1,5 @@
 # 🧠 The Token Economy pt2: The Intelligence Company Gets Built
 
-## Ch01.002 🧠 The Token Economy pt2: The Intelligence Company Gets Built
-
 > 📊 Level ⭐ | 23.0KB | `entities/the-token-economy-pt2-the-intelligence-company-gets-built.md`
 
 ## 核心要点
@@ -187,7 +185,7 @@ Anthropic-Blackstone $1.5B JV 模式展示 PE 作为 AI 转型加速器的潜力
 - [Anthropic Financial Services Agents](https://www.anthropic.com/news/finance-agents) 
 
 ## 相关实体
-- [Vercel Com How Superset Built The Ide For Ai Agents On Vercel](071-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
+- [Vercel Com How Superset Built The Ide For Ai Agents On Vercel](074-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
 - [Https Stratechery Com 2026 The Google Capital Company](003-the-google-capital-company.html)
 - [The Token Economy](002-the-token-economy-pt2-the-intelligence-company-gets-built.html)
 - [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](578-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.html)

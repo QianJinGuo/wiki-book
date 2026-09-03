@@ -1,7 +1,5 @@
 # AgentScope Builder 快速体验：用 Harness 框架快速构建企业自进化智能体
 
-## Ch04.211 AgentScope Builder 快速体验：用 Harness 框架快速构建企业自进化智能体
-
 > 📊 Level ⭐⭐ | 10.0KB | `entities/agentscope-builder-enterprise-self-evolving-agent-harness.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentscope-builder-enterprise-self-evolving-agent-harness.md)

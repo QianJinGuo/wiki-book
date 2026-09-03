@@ -1,7 +1,5 @@
 # Guide to Security Operations at Machine Speed
 
-## Ch12.085 Guide to Security Operations at Machine Speed
-
 > 📊 Level ⭐⭐ | 5.5KB | `entities/arctic-wolf-security-operations-machine-speed.md`
 
 ## 核心要点

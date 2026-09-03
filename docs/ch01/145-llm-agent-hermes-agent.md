@@ -1,7 +1,5 @@
 # LLM agent脚手架如何具备自进化能力？——以hermes agent为例
 
-## Ch01.145 LLM agent脚手架如何具备自进化能力？——以hermes agent为例
-
 > 📊 Level ⭐⭐ | 29.8KB | `entities/llm-agent脚手架如何具备自进化能力以hermes-agent为例.md`
 
 [Llm Agent脚手架如何具备自进化能力以Hermes Agent为例](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-agent脚手架如何具备自进化能力以hermes-agent为例.md)

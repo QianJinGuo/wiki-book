@@ -1,7 +1,5 @@
 # Discord 全平台端到端加密
 
-## Ch12.086 Discord 全平台端到端加密
-
 > 📊 Level ⭐⭐ | 5.4KB | `entities/discord-e2e-encryption.md`
 
 ## 核心要点

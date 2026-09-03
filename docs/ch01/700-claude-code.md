@@ -1,7 +1,5 @@
 # 给 Claude Code 装上'超能力' — 它干活比我还靠谱
 
-## Ch01.700 给 Claude Code 装上'超能力' — 它干活比我还靠谱
-
 > 📊 Level ⭐⭐ | 2.4KB | `entities/claude-code-superpowers-workflow-by-xinlingyuanyuanyuan.md`
 
 # 给 Claude Code 装上'超能力' — 它干活比我还靠谱

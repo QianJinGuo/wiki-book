@@ -1,7 +1,5 @@
 # Evaluate your Amazon Nova Sonic voice agent at scale, no microphone required
 
-## Ch01.715 Evaluate your Amazon Nova Sonic voice agent at scale, no microphone required
-
 > 📊 Level ⭐⭐ | 2.3KB | `entities/evaluate-your-amazon-nova-sonic-voice-agent-at-scale-no-micr.md`
 
 # Evaluate your Amazon Nova Sonic voice agent at scale, no microphone required

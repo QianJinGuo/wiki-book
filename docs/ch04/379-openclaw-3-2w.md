@@ -1,7 +1,5 @@
 # OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）
 
-## Ch04.379 OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）
-
 > 📊 Level ⭐⭐ | 5.0KB | `entities/openclaw-comprehensive-guide-32k-chars.md`
 
 ## 关键洞察

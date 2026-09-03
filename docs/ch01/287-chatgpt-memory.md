@@ -1,7 +1,5 @@
 # ChatGPT Memory
 
-## Ch01.287 ChatGPT Memory
-
 > 📊 Level ⭐⭐ | 11.5KB | `entities/chatgpt-memory.md`
 
 # ChatGPT Memory & Knowledge Features
@@ -155,7 +153,7 @@ Canvas 被设计为"独立画布"而非对话线程的延伸，这是它与普�
 - [Obsidian](../ch03/071-karpathy-llm-wiki-obsidian-agents-md.html) — 本地离线笔记
 ## 相关实体
 
-- [entrypoint hijacking](068-entrypoint-hijacking.html)
+- [entrypoint hijacking](071-entrypoint-hijacking.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-memory-architecture.md)
 
 ---

@@ -1,7 +1,5 @@
 # BrowserBC：人类轨迹蒸馏为可复用技能，让小模型获得大模型的网页操作能力
 
-## Ch01.782 BrowserBC：人类轨迹蒸馏为可复用技能，让小模型获得大模型的网页操作能力
-
 > 📊 Level ⭐⭐⭐⭐ | 4.1KB | `entities/browserbc-human-trajectory-skill-distillation-quantumbit-2026.md`
 
 ## 核心概述

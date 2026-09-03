@@ -1,7 +1,5 @@
 # AI 没把更多流量导向 Amazon，利好品牌官网 — Michael Morton x Ben Thompson 谈 AI 时代电商变局
 
-## Ch03.094 AI 没把更多流量导向 Amazon，利好品牌官网 — Michael Morton x Ben Thompson 谈 AI 时代电商变局
-
 > 📊 Level ⭐⭐ | 3.5KB | `entities/ai-commerce-brand-vs-marketplace-founder-park.md`
 
 # AI 没把更多流量导向 Amazon，利好品牌官网 — Michael Morton x Ben Thompson 谈 AI 时代电商变局
@@ -45,7 +43,7 @@ AI 并没有取代交易闭环——ChatGPT checkout 的失败证明了这一点
 
 ## 与现有知识的关系
 
-- [Amazon Alexa Storefront](../ch01/067-amazon-turns-alexa-into-its-next-storefront.html) — Amazon 自身的 AI 电商尝试，可对比本文的"AI 做不了交易平台"论点
+- [Amazon Alexa Storefront](../ch01/070-amazon-turns-alexa-into-its-next-storefront.html) — Amazon 自身的 AI 电商尝试，可对比本文的"AI 做不了交易平台"论点
 - [Thrive Capital Shopify AI 投资](../ch04/257-ai.html) — Shopify AI 战略的另一个视角
 
 ---

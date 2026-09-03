@@ -1,7 +1,5 @@
 # 腾讯 TAB Harness 全链路实战：从 Vibe Coding 到 13 阶段接力赛
 
-## Ch05.068 腾讯 TAB Harness 全链路实战：从 Vibe Coding 到 13 阶段接力赛
-
 > 📊 Level ⭐⭐ | 5.0KB | `entities/tencent-tab-harness-production-practice.md`
 
 # 腾讯 TAB Harness 全链路实战：从 Vibe Coding 到 13 阶段接力赛

@@ -1,7 +1,5 @@
 # Claude Code 一周年回顾：Boris Cherny + Cat Wu 对话
 
-## Ch09.020 Claude Code 一周年回顾：Boris Cherny + Cat Wu 对话
-
 > 📊 Level ⭐⭐ | 16.3KB | `entities/claude-code-first-year-retrospective-agi-hunt.md`
 
 # Claude Code 一周年回顾：Boris Cherny + Cat Wu 对话

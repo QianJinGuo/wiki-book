@@ -1,7 +1,5 @@
 # 基于Strands框架和Bedrock AgentCore的SAP智能采购助手方案 | 亚马逊AWS官方博客
 
-## Ch11.121 基于Strands框架和Bedrock AgentCore的SAP智能采购助手方案 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 8.0KB | `entities/sap-intelligent-procurement-assistant-solution.md`
 
 ## 深度分析

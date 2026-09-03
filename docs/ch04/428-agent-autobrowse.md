@@ -1,7 +1,5 @@
 # 浏览器 Agent 的失忆问题：Autobrowse 如何让每次探索变成永久技能
 
-## Ch04.428 浏览器 Agent 的失忆问题：Autobrowse 如何让每次探索变成永久技能
-
 > 📊 Level ⭐⭐ | 2.7KB | `entities/autobrowse-browser-agent-persistent-skills-sense-ai.md`
 
 # 浏览器 Agent 的失忆问题：Autobrowse 如何让每次探索变成永久技能

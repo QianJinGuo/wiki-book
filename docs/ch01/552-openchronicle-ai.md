@@ -1,7 +1,5 @@
 # OpenChronicle：把AI记忆变成可复用的基础设施
 
-## Ch01.552 OpenChronicle：把AI记忆变成可复用的基础设施
-
 > 📊 Level ⭐⭐ | 5.8KB | `entities/openchronicle-opensource-memory-layer.md`
 
 # OpenChronicle：把AI记忆变成可复用的基础设施

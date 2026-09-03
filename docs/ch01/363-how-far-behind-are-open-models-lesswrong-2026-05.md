@@ -1,7 +1,5 @@
 # How far behind are open models? (LessWrong 2026-05)
 
-## Ch01.363 How far behind are open models? (LessWrong 2026-05)
-
 > 📊 Level ⭐⭐ | 9.1KB | `entities/how-far-behind-are-open-models-2026.md`
 
 # How far behind are open models? (LessWrong 2026-05)

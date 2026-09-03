@@ -1,7 +1,5 @@
 # So You Want to Sell Inference
 
-## Ch01.502 So You Want to Sell Inference
-
 > 📊 Level ⭐⭐ | 6.7KB | `entities/tomtunguz-com-so-you-want-to-sell-inference.md`
 
 # So You Want to Sell Inference

@@ -1,7 +1,5 @@
 # Agent Harness 架构
 
-## Ch04.185 Agent Harness 架构
-
 > 📊 Level ⭐⭐ | 10.9KB | `entities/agent-harness-architecture.md`
 
 ## 7 层架构

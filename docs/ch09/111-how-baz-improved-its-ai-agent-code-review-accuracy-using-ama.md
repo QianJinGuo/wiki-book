@@ -1,7 +1,5 @@
 # How Baz improved its AI Agent Code Review accuracy using Amazon Bedrock AgentCore
 
-## Ch09.111 How Baz improved its AI Agent Code Review accuracy using Amazon Bedrock AgentCore
-
 > 📊 Level ⭐⭐ | 2.5KB | `entities/how-baz-improved-its-ai-agent-code-review-accuracy-using-ama.md`
 
 # How Baz improved its AI Agent Code Review accuracy using Amazon Bedrock AgentCore

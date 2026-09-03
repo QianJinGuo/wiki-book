@@ -1,7 +1,5 @@
 # Static Devirtualization 2024
 
-## Ch12.018 Static Devirtualization 2024
-
 > 📊 Level ⭐⭐ | 15.8KB | `entities/static-devirtualization-2024.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/static-devirtualization-of-themida.md) | → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/back-engineering-static-devirtualization-themida.md)

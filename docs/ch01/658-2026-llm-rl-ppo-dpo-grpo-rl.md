@@ -1,7 +1,5 @@
 # 2026 年面向 LLM 的 RL 方法总结：从 PPO 到 DPO 到 GRPO，再到多智能体 RL
 
-## Ch01.658 2026 年面向 LLM 的 RL 方法总结：从 PPO 到 DPO 到 GRPO，再到多智能体 RL
-
 > 📊 Level ⭐⭐ | 2.9KB | `entities/2026-llm-rl-algorithms-deeplog-imba-ppo-dpo-grpo-marl.md`
 
 # 2026 年面向 LLM 的 RL 方法总结：从 PPO 到 DPO 到 GRPO，再到多智能体 RL

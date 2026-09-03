@@ -1,7 +1,5 @@
 # Intercom, now called Fin, launches an AI agent whose only job is managing another AI agent
 
-## Ch04.307 Intercom, now called Fin, launches an AI agent whose only job is managing another AI agent
-
 > 📊 Level ⭐⭐ | 7.6KB | `entities/intercom-now-called-fin-launches-an-ai-agent-whose-only-job-is-managing-another-.md`
 
 ## 核心要点

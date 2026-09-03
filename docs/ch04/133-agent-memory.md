@@ -1,7 +1,5 @@
 # Agent Memory 架构本质
 
-## Ch04.133 Agent Memory 架构本质
-
 > 📊 Level ⭐⭐ | 13.0KB | `entities/agent-memory-architecture.md`
 
 ## Overview

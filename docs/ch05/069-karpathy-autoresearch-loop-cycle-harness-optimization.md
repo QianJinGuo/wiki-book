@@ -1,7 +1,5 @@
 # Karpathy AutoResearch Loop Cycle & Harness Optimization
 
-## Ch05.069 Karpathy AutoResearch Loop Cycle & Harness Optimization
-
 > 📊 Level ⭐⭐ | 4.8KB | `entities/karpathy-autoresearch-loop-cycle-harness-optimization.md`
 
 # Karpathy AutoResearch Loop Cycle & Harness Optimization

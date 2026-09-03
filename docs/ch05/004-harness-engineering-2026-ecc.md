@@ -1,7 +1,5 @@
 # Harness Engineering 综合论述：为什么 2026 年真正重要的是它（含 ECC 开源实现案例）
 
-## Ch05.004 Harness Engineering 综合论述：为什么 2026 年真正重要的是它（含 ECC 开源实现案例）
-
 > 📊 Level ⭐⭐ | 31.2KB | `entities/harness-engineering-paradigm-comprehensive-2026.md`
 
 # Harness Engineering 综合论述：为什么 2026 年真正重要的是它

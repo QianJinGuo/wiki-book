@@ -1,7 +1,5 @@
 # Olmo Hybrid and future LLM architectures
 
-## Ch01.332 Olmo Hybrid and future LLM architectures
-
 > 📊 Level ⭐⭐ | 10.0KB | `entities/olmo-hybrid-and-future-llm-architectures.md`
 
 # Olmo Hybrid and future LLM architectures

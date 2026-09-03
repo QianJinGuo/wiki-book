@@ -1,7 +1,5 @@
 # Agent资本市场：自主Agent融资框架与批判
 
-## Ch04.186 Agent资本市场：自主Agent融资框架与批判
-
 > 📊 Level ⭐⭐ | 10.8KB | `entities/agent-capital-markets-wright-shensiquan.md`
 
 ## 核心数据

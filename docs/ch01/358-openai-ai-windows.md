@@ -1,7 +1,5 @@
 # OpenAI 的最强对手，离「AI Windows」又近了一步
 
-## Ch01.358 OpenAI 的最强对手，离「AI Windows」又近了一步
-
 > 📊 Level ⭐⭐ | 9.2KB | `entities/anthropic-ai-windows-mcp-strategy-geekpark-2026.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-ai-windows-mcp-strategy-geekpark-2026.md)

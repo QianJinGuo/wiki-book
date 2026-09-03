@@ -1,7 +1,5 @@
 # Agent框架OWL原理详解
 
-## Ch01.302 Agent框架OWL原理详解
-
 > 📊 Level ⭐⭐ | 10.9KB | `entities/agent-framework-owl-principles.md`
 
 ** 前言  **
@@ -105,7 +103,7 @@ OWL的核心价值在于其**协作框架的成熟度**——多Agent如何有�
 ## 相关实体
 - [Minicpm V 46 13B](https://github.com/QianJinGuo/wiki/blob/main/entities/minicpm-v-46-13b.md)
 
-- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](110-hy3-preview.html)
+- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](113-hy3-preview.html)
 - [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
 
 ---

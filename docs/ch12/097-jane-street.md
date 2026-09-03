@@ -1,7 +1,5 @@
 # Jane Street — 形式化方法与编程的未来
 
-## Ch12.097 Jane Street — 形式化方法与编程的未来
-
 > 📊 Level ⭐⭐ | 3.9KB | `entities/jane-street-formal-methods-future-programming.md`
 
 # Jane Street — 形式化方法与编程的未来

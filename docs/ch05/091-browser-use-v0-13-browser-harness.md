@@ -1,7 +1,5 @@
 # browser-use v0.13 Browser Harness：薄抽象层设计哲学
 
-## Ch05.091 browser-use v0.13 Browser Harness：薄抽象层设计哲学
-
 > 📊 Level ⭐⭐⭐ | 4.3KB | `entities/browser-use-v13-browser-harness-thin-abstraction.md`
 
 # browser-use v0.13 Browser Harness：薄抽象层设计哲学

@@ -1,7 +1,5 @@
 # Engineering roles shift from developing code to managing AI
 
-## Ch05.061 Engineering roles shift from developing code to managing AI
-
 > 📊 Level ⭐⭐ | 6.7KB | `entities/engineering-roles-shift-from-developing-code-to-managing-ai.md`
 
 ## 核心要点
@@ -57,7 +55,7 @@ Harness SVP Trevor Stuart 指出了本质矛盾：**"行业过去十年所依赖
 4. **与技术领导者合作**：与开发者共同制定衡量标准，而不是自上而下强加指标
 ## 相关实体
 - [Engineering Roles Shift From Developing Code To Ma](061-engineering-roles-shift-from-developing-code-to-managing-ai.html)
-- [From Doer To Director The Ai Mindset Shift](../ch01/027-from-doer-to-director-the-ai-mindset-shift.html)
+- [From Doer To Director The Ai Mindset Shift](../ch01/029-from-doer-to-director-the-ai-mindset-shift.html)
 - [Gbhackers Sandworm Shift From It Breaches](https://github.com/QianJinGuo/wiki/blob/main/entities/gbhackers-sandworm-shift-from-it-breaches.md)
 - [Sandworm Hackers Shift It Breaches Ot Gbhackers](https://github.com/QianJinGuo/wiki/blob/main/entities/sandworm-hackers-shift-it-breaches-ot-gbhackers.md)
 - [Hs.Playerzero Ai Code Review](../ch04/257-ai.html)

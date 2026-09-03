@@ -1,7 +1,5 @@
 # StarAgent/Drogo WebTerminal CLI：阿里基础设施把 WebTerminal 变成 Agent 手脚（CLI 才是 Skill 的执行面）
 
-## Ch07.011 StarAgent/Drogo WebTerminal CLI：阿里基础设施把 WebTerminal 变成 Agent 手脚（CLI 才是 Skill 的执行面）
-
 > 📊 Level ⭐⭐ | 20.0KB | `entities/staragent-webterminal-cli-ali-infra-cli-as-agent-hands.md`
 
 # StarAgent/Drogo WebTerminal CLI：阿里基础设施把 WebTerminal 变成 Agent 手脚

@@ -1,7 +1,5 @@
 # Wiki Evolver
 
-## Ch07.015 Wiki Evolver
-
 > 📊 Level ⭐⭐ | 14.7KB | `entities/wiki-evolver.md`
 
 ## 相关查询

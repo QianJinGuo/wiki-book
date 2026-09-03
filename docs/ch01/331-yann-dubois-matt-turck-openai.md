@@ -1,7 +1,5 @@
 # Yann Dubois × Matt Turck：OpenAI 后训练与强化学习的内部视角
 
-## Ch01.331 Yann Dubois × Matt Turck：OpenAI 后训练与强化学习的内部视角
-
 > 📊 Level ⭐⭐ | 10.0KB | `entities/yann-dubois-openai-post-training-matt-turck-interview.md`
 
 # Yann Dubois × Matt Turck：OpenAI 后训练与强化学习的内部视角

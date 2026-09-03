@@ -1,7 +1,5 @@
 # Apple corecrypto formal verification blueprint — post-quantum ML-KEM/ML-DSA in iMessage
 
-## Ch12.024 Apple corecrypto formal verification blueprint — post-quantum ML-KEM/ML-DSA in iMessage
-
 > 📊 Level ⭐⭐ | 12.9KB | `entities/apple-corecrypto-formal-verification-blueprint.md`
 
 # Apple corecrypto formal verification blueprint — post-quantum ML-KEM/ML-DSA in iMessage

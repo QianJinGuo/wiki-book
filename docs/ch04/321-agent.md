@@ -1,7 +1,5 @@
 # Agent 时代，我们架构师应该学什么？
 
-## Ch04.321 Agent 时代，我们架构师应该学什么？
-
 > 📊 Level ⭐⭐ | 7.3KB | `entities/agent-era-architect-skills-guide.md`
 
 # Agent 时代，我们架构师应该学什么？

@@ -1,7 +1,5 @@
 # Agent Loop 工程手册 8 个未解问题 + SELF Protocol 治理薄壳：腾讯陈进的二手解读与单 Agent 实验
 
-## Ch04.130 Agent Loop 工程手册 8 个未解问题 + SELF Protocol 治理薄壳：腾讯陈进的二手解读与单 Agent 实验
-
 > 📊 Level ⭐⭐ | 13.0KB | `entities/agent-loop-engineering-handbook-8-questions-chen-jin-tencent-self-2026.md`
 
 # Agent Loop 工程手册 8 个未解问题 + SELF Protocol 治理薄壳

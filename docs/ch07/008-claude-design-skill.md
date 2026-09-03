@@ -1,7 +1,5 @@
 # 我把 Claude Design 做成了 Skill，人人都能成为顶级网站设计师
 
-## Ch07.008 我把 Claude Design 做成了 Skill，人人都能成为顶级网站设计师
-
 > 📊 Level ⭐⭐ | 20.7KB | `entities/claude-design-skill-web-design-engineer.md`
 
 [Claude Design Skill Web Design Engineer](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-design-skill-web-design-engineer.md)

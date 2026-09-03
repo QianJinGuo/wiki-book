@@ -1,7 +1,5 @@
 # AI 生产开发工作流：OpenSpec 规范驱动 + Superpowers 工具链
 
-## Ch05.020 AI 生产开发工作流：OpenSpec 规范驱动 + Superpowers 工具链
-
 > 📊 Level ⭐⭐ | 19.0KB | `entities/ai-production-development-workflow-openspec-superpowers-gstack.md`
 
 ## 三大痛点

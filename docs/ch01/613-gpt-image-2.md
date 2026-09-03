@@ -1,7 +1,5 @@
 # GPT -Image 2神级提示词分享
 
-## Ch01.613 GPT -Image 2神级提示词分享
-
 > 📊 Level ⭐⭐ | 4.5KB | `entities/gpt-image-2神级提示词分享.md`
 
 # GPT -Image 2神级提示词分享
@@ -18,8 +16,8 @@ A crisp, printmaking-like aesthetic with bold outlines and natural deformation. 
 - [Gpt Image 2完全指南](613-gpt-image-2.html)
 - [Gpt Image 2 完全指南附大量玩法案例顺便开源我的生图 Skill](613-gpt-image-2.html)
 - [Skill Rag Tsinghua Sra](../ch07/054-skill.html)
-- [Useful Memories Become Faulty When Continuously Updated By Llms](075-useful-memories-become-faulty-when-continuously-updated-by-l.html)
-- [Build Live Translation Apps With Gpt Realtime Translate](081-build-live-translation-apps-with-gpt-realtime-translate.html)
+- [Useful Memories Become Faulty When Continuously Updated By Llms](078-useful-memories-become-faulty-when-continuously-updated-by-l.html)
+- [Build Live Translation Apps With Gpt Realtime Translate](084-build-live-translation-apps-with-gpt-realtime-translate.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gpt-image-2神级提示词分享.md)
 

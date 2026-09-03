@@ -1,7 +1,5 @@
 # nanobot：4000行极简 Agent 框架架构解析
 
-## Ch01.183 nanobot：4000行极简 Agent 框架架构解析
-
 > 📊 Level ⭐⭐ | 17.4KB | `entities/nanobot-agent-framework-architecture-deep-dive.md`
 
 # nanobot：4000行极简 Agent 框架架构解析

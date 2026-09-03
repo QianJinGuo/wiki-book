@@ -1,7 +1,5 @@
 # Plaid's Effects on the Financial Ecosystem
 
-## Ch03.089 Plaid's Effects on the Financial Ecosystem
-
 > 📊 Level ⭐⭐ | 5.1KB | `entities/plaid-effects.md`
 
 ## 核心要点

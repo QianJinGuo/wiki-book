@@ -1,7 +1,5 @@
 # Prompt 调试器：A/B 测试模板对比
 
-## Ch01.566 Prompt 调试器：A/B 测试模板对比
-
 > 📊 Level ⭐⭐ | 5.6KB | `entities/prompt-debugger-compare-templates-winty.md`
 
 # prompt-debugger-compare-templates-winty

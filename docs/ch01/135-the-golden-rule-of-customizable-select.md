@@ -1,7 +1,5 @@
 # The golden rule of Customizable Select
 
-## Ch01.135 The golden rule of Customizable Select
-
 > 📊 Level ⭐ | 3.2KB | `entities/webkit-customizable-select-golden-rule.md`
 
 # The golden rule of Customizable Select
@@ -38,8 +36,8 @@ When you remember to follow the rule, you’ll improve the user experience, supp
 - 引用源：[Webkit Customizable Select Golden Rule](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/webkit-customizable-select-golden-rule.md)
 ## 相关实体
 - [tokenomics: the 62.5-minute rule for claude](../ch12/002-token.html)
-- [from doer to director: the ai mindset shift](027-from-doer-to-director-the-ai-mindset-shift.html)
-- [why internally-built ai fails fund accounting audits](551-why-internally-built-ai-fails-fund-accounting-audits.html)
+- [from doer to director: the ai mindset shift](029-from-doer-to-director-the-ai-mindset-shift.html)
+- [why internally-built ai fails fund accounting audits](064-why-internally-built-ai-fails-fund-accounting-audits.html)
 
 ---
 

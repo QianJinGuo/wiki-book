@@ -1,7 +1,5 @@
 # YC 总裁开源了自己亲手写的 AI Agent 大脑，1 周就 1 万点赞。
 
-## Ch01.268 YC 总裁开源了自己亲手写的 AI Agent 大脑，1 周就 1 万点赞。
-
 > 📊 Level ⭐⭐ | 12.2KB | `entities/gbrain-garry-tan-yanfa-zhili.md`
 
 [Gbrain Garry Tan Yanfa Zhili](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gbrain-garry-tan-yanfa-zhili.md)

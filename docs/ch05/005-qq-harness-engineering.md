@@ -1,7 +1,5 @@
 # QQ音乐 Harness Engineering 实践（大仓多服务场景）
 
-## Ch05.005 QQ音乐 Harness Engineering 实践（大仓多服务场景）
-
 > 📊 Level ⭐⭐ | 29.2KB | `entities/qq-music-harness-engineering-monorepo-microservices.md`
 
 # QQ音乐 Harness Engineering 实践（大仓多服务场景）

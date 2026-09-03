@@ -1,7 +1,5 @@
 # Claude Code Loop Types — 官方四种循环模式分类法
 
-## Ch09.066 Claude Code Loop Types — 官方四种循环模式分类法
-
 > 📊 Level ⭐⭐ | 8.6KB | `entities/claude-code-loop-types-official-taxonomy-four-modes.md`
 
 # Claude Code Loop Types — 官方四种循环模式分类法

@@ -1,7 +1,5 @@
 # AI Is Writing More Code. Your CI Pipeline Can't Keep Up
 
-## Ch01.564 AI Is Writing More Code. Your CI Pipeline Can't Keep Up
-
 > 📊 Level ⭐⭐ | 5.6KB | `entities/ai-is-writing-more-code-your-ci-pipeline.md`
 
 ## 核心要点

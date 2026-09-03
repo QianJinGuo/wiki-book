@@ -1,7 +1,5 @@
 # 新智源：OpenAI Tax AI 自改进 Codex 评估循环
 
-## Ch01.669 新智源：OpenAI Tax AI 自改进 Codex 评估循环
-
 > 📊 Level ⭐⭐ | 2.8KB | `entities/xinzhiyuan-openai-tax-ai-self-improving-codex-eval-loop-20260606.md`
 
 # Xinzhiyuan Openai Tax Ai Self Improving Codex Eval Loop 20260606

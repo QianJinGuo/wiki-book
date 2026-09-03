@@ -1,7 +1,5 @@
 # Memory in the LLM Era: Modular Architectures and Strategies in a Unified Framework
 
-## Ch01.736 Memory in the LLM Era: Modular Architectures and Strategies in a Unified Framework
-
 > 📊 Level ⭐⭐⭐ | 21.7KB | `entities/memory-in-the-llm-era-iclr2026.md`
 
 ## 概述

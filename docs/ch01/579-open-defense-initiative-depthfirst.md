@@ -1,7 +1,5 @@
 # Open Defense Initiative | depthfirst
 
-## Ch01.579 Open Defense Initiative | depthfirst
-
 > 📊 Level ⭐⭐ | 5.4KB | `entities/opendefenseinitiativedepthfirst.md`
 
 ## 核心要点

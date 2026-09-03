@@ -1,7 +1,5 @@
 # Prompting Amazon Nova 2 for content moderation
 
-## Ch01.352 Prompting Amazon Nova 2 for content moderation
-
 > 📊 Level ⭐⭐ | 9.4KB | `entities/prompting-amazon-nova-2-for-content-moderation.md`
 
 ## 核心要点

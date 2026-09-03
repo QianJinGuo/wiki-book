@@ -1,7 +1,5 @@
 # 大模型可控新突破：Steering 机制、评估体系与开源落地
 
-## Ch01.657 大模型可控新突破：Steering 机制、评估体系与开源落地
-
 > 📊 Level ⭐⭐ | 2.9KB | `entities/steering-mechanism-evaluation-easyedit2-zju-alibaba.md`
 
 # 大模型可控新突破：Steering 机制、评估体系与开源落地

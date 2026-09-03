@@ -1,7 +1,5 @@
 # Anthropic Managed Agents：用 K8s 思路虚拟化 Agent 组件
 
-## Ch04.254 Anthropic Managed Agents：用 K8s 思路虚拟化 Agent 组件
-
 > 📊 Level ⭐⭐ | 8.5KB | `entities/anthropic-managed-agents-scaling.md`
 
 # anthropic-managed-agents-scaling

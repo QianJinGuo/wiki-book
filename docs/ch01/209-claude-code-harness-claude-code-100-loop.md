@@ -1,7 +1,5 @@
 # Claude Code 之父最新访谈：编程已经结束、harness 将消失、Claude Code 将只有 100 行代码、loop 才是未来
 
-## Ch01.209 Claude Code 之父最新访谈：编程已经结束、harness 将消失、Claude Code 将只有 100 行代码、loop 才是未来
-
 > 📊 Level ⭐⭐ | 15.0KB | `entities/claude-code-之父最新访谈编程已经结束harness-将消失claude-code-将只有-100-行代码loop-才是未来.md`
 
 ## 核心要点

@@ -1,7 +1,5 @@
 # Improve bot accuracy with Amazon Lex Assisted NLU
 
-## Ch01.496 Improve bot accuracy with Amazon Lex Assisted NLU
-
 > 📊 Level ⭐⭐ | 6.8KB | `entities/improve-bot-accuracy-with-amazon-lex-assisted-nlu.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/improve-bot-accuracy-with-amazon-lex-assisted-nlu.md)

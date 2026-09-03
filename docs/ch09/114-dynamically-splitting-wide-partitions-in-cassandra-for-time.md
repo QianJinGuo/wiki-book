@@ -1,7 +1,5 @@
 # Dynamically Splitting Wide Partitions in Cassandra for Time Series Workloads
 
-## Ch09.114 Dynamically Splitting Wide Partitions in Cassandra for Time Series Workloads
-
 > 📊 Level ⭐⭐ | 2.3KB | `entities/dynamically-splitting-wide-partitions-in-cassandra-for-time-.md`
 
 # Dynamically Splitting Wide Partitions in Cassandra for Time Series Workloads

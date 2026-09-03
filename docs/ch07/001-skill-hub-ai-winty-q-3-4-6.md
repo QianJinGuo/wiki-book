@@ -1,7 +1,5 @@
 # Skill Hub：企业级 AI 经验资产化的关键（组织能力视角）— winty 前端Q 3 篇合集：组织资产 + 质量门禁 4 关 + 生命周期 6 阶段治理
 
-## Ch07.001 Skill Hub：企业级 AI 经验资产化的关键（组织能力视角）— winty 前端Q 3 篇合集：组织资产 + 质量门禁 4 关 + 生命周期 6 阶段治理
-
 > 📊 Level ⭐⭐ | 41.8KB | `entities/skill-hub-organization-asset-winty.md`
 
 # Skill Hub：企业级 AI 经验资产化的关键（组织能力视角）

@@ -6,10 +6,10 @@
 
 ```
 站点名称: AI 工程
-源文件:   docs/ (4,024 篇 raw 原文)
+源文件:   docs/ (4,140 篇 raw 原文, 每日 sync 更新)
 章节:     20 章 5 篇 (Ch01-Ch20)
-编撰实体: 4,087 (与首页/章节目录口径一致)
-拆分页面: 6,509 (ch*/ 目录，含部分章节未精选实体)
+编撰实体: 2,201 篇精选成书 (质量门禁 review≥7; ~/wiki/entities 全量 4,158)
+拆分页面: 1,944 个 ch*/ 子页 (余 257 个实体平铺于章内, 合计 2,201)
 域名:     jinguo.tech (CF Pages) / wiki.jinguo.tech (GH Pages)
 仓库:     github.com/QianJinGuo/wiki-book
 版本:     v1.3.8

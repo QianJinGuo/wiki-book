@@ -1,7 +1,5 @@
 # Demis Hassabis YC 专访：Agent 才刚刚开始，AI 下一步是创造虚拟细胞
 
-## Ch04.376 Demis Hassabis YC 专访：Agent 才刚刚开始，AI 下一步是创造虚拟细胞
-
 > 📊 Level ⭐⭐ | 5.1KB | `entities/demis-hassabis-yc-interview-2026.md`
 
 # Demis Hassabis YC 专访：Agent 才刚刚开始，AI 下一步是创造虚拟细胞

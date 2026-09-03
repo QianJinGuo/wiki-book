@@ -1,7 +1,5 @@
 # IC work is the new career flex
 
-## Ch03.008 IC work is the new career flex
-
 > 📊 Level ⭐ | 10.6KB | `entities/p-ic-work-is-the-new-career-flex.md`
 
 ## 核心要点
@@ -44,7 +42,7 @@
 
 ## 相关实体
 
-- [How Superset built the IDE for AI agents on Vercel](../ch01/071-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
+- [How Superset built the IDE for AI agents on Vercel](../ch01/074-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
 - [Toto 2.0: Time series forecasting enters the scaling era](../ch11/143-toto-2-context-aware-log-analytics-for-complex-distributed.html)
 - [Public Stealth Leaves Opportunity on the Table](https://github.com/QianJinGuo/wiki/blob/main/entities/thisisgoingtobebig-public-stealth.md)
 

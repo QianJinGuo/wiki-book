@@ -1,7 +1,5 @@
 # OpenClaw 在电商平台的应用场景探索 | 亚马逊AWS官方博客
 
-## Ch11.126 OpenClaw 在电商平台的应用场景探索 | 亚马逊AWS官方博客
-
 > 📊 Level ⭐⭐ | 7.8KB | `entities/exploring-openclaw-use-cases-in-ecommerce-platforms.md`
 
 ## 概述

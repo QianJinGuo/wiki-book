@@ -1,7 +1,5 @@
 # Meta Skill：Skill 之上编排 Skill 的抽象层
 
-## Ch01.723 Meta Skill：Skill 之上编排 Skill 的抽象层
-
 > 📊 Level ⭐⭐ | 2.2KB | `entities/meta-skill-skill-orchestration-opensquilla-jay.md`
 
 # Meta Skill：Skill 之上编排 Skill 的抽象层

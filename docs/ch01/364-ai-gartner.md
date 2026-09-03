@@ -1,7 +1,5 @@
 # AI 驱动的裁员没有商业意义 — Gartner 研究
 
-## Ch01.364 AI 驱动的裁员没有商业意义 — Gartner 研究
-
 > 📊 Level ⭐⭐ | 9.0KB | `entities/www.cio-4171054-ai-driven-layoffs-arent-making-business-sense.md`
 
 # AI 驱动的裁员没有商业意义 — Gartner 研究
@@ -92,7 +90,7 @@ Williamson 对 Block 裁员的评论揭示了一个被系统性忽视的维度�
 ## 相关实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html) — AI 对软件工程角色的影响
-- [From Doer To Director The Ai Mindset Shift](027-from-doer-to-director-the-ai-mindset-shift.html) — AI 时代从执行者到指挥者的思维转变
+- [From Doer To Director The Ai Mindset Shift](029-from-doer-to-director-the-ai-mindset-shift.html) — AI 时代从执行者到指挥者的思维转变
 - [System Over Model Tested Reproducing Mythoss Freebsd Find On 20260606](https://github.com/QianJinGuo/wiki/blob/main/entities/system-over-model-tested-reproducing-mythoss-freebsd-find-on-20260606.md) — AI 系统的实际能力边界
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — AI 系统的工程化治理
 

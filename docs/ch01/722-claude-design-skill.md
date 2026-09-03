@@ -1,7 +1,5 @@
 # 我把 Claude Design 做成了 Skill，人人都能成为顶级网站设计师
 
-## Ch01.722 我把 Claude Design 做成了 Skill，人人都能成为顶级网站设计师
-
 > 📊 Level ⭐⭐ | 2.2KB | `entities/我把-claude-design-做成了-skill人人都能成为顶级网站设计师.md`
 
 # 我把 Claude Design 做成了 Skill，人人都能成为顶级网站设计师

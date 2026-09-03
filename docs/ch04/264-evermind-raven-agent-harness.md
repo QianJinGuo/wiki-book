@@ -1,7 +1,5 @@
 # EverMind Raven：自进化 Agent Harness 与数字生命框架
 
-## Ch04.264 EverMind Raven：自进化 Agent Harness 与数字生命框架
-
 > 📊 Level ⭐⭐ | 8.4KB | `entities/evermind-raven-self-evolving-agent-harness.md`
 
 # EverMind Raven：自进化 Agent Harness 与数字生命框架

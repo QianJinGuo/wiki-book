@@ -1,7 +1,5 @@
 # 别再手写 Skill 了！微软最新研究：像神经网络一样训练 Skill
 
-## Ch01.410 别再手写 Skill 了！微软最新研究：像神经网络一样训练 Skill
-
 > 📊 Level ⭐⭐ | 8.1KB | `entities/skillopt-microsoft-train-skill-like-neural-network.md`
 
 # 别再手写 Skill 了！微软最新研究：像神经网络一样训练 Skill

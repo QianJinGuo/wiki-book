@@ -1,7 +1,5 @@
 # Microsoft for Startups | Microsoft
 
-## Ch01.610 Microsoft for Startups | Microsoft
-
 > 📊 Level ⭐⭐ | 4.6KB | `entities/microsoft-startups.md`
 
 ## 核心要点
@@ -40,7 +38,7 @@ $1,000 → $150,000 的阶梯式解锁机制，本质上是将云厂商常见的
 ## 相关实体
 - [Finanser Retail Banking Broken](../ch04/257-ai.html)
 - [Microsoft For Startups Microsoft V2](387-microsoft-for-startups-microsoft.html)
-- [Microsoft Is Quietly Shopping For An Openai Replac](031-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
+- [Microsoft Is Quietly Shopping For An Openai Replac](033-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
 - [Microsoft For Startups Microsoft](387-microsoft-for-startups-microsoft.html)
 - [5Thingstoknowabouttheclarityact](https://github.com/QianJinGuo/wiki/blob/main/entities/5thingstoknowabouttheclarityact.md)
 

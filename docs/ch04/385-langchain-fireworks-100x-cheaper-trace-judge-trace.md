@@ -1,7 +1,5 @@
 # LangChain × Fireworks 100x Cheaper Trace Judge — 通用 trace 评估器
 
-## Ch04.385 LangChain × Fireworks 100x Cheaper Trace Judge — 通用 trace 评估器
-
 > 📊 Level ⭐⭐ | 4.8KB | `entities/langchain-100x-cheaper-trace-judge-fireworks.md`
 
 # LangChain × Fireworks 100x Cheaper Trace Judge — 通用 trace 评估器

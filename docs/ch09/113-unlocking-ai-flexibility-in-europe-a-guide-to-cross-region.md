@@ -1,7 +1,5 @@
 # Unlocking AI flexibility in Europe: A guide to cross-region inference for EU data processing and model access
 
-## Ch09.113 Unlocking AI flexibility in Europe: A guide to cross-region inference for EU data processing and model access
-
 > 📊 Level ⭐⭐ | 2.5KB | `entities/unlocking-ai-flexibility-in-europe-a-guide-to-cross-region-i.md`
 
 # Unlocking AI flexibility in Europe: A guide to cross-region inference for EU data processing and model access

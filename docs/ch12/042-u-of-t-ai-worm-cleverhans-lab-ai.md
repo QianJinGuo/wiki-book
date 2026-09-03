@@ -1,7 +1,5 @@
 # U of T AI Worm：CleverHans Lab 展示可自适应的 AI 蠕虫威胁
 
-## Ch12.042 U of T AI Worm：CleverHans Lab 展示可自适应的 AI 蠕虫威胁
-
 > 📊 Level ⭐⭐ | 9.0KB | `entities/u-of-t-ai-worm-cleverhans-research.md`
 
 # U of T AI Worm：CleverHans Lab 展示可自适应的 AI 蠕虫威胁

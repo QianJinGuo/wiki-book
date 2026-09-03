@@ -1,7 +1,5 @@
 # Codex 三件套：6 职位插件 + Sites + Annotations
 
-## Ch01.203 Codex 三件套：6 职位插件 + Sites + Annotations
-
 > 📊 Level ⭐⭐ | 15.4KB | `entities/codex-role-plugins-sites-annotations.md`
 
 # Codex 三件套：6 职位插件 + Sites + Annotations

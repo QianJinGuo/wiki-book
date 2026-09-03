@@ -1,7 +1,5 @@
 # LLM 缓存原理与实践：从 KV Cache 到 Prefix Caching，Agent 命中率常挂 90% 的机制与工程含义
 
-## Ch01.770 LLM 缓存原理与实践：从 KV Cache 到 Prefix Caching，Agent 命中率常挂 90% 的机制与工程含义
-
 > 📊 Level ⭐⭐⭐ | 5.6KB | `entities/llm-prefix-caching-comprehensive-guide.md`
 
 # LLM 缓存原理与实践

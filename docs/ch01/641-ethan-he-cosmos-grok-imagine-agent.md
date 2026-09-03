@@ -1,7 +1,5 @@
 # Ethan He：Cosmos Grok Imagine 潜空间视频 Agent
 
-## Ch01.641 Ethan He：Cosmos Grok Imagine 潜空间视频 Agent
-
 > 📊 Level ⭐⭐ | 3.3KB | `entities/ethan-he-cosmos-grok-imagine-latent-space-video-agent-20260606.md`
 
 # Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606
@@ -25,7 +23,7 @@
 
 - [Ai Friendly Architecture Design Taobao](../ch05/019-ai-friendly.html)
 - [Latest Open Artifacts 20 New Orgs New Types Of Models With N](647-latest-open-artifacts-20-new-orgs-new-types-of-models.html)
-- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](110-hy3-preview.html)
+- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](113-hy3-preview.html)
 - [Code As Agent Harness Survey](../ch09/044-code-as-agent-harness.html)
 - [Demis Hassabis Yc Interview Jiedaotixi](https://github.com/QianJinGuo/wiki/blob/main/entities/demis-hassabis-yc-interview-jiedaotixi.md)
 - [Ai Agent Harness Construction Akshay Baoyu](../ch05/035-agent-harness.html)

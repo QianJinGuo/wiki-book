@@ -1,7 +1,5 @@
 # optimize_anything: A Universal API for Optimizing any Text Parameter
 
-## Ch01.654 optimize_anything: A Universal API for Optimizing any Text Parameter
-
 > 📊 Level ⭐⭐ | 3.0KB | `entities/gepa-optimize-anything-universal-text-optimization.md`
 
 # optimize_anything: A Universal API for Optimizing any Text Parameter

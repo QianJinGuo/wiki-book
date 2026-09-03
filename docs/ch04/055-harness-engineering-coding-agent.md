@@ -1,7 +1,5 @@
 # Harness Engineering: 让 Coding Agent 可靠完成长程任务
 
-## Ch04.055 Harness Engineering: 让 Coding Agent 可靠完成长程任务
-
 > 📊 Level ⭐⭐ | 19.6KB | `entities/harness-engineering-让-coding-agent-可靠完成长程任务-v2.md`
 
 ## 相关实体

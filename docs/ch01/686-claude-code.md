@@ -1,7 +1,5 @@
 # Claude Code 团队成员亲述：动态工作流该怎么用（机器之心译本）
 
-## Ch01.686 Claude Code 团队成员亲述：动态工作流该怎么用（机器之心译本）
-
 > 📊 Level ⭐⭐ | 2.5KB | `entities/claude-code-dynamic-workflows-jiqizhixin-9th-translation.md`
 
 # Claude Code 团队成员亲述：动态工作流该怎么用（机器之心译本）

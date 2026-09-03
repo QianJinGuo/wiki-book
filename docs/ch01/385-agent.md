@@ -1,7 +1,5 @@
 # 让 Agent 自主完成任务
 
-## Ch01.385 让 Agent 自主完成任务
-
 > 📊 Level ⭐⭐ | 8.7KB | `entities/cli-anything-wechat-demo.md`
 
 # 让 Agent 自主完成任务

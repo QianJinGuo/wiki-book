@@ -1,7 +1,5 @@
 # Cohere North Mini Code -30B MoE Agentic Coding Model
 
-## Ch01.399 Cohere North Mini Code -30B MoE Agentic Coding Model
-
 > 📊 Level ⭐⭐ | 8.3KB | `entities/cohere-north-mini-code-agentic-coding-model.md`
 
 # Cohere North Mini Code —30B MoE Agentic Coding Model

@@ -1,7 +1,5 @@
 # 当公司变成Agent：AI 时代组织的 5 个反思 — 范凌访谈
 
-## Ch04.377 当公司变成Agent：AI 时代组织的 5 个反思 — 范凌访谈
-
 > 📊 Level ⭐⭐ | 5.0KB | `entities/fanling-company-as-agent-ai-org-reflection.md`
 
 # AI 时代组织的 5 个反思 — 范凌访谈

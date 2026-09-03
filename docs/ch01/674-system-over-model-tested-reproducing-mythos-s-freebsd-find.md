@@ -1,7 +1,5 @@
 # System Over Model, Tested: Reproducing Mythos’s FreeBSD Find on Local Open-Weight Models
 
-## Ch01.674 System Over Model, Tested: Reproducing Mythos’s FreeBSD Find on Local Open-Weight Models
-
 > 📊 Level ⭐⭐ | 2.7KB | `entities/system-over-model-tested-reproducing-mythoss-freebsd-find-on-20260606.md`
 
 # System Over Model, Tested: Reproducing Mythos’s FreeBSD Find on Local Open-Weight Models

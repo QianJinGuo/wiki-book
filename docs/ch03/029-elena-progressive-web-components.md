@@ -1,7 +1,5 @@
 # Elena | Progressive Web Components
 
-## Ch03.029 Elena | Progressive Web Components
-
 > 📊 Level ⭐ | 4.3KB | `entities/elena-progressive-web-components.md`
 
 ## 核心要点

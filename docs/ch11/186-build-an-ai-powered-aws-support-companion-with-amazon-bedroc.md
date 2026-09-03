@@ -1,7 +1,5 @@
 # Build an AI-powered AWS support companion with Amazon Bedrock AgentCore
 
-## Ch11.186 Build an AI-powered AWS support companion with Amazon Bedrock AgentCore
-
 > 📊 Level ⭐⭐ | 4.2KB | `entities/build-an-ai-powered-aws-support-companion-with-amazon-bedroc.md`
 
 # Build an AI-powered AWS support companion with Amazon Bedrock AgentCore

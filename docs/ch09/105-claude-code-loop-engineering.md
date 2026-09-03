@@ -1,7 +1,5 @@
 # 打造 Claude Code 可持续推进的工作流：Loop Engineering 完整上手攻略
 
-## Ch09.105 打造 Claude Code 可持续推进的工作流：Loop Engineering 完整上手攻略
-
 > 📊 Level ⭐⭐ | 4.2KB | `entities/loop-engineering-claude-code-sustainable-workflow.md`
 
 # 打造 Claude Code 可持续推进的工作流：Loop Engineering 完整上手攻略

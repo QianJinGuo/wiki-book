@@ -1,7 +1,5 @@
 # GLM-5 Scaling Pain 推理复盘
 
-## Ch09.121 GLM-5 Scaling Pain 推理复盘
-
 > 📊 Level ⭐⭐⭐⭐ | 11.4KB | `entities/glm5-scaling-pain.md`
 
 ## 概述

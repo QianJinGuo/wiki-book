@@ -1,7 +1,5 @@
 # Nvidia Extreme Co Design Agentic Systems
 
-## Ch04.030 Nvidia Extreme Co Design Agentic Systems
-
 > 📊 Level ⭐⭐ | 25.3KB | `entities/nvidia-extreme-co-design-agentic-systems.md`
 
 # Building for the Rising Complexity of Agentic Systems with Extreme Co&#x2d;Design | NVIDIA Technical Blog

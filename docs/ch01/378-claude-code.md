@@ -1,7 +1,5 @@
 # Claude Code 设计原则与对照分析
 
-## Ch01.378 Claude Code 设计原则与对照分析
-
 > 📊 Level ⭐⭐ | 8.8KB | `entities/claude-code-architecture-analysis.md`
 
 ## 五条系统设计原则

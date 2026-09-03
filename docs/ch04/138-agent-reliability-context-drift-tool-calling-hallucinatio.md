@@ -1,7 +1,5 @@
 # Agent Reliability: Context Drift & Tool Calling Hallucination
 
-## Ch04.138 Agent Reliability: Context Drift & Tool Calling Hallucination
-
 > 📊 Level ⭐⭐ | 12.5KB | `entities/agent-reliability-context-drift-tool-hallucination.md`
 
 ## 核心问题

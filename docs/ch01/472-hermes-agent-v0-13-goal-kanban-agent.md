@@ -1,7 +1,5 @@
 # Hermes Agent v0.13 — /goal 目标管理与 Kanban 多 agent 协作
 
-## Ch01.472 Hermes Agent v0.13 — /goal 目标管理与 Kanban 多 agent 协作
-
 > 📊 Level ⭐⭐ | 7.1KB | `entities/hermes-agent-goal-and-kanban.md`
 
 # Hermes Agent — /goal 目标管理与 Kanban 多 agent 协作

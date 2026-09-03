@@ -1,7 +1,5 @@
 # How my non-engineering team at Sentry learned to ship
 
-## Ch01.341 How my non-engineering team at Sentry learned to ship
-
 > 📊 Level ⭐⭐ | 9.7KB | `entities/how-my-non-engineering-team-at-sentry-learned-to-ship-20260606.md`
 
 # How my non-engineering team at Sentry learned to ship

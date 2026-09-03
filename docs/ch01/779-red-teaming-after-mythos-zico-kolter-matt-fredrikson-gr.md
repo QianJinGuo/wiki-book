@@ -1,7 +1,5 @@
 # Red-Teaming after Mythos — Zico Kolter & Matt Fredrikson, Gray Swan
 
-## Ch01.779 Red-Teaming after Mythos — Zico Kolter & Matt Fredrikson, Gray Swan
-
 > 📊 Level ⭐⭐⭐⭐ | 6.6KB | `entities/latent-space-p-gray-swan.md`
 
 # Red-Teaming after Mythos — Gray Swan

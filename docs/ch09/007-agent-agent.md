@@ -1,7 +1,5 @@
 # 业务 Agent 增强层架构：复用通用 Agent 基座，把业务能力做成可验证增强层
 
-## Ch09.007 业务 Agent 增强层架构：复用通用 Agent 基座，把业务能力做成可验证增强层
-
 > 📊 Level ⭐⭐ | 27.0KB | `entities/business-agent-augmentation-layer-practitioner-methodology-20260606.md`
 
 ## 概述

@@ -1,7 +1,5 @@
 # 滴滴 IBG 智能客服质检系统：3 管线（意图 86% / 合规 90%+ / VOC）+ 企业 LLM 落地方法论
 
-## Ch01.147 滴滴 IBG 智能客服质检系统：3 管线（意图 86% / 合规 90%+ / VOC）+ 企业 LLM 落地方法论
-
 > 📊 Level ⭐⭐ | 28.5KB | `entities/didi-ibg-customer-experience-llm-quality-inspection-3-pipelines.md`
 
 # 滴滴 IBG 智能客服质检系统
@@ -21,7 +19,7 @@
 - [Multilingual Ai](../ch04/257-ai.html)
 - [Eagle 3 Speculative Decoding Optimization](https://github.com/QianJinGuo/wiki/blob/main/entities/eagle-3-speculative-decoding-optimization.md)
 - [Didi Eagle 3 Speculative Decoding Agents](../ch09/038-coding-agent.html)
-- [Be More Expressive To Close More Sales](086-be-more-expressive-to-close-more-sales.html)
+- [Be More Expressive To Close More Sales](089-be-more-expressive-to-close-more-sales.html)
 - [Datacomp For Language Models](https://github.com/QianJinGuo/wiki/blob/main/entities/datacomp-for-language-models.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/didi-ibg-customer-experience-llm-quality-inspection-3-pipelines.md)

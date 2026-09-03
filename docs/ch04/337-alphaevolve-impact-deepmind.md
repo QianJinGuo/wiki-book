@@ -1,7 +1,5 @@
 # Alphaevolve Impact Deepmind
 
-## Ch04.337 Alphaevolve Impact Deepmind
-
 > 📊 Level ⭐⭐ | 6.6KB | `entities/alphaevolve-impact-deepmind.md`
 
 # AlphaEvolve: Gemini-powered coding agent scaling impact across fields — Google DeepMind Skip to main

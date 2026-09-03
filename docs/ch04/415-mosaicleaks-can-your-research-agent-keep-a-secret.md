@@ -1,7 +1,5 @@
 # MosaicLeaks: Can your research agent keep a secret?
 
-## Ch04.415 MosaicLeaks: Can your research agent keep a secret?
-
 > 📊 Level ⭐⭐ | 3.7KB | `entities/mosaicleaks-privacy-risks-deep-research-agents-servicenow.md`
 
 # MosaicLeaks: Can your research agent keep a secret?

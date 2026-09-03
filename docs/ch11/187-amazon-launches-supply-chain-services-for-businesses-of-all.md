@@ -1,7 +1,5 @@
 # Amazon launches Supply Chain Services for businesses of all sizes
 
-## Ch11.187 Amazon launches Supply Chain Services for businesses of all sizes
-
 > 📊 Level ⭐⭐ | 4.1KB | `entities/amazon-supply-chain-services.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-supply-chain-services.md)
@@ -42,7 +40,7 @@ ASCS 三大模块——Move（全球 freight 网络）、Store（warehouse + 第
 #amazon #logistics #supply-chain #ecommerce
 ## 相关实体
 - [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For ](124-restrict-access-to-sensitive-documents-in-your-amazon-quick.html)
-- [Announcing Aws Cdk Mixins Composable Abstractions For Aws Resources Amazon Web S](../ch01/043-announcing-aws-cdk-mixins-composable-abstractions-for-aws-r.html)
+- [Announcing Aws Cdk Mixins Composable Abstractions For Aws Resources Amazon Web S](../ch01/045-announcing-aws-cdk-mixins-composable-abstractions-for-aws-r.html)
 - [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](../ch12/050-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes.html)
 - [Introducing Claude Platform On Aws](../ch01/365-introducing-claude-platform-on-aws-anthropic-s-native-platf.html)
 - [Announcing Openai Compatible Api Support For Amazon Sagemaker](../ch01/515-announcing-openai-compatible-api-support-for-amazon-sagemake.html)

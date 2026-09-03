@@ -1,7 +1,5 @@
 # New legal questions: agentic pen testing
 
-## Ch04.256 New legal questions: agentic pen testing
-
 > 📊 Level ⭐⭐ | 8.5KB | `entities/agentic-penetration-testing-legal-questions.md`
 
 # New legal questions: agentic pen testing

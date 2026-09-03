@@ -1,7 +1,5 @@
 # Nvidia Gemma 4 Edge AI
 
-## Ch01.525 Nvidia Gemma 4 Edge AI
-
 > 📊 Level ⭐⭐ | 6.3KB | `entities/nvidia-gemma-4-edge-ai.md`
 
 # Bringing AI Closer to the Edge and On&#x2d;Device with Gemma 4 | NVIDIA Technical Blog

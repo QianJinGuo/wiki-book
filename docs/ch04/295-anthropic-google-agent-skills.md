@@ -1,7 +1,5 @@
 # 从 Anthropic 到 Google：Agent Skills 正在进入\"设计模式\"阶段
 
-## Ch04.295 从 Anthropic 到 Google：Agent Skills 正在进入\"设计模式\"阶段
-
 > 📊 Level ⭐⭐ | 7.8KB | `entities/cong-anthropic-dao-googleagent-skills-zhengzai-jinru-sheji-moshi-jieduan.md`
 
 # 从 Anthropic 到 Google：Agent Skills 正在进入"设计模式"阶段

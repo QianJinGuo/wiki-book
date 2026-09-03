@@ -1,7 +1,5 @@
 # Claude Code 七大模块详解
 
-## Ch01.377 Claude Code 七大模块详解
-
 > 📊 Level ⭐⭐ | 8.8KB | `entities/claude-code-architecture-modules.md`
 
 ### 1. 入口与启动链路

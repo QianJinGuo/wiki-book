@@ -1,7 +1,5 @@
 # How Claude Code works in large codebases: Best practices and where to start
 
-## Ch09.011 How Claude Code works in large codebases: Best practices and where to start
-
 > 📊 Level ⭐⭐ | 20.9KB | `entities/how_claude_code_works_in_large_codebases.md`
 
 ## 核心要点

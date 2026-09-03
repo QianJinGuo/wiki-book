@@ -1,7 +1,5 @@
 # Anthropic Acquires Stainless
 
-## Ch04.332 Anthropic Acquires Stainless
-
 > 📊 Level ⭐⭐ | 7.0KB | `entities/anthropic-acquires-stainless.md`
 
 # Anthropic Acquires Stainless

@@ -1,7 +1,5 @@
 # Hermes Agent自我进化机制与OpenClaw对比
 
-## Ch09.090 Hermes Agent自我进化机制与OpenClaw对比
-
 > 📊 Level ⭐⭐ | 6.2KB | `entities/hermes-agent-self-evolution-tengxun.md`
 
 ## 核心观点

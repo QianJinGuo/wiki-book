@@ -1,7 +1,5 @@
 # Claude Dispatch and the Power of Interfaces
 
-## Ch01.371 Claude Dispatch and the Power of Interfaces
-
 > 📊 Level ⭐⭐ | 8.9KB | `entities/claude-dispatch-and-the-power-of-interfaces.md`
 
 # Claude Dispatch and the Power of Interfaces

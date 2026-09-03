@@ -1,7 +1,5 @@
 # The Inference Shift
 
-## Ch01.752 The Inference Shift
-
 > 📊 Level ⭐⭐⭐ | 12.3KB | `entities/the-inference-shift.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-inference-shift.md)
@@ -13,7 +11,7 @@
 > [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-model-research-latest-directions.md)
 
 - [How to Calculate the Inference Efficiency Ratio](https://github.com/QianJinGuo/wiki/blob/main/entities/how-to-calculate-the-inference-efficiency-ratio.md)
-- [From Doer To Director: The AI Mindset Shift](027-from-doer-to-director-the-ai-mindset-shift.html)
+- [From Doer To Director: The AI Mindset Shift](029-from-doer-to-director-the-ai-mindset-shift.html)
 
 - [ai芯片架构：从逻辑门到矩阵乘法](../ch04/257-ai.html)
 

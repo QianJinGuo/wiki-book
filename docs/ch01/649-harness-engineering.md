@@ -1,7 +1,5 @@
 # 深入浅出 Harness Engineering 之核心模式与理念
 
-## Ch01.649 深入浅出 Harness Engineering 之核心模式与理念
-
 > 📊 Level ⭐⭐ | 3.1KB | `entities/harness-engineering-core-patterns-claude-code.md`
 
 # 深入浅出 Harness Engineering 之核心模式与理念

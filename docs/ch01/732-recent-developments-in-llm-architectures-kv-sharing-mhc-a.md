@@ -1,7 +1,5 @@
 # Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention（机器之心中文全文）
 
-## Ch01.732 Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention（机器之心中文全文）
-
 > 📊 Level ⭐⭐⭐ | 32.7KB | `entities/recent-developments-in-llm-architectures-jiqizhixin.md`
 
 # Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention（机器之心中文全文）
@@ -44,7 +42,7 @@ DeepSeek V4 的 CSA/HCA 压缩的是序列维度本身（每 128 token 压缩为
 5. **警惕过度复杂化**：从 GPT-2 到 DeepSeek V4，Attention 变体的代码复杂度增长了约 10 倍，在生产引入新架构变体时需权衡实现维护成本与效率收益。
 
 ## 相关实体
-- [Recent Developments In Llm Architectures Kv Sharing Mhc And Compressed Attention](046-recent-developments-in-llm-architectures-kv-sharing-mhc-a.html)
+- [Recent Developments In Llm Architectures Kv Sharing Mhc And Compressed Attention](049-recent-developments-in-llm-architectures-kv-sharing-mhc-a.html)
 - [Recent_Developments_In_Llm_Architectures](451-llm.html)
 - [Memory In The Llm Era Iclr2026](451-llm.html)
 - [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](470-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)

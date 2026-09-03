@@ -1,7 +1,5 @@
 # Page not found | Microsoft Copilot Blog
 
-## Ch04.392 Page not found | Microsoft Copilot Blog
-
 > 📊 Level ⭐⭐ | 4.4KB | `entities/new-and-improved-agent-governance-intelligent-workflows-connected-app-exp.md`
 
 # Page not found | Microsoft Copilot Blog

@@ -1,7 +1,5 @@
 # Harness如何支撑Agent在生产环境稳定运行？
 
-## Ch04.112 Harness如何支撑Agent在生产环境稳定运行？
-
 > 📊 Level ⭐⭐ | 14.2KB | `entities/harness-production-agent-engineering-deficit.md`
 
 ## 核心概念：工程赤字（Engineering Deficit）

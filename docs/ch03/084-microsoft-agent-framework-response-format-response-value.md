@@ -1,7 +1,5 @@
 # Microsoft Agent Framework 结构化输出：response_format 与 response.value
 
-## Ch03.084 Microsoft Agent Framework 结构化输出：response_format 与 response.value
-
 > 📊 Level ⭐⭐ | 5.8KB | `entities/microsoft-agent-framework-structured-output.md`
 
 ## 核心问题

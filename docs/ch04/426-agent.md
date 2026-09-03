@@ -1,7 +1,5 @@
 # Agent核心技术概念与范式发生了哪些演变以及背后的思考
 
-## Ch04.426 Agent核心技术概念与范式发生了哪些演变以及背后的思考
-
 > 📊 Level ⭐⭐ | 2.8KB | `entities/agent-paradigm-evolution-feipeng-alibaba.md`
 
 # Agent核心技术概念与范式发生了哪些演变以及背后的思考

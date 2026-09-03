@@ -1,7 +1,5 @@
 # Harness 工程 14 步路线图：从单 Agent 到自改进系统
 
-## Ch04.331 Harness 工程 14 步路线图：从单 Agent 到自改进系统
-
 > 📊 Level ⭐⭐ | 7.0KB | `entities/harness-engineering-14-step-roadmap.md`
 
 # Harness 工程 14 步路线图

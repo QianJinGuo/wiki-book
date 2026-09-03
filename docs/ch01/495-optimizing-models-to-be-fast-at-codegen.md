@@ -1,7 +1,5 @@
 # Optimizing Models to Be Fast at Codegen
 
-## Ch01.495 Optimizing Models to Be Fast at Codegen
-
 > 📊 Level ⭐⭐ | 6.9KB | `entities/morphllm-codegen-inference-optimization.md`
 
 # Optimizing Models to Be Fast at Codegen

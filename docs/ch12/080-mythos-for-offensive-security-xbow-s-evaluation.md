@@ -1,7 +1,5 @@
 # Mythos for Offensive Security: XBOW's Evaluation
 
-## Ch12.080 Mythos for Offensive Security: XBOW's Evaluation
-
 > 📊 Level ⭐⭐ | 6.0KB | `entities/mythos-for-offensive-security-xbows-evaluation.md`
 
 ## 深度分析
@@ -24,7 +22,7 @@
 - [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
 - [Introducing Aimap Security Testing For Ai Agent Bishop Fox](../ch04/312-ai-agent.html)
 - [Offensive Security Blog](006-offensive-security-blog.html)
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch01/038-akamai-acquires-israeli-ai-browser-security-startup-layerx-f.html)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](../ch01/040-akamai-acquires-israeli-ai-browser-security-startup-layerx-f.html)
 
 ---
 

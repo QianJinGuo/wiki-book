@@ -1,7 +1,5 @@
 # Qwen Code Skill Testing Framework: Recording, Playback, and Assertions
 
-## Ch01.240 Qwen Code Skill Testing Framework: Recording, Playback, and Assertions
-
 > 📊 Level ⭐⭐ | 13.5KB | `entities/qwen-code-skill-testing-framework-issue-2447.md`
 
 ## 背景与动机

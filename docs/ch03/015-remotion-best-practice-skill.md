@@ -1,7 +1,5 @@
 # 第一步：安装 Remotion Best Practice Skill
 
-## Ch03.015 第一步：安装 Remotion Best Practice Skill
-
 > 📊 Level ⭐ | 7.9KB | `entities/skill-complete-guide-alibaba.md`
 
 # 第一步：安装 Remotion Best Practice Skill

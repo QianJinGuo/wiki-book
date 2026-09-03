@@ -1,7 +1,5 @@
 # 面向大型代码库的 Claude Code 团队落地经验与扩展策略（Agent Harness）
 
-## Ch01.679 面向大型代码库的 Claude Code 团队落地经验与扩展策略（Agent Harness）
-
 > 📊 Level ⭐⭐ | 2.6KB | `entities/claude-code-large-codebase-agent-harness-13-patterns-tuutuiagi.md`
 
 # 面向大型代码库的 Claude Code 团队落地经验与扩展策略（Agent Harness）

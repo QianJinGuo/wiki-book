@@ -1,7 +1,5 @@
 # Gene/GEP — EvoMap×清华 提出的「策略基因」经验对象框架（arXiv 2604.15097）
 
-## Ch09.010 Gene/GEP — EvoMap×清华 提出的「策略基因」经验对象框架（arXiv 2604.15097）
-
 > 📊 Level ⭐⭐ | 21.9KB | `entities/gene-gep-evomap-qinghua-strategy-genes-arxiv-2604-15097-2026.md`
 
 ## 核心定位

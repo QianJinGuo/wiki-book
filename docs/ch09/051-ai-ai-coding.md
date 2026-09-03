@@ -1,7 +1,5 @@
 # 天猫AI助手调度框架重构与AI Coding工程化
 
-## Ch09.051 天猫AI助手调度框架重构与AI Coding工程化
-
 > 📊 Level ⭐⭐ | 10.2KB | `entities/tmall-ai-assistant-scheduler-refactor-ai-coding-engineering-2026.md`
 
 # 天猫AI助手调度框架重构与AI Coding工程化

@@ -1,7 +1,5 @@
 # 阿里云 AgentLoop：企业级智能体自进化飞轮（4 环闭环 + LoongSuite 84% 字段覆盖 + Trace2Dataset 90% 节省 + Agent-as-a-Judge 90% 一致 + 记忆库/经验库）
 
-## Ch04.440 阿里云 AgentLoop：企业级智能体自进化飞轮（4 环闭环 + LoongSuite 84% 字段覆盖 + Trace2Dataset 90% 节省 + Agent-as-a-Judge 90% 一致 + 记忆库/经验库）
-
 > 📊 Level ⭐⭐⭐ | 36.5KB | `entities/aliyun-agentloop-enterprise-agent-self-evolution-flywheel.md`
 
 # 阿里云 AgentLoop：企业级智能体自进化飞轮

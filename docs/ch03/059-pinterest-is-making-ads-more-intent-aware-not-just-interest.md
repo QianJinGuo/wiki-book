@@ -1,7 +1,5 @@
 # Pinterest Is Making Ads More Intent-Aware, Not Just Interest
 
-## Ch03.059 Pinterest Is Making Ads More Intent-Aware, Not Just Interest
-
 > 📊 Level ⭐⭐ | 10.2KB | `entities/pinterest-intent-aware-ads-wersm.md`
 
 ## 核心要点

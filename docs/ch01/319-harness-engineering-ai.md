@@ -1,7 +1,5 @@
 # Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统
 
-## Ch01.319 Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统
-
 > 📊 Level ⭐⭐ | 10.4KB | `entities/harness-engineering实践做了一个平台让ai一晚上自动评测和优化你的系统.md`
 
 ## 核心要点

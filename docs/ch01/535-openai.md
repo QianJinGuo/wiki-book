@@ -1,7 +1,5 @@
 # OpenAI发布新一代实时语音模型，能够像人说话一样进行推理、翻译和转录
 
-## Ch01.535 OpenAI发布新一代实时语音模型，能够像人说话一样进行推理、翻译和转录
-
 > 📊 Level ⭐⭐ | 6.2KB | `entities/openai发布新一代实时语音模型能够像人说话一样进行推理翻译和转录.md`
 
 # OpenAI发布新一代实时语音模型，能够像人说话一样进行推理、翻译和转录
@@ -15,7 +13,7 @@ OpenAI今天在API中推出三款全新音频模型，面向开发者开放。
 - [Aliyun Agentrun 2Line Integration](../ch04/290-agentrun.html)
 - [Pi Mono Github](474-github.html)
 - [2 Year 25 Ai Projects Summary](692-5-ai.html)
-- [Openai Realtime Api Architecture](102-openai-realtime-api.html)
+- [Openai Realtime Api Architecture](105-openai-realtime-api.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai发布新一代实时语音模型能够像人说话一样进行推理翻译和转录.md)
 

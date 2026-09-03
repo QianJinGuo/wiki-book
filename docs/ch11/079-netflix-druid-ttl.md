@@ -1,7 +1,5 @@
 # Netflix Druid 区间感知缓存：指数 TTL + 分桶查询去重
 
-## Ch11.079 Netflix Druid 区间感知缓存：指数 TTL + 分桶查询去重
-
 > 📊 Level ⭐⭐ | 10.1KB | `entities/netflix-druid-interval-aware-caching.md`
 
 # Netflix Druid 区间感知缓存：指数 TTL + 分桶查询去重

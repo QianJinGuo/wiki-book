@@ -1,7 +1,5 @@
 # 让 AI 代理自己付钱：基于 Amazon Bedrock AgentCore 与 x402 的 Agentic Payment
 
-## Ch11.073 让 AI 代理自己付钱：基于 Amazon Bedrock AgentCore 与 x402 的 Agentic Payment
-
 > 📊 Level ⭐⭐ | 10.3KB | `entities/agentic-payment-x402-bedrock-agentcore.md`
 
 # 让 AI 代理自己付钱：基于 Amazon Bedrock AgentCore 与 x402 的 Agentic Payment

@@ -1,7 +1,5 @@
 # Okta AI Agent Governance - FedRAMP/HIPAA Compliance Boundary Agent Lifecycle Management
 
-## Ch04.360 Okta AI Agent Governance - FedRAMP/HIPAA Compliance Boundary Agent Lifecycle Management
-
 > 📊 Level ⭐⭐ | 5.7KB | `entities/okta-ai-agents-fedramp.md`
 
 # Okta AI Agent Governance - FedRAMP/HIPAA Compliance Boundary Agent Lifecycle Management

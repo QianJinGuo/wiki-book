@@ -1,7 +1,5 @@
 # 为什么 Agent 时代大家都在做 CLI——CLI/MCP/SKILL 三层模型与 AI 友好设计
 
-## Ch04.268 为什么 Agent 时代大家都在做 CLI——CLI/MCP/SKILL 三层模型与 AI 友好设计
-
 > 📊 Level ⭐⭐ | 8.3KB | `entities/why-cli-agent-era-alibaba-tech.md`
 
 # 为什么 Agent 时代大家都在做 CLI——CLI/MCP/SKILL 三层模型与 AI 友好设计

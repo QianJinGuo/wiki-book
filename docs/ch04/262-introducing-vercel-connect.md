@@ -1,7 +1,5 @@
 # Introducing Vercel Connect
 
-## Ch04.262 Introducing Vercel Connect
-
 > 📊 Level ⭐⭐ | 8.4KB | `entities/introducing-vercel-connect.md`
 
 # Introducing Vercel Connect

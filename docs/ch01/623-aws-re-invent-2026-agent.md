@@ -1,7 +1,5 @@
 # AWS re:Invent 2026 Agent 技术要点
 
-## Ch01.623 AWS re:Invent 2026 Agent 技术要点
-
 > 📊 Level ⭐⭐ | 3.9KB | `entities/e9ffy3r5kwa1ja5pywbbrg.md`
 
 # E9Ffy3R5Kwa1Ja5Pywbbrg
@@ -54,7 +52,7 @@ DeepSeek上线识图模式并开始灰测，网页版和App均可体验，标志
 
 - [Hermes Agent V014 Architecture Shugex](../ch04/161-hermes-agent.html)
 - [Latest Open Artifacts 20 New Orgs New Types Of Models With N](647-latest-open-artifacts-20-new-orgs-new-types-of-models.html)
-- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](110-hy3-preview.html)
+- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](113-hy3-preview.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch04/176-openclaw.html)
 - [Deepseek V4 Training 58 Page Paper Deep Dive](459-deepseek-v4.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04/176-openclaw.html)

@@ -1,7 +1,5 @@
 # SchemaFlow: Agentic Database Change Impact Analysis, SQL Generation, and Eval Guardrails
 
-## Ch04.339 SchemaFlow: Agentic Database Change Impact Analysis, SQL Generation, and Eval Guardrails
-
 > 📊 Level ⭐⭐ | 6.6KB | `entities/schemaflow-agentic-database-sql-generation-openai-cookbook.md`
 
 # SchemaFlow: Agentic Database Change Impact Analysis, SQL Generation, and Eval Guardrails

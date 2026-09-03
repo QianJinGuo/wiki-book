@@ -1,7 +1,5 @@
 # 从零设计准生产级 LLM Agent：ThinkingAgent 完整架构与可靠性体系
 
-## Ch04.076 从零设计准生产级 LLM Agent：ThinkingAgent 完整架构与可靠性体系
-
 > 📊 Level ⭐⭐ | 16.7KB | `entities/thinkingagent-from-scratch-reliability-context-recovery-2026-06-02.md`
 
 # 从零设计准生产级 LLM Agent：ThinkingAgent 完整架构与可靠性体系

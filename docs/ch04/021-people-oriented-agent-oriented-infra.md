@@ -1,7 +1,5 @@
 # 晓斌：从 People-Oriented 到 Agent-Oriented Infra —— 意图驱动 + 代码沉淀的进化体
 
-## Ch04.021 晓斌：从 People-Oriented 到 Agent-Oriented Infra —— 意图驱动 + 代码沉淀的进化体
-
 > 📊 Level ⭐⭐ | 30.1KB | `entities/agent-oriented-infra-intent-driven-code-sedimentation.md`
 
 # 晓斌：从 People-Oriented 到 Agent-Oriented Infra

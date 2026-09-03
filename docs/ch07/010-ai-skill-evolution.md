@@ -1,7 +1,5 @@
 # ai-skill-evolution底层逻辑
 
-## Ch07.010 ai-skill-evolution底层逻辑
-
 > 📊 Level ⭐⭐ | 20.1KB | `entities/ai-skill-evolution底层逻辑.md`
 
 [Ai Skill Evolution底层逻辑](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-skill-evolution底层逻辑.md)

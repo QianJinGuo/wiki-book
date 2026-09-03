@@ -1,7 +1,5 @@
 # FastContext（微软开源 Coding Agent 仓库探索子代理）
 
-## Ch09.117 FastContext（微软开源 Coding Agent 仓库探索子代理）
-
 > 📊 Level ⭐⭐⭐ | 12.4KB | `entities/microsoft-fastcontext-coding-agent-explore-subagent-vibecoder.md`
 
 # FastContext（微软开源 Coding Agent 仓库探索子代理）

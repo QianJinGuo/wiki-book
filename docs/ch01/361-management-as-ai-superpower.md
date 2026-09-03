@@ -1,7 +1,5 @@
 # Management as AI superpower
 
-## Ch01.361 Management as AI superpower
-
 > 📊 Level ⭐⭐ | 9.1KB | `entities/management-as-ai-superpower.md`
 
 # Management as AI superpower

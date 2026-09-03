@@ -1,7 +1,5 @@
 # 从 CPU 到 GPU 全链路可信，百度智能云新一代 AI 机密计算实例的探索与落地
 
-## Ch01.733 从 CPU 到 GPU 全链路可信，百度智能云新一代 AI 机密计算实例的探索与落地
-
 > 📊 Level ⭐⭐⭐ | 31.9KB | `entities/从-cpu-到-gpu-全链路可信百度智能云新一代-ai-机密计算实例的探索与落地.md`
 
 [从 Cpu 到 Gpu 全链路可信百度智能云新一代 Ai 机密计算实例的探索与落地](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/从-cpu-到-gpu-全链路可信百度智能云新一代-ai-机密计算实例的探索与落地.md)

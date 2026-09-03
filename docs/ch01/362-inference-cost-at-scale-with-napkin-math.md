@@ -1,7 +1,5 @@
 # Inference cost at scale with napkin math
 
-## Ch01.362 Inference cost at scale with napkin math
-
 > 📊 Level ⭐⭐ | 9.1KB | `entities/napkin-inference-cost-injuly-2026.md`
 
 # Inference cost at scale with napkin math
@@ -116,7 +114,7 @@ For serving at scale, data parallelism (multiple independent model replicas) is 
 ## Related Entities
 
 - [Apple Silicon costs more than OpenRouter](451-llm.html)
-- [Microsoft Is Quietly Shopping For An Openai Replac](031-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
+- [Microsoft Is Quietly Shopping For An Openai Replac](033-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
 - [Vietnamtodevelopdomesticcloud](668-opd.html)
 
 ---

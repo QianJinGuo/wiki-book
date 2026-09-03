@@ -1,7 +1,5 @@
 # Building effective human-agent teams
 
-## Ch04.411 Building effective human-agent teams
-
 > 📊 Level ⭐⭐ | 3.8KB | `entities/anthropic-building-effective-human-agent-teams.md`
 
 # Building effective human-agent teams

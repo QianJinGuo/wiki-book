@@ -1,7 +1,5 @@
 # Skill 产品哲学：歸藏做了爆款 Skill 后的产品反思
 
-## Ch07.014 Skill 产品哲学：歸藏做了爆款 Skill 后的产品反思
-
 > 📊 Level ⭐⭐ | 16.7KB | `entities/skill-product-philosophy-guicang-爆款经验-2026-06-12.md`
 
 # Skill 产品哲学：歸藏做了爆款 Skill 后的产品反思

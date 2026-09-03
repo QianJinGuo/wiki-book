@@ -1,7 +1,5 @@
 # Amazon Nova Forge 域定制超参调优：艺术与科学
 
-## Ch11.049 Amazon Nova Forge 域定制超参调优：艺术与科学
-
 > 📊 Level ⭐⭐ | 11.6KB | `entities/amazon-nova-forge-hyperparameter-tuning-art-science.md`
 
 # Amazon Nova Forge 域定制超参调优：艺术与科学

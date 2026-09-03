@@ -1,7 +1,5 @@
 # SkillSieve：Agent Skill 安全检测三层框架
 
-## Ch04.335 SkillSieve：Agent Skill 安全检测三层框架
-
 > 📊 Level ⭐⭐ | 6.7KB | `entities/skillsieve-agent-skill-security.md`
 
 # SkillSieve：Agent Skill 安全检测三层框架

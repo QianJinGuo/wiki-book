@@ -1,7 +1,5 @@
 # DeepSeek Code Harness：对标 Claude Code 的中国方案
 
-## Ch01.360 DeepSeek Code Harness：对标 Claude Code 的中国方案
-
 > 📊 Level ⭐⭐ | 9.1KB | `entities/deepseek-code-harness-competitor-tina.md`
 
 # DeepSeek Code Harness：对标 Claude Code 的中国方案

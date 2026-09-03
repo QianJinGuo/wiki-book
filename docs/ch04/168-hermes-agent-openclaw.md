@@ -1,7 +1,5 @@
 # Hermes Agent 为什么火了？和 OpenClaw 龙虾比一比
 
-## Ch04.168 Hermes Agent 为什么火了？和 OpenClaw 龙虾比一比
-
 > 📊 Level ⭐⭐ | 11.4KB | `entities/hermes-agent-vs-openclaw-comparison.md`
 
 ## 一句话格局定位

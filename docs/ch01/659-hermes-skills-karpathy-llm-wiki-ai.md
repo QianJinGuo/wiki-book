@@ -1,7 +1,5 @@
 # 手把手：用 Hermes Skills + Karpathy 的 LLM Wiki 让 AI 越用越懂你
 
-## Ch01.659 手把手：用 Hermes Skills + Karpathy 的 LLM Wiki 让 AI 越用越懂你
-
 > 📊 Level ⭐⭐ | 2.9KB | `entities/hermes-skills-llm-wiki-self-improving-knowledge-system.md`
 
 # 手把手：用 Hermes Skills + Karpathy 的 LLM Wiki 让 AI 越用越懂你

@@ -1,7 +1,5 @@
 # AI Agent Skill 系统设计：淘宝技术工程实践
 
-## Ch04.329 AI Agent Skill 系统设计：淘宝技术工程实践
-
 > 📊 Level ⭐⭐ | 7.0KB | `entities/skill-system-design-taobao-technology-2026.md`
 
 # AI Agent Skill 系统设计：淘宝技术工程实践

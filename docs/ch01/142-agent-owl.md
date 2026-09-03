@@ -1,7 +1,5 @@
 # Agent框架OWL原理详解
 
-## Ch01.142 Agent框架OWL原理详解
-
 > 📊 Level ⭐⭐ | 38.6KB | `entities/agent框架owl原理详解.md`
 
 [Agent框架Owl原理详解](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent框架owl原理详解.md)

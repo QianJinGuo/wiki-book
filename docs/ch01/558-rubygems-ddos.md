@@ -1,7 +1,5 @@
 # RubyGems 暂停新用户注册：DDoS + 恶意包供应链攻击事件
 
-## Ch01.558 RubyGems 暂停新用户注册：DDoS + 恶意包供应链攻击事件
-
 > 📊 Level ⭐⭐ | 5.7KB | `entities/rubygems-temp-disable-registrations.md`
 
 # RubyGems 暂停新用户注册：DDoS + 恶意包供应链攻击事件

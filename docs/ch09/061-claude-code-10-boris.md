@@ -1,7 +1,5 @@
 # Claude Code团队10个使用技巧（Boris二刷）
 
-## Ch09.061 Claude Code团队10个使用技巧（Boris二刷）
-
 > 📊 Level ⭐⭐ | 8.8KB | `entities/claude-code-team-10-tips-boris.md`
 
 ## 核心命题

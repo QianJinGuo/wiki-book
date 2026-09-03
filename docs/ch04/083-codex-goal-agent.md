@@ -1,7 +1,5 @@
 # Codex /goal：长任务Agent的目标运行时
 
-## Ch04.083 Codex /goal：长任务Agent的目标运行时
-
 > 📊 Level ⭐⭐ | 16.0KB | `entities/codex-goal-agent-runtime.md`
 
 ## 核心论点

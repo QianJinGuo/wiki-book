@@ -1,7 +1,5 @@
 # 读完这篇，你就搞懂 DeepSeek v4 了
 
-## Ch01.708 读完这篇，你就搞懂 DeepSeek v4 了
-
 > 📊 Level ⭐⭐ | 2.3KB | `entities/读完这篇你就搞懂-deepseek-v4-了.md`
 
 # 读完这篇，你就搞懂 DeepSeek v4 了

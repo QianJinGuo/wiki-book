@@ -1,7 +1,5 @@
 # N-Day Research with AI: Using Ollama and n8n | Nikhil&#x27;s Cybersec Blog
 
-## Ch01.493 N-Day Research with AI: Using Ollama and n8n | Nikhil&#x27;s Cybersec Blog
-
 > 📊 Level ⭐⭐ | 6.9KB | `entities/ghostbyt3-github-io-blog-nday-research-ai.md`
 
 # "N-Day Research with AI: Using Ollama and n8n | Nikhil&#x27;s Cybersec Blog"

@@ -1,7 +1,5 @@
 # Three Years from GPT-3 to Gemini 3
 
-## Ch01.193 Three Years from GPT-3 to Gemini 3
-
 > 📊 Level ⭐⭐ | 16.5KB | `entities/three-years-from-gpt-3-to-gemini-3.md`
 
 # Three Years from GPT-3 to Gemini 3
@@ -197,7 +195,7 @@ Human-in-the-loop 的角色在演变，团队需要相应升级：
 - [AI Agent Harness 构建](../ch05/035-agent-harness.html)
 - [Harness 状态边界与失败闭环](../ch05/008-harness.html)
 - [Agent Vibecoder 上下文压缩](../ch03/004-agent.html)
-- [腾讯混元 HY3 开源预览](110-hy3-preview.html)
+- [腾讯混元 HY3 开源预览](113-hy3-preview.html)
 - [Agent 记忆系统工程实践](../ch03/004-agent.html)
 
 ---

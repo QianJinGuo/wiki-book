@@ -1,7 +1,5 @@
 # 20VC x SaaStr: The Most Aggressive Quarter in American Capitalism, Palantir's Ru
 
-## Ch01.010 20VC x SaaStr: The Most Aggressive Quarter in American Capitalism, Palantir's Ru
-
 > 📊 Level ⭐ | 11.5KB | `entities/saastr-20vc-most-aggressive-quarter-american-capitalism-palantir.md`
 
 ## 核心要点
@@ -65,7 +63,7 @@ Sierra 以 $150M ARR 估值 $15.8B，105x 收入倍数。Brett Taylor（OpenAI �
 
 ## 相关实体
 
-- [How Superset built the IDE for AI agents on Vercel](071-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
+- [How Superset built the IDE for AI agents on Vercel](074-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
 - [Toto 2.0: Time series forecasting enters the scaling era](../ch11/143-toto-2-context-aware-log-analytics-for-complex-distributed.html)
 - [Public Stealth Leaves Opportunity on the Table](https://github.com/QianJinGuo/wiki/blob/main/entities/thisisgoingtobebig-public-stealth.md)
 - [Https Posthog Com Blog Karpathy Autoresearch Query Engine Bug](672-karpathy-autoresearch.html)

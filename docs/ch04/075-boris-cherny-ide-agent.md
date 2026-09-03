@@ -1,7 +1,5 @@
 # Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台
 
-## Ch04.075 Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台
-
 > 📊 Level ⭐⭐ | 16.9KB | `entities/boris-cherny-新访谈开发工具正在从-ide-变成-agent-控制台.md`
 
 # Boris Cherny 新访谈：IDE → Agent 控制台

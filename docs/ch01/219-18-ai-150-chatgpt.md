@@ -1,7 +1,5 @@
 # 18岁高中生用AI挖出150万未知天体，首批ChatGPT原住民毕业
 
-## Ch01.219 18岁高中生用AI挖出150万未知天体，首批ChatGPT原住民毕业
-
 > 📊 Level ⭐⭐ | 14.4KB | `entities/18岁高中生用ai挖出150万未知天体首批chatgpt原住民毕业.md`
 
 ## 核心事件
@@ -142,7 +140,7 @@ ChatGPT Futures名单揭示的机会图谱表明，AI的真正价值在于使此
 - [Jury Dismisses All Claims In Elon Musk S Lawsuit Against Ope](572-jury-dismisses-all-claims-in-elon-musk-s-lawsuit-against-ope.html)
 - [Thehackernews Fake Openai Privacy Filter](316-openai.html)
 - [Openai Buys Ai Consultancy Enterprises](316-openai.html)
-- [Microsoft Is Quietly Shopping For An Openai Replac](031-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
+- [Microsoft Is Quietly Shopping For An Openai Replac](033-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/18岁高中生用ai挖出150万未知天体首批chatgpt原住民毕业.md)
 

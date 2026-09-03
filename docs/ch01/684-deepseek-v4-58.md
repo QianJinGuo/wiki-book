@@ -1,7 +1,5 @@
 # DeepSeek V4是怎么训练出来的？58页论文深入解读
 
-## Ch01.684 DeepSeek V4是怎么训练出来的？58页论文深入解读
-
 > 📊 Level ⭐⭐ | 2.5KB | `entities/deepseek-v4-training-58-page-paper-deep-dive.md`
 
 # DeepSeek V4是怎么训练出来的？58页论文深入解读

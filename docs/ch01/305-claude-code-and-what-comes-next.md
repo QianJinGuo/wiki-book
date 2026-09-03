@@ -1,7 +1,5 @@
 # Claude Code and What Comes Next
 
-## Ch01.305 Claude Code and What Comes Next
-
 > 📊 Level ⭐⭐ | 10.8KB | `entities/claude-code-and-what-comes-next.md`
 
 # Claude Code and What Comes Next

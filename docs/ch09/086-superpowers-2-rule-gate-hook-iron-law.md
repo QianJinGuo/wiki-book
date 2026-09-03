@@ -1,7 +1,5 @@
 # Superpowers 深度解读（2）：Rule/Gate/Hook 与 Iron Law 方法论
 
-## Ch09.086 Superpowers 深度解读（2）：Rule/Gate/Hook 与 Iron Law 方法论
-
 > 📊 Level ⭐⭐ | 6.7KB | `entities/superpowers-deep-dive-kaiyuandakashuo.md`
 
 > 原文归档：[原文归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/superpowers-deep-dive-kaiyuandakashuo.md)

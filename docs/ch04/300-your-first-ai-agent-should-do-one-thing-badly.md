@@ -1,7 +1,5 @@
 # Your First AI Agent Should Do One Thing Badly
 
-## Ch04.300 Your First AI Agent Should Do One Thing Badly
-
 > 📊 Level ⭐⭐ | 7.7KB | `entities/your-first-ai-agent-should-do-one-thing-badly.md`
 
 # Your First AI Agent Should Do One Thing Badly

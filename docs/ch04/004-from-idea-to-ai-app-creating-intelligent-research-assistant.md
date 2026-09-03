@@ -1,7 +1,5 @@
 # From idea to AI app: creating intelligent research assistants
 
-## Ch04.004 From idea to AI app: creating intelligent research assistants
-
 > 📊 Level ⭐ | 8.5KB | `entities/ai-research-assistant-from-idea-to-app.md`
 
 # From idea to AI app: creating intelligent research assistants

@@ -1,7 +1,5 @@
 # Claude Code 源码拆解：从启动到多 Agent 扩展层
 
-## Ch01.210 Claude Code 源码拆解：从启动到多 Agent 扩展层
-
 > 📊 Level ⭐⭐ | 14.9KB | `entities/claude-code-source-architecture.md`
 
 ## 八大模块

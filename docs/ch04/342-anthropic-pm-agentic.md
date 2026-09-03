@@ -1,7 +1,5 @@
 # Anthropic PM 的 Agentic 工作流
 
-## Ch04.342 Anthropic PM 的 Agentic 工作流
-
 > 📊 Level ⭐⭐ | 6.5KB | `entities/anthropic-pm-agentic-workflow.md`
 
 ## 概述

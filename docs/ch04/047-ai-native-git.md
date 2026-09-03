@@ -1,7 +1,5 @@
 # 让项目管理也AI Native —— 两个Git仓库干掉了周报、洞察和效能报表
 
-## Ch04.047 让项目管理也AI Native —— 两个Git仓库干掉了周报、洞察和效能报表
-
 > 📊 Level ⭐⭐ | 21.4KB | `entities/ai-native-project-management-git.md`
 
 # 让项目管理也AI Native —— 两个Git仓库干掉了周报、洞察和效能报表

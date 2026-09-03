@@ -1,7 +1,5 @@
 # GitHub Copilot Individual Plans: Flex Allotments in Pro and Pro+, and a New Max Plan
 
-## Ch01.539 GitHub Copilot Individual Plans: Flex Allotments in Pro and Pro+, and a New Max Plan
-
 > 📊 Level ⭐⭐ | 6.1KB | `entities/github-copilot-individual-plans-flex-allotments.md`
 
 ## 核心要点

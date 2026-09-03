@@ -1,7 +1,5 @@
 # Enable safe agentic payments with built-in guardrails using Amazon Bedrock AgentCore payments
 
-## Ch04.434 Enable safe agentic payments with built-in guardrails using Amazon Bedrock AgentCore payments
-
 > 📊 Level ⭐⭐ | 2.4KB | `entities/enable-safe-agentic-payments-with-built-in-guardrails-using-.md`
 
 # Enable safe agentic payments with built-in guardrails using Amazon Bedrock AgentCore payments

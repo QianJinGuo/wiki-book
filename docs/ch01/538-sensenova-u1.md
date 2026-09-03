@@ -1,7 +1,5 @@
 # 商汤开源 SenseNova-U1：一个模型，同时「看懂」和「画懂」
 
-## Ch01.538 商汤开源 SenseNova-U1：一个模型，同时「看懂」和「画懂」
-
 > 📊 Level ⭐⭐ | 6.2KB | `entities/sensnova-u1-sensetime.md`
 
 # 商汤开源 SenseNova-U1：一个模型，同时「看懂」和「画懂」

@@ -1,7 +1,5 @@
 # ingress-nginx已退役higress如何平滑替代
 
-## Ch11.145 ingress-nginx已退役higress如何平滑替代
-
 > 📊 Level ⭐⭐ | 7.4KB | `entities/higress-cncf-sandbox-ingress-nginx-replacement.md`
 
 ## 事件概述

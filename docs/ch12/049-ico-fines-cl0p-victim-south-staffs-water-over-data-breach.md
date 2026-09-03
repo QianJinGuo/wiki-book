@@ -1,7 +1,5 @@
 # ICO fines Cl0p victim South Staffs Water over data breach
 
-## Ch12.049 ICO fines Cl0p victim South Staffs Water over data breach
-
 > 📊 Level ⭐⭐ | 8.3KB | `entities/computerweekly-ico-fines-cl0p-south-staffs-water.md`
 
 ## 摘要

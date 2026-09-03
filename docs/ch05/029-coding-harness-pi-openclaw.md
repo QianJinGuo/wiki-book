@@ -1,7 +1,5 @@
 # Coding Harness 工程本质：从 Pi 到 OpenClaw
 
-## Ch05.029 Coding Harness 工程本质：从 Pi 到 OpenClaw
-
 > 📊 Level ⭐⭐ | 15.9KB | `entities/pi-openclaw-coding-harness.md`
 
 ## 核心定义

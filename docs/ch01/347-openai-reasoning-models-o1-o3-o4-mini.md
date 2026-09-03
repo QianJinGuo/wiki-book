@@ -1,7 +1,5 @@
 # OpenAI Reasoning Models (o1/o3/o4-mini)
 
-## Ch01.347 OpenAI Reasoning Models (o1/o3/o4-mini)
-
 > 📊 Level ⭐⭐ | 9.5KB | `entities/openai-reasoning-models.md`
 
 ## 模型系列概览

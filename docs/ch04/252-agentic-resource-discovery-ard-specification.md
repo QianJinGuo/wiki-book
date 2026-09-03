@@ -1,7 +1,5 @@
 # Agentic Resource Discovery (ARD) Specification
 
-## Ch04.252 Agentic Resource Discovery (ARD) Specification
-
 > 📊 Level ⭐⭐ | 8.5KB | `entities/agentic-resource-discovery-specification-snowflake.md`
 
 # Agentic Resource Discovery (ARD) Specification

@@ -1,7 +1,5 @@
 # Activity-Focused Design
 
-## Ch03.088 Activity-Focused Design
-
 > 📊 Level ⭐⭐ | 5.2KB | `entities/activity-focused-design.md`
 
 ## 核心要点

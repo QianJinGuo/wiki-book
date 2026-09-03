@@ -1,7 +1,5 @@
 # Ghosts of Encryption Past – How we Read All Your Emails in Salesforce Marketing Cloud › Searchlight Cyber
 
-## Ch01.774 Ghosts of Encryption Past – How we Read All Your Emails in Salesforce Marketing Cloud › Searchlight Cyber
-
 > 📊 Level ⭐⭐⭐ | 3.5KB | `entities/slcyber-io-research-center-ghosts-of-encryption-past-salesforce-exacttarget.md`
 
 ## 深度分析

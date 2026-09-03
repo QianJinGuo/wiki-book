@@ -1,7 +1,5 @@
 # Agentic Design System - From Chatbot to Orchestration
 
-## Ch01.007 Agentic Design System - From Chatbot to Orchestration
-
 > 📊 Level ⭐ | 12.5KB | `entities/agentic-design-system-from-chatbot-to-orchestration.md`
 
 > -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentic-design-system-from-chatbot-to-orchestration.md)

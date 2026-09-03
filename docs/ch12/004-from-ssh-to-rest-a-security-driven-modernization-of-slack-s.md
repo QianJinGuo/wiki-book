@@ -1,7 +1,5 @@
 # From SSH to REST: A Security-Driven Modernization of Slack's EMR Data Pipelines
 
-## Ch12.004 From SSH to REST: A Security-Driven Modernization of Slack's EMR Data Pipelines
-
 > 📊 Level ⭐ | 8.8KB | `entities/from-ssh-to-rest-a-security-driven-modernization-of-slacks-e.md`
 
 ## 深度分析
@@ -71,13 +69,13 @@ REST 架构不只解决当前问题，更解锁了未来三条关键路径：
 - [Wetesteddeepseekv4Proandflashagainstclau](../ch01/418-deepseek.html)
 - [Entrypointhijacking](https://github.com/QianJinGuo/wiki/blob/main/entities/entrypointhijacking.md)
 - [Affirmmapsroadto100Bgmvwithcardaicommerc](../ch04/257-ai.html)
-- [Why Internally Built Ai Fails Fund Accounting Audits](../ch01/551-why-internally-built-ai-fails-fund-accounting-audits.html)
+- [Why Internally Built Ai Fails Fund Accounting Audits](../ch01/064-why-internally-built-ai-fails-fund-accounting-audits.html)
 - Senatorsquerycreditbureausonbnpl
 
 - [Cpanel Whm Patch 3 New Vulnerabilities](https://github.com/QianJinGuo/wiki/blob/main/entities/cpanel-whm-patch-3-new-vulnerabilities.md)
 - [Tenorshare Ai Diagrimo   Free Ai Diagram Generator Online](../ch04/257-ai.html)
 - [Automating Confidential Containers Coco Infrastructure With Kyverno](../ch11/082-automating-confidential-containers-coco-infrastructure-wit.html)
-- [Gptomics Com How Ai Changes Software P L](../ch01/074-how-ai-changes-software-p-l.html)
+- [Gptomics Com How Ai Changes Software P L](../ch01/077-how-ai-changes-software-p-l.html)
 - [Romanian Man 30 Years Us Prison Vishing](https://github.com/QianJinGuo/wiki/blob/main/entities/romanian-man-30-years-us-prison-vishing.md)
 - [Youcom Download The Guide Why Api Latency Is A Misleading Metric](https://github.com/QianJinGuo/wiki/blob/main/entities/youcom-download-the-guide-why-api-latency-is-a-misleading-metric.md)
 - [818662](https://github.com/QianJinGuo/wiki/blob/main/entities/818662.md)
