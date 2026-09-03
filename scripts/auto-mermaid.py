@@ -1,7 +1,7 @@
 """Auto-generate mermaid diagrams for articles based on content analysis."""
 import re, os, sys
 
-DOCS_DIR = '/path/to/user/wiki-book/docs'
+DOCS_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'docs'))
 
 # Template library keyed by topic patterns
 TEMPLATES = {

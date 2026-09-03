@@ -7,7 +7,7 @@ strips ALL non-alphanumeric/CJK characters.
 import re, os, sys
 from collections import Counter
 
-DOCS_DIR = '/path/to/user/wiki-book/docs'
+DOCS_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'docs'))
 DRY_RUN = '--dry' in sys.argv
 
 SKIP_HEADINGS_LOWER = {

@@ -1,7 +1,7 @@
 """Add mindmap concept overview diagrams to all 20 chapter pages + index."""
 import re, os
 
-DOCS_DIR = '/path/to/user/wiki-book/docs'
+DOCS_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'docs'))
 
 # Each chapter's mindmap — designed for "first mental model" cognitive stage
 MINDMAPS = {

@@ -11,7 +11,7 @@ Fix:
 """
 import re, os, sys
 
-DOCS_DIR = '/path/to/user/wiki-book/docs'
+DOCS_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'docs'))
 DRY_RUN = '--dry' in sys.argv
 
 # Generic headings that add NO cognitive value in a mindmap

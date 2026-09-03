@@ -7,7 +7,7 @@ Also: expand skip list with all remaining generic patterns.
 """
 import re, os, sys
 
-DOCS_DIR = '/path/to/user/wiki-book/docs'
+DOCS_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'docs'))
 DRY_RUN = '--dry' in sys.argv
 
 # Comprehensive skip list — any heading that's a wiki template artifact

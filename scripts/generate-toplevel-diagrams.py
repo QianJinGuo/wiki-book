@@ -1,7 +1,7 @@
 """Generate mermaid diagrams for top-level chapter pages and special pages."""
 import re, os
 
-DOCS_DIR = '/path/to/user/wiki-book/docs'
+DOCS_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'docs'))
 
 DIAGRAMS = {
     # --- 章节主页 (精心设计) ---

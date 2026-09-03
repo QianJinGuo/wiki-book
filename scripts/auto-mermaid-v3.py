@@ -1,7 +1,7 @@
 """Auto-generate mermaid diagrams v3 — cover ALL articles, zero threshold, catch-all fallback."""
 import re, os, sys
 
-DOCS_DIR = '/path/to/user/wiki-book/docs'
+DOCS_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'docs'))
 MIN_SIZE = 300  # basically everything
 
 # Topic-specific templates (higher score = preferred when multiple match)
