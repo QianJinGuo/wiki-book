@@ -20,9 +20,10 @@ deploy/
 ├── cloudflare/          ← Cloudflare Pages deployment
 │   ├── wrangler.toml
 │   └── deploy.sh
-└── github/              ← GitHub Pages deployment
-    ├── deploy.yml       ← GitHub Actions workflow
+└── github/              ← GitHub Pages deployment helper
     └── deploy.sh
+
+.github/workflows/deploy.yml ← GitHub Actions workflow (single source of truth)
 ```
 
 ## Quick Start
@@ -53,7 +54,7 @@ deploy/
 
 ### GitHub Pages
 - **URL**: https://qianjinguo.github.io/wiki-book/
-- **Config**: `deploy/github/deploy.yml` (GitHub Actions)
+- **Config**: `.github/workflows/deploy.yml` (GitHub Actions)
 - **Deploy**: `./deploy/github/deploy.sh`
 - **Note**: Triggers GitHub Actions on push
 
@@ -62,7 +63,7 @@ deploy/
 1. **Source changes** (`docs/`): Affects all environments on next deploy
 2. **Docker config** (`deploy/docker/`): Only affects Docker
 3. **Cloudflare config** (`deploy/cloudflare/`): Only affects Cloudflare
-4. **GitHub config** (`deploy/github/`): Only affects GitHub Pages
+4. **GitHub config** (`.github/workflows/`): Only affects GitHub Pages
 5. **Build script** (`scripts/build.sh`): Shared, affects all environments
 
 ## Adding a New Environment
