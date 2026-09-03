@@ -6,28 +6,33 @@
 
 ```
 站点名称: AI 工程
-源文件:   docs/ (4,140 篇 raw 原文, 每日 sync 更新)
+源文件:   docs/ (章节源文件 + raw 原始资料, 每日 sync 更新；raw 不进入站点)
 章节:     20 章 5 篇 (Ch01-Ch20)
-编撰实体: 2,201 篇精选成书 (质量门禁 review≥7; ~/wiki/entities 全量 4,158)
-拆分页面: 1,944 个 ch*/ 子页 (余 257 个实体平铺于章内, 合计 2,201)
+编撰条目: 2,201 篇 (站点首页指标；不要与页面文件数相加)
+可发布页面: 1,944 个 docs/chXX/*.md (dashboard/course 最近一次生成时扫描，随每日 sync 变化)
+原始资料: docs/raw/articles/ (当前约 4,000+ 个 Markdown 文件；公开仓库可读，但 MkDocs 排除)
 域名:     jinguo.tech (CF Pages) / wiki.jinguo.tech (GH Pages)
 仓库:     github.com/QianJinGuo/wiki-book
 版本:     v1.3.8
 ```
+
+公开边界：`docs/raw/` 虽由 `mkdocs.yml` 的 `exclude_docs` 排除、不生成站点页面，仍然是公开 GitHub 仓库的一部分；`meta/` 是不进站点的公开内部过程文档。两者都不得提交密钥、个人凭据或不适合公开的内容。`docs/AGENTS.md`、`docs/sprint.html` 和 `tests/archive/` 已清理，不应重新加入。
 
 ## 链接规则
 
 | 链接类型 | 目标 | 示例 |
 |---------|------|------|
 | `[[entities/xxx]]` | 站内章节目录 | `ch01/045-agent.md` → MkDocs 转 `.html` |
-| `[[raw/articles/xxx]]` | GitHub blob（`github.com/.../blob/main/raw/articles/...`） | 带 GitHub UI |
-| `[[concepts/xxx]]` / `[[moc/xxx]]` | GitHub blob | 同上 |
+| `[[raw/articles/xxx]]` | 本仓库 GitHub blob（`github.com/QianJinGuo/wiki-book/blob/main/docs/raw/articles/...`） | 带 GitHub UI |
+| `[[concepts/xxx]]` / `[[moc/xxx]]` | 上游 wiki GitHub blob（`github.com/QianJinGuo/wiki/blob/main/...`） | 带 GitHub UI |
+
+`docs/raw/` 的链接是有意指向 GitHub 永久地址；修改链接规则时必须同时检查 `docs/PATH.md` 和 `scripts/fix-github-links.mjs`。
 
 ### 常见问题
 
-- 实体站内链只在 `split-chapters.py` 运行后生效（`fix-docs-links.py` 后处理）
-- 流水线顺序：`book_compiler → mkdocs_prepare → split-chapters → fix-docs-links`
-- `mkdocs_prepare` 自身构建的 entity_page_index 为空（ch*/ 目录尚未存在），所以 `fix-docs-links.py` 是必须的后处理步骤
+- 实体站内链只在章节拆分完成后生效；每日同步或重编号后必须重新生成 dashboard/course 索引。
+- 当前仓库的构建入口是 `scripts/build.sh`；不要绕过它直接把未裁剪的 MkDocs 搜索索引部署出去。
+- 旧的 `split-chapters.py` / `fix-docs-links.py` 流程属于上游编译背景；若修改上游流程，必须确认最终生成的 `docs/chXX/*.md` 与索引链接一致。
 
 ---
 
@@ -41,7 +46,7 @@ MkDocs 构建 → site/ (构建产物)
 ┌─────────────────────────────────────────────────┐
 │ Docker (localhost:8002)  │ Dockerfile + nginx.conf │
 │ Cloudflare Pages         │ wrangler.toml           │
-│ GitHub Pages             │ .github/workflows/      │
+│ GitHub Pages             │ .github/workflows/deploy.yml │
 └─────────────────────────────────────────────────┘
 ```
 
@@ -50,7 +55,7 @@ MkDocs 构建 → site/ (构建产物)
 ```
 deploy/
 ├── docker/
-│   ├── Dockerfile         # 多阶段构建: python→nginx
+│   ├── Dockerfile         # nginx 静态服务 (复制已生成的 site/)
 │   ├── nginx.conf         # 缓存 + RAG fallback + 清洁 URL
 │   └── docker-compose.yml
 ├── cloudflare/
@@ -58,12 +63,12 @@ deploy/
 │   ├── deploy.sh          # 上传 R2 + 部署 Pages
 │   └── ai-proxy/          # Cloudflare Worker: AI Chat CORS 代理
 └── github/
-    └── deploy.yml         # GitHub Actions 副本 — ⚠️ 真正生效的是
-                           # .github/workflows/deploy.yml，改工作流请改那份，
-                           # 两份文件必须保持一致 (2026-08-29 曾因改错副本漏掉建图)
+    └── deploy.sh          # GitHub Pages 部署辅助脚本
+
+.github/workflows/deploy.yml  # GitHub Actions 唯一工作流来源
 
 scripts/
-├── build.sh               # 共享构建脚本 (去重标题 → mkdocs → slim → 近邻图, 顺序不可换)
+├── build.sh               # 共享构建脚本 (课程/仪表盘 → 去重 → mkdocs → slim → 近邻图)
 ├── deploy.sh              # 主部署脚本 (docker|cloudflare|github|all)
 ├── dedupe-entity-titles.py  # 删除实体页重复 H2 标题 (每日 sync 会重新引入, build.sh 已内置)
 ├── build-neighbor-graph.py  # TF-IDF 近邻图构建 (输入必须为 slim 后索引)
@@ -71,7 +76,7 @@ scripts/
 └── slim-search-index.py     # 搜索索引裁剪 (支持 --input, 默认 site/search/)
 
 functions/                  # Cloudflare Pages Functions
-├── rag-query.js            # RAG 查询 (Phase 1+2)
+├── rag-query.js            # RAG 查询 (关键词、Reranker、语义搜索)
 └── rag/
     ├── search.js           # 搜索索引端点 (R2 流式)
     └── graph.js            # 近邻图端点 (R2 流式)
@@ -94,7 +99,7 @@ Layer 3: 讯飞 + Vectorize (CF)    — 语义搜索, ~300ms
 兜底:    Pages Function           — Phase 1 关键词 + Phase 2 Reranker
 ```
 
-### 三环境 RAG 最终状态 (v1.3.8)
+### 三环境 RAG 支持矩阵 (v1.3.8)
 
 | 能力 | Docker | GitHub Pages | Cloudflare Pages |
 |------|--------|-------------|-----------------|
@@ -110,7 +115,7 @@ Layer 3: 讯飞 + Vectorize (CF)    — 语义搜索, ~300ms
     │
     ├─ doRagSearch(text) ← 客户端优先
     │    ├─ ragClient.search() → Tier 1 关键词+近邻图
-    │    ├─ fetch(/rag-query) → Phase 1+2 服务器兜底
+    │    ├─ fetch(/rag-query) → Phase 1–3 服务器兜底
     │    └─ 空结果静默降级
     │
     └─ 注入 LLM → ai-proxy → MiMo API
@@ -118,7 +123,7 @@ Layer 3: 讯飞 + Vectorize (CF)    — 语义搜索, ~300ms
 
 ### 客户端 RAG 引擎 (rag-client.js)
 
-- 浏览器 IndexedDB 缓存 search_index.json (31,883 篇 slim 文档, ~11MB)
+- 浏览器 IndexedDB 缓存由构建生成的 slim `search_index.json`；条目数和体积随每日同步变化，不在代码中写死
 - 缓存前缀 `rag-v2`：索引结构变更时必须递增，否则老访客命中失效缓存
 - 关键词搜索 (tokenize + 词频打分, 标题分词 init 时预计算)
 - 近邻图扩展 (top-10 种子 × 20 近邻, TF-IDF 余弦)
@@ -134,13 +139,13 @@ python3 scripts/build-neighbor-graph.py \
   --input site/search/search_index.json \
   --output site/assets/neighbor_graph.json \
   --top-k 20
-# 输入: 31,883 篇 slim 文档, TF-IDF → CSR 稀疏矩阵 → A@A.T
-# 输出: 15MB, 30,339 节点, 每节点 top-20 近邻 (v2 修复后)
+# 输入: slim 后的 search_index.json, TF-IDF → CSR 稀疏矩阵 → A@A.T
+# 输出: 每节点 top-20 近邻；数量和体积以本次构建输出为准
 # 耗时: ~1 分钟 (M1 MacBook)
 ```
 
-> ⚠️ 历史教训 (v1): 图曾基于全量索引 (92,915 条) 构建，而浏览器检索的是
-> slim 数组 (31,883 条)，下标空间错位导致近邻扩展返回错误文档且无报错。
+> ⚠️ 历史教训 (v1): 图曾基于全量索引构建，而浏览器检索的是 slim 数组，
+> 下标空间错位导致近邻扩展返回错误文档且无报错。
 > 任何一端 (slim 逻辑 / 建图输入) 变更都必须重新走完整 build.sh 并做
 > 「max(graph keys) < len(slim docs)」对齐校验。
 
@@ -157,20 +162,23 @@ python3 scripts/build-neighbor-graph.py \
 # 仅部署 Docker
 ./scripts/deploy.sh docker --build
 
-# 仅部署 Cloudflare (需先 build)
-rm -f site/search/search_index.json  # >25MB, 从 R2 读取
-npx wrangler pages deploy site --project-name=ai-engineering --branch=main
+# 仅部署 Cloudflare (需先 build；脚本会上传 RAG 资源并清理超大文件)
+./deploy/cloudflare/deploy.sh
 
 # 仅 GitHub Pages (自动触发 Actions)
 git push origin main
 ```
 
+> 发布前必须先检查 `git status` 和 `git diff`。`deploy/github/deploy.sh` 会执行 `git add -A` 并提交当前工作树，不能在未审阅本地生成物或封面中间文件时直接运行。
+
 ### 构建流程 (build.sh)
 
-1. `mkdocs build` — 生成 site/ (含 HTML/JS/全量搜索索引)
-2. `slim-search-index.py` — 裁剪搜索索引 (92,915 → 31,883 条, 82MB → 11MB)
-3. `build-neighbor-graph.py` — 基于 **slim 后**索引生成近邻图
-   (30,339 节点, 15MB)，写入 `site/assets/` (静态环境自愈) + `/tmp/` (供 R2 上传)
+1. `build-course.py` — 从当前 `docs/chXX/*.md` 生成学习课程索引
+2. `rank-articles.py` — 生成 dashboard 文章目录
+3. `dedupe-entity-titles.py --apply` — 清理每日 sync 可能重新引入的重复标题
+4. `mkdocs build` — 生成 site/ 和全量搜索索引
+5. `slim-search-index.py` — 裁剪搜索索引
+6. `build-neighbor-graph.py` — 基于 **slim 后**索引生成近邻图，写入 `site/assets/` (静态环境) 和 `/tmp/` (供 R2 上传)
 
 > 顺序不可换：rag-client.js 按 slim 数组下标查图，图必须与最终下发的
 > 索引同源。本地跑 build.sh 需 numpy/scipy：`PYTHON=.venv/bin/python bash scripts/build.sh`
@@ -180,7 +188,7 @@ git push origin main
 
 1. 上传 search_index.json → R2 `ai-engineering-search`
 2. 上传 neighbor_graph.json → R2 `ai-engineering-search`
-3. 删除 site/search/search_index.json (>25MB CF 限制)
+3. 删除 `site/` 中超过 25MB 的文件 (Cloudflare Pages 限制)
 4. `wrangler pages deploy site` — 部署 HTML + JS + Pages Functions
 
 ---
@@ -198,8 +206,8 @@ git push origin main
 ```
 
 - 调度: ZCode 定时自动化每天 04:30 (daily-vault-checkup)；上游入口 cron 见 ~/wiki/CRON.md
-- 出口门禁 (book_compiler.py, 2026-08-29): review_value≥7 + 溯源完整 + blacklist + fallback 封顶 200 → 成书 2,201 篇精选 (此前 4,069 全量)。环境变量 `BOOK_QUALITY_GATE=0` 关闭, `BOOK_FALLBACK_CAP` 调整封顶
-- 站内链接 9,277 条实测 0 死链 (fix-docs-links 同章链接 bug 已修); 僵尸子页 2,898 → 0 (sync 改 `rm -rf docs/ch*/`)
+- 出口门禁 (book_compiler.py): review_value≥7 + 溯源完整 + blacklist + fallback 封顶 200 → 站点首页展示 2,201 篇精选；该指标与 1,944 个可发布页面不是同一层级。环境变量 `BOOK_QUALITY_GATE=0` 关闭, `BOOK_FALLBACK_CAP` 调整封顶
+- 站内链接、孤儿率和僵尸页数量以每日检查报告为准，不要把历史快照当作当前值。
 - 蓝图与度量北极星: meta/VAULT-BLUEPRINT.md
 
 ## 验证
@@ -227,10 +235,12 @@ curl https://jinguo.tech/rag/graph        # → 200
 curl https://jinguo.tech/rag-query?q=test # → 200 或 503
 
 # RAG 客户端日志 (浏览器 Console)
-# [RagClient] 搜索索引加载完成: 31883 篇
-# [RagClient] 近邻图加载完成: 30339 个节点
-# [RagClient] 就绪 (31883 篇文档)
+# [RagClient] 搜索索引加载完成: <本次构建生成的数量> 篇
+# [RagClient] 近邻图加载完成: <本次构建生成的节点数> 个节点
+# [RagClient] 就绪 (<本次构建生成的文档数> 篇文档)
 ```
+
+最近一次 `node test-rag.mjs`（2026-09-03）为 24/26：生产和 GitHub Pages 检查通过；当前 Docker 容器的 `/rag/search`、`/rag/graph` 返回 HTML/404，Docker 前端检查也失败。这个结果是运行环境基线，不应被描述为全绿。
 
 ---
 
@@ -249,16 +259,16 @@ curl https://jinguo.tech/rag-query?q=test # → 200 或 503
 (提示用户在设置中填自己的 Key)。根治: 升级 Workers Paid ($5/月)、更换
 provider 或引导用户 BYO Key。
 
-### 2. Docker 文件权限
+### 2. Docker 本地 RAG 端点
 
-`docker cp` 注入文件后权限为 600，需手动 `chmod 644`。当前容器内已修复。
+截至 2026-09-03，`node test-rag.mjs` 在本地 Docker 环境对 `/rag/search`、`/rag/graph` 的检查仍未通过，返回内容为 HTML/404；这与 Cloudflare Pages 的 R2 端点设计不同。修改 Docker 或 nginx 配置后，应先单独验证这两个端点，再运行完整 E2E。
 
-### 3. 搜索索引太大 (200MB) — 已结构性修复 (2026-08-29)
+### 3. 搜索索引太大 — 已结构性修复 (2026-08-29)
 
-根因是绕过 build.sh 直接 mkdocs build 后 compose。现在 build.sh 固定产出
-slim 索引 (11MB) + 对齐近邻图 (site/assets/, 15MB)，Dockerfile 直接 COPY
-site/，`bash scripts/build.sh && docker compose up -d --build` 即自愈，
-无需 docker cp。
+根因是绕过 build.sh 直接 mkdocs build 后 compose。现在 build.sh 固定先产出
+slim 索引和对齐近邻图，Dockerfile 直接 COPY `site/`；应使用
+`PYTHON=.venv/bin/python bash scripts/build.sh` 后再启动 Docker，避免手工
+`docker cp` 注入生成物。
 
 ---
 
@@ -266,16 +276,21 @@ site/，`bash scripts/build.sh && docker compose up -d --build` 即自愈，
 
 | 文件 | 用途 |
 |------|------|
-| `functions/rag-query.js` | Pages Function: Phase 1+2 服务端 RAG |
+| `functions/rag-query.js` | Pages Function: Phase 1–3 服务端 RAG |
 | `functions/rag/search.js` | 搜索索引端点 (R2 流式) |
 | `functions/rag/graph.js` | 近邻图端点 (R2 流式) |
 | `overrides/assets/javascripts/rag-client.js` | 客户端 RAG 引擎 |
 | `overrides/assets/javascripts/ai-chat.js` | AI Chat + doRagSearch |
 | `overrides/main.html` | 加载 rag-client.js |
+| `scripts/build.sh` | 共享构建入口和固定执行顺序 |
+| `scripts/build-course.py` | 从可发布章节页生成课程索引 |
+| `scripts/rank-articles.py` | 生成 dashboard 文章目录 |
 | `scripts/build-neighbor-graph.py` | 近邻图构建 |
 | `scripts/build-vectorize.py` | Vectorize 索引构建 |
 | `scripts/slim-search-index.py` | 搜索索引裁剪 |
 | `test-rag.mjs` | Playwright E2E 测试 |
+| `.github/workflows/deploy.yml` | GitHub Pages Actions 唯一工作流 |
+| `deploy/README.md` | 三环境部署边界和入口说明 |
 | `meta/` | 内部文档 (设计/复盘/蓝图/报告, 不进站点) — 索引见 meta/README.md |
 | `wrangler.toml` | Pages 配置 (单一真相源) |
 
@@ -284,11 +299,12 @@ site/，`bash scripts/build.sh && docker compose up -d --build` 即自愈，
 ## 快速参考
 
 ```bash
-# 本地开发 (Docker)
+# 本地开发 (先构建，再启动 Docker)
+cd ~/wiki-book && PYTHON=.venv/bin/python bash scripts/build.sh
 cd ~/wiki-book && docker compose up -d --build
 
 # 部署到 CF Pages
-cd ~/wiki-book && rm -f site/search/search_index.json && npx wrangler pages deploy site --project-name=ai-engineering --branch=main
+cd ~/wiki-book && ./deploy/cloudflare/deploy.sh
 
 # RAG 端点验证
 curl https://jinguo.tech/rag/search | head -c 100
@@ -301,6 +317,6 @@ node test-rag.mjs
 
 ---
 
-*更新时间: 2026-08-30 (根目录整理: 内部文档移至 meta/, 清除遗留副本)*
+*更新时间: 2026-09-03 (同步公开范围、构建口径和部署入口)*
 *维护者: Hermes Agent*
 *RAG 复盘: meta/RAG-RETROSPECTIVE.md*
