@@ -117,7 +117,7 @@ QAT 模型消除了用户自行量化的技术门槛——直接下载即部署�
 - [Bonsai Image 4B 1 Bit Ternary](../ch04/257-ai.html)
 - [Stochastic Parrot Language Models And Meaning](343-language-models-and-meaning.html)
 
-- [新程alpha认知模型：4b参数端侧部署，群体智能以小搏大比肩gpt-5.4](https://github.com/QianJinGuo/wiki/blob/main/entities/nextie-alpha-cognitive-model-4b-on-device.md)
+- [新程alpha认知模型：4b参数端侧部署，群体智能以小搏大比肩gpt-5.4](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nextie-alpha-cognitive-model-4b-on-device.md)
 - [notes on pretraining parallelisms and failed training runs.](../ch04/257-ai.html)
 
 ## 原文链接

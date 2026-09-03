@@ -146,12 +146,12 @@ FlashAttention 的核心机制是 **Kernel Fusion + 分块计算 + Online Softma
 - [Google Io 2026 Agentic Gemini Era](../ch03/004-agent.html)
 - [Ai Infra Auto Driven Skills V0 Bbuf Giantpanda](748-ai-infra.html)
 - [Gemma 4 Multi Token Prediction Drafters](188-gemma-4-multi-token-prediction-drafters.html)
-- [Continuous Async](https://github.com/QianJinGuo/wiki/blob/main/entities/continuous-async.md)
+- [Continuous Async](https://github.com/QianJinGuo/wiki-public/blob/main/entities/continuous-async.md)
 - [Anthropic 95Pct Data Analysis Jiagoux Data Level Harness 20260606](../ch05/008-harness.html)
 - [Codex Goal Source Code Deep Dive](../ch09/039-codex-goal.html)
 - [Impeccable Frontend Design Skill Harness Vibecoder](../ch05/001-impeccable.html)
 - [Opencli Browser Automation Jingxing](../ch03/063-opencli.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-core-technology.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/llm-core-technology.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-infra-llm-efficient-inference-vllm.md)
 

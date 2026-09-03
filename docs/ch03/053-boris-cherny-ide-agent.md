@@ -112,7 +112,7 @@ Boris 强调的 Loop（长驻 Agent 工作进程）与 Karpathy 谈的"外包思
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/302-agent-skills.html)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](057-claude-code.html)
 - [Claude Code MCP Server](../ch07/027-claude-code-mcp-server.html)
-- [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
+- [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-window-management.md)
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/340-claude.html)
 - [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](057-claude-code.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/008-harness.html)
@@ -121,8 +121,8 @@ Boris 强调的 Loop（长驻 Agent 工作进程）与 Karpathy 谈的"外包思
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-to-share-mythos-cyber-flaw-findings-with-global-finance-watchdog-1.md)
 
-- [KAIROS — Claude Code 常驻协作范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/kairos-claude-code-paradigm.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
+- [KAIROS — Claude Code 常驻协作范式](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/kairos-claude-code-paradigm.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/coding-agent-practice.md)
 
 ---
 

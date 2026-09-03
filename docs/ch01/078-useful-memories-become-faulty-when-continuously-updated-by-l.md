@@ -36,16 +36,16 @@ Misgrouping 发生在抽象前的分组环节：强制 consolidation 将共享�
 
 ### 理论锚点：CLS 双系统记忆的工程化验证
 
-Complementary Learning Systems 理论要求快速 episodic 存储与慢速 schema 形成存储架构分离、consolidation 由 schema fit 门控而非每次事件触发；当代 agentic-memory 设计把两者合并进单一强制重写循环，本研究的实验结果正是该理论预测的干扰灾难在工程上的应验。这与 [episodic vs semantic memory](https://github.com/QianJinGuo/wiki/blob/main/concepts/episodic-vs-semantic-memory-agent.md) 的分野以及 [consolidation 与遗忘](https://github.com/QianJinGuo/wiki/blob/main/concepts/memory-consolidation-decay.md) 的既有结论相互印证。
+Complementary Learning Systems 理论要求快速 episodic 存储与慢速 schema 形成存储架构分离、consolidation 由 schema fit 门控而非每次事件触发；当代 agentic-memory 设计把两者合并进单一强制重写循环，本研究的实验结果正是该理论预测的干扰灾难在工程上的应验。这与 [episodic vs semantic memory](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/episodic-vs-semantic-memory-agent.md) 的分野以及 [consolidation 与遗忘](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/memory-consolidation-decay.md) 的既有结论相互印证。
 
 ## 实践启示
 
-1. **把 raw episodes 当作一等证据**：不要默认压缩它们；今天的 solver 可直接经 in-context learning 使用保留的 rollouts，[Agent Memory Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-architecture.md) 设计时应让 episodic 层与抽象层各司其职。
+1. **把 raw episodes 当作一等证据**：不要默认压缩它们；今天的 solver 可直接经 in-context learning 使用保留的 rollouts，[Agent Memory Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-architecture.md) 设计时应让 episodic 层与抽象层各司其职。
 2. **让抽象 opt-in 且由 Agent 门控**：不是每条轨迹都需要变成 lesson，多数不应该；强制 consolidation（当前多数系统的默认值）会主动破坏记忆质量。
 3. **解耦 episodic 与 schema 角色**：快速 episodic buffer + 慢速门控抽象存储优于单一强制重写循环——这正是 AI Agent Memory Types 下两类记忆的正确分工方式。
 4. **对规模做压力测试**：8 个样例有效、128 个样例失效的记忆系统不是记忆系统，而是"漏水的 prompt"；WebShop 的 scaling 曲线就是警示。
 5. **始终加入 episodic-only baseline**：若蒸馏记忆打不过作为 in-context demo 检索的原始 rollouts，蒸馏就没有在"挣它的位子"；评估方法可参照 Agent Evaluation Benchmarks。
-6. **警惕基于编辑频率的信任指标**：99 票的 tautology 说明 vote 分数衡量的是被改写次数而非内容价值；评估需区分 exact repeat、close variant 与新问题三种场景，其表现与 [灾难性遗忘](https://github.com/QianJinGuo/wiki/blob/main/concepts/catastrophic-forgetting.md) 存在表面相似但机制不同（权重未变，是记忆本身被改写）。
+6. **警惕基于编辑频率的信任指标**：99 票的 tautology 说明 vote 分数衡量的是被改写次数而非内容价值；评估需区分 exact repeat、close variant 与新问题三种场景，其表现与 [灾难性遗忘](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/catastrophic-forgetting.md) 存在表面相似但机制不同（权重未变，是记忆本身被改写）。
 
 ## 相关实体
 

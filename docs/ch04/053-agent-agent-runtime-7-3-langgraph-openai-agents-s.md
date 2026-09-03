@@ -204,7 +204,7 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 - [Amazon Bedrock AgentCore Runtime](383-amazon-bedrock-agentcore.html)
 - [AgentCore Harness](../ch05/008-harness.html)
 - [纳德拉「Token 资本」论](../ch12/002-token.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/observability-monitoring.md)
 
 ---
 

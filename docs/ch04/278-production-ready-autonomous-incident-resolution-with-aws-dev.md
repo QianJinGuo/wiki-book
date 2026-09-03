@@ -51,7 +51,7 @@ GA 版本引入了预防性分析功能：
 
 ### MCP 协议在生产监控中的实际应用
 
-本文展示了 [MCP（Model Context Protocol）](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-context-protocol-mcp.md) 在生产环境中的一个重要应用场景。Datadog MCP Server 的设计模式——将复杂的 API 抽象为 Agent 友好的工具集——代表了一种新兴的「Agent API」设计范式：
+本文展示了 [MCP（Model Context Protocol）](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/model-context-protocol-mcp.md) 在生产环境中的一个重要应用场景。Datadog MCP Server 的设计模式——将复杂的 API 抽象为 Agent 友好的工具集——代表了一种新兴的「Agent API」设计范式：
 
 - **传统 API** — 面向人类开发者，需要理解文档、处理认证、编写请求代码
 - **Agent API** — 面向 AI Agent，自动处理认证和路由，提供语义化的工具描述，输出格式化后的上下文
@@ -72,7 +72,7 @@ AWS DevOps Agent 的核心价值主张是将事件响应从**被动模式**转�
 
 ### Harness Engineering 视角
 
-从 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-7-layers-framework.md) 的角度看，AWS DevOps Agent 展示了 Agent 在运维领域的 harness 设计：
+从 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-7-layers-framework.md) 的角度看，AWS DevOps Agent 展示了 Agent 在运维领域的 harness 设计：
 
 - **工具边界** — Agent 可以访问特定的 AWS 资源和 Datadog 数据，但权限受到 IAM 角色的精确控制
 - **人类审查点** — Agent 生成的缓解计划需要人类审查和批准，而非自动执行
@@ -93,8 +93,8 @@ AWS DevOps Agent 的核心价值主张是将事件响应从**被动模式**转�
 
 ## 相关实体
 
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-7-layers-framework.md) — Agent 运维系统的控制层设计
-- [MCP](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-context-protocol-mcp.md) — Datadog MCP Server 所基于的协议标准
+- [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-7-layers-framework.md) — Agent 运维系统的控制层设计
+- [MCP](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/model-context-protocol-mcp.md) — Datadog MCP Server 所基于的协议标准
 - [Cloudflare 临时账户](312-ai-agent.html) — Agent 基础设施的部署维度
 - [Building Reliable Agentic AI Systems](189-building-reliable-agentic-ai-systems.html) — 生产级 Agent 系统的架构方法论
 - [ATH Agent Trust Handshake Protocol](../ch03/004-agent.html) — Agent 信任和安全协议

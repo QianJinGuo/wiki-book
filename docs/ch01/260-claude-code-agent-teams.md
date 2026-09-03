@@ -158,7 +158,7 @@ Agent Teams 的协作开销最高，只有在前两种模式都不适用时才�
 - [Claude Code Deep Architecture Analysis](../ch03/057-claude-code.html)
 - [Claude Code Official Plugins Anthropic](../ch03/057-claude-code.html)
 - [claude code 多智能体协作体系设计：从单agent到多agent工作流](../ch03/057-claude-code.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/workflow-orchestration.md)
 
 ---
 

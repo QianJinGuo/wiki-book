@@ -26,8 +26,8 @@ Amazon Quick + MCP 集成模式已有多个 entity 覆盖不同 MCP server 家�
 - **[Agentic Incident Triage](004-agent.html)**（New Relic MCP）— SRE incident response 场景，时间敏感 / RCA brief 5 段
 - **[FinOps Chat](../ch11/112-amazon-quick-bedrock-agentcore-finops.html)**（Billing MCP via Bedrock AgentCore）— 成本查询场景，对话式多账号 AWS 成本
 - **[Time Series Market Intelligence](../ch07/065-amazon-quick-mcp.html)**（KDB-X MCP）— 金融交易场景，时间序列分析
-- **[飞书 MCP](https://github.com/QianJinGuo/wiki/blob/main/entities/让-amazon-quick-操作飞书构建远程-mcp-服务的设计实践.md)**（自建远程 MCP）— 国产办公协同场景，200+ 工具上下文治理
-- **[AML Alert Triage](https://github.com/QianJinGuo/wiki/blob/main/entities/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md)**（Snowflake MCP）— 合规反洗钱场景
+- **[飞书 MCP](https://github.com/QianJinGuo/wiki-public/blob/main/entities/让-amazon-quick-操作飞书构建远程-mcp-服务的设计实践.md)**（自建远程 MCP）— 国产办公协同场景，200+ 工具上下文治理
+- **[AML Alert Triage](https://github.com/QianJinGuo/wiki-public/blob/main/entities/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md)**（Snowflake MCP）— 合规反洗钱场景
 
 新 article 占据**完全不同的轴**：**meeting-lifecycle 场景** + **Cisco Webex MCP server 家族**（Meetings / Vidcast / Messaging 三件套）+ **第三方托管 MCP（非自建）** + **OAuth scope 分层 read/write 治理**。与 New Relic / KDB-X / Snowflake / 飞书 等 MCP server 完全没有交叉，且 meeting-lifecycle 场景是 wiki 现有 Amazon Quick 覆盖的盲区。
 
@@ -39,7 +39,7 @@ Amazon Quick + MCP 集成模式已有多个 entity 覆盖不同 MCP server 家�
 | **Vidcast MCP** | `mcp.webexapis.com/mcp/vidcast` | `vidcast-search-videos`, `vidcast-get-video-highlights`, `vidcast-get-video-transcript`, `vidcast-recommend-watch-next` | 视频内容检索 + AI highlight + 推荐 |
 | **Webex Messaging MCP** | `mcp.webexapis.com/mcp/webex-messaging` | `webex-search-spaces`, `webex-search-messages`, `webex-get-thread` | 空间检索 + 消息检索 + 线程拉取 |
 
-**关键 insight**：3 个 server 都是 **Cisco 官方托管**（`mcp.webexapis.com` 域名），用户无需自建 MCP runtime——与 [飞书自建远程 MCP](https://github.com/QianJinGuo/wiki/blob/main/entities/让-amazon-quick-操作飞书构建远程-mcp-服务的设计实践.md) 形成对比。这也意味着 OAuth 集成走 **Webex Developer Portal** 的标准 OAuth 2.0 flow，Amazon Quick 在 Add integration 阶段提供 redirect URL 回调。
+**关键 insight**：3 个 server 都是 **Cisco 官方托管**（`mcp.webexapis.com` 域名），用户无需自建 MCP runtime——与 [飞书自建远程 MCP](https://github.com/QianJinGuo/wiki-public/blob/main/entities/让-amazon-quick-操作飞书构建远程-mcp-服务的设计实践.md) 形成对比。这也意味着 OAuth 集成走 **Webex Developer Portal** 的标准 OAuth 2.0 flow，Amazon Quick 在 Add integration 阶段提供 redirect URL 回调。
 
 ### OAuth Scope 分层防御（read vs write）
 
@@ -82,11 +82,11 @@ Webex MCP server 提供了**完整 read/write scope 分离**，Amazon Quick 集�
 - [Amazon Quick + New Relic MCP incident triage](004-agent.html) — 同 Amazon Quick + MCP 编排模式，但 MCP server 家族和场景不同（SRE vs meeting）
 - [Amazon Quick + Bedrock AgentCore FinOps](../ch11/112-amazon-quick-bedrock-agentcore-finops.html) — 同 Amazon Quick 对话模式，FinOps 成本查询场景
 - [Amazon Quick + KDB-X MCP 时序市场](../ch07/065-amazon-quick-mcp.html) — 金融时序场景 MCP 集成
-- [Amazon Quick 操作飞书：自建远程 MCP](https://github.com/QianJinGuo/wiki/blob/main/entities/让-amazon-quick-操作飞书构建远程-mcp-服务的设计实践.md) — 对比案例，国产办公协同自建 MCP 模式
-- [Amazon Quick + Snowflake MCP AML 反洗钱](https://github.com/QianJinGuo/wiki/blob/main/entities/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md) — 合规场景 MCP 集成
+- [Amazon Quick 操作飞书：自建远程 MCP](https://github.com/QianJinGuo/wiki-public/blob/main/entities/让-amazon-quick-操作飞书构建远程-mcp-服务的设计实践.md) — 对比案例，国产办公协同自建 MCP 模式
+- [Amazon Quick + Snowflake MCP AML 反洗钱](https://github.com/QianJinGuo/wiki-public/blob/main/entities/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md) — 合规场景 MCP 集成
 - [Aderant 法律云运营案例](../ch11/163-aderant-transforms-cloud-operations-with-amazon-quick.html) — Amazon Quick 行业 case study（legal-tech 角度）
 - [Amazon Bedrock AgentCore](../ch05/008-harness.html) — 另一种 Amazon MCP 部署 runtime（vs Amazon Quick 原生 MCP 集成）
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/tool-use-mcp-patterns.md)
 
 ---
 

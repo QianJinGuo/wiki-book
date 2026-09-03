@@ -7,6 +7,9 @@ cd "$PROJECT_DIR"
 
 echo "=== Building wiki-book ==="
 
+echo "=== Checking two-layer wiki links ==="
+node scripts/check-wiki-links.mjs
+
 # Host-side Python for course/dashboard/slim/graph steps.
 # Prefers the project venv (numpy/scipy for the graph build); CI installs
 # deps into the system interpreter instead. Override with PYTHON=<path>.

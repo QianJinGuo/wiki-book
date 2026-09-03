@@ -61,7 +61,7 @@ NarrateAI batch-generates comprehensive persona-based narratives for each user t
 ## 相关实体
 - [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](../ch11/135-amazon-bedrock.html)
 - [Comprehensive Observability For Amazon Sagemaker Ai Llm Infe](451-llm.html)
-- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](https://github.com/QianJinGuo/wiki/blob/main/entities/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md)
+- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](https://github.com/QianJinGuo/wiki-public/blob/main/entities/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md)
 - [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](../ch04/383-amazon-bedrock-agentcore.html)
 - [Process Financial Documents Using Amazon Bedrock Data Automa](../ch11/135-amazon-bedrock.html)
 

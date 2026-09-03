@@ -175,7 +175,7 @@ TUI 显示：
 - [Agent Harness Context Management Working Set](../ch05/035-agent-harness.html)
 - [Anthropic 95Pct Data Analysis Jiagoux Data Level Harness 20260606](../ch05/008-harness.html)
 - [Impeccable Frontend Design Skill Harness Vibecoder](../ch05/001-impeccable.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/prompt-engineering-guide.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/codex-goal-source-code-deep-dive.md)
 

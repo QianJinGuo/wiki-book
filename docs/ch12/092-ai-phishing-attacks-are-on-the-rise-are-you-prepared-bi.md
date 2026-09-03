@@ -13,13 +13,13 @@
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](092-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi.html)
 - [Ai Agents Inside Perimeter Hackernews](../ch04/312-ai-agent.html)
 - [Llm Raiders Private Ai Server](../ch01/451-llm.html)
-- [Bluekit](https://github.com/QianJinGuo/wiki/blob/main/entities/bluekit.md)
+- [Bluekit](https://github.com/QianJinGuo/wiki-public/blob/main/entities/bluekit.md)
 - [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](../ch01/122-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/AI-phishing-attacks-are-on-the-rise-Are-you-prepared-Bitward.md)
 
 - [Interpol Operation Ramz Mena Cybercrime](038-interpol-operation-ramz-mena-cybercrime-networks.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-privacy-landscape.md)
 ## 深度分析
 ### 攻击规模的几何级增长
 关键数字：4151%——自 ChatGPT 发布后钓鱼攻击增幅。这一数字的意义在于：不是线性增长，而是跨越数量级的跃升。SlashNext 的研究发现揭示 AI 使攻击者能以极低成本大规模复制成功攻击模式。

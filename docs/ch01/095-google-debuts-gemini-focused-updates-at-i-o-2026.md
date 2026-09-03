@@ -51,9 +51,9 @@ Google I/O 作为平台和工具方向的**信号事件**，其实质影响体�
 - **Aluminium OS 与 Android XR 发布时间表**：新平台的开发者支持度和生态成熟度影响优先适配决策 
 ---
 ## 相关实体
-- [Gemini Embedding 2 Multimodal Unified Vector Hyman](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-embedding-2-multimodal-unified-vector-hyman.md)
+- [Gemini Embedding 2 Multimodal Unified Vector Hyman](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gemini-embedding-2-multimodal-unified-vector-hyman.md)
 - [Gemini Ai](../ch04/257-ai.html)
-- [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md)
+- [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md)
 - [Google Shipped Gemini 31 Flash Lite In General Availability](../ch04/257-ai.html)
 - [Google Io 2026 Agentic Gemini Era](../ch03/004-agent.html)
 

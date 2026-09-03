@@ -70,7 +70,7 @@ AI 写代码成本趋近于零 → 没有必要继续做大而全通用框架 �
 - [Minimax M3 Frontier Open Source Model](../ch09/052-minimax-m3-frontier.html)
 - [Chromium Ai Coding Development System](../ch09/043-chromium-ai-coding.html)
 - [Loongsuite Pilot Sls Ai Coding Metrics Practice](../ch01/707-pilot-sls-ai.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/coding-agent-practice.md)
 
 ---
 

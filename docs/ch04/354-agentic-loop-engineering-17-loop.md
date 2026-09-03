@@ -125,7 +125,7 @@ Schedule（调度）→ Triage skill（优先级判断）→ State/Memory（状�
 
 ---
 ## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 - 相关: Agent 架构
 
 ---

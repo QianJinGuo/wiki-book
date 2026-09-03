@@ -179,7 +179,7 @@ AGENTS.md 只有 ~100 行充当"目录页"，指向仓库里的详细文档（AR
 
 ---
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/evaluation-benchmarks-extended.md)
 ## 第 2 来源：Beautiful Article Skill 实证 + Reacticle 组件协议（2026-06-18）
 
 **核心命题**：**好的 Harness 是可以迁移的**——把视频 Skill 的骨架（4 阶段 + 2 Checkpoint + 文件化记忆）原样搬到文章生成任务上（8 阶段 + 3 Checkpoint + 同样的文件化记忆）。
@@ -327,8 +327,8 @@ Phase 8  Delivery             ★Checkpoint 3 必须停 → 交付 article.html
 **补充阅读**：
 
 - [Agent Harness 与 Context Management：Working Set 管理](035-agent-harness.html)
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [Context Engineering 三种记忆范式](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms.md)
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- [Context Engineering 三种记忆范式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-engineering-three-memory-paradigms.md)
 
 ---
 

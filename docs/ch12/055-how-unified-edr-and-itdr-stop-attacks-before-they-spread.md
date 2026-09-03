@@ -20,7 +20,7 @@ Huntress 博客（2026-04-27，作者 Erin Meyers）介绍其 EDR/ITDR Correlati
 - Cybersecurity 相关技术分析
 - 内容来源：huntress
 ## 相关实体
-- [Huntress Edr Itdr Unified Detection](https://github.com/QianJinGuo/wiki/blob/main/entities/huntress-edr-itdr-unified-detection.md)
+- [Huntress Edr Itdr Unified Detection](https://github.com/QianJinGuo/wiki-public/blob/main/entities/huntress-edr-itdr-unified-detection.md)
 - [Llm Raiders Private Ai Server](../ch01/451-llm.html)
 - [How Claude Code Works In Large Codebases Best Practices And Where To Start](../ch01/349-how-claude-code-works-in-large-codebases-best-practices-and.html)
 - [Llm Raiders And How To Repel Them](../ch01/544-llm-raiders-and-how-to-repel-them.html)

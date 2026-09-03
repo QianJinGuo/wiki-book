@@ -32,7 +32,7 @@ LLM-as-a-Verifier 是斯坦福 AI Lab 与 UC Berkeley Sky Computing Lab 联合�
 
 ### 作为 trajectory reward model 的 test-time scaling
 
-该框架最有价值的定位是作为 trajectory reward model 参与 test-time scaling：不修改生成器，只在推理时为候选轨迹打分并挑选。实验用 ForgeCode 与 mini-swe-agent 作 scaffold，从 Claude Opus 4.6 等模型采样多条轨迹再由 verifier 选择，下游成功率 81.8% → 86.4% 的提升完全来自"选择"而非"生成"。跨 harness 的一致收益表明验证器与具体 agent 框架解耦，可作为通用中间件叠加在任何生成管线之上。作者规划的下一步——支持 PRM/ORM、把验证器接入 RL 训练管线——与 [RLVR](https://github.com/QianJinGuo/wiki/blob/main/concepts/rlvr-reinforcement-learning-verified-reasoning.md)、可验证奖励 RL 的路线形成呼应，验证信号未来很可能成为强化学习奖励的主要来源之一。
+该框架最有价值的定位是作为 trajectory reward model 参与 test-time scaling：不修改生成器，只在推理时为候选轨迹打分并挑选。实验用 ForgeCode 与 mini-swe-agent 作 scaffold，从 Claude Opus 4.6 等模型采样多条轨迹再由 verifier 选择，下游成功率 81.8% → 86.4% 的提升完全来自"选择"而非"生成"。跨 harness 的一致收益表明验证器与具体 agent 框架解耦，可作为通用中间件叠加在任何生成管线之上。作者规划的下一步——支持 PRM/ORM、把验证器接入 RL 训练管线——与 [RLVR](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/rlvr-reinforcement-learning-verified-reasoning.md)、可验证奖励 RL 的路线形成呼应，验证信号未来很可能成为强化学习奖励的主要来源之一。
 
 ## 实践启示
 
@@ -47,13 +47,13 @@ LLM-as-a-Verifier 是斯坦福 AI Lab 与 UC Berkeley Sky Computing Lab 联合�
 
 - [LLM-as-a-Verifier Framework（同源实体）](451-llm.html)
 - [LLM-as-a-Verifier（同源实体）](297-llm-as-a-verifier-a-general-purpose-verification.html)
-- [Verifier 驱动开发](https://github.com/QianJinGuo/wiki/blob/main/concepts/verifier-driven-development.md)
-- [RLVR：可验证推理强化学习](https://github.com/QianJinGuo/wiki/blob/main/concepts/rlvr-reinforcement-learning-verified-reasoning.md)
+- [Verifier 驱动开发](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/verifier-driven-development.md)
+- [RLVR：可验证推理强化学习](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/rlvr-reinforcement-learning-verified-reasoning.md)
 - [LLM-as-a-Judge 实践案例](214-evaluating-netflix-show-synopses-with-llm-as-a-judge.html)
 - [SWE-bench Agent 评估方法论](../ch03/004-agent.html)
 - Agent 评估基准体系
-- [LLM 研究前沿 MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-research-frontiers.md)
-- [评估与基准 MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)
+- [LLM 研究前沿 MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/llm-research-frontiers.md)
+- [评估与基准 MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/evaluation-and-benchmarks.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-as-a-verifier-a-general-purpose-verification-framework.md)
 

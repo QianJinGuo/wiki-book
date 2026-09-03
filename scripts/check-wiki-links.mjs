@@ -1,0 +1,122 @@
+#!/usr/bin/env node
+/**
+ * Build-time guard for the public two-layer link contract.
+ *
+ * Without --require-targets this checks URL shape and stale private URLs,
+ * which is suitable for GitHub Actions. Local sync can additionally validate
+ * that every public target exists in the sibling wiki-public checkout.
+ */
+
+import { existsSync, readdirSync, readFileSync } from "node:fs";
+import { join, relative, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
+import { linkConfig } from "./link-config.mjs";
+
+const PROJECT_ROOT = resolve(fileURLToPath(new URL("..", import.meta.url)));
+const DOCS_DIR = join(PROJECT_ROOT, "docs");
+const REQUIRE_TARGETS = process.argv.includes("--require-targets");
+const PUBLIC_ROOT = resolve(
+  process.env.WIKI_PUBLIC_ROOT || join(PROJECT_ROOT, "..", "wiki-public"),
+);
+
+function walkPublishedMarkdown(directory, result = []) {
+  for (const entry of readdirSync(directory, { withFileTypes: true }).sort((a, b) =>
+    a.name.localeCompare(b.name),
+  )) {
+    if (entry.name === "raw" || entry.name === "site" || entry.name === "node_modules") continue;
+    const path = join(directory, entry.name);
+    if (entry.isDirectory()) walkPublishedMarkdown(path, result);
+    else if (entry.isFile() && entry.name.endsWith(".md")) result.push(path);
+  }
+  return result;
+}
+
+function pathFromUrl(url, baseUrl) {
+  const parsed = new URL(url);
+  const base = new URL(`${baseUrl}/`);
+  if (parsed.origin !== base.origin || !parsed.pathname.startsWith(base.pathname)) return null;
+  const path = decodeURIComponent(parsed.pathname.slice(base.pathname.length));
+  if (!path || path.includes("..") || path.startsWith("/")) return null;
+  return path;
+}
+
+function rawPathFromUrl(url) {
+  const parsed = new URL(url);
+  const configured = new URL(`${linkConfig.wikiBookRawBaseUrl}/`);
+  const acceptedBases = [
+    configured,
+    new URL(configured.href.replace("/tree/", "/blob/")),
+  ];
+  for (const base of acceptedBases) {
+    if (parsed.origin !== base.origin || !parsed.pathname.startsWith(base.pathname)) continue;
+    const path = decodeURIComponent(parsed.pathname.slice(base.pathname.length));
+    if (!path || path.includes("..") || path.startsWith("/")) return null;
+    return path;
+  }
+  return null;
+}
+
+const oldPrivateUrl = /https:\/\/github\.com\/QianJinGuo\/wiki(?:[\/\s)'"`]|$)/g;
+const allUrls = /https:\/\/github\.com\/QianJinGuo\/[^\s<>`)]+/g;
+const files = walkPublishedMarkdown(DOCS_DIR);
+const errors = [];
+const publicTargets = new Set();
+const rawTargets = new Set();
+
+for (const file of files) {
+  const content = readFileSync(file, "utf8");
+  const fileLabel = relative(PROJECT_ROOT, file);
+
+  for (const match of content.matchAll(oldPrivateUrl)) {
+    errors.push(`${fileLabel}: private wiki URL remains near ${match[0]}`);
+  }
+
+  for (const match of content.matchAll(allUrls)) {
+    const url = match[0].replace(/[.,;!?]+$/, "");
+    const publicPath = pathFromUrl(url, linkConfig.wikiPublicBaseUrl);
+    if (publicPath) {
+      if (!/^(entities|concepts|comparisons|queries|moc)\/.+\.md$/.test(publicPath)) {
+        errors.push(`${fileLabel}: invalid wiki-public target ${url}`);
+      } else {
+        publicTargets.add(publicPath);
+      }
+    }
+
+    const rawPath = rawPathFromUrl(url);
+    if (rawPath) {
+      if (!/^raw\/articles\/.+\.md$/.test(rawPath)) {
+        errors.push(`${fileLabel}: invalid wiki-book raw target ${url}`);
+      } else {
+        rawTargets.add(rawPath);
+      }
+    }
+  }
+}
+
+if (REQUIRE_TARGETS) {
+  if (!existsSync(PUBLIC_ROOT)) {
+    errors.push(`wiki-public target directory not found: ${PUBLIC_ROOT}`);
+  } else {
+    for (const target of publicTargets) {
+      if (!existsSync(join(PUBLIC_ROOT, target))) {
+        errors.push(`missing wiki-public target: ${target}`);
+      }
+    }
+  }
+
+  for (const target of rawTargets) {
+    if (!existsSync(join(PROJECT_ROOT, "docs", target))) {
+      errors.push(`missing wiki-book raw target: ${target}`);
+    }
+  }
+}
+
+console.log(
+  `Checked ${files.length} published Markdown files: ${publicTargets.size} public targets, ${rawTargets.size} raw targets`,
+);
+if (errors.length > 0) {
+  console.error(`Wiki link check failed with ${errors.length} error(s):`);
+  for (const error of errors.slice(0, 100)) console.error(`- ${error}`);
+  if (errors.length > 100) console.error(`- ... and ${errors.length - 100} more`);
+  process.exit(1);
+}

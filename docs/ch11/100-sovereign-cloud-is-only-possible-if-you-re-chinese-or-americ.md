@@ -120,7 +120,7 @@ Agent AI 的部署正在强化这种依赖——因为 AI 算力和模型都集�
 ---
 ## 关联
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/5237660.md)
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

@@ -36,7 +36,7 @@ Simon Willison（Django 联合创始人、Pelican Riding a Bicycle 测试基准�
 
 ### 3. 代码本体感觉（Proprioception）丧失比代码质量更可怕
 
-访谈最敏锐的观察是关于「开发者能力漂移」而非「代码质量下降」：代码库会变成「一层层你没参与决策的碎片」，不再亲手写代码就失去「这样加东西会有张力」的本能反应。 这个观察的杀伤力在于它指向一个长期问题：当下 80% 代码由 Agent 生成的工程师，5 年后会变成什么样？Simon 的判断是「风险不在于 AI 写坏代码，而在于开发者丧失辨别坏代码的能力」——这不是单点失败，而是能力基线整体下沉。这与 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 强调的「过程资产」是同一硬币的两面：过程资产是外部化的工程经验，本体感觉是内化的工程经验，两者都需要在 Agentic 时代被刻意维护，不能让 LLM 写代码的便利性把内化能力悄悄消解掉。
+访谈最敏锐的观察是关于「开发者能力漂移」而非「代码质量下降」：代码库会变成「一层层你没参与决策的碎片」，不再亲手写代码就失去「这样加东西会有张力」的本能反应。 这个观察的杀伤力在于它指向一个长期问题：当下 80% 代码由 Agent 生成的工程师，5 年后会变成什么样？Simon 的判断是「风险不在于 AI 写坏代码，而在于开发者丧失辨别坏代码的能力」——这不是单点失败，而是能力基线整体下沉。这与 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 强调的「过程资产」是同一硬币的两面：过程资产是外部化的工程经验，本体感觉是内化的工程经验，两者都需要在 Agentic 时代被刻意维护，不能让 LLM 写代码的便利性把内化能力悄悄消解掉。
 
 ### 4. 真正的产品壁垒是「数据层和接口」而不是代码
 

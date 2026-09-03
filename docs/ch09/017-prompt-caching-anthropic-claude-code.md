@@ -154,8 +154,8 @@ Prompt Cache 命中率应该进监控，且告警阈值要严格。如果团队�
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html)
 - [Claude Code Agent 工程设计](../ch03/048-claude-code-agent.html)
 - [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/057-claude-code.html)
-- [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
+- [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/claude-code-tool-design-evolution.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/memory-context-systems.md)
 
 ---
 

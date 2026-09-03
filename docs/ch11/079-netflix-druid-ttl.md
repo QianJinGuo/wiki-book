@@ -68,8 +68,8 @@ Netflix 选择拦截代理而非修改 Druid 源码，这是一个务实的工�
 ## 相关实体
 - [High Throughput Graph Abstraction At Netflix](087-high-throughput-graph-abstraction-at-netflix-part-i.html)
 - [High Throughput Graph Abstraction At Netflix Part I](087-high-throughput-graph-abstraction-at-netflix-part-i.html)
-- [Netflix Live Operations Human Infrastructure](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-live-operations-human-infrastructure.md)
-- [Netflix Metadata Service Model Lifecycle Graph](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-metadata-service-model-lifecycle-graph.md)
+- [Netflix Live Operations Human Infrastructure](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-live-operations-human-infrastructure.md)
+- [Netflix Metadata Service Model Lifecycle Graph](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-metadata-service-model-lifecycle-graph.md)
 - [Netflix Nebula Archrules](077-netflix-nebula-archrules-java-archunit.html)
 
 ## 相关引用

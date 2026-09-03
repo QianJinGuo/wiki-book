@@ -15,7 +15,7 @@
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-k2-6-multi-agent.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/multi-agent-coordination.md)
 ## 深度分析
 
 **1. 总管（Commander）模式是多 Agent 协作的核心调度枢纽。** 整个工作流以"需求输入（飞书）→ 总管（commander）→ 市场调研 → 产品设计 → 架构设计 → 开发实现 → 测试验收"为主线，Commander 作为总控节点负责任务分发和流程推进。这种星型拓扑结构适合任务类型明确、流程顺序相对固定的企业研发场景，但单点故障风险需要关注。

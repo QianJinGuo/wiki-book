@@ -61,7 +61,7 @@ Genkit 明确指出中间件从左到右组合，第一个列出的在最外层�
 2. **Filesystem 中间件的路径安全是基础能力**：任何让 Agent 访问本地资源的实现都必须有路径安全机制。检查模型是否真的无法逃逸根目录——这在对抗性输入下尤其重要。
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-model-research-latest-directions.md)
+> [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-model-research-latest-directions.md)
 
 - [Task Queue Priority and Fairness: Your Task Queue, Your Way](../ch11/168-task-queue-priority-and-fairness-your-task-queue-your-way.html)
 - [Task Queue Priority and Fairness: Your Task Queue, your way](../ch11/168-task-queue-priority-and-fairness-your-task-queue-your-way.html)

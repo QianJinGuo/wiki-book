@@ -134,7 +134,7 @@ SpreadsheetBench 从 77.5 暴跌到 55.0（-22.5 分）的实验揭示：跨 epo
 ## 相关实体
 - [Tencent Skill Writing Complete Playbook Jackjchou](054-skill.html)
 - [Claude Design Skill](../ch01/722-claude-design-skill.html)
-- [Git Repo Based Pm Automation](https://github.com/QianJinGuo/wiki/blob/main/entities/git-repo-based-pm-automation.md)
+- [Git Repo Based Pm Automation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/git-repo-based-pm-automation.md)
 - [Ai Skill Skill Creator 源码拆解](../ch04/235-skill-skill.html)
 - [Qoder Skill Ui Agent Human Collaboration](../ch03/045-qoder-skill-ui-agent.html)
 

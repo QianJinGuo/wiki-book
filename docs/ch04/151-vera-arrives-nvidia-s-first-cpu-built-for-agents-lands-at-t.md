@@ -94,7 +94,7 @@ NVLink Fusion 向第三方 XPU 开放 NVIDIA 基础设施平台，使合作伙�
 - [Sap Unveils The Autonomous Enterprise](059-sap-unveils-the-autonomous-enterprise.html)
 - [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](../ch03/004-agent.html)
 - [Nemotron 3 5 Content Safety](../ch01/368-nemotron-3-5-content-safety-customizable-multimodal-safety.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/blogs.nvidia.com-vera-cpu-delivery.md)
 

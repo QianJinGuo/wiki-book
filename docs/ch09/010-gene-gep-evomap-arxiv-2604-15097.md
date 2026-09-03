@@ -213,7 +213,7 @@ Benchmark70 任务全量复现：https://github.com/EvoMap/critpt-openclaw-repro
 ## 实践启示
 
 1. **将 Skill 文档中的程序性内容提取为 Gene 结构**：把 workflow / pitfalls / constraints / AVOID 从 Skill 文档中独立出来，重新组织成 `keywords + strategy + AVOID` 的紧凑控制对象——这是从 Skill 到 Gene 的最小可行迁移路径
-2. **失败经验的最优沉淀形态是 AVOID 警告而非 trajectory log**：把失败经验写成一个一个独立的"AVOID xxx"警告，比保留完整的失败日志或反思摘要更能提升控制信号质量——[Hermes 自我改进闭环](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-self-improving-loop-winty.md)中的 SKILL.md 自迭代设计可以借鉴这一原则
+2. **失败经验的最优沉淀形态是 AVOID 警告而非 trajectory log**：把失败经验写成一个一个独立的"AVOID xxx"警告，比保留完整的失败日志或反思摘要更能提升控制信号质量——[Hermes 自我改进闭环](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-self-improving-loop-winty.md)中的 SKILL.md 自迭代设计可以借鉴这一原则
 3. **强模型（Pro 级）上长 Skill 会压住固有能力**：在部署 Gene 时，对强模型优先使用 Gene 而非完整 Skill 包——这与 [Skill 高级实践](../ch01/284-agent-skill.html) 中"根据模型能力梯度选择注入内容"的设计原则一致
 4. **GEP 协议是 A2A 群体智能的基础设施**：若计划让多个 Agent 之间交换经验，传输结构化 Gene 对象（而非 Skill 文档）才能实现可匹配、可验证、可累积的群体进化——[Darwin Skill 互优化](../ch01/261-hermes-agent-skill.html)的跨 Agent 经验交换实验可作为参考实现
 5. **结构宽容意味着 Gene 可以跨版本复用**：过时 Gene 只要控制框架对仍可用——在更新 Gene 池时优先更新 strategy 层和 AVOID 警告，而非推翻重来

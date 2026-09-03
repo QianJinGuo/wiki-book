@@ -92,7 +92,7 @@ RFT 的有效性被双向约束在基线准确率的中间区间：过低则 rew
 
 ### 5. Reward Function 质量优先于所有超参数
 
-在"Common pitfalls"章节，原文将 **reward function 质量** 置于所有超参数之前：一个差的 reward function 会导致准确率下降，无论其他超参数如何调整；而一个精细的 reward function 在相同基础设施上产生一致的性能提升。这一原则对于所有 reinforcement learning 应用都具有普遍意义——它揭示了 [catastrophic forgetting](https://github.com/QianJinGuo/wiki/blob/main/concepts/catastrophic-forgetting.md) 之外另一种模型能力损失路径：reward hacking，即模型找到绕过 reward 函数意图的捷径，而非真正改进目标行为。LLM-as-judge 的选择同样需要验证，确保评判模型在模型输出质量范围内具有区分度。
+在"Common pitfalls"章节，原文将 **reward function 质量** 置于所有超参数之前：一个差的 reward function 会导致准确率下降，无论其他超参数如何调整；而一个精细的 reward function 在相同基础设施上产生一致的性能提升。这一原则对于所有 reinforcement learning 应用都具有普遍意义——它揭示了 [catastrophic forgetting](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/catastrophic-forgetting.md) 之外另一种模型能力损失路径：reward hacking，即模型找到绕过 reward 函数意图的捷径，而非真正改进目标行为。LLM-as-judge 的选择同样需要验证，确保评判模型在模型输出质量范围内具有区分度。
 
 ## 实践启示
 
@@ -106,7 +106,7 @@ LoRA 对亚优超参的宽容性使其成为 pipeline 验证的理想起点。Po
 
 ### 3. SFT 必须包含 Reasoning-Instruction-Following 类别
 
-在 SFT 的 Nova 数据混合中，包含 `reasoning-instruction-following` 类别是**必选项而非可选项**。跳过这一类别是导致 fine-tuned 模型 reasoning 性能下降的常见原因。这个类别的作用是维持模型的通用推理和指令遵循能力，防止域定制过程对通用 benchmark 性能造成不必要的侵蚀。这与 [LLM pre-training vs SFT](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-pretraining-vs-sft.md) 之间的关系一致——SFT 阶段如果缺少通用能力类别的监督信号，模型会在特定任务上过拟合而丧失泛化能力。
+在 SFT 的 Nova 数据混合中，包含 `reasoning-instruction-following` 类别是**必选项而非可选项**。跳过这一类别是导致 fine-tuned 模型 reasoning 性能下降的常见原因。这个类别的作用是维持模型的通用推理和指令遵循能力，防止域定制过程对通用 benchmark 性能造成不必要的侵蚀。这与 [LLM pre-training vs SFT](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/llm-pretraining-vs-sft.md) 之间的关系一致——SFT 阶段如果缺少通用能力类别的监督信号，模型会在特定任务上过拟合而丧失泛化能力。
 
 ### 4. 数据质量优先，混合比例以 50% 为实验起点
 

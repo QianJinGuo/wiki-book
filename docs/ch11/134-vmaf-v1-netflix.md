@@ -114,9 +114,9 @@ v1 通过三个优化实现了更低的计算复杂度：
 
 ## 相关实体
 
-- [Netflix Kueue 迁移](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-kueue-batch-compute-migration.md) — Netflix 基础设施工程
-- [Netflix 分层通知系统](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-notification-slow-fast-hierarchical-rl.md) — Netflix RL 应用
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 质量约束与验证
+- [Netflix Kueue 迁移](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-kueue-batch-compute-migration.md) — Netflix 基础设施工程
+- [Netflix 分层通知系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-notification-slow-fast-hierarchical-rl.md) — Netflix RL 应用
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — 质量约束与验证
 
 ---
 

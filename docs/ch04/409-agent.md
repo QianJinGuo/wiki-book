@@ -30,7 +30,7 @@
 - **引入更强 judge / 更多 self-check** → 体验等待变长
 - **增加检索和 rerank 次数** → 答案更稳，但每个请求的成本翻倍
 
-这一洞察与 [Llm Observability 4 Layer Model](https://github.com/QianJinGuo/wiki/blob/main/concepts/llm-observability-4-layer-model.md) 中的成本监控层直接相关。
+这一洞察与 [Llm Observability 4 Layer Model](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/llm-observability-4-layer-model.md) 中的成本监控层直接相关。
 
 ### Tracing 的真正价值
 
@@ -60,7 +60,7 @@ Tracing 让成本-质量取舍不再停留在架构师脑中，而变成产品�
 
 ---
 ## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 - 相关: Agent 架构
 
 ---

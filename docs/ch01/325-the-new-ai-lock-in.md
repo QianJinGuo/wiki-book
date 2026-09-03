@@ -34,7 +34,7 @@ Greyhound Research 的 Sanchit Vir Gogia 精确地指出了这一点："锁定�
 
 作者用 Kubernetes 来类比 MCP 是极具洞察力的。Kubernetes 标准化了容器编排层，消除了"在哪运行容器"的锁定——但紧接着，锁定就转移到了上层的托管服务（GKE/EKS/AKS）、身份管理、网络策略、可观测性和数据重力之上。企业发现，虽然容器可以跨云迁移，但围绕容器构建的整个运维生态却牢牢绑定在特定云平台上。
 
-MCP 正在对 AI agent 生态做同样的事：将"模型如何连接工具和数据"这一层标准化和低成本化。如果你维护过半打到 ServiceNow、Salesforce 或 Jira 的定制 connector，MCP 确实是福音。但 MCP 的本质是一个协议而非平台——它能让 agent 与工具对话，却无法告诉你谁批准了这个 agent、它能访问哪些数据、它的行为如何被审计记录、如何在操作员离职后安全关闭它。这些问题属于 [MCP Protocol](https://github.com/QianJinGuo/wiki/blob/main/entities/mcp-protocol.md) 本身无法覆盖的企业治理层，它们是 irreducibly local 的——属于那些愿意花时间去了解组织内部运作的人类。
+MCP 正在对 AI agent 生态做同样的事：将"模型如何连接工具和数据"这一层标准化和低成本化。如果你维护过半打到 ServiceNow、Salesforce 或 Jira 的定制 connector，MCP 确实是福音。但 MCP 的本质是一个协议而非平台——它能让 agent 与工具对话，却无法告诉你谁批准了这个 agent、它能访问哪些数据、它的行为如何被审计记录、如何在操作员离职后安全关闭它。这些问题属于 [MCP Protocol](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mcp-protocol.md) 本身无法覆盖的企业治理层，它们是 irreducibly local 的——属于那些愿意花时间去了解组织内部运作的人类。
 
 ### 三层锁定的结构性差异：Orchestration / Workflow Surface / Services
 
@@ -63,7 +63,7 @@ Anthropic 开源 Agent Skills 并强调"skills you create aren't locked to Claud
 
 ## 相关实体
 
-- [MCP Protocol](https://github.com/QianJinGuo/wiki/blob/main/entities/mcp-protocol.md) — MCP 协议本身的标准化与局限性，是本文"协议不等于平台"论点的技术基础
+- [MCP Protocol](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mcp-protocol.md) — MCP 协议本身的标准化与局限性，是本文"协议不等于平台"论点的技术基础
 - [企业级 Agent 编排](../ch04/242-agent-orchestration.html) — 企业场景下 agent 编排的实际挑战，与本文 orchestration 层锁定的分析直接相关
 - [Agent orchestration](../ch04/242-agent-orchestration.html) — Agent 编排框架的通用讨论，对应本文 LangGraph 等框架的锁定分析
 

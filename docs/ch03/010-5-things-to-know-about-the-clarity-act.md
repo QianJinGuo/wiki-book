@@ -114,8 +114,8 @@ CLARITY Act 并不打算解决所有问题。实际上，围绕以下议题的�
 
 ## 相关概念
 
-- [CLARITY Act 五要点（另一版本）](https://github.com/QianJinGuo/wiki/blob/main/entities/clarity-act-5-things.md)
-- [CLARITY Act 金融版](https://github.com/QianJinGuo/wiki/blob/main/entities/clarity-act-5-things.md)
+- [CLARITY Act 五要点（另一版本）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/clarity-act-5-things.md)
+- [CLARITY Act 金融版](https://github.com/QianJinGuo/wiki-public/blob/main/entities/clarity-act-5-things.md)
 
 ## 相关话题
 

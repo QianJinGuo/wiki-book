@@ -80,7 +80,7 @@ Step 3-4 展示 SwiGLU MLP 内核的性能分析：
 - "Agent 部署策略" — Agent 部署策略
 - "Agent 循环设计" — Agent 循环设计
 - "AWS AI 服务生态" — AWS AI 服务
-- [Cloud Ai Infrastructure](https://github.com/QianJinGuo/wiki/blob/main/concepts/cloud-ai-infrastructure.md) — 云 AI 基础设施
+- [Cloud Ai Infrastructure](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/cloud-ai-infrastructure.md) — 云 AI 基础设施
 - "开源 Agent 框架" — 开源 Agent 框架
 
 ---

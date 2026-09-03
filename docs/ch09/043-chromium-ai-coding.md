@@ -202,7 +202,7 @@ WebGPU 使浏览器可以直接运行 AI 模型——这可能改变"AI 编码�
 ## 相关实体
 - [Ai Coding Agent Memory System](../ch04/253-ai-coding-agent.html)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/prompt-engineering-guide.md)
 ## 相关主题
 
 - Agent 编排框架

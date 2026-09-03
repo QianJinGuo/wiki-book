@@ -72,7 +72,7 @@ GPT 5.4 是把极强软件基础（GPT 5.3 Codex）和更多简单可用性/Agen
 
 ## 相关实体
 - [Codex Goal Six Hour Run](../ch09/047-codex-goal-six-hour-run.html)
-- [Three Years Gpt3 Gemini3 Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/three-years-gpt3-gemini3-mollick.md)
+- [Three Years Gpt3 Gemini3 Mollick](https://github.com/QianJinGuo/wiki-public/blob/main/entities/three-years-gpt3-gemini3-mollick.md)
 - GPT-5.5 实测
 - [Kimi Work Codex Vibe Working Paradigm Shift](393-codex.html)
 - [Openai Codex Super Computer Network Xinzhiyuan](../ch09/115-openai-codex.html)

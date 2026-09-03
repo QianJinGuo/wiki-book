@@ -164,8 +164,8 @@ log.md 只追加不修改确保了知识变更的历史完整性；evidence.cont
 → 腾讯知识沉淀体系（同一作者上篇）
 → （Harness 六层构成与行业实践）
 → （多层记忆系统与长时稳定性）
-→ [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki/blob/main/concepts/karpathy-llm-wiki-v2.md)（渐进式知识披露模式）
-→ [知识管理即护城河](https://github.com/QianJinGuo/wiki/blob/main/entities/knowledge-mgmt-is-moat.md)（知识管理作为竞争壁垒的核心论点）
+→ [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/karpathy-llm-wiki-v2.md)（渐进式知识披露模式）
+→ [知识管理即护城河](https://github.com/QianJinGuo/wiki-public/blob/main/entities/knowledge-mgmt-is-moat.md)（知识管理作为竞争壁垒的核心论点）
 
 ---
 

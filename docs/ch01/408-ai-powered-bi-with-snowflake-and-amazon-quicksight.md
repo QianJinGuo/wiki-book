@@ -79,7 +79,7 @@ Snowflake Semantic View 是一种原生 schema 对象，将业务定义直接附
 - 单一事实来源 → 数字一致性保证
 - LLM 查询受语义约束 → 幻觉减少
 
-这与 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的核心理念一致：**将约束下放到更低层，让上层组件在受控环境中运行**。
+这与 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 的核心理念一致：**将约束下放到更低层，让上层组件在受控环境中运行**。
 
 ### LLM 幻觉的技术机制
 
@@ -129,8 +129,8 @@ Snowflake 联合行业领导者推动的开放语义交换标准（OSI），目�
 
 - [Snowflake Agentic Enterprise](../ch03/004-agent.html) — Snowflake 的 Agent 平台愿景
 - [SchemaFlow](316-openai.html) — Agent 驱动的 SQL 生成
-- [Anthropic Data Analysis](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-95pct-data-analysis-summary-189-chars.md) — LLM 数据分析的另一个视角
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 约束下放的架构理念
+- [Anthropic Data Analysis](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-95pct-data-analysis-summary-189-chars.md) — LLM 数据分析的另一个视角
+- [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — 约束下放的架构理念
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-powered-bi-with-snowflake-and-amazon-quick.md)
 

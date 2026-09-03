@@ -100,7 +100,7 @@ fork 机制尤其关键：它解决了一个根本矛盾——「我想用你的
 - [AgentScope Java Harness Framework 企业分布式版](../ch05/008-harness.html) — 同一作者，更早的框架介绍
 ## 相关实体
 
-- [enterprise readiness maturity model](https://github.com/QianJinGuo/wiki/blob/main/entities/enterprise-readiness-maturity-model.md)
+- [enterprise readiness maturity model](https://github.com/QianJinGuo/wiki-public/blob/main/entities/enterprise-readiness-maturity-model.md)
 
 ---
 

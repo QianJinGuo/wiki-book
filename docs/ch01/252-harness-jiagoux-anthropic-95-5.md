@@ -165,7 +165,7 @@ JiaGouX 建议避开"公司级聊天查数入口"，更小一点反而更稳。�
 - [Claude Code Dynamic Workflows Jiagoux Architect Perspective](../ch09/069-claude-code-dynamic-workflows.html)
 - [Agent Reliability Engineering Skillify Continuous Improvement](../ch07/054-skill.html)
 - [Agent Skill Writing Evaluation](284-agent-skill.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-95pct-data-analysis-jiagoux-data-level-harness-20260606.md)
 

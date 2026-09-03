@@ -96,7 +96,7 @@ eval 的核心价值不是衡量，而是**对齐团队认知**：当一个团�
 - **自动化要做到 100%**：95% 的自动化等于没自动化，因为人会养成绕过不完整自动化的习惯。从每天都会用的工作流开始，强制自己完全依赖 AI 完成
 
 ## 与 Wiki 已有内容的关联
-- 补充 [Openclaw Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md) 的 Anthropic 内部视角（OpenClaw 限制订阅用户使用的背景逻辑）
+- 补充 [Openclaw Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/openclaw-architecture.md) 的 Anthropic 内部视角（OpenClaw 限制订阅用户使用的背景逻辑）
 - 补充 [Claude Code Prompt Context Harness](050-claude-code-prompt.html) 的产品方法论维度（日更发布、研究预览、eval 驱动）
 - 补充 Claude Cowork 的使用边界和使用场景（Cat Wu 一手用例）
 - 为 [Agent Self Improvement Six Mechanisms](../ch03/004-agent.html) 提供企业级 Agent 内部工作流参考

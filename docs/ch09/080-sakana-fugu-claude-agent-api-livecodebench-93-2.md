@@ -80,7 +80,7 @@ Fugu 的发布时机非常精准——Anthropic 在 2026 年 6 月 12 日宣布�
 
 ---
 ## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

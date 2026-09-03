@@ -41,7 +41,7 @@ AI 项目最常见的误判，是把 Demo 跑通，当成落地已经开始。
 - [AI Gateway production index](../ch04/257-ai.html)
 - AI Gateway production index
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/workflow-orchestration.md)
 ## 深度分析
 AI 项目从 PoC 到生产的转化率低，本质上是一个系统工程能力的缺失，而非单一技术问题。通过对原文的拆解，可以提炼出四个核心维度的结构性矛盾。
 

@@ -56,8 +56,8 @@ Harness SVP Trevor Stuart 指出了本质矛盾：**"行业过去十年所依赖
 ## 相关实体
 - [Engineering Roles Shift From Developing Code To Ma](061-engineering-roles-shift-from-developing-code-to-managing-ai.html)
 - [From Doer To Director The Ai Mindset Shift](../ch01/029-from-doer-to-director-the-ai-mindset-shift.html)
-- [Gbhackers Sandworm Shift From It Breaches](https://github.com/QianJinGuo/wiki/blob/main/entities/gbhackers-sandworm-shift-from-it-breaches.md)
-- [Sandworm Hackers Shift It Breaches Ot Gbhackers](https://github.com/QianJinGuo/wiki/blob/main/entities/sandworm-hackers-shift-it-breaches-ot-gbhackers.md)
+- [Gbhackers Sandworm Shift From It Breaches](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gbhackers-sandworm-shift-from-it-breaches.md)
+- [Sandworm Hackers Shift It Breaches Ot Gbhackers](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sandworm-hackers-shift-it-breaches-ot-gbhackers.md)
 - [Hs.Playerzero Ai Code Review](../ch04/257-ai.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/engineering-roles-shift-from-developing-code-to-managing-ai.md)

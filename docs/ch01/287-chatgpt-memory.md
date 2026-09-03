@@ -148,13 +148,13 @@ Canvas 被设计为"独立画布"而非对话线程的延伸，这是它与普�
 3. **竞品差异化机会**：ChatGPT 在"记忆可见性"和"Source Grounding"上是短板，NotebookLM 的音频概览功能 ChatGPT 至今没有复现，任何专注于"可验证记忆 + 引用溯源"的产品都有切入空间。
 
 ## Related
-- [AI 知识管理工具横向对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/ai-knowledge-tools-comparison.md)
-- [NotebookLM](https://github.com/QianJinGuo/wiki/blob/main/entities/notebook-lm.md) — 文档驱动的 AI 研究助手
+- [AI 知识管理工具横向对比](https://github.com/QianJinGuo/wiki-public/blob/main/comparisons/ai-knowledge-tools-comparison.md)
+- [NotebookLM](https://github.com/QianJinGuo/wiki-public/blob/main/entities/notebook-lm.md) — 文档驱动的 AI 研究助手
 - [Obsidian](../ch03/071-karpathy-llm-wiki-obsidian-agents-md.html) — 本地离线笔记
 ## 相关实体
 
 - [entrypoint hijacking](071-entrypoint-hijacking.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-memory-architecture.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-memory-architecture.md)
 
 ---
 

@@ -12,11 +12,11 @@
 - [reducing container cold start times using soci index on dlam](711-reducing-container-cold-start-times-using-soci-index-on-dlam.html)
 - [state of routing in model serving](../ch11/152-state-of-routing-in-model-serving.html)
 - [the distillation panic](477-the-distillation-panic.html)
-- [sft, rl, and on-policy distillation through a distributional](https://github.com/QianJinGuo/wiki/blob/main/entities/untitled-v2.md)
-- [直播预约 | 数据引擎：具身智能的下一个决胜局](https://github.com/QianJinGuo/wiki/blob/main/entities/直播预约-数据引擎具身智能的下一个决胜局.md)
+- [sft, rl, and on-policy distillation through a distributional](https://github.com/QianJinGuo/wiki-public/blob/main/entities/untitled-v2.md)
+- [直播预约 | 数据引擎：具身智能的下一个决胜局](https://github.com/QianJinGuo/wiki-public/blob/main/entities/直播预约-数据引擎具身智能的下一个决胜局.md)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/latest-open-artifacts-20-new-orgs-new-types-of-models-with-n.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/nvidia-gpu-acceleration.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
 ## 深度分析
 
 Latest open artifacts (#20): New orgs! New types of models! With Nemotron Super, Sarvam, Cohere Transcribe, & others 涉及agent领域的核心技术议题。
@@ -31,7 +31,7 @@ This Artifacts Log post is unusual in how many diverse, quirky models there are 
 ### 关联实体
 
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](651-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
-- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
+- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04/176-openclaw.html)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/004-agent.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch04/176-openclaw.html)

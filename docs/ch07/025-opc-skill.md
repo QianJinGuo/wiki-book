@@ -71,7 +71,7 @@ OPC（One Person Company）模式的核心理念是让小型团队拥有端到�
 
 ### 2. Skill 作为决策框架而非自动化脚本
 
-值得注意的设计哲学：这些 Skill 不是简单的任务自动化脚本，而是一套**决策框架**。每个 Skill 的目的是引导人类做出更好的判断，而不是替代人类的判断。例如 synthesize-research 帮助团队评估证据强度，write-spec 强制团队回答"为什么不做"（Non-goals）和"做到什么程度算完成"（Acceptance Criteria）。这与 [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 中"Agent 应辅助人类而非替代人类"的核心理念一致。
+值得注意的设计哲学：这些 Skill 不是简单的任务自动化脚本，而是一套**决策框架**。每个 Skill 的目的是引导人类做出更好的判断，而不是替代人类的判断。例如 synthesize-research 帮助团队评估证据强度，write-spec 强制团队回答"为什么不做"（Non-goals）和"做到什么程度算完成"（Acceptance Criteria）。这与 [Harness Engineering 框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 中"Agent 应辅助人类而非替代人类"的核心理念一致。
 
 ### 3. 从"快速交付"到"做正确的事"的范式转变
 
@@ -101,8 +101,8 @@ OPC（One Person Company）模式的核心理念是让小型团队拥有端到�
 
 ## 相关实体
 
-- [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [Agent Harness Engineering Paradigm](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-harness-engineering-paradigm.md)
+- [Harness Engineering 框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- [Agent Harness Engineering Paradigm](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-harness-engineering-paradigm.md)
 - [面向 Agent 的后端设计](../ch03/004-agent.html)
 - [企业 Agent 编排](../ch04/242-agent-orchestration.html)
 

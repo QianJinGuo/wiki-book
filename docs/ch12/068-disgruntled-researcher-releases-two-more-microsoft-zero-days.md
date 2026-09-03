@@ -43,7 +43,7 @@ Dead man's switch 的存在意味着简单地切断研究者和企业的联系�
 对于威胁情报团队，建议将 Nightmare-Eclipse 纳入监控名单，持续跟踪其 GitHub 仓库和博客更新，并建立基于 IOC（入侵指标）的早期预警机制。
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
+> [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/moc/cybersecurity-privacy.md)
 
 - [Cline releases open-source agent runtime SDK](../ch04/290-agentrun.html)
 - [LLM raiders and how to repel them](../ch01/451-llm.html) — AI 基础设施安全的另一个威胁向量

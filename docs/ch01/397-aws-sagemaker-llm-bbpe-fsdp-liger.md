@@ -66,9 +66,9 @@ AWS 教程提供了可运行的基础流水线，但生产化需要自行补齐�
 ## 相关实体
 - [Aws Reinforcement Fine Tuning Llm As Judge](451-llm.html)
 - [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](470-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
-- [Aws Sagemaker Capacity Aware Inference Fallback](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-sagemaker-capacity-aware-inference-fallback.md)
+- [Aws Sagemaker Capacity Aware Inference Fallback](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-sagemaker-capacity-aware-inference-fallback.md)
 - [Aws Sagemaker Ai Agent Guided Workflows Finetuning](../ch04/312-ai-agent.html)
-- [Aws Grpo Rlvr Sagemaker Math Reasoning](https://github.com/QianJinGuo/wiki/blob/main/entities/aws-grpo-rlvr-sagemaker-math-reasoning.md)
+- [Aws Grpo Rlvr Sagemaker Math Reasoning](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-grpo-rlvr-sagemaker-math-reasoning.md)
 
 ## 相关引用
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-sagemaker-azerbaijani-lm.md)

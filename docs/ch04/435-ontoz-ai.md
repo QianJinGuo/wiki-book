@@ -26,11 +26,11 @@
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/004-agent.html)
 - [Karpathy Vibe Coding Agentic Engineering](098-karpathy-vibe-coding-agentic-engineering.html)
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01/651-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
-- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
+- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/memory-context-systems.md)
 
 ---
 

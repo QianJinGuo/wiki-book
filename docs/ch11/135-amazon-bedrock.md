@@ -104,7 +104,7 @@ IBS Software 投入 9 名研究人员和工程师，历时约 4 个月完成项�
 
 ---
 ## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

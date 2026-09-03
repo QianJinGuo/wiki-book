@@ -54,8 +54,8 @@ Understand-Anything 本质上是将代码库的静态结构转化为动态交互
 - [Business Agent Augmentation Layer Practitioner Methodology 20260606](../ch03/004-agent.html)
 - [Ai Coding Agent Quality Defense Five Control Mechanisms](../ch04/253-ai-coding-agent.html)
 - [Rag技术框架的演进方向](../ch01/168-rag.html)
-- [Graphify](https://github.com/QianJinGuo/wiki/blob/main/entities/graphify-software-engineering-knowledge-graph.md) — 同一赛道的另一款软件工程知识图谱工具
-- [Cursor.Com Composer 2 5](https://github.com/QianJinGuo/wiki/blob/main/entities/cursor.com-composer-2-5.md) — 同为 AI coding 工具
+- [Graphify](https://github.com/QianJinGuo/wiki-public/blob/main/entities/graphify-software-engineering-knowledge-graph.md) — 同一赛道的另一款软件工程知识图谱工具
+- [Cursor.Com Composer 2 5](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cursor.com-composer-2-5.md) — 同为 AI coding 工具
 - [How Ai Agent Memory Works](../ch04/131-how-ai-agent-memory-works.html) — Agent 记忆机制
 
 ## 第 2 来源：码途漫谈 2026-06-11 补充视角
@@ -64,7 +64,7 @@ Understand-Anything 本质上是将代码库的静态结构转化为动态交互
 
 ### 补充 1：README 的设计哲学——"Graphs that teach, not graphs that impress"
 
-码途漫谈引用了 README 里的关键设计原则：**Graphs that teach, not graphs that impress**。这与[Graphify](https://github.com/QianJinGuo/wiki/blob/main/entities/graphify-software-engineering-knowledge-graph.md)等"高密度可视化"工具形成鲜明对比——Understand Anything 主动把图谱简化，强调"降低认知负担"而不是"展示复杂度"。这一设计哲学与第 1 来源的 Token 成本模型有内在一致性：图谱越简单 → Token 消耗越低 → 越容易做增量更新。
+码途漫谈引用了 README 里的关键设计原则：**Graphs that teach, not graphs that impress**。这与[Graphify](https://github.com/QianJinGuo/wiki-public/blob/main/entities/graphify-software-engineering-knowledge-graph.md)等"高密度可视化"工具形成鲜明对比——Understand Anything 主动把图谱简化，强调"降低认知负担"而不是"展示复杂度"。这一设计哲学与第 1 来源的 Token 成本模型有内在一致性：图谱越简单 → Token 消耗越低 → 越容易做增量更新。
 
 ### 补充 2：知识库分析能力（不只服务代码）
 

@@ -89,12 +89,12 @@
 
 - [Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)——了解「氛围编程」如何重塑开发流程
 - [Claude Code 架构](../ch03/057-claude-code.html)——Anthropic推出的AI编程代理，深入理解其设计哲学和能力边界
-- [Coding Agent Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-agent-architecture.md)——从技术架构角度理解AI Agent与传统软件的根本差异
+- [Coding Agent Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/coding-agent-architecture.md)——从技术架构角度理解AI Agent与传统软件的根本差异
 
 ## 相关实体
 - [Claude Code Commands Usage Guide](../ch03/057-claude-code.html)
 
-- [这样的程序员应该招吗](https://github.com/QianJinGuo/wiki/blob/main/entities/这样的程序员应该招吗.md)
+- [这样的程序员应该招吗](https://github.com/QianJinGuo/wiki-public/blob/main/entities/这样的程序员应该招吗.md)
 - [今天起Claude正式接入Office全家桶跨应用还能共享记忆](340-claude.html)
 - [Claude Code Prompt Source Analysis Fanone](../ch09/050-claude-code-prompt.html)
 - [Claude Code Html Artifact Workflow Ifanr](430-claude-code-html-artifact-workflow-ifanr-analysis.html)

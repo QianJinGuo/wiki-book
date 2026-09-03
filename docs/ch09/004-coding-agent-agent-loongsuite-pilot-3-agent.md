@@ -333,7 +333,7 @@ Pilot 平台的 OTel 标准化输出意味着企业可以将 Coding Agent 的执
 → [第 1 来源原文归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/alibaba-agent-observability-audit-loongsuite-pilot-coding-agent-blackbox-transparent.md)
 ---
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/observability-monitoring.md)
 ## 第 2 来源：从个人生产力到组织能力——LoongSuite-Pilot×SLS 的 AI Coding 度量实践
 
 > 作者：徐可甲（阿里云云原生）

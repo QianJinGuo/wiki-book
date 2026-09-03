@@ -95,7 +95,7 @@ SP 800-213r1 刻意与 NIST CSF 2.0、SP 800-53 Rev. 5 和 Risk Management Frame
 
 ---
 ## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

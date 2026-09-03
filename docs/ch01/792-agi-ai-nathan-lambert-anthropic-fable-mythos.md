@@ -35,7 +35,7 @@ Lambert 指出，这一事件标志着从"ChatGPT 时代的 AI 治理"到"AGI �
 
 ## 与现有实体的关系
 
-- [Anthropic vs DoW 与开源模型的权力均衡](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-vs-dow-open-models-power-equilibrium-2026.md) — 从开源模型生态角度分析同一事件，但缺少 Lambert 的"AGI 治理范式转换"框架
+- [Anthropic vs DoW 与开源模型的权力均衡](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-vs-dow-open-models-power-equilibrium-2026.md) — 从开源模型生态角度分析同一事件，但缺少 Lambert 的"AGI 治理范式转换"框架
 - [Nathan Lambert：开源权重安全论的三个认知陷阱](326-nathan-lambert.html) — Lambert 之前的文章，聚焦于开源安全论点的具体错误
 - [Dean Ball 论开源模型与政府控制](547-dean-ball-on-open-models-and-government-control.html) — 从政策角度分析，但缺少事件内幕视角
 - [Claude Fable 5 and new AI safety fables](593-claude-fable-5-and-new-ai-safety-fables.html) — Fable 安全讨论的综述

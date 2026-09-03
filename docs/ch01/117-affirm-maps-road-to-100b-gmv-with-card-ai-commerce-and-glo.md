@@ -8,13 +8,13 @@
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/affirmmapsroadto100bgmvwithcardaicommerc.md)
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
+> [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/moc/cybersecurity-privacy.md)
 
 - [Affirm Maps Road to $100B GMV With Card, AI Commerce and Global Expansion](../ch03/069-affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-glo.html)
 - [Affirm Maps Road to $100B GMV With Card, AI Commerce](../ch03/065-affirm-maps-road-to-100b-gmv-with-card-ai-commerce.html)
 - [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](168-rag.html)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-privacy-landscape.md)
 ## 深度分析
 Affirm 在 2026 年投资者论坛上披露的 $100B GMV 路线图，揭示了这家 BNPL 公司正在从支付工具向全栈金融网络转型。
 **闭环网络的结构性优势。** Max Levchin 强调 Affirm 已构建了一个"闭环且信息保留"的支付网络，同时扮演发行方、收单方、征信传输方和风险管理方四重角色。这种垂直整合使 Affirm 能够在交易粒度上进行实时风险定价，而传统银行依赖的征信模型往往只能基于账户级别汇总数据。

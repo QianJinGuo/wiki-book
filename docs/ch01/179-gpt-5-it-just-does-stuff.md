@@ -145,14 +145,14 @@ Mollick 结尾那句 Premonition 特别值得抄下来：**「我们会搞清楚
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/057-harness-engineering.html)
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html)
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](651-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
-- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
+- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 - [Chatgpt默认模型大升级Gpt 55 Instant正式上线新增记忆来源功能](712-chatgpt.html)
-- [Cvpr 2026 Highlight 让Ai像电影人一样 看 视频 8B小模型反超Gpt 5与Gemini 3 1 Pro](https://github.com/QianJinGuo/wiki/blob/main/entities/CVPR-2026-Highlight-让AI像电影人一样-看-视频-8B小模型反超GPT-5与Gemini-3-1-Pro.md)
+- [Cvpr 2026 Highlight 让Ai像电影人一样 看 视频 8B小模型反超Gpt 5与Gemini 3 1 Pro](https://github.com/QianJinGuo/wiki-public/blob/main/entities/CVPR-2026-Highlight-让AI像电影人一样-看-视频-8B小模型反超GPT-5与Gemini-3-1-Pro.md)
 - [Cvpr 2026 Highlight让Ai像电影人一样看视频8B小模型反超Gpt 5与Gemini 31 Pro](../ch04/257-ai.html)
 - [A Recent Experience With Chatgpt 55 Pro Gowerss Weblog](712-chatgpt.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/098-karpathy-vibe-coding-agentic-engineering.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/vision-multimodal.md)
 
 ---
 

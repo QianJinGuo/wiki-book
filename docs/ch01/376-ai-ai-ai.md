@@ -53,7 +53,7 @@
 - 系统匹配的 SOP 是**展开后的完整 Prompt**
 - SOP 中包含的领域知识、流程步骤、质量标准是**预注入的上下文**
 
-这与 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的理念高度一致：**好的 harness 让用户无需理解底层复杂性**。用户只需要表达意图，harness 负责将意图转化为可执行的精确指令。
+这与 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 的理念高度一致：**好的 harness 让用户无需理解底层复杂性**。用户只需要表达意图，harness 负责将意图转化为可执行的精确指令。
 
 ### SOP 持续生产循环的技术含量
 
@@ -94,15 +94,15 @@ SOP 的持续生产是胖鹅AI 最有价值的能力。这个循环本质上是�
 1. **SOP 设计是新的核心竞争力**：在 AI 工具趋向同质化的背景下，高质量的领域 SOP 成为差异化来源。投资于 SOP 的设计、测试和持续优化
 2. **Prompt 工程的未来是 Prompt 预计算**：与其教用户写更好的 Prompt，不如将好的 Prompt 封装为 SOP，让用户通过简单交互触发
 3. **建立自动化的 Skill/SOP 评估管线**：参考胖鹅AI 的持续生产循环和 SkillOpt 的方法论，用数据驱动 SOP 的迭代优化
-4. **关注「AI 用 AI」的编排层**：当单个 AI 能力趋于饱和，价值转向如何编排多个 AI 协作完成复杂任务——这是 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的核心领域
+4. **关注「AI 用 AI」的编排层**：当单个 AI 能力趋于饱和，价值转向如何编排多个 AI 协作完成复杂任务——这是 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 的核心领域
 
 ## 相关实体
 
 - [Skillopt Microsoft Train Skill Like Neural Network](../ch05/028-skillopt.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/098-karpathy-vibe-coding-agentic-engineering.html)
-- [大反转马斯克牵手对手 Darioanthropic 与 Spacex 罕见合作](https://github.com/QianJinGuo/wiki/blob/main/entities/大反转马斯克牵手对手-darioanthropic-与-spacex-罕见合作.md)
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- [大反转马斯克牵手对手 Darioanthropic 与 Spacex 罕见合作](https://github.com/QianJinGuo/wiki-public/blob/main/entities/大反转马斯克牵手对手-darioanthropic-与-spacex-罕见合作.md)
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

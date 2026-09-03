@@ -36,7 +36,7 @@ Summit 上的讨论发生了范式转移：从「把 AI 当作效率工具」转
 
 ### Agentic harness：教育场景的 AI 治理新框架
 
-教育 AI 治理不同于企业治理：它必须同时回应偏见传播、学生安全与公平获取三个维度，且执行主体是学校而非技术公司。「Agentic harness」这一隐喻强调引导而非放任——像给马套上缰绳一样约束 AI 的运行轨道，使其产生可信、可靠的结果。教育场景的治理压力是真实的：参见 [Canvas 泄露事件](https://github.com/QianJinGuo/wiki/blob/main/entities/canvas-breach-disrupts-schools-colleges-nationwide.md)，教育平台的安全事故直接波及全国学校与学生数据。治理框架的成熟度将决定 AI 从实验走向真实教学场景的速度，这也与 [负责任 AI 治理](https://github.com/QianJinGuo/wiki/blob/main/concepts/responsible-ai-governance.md) 的一般性原则相互印证。
+教育 AI 治理不同于企业治理：它必须同时回应偏见传播、学生安全与公平获取三个维度，且执行主体是学校而非技术公司。「Agentic harness」这一隐喻强调引导而非放任——像给马套上缰绳一样约束 AI 的运行轨道，使其产生可信、可靠的结果。教育场景的治理压力是真实的：参见 [Canvas 泄露事件](https://github.com/QianJinGuo/wiki-public/blob/main/entities/canvas-breach-disrupts-schools-colleges-nationwide.md)，教育平台的安全事故直接波及全国学校与学生数据。治理框架的成熟度将决定 AI 从实验走向真实教学场景的速度，这也与 [负责任 AI 治理](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/responsible-ai-governance.md) 的一般性原则相互印证。
 
 ## 实践启示
 
@@ -53,8 +53,8 @@ Summit 上的讨论发生了范式转移：从「把 AI 当作效率工具」转
 - [Jagged AI Frontier](../ch04/257-ai.html)
 - [Agentic AI 与人类共存范式](../ch04/395-agentic-ai.html)
 - [管理作为 AI 时代的超能力](361-management-as-ai-superpower.html)
-- [Canvas 泄露事件：教育平台安全的警钟](https://github.com/QianJinGuo/wiki/blob/main/entities/canvas-breach-disrupts-schools-colleges-nationwide.md)
-- [Salesforce 无头软件化](https://github.com/QianJinGuo/wiki/blob/main/entities/salesforce-headless-software-losing-head-a16z.md)
+- [Canvas 泄露事件：教育平台安全的警钟](https://github.com/QianJinGuo/wiki-public/blob/main/entities/canvas-breach-disrupts-schools-colleges-nationwide.md)
+- [Salesforce 无头软件化](https://github.com/QianJinGuo/wiki-public/blob/main/entities/salesforce-headless-software-losing-head-a16z.md)
 
 ---
 

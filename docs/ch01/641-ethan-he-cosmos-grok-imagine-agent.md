@@ -25,7 +25,7 @@
 - [Latest Open Artifacts 20 New Orgs New Types Of Models With N](647-latest-open-artifacts-20-new-orgs-new-types-of-models.html)
 - [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](113-hy3-preview.html)
 - [Code As Agent Harness Survey](../ch09/044-code-as-agent-harness.html)
-- [Demis Hassabis Yc Interview Jiedaotixi](https://github.com/QianJinGuo/wiki/blob/main/entities/demis-hassabis-yc-interview-jiedaotixi.md)
+- [Demis Hassabis Yc Interview Jiedaotixi](https://github.com/QianJinGuo/wiki-public/blob/main/entities/demis-hassabis-yc-interview-jiedaotixi.md)
 - [Ai Agent Harness Construction Akshay Baoyu](../ch05/035-agent-harness.html)
 
 ## 实践启示
@@ -37,7 +37,7 @@
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/vision-multimodal.md)
 
 ---
 

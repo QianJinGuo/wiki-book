@@ -251,7 +251,7 @@ Ollama 返回的 tool_call 不是原生 Python dict，**直接 `json.dump` 会�
 
 ### 2. 工具描述作为 LLM 决策的唯一契约
 
-原文强调 `description` 是 LLM 调用工具的"唯一依据"——这个表述的深层含义是：**描述文本就是 Prompt 和执行层之间的唯一桥梁**。当 description 质量差，即使工具实现正确，LLM 也不会调用它。这意味着在 Agent 架构中，工具描述工程师（prompt engineer 的变体）与工具实现工程师是两个独立技能树。这个洞察与 [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 中"上下文管理决定 Agent 上限"的核心论点一致——description 是上下文的最窄瓶颈。
+原文强调 `description` 是 LLM 调用工具的"唯一依据"——这个表述的深层含义是：**描述文本就是 Prompt 和执行层之间的唯一桥梁**。当 description 质量差，即使工具实现正确，LLM 也不会调用它。这意味着在 Agent 架构中，工具描述工程师（prompt engineer 的变体）与工具实现工程师是两个独立技能树。这个洞察与 [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 中"上下文管理决定 Agent 上限"的核心论点一致——description 是上下文的最窄瓶颈。
 
 ### 3. 斜杠命令是分层架构的最小实践
 
@@ -285,7 +285,7 @@ Ollama tool_call 对象的序列化问题是本文"卡了最久"的坑——这�
 
 ### 5. 用最小可运行版本快速验证架构假设
 
-本文的 "Learning by Building" 方法论的价值在于：**250 行代码暴露架构假设的速度远快于读论文或文档**。当你不确定"上下文压缩是否会导致 Agent 失忆"这个假设时，写一个 250 行版本跑一遍，比在任何框架里尝试配置更直接。这个方法论与 [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 的"通过迭代 Harness 来验证假设"思路一致，但更适用于个人开发者在早期阶段的快速原型验证。
+本文的 "Learning by Building" 方法论的价值在于：**250 行代码暴露架构假设的速度远快于读论文或文档**。当你不确定"上下文压缩是否会导致 Agent 失忆"这个假设时，写一个 250 行版本跑一遍，比在任何框架里尝试配置更直接。这个方法论与 [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 的"通过迭代 Harness 来验证假设"思路一致，但更适用于个人开发者在早期阶段的快速原型验证。
 
 ---
 

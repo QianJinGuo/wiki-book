@@ -44,7 +44,7 @@ LLM 不像传统搜索那样存在可操纵的逻辑流程，它更像人脑：�
 6. **组织补位**：在无法改变汇报线的公司里，先为 SEO 争取跨职能的资源配置承诺（如固定的工程支持），再谈 AEO
 
 ## 相关实体
-- [SEO is a product, AEO is brand](https://github.com/QianJinGuo/wiki/blob/main/entities/seo-product-aeo-brand-productledseo.md)
+- [SEO is a product, AEO is brand](https://github.com/QianJinGuo/wiki-public/blob/main/entities/seo-product-aeo-brand-productledseo.md)
 - [AEO and GEO for AI Overviews](058-aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-p.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/p-seo-is-a-product-aeo-is-brand.md)

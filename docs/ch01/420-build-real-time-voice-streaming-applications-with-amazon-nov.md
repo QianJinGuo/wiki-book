@@ -17,18 +17,18 @@
 - [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](470-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12/031-amazon-bedrock-api.html)
 
-- [Www A16Z News Need Series C Call A16Z](https://github.com/QianJinGuo/wiki/blob/main/entities/www-a16z-news-need-series-c-call-a16z.md)
+- [Www A16Z News Need Series C Call A16Z](https://github.com/QianJinGuo/wiki-public/blob/main/entities/www-a16z-news-need-series-c-call-a16z.md)
 - [Amazon Nova Forge Hyperparameter Tuning Art Science](../ch11/049-amazon-nova-forge.html)
 - [Object Detection With Amazon Nova 2 Lite](../ch11/096-amazon-nova-2-lite.html)
 - [Network Firewall Deploy Guide 6 Bedrock Ai Conflict Detection](../ch11/211-bedrock.html)
 - [Accelerate Llm Model Loading And Increase Context Windows Wi](695-accelerate-llm-model-loading-and-increase-context-windows-wi.html)
-- [用 Amazon Quick 加速日常数据工作](https://github.com/QianJinGuo/wiki/blob/main/entities/用-amazon-quick-加速日常数据工作.md)
+- [用 Amazon Quick 加速日常数据工作](https://github.com/QianJinGuo/wiki-public/blob/main/entities/用-amazon-quick-加速日常数据工作.md)
 - [使用 Amazon Cognito 多区域复制提高应用程序韧性](../ch11/201-amazon-cognito.html)
 - [Amazon Quick Arns Cross Account Migration And Namespace Perm](../ch11/023-amazon-quick-arns-cross-account-migration-and-namespace-per.html)
 - [Fundamentals Large Tabular Model Nexus Is Now Available On A](../ch04/257-ai.html)
 - [The Art And Science Of Hyperparameter Optimization On Amazon Nova Forge](../ch11/206-the-art-and-science-of-hyperparameter-optimization-on-amazon.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-misc-topics-frontier.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/amazon-aws-ai.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/ai-misc-topics-frontier.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/amazon-aws-ai.md)
 ## 深度分析
 1. **Speech-to-Speech 统一架构 vs. 级联 pipeline 的本质差异**
    Nova Sonic 采用 unified speech-to-speech 而非传统的 ASR→LLM→TTS 三段式架构，这意味着延迟瓶颈从三次网络往返压缩为单次，解释了为何能实现"低延迟实时对话"。传统方案中每次语义理解都要等待完整识别完成，而 Nova Sonic 在语音层面就完成理解和生成闭环。

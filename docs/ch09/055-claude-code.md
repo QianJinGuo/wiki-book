@@ -39,7 +39,7 @@ Claude Code 的架构设计体现了"工程化 Agent 系统"的核心理念：�
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/057-harness-engineering.html)
 - [Claude Code 可控性：软规则无法变成硬约束](../ch03/057-claude-code.html)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/008-harness.html)
-- [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
+- [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki-public/blob/main/queries/harness-peer-review-framework.md)
 - [AutoResearch：多 Agent 自动化软件开发](../ch03/004-agent.html)
 - [Agent Harness 架构](../ch05/035-agent-harness.html)
 - [Agent 自我改进的六条路](../ch03/004-agent.html)
@@ -47,7 +47,7 @@ Claude Code 的架构设计体现了"工程化 Agent 系统"的核心理念：�
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](../ch04/302-agent-skills.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/057-claude-code.html)
 - [Claude Code 源码核心机制详解](../ch03/057-claude-code.html)
-- [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
+- [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-window-management.md)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/057-claude-code.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/004-agent.html)
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/340-claude.html)
@@ -55,7 +55,7 @@ Claude Code 的架构设计体现了"工程化 Agent 系统"的核心理念：�
 - [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/057-claude-code.html)
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/008-harness.html)
 - [Agent 原理、架构与工程实践](../ch03/004-agent.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/claude-code-complete-guide.md)
 
 ---
 

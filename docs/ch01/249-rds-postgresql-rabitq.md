@@ -75,7 +75,7 @@ RaBitQ 的理论基础来自论文《RaBitQ: Quantizing High-Dimensional Vectors
 - [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/290-agentrun.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
 - [RAG深度解析：分块、向量化、召回、重排，才是"蒸馏同事skill"的关键](../ch07/054-skill.html)
-- [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki/blob/main/entities/别再把上下文当聊天记录.md)
+- [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki-public/blob/main/entities/别再把上下文当聊天记录.md)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/057-harness-engineering.html)
 - [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch04/176-openclaw.html)
 
@@ -84,7 +84,7 @@ RaBitQ 的理论基础来自论文《RaBitQ: Quantizing High-Dimensional Vectors
 - [LoongSuite GenAI 可观测语义规范](../ch04/257-ai.html)
 - [低代码 Agent、框架 Agent、自研 Agent 决策框架](../ch03/004-agent.html)
 - [三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战](../ch05/076-ai-coding.html)
-- [卡片式对话的协议方案探索和思考](https://github.com/QianJinGuo/wiki/blob/main/entities/卡片式对话的协议方案探索和思考.md)
+- [卡片式对话的协议方案探索和思考](https://github.com/QianJinGuo/wiki-public/blob/main/entities/卡片式对话的协议方案探索和思考.md)
 
 ---
 

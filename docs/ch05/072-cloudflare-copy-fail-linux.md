@@ -75,14 +75,14 @@ CVE-2026-31431（代号 "Copy Fail"）是一个 Linux 内核本地提权漏洞�
 
 ## 相关主题
 
-- [Nginx RCE 漏洞](https://github.com/QianJinGuo/wiki/blob/main/entities/nginx-rift-achieving-nginx-remote-code-execution-v.md)
+- [Nginx RCE 漏洞](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nginx-rift-achieving-nginx-remote-code-execution-v.md)
 - Linux 内核安全
 - eBPF 安全应用
 - BPF-LSM 策略引擎
 
 ---
 ## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

@@ -125,7 +125,7 @@ Git 历史泄露问题在被发现前存在于 SWE-bench-Multilingual 的生产�
 - [Agent Eval 框架](../ch03/004-agent.html)
 - [AI Agent 评测实战：5 维指标体系 + L1/L2/L3 准出分级](../ch05/076-ai-coding.html)
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claw-swe-bench-harness-evaluation-benchmark-tokenrhythm.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-and-benchmarks.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/evaluation-and-benchmarks.md)
 
 ---
 

@@ -44,7 +44,7 @@ Ian Buck 逐家上门、在 OpenAI 现场用螺丝刀拆机讲解、在 OCI 与�
 
 ## 相关实体
 
-- [Blogs.Nvidia.Com Vera Cpu Delivery](https://github.com/QianJinGuo/wiki/blob/main/entities/blogs.nvidia.com-vera-cpu-delivery.md) — 同源 NVIDIA 官方博客条目
+- [Blogs.Nvidia.Com Vera Cpu Delivery](https://github.com/QianJinGuo/wiki-public/blob/main/entities/blogs.nvidia.com-vera-cpu-delivery.md) — 同源 NVIDIA 官方博客条目
 - [Nvidia Nemotron 3 Agents Rag Voice Safety](../ch03/004-agent.html) — NVIDIA Agent 产品线（RAG/语音/安全）
 - [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](../ch03/004-agent.html) — NVIDIA MoE Agentic 模型栈
 - [Nvidia Edge First Llms Av Robotics](170-nvidia-edge-first-llms-av-robotics.html) — NVIDIA 边缘 LLM 与机器人场景

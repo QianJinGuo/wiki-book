@@ -202,7 +202,7 @@ DSA + MSA 都选了 KL 对齐训练"挑块的小脑"，这背后有几个工程�
 **可解释性**：小脑=学"模仿主网络的 attention 模式" → 出现异常时可直接观察小脑选了什么
 **可蒸馏性**：用主网络当老师 → 学生（小脑）规模可以极小（MSA 索引分支只用 1 个打分头）
 
-这与 [Agent 自我改进循环](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-self-improvement-loops.md) 中"用强模型教弱模型"的范式一脉相承——但这里的"强弱"是同一模型的不同角色（main branch 是老师，index branch 是学生）。
+这与 [Agent 自我改进循环](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-self-improvement-loops.md) 中"用强模型教弱模型"的范式一脉相承——但这里的"强弱"是同一模型的不同角色（main branch 是老师，index branch 是学生）。
 
 ### 4. Head 涌现模式反映的训练稳定性
 
@@ -253,11 +253,11 @@ MSA 论文花了大量篇幅讲"试过、没用、砍掉"：
 - [MiniMax M3 开源 Frontier 模型](../ch09/052-minimax-m3-frontier.html) — MSA 是 M3 的核心架构创新
 - [DeepSeek V4 Flash Pro 1M 上下文](661-deepseek-v4-flash-pro.html) — 压得狠路线的最新代表
 - [DeepSeek V4 训练方法学](459-deepseek-v4.html) — 训练配方对比
-- [Lighthouse Attention](https://github.com/QianJinGuo/wiki/blob/main/entities/lighthouse_attention.md) — 另一款稀疏 attention 方案（对称 Q/K/V 池化）
-- [Attention Mechanism](https://github.com/QianJinGuo/wiki/blob/main/concepts/attention-mechanism.md) — 稀疏注意力的概念基础
-- [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md) — 长上下文管理的核心议题
+- [Lighthouse Attention](https://github.com/QianJinGuo/wiki-public/blob/main/entities/lighthouse_attention.md) — 另一款稀疏 attention 方案（对称 Q/K/V 池化）
+- [Attention Mechanism](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/attention-mechanism.md) — 稀疏注意力的概念基础
+- [Context Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/context-engineering.md) — 长上下文管理的核心议题
 - [近期 LLM 架构进展](451-llm.html) — 注意力架构的近期综述
-- [Agent 自我改进循环](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-self-improvement-loops.md) — KL 对齐作为 "强教弱" 范式的理论基础
+- [Agent 自我改进循环](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-self-improvement-loops.md) — KL 对齐作为 "强教弱" 范式的理论基础
 - [M3 开源三件套](../ch09/052-minimax-m3-frontier.html) — 同一文章的不同角度解读
 
 ## 总结：长上下文之争转向"成本"

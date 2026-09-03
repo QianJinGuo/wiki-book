@@ -132,9 +132,9 @@ ExifTool 13.50 的修复方案代表了处理此类漏洞的最佳实践：
 3. **不要依赖单一安全措施**: 组合使用多种安全实践（系统更新、安全软件、谨慎的上网习惯）才能获得最佳防护效果。
 
 ## 相关实体
-- [Exiftool Compromise Mac 592994](https://github.com/QianJinGuo/wiki/blob/main/entities/exiftool-compromise-mac-592994.md)
+- [Exiftool Compromise Mac 592994](https://github.com/QianJinGuo/wiki-public/blob/main/entities/exiftool-compromise-mac-592994.md)
 - [Shub Reaper Macos Stealer Attack Chain](../ch04/257-ai.html)
-- [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
+- [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki-public/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
 - [Cve 2026 20182 Unauthenticated Cisco Sd Wan Control Plane Compromise Via Vhub Au](059-cve-2026-20182-unauthenticated-cisco-sd-wan-control-plane-c.html)
 - [Claw Chain Cyera Research Unveil Four Chainable Vulnerabilities In Openclaw](../ch09/058-claw-chain-cyera-research-unveil-four-chainable-vulnerabili.html)
 

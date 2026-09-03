@@ -91,7 +91,7 @@ Teams 模式下 Agent 间直接 `send_message`，主 Agent 退到监督位。这
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/004-agent.html)
 - [Kimi Work Codex Vibe Working Paradigm Shift](../ch01/393-codex.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/057-harness-engineering.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/multi-agent-coordination.md)
 
 ---
 

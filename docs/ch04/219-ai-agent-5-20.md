@@ -103,9 +103,9 @@ Anthropic案例中，模型无故在搜索查询加"2025"，根本原因是工�
 
 ## 关联
 - [Agent工程原则架构实践](../ch03/004-agent.html)
-- [Claude Code深度架构分析](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-deep-architecture-analysis.md)
-- [MCP工具搜索与代码编排](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-mcp-revisited.md)
-- [Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md)
+- [Claude Code深度架构分析](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/claude-code-deep-architecture-analysis.md)
+- [MCP工具搜索与代码编排](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-mcp-revisited.md)
+- [Hermes Agent](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/hermes-agent.md)
 
 ## 相关实体
 - [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/057-claude-code.html)
@@ -115,16 +115,16 @@ Anthropic案例中，模型无故在搜索查询加"2025"，根本原因是工�
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/057-claude-code.html)
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](302-agent-skills.html)
 - [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](../ch01/560-anthropic-ai.html)
-- [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
+- [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-window-management.md)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/057-claude-code.html)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/004-agent.html)
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](../ch01/340-claude.html)
 
-- [Harness Engineering 七层框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-7-layers-framework.md)
+- [Harness Engineering 七层框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-7-layers-framework.md)
 
-- [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)
-- [Skills 系统设计三方对比](https://github.com/QianJinGuo/wiki/blob/main/comparisons/skill-system-design-comparison.md)
-- [Ai Task Scheduling Dynamic Hibernate Aliyun Mse](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-task-scheduling-dynamic-hibernate-aliyun-mse.md)
+- [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/claude-code-tool-design-evolution.md)
+- [Skills 系统设计三方对比](https://github.com/QianJinGuo/wiki-public/blob/main/comparisons/skill-system-design-comparison.md)
+- [Ai Task Scheduling Dynamic Hibernate Aliyun Mse](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/ai-task-scheduling-dynamic-hibernate-aliyun-mse.md)
 
 ---
 

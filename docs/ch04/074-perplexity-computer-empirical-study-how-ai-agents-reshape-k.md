@@ -29,7 +29,7 @@ AI 时代，验证信息的准确性和完整性比从零生成信息更重要�
 不要基于假设做 AI 采用决策——用 A/B 测试和实证数据量化实际影响。
 
 ## 相关实体
-- [Perplexity Search As Code Generation](https://github.com/QianJinGuo/wiki/blob/main/entities/perplexity-search-as-code-generation.md)
+- [Perplexity Search As Code Generation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/perplexity-search-as-code-generation.md)
 - [Agent Harness Observability Production](../ch05/035-agent-harness.html)
 - [Harness Engineering Systematic Explainer](../ch05/057-harness-engineering.html)
 - [Google Agentic Rag Sufficient Context Agent Framesqa](../ch03/004-agent.html)

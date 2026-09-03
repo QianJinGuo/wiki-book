@@ -69,7 +69,7 @@
 
 - [10 Common Component Architecture Mistakes in Figma Design Systems](016-10-common-component-architecture-mistakes-in-figma-design-sy.html)
 - [Agentic Systems Extreme Co-Design（NVIDIA 极简协同设计）](004-agent.html)
-- [What the design-to-code loop unlocks](https://github.com/QianJinGuo/wiki/blob/main/entities/design-to-code-loop-figma.md)
+- [What the design-to-code loop unlocks](https://github.com/QianJinGuo/wiki-public/blob/main/entities/design-to-code-loop-figma.md)
 
 ---
 

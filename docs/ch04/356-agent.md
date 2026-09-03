@@ -9,7 +9,7 @@
 
 ## 相关实体
 - [Ath Agent Trust Handshake Protocol](../ch03/004-agent.html)
-- [Canvas Breach Disrupts Schools Colleges Nationwide](https://github.com/QianJinGuo/wiki/blob/main/entities/canvas-breach-disrupts-schools-colleges-nationwide.md)
+- [Canvas Breach Disrupts Schools Colleges Nationwide](https://github.com/QianJinGuo/wiki-public/blob/main/entities/canvas-breach-disrupts-schools-colleges-nationwide.md)
 - [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](../ch03/050-skills.html)
 - [Aws Bedrock Agentcore Identity Security](../ch11/045-bedrock-agentcore.html)
 - [Github Investigating Teampcp Claimed 17Cc77](../ch01/474-github.html)
@@ -41,9 +41,9 @@ Skill Ward 揭示了第三方 Skill 生态的深层风险：恶意 Skill 的真�
 **5. 优先选择数据本地沉淀的安全方案**：Observer 的本地审计 + 自进化防御设计强调所有数据本地沉淀、不上云^。在企业场景中，Agent 运行数据包含大量业务上下文，安全方案的数据不留云是合规层面的基本要求。
 
 ## 关联阅读
-- [Managed Agents Architecture](https://github.com/QianJinGuo/wiki/blob/main/concepts/managed-agents-architecture.md) — 管理 Agent 的规模化运行
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Agent 运行时 Harness 框架
-- [Claude Code Source Leak Lifecycle](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-source-leak-lifecycle.md) — Claude Code 源码分析中的安全机制
+- [Managed Agents Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/managed-agents-architecture.md) — 管理 Agent 的规模化运行
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — Agent 运行时 Harness 框架
+- [Claude Code Source Leak Lifecycle](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/claude-code-source-leak-lifecycle.md) — Claude Code 源码分析中的安全机制
 
 ---
 

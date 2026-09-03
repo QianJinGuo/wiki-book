@@ -39,8 +39,8 @@ The docs present the security story as a benefit, and in one sense it is: Pipes 
 
 ## 相关实体
 - [WorkOS Pipes: Third-party integrations without the headache](048-workos-pipes-third-party-integrations-without-the-headache.html)
-- [Cloudflare OAuth for All](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-oauth-for-all.md)
-- [OAuth phishing and click-jacking vectors](https://github.com/QianJinGuo/wiki/blob/main/entities/thehackernews-com-the-new-phishing-click-how-oauth.md)
+- [Cloudflare OAuth for All](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloudflare-oauth-for-all.md)
+- [OAuth phishing and click-jacking vectors](https://github.com/QianJinGuo/wiki-public/blob/main/entities/thehackernews-com-the-new-phishing-click-how-oauth.md)
 - [Low-code API integration](../ch03/054-how-to-build-low-code-api-integrations-for-enterprise-apps-u.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pipes-workos-docs.md)

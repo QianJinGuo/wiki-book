@@ -33,7 +33,7 @@ Rod Johnson 回归：Embabel 与「最后一波由人类选择的框架」 涉�
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/tool-use-mcp-patterns.md)
 
 ---
 

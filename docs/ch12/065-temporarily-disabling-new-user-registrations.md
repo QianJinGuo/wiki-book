@@ -46,10 +46,10 @@ rubygems.org 这类开放包注册中心几乎是供应链攻击的理想靶标�
 
 ## 相关实体
 
-- [RubyGems 暂停注册事件深度分析](https://github.com/QianJinGuo/wiki/blob/main/entities/rubygems-temp-disable-registrations.md)：同一事件、同一状态页来源的姊妹条目，含完整时间线与防御层次拆解
+- [RubyGems 暂停注册事件深度分析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rubygems-temp-disable-registrations.md)：同一事件、同一状态页来源的姊妹条目，含完整时间线与防御层次拆解
 - [TanStack npm 供应链攻击复盘](../ch04/257-ai.html)：npm 生态同类供应链事故的 postmortem 对照
 - [Thinkst Package Proxy 供应链安全校验](../ch04/257-ai.html)：在包代理层做安全校验的工程实践
-- [DDoSing Software Delivery Pipelines](https://github.com/QianJinGuo/wiki/blob/main/entities/varoa-ddosing-software-delivery-pipelines-2026.md)：针对软件交付管线的 DDoS 攻击研究
+- [DDoSing Software Delivery Pipelines](https://github.com/QianJinGuo/wiki-public/blob/main/entities/varoa-ddosing-software-delivery-pipelines-2026.md)：针对软件交付管线的 DDoS 攻击研究
 - [Checkmarx Jenkins 插件供应链攻击](../ch01/280-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html)：工具链组件被投毒的供应链攻击案例
 - [Skill 版本管理五大原则](../ch07/054-skill.html)：依赖版本管理与持续演进策略
 

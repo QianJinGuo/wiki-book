@@ -87,10 +87,10 @@ Mollick 发现，当他对 Gemini 3 提出模糊但有空间的改进建议（"b
 
 ## 相关实体
 - [Using Ai Right Now Mollick Quick Guide](257-ai.html)
-- [Gpt5 Just Does Stuff Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/gpt5-just-does-stuff-mollick.md)
+- [Gpt5 Just Does Stuff Mollick](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gpt5-just-does-stuff-mollick.md)
 - [Guide Ai Agents Models Apps Harnesses Mollick](312-ai-agent.html)
-- [Sign Of The Future Gpt 55 Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/sign-of-the-future-gpt-55-mollick.md)
-- [Bitter Lesson Garbage Can Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/bitter-lesson-garbage-can-mollick.md)
+- [Sign Of The Future Gpt 55 Mollick](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sign-of-the-future-gpt-55-mollick.md)
+- [Bitter Lesson Garbage Can Mollick](https://github.com/QianJinGuo/wiki-public/blob/main/entities/bitter-lesson-garbage-can-mollick.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/three-years-from-gpt-3-to-gemini-3.md)
 

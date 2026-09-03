@@ -38,12 +38,12 @@ Fuze CTO 指出核心痛点：GuardDuty 告警淹没团队，Exaforce 将其梳�
 6. **关注 onboarding 到首次响应速度**：<30 天上线即出首次响应、24 小时内产出可行动洞察，是衡量数据接入与模型预热效率的实用信号。
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
+> [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/moc/cybersecurity-privacy.md)
 
 - [Exaforce | Agentic SOC Platform and MDR](../ch04/013-exaforce-agentic-soc-platform-and-mdr.html)
 - [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](168-rag.html)
 - [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7](418-deepseek.html)
-- [AI 安全全景](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-security-landscape.md)
+- [AI 安全全景](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/ai-security-landscape.md)
 
 ---
 

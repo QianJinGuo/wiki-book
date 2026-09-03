@@ -60,7 +60,7 @@ coze-bridge 是扣子 3.0 这次更新的机制核心：在用户本地跑一个
 - [Harness 工程](../ch05/057-harness-engineering.html)
 - [Claude Code 大型代码库团队部署](../ch05/035-agent-harness.html)
 - [Karpathy × Boris：Software 3.0 编程地图](451-llm.html)
-- [MOC：工作流编排](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
+- [MOC：工作流编排](https://github.com/QianJinGuo/wiki-public/blob/main/moc/workflow-orchestration.md)
 
 ---
 

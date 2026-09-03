@@ -92,7 +92,7 @@ owner 负责维护内容和发布节奏，协作者参与修改后，新版本�
 
 ---
 ## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 - 相关: Agent 架构
 
 ---

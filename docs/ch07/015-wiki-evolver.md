@@ -4,11 +4,11 @@
 
 ## 相关查询
 
-- [Wiki Evolver 工作流程与最佳实践](https://github.com/QianJinGuo/wiki/blob/main/queries/wiki-evolver-workflow-best-practices.md) — wiki-evolver cycle 机制、frontier 决策、evaluation harness 与回归测试
+- [Wiki Evolver 工作流程与最佳实践](https://github.com/QianJinGuo/wiki-public/blob/main/queries/wiki-evolver-workflow-best-practices.md) — wiki-evolver cycle 机制、frontier 决策、evaluation harness 与回归测试
 
 ## 为什么需要这一层
-当前 vault 已经有比较成熟的 ingest / index / log / lint 闭环，也已经有 `[Wiki Master Map](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)`、``、`` 这样的导航与治理面。但这些层更多解决的是"怎么把知识存进去、找出来、维护好"，还没有系统性解决"如何让知识库主动长出新的研究问题、论文候选、工程实践和下一代 Skill"。
-Wiki Evolver 的作用正是在这里：它把 ``、`[Ai Team Knowledge Harness](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-team-knowledge-harness.md)`、`[Harness Engineering Systematic Framework](../ch05/057-harness-engineering.html)` 等现有思想，提升成一个统一编排层。
+当前 vault 已经有比较成熟的 ingest / index / log / lint 闭环，也已经有 `[Wiki Master Map](https://github.com/QianJinGuo/wiki-public/blob/main/moc/wiki-master-map.md)`、``、`` 这样的导航与治理面。但这些层更多解决的是"怎么把知识存进去、找出来、维护好"，还没有系统性解决"如何让知识库主动长出新的研究问题、论文候选、工程实践和下一代 Skill"。
+Wiki Evolver 的作用正是在这里：它把 ``、`[Ai Team Knowledge Harness](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/ai-team-knowledge-harness.md)`、`[Harness Engineering Systematic Framework](../ch05/057-harness-engineering.html)` 等现有思想，提升成一个统一编排层。
 
 ## Core Contract
 这个 Skill 的完成条件不是"发现了有趣文章"，而是每轮至少要产出一个 durable outcome：
@@ -57,7 +57,7 @@ raw source
 → paper
 → Skill
 ```
-这条 ladder 把知识库从"资料堆积"转成"高层产物工厂"。它也解释了为什么 ``、`[Research Frontier Map](https://github.com/QianJinGuo/wiki/blob/main/queries/research-frontier-map.md)`、`[Paper Backlog](https://github.com/QianJinGuo/wiki/blob/main/queries/paper-backlog.md)`、`[Engineering Practice Backlog](https://github.com/QianJinGuo/wiki/blob/main/queries/engineering-practice-backlog.md)` 这些页面值得存在：它们是 ladder 上不同层级的导航与中间站。
+这条 ladder 把知识库从"资料堆积"转成"高层产物工厂"。它也解释了为什么 ``、`[Research Frontier Map](https://github.com/QianJinGuo/wiki-public/blob/main/queries/research-frontier-map.md)`、`[Paper Backlog](https://github.com/QianJinGuo/wiki-public/blob/main/queries/paper-backlog.md)`、`[Engineering Practice Backlog](https://github.com/QianJinGuo/wiki-public/blob/main/queries/engineering-practice-backlog.md)` 这些页面值得存在：它们是 ladder 上不同层级的导航与中间站。
 
 ## 与现有系统的分工
 | 层 | 角色 | 作用 |
@@ -73,7 +73,7 @@ raw source
 - ``
 - ``
 - ``
-- `[Vault Evolution Dashboard](https://github.com/QianJinGuo/wiki/blob/main/queries/vault-evolution-dashboard.md)`
+- `[Vault Evolution Dashboard](https://github.com/QianJinGuo/wiki-public/blob/main/queries/vault-evolution-dashboard.md)`
 它们分别承接问题发现、论文候选、工程实践候选和系统演化治理四种需求，是把"talk to my vault"做成长期机制的最小起点。
 现在这些页面已经齐了，因此下一阶段重点不再是"把页面补出来"，而是让它们作为固定控制面被周期性运行，持续把 recurring reasoning 压缩成 query、playbook、template、validator 和更稳的 Skill。
 
@@ -141,14 +141,14 @@ Wiki Evolver 的设计者强调它不应该写成一个"超大万能 Prompt"，�
 具体来说，当你设计一个 skill 或 automation 时，先问：这个 skill 的输入是什么、输出是什么、它的失败模式是什么？而不是先设计一个能"做一切"的超级 prompt。Wiki Evolver 的成功正是因为它定义了清晰的 contract（Core Contract），而不是试图在单次执行中解决所有问题。
 
 ## 相关查询
-- [Wiki 日常维护的最佳实践与常见问题解决方案](https://github.com/QianJinGuo/wiki/blob/main/queries/wiki-maintenance-faq.md) — Wiki 维护检查清单与常见问题
+- [Wiki 日常维护的最佳实践与常见问题解决方案](https://github.com/QianJinGuo/wiki-public/blob/main/queries/wiki-maintenance-faq.md) — Wiki 维护检查清单与常见问题
 
 ---
 [DONE]
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-structure-navigation.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/wiki-structure-navigation.md)
 
 ---
 

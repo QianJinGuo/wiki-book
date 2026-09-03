@@ -9,7 +9,7 @@ HiClaw v1.1.0 从单容器模式重构为标准的 **Controller-Reconciler 架�
 - `hiclaw-controller` 内嵌轻量级 kube-apiserver + kine 存储 CRD 数据，在 Embedded 模式下无需外部 K8s 集群
 - 同一 Controller 可通过 Helm Chart（`helm/hiclaw/`）部署在真实 K8s 集群，支持 Leader Election 高可用、RBAC、PVC、Pod 模板叠加
 - CRD 化资源管理：Worker、Team、Human、Manager 均为标准 CRD，支持 `kubectl get workers` 等操作
-→ [Hermes Agent 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md)
+→ [Hermes Agent 架构](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/hermes-agent.md)
 
 ### Hermes Worker 运行时
 Hermes Agent 成为 HiClaw Worker 的**一等公民运行时**：
@@ -17,7 +17,7 @@ Hermes Agent 成为 HiClaw Worker 的**一等公民运行时**：
 - 完整的自主编程 Agent 能力：终端沙箱、多文件代码生成、调试、视觉分析、原生 Matrix 集成
 - 安装器支持交互式运行时选择，Worker 可原地切换：`hiclaw update worker --runtime hermes`
 - 支持多 Agent 协作：Hermes Worker 可与 agent 和 QwenPaw Worker 参与团队项目，跨运行时 `m.mentions` 消息投递
-→ [Hermes Agent Skill](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent-skill.md)
+→ [Hermes Agent Skill](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/hermes-agent-skill.md)
 →
 
 ### 企业级 Helm Chart 部署
@@ -84,7 +84,7 @@ v1.1.0 一口气修复了 18 个 Bug，其中令牌轮转导致消息丢失、YO
 ## 相关实体
 
 - [企业级多-agent-规模化落地怎么做群虾智能-ai-沙龙-ppt-限时领取](../ch03/004-agent.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/multi-agent-coordination.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/multi-agent-coordination.md)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hiclaw-v110-k8s-hermes-worker.md)
 
 ---

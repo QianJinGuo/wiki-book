@@ -76,7 +76,7 @@ AI Coding Agent Token 成本优化的完整五层模型：使用习惯→模型�
 
 五层不是并列清单，而是一条 ROI 与固定投入都逐层抬高的优化阶梯。使用习惯层改的是行为，几乎零基建成本、立竿见影；模型路由层需要一套 routing/预算基础设施；Context 工程层要引入压缩工具链；代码图谱层要搭图数据库与索引；Agent 架构层则要重构整个任务编排方式。每一层恰好命中一种不同的成本来源——习惯治「无意义历史与废 Token」，路由治「贵模型干便宜活」，Context 工程治「同样前缀重复发送」，代码图谱治「每次从零找代码」，Agent 架构治「所有任务塞同一大上下文」。
 
-因此「五层」的价值不在罗列技巧，而在给出一个**自底向上的排障顺序**：先确认习惯层没漏（最便宜），再谈路由与压缩，最后才动代码图谱和架构。跳过低层直接上高层基建，往往是在放大一个本就该修掉的行为问题。这一递进关系也与 [Context 工程](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md) 的「信号→系统」分层视角一致。
+因此「五层」的价值不在罗列技巧，而在给出一个**自底向上的排障顺序**：先确认习惯层没漏（最便宜），再谈路由与压缩，最后才动代码图谱和架构。跳过低层直接上高层基建，往往是在放大一个本就该修掉的行为问题。这一递进关系也与 [Context 工程](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/context-engineering.md) 的「信号→系统」分层视角一致。
 
 ### 2. Prompt Cache 的杠杆本质：把线性会话成本变成亚线性
 
@@ -94,7 +94,7 @@ RTK / Caveman / headroom / context-mode 站在数据流的不同位置，取舍�
 
 单 Agent 全程每轮 215K tokens，而 Orchestrator-Worker 拆成 Orchestrator 10K + Worker 14K + Worker 10K，每轮压缩 5-10 倍（端到端 -70~85%）。这不只是「上下文更小」，更关键的是**隔离本身就是缓存**：每个 Worker 的 context 被精心裁剪到只带必要信息，系统前缀稳定、可命中 Prompt Cache，且彼此不互相污染。四条数据流转原则（结构化 JSON、进度文件、裁剪 context、清理临时文件）存在的全部意义，就是让这种隔离做到**无损**——拆开上下文而不丢状态。
 
-也就是说，Orchestrator-Worker 的成本收益来自「把一个大而有损的上下文，换成多个小而精确的上下文」，而非简单地少问几轮。参见 [Orchestrator-Worker](https://github.com/QianJinGuo/wiki/blob/main/concepts/orchestrator-worker-architecture.md) 与 [多 Agent 上下文隔离](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-context-isolation.md)。
+也就是说，Orchestrator-Worker 的成本收益来自「把一个大而有损的上下文，换成多个小而精确的上下文」，而非简单地少问几轮。参见 [Orchestrator-Worker](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/orchestrator-worker-architecture.md) 与 [多 Agent 上下文隔离](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/multi-agent-context-isolation.md)。
 
 ## 实践启示
 

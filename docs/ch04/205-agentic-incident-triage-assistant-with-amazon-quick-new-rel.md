@@ -8,13 +8,13 @@
 
 ## 相关实体
 
-- [amazon quick + cisco webex mcp 会议准备与跟进助手：meeting-lifecycle m](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-quick-cisco-webex-mcp-meeting-prep-followup-assistant.md)
-- [introducing the mdn mcp server](https://github.com/QianJinGuo/wiki/blob/main/entities/introducing-mdn-mcp-server-2026.md)
+- [amazon quick + cisco webex mcp 会议准备与跟进助手：meeting-lifecycle m](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-quick-cisco-webex-mcp-meeting-prep-followup-assistant.md)
+- [introducing the mdn mcp server](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-mdn-mcp-server-2026.md)
 - [从 pi-main 源码拆解：顶尖 ai agent 的工程设计（17 维度全解）](../ch03/004-agent.html)
 - [万级实时推理的商品领域agent实践思考和总结](../ch03/004-agent.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-an-agentic-incident-triage-assistant-with-amazon-quick-and-new-relic.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/observability-monitoring.md)
 ## 核心要点
 
 - **核心问题**：SRE incident triage 是时间敏感工作，需要快速 collect evidence、assess user impact、create follow-up work——通常在多个工具间切换导致 handoff 延迟和 knowledge loss
@@ -92,7 +92,7 @@ Amazon Quick 在此架构中扮演 **编排层（orchestration layer）** 角色
 
 ## 与现有 wiki 实体的差异化
 
-| 维度 | 本 entity | [Aderant Transforms Cloud Operations With Amazon Quick](../ch11/163-aderant-transforms-cloud-operations-with-amazon-quick.html) | [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](https://github.com/QianJinGuo/wiki/blob/main/entities/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md) |
+| 维度 | 本 entity | [Aderant Transforms Cloud Operations With Amazon Quick](../ch11/163-aderant-transforms-cloud-operations-with-amazon-quick.html) | [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](https://github.com/QianJinGuo/wiki-public/blob/main/entities/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md) |
 |------|----------|------------------|------------------|
 | 场景 | SRE incident triage + RCA + handoff | 律师事务所 cross-source 知识搜索 | 金融 AML 告警 triage |
 | 集成广度 | 2 个集成（New Relic + Asana） | 6 个供应商系统 MCP | 1 个 Snowflake 集成 |
@@ -114,7 +114,7 @@ Amazon Quick 在此架构中扮演 **编排层（orchestration layer）** 角色
 
 - [Aderant Transforms Cloud Operations With Amazon Quick](../ch11/163-aderant-transforms-cloud-operations-with-amazon-quick.html) — Amazon Quick 在法律行业的 cross-source RAG 案例（同一产品不同应用场景）
 - [Amazon Bedrock Agentcore Gateway Mcp Extension](383-amazon-bedrock-agentcore.html) — Amazon Bedrock AgentCore 的 MCP gateway 扩展（MCP 在 AWS 的另一面）
-- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](https://github.com/QianJinGuo/wiki/blob/main/entities/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md) — Amazon Quick 在金融 AML 告警分流的应用（同一产品的规则化分流场景）
+- [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](https://github.com/QianJinGuo/wiki-public/blob/main/entities/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md) — Amazon Quick 在金融 AML 告警分流的应用（同一产品的规则化分流场景）
 - [Aws Bedrock Agentcore Doris Mcp Server](../ch11/045-bedrock-agentcore.html) — AWS Bedrock AgentCore + Doris MCP server 的另一个生产实战
 - [Ai Infra Auto Driven Skills V0 Bbuf Giantpanda](../ch01/748-ai-infra.html) — 长时自驱动 agent 模式（与本 entity 的同步编排模式形成对比）
 

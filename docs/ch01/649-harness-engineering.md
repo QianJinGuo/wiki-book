@@ -8,10 +8,10 @@
 
 - [面向大型代码库的 claude code 团队落地经验与扩展策略（agent harness）](../ch05/035-agent-harness.html)
 - [面向大型代码库的 claude code 团队落地经验与扩展策略（agent harness）](../ch05/035-agent-harness.html)
-- [知识库问答 @文档：从 dom 方案到 prosemirror 落地](https://github.com/QianJinGuo/wiki/blob/main/entities/prosemirror-knowledge-base-mention-vivo.md)
+- [知识库问答 @文档：从 dom 方案到 prosemirror 落地](https://github.com/QianJinGuo/wiki-public/blob/main/entities/prosemirror-knowledge-base-mention-vivo.md)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-core-patterns-claude-code.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/data-infrastructure.md)
 ## 深度分析
 
 深入浅出 Harness Engineering 之核心模式与理念 涉及agent领域的核心技术议题。

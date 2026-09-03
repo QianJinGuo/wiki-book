@@ -9,9 +9,9 @@
 
 ## 相关实体
 
-- [10 common component architecture mistakes in Figma design systems](https://github.com/QianJinGuo/wiki/blob/main/entities/component-architecture-mistakes-figma-zeroheight.md)
+- [10 common component architecture mistakes in Figma design systems](https://github.com/QianJinGuo/wiki-public/blob/main/entities/component-architecture-mistakes-figma-zeroheight.md)
 - [Agentic Systems Extreme Co-Design（NVIDIA 极简协同设计）](004-agent.html)
-- [What the design-to-code loop unlocks](https://github.com/QianJinGuo/wiki/blob/main/entities/design-to-code-loop-figma.md)
+- [What the design-to-code loop unlocks](https://github.com/QianJinGuo/wiki-public/blob/main/entities/design-to-code-loop-figma.md)
 
 ## 深度分析
 本文系统性地梳理了Figma设计系统中组件架构的十大错误，这些问题直接关系到设计系统的可维护性、可扩展性以及设计-开发协作效率。

@@ -9,7 +9,7 @@
 - [读完这篇，你就搞懂 deepseek v4 了](459-deepseek-v4.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek-v4-flash-pro-通往百万级上下文与万亿参数推理的新纪元.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/observability-monitoring.md)
 ## 深度分析
 
 DeepSeek V4 (Flash & Pro) ：通往百万级上下文与万亿参数推理的新纪元 涉及agent领域的核心技术议题。
@@ -25,7 +25,7 @@ DeepSeek V4 的核心突破在于其架构层面的深层革新，这种优势�
 ### 关联实体
 
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](651-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
-- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
+- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch04/176-openclaw.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04/176-openclaw.html)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/004-agent.html)

@@ -9,7 +9,7 @@
 - [hermes新顶流agent skills闭环系统深度解析](../ch07/016-hermes-skill.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-skills-source-code-analysis-shuge.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/data-infrastructure.md)
 ## 深度分析
 
 Hermes Agent Skills 源码级拆解：3级渐进加载 × 6步调度 × 5维安全扫描 涉及agent领域的核心技术议题。
@@ -40,7 +40,7 @@ Skills 遵循 **agentskills.
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/004-agent.html)
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](176-openclaw.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
-- [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md)
+- [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md)
 
 ---
 

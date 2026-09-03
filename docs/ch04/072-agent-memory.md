@@ -153,10 +153,10 @@ RAG 式的语义相似召回假设"表面语义相关 = 实质相关"。但真�
 ## 相关实体
 - [How Ai Agent Memory Works](131-how-ai-agent-memory-works.html)
 - [Memory Agent Systems Cobanov](../ch03/004-agent.html)
-- [Context Engineering Three Memory Paradigms](https://github.com/QianJinGuo/wiki/blob/main/entities/context-engineering-three-memory-paradigms.md)
+- [Context Engineering Three Memory Paradigms](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-engineering-three-memory-paradigms.md)
 - [Memory Vs Rag Agent Memory Systematic Framework](133-agent-memory.html)
 - [Agent Memory Architecture Past Influence Future Ruofei](133-agent-memory.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/wiki-master-map.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/wiki-master-map.md)
 
 ---
 

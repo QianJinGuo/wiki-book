@@ -127,7 +127,7 @@ Nitro Isolation Engine 是第一个经数学证明的云虚拟机监控器。形
 - [AWS Transform](https://aws.amazon.com/blogs/compute/migrating-your-java-applications-to-aws-graviton-using-aws-transform-custom/) — x86 → Graviton 自动化迁移
 
 ## 相关实体
-- [amazon redshift 推出带有集成数据湖查询引擎的基于 aws graviton 的 rg 实例](https://github.com/QianJinGuo/wiki/blob/main/entities/amazon-redshift-推出带有集成数据湖查询引擎的基于-aws-graviton-的-rg-实例.md)
+- [amazon redshift 推出带有集成数据湖查询引擎的基于 aws graviton 的 rg 实例](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-redshift-推出带有集成数据湖查询引擎的基于-aws-graviton-的-rg-实例.md)
 - [aws 一周综述：amazon bedrock agentcore 付款、适用于 aws 的 agent 工具套件等（2](../ch04/383-amazon-bedrock-agentcore.html)
 - [building blocks for foundation model training and inference](095-building-blocks-for-foundation-model-training-and-inference.html)
 

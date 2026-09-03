@@ -40,7 +40,7 @@ Eat Marketing 交付的成果是一座尊重历史但不被历史囚禁的品牌
 
 ## 相关实体
 
-- [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](https://github.com/QianJinGuo/wiki/blob/main/entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md)
+- [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md)
 ## 相关概念
 
 - Heritage Brand Evolution — Heritage Brand 在现代市场中的演变策略
@@ -75,7 +75,7 @@ Eat Marketing 采取的策略方法论具有重要的借鉴意义：他们选择
 
 ---
 ## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

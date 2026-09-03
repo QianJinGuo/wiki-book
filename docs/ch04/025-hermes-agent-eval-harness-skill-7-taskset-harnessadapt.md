@@ -256,7 +256,7 @@ regression_failures | rejection_reason | review_notes
 | [Embabel](../ch07/020-embabel.html) | **Embabel** | Embabel 自进化框架 |
 | [Pith Train Agent Native Moe Training Framework](../ch03/004-agent.html) | **Pith 训练框架** | Agent 原生 MoE 训练 |
 | [Hermes Agent 12 Layer Full Configuration Guide](161-hermes-agent.html) | **Hermes 12 层配置** | Hermes Agent 12 层完整配置 |
-| [Hermes 9 Module Architecture](https://github.com/QianJinGuo/wiki/blob/main/entities/hermes-9-module-architecture.md) | **Hermes 9 模块** | Hermes 9 模块架构 |
+| [Hermes 9 Module Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-9-module-architecture.md) | **Hermes 9 模块** | Hermes 9 模块架构 |
 | [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05/057-harness-engineering.html) | **7 层 Harness** | OpenClaw/Hermes/Claude Code 7 层 Harness |
 | [Slim Cuhk Skill Lifecycle Agentic Rl](200-agentic-rl.html) | **SLIM Skill 生命周期** | CUHK SLIM Skill 生命周期 + Agentic RL |
 | [Deli Auto Research Skill V2 Continual Learning Self Improvement](../ch07/054-skill.html) | **Deli Auto Research** | Continual learning + self-improvement |

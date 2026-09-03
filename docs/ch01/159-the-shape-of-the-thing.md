@@ -210,7 +210,7 @@ Mollick 结尾给出的判断值得专门拆开：「我们能看到那个 Thing
 - [Agent Harness Engineering Survey 2026](../ch05/057-harness-engineering.html)
 - [Gpt 5 It Just Does Stuff](179-gpt-5-it-just-does-stuff.html)
 - [Andrej Karpathy Claude Md 134K Stars 2026](181-claude-md.html)
-- [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/ahe-agentic-harness-engineering.md)
+- [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/ahe-agentic-harness-engineering.md)
 - [Agentic Harness Engineering Ahe](../ch05/057-harness-engineering.html)
 - [Agent Harness Architecture](../ch05/035-agent-harness.html)
 

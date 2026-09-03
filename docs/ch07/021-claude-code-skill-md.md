@@ -204,7 +204,7 @@ Skill 写完后，不要直接投入生产使用。验证方式：
 - [Claude Code Prompt Source Analysis](../ch09/050-claude-code-prompt.html)
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/057-claude-code.html)
 - [using claude](../ch03/057-claude-code.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/prompt-engineering-guide.md)
 
 ---
 

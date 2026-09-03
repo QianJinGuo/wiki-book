@@ -118,8 +118,8 @@ Agent 在执行过程中被中断时，状态会停留在 IN_PROGRESS，但实�
 - [你不知道的 Agent 原理架构与工程实践](276-agent-principle-architecture-engineering-practice.html)
 - [柚漫剧 AI 全流程提效拆解](257-ai.html)
 - [Agent Skill 设计模式](302-agent-skills.html)
-- [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
+- [Harness Engineering 框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/coding-harness-engineering.md)
 - [Thin Harness Fat Skills](../ch05/065-thin-harness-fat-skills-ai.html)
 - [Design Patterns for AI Agents 2026](071-design-patterns-for-ai-agents-2026-4-5-reflection.html)
 

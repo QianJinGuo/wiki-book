@@ -69,9 +69,9 @@ Anthropic 的总结：「找到模型里的缺口，用 Harness 补上，再用 
 
 DeepSeek 做 Harness 的逻辑不是「我们要做一个更好的工具」，而是「我们没有别的选择」。Anthropic 的封锁创造了一个明确的市场真空。但 DeepSeek 面临的真正挑战不是做出一个 Claude Code 的外壳，而是建立自己的**长时运行闭环**：让模型在真实代码库里工作，让 Harness 记录失败、分析原因，把失败变成下一轮产品设计和模型训练的输入。
 
-### 从 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 视角看
+### 从 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 视角看
 
-DeepSeek 的公式 Model + Harness = Agent 是对 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 理念的商业化表达。核心挑战在于：
+DeepSeek 的公式 Model + Harness = Agent 是对 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 理念的商业化表达。核心挑战在于：
 
 1. **上下文压缩**：长时运行必须解决上下文窗口有限且越跑越乱的问题
 2. **任务边界控制**：模型总高估自己的完成度——明明半成品却说「好了」
@@ -103,7 +103,7 @@ Anthropic 已经建立了一个正向飞轮：模型越强 → Harness 越顺手
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/035-agent-harness.html)
-- [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md)
+- [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek-code-harness-competitor-tina.md)
 

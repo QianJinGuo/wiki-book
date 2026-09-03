@@ -31,11 +31,11 @@ Lambert 的评论是：开放权重时代这种安全措施作用有限——「
 
 ## 关联
 
-- [Z.ai GLM-5.2 综合](https://github.com/QianJinGuo/wiki/blob/main/entities/z-glm-5.2.md) — 前代模型的综合实体（多来源）
+- [Z.ai GLM-5.2 综合](https://github.com/QianJinGuo/wiki-public/blob/main/entities/z-glm-5.2.md) — 前代模型的综合实体（多来源）
 - [GLM-5.2 step change](../ch03/004-agent.html) — Interconnects 对 GLM-5.2 的分析
 - [The Distillation Panic](477-the-distillation-panic.html) — 蒸馏争论系列，本文明确否定蒸馏为主因
-- [Open models 差距](https://github.com/QianJinGuo/wiki/blob/main/entities/how-far-behind-are-open-models-2026.md) — 开放模型前沿差距语境
-- [Gemma 4 开放模型采纳框架](https://github.com/QianJinGuo/wiki/blob/main/entities/gemma-4-open-model-adoption-framework-interconnects.md) — Interconnects 开放模型系列
+- [Open models 差距](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-far-behind-are-open-models-2026.md) — 开放模型前沿差距语境
+- [Gemma 4 开放模型采纳框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gemma-4-open-model-adoption-framework-interconnects.md) — Interconnects 开放模型系列
 
 ---
 

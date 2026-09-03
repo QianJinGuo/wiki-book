@@ -132,7 +132,7 @@ Claude Tag 的特性对 Agent 基础设施提出了新的要求：
 
 - Claude Cowork Task Boundary — Claude 协作边界分析
 - [Claude Code Agent View](../ch03/048-claude-code-agent.html) — Claude Code 的 Agent 架构
-- [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md) — 上下文工程的理论与实践
+- [Context Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/context-engineering.md) — 上下文工程的理论与实践
 - [Agent Harness Context Management](../ch05/035-agent-harness.html) — Agent 上下文管理
 
 ## 参考
@@ -175,7 +175,7 @@ Ramp 2026 年 5 月数据显示，34.4% 的美国企业已在用 Claude 付费�
 
 ### 与已有来源的衔接
 
-- **Karpathy 三范式框架**（本来源独家）与 [Context Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/context-engineering.md) 的"人机交互演化"叙事一致——从"访问网站"到"本地应用"到"内嵌团队成员"，每一步都对应交互模式的抽象层级提升
+- **Karpathy 三范式框架**（本来源独家）与 [Context Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/context-engineering.md) 的"人机交互演化"叙事一致——从"访问网站"到"本地应用"到"内嵌团队成员"，每一步都对应交互模式的抽象层级提升
 - **Ambient behavior 的未解决问题追踪**（本来源独家补充）补全了第 1 来源"主动行为"定义的**遗漏方向**——不仅"提醒新信息"，还"追踪已发现的未解决问题"
 - **Boris Cherny 原话**提供了第 1 来源（Anthropic 官方公告）所缺少的**个人视角**——官方公告偏技术规格，Boris 原话偏使用体验
 

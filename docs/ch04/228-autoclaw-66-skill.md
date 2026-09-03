@@ -80,10 +80,10 @@ AutoClaw 目前仍处于早期阶段，建议持续关注：
 - 更多办公工具（钉钉、企业微信）的接入支持
 
 ## 相关实体
-- [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
+- [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/coding-harness-engineering.md)
 - [Hermes Agent 记忆系统深度拆解](161-hermes-agent.html)
 
-- [语音输入喊了这么多年，千问电脑版一出手就把键盘卷没了？](https://github.com/QianJinGuo/wiki/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
+- [语音输入喊了这么多年，千问电脑版一出手就把键盘卷没了？](https://github.com/QianJinGuo/wiki-public/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
 - [特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验](257-ai.html)
 - [我给Hermes配了4个Agent，真正有用的是这些事](../ch03/004-agent.html)
 - [AIAIGC峰会嘉宾阵容](362-aiaigc.html)
@@ -92,9 +92,9 @@ AutoClaw 目前仍处于早期阶段，建议持续关注：
 - [OpenCLAW 完全指南](176-openclaw.html)
 - [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](176-openclaw.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/057-claude-code.html)
-- [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
+- [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-window-management.md)
 - [Agent 可靠性的工程解法：从 Skillify 看持续改进机制](../ch07/054-skill.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/ai-skill-design.md)
 
 ---
 

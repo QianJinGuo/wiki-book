@@ -19,7 +19,7 @@
 
 - [Openai Models And Codex On Amazon Bedrock Are Now Generally ](../ch11/203-openai-models-and-codex-on-amazon-bedrock-are-now-generally.html)
 - [开始在 Amazon Bedrock 上使用 Openai Gpt 55Gpt 54 模型和 Codex](../ch11/135-amazon-bedrock.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/aws-cloud-ai-infrastructure.md)
 ## 深度分析
 
 ### 技术架构层面

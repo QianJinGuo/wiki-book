@@ -28,7 +28,7 @@ Opus 5 表明 Anthropic 在 Opus 4.8 中移除业务技能训练带来的"对齐
 
 ## 相关概念
 
-- [推理优化](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md) — 能力-对齐权衡的工程视角（间接相关）
+- [推理优化](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/inference-optimization.md) — 能力-对齐权衡的工程视角（间接相关）
 - 对齐与评估：Vending-Bench 2 是衡量 AI 商业行为倾向的模拟基准
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-opus-5-vending-bench-andon.md)

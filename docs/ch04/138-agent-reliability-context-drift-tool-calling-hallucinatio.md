@@ -71,7 +71,7 @@ Agent 运行多轮后可靠性的两个核心问题：
 ## 与 vault 知识关联
 - [Agent Harness 架构](../ch05/035-agent-harness.html) — Context Manager 处理上下文；工具调用校验是 Harness 层的职责
 - [Ralph Loop + Harness Takeover](../ch05/008-harness.html) — 长周期 Agent 的可靠性机制，与本文上下文漂移问题高度相关
-- [Multi-Agent Systems](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-systems.md) — 多 Agent 协作中，每个 Agent 的上下文漂移问题会叠加放大
+- [Multi-Agent Systems](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/multi-agent-systems.md) — 多 Agent 协作中，每个 Agent 的上下文漂移问题会叠加放大
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kamacoder-agent-context-drift-tool-hallucination.md)
 
 ## 相关实体
@@ -85,7 +85,7 @@ Agent 运行多轮后可靠性的两个核心问题：
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/057-harness-engineering.html)
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/057-harness-engineering.html)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/008-harness.html)
-- [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki/blob/main/queries/harness-peer-review-framework.md)
+- [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki-public/blob/main/queries/harness-peer-review-framework.md)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/337-claude-code-harness-deep-understanding.html)
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html)
 - [Agent 自我改进的六条路](../ch03/004-agent.html)
@@ -97,8 +97,8 @@ Agent 运行多轮后可靠性的两个核心问题：
 - [AI Coding Agent 记忆系统](253-ai-coding-agent.html)
 - [柚漫剧 AI 全流程提效拆解](257-ai.html)
 - [Agent Skill 设计模式](302-agent-skills.html)
-- [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki/blob/main/concepts/coding-harness-engineering.md)
+- [Harness Engineering 框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/coding-harness-engineering.md)
 - [Thin Harness Fat Skills](../ch05/065-thin-harness-fat-skills-ai.html)
 - [Design Patterns for AI Agents 2026](071-design-patterns-for-ai-agents-2026-4-5-reflection.html)
 

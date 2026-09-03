@@ -27,7 +27,7 @@ Evaluate your Amazon Nova Sonic voice agent at scale, no microphone required 涉
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/data-infrastructure.md)
 
 ---
 

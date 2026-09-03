@@ -131,9 +131,9 @@ AI 可以快速生成方法论正确的论文框架，但假设的原创性和�
 明确哪些子任务 AI 已经超人、哪些仍弱，据此分配人机协作模式——而非一刀切地"用"或"不用"。
 
 ## 相关实体
-- [Gpt5 Just Does Stuff Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/gpt5-just-does-stuff-mollick.md)
+- [Gpt5 Just Does Stuff Mollick](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gpt5-just-does-stuff-mollick.md)
 - [The Shape Of The Thing Mollick](159-the-shape-of-the-thing.html)
-- [Three Years Gpt3 Gemini3 Mollick](https://github.com/QianJinGuo/wiki/blob/main/entities/three-years-gpt3-gemini3-mollick.md)
+- [Three Years Gpt3 Gemini3 Mollick](https://github.com/QianJinGuo/wiki-public/blob/main/entities/three-years-gpt3-gemini3-mollick.md)
 - [Guide Ai Agents Models Apps Harnesses Mollick](../ch04/312-ai-agent.html)
 - [Ai Job Interview Model Evaluation Mollick](../ch04/257-ai.html)
 

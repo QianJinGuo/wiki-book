@@ -142,7 +142,7 @@ TokenSpeed 的连续批处理针对 Agent 场景进行了专门调优，但实�
 
 ## 相关概念
 
-- [推理系统优化](https://github.com/QianJinGuo/wiki/blob/main/concepts/inference-optimization.md) — 涵盖 KV-Cache 管理、连续批处理、投机解码、PD 分离等核心优化技术
+- [推理系统优化](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/inference-optimization.md) — 涵盖 KV-Cache 管理、连续批处理、投机解码、PD 分离等核心优化技术
 - vLLM — 通用推理场景首选，TokenSpeed 的 MLA kernel 优化已贡献回 vLLM 社区
 - TensorRT-LLM — NVIDIA 官方推理方案，在标准场景下性能优秀，但调度开销在 Agent 场景下成为瓶颈
 - SGLang — 在前缀复用方面与 TokenSpeed 有类似的设计理念，但实现路径不同

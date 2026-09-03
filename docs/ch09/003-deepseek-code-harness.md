@@ -277,7 +277,7 @@ v×c=56, stars=4. 火山方舟（字节跳动技术团队）发布 Agent Plan �
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/coding-agent-practice.md)
 
 ---
 

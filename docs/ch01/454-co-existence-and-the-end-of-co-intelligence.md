@@ -41,7 +41,7 @@ Mollick 的实际工作流是分层的：
 
 ### 4. Prompt Injection 伦理的觉醒
 
-从"隐藏 prompt 让 AI 假装推荐"到"坦诚与 AI 沟通"——这反映了 prompt injection 从技巧演变为伦理问题。Mollick 的反思："even if they aren't people, they often act enough like them that this can be a good mental model"——这与 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 框架中的"agent 行为可预测性"诉求相呼应。
+从"隐藏 prompt 让 AI 假装推荐"到"坦诚与 AI 沟通"——这反映了 prompt injection 从技巧演变为伦理问题。Mollick 的反思："even if they aren't people, they often act enough like them that this can be a good mental model"——这与 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 框架中的"agent 行为可预测性"诉求相呼应。
 
 ### 5. 协同工作的"协商"性质
 
@@ -71,9 +71,9 @@ Mollick 强调"协商"而非"解决"——模型能力快速变化，最佳工�
 - [Management As Ai Superpower](361-management-as-ai-superpower.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/004-agent.html)
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html)
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [Agentic Engineering Paradigm](https://github.com/QianJinGuo/wiki/blob/main/concepts/agentic-engineering-paradigm.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
+- [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- [Agentic Engineering Paradigm](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agentic-engineering-paradigm.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/prompt-engineering-guide.md)
 
 ---
 

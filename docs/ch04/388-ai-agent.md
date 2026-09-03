@@ -16,7 +16,7 @@
 - [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](161-hermes-agent.html)
 - [Ath Agent Trust Handshake Protocol](../ch03/004-agent.html)
 - [Hermes Self Evolution Closed Loop Skill Reuse Winty](../ch07/054-skill.html)
-- [Four Browser Automation Tools Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/four-browser-automation-tools-comparison.md)
+- [Four Browser Automation Tools Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/four-browser-automation-tools-comparison.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-canvas-agent-era-content-creation.md)
 

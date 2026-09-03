@@ -9,7 +9,7 @@
 - [agent资本市场：自主agent融资框架与批判](../ch03/004-agent.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/codex-major-update-appshots-goal-xinzhiyuan.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/workflow-orchestration.md)
 ## 摘要
 
 OpenAI 在 2026 年 5 月对 **Codex** 进行了重大升级，标志着它从"代码助手"正式蜕变为**全天候 AI 队友平台**。五大能力同时上线：**Appshots**（双击 Command 截屏并读取屏幕外隐藏文本）、**/goal 毕业**（长周期自主编码）、**Locked Use**（Mac 锁屏状态下远程操控）、**应用内浏览器高级标注模式**、**插件共享与 Analytics 升级**。同日 ChatGPT 以插件形式杀入 PowerPoint，进一步扩张 OpenAI 在生产力领域的边界。
@@ -187,7 +187,7 @@ Appshots（屏幕感知） + /goal（长周期自主） + Locked Use（物理边
 - [天猫新品营销技术团队Ai编码实战指南上](../ch04/257-ai.html) — AI 编码全流程工程化方法论
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/098-karpathy-vibe-coding-agentic-engineering.html) — vibe coding 到 agentic engineering 的演进
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html) — 锯齿智能与 Codex 能力组合
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Agent harness 的工程框架
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — Agent harness 的工程框架
 - [Agent Harness Context Management Working Set](../ch05/035-agent-harness.html) — Appshots 引发的 working set 管理新挑战
 
 ## 信号判断

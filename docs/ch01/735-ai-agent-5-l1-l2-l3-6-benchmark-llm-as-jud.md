@@ -317,7 +317,7 @@ Agent输出：{agent_output}
 | [Agent Evalkit Aws Opensource Cli Agent Eval Toolkit](../ch03/004-agent.html) | **AWS 开源工具** | AgentEvalKit：AWS 开源的 CLI Agent 评测工具包 |
 | [Aws Reinforcement Fine Tuning Llm As Judge](451-llm.html) | **LLM-as-Judge RFT** | AWS 用 LLM-as-Judge 做 RLHF/RFT 的实践 |
 | [Spotify Llm Evals Funnel Not Fork](451-llm.html) | **评测漏斗** | Spotify：评测要 funnel 而非 fork |
-| [Langsmith Trajectory Evals](https://github.com/QianJinGuo/wiki/blob/main/entities/langsmith-trajectory-evals.md) | **LangSmith trace 评测** | LangSmith trajectory 级评测 |
+| [Langsmith Trajectory Evals](https://github.com/QianJinGuo/wiki-public/blob/main/entities/langsmith-trajectory-evals.md) | **LangSmith trace 评测** | LangSmith trajectory 级评测 |
 | [Saas Bench Gui Agent Eval Unipat](../ch03/004-agent.html) | **GUI Agent 评测** | SaaS-Bench：GUI Agent 评测基准 |
 | [Taobao Smart Shopping Guide Agent Evaluation Pzmx](../ch03/004-agent.html) | **电商导购 Agent 评测** | 淘天智能导购 Agent 评测实践 |
 | [Aliyun Agentloop Enterprise Agent Self Evolution Flywheel](../ch03/004-agent.html) | **阿里 AgentLoop** | 4 环飞轮中"评估环"的产品化（Agent-as-a-Judge 13 个评估器） |
@@ -367,7 +367,7 @@ LLM-as-Judge + Arena + G-Eval + Eval-as-Service + 分层阶梯式 — 不是互�
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/evaluation-benchmarks-extended.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/evaluation-benchmarks-extended.md)
 
 ---
 

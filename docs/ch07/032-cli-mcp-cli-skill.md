@@ -125,7 +125,7 @@ Skill 是组织经验和方法论的载体。不要把 Skill 看作"让 Agent �
 - [Claude Code Core Internals](../ch03/057-claude-code.html)
 - [Staragent Webterminal Cli Ali Infra Cli As Agent Hands](../ch03/004-agent.html)
 - [Agentscope Java Harness Framework Enterprise Distributed](../ch05/008-harness.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/tool-use-mcp-patterns.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/tool-use-mcp-patterns.md)
 
 ---
 

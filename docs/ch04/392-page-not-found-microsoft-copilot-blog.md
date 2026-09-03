@@ -11,7 +11,7 @@
 - [Servicenow Ui Is Dead Agent](../ch03/004-agent.html)
 - [Tmic Ai Xiaoxin Deepagent Architecture Evolution](../ch03/004-agent.html)
 - [要实现一个工作流选择 Agent Skills 还是 Ai 表格](302-agent-skills.html)
-- [Garry Tan Yc Ceo](https://github.com/QianJinGuo/wiki/blob/main/entities/garry-tan-yc-ceo.md)
+- [Garry Tan Yc Ceo](https://github.com/QianJinGuo/wiki-public/blob/main/entities/garry-tan-yc-ceo.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/new-and-improved-agent-governance-intelligent-workflows-connected-app-exp.md)
 

@@ -30,7 +30,7 @@
 244,000 次下载、667 个点赞、#1 排名——这些在传统软件分发中通常被当作可信度指标的数字，在模型托管平台上正在失去参考价值。本案例有两处证据：HiddenLayer 怀疑该仓库下载与点赞系自动刷量；恶意 npm 包 `trevlo` 的 2,300+ 次下载是否同样刷量"尚不清楚"。刷量成本极低而信任收益极高——攻击者只需少量投入即可让恶意仓库在榜单上压过官方模型。对用户而言，下载量、star 数与 trending 排名不再是可靠的安全信号；对安全团队而言，审计必须从"看数字"转向"看内容"：模型文件格式、脚本源码、作者历史与仓库 provenance。
 
 ### AI 生态安全防御
-综合姊妹仓库（6 个使用相同 loader 的伪装模型）与跨生态共享基础设施（Hugging Face + npm + ValleyRAT）等线索，AI 模型供应链攻击已进入"规模化、工具化、跨平台"阶段，而传统安全扫描只覆盖代码依赖与 npm/PyPI 包，模型托管平台仍是多数企业的盲区。防御的关键在于：把模型下载纳入与第三方开源组件同等的审批与扫描流程；优先使用 safetensors 等安全序列化格式而非 pickle 反序列化权重；在沙箱或隔离环境首次运行模型脚本并审阅 README 中的安装启动命令；验证仓库归属（官方组织名、作者历史、关联 GitHub）而非轻信排名。可参考 [AI 安全全景](https://github.com/QianJinGuo/wiki/blob/main/concepts/ai-security-landscape.md) 中的既有方法论。
+综合姊妹仓库（6 个使用相同 loader 的伪装模型）与跨生态共享基础设施（Hugging Face + npm + ValleyRAT）等线索，AI 模型供应链攻击已进入"规模化、工具化、跨平台"阶段，而传统安全扫描只覆盖代码依赖与 npm/PyPI 包，模型托管平台仍是多数企业的盲区。防御的关键在于：把模型下载纳入与第三方开源组件同等的审批与扫描流程；优先使用 safetensors 等安全序列化格式而非 pickle 反序列化权重；在沙箱或隔离环境首次运行模型脚本并审阅 README 中的安装启动命令；验证仓库归属（官方组织名、作者历史、关联 GitHub）而非轻信排名。可参考 [AI 安全全景](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/ai-security-landscape.md) 中的既有方法论。
 
 ## 实践启示
 1. **运行任何 ML/AI 项目前先审阅源码**：尤其关注 README 要求执行的 `loader.py`、`start.bat`、`setup.sh` 等初始化脚本——本攻击的恶意行为全部封装在"配置依赖并启动模型"的合法外衣下。
@@ -41,7 +41,7 @@
 6. **警惕"仿冒热门口径"的命名模式**：`Open-OSS/xxx` 冒用 `openai/xxx`，6 个 `anthfu/` 姊妹仓库伪装热门开源模型——typosquatting 正从 npm/PyPI 蔓延到模型平台；对一字之差的组织名与搬运式描述保持怀疑。
 
 ## 相关实体
-- [主题导航：网络安全与隐私](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
+- [主题导航：网络安全与隐私](https://github.com/QianJinGuo/wiki-public/blob/main/moc/cybersecurity-privacy.md)
 - [ml-intern — Hugging Face 自主 ML 工程代理](../ch03/004-agent.html)
 - [LLM Share 恶意分发页面](653-llmshare-using-shared-chatbot-pages-to-distribute-malware.html)
 - [LLM raiders and how to repel them](544-llm-raiders-and-how-to-repel-them.html)

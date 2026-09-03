@@ -204,7 +204,7 @@ Mike Krieger / Every 团队给出的 Fable 5 prompt library 核心是 9 字段 T
 
 ### 3. 能力路由 8 维度揭示了工具膨胀的失控风险
 
-若飞提出的 8 维度能力路由(MCP/Skill/搜索/Artifact/子代理/内置工具/网页/只回答),指向了一个核心矛盾:**工具越多,Agent 越容易乱**。这不是模型能力问题,而是系统设计问题。当一个 Agent 拥有 50 个工具时,"什么时候用哪个"如果全靠模型自行判断,失败模式是不可预测的。Fable 5 的路由思想是把触发条件显式化:MCP 必须先发现→再建议→等用户选择;Skill 创建文件前必须读;搜索遇到新实体主动用。这与 [Harness Loop 架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-loop-architecture.md) 中的"工具调用必须可观测和可干预"原则呼应——**路由的本质不是限制 Agent,而是把决策权责显性化,让人能审计和接管**。
+若飞提出的 8 维度能力路由(MCP/Skill/搜索/Artifact/子代理/内置工具/网页/只回答),指向了一个核心矛盾:**工具越多,Agent 越容易乱**。这不是模型能力问题,而是系统设计问题。当一个 Agent 拥有 50 个工具时,"什么时候用哪个"如果全靠模型自行判断,失败模式是不可预测的。Fable 5 的路由思想是把触发条件显式化:MCP 必须先发现→再建议→等用户选择;Skill 创建文件前必须读;搜索遇到新实体主动用。这与 [Harness Loop 架构](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-loop-architecture.md) 中的"工具调用必须可观测和可干预"原则呼应——**路由的本质不是限制 Agent,而是把决策权责显性化,让人能审计和接管**。
 
 ### 4. 执行状态账本设计是长任务 Agent 的核心工程难题
 

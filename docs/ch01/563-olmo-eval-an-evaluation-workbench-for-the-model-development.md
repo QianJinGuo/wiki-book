@@ -60,7 +60,7 @@ OLMES（2024）解决了"同一 benchmark 在不同论文中用不同方式跑"�
 
 ---
 ## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 - 相关: Agent 架构
 
 ---

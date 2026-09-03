@@ -37,7 +37,7 @@ ShinyHunters 选择在 Tor 数据泄露站点发布声明，配以指责性措�
 ## 相关实体
 - [Canvas LMS 攻击事件](../ch04/257-ai.html) — ShinyHunters 同期针对 Instructure/Canvas 的入侵，同属 Salesforce 生态攻击
 - [Grafana GitHub Token 泄露事件](064-grafana-github-token-breach-led-to-codebase-download-and-ext.html) — 同一数据勒索生态（CoinbaseCartel）的 2026 年案例，印证纯数据勒索模式
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 本 wiki 核心框架概念
+- [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — 本 wiki 核心框架概念
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/shinyhunters-7-eleven-data-breach.md)
 

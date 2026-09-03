@@ -5,7 +5,7 @@
 # Anthropic最危险路线图曝光: 无限记忆、多智能体! 硅谷AI终局仅剩双雄决顶
 ## 相关实体
 - [Pi Mono Github](474-github.html)
-- [Prompt Debugger Compare Templates Winty](https://github.com/QianJinGuo/wiki/blob/main/entities/prompt-debugger-compare-templates-winty.md)
+- [Prompt Debugger Compare Templates Winty](https://github.com/QianJinGuo/wiki-public/blob/main/entities/prompt-debugger-compare-templates-winty.md)
 - [Openai Gpt Realtime Voice Models Qbitai](316-openai.html)
 - [Harness Engineering Three Evolutions](../ch05/057-harness-engineering.html)
 - [Deepseek视觉原语论文当所有人在堆图像分辨率时它在堆指代精度](418-deepseek.html)
@@ -14,7 +14,7 @@
 
 - [anthropic 工程团队 1680 人画像：不是博士实验室，是 infra 工程军团](../ch04/257-ai.html)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/openai-developer-ecosystem.md)
 ## 深度分析
 
 **一、算力集中化正在重塑AI竞争格局，资源禀赋成为决定性变量。** xAI解散后22万张顶级GPU整编租借给Anthropic，叠加谷歌既有算力支持，使其拥有远超竞争对手的硬件资源优势。这种"算力归队"事件意味着AI下半场的竞争逻辑已从算法创新转向资源整合能力，单靠算法领先已无法独立支撑竞争壁垒 。

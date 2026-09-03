@@ -124,13 +124,13 @@ Attention 权重的可视化是理解"模型在看什么"的最佳工具——�
 面向非技术用户的 AI 产品应隐藏 tokenization/sampling 细节，但通过预设配置（"精确模式"/"创意模式"）让用户间接控制这些参数。
 
 ## 相关实体
-- [Context Window Management Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management-comparison.md)
+- [Context Window Management Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-window-management-comparison.md)
 - [Gepa Optimize Anything](235-gepa-optimize-anything.html)
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](../ch12/092-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi.html)
 - [Aws Sagemaker Azerbaijani Lm](../ch04/257-ai.html)
 - [Code As Agent Harness Survey](../ch09/044-code-as-agent-harness.html)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-research-frontiers.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/llm-research-frontiers.md)
 ## 原文链接
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-llms-actually-work-0xkato.md)

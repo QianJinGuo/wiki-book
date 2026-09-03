@@ -55,7 +55,7 @@ Gateway同时承担5大角色（这是与Hermes单体的根本区别）：
 - ❌ Hermes：一份USER.md多用户共享→串扰
 - ✅ OpenClaw：多Agent物理隔离→不串扰
 
-这与 [Multi-Agent 协作模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-collaboration-patterns.md) 中的**物理隔离原则**一致——多Agent架构中，隔离是防止上下文污染的根本手段。
+这与 [Multi-Agent 协作模式](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/multi-agent-collaboration-patterns.md) 中的**物理隔离原则**一致——多Agent架构中，隔离是防止上下文污染的根本手段。
 
 ## OpenClaw架构五层
 
@@ -93,7 +93,7 @@ agentTools反向能力：Channel给LLM提供平台特有工具（如Telegram查�
 - 向量记忆引擎 + Dreaming后台整合 + Active Recall主动召回
 - Agent维度隔离记忆
 
-这与 [Agent Memory 生命周期](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md) 中的**遗忘必要性**呼应——记忆系统必须同时具备"记住"和"遗忘"的双向能力，OpenClaw的Dreaming机制正是这一理念的工程实现。
+这与 [Agent Memory 生命周期](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-lifecycle-philosophies.md) 中的**遗忘必要性**呼应——记忆系统必须同时具备"记住"和"遗忘"的双向能力，OpenClaw的Dreaming机制正是这一理念的工程实现。
 
 ## Hermes的补充设计
 
@@ -111,7 +111,7 @@ Hermes补充了另4个重要问题的解法：
 > Hermes Agent 并不是一个绑定在 IDE 中的编程 Copilot，也不是仅封装了单一 API 的聊天机器人外壳。它是一个部署在服务器上的自主智能体，能够记住所学内容，并且运行时间越长，能力就越强。
 > — Nous Research 官方定位
 
-详见 [Hermes-Agent 概念](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md)。
+详见 [Hermes-Agent 概念](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/hermes-agent.md)。
 
 ## 两者的局限
 
@@ -127,17 +127,17 @@ Hermes补充了另4个重要问题的解法：
 - **核心仍是单体**：AIAgent类是万事汇聚的枢纽
 - **记忆管理半自动**：有Memory Nudge和Session Search，但没有Dreaming那种全自动整理
 
-> [!contradiction] 与 [Agent Memory 生命周期](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md) 的"文件即源"观点存在张力：OpenClaw的MEMORY.md和Hermes的USER.md都是Markdown，但两者在记忆治理自动化程度上差异显著——Hermes通过Skill实现了半自动的经验固化，OpenClaw的Dreaming则追求全自动整理但默认关闭。
+> [!contradiction] 与 [Agent Memory 生命周期](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-lifecycle-philosophies.md) 的"文件即源"观点存在张力：OpenClaw的MEMORY.md和Hermes的USER.md都是Markdown，但两者在记忆治理自动化程度上差异显著——Hermes通过Skill实现了半自动的经验固化，OpenClaw的Dreaming则追求全自动整理但默认关闭。
 
 ## 第22章：七大未覆盖落地难题
 
-1. **协议互通（22.1）**：跨Channel/跨Agent的通信标准化，与 [Model Context Protocol](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-context-protocol-mcp.md) 探索同一问题域
-2. **记忆分层（22.2）**：与 [Agent Memory 生命周期](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md) 的"OS隐喻"呼应
+1. **协议互通（22.1）**：跨Channel/跨Agent的通信标准化，与 [Model Context Protocol](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/model-context-protocol-mcp.md) 探索同一问题域
+2. **记忆分层（22.2）**：与 [Agent Memory 生命周期](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-lifecycle-philosophies.md) 的"OS隐喻"呼应
 3. **上下文工程（22.3）**：融合Anthropic"上下文焦虑症"与"上下文重置"理论
 4. **能力管理（22.4）**：Skill/SOP/工具的动态管理
 5. **确定性编排（22.5）**：多Agent协作的确定性保证
-6. **多Agent协作（22.6）**：GAN-like生成-对抗架构与Sprint Contract，与 [Multi-Agent 协作模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-collaboration-patterns.md) 交叉
-7. **Harness全链路治理（22.7）**：自我评估偏差的对抗性消除、模型与脚手架的动态平衡，与 [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 直接相关
+6. **多Agent协作（22.6）**：GAN-like生成-对抗架构与Sprint Contract，与 [Multi-Agent 协作模式](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/multi-agent-collaboration-patterns.md) 交叉
+7. **Harness全链路治理（22.7）**：自我评估偏差的对抗性消除、模型与脚手架的动态平衡，与 [Harness Engineering 框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 直接相关
 8. **沙箱安全（22.8）**：Hermes的沙箱机制与安全隔离
 
 这七点是当前Agent架构的真实工程缺口，任何生产级Agent系统都必须面对这些挑战。
@@ -198,11 +198,11 @@ Hermes的Smart Approval是**分诊导向**：先用LLM判断危险等级，再�
 
 ## 参见
 
-- [Hermes-Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md) — Nous Research的持久化Agent
-- [OpenClaw架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/openclaw-architecture.md) — OpenClaw设计原理
-- [Agent Memory 生命周期](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md) — 记忆系统的OS隐喻
-- [Multi-Agent 协作模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/multi-agent-collaboration-patterns.md) — 多智能体协作范式
-- [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — Agent治理工程
+- [Hermes-Agent](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/hermes-agent.md) — Nous Research的持久化Agent
+- [OpenClaw架构](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/openclaw-architecture.md) — OpenClaw设计原理
+- [Agent Memory 生命周期](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-lifecycle-philosophies.md) — 记忆系统的OS隐喻
+- [Multi-Agent 协作模式](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/multi-agent-collaboration-patterns.md) — 多智能体协作范式
+- [Harness Engineering 框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — Agent治理工程
 
 ## 相关实体
 - [Hermes Agent Vs Openclaw Comparison](../ch04/161-hermes-agent.html)

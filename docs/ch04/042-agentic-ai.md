@@ -176,7 +176,7 @@ AWS China Blog（2026-06-12）从**经济学经典命题"生产力决定生产�
 
 1. **优先建立 Agent 治理平台，而非推广更多 AI 工具**：单 Agent 跑起来是 Demo，100 Agent 可靠服务是生产。从"工具堆叠"升级到"基础设施"是核心跃迁。没有统一平台的 AI 推广只会加速"探索失控 → 重复造轮子 → 数据/权限混乱"的代理人困境。结合 [Agent Harness Architecture Deep Dive Aksahy](../ch05/035-agent-harness.html) 中的 9 模块映射，优先建设 Runtime、Gateway、Policy、Observability 四根支柱。
 
-2. **用 MCP + A2A 标准化接口作为集成策略的锚点**：接口标准先行是降低 N×M 集成复杂度的唯一有效路径。MCP 确保 Agent 与工具的连接标准化，A2A 确保多 Agent 协作标准化。[Model Context Protocol Mcp](https://github.com/QianJinGuo/wiki/blob/main/concepts/model-context-protocol-mcp.md) 是当前生态最成熟的接口协议，企业应将 MCP 认证和版本管理纳入 Agent 上线的强制流程，而非可选配置。
+2. **用 MCP + A2A 标准化接口作为集成策略的锚点**：接口标准先行是降低 N×M 集成复杂度的唯一有效路径。MCP 确保 Agent 与工具的连接标准化，A2A 确保多 Agent 协作标准化。[Model Context Protocol Mcp](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/model-context-protocol-mcp.md) 是当前生态最成熟的接口协议，企业应将 MCP 认证和版本管理纳入 Agent 上线的强制流程，而非可选配置。
 
 3. **AIDLC 流程建设先于规模化部署**：在 3-6 个月内建立 AIDLC 流程（Evaluation 框架 + Guardrail 配置 + 持续监控），比直接扩大 Agent 数量更重要。没有统计评估体系的 Agent 规模化是不可控的扩张。参考 [Agent Harness Architecture Design Production Guide](../ch05/035-agent-harness.html) 中的生产级 Checklists，在 AIDLC 早期就嵌入 Evaluation 指标。
 

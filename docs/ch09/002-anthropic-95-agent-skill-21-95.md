@@ -39,16 +39,16 @@ Skill stack 是 harness 的上层——harness 管理"AI 能做什么"（工具�
 - [Anthropic Claude Cowork Task Boundary 5 Signals 6 Stages](../ch01/787-anthropic-claude.html)
 - [Anthropic 官方技能最佳实践14 个可复用的 Agent Skills 设计模式](../ch04/302-agent-skills.html)
 - [Anthropic Dreaming Claude Managed Agents Ovz5V7Jjkqdksu9Xmxwt8W](../ch01/294-claude-managed-agents.html)
-- [Anthropic 12 Mcp Production Patterns](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-12-mcp-production-patterns.md)
+- [Anthropic 12 Mcp Production Patterns](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-12-mcp-production-patterns.md)
 - [Tencent Skill Writing Complete Playbook Jackjchou](../ch07/054-skill.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-95pct-data-analysis-skill-stack-architecture.md)
 
 - [使用Claude Codesession管理与1M上下文](../ch03/057-claude-code.html)
-- [Anthropic 95Pct Data Analysis Summary 189 Chars](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-95pct-data-analysis-summary-189-chars.md)
-- [大反转马斯克牵手对手 Darioanthropic 与 Spacex 罕见合作](https://github.com/QianJinGuo/wiki/blob/main/entities/大反转马斯克牵手对手-darioanthropic-与-spacex-罕见合作.md)
-- [Anthropic Dynamic Workflows Ultracode Deep Research Lyuyuebannzi](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-dynamic-workflows-ultracode-deep-research-lyuyuebannzi.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
+- [Anthropic 95Pct Data Analysis Summary 189 Chars](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-95pct-data-analysis-summary-189-chars.md)
+- [大反转马斯克牵手对手 Darioanthropic 与 Spacex 罕见合作](https://github.com/QianJinGuo/wiki-public/blob/main/entities/大反转马斯克牵手对手-darioanthropic-与-spacex-罕见合作.md)
+- [Anthropic Dynamic Workflows Ultracode Deep Research Lyuyuebannzi](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-dynamic-workflows-ultracode-deep-research-lyuyuebannzi.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-engineering-guide.md)
 ## 数据分析 ≠ 写代码（核心区分）
 
 | 维度 | 代码 Agent | 分析 Agent |

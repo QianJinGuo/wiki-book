@@ -41,7 +41,7 @@
 - [Stripe 金融合规 AI 生产经验](../ch04/249-stripe-financial-compliance-ai-agent-production-lessons.html)
 - [Agent 审计风险与噪声](../ch03/004-agent.html)
 - AI 合规
-- [负责任 AI 治理](https://github.com/QianJinGuo/wiki/blob/main/concepts/responsible-ai-governance.md)
+- [负责任 AI 治理](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/responsible-ai-governance.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/why-internally-built-ai-fails-fund-accounting-audits.md)
 

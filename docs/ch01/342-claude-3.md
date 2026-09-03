@@ -40,7 +40,7 @@ Anthropic 在总结中特别强调了渐进式 rollout 的重要性：任何可�
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-发布官方报告承认存在-3-处质量退化问题.md)
 -
 
-- [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
+- [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/moc/cybersecurity-privacy.md)
 
 ## 相关实体
 - [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](../ch04/157-anthropic-google-agent-skills.html)
@@ -50,7 +50,7 @@ Anthropic 在总结中特别强调了渐进式 rollout 的重要性：任何可�
 - [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch03/004-agent.html)
 - [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](560-anthropic-ai.html)
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html)
-- [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki/blob/main/entities/context-window-management.md)
+- [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-window-management.md)
 - [Claude Opus 4.7 发布分析](285-claude-opus-4-7.html)
 - [Anthropic Claude Managed Agents 平台正式发布](158-anthropic-claude-managed-agents.html)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/057-claude-code.html)
@@ -66,10 +66,10 @@ Anthropic 在总结中特别强调了渐进式 rollout 的重要性：任何可�
 
 - [Boris Cherny — 从 IDE 到 Agent 控制台](../ch03/004-agent.html)
 - [Cat Wu — Anthropic Claude Code/Cowork产品负责人](../ch03/057-claude-code.html)
-- [Mythos for Offensive Security: XBOW's Evaluation](https://github.com/QianJinGuo/wiki/blob/main/entities/mythos_offensive_security_xbow_evaluatio.md)
-- [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-tool-design-evolution.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/anthropic-ecosystem.md)
+- [Mythos for Offensive Security: XBOW's Evaluation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mythos_offensive_security_xbow_evaluatio.md)
+- [Claude Code 工具设计演化](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/claude-code-tool-design-evolution.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/claude-code-complete-guide.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/anthropic-ecosystem.md)
 
 ---
 

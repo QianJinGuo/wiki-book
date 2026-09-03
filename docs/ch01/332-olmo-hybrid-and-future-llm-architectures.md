@@ -76,7 +76,7 @@ The most immediate practical benefit of recurrent layers is reduced KV-cache mem
 - More concurrent users per GPU for serving
 - Lower memory requirements for RL training with long rollouts
 
-This connects directly to the [inference cost analysis](https://github.com/QianJinGuo/wiki/blob/main/entities/napkin-inference-cost-injuly-2026.md) — memory bandwidth is the bottleneck for long-context inference, and hybrid architectures fundamentally reduce this pressure.
+This connects directly to the [inference cost analysis](https://github.com/QianJinGuo/wiki-public/blob/main/entities/napkin-inference-cost-injuly-2026.md) — memory bandwidth is the bottleneck for long-context inference, and hybrid architectures fundamentally reduce this pressure.
 
 ### Are Frontier Models Already Hybrid?
 
@@ -105,8 +105,8 @@ The post-training difficulties point to a significant research gap: **architectu
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/004-agent.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/004-agent.html)
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html)
-- [Inference cost at scale with napkin math](https://github.com/QianJinGuo/wiki/blob/main/entities/napkin-inference-cost-injuly-2026.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/llm-research-frontiers.md)
+- [Inference cost at scale with napkin math](https://github.com/QianJinGuo/wiki-public/blob/main/entities/napkin-inference-cost-injuly-2026.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/llm-research-frontiers.md)
 
 ---
 

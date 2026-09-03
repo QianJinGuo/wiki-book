@@ -150,12 +150,12 @@
 
 - [Yann Dubois Openai Post Training Matt Turck Interview](../ch01/316-openai.html)
 - [What Comes Next With Open Models](../ch01/734-what-comes-next-with-open-models.html)
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 - Multi-Agent Orchestration
 - **Monte Carlo Tree Search**
 - **AutoML**
 - **Atomic Experiment Design**
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/workflow-orchestration.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/workflow-orchestration.md)
 
 ---
 

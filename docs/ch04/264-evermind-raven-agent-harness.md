@@ -48,7 +48,7 @@ Raven 不是孤立的 Agent，而是一条纵向栈的顶层：EverOS（开源 M
 
 ## 相关实体
 
-- [MemOS Hermes 记忆插件](https://github.com/QianJinGuo/wiki/blob/main/entities/memos-hermes-plugin.md) — Hermes 的记忆插件系统，与 EverOS 记忆架构互补
+- [MemOS Hermes 记忆插件](https://github.com/QianJinGuo/wiki-public/blob/main/entities/memos-hermes-plugin.md) — Hermes 的记忆插件系统，与 EverOS 记忆架构互补
 - [Mem0 vs WorkBuddy：Agent 记忆层对比](407-mem0-vs-workbuddy-agent.html) — 与 EverOS 的对比参考
 - [Agent 进化四阶段](../ch03/004-agent.html) — 阿里云的 Agent 进化框架，与 EverMind 的 L1-L4 可对照
 - [AgentScope Builder：企业级自进化 Agent Harness](../ch05/035-agent-harness.html) — 同为「自进化 Harness」定位的工业化对照

@@ -67,7 +67,7 @@ Pre-commit（20% 完成度）：本地自检，轻量快速 → 个人级前置
 
 ## 与已有 wiki 实体关系
 
-- 关联 [阿里 Open Code Review](https://github.com/QianJinGuo/wiki/blob/main/entities/阿里开源-open-code-review一周揽下-5k-star更专业的代码评审-cli.md)、harness-engineering、multi-agent 等标签
+- 关联 [阿里 Open Code Review](https://github.com/QianJinGuo/wiki-public/blob/main/entities/阿里开源-open-code-review一周揽下-5k-star更专业的代码评审-cli.md)、harness-engineering、multi-agent 等标签
 
 ## 深度分析
 
@@ -105,7 +105,7 @@ GLM5（~5% 检出率）需要强规则、细约束来补足检测能力，GPT5.5
 
 ---
 ## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 - 相关: Agent 架构
 
 ---

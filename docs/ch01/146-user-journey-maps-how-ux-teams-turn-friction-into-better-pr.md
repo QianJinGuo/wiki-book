@@ -204,11 +204,11 @@ Forrester 2026 年的分析指出，最先进的组织正在将 Journey Map 从�
 **4. 建立"非活跃用户专项访谈"机制**
 文章特别指出"不要只访谈忠诚用户"——这是最容易被忽视但影响最大的采样偏差。建议建立一套"高风险用户"识别与邀约机制：高订单未支付率、30 天未回访、客服负面反馈记录的用户都应被优先邀约。这些用户的洞察对激活率和留存率的提升价值是忠诚用户访谈的 3-5 倍。
 ## 相关实体
-- [User Interviews Guide Pro](https://github.com/QianJinGuo/wiki/blob/main/entities/user-interviews-guide-pro.md)
+- [User Interviews Guide Pro](https://github.com/QianJinGuo/wiki-public/blob/main/entities/user-interviews-guide-pro.md)
 - [Turn Repeated Instructions Into Reusable Skills In Lovable L](../ch03/014-turn-repeated-instructions-into-reusable-skills-in-lovable.html)
 - [Npm Supply Chain Compromise Postmortem](../ch04/257-ai.html)
-- [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudflare-glasswing-mythos-security.md)
-- [When Growth Slows Is It Sales Fault Or The Products Fault The Answer Has Changed](https://github.com/QianJinGuo/wiki/blob/main/entities/when-growth-slows-is-it-sales-fault-or-the-products-fault-the-answer-has-changed.md)
+- [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloudflare-glasswing-mythos-security.md)
+- [When Growth Slows Is It Sales Fault Or The Products Fault The Answer Has Changed](https://github.com/QianJinGuo/wiki-public/blob/main/entities/when-growth-slows-is-it-sales-fault-or-the-products-fault-the-answer-has-changed.md)
 
 ---
 

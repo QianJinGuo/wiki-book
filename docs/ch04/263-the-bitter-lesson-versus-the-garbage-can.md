@@ -76,8 +76,8 @@ Manus 是工艺典范：几百行手工 system prompts、明确的工作流脚�
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/004-agent.html)
 - RAG
 - Knowledge Graph RAG
-- [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
-- [Harness Engineering Paradigm Shift](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-paradigm-shift.md)
+- [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- [Harness Engineering Paradigm Shift](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-paradigm-shift.md)
 
 ---
 

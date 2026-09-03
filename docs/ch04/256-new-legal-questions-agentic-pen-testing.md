@@ -73,13 +73,13 @@ Computer Misuse Act 1990 的 "authorised person" 概念预设了一个**人类�
 - Agent 在运行时自主决定行动范围
 - 授权的边界是模糊的——客户授权"测试我们的系统"，但 Agent 决定具体探测什么
 
-这种 "authorisation gap" 不仅存在于渗透测试，而是所有 agentic AI 部署面临的根本性法律挑战。对于 [Agent 安全威胁模型](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-threat-models.md) 和 [Agent 内存架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-architecture.md) 领域，这是一个必须正视的问题。
+这种 "authorisation gap" 不仅存在于渗透测试，而是所有 agentic AI 部署面临的根本性法律挑战。对于 [Agent 安全威胁模型](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-security-threat-models.md) 和 [Agent 内存架构](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-architecture.md) 领域，这是一个必须正视的问题。
 
 ### Agent 身份的"非人类身份爆炸"
 
 文章指出"non-human identities now vastly outnumber human ones"——这在企业环境中已经是现实。每个 agent instance 有 ephemeral identity，measured in seconds。传统的 identity management（LDAP、Active Directory）完全不适用于这种规模和粒度。
 
-这对 [Agent 内存架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-architecture.md) 提出了全新要求：需要可审计的、不可伪造的、可追溯到 human principal 的 agent identity 体系。
+这对 [Agent 内存架构](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-architecture.md) 提出了全新要求：需要可审计的、不可伪造的、可追溯到 human principal 的 agent identity 体系。
 
 ### 渗透测试作为 Agent 法律问题的"试验场"
 
@@ -103,9 +103,9 @@ Computer Misuse Act 1990 的 "authorised person" 概念预设了一个**人类�
 ## 相关实体
 
 - [DeepMind AI Agent 安全](312-ai-agent.html) — Agent 安全的技术框架
-- [CVE 实践](https://github.com/QianJinGuo/wiki/blob/main/entities/getting-cve-without-shipping-slop.md) — 安全研究的实操视角
-- [Agent 安全威胁模型](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-threat-models.md) — Agent 安全概念框架
-- [Agent 内存架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-architecture.md) — Agent 身份管理与归属
+- [CVE 实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/getting-cve-without-shipping-slop.md) — 安全研究的实操视角
+- [Agent 安全威胁模型](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-security-threat-models.md) — Agent 安全概念框架
+- [Agent 内存架构](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-architecture.md) — Agent 身份管理与归属
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentic-penetration-testing-legal-questions.md)
 

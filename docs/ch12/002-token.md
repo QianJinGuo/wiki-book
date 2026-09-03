@@ -84,7 +84,7 @@ Shai-Hulud 蠕虫已从"一次性 npm 包投毒"演进为具备自传播能力�
 ## 相关实体
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026.md)
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
+> [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/moc/cybersecurity-privacy.md)
 
 ---
 

@@ -99,7 +99,7 @@ PilotDeck 的路由数据揭示了一个重要趋势：复杂任务中使用混�
 
 ### 与已有来源呼应
 
-**架构哲学呼应**：第 1 来源强调"环境自治"（PilotDeck 把 AI 视为生存环境而非工具），第 2 来源把这一点**翻译成大白话**：「别家的 WorkSpace 是文件夹加静态规则。PilotDeck 的 WorkSpace 是 AI 的完整生存环境。」——这与 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 框架的"环境是新型后端"思想完全吻合。
+**架构哲学呼应**：第 1 来源强调"环境自治"（PilotDeck 把 AI 视为生存环境而非工具），第 2 来源把这一点**翻译成大白话**：「别家的 WorkSpace 是文件夹加静态规则。PilotDeck 的 WorkSpace 是 AI 的完整生存环境。」——这与 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 框架的"环境是新型后端"思想完全吻合。
 
 **白盒记忆呼应**：第 1 来源强调"可观测性 = 数据库级"，第 2 来源把这个抽象落到**具体 UI 操作**：「记错了点进改，记忆冲突了直接删，**不要重启对话，不要重新喂一遍偏好**」——这一句精准对应 Agent 记忆架构 的"用户可控 vs AI 自主整合"两派之争，PilotDeck 明显站用户可控派。
 

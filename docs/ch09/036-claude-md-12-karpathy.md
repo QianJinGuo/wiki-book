@@ -77,7 +77,7 @@ Karpathy 的原始规则用身份语言（"像资深工程师"）来传递行为
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html)
 - [Claude Code Subagent 上下文卫生](../ch04/245-claude-code-subagent.html)
 - [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](../ch03/002-obsidian-claude-code.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/prompt-engineering-guide.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/prompt-engineering-guide.md)
 
 ---
 

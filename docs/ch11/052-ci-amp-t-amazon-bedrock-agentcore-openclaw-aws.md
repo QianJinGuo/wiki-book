@@ -17,7 +17,7 @@ Amazon Bedrock AgentCore、Strands Agent SDK、OpenClaw、MCP Server、OpenClaw�
 - [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第三篇 | 亚马逊AWS官方博客](../ch04/383-amazon-bedrock-agentcore.html)
 - [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇 | 亚马逊AWS官方博客](../ch04/383-amazon-bedrock-agentcore.html)
 - [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇](../ch04/383-amazon-bedrock-agentcore.html)
-- [基于Strands SDK 构建的企业智能问数解决方案实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki/blob/main/entities/enterprise-intelligent-data-query-solution-practice-based-on-strands-sdk.md)
+- [基于Strands SDK 构建的企业智能问数解决方案实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/enterprise-intelligent-data-query-solution-practice-based-on-strands-sdk.md)
 
 ## 深度分析
 ### Multi-Agent 协作架构的核心设计逻辑

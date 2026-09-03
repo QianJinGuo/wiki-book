@@ -95,14 +95,14 @@ Model Lifecycle Graph 通过 AIP Portal 向 practitioners 展示，这是一个�
    索引是同步、轻量的（写完即索引），而图遍历是异步、计算密集的。将发现入口与图引擎分离，使两者可独立扩缩容。Elasticsearch 单索引多 entity type 设计 + entityType 字段区分 + 相关性提升，是高可用发现体验的技术保障。
 
 ## 相关实体
-- [Netflix Live Operations Human Infrastructure](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-live-operations-human-infrastructure.md)
+- [Netflix Live Operations Human Infrastructure](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-live-operations-human-infrastructure.md)
 - [High Throughput Graph Abstraction At Netflix](087-high-throughput-graph-abstraction-at-netflix-part-i.html)
-- [Netflix Switchboard Lightbulb Model Routing](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-switchboard-lightbulb-model-routing.md)
+- [Netflix Switchboard Lightbulb Model Routing](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-switchboard-lightbulb-model-routing.md)
 - [High Throughput Graph Abstraction At Netflix Part I](087-high-throughput-graph-abstraction-at-netflix-part-i.html)
 - [Building Blocks For Foundation Model Training And Inference On Aws](095-building-blocks-for-foundation-model-training-and-inference.html)
 
 - [Netflix Scaling Camera File Processing At Netflix](011-scaling-camera-file-processing-at-netflix.html)
-- [Netflix Cassandra Wide Partition Dynamic Splitting](https://github.com/QianJinGuo/wiki/blob/main/entities/netflix-cassandra-wide-partition-dynamic-splitting.md)
+- [Netflix Cassandra Wide Partition Dynamic Splitting](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-cassandra-wide-partition-dynamic-splitting.md)
 ## 相关引用
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/democratizing-machine-learning-at-netflix-building-the-model.md)

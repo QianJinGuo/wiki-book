@@ -42,8 +42,8 @@ Localmaxxing 不是"取代云端"而是"分流任务"。随着本地模型能力
 ## 相关实体
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/localmaxxing.md)
 
-- [Crypto Funds Six Week Inflow Streak 4 9 Billion Coinshares](https://github.com/QianJinGuo/wiki/blob/main/entities/crypto-funds-six-week-inflow-streak-4-9-billion-coinshares.md)
-- [Ico Fines South Staffordshire 2022 Breach](https://github.com/QianJinGuo/wiki/blob/main/entities/ico-fines-south-staffordshire-2022-breach.md)
+- [Crypto Funds Six Week Inflow Streak 4 9 Billion Coinshares](https://github.com/QianJinGuo/wiki-public/blob/main/entities/crypto-funds-six-week-inflow-streak-4-9-billion-coinshares.md)
+- [Ico Fines South Staffordshire 2022 Breach](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ico-fines-south-staffordshire-2022-breach.md)
 - [Interaction Models](074-interaction-models-a-scalable-approach-to-human-ai-collabor.html)
 - [Weve Been Here Before Decompilers Fuzzers And Now Ai](../ch04/257-ai.html)
 - [Automate Progressive Rollouts With Vercel Flags Vercel](../ch09/108-automate-progressive-rollouts-with-vercel-flags-vercel.html)

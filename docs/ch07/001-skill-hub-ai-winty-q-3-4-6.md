@@ -230,9 +230,9 @@ description: 前端发版前的标准检查
 
 ### 1. "隐形 AI Tax"的本质：组织学习机制的失效
 
-winty 提出的"隐形 AI Tax"并非指某一项具体的货币成本，而是指**企业 AI 投入中无法被组织级能力承接的那部分损耗**。从知识管理视角看，这反映了企业缺乏一套将个体经验转化为组织知识的机制——这与 [企业 AI 采用](https://github.com/QianJinGuo/wiki/blob/main/concepts/enterprise-ai-adoption.md) 阶段模型中的"早期实验阶段"高度吻合：团队用上了 AI，但管理层缺乏对产出物的系统性保留。
+winty 提出的"隐形 AI Tax"并非指某一项具体的货币成本，而是指**企业 AI 投入中无法被组织级能力承接的那部分损耗**。从知识管理视角看，这反映了企业缺乏一套将个体经验转化为组织知识的机制——这与 [企业 AI 采用](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/enterprise-ai-adoption.md) 阶段模型中的"早期实验阶段"高度吻合：团队用上了 AI，但管理层缺乏对产出物的系统性保留。
 
-三种路径（工具采购型、小作坊自研型、中台收口型）之所以都逃不开 AI Tax，根本原因在于它们都缺少**显性化的组织知识层**：工具采购型没有沉淀，小作坊自研型沉淀了但不可控，中台收口型则把沉淀的权利从业务方手中夺走导致供给枯竭。这是一个经典的[组织知识生命周期](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md)管理问题，与早年知识管理（Knowledge Management）领域对"隐性知识显性化"的讨论一脉相承——只不过 AI 语境下的载体从文档变成了 Skill。
+三种路径（工具采购型、小作坊自研型、中台收口型）之所以都逃不开 AI Tax，根本原因在于它们都缺少**显性化的组织知识层**：工具采购型没有沉淀，小作坊自研型沉淀了但不可控，中台收口型则把沉淀的权利从业务方手中夺走导致供给枯竭。这是一个经典的[组织知识生命周期](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-lifecycle-philosophies.md)管理问题，与早年知识管理（Knowledge Management）领域对"隐性知识显性化"的讨论一脉相承——只不过 AI 语境下的载体从文档变成了 Skill。
 
 ### 2. Skill 五件事治理框架的理论基础
 
@@ -250,7 +250,7 @@ winty 提出的"隐形 AI Tax"并非指某一项具体的货币成本，而是�
 
 winty 将 Skill 定位在"个人侧"与"工具侧"之间，并称之为"组织能力层"。这个描述有深刻的架构含义：**Skill 是对组织流程经验的结构化编码，而非硬编码的规则或松散的 Prompt 集合**。
 
-[Harness 工程框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 提出的七层模型中，Skill 对应的是"组织适配层"（Organizational Adaptation Layer）——它不在个人 memory 里（个人层），也不是全局硬编码（工具层），而是被组织共享、治理和版本化的中间态。这与 [Thin Harness Fat Skills](../ch05/065-thin-harness-fat-skills-ai.html) 的核心论点相呼应：轻 harness（框架） + 重 skills（技能沉淀） 是组织级 AI 能力的正确方向。
+[Harness 工程框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 提出的七层模型中，Skill 对应的是"组织适配层"（Organizational Adaptation Layer）——它不在个人 memory 里（个人层），也不是全局硬编码（工具层），而是被组织共享、治理和版本化的中间态。这与 [Thin Harness Fat Skills](../ch05/065-thin-harness-fat-skills-ai.html) 的核心论点相呼应：轻 harness（框架） + 重 skills（技能沉淀） 是组织级 AI 能力的正确方向。
 
 ### 4. 从"个人聪明"到"组织默认聪明"：新人入职问题的元问题
 
@@ -270,7 +270,7 @@ winty 提出的"放得开"（能灰度发布、按团队订阅、按场景启用
 
 **反直觉建议**：与其让各团队大量写 Skill，不如**先投入建立 Skill Hub 的工程基础设施**（版本控制、自动评估、审计日志），再鼓励团队将 Skill 推送到 Hub。
 
-很多团队在"写了很多 Skill"后很快遇到"Skill 失控"问题（没有版本、没有评估、不知道谁改了啥），根本原因是治理基础设施没跟上。最小可行路径：**先跑通 Git 仓库 + GitHub Actions 自动化评估这一条线**，再扩展到灰度、回滚等高级能力。这与 [Skill 写作框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/skill-framework-writing-patterns.md) 中"先规范再扩展"的思想一致。
+很多团队在"写了很多 Skill"后很快遇到"Skill 失控"问题（没有版本、没有评估、不知道谁改了啥），根本原因是治理基础设施没跟上。最小可行路径：**先跑通 Git 仓库 + GitHub Actions 自动化评估这一条线**，再扩展到灰度、回滚等高级能力。这与 [Skill 写作框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/skill-framework-writing-patterns.md) 中"先规范再扩展"的思想一致。
 
 ### 2. 从高频、高风险场景开始，优先将"团队规范"转化为 Skill
 
@@ -295,7 +295,7 @@ winty 提出的"放得开"（能灰度发布、按团队订阅、按场景启用
 - **团队分支（team-xxx）**：特定团队的定制 Skill，不进入官方 Hub
 - **重大分歧时走 Fork**：在 Fork 上各自演进，核心接口保持兼容
 
-参考 [Skill Formal Theory Survey](https://github.com/QianJinGuo/wiki/blob/main/concepts/skill-formal-theory-survey.md) 中关于 Skill 可组合性的讨论，以及 [Skill Design Spec 8 Block Checklist Winty](054-skill.html) 中的结构化模板，Fork 的边界应该在"场景定制"层面而非"核心逻辑"层面——核心逻辑应该在主线收敛，场景差异通过参数或条件分支来处理。
+参考 [Skill Formal Theory Survey](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/skill-formal-theory-survey.md) 中关于 Skill 可组合性的讨论，以及 [Skill Design Spec 8 Block Checklist Winty](054-skill.html) 中的结构化模板，Fork 的边界应该在"场景定制"层面而非"核心逻辑"层面——核心逻辑应该在主线收敛，场景差异通过参数或条件分支来处理。
 
 ### 5. 建立 Skill Hub 与现有工程流程的嵌入点，防止 Hub 成为孤岛
 
@@ -305,7 +305,7 @@ winty 提出的"放得开"（能灰度发布、按团队订阅、按场景启用
 - 代码评审 Agent 默认加载 Skill Hub 中的团队规范 Skill
 - 新项目初始化时，Agent 自动从 Hub 拉取该项目类型对应的 Skill 集
 
-这样 Skill Hub 才能真正成为**组织能力的默认载体**，而不是一个需要特意打开的"技能商店"。这与 [Agent 工程](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md) 中"Agent 能力应该是环境的一部分而非人工注入的"原则高度一致。
+这样 Skill Hub 才能真正成为**组织能力的默认载体**，而不是一个需要特意打开的"技能商店"。这与 [Agent 工程](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/hermes-agent.md) 中"Agent 能力应该是环境的一部分而非人工注入的"原则高度一致。
 
 ---
 

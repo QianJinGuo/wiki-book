@@ -72,12 +72,12 @@ ChatGPT Search 区分「实时网络信息」和「预训练知识」，并只�
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/chatgpt-search-web-run-fanout-searchengineland.md)
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
+> [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
 
 - [Building web search-enabled agents with Strands and Exa](../ch04/341-building-web-search-enabled-agents-with-strands-and-exa.html)
 - [Why and how to implement an AI asset rationalization strategy](../ch04/257-ai.html)
 - [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](../ch04/312-ai-agent.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/openai-developer-ecosystem.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/openai-developer-ecosystem.md)
 
 ---
 

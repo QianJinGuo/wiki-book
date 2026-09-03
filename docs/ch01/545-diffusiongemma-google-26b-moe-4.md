@@ -60,7 +60,7 @@ Google 2026-06-10 发布的实验性开放模型，Apache 2.0 协议，基于 Ge
 
 ---
 ## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ## 第 3 来源 — DiffusionGemma Technical Report (arXiv 2608.00146)
 

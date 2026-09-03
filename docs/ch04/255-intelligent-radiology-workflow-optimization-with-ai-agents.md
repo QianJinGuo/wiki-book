@@ -7,7 +7,7 @@
 - v×c = 7×8 = 56，stars = 4
 
 ## 相关实体
-- [Google Deepmind Accelerator Asia Pacific](https://github.com/QianJinGuo/wiki/blob/main/entities/google-deepmind-accelerator-asia-pacific.md)
+- [Google Deepmind Accelerator Asia Pacific](https://github.com/QianJinGuo/wiki-public/blob/main/entities/google-deepmind-accelerator-asia-pacific.md)
 - [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](../ch11/108-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
 - [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](038-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
 - [Skill Issues Compromising Claude Code With Malicious Skills Agents](../ch01/571-skill-issues-compromising-claude-code-with-malicious-skills.html)

@@ -108,7 +108,7 @@ GitNexus 的本地化架构（代码不离开机器）是其企业推广的关�
 每季度运行一次 `gitnexus wiki` 生成项目 Wiki，基于代码图谱自动整理模块边界和功能区域。这份文档会比人工维护的文档更接近代码真实状态，特别适合用于新人 onboarding 和跨模块修改前的架构确认。
 
 ### 3. 在 Claude Code 中配置 `PreToolUse` Hook 自动补充图谱上下文
-当 Agent 需要搜索代码时，hook 应自动调用 `query` 工具先获取图谱视角的搜索结果，再交给 Agent 决策。可以参考 [Claude Code Deep Architecture Analysis](https://github.com/QianJinGuo/wiki/blob/main/concepts/claude-code-deep-architecture-analysis.md) 中关于 hooks 的实现思路，将"先问项目再改代码"固化为 Agent 工作流的默认行为。
+当 Agent 需要搜索代码时，hook 应自动调用 `query` 工具先获取图谱视角的搜索结果，再交给 Agent 决策。可以参考 [Claude Code Deep Architecture Analysis](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/claude-code-deep-architecture-analysis.md) 中关于 hooks 的实现思路，将"先问项目再改代码"固化为 Agent 工作流的默认行为。
 
 ### 4. 微服务架构团队应建立仓库组的统一索引策略
 对于多仓库项目，用 `gitnexus group create` 建立统一的仓库组，用 `group_sync` 定期同步 API 契约依赖关系。在 CI/CD 流程中加入 `group_status` 检查，确保每次部署前各仓库的索引状态一致。
@@ -123,10 +123,10 @@ GitNexus 的本地化架构（代码不离开机器）是其企业推广的关�
 - [Introducing Claude Platform On Aws Anthropics Native Platfor](340-claude.html)
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/057-claude-code.html)
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/057-claude-code.html)
-- [Anthropic Nla Natural Language Autoencoders Interpretability](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-nla-natural-language-autoencoders-interpretability.md)
+- [Anthropic Nla Natural Language Autoencoders Interpretability](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-nla-natural-language-autoencoders-interpretability.md)
 
-→ [Agent Memory Lifecycle Philosophies](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-memory-lifecycle-philosophies.md)
-→ [Harness Engineering Paradigm Shift](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-paradigm-shift.md)
+→ [Agent Memory Lifecycle Philosophies](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-lifecycle-philosophies.md)
+→ [Harness Engineering Paradigm Shift](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-paradigm-shift.md)
 
 ---
 

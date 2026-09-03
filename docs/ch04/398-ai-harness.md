@@ -13,9 +13,9 @@
 - [from silos to service topology: why netflix built a real-tim](../ch11/116-from-silos-to-service-topology-why-netflix-built-a-real-tim.html)
 - [llmreaper - dom based ai conversation exfiltration via brows](../ch12/014-llmreaper-dom-based-ai-conversation-exfiltration-via-brows.html)
 - [building is just the beginning: introducing discoverability](../ch01/677-building-is-just-the-beginning-introducing-discoverability.html)
-- [nemotron 3.5 content safety: customizable multimodal safety](https://github.com/QianJinGuo/wiki/blob/main/entities/nemotron-3-5-content-safety-multimodal.md)
-- [neurips 2026 使用闭源 ai 检测器 pangram 批量 desk-reject 论文事件](https://github.com/QianJinGuo/wiki/blob/main/entities/neurips-2026-pangram-desk-reject-controversy.md)
-- [qoder 发布团队知识引擎：组织级知识记忆是 harness 自进化的重要组件](https://github.com/QianJinGuo/wiki/blob/main/entities/qoder-team-knowledge-engine-compiled-knowledge.md)
+- [nemotron 3.5 content safety: customizable multimodal safety](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nemotron-3-5-content-safety-multimodal.md)
+- [neurips 2026 使用闭源 ai 检测器 pangram 批量 desk-reject 论文事件](https://github.com/QianJinGuo/wiki-public/blob/main/entities/neurips-2026-pangram-desk-reject-controversy.md)
+- [qoder 发布团队知识引擎：组织级知识记忆是 harness 自进化的重要组件](https://github.com/QianJinGuo/wiki-public/blob/main/entities/qoder-team-knowledge-engine-compiled-knowledge.md)
 - [scaling camera file processing at netflix](../ch11/011-scaling-camera-file-processing-at-netflix.html)
 - [state of routing in model serving](../ch11/152-state-of-routing-in-model-serving.html)
 - [大模型可控新突破：steering 机制、评估体系与开源落地](../ch01/657-steering.html)
@@ -23,7 +23,7 @@
 - [吴恩达2026新课上线！3小时包教包会，零代码小白也能成为ai超级玩家](257-ai.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-agent-harness-construction-akshay-baoyu.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/mlops-training-inference.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
 ## 深度分析
 
 深度拆解：AI 智能体 Harness 的构造【译】 涉及agent领域的核心技术议题。

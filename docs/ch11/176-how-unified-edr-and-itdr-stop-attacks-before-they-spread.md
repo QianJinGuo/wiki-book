@@ -20,7 +20,7 @@
 - T1550 — Use Alternate Authentication Material
 - T1098 — Account Manipulation
 ## 相关实体
-- [Huntress Edr Itdr](https://github.com/QianJinGuo/wiki/blob/main/entities/huntress-edr-itdr.md)
+- [Huntress Edr Itdr](https://github.com/QianJinGuo/wiki-public/blob/main/entities/huntress-edr-itdr.md)
 - [Llm Raiders Private Ai Server](../ch01/451-llm.html)
 - [How Claude Code Works In Large Codebases Best Practices And Where To Start](../ch01/349-how-claude-code-works-in-large-codebases-best-practices-and.html)
 - [Llm Raiders And How To Repel Them](../ch01/544-llm-raiders-and-how-to-repel-them.html)

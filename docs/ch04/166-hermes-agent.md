@@ -110,8 +110,8 @@ Hermes 采用的"冻结快照"模式 看起来反直觉：会话过程中文件�
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/004-agent.html)
 - [OpenClaw 多智能体团队搭建](176-openclaw.html)
 - [OpenClaw 完整指南](176-openclaw.html)
-- [Hermes Agent](https://github.com/QianJinGuo/wiki/blob/main/concepts/hermes-agent.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/data-infrastructure.md)
+- [Hermes Agent](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/hermes-agent.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/data-infrastructure.md)
 
 ---
 

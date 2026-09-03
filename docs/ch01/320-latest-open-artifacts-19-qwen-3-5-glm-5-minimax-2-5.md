@@ -69,7 +69,7 @@ GLM-5 由智谱 Z.ai 推出：
 - **首次进军 agentic reasoning**：发布 SFT（监督微调）与 RL（强化学习）数据。
 - **配套评测**：提供"lite"版本的终端任务评测集，用于评估小模型。
 
-这一动向意味着 agentic reasoning 训练数据的开放化已拉开序幕，对 [Agent 工程能力图谱](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-engineering-capability-map.md) 中"训练数据"维度的开放生态具有结构性意义。
+这一动向意味着 agentic reasoning 训练数据的开放化已拉开序幕，对 [Agent 工程能力图谱](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-engineering-capability-map.md) 中"训练数据"维度的开放生态具有结构性意义。
 
 ### 稀疏注意力与长上下文
 
@@ -83,7 +83,7 @@ GLM-5 由智谱 Z.ai 推出：
 2. **GDN 等非 Transformer 架构值得关注**：Qwen-Next + GDN 层的组合表明状态空间模型（SSM）变体在主流大模型中开始占据一席之地。对推理延迟敏感的场景，应优先评估此类架构的推理成本优势。
 3. **Agent 训练数据开始开放化**：OpenThinker-Agent-v1 的 SFT/RL 数据开放，为中小团队构建垂直 agent 提供了新基座。可结合 Agent 循环设计 与 Agent 评测基准 进行二次微调。
 4. **开放权重模型的商业化路径已打开**：GLM-5 编码计划涨价证明开放权重 + 增值服务（API、托管、fine-tuning 服务）的混合商业模式具备可持续性。对希望控制成本的团队，付费开放权重 API 可能优于闭源 API。
-5. **"小而强"路线持续被验证**：MiniMax-M2.5 以相对小的参数量达到 GLM-5 级别性能，说明数据质量 + 训练方法学的进步比单纯堆参数更重要。在 [Agent 工程能力图谱](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-engineering-capability-map.md) 中，应将"小模型 + 强推理"视为独立分支评估。
+5. **"小而强"路线持续被验证**：MiniMax-M2.5 以相对小的参数量达到 GLM-5 级别性能，说明数据质量 + 训练方法学的进步比单纯堆参数更重要。在 [Agent 工程能力图谱](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-engineering-capability-map.md) 中，应将"小模型 + 强推理"视为独立分支评估。
 6. **稀疏注意力是长上下文的关键路径**：1M 上下文的 MiniCPM-SALA 表明稀疏注意力工程化已成熟。对 RAG、代码库分析、多文档摘要等场景，应优先评估稀疏注意力模型。
 
 ## 关联实体

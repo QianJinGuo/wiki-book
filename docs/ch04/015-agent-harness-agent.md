@@ -618,7 +618,7 @@ class RecoveryManager:
 
 - [Versa Takes Aim At Fragmented Enterprise Security With Cspm Orchestration Updat](427-versa-takes-aim-at-fragmented-enterprise-security-with-cspm.html)
 - [k-dense — the model is no longer the bottleneck](137-k-dense-the-model-is-no-longer-the-bottleneck.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-privacy-landscape.md)
 
 ---
 

@@ -31,7 +31,7 @@ Claude Code Dynamic Workflows 第 7 译本（架构师 JiaGouX 视角：任务�
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/memory-context-systems.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/memory-context-systems.md)
 
 ---
 

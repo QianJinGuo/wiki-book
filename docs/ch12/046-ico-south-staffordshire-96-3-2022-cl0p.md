@@ -56,7 +56,7 @@ South Staffordshire Plc 集团 CEO Charley Maher 表示接受 ICO 决定，并�
 
 ## 实践启示
 
-1. **威胁可见性是 CNI 安全底线**：5% 的监控覆盖率几乎等同于完全无监控，任何依赖"被动发现"的安全策略都不应被接受。企业应建立基于攻击面管理（ASM）、EDR/NDR 部署、日志聚合（SIEM）的全栈可见性体系，参考 [Agent 安全架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-architecture.md) 与 Agent 可观测性 中强调的"持续验证"原则。
+1. **威胁可见性是 CNI 安全底线**：5% 的监控覆盖率几乎等同于完全无监控，任何依赖"被动发现"的安全策略都不应被接受。企业应建立基于攻击面管理（ASM）、EDR/NDR 部署、日志聚合（SIEM）的全栈可见性体系，参考 [Agent 安全架构](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-security-architecture.md) 与 Agent 可观测性 中强调的"持续验证"原则。
 2. **脆弱性管理必须形成闭环**：运行 Windows Server 2003 这类已停止支持的软件，是典型的攻击面管理失败。企业应建立"资产清单 → 漏洞扫描 → 风险评分 → 修复 SLA → 验证"的闭环，并优先处理面向互联网的关键系统。
 3. **关键基础设施的合规基线更高**：作为 CNI，自来水、电力、交通、医疗等行业面临更严的监管期望。GDPR 的"适当技术措施"在 CNI 场景下应被解读为行业领先的实践（state-of-the-art），而非平均合规水平。
 4. **检测时间（MTTD）是核心 KPI**：从 2020 年 9 月入侵到 2022 年 7 月发现，攻击者潜伏近两年。即便没有主动威胁狩猎能力，EDR、网络流量分析和去中心化告警关联也能将 MTTD 缩短至天级而非年级。
@@ -65,13 +65,13 @@ South Staffordshire Plc 集团 CEO Charley Maher 表示接受 ICO 决定，并�
 ## 关联实体
 
 - [Canvas LMS 攻击事件](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/canvas-hackers-shinyhunters-say-their-official-domain-suspen.md) — 同一时期教育领域 SaaS 被攻击，体现关键供应链攻击常态化
-- [Agent 安全架构](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-architecture.md) — 零信任与持续验证原则在 AI Agent 时代的延伸
+- [Agent 安全架构](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-security-architecture.md) — 零信任与持续验证原则在 AI Agent 时代的延伸
 - Agent 可观测性 — 检测时间（MTTD）的工程化方法
 - [视觉 AI 的下一前沿是代码](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/a16z-com-the-next-frontier-of-visual-ai-is-code.md) — a16z 关于视觉生成栈的论述
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/observability-monitoring.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/observability-monitoring.md)
 
 ---
 

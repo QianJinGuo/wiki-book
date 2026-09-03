@@ -51,8 +51,8 @@ Ouster 并非没有对手：全球出货量领先的 Hesai 在 Rev8 发布前几
 
 - [NVIDIA 边缘优先 LLM：自动驾驶与机器人](170-nvidia-edge-first-llms-av-robotics.html)
 - [Moneyball for Physical AI](../ch04/257-ai.html)
-- [谁说3DGS必须靠LiDAR？如视Argus让图像提供LiDAR级位姿约束](https://github.com/QianJinGuo/wiki/blob/main/entities/谁说3dgs必须靠lidar如视argus入选eccv让图像也能提供lidar级位姿约束.md)
-- [Amap ABot Earth 0.5：3D 原生世界模型](https://github.com/QianJinGuo/wiki/blob/main/entities/amap-abot-earth-0.5-3d-native-world-model.md)
+- [谁说3DGS必须靠LiDAR？如视Argus让图像提供LiDAR级位姿约束](https://github.com/QianJinGuo/wiki-public/blob/main/entities/谁说3dgs必须靠lidar如视argus入选eccv让图像也能提供lidar级位姿约束.md)
+- [Amap ABot Earth 0.5：3D 原生世界模型](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amap-abot-earth-0.5-3d-native-world-model.md)
 - 具身智能与机器人
 - Vision-Language Models
 - [Tether launches developer grants program for local-first AI and payments infrastructure](../ch11/166-tether-launches-developer-grants-program-for-local-first-ai.html)

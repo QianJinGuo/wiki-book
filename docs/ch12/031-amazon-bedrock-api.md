@@ -88,7 +88,7 @@ CloudWatch 指标和 CloudTrail 日志构成了监控的两条腿。CloudWatch �
 - [Build financial document processing with Pulse AI and Amazon Bedrock](../ch11/119-build-financial-document-processing-with-pulse-ai-and-amazon.html)
 - [Build real-time voice streaming applications with Amazon Nova Sonic and WebRTC](../ch11/217-amazon-nova.html)
 - [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/496-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
-- [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki/blob/main/entities/航班变更信息智能识别解决方案.md)
+- [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki-public/blob/main/entities/航班变更信息智能识别解决方案.md)
 - [Autonomous Vulnerability Hunting with MCP](../ch01/451-llm.html)
 - [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](../ch01/470-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html)
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](../ch11/217-amazon-nova.html)
@@ -99,9 +99,9 @@ CloudWatch 指标和 CloudTrail 日志构成了监控的两条腿。CloudWatch �
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](../ch11/211-bedrock.html)
 - [LLM raiders and how to repel them](../ch01/451-llm.html)
 - [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/383-amazon-bedrock-agentcore.html)
-- [CloudSectiDbits](https://github.com/QianJinGuo/wiki/blob/main/entities/cloudsectidbits.md)
-- [Schemata Dod Contractor Api Flaw Military Data Exposure](https://github.com/QianJinGuo/wiki/blob/main/entities/schemata-dod-contractor-api-flaw-military-data-exposure.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/security-privacy-landscape.md)
+- [CloudSectiDbits](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloudsectidbits.md)
+- [Schemata Dod Contractor Api Flaw Military Data Exposure](https://github.com/QianJinGuo/wiki-public/blob/main/entities/schemata-dod-contractor-api-flaw-military-data-exposure.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-privacy-landscape.md)
 
 ---
 

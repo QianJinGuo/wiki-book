@@ -49,7 +49,7 @@ Salesforce 推出的 Headless 360 将 headless 概念推向大众。Notion 也�
 
 这些案例共同指向一个趋势：传统软件公司正在主动"去掉界面"，不是因为界面没有价值，而是因为 agent 作为新的用户群体，对 access pattern 的需求与人完全不同。未来软件可能需要维护两套接口——一套为人（GUI），一套为机器（API/API Agent Interface）。
 
-这与 [Salesforce Headless Software Losing Head A16Z](https://github.com/QianJinGuo/wiki/blob/main/entities/salesforce-headless-software-losing-head-a16z.md) 讨论的"护城河从界面层迁移到数据层"的趋势一致。[Enterprise Software Moats Agent Era](../ch03/004-agent.html) 进一步分析了五维迁移评估框架。[The Ui Is Dead Long Live The Agent Servicenow Goes Headless And Opens Its Platform](324-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html) 则展示了 ServiceNow 在 ITSM 领域的 headless 实践。
+这与 [Salesforce Headless Software Losing Head A16Z](https://github.com/QianJinGuo/wiki-public/blob/main/entities/salesforce-headless-software-losing-head-a16z.md) 讨论的"护城河从界面层迁移到数据层"的趋势一致。[Enterprise Software Moats Agent Era](../ch03/004-agent.html) 进一步分析了五维迁移评估框架。[The Ui Is Dead Long Live The Agent Servicenow Goes Headless And Opens Its Platform](324-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html) 则展示了 ServiceNow 在 ITSM 领域的 headless 实践。
 
 ## 深度分析
 
@@ -84,7 +84,7 @@ SAP 之所以"死不了"，不是因为它的技术好，而是因为它的业�
 
 这意味着在 Agent 时代，试图用通用 AI 取代 SAP 类系统的创业项目，本质上是在挑战这数十年的例外知识积累。更可行的路径是：**在 SAP 之上构建 agent 层，而非试图替代它**。agent 充当"翻译层"或"编排层"，利用 SAP 的业务逻辑但提供更灵活的交互方式。
 
-[Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 提供的持续监督/纠偏框架正是解决这类问题的工程方法论——agent 需要 harness 来约束其对 SAP 等关键系统的操作边界。
+[Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 提供的持续监督/纠偏框架正是解决这类问题的工程方法论——agent 需要 harness 来约束其对 SAP 等关键系统的操作边界。
 
 ### 4. 软件粘性在 Agent 时代的重塑
 
@@ -112,7 +112,7 @@ Agent 时代的软件粘性更接近于"协议粘性"——一旦 agent 的逻�
 
 Agent 如果要真正进入企业核心流程，它必须学会处理这些例外——不是通过训练数据（因为大量例外从未被记录），而是通过设计**人类介入机制**。这意味着即使软件变成了 headless，**human-in-the-loop** 仍然是 AGI 到达前的必要妥协。
 
-这指向一个更深的结论：Headless 不等于无人参与。Agent 可以不需要 GUI，但人类仍然需要在关键决策点介入——只不过介入方式从"操作界面"变成了"审核 agent 的决策"。[Sysdig Headless Cloud Security](https://github.com/QianJinGuo/wiki/blob/main/entities/sysdig-headless-cloud-security.md) 在云安全领域的实践也印证了这一点：headless 安全工具需要更强大的审计和回滚机制来应对 agent 的误操作风险。
+这指向一个更深的结论：Headless 不等于无人参与。Agent 可以不需要 GUI，但人类仍然需要在关键决策点介入——只不过介入方式从"操作界面"变成了"审核 agent 的决策"。[Sysdig Headless Cloud Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sysdig-headless-cloud-security.md) 在云安全领域的实践也印证了这一点：headless 安全工具需要更强大的审计和回滚机制来应对 agent 的误操作风险。
 
 ## 实践启示
 
@@ -130,7 +130,7 @@ Agent 如果要真正进入企业核心流程，它必须学会处理这些例�
 
 ### 4. 界面消失不代表 UX 消失
 
-Headless 软件面向 agent，不面向人，但最终仍然需要有人来解释 agent 做了什么、为什么这么做。这个"解释层"可能会成为新的界面——不是操作界面，而是**监督与审计界面**。这实际上与 [Harness Engineering Framework](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 中的"持续监督/纠偏"理念一致：agent 的操作需要可解释、可追溯、可干预。
+Headless 软件面向 agent，不面向人，但最终仍然需要有人来解释 agent 做了什么、为什么这么做。这个"解释层"可能会成为新的界面——不是操作界面，而是**监督与审计界面**。这实际上与 [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 中的"持续监督/纠偏"理念一致：agent 的操作需要可解释、可追溯、可干预。
 
 ### 5. 创业公司应避免与 SAP 类系统正面竞争业务逻辑层
 
@@ -139,13 +139,13 @@ Headless 软件面向 agent，不面向人，但最终仍然需要有人来解�
 ## 相关实体
 
 - [AI Agent 工具数量陷阱](312-ai-agent.html) — Agent 工具工程的设计原则与 headless 架构互补
-- [Salesforce 主动砍掉了界面](https://github.com/QianJinGuo/wiki/blob/main/entities/salesforce-headless-software-losing-head-a16z.md) — 同一议题的延伸讨论，聚焦数据护城河
+- [Salesforce 主动砍掉了界面](https://github.com/QianJinGuo/wiki-public/blob/main/entities/salesforce-headless-software-losing-head-a16z.md) — 同一议题的延伸讨论，聚焦数据护城河
 - [Enterprise Software Moats in the Agent Era](../ch03/004-agent.html) — 企业软件在 Agent 时代的护城河分析框架
 - [ServiceNow Headless 实践](324-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html) — ITSM 领域的 headless 转型案例
-- [Headless Cloud Security](https://github.com/QianJinGuo/wiki/blob/main/entities/sysdig-headless-cloud-security.md) — 云安全领域的 headless 实践
+- [Headless Cloud Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sysdig-headless-cloud-security.md) — 云安全领域的 headless 实践
 - [日抛软件：AI时代的认知滑坡](257-ai.html) — 对"AI 替代复杂系统"论调的批判性分析
 - [17种Agent架构演进](441-17-agent.html) — Agent 控制流设计对 headless 架构的影响
-- [Harness Engineering 框架](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) — 约束 agent 行为的工程方法论
+- [Harness Engineering 框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — 约束 agent 行为的工程方法论
 
 ---
 

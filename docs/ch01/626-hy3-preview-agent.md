@@ -7,15 +7,15 @@
 ## 相关实体
 
 - [an opinionated guide to using ai right now](../ch09/065-an-opinionated-guide-to-using-ai-right-now.html)
-- [cmu language models need sleep (arxiv 2605.26099)：ssm-attent](https://github.com/QianJinGuo/wiki/blob/main/entities/arxiv-2605-26099-ssm-attention-sleep-consolidation-cmu.md)
+- [cmu language models need sleep (arxiv 2605.26099)：ssm-attent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/arxiv-2605-26099-ssm-attention-sleep-consolidation-cmu.md)
 - [rod johnson 回归：embabel 与「最后一波由人类选择的框架」](../ch07/020-embabel.html)
 - [how my non-engineering team at sentry learned to ship](341-how-my-non-engineering-team-at-sentry-learned-to-ship.html)
 - [introducing 1-bit and ternary bonsai image 4b: image generat](713-introducing-1-bit-and-ternary-bonsai-image-4b-image-generat.html)
-- [latest open artifacts (#19): qwen 3.5, glm 5, minimax 2.5 —](https://github.com/QianJinGuo/wiki/blob/main/entities/latest-open-artifacts-19-qwen-35-glm-5-minimax-25-chinese-la.md)
+- [latest open artifacts (#19): qwen 3.5, glm 5, minimax 2.5 —](https://github.com/QianJinGuo/wiki-public/blob/main/entities/latest-open-artifacts-19-qwen-35-glm-5-minimax-25-chinese-la.md)
 - [introducing 1-bit and ternary bonsai image 4b: image generat](../ch04/257-ai.html)
 - [让大模型学会「自己教自己」！京东&中科院信工所连发三篇论文定义self-taughtrlvr](587-self-taught-rlvr.html)
 - [the recent history of ai in 32 otters](435-the-recent-history-of-ai-in-32-otters.html)
-- [5亿视频炼出全球最大gui开源数据集、推理token省71%小模型反超大模型——小米ai团队多篇论文入选icml 202](https://github.com/QianJinGuo/wiki/blob/main/entities/xiaomi-icml-2026-11papers-da769794d77c.md)
+- [5亿视频炼出全球最大gui开源数据集、推理token省71%小模型反超大模型——小米ai团队多篇论文入选icml 202](https://github.com/QianJinGuo/wiki-public/blob/main/entities/xiaomi-icml-2026-11papers-da769794d77c.md)
 - [天猫新品团队ai编码实战指南（下）](../ch04/257-ai.html)
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-hunyuan-hy3-preview-open-source.md)
 

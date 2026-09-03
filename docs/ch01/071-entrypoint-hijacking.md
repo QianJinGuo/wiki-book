@@ -40,10 +40,10 @@ Windows 进程运行时动态加载多个 DLL，加载器（ntdll!Ldrp）维护�
 6. **红队实施提示**：涉及 C2 回连的 API 必须在独立线程中运行（DontCallForThreads 配置下复杂 API 会死锁），且 EntryPoint 必须用后即恢复，否则目标进程崩溃会暴露行踪。
 
 ## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki/blob/main/moc/cybersecurity-privacy.md)
+> [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/moc/cybersecurity-privacy.md)
 
 - [EntryPoint Hijacking](071-entrypoint-hijacking.html)
-- [安全态势全景](https://github.com/QianJinGuo/wiki/blob/main/moc/security-landscape.md)
+- [安全态势全景](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-landscape.md)
 - [Cilium Tetragon：eBPF 运行时安全](168-rag.html)
 
 ---

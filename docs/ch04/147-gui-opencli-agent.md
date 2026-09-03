@@ -131,7 +131,7 @@ opencli cascade https://api.example.com/hot
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/004-agent.html)
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/004-agent.html)
-- [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md)
+- [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md)
 - [Agent Reliability Engineering Skillify Continuous Improvement](../ch07/054-skill.html)
 - [Anthropic 95Pct Data Analysis Jiagoux Data Level Harness 20260606](../ch05/008-harness.html)
 - [Codex Goal Source Code Deep Dive](../ch09/039-codex-goal.html)
@@ -139,7 +139,7 @@ opencli cascade https://api.example.com/hot
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/opencli-browser-automation-jingxing.md)
 - [how developers can build agentic agreement workflows on docu](237-how-developers-can-build-agentic-agreement-workflows-on-docu.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/reinforcement-learning-rlhf.md)
 
 ---
 

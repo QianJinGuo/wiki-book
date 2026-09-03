@@ -153,7 +153,7 @@ Harness 能做的是把缺失规格放到 Agent 能看到、能执行、能被�
   - [Harness design for long running apps](008-harness.html)（Anthropic 官方长任务 Harness 解读）
   - [Martin Fowler：非确定性进了研发链路](008-harness.html)（前馈/反馈原文）
 - **概念图**：
-  - [Long-Running Agent 架构三大模式与演进路径](https://github.com/QianJinGuo/wiki/blob/main/concepts/long-running-agent-architecture.md)
+  - [Long-Running Agent 架构三大模式与演进路径](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/long-running-agent-architecture.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-之后-状态边界与失败闭环-若飞.md)
 

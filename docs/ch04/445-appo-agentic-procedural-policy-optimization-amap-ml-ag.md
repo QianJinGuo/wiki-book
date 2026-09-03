@@ -193,11 +193,11 @@ A = α · A_base + (1-α) · A_future
 - [港中文 SLIM：动态技能生命周期管理](200-agentic-rl.html)（相关：另一条 Agentic RL 主线——技能生命周期管理）
 - [高德 Harness/SDD 体系](../ch05/076-ai-coding.html)（同公司高德不同主题：SDD 体系 vs Agentic RL）
 - [Harness Engineering 综述](../ch05/057-harness-engineering.html)（相关：APPO 是 Agentic RL 的"过程工程化"）
-- [Agent 编排范式](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-orchestration-patterns.md)（相关：过程级 credit 与编排的"阶段化"同源）
+- [Agent 编排范式](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-orchestration-patterns.md)（相关：过程级 credit 与编排的"阶段化"同源）
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/appo-agentic-procedural-policy-optimization-amap-ml-2026-06-16.md)
-- [高德路线规划双路线：mobilitybench（agent 基准）+ transitlm（端到端 rllm）](https://github.com/QianJinGuo/wiki/blob/main/entities/gaode-routing-dual-pathway-mobilitybench-transitlm-2026.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/reinforcement-learning-rlhf.md)
+- [高德路线规划双路线：mobilitybench（agent 基准）+ transitlm（端到端 rllm）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gaode-routing-dual-pathway-mobilitybench-transitlm-2026.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/reinforcement-learning-rlhf.md)
 
 ---
 

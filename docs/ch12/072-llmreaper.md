@@ -15,7 +15,7 @@
 ## 相关实体
 - [飞来汇借助 Aws Security Agent 构建跨境支付应用的智能安全防线](../ch04/244-aws-security-agent.html)
 - [Powering Agentic Ai Sales Strategy With Amazon Bedrock Agent](../ch04/017-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.html)
-- [Novee Security How To Get A 100 Conference Acceptance Rate The No](https://github.com/QianJinGuo/wiki/blob/main/entities/novee-security-how-to-get-a-100-conference-acceptance-rate-the-no.md)
+- [Novee Security How To Get A 100 Conference Acceptance Rate The No](https://github.com/QianJinGuo/wiki-public/blob/main/entities/novee-security-how-to-get-a-100-conference-acceptance-rate-the-no.md)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llmreaper-dom-based-ai-conversation-exfiltration-via-browser-5ee512.md)
 
@@ -59,13 +59,12 @@ Chrome、Firefox 等浏览器支持 Profiles 功能，可创建完全独立的�
 
 传统的钓鱼/社会工程培训往往忽略扩展攻击面。LLMReaper 类型的 PoC 可直接用于演示，让员工亲眼看到"安装一个看起来无害的扩展后，对话如何在后台被实时窃取"。这类可视化演示比文字警告更能建立行为改变。
 
-**5. 使用 [agent-security-threat-models](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-threat-models.md.md) 框架评估 AI 工作流中的数据流风险**
+**5. 使用 [agent-security-threat-models](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-security-threat-models.md) 框架评估 AI 工作流中的数据流风险**
 
-在引入 AI 工具到业务流程前，应系统性识别数据流经的所有节点（包括浏览器扩展、第三方脚本、API 端点），对照 [Agent Security Threat Models](https://github.com/QianJinGuo/wiki/blob/main/concepts/agent-security-threat-models.md.md) 中的攻击向量矩阵进行威胁建模。这有助于发现单点防御无法覆盖的盲区。
+在引入 AI 工具到业务流程前，应系统性识别数据流经的所有节点（包括浏览器扩展、第三方脚本、API 端点），对照 [Agent Security Threat Models](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-security-threat-models.md) 中的攻击向量矩阵进行威胁建模。这有助于发现单点防御无法覆盖的盲区。
 
 ---
 
 *本条目由 LLMReaper 研究论文深度解析生成，2026-06-03*
 
 ---
-

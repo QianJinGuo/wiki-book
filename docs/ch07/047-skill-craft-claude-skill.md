@@ -80,7 +80,7 @@ Skill Craft fix 模式要求修完后重新跑评估，确认分数提升。修�
 不是写\"请注意准确性\"，而是在 Skill 里明确要求：**工具查不到结果时，必须返回\"未找到\"而非猜测**。
 
 ## 与 Harness Engineering 的关系
-Skill Craft 和 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md) 都关注 LLM 系统的**工程化治理**，但侧重点不同：
+Skill Craft 和 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 都关注 LLM 系统的**工程化治理**，但侧重点不同：
 
 - **Harness Engineering**：经验如何沉淀成下一轮默认存在的能力（宏观框架）
 - **Skill Craft**：Skill 本身的结构质量和系统级治理（微观工具）
@@ -96,7 +96,7 @@ Skill Craft 的 fix 回归验证逻辑与 Harness 的 Generator/Evaluator 循环
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-skill-quality-tool-skill-craft.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/ai-skill-design.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/ai-skill-design.md)
 ## 使用
 ```bash
 

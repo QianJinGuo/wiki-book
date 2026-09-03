@@ -16,7 +16,7 @@ AI 工程三阶段：
 
 ## 相关查询
 
-- [AWS AI Topic Map](https://github.com/QianJinGuo/wiki/blob/main/moc/amazon-aws-ai.md) — AWS Bedrock、SageMaker、QuickSight 等服务支撑企业级 Agent 应用的完整生态 
+- [AWS AI Topic Map](https://github.com/QianJinGuo/wiki-public/blob/main/moc/amazon-aws-ai.md) — AWS Bedrock、SageMaker、QuickSight 等服务支撑企业级 Agent 应用的完整生态
 
 ## AgentCore Managed Harness 核心功能
 ### 1. 模型随便换
@@ -158,7 +158,6 @@ AgentCore 基于 Strands Agents 开源框架构建，这一选择创造了两条
 - [AWS DevOps Agent 实战：云网络故障自主调查与修复建议](214-aws-devops-agent.html)
 - [Your Chief Agent Operator Lobehub](../ch03/004-agent.html)
 - [当 agentic ai 重塑生产关系：智能体浪潮下的企业战略与行动框架](395-agentic-ai.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/aws-cloud-ai-infrastructure.md)
 
 ---
-

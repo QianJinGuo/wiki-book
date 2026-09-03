@@ -18,7 +18,7 @@ LangChain 证明：只改 Harness（不改模型权重），TerminalBench 2.0 �
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-harness-12-components-7-decisions.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/agent-engineering-guide.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-engineering-guide.md)
 ## 核心主张
 
 Agent = Model + Harness。模型负责智能，Harness 负责把智能变成能持续工作的系统。 LangChain 证明：只改 Harness（不改模型权重），TerminalBench 2.0 从榜外跳到第 5 名。

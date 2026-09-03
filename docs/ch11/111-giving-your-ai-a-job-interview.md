@@ -91,7 +91,7 @@ Mollick 的文章暗示了 AI 评估范式的转变：从单一维度的"有多�
 - [The Shape Of Ai Jaggedness Bottlenecks And Salients](../ch01/334-the-shape-of-ai-jaggedness-bottlenecks-and-salients.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
 - [Youre Building Agent Security In The Wrong Order](../ch03/004-agent.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/vision-multimodal.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/vision-multimodal.md)
 
 ---
 

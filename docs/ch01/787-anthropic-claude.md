@@ -91,9 +91,9 @@ Alex 明确表示：Anthropic 内部已经有专职研究人员的全职工作�
 - [Claude Managed Agents 官方 Harness 平台指南](158-anthropic-claude-managed-agents.html)
 - [Anthropic Computer Use 最佳实践](601-anthropic-computer-use.html)
 - [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](../ch03/004-agent.html)
-- [Anthropic Founders Playbook：AI 原生创业手册](https://github.com/QianJinGuo/wiki/blob/main/entities/anthropic-founders-playbook-huashu-2026.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/claude-code-complete-guide.md)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/anthropic-ecosystem.md)
+- [Anthropic Founders Playbook：AI 原生创业手册](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-founders-playbook-huashu-2026.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/claude-code-complete-guide.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/anthropic-ecosystem.md)
 
 ---
 

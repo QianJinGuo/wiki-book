@@ -72,7 +72,7 @@ Cursor 的快速/默认双版本策略提供了一个商业参考：当你的模
 - [Nomshub Cursor Remote Tunnel Sandbox Breakout Straiker](257-ai.html)
 - [Ai Coding Agent Quality Defense Five Control Mechanisms](253-ai-coding-agent.html)
 - [Cursor 复盘 Harness模型决定能力上限Harness 决定生产下限](../ch05/008-harness.html)
-- [Understand Anything Code Knowledge Graph Lum Jike](https://github.com/QianJinGuo/wiki/blob/main/entities/understand-anything-code-knowledge-graph-lum-jike.md)
+- [Understand Anything Code Knowledge Graph Lum Jike](https://github.com/QianJinGuo/wiki-public/blob/main/entities/understand-anything-code-knowledge-graph-lum-jike.md)
 - [Cloud Agent Development Environments](../ch03/004-agent.html)
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cursor.com-composer-2-5.md)

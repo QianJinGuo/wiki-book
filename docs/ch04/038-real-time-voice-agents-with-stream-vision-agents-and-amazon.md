@@ -162,7 +162,7 @@ Vision Agents + Nova 2 Sonic 非常适合用户无法可靠使用屏幕的场景
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](../ch11/048-prowler-genai.html)
 - [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](../ch11/135-amazon-bedrock.html)
 - [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](../ch11/135-amazon-bedrock.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/aws-cloud-ai-infrastructure.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/aws-cloud-ai-infrastructure.md)
 
 ---
 

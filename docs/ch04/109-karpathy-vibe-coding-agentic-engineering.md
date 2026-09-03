@@ -35,7 +35,7 @@
 
 ### 3. 文档角色在 Software 3.0 里被重新定义
 
-Karpathy 用 OpenClaw 的安装例子说清了一件容易忽略的事：传统 README、API 文档、Runbook 是给人读的，未来要同时满足「人能理解、Agent 能执行、系统能验证执行结果」三件事。 这条线连到过程资产——稳定的排障路径、发布检查、PR review 清单、安全红线——它们以前是经验，存在老员工脑子里或者零散的 wiki 页面；以后要变成 Agent 能读取、调用、累积的工程材料。这个变化和 [Harness Engineering](https://github.com/QianJinGuo/wiki/blob/main/concepts/harness-engineering-framework.md)、[上下文工作集](https://github.com/QianJinGuo/wiki/blob/main/concepts/working-set-vs-long-term-memory.md)、[Subagent 模式](https://github.com/QianJinGuo/wiki/blob/main/concepts/subagent-spawning-pattern.md) 其实是同一件事的不同切片。访谈里特别提了一个反面教材：用户用 Google 登录、Stripe 付款，Agent 把 Stripe 邮箱当 user ID 关联 credits——代码能跑、局部测试能过，但系统语义错了。 这类业务语义错误最危险的地方在于它不在代码语法里，而在身份、权限、状态、责任的关系里——这恰恰是架构师最该守的口子。
+Karpathy 用 OpenClaw 的安装例子说清了一件容易忽略的事：传统 README、API 文档、Runbook 是给人读的，未来要同时满足「人能理解、Agent 能执行、系统能验证执行结果」三件事。 这条线连到过程资产——稳定的排障路径、发布检查、PR review 清单、安全红线——它们以前是经验，存在老员工脑子里或者零散的 wiki 页面；以后要变成 Agent 能读取、调用、累积的工程材料。这个变化和 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)、[上下文工作集](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/working-set-vs-long-term-memory.md)、[Subagent 模式](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/subagent-spawning-pattern.md) 其实是同一件事的不同切片。访谈里特别提了一个反面教材：用户用 Google 登录、Stripe 付款，Agent 把 Stripe 邮箱当 user ID 关联 credits——代码能跑、局部测试能过，但系统语义错了。 这类业务语义错误最危险的地方在于它不在代码语法里，而在身份、权限、状态、责任的关系里——这恰恰是架构师最该守的口子。
 
 ### 4. 锯齿状智能决定护栏必须默认开启
 
@@ -68,11 +68,11 @@ Karpathy 自己做了一个 MenuGen 小应用：拍菜单照片 → OCR 抽菜�
 - [Karpathy Vibe Coding Agentic Engineering](098-karpathy-vibe-coding-agentic-engineering.html)
 - [Vibe Coding Agentic Engineering Convergence Simon Willison](../ch09/038-coding-agent.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/004-agent.html)
-- [Gsd Get Shit Done Context Management Tool](https://github.com/QianJinGuo/wiki/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
+- [Gsd Get Shit Done Context Management Tool](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/057-harness-engineering.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](176-openclaw.html)
 - [protecting against token theft](../ch01/232-protecting-against-token-theft.html)
-- [MOC](https://github.com/QianJinGuo/wiki/blob/main/moc/coding-agent-practice.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/coding-agent-practice.md)
 
 ---
 

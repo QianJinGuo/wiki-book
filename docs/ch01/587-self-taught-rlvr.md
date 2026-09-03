@@ -47,7 +47,7 @@
 ## 相关实体
 - [Llm Post Training Full Guide](451-llm.html)
 - [Mellum 2 Jetbrains Open 12B Moe Code Model](../ch04/257-ai.html)
-- [Reading Todays Open Closed Performance Gap](https://github.com/QianJinGuo/wiki/blob/main/entities/reading-todays-open-closed-performance-gap.md)
+- [Reading Todays Open Closed Performance Gap](https://github.com/QianJinGuo/wiki-public/blob/main/entities/reading-todays-open-closed-performance-gap.md)
 - [Baidu Wenxin Post Training Evolution](../ch04/257-ai.html)
 - [Vllm V0 To V1 Correctness Before Corrections](451-llm.html)
 

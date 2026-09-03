@@ -42,7 +42,7 @@
 ## 相关实体
 - [Agentic Ai System Architecture Harness Skill Mcp](../ch05/067-harness-skill.html)
 - [Browser Harness Github](../ch05/008-harness.html)
-- [Four Browser Automation Tools Comparison](https://github.com/QianJinGuo/wiki/blob/main/entities/four-browser-automation-tools-comparison.md)
+- [Four Browser Automation Tools Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/four-browser-automation-tools-comparison.md)
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/008-harness.html)
 - [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch05/008-harness.html)
 

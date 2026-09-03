@@ -80,7 +80,7 @@ Claude Code 实现：MEMORY.md（索引）→ memory/（分类文件）→ 磁�
 
 ### 分层记忆 vs 上下文隔离：两种对抗"上下文膨胀"的策略
 
-模式 3 与模式 7 表面上都在解决上下文膨胀，路径却截然相反。分层记忆（模式 3）把全部记忆**留在同一个上下文窗口内**，只按加载优先级分层管理，切换成本低，但代价是单个脆弱窗口——索引一旦膨胀，分层失效，就退化回"全量塞 prompt"的原始状态（这正是踩坑记录里 80→190 行的警报）。上下文隔离（模式 7）则**物理上拆开**上下文：调研、规划、执行各用独立的 sub-agent 窗口与权限，避免"写代码时 90% 是历史噪音"。隔离的代价是交接开销，且成败取决于主 Agent 的"信息编辑"能力——从 100 页里挑出相关的 3 段，而不是把全文转发过去。两者的共同敌人是同一个：噪音淹没信号。参见 [Context Isolation](https://github.com/QianJinGuo/wiki/blob/main/entities/context-isolation.md)。
+模式 3 与模式 7 表面上都在解决上下文膨胀，路径却截然相反。分层记忆（模式 3）把全部记忆**留在同一个上下文窗口内**，只按加载优先级分层管理，切换成本低，但代价是单个脆弱窗口——索引一旦膨胀，分层失效，就退化回"全量塞 prompt"的原始状态（这正是踩坑记录里 80→190 行的警报）。上下文隔离（模式 7）则**物理上拆开**上下文：调研、规划、执行各用独立的 sub-agent 窗口与权限，避免"写代码时 90% 是历史噪音"。隔离的代价是交接开销，且成败取决于主 Agent 的"信息编辑"能力——从 100 页里挑出相关的 3 段，而不是把全文转发过去。两者的共同敌人是同一个：噪音淹没信号。参见 [Context Isolation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-isolation.md)。
 
 ### 命令风险分级与确定性钩子：安全逻辑必须脱离 prompt
 
@@ -97,7 +97,7 @@ Claude Code 实现：MEMORY.md（索引）→ memory/（分类文件）→ 磁�
 3. **权限分级必须落到确定性代码**：低风险自动放行、中风险确认、高风险硬拦截（模式 10），用 HIGH_RISK_PATTERNS 这类规则而非 prompt——模型会"理解偏"，rm -rf / 必须无条件拦下。
 4. **把一次性校验挂到生命周期钩子上**：格式化、风险分级这类确定性动作放到 PreToolUse/PostToolUse/Stop 等钩子（模式 12），不调 LLM、失败即阻断，把 LLM 的推理留给真正需要判断的事。
 5. **动手前先问"是不是过度设计"**：改一行配置别走探索-规划-执行三轮，工具少于 5 个别分级、单项目 3 个文件以内一个 CLAUDE.md 够用。脚手架能拆就拆，承重墙一根都不能少。
-6. **用"三个月后是参考还是噪音"过滤记忆**：写进长期记忆的每条决策，都要问它三个月后对 Agent 的判断是帮助还是干扰——记忆的价值在正确时刻被加载，不在总量。参见 [记忆主矛盾](../ch04/133-agent-memory.html) 与 [Working Set vs Long-Term Memory](https://github.com/QianJinGuo/wiki/blob/main/concepts/working-set-vs-long-term-memory.md)。
+6. **用"三个月后是参考还是噪音"过滤记忆**：写进长期记忆的每条决策，都要问它三个月后对 Agent 的判断是帮助还是干扰——记忆的价值在正确时刻被加载，不在总量。参见 [记忆主矛盾](../ch04/133-agent-memory.html) 与 [Working Set vs Long-Term Memory](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/working-set-vs-long-term-memory.md)。
 
 ## 相关实体
 
