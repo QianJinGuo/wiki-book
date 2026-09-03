@@ -60,7 +60,7 @@ ICO 将罚金从原始拟议金额减免 40%，理由是自愿和解：South Sta
 - [Hackers accessed BWH Hotels reservation system for months](../ch04/257-ai.html)
 - [Canvas Breach Disrupts Schools & Colleges Nationwide](https://github.com/QianJinGuo/wiki-public/blob/main/entities/canvas-breach-disrupts-schools-colleges-nationwide.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/computerweekly-ico-fines-cl0p-south-staffs-water.md)
+→ [原始来源](https://www.computerweekly.com/news/366642957/ICO-fines-Cl0p-victim-South-Staffs-Water-over-data-breach)
 
 ---
 

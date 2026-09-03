@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 7.2KB | `entities/the-ui-is-dead-long-live-the-agent.md`
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-ui-is-dead-long-live-the-agent.md)
+→ [原始来源](https://www.techzine.eu/blogs/analytics/141272/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless-and-opens-its-platform/)
 
 ## 摘要
 

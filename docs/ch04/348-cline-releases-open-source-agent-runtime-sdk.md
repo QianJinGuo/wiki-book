@@ -2,12 +2,12 @@
 
 > 📊 Level ⭐⭐ | 6.2KB | `entities/cline-releases-open-source-agent-runtime-sdk.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cline-releases-open-source-agent-runtime-sdk.md)
+> -> [原始来源](https://www.testingcatalog.com/cline-releases-open-source-agent-runtime-sdk-for-coding-agents/)
 
 ## 核心要点
 - Cline releases open-source agent runtime SDK
 - v×c=64 分
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cline-releases-open-source-agent-runtime-sdk.md)
+→ [原始来源](https://www.testingcatalog.com/cline-releases-open-source-agent-runtime-sdk-for-coding-agents/)
 
 ## 相关实体
 - [Cline releases open-source agent runtime SDK](../ch03/004-agent.html)

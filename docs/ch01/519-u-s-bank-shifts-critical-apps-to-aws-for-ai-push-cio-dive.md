@@ -2,14 +2,14 @@
 
 > 📊 Level ⭐⭐ | 6.5KB | `entities/us-bank-aws-ai-migration.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/us-bank-aws-ai-migration.md)
+> -> [原始来源](https://www.ciodive.com/news/us-bank-shifts-critical-apps-aws-ai-push/819908/)
 
 ## Summary
 US Bank is shifting critical applications to AWS as part of its AI adoption push.
 
 ## Notes
 Article about US Bank's multi-year migration to AWS cloud infrastructure for AI workloads.
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/us-bank-aws-ai-migration.md)
+→ [原始来源](https://www.ciodive.com/news/us-bank-shifts-critical-apps-aws-ai-push/819908/)
 
 ## 深度分析
 **1. 金融业 AI 基础设施转型：不是"是否上云"，而是"多快上云"**

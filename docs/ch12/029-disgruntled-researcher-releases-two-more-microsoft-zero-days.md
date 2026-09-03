@@ -71,8 +71,8 @@ Linus Torvalds 提到 AI 工具造成 Linux 安全邮件列表"几乎无法管�
 ## 关联阅读
 - [Disgruntled researcher releases two more Microsoft zero-days](https://github.com/QianJinGuo/wiki-public/blob/main/entities/disgruntled-researcher-microsoft-zero-days.md)（综合实体页，含更详细的深度分析和交叉引用）
 - [TheRegister 版：Microsoft 零日事件深度分析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/microsoft-zero-days-researcher-disgruntled-theregister.md) — TheRegister 对 Nightmare-Eclipse 事件的独立报道与安全研究社区的反应
-- [原文存档（综合版）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/disgruntled-researcher-microsoft-zero-days.md)
-- [TheRegister 深度分析存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/microsoft-zero-days-researcher-disgruntled-theregister.md)
+- [原文存档（综合版）](https://www.theregister.com/security/2026/05/13/disgruntled-researcher-releases-two-more-microsoft-zero-days/5239758)
+- [TheRegister 深度分析存档](https://www.theregister.com/security/2026/05/13/disgruntled-researcher-releases-two-more-microsoft-zero-days/5239758/)
 
 ## 相关实体
 

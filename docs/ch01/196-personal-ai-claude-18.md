@@ -234,7 +234,7 @@ good example:
 - 属于 JiaGouX 公众号 Harness 系列文章之一（Agent Harness、Memory、Goal、Skills、Personal Harness）
 - [Agent Memory 架构本质](../ch04/323-perplexity-brain-self-improving-agent-memory-architecture.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026.md)
+→ [原始来源](https://back.engineering/blog/09/05/2026/)
 
 - [gsd-get-shit-done-context-management-tool](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
 

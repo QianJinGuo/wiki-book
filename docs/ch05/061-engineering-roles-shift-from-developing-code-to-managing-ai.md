@@ -60,7 +60,7 @@ Harness SVP Trevor Stuart 指出了本质矛盾：**"行业过去十年所依赖
 - [Sandworm Hackers Shift It Breaches Ot Gbhackers](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sandworm-hackers-shift-it-breaches-ot-gbhackers.md)
 - [Hs.Playerzero Ai Code Review](../ch04/257-ai.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/engineering-roles-shift-from-developing-code-to-managing-ai.md)
+→ [原始来源](https://www.ciodive.com/news/engineering-roles-shift-managing-AI/820297/)
 
 ---
 

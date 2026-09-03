@@ -4,7 +4,7 @@
 
 # Cline releases open-source agent runtime SDK
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cline-agent-runtime-sdk.md)
+→ [原始来源](https://testingcatalog.com/cline-releases-open-source-agent-runtime-sdk-for-coding-agents)
 
 ## 摘要
 

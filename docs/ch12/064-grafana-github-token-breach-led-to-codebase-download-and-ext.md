@@ -63,7 +63,7 @@ Grafana 主动在 X 平台公布事件进展，遵循了 modern breach disclosur
 - [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](../ch01/474-github.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-landscape.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/grafana-github-token-breach-led-to-codebase-download-and-extortion-attempt-2.md)
+→ [原始来源](https://thehackernews.com/2026/05/grafana-github-token-breach-led-to.html)
 
 ---
 

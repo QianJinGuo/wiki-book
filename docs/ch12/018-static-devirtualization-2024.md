@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 15.8KB | `entities/static-devirtualization-2024.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/static-devirtualization-of-themida.md) | → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/back-engineering-static-devirtualization-themida.md)
+> -> [原始来源](https://back.engineering/blog/09/05/2026/) | → [原始来源](https://back.engineering/blog/09/05/2026/)
 
 ## 摘要
 
@@ -211,8 +211,8 @@ Themida 的 VJCC handler 构造与 VMProtect 有本质区别，是少数真正�
 - [Static Devirtualization of Themida](https://github.com/QianJinGuo/wiki-public/blob/main/entities/static-devirtualization-themida.md) — 完整技术分析（2026）
 - [Static Devirtualization of Themida](056-static-devirtualization-of-themida.html) — 方法论详解
 - [Static Devirtualization of Themida](https://github.com/QianJinGuo/wiki-public/blob/main/entities/back-engineering-static-devirtualization-themida.md) — 实践启示
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/static-devirtualization-of-themida.md)
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/back-engineering-static-devirtualization-themida.md)
+- [原始来源](https://back.engineering/blog/09/05/2026/)
+- [原始来源](https://back.engineering/blog/09/05/2026/)
 
 ---
 

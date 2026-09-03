@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 3.9KB | `entities/servicenow-ui-is-dead-agent.md`
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/servicenow-ui-is-dead-agent.md)
+> 来源：[原始来源](https://www.techzine.eu/blogs/analytics/141272/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless-and-opens-its-platform/)
 
 ## 核心要点
 - **Action Fabric**：ServiceNow 在 Knowledge 2026 推出的架构层，使整个 ServiceNow 平台（workflows、playbooks、业务流程）可通过 MCP Server 向所有 AI Agent 开放
@@ -19,7 +19,7 @@ Headless 架构的采用标志着企业软件竞争逻辑的根本转变。传�
 2. **重新评估企业软件选型标准**：选型时不再只比较 UX，而是评估"执行层"——workflow 深度、治理能力、运营数据的丰富度；Headless 友好度是关键指标
 3. **监控 MCP 生态发展**：Action Fabric 的 AI Gateway 让 ServiceNow 能够观测经过 MCP 的所有流量，无论 Agent 来自哪个平台——这种协议层的可见性是新的竞争差异化
 4. **构建 Agent 生态战略**：与其自己构建所有 Agent，不如确保 Agent 愿意在你的平台上执行——数据回流和网络效应才是护城河
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/servicenow-ui-is-dead-agent.md)
+→ [原始来源](https://www.techzine.eu/blogs/analytics/141272/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless-and-opens-its-platform/)
 
 ## 相关实体
 - [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](324-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)

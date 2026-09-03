@@ -76,7 +76,7 @@ ShinyHunters 在公告中特别警告：暂停的域名未来可能被未知行�
 
 - [Canvas 漏洞中断全国学校](https://github.com/QianJinGuo/wiki-public/blob/main/entities/canvas-breach-disrupts-schools-colleges-nationwide.md) — Canvas LMS 攻击的更早报道
 - [ShinyHunters 7-Eleven 数据泄露](https://github.com/QianJinGuo/wiki-public/blob/main/entities/shinyhunters-7-eleven-data-breach.md) — ShinyHunters 的另一起高调攻击
-- [ICO 对 South Staffordshire 处以 96.3 万英镑罚款](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/5237875.md) — 同期另一重大勒索软件事件，体现勒索软件生态多样性
+- [ICO 对 South Staffordshire 处以 96.3 万英镑罚款](https://www.theregister.com/cyber-crime/2026/05/11/ico-fines-south-staffordshire-963k-over-2022-breach/5237875) — 同期另一重大勒索软件事件，体现勒索软件生态多样性
 - [OpenClaw 完全指南](../ch04/176-openclaw.html) — Agent 工具在攻防两面的双刃剑属性
 - [Agent 记忆系统的工程实践](../ch03/004-agent.html) — 对 Agent 上下文与状态管理的进一步讨论
 

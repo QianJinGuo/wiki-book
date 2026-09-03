@@ -45,7 +45,7 @@ Decision 808 最值得玩味的不是目标本身，而是它暴露的现状：�
 5. **区域观察者**：越南是观察"主权 vs 速度"权衡的最佳案例——2030/2035 双节点能否兑现，将检验混合运营模式在非中美的中型经济体中是否可行，并影响印尼、泰国等邻国的政策模仿意愿。
 6. **在越企业 IT 决策者**：警惕未来 2-3 年可能出现的"国内云优先"采购政策与迁移窗口，避免在 hyperscaler 上追加长期投资后被迫二次迁移。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vietnamtodevelopdomesticcloud.md)
+→ [原始来源](https://www.theregister.com/public-sector/2026/05/13/vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-overseas-operators-for-government-workloads/5239269)
 
 ## 相关实体
 

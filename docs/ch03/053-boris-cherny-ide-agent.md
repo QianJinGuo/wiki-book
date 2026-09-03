@@ -119,7 +119,7 @@ Boris 强调的 Loop（长驻 Agent 工作进程）与 Karpathy 谈的"外包思
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](057-claude-code.html)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/171-tencent-vibe-coding-to-agentic-engineering-backend.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-to-share-mythos-cyber-flaw-findings-with-global-finance-watchdog-1.md)
+→ [原始来源](https://www.theguardian.com/technology/2026/may/18/anthropic-ai-claude-mythos-cyber-financial-stability-board-fsb)
 
 - [KAIROS — Claude Code 常驻协作范式](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/kairos-claude-code-paradigm.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/coding-agent-practice.md)

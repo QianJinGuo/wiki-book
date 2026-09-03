@@ -81,7 +81,7 @@ Banxlocal 等案例正在验证：AI 和共享基础设施可以降低物理网�
 - [Backend for Agent](../ch03/004-agent.html)
 - [数据基础设施 MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/data-infrastructure.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/finanser-retail-banking-broken.md)
+→ [原始来源](https://thefinanser.com/2026/05/lets-be-honest-retail-banking-is-broken)
 
 ---
 

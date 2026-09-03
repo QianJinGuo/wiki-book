@@ -46,7 +46,7 @@
 - [LLM Share 恶意分发页面](653-llmshare-using-shared-chatbot-pages-to-distribute-malware.html)
 - [LLM raiders and how to repel them](544-llm-raiders-and-how-to-repel-them.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/thehackernews-fake-openai-privacy-filter.md)
+→ [原始来源](https://thehackernews.com/2026/05/fake-openai-privacy-filter-repo-hits-1.html)
 
 ---
 

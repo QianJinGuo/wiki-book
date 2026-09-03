@@ -58,7 +58,7 @@ Human-in-the-loop 模式不是 Agent 系统的可选增强，而是生产部署�
 2. **在概念验证阶段就引入 Human-in-the-loop 流程**：不要等系统上线后才考虑审批节点。从第一个生产级 Agent 应用开始就设计人工确认步骤，形成可审计的操作记录。
 3. **评估编排工具时考虑供应商锁定风险**：Marketplace 上的 Temporal Cloud、Orkes Cloud、Prefect Cloud 均为第三方托管服务，需评估迁移成本和数据主权。AWS 原生方案（Step Functions、Bedrock、MWAA）在集成和安全合规方面有优势。
 4. **关注 2026-06-02 的 Workshop 直播**：AWS 技术团队（WW Tech Lead Dr. James Bland + Sr. SA Rahman Syed）主持的本次研讨会可作为实操入口，结合配套指南深化理解。
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-agent-orchestration-workshop.md)
+→ [原始来源](https://pages.awscloud.com/awsmp-gro-ufin-webinar-mss-module-6-agent-orchestration-workshop.html?trk=76134d1c-69c3-4a5e-9c1e-d2c09a202605&sc_channel=el)
 
 ## 相关实体
 - [9个Agent技能模块化SageMaker微调生命周期](312-ai-agent.html)

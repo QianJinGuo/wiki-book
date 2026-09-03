@@ -3,7 +3,7 @@
 > 📊 Level ⭐⭐ | 9.8KB | `entities/anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt-ever-says-curl-creat.md`
 
 ## Summary
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt-ever-says-curl-creat.md)
+→ [原始来源](https://www.theregister.com/security/2026/05/11/anthropics-bug-hunting-mythos-was-greatest-marketing-stunt-ever-says-curl-creator/5238111)
 
 ## Notes
 - Value: 8/10, Confidence: 8/10
@@ -49,7 +49,7 @@ Stenberg 的立场微妙地介于「AI 怀疑论」和「AI 实用主义」之�
 2. **AI 报告的人工复核不可省略**：企业安全团队应建立 AI 扫描报告的复核流程，假阳性率过高会消耗宝贵的修复资源。
 3. **开发者教育**：Mythos 事件是一个窗口，让工程团队理解 AI 安全工具的当前局限性——它们是「增量增强」而非「替代方案」，开发者仍是安全的最终责任人。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026.md)
+→ [原始来源](https://back.engineering/blog/09/05/2026/)
 
 ### 对政策制定者
 1. **AI 安全工具的营销监管**：如果 AI 厂商使用「危险到不能发布」等表述作为营销策略，监管机构应评估这是否构成误导性声明。

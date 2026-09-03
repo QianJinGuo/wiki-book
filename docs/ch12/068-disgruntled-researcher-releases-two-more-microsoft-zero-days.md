@@ -10,7 +10,7 @@
 - Nightmarer-Eclipse（又名 Chaotic Eclipse）：疑似前 Microsoft 员工，2026 年已累计发布 5 个零日
 - RedSun 和 UnDefend 至今未修复，且已被真实攻击利用
 - BlueHammer（CVE-2026-32201）已于 4 月由 Microsoft 修复
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/disgruntled-researcher-microsoft-zero-days.md)
+→ [原始来源](https://www.theregister.com/security/2026/05/13/disgruntled-researcher-releases-two-more-microsoft-zero-days/5239758)
 
 ## 深度分析
 ### 攻击者动机与背景

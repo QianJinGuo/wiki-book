@@ -20,7 +20,7 @@ Grafana 披露一起安全事件：一名"未授权方"获取了一个可访问�
 - [From Doer To Director The Ai Mindset Shift](029-from-doer-to-director-the-ai-mindset-shift.html)
 - [Microsoft For Startups Microsoft](387-microsoft-for-startups-microsoft.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/grafana-github-token-breach-led-to-html.md)
+→ [原始来源](https://www.thehackernews.com/2026/05/grafana-github-token-breach-led-to.html)
 
 ## 深度分析
 - **Token 泄露导致代码库失窃**：Grafana 披露攻击者通过一个被泄露的 Token 获得了对其 GitHub 环境的访问权限，并下载了完整代码库。由于 Grafana 产品线涵盖 Grafana Cloud（托管式可观测性平台）及开源监控工具，代码库本身包含大量专有逻辑和基础设施配置，攻击者可能借此发现更多 0day 漏洞或供应链攻击路径。

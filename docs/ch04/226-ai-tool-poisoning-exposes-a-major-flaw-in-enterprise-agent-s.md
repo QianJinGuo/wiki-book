@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 9.5KB | `entities/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security-v2.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security-v2.md)
+> -> [原始来源](https://venturebeat.com/security/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security)
 Published Time: 2026-05-10T17:22:13.590Z
 
 ## 深度分析

@@ -11,7 +11,7 @@
 - [Affirmmapsroadto100Bgmvwithcardaicommerc](../ch04/257-ai.html)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-to-share-mythos-cyber-flaw-findings-with-global-finance-watchdog-1.md)
+→ [原始来源](https://www.theguardian.com/technology/2026/may/18/anthropic-ai-claude-mythos-cyber-financial-stability-board-fsb)
 
 ## 深度分析
 **AI 网络能力的"进化而非革命"之争**

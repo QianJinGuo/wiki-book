@@ -2,12 +2,12 @@
 
 > 📊 Level ⭐⭐ | 6.2KB | `entities/vietnam-domestic-cloud.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vietnam-domestic-cloud.md)
+> -> [原始来源](https://www.theregister.com/public-sector/2026/05/13/vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-overseas-operators-for-government-workloads/5239269/)
 
 ## 核心要点
 - value=7, confidence=8, product=56
 - Vietnam cloud decision accurate sourcing
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vietnam-domestic-cloud.md)
+→ [原始来源](https://www.theregister.com/public-sector/2026/05/13/vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-overseas-operators-for-government-workloads/5239269/)
 
 ## 深度分析
 **1. 主权云的地缘政治逻辑：数据本地化不仅是合规，更是战略自主**

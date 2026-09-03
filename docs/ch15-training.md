@@ -902,7 +902,7 @@ Macaron-A2UI 表面上是应用层的成果，但实则是对整个体系理论�
 
 # SFT, RL, and On-Policy Distillation Through a Distributional Lens
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/untitled-v2.md)
+→ [原始来源](https://nrehiew.github.io/blog/sft_rl_opd/)
 
 ## 摘要
 

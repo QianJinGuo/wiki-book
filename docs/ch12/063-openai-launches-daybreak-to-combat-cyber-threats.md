@@ -2,8 +2,8 @@
 
 > 📊 Level ⭐⭐ | 7.2KB | `entities/ciodive-openai-daybreak-cyber-threats.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ciodive-openai-daybreak-cyber-threats.md)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ciodive-openai-daybreak-cyber-threats.md)
+> -> [原始来源](https://www.ciodive.com/news/OpenAI-Daybreak-cyber-threats/820036/)
+→ [原始来源](https://www.ciodive.com/news/OpenAI-Daybreak-cyber-threats/820036/)
 
 ## 深度分析
 **1. Daybreak 的市场定位：不是替代现有安全工具，而是「上车」企业的 AI 安全战略**
@@ -36,7 +36,7 @@ OpenAI 将 Daybreak 设计为三阶段流程： (1) 用 AI 推理和 token 使�
 **对于安全产品从业者：**
 4. **「AI + 安全」的竞争焦点正在从「检测能力」转向「工作流集成能力」**：Daybreak 和 Mythos 的发布节奏和生态策略说明，下一轮 AI 安全竞争不在于「谁找到更多漏洞」，而在于「谁能够将 AI 安全能力无缝嵌入企业已有的安全运营流程」。工具的 API 集成深度、合作伙伴生态、审计输出质量，将成为新的差异化维度。
 5. **关注「AI 安全工具」的「AI 供应商绑定」风险**：使用 Daybreak 意味着深度依赖 OpenAI 的模型和服务；使用 Anthropic 的 Mythos 意味着依赖 Anthropic 的模型。如果你的安全运营流程建立在特定 AI 供应商上，后续切换成本可能很高。在 POC 阶段应测试多供应商方案的互操作性。
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ciodive-openai-daybreak-cyber-threats.md)
+→ [原始来源](https://www.ciodive.com/news/OpenAI-Daybreak-cyber-threats/820036/)
 
 ## 相关实体
 

@@ -8,7 +8,7 @@
 
 - [the inevitable need for an open model consortium](710-the-inevitable-need-for-an-open-model-consortium.html)
 - [ai-driven layoffs aren’t making business sense | cio](../ch03/009-cio.html)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/5238213.md)
+→ [原始来源](https://www.theregister.com/ai-ml/2026/05/11/openai-buys-ai-consultancy-to-sell-enterprises-on-its-models/5238213/)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
 ## 深度分析

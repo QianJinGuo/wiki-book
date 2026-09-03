@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 8.5KB | `entities/back-engineering-static-devirtualization-themida.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/back-engineering-static-devirtualization-themida.md)
+> -> [原始来源](https://back.engineering/blog/09/05/2026/)
 
 ## 摘要
 

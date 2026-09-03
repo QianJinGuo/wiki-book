@@ -101,7 +101,7 @@ MCP Server 可以通过 `initialize` 响应的 `instructions` 字段，向模型
 - [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/057-claude-code.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/008-harness.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xero-announces-integration-with-anthropics-claude.md)
+→ [原始来源](https://finovate.com/xero-announces-integration-with-anthropics-claude/)
 
 - [AI Agent 工程师能力地图](../ch04/312-ai-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/claude-code-complete-guide.md)

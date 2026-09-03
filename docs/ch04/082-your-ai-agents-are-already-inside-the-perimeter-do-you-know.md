@@ -177,7 +177,7 @@ Orchid 的方法论建立在五个核心原则之上：
 - [AI 代理安全威胁模型](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-security-threat-models.md) — 相关的威胁建模概念
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-privacy-landscape.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-agents-inside-perimeter-hackernews.md)
+→ [原始来源](https://thehackernews.com/2026/05/your-ai-agents-are-already-inside.html)
 
 ---
 

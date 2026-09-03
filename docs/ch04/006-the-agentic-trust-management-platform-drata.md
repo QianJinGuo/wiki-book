@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐ | 8.1KB | `entities/the-agentic-trust-management-platform-drata.md`
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-agentic-trust-management-platform-drata.md)
+→ [原始来源](https://drata.com/c/demo/)
 
 ## 摘要
 

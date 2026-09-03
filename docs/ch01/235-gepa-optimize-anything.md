@@ -125,7 +125,7 @@ KK大叔用 `optimize_anything` 框架在 Hermes Agent 上落地了一个 4 轮�
 ## 相关实体
 - [2026年最值得关注的15款开发者工具你用过几个](https://github.com/QianJinGuo/wiki-public/blob/main/entities/2026年最值得关注的15款开发者工具你用过几个.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026.md)
+→ [原始来源](https://back.engineering/blog/09/05/2026/)
 
 - [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gepa-optimize-anything-universal-text-optimization.md)
 - [腾讯研究院Ai速递 20260507](../ch04/257-ai.html)

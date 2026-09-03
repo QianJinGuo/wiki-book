@@ -37,7 +37,7 @@ Algolia 这份技术白皮书勾勒了一套面向生产环境的 AI 驱动搜�
 - [RAG 检索增强生成](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/rag-retrieval-augmented-generation.md) — 白皮书 RAG 接口设计的理论基础，详解检索增强生成的原理与实践
 - [上下文工程](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/context-engineering.md) — RAG 系统中检索结果如何组装为有效上下文的方法论
 - [数据质量框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/data-quality-framework.md) — 摄取与丰富化阶段数据质量保障的系统化方法
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/architecture-data-foundations-for-ai-powered-search.md)
+→ [原始来源](https://www.algolia.com/resources/asset/white-paper-architecture-data-foundations-for-ai-powered-search)
 
 ---
 

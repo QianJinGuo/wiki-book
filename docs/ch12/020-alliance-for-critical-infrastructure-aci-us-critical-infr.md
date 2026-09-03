@@ -6,7 +6,7 @@
 
 > Source: Cybersecurity Dive, Eric Geller, 2026-05-11. URL: https://www.cybersecuritydive.com/news/critical-infrastructure-cybersecurity-coalition-aci-government/818662/
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/818662.md)
+→ [原始来源](https://www.cybersecuritydive.com/news/critical-infrastructure-cybersecurity-coalition-aci-government/818662/)
 
 ## 摘要
 

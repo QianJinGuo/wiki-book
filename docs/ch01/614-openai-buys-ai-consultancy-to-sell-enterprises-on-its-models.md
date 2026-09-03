@@ -3,7 +3,7 @@
 > 📊 Level ⭐⭐ | 4.4KB | `entities/openai-buys-ai-consultancy-to-sell-enterprises-on-its-models.md`
 
 ## Summary
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-buys-ai-consultancy-to-sell-enterprises-on-its-models.md)
+→ [原始来源](https://www.theregister.com/ai-ml/2026/05/11/openai-buys-ai-consultancy-to-sell-enterprises-on-its-models/5238213)
 
 ## Notes
 - Value: 7/10, Confidence: 8/10
@@ -20,7 +20,7 @@ OpenAI 收购 Tomoro 并成立"部署公司"（Deployment Company）的背后是
 第二，**"数据飞轮"的战略意图**。文中指出"experience gained from these integrations will... be used to improve OpenAI's models and services"。也就是说，OpenAI 用咨询公司的员工和客户项目，积累了行业落地经验，这些经验最终会反哺模型本身——这是一个巧妙的学习杠杆。
 第三，**价格压力与价值验证的矛盾**。GPT-5.5 的定价是 GPT-4 的两倍（输入$5/1M tokens，输出$30/1M tokens），但企业需要的不是更贵的模型，而是能带来可衡量价值的落地路径。OpenAI 建咨询能力，本质上是在回答"这钱花得值不值"的问题。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026.md)
+→ [原始来源](https://back.engineering/blog/09/05/2026/)
 
 ## 实践启示
 1. **评估 AI 项目的"Trial-to-Production"比率**：如果你的 PoC 成功率低于 30%，问题不在模型，而在部署能力（数据准备、集成、治理、变更管理）。像选 ERP 供应商一样选 AI 实施伙伴。

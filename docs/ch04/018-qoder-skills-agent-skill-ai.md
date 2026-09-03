@@ -376,7 +376,7 @@ skills.sh 提供了配套的 skill 管理工具。多人协作时，可在 code 
 - [Mythos for Offensive Security: XBOW's Evaluation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mythos_offensive_security_xbow_evaluatio.md)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/hermes-agent-skill.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/05-11-the-great-memory-panic-of-2026.md)
+→ [原始来源](https://asymco.com/2026/05/11/the-great-memory-panic-of-2026/)
 
 - [AI Agent 工程师能力地图](312-ai-agent.html)
 - [Skillx Zhejiang University](../ch07/054-skill.html)

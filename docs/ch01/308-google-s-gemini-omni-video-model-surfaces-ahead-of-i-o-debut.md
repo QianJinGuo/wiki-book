@@ -8,7 +8,7 @@
 - 策略类似 Nano Banana（图像模型）：发布时生成分数中等，但编辑能力领先，再逐步升级为前沿系统
 - 可能推出 Flash 和 Pro 两个层级，API 同步上线，且被定位为"Agent"（类似 Deep Research）
 - 发布时间与 Google I/O 2026（5月19-20日）高度吻合
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/googles-gemini-omni-video-model-surfaces-ahead-of-i-o-debut.md)
+→ [原始来源](https://www.testingcatalog.com/googles-gemini-omni-video-model-surfaces-ahead-of-i-o-debut/)
 
 ## 事件经过
 ### 意外泄露与 A/B 测试

@@ -2,13 +2,13 @@
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 2.9KB | `entities/japan-pm-cybersecurity-review-anthropic-mythos.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/japan-pm-cybersecurity-review-anthropic-mythos.md)
+> -> [原始来源](https://www.theregister.com/security/2026/05/12/japans-pm-orders-cybersecurity-review-to-defend-against-anthropic-mythos/5238501)
 
 ## Summary
 7×8=56 - Article ingested from newsletter candidate pipeline.
 
 ## Notes
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/japan-pm-cybersecurity-review-anthropic-mythos.md)
+→ [原始来源](https://www.theregister.com/security/2026/05/12/japans-pm-orders-cybersecurity-review-to-defend-against-anthropic-mythos/5238501)
 
 ## 深度分析
 日本首相下令对 Anthropic Mythos 进行网络安全审查，这一事件折射出**国家级安全监管与 AI 技术发展之间的深层矛盾**。Mythos 作为 Anthropic 的漏洞赏金计划，其"greatest marketing stunt"的争议揭示了 AI 安全问题的双面性。
@@ -24,13 +24,13 @@
 2. **安全与营销的平衡**：漏洞赏金计划应建立透明的运营机制，避免被质疑为营销噱头
 3. **企业主动拥抱监管**：在 AI 系统部署前，主动进行安全评估和合规审查，降低被调查风险
 4. **关注国际监管趋势**：日本的做法可能成为其他国家参考的模板，企业应提前布局应对全球性 AI 监管
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/japan-pm-cybersecurity-review-anthropic-mythos.md)
+→ [原始来源](https://www.theregister.com/security/2026/05/12/japans-pm-orders-cybersecurity-review-to-defend-against-anthropic-mythos/5238501)
 
 ## 相关实体
 - [Anthropic PM 的 Agentic 工作流](../ch04/342-anthropic-pm-agentic.html)
 - [Anthropic's bug-hunting Mythos was greatest marketing stunt ever says curl creator](094-anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026.md)
+→ [原始来源](https://back.engineering/blog/09/05/2026/)
 
 - [Anthropic's bug-hunting Mythos was greatest marketing stunt ever, says cURL creator](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-mythos-bug-hunting-marketing.md)
 - [anthropic vs dow (department of war) 与开源模型的 5-10 年权力均衡](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-vs-dow-open-models-power-equilibrium-2026.md)

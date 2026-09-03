@@ -33,7 +33,7 @@
 
 > 📊 Level ⭐ | 8.9KB | `entities/perceptron-mk1-video-analysis-ai.md`
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/perceptron-mk1-video-analysis-ai.md)
+> 来源：[原始来源](https://venturebeat.com/technology/perceptron-mk1-shocks-with-highly-performant-video-analysis-ai-model-80-90-cheaper-than-anthropic-openai-and-google)
 
 ## Summary
 Perceptron Mk1 is a video analysis reasoning model priced at $0.15/$1.50 per million input/output tokens — 80-90% cheaper than Claude Sonnet 4.5, GPT-5, and Gemini 3.1 Pro — while achieving state-of-the-art performance on spatial reasoning (ER Benchmarks) and video benchmarks (EgoSchema, VSI-Bench). The model's core differentiation is "Physical Reasoning": understanding cause-and-effect, object dynamics, and the laws of physics in real-world video.
@@ -45,7 +45,7 @@ Perceptron Mk1 is a video analysis reasoning model priced at $0.15/$1.50 per mil
 - Architecture: Native video processing at 2 FPS across 32K token context window
 - Dual licensing: Closed-source Mk1 (API) + open-weight Isaac series
 - Target: Industrial-scale physical AI applications
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/perceptron-mk1-video-analysis-ai.md)
+→ [原始来源](https://venturebeat.com/technology/perceptron-mk1-shocks-with-highly-performant-video-analysis-ai-model-80-90-cheaper-than-anthropic-openai-and-google)
 
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
@@ -1811,7 +1811,7 @@ NEO-Unify 的成功验证了"原生统一"路线的可行性，为多模态大�
 
 > 📊 Level ⭐⭐⭐ | 8.6KB | `entities/googles-gemini-omni-video-model-surfaces-ahead-of-io-debut.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/googles-gemini-omni-video-model-surfaces-ahead-of-io-debut.md)
+> -> [原始来源](https://www.testingcatalog.com/googles-gemini-omni-video-model-surfaces-ahead-of-i-o-debut/)
 
 ## Summary
 > Score: 8×9=72
@@ -1845,7 +1845,7 @@ NEO-Unify 的成功验证了"原生统一"路线的可行性，为多模态大�
 
 选择在 Google I/O（5月19-20日）前约一周进行泄露或 A/B 测试，这个时间窗口的策略意义值得玩味。一个短暂的会前窗口配合受控的泄露，给了 Google 在主题演讲前收集反馈和塑造叙事的空间。如果反馈积极，Google 可以在 I/O 上大力宣扬；如果有重大问题，还有时间进行调整。这种"测试-学习-迭代"的策略比过去的大爆炸式发布更加敏捷，也更符合互联网产品开发的最佳实践。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/googles-gemini-omni-video-model-surfaces-ahead-of-i-o-debut.md)
+→ [原始来源](https://www.testingcatalog.com/googles-gemini-omni-video-model-surfaces-ahead-of-i-o-debut/)
 
 ## 实践启示
 **1. AI 视频领域的竞争维度正在扩展**

@@ -53,7 +53,7 @@ Voice Notes 的设计值得玩味：它不是简单地把语音转成文字，�
 - [LiveKit Agents 语音 AI 框架工程解析](../ch03/004-agent.html)
 - [Agentic AI in Finance](395-agentic-ai.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/meet-customers-where-they-are-agentforce-contact-center-now-offers-whatsapp-voice.md)
+→ [原始来源](https://www.salesforce.com/blog/agentforce-contact-center-whatsapp-voice/)
 
 ---
 

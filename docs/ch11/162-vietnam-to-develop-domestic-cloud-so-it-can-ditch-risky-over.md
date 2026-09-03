@@ -2,13 +2,13 @@
 
 > 📊 Level ⭐⭐ | 6.3KB | `entities/vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-overseas-operators-for-government-workloads.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-overseas-operators-for-government-workloads.md)
+> -> [原始来源](https://www.theregister.com/public-sector/2026/05/13/vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-overseas-operators-for-government-workloads/5239269/)
 
 ## 核心要点
 - 越南政府发布 Decision 808/QD-TTg，要求建立国内云基础设施
 - 目标 2030 年实现政府工作负载全面迁移至国内云服务商
 - 减少对海外云运营商（AWS、Azure、GCP）的依赖，降低数据主权风险
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-overseas-operators-for-government-workloads.md)
+→ [原始来源](https://www.theregister.com/public-sector/2026/05/13/vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-overseas-operators-for-government-workloads/5239269/)
 
 ## 相关实体
 - [Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads](162-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)

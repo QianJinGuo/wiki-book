@@ -119,7 +119,7 @@ Airbyte 的数据表明，当 Agent 能先在 Context Store 中完成实体发�
 - [Skill Os Learning Skill Curation Self Evolving Agents](181-self-evolving-agents.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/tool-use-mcp-patterns.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/airbyte-agents-a-new-era-for-airbyte-airbyte.md)
+→ [原始来源](https://airbyte.com/blog/airbyte-agents)
 
 ---
 

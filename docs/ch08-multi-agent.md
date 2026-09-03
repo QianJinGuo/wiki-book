@@ -1539,7 +1539,7 @@ Symphony 把 skill 当作"系统资产"来管理，而不只是提示词里附�
 ## 2nd Source 原文存档
 → [openJiuwen开源SwarmFlow — AI技术立文 2026-06-12](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-swarmflow-controllable-orchestration-ai-tech-newspaper.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/05-11-the-great-memory-panic-of-2026.md)
+→ [原始来源](https://asymco.com/2026/05/11/the-great-memory-panic-of-2026/)
 
 ### HOTS/HITS 选择指南
 | 场景 | 推荐模式 | 理由 |

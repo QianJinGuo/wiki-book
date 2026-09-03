@@ -16,7 +16,7 @@
 - [Computer Use 45X More Expensive Than Structured Apis](../ch04/220-computer-use-45x-more-expensive-than-structured-apis.html)
 - [Workspaceupdates Googleblog Com Google Workspace Updates](https://github.com/QianJinGuo/wiki-public/blob/main/entities/workspaceupdates-googleblog-com-google-workspace-updates.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/codex-can-now-control-other-desktop-devices-via-computer-use.md)
+→ [原始来源](https://www.testingcatalog.com/openai-will-let-codex-control-other-desktop-devices-via-computer-use/)
 
 ## 深度分析
 **技术演进路径**

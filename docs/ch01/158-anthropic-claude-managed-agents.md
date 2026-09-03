@@ -131,7 +131,7 @@ Multiagent Sessions、Outcomes、Dreams 目前均处于研究预览阶段，需�
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/004-agent.html)
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](340-claude.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026.md)
+→ [原始来源](https://back.engineering/blog/09/05/2026/)
 
 ## 第 2 来源：VibeCoder「脑手分离」架构视角（2026-06-11）
 

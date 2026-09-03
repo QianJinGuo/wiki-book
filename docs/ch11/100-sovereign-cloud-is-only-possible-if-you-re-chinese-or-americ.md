@@ -119,7 +119,7 @@ Agent AI 的部署正在强化这种依赖——因为 AI 算力和模型都集�
 
 ---
 ## 关联
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/5237660.md)
+→ [原始来源](https://www.theregister.com/off-prem/2026/05/11/sovereign-cloud-is-only-possible-if-youre-chinese-or-american-gartner/5237660/)
 - 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---

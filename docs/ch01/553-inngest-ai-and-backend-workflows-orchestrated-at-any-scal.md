@@ -70,7 +70,7 @@ Inngest 定位为下一代工作流编排引擎，与 Temporal 形成直接竞�
 - [Task Queue Priority And Fairness Your Task Queue](../ch11/168-task-queue-priority-and-fairness-your-task-queue-your-way.html)
 - [Whats New With Vsphere 9 1](https://github.com/QianJinGuo/wiki-public/blob/main/entities/whats-new-with-vsphere-9-1.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/inngest-ai-and-backend-workflows-orchestrated-at-any-scale.md)
+→ [原始来源](https://www.inngest.com/)
 
 ---
 
