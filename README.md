@@ -10,6 +10,12 @@
 [![Code License: MIT](https://img.shields.io/badge/代码协议-MIT-green)](LICENSE)
 [![MkDocs Material](https://img.shields.io/badge/MkDocs-Material-526cfe)](https://squidfunk.github.io/mkdocs-material/)
 
+## 出版封面
+
+[![《AI 工程》出版封面](docs/assets/images/ai-engineering-cover.png)](docs/assets/images/ai-engineering-cover-1600x2400.png)
+
+封面以“可被工程化的知识系统”为视觉主线：从 LLM 原理、Agent 应用到生产级系统，沿着五篇内容路径逐层深入。点击图片可查看适用于电子书与出版社提案的 **1600×2400 竖版出版稿**；横版稿同时用于网站首页、社交媒体和分享卡片。
+
 ![《AI 工程》首页](docs/assets/images/screenshot-home.png)
 
 **在线阅读：https://jinguo.tech | 编撰：AI 社区众创 × Hermes Agent**
