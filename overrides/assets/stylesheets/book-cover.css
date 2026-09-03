@@ -1,0 +1,118 @@
+.home-hero--with-cover {
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 2rem;
+  padding: clamp(1.5rem, 4vw, 3.5rem);
+  border: 1px solid rgba(79, 195, 247, 0.2);
+  border-radius: 1.25rem;
+  color: rgba(255, 255, 255, 0.86);
+  background:
+    radial-gradient(circle at 92% 86%, rgba(110, 70, 220, 0.36), transparent 34%),
+    linear-gradient(135deg, #0a1628 0%, #101d39 52%, #1a0a2e 100%);
+  box-shadow: 0 1.5rem 4rem rgba(10, 22, 40, 0.22);
+}
+.home-hero--with-cover::after {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  content: "";
+  opacity: 0.42;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.9) 0.7px, transparent 0.7px);
+  background-size: 4.5rem 4.5rem;
+  mask-image: linear-gradient(135deg, transparent 15%, #000 70%);
+}
+.home-hero--with-cover .home-hero__layout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(15rem, 42%);
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+  align-items: start;
+}
+.home-hero--with-cover .home-hero__content { min-width: 0; }
+.home-hero--with-cover .home-hero__eyebrow {
+  margin: 0 0 0.8rem;
+  color: rgba(255, 215, 0, 0.88);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.home-hero--with-cover .home-hero__title {
+  margin: 0 0 0.65rem;
+  color: #fff;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: 0.04em;
+  text-shadow: 0 0 1.5rem rgba(255, 255, 255, 0.28);
+}
+.home-hero--with-cover .home-hero__subtitle {
+  max-width: 38rem;
+  margin: 0 0 1rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: clamp(1rem, 2vw, 1.35rem);
+  line-height: 1.55;
+}
+.home-hero--with-cover .home-hero__desc {
+  max-width: 42rem;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.75;
+}
+.home-hero--with-cover .home-hero__cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin: 1.6rem 0;
+}
+.home-hero--with-cover .home-hero__cta .md-button {
+  border-color: rgba(255, 255, 255, 0.35);
+  color: #fff;
+}
+.home-hero--with-cover .home-hero__cta .md-button--primary {
+  border-color: #ffd700;
+  color: #0a1628;
+  background-color: #ffd700;
+}
+.home-hero--with-cover .home-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.65rem;
+  max-width: 44rem;
+  padding: 0.9rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+.home-hero--with-cover .home-stats__item { display: flex; min-width: 0; flex-direction: column; gap: 0.2rem; }
+.home-hero--with-cover .home-stats__num { color: #fff; font-size: 1.05rem; font-weight: 700; }
+.home-hero--with-cover .home-stats__label { color: rgba(255, 255, 255, 0.58); font-size: 0.72rem; }
+.home-hero--with-cover .home-hero__joke { margin: 1.6rem 0 0.3rem; font-size: 1.1rem; font-weight: 600; }
+.home-hero--with-cover .home-hero__evolve { margin: 0; color: rgba(255, 255, 255, 0.64); font-size: 0.95rem; }
+.home-hero--with-cover .home-hero__evolve strong { color: rgba(255, 255, 255, 0.9); font-weight: 600; }
+.home-hero--with-cover .home-hero__cover {
+  width: 100%;
+  max-width: 30rem;
+  margin: 0;
+  justify-self: end;
+  padding: 0.45rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.9rem;
+  background: rgba(4, 12, 28, 0.58);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.28), 0 0 2rem rgba(79, 195, 247, 0.12);
+}
+.home-hero--with-cover .home-hero__cover img { display: block; width: 100%; height: auto; border-radius: 0.55rem; }
+.home-hero--with-cover .home-hero__cover figcaption {
+  padding: 0.65rem 0.4rem 0.25rem;
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 0.72rem;
+  text-align: center;
+}
+.home-hero--with-cover .home-hero__cover a { color: rgba(255, 215, 0, 0.9); }
+@media (min-width: 900px) {
+  body.book-home .md-sidebar--secondary { display: none; }
+}
+@media (max-width: 700px) {
+  .home-hero--with-cover .home-hero__layout { grid-template-columns: 1fr; }
+  .home-hero--with-cover .home-hero__cover { max-width: 38rem; justify-self: stretch; }
+  .home-hero--with-cover .home-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
