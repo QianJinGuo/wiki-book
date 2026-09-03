@@ -18,8 +18,6 @@ Anthropic + Cerebral Valley 联合黑客松：用 Opus 4.7 + Claude Code，一�
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch03/057-claude-code.html)
 - [Claude Code Agent Teams Task Decomposition Ruofei](260-claude-code-agent-teams.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-hackathon-winners-2026.md)
-
 ## 深度分析
 
 **多 Agent 协作在医疗模拟领域的突破**：该项目展示了 Claude Managed Agents 在专业领域模拟的强大能力。通过将一个主治医师 Agent 与三个子 Agent（病人角色扮演/观察者评估/问诊复盘）协同工作，实现了复杂的医疗教学场景。
@@ -39,4 +37,3 @@ Anthropic + Cerebral Valley 联合黑客松：用 Opus 4.7 + Claude Code，一�
 **快速原型开发的新范式**：用 Opus 4.7 + Claude Code 一周做项目，证明了 AI Native 开发方式在专业领域应用开发中的效率优势。这为医疗 AI 应用的快速迭代提供了方法论参考。
 
 ---
-

@@ -56,12 +56,9 @@ Tracing 让成本-质量取舍不再停留在架构师脑中，而变成产品�
 
 ## 相关实体
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-eval-counterintuitive-insights-langfuse.md)
-
 ---
 ## 关联
 - 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 - 相关: Agent 架构
 
 ---
-

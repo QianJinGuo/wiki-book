@@ -20,8 +20,6 @@
 - [Claude Code Large Codebase Harness Configuration](../ch03/057-claude-code.html)
 - [Openai Skills Shell Compaction Agent Primitives](351-ai-skill.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/promptqueue-opengorilla-project-analysis-ljguo.md)
-
 ## 一、立项背景（Purpose）
 
 ### 1.1 解决的 3 个核心痛点
@@ -401,4 +399,3 @@ OpenGorilla 的 Context Enrichment + Experience Capture + Result Verification + 
 **不要过度工程化存储层选型**：在没有实际并发压力数据之前，用 SQLite 单进程启动是正确选择。只有当队列深度开始成为瓶颈、SQLite 的写入 TPS 无法支撑业务量时，才有必要切换到 PostgreSQL + Redis 的更重方案。PromptQueue 的存储层抽象（接口已就位）让这个升级成本极低——**先跑通业务，再按需扩展**。
 
 ---
-

@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 6.3KB | `entities/frontend-ai-native-visual-reduction-taobao.md`
 
-> 原文归档：[原文归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/frontend-ai-native-visual-reduction-taobao-2026-06-24.md)
-
 大淘宝技术团队分享AI Native视觉稿还原实践，探讨如何让AI理解设计意图并高保真度地转化为前端代码。
 
 ## 一句话
@@ -71,4 +69,3 @@ Coding Agent 可以截图自己的实现页面，通过 node-map API 与设计�
 #前端开发 #AI还原 #视觉稿 #设计到代码 #大淘宝
 
 ---
-

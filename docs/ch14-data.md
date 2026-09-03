@@ -2292,8 +2292,6 @@ LiveKit Agents 采用 Apache 2.0 协议，10k+ Stars。与托管平台相比的�
 
 > 📊 Level ⭐⭐ | 6.9KB | `entities/ai-knowledge-base-llm-wiki-practice-alicloud.md`
 
-> 原文归档：[原文归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-knowledge-base-llm-wiki-practice-alicloud-2026-06-26.md)
-
 阿里云开发者分享基于直播数据构建LLM Wiki知识底座的实践经验，探讨如何在AI时代管理和运用企业知识资产。
 
 ## 一句话

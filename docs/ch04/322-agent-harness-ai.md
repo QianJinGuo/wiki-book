@@ -2,9 +2,9 @@
 
 > 📊 Level ⭐⭐ | 7.3KB | `entities/agent-harness-dingtalk-recruitment.md`
 
-> 原文归档：[原文归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-harness-dingtalk-recruitment-alicloud-2026-06-30.md)
-
 阿里云开发者分享钉钉AI招聘场景的Agent Harness工程实践，从范式理论到真实落地的完整案例。
+
+> 公开来源：[阿里云开发者：给野马套上缰绳：Agent Harness 工程实践](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247561292&idx=1&sn=2998894f7f2c9e845adc7bb4912b53b3)
 
 ## 一句话
 
@@ -86,4 +86,3 @@ LangChain 官方在 Terminal Bench 2.0 实验中以实证验证了这一公式�
 #AgentHarness #钉钉 #AI招聘 #生产落地 #范式理论
 
 ---
-

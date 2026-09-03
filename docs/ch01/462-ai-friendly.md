@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐ | 7.2KB | `entities/backend-ai-friendly-standards-path-alitech.md`
 
-> 原文归档：[原文归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/backend-ai-friendly-standards-path-alitech-2026-06-15.md)
-
 阿里技术团队提出的后端架构AI Friendly设计标准，面向无人值守开发时代的系统重构需求，为AI Agent的自主运行提供架构支撑。
 
 ## 一句话
@@ -87,4 +85,3 @@ AI Friendly 时代，测试的价值不再只是"告诉人代码有没有错"，
 #AIFriendly #后端架构 #阿里技术 #无人值守 #架构重构
 
 ---
-

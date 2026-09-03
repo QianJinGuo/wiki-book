@@ -4,8 +4,6 @@
 
 # 应用宝活动平台 Harness 工程实践——从对话式 AI Coding 到工程化系统
 
-> 原文归档：[原文归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-appstore-activity-platform-harness-2026-07-03.md)
-
 腾讯应用宝活动平台（支撑应用宝内 app、pc、手助等产品所有日常/节假日活动）在生产环境中实践 Harness Engineering 的完整报告，详细记录了从对话式 AI Coding 走向工程化系统的路径、架构设计与实战经验。
 
 ## 一句话
@@ -123,7 +121,5 @@ TDD 落地不在代码层面，而是在接口测试用例上——一开始生�
 
 #HarnessEngineering #腾讯 #应用宝 #生产实践 #知识工程 #状态驱动 #专家Agent #ForkJoin #冲突治理 #脚本执行 #DevOps集成 #TDD #代码架构
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-appstore-activity-platform-harness-2026-07-03.md)
 
 ---
-

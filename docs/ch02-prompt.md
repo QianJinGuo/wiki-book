@@ -3349,43 +3349,6 @@ Legacy Topics provided the initial approach to adding business context to datase
 
 ---
 
-## Ch02.030 PROJECT_ANALYSIS.md — PromptQueue + OpenGorilla 项目全景分析
-
-> 📊 Level ⭐⭐ | 2.5KB | `entities/promptqueue-opengorilla-project-analysis-ljguo.md`
-
-# PROJECT_ANALYSIS.md — PromptQueue + OpenGorilla 项目全景分析
-
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/promptqueue-opengorilla-project-analysis-ljguo.md)
-
-## 深度分析
-
-PROJECT_ANALYSIS.md — PromptQueue + OpenGorilla 项目全景分析 涉及agent领域的核心技术议题。
-### 核心观点
-1. # PROJECT_ANALYSIS.
-2. md — PromptQueue + OpenGorilla 项目全景分析
-> **项目定位**: Async task queue for AI prompts — 面向 AI-Native 时代的高可靠、可观测 LLM 任务编排引擎
-> **技术栈**: TypeScript, Hono, Next.
-3. js 15, SQLite, Anthropic SDK, Turborepo pnpm monorepo
-> **开发周期**: 2026-06-01 至 2026-06-02（2 天，38 commits）
-> **代码规模**: 7,760 行 TypeScript（含 2,554 行测试，测试覆盖率 ~33%）
-## 一、立项目的（Purpose）
-### 1.
-4. 1 解决的核心问题
-当前 LLM 应用开发中，开发者面临三个普遍痛点：
-1.
-5. **同步阻塞瓶颈** — 直接调用 LLM API 是同步阻塞的，一次对话可能耗时 30–120 秒。
-
-### 关联实体
-
-- [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
-- [Karpathy Vibe Coding Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-agentic-engineering.md)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验-v2.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏-v2.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
-
----
-
 ## Ch02.031 OneReason：快手将推理注入推荐基模的系统性尝试
 
 > 📊 Level ⭐⭐⭐ | 7.4KB | `entities/onereason-kuaishou-reasoning-recommender-system.md`

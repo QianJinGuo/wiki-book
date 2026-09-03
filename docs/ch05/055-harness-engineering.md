@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐ | 7.6KB | `entities/harness-engineering-exploration-journey-tencent.md`
 
-> 原文归档：[原文归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-exploration-journey-tencent-2026-06-29.md)
-
 腾讯技术工程团队的Harness Engineering探索实践，分享如何在生产环境中系统化地应用AI编码技术，提升工程团队的代码质量和开发效率。
 
 ## 一句话
@@ -76,4 +74,3 @@ Tencent 的 Harness 实践采用了清晰的两轨架构：**轨道 1（研发�
 #HarnessEngineering #腾讯 #Agent #AI编码 #生产实践
 
 ---
-
