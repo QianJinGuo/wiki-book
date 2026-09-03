@@ -65,7 +65,7 @@ curl https://bedrock-mantle.us-east-1.amazonaws.com/v1/chat/completions \
 
 ## 与其他 Bedrock 文档的差异化
 
-- `amazon-bedrock-model-inference-serverless-architecture-case-study.md` — 服务端架构
+- Amazon Bedrock 服务端架构案例 — 服务端架构
 - 本文档：**客户端用户体验**（控制台 UI 升级 + 兼容端点）
 
 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/试用-amazon-bedrock-中的新控制台体验该体验针对兼容-anthropic-和-openai-的-api-进.md)
@@ -114,4 +114,3 @@ curl https://bedrock-mantle.us-east-1.amazonaws.com/v1/chat/completions \
 5. **安全与合规优先部署**：在 production 上线前务必配置 Bedrock Guardrails + row-level entitlements，即使当前用例看起来"不需要"，也为未来扩展到敏感场景预留安全基础
 
 ---
-
