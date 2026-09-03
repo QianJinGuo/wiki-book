@@ -3,7 +3,13 @@
 # Usage: reading-progress.sh [stats|check|next|peek|summary|random]
 
 CD="$(cd "$(dirname "$0")/.." && pwd)"
-LIST="$CD/meta/READING-LIST.md"
+LIST="${READING_LIST:-$CD/meta/READING-LIST.md}"
+
+if [ ! -f "$LIST" ]; then
+  echo "Reading list not found: $LIST" >&2
+  echo "Set READING_LIST to a local reading-list file." >&2
+  exit 1
+fi
 
 count_pattern() {
   local n

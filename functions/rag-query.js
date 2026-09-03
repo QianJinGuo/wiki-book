@@ -5,6 +5,8 @@
 // Vectorize: wiki-book-embeddings-v2 (1024d, cosine)
 // 返回 top 5 相关文档片段
 
+import { corsHeaders, isAllowedOrigin } from './_shared/user-auth.js';
+
 const STOP_WORDS = new Set([
   "的", "了", "在", "是", "我", "有", "和", "就", "不", "人", "都", "一",
   "一个", "上", "也", "很", "到", "说", "要", "去", "你", "会", "着",
@@ -89,6 +91,12 @@ function getDocMap(docs) {
   return map;
 }
 
+const MAX_QUERY_LENGTH = 256;
+const MAX_TOP_K = 10;
+const RATE_LIMIT_WINDOW_MS = 60_000;
+const RATE_LIMIT_MAX = 30;
+const rateLimitMap = new Map();
+
 // ========== Phase 3: 语义搜索（讯飞 API + Vectorize） ==========
 async function semanticSearch(query, env) {
   try {
@@ -152,19 +160,33 @@ async function semanticSearch(query, env) {
 export async function onRequest(context) {
   const { request, env } = context;
 
+  if (!isAllowedOrigin(request)) return json({ error: "Origin not allowed" }, 403, request);
+
+  if (request.method === "OPTIONS") {
+    return new Response(null, { headers: corsHeaders(request, 'GET, OPTIONS') });
+  }
+
   if (request.method !== "GET") {
-    return new Response("Method not allowed", { status: 405 });
+    return json({ error: "Method not allowed" }, 405, request);
   }
 
   const url = new URL(request.url);
   const query = url.searchParams.get("q") || "";
-  const topK = parseInt(url.searchParams.get("top_k") || "5", 10);
+  const requestedTopK = parseInt(url.searchParams.get("top_k") || "5", 10);
+  const topK = Number.isFinite(requestedTopK)
+    ? Math.min(MAX_TOP_K, Math.max(1, requestedTopK))
+    : 5;
 
   if (!query.trim()) {
-    return new Response(JSON.stringify({ error: "Missing query parameter 'q'" }), {
-      status: 400,
-      headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" },
-    });
+    return json({ error: "Missing query parameter 'q'" }, 400, request);
+  }
+  if (query.length > MAX_QUERY_LENGTH) {
+    return json({ error: `Query must be at most ${MAX_QUERY_LENGTH} characters` }, 400, request);
+  }
+
+  const clientIp = request.headers.get("CF-Connecting-IP") || "unknown";
+  if (!checkRateLimit(clientIp)) {
+    return json({ error: "Rate limit exceeded" }, 429, request, { "Retry-After": "60" });
   }
 
   try {
@@ -217,9 +239,7 @@ export async function onRequest(context) {
     const mergedCandidates = [...keywordCandidates, ...semanticCandidates];
 
     if (mergedCandidates.length === 0) {
-      return new Response(JSON.stringify({ results: [], source: "none" }), {
-        headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" },
-      });
+      return json({ results: [], source: "none" }, 200, request);
     }
 
     // Phase 2: Reranker 重排序（Workers AI，可能 503）
@@ -254,14 +274,33 @@ export async function onRequest(context) {
     return new Response(JSON.stringify({ results, source }), {
       headers: {
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*",
+        ...corsHeaders(request, 'GET, OPTIONS'),
         "Cache-Control": "no-cache",
       },
     });
   } catch (err) {
-    return new Response(JSON.stringify({ error: err.message }), {
-      status: 500,
-      headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" },
-    });
+    console.error("RAG query error:", err);
+    return json({ error: "RAG query failed" }, 500, request);
   }
+}
+
+function checkRateLimit(ip) {
+  const now = Date.now();
+  const timestamps = (rateLimitMap.get(ip) || [])
+    .filter(timestamp => now - timestamp < RATE_LIMIT_WINDOW_MS);
+  if (timestamps.length >= RATE_LIMIT_MAX) return false;
+  timestamps.push(now);
+  rateLimitMap.set(ip, timestamps);
+  return true;
+}
+
+function json(data, status = 200, request, extraHeaders = {}) {
+  return new Response(JSON.stringify(data), {
+    status,
+    headers: {
+      "Content-Type": "application/json",
+      ...corsHeaders(request, 'GET, OPTIONS'),
+      ...extraHeaders,
+    },
+  });
 }

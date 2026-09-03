@@ -23,15 +23,8 @@ EMBED_BATCH_SIZE = 16
 
 
 def get_api_token():
-    """Get Cloudflare API token from wrangler config."""
-    config_path = os.path.expanduser(
-        "~/Library/Preferences/.wrangler/config/default.toml"
-    )
-    with open(config_path) as f:
-        for line in f:
-            if line.startswith("oauth_token"):
-                return line.split("=")[1].strip().strip('"')
-    return None
+    """Get a narrowly scoped Cloudflare API token from the environment."""
+    return os.environ.get("CLOUDFLARE_API_TOKEN")
 
 
 def get_embeddings(texts, api_token):

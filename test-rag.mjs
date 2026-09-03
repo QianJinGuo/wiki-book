@@ -2,11 +2,11 @@
  * RAG 端到端测试
  *
  * 测试目标：
- *   1. 生产环境 /rag-query 真实 RAG 响应（Phase 1+2 服务器端）
+ *   1. 本地 Docker /rag-query 真实 RAG 响应（Phase 1+2 服务器端）
  *   2. 新端点 /rag/search 和 /rag/graph（Tier 1 客户端数据源）
  *   3. rag-client.js 加载与客户端搜索
  *   4. ai-chat.js 中 doRagSearch 客户端优先逻辑
- *   5. Docker nginx fallback
+ *   5. Docker nginx fallback（生产/GitHub Pages 需显式开启）
  *   6. 多组查询场景覆盖 + 相关性验证
  */
 
@@ -15,13 +15,18 @@ import { chromium } from 'playwright';
 const PRODUCTION_URL = 'https://jinguo.tech';
 const GH_PAGES_URL = 'https://wiki.jinguo.tech';
 const LOCAL_URL = 'http://127.0.0.1:8002';
+const TEST_TARGET = process.env.RAG_TEST_TARGET || 'local';
+const ALLOW_PRODUCTION_TEST = process.env.ALLOW_PRODUCTION_TEST === '1';
+const VALID_TARGETS = new Set(['local', 'production', 'github', 'all']);
 
 // ========== 通用工具 ==========
 async function launchBrowser() {
   return chromium.launch({
     channel: 'chrome',
     headless: true,
-    args: ['--no-proxy-server', '--no-sandbox']
+    args: process.env.PW_NO_SANDBOX === '1'
+      ? ['--no-proxy-server', '--no-sandbox']
+      : ['--no-proxy-server']
   });
 }
 
@@ -335,35 +340,48 @@ async function testFrontendScripts(url, label) {
 
 // ========== 主流程 ==========
 async function main() {
-  const results = [];
-
-  // === 组 1: 生产环境 ===
-  results.push(await testServerRag(PRODUCTION_URL, '🌐 生产 /rag-query (Phase 1+2)'));
-  results.push(await testTier1Endpoints(PRODUCTION_URL, '🌐 生产 /rag/search + /rag/graph (Tier 1)'));
-  results.push(await testClientRag(PRODUCTION_URL, '🌐 生产 客户端 ragClient.search()'));
-  results.push(await testFrontendScripts(PRODUCTION_URL, '🌐 生产 前端脚本引用'));
-
-  // === 组 2: GitHub Pages (wiki.jinguo.tech) ===
-  printSection('📖 GitHub Pages: wiki.jinguo.tech');
-  try {
-    // GitHub Pages 没有服务器端 RAG 端点，只测客户端
-    results.push(await testClientRag(GH_PAGES_URL, '📖 GitHub Pages 客户端 ragClient.search()'));
-    results.push(await testFrontendScripts(GH_PAGES_URL, '📖 GitHub Pages 前端脚本'));
-  } catch (e) {
-    console.log(`\n⚠️  GitHub Pages 测试异常: ${e.message}`);
+  if (!VALID_TARGETS.has(TEST_TARGET)) {
+    throw new Error(`RAG_TEST_TARGET must be one of: ${[...VALID_TARGETS].join(', ')}`);
+  }
+  if ((TEST_TARGET === 'production' || TEST_TARGET === 'all') && !ALLOW_PRODUCTION_TEST) {
+    throw new Error('Production tests require ALLOW_PRODUCTION_TEST=1');
   }
 
-  // === 组 3: Docker 本地（如果可用） ===
-  try {
-    const resp = await fetch(LOCAL_URL + '/rag-query?q=ping');
-    if (resp.ok || resp.status === 200 || resp.status === 404) {
-      results.push(await testServerRag(LOCAL_URL, '🐳 Docker /rag-query'));
-      results.push(await testTier1Endpoints(LOCAL_URL, '🐳 Docker /rag/search + /rag/graph'));
-      results.push(await testClientRag(LOCAL_URL, '🐳 Docker 客户端 ragClient.search()'));
-      results.push(await testFrontendScripts(LOCAL_URL, '🐳 Docker 前端脚本'));
+  const results = [];
+
+  if (TEST_TARGET === 'production' || TEST_TARGET === 'all') {
+    // === 生产环境（必须显式开启） ===
+    results.push(await testServerRag(PRODUCTION_URL, '🌐 生产 /rag-query (Phase 1+2)'));
+    results.push(await testTier1Endpoints(PRODUCTION_URL, '🌐 生产 /rag/search + /rag/graph (Tier 1)'));
+    results.push(await testClientRag(PRODUCTION_URL, '🌐 生产 客户端 ragClient.search()'));
+    results.push(await testFrontendScripts(PRODUCTION_URL, '🌐 生产 前端脚本引用'));
+  }
+
+  if (TEST_TARGET === 'github' || TEST_TARGET === 'all') {
+    // === GitHub Pages (wiki.jinguo.tech) ===
+    printSection('📖 GitHub Pages: wiki.jinguo.tech');
+    try {
+      // GitHub Pages 没有服务器端 RAG 端点，只测客户端
+      results.push(await testClientRag(GH_PAGES_URL, '📖 GitHub Pages 客户端 ragClient.search()'));
+      results.push(await testFrontendScripts(GH_PAGES_URL, '📖 GitHub Pages 前端脚本'));
+    } catch (e) {
+      console.log(`\n⚠️  GitHub Pages 测试异常: ${e.message}`);
     }
-  } catch {
-    console.log(`\n⚠️  Docker 不可用 (localhost:8002)，跳过`);
+  }
+
+  if (TEST_TARGET === 'local' || TEST_TARGET === 'all') {
+    // === Docker 本地（如果可用） ===
+    try {
+      const resp = await fetch(LOCAL_URL + '/rag-query?q=ping');
+      if (resp.ok || resp.status === 200 || resp.status === 404) {
+        results.push(await testServerRag(LOCAL_URL, '🐳 Docker /rag-query'));
+        results.push(await testTier1Endpoints(LOCAL_URL, '🐳 Docker /rag/search + /rag/graph'));
+        results.push(await testClientRag(LOCAL_URL, '🐳 Docker 客户端 ragClient.search()'));
+        results.push(await testFrontendScripts(LOCAL_URL, '🐳 Docker 前端脚本'));
+      }
+    } catch {
+      console.log(`\n⚠️  Docker 不可用 (localhost:8002)，跳过`);
+    }
   }
 
   // === 汇总 ===

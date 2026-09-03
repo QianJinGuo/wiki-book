@@ -100,7 +100,15 @@ docker compose up -d --build
 node test-rag.mjs
 ```
 
-该命令覆盖 Cloudflare Pages、GitHub Pages、Docker 的端点结构、检索相关性和前端客户端检查。`npm test` 目前仍是占位脚本。
+该命令默认只检查本地 Docker；生产和 GitHub Pages 需要显式指定目标，避免把回归测试误当成线上压力测试：
+
+```bash
+node test-rag.mjs                                      # 本地 Docker
+RAG_TEST_TARGET=production ALLOW_PRODUCTION_TEST=1 node test-rag.mjs
+RAG_TEST_TARGET=github node test-rag.mjs
+```
+
+`npm test` 运行本地鉴权回归测试。
 
 ## 三环境部署
 
@@ -118,11 +126,23 @@ node test-rag.mjs
 docker compose up -d --build
 ```
 
+### Cloudflare 密钥
+
+`wrangler.toml` 只保存 Pages、R2、Vectorize 和 D1 的资源标识，不应放入 API key、token 或私钥。生产密钥通过 Cloudflare Pages Secrets 配置（例如 `SITE_TOKEN`、`XUNFEI_API_KEY` 和 `USER_DATA_SECRET`）；本地构建 Vectorize 时用环境变量提供最小权限的 `CLOUDFLARE_API_TOKEN` 和 `XUNFEI_API_KEY`，不要写入仓库文件：
+
+```bash
+npx wrangler pages secret put SITE_TOKEN --project-name ai-engineering
+npx wrangler pages secret put XUNFEI_API_KEY --project-name ai-engineering
+npx wrangler pages secret put USER_DATA_SECRET --project-name ai-engineering
+```
+
+`USER_DATA_SECRET` 用于签发学习进度同步身份；丢失同步密钥会导致客户端无法恢复该身份，轮换该服务端密钥会使已有同步密钥失效。详见 [Cloudflare Secrets 文档](https://developers.cloudflare.com/workers/configuration/secrets/)。
+
 ## 项目结构
 
 ```text
 docs/ch01–ch20/                 书籍章节与可发布条目
-docs/raw/articles/              一手原始资料（公开仓库内容，不生成站点页）
+docs/raw/articles/              一手原始资料（仅在确认转载授权后公开）
 scripts/build.sh                课程、索引、MkDocs 和近邻图的统一构建入口
 functions/                      Cloudflare Pages Functions 与 RAG 端点
 overrides/                      MkDocs 主题覆盖、AI Chat 与封面集成
@@ -131,8 +151,8 @@ cover/                          封面 SVG、渲染脚本和可编辑素材
 
 ## 公开范围与维护边界
 
-- `docs/raw/` 会被 MkDocs 排除，不生成站点页面，但仍属于公开 GitHub 仓库；提交或保留原始资料前请确认转载和授权范围。
-- `meta/` 是公开仓库中的设计、复盘和报告资料，不进入站点导航；其中不得出现密钥、个人凭据或不适合公开的信息。
+- `docs/raw/` 会被 MkDocs 排除，不生成站点页面；它是否进入公开仓库取决于逐篇转载和再许可授权，不能用仓库许可证替代原作者授权。
+- `meta/` 和根目录 `AGENTS.md` 是维护者本地资料，不属于公开仓库；公开的设计说明和贡献流程应放在经过脱敏的文档中。
 - `site/` 与 `cover/exports/` 属于生成物；封面 SVG、渲染脚本、主题覆盖和源素材才是主要编辑入口。
 
 ## 参与贡献

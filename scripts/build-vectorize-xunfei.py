@@ -14,16 +14,13 @@ API_BATCH_SIZE = 20
 CONCURRENCY = 10
 
 def get_cf_token():
-    p = os.path.expanduser("~/Library/Preferences/.wrangler/config/default.toml")
-    with open(p) as f:
-        for line in f:
-            if line.startswith("oauth_token"):
-                return line.split("=")[1].strip().strip('"')
-    return None
+    return os.environ.get("CLOUDFLARE_API_TOKEN")
 
 def get_xunfei_key():
-    return os.environ.get("XUNFEI_API_KEY") or \
-        "3a3d0cdf37f2399cf2ed0bdf870e2793:OGRkY2U5MDk1NjI0OGU3ODgwNWVhN2I0"
+    api_key = os.environ.get("XUNFEI_API_KEY") or os.environ.get("XUNFEI_EMBEDDING_TOKEN")
+    if not api_key:
+        raise RuntimeError("XUNFEI_API_KEY or XUNFEI_EMBEDDING_TOKEN is required")
+    return api_key
 
 def get_embeddings(texts, api_key):
     r = requests.post(XUNFEI_URL,

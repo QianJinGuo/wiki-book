@@ -721,8 +721,11 @@ a:focus-visible{outline:none;box-shadow:var(--focus-ring);border-color:var(--acc
 </div>
 
 <div class="sync-bar">
-  <span style="font-size:.82rem;color:var(--text2)">👤 用户 ID：</span>
-  <input class="sync-input" id="user-id" placeholder="输入用户名同步进度" />
+  <span style="font-size:.82rem;color:var(--text2)">👤 同步身份：</span>
+  <input class="sync-input" id="user-id" placeholder="点击生成同步身份" readonly />
+  <button class="sync-btn" id="sync-new">新建身份</button>
+  <button class="sync-btn" id="sync-import">导入密钥</button>
+  <button class="sync-btn" id="sync-copy">复制密钥</button>
   <button class="sync-btn" id="sync-push">⬆ 推送</button>
   <button class="sync-btn" id="sync-pull">⬇ 拉取</button>
   <span class="sync-status" id="sync-status">离线模式（仅本地）</span>
@@ -878,6 +881,7 @@ a:focus-visible{outline:none;box-shadow:var(--focus-ring);border-color:var(--acc
 <script>
 const LS_KEY = 'wiki-learn-progress-v3';
 const USER_KEY = 'wiki-learn-user';
+const USER_TOKEN_KEY = 'wiki-learn-user-token';
 const RECALL_KEY = 'wiki-learn-recall-v1';
 const MIGRATED_KEY = 'wiki-learn-migrated-v4';
 const COUNTDOWN_KEY = 'wiki-learn-countdown-v1';
@@ -896,6 +900,7 @@ let tagFiltersExpanded = false;
 let conceptSearchQuery = '';
 let conceptSortMode = 'articles';
 let userId = localStorage.getItem(USER_KEY) || '';
+let userToken = localStorage.getItem(USER_TOKEN_KEY) || '';
 let countdownCfg = JSON.parse(localStorage.getItem(COUNTDOWN_KEY) || 'null') || { label: '面试', targetDate: new Date(Date.now() + 30 * 86400000).toISOString().slice(0, 10) };
 let recallData = JSON.parse(localStorage.getItem(RECALL_KEY) || '{}');
 let recallPanelOpen = false;
@@ -1044,6 +1049,21 @@ function findArticle(key){
 
 // ── D1 Sync ──────────────────────────────────────────────────
 function getApiBase(){ return window.location.origin + '/api/user-data'; }
+function getSessionApiBase(){ return window.location.origin + '/api/user-session'; }
+
+function tokenUserId(token){
+  const parts = typeof token === 'string' ? token.split('.') : [];
+  if(parts.length !== 2) return '';
+  if(!/^[A-Za-z0-9_-]{22}$/.test(parts[0]) || !/^[A-Za-z0-9_-]{43}$/.test(parts[1])) return '';
+  return parts[0];
+}
+
+function syncHeaders(json = false){
+  const headers = {};
+  if(json) headers['Content-Type'] = 'application/json';
+  if(userToken) headers.Authorization = 'Bearer ' + userToken;
+  return headers;
+}
 
 function setSyncStatus(msg, ok){
   const el = document.getElementById('sync-status');
@@ -1051,8 +1071,96 @@ function setSyncStatus(msg, ok){
   el.className = 'sync-status' + (ok === true ? ' ok' : ok === false ? ' err' : '');
 }
 
+function updateSyncIdentityUI(){
+  document.getElementById('user-id').value = userId;
+}
+
+async function createSyncIdentity(){
+  if(userToken && !window.confirm('新建身份会切换到新的云端空间，本机数据不会删除。继续吗？')) return;
+  setSyncStatus('生成同步身份中...', null);
+  try {
+    const resp = await fetch(getSessionApiBase(), { method: 'POST' });
+    const result = await resp.json().catch(() => ({}));
+    if(!resp.ok || !result.userId || !result.token) throw new Error(result.error || '生成失败');
+    userId = result.userId;
+    userToken = result.token;
+    localStorage.setItem(USER_KEY, userId);
+    localStorage.setItem(USER_TOKEN_KEY, userToken);
+    updateSyncIdentityUI();
+    setSyncStatus('身份已生成，请复制密钥备份', true);
+  } catch(e) {
+    setSyncStatus('生成失败: ' + e.message, false);
+  }
+}
+
+async function importSyncIdentity(){
+  const token = window.prompt('粘贴之前备份的同步密钥');
+  if(!token) return;
+  const importedUserId = tokenUserId(token.trim());
+  if(!importedUserId){
+    setSyncStatus('同步密钥格式无效', false);
+    return;
+  }
+  userId = importedUserId;
+  userToken = token.trim();
+  localStorage.setItem(USER_KEY, userId);
+  localStorage.setItem(USER_TOKEN_KEY, userToken);
+  updateSyncIdentityUI();
+  setSyncStatus('已导入身份，正在拉取...', null);
+  await pullFromCloud();
+}
+
+async function copySyncIdentity(){
+  if(!userToken){
+    setSyncStatus('请先新建或导入同步身份', false);
+    return;
+  }
+  try {
+    await navigator.clipboard.writeText(userToken);
+  } catch(e) {
+    const textarea = document.createElement('textarea');
+    textarea.value = userToken;
+    textarea.style.position = 'fixed';
+    textarea.style.opacity = '0';
+    document.body.appendChild(textarea);
+    textarea.select();
+    const copied = document.execCommand('copy');
+    textarea.remove();
+    if(!copied) window.prompt('请复制同步密钥并妥善保存', userToken);
+  }
+  setSyncStatus('同步密钥已复制，请妥善保存', true);
+}
+
+function clearInvalidSyncToken(){
+  userToken = '';
+  localStorage.removeItem(USER_TOKEN_KEY);
+}
+
+async function ensureSyncIdentity(){
+  const derivedUserId = tokenUserId(userToken);
+  if(derivedUserId){
+    if(userId !== derivedUserId){
+      userId = derivedUserId;
+      localStorage.setItem(USER_KEY, userId);
+      updateSyncIdentityUI();
+    }
+    return true;
+  }
+  setSyncStatus('请先新建或导入同步身份', false);
+  return false;
+}
+
+async function parseSyncResponse(resp){
+  const result = await resp.json().catch(() => ({}));
+  if(!resp.ok){
+    if(resp.status === 401) clearInvalidSyncToken();
+    throw new Error(result.error || '请求失败 (' + resp.status + ')');
+  }
+  return result;
+}
+
 async function pushToCloud(){
-  if(!userId){ setSyncStatus('请先输入用户 ID', false); return; }
+  if(!(await ensureSyncIdentity())) return;
   setSyncStatus('推送中...', null);
   const progress = Object.entries(done).map(([file, data]) => ({
     file, level: typeof data === 'object' ? data.level : 'read',
@@ -1063,21 +1171,20 @@ async function pushToCloud(){
   try {
     const resp = await fetch(getApiBase(), {
       method: 'POST',
-      headers: {'Content-Type':'application/json'},
-      body: JSON.stringify({ user: userId, progress, feynman: feynmanToSend, recall: recallToSend })
+      headers: syncHeaders(true),
+      body: JSON.stringify({ progress, feynman: feynmanToSend, recall: recallToSend })
     });
-    const result = await resp.json();
-    if(result.ok) setSyncStatus('✓ 已推送 '+result.count+' 条到云端', true);
-    else setSyncStatus('推送失败: '+result.error, false);
+    const result = await parseSyncResponse(resp);
+    setSyncStatus('✓ 已推送 '+result.count+' 条到云端', true);
   } catch(e) { setSyncStatus('推送失败: '+e.message, false); }
 }
 
 async function pullFromCloud(){
-  if(!userId){ setSyncStatus('请先输入用户 ID', false); return; }
+  if(!(await ensureSyncIdentity())) return;
   setSyncStatus('拉取中...', null);
   try {
-    const resp = await fetch(getApiBase() + '?user=' + encodeURIComponent(userId));
-    const result = await resp.json();
+    const resp = await fetch(getApiBase(), { headers: syncHeaders() });
+    const result = await parseSyncResponse(resp);
     if(result.progress){
       const cloud = result.progress;
       let merged = {...done};
@@ -1114,7 +1221,7 @@ async function pullFromCloud(){
 // Auto-sync on change (debounced)
 let syncTimer = null;
 function scheduleSync(){
-  if(!userId) return;
+  if(!userToken) return;
   clearTimeout(syncTimer);
   syncTimer = setTimeout(() => pushToCloud(), 3000);
 }
@@ -1809,9 +1916,12 @@ function renderThreadsList(threads){
   }
   let html = '';
   currentThreads.forEach((t, i) => {
+    const rawName = typeof t.name === 'string' ? t.name : '未命名';
+    const rawUrl = typeof t.url === 'string' ? t.url : '';
+    const safeUrl = safeHref(rawUrl);
     html += '<div class="thread-item">'+
-      '<span class="thread-name">'+(t.name || '未命名')+'</span>'+
-      '<a href="'+t.url+'" target="_blank">'+t.url.slice(0, 40)+(t.url.length > 40 ? '...' : '')+'</a>'+
+      '<span class="thread-name">'+escapeHtml(rawName)+'</span>'+
+      '<a href="'+escapeHtml(safeUrl)+'" target="_blank" rel="noopener">'+escapeHtml(rawUrl.slice(0, 40)+(rawUrl.length > 40 ? '...' : ''))+'</a>'+
       '<span class="thread-remove" onclick="removeThread('+i+')">×</span>'+
     '</div>';
   });
@@ -1957,7 +2067,8 @@ function renderOutputPanel(){
   for(const e of recent){
     const d = new Date(e.timestamp);
     const ds = (d.getMonth()+1)+'/'+d.getDate();
-    html += '<div class="output-log-item"><span class="log-type '+e.type+'">'+e.typeLabel+'</span><span class="log-title">'+e.title+'</span><span class="log-date">'+ds+'</span></div>';
+    const type = ['feynman', 'recall', 'mastered', 'project'].includes(e.type) ? e.type : 'project';
+    html += '<div class="output-log-item"><span class="log-type '+type+'">'+escapeHtml(e.typeLabel)+'</span><span class="log-title">'+escapeHtml(e.title)+'</span><span class="log-date">'+ds+'</span></div>';
   }
   logEl.innerHTML = html;
 }
@@ -2069,8 +2180,10 @@ async function aiLookupChallenge(qIdx){
         let html = '<div style="padding:.4rem .6rem;background:var(--bg);border-radius:6px;font-size:.72rem;border:1px solid var(--border)">';
         html += '<div style="color:var(--accent2);margin-bottom:.2rem">\uD83D\uDCD6 RAG \u53C2\u8003\uFF1A</div>';
         for(const r of data.results.slice(0, 3)){
-          const url = r.url || r.location || '#';
-          html += '<div style="margin-bottom:.15rem"><a href="'+url+'" target="_blank" style="color:var(--text2);text-decoration:none">'+(r.title||r.location||'\u6587\u7AE0')+'</a></div>';
+          const rawUrl = r.url || r.location || '#';
+          const url = safeHref(rawUrl);
+          const title = r.title || r.location || '\u6587\u7AE0';
+          html += '<div style="margin-bottom:.15rem"><a href="'+escapeHtml(url)+'" target="_blank" rel="noopener" style="color:var(--text2);text-decoration:none">'+escapeHtml(title)+'</a></div>';
         }
         html += '</div>';
         if(resultEl) resultEl.innerHTML = html;
@@ -2186,10 +2299,10 @@ function openCollisionView(entity1, entity2){
   const sharedTags = (a1.tags || []).filter(t => (a2.tags || []).includes(t));
   titleEl.textContent = '\u300C'+a1.title+'\u300D vs \u300C'+a2.title+'\u300D' + (sharedTags.length > 0 ? ' \xB7 \u5171\u4EAB: '+sharedTags.join(', ') : '');
   function colHtml(title, note){
-    let h = '<h4>'+title+'</h4>';
-    if(note.got) h += '<div class="col-note"><b>\u6536\u83B7:</b> '+String(note.got).slice(0, 200)+'</div>';
-    if(note.insight) h += '<div class="col-note"><b>\u6D1E\u5BDF:</b> '+String(note.insight).slice(0, 200)+'</div>';
-    if(note.missed) h += '<div class="col-note"><b>\u7F3A\u5931:</b> '+String(note.missed).slice(0, 150)+'</div>';
+    let h = '<h4>'+escapeHtml(title)+'</h4>';
+    if(note.got) h += '<div class="col-note"><b>\u6536\u83B7:</b> '+escapeHtml(String(note.got).slice(0, 200))+'</div>';
+    if(note.insight) h += '<div class="col-note"><b>\u6D1E\u5BDF:</b> '+escapeHtml(String(note.insight).slice(0, 200))+'</div>';
+    if(note.missed) h += '<div class="col-note"><b>\u7F3A\u5931:</b> '+escapeHtml(String(note.missed).slice(0, 150))+'</div>';
     if(!note.got && !note.insight && !note.missed) h += '<div class="col-empty">\u65E0\u7B14\u8BB0</div>';
     return h;
   }
@@ -2235,6 +2348,18 @@ function getEstReadTime(words){
 
 function escapeHtml(value){
   return String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+}
+
+function safeHref(value){
+  const raw = String(value ?? '').trim();
+  if(!raw) return '#';
+  try {
+    const url = new URL(raw, window.location.origin);
+    if(!['http:', 'https:', 'codex:'].includes(url.protocol)) return '#';
+    return url.href;
+  } catch(e) {
+    return '#';
+  }
 }
 
 function cleanArticleText(value, max = 360){
@@ -2445,12 +2570,17 @@ async function init(){
     } catch(e2) { console.warn('Concept data not loaded'); }
   }
 
-  // Restore user ID
-  if(userId){
-    document.getElementById('user-id').value = userId;
+  // Restore the capability-based sync identity
+  if(tokenUserId(userToken)){
+    userId = tokenUserId(userToken);
+    localStorage.setItem(USER_KEY, userId);
+    updateSyncIdentityUI();
     setSyncStatus('已连接: ' + userId, true);
     // Auto-pull on first load
     pullFromCloud();
+  } else if(userId){
+    updateSyncIdentityUI();
+    setSyncStatus('旧版用户 ID 已停用，请新建或导入同步身份', false);
   }
 
   await loadDeps();
@@ -2765,17 +2895,9 @@ document.getElementById('search').addEventListener('input', e => {
 });
 
 // ── Sync UI ───────────────────────────────────────────────────
-document.getElementById('user-id').addEventListener('change', e => {
-  userId = e.target.value.trim();
-  localStorage.setItem(USER_KEY, userId);
-  if(userId){
-    setSyncStatus('已连接: ' + userId, true);
-    pullFromCloud();
-  } else {
-    setSyncStatus('离线模式（仅本地）', null);
-  }
-});
-
+document.getElementById('sync-new').addEventListener('click', createSyncIdentity);
+document.getElementById('sync-import').addEventListener('click', importSyncIdentity);
+document.getElementById('sync-copy').addEventListener('click', copySyncIdentity);
 document.getElementById('sync-push').addEventListener('click', pushToCloud);
 document.getElementById('sync-pull').addEventListener('click', pullFromCloud);
 
