@@ -183,10 +183,8 @@ async function testClientRag(url, label) {
   let passed = 0, failed = 0;
 
   try {
-    // 选择一个在所有环境都存在的文章作为测试页面。
-    // MkDocs 输出保持章节目录结构；Cloudflare 和 GitHub Pages 都支持
-    // clean URL，因此不能使用不存在的扁平路径 /ch04-001-agent。
-    var testPath = '/ch04/001-agent';
+    // 选择一个在所有环境都存在且不依赖可选图表资源的测试页面。
+    var testPath = '/';
     await page.goto(url + testPath, {
       waitUntil: 'domcontentloaded',
       timeout: 20000
@@ -294,7 +292,7 @@ async function testFrontendScripts(url, label) {
   let passed = 0, failed = 0;
 
   try {
-    var testPath = '/ch04/001-agent';
+    var testPath = '/';
     await page.goto(url + testPath, {
       waitUntil: 'domcontentloaded',
       timeout: 20000
