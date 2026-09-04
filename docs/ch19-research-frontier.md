@@ -2,7 +2,7 @@
 
 > Scaling Law、涌现能力、世界模型、自我博弈
 
-> 本章收录 **12 篇**实体，按深度递增排列。
+> 本章收录 **13 篇**实体，按深度递增排列。
 
 ---
 
@@ -10,6 +10,7 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
+| ⭐ 入门 | 零基础可读 | 1 |
 | ⭐⭐ 工程师 | 需编程基础 | 1 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 5 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 4 |
@@ -29,7 +30,49 @@
 
 ---
 
-## Ch19.001 The Complexity of Simplicity | Jim Nielsen's Notes
+## Ch19.001 Lean Software Scaling Laws
+
+> 📊 Level ⭐ | 3.9KB | `entities/lean-scaling.md`
+
+# Lean Software Scaling Laws
+
+> **Source**: [gwern.net](https://gwern.net/lean-scaling)
+
+Novel research proposal with specific methodology (perplexity scaling over codebase size) and a concrete test case (Lean). High technical depth and originality, though lacks empirical data. Good source credibility (Gwern).
+
+## Content Summary
+
+Research proposal for measuring how coding LLM perplexity scales with codebase context size, using Lean as a test case for whether formal languages have better predictability exponents and could lead to safer, more secure software worldwide.
+
+> Research idea: empirically measure the scaling of coding LLM perplexity over codebase size to estimate the scaling laws of ‘predictability’ by programming language or other factors. This should translate into overall security and safety.
+> 
+> 
+> We can measure this in contemporary LLMs expensively, by training from scratch and finetuning, or cheaply, by measuring perplexity over increasingly large context windows of source code.
+> 
+> 
+> Codebases, and programming languages, which have better exponents in their scaling laws will eventually become easier for LLMs to understand, fix, and write.
+> 
+> 
+> In particular, the Lean programming language likely has, with 2026-era LLMs, a worse baseline constant and total loss on existing codebases, but better scaling exponents. This would imply that implementations in Lean can eventually win and deliver large benefits in program correctness at global scale—and thus could help justify large-scale investments in rewriting existing codebases in Lean or paying for new Lean code, thereby improving global cybersecurity.
+
+[C](https://gwern.net/dropcap#yinit)oding LLMs are currently on track to produce most software in the near-future, despite being generally mediocre quality or outright insecure (with vibecoded software being especially bad). Future rewrites with coding LLMs may help, but are not guaranteed to happen or to plug as many holes as we need to be secure against pervasive cybersecurity LLM offensives. How can we avoid this? LLMs could potentially write all software in provably secure, safe ways like formally-verifiable systems, but progress in that lags behind.
+
+How far behind?
+
+## [Language Priors](https://gwern.net/lean-scaling#language-priors "Link to section: § 'Language Priors'")
+
+[Neural scaling law⁠](https://en.wikipedia.org/wiki/Neural_scaling_law) methodology remains under-applied in deep learning for validating existing approaches and forecasting future applications. An example is in coding agents: it’s commonly observed that [LLMs⁠](https://en.wikipedia.org/wiki/Large_language_model) are better at more common languages due to more available data, and [⁠Luo et al 2025⁠](https://arxiv.org/abs/2510.08702) argues that programming is especially data-hungry, and thus there might be long-term ‘lock-in’ and upgrading to better technologies like [Haskell⁠](https://en.wikipedia.org/wiki/Haskell) or [Rust⁠](https://en.wikipedia.org/wiki/Rust_(programming_language)) or [Lean⁠](https://en.wikipedia.org/wiki/Lean_(proof_assistant)) will be impossible.
+
+But this does not follow: being a popular language with a lot of training data only means that LLMs _start off by default_ performing well. (Because it’s hard to disentangle a programming language f
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- 相关: Agent 架构
+
+---
+
+## Ch19.002 The Complexity of Simplicity | Jim Nielsen's Notes
 
 > 📊 Level ⭐⭐ | 6.1KB | `entities/2026-05-06-2201.md`
 
@@ -77,7 +120,7 @@ Cantrill 强调"someone at the helm"的角色——有效控制复杂性需要�
 
 ---
 
-## Ch19.002 Natural Language Autoencoders (Anthropic)
+## Ch19.003 Natural Language Autoencoders (Anthropic)
 
 > 📊 Level ⭐⭐⭐ | 10.4KB | `entities/anthropic-natural-language-autoencoders.md`
 
@@ -159,7 +202,7 @@ NLA 证明了"让模型解释自己的思维过程"这一思路的可行性，�
 
 ---
 
-## Ch19.003 世界模型的DeepSeek时刻！魔芯Flash World Model降本70%，跑出50FPS实时交互
+## Ch19.004 世界模型的DeepSeek时刻！魔芯Flash World Model降本70%，跑出50FPS实时交互
 
 > 📊 Level ⭐⭐⭐ | 10.3KB | `entities/世界模型的deepseek时刻魔芯flash-world-model降本70跑出50fps实时交互.md`
 
@@ -250,7 +293,7 @@ MoWorld 不仅提升了模型能力，更重要的是提出了具体的产业落
 
 ---
 
-## Ch19.004 Prompt Injection 的机制解释：基于角色感知的 LLM 安全分析
+## Ch19.005 Prompt Injection 的机制解释：基于角色感知的 LLM 安全分析
 
 > 📊 Level ⭐⭐⭐ | 8.7KB | `entities/mechanistic-explanation-prompt-injection-roles.md`
 
@@ -355,7 +398,7 @@ CoT Forgery 攻击将 prompt injection 从"指令覆盖"提升到"信任链劫�
 
 ---
 
-## Ch19.005 Count Anything - 文本引导的通用目标计数框架
+## Ch19.006 Count Anything - 文本引导的通用目标计数框架
 
 > 📊 Level ⭐⭐⭐ | 7.2KB | `entities/arxiv-2605-30846-count-anything-2026.md`
 
@@ -437,7 +480,7 @@ Count Anything 的点集输出天然规避了上述三个问题。
 
 ---
 
-## Ch19.006 From AGI to ASI
+## Ch19.007 From AGI to ASI
 
 > 📊 Level ⭐⭐⭐ | 6.6KB | `entities/arxiv-2606-12683-from-agi-to-asi.md`
 
@@ -520,7 +563,7 @@ Multi-agent collective 路径在现有 ASI 讨论中较少被关注。报告认�
 
 ---
 
-## Ch19.007 推荐系统进入大模型时刻：昇腾 NPU 如何支撑千亿级生成式推荐落地
+## Ch19.008 推荐系统进入大模型时刻：昇腾 NPU 如何支撑千亿级生成式推荐落地
 
 > 📊 Level ⭐⭐⭐⭐ | 23.8KB | `entities/huawei-fuxi-recommendation-system-ascend-npu-scaling-law.md`
 
@@ -777,7 +820,7 @@ FuXi-Alpha 的 Attention Map 可视化是理解推荐系统特征重要性的关
 
 ---
 
-## Ch19.008 NeurIPS 2026 Pangram 事件：闭源 AI 检测器用于学术 desk-reject 的方法论争议
+## Ch19.009 NeurIPS 2026 Pangram 事件：闭源 AI 检测器用于学术 desk-reject 的方法论争议
 
 > 📊 Level ⭐⭐⭐⭐ | 11.0KB | `entities/neurips-2026-pangram-controversy.md`
 
@@ -891,7 +934,7 @@ AI 语法润色、翻译辅助、以及认知辅助技术对非母语作者和�
 
 ---
 
-## Ch19.009 Recursive First Steps Toward Automated AI Research：SOTA 三基准自动化研究系统
+## Ch19.010 Recursive First Steps Toward Automated AI Research：SOTA 三基准自动化研究系统
 
 > 📊 Level ⭐⭐⭐⭐ | 10.9KB | `entities/recursive-automated-ai-research-first-steps-2026.md`
 
@@ -939,7 +982,7 @@ AI 语法润色、翻译辅助、以及认知辅助技术对非母语作者和�
 | 开源 | 部分 | 全部 artifacts 开源 ([GitHub recursive-org](https://github.com/recursive-org/first-steps-toward-automated-ai-research)) |
 | 部署 | Google 内部 | 通用研究基础设施 |
 
-参考 [AlphaEvolve Impact](ch04/055-alphaevolve-impact-deepmind.html) 和 [AlphaEvolve 一周年](https://github.com/QianJinGuo/wiki-public/blob/main/entities/alphaevolve交出一周年炸裂成绩单ai自我改进不再科幻.md) 了解 DeepMind 路线。
+参考 [AlphaEvolve Impact](ch04/071-alphaevolve-impact-deepmind.html) 和 [AlphaEvolve 一周年](https://github.com/QianJinGuo/wiki-public/blob/main/entities/alphaevolve交出一周年炸裂成绩单ai自我改进不再科幻.md) 了解 DeepMind 路线。
 
 ## 深度分析
 
@@ -981,11 +1024,11 @@ Einsia Navers Lab 的 AI4AI-Bench（arXiv:2608.20318）为"AI 能否设计更好
 ## 引用与延伸阅读
 - **原文存档** → [原文存档](https://www.recursive.com/articles/first-steps-toward-automated-ai-research)
 - **GitHub**：https://github.com/recursive-org/first-steps-toward-automated-ai-research
-- 关联 entity：[Alphaevolve Impact Deepmind](ch04/055-alphaevolve-impact-deepmind.html)、[Agent Self Improvement Six Mechanisms](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-self-improvement-six-mechanisms.md)、[Ai Recursive Self Improvement Nanogpt Prime Intellect](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-recursive-self-improvement-nanogpt-prime-intellect.md)、[Hermes Self Improving Loop Winty](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-self-improving-loop-winty.md)、[Deli Auto Research Skill V2 Continual Learning Self Improvement](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deli-auto-research-skill-v2-continual-learning-self-improvement.md)
+- 关联 entity：[Alphaevolve Impact Deepmind](ch04/071-alphaevolve-impact-deepmind.html)、[Agent Self Improvement Six Mechanisms](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-self-improvement-six-mechanisms.md)、[Ai Recursive Self Improvement Nanogpt Prime Intellect](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-recursive-self-improvement-nanogpt-prime-intellect.md)、[Hermes Self Improving Loop Winty](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-self-improving-loop-winty.md)、[Deli Auto Research Skill V2 Continual Learning Self Improvement](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deli-auto-research-skill-v2-continual-learning-self-improvement.md)
 
 ---
 
-## Ch19.010 Qwen-AgentWorld: Language World Models for General Agents
+## Ch19.011 Qwen-AgentWorld: Language World Models for General Agents
 
 > 📊 Level ⭐⭐⭐⭐ | 7.3KB | `entities/qwen-agentworld-language-world-models.md`
 
@@ -1110,7 +1153,7 @@ Qwen-AgentWorld 的创新在于将世界模型的载体从传统的状态空间�
 
 ---
 
-## Ch19.011 Visual Para-Thinker: 视觉并行思考框架 (arxiv 2602.13310)
+## Ch19.012 Visual Para-Thinker: 视觉并行思考框架 (arxiv 2602.13310)
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 22.8KB | `entities/visual-para-thinker-vlm-parallel-reasoning-xuhaoran.md`
 
@@ -1437,7 +1480,7 @@ Qwen-AgentWorld 的创新在于将世界模型的载体从传统的状态空间�
 
 ---
 
-## Ch19.012 Video Agent 范式迁移与算力-人才飞轮：Ethan He 从 Cosmos 到 Grok Imagine 的第一手洞见
+## Ch19.013 Video Agent 范式迁移与算力-人才飞轮：Ethan He 从 Cosmos 到 Grok Imagine 的第一手洞见
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 18.1KB | `entities/video-agent-paradigm-compute-talent-flywheel-ethan-he-20260606.md`
 
@@ -1591,7 +1634,7 @@ Ethan 指出了一个技术收敛点：**视频模型和 LLM 在长上下文管�
 - 与 [Claude Code 动态工作流多 Agent 编排](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-dynamic-workflows-multi-agent-orchestration.md) 互补：AI 编程的 Agent 化 → 视频生成的 Agent 化
 - 与 [Agent Harness Engineering Survey](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-engineering-survey-2026.md) 互补：Harness 在视频 Agent 时代的能力复用
 - 与 [画布 Agent 时代](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-canvas-agent-era-content-creation.md) + [AI 视频工具第三阶段](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-video-tools-third-stage-1779303117.md) 互补：第一手研究人员视角补全产品视角
-- 与 [Foundation Capital agent era 六洞察](ch04/318-foundation-capital-agent-era-six-insights.html) 互补：算力-人才飞轮的微观机制
+- 与 [Foundation Capital agent era 六洞察](ch04/351-foundation-capital-agent-era-six-insights.html) 互补：算力-人才飞轮的微观机制
 
 → [原文存档](https://mp.weixin.qq.com/s/dOKQToqmT5a-CrBLRDMQxA)
 

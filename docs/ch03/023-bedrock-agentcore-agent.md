@@ -129,7 +129,7 @@ Trade-off：运营效率高，可能是有大量小租户时的唯一选项，�
 随着 ANS v2 等 Agent Trust 标准成熟，多租户 Agent 架构将面临新的设计考量：当外部 Agent 可以跨组织边界发现和交互时，租户边界的定义将从"数据隔离"扩展到"身份和信任隔离"。AWS Agent Registry 目前解决了组织内部发现，但跨组织发现和信任建立仍是待解决问题。
 
 ## 相关实体
-- [Building Ai Agents For Business Support Using Amazon Bedrock](../ch04/096-building-ai-agents-for-business-support-using-amazon-bedrock.html)
+- [Building Ai Agents For Business Support Using Amazon Bedrock](../ch04/122-building-ai-agents-for-business-support-using-amazon-bedrock.html)
 - [Break The Context Window Barrier With Amazon Bedrock Agentcore](https://github.com/QianJinGuo/wiki-public/blob/main/entities/break-the-context-window-barrier-with-amazon-bedrock-agentcore.md)
 - [Secure Ai Agents Policy Lambda Interceptors Aws](https://github.com/QianJinGuo/wiki-public/blob/main/entities/secure-ai-agents-policy-lambda-interceptors-aws.md)
 - [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](https://github.com/QianJinGuo/wiki-public/blob/main/entities/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazo.md)

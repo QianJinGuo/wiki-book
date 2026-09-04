@@ -1005,7 +1005,7 @@ NICE 真正的差异化定位是**「理论 + 内涵级 + 排序题」三位一�
 - [AI 评估的三种方法](https://github.com/QianJinGuo/wiki-public/blob/main/entities/evals-three-methods-of-ai-evaluation.md)
 - [Agent Skill 写作评估](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing-evaluation.md)
 - [AI 工作面试与模型评估](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-job-interview-model-evaluation-mollick.md)
-- [Inngest 2026 AI 评测报告](ch01/353-inngest-ai-in-production-the-2026-benchmark-report.html)
+- [Inngest 2026 AI 评测报告](ch01/487-inngest-ai-in-production-the-2026-benchmark-report.html)
 - [Agent Harness 生产设计指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture-design-production-guide.md)
 - [Agent 工程原则](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-engineering-principles-architecture-practice.md)
 - [SkillClaw Hyman 阿里 Skill 框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skillclaw-hyman-nightly-evolution-alibaba.md)
@@ -1587,7 +1587,7 @@ hermes gateway start  # 后台
 5. **安全审计应作为可观测性的标配而非附加** — 当 Agent 开始调用外部工具（尤其是有写入能力的工具），异常行为检测和全量日志审计是防止生产事故的最后防线。
 
 ## Related
-- [Hermes Agent](ch03/095-hermes-agent.html) — Nous Research 开源 Agent 框架，可观测性是其生产落地关键能力
+- [Hermes Agent](ch03/096-hermes-agent.html) — Nous Research 开源 Agent 框架，可观测性是其生产落地关键能力
 - [Hermes Agent 深度解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-deep-dive.md) — Self-Evolving/动态 Skill 沉淀/RL 训练闭环等深度解析
 - [OpenClaw 架构解析](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/openclaw-architecture.md) — 无内置可观测方案，对比参考
 - [原始文章存档](https://mp.weixin.qq.com/s/XQqbHr7EjH906vQhX8b6Cw)

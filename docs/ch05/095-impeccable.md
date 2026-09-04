@@ -102,7 +102,7 @@ npx impeccable detect --json .
 - [Agent Harness 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture.md) —— 7 层 harness 模型
 - [Agent Skills 综合调研](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skills-comprehensive-survey.md) —— skill 系统全景
 - [Skills Refiner 设计质量评估框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skills-refiner-design-quality-evaluation-framework.md)
-- [Agentic Design System 演化](../ch01/005-agentic-design-system-from-chatbot-to-orchestration.html)
+- [Agentic Design System 演化](../ch01/007-agentic-design-system-from-chatbot-to-orchestration.html)
 
 ## 关键启示（harness 设计层面）
 1. **多 provider 分发是工程问题，不是文档问题** —— 写编译器比写适配指南更稳
@@ -157,7 +157,7 @@ npx impeccable detect --json .
 ## 关联阅读
 - [Agent Skill 编写指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing.md) —— skill 格式规范与渐进式披露机制
 - [Karpathy Vibe Coding → Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-to-agentic-engineering.md) —— Vibe Coding 原始定义与 Software 3.0 演化
-- [Claude Design Skill](../ch07/035-claude-design-skill.html) —— Anthropic 的设计 skill 实践对比
+- [Claude Design Skill](../ch01/202-claude-design-skill.html) —— Anthropic 的设计 skill 实践对比
 - [前端 Design Skills 全景对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skills-anthropic-openai-comparison-frontend-design.md) —— Anthropic vs OpenAI 设计 skill 生态比较
 
 ---

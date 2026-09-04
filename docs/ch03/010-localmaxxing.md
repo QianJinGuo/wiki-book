@@ -46,7 +46,7 @@ Localmaxxing 不是"取代云端"而是"分流任务"。随着本地模型能力
 - [Ico Fines South Staffordshire 2022 Breach](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ico-fines-south-staffordshire-2022-breach.md)
 - [Interaction Models](https://github.com/QianJinGuo/wiki-public/blob/main/entities/interaction-models.md)
 - [Weve Been Here Before Decompilers Fuzzers And Now Ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/weve-been-here-before-decompilers-fuzzers-and-now-ai.md)
-- [Automate Progressive Rollouts With Vercel Flags Vercel](../ch09/024-automate-progressive-rollouts-with-vercel-flags-vercel.html)
+- [Automate Progressive Rollouts With Vercel Flags Vercel](../ch09/029-automate-progressive-rollouts-with-vercel-flags-vercel.html)
 
 ---
 

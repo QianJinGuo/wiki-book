@@ -59,7 +59,7 @@ Reference 在三端各有侧重：iPhone 用于随时捕获灵感，iPad 提供�
 - [Shub Reaper Macos Stealer Attack Chain](https://github.com/QianJinGuo/wiki-public/blob/main/entities/shub-reaper-macos-stealer-attack-chain.md)
 - [Somethings Rotten In The State Of Macos Icon Design](https://github.com/QianJinGuo/wiki-public/blob/main/entities/somethings-rotten-in-the-state-of-macos-icon-design.md)
 - [在 Macos 上用 Ai Coding 搭一个隐私优先的会议纪要助手](https://github.com/QianJinGuo/wiki-public/blob/main/entities/在-macos-上用-ai-coding-搭一个隐私优先的会议纪要助手.md)
-- [Apple Silicon Costs More Than Openrouter](../ch01/082-apple-silicon-costs-more-than-openrouter.html)
+- [Apple Silicon Costs More Than Openrouter](../ch01/105-apple-silicon-costs-more-than-openrouter.html)
 
 → [原文存档](https://www.referenceboard.app)
 

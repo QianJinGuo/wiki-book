@@ -229,7 +229,7 @@ DIPG 的独特贡献是：**把"verify 闭环"工程化到具体代码级别**�
 - [Nvidia Gamma World Multi Agent World Model](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-gamma-world-multi-agent-world-model.md)
 - [Anthropic Multi Agent Research System](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-multi-agent-research-system.md)
 - [Openclacky Harness Engineering 100 Percent Cache Hit](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclacky-harness-engineering-100-percent-cache-hit.md)
-- [Factory Mission Multi Agent Architecture](../ch01/534-factory-mission-multi-agent-architecture.html)
+- [Factory Mission Multi Agent Architecture](../ch01/672-factory-mission-multi-agent-architecture.html)
 
 → [原文存档](https://mp.weixin.qq.com/s/ys_yLo-xP6Hy0PnHYXHEMg)
 

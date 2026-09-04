@@ -114,7 +114,7 @@ The article documents a "subtle vibe shift" in banks over 2026 Q1-Q2: from loudl
 - [Amazon Bedrock Agentic Payments Guardrails](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-agentic-payments-guardrails.md) — Bedrock agentic payments 护栏
 - enable safe agentic payments with built in guardrails using  — 安全 agent 支付
 - [Coinbase Becomes Hyperliquids Official Usdc Treasury Deployer As Usdh Sunsets](https://github.com/QianJinGuo/wiki-public/blob/main/entities/coinbase-becomes-hyperliquids-official-usdc-treasury-deployer-as-usdh-sunsets.md) — Coinbase USDC treasury
-- [Tether Launches Developer Grants Program For Local Ai Paymen](../ch09/060-tether-launches-developer-grants-program-for-local-ai-paymen.html) — Tether 本地 AI 支付开发者资助
+- [Tether Launches Developer Grants Program For Local Ai Paymen](../ch09/067-tether-launches-developer-grants-program-for-local-ai-paymen.html) — Tether 本地 AI 支付开发者资助
 - [Crypto Funds Six Week Inflow Streak 4 9 Billion Coinshares](https://github.com/QianJinGuo/wiki-public/blob/main/entities/crypto-funds-six-week-inflow-streak-4-9-billion-coinshares.md) — 加密基金 6 周连续流入
 - [The Token Economy Pt2 The Intelligence Company Gets Built](../ch01/001-the-token-economy-pt2-the-intelligence-company-gets-built.html) — Token 经济与 AI 智能公司
 

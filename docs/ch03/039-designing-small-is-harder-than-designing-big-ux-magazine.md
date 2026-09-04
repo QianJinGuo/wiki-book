@@ -12,7 +12,7 @@
 
 → [原文存档](https://uxmag.com/articles/designing-small-is-harder-than-designing-big)
 
-- [Activity Focused Design](061-activity-focused-design.html)
+- [Activity Focused Design](062-activity-focused-design.html)
 ## Notes
 - Value: 7/10, Confidence: 8/10
 

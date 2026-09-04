@@ -2,7 +2,7 @@
 
 > 从数字到物理：强化学习、仿真、人形机器人
 
-> 本章收录 **5 篇**实体，按深度递增排列。
+> 本章收录 **6 篇**实体，按深度递增排列。
 
 ---
 
@@ -10,7 +10,7 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐⭐ 工程师 | 需编程基础 | 1 |
+| ⭐⭐ 工程师 | 需编程基础 | 2 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 4 |
 
 ---
@@ -106,7 +106,53 @@ Google DeepMind 2026-06-09 启动 **Google DeepMind Accelerator: Robotics** 欧�
 
 ---
 
-## Ch18.002 蚂蚁灵波 LingBot-Vision — 空间原生视觉基础模型 & LingBot-Depth 2.0
+## Ch18.002 蔚蓝BabyAlpha A3消费级机器狗撕开英伟达垄断
+
+> 📊 Level ⭐⭐ | 2.7KB | `entities/weilan-babyalpha-a3-machine-dog.md`
+
+# 蔚蓝BabyAlpha A3消费级机器狗撕开英伟达垄断
+
+→ [原文存档](https://mp.weixin.qq.com/s/YfZ-bvXAmMBO3LFQ6eUPKA)
+
+## 深度分析
+
+蔚蓝BabyAlpha A3消费级机器狗撕开英伟达垄断
+### 核心观点
+1. # 蔚蓝BabyAlpha A3消费级机器狗撕开英伟达垄断
+## 核心亮点
+- 70亿参数大模型端侧推理，消费级首次
+- 国产异构芯片架构，成本仅为英伟达1/10
+- 感知系统关键指标达到人眼水平
+## 01 算力枷锁
+### 单芯片路线的三重困境
+1.
+2. **摩尔定律放缓**：制程提升边际递减
+2.
+3. **通用芯片效率浪费**：AI推理、运动控制、传感融合任务不同，混在一起算力消耗在任务切换
+3.
+4. ### 视觉系统
+| 参数 | BabyAlpha A3 | 行业主流 | 倍数 |
+|------|-------------|---------|------|
+| 像素 | 6600万三摄(8K+4K+4K) | 200万 | 30倍 |
+| HDR | 140dB | 80dB | - |
+| 帧率 | 480fps | 30fps | 16倍 |
+人眼动态范围约100-120dB，主流机器人约80dB，A3达140dB。
+5. ### 空间感知
+- 5组3D ToF + 3D结构光，360°环视面阵
+- 点云密度：223.
+
+### 关联实体
+
+- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ethan-he-cosmos-grok-imagine-latent-space-video-agent-20260606.md)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](https://github.com/QianJinGuo/wiki-public/blob/main/entities/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md)
+- [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md)
+- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验-v2.md)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏-v2.md)
+
+---
+
+## Ch18.003 蚂蚁灵波 LingBot-Vision — 空间原生视觉基础模型 & LingBot-Depth 2.0
 
 > 📊 Level ⭐⭐⭐ | 8.0KB | `entities/lingbot-vision-spatial-native-vision-foundation-model-ant.md`
 
@@ -198,7 +244,7 @@ LingBot-Vision 的"空间原生"定位与 具身智能 的需求高度契合。�
 
 ---
 
-## Ch18.003 Unitree's IPO Filing: The State of the Robotics Market
+## Ch18.004 Unitree's IPO Filing: The State of the Robotics Market
 
 > 📊 Level ⭐⭐⭐ | 6.7KB | `entities/unitree-ipo-robotics-market.md`
 
@@ -268,7 +314,7 @@ Unitree 计划将 IPO 融资款约 3 亿美元（每年约 1 亿美元）用于 
 
 ---
 
-## Ch18.004 蔚蓝BabyAlpha A3消费级机器狗
+## Ch18.005 蔚蓝BabyAlpha A3消费级机器狗
 
 > 📊 Level ⭐⭐⭐ | 5.1KB | `entities/weilan-babyalpha-a3.md`
 
@@ -313,7 +359,7 @@ Unitree 计划将 IPO 融资款约 3 亿美元（每年约 1 亿美元）用于 
 ## 与现有知识的链接
 - → [原文存档](https://mp.weixin.qq.com/s/YfZ-bvXAmMBO3LFQ6eUPKA)
 - → [Yann LeCun JEPA世界模型](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yann-lecun-jepa-world-model.md) — AMI Labs具身智能方向
-- → [NVIDIA边缘端LLM for机器人](ch01/213-nvidia-edge-first-llms-av-robotics.html) — 英伟达边缘AI方案对比
+- → [NVIDIA边缘端LLM for机器人](ch01/344-nvidia-edge-first-llms-av-robotics.html) — 英伟达边缘AI方案对比
 
 ## 深度分析
 ### 异构计算vs单芯片：架构选择的工程哲学
@@ -356,7 +402,7 @@ Unitree 计划将 IPO 融资款约 3 亿美元（每年约 1 亿美元）用于 
 
 ---
 
-## Ch18.005 NVIDIA Isaac Lab + Amazon SageMaker AI：机器人强化学习训练基础设施（Humanoid RL Scale-up）
+## Ch18.006 NVIDIA Isaac Lab + Amazon SageMaker AI：机器人强化学习训练基础设施（Humanoid RL Scale-up）
 
 > 📊 Level ⭐⭐⭐ | 3.6KB | `entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md`
 

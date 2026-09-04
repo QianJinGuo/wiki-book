@@ -13,7 +13,7 @@
 - [Postmortem Tanstack Npm Supply Chain Compromise Tanstack Blog](https://github.com/QianJinGuo/wiki-public/blob/main/entities/postmortem-tanstack-npm-supply-chain-compromise-tanstack-blog.md)
 - [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](https://github.com/QianJinGuo/wiki-public/blob/main/entities/www-wiz-io-mini-shai-hulud-strikes-again-tanstack-more-npm-packages-compromised.md)
 - [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidias-jensen-huang-bets-on-this-british-startup-to-build-next-frontier-of-ai.md)
-- [From Doer To Director The Ai Mindset Shift](../ch01/024-from-doer-to-director-the-ai-mindset-shift.html)
+- [From Doer To Director The Ai Mindset Shift](../ch01/026-from-doer-to-director-the-ai-mindset-shift.html)
 
 → [原文存档](https://cybersecurityreach.org/investigations/ifyourevokethistokenitwillwipethecomputeroftheowner-shai-hulud-2026)
 

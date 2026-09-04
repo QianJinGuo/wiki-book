@@ -2,7 +2,7 @@
 
 > Agent 的眼睛和耳朵：视觉、语音、视频理解与生成
 
-> 本章收录 **26 篇**实体，按深度递增排列。
+> 本章收录 **27 篇**实体，按深度递增排列。
 
 ---
 
@@ -10,7 +10,7 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 2 |
+| ⭐ 入门 | 零基础可读 | 3 |
 | ⭐⭐ 工程师 | 需编程基础 | 1 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 19 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 4 |
@@ -29,7 +29,78 @@
 
 ---
 
-## Ch17.001 TimeLens2: Generalist Video Temporal Grounding with Multimodal LLMs
+## Ch17.001 How transparent is DiffusionGemma (and why it matters)
+
+> 📊 Level ⭐ | 8.3KB | `entities/diffusiongemma-transparency-audit-lesswrong.md`
+
+# How transparent is DiffusionGemma (and why it matters)
+
+> 原文存档：[原文存档](https://www.lesswrong.com/posts/zoYXpdaMgFT43Wc24/how-transparent-is-diffusiongemma-and-why-it-matters)
+
+## 核心内容
+
+Authors: Joshua Engels*, Callum McDougall*, Bilal Chughtai*, Janos Kramar, Senthoran Rajamanoharan, Cindy Wu, Arthur Conmy, Asic Q Chen, Jean Tarbouriech, Min Ma, Brendan O'Donoghue+, João Gabriel Lopes de Oliveira+, Rohin Shah+, Neel Nanda+
+
+*Primary Contributor
+
++Advising
+
+Paper here: [https://arxiv.org/abs/2606.20560](https://arxiv.org/abs/2606.20560)
+
+## Overview
+
+In a recent collaboration between the GDM interpretability team and the GDM text diffusion team, we performed a transparency audit of DiffusionGemma, GDM's new text diffusion model.
+
+Overall, we find that DiffusionGemma is not significantly less transparent than Gemma.
+
+*   Gemma and DiffusionGemma perform similarly on [monitorability evaluations](https://arxiv.org/abs/2512.18311).
+*   Although naively DiffusionGemma has a much larger[opaque serial depth](https://arxiv.org/abs/2603.09786), we can apply the [logit lens](https://www.lesswrong.com/posts/AcKRB8wDpdaN6v6ru/interpreting-gpt-the-logit-lens) to intermediate vectors and ablate non-interpretable information without harming performance. This implies that these intermediate nodes are interpretable, which reduces the opaque serial depth to be similar to that of Gemma.
+
+However, even though the _variables_ that the model uses at different steps are interpretable, this does not necessarily mean that we understand the _algorithm_ that the model uses to reach the final answer. We thus distinguish between _variable_ transparency, which we define as whether we can understand _snapshots_ of the model's computation, and _algorithmic_ transparency, which we define as whether we can use these snapshots to reconstruct the process by which the model arrived at its outputs.
+
+By default, algorithmic transparency is much lower for a text diffusion model. In an autoregressive model, the model proceeds through its reasoning in order, token by token; when each token is generated, we know the exact state the model was in, and can make inferences about why it generated a certain token. On the other hand, in a single "canvas" a diffusion model generates all tokens at once, and the causal relationship between different tokens is unclear; a diffusion model can e.g. use tokens at the end of the canvas to help it figure out what tokens to generate earlier in the canvas. In a series of case studies, we study these and other phenomena that are unique to text diffusion models, including non-chronological reasoning, token and sequence smearing, and intermediate-context reasoning. We make progress on algorithmic transparency and believe we now understand some of the algorithmic "styles" that DiffusionGemma uses, but we still think that it is less algorithmically transparent than corresponding autoregressive LLMs.
+
+We also include 24 open problems that we would be excited for the community to investigate.
+
+## Why is this relevant for AI safety?
+
+Currently, CoT monitoring is a load-bearing aspect of many safety cases, but future models may perform more of their reasoning in latent spaces. We think that developers should perform transparency audits of new model architectures that perform larger fractions of their computation in a latent space. Thus, even though DiffusionGemma is itself not concerning from a transparency perspective, we are excited about this work because of the precedent it sets for performing these sorts of evaluations. Many of our experiments, including the opaque serial depth and monitorability evaluations, should be able to be straightforwardly applied to future latent reasoning architectures.
+
+If future latent reasoning models regress on these metrics, we will need new techniques that can translate from latent reasoning into natural language. Thus, we are particularly excited about techniques like [Natural Language Autoencoders](https://transformer-circuits.pub/2026/nla/) and [Activation Oracles](https://arxiv.org/abs/2512.15674) that can translate activations into natural text, and we hope that the interpretability community continues to prioritize their development.
+
+## Short summary of main results:
+
+We first present a diagram of the DiffusionGemma architecture:
+
+![Image 1: CleanShot 2026-06-19 at 19.26.34@2x.png](https://res.cloudinary.com/lesswrong-2-0/image/upload/v1781893604/lexical_client_uploads/xig4bpzhlwokgsuwjsrw.png)
+
+As expected, the opaque serial depth for DiffusionGemma is much larger (28.6X) the corresponding Gemma model. But if we were able to show the intermediates were interpretable, this would drop to 1.1X.
+
+![Image 2: CleanShot 2026-06-20 at 21.01.51@2x.png](https://res.cloudinary.com/lesswrong-2-0/image/upload/v1781985729/lexical_client_uploads/teq5ujwefoavwmx9c5yr.png)
+
+When we replace the intermediate self-conditioning vectors  with their top-k or top-p tokens, we maintain most performance on downstream benchmarks:
+
+![Image 3: CleanShot 2026-06-20 at 14.54.28@2x.png](https://res.cloudinary.com/lesswrong-2-0/image/upload/v1781963684/lexical_client_uploads/rmbvkn1kydq1yx8azjmn.png)
+
+For the top-p interventions, these top tokens are mostly equal to or semantically similar to nearby tokens in the final canvas tokens. Thus, they are largely interpretable.Note that even the 10% of tokens in the first few canvases that do not fall into these categories may still be interpretable; they may be guesses for other meanings of the sentence, or may be interpretable intermediates that the model is using to reason. We are interested in further work that investigates intermediate tokens the model is confident in that are not similar to any final tokens.
+
+![Image 4: CleanShot 2026-06-20 at 14.54.59@2x.png](https://res.cloudinary.com/lesswrong-2-0/image/upload/v1781963711/lexical_client_uploads/tatqh8rnbjrmmqb9kqyt.png)
+
+Monitorability, a key downstream application of transparency, is similar between Gemma and DiffusionGemma:
+
+![Image 5: CleanShot 2026-06-20 at 14.55.33@2x.png](https://res.cloudinary.com/lesswrong-
+
+## 与现有 DiffusionGemma 实体的关系
+
+本文从**透明度/可解释性**角度分析 DiffusionGemma，与现有 [DiffusionGemma 技术架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/diffusiongemma-4x-faster-text-generation-google-2026-06.md) 实体（侧重模型架构、MoE 设计、推理加速）形成互补。
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+
+---
+
+## Ch17.002 TimeLens2: Generalist Video Temporal Grounding with Multimodal LLMs
 
 > 📊 Level ⭐ | 4.3KB | `entities/timelens2.md`
 
@@ -85,7 +156,7 @@ TimeLens2-4B 平均超过 Qwen3.5-397B-A17B 约 7.5 个 mIoU 点，在全部七�
 
 ---
 
-## Ch17.002 Mistral Shieldstral — Policy-Adaptive Multimodal Safety Classifier
+## Ch17.003 Mistral Shieldstral — Policy-Adaptive Multimodal Safety Classifier
 
 > 📊 Level ⭐ | 3.3KB | `entities/mistral-shieldstral-policy-adaptive-safety-classifier.md`
 
@@ -110,7 +181,7 @@ TimeLens2-4B 平均超过 Qwen3.5-397B-A17B 约 7.5 个 mIoU 点，在全部七�
 ## 对 LLM 安全工程的意义
 
 - **Guardrail 部署成本下降**：policy-adaptive 意味着一个模型服务所有部署场景，不再为每个产品/受众维护专用审核模型——与 [Bedrock Guardrails](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-guardrails-code-generation-six-patterns.md) 类平台方案形成互补（平台 vs open-weights 两种路线）
-- **审核即推理任务**：把 content moderation 从分类任务重构为 QA 任务，与 [Nova 2 prompting 审核](ch01/581-prompting-amazon-nova-2-for-content-moderation.html) 思路同源
+- **审核即推理任务**：把 content moderation 从分类任务重构为 QA 任务，与 [Nova 2 prompting 审核](ch01/720-prompting-amazon-nova-2-for-content-moderation.html) 思路同源
 - **多模态统一**：文本+图像一个接口、一个模型，规避多模态安全审核需多模型拼装的工程负担
 
 ## 相关主题
@@ -122,7 +193,7 @@ TimeLens2-4B 平均超过 Qwen3.5-397B-A17B 约 7.5 个 mIoU 点，在全部七�
 
 ---
 
-## Ch17.003 SunFinance: Textract+Claude准确率90.8%的ID提取方案
+## Ch17.004 SunFinance: Textract+Claude准确率90.8%的ID提取方案
 
 > 📊 Level ⭐⭐ | 7.9KB | `entities/aws-sun-finance-ai-id-extraction-fraud-detection.md`
 
@@ -186,7 +257,7 @@ SunFinance在OCR+Claude之后加入了ID号码格式化验证、日期标准化�
 
 ---
 
-## Ch17.004 Pixelle-Video — 阿里国际 AIDC 开源的全自动视频生成 pipeline 装配工
+## Ch17.005 Pixelle-Video — 阿里国际 AIDC 开源的全自动视频生成 pipeline 装配工
 
 > 📊 Level ⭐⭐⭐ | 14.1KB | `entities/pixelle-video-aidc-ali-international-2026.md`
 
@@ -281,7 +352,7 @@ Pixelle-Video 把这个哲学推到极致:LLM 可换 + 图像模型可换 + TTS 
 - vs **[AI 视频工具悄悄走到了第三阶段](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-video-tools-third-stage-1779303117.md)** — 那是**行业历史阶段综述**(20KB,花叔 2026-05-07),本文是**单一项目深测**。两者互补:阶段综述给宏观背景,本文给工程细节。
 - vs **[Video Agent 范式迁移与算力-人才飞轮](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ethan-he-cosmos-grok-imagine-latent-space-video-agent-20260606.md)** — 那是**底层视频模型视角**(nvidia Cosmos + xAI Grok Imagine),本文是**pipeline 编排层视角**。两层视角互补。
 - vs **[JoyAI-Echo:京东长视频框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/joyai-echo-long-video-framework-jd.md)** — 那是**长视频(5 分钟一致性)底层生成框架**(DMD 蒸馏 + Director Agent),本文是**短视频 pipeline 装配**。时长 / 抽象层完全不同。
-- vs **[Fastlane 短视频内容](ch03/055-fastlane-create-winning-short-form-content-in-seconds.html)** — 另一款短视频工具,但**未开源**;Pixelle-Video 是 Apache 2.0 开源,可二开。
+- vs **[Fastlane 短视频内容](ch03/056-fastlane-create-winning-short-form-content-in-seconds.html)** — 另一款短视频工具,但**未开源**;Pixelle-Video 是 Apache 2.0 开源,可二开。
 - vs **[Agentium Agent Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentium-agent-framework.md)** — 同为 pipeline 编排思路,但 Agentium 偏**通用 agent 编排**,Pixelle-Video 偏**视频生成专精**。
 - vs **[纳德拉「Token 资本」论](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nadella-token-capital-microsoft-ai-economy-2026.md)** — Pixelle-Video 是该战略宣言"模型可替换性"哲学的**工程范本**。
 - vs **[800 行 OpenClaw tool 消息总线子 agent 管理架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/800行代码实现-open-claw-的-tool消息总线子agent管理架构.md)** — 两者都体现"**装配工胜过生成器**"的工程哲学(OpenClaw 是 agent 工具总线装配)。
@@ -322,7 +393,7 @@ Pixelle-Video 不同于纯研究型开源项目(如 Stability AI 的各种模型
 - [AI 视频工具悄悄走到了第三阶段](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-video-tools-third-stage-1779303117.md)
 - [Video Agent 范式迁移与算力-人才飞轮](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ethan-he-cosmos-grok-imagine-latent-space-video-agent-20260606.md)
 - [JoyAI-Echo:京东长视频框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/joyai-echo-long-video-framework-jd.md)
-- [Fastlane 短视频内容](ch03/055-fastlane-create-winning-short-form-content-in-seconds.html)
+- [Fastlane 短视频内容](ch03/056-fastlane-create-winning-short-form-content-in-seconds.html)
 - [Agentium Agent Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentium-agent-framework.md)
 - [纳德拉「Token 资本」论](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nadella-token-capital-microsoft-ai-economy-2026.md)
 - [800 行 OpenClaw tool 消息总线](https://github.com/QianJinGuo/wiki-public/blob/main/entities/800行代码实现-open-claw-的-tool消息总线子agent管理架构.md)
@@ -333,7 +404,7 @@ Pixelle-Video 不同于纯研究型开源项目(如 Stability AI 的各种模型
 
 ---
 
-## Ch17.005 CVPR 2026 Highlight | 清华打破多模态音频生成的「通才困境」：Omni2Sound 音频基础模型开源！
+## Ch17.006 CVPR 2026 Highlight | 清华打破多模态音频生成的「通才困境」：Omni2Sound 音频基础模型开源！
 
 > 📊 Level ⭐⭐⭐ | 12.1KB | `entities/cvpr-2026-highlight-清华打破多模态音频生成的通才困境omni2sound-音频基础模型开源.md`
 
@@ -422,7 +493,7 @@ VGGSound-Omni 基准引入的画外音（Off-screen）专属评测赛道，为�
 
 ---
 
-## Ch17.006 高德 ABot-Earth 0.5：全球首个 3D 原生城市世界模型（1% 成本 + 千倍提效）
+## Ch17.007 高德 ABot-Earth 0.5：全球首个 3D 原生城市世界模型（1% 成本 + 千倍提效）
 
 > 📊 Level ⭐⭐⭐ | 12.1KB | `entities/amap-abot-earth-0.5-3d-native-world-model.md`
 
@@ -546,7 +617,7 @@ VGGSound-Omni 基准引入的画外音（Off-screen）专属评测赛道，为�
 
 ---
 
-## Ch17.007 Gemma 4 12B：Google 多模态本地模型 —— 扔掉编码器
+## Ch17.008 Gemma 4 12B：Google 多模态本地模型 —— 扔掉编码器
 
 > 📊 Level ⭐⭐⭐ | 11.2KB | `entities/gemma-4-12b-google-multimodal-local.md`
 
@@ -720,7 +791,7 @@ VGGSound-Omni 基准引入的画外音（Off-screen）专属评测赛道，为�
 
 ---
 
-## Ch17.008 ICRDrag：ECCV 2026 首个上下文区域拖拽图像编辑模型
+## Ch17.009 ICRDrag：ECCV 2026 首个上下文区域拖拽图像编辑模型
 
 > 📊 Level ⭐⭐⭐ | 9.5KB | `entities/icrdrag-context-region-drag-eccv-2026-shanghai-jiaotong.md`
 
@@ -798,7 +869,7 @@ ICRDrag 两阶段课程式训练中，第二阶段用稀疏不完整掩码训练
 
 ## 实践启示
 
-1. **从单点控制到区域控制是 AI 交互的普遍趋势**。图像编辑如此，[Agent 系统](ch03/095-hermes-agent.html) 的任务控制亦然——提供精确的约束（掩码）比模糊的指示（点对）更容易获得预期的结果。在设计 Agent 交互界面时，应优先考虑「约束性输入」而非「自由文本提示」。
+1. **从单点控制到区域控制是 AI 交互的普遍趋势**。图像编辑如此，[Agent 系统](ch03/096-hermes-agent.html) 的任务控制亦然——提供精确的约束（掩码）比模糊的指示（点对）更容易获得预期的结果。在设计 Agent 交互界面时，应优先考虑「约束性输入」而非「自由文本提示」。
 
 2. **双向注意力约束比单向更适合空间一致性任务**。ICRDrag 的源-目标双向对应约束确保了编辑前后的一致性。在 [多 Agent 系统](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/multi-agent-systems.md) 中，双向通信比单向指令能更有效地维持系统状态的一致性。
 
@@ -820,13 +891,13 @@ ICRDrag 两阶段课程式训练中，第二阶段用稀疏不完整掩码训练
 - DragDiffusion（基于扩散模型的拖拽编辑方法） — 基于扩散模型的拖拽编辑
 - 扩散模型 — 图像生成与编辑的基础框架
 - [注意力机制](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/attention-mechanism.md) — Transformer 中的核心组件
-- [Hermes Agent](ch03/095-hermes-agent.html) — Agent 系统中的交互控制设计
+- [Hermes Agent](ch03/096-hermes-agent.html) — Agent 系统中的交互控制设计
 
 → [原文存档](http://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651042656&idx=3&sn=8609a7dcae8fb73c7e3aa1d8feea3180&chksm=84e6771eb391fe086132cc6c70341612c864b35fb324661218a9738f88067150f469ee82e78e#rd)
 
 ---
 
-## Ch17.009 Normalizing Trajectory Models
+## Ch17.010 Normalizing Trajectory Models
 
 > 📊 Level ⭐⭐⭐ | 9.0KB | `entities/normalizing-trajectory-models-v2.md`
 
@@ -948,7 +1019,7 @@ NTM 展示了一种有价值的思路：**通过架构设计保留训练目标�
 
 ---
 
-## Ch17.010 Perceptron Mk1 shocks with highly performant video analysis AI model 80-90% cheaper than Anthropic, OpenAI & Google
+## Ch17.011 Perceptron Mk1 shocks with highly performant video analysis AI model 80-90% cheaper than Anthropic, OpenAI & Google
 
 > 📊 Level ⭐⭐⭐ | 8.9KB | `entities/perceptron-mk1-video-analysis-ai.md`
 
@@ -1027,7 +1098,7 @@ Mk1 的定价（$0.15/$1.50 per million tokens）处于「Lite」价格区间，
 
 ---
 
-## Ch17.011 商汤SenseNova U1深度拆解，原生统一架构终结缝合时代
+## Ch17.012 商汤SenseNova U1深度拆解，原生统一架构终结缝合时代
 
 > 📊 Level ⭐⭐⭐ | 8.7KB | `entities/sensnova-u1-deep-dive-jiqizhixin-d8602ded5c51.md`
 
@@ -1150,7 +1221,7 @@ NEO-Unify 的成功验证了"原生统一"路线的可行性，为多模态大�
 
 ---
 
-## Ch17.012 Google's Gemini Omni video model surfaces ahead of I/O debut
+## Ch17.013 Google's Gemini Omni video model surfaces ahead of I/O debut
 
 > 📊 Level ⭐⭐⭐ | 8.7KB | `entities/googles-gemini-omni-video-model-surfaces-ahead-of-io-debut.md`
 
@@ -1207,7 +1278,7 @@ Gemini Omni 被定位为 Agent 的事实表明，视频理解和生成能力正�
 
 ---
 
-## Ch17.013 Netflix 可控 AI 视频编辑：Vera 与 VOID 模型
+## Ch17.014 Netflix 可控 AI 视频编辑：Vera 与 VOID 模型
 
 > 📊 Level ⭐⭐⭐ | 8.4KB | `entities/netflix-controllable-ai-video-editing-vera-void.md`
 
@@ -1304,7 +1375,7 @@ Vera 团队面临的核心挑战是：**没有公开数据集提供高质量的�
 
 ---
 
-## Ch17.014 OlmoEarth v1.1: A more efficient family of Earth observation models
+## Ch17.015 OlmoEarth v1.1: A more efficient family of Earth observation models
 
 > 📊 Level ⭐⭐⭐ | 8.1KB | `entities/olmoearth-v1-1-a-more-efficient-family-of-earth-observation-models.md`
 
@@ -1383,7 +1454,7 @@ v1.1 模型家族实现了「事半功倍」（doing more with less）的效果�
 
 ---
 
-## Ch17.015 MolmoMotion：语言引导的 3D 运动预测模型
+## Ch17.016 MolmoMotion：语言引导的 3D 运动预测模型
 
 > 📊 Level ⭐⭐⭐ | 7.8KB | `entities/molmomotion-language-guided-3d-motion-forecasting.md`
 
@@ -1468,7 +1539,7 @@ MolmoMotion 建立在 Molmo 2 视觉语言模型之上，利用其跨模态理�
 
 ---
 
-## Ch17.016 Normalizing Trajectory Models
+## Ch17.017 Normalizing Trajectory Models
 
 > 📊 Level ⭐⭐⭐ | 6.6KB | `entities/normalizing-trajectory-models.md`
 
@@ -1531,7 +1602,7 @@ Consistency Models（CM）通过强制不同 t 时刻的输出与 t=0 的一致�
 
 ---
 
-## Ch17.017 FLAT: Feedforward Latent Triangle Splatting
+## Ch17.018 FLAT: Feedforward Latent Triangle Splatting
 
 > 📊 Level ⭐⭐⭐ | 6.5KB | `entities/flat-feedforward-latent-triangle-splatting.md`
 
@@ -1649,7 +1720,7 @@ FLAT 并非完全取代 3DGS，而是解决其特定弱点：
 
 ---
 
-## Ch17.018 Multimodal AI for Searchable Aerial Imagery at Scale
+## Ch17.019 Multimodal AI for Searchable Aerial Imagery at Scale
 
 > 📊 Level ⭐⭐⭐ | 6.1KB | `entities/multimodal-ai-searchable-aerial-imagery-aws.md`
 
@@ -1734,7 +1805,7 @@ AWS GenAIIC 与 Vexcel 的合作模式值得借鉴：先建评估框架（基于
 
 ---
 
-## Ch17.019 Moebius: 0.2B Lightweight Image Inpainting with 10B-Level Performance
+## Ch17.020 Moebius: 0.2B Lightweight Image Inpainting with 10B-Level Performance
 
 > 📊 Level ⭐⭐⭐ | 5.9KB | `entities/moebius.md`
 
@@ -1802,7 +1873,7 @@ Moebius 的工作与当前模型压缩领域的多个方向形成呼应：
 - **结构化剪枝**：LλMI 的设计思路类似对注意力机制的结构性重构
 - **稀疏化**：Moebius 证明了极端参数压缩（<2%）在任务特化场景下完全可行
 
-这与 [模型规模推演](ch01/602-model-size-scaling-in-2023-2031.html) 中关于 sparsity 作为参数放大器的讨论形成有趣对比——Moebius 走的是另一条路：不是增加总参数并稀疏化，而是直接在架构层面大幅压缩。
+这与 [模型规模推演](ch01/741-model-size-scaling-in-2023-2031.html) 中关于 sparsity 作为参数放大器的讨论形成有趣对比——Moebius 走的是另一条路：不是增加总参数并稀疏化，而是直接在架构层面大幅压缩。
 
 ## 实践启示
 
@@ -1813,7 +1884,7 @@ Moebius 的工作与当前模型压缩领域的多个方向形成呼应：
 
 ## 相关实体
 
-- [模型规模推演](ch01/602-model-size-scaling-in-2023-2031.html) — 模型大小与硬件约束的系统分析
+- [模型规模推演](ch01/741-model-size-scaling-in-2023-2031.html) — 模型大小与硬件约束的系统分析
 - [知识代理超越前沿模型](https://github.com/QianJinGuo/wiki-public/blob/main/entities/knowledge-agents-beat-frontier-models.md) — 小模型+领域知识超越大模型的另一范式
 - 蒸馏、剪枝、量化等模型压缩技术是 Moebius 的理论背景
 
@@ -1821,7 +1892,7 @@ Moebius 的工作与当前模型压缩领域的多个方向形成呼应：
 
 ---
 
-## Ch17.020 Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation
+## Ch17.021 Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation
 
 > 📊 Level ⭐⭐⭐ | 5.7KB | `entities/fine-tuning-nvidia-cosmos-predict-2-5-with-lora-dora-for-robot-video-generation.md`
 
@@ -1864,7 +1935,7 @@ Cosmos Predict 2.5 采用 rectified flow 而非 DDPM 或 Flow Matching。核心�
 
 ---
 
-## Ch17.021 LiteFrame: Efficient Vision Encoders Unlock Frame Scaling in Video LLMs
+## Ch17.022 LiteFrame: Efficient Vision Encoders Unlock Frame Scaling in Video LLMs
 
 > 📊 Level ⭐⭐⭐ | 5.2KB | `entities/liteframe-efficient-vision-encoders.md`
 
@@ -1907,9 +1978,9 @@ LiteFrame 的研究来自 Google DeepMind 和首尔国立大学，其方法论�
 
 ---
 
-## Ch17.022 Stable Audio 3.0 开源音频生成模型
+## Ch17.023 Stable Audio 3.0 开源音频生成模型
 
-> 📊 Level ⭐⭐⭐ | 5.2KB | `entities/stable-audio-3.md`
+> 📊 Level ⭐⭐⭐ | 5.1KB | `entities/stable-audio-3.md`
 
 ## 核心要点
 
@@ -1931,7 +2002,6 @@ LiteFrame 的研究来自 Google DeepMind 和首尔国立大学，其方法论�
 
 ## 相关实体
 - [How To Build Audio Transcription Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-to-build-audio-transcription-agent.md)
-- [Helloworldmedia.Notion Self Filming Guide By Hello World Media 2F60Dfa5E2E180Cfa](https://github.com/QianJinGuo/wiki-public/blob/main/entities/helloworldmedia.notion-self-filming-guide-by-hello-world-media-2f60dfa5e2e180cfa.md)
 - [Helloworldmedia.Notion Self Filming Guide By Hello World Media 2F60Dfa5E2E180Cfa](https://github.com/QianJinGuo/wiki-public/blob/main/entities/helloworldmedia.notion-self-filming-guide-by-hello-world-media-2f60dfa5e2e180cfa.md)
 - [Ntm Normalizing Trajectory Models](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ntm-normalizing-trajectory-models.md)
 - [Nvidia Gamma World Multi Agent World Model](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-gamma-world-multi-agent-world-model.md)
@@ -1964,7 +2034,7 @@ Stability AI 还首次发布了 LoRa 训练的官方文档，这延续了图像�
 
 ---
 
-## Ch17.023 Xiaomi Dasheng — 通用声音基座模型 5 阶段工程实践
+## Ch17.024 Xiaomi Dasheng — 通用声音基座模型 5 阶段工程实践
 
 > 📊 Level ⭐⭐⭐⭐ | 17.2KB | `entities/xiaomi-dasheng-audio-foundation-model-2026.md`
 
@@ -2246,7 +2316,7 @@ DashengTokenizer 通过**冻结语义特征 + 仅注入声学信息**，证明**
 
 ---
 
-## Ch17.024 Self-Filming Guide by Hello World Media
+## Ch17.025 Self-Filming Guide by Hello World Media
 
 > 📊 Level ⭐⭐⭐⭐ | 11.6KB | `entities/helloworldmedia.notion-self-filming-guide-by-hello-world-media-2f60dfa5e2e180cfa.md`
 
@@ -2375,7 +2445,7 @@ Log 录制在专业影视制作中是标准化流程，但在消费级内容中�
 
 ---
 
-## Ch17.025 Normalizing Trajectory Models
+## Ch17.026 Normalizing Trajectory Models
 
 > 📊 Level ⭐⭐⭐⭐ | 10.0KB | `entities/ntm-normalizing-trajectory-models.md`
 
@@ -2462,7 +2532,7 @@ NTM 的重要性不仅在于性能提升，更在于它揭示了扩散模型少�
 
 ---
 
-## Ch17.026 豆包 Seed 2.0 Lite — Agent 前置多模态感官层
+## Ch17.027 豆包 Seed 2.0 Lite — Agent 前置多模态感官层
 
 > 📊 Level ⭐⭐⭐⭐ | 8.2KB | `entities/doubao-seed-2-lite.md`
 

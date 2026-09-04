@@ -333,10 +333,10 @@ ConardLi 的实践经验揭示了多智能体团队从"安装了什么"到"能�
 → [原文存档](https://mp.weixin.qq.com/s/RpR14rInw0ZWh4PFLPD1QA)
 
 ## 相关实体
-- [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](ch04/392-openclaw-multi-agent-team-practice-v2.html)
+- [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](ch04/425-openclaw-multi-agent-team-practice-v2.html)
 - [基于 Amazon EKS 和 Graviton 构建多租户 AI Agent 平台：OpenClaw on Kubernetes 实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-multi-tenant-ai-agent-on-eks-graviton-openclaw-k8s-practice.md)
 - [Multi-Agent 架构在零售供应链运营中的实践：贯穿数据、洞察与行动 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/multi-agent-architecture-retail-practice.md)
-- [你不知道的 Agent 原理架构与工程实践](ch04/193-agent-principle-architecture-engineering-practice.html)
+- [你不知道的 Agent 原理架构与工程实践](ch04/223-agent-principle-architecture-engineering-practice.html)
 - [Agent 原理、架构与工程实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-engineering-principles-architecture-practice.md)
 - [OpenCLAW 完全指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-comprehensive-guide.md)
 
@@ -344,7 +344,7 @@ ConardLi 的实践经验揭示了多智能体团队从"安装了什么"到"能�
 
 ## Ch08.005 Scalable voice agent design with Amazon Nova Sonic: multi-agent, tools, and session segmentation
 
-> 📊 Level ⭐⭐⭐ | 12.1KB | `entities/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session.md`
+> 📊 Level ⭐⭐⭐ | 11.9KB | `entities/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session.md`
 
 > 来源：[原文存档](https://aws.amazon.com/blogs/machine-learning/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session-segmentation/)
 
@@ -361,7 +361,6 @@ ConardLi 的实践经验揭示了多智能体团队从"安装了什么"到"能�
 - [上下文隔离](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-isolation.md)
 - [Agentium — 从零实现 Agent 系统的开源框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentium-agent-framework.md)
 - [Owner-Worker-Verifier 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/owner-worker-verifier-architecture.md)
-- [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [Agent 原理、架构与工程实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-engineering-principles-architecture-practice.md)
 
 - [livekit agents：给大模型接上麦克风，没你想的那么简单](https://github.com/QianJinGuo/wiki-public/blob/main/entities/livekit-agents-voice-ai-streaming-cascade-interruption-detection.md)
@@ -435,7 +434,7 @@ Nova Sonic 通过 AgentCore Gateway 直接调用 MCP 服务器上的工具，无
 
 ## Ch08.006 Thousand Token Wood v2: Multi-Model Heterogeneous Agent Council
 
-> 📊 Level ⭐⭐⭐ | 10.6KB | `entities/thousand-token-wood-sim-v2-hackathon.md`
+> 📊 Level ⭐⭐⭐ | 10.5KB | `entities/thousand-token-wood-sim-v2-hackathon.md`
 
 # Thousand Token Wood v2: Multi-Model Heterogeneous Agent Council
 
@@ -573,9 +572,8 @@ AI 的最大价值可能不在通用场景而在你领域的特定痛点——�
 ## 相关实体
 - [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](https://github.com/QianJinGuo/wiki-public/blob/main/entities/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session.md)
-- [Factory Mission Multi Agent Architecture](ch01/534-factory-mission-multi-agent-architecture.html)
-- [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
-- [Openclaw Multi Agent Team Practice V2](ch04/392-openclaw-multi-agent-team-practice-v2.html)
+- [Factory Mission Multi Agent Architecture](ch01/672-factory-mission-multi-agent-architecture.html)
+- [Openclaw Multi Agent Team Practice V2](ch04/425-openclaw-multi-agent-team-practice-v2.html)
 
 ## 原文链接
 
@@ -1062,10 +1060,10 @@ Symphony 把 skill 当作"系统资产"来管理，而不只是提示词里附�
 
 ## 相关实体
 - [Agent Development Crawl Walk Run Crewai Iterative](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-development-crawl-walk-run-crewai-iterative.md)
-- [Agent Orchestration](ch01/102-agent-orchestration.html)（AWS — 多 Agent 编排对照）
+- [Agent Orchestration](ch04/202-agent-orchestration.html)（AWS — 多 Agent 编排对照）
 - [Meta Skill Skill Orchestration Opensquilla Jay](https://github.com/QianJinGuo/wiki-public/blob/main/entities/meta-skill-skill-orchestration-opensquilla-jay.md)（笨小葱 — 单 Skill 编排对照）
 - [Ai Agent Tool Count Trap](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-tool-count-trap.md)（execute_code 算子的极简设计同源思想）
-- [Agentic Design System From Chatbot To Orchestration](ch01/005-agentic-design-system-from-chatbot-to-orchestration.html)
+- [Agentic Design System From Chatbot To Orchestration](ch01/007-agentic-design-system-from-chatbot-to-orchestration.html)
 
 ## 3rd Source 原文存档
 → [openJiuwen 开源 Jiuwen Symphony 技能编排与分发系统 — CSDN 2026-06-17](https://mp.weixin.qq.com/s/l7219b4sFVsrxzMFZwiv-Q)
@@ -1117,7 +1115,7 @@ Language models forget the moment they finish replying. Memory is everything the
 > [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-model-research-latest-directions.md)
 
 - [memory agent systems cobanov](https://github.com/QianJinGuo/wiki-public/blob/main/entities/memory-agent-systems-cobanov.md)
-- [AI Agent 记忆系统架构](ch04/117-how-ai-agent-memory-works.html)
+- [AI Agent 记忆系统架构](ch04/143-how-ai-agent-memory-works.html)
 - [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学](https://github.com/QianJinGuo/wiki-public/blob/main/entities/when-ai-agents-learn-to-forget-amazon-bedrock-agentcore-memory-philosophy.md)
 - [Hermes Agent 记忆系统 vs OpenClaw 记忆观](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-memory-system.md)
 - [深度拆解 Hermes Agent 记忆系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-memory-system-openclaw-comparison.md)
@@ -1293,7 +1291,7 @@ Grab 的多 Agent 系统接入数据库和代码生成能力，存在真实风�
 ## 相关实体
 - [Baixing Ontoz Enterprise Ontology Multi Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/baixing-ontoz-enterprise-ontology-multi-agent.md)
 - [Dipg Ant Insurance Host Research Verify Offline Closed Loop](https://github.com/QianJinGuo/wiki-public/blob/main/entities/dipg-ant-insurance-host-research-verify-offline-closed-loop.md)
-- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/096-building-ai-agents-for-business-support-using-amazon-bedrock.html)
+- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/122-building-ai-agents-for-business-support-using-amazon-bedrock.html)
 - [Vercel Com How Superset Built The Ide For Ai Agents On Vercel](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vercel-com-how-superset-built-the-ide-for-ai-agents-on-vercel.md)
 - [Low Code Api Integration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/low-code-api-integration.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/multi-agent-coordination.md)
@@ -1510,7 +1508,7 @@ description 不是注释，是路由信号。写得含糊，路由就含糊；�
 >- [CLI、MCP、API 选型：Agent 接入层决策指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cli-mcp-sdk-agent-tool-selection.md)
 
 - [OpenClaw 多智能体团队搭建实战经验](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-multi-agent-team-practice.md)
-- [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](ch04/392-openclaw-multi-agent-team-practice-v2.html)
+- [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](ch04/425-openclaw-multi-agent-team-practice-v2.html)
 - [MiniMax Agent Team: Mavis (Owner-Worker-Verifier)](https://github.com/QianJinGuo/wiki-public/blob/main/entities/minimax-agent-team-mavis.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/wiki-master-map.md)
 
@@ -1594,11 +1592,11 @@ Warp 起家是「最好用的现代终端」，现在通过 Oz 把战线推到�
 - 终端是开发者每天都开的入口
 - 从终端 → 终端里集成 Agent → 多个 Agent 协作需要 orchestration → 自然演化到云端控制平面
 
-对比：Cursor 从编辑器切入，Replit 从云开发环境切入，[AgentCore](ch04/338-agentcore-managed-harness.html) 从云厂商基础设施切入——四条路径都在收敛到同一个目标（**企业级 Agent 控制平面**），但起点完全不同。Warp 的路径有「终端无关于 IDE」的优势，可以兼容 VS Code、Cursor、JetBrains 的用户。
+对比：Cursor 从编辑器切入，Replit 从云开发环境切入，[AgentCore](ch04/371-agentcore-managed-harness.html) 从云厂商基础设施切入——四条路径都在收敛到同一个目标（**企业级 Agent 控制平面**），但起点完全不同。Warp 的路径有「终端无关于 IDE」的优势，可以兼容 VS Code、Cursor、JetBrains 的用户。
 
 ### 与 AgentCore 的微妙差异
 
-Oz 和 AWS [AgentCore](ch04/338-agentcore-managed-harness.html) 在功能列表上有大量重叠，但定位有微妙不同：
+Oz 和 AWS [AgentCore](ch04/371-agentcore-managed-harness.html) 在功能列表上有大量重叠，但定位有微妙不同：
 
 | 维度 | Oz | AgentCore |
 |---|---|---|
@@ -1624,9 +1622,9 @@ Oz 和 AWS [AgentCore](ch04/338-agentcore-managed-harness.html) 在功能列表�
 ## 相关实体
 
 - [Agentcore Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentcore-harness.md) — AgentCore Harness 综述
-- [Agentcore Managed Harness](ch04/338-agentcore-managed-harness.html) — Managed Harness 定位
+- [Agentcore Managed Harness](ch04/371-agentcore-managed-harness.html) — Managed Harness 定位
 - [Agent Harness Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture.md) — Agent Harness 架构
-- [Agent Harnesses Are Dead Long Live Agent Harnesses](ch04/181-agent-harnesses-are-dead-long-live-agent-harnesses.html) — Harness 演进观察
+- [Agent Harnesses Are Dead Long Live Agent Harnesses](ch04/210-agent-harnesses-are-dead-long-live-agent-harnesses.html) — Harness 演进观察
 - [Agent Memory Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture.md) — Agent Memory 架构综述
 - [57U6Xekcgtvkqxnnqg9Djq](https://github.com/QianJinGuo/wiki-public/blob/main/entities/57u6xekcgtvkqxnnqg9djq.md) — Obsidian + Claude Code 集成（个人版的跨 harness 记忆）
 - [Agent Orchestration Patterns](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-orchestration-patterns.md) — Agent 编排模式
@@ -1740,7 +1738,7 @@ Oz 和 AWS [AgentCore](ch04/338-agentcore-managed-harness.html) 在功能列表�
 ## 相关对照
 - [Agent Skills vs Coze/Dify/n8n](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skills-vs-coze-dify-n8n-lowcode-yexiaocha.md)
 - [字节 Trae Harness 指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/bytedance-trae-harness-engineering-guide.md)
-- [Meta Skill](ch07/045-meta-skill.html) —— "Skill 的 Skill"（OpenSquilla 抽象层）
+- [Meta Skill](ch07/048-meta-skill.html) —— "Skill 的 Skill"（OpenSquilla 抽象层）
 - [SkillOpt](ch05/058-skillopt.html) —— 训练 Skill 文档（与 Coze 3.0 的 Skill 包机制不同）
 
 ## 深度分析
@@ -2206,7 +2204,7 @@ CLAUDE.md 里写了但常被漏的规则 → 创建 workflow，每条规则对�
 
 ## 相关实体
 
-- [Agent Orchestration](ch01/102-agent-orchestration.html) — 多 Agent 编排的控制平面、状态管理、human-in-the-loop 审批
+- [Agent Orchestration](ch04/202-agent-orchestration.html) — 多 Agent 编排的控制平面、状态管理、human-in-the-loop 审批
 - [四种 Sub Agent 模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/four-sub-agent-patterns.md) — 内联工具/Fan-Out/Agent Pool/Teams 的控制粒度与状态保留对比
 - [Sub-Agent vs Agent Team 选型](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sub-agent-vs-agent-team-selection.md) — 上下文边界设计准则与五种编排原语
 - [Claude Code 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-architecture.md) — Claude Code 整体架构设计
@@ -3041,6 +3039,6 @@ Agent 间交接时常见错误：把完整上下文塞给下一个 Agent。
 
 → [原文存档](https://mp.weixin.qq.com/s/TIL7o92f71DsPPLWT4_37A)
 
-- [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](ch04/392-openclaw-multi-agent-team-practice-v2.html)
+- [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](ch04/425-openclaw-multi-agent-team-practice-v2.html)
 
 ---

@@ -1,12 +1,12 @@
 # 参考文献
-> 本书基于 **2033** 篇编撰实体，覆盖 **363** 个来源站点。
+> 本书基于 **2252** 篇编撰实体，覆盖 **363** 个来源站点。
 
 ---
 ## 主要来源
 | 来源 | 文章数 |
 |---|---|
-| mp.weixin.qq.com | 1608 |
-| aws.amazon.com | 378 |
+| mp.weixin.qq.com | 1609 |
+| aws.amazon.com | 379 |
 | huggingface.co | 35 |
 | www.interconnects.ai | 35 |
 | www.oneusefulthing.org | 23 |
@@ -37,4 +37,4 @@
 | blog.google | 5 |
 
 ---
-> 共 363 个来源，2033 篇编撰实体。
+> 共 363 个来源，2252 篇编撰实体。

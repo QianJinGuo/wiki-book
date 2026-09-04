@@ -433,12 +433,12 @@ Amodei 政策对 AI 从业者的启示：
 
 ## Ch20.004 GitLab employees are the latest to face layoffs limbo. Read the CEO's memo about restructuring 'openly.
 
-> 📊 Level ⭐⭐⭐ | 13.1KB | `entities/gitlab-layoffs-memo-2026-5.md`
+> 📊 Level ⭐⭐⭐ | 13.0KB | `entities/gitlab-layoffs-memo-2026-5.md`
 
 > -> [GitLab employees are the latest to face layoffs limbo. Read the CEO's memo about restructuring 'openly.'](https://www.businessinsider.com/gitlab-layoffs-memo-2026-5)
 ## 相关实体
 
-- [iii.dev](ch01/559-iii-dev.html)
+- [iii.dev](ch01/698-iii-dev.html)
 
 ## 核心要点
 - **裁员规模**：未公布具体人数，截至 2026 年 1 月公司有 2,580 名员工
@@ -539,7 +539,6 @@ Bill Staples 提供了一个独特的市场视角：去年开发者平台市场�
 - [Gitlab 14Pct Layoff Agent Platform Ai 2026Q1](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gitlab-14pct-layoff-agent-platform-ai-2026q1.md)
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-phishing-attacks-are-on-the-rise-are-you-prepared-bitward.md)
 - [Ai Agents Inside Perimeter Hackernews](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agents-inside-perimeter-hackernews.md)
-- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-phishing-attacks-are-on-the-rise-are-you-prepared-bitward.md)
 - [Principals Ai Education](https://github.com/QianJinGuo/wiki-public/blob/main/entities/principals-ai-education.md)
 
 ---
@@ -632,9 +631,9 @@ Hugging Face + NVIDIA NIM 双渠道部署反映了当前企业 AI 落地的两�
 ## 相关实体
 - [Nvidia Nemotron 3 Agents Rag Voice Safety](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-nemotron-3-agents-rag-voice-safety.md)
 - [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-nemotron-3-ultra-sagemaker-jumpstart-moe-agentic.md)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/049-nvidia-secure-local-agent-nemoclaw-openclaw.html)
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/065-nvidia-secure-local-agent-nemoclaw-openclaw.html)
 - [Fine Tuning Cosmos](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tuning-cosmos.md)
-- [Tokenspeed Agentic Inference Engine](ch04/299-tokenspeed-agentic-inference-engine.html)
+- [Tokenspeed Agentic Inference Engine](ch04/331-tokenspeed-agentic-inference-engine.html)
 
 - [How To Automate Ai Model Documentation With The Nvidia Mcg T 806Efb](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-to-automate-ai-model-documentation-with-the-nvidia-mcg-t-806efb.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
@@ -1125,7 +1124,7 @@ Evaluator Gap 的核心洞察是"流利不等于胜任"——这对企业级 AI 
 
 ## Ch20.011 Token 经济学与 AI 效率
 
-> 📊 Level ⭐⭐⭐⭐ | 11.9KB | `entities/token-economics-ai-efficiency.md`
+> 📊 Level ⭐⭐⭐⭐ | 11.8KB | `entities/token-economics-ai-efficiency.md`
 
 ## 核心命题
 AI 上半场卷"能不能用"，下半场卷"用得值不值"。当模型可用性不再稀缺，焦点从智力上限转向 Token 效率（Token Efficiency = AI 时代的投入产出比）。Token 经济学的核心问题：每消耗一个 Token 能创造多大的价值？
@@ -1253,7 +1252,6 @@ Steve Yegge 为游戏项目开 12 个订阅，按真实 token 价格折算每月
 ## 相关实体
 - [Improving token efficiency in GitHub Agentic Workflows](https://github.com/QianJinGuo/wiki-public/blob/main/entities/github-token-efficiency-agentic-workflows.md)
 - [Token Efficiency](https://github.com/QianJinGuo/wiki-public/blob/main/entities/github-agentic-token-efficiency.md)
-- [Improving Token Efficiency in GitHub Agentic Workflows — GitHub 内部 Agent 工作流 Token 优化实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/github-agentic-token-efficiency.md)
 - [柚漫剧 AI 全流程提效拆解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yumanju-ai-full-flow-efficiency.md)
 
 ---
@@ -1268,7 +1266,7 @@ Steve Yegge 为游戏项目开 12 个订阅，按真实 token 价格折算每月
 Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反驳 [Karpathy 提出的 vibe coding 概念](https://entities/karpathy-vibe-coding-to-agentic-engineering.md) 在前端的适用性：**代码能编译 ≠ 设计完成**。这条边界划清后，AI 工具在前端赛道会进一步分化。
 
 ## 相关实体
-- [Elena Progressive Web Components](ch03/065-elena-progressive-web-components.html)
+- [Elena Progressive Web Components](ch03/066-elena-progressive-web-components.html)
 
 → [原文存档](https://mp.weixin.qq.com/s/4_9q9TrkVyE5a4jCfTrNgg)
 
@@ -1324,7 +1322,7 @@ Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反�
 - [Karpathy Vibe Coding](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-to-agentic-engineering.md) —— Karpathy 原始概念出处
 - [Willison Vibe Coding Convergence](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vibe-coding-agentic-engineering-convergence-simon-willison.md) —— Willison 的同主题回应
 - [Agent Skill 编写指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing-guide.md) —— 通用 skill 格式
-- [Agentic Design System 演化](ch01/005-agentic-design-system-from-chatbot-to-orchestration.html)
+- [Agentic Design System 演化](ch01/007-agentic-design-system-from-chatbot-to-orchestration.html)
 - → [原文存档](https://mp.weixin.qq.com/s/4_9q9TrkVyE5a4jCfTrNgg)
 
 ## 深度分析
@@ -1436,7 +1434,7 @@ Token 本质上是 AI 智能的计量单位。当 Token 价格持续下降（遵
 
 - 模型路由
 - AI 定价策略
-- [Karpathy: Vibe Coding 到 Agentic Engineering](ch04/106-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy: Vibe Coding 到 Agentic Engineering](ch04/332-karpathy-vibe-coding-agentic-engineering.html)
 - [Hermes Agent 自进化机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-tools-research.md)
 
 ---

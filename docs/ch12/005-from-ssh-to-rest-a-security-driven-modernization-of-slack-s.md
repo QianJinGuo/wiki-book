@@ -69,7 +69,7 @@ REST 架构不只解决当前问题，更解锁了未来三条关键路径：
 - [Wetesteddeepseekv4Proandflashagainstclau](https://github.com/QianJinGuo/wiki-public/blob/main/entities/wetesteddeepseekv4proandflashagainstclau.md)
 - [Entrypointhijacking](https://github.com/QianJinGuo/wiki-public/blob/main/entities/entrypointhijacking.md)
 - [Affirmmapsroadto100Bgmvwithcardaicommerc](https://github.com/QianJinGuo/wiki-public/blob/main/entities/affirmmapsroadto100bgmvwithcardaicommerc.md)
-- [Why Internally Built Ai Fails Fund Accounting Audits](../ch01/049-why-internally-built-ai-fails-fund-accounting-audits.html)
+- [Why Internally Built Ai Fails Fund Accounting Audits](../ch01/060-why-internally-built-ai-fails-fund-accounting-audits.html)
 - Senatorsquerycreditbureausonbnpl
 
 - [Cpanel Whm Patch 3 New Vulnerabilities](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cpanel-whm-patch-3-new-vulnerabilities.md)
@@ -80,7 +80,7 @@ REST 架构不只解决当前问题，更解锁了未来三条关键路径：
 - [Youcom Download The Guide Why Api Latency Is A Misleading Metric](https://github.com/QianJinGuo/wiki-public/blob/main/entities/youcom-download-the-guide-why-api-latency-is-a-misleading-metric.md)
 - [818662](https://github.com/QianJinGuo/wiki-public/blob/main/entities/818662.md)
 - [2026 04 15](https://github.com/QianJinGuo/wiki-public/blob/main/entities/2026-04-15.md)
-- [What My Privacy And Security Stack Actually Looks Like](071-what-my-privacy-and-security-stack-actually-looks-like.html)
+- [What My Privacy And Security Stack Actually Looks Like](078-what-my-privacy-and-security-stack-actually-looks-like.html)
 - [Ai Traffic Cyberthreat Benchmark 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-traffic-cyberthreat-benchmark-2026.md)
 - [Device Code Phishing Forensics What We Learned From Bec Investigations In The Wi](https://github.com/QianJinGuo/wiki-public/blob/main/entities/device-code-phishing-forensics-what-we-learned-from-bec-investigations-in-the-wi.md)
 
