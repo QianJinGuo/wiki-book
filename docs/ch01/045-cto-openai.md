@@ -14,7 +14,7 @@
 本文报道 2026 年 OpenAI 内部权力斗争公开化的关键庭审过程，涉及 Musk 对 OpenAI 改组的诉讼以及公司内部高管矛盾的公开化。来源为新智元（量子位公众号），属于科技媒体对公开庭审事件的报道性文章。
 
 ## 相关实体
-- [Jury Dismisses All Claims In Elon Musk S Lawsuit Against Ope](587-jury-dismisses-all-claims-in-elon-musk-s-lawsuit-against-ope.html)
+- [Jury Dismisses All Claims In Elon Musk S Lawsuit Against Ope](522-jury-dismisses-all-claims-in-elon-musk-s-lawsuit-against-ope.html)
 - "奥特曼最险一战前女cto当庭翻脸openai权斗彻底打到台前"
 - [Openai Buys Ai Consultancy Enterprises](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openai-buys-ai-consultancy-enterprises.md)
 - [Agi Road May Be Wrong From The Start Wang Peng Tencent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agi-road-may-be-wrong-from-the-start-wang-peng-tencent.md)
@@ -32,8 +32,8 @@
 - [Yann Dubois Openai Post Training Matt Turck Interview](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yann-dubois-openai-post-training-matt-turck-interview.md)
 - [Codex Sites Cloudflare Worker One Click Deploy Geekhome](https://github.com/QianJinGuo/wiki-public/blob/main/entities/codex-sites-cloudflare-worker-one-click-deploy-geekhome.md)
 - [Prime Intellect Auto Nanogpt Opus 2930](https://github.com/QianJinGuo/wiki-public/blob/main/entities/prime-intellect-auto-nanogpt-opus-2930.md)
-- [Gpt 5 It Just Does Stuff](640-gpt-5-it-just-does-stuff.html)
-- [Three Years From Gpt 3 To Gemini 3](649-three-years-from-gpt-3-to-gemini-3.html)
+- [Gpt 5 It Just Does Stuff](575-gpt-5-it-just-does-stuff.html)
+- [Three Years From Gpt 3 To Gemini 3](584-three-years-from-gpt-3-to-gemini-3.html)
 - [Openai Symphony Codex Orchestration Linear Control Plane Tutuai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openai-symphony-codex-orchestration-linear-control-plane-tutuai.md)
 - [Xinzhiyuan Openai Tax Ai Self Improving Codex Eval Loop 20260606](https://github.com/QianJinGuo/wiki-public/blob/main/entities/xinzhiyuan-openai-tax-ai-self-improving-codex-eval-loop-20260606.md)
 - [Openai Codex Jasonliu Maxxing Playbook](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openai-codex-jasonliu-maxxing-playbook.md)

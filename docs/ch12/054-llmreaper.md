@@ -14,7 +14,7 @@
 
 ## 相关实体
 - [飞来汇借助 Aws Security Agent 构建跨境支付应用的智能安全防线](https://github.com/QianJinGuo/wiki-public/blob/main/entities/飞来汇借助-aws-security-agent-构建跨境支付应用的智能安全防线.md)
-- [Powering Agentic Ai Sales Strategy With Amazon Bedrock Agent](../ch04/418-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.html)
+- [Powering Agentic Ai Sales Strategy With Amazon Bedrock Agent](../ch04/404-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.html)
 - [Novee Security How To Get A 100 Conference Acceptance Rate The No](https://github.com/QianJinGuo/wiki-public/blob/main/entities/novee-security-how-to-get-a-100-conference-acceptance-rate-the-no.md)
 
 → [原文存档](https://thewhiteh4t.github.io/blog/ai-chat-llmreaper/)

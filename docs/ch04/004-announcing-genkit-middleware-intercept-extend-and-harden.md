@@ -63,7 +63,7 @@ Genkit 明确指出中间件从左到右组合，第一个列出的在最外层�
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-model-research-latest-directions.md)
 
-- [Task Queue Priority and Fairness: Your Task Queue, Your Way](../ch11/138-task-queue-priority-and-fairness-your-task-queue-your-way.html)
+- [Task Queue Priority and Fairness: Your Task Queue, Your Way](../ch11/151-task-queue-priority-and-fairness-your-task-queue-your-way.html)
 - [Task Queue Priority and Fairness: Your Task Queue, your way](https://github.com/QianJinGuo/wiki-public/blob/main/entities/task-queue-priority-and-fairness.md)
 - [Exaforce | Agentic SOC Platform and MDR](https://github.com/QianJinGuo/wiki-public/blob/main/entities/exaforceagenticsocplatformandmdr.md)
 

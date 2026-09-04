@@ -43,7 +43,7 @@ First one was **uniformity**. Every service deploys the same way. No one secretl
 - 引用源：[Notnotp K8S Interviews Non Technical](https://notnotp.com/notes/what-job-interviews-taught-me-about-kubernetes/)
 ## 相关实体
 - [from doer to director: the ai mindset shift](026-from-doer-to-director-the-ai-mindset-shift.html)
-- [why internally-built ai fails fund accounting audits](060-why-internally-built-ai-fails-fund-accounting-audits.html)
+- [why internally-built ai fails fund accounting audits](509-why-internally-built-ai-fails-fund-accounting-audits.html)
 - [back up and restore your amazon eks cluster resources using](https://github.com/QianJinGuo/wiki-public/blob/main/entities/back-up-and-restore-your-amazon-eks-cluster-resources-using-velero-amazon-web-se.md)
 
 ---

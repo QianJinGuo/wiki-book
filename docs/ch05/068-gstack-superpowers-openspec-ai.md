@@ -61,7 +61,7 @@ TDD 铁律（先写失败测试再写代码）作为 skill 文件规则自动执
 - [使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？](https://github.com/QianJinGuo/wiki-public/blob/main/entities/使用-agent-skills-做知识库检索能比传统-rag-效果更好吗.md)
 - [Claude Code 之父最新访谈：编程已经结束、harness 将消失、Claude Code 将只有 100 行代码、loop 才是未来](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-之父最新访谈编程已经结束harness-将消失claude-code-将只有-100-行代码loop-才是未来.md)
 - [Claude Code Agent 工程设计](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-agent-engineering.md)
-- [你不知道的 Agent 原理架构与工程实践](../ch04/223-agent-principle-architecture-engineering-practice.html)
+- [你不知道的 Agent 原理架构与工程实践](../ch04/209-agent-principle-architecture-engineering-practice.html)
 - [Ralph Loop 不够用：长时间 Agent 还缺这 3 件事](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ralph-loop-不够用长时间-agent-还缺这-3-件事.md)
 - [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/coding-harness-engineering.md)
 

@@ -17,7 +17,7 @@ Grafana 披露一起安全事件：一名"未授权方"获取了一个可访问�
 ## 相关实体
 - [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt](https://github.com/QianJinGuo/wiki-public/blob/main/entities/grafana-github-token-breach-led-to-codebase-download-and-extortion-attempt.md)
 - [From Doer To Director The Ai Mindset Shift](026-from-doer-to-director-the-ai-mindset-shift.html)
-- [Microsoft For Startups Microsoft](465-microsoft-for-startups-microsoft.html)
+- [Microsoft For Startups Microsoft](541-microsoft-for-startups-microsoft.html)
 
 → [原文存档](https://www.thehackernews.com/2026/05/grafana-github-token-breach-led-to.html)
 

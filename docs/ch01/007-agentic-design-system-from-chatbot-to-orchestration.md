@@ -5,7 +5,7 @@
 > -> [原文存档](https://learn.thedesignsystem.guide/p/agentic-design-system-from-chatbot)
 
 ## 相关实体
-- [Extreme Co-Design for Agentic Systems Complexity (NVIDIA)](../ch04/119-nvidia-extreme-co-design-agentic-systems.html)
+- [Extreme Co-Design for Agentic Systems Complexity (NVIDIA)](../ch04/105-nvidia-extreme-co-design-agentic-systems.html)
 - [Agentic Systems Extreme Co-Design（NVIDIA 极简协同设计）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-agentic-systems-extreme-co-design.md)
 - [Agentic AI 系统架构与分层模型](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentic-ai-system-architecture-harness-skill-mcp.md)
 - [当 OpenClaw 学会"团队记忆"：一个面向多客户服务的企业级共享记忆系统设计 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-service-enterprise-share-system-design.md)

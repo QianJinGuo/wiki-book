@@ -27,7 +27,7 @@
 5. **分阶段验收，循序渐进**：作者列出的 30 个功能点并非随意排列，而是遵循从基础到高级的递进关系。建议学习者也按此顺序分阶段验收自己的实现成果，每完成一个阶段就进行测试和总结，确保基础稳固后再进入复杂功能。
 
 ## 相关实体
-- [Claude Code Harness Deep Understanding](../ch01/430-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Understanding](../ch01/366-claude-code-harness-deep-understanding.html)
 - [Claude Code Harness Deep Dive Founder Park](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-harness-deep-dive-founder-park.md)
 - [Claude Code Founder Harness 100 Lines](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-founder-harness-100-lines.md)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-claude-code-large-codebase-best-practices-50002a089323.md)

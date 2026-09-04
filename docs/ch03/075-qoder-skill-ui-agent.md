@@ -149,7 +149,7 @@ Skill UI 的案例中，设计方向面板经过了三轮增强（初版→加�
 → [原文存档](https://mp.weixin.qq.com/s/_jPzZKh9kSbVwOj1khMKLg)
 
 ## 相关主题
-- [Claude Design Skill](../ch01/202-claude-design-skill.html) — 设计领域 Skill 的实战案例（420行系统提示词 → Skill）
+- [Claude Design Skill](../ch07/035-claude-design-skill.html) — 设计领域 Skill 的实战案例（420行系统提示词 → Skill）
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/hermes-agent-skill.md) — Hermes Agent 的 Skill 格式
 - [原文存档](https://mp.weixin.qq.com/s/_jPzZKh9kSbVwOj1khMKLg)
 

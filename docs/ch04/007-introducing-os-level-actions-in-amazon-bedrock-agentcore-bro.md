@@ -40,7 +40,7 @@ OS Level Actions 的发布标志着**浏览器自动化能力的最后一次关�
 - [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mcp-serveramazon-bedrock-agentcorequick-suite.md)
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](https://github.com/QianJinGuo/wiki-public/blob/main/entities/real-time-voice-agents-with-stream-vision-agents-and-amazon-nova-2-sonic.md)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](https://github.com/QianJinGuo/wiki-public/blob/main/entities/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazo.md)
-- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/542-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
+- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/478-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki-public/blob/main/entities/航班变更信息智能识别解决方案.md)
 - [Amazon Nova Multimodal Embeddings 制造业智能应用](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-nova-manufacturing-intelligence.md)
 - [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-siloed-data-to-unified-insights-cross-account-athena-access-for-amazon-quic.md)

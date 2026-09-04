@@ -11,7 +11,7 @@
 - [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md)
 - [Tether Launches Developer Grants Program For Local First Ai ](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tether-launches-developer-grants-program-for-local-first-ai-.md)
 - [Anthropic_Cache_Tokenomics](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic_cache_tokenomics.md)
-- [Introducing Claude For Small Business](445-introducing-claude-for-small-business.html)
+- [Introducing Claude For Small Business](381-introducing-claude-for-small-business.html)
 - [Wetesteddeepseekv4Proandflashagainstclau](https://github.com/QianJinGuo/wiki-public/blob/main/entities/wetesteddeepseekv4proandflashagainstclau.md)
 
 → [原文存档](https://www.trevorlasn.com/blog/aeo-geo-vs-seo-google-ai-optimization)

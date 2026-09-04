@@ -87,7 +87,7 @@ CloudWatch 指标和 CloudTrail 日志构成了监控的两条腿。CloudWatch �
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](https://github.com/QianJinGuo/wiki-public/blob/main/entities/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazo.md)
 - [Build financial document processing with Pulse AI and Amazon Bedrock](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-financial-document-processing-with-pulse-ai-and-amazon-bedrock.md)
 - [Build real-time voice streaming applications with Amazon Nova Sonic and WebRTC](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-real-time-voice-streaming-with-amazon-nova-sonic-and-webrtc.md)
-- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/542-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
+- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/478-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki-public/blob/main/entities/航班变更信息智能识别解决方案.md)
 - [Autonomous Vulnerability Hunting with MCP](https://github.com/QianJinGuo/wiki-public/blob/main/entities/bullyingllms.md)
 - [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagemaker.md)

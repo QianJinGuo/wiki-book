@@ -1005,7 +1005,7 @@ NICE 真正的差异化定位是**「理论 + 内涵级 + 排序题」三位一�
 - [AI 评估的三种方法](https://github.com/QianJinGuo/wiki-public/blob/main/entities/evals-three-methods-of-ai-evaluation.md)
 - [Agent Skill 写作评估](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing-evaluation.md)
 - [AI 工作面试与模型评估](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-job-interview-model-evaluation-mollick.md)
-- [Inngest 2026 AI 评测报告](ch01/487-inngest-ai-in-production-the-2026-benchmark-report.html)
+- [Inngest 2026 AI 评测报告](ch01/423-inngest-ai-in-production-the-2026-benchmark-report.html)
 - [Agent Harness 生产设计指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture-design-production-guide.md)
 - [Agent 工程原则](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-engineering-principles-architecture-practice.md)
 - [SkillClaw Hyman 阿里 Skill 框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skillclaw-hyman-nightly-evolution-alibaba.md)

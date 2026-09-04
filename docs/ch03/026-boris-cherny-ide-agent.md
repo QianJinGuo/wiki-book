@@ -105,19 +105,19 @@ Boris 强调的 Loop（长驻 Agent 工作进程）与 Karpathy 谈的"外包思
 ## 相关实体
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](https://github.com/QianJinGuo/wiki-public/blob/main/entities/boris-cherny-新访谈开发工具正在从-ide-变成-agent-控制台-v2.md)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](https://github.com/QianJinGuo/wiki-public/blob/main/entities/boris-cherny-新访谈开发工具正在从-ide-变成-agent-控制台.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/430-claude-code-harness-deep-understanding.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/366-claude-code-harness-deep-understanding.html)
 - [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-20000-char-source-analysis.md)
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-skills-mcp-rules-source-analysis.md)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](https://github.com/QianJinGuo/wiki-public/blob/main/entities/imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群.md)
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-官方技能最佳实践14-个可复用的-agent-skills-设计模式.md)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-source-architecture.md)
-- [Claude Code MCP Server](../ch07/051-claude-code-mcp-server.html)
+- [Claude Code MCP Server](../ch07/048-claude-code-mcp-server.html)
 - [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-window-management.md)
 - [Claude 发布官方报告，承认存在 3 处质量退化问题](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-发布官方报告承认存在-3-处质量退化问题.md)
 - [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code开发负责人-为何放弃rag而选择agentic-search.md)
 - [Harness如何支撑Agent在生产环境稳定运行？](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-production-agent-engineering-deficit.md)
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践-v2.md)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/367-tencent-vibe-coding-to-agentic-engineering-backend.html)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/353-tencent-vibe-coding-to-agentic-engineering-backend.html)
 
 → [原文存档](https://mp.weixin.qq.com/s/iqSixiNP9lxNKg7aVfHFCQ)
 

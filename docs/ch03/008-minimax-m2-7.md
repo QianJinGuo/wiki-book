@@ -13,7 +13,7 @@ Agent Harness覆盖：数据流水线、训练环境、评测基础设施、跨�
 - [从 30 分钟手搓 Agent到 Harness 成为新后端](https://github.com/QianJinGuo/wiki-public/blob/main/entities/从-30-分钟手搓-agent到-harness-成为新后端.md)
 - [Harness Engineering 第三代工程范式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-第三代工程范式.md)
 - [Agentscope Java Harness Framework Enterprise Distributed](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentscope-java-harness-framework-enterprise-distributed.md)
-- [Cursor Harness Model Production Floor](../ch01/355-cursor-harness-model-production-floor.html)
+- [Cursor Harness Model Production Floor](../ch01/291-cursor-harness-model-production-floor.html)
 
 → [原文存档](https://mp.weixin.qq.com/s/Xfsq8YDP7xkOLzbh1HwdjA)
 

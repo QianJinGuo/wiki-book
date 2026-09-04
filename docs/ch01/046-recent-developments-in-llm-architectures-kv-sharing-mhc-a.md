@@ -40,7 +40,7 @@ DeepSeek V4引入两项关键创新：
 - [Recent Developments In Llm Architectures Kv Sharing Mhc And Compressed Attention](https://github.com/QianJinGuo/wiki-public/blob/main/entities/recent-developments-in-llm-architectures-kv-sharing-mhc-and-compressed-attention.md)
 - [Recent Developments In Llm Architectures Jiqizhixin](https://github.com/QianJinGuo/wiki-public/blob/main/entities/recent-developments-in-llm-architectures-jiqizhixin.md)
 - [From Doer To Director The Ai Mindset Shift](026-from-doer-to-director-the-ai-mindset-shift.html)
-- [Microsoft For Startups Microsoft](465-microsoft-for-startups-microsoft.html)
+- [Microsoft For Startups Microsoft](541-microsoft-for-startups-microsoft.html)
 
 → [原文存档](https://magazine.sebastianraschka.com/p/recent-developments-in-llm-architectures)
 

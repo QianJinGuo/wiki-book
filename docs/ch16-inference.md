@@ -2,7 +2,7 @@
 
 > 让模型跑得更快：投机解码、MoE、PD 分离、量化
 
-> 本章收录 **17 篇**实体，按深度递增排列。
+> 本章收录 **16 篇**实体，按深度递增排列。
 
 ---
 
@@ -10,7 +10,7 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐⭐ 工程师 | 需编程基础 | 4 |
+| ⭐⭐ 工程师 | 需编程基础 | 3 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 6 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 5 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 2 |
@@ -290,55 +290,7 @@ Source: [raw archive](https://huggingface.co/blog/torch-mlp-fusion)
 
 ---
 
-## Ch16.004 End-to-end encrypted ML inference with Amazon SageMaker AI and FHE
-
-> 📊 Level ⭐⭐ | 3.1KB | `entities/end-to-end-encrypted-ml-inference-with-amazon-sagemaker-ai-a.md`
-
-# End-to-end encrypted ML inference with Amazon SageMaker AI and FHE
-
-→ [原文存档](https://aws.amazon.com/blogs/machine-learning/end-to-end-encrypted-ml-inference-with-amazon-sagemaker-ai-and-fhe)
-
-## 深度分析
-
-End-to-end encrypted ML inference with Amazon SageMaker AI and FHE基于原文内容的深入分析：
-
-### 核心观点
-
-1. # End-to-end encrypted ML inference with Amazon SageMaker AI and FHE
-2. Machine learning (ML) inference often requires processing sensitive data—medical records, proprietary business information, or personal communications
-3. FHE is a form of encryption that allows encrypted data to be processed in encrypted form without decryption
-4. * **Healthcare** : A health insurance company wants to provide doctors with an ML model that predicts medical procedure outcomes based on diagnostic data
-
-### 技术要点
-
-本文在apple方向提供以下关键技术洞察：
-
-- **技术架构**: 基于apple的设计理念和实现路径
-- **工程挑战**: 实际落地中面临的关键问题和解决思路
-- **行业趋势**: 该领域的发展方向和新兴范式
-
-### 与现有知识体系的关联
-
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
-- [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md)
-
-## 实践启示
-
-1. **工程落地**: 将apple领域的理论转化为可执行方案时，需关注可观测性和可维护性
-2. **技术选型**: 根据实际场景需求选择合适的技术栈，避免过度工程化
-3. **持续迭代**: 建立反馈闭环，通过数据驱动的方式持续优化系统表现
-4. **风险管控**: 在引入新技术时，充分评估其对现有系统稳定性的影响
-
-## 相关实体
-
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/data-infrastructure.md)
-
----
-
-## Ch16.005 vLLM V0→V1 迁移中的 logprob 差异修复
+## Ch16.004 vLLM V0→V1 迁移中的 logprob 差异修复
 
 > 📊 Level ⭐⭐⭐ | 9.4KB | `entities/vllm-v0-to-v1-correctness-before-corrections.md`
 
@@ -416,7 +368,7 @@ vLLM V0→V1 迁移中的 logprob 差异，本质上是 **推理引擎默认行�
 
 ---
 
-## Ch16.006 从 Chroma 换成 Qdrant，我踩了 100 万向量的坑
+## Ch16.005 从 Chroma 换成 Qdrant，我踩了 100 万向量的坑
 
 > 📊 Level ⭐⭐⭐ | 8.2KB | `entities/chroma-to-qdrant-1m-vector-migration.md`
 
@@ -495,7 +447,7 @@ Chroma 的做法是"先搜再过滤"或"先过滤再搜"——无论哪种顺序
 
 ---
 
-## Ch16.007 How to Calculate the Inference Efficiency Ratio
+## Ch16.006 How to Calculate the Inference Efficiency Ratio
 
 > 📊 Level ⭐⭐⭐ | 8.1KB | `entities/how-to-calculate-the-inference-efficiency-ratio.md`
 
@@ -527,7 +479,7 @@ Chroma 的做法是"先搜再过滤"或"先过滤再搜"——无论哪种顺序
 
 ---
 
-## Ch16.008 Unlocking asynchronicity in continuous batching
+## Ch16.007 Unlocking asynchronicity in continuous batching
 
 > 📊 Level ⭐⭐⭐ | 7.2KB | `entities/continuous-async.md`
 
@@ -590,7 +542,7 @@ stream 之间的独立性既是优势也是问题——它们不知道彼此的�
 
 ---
 
-## Ch16.009 vLLM V0 to V1: Correctness Before Corrections in RL
+## Ch16.008 vLLM V0 to V1: Correctness Before Corrections in RL
 
 > 📊 Level ⭐⭐⭐ | 5.1KB | `entities/servicenow-vllm-correctness.md`
 
@@ -628,7 +580,7 @@ vLLM V0 到 V1 是实质性重写，而非增量迭代。ServiceNow AI 的这篇
 
 ---
 
-## Ch16.010 Bonsai Image 4B: 1-bit 和 Ternary 量化
+## Ch16.009 Bonsai Image 4B: 1-bit 和 Ternary 量化
 
 > 📊 Level ⭐⭐⭐ | 5.1KB | `entities/bonsai-image-4b-quantization.md`
 
@@ -694,7 +646,7 @@ Bonsai 同时支持 Apple Silicon（MLX）和 CUDA（Gemlite），对于需要�
 
 ---
 
-## Ch16.011 Apple Siri 私有推理（Private Inference）不私有：三个对抗者都不受加密学保护
+## Ch16.010 Apple Siri 私有推理（Private Inference）不私有：三个对抗者都不受加密学保护
 
 > 📊 Level ⭐⭐⭐⭐ | 16.5KB | `entities/apple-siri-private-inference-lethal-trifecta-matthew-green.md`
 
@@ -854,7 +806,7 @@ Green 的结论是：隐私保护（如果存在）活在法律、政策和商�
 
 ---
 
-## Ch16.012 EAGLE-3 投机解码与 USP 长序列训练优化
+## Ch16.011 EAGLE-3 投机解码与 USP 长序列训练优化
 
 > 📊 Level ⭐⭐⭐⭐ | 14.2KB | `entities/eagle-3-speculative-decoding-optimization.md`
 
@@ -1030,7 +982,7 @@ USP 的"主干 ring + 分支本卡 + 流式融合"设计不只适用于 EAGLE-3�
 
 ---
 
-## Ch16.013 PithTrain：陈天奇 + CMU Flame Center 推出的 agent-native MoE 训练框架（11K Python / 双重效率）
+## Ch16.012 PithTrain：陈天奇 + CMU Flame Center 推出的 agent-native MoE 训练框架（11K Python / 双重效率）
 
 > 📊 Level ⭐⭐⭐⭐ | 12.1KB | `entities/pith-train-agent-native-moe-training-framework.md`
 
@@ -1171,7 +1123,7 @@ bash examples/pretrain_language_model/launch.sh qwen3-30b-a3b
 
 ---
 
-## Ch16.014 具身智能 Sim-to-Real 迁移：主动推理、行为树与内在动机引擎的工程化方案
+## Ch16.013 具身智能 Sim-to-Real 迁移：主动推理、行为树与内在动机引擎的工程化方案
 
 > 📊 Level ⭐⭐⭐⭐ | 9.2KB | `entities/embodied-intelligence-sim-to-real-active-inference-behavior-tree-intrinsic-motivation-chenzhiyan-2026-06-17.md`
 
@@ -1267,7 +1219,7 @@ bash examples/pretrain_language_model/launch.sh qwen3-30b-a3b
 
 ---
 
-## Ch16.015 ServiceNow vLLM V0→V1 正确性修复
+## Ch16.014 ServiceNow vLLM V0→V1 正确性修复
 
 > 📊 Level ⭐⭐⭐⭐ | 8.3KB | `entities/servicenow-vllm-correctness-huggingface.md`
 
@@ -1355,7 +1307,7 @@ ServiceNow 总结的核心工程原则——"先修后端，再谈目标"——�
 
 ---
 
-## Ch16.016 Build real-time voice applications with Amazon SageMaker AI and vLLM
+## Ch16.015 Build real-time voice applications with Amazon SageMaker AI and vLLM
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 21.2KB | `entities/build-real-time-voice-applications-with-amazon-sagemaker-ai.md`
 
@@ -1648,7 +1600,7 @@ SageMaker AI 端点按实例运行时长计费 ：
 
 ---
 
-## Ch16.017 The next generation of speculative decoding: DFlash and Spec V2 - LMSYS Blog
+## Ch16.016 The next generation of speculative decoding: DFlash and Spec V2 - LMSYS Blog
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 11.1KB | `entities/lmsys-dflash-speculative-decoding-2026-06.md`
 

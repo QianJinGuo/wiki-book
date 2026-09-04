@@ -30,7 +30,7 @@ Sim-1的模拟方法值得关注：它结合代码嵌入（code embeddings）、
 ## 相关实体
 - [Code Simulation For Enterprise Engineering Playerz](https://github.com/QianJinGuo/wiki-public/blob/main/entities/code-simulation-for-enterprise-engineering-playerz.md)
 - [Engineering Roles Shift From Developing Code To Ma](https://github.com/QianJinGuo/wiki-public/blob/main/entities/engineering-roles-shift-from-developing-code-to-ma.md)
-- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](612-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.html)
+- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](547-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.html)
 - [Low Code Api Integration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/low-code-api-integration.md)
 - [Www.Cio 4170978 Nearly Every Enterprise Is Investing In Ai But Only 5 Say Their ](https://github.com/QianJinGuo/wiki-public/blob/main/entities/www.cio-4170978-nearly-every-enterprise-is-investing-in-ai-but-only-5-say-their-.md)
 

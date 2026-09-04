@@ -982,7 +982,7 @@ AI 语法润色、翻译辅助、以及认知辅助技术对非母语作者和�
 | 开源 | 部分 | 全部 artifacts 开源 ([GitHub recursive-org](https://github.com/recursive-org/first-steps-toward-automated-ai-research)) |
 | 部署 | Google 内部 | 通用研究基础设施 |
 
-参考 [AlphaEvolve Impact](ch04/071-alphaevolve-impact-deepmind.html) 和 [AlphaEvolve 一周年](https://github.com/QianJinGuo/wiki-public/blob/main/entities/alphaevolve交出一周年炸裂成绩单ai自我改进不再科幻.md) 了解 DeepMind 路线。
+参考 [AlphaEvolve Impact](ch04/065-alphaevolve-impact-deepmind.html) 和 [AlphaEvolve 一周年](https://github.com/QianJinGuo/wiki-public/blob/main/entities/alphaevolve交出一周年炸裂成绩单ai自我改进不再科幻.md) 了解 DeepMind 路线。
 
 ## 深度分析
 
@@ -1024,7 +1024,7 @@ Einsia Navers Lab 的 AI4AI-Bench（arXiv:2608.20318）为"AI 能否设计更好
 ## 引用与延伸阅读
 - **原文存档** → [原文存档](https://www.recursive.com/articles/first-steps-toward-automated-ai-research)
 - **GitHub**：https://github.com/recursive-org/first-steps-toward-automated-ai-research
-- 关联 entity：[Alphaevolve Impact Deepmind](ch04/071-alphaevolve-impact-deepmind.html)、[Agent Self Improvement Six Mechanisms](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-self-improvement-six-mechanisms.md)、[Ai Recursive Self Improvement Nanogpt Prime Intellect](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-recursive-self-improvement-nanogpt-prime-intellect.md)、[Hermes Self Improving Loop Winty](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-self-improving-loop-winty.md)、[Deli Auto Research Skill V2 Continual Learning Self Improvement](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deli-auto-research-skill-v2-continual-learning-self-improvement.md)
+- 关联 entity：[Alphaevolve Impact Deepmind](ch04/065-alphaevolve-impact-deepmind.html)、[Agent Self Improvement Six Mechanisms](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-self-improvement-six-mechanisms.md)、[Ai Recursive Self Improvement Nanogpt Prime Intellect](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-recursive-self-improvement-nanogpt-prime-intellect.md)、[Hermes Self Improving Loop Winty](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-self-improving-loop-winty.md)、[Deli Auto Research Skill V2 Continual Learning Self Improvement](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deli-auto-research-skill-v2-continual-learning-self-improvement.md)
 
 ---
 
@@ -1634,7 +1634,7 @@ Ethan 指出了一个技术收敛点：**视频模型和 LLM 在长上下文管�
 - 与 [Claude Code 动态工作流多 Agent 编排](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-dynamic-workflows-multi-agent-orchestration.md) 互补：AI 编程的 Agent 化 → 视频生成的 Agent 化
 - 与 [Agent Harness Engineering Survey](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-engineering-survey-2026.md) 互补：Harness 在视频 Agent 时代的能力复用
 - 与 [画布 Agent 时代](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-canvas-agent-era-content-creation.md) + [AI 视频工具第三阶段](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-video-tools-third-stage-1779303117.md) 互补：第一手研究人员视角补全产品视角
-- 与 [Foundation Capital agent era 六洞察](ch04/351-foundation-capital-agent-era-six-insights.html) 互补：算力-人才飞轮的微观机制
+- 与 [Foundation Capital agent era 六洞察](ch04/337-foundation-capital-agent-era-six-insights.html) 互补：算力-人才飞轮的微观机制
 
 → [原文存档](https://mp.weixin.qq.com/s/dOKQToqmT5a-CrBLRDMQxA)
 

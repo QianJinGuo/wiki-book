@@ -52,7 +52,7 @@ Decision 808 最值得玩味的不是目标本身，而是它暴露的现状：�
 > [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/moc/cybersecurity-privacy.md)
 
 - [Vietnam domestic cloud](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vietnam-domestic-cloud.md)
-- [Vietnam to develop domestic cloud](../ch11/136-vietnam-to-develop-domestic-cloud.html)
+- [Vietnam to develop domestic cloud](../ch11/129-vietnam-to-develop-domestic-cloud.html)
 - [Vietnam ... government workloads](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-overseas-operators-for-g.md)
 - [Vietnam ... government workloads（完整 slug）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-overseas-operators-for-government-workloads.md)
 - [Sovereign cloud is only possible if you're Chinese or American: Gartner](https://github.com/QianJinGuo/wiki-public/blob/main/entities/5237660-sovereign-cloud-gartner.md)

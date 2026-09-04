@@ -25,7 +25,7 @@
 ## 相关实体
 - [Anthropic Puts Claude Agents On A Meter Across Its](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-puts-claude-agents-on-a-meter-across-its.md)
 - [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-managed-agents-self-hosted-sandbox-mcp-tunnels-enterprise.md)
-- [Claude Managed Agents](../ch04/083-claude-managed-agents.html)
+- [Claude Managed Agents](../ch04/077-claude-managed-agents.html)
 - [Anthropic Claude Managed Agents Platform Launch](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-claude-managed-agents-platform-launch.md)
 - [Anthropic Claude Managed Agents Platform 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-claude-managed-agents-platform-2026.md)
 

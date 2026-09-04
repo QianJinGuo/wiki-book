@@ -228,7 +228,7 @@ SCHEMA.md / index.md / log.md，**这三件套比文件夹重要**。
   - [Karpathy LLM Wiki v2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-llm-wiki-v2-2026.md)（原始方法论）
   - [Karpathy LLM Wiki 第二大脑](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-llm-wiki-second-brain-awkthole.md)
   - [Obsidian 工具概览](https://github.com/QianJinGuo/wiki-public/blob/main/entities/obsidian.md)
-  - [Claude Code Memory Setup (Obsidian + Graphify)](../ch01/555-claude-code-memory-setup-obsidian-graphify.html)
+  - [Claude Code Memory Setup (Obsidian + Graphify)](../ch01/491-claude-code-memory-setup-obsidian-graphify.html)
 - **同 Hermes Agent 生态**：
   - [Hermes Skills + LLM Wiki 越用越懂你](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-skills-llm-wiki-self-improving-knowledge-system.md)（三层互相喂养）
   - [Hermes Agent 自进化机制源码解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-self-evolving.md)

@@ -45,7 +45,7 @@ The solution uses Amazon Quick Flows as the orchestration layer, with a connecti
 
 → 原文存档
 
-- [Gemini 3 5 Frontier Intelligence With Action](729-gemini-3-5-frontier-intelligence-with-action.html)
+- [Gemini 3 5 Frontier Intelligence With Action](664-gemini-3-5-frontier-intelligence-with-action.html)
 ## 相关主题
 
 ---

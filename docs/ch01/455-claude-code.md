@@ -1,87 +1,46 @@
-# Claude Code 设计原则与对照分析
+# 我用 Claude Code 做需求调研，像多了一个产品经理
 
-> 📊 Level ⭐⭐⭐ | 8.8KB | `entities/claude-code-architecture-analysis.md`
+> 📊 Level ⭐⭐⭐ | 7.3KB | `entities/claude-code-demand-research-taosecho.md`
 
-## 五条系统设计原则
-### 1. 先定边界，再开始执行
-在第一轮请求前，尽量把工具面、权限模式、恢复方式、承载宿主这些会影响执行边界的因素先定下来。
+# 我用 Claude Code 做需求调研，像多了一个产品经理
 
-### 2. 把连续运行当状态机，不当函数调用
-把 Agent 的连续运行过程建模成显式状态，并为取消、超时、错误提供恢复路径。
-
-### 3. 把横切复杂度收敛到运行时层
-校验、并发、权限、错误处理、进度流、结果回填这些横切问题收敛在 Tool Runtime。
-
-### 4. 把多 Agent 设计成任务系统
-子 Agent 是带状态、消息回流、后台可见性和回收语义的任务对象。真正难的不是"怎么分工"，而是"怎么把分出去的执行重新收回来"。
-
-### 5. 外部扩展越动态，内部模型越要稳定
-MCP、Skill、Plugin 都可能持续变化，但进入主系统后，必须尽量映射为统一抽象。
-
-## 与 Harness Engineering 的对应关系
-| Claude Code 模块 | 对应 Harness 能力 |
-|---|---|
-| 启动链路 | 编排入口、会话装配、宿主初始化 |
-| REPL / Query Loop | 运行时编排、状态管理、恢复机制 |
-| Tool Runtime | 工具连接、执行语义、结果归一化 |
-| Permission System | 安全控制、授权决策、执行隔离 |
-| Task / 多 Agent | 调度系统、执行体管理、后台任务承载 |
-| Extensibility | 扩展协议治理、外部能力接入 |
-
-## Claude Code、OpenClaw、Hermes 的位置差异
-- **OpenClaw**：用薄抽象把 Agent 跑起来 — 更轻、更薄、更强调显式控制流和工程确定性
-- **Claude Code**：用完整 runtime 把 Agent 跑稳 — 更重、更完整、更强调 runtime 收敛和系统寿命
-- **Hermes**：在跑稳基础上，让 Agent 越跑越强 — Self-Evolving：自动复盘生成 Skill、RL 训练闭环
-
-## 核心启示
-- 复杂度不会消失，只会从 prompt 层外溢到 runtime 层
-- 真正稳定的 Agent，不靠"模型一次答对"，而靠"运行时允许它长期执行、犯错、恢复、继续前进"
-- 多 Agent 的关键不是 prompt 分工设计得多聪明，而是任务系统能不能把执行分出去、跟回来、在失败时重新接住
-→
-
-## 深度分析
-Claude Code 的设计选择揭示了 Agent 系统从 demo 走向生产的关键转折点：**[!summary]当工具数量增长、交互模式复杂化后，模型能力不再是瓶颈，运行时架构成为决定性因素。**
-
-### 从"函数调用"到"状态机"的范式转移
-传统 Agent 框架将连续对话建模为函数调用序列——输入→推理→输出→结束。但 Claude Code 将其重构为显式状态机：每一次交互都是状态转换，支持取消、超时、错误恢复。这意味着 Agent 不是在"回答问题"，而是在"维持一个持续运行的执行上下文"。这一设计直接影响了系统的可靠性和容错能力。
-
-### Tool Runtime 的收敛价值
-Claude Code 将工具的"野生函数"属性转化为"带完整运行时语义的受控对象"——包括结果归一化、错误处理、并发控制、权限校验等横切关注点全部收敛在 Tool Runtime 层，而非散落在业务代码或 prompt 层。这一设计避免了复杂度外溢，使工具扩展不会导致系统不稳定。
-
-### 多 Agent 的本质是任务系统
-多 Agent 协作的难点不在于 prompt 分工设计，而在于**任务系统能否将分出去的执行重新收回来**——包括状态同步、结果汇聚、失败重接、后台可见性。Claude Code 通过统一的 Task 抽象来承载多 Agent 执行体，而非让各 Agent 独立运行后再尝试协调。
-
-### 稳定性来源于内部抽象的收敛
-MCP、Skill、Plugin 这些外部扩展机制可能在持续变化，但 Claude Code 的策略是：进入主系统后必须映射为统一抽象，阻止外部复杂性污染内部模型。这一原则保证了系统可以在外部生态快速迭代的同时维持核心逻辑的稳定。
-
-## 实践启示
-1. **优先投资运行时架构，而非模型选型**：当系统规模扩大后，运行时设计对稳定性的影响远超模型能力差异。
-2. **将横切关注点收敛到 Runtime 层**：权限、校验、并发、错误处理应统一在工具执行层，而非散落在 prompt 或业务代码。
-3. **多 Agent 系统的核心是任务回收机制**：设计时应优先考虑任务分派后的状态同步和结果汇聚能力，而非仅仅关注 prompt 分工。
-4. **外部扩展应经过统一抽象层再接入**：保持内部模型的稳定性是系统长期演化的前提。
-5. **连续运行场景下，状态机模型优于函数调用模型**：显式状态转换和恢复路径是多轮交互系统可靠性的基础。
+我用 Claude Code 做需求调研，像多了一个产品经理
+你做产品调研时，可能也有一套老方法：搜词、看竞品、翻差评、查关键词、问供应商报价，最后凭经验判断。问题是材料越来越多，需求仍然模糊。我最近用 Claude Code 跑了一轮便携支架调研，它最有价值的地方，像一个产品经理坐在旁边追问：谁在买？哪里卡住了？用户愿意为哪个结果付钱？
+你做亚马逊产品调研时，可能也熟悉这套老方法。
+先在 Amazon 搜关键词，看头部竞品的价格带、评分、评论数、主图和五点卖点。再打开 Keepa 看排名和价格走势，用 Helium 10 或 Jungle Scout 补一轮关键词。接着翻评论，摘几条差评，问供应商报价，最后靠经验给一个判断。
 
 ## 相关实体
-- [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-skills-mcp-rules-source-analysis.md)
-- [Claude Code Prompt 提示词体系源码解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-prompt-source-analysis.md)
-- [Claude Code 源码拆解：从启动到多 Agent 扩展层](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-source-architecture.md)
+- [Claude Code Self Repair Hooks Memory Config](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-self-repair-hooks-memory-config.md)
+- [Code Review Graph](https://github.com/QianJinGuo/wiki-public/blob/main/entities/code-review-graph.md)
+- [Claude Code Hackathon Winners 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-hackathon-winners-2026.md)
+- [Claude Code Harness Deep Understanding](366-claude-code-harness-deep-understanding.html)
+- [Claude Code Agent View Huashu](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-agent-view-huashu.md)
 
-- [Claude Code 七大模块详解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-architecture-modules.md)
-- [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-20000-char-source-analysis.md)
-- [Claude Code 可控性：软规则无法变成硬约束](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-governance-soft-rules.md)
-- [Claude Code 架构深度分析](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/claude-code-deep-architecture-analysis.md)
-- [AI Native 时代 —— 研发组织何去何从](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-native-时代-研发组织何去何从.md)
-- [Hermes-Agent Kanban 实测 — 商业 CLI 作为上层 Orchestrator](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-kanban-deep-test.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](430-claude-code-harness-deep-understanding.html)
-- [AutoResearch：多 Agent 自动化软件开发](https://github.com/QianJinGuo/wiki-public/blob/main/entities/autoresearch-multi-agent-software.md)
-- [Agent Harness 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture.md)
-- [Claude Code 源码核心机制详解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-core-internals.md)
-- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-large-codebase-enterprise-deployment.md)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](https://github.com/QianJinGuo/wiki-public/blob/main/entities/boris-cherny-新访谈开发工具正在从-ide-变成-agent-控制台-v2.md)
-- [Harness如何支撑Agent在生产环境稳定运行？](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-production-agent-engineering-deficit.md)
-- [Agent架构关键变化：Harness正在成为新后端](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-architecture-harness-new-backend.md)
-- [Agent 原理、架构与工程实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-engineering-principles-architecture-practice.md)
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/claude-code-complete-guide.md)
+→ [原文存档](https://mp.weixin.qq.com/s/BkJUeZXjMepS5VGkim4hZQ)
+
+## 深度分析
+
+传统产品调研方法的根本局限不在于信息收集不足，而在于信息整理与需求洞察之间存在断层。词频分析能告诉我们"轻便""折叠""稳定性"是热点词，但它无法回答这些词背后的用户动机——为什么用户需要轻便？是背包已经太重，还是需要快速开合以适应咖啡店等座位的紧迫感？同一个词频指向完全不同的产品定义和优先级排序。Claude Code的核心价值不是加速信息收集，而是将散乱的评论、Q&A和竞品卖点还原为以用户情境为锚点的需求链条，这才是从材料到判断缺失的那一环。
+
+俞军产品方法论中的用户价值公式在新场景中展现出强大的解释力：用户价值=新体验-旧体验-替换成本。这个框架的实践价值在于它迫使调研者同时考虑正向收益和迁移摩擦，而不是仅凭功能点就做出产品决策。对于便携支架这类功能性竞品密集的品类，用户价值判断直接决定了主图卖点的选择和样品开发优先序——当评论中"稳定""防滑"反复出现却仍是差评主题时，底线效用未达标的判断比任何词频数据都更值得信赖。
+
+效用分层（底线效用、够用效用、转化效用、惊喜效用）是产品开发资源的优先序框架，但这个框架的前提是正确识别每个功能属于哪一层。案例中便携支架的"稳定性、防滑、角度锁定"被划为底线效用，意味着样品验证必须优先考察这些维度而非功能丰富度。这个判断的价值在于它提供了一种防御机制——防止团队被评论中的亮点词频误导，在底线未达标时过早投入惊喜效用的开发资源。对于功能性产品，底线效用的判断准确度直接决定了退货率和差评率的基线。
+
+六步最小调研路径的设计逻辑本质上是将研究过程流水线化：前端材料收集（关键词、ASIN、评论）标准化以保证样本代表性，中端AI辅助分析标准化以保证推理一致性，后端人工复核标准化以保证判断可控性。这套流程的关键约束在于第五步——用Keepa、Helium10或Jungle Scout复核价格带和关键词入口——这确保了AI的需求判断不被脱离市场定价现实的空想所污染。交易成本分析是这条链路的最后一环，它将产品判断锚定在用户真实决策场景中，而非调研者的主观假设。
+
+Claude Code在调研中的定位本质上是结构化追问引擎而非信息检索工具。它的核心价值不是帮忙找资料，而是强制调研者将模糊的"我感觉这个产品有机会"翻译成"谁在什么场景下因什么具体麻烦愿意为什么结果付钱并担心什么"。这种强制翻译的价值在于它创造了可审计的推理链条——当样品回来验证失败时，调研者可以沿着"情境→效用→用户价值→交易成本→产品判断"的路径回溯定位问题环节，而不是笼统归咎于"调研没做好"。
+
+## 实践启示
+
+在启动任何产品调研项目时，先设计五问框架（谁在买、在什么场景、现在的使用方式哪里麻烦、真正想要哪个结果、下单前最担心什么），并将其作为Claude Code或其他AI工具的提示词基础。这能将调研从词频统计升级为需求链条分析，大幅提升从材料到判断的转化质量。
+
+建立效用分层判断标准并文档化：底线效用是"做差会退货、差评、放弃购买"的功能点，转化效用是"真正影响点击和下单的理由"。在样品开发前先对每个候选功能做效用分层，避免资源错配——特别是避免在底线效用未达标时投入过多资源在惊喜效用上。评论分析应优先验证底线效用是否已被现有竞品解决，这是选品判断的最优先信号。
+
+每次调研输出的不是"这个产品有机会"的结论，而是一张可追溯的完整推理链路图：情境→效用→用户价值→交易成本→产品判断→样品验证。这一链条中的每个环节都必须有明确的证据来源（具体评论片段、Q&A内容、价格带数据），人工复核时逐项验证，而非依赖整体印象做判断。当某个环节证据不足时，应暂停判断并补充收集针对性材料。
+
+AI辅助调研必须配合外部数据校验环节：用Keepa、Helium10、Jungle Scout等工具复核价格带、关键词搜索量和市场进入壁垒。AI对评论和Q&A的语义分析需要与市场数据的定量验证相结合，才能形成靠谱的产品判断。纯AI分析可能找到需求痛点，但如果定价区间不支持利润空间或关键词入口已被头部竞品垄断，这个需求痛点就没有商业价值。
+
+交易成本分析应作为产品判断到样品验证之间的强制桥梁：识别用户下单前需要跨越的具体麻烦（看懂图片、判断尺寸、相信质量、担心退换、比较价格、确认兼容），并将主图设计、详情页文案和产品样品分别对应到这些交易成本的消解上。如果某个交易成本在现有竞品评论区被频繁提及但无人解决，这就是一个潜在的差异化机会——前提是这个问题属于底线效用而非够用效用范畴。
 
 ---
 

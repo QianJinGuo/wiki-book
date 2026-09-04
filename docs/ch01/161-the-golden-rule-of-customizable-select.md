@@ -34,7 +34,7 @@ When you remember to follow the rule, you’ll improve the user experience, supp
 ## 相关实体
 - [tokenomics: the 62.5-minute rule for claude](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic_cache_tokenomics.md)
 - [from doer to director: the ai mindset shift](026-from-doer-to-director-the-ai-mindset-shift.html)
-- [why internally-built ai fails fund accounting audits](060-why-internally-built-ai-fails-fund-accounting-audits.html)
+- [why internally-built ai fails fund accounting audits](509-why-internally-built-ai-fails-fund-accounting-audits.html)
 
 ---
 

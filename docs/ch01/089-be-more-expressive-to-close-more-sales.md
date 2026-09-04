@@ -87,7 +87,7 @@
 
 - [AI in Cybersecurity Training Resources | SANS Institute](https://github.com/QianJinGuo/wiki-public/blob/main/entities/www-sans-org-ai-in-cybersecurity-training-resources-sans-instit.md)
 - [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](https://github.com/QianJinGuo/wiki-public/blob/main/entities/www-networkworld-com-versa-takes-aim-at-fragmented-enterprise-security.md)
-- [Why Internally-Built AI Fails Fund Accounting Audits](060-why-internally-built-ai-fails-fund-accounting-audits.html)
+- [Why Internally-Built AI Fails Fund Accounting Audits](509-why-internally-built-ai-fails-fund-accounting-audits.html)
 
 ---
 

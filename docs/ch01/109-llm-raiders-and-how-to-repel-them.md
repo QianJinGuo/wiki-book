@@ -39,7 +39,7 @@ AI 资源消耗监控应当成为日常安全运营的一部分。建立基于�
 `.env` 文件绝不能暴露在可公开访问的路径下，这是最基础的 DevOps 安全规范，却也是蜜罐实验中攻击者重点突破的方向。所有客户端-服务器通信必须使用最新版本的 TLS 加密。部署 AI 系统时，默认配置应当保守——优先考虑安全而非便利性，再根据实际业务需求逐步开放必要的功能。
 
 ## 相关实体
-- [LLM raiders and how to repel them](568-llm-raiders-and-how-to-repel-them.html)
+- [LLM raiders and how to repel them](504-llm-raiders-and-how-to-repel-them.html)
 - [主题导航：网络安全](https://github.com/QianJinGuo/wiki-public/blob/main/moc/cybersecurity-privacy.md)
 - [Autonomous Vulnerability Hunting with MCP](https://github.com/QianJinGuo/wiki-public/blob/main/entities/bullyingllms.md)
 - [LLM raiders and how to repel them](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-raiders-private-ai-server.md)

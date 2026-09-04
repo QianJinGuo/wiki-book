@@ -165,7 +165,7 @@ Agent 治理是尚未被解决的难题，企业应该现在开始试点而非�
 - [Aliyun Agentrun 2Line Integration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aliyun-agentrun-2line-integration.md)
 
 → [原文存档](https://mp.weixin.qq.com/s/JtTKwoYqO_I2QYeakigJUg)
-- [from](../ch01/650-from-system-of-record-to-system-of-intelligence.html)
+- [from](../ch01/585-from-system-of-record-to-system-of-intelligence.html)
 - [meet customers where they are: agentforce contact center now](https://github.com/QianJinGuo/wiki-public/blob/main/entities/meet-customers-where-they-are-agentforce-contact-center-now-offers-whatsapp-voice.md)
 
 ---

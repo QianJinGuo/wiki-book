@@ -23,7 +23,7 @@ Huntress 博客（2026-04-27，作者 Erin Meyers）介绍其 EDR/ITDR Correlati
 - [Huntress Edr Itdr Unified Detection](https://github.com/QianJinGuo/wiki-public/blob/main/entities/huntress-edr-itdr-unified-detection.md)
 - [Llm Raiders Private Ai Server](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-raiders-private-ai-server.md)
 - [How Claude Code Works In Large Codebases Best Practices And Where To Start](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start.md)
-- [Llm Raiders And How To Repel Them](../ch01/568-llm-raiders-and-how-to-repel-them.html)
+- [Llm Raiders And How To Repel Them](../ch01/504-llm-raiders-and-how-to-repel-them.html)
 - [How To Create Websites With Great Ux Designs](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-to-create-websites-with-great-ux-designs.md)
 
 → [原文存档](https://www.huntress.com/blog/edr-itdr-correlations)

@@ -119,7 +119,7 @@ Demo 级循环抹掉关键信息（哪个工具失败/为什么/下一步），�
 
 ## 相关页面
 → [原文存档](https://mp.weixin.qq.com/s/HVkWNXTsFjn0HkdGyD7Tpw)
-→ [Cursor Harness 复盘](../ch01/355-cursor-harness-model-production-floor.html)（模型 vs Harness 组合）
+→ [Cursor Harness 复盘](../ch01/291-cursor-harness-model-production-floor.html)（模型 vs Harness 组合）
 → [Claude Code 提示词体系](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-prompt-source-analysis.md)
 → [Agent Harness 上下文管理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-context-management-working-set.md)
 → [Agent Memory 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture.md)

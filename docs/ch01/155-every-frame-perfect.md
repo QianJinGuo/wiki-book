@@ -48,7 +48,7 @@ Now, what does it mean in practice? I can think of a few things:
 - 引用源：[Tonsky Every Frame Perfect](https://tonsky.me/blog/every-frame-perfect/)
 ## 相关实体
 - [from doer to director: the ai mindset shift](026-from-doer-to-director-the-ai-mindset-shift.html)
-- [why internally-built ai fails fund accounting audits](060-why-internally-built-ai-fails-fund-accounting-audits.html)
+- [why internally-built ai fails fund accounting audits](509-why-internally-built-ai-fails-fund-accounting-audits.html)
 - [back up and restore your amazon eks cluster resources using](https://github.com/QianJinGuo/wiki-public/blob/main/entities/back-up-and-restore-your-amazon-eks-cluster-resources-using-velero-amazon-web-se.md)
 
 ---

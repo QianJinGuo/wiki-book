@@ -8,7 +8,7 @@
 
 - [canvas hackers shinyhunters say their official domain was su](https://github.com/QianJinGuo/wiki-public/blob/main/entities/canvas-hackers-shinyhunters-say-their-official-domain-suspen.md)
 - [canvas hackers shinyhunters say their official domain was su](https://github.com/QianJinGuo/wiki-public/blob/main/entities/canvas-hackers-shinyhunters-say-their-official-domain-was-suspended.md)
-- [private fintech has quietly become bigger than public fintec](../ch01/464-private-fintech-has-quietly-become-bigger-than-public-fintec.html)
+- [private fintech has quietly become bigger than public fintec](../ch01/400-private-fintech-has-quietly-become-bigger-than-public-fintec.html)
 → 原文存档
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
@@ -25,7 +25,7 @@ Cyberscammers are bypassing banks’ security with illicit tools sold on Telegra
 ### 关联实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/332-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/118-karpathy-vibe-coding-agentic-engineering.html)
 - [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
 - [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/两万字详解claude-code源码核心机制.md)

@@ -438,7 +438,7 @@ Amodei 政策对 AI 从业者的启示：
 > -> [GitLab employees are the latest to face layoffs limbo. Read the CEO's memo about restructuring 'openly.'](https://www.businessinsider.com/gitlab-layoffs-memo-2026-5)
 ## 相关实体
 
-- [iii.dev](ch01/698-iii-dev.html)
+- [iii.dev](ch01/633-iii-dev.html)
 
 ## 核心要点
 - **裁员规模**：未公布具体人数，截至 2026 年 1 月公司有 2,580 名员工
@@ -631,9 +631,9 @@ Hugging Face + NVIDIA NIM 双渠道部署反映了当前企业 AI 落地的两�
 ## 相关实体
 - [Nvidia Nemotron 3 Agents Rag Voice Safety](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-nemotron-3-agents-rag-voice-safety.md)
 - [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-nemotron-3-ultra-sagemaker-jumpstart-moe-agentic.md)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/065-nvidia-secure-local-agent-nemoclaw-openclaw.html)
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/059-nvidia-secure-local-agent-nemoclaw-openclaw.html)
 - [Fine Tuning Cosmos](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tuning-cosmos.md)
-- [Tokenspeed Agentic Inference Engine](ch04/331-tokenspeed-agentic-inference-engine.html)
+- [Tokenspeed Agentic Inference Engine](ch04/317-tokenspeed-agentic-inference-engine.html)
 
 - [How To Automate Ai Model Documentation With The Nvidia Mcg T 806Efb](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-to-automate-ai-model-documentation-with-the-nvidia-mcg-t-806efb.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
@@ -1434,7 +1434,7 @@ Token 本质上是 AI 智能的计量单位。当 Token 价格持续下降（遵
 
 - 模型路由
 - AI 定价策略
-- [Karpathy: Vibe Coding 到 Agentic Engineering](ch04/332-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy: Vibe Coding 到 Agentic Engineering](ch04/118-karpathy-vibe-coding-agentic-engineering.html)
 - [Hermes Agent 自进化机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-tools-research.md)
 
 ---

@@ -20,7 +20,7 @@
 
   <div class="home-stats">
 
-    <div class="home-stats__item"><span class="home-stats__num">2,252</span><span class="home-stats__label">编撰条目</span></div>
+    <div class="home-stats__item"><span class="home-stats__num">2,154</span><span class="home-stats__label">编撰条目</span></div>
 
     <div class="home-stats__item"><span class="home-stats__num">20 章 · 5 篇</span><span class="home-stats__label">全书结构</span></div>
 
@@ -42,17 +42,17 @@
 
 | 篇 | 定位 | 读者 | 编撰条目 |
 |---|------|------|----------|
-| 第一篇 · 入门篇 | 从零理解 AI | 任何人 | 931 篇 |
-| 第二篇 · 工程师篇 | 构建 AI 应用 | 有编程基础 | 838 篇 |
-| 第三篇 · 专家篇 | 深入系统架构 | 有ML基础 | 367 篇 |
-| 第四篇 · 科学家篇 | 研究与创新 | 研究者 | 87 篇 |
+| 第一篇 · 入门篇 | 从零理解 AI | 任何人 | 865 篇 |
+| 第二篇 · 工程师篇 | 构建 AI 应用 | 有编程基础 | 817 篇 |
+| 第三篇 · 专家篇 | 深入系统架构 | 有ML基础 | 360 篇 |
+| 第四篇 · 科学家篇 | 研究与创新 | 研究者 | 83 篇 |
 | 第五篇 · 大师篇 | 哲学、安全与未来 | 思考者 | 29 篇 |
 
 ---
 
 ## 第一篇 · 入门篇 — 从零理解 AI
 
-### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 804 篇
+### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 740 篇
 > 理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理
 
   - ⭐ 🧠 The Token Economy pt2: The Intelligence Company Gets Built
@@ -63,20 +63,20 @@
   - ⭐ **一、关于 Kollab**
   - ⭐ Agentic Design System - From Chatbot to Orchestration
   - ⭐ OpenSquilla launches open-source AI agent to cut token costs
-  - ... 共 **804** 篇 → [完整章节](ch01-ai-basics.md)
+  - ... 共 **740** 篇 → [完整章节](ch01-ai-basics.md)
 
-### [Ch02 提示词工程与上下文工程](ch02-prompt.md) — 31 篇
+### [Ch02 提示词工程与上下文工程](ch02-prompt.md) — 29 篇
 > 与 AI 高效对话的科学与艺术：Prompt、CoT、Context Engineering
 
   - ⭐ Skills 重新定义 Agent 喂知识：从'提前给'到'按需取'的范式反转
   - ⭐ Enrich your datasets with business context
   - ⭐ AE 到可运行代码：大淘宝 AI 动画全链路方案（实践篇）
-  - ⭐ PROJECT_ANALYSIS.md — PromptQueue + OpenGorilla 项目全景分析
   - ⭐⭐ Claude Code Prompt 与上下文 Harness 设计
   - ⭐⭐ 阿里巴巴 & 蚂蚁 LoongSuite GenAI 可观测语义规范：从统一数据语言到规模化落地
   - ⭐⭐ AINMM：存量生产级工程向 AI Native 演进的五级成熟度模型
   - ⭐⭐ 新程Alpha认知模型：4B参数端侧部署，群体智能以小搏大比肩GPT-5.4
-  - ... 共 **31** 篇 → [完整章节](ch02-prompt.md)
+  - ⭐⭐ AI 导购在 vivo 官网的落地实践
+  - ... 共 **29** 篇 → [完整章节](ch02-prompt.md)
 
 ### [Ch03 AI 工具与产品全景](ch03-ai-tools.md) — 96 篇
 > 2024-2026 AI 工具生态：从 IDE 到 Agent 平台
@@ -91,13 +91,13 @@
   - ⭐⭐ MiniMax M2.7：开启模型的自我进化
   - ... 共 **96** 篇 → [完整章节](ch03-ai-tools.md)
 
-> 📖 **本篇共 931 篇**
+> 📖 **本篇共 865 篇**
 
 ---
 
 ## 第二篇 · 工程师篇 — 构建 AI 应用
 
-### [Ch04 Agent 核心架构](ch04-agent-core.md) — 474 篇
+### [Ch04 Agent 核心架构](ch04-agent-core.md) — 460 篇
 > 什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁
 
   - ⭐ Agent 时间性策略（Temporal Policies）：基于轨迹的有状态授权架构
@@ -108,7 +108,7 @@
   - ⭐ 正式开源！美团 LongCat-2.0 同步开放国产卡推理代码
   - ⭐ Introducing OS Level Actions in Amazon Bedrock AgentCore Browser
   - ⭐ How we built an internal data analytics agent
-  - ... 共 **474** 篇 → [完整章节](ch04-agent-core.md)
+  - ... 共 **460** 篇 → [完整章节](ch04-agent-core.md)
 
 ### [Ch05 Harness 工程](ch05-harness.md) — 95 篇
 > 给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration
@@ -123,31 +123,31 @@
   - ⭐ MoonBit：面向 Agent 协作的编程语言（语言即工具链 + 形式化验证 + Wasm 沙箱）
   - ... 共 **95** 篇 → [完整章节](ch05-harness.md)
 
-### [Ch06 记忆与上下文管理](ch06-memory.md) — 37 篇
+### [Ch06 记忆与上下文管理](ch06-memory.md) — 35 篇
 > Agent 的大脑：短期/长期/工作记忆的分层架构
 
   - ⭐ AML（Agent Memory Leaderboard）：机制级 Agent 记忆评测榜单
   - ⭐ Claude Code Agent Memory Systems — L0~L3 四层记忆方案
   - ⭐ Powering scientific discovery
-  - ⭐ Headroom 是怎么省上下文的
   - ⭐⭐ AI Context Layer 框架
   - ⭐⭐ MFS：zilliztech 的 Agent 统一上下文 harness，一套动词打通 20+ 数据源
   - ⭐⭐ TencentDB Agent Memory：L0-L3 语义金字塔长期记忆
-  - ⭐⭐ Qoder 发布团队知识引擎：组织级知识记忆是 Harness 自进化的重要组件
-  - ... 共 **37** 篇 → [完整章节](ch06-memory.md)
+  - ⭐⭐⭐ Hermes Agent 爱马仕的三级 memory，到底在记什么？
+  - ⭐⭐⭐ AI 的形状：Jagged Frontier·Bottleneck·Reverse Salient（Mollick）
+  - ... 共 **35** 篇 → [完整章节](ch06-memory.md)
 
-### [Ch07 技能、工具与 MCP](ch07-skill-tool.md) — 71 篇
+### [Ch07 技能、工具与 MCP](ch07-skill-tool.md) — 68 篇
 > Agent 的手脚：Skill 系统、MCP 协议、Tool Use
 
   - ⭐ Create Custom MCP Catalogs and Profiles
   - ⭐ 高德交易 VOC 自动排查：基于 Hermes 的多 Agent 架构实践
   - ⭐ 腾讯企业微信团队 Skill 流水线：AI代码生成率94%的需求开发全流程
   - ⭐ Building and connecting a production-ready ecommerce MCP server using 
-  - ⭐ 25个Skills详解：从生产力清单到AI工作流资产
-  - ⭐ Perplexity 首次公开了内部 Skill 设计指南
   - ⭐⭐ 电商 AI 操作系统崛起：从「工具人」到「All in One」+ 行业 KnowHow Skill 化 + 5 巨头 Headless 布
   - ⭐⭐ Agent Loop 架构三层模型：Loop + Skill + Orchestrator
-  - ... 共 **71** 篇 → [完整章节](ch07-skill-tool.md)
+  - ⭐⭐ 你写的 Skill，及格了吗？
+  - ⭐⭐ 我用 SKILL.md 做了一个简历生成器
+  - ... 共 **68** 篇 → [完整章节](ch07-skill-tool.md)
 
 ### [Ch08 多 Agent 协作](ch08-multi-agent.md) — 21 篇
 > 从单兵到团队：编排、通信、治理
@@ -162,7 +162,7 @@
   - ⭐⭐⭐ Routa 多智能体协同交付平台
   - ... 共 **21** 篇 → [完整章节](ch08-multi-agent.md)
 
-### [Ch09 AI 编程与代码生成](ch09-ai-coding.md) — 125 篇
+### [Ch09 AI 编程与代码生成](ch09-ai-coding.md) — 123 篇
 > 最成熟的 Agent 品类：Claude Code、OpenClaw、Codex 深度拆解
 
   - ⭐ AI Coding 的底层框架：一切优化都是在对抗熵增——信息论视角
@@ -172,8 +172,8 @@
   - ⭐ 从需求到原型：50 个设计师与产品经理的 AI 智能体技能
   - ⭐ Loop 的产品视角——项目中心从人挪到 Agent 系统
   - ⭐ 用 Kiro 构建行业专业软件：Spec vs Vibe Coding 的分层结论
-  - ⭐ AI 写前端 ≠ 设计 —— Anomaly 创始人对 Vibe Coding 哲学批判
-  - ... 共 **125** 篇 → [完整章节](ch09-ai-coding.md)
+  - ⭐ Unlocking AI flexibility in Europe: A guide to cross-region inference 
+  - ... 共 **123** 篇 → [完整章节](ch09-ai-coding.md)
 
 ### [Ch10 RAG 与知识检索](ch10-rag.md) — 15 篇
 > 让 Agent 拥有外部知识：从向量检索到知识图谱
@@ -188,13 +188,13 @@
   - ⭐⭐⭐⭐ RAG 分块优化 2025：策略选择与工程实践
   - ... 共 **15** 篇 → [完整章节](ch10-rag.md)
 
-> 📖 **本篇共 838 篇**
+> 📖 **本篇共 817 篇**
 
 ---
 
 ## 第三篇 · 专家篇 — 深入系统架构
 
-### [Ch11 云基础设施与部署](ch11-infra.md) — 220 篇
+### [Ch11 云基础设施与部署](ch11-infra.md) — 213 篇
 > Agent 上生产：Bedrock AgentCore、沙箱、多租户
 
   - ⭐ 如何保护 EC2 实例存储（Instance Store）数据不丢失：场景分析与自动化防护实践
@@ -205,7 +205,7 @@
   - ⭐ Amazon VPC Regional NAT Gateway 与 AZ NAT Gateway 全面对比
   - ⭐ 构建 Amazon ElastiCache OSS Caches 慢查询监控方案
   - ⭐ Higress Qwen3Guard Wasm 插件：把 AI 内容安全做进网关数据面
-  - ... 共 **220** 篇 → [完整章节](ch11-infra.md)
+  - ... 共 **213** 篇 → [完整章节](ch11-infra.md)
 
 ### [Ch12 安全与治理](ch12-security.md) — 104 篇
 > Agent 权限越大，安全责任越重：凭据、审计、合规
@@ -246,13 +246,13 @@
   - ⭐⭐ 构建 AI 时代的知识底座：直播数据 LLM Wiki 实践
   - ... 共 **28** 篇 → [完整章节](ch14-data.md)
 
-> 📖 **本篇共 367 篇**
+> 📖 **本篇共 360 篇**
 
 ---
 
 ## 第四篇 · 科学家篇 — 研究与创新
 
-### [Ch15 训练与微调](ch15-training.md) — 37 篇
+### [Ch15 训练与微调](ch15-training.md) — 35 篇
 > 打造专属模型：PPO → DPO → GRPO，合成数据，课程学习
 
   - ⭐ 强烈推荐的 7 个 神级 Python 库
@@ -263,20 +263,20 @@
   - ⭐⭐ 小米承办 WPC Qi Plugfest & SRT Event，推动国产无线充电方案融入全球标准体系
   - ⭐⭐ 全球第一位AI哲学家，在谷歌DeepMind的9年：为AGI安全奔走
   - ⭐⭐ 看见用户每一步：Session Replay 与热力图让体验优化有据可依
-  - ... 共 **37** 篇 → [完整章节](ch15-training.md)
+  - ... 共 **35** 篇 → [完整章节](ch15-training.md)
 
-### [Ch16 推理优化与架构](ch16-inference.md) — 17 篇
+### [Ch16 推理优化与架构](ch16-inference.md) — 16 篇
 > 让模型跑得更快：投机解码、MoE、PD 分离、量化
 
   - ⭐⭐ LLM 推理流水线完整解析：Prefill-Decode 双阶段模型
   - ⭐⭐ Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP
   - ⭐⭐ Pytorch in Kernel Recsys Optimization
-  - ⭐⭐ End-to-end encrypted ML inference with Amazon SageMaker AI and FHE
   - ⭐⭐⭐ vLLM V0→V1 迁移中的 logprob 差异修复
   - ⭐⭐⭐ 从 Chroma 换成 Qdrant，我踩了 100 万向量的坑
   - ⭐⭐⭐ How to Calculate the Inference Efficiency Ratio
   - ⭐⭐⭐ Unlocking asynchronicity in continuous batching
-  - ... 共 **17** 篇 → [完整章节](ch16-inference.md)
+  - ⭐⭐⭐ vLLM V0 to V1: Correctness Before Corrections in RL
+  - ... 共 **16** 篇 → [完整章节](ch16-inference.md)
 
 ### [Ch17 多模态与生成](ch17-multimodal.md) — 27 篇
 > Agent 的眼睛和耳朵：视觉、语音、视频理解与生成
@@ -291,17 +291,16 @@
   - ⭐⭐⭐ Gemma 4 12B：Google 多模态本地模型 —— 扔掉编码器
   - ... 共 **27** 篇 → [完整章节](ch17-multimodal.md)
 
-### [Ch18 机器人与具身智能](ch18-robotics.md) — 6 篇
+### [Ch18 机器人与具身智能](ch18-robotics.md) — 5 篇
 > 从数字到物理：强化学习、仿真、人形机器人
 
   - ⭐⭐ Google DeepMind Robotics Accelerator（欧洲版，3 个月计划，15 家初创）
-  - ⭐⭐ 蔚蓝BabyAlpha A3消费级机器狗撕开英伟达垄断
   - ⭐⭐⭐ 蚂蚁灵波 LingBot-Vision — 空间原生视觉基础模型 & LingBot-Depth 2.0
   - ⭐⭐⭐ Unitree's IPO Filing: The State of the Robotics Market
   - ⭐⭐⭐ 蔚蓝BabyAlpha A3消费级机器狗
   - ⭐⭐⭐ NVIDIA Isaac Lab + Amazon SageMaker AI：机器人强化学习训练基础设施（Humanoid RL Scale
 
-> 📖 **本篇共 87 篇**
+> 📖 **本篇共 83 篇**
 
 ---
 
@@ -337,7 +336,7 @@
 
 ---
 
-**📊 全书收录：2,252 篇编撰条目 | 20 章 · 5 篇 | 开源 · 每日更新**
+**📊 全书收录：2,154 篇编撰条目 | 20 章 · 5 篇 | 开源 · 每日更新**
 
 最近同步：2026-09-05
 

@@ -18,7 +18,7 @@ ESET researchers uncovered a multiplatform supply-chain attack by North Korea-al
 - [原文](https://www.welivesecurity.com/en/eset-research/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack/)
 
 ## 相关实体
-- [Semis Memo: Supply Chain Inheritance](221-semis-memo-supply-chain-inheritance.html)
+- [Semis Memo: Supply Chain Inheritance](191-semis-memo-supply-chain-inheritance.html)
 - [Postmortem: TanStack npm supply-chain compromise | TanStack Blog](https://github.com/QianJinGuo/wiki-public/blob/main/entities/postmortem-tanstack-npm-supply-chain-compromise-tanstack-blog.md)
 - [Amazon launches Supply Chain Services for businesses of all sizes](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-supply-chain-services.md)
 - [Semis Memo: Supply Chain Inheritance](https://github.com/QianJinGuo/wiki-public/blob/main/entities/citriniresearch-supply-chain-inheritance.md)
