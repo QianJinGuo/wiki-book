@@ -1,6 +1,6 @@
 # DeepSeek视觉原语论文：当所有人在堆图像分辨率时，它在堆「指代精度」！
 
-> 📊 Level ⭐⭐ | 10.6KB | `entities/deepseek视觉原语论文当所有人在堆图像分辨率时它在堆指代精度.md`
+> 📊 Level ⭐⭐⭐ | 10.6KB | `entities/deepseek视觉原语论文当所有人在堆图像分辨率时它在堆指代精度.md`
 
 #  DeepSeek视觉原语论文：当所有人在堆图像分辨率时，它在堆「指代精度」！
 原创  花叔  花叔  [ 花叔 ](<javascript:void\(0\);>)
@@ -16,15 +16,15 @@
 说起来，赶在五一长假之前丢个重磅论文，这风格还真挺特么DeepSeek的，熟悉的味道又回来了。以及，这次内容真的太长了，建议你可以先收藏了，假期里无聊的时候慢慢读，我这五一期间尽量...尽量不卷了，不给各位增加阅读负担。
 
 ## 相关实体
-- [Pi Mono Github](440-github.html)
-- [From Prompt To Harness Claude Official](../ch05/008-harness.html)
-- [Cursor Harness Model Production Floor](176-cursor-harness-model-production-floor.html)
-- [Vibe Coding Agentic Engineering Convergence Simon Willison](../ch09/041-coding-agent.html)
-- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch03/057-claude-code.html)
+- [Pi Mono Github](https://github.com/QianJinGuo/wiki-public/blob/main/entities/pi-mono-github.md)
+- [From Prompt To Harness Claude Official](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-prompt-to-harness-claude-official.md)
+- [Cursor Harness Model Production Floor](224-cursor-harness-model-production-floor.html)
+- [Vibe Coding Agentic Engineering Convergence Simon Willison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vibe-coding-agentic-engineering-convergence-simon-willison.md)
+- [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践-v2.md)
 
 → [原文存档](https://mp.weixin.qq.com/s/tz7Zdbv8KhHtG8fCGqQ5LQ)
 
-- [一个文件让 ai coding 效率翻倍：agents.md 实践指南](../ch05/078-ai-coding.html)
+- [一个文件让 ai coding 效率翻倍：agents.md 实践指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/一个文件让-ai-coding-效率翻倍agentsmd-实践指南.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/openai-developer-ecosystem.md)
 ## 深度分析

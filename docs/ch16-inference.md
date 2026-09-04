@@ -10,9 +10,10 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 1 |
-| ⭐⭐ 工程师 | 需编程基础 | 7 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 8 |
+| ⭐⭐ 工程师 | 需编程基础 | 3 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 6 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 5 |
+| ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 2 |
 
 ---
 
@@ -28,9 +29,348 @@
 
 ---
 
-## Ch16.001 从 Chroma 换成 Qdrant，我踩了 100 万向量的坑
+## Ch16.001 LLM 推理流水线完整解析：Prefill-Decode 双阶段模型
 
-> 📊 Level ⭐ | 8.2KB | `entities/chroma-to-qdrant-1m-vector-migration.md`
+> 📊 Level ⭐⭐ | 8.6KB | `entities/llm-inference-pipeline-internals.md`
+
+> -> [原文存档](https://mp.weixin.qq.com/s/1zZ0UXCNUA1UJ39gJNDQjg)
+
+# LLM 推理流水线完整解析
+
+## 一句话
+
+系统讲解 LLM 推理的完整流水线——从 tokenization 到流式输出，核心框架是 **prefill（计算受限）vs decode（内存受限）双阶段模型**，所有推理优化都针对其中一个阶段。
+
+## 核心框架：Prefill vs Decode
+
+LLM 的 `generate()` 调用在同一块 GPU 上经历两个截然不同的计算阶段：
+
+| 阶段 | 工作方式 | 瓶颈 | 关键指标 |
+|------|---------|------|---------|
+| **Prefill** | 所有输入 token 并行处理，矩阵乘矩阵 | GPU 算术吞吐（compute-bound） | TTFT（Time to First Token） |
+| **Decode** | 逐个 token 生成，query 向量 × 缓存矩阵 | 内存带宽（memory-bound） | ITL（Inter-Token Latency） |
+
+**诊断原则**：当有人说模型慢，先判断是启动慢（prefill-bound → 优化 TTFT）还是流式输出慢（decode-bound → 优化 ITL）。二者消耗不同的硬件资源。
+
+## 完整推理路径
+
+### 1. Tokenization & Embedding
+
+BPE tokenizer 将文本转为词表整数 ID（词表规模约 50K），映射到 `[vocab_size, hidden_dim]` embedding 矩阵。位置编码使用 **RoPE**（Rotary Position Embeddings）——通过旋转向量而非额外位置向量来编码位置。
+
+### 2. Transformer 层
+
+每层依次执行：
+- **Self-attention**：为每个 token 计算 Q/K/V 投影，query 与所有 key 打分 → softmax → 加权混合 value
+- **FFN**：两层 MLP 独立处理每个 token 向量（attention 跨位置传递信息，FFN 变换位置表示）
+
+### 3. Prefill 阶段
+
+所有输入 token 并行经过每一层，attention 以大型矩阵乘矩阵运行，GPU 利用率高。此阶段同时填充 **KV cache**（每层的 K/V 张量存入 GPU 内存供 decode 复用）。输出第一个 token。
+
+### 4. Decode 阶段
+
+每步只为新 token 计算 Q，与缓存中的 K/V 做 attention。算术量小但需从内存加载全部权重 + 完整 KV 缓存，瓶颈切换为内存带宽。
+
+## KV Cache：推理的核心约束
+
+无缓存时生成 1K token 回答需每步重算完整 attention（平方级复杂度）。KV cache 将 K/V 存一次、增量追加，提速约 5 倍以上。
+
+**代价**：
+- 13B 模型：每个 token 约消耗 1 MB KV cache
+- 4K 上下文：仅 KV cache 占 4 GB 显存
+- 直接与 batch size 争夺 GPU 内存 → 并发能力下降
+
+**四种缓解方法**：
+
+| 方法 | 原理 |
+|------|------|
+| KV cache 量化（INT8/INT4） | 降低缓存精度 |
+| Sliding window attention | 丢弃固定窗口外的 token |
+| GQA（Grouped-Query Attention） | 多个 head 共享 K/V，减少缓存张量 |
+| PagedAttention（vLLM） | 像 OS 虚拟内存一样分页管理缓存，消除碎片 |
+
+## DeepSeek V4：从结构上压缩 KV Cache
+
+DeepSeek V4 Preview（2026-04-24）没有把 KV cache 当固定成本管理，而是重新设计 attention 让缓存结构性更小：
+
+- **CSA**（Compressed Sparse Attention）：softmax-gated pooling 压缩 KV 4 倍 → sparse attention
+- **HCA**（Heavily Compressed Attention）：128 个 token 的 KV 合并为 1 个压缩条目 → dense attention
+
+效果（1M-token 上下文 vs V3.2）：
+- 单 token 推理 FLOPs：**27%**
+- KV cache：**10%**（bf16 下 9.62 GiB vs 83.9 GiB）
+- 叠加 fp4/fp8 量化可再缩小 2 倍
+
+→ 相关实体：[DeepSeek V4 本地推理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-v4-ds4c-antirez-local-inference-qbitai.md)
+
+## 量化：收益最高的优化手段
+
+内存节省与 bit width 线性相关：
+
+| 精度 | 7B 模型显存 |
+|------|-----------|
+| FP32 | 28 GB |
+| FP16/BF16 | 14 GB |
+| INT8 | 7 GB |
+| INT4 | 3.5 GB |
+
+- INT4 是 7B 模型在笔记本 GPU（4-6 GB）上运行的关键
+- GPTQ / AWQ 使用 per-channel scaling 降低质量损失
+- INT4 通常只比全精度低 1-2 个百分点
+- FP16→INT8 推理延迟通常减半，质量损失可忽略
+
+## 推理服务基础设施
+
+现代推理服务器的三种核心优化：
+
+| 技术 | 作用 |
+|------|------|
+| **Continuous batching** | 同一 GPU step 交错处理多请求的 token，decode 阶段也能保持高利用率 |
+| **Speculative decoding** | 小 draft model 先提多个 token → 大模型一次 forward pass 验证，串行→并行 |
+| **PagedAttention**（vLLM） | 固定大小 block 管理 KV cache，消除碎片，提升并发 |
+
+框架组合：vLLM、TensorRT-LLM、TGI。一块 GPU 可服务几十并发用户——decode 阶段大量闲置算力被 continuous batching 填满。
+
+## 实践结论
+
+1. **长 prompt 成本在 TTFT**（prefill），**长输出成本在 ITL**（decode）——消耗不同硬件资源
+2. **上下文长度不免费**——膨胀 KV cache，直接降低 batch capacity
+3. **decode 阶段 GPU 利用率可能仅 30%**——瓶颈在内存带宽不在算术计算
+4. **解决方向**：更快的内存 + 更小的缓存 + 更好的 batching，而非更多算力
+
+## 与现有知识的关联
+
+- → [DeepSeek V4 本地推理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-v4-ds4c-antirez-local-inference-qbitai.md)：V4 的 CSA/HCA 架构创新（本文第 6 节）与 antirez 的 ds4.c 本地推理引擎互补
+- → [GLM-5 Scaling Pain](https://github.com/QianJinGuo/wiki-public/blob/main/entities/glm5-scaling-pain-inference.md)：高并发推理下的竞态 Bug，是本文第 8 节"推理服务基础设施"的反面案例
+- → [vLLM](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vllm.md)：PagedAttention 的具体实现
+
+## 工业实践：快手 kLLM 全栈优化（2026-07）
+
+快手系统软件团队围绕 GLM-5.2（DSA/MLA）与 DeepSeek-V4 构建自研推理引擎 kLLM，将本文上述概念落地为可量化的生产优化，原则是**不以模型能力损失为代价做优化**。
+
+| 本文概念 | kLLM 工业实践 | 量化收益 |
+|---------|--------------|---------|
+| PagedAttention / KV cache | **分级 KV Cache**（L1 GPU HBM / L2 CPU DRAM / L3 SSD+分布式）+ Cache-Aware 路由 | 命中率 +20pp、SLO 下吞吐 +30%、总命中率 ~87.6%；前缀树增量匹配使 GPU Bubble 400ms→30ms、Prefill +40% |
+| Prefill vs Decode（TTFT vs ITL） | **PD 分离 + SLO Load 驱动弹性**：以相对 TTFT/TPOT SLO 的背离度统一度量 P/D 压力，取预测/真实值上界 | 容量生效速度 10min→10s（约 60×），OpenRouter Uptime 99%+ |
+| Speculative decoding | **DSpark 半自回归投机解码**（并行 logits + 轻量序列模块 Bias 修正） | DeepSeek V4 Flash 线上 TPOT -15% |
+| 长上下文 / KV 膨胀 | **MLA 下 Attention Request DP + MoE EP 混合并行**（cKV 跨 Head 共享无法 TP 切分 → 按请求维分） | 8 卡 KV 容量 2.9M→21.2M Tokens（7.3×）、TTFT -25% |
+| Continuous batching 边界 | **Chunk Prefill 公平调度 + Decode KV 高水位保护**（短请求优先、长请求 Chunk 边界让出） | 平均 TTFT -17.8%、P50 -26.0%、P95 -12.1%（P99 +2.7%） |
+
+**核心洞见**：①模型侧降本 ≠ 系统侧同比提效——新一代模型（稀疏激活/稀疏注意力/百万上下文）把瓶颈从单一算力问题转化为计算/通信/显存/调度耦合的系统问题；②并行边界应按状态分布方式重构（MLA cKV 沿 Request DP、MoE 沿专家 EP、Dense FFN 按需 TP），而非单一并行策略覆盖全模型。
+
+**Agent 场景延伸**：kLLM 规划 Program-Aware 全生命周期调度——调度单元从"单请求"提升为一次 agent 会话/工作流，做暂停/恢复调度 + 工具调用空窗资源回收，指向推理系统向 agent 工作负载演进。
+
+---
+
+## Ch16.002 Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP
+
+> 📊 Level ⭐⭐ | 8.2KB | `entities/huggingface-torch-mlp-fusion-profiling-2026.md`
+
+# Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP
+
+> **Background**: Hugging Face team profiling series part 2 (2026-06-11). Climbs from single nn.Linear to 3-layer MLP with ReLU activation, profiles GPU kernel launch overhead, and shows torch.compile Inductor fusion reducing 9+ launches to 3 fused triton kernels.
+
+## Core problem
+
+- nn.Linear is the building block of nearly all deep learning models
+- Single nn.Linear call produces multiple kernel launches (matmul + bias add)
+- ReLU activation adds additional launches
+- At small batch size (1024x1024), each layer can produce 5+ launches
+- Kernel launch overhead (10-20us each) dominates total latency in overhead-bound regime
+
+## Key findings
+
+1. **3-layer MLP produces 9+ kernel launches** (3 Linear x 3 ops/Linear + 2 ReLU), single launch 10-20us, launch overhead 30%+ of total
+2. **torch.compile auto-fusion**: Inductor backend fuses matmul + bias_add + relu into a single triton kernel, reducing 3 launches per layer to 1, total 9 to 3
+3. **Compute-bound vs overhead-bound crossover**: at batch=1024 launch overhead dominates; at batch>=4096 compute dominates and fusion gains diminish
+4. **CPU dispatch chain is hidden overhead**: each op traverses torch.add -> aten::add -> aten::add.out -> aten::copy_ dispatch layers, visible in profiler but not in user code
+5. **torch.compile guard / recompile**: dynamic shapes trigger multiple recompiles, so first call can be slower than eager mode
+
+## Practical takeaways
+
+- Latency-sensitive small batch inference (batch<=2048): prefer torch.compile fusion
+- Large batch training (batch>=4096): eager and compile modes have similar performance
+- When profiling, focus on cudaLaunchKernel duration field, not just Self CUDA Time
+- Use torch.profiler.profile(activities=[ProfilerActivity.CPU, ProfilerActivity.CUDA]) with record_function decorator to localize bottlenecks
+
+## Wiki cross-links
+
+- Same series (profiling part 1) - not yet ingested; check entities/torch-compile-* for related Inductor backend content
+- Candidate associations: kernel fusion, launch overhead, Inductor backend (no existing entity)
+
+## 核心观点
+
+1. **单算子层面的"融合"已接近极限，融合优化的主战场正在向算子间边界迁移**
+   - `nn.Linear` 的 bias 加法已经通过 cuBLAS GEMM 的 **epilogue** 机制在单 kernel 内部融合（`addmm`），`torch.compile` 在单 Linear 层上没有更多融合空间
+   - 真正的融合收益出现在 **算子间**：GeLU + element-wise mul + reshape 这三个独立 kernel 在 compile 后融合为一个 Triton kernel，消除了中间结果在 HBM 的往返
+   - 这意味着未来优化应关注"哪些算子之间有中间结果往返"，而非在单算子内部寻找融合机会
+
+2. **CPU 端的 dispatch 开销是被忽视的瓶颈，尤其在 overhead-bound 场景**
+   - 每个 PyTorch 算子经过 `aten::linear → aten::t → aten::addmm` 的 dispatch 链，每次 dispatch 触发 Python/C++ binding 开销
+   - `torch.compile` 通过 Inductor 在编译时展开这个链，直接发射 `aten::addmm`，消除了中间 view 操作带来的 CPU 开销
+   - 对 batch<=2048 的小 batch 推理，这个 CPU 开销占总延迟的 30%+，是 fused kernel 带来的主要收益来源
+
+3. **静态 shape 特化 vs 通用性是一个根本性权衡**
+   - Inductor 的 fused kernel 为 `[8192, 3072]` 形状专门生成，执行时间 89.4µs；Liger 手写 kernel 泛化任意形状执行时间 92.8µs
+   - 差距仅 3.4µs，但背后是 compile-time shape specialization 的代价——动态 shape 触发 recompile，重编译成本可能远超单次执行节省
+   - 实际工程选择应基于输入 shape 是否稳定，而非绝对性能数字
+
+4. **GEMM 形状影响 kernel 选型，从而影响性能——同样的 FLOPs 不等于同样的速度**
+   - gate_proj 和 up_proj：M·K·N = 8192·768·3072，执行时间 0.19ms
+   - down_proj：M·K·N = 8192·3072·768，执行时间 0.17ms（快约 10%）
+   - 原因：N=768 vs N=3072 导致 cuBLAS 选择了不同的 tile 配置（128×256 with stages_64x3 vs 128×128 with stages_32x5），更深 pipeline 的 tile 在该形状下复用更好
+
+### 技术要点
+
+- **GEMM epilogue**：矩阵乘 kernel 在写回 HBM 前执行 bias add / activation，避免单独发起一次 HBM 读写
+- **Triton pointwise fusion**：Inductor 的 Triton 后端将 pointwise 算子（GeLU、mul、reshape）融合为单一 kernel，intermediate 留在寄存器而非 HBM
+- **cuBLAS occupancy query**：每次 GEMM 发射前调用 `cudaOccupancyMaxActiveBlocksPerMultiprocessor` 确认最优 grid 配置，pointwise kernel 则直接发射无查询
+- **View 不产生 kernel**：`aten::t`、`aten::transpose`、`aten::as_strided` 只改 tensor metadata（shape + stride），不搬动数据，不发射 GPU kernel
+
+### 实践价值
+
+- 对**ML 工程师**：小 batch 推理（batch≤2048）优先用 `torch.compile`，收益最大；大 batch 训练（batch≥4096）可保留 eager mode 省去编译开销
+- 对**性能工程师**：profiler 表中看到 `0.000us` CUDA 时间的 op 名称（如 `aten::t`）应忽略，它们是纯 CPU 元数据操作，不是真正的 GPU 负载
+- 对**框架开发者**：设计新算子时考虑是否有 epilogue融合机会——在 GEMM 尾部做激活函数比单独发射 kernel 更高效
+
+### 相关实体
+
+- [Deepseek V4 Triton Fp4 Optimization](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-v4-triton-fp4-optimization.md) — 同样涉及 Triton kernel 优化，与本文的 pointwise fusion 优化角度互补
+- [Inference Optimization](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/inference-optimization.md) — 推理优化通识，包含本文未覆盖的量化 / 蒸馏 / serving 层面的优化策略
+
+## 实践启示
+
+1. **建立"先猜测再验证"的 profiler 习惯**：每次看 trace 前先在脑中构建预期，trace 打开后第一时间关注"预期与现实的差异"——差异就是最有价值的发现
+2. **小 batch 推理优先 torch.compile**：batch≤2048 时融合收益最高（kernel launch overhead 占 30%+）；batch≥4096 后 compute-bound 主导，compile 收益递减
+3. **关注 cudaLaunchKernel duration 而非只看 Self CUDA Time**：Self CUDA Time 漏掉了 kernel launch 调度开销，duration 字段包含 launch 和实际执行两部分
+4. **动态 shape 场景慎用 torch.compile**：若输入 shape 在每次推理时都可能变化（如 streaming 输入），compile 的 recompile 成本会抵消甚至超过融合收益，此时用 Liger 类手写 fused kernel 更稳定
+5. **用 kernels 库分发预编译 kernel**：避免本地编译的痛苦（版本不匹配、GPU 架构差异），通过 `get_kernel("kernels-community/liger-kernels", version=N)` 下载 CI 预编译的版本化二进制
+
+## Source
+
+Original URL: https://huggingface.co/blog/torch-mlp-fusion
+
+Source: [raw archive](https://huggingface.co/blog/torch-mlp-fusion)
+
+---
+
+## Ch16.003 Pytorch in Kernel Recsys Optimization
+
+> 📊 Level ⭐⭐ | 4.5KB | `entities/pytorch-in-kernel-recsys-optimization.md`
+
+## 深度分析
+
+**消除而非优化：Kernel 层设计的方法论突破：** IKBO 的核心洞察是"broadcast 是数据布局问题，而非计算必需"——传统方法在系统层面处理 broadcast 复制，浪费内存带宽和计算资源；而 IKBO 在计算原语层面消除复制，让 kernel 内部处理 mismatched batch sizes。这个思维转换将优化方向从"workaround 问题"转向"消除问题根源"，实现了 2/3 的延迟降低。这种**在根源处解决问题**而非在表面做修补的思想，对其他 AI 系统优化有普遍借鉴意义。 See also [Harness Production Agent Engineering Deficit](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-production-agent-engineering-deficit.md)
+
+**Kernel-Model-System 三层协同设计是性能突破的关键：** IKBO 的成功不只是 kernel 优化的功劳，而是 kernel、ML 编译器、inference runtime 三层协同设计的结果。Kernel 层提供支持 mismatched RO/NRO batch sizes 的原生接口；编译器层需要 per-operator dynamic shape ranges 来选择正确形状的 kernel；runtime 层通过 candidate-to-user mapping 而非 materializing broadcast 传递信息。任何一层单独优化都无法达到最终效果，**系统级协同优化才能实现数量级突破**。
+
+**渐进式协同设计是工程落地的合理路径：** IKBO Linear Compression 经历了四个阶段的渐进优化：matmul decomposition → memory alignment → broadcast fusion → warp-specialized multi-stage fusion via TLX，最终在 H100 SXM5 上实现 ~4× 加速。这个过程说明**性能优化不是一步到位的**，而是需要持续迭代、逐步逼近硬件极限。每一步优化都为下一步创造条件，最终的 warp-specialized fusion 无法在初始阶段直接实现。
+
+**IO-bound 到 compute-bound 的转变是性能优化的分水岭：** IKBO 将 Flash Attention kernel 从 IO-bound 推向 compute-bound，峰值达到 621 BF16 TFLOPs（H100 SXM5）。在 GPU 编程中，IO-bound 意味着 kernel 性能受限于内存带宽，而非算力——此时增加更多计算单元也无法提升性能。**转变为 compute-bound 是优化的关键里程碑**，意味着 kernel 已经充分利用了硬件的算力潜能，继续优化需要从算法或数据布局入手。
+
+**RecSys 推理优化的独特挑战来自 user-candidate 不对称性：** 与传统 DNN 不同，RecSys 的 user embeddings 对所有 candidate 都相同，但 candidate 数量（10-10,000+）远大于 user 数量，导致 broadcast 复制开销随 candidate 数量线性增长。这个问题在 CV/NLP 任务中不存在，因为它们的 batch 维度天然对称。理解这个**领域特有的不对称性**，是设计高效 RecSys 系统的前提。
+
+## 实践启示
+
+- **遇到性能瓶颈时，先判断是 IO-bound 还是 compute-bound**：如果 kernel 已经是 compute-bound，继续优化算法或数据布局才有意义；如果是 IO-bound，优化方向应该是减少内存访问或提高内存访问效率，而非增加计算量。
+
+- **Kernel 优化采用渐进式策略**：先实现功能正确的版本，再逐步优化——从基础 matmul 到 decomposition，再到 memory alignment，最后做 fusion。一次性写出最优 kernel 既不现实也不高效。
+
+- **RecSys 系统的 broadcast 开销需要专门优化**：当 user-candidate 不对称时，传统的 explicit replication 会造成严重的内存和计算浪费。考虑在 kernel 内部处理 broadcast，而非在系统层面 materialization。
+
+- **Inference-time transformation 可实现无感的系统升级**：Meta 的 IKBO 支持在推理时自动替换标准操作为 IKBO 等效操作，无需模型代码变更。这种**无破坏性升级**能力对生产系统非常重要。
+
+- **Custom kernel 开发需要工具链配合**：TLX (Triton Low-Level Extensions) 提供了 warp-specialized fusion 能力，但需要与 ML 编译器、inference runtime 配合使用。单独优化 kernel 而忽视其他层级，往往无法达到预期效果。
+
+---
+## 关联
+→ [原文存档](https://pytorch.org/blog/in-kernel-broadcast-optimization-co-designing-kernels-for-recsys-inference/)
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+
+---
+
+## Ch16.004 vLLM V0→V1 迁移中的 logprob 差异修复
+
+> 📊 Level ⭐⭐⭐ | 9.4KB | `entities/vllm-v0-to-v1-correctness-before-corrections.md`
+
+> -> [原文存档](https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections)
+
+## 核心发现
+- V1 默认返回 **raw logprobs**（未经后处理），而 trainer 期望 **processed logprobs**
+- V1 的 prefix caching / async scheduling 改变了执行路径
+- 先修 backend 再调 objective，不要反过来
+- Clip rate 是最敏感的 mismatch 指示器
+
+## 影响范围
+所有使用 vLLM 做 rollout generation 的 online RL 方法（PPO、GRPO、GSPO）
+
+## 相关链接
+→ [原文存档](https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections)
+
+## 相关实体
+<!-- ⚠️ 以下交叉引用在 lint 时未通过，请确认 slug 后再取消注释 -->
+<!-- - [servicenow vllm correctness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/servicenow-vllm-correctness.md) -->
+<!-- - [servicenow vllm correctness huggingface](https://github.com/QianJinGuo/wiki-public/blob/main/entities/servicenow-vllm-correctness-huggingface.md) -->
+
+## 深度分析
+### 背景：为什么 V0→V1 迁移是个高风险操作
+vLLM 的 V1 引擎对 V0 做了大量底层重构，包括调度器架构、内存管理、KV cache 分配策略和 logprob 计算路径的重大变化。对于大多数推理场景，这些变化是透明的、性能正交的。但对于 **RL 训练**（尤其是需要精确 token-level logprob 的 PPO/GRPO/GSPO），这些变化直接影响了 `logprob` 的数值语义，进而影响 policy gradient 的计算精度。
+V0 的 logprob 输出经过完整的 `temperature → repetition_penalty → min_length/truncate` 后处理流水线。而 V1 为了降低延迟，默认返回 **raw model logits** 经过 log-softmax 后的值，跳过了这部分后处理。这导致即使模型权重完全相同，V0 和 V1 的 `logprob` 也会系统性偏差。
+
+### 四个 backend 问题的逐层解析
+**问题一：Logprob Semantics（最关键）**
+V1 新增的 `logprobs_mode` 参数控制 logprob 的计算方式。默认值在 V0 和 V1 之间存在语义差异：V0 默认执行完整后处理，V1 默认不执行。当 `use_v1: true` 时，必须显式设置 `logprobs_mode: "processed_logprobs"` 来恢复 V0 语义。否则 reward shaping、entropy bonus、value estimation 全部会带上系统性偏差。
+这个问题的影响范围极广：所有依赖 `logprob` 计算 advantage estimation 的 RL 方法都会受影响。PPO 的 clipped surrogate objective 直接依赖 `logprob` 比率，GRPO 的 group-relative advantage 依赖 `logprob` 的精确值。哪怕 0.01 的均值偏移，在数万次迭代的累积下也会导致训练曲线漂移。
+**问题二：Runtime Defaults — Prefix Caching 与 Async Scheduling**
+V1 引入了 prefix caching（相同 prompt 前缀的 KV cache 复用）和 async scheduling（异步 token 生成调度）。这两个优化在推理场景下是重大性能收益，但在 RL 训练中引入了非确定性：相同 `input_ids` 可能因为 cache 命中状态不同而走不同的执行路径，导致 `logprob` 在 token 位置上有微小差异。
+对于 RL 训练的可复现性（reproducibility）要求，这种不确定性是不可接受的。ServiceNow-AI 团队的建议是：在训练阶段显式关闭这两个特性（`enable_prefix_caching: false`, `async_scheduling: false`），只在推理部署时启用。
+**问题三：Inflight Weight Updates**
+V1 的权重更新路径（weight update during inference）与 V0 有差异。这主要影响的是 online RL 中的 weight update 频率和时机。如果在 rollout 过程中进行权重更新（常见于 PPO 的 async PPO 变体），V1 可能因为权重同步时机不同导致 logprob 计算不一致。
+**问题四：fp32 lm_head 精度**
+`lm_head`（final projection layer）的计算精度在 V0 和 V1 默认配置下可能不同。V0 有时依赖 implicit FP8 或混合精度优化，而 V1 的默认精度策略可能不同。确保 `lm_head` 在 FP32 下运行可以避免低精度累积误差影响 logprob 精度。
+
+### Clip Rate 作为Mismatch 指示器
+PPO 和 GRPO 训练中，clip rate（被 clip 的 policy ratio 的比例）是一个关键的可观测指标。正常训练时，clip rate 通常在 1%–20% 区间。如果 clip rate 出现剧烈波动（尤其是从极低突然升高）或训练曲线出现"台阶式"突变，这通常是 logprob 不匹配的信号。ServiceNow-AI 特别指出：在 V0→V1 迁移的初期，clip rate 是最容易读到的系统性 mismatch 信号，应该作为第一优先级监控指标。
+
+## 实践启示
+### 迁移检查清单
+在将 RL 训练 pipeline 从 V0 切换到 V1 时，以下配置是**必须**验证的：
+```
+vllm_config:
+  use_v1: true
+  vllm_kwargs:
+    logprobs_mode: processed_logprobs    # 恢复 V0 logprob 语义
+    enable_prefix_caching: false           # 关闭 cache 非确定性
+    async_scheduling: false                # 关闭 async 调度非确定性
+    lm_head_precision: fp32               # 确保 lm_head 精度对齐
+```
+
+### 推荐迁移策略
+**阶段一：逐项隔离验证**
+不要一次性切换所有配置。先在固定随机种子下，对比 V0 和 V1 相同输入的 logprob 输出。使用一个简单的 dummy prompt（如 "The capital of France is"），对比每个 token 位置的 logprob 差异。如果差异超过 `1e-3`，说明 logprob 语义未对齐。
+**阶段二：短期 RL 跑分**
+在确认 logprob 数值对齐后，用一个小型模型（如 1B–3B）在短数据集上做 100–500 步的 RL 训练。对比 V0 和 V1 的训练曲线（特别是 clip rate 和 policy entropy）。如果两者在 1% 以内对齐，再切换到完整训练。
+**阶段三：prod 迁移后持续监控**
+V1 的默认行为会随着 vLLM 版本更新而变化。每次升级 vLLM 后，都应该重新跑一遍上述对齐验证 pipeline。
+
+### 对不同 RL 方法的影响差异
+- **PPO**：对 logprob 精度最敏感，因为 PPO 的 importance sampling ratio (`π_new/π_old`) 直接依赖精确 logprob 值
+- **GRPO**：相对宽容一些，group-relative advantage 计算会做归一化，但 logprob 均值偏差仍会影响 advantage baseline
+- **GSPO**（格尔茨随机策略优化）：和 GRPO 类似，但由于采样策略更激进，logprob 不匹配会放大采样方差
+
+### 配置管理的工程建议
+建议在 RL 训练代码中，通过环境变量或 config 文件集中管理 vLLM 的版本兼容配置，而非散落在各个调用点。这样可以在切换 V0/V1 时保持单一配置来源，减少因配置不一致导致的难以复现的 bug。
+---
+
+## 总结
+vLLM V0→V1 迁移中的 logprob 差异，本质上是 **推理引擎默认行为变化** 与 **RL 训练对数值精度的严格要求** 之间的冲突。核心修复路径是：显式设置 `logprobs_mode: processed_logprobs`，关闭 prefix caching 和 async scheduling 确保执行路径确定性，并在训练初期以 clip rate 为核心监控指标验证对齐状态。不要在 backend 未对齐的情况下尝试通过调整 RL objective 来"掩盖"问题——那样只会引入更难追踪的隐式错误。
+
+---
+
+## Ch16.005 从 Chroma 换成 Qdrant，我踩了 100 万向量的坑
+
+> 📊 Level ⭐⭐⭐ | 8.2KB | `entities/chroma-to-qdrant-1m-vector-migration.md`
 
 # 从 Chroma 换成 Qdrant，我踩了 100 万向量的坑
 > 原文：从 Chroma 换成 Qdrant，我踩了 100 万向量的坑
@@ -40,9 +380,9 @@
 - Chroma 是嵌入式帮手（零运维、<100 万向量最佳），Qdrant 是独立引擎（生产级、过滤不伤召回率）
 
 ## 相关实体
-- [Vector Db Chroma Vs Qdrant](ch11/162-chroma-vs-qdrant.html)
-- [Deepseek V4 Pro Vs Claude](ch01/430-deepseek-v4.html)
-- [Gateway Architecture Openclaw Claude Hermes Comparison](ch04/180-openclaw.html)
+- [Vector Db Chroma Vs Qdrant](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vector-db-chroma-vs-qdrant.md)
+- [Deepseek V4 Pro Vs Claude](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-v4-pro-vs-claude.md)
+- [Gateway Architecture Openclaw Claude Hermes Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gateway-architecture-openclaw-claude-hermes-comparison.md)
 - [Context Engineering Three Memory Paradigms Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md)
 - [别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](https://github.com/QianJinGuo/wiki-public/blob/main/entities/别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个.md)
 
@@ -107,9 +447,869 @@ Chroma 的做法是"先搜再过滤"或"先过滤再搜"——无论哪种顺序
 
 ---
 
-## Ch16.002 Build real-time voice applications with Amazon SageMaker AI and vLLM
+## Ch16.006 How to Calculate the Inference Efficiency Ratio
 
-> 📊 Level ⭐⭐ | 21.2KB | `entities/build-real-time-voice-applications-with-amazon-sagemaker-ai.md`
+> 📊 Level ⭐⭐⭐ | 8.1KB | `entities/how-to-calculate-the-inference-efficiency-ratio.md`
+
+## 深度分析
+**IER 的本质是将 AI 推理成本从"基础设施黑箱"中剥离出来，成为独立可追踪的 COGS 维度。** 文章的核心贡献是提出了 Inference Efficiency Ratio（IER = AI 产品收入 ÷ 推理成本）这一指标，并将其定位为 SaaS 财务框架第六支柱（AI Economics）的锚点指标。 传统 SaaS COGS 主要由固定成本构成（服务器、带宽、人力），而 AI inference cost 是纯usage-driven 的变量成本，其规模随产品功能扩展而非线性增长——这个本质差异是现有 gross margin 分析框架失效的根源。
+**AI-native 与 AI-infused 的业务模型划分决定了 IER 基准的根本差异，不可混用。** 文章明确指出：AI-infused（AI 是附加功能，客户为底层工作流付费）需要 10:1 以上的健康 IER 才能保持与传统 SaaS 可比的毛利率；AI-native（AI 是核心产品，价值交付本身就是推理过程）接受低至 5:1 的健康 IER，因为 inference cost 本身就是商业模式的一部分。 混淆这两个模型会导致定价策略错位：AI-infused 产品若采用 AI-native 的成本容忍度，会持续侵蚀已有毛利率；而 AI-native 产品若强制追求 AI-infused 的 IER 基准，可能因过度压缩 inference 质量而丧失产品竞争力。
+**Agentic 工作流正在系统性推高单位任务的 token 消耗量，可能抵消 per-token 定价下降的收益。** 文章指出了一个反直觉的现象：2023 年以来，虽然模型层面的 per-token 定价持续下降，但 agentic 架构（多步骤工具调用、长对话历史、海量 context window）的普及使每个任务消耗的 token 总量大幅上升，部分公司的 AI 成本反而在上升而非下降。 这意味着不能简单依赖"市场定价会自然解决效率问题"的假设——IER 的改善必须来自产品层面的主动优化（模型路由、prompt caching、usage-tiered pricing），而非被动等待上游降价。
+**P95 用户成本是 IER 失真的最大隐藏来源。** 文章揭示了一个典型的 CFO 盲区：平均值看起来健康的 IER，可能被 top 5% 的 power user 严重拉低——这些用户拥有巨大的 context window、重度工具调用和超长对话历史，其单用户 inference cost 是普通用户的 10-100 倍。 没有 customer-level 和 percentile-level 的 cost tracking，根本无法识别这个风险集中点。这是"blended metrics"欺骗性的典型案例。
+**IER 与 gross margin 的关系是因果而非平行：IER 是领先指标，gross margin 是滞后结果。** 文章明确了两者的分工：gross margin 告诉你"整体结果是什么"（所有 COGS 扣除后的剩余），IER 告诉你"增长最快的成本驱动因素效率如何"。 当 gross margin 下降时，IER 可以快速定位是否是 inference cost 导致；当 IER 改善但 gross margin 不变，说明 COGS 中有其他因素在吞噬利润。这个因果链条使得 IER 成为 CFO 日常监控仪表盘的必要组成，而非年底回顾时才看的指标。
+**定价架构与 inference cost 的脱节是 AI-infused 产品的结构性风险。** 如果重度 AI 用户与轻度用户支付相同的 flat subscription 费用，公司实际上在补贴 power user 的 inference cost。Usage-tiered 或 outcome-based 定价是唯一可持续的解决方案，但实施的前提是能够以 customer-level 和 feature-level 追踪 inference cost——否则根本没有数据支撑定价改革。
+**从 ICONIQ 和 Bessemer 的数据来看，AI 产品毛利率从 41%（2024）提升到 52%（2026 预测）的驱动因素是 operator 学会了管理 inference cost，而非模型定价自然下降。** 这验证了 IER 作为运营指标的实践价值：行业毛利率提升的来源是每一家公司 individually 优化 IER 的结果，而非市场整体趋势的自动馈赠。
+
+## 实践启示
+**1. 立即将 AI Inference Cost 设为独立 COGS 科目，从 blended infrastructure costs 中剥离出来。** 这是实施 IER 的第一步，也是最难的一步——大多数公司现有的 cost tracking 将 AI API 费用混入"第三方 API"或"基础设施"科目。独立列账本身就是一个强制函数，暴露了数据采集的盲区。
+**2. 用 IER 公式（AI 产品收入 ÷ inference 成本）计算公司当前的 IER，优先在 customer-level 和 feature-level 拆分。** Blended IER 告诉你是否有问题，customer-level IER 告诉你问题在哪里。如果 top 5% 的账户占据了 50% 以上的 inference cost，这些账户的 pricing 漏洞就是最优先的修复项。
+**3. 确认公司属于 AI-infused 还是 AI-native，这是选择 IER 基准的前提。** 判断标准：如果移除所有 AI 功能，公司是否仍能产生有意义的收入？若答案为是，则适用 AI-infused 基准（健康值 10:1 以上）；若答案为否，则为 AI-native（健康值 5:1 以上）。大多数向现有 SaaS 产品添加 AI 功能的成熟公司属于前者。
+**4. 将 IER 设立为新 AI 功能发布的前置门槛——任何将 IER 拉低至 floor 以下的功能发布，需要同时提交 mitigation plan（模型替换方案、usage limits、定价调整）。** 这个机制类似于传统软件时代的重大产品线发布审批流程，目的是在 feature 砍不动 gross margin 之前就识别风险，而非之后。
+**5. 模型路由是改善 IER 性价比最高的工程投入：简单任务走小模型，复杂任务才调用大模型。** Acme SaaS 的案例中，通过模型路由（轻量级 Sonnet 处理简单任务，Opus 保留给复杂任务）将 inference cost 从 $95K 降至 $52K，IER 从 4.4:1 提升至 8:1——这个改善不需要改变定价或用户体验，纯工程优化。
+**6. 建立 P50 和 P95 两套 IER 追踪体系。** P50 IER 反映典型用户体验对应的效率水平；P95 IER 反映 tail user 带来的成本压力。如果两者差距过大（例如 P50 IER 12:1 但 P95 IER 仅 3:1），说明 pricing model 没有正确覆盖 tail cost，需要重新设计 usage tiering。
+**7. 不要假设推理成本会自然下降——建立 IER 的月度 trend 追踪。** Agentic 功能的引入往往会导致 token 消耗量 per task 显著上升，与 per-token 定价下降形成对冲。主动追踪 IER trend（上升/下降/平稳）比关注绝对值更重要，因为趋势决定了是否需要立即采取行动。
+→ [原文存档](https://www.thesaascfo.com/how-to-calculate-the-inference-efficiency-ratio/)
+
+## 相关实体
+> [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-model-research-latest-directions.md)
+
+- [How Superset built the IDE for AI agents on Vercel](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vercel-com-how-superset-built-the-ide-for-ai-agents-on-vercel.md)
+- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](https://github.com/QianJinGuo/wiki-public/blob/main/entities/what-is-urban-density-design-a-clear-guide.md)
+- [Toto 2.0: Time series forecasting enters the scaling era](https://github.com/QianJinGuo/wiki-public/blob/main/entities/toto-2.md)
+
+---
+
+## Ch16.007 Unlocking asynchronicity in continuous batching
+
+> 📊 Level ⭐⭐⭐ | 7.2KB | `entities/continuous-async.md`
+
+> 来源：[原文存档](https://huggingface.co/blog/continuous_async)
+
+## 摘要
+HuggingFace 深度技术文章，系统性地解析了连续批处理（Continuous Batching）中同步瓶颈的根源，并提出基于 CUDA streams 和 events 的异步优化方案。核心发现：同步模式下 CPU 和 GPU 交替空闲，造成近 24% 的 GPU 空闲时间；通过异步化将两者解耦后，GPU 利用率从 76% 提升至 99.4%，生成速度提升 22%。
+
+## 核心要点
+- 连续批处理默认是同步的：CPU 准备新批次时 GPU 空闲，GPU 计算时 CPU 等待，两者从不同时工作
+- 实验数据：生成 8K tokens、batch size 32、8B 模型，总时间 300.6 秒，24% 为 GPU 空闲
+- 使用 CUDA streams 将 H2D 传输、计算、D2H 传输分配到独立 stream，实现流水线并行
+- CUDA events 提供纯 GPU 侧的同步语义，CPU 调用 `wait()` 后立即返回，不阻塞
+- 双 buffer 槽位设计解决数据竞争：slot A 和 slot B 交替使用，CUDA Graphs 通过 memory pool 共享 VRAM
+- Carry-over 机制处理跨 batch 的 token 依赖：用占位符构建 batch N+1 输入，batch N 完成后填充实际 token
+- 异步化零成本：无需新 kernel 或模型修改，仅通过流管理实现
+
+## 深度分析
+
+### 同步批处理的效率陷阱
+连续批处理通过动态打包请求显著提升了 GPU 利用率，解决了传统静态批处理的 padding 浪费问题。但它的默认实现是同步的——CPU 和 GPU 严格串行交替。在高频推理场景下（每秒数百步生成），这些空闲间隙累积成显著的效率损失。
+
+HuggingFace 的实验数据揭示了这一问题的严重性：生成 8K tokens、batch size 32、8B 模型，总时间 300.6 秒，其中 24% 时间为空闲 GPU。这意味着如果能消除 CPU 开销，理论上可获得 24% 的免费加速——无需任何新 kernel 或模型修改。
+
+这种"CPU 做完 GPU 等、GPU 做完 CPU 等"的模式在单次 forward pass 中影响不大，但在 continuous batching 循环中每秒执行数百步时，空闲间隙的累积效应就变得不可忽视。文章将此称为"悲观视角"（GPU 浪费 24%）和"乐观视角"（可免费提速 24%）。
+
+### CUDA Streams 与并发执行机制
+CUDA stream 是理解异步批处理的关键基础设施。每个 stream 是 GPU 操作的顺序队列（kernel launch、memory copy、sync barrier），同一 stream 内操作串行执行，不同 stream 可并发。通过将 H2D 传输（Host-to-Device）、计算（forward pass + sampling）、D2H 传输（Device-to-Host）分配到三个独立 stream，可实现数据传输与计算的重叠执行。
+
+但存在一个关键陷阱：PyTorch 的默认 stream 具有全局同步语义——任何操作调度到默认 stream 前，必须等待所有其他 stream 完成；反之亦然。这意味着如果不显式使用非默认 stream，所有异步努力都会被默认 stream 的隐式同步破坏。因此，异步批处理的第一步是确保所有 GPU 操作都调度到非默认 stream 上。
+
+### CUDA Events 的同步语义与依赖编排
+stream 之间的独立性既是优势也是问题——它们不知道彼此的存在，导致 compute stream 可能在 H2D 传输完成前就启动，D2H 可能在计算完成前就传输结果。CUDA event 是解决这一问题的机制：通过 `stream.record(event)` 在 stream 中插入标记，GPU 执行到该点时标记完成；通过 `stream.wait(event)` 让另一个 stream 阻塞直到该 event 被设置。关键是 `wait` 只阻塞 stream，不阻塞 CPU——CPU 调用立即返回。
+
+这种纯 GPU 侧的同步使得 CPU 可以真正"放手"，让硬件自行管理依赖关系。实际的同步点只有一个：CPU 在 `d2h_done_event.synchronize()` 处阻塞等待 batch N 的输出，这是不可避免的（需要 CPU 采样 token 并更新状态），但仅占极小比例。
+
+### 双 Buffer 与 CUDA Graphs 的协同设计
+异步批处理需要在 GPU 处理 batch N 时准备 batch N+1 的输入，这引发两个核心挑战。
+
+**数据竞争与双槽位**：batch N 和 batch N+1 不能共享同一内存区域，否则 GPU 可能读到部分覆写的数据。解决方案是使用两个独立的内存槽位（slot A 和 slot B），交替使用。代价是 RAM 和 VRAM 翻倍，但使用 FlashAttention 时（不需要 attention mask——最大的输入 tensor），这个 tradeoff 通常是值得的。
+
+**CUDA Graphs 兼容性**：生产环境常使用 CUDA Graphs 加速推理（预录制的 CUDA 操作序列绑定特定内存地址）。双槽位需要两个 graph，但通过 memory pool 让多个 graph 共享池化内存，总 VRAM 接近单个 graph 的使用量。唯一约束是同一 pool 中的两个 graph 不能并发执行——由于 batch N 必须在 batch N+1 开始前完成，这一约束自然满足。
+
+**Carry-over 机制**：跨 batch 的请求需要将 batch N 的输出 token 作为 batch N+1 的输入。由于 batch N 仍在计算，该 token 尚未产生，因此用 0 作为占位符构建 batch N+1 输入。batch N 完成后通过 carry-over 操作（选择、置零、截断、相加）填充实际 token，这四个操作足够轻量，可被 CUDA Graph 捕获。
+
+## 实践启示
+1. **推理优化应关注 CPU/GPU 协同**：即使 GPU 计算能力充足，CPU 侧的批次准备调度开销可能成为瓶颈。异步化将两者解耦，让 CPU 和 GPU 同时做有用工作。
+2. **使用非默认 CUDA Stream 避免隐式同步**：在 PyTorch 中显式使用非默认 stream 处理异步操作。任何传输操作都必须是非阻塞的，否则默认 stream 的全局同步效应会破坏所有异步努力。
+3. **双 buffer 槽位是异步推理的标准模式**：任何需要"一边执行一边准备"的场景，都应考虑双缓冲。空间换时间的 tradeoff 在 GPU 内存充足时通常值得。
+4. **CUDA Graphs + Memory Pool 兼顾延迟与吞吐**：异步批处理提升吞吐量，CUDA Graphs 优化单批次延迟。通过 memory pool 可在保持 Graphs 效果的同时支持多 batch 并行，不必二选一。
+5. **Profiling 先行**：在优化模型或硬件之前，先用 profiling 工具（如 HuggingFace 提供的 CPU/GPU activity timeline 脚本）确认是否存在 CPU-GPU 交替空闲问题。22% 的加速可能是"免费午餐"。
+6. **注意 unavoidable sync point**：异步优化无法消除所有同步——CPU 仍需在每个 batch 结束时采样 token 并更新状态。这个不可避免的同步点是剩余 1% GPU 空闲的来源。
+
+## 相关实体
+- [LLM 高效推理 vLLM](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-infra-llm-efficient-inference-vllm.md)
+- [SGLang Agent 开发](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-assisted-sglang-development-lmsys-2026-07.md)
+- [推理优化](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/inference-optimization.md)
+
+→ [原文存档](https://huggingface.co/blog/continuous_async)
+
+---
+
+## Ch16.008 vLLM V0 to V1: Correctness Before Corrections in RL
+
+> 📊 Level ⭐⭐⭐ | 5.1KB | `entities/servicenow-vllm-correctness.md`
+
+> -> [原文存档](https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections)
+
+## 深度分析
+vLLM V0 到 V1 是实质性重写，而非增量迭代。ServiceNow AI 的这篇博客核心贡献是展示了在 RL 训练中进行推理引擎迁移时，如何系统性地隔离和修复正确性差距，而非直接诉诸目标函数层面的修正。
+
+**logprobs 语义不匹配是首个拦路虎。** vLLM V1 默认返回原始模型输出的 logprobs（在 temperature scaling、penalties、top-k/top-p 过滤之前），而 PipelineRL 期望的是经过采样器处理的分布的 logprobs。设置 `logprobs-mode=processed_logprobs` 修复了均值偏移，但训练曲线仍有差距——说明单一修复不够，下一个问题的根因在推理路径本身。
+
+**V1 运行时默认值引入的隐性差异。**  prefix caching（默认开启）和 async scheduling（默认开启）在 V1 中与 V0 行为不同。prefix caching 在 online RL 场景下尤其危险：前缀缓存命中可能在权重更新边界之前重用已计算状态，导致 actor 拿到过期推理结果。禁用 prefix caching 和 async scheduling 是还原 V0 等效行为的必要步骤。
+
+**inflight weight update 的语义对齐。** V0 的权重同步机制本质上是：阻塞在引擎边界 → 加载新权重 → 恢复执行，不显式清除缓存状态。V1 的等效方案是 `pause_generation(mode="keep", clear_cache=False)` → RPC 传递权重更新 → `resume_generation()`。关键在于 `mode="keep"` 和 `clear_cache=False` 匹配了 V0 的隐式语义。
+
+**fp32 lm_head 的必要性有独立文献支撑。** MiniMax-M1 技术报告已经发现 RL 训练/推理 token 概率不匹配问题并归因于 LM 输出头，ScaleRL 论文也将 fp32 logits/head 计算纳入大规模 RL 配方并 ablation 验证。这是 RL 推理引擎迁移时不可忽略的数值精度问题，因为 logprobs 直接进入策略比率、KL 和裁剪计算。
+
+## 实践启示
+**推理引擎迁移时先做后端等效性验证，再调整 RL 目标函数。** 这是 ServiceNow 最核心的经验。错误的顺序（先改目标函数再修后端）会导致目标侧的修正掩盖后端问题，使训练曲线难以解读，无法判断收益来源是目标改进还是后端补偿。
+
+**online RL 场景下 prefix caching 需要特别谨慎。** 论文描述的问题本质是：缓存的生命周期管理在权重异步更新场景下与静态推理场景不同步。如果你的 RL pipeline 有并发请求、异步调度或 inflight weight updates，prefix caching 可能引入难以察觉的状态污染。
+
+**logprobs 模式选择是 vLLM V1 迁移的第一个检查项。** 任何 PipelineRL/GSPO/PPO/GRPO 系统在切换到 V1 前，首先确认 `logprobs-mode` 设置与训练器期望一致。默认值差异会导致所有 downstream metrics（clip rate、KL、entropy、reward）全面漂移。
+
+**lag 是有用的运行时诊断信号。** 初始 V1 路径在训练后期携带更多持续性 lag，最终 V1 修正路径的 lag 曲线更接近 V0 参考。这提供了一个可直接观察的训练健康度指标——如果你的 rollout engine 和 trainer 之间的权重 lag 在训练后期持续扩大，说明后端同步机制可能存在问题。
+
+**后端等效性恢复后，下一步是 async/off-policy 清理。** 保持 rollout 时刻的 behavior policy logprobs，在优化时重新计算 trainer-side old policy logprobs，将后端差异修正与策略更新比率分离，跟踪 ESS 等诊断指标——这些是后端 parity 达成后的自然下一步。
+
+## 相关实体
+- [servicenow vllm correctness huggingface](https://github.com/QianJinGuo/wiki-public/blob/main/entities/servicenow-vllm-correctness-huggingface.md)
+
+→ [原文存档](https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections)
+
+- [vLLM V0→V1 迁移中的 logprob 差异修复](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vllm-v0-to-v1-correctness-before-corrections.md)
+- [无惧off-policy偏移！bengio团队解绑后训练，大模型rl提速50倍](https://github.com/QianJinGuo/wiki-public/blob/main/entities/trajectory-balance-asynchrony-tba-bengio-papweekly.md)
+
+---
+
+## Ch16.009 Bonsai Image 4B: 1-bit 和 Ternary 量化
+
+> 📊 Level ⭐⭐⭐ | 5.1KB | `entities/bonsai-image-4b-quantization.md`
+
+# Bonsai Image 4B: 1-bit 和 Ternary 量化
+
+> **Background**: 本文档基于对外部技术来源的评分入库建立，v×c=7×7=49。
+
+## 核心要点
+
+1-bit 和 Ternary 量化图像扩散模型 Bonsai Image 4B 的技术发布，8.3x 和 6.4x 相比 FP16 的压缩比
+
+---
+
+→ [原文存档](https://prismml.com/news/bonsai-image-4b)
+
+## 深度分析
+
+**1. Group-wise Scaling Factor 是量化质量的关键**
+
+1-bit 和 Ternary 量化的核心不在于简单地将权重二值化或三值化，而在于保留了 FP16 分组缩放因子。每个权重分组拥有独立的缩放系数，使得 1-bit 模型实际达到 1.125 有效位数，Ternary 模型达到 1.71 有效位数。这种设计在极端压缩下仍能保留大部分模型能力，是 Bonsai 系列的核心技术路径。
+
+**2. Precision-sensitive Projection Layers 保留策略**
+
+虽然主体 transformer 权重被压缩到 1-bit 或 Ternary，但约 5% 的投影层（projection layers）被保留为 FP16 精度。原文指出这些是"precision-sensitive"的组件，表明并非所有权重对量化同等敏感。这一发现意味着未来量化研究可以针对不同层类型采取差异化的精度策略。
+
+**3. Ternary 的 {−1, 0, +1} 提供了重要的表征灵活性**
+
+相比 1-bit 的 {−1, +1}，Ternary 加入了 0 状态，形成 {−1, 0, +1}。这一额外的中间态显著提升了视觉质量和提示词忠实度：Ternary 保留了原模型的 95% 性能，而 1-bit 仅有 88%。零值状态在稀疏计算中有潜在优势，可以在推理时跳过零值计算，进一步提升效率。
+
+**4. 质量–体积 Pareto 前沿的实质性推进**
+
+Bonsai Image 4B 在 6.4x 压缩下仅损失 5% 质量（GenEval 0.723 vs 0.819），而体积相似的 BK-SDM-Small（0.98GB）仅保留 42% 性能。这说明 Bonsai 的量化不是以线性质量损失为代价，而是在相同体积下实现了能力的大幅跃升，重新定义了"小模型能做什么"的标准。
+
+**5. iPhone 部署验证了移动端可行性的临界点**
+
+Bonsai Image 4B 是其参数级别上首个直接在 iPhone 上运行的图像生成模型。在 iPhone 17 Pro Max 上生成 512x512 图像仅需 9.4 秒，这意味着移动端图像生成的交互延迟已进入可接受范围。平均活跃内存 1.5–1.96GB 的表现证明极量化和架构共同构成了移动部署的可行路径。
+
+## 实践启示
+
+**1. 优先考虑 Ternary 量化作为质量–压缩平衡点**
+
+如果应用场景对图像质量有要求，Ternary 的 6.4x 压缩比和 95% 性能保留是更优选择。只有在极端内存约束（如 1GB 以下 transformer）时，才考虑 1-bit 方案。Apache 2.0 许可下可直接商用，无需考虑授权成本。
+
+**2. 结合 [Ai Infra Llm Efficient Inference Vllm](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-infra-llm-efficient-inference-vllm.md) 进一步降低推理延迟**
+
+虽然 Bonsai 本身已针对 Apple Silicon（MLX）和 CUDA（Gemlite）做了 kernel 优化，但在端侧部署时可结合推理优化技术（如批处理策略、KV cache 管理）进一步提升吞吐。Bonsai Studio iOS app 的部署案例提供了参考实现路径。
+
+**3. 利用文本编码器 offloading 策略降低运行时内存**
+
+在 512x512 图像生成时，平均活跃内存（1.5GB / 1.96GB）显著小于总部署 payload（3.42GB / 3.88GB），因为文本编码器在提示词编码完成后即可卸载。这一策略可直接应用于类似架构的部署优化，在长 prompt 场景下收益尤其明显。
+
+**4. 关注 zero-state 的稀疏计算加速潜力**
+
+Ternary 权重中的零值可以在推理时跳过相关计算，结合稀疏 kernel 可能实现进一步加速。这意味着在设计端侧推理 engine 时，应考虑对 {0} 值的条件分支优化或 mask 化处理。
+
+**5. 评估跨平台推理栈的统一抽象层**
+
+Bonsai 同时支持 Apple Silicon（MLX）和 CUDA（Gemlite），对于需要跨平台部署的团队，建议关注 MLX（Apple）和 Gemlite（NVIDIA）背后的底层 kernel 差异，或探索如 llama.cpp 风格的统一推理抽象，以同时覆盖手机端和桌面端 GPU 场景。
+
+## 相关实体
+
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/vision-multimodal.md)
+
+---
+
+## Ch16.010 Apple Siri 私有推理（Private Inference）不私有：三个对抗者都不受加密学保护
+
+> 📊 Level ⭐⭐⭐⭐ | 16.5KB | `entities/apple-siri-private-inference-lethal-trifecta-matthew-green.md`
+
+# Apple Siri 私有推理（Private Inference）不私有：三个对抗者都不受加密学保护
+
+> **Source**：[原文存档（Matthew Green / Cryptography Engineering, 2026-06-09）](https://blog.cryptographyengineering.com/2026/06/09/apples-siri-ai-or-more-shouting-into-the-void-about-private-agents/)
+
+## 核心论点
+
+Apple 2026-06-08 宣布 Siri AI 与 Google Gemini + Apple Private Cloud Compute (PCC) 整合的方案。PCC 设计目标：通过专用 Apple Silicon 服务器 + 加密传输 + 无状态推理，确保**用户数据在 inference 阶段不被 Apple/Google 看到**。
+
+**Matthew Green 的反论点**：PCC 只能防御 *operator* 对 inference 数据的偷看，但**当 agent 必须与外部世界对话时（search LLM 查询、calendar invite、text message 发送），隐私就完全依赖 agent 的 discretion / prompting / 法律管辖**——而这三者**都不在加密学的保护范围内**。
+
+## 三个对抗者（Adversary）分析
+
+### 对抗者 1：Search Operator 的数据货币化
+
+Agent 要完成任务（如"为下周聚餐找餐厅"）必然需要：(a) 读取私人上下文（messages, email, calendar），(b) 向非私有 search LLM（Gemini / ChatGPT / Claude）查询具体要求。
+
+**数据泄漏路径**：
+```
+private context (on device)
+    ↓
+agent 提取 30 个 facts about attendees / 会议目的
+    ↓
+上传至 public search LLM：
+"Hey, LLM search engine, here is a list of thirty detailed facts
+about my attendees and the purpose of this meeting, find me a
+restaurant that works for everyone."
+```
+
+**结果**：即使 inference 完全 private（无 Apple/Google 直接读取），30 个 facts 已经通过 search LLM 查询**外流**到 search operator。Google（运营 search LLM）获得所有这些 facts 的副本。
+
+**经济学动机**：Generative AI 让"知道用户私密信息"变得 *wildly more lucrative* 用于广告定向。如果 search operator 同时**设计 prompting + 训练 model + 提供 search LLM**，这是数据货币化的 best-case 场景。
+
+### 对抗者 2：Remote Prompt Injection（致命三要素 Lethal Trifecta）
+
+**Simon Willison 的 Lethal Trifecta 定义**：当一个 agent 同时具备 (a) 访问私人数据、(b) 解析不可信内容、(c) 发送外部通信能力时，就形成**远程 prompt injection 数据外流的完美条件**。
+
+**Apple Siri AI 场景**：
+- (a) 访问 iMessage / email / contacts / notes → ✅
+- (b) 解析不可信内容（incoming emails, text messages, web content）→ ✅
+- (c) 发送 calendar invites, text messages → ✅
+
+**结果**：Apple Siri AI 是 lethal trifecta 的 nightmare case。即使 private inference 完美设计，**任何能 induce agent 误行为的人**（attacker）都能触发数据外流。
+
+**当前未解决**：OpenAI 2026-06-06 推出 "lockdown mode"（限制 ChatGPT web search 防止 prompt injection upload sensitive docs）本身就证明**问题远未解决**。
+
+**未来威胁放大**："If you think spam directed at humans is bad, wait until it's spam directed at agents."
+
+### 对抗者 3：政府管辖（Government Surveillance）
+
+Agent 看到用户的所有数据后，技术上能**检测犯罪行为**（CSAM、terror、tax fraud）。
+
+**法律压力点**：
+- **UK OFCOM**：要求加密 messengers 检测 CSAM
+- **EU Commission Chat Control proposals**：类似方案
+- **UK Technical Capability Notices (TCNs)**：可强制全球设备变更
+- **US 4th Amendment**：仅限制 government，但**私公司（Apple/Google）可先 collect crimes → 报告给 government**（Apple 2021 CSAM scanning 提案即如此）
+
+**关键洞察**："the difference between a helpful private agent, a corporate advertising bot, and a government spy comes down mainly to a matter of prompting, and maybe a bit of model fine-tuning"——**prompt 决定一切**。
+
+## 加密学的本质局限
+
+**加密学的传统承诺**：*remove trust*——用"I can't" 替代 "I promise not to look"。
+
+**Private inference 的局限**：对抗**设计 private inference 的对手**（执行 inference 的 provider）时，private inference 也许有效。但这只是 agentic system 的**极小一片**。
+
+**真实对手**：直接与 model 交互的对手，或**设计 model / 指定其技术要求**的对手。**没有任何加密学原语**能保护用户免于：
+- "upload your search facts to Google"（prompting 行为）
+- "report anything suspicious to the government because I programmed you that way"（model fine-tuning）
+
+**结论**："That protection, if it exists at all, lives in law and politics and corporate incentives: the exact messy human institutions that cryptography was invented to let us stop trusting."
+
+## 与现有实体的差异化定位
+
+| 维度 | `end-to-end-encrypted-ml-inference-sagemaker-fhe`（AWS FHE） | 本 entity（Apple PCC） |
+|---|---|---|
+| 加密原语 | Fully Homomorphic Encryption (FHE) 端到端 | 硬件 enclave + 加密传输 + 无状态推理 |
+| 防御对象 | 模型本身看不到 plaintext（数学保证） | Operator 看不到 plaintext（硬件保证） |
+| 失败模式 | 计算成本高，不实用 | 突破到 agent 外部对话时完全失效 |
+| 适用场景 | 一次性 inference（文档摘要等） | 持续 agent 任务（搜索、订餐、消息） |
+| 作者视角 | 工程方案（AWS 实施细节） | 安全批判（cryptographer's lens） |
+
+**互补关系**：两者都试图用 cryptographic primitives 解决 ML inference privacy，但**FHE 局限于纯 inference 任务，Apple PCC 在 agent 场景下被 prompt + 行为流绕过**。Green 文章的核心贡献是指出"private inference ≠ private agent"的关键区分。
+
+## 与 [Simon Willison vibe-coding](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vibe-coding-agentic-engineering-convergence-simon-willison.md) 的呼应
+
+Willison 的 **lethal trifecta** 框架（被 Green 引用）是同一问题的另一个 framing：Willison 从 LLM application 角度（数据访问 + 不可信输入 + 出站通信）描述 agentic 系统固有的安全风险，Green 从 cryptographic 角度证明**即使最强的 private inference 设计也无法缓解这个风险**。两者是**lethal trifecta 的两层解释**：
+- Willison：识别 trifecta 模式
+- Green：证明 cryptographic primitive 无法防御 trifecta 的 prompt injection 路径
+
+## 实践启示
+
+1. **评估 agent 隐私风险时，不能只看 inference 阶段**。一个 agent 即使使用 private inference，只要它 (a) 能读私人数据 + (b) 解析不可信输入 + (c) 能发送外部通信，就已经处于 lethal trifecta 中。
+2. **法律/政策/公司激励**比 cryptographic primitive 更重要。Apple/Google 自身的商业激励（广告 / 商业模式）就是数据货币化的源头。
+3. **OpenAI 2026-06 lockdown mode** 证明即使 frontier labs 也无法工程化解决 prompt injection。Agent 安全需要**整体架构**（隔离 agent、限制权限、人类审批循环）而非 cryptographic 修补。
+4. **未来监管方向**：EU/UK 已经把 CSAM detection 法律延伸到 AI agent 层面。任何大规模部署 personal AI agent 的公司必须考虑这些法律风险。
+
+## 与现有实体的关联
+
+- [End To End Encrypted Ml Inference Sagemaker Fhe](https://github.com/QianJinGuo/wiki-public/blob/main/entities/end-to-end-encrypted-ml-inference-sagemaker-fhe.md)：互补（不同加密学原语，同一目标）
+- [Vibe Coding Agentic Engineering Convergence Simon Willison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vibe-coding-agentic-engineering-convergence-simon-willison.md)：lethal trifecta 概念同源
+- [Apple Silicon Costs More Than Openrouter](ch01/082-apple-silicon-costs-more-than-openrouter.html)：Apple 硬件成本视角
+- [Apple Corecrypto Formal Verification Blueprint](https://github.com/QianJinGuo/wiki-public/blob/main/entities/apple-corecrypto-formal-verification-blueprint.md)：Apple 加密学基础设施
+
+## 深度分析
+
+### 核心观点：Private Inference ≠ Private Agent
+
+Matthew Green 的核心贡献是建立了 **"private inference" 与 "private agent" 之间的关键区分**。Private Cloud Compute（PCC）设计的目标是确保用户数据在 inference 阶段不被 Apple/Google 看到——这是一个技术边界明确的问题。然而，当 Siri 作为 agent 必须与外部世界交互时（search LLM 查询、calendar invite、text message 发送），数据流就脱离了加密学的保护范围。这个区分对整个 personal AI agent 领域都有深远意义：即使每个 provider 都实现了 private inference，agent 作为整体系统仍然可能暴露用户数据。
+
+### 技术要点：加密学对 "行为" 无能为力
+
+加密学的传统承诺是 *remove trust*——用 "I can't" 替代 "I promise not to look"。Private inference 可以在这个意义上保护 inference 数据，但**无法保护 agent 的 prompting 行为**。当 agent 被指示 "上传你的搜索事实到 Google"（通过 prompt engineering）或 "因为我是这样编程的所以报告任何可疑行为"（通过 model fine-tuning），这些都是在加密学保护范围之外的。Green 的洞察是：prompt 决定一切，prompt 可以绕过任何 cryptographic primitive。
+
+### 实践价值：Lethal Trifecta 是架构性缺陷而非实现 bug
+
+Simon Willison 的 lethal trifecta（私人数据访问 + 不可信输入解析 + 出站通信能力）被 Green 证明是**任何 agentic 系统的架构性特征**，而非某个实现的 bug。Apple Siri AI 是 lethal trifecta 的 nightmare case，因为它同时具备 iMessage/email/contacts 访问、不可信内容解析、以及发送 calendar invites/text messages 的能力。这意味着**不存在"安全的 agent architecture"——只有将 trifecta 的某个环节最小化或隔离的工程权衡**。
+
+### 核心观点：法律管辖比技术更能突破隐私保护
+
+对抗者 3（政府监控）展示了加密学保护的根本局限：当 UK OFCOM 要求加密 messengers 检测 CSAM、EU Chat Control 提案延伸法律到 AI agent、企业被强制先收集犯罪证据再报告政府时，技术上的加密学保护被**法律强制力直接绕过**。Apple 2021 CSAM scanning 提案就是这种模式的具体案例——私公司被法律压力转化为 government spy 的前端。Private inference 保护不了这种情况。
+
+### 技术要点：数据货币化激励使 search operator 成为对抗者
+
+当 search operator 同时设计 prompting + 训练 model + 提供 search LLM 时，用户搜索事实成为广告定向的原材料。Generative AI 让"知道用户私密信息"变得 *wildly more lucrative*。这意味着**数据货币化的激励结构本身就是隐私威胁的源头**——即使 PCC 技术完美，只要 agent 需要调用外部 search LLM，数据就会流向有商业动机货币化它的对手。
+
+## 实践启示
+
+### 1. 评估 agent 隐私风险必须追踪完整数据流
+
+评估任何 personal AI agent 的隐私风险时，不能只看 inference 阶段的技术指标。必须追踪完整数据流：私人数据从哪里进入 agent、经过哪些处理节点、以什么形式流向外部服务。即使每个节点都"合规"，整体数据流可能已经暴露了用户的私密事实。**数据流追踪是隐私评估的第一步**。
+
+### 2. 打破 lethal trifecta 是 agent 架构设计的核心目标
+
+当 agent 同时需要 (a) 访问私人数据、(b) 解析不可信内容、(c) 发送外部通信时，它就处于 lethal trifecta 中。架构设计的目标应该是**最小化同时满足三者的场景**：例如，使用隔离的 sandbox 处理不可信内容；将敏感数据访问限制在最小权限范围内；在发送外部通信前加入人类审批循环。参见 [Agent Security Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-security-architecture.md)。
+
+### 3. Prompt injection 防御需要主动的内容隔离策略
+
+Remote prompt injection 是 lethal trifecta 被 exploit 的主要路径。"If you think spam directed at humans is bad, wait until it's spam directed at agents." 防御策略包括：对所有外部来源内容进行 sandboxed 解析；使用 prompt 过滤和清理；在 agent 的 system prompt 中明确区分可信指令和外部内容。参见 [Prompt Injection Defense](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/prompt-injection-defense.md)。
+
+### 4. 法律合规需要提前布局——尤其是涉及跨司法管辖的 AI agent
+
+UK Technical Capability Notices (TCNs) 可以强制全球设备变更，EU Chat Control 提案将 CSAM detection 法律延伸到 AI agent 层面。任何计划部署 personal AI agent 的公司必须**在产品设计阶段就考虑目标市场的法律环境**，而不是在法律通过后才被动合规。政府监控这条路径在加密学上完全无法防御。
+
+### 5. 隐私保护需要技术 + 法律 + 商业激励三位一体
+
+Green 的结论是：隐私保护（如果存在）活在法律、政策和商业激励中——正是那些" messy human institutions " cryptography 被发明来让我们停止信任的东西。对于 AI agent 的隐私，不能依赖单一的技术解决方案（无论是 private inference 还是 FHE），而需要**技术边界 + 法律保护 + 商业激励重新设计**三者配合。
+
+## 参考链接
+
+- Original article: https://blog.cryptographyengineering.com/2026/06/09/apples-siri-ai-or-more-shouting-into-the-void-about-private-agents/
+- Simon Willison's lethal trifecta: https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/
+- Apple Private Cloud Compute expansion: https://security.apple.com/blog/expanding-pcc/
+- Google Confidential Inference: https://blog.google/innovation-and-ai/products/google-private-ai-compute/
+
+---
+
+## Ch16.011 EAGLE-3 投机解码与 USP 长序列训练优化
+
+> 📊 Level ⭐⭐⭐⭐ | 14.2KB | `entities/eagle-3-speculative-decoding-optimization.md`
+
+## 核心问题：为什么 Agent 场景需要 EAGLE-3
+Agent 场景（自动化代码工程、长文档分析、多轮工具调用）带来了与大模型传统推理场景截然不同的挑战：
+| 维度 | Chat 场景 | Agent 场景 |
+|------|-----------|-----------|
+| 上下文长度 | 千级 token | 64K/128K+ |
+| 延迟容忍度 | 秒级可接受 | 复合放大，10轮循环可达分钟级 |
+| 高熵片段密度 | 低 | 高（工具调用、链式推理） |
+| Accept Len 稳定性 | 较稳定 | 骤降风险大 |
+**投机解码加速效果取决于两个因素**：
+1. Draft 生成成本
+2. Accept Len 的长度与稳定性
+关键不在于"有没有 Draft"，而在于 Draft 能否以较低的成本，持续生成可被稳定接收的长序列草稿。
+
+## EAGLE-3 vs MTP：为什么长序列要选 EAGLE-3
+**MTP 的局限**：在一次前向中直接生成多步候选，一旦早期 token 出现偏差，后续更容易出现连锁放大。工程上通常将有效步长控制得较短，通过校验/回退机制降低风险，但限制了整体加速收益。
+**EAGLE-3 的核心创新：TTT（Training-Time Test）**：
+
+- 训练时不再只依赖 ground truth 历史，而是让 Draft 先前向生成一段 token，再将这些"自生成的历史"用于下一步训练
+- 本质：把推理流程搬进训练，让模型在训练阶段即适应"带误差历史"的输入环境
+- 效果：连锁误差提前暴露到训练过程，使模型学会在"带误差历史"下维持更长的稳定接收长度 
+**对比结果**（滴滴实测）：
+
+- EAGLE-3 Accept Len ≈ MTP 的 **2.2–2.3×**
+- EAGLE-3 Mean TPOT ≈ MTP 的 **41%**（降低约 59%）
+- EAGLE-3 P95 TPOT 比 MTP 低 **35%–44%**
+
+## EAGLE-3 训练为什么容易 OOM
+### 显存放大的两个"放大器"
+**放大器 1：多层特征参与训练**
+EAGLE-3 融合 Target 的低层/中层/高层特征，提升多步预测稳定性，但需要保留多层特征参与计算 + 保存更多中间激活。
+**放大器 2：TTT 的多步展开**
+普通 SFT 基本是"一次前向算完 loss"。TTT 需要将过程展开 k 次（模拟 k 步 decode），反向传播需要保存每一步的中间结果，显存开销近似按 k 倍放大。
+**公式**：显存问题 = L（序列长度）× k（TTT 展开步数）× 多层特征额外中间态
+
+### 为什么不是参数问题
+即使 Draft 参数量约 1.5B 不算大，但长序列训练时：
+
+- Attention 中间激活（Q/K/V 张量、softmax 相关中间量）随 L 快速增长
+- TTT 多步展开引入 k 轮中间态堆叠
+- 128K 下单卡训练无法启动
+**瓶颈在激活，不在参数**——所以必须引入 SP（Sequence Parallelism）。
+
+## 解决方案：USP（Unified Sequence Parallelism）
+### 两种序列并行方式
+| 方式 | 切分维度 | 优点 | 缺点 |
+|------|---------|------|------|
+| **Ulysses** | 按 head 维度（All-to-All） | 吞吐易提升 | 切分粒度受 head 数限制，长序列时显存仍难覆盖 |
+| **Ring** | 按序列/token 维度 | 显存随 SP 规模近似线性下降 | 通信更频繁 |
+
+### USP 核心设计：三步走
+```
+Step 1（主干 Main）：ring attention
+  → 主干历史按 token 分片分布到多卡
+  → ring 通信完成 causal attention 计算
+  → 得到 Out_main + LSE_main
+Step 2（分支 Branch）：本卡增量更新
+  → TTT 分支仅涉及少量新增 token 的 KV（通常 ≤7 步）
+  → 单卡承担的主干分片往往达万级 token
+  → 无需 ring 跨卡，本卡完成增量计算
+  → 得到 Out_branch + LSE_branch
+Step 3（Fusion）：流式 softmax 融合
+  → 分支结果作为增量并入主干
+  → 采用流式 softmax 保持数值稳定
+  → 保证归一化口径一致
+```
+
+### USP 解决的三个工程目标
+1. **显存可控**：每张卡仅需保存 1/SP 的主干 KV 与中间态
+2. **训练更稳**：LSE 融合保证分布式切分下归一化口径一致，训推一致，Accept Len 稳定
+3. **吞吐更高**：最重主干计算走高效 ring attention 路径，分支走轻量级增量更新
+
+## 工程实践：三块地基
+### 1. 输入与 loss 计算都按 SP 分片
+- 将"切分"前移到数据入口
+- 每个 SP rank 仅加载自身对应 token 分片
+- loss/metric 按 SP 口径处理
+- 效果：显存随 SP degree 基本线性缩放
+
+### 2. 统一训练口径
+- 引入 adapter 抽象层
+- 将 step view、分布式 loss/metric reduction、position_ids 等训练口径统一收敛
+- 减少长序列训练中最难定位的"漂移问题"
+
+### 3. 压缩 hidden states
+- 磁盘占用下降约 25%
+- Accept Len 不变（1.93 vs 1.93）
+- time/step 仅增加 4%（0.45s → 0.47s）
+
+## 当前挑战
+1. **OOD（分布偏移）双因素驱动**：
+
+   - OOD-A：数据/流程分布漂移（提示词模板、工具参数、工作流编排变化）
+   - OOD-B：模型能力不足（现有 Draft 表达能力/泛化能力不足）
+   - 两者缺一不可：需要更快训练更新机制 + 更强更可泛化的 Draft 能力
+2. **长序列训练与特征管线成本仍高**：
+
+   - Offline：依赖 hidden states 落盘与搬运，TB 级存储
+   - Online：Target 特征生成与训练过程强耦合，容易与线上服务争抢资源
+3. **系统要面向"稳定收益"**：P95/P99 的稳定收益比 mean 更重要
+4. **算法快速演进**：需要抽象出"数据/特征接口、验证接口、调度策略"以支持范式演进
+
+## 后续规划
+- **A**：分离式特征生成 + 训练解耦（复用 Mooncake store 样本）
+- **B**：近线/在线快速迭代（周/月级 → 天级/小时级）
+- **C**：更强表达的 Draft + 路由专精（MoE / Routing Draft）
+- **D**：面向未来范式的可插拔框架
+
+## 深度分析
+### EAGLE-3 的本质：训练-推理分布对齐
+EAGLE-3 之所以能在长序列 Agent 场景取得显著超越 MTP 的效果，核心在于其 TTT 机制彻底弥合了训练与推理之间的分布偏差。传统 SFT 以 ground truth 历史 token 为条件进行训练，但推理时模型实际面对的是自己生成的历史——这个"自生成历史"与"ground truth 历史"的分布差异在短序列场景下不显著，但在长序列高熵片段（工具调用、链式推理）中会被急剧放大，导致 Accept Len 骤降。
+TTT 的解决思路是"让训练过程模拟推理过程"：Draft 模型先生成一步预测，再用这个预测结果作为下一步输入，循环往复。通过这种方式，模型在训练阶段就习惯了"带误差历史"的输入环境，连锁误差得以在训练过程中提前暴露并被学习。
+
+### USP 的设计哲学：主干稳、分支轻、融合准
+USP 的三步设计（ring attention 主干 → 本卡增量分支 → 流式 softmax 融合）体现了明确的工程哲学：
+
+- **主干稳**：最重的计算（万级 token 的主干历史）走 ring attention 路径，通信模式稳定，计算密度高
+- **分支轻**：TTT 分支仅涉及 ≤7 步增量，单卡即可完成，无需跨卡通信开销
+- **融合准**：采用流式 softmax 持续维护归一化过程，保证 LSE 融合的数值稳定性，确保训推一致性
+
+### 显存瓶颈的根源：激活而非参数
+文章反复强调"EAGLE-3 的显存问题来自激活而非参数"，这个判断具有重要的工程含义：
+1. 单纯缩小 Draft 参数量并不能解决 OOM 问题
+2. 序列并行（SP）是解决问题的唯一有效路径，因为激活随序列长度 L 超线性增长
+3. 选择 ring attention 而非 Ulysses，是因为长序列场景下显存压力是主要矛盾，ring 的线性扩展特性更适配
+4. 分支走本卡增量更新而非全局 ring，避免了 TTT 多步展开带来的通信瓶颈
+
+### OOD 问题的双因素框架
+滴滴提出的 OOD-A（数据漂移）和 OOD-B（模型能力不足）构成的双因素框架，对理解投机解码的长期维护具有重要价值：
+
+- OOD-A 意味着系统需要更快的训练更新周期（周/月级 → 天级/小时级），这驱动了近线/在线训练的需求
+- OOD-B 意味着 Draft 模型本身的表达能力是瓶颈，MoE / Routing Draft 是值得探索的方向
+- 两者相互独立又相互加强：即便数据分布稳定，Draft 泛化能力不足也会导致 Accept Len 下降；即便 Draft 能力足够，数据/流程的变化也会使其失效
+
+## 实践启示
+### 1. 投机解码选型：先分析场景特征，再选算法
+不是所有场景都适合 EAGLE-3。其核心收益来源是"长上下文 + 高熵片段"带来的 Accept Len 提升。如果业务场景的上下文长度在 4K 以内且熵较低（闲聊、问答），MTP 可能已经足够。EAGLE-3 的优势需要 64K+ 上下文长度才能充分发挥。
+
+### 2. 长序列训练的第一步是搞清楚瓶颈在哪
+在投入 SP 之前，需要先确认瓶颈是激活还是参数。方法：单卡跑一个前向，监控显存占用，如果模型参数本身不超显存但激活导致 OOM，则必须引入 SP。盲目扩大集群规模而不对应调整并行策略，可能反而引入不必要的通信开销。
+
+### 3. USP 三步走的工程可借鉴性
+USP 的"主干 ring + 分支本卡 + 流式融合"设计不只适用于 EAGLE-3，任何涉及"长序列主计算 + 短序列增量分支"的场景都可借鉴。其核心思想是将"最重的部分用最高效的并行方式处理，最轻的部分用最低开销的方式处理"，流式 softmax 保证了两者融合时的数值稳定性。
+
+### 4. 训推一致性是 Accept Len 稳定的前提
+滴滴在 USP 设计中特别强调 LSE 融合保证归一化口径一致，训推一致。这个教训在实际工程中容易被忽视：很多团队在训练侧做各种优化但忽视与推理侧的一致性，最终导致训练时指标好看但推理时 Accept Len 不稳定。
+
+### 5. 系统设计要面向 P95/P99 而非 mean
+滴滴强调"P95/P99 的稳定收益比 mean 更重要"，这对生产系统设计具有普遍意义。均值优化容易让长尾问题被掩盖，但长尾延迟在 Agent 多轮循环场景下会直接转化为用户体验的剧烈波动。面向 P95/P99 优化意味着在系统设计时需要预留足够的 buffer，而非单纯追求平均吞吐。
+
+### 6. 算法快速演进期，infra 必须可插拔
+滴滴在规划中特别提到"算法快速演进，需要抽象出数据/特征接口、验证接口、调度策略"，这在当前投机解码算法快速迭代的背景下非常重要。建议在设计系统初期就将 Draft 模型视为可替换组件，预留特征管线的抽象接口，避免新算法出来后需要大幅重构 infra。
+
+### 7. hidden states 压缩是值得投入的工程优化
+滴滴的实验显示，hidden states 压缩可降低约 25% 磁盘占用，同时 Accept Len 完全不变（1.93 vs 1.93），time/step 仅增加 4%。这是一个回报率非常高的优化方向，尤其在需要存储/搬运大量中间特征的离线训练场景。
+
+### 8. 在线特征生成的资源隔离问题不可忽视
+滴滴指出"Online 特征生成与线上服务争抢资源"是当前痛点之一。建议在架构设计阶段就将特征生成管线与在线服务在不同资源池中部署，避免资源竞争导致的延迟尖峰。
+
+## 参见
+- [原文存档](https://mp.weixin.qq.com/s/PZMX-55W_gqJKtHIYXJVyA)
+- [SpecForge GitHub PR #425](https://github.com/sgl-project/SpecForge/pull/425)
+- [SpecForge GitHub PR #454](https://github.com/sgl-project/SpecForge/pull/454)
+
+## 相关实体
+> [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-model-research-latest-directions.md)
+
+- [小米AI — ICML 2026 论文矩阵（11篇）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/xiaomi-ai-icml-2026-11papers.md)
+- [OpenClacky — Prompt Cache 命中率 90% 的 Harness 工程实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclacky-harness-prompt-cache.md)
+- [百度文心大模型后训练进化（ERNIE 3.0→5.0）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/baidu-wenxin-post-training-evolution.md)
+
+---
+
+## Ch16.012 PithTrain：陈天奇 + CMU Flame Center 推出的 agent-native MoE 训练框架（11K Python / 双重效率）
+
+> 📊 Level ⭐⭐⭐⭐ | 12.1KB | `entities/pith-train-agent-native-moe-training-framework.md`
+
+## 摘要
+
+**PithTrain 是陈天奇团队（MLC-AI）+ CMU Flame Center 联合推出的精简 agent-native MoE 训练框架**，约 **1.1 万行 Python**，训练吞吐追平生产级（差距 < 1.4%），同时**显著降低 AI coding agent 使用成本**。
+
+**核心贡献**：提出 **agent-task efficiency** 作为与训练吞吐并列的第二维度，定义"agent 完成任务所需成本"。在 Claude Code Opus 4.7 + 固定任务的对照实验中，PithTrain **最多减少 62% 对话轮数、节省 64% GPU 时间、少用 78% 输出 token**。
+
+## 双重效率（dual efficiency）
+
+- **训练吞吐**：tokens/s, MFU。PithTrain 追平 Megatron-LM/DeepSpeed（差距 < 1.4%）
+- **agent-task efficiency**：完成任务所需成本（轮数/GPU 时间/token）。PithTrain **最多 62% 轮数 ↓、64% GPU 时间 ↓、78% token ↓**
+
+两者**并不矛盾**：1.1 万行 Python + 四条设计原则同时实现。
+
+## 四条 agent-native 设计原则
+
+**一、精简**
+- 1.1 万行 vs 成熟生产级十几万行
+- 关键洞察：coding agent 支持 20 万-100 万 token 上下文 → 精简代码让 agent **有能力在一个上下文窗口内把整个框架全读进来，一览无余**
+
+**二、Python-native**
+- 整个栈纯 Python → agent 自始至终只集中在一门语言
+- 报错：清晰 Python traceback，不用等编译扩展重新 build
+- Triton 写少数 kernel → 训练首次跑到时自动 JIT 编译
+
+**三、不要 implicit indirection**
+- 不存 callable、不查 registry、不用字符串解析、若干模型不共用 modeling 骨架
+- 每个模型老老实实待在 `models/` 下专属于它的文件里，自成一体
+- Tradeoff：略微牺牲"跨模型复用"换"一个模型能在一处从头读到尾"
+
+**四、提供 agent skills**
+- 人类开发者经验知识 agent 光靠读代码读不出来（多卡 run 怎么起、正常 loss 曲线长什么样、profile 怎么搞才干净）
+- agent skill = 简短、即时加载的 playbook，传授经验的绝佳方式
+- PithTrain 打包一组 agent skills：移植模型 / profile 显存 / 跑 Nsight Systems trace / 验证正确性
+- **每个 skill 落到一个具体可执行脚本，给出明确 PASS/FAIL 结果**
+
+## 性能基准
+
+**吞吐**：在 H100/B200、BF16/FP8、单机/多机、Qwen3-MoE/GPT-OSS 测试中**追平 Megatron-LM/DeepSpeed**。靠的全是标准手段：
+- DualPipeV + EP 计算-通信 overlap
+- torch.compile
+- 延迟计算 weight gradient
+- 融合 SwiGLU kernel
+- Expert dispatch 去重
+- 跨 micro-batch 复用 FP8 权重
+
+**正确性**：预训练 loss 曲线在几十亿 token 尺度与生产级一致；6 个下游 benchmark 精度落在统计噪声范围；checkpoint 导出 HuggingFace 格式可在 vLLM/SGLang/lm-evaluation-harness 跑。
+
+## Agent-Task Efficiency 量化
+
+**方法学创新**：常规 coding agent benchmark（SWE-bench）固定代码库、轮换不同 agent；PithTrain **固定 agent + 任务，每次只替换底层框架** → agent 表现差异只可能来自框架本身。
+
+**三档任务**：
+- **Understand**：回答"device mesh 怎么搭起来的"等 12 个问题
+- **Operate**：环境配好、训练跑通、采集 routing trace、profile 报最慢 3 个 kernel
+- **Extend**：移植 4 个新架构（Differential Transformer / DynMoE / MoBA / MoE++）
+
+**结果（固定 Claude Code Opus 4.7）**：
+
+- **Understand**：最多 **67% 轮数 ↓**，每轮 token 更少
+- **Operate (Getting Started)**：88→26 轮（70% ↓），78% token ↓；一半代码精简，一半 agent skill 自触发
+- **Extend (DynMoE)**：62% 轮数 ↓；bug 落在刚改文件 + Python traceback
+- **Extend (4 架构 GPU 时间)**：比 Megatron-LM 省 **44%**，比 TorchTitan 省 **64%**
+- **Skill 对口任务**：轮数砍掉约 **70%**
+
+**具体 MoBA 例子（editing 阶段 token）**：
+- PithTrain 4.7K
+- Megatron-LM 13.1K
+- TorchTitan 22.2K
+
+**Exploring 阶段**：PithTrain 2.2K vs Megatron-LM 10.2K。
+
+## 三层架构
+
+- **应用层**：训练循环
+- **引擎层**：DualPipeV scheduler、优化器、checkpointing
+- **算子层**：custom Triton kernel
+
+**支持**：NVIDIA Hopper + Blackwell、BF16/FP8、Qwen3-MoE/GPT-OSS。四种并行：pipeline（DualPipeV schedule）/ FSDP / context / expert。
+
+## 团队与背景
+
+- **作者**：赖睿航（CMU CS Ph.D.）
+- **指导**：Todd Mowry、熊辰炎、陈天奇
+- **合作者**：Hao Kang、Haozhan Tang、Akaash Parthasarathy、Zichun Yu、邵俊儒
+- **机构**：CMU Flame Center + 陈天奇团队（MLC-AI）
+- **GitHub**：https://github.com/mlc-ai/pith-train
+- **Paper**：https://arxiv.org/abs/2605.31463
+
+## 与现有实体的关系
+
+- **与 [Skill 自进化三路线](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-self-evolution-three-approaches.md)** 呼应：PithTrain 的 agent skills 哲学与 SkillOS/SkillOpt 一脉相承（>30% 重复劳动 → 技能化）
+- **与 [SaaS-Bench](https://github.com/QianJinGuo/wiki-public/blob/main/entities/saas-bench-gui-agent-eval-unipat.md)** 平行：两者都创建"为 agent 量身定制的工程指标" —— SaaS-Bench 测 GUI Agent 完成率，PithTrain 测训练框架的 agent-task efficiency
+- **与 [Matt Van Horn 22 黑客技巧](https://github.com/QianJinGuo/wiki-public/blob/main/entities/matt-van-horn-claude-code-workflow-philosophy.md)** 呼应：Matt 的"任何做超过 2 次的事 → 技能"是 PithTrain agent skills 哲学的应用层验证
+- **与 [Agent 六机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-self-improvement-six-mechanisms.md)** 平行：双重效率思想是六机制中"系统-环境协同"的具体实现
+
+## 核心洞察
+
+> "如今 coding agent 基本支持 20 万到 100 万 token 的上下文窗口，代码足够精简意味着 agent 有能力在一个上下文窗口内把整个框架全读进来，一览无余，而不必反复 grep、四处摸索。"
+
+> "PithTrain 的做法刚好'相反'：维持 agent 不变、任务不变，每次只替换底下那套框架。这样一来 agent 表现差异只可能是框架带来的，跟模型本身无关。"
+
+## 深度分析
+
+**一、dual efficiency 标志着 AI 基础设施评估进入二维时代**。传统框架只追训练吞吐（tokens/s, MFU），PithTrain 引入 agent-task efficiency 作为并列维度——衡量 agent 完成任务所需成本。这两者并不矛盾，1.1 万行 Python + 四条设计原则可以同时实现。dual efficiency 的提出意味着，未来评估 AI 训练框架，不能只看 GPU 峰值，还要看 agent 实际用起来贵不贵。
+
+**二、"Python-native + 不要 implicit indirection" 本质上是面向 20 万–100 万 token 上下文窗口的代码哲学**。当 agent 能在一个上下文窗口内读完整个框架时，代码的"可全景化"就成了新的设计约束。人类工程师习惯用间接层和 registry 管理复杂度，agent 却因此需要跨多个文件跳转才能理解一个模型——这是给 agent 写代码和给人写代码的核心分歧。
+
+**三、agent skill 是把人类隐性经验转移给 agent 的最佳载体**。多卡 run 怎么起、正常 loss 曲线长什么样、profile 怎么搞才干净——这些人类靠经验积累的知识，agent 只读代码永远读不出来。Playbook 式的短脚本 + PASS/FAIL 判定，是目前最高效的经验传递方式。这与 SkillOS/SkillOpt 的"超过 30% 重复劳动 → 技能化"思路一脉相承。
+
+**四、agent-task efficiency 的方法学创新在于"固定 agent、替换框架"**。常规 benchmark 固定任务、轮换 agent；PithTrain 固定 agent 和任务、只换底层框架——这样 agent 表现差异只可能是框架带来的。这个方法学可以推广到所有"框架 vs agent 表现"的研究中。
+
+**五、PithTrain 的 agent-native 设计原则重新定义了什么叫"简洁"**。精简不只是减少 bug，也不只是降低维护成本——而是让 agent 有能力"一览无余地理解整个系统"。这是 AI 时代代码质量的新维度：不仅人类能读懂，AI 也要能读懂。
+
+## 实践启示
+
+1. **选框架先评估"agent 可读性"**：在评估一个训练框架是否适合 agent 使用时，先数一下它的代码行数——超过 agent 单上下文窗口容纳能力的框架，天然不适合 agent-native 工作流。PithTrain 的 1.1 万行是一个参考基准。
+
+2. **Python-first + Triton 补性能是 agent-native 框架的最优技术路线**：纯 Python 保证全链路可读，Triton JIT 编译保证性能，两者兼顾。避免用 C++/Rust 扩展库，除非性能瓶颈确实无法用 Triton 解决。
+
+3. **把人类经验知识写成 agent-playbook 是提升 agent 任务效率的最快路径**：在模型不变、任务不变的前提下，光靠把框架代码精简到 agent 能读完，轮数就能砍掉约 50%；再加上对应的 agent skill 触发，还能再砍 70%。两者叠加是最高效的优化组合。
+
+4. **评估框架时同时测训练吞吐和 agent-task efficiency**：用固定 agent（如 Claude Code）+ 固定任务，每次只换底层框架，分别统计轮数、GPU 时间、token 消耗，才能得到完整的能力图谱。
+
+5. **借鉴 GitHub Copilot 的 staleness 处理机制**：28 天自动过期 + just-in-time citation verification，是目前最强的"记忆过时处理"方案。设计 memory 系统时，staleness 处理必须作为一等公民来考虑，不能等到系统上线后再打补丁。
+
+## 快速上手
+
+```bash
+git clone https://github.com/mlc-ai/pith-train && cd pith-train && uv sync
+bash examples/build_tokenized_corpus/launch.sh dclm-qwen3
+bash examples/pretrain_language_model/launch.sh qwen3-30b-a3b
+```
+
+→ [原文存档](https://mp.weixin.qq.com/s/_8UB-jTnhxZWQdXzOjc9uA)
+
+---
+
+## Ch16.013 具身智能 Sim-to-Real 迁移：主动推理、行为树与内在动机引擎的工程化方案
+
+> 📊 Level ⭐⭐⭐⭐ | 9.2KB | `entities/embodied-intelligence-sim-to-real-active-inference-behavior-tree-intrinsic-motivation-chenzhiyan-2026-06-17.md`
+
+# 具身智能 Sim-to-Real 迁移：主动推理、行为树与内在动机引擎的工程化方案
+
+## 摘要
+
+数据派THU 陈之炎的系统性教程，拆解具身智能机器人 Sim-to-Real 迁移的三大核心技术：主动推理开源库（pymdp/spm）的 ROS2 集成、感控闭环的模块化行为树模板、内在动机引擎开发套件。每项技术均含环境安装、核心架构、代码模板、参数调优、工业避坑指南，面向工程化落地。
+
+## 深度分析
+
+### 1. 主动推理（Active Inference）的 ROS2 集成
+
+**核心框架**：主动推理通过最小化预测误差实现感知-行动闭环，相比传统强化学习更符合生物智能机制，具备更强的环境适应性和抗干扰能力。
+
+**pymdp vs spm 对比**：
+
+| 维度 | pymdp | spm |
+|------|-------|-----|
+| 语言 | Python | C++（支持 Python 绑定） |
+| 场景 | 快速原型、算法验证 | 工程化部署、实时控制 |
+| 性能 | 轻量、≤100Hz | 高性能、≤1ms 推理延迟、1000Hz 控制 |
+| ROS2 | 原生 Python 接口 | C++ 生命周期节点、DDS 通信 |
+| 社区 | 活跃、文档完善 | 工业级支持、稳定性强 |
+
+**pymdp 集成架构**（单节点模式）：感知层（ROS2 订阅传感器）→ 主动推理核心（变分推断更新信念状态）→ 执行层（ROS2 发布控制指令）。
+
+**spm 集成架构**（生命周期节点模式）：遵循 ROS2 生命周期规范（配置→激活→运行→停用→清理），支持多模态感知融合、微秒级实时主动推理、DDS 可靠传输（≤10ms）。
+
+**避坑要点**：pymdp 需离散化连续空间、ROS2 回调需加锁防数据竞争；spm 需 Release 模式编译（Debug 性能降 50%+）、DDS 需配置实时优先级；通用：偏好矩阵 C 合理设计、信念更新频率匹配传感器采样频率、复杂场景需分层主动推理。
+
+### 2. 感控闭环的模块化行为树（Behavior Tree）
+
+**为什么不用 FSM**：传统有限状态机存在状态爆炸、耦合度高、可维护性差等问题。行为树通过模块化、层次化、可复用、可中断、可回溯的特性，完美适配具身智能"感知→决策→执行→反馈"闭环。
+
+**BT.CPP + ROS2 工业级框架**：基于 C++ 的高性能开源行为树库，原生支持 ROS2，提供可视化编辑器、动态加载、节点复用。
+
+**五大核心模块**（跨任务、跨机器人复用）：
+- **感知模块**：CheckObstacle、DetectTarget、GetPose、ForceFeedback
+- **决策模块**：PlanPath、GraspPlan、TaskSwitch
+- **执行模块**：MoveToTarget、GraspObject、PlaceObject、StopRobot
+- **反馈模块**：CheckArrival、CheckGrasp、CheckSafety
+- **异常处理模块**：AvoidObstacle、RetryGrasp、EmergencyStop、ReturnHome
+
+**工程化最佳实践**：每个节点单一职责、所有执行节点加超时机制、关键任务加重试、安全节点优先级最高、高频节点控制 10-50Hz、行为树层级 ≤5 层。XML 定义行为树结构，无需修改代码即可调整逻辑，支持可视化调试（bt_viewer），调试效率提升 50%+。
+
+### 3. 内在动机引擎开发套件
+
+**核心定义**：环境感知→预测模型→奖励计算→策略优化的闭环，基于好奇心/新颖性/预测误差生成内在奖励，驱动机器人自主探索学习。
+
+**主流算法对比**：
+
+| 算法 | 核心机制 | 优势 | 劣势 | 适用场景 |
+|------|---------|------|------|---------|
+| 好奇心驱动（ICM） | 预测误差作奖励 | 简单稳定 | 易陷入随机噪声 | 结构化环境 |
+| 新颖性驱动（RND） | 状态访问次数 | 探索效率高 | 计算量大 | 复杂未知环境 |
+| 技能熟练度驱动 | 技能掌握程度 | 渐进式学习 | 收敛慢 | 长期自主学习 |
+| 信息增益驱动（VIME） | 贝叶斯信息增益 | 理论完备 | 实现复杂 | 研究级 |
+
+**工程首选**：好奇心驱动 + 技能熟练度驱动融合算法，兼顾稳定性与探索效率。
+
+**五大核心模块**（ROS2 + PyTorch，开箱即用）：数据采集→特征编码（轻量化 CNN）→内在奖励计算→策略学习（PPO，轻量化适配嵌入式）→行为联动（与行为树感控闭环对接）。
+
+**与行为树联动**：内在动机引擎输出内在奖励 → 行为树动态调整任务优先级 → 机器人自主切换探索/执行任务。高内在奖励触发自主探索，低内在奖励触发预设任务，异常状态触发感控闭环异常处理。
+
+### 4. 分机器人参数调优方案
+
+| 机器人类型 | 好奇心权重 | 熟练度权重 | 学习率 | 特殊配置 |
+|-----------|-----------|-----------|-------|---------|
+| 机械臂/抓取 | 0.5 | 0.5 | 5e-4 | 禁止过高探索，避免碰撞 |
+| 移动机器人 | 0.8 | 0.2 | — | 探索半径 0.2m |
+| 人形机器人 | 0.7-0.9 | — | — | 特征维度 64，执行频率 20Hz |
+
+**调优判断标准**：内在奖励 0.3-0.8 为优秀（主动探索+高效执行）；>1.0 为过探索（乱动不执行任务）；<0.1 为欠探索（僵化不适应新环境）。
+
+**安全约束**：探索范围硬限制（不突破机械臂限位）、优先级机制（安全节点 > 内在动机探索 > 常规任务）、奖励截断（设置上限防疯狂探索）。
+
+**部署流程**：仿真调试（Gazebo）→ 参数调优 → 实体机部署 → 与行为树联动 → 现场迭代。
+
+## 实践启示
+
+1. **主动推理是具身智能的理论基石**：pymdp 适合快速验证，spm 适合工业部署，两者互补覆盖从科研到产品的全链路。
+2. **行为树替代 FSM 是工程化必然**：XML 定义逻辑、可视化调试、节点跨项目复用，将感控闭环开发从"写代码"变为"搭积木"。
+3. **内在动机引擎实现"被动执行+主动探索"双模式**：与行为树深度联动，8 个核心参数即可完成全品类机器人适配。
+
+## 相关页面
+
+- [原文存档](https://mp.weixin.qq.com/s/bB9ncEOvj3pTKtWpyGHkpQ)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+
+---
+
+## Ch16.014 ServiceNow vLLM V0→V1 正确性修复
+
+> 📊 Level ⭐⭐⭐⭐ | 8.3KB | `entities/servicenow-vllm-correctness-huggingface.md`
+
+> -> [原文存档](https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections)
+
+## 核心问题：训练-推理 logprob 不匹配
+
+PipelineRL 的训练器直接消费 rollout 产生的 token logprobs 来计算策略比率、KL 散度、clip rate、entropy 和 reward。任何 logprob 计算语义的变化都会改变训练动态。
+
+vLLM V1 默认返回**原始模型输出的 logprobs**（在 temperature scaling、penalties、top-k/top-p 过滤之前），而 PipelineRL 期望的是**经过采样器处理的分布的 logprobs**。这一语义差异导致初始 V1 跑通后，clip rate、KL、entropy、reward 全面漂移。
+
+## 四个后端修复
+
+### 1. Logprob 语义修复
+
+设置 `logprobs-mode=processed_logprobs` 移除了明显的均值偏移，使策略比率均值稳定在 1.0 附近。但训练曲线仍有差距——说明单一修复不够，下一个问题在推理路径本身。
+
+### 2. 运行时默认值对齐
+
+V1 的 prefix caching（默认开启）和 async scheduling（默认开启）引入了 V0 不存在的执行路径差异。在 online RL 场景下，prefix cache 命中可能在权重更新边界之前重用已计算状态，导致 actor 拿到过期推理结果。
+
+对齐配置：
+
+```yaml
+vllm_config:
+  use_v1: true
+  vllm_kwargs:
+    logprobs-mode: processed_logprobs
+    enable-prefix-caching: false
+    async-scheduling: false
+```
+
+### 3. Inflight Weight Updates 语义对齐
+
+V0 的权重同步机制：阻塞在引擎边界 → 加载新权重 → 恢复执行，不显式清除缓存。V1 等效方案：
+
+```python
+await engine.pause_generation(mode="keep", clear_cache=False)
+await engine_client.collective_rpc_async(
+    "receive_weight_update",
+    args=(request.model_dump_json(),),
+)
+await engine.resume_generation()
+```
+
+关键：`mode="keep"` 和 `clear_cache=False` 匹配了 V0 的隐式语义。
+
+### 4. fp32 lm_head 最终投影精度
+
+即使前三项修复完成，最终 parity 仍需要 fp32 `lm_head`。MiniMax-M1 技术报告和 ScaleRL 论文都独立发现了这个问题：RL 更新直接消费 token logprobs，而 lm_head 输出的 logits 精度变化会传播到 logprobs，进而影响策略比率、KL 散度和 clip rate。
+
+## 核心工程原则：先修后端，再谈目标
+
+ServiceNow 的经验是：**错误的顺序（先改目标函数再修后端）会导致目标侧的修正掩盖后端问题，使训练曲线难以解读**。正确的问题分解应该是：
+
+1. 推理后端是否产生了正确的 logprobs？
+2. 给定正确的 logprobs，目标函数是否还需要 off-policy 或 async 修正？
+
+这两个问题需要分离处理。
+
+## 相关实体
+
+- [ServiceNow vLLM Correctness（更完整的分析）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/servicenow-vllm-correctness.md)
+- [vLLM V0→V1 迁移中的 logprob 差异修复](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vllm-v0-to-v1-correctness-before-corrections.md)
+
+## 深度分析
+
+vLLM V0 到 V1 的迁移表面上是同一个推理引擎的版本升级，实际上是一次架构重写带来的行为契约变化。 ServiceNow 团队设定的迁移目标"让 V1 返回与 V0 等效的 rollout logprobs"看似技术性极强，实则揭示了 RL 训练系统中的一个深层依赖：训练器对推理后端的输出语义做了隐式假设。这些假设在 V0 时代是正确的，但在 V1 重写后若不显式声明和强制对齐，就会成为训练不稳定的隐秘根源。
+
+logprobs 的语义差异（原始模型输出 vs. 采样器处理后分布）是四个修复中最初级但也最关键的一个。 它之所以关键，不是因为修复困难，而是因为它揭示了一个更普遍的问题：推理引擎版本升级时，默认配置的语义变化往往不会出现在升级指南中，却会直接影响消费推理输出的上游系统。这一问题在 PipelineRL 这类直接消费 token logprobs 计算训练目标的架构中尤为致命——logprob 均值偏移直接体现为策略比率的系统性偏差。
+
+prefix caching 在 RL 推理中的危险性被这一案例充分暴露。 Prefix caching 的设计目的是通过重用已计算的 KV cache 加速推理，这在静态场景（固定模型权重、固定对话前缀）下是合理的优化。然而，在 online RL 场景下，模型权重在训练过程中持续更新，prefix cache 命中可能在权重更新边界之前重用已计算状态，导致 actor 获取与当前权重不对应的过期推理结果。这一问题在异步调度和并发请求混合时进一步复杂化，因为缓存失效边界与权重更新边界的对齐无法得到保障。
+
+fp32 lm_head 的发现在多个独立研究中得到印证（MiniMax-M1 技术报告、ScaleRL 论文），表明这是一个跨团队、跨方法的普遍性问题而非 ServiceNow 特有。 fp16 lm_head 输出的 logits 精度变化通过 logprobs 传播到 RL 更新的每一个计算环节——策略比率、KL 散度、clip rate 均受影响。这意味着在大型 RL 训练任务中，lm_head 投影精度的选择并非性能优化问题，而是正确性前提。ScaleRL 将 fp32 logits/head 计算纳入标准 RL 配方，意味着这一实践正在从个别案例上升为社区共识。
+
+ServiceNow 总结的核心工程原则——"先修后端，再谈目标"——具有超出 vLLM 迁移场景的方法论价值。 在引入任何目标侧修正（truncated importance sampling、off-policy correction、async correction）之前，必须首先确保推理后端在等效条件下运行。这一原则的反面教训同样重要：在推理后端行为未对齐的情况下，目标侧的修正会与后端问题产生混合效应，使得训练曲线难以解读，也无法判断改进来源于修正本身还是后端修复的附带结果。
+
+## 实践启示
+
+- **推理引擎升级时的必检清单**：在将推理引擎升级到新版本后，第一步应验证 rollout logprobs 与旧版本的语义等效性，而非直接进行目标函数调优或训练超参数调整；具体检查项应包括 logprobs 计算位置（原始输出 vs. 采样后）、默认精度（fp16 vs. fp32）和默认优化项（prefix caching、async scheduling）的状态变化。
+- **online RL 场景下禁用 prefix caching**：在模型权重持续更新的训练场景中，prefix caching 引入的缓存重用语义与权重更新边界可能产生冲突；建议在 online RL 训练中显式设置 `enable-prefix-caching: false`，直到推理引擎提供权重更新感知的缓存失效机制。
+- **inflight weight update 的语义声明**：在实现权重更新逻辑时，应明确声明 `mode` 和 `clear_cache` 参数的语义选择并与推理引擎版本对齐；`mode="keep"` 和 `clear_cache=False` 的组合匹配了 V0 的隐式语义，但新引擎版本可能有不同的默认值，需要显式对齐。
+- **lm_head 投影精度作为 RL 正确性前提**：对于直接消费 token logprobs 的 RL 训练系统，建议将 fp32 lm_head 作为基线配置而非可选优化；这一选择与 ScaleRL 论文的推荐一致，在不引入显著性能损失的情况下消除了数值精度传播这一隐蔽的正确性风险。
+- **问题分解的工程顺序**：当训练曲线出现异常时，应严格遵循"推理后端等效性 → 目标函数修正"的处理顺序；在确认推理后端正确性之前，避免在目标侧引入修正——否则修正效果与后端修复效果混合，使得训练异常的根因诊断变得不可信。
+
+---
+
+## Ch16.015 Build real-time voice applications with Amazon SageMaker AI and vLLM
+
+> 📊 Level ⭐⭐⭐⭐⭐ | 21.2KB | `entities/build-real-time-voice-applications-with-amazon-sagemaker-ai.md`
 
 ## 核心要点
 
@@ -394,683 +1594,15 @@ SageMaker AI 端点按实例运行时长计费 ：
 ## 扩展阅读
 
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/build-real-time-voice-applications-with-amazon-sagemaker-ai-and-vllm/)
-→ [Voice Agent 设计 - Nova Sonic 多 Agent 工具与会话](ch11/207-amazon-nova.html)
-→ [Nova Sonic WebRTC 实时语音流](ch11/207-amazon-nova.html)
+→ [Voice Agent 设计 - Nova Sonic 多 Agent 工具与会话](https://github.com/QianJinGuo/wiki-public/blob/main/entities/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session.md)
+→ [Nova Sonic WebRTC 实时语音流](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-real-time-voice-streaming-with-amazon-nova-sonic-and-webrtc.md)
 → [OpenAI Realtime Voice 架构](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/openai-realtime-voice-architecture.md)
 
 ---
 
-## Ch16.003 Apple Siri 私有推理（Private Inference）不私有：三个对抗者都不受加密学保护
+## Ch16.016 The next generation of speculative decoding: DFlash and Spec V2 - LMSYS Blog
 
-> 📊 Level ⭐⭐ | 16.5KB | `entities/apple-siri-private-inference-lethal-trifecta-matthew-green.md`
-
-# Apple Siri 私有推理（Private Inference）不私有：三个对抗者都不受加密学保护
-
-> **Source**：[原文存档（Matthew Green / Cryptography Engineering, 2026-06-09）](https://blog.cryptographyengineering.com/2026/06/09/apples-siri-ai-or-more-shouting-into-the-void-about-private-agents/)
-
-## 核心论点
-
-Apple 2026-06-08 宣布 Siri AI 与 Google Gemini + Apple Private Cloud Compute (PCC) 整合的方案。PCC 设计目标：通过专用 Apple Silicon 服务器 + 加密传输 + 无状态推理，确保**用户数据在 inference 阶段不被 Apple/Google 看到**。
-
-**Matthew Green 的反论点**：PCC 只能防御 *operator* 对 inference 数据的偷看，但**当 agent 必须与外部世界对话时（search LLM 查询、calendar invite、text message 发送），隐私就完全依赖 agent 的 discretion / prompting / 法律管辖**——而这三者**都不在加密学的保护范围内**。
-
-## 三个对抗者（Adversary）分析
-
-### 对抗者 1：Search Operator 的数据货币化
-
-Agent 要完成任务（如"为下周聚餐找餐厅"）必然需要：(a) 读取私人上下文（messages, email, calendar），(b) 向非私有 search LLM（Gemini / ChatGPT / Claude）查询具体要求。
-
-**数据泄漏路径**：
-```
-private context (on device)
-    ↓
-agent 提取 30 个 facts about attendees / 会议目的
-    ↓
-上传至 public search LLM：
-"Hey, LLM search engine, here is a list of thirty detailed facts
-about my attendees and the purpose of this meeting, find me a
-restaurant that works for everyone."
-```
-
-**结果**：即使 inference 完全 private（无 Apple/Google 直接读取），30 个 facts 已经通过 search LLM 查询**外流**到 search operator。Google（运营 search LLM）获得所有这些 facts 的副本。
-
-**经济学动机**：Generative AI 让"知道用户私密信息"变得 *wildly more lucrative* 用于广告定向。如果 search operator 同时**设计 prompting + 训练 model + 提供 search LLM**，这是数据货币化的 best-case 场景。
-
-### 对抗者 2：Remote Prompt Injection（致命三要素 Lethal Trifecta）
-
-**Simon Willison 的 Lethal Trifecta 定义**：当一个 agent 同时具备 (a) 访问私人数据、(b) 解析不可信内容、(c) 发送外部通信能力时，就形成**远程 prompt injection 数据外流的完美条件**。
-
-**Apple Siri AI 场景**：
-- (a) 访问 iMessage / email / contacts / notes → ✅
-- (b) 解析不可信内容（incoming emails, text messages, web content）→ ✅
-- (c) 发送 calendar invites, text messages → ✅
-
-**结果**：Apple Siri AI 是 lethal trifecta 的 nightmare case。即使 private inference 完美设计，**任何能 induce agent 误行为的人**（attacker）都能触发数据外流。
-
-**当前未解决**：OpenAI 2026-06-06 推出 "lockdown mode"（限制 ChatGPT web search 防止 prompt injection upload sensitive docs）本身就证明**问题远未解决**。
-
-**未来威胁放大**："If you think spam directed at humans is bad, wait until it's spam directed at agents."
-
-### 对抗者 3：政府管辖（Government Surveillance）
-
-Agent 看到用户的所有数据后，技术上能**检测犯罪行为**（CSAM、terror、tax fraud）。
-
-**法律压力点**：
-- **UK OFCOM**：要求加密 messengers 检测 CSAM
-- **EU Commission Chat Control proposals**：类似方案
-- **UK Technical Capability Notices (TCNs)**：可强制全球设备变更
-- **US 4th Amendment**：仅限制 government，但**私公司（Apple/Google）可先 collect crimes → 报告给 government**（Apple 2021 CSAM scanning 提案即如此）
-
-**关键洞察**："the difference between a helpful private agent, a corporate advertising bot, and a government spy comes down mainly to a matter of prompting, and maybe a bit of model fine-tuning"——**prompt 决定一切**。
-
-## 加密学的本质局限
-
-**加密学的传统承诺**：*remove trust*——用"I can't" 替代 "I promise not to look"。
-
-**Private inference 的局限**：对抗**设计 private inference 的对手**（执行 inference 的 provider）时，private inference 也许有效。但这只是 agentic system 的**极小一片**。
-
-**真实对手**：直接与 model 交互的对手，或**设计 model / 指定其技术要求**的对手。**没有任何加密学原语**能保护用户免于：
-- "upload your search facts to Google"（prompting 行为）
-- "report anything suspicious to the government because I programmed you that way"（model fine-tuning）
-
-**结论**："That protection, if it exists at all, lives in law and politics and corporate incentives: the exact messy human institutions that cryptography was invented to let us stop trusting."
-
-## 与现有实体的差异化定位
-
-| 维度 | `end-to-end-encrypted-ml-inference-sagemaker-fhe`（AWS FHE） | 本 entity（Apple PCC） |
-|---|---|---|
-| 加密原语 | Fully Homomorphic Encryption (FHE) 端到端 | 硬件 enclave + 加密传输 + 无状态推理 |
-| 防御对象 | 模型本身看不到 plaintext（数学保证） | Operator 看不到 plaintext（硬件保证） |
-| 失败模式 | 计算成本高，不实用 | 突破到 agent 外部对话时完全失效 |
-| 适用场景 | 一次性 inference（文档摘要等） | 持续 agent 任务（搜索、订餐、消息） |
-| 作者视角 | 工程方案（AWS 实施细节） | 安全批判（cryptographer's lens） |
-
-**互补关系**：两者都试图用 cryptographic primitives 解决 ML inference privacy，但**FHE 局限于纯 inference 任务，Apple PCC 在 agent 场景下被 prompt + 行为流绕过**。Green 文章的核心贡献是指出"private inference ≠ private agent"的关键区分。
-
-## 与 [Simon Willison vibe-coding](ch09/041-coding-agent.html) 的呼应
-
-Willison 的 **lethal trifecta** 框架（被 Green 引用）是同一问题的另一个 framing：Willison 从 LLM application 角度（数据访问 + 不可信输入 + 出站通信）描述 agentic 系统固有的安全风险，Green 从 cryptographic 角度证明**即使最强的 private inference 设计也无法缓解这个风险**。两者是**lethal trifecta 的两层解释**：
-- Willison：识别 trifecta 模式
-- Green：证明 cryptographic primitive 无法防御 trifecta 的 prompt injection 路径
-
-## 实践启示
-
-1. **评估 agent 隐私风险时，不能只看 inference 阶段**。一个 agent 即使使用 private inference，只要它 (a) 能读私人数据 + (b) 解析不可信输入 + (c) 能发送外部通信，就已经处于 lethal trifecta 中。
-2. **法律/政策/公司激励**比 cryptographic primitive 更重要。Apple/Google 自身的商业激励（广告 / 商业模式）就是数据货币化的源头。
-3. **OpenAI 2026-06 lockdown mode** 证明即使 frontier labs 也无法工程化解决 prompt injection。Agent 安全需要**整体架构**（隔离 agent、限制权限、人类审批循环）而非 cryptographic 修补。
-4. **未来监管方向**：EU/UK 已经把 CSAM detection 法律延伸到 AI agent 层面。任何大规模部署 personal AI agent 的公司必须考虑这些法律风险。
-
-## 与现有实体的关联
-
-- [End To End Encrypted Ml Inference Sagemaker Fhe](https://github.com/QianJinGuo/wiki-public/blob/main/entities/end-to-end-encrypted-ml-inference-sagemaker-fhe.md)：互补（不同加密学原语，同一目标）
-- [Vibe Coding Agentic Engineering Convergence Simon Willison](ch09/041-coding-agent.html)：lethal trifecta 概念同源
-- [Apple Silicon Costs More Than Openrouter](ch01/293-apple-silicon-costs-more-than-openrouter.html)：Apple 硬件成本视角
-- [Apple Corecrypto Formal Verification Blueprint](ch12/021-apple-corecrypto-formal-verification-blueprint-post-quantu.html)：Apple 加密学基础设施
-
-## 深度分析
-
-### 核心观点：Private Inference ≠ Private Agent
-
-Matthew Green 的核心贡献是建立了 **"private inference" 与 "private agent" 之间的关键区分**。Private Cloud Compute（PCC）设计的目标是确保用户数据在 inference 阶段不被 Apple/Google 看到——这是一个技术边界明确的问题。然而，当 Siri 作为 agent 必须与外部世界交互时（search LLM 查询、calendar invite、text message 发送），数据流就脱离了加密学的保护范围。这个区分对整个 personal AI agent 领域都有深远意义：即使每个 provider 都实现了 private inference，agent 作为整体系统仍然可能暴露用户数据。
-
-### 技术要点：加密学对 "行为" 无能为力
-
-加密学的传统承诺是 *remove trust*——用 "I can't" 替代 "I promise not to look"。Private inference 可以在这个意义上保护 inference 数据，但**无法保护 agent 的 prompting 行为**。当 agent 被指示 "上传你的搜索事实到 Google"（通过 prompt engineering）或 "因为我是这样编程的所以报告任何可疑行为"（通过 model fine-tuning），这些都是在加密学保护范围之外的。Green 的洞察是：prompt 决定一切，prompt 可以绕过任何 cryptographic primitive。
-
-### 实践价值：Lethal Trifecta 是架构性缺陷而非实现 bug
-
-Simon Willison 的 lethal trifecta（私人数据访问 + 不可信输入解析 + 出站通信能力）被 Green 证明是**任何 agentic 系统的架构性特征**，而非某个实现的 bug。Apple Siri AI 是 lethal trifecta 的 nightmare case，因为它同时具备 iMessage/email/contacts 访问、不可信内容解析、以及发送 calendar invites/text messages 的能力。这意味着**不存在"安全的 agent architecture"——只有将 trifecta 的某个环节最小化或隔离的工程权衡**。
-
-### 核心观点：法律管辖比技术更能突破隐私保护
-
-对抗者 3（政府监控）展示了加密学保护的根本局限：当 UK OFCOM 要求加密 messengers 检测 CSAM、EU Chat Control 提案延伸法律到 AI agent、企业被强制先收集犯罪证据再报告政府时，技术上的加密学保护被**法律强制力直接绕过**。Apple 2021 CSAM scanning 提案就是这种模式的具体案例——私公司被法律压力转化为 government spy 的前端。Private inference 保护不了这种情况。
-
-### 技术要点：数据货币化激励使 search operator 成为对抗者
-
-当 search operator 同时设计 prompting + 训练 model + 提供 search LLM 时，用户搜索事实成为广告定向的原材料。Generative AI 让"知道用户私密信息"变得 *wildly more lucrative*。这意味着**数据货币化的激励结构本身就是隐私威胁的源头**——即使 PCC 技术完美，只要 agent 需要调用外部 search LLM，数据就会流向有商业动机货币化它的对手。
-
-## 实践启示
-
-### 1. 评估 agent 隐私风险必须追踪完整数据流
-
-评估任何 personal AI agent 的隐私风险时，不能只看 inference 阶段的技术指标。必须追踪完整数据流：私人数据从哪里进入 agent、经过哪些处理节点、以什么形式流向外部服务。即使每个节点都"合规"，整体数据流可能已经暴露了用户的私密事实。**数据流追踪是隐私评估的第一步**。
-
-### 2. 打破 lethal trifecta 是 agent 架构设计的核心目标
-
-当 agent 同时需要 (a) 访问私人数据、(b) 解析不可信内容、(c) 发送外部通信时，它就处于 lethal trifecta 中。架构设计的目标应该是**最小化同时满足三者的场景**：例如，使用隔离的 sandbox 处理不可信内容；将敏感数据访问限制在最小权限范围内；在发送外部通信前加入人类审批循环。参见 [Agent Security Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-security-architecture.md)。
-
-### 3. Prompt injection 防御需要主动的内容隔离策略
-
-Remote prompt injection 是 lethal trifecta 被 exploit 的主要路径。"If you think spam directed at humans is bad, wait until it's spam directed at agents." 防御策略包括：对所有外部来源内容进行 sandboxed 解析；使用 prompt 过滤和清理；在 agent 的 system prompt 中明确区分可信指令和外部内容。参见 [Prompt Injection Defense](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/prompt-injection-defense.md)。
-
-### 4. 法律合规需要提前布局——尤其是涉及跨司法管辖的 AI agent
-
-UK Technical Capability Notices (TCNs) 可以强制全球设备变更，EU Chat Control 提案将 CSAM detection 法律延伸到 AI agent 层面。任何计划部署 personal AI agent 的公司必须**在产品设计阶段就考虑目标市场的法律环境**，而不是在法律通过后才被动合规。政府监控这条路径在加密学上完全无法防御。
-
-### 5. 隐私保护需要技术 + 法律 + 商业激励三位一体
-
-Green 的结论是：隐私保护（如果存在）活在法律、政策和商业激励中——正是那些" messy human institutions " cryptography 被发明来让我们停止信任的东西。对于 AI agent 的隐私，不能依赖单一的技术解决方案（无论是 private inference 还是 FHE），而需要**技术边界 + 法律保护 + 商业激励重新设计**三者配合。
-
-## 参考链接
-
-- Original article: https://blog.cryptographyengineering.com/2026/06/09/apples-siri-ai-or-more-shouting-into-the-void-about-private-agents/
-- Simon Willison's lethal trifecta: https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/
-- Apple Private Cloud Compute expansion: https://security.apple.com/blog/expanding-pcc/
-- Google Confidential Inference: https://blog.google/innovation-and-ai/products/google-private-ai-compute/
-
----
-
-## Ch16.004 EAGLE-3 投机解码与 USP 长序列训练优化
-
-> 📊 Level ⭐⭐ | 14.2KB | `entities/eagle-3-speculative-decoding-optimization.md`
-
-## 核心问题：为什么 Agent 场景需要 EAGLE-3
-Agent 场景（自动化代码工程、长文档分析、多轮工具调用）带来了与大模型传统推理场景截然不同的挑战：
-| 维度 | Chat 场景 | Agent 场景 |
-|------|-----------|-----------|
-| 上下文长度 | 千级 token | 64K/128K+ |
-| 延迟容忍度 | 秒级可接受 | 复合放大，10轮循环可达分钟级 |
-| 高熵片段密度 | 低 | 高（工具调用、链式推理） |
-| Accept Len 稳定性 | 较稳定 | 骤降风险大 |
-**投机解码加速效果取决于两个因素**：
-1. Draft 生成成本
-2. Accept Len 的长度与稳定性
-关键不在于"有没有 Draft"，而在于 Draft 能否以较低的成本，持续生成可被稳定接收的长序列草稿。
-
-## EAGLE-3 vs MTP：为什么长序列要选 EAGLE-3
-**MTP 的局限**：在一次前向中直接生成多步候选，一旦早期 token 出现偏差，后续更容易出现连锁放大。工程上通常将有效步长控制得较短，通过校验/回退机制降低风险，但限制了整体加速收益。
-**EAGLE-3 的核心创新：TTT（Training-Time Test）**：
-
-- 训练时不再只依赖 ground truth 历史，而是让 Draft 先前向生成一段 token，再将这些"自生成的历史"用于下一步训练
-- 本质：把推理流程搬进训练，让模型在训练阶段即适应"带误差历史"的输入环境
-- 效果：连锁误差提前暴露到训练过程，使模型学会在"带误差历史"下维持更长的稳定接收长度 
-**对比结果**（滴滴实测）：
-
-- EAGLE-3 Accept Len ≈ MTP 的 **2.2–2.3×**
-- EAGLE-3 Mean TPOT ≈ MTP 的 **41%**（降低约 59%）
-- EAGLE-3 P95 TPOT 比 MTP 低 **35%–44%**
-
-## EAGLE-3 训练为什么容易 OOM
-### 显存放大的两个"放大器"
-**放大器 1：多层特征参与训练**
-EAGLE-3 融合 Target 的低层/中层/高层特征，提升多步预测稳定性，但需要保留多层特征参与计算 + 保存更多中间激活。
-**放大器 2：TTT 的多步展开**
-普通 SFT 基本是"一次前向算完 loss"。TTT 需要将过程展开 k 次（模拟 k 步 decode），反向传播需要保存每一步的中间结果，显存开销近似按 k 倍放大。
-**公式**：显存问题 = L（序列长度）× k（TTT 展开步数）× 多层特征额外中间态
-
-### 为什么不是参数问题
-即使 Draft 参数量约 1.5B 不算大，但长序列训练时：
-
-- Attention 中间激活（Q/K/V 张量、softmax 相关中间量）随 L 快速增长
-- TTT 多步展开引入 k 轮中间态堆叠
-- 128K 下单卡训练无法启动
-**瓶颈在激活，不在参数**——所以必须引入 SP（Sequence Parallelism）。
-
-## 解决方案：USP（Unified Sequence Parallelism）
-### 两种序列并行方式
-| 方式 | 切分维度 | 优点 | 缺点 |
-|------|---------|------|------|
-| **Ulysses** | 按 head 维度（All-to-All） | 吞吐易提升 | 切分粒度受 head 数限制，长序列时显存仍难覆盖 |
-| **Ring** | 按序列/token 维度 | 显存随 SP 规模近似线性下降 | 通信更频繁 |
-
-### USP 核心设计：三步走
-```
-Step 1（主干 Main）：ring attention
-  → 主干历史按 token 分片分布到多卡
-  → ring 通信完成 causal attention 计算
-  → 得到 Out_main + LSE_main
-Step 2（分支 Branch）：本卡增量更新
-  → TTT 分支仅涉及少量新增 token 的 KV（通常 ≤7 步）
-  → 单卡承担的主干分片往往达万级 token
-  → 无需 ring 跨卡，本卡完成增量计算
-  → 得到 Out_branch + LSE_branch
-Step 3（Fusion）：流式 softmax 融合
-  → 分支结果作为增量并入主干
-  → 采用流式 softmax 保持数值稳定
-  → 保证归一化口径一致
-```
-
-### USP 解决的三个工程目标
-1. **显存可控**：每张卡仅需保存 1/SP 的主干 KV 与中间态
-2. **训练更稳**：LSE 融合保证分布式切分下归一化口径一致，训推一致，Accept Len 稳定
-3. **吞吐更高**：最重主干计算走高效 ring attention 路径，分支走轻量级增量更新
-
-## 工程实践：三块地基
-### 1. 输入与 loss 计算都按 SP 分片
-- 将"切分"前移到数据入口
-- 每个 SP rank 仅加载自身对应 token 分片
-- loss/metric 按 SP 口径处理
-- 效果：显存随 SP degree 基本线性缩放
-
-### 2. 统一训练口径
-- 引入 adapter 抽象层
-- 将 step view、分布式 loss/metric reduction、position_ids 等训练口径统一收敛
-- 减少长序列训练中最难定位的"漂移问题"
-
-### 3. 压缩 hidden states
-- 磁盘占用下降约 25%
-- Accept Len 不变（1.93 vs 1.93）
-- time/step 仅增加 4%（0.45s → 0.47s）
-
-## 当前挑战
-1. **OOD（分布偏移）双因素驱动**：
-
-   - OOD-A：数据/流程分布漂移（提示词模板、工具参数、工作流编排变化）
-   - OOD-B：模型能力不足（现有 Draft 表达能力/泛化能力不足）
-   - 两者缺一不可：需要更快训练更新机制 + 更强更可泛化的 Draft 能力
-2. **长序列训练与特征管线成本仍高**：
-
-   - Offline：依赖 hidden states 落盘与搬运，TB 级存储
-   - Online：Target 特征生成与训练过程强耦合，容易与线上服务争抢资源
-3. **系统要面向"稳定收益"**：P95/P99 的稳定收益比 mean 更重要
-4. **算法快速演进**：需要抽象出"数据/特征接口、验证接口、调度策略"以支持范式演进
-
-## 后续规划
-- **A**：分离式特征生成 + 训练解耦（复用 Mooncake store 样本）
-- **B**：近线/在线快速迭代（周/月级 → 天级/小时级）
-- **C**：更强表达的 Draft + 路由专精（MoE / Routing Draft）
-- **D**：面向未来范式的可插拔框架
-
-## 深度分析
-### EAGLE-3 的本质：训练-推理分布对齐
-EAGLE-3 之所以能在长序列 Agent 场景取得显著超越 MTP 的效果，核心在于其 TTT 机制彻底弥合了训练与推理之间的分布偏差。传统 SFT 以 ground truth 历史 token 为条件进行训练，但推理时模型实际面对的是自己生成的历史——这个"自生成历史"与"ground truth 历史"的分布差异在短序列场景下不显著，但在长序列高熵片段（工具调用、链式推理）中会被急剧放大，导致 Accept Len 骤降。
-TTT 的解决思路是"让训练过程模拟推理过程"：Draft 模型先生成一步预测，再用这个预测结果作为下一步输入，循环往复。通过这种方式，模型在训练阶段就习惯了"带误差历史"的输入环境，连锁误差得以在训练过程中提前暴露并被学习。
-
-### USP 的设计哲学：主干稳、分支轻、融合准
-USP 的三步设计（ring attention 主干 → 本卡增量分支 → 流式 softmax 融合）体现了明确的工程哲学：
-
-- **主干稳**：最重的计算（万级 token 的主干历史）走 ring attention 路径，通信模式稳定，计算密度高
-- **分支轻**：TTT 分支仅涉及 ≤7 步增量，单卡即可完成，无需跨卡通信开销
-- **融合准**：采用流式 softmax 持续维护归一化过程，保证 LSE 融合的数值稳定性，确保训推一致性
-
-### 显存瓶颈的根源：激活而非参数
-文章反复强调"EAGLE-3 的显存问题来自激活而非参数"，这个判断具有重要的工程含义：
-1. 单纯缩小 Draft 参数量并不能解决 OOM 问题
-2. 序列并行（SP）是解决问题的唯一有效路径，因为激活随序列长度 L 超线性增长
-3. 选择 ring attention 而非 Ulysses，是因为长序列场景下显存压力是主要矛盾，ring 的线性扩展特性更适配
-4. 分支走本卡增量更新而非全局 ring，避免了 TTT 多步展开带来的通信瓶颈
-
-### OOD 问题的双因素框架
-滴滴提出的 OOD-A（数据漂移）和 OOD-B（模型能力不足）构成的双因素框架，对理解投机解码的长期维护具有重要价值：
-
-- OOD-A 意味着系统需要更快的训练更新周期（周/月级 → 天级/小时级），这驱动了近线/在线训练的需求
-- OOD-B 意味着 Draft 模型本身的表达能力是瓶颈，MoE / Routing Draft 是值得探索的方向
-- 两者相互独立又相互加强：即便数据分布稳定，Draft 泛化能力不足也会导致 Accept Len 下降；即便 Draft 能力足够，数据/流程的变化也会使其失效
-
-## 实践启示
-### 1. 投机解码选型：先分析场景特征，再选算法
-不是所有场景都适合 EAGLE-3。其核心收益来源是"长上下文 + 高熵片段"带来的 Accept Len 提升。如果业务场景的上下文长度在 4K 以内且熵较低（闲聊、问答），MTP 可能已经足够。EAGLE-3 的优势需要 64K+ 上下文长度才能充分发挥。
-
-### 2. 长序列训练的第一步是搞清楚瓶颈在哪
-在投入 SP 之前，需要先确认瓶颈是激活还是参数。方法：单卡跑一个前向，监控显存占用，如果模型参数本身不超显存但激活导致 OOM，则必须引入 SP。盲目扩大集群规模而不对应调整并行策略，可能反而引入不必要的通信开销。
-
-### 3. USP 三步走的工程可借鉴性
-USP 的"主干 ring + 分支本卡 + 流式融合"设计不只适用于 EAGLE-3，任何涉及"长序列主计算 + 短序列增量分支"的场景都可借鉴。其核心思想是将"最重的部分用最高效的并行方式处理，最轻的部分用最低开销的方式处理"，流式 softmax 保证了两者融合时的数值稳定性。
-
-### 4. 训推一致性是 Accept Len 稳定的前提
-滴滴在 USP 设计中特别强调 LSE 融合保证归一化口径一致，训推一致。这个教训在实际工程中容易被忽视：很多团队在训练侧做各种优化但忽视与推理侧的一致性，最终导致训练时指标好看但推理时 Accept Len 不稳定。
-
-### 5. 系统设计要面向 P95/P99 而非 mean
-滴滴强调"P95/P99 的稳定收益比 mean 更重要"，这对生产系统设计具有普遍意义。均值优化容易让长尾问题被掩盖，但长尾延迟在 Agent 多轮循环场景下会直接转化为用户体验的剧烈波动。面向 P95/P99 优化意味着在系统设计时需要预留足够的 buffer，而非单纯追求平均吞吐。
-
-### 6. 算法快速演进期，infra 必须可插拔
-滴滴在规划中特别提到"算法快速演进，需要抽象出数据/特征接口、验证接口、调度策略"，这在当前投机解码算法快速迭代的背景下非常重要。建议在设计系统初期就将 Draft 模型视为可替换组件，预留特征管线的抽象接口，避免新算法出来后需要大幅重构 infra。
-
-### 7. hidden states 压缩是值得投入的工程优化
-滴滴的实验显示，hidden states 压缩可降低约 25% 磁盘占用，同时 Accept Len 完全不变（1.93 vs 1.93），time/step 仅增加 4%。这是一个回报率非常高的优化方向，尤其在需要存储/搬运大量中间特征的离线训练场景。
-
-### 8. 在线特征生成的资源隔离问题不可忽视
-滴滴指出"Online 特征生成与线上服务争抢资源"是当前痛点之一。建议在架构设计阶段就将特征生成管线与在线服务在不同资源池中部署，避免资源竞争导致的延迟尖峰。
-
-## 参见
-- [原文存档](https://mp.weixin.qq.com/s/PZMX-55W_gqJKtHIYXJVyA)
-- [SpecForge GitHub PR #425](https://github.com/sgl-project/SpecForge/pull/425)
-- [SpecForge GitHub PR #454](https://github.com/sgl-project/SpecForge/pull/454)
-
-## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-model-research-latest-directions.md)
-
-- [小米AI — ICML 2026 论文矩阵（11篇）](ch01/635-ai-icml-2026-11.html)
-- [OpenClacky — Prompt Cache 命中率 90% 的 Harness 工程实践](ch05/008-harness.html)
-- [百度文心大模型后训练进化（ERNIE 3.0→5.0）](ch04/052-ai.html)
-
----
-
-## Ch16.005 PithTrain：陈天奇 + CMU Flame Center 推出的 agent-native MoE 训练框架（11K Python / 双重效率）
-
-> 📊 Level ⭐⭐ | 12.1KB | `entities/pith-train-agent-native-moe-training-framework.md`
-
-## 摘要
-
-**PithTrain 是陈天奇团队（MLC-AI）+ CMU Flame Center 联合推出的精简 agent-native MoE 训练框架**，约 **1.1 万行 Python**，训练吞吐追平生产级（差距 < 1.4%），同时**显著降低 AI coding agent 使用成本**。
-
-**核心贡献**：提出 **agent-task efficiency** 作为与训练吞吐并列的第二维度，定义"agent 完成任务所需成本"。在 Claude Code Opus 4.7 + 固定任务的对照实验中，PithTrain **最多减少 62% 对话轮数、节省 64% GPU 时间、少用 78% 输出 token**。
-
-## 双重效率（dual efficiency）
-
-- **训练吞吐**：tokens/s, MFU。PithTrain 追平 Megatron-LM/DeepSpeed（差距 < 1.4%）
-- **agent-task efficiency**：完成任务所需成本（轮数/GPU 时间/token）。PithTrain **最多 62% 轮数 ↓、64% GPU 时间 ↓、78% token ↓**
-
-两者**并不矛盾**：1.1 万行 Python + 四条设计原则同时实现。
-
-## 四条 agent-native 设计原则
-
-**一、精简**
-- 1.1 万行 vs 成熟生产级十几万行
-- 关键洞察：coding agent 支持 20 万-100 万 token 上下文 → 精简代码让 agent **有能力在一个上下文窗口内把整个框架全读进来，一览无余**
-
-**二、Python-native**
-- 整个栈纯 Python → agent 自始至终只集中在一门语言
-- 报错：清晰 Python traceback，不用等编译扩展重新 build
-- Triton 写少数 kernel → 训练首次跑到时自动 JIT 编译
-
-**三、不要 implicit indirection**
-- 不存 callable、不查 registry、不用字符串解析、若干模型不共用 modeling 骨架
-- 每个模型老老实实待在 `models/` 下专属于它的文件里，自成一体
-- Tradeoff：略微牺牲"跨模型复用"换"一个模型能在一处从头读到尾"
-
-**四、提供 agent skills**
-- 人类开发者经验知识 agent 光靠读代码读不出来（多卡 run 怎么起、正常 loss 曲线长什么样、profile 怎么搞才干净）
-- agent skill = 简短、即时加载的 playbook，传授经验的绝佳方式
-- PithTrain 打包一组 agent skills：移植模型 / profile 显存 / 跑 Nsight Systems trace / 验证正确性
-- **每个 skill 落到一个具体可执行脚本，给出明确 PASS/FAIL 结果**
-
-## 性能基准
-
-**吞吐**：在 H100/B200、BF16/FP8、单机/多机、Qwen3-MoE/GPT-OSS 测试中**追平 Megatron-LM/DeepSpeed**。靠的全是标准手段：
-- DualPipeV + EP 计算-通信 overlap
-- torch.compile
-- 延迟计算 weight gradient
-- 融合 SwiGLU kernel
-- Expert dispatch 去重
-- 跨 micro-batch 复用 FP8 权重
-
-**正确性**：预训练 loss 曲线在几十亿 token 尺度与生产级一致；6 个下游 benchmark 精度落在统计噪声范围；checkpoint 导出 HuggingFace 格式可在 vLLM/SGLang/lm-evaluation-harness 跑。
-
-## Agent-Task Efficiency 量化
-
-**方法学创新**：常规 coding agent benchmark（SWE-bench）固定代码库、轮换不同 agent；PithTrain **固定 agent + 任务，每次只替换底层框架** → agent 表现差异只可能来自框架本身。
-
-**三档任务**：
-- **Understand**：回答"device mesh 怎么搭起来的"等 12 个问题
-- **Operate**：环境配好、训练跑通、采集 routing trace、profile 报最慢 3 个 kernel
-- **Extend**：移植 4 个新架构（Differential Transformer / DynMoE / MoBA / MoE++）
-
-**结果（固定 Claude Code Opus 4.7）**：
-
-- **Understand**：最多 **67% 轮数 ↓**，每轮 token 更少
-- **Operate (Getting Started)**：88→26 轮（70% ↓），78% token ↓；一半代码精简，一半 agent skill 自触发
-- **Extend (DynMoE)**：62% 轮数 ↓；bug 落在刚改文件 + Python traceback
-- **Extend (4 架构 GPU 时间)**：比 Megatron-LM 省 **44%**，比 TorchTitan 省 **64%**
-- **Skill 对口任务**：轮数砍掉约 **70%**
-
-**具体 MoBA 例子（editing 阶段 token）**：
-- PithTrain 4.7K
-- Megatron-LM 13.1K
-- TorchTitan 22.2K
-
-**Exploring 阶段**：PithTrain 2.2K vs Megatron-LM 10.2K。
-
-## 三层架构
-
-- **应用层**：训练循环
-- **引擎层**：DualPipeV scheduler、优化器、checkpointing
-- **算子层**：custom Triton kernel
-
-**支持**：NVIDIA Hopper + Blackwell、BF16/FP8、Qwen3-MoE/GPT-OSS。四种并行：pipeline（DualPipeV schedule）/ FSDP / context / expert。
-
-## 团队与背景
-
-- **作者**：赖睿航（CMU CS Ph.D.）
-- **指导**：Todd Mowry、熊辰炎、陈天奇
-- **合作者**：Hao Kang、Haozhan Tang、Akaash Parthasarathy、Zichun Yu、邵俊儒
-- **机构**：CMU Flame Center + 陈天奇团队（MLC-AI）
-- **GitHub**：https://github.com/mlc-ai/pith-train
-- **Paper**：https://arxiv.org/abs/2605.31463
-
-## 与现有实体的关系
-
-- **与 [Skill 自进化三路线](ch07/045-skill.html)** 呼应：PithTrain 的 agent skills 哲学与 SkillOS/SkillOpt 一脉相承（>30% 重复劳动 → 技能化）
-- **与 [SaaS-Bench](ch03/004-agent.html)** 平行：两者都创建"为 agent 量身定制的工程指标" —— SaaS-Bench 测 GUI Agent 完成率，PithTrain 测训练框架的 agent-task efficiency
-- **与 [Matt Van Horn 22 黑客技巧](ch03/057-claude-code.html)** 呼应：Matt 的"任何做超过 2 次的事 → 技能"是 PithTrain agent skills 哲学的应用层验证
-- **与 [Agent 六机制](ch03/004-agent.html)** 平行：双重效率思想是六机制中"系统-环境协同"的具体实现
-
-## 核心洞察
-
-> "如今 coding agent 基本支持 20 万到 100 万 token 的上下文窗口，代码足够精简意味着 agent 有能力在一个上下文窗口内把整个框架全读进来，一览无余，而不必反复 grep、四处摸索。"
-
-> "PithTrain 的做法刚好'相反'：维持 agent 不变、任务不变，每次只替换底下那套框架。这样一来 agent 表现差异只可能是框架带来的，跟模型本身无关。"
-
-## 深度分析
-
-**一、dual efficiency 标志着 AI 基础设施评估进入二维时代**。传统框架只追训练吞吐（tokens/s, MFU），PithTrain 引入 agent-task efficiency 作为并列维度——衡量 agent 完成任务所需成本。这两者并不矛盾，1.1 万行 Python + 四条设计原则可以同时实现。dual efficiency 的提出意味着，未来评估 AI 训练框架，不能只看 GPU 峰值，还要看 agent 实际用起来贵不贵。
-
-**二、"Python-native + 不要 implicit indirection" 本质上是面向 20 万–100 万 token 上下文窗口的代码哲学**。当 agent 能在一个上下文窗口内读完整个框架时，代码的"可全景化"就成了新的设计约束。人类工程师习惯用间接层和 registry 管理复杂度，agent 却因此需要跨多个文件跳转才能理解一个模型——这是给 agent 写代码和给人写代码的核心分歧。
-
-**三、agent skill 是把人类隐性经验转移给 agent 的最佳载体**。多卡 run 怎么起、正常 loss 曲线长什么样、profile 怎么搞才干净——这些人类靠经验积累的知识，agent 只读代码永远读不出来。Playbook 式的短脚本 + PASS/FAIL 判定，是目前最高效的经验传递方式。这与 SkillOS/SkillOpt 的"超过 30% 重复劳动 → 技能化"思路一脉相承。
-
-**四、agent-task efficiency 的方法学创新在于"固定 agent、替换框架"**。常规 benchmark 固定任务、轮换 agent；PithTrain 固定 agent 和任务、只换底层框架——这样 agent 表现差异只可能是框架带来的。这个方法学可以推广到所有"框架 vs agent 表现"的研究中。
-
-**五、PithTrain 的 agent-native 设计原则重新定义了什么叫"简洁"**。精简不只是减少 bug，也不只是降低维护成本——而是让 agent 有能力"一览无余地理解整个系统"。这是 AI 时代代码质量的新维度：不仅人类能读懂，AI 也要能读懂。
-
-## 实践启示
-
-1. **选框架先评估"agent 可读性"**：在评估一个训练框架是否适合 agent 使用时，先数一下它的代码行数——超过 agent 单上下文窗口容纳能力的框架，天然不适合 agent-native 工作流。PithTrain 的 1.1 万行是一个参考基准。
-
-2. **Python-first + Triton 补性能是 agent-native 框架的最优技术路线**：纯 Python 保证全链路可读，Triton JIT 编译保证性能，两者兼顾。避免用 C++/Rust 扩展库，除非性能瓶颈确实无法用 Triton 解决。
-
-3. **把人类经验知识写成 agent-playbook 是提升 agent 任务效率的最快路径**：在模型不变、任务不变的前提下，光靠把框架代码精简到 agent 能读完，轮数就能砍掉约 50%；再加上对应的 agent skill 触发，还能再砍 70%。两者叠加是最高效的优化组合。
-
-4. **评估框架时同时测训练吞吐和 agent-task efficiency**：用固定 agent（如 Claude Code）+ 固定任务，每次只换底层框架，分别统计轮数、GPU 时间、token 消耗，才能得到完整的能力图谱。
-
-5. **借鉴 GitHub Copilot 的 staleness 处理机制**：28 天自动过期 + just-in-time citation verification，是目前最强的"记忆过时处理"方案。设计 memory 系统时，staleness 处理必须作为一等公民来考虑，不能等到系统上线后再打补丁。
-
-## 快速上手
-
-```bash
-git clone https://github.com/mlc-ai/pith-train && cd pith-train && uv sync
-bash examples/build_tokenized_corpus/launch.sh dclm-qwen3
-bash examples/pretrain_language_model/launch.sh qwen3-30b-a3b
-```
-
-→ [原文存档](https://mp.weixin.qq.com/s/_8UB-jTnhxZWQdXzOjc9uA)
-
----
-
-## Ch16.006 具身智能 Sim-to-Real 迁移：主动推理、行为树与内在动机引擎的工程化方案
-
-> 📊 Level ⭐⭐ | 9.2KB | `entities/embodied-intelligence-sim-to-real-active-inference-behavior-tree-intrinsic-motivation-chenzhiyan-2026-06-17.md`
-
-# 具身智能 Sim-to-Real 迁移：主动推理、行为树与内在动机引擎的工程化方案
-
-## 摘要
-
-数据派THU 陈之炎的系统性教程，拆解具身智能机器人 Sim-to-Real 迁移的三大核心技术：主动推理开源库（pymdp/spm）的 ROS2 集成、感控闭环的模块化行为树模板、内在动机引擎开发套件。每项技术均含环境安装、核心架构、代码模板、参数调优、工业避坑指南，面向工程化落地。
-
-## 深度分析
-
-### 1. 主动推理（Active Inference）的 ROS2 集成
-
-**核心框架**：主动推理通过最小化预测误差实现感知-行动闭环，相比传统强化学习更符合生物智能机制，具备更强的环境适应性和抗干扰能力。
-
-**pymdp vs spm 对比**：
-
-| 维度 | pymdp | spm |
-|------|-------|-----|
-| 语言 | Python | C++（支持 Python 绑定） |
-| 场景 | 快速原型、算法验证 | 工程化部署、实时控制 |
-| 性能 | 轻量、≤100Hz | 高性能、≤1ms 推理延迟、1000Hz 控制 |
-| ROS2 | 原生 Python 接口 | C++ 生命周期节点、DDS 通信 |
-| 社区 | 活跃、文档完善 | 工业级支持、稳定性强 |
-
-**pymdp 集成架构**（单节点模式）：感知层（ROS2 订阅传感器）→ 主动推理核心（变分推断更新信念状态）→ 执行层（ROS2 发布控制指令）。
-
-**spm 集成架构**（生命周期节点模式）：遵循 ROS2 生命周期规范（配置→激活→运行→停用→清理），支持多模态感知融合、微秒级实时主动推理、DDS 可靠传输（≤10ms）。
-
-**避坑要点**：pymdp 需离散化连续空间、ROS2 回调需加锁防数据竞争；spm 需 Release 模式编译（Debug 性能降 50%+）、DDS 需配置实时优先级；通用：偏好矩阵 C 合理设计、信念更新频率匹配传感器采样频率、复杂场景需分层主动推理。
-
-### 2. 感控闭环的模块化行为树（Behavior Tree）
-
-**为什么不用 FSM**：传统有限状态机存在状态爆炸、耦合度高、可维护性差等问题。行为树通过模块化、层次化、可复用、可中断、可回溯的特性，完美适配具身智能"感知→决策→执行→反馈"闭环。
-
-**BT.CPP + ROS2 工业级框架**：基于 C++ 的高性能开源行为树库，原生支持 ROS2，提供可视化编辑器、动态加载、节点复用。
-
-**五大核心模块**（跨任务、跨机器人复用）：
-- **感知模块**：CheckObstacle、DetectTarget、GetPose、ForceFeedback
-- **决策模块**：PlanPath、GraspPlan、TaskSwitch
-- **执行模块**：MoveToTarget、GraspObject、PlaceObject、StopRobot
-- **反馈模块**：CheckArrival、CheckGrasp、CheckSafety
-- **异常处理模块**：AvoidObstacle、RetryGrasp、EmergencyStop、ReturnHome
-
-**工程化最佳实践**：每个节点单一职责、所有执行节点加超时机制、关键任务加重试、安全节点优先级最高、高频节点控制 10-50Hz、行为树层级 ≤5 层。XML 定义行为树结构，无需修改代码即可调整逻辑，支持可视化调试（bt_viewer），调试效率提升 50%+。
-
-### 3. 内在动机引擎开发套件
-
-**核心定义**：环境感知→预测模型→奖励计算→策略优化的闭环，基于好奇心/新颖性/预测误差生成内在奖励，驱动机器人自主探索学习。
-
-**主流算法对比**：
-
-| 算法 | 核心机制 | 优势 | 劣势 | 适用场景 |
-|------|---------|------|------|---------|
-| 好奇心驱动（ICM） | 预测误差作奖励 | 简单稳定 | 易陷入随机噪声 | 结构化环境 |
-| 新颖性驱动（RND） | 状态访问次数 | 探索效率高 | 计算量大 | 复杂未知环境 |
-| 技能熟练度驱动 | 技能掌握程度 | 渐进式学习 | 收敛慢 | 长期自主学习 |
-| 信息增益驱动（VIME） | 贝叶斯信息增益 | 理论完备 | 实现复杂 | 研究级 |
-
-**工程首选**：好奇心驱动 + 技能熟练度驱动融合算法，兼顾稳定性与探索效率。
-
-**五大核心模块**（ROS2 + PyTorch，开箱即用）：数据采集→特征编码（轻量化 CNN）→内在奖励计算→策略学习（PPO，轻量化适配嵌入式）→行为联动（与行为树感控闭环对接）。
-
-**与行为树联动**：内在动机引擎输出内在奖励 → 行为树动态调整任务优先级 → 机器人自主切换探索/执行任务。高内在奖励触发自主探索，低内在奖励触发预设任务，异常状态触发感控闭环异常处理。
-
-### 4. 分机器人参数调优方案
-
-| 机器人类型 | 好奇心权重 | 熟练度权重 | 学习率 | 特殊配置 |
-|-----------|-----------|-----------|-------|---------|
-| 机械臂/抓取 | 0.5 | 0.5 | 5e-4 | 禁止过高探索，避免碰撞 |
-| 移动机器人 | 0.8 | 0.2 | — | 探索半径 0.2m |
-| 人形机器人 | 0.7-0.9 | — | — | 特征维度 64，执行频率 20Hz |
-
-**调优判断标准**：内在奖励 0.3-0.8 为优秀（主动探索+高效执行）；>1.0 为过探索（乱动不执行任务）；<0.1 为欠探索（僵化不适应新环境）。
-
-**安全约束**：探索范围硬限制（不突破机械臂限位）、优先级机制（安全节点 > 内在动机探索 > 常规任务）、奖励截断（设置上限防疯狂探索）。
-
-**部署流程**：仿真调试（Gazebo）→ 参数调优 → 实体机部署 → 与行为树联动 → 现场迭代。
-
-## 实践启示
-
-1. **主动推理是具身智能的理论基石**：pymdp 适合快速验证，spm 适合工业部署，两者互补覆盖从科研到产品的全链路。
-2. **行为树替代 FSM 是工程化必然**：XML 定义逻辑、可视化调试、节点跨项目复用，将感控闭环开发从"写代码"变为"搭积木"。
-3. **内在动机引擎实现"被动执行+主动探索"双模式**：与行为树深度联动，8 个核心参数即可完成全品类机器人适配。
-
-## 相关页面
-
-- [原文存档](https://mp.weixin.qq.com/s/bB9ncEOvj3pTKtWpyGHkpQ)
-
----
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-
----
-
-## Ch16.007 How to Calculate the Inference Efficiency Ratio
-
-> 📊 Level ⭐⭐ | 8.1KB | `entities/how-to-calculate-the-inference-efficiency-ratio.md`
-
-## 深度分析
-**IER 的本质是将 AI 推理成本从"基础设施黑箱"中剥离出来，成为独立可追踪的 COGS 维度。** 文章的核心贡献是提出了 Inference Efficiency Ratio（IER = AI 产品收入 ÷ 推理成本）这一指标，并将其定位为 SaaS 财务框架第六支柱（AI Economics）的锚点指标。 传统 SaaS COGS 主要由固定成本构成（服务器、带宽、人力），而 AI inference cost 是纯usage-driven 的变量成本，其规模随产品功能扩展而非线性增长——这个本质差异是现有 gross margin 分析框架失效的根源。
-**AI-native 与 AI-infused 的业务模型划分决定了 IER 基准的根本差异，不可混用。** 文章明确指出：AI-infused（AI 是附加功能，客户为底层工作流付费）需要 10:1 以上的健康 IER 才能保持与传统 SaaS 可比的毛利率；AI-native（AI 是核心产品，价值交付本身就是推理过程）接受低至 5:1 的健康 IER，因为 inference cost 本身就是商业模式的一部分。 混淆这两个模型会导致定价策略错位：AI-infused 产品若采用 AI-native 的成本容忍度，会持续侵蚀已有毛利率；而 AI-native 产品若强制追求 AI-infused 的 IER 基准，可能因过度压缩 inference 质量而丧失产品竞争力。
-**Agentic 工作流正在系统性推高单位任务的 token 消耗量，可能抵消 per-token 定价下降的收益。** 文章指出了一个反直觉的现象：2023 年以来，虽然模型层面的 per-token 定价持续下降，但 agentic 架构（多步骤工具调用、长对话历史、海量 context window）的普及使每个任务消耗的 token 总量大幅上升，部分公司的 AI 成本反而在上升而非下降。 这意味着不能简单依赖"市场定价会自然解决效率问题"的假设——IER 的改善必须来自产品层面的主动优化（模型路由、prompt caching、usage-tiered pricing），而非被动等待上游降价。
-**P95 用户成本是 IER 失真的最大隐藏来源。** 文章揭示了一个典型的 CFO 盲区：平均值看起来健康的 IER，可能被 top 5% 的 power user 严重拉低——这些用户拥有巨大的 context window、重度工具调用和超长对话历史，其单用户 inference cost 是普通用户的 10-100 倍。 没有 customer-level 和 percentile-level 的 cost tracking，根本无法识别这个风险集中点。这是"blended metrics"欺骗性的典型案例。
-**IER 与 gross margin 的关系是因果而非平行：IER 是领先指标，gross margin 是滞后结果。** 文章明确了两者的分工：gross margin 告诉你"整体结果是什么"（所有 COGS 扣除后的剩余），IER 告诉你"增长最快的成本驱动因素效率如何"。 当 gross margin 下降时，IER 可以快速定位是否是 inference cost 导致；当 IER 改善但 gross margin 不变，说明 COGS 中有其他因素在吞噬利润。这个因果链条使得 IER 成为 CFO 日常监控仪表盘的必要组成，而非年底回顾时才看的指标。
-**定价架构与 inference cost 的脱节是 AI-infused 产品的结构性风险。** 如果重度 AI 用户与轻度用户支付相同的 flat subscription 费用，公司实际上在补贴 power user 的 inference cost。Usage-tiered 或 outcome-based 定价是唯一可持续的解决方案，但实施的前提是能够以 customer-level 和 feature-level 追踪 inference cost——否则根本没有数据支撑定价改革。
-**从 ICONIQ 和 Bessemer 的数据来看，AI 产品毛利率从 41%（2024）提升到 52%（2026 预测）的驱动因素是 operator 学会了管理 inference cost，而非模型定价自然下降。** 这验证了 IER 作为运营指标的实践价值：行业毛利率提升的来源是每一家公司 individually 优化 IER 的结果，而非市场整体趋势的自动馈赠。
-
-## 实践启示
-**1. 立即将 AI Inference Cost 设为独立 COGS 科目，从 blended infrastructure costs 中剥离出来。** 这是实施 IER 的第一步，也是最难的一步——大多数公司现有的 cost tracking 将 AI API 费用混入"第三方 API"或"基础设施"科目。独立列账本身就是一个强制函数，暴露了数据采集的盲区。
-**2. 用 IER 公式（AI 产品收入 ÷ inference 成本）计算公司当前的 IER，优先在 customer-level 和 feature-level 拆分。** Blended IER 告诉你是否有问题，customer-level IER 告诉你问题在哪里。如果 top 5% 的账户占据了 50% 以上的 inference cost，这些账户的 pricing 漏洞就是最优先的修复项。
-**3. 确认公司属于 AI-infused 还是 AI-native，这是选择 IER 基准的前提。** 判断标准：如果移除所有 AI 功能，公司是否仍能产生有意义的收入？若答案为是，则适用 AI-infused 基准（健康值 10:1 以上）；若答案为否，则为 AI-native（健康值 5:1 以上）。大多数向现有 SaaS 产品添加 AI 功能的成熟公司属于前者。
-**4. 将 IER 设立为新 AI 功能发布的前置门槛——任何将 IER 拉低至 floor 以下的功能发布，需要同时提交 mitigation plan（模型替换方案、usage limits、定价调整）。** 这个机制类似于传统软件时代的重大产品线发布审批流程，目的是在 feature 砍不动 gross margin 之前就识别风险，而非之后。
-**5. 模型路由是改善 IER 性价比最高的工程投入：简单任务走小模型，复杂任务才调用大模型。** Acme SaaS 的案例中，通过模型路由（轻量级 Sonnet 处理简单任务，Opus 保留给复杂任务）将 inference cost 从 $95K 降至 $52K，IER 从 4.4:1 提升至 8:1——这个改善不需要改变定价或用户体验，纯工程优化。
-**6. 建立 P50 和 P95 两套 IER 追踪体系。** P50 IER 反映典型用户体验对应的效率水平；P95 IER 反映 tail user 带来的成本压力。如果两者差距过大（例如 P50 IER 12:1 但 P95 IER 仅 3:1），说明 pricing model 没有正确覆盖 tail cost，需要重新设计 usage tiering。
-**7. 不要假设推理成本会自然下降——建立 IER 的月度 trend 追踪。** Agentic 功能的引入往往会导致 token 消耗量 per task 显著上升，与 per-token 定价下降形成对冲。主动追踪 IER trend（上升/下降/平稳）比关注绝对值更重要，因为趋势决定了是否需要立即采取行动。
-→ [原文存档](https://www.thesaascfo.com/how-to-calculate-the-inference-efficiency-ratio/)
-
-## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-model-research-latest-directions.md)
-
-- [How Superset built the IDE for AI agents on Vercel](ch01/058-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
-- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/634-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.html)
-- [Toto 2.0: Time series forecasting enters the scaling era](ch11/143-toto-2-context-aware-log-analytics-for-complex-distributed.html)
-
----
-
-## Ch16.008 Unlocking asynchronicity in continuous batching
-
-> 📊 Level ⭐⭐ | 7.2KB | `entities/continuous-async.md`
-
-> 来源：[原文存档](https://huggingface.co/blog/continuous_async)
-
-## 摘要
-HuggingFace 深度技术文章，系统性地解析了连续批处理（Continuous Batching）中同步瓶颈的根源，并提出基于 CUDA streams 和 events 的异步优化方案。核心发现：同步模式下 CPU 和 GPU 交替空闲，造成近 24% 的 GPU 空闲时间；通过异步化将两者解耦后，GPU 利用率从 76% 提升至 99.4%，生成速度提升 22%。
-
-## 核心要点
-- 连续批处理默认是同步的：CPU 准备新批次时 GPU 空闲，GPU 计算时 CPU 等待，两者从不同时工作
-- 实验数据：生成 8K tokens、batch size 32、8B 模型，总时间 300.6 秒，24% 为 GPU 空闲
-- 使用 CUDA streams 将 H2D 传输、计算、D2H 传输分配到独立 stream，实现流水线并行
-- CUDA events 提供纯 GPU 侧的同步语义，CPU 调用 `wait()` 后立即返回，不阻塞
-- 双 buffer 槽位设计解决数据竞争：slot A 和 slot B 交替使用，CUDA Graphs 通过 memory pool 共享 VRAM
-- Carry-over 机制处理跨 batch 的 token 依赖：用占位符构建 batch N+1 输入，batch N 完成后填充实际 token
-- 异步化零成本：无需新 kernel 或模型修改，仅通过流管理实现
-
-## 深度分析
-
-### 同步批处理的效率陷阱
-连续批处理通过动态打包请求显著提升了 GPU 利用率，解决了传统静态批处理的 padding 浪费问题。但它的默认实现是同步的——CPU 和 GPU 严格串行交替。在高频推理场景下（每秒数百步生成），这些空闲间隙累积成显著的效率损失。
-
-HuggingFace 的实验数据揭示了这一问题的严重性：生成 8K tokens、batch size 32、8B 模型，总时间 300.6 秒，其中 24% 时间为空闲 GPU。这意味着如果能消除 CPU 开销，理论上可获得 24% 的免费加速——无需任何新 kernel 或模型修改。
-
-这种"CPU 做完 GPU 等、GPU 做完 CPU 等"的模式在单次 forward pass 中影响不大，但在 continuous batching 循环中每秒执行数百步时，空闲间隙的累积效应就变得不可忽视。文章将此称为"悲观视角"（GPU 浪费 24%）和"乐观视角"（可免费提速 24%）。
-
-### CUDA Streams 与并发执行机制
-CUDA stream 是理解异步批处理的关键基础设施。每个 stream 是 GPU 操作的顺序队列（kernel launch、memory copy、sync barrier），同一 stream 内操作串行执行，不同 stream 可并发。通过将 H2D 传输（Host-to-Device）、计算（forward pass + sampling）、D2H 传输（Device-to-Host）分配到三个独立 stream，可实现数据传输与计算的重叠执行。
-
-但存在一个关键陷阱：PyTorch 的默认 stream 具有全局同步语义——任何操作调度到默认 stream 前，必须等待所有其他 stream 完成；反之亦然。这意味着如果不显式使用非默认 stream，所有异步努力都会被默认 stream 的隐式同步破坏。因此，异步批处理的第一步是确保所有 GPU 操作都调度到非默认 stream 上。
-
-### CUDA Events 的同步语义与依赖编排
-stream 之间的独立性既是优势也是问题——它们不知道彼此的存在，导致 compute stream 可能在 H2D 传输完成前就启动，D2H 可能在计算完成前就传输结果。CUDA event 是解决这一问题的机制：通过 `stream.record(event)` 在 stream 中插入标记，GPU 执行到该点时标记完成；通过 `stream.wait(event)` 让另一个 stream 阻塞直到该 event 被设置。关键是 `wait` 只阻塞 stream，不阻塞 CPU——CPU 调用立即返回。
-
-这种纯 GPU 侧的同步使得 CPU 可以真正"放手"，让硬件自行管理依赖关系。实际的同步点只有一个：CPU 在 `d2h_done_event.synchronize()` 处阻塞等待 batch N 的输出，这是不可避免的（需要 CPU 采样 token 并更新状态），但仅占极小比例。
-
-### 双 Buffer 与 CUDA Graphs 的协同设计
-异步批处理需要在 GPU 处理 batch N 时准备 batch N+1 的输入，这引发两个核心挑战。
-
-**数据竞争与双槽位**：batch N 和 batch N+1 不能共享同一内存区域，否则 GPU 可能读到部分覆写的数据。解决方案是使用两个独立的内存槽位（slot A 和 slot B），交替使用。代价是 RAM 和 VRAM 翻倍，但使用 FlashAttention 时（不需要 attention mask——最大的输入 tensor），这个 tradeoff 通常是值得的。
-
-**CUDA Graphs 兼容性**：生产环境常使用 CUDA Graphs 加速推理（预录制的 CUDA 操作序列绑定特定内存地址）。双槽位需要两个 graph，但通过 memory pool 让多个 graph 共享池化内存，总 VRAM 接近单个 graph 的使用量。唯一约束是同一 pool 中的两个 graph 不能并发执行——由于 batch N 必须在 batch N+1 开始前完成，这一约束自然满足。
-
-**Carry-over 机制**：跨 batch 的请求需要将 batch N 的输出 token 作为 batch N+1 的输入。由于 batch N 仍在计算，该 token 尚未产生，因此用 0 作为占位符构建 batch N+1 输入。batch N 完成后通过 carry-over 操作（选择、置零、截断、相加）填充实际 token，这四个操作足够轻量，可被 CUDA Graph 捕获。
-
-## 实践启示
-1. **推理优化应关注 CPU/GPU 协同**：即使 GPU 计算能力充足，CPU 侧的批次准备调度开销可能成为瓶颈。异步化将两者解耦，让 CPU 和 GPU 同时做有用工作。
-2. **使用非默认 CUDA Stream 避免隐式同步**：在 PyTorch 中显式使用非默认 stream 处理异步操作。任何传输操作都必须是非阻塞的，否则默认 stream 的全局同步效应会破坏所有异步努力。
-3. **双 buffer 槽位是异步推理的标准模式**：任何需要"一边执行一边准备"的场景，都应考虑双缓冲。空间换时间的 tradeoff 在 GPU 内存充足时通常值得。
-4. **CUDA Graphs + Memory Pool 兼顾延迟与吞吐**：异步批处理提升吞吐量，CUDA Graphs 优化单批次延迟。通过 memory pool 可在保持 Graphs 效果的同时支持多 batch 并行，不必二选一。
-5. **Profiling 先行**：在优化模型或硬件之前，先用 profiling 工具（如 HuggingFace 提供的 CPU/GPU activity timeline 脚本）确认是否存在 CPU-GPU 交替空闲问题。22% 的加速可能是"免费午餐"。
-6. **注意 unavoidable sync point**：异步优化无法消除所有同步——CPU 仍需在每个 batch 结束时采样 token 并更新状态。这个不可避免的同步点是剩余 1% GPU 空闲的来源。
-
-## 相关实体
-- [LLM 高效推理 vLLM](ch01/623-ai-infra.html)
-- [SGLang Agent 开发](ch03/004-agent.html)
-- [推理优化](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/inference-optimization.md)
-
-→ [原文存档](https://huggingface.co/blog/continuous_async)
-
----
-
-## Ch16.009 The next generation of speculative decoding: DFlash and Spec V2 - LMSYS Blog
-
-> 📊 Level ⭐⭐⭐ | 11.1KB | `entities/lmsys-dflash-speculative-decoding-2026-06.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 11.1KB | `entities/lmsys-dflash-speculative-decoding-2026-06.md`
 
 # The next generation of speculative decoding: DFlash and Spec V2 - LMSYS Blog
 
@@ -1224,543 +1756,12 @@ draft 模型权重三处 release：`z-lab/Qwen3.5-397B-A17B-DFlash`、`modal-lab
 
 ## 相关实体
 
-- [automation anywhere collaborates with cisco, nvidia, okta, a](ch04/010-automation-anywhere-collaborates-with-cisco-nvidia-okta-a.html)
-- [ettin reranker family](ch01/303-introducing-the-ettin-reranker-family.html)
+- [automation anywhere collaborates with cisco, nvidia, okta, a](https://github.com/QianJinGuo/wiki-public/blob/main/entities/automation-anywhere-collaborates-with-cisco-nvidia-okta-and-openai-launching-ent.md)
+- [ettin reranker family](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ettin-reranker-family.md)
 - [mathematical optimization at enterprise scale: aws innovatio](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mathematical-optimization-aws-innovation-center-enterprise.md)
 - [DDoSing Software Delivery Pipelines](https://github.com/QianJinGuo/wiki-public/blob/main/entities/varoa-ddosing-software-delivery-pipelines-2026.md)
-- [AI GPUs probably live longer than three years](ch04/052-ai.html)
+- [AI GPUs probably live longer than three years](https://github.com/QianJinGuo/wiki-public/blob/main/entities/seangoedecke-ai-gpus-live-longer-than-three-years-2026.md)
 
 → [原文存档](https://www.lmsys.org/blog/2026-06-15-next-generation-speculative-decoding-dflash-v2/)
-
----
-
-## Ch16.010 vLLM V0→V1 迁移中的 logprob 差异修复
-
-> 📊 Level ⭐⭐⭐ | 9.4KB | `entities/vllm-v0-to-v1-correctness-before-corrections.md`
-
-> -> [原文存档](https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections)
-
-## 核心发现
-- V1 默认返回 **raw logprobs**（未经后处理），而 trainer 期望 **processed logprobs**
-- V1 的 prefix caching / async scheduling 改变了执行路径
-- 先修 backend 再调 objective，不要反过来
-- Clip rate 是最敏感的 mismatch 指示器
-
-## 影响范围
-所有使用 vLLM 做 rollout generation 的 online RL 方法（PPO、GRPO、GSPO）
-
-## 相关链接
-→ [原文存档](https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections)
-
-## 相关实体
-<!-- ⚠️ 以下交叉引用在 lint 时未通过，请确认 slug 后再取消注释 -->
-<!-- - [servicenow vllm correctness](ch01/422-llm.html) -->
-<!-- - [servicenow vllm correctness huggingface](ch01/422-llm.html) -->
-
-## 深度分析
-### 背景：为什么 V0→V1 迁移是个高风险操作
-vLLM 的 V1 引擎对 V0 做了大量底层重构，包括调度器架构、内存管理、KV cache 分配策略和 logprob 计算路径的重大变化。对于大多数推理场景，这些变化是透明的、性能正交的。但对于 **RL 训练**（尤其是需要精确 token-level logprob 的 PPO/GRPO/GSPO），这些变化直接影响了 `logprob` 的数值语义，进而影响 policy gradient 的计算精度。
-V0 的 logprob 输出经过完整的 `temperature → repetition_penalty → min_length/truncate` 后处理流水线。而 V1 为了降低延迟，默认返回 **raw model logits** 经过 log-softmax 后的值，跳过了这部分后处理。这导致即使模型权重完全相同，V0 和 V1 的 `logprob` 也会系统性偏差。
-
-### 四个 backend 问题的逐层解析
-**问题一：Logprob Semantics（最关键）**
-V1 新增的 `logprobs_mode` 参数控制 logprob 的计算方式。默认值在 V0 和 V1 之间存在语义差异：V0 默认执行完整后处理，V1 默认不执行。当 `use_v1: true` 时，必须显式设置 `logprobs_mode: "processed_logprobs"` 来恢复 V0 语义。否则 reward shaping、entropy bonus、value estimation 全部会带上系统性偏差。
-这个问题的影响范围极广：所有依赖 `logprob` 计算 advantage estimation 的 RL 方法都会受影响。PPO 的 clipped surrogate objective 直接依赖 `logprob` 比率，GRPO 的 group-relative advantage 依赖 `logprob` 的精确值。哪怕 0.01 的均值偏移，在数万次迭代的累积下也会导致训练曲线漂移。
-**问题二：Runtime Defaults — Prefix Caching 与 Async Scheduling**
-V1 引入了 prefix caching（相同 prompt 前缀的 KV cache 复用）和 async scheduling（异步 token 生成调度）。这两个优化在推理场景下是重大性能收益，但在 RL 训练中引入了非确定性：相同 `input_ids` 可能因为 cache 命中状态不同而走不同的执行路径，导致 `logprob` 在 token 位置上有微小差异。
-对于 RL 训练的可复现性（reproducibility）要求，这种不确定性是不可接受的。ServiceNow-AI 团队的建议是：在训练阶段显式关闭这两个特性（`enable_prefix_caching: false`, `async_scheduling: false`），只在推理部署时启用。
-**问题三：Inflight Weight Updates**
-V1 的权重更新路径（weight update during inference）与 V0 有差异。这主要影响的是 online RL 中的 weight update 频率和时机。如果在 rollout 过程中进行权重更新（常见于 PPO 的 async PPO 变体），V1 可能因为权重同步时机不同导致 logprob 计算不一致。
-**问题四：fp32 lm_head 精度**
-`lm_head`（final projection layer）的计算精度在 V0 和 V1 默认配置下可能不同。V0 有时依赖 implicit FP8 或混合精度优化，而 V1 的默认精度策略可能不同。确保 `lm_head` 在 FP32 下运行可以避免低精度累积误差影响 logprob 精度。
-
-### Clip Rate 作为Mismatch 指示器
-PPO 和 GRPO 训练中，clip rate（被 clip 的 policy ratio 的比例）是一个关键的可观测指标。正常训练时，clip rate 通常在 1%–20% 区间。如果 clip rate 出现剧烈波动（尤其是从极低突然升高）或训练曲线出现"台阶式"突变，这通常是 logprob 不匹配的信号。ServiceNow-AI 特别指出：在 V0→V1 迁移的初期，clip rate 是最容易读到的系统性 mismatch 信号，应该作为第一优先级监控指标。
-
-## 实践启示
-### 迁移检查清单
-在将 RL 训练 pipeline 从 V0 切换到 V1 时，以下配置是**必须**验证的：
-```
-vllm_config:
-  use_v1: true
-  vllm_kwargs:
-    logprobs_mode: processed_logprobs    # 恢复 V0 logprob 语义
-    enable_prefix_caching: false           # 关闭 cache 非确定性
-    async_scheduling: false                # 关闭 async 调度非确定性
-    lm_head_precision: fp32               # 确保 lm_head 精度对齐
-```
-
-### 推荐迁移策略
-**阶段一：逐项隔离验证**
-不要一次性切换所有配置。先在固定随机种子下，对比 V0 和 V1 相同输入的 logprob 输出。使用一个简单的 dummy prompt（如 "The capital of France is"），对比每个 token 位置的 logprob 差异。如果差异超过 `1e-3`，说明 logprob 语义未对齐。
-**阶段二：短期 RL 跑分**
-在确认 logprob 数值对齐后，用一个小型模型（如 1B–3B）在短数据集上做 100–500 步的 RL 训练。对比 V0 和 V1 的训练曲线（特别是 clip rate 和 policy entropy）。如果两者在 1% 以内对齐，再切换到完整训练。
-**阶段三：prod 迁移后持续监控**
-V1 的默认行为会随着 vLLM 版本更新而变化。每次升级 vLLM 后，都应该重新跑一遍上述对齐验证 pipeline。
-
-### 对不同 RL 方法的影响差异
-- **PPO**：对 logprob 精度最敏感，因为 PPO 的 importance sampling ratio (`π_new/π_old`) 直接依赖精确 logprob 值
-- **GRPO**：相对宽容一些，group-relative advantage 计算会做归一化，但 logprob 均值偏差仍会影响 advantage baseline
-- **GSPO**（格尔茨随机策略优化）：和 GRPO 类似，但由于采样策略更激进，logprob 不匹配会放大采样方差
-
-### 配置管理的工程建议
-建议在 RL 训练代码中，通过环境变量或 config 文件集中管理 vLLM 的版本兼容配置，而非散落在各个调用点。这样可以在切换 V0/V1 时保持单一配置来源，减少因配置不一致导致的难以复现的 bug。
----
-
-## 总结
-vLLM V0→V1 迁移中的 logprob 差异，本质上是 **推理引擎默认行为变化** 与 **RL 训练对数值精度的严格要求** 之间的冲突。核心修复路径是：显式设置 `logprobs_mode: processed_logprobs`，关闭 prefix caching 和 async scheduling 确保执行路径确定性，并在训练初期以 clip rate 为核心监控指标验证对齐状态。不要在 backend 未对齐的情况下尝试通过调整 RL objective 来"掩盖"问题——那样只会引入更难追踪的隐式错误。
-
----
-
-## Ch16.011 LLM 推理流水线完整解析：Prefill-Decode 双阶段模型
-
-> 📊 Level ⭐⭐⭐ | 8.6KB | `entities/llm-inference-pipeline-internals.md`
-
-> -> [原文存档](https://mp.weixin.qq.com/s/1zZ0UXCNUA1UJ39gJNDQjg)
-
-# LLM 推理流水线完整解析
-
-## 一句话
-
-系统讲解 LLM 推理的完整流水线——从 tokenization 到流式输出，核心框架是 **prefill（计算受限）vs decode（内存受限）双阶段模型**，所有推理优化都针对其中一个阶段。
-
-## 核心框架：Prefill vs Decode
-
-LLM 的 `generate()` 调用在同一块 GPU 上经历两个截然不同的计算阶段：
-
-| 阶段 | 工作方式 | 瓶颈 | 关键指标 |
-|------|---------|------|---------|
-| **Prefill** | 所有输入 token 并行处理，矩阵乘矩阵 | GPU 算术吞吐（compute-bound） | TTFT（Time to First Token） |
-| **Decode** | 逐个 token 生成，query 向量 × 缓存矩阵 | 内存带宽（memory-bound） | ITL（Inter-Token Latency） |
-
-**诊断原则**：当有人说模型慢，先判断是启动慢（prefill-bound → 优化 TTFT）还是流式输出慢（decode-bound → 优化 ITL）。二者消耗不同的硬件资源。
-
-## 完整推理路径
-
-### 1. Tokenization & Embedding
-
-BPE tokenizer 将文本转为词表整数 ID（词表规模约 50K），映射到 `[vocab_size, hidden_dim]` embedding 矩阵。位置编码使用 **RoPE**（Rotary Position Embeddings）——通过旋转向量而非额外位置向量来编码位置。
-
-### 2. Transformer 层
-
-每层依次执行：
-- **Self-attention**：为每个 token 计算 Q/K/V 投影，query 与所有 key 打分 → softmax → 加权混合 value
-- **FFN**：两层 MLP 独立处理每个 token 向量（attention 跨位置传递信息，FFN 变换位置表示）
-
-### 3. Prefill 阶段
-
-所有输入 token 并行经过每一层，attention 以大型矩阵乘矩阵运行，GPU 利用率高。此阶段同时填充 **KV cache**（每层的 K/V 张量存入 GPU 内存供 decode 复用）。输出第一个 token。
-
-### 4. Decode 阶段
-
-每步只为新 token 计算 Q，与缓存中的 K/V 做 attention。算术量小但需从内存加载全部权重 + 完整 KV 缓存，瓶颈切换为内存带宽。
-
-## KV Cache：推理的核心约束
-
-无缓存时生成 1K token 回答需每步重算完整 attention（平方级复杂度）。KV cache 将 K/V 存一次、增量追加，提速约 5 倍以上。
-
-**代价**：
-- 13B 模型：每个 token 约消耗 1 MB KV cache
-- 4K 上下文：仅 KV cache 占 4 GB 显存
-- 直接与 batch size 争夺 GPU 内存 → 并发能力下降
-
-**四种缓解方法**：
-
-| 方法 | 原理 |
-|------|------|
-| KV cache 量化（INT8/INT4） | 降低缓存精度 |
-| Sliding window attention | 丢弃固定窗口外的 token |
-| GQA（Grouped-Query Attention） | 多个 head 共享 K/V，减少缓存张量 |
-| PagedAttention（vLLM） | 像 OS 虚拟内存一样分页管理缓存，消除碎片 |
-
-## DeepSeek V4：从结构上压缩 KV Cache
-
-DeepSeek V4 Preview（2026-04-24）没有把 KV cache 当固定成本管理，而是重新设计 attention 让缓存结构性更小：
-
-- **CSA**（Compressed Sparse Attention）：softmax-gated pooling 压缩 KV 4 倍 → sparse attention
-- **HCA**（Heavily Compressed Attention）：128 个 token 的 KV 合并为 1 个压缩条目 → dense attention
-
-效果（1M-token 上下文 vs V3.2）：
-- 单 token 推理 FLOPs：**27%**
-- KV cache：**10%**（bf16 下 9.62 GiB vs 83.9 GiB）
-- 叠加 fp4/fp8 量化可再缩小 2 倍
-
-→ 相关实体：[DeepSeek V4 本地推理](ch09/040-deepseek-v4-ds4c-antirez.html)
-
-## 量化：收益最高的优化手段
-
-内存节省与 bit width 线性相关：
-
-| 精度 | 7B 模型显存 |
-|------|-----------|
-| FP32 | 28 GB |
-| FP16/BF16 | 14 GB |
-| INT8 | 7 GB |
-| INT4 | 3.5 GB |
-
-- INT4 是 7B 模型在笔记本 GPU（4-6 GB）上运行的关键
-- GPTQ / AWQ 使用 per-channel scaling 降低质量损失
-- INT4 通常只比全精度低 1-2 个百分点
-- FP16→INT8 推理延迟通常减半，质量损失可忽略
-
-## 推理服务基础设施
-
-现代推理服务器的三种核心优化：
-
-| 技术 | 作用 |
-|------|------|
-| **Continuous batching** | 同一 GPU step 交错处理多请求的 token，decode 阶段也能保持高利用率 |
-| **Speculative decoding** | 小 draft model 先提多个 token → 大模型一次 forward pass 验证，串行→并行 |
-| **PagedAttention**（vLLM） | 固定大小 block 管理 KV cache，消除碎片，提升并发 |
-
-框架组合：vLLM、TensorRT-LLM、TGI。一块 GPU 可服务几十并发用户——decode 阶段大量闲置算力被 continuous batching 填满。
-
-## 实践结论
-
-1. **长 prompt 成本在 TTFT**（prefill），**长输出成本在 ITL**（decode）——消耗不同硬件资源
-2. **上下文长度不免费**——膨胀 KV cache，直接降低 batch capacity
-3. **decode 阶段 GPU 利用率可能仅 30%**——瓶颈在内存带宽不在算术计算
-4. **解决方向**：更快的内存 + 更小的缓存 + 更好的 batching，而非更多算力
-
-## 与现有知识的关联
-
-- → [DeepSeek V4 本地推理](ch09/040-deepseek-v4-ds4c-antirez.html)：V4 的 CSA/HCA 架构创新（本文第 6 节）与 antirez 的 ds4.c 本地推理引擎互补
-- → [GLM-5 Scaling Pain](ch04/052-ai.html)：高并发推理下的竞态 Bug，是本文第 8 节"推理服务基础设施"的反面案例
-- → [vLLM](ch01/422-llm.html)：PagedAttention 的具体实现
-
-## 工业实践：快手 kLLM 全栈优化（2026-07）
-
-快手系统软件团队围绕 GLM-5.2（DSA/MLA）与 DeepSeek-V4 构建自研推理引擎 kLLM，将本文上述概念落地为可量化的生产优化，原则是**不以模型能力损失为代价做优化**。
-
-| 本文概念 | kLLM 工业实践 | 量化收益 |
-|---------|--------------|---------|
-| PagedAttention / KV cache | **分级 KV Cache**（L1 GPU HBM / L2 CPU DRAM / L3 SSD+分布式）+ Cache-Aware 路由 | 命中率 +20pp、SLO 下吞吐 +30%、总命中率 ~87.6%；前缀树增量匹配使 GPU Bubble 400ms→30ms、Prefill +40% |
-| Prefill vs Decode（TTFT vs ITL） | **PD 分离 + SLO Load 驱动弹性**：以相对 TTFT/TPOT SLO 的背离度统一度量 P/D 压力，取预测/真实值上界 | 容量生效速度 10min→10s（约 60×），OpenRouter Uptime 99%+ |
-| Speculative decoding | **DSpark 半自回归投机解码**（并行 logits + 轻量序列模块 Bias 修正） | DeepSeek V4 Flash 线上 TPOT -15% |
-| 长上下文 / KV 膨胀 | **MLA 下 Attention Request DP + MoE EP 混合并行**（cKV 跨 Head 共享无法 TP 切分 → 按请求维分） | 8 卡 KV 容量 2.9M→21.2M Tokens（7.3×）、TTFT -25% |
-| Continuous batching 边界 | **Chunk Prefill 公平调度 + Decode KV 高水位保护**（短请求优先、长请求 Chunk 边界让出） | 平均 TTFT -17.8%、P50 -26.0%、P95 -12.1%（P99 +2.7%） |
-
-**核心洞见**：①模型侧降本 ≠ 系统侧同比提效——新一代模型（稀疏激活/稀疏注意力/百万上下文）把瓶颈从单一算力问题转化为计算/通信/显存/调度耦合的系统问题；②并行边界应按状态分布方式重构（MLA cKV 沿 Request DP、MoE 沿专家 EP、Dense FFN 按需 TP），而非单一并行策略覆盖全模型。
-
-**Agent 场景延伸**：kLLM 规划 Program-Aware 全生命周期调度——调度单元从"单请求"提升为一次 agent 会话/工作流，做暂停/恢复调度 + 工具调用空窗资源回收，指向推理系统向 agent 工作负载演进。
-
----
-
-## Ch16.012 ServiceNow vLLM V0→V1 正确性修复
-
-> 📊 Level ⭐⭐⭐ | 8.3KB | `entities/servicenow-vllm-correctness-huggingface.md`
-
-> -> [原文存档](https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections)
-
-## 核心问题：训练-推理 logprob 不匹配
-
-PipelineRL 的训练器直接消费 rollout 产生的 token logprobs 来计算策略比率、KL 散度、clip rate、entropy 和 reward。任何 logprob 计算语义的变化都会改变训练动态。
-
-vLLM V1 默认返回**原始模型输出的 logprobs**（在 temperature scaling、penalties、top-k/top-p 过滤之前），而 PipelineRL 期望的是**经过采样器处理的分布的 logprobs**。这一语义差异导致初始 V1 跑通后，clip rate、KL、entropy、reward 全面漂移。
-
-## 四个后端修复
-
-### 1. Logprob 语义修复
-
-设置 `logprobs-mode=processed_logprobs` 移除了明显的均值偏移，使策略比率均值稳定在 1.0 附近。但训练曲线仍有差距——说明单一修复不够，下一个问题在推理路径本身。
-
-### 2. 运行时默认值对齐
-
-V1 的 prefix caching（默认开启）和 async scheduling（默认开启）引入了 V0 不存在的执行路径差异。在 online RL 场景下，prefix cache 命中可能在权重更新边界之前重用已计算状态，导致 actor 拿到过期推理结果。
-
-对齐配置：
-
-```yaml
-vllm_config:
-  use_v1: true
-  vllm_kwargs:
-    logprobs-mode: processed_logprobs
-    enable-prefix-caching: false
-    async-scheduling: false
-```
-
-### 3. Inflight Weight Updates 语义对齐
-
-V0 的权重同步机制：阻塞在引擎边界 → 加载新权重 → 恢复执行，不显式清除缓存。V1 等效方案：
-
-```python
-await engine.pause_generation(mode="keep", clear_cache=False)
-await engine_client.collective_rpc_async(
-    "receive_weight_update",
-    args=(request.model_dump_json(),),
-)
-await engine.resume_generation()
-```
-
-关键：`mode="keep"` 和 `clear_cache=False` 匹配了 V0 的隐式语义。
-
-### 4. fp32 lm_head 最终投影精度
-
-即使前三项修复完成，最终 parity 仍需要 fp32 `lm_head`。MiniMax-M1 技术报告和 ScaleRL 论文都独立发现了这个问题：RL 更新直接消费 token logprobs，而 lm_head 输出的 logits 精度变化会传播到 logprobs，进而影响策略比率、KL 散度和 clip rate。
-
-## 核心工程原则：先修后端，再谈目标
-
-ServiceNow 的经验是：**错误的顺序（先改目标函数再修后端）会导致目标侧的修正掩盖后端问题，使训练曲线难以解读**。正确的问题分解应该是：
-
-1. 推理后端是否产生了正确的 logprobs？
-2. 给定正确的 logprobs，目标函数是否还需要 off-policy 或 async 修正？
-
-这两个问题需要分离处理。
-
-## 相关实体
-
-- [ServiceNow vLLM Correctness（更完整的分析）](ch01/422-llm.html)
-- [vLLM V0→V1 迁移中的 logprob 差异修复](ch01/422-llm.html)
-
-## 深度分析
-
-vLLM V0 到 V1 的迁移表面上是同一个推理引擎的版本升级，实际上是一次架构重写带来的行为契约变化。 ServiceNow 团队设定的迁移目标"让 V1 返回与 V0 等效的 rollout logprobs"看似技术性极强，实则揭示了 RL 训练系统中的一个深层依赖：训练器对推理后端的输出语义做了隐式假设。这些假设在 V0 时代是正确的，但在 V1 重写后若不显式声明和强制对齐，就会成为训练不稳定的隐秘根源。
-
-logprobs 的语义差异（原始模型输出 vs. 采样器处理后分布）是四个修复中最初级但也最关键的一个。 它之所以关键，不是因为修复困难，而是因为它揭示了一个更普遍的问题：推理引擎版本升级时，默认配置的语义变化往往不会出现在升级指南中，却会直接影响消费推理输出的上游系统。这一问题在 PipelineRL 这类直接消费 token logprobs 计算训练目标的架构中尤为致命——logprob 均值偏移直接体现为策略比率的系统性偏差。
-
-prefix caching 在 RL 推理中的危险性被这一案例充分暴露。 Prefix caching 的设计目的是通过重用已计算的 KV cache 加速推理，这在静态场景（固定模型权重、固定对话前缀）下是合理的优化。然而，在 online RL 场景下，模型权重在训练过程中持续更新，prefix cache 命中可能在权重更新边界之前重用已计算状态，导致 actor 获取与当前权重不对应的过期推理结果。这一问题在异步调度和并发请求混合时进一步复杂化，因为缓存失效边界与权重更新边界的对齐无法得到保障。
-
-fp32 lm_head 的发现在多个独立研究中得到印证（MiniMax-M1 技术报告、ScaleRL 论文），表明这是一个跨团队、跨方法的普遍性问题而非 ServiceNow 特有。 fp16 lm_head 输出的 logits 精度变化通过 logprobs 传播到 RL 更新的每一个计算环节——策略比率、KL 散度、clip rate 均受影响。这意味着在大型 RL 训练任务中，lm_head 投影精度的选择并非性能优化问题，而是正确性前提。ScaleRL 将 fp32 logits/head 计算纳入标准 RL 配方，意味着这一实践正在从个别案例上升为社区共识。
-
-ServiceNow 总结的核心工程原则——"先修后端，再谈目标"——具有超出 vLLM 迁移场景的方法论价值。 在引入任何目标侧修正（truncated importance sampling、off-policy correction、async correction）之前，必须首先确保推理后端在等效条件下运行。这一原则的反面教训同样重要：在推理后端行为未对齐的情况下，目标侧的修正会与后端问题产生混合效应，使得训练曲线难以解读，也无法判断改进来源于修正本身还是后端修复的附带结果。
-
-## 实践启示
-
-- **推理引擎升级时的必检清单**：在将推理引擎升级到新版本后，第一步应验证 rollout logprobs 与旧版本的语义等效性，而非直接进行目标函数调优或训练超参数调整；具体检查项应包括 logprobs 计算位置（原始输出 vs. 采样后）、默认精度（fp16 vs. fp32）和默认优化项（prefix caching、async scheduling）的状态变化。
-- **online RL 场景下禁用 prefix caching**：在模型权重持续更新的训练场景中，prefix caching 引入的缓存重用语义与权重更新边界可能产生冲突；建议在 online RL 训练中显式设置 `enable-prefix-caching: false`，直到推理引擎提供权重更新感知的缓存失效机制。
-- **inflight weight update 的语义声明**：在实现权重更新逻辑时，应明确声明 `mode` 和 `clear_cache` 参数的语义选择并与推理引擎版本对齐；`mode="keep"` 和 `clear_cache=False` 的组合匹配了 V0 的隐式语义，但新引擎版本可能有不同的默认值，需要显式对齐。
-- **lm_head 投影精度作为 RL 正确性前提**：对于直接消费 token logprobs 的 RL 训练系统，建议将 fp32 lm_head 作为基线配置而非可选优化；这一选择与 ScaleRL 论文的推荐一致，在不引入显著性能损失的情况下消除了数值精度传播这一隐蔽的正确性风险。
-- **问题分解的工程顺序**：当训练曲线出现异常时，应严格遵循"推理后端等效性 → 目标函数修正"的处理顺序；在确认推理后端正确性之前，避免在目标侧引入修正——否则修正效果与后端修复效果混合，使得训练异常的根因诊断变得不可信。
-
----
-
-## Ch16.013 Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP
-
-> 📊 Level ⭐⭐⭐ | 8.2KB | `entities/huggingface-torch-mlp-fusion-profiling-2026.md`
-
-# Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP
-
-> **Background**: Hugging Face team profiling series part 2 (2026-06-11). Climbs from single nn.Linear to 3-layer MLP with ReLU activation, profiles GPU kernel launch overhead, and shows torch.compile Inductor fusion reducing 9+ launches to 3 fused triton kernels.
-
-## Core problem
-
-- nn.Linear is the building block of nearly all deep learning models
-- Single nn.Linear call produces multiple kernel launches (matmul + bias add)
-- ReLU activation adds additional launches
-- At small batch size (1024x1024), each layer can produce 5+ launches
-- Kernel launch overhead (10-20us each) dominates total latency in overhead-bound regime
-
-## Key findings
-
-1. **3-layer MLP produces 9+ kernel launches** (3 Linear x 3 ops/Linear + 2 ReLU), single launch 10-20us, launch overhead 30%+ of total
-2. **torch.compile auto-fusion**: Inductor backend fuses matmul + bias_add + relu into a single triton kernel, reducing 3 launches per layer to 1, total 9 to 3
-3. **Compute-bound vs overhead-bound crossover**: at batch=1024 launch overhead dominates; at batch>=4096 compute dominates and fusion gains diminish
-4. **CPU dispatch chain is hidden overhead**: each op traverses torch.add -> aten::add -> aten::add.out -> aten::copy_ dispatch layers, visible in profiler but not in user code
-5. **torch.compile guard / recompile**: dynamic shapes trigger multiple recompiles, so first call can be slower than eager mode
-
-## Practical takeaways
-
-- Latency-sensitive small batch inference (batch<=2048): prefer torch.compile fusion
-- Large batch training (batch>=4096): eager and compile modes have similar performance
-- When profiling, focus on cudaLaunchKernel duration field, not just Self CUDA Time
-- Use torch.profiler.profile(activities=[ProfilerActivity.CPU, ProfilerActivity.CUDA]) with record_function decorator to localize bottlenecks
-
-## Wiki cross-links
-
-- Same series (profiling part 1) - not yet ingested; check entities/torch-compile-* for related Inductor backend content
-- Candidate associations: kernel fusion, launch overhead, Inductor backend (no existing entity)
-
-## 核心观点
-
-1. **单算子层面的"融合"已接近极限，融合优化的主战场正在向算子间边界迁移**
-   - `nn.Linear` 的 bias 加法已经通过 cuBLAS GEMM 的 **epilogue** 机制在单 kernel 内部融合（`addmm`），`torch.compile` 在单 Linear 层上没有更多融合空间
-   - 真正的融合收益出现在 **算子间**：GeLU + element-wise mul + reshape 这三个独立 kernel 在 compile 后融合为一个 Triton kernel，消除了中间结果在 HBM 的往返
-   - 这意味着未来优化应关注"哪些算子之间有中间结果往返"，而非在单算子内部寻找融合机会
-
-2. **CPU 端的 dispatch 开销是被忽视的瓶颈，尤其在 overhead-bound 场景**
-   - 每个 PyTorch 算子经过 `aten::linear → aten::t → aten::addmm` 的 dispatch 链，每次 dispatch 触发 Python/C++ binding 开销
-   - `torch.compile` 通过 Inductor 在编译时展开这个链，直接发射 `aten::addmm`，消除了中间 view 操作带来的 CPU 开销
-   - 对 batch<=2048 的小 batch 推理，这个 CPU 开销占总延迟的 30%+，是 fused kernel 带来的主要收益来源
-
-3. **静态 shape 特化 vs 通用性是一个根本性权衡**
-   - Inductor 的 fused kernel 为 `[8192, 3072]` 形状专门生成，执行时间 89.4µs；Liger 手写 kernel 泛化任意形状执行时间 92.8µs
-   - 差距仅 3.4µs，但背后是 compile-time shape specialization 的代价——动态 shape 触发 recompile，重编译成本可能远超单次执行节省
-   - 实际工程选择应基于输入 shape 是否稳定，而非绝对性能数字
-
-4. **GEMM 形状影响 kernel 选型，从而影响性能——同样的 FLOPs 不等于同样的速度**
-   - gate_proj 和 up_proj：M·K·N = 8192·768·3072，执行时间 0.19ms
-   - down_proj：M·K·N = 8192·3072·768，执行时间 0.17ms（快约 10%）
-   - 原因：N=768 vs N=3072 导致 cuBLAS 选择了不同的 tile 配置（128×256 with stages_64x3 vs 128×128 with stages_32x5），更深 pipeline 的 tile 在该形状下复用更好
-
-### 技术要点
-
-- **GEMM epilogue**：矩阵乘 kernel 在写回 HBM 前执行 bias add / activation，避免单独发起一次 HBM 读写
-- **Triton pointwise fusion**：Inductor 的 Triton 后端将 pointwise 算子（GeLU、mul、reshape）融合为单一 kernel，intermediate 留在寄存器而非 HBM
-- **cuBLAS occupancy query**：每次 GEMM 发射前调用 `cudaOccupancyMaxActiveBlocksPerMultiprocessor` 确认最优 grid 配置，pointwise kernel 则直接发射无查询
-- **View 不产生 kernel**：`aten::t`、`aten::transpose`、`aten::as_strided` 只改 tensor metadata（shape + stride），不搬动数据，不发射 GPU kernel
-
-### 实践价值
-
-- 对**ML 工程师**：小 batch 推理（batch≤2048）优先用 `torch.compile`，收益最大；大 batch 训练（batch≥4096）可保留 eager mode 省去编译开销
-- 对**性能工程师**：profiler 表中看到 `0.000us` CUDA 时间的 op 名称（如 `aten::t`）应忽略，它们是纯 CPU 元数据操作，不是真正的 GPU 负载
-- 对**框架开发者**：设计新算子时考虑是否有 epilogue融合机会——在 GEMM 尾部做激活函数比单独发射 kernel 更高效
-
-### 相关实体
-
-- [Deepseek V4 Triton Fp4 Optimization](ch01/319-deepseek-v4-triton-fp4.html) — 同样涉及 Triton kernel 优化，与本文的 pointwise fusion 优化角度互补
-- [Inference Optimization](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/inference-optimization.md) — 推理优化通识，包含本文未覆盖的量化 / 蒸馏 / serving 层面的优化策略
-
-## 实践启示
-
-1. **建立"先猜测再验证"的 profiler 习惯**：每次看 trace 前先在脑中构建预期，trace 打开后第一时间关注"预期与现实的差异"——差异就是最有价值的发现
-2. **小 batch 推理优先 torch.compile**：batch≤2048 时融合收益最高（kernel launch overhead 占 30%+）；batch≥4096 后 compute-bound 主导，compile 收益递减
-3. **关注 cudaLaunchKernel duration 而非只看 Self CUDA Time**：Self CUDA Time 漏掉了 kernel launch 调度开销，duration 字段包含 launch 和实际执行两部分
-4. **动态 shape 场景慎用 torch.compile**：若输入 shape 在每次推理时都可能变化（如 streaming 输入），compile 的 recompile 成本会抵消甚至超过融合收益，此时用 Liger 类手写 fused kernel 更稳定
-5. **用 kernels 库分发预编译 kernel**：避免本地编译的痛苦（版本不匹配、GPU 架构差异），通过 `get_kernel("kernels-community/liger-kernels", version=N)` 下载 CI 预编译的版本化二进制
-
-## Source
-
-Original URL: https://huggingface.co/blog/torch-mlp-fusion
-
-Source: [raw archive](https://huggingface.co/blog/torch-mlp-fusion)
-
----
-
-## Ch16.014 vLLM V0 to V1: Correctness Before Corrections in RL
-
-> 📊 Level ⭐⭐⭐ | 5.1KB | `entities/servicenow-vllm-correctness.md`
-
-> -> [原文存档](https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections)
-
-## 深度分析
-vLLM V0 到 V1 是实质性重写，而非增量迭代。ServiceNow AI 的这篇博客核心贡献是展示了在 RL 训练中进行推理引擎迁移时，如何系统性地隔离和修复正确性差距，而非直接诉诸目标函数层面的修正。
-
-**logprobs 语义不匹配是首个拦路虎。** vLLM V1 默认返回原始模型输出的 logprobs（在 temperature scaling、penalties、top-k/top-p 过滤之前），而 PipelineRL 期望的是经过采样器处理的分布的 logprobs。设置 `logprobs-mode=processed_logprobs` 修复了均值偏移，但训练曲线仍有差距——说明单一修复不够，下一个问题的根因在推理路径本身。
-
-**V1 运行时默认值引入的隐性差异。**  prefix caching（默认开启）和 async scheduling（默认开启）在 V1 中与 V0 行为不同。prefix caching 在 online RL 场景下尤其危险：前缀缓存命中可能在权重更新边界之前重用已计算状态，导致 actor 拿到过期推理结果。禁用 prefix caching 和 async scheduling 是还原 V0 等效行为的必要步骤。
-
-**inflight weight update 的语义对齐。** V0 的权重同步机制本质上是：阻塞在引擎边界 → 加载新权重 → 恢复执行，不显式清除缓存状态。V1 的等效方案是 `pause_generation(mode="keep", clear_cache=False)` → RPC 传递权重更新 → `resume_generation()`。关键在于 `mode="keep"` 和 `clear_cache=False` 匹配了 V0 的隐式语义。
-
-**fp32 lm_head 的必要性有独立文献支撑。** MiniMax-M1 技术报告已经发现 RL 训练/推理 token 概率不匹配问题并归因于 LM 输出头，ScaleRL 论文也将 fp32 logits/head 计算纳入大规模 RL 配方并 ablation 验证。这是 RL 推理引擎迁移时不可忽略的数值精度问题，因为 logprobs 直接进入策略比率、KL 和裁剪计算。
-
-## 实践启示
-**推理引擎迁移时先做后端等效性验证，再调整 RL 目标函数。** 这是 ServiceNow 最核心的经验。错误的顺序（先改目标函数再修后端）会导致目标侧的修正掩盖后端问题，使训练曲线难以解读，无法判断收益来源是目标改进还是后端补偿。
-
-**online RL 场景下 prefix caching 需要特别谨慎。** 论文描述的问题本质是：缓存的生命周期管理在权重异步更新场景下与静态推理场景不同步。如果你的 RL pipeline 有并发请求、异步调度或 inflight weight updates，prefix caching 可能引入难以察觉的状态污染。
-
-**logprobs 模式选择是 vLLM V1 迁移的第一个检查项。** 任何 PipelineRL/GSPO/PPO/GRPO 系统在切换到 V1 前，首先确认 `logprobs-mode` 设置与训练器期望一致。默认值差异会导致所有 downstream metrics（clip rate、KL、entropy、reward）全面漂移。
-
-**lag 是有用的运行时诊断信号。** 初始 V1 路径在训练后期携带更多持续性 lag，最终 V1 修正路径的 lag 曲线更接近 V0 参考。这提供了一个可直接观察的训练健康度指标——如果你的 rollout engine 和 trainer 之间的权重 lag 在训练后期持续扩大，说明后端同步机制可能存在问题。
-
-**后端等效性恢复后，下一步是 async/off-policy 清理。** 保持 rollout 时刻的 behavior policy logprobs，在优化时重新计算 trainer-side old policy logprobs，将后端差异修正与策略更新比率分离，跟踪 ESS 等诊断指标——这些是后端 parity 达成后的自然下一步。
-
-## 相关实体
-- [servicenow vllm correctness huggingface](ch01/422-llm.html)
-
-→ [原文存档](https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections)
-
-- [vLLM V0→V1 迁移中的 logprob 差异修复](ch01/422-llm.html)
-- [无惧off-policy偏移！bengio团队解绑后训练，大模型rl提速50倍](https://github.com/QianJinGuo/wiki-public/blob/main/entities/trajectory-balance-asynchrony-tba-bengio-papweekly.md)
-
----
-
-## Ch16.015 Bonsai Image 4B: 1-bit 和 Ternary 量化
-
-> 📊 Level ⭐⭐⭐ | 5.1KB | `entities/bonsai-image-4b-quantization.md`
-
-# Bonsai Image 4B: 1-bit 和 Ternary 量化
-
-> **Background**: 本文档基于对外部技术来源的评分入库建立，v×c=7×7=49。
-
-## 核心要点
-
-1-bit 和 Ternary 量化图像扩散模型 Bonsai Image 4B 的技术发布，8.3x 和 6.4x 相比 FP16 的压缩比
-
----
-
-→ [原文存档](https://prismml.com/news/bonsai-image-4b)
-
-## 深度分析
-
-**1. Group-wise Scaling Factor 是量化质量的关键**
-
-1-bit 和 Ternary 量化的核心不在于简单地将权重二值化或三值化，而在于保留了 FP16 分组缩放因子。每个权重分组拥有独立的缩放系数，使得 1-bit 模型实际达到 1.125 有效位数，Ternary 模型达到 1.71 有效位数。这种设计在极端压缩下仍能保留大部分模型能力，是 Bonsai 系列的核心技术路径。
-
-**2. Precision-sensitive Projection Layers 保留策略**
-
-虽然主体 transformer 权重被压缩到 1-bit 或 Ternary，但约 5% 的投影层（projection layers）被保留为 FP16 精度。原文指出这些是"precision-sensitive"的组件，表明并非所有权重对量化同等敏感。这一发现意味着未来量化研究可以针对不同层类型采取差异化的精度策略。
-
-**3. Ternary 的 {−1, 0, +1} 提供了重要的表征灵活性**
-
-相比 1-bit 的 {−1, +1}，Ternary 加入了 0 状态，形成 {−1, 0, +1}。这一额外的中间态显著提升了视觉质量和提示词忠实度：Ternary 保留了原模型的 95% 性能，而 1-bit 仅有 88%。零值状态在稀疏计算中有潜在优势，可以在推理时跳过零值计算，进一步提升效率。
-
-**4. 质量–体积 Pareto 前沿的实质性推进**
-
-Bonsai Image 4B 在 6.4x 压缩下仅损失 5% 质量（GenEval 0.723 vs 0.819），而体积相似的 BK-SDM-Small（0.98GB）仅保留 42% 性能。这说明 Bonsai 的量化不是以线性质量损失为代价，而是在相同体积下实现了能力的大幅跃升，重新定义了"小模型能做什么"的标准。
-
-**5. iPhone 部署验证了移动端可行性的临界点**
-
-Bonsai Image 4B 是其参数级别上首个直接在 iPhone 上运行的图像生成模型。在 iPhone 17 Pro Max 上生成 512x512 图像仅需 9.4 秒，这意味着移动端图像生成的交互延迟已进入可接受范围。平均活跃内存 1.5–1.96GB 的表现证明极量化和架构共同构成了移动部署的可行路径。
-
-## 实践启示
-
-**1. 优先考虑 Ternary 量化作为质量–压缩平衡点**
-
-如果应用场景对图像质量有要求，Ternary 的 6.4x 压缩比和 95% 性能保留是更优选择。只有在极端内存约束（如 1GB 以下 transformer）时，才考虑 1-bit 方案。Apache 2.0 许可下可直接商用，无需考虑授权成本。
-
-**2. 结合 [Ai Infra Llm Efficient Inference Vllm](ch01/623-ai-infra.html) 进一步降低推理延迟**
-
-虽然 Bonsai 本身已针对 Apple Silicon（MLX）和 CUDA（Gemlite）做了 kernel 优化，但在端侧部署时可结合推理优化技术（如批处理策略、KV cache 管理）进一步提升吞吐。Bonsai Studio iOS app 的部署案例提供了参考实现路径。
-
-**3. 利用文本编码器 offloading 策略降低运行时内存**
-
-在 512x512 图像生成时，平均活跃内存（1.5GB / 1.96GB）显著小于总部署 payload（3.42GB / 3.88GB），因为文本编码器在提示词编码完成后即可卸载。这一策略可直接应用于类似架构的部署优化，在长 prompt 场景下收益尤其明显。
-
-**4. 关注 zero-state 的稀疏计算加速潜力**
-
-Ternary 权重中的零值可以在推理时跳过相关计算，结合稀疏 kernel 可能实现进一步加速。这意味着在设计端侧推理 engine 时，应考虑对 {0} 值的条件分支优化或 mask 化处理。
-
-**5. 评估跨平台推理栈的统一抽象层**
-
-Bonsai 同时支持 Apple Silicon（MLX）和 CUDA（Gemlite），对于需要跨平台部署的团队，建议关注 MLX（Apple）和 Gemlite（NVIDIA）背后的底层 kernel 差异，或探索如 llama.cpp 风格的统一推理抽象，以同时覆盖手机端和桌面端 GPU 场景。
-
-## 相关实体
-
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/vision-multimodal.md)
-
----
-
-## Ch16.016 Pytorch in Kernel Recsys Optimization
-
-> 📊 Level ⭐⭐⭐ | 4.5KB | `entities/pytorch-in-kernel-recsys-optimization.md`
-
-## 深度分析
-
-**消除而非优化：Kernel 层设计的方法论突破：** IKBO 的核心洞察是"broadcast 是数据布局问题，而非计算必需"——传统方法在系统层面处理 broadcast 复制，浪费内存带宽和计算资源；而 IKBO 在计算原语层面消除复制，让 kernel 内部处理 mismatched batch sizes。这个思维转换将优化方向从"workaround 问题"转向"消除问题根源"，实现了 2/3 的延迟降低。这种**在根源处解决问题**而非在表面做修补的思想，对其他 AI 系统优化有普遍借鉴意义。 See also [Harness Production Agent Engineering Deficit](ch05/008-harness.html)
-
-**Kernel-Model-System 三层协同设计是性能突破的关键：** IKBO 的成功不只是 kernel 优化的功劳，而是 kernel、ML 编译器、inference runtime 三层协同设计的结果。Kernel 层提供支持 mismatched RO/NRO batch sizes 的原生接口；编译器层需要 per-operator dynamic shape ranges 来选择正确形状的 kernel；runtime 层通过 candidate-to-user mapping 而非 materializing broadcast 传递信息。任何一层单独优化都无法达到最终效果，**系统级协同优化才能实现数量级突破**。
-
-**渐进式协同设计是工程落地的合理路径：** IKBO Linear Compression 经历了四个阶段的渐进优化：matmul decomposition → memory alignment → broadcast fusion → warp-specialized multi-stage fusion via TLX，最终在 H100 SXM5 上实现 ~4× 加速。这个过程说明**性能优化不是一步到位的**，而是需要持续迭代、逐步逼近硬件极限。每一步优化都为下一步创造条件，最终的 warp-specialized fusion 无法在初始阶段直接实现。
-
-**IO-bound 到 compute-bound 的转变是性能优化的分水岭：** IKBO 将 Flash Attention kernel 从 IO-bound 推向 compute-bound，峰值达到 621 BF16 TFLOPs（H100 SXM5）。在 GPU 编程中，IO-bound 意味着 kernel 性能受限于内存带宽，而非算力——此时增加更多计算单元也无法提升性能。**转变为 compute-bound 是优化的关键里程碑**，意味着 kernel 已经充分利用了硬件的算力潜能，继续优化需要从算法或数据布局入手。
-
-**RecSys 推理优化的独特挑战来自 user-candidate 不对称性：** 与传统 DNN 不同，RecSys 的 user embeddings 对所有 candidate 都相同，但 candidate 数量（10-10,000+）远大于 user 数量，导致 broadcast 复制开销随 candidate 数量线性增长。这个问题在 CV/NLP 任务中不存在，因为它们的 batch 维度天然对称。理解这个**领域特有的不对称性**，是设计高效 RecSys 系统的前提。
-
-## 实践启示
-
-- **遇到性能瓶颈时，先判断是 IO-bound 还是 compute-bound**：如果 kernel 已经是 compute-bound，继续优化算法或数据布局才有意义；如果是 IO-bound，优化方向应该是减少内存访问或提高内存访问效率，而非增加计算量。
-
-- **Kernel 优化采用渐进式策略**：先实现功能正确的版本，再逐步优化——从基础 matmul 到 decomposition，再到 memory alignment，最后做 fusion。一次性写出最优 kernel 既不现实也不高效。
-
-- **RecSys 系统的 broadcast 开销需要专门优化**：当 user-candidate 不对称时，传统的 explicit replication 会造成严重的内存和计算浪费。考虑在 kernel 内部处理 broadcast，而非在系统层面 materialization。
-
-- **Inference-time transformation 可实现无感的系统升级**：Meta 的 IKBO 支持在推理时自动替换标准操作为 IKBO 等效操作，无需模型代码变更。这种**无破坏性升级**能力对生产系统非常重要。
-
-- **Custom kernel 开发需要工具链配合**：TLX (Triton Low-Level Extensions) 提供了 warp-specialized fusion 能力，但需要与 ML 编译器、inference runtime 配合使用。单独优化 kernel 而忽视其他层级，往往无法达到预期效果。
-
----
-## 关联
-→ [原文存档](https://pytorch.org/blog/in-kernel-broadcast-optimization-co-designing-kernels-for-recsys-inference/)
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---

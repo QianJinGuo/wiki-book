@@ -1,6 +1,6 @@
 # 读完 Claude Code 和 OpenClaw 的 memory 源码，我对 Agent 记忆需要向量数据库产生怀疑
 
-> 📊 Level ⭐⭐ | 10.6KB | `entities/读完-claude-code-和-openclaw-的-memory-源码我对agent记忆需要向量数据库这件事产生了怀疑.md`
+> 📊 Level ⭐⭐⭐ | 10.6KB | `entities/读完-claude-code-和-openclaw-的-memory-源码我对agent记忆需要向量数据库这件事产生了怀疑.md`
 
 # 读完 Claude Code 和 OpenClaw 的 memory 源码，我对"Agent记忆需要向量数据库"这件事产生了怀疑……
 这两天在研究 agent 的记忆系统，读完 Claude Code 和 OpenClaw 的记忆系统源码，我发现一个有意思的分歧：同样是"让 Agent 记住东西"，一个选择信 LLM 的理解力，另一个选择老老实实建向量索引。
@@ -10,11 +10,11 @@
 * • **Managed** ： ` /etc/claude-code/CLAUDE.md ` ，系统管理员写的全局策略，所有用户都得遵守，企业场景下用来统一规范
 
 ## 相关实体
-- [Claude Code Harness Deep Understanding](307-claude-code-harness-deep-understanding.html)
-- [Claude Code Openclaw Memory Vector Db Doubt](../ch03/057-claude-code.html)
-- [Claude Code Openclaw Memory Comparison](../ch03/057-claude-code.html)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](200-anthropic-claude-code.html)
-- [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05/026-harness-engineering.html)
+- [Claude Code Harness Deep Understanding](297-claude-code-harness-deep-understanding.html)
+- [Claude Code Openclaw Memory Vector Db Doubt](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-openclaw-memory-vector-db-doubt.md)
+- [Claude Code Openclaw Memory Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-openclaw-memory-comparison.md)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-claude-code-large-codebase-best-practices-50002a089323.md)
+- [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-7-layers-openclaw-hermes-claude-code-p1anu.md)
 
 → [原文存档](https://mp.weixin.qq.com/s/m4wzwXCJoW5Tu4GA5ROodw)
 

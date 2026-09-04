@@ -10,10 +10,9 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 1 |
-| ⭐⭐ 工程师 | 需编程基础 | 12 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 1 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 4 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 8 |
+| ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 3 |
 
 ---
 
@@ -29,270 +28,541 @@ MLOps 是 AI 系统从"Demo"到"产品"的分水岭。
 
 ---
 
-## Ch13.001 06—看懂 AI Skill 测评报告：PASS / FAIL / INCONCLUSIVE 背后的发布决策逻辑
+## Ch13.001 CEOs’ top priorities for IT leaders today
 
-> 📊 Level ⭐ | 14.6KB | `entities/ai-skill-测评报告解读.md`
+> 📊 Level ⭐⭐⭐ | 7.5KB | `entities/www.cio.com-ceos-top-priorities-for-it-leaders-today-2-html.md`
 
-## 报告是写给谁看的
+# CEOs’ top priorities for IT leaders today
 
-| 读者 | 关注点 | 核心问题 |
-|------|--------|---------|
-| 产品/研发负责人 | 决策横幅 + 汇总卡片 + 发布决策矩阵 | 这个 Skill 能不能上线？ |
-| 测评工程师 | 用例详情展开 + evidence + MCP 调用链 + 幻觉检测 | 哪里出了问题？如何修复？ |
+## 摘要
+2026 年 CEO 给 CIO 的第一优先任务仍是 AI 实施，但态度已发生根本转变：对实验和 POC 失去耐心，转而要求可量化的 ROI，并将"建立 AI 政策与 ROI 指标"列入 top 10 优先事项。与此同时，安全升格为第二优先，CIO 的角色正从技术执行者被推向业务变革的引领者——从"证明 AI 可行"转向"证明 AI 值钱"。
 
-**建议阅读顺序（三步）**：先看「📖 名词速查」（1分钟）→ 再看「决策横幅」→ 最后看「改进建议」
-
-## 决策横幅三种结论
-
-| 横幅 | 含义 | 操作 |
-|------|------|------|
-| ✅ **PASS（绿色）** | 所有核心指标达标，无负向增益，灾难场景全部通过 | 可以发布 |
-| ⚠️ **CONDITIONAL PASS（橙色）** | 通过率接近阈值但差距≤3%，或部分灾难场景未执行 | 需与负责人当面对齐，约定修复时间 |
-| ❌ **FAIL（红色）** | 核心指标未达标，或有未解决的负向增益 | 不允许发布，修复后重测 |
-| 🔘 **INCONCLUSIVE（灰色）** | 用例无法得出结论——测试环境缺少触发条件，非 AI 出错 | 不影响整体结论，需补充测试资产后重验 |
-
-**橙色警告「规则推断模式」**：如果 MCP 不可用，横幅下方出现橙色警告。结论不能作为发布依据，需配置 MCP 后重测。
-
-### CONDITIONAL PASS 操作步骤
-
-1. 在报告用例详情中找出所有失败用例，说明根因
-2. 评估每个根因对线上用户的实际影响
-3. 约定具体修复时间（如「3个工作日内修复并重测」）
-4. 由产品/研发负责人签字确认，文档保存
-5. 修复完成后必须重跑对应用例，确认通过后升级为 PASS
-
-### INCONCLUSIVE 常见原因
-
-- **发票类型不符**：测试「住宿发票检测」但手头只有汽油发票
-- **账号数据不符**：测试「无差旅申请单时中断」但测试账号恰好有有效申请单
-- **测试方法层级错误**：直接调用 MCP 接口，绕过了 Skill 行为层
-- **历史数据缺失**：测试「查询旧单据」但单据已被系统清理
-- **权限未开放**：测试账号没有触发某规则所需的权限
-
-## 汇总卡片：读懂核心指标
-
-| 卡片 | 怎么看 | 红线 |
-|------|--------|------|
-| **精确断言通过率 ★** | 对照风险等级阈值（S≥95%，A≥90%，B≥80%） | 精确通过率低于阈值 → FAIL |
-| 综合通过率（括号内） | 包含存在性断言，精确远低于综合说明断言集质量偏低 | 参考 |
-| vs baseline 增益 Δ | 正数好，负数危险 | Δ < 0 → 必须查根因，不能上线 |
-| 幻觉/编造数据 | S级要求 0 次 | > 0 → 不能上线 |
-| INCONCLUSIVE | 测试环境限制，非 AI 错误 | 参考（需补充测试资产后重验） |
-| 路径覆盖率 | 对照模式目标（quick ≥40%，standard ≥70%） | 参考 |
-
-**断言三级分解**：
-
-```
-精确断言 ★   80%  (4/5)  ← 准入判断依据
-语义断言 ◆   100% (2/2)  ← 辅助参考
-存在性断言 ○  1/1         ← 不计入准入
-```
-
-## 结果不稳定横幅
-
-quick 模式强制运行 2 次，两次差距 > 15% 时：
-
-```
-⚠️ 结果不稳定（两次差距 XX%）
-   run1: 75%，run2: 91%
-   建议升级到 standard 模式（3次运行）以获得可信结论。
-```
-
-→ 发布决策自动从 PASS 降为 CONDITIONAL PASS
-
-## 用例执行情况：Δ 值三种情况
-
-| Δ 值 | 含义 |
-|------|------|
-| +87% | Skill 有显著增益，这个场景 Skill 明确有价值 |
-| ≈0「持平」 | Skill 对这个场景没有额外帮助（通用模型本身就能处理），不是问题 |
-| -10% | ⚠️ 负向增益，Skill 比没有 Skill 还差，必须查根因 |
-
-## 用例详情展开：8 个区块
-
-点击任意用例行展开，最可信的是 **Layer 2a 字段精确校验**——直接从执行记录提取，不经过任何 LLM 推断。
-
-### ① 执行统计
-
-```
-MCP调用 6 次  ·  耗时 1.2s  ·  tokens 12,453
-```
-
-耗时异常（>15s）需要关注。
-
-### ② Layer2b Grader 断言结果（三类标签）
-
-```
-✅ ★精确  [tool_calls] [ground_truth]  saveExpenseDoc 调用参数 docStatus=10
-   evidence: transcript [tool_calls] Step5 入参：{"docStatus":"10",...}
-❌ ★精确  [response]  [grader]  输出包含详情链接，不含字面占位符 {fdId}
-   evidence: response.md 第12行含占位符
-✅ ◆语义  [response]  [grader]  报销主题包含出行目的和时间
-   evidence: response.md 第3行
-⚠️ ○存在性  [不计入准入]  没有编造发票信息
-```
-
-**三类标签含义**：
-
-- ★精确 / ◆语义 / ○存在性：断言强度，○存在性不计入准入
-- [tool_calls] / [response] / [agent_notes]：evidence 来源，tool_calls 可信度最高
-- [ground_truth] / [grader]：评审来源，ground_truth 不经过任何 LLM
-
-### ③ Layer2a 字段精确校验
-
-```
-✓ saveExpenseDoc 参数 docStatus=10    证据：transcript Step5 入参
-✗ 详情链接不含占位符 {fdId}          证据：response.md 第12行含占位符
-```
-
-最可信（直接从执行记录提取，不经过 LLM）。
-
-### ④ MCP 调用链
-
-```
-1. queryExpenseApplier   ✓  210ms  → fdCompanyId=xxx
-2. checkInvoice          ✗  180ms  → HTTP 500（测试环境限制）
-   ↳ 降级：使用本地识别结果继续
-3. saveExpenseDoc        ✓  390ms  → code=200, fdId=a1b2c3d4
-```
-
-### ⑤ 隐含声明验证（幻觉检测）
-
-```
-✓ saveExpenseDoc 调用了一次        transcript 中出现 1 次（Step5）
-✗ fdMonthOfOccurrence 取当前月份   实际值 120251100（发票月），非提单月
-```
-
-金融场景 S 级要求 0 次幻觉。
-
-### ⑥ 断言质量建议（橙色区块）
-
-```
-💡 「输出包含报销金额」只检查了存在性，未验证金额与发票一致。
-   建议改为：报销金额等于发票识别金额
-```
-
-不影响本次结论，用于下次迭代改进断言。
-
-## 发布决策矩阵
-
-| 情况 | 发布建议 |
-|------|---------|
-| 精确通过率达标 + full 模式 + MCP 真实执行 | ✅ 可以发布 |
-| 精确通过率达标 + standard 模式 + S/A 级 | ⚠️ 建议补跑 full 后再做正式决策 |
-| CONDITIONAL PASS，差距 ≤3% | 与团队对齐，有条件发布，约定修复时间 |
-| CONDITIONAL PASS，灾难场景未执行 | 补跑 full 模式 |
-| quick 模式两次差距 > 15% | ⚠️ 自动降为 CONDITIONAL PASS，升级 standard 模式 |
-| 规则推断模式 | ❌ 不作发布依据，修复 MCP 后重测 |
-| 任何 FAIL | ❌ 修复后重测 |
-
-## 硬红线（直接 FAIL）
-
-1. **Δ < 0**：加了 Skill 反而更差
-2. **S/A 级灾难场景有任何失败**
-3. **规则推断模式**下运行（MCP 未真实调用）
-
-**S 级硬红线**：幻觉次数 > 0
-
-## 触发率 AI 估算自动降级规则（S/A 级）
-
-| 情况 | 影响 |
-|------|------|
-| TP 估算 ≥ 80%，置信度 high/medium | 正常，标注参考值 |
-| TP 估算 ≥ 80%，置信度 low | 自动降为 CONDITIONAL PASS |
-| TP 估算 < 70% | 自动降为 CONDITIONAL PASS |
-| TN 有误触发预测 | 自动降为 CONDITIONAL PASS + 标红 |
-
-## 发现了问题怎么修复
-
-### Δ < 0（负向增益）
-
-使用「规则模块二分法」：逐条禁用 SKILL.md 中的规则模块，每次禁用后重跑，观察 Δ 变化。当禁用某个模块后 Δ 转正，说明该模块是根因。
-
-通常原因：某条规则限制太死板 → 把「必须」改为「优先」，给模型保留兜底能力。
-
-### 幻觉检测未通过
-
-找到 SKILL.md 中对应的规则，确认规则描述是否清晰。规则清晰但模型仍幻觉 → 在规则中增加「断言」式约束，如「链接中不得包含 {fdId} 字面占位符」。
-
-### 覆盖率不足
-
-运行 full 模式，或手动在 evals.json 中添加未覆盖规则的用例。
-
-## 修复后怎么重测：迭代流程
-
-```
-iteration-1（初始测评）
-  → 发现问题，修复 Skill
-  → 在 OpenCode 中说「在上次测评基础上迭代」
-  → AI 在同一 workspace_dir 下创建 iteration-2
-  → 只重跑失败用例或受影响的批次（节省时间）
-```
-
-**需全量重跑的情况**：Skill 大范围重构 / 修复一条规则但担心引入回归 / 底层模型版本升级
-
-**只跑受影响的用例**：只修复了 1-2 条具体规则 / 修复的是边界情况不影响主流程
+## 核心要点
+- **AI 实施连续两年位居 CEO 优先清单第一**：CIO.com 2026 State of the CIO Survey 与 2025 年调查结果一致，AI 是 CEO 对 IT 的第一指令
+- **CEO 已对 AI 实验失去耐心**：不再关心 proofs of concept，要求可量化价值；最战略型的 CEO 更进一步，期望 AI 重塑组织运营方式与产品服务体系，且要求 CIO 主动创造机会而非仅仅配合
+- **ROI 焦虑是 2026 年的新变量**：CEO 普遍认为"AI 花费远大于回报"、收益碎片化，因此"建立 AI 政策与 ROI 指标"首次进入 top 10；推动力从 productivity gains 转向 revenue growth
+- **从 POC 到生产的过渡"比想象中更难"**：数据债务、技术债、legacy 环境与预算压力是四大结构性障碍，根源不在模型而在企业数据与系统地基
+- **安全升为第二优先**：升级 IT 与数据安全以降低企业风险；AI 采用使数据完整性、治理与风险管理的重要性进一步上升
+- **CEO 对 AI 的认知仍偏效率叙事**：研究显示几乎全部 CEO 用 AI 节省时间，仅 2% 用于决策支持等增长驱动场景——这正是 CIO 的战略机会窗口
+- **CIO 评价指标正在迁移**：IDC 数据显示一年内 revenue generation 从第六跃升至 CIO 成功指标第三位，CIO 开始按业务成果而非运营绩效被衡量
+- **前沿议题进入清单**：量子计算出现在银行、生命科学、物流等行业的 CEO 议程；优化与现代化被要求为新兴技术腾挪资金
 
 ## 深度分析
 
-### 测评报告的决策逻辑本质
+### 从"AI 实验"到"AI 交付"：CEO 耐心耗尽的一年
+自 2022 年 11 月 ChatGPT 进入企业视野以来，AI 一直是高层目标；2026 年的新变化在于"交付有形 ROI"成为硬性要求，而非口头愿景。TCS 的 Viswanathan 观察到 CEO 的挫败感源于"在 AI 上的花费远远大于回报，虽然有些生产力收益，但相当碎片化"。IDC 的 C-Suite Tech Survey 显示全球超过半数 CIO/CTO 已将 AI 与自动化列为首要业务目标，CEO 施压 IT 用 AI 驱动收入增长而不只是提升效率。这一转向的战略含义是：CIO 的衡量语言必须从技术指标切换到业务成果，否则无法在 CEO 的 ROI 框架内证明自身价值。
 
-AI Skill 测评报告是一套**分层置信机制**：用颜色横幅给出确定性结论，用精确通过率给出量化门槛，用 Δ 值识别 Skill 的真实价值。三个维度缺一不可——只看横幅会漏掉负向增益陷阱，只看通过率会忽略 Skill 相对基线的退化，只看 Δ 值会失去与业务风险等级的联动。
+### 规模化之痛：数据、技术债与"试点到生产"的鸿沟
+IDC 的 Saroff 指出，许多组织"从 experimentation 和 pilots 走到真正跑在生产环境并产生可衡量价值"的过渡，比最初看起来困难得多。障碍清单高度结构化：喂养 AI 的数据本身有问题（数据债务）、legacy 环境与既有技术债让创新更慢更贵、预算压力进一步叠加。与此同时，IT 在很多组织仍未成为真正的业务战略伙伴，导致"把 AI 举措与业务结果挂钩"这件本应刻意为之的事落空。这解释了业界普遍的悖论——AI 潜力无限，但 CIO 卡在"找不到落地的路径"：瓶颈不在模型能力，而在企业数据与系统地基的成熟度。
 
-### 精确断言 vs 综合通过率的分离价值
+### CEO 认知错位与 CIO 的战略机会窗口
+Gartner 的 Carter 指出，技术已进入 CEO 战略优先前三（仅次于增长与财务），而 CEO 口中的"技术"几乎约等于 AI。但 CEO 自身对 AI 的想象仍停留在省时增效——研究显示几乎全部 CEO 用 AI 节省时间，仅 2% 将其用于决策支持等增长驱动场景。这种认知错位恰恰是 CIO 的机会：谁能指出 AI 如何重塑组织运营方式与产出，谁就能帮助 CEO 在市场中取胜。Carter 建议 CIO"加倍押注能支撑高影响力、高曝光举措的技术叙事"，并承担提升全组织 tech literacy 的责任——"这是 CIO 角色有史以来最大的机会浪潮"。Rubrik 的实践提供了样本：IT 部门率先转型为 AI-first 组织，把 AI 植入工程、架构、FinOps、DevOps 与用户支持全链路，以资源优化为纲。
 
-精确断言 ★ 是唯一准入判断依据，综合通过率（含语义和存在性断言）提供辅助参考。当精确远低于综合时，说明断言集本身设计偏松——存在性断言没验证真实性，语义断言没绑定具体值。这个分离设计让「报告看着好看但实际有问题」的情况无所遁形。
-
-### Δ < 0 的破坏性含义
-
-Δ < 0（负向增益）是报告体系中最危险的信号。它意味着在特定用例上，加了 Skill 的 AI 表现反而比不加更差。这通常说明 SKILL.md 中的某条规则限制太死板，强制 AI 走错误路径，而不是保留通用模型的兜底能力。「规则模块二分法」定位根因后，将「必须」改为「优先」往往能解决问题——这是 Skill 设计的核心教训。
-
-### INCONCLUSIVE 的设计哲学
-
-灰色 INCONCLUSIVE 横幅是体系成熟度的体现：它承认测试环境的局限性，并将「AI 出错」和「测试条件不足」区分开来。这避免了对 Skill 的冤枉追责，同时也防止了用环境缺陷掩盖 AI 能力不足的问题。补充测试资产后重验的机制，确保了每张报告都有可信的结论。
-
-### Layer 2a vs Layer 2b 的证据可信度层级
-
-用例详情的 8 个区块构成了一套证据层级：Layer 2a 字段精确校验可信度最高（直接从 transcript 提取，不经过 LLM），Layer 2b Grader 断言次之（经过 LLM 评分但有结构化 evidence），触发率 AI 估算再次。理解这个层级，才能正确解读报告中的 failure case——是 AI 真的错了，还是 evidence 来源本身不可靠。
+### 从效率叙事到竞争叙事：评价体系的重构
+PwC 的 Leinwand 认为，CEO 期望 IT 通过连接数据、工作流与决策，推动运营模式的全企业级转型——"在核心运营与流程中落地，而不是只跑 pilot"，其背后是竞争方式的根本性变化与可持续增长的挑战。IDC 数据印证了这一重构：仅一年时间，revenue generation 就从第六位跃升为 CIO 成功指标的第三位，越来越多的 CIO 开始按业务成果（而非运营绩效）衡量自己。叠加量子计算等下一代技术在部分行业的早期布局、以及"通过优化与现代化腾挪资金投入新兴技术"的诉求，CEO 的 IT 议程已从"降本增效"全面扩展为"重塑竞争方式"。
 
 ## 实践启示
-
-### 发布决策检查清单
-
-当拿到一张测评报告时，按以下顺序检查：
-1. 先确认不是**规则推断模式**（MCP 真实调用是前提条件）
-2. 再看决策横幅颜色，PASS/FAIL/INCONCLUSIVE 各有明确含义
-3. 对照风险等级阈值（S≥95%，A≥90%，B≥80%）检查精确通过率
-4. 检查 Δ 值，负数必须查根因
-5. S/A 级额外检查：灾难场景是否全部通过、幻觉次数是否为 0
-
-### 收到 CONDITIONAL PASS 后的标准操作
-
-当报告是橙色 CONDITIONAL PASS 时，不要直接进入修复流程。首先评估差距是否 ≤3%——这个范围内可以与团队协商有条件发布，但必须有书面记录和明确修复时间。如果差距 >3% 或有灾难场景未执行，必须完成修复才能继续。修复完成后，用同一个 Skill 在同一 workspace_dir 下创建 iteration-N，只重跑失败用例以节省时间。
-
-### 改进断言质量的时机
-
-报告中的「断言质量建议」橙色区块不影响本次结论，但指出了下次迭代的优化方向。当发现精确通过率远低于综合通过率时，应该将存在性断言升级为精确断言（如「输出包含报销金额」→「报销金额等于发票识别金额」），将语义断言绑定具体字段。好的断言集是报告可信度的基础。
-
-### 负向增益的快速定位法
-
-遇到 Δ < 0 时，用「规则模块二分法」定位根因：逐条禁用 SKILL.md 中的规则模块，每次禁用后重跑，观察 Δ 变化。禁用某模块后 Δ 转正，说明该模块是根因。常见修复方式是将「必须」改为「优先」，给模型保留兜底能力。修复后必须重跑确认 Δ 转正才能上线。
-
-## 关联阅读
-
-→ [AI Skill 测评体系进阶指南](ch01/324-ai-skill.html) — 同系列其他章节
-
-→ [原文存档](https://juejin.cn/post/7619990292557447220)
+1. **用业务语言定义 AI 成功指标**：启动任何 AI 项目前，先与 CEO 对齐"可量化价值"的具体形态（收入增长、客户体验、新渠道），把 ROI 指标写入项目章程，而非停留在交付物清单。
+2. **为每个 POC 预置生产路径**：pilot 从第一天就要回答"如何规模化落地"——评估数据就绪度、legacy 集成成本与技术债，避免试点无限期、价值无法兑现。
+3. **把数据与技术债盘点设为 AI 投资前置条件**：AI 项目真实成本的很大一部分藏在数据质量与遗留系统里，先清理数据债务再谈模型选型，否则 ROI 预期必然失真。
+4. **将安全与 AI 治理前置设计**：安全已是 CEO 第二优先，AI 采用放大了数据完整性、治理与风险管理的权重；把安全政策、ROI 指标与 AI 部署同步规划，而非事后补救。
+5. **主动提出"AI 重塑场景"而非被动接单**：向 CEO 展示 AI 如何在客户响应、供应链、产品重塑等过去"做不到"的领域解锁价值，主动承担从效率增益到新价值主张的叙事升级。
+6. **用业务成果重构 CIO 评价体系**：主动引入 revenue contribution、创新产出等指标并自我衡量，顺应"从运营绩效到业务成果"的评价迁移，把安全与治理转化为业务赋能叙事。
 
 ## 相关实体
+- [很多企业做完 AI PoC，为什么还是上不了生产](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-poc-why-fail-to-production.md)
+- [企业 AI 投资与数据就绪度](https://github.com/QianJinGuo/wiki-public/blob/main/entities/enterprise-ai-investment-data-readiness-cio.md)
+- [CIOs rise to the global challenge](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cios-rise-to-the-global-challenge.md)
+- [Enterprise AI Adoption](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/enterprise-ai-adoption.md)
+- [数据质量框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/data-quality-framework.md)
+- [负责任 AI 治理体系](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/responsible-ai-governance.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/evaluation-benchmarks-extended.md)
+→ [原文存档](https://www.cio.com/article/4171959/ceos-top-priorities-for-it-leaders-today-2.html)
 
 ---
 
-## Ch13.002 Agent 评测方法论——美团图灵两年 BP 实践（人人一致/人机一致 + 桥梁指标 + 长程范式）
+## Ch13.002 NVIDIA MCG Toolkit 模型文档自动化
 
-> 📊 Level ⭐⭐ | 20.4KB | `entities/meituan-turing-agent-evaluation-methodology-2026-08-06.md`
+> 📊 Level ⭐⭐⭐ | 6.7KB | `entities/nvidia-mcg-model-documentation.md`
+
+# NVIDIA MCG Toolkit 模型文档自动化
+
+> **Background**: 本文档基于对外部技术来源的评分入库建立，v×c=7×8=56。
+
+## 核心要点
+
+NVIDIA MCG Toolkit 自动生成 AI 模型文档的技术指南，针对 EU AI Act 和 AB-2013 监管要求
+
+---
+
+→ [原文存档](https://developer.nvidia.com/blog/how-to-automate-ai-model-documentation-with-the-nvidia-mcg-toolkit/)
+
+## 深度分析
+
+**1. 文档自动化本质是信息抽取问题，而非模板填充**
+
+MCG 的核心架构采用 Ingestion → Extraction → Rendering 三阶段流水线，将模型文档生成定义为从源码中**智能抽取**而非规则填充。传统方法依赖人工填表或模板占位符，而 MCG 通过 RAG 管线直接从代码、配置文件和文档中检索高相关度片段，再由大模型生成规范内容。这意味着文档质量直接取决于源码仓库的结构化程度——文档贫乏的代码库即便使用 MCG 也只能达到 61% 的补全率。
+
+**2. 领域专用检索器是精度提升的关键，而非通用 Embedding**
+
+MCG 采用了三路独立检索器（Code Retriever、Config Retriever、Document Retriever）分别处理代码、配置和文档，而非使用单一 Embedding 模型通用检索。这与 [RAG 分块优化](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-chunking-optimization-2025.md) 中强调的"入库质量决定系统效果"一致——专业检索器能对不同类型的文档片段进行语义优先级排序，从而为提取阶段提供更高信号的上下文。Nemotron RAG 的 embedding（llama-nemotron-embed-1b-v2）和 reranking（llama-nemotron-rerank-500m-v2）模型均为 NVIDIA 自研，针对代码和文档混合场景做了专项优化。
+
+**3. "不猜测"原则是合规文档系统的设计底线**
+
+MCG 在无法置信填充字段时，输出 "not found" 或 "information not available" 而非猜测捏造。这一设计选择对监管合规场景至关重要——[治理软规则](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-governance-soft-rules.md) 中同样指出，不确定情况下的"猜测性生成"在审计场景会构成风险。模型卡需要具备完整的审计追溯性，自动生成的内容若是编造而非基于真实数据，反而会加剧监管风险。MCG 将"Gap 发现"功能定位为卖点而非缺陷，这意味着它既适合文档完善的团队加速生产，也适合文档初建的团队识别缺口。
+
+**4. 灵活性三层解耦使工具具备长期适用性**
+
+MCG 在模型（可替换 NIM）、模板（Markdown 输出格式）和指南（字段级知识库）三个维度做了完全解耦。这种设计使得工具不会因单一监管框架变化而失效——当 EU AI Act 或 AB-2013 出现新的披露要求时，只需更新模板和指南文件，无需修改提取管线的核心代码。输出格式同时支持 CycloneDX compliance，满足软件供应链透明度的行业标准。
+
+**5. 性能数据揭示了文档自动化的人机协作边界**
+
+测试数据显示两类场景的显著差异：文档丰富时准确率达 76%、补全率 91%；纯代码无文档时准确率跌至 28%、补全率降至 61%。这表明自动化文档生成的理想落地形态是"机器生成初稿 + 人类审核修订"，而非完全替代人工。对于拥有良好文档传统的团队（README、config 齐全），MCG 可在 1 分钟内生成 80%+ 准确率的模型卡；对于文档薄弱的团队，它更应该被当作审计缺口扫描仪使用。
+
+## 实践启示
+
+1. **在引入 MCG 前先审计仓库文档覆盖率**
+
+MCG 的性能高度依赖输入文档质量。团队应先用 MCG 对现有仓库进行一次试跑，识别 "not found" 高频区域——这些正是文档缺失最严重、最需要优先补充的部分。补全这些文档不仅能提升 MCG 输出质量，也为人类审核者提供了更完整的初稿。
+
+2. **将 MCG 集成到 CI/CD 流水线而非作为独立工具使用**
+
+MCG 支持 REST API 和容器化部署，建议将其封装为 CI 环节的一部分：在每次模型发布时自动触发文档生成流程，生成结果作为 Pull Request 的一部分供审查。这能解决"文档落后于代码"的经典问题，确保模型卡与模型版本同步更新。
+
+3. **利用模板可变性适配多监管框架**
+
+如果团队需要同时满足 EU AI Act 和 AB-2013 等不同监管要求，无需维护两套工具链——只需准备两套模板和字段指南文件，MCG 管线保持不变。建议建立一个内部模板库，按监管框架分类管理，每次审计时切换对应模板即可。
+
+4. **对输出保持审慎验证态度，特别是涉及隐私和安全字段**
+
+MCG 的 92%（Nemotron Nano 8B）到 80%（第三方模型）准确率意味着约 8-20% 的字段可能存在错误。在涉及 Bias、Privacy、Safety & Security 等敏感 subcards 时，应将 MCG 输出视为高度结构化的初稿而非最终成品，需要领域专家复核签字后再用于正式监管提交。
+
+5. **探索 Oracle OCI 部署模式作为大规模生产参考**
+
+Oracle 将 MCG 部署在 OCI Container Engine for Kubernetes 上，结合 DAC（Dedicated AI Cluster）托管 NIM 模型，实现了容器化 + GPU 动态伸缩的生产架构。对于计划在企业内部规模化推广 MCG 的团队，这一架构提供了将 MCG 与现有 GPU 基础设施整合的参考路径。
+
+## 相关实体
+
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
+
+---
+
+## Ch13.003 Discretizing Reward Models
+
+> 📊 Level ⭐⭐⭐ | 6.2KB | `entities/abs-2606-21795.md`
+
+# Discretizing Reward Models
+
+> **Source**: [arxiv.org/abs/2606.21795](https://arxiv.org/abs/2606.21795)
+
+## 摘要
+
+Vijay Viswanathan 等人的研究论文，揭示了奖励模型（Reward Model）在强化学习中的一个根本性缺陷——**过敏感性（oversensitivity）**：许多流行的奖励模型对同等质量的响应给出不同分数，导致策略学习出现偏差。研究提出了一种基于 Monte Carlo Dropout 的免训练离散化算法，将连续奖励转换为离散聚类，在受控和自然 RL 环境中均显著减少了 reward hacking 并提升了策略质量。
+
+## 核心要点
+
+### 问题定义：奖励模型的过敏感性
+
+奖励模型在 RLHF（Reinforcement Learning from Human Feedback）中广泛使用，承诺在缺少验证器或人类评判时自动评估响应质量。与通常产生二值分数的"可验证奖励"不同，奖励模型产生连续分数，理论上能感知响应间的细微差异。
+
+然而，这种看似的优势实际上是一个严重的弱点：
+
+- **过敏感性**：许多流行奖励模型对同等优质的响应给出不同分数
+- **理论证明**：看似完美的奖励模型可能高度过敏感
+- **实际后果**：过敏感性导致学到的策略质量下降
+
+### 新评估框架
+
+研究提出了两个独立的评估维度来替代传统的"奖励模型准确度"概念：
+
+| 指标 | 含义 | 传统对应 |
+|------|------|----------|
+| **判别能力（Discriminative Ability）** | 区分好坏响应的能力 | ≈ 准确度 |
+| **特异性（Specificity）** | 对同等质量响应给出一致分数的能力（过敏感性的补集） | 传统评估缺失 |
+
+这一双维度框架更准确地刻画了奖励模型的实际行为——一个判别能力强但特异性差的模型会"过度解读"噪声，导致策略优化方向偏差。
+
+### 解决方案：Monte Carlo Dropout 离散化
+
+提出了一种**免训练算法**，适用于任何神经奖励模型：
+
+1. 对奖励模型执行 Monte Carlo Dropout（多次前向传播，随机 dropout 激活）
+2. 收集多次传播的奖励分数分布
+3. 将连续奖励聚类为离散奖励簇
+
+**理论保证**：证明存在离散化方案能在最小牺牲判别能力的前提下显著降低过敏感性。
+
+**实验结果**：
+- 受控 RL 环境：离散化奖励 → 更少的 reward hacking
+- 自然 RL 环境：离散化奖励 → 更好的策略质量
+- 与原始连续奖励训练相比，离散化方案一致更优
+
+## 深度分析
+
+### 为什么过敏感性是一个被忽视的问题
+
+传统的奖励模型评估主要关注"准确度"——模型是否能正确区分好响应和坏响应。但这忽略了一个关键维度：当两个响应质量相当时，模型是否给出了稳定的分数。
+
+过敏感性的根源在于奖励模型的训练方式。当训练数据中同等质量的响应被标注了略有不同的分数时（人类标注者间差异），模型会学习到这些噪声模式，在推理时对语义等价但表面形式不同的响应给出不同分数。
+
+这种问题在 RLHF 训练中特别危险，因为策略优化器（如 PPO）会利用这些微小的分数差异来调整策略方向——等于在优化噪声。
+
+### 离散化的直觉
+
+离散化的核心思想是：如果两个响应的质量差异小于模型的噪声水平，就不应该让模型区分它们。通过将连续分数映射到离散簇，我们强制模型"放弃"那些不可靠的细微区分。
+
+这类似于模型量化（Quantization）的思路——通过降低数值精度来换取鲁棒性。但区别在于：量化作用于模型权重，而离散化作用于模型输出。
+
+### 对 RLHF/RLAIF 实践的影响
+
+1. **Reward hacking 缓解**：离散化奖励减少了策略利用模型噪声的空间
+2. **训练稳定性**：离散奖励信号的方差更小，PPO 等算法的训练更稳定
+3. **通用性**：免训练算法适用于任何现有奖励模型，无需重新训练
+4. **评估标准更新**：双维度框架（判别能力 + 特异性）应成为奖励模型评估的标准
+
+### 与相关工作的关系
+
+- **Reward hacking 研究**：离散化提供了一种无需对抗训练的 reward hacking 缓解方案（参见 RLHF 相关文献）
+- **Reward model ensembles**：集成方法通过多模型平均降低过敏感性，离散化则是单模型层面的解决方案
+- CAI（Constitutional AI）中的奖励模型同样受过敏感性影响
+- **Process Reward Models (PRM)**：PRM 对逐步推理的评分更易受过敏感性影响，离散化可能特别有价值
+
+## 实践启示
+
+- **奖励模型开发者**：在评估指标中加入特异性（specificity），不仅看准确度
+- **RLHF 工程师**：在 PPO 训练前对奖励模型输出进行离散化，可作为标准预处理步骤
+- **Agent 训练**：基于 RL 的 Agent 训练中，离散化奖励有助于减少策略振荡
+- **研究者**：双维度评估框架（判别能力 + 特异性）值得在奖励模型基准测试中采用
+
+## 相关实体
+
+- RLHF：离散化直接改善 RLHF 训练流程
+- Reward Hacking：离散化是缓解 reward hacking 的新手段
+- Constitutional AI：CAI 中的奖励模型可从离散化中受益
+- Dario Amodei RL Safety：RL 安全性研究的另一维度
+
+→ [原文存档](https://arxiv.org/abs/2606.21795)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+
+---
+
+## Ch13.004 EVA-Bench Data 2.0
+
+> 📊 Level ⭐⭐⭐ | 4.6KB | `entities/eva-bench-data-2-voice-agent.md`
+
+# EVA-Bench Data 2.0
+
+> ServiceNow AI 2026-06-04 在 Hugging Face 发布的语音 Agent 垂直领域评估基准。本实体整合自 [原文存档](https://huggingface.co/blog/ServiceNow-AI/eva-bench-data)。
+
+## 概述
+
+EVA-Bench Data 2.0 是 ServiceNow AI 发布的 **语音 Agent 垂直领域评估数据集**，目标是填补现有 benchmark 在真实业务场景（HR、客服、票务等）下的评估缺口。
+
+## 三个独有贡献
+
+1. **3 大垂直领域** — HR / 机票改签 / 客户支持，覆盖高频企业语音 Agent 场景
+2. **121 个工具 + 213 个场景** — 大规模真实业务工具调用 + 多步骤对话评估
+3. **垂直领域专攻** — 区别于通用对话 benchmark（如 MT-Bench），专注 **特定行业** 的语音 Agent 能力评估
+
+## 关键数据
+
+- **规模**：3 domains × 121 tools × 213 scenarios
+- **场景**：复杂多步骤对话（multi-turn）
+- **目标模型**：语音 Agent（voice agent）系统
+
+## 实践启示
+
+- 语音 Agent 评估需要 **垂直领域数据集**，通用 benchmark 不够
+- 121 工具 + 213 场景的规模可作为企业 Agent 测试基线
+- 后续可关注：是否开源完整数据 + 评估脚本
+
+## 深度分析
+
+### 垂直领域评估的必要性
+
+通用对话 benchmark（如 MT-Bench、Arena）擅长评估开放式对话能力，但在企业语音 Agent 场景中存在明显盲区：
+
+1. **工具调用复杂度** — 企业场景需要精确的 API 调用链，而非闲聊式响应
+2. **领域知识深度** — HR 政策、机票退改签规则需要准确的结构化知识
+3. **多轮状态跟踪** — 真实业务对话涉及 5-15 轮状态转换，远超通用基准的 2-3 轮
+
+EVA-Bench 的 121 工具 × 213 场景设计，正是为了量化这些垂直维度的能力边界。
+
+### 规模设计的工程含义
+
+| 维度 | 数量 | 工程意义 |
+|------|------|----------|
+| 工具 | 121 | 覆盖常见企业系统 API 复杂度 |
+| 场景 | 213 | 足够统计学意义的评估样本 |
+| 领域 | 3 | 验证跨领域泛化能力 |
+
+这种规模使得单次评估可以区分 "能运行演示" 和 "能处理生产负载" 的 Agent 差距。
+
+### 与通用 Benchmark 的互补关系
+
+- **MT-Bench/Arena** → 评估通用对话流畅度
+- **EVA-Bench** → 评估垂直领域任务完成率
+- **SWE-Bench** → 评估代码 Agent 能力
+- **AgentBench** → 评估通用 Agent 推理
+
+企业部署语音 Agent 时，应组合使用以上基准，而非依赖单一指标。
+
+## 实践启示
+
+1. **评估现有语音 Agent** — 如果正在开发或采购语音 Agent 系统，可用 EVA-Bench 作为验收基准，要求供应商提供在该数据集上的端到端成功率
+
+2. **构建内部评估流水线** — 参考 121+213 的规模设计，将自己的业务场景抽象为可复现的评估用例，建立回归测试机制
+
+3. **关注数据开放性** — 持续跟踪 Hugging Face 上的数据集更新，确认是否包含完整的对话轨迹和工具调用序列，以便复现评估
+
+4. **领域适配策略** — 如果 EVA-Bench 的 3 个领域与自身业务不完全匹配，可借鉴其方法论（工具抽象 + 场景覆盖）构建垂直领域变体
+
+5. **多维度评估矩阵** — 不要只用单一 benchmark，建议组合：通用能力（MT-Bench）+ 垂直任务（EVA-Bench）+ 安全对齐（自定义测试集）
+
+## 与现有实体的差异化
+
+- 现有 entity 中暂无专门的 **voice agent 垂直评估 benchmark** 覆盖
+- 与通用 LLM benchmark entities 互补：本实体专攻 **Agent + 语音 + 垂直领域** 三维交叉
+- 评分 v×c=42 < 49，但 stars=4 触发"独特技术洞察"入库
+
+## 上线状态
+
+- 官方链接：https://huggingface.co/blog/ServiceNow-AI/eva-bench-data
+- 发布日期：2026-06-04
+- 部署：Hugging Face Datasets
+
+## 相关实体
+- [Datacomp For Language Models](https://github.com/QianJinGuo/wiki-public/blob/main/entities/datacomp-for-language-models.md)
+- [Frontier Code Cognition Mergeability Benchmark](https://github.com/QianJinGuo/wiki-public/blob/main/entities/frontier-code-cognition-mergeability-benchmark.md)
+- [Servicenow Ui Is Dead Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/servicenow-ui-is-dead-agent.md)
+- [The Ui Is Dead Long Live The Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/the-ui-is-dead-long-live-the-agent.md)
+- [The Ui Is Dead Long Live The Agent Servicenow Goes Headless And Opens Its Platform](https://github.com/QianJinGuo/wiki-public/blob/main/entities/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless-and-opens-its-platform.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/evaluation-and-benchmarks.md)
+
+---
+
+## Ch13.005 美团海报生成 AIGC 技术体系：PosterCraft/PosterOmni/PosterReward（ICLR/CVPR 2026 三连发）
+
+> 📊 Level ⭐⭐⭐⭐ | 22.1KB | `entities/meituan-poster-aigc-postercraft-posteromni-posterreward-meigen.md`
+
+# 美团海报生成 AIGC 技术体系：PosterCraft/PosterOmni/PosterReward
+
+## 核心定位
+
+**美团智能创作团队** 2 年构建的"**生成-编辑-评判**"完整技术体系，3 个开源项目 + 3 篇顶会论文（ICLR 2026 + CVPR 2026 ×2）+ 真实业务落地。
+
+**核心问题**：百万中小商家海报设计门槛（外包 数百-数千元 / 传统 1-3 天 / 批量质量失控 / 内容同质化）。
+
+**解法闭环**：
+
+| 层级 | 工作 | 会议 | 角色 |
+|---|---|---|---|
+| **基础生成** | PosterCraft | ICLR 2026 | 端到端高美感海报生成 |
+| **多任务编辑** | PosterOmni | CVPR 2026 | 6 类 image-to-poster 任务 |
+| **质量评估（双线）** | 营销海报结构化 + PosterReward | CVPR 2026 | 存量海报质检 + AI 生成奖励 |
+
+## 五大技术挑战
+
+1. **精准文字渲染**（零容错；中文/多行/小字号短板）
+2. **和谐版式布局**（设计原则难规则化）
+3. **统一美学风格**（餐饮"食欲感"/美妆"精致感"/科技"未来感"）
+4. **多任务场景统一**（局部编辑 + 全局创作）
+5. **质量评估可量化**（FID/IS 不可用；人工评估不可规模化）
+
+## PosterCraft（ICLR 2026）：端到端高美感海报生成
+
+### 核心思想
+
+> 摒弃模块化流水线，让模型端到端地自由探索视觉连贯的设计组合。
+
+传统 VLM 规划布局 + 单独背景生成 + 文字叠加 → **美学一致性差，受各模块短板拼接限制**。
+
+### 四阶段级联优化工作流
+
+| 阶段 | 数据集（规模） | 核心方法 |
+|---|---|---|
+| **1. 大规模文字渲染优化** | **Text-Render-2M**（200 万样本） | Flow Matching 微调，提升文字渲染准确率（解决文字缺失/重复/错误） |
+| **2. 高质量海报微调 + 区域感知校准** | **HQ-Poster-100K**（10 万） | **Region-Aware Calibration**：非文字 1.0 / 主要文字 0.6 / 次要文字 0.2 — 保持文字准确同时注重整体艺术性 |
+| **3. 美学-文本强化学习** | **Poster-Preference-100K**（6000 偏好对） | 每 prompt 5 张 + HPSv2 打分 + Gemini 验证 + Best-of-N DPO |
+| **4. 视觉-语言反馈精炼** | **Poster-Reflect-120K** | 每 prompt 6 张 + Gemini 选优 + 结构化反馈 + **InternVL-3-8B 微调为 VLM 评论家**（推理时迭代优化） |
+
+### 核心成果
+
+文字召回率 / F-score / 准确率 → **显著超越所有开源基线**，**接近 SOTA 闭源商业系统**（如 Gemini 2.0-Flash-Gen）。
+
+## PosterOmni（CVPR 2026）：多任务统一图像到海报
+
+### 核心思想
+
+> 真实设计场景中，更常见起点是**参考图/旧版海报/产品主视觉**——设计目标不是完全重做，而是在保留核心主体基础上完成扩图/补全/比例调整/风格迁移/版式重组。
+
+### 6 类典型设计任务
+
+| 任务 | 方法 |
+|---|---|
+| **Extending / Filling** | SAM2 构造局部 mask |
+| **Rescaling** | 借鉴 BrushNet，"比例变化→内容重排" |
+| **ID-driven** | PaddleDet 提取主体 + 增强编辑器 |
+| **Layout-driven** | prompt-controlled rerendering |
+| **Style-driven** | 继承风格但不直接复制 |
+| 第 6 类 | 原文未明示 |
+
+### 核心难点：多任务冲突的缓解
+
+**任务间相互干扰**：局部编辑强调像素级一致 + 自然过渡；全局创作关注风格抽象 + 大幅度重构。直接混合训练 → "什么都会一点但都不稳"。
+
+**PosterOmni 解法**："数据—蒸馏—奖励"闭环：
+1. 分别训练局部编辑专家 + 全局创作专家
+2. 通过任务蒸馏整合为统一学生模型（PosterOmni-SFT）
+3. 加入统一奖励 + 强化学习（DiffusionNFT）
+
+### 四阶段训练流水线
+
+| 阶段 | 核心内容 |
+|---|---|
+| **1. 自动化数据构建** | **PosterOmni-200K**（20 万）：提示词+基础图生成 → PaddleOCR/jina-clip-v2/SAM 2 过滤 → 6 类任务配对（商品/美食/活动/自然/教育/娱乐六大主题） |
+| **2. 任务蒸馏** | 专家训练 → 学生网络逼近专家的速度场/预测行为：`L_total = L_text_render + λ·L_distill` |
+| **3. 统一奖励模型** | Gemini-2.5-Pro 初筛 + 标注者选优；**negative-pair 策略**（输入参考图=rejected / 编辑后输出=chosen）显式强化"有效修改有价值"；Qwen3-VL encoder + MLP head + Bradley-Terry |
+| **4. Omni-Edit RL** | **DiffusionNFT** 思路，正向扩散过程直接优化；**task-aware 分数**（"更像完成了任务"而非仅"更好看"） |
+
+### PosterOmni-Bench
+
+- 1020 条（540 中文 + 480 英文）测试指令
+- 6 类核心任务 × 6 大海报主题 × 单/多参考图输入
+- Gemini-2.5-Pro 打分（1-5 分）
+
+### 实验结果
+
+- 全部 6 类任务**开源模型最佳**，整体评分**超过部分闭源模型**
+- 相较 Qwen-Image-Edit：Layout-driven / Style-driven 增幅最大（真正学到了生成规则）
+- 相较 Seedream-4.0：整体平均**已实现反超**
+
+## PosterReward（CVPR 2026）：海报质量评估
+
+### 双线并行体系
+
+| 路线 | 对象 | 锚定 | 角色 |
+|---|---|---|---|
+| **真实海报结构化评估** | 线上存量海报 | 专业设计规范显式标准 | 智能质检 + 规范管理 |
+| **生成海报奖励模型** | AI 生成内容 | 用户主观偏好对齐 | 驱动生成持续进化（RL 奖励）+ 线上质检 |
+
+### 营销海报图像结构化（三大维度）
+
+| 维度 | 算法 | 关键数据 |
+|---|---|---|
+| **排版构图** | 12 种元素定位 + CNN 回归美学评分 | 准确率 **90%+**；5 分制误差 **0.3794**（归一化 0.0759）；近 **90%** 误差 ≤ 1 分 |
+| **色系搭配** | 11 种主色系识别 + 12 种基础色占比 + HSV 冷暖 | 准确率 **96.2%** |
+| **氛围风格** | 12 种风格识别（节日/卡通/简洁/多彩/科技/柔美/素雅/促销/撞色/实拍/标准/其他） | 准确率 **91.50%** |
+
+**整体美学综合评价** → 基本拟合设计师主观评价。
+
+### PosterReward 核心数据
+
+**自动化偏好数据集 Poster-Preference-70K**：
+- 数据来源：Seedream 3.0/4.0 + Qwen-Image-Lightning（影视/非影视）
+- 级联式过滤：HPSv3 → Kendall's W → 多模型排序 → 4 开源（CLIP/DINOv3/HPSv3/GLM-4.5V）+ 3 闭源（Gemini-2.5-Flash-Lite/Pro/GPT-5）共识
+- 产出：**7 万高质量偏好对**
+
+**四阶段级联训练**：
+1. **Joint SFT**（双任务并行：24.6 万单图 + 16 万配对偏好）
+2. **Joint RSFT**（拒绝采样微调）
+3. **Score Module**（Qwen3-VL-8B + 两层 MLP + Bradley-Terry）
+4. **GRPO**（冻结评分模块为奖励函数 → RL 微调分析模块）
+
+**核心成果**：**PosterRewardBench-Advanced 上 86.0% 准确率，远超基线 40-53%**。
+
+### 评估体系演进逻辑
+
+> 结构化评估的维度定义经验 → 为 PosterReward 多维度分析模块提供**领域知识参照**
+> PosterReward 端到端学习能力 → 克服结构化评估的**泛化性和可优化性瓶颈**
+> **两者的融合是未来评估体系演进方向**
+
+## 技术闭环协同
+
+| 模块 | 在闭环中的角色 |
+|---|---|
+| **PosterCraft** | 建立端到端生成基础；四阶段已引入奖励模型驱动的美学优化 |
+| **PosterOmni** | 在 PosterCraft 基础上拓展至多任务；统一 Reward 是 PosterReward 理念的任务特化 |
+| **营销海报结构化** | 从构图/配色/氛围感提供可解释设计规范 → 为生成链路评估提供领域知识 |
+| **PosterReward** | 将设计知识内化为端到端奖励信号：驱动生成（RL）+ 承担线上质检 |
+
+**协同模式**：评估驱动生成优化 → 生成拓展编辑边界 → 编辑反哺评估标准 → 持续自我进化的后训练系统。
+
+## 真实业务落地
+
+| 案例 | 业务 | 效果 |
+|---|---|---|
+| **文生帖子功能**（PosterCraft） | 美团平台合作上线 | ALBALUZ 西班牙餐厅海报 / 重庆夏季城市图鉴文旅海报（14+ 元素融合） |
+| **美团品牌 IP 袋鼠团团**（PosterCraft） | 与美团设计师合作 | 大寒节气海报 / 2026 马年新年主视觉（3D C4D 风格/唐代古建筑/烟花/红灯笼/毛笔字"马年大吉"） |
+| **图生商品海报**（PosterOmni） | 主体保持能力 | （原文图示） |
+
+## 关键创新点总结
+
+| 项目 | 独家创新 |
+|---|---|
+| **PosterCraft** | 区域感知校准（Region-Aware Calibration）/ 四阶段级联 / 端到端统一优化 |
+| **PosterOmni** | 任务蒸馏（局部+全局专家→学生）/ **negative-pair 策略** / DiffusionNFT task-aware RL |
+| **PosterReward** | 86% 准确率远超基线 / 多模型共识级联过滤 / 双线评估体系（结构化 + 偏好） |
+| **体系级** | "生成-编辑-评判"技术闭环（评估驱动生成→生成拓展编辑→编辑反哺评估） |
+
+## 未来方向
+
+- **更强可控性**：支持更精细设计意图传达
+- **更广场景覆盖**：从静态海报 → 动态视觉；零售电商 → 酒旅/丽人服务电商
+- **更深评估维度**：结构化设计规范知识持续注入奖励模型 → "可解释 + 可优化"统一
+- **更紧产业闭环**：规范标准与 RL 信号深度融合，直接驱动生成模型自我进化
+
+## 与 wiki 既有内容的关系
+
+- **与 [CVPR 2026 小米 SVOR 视频掩码](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cvpr-xiaomi-svor-video-masking.md)**：同属 CVPR 2026 + 顶级中国大厂 + 视频/图像生成；**互补不重复**（小米是视频生成，美团是海报生成）
+- **与 [JOYAI Echo 长视频框架（京东）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/joyai-echo-long-video-framework-jd.md)**：同属顶会论文 + 顶级中国大厂 + 内容生成；美团侧重**海报（静态 + 文字）**，京东侧重**视频**
+- **与 [GPT-Image-2 完全指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gpt-image-2-完全指南附大量玩法案例顺便开源我的生图-skill.md)**：都讲 AIGC 文生图；GPT-Image-2 是**工具使用**，美团 PosterCraft 是**学术论文级** + 完整技术体系
+- **与 [腾讯陈进 Agent Loop 工程手册](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-loop-engineering-handbook-8-questions-chen-jin-tencent-self-2026.md)**：都强调"评估驱动生成"思想（陈进的 SELF Protocol 30 天实验 / 美团 PosterReward RL 奖励信号）
+
+## 深度分析
+
+**"生成-编辑-评判"三角闭环是 AIGC 工程化的最佳实践**：美团的 PosterCraft（生成）→ PosterOmni（编辑）→ PosterReward（评判）不是三个独立项目，而是一个自我强化的技术闭环。PosterReward 的评估信号可以反哺 PosterCraft 的生成质量，PosterOmni 的编辑能力扩展了 PosterCraft 的应用场景。这种"评估驱动生成→生成拓展编辑→编辑反哺评估"的闭环模式，比单独优化单个模型的工程效率高得多。
+
+**区域感知校准（Region-Aware Calibration）是海报生成的核心突破**：海报与普通文生图的本质区别在于"文字必须清晰可读 + 布局必须符合设计规范"。PosterCraft 的区域感知校准机制解决了传统扩散模型在文字渲染上的短板——通过将海报划分为不同区域（标题区、正文区、图片区），对每个区域施加独立的渲染约束，文字渲染质量接近 SOTA 闭源模型。
+
+**Reward Model 作为质量守门人的工程价值**：PosterReward 的 86% 准确率（vs 基线 40-53%）意味着它可以可靠地替代人工评估——这对于百万级海报批量生成场景至关重要。更关键的是它的"双线评估体系"（结构化设计规范 + 偏好学习），同时捕获"是否符合规范"和"是否美观"两个维度。
+
+**开源策略的商业智慧**：美团将三个顶会论文全部开源（MeiGen-AI GitHub），这不是简单的"学术贡献"——它是吸引 AI 人才的品牌策略，也是建立行业标准的技术策略。当业界使用 PosterCraft/PosterOmni/PosterReward 时，美团的海报设计规范和评估标准就成为了事实标准。
+
+**真实业务落地验证了学术价值**：外卖套餐图、袋鼠团团 IP、点评信息流治理三个真实场景的落地，证明了这套体系不是"论文级"的实验室产物——它已经在服务百万中小商家的海报生成需求。这种"学术论文 + 真实业务"的双验证模式，是评估 AIGC 技术成熟度的黄金标准。
+
+## 实践启示
+
+1. **AIGC 项目应设计"生成-评估"闭环**：不要只优化生成模型——投资评估模型（如 PosterReward）可以为生成模型提供 RL 信号，形成自我进化闭环。评估模型的价值往往超过生成模型本身。
+
+2. **文字渲染质量是海报生成的技术门槛**：如果你的应用场景涉及文字（海报、名片、广告），优先评估模型的文字渲染能力。区域感知校准是当前最先进的解决方案——要求厂商演示中英文混合、多字号、复杂排版场景。
+
+3. **用 Reward Model 替代人工评估**：对于批量生成场景，人工评估成本不可持续。投资训练领域特定的 Reward Model（如 PosterReward），可以实现自动化质量筛选。关键指标：准确率 >80%、与人工评估的相关性 >0.8。
+
+4. **关注 MeiGen-AI 的开源生态**：美团的三个开源项目（PosterCraft、PosterOmni、PosterReward）提供了完整的海报生成技术栈。如果你在构建类似的 AIGC 系统，可以直接基于这些项目构建，而不是从零开始。
+
+5. **"评估驱动生成"思想适用于所有 AIGC 场景**：美团的"生成-编辑-评判"闭环模式不限于海报——它可以应用于任何 AIGC 场景（文本、音频、视频）。核心思想是：先建评估标准，再用评估信号驱动生成优化。
+
+## 相关实体
+
+→ [原文存档](https://mp.weixin.qq.com/s/4ytSFiJa2q8inb5U-Au9Nw)
+
+- [CVPR 2026 小米 SVOR 视频掩码](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cvpr-xiaomi-svor-video-masking.md)
+- [JOYAI Echo 长视频框架（京东）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/joyai-echo-long-video-framework-jd.md)
+- [GPT-Image-2 完全指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gpt-image-2-完全指南附大量玩法案例顺便开源我的生图-skill.md)
+- [腾讯陈进 Agent Loop 工程手册](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-loop-engineering-handbook-8-questions-chen-jin-tencent-self-2026.md)
+- [Harness Engineering](ch05/066-harness-engineering.html)
+- [ConardLi Harness Engineering 综合性指南（+ Beautiful Article 第 2 来源）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-comprehensive-guide-conardli.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/reinforcement-learning-rlhf.md)
+
+---
+
+## Ch13.006 Agent 评测方法论——美团图灵两年 BP 实践（人人一致/人机一致 + 桥梁指标 + 长程范式）
+
+> 📊 Level ⭐⭐⭐⭐ | 20.4KB | `entities/meituan-turing-agent-evaluation-methodology-2026-08-06.md`
 
 # Agent 评测方法论——美团图灵两年 BP 实践
 
@@ -412,14 +682,14 @@ ChatAgent 时代：核心评测员对齐 → 外包对齐 → 机评对齐。长
 
 ## 相关实体
 
-- [LLM Agent 怎么测评：IBM+Yale 评测综述](ch03/004-agent.html)——学术侧评测范式框架（三条新范式），本文是工业侧"如何搭评测体系"方法论，互补对照
-- [Agent 评测的反直觉感悟（Langfuse）](ch03/004-agent.html)——产品视角（质量 vs 可规模化取舍），本文是体系工程视角
-- [Agent 评测系统化指南：指标到闭环](ch03/004-agent.html)——本文的"数据飞轮五环节 + 准入准出门禁"与其闭环思想互证
-- [Agent 可观测性五层架构](ch03/004-agent.html)——「观测是评测的基石」与其 Trace 分层设计互证；长程评测对 Trace 的结构性依赖
-- [美团 LongCat 长程动态 Agent 评测基准](ch03/004-agent.html)——同团队评测基建的基准侧产物
-- [Harness 减法工程（腾讯 tdsql-harness）](ch05/008-harness.html)——「判据必须能被机械判定」与本文「Rubric 二元化」是同一原则在评测与指令两侧的体现；验证类 skill 影响最可测量与此处人机一致方法论互证
+- [LLM Agent 怎么测评：IBM+Yale 评测综述](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-evaluation-survey-ibm-yale-2026.md)——学术侧评测范式框架（三条新范式），本文是工业侧"如何搭评测体系"方法论，互补对照
+- [Agent 评测的反直觉感悟（Langfuse）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-eval-counterintuitive-insights-langfuse.md)——产品视角（质量 vs 可规模化取舍），本文是体系工程视角
+- [Agent 评测系统化指南：指标到闭环](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-evaluation-systematic-guide-metrics-to-closed-loop.md)——本文的"数据飞轮五环节 + 准入准出门禁"与其闭环思想互证
+- [Agent 可观测性五层架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-observability-5-layer-architecture.md)——「观测是评测的基石」与其 Trace 分层设计互证；长程评测对 Trace 的结构性依赖
+- [美团 LongCat 长程动态 Agent 评测基准](https://github.com/QianJinGuo/wiki-public/blob/main/entities/meituan-longcat-vitabench-20-long-term-dynamic-agent-benchmark.md)——同团队评测基建的基准侧产物
+- [Harness 减法工程（腾讯 tdsql-harness）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tdsql-harness-subtraction-l0-l3-tencent-2026-08-06.md)——「判据必须能被机械判定」与本文「Rubric 二元化」是同一原则在评测与指令两侧的体现；验证类 skill 影响最可测量与此处人机一致方法论互证
 - Harness Gate 评估——准入准出门禁嵌入开发发布流程与其 gate 设计思想同源
-- [AliExpress 细粒度 Agent 评测体系](ch03/004-agent.html)——另一家大厂工业评测实践，可横向对比
+- [AliExpress 细粒度 Agent 评测体系](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-evaluation-fine-grained-system-aliexpress-2026.md)——另一家大厂工业评测实践，可横向对比
 
 → [原文存档](https://mp.weixin.qq.com/s/gZKWRqznB8sNBFf69fBIvw)
 
@@ -427,9 +697,9 @@ ChatAgent 时代：核心评测员对齐 → 外包对齐 → 机评对齐。长
 
 ---
 
-## Ch13.003 阿里巴巴&蚂蚁 LoongSuite GenAI 可观测语义规范：从统一数据语言到规模化落地
+## Ch13.007 阿里巴巴&蚂蚁 LoongSuite GenAI 可观测语义规范：从统一数据语言到规模化落地
 
-> 📊 Level ⭐⭐ | 20.3KB | `entities/阿里巴巴蚂蚁-loongsuite-genai-可观测语义规范从统一数据语言到规模化落地.md`
+> 📊 Level ⭐⭐⭐⭐ | 20.3KB | `entities/阿里巴巴蚂蚁-loongsuite-genai-可观测语义规范从统一数据语言到规模化落地.md`
 
 ## 核心要点
 - OTel SemConv 是可观测数据的"道"，采集工具是"术"——语义规范才是 OTel 社区的核心价值
@@ -538,19 +808,795 @@ Token 级可观测数据对于定位 vLLM/SGLang/TensorRT-LLM 等引擎的并发
 ### 对于推动 OTel 标准的社区贡献者
 LoongSuite 的演进路径——内部验证后贡献社区——是大型企业参与开源标准的最佳实践 。在 OTel 社区提案 Skill 语义的经历表明，社区对有充分生产验证的提案接受度更高，建议其他厂商在类似领域也采用这一路径 。
 ## 相关实体
-- [Loongsuite Genai Semconv](ch04/052-ai.html)
-- [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](ch09/041-coding-agent.html)
-- [Deeppotential Alibabacloud Agentrun Scientific Ai](ch04/296-agentrun.html)
-- [从多智能体编排到Ai自主决策资损防控体系的架构演进](ch04/052-ai.html)
-- [给氛围编程系上安全带阿里集团 Ai 代码评审实践与 Benchmark 开源](ch04/052-ai.html)
+- [Loongsuite Genai Semconv](https://github.com/QianJinGuo/wiki-public/blob/main/entities/loongsuite-genai-semconv.md)
+- [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox To Transparent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/alibaba-agent-observability-audit-loongsuite-pilot-coding-agent-blackbox-to-transparent.md)
+- [Deeppotential Alibabacloud Agentrun Scientific Ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deeppotential-alibabacloud-agentrun-scientific-ai.md)
+- [从多智能体编排到Ai自主决策资损防控体系的架构演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/从多智能体编排到ai自主决策资损防控体系的架构演进.md)
+- [给氛围编程系上安全带阿里集团 Ai 代码评审实践与 Benchmark 开源](https://github.com/QianJinGuo/wiki-public/blob/main/entities/给氛围编程系上安全带阿里集团-ai-代码评审实践与-benchmark-开源.md)
 
 → [原文存档](https://mp.weixin.qq.com/s/X6lh1LuOJgbkJQ8t0Zky1g)
 
 ---
 
-## Ch13.004 ai-skill-测评指标体系
+## Ch13.008 NICE：浙大提出的理论驱动型 LLM 社会智能诊断基准
 
-> 📊 Level ⭐⭐ | 17.2KB | `entities/ai-skill-测评指标体系.md`
+> 📊 Level ⭐⭐⭐⭐ | 16.7KB | `entities/nice-zhejiang-university-social-intelligence-benchmark-hyman.md`
+
+# NICE：浙大提出的理论驱动型 LLM 社会智能诊断基准
+
+> 本实体整理自 [原文存档](https://mp.weixin.qq.com/s/Xr3t8vHZoer1eHSBsYN7ZA)，并参考浙大 arXiv 论文 *NICE: A Theory-Grounded Diagnostic Benchmark for Social Intelligence of LLMs*（https://arxiv.org/abs/2605.29685 ）。
+
+## 一句话总结
+
+NICE（**N**ot **I**ust **C**orrectness, **E**valuation of social intelligence）由浙江大学心理与行为科学系与人工智能学院联合团队提出，将社会智能组织为 **4 大类、11 维度、34 个能力内涵**，用 **137 道中国情境排序题**评测 5 个前沿 LLM（GPT-5.5、Claude-Opus-4.7、Gemini-3.1-pro-preview、DeepSeek-V4-pro、Qwen3.6-plus），发现模型总体准确率（75.1%）高于人类参考组（70.4%），但「**沟通**」是集体短板，且模型在多轮沟通、非言语沟通、同步性三个内涵上系统失效。
+
+## NICE 解决的关键问题
+
+社会智能（Social Intelligence）通常指个体理解、融入并适应社会环境的能力，对 LLM 来说直接关系到人机交互的质量与安全。现有评测基准存在三个关键 gap：
+
+- **Gap 1**：缺少整体全面、理论驱动的社会智能评测框架（多数基准聚焦心理理论/情绪理解等单一切片）
+- **Gap 2**：缺少精细到能力内涵的诊断能力（错误只能归到维度总分，无法定位到具体能力内涵）
+- **Gap 3**：缺少贯穿全流程的严谨心理测量学方法
+
+NICE 的定位正是系统补齐这三条 gap。
+
+## 理论框架：4 大类 × 11 维度 × 34 能力内涵
+
+NICE 的理论框架由系统文献综述 + 16 位专家多轮评分修订而成，采用层次分析法（AHP）确定各层级权重。
+
+| 类别 | 维度 | 模型需具备的能力 |
+|------|------|------------------|
+| **Cognition（社会认知）** | 社会感知、社会理解与洞察 | 感知、理解和推断社会信息 |
+| **Interaction（社会交互）** | 沟通、情绪利用、关系管理、自我一致性 | 选择合适的沟通、情绪、关系和行为策略 |
+| **Experience（社会学习）** | 观察模仿、适应性学习 | 从观察、互动结果和反馈中学习 |
+| **Norm（社会规范）** | 社会文化智能、社会责任、道德与伦理智能 | 理解社会文化规则、道德约束和责任要求 |
+
+NICE 是第一个将社会智能**全面理论化**的评测框架，且每一道题与唯一的能力内涵清晰对应，这是它"可诊断"的基础。
+
+## 题目设计：排序题替代单选
+
+NICE 共 137 题，基于**中国情境**设计，每题包含：
+
+- 一个社会情境
+- 一个问题
+- 若干候选回应（按"最优—次优—最差"梯度排列）
+
+测试要求模型**完整排序**候选回应，与专家标准答案**完全一致**才算正确。这跳出"非黑即白"的判断，考察模型社会判断的合理性和**边界敏感性**——能否识别最差选项是 NICE 与其他 benchmark 的最大差异。
+
+### 为什么用排序而不是单选？
+
+单选测试中模型可能"碰巧选对最优"但仍把夸张的礼貌行为排在第二位；排序任务把边界敏感性显式化，**让模型识别"什么行为不该做"**成为可测量信号。
+
+## 心理测量学四阶段构建流程
+
+NICE 的构建分四阶段，全程引入心理测量原则：
+
+1. **框架构建**：人类 + AI 社会智能理论 + 16 位专家评分 + 焦点小组 + AHP 权重
+2. **素材收集**：18 个社会智能相关 LLM 评测基准 + 43 个经典心理学范式作为参考
+3. **题项构建**：2 位具 7–8 年心理学研究经验的研究者严格按目标维度设计
+4. **题项评估与验证**：三轮修订 + 12 位评估者 5 点评分（阈值 3.5 分；不达标题项重测）
+
+这一流程的工程意义：避免多个子任务简单拼凑，增强理论框架有效性和诊断结果可解释性。
+
+## 五大核心发现
+
+### 发现 1：LLM 总体准确率高于人类参考组
+
+| 模型 | NICE 准确率 |
+|------|------------|
+| LLM 平均 | **75.1%** |
+| Gemini-3.1-pro-preview | ~75%+（与 GPT-5.5 并列前二） |
+| GPT-5.5 | ~75%+ |
+| Claude-Opus-4.7 | **71.1%**（最低） |
+| 人类参考组（14 人） | **70.4%** |
+
+LLM 平均比人类高 4.7 个百分点，但前二差距极小，分布紧凑。
+
+### 发现 2：优势集中在部分维度，尚未全面领先
+
+LLM 优势集中在：**社会感知、情绪运用、自我一致性、适应性学习、社会责任** 5 个维度。其余 6 个维度（尤其沟通 D3）未显示稳定优势。
+
+### 发现 3：沟通是集体短板
+
+在所有 11 个维度中，**D3 沟通（Communication）是人类参考组显著优于 LLM 的唯一维度**，且对 5 个被测模型都是得分最低维度。
+
+### 发现 4：沟通短板集中在三个内涵
+
+模型在 D3 的失效集中在：
+
+- **多轮沟通**（multi-turn）
+- **非言语沟通**（non-verbal）
+- **同步性**（synchrony）
+
+这三类任务的共同点是：高度依赖互动节奏、非语言线索、上下文连续性——而当前 LLM 的"上下文窗口 + 文本生成"范式与这三类需求存在结构性错配。
+
+### 发现 5：模型可能过度偏好显性礼貌行为
+
+经典反例：初次见面场景中，对"180 度鞠躬"的判断
+
+- 71.43% 的人类参与者认为是最差选择（夸张、不自然）
+- Claude-Opus-4.7 和 GPT-5.5 在 3 次独立测试中**从未把它排为最差**，稳定放在第二位
+- 后续解释显示模型把它理解为"礼貌表达"
+
+这暴露了模型的"礼貌偏好"——能识别正确答案的"对"，但无法识别"过了"。"总分高"掩盖了这种边界敏感性。
+
+## 深度分析
+
+### 排序题作为诊断信号的设计哲学
+
+NICE 的排序题本质上是在测试"边界敏感性"——模型能否识别"什么行为不该做"，而不仅"什么行为最该做"。这与 RLHF 的偏好对齐训练目标高度同构，但又有重要差异：
+
+- **RLHF** 关注"输出对人类偏好的拟合度"，但**不显式测试"违规行为的识别"**
+- **NICE** 把"识别最差选项"作为评分项之一，**强制模型展示对越界行为的判别能力**
+
+这意味着 NICE 不仅是评测工具，还可以作为**对齐训练的目标函数**——把"排序的边界敏感性"作为奖励信号，可能比单纯"对齐到人类偏好"更能培养出对情境敏感的智能体。
+
+### D3 沟通短板的范式根源
+
+LLM 在"多轮/非言语/同步性"三个沟通内涵上的集体失效，根源在于**模型架构与沟通任务的结构性错配**：
+
+| 沟通内涵 | LLM 范式缺陷 |
+|---------|-------------|
+| 多轮沟通 | 上下文窗口限制 + 位置编码衰减 → 长对话中后段信息丢失 |
+| 非言语沟通 | 文本模型**根本没有**对肢体、表情、语调的通道 → 即使把话写成文字也缺乏情境感 |
+| 同步性 | 单次生成模式无法观察"对方此刻的反应" → 无法做互动节拍（pacing）调整 |
+
+这一发现对多模态 Agent、对话系统、陪护机器人都有直接启示：单文本 LLM 永远无法"看起来懂沟通"，必须引入多模态输入 + 反应性生成机制。
+
+### 礼貌偏好与对齐的隐性代价
+
+NICE 暴露的"过度偏好显性礼貌"现象可能是 RLHF 的隐性代价——人类标注员普遍偏好"礼貌"输出，模型学到了"礼貌 = 好"的启发式，却丢失了"礼貌过头 = 越界"的判断力。
+
+这指向一个深度对齐问题：**对齐到人类偏好的均值，会让模型在长尾的"反共识"判断上失灵**。社会智能的对齐可能需要"反事实人类评估"——专门训练模型识别"多数人偏好但实际越界"的场景。
+
+### 中国情境 vs 西方情境的迁移性
+
+NICE 全部基于中国情境设计（人际边界、面子、关系等文化负载强），5 个被测 LLM 总体表现仍能超过人类参考组，这本身是一个**跨文化稳健性信号**——前训练的语料混合让 LLM 在不同文化情境下都获得了基础社会判断能力。
+
+但 D3 沟通短板的根因之一可能正是**文化负载的中和**：模型学到了"礼貌"的一般模式，但在"中国式 180 度鞠躬"这种文化特异性信号上失灵。这对部署在特定文化语境的 Agent 是重要警示。
+
+## 实践启示
+
+### 对 LLM 评测的启示
+
+1. **从总分竞赛走向能力诊断**：当一个模型的"社会智能"总分高于人类，开发者更应关心"它在哪些具体内涵上仍不如人类"，而非"它总分多少"
+2. **排序题比单选更能暴露细微缺陷**：单选测试的高分可能掩盖边界敏感性的缺失
+3. **理论驱动优于数据驱动**：从框架出发设计题项（如 NICE 的 4×11×34）比从语料库随机抽题更具诊断价值
+
+### 对 Agent 设计的启示
+
+1. **沟通型 Agent 需多模态**：单文本 LLM 注定在非言语沟通、同步性上有结构性缺陷，客服/陪护/教育等强沟通场景的 Agent 必须考虑引入语音、视觉、节奏感知
+2. **边界敏感性可作为对齐目标**：把"识别最差选项"的能力作为训练信号，可能比"输出最礼貌回应"更接近真正的社会智能
+3. **文化情境的本地化训练**：把特定文化的人际边界、关系模式、情境规约做成领域数据，可提升 Agent 在该文化下的可信度
+
+### 对 AI 安全与对齐的启示
+
+1. **礼貌偏好的隐性代价**：模型学到了"礼貌 = 好"，但失去了"礼貌过头 = 越界"的判别力 — 显式测试"反共识边界"是对齐评估的关键
+2. **社会智能短板 ≠ 安全风险**：D3 沟通短板目前表现为"过度礼貌"，未直接造成安全风险；但同一短板模式若出现在"伦理判断"维度，可能引发更严重问题 — 需扩展 NICE 类评测到安全边界
+
+## 与其他评测基准的对比
+
+| 维度 | NICE | 心理理论/情绪类基准 | 开放式多轮交互基准 |
+|------|------|------------------|------------------|
+| 理论驱动 | ✅ 4×11×34 完整框架 | ❌ 通常聚焦单一能力 | ⚠️ 部分有理论背景 |
+| 能力内涵级诊断 | ✅ 34 个内涵 | ❌ 仅总体分数 | ⚠️ 子任务分数 |
+| 心理测量学方法 | ✅ 全程 AHP + 专家验证 | ⚠️ 部分有 | ❌ 多为语料抽样 |
+| 排序题（边界敏感） | ✅ | ❌ 多为单选 | ❌ 多为开放式 |
+| 中国情境 | ✅ 137 题 | ⚠️ 部分有 | ⚠️ 部分有 |
+
+NICE 真正的差异化定位是**「理论 + 内涵级 + 排序题」三位一体**——三者结合才能既给出"模型社会智能如何"的总体判断，又给出"具体在哪条能力上失效"的可操作信号。
+
+## 局限与未来方向
+
+- 137 题规模相对有限，未覆盖更多文化语境
+- 5 个被测 LLM 均为通用模型，未涵盖专门微调的"对话/陪护"类模型
+- 14 人的人类参考组规模小，统计功效有限
+- 排序题评估方法本身需要专家一致性验证
+
+未来方向：拓展到复杂互动场景、更广泛文化语境、更大规模人类样本，从静态诊断走向贴近真实世界的人机互动评估。
+
+## 相关实体
+
+- [EVA-Bench Data 2.0](https://github.com/QianJinGuo/wiki-public/blob/main/entities/eva-bench-data-2-voice-agent-evaluation.md) — 语音 Agent 垂直领域评估
+- [MobileGym](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mobilegym-cas-mobile-agent-benchmark.md) — Mobile Agent 训练与评测基础设施
+- [YAML 驱动的 Agent 评估框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-eval-wallezhang-yaml-driven-agent-evaluation.md)
+- [Agent 记忆评估综述](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-evaluation-landscape-taobao-survey.md)
+- [Frontier Code Cognition Mergeability Benchmark](https://github.com/QianJinGuo/wiki-public/blob/main/entities/frontier-code-cognition-mergeability-benchmark.md)
+- [AI 评估的三种方法](https://github.com/QianJinGuo/wiki-public/blob/main/entities/evals-three-methods-of-ai-evaluation.md)
+- [Agent Skill 写作评估](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing-evaluation.md)
+- [AI 工作面试与模型评估](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-job-interview-model-evaluation-mollick.md)
+- [Inngest 2026 AI 评测报告](ch01/353-inngest-ai-in-production-the-2026-benchmark-report.html)
+- [Agent Harness 生产设计指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture-design-production-guide.md)
+- [Agent 工程原则](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-engineering-principles-architecture-practice.md)
+- [SkillClaw Hyman 阿里 Skill 框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skillclaw-hyman-nightly-evolution-alibaba.md)
+- [SkillX 浙大 Hyman](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skillx-zhejiang-university-hyman.md)
+- [Claude Code 最佳社区 Fork 演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-best-community-fork-evolution-vibecoder.md)
+
+→ [原文存档](https://mp.weixin.qq.com/s/Xr3t8vHZoer1eHSBsYN7ZA)
+
+---
+
+## Ch13.009 循环工程 (Loop Engineering) — 清华 2026 框架
+
+> 📊 Level ⭐⭐⭐⭐ | 16.7KB | `entities/loop-engineering-tsinghua-2026.md`
+
+# 循环工程 (Loop Engineering) — 清华 2026 框架
+
+> **核心立论**：让 Agent 持续工作六小时，瓶颈不是它"会不会写"，而是它的**循环设计**是否合理。提示词本身没消失，只是被吸收进了六件套：技能 (Skill)、规格 (Spec)、工具 (Tool)、执行 (Act)、评估 (Eval)、停止 (Stop)。
+
+清华大学清新研究团队 2026 年 6 月发布的 89 页研究报告，提出**循环工程 (Loop Engineering)** 作为 Agent 工程的下一阶段框架。报告把 Agent 工程的关注点从"单次生成"转到"持续运行"，用 Claude Code /goal、Claude Code Routines、Codex Agent Loop 与 Sub-agents 等产品案例，构造了一套完整的循环治理框架。
+
+## 1. 为什么需要循环工程
+
+Agent 时代研究焦点从单次生成转向持续运行，三个关键事实：
+
+1. **生成能力已经不是瓶颈** —— 当模型能写出"看起来对"的代码，瓶颈上移到循环设计
+2. **提示词工程 (Prompt Engineering) 不会消失，而是被结构化吸收** —— 进 Skill / Spec / Tool / Eval / Stop
+3. **循环决定质量** —— 同样模型 + 不同循环，输出质量天差地别
+
+报告的核心反命题："不是模型不够强，而是循环不够好。"
+
+## 2. Loop Stack：循环的六件套
+
+清华团队提出 Agent 循环的最小完备集合 —— 六件套结构：
+
+| 件 | 作用 | 设计要点 |
+|---|---|---|
+| **Skill (技能)** | 可重用的能力封装 | 不只是提示词，是带版本、可验证的能力单元 |
+| **Spec (规格)** | 任务的形式化描述 | 把"完成"翻译成可检验条件，避免"写的人给自己打分" |
+| **Tool (工具)** | 与外部世界的接口 | 工具是循环的"手脚"，决定可达空间 |
+| **Act (执行)** | 把规格翻译为动作 | 动作要可观测、可回滚 |
+| **Eval (评估)** | 独立判定"是否完成" | 由独立小模型而非主模型自评 |
+| **Stop (停止)** | 显式定义循环何时停止 | 没有 Stop 条件 = 循环永远跑不完 |
+
+> 六件套缺一件循环就会"漏"。这是 Loop Engineering 的最小完备集合。
+
+### 2.1 关键反模式：主模型自评
+
+报告反复强调——**"写的人不该给自己打分"**：主模型既是参赛者又是裁判，会导致自我合理化。
+
+正确做法是用**独立小模型**做 Eval 判定。Claude Code /goal 显式分离这两个角色。
+
+## 3. 产品能力底座：Claude Code 两个核心能力
+
+报告用 Claude Code 的两个具体能力作为"产品能力底座"案例：
+
+### 3.1 /goal：完成条件驱动而非时间周期
+
+- 用**可验证条件**定义目标（不是 turn 数、不是时间）
+- 每个 turn 后由**独立小模型**判断条件是否满足
+- 红色 "NO" 门 / 绿色 "✓" 门 —— 通行判断二值化
+- 体现"写的人不该给自己打分"
+- **完成条件驱动，而非时间周期**
+
+### 3.2 Routines：云端例行任务
+
+- 在 **Anthropic 管理的云端基础设施**上运行（不是用户本地会话）
+- 三种触发方式：**计划 (Schedule)、API、GitHub 事件**
+- 任务看板：运行中 / 已完成 / 错误 / 待处理
+- **运营化后台任务** = 把个人会话循环推进到可运营的后台
+- 关键洞见：循环需要"长在家"才能持续 → 必须脱离本地会话
+
+> Routines 与 Codex Automations 同构：云端常驻循环是 Agent 持续运行的工程前提。
+
+## 4. Codex Agent Loop 与 Sub-agents 职责分离
+
+报告把 Codex 的 agent loop 拆为三段，每段由不同 sub-agent 负责：
+
+| Sub-agent | 职责 | 输入 | 输出 |
+|---|---|---|---|
+| **Explorer (探索者)** | 调研代码、收集信息、建索引 | 任务规格 | 代码地图 |
+| **Implementer (实现者)** | 写代码、跑测试 | Explorer 索引 + 规格 | 变更 diff |
+| **Evaluator (评估者)** | 独立审查变更 | Implementer diff | 审查意见 |
+
+子代理之间靠**契约 (Contract)** 而非共享上下文通信 —— 这是 Loop 内部的关键解耦设计。
+
+> **Loop-Agent-Engineer 三角关系**：Loop 是骨架，Agent 是执行者，Engineer 是 Loop 的设计者。三者职责不同，不可混为一谈。
+
+## 5. Loop Ledger（循环账本）
+
+清华团队的可观测性创新：
+
+- 把每次循环的关键决策、输入、输出、时长、token 消耗记成**可审计账本**
+- 账本**只追加 (append-only)**，事后可回放任意一次循环的完整轨迹
+- 类比传统财务 Ledger：循环也需"做账"
+- **审计 = 循环可信的前提**
+
+## 6. Worktree Fleet（工作树舰队）
+
+处理并行循环的"合并地狱"问题：
+
+- 每个子代理跑在**独立 worktree** 上
+- 关键控制点 = **合并前统一审查 / 测试 / 清理**
+- 避免多个 worktree 互相覆盖、污染主分支
+- 解决并行 Agent 同时改同一文件的冲突
+
+> Worktree Fleet 的设计核心：**隔离 + 合并前审查**。
+
+## 7. Entropy Janitor（熵清扫夫）
+
+清华团队最具创新性的概念 —— **降熵 Loop**：
+
+- Agent 写完代码后，代码库"熵"（无序度）持续上升
+- Janitor Loop 的职责：把代码从"垃圾堆"扫回"简洁模块"
+- **清理三类垃圾**：
+  1. **重复 (Duplication)**：同一逻辑多处实现
+  2. **过度抽象 (Over-abstraction)**：为单点用法建整套接口
+  3. **无效依赖 (Dead dependencies)**：调用方已不存在的 import / API
+- 价值：让"持续运行的 Agent"不留下"持续腐烂的代码库"
+
+> Entropy Janitor 是 Loop Engineering 与传统 DevOps 的最大差异点：传统 CI 只验证"新代码对不对"，Janitor 还要**主动清理历史遗留**。
+
+## 8. Triage 的三种输出
+
+输入信号 (Triage) 经分类后流向三种输出：
+
+| 输出 | 适用场景 | 后续动作 |
+|---|---|---|
+| **Archive (归档)** | 无价值发现 | 自动归档，不进入主分支 |
+| **PR (修复)** | 低风险修复 | 开 PR 等待 review |
+| **Human (交接)** | 高风险问题 | 交给责任人处理 |
+
+> Triage 是 Loop 的"路由器"：决定每条信号去往哪。三种输出对应三种风险等级。
+
+## 9. 启动 Loop 前的 10 个问题
+
+报告末尾的"启动前检查清单"：
+
+1. 这次循环的"完成"长什么样？可被独立验证吗？
+2. 谁是循环的"裁判"？会不会"写的人给自己打分"？
+3. 循环的 Stop 条件是什么？没有 Stop 等于死循环
+4. 循环需要哪些 Skill / Tool / Spec？
+5. 错误如何被发现？Eval 的反馈链路多长？
+6. 循环跑在本地还是云端？(影响是否能在用户离开后继续)
+7. 多 Loop 并行时如何避免合并冲突？(Worktree Fleet)
+8. 循环的账本 (Ledger) 如何可审计？
+9. 熵清扫夫 (Janitor) 什么时候触发？谁触发？
+10. 循环失稳时的降级路径是什么？
+
+## 10. 核心结论与本 wiki 视角
+
+> **不是模型不够强，而是循环不够好。**
+
+报告把 Agent 工程化的核心矛盾概括为：
+
+- 能力 (Capability) 已经够强
+- 治理 (Governance) 是真正的瓶颈
+- Loop 是治理的载体：把不可信的"单次生成"转化为可信的"持续运行"
+
+### 与本 wiki 已有实体的关系
+
+| 本报告概念 | 本 wiki 已有实体 | 视角关系 |
+|---|---|---|
+| Loop Engineering | [Tsinghua Harness Engineering Report](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tsinghua-harness-engineering-report.md) (清华前一份) | **演进**：Harness → Loop，前者讲"系统层"，后者讲"循环层" |
+| Loop Stack 六件套 | [Agent Harness 12 Components 7 Decisions](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-12-components-7-decisions.md) | **视角互补**：六件套偏"循环骨架"，12 件套偏"工程组件" |
+| Loop Ledger | [Agent Harness Observability Production](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-observability-production.md) | **深化**：从可观测性到可审计账本 |
+| Worktree Fleet | [Agent Engineering Principles Architecture Practice](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-engineering-principles-architecture-practice.md) | **深化**：从"隔离原则"到"舰队编排" |
+| Entropy Janitor | [Hermes Agent Closed Learning Loop](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-closed-learning-loop.md) | **扩展**：闭环学习的"清理步骤"形式化 |
+| Triage 三种输出 | [Agent Harness Context Management Working Set](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-context-management-working-set.md) | **深化**：从"上下文管理"到"信号路由" |
+| Claude Code /goal | (官方文档：code.claude.com/docs/en/goal) | **产品映射** |
+| Claude Code Routines | (官方文档：code.claude.com/docs/en/routines) | **产品映射** |
+
+### 本 wiki 之前没覆盖的独特概念
+
+1. **Entropy Janitor (降熵循环)** —— 本 wiki 之前没有"主动清理历史代码"循环的专门概念
+2. **Triage 三种输出 (Archive / PR / Human)** —— 本 wiki 之前没有"信号按风险分级路由"的框架
+3. **启动 Loop 前的 10 问** —— 完整的循环启动检查清单
+4. **Loop Ledger (append-only 审计账本)** —— 比通用可观测性更强的审计原语
+
+## 深度分析
+
+**一、提示词工程没有消失，而是被结构化吸收进了 Loop Stack**。Skill/Spec/Tool/Act/Eval/Stop 这六件套，本质上是把原来散落在 prompt 里的指令分门别类地固化下来。Skill 封装能力、Spec 定义完成条件、Tool 暴露接口、Act 执行动作、Eval 独立判定、Stop 控制退出——prompt engineering 的专业知识不是没了，而是有了更结构化的归属。这是 Agent 工程走向标准化的必经之路。
+
+**二、"不是模型不够强，而是循环不够好"是 Agent 工程的下一次转向**。当模型生成能力已经不再是瓶颈，治理（governance）就成了真正的制约因素。循环决定质量——同样模型 + 不同循环，输出质量天差地别。这意味着 Agent 工程的下一步重点，是从"怎么让模型生成更好的东西"转移到"怎么设计更好的循环来组织模型的生成过程"。
+
+**三、Loop Ledger 揭示了可观测性在 Agent 时代的新内涵**。传统软件的可观测性主要服务于事后调试，Loop Ledger 则在此基础上增加了"审计"这一层——append-only 的循环账本，让每一次决策轨迹都可回放。这意味着 Agent 的运行记录不仅是调试工具，更是合规和信任的基础设施。循环的可审计性，是 Agent 从"个人工具"走向"生产系统"的必要条件。
+
+**四、Entropy Janitor 体现了 DevOps 思维向 Agent 系统的延伸**。传统 CI 只验证"新代码对不对"，Janitor 还要主动清理历史遗留的熵增——重复实现、过度抽象、无效依赖。这不是运维问题，而是质量维护问题：长期运行的 Agent 如果没有自清洁机制，代码库会持续腐烂，最终连 human developers 都不愿意接手。Janitor 把这个问题从"人的责任"变成了"系统的责任"。
+
+**五、Eval 与主模型分离是 Agent 循环中最反直觉也最重要的设计原则**。"写的人不该给自己打分"——这个原则在软件工程里看似常识，在 Agent 系统里却容易被忽视。主模型自评会导致自我合理化，用独立小模型做 Eval 判定才能真正保证反馈的客观性。Claude Code /goal 的二值化门控（红色 NO / 绿色 ✓）是这个原则最直接的产品化体现。
+
+## 实践启示
+
+1. **用 Loop Stack 六件套（Skill-Spec-Tool-Act-Eval-Stop）审视每一个 Agent 循环**：先问六个问题——Skill 够吗？Spec 清楚吗？Tool 全吗？Act 可观测吗？Eval 独立吗？Stop 条件明确吗？六件套不完整，循环就会"漏"。
+
+2. **永远不要让主模型自评输出**：无论多小的任务，只要涉及"判定是否完成"，都要引入独立小模型或独立 Agent 做 Eval。主模型自评是 Agent 系统里最常见的可靠性陷阱。
+
+3. **每个循环必须有显式、可验证的 Stop 条件**：没有 Stop 条件 = 循环永远跑不完。在设计 Loop 的第一天就要定义 Stop，而不是等到系统上线后再加。
+
+4. **把 Loop Ledger 作为 Agent 系统的必备组件**：每一次循环的决策、输入、输出、时长、token 消耗都要记成 append-only 审计日志。这不仅是事后调试的基础，也是 Agent 系统通过合规审查的前提条件。
+
+5. **为长期运行的 Agent 配套 Entropy Janitor 机制**：代码腐化是长期 Agent 运行的必然结果，不能靠 human review 解决。需要在系统设计时就把 Janitor Loop（清理重复/过度抽象/无效依赖）作为标准件纳入循环体系。
+
+6. **Loop 部署选云端不选本地**：如果 Loop 需要在用户离开后继续运行，就必须部署在云端（参考 Claude Code Routines / Codex Automations）。本地会话的循环无法"长在家"，这是 Agent 从个人工具走向 production 系统的工程前提。
+
+## 11. 待补充与限制
+
+- **PDF 限制**：原报告 89 页扫描版，仅 14 页可读。Loop Stack 详细设计参数、具体 Codex sub-agent 的 prompt 模板、Worktree Fleet 的合并算法细节、Entropy Janitor 的触发频率策略等章节未深入到具体工程实现级
+- **可执行性**：六件套是**概念框架**，未给出可下载的模板或代码库
+- **度量**：报告未提供"Loop 好 vs 坏"的量化指标 —— 是体验式而非实证式
+
+## 相关实体
+- [清华 ai 自进化组织研究报告：ai 业务资产化与公司形态重构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tsinghua-ai-self-evolving-organization-corp-paradigm.md)
+→ 原文存档
+
+---
+
+## Ch13.010 用 Amazon SageMaker AI 与 Qualcomm AI Hub 打通从云端训练到端侧 NPU 的交付闭环
+
+> 📊 Level ⭐⭐⭐⭐ | 13.9KB | `entities/amazon-sagemaker-qualcomm-ai-hub-edge-npu-deployment.md`
+
+# 用 Amazon SageMaker AI 与 Qualcomm AI Hub 打通从云端训练到端侧 NPU 的交付闭环
+
+> **Background**: AWS China 与 Qualcomm 合作，将云端 SageMaker 训练模型通过 Qualcomm AI Hub 编译为端侧 NPU 可执行格式，缩短边缘 AI 部署周期。
+
+## 整体链路
+
+```
+SageMaker 训练 (PyTorch/TensorFlow)
+    │
+    ↓ 导出 ONNX
+    │
+    ↓ SageMaker Neo 优化
+    │
+    ↓ Qualcomm AI Hub 编译
+    │   (针对 Hexagon NPU / Adreno GPU / Kryo CPU 目标)
+    ↓
+    ↓ 量化 (INT8/INT4)
+    ↓
+    ↓ SDK 打包
+    ↓
+    ▼
+    端侧设备 (手机/IoT/车载)
+```
+
+## 关键环节
+
+### 1. 模型训练
+
+- SageMaker Training Job，PyTorch / TensorFlow
+- 多机多卡支持（EFA + Horovod）
+- 实验管理：SageMaker Experiments 跟踪 hyperparameter
+
+### 2. 模型编译
+
+- **SageMaker Neo**：做框架无关的图优化（算子融合、内存规划）
+- **Qualcomm AI Hub**：针对 Hexagon NPU 架构做后端编译
+  - 算子映射：哪些算子跑在 NPU、哪些 fallback 到 CPU
+  - 内存布局优化
+  - 量化感知训练 (QAT) 配合
+
+### 3. 部署
+
+- 生成设备专属 runtime library（QNN SDK）
+- 通过 OTA 或应用商店分发
+- 端侧推理监控：latency, throughput, model accuracy drift
+
+## 支持的硬件
+
+| 设备 | NPU | 典型 use case |
+|------|-----|--------------|
+| Snapdragon 8 Gen 3+ | Hexagon V73 | 手机 LLM/vision |
+| Snapdragon XR2 Gen 2 | Hexagon V71 | AR/VR 头显 |
+| QCS6490 | Hexagon V68 | IoT 网关 |
+| SA8295P | Hexagon V69 | 车载舱内 |
+
+## 量化策略
+
+| 精度 | 节省存储 | 性能提升 | 精度损失 |
+|------|---------|---------|---------|
+| FP32 → FP16 | 50% | 1.5-2x | 极小 |
+| FP32 → INT8 | 75% | 2-4x | 可控（< 1% top-1） |
+| FP32 → INT4 | 87% | 3-6x | 中等（需 QAT） |
+
+## 与传统部署方式的差异
+
+| 维度 | 传统 (PC/GPU) | 端侧 NPU |
+|------|---------------|----------|
+| 算力 | 数百 TOPS (FP16) | 10-50 TOPS (INT8) |
+| 内存 | 16-80GB | 4-16GB |
+| 功耗 | 200-700W | 0.5-5W |
+| 实时性 | batch processing | 实时响应 (<30ms) |
+| 网络 | always online | 可离线 |
+
+## 部署挑战
+
+1. **算子兼容性**：不是所有算子都支持 NPU 加速，部分 fallback 到 CPU
+2. **精度敏感度**：INT4 量化需谨慎，医疗/金融场景可能不适合
+3. **设备碎片化**：不同设备型号需不同编译产物
+4. **端云协同**：端侧处理不了时回退到云端推理
+
+## 适用场景
+
+- 移动端 LLM 推理（< 3B 参数）
+- 实时图像识别（object detection, segmentation）
+- 车载舱内感知
+- IoT 网关边缘分析
+- 离线优先的智能应用
+
+## 待关注
+
+- Snapdragon 8 Gen 4 发布后的 NPU 升级
+- QNN SDK 与其他厂商（MediaTek, Apple ANE）的兼容性
+- 端云协同推理框架的标准化
+
+## 相关实体
+- [Build Real Time Voice Applications With Amazon Sagemaker Ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-real-time-voice-applications-with-amazon-sagemaker-ai.md)
+- [End To End Encrypted Ml Inference Sagemaker Fhe](https://github.com/QianJinGuo/wiki-public/blob/main/entities/end-to-end-encrypted-ml-inference-sagemaker-fhe.md)
+- [Gpu Virtualization Using Mig Technology On Amazon Sagemaker Hyperpod](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gpu-virtualization-using-mig-technology-on-amazon-sagemaker-hyperpod.md)
+- [Announcing Openai Compatible Api Support For Amazon Sagemaker](https://github.com/QianJinGuo/wiki-public/blob/main/entities/announcing-openai-compatible-api-support-for-amazon-sagemaker.md)
+- [Aws Sagemaker Sft Dpo Tool Calling](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-sagemaker-sft-dpo-tool-calling.md)
+
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/sagemaker-qualcomm-ai-hub-edge-npu)
+
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
+## 深度分析
+
+### 云端训练与端侧编译的架构契合点
+
+SageMaker AI 与 Qualcomm AI Hub 的组合本质上是把模型交付链条的两端做了标准化抽象。云端训练侧屏蔽了分布式 GPU 集群的运维复杂性，按使用量计费让小团队也能获得千卡级别的训练能力；端侧编译侧则通过云端托管的真实设备车队，将过去需要采购物理设备才能完成的编译验证，变成了几次 API 调用。整个链路的数据流转始终在 AWS 生态内，这意味着从训练产物到编译输入之间的 IO 延迟和跨云传输风险都被消解了。
+
+对于算法工程师而言，这种架构的真正价值在于将端侧验证嵌入了模型迭代的内循环。以人像分割场景为例，从公开数据集微调到 Galaxy S24 真机验证的总耗时约 20 分钟，其中 SageMaker AI 训练耗时 260 秒、AI Hub 编译与验证约 10 分钟。这意味着在一次代码 review 的周期内，模型已经完成了从训练到可部署产物的完整验证，而不是像传统流程那样需要等待数周的硬件采购和真机调试排期。
+
+### 量化指标评估的模型类型依赖性
+
+文章一个重要的工程启示在于：量化质量的评估指标必须与模型输出类型强匹配。AI Hub 自动计算的 PSNR 适用于输出有界（[0,1] 或 [0,255]）的任务如图像超分、去噪、HDR，但对于输出 logit 动态范围大的分割模型，PSNR 会被放大给出误导性的 -21.74 dB。正确的做法是直接计算 sigmoid 后的掩膜 IoU 或 Dice 分数。
+
+这个观察对其他端侧部署场景同样适用。目标检测模型的 mAP、LLM 的 perplexity 或 token 准确率各有其特有的误差敏感度，不能简单迁移分类模型的评估习惯。当团队在 QAT 和 PTQ 之间选择时，PTQ 的便捷性和 QAT 的精度可控性之间的权衡也需要基于具体任务评估而非通用经验法则。
+
+### INT8 量化对不同网络结构的差异化影响
+
+从文章实测数据来看，INT8 量化将 FPN + MobileNetV2 的体积从 16.5 MB 压到 4.5 MB（压缩率 73%），同时延迟从 15.31 ms 降至 13.59 ms，这说明该网络结构对 INT8 表达友好。但文章同时指出encoder-heavy 网络更容易从量化中受益，而 decoder-heavy 或输出层复杂的网络可能需要保留 FP16 或采用 QAT 策略。
+
+这意味着量化策略不能一刀切地应用。同一模型的不同层可能需要不同的量化精度——输出层保留 FP16、中间层 INT8——这要求编译工具链支持混合精度配置。Qualcomm AI Hub 的 `--target_runtime tflite --quantize_full_type int8` 选项如果无法满足这一需求，团队可能需要转向 QAT 重新训练或手动分层量化。
+
+### 端云协同的分界点设计
+
+文章提到端云协同是端侧部署的挑战之一，但并未深入探讨分界点设计原则。从架构角度看，端侧 NPU 的功耗预算（0.5-5W）和实时性约束（<30ms）与云端 GPU 的高算力（数百 TOPS）和 batch processing 模式形成鲜明对比。端云协同的核心问题不是"能不能"协同，而是"何时"协同——即在什么精度损失或延迟预算下，将推理回退到云端是合理的。
+
+对于手机端 LLM 场景，3B 参数模型在端侧运行已经接近功耗上限，更大的模型（如 7B 以上）即使支持 NPU 加速，也很难在手机散热预算内维持持续推理。这种场景下，端云混合推理（简单 query 端侧处理、复杂推理云端处理）的分界点设计直接影响用户体验和云端成本。
+
+### CI/CD 嵌入的工程成熟度标志
+
+文章指出 AI Hub 的编译、推理和性能分析 API 可以无缝嵌入 CI/CD 系统，这是端侧 AI 部署工程成熟度的重要标志。传统的端侧部署依赖人工操作的"阶段性验证"，而自动化链路将端侧性能验证从发布前的 manually check 变成了每次 model iteration 的自动 gate。
+
+这一能力的工程意义在于：端侧模型的每次更新都经过相同的真机性能与精度检查，而不是在设备采购不足的情况下"凭经验拍脑袋"。当模型从 FP32 更新到 INT8 或从 MobileNetV2 切换到 MobileNetV3-Small 时，CI/CD 系统可以自动捕获延迟和精度的 delta，并在超过阈值时拒绝合并。这种机制在云端模型部署中早已成熟，端侧部署的自动化是其工程化补全的最后一块拼图。
+
+## 实践启示
+
+1. **建立端侧性能评估的度量选择规范**：对于分割、超分、去噪等输出无界模型，禁止使用 PSNR 作为量化质量 gate，应直接计算 IoU、Dice 或 F-score。对于分类和检测模型，mAP 和 top-1 准确率仍然是合适的指标。团队应在项目启动阶段明确这一点，避免在评审时因度量误用返工。
+
+2. **利用云端设备车队替代物理采购**：Qualcomm AI Hub 在 AWS 上托管的真实设备车队是端侧 AI 项目的战略资源。团队应系统性梳理目标设备清单（手机、车载、IoT 各档位至少一款），通过 AI Hub API 建立多设备性能基准库，而不是等上线前才发现特定机型延迟超标。这能将硬件采购成本转化为 API 调用成本，并且支持按需弹性扩展到更多设备型号。
+
+3. **公开数据集训练后必须做产品数据的二次微调**：文章建议保留公开数据训练的 backbone 权重作为热启动，在产品数据上做二次微调。这是因为手机厂商的相机色彩管线、镜头畸变和低光降噪算法与公开数据集差异显著，直接迁移的模型往往在边缘质量和色彩一致性上出现可察觉的退化。
+
+4. **设计端云协同的显式分界点协议**：当模型规模接近端侧 NPU 上限时（如 3B+ LLM），团队应预先定义端云协同的分界点协议——什么条件下端侧处理、什么条件下回退云端、切换的延迟预算是多少。这个协议应嵌入应用架构设计文档，而不是在上线前临时决策。
+
+5. **将端侧验证嵌入了 ML pipeline 自动 gate**：在模型训练的 CI/CD pipeline 中加入 AI Hub 的 compile + profile + inference API 调用，作为每次 model iteration 的强制质量 gate。具体实现：在 SageMaker training job 完成后自动触发 AI Hub 编译任务，取回延迟和精度指标，与上一次发布的 baseline 比对；delta 超过阈值时自动拒绝并告警。这将端侧性能从"发布前人工检查"变为"每次迭代自动验证"。
+
+---
+
+## Ch13.011 SaaS-Bench：浙大阿里 Steering Computer-Use Agent 真实系统评测（3.8% 通过率暴露范式天花板）
+
+> 📊 Level ⭐⭐⭐⭐ | 10.3KB | `entities/saas-bench-gui-agent-eval-unipat.md`
+
+## 摘要
+
+浙大阿里 Steering 团队 + UniPat AI 推出 SaaS-Bench：**23 个真实开源 SaaS 系统（Docker 部署，保留完整前后端+数据库+业务约束）+ 106 个跨应用长程任务**。最强模型 Claude Opus 4.7 检查点分数 43.9%，**端到端完全通过率仅 3.8%**（4/106 任务）。Kimi K2.5、Gemini 3.1 Pro 0% 通过。
+
+不是靠模型变大或加工程模块能解决的，**指向当前 CUA 范式的天花板**：长程任务中模型缺少对全局状态的持续感知，缺少操作后闭环验证机制，缺少从错误中恢复的能力。
+
+## Benchmark 核心设计
+
+- **23 个真系统、6 大领域**：研发（OpenProject/Code-Server/Metabase）、财务（Twenty CRM/BigCapital/HRMS）、医疗（OpenEMR/OpnForm）、协作（SiYuan/Mattermost/ownCloud）、农业（FarmOS/Grocy）、媒体（PhotoPrism/MediaCMS/BookLore）
+- **106 个任务分布**：93.4% 跨 ≥2 个应用，三应用任务占 53 个；97.3% 任务 > 100 步，最长 300+ 步
+- **两个评估指标**：Resolved Score（严苛）+ Checkpoint Score（宽松）。**两者的巨大落差是核心信号**
+- **任务构建**：LLM 生成 + 专家把关，四阶段质量保证
+
+## 榜单：全军覆没
+
+最强模型 Claude Opus 4.7 检查点分数 43.9%，**端到端完全通过率仅 3.8%**（4/106 任务）。Kimi K2.5、Gemini 3.1 Pro 0% 通过。
+
+含义：Agent 可以推进部分中间环节，但几乎没有能力把完整长程工作流走完。
+
+## Pass@k：多跑几次能救吗？
+
+- pass@3 相比 pass@1 整体提升约 8pp
+- Sonnet 4.6 多模态任务从 33.9% 跳到 52.1%（+18.2pp）
+- **不是环境随机性**（初始状态完全相同），而是**路径依赖**：决策点微小差异导致轨迹完全分叉
+- 多跑有帮助，但远不是解决方案
+
+## 三种结构维度全部单调递减
+
+- 跨应用数 1→4：53% → 20%
+- 操作步长增加：得分显著下降
+- 检查点 ≤6 vs ≥18：65% → 27%
+
+→ 真实工作流最常见形态（跨应用 + 长轨迹 + 细粒度验证）得分最低。
+
+## 四种结构性失败
+
+**失败 1：任务越长，越做不对**
+即使每个检查点 95% 通过率，12 个检查点全通过概率仅 54%。SaaS-Bench 平均检查点远超 12。所有模型通过率随任务推进呈下降趋势 —— 不可逆的下降曲线。
+
+**失败 2：一步错，步步错**
+典型案例：任务要求创建公司客户「Arcturus Digital」。Agent 同时填联系人姓名和公司名，触发个人客户逻辑，实际创建为 Elena Vasquez。后续 10 张发票/付款/对账全部挂在错误实体下。**3% 错误节点 → 30% 分数损失**。
+
+**失败 3：做完不检查，自以为对了**
+Claude Opus 4.6 在 Step 124 识别日期错误（2026-03-19 vs 03-20），执行修改但没回页面复查。Step 210 提交时汇报「已修复」，页面实际日期仍是 03-19。**意图层成功 ≠ 状态层成功**。当前 CUA 框架缺少严谨的反思闭环。
+
+**失败 4：同一张考卷，成绩忽高忽低**
+Claude Sonnet 4.6 同一任务三次独立运行：分数 0.00 → 0.68。**路径依赖让长程执行变成赌博**。
+
+## 范式天花板：不是工程问题
+
+四种失败模式指向同一底层事实：
+- 缺少对持久状态的有效推理能力
+- 缺少操作后的闭环验证机制
+- 缺少从错误中恢复的能力
+
+这不是技术债，而是**当前 Agent 范式在长程任务上的天花板** —— 模型缺少对全局状态的持续感知，无法像人一样"心里有数"。
+
+## 延伸洞察：SaaS 形态的保质期
+
+今天的 SaaS 是给人设计的（菜单/按钮/表单）。当 Agent 成为主要用户，这些界面就变成累赘。
+
+**未来不是让 Agent 学会操作人类的软件，而是软件本身要为 Agent 重新设计**。SaaS-Bench 揭示的不只是 Agent 短板，也是当前软件形态的保质期 —— 面向人类的 SaaS 可能都要为 Agent 重做一遍。
+
+## 工程对照
+
+| 失败模式 | 现有缓解 | SaaS-Bench 暴露的差距 |
+|----------|----------|----------------------|
+| 任务长做不对 | 长上下文/CoT 压缩 | 通过率随步长不可逆下降 |
+| 一步错步步错 | 异常回滚/事务 | 错误节点权重损失是几何级数 |
+| 做完不检查 | Self-critique 提示 | 意图层 ≠ 状态层，缺少验证闭环 |
+| 路径依赖 | 多次采样/投票 | pass@3 提升 8pp 但仍不可控 |
+
+## 深度分析
+
+**1. 检查点分数 vs 端到端通过率：全局状态的感知缺失**
+
+43.9% 检查点分数 vs 3.8% 端到端通过率的巨大落差，是 SaaS-Bench 最核心的信号。 即使每个检查点 95% 通过率，12 个检查点的全部通过概率也只有 54%，而 SaaS-Bench 平均检查点数远超 12——呈指数下降的复合失败率让长程任务几乎不可能完整通过。当前 CUA 框架在设计时没有内置"对全局状态持续感知"的机制，这是结构性缺陷而非模型能力问题。
+
+**2. 路径依赖：Agent 执行的"分叉点"陷阱**
+
+Claude Sonnet 4.6 同一任务三次独立运行，分数范围 0.00 → 0.68，这说明即使初始状态完全相同，决策点的微小差异就足以让轨迹完全分叉。 这不是环境随机性，而是路径依赖。应用到工程实践：在构建 agentic pipeline 时，应当将"关键决策节点的一致性"作为优先目标，而不是假设模型在相同输入下有行为一致性。
+
+**3. 意图层成功 ≠ 状态层成功：反思闭环的架构性缺失**
+
+Claude Opus 4.6 在 Step 124 识别并修复了日期错误，但到 Step 210 提交时，页面实际日期仍是错误的。 Agent 在意图层认为修复成功，但持久化状态层仍然错误。当前 CUA 框架缺少"严谨的反思闭环"——Agent 是不会检查自己作业的学生。这一缺陷指向当前范式在架构层面缺少状态验证层。
+
+**4. SaaS 为 Agent 重设计：界面形态的保质期**
+
+今天的 SaaS 界面（菜单、按钮、表单）是给人设计的，不是给 Agent 设计的。 当 Agent 成为主要用户，这些界面就变成了累赘。这揭示的不只是 Agent 的短板，也是当前软件形态的保质期——面向人类的 SaaS 可能都要为 Agent 重做一遍。这意味着未来软件形态演进的方向是"面向 API/Agent 的界面设计"，而非继续优化人类用户体验。
+
+**5. 多尝试能部分缓解但不能解决 pass@k 的根本问题**
+
+pass@3 相比 pass@1 整体提升约 8pp，Sonnet 4.6 多模态任务提升 18.2pp。 这说明增加尝试次数有帮助，但提升幅度有限且不稳定。路径依赖意味着单次失败可能引发后续所有步骤的连锁错误，因此多次采样的工程收益存在上界。
+
+## 实践启示
+
+- **为 Agent 设计状态验证层**：在 agentic pipeline 的每个关键步骤后，强制插入"状态回读"验证，而不是依赖 Agent 的自我报告。
+- **避免长程单线路径设计**：将长程任务拆分为可独立验证的短阶段，每阶段设置明确的成功标准，防止错误级联。
+- **界面形态演进纳入路线图**：当规划面向 Agent 的 SaaS 集成时，需要同时考虑软件界面是否适合 Agent 操作——这可能是未来 SaaS 竞争力的核心维度。
+- **评估模型的长程稳定性**：在选型评测中，除了 pass@1 分数，还应纳入 pass@3 方差和最长可通过轨迹长度，作为稳定性的代理指标。
+- **关注 path-dependence 的决策点**：通过在关键分支点引入确定性规则或人工确认机制，抑制微小差异导致的全链路分叉。
+
+## 链接
+
+- Blog：https://unipat.ai/blog/SaaS-Bench
+- GitHub：https://github.com/UniPat-AI/SaaS-Bench
+- 论文：https://arxiv.org/abs/2605.15777
+
+→ [原文存档](https://mp.weixin.qq.com/s/KzPHgTF7j3XzWDZSh_jJPw)
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+
+---
+
+## Ch13.012 Hermes 可观测性方案
+
+> 📊 Level ⭐⭐⭐⭐ | 8.2KB | `entities/hermes-observability.md`
+
+## Overview
+阿里云为 Hermes（Nous Research 开源 Agent 框架）开发的一套基于 OpenTelemetry 的可观测性插件方案。解决 Agent 运行时四类核心问题：**过程不可见、成本不可归因、性能不可拆解、结果不可复盘**。通过在 Python runtime 层埋设 instrumentation，将 Hermes 的 ReAct 执行链路还原为结构化 Trace，同时提供 Metrics 信号和高危行为审计能力。
+**核心价值：** 将 Hermes 从"黑盒回复器"变成"能被展开、追踪、分析的运行系统"，填补 Agent 运行时可观测空白。
+
+## 核心问题与解决
+| 问题 | 表现 | 解决方案 |
+|------|------|---------|
+| 过程不可见 | 只能看到输入/输出/usage 汇总，ReAct 多轮推理链路空白 | ReAct 结构化 Trace，每轮推理可见 |
+| 成本不可归因 | Token 账单只知道总账，不知道花在哪一步 | 按 chat span 拆分 input/output/total tokens |
+| 性能不可拆解 | 用户说"变慢了"但无法定位是模型慢还是工具慢 | TTFT + 工具执行耗时分离 |
+| 结果不可复盘 | "看起来成功了但结果不对"无法溯源 | 完整调用链还原，定位偏移节点 |
+
+## 技术架构
+### 核心技术：OpenTelemetry Runtime Instrumentation
+在 Hermes 所在的 Python 环境中安装 runtime instrumentation，围绕 Hermes 的关键执行边界建立 span，再通过 OTLP 标准协议上报。
+**五大优势：**
+1. **遵循 GenAI 标准** — 对齐 OpenTelemetry GenAI 语义约定 + LoongSuite 扩展
+2. **Trace + Metrics 双信号** — 不仅有调用链，还有趋势指标
+3. **Streaming TTFT** — 单独记录首字延迟，区分首字慢 vs 生成慢
+4. **不绑定云服务** — OTLP 标准协议，可迁移
+5. **安全审计** — 异常检测识别越权访问/数据泄露/提示词注入
+
+### Trace 数据结构
+| Span 类型 | 记录内容 |
+|----------|---------|
+| `invoke_agent Hermes`（根节点） | 累计 Token、最终输出消息、总耗时 |
+| `chat`（模型调用） | `gen_ai.request.model`, `gen_ai.usage.input_tokens`, `gen_ai.usage.output_tokens`, `gen_ai.response.time_to_first_token` |
+| `execute_tool`（工具调用） | `gen_ai.tool.name`, `gen_ai.tool.call.arguments`, `gen_ai.tool.call.result` |
+
+### 与其他框架对比
+| 框架 | 可观测方案 | 特点 |
+|------|-----------|------|
+| Hermes（阿里云版） | OTel runtime instrumentation + ARMS | ReAct 链路还原、TTFT、Security Audit |
+| OpenClaw | 无官方可观测方案 | 依赖外部日志 |
+| Claude Code | Anthropic 官方 metrics | usage 汇总，无细粒度 Trace |
+| Letta | 内置 memory search | 偏向记忆检索，非运行时 Trace |
+
+## 接入部署
+**前提：** 运行中的 Hermes 实例 + 阿里云 ARMS 或其他 OTLP 兼容后端
+**核心命令：**
+```bash
+
+# 获取安装命令
+# 登录 CMS 2.0 -> AI 应用可观测 -> Hermes -> 获取命令
+# 安装插件
+curl -fsSL https://arms-apm-cn-hangzhou-pre.oss-cn-hangzhou.aliyuncs.com/hermes-agent-cms-plugin/hermes-cms.sh | bash -s -- install \
+  --x-arms-license-key "auto" \
+  --x-arms-project "你的Project" \
+  --x-cms-workspace "你的Workspace" \
+  --serviceName "hermes" \
+  --endpoint "https://你的ARMS-OTLP地址/apm/trace/opentelemetry"
+
+# 开启可观测
+hermes-cms enable
+
+# 启动 Hermes
+hermes  # 前台
+hermes gateway start  # 后台
+```
+**验证：** 终端出现 `loongsuite-site-bootstrap: started successfully (OpenTelemetry auto-instrumentation initialized).`
+
+## 下一步演进方向
+| 方向 | 具体内容 |
+|------|---------|
+| 数据面 | 日志审计 + 运行诊断（超出当前 Trace/Metrics 范围） |
+| 链路面 | memory lifecycle、delegation orchestration、runtime recovery 等 Hermes 特有阶段 |
+| 治理面 | 内容采集控制、细粒度数据治理、脱敏策略 |
+
+## 深度分析
+### 为什么 Agent 运行时可观测性长期缺失
+传统微服务的可观测性（Trace/Metrics/Logs）已有成熟体系，但 Agent Runtime 是全新的执行范式——它不是单次 HTTP 请求，而是一个自主循环的推理过程。Hermes 的 ReAct 执行包含：模型调用 → 推理 → 工具决策 → 执行 → 结果回注 → 下一轮推理。这种多轮循环使得传统以"请求"为粒度的观测模型无法直接套用。
+阿里云方案的核心创新在于：在 Python Runtime 层埋设 instrumentation，围绕 `invoke_agent`、`chat`、`execute_tool` 三个核心边界建立 span，用 OTLP 标准协议上报。这意味着不需要修改 Hermes 源码，只要在同一个 Python 进程中加载 instrumentation，就能自动捕获完整的执行链路。
+
+### OpenTelemetry GenAI 语义约定的落地实践
+方案遵循 OpenTelemetry GenAI 语义约定（`gen_ai.request.model`、`gen_ai.usage.input_tokens` 等），这意味着数据格式是行业标准的。配合 LoongSuite 扩展覆盖 `execute_tool` 等 Agent 特有关键节点。这种"标准 + 扩展"的策略，使得方案既具备互操作性，又不失灵活性。
+
+### 安全审计的必要性
+方案专门强调"高危行为审计"——识别越权访问、异常数据导出、恶意提示词注入。这反映了一个重要趋势：当 Agent 获得工具调用能力后，它的行为边界就不再是"只读"的了。一次提示词注入可能导致 Agent 调用了不该调用的工具、访问了不该访问的数据。可观测性在这里不只是性能优化工具，更是安全防线。
+
+## 实践启示
+1. **接入成本极低，优先考虑观测后再调优** — 一行安装命令 + `hermes-cms enable` 即可开启完整观测，生产部署前应优先接入，获取真实执行链路数据后再针对性优化，而不是猜测性能瓶颈。
+2. **Token 归因是成本控制的第一步** — 方案按 `chat` span 拆分 input/output/total tokens，这意味着可以精确定位"哪一轮 ReAct 推理"吃掉了最多的 Token，为上下文压缩和工具优化提供数据依据。
+3. **TTFT 是区分模型慢还是生成慢的关键指标** — 很多场景下"变慢"实际上只是首字延迟高（模型调度慢），而非生成速度慢。分开记录后才能针对性选择模型或优化调度。
+4. **ReAct Trace 是复盘"看似成功实则错误"的唯一手段** — 传统方案只能看到最终输出，有 Trace 后可以展开任意一轮的 `tool.call.arguments` 和 `result`，定位是哪一步推理偏移导致最终答案错误。
+5. **安全审计应作为可观测性的标配而非附加** — 当 Agent 开始调用外部工具（尤其是有写入能力的工具），异常行为检测和全量日志审计是防止生产事故的最后防线。
+
+## Related
+- [Hermes Agent](ch03/095-hermes-agent.html) — Nous Research 开源 Agent 框架，可观测性是其生产落地关键能力
+- [Hermes Agent 深度解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-deep-dive.md) — Self-Evolving/动态 Skill 沉淀/RL 训练闭环等深度解析
+- [OpenClaw 架构解析](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/openclaw-architecture.md) — 无内置可观测方案，对比参考
+- [原始文章存档](https://mp.weixin.qq.com/s/XQqbHr7EjH906vQhX8b6Cw)
+
+---
+
+## Ch13.013 ai-skill-测评指标体系
+
+> 📊 Level ⭐⭐⭐⭐⭐ | 17.2KB | `entities/ai-skill-测评指标体系.md`
 
 [Ai Skill 测评指标体系](https://juejin.cn/post/7619990292557365300)
 
@@ -814,424 +1860,20 @@ Stddev > 0.1 时，按以下顺序排查：
 | Stddev | < 0.05 | 0.08 | 🟡 |
 让决策者一目了然地看到哪些是绿灯放行、哪些需要人工判断。
 ## 相关实体
-- [Ai Skill Metrics System](ch01/324-ai-skill.html)
-- [Ai Skill Evolution Framework](ch07/010-ai-skill-evolution.html)
-- [Ai Skill 测评报告解读](ch01/324-ai-skill.html)
-- [Ai Skill Skill Creator 源码拆解](ch04/240-skill-skill.html)
-- [Harness Engineered Business Agent Evaluation Aliyun Boyu](ch05/008-harness.html)
+- [Ai Skill Metrics System](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-skill-metrics-system.md)
+- [Ai Skill Evolution Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-skill-evolution-framework.md)
+- [Ai Skill 测评报告解读](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-skill-测评报告解读.md)
+- [Ai Skill Skill Creator 源码拆解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-skill-skill-creator-源码拆解.md)
+- [Harness Engineered Business Agent Evaluation Aliyun Boyu](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineered-business-agent-evaluation-aliyun-boyu.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/evaluation-benchmarks-extended.md)
 
 → [原文存档](https://juejin.cn/post/7619990292557365300)
 
 ---
 
-## Ch13.005 NICE：浙大提出的理论驱动型 LLM 社会智能诊断基准
+## Ch13.014 07—AI Skill 测评体系完整进阶指南：5 大能力缺口与填补路径
 
-> 📊 Level ⭐⭐ | 16.7KB | `entities/nice-zhejiang-university-social-intelligence-benchmark-hyman.md`
-
-# NICE：浙大提出的理论驱动型 LLM 社会智能诊断基准
-
-> 本实体整理自 [原文存档](https://mp.weixin.qq.com/s/Xr3t8vHZoer1eHSBsYN7ZA)，并参考浙大 arXiv 论文 *NICE: A Theory-Grounded Diagnostic Benchmark for Social Intelligence of LLMs*（https://arxiv.org/abs/2605.29685 ）。
-
-## 一句话总结
-
-NICE（**N**ot **I**ust **C**orrectness, **E**valuation of social intelligence）由浙江大学心理与行为科学系与人工智能学院联合团队提出，将社会智能组织为 **4 大类、11 维度、34 个能力内涵**，用 **137 道中国情境排序题**评测 5 个前沿 LLM（GPT-5.5、Claude-Opus-4.7、Gemini-3.1-pro-preview、DeepSeek-V4-pro、Qwen3.6-plus），发现模型总体准确率（75.1%）高于人类参考组（70.4%），但「**沟通**」是集体短板，且模型在多轮沟通、非言语沟通、同步性三个内涵上系统失效。
-
-## NICE 解决的关键问题
-
-社会智能（Social Intelligence）通常指个体理解、融入并适应社会环境的能力，对 LLM 来说直接关系到人机交互的质量与安全。现有评测基准存在三个关键 gap：
-
-- **Gap 1**：缺少整体全面、理论驱动的社会智能评测框架（多数基准聚焦心理理论/情绪理解等单一切片）
-- **Gap 2**：缺少精细到能力内涵的诊断能力（错误只能归到维度总分，无法定位到具体能力内涵）
-- **Gap 3**：缺少贯穿全流程的严谨心理测量学方法
-
-NICE 的定位正是系统补齐这三条 gap。
-
-## 理论框架：4 大类 × 11 维度 × 34 能力内涵
-
-NICE 的理论框架由系统文献综述 + 16 位专家多轮评分修订而成，采用层次分析法（AHP）确定各层级权重。
-
-| 类别 | 维度 | 模型需具备的能力 |
-|------|------|------------------|
-| **Cognition（社会认知）** | 社会感知、社会理解与洞察 | 感知、理解和推断社会信息 |
-| **Interaction（社会交互）** | 沟通、情绪利用、关系管理、自我一致性 | 选择合适的沟通、情绪、关系和行为策略 |
-| **Experience（社会学习）** | 观察模仿、适应性学习 | 从观察、互动结果和反馈中学习 |
-| **Norm（社会规范）** | 社会文化智能、社会责任、道德与伦理智能 | 理解社会文化规则、道德约束和责任要求 |
-
-NICE 是第一个将社会智能**全面理论化**的评测框架，且每一道题与唯一的能力内涵清晰对应，这是它"可诊断"的基础。
-
-## 题目设计：排序题替代单选
-
-NICE 共 137 题，基于**中国情境**设计，每题包含：
-
-- 一个社会情境
-- 一个问题
-- 若干候选回应（按"最优—次优—最差"梯度排列）
-
-测试要求模型**完整排序**候选回应，与专家标准答案**完全一致**才算正确。这跳出"非黑即白"的判断，考察模型社会判断的合理性和**边界敏感性**——能否识别最差选项是 NICE 与其他 benchmark 的最大差异。
-
-### 为什么用排序而不是单选？
-
-单选测试中模型可能"碰巧选对最优"但仍把夸张的礼貌行为排在第二位；排序任务把边界敏感性显式化，**让模型识别"什么行为不该做"**成为可测量信号。
-
-## 心理测量学四阶段构建流程
-
-NICE 的构建分四阶段，全程引入心理测量原则：
-
-1. **框架构建**：人类 + AI 社会智能理论 + 16 位专家评分 + 焦点小组 + AHP 权重
-2. **素材收集**：18 个社会智能相关 LLM 评测基准 + 43 个经典心理学范式作为参考
-3. **题项构建**：2 位具 7–8 年心理学研究经验的研究者严格按目标维度设计
-4. **题项评估与验证**：三轮修订 + 12 位评估者 5 点评分（阈值 3.5 分；不达标题项重测）
-
-这一流程的工程意义：避免多个子任务简单拼凑，增强理论框架有效性和诊断结果可解释性。
-
-## 五大核心发现
-
-### 发现 1：LLM 总体准确率高于人类参考组
-
-| 模型 | NICE 准确率 |
-|------|------------|
-| LLM 平均 | **75.1%** |
-| Gemini-3.1-pro-preview | ~75%+（与 GPT-5.5 并列前二） |
-| GPT-5.5 | ~75%+ |
-| Claude-Opus-4.7 | **71.1%**（最低） |
-| 人类参考组（14 人） | **70.4%** |
-
-LLM 平均比人类高 4.7 个百分点，但前二差距极小，分布紧凑。
-
-### 发现 2：优势集中在部分维度，尚未全面领先
-
-LLM 优势集中在：**社会感知、情绪运用、自我一致性、适应性学习、社会责任** 5 个维度。其余 6 个维度（尤其沟通 D3）未显示稳定优势。
-
-### 发现 3：沟通是集体短板
-
-在所有 11 个维度中，**D3 沟通（Communication）是人类参考组显著优于 LLM 的唯一维度**，且对 5 个被测模型都是得分最低维度。
-
-### 发现 4：沟通短板集中在三个内涵
-
-模型在 D3 的失效集中在：
-
-- **多轮沟通**（multi-turn）
-- **非言语沟通**（non-verbal）
-- **同步性**（synchrony）
-
-这三类任务的共同点是：高度依赖互动节奏、非语言线索、上下文连续性——而当前 LLM 的"上下文窗口 + 文本生成"范式与这三类需求存在结构性错配。
-
-### 发现 5：模型可能过度偏好显性礼貌行为
-
-经典反例：初次见面场景中，对"180 度鞠躬"的判断
-
-- 71.43% 的人类参与者认为是最差选择（夸张、不自然）
-- Claude-Opus-4.7 和 GPT-5.5 在 3 次独立测试中**从未把它排为最差**，稳定放在第二位
-- 后续解释显示模型把它理解为"礼貌表达"
-
-这暴露了模型的"礼貌偏好"——能识别正确答案的"对"，但无法识别"过了"。"总分高"掩盖了这种边界敏感性。
-
-## 深度分析
-
-### 排序题作为诊断信号的设计哲学
-
-NICE 的排序题本质上是在测试"边界敏感性"——模型能否识别"什么行为不该做"，而不仅"什么行为最该做"。这与 RLHF 的偏好对齐训练目标高度同构，但又有重要差异：
-
-- **RLHF** 关注"输出对人类偏好的拟合度"，但**不显式测试"违规行为的识别"**
-- **NICE** 把"识别最差选项"作为评分项之一，**强制模型展示对越界行为的判别能力**
-
-这意味着 NICE 不仅是评测工具，还可以作为**对齐训练的目标函数**——把"排序的边界敏感性"作为奖励信号，可能比单纯"对齐到人类偏好"更能培养出对情境敏感的智能体。
-
-### D3 沟通短板的范式根源
-
-LLM 在"多轮/非言语/同步性"三个沟通内涵上的集体失效，根源在于**模型架构与沟通任务的结构性错配**：
-
-| 沟通内涵 | LLM 范式缺陷 |
-|---------|-------------|
-| 多轮沟通 | 上下文窗口限制 + 位置编码衰减 → 长对话中后段信息丢失 |
-| 非言语沟通 | 文本模型**根本没有**对肢体、表情、语调的通道 → 即使把话写成文字也缺乏情境感 |
-| 同步性 | 单次生成模式无法观察"对方此刻的反应" → 无法做互动节拍（pacing）调整 |
-
-这一发现对多模态 Agent、对话系统、陪护机器人都有直接启示：单文本 LLM 永远无法"看起来懂沟通"，必须引入多模态输入 + 反应性生成机制。
-
-### 礼貌偏好与对齐的隐性代价
-
-NICE 暴露的"过度偏好显性礼貌"现象可能是 RLHF 的隐性代价——人类标注员普遍偏好"礼貌"输出，模型学到了"礼貌 = 好"的启发式，却丢失了"礼貌过头 = 越界"的判断力。
-
-这指向一个深度对齐问题：**对齐到人类偏好的均值，会让模型在长尾的"反共识"判断上失灵**。社会智能的对齐可能需要"反事实人类评估"——专门训练模型识别"多数人偏好但实际越界"的场景。
-
-### 中国情境 vs 西方情境的迁移性
-
-NICE 全部基于中国情境设计（人际边界、面子、关系等文化负载强），5 个被测 LLM 总体表现仍能超过人类参考组，这本身是一个**跨文化稳健性信号**——前训练的语料混合让 LLM 在不同文化情境下都获得了基础社会判断能力。
-
-但 D3 沟通短板的根因之一可能正是**文化负载的中和**：模型学到了"礼貌"的一般模式，但在"中国式 180 度鞠躬"这种文化特异性信号上失灵。这对部署在特定文化语境的 Agent 是重要警示。
-
-## 实践启示
-
-### 对 LLM 评测的启示
-
-1. **从总分竞赛走向能力诊断**：当一个模型的"社会智能"总分高于人类，开发者更应关心"它在哪些具体内涵上仍不如人类"，而非"它总分多少"
-2. **排序题比单选更能暴露细微缺陷**：单选测试的高分可能掩盖边界敏感性的缺失
-3. **理论驱动优于数据驱动**：从框架出发设计题项（如 NICE 的 4×11×34）比从语料库随机抽题更具诊断价值
-
-### 对 Agent 设计的启示
-
-1. **沟通型 Agent 需多模态**：单文本 LLM 注定在非言语沟通、同步性上有结构性缺陷，客服/陪护/教育等强沟通场景的 Agent 必须考虑引入语音、视觉、节奏感知
-2. **边界敏感性可作为对齐目标**：把"识别最差选项"的能力作为训练信号，可能比"输出最礼貌回应"更接近真正的社会智能
-3. **文化情境的本地化训练**：把特定文化的人际边界、关系模式、情境规约做成领域数据，可提升 Agent 在该文化下的可信度
-
-### 对 AI 安全与对齐的启示
-
-1. **礼貌偏好的隐性代价**：模型学到了"礼貌 = 好"，但失去了"礼貌过头 = 越界"的判别力 — 显式测试"反共识边界"是对齐评估的关键
-2. **社会智能短板 ≠ 安全风险**：D3 沟通短板目前表现为"过度礼貌"，未直接造成安全风险；但同一短板模式若出现在"伦理判断"维度，可能引发更严重问题 — 需扩展 NICE 类评测到安全边界
-
-## 与其他评测基准的对比
-
-| 维度 | NICE | 心理理论/情绪类基准 | 开放式多轮交互基准 |
-|------|------|------------------|------------------|
-| 理论驱动 | ✅ 4×11×34 完整框架 | ❌ 通常聚焦单一能力 | ⚠️ 部分有理论背景 |
-| 能力内涵级诊断 | ✅ 34 个内涵 | ❌ 仅总体分数 | ⚠️ 子任务分数 |
-| 心理测量学方法 | ✅ 全程 AHP + 专家验证 | ⚠️ 部分有 | ❌ 多为语料抽样 |
-| 排序题（边界敏感） | ✅ | ❌ 多为单选 | ❌ 多为开放式 |
-| 中国情境 | ✅ 137 题 | ⚠️ 部分有 | ⚠️ 部分有 |
-
-NICE 真正的差异化定位是**「理论 + 内涵级 + 排序题」三位一体**——三者结合才能既给出"模型社会智能如何"的总体判断，又给出"具体在哪条能力上失效"的可操作信号。
-
-## 局限与未来方向
-
-- 137 题规模相对有限，未覆盖更多文化语境
-- 5 个被测 LLM 均为通用模型，未涵盖专门微调的"对话/陪护"类模型
-- 14 人的人类参考组规模小，统计功效有限
-- 排序题评估方法本身需要专家一致性验证
-
-未来方向：拓展到复杂互动场景、更广泛文化语境、更大规模人类样本，从静态诊断走向贴近真实世界的人机互动评估。
-
-## 相关实体
-
-- [EVA-Bench Data 2.0](ch03/004-agent.html) — 语音 Agent 垂直领域评估
-- [MobileGym](ch03/004-agent.html) — Mobile Agent 训练与评测基础设施
-- [YAML 驱动的 Agent 评估框架](ch03/004-agent.html)
-- [Agent 记忆评估综述](ch04/097-agent-memory.html)
-- [Frontier Code Cognition Mergeability Benchmark](https://github.com/QianJinGuo/wiki-public/blob/main/entities/frontier-code-cognition-mergeability-benchmark.md)
-- [AI 评估的三种方法](ch04/052-ai.html)
-- [Agent Skill 写作评估](ch01/255-agent-skill.html)
-- [AI 工作面试与模型评估](ch04/052-ai.html)
-- [Inngest 2026 AI 评测报告](ch01/388-inngest-ai-in-production-the-2026-benchmark-report.html)
-- [Agent Harness 生产设计指南](ch05/035-agent-harness.html)
-- [Agent 工程原则](ch03/004-agent.html)
-- [SkillClaw Hyman 阿里 Skill 框架](ch07/045-skill.html)
-- [SkillX 浙大 Hyman](ch07/045-skill.html)
-- [Claude Code 最佳社区 Fork 演进](ch03/057-claude-code.html)
-
-→ [原文存档](https://mp.weixin.qq.com/s/Xr3t8vHZoer1eHSBsYN7ZA)
-
----
-
-## Ch13.006 循环工程 (Loop Engineering) — 清华 2026 框架
-
-> 📊 Level ⭐⭐ | 16.7KB | `entities/loop-engineering-tsinghua-2026.md`
-
-# 循环工程 (Loop Engineering) — 清华 2026 框架
-
-> **核心立论**：让 Agent 持续工作六小时，瓶颈不是它"会不会写"，而是它的**循环设计**是否合理。提示词本身没消失，只是被吸收进了六件套：技能 (Skill)、规格 (Spec)、工具 (Tool)、执行 (Act)、评估 (Eval)、停止 (Stop)。
-
-清华大学清新研究团队 2026 年 6 月发布的 89 页研究报告，提出**循环工程 (Loop Engineering)** 作为 Agent 工程的下一阶段框架。报告把 Agent 工程的关注点从"单次生成"转到"持续运行"，用 Claude Code /goal、Claude Code Routines、Codex Agent Loop 与 Sub-agents 等产品案例，构造了一套完整的循环治理框架。
-
-## 1. 为什么需要循环工程
-
-Agent 时代研究焦点从单次生成转向持续运行，三个关键事实：
-
-1. **生成能力已经不是瓶颈** —— 当模型能写出"看起来对"的代码，瓶颈上移到循环设计
-2. **提示词工程 (Prompt Engineering) 不会消失，而是被结构化吸收** —— 进 Skill / Spec / Tool / Eval / Stop
-3. **循环决定质量** —— 同样模型 + 不同循环，输出质量天差地别
-
-报告的核心反命题："不是模型不够强，而是循环不够好。"
-
-## 2. Loop Stack：循环的六件套
-
-清华团队提出 Agent 循环的最小完备集合 —— 六件套结构：
-
-| 件 | 作用 | 设计要点 |
-|---|---|---|
-| **Skill (技能)** | 可重用的能力封装 | 不只是提示词，是带版本、可验证的能力单元 |
-| **Spec (规格)** | 任务的形式化描述 | 把"完成"翻译成可检验条件，避免"写的人给自己打分" |
-| **Tool (工具)** | 与外部世界的接口 | 工具是循环的"手脚"，决定可达空间 |
-| **Act (执行)** | 把规格翻译为动作 | 动作要可观测、可回滚 |
-| **Eval (评估)** | 独立判定"是否完成" | 由独立小模型而非主模型自评 |
-| **Stop (停止)** | 显式定义循环何时停止 | 没有 Stop 条件 = 循环永远跑不完 |
-
-> 六件套缺一件循环就会"漏"。这是 Loop Engineering 的最小完备集合。
-
-### 2.1 关键反模式：主模型自评
-
-报告反复强调——**"写的人不该给自己打分"**：主模型既是参赛者又是裁判，会导致自我合理化。
-
-正确做法是用**独立小模型**做 Eval 判定。Claude Code /goal 显式分离这两个角色。
-
-## 3. 产品能力底座：Claude Code 两个核心能力
-
-报告用 Claude Code 的两个具体能力作为"产品能力底座"案例：
-
-### 3.1 /goal：完成条件驱动而非时间周期
-
-- 用**可验证条件**定义目标（不是 turn 数、不是时间）
-- 每个 turn 后由**独立小模型**判断条件是否满足
-- 红色 "NO" 门 / 绿色 "✓" 门 —— 通行判断二值化
-- 体现"写的人不该给自己打分"
-- **完成条件驱动，而非时间周期**
-
-### 3.2 Routines：云端例行任务
-
-- 在 **Anthropic 管理的云端基础设施**上运行（不是用户本地会话）
-- 三种触发方式：**计划 (Schedule)、API、GitHub 事件**
-- 任务看板：运行中 / 已完成 / 错误 / 待处理
-- **运营化后台任务** = 把个人会话循环推进到可运营的后台
-- 关键洞见：循环需要"长在家"才能持续 → 必须脱离本地会话
-
-> Routines 与 Codex Automations 同构：云端常驻循环是 Agent 持续运行的工程前提。
-
-## 4. Codex Agent Loop 与 Sub-agents 职责分离
-
-报告把 Codex 的 agent loop 拆为三段，每段由不同 sub-agent 负责：
-
-| Sub-agent | 职责 | 输入 | 输出 |
-|---|---|---|---|
-| **Explorer (探索者)** | 调研代码、收集信息、建索引 | 任务规格 | 代码地图 |
-| **Implementer (实现者)** | 写代码、跑测试 | Explorer 索引 + 规格 | 变更 diff |
-| **Evaluator (评估者)** | 独立审查变更 | Implementer diff | 审查意见 |
-
-子代理之间靠**契约 (Contract)** 而非共享上下文通信 —— 这是 Loop 内部的关键解耦设计。
-
-> **Loop-Agent-Engineer 三角关系**：Loop 是骨架，Agent 是执行者，Engineer 是 Loop 的设计者。三者职责不同，不可混为一谈。
-
-## 5. Loop Ledger（循环账本）
-
-清华团队的可观测性创新：
-
-- 把每次循环的关键决策、输入、输出、时长、token 消耗记成**可审计账本**
-- 账本**只追加 (append-only)**，事后可回放任意一次循环的完整轨迹
-- 类比传统财务 Ledger：循环也需"做账"
-- **审计 = 循环可信的前提**
-
-## 6. Worktree Fleet（工作树舰队）
-
-处理并行循环的"合并地狱"问题：
-
-- 每个子代理跑在**独立 worktree** 上
-- 关键控制点 = **合并前统一审查 / 测试 / 清理**
-- 避免多个 worktree 互相覆盖、污染主分支
-- 解决并行 Agent 同时改同一文件的冲突
-
-> Worktree Fleet 的设计核心：**隔离 + 合并前审查**。
-
-## 7. Entropy Janitor（熵清扫夫）
-
-清华团队最具创新性的概念 —— **降熵 Loop**：
-
-- Agent 写完代码后，代码库"熵"（无序度）持续上升
-- Janitor Loop 的职责：把代码从"垃圾堆"扫回"简洁模块"
-- **清理三类垃圾**：
-  1. **重复 (Duplication)**：同一逻辑多处实现
-  2. **过度抽象 (Over-abstraction)**：为单点用法建整套接口
-  3. **无效依赖 (Dead dependencies)**：调用方已不存在的 import / API
-- 价值：让"持续运行的 Agent"不留下"持续腐烂的代码库"
-
-> Entropy Janitor 是 Loop Engineering 与传统 DevOps 的最大差异点：传统 CI 只验证"新代码对不对"，Janitor 还要**主动清理历史遗留**。
-
-## 8. Triage 的三种输出
-
-输入信号 (Triage) 经分类后流向三种输出：
-
-| 输出 | 适用场景 | 后续动作 |
-|---|---|---|
-| **Archive (归档)** | 无价值发现 | 自动归档，不进入主分支 |
-| **PR (修复)** | 低风险修复 | 开 PR 等待 review |
-| **Human (交接)** | 高风险问题 | 交给责任人处理 |
-
-> Triage 是 Loop 的"路由器"：决定每条信号去往哪。三种输出对应三种风险等级。
-
-## 9. 启动 Loop 前的 10 个问题
-
-报告末尾的"启动前检查清单"：
-
-1. 这次循环的"完成"长什么样？可被独立验证吗？
-2. 谁是循环的"裁判"？会不会"写的人给自己打分"？
-3. 循环的 Stop 条件是什么？没有 Stop 等于死循环
-4. 循环需要哪些 Skill / Tool / Spec？
-5. 错误如何被发现？Eval 的反馈链路多长？
-6. 循环跑在本地还是云端？(影响是否能在用户离开后继续)
-7. 多 Loop 并行时如何避免合并冲突？(Worktree Fleet)
-8. 循环的账本 (Ledger) 如何可审计？
-9. 熵清扫夫 (Janitor) 什么时候触发？谁触发？
-10. 循环失稳时的降级路径是什么？
-
-## 10. 核心结论与本 wiki 视角
-
-> **不是模型不够强，而是循环不够好。**
-
-报告把 Agent 工程化的核心矛盾概括为：
-
-- 能力 (Capability) 已经够强
-- 治理 (Governance) 是真正的瓶颈
-- Loop 是治理的载体：把不可信的"单次生成"转化为可信的"持续运行"
-
-### 与本 wiki 已有实体的关系
-
-| 本报告概念 | 本 wiki 已有实体 | 视角关系 |
-|---|---|---|
-| Loop Engineering | [Tsinghua Harness Engineering Report](ch05/026-harness-engineering.html) (清华前一份) | **演进**：Harness → Loop，前者讲"系统层"，后者讲"循环层" |
-| Loop Stack 六件套 | [Agent Harness 12 Components 7 Decisions](ch05/035-agent-harness.html) | **视角互补**：六件套偏"循环骨架"，12 件套偏"工程组件" |
-| Loop Ledger | [Agent Harness Observability Production](ch05/035-agent-harness.html) | **深化**：从可观测性到可审计账本 |
-| Worktree Fleet | [Agent Engineering Principles Architecture Practice](ch03/004-agent.html) | **深化**：从"隔离原则"到"舰队编排" |
-| Entropy Janitor | [Hermes Agent Closed Learning Loop](ch03/066-hermes-agent.html) | **扩展**：闭环学习的"清理步骤"形式化 |
-| Triage 三种输出 | [Agent Harness Context Management Working Set](ch05/035-agent-harness.html) | **深化**：从"上下文管理"到"信号路由" |
-| Claude Code /goal | (官方文档：code.claude.com/docs/en/goal) | **产品映射** |
-| Claude Code Routines | (官方文档：code.claude.com/docs/en/routines) | **产品映射** |
-
-### 本 wiki 之前没覆盖的独特概念
-
-1. **Entropy Janitor (降熵循环)** —— 本 wiki 之前没有"主动清理历史代码"循环的专门概念
-2. **Triage 三种输出 (Archive / PR / Human)** —— 本 wiki 之前没有"信号按风险分级路由"的框架
-3. **启动 Loop 前的 10 问** —— 完整的循环启动检查清单
-4. **Loop Ledger (append-only 审计账本)** —— 比通用可观测性更强的审计原语
-
-## 深度分析
-
-**一、提示词工程没有消失，而是被结构化吸收进了 Loop Stack**。Skill/Spec/Tool/Act/Eval/Stop 这六件套，本质上是把原来散落在 prompt 里的指令分门别类地固化下来。Skill 封装能力、Spec 定义完成条件、Tool 暴露接口、Act 执行动作、Eval 独立判定、Stop 控制退出——prompt engineering 的专业知识不是没了，而是有了更结构化的归属。这是 Agent 工程走向标准化的必经之路。
-
-**二、"不是模型不够强，而是循环不够好"是 Agent 工程的下一次转向**。当模型生成能力已经不再是瓶颈，治理（governance）就成了真正的制约因素。循环决定质量——同样模型 + 不同循环，输出质量天差地别。这意味着 Agent 工程的下一步重点，是从"怎么让模型生成更好的东西"转移到"怎么设计更好的循环来组织模型的生成过程"。
-
-**三、Loop Ledger 揭示了可观测性在 Agent 时代的新内涵**。传统软件的可观测性主要服务于事后调试，Loop Ledger 则在此基础上增加了"审计"这一层——append-only 的循环账本，让每一次决策轨迹都可回放。这意味着 Agent 的运行记录不仅是调试工具，更是合规和信任的基础设施。循环的可审计性，是 Agent 从"个人工具"走向"生产系统"的必要条件。
-
-**四、Entropy Janitor 体现了 DevOps 思维向 Agent 系统的延伸**。传统 CI 只验证"新代码对不对"，Janitor 还要主动清理历史遗留的熵增——重复实现、过度抽象、无效依赖。这不是运维问题，而是质量维护问题：长期运行的 Agent 如果没有自清洁机制，代码库会持续腐烂，最终连 human developers 都不愿意接手。Janitor 把这个问题从"人的责任"变成了"系统的责任"。
-
-**五、Eval 与主模型分离是 Agent 循环中最反直觉也最重要的设计原则**。"写的人不该给自己打分"——这个原则在软件工程里看似常识，在 Agent 系统里却容易被忽视。主模型自评会导致自我合理化，用独立小模型做 Eval 判定才能真正保证反馈的客观性。Claude Code /goal 的二值化门控（红色 NO / 绿色 ✓）是这个原则最直接的产品化体现。
-
-## 实践启示
-
-1. **用 Loop Stack 六件套（Skill-Spec-Tool-Act-Eval-Stop）审视每一个 Agent 循环**：先问六个问题——Skill 够吗？Spec 清楚吗？Tool 全吗？Act 可观测吗？Eval 独立吗？Stop 条件明确吗？六件套不完整，循环就会"漏"。
-
-2. **永远不要让主模型自评输出**：无论多小的任务，只要涉及"判定是否完成"，都要引入独立小模型或独立 Agent 做 Eval。主模型自评是 Agent 系统里最常见的可靠性陷阱。
-
-3. **每个循环必须有显式、可验证的 Stop 条件**：没有 Stop 条件 = 循环永远跑不完。在设计 Loop 的第一天就要定义 Stop，而不是等到系统上线后再加。
-
-4. **把 Loop Ledger 作为 Agent 系统的必备组件**：每一次循环的决策、输入、输出、时长、token 消耗都要记成 append-only 审计日志。这不仅是事后调试的基础，也是 Agent 系统通过合规审查的前提条件。
-
-5. **为长期运行的 Agent 配套 Entropy Janitor 机制**：代码腐化是长期 Agent 运行的必然结果，不能靠 human review 解决。需要在系统设计时就把 Janitor Loop（清理重复/过度抽象/无效依赖）作为标准件纳入循环体系。
-
-6. **Loop 部署选云端不选本地**：如果 Loop 需要在用户离开后继续运行，就必须部署在云端（参考 Claude Code Routines / Codex Automations）。本地会话的循环无法"长在家"，这是 Agent 从个人工具走向 production 系统的工程前提。
-
-## 11. 待补充与限制
-
-- **PDF 限制**：原报告 89 页扫描版，仅 14 页可读。Loop Stack 详细设计参数、具体 Codex sub-agent 的 prompt 模板、Worktree Fleet 的合并算法细节、Entropy Janitor 的触发频率策略等章节未深入到具体工程实现级
-- **可执行性**：六件套是**概念框架**，未给出可下载的模板或代码库
-- **度量**：报告未提供"Loop 好 vs 坏"的量化指标 —— 是体验式而非实证式
-
-## 相关实体
-- [清华 ai 自进化组织研究报告：ai 业务资产化与公司形态重构](ch04/052-ai.html)
-→ 原文存档
-
----
-
-## Ch13.007 07—AI Skill 测评体系完整进阶指南：5 大能力缺口与填补路径
-
-> 📊 Level ⭐⭐ | 16.6KB | `entities/ai-skill-测评体系进阶指南.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 16.6KB | `entities/ai-skill-测评体系进阶指南.md`
 
 ## 测评体系的当前能力边界
 
@@ -1479,9 +2121,9 @@ SkillSentry 测评体系的演进折射出一个根本性的工程挑战：如�
 
 → [原文存档](https://juejin.cn/post/7620226704209068072)
 
-→ [测评指标体系](ch01/324-ai-skill.html)
+→ [测评指标体系](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-skill-测评指标体系.md)
 
-→ [测评报告解读](ch01/324-ai-skill.html)
+→ [测评报告解读](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-skill-测评报告解读.md)
 
 ## 相关实体
 
@@ -1489,906 +2131,263 @@ SkillSentry 测评体系的演进折射出一个根本性的工程挑战：如�
 
 ---
 
-## Ch13.008 用 Amazon SageMaker AI 与 Qualcomm AI Hub 打通从云端训练到端侧 NPU 的交付闭环
+## Ch13.015 06—看懂 AI Skill 测评报告：PASS / FAIL / INCONCLUSIVE 背后的发布决策逻辑
 
-> 📊 Level ⭐⭐ | 13.9KB | `entities/amazon-sagemaker-qualcomm-ai-hub-edge-npu-deployment.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 14.6KB | `entities/ai-skill-测评报告解读.md`
 
-# 用 Amazon SageMaker AI 与 Qualcomm AI Hub 打通从云端训练到端侧 NPU 的交付闭环
+## 报告是写给谁看的
 
-> **Background**: AWS China 与 Qualcomm 合作，将云端 SageMaker 训练模型通过 Qualcomm AI Hub 编译为端侧 NPU 可执行格式，缩短边缘 AI 部署周期。
+| 读者 | 关注点 | 核心问题 |
+|------|--------|---------|
+| 产品/研发负责人 | 决策横幅 + 汇总卡片 + 发布决策矩阵 | 这个 Skill 能不能上线？ |
+| 测评工程师 | 用例详情展开 + evidence + MCP 调用链 + 幻觉检测 | 哪里出了问题？如何修复？ |
 
-## 整体链路
+**建议阅读顺序（三步）**：先看「📖 名词速查」（1分钟）→ 再看「决策横幅」→ 最后看「改进建议」
+
+## 决策横幅三种结论
+
+| 横幅 | 含义 | 操作 |
+|------|------|------|
+| ✅ **PASS（绿色）** | 所有核心指标达标，无负向增益，灾难场景全部通过 | 可以发布 |
+| ⚠️ **CONDITIONAL PASS（橙色）** | 通过率接近阈值但差距≤3%，或部分灾难场景未执行 | 需与负责人当面对齐，约定修复时间 |
+| ❌ **FAIL（红色）** | 核心指标未达标，或有未解决的负向增益 | 不允许发布，修复后重测 |
+| 🔘 **INCONCLUSIVE（灰色）** | 用例无法得出结论——测试环境缺少触发条件，非 AI 出错 | 不影响整体结论，需补充测试资产后重验 |
+
+**橙色警告「规则推断模式」**：如果 MCP 不可用，横幅下方出现橙色警告。结论不能作为发布依据，需配置 MCP 后重测。
+
+### CONDITIONAL PASS 操作步骤
+
+1. 在报告用例详情中找出所有失败用例，说明根因
+2. 评估每个根因对线上用户的实际影响
+3. 约定具体修复时间（如「3个工作日内修复并重测」）
+4. 由产品/研发负责人签字确认，文档保存
+5. 修复完成后必须重跑对应用例，确认通过后升级为 PASS
+
+### INCONCLUSIVE 常见原因
+
+- **发票类型不符**：测试「住宿发票检测」但手头只有汽油发票
+- **账号数据不符**：测试「无差旅申请单时中断」但测试账号恰好有有效申请单
+- **测试方法层级错误**：直接调用 MCP 接口，绕过了 Skill 行为层
+- **历史数据缺失**：测试「查询旧单据」但单据已被系统清理
+- **权限未开放**：测试账号没有触发某规则所需的权限
+
+## 汇总卡片：读懂核心指标
+
+| 卡片 | 怎么看 | 红线 |
+|------|--------|------|
+| **精确断言通过率 ★** | 对照风险等级阈值（S≥95%，A≥90%，B≥80%） | 精确通过率低于阈值 → FAIL |
+| 综合通过率（括号内） | 包含存在性断言，精确远低于综合说明断言集质量偏低 | 参考 |
+| vs baseline 增益 Δ | 正数好，负数危险 | Δ < 0 → 必须查根因，不能上线 |
+| 幻觉/编造数据 | S级要求 0 次 | > 0 → 不能上线 |
+| INCONCLUSIVE | 测试环境限制，非 AI 错误 | 参考（需补充测试资产后重验） |
+| 路径覆盖率 | 对照模式目标（quick ≥40%，standard ≥70%） | 参考 |
+
+**断言三级分解**：
 
 ```
-SageMaker 训练 (PyTorch/TensorFlow)
-    │
-    ↓ 导出 ONNX
-    │
-    ↓ SageMaker Neo 优化
-    │
-    ↓ Qualcomm AI Hub 编译
-    │   (针对 Hexagon NPU / Adreno GPU / Kryo CPU 目标)
-    ↓
-    ↓ 量化 (INT8/INT4)
-    ↓
-    ↓ SDK 打包
-    ↓
-    ▼
-    端侧设备 (手机/IoT/车载)
+精确断言 ★   80%  (4/5)  ← 准入判断依据
+语义断言 ◆   100% (2/2)  ← 辅助参考
+存在性断言 ○  1/1         ← 不计入准入
 ```
 
-## 关键环节
+## 结果不稳定横幅
 
-### 1. 模型训练
+quick 模式强制运行 2 次，两次差距 > 15% 时：
 
-- SageMaker Training Job，PyTorch / TensorFlow
-- 多机多卡支持（EFA + Horovod）
-- 实验管理：SageMaker Experiments 跟踪 hyperparameter
-
-### 2. 模型编译
-
-- **SageMaker Neo**：做框架无关的图优化（算子融合、内存规划）
-- **Qualcomm AI Hub**：针对 Hexagon NPU 架构做后端编译
-  - 算子映射：哪些算子跑在 NPU、哪些 fallback 到 CPU
-  - 内存布局优化
-  - 量化感知训练 (QAT) 配合
-
-### 3. 部署
-
-- 生成设备专属 runtime library（QNN SDK）
-- 通过 OTA 或应用商店分发
-- 端侧推理监控：latency, throughput, model accuracy drift
-
-## 支持的硬件
-
-| 设备 | NPU | 典型 use case |
-|------|-----|--------------|
-| Snapdragon 8 Gen 3+ | Hexagon V73 | 手机 LLM/vision |
-| Snapdragon XR2 Gen 2 | Hexagon V71 | AR/VR 头显 |
-| QCS6490 | Hexagon V68 | IoT 网关 |
-| SA8295P | Hexagon V69 | 车载舱内 |
-
-## 量化策略
-
-| 精度 | 节省存储 | 性能提升 | 精度损失 |
-|------|---------|---------|---------|
-| FP32 → FP16 | 50% | 1.5-2x | 极小 |
-| FP32 → INT8 | 75% | 2-4x | 可控（< 1% top-1） |
-| FP32 → INT4 | 87% | 3-6x | 中等（需 QAT） |
-
-## 与传统部署方式的差异
-
-| 维度 | 传统 (PC/GPU) | 端侧 NPU |
-|------|---------------|----------|
-| 算力 | 数百 TOPS (FP16) | 10-50 TOPS (INT8) |
-| 内存 | 16-80GB | 4-16GB |
-| 功耗 | 200-700W | 0.5-5W |
-| 实时性 | batch processing | 实时响应 (<30ms) |
-| 网络 | always online | 可离线 |
-
-## 部署挑战
-
-1. **算子兼容性**：不是所有算子都支持 NPU 加速，部分 fallback 到 CPU
-2. **精度敏感度**：INT4 量化需谨慎，医疗/金融场景可能不适合
-3. **设备碎片化**：不同设备型号需不同编译产物
-4. **端云协同**：端侧处理不了时回退到云端推理
-
-## 适用场景
-
-- 移动端 LLM 推理（< 3B 参数）
-- 实时图像识别（object detection, segmentation）
-- 车载舱内感知
-- IoT 网关边缘分析
-- 离线优先的智能应用
-
-## 待关注
-
-- Snapdragon 8 Gen 4 发布后的 NPU 升级
-- QNN SDK 与其他厂商（MediaTek, Apple ANE）的兼容性
-- 端云协同推理框架的标准化
-
-## 相关实体
-- [Build Real Time Voice Applications With Amazon Sagemaker Ai](ch04/052-ai.html)
-- [End To End Encrypted Ml Inference Sagemaker Fhe](https://github.com/QianJinGuo/wiki-public/blob/main/entities/end-to-end-encrypted-ml-inference-sagemaker-fhe.md)
-- [Gpu Virtualization Using Mig Technology On Amazon Sagemaker Hyperpod](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gpu-virtualization-using-mig-technology-on-amazon-sagemaker-hyperpod.md)
-- [Announcing Openai Compatible Api Support For Amazon Sagemaker](ch01/480-announcing-openai-compatible-api-support-for-amazon-sagemake.html)
-- [Aws Sagemaker Sft Dpo Tool Calling](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-sagemaker-sft-dpo-tool-calling.md)
-
-→ [原文存档](https://aws.amazon.com/blogs/machine-learning/sagemaker-qualcomm-ai-hub-edge-npu)
-
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
-## 深度分析
-
-### 云端训练与端侧编译的架构契合点
-
-SageMaker AI 与 Qualcomm AI Hub 的组合本质上是把模型交付链条的两端做了标准化抽象。云端训练侧屏蔽了分布式 GPU 集群的运维复杂性，按使用量计费让小团队也能获得千卡级别的训练能力；端侧编译侧则通过云端托管的真实设备车队，将过去需要采购物理设备才能完成的编译验证，变成了几次 API 调用。整个链路的数据流转始终在 AWS 生态内，这意味着从训练产物到编译输入之间的 IO 延迟和跨云传输风险都被消解了。
-
-对于算法工程师而言，这种架构的真正价值在于将端侧验证嵌入了模型迭代的内循环。以人像分割场景为例，从公开数据集微调到 Galaxy S24 真机验证的总耗时约 20 分钟，其中 SageMaker AI 训练耗时 260 秒、AI Hub 编译与验证约 10 分钟。这意味着在一次代码 review 的周期内，模型已经完成了从训练到可部署产物的完整验证，而不是像传统流程那样需要等待数周的硬件采购和真机调试排期。
-
-### 量化指标评估的模型类型依赖性
-
-文章一个重要的工程启示在于：量化质量的评估指标必须与模型输出类型强匹配。AI Hub 自动计算的 PSNR 适用于输出有界（[0,1] 或 [0,255]）的任务如图像超分、去噪、HDR，但对于输出 logit 动态范围大的分割模型，PSNR 会被放大给出误导性的 -21.74 dB。正确的做法是直接计算 sigmoid 后的掩膜 IoU 或 Dice 分数。
-
-这个观察对其他端侧部署场景同样适用。目标检测模型的 mAP、LLM 的 perplexity 或 token 准确率各有其特有的误差敏感度，不能简单迁移分类模型的评估习惯。当团队在 QAT 和 PTQ 之间选择时，PTQ 的便捷性和 QAT 的精度可控性之间的权衡也需要基于具体任务评估而非通用经验法则。
-
-### INT8 量化对不同网络结构的差异化影响
-
-从文章实测数据来看，INT8 量化将 FPN + MobileNetV2 的体积从 16.5 MB 压到 4.5 MB（压缩率 73%），同时延迟从 15.31 ms 降至 13.59 ms，这说明该网络结构对 INT8 表达友好。但文章同时指出encoder-heavy 网络更容易从量化中受益，而 decoder-heavy 或输出层复杂的网络可能需要保留 FP16 或采用 QAT 策略。
-
-这意味着量化策略不能一刀切地应用。同一模型的不同层可能需要不同的量化精度——输出层保留 FP16、中间层 INT8——这要求编译工具链支持混合精度配置。Qualcomm AI Hub 的 `--target_runtime tflite --quantize_full_type int8` 选项如果无法满足这一需求，团队可能需要转向 QAT 重新训练或手动分层量化。
-
-### 端云协同的分界点设计
-
-文章提到端云协同是端侧部署的挑战之一，但并未深入探讨分界点设计原则。从架构角度看，端侧 NPU 的功耗预算（0.5-5W）和实时性约束（<30ms）与云端 GPU 的高算力（数百 TOPS）和 batch processing 模式形成鲜明对比。端云协同的核心问题不是"能不能"协同，而是"何时"协同——即在什么精度损失或延迟预算下，将推理回退到云端是合理的。
-
-对于手机端 LLM 场景，3B 参数模型在端侧运行已经接近功耗上限，更大的模型（如 7B 以上）即使支持 NPU 加速，也很难在手机散热预算内维持持续推理。这种场景下，端云混合推理（简单 query 端侧处理、复杂推理云端处理）的分界点设计直接影响用户体验和云端成本。
-
-### CI/CD 嵌入的工程成熟度标志
-
-文章指出 AI Hub 的编译、推理和性能分析 API 可以无缝嵌入 CI/CD 系统，这是端侧 AI 部署工程成熟度的重要标志。传统的端侧部署依赖人工操作的"阶段性验证"，而自动化链路将端侧性能验证从发布前的 manually check 变成了每次 model iteration 的自动 gate。
-
-这一能力的工程意义在于：端侧模型的每次更新都经过相同的真机性能与精度检查，而不是在设备采购不足的情况下"凭经验拍脑袋"。当模型从 FP32 更新到 INT8 或从 MobileNetV2 切换到 MobileNetV3-Small 时，CI/CD 系统可以自动捕获延迟和精度的 delta，并在超过阈值时拒绝合并。这种机制在云端模型部署中早已成熟，端侧部署的自动化是其工程化补全的最后一块拼图。
-
-## 实践启示
-
-1. **建立端侧性能评估的度量选择规范**：对于分割、超分、去噪等输出无界模型，禁止使用 PSNR 作为量化质量 gate，应直接计算 IoU、Dice 或 F-score。对于分类和检测模型，mAP 和 top-1 准确率仍然是合适的指标。团队应在项目启动阶段明确这一点，避免在评审时因度量误用返工。
-
-2. **利用云端设备车队替代物理采购**：Qualcomm AI Hub 在 AWS 上托管的真实设备车队是端侧 AI 项目的战略资源。团队应系统性梳理目标设备清单（手机、车载、IoT 各档位至少一款），通过 AI Hub API 建立多设备性能基准库，而不是等上线前才发现特定机型延迟超标。这能将硬件采购成本转化为 API 调用成本，并且支持按需弹性扩展到更多设备型号。
-
-3. **公开数据集训练后必须做产品数据的二次微调**：文章建议保留公开数据训练的 backbone 权重作为热启动，在产品数据上做二次微调。这是因为手机厂商的相机色彩管线、镜头畸变和低光降噪算法与公开数据集差异显著，直接迁移的模型往往在边缘质量和色彩一致性上出现可察觉的退化。
-
-4. **设计端云协同的显式分界点协议**：当模型规模接近端侧 NPU 上限时（如 3B+ LLM），团队应预先定义端云协同的分界点协议——什么条件下端侧处理、什么条件下回退云端、切换的延迟预算是多少。这个协议应嵌入应用架构设计文档，而不是在上线前临时决策。
-
-5. **将端侧验证嵌入了 ML pipeline 自动 gate**：在模型训练的 CI/CD pipeline 中加入 AI Hub 的 compile + profile + inference API 调用，作为每次 model iteration 的强制质量 gate。具体实现：在 SageMaker training job 完成后自动触发 AI Hub 编译任务，取回延迟和精度指标，与上一次发布的 baseline 比对；delta 超过阈值时自动拒绝并告警。这将端侧性能从"发布前人工检查"变为"每次迭代自动验证"。
-
----
-
-## Ch13.009 SaaS-Bench：浙大阿里 Steering Computer-Use Agent 真实系统评测（3.8% 通过率暴露范式天花板）
-
-> 📊 Level ⭐⭐ | 10.3KB | `entities/saas-bench-gui-agent-eval-unipat.md`
-
-## 摘要
-
-浙大阿里 Steering 团队 + UniPat AI 推出 SaaS-Bench：**23 个真实开源 SaaS 系统（Docker 部署，保留完整前后端+数据库+业务约束）+ 106 个跨应用长程任务**。最强模型 Claude Opus 4.7 检查点分数 43.9%，**端到端完全通过率仅 3.8%**（4/106 任务）。Kimi K2.5、Gemini 3.1 Pro 0% 通过。
-
-不是靠模型变大或加工程模块能解决的，**指向当前 CUA 范式的天花板**：长程任务中模型缺少对全局状态的持续感知，缺少操作后闭环验证机制，缺少从错误中恢复的能力。
-
-## Benchmark 核心设计
-
-- **23 个真系统、6 大领域**：研发（OpenProject/Code-Server/Metabase）、财务（Twenty CRM/BigCapital/HRMS）、医疗（OpenEMR/OpnForm）、协作（SiYuan/Mattermost/ownCloud）、农业（FarmOS/Grocy）、媒体（PhotoPrism/MediaCMS/BookLore）
-- **106 个任务分布**：93.4% 跨 ≥2 个应用，三应用任务占 53 个；97.3% 任务 > 100 步，最长 300+ 步
-- **两个评估指标**：Resolved Score（严苛）+ Checkpoint Score（宽松）。**两者的巨大落差是核心信号**
-- **任务构建**：LLM 生成 + 专家把关，四阶段质量保证
-
-## 榜单：全军覆没
-
-最强模型 Claude Opus 4.7 检查点分数 43.9%，**端到端完全通过率仅 3.8%**（4/106 任务）。Kimi K2.5、Gemini 3.1 Pro 0% 通过。
-
-含义：Agent 可以推进部分中间环节，但几乎没有能力把完整长程工作流走完。
-
-## Pass@k：多跑几次能救吗？
-
-- pass@3 相比 pass@1 整体提升约 8pp
-- Sonnet 4.6 多模态任务从 33.9% 跳到 52.1%（+18.2pp）
-- **不是环境随机性**（初始状态完全相同），而是**路径依赖**：决策点微小差异导致轨迹完全分叉
-- 多跑有帮助，但远不是解决方案
-
-## 三种结构维度全部单调递减
-
-- 跨应用数 1→4：53% → 20%
-- 操作步长增加：得分显著下降
-- 检查点 ≤6 vs ≥18：65% → 27%
-
-→ 真实工作流最常见形态（跨应用 + 长轨迹 + 细粒度验证）得分最低。
-
-## 四种结构性失败
-
-**失败 1：任务越长，越做不对**
-即使每个检查点 95% 通过率，12 个检查点全通过概率仅 54%。SaaS-Bench 平均检查点远超 12。所有模型通过率随任务推进呈下降趋势 —— 不可逆的下降曲线。
-
-**失败 2：一步错，步步错**
-典型案例：任务要求创建公司客户「Arcturus Digital」。Agent 同时填联系人姓名和公司名，触发个人客户逻辑，实际创建为 Elena Vasquez。后续 10 张发票/付款/对账全部挂在错误实体下。**3% 错误节点 → 30% 分数损失**。
-
-**失败 3：做完不检查，自以为对了**
-Claude Opus 4.6 在 Step 124 识别日期错误（2026-03-19 vs 03-20），执行修改但没回页面复查。Step 210 提交时汇报「已修复」，页面实际日期仍是 03-19。**意图层成功 ≠ 状态层成功**。当前 CUA 框架缺少严谨的反思闭环。
-
-**失败 4：同一张考卷，成绩忽高忽低**
-Claude Sonnet 4.6 同一任务三次独立运行：分数 0.00 → 0.68。**路径依赖让长程执行变成赌博**。
-
-## 范式天花板：不是工程问题
-
-四种失败模式指向同一底层事实：
-- 缺少对持久状态的有效推理能力
-- 缺少操作后的闭环验证机制
-- 缺少从错误中恢复的能力
-
-这不是技术债，而是**当前 Agent 范式在长程任务上的天花板** —— 模型缺少对全局状态的持续感知，无法像人一样"心里有数"。
-
-## 延伸洞察：SaaS 形态的保质期
-
-今天的 SaaS 是给人设计的（菜单/按钮/表单）。当 Agent 成为主要用户，这些界面就变成累赘。
-
-**未来不是让 Agent 学会操作人类的软件，而是软件本身要为 Agent 重新设计**。SaaS-Bench 揭示的不只是 Agent 短板，也是当前软件形态的保质期 —— 面向人类的 SaaS 可能都要为 Agent 重做一遍。
-
-## 工程对照
-
-| 失败模式 | 现有缓解 | SaaS-Bench 暴露的差距 |
-|----------|----------|----------------------|
-| 任务长做不对 | 长上下文/CoT 压缩 | 通过率随步长不可逆下降 |
-| 一步错步步错 | 异常回滚/事务 | 错误节点权重损失是几何级数 |
-| 做完不检查 | Self-critique 提示 | 意图层 ≠ 状态层，缺少验证闭环 |
-| 路径依赖 | 多次采样/投票 | pass@3 提升 8pp 但仍不可控 |
-
-## 深度分析
-
-**1. 检查点分数 vs 端到端通过率：全局状态的感知缺失**
-
-43.9% 检查点分数 vs 3.8% 端到端通过率的巨大落差，是 SaaS-Bench 最核心的信号。 即使每个检查点 95% 通过率，12 个检查点的全部通过概率也只有 54%，而 SaaS-Bench 平均检查点数远超 12——呈指数下降的复合失败率让长程任务几乎不可能完整通过。当前 CUA 框架在设计时没有内置"对全局状态持续感知"的机制，这是结构性缺陷而非模型能力问题。
-
-**2. 路径依赖：Agent 执行的"分叉点"陷阱**
-
-Claude Sonnet 4.6 同一任务三次独立运行，分数范围 0.00 → 0.68，这说明即使初始状态完全相同，决策点的微小差异就足以让轨迹完全分叉。 这不是环境随机性，而是路径依赖。应用到工程实践：在构建 agentic pipeline 时，应当将"关键决策节点的一致性"作为优先目标，而不是假设模型在相同输入下有行为一致性。
-
-**3. 意图层成功 ≠ 状态层成功：反思闭环的架构性缺失**
-
-Claude Opus 4.6 在 Step 124 识别并修复了日期错误，但到 Step 210 提交时，页面实际日期仍是错误的。 Agent 在意图层认为修复成功，但持久化状态层仍然错误。当前 CUA 框架缺少"严谨的反思闭环"——Agent 是不会检查自己作业的学生。这一缺陷指向当前范式在架构层面缺少状态验证层。
-
-**4. SaaS 为 Agent 重设计：界面形态的保质期**
-
-今天的 SaaS 界面（菜单、按钮、表单）是给人设计的，不是给 Agent 设计的。 当 Agent 成为主要用户，这些界面就变成了累赘。这揭示的不只是 Agent 的短板，也是当前软件形态的保质期——面向人类的 SaaS 可能都要为 Agent 重做一遍。这意味着未来软件形态演进的方向是"面向 API/Agent 的界面设计"，而非继续优化人类用户体验。
-
-**5. 多尝试能部分缓解但不能解决 pass@k 的根本问题**
-
-pass@3 相比 pass@1 整体提升约 8pp，Sonnet 4.6 多模态任务提升 18.2pp。 这说明增加尝试次数有帮助，但提升幅度有限且不稳定。路径依赖意味着单次失败可能引发后续所有步骤的连锁错误，因此多次采样的工程收益存在上界。
-
-## 实践启示
-
-- **为 Agent 设计状态验证层**：在 agentic pipeline 的每个关键步骤后，强制插入"状态回读"验证，而不是依赖 Agent 的自我报告。
-- **避免长程单线路径设计**：将长程任务拆分为可独立验证的短阶段，每阶段设置明确的成功标准，防止错误级联。
-- **界面形态演进纳入路线图**：当规划面向 Agent 的 SaaS 集成时，需要同时考虑软件界面是否适合 Agent 操作——这可能是未来 SaaS 竞争力的核心维度。
-- **评估模型的长程稳定性**：在选型评测中，除了 pass@1 分数，还应纳入 pass@3 方差和最长可通过轨迹长度，作为稳定性的代理指标。
-- **关注 path-dependence 的决策点**：通过在关键分支点引入确定性规则或人工确认机制，抑制微小差异导致的全链路分叉。
-
-## 链接
-
-- Blog：https://unipat.ai/blog/SaaS-Bench
-- GitHub：https://github.com/UniPat-AI/SaaS-Bench
-- 论文：https://arxiv.org/abs/2605.15777
-
-→ [原文存档](https://mp.weixin.qq.com/s/KzPHgTF7j3XzWDZSh_jJPw)
-
----
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-
----
-
-## Ch13.010 Hermes 可观测性方案
-
-> 📊 Level ⭐⭐ | 8.2KB | `entities/hermes-observability.md`
-
-## Overview
-阿里云为 Hermes（Nous Research 开源 Agent 框架）开发的一套基于 OpenTelemetry 的可观测性插件方案。解决 Agent 运行时四类核心问题：**过程不可见、成本不可归因、性能不可拆解、结果不可复盘**。通过在 Python runtime 层埋设 instrumentation，将 Hermes 的 ReAct 执行链路还原为结构化 Trace，同时提供 Metrics 信号和高危行为审计能力。
-**核心价值：** 将 Hermes 从"黑盒回复器"变成"能被展开、追踪、分析的运行系统"，填补 Agent 运行时可观测空白。
-
-## 核心问题与解决
-| 问题 | 表现 | 解决方案 |
-|------|------|---------|
-| 过程不可见 | 只能看到输入/输出/usage 汇总，ReAct 多轮推理链路空白 | ReAct 结构化 Trace，每轮推理可见 |
-| 成本不可归因 | Token 账单只知道总账，不知道花在哪一步 | 按 chat span 拆分 input/output/total tokens |
-| 性能不可拆解 | 用户说"变慢了"但无法定位是模型慢还是工具慢 | TTFT + 工具执行耗时分离 |
-| 结果不可复盘 | "看起来成功了但结果不对"无法溯源 | 完整调用链还原，定位偏移节点 |
-
-## 技术架构
-### 核心技术：OpenTelemetry Runtime Instrumentation
-在 Hermes 所在的 Python 环境中安装 runtime instrumentation，围绕 Hermes 的关键执行边界建立 span，再通过 OTLP 标准协议上报。
-**五大优势：**
-1. **遵循 GenAI 标准** — 对齐 OpenTelemetry GenAI 语义约定 + LoongSuite 扩展
-2. **Trace + Metrics 双信号** — 不仅有调用链，还有趋势指标
-3. **Streaming TTFT** — 单独记录首字延迟，区分首字慢 vs 生成慢
-4. **不绑定云服务** — OTLP 标准协议，可迁移
-5. **安全审计** — 异常检测识别越权访问/数据泄露/提示词注入
-
-### Trace 数据结构
-| Span 类型 | 记录内容 |
-|----------|---------|
-| `invoke_agent Hermes`（根节点） | 累计 Token、最终输出消息、总耗时 |
-| `chat`（模型调用） | `gen_ai.request.model`, `gen_ai.usage.input_tokens`, `gen_ai.usage.output_tokens`, `gen_ai.response.time_to_first_token` |
-| `execute_tool`（工具调用） | `gen_ai.tool.name`, `gen_ai.tool.call.arguments`, `gen_ai.tool.call.result` |
-
-### 与其他框架对比
-| 框架 | 可观测方案 | 特点 |
-|------|-----------|------|
-| Hermes（阿里云版） | OTel runtime instrumentation + ARMS | ReAct 链路还原、TTFT、Security Audit |
-| OpenClaw | 无官方可观测方案 | 依赖外部日志 |
-| Claude Code | Anthropic 官方 metrics | usage 汇总，无细粒度 Trace |
-| Letta | 内置 memory search | 偏向记忆检索，非运行时 Trace |
-
-## 接入部署
-**前提：** 运行中的 Hermes 实例 + 阿里云 ARMS 或其他 OTLP 兼容后端
-**核心命令：**
-```bash
-
-# 获取安装命令
-# 登录 CMS 2.0 -> AI 应用可观测 -> Hermes -> 获取命令
-# 安装插件
-curl -fsSL https://arms-apm-cn-hangzhou-pre.oss-cn-hangzhou.aliyuncs.com/hermes-agent-cms-plugin/hermes-cms.sh | bash -s -- install \
-  --x-arms-license-key "auto" \
-  --x-arms-project "你的Project" \
-  --x-cms-workspace "你的Workspace" \
-  --serviceName "hermes" \
-  --endpoint "https://你的ARMS-OTLP地址/apm/trace/opentelemetry"
-
-# 开启可观测
-hermes-cms enable
-
-# 启动 Hermes
-hermes  # 前台
-hermes gateway start  # 后台
 ```
-**验证：** 终端出现 `loongsuite-site-bootstrap: started successfully (OpenTelemetry auto-instrumentation initialized).`
+⚠️ 结果不稳定（两次差距 XX%）
+   run1: 75%，run2: 91%
+   建议升级到 standard 模式（3次运行）以获得可信结论。
+```
 
-## 下一步演进方向
-| 方向 | 具体内容 |
+→ 发布决策自动从 PASS 降为 CONDITIONAL PASS
+
+## 用例执行情况：Δ 值三种情况
+
+| Δ 值 | 含义 |
+|------|------|
+| +87% | Skill 有显著增益，这个场景 Skill 明确有价值 |
+| ≈0「持平」 | Skill 对这个场景没有额外帮助（通用模型本身就能处理），不是问题 |
+| -10% | ⚠️ 负向增益，Skill 比没有 Skill 还差，必须查根因 |
+
+## 用例详情展开：8 个区块
+
+点击任意用例行展开，最可信的是 **Layer 2a 字段精确校验**——直接从执行记录提取，不经过任何 LLM 推断。
+
+### ① 执行统计
+
+```
+MCP调用 6 次  ·  耗时 1.2s  ·  tokens 12,453
+```
+
+耗时异常（>15s）需要关注。
+
+### ② Layer2b Grader 断言结果（三类标签）
+
+```
+✅ ★精确  [tool_calls] [ground_truth]  saveExpenseDoc 调用参数 docStatus=10
+   evidence: transcript [tool_calls] Step5 入参：{"docStatus":"10",...}
+❌ ★精确  [response]  [grader]  输出包含详情链接，不含字面占位符 {fdId}
+   evidence: response.md 第12行含占位符
+✅ ◆语义  [response]  [grader]  报销主题包含出行目的和时间
+   evidence: response.md 第3行
+⚠️ ○存在性  [不计入准入]  没有编造发票信息
+```
+
+**三类标签含义**：
+
+- ★精确 / ◆语义 / ○存在性：断言强度，○存在性不计入准入
+- [tool_calls] / [response] / [agent_notes]：evidence 来源，tool_calls 可信度最高
+- [ground_truth] / [grader]：评审来源，ground_truth 不经过任何 LLM
+
+### ③ Layer2a 字段精确校验
+
+```
+✓ saveExpenseDoc 参数 docStatus=10    证据：transcript Step5 入参
+✗ 详情链接不含占位符 {fdId}          证据：response.md 第12行含占位符
+```
+
+最可信（直接从执行记录提取，不经过 LLM）。
+
+### ④ MCP 调用链
+
+```
+1. queryExpenseApplier   ✓  210ms  → fdCompanyId=xxx
+2. checkInvoice          ✗  180ms  → HTTP 500（测试环境限制）
+   ↳ 降级：使用本地识别结果继续
+3. saveExpenseDoc        ✓  390ms  → code=200, fdId=a1b2c3d4
+```
+
+### ⑤ 隐含声明验证（幻觉检测）
+
+```
+✓ saveExpenseDoc 调用了一次        transcript 中出现 1 次（Step5）
+✗ fdMonthOfOccurrence 取当前月份   实际值 120251100（发票月），非提单月
+```
+
+金融场景 S 级要求 0 次幻觉。
+
+### ⑥ 断言质量建议（橙色区块）
+
+```
+💡 「输出包含报销金额」只检查了存在性，未验证金额与发票一致。
+   建议改为：报销金额等于发票识别金额
+```
+
+不影响本次结论，用于下次迭代改进断言。
+
+## 发布决策矩阵
+
+| 情况 | 发布建议 |
 |------|---------|
-| 数据面 | 日志审计 + 运行诊断（超出当前 Trace/Metrics 范围） |
-| 链路面 | memory lifecycle、delegation orchestration、runtime recovery 等 Hermes 特有阶段 |
-| 治理面 | 内容采集控制、细粒度数据治理、脱敏策略 |
+| 精确通过率达标 + full 模式 + MCP 真实执行 | ✅ 可以发布 |
+| 精确通过率达标 + standard 模式 + S/A 级 | ⚠️ 建议补跑 full 后再做正式决策 |
+| CONDITIONAL PASS，差距 ≤3% | 与团队对齐，有条件发布，约定修复时间 |
+| CONDITIONAL PASS，灾难场景未执行 | 补跑 full 模式 |
+| quick 模式两次差距 > 15% | ⚠️ 自动降为 CONDITIONAL PASS，升级 standard 模式 |
+| 规则推断模式 | ❌ 不作发布依据，修复 MCP 后重测 |
+| 任何 FAIL | ❌ 修复后重测 |
 
-## 深度分析
-### 为什么 Agent 运行时可观测性长期缺失
-传统微服务的可观测性（Trace/Metrics/Logs）已有成熟体系，但 Agent Runtime 是全新的执行范式——它不是单次 HTTP 请求，而是一个自主循环的推理过程。Hermes 的 ReAct 执行包含：模型调用 → 推理 → 工具决策 → 执行 → 结果回注 → 下一轮推理。这种多轮循环使得传统以"请求"为粒度的观测模型无法直接套用。
-阿里云方案的核心创新在于：在 Python Runtime 层埋设 instrumentation，围绕 `invoke_agent`、`chat`、`execute_tool` 三个核心边界建立 span，用 OTLP 标准协议上报。这意味着不需要修改 Hermes 源码，只要在同一个 Python 进程中加载 instrumentation，就能自动捕获完整的执行链路。
+## 硬红线（直接 FAIL）
 
-### OpenTelemetry GenAI 语义约定的落地实践
-方案遵循 OpenTelemetry GenAI 语义约定（`gen_ai.request.model`、`gen_ai.usage.input_tokens` 等），这意味着数据格式是行业标准的。配合 LoongSuite 扩展覆盖 `execute_tool` 等 Agent 特有关键节点。这种"标准 + 扩展"的策略，使得方案既具备互操作性，又不失灵活性。
+1. **Δ < 0**：加了 Skill 反而更差
+2. **S/A 级灾难场景有任何失败**
+3. **规则推断模式**下运行（MCP 未真实调用）
 
-### 安全审计的必要性
-方案专门强调"高危行为审计"——识别越权访问、异常数据导出、恶意提示词注入。这反映了一个重要趋势：当 Agent 获得工具调用能力后，它的行为边界就不再是"只读"的了。一次提示词注入可能导致 Agent 调用了不该调用的工具、访问了不该访问的数据。可观测性在这里不只是性能优化工具，更是安全防线。
+**S 级硬红线**：幻觉次数 > 0
 
-## 实践启示
-1. **接入成本极低，优先考虑观测后再调优** — 一行安装命令 + `hermes-cms enable` 即可开启完整观测，生产部署前应优先接入，获取真实执行链路数据后再针对性优化，而不是猜测性能瓶颈。
-2. **Token 归因是成本控制的第一步** — 方案按 `chat` span 拆分 input/output/total tokens，这意味着可以精确定位"哪一轮 ReAct 推理"吃掉了最多的 Token，为上下文压缩和工具优化提供数据依据。
-3. **TTFT 是区分模型慢还是生成慢的关键指标** — 很多场景下"变慢"实际上只是首字延迟高（模型调度慢），而非生成速度慢。分开记录后才能针对性选择模型或优化调度。
-4. **ReAct Trace 是复盘"看似成功实则错误"的唯一手段** — 传统方案只能看到最终输出，有 Trace 后可以展开任意一轮的 `tool.call.arguments` 和 `result`，定位是哪一步推理偏移导致最终答案错误。
-5. **安全审计应作为可观测性的标配而非附加** — 当 Agent 开始调用外部工具（尤其是有写入能力的工具），异常行为检测和全量日志审计是防止生产事故的最后防线。
+## 触发率 AI 估算自动降级规则（S/A 级）
 
-## Related
-- [Hermes Agent](ch03/066-hermes-agent.html) — Nous Research 开源 Agent 框架，可观测性是其生产落地关键能力
-- [Hermes Agent 深度解析](ch03/066-hermes-agent.html) — Self-Evolving/动态 Skill 沉淀/RL 训练闭环等深度解析
-- [OpenClaw 架构解析](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/openclaw-architecture.md) — 无内置可观测方案，对比参考
-- [原始文章存档](https://mp.weixin.qq.com/s/XQqbHr7EjH906vQhX8b6Cw)
+| 情况 | 影响 |
+|------|------|
+| TP 估算 ≥ 80%，置信度 high/medium | 正常，标注参考值 |
+| TP 估算 ≥ 80%，置信度 low | 自动降为 CONDITIONAL PASS |
+| TP 估算 < 70% | 自动降为 CONDITIONAL PASS |
+| TN 有误触发预测 | 自动降为 CONDITIONAL PASS + 标红 |
 
----
+## 发现了问题怎么修复
 
-## Ch13.011 CEOs’ top priorities for IT leaders today
+### Δ < 0（负向增益）
 
-> 📊 Level ⭐⭐ | 7.5KB | `entities/www.cio.com-ceos-top-priorities-for-it-leaders-today-2-html.md`
+使用「规则模块二分法」：逐条禁用 SKILL.md 中的规则模块，每次禁用后重跑，观察 Δ 变化。当禁用某个模块后 Δ 转正，说明该模块是根因。
 
-# CEOs’ top priorities for IT leaders today
+通常原因：某条规则限制太死板 → 把「必须」改为「优先」，给模型保留兜底能力。
 
-## 摘要
-2026 年 CEO 给 CIO 的第一优先任务仍是 AI 实施，但态度已发生根本转变：对实验和 POC 失去耐心，转而要求可量化的 ROI，并将"建立 AI 政策与 ROI 指标"列入 top 10 优先事项。与此同时，安全升格为第二优先，CIO 的角色正从技术执行者被推向业务变革的引领者——从"证明 AI 可行"转向"证明 AI 值钱"。
+### 幻觉检测未通过
 
-## 核心要点
-- **AI 实施连续两年位居 CEO 优先清单第一**：CIO.com 2026 State of the CIO Survey 与 2025 年调查结果一致，AI 是 CEO 对 IT 的第一指令
-- **CEO 已对 AI 实验失去耐心**：不再关心 proofs of concept，要求可量化价值；最战略型的 CEO 更进一步，期望 AI 重塑组织运营方式与产品服务体系，且要求 CIO 主动创造机会而非仅仅配合
-- **ROI 焦虑是 2026 年的新变量**：CEO 普遍认为"AI 花费远大于回报"、收益碎片化，因此"建立 AI 政策与 ROI 指标"首次进入 top 10；推动力从 productivity gains 转向 revenue growth
-- **从 POC 到生产的过渡"比想象中更难"**：数据债务、技术债、legacy 环境与预算压力是四大结构性障碍，根源不在模型而在企业数据与系统地基
-- **安全升为第二优先**：升级 IT 与数据安全以降低企业风险；AI 采用使数据完整性、治理与风险管理的重要性进一步上升
-- **CEO 对 AI 的认知仍偏效率叙事**：研究显示几乎全部 CEO 用 AI 节省时间，仅 2% 用于决策支持等增长驱动场景——这正是 CIO 的战略机会窗口
-- **CIO 评价指标正在迁移**：IDC 数据显示一年内 revenue generation 从第六跃升至 CIO 成功指标第三位，CIO 开始按业务成果而非运营绩效被衡量
-- **前沿议题进入清单**：量子计算出现在银行、生命科学、物流等行业的 CEO 议程；优化与现代化被要求为新兴技术腾挪资金
+找到 SKILL.md 中对应的规则，确认规则描述是否清晰。规则清晰但模型仍幻觉 → 在规则中增加「断言」式约束，如「链接中不得包含 {fdId} 字面占位符」。
 
-## 深度分析
+### 覆盖率不足
 
-### 从"AI 实验"到"AI 交付"：CEO 耐心耗尽的一年
-自 2022 年 11 月 ChatGPT 进入企业视野以来，AI 一直是高层目标；2026 年的新变化在于"交付有形 ROI"成为硬性要求，而非口头愿景。TCS 的 Viswanathan 观察到 CEO 的挫败感源于"在 AI 上的花费远远大于回报，虽然有些生产力收益，但相当碎片化"。IDC 的 C-Suite Tech Survey 显示全球超过半数 CIO/CTO 已将 AI 与自动化列为首要业务目标，CEO 施压 IT 用 AI 驱动收入增长而不只是提升效率。这一转向的战略含义是：CIO 的衡量语言必须从技术指标切换到业务成果，否则无法在 CEO 的 ROI 框架内证明自身价值。
+运行 full 模式，或手动在 evals.json 中添加未覆盖规则的用例。
 
-### 规模化之痛：数据、技术债与"试点到生产"的鸿沟
-IDC 的 Saroff 指出，许多组织"从 experimentation 和 pilots 走到真正跑在生产环境并产生可衡量价值"的过渡，比最初看起来困难得多。障碍清单高度结构化：喂养 AI 的数据本身有问题（数据债务）、legacy 环境与既有技术债让创新更慢更贵、预算压力进一步叠加。与此同时，IT 在很多组织仍未成为真正的业务战略伙伴，导致"把 AI 举措与业务结果挂钩"这件本应刻意为之的事落空。这解释了业界普遍的悖论——AI 潜力无限，但 CIO 卡在"找不到落地的路径"：瓶颈不在模型能力，而在企业数据与系统地基的成熟度。
+## 修复后怎么重测：迭代流程
 
-### CEO 认知错位与 CIO 的战略机会窗口
-Gartner 的 Carter 指出，技术已进入 CEO 战略优先前三（仅次于增长与财务），而 CEO 口中的"技术"几乎约等于 AI。但 CEO 自身对 AI 的想象仍停留在省时增效——研究显示几乎全部 CEO 用 AI 节省时间，仅 2% 将其用于决策支持等增长驱动场景。这种认知错位恰恰是 CIO 的机会：谁能指出 AI 如何重塑组织运营方式与产出，谁就能帮助 CEO 在市场中取胜。Carter 建议 CIO"加倍押注能支撑高影响力、高曝光举措的技术叙事"，并承担提升全组织 tech literacy 的责任——"这是 CIO 角色有史以来最大的机会浪潮"。Rubrik 的实践提供了样本：IT 部门率先转型为 AI-first 组织，把 AI 植入工程、架构、FinOps、DevOps 与用户支持全链路，以资源优化为纲。
+```
+iteration-1（初始测评）
+  → 发现问题，修复 Skill
+  → 在 OpenCode 中说「在上次测评基础上迭代」
+  → AI 在同一 workspace_dir 下创建 iteration-2
+  → 只重跑失败用例或受影响的批次（节省时间）
+```
 
-### 从效率叙事到竞争叙事：评价体系的重构
-PwC 的 Leinwand 认为，CEO 期望 IT 通过连接数据、工作流与决策，推动运营模式的全企业级转型——"在核心运营与流程中落地，而不是只跑 pilot"，其背后是竞争方式的根本性变化与可持续增长的挑战。IDC 数据印证了这一重构：仅一年时间，revenue generation 就从第六位跃升为 CIO 成功指标的第三位，越来越多的 CIO 开始按业务成果（而非运营绩效）衡量自己。叠加量子计算等下一代技术在部分行业的早期布局、以及"通过优化与现代化腾挪资金投入新兴技术"的诉求，CEO 的 IT 议程已从"降本增效"全面扩展为"重塑竞争方式"。
+**需全量重跑的情况**：Skill 大范围重构 / 修复一条规则但担心引入回归 / 底层模型版本升级
 
-## 实践启示
-1. **用业务语言定义 AI 成功指标**：启动任何 AI 项目前，先与 CEO 对齐"可量化价值"的具体形态（收入增长、客户体验、新渠道），把 ROI 指标写入项目章程，而非停留在交付物清单。
-2. **为每个 POC 预置生产路径**：pilot 从第一天就要回答"如何规模化落地"——评估数据就绪度、legacy 集成成本与技术债，避免试点无限期、价值无法兑现。
-3. **把数据与技术债盘点设为 AI 投资前置条件**：AI 项目真实成本的很大一部分藏在数据质量与遗留系统里，先清理数据债务再谈模型选型，否则 ROI 预期必然失真。
-4. **将安全与 AI 治理前置设计**：安全已是 CEO 第二优先，AI 采用放大了数据完整性、治理与风险管理的权重；把安全政策、ROI 指标与 AI 部署同步规划，而非事后补救。
-5. **主动提出"AI 重塑场景"而非被动接单**：向 CEO 展示 AI 如何在客户响应、供应链、产品重塑等过去"做不到"的领域解锁价值，主动承担从效率增益到新价值主张的叙事升级。
-6. **用业务成果重构 CIO 评价体系**：主动引入 revenue contribution、创新产出等指标并自我衡量，顺应"从运营绩效到业务成果"的评价迁移，把安全与治理转化为业务赋能叙事。
-
-## 相关实体
-- [很多企业做完 AI PoC，为什么还是上不了生产](ch01/401-ai-poc.html)
-- [企业 AI 投资与数据就绪度](ch03/009-cio.html)
-- [CIOs rise to the global challenge](ch03/009-cio.html)
-- [Enterprise AI Adoption](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/enterprise-ai-adoption.md)
-- [数据质量框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/data-quality-framework.md)
-- [负责任 AI 治理体系](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/responsible-ai-governance.md)
-
-→ [原文存档](https://www.cio.com/article/4171959/ceos-top-priorities-for-it-leaders-today-2.html)
-
----
-
-## Ch13.012 NVIDIA MCG Toolkit 模型文档自动化
-
-> 📊 Level ⭐⭐ | 6.7KB | `entities/nvidia-mcg-model-documentation.md`
-
-# NVIDIA MCG Toolkit 模型文档自动化
-
-> **Background**: 本文档基于对外部技术来源的评分入库建立，v×c=7×8=56。
-
-## 核心要点
-
-NVIDIA MCG Toolkit 自动生成 AI 模型文档的技术指南，针对 EU AI Act 和 AB-2013 监管要求
-
----
-
-→ [原文存档](https://developer.nvidia.com/blog/how-to-automate-ai-model-documentation-with-the-nvidia-mcg-toolkit/)
+**只跑受影响的用例**：只修复了 1-2 条具体规则 / 修复的是边界情况不影响主流程
 
 ## 深度分析
 
-**1. 文档自动化本质是信息抽取问题，而非模板填充**
+### 测评报告的决策逻辑本质
 
-MCG 的核心架构采用 Ingestion → Extraction → Rendering 三阶段流水线，将模型文档生成定义为从源码中**智能抽取**而非规则填充。传统方法依赖人工填表或模板占位符，而 MCG 通过 RAG 管线直接从代码、配置文件和文档中检索高相关度片段，再由大模型生成规范内容。这意味着文档质量直接取决于源码仓库的结构化程度——文档贫乏的代码库即便使用 MCG 也只能达到 61% 的补全率。
+AI Skill 测评报告是一套**分层置信机制**：用颜色横幅给出确定性结论，用精确通过率给出量化门槛，用 Δ 值识别 Skill 的真实价值。三个维度缺一不可——只看横幅会漏掉负向增益陷阱，只看通过率会忽略 Skill 相对基线的退化，只看 Δ 值会失去与业务风险等级的联动。
 
-**2. 领域专用检索器是精度提升的关键，而非通用 Embedding**
+### 精确断言 vs 综合通过率的分离价值
 
-MCG 采用了三路独立检索器（Code Retriever、Config Retriever、Document Retriever）分别处理代码、配置和文档，而非使用单一 Embedding 模型通用检索。这与 [RAG 分块优化](ch01/138-rag.html) 中强调的"入库质量决定系统效果"一致——专业检索器能对不同类型的文档片段进行语义优先级排序，从而为提取阶段提供更高信号的上下文。Nemotron RAG 的 embedding（llama-nemotron-embed-1b-v2）和 reranking（llama-nemotron-rerank-500m-v2）模型均为 NVIDIA 自研，针对代码和文档混合场景做了专项优化。
+精确断言 ★ 是唯一准入判断依据，综合通过率（含语义和存在性断言）提供辅助参考。当精确远低于综合时，说明断言集本身设计偏松——存在性断言没验证真实性，语义断言没绑定具体值。这个分离设计让「报告看着好看但实际有问题」的情况无所遁形。
 
-**3. "不猜测"原则是合规文档系统的设计底线**
+### Δ < 0 的破坏性含义
 
-MCG 在无法置信填充字段时，输出 "not found" 或 "information not available" 而非猜测捏造。这一设计选择对监管合规场景至关重要——[治理软规则](ch03/057-claude-code.html) 中同样指出，不确定情况下的"猜测性生成"在审计场景会构成风险。模型卡需要具备完整的审计追溯性，自动生成的内容若是编造而非基于真实数据，反而会加剧监管风险。MCG 将"Gap 发现"功能定位为卖点而非缺陷，这意味着它既适合文档完善的团队加速生产，也适合文档初建的团队识别缺口。
+Δ < 0（负向增益）是报告体系中最危险的信号。它意味着在特定用例上，加了 Skill 的 AI 表现反而比不加更差。这通常说明 SKILL.md 中的某条规则限制太死板，强制 AI 走错误路径，而不是保留通用模型的兜底能力。「规则模块二分法」定位根因后，将「必须」改为「优先」往往能解决问题——这是 Skill 设计的核心教训。
 
-**4. 灵活性三层解耦使工具具备长期适用性**
+### INCONCLUSIVE 的设计哲学
 
-MCG 在模型（可替换 NIM）、模板（Markdown 输出格式）和指南（字段级知识库）三个维度做了完全解耦。这种设计使得工具不会因单一监管框架变化而失效——当 EU AI Act 或 AB-2013 出现新的披露要求时，只需更新模板和指南文件，无需修改提取管线的核心代码。输出格式同时支持 CycloneDX compliance，满足软件供应链透明度的行业标准。
+灰色 INCONCLUSIVE 横幅是体系成熟度的体现：它承认测试环境的局限性，并将「AI 出错」和「测试条件不足」区分开来。这避免了对 Skill 的冤枉追责，同时也防止了用环境缺陷掩盖 AI 能力不足的问题。补充测试资产后重验的机制，确保了每张报告都有可信的结论。
 
-**5. 性能数据揭示了文档自动化的人机协作边界**
+### Layer 2a vs Layer 2b 的证据可信度层级
 
-测试数据显示两类场景的显著差异：文档丰富时准确率达 76%、补全率 91%；纯代码无文档时准确率跌至 28%、补全率降至 61%。这表明自动化文档生成的理想落地形态是"机器生成初稿 + 人类审核修订"，而非完全替代人工。对于拥有良好文档传统的团队（README、config 齐全），MCG 可在 1 分钟内生成 80%+ 准确率的模型卡；对于文档薄弱的团队，它更应该被当作审计缺口扫描仪使用。
+用例详情的 8 个区块构成了一套证据层级：Layer 2a 字段精确校验可信度最高（直接从 transcript 提取，不经过 LLM），Layer 2b Grader 断言次之（经过 LLM 评分但有结构化 evidence），触发率 AI 估算再次。理解这个层级，才能正确解读报告中的 failure case——是 AI 真的错了，还是 evidence 来源本身不可靠。
 
 ## 实践启示
 
-1. **在引入 MCG 前先审计仓库文档覆盖率**
+### 发布决策检查清单
 
-MCG 的性能高度依赖输入文档质量。团队应先用 MCG 对现有仓库进行一次试跑，识别 "not found" 高频区域——这些正是文档缺失最严重、最需要优先补充的部分。补全这些文档不仅能提升 MCG 输出质量，也为人类审核者提供了更完整的初稿。
+当拿到一张测评报告时，按以下顺序检查：
+1. 先确认不是**规则推断模式**（MCP 真实调用是前提条件）
+2. 再看决策横幅颜色，PASS/FAIL/INCONCLUSIVE 各有明确含义
+3. 对照风险等级阈值（S≥95%，A≥90%，B≥80%）检查精确通过率
+4. 检查 Δ 值，负数必须查根因
+5. S/A 级额外检查：灾难场景是否全部通过、幻觉次数是否为 0
 
-2. **将 MCG 集成到 CI/CD 流水线而非作为独立工具使用**
+### 收到 CONDITIONAL PASS 后的标准操作
 
-MCG 支持 REST API 和容器化部署，建议将其封装为 CI 环节的一部分：在每次模型发布时自动触发文档生成流程，生成结果作为 Pull Request 的一部分供审查。这能解决"文档落后于代码"的经典问题，确保模型卡与模型版本同步更新。
+当报告是橙色 CONDITIONAL PASS 时，不要直接进入修复流程。首先评估差距是否 ≤3%——这个范围内可以与团队协商有条件发布，但必须有书面记录和明确修复时间。如果差距 >3% 或有灾难场景未执行，必须完成修复才能继续。修复完成后，用同一个 Skill 在同一 workspace_dir 下创建 iteration-N，只重跑失败用例以节省时间。
 
-3. **利用模板可变性适配多监管框架**
+### 改进断言质量的时机
 
-如果团队需要同时满足 EU AI Act 和 AB-2013 等不同监管要求，无需维护两套工具链——只需准备两套模板和字段指南文件，MCG 管线保持不变。建议建立一个内部模板库，按监管框架分类管理，每次审计时切换对应模板即可。
+报告中的「断言质量建议」橙色区块不影响本次结论，但指出了下次迭代的优化方向。当发现精确通过率远低于综合通过率时，应该将存在性断言升级为精确断言（如「输出包含报销金额」→「报销金额等于发票识别金额」），将语义断言绑定具体字段。好的断言集是报告可信度的基础。
 
-4. **对输出保持审慎验证态度，特别是涉及隐私和安全字段**
+### 负向增益的快速定位法
 
-MCG 的 92%（Nemotron Nano 8B）到 80%（第三方模型）准确率意味着约 8-20% 的字段可能存在错误。在涉及 Bias、Privacy、Safety & Security 等敏感 subcards 时，应将 MCG 输出视为高度结构化的初稿而非最终成品，需要领域专家复核签字后再用于正式监管提交。
+遇到 Δ < 0 时，用「规则模块二分法」定位根因：逐条禁用 SKILL.md 中的规则模块，每次禁用后重跑，观察 Δ 变化。禁用某模块后 Δ 转正，说明该模块是根因。常见修复方式是将「必须」改为「优先」，给模型保留兜底能力。修复后必须重跑确认 Δ 转正才能上线。
 
-5. **探索 Oracle OCI 部署模式作为大规模生产参考**
+## 关联阅读
 
-Oracle 将 MCG 部署在 OCI Container Engine for Kubernetes 上，结合 DAC（Dedicated AI Cluster）托管 NIM 模型，实现了容器化 + GPU 动态伸缩的生产架构。对于计划在企业内部规模化推广 MCG 的团队，这一架构提供了将 MCG 与现有 GPU 基础设施整合的参考路径。
+→ [AI Skill 测评体系进阶指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-skill-测评体系进阶指南.md) — 同系列其他章节
+
+→ [原文存档](https://juejin.cn/post/7619990292557447220)
 
 ## 相关实体
 
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
-
----
-
-## Ch13.013 EVA-Bench Data 2.0
-
-> 📊 Level ⭐⭐ | 4.6KB | `entities/eva-bench-data-2-voice-agent.md`
-
-# EVA-Bench Data 2.0
-
-> ServiceNow AI 2026-06-04 在 Hugging Face 发布的语音 Agent 垂直领域评估基准。本实体整合自 [原文存档](https://huggingface.co/blog/ServiceNow-AI/eva-bench-data)。
-
-## 概述
-
-EVA-Bench Data 2.0 是 ServiceNow AI 发布的 **语音 Agent 垂直领域评估数据集**，目标是填补现有 benchmark 在真实业务场景（HR、客服、票务等）下的评估缺口。
-
-## 三个独有贡献
-
-1. **3 大垂直领域** — HR / 机票改签 / 客户支持，覆盖高频企业语音 Agent 场景
-2. **121 个工具 + 213 个场景** — 大规模真实业务工具调用 + 多步骤对话评估
-3. **垂直领域专攻** — 区别于通用对话 benchmark（如 MT-Bench），专注 **特定行业** 的语音 Agent 能力评估
-
-## 关键数据
-
-- **规模**：3 domains × 121 tools × 213 scenarios
-- **场景**：复杂多步骤对话（multi-turn）
-- **目标模型**：语音 Agent（voice agent）系统
-
-## 实践启示
-
-- 语音 Agent 评估需要 **垂直领域数据集**，通用 benchmark 不够
-- 121 工具 + 213 场景的规模可作为企业 Agent 测试基线
-- 后续可关注：是否开源完整数据 + 评估脚本
-
-## 深度分析
-
-### 垂直领域评估的必要性
-
-通用对话 benchmark（如 MT-Bench、Arena）擅长评估开放式对话能力，但在企业语音 Agent 场景中存在明显盲区：
-
-1. **工具调用复杂度** — 企业场景需要精确的 API 调用链，而非闲聊式响应
-2. **领域知识深度** — HR 政策、机票退改签规则需要准确的结构化知识
-3. **多轮状态跟踪** — 真实业务对话涉及 5-15 轮状态转换，远超通用基准的 2-3 轮
-
-EVA-Bench 的 121 工具 × 213 场景设计，正是为了量化这些垂直维度的能力边界。
-
-### 规模设计的工程含义
-
-| 维度 | 数量 | 工程意义 |
-|------|------|----------|
-| 工具 | 121 | 覆盖常见企业系统 API 复杂度 |
-| 场景 | 213 | 足够统计学意义的评估样本 |
-| 领域 | 3 | 验证跨领域泛化能力 |
-
-这种规模使得单次评估可以区分 "能运行演示" 和 "能处理生产负载" 的 Agent 差距。
-
-### 与通用 Benchmark 的互补关系
-
-- **MT-Bench/Arena** → 评估通用对话流畅度
-- **EVA-Bench** → 评估垂直领域任务完成率
-- **SWE-Bench** → 评估代码 Agent 能力
-- **AgentBench** → 评估通用 Agent 推理
-
-企业部署语音 Agent 时，应组合使用以上基准，而非依赖单一指标。
-
-## 实践启示
-
-1. **评估现有语音 Agent** — 如果正在开发或采购语音 Agent 系统，可用 EVA-Bench 作为验收基准，要求供应商提供在该数据集上的端到端成功率
-
-2. **构建内部评估流水线** — 参考 121+213 的规模设计，将自己的业务场景抽象为可复现的评估用例，建立回归测试机制
-
-3. **关注数据开放性** — 持续跟踪 Hugging Face 上的数据集更新，确认是否包含完整的对话轨迹和工具调用序列，以便复现评估
-
-4. **领域适配策略** — 如果 EVA-Bench 的 3 个领域与自身业务不完全匹配，可借鉴其方法论（工具抽象 + 场景覆盖）构建垂直领域变体
-
-5. **多维度评估矩阵** — 不要只用单一 benchmark，建议组合：通用能力（MT-Bench）+ 垂直任务（EVA-Bench）+ 安全对齐（自定义测试集）
-
-## 与现有实体的差异化
-
-- 现有 entity 中暂无专门的 **voice agent 垂直评估 benchmark** 覆盖
-- 与通用 LLM benchmark entities 互补：本实体专攻 **Agent + 语音 + 垂直领域** 三维交叉
-- 评分 v×c=42 < 49，但 stars=4 触发"独特技术洞察"入库
-
-## 上线状态
-
-- 官方链接：https://huggingface.co/blog/ServiceNow-AI/eva-bench-data
-- 发布日期：2026-06-04
-- 部署：Hugging Face Datasets
-
-## 相关实体
-- [Datacomp For Language Models](https://github.com/QianJinGuo/wiki-public/blob/main/entities/datacomp-for-language-models.md)
-- [Frontier Code Cognition Mergeability Benchmark](https://github.com/QianJinGuo/wiki-public/blob/main/entities/frontier-code-cognition-mergeability-benchmark.md)
-- [Servicenow Ui Is Dead Agent](ch03/004-agent.html)
-- [The Ui Is Dead Long Live The Agent](ch04/408-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
-- [The Ui Is Dead Long Live The Agent Servicenow Goes Headless And Opens Its Platform](ch04/408-the-ui-is-dead-long-live-the-agent-servicenow-goes-headles.html)
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/evaluation-and-benchmarks.md)
-
----
-
-## Ch13.014 美团海报生成 AIGC 技术体系：PosterCraft/PosterOmni/PosterReward（ICLR/CVPR 2026 三连发）
-
-> 📊 Level ⭐⭐⭐ | 22.1KB | `entities/meituan-poster-aigc-postercraft-posteromni-posterreward-meigen.md`
-
-# 美团海报生成 AIGC 技术体系：PosterCraft/PosterOmni/PosterReward
-
-## 核心定位
-
-**美团智能创作团队** 2 年构建的"**生成-编辑-评判**"完整技术体系，3 个开源项目 + 3 篇顶会论文（ICLR 2026 + CVPR 2026 ×2）+ 真实业务落地。
-
-**核心问题**：百万中小商家海报设计门槛（外包 数百-数千元 / 传统 1-3 天 / 批量质量失控 / 内容同质化）。
-
-**解法闭环**：
-
-| 层级 | 工作 | 会议 | 角色 |
-|---|---|---|---|
-| **基础生成** | PosterCraft | ICLR 2026 | 端到端高美感海报生成 |
-| **多任务编辑** | PosterOmni | CVPR 2026 | 6 类 image-to-poster 任务 |
-| **质量评估（双线）** | 营销海报结构化 + PosterReward | CVPR 2026 | 存量海报质检 + AI 生成奖励 |
-
-## 五大技术挑战
-
-1. **精准文字渲染**（零容错；中文/多行/小字号短板）
-2. **和谐版式布局**（设计原则难规则化）
-3. **统一美学风格**（餐饮"食欲感"/美妆"精致感"/科技"未来感"）
-4. **多任务场景统一**（局部编辑 + 全局创作）
-5. **质量评估可量化**（FID/IS 不可用；人工评估不可规模化）
-
-## PosterCraft（ICLR 2026）：端到端高美感海报生成
-
-### 核心思想
-
-> 摒弃模块化流水线，让模型端到端地自由探索视觉连贯的设计组合。
-
-传统 VLM 规划布局 + 单独背景生成 + 文字叠加 → **美学一致性差，受各模块短板拼接限制**。
-
-### 四阶段级联优化工作流
-
-| 阶段 | 数据集（规模） | 核心方法 |
-|---|---|---|
-| **1. 大规模文字渲染优化** | **Text-Render-2M**（200 万样本） | Flow Matching 微调，提升文字渲染准确率（解决文字缺失/重复/错误） |
-| **2. 高质量海报微调 + 区域感知校准** | **HQ-Poster-100K**（10 万） | **Region-Aware Calibration**：非文字 1.0 / 主要文字 0.6 / 次要文字 0.2 — 保持文字准确同时注重整体艺术性 |
-| **3. 美学-文本强化学习** | **Poster-Preference-100K**（6000 偏好对） | 每 prompt 5 张 + HPSv2 打分 + Gemini 验证 + Best-of-N DPO |
-| **4. 视觉-语言反馈精炼** | **Poster-Reflect-120K** | 每 prompt 6 张 + Gemini 选优 + 结构化反馈 + **InternVL-3-8B 微调为 VLM 评论家**（推理时迭代优化） |
-
-### 核心成果
-
-文字召回率 / F-score / 准确率 → **显著超越所有开源基线**，**接近 SOTA 闭源商业系统**（如 Gemini 2.0-Flash-Gen）。
-
-## PosterOmni（CVPR 2026）：多任务统一图像到海报
-
-### 核心思想
-
-> 真实设计场景中，更常见起点是**参考图/旧版海报/产品主视觉**——设计目标不是完全重做，而是在保留核心主体基础上完成扩图/补全/比例调整/风格迁移/版式重组。
-
-### 6 类典型设计任务
-
-| 任务 | 方法 |
-|---|---|
-| **Extending / Filling** | SAM2 构造局部 mask |
-| **Rescaling** | 借鉴 BrushNet，"比例变化→内容重排" |
-| **ID-driven** | PaddleDet 提取主体 + 增强编辑器 |
-| **Layout-driven** | prompt-controlled rerendering |
-| **Style-driven** | 继承风格但不直接复制 |
-| 第 6 类 | 原文未明示 |
-
-### 核心难点：多任务冲突的缓解
-
-**任务间相互干扰**：局部编辑强调像素级一致 + 自然过渡；全局创作关注风格抽象 + 大幅度重构。直接混合训练 → "什么都会一点但都不稳"。
-
-**PosterOmni 解法**："数据—蒸馏—奖励"闭环：
-1. 分别训练局部编辑专家 + 全局创作专家
-2. 通过任务蒸馏整合为统一学生模型（PosterOmni-SFT）
-3. 加入统一奖励 + 强化学习（DiffusionNFT）
-
-### 四阶段训练流水线
-
-| 阶段 | 核心内容 |
-|---|---|
-| **1. 自动化数据构建** | **PosterOmni-200K**（20 万）：提示词+基础图生成 → PaddleOCR/jina-clip-v2/SAM 2 过滤 → 6 类任务配对（商品/美食/活动/自然/教育/娱乐六大主题） |
-| **2. 任务蒸馏** | 专家训练 → 学生网络逼近专家的速度场/预测行为：`L_total = L_text_render + λ·L_distill` |
-| **3. 统一奖励模型** | Gemini-2.5-Pro 初筛 + 标注者选优；**negative-pair 策略**（输入参考图=rejected / 编辑后输出=chosen）显式强化"有效修改有价值"；Qwen3-VL encoder + MLP head + Bradley-Terry |
-| **4. Omni-Edit RL** | **DiffusionNFT** 思路，正向扩散过程直接优化；**task-aware 分数**（"更像完成了任务"而非仅"更好看"） |
-
-### PosterOmni-Bench
-
-- 1020 条（540 中文 + 480 英文）测试指令
-- 6 类核心任务 × 6 大海报主题 × 单/多参考图输入
-- Gemini-2.5-Pro 打分（1-5 分）
-
-### 实验结果
-
-- 全部 6 类任务**开源模型最佳**，整体评分**超过部分闭源模型**
-- 相较 Qwen-Image-Edit：Layout-driven / Style-driven 增幅最大（真正学到了生成规则）
-- 相较 Seedream-4.0：整体平均**已实现反超**
-
-## PosterReward（CVPR 2026）：海报质量评估
-
-### 双线并行体系
-
-| 路线 | 对象 | 锚定 | 角色 |
-|---|---|---|---|
-| **真实海报结构化评估** | 线上存量海报 | 专业设计规范显式标准 | 智能质检 + 规范管理 |
-| **生成海报奖励模型** | AI 生成内容 | 用户主观偏好对齐 | 驱动生成持续进化（RL 奖励）+ 线上质检 |
-
-### 营销海报图像结构化（三大维度）
-
-| 维度 | 算法 | 关键数据 |
-|---|---|---|
-| **排版构图** | 12 种元素定位 + CNN 回归美学评分 | 准确率 **90%+**；5 分制误差 **0.3794**（归一化 0.0759）；近 **90%** 误差 ≤ 1 分 |
-| **色系搭配** | 11 种主色系识别 + 12 种基础色占比 + HSV 冷暖 | 准确率 **96.2%** |
-| **氛围风格** | 12 种风格识别（节日/卡通/简洁/多彩/科技/柔美/素雅/促销/撞色/实拍/标准/其他） | 准确率 **91.50%** |
-
-**整体美学综合评价** → 基本拟合设计师主观评价。
-
-### PosterReward 核心数据
-
-**自动化偏好数据集 Poster-Preference-70K**：
-- 数据来源：Seedream 3.0/4.0 + Qwen-Image-Lightning（影视/非影视）
-- 级联式过滤：HPSv3 → Kendall's W → 多模型排序 → 4 开源（CLIP/DINOv3/HPSv3/GLM-4.5V）+ 3 闭源（Gemini-2.5-Flash-Lite/Pro/GPT-5）共识
-- 产出：**7 万高质量偏好对**
-
-**四阶段级联训练**：
-1. **Joint SFT**（双任务并行：24.6 万单图 + 16 万配对偏好）
-2. **Joint RSFT**（拒绝采样微调）
-3. **Score Module**（Qwen3-VL-8B + 两层 MLP + Bradley-Terry）
-4. **GRPO**（冻结评分模块为奖励函数 → RL 微调分析模块）
-
-**核心成果**：**PosterRewardBench-Advanced 上 86.0% 准确率，远超基线 40-53%**。
-
-### 评估体系演进逻辑
-
-> 结构化评估的维度定义经验 → 为 PosterReward 多维度分析模块提供**领域知识参照**
-> PosterReward 端到端学习能力 → 克服结构化评估的**泛化性和可优化性瓶颈**
-> **两者的融合是未来评估体系演进方向**
-
-## 技术闭环协同
-
-| 模块 | 在闭环中的角色 |
-|---|---|
-| **PosterCraft** | 建立端到端生成基础；四阶段已引入奖励模型驱动的美学优化 |
-| **PosterOmni** | 在 PosterCraft 基础上拓展至多任务；统一 Reward 是 PosterReward 理念的任务特化 |
-| **营销海报结构化** | 从构图/配色/氛围感提供可解释设计规范 → 为生成链路评估提供领域知识 |
-| **PosterReward** | 将设计知识内化为端到端奖励信号：驱动生成（RL）+ 承担线上质检 |
-
-**协同模式**：评估驱动生成优化 → 生成拓展编辑边界 → 编辑反哺评估标准 → 持续自我进化的后训练系统。
-
-## 真实业务落地
-
-| 案例 | 业务 | 效果 |
-|---|---|---|
-| **文生帖子功能**（PosterCraft） | 美团平台合作上线 | ALBALUZ 西班牙餐厅海报 / 重庆夏季城市图鉴文旅海报（14+ 元素融合） |
-| **美团品牌 IP 袋鼠团团**（PosterCraft） | 与美团设计师合作 | 大寒节气海报 / 2026 马年新年主视觉（3D C4D 风格/唐代古建筑/烟花/红灯笼/毛笔字"马年大吉"） |
-| **图生商品海报**（PosterOmni） | 主体保持能力 | （原文图示） |
-
-## 关键创新点总结
-
-| 项目 | 独家创新 |
-|---|---|
-| **PosterCraft** | 区域感知校准（Region-Aware Calibration）/ 四阶段级联 / 端到端统一优化 |
-| **PosterOmni** | 任务蒸馏（局部+全局专家→学生）/ **negative-pair 策略** / DiffusionNFT task-aware RL |
-| **PosterReward** | 86% 准确率远超基线 / 多模型共识级联过滤 / 双线评估体系（结构化 + 偏好） |
-| **体系级** | "生成-编辑-评判"技术闭环（评估驱动生成→生成拓展编辑→编辑反哺评估） |
-
-## 未来方向
-
-- **更强可控性**：支持更精细设计意图传达
-- **更广场景覆盖**：从静态海报 → 动态视觉；零售电商 → 酒旅/丽人服务电商
-- **更深评估维度**：结构化设计规范知识持续注入奖励模型 → "可解释 + 可优化"统一
-- **更紧产业闭环**：规范标准与 RL 信号深度融合，直接驱动生成模型自我进化
-
-## 与 wiki 既有内容的关系
-
-- **与 [CVPR 2026 小米 SVOR 视频掩码](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cvpr-xiaomi-svor-video-masking.md)**：同属 CVPR 2026 + 顶级中国大厂 + 视频/图像生成；**互补不重复**（小米是视频生成，美团是海报生成）
-- **与 [JOYAI Echo 长视频框架（京东）](ch04/052-ai.html)**：同属顶会论文 + 顶级中国大厂 + 内容生成；美团侧重**海报（静态 + 文字）**，京东侧重**视频**
-- **与 [GPT-Image-2 完全指南](ch01/576-gpt-image-2.html)**：都讲 AIGC 文生图；GPT-Image-2 是**工具使用**，美团 PosterCraft 是**学术论文级** + 完整技术体系
-- **与 [腾讯陈进 Agent Loop 工程手册](ch04/360-loop-engineering.html)**：都强调"评估驱动生成"思想（陈进的 SELF Protocol 30 天实验 / 美团 PosterReward RL 奖励信号）
-
-## 深度分析
-
-**"生成-编辑-评判"三角闭环是 AIGC 工程化的最佳实践**：美团的 PosterCraft（生成）→ PosterOmni（编辑）→ PosterReward（评判）不是三个独立项目，而是一个自我强化的技术闭环。PosterReward 的评估信号可以反哺 PosterCraft 的生成质量，PosterOmni 的编辑能力扩展了 PosterCraft 的应用场景。这种"评估驱动生成→生成拓展编辑→编辑反哺评估"的闭环模式，比单独优化单个模型的工程效率高得多。
-
-**区域感知校准（Region-Aware Calibration）是海报生成的核心突破**：海报与普通文生图的本质区别在于"文字必须清晰可读 + 布局必须符合设计规范"。PosterCraft 的区域感知校准机制解决了传统扩散模型在文字渲染上的短板——通过将海报划分为不同区域（标题区、正文区、图片区），对每个区域施加独立的渲染约束，文字渲染质量接近 SOTA 闭源模型。
-
-**Reward Model 作为质量守门人的工程价值**：PosterReward 的 86% 准确率（vs 基线 40-53%）意味着它可以可靠地替代人工评估——这对于百万级海报批量生成场景至关重要。更关键的是它的"双线评估体系"（结构化设计规范 + 偏好学习），同时捕获"是否符合规范"和"是否美观"两个维度。
-
-**开源策略的商业智慧**：美团将三个顶会论文全部开源（MeiGen-AI GitHub），这不是简单的"学术贡献"——它是吸引 AI 人才的品牌策略，也是建立行业标准的技术策略。当业界使用 PosterCraft/PosterOmni/PosterReward 时，美团的海报设计规范和评估标准就成为了事实标准。
-
-**真实业务落地验证了学术价值**：外卖套餐图、袋鼠团团 IP、点评信息流治理三个真实场景的落地，证明了这套体系不是"论文级"的实验室产物——它已经在服务百万中小商家的海报生成需求。这种"学术论文 + 真实业务"的双验证模式，是评估 AIGC 技术成熟度的黄金标准。
-
-## 实践启示
-
-1. **AIGC 项目应设计"生成-评估"闭环**：不要只优化生成模型——投资评估模型（如 PosterReward）可以为生成模型提供 RL 信号，形成自我进化闭环。评估模型的价值往往超过生成模型本身。
-
-2. **文字渲染质量是海报生成的技术门槛**：如果你的应用场景涉及文字（海报、名片、广告），优先评估模型的文字渲染能力。区域感知校准是当前最先进的解决方案——要求厂商演示中英文混合、多字号、复杂排版场景。
-
-3. **用 Reward Model 替代人工评估**：对于批量生成场景，人工评估成本不可持续。投资训练领域特定的 Reward Model（如 PosterReward），可以实现自动化质量筛选。关键指标：准确率 >80%、与人工评估的相关性 >0.8。
-
-4. **关注 MeiGen-AI 的开源生态**：美团的三个开源项目（PosterCraft、PosterOmni、PosterReward）提供了完整的海报生成技术栈。如果你在构建类似的 AIGC 系统，可以直接基于这些项目构建，而不是从零开始。
-
-5. **"评估驱动生成"思想适用于所有 AIGC 场景**：美团的"生成-编辑-评判"闭环模式不限于海报——它可以应用于任何 AIGC 场景（文本、音频、视频）。核心思想是：先建评估标准，再用评估信号驱动生成优化。
-
-## 相关实体
-
-→ [原文存档](https://mp.weixin.qq.com/s/4ytSFiJa2q8inb5U-Au9Nw)
-
-- [CVPR 2026 小米 SVOR 视频掩码](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cvpr-xiaomi-svor-video-masking.md)
-- [JOYAI Echo 长视频框架（京东）](ch04/052-ai.html)
-- [GPT-Image-2 完全指南](ch01/576-gpt-image-2.html)
-- [腾讯陈进 Agent Loop 工程手册](ch04/360-loop-engineering.html)
-- [Harness Engineering](ch05/026-harness-engineering.html)
-- [ConardLi Harness Engineering 综合性指南（+ Beautiful Article 第 2 来源）](ch05/026-harness-engineering.html)
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/reinforcement-learning-rlhf.md)
-
----
-
-## Ch13.015 Discretizing Reward Models
-
-> 📊 Level ⭐⭐⭐⭐ | 6.2KB | `entities/abs-2606-21795.md`
-
-# Discretizing Reward Models
-
-> **Source**: [arxiv.org/abs/2606.21795](https://arxiv.org/abs/2606.21795)
-
-## 摘要
-
-Vijay Viswanathan 等人的研究论文，揭示了奖励模型（Reward Model）在强化学习中的一个根本性缺陷——**过敏感性（oversensitivity）**：许多流行的奖励模型对同等质量的响应给出不同分数，导致策略学习出现偏差。研究提出了一种基于 Monte Carlo Dropout 的免训练离散化算法，将连续奖励转换为离散聚类，在受控和自然 RL 环境中均显著减少了 reward hacking 并提升了策略质量。
-
-## 核心要点
-
-### 问题定义：奖励模型的过敏感性
-
-奖励模型在 RLHF（Reinforcement Learning from Human Feedback）中广泛使用，承诺在缺少验证器或人类评判时自动评估响应质量。与通常产生二值分数的"可验证奖励"不同，奖励模型产生连续分数，理论上能感知响应间的细微差异。
-
-然而，这种看似的优势实际上是一个严重的弱点：
-
-- **过敏感性**：许多流行奖励模型对同等优质的响应给出不同分数
-- **理论证明**：看似完美的奖励模型可能高度过敏感
-- **实际后果**：过敏感性导致学到的策略质量下降
-
-### 新评估框架
-
-研究提出了两个独立的评估维度来替代传统的"奖励模型准确度"概念：
-
-| 指标 | 含义 | 传统对应 |
-|------|------|----------|
-| **判别能力（Discriminative Ability）** | 区分好坏响应的能力 | ≈ 准确度 |
-| **特异性（Specificity）** | 对同等质量响应给出一致分数的能力（过敏感性的补集） | 传统评估缺失 |
-
-这一双维度框架更准确地刻画了奖励模型的实际行为——一个判别能力强但特异性差的模型会"过度解读"噪声，导致策略优化方向偏差。
-
-### 解决方案：Monte Carlo Dropout 离散化
-
-提出了一种**免训练算法**，适用于任何神经奖励模型：
-
-1. 对奖励模型执行 Monte Carlo Dropout（多次前向传播，随机 dropout 激活）
-2. 收集多次传播的奖励分数分布
-3. 将连续奖励聚类为离散奖励簇
-
-**理论保证**：证明存在离散化方案能在最小牺牲判别能力的前提下显著降低过敏感性。
-
-**实验结果**：
-- 受控 RL 环境：离散化奖励 → 更少的 reward hacking
-- 自然 RL 环境：离散化奖励 → 更好的策略质量
-- 与原始连续奖励训练相比，离散化方案一致更优
-
-## 深度分析
-
-### 为什么过敏感性是一个被忽视的问题
-
-传统的奖励模型评估主要关注"准确度"——模型是否能正确区分好响应和坏响应。但这忽略了一个关键维度：当两个响应质量相当时，模型是否给出了稳定的分数。
-
-过敏感性的根源在于奖励模型的训练方式。当训练数据中同等质量的响应被标注了略有不同的分数时（人类标注者间差异），模型会学习到这些噪声模式，在推理时对语义等价但表面形式不同的响应给出不同分数。
-
-这种问题在 RLHF 训练中特别危险，因为策略优化器（如 PPO）会利用这些微小的分数差异来调整策略方向——等于在优化噪声。
-
-### 离散化的直觉
-
-离散化的核心思想是：如果两个响应的质量差异小于模型的噪声水平，就不应该让模型区分它们。通过将连续分数映射到离散簇，我们强制模型"放弃"那些不可靠的细微区分。
-
-这类似于模型量化（Quantization）的思路——通过降低数值精度来换取鲁棒性。但区别在于：量化作用于模型权重，而离散化作用于模型输出。
-
-### 对 RLHF/RLAIF 实践的影响
-
-1. **Reward hacking 缓解**：离散化奖励减少了策略利用模型噪声的空间
-2. **训练稳定性**：离散奖励信号的方差更小，PPO 等算法的训练更稳定
-3. **通用性**：免训练算法适用于任何现有奖励模型，无需重新训练
-4. **评估标准更新**：双维度框架（判别能力 + 特异性）应成为奖励模型评估的标准
-
-### 与相关工作的关系
-
-- **Reward hacking 研究**：离散化提供了一种无需对抗训练的 reward hacking 缓解方案（参见 RLHF 相关文献）
-- **Reward model ensembles**：集成方法通过多模型平均降低过敏感性，离散化则是单模型层面的解决方案
-- CAI（Constitutional AI）中的奖励模型同样受过敏感性影响
-- **Process Reward Models (PRM)**：PRM 对逐步推理的评分更易受过敏感性影响，离散化可能特别有价值
-
-## 实践启示
-
-- **奖励模型开发者**：在评估指标中加入特异性（specificity），不仅看准确度
-- **RLHF 工程师**：在 PPO 训练前对奖励模型输出进行离散化，可作为标准预处理步骤
-- **Agent 训练**：基于 RL 的 Agent 训练中，离散化奖励有助于减少策略振荡
-- **研究者**：双维度评估框架（判别能力 + 特异性）值得在奖励模型基准测试中采用
-
-## 相关实体
-
-- RLHF：离散化直接改善 RLHF 训练流程
-- Reward Hacking：离散化是缓解 reward hacking 的新手段
-- Constitutional AI：CAI 中的奖励模型可从离散化中受益
-- Dario Amodei RL Safety：RL 安全性研究的另一维度
-
-→ [原文存档](https://arxiv.org/abs/2606.21795)
-
----
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/evaluation-benchmarks-extended.md)
 
 ---

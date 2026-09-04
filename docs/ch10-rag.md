@@ -10,8 +10,11 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐⭐ 工程师 | 需编程基础 | 13 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 1 |
+| ⭐ 入门 | 零基础可读 | 1 |
+| ⭐⭐ 工程师 | 需编程基础 | 1 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 3 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 7 |
+| ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 2 |
 
 ---
 
@@ -29,9 +32,378 @@ RAG 不只是"检索 + 拼接"——它是知识管理的入口。
 
 ---
 
-## Ch10.001 向量库是RAG的前菜，知识图谱是答案，本体论是灵魂
+## Ch10.001 SkillCorpus: 大规模社区 Skill 生态的筛选、评测与边界分析
 
-> 📊 Level ⭐⭐ | 50.1KB | `entities/向量库是rag的前菜知识图谱是答案本体论是灵魂.md`
+> 📊 Level ⭐ | 4.8KB | `entities/skillcorpus-consolidating-open-skill-ecosystem.md`
+
+# SkillCorpus: 大规模社区 Skill 生态的筛选、评测与边界分析
+
+> 首个端到端框架：聚合开源 SKILL.md 生态，提纯为 96,401 标准化技能，在真实 Agent 任务上评测社区技能的实际价值并界定其边界。
+
+## 概览
+
+SkillCorpus 是由 EverMind、盛大集团与北京大学联合提出的框架，将松散的开源 SKILL.md 生态（~821,000 原始文件）经多层流水线提纯为 96,401 份合规、高质量、可商用的标准化技能，并配套微调检索排序堆栈，在真实 Agent 任务上评测了社区技能的实际增益与边界条件。
+
+## 六阶段提纯流水线
+
+1. **结构/格式检查**：标准 SKILL.md 格式 + 合理长度过滤
+2. **两阶去重**：精确指纹去重（169,465 合并）+ 语义嵌入去重（cosine 0.90 阈值，LLM 裁决 66,751 边界对）→ 合计去除 64%
+3. **三维质量打分**：LLM-as-judge 从 Utility（实用性）、Robustness（鲁棒性）、Safety（安全性）三维度输出 0-10 分
+   - 综合分 = 0.85·content_q + 0.15·prior_src（安全薄弱时衰减）
+4. **安全硬门禁 + 许可证过滤**：5 条硬规则（prompt_injection/cmd_injection/unsafe_exec/auth_bypass/csam_risk）→ 分数归零；仅保留 OSI 兼容许可证（去除 3,795 条）
+5. **归类入库**：16 类分类法（Dev 22.4%, Data 14.1%, Writing 8.2%, DevOps-Infra 7.8%...），1024 维检索嵌入
+
+## 三级检索排序堆栈
+
+- **粗召**：Qwen3-Emb-0.6B（在去重后语料上微调），3000 字符检索字段
+- **精排**：Qwen3-Rank-0.6B 微调排序模型
+- **LLM 选择门**：阅读完整 Skill 正文，返回 0-2 条注入
+- **可选查询改写**：领域术语规范化
+
+## 评测结果
+
+### 主实验（407 任务，24 配置 × 3 轮 = 74 次端到端运行）
+
+| 框架 × 模型 | SkillsBench | GDPVal | QwenClawBench | 均值 |
+|---|---|---|---|---|
+| OpenClaw × Qwen-27B | +4.2 | +1.9 | +1.5 | +2.5 |
+| OpenClaw × Qwen-397B | +5.8 | +1.8 | +1.3 | +3.0 |
+| Raven × Qwen-27B | +6.5 | +1.2 | +3.9 | +3.9 |
+| Raven × Qwen-397B | **+13.4** | +1.2 | +4.4 | **+6.3** |
+| Claude Opus 4.7 | +8.0 | — | — | — |
+
+全部配置正向增益，无净负均值（no-harm attachment）。最强单元（Raven × Q-397B）在 SkillsBench 上从失败中救回 19 个任务、损害 2 个（McNemar 检验 p<0.001）。
+
+### 两个边界条件
+
+**Harness 边界**：Raven 执行完整「推理→运行脚本→校验→修正」闭环，提升远超 OpenClaw（写代码后即终止、不校验）。Harness 执行逻辑直接影响 Skill 的落地效果。
+
+**覆盖度边界**：高检索匹配 → 平均 +25.1%；中匹配 → +6.2%；低匹配 → +2.2%。Skill 库覆盖度直接调节增益幅度。
+
+### 关键洞察
+
+- **流程适配度 > 质量分数**：单任务成败取决于 Skill 流程与任务结构的匹配度，而非综合质量分
+- **Skill 可能帮倒忙**：PPT 内嵌 Excel 修改任务中，通用 Skill（"打开 .xlsx"）无法处理 OLE 内嵌对象，反而比无 Skill 基线更差
+- **高基线任务天花板**：写作等任务模型本身能力强，Skill 提升空间有限（GDPVal 仅 +1.2-1.9pp）
+- **上下文隔离 > 并行**：规划器-执行者拆分的主要扩展优势来自上下文隔离，而非并行执行
+
+## 局限与未来方向
+
+- 质量评分依赖 LLM 文本判断，无沙箱执行验证
+- 仅英文评测，中文场景尚未覆盖
+- 静态快照（2026 Q2），无动态更新机制
+- 高基线任务受限天花板效应
+
+## 相关实体
+
+- [SkillOS: Learning Skill Curation for Self-Evolving Agents](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-os-learning-skill-curation-self-evolving-agents.md)
+- [SkillComposer: 生成式技能组合](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skillcomposer-generative-skill-composition-agent.md)
+
+→ [论文原文](https://arxiv.org/abs/2607.15557) | [中文解读](https://mp.weixin.qq.com/s/xZrMucZ4O5nMbGcc66H18g) | [PDF](assets/skillcorpus-arxiv-2607-15557.pdf)
+
+---
+
+## Ch10.002 【实践教程】真实AI客服落地全流程：意图识别、混合检索到数据飞轮
+
+> 📊 Level ⭐⭐ | 7.6KB | `entities/实践教程真实ai客服落地全流程意图识别混合检索到数据飞轮.md`
+
+# 【实践教程】真实AI客服落地全流程：意图识别、混合检索到数据飞轮
+> AI训练营  ** 9期  ** ，  ** 今日  ** 开班，欢迎咨询
+书接上文： [ 《实践：AI客服实战方法论》 ](<https://mp.weixin.qq.com/s?__biz=Mzg2MzcyODQ5MQ==&mid=2247498987&idx=1&sn=5e3c5dc641b9eb94734ee27af0ad3381&scene=21#wechat_redirect>)
+之前我们详细介绍了  ** 空气小猪 AI 客服  ** 是如何一步步做出来的，但后续无论学员还是粉丝都依旧有很多的问题，所以最近几天我们在连续做 RAG 的课题。
+今天的话，我们会上点更硬的货，会结合空气小猪这个案例，讲清楚我们如何从 0 到 1 搭建一套 AI 客服，包括：
+
+## 相关实体
+- [Rag技术框架的演进方向](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag技术框架的演进方向.md)
+- [Skill Rag Tsinghua Sra](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-rag-tsinghua-sra.md)
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-framework.md)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-claude-code-large-codebase-best-practices-50002a089323.md)
+- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
+
+→ [原文存档](https://mp.weixin.qq.com/s/cU_3pMY8JcjnJ7Q91Otbkg)
+
+## 深度分析
+
+**AI客服的本质是可控性优先的Workflow，而非自由发挥的Agent。** 文章明确指出"第一版采用更稳妥的Workflow方式"，这个决策背后有深刻的工程考量：客服回答需要稳定、可解释、可复盘，不能让模型自由发挥。这与当前Agent狂热形成了有价值的对比——当行业都在追逐Agent autonomy时，这个案例表明在强一致性要求的业务场景下，显式控制的Workflow反而是更优解。Workflow牺牲了部分Agent的自主性，但换来了更强的确定性和更低的生产风险，这种"先追求稳定可控、再谈自主"的思路值得多数AI应用借鉴。
+
+**意图识别是整个链路的守门人，分类粒度决定系统边界。** 从最初只分成"产品咨询"和"闲聊"两类，到最终扩展为三个一级意图（产品咨询、用户反馈、闲聊）并附带详细二级分类，这个迭代过程揭示了一个重要原则：用户问题是无限发散的，但系统必须有边界，边界由意图分类定义。二级意图的缺失是意图识别不准确的主要原因——标签太粗导致模型无法准确判断"这是什么类型的问题"，进而导致后续检索和回答的全面失误。三级意图体系（带判断标准和示例）为每一类问题预设了处理路径，这是AI客服能够稳定交付的基础。
+
+**混合检索+多路改写+Reranker的组合是客服场景的工程最优解。** 向量检索擅长语义相近但表达不同的问题，BM25擅长关键词明确命中，两者组合覆盖了用户问法的两个主要维度。多路问题改写进一步扩展了召回范围，RRF融合保证了不同检索方式结果的可比性，Reranker则基于相关度重新评分而非原始相似度——这套组合拳的核心洞见是：没有哪种单一检索能覆盖所有问法，但通过融合和重排可以让各类检索的结果都能发挥作用。最终的`useful`字段则是生成侧的守门人：即使召回通过，模型仍需判断知识是否真的能回答问题，这种"宁可少答也不乱答"的原则是客服场景的风控底线。
+
+**全链路可观测性是AI客服运维的基础设施，而非可选项。** 传统系统报错是明确的：状态码、异常堆栈、数据库错误。AI客服的问题形态完全不同：意图识别错误、问题改写偏离、召回不足、知识不相关、提示词不生效——这些问题如果只看最终回答根本无法定位。全链路10个关键节点的日志记录（从用户原始消息到最终回答和耗时成本），使得"用户说回答不准"时可以精确定位是哪个环节出了问题。没有这套可观测性基础设施，AI客服的持续优化就只剩下猜测。
+
+**数据飞轮是AI客服从"初始版本"到"持续进化"的关键闭环机制。** 低置信度问题池解决了"知识库永远不完整"的现实问题，但更重要的是审核机制防止了知识库污染：不是所有低置信度问题都应该入库，情绪输入、无意义内容、低频问题、强时效问题都需要过滤。问题标准化+相似度合并+人工审核的三层过滤，保证了进入知识库的都是真正需要沉淀的高价值内容。这个飞轮一旦运转起来，AI客服的能力会随着真实用户交互而持续提升——这是从"一次性项目"到"持续运营系统"的关键转变。
+
+## 实践启示
+
+- **AI客服的首要原则是"宁可不答，也不要错答"，这条原则应嵌入系统设计的每个层面。** 从意图识别的粒度控制，到`useful`字段的生成判断，再到知识库的边界定义，"不乱答"比"多答"更重要。一旦客服开始一本正经地胡说八道，直接损害用户对产品的信任——这种伤害远大于"我暂时无法回答这个问题"。
+
+- **混合检索（向量+BM25）是客服场景的工程基准线，单一向量检索不足以支撑生产级客服。** 用户在客服场景的提问往往包含明确的产品名称、功能术语，这些关键词向量检索无法精确命中。BM25弥补了这一差距，而Reranker和RRF则在多路召回后保证了最终结果的相关性排序。
+
+- **意图识别的分类体系需要同时从产品视角和用户视角进行梳理，缺一不可。** 产品视角决定系统能提供什么，用户视角决定用户真正关心什么——两者融合才能形成既完整又准确的分类体系。初次上线后应持续根据真实用户问法迭代二级分类，这是AI客服效果调优的主要工作之一。
+
+- **全链路可观测性必须在系统设计阶段就纳入架构，而不是事后补充。** 10个关键节点的日志记录不仅是调试工具，也是持续优化迭代的数据基础。当系统出现问题时，如果无法快速定位是意图识别、问题改写、知识召回还是生成判断出了问题，优化工作就只能靠猜——这对AI客服这类复杂链路系统是致命的。
+
+- **数据飞轮是AI客服的持续竞争力，但必须建立严格的知识入库审核标准防止污染。** 低置信度问题池只是起点，问题标准化去除了口语和情绪，相似度合并识别了高频共性问题，人工审核确保了只有真正需要沉淀的知识才进入知识库。这个飞轮转动得越久，AI客服覆盖的用户问题就越全面——这是AI客服相对于人工客服的长期成本优势来源。
+
+---
+
+## Ch10.003 Nvidia Multimodal RAG Knowledge Systems
+
+> 📊 Level ⭐⭐⭐ | 22.0KB | `entities/nvidia-multimodal-rag-knowledge-systems.md`
+
+# Build AI&#x2d;Ready Knowledge Systems Using 5 Essential Multimodal RAG Capabilities | NVIDIA Technical Blog
+Build AI&#x2d;Ready Knowledge Systems Using 5 Essential Multimodal RAG Capabilities | NVIDIA Technical Blog DEVELOPER Home Blog Forums Docs Downloads Training Join Technical Blog Subscribe Related Resources Agentic AI / Generative AI English Build AI-Ready Knowledge Systems Using 5 Essential Multimodal RAG Capabilities Feb 17, 2026 By Shruthii Sathyanarayanan , Sumit Bhattacharya , Punit Kumar , Pranjal Doshi and Nikhil Kulkarni Like Discuss (1) L T F R E Enterprise data is inherently complex: real-world documents are multimodal, spanning text, tables, charts and graphs, images, diagrams, scanned pages, forms, and embedded metadata. Financial reports carry critical insights in tables, engineering manuals rely on diagrams, and legal documents often include annotated or scanned content.&nbsp; Retrieval-augmented generation (RAG) was created to ground LLMs in trusted enterprise knowledge retrieving relevant source data at query time to reduce hallucinations and improve accuracy. But if a RAG system processes only surrounding text, it misses key signals embedded in tables, charts, and diagrams resulting in incomplete or incorrect answers. An intelligent agent is only as good as the data foundation it s built on. Modern RAG must therefore be inherently multimodal able to understand both visual and textual context to achieve enterprise-grade accuracy. The NVIDIA Enterprise RAG Blueprint is built for this, providing a modular reference architecture that connects unstructured enterprise data to the intelligent systems built on top of it.&nbsp; The blueprint also serves as a foundational layer for the NVIDIA AI Data Platform , helping to bridge the traditional gap between compute and data. By enabling retrieval and reasoning closer to the data layer, it preserves governance, reduces operational friction, and makes enterprise knowledge immediately usable by intelligent systems. The result is a modern AI data stack storage that can retrieve, enrich, and reason alongside your models. While the Enterprise RAG Blueprint provides many configurable options, this post highlights the following five key configurations that most directly improve accuracy and contextual relevance across enterprise use cases:&nbsp; Baseline multimodal RAG pipeline Reasoning Query decomposition Filtering metadata for faster and precise retrieval Visual reasoning for multimodal data The post also explains how the blueprint can be embedded into AI data platforms to transform traditional repositories into AI-ready knowledge systems.&nbsp; Accuracy metrics in this blog are measured using the RAGAS framework , using well-known public datasets. Learn more about evaluating your NVIDIA RAG Blueprint system . 1. Document ingestion and understanding Before an agent can deliver insights, it must be perfectly grounded in your data. This foundational configuration focuses on intelligent document ingestion and core RAG functionality.&nbsp; The Enterprise RAG Blueprint uses NVIDIA NeMo Retriever to extract multimodal enterprise content text, tables, charts and graphs, and infographics then embeds that content into text for indexing in a vector database. At query time, the blueprint runs semantic retrieval, reranking, and Nemotron LLM to generate a grounded answer. To maximize performance, this baseline intentionally avoids image captioning and heavy reasoning, making it the ideal starting point for production deployments. Deploy this baseline on Docker . Benefits of document ingestion and understanding&nbsp; This foundational configuration is the blueprint s highest-efficiency pipeline, optimized for accuracy and throughput while keeping GPU cost and time to first token (TTFT) low. This configuration establishes your baseline performance for retrieval quality and LLM grounding. Figure 1. RAG pipeline Table 1 summarizes the overall impact across a few datasets. Accuracy (v2.3 Default) MM = Multimodal, TO = Text-Only Dataset Type Accuracy RAG Battle MM 0.809 KG RAG MM 0.565 FinanceBench MM 0.633 BO767 MM 0.910 HotpotQA TO 0.671 Google Frames MM 0.509 Table 1. Accuracy impact of baseline configuration (higher is better) 2. Reasoning When you turn on reasoning in the RAG blueprint, you enable the LLM to interpret the retrieved evidence, and synthesize logically grounded answers. This is the easiest change to get an accuracy boost for many applications. Enable reasoning for the NVIDIA Enterprise RAG Blueprint . Table 2 summarizes the overall impact across several sample datasets. Accuracy (v2.3 Default) plus Reasoning MM = Multimodal, TO = Text-Only Dataset Type Reasoning on Default RAG Battle MM 0.85 0.809 KG RAG MM 0.58 0.565 FinanceBench MM 0.69 0.633 BO767 MM 0.88 0.91 Table 2. Accuracy impact of enabling reasoning versus baseline configuration (higher is better) Benefits of reasoning&nbsp; For any use case involving mathematical operations or complex data comparison, a typical simple similarity or hybrid search will not suffice. Reasoning is required to correct errors and ensure precise contextual understanding. Accuracy improvements across datasets averaged ~5%, with several cases demonstrating dramatic reasoning-driven corrections.&nbsp; Examples In the FinanceBench dataset, the baseline configuration incorrectly computed the Adobe FY2017 operating cash flow ratio as 2.91. After enabling reasoning, the model produced the correct answer, 0.83. In addition, the Ragbattle dataset demonstrates the accuracy improvement from enabling VLM. 3. Query decomposition&nbsp; Answering complex user questions often requires pulling facts from multiple places in the data foundation. Query decomposition breaks a single question into smaller subqueries, retrieves evidence for each, and recombines the results into a complete, grounded response. Turn on query decomposition for the NVIDIA Enterprise RAG Blueprint . Figure 2. Response accuracy before and after query decomposition Benefits of query decomposition Query decomposition significantly improves accuracy for multihop and context-rich questions that span multiple paragraphs or documents. It does add extra LLM calls (increasing latency and cost), but the accuracy gains are often worth it for mission-critical enterprise use cases. Query decomposition can also be paired with reasoning for an additional boost when needed. Example As NVIDIA AI Data platform partners evolve to offer more relevant and accurate retrieval, this feature can either include some level of query processing as part of the data platform or can be left to the agent. Learn more about how query decomposition can be an approach in some use cases .&nbsp; Table 3 shows the overall impact across a few datasets. Accuracy (v2.3 Default) plus Query Decomposition MM = Multimodal, TO = Text-Only Dataset Type Query decomposition Default RAG Battle MM 0.854 0.809 FinanceBench MM 0.631 0.633 BO767 MM 0.885 0.91 HotpotQA TO 0.725 0.671 Google Frames MM 0.6 0.5094 Table 3. Accuracy impact of query decomposition versus baseline configuration (higher is better) 4. Filtering metadata for faster and precise retrieval Metadata, such as author, date, category, and security tags, has always been integral to enterprise data. In RAG pipelines, metadata filters can be leveraged to narrow the search space and align retrieved content with the right context, significantly improving retrieval precision and speed.&nbsp; The RAG blueprint supports custom metadata ingestion and automatic query generation based on that data. To leverage your custom metadata, see Advanced Metadata Filtering with Natural Language Generation . To learn more about what s possible with this feature set, check out the example notebook on the NVIDIA-AI-Blueprints/rag GitHub repo.&nbsp; Benefits of metadata filtering Metadata filtering narrows the search space for faster retrieval and improves precision by aligning retrieved content with context. This allows developers to leverage metadata without manual filter logic to achieve higher throughput and contextual relevance. When metadata filtering capabilities are embedded directly into AI data platforms, it can make your storage smarter, leading to faster retrieval and lower latency. Example To provide an example, consider two documents that are ingested with the following metadata: custom_metadata = &#x5B; { &quot;filename&quot;: &quot;ai_guide.pdf&quot;, &quot;metadata&quot;: { &quot;category&quot;: &quot;AI&quot;, &quot;priority&quot;: 8, &quot;rating&quot;: 4.5, &quot;tags&quot;: &#x5B;&quot;machine-learning&quot;, &quot;neural-networks&quot;], &quot;created_date&quot;: &quot;2024-01-15T10:30:00&quot; } }, { &quot;filename&quot;: &quot;engineering_manual.pdf&quot;, &quot;metadata&quot;: { &quot;category&quot;: &quot;engineering&quot;, &quot;priority&quot;: 5, &quot;rating&quot;: 3.8, &quot;tags&quot;: &#x5B;&quot;hardware&quot;, &quot;design&quot;], &quot;created_date&quot;: &quot;2023-12-20T14:00:00&quot; } } When using metadata with dynamic filter expression, a query such as, &#8220;Show me high-rated AI documents with machine learning tags created after January 2024&#8221; will translate to one that automatically generates a filtering expression such as: filter_expression = `content_metadata&#x5B;&quot;category&quot;] == &quot;AI&quot; and content_metadata&#x5B;&quot;rating&quot;] &gt;= 4.0 and array_contains(content_metadata&#x5B;&quot;tags&quot;], &quot;machine-learning&quot;) and content_metadata&#x5B;&quot;created_date&quot;] &gt;= &quot;2024-01-01 ` With metadata filtering enabled, the system retrieved 10 focused citations from one document, ai_guide.pdf , achieving 100% precision on the target domain while reducing search space by 50%. 5. Visual reasoning for multimodal data&nbsp; Enterprise data is visually rich. Where traditional text-only embeddings fall short, vision language models (VLMs) such as NVIDIA Nemotron Nano 2 VL (12B) introduce visual reasoning into the pipeline. Learn more about how to leverage a VLM for generation in the RAG Blueprint.&nbsp; Figure 3. Before and after leveraging a VLM for generation Benefits of visual reasoning&nbsp; Visual reasoning is crucial for handling real-world enterprise documents. Integrating a VLM in the generation pathway enables the RAG system to interpret images, charts, and infographics, making it possible to accurately answer queries where the information lies in a structured visual element rather than just the surrounding text.&nbsp; Example&nbsp; A significant accuracy improvement was observed when a VLM was enabled for the Ragbattle dataset in the RAG Blueprint, especially when the answer was in a visual element. Note that enabling VLM inference can increase response latency from additional image processing. Consider this tradeoff between accuracy and speed based on your requirements. Learn more about the accuracy improvements with VLM for the Ragbattle dataset. Transforming enterprise storage into an active knowledge system The Enterprise RAG Blueprint demonstrates how the progressive adoption of these five capabilities from reasoning and metadata-driven retrieval to multimodal understanding directly enhances the accuracy and groundedness of your intelligent agents. Each capability offers a unique balance between latency, token cost, and contextual precision, providing a flexible, tunable framework that can be adopted to various enterprise use cases. This accelerates the evolution of the data foundation itself. The NVIDIA AI Data Platform transforms enterprise data into AI-searchable knowledge. As NVIDIA partners evolve their storage offerings, this blueprint serves as a reference for delivering embedded RAG capabilities that leverage metadata to enforce permissions, track changes, and provide highly accurate retrieval directly at the storage layer. NVIDIA storage partners are building AI data platforms based on the NVIDIA reference design that are transforming enterprise storage from a passive repository to become an active intelligent system in the AI workflow. The result is a next-generation enterprise data infrastructure: faster, smarter, and purpose-built for the age of generative AI. What s new with the NVIDIA Enterprise RAG Blueprint The latest release of the NVIDIA EnterpriseRAG Blueprint deepens its focus on serving agentic workflows. It introduces first-class document-level summarization with both shallow and deep strategies, enabling agents to quickly assess relevance, narrow search space, and balance accuracy with latency. A new data catalog improves discoverability and governance across large corpora, while upgrades to the best-in-class Nemotron RAG models further enhance retrieval quality, reasoning, and generation performance making RAG a more efficient, agent-ready foundation for enterprise-scale knowledge systems. Get started with enterprise-grade RAG Ready to integrate these five capabilities into your RAG use cases? Access the modular code, documentation, and evaluation notebooks for free within the NVIDIA Enterprise RAG Blueprint . Make your enterprise data AI-ready and transform your production data into an intelligent knowledge system with embedded RAG capabilities with NVIDIA AI Data Platform. Contact an NVIDIA AI storage partner to get started with your own NVIDIA-powered AI data platform.&nbsp; Discuss (1) Like Tags Agentic AI / Generative AI | Data Center / Cloud | General | Blueprint | Nemotron | Intermediate Technical | Best practice | AI Agent | AI Data Platform | AI-Ready Data | featured | LLMs | Retrieval Augmented Generation (RAG) About the Authors About Shruthii Sathyanarayanan Shruthii Sathyanarayanan is a product marketing manager in the NVIDIA Enterprise Computing group with a focus on enterprise AI and virtualization. Shruthii holds a bachelor s degree in Computer Engineering and Business from the University of Illinois at Urbana-Champaign and has previously held roles in software development and product management. View all posts by Shruthii Sathyanarayanan About Sumit Bhattacharya Sumit Bhattacharya is a senior engineering manager at NVIDIA, working on AI blueprints and conversational AI. His primary area of focus is building scalable, low-latency solutions for Enterprise RAG, data flywheels, and voice agents. He also has extensive experience of working on NLP, dialog systems, and voice assistants. He holds a master s degree in Electrical Engineering from the Indian Institute of Technology, Kharagpur, and has over 18 years of industry experience. View all posts by Sumit Bhattacharya About Punit Kumar Punit Kumar is a senior system software engineer at NVIDIA with a focus on the RAG Blueprint, production RAG systems, and features that improve accuracy and performance. Punit holds a master s degree in Data Science and Engineering from BITS Pilani and a BTech in Computer Science from SKIT Jaipur and has previously held roles in R&amp;D in AI engineering and in data engineering. View all posts by Punit Kumar About Pranjal Doshi Pranjal Doshi is a software engineer at NVIDIA, specializing in retrieval-augmented generation (RAG) and the productionization of large language models. Pranjal holds a master s degree in Computer Science and Engineering from the Indian Institute of Technology (IIT) Kharagpur and focuses on bridging the gap between AI research and scalable, real-world applications. View all posts by Pranjal Doshi About Nikhil Kulkarni Nikhil Kulkarni is a software engineer at NVIDIA specializing in the productization of the RAG Blueprint, with an emphasis on accuracy improvements, performance optimizations, and deployment. Nikhil holds a bachelor s degree in Computer Science and focuses on translating AI models into robust, enterprise-grade architectures. He has previously worked on building speech-based AI agents at NVIDIA. View all posts by Nikhil Kulkarni Comments Related posts Chat With Your Enterprise Data Through Open-Source AI-Q NVIDIA Blueprint Chat With Your Enterprise Data Through Open-Source AI-Q NVIDIA Blueprint NVIDIA NeMo Retriever Delivers Accurate Multimodal PDF Data Extraction 15x Faster NVIDIA NeMo Retriever Delivers Accurate Multimodal PDF Data Extraction 15x Faster Insights, Techniques, and Evaluation for LLM-Driven Knowledge Graphs Insights, Techniques, and Evaluation for LLM-Driven Knowledge Graphs Translate Your Enterprise Data into Actionable Insights with NVIDIA NeMo Retriever Translate Your Enterprise Data into Actionable Insights with NVIDIA NeMo Retriever Scaling Enterprise RAG with Accelerated Ethernet Networking and Networked Storage Scaling Enterprise RAG with Accelerated Ethernet Networking and Networked Storage Related posts Building NVIDIA Nemotron 3 Agents for Reasoning, Multimodal RAG, Voice, and Safety Building NVIDIA Nemotron 3 Agents for Reasoning, Multimodal RAG, Voice, and Safety How to Build Deep Agents for Enterprise Search with NVIDIA AI-Q and LangChain How to Build Deep Agents for Enterprise Search with NVIDIA AI-Q and LangChain Build Next-Gen Physical AI with Edge First LLMs for Autonomous Vehicles and Robotics Build Next-Gen Physical AI with Edge First LLMs for Autonomous Vehicles and Robotics Building Telco Reasoning Models for Autonomous Networks with NVIDIA NeMo Building Telco Reasoning Models for Autonomous Networks with NVIDIA NeMo How to Build a Document Processing Pipeline for RAG with Nemotron How to Build a Document Processing Pipeline for RAG with Nemotron L T F R E
+
+## 深度分析
+
+**1. 企业数据天然是多模态的，单语文本 RAG 存在结构性缺陷**
+
+企业文档涵盖文本、表格、图表、图片、图表、扫描页和表单，关键洞察往往嵌入在视觉元素而非周围文本中。传统仅处理文本的 RAG 系统会遗漏表格中的关键数据、图表中的趋势和表单中的结构化信息，导致不完整或错误的答案。多模态 RAG 是实现企业级准确率的必要条件而非可选项。
+
+**2. NVIDIA Enterprise RAG Blueprint 的模块化设计降低了多模态落地门槛**
+
+NVIDIA Enterprise RAG Blueprint 采用模块化参考架构，将文档摄取与理解、推理、查询分解、元数据过滤和视觉推理作为可独立配置的能力。这种设计使企业能够渐进式采用——从基础管道开始，逐步叠加推理（+5% 平均准确率提升）、查询分解（元数据+50% 搜索空间缩减）、VLM 视觉推理（视觉元素问答能力）等能力。
+
+**3. 推理能力对 RAG 准确率提升最显著且实现成本最低**
+
+启用推理后，RAG 准确率平均提升约 5%。在 FinanceBench 数据集上，基础配置错误计算 Adobe FY2017 经营现金流比率（2.91 vs 正确值 0.83），启用推理后自动修正。推理能力对于涉及数学运算或复杂数据对比的场景尤为关键，是大多数应用最容易获得的准确率提升。
+
+**4. 查询分解和元数据过滤是精准检索的重要支柱**
+
+查询分解通过将复杂多跳问题分解为子查询，从多个文档检索证据并重组答案，显著提升跨段落/多文档问题的准确率。元数据过滤通过安全标签、日期、类别等属性缩小搜索空间（减少 50% 搜索范围），同时聚焦检索内容与正确上下文，是企业知识管理场景的核心能力。
+
+**5. 视觉推理能力解锁企业文档中图像和图表的问答能力**
+
+NVIDIA Nemotron Nano 2 VL (12B) VLM 将视觉推理引入 RAG 管道，使系统能够解释图像、图表和信息图，在视觉元素中包含答案的数据集（如 Ragbattle）实现显著准确率提升。存储层嵌入 RAG 能力（NVIDIA AI Data Platform）使数据本身成为可推理的智能知识系统，实现治理保留、运营摩擦降低和权限直接执行。
+
+## 实践启示
+
+1. **多模态 RAG 是企业知识管理的必选项**：在选型时，文本+表格+图表的联合摄取和检索能力应作为企业 RAG 的基础要求，而非增强功能。
+
+2. **采用分阶段路径部署多模态 RAG**：从基础管道开始 → 启用推理处理数学/复杂对比 → 添加查询分解支持多跳问题 → 叠加元数据过滤和视觉推理 VLM，每阶段交付可衡量的准确率提升。
+
+3. **金融/法律等高精度场景优先启用推理能力**：推理对涉及数值计算和多步逻辑的查询准确率提升最为显著，应在第一阶段就启用而非留到后期。
+
+4. **元数据驱动检索应在数据摄取阶段同步设计**：在设计企业 RAG 时，从一开始就规划好作者、日期、类别、安全标签等元数据的完整摄取，以支撑后续精准过滤。
+
+5. **推进数据基础设施现代化为 AI 原生**：存储层嵌入 RAG 能力（向量检索+语义理解）是企业数据基础设施的未来方向，应纳入 AI 转型路线图。
+
+## 相关实体
+- [Nvidia Nemotron 3 Agents Rag Voice Safety](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-nemotron-3-agents-rag-voice-safety.md)
+- [Nvidia Extreme Co Design Agentic Systems](ch04/093-nvidia-extreme-co-design-agentic-systems.html)
+- [Nvidia Agentic Ai Subsurface Engineering](ch04/198-nvidia-agentic-ai-subsurface-engineering.html)
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/049-nvidia-secure-local-agent-nemoclaw-openclaw.html)
+- [Nvidia Telco Reasoning Models Nemo](ch01/210-nvidia-telco-reasoning-models-nemo.html)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
+
+→ [原文存档](https://developer.nvidia.com/blog/build-ai-ready-knowledge-systems-using-5-essential-multimodal-rag-capabilities/)
+
+---
+
+## Ch10.004 Manufacturing Intelligence with Amazon Nova Multimodal Embeddings
+
+> 📊 Level ⭐⭐⭐ | 17.0KB | `entities/amazon-nova-manufacturing-intelligence.md`
+
+## 为什么制造业需要多模态检索
+
+制造业文档的一个典型特征是文本与图像的深度融合。单个工单可能同时包含书面装配步骤和已完成步骤的标注照片；检测报告将合格/不合格测量值与焊缝 X 光图像配对；材料认证证书同时包含表格化的力学性能和 S-N 疲劳曲线。
+
+以本文评估数据集中的具体示例来说明：扭矩规范表被绘制在工程图内部而非作为独立文本存储；彩色编码的热等值线图用于可视化火箭发动机喷嘴的峰值温度；制造工艺流程图通过决策菱形和颜色编码的关卡来直观标注质量暂停点，相关周期时间则以图表注释的形式呈现。
+
+文本检索系统处理这类文档时，通常先通过 OCR 提取文本，再对提取的字符串进行嵌入和索引。这种方法在答案位于文档书面部分时有效，但会丢失图表中的空间关系、检测图像中的视觉模式，以及图表和曲线中编码的定量信息。当搜索涡轮泵中使用的轴承类型时，答案可能以横截面图上的标注形式出现，而 OCR 可能误读或剥离了其空间上下文。
+
+多模态嵌入采用不同方法：模型直接处理图像并生成与文本嵌入位于同一空间中的向量，无需先将图像转换为文本。关于涡轮泵轴承的文本查询可以直接基于视觉理解与数据集中的横截面图进行匹配。
+
+## Amazon Nova Multimodal Embeddings 概述
+
+Amazon Nova Multimodal Embeddings 在 Amazon Bedrock 上可用，能为文本、图像和多页文档生成嵌入。文本、图像和文档模态投影到单一共享向量空间，支持直接计算文本嵌入与图像嵌入之间的余弦相似度。
+
+该模型支持 256、384、1024 和 3072 四种嵌入维度配置。更高维度捕获更多语义细节，但需要更多存储和计算资源进行相似度搜索。本文评估使用 1024 维度作为检索质量与成本的实际平衡点。模型还支持 `DOCUMENT_IMAGE` detail level，这是一种专为混合内容页面（如图表、表格和带注释的示意图）设计的处理模式。
+
+对于检索工作负载，模型接受 `purpose` 参数，可设置为 `GENERIC_INDEX`（用于被索引的文档）或 `GENERIC_RETRIEVAL`（用于查询）。这种非对称嵌入方法改善了检索的向量空间，无需手动格式化查询。
+
+## 解决方案架构
+
+该方案构建了两个并行检索管道进行比较：
+
+**数据集**：15 张独立技术图像（CAD 图形、检测报告、测试图表、材料规格、工艺流程图）和 5 份多页 PDF（装配程序、热试车报告、工程变更通知、材料认证、不合格报告），包含合成航空航天制造数据。
+
+**管道 A（多模态）**：使用 Amazon Nova Multimodal Embeddings 直接嵌入每张图像，每份 PDF 页面作为文档图像嵌入，然后摄入 Amazon S3 Vectors 索引。
+
+**管道 B（纯文本基线）**：将每张图像和 PDF 页面发送给 Amazon Nova 2 Lite 进行 OCR 文本提取，使用 Amazon Nova Multimodal Embeddings（纯文本输入）嵌入提取的文本，然后摄入独立的 Amazon S3 Vectors 索引。
+
+## 评估方法
+
+评估分为两个阶段：检索质量（系统是否找到正确文档？）和生成质量（语言模型能否根据检索到的上下文生成正确答案？）。评估数据集包含 26 个从航空航天制造文档衍生的查询，每个查询都有真实相关的文档 ID 和参考答案。
+
+### 检索评估指标
+
+检索评估计算三个指标：
+
+- **Recall@K**：相关文档出现在前 K 个结果中的比例
+- **MRR**（Mean Reciprocal Rank）：首个相关结果排名的倒数均值
+- **NDCG@K**（Normalized Discounted Cumulative Gain）：当相关文档排名更高时给予更多权重
+
+### LLM 评判的生成评估
+
+对于生成评估，两个管道都检索每个查询的前五个结果。多模态管道将检索到的图像直接作为多模态上下文传递给 Amazon Nova 2 Lite；纯文本管道将 OCR 提取的文本作为字符串上下文传递。使用 Anthropic Claude Sonnet 4.5 作为 LLM 评判，对每个生成的答案根据真实答案打分 1-5 分。
+
+## 评估结果
+
+### 多模态检索指标
+
+多模态管道在 K=5 时达到 90% 的召回率，在 K=10 时升至 96%。MRR 为 0.92，表明首个相关结果通常出现在第 1 位。有两个查询在 K=10 时召回率低于 1.0，因为相关信息分散在 PDF 和独立图像中，其中一个相关来源未出现在前 10 名。
+
+### 生成质量：纯文本 vs 多模态
+
+| 管道 | 评判平均分 | 归一化分数 |
+|---|---|---|
+| 多模态 (MME) | **4.88/5** | **0.977** |
+| 纯文本 (OCR) | 2.00/5 | 0.400 |
+
+多模态管道在 88% 的查询（26 个中的 23 个）上表现更好，平均 4.88/5 分。纯文本管道平均 2.00 分，其中 26 个查询中有 17 个得分 1 分（完全错误）。视觉内容（如热分析等值线图、疲劳曲线、工艺流程图和 CAD 标注标签）改进最为显著。
+
+### 实现复杂度和成本
+
+多模态管道的实现更简单且运行成本更低。纯文本管道每个文档需要两次模型调用（一次 OCR 文本提取，一次文本嵌入），且需要针对多样化文档布局进行提示工程。多模态管道每个文档仅需一次嵌入调用，无需中间提取步骤，将每个文档摄入成本降低约一半。
+
+## 技术要点
+
+**嵌入维度选择**：1024 维在本文场景下实现检索质量与成本的最佳平衡，支持从 256 到 3072 的灵活配置。
+
+**Detail Level 配置**：对于包含混合内容的 PDF 页面，`DOCUMENT_IMAGE` 模式优于 `STANDARD_IMAGE`，因为模型对表格和图表内容应用额外处理。
+
+**Asymmetric Embedding**：`GENERIC_INDEX` 和 `GENERIC_RETRIEVAL` 的分离设计使查询-文档匹配更加精准，无需手动格式化查询文本。
+
+**Amazon S3 Vectors**：作为托管式向量存储和查询层，无需集群管理或容量规划，按请求计费无持久基础设施。
+
+## 与 [Amazon Nova Lite 微调](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-nova-lite-fine-tuning-cost-effective-vision-detection-model-tuning-case-and-practice.md) 的关系
+
+Amazon Nova Multimodal Embeddings 与  同属 Amazon Nova 家族的多模态能力，但定位不同：MME 专注于跨模态语义检索，将不同模态映射到统一向量空间；Lite 微调则针对特定视觉检测任务的端到端优化。两者都利用 Amazon Bedrock 的托管推理能力，但在下游任务上形成互补——检索 vs 判别。
+
+## 深度分析
+
+**1. 端到端多模态处理避免了 OCR 管道的信息丢失，这是生成质量差距的根源**
+
+纯文本管道（2.00/5）vs 多模态管道（4.88/5）的巨大差距，其本质是信息转换链中的丢失。纯文本管道经过 OCR 提取（可能误读工程图中的符号和标注）→ 文本嵌入（丢失空间关系）→ 生成器收到纯文本（没有视觉上下文）→ 生成错误答案。多模态管道直接处理图像（保留完整视觉信息）→ 图像嵌入（保留空间关系）→ 生成器收到原始图像（直接视觉理解）→ 生成正确答案。这印证了一个关键原则：多模态系统的端到端设计优于串联设计，任何中间转换步骤都会造成信息丢失，且丢失的信息在后续阶段无法恢复。
+
+**2. 纯文本检索在视觉密集型文档上的失败不是偶然而是系统性局限**
+
+26 个查询中 17 个纯文本管道得 1 分（完全错误），这不是个别案例而是系统性问题。OCR 在扭矩规范表绘制在工程图内部、热等值线图可视化峰值温度、决策菱形标注质量暂停点等场景中失效是必然的——这些信息的编码方式（空间位置、颜色编码、图形标注）本质上不是文本形式，而是视觉形式。传统文本检索的前提假设"信息存在于文本中"在这些场景中根本不成立。对于任何视觉密集型文档（工程图纸、检测图像、工艺流程图、曲线图表），纯文本检索从原理上就注定失败，多模态嵌入是唯一的解决路径。
+
+**3. 多模态检索的"实现简单+成本降低"具有正向飞轮效应**
+
+多模态管道每个文档仅需一次嵌入调用（vs 纯文本管道两次），无需提示工程处理多样化文档布局，且摄入成本降低约一半。这意味着不仅准确性更高，实施成本也更低。这种"更简单+更便宜+更准确"的三重优势会形成正向飞轮：成本优势驱动更多采用，更多采用产生更多训练数据，更多数据进一步提升模型质量。对制造业而言，这意味着多模态检索的 ROI 计算应该包含：传统方案的实际总成本（OCR失败率×业务损失 + 两次调用成本 + 提示工程维护成本），而不仅是多模态方案的直接成本节省。
+
+**4. 检索质量与生成质量必须联合评估，单独评估检索质量会误导系统选型**
+
+多模态管道在 K=5 时达到 90% 召回率（检索指标优秀），但这个数字如果被视为唯一评估标准，会掩盖纯文本管道在生成环节的彻底失败（88% 查询多模态更优）。这提示了一个关键的系统性盲点：很多 RAG 系统评估只看检索指标（Recall@K、MRR），但检索正确不等于生成正确——即使找到正确文档，如果以错误方式传递给生成器（纯文本 vs 原始图像），生成质量仍会崩溃。完整的评估必须包含端到端生成质量，才能真正反映用户实际体验。
+
+**5. 嵌入维度选择需要基于实际场景评估，1024 是制造业文档检索的实用平衡点**
+
+Amazon Nova MME 支持 256/384/1024/3072 四种维度，1024 被本文选为实用平衡点。这说明维度选择不是越高越好——3072 维可能捕获更多细节，但存储和计算成本也更高。评估结果在 1024 维实现 K=5 时 90% 召回率、K=10 时 96% 召回率，对于大多数制造文档检索场景已经足够。实际选型建议：先用 1024 维评估基线，如果特定场景召回率不足再尝试更高维度，同时监控存储和查询延迟的变化。不同行业文档的语义复杂度不同，需要实验确定最优维度。
+
+## 实践启示
+
+**1. 视觉密集型制造文档优先使用多模态嵌入而非 OCR+文本嵌入方案**
+
+对于航空航天、汽车、重型制造等行业的制造文档（CAD 图形、热等值线图、工艺流程图、检测照片、疲劳曲线），强烈建议采用多模态嵌入方案而非传统的 OCR+文本嵌入方案。评估结果已充分证明：多模态方案在生成质量上大幅领先（4.88/5 vs 2.00/5），同时实现更简单（单次调用 vs 两次调用）、成本更低（摄入成本降低约一半）。对于已有大量工程图纸和视觉文档的制造企业，这是立即可用的文档检索智能化路径。实施路径：1）将制造文档图像直接摄入 Amazon S3 Vectors；2）使用 Amazon Nova MME 生成 1024 维嵌入；3）通过 Amazon Nova 2 Lite 生成答案。
+
+**2. 评估多模态检索系统必须同时评估检索指标和端到端生成质量**
+
+单独评估检索指标（Recall@K、MRR、NDCG@K）会掩盖"检索正确但生成失败"的问题。建议的评估框架分两层：1）检索层评估文档召回率（K=5, K=10）；2）生成层使用 LLM-as-Judge 评估端到端答案质量（1-5 分），输入应为完整的检索-生成管道。评判时将 ground truth 答案、生成答案和查询一并给 LLM 评分。多模态管道的 88% 查询更优这一数据，只有在端到端评估框架下才能得出——这是本文最重要的方法论贡献，对所有 RAG 系统评估都有参考价值。
+
+**3. PDF 页面摄入时使用 DOCUMENT_IMAGE 模式而非 STANDARD_IMAGE**
+
+对于混合内容页面（包含图表、表格、标注示意图的 PDF），必须使用 `DOCUMENT_IMAGE` detail level 而非 `STANDARD_IMAGE`。这是因为模型对 `DOCUMENT_IMAGE` 模式会应用额外处理，专门优化表格和图表内容的嵌入质量。对于制造文档场景（大多数 PDF 都包含混合内容），这是保证嵌入质量的关键配置。相对地，对于纯图像（如独立 CAD 图、检测照片），使用 `STANDARD_IMAGE` 模式即可。实施时建议对不同类型文档测试两种模式，选择召回率更高的配置。
+
+**4. 充分利用 GENERIC_INDEX / GENERIC_RETRIEVAL 非对称嵌入设计**
+
+Amazon Nova MME 的 `GENERIC_INDEX`（文档索引用）和 `GENERIC_RETRIEVAL`（查询用）分离设计是有目的的架构选择，不是简单的参数。对索引文档使用 `GENERIC_INDEX` 使文档嵌入更全面（针对文档理解优化），对查询文本使用 `GENERIC_RETRIEVAL` 使查询嵌入更适合匹配（针对查询-文档匹配优化）。这种非对称设计改善了向量空间的质量，无需用户手动格式化查询文本。实施时应严格遵循这一分离设计，不要对查询也使用 `GENERIC_INDEX`。
+
+**5. 托管向量存储（Amazon S3 Vectors）是多模态检索的实用选择**
+
+对于大多数企业，S3 Vectors 作为托管式向量存储和查询层是更实用的选择：无需集群管理或容量规划，按请求计费无持久基础设施，集成 Amazon Bedrock 的模型调用自然流畅。对于制造业文档检索这类场景，托管方案的性能和成本通常已经足够，无需自建向量数据库。实施路径：使用 Amazon S3 Vectors 创建向量桶和索引，摄入时批量提交（本文使用 50 个一批），查询时指定 topK 和返回距离及元数据。评估完成后记得清理索引和桶以避免持续计费。
+
+## 参见
+
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/manufacturing-intelligence-with-amazon-nova-multimodal-embeddings/)
+
+→ [Amazon Bedrock 模型推理无服务器架构案例](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-model-inference-serverless-architecture-case-study.md)
+
+→ [Amazon Nova Sonic 可扩展语音代理设计](https://github.com/QianJinGuo/wiki-public/blob/main/entities/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session.md)
+
+→ [Amazon Nova 2 内容审核提示工程](ch01/581-prompting-amazon-nova-2-for-content-moderation.html)
+
+→ [Amazon Bedrock AgentCore 运行时深度解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-agentcore-runtime-deep-dive-and-scenario-analysis.md)
+
+## 相关实体
+
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/amazon-aws-ai.md)
+
+---
+
+## Ch10.005 怎么短平快地把RAG做好：厦门国际银行数创金融杯RAG初赛方案
+
+> 📊 Level ⭐⭐⭐ | 8.0KB | `entities/xiamen-bank-rag-competition-financial-regulation-trustrag.md`
+
+## 摘要
+
+本文解读厦门国际银行第五届数创金融杯大模型应用挑战赛初赛方案：赛题为**金融监管制度智能问答**（经典 RAG），要求基于给定金融文档库，对不定项选择题和问答题生成"准确、合规"的答案；整体工程只能在受限硬件（CPU 8 核 / 32G 内存 / 24G 显存）下推理，以 A/B 榜评估、B 榜定名次。作者以 TrustRAG 框架为脚手架，在两周边际时间内冲刺、约 10 天冲入 top10，给出了一条"短平快"、效果够用的 RAG 落地路径。
+
+→ [原文存档](https://mp.weixin.qq.com/s/wJ6Zk_Wu4O3wcSWs0NnL_w)
+
+## 核心要点
+
+- 金融监管问答是高利害领域：答案须"准确、合规"，既同幻觉作战，也同术语歧义作战，正确性直接关系合规判断。
+- 采用七步经典流水线：文档加载解析 → 文本切块 → 混合检索重排 → 指令数据集构造 → 模型微调 → 推理 → 投票融合。
+- 混合检索 BM25（权重 0.3）+ Dense（bge-m3 / bge-large-zh-v1.5，权重 0.7），Top-15 候选再经 BGE-reranker-large 精排；选择题把选项拼进查询辅助定位。
+- 句子级切块（SentenceChunker）不割裂完整句子，256 的 chunk_size 在召回率实验中表现最佳，切块与文件元信息分离存储减少冗余。
+- 微调补差距：Qwen3-8B/14B + QLoRA/LoRA，实测 8B 与 14B 分数接近、甚至 8B 更优——通用模型金融监管表现不够，需领域数据微调。
+- 推理期以 temperature=0.0 贪心解码、max_new_tokens=512、batch_size=1 强化稳定性。
+- 结果投票融合：选择题多数投票，问答题取语义相似度最高者。
+- 作者结论：RAG 没有标准答案，考验的是面对不同任务灵活变通、基于成熟脚手架快速改造并"发现问题解决问题"的能力。
+
+## 深度分析
+
+### 金融监管约束下的 RAG：精确、可追溯、可审计
+
+金融监管制度问答与泛化知识问答最大的分野在于约束强度。题目明确要求"生成准确、合规的答案"——准确意味着答案必须锚定文档原文而非模型记忆，合规意味着表述要符合监管语言与术语体系，两者共同把任务推向"拒绝模糊、拒绝编造"。这类约束沿着整条流水线传导：检索阶段需要高密度小 chunk 以保证命中，生成阶段需要"与文档原文精确对比、逐一验证"的强约束 prompt，数据阶段则需要把文件名、token 长度、是否含表格等元信息以 JSON/映射表结构化保存，使每个答案都可回查到出处——这正是金融场景"可追溯、可审计"诉求在工程上的落地。表格在金融监管文档中的高价值也被显式处理：加载解析阶段即标记含表格文档，避免做 embedding 时丢失结构性关键信息（限额、比例、名单常藏在表格里）。
+
+### TrustRAG 框架：面向可信 RAG 的可复用脚手架
+
+方案的技术底座是 gomate-community 的 TrustRAG 项目（DocxParser、SentenceChunker 等组件），代码几乎全部复用。这体现了作者"短平快"的核心方法论：不从头造轮子，而是站在可信 RAG 脚手架上做增量改造，把有限时间花在数据、prompt、融合这些真正决定分数的环节。一个值得注意的细节是用与问答模型同款的 Qwen3-8B tokenizer 统计文档 token 长度，以精准设计窗口大小、提高输入长度预算的利用效率——领域 token 数的经验值（大部分文档约 1600 token）让后续切块与上下文组织有据可依。
+
+### 检索与重排：混合信号与多配置融合
+
+检索层采用混合检索补齐单一方法的短板：BM25 抓关键词的字面匹配，Dense 向量抓语义相关，以 0.3/0.7 加权融合召回 Top-15，再经 BGE-reranker-large 精排。更巧妙的是把"多配置"当作泛化手段：用 2 个 embedding 模型（bge-m3、bge-large-zh-v1.5）× 2 种 chunk_size（256、512）交叉组合，构造出彼此独立、各有偏好的检索-生成样本，为末端的投票融合铺底——不同配置在召回分布上互补，融合后整体稳健性显著提升。作者也坦承困难场景：答案可能跨多个 chunk 分布、相似内容过多导致排序靠后（如"双线报告"类题目）、以及部分问题无需检索即可由模型自身知识回答——识别并分类这些困难，是调优召回与切块的关键输入。
+
+### 高利害场景下的幻觉控制与推理稳定性
+
+幻觉控制在高利害领域是叠加的、多层的防线，而非单点技术。第一层是检索质量（混合检索+重排+小 chunk 高信息密度），保证模型"有据可依"；第二层是 prompt 约束（选择题"精准分析/逐一验证"+严格格式"A,C,D"，问答题五步推理链：问题解构→信息检索→内容筛选→答案组织→答案优化，并要求规范金融监管术语）；第三层是解码配置（temperature=0.0 贪心解码消除随机性）；第四层是推理期投票融合，用多数投票与语义相似度做次级纠错。此外以领域数据微调 QLoRA 补齐通用模型在金融监管上的知识盲区——四个层次层层兜底，共同把高利害场景下"看起来合理但实为编造"的输出空间压到最小。
+
+## 实践启示
+
+1. 领域 RAG 的性价比起点是"召回密度"：句子级切块 + 小 chunk（256）+ 混合检索 + 重排，比追求大模型更立竿见影。
+2. 把"可校验"写进 prompt：要求逐项对照原文、严格输出格式，既是工程约束更是廉价幻觉护栏。
+3. 用"多配置融合"以廉价换稳健：不同 chunk×embedding 组合投票显著提升效果，且不增加推理期复杂度。
+4. 受限硬件下 QLoRA 是务实选择，且 8B 常已够用——不必盲目追逐更大模型，把算力留给融合与迭代。
+5. 高利害领域务必在数据层保留结构化元信息（文件名、token 数、表格标记、chunk→file 映射），为可追溯和审计留下后路。
+6. 不要从零造轮子：基于成熟可信 RAG 脚手架（如 TrustRAG）快速改造，把时间花在识别困难案例和调试上，是"短平快做好"的关键。
+
+## 相关实体
+
+- [RAG技术框架的演进方向](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag技术框架的演进方向.md) — Classic → Graph → Agentic RAG 演进路线，本文为其经典 RAG 打法提供实证对照
+- [AFAC2026 金融 AI Agent 竞赛](https://github.com/QianJinGuo/wiki-public/blob/main/entities/afac2026-financial-ai-agent-competition-harness.md) — 另一金融 AI 竞赛方案，可对比"RAG 问答"与"Agent 编排"两条路线
+- [RAG 分块-嵌入-重排全链路](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-chunk-embedding-rerank-pipeline.md) — 与本文混合检索+重排设计互补的管道细节
+- [Stripe 金融合规 AI Agent 实践](ch04/363-stripe-financial-compliance-ai-agent-production-lessons.html) — 同为金融合规场景，可从生产侧视角印证本文的可追溯、可审计原则
+
+---
+
+## Ch10.006 向量库是RAG的前菜，知识图谱是答案，本体论是灵魂
+
+> 📊 Level ⭐⭐⭐⭐ | 50.1KB | `entities/向量库是rag的前菜知识图谱是答案本体论是灵魂.md`
 
 [向量库是Rag的前菜知识图谱是答案本体论是灵魂](https://mp.weixin.qq.com/s/2pk4Mhr4nLMapJrTqpYX6Q)
 
@@ -382,19 +754,828 @@ PS：从这里也可以看出来，图谱的存在其实是为了解决工程维
 
 ## 关联阅读
 ## 相关实体
-- [Google Agentic Rag Sufficient Context Agent Framesqa](ch03/004-agent.html)
-- [Architecture Data Foundations For Ai Powered Search](ch01/418-architecture-data-foundations-for-ai-powered-search.html)
-- [Rag技术框架的演进方向](ch01/138-rag.html)
-- [Skill Rag Tsinghua Sra](ch07/045-skill.html)
-- [Harness Engineering Framework](ch05/026-harness-engineering.html)
+- [Google Agentic Rag Sufficient Context Agent Framesqa](https://github.com/QianJinGuo/wiki-public/blob/main/entities/google-agentic-rag-sufficient-context-agent-framesqa.md)
+- [Architecture Data Foundations For Ai Powered Search](ch01/377-architecture-data-foundations-for-ai-powered-search.html)
+- [Rag技术框架的演进方向](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag技术框架的演进方向.md)
+- [Skill Rag Tsinghua Sra](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-rag-tsinghua-sra.md)
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-framework.md)
 
 → [原文存档](https://mp.weixin.qq.com/s/2pk4Mhr4nLMapJrTqpYX6Q)
 
 ---
 
-## Ch10.002 RAG → 知识图谱 → 本体论：三层知识架构
+## Ch10.007 RAG 分块优化 2025：策略选择与工程实践
 
-> 📊 Level ⭐⭐ | 28.7KB | `entities/rag-vector-knowledge-graph-ontology.md`
+> 📊 Level ⭐⭐⭐⭐ | 17.9KB | `entities/rag-chunking-optimization-2025.md`
+
+## 相关实体
+
+- [elasticpp重塑elasticsearch查询性能的c内核引擎](https://github.com/QianJinGuo/wiki-public/blob/main/entities/elasticpp重塑elasticsearch查询性能的c内核引擎.md)
+→ [原文存档：分块向量化召回重排](https://mp.weixin.qq.com/s/Bl_u18--lqczQDV2x_NG-g)
+→ [原文存档：全链路技术详解](https://mp.weixin.qq.com/s/aA2PFaabKNlDq96jhAdDkQ)
+→ [原文存档：流水线](https://mp.weixin.qq.com/s/Bl_u18--lqczQDV2x_NG-g)
+
+## 核心命题
+
+RAG 系统的效果瓶颈不在模型，而在**入库质量**。同样的 Embedding 模型和 Rerank 策略，文档切得好与切得差，召回质量可能相差 40% 以上。2025 年的行业共识是：分块策略的选择与迭代，是 RAG 工程化中最关键也最经验驱动的环节。
+
+## 分块优化的核心矛盾
+
+分块面临经典两难：**太大则语义模糊，太小则上下文断裂**。这个矛盾没有完美解法，只有业务场景下的最优解。
+
+当一个 chunk 包含多个主题（退货规则、换货规则、发票规则、运费规则），向量化后的语义表达会变得模糊——它试图同时表示很多件事，结果哪件事都表示不精准。反之，切得太小（如只保留"超过 7 天后"），单独看没有任何意义，模型无法判断不能退还是可以换还是要人工审核。
+
+## 2025 年主流分块策略
+
+### 1. 固定长度分块
+
+最简单粗暴，按 token 数切分（如每 500 tokens）。优点是实现简单、速度快，适合快速验证；缺点是可能切断句子、表格、标题与正文的语义关联。不适合严肃生产场景。
+
+### 2. 语义边界分块（递归分块）
+
+优先按自然语言边界切（段落→句子→空格→字符），层层降级，尽量保留语义完整性。这比固定长度更合理，是大多数知识库的起步选择。
+
+### 3. 结构感知分块
+
+按文档原生结构切分（Markdown 标题、代码块、表格、FAQ 问答对）。适合技术文档、产品手册、制度文档。FAQ 文档最理想的切法是按完整 Q&A 切，而非按 token 数切——一个 Q&A 天然是一个完整知识单元。
+
+### 4. Meta-Chunking（2025 年前沿）
+
+基于 PPL（困惑度）的智能分块方法，用轻量模型（如 Qwen2）计算每个句子相对于前文的 PPL。在 PPL 局部极大值处切分——这些点对应逻辑断层的语义边界。切分后再用 LLM 进行语义补全和摘要生成，弥补上下文断裂。
+
+**核心洞察**：语义边界不来自标点，而来自语义连贯性的突变。PPL 把语言模型在每个句子处的"惊讶度"量化出来，当模型突然对下一句感到意外时，PPL 曲线出现尖峰，对应逻辑断层。这个方法比固定切分更接近"语义感知"，但比纯 LLM 切分更轻量。
+
+### 5. 智能语义分块
+
+用 Embedding 计算相邻句子的语义相似度，当语义突然变化时在这里切分；或直接让大模型判断哪些内容应该放在同一个 chunk。效果最好但成本最高，适合高价值知识库、文档复杂、对准确率要求高的场景。
+
+## 父子分块：检索与生成的解耦设计
+
+父子分块解决 RAG 链路最核心的矛盾：**检索需要小块，生成需要大块**。
+
+- **小块**：语义更聚焦，更容易精准匹配用户问题（如直接命中"SKU-20240315 属于定制类商品，不支持无理由退货"）
+- **大块**：包含完整上下文，让模型知道规则属于哪个政策、是否有适用范围、是否有时间限制
+
+**工程思路**：入库时同时切成大块和小块，检索时用小块匹配，命中后返回对应的大块给模型。本质上是将"检索精度"和"回答完整性"这两个目标解耦，分别优化。非常适合长文档、制度文档、产品手册。
+
+## Dify 分块参数配置
+
+| 参数 | 作用 | 建议 |
+|------|------|------|
+| 分段标识符 | 决定在哪里切 | 按业务语义自定义（FAQ 用"Q："、政策用"第 X 条"） |
+| 分段最大长度 | 控制每块大小 | FAQ 200-500 tokens，技术文档 500-1200 tokens |
+| 分段重叠长度 | 防止边界切断 | 默认 50 token，建议最大长度的 10%-25% |
+
+## 向量化与索引模式
+
+### 高质量模式 vs 经济模式
+
+- **高质量模式**：调用 Embedding 模型将 chunk 转换成向量，语义相近的文本向量距离更近。文档和查询**必须使用同一个 Embedding 模型**，否则检索结果会非常不稳定。
+- **经济模式**：用关键词索引（如 Jieba 分词），成本低但只能做字面匹配。适合成本极度敏感、查询以精确关键词为主的场景。
+
+### 索引是源头决策
+
+索引模式是源头决策，不是后面调 Top K、调 Score 阈值就能补回来的。如果一开始选了经济模式，后面问为什么同义词匹配不上、为什么语义召回效果不好，就无法回答了——因为系统从一开始就没有把知识放进语义空间里。
+
+## 查询优化：HyDE 与 Doc2Query
+
+### HyDE（假设文档嵌入）
+
+先让 LLM 生成"假答案"，用假答案的向量去匹配真实文档。将"问题-文档匹配"转化为"文档-文档匹配"，解决短问题与长文档之间的向量空间不对称问题。
+
+**本质**：短 query 与长文档在 embedding 空间中分布天然不同——query 通常是口语化提问，文档是结构化陈述。HyDE 通过生成"假答案"把 query 投射到"文档分布空间"，再做文档-文档匹配。
+
+### Doc2Query（反向 HyDE）
+
+对每个 chunk 预生成可能的 question，建立 question→chunk 索引。可离线处理，不影响实时 RT。核心价值：用"提问 vs 提问"替代"提问 vs 陈述"。
+
+**适用场景**：Doc2Query 离线预处理降低 RT，适合 query 模式稳定的客服场景；HyDE 在线处理复杂 query，适合 query 多变且意图模糊的探索性场景。两者可以并存于同一系统。
+
+## 检索与重排
+
+### 混合检索是默认选择
+
+向量检索擅长语义相似，全文检索对 SKU、订单号、合同编号、错误码等精确信息更稳定。在大多数企业知识库场景里，混合检索（向量+全文）是最稳妥的起步方案。用户问题通常不是纯语义也不是纯关键词，两者混在一起是常态。
+
+### Rerank：召回是海选，重排是复试
+
+召回追求快且不漏，重排将候选片段按与用户问题的真实相关性重新排序。Cross-Encoder 将 Query 和候选文档拼接后共同编码，通过交叉注意力捕捉细微匹配关系，解决多条件联合约束（如"2000以下+续航好+华为"）的精确排序。
+
+**建议场景**：客服、售后、法务、医疗、金融等高风险场景尽量开 Rerank；内部知识助手等低风险场景可以先关闭，把链路跑通再说。
+
+## TopK 与 Score 阈值配置
+
+- **TopK**：不是越大越好。chunk 大则 TopK 小；chunk 小则 TopK 可适当大。用父子分块返回父块时，TopK 不能太大，否则上下文会爆。
+- **Score 阈值**：防止硬凑答案。知识库里没有依据时，不要强行回答。宁可保守——"当前知识库中没有找到足够依据，建议转人工处理"——也不要让模型硬编。
+
+## 调优顺序
+
+合理的调优顺序：**文档质量 → 分块策略 → 索引模式 → 检索方式 → 重排 → TopK/Score 阈值 → Prompt 约束**。前面环节没做好，后面再怎么调都只是修修补补。80% 的 RAG 项目时间实际上应该花在数据处理上，而非模型调参上。
+
+## 2025 年工程实践清单
+
+1. **文档格式优先级**：Markdown > 纯文本 > Word > PDF > Excel > PPT > 图片/扫描件
+2. **数据清洗是核心**：不要把未经整理的资料一股脑上传，页眉页脚、水印、版权声明、过期条款都需要清理
+3. **分块需要迭代验证**：没有最优分块策略，只有最适合业务场景的分块策略。从递归分块或结构化分块开始，通过实际召回效果迭代调整
+4. **父子分块是复杂场景利器**：文档较长、规则之间有关联时，优先考虑父子分块
+5. **混合检索是默认起步**：不要一开始就用纯语义或纯关键词
+6. **Rerank 按场景开启**：高风险场景开启，低风险场景先跑通链路
+7. **建立可观测性**：持续收集用户问题日志、召回命中率、回答准确率等指标，RAG 项目需要数据飞轮
+
+## Related
+
+- [RAG 深度解析：分块向量化召回重排](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-chunking-vectorization-rerank-distillation.md)
+- [RAG 全链路技术详解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-full-pipeline-taobao.md)
+- [RAG 分块向量化召回重排流水线](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-chunk-embedding-rerank-pipeline.md)
+- [向量库 vs 知识图谱：RAG 的进阶路径](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-vector-knowledge-graph-ontology.md)
+- [AI Agent 记忆系统工作原理](ch04/117-how-ai-agent-memory-works.html)
+
+## 深度分析
+
+**入库质量决定 RAG 上限的根本原因**：RAG 系统的本质是在"知识的语义空间"中做匹配。当文档被切分和向量化后，其语义表达就被固定了——无论后续用多么精巧的检索算法或多么强大的生成模型，都无法超越入库时损失的信息。向量检索的本质是在高维语义空间中寻找最近邻，如果入库时 chunk 的语义就是模糊的、多主题的，那么检索回来的"最近邻"必然也是语义模糊的。生成模型在这样的上下文上，无论能力多强，都无法凭空恢复丢失的语义细节。这解释了为什么"80% 的时间应该花在数据处理上"——模型调优是在天花板下绣花，数据处理是在提升天花板本身。
+
+**PPL 语义分块的理论意义：从标点边界到认知边界**：传统分块依赖标点符号（句号、换行符）定义切分点，但标点只反映口语节奏，不反映语义结构。PPL（困惑度）分块的核心洞察是：语义连贯性可以被量化——当语言模型对下一个句子的预测突然变得不确定时（即 PPL 出现尖峰），说明前一句和当前句之间存在逻辑断层。这个方法将语言模型的"认知不确定性"用于边界检测，本质上是在用模型的内在表征做语义分割，比依赖表面特征的分块方法更接近人类对"完整语义单元"的判断。
+
+**父子分块的工程哲学：解耦而非妥协**：检索精度与生成完整性之间的矛盾，本质上是两个不同目标的冲突——检索需要细粒度（越小越精准），生成需要粗粒度（越大越完整）。父子分块的工程哲学是拒绝在这两个目标之间做妥协，而是通过引入双层表示将两者解耦：小块负责精准匹配，大块负责完整上下文。这种"解耦而非权衡"的思路在系统设计中具有普遍意义——当两个需求看似矛盾时，往往是因为它们混在了同一个抽象层次中，通过引入中间层将矛盾分流，是比硬撑着做折中更优的架构选择。
+
+**HyDE 与 Doc2Query 的深层对称性**：HyDE（用假答案匹配文档）和 Doc2Query（为文档预生成问题）是同一思想的不同方向——前者从 query 侧出发生成"文档假样本"，后者从 document 侧出发生成"query 假样本"，两者都在解决"提问方式与陈述方式不匹配"的核心问题。HyDE 的优势是处理开放性、模糊性 query；Doc2Query 的优势是处理结构稳定、可枚举的文档知识。两者并存的架构启示是：真实的 RAG 系统往往需要在 query 侧和 document 侧同时做增强，而非只优化其中一端。
+
+**调优顺序的因果链：前序决策对后序的不可逆影响**：文档质量、分块策略、索引模式、检索方式、重排、TopK/Score 阈值这个调优顺序，本质上是一条信息损失链——每一个环节的决策都会在其后续环节中产生放大效应。如果在文档质量环节引入噪声，后面的分块会将噪声固化为语义模糊的 chunk；索引模式选错（选了经济模式），后续无论怎么调 TopK 和 Score 阈值都无法把知识重新放入语义空间。这条因果链说明：早期决策的错误成本远大于后期决策，且后期决策几乎无法弥补早期决策的损失。正确的工程实践应该是"前期慢后期快"——在文档处理和分块策略上多花时间验证，在参数调优上快速迭代。
+
+## 实践启示
+
+1. **将文档预处理提升为独立的数据工程项目**：不要把"数据清洗"当作上传前的手动步骤，而应该建立一套自动化的文档质量 pipeline，包括：格式标准化（优先转 Markdown）、结构化解析（提取标题层级、表格、代码块）、去噪（移除页眉页脚、水印、版权声明）、版本校验（检测过期条款和内容冲突）。在正式知识库建设之前，这个 pipeline 的质量直接决定 RAG 系统的效果上限。
+
+2. **以业务语义边界作为分块优先策略，而非 token 数量**：在选择分块策略时，首先分析业务知识的最基本单元是什么——FAQ 场景是 Q&A 对，政策文档是条款，客服话术是场景，处理流程是步骤。如果业务语义单元与 token 限制不匹配，应该优先保证语义完整性，token 限制作为硬约束在必要时通过重叠切分来弥补，而非反过来让 token 限制主导切分。
+
+3. **父子分块是复杂制度文档的默认选择**：当知识库涉及退货政策、优惠规则、产品说明等存在大量"适用条件"和"例外情况"的文档时，默认采用父子分块架构。具体配置：子块（小块）用于精准匹配，大小控制在 100-300 tokens；父块（大块）包含完整的上下文上下文，大小控制在 500-1000 tokens；检索时用子块匹配，返回时用父块上下文。
+
+4. **索引模式的决策要在系统设计阶段确定，后期几乎不可更改**：在系统设计阶段就要明确：应用场景是偏语义（如产品咨询、概念解释）还是偏精确（如 SKU 查询、订单号检索）。前者必须选高质量模式（向量索引），后者可以选择经济模式（关键词索引）。一旦选了经济模式，后续即使切换到向量索引，已入库的 chunk 也没有语义向量，需要重建索引——这是一个巨大的工程成本。
+
+5. **建立 RAG 系统的可观测性基础设施，从第一天开始**：RAG 系统的优化本质上是数据驱动的——需要持续监控：用户 query 的召回率（是否找到了相关 chunk）、Score 阈值的过滤率（有多少候选被过滤）、最终回答的引用完整率（回答是否真的有引用依据）。建议从第一天就接入 Ragas 或类似评估框架，建立自动化评测管道，形成"用户 query → 召回分析 → 分块迭代"的闭环数据飞轮。
+
+---
+
+**补充阅读**：
+-
+-
+-
+-
+-
+
+---
+
+## Ch10.008 RAG Chunk Embedding Rerank Pipeline
+
+> 📊 Level ⭐⭐⭐⭐ | 13.7KB | `entities/rag-chunk-embedding-rerank-pipeline.md`
+
+# RAG 分块·向量化·召回·重排流水线
+
+## 深度分析
+
+**入库质量是 RAG 效果的天花板，而不是模型。** 原文明确指出"知识库效果的上限，往往不是由模型决定的，而是由入库质量决定的"。这一洞察揭示了 RAG 项目中最反直觉的现实：团队遇到效果不佳时，第一反应往往是换 Embedding 模型、调 TopK 或 Score 阈值，但真实原因大概率是文档从一开始就处理不当。入库质量具有不可逆性——如果分块策略和索引模式在入库时选错，后续的检索调优无法弥补。这解释了为什么"80% 的时间在搞数据"不是夸张，而是工程现实。
+
+**分块是定义知识检索最小返回单位的艺术，核心矛盾是"太大不精准，太小不完整"。** 原文揭示了分块的本质悖论：chunk 越大语义越模糊（同时包含退货规则、换货规则、运费规则），chunk 越小上下文越不完整（"超过 7 天后"单独成块毫无意义）。父子分块通过"检索用小块、生成用大块"的思路同时解决了这一矛盾，是复杂文档场景的利器。但更深层的启示是：分块没有通用最优解，效果只能通过持续测试来验证，这也是 RAG 项目"一周出 Demo，半年还在 60 分"的根本原因之一。
+
+**Skill 与 RAG 的分工本质是"流程复制"与"知识调用"的互补。** 原文清晰定义了 AI 同事的三层能力：Workflow 层（知道怎么做）、Knowledge 层（知道参考什么资料）、Judgement 层（知道如何权衡）。Skill 主要覆盖第一层，RAG 主要覆盖第二层，第三层依赖模型能力和业务边界。这一框架解释了为什么大多数"同事 .skill"只是蒸馏了外显动作而非真实能力——因为隐性知识无法全部写入 prompt，必须依赖 RAG 来补足认知缺口。
+
+**索引模式是源头决策，具有不可补偿性。** 原文特别强调"索引模式是源头决策，不是后面调 TopK、调 Score 阈值就能补回来的"。经济模式（关键词索引）从一开始就没有把知识放进语义空间，无法通过后期的检索调优来弥补语义召回的缺失。这一原则可以推广到整个调优顺序：文档质量 → 分块策略 → 索引模式 → 检索方式 → 重排 → TopK/Score 阈值 → Prompt 约束，前序环节的错误无法通过后续环节弥补。
+
+**召回追求"快且不漏"，重排是"复试"——两阶段设计映射了信息检索的经典范式。** 召回是海选，追求广度（向量检索擅长语义相近、全文检索擅长精确词匹配、混合检索兼容两者）；重排是复试，追求精度（Rerank 模型深入看问题与文本的匹配关系）。这一两阶段架构的本质是用更低成本先快速排除明显无关内容，再用更高成本细排候选片段。它还揭示了一个深层规律：检索链路越往后越"贵"，因此前段应倾向于多召回而非漏召回。
+
+## 实践启示
+
+1. **在讨论 RAG 调优之前，优先评估文档格式和清洗质量。** 适合知识库的格式优先级为 Markdown > 纯文本 > Word > PDF > Excel > PPT > 图片/扫描件。扫描件依赖 OCR，错误率高。入库前应去除连续空格、多余换行符、URL、邮箱、水印、版权声明等噪音。业务噪音（过期条款、错误版本、内部备注）需要人工处理，系统自带清洗无法覆盖。
+
+2. **从 Dify 的三个分块参数出发，结合业务文档结构定制分块策略。** 分段标识符决定"在哪里切"（按段落、标题、"第 X 条"、FAQ 的"Q："等业务语义边界）；分段最大长度建议按文档类型参考经验值（FAQ 200-500 tokens、客服话术 300-700 tokens、技术文档 500-1200 tokens）；分段重叠长度设为最大长度的 10%-25%。对于长文档、制度文档、产品手册，优先考虑父子分块能力。
+
+3. **在大多数企业知识库场景中，混合检索是默认最优选择。** 向量检索擅长语义相似但对 SKU、订单号、错误码等精确信息不敏感；全文检索相反。客服、售后、技术支持等场景的用户问题通常是两者混合，因此"无脑选混合检索"是合理的起点。对于准确性要求高的场景（客服、法务、医疗、金融、技术支持），建议开启 Rerank。
+
+4. **TopK 和 Score 阈值需要结合 chunk 大小和场景类型动态调整。** chunk 大则 TopK 小；chunk 小则 TopK 可适当大；用父子分块返回父块时 TopK 不能太大否则上下文会爆。Score 阈值从 0.5-0.7 开始调，高风险场景宁可保守转人工，也不要让模型在缺乏依据时强行回答。
+
+5. **建立 RAG 可观测性飞轮，从用户真实日志中迭代优化。** 调优顺序应该从真实问题日志出发：分析是漏召回多还是噪音多。RAG 项目需要回答的五个问题是——文档本身干净吗？chunk 切得合理吗？索引模式选对了吗？召回方式适合业务问题吗？是否需要 Rerank？ 建议逐步建立：回答是否有依据可追溯、Bad Case 是否能定位到具体环节、TopK/Score 调整是否有数据支撑。
+
+## 相关实体
+- [Rag Chunking Optimization 2025](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-chunking-optimization-2025.md)
+- [Rag Full Pipeline Taobao](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-full-pipeline-taobao.md)
+- [Ai Agent Engineer Capability Map](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-engineer-capability-map.md)
+- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
+- [Claude Code Search Architecture Tencent 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-search-architecture-tencent-2026.md)
+
+→ [原文存档](https://mp.weixin.qq.com/s/Bl_u18--lqczQDV2x_NG-g)
+
+RAG（Retrieval-Augmented Generation）流水线是 RAG 知识库从文档入库到答案生成的全链路工程实践，涵盖**离线阶段**（文档解析→清洗→分块→向量化→建索引）和**在线阶段**（查询改写→知识库路由→召回→重排→TopK/Score过滤→上下文拼接→大模型生成）。
+
+- [prosemirror @文档 mention：知识库 agent 输入框的工程化实现](https://github.com/QianJinGuo/wiki-public/blob/main/entities/prosemirror-knowledge-base-mention.md)
+
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/rag-knowledge-retrieval.md)
+## 核心定位：Skill 与 RAG 的分工
+
+Skill 负责**流程复制**（第一步做什么、第二步做什么），RAG 负责**知识调用**（做这件事需要参考哪些资料、历史经验、信息从哪里来）。两者组合才接近真正"蒸馏同事"的能力。
+
+真正的 AI 同事需要三层能力：
+1. **Workflow 层**：知道这件事该怎么做
+2. **Knowledge 层**：知道做这件事要参考什么资料
+3. **Judgement 层**：知道在复杂情况下如何权衡
+
+## 离线阶段：数据入库
+
+### 文档解析与清洗
+
+知识库效果的上限往往不是由模型决定的，而是由入库质量决定的。文档从一开始没处理好，后续再好的 Embedding 模型、Rerank 模型、向量数据库都只是把垃圾更快地找出来。
+
+适合知识库的文档格式优先级：Markdown > 纯文本 > Word > PDF > Excel > PPT > 图片/扫描件。扫描件依赖 OCR，错误率较高。
+
+清洗阶段需去除：连续空格、多余换行符、URL、邮箱、水印、版权声明等噪音。系统自带清洗能力有限，业务噪音（过期条款、重复政策、错误版本、内部备注、表格结构错乱）需在上载前人工处理。
+
+### 分块策略
+
+分块的本质是**定义知识检索的最小返回单位**。分块面临经典两难：**太大不精准，太小不完整**。
+
+| 分块策略 | 适用场景 | 优点 | 缺点 |
+|---|---|---|---|
+| 固定长度分块 | 快速验证 | 实现简单、速度快 | 可能切断句子和表格 |
+| 语义边界分块（按段落/句号/换行） | 通用场景 | 语义相对完整 | 长段落无法处理 |
+| 递归分块 | 长文档 | 先大边界再小边界，尽量保留语义 | 仍可能破坏复杂结构 |
+| 结构感知分块（按标题、代码块、表格、FAQ 问答对） | Markdown、技术文档、制度文档 | 符合文档原生结构 | 依赖文档格式规范 |
+| 智能语义分块（Embedding 相似度 / LLM 判断边界） | 高价值知识库 | 语义最精准 | 成本高、复杂 |
+
+Dify 三个核心分块参数：分段标识符（在哪里切）、分段最大长度（每块多大，默认 1024 token）、分段重叠长度（相邻片段共享内容，防止边界切断，默认 50 token，建议 10%-25%）。
+
+### 父子分块
+
+父子分块解决 RAG 核心矛盾：**检索需要小块，生成需要大块**。入库时同时切成大块和小块，检索时用小块匹配，命中后返回对应大块给模型。用小块提高召回精度，用大块保证回答完整性。
+
+### 向量化与索引
+
+**高质量模式**使用 Embedding 模型将每个知识片段转换成向量，语义相近的文本向量距离更近。**经济模式**使用 关键词索引（如 Jieba 分词），成本低但只能做字面匹配。
+
+关键工程原则：文档和查询**必须使用同一个 Embedding 模型**，否则检索结果会非常不稳定。
+
+索引模式是源头决策，后续调 Top K、调 Score 阈值无法补回。向量数据库常用索引算法包括 HNSW、IVF、PQ、FAISS，本质解决如何在大量向量里又快又准地找到相似内容。
+
+## 在线阶段：检索生成
+
+用户提问进入链路：`查询改写/知识库选择 → 召回 → 重排 → TopK 过滤 → 拼接上下文 → 大模型生成回答`。
+
+### 查询改写
+
+将用户口语化、模糊化的问题改写成更适合检索的表达。所有改写应往知识库靠，只做澄清和标准化，不替用户脑补。
+
+### 知识库路由
+
+多知识库场景下两种策略：先让模型判断问题属于哪个知识库再检索（结果干净但判断错误则漏掉答案），或多知识库一起检索后合并结果（不易漏但召回更杂）。
+
+### 召回
+
+召回追求**快且不漏关键数据**。三种检索方式：
+
+- **向量检索**：擅长语义相似，语义接近即使字面不同也能匹配
+- **全文检索**：依赖关键词匹配，对 SKU、订单号、合同编号、错误码等精确信息更稳定
+- **混合检索**：同时走两路再合并，适合大多数企业知识库场景
+
+### 重排
+
+召回是海选，重排是复试。重排将候选片段按与用户问题的真实相关性重新排序。Rerank 模型比单纯向量相似度更细，深入看问题和文本之间的匹配关系，代价是成本和效率。对准确性要求高的场景（客服、法务、医疗、金融、技术支持）建议开启。
+
+### TopK 与 Score 过滤
+
+- **TopK**：决定最多给模型几个片段。chunk 大则 TopK 小；chunk 小则 TopK 可适当大；用父子分块返回父块时，TopK 不能太大，否则上下文会爆。
+- **Score 阈值**：数量控制（TopK）+ 质量控制（Score），防止系统硬凑答案。知识库里没有依据时，不要强行回答，宁可保守转人工。
+
+## 调优顺序与配置映射
+
+合理的调优顺序：**文档质量 → 分块策略 → 索引模式 → 检索方式 → 重排 → TopK/Score 阈值 → Prompt 约束**。
+
+| Dify 配置项 | 对应环节 | 本质作用 |
+|---|---|---|
+| 索引模式 | 向量化/建索引 | 决定语义检索还是关键词检索 |
+| 分块方式 | 文档分块 | 决定知识片段颗粒度 |
+| 分段最大长度 | 文档分块 | 控制 chunk 大小 |
+| 分段重叠长度 | 文档分块 | 防止边界信息丢失 |
+| 检索方式 | 召回 | 语义找、关键词找，还是两者都用 |
+| Rerank | 重排 | 候选片段怎么重新排序 |
+| Top K | 上下文过滤 | 决定最多给模型多少片段 |
+| Score 阈值 | 上下文过滤 | 决定低相关内容是否丢弃 |
+
+## 可观测性
+
+RAG 项目需要**可观测性和飞轮系统**：回答需要有依据、可追溯、可控制。
+
+→ [原文存档](https://mp.weixin.qq.com/s/Bl_u18--lqczQDV2x_NG-g)
+
+---
+
+## Ch10.009 RAG 全链路技术详解：从文档加载到 Ragas 评估
+
+> 📊 Level ⭐⭐⭐⭐ | 12.7KB | `entities/rag-full-pipeline-taobao.md`
+
+→ [原文存档](https://mp.weixin.qq.com/s/aA2PFaabKNlDq96jhAdDkQ)
+
+# RAG 全链路技术详解
+淘天集团品牌行业架构团队出品的 RAG 工程化实战指南，覆盖从文档加载到 Ragas 自动化评估的完整链路。
+
+## 评分
+| 维度 | 分数 |
+|------|------|
+| 知识价值 | 8 |
+| 置信度 | 8 |
+| 产品 | **64** |
+
+## 核心标签
+`rag` `pipeline` `embedding` `chunking` `retrieval` `rerank` `graph-rag` `ragas` `evaluation` `meta-chunking` `hyde` `agent`
+
+## 全链路概览
+文档加载 → 智能切分 → 索引构建（Embedding） → 检索优化 → 生成调优 → Graph RAG 进阶 → Ragas 评估闭环
+
+## 1. 文档加载与切分
+**文档加载**：多格式适配（PDF/Word/HTML/JSON）、OCR 扫描件解析、元数据提取、初步清洗。
+**Meta-Chunking**（语义切块）：基于 PPL（困惑度）的智能分块方法。用轻量模型（Qwen2）计算每个句子相对前文的 PPL，在 PPL 局部极大值处切分——这些点对应逻辑断层的语义边界 。切分后用 LLM 进行语义补全和摘要生成，弥补上下文断裂。
+
+## 2. 索引构建（Embedding）
+Transformer 架构下 embedding 生成的完整过程：Tokenization → 初始向量映射 → Q/K/V 变换 → 位置编码注入 → Self-Attention 逐层深化 → Pooling（CLS/Mean/Max）→ L2 归一化。归一化后点积=余弦相似度，加速向量库检索 。
+
+## 3. 检索优化
+**Query 改写**：指代消解（多轮对话）、纠错去噪、术语对齐、结构转换。多查询生成（3-5 个变体）提升召回率 。
+**HyDE**（假设文档嵌入）：先让 LLM 生成"假答案"，用假答案的向量去匹配真实文档，将"问题-文档匹配"转化为"文档-文档匹配"，解决短问题与长文档之间的向量空间不对称问题 。
+**Doc2Query**（反向 HyDE）：对每个 chunk 预生成可能的 question，建立 question→chunk 索引。可离线处理，不影响实时 RT。核心价值：用"提问 vs 提问"替代"提问 vs 陈述" 。
+**标签过滤**：非结构化→半结构化转化，在语义检索基础上引入硬标签过滤，解决"语义相似但事实不符"的噪音问题。
+**ReRank（重排序）**：使用 Cross-Encoder 将 Query 和候选文档拼接后共同编码，通过交叉注意力捕捉细微匹配关系。解决多条件联合约束（如"2000以下+续航好+华为"）的精确排序 。
+
+## 4. 生成优化
+常见问题：无检索信息时捏造答案、知识冲突（A说可/B说禁）、中间信息丢失、忽略参考资料。
+优化手段：强约束 Prompt（禁止编造+强制引用）、内容分隔标记、模型调参（seed/temperature/presence_penalty/max_tokens）、SFT 微调（训练"根据资料回答"和"资料不足时拒绝"的能力）。
+
+## 5. Graph RAG
+用知识图谱解决传统 RAG 的局限性：多跳推理（路径追踪：A→B→C）、全局理解（社区检测+摘要预生成）。
+索引流程：文本切分→LLM 提取三元组→构建全局图谱→Leiden 算法社区检测→社区摘要。
+查询模式：Local Search（实体邻居 n 跳遍历）vs Global Search（预生成社区摘要汇总）。
+代表框架：Microsoft GraphRAG、LlamaIndex、LightRAG 。
+
+## 6. Ragas 评估体系
+**核心理念**：LLM-as-a-Judge，自动化评估 RAG 系统。
+| 维度 | 指标 | 关注点 |
+|------|------|--------|
+| 检索 | Context Precision | 相关 chunk 排在前面 |
+| 检索 | Context Recall | 不遗漏重要结果（拆解 Claims 溯源） |
+| 生成 | Faithfulness | Claim 能否从上下文支撑 |
+| 生成 | Answer Relevancy | 反向生成问题+embedding 相似度 |
+| 鲁棒性 | Noise Sensitivity | 对冗余/无关上下文的抗干扰能力 |
+**评测集生成**：基于知识图谱的自动化测试集构建，通过节点、查询长度、查询风格、人设组合场景，支持 Single-Hop/Multi-Hop × Specific/Abstract 四种查询类型 。
+
+## 关键洞察
+1. **Meta-Chunking 是 PPL 的外科手术式应用**：用语言模型的"困惑度"作为语义边界检测器，在 PPL 尖峰处切分，远比固定长度/标点切分科学
+2. **HyDE 的本质是向量空间对齐**：短问题与长文档在向量空间中分布不同，通过生成"假答案"将问题投射到文档空间，再从文档空间做匹配
+3. **Doc2Query 的离线预处理思路**：将"用户提问→文档匹配"的不对称提前消除，在线只做"问题→问题"匹配，RT 几乎无损耗
+4. **Cross-Encoder Rerank 是精准度的最后一道防线**：Embedding 只能表达文档的平均含义，Cross-Encoder 可以逐字检查多条件联合约束
+5. **Graph RAG 解决的是"跳"和"面"的问题**：多跳（路径追踪）和全局理解（社区摘要）是传统向量检索的结构性盲区
+6. **Ragas 让 RAG 从"感觉还行"变成"可量化"**：Context Precision/Recall + Faithfulness + Answer Relevancy + Noise Sensitivity 覆盖了工程团队最关心的五个问题
+
+## 深度分析
+**1. Meta-Chunking 的本质是"困惑度驱动的时间切片"**
+传统规则切分（固定字数/段落）本质上是把文档当静态文本处理，忽略了语言内部的结构性信号。PPL（Perplexity）把语言模型在每个句子处"惊讶度"量化出来——当模型突然对下一句感到意外时，PPL 曲线出现尖峰，对应逻辑断层。这个方法的核心洞察是：**语义边界不来自标点，而来自语义连贯性的突变**。这与人类阅读时感知"段落的起承转合"高度吻合。Meta-Chunking 的工程价值在于：它把一个 NLP 问题（PPL 计算）转化为了一个可配置的超参数问题（局部极大值的敏感性阈值），这比固定切分更接近"语义感知"但比纯 LLM 切分更轻量。
+**2. HyDE/Doc2Query 解决的是"向量空间不对称"问题**
+短 query 与长文档在 embedding 空间中的分布天然不同：query 通常是口语化提问或关键词组合，文档是结构化陈述。直接用 query 向量检索文档，本质上是让两个不同分布的东西在同一空间竞争。HyDE 通过让 LLM 生成"假答案"把 query 投射到"文档分布空间"，再做文档-文档匹配；Doc2Query 则反向操作，把文档陈述转成可能的提问，将匹配转化为问题-问题匹配。两条路径都承认了"提问vs陈述"的不对称性，只是解法方向相反。实际系统中可以互补：Doc2Query 离线预处理降低 RT，HyDE 在线处理复杂 query。
+**3. Cross-Encoder Rerank 是精度-速度权衡的必然选择**
+Bi-encoder（双塔模型）分别编码 query 和文档，适合大规模 ANN 检索但丢失了细粒度交互信息。Cross-Encoder 将 query 和文档一起喂进模型，通过自注意力机制让每个 token 观察另一方的每个 token，代价是 O(N×M) 的计算复杂度和无法预计算文档向量。当下，Bi-encoder + HNSW 保证召回，Cross-Encoder 做精排是工程上最常见的分层检索架构。值得注意的是，ReRank 还能缓解"中间丢失"问题——将长上下文中被早期高相似度文档挤掉的 relevant docs 重新提升到 top k。
+**4. Graph RAG 的真正价值在于"结构化记忆"而非"图数据库"**
+Graph RAG 常常被误解为"知识图谱 + 向量检索"的简单组合。它的核心贡献是引入了**预生成的社区摘要**——把全局理解问题（"这篇论文讲了什么"）从在线 LLM 生成变成了离线计算。Leiden 社区检测将图谱划分为多个子社区，每个社区预先用 LLM 生成摘要。查询时分 Local Search（实体邻居遍历）和 Global Search（社区摘要聚合）两种路径，前者保证局部精确性，后者提供全局视野。这个设计与传统 RAG 在全局问答上的结构性盲区形成了鲜明对比——传统 RAG 的语义搜索本质上是"最近邻检索"，无法做跨簇的信息聚合。
+**5. Ragas 的 LLM-as-a-Judge 本质上是"模型自我评估能力"的工程化**
+传统评估依赖人工标注的 ground truth，成本高且无法规模化。Ragas 用 LLM 自身作为裁判，通过设计巧妙的 prompt（Faithfulness 用"逐 claim 溯源"，Answer Relevancy 用"反向生成问题"）把主观评估转化为可计算的相似度指标。这背后有一个假设：**LLM 对"逻辑一致性"和"语义相关性"的判断足够稳定**。这个假设在 GPT-4 级别模型上大致成立，但在小模型上可能失效。工程落地时需要注意：Ragas 分数高不代表用户体验好，分数低一定意味着某个维度有明确问题。
+
+## 实践启示
+1. **切分策略的优先级高于 embedding 模型选择**：很多团队花大量精力选 embedding 模型，却忽视了"garbage in, garbage out"的切分问题。建议先用 PPL 语义切分 + 摘要补全重建知识库，再迭代 embedding 模型。
+2. **HyDE 和 Doc2Query 不是非此即彼**：Doc2Query 离线生成 question-index，适合 query 模式稳定的客服场景；HyDE 在线生成假答案，适合 query 多变且意图模糊的探索性场景。两者可以并存于同一系统，Doc2Query 作为第一层召回，HyDE 作为查询改写层。
+3. **标签过滤是工程落地的关键一环**：语义相似但事实不符是向量检索的典型 corner case，半结构化的标签系统（如类目、品牌、属性标签）可以作为硬过滤层补足语义检索的不足，成本远低于重新训练 embedding 模型。
+4. **ReRank 阶段介入时机要卡准**：ReRank 放在检索和生成之间，但候选文档数量需要控制（通常 top 50-100），过多会浪费算力，过少会遗漏有效结果。建议配合 A/B 测试确定最优 top_k。
+5. **Graph RAG 适合"知识密集型 + 多跳推理"场景**：对于简单 FAQ 场景，传统 RAG 已足够；对于需要关联分析的复杂文档集（如技术文档、财报、研究论文），Graph RAG 的社区摘要能显著提升全局问答质量。
+6. **Ragas 评估应该作为 CI/CD 的一部分**：将 Ragas 指标（Context Precision、Faithfulness 等）接入自动化测试，新版本发布前跑一遍回归测试，避免检索策略或 Prompt 改动引入回归。
+7. **评测集生成要覆盖四种查询类型**：Single-Hop/Specific（简单事实）、Single-Hop/Abstract（概念解释）、Multi-Hop/Specific（多步推理）、Multi-Hop/Abstract（综合分析）。单一类型的测试集会导致对其他类型 query 的覆盖盲区。
+
+## Related
+- [harness-engineering-systematic-explainer](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-systematic-explainer.md)
+
+- [Agent 原理、架构与工程实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-engineering-principles-architecture-practice.md)
+- [AI Agent 工程师能力地图](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-engineer-capability-map.md)
+
+---
+
+## Ch10.010 Karpathy LLM Wiki V2：记忆生命周期 + 知识图谱 + 混合检索 + 落地路线图
+
+> 📊 Level ⭐⭐⭐⭐ | 11.5KB | `entities/karpathy-llm-wiki-v2-deep-analysis-rohit-ghumare.md`
+
+# Karpathy LLM Wiki V2：从复利启动到复利防烂
+
+Rohit Ghumare 在 Karpathy 的 LLM Wiki gist 上更新的 V2 版本，把原版"让知识开始复利"的思路推到了"复利系统别烂掉"。核心新增：记忆生命周期、类型化知识图谱、混合检索、事件驱动、质量治理。
+
+与 [Karpathy LLM Wiki V2 中文概述](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-llm-wiki-v2-2026.md) 互补——原 entity 是中文入门解读，本文是 V2 深度技术分析 + 落地路线图 + 评测方法论。
+
+→ [LLM Wiki 范式](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/llm-wiki-paradigm.md) — 原版三层架构（Raw → Wiki → Schema）
+
+## 原版回顾
+
+Karpathy 的原版反对 RAG（每次重算），主张让 LLM 把资料**编译**成 wiki。三层结构：
+
+| 层 | 作用 |
+|---|---|
+| Raw sources | 原始材料，LLM 只读不改 |
+| Wiki | LLM 维护的 Markdown 页面（summary/entity/concept） |
+| Schema | CLAUDE.md / AGENTS.md，写作和维护规则 |
+
+类比：Obsidian = IDE，LLM = programmer，wiki = codebase。人负责选题和判断，LLM 负责整理、交叉引用、补 index、查孤儿页。
+
+## V2 六大生产层升级
+
+### 1. 记忆生命周期
+
+wiki 页面不能默认同等可信。V2 加入 memory lifecycle：
+
+- **Working memory** → 当前 session 临时
+- **Episodic memory** → 事件记录
+- **Semantic memory** → 压缩后的事实
+- **Procedural memory** → 操作模式
+
+越往后越压缩，证据越强，生命周期越长。
+
+关键主张：confidence 不应是裸数字（0.85），应做成**证据链**——来自哪个 ADR、哪次 commit、哪篇 source、哪次 session，最近确认时间，是否被新信息替代。
+
+### 2. 类型化知识图谱
+
+原版靠 Markdown wikilink + Obsidian graph，只能看页面连接。V2 需要带含义的边：`uses`、`depends_on`、`contradicts`、`supersedes`。
+
+查询场景：升级 Redis 影响哪些服务？某个鉴权决策牵涉哪些 bug 和负责人？普通 wikilink 无法回答这类影响链问题。
+
+### 3. 混合检索
+
+原版 index.md 在 100-200 页内有效。V2 超过此阈值用三路检索 + RRF 融合：
+
+- **BM25**：精确关键词匹配
+- **向量搜索**：语义相似
+- **图遍历**：结构上相关的影响链
+
+关键洞察：BM25 + 向量负责"此刻相关"，图遍历负责"结构相关"。两者必须一起用。
+
+### 4. 事件驱动维护
+
+session end → 自动生成候选 summary → proposal-first 写入。直接改主 wiki 危险，应走 review queue。
+
+### 5. 写入门控
+
+| 风险等级 | 操作 | 策略 |
+|----------|------|------|
+| 低 | append 新 claim | 自动提交 |
+| 中 | 已有 claim 增加证据 | 自动追加 |
+| 高 | contradiction/supersession/批量删除/权限变更 | 人工审核 |
+
+### 6. 多 Agent 协调
+
+mesh sync、shared/private knowledge、coordination boundary。
+
+## V1 vs V2 对比
+
+| 问题 | 原版处理 | V2 处理 |
+|------|----------|---------|
+| 知识变旧 | lint 发现 stale claim | lifecycle + supersession + retention |
+| 搜索扩展 | index.md + 可选工具 | BM25 + vector + graph |
+| 结构关系 | wikilinks | typed entities and relations |
+| 自动维护 | 人触发 ingest/lint | hooks + 事件驱动 |
+| 多 Agent | 略提团队场景 | mesh sync + shared/private |
+| 治理 | Git 历史 | privacy filter + audit + reversible bulk ops |
+
+## 落地路线图
+
+**Phase 1 — MVP**：保留 raw/、wiki/、index.md、log.md、AGENTS.md。每次 ingest 更新相关页面，看 Git diff。验收：一次 source 稳定更新 summary/entity/concept/index/log。
+
+**Phase 2 — 证据链**：加 claim id + source_ref（如 `auth.redis-cache.uses`）。新证据追加到 claim，旧决策被替代时用 supersedes 链接。旧内容不消失——解释今天设计为什么长这样。
+
+**Phase 3 — 混合检索**：SQLite FTS5 / 本地 BM25 → embedding → frontmatter/sidecar JSON 抽图关系。图数据库晚点上，先定实体和边的契约。
+
+**Phase 4 — 事件驱动**：proposal-first，高风险写入进 review queue。
+
+## 评估方法论
+
+评估应围绕**决策**做，不是功能覆盖：
+
+**检索层**：三路 vs 单路 vs index？测 Recall@5、MRR、p50/p95 latency、token cost。查询分类型：精确术语、语义同义、影响分析、历史决策、个人偏好。只有影响分析类需要图遍历时再加重图。
+
+**写入层**：自动 proposal 是否降低维护成本？测 unsupported claim rate、duplicate claim rate、wrong supersession rate、citation validity、human edit distance。先重放历史 session，只产出 proposal 不写主库。
+
+**生命周期**：先测 supersession，不急着测遗忘曲线。旧 bug 和旧 ADR 未必该忘——它们是避免重复踩坑的线索。
+
+## 社区工程评审
+
+- **luancaarvalho**：扩展问题 → index 200-500 文档撑不住，agentmemory 用三路 + RRF，LongMemEval-S 95.2% R@5
+- **webmaven**：书籍级 ingestion 瓶颈在 chunking + observation 生成 + 图谱抽取成本
+- **gnusupport**：confidence 没定义、auto-crystallization 没算法、hybrid search 没 latency metric、multi-agent 缺 ACL/versioning/provenance → 方向可以借，计划不能照抄
+- **ghost**：schema 做好 → ingest 时过滤；numeric confidence 有伪精确风险；主张 supersession 代替 decay、git 做 audit、manual before automated
+
+生态线索：Memex（daily captures → P.A.R.A.）、ctx（skills/agents 知识图谱 → Claude Code 推荐）、ChristopherA（named edges: `derived_from::[Source]`）
+
+## 演进方向
+
+1. **evidence contract**：claim 稳定 id + 来源边 + 替代链接 + 证据链展示
+2. **segmentation**：个人偏好/项目事实/团队决策/临时任务/研究材料分 schema，生命周期和权限不同
+3. **Agent context operating system**：session start 加载 → tool use 记录 → 任务结束沉淀 → 多 Agent 共享
+
+## 深度分析
+
+### 从"编译一次"到"持续维护"的知识系统演进
+
+Karpathy 原版 LLM Wiki 的核心洞察是"RAG 每次重算，Wiki 会累积"——让 LLM 把原始材料编译成结构化 wiki，后续查询直接读 wiki 而非重走 RAG 管线。V2 的贡献在于识别出这个模式的长期衰减问题：知识会过期、链接会断裂、搜索会变慢、自动化会引入噪声。这不是推翻原版，而是为原版的"复利"承诺加上"防烂"机制。
+
+### 证据链 vs 裸置信度数字的设计权衡
+
+V2 提出 confidence 字段，但社区评审（gnusupport、ghost）指出裸数字（如 0.85）有"伪精确风险"。更好的设计是证据链：每条 claim 关联到具体来源（ADR、commit、session、文章），附带最近确认时间和替代链接。这与 Hermes wiki 已有的 `provenance_state` 和 `` 引用模式不谋而合。
+
+### 混合检索的"此刻相关"与"结构相关"二分法
+
+BM25 + 向量搜索负责"此刻相关"（当前查询的语义匹配），图遍历负责"结构相关"（影响链、依赖关系）。这个二分法是 V2 检索设计的核心洞察。实践中，大部分查询只需要"此刻相关"，只有影响分析类查询需要图遍历。这意味着图检索层可以按需加载，不必每次都跑。
+
+### 写入门控是知识系统可靠性的关键
+
+V2 的写入门控设计（低风险自动提交、高风险人工审核）解决了知识系统的核心矛盾：自动化带来效率，但也带来污染风险。ghost 的评论指出"event-driven auto-ingest 默认 LLM 可靠，在生产里很危险"。Proposal-first 模式（Agent 生成 diff，人工审核后写入）是平衡效率与安全的工程选择。
+
+### 评估应围绕决策而非功能覆盖
+
+V2 的评估方法论强调"围绕决策做"而非"功能全覆盖"。BM25、向量、图谱、confidence、decay、hooks、lint 全做一遍，demo 很热闹但真实任务不一定更好。正确的评估方式：先重放历史 session，只产出 proposal 不写主库，通过后再开放低风险自动写。这与软件工程中的"先测试再上线"原则一致。
+
+## 实践启示
+
+1. **知识系统应从原版开始，按需加 V2 模块**：先证据链 → 再 supersession → 再检索融合 → 再 proposal-first automation。每一步都要能回答"少解释了吗、找得更准了吗、过期答案少了吗"
+2. **confidence 应做成证据链而非裸数字**：每条 claim 关联到具体来源，附带最近确认时间和替代链接。避免"伪精确"带来的虚假权威感
+3. **图检索按需加载**：大部分查询只需要 BM25 + 向量搜索，只有影响分析类查询需要图遍历。不要为了完整性而每次都跑全量图检索
+4. **写入门控比自动化更重要**：低风险 append 可以自动提交，但 contradiction、supersession、批量删除必须人工审核。Proposal-first 是安全与效率的平衡点
+5. **评估基准应围绕决策质量**：测 Recall@5、MRR、unsupported claim rate、human edit distance，而非功能覆盖率
+
+## 相关链接
+
+- → [Karpathy LLM Wiki V2 中文概述](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-llm-wiki-v2-2026.md) — 原版入门
+- → [LLM Wiki 范式](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/llm-wiki-paradigm.md) — 概念定义
+- → 知识图谱 RAG — 图检索方法论
+- → [LLM Wiki 架构哲学](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-wiki-architecture.md)
+- → [原文存档](https://mp.weixin.qq.com/s/Hgrj-5dxofZSD7c-ydjNAQ)
+
+---
+
+## Ch10.011 MRAgent：记忆是重建的，不是检索的
+
+> 📊 Level ⭐⭐⭐⭐ | 10.8KB | `entities/mragent-memory-reconstructed-not-retrieved-nus-icml2026.md`
+
+# MRAgent：记忆是重建的，不是检索的
+
+新加坡国立大学（NUS）在 ICML 2026 提出 MRAgent，核心主张：**记忆访问应该跟着推理一起走**——每发现一条新证据，就改一次下一步要查什么。在 LoCoMo 上整体得分相对最强基线提升 23%，LongMemEval 提升 32%，Token 消耗仅 A-Mem 的 1/5。
+
+→ [原文存档](https://mp.weixin.qq.com/s/w6LbWyhlG9ZZxq4DCbDc7w)
+
+## 范式切换：被动检索 → 主动重建
+
+现有记忆方案两条路，各有死胡同：
+
+**相似度检索**（MemoryBank、Mem0）：检索方向完全由查询决定，推理过程中无法调整。跨人物、跨时间线的 multi-hop 查询无法处理。
+
+**图结构检索**（A-Mem、Zep）：沿预定义 k-hop 扩展，但扩展路径预先固定——无法根据中间证据动态剪枝或转向。
+
+MRAgent 的核心主张：**检索应该跟着推理一起走**——每发现一条新证据，就改一次下一步要查什么。
+
+认知神经科学基础：回忆更像按线索一点点「拼」出来，不是打开仓库把整段记忆原样读走。
+
+## Cue-Tag-Content 关联记忆图
+
+记忆被建模为异构图 M = (C, V, R)：
+
+- **Cue（线索）**：细粒度关键词（实体名、属性、时间标记）
+- **Content（内容）**：具体记忆条目
+- **Tag（标签）**：连接 Cue 与 Content 的语义桥梁
+
+三者通过三元组 (c, g, v) ∈ R 相连。Tag 在访问昂贵的 episodic 内容之前，先提供语义导航——避免在大图上做无约束的 k-hop 扩展导致组合爆炸。
+
+先通过 Cue 激活候选 Tag，再基于选定的 Tag 检索 Content——把关联推理和内容检索解耦。
+
+→ [Agent 记忆系统框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-systematic-framework.md)
+
+## 多粒度记忆层
+
+| 记忆层 | 存储内容 | 典型用途 |
+|--------|----------|----------|
+| Episodic（情景） | 特定时间点的具体事件 | 时间推理、事件回溯 |
+| Semantic（语义） | 稳定的个人属性、偏好、事实 | 跳过冗长历史直达目标知识 |
+| Topic（主题） | 跨多个 episode 的抽象模式 | 自顶向下定位相关事件簇 |
+
+情景记忆沿统一时间线组织，支持时间约束；语义记忆通过 aspect-level Tag 锚定到实体线索；主题层提供自顶向下的跳转。
+
+构建阶段保持轻量，复杂关系推理推迟到检索阶段按需执行。
+
+→ [Agent Memory 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture.md)
+
+## 主动重建算法
+
+维护显式重建状态：
+- **Z^(t)（活跃集）**：当前步骤待探索的 Cue、Tag、Content 候选
+- **H^(t)（重建上下文）**：前几步累积的证据
+
+**三类遍历动作：**
+1. 前向遍历：沿 Cue→Tag→Content 方向扩展
+2. 反向遍历：从已检索的 Content 反向激活新的 Cue 和 Tag，根据中间证据调整探索方向
+
+**每轮三步走：**
+1. LLM 推理与动作选择
+2. 受控图遍历
+3. LLM 路由与状态更新（剪枝无关分支）
+
+循环持续直到 LLM 判定证据充分，或进一步探索不太可能带来新信息。
+
+## 理论保证
+
+**定理：** 主动检索的表达能力严格强于被动检索。主动检索能学到被动检索能学的任何函数，反之则不成立。
+
+这不是空喊口号——论文给出了近似理论角度的形式化证明。
+
+## 实验结果
+
+### LoCoMo（Claude 骨干）
+
+| 问题类型 | 最强基线 J | MRAgent J | 提升 |
+|----------|-----------|-----------|------|
+| Multi-hop | 75.88 (Mem0) | 90.19 | +18.9% |
+| Temporal | 80.68 (LangMem) | 85.34 | +5.8% |
+| Open Domain | 56.25 (Mem0) | 71.57 | +27.2% |
+| Single hop | 83.12 (LangMem) | 91.10 | +9.6% |
+
+Gemini 骨干下 Overall 相对提升 23.3%。
+
+### LongMemEval
+
+Overall 相对最强基线提升 32%。Multi-Session 从 56.39 跳到 68.42，Temporal 从 45.71 跳到 68.42。
+
+### Token 效率
+
+| 方法 | Token 消耗 | 运行时(s) |
+|------|-----------|-----------|
+| A-Mem | 632k | 1,122 |
+| LangMem | 3,268k | 1,210 |
+| Mem0 | 245k | 533 |
+| **MRAgent** | **118k** | **586** |
+
+MRAgent Token 消耗仅 118k——不到 A-Mem 的 1/5，不到 LangMem 的 1/27。运行时与最快的 Mem0 基本持平。
+
+效率来源：构建阶段保持轻量，复杂推理推迟到检索阶段按需执行；Tag 在访问 episodic 内容前提供语义导航，提前剪枝无关路径。
+
+## 消融与多轮推理
+
+- 光有 CTC 图结构但关闭主动推理，性能明显回落——图建得再好，不让 LLM 在上面走几步，multi-hop 照样拼不齐
+- Multi-hop 查询：迭代探索带来超过 30% 的召回提升
+- 增加并行检索预算无法替代更深的重建深度——记忆推理本质是序列依赖的
+- LLM 能有效判断何时继续搜索、何时停止，避免冗余探索
+
+## 局限与问号
+
+- 多轮 LLM 调用在极端低延迟场景能不能扛住？
+- 构建阶段的 LLM 蒸馏一旦抽错 Tag，下游会不会一路带偏？
+- LoCoMo 和 LongMemEval 上证据充分，生产环境对话分布更脏更乱
+
+## 深度分析
+
+### 从"存储-检索"到"构建-重建"的范式跃迁
+
+MRAgent 的核心贡献不是又一个更好的检索算法，而是对记忆访问范式的重新定义。传统方案（无论向量检索还是图检索）都假设记忆是"存好的等你来取"，而 MRAgent 认为记忆是"根据当前推理状态临时拼装的"。这与认知神经科学的发现一致：人类回忆不是从硬盘读文件，而是根据线索一点点重建场景。
+
+### Tag 中介层解决了图检索的组合爆炸问题
+
+纯向量检索太扁（无法 multi-hop），全量 k-hop 图扩展又太重（组合爆炸）。Cue-Tag-Content 三层结构中，Tag 作为语义桥梁，在访问昂贵的 episodic 内容之前先做粗筛——这相当于给图遍历加了一个"路由层"。Tag 够轻能做快速语义路由，又够结构化能支撑 multi-hop 遍历。
+
+### Token 效率的结构性来源
+
+MRAgent 的 118k Token vs A-Mem 的 632k，并非来自"更聪明的检索"，而是来自架构设计：构建阶段保持轻量（只提取 Cue 和 Tag），复杂关系推理推迟到检索阶段按需执行。这意味着大部分记忆条目永远不会被完整加载——只有被 Tag 路由到的 Content 才会消耗 Token。这种"按需加载"模式对 Agent 记忆系统的工程实现有直接指导意义。
+
+### 主动重建的理论保证不是空话
+
+论文给出了形式化证明：主动检索的表达能力严格强于被动检索。这不是经验性的"我们跑了个实验还不错"，而是从近似理论角度证明了 H_active(T) ⊃ H_passive(T)。这意味着无论被动检索算法怎么优化，都无法达到主动检索的上限——两者的差距是结构性的，不是工程性的。
+
+### Multi-hop 痛点暴露了现有记忆系统的根本缺陷
+
+Single-hop 涨幅温和（83→91），Multi-hop 跳幅巨大（75→90）。这说明现有记忆系统的真正短板不在"找到一条相关记录"，而在"通过推理发现下一步该查什么"。对于 Agent Harness 工程师来说，这意味着记忆系统的设计重心应该从"检索精度"转向"推理-检索联动"。
+
+## 实践启示
+
+1. **Agent 记忆系统应采用"构建轻量+检索按需"架构**：在记忆写入时只提取 Cue 和 Tag，复杂推理推迟到查询阶段。这能将 Token 消耗降低 5 倍以上
+2. **Tag 层是图记忆系统的关键创新点**：设计记忆系统时，不要直接从原始内容跳到检索，中间需要一个语义路由层（Tag）来控制图遍历的组合爆炸
+3. **Multi-hop 推理能力应成为记忆系统评测的核心指标**：Single-hop 测试无法暴露记忆系统的真正短板，评测基准应重点考察跨时间线、跨实体的推理能力
+4. **多轮 LLM 调用的延迟需要在架构层面权衡**：MRAgent 的精度优势来自多轮推理，但每轮都是一次 LLM 调用。在低延迟场景需要考虑并行探索或缓存策略
+5. **关注构建阶段 Tag 提取的鲁棒性**：如果 Tag 提取出错，下游整个重建链路都会被带偏。需要投入 Tag 质量的监控和纠错机制
+
+## 相关链接
+
+- 论文：https://arxiv.org/abs/2606.06036
+- GitHub：https://github.com/Ji-shuo/MRAgent
+- → [Agent Memory 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture.md) — 记忆系统设计模式
+- → [Agent Memory 模块化框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-modular-framework.md) — ICLR 2026 评测基准
+- → [Mem0：Agent Harness 记忆现状](https://github.com/QianJinGuo/wiki-public/blob/main/entities/state-of-memory-in-agent-harness-mem0-2026.md) — Mem0 等基线对比
+- → [Agent 记忆生命周期](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-lifecycle-philosophies.md)
+- → [原文存档](https://mp.weixin.qq.com/s/w6LbWyhlG9ZZxq4DCbDc7w)
+
+---
+
+## Ch10.012 Instacart 广告检索架构演进：从 BERT 打分到生成式 token-by-token 检索
+
+> 📊 Level ⭐⭐⭐⭐ | 8.2KB | `entities/instacart-ads-retrieval-generative-token-by-token.md`
+
+# Instacart 广告检索架构演进：从 BERT 打分到生成式 token-by-token 检索
+
+## 摘要
+
+Instacart 详细阐述了其广告检索系统从传统 BERT 序列打分模型（Contextual Recommendations, CR）到生成式检索（token-by-token 生成产品 ID）的完整架构重构。这一迁移源于三大瓶颈：词汇表限制、冷启动偏差和结构漂移。新方案受 TIGER（Google DeepMind）启发，将产品 ID 编码为语义 token 序列，模型直接自回归生成相关产品，而非对候选集逐一打分。这是大规模生产系统中 generative retrieval 的真实工程案例，与 Spotify GLIDE/NEO、YouTube PLUM 等业界实践形成对照。
+
+## 核心要点
+
+### 旧方案：BERT 打分模型（Contextual Recommendations）
+
+Instacart 的 CR 系统将杂货购物视为语言建模任务：原子产品 ID 作为 token，目录子集作为「词汇表」。用户实时会话（浏览、访问商品页、加入购物车）构成产品 token 序列，BERT 类 Transformer 在数百万真实购物会话上训练，预测序列中的下一个 token。这一单层检索同时驱动广告和有机推荐，覆盖所有主要浏览界面。
+
+### 三大瓶颈
+
+**1. 词汇表瓶颈**（Vocabulary Bottleneck）
+
+CR 模型依赖原子产品 ID 作为独立 token，这定义了模型能理解和预测的边界。扩大词汇表虽然增强了上下文理解能力，但同时带来：模型体积和延迟增加、低频商品数据稀疏、目录非平稳性（新产品不断上架导致覆盖缺口持续扩大）。仅靠词汇表扩展无法覆盖目录全貌，特别是专业零售商的特色产品。
+
+**2. 冷启动障碍**（Cold Start Hurdle）
+
+训练数据基于历史购物会话的产品 ID 序列，导致模型倾向于记忆共现关系而非学习基于用户意图的泛化关联。结果是高频商品被过度推荐，而更符合当前上下文的新品牌被忽视。例如用户正在组建烧烤购物车（牛肉饼+汉堡包+生菜），系统倾向于推荐通用杂货（牛奶）而非更符合意图的新品牌调味品（芥末酱）。
+
+**3. 结构漂移**（Structural Drift）
+
+模型通过在整个产品 ID 词汇表上预测概率分布来生成候选集，缺乏内置层级结构来保持推荐聚焦。这导致偶尔出现不协调的商品组合——例如早餐主题购物车（牛奶+鸡蛋+麦片）的推荐中混入洗衣液。如果后续排序模型对这些异常产品校准不当，不协调推荐就会被推送到用户面前。
+
+### 新方案：生成式检索
+
+受 TIGER（Google DeepMind, NeurIPS 2023）启发，Instacart 转向生成式检索范式：**模型不再对预定义候选集打分，而是直接生成下一个相关产品的语义 token**。这一范式已被 Spotify（GLIDE、NEO）和 YouTube（PLUM）在生产环境中采用。
+
+但 Instacart 的场景有独特挑战：
+
+- **意图多样性**：不同于音乐或视频平台的窄意图，Instacart 用户常在单次会话中管理高度多样的购物清单（从生鲜到清洁用品到宠物护理）
+- **意图漂移**：用户在购物过程中意图会动态变化
+- **多零售商**：用户跨多个零售商购物，每个零售商有独立的产品目录
+
+这些挑战要求模型超越历史购买记录，同时考虑活跃购物会话的实时动态。
+
+## 深度分析
+
+### 从打分到生成：范式转换的本质
+
+传统检索的「打分范式」本质上是一个判别式问题：给定查询和候选，输出相关性分数。其核心限制在于**候选集的构建先于相关性判断**——你只能从预定义的候选中选择，无法「创造」新的匹配。
+
+生成式检索将问题翻转为生成式问题：给定上下文，直接输出目标产品的 token 序列。这带来了两个根本性变化：
+
+1. **模型参数即索引**：不需要维护独立的向量索引或倒排索引，产品目录的知识编码在模型权重中。更新目录意味着微调模型，而非重建索引。
+2. **无候选集限制**：理论上可以检索训练数据中出现过的任何产品，不受 ANN 搜索的近似约束。
+
+### 权衡与工程挑战
+
+| 维度 | BERT 打分 | 生成式检索 |
+|------|----------|-----------|
+| 延迟特性 | 向量索引查找（O(log n) 或 O(1) ANN） | 自回归解码（O(seq_len)） |
+| 索引更新 | 重建索引 | 模型微调或增量学习 |
+| 可解释性 | 相对直接（相似度分数） | 需要额外机制 |
+| 新产品处理 | 添加向量即可 | 需要训练数据覆盖 |
+| 目录扩展性 | 索引规模线性增长 | 模型容量受限 |
+
+### Instacart 场景的特殊性
+
+杂货购物的独特性在于**意图的宽泛性和动态性**。用户可能同时在为晚餐、早餐和家庭清洁用品购物，且意图随购物车内容动态演变。这要求检索模型具备：
+
+- **多意图并行建模**：同时理解用户当前会话中的多个购物子任务
+- **实时上下文敏感性**：购物车的每次变化都应影响后续推荐
+- **跨零售商泛化**：同一意图在不同零售商目录下应映射到不同产品
+
+这些需求使得简单的序列到序列迁移变得复杂，需要在产品 token 编码、上下文注入和训练策略上做大量定制化工作。
+
+### 与业界实践的对照
+
+| 平台 | 方案 | 特点 |
+|------|------|------|
+| Google DeepMind | TIGER | 开创性工作，证明生成式检索可行性 |
+| Spotify | GLIDE/NEO | 音乐推荐，意图相对窄 |
+| YouTube | PLUM | 视频推荐，长序列挑战 |
+| Instacart | CR → Generative | 杂货购物，多意图+多零售商 |
+
+## 实践启示
+
+1. **架构迁移的触发条件**：当现有方案的三个以上结构性限制同时出现时（词汇表、冷启动、结构漂移），应考虑范式级重构而非渐进优化
+2. **生成式检索的适用边界**：在候选集动态变化、意图多样、需要上下文敏感匹配的场景下，生成式检索比传统打分模型更有优势
+3. **领域特化的重要性**：直接照搬 TIGER 等通用方案不足以应对杂货购物的独特挑战，需要在 token 编码、训练数据构建和推理策略上做深度领域适配
+4. **渐进式迁移策略**：Instacart 保持了与旧系统的兼容性，在生产环境中逐步验证和切换，这种策略对大规模系统重构至关重要
+
+## 相关实体
+
+- [RAG 与检索技术](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/retrieval-augmented-generation-rag.md)
+- [From Silos To Service Topology Why Netflix Built A Real Time](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-silos-to-service-topology-why-netflix-built-a-real-time.md)
+
+→ [原文存档](https://tech.instacart.com/from-scoring-to-spelling-rebuilding-ads-retrieval-at-instacart-cf36b4e8d1bb)
+
+---
+
+## Ch10.013 RAG → 知识图谱 → 本体论：三层知识架构
+
+> 📊 Level ⭐⭐⭐⭐⭐ | 28.7KB | `entities/rag-vector-knowledge-graph-ontology.md`
 
 # rag-vector-knowledge-graph-ontology
 
@@ -405,11 +1586,11 @@ PS：从这里也可以看出来，图谱的存在其实是为了解决工程维
 向量（embedding），可以将一段文本、图片、音频等内容，通过embedding模型编码成一个高维数组；
 
 ## 相关实体
-- [Three Rag Architectures Classic Graph Agentic](ch03/004-agent.html)
-- [Nvidia Multimodal Rag Knowledge Systems](ch01/138-rag.html)
-- [Rag技术框架的演进方向](ch01/138-rag.html)
-- [Skill Rag Tsinghua Sra](ch07/045-skill.html)
-- [Harness Engineering Framework](ch05/026-harness-engineering.html)
+- [Three Rag Architectures Classic Graph Agentic](https://github.com/QianJinGuo/wiki-public/blob/main/entities/three-rag-architectures-classic-graph-agentic.md)
+- [Nvidia Multimodal Rag Knowledge Systems](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-multimodal-rag-knowledge-systems.md)
+- [Rag技术框架的演进方向](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag技术框架的演进方向.md)
+- [Skill Rag Tsinghua Sra](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-rag-tsinghua-sra.md)
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-framework.md)
 
 → [原文存档](https://mp.weixin.qq.com/s/2pk4Mhr4nLMapJrTqpYX6Q)
 
@@ -702,1187 +1883,9 @@ HippoRAG on AWS 提供了一个**经典的 GraphRAG 生产实现模板**，与 S
 
 ---
 
-## Ch10.003 Nvidia Multimodal RAG Knowledge Systems
-
-> 📊 Level ⭐⭐ | 22.0KB | `entities/nvidia-multimodal-rag-knowledge-systems.md`
-
-# Build AI&#x2d;Ready Knowledge Systems Using 5 Essential Multimodal RAG Capabilities | NVIDIA Technical Blog
-Build AI&#x2d;Ready Knowledge Systems Using 5 Essential Multimodal RAG Capabilities | NVIDIA Technical Blog DEVELOPER Home Blog Forums Docs Downloads Training Join Technical Blog Subscribe Related Resources Agentic AI / Generative AI English Build AI-Ready Knowledge Systems Using 5 Essential Multimodal RAG Capabilities Feb 17, 2026 By Shruthii Sathyanarayanan , Sumit Bhattacharya , Punit Kumar , Pranjal Doshi and Nikhil Kulkarni Like Discuss (1) L T F R E Enterprise data is inherently complex: real-world documents are multimodal, spanning text, tables, charts and graphs, images, diagrams, scanned pages, forms, and embedded metadata. Financial reports carry critical insights in tables, engineering manuals rely on diagrams, and legal documents often include annotated or scanned content.&nbsp; Retrieval-augmented generation (RAG) was created to ground LLMs in trusted enterprise knowledge retrieving relevant source data at query time to reduce hallucinations and improve accuracy. But if a RAG system processes only surrounding text, it misses key signals embedded in tables, charts, and diagrams resulting in incomplete or incorrect answers. An intelligent agent is only as good as the data foundation it s built on. Modern RAG must therefore be inherently multimodal able to understand both visual and textual context to achieve enterprise-grade accuracy. The NVIDIA Enterprise RAG Blueprint is built for this, providing a modular reference architecture that connects unstructured enterprise data to the intelligent systems built on top of it.&nbsp; The blueprint also serves as a foundational layer for the NVIDIA AI Data Platform , helping to bridge the traditional gap between compute and data. By enabling retrieval and reasoning closer to the data layer, it preserves governance, reduces operational friction, and makes enterprise knowledge immediately usable by intelligent systems. The result is a modern AI data stack storage that can retrieve, enrich, and reason alongside your models. While the Enterprise RAG Blueprint provides many configurable options, this post highlights the following five key configurations that most directly improve accuracy and contextual relevance across enterprise use cases:&nbsp; Baseline multimodal RAG pipeline Reasoning Query decomposition Filtering metadata for faster and precise retrieval Visual reasoning for multimodal data The post also explains how the blueprint can be embedded into AI data platforms to transform traditional repositories into AI-ready knowledge systems.&nbsp; Accuracy metrics in this blog are measured using the RAGAS framework , using well-known public datasets. Learn more about evaluating your NVIDIA RAG Blueprint system . 1. Document ingestion and understanding Before an agent can deliver insights, it must be perfectly grounded in your data. This foundational configuration focuses on intelligent document ingestion and core RAG functionality.&nbsp; The Enterprise RAG Blueprint uses NVIDIA NeMo Retriever to extract multimodal enterprise content text, tables, charts and graphs, and infographics then embeds that content into text for indexing in a vector database. At query time, the blueprint runs semantic retrieval, reranking, and Nemotron LLM to generate a grounded answer. To maximize performance, this baseline intentionally avoids image captioning and heavy reasoning, making it the ideal starting point for production deployments. Deploy this baseline on Docker . Benefits of document ingestion and understanding&nbsp; This foundational configuration is the blueprint s highest-efficiency pipeline, optimized for accuracy and throughput while keeping GPU cost and time to first token (TTFT) low. This configuration establishes your baseline performance for retrieval quality and LLM grounding. Figure 1. RAG pipeline Table 1 summarizes the overall impact across a few datasets. Accuracy (v2.3 Default) MM = Multimodal, TO = Text-Only Dataset Type Accuracy RAG Battle MM 0.809 KG RAG MM 0.565 FinanceBench MM 0.633 BO767 MM 0.910 HotpotQA TO 0.671 Google Frames MM 0.509 Table 1. Accuracy impact of baseline configuration (higher is better) 2. Reasoning When you turn on reasoning in the RAG blueprint, you enable the LLM to interpret the retrieved evidence, and synthesize logically grounded answers. This is the easiest change to get an accuracy boost for many applications. Enable reasoning for the NVIDIA Enterprise RAG Blueprint . Table 2 summarizes the overall impact across several sample datasets. Accuracy (v2.3 Default) plus Reasoning MM = Multimodal, TO = Text-Only Dataset Type Reasoning on Default RAG Battle MM 0.85 0.809 KG RAG MM 0.58 0.565 FinanceBench MM 0.69 0.633 BO767 MM 0.88 0.91 Table 2. Accuracy impact of enabling reasoning versus baseline configuration (higher is better) Benefits of reasoning&nbsp; For any use case involving mathematical operations or complex data comparison, a typical simple similarity or hybrid search will not suffice. Reasoning is required to correct errors and ensure precise contextual understanding. Accuracy improvements across datasets averaged ~5%, with several cases demonstrating dramatic reasoning-driven corrections.&nbsp; Examples In the FinanceBench dataset, the baseline configuration incorrectly computed the Adobe FY2017 operating cash flow ratio as 2.91. After enabling reasoning, the model produced the correct answer, 0.83. In addition, the Ragbattle dataset demonstrates the accuracy improvement from enabling VLM. 3. Query decomposition&nbsp; Answering complex user questions often requires pulling facts from multiple places in the data foundation. Query decomposition breaks a single question into smaller subqueries, retrieves evidence for each, and recombines the results into a complete, grounded response. Turn on query decomposition for the NVIDIA Enterprise RAG Blueprint . Figure 2. Response accuracy before and after query decomposition Benefits of query decomposition Query decomposition significantly improves accuracy for multihop and context-rich questions that span multiple paragraphs or documents. It does add extra LLM calls (increasing latency and cost), but the accuracy gains are often worth it for mission-critical enterprise use cases. Query decomposition can also be paired with reasoning for an additional boost when needed. Example As NVIDIA AI Data platform partners evolve to offer more relevant and accurate retrieval, this feature can either include some level of query processing as part of the data platform or can be left to the agent. Learn more about how query decomposition can be an approach in some use cases .&nbsp; Table 3 shows the overall impact across a few datasets. Accuracy (v2.3 Default) plus Query Decomposition MM = Multimodal, TO = Text-Only Dataset Type Query decomposition Default RAG Battle MM 0.854 0.809 FinanceBench MM 0.631 0.633 BO767 MM 0.885 0.91 HotpotQA TO 0.725 0.671 Google Frames MM 0.6 0.5094 Table 3. Accuracy impact of query decomposition versus baseline configuration (higher is better) 4. Filtering metadata for faster and precise retrieval Metadata, such as author, date, category, and security tags, has always been integral to enterprise data. In RAG pipelines, metadata filters can be leveraged to narrow the search space and align retrieved content with the right context, significantly improving retrieval precision and speed.&nbsp; The RAG blueprint supports custom metadata ingestion and automatic query generation based on that data. To leverage your custom metadata, see Advanced Metadata Filtering with Natural Language Generation . To learn more about what s possible with this feature set, check out the example notebook on the NVIDIA-AI-Blueprints/rag GitHub repo.&nbsp; Benefits of metadata filtering Metadata filtering narrows the search space for faster retrieval and improves precision by aligning retrieved content with context. This allows developers to leverage metadata without manual filter logic to achieve higher throughput and contextual relevance. When metadata filtering capabilities are embedded directly into AI data platforms, it can make your storage smarter, leading to faster retrieval and lower latency. Example To provide an example, consider two documents that are ingested with the following metadata: custom_metadata = &#x5B; { &quot;filename&quot;: &quot;ai_guide.pdf&quot;, &quot;metadata&quot;: { &quot;category&quot;: &quot;AI&quot;, &quot;priority&quot;: 8, &quot;rating&quot;: 4.5, &quot;tags&quot;: &#x5B;&quot;machine-learning&quot;, &quot;neural-networks&quot;], &quot;created_date&quot;: &quot;2024-01-15T10:30:00&quot; } }, { &quot;filename&quot;: &quot;engineering_manual.pdf&quot;, &quot;metadata&quot;: { &quot;category&quot;: &quot;engineering&quot;, &quot;priority&quot;: 5, &quot;rating&quot;: 3.8, &quot;tags&quot;: &#x5B;&quot;hardware&quot;, &quot;design&quot;], &quot;created_date&quot;: &quot;2023-12-20T14:00:00&quot; } } When using metadata with dynamic filter expression, a query such as, &#8220;Show me high-rated AI documents with machine learning tags created after January 2024&#8221; will translate to one that automatically generates a filtering expression such as: filter_expression = `content_metadata&#x5B;&quot;category&quot;] == &quot;AI&quot; and content_metadata&#x5B;&quot;rating&quot;] &gt;= 4.0 and array_contains(content_metadata&#x5B;&quot;tags&quot;], &quot;machine-learning&quot;) and content_metadata&#x5B;&quot;created_date&quot;] &gt;= &quot;2024-01-01 ` With metadata filtering enabled, the system retrieved 10 focused citations from one document, ai_guide.pdf , achieving 100% precision on the target domain while reducing search space by 50%. 5. Visual reasoning for multimodal data&nbsp; Enterprise data is visually rich. Where traditional text-only embeddings fall short, vision language models (VLMs) such as NVIDIA Nemotron Nano 2 VL (12B) introduce visual reasoning into the pipeline. Learn more about how to leverage a VLM for generation in the RAG Blueprint.&nbsp; Figure 3. Before and after leveraging a VLM for generation Benefits of visual reasoning&nbsp; Visual reasoning is crucial for handling real-world enterprise documents. Integrating a VLM in the generation pathway enables the RAG system to interpret images, charts, and infographics, making it possible to accurately answer queries where the information lies in a structured visual element rather than just the surrounding text.&nbsp; Example&nbsp; A significant accuracy improvement was observed when a VLM was enabled for the Ragbattle dataset in the RAG Blueprint, especially when the answer was in a visual element. Note that enabling VLM inference can increase response latency from additional image processing. Consider this tradeoff between accuracy and speed based on your requirements. Learn more about the accuracy improvements with VLM for the Ragbattle dataset. Transforming enterprise storage into an active knowledge system The Enterprise RAG Blueprint demonstrates how the progressive adoption of these five capabilities from reasoning and metadata-driven retrieval to multimodal understanding directly enhances the accuracy and groundedness of your intelligent agents. Each capability offers a unique balance between latency, token cost, and contextual precision, providing a flexible, tunable framework that can be adopted to various enterprise use cases. This accelerates the evolution of the data foundation itself. The NVIDIA AI Data Platform transforms enterprise data into AI-searchable knowledge. As NVIDIA partners evolve their storage offerings, this blueprint serves as a reference for delivering embedded RAG capabilities that leverage metadata to enforce permissions, track changes, and provide highly accurate retrieval directly at the storage layer. NVIDIA storage partners are building AI data platforms based on the NVIDIA reference design that are transforming enterprise storage from a passive repository to become an active intelligent system in the AI workflow. The result is a next-generation enterprise data infrastructure: faster, smarter, and purpose-built for the age of generative AI. What s new with the NVIDIA Enterprise RAG Blueprint The latest release of the NVIDIA EnterpriseRAG Blueprint deepens its focus on serving agentic workflows. It introduces first-class document-level summarization with both shallow and deep strategies, enabling agents to quickly assess relevance, narrow search space, and balance accuracy with latency. A new data catalog improves discoverability and governance across large corpora, while upgrades to the best-in-class Nemotron RAG models further enhance retrieval quality, reasoning, and generation performance making RAG a more efficient, agent-ready foundation for enterprise-scale knowledge systems. Get started with enterprise-grade RAG Ready to integrate these five capabilities into your RAG use cases? Access the modular code, documentation, and evaluation notebooks for free within the NVIDIA Enterprise RAG Blueprint . Make your enterprise data AI-ready and transform your production data into an intelligent knowledge system with embedded RAG capabilities with NVIDIA AI Data Platform. Contact an NVIDIA AI storage partner to get started with your own NVIDIA-powered AI data platform.&nbsp; Discuss (1) Like Tags Agentic AI / Generative AI | Data Center / Cloud | General | Blueprint | Nemotron | Intermediate Technical | Best practice | AI Agent | AI Data Platform | AI-Ready Data | featured | LLMs | Retrieval Augmented Generation (RAG) About the Authors About Shruthii Sathyanarayanan Shruthii Sathyanarayanan is a product marketing manager in the NVIDIA Enterprise Computing group with a focus on enterprise AI and virtualization. Shruthii holds a bachelor s degree in Computer Engineering and Business from the University of Illinois at Urbana-Champaign and has previously held roles in software development and product management. View all posts by Shruthii Sathyanarayanan About Sumit Bhattacharya Sumit Bhattacharya is a senior engineering manager at NVIDIA, working on AI blueprints and conversational AI. His primary area of focus is building scalable, low-latency solutions for Enterprise RAG, data flywheels, and voice agents. He also has extensive experience of working on NLP, dialog systems, and voice assistants. He holds a master s degree in Electrical Engineering from the Indian Institute of Technology, Kharagpur, and has over 18 years of industry experience. View all posts by Sumit Bhattacharya About Punit Kumar Punit Kumar is a senior system software engineer at NVIDIA with a focus on the RAG Blueprint, production RAG systems, and features that improve accuracy and performance. Punit holds a master s degree in Data Science and Engineering from BITS Pilani and a BTech in Computer Science from SKIT Jaipur and has previously held roles in R&amp;D in AI engineering and in data engineering. View all posts by Punit Kumar About Pranjal Doshi Pranjal Doshi is a software engineer at NVIDIA, specializing in retrieval-augmented generation (RAG) and the productionization of large language models. Pranjal holds a master s degree in Computer Science and Engineering from the Indian Institute of Technology (IIT) Kharagpur and focuses on bridging the gap between AI research and scalable, real-world applications. View all posts by Pranjal Doshi About Nikhil Kulkarni Nikhil Kulkarni is a software engineer at NVIDIA specializing in the productization of the RAG Blueprint, with an emphasis on accuracy improvements, performance optimizations, and deployment. Nikhil holds a bachelor s degree in Computer Science and focuses on translating AI models into robust, enterprise-grade architectures. He has previously worked on building speech-based AI agents at NVIDIA. View all posts by Nikhil Kulkarni Comments Related posts Chat With Your Enterprise Data Through Open-Source AI-Q NVIDIA Blueprint Chat With Your Enterprise Data Through Open-Source AI-Q NVIDIA Blueprint NVIDIA NeMo Retriever Delivers Accurate Multimodal PDF Data Extraction 15x Faster NVIDIA NeMo Retriever Delivers Accurate Multimodal PDF Data Extraction 15x Faster Insights, Techniques, and Evaluation for LLM-Driven Knowledge Graphs Insights, Techniques, and Evaluation for LLM-Driven Knowledge Graphs Translate Your Enterprise Data into Actionable Insights with NVIDIA NeMo Retriever Translate Your Enterprise Data into Actionable Insights with NVIDIA NeMo Retriever Scaling Enterprise RAG with Accelerated Ethernet Networking and Networked Storage Scaling Enterprise RAG with Accelerated Ethernet Networking and Networked Storage Related posts Building NVIDIA Nemotron 3 Agents for Reasoning, Multimodal RAG, Voice, and Safety Building NVIDIA Nemotron 3 Agents for Reasoning, Multimodal RAG, Voice, and Safety How to Build Deep Agents for Enterprise Search with NVIDIA AI-Q and LangChain How to Build Deep Agents for Enterprise Search with NVIDIA AI-Q and LangChain Build Next-Gen Physical AI with Edge First LLMs for Autonomous Vehicles and Robotics Build Next-Gen Physical AI with Edge First LLMs for Autonomous Vehicles and Robotics Building Telco Reasoning Models for Autonomous Networks with NVIDIA NeMo Building Telco Reasoning Models for Autonomous Networks with NVIDIA NeMo How to Build a Document Processing Pipeline for RAG with Nemotron How to Build a Document Processing Pipeline for RAG with Nemotron L T F R E
-
-## 深度分析
-
-**1. 企业数据天然是多模态的，单语文本 RAG 存在结构性缺陷**
-
-企业文档涵盖文本、表格、图表、图片、图表、扫描页和表单，关键洞察往往嵌入在视觉元素而非周围文本中。传统仅处理文本的 RAG 系统会遗漏表格中的关键数据、图表中的趋势和表单中的结构化信息，导致不完整或错误的答案。多模态 RAG 是实现企业级准确率的必要条件而非可选项。
-
-**2. NVIDIA Enterprise RAG Blueprint 的模块化设计降低了多模态落地门槛**
-
-NVIDIA Enterprise RAG Blueprint 采用模块化参考架构，将文档摄取与理解、推理、查询分解、元数据过滤和视觉推理作为可独立配置的能力。这种设计使企业能够渐进式采用——从基础管道开始，逐步叠加推理（+5% 平均准确率提升）、查询分解（元数据+50% 搜索空间缩减）、VLM 视觉推理（视觉元素问答能力）等能力。
-
-**3. 推理能力对 RAG 准确率提升最显著且实现成本最低**
-
-启用推理后，RAG 准确率平均提升约 5%。在 FinanceBench 数据集上，基础配置错误计算 Adobe FY2017 经营现金流比率（2.91 vs 正确值 0.83），启用推理后自动修正。推理能力对于涉及数学运算或复杂数据对比的场景尤为关键，是大多数应用最容易获得的准确率提升。
-
-**4. 查询分解和元数据过滤是精准检索的重要支柱**
-
-查询分解通过将复杂多跳问题分解为子查询，从多个文档检索证据并重组答案，显著提升跨段落/多文档问题的准确率。元数据过滤通过安全标签、日期、类别等属性缩小搜索空间（减少 50% 搜索范围），同时聚焦检索内容与正确上下文，是企业知识管理场景的核心能力。
-
-**5. 视觉推理能力解锁企业文档中图像和图表的问答能力**
-
-NVIDIA Nemotron Nano 2 VL (12B) VLM 将视觉推理引入 RAG 管道，使系统能够解释图像、图表和信息图，在视觉元素中包含答案的数据集（如 Ragbattle）实现显著准确率提升。存储层嵌入 RAG 能力（NVIDIA AI Data Platform）使数据本身成为可推理的智能知识系统，实现治理保留、运营摩擦降低和权限直接执行。
-
-## 实践启示
-
-1. **多模态 RAG 是企业知识管理的必选项**：在选型时，文本+表格+图表的联合摄取和检索能力应作为企业 RAG 的基础要求，而非增强功能。
-
-2. **采用分阶段路径部署多模态 RAG**：从基础管道开始 → 启用推理处理数学/复杂对比 → 添加查询分解支持多跳问题 → 叠加元数据过滤和视觉推理 VLM，每阶段交付可衡量的准确率提升。
-
-3. **金融/法律等高精度场景优先启用推理能力**：推理对涉及数值计算和多步逻辑的查询准确率提升最为显著，应在第一阶段就启用而非留到后期。
-
-4. **元数据驱动检索应在数据摄取阶段同步设计**：在设计企业 RAG 时，从一开始就规划好作者、日期、类别、安全标签等元数据的完整摄取，以支撑后续精准过滤。
-
-5. **推进数据基础设施现代化为 AI 原生**：存储层嵌入 RAG 能力（向量检索+语义理解）是企业数据基础设施的未来方向，应纳入 AI 转型路线图。
-
-## 相关实体
-- [Nvidia Nemotron 3 Agents Rag Voice Safety](ch03/004-agent.html)
-- [Nvidia Extreme Co Design Agentic Systems](ch04/031-nvidia-extreme-co-design-agentic-systems.html)
-- [Nvidia Agentic Ai Subsurface Engineering](ch04/288-nvidia-agentic-ai-subsurface-engineering.html)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/322-nvidia-secure-local-agent-nemoclaw-openclaw.html)
-- [Nvidia Telco Reasoning Models Nemo](ch01/125-nvidia-telco-reasoning-models-nemo.html)
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
-
-→ [原文存档](https://developer.nvidia.com/blog/build-ai-ready-knowledge-systems-using-5-essential-multimodal-rag-capabilities/)
-
----
-
-## Ch10.004 RAG 分块优化 2025：策略选择与工程实践
-
-> 📊 Level ⭐⭐ | 17.9KB | `entities/rag-chunking-optimization-2025.md`
-
-## 相关实体
-
-- [elasticpp重塑elasticsearch查询性能的c内核引擎](https://github.com/QianJinGuo/wiki-public/blob/main/entities/elasticpp重塑elasticsearch查询性能的c内核引擎.md)
-→ [原文存档：分块向量化召回重排](https://mp.weixin.qq.com/s/Bl_u18--lqczQDV2x_NG-g)
-→ [原文存档：全链路技术详解](https://mp.weixin.qq.com/s/aA2PFaabKNlDq96jhAdDkQ)
-→ [原文存档：流水线](https://mp.weixin.qq.com/s/Bl_u18--lqczQDV2x_NG-g)
-
-## 核心命题
-
-RAG 系统的效果瓶颈不在模型，而在**入库质量**。同样的 Embedding 模型和 Rerank 策略，文档切得好与切得差，召回质量可能相差 40% 以上。2025 年的行业共识是：分块策略的选择与迭代，是 RAG 工程化中最关键也最经验驱动的环节。
-
-## 分块优化的核心矛盾
-
-分块面临经典两难：**太大则语义模糊，太小则上下文断裂**。这个矛盾没有完美解法，只有业务场景下的最优解。
-
-当一个 chunk 包含多个主题（退货规则、换货规则、发票规则、运费规则），向量化后的语义表达会变得模糊——它试图同时表示很多件事，结果哪件事都表示不精准。反之，切得太小（如只保留"超过 7 天后"），单独看没有任何意义，模型无法判断不能退还是可以换还是要人工审核。
-
-## 2025 年主流分块策略
-
-### 1. 固定长度分块
-
-最简单粗暴，按 token 数切分（如每 500 tokens）。优点是实现简单、速度快，适合快速验证；缺点是可能切断句子、表格、标题与正文的语义关联。不适合严肃生产场景。
-
-### 2. 语义边界分块（递归分块）
-
-优先按自然语言边界切（段落→句子→空格→字符），层层降级，尽量保留语义完整性。这比固定长度更合理，是大多数知识库的起步选择。
-
-### 3. 结构感知分块
-
-按文档原生结构切分（Markdown 标题、代码块、表格、FAQ 问答对）。适合技术文档、产品手册、制度文档。FAQ 文档最理想的切法是按完整 Q&A 切，而非按 token 数切——一个 Q&A 天然是一个完整知识单元。
-
-### 4. Meta-Chunking（2025 年前沿）
-
-基于 PPL（困惑度）的智能分块方法，用轻量模型（如 Qwen2）计算每个句子相对于前文的 PPL。在 PPL 局部极大值处切分——这些点对应逻辑断层的语义边界。切分后再用 LLM 进行语义补全和摘要生成，弥补上下文断裂。
-
-**核心洞察**：语义边界不来自标点，而来自语义连贯性的突变。PPL 把语言模型在每个句子处的"惊讶度"量化出来，当模型突然对下一句感到意外时，PPL 曲线出现尖峰，对应逻辑断层。这个方法比固定切分更接近"语义感知"，但比纯 LLM 切分更轻量。
-
-### 5. 智能语义分块
-
-用 Embedding 计算相邻句子的语义相似度，当语义突然变化时在这里切分；或直接让大模型判断哪些内容应该放在同一个 chunk。效果最好但成本最高，适合高价值知识库、文档复杂、对准确率要求高的场景。
-
-## 父子分块：检索与生成的解耦设计
-
-父子分块解决 RAG 链路最核心的矛盾：**检索需要小块，生成需要大块**。
-
-- **小块**：语义更聚焦，更容易精准匹配用户问题（如直接命中"SKU-20240315 属于定制类商品，不支持无理由退货"）
-- **大块**：包含完整上下文，让模型知道规则属于哪个政策、是否有适用范围、是否有时间限制
-
-**工程思路**：入库时同时切成大块和小块，检索时用小块匹配，命中后返回对应的大块给模型。本质上是将"检索精度"和"回答完整性"这两个目标解耦，分别优化。非常适合长文档、制度文档、产品手册。
-
-## Dify 分块参数配置
-
-| 参数 | 作用 | 建议 |
-|------|------|------|
-| 分段标识符 | 决定在哪里切 | 按业务语义自定义（FAQ 用"Q："、政策用"第 X 条"） |
-| 分段最大长度 | 控制每块大小 | FAQ 200-500 tokens，技术文档 500-1200 tokens |
-| 分段重叠长度 | 防止边界切断 | 默认 50 token，建议最大长度的 10%-25% |
-
-## 向量化与索引模式
-
-### 高质量模式 vs 经济模式
-
-- **高质量模式**：调用 Embedding 模型将 chunk 转换成向量，语义相近的文本向量距离更近。文档和查询**必须使用同一个 Embedding 模型**，否则检索结果会非常不稳定。
-- **经济模式**：用关键词索引（如 Jieba 分词），成本低但只能做字面匹配。适合成本极度敏感、查询以精确关键词为主的场景。
-
-### 索引是源头决策
-
-索引模式是源头决策，不是后面调 Top K、调 Score 阈值就能补回来的。如果一开始选了经济模式，后面问为什么同义词匹配不上、为什么语义召回效果不好，就无法回答了——因为系统从一开始就没有把知识放进语义空间里。
-
-## 查询优化：HyDE 与 Doc2Query
-
-### HyDE（假设文档嵌入）
-
-先让 LLM 生成"假答案"，用假答案的向量去匹配真实文档。将"问题-文档匹配"转化为"文档-文档匹配"，解决短问题与长文档之间的向量空间不对称问题。
-
-**本质**：短 query 与长文档在 embedding 空间中分布天然不同——query 通常是口语化提问，文档是结构化陈述。HyDE 通过生成"假答案"把 query 投射到"文档分布空间"，再做文档-文档匹配。
-
-### Doc2Query（反向 HyDE）
-
-对每个 chunk 预生成可能的 question，建立 question→chunk 索引。可离线处理，不影响实时 RT。核心价值：用"提问 vs 提问"替代"提问 vs 陈述"。
-
-**适用场景**：Doc2Query 离线预处理降低 RT，适合 query 模式稳定的客服场景；HyDE 在线处理复杂 query，适合 query 多变且意图模糊的探索性场景。两者可以并存于同一系统。
-
-## 检索与重排
-
-### 混合检索是默认选择
-
-向量检索擅长语义相似，全文检索对 SKU、订单号、合同编号、错误码等精确信息更稳定。在大多数企业知识库场景里，混合检索（向量+全文）是最稳妥的起步方案。用户问题通常不是纯语义也不是纯关键词，两者混在一起是常态。
-
-### Rerank：召回是海选，重排是复试
-
-召回追求快且不漏，重排将候选片段按与用户问题的真实相关性重新排序。Cross-Encoder 将 Query 和候选文档拼接后共同编码，通过交叉注意力捕捉细微匹配关系，解决多条件联合约束（如"2000以下+续航好+华为"）的精确排序。
-
-**建议场景**：客服、售后、法务、医疗、金融等高风险场景尽量开 Rerank；内部知识助手等低风险场景可以先关闭，把链路跑通再说。
-
-## TopK 与 Score 阈值配置
-
-- **TopK**：不是越大越好。chunk 大则 TopK 小；chunk 小则 TopK 可适当大。用父子分块返回父块时，TopK 不能太大，否则上下文会爆。
-- **Score 阈值**：防止硬凑答案。知识库里没有依据时，不要强行回答。宁可保守——"当前知识库中没有找到足够依据，建议转人工处理"——也不要让模型硬编。
-
-## 调优顺序
-
-合理的调优顺序：**文档质量 → 分块策略 → 索引模式 → 检索方式 → 重排 → TopK/Score 阈值 → Prompt 约束**。前面环节没做好，后面再怎么调都只是修修补补。80% 的 RAG 项目时间实际上应该花在数据处理上，而非模型调参上。
-
-## 2025 年工程实践清单
-
-1. **文档格式优先级**：Markdown > 纯文本 > Word > PDF > Excel > PPT > 图片/扫描件
-2. **数据清洗是核心**：不要把未经整理的资料一股脑上传，页眉页脚、水印、版权声明、过期条款都需要清理
-3. **分块需要迭代验证**：没有最优分块策略，只有最适合业务场景的分块策略。从递归分块或结构化分块开始，通过实际召回效果迭代调整
-4. **父子分块是复杂场景利器**：文档较长、规则之间有关联时，优先考虑父子分块
-5. **混合检索是默认起步**：不要一开始就用纯语义或纯关键词
-6. **Rerank 按场景开启**：高风险场景开启，低风险场景先跑通链路
-7. **建立可观测性**：持续收集用户问题日志、召回命中率、回答准确率等指标，RAG 项目需要数据飞轮
-
-## Related
-
-- [RAG 深度解析：分块向量化召回重排](ch01/138-rag.html)
-- [RAG 全链路技术详解](ch01/138-rag.html)
-- [RAG 分块向量化召回重排流水线](ch01/138-rag.html)
-- [向量库 vs 知识图谱：RAG 的进阶路径](ch01/138-rag.html)
-- [AI Agent 记忆系统工作原理](ch04/133-how-ai-agent-memory-works.html)
-
-## 深度分析
-
-**入库质量决定 RAG 上限的根本原因**：RAG 系统的本质是在"知识的语义空间"中做匹配。当文档被切分和向量化后，其语义表达就被固定了——无论后续用多么精巧的检索算法或多么强大的生成模型，都无法超越入库时损失的信息。向量检索的本质是在高维语义空间中寻找最近邻，如果入库时 chunk 的语义就是模糊的、多主题的，那么检索回来的"最近邻"必然也是语义模糊的。生成模型在这样的上下文上，无论能力多强，都无法凭空恢复丢失的语义细节。这解释了为什么"80% 的时间应该花在数据处理上"——模型调优是在天花板下绣花，数据处理是在提升天花板本身。
-
-**PPL 语义分块的理论意义：从标点边界到认知边界**：传统分块依赖标点符号（句号、换行符）定义切分点，但标点只反映口语节奏，不反映语义结构。PPL（困惑度）分块的核心洞察是：语义连贯性可以被量化——当语言模型对下一个句子的预测突然变得不确定时（即 PPL 出现尖峰），说明前一句和当前句之间存在逻辑断层。这个方法将语言模型的"认知不确定性"用于边界检测，本质上是在用模型的内在表征做语义分割，比依赖表面特征的分块方法更接近人类对"完整语义单元"的判断。
-
-**父子分块的工程哲学：解耦而非妥协**：检索精度与生成完整性之间的矛盾，本质上是两个不同目标的冲突——检索需要细粒度（越小越精准），生成需要粗粒度（越大越完整）。父子分块的工程哲学是拒绝在这两个目标之间做妥协，而是通过引入双层表示将两者解耦：小块负责精准匹配，大块负责完整上下文。这种"解耦而非权衡"的思路在系统设计中具有普遍意义——当两个需求看似矛盾时，往往是因为它们混在了同一个抽象层次中，通过引入中间层将矛盾分流，是比硬撑着做折中更优的架构选择。
-
-**HyDE 与 Doc2Query 的深层对称性**：HyDE（用假答案匹配文档）和 Doc2Query（为文档预生成问题）是同一思想的不同方向——前者从 query 侧出发生成"文档假样本"，后者从 document 侧出发生成"query 假样本"，两者都在解决"提问方式与陈述方式不匹配"的核心问题。HyDE 的优势是处理开放性、模糊性 query；Doc2Query 的优势是处理结构稳定、可枚举的文档知识。两者并存的架构启示是：真实的 RAG 系统往往需要在 query 侧和 document 侧同时做增强，而非只优化其中一端。
-
-**调优顺序的因果链：前序决策对后序的不可逆影响**：文档质量、分块策略、索引模式、检索方式、重排、TopK/Score 阈值这个调优顺序，本质上是一条信息损失链——每一个环节的决策都会在其后续环节中产生放大效应。如果在文档质量环节引入噪声，后面的分块会将噪声固化为语义模糊的 chunk；索引模式选错（选了经济模式），后续无论怎么调 TopK 和 Score 阈值都无法把知识重新放入语义空间。这条因果链说明：早期决策的错误成本远大于后期决策，且后期决策几乎无法弥补早期决策的损失。正确的工程实践应该是"前期慢后期快"——在文档处理和分块策略上多花时间验证，在参数调优上快速迭代。
-
-## 实践启示
-
-1. **将文档预处理提升为独立的数据工程项目**：不要把"数据清洗"当作上传前的手动步骤，而应该建立一套自动化的文档质量 pipeline，包括：格式标准化（优先转 Markdown）、结构化解析（提取标题层级、表格、代码块）、去噪（移除页眉页脚、水印、版权声明）、版本校验（检测过期条款和内容冲突）。在正式知识库建设之前，这个 pipeline 的质量直接决定 RAG 系统的效果上限。
-
-2. **以业务语义边界作为分块优先策略，而非 token 数量**：在选择分块策略时，首先分析业务知识的最基本单元是什么——FAQ 场景是 Q&A 对，政策文档是条款，客服话术是场景，处理流程是步骤。如果业务语义单元与 token 限制不匹配，应该优先保证语义完整性，token 限制作为硬约束在必要时通过重叠切分来弥补，而非反过来让 token 限制主导切分。
-
-3. **父子分块是复杂制度文档的默认选择**：当知识库涉及退货政策、优惠规则、产品说明等存在大量"适用条件"和"例外情况"的文档时，默认采用父子分块架构。具体配置：子块（小块）用于精准匹配，大小控制在 100-300 tokens；父块（大块）包含完整的上下文上下文，大小控制在 500-1000 tokens；检索时用子块匹配，返回时用父块上下文。
-
-4. **索引模式的决策要在系统设计阶段确定，后期几乎不可更改**：在系统设计阶段就要明确：应用场景是偏语义（如产品咨询、概念解释）还是偏精确（如 SKU 查询、订单号检索）。前者必须选高质量模式（向量索引），后者可以选择经济模式（关键词索引）。一旦选了经济模式，后续即使切换到向量索引，已入库的 chunk 也没有语义向量，需要重建索引——这是一个巨大的工程成本。
-
-5. **建立 RAG 系统的可观测性基础设施，从第一天开始**：RAG 系统的优化本质上是数据驱动的——需要持续监控：用户 query 的召回率（是否找到了相关 chunk）、Score 阈值的过滤率（有多少候选被过滤）、最终回答的引用完整率（回答是否真的有引用依据）。建议从第一天就接入 Ragas 或类似评估框架，建立自动化评测管道，形成"用户 query → 召回分析 → 分块迭代"的闭环数据飞轮。
-
----
-
-**补充阅读**：
--
--
--
--
--
-
----
-
-## Ch10.005 Manufacturing Intelligence with Amazon Nova Multimodal Embeddings
-
-> 📊 Level ⭐⭐ | 17.0KB | `entities/amazon-nova-manufacturing-intelligence.md`
-
-## 为什么制造业需要多模态检索
-
-制造业文档的一个典型特征是文本与图像的深度融合。单个工单可能同时包含书面装配步骤和已完成步骤的标注照片；检测报告将合格/不合格测量值与焊缝 X 光图像配对；材料认证证书同时包含表格化的力学性能和 S-N 疲劳曲线。
-
-以本文评估数据集中的具体示例来说明：扭矩规范表被绘制在工程图内部而非作为独立文本存储；彩色编码的热等值线图用于可视化火箭发动机喷嘴的峰值温度；制造工艺流程图通过决策菱形和颜色编码的关卡来直观标注质量暂停点，相关周期时间则以图表注释的形式呈现。
-
-文本检索系统处理这类文档时，通常先通过 OCR 提取文本，再对提取的字符串进行嵌入和索引。这种方法在答案位于文档书面部分时有效，但会丢失图表中的空间关系、检测图像中的视觉模式，以及图表和曲线中编码的定量信息。当搜索涡轮泵中使用的轴承类型时，答案可能以横截面图上的标注形式出现，而 OCR 可能误读或剥离了其空间上下文。
-
-多模态嵌入采用不同方法：模型直接处理图像并生成与文本嵌入位于同一空间中的向量，无需先将图像转换为文本。关于涡轮泵轴承的文本查询可以直接基于视觉理解与数据集中的横截面图进行匹配。
-
-## Amazon Nova Multimodal Embeddings 概述
-
-Amazon Nova Multimodal Embeddings 在 Amazon Bedrock 上可用，能为文本、图像和多页文档生成嵌入。文本、图像和文档模态投影到单一共享向量空间，支持直接计算文本嵌入与图像嵌入之间的余弦相似度。
-
-该模型支持 256、384、1024 和 3072 四种嵌入维度配置。更高维度捕获更多语义细节，但需要更多存储和计算资源进行相似度搜索。本文评估使用 1024 维度作为检索质量与成本的实际平衡点。模型还支持 `DOCUMENT_IMAGE` detail level，这是一种专为混合内容页面（如图表、表格和带注释的示意图）设计的处理模式。
-
-对于检索工作负载，模型接受 `purpose` 参数，可设置为 `GENERIC_INDEX`（用于被索引的文档）或 `GENERIC_RETRIEVAL`（用于查询）。这种非对称嵌入方法改善了检索的向量空间，无需手动格式化查询。
-
-## 解决方案架构
-
-该方案构建了两个并行检索管道进行比较：
-
-**数据集**：15 张独立技术图像（CAD 图形、检测报告、测试图表、材料规格、工艺流程图）和 5 份多页 PDF（装配程序、热试车报告、工程变更通知、材料认证、不合格报告），包含合成航空航天制造数据。
-
-**管道 A（多模态）**：使用 Amazon Nova Multimodal Embeddings 直接嵌入每张图像，每份 PDF 页面作为文档图像嵌入，然后摄入 Amazon S3 Vectors 索引。
-
-**管道 B（纯文本基线）**：将每张图像和 PDF 页面发送给 Amazon Nova 2 Lite 进行 OCR 文本提取，使用 Amazon Nova Multimodal Embeddings（纯文本输入）嵌入提取的文本，然后摄入独立的 Amazon S3 Vectors 索引。
-
-## 评估方法
-
-评估分为两个阶段：检索质量（系统是否找到正确文档？）和生成质量（语言模型能否根据检索到的上下文生成正确答案？）。评估数据集包含 26 个从航空航天制造文档衍生的查询，每个查询都有真实相关的文档 ID 和参考答案。
-
-### 检索评估指标
-
-检索评估计算三个指标：
-
-- **Recall@K**：相关文档出现在前 K 个结果中的比例
-- **MRR**（Mean Reciprocal Rank）：首个相关结果排名的倒数均值
-- **NDCG@K**（Normalized Discounted Cumulative Gain）：当相关文档排名更高时给予更多权重
-
-### LLM 评判的生成评估
-
-对于生成评估，两个管道都检索每个查询的前五个结果。多模态管道将检索到的图像直接作为多模态上下文传递给 Amazon Nova 2 Lite；纯文本管道将 OCR 提取的文本作为字符串上下文传递。使用 Anthropic Claude Sonnet 4.5 作为 LLM 评判，对每个生成的答案根据真实答案打分 1-5 分。
-
-## 评估结果
-
-### 多模态检索指标
-
-多模态管道在 K=5 时达到 90% 的召回率，在 K=10 时升至 96%。MRR 为 0.92，表明首个相关结果通常出现在第 1 位。有两个查询在 K=10 时召回率低于 1.0，因为相关信息分散在 PDF 和独立图像中，其中一个相关来源未出现在前 10 名。
-
-### 生成质量：纯文本 vs 多模态
-
-| 管道 | 评判平均分 | 归一化分数 |
-|---|---|---|
-| 多模态 (MME) | **4.88/5** | **0.977** |
-| 纯文本 (OCR) | 2.00/5 | 0.400 |
-
-多模态管道在 88% 的查询（26 个中的 23 个）上表现更好，平均 4.88/5 分。纯文本管道平均 2.00 分，其中 26 个查询中有 17 个得分 1 分（完全错误）。视觉内容（如热分析等值线图、疲劳曲线、工艺流程图和 CAD 标注标签）改进最为显著。
-
-### 实现复杂度和成本
-
-多模态管道的实现更简单且运行成本更低。纯文本管道每个文档需要两次模型调用（一次 OCR 文本提取，一次文本嵌入），且需要针对多样化文档布局进行提示工程。多模态管道每个文档仅需一次嵌入调用，无需中间提取步骤，将每个文档摄入成本降低约一半。
-
-## 技术要点
-
-**嵌入维度选择**：1024 维在本文场景下实现检索质量与成本的最佳平衡，支持从 256 到 3072 的灵活配置。
-
-**Detail Level 配置**：对于包含混合内容的 PDF 页面，`DOCUMENT_IMAGE` 模式优于 `STANDARD_IMAGE`，因为模型对表格和图表内容应用额外处理。
-
-**Asymmetric Embedding**：`GENERIC_INDEX` 和 `GENERIC_RETRIEVAL` 的分离设计使查询-文档匹配更加精准，无需手动格式化查询文本。
-
-**Amazon S3 Vectors**：作为托管式向量存储和查询层，无需集群管理或容量规划，按请求计费无持久基础设施。
-
-## 与 [Amazon Nova Lite 微调](ch11/207-amazon-nova.html) 的关系
-
-Amazon Nova Multimodal Embeddings 与  同属 Amazon Nova 家族的多模态能力，但定位不同：MME 专注于跨模态语义检索，将不同模态映射到统一向量空间；Lite 微调则针对特定视觉检测任务的端到端优化。两者都利用 Amazon Bedrock 的托管推理能力，但在下游任务上形成互补——检索 vs 判别。
-
-## 深度分析
-
-**1. 端到端多模态处理避免了 OCR 管道的信息丢失，这是生成质量差距的根源**
-
-纯文本管道（2.00/5）vs 多模态管道（4.88/5）的巨大差距，其本质是信息转换链中的丢失。纯文本管道经过 OCR 提取（可能误读工程图中的符号和标注）→ 文本嵌入（丢失空间关系）→ 生成器收到纯文本（没有视觉上下文）→ 生成错误答案。多模态管道直接处理图像（保留完整视觉信息）→ 图像嵌入（保留空间关系）→ 生成器收到原始图像（直接视觉理解）→ 生成正确答案。这印证了一个关键原则：多模态系统的端到端设计优于串联设计，任何中间转换步骤都会造成信息丢失，且丢失的信息在后续阶段无法恢复。
-
-**2. 纯文本检索在视觉密集型文档上的失败不是偶然而是系统性局限**
-
-26 个查询中 17 个纯文本管道得 1 分（完全错误），这不是个别案例而是系统性问题。OCR 在扭矩规范表绘制在工程图内部、热等值线图可视化峰值温度、决策菱形标注质量暂停点等场景中失效是必然的——这些信息的编码方式（空间位置、颜色编码、图形标注）本质上不是文本形式，而是视觉形式。传统文本检索的前提假设"信息存在于文本中"在这些场景中根本不成立。对于任何视觉密集型文档（工程图纸、检测图像、工艺流程图、曲线图表），纯文本检索从原理上就注定失败，多模态嵌入是唯一的解决路径。
-
-**3. 多模态检索的"实现简单+成本降低"具有正向飞轮效应**
-
-多模态管道每个文档仅需一次嵌入调用（vs 纯文本管道两次），无需提示工程处理多样化文档布局，且摄入成本降低约一半。这意味着不仅准确性更高，实施成本也更低。这种"更简单+更便宜+更准确"的三重优势会形成正向飞轮：成本优势驱动更多采用，更多采用产生更多训练数据，更多数据进一步提升模型质量。对制造业而言，这意味着多模态检索的 ROI 计算应该包含：传统方案的实际总成本（OCR失败率×业务损失 + 两次调用成本 + 提示工程维护成本），而不仅是多模态方案的直接成本节省。
-
-**4. 检索质量与生成质量必须联合评估，单独评估检索质量会误导系统选型**
-
-多模态管道在 K=5 时达到 90% 召回率（检索指标优秀），但这个数字如果被视为唯一评估标准，会掩盖纯文本管道在生成环节的彻底失败（88% 查询多模态更优）。这提示了一个关键的系统性盲点：很多 RAG 系统评估只看检索指标（Recall@K、MRR），但检索正确不等于生成正确——即使找到正确文档，如果以错误方式传递给生成器（纯文本 vs 原始图像），生成质量仍会崩溃。完整的评估必须包含端到端生成质量，才能真正反映用户实际体验。
-
-**5. 嵌入维度选择需要基于实际场景评估，1024 是制造业文档检索的实用平衡点**
-
-Amazon Nova MME 支持 256/384/1024/3072 四种维度，1024 被本文选为实用平衡点。这说明维度选择不是越高越好——3072 维可能捕获更多细节，但存储和计算成本也更高。评估结果在 1024 维实现 K=5 时 90% 召回率、K=10 时 96% 召回率，对于大多数制造文档检索场景已经足够。实际选型建议：先用 1024 维评估基线，如果特定场景召回率不足再尝试更高维度，同时监控存储和查询延迟的变化。不同行业文档的语义复杂度不同，需要实验确定最优维度。
-
-## 实践启示
-
-**1. 视觉密集型制造文档优先使用多模态嵌入而非 OCR+文本嵌入方案**
-
-对于航空航天、汽车、重型制造等行业的制造文档（CAD 图形、热等值线图、工艺流程图、检测照片、疲劳曲线），强烈建议采用多模态嵌入方案而非传统的 OCR+文本嵌入方案。评估结果已充分证明：多模态方案在生成质量上大幅领先（4.88/5 vs 2.00/5），同时实现更简单（单次调用 vs 两次调用）、成本更低（摄入成本降低约一半）。对于已有大量工程图纸和视觉文档的制造企业，这是立即可用的文档检索智能化路径。实施路径：1）将制造文档图像直接摄入 Amazon S3 Vectors；2）使用 Amazon Nova MME 生成 1024 维嵌入；3）通过 Amazon Nova 2 Lite 生成答案。
-
-**2. 评估多模态检索系统必须同时评估检索指标和端到端生成质量**
-
-单独评估检索指标（Recall@K、MRR、NDCG@K）会掩盖"检索正确但生成失败"的问题。建议的评估框架分两层：1）检索层评估文档召回率（K=5, K=10）；2）生成层使用 LLM-as-Judge 评估端到端答案质量（1-5 分），输入应为完整的检索-生成管道。评判时将 ground truth 答案、生成答案和查询一并给 LLM 评分。多模态管道的 88% 查询更优这一数据，只有在端到端评估框架下才能得出——这是本文最重要的方法论贡献，对所有 RAG 系统评估都有参考价值。
-
-**3. PDF 页面摄入时使用 DOCUMENT_IMAGE 模式而非 STANDARD_IMAGE**
-
-对于混合内容页面（包含图表、表格、标注示意图的 PDF），必须使用 `DOCUMENT_IMAGE` detail level 而非 `STANDARD_IMAGE`。这是因为模型对 `DOCUMENT_IMAGE` 模式会应用额外处理，专门优化表格和图表内容的嵌入质量。对于制造文档场景（大多数 PDF 都包含混合内容），这是保证嵌入质量的关键配置。相对地，对于纯图像（如独立 CAD 图、检测照片），使用 `STANDARD_IMAGE` 模式即可。实施时建议对不同类型文档测试两种模式，选择召回率更高的配置。
-
-**4. 充分利用 GENERIC_INDEX / GENERIC_RETRIEVAL 非对称嵌入设计**
-
-Amazon Nova MME 的 `GENERIC_INDEX`（文档索引用）和 `GENERIC_RETRIEVAL`（查询用）分离设计是有目的的架构选择，不是简单的参数。对索引文档使用 `GENERIC_INDEX` 使文档嵌入更全面（针对文档理解优化），对查询文本使用 `GENERIC_RETRIEVAL` 使查询嵌入更适合匹配（针对查询-文档匹配优化）。这种非对称设计改善了向量空间的质量，无需用户手动格式化查询文本。实施时应严格遵循这一分离设计，不要对查询也使用 `GENERIC_INDEX`。
-
-**5. 托管向量存储（Amazon S3 Vectors）是多模态检索的实用选择**
-
-对于大多数企业，S3 Vectors 作为托管式向量存储和查询层是更实用的选择：无需集群管理或容量规划，按请求计费无持久基础设施，集成 Amazon Bedrock 的模型调用自然流畅。对于制造业文档检索这类场景，托管方案的性能和成本通常已经足够，无需自建向量数据库。实施路径：使用 Amazon S3 Vectors 创建向量桶和索引，摄入时批量提交（本文使用 50 个一批），查询时指定 topK 和返回距离及元数据。评估完成后记得清理索引和桶以避免持续计费。
-
-## 参见
-
-→ [原文存档](https://aws.amazon.com/blogs/machine-learning/manufacturing-intelligence-with-amazon-nova-multimodal-embeddings/)
-
-→ [Amazon Bedrock 模型推理无服务器架构案例](ch11/136-amazon-bedrock.html)
-
-→ [Amazon Nova Sonic 可扩展语音代理设计](ch11/207-amazon-nova.html)
-
-→ [Amazon Nova 2 内容审核提示工程](ch01/322-prompting-amazon-nova-2-for-content-moderation.html)
-
-→ [Amazon Bedrock AgentCore 运行时深度解析](ch04/392-amazon-bedrock-agentcore.html)
-
-## 相关实体
-
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/amazon-aws-ai.md)
-
----
-
-## Ch10.006 RAG Chunk Embedding Rerank Pipeline
-
-> 📊 Level ⭐⭐ | 13.7KB | `entities/rag-chunk-embedding-rerank-pipeline.md`
-
-# RAG 分块·向量化·召回·重排流水线
-
-## 深度分析
-
-**入库质量是 RAG 效果的天花板，而不是模型。** 原文明确指出"知识库效果的上限，往往不是由模型决定的，而是由入库质量决定的"。这一洞察揭示了 RAG 项目中最反直觉的现实：团队遇到效果不佳时，第一反应往往是换 Embedding 模型、调 TopK 或 Score 阈值，但真实原因大概率是文档从一开始就处理不当。入库质量具有不可逆性——如果分块策略和索引模式在入库时选错，后续的检索调优无法弥补。这解释了为什么"80% 的时间在搞数据"不是夸张，而是工程现实。
-
-**分块是定义知识检索最小返回单位的艺术，核心矛盾是"太大不精准，太小不完整"。** 原文揭示了分块的本质悖论：chunk 越大语义越模糊（同时包含退货规则、换货规则、运费规则），chunk 越小上下文越不完整（"超过 7 天后"单独成块毫无意义）。父子分块通过"检索用小块、生成用大块"的思路同时解决了这一矛盾，是复杂文档场景的利器。但更深层的启示是：分块没有通用最优解，效果只能通过持续测试来验证，这也是 RAG 项目"一周出 Demo，半年还在 60 分"的根本原因之一。
-
-**Skill 与 RAG 的分工本质是"流程复制"与"知识调用"的互补。** 原文清晰定义了 AI 同事的三层能力：Workflow 层（知道怎么做）、Knowledge 层（知道参考什么资料）、Judgement 层（知道如何权衡）。Skill 主要覆盖第一层，RAG 主要覆盖第二层，第三层依赖模型能力和业务边界。这一框架解释了为什么大多数"同事 .skill"只是蒸馏了外显动作而非真实能力——因为隐性知识无法全部写入 prompt，必须依赖 RAG 来补足认知缺口。
-
-**索引模式是源头决策，具有不可补偿性。** 原文特别强调"索引模式是源头决策，不是后面调 TopK、调 Score 阈值就能补回来的"。经济模式（关键词索引）从一开始就没有把知识放进语义空间，无法通过后期的检索调优来弥补语义召回的缺失。这一原则可以推广到整个调优顺序：文档质量 → 分块策略 → 索引模式 → 检索方式 → 重排 → TopK/Score 阈值 → Prompt 约束，前序环节的错误无法通过后续环节弥补。
-
-**召回追求"快且不漏"，重排是"复试"——两阶段设计映射了信息检索的经典范式。** 召回是海选，追求广度（向量检索擅长语义相近、全文检索擅长精确词匹配、混合检索兼容两者）；重排是复试，追求精度（Rerank 模型深入看问题与文本的匹配关系）。这一两阶段架构的本质是用更低成本先快速排除明显无关内容，再用更高成本细排候选片段。它还揭示了一个深层规律：检索链路越往后越"贵"，因此前段应倾向于多召回而非漏召回。
-
-## 实践启示
-
-1. **在讨论 RAG 调优之前，优先评估文档格式和清洗质量。** 适合知识库的格式优先级为 Markdown > 纯文本 > Word > PDF > Excel > PPT > 图片/扫描件。扫描件依赖 OCR，错误率高。入库前应去除连续空格、多余换行符、URL、邮箱、水印、版权声明等噪音。业务噪音（过期条款、错误版本、内部备注）需要人工处理，系统自带清洗无法覆盖。
-
-2. **从 Dify 的三个分块参数出发，结合业务文档结构定制分块策略。** 分段标识符决定"在哪里切"（按段落、标题、"第 X 条"、FAQ 的"Q："等业务语义边界）；分段最大长度建议按文档类型参考经验值（FAQ 200-500 tokens、客服话术 300-700 tokens、技术文档 500-1200 tokens）；分段重叠长度设为最大长度的 10%-25%。对于长文档、制度文档、产品手册，优先考虑父子分块能力。
-
-3. **在大多数企业知识库场景中，混合检索是默认最优选择。** 向量检索擅长语义相似但对 SKU、订单号、错误码等精确信息不敏感；全文检索相反。客服、售后、技术支持等场景的用户问题通常是两者混合，因此"无脑选混合检索"是合理的起点。对于准确性要求高的场景（客服、法务、医疗、金融、技术支持），建议开启 Rerank。
-
-4. **TopK 和 Score 阈值需要结合 chunk 大小和场景类型动态调整。** chunk 大则 TopK 小；chunk 小则 TopK 可适当大；用父子分块返回父块时 TopK 不能太大否则上下文会爆。Score 阈值从 0.5-0.7 开始调，高风险场景宁可保守转人工，也不要让模型在缺乏依据时强行回答。
-
-5. **建立 RAG 可观测性飞轮，从用户真实日志中迭代优化。** 调优顺序应该从真实问题日志出发：分析是漏召回多还是噪音多。RAG 项目需要回答的五个问题是——文档本身干净吗？chunk 切得合理吗？索引模式选对了吗？召回方式适合业务问题吗？是否需要 Rerank？ 建议逐步建立：回答是否有依据可追溯、Bad Case 是否能定位到具体环节、TopK/Score 调整是否有数据支撑。
-
-## 相关实体
-- [Rag Chunking Optimization 2025](ch01/138-rag.html)
-- [Rag Full Pipeline Taobao](ch01/138-rag.html)
-- [Ai Agent Engineer Capability Map](ch04/279-ai-agent.html)
-- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](ch04/279-ai-agent.html)
-- [Claude Code Search Architecture Tencent 2026](ch03/057-claude-code.html)
-
-→ [原文存档](https://mp.weixin.qq.com/s/Bl_u18--lqczQDV2x_NG-g)
-
-RAG（Retrieval-Augmented Generation）流水线是 RAG 知识库从文档入库到答案生成的全链路工程实践，涵盖**离线阶段**（文档解析→清洗→分块→向量化→建索引）和**在线阶段**（查询改写→知识库路由→召回→重排→TopK/Score过滤→上下文拼接→大模型生成）。
-
-- [prosemirror @文档 mention：知识库 agent 输入框的工程化实现](https://github.com/QianJinGuo/wiki-public/blob/main/entities/prosemirror-knowledge-base-mention.md)
-
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/rag-knowledge-retrieval.md)
-## 核心定位：Skill 与 RAG 的分工
-
-Skill 负责**流程复制**（第一步做什么、第二步做什么），RAG 负责**知识调用**（做这件事需要参考哪些资料、历史经验、信息从哪里来）。两者组合才接近真正"蒸馏同事"的能力。
-
-真正的 AI 同事需要三层能力：
-1. **Workflow 层**：知道这件事该怎么做
-2. **Knowledge 层**：知道做这件事要参考什么资料
-3. **Judgement 层**：知道在复杂情况下如何权衡
-
-## 离线阶段：数据入库
-
-### 文档解析与清洗
-
-知识库效果的上限往往不是由模型决定的，而是由入库质量决定的。文档从一开始没处理好，后续再好的 Embedding 模型、Rerank 模型、向量数据库都只是把垃圾更快地找出来。
-
-适合知识库的文档格式优先级：Markdown > 纯文本 > Word > PDF > Excel > PPT > 图片/扫描件。扫描件依赖 OCR，错误率较高。
-
-清洗阶段需去除：连续空格、多余换行符、URL、邮箱、水印、版权声明等噪音。系统自带清洗能力有限，业务噪音（过期条款、重复政策、错误版本、内部备注、表格结构错乱）需在上载前人工处理。
-
-### 分块策略
-
-分块的本质是**定义知识检索的最小返回单位**。分块面临经典两难：**太大不精准，太小不完整**。
-
-| 分块策略 | 适用场景 | 优点 | 缺点 |
-|---|---|---|---|
-| 固定长度分块 | 快速验证 | 实现简单、速度快 | 可能切断句子和表格 |
-| 语义边界分块（按段落/句号/换行） | 通用场景 | 语义相对完整 | 长段落无法处理 |
-| 递归分块 | 长文档 | 先大边界再小边界，尽量保留语义 | 仍可能破坏复杂结构 |
-| 结构感知分块（按标题、代码块、表格、FAQ 问答对） | Markdown、技术文档、制度文档 | 符合文档原生结构 | 依赖文档格式规范 |
-| 智能语义分块（Embedding 相似度 / LLM 判断边界） | 高价值知识库 | 语义最精准 | 成本高、复杂 |
-
-Dify 三个核心分块参数：分段标识符（在哪里切）、分段最大长度（每块多大，默认 1024 token）、分段重叠长度（相邻片段共享内容，防止边界切断，默认 50 token，建议 10%-25%）。
-
-### 父子分块
-
-父子分块解决 RAG 核心矛盾：**检索需要小块，生成需要大块**。入库时同时切成大块和小块，检索时用小块匹配，命中后返回对应大块给模型。用小块提高召回精度，用大块保证回答完整性。
-
-### 向量化与索引
-
-**高质量模式**使用 Embedding 模型将每个知识片段转换成向量，语义相近的文本向量距离更近。**经济模式**使用 关键词索引（如 Jieba 分词），成本低但只能做字面匹配。
-
-关键工程原则：文档和查询**必须使用同一个 Embedding 模型**，否则检索结果会非常不稳定。
-
-索引模式是源头决策，后续调 Top K、调 Score 阈值无法补回。向量数据库常用索引算法包括 HNSW、IVF、PQ、FAISS，本质解决如何在大量向量里又快又准地找到相似内容。
-
-## 在线阶段：检索生成
-
-用户提问进入链路：`查询改写/知识库选择 → 召回 → 重排 → TopK 过滤 → 拼接上下文 → 大模型生成回答`。
-
-### 查询改写
-
-将用户口语化、模糊化的问题改写成更适合检索的表达。所有改写应往知识库靠，只做澄清和标准化，不替用户脑补。
-
-### 知识库路由
-
-多知识库场景下两种策略：先让模型判断问题属于哪个知识库再检索（结果干净但判断错误则漏掉答案），或多知识库一起检索后合并结果（不易漏但召回更杂）。
-
-### 召回
-
-召回追求**快且不漏关键数据**。三种检索方式：
-
-- **向量检索**：擅长语义相似，语义接近即使字面不同也能匹配
-- **全文检索**：依赖关键词匹配，对 SKU、订单号、合同编号、错误码等精确信息更稳定
-- **混合检索**：同时走两路再合并，适合大多数企业知识库场景
-
-### 重排
-
-召回是海选，重排是复试。重排将候选片段按与用户问题的真实相关性重新排序。Rerank 模型比单纯向量相似度更细，深入看问题和文本之间的匹配关系，代价是成本和效率。对准确性要求高的场景（客服、法务、医疗、金融、技术支持）建议开启。
-
-### TopK 与 Score 过滤
-
-- **TopK**：决定最多给模型几个片段。chunk 大则 TopK 小；chunk 小则 TopK 可适当大；用父子分块返回父块时，TopK 不能太大，否则上下文会爆。
-- **Score 阈值**：数量控制（TopK）+ 质量控制（Score），防止系统硬凑答案。知识库里没有依据时，不要强行回答，宁可保守转人工。
-
-## 调优顺序与配置映射
-
-合理的调优顺序：**文档质量 → 分块策略 → 索引模式 → 检索方式 → 重排 → TopK/Score 阈值 → Prompt 约束**。
-
-| Dify 配置项 | 对应环节 | 本质作用 |
-|---|---|---|
-| 索引模式 | 向量化/建索引 | 决定语义检索还是关键词检索 |
-| 分块方式 | 文档分块 | 决定知识片段颗粒度 |
-| 分段最大长度 | 文档分块 | 控制 chunk 大小 |
-| 分段重叠长度 | 文档分块 | 防止边界信息丢失 |
-| 检索方式 | 召回 | 语义找、关键词找，还是两者都用 |
-| Rerank | 重排 | 候选片段怎么重新排序 |
-| Top K | 上下文过滤 | 决定最多给模型多少片段 |
-| Score 阈值 | 上下文过滤 | 决定低相关内容是否丢弃 |
-
-## 可观测性
-
-RAG 项目需要**可观测性和飞轮系统**：回答需要有依据、可追溯、可控制。
-
-→ [原文存档](https://mp.weixin.qq.com/s/Bl_u18--lqczQDV2x_NG-g)
-
----
-
-## Ch10.007 RAG 全链路技术详解：从文档加载到 Ragas 评估
-
-> 📊 Level ⭐⭐ | 12.7KB | `entities/rag-full-pipeline-taobao.md`
-
-→ [原文存档](https://mp.weixin.qq.com/s/aA2PFaabKNlDq96jhAdDkQ)
-
-# RAG 全链路技术详解
-淘天集团品牌行业架构团队出品的 RAG 工程化实战指南，覆盖从文档加载到 Ragas 自动化评估的完整链路。
-
-## 评分
-| 维度 | 分数 |
-|------|------|
-| 知识价值 | 8 |
-| 置信度 | 8 |
-| 产品 | **64** |
-
-## 核心标签
-`rag` `pipeline` `embedding` `chunking` `retrieval` `rerank` `graph-rag` `ragas` `evaluation` `meta-chunking` `hyde` `agent`
-
-## 全链路概览
-文档加载 → 智能切分 → 索引构建（Embedding） → 检索优化 → 生成调优 → Graph RAG 进阶 → Ragas 评估闭环
-
-## 1. 文档加载与切分
-**文档加载**：多格式适配（PDF/Word/HTML/JSON）、OCR 扫描件解析、元数据提取、初步清洗。
-**Meta-Chunking**（语义切块）：基于 PPL（困惑度）的智能分块方法。用轻量模型（Qwen2）计算每个句子相对前文的 PPL，在 PPL 局部极大值处切分——这些点对应逻辑断层的语义边界 。切分后用 LLM 进行语义补全和摘要生成，弥补上下文断裂。
-
-## 2. 索引构建（Embedding）
-Transformer 架构下 embedding 生成的完整过程：Tokenization → 初始向量映射 → Q/K/V 变换 → 位置编码注入 → Self-Attention 逐层深化 → Pooling（CLS/Mean/Max）→ L2 归一化。归一化后点积=余弦相似度，加速向量库检索 。
-
-## 3. 检索优化
-**Query 改写**：指代消解（多轮对话）、纠错去噪、术语对齐、结构转换。多查询生成（3-5 个变体）提升召回率 。
-**HyDE**（假设文档嵌入）：先让 LLM 生成"假答案"，用假答案的向量去匹配真实文档，将"问题-文档匹配"转化为"文档-文档匹配"，解决短问题与长文档之间的向量空间不对称问题 。
-**Doc2Query**（反向 HyDE）：对每个 chunk 预生成可能的 question，建立 question→chunk 索引。可离线处理，不影响实时 RT。核心价值：用"提问 vs 提问"替代"提问 vs 陈述" 。
-**标签过滤**：非结构化→半结构化转化，在语义检索基础上引入硬标签过滤，解决"语义相似但事实不符"的噪音问题。
-**ReRank（重排序）**：使用 Cross-Encoder 将 Query 和候选文档拼接后共同编码，通过交叉注意力捕捉细微匹配关系。解决多条件联合约束（如"2000以下+续航好+华为"）的精确排序 。
-
-## 4. 生成优化
-常见问题：无检索信息时捏造答案、知识冲突（A说可/B说禁）、中间信息丢失、忽略参考资料。
-优化手段：强约束 Prompt（禁止编造+强制引用）、内容分隔标记、模型调参（seed/temperature/presence_penalty/max_tokens）、SFT 微调（训练"根据资料回答"和"资料不足时拒绝"的能力）。
-
-## 5. Graph RAG
-用知识图谱解决传统 RAG 的局限性：多跳推理（路径追踪：A→B→C）、全局理解（社区检测+摘要预生成）。
-索引流程：文本切分→LLM 提取三元组→构建全局图谱→Leiden 算法社区检测→社区摘要。
-查询模式：Local Search（实体邻居 n 跳遍历）vs Global Search（预生成社区摘要汇总）。
-代表框架：Microsoft GraphRAG、LlamaIndex、LightRAG 。
-
-## 6. Ragas 评估体系
-**核心理念**：LLM-as-a-Judge，自动化评估 RAG 系统。
-| 维度 | 指标 | 关注点 |
-|------|------|--------|
-| 检索 | Context Precision | 相关 chunk 排在前面 |
-| 检索 | Context Recall | 不遗漏重要结果（拆解 Claims 溯源） |
-| 生成 | Faithfulness | Claim 能否从上下文支撑 |
-| 生成 | Answer Relevancy | 反向生成问题+embedding 相似度 |
-| 鲁棒性 | Noise Sensitivity | 对冗余/无关上下文的抗干扰能力 |
-**评测集生成**：基于知识图谱的自动化测试集构建，通过节点、查询长度、查询风格、人设组合场景，支持 Single-Hop/Multi-Hop × Specific/Abstract 四种查询类型 。
-
-## 关键洞察
-1. **Meta-Chunking 是 PPL 的外科手术式应用**：用语言模型的"困惑度"作为语义边界检测器，在 PPL 尖峰处切分，远比固定长度/标点切分科学
-2. **HyDE 的本质是向量空间对齐**：短问题与长文档在向量空间中分布不同，通过生成"假答案"将问题投射到文档空间，再从文档空间做匹配
-3. **Doc2Query 的离线预处理思路**：将"用户提问→文档匹配"的不对称提前消除，在线只做"问题→问题"匹配，RT 几乎无损耗
-4. **Cross-Encoder Rerank 是精准度的最后一道防线**：Embedding 只能表达文档的平均含义，Cross-Encoder 可以逐字检查多条件联合约束
-5. **Graph RAG 解决的是"跳"和"面"的问题**：多跳（路径追踪）和全局理解（社区摘要）是传统向量检索的结构性盲区
-6. **Ragas 让 RAG 从"感觉还行"变成"可量化"**：Context Precision/Recall + Faithfulness + Answer Relevancy + Noise Sensitivity 覆盖了工程团队最关心的五个问题
-
-## 深度分析
-**1. Meta-Chunking 的本质是"困惑度驱动的时间切片"**
-传统规则切分（固定字数/段落）本质上是把文档当静态文本处理，忽略了语言内部的结构性信号。PPL（Perplexity）把语言模型在每个句子处"惊讶度"量化出来——当模型突然对下一句感到意外时，PPL 曲线出现尖峰，对应逻辑断层。这个方法的核心洞察是：**语义边界不来自标点，而来自语义连贯性的突变**。这与人类阅读时感知"段落的起承转合"高度吻合。Meta-Chunking 的工程价值在于：它把一个 NLP 问题（PPL 计算）转化为了一个可配置的超参数问题（局部极大值的敏感性阈值），这比固定切分更接近"语义感知"但比纯 LLM 切分更轻量。
-**2. HyDE/Doc2Query 解决的是"向量空间不对称"问题**
-短 query 与长文档在 embedding 空间中的分布天然不同：query 通常是口语化提问或关键词组合，文档是结构化陈述。直接用 query 向量检索文档，本质上是让两个不同分布的东西在同一空间竞争。HyDE 通过让 LLM 生成"假答案"把 query 投射到"文档分布空间"，再做文档-文档匹配；Doc2Query 则反向操作，把文档陈述转成可能的提问，将匹配转化为问题-问题匹配。两条路径都承认了"提问vs陈述"的不对称性，只是解法方向相反。实际系统中可以互补：Doc2Query 离线预处理降低 RT，HyDE 在线处理复杂 query。
-**3. Cross-Encoder Rerank 是精度-速度权衡的必然选择**
-Bi-encoder（双塔模型）分别编码 query 和文档，适合大规模 ANN 检索但丢失了细粒度交互信息。Cross-Encoder 将 query 和文档一起喂进模型，通过自注意力机制让每个 token 观察另一方的每个 token，代价是 O(N×M) 的计算复杂度和无法预计算文档向量。当下，Bi-encoder + HNSW 保证召回，Cross-Encoder 做精排是工程上最常见的分层检索架构。值得注意的是，ReRank 还能缓解"中间丢失"问题——将长上下文中被早期高相似度文档挤掉的 relevant docs 重新提升到 top k。
-**4. Graph RAG 的真正价值在于"结构化记忆"而非"图数据库"**
-Graph RAG 常常被误解为"知识图谱 + 向量检索"的简单组合。它的核心贡献是引入了**预生成的社区摘要**——把全局理解问题（"这篇论文讲了什么"）从在线 LLM 生成变成了离线计算。Leiden 社区检测将图谱划分为多个子社区，每个社区预先用 LLM 生成摘要。查询时分 Local Search（实体邻居遍历）和 Global Search（社区摘要聚合）两种路径，前者保证局部精确性，后者提供全局视野。这个设计与传统 RAG 在全局问答上的结构性盲区形成了鲜明对比——传统 RAG 的语义搜索本质上是"最近邻检索"，无法做跨簇的信息聚合。
-**5. Ragas 的 LLM-as-a-Judge 本质上是"模型自我评估能力"的工程化**
-传统评估依赖人工标注的 ground truth，成本高且无法规模化。Ragas 用 LLM 自身作为裁判，通过设计巧妙的 prompt（Faithfulness 用"逐 claim 溯源"，Answer Relevancy 用"反向生成问题"）把主观评估转化为可计算的相似度指标。这背后有一个假设：**LLM 对"逻辑一致性"和"语义相关性"的判断足够稳定**。这个假设在 GPT-4 级别模型上大致成立，但在小模型上可能失效。工程落地时需要注意：Ragas 分数高不代表用户体验好，分数低一定意味着某个维度有明确问题。
-
-## 实践启示
-1. **切分策略的优先级高于 embedding 模型选择**：很多团队花大量精力选 embedding 模型，却忽视了"garbage in, garbage out"的切分问题。建议先用 PPL 语义切分 + 摘要补全重建知识库，再迭代 embedding 模型。
-2. **HyDE 和 Doc2Query 不是非此即彼**：Doc2Query 离线生成 question-index，适合 query 模式稳定的客服场景；HyDE 在线生成假答案，适合 query 多变且意图模糊的探索性场景。两者可以并存于同一系统，Doc2Query 作为第一层召回，HyDE 作为查询改写层。
-3. **标签过滤是工程落地的关键一环**：语义相似但事实不符是向量检索的典型 corner case，半结构化的标签系统（如类目、品牌、属性标签）可以作为硬过滤层补足语义检索的不足，成本远低于重新训练 embedding 模型。
-4. **ReRank 阶段介入时机要卡准**：ReRank 放在检索和生成之间，但候选文档数量需要控制（通常 top 50-100），过多会浪费算力，过少会遗漏有效结果。建议配合 A/B 测试确定最优 top_k。
-5. **Graph RAG 适合"知识密集型 + 多跳推理"场景**：对于简单 FAQ 场景，传统 RAG 已足够；对于需要关联分析的复杂文档集（如技术文档、财报、研究论文），Graph RAG 的社区摘要能显著提升全局问答质量。
-6. **Ragas 评估应该作为 CI/CD 的一部分**：将 Ragas 指标（Context Precision、Faithfulness 等）接入自动化测试，新版本发布前跑一遍回归测试，避免检索策略或 Prompt 改动引入回归。
-7. **评测集生成要覆盖四种查询类型**：Single-Hop/Specific（简单事实）、Single-Hop/Abstract（概念解释）、Multi-Hop/Specific（多步推理）、Multi-Hop/Abstract（综合分析）。单一类型的测试集会导致对其他类型 query 的覆盖盲区。
-
-## Related
-- [harness-engineering-systematic-explainer](ch05/026-harness-engineering.html)
-
-- [Agent 原理、架构与工程实践](ch03/004-agent.html)
-- [AI Agent 工程师能力地图](ch04/279-ai-agent.html)
-
----
-
-## Ch10.008 Karpathy LLM Wiki V2：记忆生命周期 + 知识图谱 + 混合检索 + 落地路线图
-
-> 📊 Level ⭐⭐ | 11.5KB | `entities/karpathy-llm-wiki-v2-deep-analysis-rohit-ghumare.md`
-
-# Karpathy LLM Wiki V2：从复利启动到复利防烂
-
-Rohit Ghumare 在 Karpathy 的 LLM Wiki gist 上更新的 V2 版本，把原版"让知识开始复利"的思路推到了"复利系统别烂掉"。核心新增：记忆生命周期、类型化知识图谱、混合检索、事件驱动、质量治理。
-
-与 [Karpathy LLM Wiki V2 中文概述](ch01/422-llm.html) 互补——原 entity 是中文入门解读，本文是 V2 深度技术分析 + 落地路线图 + 评测方法论。
-
-→ [LLM Wiki 范式](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/llm-wiki-paradigm.md) — 原版三层架构（Raw → Wiki → Schema）
-
-## 原版回顾
-
-Karpathy 的原版反对 RAG（每次重算），主张让 LLM 把资料**编译**成 wiki。三层结构：
-
-| 层 | 作用 |
-|---|---|
-| Raw sources | 原始材料，LLM 只读不改 |
-| Wiki | LLM 维护的 Markdown 页面（summary/entity/concept） |
-| Schema | CLAUDE.md / AGENTS.md，写作和维护规则 |
-
-类比：Obsidian = IDE，LLM = programmer，wiki = codebase。人负责选题和判断，LLM 负责整理、交叉引用、补 index、查孤儿页。
-
-## V2 六大生产层升级
-
-### 1. 记忆生命周期
-
-wiki 页面不能默认同等可信。V2 加入 memory lifecycle：
-
-- **Working memory** → 当前 session 临时
-- **Episodic memory** → 事件记录
-- **Semantic memory** → 压缩后的事实
-- **Procedural memory** → 操作模式
-
-越往后越压缩，证据越强，生命周期越长。
-
-关键主张：confidence 不应是裸数字（0.85），应做成**证据链**——来自哪个 ADR、哪次 commit、哪篇 source、哪次 session，最近确认时间，是否被新信息替代。
-
-### 2. 类型化知识图谱
-
-原版靠 Markdown wikilink + Obsidian graph，只能看页面连接。V2 需要带含义的边：`uses`、`depends_on`、`contradicts`、`supersedes`。
-
-查询场景：升级 Redis 影响哪些服务？某个鉴权决策牵涉哪些 bug 和负责人？普通 wikilink 无法回答这类影响链问题。
-
-### 3. 混合检索
-
-原版 index.md 在 100-200 页内有效。V2 超过此阈值用三路检索 + RRF 融合：
-
-- **BM25**：精确关键词匹配
-- **向量搜索**：语义相似
-- **图遍历**：结构上相关的影响链
-
-关键洞察：BM25 + 向量负责"此刻相关"，图遍历负责"结构相关"。两者必须一起用。
-
-### 4. 事件驱动维护
-
-session end → 自动生成候选 summary → proposal-first 写入。直接改主 wiki 危险，应走 review queue。
-
-### 5. 写入门控
-
-| 风险等级 | 操作 | 策略 |
-|----------|------|------|
-| 低 | append 新 claim | 自动提交 |
-| 中 | 已有 claim 增加证据 | 自动追加 |
-| 高 | contradiction/supersession/批量删除/权限变更 | 人工审核 |
-
-### 6. 多 Agent 协调
-
-mesh sync、shared/private knowledge、coordination boundary。
-
-## V1 vs V2 对比
-
-| 问题 | 原版处理 | V2 处理 |
-|------|----------|---------|
-| 知识变旧 | lint 发现 stale claim | lifecycle + supersession + retention |
-| 搜索扩展 | index.md + 可选工具 | BM25 + vector + graph |
-| 结构关系 | wikilinks | typed entities and relations |
-| 自动维护 | 人触发 ingest/lint | hooks + 事件驱动 |
-| 多 Agent | 略提团队场景 | mesh sync + shared/private |
-| 治理 | Git 历史 | privacy filter + audit + reversible bulk ops |
-
-## 落地路线图
-
-**Phase 1 — MVP**：保留 raw/、wiki/、index.md、log.md、AGENTS.md。每次 ingest 更新相关页面，看 Git diff。验收：一次 source 稳定更新 summary/entity/concept/index/log。
-
-**Phase 2 — 证据链**：加 claim id + source_ref（如 `auth.redis-cache.uses`）。新证据追加到 claim，旧决策被替代时用 supersedes 链接。旧内容不消失——解释今天设计为什么长这样。
-
-**Phase 3 — 混合检索**：SQLite FTS5 / 本地 BM25 → embedding → frontmatter/sidecar JSON 抽图关系。图数据库晚点上，先定实体和边的契约。
-
-**Phase 4 — 事件驱动**：proposal-first，高风险写入进 review queue。
-
-## 评估方法论
-
-评估应围绕**决策**做，不是功能覆盖：
-
-**检索层**：三路 vs 单路 vs index？测 Recall@5、MRR、p50/p95 latency、token cost。查询分类型：精确术语、语义同义、影响分析、历史决策、个人偏好。只有影响分析类需要图遍历时再加重图。
-
-**写入层**：自动 proposal 是否降低维护成本？测 unsupported claim rate、duplicate claim rate、wrong supersession rate、citation validity、human edit distance。先重放历史 session，只产出 proposal 不写主库。
-
-**生命周期**：先测 supersession，不急着测遗忘曲线。旧 bug 和旧 ADR 未必该忘——它们是避免重复踩坑的线索。
-
-## 社区工程评审
-
-- **luancaarvalho**：扩展问题 → index 200-500 文档撑不住，agentmemory 用三路 + RRF，LongMemEval-S 95.2% R@5
-- **webmaven**：书籍级 ingestion 瓶颈在 chunking + observation 生成 + 图谱抽取成本
-- **gnusupport**：confidence 没定义、auto-crystallization 没算法、hybrid search 没 latency metric、multi-agent 缺 ACL/versioning/provenance → 方向可以借，计划不能照抄
-- **ghost**：schema 做好 → ingest 时过滤；numeric confidence 有伪精确风险；主张 supersession 代替 decay、git 做 audit、manual before automated
-
-生态线索：Memex（daily captures → P.A.R.A.）、ctx（skills/agents 知识图谱 → Claude Code 推荐）、ChristopherA（named edges: `derived_from::[Source]`）
-
-## 演进方向
-
-1. **evidence contract**：claim 稳定 id + 来源边 + 替代链接 + 证据链展示
-2. **segmentation**：个人偏好/项目事实/团队决策/临时任务/研究材料分 schema，生命周期和权限不同
-3. **Agent context operating system**：session start 加载 → tool use 记录 → 任务结束沉淀 → 多 Agent 共享
-
-## 深度分析
-
-### 从"编译一次"到"持续维护"的知识系统演进
-
-Karpathy 原版 LLM Wiki 的核心洞察是"RAG 每次重算，Wiki 会累积"——让 LLM 把原始材料编译成结构化 wiki，后续查询直接读 wiki 而非重走 RAG 管线。V2 的贡献在于识别出这个模式的长期衰减问题：知识会过期、链接会断裂、搜索会变慢、自动化会引入噪声。这不是推翻原版，而是为原版的"复利"承诺加上"防烂"机制。
-
-### 证据链 vs 裸置信度数字的设计权衡
-
-V2 提出 confidence 字段，但社区评审（gnusupport、ghost）指出裸数字（如 0.85）有"伪精确风险"。更好的设计是证据链：每条 claim 关联到具体来源（ADR、commit、session、文章），附带最近确认时间和替代链接。这与 Hermes wiki 已有的 `provenance_state` 和 `` 引用模式不谋而合。
-
-### 混合检索的"此刻相关"与"结构相关"二分法
-
-BM25 + 向量搜索负责"此刻相关"（当前查询的语义匹配），图遍历负责"结构相关"（影响链、依赖关系）。这个二分法是 V2 检索设计的核心洞察。实践中，大部分查询只需要"此刻相关"，只有影响分析类查询需要图遍历。这意味着图检索层可以按需加载，不必每次都跑。
-
-### 写入门控是知识系统可靠性的关键
-
-V2 的写入门控设计（低风险自动提交、高风险人工审核）解决了知识系统的核心矛盾：自动化带来效率，但也带来污染风险。ghost 的评论指出"event-driven auto-ingest 默认 LLM 可靠，在生产里很危险"。Proposal-first 模式（Agent 生成 diff，人工审核后写入）是平衡效率与安全的工程选择。
-
-### 评估应围绕决策而非功能覆盖
-
-V2 的评估方法论强调"围绕决策做"而非"功能全覆盖"。BM25、向量、图谱、confidence、decay、hooks、lint 全做一遍，demo 很热闹但真实任务不一定更好。正确的评估方式：先重放历史 session，只产出 proposal 不写主库，通过后再开放低风险自动写。这与软件工程中的"先测试再上线"原则一致。
-
-## 实践启示
-
-1. **知识系统应从原版开始，按需加 V2 模块**：先证据链 → 再 supersession → 再检索融合 → 再 proposal-first automation。每一步都要能回答"少解释了吗、找得更准了吗、过期答案少了吗"
-2. **confidence 应做成证据链而非裸数字**：每条 claim 关联到具体来源，附带最近确认时间和替代链接。避免"伪精确"带来的虚假权威感
-3. **图检索按需加载**：大部分查询只需要 BM25 + 向量搜索，只有影响分析类查询需要图遍历。不要为了完整性而每次都跑全量图检索
-4. **写入门控比自动化更重要**：低风险 append 可以自动提交，但 contradiction、supersession、批量删除必须人工审核。Proposal-first 是安全与效率的平衡点
-5. **评估基准应围绕决策质量**：测 Recall@5、MRR、unsupported claim rate、human edit distance，而非功能覆盖率
-
-## 相关链接
-
-- → [Karpathy LLM Wiki V2 中文概述](ch01/422-llm.html) — 原版入门
-- → [LLM Wiki 范式](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/llm-wiki-paradigm.md) — 概念定义
-- → 知识图谱 RAG — 图检索方法论
-- → [LLM Wiki 架构哲学](ch01/422-llm.html)
-- → [原文存档](https://mp.weixin.qq.com/s/Hgrj-5dxofZSD7c-ydjNAQ)
-
----
-
-## Ch10.009 MRAgent：记忆是重建的，不是检索的
-
-> 📊 Level ⭐⭐ | 10.8KB | `entities/mragent-memory-reconstructed-not-retrieved-nus-icml2026.md`
-
-# MRAgent：记忆是重建的，不是检索的
-
-新加坡国立大学（NUS）在 ICML 2026 提出 MRAgent，核心主张：**记忆访问应该跟着推理一起走**——每发现一条新证据，就改一次下一步要查什么。在 LoCoMo 上整体得分相对最强基线提升 23%，LongMemEval 提升 32%，Token 消耗仅 A-Mem 的 1/5。
-
-→ [原文存档](https://mp.weixin.qq.com/s/w6LbWyhlG9ZZxq4DCbDc7w)
-
-## 范式切换：被动检索 → 主动重建
-
-现有记忆方案两条路，各有死胡同：
-
-**相似度检索**（MemoryBank、Mem0）：检索方向完全由查询决定，推理过程中无法调整。跨人物、跨时间线的 multi-hop 查询无法处理。
-
-**图结构检索**（A-Mem、Zep）：沿预定义 k-hop 扩展，但扩展路径预先固定——无法根据中间证据动态剪枝或转向。
-
-MRAgent 的核心主张：**检索应该跟着推理一起走**——每发现一条新证据，就改一次下一步要查什么。
-
-认知神经科学基础：回忆更像按线索一点点「拼」出来，不是打开仓库把整段记忆原样读走。
-
-## Cue-Tag-Content 关联记忆图
-
-记忆被建模为异构图 M = (C, V, R)：
-
-- **Cue（线索）**：细粒度关键词（实体名、属性、时间标记）
-- **Content（内容）**：具体记忆条目
-- **Tag（标签）**：连接 Cue 与 Content 的语义桥梁
-
-三者通过三元组 (c, g, v) ∈ R 相连。Tag 在访问昂贵的 episodic 内容之前，先提供语义导航——避免在大图上做无约束的 k-hop 扩展导致组合爆炸。
-
-先通过 Cue 激活候选 Tag，再基于选定的 Tag 检索 Content——把关联推理和内容检索解耦。
-
-→ [Agent 记忆系统框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-systematic-framework.md)
-
-## 多粒度记忆层
-
-| 记忆层 | 存储内容 | 典型用途 |
-|--------|----------|----------|
-| Episodic（情景） | 特定时间点的具体事件 | 时间推理、事件回溯 |
-| Semantic（语义） | 稳定的个人属性、偏好、事实 | 跳过冗长历史直达目标知识 |
-| Topic（主题） | 跨多个 episode 的抽象模式 | 自顶向下定位相关事件簇 |
-
-情景记忆沿统一时间线组织，支持时间约束；语义记忆通过 aspect-level Tag 锚定到实体线索；主题层提供自顶向下的跳转。
-
-构建阶段保持轻量，复杂关系推理推迟到检索阶段按需执行。
-
-→ [Agent Memory 架构](ch04/329-perplexity-brain-self-improving-agent-memory-architecture.html)
-
-## 主动重建算法
-
-维护显式重建状态：
-- **Z^(t)（活跃集）**：当前步骤待探索的 Cue、Tag、Content 候选
-- **H^(t)（重建上下文）**：前几步累积的证据
-
-**三类遍历动作：**
-1. 前向遍历：沿 Cue→Tag→Content 方向扩展
-2. 反向遍历：从已检索的 Content 反向激活新的 Cue 和 Tag，根据中间证据调整探索方向
-
-**每轮三步走：**
-1. LLM 推理与动作选择
-2. 受控图遍历
-3. LLM 路由与状态更新（剪枝无关分支）
-
-循环持续直到 LLM 判定证据充分，或进一步探索不太可能带来新信息。
-
-## 理论保证
-
-**定理：** 主动检索的表达能力严格强于被动检索。主动检索能学到被动检索能学的任何函数，反之则不成立。
-
-这不是空喊口号——论文给出了近似理论角度的形式化证明。
-
-## 实验结果
-
-### LoCoMo（Claude 骨干）
-
-| 问题类型 | 最强基线 J | MRAgent J | 提升 |
-|----------|-----------|-----------|------|
-| Multi-hop | 75.88 (Mem0) | 90.19 | +18.9% |
-| Temporal | 80.68 (LangMem) | 85.34 | +5.8% |
-| Open Domain | 56.25 (Mem0) | 71.57 | +27.2% |
-| Single hop | 83.12 (LangMem) | 91.10 | +9.6% |
-
-Gemini 骨干下 Overall 相对提升 23.3%。
-
-### LongMemEval
-
-Overall 相对最强基线提升 32%。Multi-Session 从 56.39 跳到 68.42，Temporal 从 45.71 跳到 68.42。
-
-### Token 效率
-
-| 方法 | Token 消耗 | 运行时(s) |
-|------|-----------|-----------|
-| A-Mem | 632k | 1,122 |
-| LangMem | 3,268k | 1,210 |
-| Mem0 | 245k | 533 |
-| **MRAgent** | **118k** | **586** |
-
-MRAgent Token 消耗仅 118k——不到 A-Mem 的 1/5，不到 LangMem 的 1/27。运行时与最快的 Mem0 基本持平。
-
-效率来源：构建阶段保持轻量，复杂推理推迟到检索阶段按需执行；Tag 在访问 episodic 内容前提供语义导航，提前剪枝无关路径。
-
-## 消融与多轮推理
-
-- 光有 CTC 图结构但关闭主动推理，性能明显回落——图建得再好，不让 LLM 在上面走几步，multi-hop 照样拼不齐
-- Multi-hop 查询：迭代探索带来超过 30% 的召回提升
-- 增加并行检索预算无法替代更深的重建深度——记忆推理本质是序列依赖的
-- LLM 能有效判断何时继续搜索、何时停止，避免冗余探索
-
-## 局限与问号
-
-- 多轮 LLM 调用在极端低延迟场景能不能扛住？
-- 构建阶段的 LLM 蒸馏一旦抽错 Tag，下游会不会一路带偏？
-- LoCoMo 和 LongMemEval 上证据充分，生产环境对话分布更脏更乱
-
-## 深度分析
-
-### 从"存储-检索"到"构建-重建"的范式跃迁
-
-MRAgent 的核心贡献不是又一个更好的检索算法，而是对记忆访问范式的重新定义。传统方案（无论向量检索还是图检索）都假设记忆是"存好的等你来取"，而 MRAgent 认为记忆是"根据当前推理状态临时拼装的"。这与认知神经科学的发现一致：人类回忆不是从硬盘读文件，而是根据线索一点点重建场景。
-
-### Tag 中介层解决了图检索的组合爆炸问题
-
-纯向量检索太扁（无法 multi-hop），全量 k-hop 图扩展又太重（组合爆炸）。Cue-Tag-Content 三层结构中，Tag 作为语义桥梁，在访问昂贵的 episodic 内容之前先做粗筛——这相当于给图遍历加了一个"路由层"。Tag 够轻能做快速语义路由，又够结构化能支撑 multi-hop 遍历。
-
-### Token 效率的结构性来源
-
-MRAgent 的 118k Token vs A-Mem 的 632k，并非来自"更聪明的检索"，而是来自架构设计：构建阶段保持轻量（只提取 Cue 和 Tag），复杂关系推理推迟到检索阶段按需执行。这意味着大部分记忆条目永远不会被完整加载——只有被 Tag 路由到的 Content 才会消耗 Token。这种"按需加载"模式对 Agent 记忆系统的工程实现有直接指导意义。
-
-### 主动重建的理论保证不是空话
-
-论文给出了形式化证明：主动检索的表达能力严格强于被动检索。这不是经验性的"我们跑了个实验还不错"，而是从近似理论角度证明了 H_active(T) ⊃ H_passive(T)。这意味着无论被动检索算法怎么优化，都无法达到主动检索的上限——两者的差距是结构性的，不是工程性的。
-
-### Multi-hop 痛点暴露了现有记忆系统的根本缺陷
-
-Single-hop 涨幅温和（83→91），Multi-hop 跳幅巨大（75→90）。这说明现有记忆系统的真正短板不在"找到一条相关记录"，而在"通过推理发现下一步该查什么"。对于 Agent Harness 工程师来说，这意味着记忆系统的设计重心应该从"检索精度"转向"推理-检索联动"。
-
-## 实践启示
-
-1. **Agent 记忆系统应采用"构建轻量+检索按需"架构**：在记忆写入时只提取 Cue 和 Tag，复杂推理推迟到查询阶段。这能将 Token 消耗降低 5 倍以上
-2. **Tag 层是图记忆系统的关键创新点**：设计记忆系统时，不要直接从原始内容跳到检索，中间需要一个语义路由层（Tag）来控制图遍历的组合爆炸
-3. **Multi-hop 推理能力应成为记忆系统评测的核心指标**：Single-hop 测试无法暴露记忆系统的真正短板，评测基准应重点考察跨时间线、跨实体的推理能力
-4. **多轮 LLM 调用的延迟需要在架构层面权衡**：MRAgent 的精度优势来自多轮推理，但每轮都是一次 LLM 调用。在低延迟场景需要考虑并行探索或缓存策略
-5. **关注构建阶段 Tag 提取的鲁棒性**：如果 Tag 提取出错，下游整个重建链路都会被带偏。需要投入 Tag 质量的监控和纠错机制
-
-## 相关链接
-
-- 论文：https://arxiv.org/abs/2606.06036
-- GitHub：https://github.com/Ji-shuo/MRAgent
-- → [Agent Memory 架构](ch04/329-perplexity-brain-self-improving-agent-memory-architecture.html) — 记忆系统设计模式
-- → [Agent Memory 模块化框架](ch04/097-agent-memory.html) — ICLR 2026 评测基准
-- → [Mem0：Agent Harness 记忆现状](ch05/035-agent-harness.html) — Mem0 等基线对比
-- → [Agent 记忆生命周期](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-lifecycle-philosophies.md)
-- → [原文存档](https://mp.weixin.qq.com/s/w6LbWyhlG9ZZxq4DCbDc7w)
-
----
-
-## Ch10.010 Instacart 广告检索架构演进：从 BERT 打分到生成式 token-by-token 检索
-
-> 📊 Level ⭐⭐ | 8.2KB | `entities/instacart-ads-retrieval-generative-token-by-token.md`
-
-# Instacart 广告检索架构演进：从 BERT 打分到生成式 token-by-token 检索
-
-## 摘要
-
-Instacart 详细阐述了其广告检索系统从传统 BERT 序列打分模型（Contextual Recommendations, CR）到生成式检索（token-by-token 生成产品 ID）的完整架构重构。这一迁移源于三大瓶颈：词汇表限制、冷启动偏差和结构漂移。新方案受 TIGER（Google DeepMind）启发，将产品 ID 编码为语义 token 序列，模型直接自回归生成相关产品，而非对候选集逐一打分。这是大规模生产系统中 generative retrieval 的真实工程案例，与 Spotify GLIDE/NEO、YouTube PLUM 等业界实践形成对照。
-
-## 核心要点
-
-### 旧方案：BERT 打分模型（Contextual Recommendations）
-
-Instacart 的 CR 系统将杂货购物视为语言建模任务：原子产品 ID 作为 token，目录子集作为「词汇表」。用户实时会话（浏览、访问商品页、加入购物车）构成产品 token 序列，BERT 类 Transformer 在数百万真实购物会话上训练，预测序列中的下一个 token。这一单层检索同时驱动广告和有机推荐，覆盖所有主要浏览界面。
-
-### 三大瓶颈
-
-**1. 词汇表瓶颈**（Vocabulary Bottleneck）
-
-CR 模型依赖原子产品 ID 作为独立 token，这定义了模型能理解和预测的边界。扩大词汇表虽然增强了上下文理解能力，但同时带来：模型体积和延迟增加、低频商品数据稀疏、目录非平稳性（新产品不断上架导致覆盖缺口持续扩大）。仅靠词汇表扩展无法覆盖目录全貌，特别是专业零售商的特色产品。
-
-**2. 冷启动障碍**（Cold Start Hurdle）
-
-训练数据基于历史购物会话的产品 ID 序列，导致模型倾向于记忆共现关系而非学习基于用户意图的泛化关联。结果是高频商品被过度推荐，而更符合当前上下文的新品牌被忽视。例如用户正在组建烧烤购物车（牛肉饼+汉堡包+生菜），系统倾向于推荐通用杂货（牛奶）而非更符合意图的新品牌调味品（芥末酱）。
-
-**3. 结构漂移**（Structural Drift）
-
-模型通过在整个产品 ID 词汇表上预测概率分布来生成候选集，缺乏内置层级结构来保持推荐聚焦。这导致偶尔出现不协调的商品组合——例如早餐主题购物车（牛奶+鸡蛋+麦片）的推荐中混入洗衣液。如果后续排序模型对这些异常产品校准不当，不协调推荐就会被推送到用户面前。
-
-### 新方案：生成式检索
-
-受 TIGER（Google DeepMind, NeurIPS 2023）启发，Instacart 转向生成式检索范式：**模型不再对预定义候选集打分，而是直接生成下一个相关产品的语义 token**。这一范式已被 Spotify（GLIDE、NEO）和 YouTube（PLUM）在生产环境中采用。
-
-但 Instacart 的场景有独特挑战：
-
-- **意图多样性**：不同于音乐或视频平台的窄意图，Instacart 用户常在单次会话中管理高度多样的购物清单（从生鲜到清洁用品到宠物护理）
-- **意图漂移**：用户在购物过程中意图会动态变化
-- **多零售商**：用户跨多个零售商购物，每个零售商有独立的产品目录
-
-这些挑战要求模型超越历史购买记录，同时考虑活跃购物会话的实时动态。
-
-## 深度分析
-
-### 从打分到生成：范式转换的本质
-
-传统检索的「打分范式」本质上是一个判别式问题：给定查询和候选，输出相关性分数。其核心限制在于**候选集的构建先于相关性判断**——你只能从预定义的候选中选择，无法「创造」新的匹配。
-
-生成式检索将问题翻转为生成式问题：给定上下文，直接输出目标产品的 token 序列。这带来了两个根本性变化：
-
-1. **模型参数即索引**：不需要维护独立的向量索引或倒排索引，产品目录的知识编码在模型权重中。更新目录意味着微调模型，而非重建索引。
-2. **无候选集限制**：理论上可以检索训练数据中出现过的任何产品，不受 ANN 搜索的近似约束。
-
-### 权衡与工程挑战
-
-| 维度 | BERT 打分 | 生成式检索 |
-|------|----------|-----------|
-| 延迟特性 | 向量索引查找（O(log n) 或 O(1) ANN） | 自回归解码（O(seq_len)） |
-| 索引更新 | 重建索引 | 模型微调或增量学习 |
-| 可解释性 | 相对直接（相似度分数） | 需要额外机制 |
-| 新产品处理 | 添加向量即可 | 需要训练数据覆盖 |
-| 目录扩展性 | 索引规模线性增长 | 模型容量受限 |
-
-### Instacart 场景的特殊性
-
-杂货购物的独特性在于**意图的宽泛性和动态性**。用户可能同时在为晚餐、早餐和家庭清洁用品购物，且意图随购物车内容动态演变。这要求检索模型具备：
-
-- **多意图并行建模**：同时理解用户当前会话中的多个购物子任务
-- **实时上下文敏感性**：购物车的每次变化都应影响后续推荐
-- **跨零售商泛化**：同一意图在不同零售商目录下应映射到不同产品
-
-这些需求使得简单的序列到序列迁移变得复杂，需要在产品 token 编码、上下文注入和训练策略上做大量定制化工作。
-
-### 与业界实践的对照
-
-| 平台 | 方案 | 特点 |
-|------|------|------|
-| Google DeepMind | TIGER | 开创性工作，证明生成式检索可行性 |
-| Spotify | GLIDE/NEO | 音乐推荐，意图相对窄 |
-| YouTube | PLUM | 视频推荐，长序列挑战 |
-| Instacart | CR → Generative | 杂货购物，多意图+多零售商 |
-
-## 实践启示
-
-1. **架构迁移的触发条件**：当现有方案的三个以上结构性限制同时出现时（词汇表、冷启动、结构漂移），应考虑范式级重构而非渐进优化
-2. **生成式检索的适用边界**：在候选集动态变化、意图多样、需要上下文敏感匹配的场景下，生成式检索比传统打分模型更有优势
-3. **领域特化的重要性**：直接照搬 TIGER 等通用方案不足以应对杂货购物的独特挑战，需要在 token 编码、训练数据构建和推理策略上做深度领域适配
-4. **渐进式迁移策略**：Instacart 保持了与旧系统的兼容性，在生产环境中逐步验证和切换，这种策略对大规模系统重构至关重要
-
-## 相关实体
-
-- [RAG 与检索技术](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/retrieval-augmented-generation-rag.md)
-- [From Silos To Service Topology Why Netflix Built A Real Time](ch11/007-from-silos-to-service-topology-why-netflix-built-a-real-tim.html)
-
-→ [原文存档](https://tech.instacart.com/from-scoring-to-spelling-rebuilding-ads-retrieval-at-instacart-cf36b4e8d1bb)
-
----
-
-## Ch10.011 怎么短平快地把RAG做好：厦门国际银行数创金融杯RAG初赛方案
-
-> 📊 Level ⭐⭐ | 8.0KB | `entities/xiamen-bank-rag-competition-financial-regulation-trustrag.md`
-
-## 摘要
-
-本文解读厦门国际银行第五届数创金融杯大模型应用挑战赛初赛方案：赛题为**金融监管制度智能问答**（经典 RAG），要求基于给定金融文档库，对不定项选择题和问答题生成"准确、合规"的答案；整体工程只能在受限硬件（CPU 8 核 / 32G 内存 / 24G 显存）下推理，以 A/B 榜评估、B 榜定名次。作者以 TrustRAG 框架为脚手架，在两周边际时间内冲刺、约 10 天冲入 top10，给出了一条"短平快"、效果够用的 RAG 落地路径。
-
-→ [原文存档](https://mp.weixin.qq.com/s/wJ6Zk_Wu4O3wcSWs0NnL_w)
-
-## 核心要点
-
-- 金融监管问答是高利害领域：答案须"准确、合规"，既同幻觉作战，也同术语歧义作战，正确性直接关系合规判断。
-- 采用七步经典流水线：文档加载解析 → 文本切块 → 混合检索重排 → 指令数据集构造 → 模型微调 → 推理 → 投票融合。
-- 混合检索 BM25（权重 0.3）+ Dense（bge-m3 / bge-large-zh-v1.5，权重 0.7），Top-15 候选再经 BGE-reranker-large 精排；选择题把选项拼进查询辅助定位。
-- 句子级切块（SentenceChunker）不割裂完整句子，256 的 chunk_size 在召回率实验中表现最佳，切块与文件元信息分离存储减少冗余。
-- 微调补差距：Qwen3-8B/14B + QLoRA/LoRA，实测 8B 与 14B 分数接近、甚至 8B 更优——通用模型金融监管表现不够，需领域数据微调。
-- 推理期以 temperature=0.0 贪心解码、max_new_tokens=512、batch_size=1 强化稳定性。
-- 结果投票融合：选择题多数投票，问答题取语义相似度最高者。
-- 作者结论：RAG 没有标准答案，考验的是面对不同任务灵活变通、基于成熟脚手架快速改造并"发现问题解决问题"的能力。
-
-## 深度分析
-
-### 金融监管约束下的 RAG：精确、可追溯、可审计
-
-金融监管制度问答与泛化知识问答最大的分野在于约束强度。题目明确要求"生成准确、合规的答案"——准确意味着答案必须锚定文档原文而非模型记忆，合规意味着表述要符合监管语言与术语体系，两者共同把任务推向"拒绝模糊、拒绝编造"。这类约束沿着整条流水线传导：检索阶段需要高密度小 chunk 以保证命中，生成阶段需要"与文档原文精确对比、逐一验证"的强约束 prompt，数据阶段则需要把文件名、token 长度、是否含表格等元信息以 JSON/映射表结构化保存，使每个答案都可回查到出处——这正是金融场景"可追溯、可审计"诉求在工程上的落地。表格在金融监管文档中的高价值也被显式处理：加载解析阶段即标记含表格文档，避免做 embedding 时丢失结构性关键信息（限额、比例、名单常藏在表格里）。
-
-### TrustRAG 框架：面向可信 RAG 的可复用脚手架
-
-方案的技术底座是 gomate-community 的 TrustRAG 项目（DocxParser、SentenceChunker 等组件），代码几乎全部复用。这体现了作者"短平快"的核心方法论：不从头造轮子，而是站在可信 RAG 脚手架上做增量改造，把有限时间花在数据、prompt、融合这些真正决定分数的环节。一个值得注意的细节是用与问答模型同款的 Qwen3-8B tokenizer 统计文档 token 长度，以精准设计窗口大小、提高输入长度预算的利用效率——领域 token 数的经验值（大部分文档约 1600 token）让后续切块与上下文组织有据可依。
-
-### 检索与重排：混合信号与多配置融合
-
-检索层采用混合检索补齐单一方法的短板：BM25 抓关键词的字面匹配，Dense 向量抓语义相关，以 0.3/0.7 加权融合召回 Top-15，再经 BGE-reranker-large 精排。更巧妙的是把"多配置"当作泛化手段：用 2 个 embedding 模型（bge-m3、bge-large-zh-v1.5）× 2 种 chunk_size（256、512）交叉组合，构造出彼此独立、各有偏好的检索-生成样本，为末端的投票融合铺底——不同配置在召回分布上互补，融合后整体稳健性显著提升。作者也坦承困难场景：答案可能跨多个 chunk 分布、相似内容过多导致排序靠后（如"双线报告"类题目）、以及部分问题无需检索即可由模型自身知识回答——识别并分类这些困难，是调优召回与切块的关键输入。
-
-### 高利害场景下的幻觉控制与推理稳定性
-
-幻觉控制在高利害领域是叠加的、多层的防线，而非单点技术。第一层是检索质量（混合检索+重排+小 chunk 高信息密度），保证模型"有据可依"；第二层是 prompt 约束（选择题"精准分析/逐一验证"+严格格式"A,C,D"，问答题五步推理链：问题解构→信息检索→内容筛选→答案组织→答案优化，并要求规范金融监管术语）；第三层是解码配置（temperature=0.0 贪心解码消除随机性）；第四层是推理期投票融合，用多数投票与语义相似度做次级纠错。此外以领域数据微调 QLoRA 补齐通用模型在金融监管上的知识盲区——四个层次层层兜底，共同把高利害场景下"看起来合理但实为编造"的输出空间压到最小。
-
-## 实践启示
-
-1. 领域 RAG 的性价比起点是"召回密度"：句子级切块 + 小 chunk（256）+ 混合检索 + 重排，比追求大模型更立竿见影。
-2. 把"可校验"写进 prompt：要求逐项对照原文、严格输出格式，既是工程约束更是廉价幻觉护栏。
-3. 用"多配置融合"以廉价换稳健：不同 chunk×embedding 组合投票显著提升效果，且不增加推理期复杂度。
-4. 受限硬件下 QLoRA 是务实选择，且 8B 常已够用——不必盲目追逐更大模型，把算力留给融合与迭代。
-5. 高利害领域务必在数据层保留结构化元信息（文件名、token 数、表格标记、chunk→file 映射），为可追溯和审计留下后路。
-6. 不要从零造轮子：基于成熟可信 RAG 脚手架（如 TrustRAG）快速改造，把时间花在识别困难案例和调试上，是"短平快做好"的关键。
-
-## 相关实体
-
-- [RAG技术框架的演进方向](ch01/138-rag.html) — Classic → Graph → Agentic RAG 演进路线，本文为其经典 RAG 打法提供实证对照
-- [AFAC2026 金融 AI Agent 竞赛](ch04/279-ai-agent.html) — 另一金融 AI 竞赛方案，可对比"RAG 问答"与"Agent 编排"两条路线
-- [RAG 分块-嵌入-重排全链路](ch01/138-rag.html) — 与本文混合检索+重排设计互补的管道细节
-- [Stripe 金融合规 AI Agent 实践](ch04/254-stripe-financial-compliance-ai-agent-production-lessons.html) — 同为金融合规场景，可从生产侧视角印证本文的可追溯、可审计原则
-
----
-
-## Ch10.012 【实践教程】真实AI客服落地全流程：意图识别、混合检索到数据飞轮
-
-> 📊 Level ⭐⭐ | 7.6KB | `entities/实践教程真实ai客服落地全流程意图识别混合检索到数据飞轮.md`
-
-# 【实践教程】真实AI客服落地全流程：意图识别、混合检索到数据飞轮
-> AI训练营  ** 9期  ** ，  ** 今日  ** 开班，欢迎咨询
-书接上文： [ 《实践：AI客服实战方法论》 ](<https://mp.weixin.qq.com/s?__biz=Mzg2MzcyODQ5MQ==&mid=2247498987&idx=1&sn=5e3c5dc641b9eb94734ee27af0ad3381&scene=21#wechat_redirect>)
-之前我们详细介绍了  ** 空气小猪 AI 客服  ** 是如何一步步做出来的，但后续无论学员还是粉丝都依旧有很多的问题，所以最近几天我们在连续做 RAG 的课题。
-今天的话，我们会上点更硬的货，会结合空气小猪这个案例，讲清楚我们如何从 0 到 1 搭建一套 AI 客服，包括：
-
-## 相关实体
-- [Rag技术框架的演进方向](ch01/138-rag.html)
-- [Skill Rag Tsinghua Sra](ch07/045-skill.html)
-- [Harness Engineering Framework](ch05/026-harness-engineering.html)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](ch01/200-anthropic-claude-code.html)
-- [Aws Sagemaker Ai Agent Guided Workflows Finetuning](ch04/279-ai-agent.html)
-
-→ [原文存档](https://mp.weixin.qq.com/s/cU_3pMY8JcjnJ7Q91Otbkg)
-
-## 深度分析
-
-**AI客服的本质是可控性优先的Workflow，而非自由发挥的Agent。** 文章明确指出"第一版采用更稳妥的Workflow方式"，这个决策背后有深刻的工程考量：客服回答需要稳定、可解释、可复盘，不能让模型自由发挥。这与当前Agent狂热形成了有价值的对比——当行业都在追逐Agent autonomy时，这个案例表明在强一致性要求的业务场景下，显式控制的Workflow反而是更优解。Workflow牺牲了部分Agent的自主性，但换来了更强的确定性和更低的生产风险，这种"先追求稳定可控、再谈自主"的思路值得多数AI应用借鉴。
-
-**意图识别是整个链路的守门人，分类粒度决定系统边界。** 从最初只分成"产品咨询"和"闲聊"两类，到最终扩展为三个一级意图（产品咨询、用户反馈、闲聊）并附带详细二级分类，这个迭代过程揭示了一个重要原则：用户问题是无限发散的，但系统必须有边界，边界由意图分类定义。二级意图的缺失是意图识别不准确的主要原因——标签太粗导致模型无法准确判断"这是什么类型的问题"，进而导致后续检索和回答的全面失误。三级意图体系（带判断标准和示例）为每一类问题预设了处理路径，这是AI客服能够稳定交付的基础。
-
-**混合检索+多路改写+Reranker的组合是客服场景的工程最优解。** 向量检索擅长语义相近但表达不同的问题，BM25擅长关键词明确命中，两者组合覆盖了用户问法的两个主要维度。多路问题改写进一步扩展了召回范围，RRF融合保证了不同检索方式结果的可比性，Reranker则基于相关度重新评分而非原始相似度——这套组合拳的核心洞见是：没有哪种单一检索能覆盖所有问法，但通过融合和重排可以让各类检索的结果都能发挥作用。最终的`useful`字段则是生成侧的守门人：即使召回通过，模型仍需判断知识是否真的能回答问题，这种"宁可少答也不乱答"的原则是客服场景的风控底线。
-
-**全链路可观测性是AI客服运维的基础设施，而非可选项。** 传统系统报错是明确的：状态码、异常堆栈、数据库错误。AI客服的问题形态完全不同：意图识别错误、问题改写偏离、召回不足、知识不相关、提示词不生效——这些问题如果只看最终回答根本无法定位。全链路10个关键节点的日志记录（从用户原始消息到最终回答和耗时成本），使得"用户说回答不准"时可以精确定位是哪个环节出了问题。没有这套可观测性基础设施，AI客服的持续优化就只剩下猜测。
-
-**数据飞轮是AI客服从"初始版本"到"持续进化"的关键闭环机制。** 低置信度问题池解决了"知识库永远不完整"的现实问题，但更重要的是审核机制防止了知识库污染：不是所有低置信度问题都应该入库，情绪输入、无意义内容、低频问题、强时效问题都需要过滤。问题标准化+相似度合并+人工审核的三层过滤，保证了进入知识库的都是真正需要沉淀的高价值内容。这个飞轮一旦运转起来，AI客服的能力会随着真实用户交互而持续提升——这是从"一次性项目"到"持续运营系统"的关键转变。
-
-## 实践启示
-
-- **AI客服的首要原则是"宁可不答，也不要错答"，这条原则应嵌入系统设计的每个层面。** 从意图识别的粒度控制，到`useful`字段的生成判断，再到知识库的边界定义，"不乱答"比"多答"更重要。一旦客服开始一本正经地胡说八道，直接损害用户对产品的信任——这种伤害远大于"我暂时无法回答这个问题"。
-
-- **混合检索（向量+BM25）是客服场景的工程基准线，单一向量检索不足以支撑生产级客服。** 用户在客服场景的提问往往包含明确的产品名称、功能术语，这些关键词向量检索无法精确命中。BM25弥补了这一差距，而Reranker和RRF则在多路召回后保证了最终结果的相关性排序。
-
-- **意图识别的分类体系需要同时从产品视角和用户视角进行梳理，缺一不可。** 产品视角决定系统能提供什么，用户视角决定用户真正关心什么——两者融合才能形成既完整又准确的分类体系。初次上线后应持续根据真实用户问法迭代二级分类，这是AI客服效果调优的主要工作之一。
-
-- **全链路可观测性必须在系统设计阶段就纳入架构，而不是事后补充。** 10个关键节点的日志记录不仅是调试工具，也是持续优化迭代的数据基础。当系统出现问题时，如果无法快速定位是意图识别、问题改写、知识召回还是生成判断出了问题，优化工作就只能靠猜——这对AI客服这类复杂链路系统是致命的。
-
-- **数据飞轮是AI客服的持续竞争力，但必须建立严格的知识入库审核标准防止污染。** 低置信度问题池只是起点，问题标准化去除了口语和情绪，相似度合并识别了高频共性问题，人工审核确保了只有真正需要沉淀的知识才进入知识库。这个飞轮转动得越久，AI客服覆盖的用户问题就越全面——这是AI客服相对于人工客服的长期成本优势来源。
-
----
-
-## Ch10.013 SkillCorpus: 大规模社区 Skill 生态的筛选、评测与边界分析
-
-> 📊 Level ⭐⭐ | 4.8KB | `entities/skillcorpus-consolidating-open-skill-ecosystem.md`
-
-# SkillCorpus: 大规模社区 Skill 生态的筛选、评测与边界分析
-
-> 首个端到端框架：聚合开源 SKILL.md 生态，提纯为 96,401 标准化技能，在真实 Agent 任务上评测社区技能的实际价值并界定其边界。
-
-## 概览
-
-SkillCorpus 是由 EverMind、盛大集团与北京大学联合提出的框架，将松散的开源 SKILL.md 生态（~821,000 原始文件）经多层流水线提纯为 96,401 份合规、高质量、可商用的标准化技能，并配套微调检索排序堆栈，在真实 Agent 任务上评测了社区技能的实际增益与边界条件。
-
-## 六阶段提纯流水线
-
-1. **结构/格式检查**：标准 SKILL.md 格式 + 合理长度过滤
-2. **两阶去重**：精确指纹去重（169,465 合并）+ 语义嵌入去重（cosine 0.90 阈值，LLM 裁决 66,751 边界对）→ 合计去除 64%
-3. **三维质量打分**：LLM-as-judge 从 Utility（实用性）、Robustness（鲁棒性）、Safety（安全性）三维度输出 0-10 分
-   - 综合分 = 0.85·content_q + 0.15·prior_src（安全薄弱时衰减）
-4. **安全硬门禁 + 许可证过滤**：5 条硬规则（prompt_injection/cmd_injection/unsafe_exec/auth_bypass/csam_risk）→ 分数归零；仅保留 OSI 兼容许可证（去除 3,795 条）
-5. **归类入库**：16 类分类法（Dev 22.4%, Data 14.1%, Writing 8.2%, DevOps-Infra 7.8%...），1024 维检索嵌入
-
-## 三级检索排序堆栈
-
-- **粗召**：Qwen3-Emb-0.6B（在去重后语料上微调），3000 字符检索字段
-- **精排**：Qwen3-Rank-0.6B 微调排序模型
-- **LLM 选择门**：阅读完整 Skill 正文，返回 0-2 条注入
-- **可选查询改写**：领域术语规范化
-
-## 评测结果
-
-### 主实验（407 任务，24 配置 × 3 轮 = 74 次端到端运行）
-
-| 框架 × 模型 | SkillsBench | GDPVal | QwenClawBench | 均值 |
-|---|---|---|---|---|
-| OpenClaw × Qwen-27B | +4.2 | +1.9 | +1.5 | +2.5 |
-| OpenClaw × Qwen-397B | +5.8 | +1.8 | +1.3 | +3.0 |
-| Raven × Qwen-27B | +6.5 | +1.2 | +3.9 | +3.9 |
-| Raven × Qwen-397B | **+13.4** | +1.2 | +4.4 | **+6.3** |
-| Claude Opus 4.7 | +8.0 | — | — | — |
-
-全部配置正向增益，无净负均值（no-harm attachment）。最强单元（Raven × Q-397B）在 SkillsBench 上从失败中救回 19 个任务、损害 2 个（McNemar 检验 p<0.001）。
-
-### 两个边界条件
-
-**Harness 边界**：Raven 执行完整「推理→运行脚本→校验→修正」闭环，提升远超 OpenClaw（写代码后即终止、不校验）。Harness 执行逻辑直接影响 Skill 的落地效果。
-
-**覆盖度边界**：高检索匹配 → 平均 +25.1%；中匹配 → +6.2%；低匹配 → +2.2%。Skill 库覆盖度直接调节增益幅度。
-
-### 关键洞察
-
-- **流程适配度 > 质量分数**：单任务成败取决于 Skill 流程与任务结构的匹配度，而非综合质量分
-- **Skill 可能帮倒忙**：PPT 内嵌 Excel 修改任务中，通用 Skill（"打开 .xlsx"）无法处理 OLE 内嵌对象，反而比无 Skill 基线更差
-- **高基线任务天花板**：写作等任务模型本身能力强，Skill 提升空间有限（GDPVal 仅 +1.2-1.9pp）
-- **上下文隔离 > 并行**：规划器-执行者拆分的主要扩展优势来自上下文隔离，而非并行执行
-
-## 局限与未来方向
-
-- 质量评分依赖 LLM 文本判断，无沙箱执行验证
-- 仅英文评测，中文场景尚未覆盖
-- 静态快照（2026 Q2），无动态更新机制
-- 高基线任务受限天花板效应
-
-## 相关实体
-
-- [SkillOS: Learning Skill Curation for Self-Evolving Agents](ch04/185-self-evolving-agents.html)
-- [SkillComposer: 生成式技能组合](ch07/066-skillcomposer.html)
-
-→ [论文原文](https://arxiv.org/abs/2607.15557) | [中文解读](https://mp.weixin.qq.com/s/xZrMucZ4O5nMbGcc66H18g) | [PDF](assets/skillcorpus-arxiv-2607-15557.pdf)
-
----
-
 ## Ch10.014 Ettin Reranker Family
 
-> 📊 Level ⭐⭐⭐ | 15.1KB | `entities/ettin-reranker-family.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 15.1KB | `entities/ettin-reranker-family.md`
 
 ## 模型概览
 
@@ -2058,9 +2061,9 @@ ranked = reranker.rank(query, top_k_docs, top_k=5, return_documents=True)
 **5. 关注 embedding model + reranker 配对效应**：单独比较 reranker 质量不够——6 个 embedding model 搭配 Ettin Reranker 家族产生 36 种组合。固定 reranker 切换 embedder，或固定 embedder 切换 reranker，组合效果差异可能超过单个组件的升级收益。生产选型时应以端到端 pipeline（NDCG@10）为评估指标，而非孤立的模型 benchmark 。
 
 ## 相关实体
-- [Introducing The Ettin Reranker Family](ch01/303-introducing-the-ettin-reranker-family.html)
-- [Claude Code Openclaw Usage Ettin](ch09/026-claude-code-openclaw-usage-ettin.html)
-- [Gemma 4 Multi Token Prediction Drafters](ch01/158-gemma-4-multi-token-prediction-drafters.html)
+- [Introducing The Ettin Reranker Family](ch01/663-introducing-the-ettin-reranker-family.html)
+- [Claude Code Openclaw Usage Ettin](ch09/112-claude-code-openclaw-usage-ettin.html)
+- [Gemma 4 Multi Token Prediction Drafters](ch01/640-gemma-4-multi-token-prediction-drafters.html)
 - [Continuousasync](https://github.com/QianJinGuo/wiki-public/blob/main/entities/continuousasync.md)
 - [Continuous Async](https://github.com/QianJinGuo/wiki-public/blob/main/entities/continuous-async.md)
 

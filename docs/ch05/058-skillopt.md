@@ -1,0 +1,149 @@
+# SkillOpt
+
+> 📊 Level ⭐⭐⭐⭐ | 16.0KB | `entities/skillopt.md`
+
+# SkillOpt
+> 微软 × 上海交大 × 同济 × 复旦。冻结模型参数，把 agent 外部技能文档当作可训练对象，用验证集门控每一次编辑。
+
+> Rohan Paul (X) 概括：「像训练小程序一样训练 agent 技能」
+
+**SkillOpt = "LoRA for skills"**。LoRA 冻结模型主体、只训练一个小参数适配层；**SkillOpt 冻结全部模型参数、只训练一份外挂 skill 文件**。部署阶段零额外模型调用 —— optimizer 只在训练阶段参与，产出纯文本 `.md`。
+
+→ [原文存档](https://mp.weixin.qq.com/s/l5ZtF-TPtttCtjyLiiGYUQ)
+
+## 它要解决什么
+主流 skill 生产方式（人工手写 / LLM 一次性生成 / 自修订）**没有验证机制**。人工写的改一行不知影响；LLM 生成的 quality 看那次 prompt；自修订"看起来更聪明"实际可能更差。
+
+> 论文原话：Agent skills are hand-crafted, generated one-shot, or evolved through loosely controlled self-revision, **none of which mirrors the reproducible, feedback-driven optimization loop that makes deep-learning training reliable**.
+
+## 四步训练循环（mini training loop）
+| 步 | 动作 | 关键设计 |
+|---|---|---|
+| 1. **执行任务** | agent 携带 skill document 跑任务，记录完整 rollout 轨迹和得分 | |
+| 2. **分析轨迹** | 独立 **optimizer model** 读成功/失败轨迹 → 提**小范围文本编辑**（add/delete/replace） | textual learning-rate budget 限制幅度 |
+| 3. **验证集门控** | 新 skill 在 held-out set 上跑一轮；分数严格提高才接受；否则 rejected-edit buffer 或丢弃 | **gate 决定整个框架可靠性** |
+| 4. **沉淀经验** | 多个 epoch 后 slow/meta update 把反复验证的稳定经验写入 skill | epoch-wise 慢速更新稳定训练 |
+
+> **没有第 3 步，optimizer 可能把 skill 改得"读起来更专业"、实际任务分反而下降 —— prompt drift 经典症状。**
+
+## 实验结果
+- **6 benchmark × 7 model × 3 harness** = **52 个测试格子** → 全部 **best or tied**
+- GPT-5.5 提升：Codex agentic loop **+24.8 pt**、Direct chat +23.5 pt、Claude Code +19.1 pt
+- 提升幅度已超出"prompt engineering 调调格式"量级 → **skill 层有可被系统化挖掘的空间**
+
+### 迁移性（值得重视的工程能力）
+训练出的 skill artifact 可：
+- 跨**模型规模**迁移
+- 跨**执行环境**迁移（Codex → Claude Code）
+- 跨**相近领域 benchmark**迁移
+
+> 一份 skill 训好之后，换模型换 harness 依然有效。
+
+## 工程意义：Agent 时代的新型资产
+Agent 团队正在积累：技能文件 / 流程文档 / 工具使用约定 / 仓库工作流 / 测试策略 / 调试手册 —— **比 prompt 持久，但只靠人工/LLM 随手改会退化/不可复现**。
+
+SkillOpt 把 skill 文件变成**可训练 / 可验证 / 可审计的工程资产**：
+- 团队可审阅最终 skill 文件
+- 看到它为什么要求 agent 先做某检查、如何处理失败、何时调用工具
+- **这种透明度是模型权重做不到的**
+
+## 5 条局限
+1. **验证集设计是核心难题** —— 整个框架可靠性依赖 held-out set 质量；过小/不具代表性 → gate 失效
+2. **训练成本需摊薄** —— 每轮编辑都需 optimizer 读轨迹 + 生成编辑 + 跑验证；高频任务能否回本取决于 skill 复用频率和有效期
+3. **跨真实生产环境迁移需验证** —— benchmark 多样性远低于生产
+4. **Skill library 的选择与组合** —— 多 skill 切换、冲突处理未深入探讨
+5. **仍是研究原型** —— 微软/Anthropic 尚未官方集成到 Codex/Claude Code
+
+## 成本权衡
+| 阶段 | 成本 | 备注 |
+|---|---|---|
+| **训练** | 高 token 消耗 | 类似"compile step"，需要真金白银 |
+| **推理部署** | **零**额外模型调用 | optimizer 不上线 |
+| **决策** | 哪些任务值得训 skill vs 手写 prompt | 复用频率 × 有效期 |
+
+## 与现有范式对照
+| 范式 | 冻结 | 训练对象 | 部署形式 |
+|---|---|---|---|
+| **LoRA** | 主体模型 | 小参数适配层 | 几个 MB 权重 |
+| **Prompt Engineering** | — | 手工调 prompt | prompt 文本 |
+| **Self-Refine / Reflexion** | — | 模型自修订 | 无外部训练对象 |
+| **SkillOpt** | 全部模型参数 | 外挂 skill 文档 | 纯文本 `.md` |
+
+## 对 harness/agent 团队的启示
+1. **skill 层的可训练性是工程问题** —— 不是"prompt craft 凭手感"
+2. **gate 机制是基础设施** —— 没有验证集的优化都是"看起来更聪明"
+3. **skill 文件可读 = 工程化优势** —— 模型权重是黑箱，skill 是团队真正能掌控的资产
+4. **复用频率决定 ROI** —— 高频/稳定任务 = 训得回；一次性/低频 = 手写 prompt 更划算
+5. **与 harness 兼容性是关键** —— skill 跨 Codex/Claude Code 迁移 = 不被厂商锁定的护城河
+
+## 深度分析
+
+- **LoRA 类比揭示核心创新点**：SkillOpt 冻结全部模型参数、只训练一份外挂 skill 文档（纯文本 `.md`），这与 LoRA 冻结基座模型只训练小参数适配层的思路一脉相承。关键认知跃迁在于把"可训练部分"从模型权重外部化到文本载体——这意味着 optimizer 的输出可以直接被人类审查、版本控制、跨团队共享，而模型权重做不到这一点。 
+
+- **验证门控是整个框架的承重墙**：没有 held-out validation set，optimizer 可能把 skill 改得"读起来更专业"，实际任务分反而下降——这是经典的 prompt drift 症状。论文明确指出 deep learning 的可复现性依赖于反馈驱动的优化循环，而 SkillOpt 的验证门控正是将这一机制引入 skill 层的核心设计。 
+
+- **四步循环本质上是一个 mini training pipeline**：执行→分析→门控→沉淀，与标准 ML 训练的 forward/backward/validate/update 高度对应。textual learning-rate budget（限制每次编辑幅度）防止 optimizer 一步到位做出破坏性修改；slow/meta update 跨 epoch 逐步稳定 skill。 
+
+- **跨环境迁移能力是工程上的关键差异化点**：52 个测试格子（6 benchmarks × 7 models × 3 harnesses）全部达到 best/tied，表明训练出的 skill artifact 不是针对单一模型或 harness 过拟合，而是捕获了任务结构的某种本质特征。这种跨 Codex→Claude Code 的迁移能力意味着团队可以围绕 skill 构建厂商无关的工作流护城河。 
+
+- **Skill 文件是团队真正能掌控的资产**：模型权重是黑箱，skill 文档可读、可审计、可版本控制。团队可以精确审查"为什么这个 skill 要求 agent 先做某项检查"、"失败时如何处理"、"何时调用工具"——这种透明度使 skill 开发真正成为工程实践而非玄学。 
+
+## 实践启示
+
+- **在引入 SkillOpt 前先建好验证集基础设施**：框架可靠性完全依赖 held-out set 的质量——过小、噪声高或不具代表性都会导致 gate 失效。先投入精力构建有代表性的验证集，再谈训练优化。 
+
+- **用 ROI 框架决策哪些 skill 值得训练**：训练阶段 token 消耗类似"compile step"，需要真金白银。复用频率高、有效期长的 skill（如标准流程、常见错误处理）适合训练；一次性或低频任务用手写 prompt 更划算。 
+
+- **Textual learning-rate budget 是安全 guardrail**：允许 optimizer 做 add/delete/replace 小范围编辑是刻意设计的"学习率"——大幅重写会破坏已有验证通过的经验。实现时要严格限制单次编辑幅度，避免优化器一步到位破坏 skill 稳定性。 
+
+- **Prompt drift 监测是 agent 自我改进系统的标配**：任何引入模型自修订或 optimizer 的系统都需要类似验证门控的机制——没有验证的优化是在"看起来更聪明"的路上裸奔。参考 [Agent 自我改进的六条路](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-self-improvement-six-mechanisms.md) 中的验证机制设计。 
+
+- **Skill 资产化是 agent 团队工程成熟的标志**：将 skill 文件视为可训练/可验证/可审计的工程资产（而非随手改的文档）需要配套的工程实践：版本控制、审阅流程、部署前验证。参考 [Agent Skill 编写指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing.md) 建立规范化 skill 管理流程。 
+
+## 相关对照
+- [Agent Skill 编写指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing.md) —— 通用 skill 格式
+- [Agent Skill 进阶模式与治理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing-advanced.md)
+- [Agent Skill 评估与迭代](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing-evaluation.md) —— 评估正契合 SkillOpt gate 思想
+- [Agent Skill 高质量编写规范](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing-practices.md)
+- [Agent 可靠性的工程解法：Skillify 持续改进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-reliability-engineering-skillify-continuous-improvement.md)
+- [Agent 自我改进的六条路](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-self-improvement-six-mechanisms.md) —— SkillOpt 是一种新路径
+- [Agent Skills 系统性综述](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skills-comprehensive-survey.md)
+
+## 第 2 来源 — 实战教程（@hooeem）
+
+> **互补角度**：本文是 SkillOpt 的实战教程，不是论文复现。作者 @hooeem 从零开始讲解 SkillOpt——从「什么是 skill」开始，到安装配置、基准任务设计、参数调优、结果解读的一站式实操指南。核心价值在「怎么做」而非「为什么好」。
+
+**互补角度 5 条**:
+1. **完整的安装与配置指南** — 从 `uv sync` 到 VSCode/Claude Code 配置，涵盖 Windows/Mac 的路径适配和 AgentMD 角色文件安装。现有 entity 只有概念框架和论文数据。
+2. **输出可读与审计的 best_skill.md 文件** — 试验输出 380-2000 tokens，1-4 次编辑即可收敛，文件小到几分钟读完审完。强调「部署后零额外模型调用」的工程意义。
+3. **开放架构衍生模式** — 提及社区已衍生 CodexAgenticSkillOptimizer、NeoSkillOptimizer、CrewAIAgenticSkillOptimizer 等 fork 生态。
+4. **调参实用指南** — textual learning-rate、rejected-edits buffer、parallel workers 等 hyperparameter 的实际调节建议，附官方文档链接。
+5. **诚实限制条款** — 明确列出 SkillOpt 不适用的场景（无客观正确答案的任务），以及「skill 被训练走样后难以回滚」等实战中遇到的问题。
+
+→ [第 2 来源原文存档](https://mp.weixin.qq.com/s/No81T-3bAgXRfD5UnEcTeQ)
+- [Impeccable](095-impeccable.html) —— skill 落到前端的范例；SkillOpt 给"skill 怎么训"补上一块
+
+## 第 3 来源 — AliExpress 一手实践（@枫樾，2026-08-19）
+
+> **互补角度**：AliExpress 技术团队（阿里国际）的深度工程实践，非论文复现。两个库内零覆盖的独立维度：①**Skill 自进化五阶段全景框架**（把 SkillOpt 放进领域演进谱系）；②**SkillOptLite 场景化落地**（Push 文案生成 skill，无自动 verifier 时的三层 reward 替代方案）。
+
+**维度 1 — Skill 自进化五阶段全景**：
+- **Stage 1 从经验到 Skill**（轨迹压缩成可复用单元）：EvolveR（经验驱动生命周期闭环，ICML 2026）/ SAGE（skill library+RL）/ SkillRL（技能增强+RL 递归结构）/ Skill-Pro（Skill-MDP，非参数化 PPO）——共性局限：技能质量依赖轨迹质量，缺把关，是无验证的增长。
+- **Stage 2 Skill 递归进化**：Skill1（技能库与策略统一 RL，去冗余泛化精炼）/ ARISE（两级技能库 cache+reservoir + 置信度门控 + 三级奖励 r2>r1>r0 防"为用技能被强化"）/ EvoSkill（迭代式失败分析，Pareto 前沿把关，底座冻结；OfficeQA +7.3、SealQA +12.1）/ CoEvoSkills（生成器-验证器协同演化）。
+- **Stage 3 Skill 组织与检索**：SkillGraph（技能存成有向图节点，带类型边编码 prerequisite/enhancement/co-occurrence，检索有序技能子图而非单技能）/ SkillOS（高质量策展才是瓶颈，冻结执行器+可训练策展策略）/ SkillOps（库级别缺陷，task-time vs library-time 维护）。
+- **Stage 4 生命周期管理**：AutoSkill（从交互轨迹自动派生/维护/复用技能，不重训底座）/ MUSE-Autoskill（创建/记忆/管理/评估统一生命周期）。
+- **Stage 5 SkillOpt 文本空间优化** + **SkillCoach**（当结果信号太粗时，先把评估器做成可进化的——过程性 rubric 沿四维度评估：skill selection/following/composition/grounded reflection；"只按结果筛"把 Qwen3.5-4B 从 8.0 拖到 6.0，按进化后过程 rubric 筛到 24.0）。
+
+**维度 2 — SkillOptLite 无 verifier 落地（关键工程增量）**：SkillOpt 假设有自动 verifier（精确匹配/可执行检查），但 Push 文案离线拿不到 CTR。AliExpress 的替代方案：
+- **三层 reward 拆解**：L1 确定性合规（逐语种硬规则：≤36字/无金额/无虚构销量/无最高级/emoji≤1/无操纵紧迫/无空洞鸡汤）→ L2 LLM 判官（带真实 CTR 锚点的成对评审）→ L3 微调项（clip ±0.05）。
+- **三态门控 + 合规否决前置**：客观信号（合规率/多样性）优先主判；二者上升/下降直接 accept/reject；持平时才去噪判官 K 票（胜率≥0.5+deadband）。合规否决前置：cand_redline ≤ current 才往下判。
+- **冻结红线区**：`## 质量红线` 段整段冻结（`_FROZEN_KW`），人工维护的合规红线不被自动编辑碰到——SkillOpt 受保护区思想的工程落地（反向使用：保护合规红线而非慢更新区）。
+- **对抗注入验证**：人工植入与真实数据相反的错误规则（"通用优惠词越通用越安全"），两次独立运行闭环均把它 replace 成"必须结合具体品类/场景/利益点，越具体点击率越高"——验证进化闭环能定位并修正系统性错误。
+- **门控质量上限 = 评估信号质量上限**：门控的可信度不可能超过其评估信号的可信度。
+
+**结论呼应**：落地最大分歧不在算法，在没有 verifier；把 skill 从"提示词的附属产物"重定位为"冻结 Agent 的可训练外部状态"，才有学习率/验证集/调度整套工具箱。纪律类机制（有界编辑/严格门控/拒绝即负反馈/受保护区/逐条可审计）比规模类超参（batch/minibatch/调度）对结果的影响大得多（去慢更新与 meta 使 SpreadsheetBench −22.5）。
+
+→ [第 3 来源原文存档](https://mp.weixin.qq.com/s/YS18dZfVvNBEsBuZ1pa7DA)
+
+---
+

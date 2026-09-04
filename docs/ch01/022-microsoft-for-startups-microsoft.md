@@ -30,7 +30,7 @@ Microsoft for Startups 是微软面向早期软件初创企业的一站式支持
 
 ### 3. Commercial Marketplace 与 seller co-sell 的商业化飞轮
 Sell more 的落地机制是微软创业计划较独特的商业化设计。初创通过 Commercial Marketplace 发布产品，企业买家可以用现有合同和 Azure 预算（而非新开采购流程）直接购买，把进入企业供应链的摩擦降到最低；叠加微软 seller 的 co-sell 机会，能让初创借力微软庞大的企业销售力量缩短销售周期、放大营收。这个飞轮对微软同样成立：每一笔通过 Marketplace 成交的 SaaS，都同时是 Azure 消费的增长点和微软生态（Microsoft 365、Teams、Copilot）的延展。
-风险在于依赖度不对称——初创的销售通路高度依赖微软的企业资源和 Marketplace 流量，一旦生态规则或分成政策变化，其商业化路径会受影响。与之对照的是 [AI 原生创业基金指南](../ch05/018-ai-native.html) 与 [Anthropic AI 原生创业手册](529-anthropic-ai.html) 所代表的另一极：强调从第一天就在自家产品内构建可持续业务，而非依赖单一云厂商的单向通道。
+风险在于依赖度不对称——初创的销售通路高度依赖微软的企业资源和 Marketplace 流量，一旦生态规则或分成政策变化，其商业化路径会受影响。与之对照的是 [AI 原生创业基金指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-native-startup-cyberfund-guide.md) 与 [Anthropic AI 原生创业手册](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-ai-native-startup-handbook.md) 所代表的另一极：强调从第一天就在自家产品内构建可持续业务，而非依赖单一云厂商的单向通道。
 
 ### 4. 与竞品及近邻条款的边界
 允许与现有云提供商并行使用、零一次性迁移要求，是该计划刻意降低进入门槛的设计，避免初创因「迁移成本」而放弃申请。但这也意味着微软的锁定靠的是後续的使用量成长而非前期合约。作为对比，[云 AI 基础设施](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/cloud-ai-infrastructure.md) 语境下的各家超大规模厂商都在用类似「积分 + 生态」的手段争夺 AI 工作负载，Microsoft for Startups 的差异化在于它是把企业采购通路（Marketplace + co-sell）作为一等公民打包进创业计划的方案。
@@ -41,15 +41,15 @@ Sell more 的落地机制是微软创业计划较独特的商业化设计。初�
 3. **主动对齐 Agent 生态。** 计划明确提及 3,000+ skills、agents 和 MCPs 经 Agent 365 接入微软生态；做 AI Agent 方向的初创应尽早评估与 Microsoft 365 / Teams / Copilot 对齐的联合销售机会。
 4. **把积分解锁与产品增长节奏对齐。** 积分随 Azure 用量逐步解锁，初创应规划在每个增长节点追加服务采纳，让补贴覆盖的时段与从 MVP 到生产的爬坡曲线重叠，最大化补贴的财务效用。
 5. **留意退出与切换成本。** 积分用尽自动转 pay-as-you-go、允许多云并行，短期无强制锁定；但长期深度依赖 GitHub、Azure AI、Marketplace 会隐性抬升切换成本——尽早决定对微软栈的依赖深度，避免被生态「锚定」后失去议价空间。
-6. **警惕单一通道依赖。** 让企业销售通路高度依赖微软的 Marketplace 与 seller 资源意味着议价权部分旁落；对照 [AI 原生创业](../ch05/018-ai-native.html) 的独立通路思路，设计 go-to-market 时应保留自身直接获客能力。
+6. **警惕单一通道依赖。** 让企业销售通路高度依赖微软的 Marketplace 与 seller 资源意味着议价权部分旁落；对照 [AI 原生创业](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-native-startup-cyberfund-guide.md) 的独立通路思路，设计 go-to-market 时应保留自身直接获客能力。
 
 ## 相关实体
 - [Microsoft Startups](https://github.com/QianJinGuo/wiki-public/blob/main/entities/microsoft-startups.md) — 近邻实体，主题高度重叠
-- [Microsoft for Startups v2](022-microsoft-for-startups-microsoft.html) — 同主题的复本排版
-- [Microsoft 为 OpenAI 替代者布局](031-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
-- [Nadella 论 AI 经济中的 Token 资本](../ch12/002-token.html)
-- [AI 原生创业基金指南](../ch05/018-ai-native.html)
-- [Anthropic AI 原生创业手册](529-anthropic-ai.html)
+- [Microsoft for Startups v2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/microsoft-for-startups-microsoft-v2.md) — 同主题的复本排版
+- [Microsoft 为 OpenAI 替代者布局](https://github.com/QianJinGuo/wiki-public/blob/main/entities/microsoft-is-quietly-shopping-for-an-openai-replac.md)
+- [Nadella 论 AI 经济中的 Token 资本](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nadella-token-capital-microsoft-ai-economy-2026.md)
+- [AI 原生创业基金指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-native-startup-cyberfund-guide.md)
+- [Anthropic AI 原生创业手册](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-ai-native-startup-handbook.md)
 - [云 AI 基础设施](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/cloud-ai-infrastructure.md)
 - [开源 AI 生态](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/open-source-ai-ecosystem.md)
 

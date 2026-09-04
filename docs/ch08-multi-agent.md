@@ -11,8 +11,10 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 1 |
-| ⭐⭐ 工程师 | 需编程基础 | 5 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 15 |
+| ⭐⭐ 工程师 | 需编程基础 | 3 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 5 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 9 |
+| ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 3 |
 
 ---
 
@@ -28,49 +30,70 @@
 
 ---
 
-## Ch08.001 OpenClaw 多智能体团队搭建实战经验
+## Ch08.001 Multi-Agent AI Safety Research Funding Call（DeepMind 主导，1000 万美元，四大方向）
 
-> 📊 Level ⭐ | 5.2KB | `entities/openclaw-multi-agent-team-practice.md`
+> 📊 Level ⭐ | 5.1KB | `entities/investing-in-multi-agent-ai-safety-research-deepmind-2026-06.md`
 
-## 花园多智能体团队（7个Agent）
-1. **花园生图助手** — Nanobana + Seedream 模型，定义审美偏好
-2. **花园资讯助手** — 每日自动抓取AI动态，整理日报推送
-3. **花园开发助手** — 手机飞书远程控制 Claude Code
-4. **花园投资助手** — 个股数据分析、走势指标、买卖建议
-5. **花园社区助手** — Moltbook 运营、内容发布、评论互动
-6. **花园写作助手** — 写作搭档：记忆风格、搜索资料、梳理大纲
-7. **花园智能专家** — 协调各Agent协作处理复杂任务
+# Multi-Agent AI Safety Research Funding Call（DeepMind 主导，1000 万美元，四大方向）
 
-## 核心设计原则
-- **每个 Agent 一个飞书 Bot** — 像在公司群里 @不同同事
-- **单 Agent 只做一件事** — 不堆叠技能，模块化设计
-- **主管 Agent 协调** — 智能专家了解所有 Agent 的能力，复杂任务编排
-- **零人工干预** — 日报生成、股票分析等已做到每日自动运行
+> 原文存档：[原文存档](https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/)
 
-## 深度分析
-ConardLi 的实践经验揭示了多智能体团队从"安装了什么"到"能做什么"的关键跃迁。核心洞察是：**Agent 不是设计出来的，是用出来的**——从每日最高频需求出发逐个搭建，而非一开始就规划完整的体系。
-**不做全能 Agent 的三大理由**：上下文污染（一个 Agent 的注意力被多领域术语分散）、技能冲突（开发协议权限对写作助手多余且有安全风险）、人设冲突（投资助手的严谨与写作助手的有温度无法共存）。这对应了 Agent 设计的最小权限原则和关注点分离原则。
-**联邦学习效应**：多 Agent 团队的价值不仅在于并行处理，更在于各 Agent 在自己领域持续优化形成的能力积累。当生图助手积累了审美偏好、投资助手积累了金融模型、写作助手学会了风格偏好，整个团队的能力在各自维度上持续进化，这是单一全能 Agent 难以实现的。
+## 概述
 
-## 实践启示
-- **从高频场景切入**：不要试图规划完美的 Agent 体系，先观察自己每天重复最高频的任务是什么，从那里开始一个个搭建
-- **人设即边界**：每个 Agent 的人设（role + behavior + communication style）就是它的边界，定义清楚比塞更多技能更重要
-- **主管 Agent 的协调价值**：当任务需要多个 Agent 协作时，主管 Agent 的存在使得复杂任务的编排成为可能，而不是让用户自己决定该 @谁
-- **Bot 即入口**：每个 Agent 绑定独立飞书 Bot 的设计降低了使用门槛——用户不需要学习复杂的命令或工作流，只需要像在群里 @同事一样自然地对话
+Google DeepMind 联合 **Schmidt Sciences、Cooperative AI Foundation、ARIA**（英国先进研究与发明局）并获得 **Google.org** 支持，于 2026-06-11 发布**最多 1000 万美元**的多 Agent AI 安全研究资助公告。这是首个由主要 AI 实验室主导、联合多家长期 AI 安全公益机构**共同出资**的多 Agent 安全研究计划。申请截止 **2026-08-08**，获奖者 2026 秋季公布。
 
-## 实践经验
-- Agent 不是设计出来的，是用出来的 — 从每日最高频需求出发逐个搭建
-- 写了 Agent Skill 后要反复调试，确保工具调用准确
-- 多 Agent 团队的价值在于"联邦学习"——各 Agent 在自己的领域持续优化
-→ [原文存档](https://mp.weixin.qq.com/s/RpR14rInw0ZWh4PFLPD1QA)
+核心命题：随着 AI 技术规模化，正在进入"数百万由不同组织构建的 AI Agent 在数字环境中交互、通信、谈判、交易"的新时代。这种跨组织、跨网络的 Agent 交互产生"涌现"集体行为（emergent collective behaviors），目前缺乏预测、测量和监控工具，构成传统单模型安全评估无法覆盖的新型风险。
 
-## 相关实体
-- [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](ch04/028-openclaw-multi-agent-team-practice-v2.html)
-- [基于 Amazon EKS 和 Graviton 构建多租户 AI Agent 平台：OpenClaw on Kubernetes 实践 | 亚马逊AWS官方博客](ch04/180-openclaw.html)
-- [Multi-Agent 架构在零售供应链运营中的实践：贯穿数据、洞察与行动 | 亚马逊AWS官方博客](ch03/004-agent.html)
-- [你不知道的 Agent 原理架构与工程实践](ch04/281-agent-principle-architecture-engineering-practice.html)
-- [Agent 原理、架构与工程实践](ch03/004-agent.html)
-- [OpenCLAW 完全指南](ch04/180-openclaw.html)
+## 四大优先研究方向
+
+| 方向 | 核心问题 | 典型研究对象 |
+|------|---------|-------------|
+| **Sandboxes and testbeds** | 如何构建可复现的真实环境来评估多 Agent 安全 | 虚拟市场、模拟生态系统、跨组织工作流 |
+| **Science of agent networks** | 交互 Agent 种群的安全相关属性 | 集体能力如何涌现/扩展、网络如何失败/失稳、如何检测危险的种群级属性 |
+| **Strengthening agent infrastructure** | 强化跨平台 Agent 安全交互协议 | 身份、声誉、承诺（commitment）协议的抗压测试 |
+| **Oversight and control** | 监控已部署的 Agent 种群 | 种群级集体危害的检测与缓解方法 |
+
+## 关键贡献
+
+1. **首次主要 AI 实验室主导 + 公益联合资助模式**：DeepMind 提供资金，Schmidt Sciences、ARIA、Cooperative AI Foundation 提供研究框架，Google.org 提供运营支持，**单一资金方无法独立驱动**。该模式可被复用到未来多 Agent 安全研究。
+
+2. **从"单模型安全"到"种群级安全"的研究范式转变**：现有 AI 安全评估**主要在隔离状态下分析单个模型**，新框架则要求理解**交互产生的涌现行为**。这意味着 safety evaluation 范式从 per-model 转向 population-level。
+
+3. **四大方向形成完整闭环**：Sandboxes（实验环境）→ Science（理论）→ Infrastructure（协议层）→ Oversight（部署层）—— 从基础研究到实战部署形成完整覆盖，每一层都是研究机会。
+
+## 与 DeepMind 2025 工作的延续
+
+资助公告明确将本计划建立在 DeepMind 2025 年的两项基础工作上：
+
+- **2025 年多 Agent 交互理解框架**（2025 foundational framework for understanding these interactions）
+- **AI Agent Traps**（对抗环境下 Agent 面临的脆弱性研究）
+
+资助计划是这两项工作的规模化扩展，从实验室单点研究转向"全球独立研究者网络"协同推进。
+
+## 申请要点
+
+- **金额**：up to $10M total
+- **截止**：2026-08-08
+- **公布**：Autumn 2026
+- **资格**：学术界 + 独立研究者（全球范围）
+- **优先方向**：上述四大方向
+- **背景契合度**：
+  - Schmidt Sciences: Science of Trustworthy AI + AI Agents 计划
+  - ARIA: Scaling Trust 计划（关注 cyber-physical multi-agent coordination）
+  - Cooperative AI Foundation: cooperative AI 基础研究
+
+## 相关主题
+
+- [DiffusionGemma](https://github.com/QianJinGuo/wiki-public/blob/main/entities/diffusiongemma-4x-faster-text-generation-google-2026-06.md) — 同为 Google DeepMind 2026-06 公告
+- Multi-Agent System Safety — 概念层（待创建）
+
+## 一句话定位
+
+**"单模型安全 → 种群级安全"**的研究范式转变 + 首个主要 AI 实验室联合公益机构的 $10M 多 Agent 安全研究资助计划
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -166,9 +189,9 @@ Graph 不是回到 ReAct 之前的老工作流。老工作流节点是死代码�
 
 ## 关联
 
-- [Loop Engineering: 把反馈循环放进工程现场](ch04/360-loop-engineering.html) — Loop Engineering 是 Graph 的底层基础
-- [Harness Engineering](ch05/026-harness-engineering.html) — Harness 是每个 Loop 节点的基础结构
-- [LangGraph 底层原理](ch04/169-langgraph.html) — 最成熟的 Graph Engineering 框架
+- [Loop Engineering: 把反馈循环放进工程现场](https://github.com/QianJinGuo/wiki-public/blob/main/entities/loop-engineering-feedback-control-system.md) — Loop Engineering 是 Graph 的底层基础
+- [Harness Engineering](ch05/066-harness-engineering.html) — Harness 是每个 Loop 节点的基础结构
+- [LangGraph 底层原理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/langgraph-state-machine-under-the-hood.md) — 最成熟的 Graph Engineering 框架
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — 工程范式全景
 
 ## 扩展：事实图维度（若飞 2026-07-30 Supplementary）
@@ -227,9 +250,1275 @@ Graph 体系要防"为了优化指标而牺牲本质"，需要三个不可动摇
 
 ---
 
-## Ch08.003 Oz Multi-Harness Cloud Agent Orchestration (Warp)
+## Ch08.003 微软 Agent Framework 全栈指南（Python）
 
-> 📊 Level ⭐⭐ | 12.0KB | `entities/oz-multi-harness-cloud-agent-orchestration.md`
+> 📊 Level ⭐⭐ | 6.0KB | `entities/microsoft-agent-framework-python-zizhi.md`
+
+> 来源：[原文存档](http://mmbiz.qpic.cn/mmbiz_png/8VVIHicz4MiaaAoIaJJUWxT1q60KnpdqHA8GIOicibhu4GiaDBricXeXDzwWUaTeqoHo18UibXxZ7m2CanDXJxfKH6xFj2ns7sh2e9WBeibU1iaBbN0U/0?wx_fmt=png)
+
+## 深度分析
+**1. 三层架构的统一抽象：Agent / Workflow / Hosting 解耦设计**
+微软 Agent Framework 的核心价值在于将 Semantic Kernel 的企业底座、AutoGen 的 Agent 抽象与新增的 Workflow 图编排整合为统一 API。框架明确区分了三种场景的选型原则：开放对话、自主调工具 → Agent；步骤固定、要强控执行顺序 → Workflow；纯确定性逻辑 → 普通函数。这种分层使得开发者可以根据任务性质选择合适的编程模型，而非强行把所有场景都塞进 Agent。
+
+**2. Provider 模式实现记忆与上下文的可组合性**
+
+Step 4 展示的 `ContextProvider` / `HistoryProvider` 体系是框架最的设计亮点。通过 `before_run` 和 `after_run` 钩子，开发者可以在每轮对话前后注入自定义上下文或提取状态。多个 Provider 可以组合（记忆存储 + 外部记忆 + 审计），且只有一个应设置 `load_messages=True` 以避免重复回放。这套模式比直接硬编码记忆逻辑更具工程化价值。
+
+**3. 工具安全模型：从 Demo 到生产的必要跃迁**
+
+文章用 `approval_mode` 参数区分了演示环境（`never_require`）与生产环境（`always_require`）的差异。工具描述（docstring + `Field(description=...)`）的质量直接影响模型调用准确率，这个细节在很多入门教程中被忽略。生产 checklist 进一步强调了 ManagedIdentityCredential 优于 DefaultAzureCredential（避免探测延迟与安全面），说明框架设计者对企业安全有清晰认知。
+
+**4. Workflow 与多 Agent 的组合模式**
+
+Step 5 揭示了框架的编排野心：图中节点可以是 Agent，边定义协作顺序；需要对外暴露为单一 Agent 时，可将 Workflow 包装为 `AIAgent` 接入 A2A/OpenAI 兼容端点。这意味着框架既支持细粒度的多 Agent 协作，也支持将协作结果封装为统一接口，兼顾了灵活性与易用性。
+
+**5. 六步能力矩阵的渐进式学习路径**
+
+文章将 Agent 开发分为六个阶段（首 Agent → 工具 → 多轮 → 记忆 → 工作流 → 托管），每步都有明确的 API 概念和解决的问题。这种设计符合认知负荷理论：开发者可以从简单场景起步，逐步引入复杂特性，而不需要在一开始就理解整个框架。
+
+## 实践启示
+**1. 从 pip install 到 Azure Functions 暴露 HTTP，路径清晰**
+Python 侧的开发体验设计良好：`pip install agent-framework` 后，用 `FoundryChatClient` 接模型，`Agent` 创建实例，`agent.run()` 验证逻辑，最后用 `AgentFunctionApp` 暴露为 HTTP 端点。建议按 01 → 06 顺序在本地跑通示例后再接入业务数据与鉴权，避免过早引入复杂性。
+**2. Session 是会话级状态容器，分布式部署需对接外部存储**
+文章特别指出：同一 `session` 对象贯穿多轮 `run()`，历史由框架在会话内维护。但分布式部署时需把 Session 与存储后端（Redis、数据库等）对接，而非仅依赖进程内对象。这意味着单进程开发环境与生产环境的 Session 管理策略需要分别设计。
+**3. 工具描述质量直接影响调用准确率**
+在定义工具时，docstring 和 `Field(description=...)` 的描述会进入模型的 function schema。生产环境中应投入时间优化这些描述，而非仅关注函数逻辑本身。工具描述质量是模型能否准确调用工具的关键因素。
+**4. 生产环境优先使用显式凭证**
+开发环境可用 `AzureCliCredential`，但生产建议 `ManagedIdentityCredential` 等明确凭证。这避免了 `DefaultAzureCredential` 的探测延迟（首次调用时会尝试多种凭证源）和潜在的安全风险。迁移旧项目时需要特别注意这一配置变更。
+**5. Provider 组合时注意 load_messages 互斥**
+多个 `HistoryProvider` 组合时，只有一个应设置 `load_messages=True` 以避免多存储重复回放。审计类 Provider 应放在列表末尾并设置 `store_context_messages=True` 以记录其他 Provider 注入的上下文。这个约束需要在设计阶段就明确，否则运行时会出现难以排查的重复消息问题。
+## 相关实体
+- [Microsoft Agent Framework Python Full Guide Zizhi](https://github.com/QianJinGuo/wiki-public/blob/main/entities/microsoft-agent-framework-python-full-guide-zizhi.md)
+- [Microsoft Agent Framework Structured Output](https://github.com/QianJinGuo/wiki-public/blob/main/entities/microsoft-agent-framework-structured-output.md)
+- [Microsoft Agent Framework Tools Overview Provider Matrix](https://github.com/QianJinGuo/wiki-public/blob/main/entities/microsoft-agent-framework-tools-overview-provider-matrix.md)
+- [Agentscope Java Harness Framework Enterprise Distributed](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentscope-java-harness-framework-enterprise-distributed.md)
+- [New And Improved Agent Governance Intelligent Workflows Connected App Exp](https://github.com/QianJinGuo/wiki-public/blob/main/entities/new-and-improved-agent-governance-intelligent-workflows-connected-app-exp.md)
+
+---
+
+## Ch08.004 OpenClaw 多智能体团队搭建实战经验
+
+> 📊 Level ⭐⭐ | 5.2KB | `entities/openclaw-multi-agent-team-practice.md`
+
+## 花园多智能体团队（7个Agent）
+1. **花园生图助手** — Nanobana + Seedream 模型，定义审美偏好
+2. **花园资讯助手** — 每日自动抓取AI动态，整理日报推送
+3. **花园开发助手** — 手机飞书远程控制 Claude Code
+4. **花园投资助手** — 个股数据分析、走势指标、买卖建议
+5. **花园社区助手** — Moltbook 运营、内容发布、评论互动
+6. **花园写作助手** — 写作搭档：记忆风格、搜索资料、梳理大纲
+7. **花园智能专家** — 协调各Agent协作处理复杂任务
+
+## 核心设计原则
+- **每个 Agent 一个飞书 Bot** — 像在公司群里 @不同同事
+- **单 Agent 只做一件事** — 不堆叠技能，模块化设计
+- **主管 Agent 协调** — 智能专家了解所有 Agent 的能力，复杂任务编排
+- **零人工干预** — 日报生成、股票分析等已做到每日自动运行
+
+## 深度分析
+ConardLi 的实践经验揭示了多智能体团队从"安装了什么"到"能做什么"的关键跃迁。核心洞察是：**Agent 不是设计出来的，是用出来的**——从每日最高频需求出发逐个搭建，而非一开始就规划完整的体系。
+**不做全能 Agent 的三大理由**：上下文污染（一个 Agent 的注意力被多领域术语分散）、技能冲突（开发协议权限对写作助手多余且有安全风险）、人设冲突（投资助手的严谨与写作助手的有温度无法共存）。这对应了 Agent 设计的最小权限原则和关注点分离原则。
+**联邦学习效应**：多 Agent 团队的价值不仅在于并行处理，更在于各 Agent 在自己领域持续优化形成的能力积累。当生图助手积累了审美偏好、投资助手积累了金融模型、写作助手学会了风格偏好，整个团队的能力在各自维度上持续进化，这是单一全能 Agent 难以实现的。
+
+## 实践启示
+- **从高频场景切入**：不要试图规划完美的 Agent 体系，先观察自己每天重复最高频的任务是什么，从那里开始一个个搭建
+- **人设即边界**：每个 Agent 的人设（role + behavior + communication style）就是它的边界，定义清楚比塞更多技能更重要
+- **主管 Agent 的协调价值**：当任务需要多个 Agent 协作时，主管 Agent 的存在使得复杂任务的编排成为可能，而不是让用户自己决定该 @谁
+- **Bot 即入口**：每个 Agent 绑定独立飞书 Bot 的设计降低了使用门槛——用户不需要学习复杂的命令或工作流，只需要像在群里 @同事一样自然地对话
+
+## 实践经验
+- Agent 不是设计出来的，是用出来的 — 从每日最高频需求出发逐个搭建
+- 写了 Agent Skill 后要反复调试，确保工具调用准确
+- 多 Agent 团队的价值在于"联邦学习"——各 Agent 在自己的领域持续优化
+→ [原文存档](https://mp.weixin.qq.com/s/RpR14rInw0ZWh4PFLPD1QA)
+
+## 相关实体
+- [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](ch04/392-openclaw-multi-agent-team-practice-v2.html)
+- [基于 Amazon EKS 和 Graviton 构建多租户 AI Agent 平台：OpenClaw on Kubernetes 实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-multi-tenant-ai-agent-on-eks-graviton-openclaw-k8s-practice.md)
+- [Multi-Agent 架构在零售供应链运营中的实践：贯穿数据、洞察与行动 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/multi-agent-architecture-retail-practice.md)
+- [你不知道的 Agent 原理架构与工程实践](ch04/193-agent-principle-architecture-engineering-practice.html)
+- [Agent 原理、架构与工程实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-engineering-principles-architecture-practice.md)
+- [OpenCLAW 完全指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-comprehensive-guide.md)
+
+---
+
+## Ch08.005 Scalable voice agent design with Amazon Nova Sonic: multi-agent, tools, and session segmentation
+
+> 📊 Level ⭐⭐⭐ | 12.1KB | `entities/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session.md`
+
+> 来源：[原文存档](https://aws.amazon.com/blogs/machine-learning/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session-segmentation/)
+
+## 核心要点
+- AWS Nova Sonic 支持多智能体架构、工具调用和会话分段
+- 三种架构模式：单智能体（工具直接调用）、路由多智能体（sub-agent as tool）、会话分段（session segmentation）
+- 与 DynamoDB、Kendra 等 AWS 服务深度集成
+- 基于 Amazon Bedrock AgentCore Runtime 和 Strands BidiAgent 框架
+- MCP 协议用于工具调用，A2A 协议用于 agent-to-agent 通信
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session-segmentation/)
+
+## 相关实体
+- [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
+- [上下文隔离](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-isolation.md)
+- [Agentium — 从零实现 Agent 系统的开源框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentium-agent-framework.md)
+- [Owner-Worker-Verifier 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/owner-worker-verifier-architecture.md)
+- [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
+- [Agent 原理、架构与工程实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-engineering-principles-architecture-practice.md)
+
+- [livekit agents：给大模型接上麦克风，没你想的那么简单](https://github.com/QianJinGuo/wiki-public/blob/main/entities/livekit-agents-voice-ai-streaming-cascade-interruption-detection.md)
+
+## 深度分析
+### 三种集成模式的架构哲学
+文章提出了三种递进的集成模式，每种模式对应不同的延迟-复杂度权衡：
+**Pattern 1: AgentCore Gateway — 工具直接调用（最低延迟）**
+Nova Sonic 通过 AgentCore Gateway 直接调用 MCP 服务器上的工具，无需中间推理层。语音模型理解意图 → 选择工具 → 传递参数 → 获得结果 → 语音回复，全流程在语音模型端完成。
+这个模式的局限在于：复杂工作流（多步验证、条件逻辑、链式调用）的推理负担完全落在语音模型的 system prompt 上。当工具数量增加时，工具选择本身成为性能瓶颈。
+**Pattern 2: Sub-Agent（Agent-as-Tool）— 解耦推理**
+语音 orchestrator 将完整任务委托给子智能体，每个子智能体有自己的模型、system prompt、工具和推理能力。Strands 支持两种连接方式：
+
+- **Local agent-as-tool**：子智能体在进程内运行，无网络延迟，但与 orchestrator 共用进程和扩展资源
+- **Remote agent via A2A**：子智能体部署在 AgentCore Runtime 上独立运行，通过 A2A 协议通信。A2A 是连接不同框架（Strands、OpenAI、LangGraph、Google ADK）构建的智能体的开放协议
+关键延迟权衡： 子智能体调用会增加延迟（子智能体自身推理 + 工具调用），对于语音对话场景意味着「更长的沉默」。AWS 建议子智能体使用 Amazon Nova 2 Lite 等小型高效模型来控制延迟。
+**Pattern 3: Session Segmentation — 超低延迟**
+这是针对语音场景专门设计的模式，不是 MCP 或 A2A 的直接映射。在同一 WebSocket 连接内，当对话从一个阶段转换到另一个阶段（如认证 → 账户查询 → 抵押贷款询问）时，关闭当前 Nova Sonic 会话并打开新的会话（新的 system prompt、新的工具集）。
+每个阶段获得：
+
+- 更短、更具体的 system prompt（减少推理开销）
+- 只加载当前阶段需要的工具（而非一个巨大的工具集）
+- 可选的子智能体（复杂阶段可用 Pattern 2，简单阶段保持工具调用）
+
+### 延迟优化的工程实践
+文章系统地总结了语音智能体的延迟优化技术：
+**1. 子智能体使用小模型**：orchestrator 用 Nova Sonic，对话质量由其保证；子智能体不需要大语言模型，用 Nova 2 Lite/Micro 即可。默认小模型，有必要时升级特定子智能体。
+**2. 状态化子智能体 + 缓存**：无状态的子智能体每次调用都访问数据库或 API，引入额外延迟。设计子智能体在会话内缓存数据源结果，后续问题从内存读取而非重复调用后端。
+**3. 认证后预取数据**：尤其适用于客服中心场景。用户认证后，主动在后台拉取账户余额、近期交易、待处理警示、抵押贷款状态。当用户询问时，答案已在内存中。
+**4. 并行化独立工具调用**：用户请求「给我所有账户概览」时，不要顺序调用「活期 → 储蓄 → 信用卡」，用并发执行一次完成三个调用。Strands 原生支持独立工具调用的并行化。
+**5. 填充短语掩盖延迟**：当工具调用不可避免时，通过 system prompt 指示语音模型说填充短语（"Let me check that for you…"）而非沉默等待。
+
+### MCP vs A2A：两个协议的角色分工
+文章澄清了两个协议的定位：
+
+- **MCP（Model Context Protocol）**：连接 agent 到工具的协议。AgentCore Gateway 托管 MCP 服务器作为托管端点，语音模型通过 Gateway ARNs 访问工具。
+- **A2A（Agent-to-Agent）**：连接 agent 到其他 agent 的协议。在 AgentCore Runtime 上，不同框架构建的智能体可以共享上下文和推理，使用共同格式通信。
+两者是正交的关系：MCP 解决「agent 如何调用外部功能」，A2A 解决「agent 如何与其他 agent 协作」。
+
+## 实践启示
+### 对语音 AI 产品经理
+1. **选择正确的集成模式**：
+
+   - 简单工具调用（查余额、查天气）：Pattern 1，延迟最低
+   - 复杂多步推理（贷款申请、故障排查）：Pattern 2，子智能体承担推理
+   - 多阶段对话（客服IVR流程）：Pattern 3，阶段隔离减少认知负担
+2. **延迟预算是核心指标**：语音对话的用户体验容忍度远低于文本。对每个查询，明确「用户期望的响应时间」，并用延迟预算反推架构选择。
+3. **系统 prompt 的分阶段设计**：即使不使用 Pattern 3，主动将系统 prompt 按对话阶段组织也能提升效果。将认证逻辑、账户查询、投诉处理分为独立的 prompt 分支，减少模型每次需要「忽略无关上下文」的计算。
+
+### 对架构师和工程师
+1. **A2A 协议的长期价值**：如果你的组织已有不同框架构建的智能体（LangGraph、AutoGen、自研），A2A 提供了跨框架协作的可能性。评估 AgentCore Runtime 上的 A2A 支持是未来智能体集成的关键投资。
+2. **MCP 工具托管的安全边界**：AgentCore Gateway 是 AWS 托管的 MCP 服务器。需要评估业务工具通过 Gateway 暴露的安全边界——哪些工具可以在 Gateway 上注册，哪些必须保持独立服务。
+3. **会话分段的上下文传递**：Pattern 3 的会话切换需要显式传递上下文（chat history）。设计阶段间的「交接协议」——认证阶段的结果（用户身份、权限级别）如何传递到下一阶段的 session。
+4. **Nova Sonic 异步工具调用**：Amazon Nova 2 Sonic 支持异步工具调用， 对话可以在工具运行时继续，接受输入、多工具并行、在用户中途改变请求时优雅调整。这是减少感知延迟的关键特性。
+
+### 对 DevOps 和 SRE
+1. **WebSocket 连接管理**：语音智能体依赖 WebSocket 维持实时双向流。设计连接管理策略：断线重连、超时处理、并发连接数限制。AgentCore Runtime 提供 microVM 级会话隔离，避免「 noisy neighbor」问题。
+2. **延迟监控指标**：除标准 LLM 指标外，语音智能体需要追踪：
+
+   - Time-to-first-audio（用户说话到听到响应的延迟）
+   - 工具调用成功率
+   - 阶段切换频率和切换延迟
+3. **容量规划**：语音智能体的扩展不是简单的实例数横向扩展。需要考虑并发 WebSocket 连接数、Bedrock AgentCore 的容器调度、以及下游工具服务的吞吐能力。
+
+### 对创业者和 ISV
+1. **现有智能体的复用是核心资产**：文章在结论中强调「The sub-agents you've already built are your biggest asset. Reuse them.」 如果你已有文本聊天机器人的工具/子智能体，它们可以低成本迁移到语音场景。
+2. **Strands BidiAgent 的框架价值**：Strands 提供了连接 Nova Sonic 和应用的双向流生命周期管理。对于不想深入 WebSocket 细节的团队，这是快速起步的集成路径。
+3. **垂直场景的专注**：文章的场景示例（银行、抵押贷款）都是高价值、复杂对话的垂直领域。语音智能体在这些场景的价值高于简单查询。评估创业方向时，优先考虑「对话复杂度高、人工成本高」的领域。
+
+---
+
+## Ch08.006 Thousand Token Wood v2: Multi-Model Heterogeneous Agent Council
+
+> 📊 Level ⭐⭐⭐ | 10.6KB | `entities/thousand-token-wood-sim-v2-hackathon.md`
+
+# Thousand Token Wood v2: Multi-Model Heterogeneous Agent Council
+
+> 原文存档：[原文存档](https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v2)
+
+## 概述
+
+Lester Leong（AdmiralTaco）Build Small Hackathon 2026 第二次提交的"Thousand Token Wood v2"工程报告。**核心创新**：4 个不同实验室的小模型组成 heterogeneous council，共同驱动一个金融市场游戏。
+
+**v1 → v2 进化**：
+- v1: 一个 fine-tuned 0.5B 模型跑 5 个 woodland creatures 交易市场（"看热闹"型）
+- v2: 玩家 = Patron（金融大佬）— 放贷、传内幕消息、做空、行贿、结盟；magistrate 追踪内幕交易；creatures 记得玩家如何对待它们
+
+## 核心架构创新
+
+### 1. Heterogeneity is the product（异质性即产品，不是约束）
+
+**Council 组成**（4 实验室的小模型）：
+- **gpt-oss-20b**（OpenAI）
+- **MiniCPM3-4B**（OpenBMB）
+- **Nemotron-Mini-4B**（NVIDIA）
+- **Qwen 0.5B fine-tune**（作者自训）
+
+**为什么不同模型更好玩？**
+- 同质模型 + 不同 prompt = "脚本"（行为可预测）
+- 异质模型 = "活的争论"（市场参与者真正"不同"）
+- 猫头鹰囤积方式 ≠ 狐狸投机方式——different training data + post-training 带来真实差异
+
+### 2. 服务层摩擦是真实工程痛点（不是模型层）
+
+实测发现的 vLLM 0.22.1 痛点：
+- JIT 编译 kernel 需 CUDA toolkit（`nvcc`）→ lean base image 不带 → 4 个模型全部同样失败 "could not find nvcc" → **一个 image fix 解锁全部**（不是 gpt-oss 特殊问题）
+- gpt-oss-20b MXFP4 原生量化 → 24GB L4 跑得动，channel 格式包裹 answer → consumer 需 extract final channel
+- MiniCPM3 需 `trust_remote_code`；Nemotron 干净加载
+- 通用解法：**tolerant JSON parse-and-repair layer**——所有模型输出都过这层，drop 无法 salvage 的部分，simulation 从不崩溃
+
+**经验法则**：建好一次这个 layer，加新模型 = config 改动，不需要 refactor
+
+### 3. 信息不对称需要 firewall（不是 prompt instruction）
+
+**机制**：玩家可"传 tip" 给 creature — 真实 tip（预测市场会涨）或虚假 tip（诱饵）。真实 tip 正确使用 → 玩家"heat" 上升；过线 → magistrate 调查。
+
+**安全属性要求**：
+- 真相标记（truth flag）必须**对 creatures 不可见**——这是安全属性，不是 UI
+- 隐藏 flag 存在玩家 ledger（off-prompt），公共 event record 构造时 strip
+- narrator 永远只总结公共事件
+- **核心测试**：每轮扫每个 creature 的完整 prompt，检查 banned tokens——**这是测试套件里最重要的一个**
+
+**原则**：给 agent 秘密信息时，"假设它会泄露，除非有测试证明它不能"
+
+### 4. 持久 memory：bounded summary 而非 raw history
+
+**机制**：creatures 之间 + 与 Patron 之间的 signed sentiment（你 short 我的作物、你偿还贷款、你拉我结盟）。
+
+**陷阱**：prompt inflation——raw history 无限增长 → 小模型淹没
+
+**解法**：
+- 模型永远只看到 **一行 bucketed summary**（"你对 Oona 感到温暖，对 Patron 警惕"）
+- 摘要从 integer sentiment 派生，cap 在最强几个 feelings
+- 完整 notes 留存（trace）但 bounded 不显示
+- 行为偏差：50% emergent（summary 引导模型）+ 50% mechanical（强敌对 creature deterministic 拒绝）
+
+## 实测结果（"What actually happened" 单次 seeded run）
+
+| Lever | Result |
+| --- | --- |
+| Council 模型 | 4 实验室，皆 <32B，部署在 Modal |
+| Fine-tuned 0.5B 可靠性 | 0% 自买、100% valid offer（击败自己的 3B teacher）|
+| Truth firewall | 0 tip flag 泄露（每 prompt 扫）|
+| Insider tip edge | 真实 tip 预先定位 → 正 P&L；虚假 tip 不获益 |
+| Heat → 调查 | 2 次 suspicious 胜利触发 magistrate 调查 |
+| Ruin | margin call + 贷款违约 → creature 流放，下一章归来 |
+
+## Takeaways（作者总结）
+
+1. **小模型是可靠格式生成器 + 不可靠推理器**——用 structure + prompting + 小 fine-tune 缩小 gap，不靠 scale
+2. **Heterogeneous council 比 homogeneous 有趣**——服务层稳定后，加新模型只需 config
+3. **Agent 秘密信息是 firewall 问题**——firewall 属数据流（测试证明），不是 prompt 指令
+4. **持久 memory 是让 agent 活起来的最便宜方式**——前提是 prompt 只看到 bounded summary
+
+## 实践价值
+
+- **Multi-lab 模型组合**是 agent 工程的真实方向（vs 单一 frontier model）——用差异化取代同质化
+- **Service layer 标准化**（vLLM config + JSON parser）是 heterogeneous council 的关键
+- **安全测试自动化**（扫每个 prompt 的 banned tokens）是 production agent 必修课
+- **Memory bounding**（一行摘要 + integer sentiment）证明小模型也能管理长期关系
+
+## 与现有实体的差异化
+
+现有 `entities/claude-code-hackathon-winners-2026.md` 和 `entities/claude-code-hackathon-expertise-digitization.md` 关注 Claude Code 生态内的 hackathon；本 entity 关注**多实验室小模型组合**的 agent council 工程实现——属于 Hackathon 维度的不同子主题。
+
+`entities/defense_at_ai_speed_microsofts_new_multi.md` 关注 multi-agent 在 security 场景；本 entity 关注 multi-agent **在游戏/经济模拟**场景，且是 heterogeneous models（同 multi-agent 标签但维度不同）。
+
+## 上线状态
+
+- 原文 URL: https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v2
+- 作者: Lester Leong（AdmiralTaco）— Build Small Hackathon 参赛
+- 部署平台: Modal
+- Council 完全开源 + traces 公开
+
+## 深度分析
+
+### 1. Hackathon 作为 AI 应用创新的加速器
+千 token 木材模拟 v2 展示了 hackathon 在 AI 应用创新中的价值——在有限时间内（24-48 小时），团队可以验证从"想法"到"可用原型"的路径。hackathon 的约束（时间短、资源有限）反而促进了创造性解决方案。
+
+### 2. 模拟+AI 的混合方法论
+木材模拟与 AI 的结合代表了一个新兴的方法论：用物理模拟生成训练数据，用 AI 学习模拟中的模式并加速预测。这种"模拟-学习-加速"循环在材料科学、气候模拟、药物发现中都有应用。
+
+### 3. 千 token 的效率约束创新
+"千 token"约束（极简提示词）迫使开发者找到最精炼的提示词设计——这与 prompt engineering 中的"少即是多"原则一致。约束驱动创新是 hackathon 的核心价值。
+
+### 4. 从 hackathon 原型到生产系统的鸿沟
+hackathon 原型证明了可行性，但从原型到生产系统需要：持续的数据流、错误处理、用户界面、性能优化——这些在 hackathon 时间框架内不可完成。
+
+### 5. 领域特异性 AI 应用的长尾价值
+木材模拟这类领域特异性应用不会登上头条，但对特定行业（林业、建筑）可能有巨大价值。AI 的最大价值可能在长尾领域而非通用场景。
+
+## 实践启示
+
+### 1. 用 hackathon 验证 AI 应用可行性
+在投入大量资源前，用 hackathon 快速验证"AI 能否解决 X 问题"——48 小时的验证远比 6 个月的规划高效。
+
+### 2. 模拟+AI：适合数据稀缺的场景
+如果你的领域缺乏真实数据但可以建立物理模拟，用模拟生成训练数据是可行路径。
+
+### 3. 约束驱动创新：设定 token/时间/资源上限
+给 AI 应用开发设定显式约束（如"1000 token 提示词"），迫使团队找到最精炼的解决方案。
+
+### 4. Hackathon 原型后：做可行性评估再做投入
+hackathon 证明了可行性后，先评估原型到生产的差距和成本，再决定是否投入全面开发。
+
+### 5. 关注你领域的长尾 AI 应用
+AI 的最大价值可能不在通用场景而在你领域的特定痛点——用 AI 解决"小但关键"的问题。
+
+## 相关实体
+- [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
+- [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](https://github.com/QianJinGuo/wiki-public/blob/main/entities/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session.md)
+- [Factory Mission Multi Agent Architecture](ch01/534-factory-mission-multi-agent-architecture.html)
+- [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
+- [Openclaw Multi Agent Team Practice V2](ch04/392-openclaw-multi-agent-team-practice-v2.html)
+
+## 原文链接
+
+→ [原文存档](https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v2)
+
+---
+
+## Ch08.007 这篇52页综述把AI做科研这件事，明明白白划成了L0到L4五个等级
+
+> 📊 Level ⭐⭐⭐ | 7.1KB | `entities/autoresearch-ai-scientific-discovery-l0-l4-challengehub.md`
+
+> -> [原文存档](https://mp.weixin.qq.com/s/vqB4CtJPq0j61eSIADvUoQ)
+
+# AI做科研：L0到L4五级自主度框架
+
+## 核心框架
+
+arXiv 2605.23204v1《AutoResearch AI》给出了L0-L4五级自主度框架——按workflow控制权、任务执行权、验证权、科学问责权看人和AI怎么分工：
+
+| 等级 | 描述 | 代表系统 |
+|------|------|----------|
+| **L0** | Human Only，纯人工 | 历史基线 |
+| **L1** | Human-Led, AI-Assisted | ChatGPT/Claude/Gemini 辅助科研 |
+| **L2-S** | 单步自动化执行 | Coscientist (Nature 2023) |
+| **L2-I** | 交互式工作流自动化 | AI co-scientist (Nature 2026) |
+| **L2-P** | 流水线自动化（人验证下） | The AI Scientist、AI Scientist-v2、Agent Laboratory |
+| **L3** | AI-Led, Human-Assisted | **目前无系统达到** |
+| **L4** | AI-Autonomous | **理想化远期目标，无任何系统达到** |
+
+**关键切分**：L1-L2是Vibe Research（人在驾驶座），L3-L4才是真正的AutoResearch。「pipeline能跑通 ≠ 到了L3」——只要还需要人判断hypothesis是否有意义、experiment是否valid、result是否reproducible，就还在L2-P。
+
+## 核心警示
+
+「流程被打通了」不等于「科研自主了」。当前系统在搜索、起草、写代码、bounded execution 上越来越强，但 validation、rejection（拒绝弱方向）、reproducibility、exception handling、accountable closure 这些环节还差得远。
+
+## 五个评估维度
+
+从「任务完成度」切换到「科学可信度」：
+- **Novelty**（新颖性）
+- **Validity**（有效性）
+- **Impact**（影响力）
+- **Reliability**（可靠性）
+- **Provenance**（可溯源性）
+
+## 领域间不均衡
+
+- **计算/形式科学**最快：artifact 本身是 digital/executable/replayable
+- **化学/材料**：有 robotic lab 支持
+- **生物/医学/社科**：embodiment、ethical constraint、causal reasoning 的难度不是「加大模型」能解决的
+
+**重要判断**：不要拿 coding agent 的进展去推断「AI能做全科学的端到端研究」。
+
+## 深度分析
+
+### 从专用模型到通用科研Agent的范式跃迁
+
+这篇综述揭示了一个根本性转变：AlphaFold代表的**专用模型时代**和以LLM驱动的**通用科研Agent时代**是两条不同的路。AlphaFold把单一任务做到极致，但无法迁移；LLM驱动的系统则在广度上打开了一扇门——文献调研、想法生成、计划制定、代码执行、结果分析、论文撰写，第一次有可能被同一个系统串起来。
+
+### L2-P的三种形态揭示了当前Pipeline的分化
+
+L2-P内部存在显著分化：**单步执行（L2-S）**、**交互式工作流（L2-I）**、**流水线自动化（L2-P）** 代表了不同程度的自动化成熟度。Coscientist代表单步执行能力；AI co-scientist引入了交互迭代；The AI Scientist则试图做端到端流水线。这种分化说明当前所谓的"SOTA系统"实际上能力梯度很大，不能一概而论。
+
+### 为什么L3是真正的分水岭
+
+L3的核心要求是**AI主导、人辅助**——这意味着机器不仅执行任务，还要判断hypothesis的价值、决定实验方向、承担科学责任。目前没有任何系统达到L3，关键卡点在于：validation能力不足、rejection能力（即主动放弃弱方向）几乎为零、reproducibility验证缺失、exception handling机制不完善。这不是加大模型参数能解决的，需要架构层面的创新。
+
+### 当代Landscape的分工架构说明什么
+
+当前Landscape不是被某个统一架构统治，而是分为**知识支持层**（文献 grounding、QA、planning）、**执行底座层**（code agent、tool use）、**Pipeline协同层**（The AI Scientist等）、**开源基础设施层**（NanoResearch、ResearchClaw等）。这种分工提示：端到端系统还处于非常早期，基础设施正在成为竞争焦点。
+
+## 实践启示
+
+1. **不要被demo误导**：看到"端到端科研Agent"的演示视频时，首先问清楚它在哪一级——是L2-S/L2-I还是L2-P，距离L3还有多远。
+2. **评估重点切换**：从"任务完成率"转向"科学可信度"——novelty、validity、reliability、provenance五个维度才是衡量科研AI的真正标尺。
+3. **领域差异巨大**：计算科学可以快速推进，生物医学受限于embodiment和ethical constraint，社科则几乎无法自动化。选择落地场景时必须考虑领域特性。
+4. **基础设施是壁垒**：2026年的趋势是从"研究agent demo"转向"可复用研究基础设施"——NanoResearch、ResearchClaw、AutoResearchClaw等正在建立workspace、可复用环境、persistent project state的能力。这将是下一阶段的核心竞争力。
+5. **L3路线图**：如果要向L3推进，重点必须放在validation/rejection能力建设、reproducibility自动化、exception handling机制，以及最终的accountable scientific closure能力上。
+
+## 相关主题
+
+- [AutoResearch 多Agent软件开发](https://github.com/QianJinGuo/wiki-public/blob/main/entities/autoresearch-multi-agent-software.md) — Karpathy 风格，software engineering 场景（非science）
+## 相关实体
+
+- [nature丨google和futurehouse同日登刊，把ai科学助理推到科研前线](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nature-ai-scientific-assistant-google-futurehouse.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/multi-agent-coordination.md)
+
+---
+
+## Ch08.008 Routa 多智能体协同交付平台
+
+> 📊 Level ⭐⭐⭐ | 6.9KB | `entities/routa-multi-agent-coordination-platform.md`
+
+## 核心理念
+"单一 Agent 聊天适合处理孤立任务，但一旦同一条线程同时承担拆解、实现、评审、证据收集和发布决策，语义边界就会迅速混乱。"
+**解决方案**：让软件交付链路显式化，每个角色干自己的活。
+
+## 三层架构
+1. **Planning**（规划层）
+2. **Execution**（执行层）
+3. **Verification**（验证层）
+
+## Kanban 六列
+- **Backlog** → Refiner 改写需求为 YAML story
+- **Todo** → Orchestrator 验证可执行性
+- **Dev** → Crafter 实现+验证+提交
+- **Review** → Guard 独立验证
+- **Done** → Reporter 总结交付
+- **Blocked** → Resolver 处理阻塞
+
+## 专业化 Agents
+| Agent | 职责 |
+|-------|------|
+| Backlog Refiner | 将粗糙需求改写为结构化YAML，包含acceptance criteria、INVEST检查 |
+| Todo Orchestrator | 重新解析YAML，不合格则退回 |
+| Dev Crafter | 实现、验证、提交、写Dev Evidence |
+| Review Guard | 独立验证每条acceptance criteria |
+| Done Reporter | 留下completion summary |
+| Blocked Resolver | 处理依赖/环境/需求歧义导致的阻塞 |
+
+## Review Gate 三层验证
+1. **Code Analysis**（代码分析）
+2. **Test Verification**（测试验证）
+3. **Specification Compliance**（规格合规）
+
+## Entrix 验证引擎
+- Rust 编写（`crates/harness-monitor/`）
+- 定义 fitness rules（文件行数、测试存在性、代码模式）
+- 支持 dry-run 和多 tier 运行
+```bash
+cargo build -p entrix
+entrix run --tier fast
+entrix run --tier normal
+```
+
+## 深度分析
+**从痛点出发理解 Routa 的设计动机**：
+当前大多数 Coding Agent 产品（如 Claude Code、Codex）解决的是"需求翻译成代码"这前半段问题，但软件交付远不止翻译这一个环节。真实需求需要经历拆解、确认边界、明确验收标准、实现、复核、上线确认，这条链路，单个 Agent 在单条聊天线程里根本无法承担。
+phodal 在 README 中指出的核心矛盾：「单一 Agent 聊天适合处理孤立任务，但一旦同一条线程同时承担拆解、实现、评审、证据收集和发布决策，语义边界就会迅速混乱。」这个观察直接催生了 Routa 的设计哲学——**让软件交付链路显式化，每个角色干自己的活**。
+**Kanban 范式对 Agent 协作的深层意义**：
+Routa 选择 Kanban 而非线性流水线是有深意的。Kanban 的可视化板不仅展示了"做什么"，更重要的是展示了"在哪卡住了"。六列（Backlog → Todo → Dev → Review → Done → Blocked）天然提供了状态可视化和阻塞检测能力。Dev Crafter 完成后进入 Review Guard，如果被阻塞在 Review 阶段，Blocked Resolver 可以精准介入而不是让整个流程停摆。
+更重要的是，卡片本身会随流转逐渐严格化：Backlog 产出 YAML story，Todo 补上 execution brief，Dev 追加 Evidence，Review 加上 Findings，Done 写 summary。信息逐层累积，形成完整的证据链，而不是在一条聊天记录里反复拉扯。
+**Entrix 验证引擎的设计理念**：
+Review Gate 不是靠 AI 喊"LGTM"，而是通过 Rust 编写的 Entrix 验证引擎，依据明确的 fitness rules 判定。fitness rules 可以定义：文件行数上限、测试存在性要求、禁止代码模式等。这种规则驱动的方式避免了 AI 评审的主观性，为自动化交付提供了客观基准。
+**技术架构的统一性**：
+Web 端（Next.js 16.2）和桌面端（Tauri + Rust Axum）共享同一套 `api-contract.yaml` 定义的语义边界（workspace、session、task、trace、codebase、worktree、review），确保两端行为一致。Rust crates 分层（routa-core、routa-server、routa-cli、harness-monitor）提供了清晰的责任边界和可扩展性。
+
+## 实践启示
+**1. 复杂软件交付场景应显式建模角色职责**：当任务涉及需求分析、实现、评审、发布等多个环节时，单一 Agent 聊天窗口会因语义边界混乱而失效。应将交付链路显式化，让每个 Agent 专注单一角色。
+**2. Kanban 范式可有效解决 Agent 状态追踪问题**：相比线性流水线，Kanban 的列状态天然适合追踪多 Agent 协作中的进度和阻塞。结合 Blocked Resolver 角色，可以实现"发现阻塞 → 诊断原因 → 路由到正确泳道"的闭环。
+**3. 证据链驱动的 Review 比 AI 主观评审更可靠**：在代码评审中定义明确的 fitness rules（文件行数、测试存在性、代码模式），并通过自动化工具验证，比 AI 生成的"LGTM"更有可重复性和可审计性。
+**4. 上下文信息应随任务流转逐层累积**：卡片从 YAML story → execution brief → Evidence → Findings → summary 的演化过程，本质上是将散落在对话记录里的信息结构化沉淀，便于追溯和审计。
+**5. 多端一致性需要统一语义边界**：Web 和桌面端共享 `api-contract.yaml` 定义的核心概念，确保不同入口的行为语义一致，这是构建可信 Agent 平台的基础。
+
+## 与现有知识的链接
+- → [Routa Harness 可视化](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/routa-harness-visualization.md) — 旧版 harness 可视化方向
+- → [Harness Context](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-context-management-working-set.md) — 多 Agent 协作的上下文管理
+- → [原文存档](https://mp.weixin.qq.com/s/xN6JBQ2PQxSEjtOkIJG3yQ)
+
+---
+
+## Ch08.009 Nature丨Google和FutureHouse同日登刊，把AI科学助理推到科研前线
+
+> 📊 Level ⭐⭐⭐ | 6.7KB | `entities/nature-ai-scientific-assistant-google-futurehouse.md`
+
+> -> [原文存档](https://mp.weixin.qq.com/s/uPcxYocLhQLky0uIn_QUow)
+
+# AI 科研助理：Co-Scientist vs Robin
+
+## 一句话
+
+Nature 2026 同日发表 Google Co-Scientist（Gemini 2.0 多智能体）和 FutureHouse Robin（文献+实验闭环），AI 正在从单点工具进化为科研伙伴。
+
+## 两个系统对比
+
+| 维度 | Co-Scientist（Google） | Robin（FutureHouse） |
+|------|----------------------|---------------------|
+| **底座** | Gemini 2.0 | Crow + Falcon + Finch |
+| **核心能力** | 结构化假设生成、专家评审 | 文献检索 → 假设 → 实验数据分析闭环 |
+| **实验闭环** | 仅生成假设，不做实验 | Finch 自主写代码做湿实验数据分析 |
+| **案例** | 白血病药物再定位（11个开放问题盲评第一） | 干性黄斑变性（30分钟读完825篇文献） |
+| **科学家介入** | 可随时提供反馈和假设 | 迭代中主动提议 RNA-seq |
+
+## 关键结论
+
+**专用科学文献接口至关重要**：o4-mini 替换 Crow 后幻觉引用从 0% 飙升至 45%。
+
+**当前局限**：成功在药物开发中最容易的细胞培养阶段；离"AI 自动做科学"仍有距离。
+
+## 深度分析
+
+**多智能体分工是科研 AI 系统化的关键路径**。Co-Scientist 的生成→反思→排名→进化→元评审五角色分工，本质上是将科学家评审流程自动化：假设生成后经独立评审过滤不合理选项，再通过进化机制迭代改进，最终由元评审给出综合判断。Robin 的 Crow（文献）→ Falcon（评估）→ Finch（实验分析）则是从文献驱动假设到实验验证的完整闭环。这种分工使每个智能体专注于单一能力，通过消息传递实现能力叠加，远比单一大模型"端到端"更可靠、更可解释。
+
+**领域专用文献接口是当前科研 AI 的核心竞争力**。Google Co-Scientist 的 Reflection 工具和 FutureHouse Robin 的 Crow 模型都专门针对科学文献设计，核心目的是避免大模型常见的"幻觉引用"问题。当 Robin 将底座从 Crow 换成 o4-mini 后，幻觉引用率从 0% 飙升至 45%——直接说明通用模型在科学场景下的局限。这对科研 AI 的启示是：在科学文献理解这类高精度任务上，专门训练的文献接口比通用大模型的性能差距可能是决定性的。
+
+**实验闭环能力将 AI 科研助理的天花板推到新高度**。Co-Scientist 仅生成假设，不执行实验；Robin 则更进一步，Finch 能接收湿实验原始数据、在 Jupyter 中自主编写并执行代码完成差异表达分析等全流程，并在迭代中主动提议 RNA-seq 等新实验方向。这种"假设→实验→数据分析→新假设"的闭环能力，使 AI 从辅助工具升级为真正的科研伙伴——可以主动推进研究进展，而非仅提供建议。
+
+**当前局限与突破口明确**。两系统的成功均集中在细胞培养阶段的药物筛选，这是药物开发中技术门槛最低的环节。真正的难题——起效机制解释、基因表达原因、动物/临床试验——尚未被触及。这也意味着短期内 AI 科研助理的价值在于：大幅加速文献综述和候选药物初筛，为科学家腾出时间专注于机制研究和转化决策。
+
+## 实践启示
+
+**研究团队应优先评估文献接口质量而非模型参数规模**。Nature 论文的对照实验表明，将 Crow 换成 o4-mini 后幻觉引用率从 0% 飙升至 45%，性能差距远比模型大小更显著。在选型科研 AI 工具时，应将"是否专门针对科学文献场景优化"作为首要标准，而非盲目追求模型规模。
+
+**药物再定位是当前科研 AI 价值最确定的落地场景**。两个系统都选择了药物再定位作为核心案例，盲评均获专家级结果。该任务有明确的评估标准（IC50、选择性、协同效应），且处于药物开发最早期的高通量筛选阶段，AI 可以发挥最大价值。从 ROI 角度看，药物再定位 AI 是当前最近可商用化的方向。
+
+**科学家角色正在从"执行者"向"决策者"迁移**。论文提出"首席科学家 + 超级博士后"的分工模型：首席科学家负责提出根本性问题、设计实验范式边界、做最终判断；AI 作为"超级博士后"不知疲倦地完成文献阅读、假设生成、实验数据分析等执行层工作。科研团队应开始思考如何重构工作流，让科学家聚焦于 AI 难以替代的战略判断和跨领域洞察能力。
+
+**迭代式人机协同比单次查询价值高一个数量级**。Robin 的案例中，AI 在首轮实验后主动提议做 RNA-seq，科学家同意后 Finch 自主完成分析并提出更新假设。这种迭代式交互使得 AI 能够不断修正方向，逼近正确答案。相比之下，单次假设生成的价值有限——真正的突破来自多轮"假设→验证→反馈"循环。
+
+## 一句话
+
+多智能体 + 领域专用文献接口 + 闭环实验能力 =下一代科研 AI 标配。
+## 相关实体
+- [Autoresearch Ai Scientific Discovery L0 L4 Challengehub](https://github.com/QianJinGuo/wiki-public/blob/main/entities/autoresearch-ai-scientific-discovery-l0-l4-challengehub.md)
+- [Rag技术框架的演进方向](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag技术框架的演进方向.md)
+- [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
+- [Wow Harness V3 Governance Protocol](https://github.com/QianJinGuo/wiki-public/blob/main/entities/wow-harness-v3-governance-protocol.md)
+- [Hermes Agent 12 Layer Full Configuration Guide](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-12-layer-full-configuration-guide.md)
+
+---
+
+## Ch08.010 JiuwenSwarm — Coordination Engineering 多智能体协作框架（含 SwarmFlow 可控编排 + Jiuwen Symphony 技能编排与分发）
+
+> 📊 Level ⭐⭐⭐⭐ | 26.4KB | `entities/jiuwenswarm-coordination-engineering.md`
+
+## 概述
+JiuwenSwarm 是 openJiuwen 社区发布的**多智能体蜂群协作框架**，代表从 Harness Engineering 向 **Coordination Engineering** 的范式跃迁。
+**背景演进路径：** ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+
+- Prompt Engineering → Context Engineering → Harness Engineering → **Coordination Engineering**
+
+## 核心架构：四组件全栈体系
+| 组件 | 解决的问题 |
+|------|-----------|
+| **Agent Swarm** | 多个 Agent 如何"成军"——自主分工、动态协商、高效协作 |
+| **Swarm Skills** | 如何把团队经验沉淀为可复用资产 |
+| **Swarm Skills Hub** | 能力如何在开发者之间流通、复用 |
+| **Swarm Skills 自演进** | 系统如何越用越强，而非越跑越僵 |
+
+### Agent Swarm
+多智能体团队协同机制内核。支持**成员对不同模型的路由**，针对不同角色提供合适能力的模型，减少负载压力，提升整体效果。
+核心能力：**自主分工 + 动态协商 + 高效协作**，从"单兵作战"到"精锐团队"。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+
+### Swarm Skills
+把团队协作中的最佳实践、SOP、角色搭配、调度策略**标准化封装成"团队级技能"**——让优秀的 Agent 团队变成一套即插即用的作战能力。
+
+### Swarm Skills Hub
+开放的团队级协作经验共享市场。地址：https://swarmskills.openjiuwen.com/
+
+### Swarm Skills 自演进
+演进引擎观察完整轨迹（任务拆解、角色调度、消息往来），**自动从轨迹反推出可复用的 Swarm Skill**，提交用户审批即可入库。
+两层同时演进： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+
+- **团队层**：自动增减角色、补充约束规则、优化协作流程
+- **成员层**：沉淀工具报错、接口超时、调用技巧等实战经验
+
+## Human-Agent 协作模式
+| 模式 | 描述 | 姿态 |
+|------|------|------|
+| **HOTS** (Human on the Swarm) | 人是指挥官，实时观察全局，随时下场介入 | 全局调度 |
+| **HITS** (Human in the Swarm) | 人是团队成员，与 Agent 同流程实时协作 | 沉浸式参与 |
+
+## Benchmark 表现
+- **PinchBench**：94.2% SOTA（OpenClaw 91.6%），token 消耗降低 34.8%
+- **LOCOMO**：记忆准确率 85%（8B 大模型），优于业界主流记忆系统
+底层支撑来自 openJiuwen Harness 的 DeepAgent 架构、上下文工程、长期记忆机制。
+
+## 开源地址
+- GitHub：https://github.com/openJiuwen-ai/jiuwenswarm
+- Swarm Skills Hub：https://swarmskills.openjiuwen.com/
+
+## 相关概念
+- Harness Engineering — Coordination Engineering 的前置范式
+- Multi-Agent Collaboration — 广义的 Multi-Agent 协作研究
+- Agent Swarm — 蜂群智能体架构模式
+
+## 深度分析
+### 1. 从单Agent到多Agent协作的范式跨越
+JiuwenSwarm 的出现映射了 AI Agent 工程领域的核心矛盾：当任务复杂度超过单个 Agent 的能力边界时，如何组织多个 Agent 像团队一样工作？
+传统单 Agent 框架（如 LangChain Agent、AutoGPT）在面对跨领域调研、软件交付，多角色决策等真实复杂任务时，暴露出明显的协作盲区。JiuwenSwarm 的**Coordination Engineering**范式，将多 Agent 协作从"多个单 Agent 堆叠"提升为"原生团队协同"——这不是工具升级，而是工程思维的根本转变。
+
+### 2. 四组件体系的递进逻辑
+四组件构成了一套完整的递进体系： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+
+- **Agent Swarm** 是协作内核，解决"能协同"的基础问题
+- **Swarm Skills** 解决"协同经验可复用"的知识沉淀问题
+- **Swarm Skills Hub** 解决"跨团队能力流通"的价值放大问题
+- **Swarm Skills 自演进** 解决"系统持续进化"的长期生命力问题
+自演进机制是这套体系中最具创新性的设计——它不是让用户手动维护技能库，而是通过**轨迹自动发现**模式，将实战中涌现的协作规律自动提取为可复用的 Swarm Skill，形成越用越强的正向飞轮。
+
+### 3. HOTS vs HITS：人机协作的两极
+HOTS（Human on the Swarm）和 HITS（Human in the Swarm）代表了人参与多 Agent 系统的两种截然不同的哲学：
+
+- **HOTS** 保留了人类的主体性和全局视角，适合高不确定性的战略决策场景
+- **HITS** 将人类嵌入协作流程，适合需要人类直觉和判断力的创意探索场景
+这种二分法为实际落地提供了清晰的选择框架：是想让 AI 团队做执行、人类做决策（→ HOTS），还是想让人类和 AI 共同参与执行过程（→ HITS）。
+
+### 4. Benchmark 数据的意义
+PinchBench 94.2% SOTA 配合 token 消耗降低 34.8%，说明多 Agent 协作不仅没有因为协作开销而降低效率，反而通过**合理的角色分工和模型路由**实现了更好的效果。这与单 Agent 时代"更大模型=更好效果"的思路形成鲜明对比。
+
+## 实践启示
+### 何时考虑引入 JiuwenSwarm
+- 任务涉及**多个领域或多个专业角色**的协同（如医疗联合会诊、复杂软件交付）
+- 需要**跨模型路由**以充分利用不同模型的优势
+- 团队积累了大量**可复用的协作 SOP**，希望将其固化为可分享的技能资产
+- 项目需要**长期演进能力**，而非一次性解决方案
+
+### 如何从 Harness Engineering 过渡到 Coordination Engineering
+对于已有 Harness Engineering 基础的团队，过渡路径可以是： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+
+1. **先单 Agent 跑通**：确保每个角色 Agent 在 Harness 层面已经过优化 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+2. **识别协作瓶颈**：哪些任务因为"单 Agent 能力边界"而受限 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+3. **引入 Agent Swarm**：从两个角色开始尝试协作，观察通信和协商机制 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+4. **沉淀 Swarm Skills**：将成功的协作模式标准化为可复用技能 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+
+### 使用 Swarm Skills Hub 的策略
+- **从社区共享技能开始**：不要重复造轮子，先在 Hub 中寻找场景匹配的技能
+- **贡献打磨过的技能**：团队验证有效的协作模式是高质量的技能来源
+- **关注自演进信号**：当系统开始自动推荐新的 Swarm Skill 时，说明实战数据在积累
+
+## SwarmFlow — 从"能协作"到"稳稳地干完"（2026-06 增量）
+
+openJiuwen 在 2026-06 开源 **SwarmFlow** —— 面向多智能体团队的**可控工作流编排方案**，把"团队怎么配合"从 Leader 临场判断升级为**系统稳定执行 + 自动追踪 + 可被复用**。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+
+**核心思路一句话：编排归系统，智能归 Agent。** SwarmFlow 增加的不是 Agent 数量，而是**协作的确定性**。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+
+### 三个绕不开的问题（复杂任务带来的考验）
+
+主流多 Agent 协作模式（Leader Agent 临场调度）在面对长链路、多分支任务时： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+
+1. **Leader 变成瓶颈**：每份中间结果都回 Leader，上下文被过程信息淹没 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+2. **过程不稳定**：同一任务跑两次可能走出两条不同路径 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+3. **执行不可靠**：谁先做、谁并行、什么时候汇总、失败怎么处理，即便提前写清楚仍依赖 Leader 临场发挥 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+
+### Swarm Skill 的两种形态
+
+**判定标准只有一个：编排能不能提前确定？** ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+
+| 形态 | 适用场景 | 协作方式 | workflow.py |
+|------|---------|---------|-------------|
+| **形态一**：不带脚本 | 多专家圆桌、方案评审、战略讨论 | 议程确定，但观点如何流动得在协作中自然发生 | 无 |
+| **形态二**：带脚本 | 论文分析、办公自动化、批量 PPT 生成 | 角色 + 阶段 + 交接都提前定好 | 固化编排 |
+
+**形态选择哲学**：编排是动态的用形态一保留开放协作；编排能提前确定的用形态二承接可执行编排。**确定性与开放性在同一套体系里各得其所。** ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+
+### 算子积木（Operator Library）
+
+SwarmFlow 提供一组算子作为积木，每个算子只管一件事，拼起来就能描述出复杂协作： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+
+| 算子 | 作用 | 备注 |
+|------|------|------|
+| **parallel** | 多个智能体一起跑、全部完成后统一汇总 | 适合多视角研判后合并 |
+| **pipeline** | 多个条目各自独立逐级流过、互不等待 | 适合批量逐条处理 |
+| **agents_session** | 有状态智能体在多轮协作中保留记忆 | 可"分身"一个副本做假设推演而不污染主线 |
+| **human** | 在关键环节插入人机节点 | 向人类要一条输入或一次审批 |
+| **budget** | 约束资源与额度消耗 | 把"会不会跑超"也纳入可控范围 |
+
+**一个动作一块积木，复杂协作由简单积木拼出来，无需从零设计编排逻辑。** ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+
+### 可视化：JiuwenSwarm TUI
+
+通过 `/swarmflows` 命令打开**实时交互式树状图**： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+
+- 上方展示**阶段进度**
+- 下方联动展示选中阶段里的 **Agent 状态**
+- 排查时下钻到单个 Agent，查看**提示词、输出结果、错误日志**
+
+### 三个真实落地场景
+
+| 场景 | 流程 | 价值点 |
+|------|------|--------|
+| **金融分析** | 用户上传流程图 → SwarmSkill Creator 直接生成 SwarmFlow → 数据采集清洗 → 5 维度并行分析 → 交叉验证 + 综合置信度 → 完整报告 | **整条 SwarmFlow 不用手动编排，由一张图直接生成** |
+| **技术调研 + 邮件** | 搜资料 → 整理素材 + 提取图片 → 分析核心问题/趋势/可讨论议题 → 生成结构清晰邮件并发送 | 避免步骤遗漏、口径变化、交付不一致 |
+| **200 页 PPT 稳定产出** | 阶段一规划章节分工 → 阶段二 10 章节**并行生成** → 阶段三合并汇总 | 既靠并行明显加速，又能稳定产出结构统一、风格一致的 200 页 |
+
+### SwarmSkill Creator（生成端）
+
+JiuwenSwarm 内置 SwarmSkill Creator，根据自然语言需求**自动判断该生成哪种形态**： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+
+- 默认生成不带脚本的 Swarm Skill（角色、协作规则、流程说明、约束）
+- 判断用户要工作流 → 生成仅含脚本的版本（最小 Skill.md + workflow.py）
+- 两者都要时支持生成完整协作规范 + 脚本的版本
+
+**用户不必先理解文件结构，也不必手写编排脚本，只要把目标说清楚。** ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+
+### Team 模式自动调用（调用端）
+
+用户不用分辨任务属于哪种形态，在 Team 模式下一句需求自动进入。系统判断任务形态： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+
+- 适合固定编排 → 进入 SwarmFlow
+- 更适合开放协作 → 用不带脚本的 Swarm Skill
+- 单个 Agent 够用 → 不额外启动多 Agent
+
+**这是 openJiuwen 想定义的可控协同工程新范式——让复杂协作在系统内部变得可控，让用户侧保持自然和简单。** ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+
+### 与自演进的衔接
+
+从生成工作流（可控）到自演进（越用越强），**沉淀、编排、演进三者环环相扣**，构成 Coordination Engineering 的完整闭环。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+
+## Jiuwen Symphony — 海量技能的"精准发现 + 稳定协同"（2026-06-17 增量）
+
+如果说 SwarmFlow 解决的是**多 Agent 团队怎么稳定配合**，那么 Jiuwen Symphony 解决的是更底层的问题：**单个 Agent 面对海量技能时怎么选得对、串得稳**。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+
+> 当一个 Agent 能调用的 Skill 从 5 个膨胀到 50 个，会发生什么？答案是：任务执行效果出现"断崖式下滑"——技能越多，Agent 反而越选不准。
+
+### 两个绕不开的核心难题
+
+- **选不准**：技能太多，上下文窗口装不下所有技能说明书，必然出现信息过载、上下文过长。改用语义检索查找相似技能，由于检索与任务执行相互独立，仍无法解决多意图、隐式意图这类需要推理的选择问题。
+- **用不好**：技能选对了，还需要精准编排。技能广场上的技能标准不统一，上一个技能的产出能否喂给下一个、谁先谁后、谁依赖谁，若每次让模型临场发挥，常常出现执行失败、流程中断等稳定性问题。
+
+### 双核心架构：检索用树，编排用图
+
+| 组件 | 数据结构 | 解决的问题 | 关键机制 |
+|------|---------|-----------|---------|
+| **技能检索** | 层次化技能树 | 选不准 | LLM 在树上按任务需求**逐步导航**，而非一次性读完全部技能 |
+| **技能编排** | 技能依赖图 | 用不好 | 基于能力指纹 + 双向搜索（向后扩展"下一步"+ 反向回溯"谁能补上"） |
+
+**技能检索设计要点**： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+
+- 把平铺的技能列表预先组织成层次化技能树，变成可逐层浏览的技能目录；
+- 检索机制被设计为面向 Agent 的**专用工具集**（递归能力树构建 / 分支探索 / 轻量预览 / 候选技能读取），而非执行前的一次性预处理；
+- 关键判断："**技能选择被真正融入了 Agent loop，而非检索与执行相互独立**"。
+
+**技能编排设计要点**： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+
+- **离线能力指纹**：覆盖技能的基础信息、输入输出产物、能力质量评估；
+- **动态词表归一**：把命名不一的同义字段（如 body / content / 正文）归一到规范词；
+- **依赖关系图**：节点是技能，边是"技能 A 的输出能否成为技能 B 的输入"，**作为结构化资产沉淀，可被反复读取、复用和演进**；
+- **运行时双向搜索**：种子技能 → 向后扩展 / 反向回溯 → 拼出真正接得上的技能组合。
+
+### SkillsBench 实测数据（Top-5 选择）
+
+| 方案 | 召回率 | 成功率 | 平均最大上下文 |
+|------|--------|--------|---------------|
+| 关闭检索 | 低 | 低 | ~82k tokens |
+| Embedding 检索 | 中 | 中 | 中 |
+| **Symphony 技能检索** | **0.741** | **0.615** | **~21.5k tokens** |
+
+Symphony 在 Top-5 选择上取得最佳效果，且把平均最大上下文从约 82k tokens 降到约 21.5k tokens（**降幅 ~74%**）。
+
+### 三个实战场景（独立可接力）
+
+**场景一：视频处理（仅使用技能检索）**——技能库膨胀到数千时，Agent 通过技能目录逐步探索"视频/音频处理"主分支 + "文本整理 / 报告生成"辅助分支，最终覆盖：视频读取与处理 / 音频转写 / 口头禅检测 / 停顿分析 / 关键片段整理 / 报告生成 / 备选兜底处理。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+
+**场景二：办公写作（仅使用技能编排）**——任务："英文博客截图翻译后整理成公众号文案并发邮件"。没有编排时 Agent 输出仍是图片无法串联；有编排后规划稳定路径：**图片翻译 → 文字识别（图片→可编辑文本）→ 文案撰写 → 邮件发送**，每步输出必须能喂入下一步。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+
+**场景三：出行规划（先检索后编排）**——两个核心组件联动的典型用例。
+
+启用方式：在 JiuwenSwarm 页面"配置信息-其他配置"打开"**技能交响乐**"开关。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+
+### Symphony 与 SwarmFlow 的层次关系
+
+| 维度 | SwarmFlow（团队层） | Symphony（能力层） |
+|------|-------------------|------------------|
+| 抽象对象 | 多个 Agent 角色 | 多个 Skill |
+| 核心数据结构 | 工作流编排图（含阶段 / 交接 / 并行） | 技能依赖图（输入输出衔接） |
+| 解决的问题 | 团队怎么稳定配合 | 单 Agent 怎么从海量技能里选对 + 串稳 |
+| 决策权 | 编排归系统、智能归 Agent | 检索归 LLM（融入 Agent loop）、编排归图结构 |
+
+**关键洞察**：SwarmFlow 是"团队怎么配合"，Symphony 是"个人怎么打仗"。两者在 openJiuwen 体系里形成 **Agent 内部能力编排（Symphony） + Agent 之间协同（SwarmFlow）** 的完整双层架构。
+
+### 与"动态能力分发"行业趋势的对照
+
+openJiuwen 的判断与行业共识一致：**模型能力在增强，但系统能力没有同步增长**： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+
+- 模型可以理解复杂需求，却常常无法稳定调用外部能力；
+- 工具越来越多，却难以被高质量地检索和复用；
+- 流程越来越复杂，却缺乏统一的技能组织方式。
+
+Symphony 把 skill 当作"系统资产"来管理，而不只是提示词里附带的一段工具说明。这与 Anthropic MCP、OpenAI Codex 等的行业探索方向一致，但 Symphony 的差异点在于**双核心（树检索 + 图编排）同时落地**，且给出了 SkillsBench 上的量化收益（82k → 21.5k tokens 上下文降幅）。
+
+### 5 条独到判断
+
+1. **"选不准 + 用不好"是技能规模化的两大死结**，分开解决都不彻底——必须"检索 + 编排"双核心同时设计。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+2. **检索要融入 Agent loop，而不是执行前一次性预处理**。否则多意图 / 隐式意图这种需要推理的选择问题永远解不掉。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+3. **依赖图作为"结构化资产"沉淀**比每次临场推理更有价值——图可以"反复读取、复用、演进"，符合"长期资产 > 一次性推理"的工程哲学。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+4. **能力指纹 + 动态词表归一**是图能起作用的前提，否则"同名不同义 / 同义不同名"会让依赖关系失真。这是从 RAG / Schema 工程借来的关键技巧。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+5. **失败可局部修复**——沿图结构定位失败节点，就近替换或修补，不必整条链路推倒重跑。这把"局部性"思想从系统架构层（cache locality）推到了 Agent 编排层。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+
+### 3 条实践启示
+
+1. **技能数量超过 10-20 个就该考虑检索机制**，而非等"出问题再修"。Embedding 检索是过渡方案，**树检索 + Agent loop 集成**才是规模化终态。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+2. **依赖关系图应该离线构建 + 在线查询**，避免每次编排都做语义匹配——性能与稳定性双赢。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+3. **组合可靠 / 协同可解释 / 失败可局部修复**是判断"编排系统是否成熟"的三个硬指标，比"功能丰富"更重要。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+
+## 相关实体
+- [Agent Development Crawl Walk Run Crewai Iterative](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-development-crawl-walk-run-crewai-iterative.md)
+- [Agent Orchestration](ch01/102-agent-orchestration.html)（AWS — 多 Agent 编排对照）
+- [Meta Skill Skill Orchestration Opensquilla Jay](https://github.com/QianJinGuo/wiki-public/blob/main/entities/meta-skill-skill-orchestration-opensquilla-jay.md)（笨小葱 — 单 Skill 编排对照）
+- [Ai Agent Tool Count Trap](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-tool-count-trap.md)（execute_code 算子的极简设计同源思想）
+- [Agentic Design System From Chatbot To Orchestration](ch01/005-agentic-design-system-from-chatbot-to-orchestration.html)
+
+## 3rd Source 原文存档
+→ [openJiuwen 开源 Jiuwen Symphony 技能编排与分发系统 — CSDN 2026-06-17](https://mp.weixin.qq.com/s/l7219b4sFVsrxzMFZwiv-Q)
+
+## 2nd Source 原文存档
+→ [openJiuwen开源SwarmFlow — AI技术立文 2026-06-12](https://mp.weixin.qq.com/s/phRUNiBQonR-22DRKFvLZA)
+
+→ [原文存档](https://asymco.com/2026/05/11/the-great-memory-panic-of-2026/)
+
+### HOTS/HITS 选择指南
+| 场景 | 推荐模式 | 理由 |
+|------|---------|------|
+| 战略决策支持 | HOTS | 需要人类把握全局，AI 做信息处理和方案生成 |
+| 创意探索/头脑风暴 | HITS | 需要人类的直觉和灵感，与 AI 共同推演 |
+| 标准化流程执行 | HOTS | AI 团队负责执行，人只在异常时介入 |
+| 游戏/沉浸式体验 | HITS | 体验的核心是参与感，而非结果优化 |
+---
+→ [原文存档](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)
+## 4th Source — ScienceDiscovery AI 科研工作台（应用：BiomniBench-DA SOTA）
+
+**ScienceDiscovery** 是基于 Agent OS（JiuwenSwarm）开发的一站式 AI 科研工作台，解决科研场景两大痛点：工具碎片化（文献阅读/假设/代码/实验/调参频繁切换平台）与科研幻觉（大模型长链条任务易文献引用/因果推导/实验流程造假）。在权威生物医学智能体基准 **BiomniBench-DA** 上验证达业界 SOTA，成功应用于纳米抗体药物设计。
+
+- 互补角度：1) JiuwenSwarm 作为 Agent OS 在垂直科研领域的落地案例；2) BiomniBench-DA 生物医学智能体基准成为 openJiuwen 生态的评估锚点；3) 「零科研幻觉」诉求把 JiuwenSwarm 的多 Agent 协作与专用工具编排能力绑定到科学发现场景。
+
+→ [ScienceDiscovery 原文存档](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651050586&idx=2&sn=005d605a168bfbea6afdb2136fe639fe)
+
+---
+
+## Ch08.011 AI Agent Memory Systems
+
+> 📊 Level ⭐⭐⭐⭐ | 16.1KB | `entities/ai-agent-memory-systems.md`
+
+> 来源：[原文存档](https://memory.cobanov.dev/)
+
+# How AI Agent Memory Works
+Language models forget the moment they finish replying. Memory is everything the system around them does to make that not matter. This essay walks through the ideas one at a time, with something to touch in every section.
+**Source**: [raw article](https://memory.cobanov.dev/) | **Review**: value=8 confidence=7
+
+## 核心要点
+- AI agent memory 是一个循环系统：接收消息 → 编码 → 检索相似记忆 → 组装 prompt → 生成响应 → 决定是否记住新信息
+- 四种记忆类型：Episodic（事件）、Semantic（事实）、Procedural（技能）、Working（当前工作区）
+- 向量检索是语义搜索的基础，通过 cosine similarity 找到最相关的记忆片段
+- 记忆 governance（PII 过滤、时间有效性、超额标记）是区分 demo 与生产系统的关键
+- Multi-agent memory 是权限拓扑问题，而非简单的存储扩展
+- 生产系统需要分离读写路径、背景 worker 处理慢操作、多租户隔离、延迟预算管理
+→ [原文存档](https://memory.cobanov.dev/)
+
+## 相关实体
+> [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-model-research-latest-directions.md)
+
+- [memory agent systems cobanov](https://github.com/QianJinGuo/wiki-public/blob/main/entities/memory-agent-systems-cobanov.md)
+- [AI Agent 记忆系统架构](ch04/117-how-ai-agent-memory-works.html)
+- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学](https://github.com/QianJinGuo/wiki-public/blob/main/entities/when-ai-agents-learn-to-forget-amazon-bedrock-agentcore-memory-philosophy.md)
+- [Hermes Agent 记忆系统 vs OpenClaw 记忆观](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-memory-system.md)
+- [深度拆解 Hermes Agent 记忆系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-memory-system-openclaw-comparison.md)
+- [Agent Memory 架构本质](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture.md)
+
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/multi-agent-coordination.md)
+## 深度分析
+### 记忆的本质是循环，而非存储
+Cobanov 的核心论点是"Language models forget the moment they finish replying"——这一定义将记忆问题从"存储"重新框架为"循环"。传统开发者倾向于将 memory 理解为 database（一种持久化存储），但实际上 memory 是一个持续运转的处理管道：每个用户消息触发一次完整的检索-组装-生成-写入循环。
+这一框架的重要推论是：记忆系统的性能不仅取决于存储层（vector DB 的查询速度），还取决于整个循环中每一个环节的效率——查询重写是否准确、embedding 模型是否适配领域、reranker 是否能平衡相关性与新鲜度。任何一个环节的瓶颈都会成为整个记忆系统的瓶颈。Memory is a lifecycle problem: write, age, supersede, redact, forget，而非简单的 CRUD 操作。
+
+### 四种记忆类型的认知科学映射
+Episodic / Semantic / Procedural / Working 的四分法直接借鉴自认知科学，每种类型对应不同的认知功能：
+
+- **Episodic memory**：时间有序的事件日志，回答"我们上次谈了什么"。检索策略以时间 recency 为主，但也可以按日期范围或主题查询。实现上，每轮对话结束后生成一个短摘要并写入 vector DB，下一轮对话时通过 embedding 相似度召回 top-3~5 条。
+- **Semantic memory**：结构化的事实和关系，回答"用户知道什么"。通常通过知识图谱实现，支持多跳推理（如"用户工作的公司位于哪个城市"）。图谱的边代表关系类型（works_at、lives_in、prefers），节点代表实体。
+- **Procedural memory**：学会的技能和工具使用，回答"agent 能做什么"。这决定了 agent 的工具调用模式和错误处理策略，而非关于用户的事实。实现上通常是 prompt 或 policy 文件中的规则集。
+- **Working memory**：当前的 scratchpad，回答"现在正在处理什么"。这决定了模型的"注意力焦点"，是唯一完全位于 in-prompt 的记忆类型。其容量受限于 context window 大小。
+四者的协同工作机制是：访客走到博物馆 agent 说"Tell me more about that Refik piece you mentioned earlier"时，episodic 找到之前聊过 Refik 的记录 → semantic 从 catalog 拉取该作品的完整描述 → procedural 触发 artwork_detail 工具获取实时数据 → working 将所有检索结果和当前消息一并放入 context，LLM 在此基础上作答。四个 store 对用户是"无感"的，但每个 store 有不同的读写规则和检索策略。
+
+### 向量检索的几何直觉与局限
+Embedding 将文本映射到高维向量空间（通常 1536-3072 维），相似语义的内容在该空间中距离较近。Cosine similarity 是衡量相似度的标准方法，因为它对向量长度不敏感。HyDE（Hypothetical Document Embeddings）的核心洞察是：问题和答案往往是不同"形状"的——直接 embedding 问题可能找不到包含答案的文档，因为答案的表述方式与问题不同。HyDE 先让 LLM 生成一个假设性答案，再 embedding 那个答案，找到形状相似的文档。这一技巧在实践中能将检索召回率提升显著。
+然而，embedding 模型的选择直接影响检索质量——通用 embedding 在垂直领域（如医疗、法律）可能表现不佳，需要 fine-tuned domain-specific embedding。此外，embedding 模型一旦更换，旧存储的所有向量都需要重新计算，这是一个被经常低估的运维成本。
+
+### 读写分离与治理门
+Memory governance 是将 demo 级记忆系统推向生产的关键。"Naive append"会导致 PII 泄露（credit card number 进入记忆存储）和矛盾（用户搬家后，新旧两个地址都存在，agent 不知道哪个是当前的）。"Naive overwrite"丢失时间上下文，无法回答"用户以前住在哪里"的问题。Governed 写入则维护了完整的时间线：标记旧事实为 superseded，保留用于时序推理，同时通过 PII filter 阻止敏感信息进入存储。
+这一设计的实现要求是：写入路径必须经过一个 governance gate，该 gate 负责 PII 检测（正则或模型）、时间有效性标注（valid_from / valid_until）和矛盾检测（发现新事实与旧事实冲突时，标记旧事实为 superseded 而非删除）。读取路径则需要在组装 prompt 之前应用时间过滤器（如"只返回当前有效的事实"）。
+
+### Multi-agent Memory：权限拓扑而非存储扩展
+当记忆从单个 agent 扩展到多个 agent 时，问题从"如何存储"变成"谁能看到什么"。Shared memory 不再是单一向量数据库，而是变成了一个权限图：Researcher agent 的研究笔记默认是 private（不需要广播到项目频道），Planner 的决策记录可能需要 shared（因为其他 agent 需要知道计划上下文），而用户偏好（如饮食禁忌）应该是 User-profile scoped（只对当前用户可见）。
+六种失败模式揭示了 shared memory 的核心风险：Cross-user leakage（研究笔记中的用户偏好泄露给其他租户）、Over-sharing（过多共享导致噪声）、Poition propagation（错误信息通过共享记忆扩散）、Conflicting decisions（不同 agent 基于不同版本的记忆做出矛盾决策）、Stale playbook（共享的决策规则过时但未被更新）、Attribution loss（无法追溯某条记忆是谁在什么上下文中写入的）。
+
+### 生产系统架构：读写路径分离与延迟预算
+Reference architecture 将系统分为两条路径：Agent runtime 在 request path 上（必须低延迟），Memory service 作为 side-quest（允许异步处理）。背景 worker 负责慢操作：embedding 计算、摘要生成、re-embedding 过时记忆、decay 策略执行。这些操作如果放在 request path 上，会直接增加用户感知延迟。
+Latency budget 分析显示 p95 目标 800ms 中，retrieval 占用约 495ms（Query rewrite 80ms + Dense search 60ms + BM25 30ms + Graph walk 50ms + Reranker 250ms + Pack+send 25ms）。Reranker 是最大的单一瓶颈（250ms），这解释了为什么许多系统在 production 中跳过 reranker 或使用轻量级 reranker——用一点点相关性损失换取显著延迟改善。
+
+## 实践启示
+### 对 AI 应用开发者
+1. **从四种记忆类型出发设计架构**：在设计新的 agent memory 时，先明确需要支持哪种记忆类型。简单的个人助手只需要 episodic + semantic；复杂的 multi-agent 系统需要额外考虑 procedural（工具策略）和共享 memory 的权限拓扑。
+2. **Embedding 模型选型决定检索质量上限**：不要默认使用 OpenAI 的 ada-002 或 text-embedding-3-large。花时间在具体垂直领域评估 embedding 质量——医疗场景用 PubMedBERT，法律场景用 LegalBERT，可能比通用 embedding 好很多。同时建立 embedding 模型版本管理策略，以便在未来模型升级时重新计算所有历史向量。
+3. **HyDE + RRF 是 production retrieval 的标配组合**：HyDE 处理 query/answer shape mismatch 问题，RRF（Reciprocal Rank Fusion）融合 dense/sparse/graph 三种检索结果。这两者一起使用可以将召回率提升 20-30%，而实现成本相对可控。
+4. **永远不要跳过"是否需要检索"的判断**：对于"Can you translate hello to Japanese"这类不需要记忆的请求，调用 vector search 是纯粹的浪费。在 retrieval pipeline 入口增加"need detection"步骤（简单的分类模型或规则），可以显著降低无用检索的延迟和成本。
+
+### 对安全与隐私工程师
+1. **PII governance 必须在写入路径而非读取路径**：在读取时过滤 PII 意味着敏感信息已经进入了存储，风险暴露面已经形成。正确的做法是在写入路径上用正则匹配（如 `\b\d{4}-\d{4}-\d{4}-\d{4}\b` 匹配信用卡号）和/或专用 PII 检测模型（如 Microsoft Presidio）拦截敏感信息。
+2. **多租户隔离是 multi-agent memory 的生死线**：每个租户的记忆必须严格隔离。实现上建议在 namespace per tenant 和 single collection + payload filter 之间做出选择——前者隔离严格但成本高，后者成本低但存在隔离失效的风险。对于高价值客户或有合规要求的场景，namespace per tenant 是值得的。
+3. **Deletion lineage 是审计合规的基础**：GDPR 的"被遗忘权"要求系统能够删除特定用户的所有记忆。但简单的物理删除（从 vector DB 中移除对应向量）可能不够——该记忆可能已经被用于生成 response 或写入其他 agent 的 shared memory。因此 deletion 操作本身应该是一个 audit event，触发 propagate 流程到所有衍生索引和共享存储。
+4. **Cross-user leakage 的测试用例**：在 memory 系统上线前，必须设计覆盖以下场景的测试：租户 A 的研究笔记中的用户偏好信息，是否会出现在租户 B 的 agent 响应中？这是最常见的 memory 相关安全漏洞，也是最难通过单元测试发现的——需要专门的 integration test 环境。
+
+### 对平台工程师
+1. **热/温/冷三层存储是 cost-efficiency 的关键**：并非所有记忆都需要 vector search 的计算成本。Top facts（活跃用户/项目的核心信息）放在 Redis 或内存 KV 中，每轮都读取；Recent episodes（近期对话）放在 vector DB 中，按需检索；Archived sessions（历史日志）放在 S3 中，仅用于回填或审计。三层架构可以将热数据的检索延迟降低一个数量级，同时将存储成本降低 70-80%。
+2. **Memory API 的最小表面设计**：生产系统的 memory API 只需要三个端点：`POST/memory/events`（追加原始事件）、`POST/memory/search`（混合检索，服务器端强制 scope 过滤）、`DELETE/memory/{id}`（遗忘，propagate 到衍生索引）。不要在 API 层面暴露过多的内部实现细节（如"更新某条记忆的 embedding"），这会破坏封装性并增加安全风险。
+3. **Embedding 模型更换的运维流程**：每当 embedding 模型更换时，所有历史存储的向量都需要重新计算。这不是简单的 batch job——它需要在重新计算期间暂停写入（否则新模型生成的向量和旧向量混在一起无法检索），或者采用双写策略（新旧向量并行写入，切换完成后清理旧向量）。提前设计好这个流程，避免在凌晨 3 点手忙脚乱。
+4. **Background worker 的优先级队列设计**：embedding 计算、摘要生成和 re-embedding 是不同的作业类型，应该使用不同的优先级队列。高优先级队列处理用户等待的同步检索，中优先级处理需要尽快完成的写入后任务（如 summary），低优先级队列处理非紧急的维护作业（如过时记忆的 re-embedding）。
+
+### 对产品经理
+1. **"记住一切"是错误的产品假设**：用户并不总是希望 agent 记住所有对话历史。有些对话是临时性的（"帮我查一下这个航班"），有些是敏感但不相关的（医疗信息不应与产品偏好混淆）。产品设计应该让用户能够选择性地"标记重要记忆"和"遗忘临时对话"，而不是默认将所有内容都写入长期记忆。
+2. **Memory 的"忘记"功能是信任建立的关键**：在用户界面中明确显示"agent 记得什么"并允许用户删除特定记忆，能够显著提高用户对 AI 产品的信任度。这不仅是隐私合规的要求（GDPR 等），也是产品竞争力的体现——用户更愿意使用一个他们能够控制的记忆系统。
+3. **Multi-agent memory 的 shared/private 默认为 private**：如果 agent 之间需要共享记忆，那应该是一个有意识的显式操作（类似"发布到项目"），而不是默认行为。默认共享会导致信息噪音和隐私泄露，而默认私有则要求开发者主动考虑共享场景——这是一个更安全的默认选择。
+4. **Memory 系统的可观测性指标**：上线 memory 系统前，必须建立以下 metrics：检索召回率（通过用户反馈或 ground truth 数据集评估）、PII 泄露次数（每次 governance gate 拦截都是一次告警）、平均检索延迟（p50/p95/p99）、记忆更新成功率（写入路径的 SLA）。这些指标应该在 dashboard 上实时展示，并在异常时触发告警。
+
+---
+
+## Ch08.012 How Grab is Using AI Agents to Boost Team Productivity
+
+> 📊 Level ⭐⭐⭐⭐ | 13.8KB | `entities/how-grab-is-using-ai-agents-to-boost-team-productivity.md`
+
+> 来源：[原文存档](https://blog.bytebytego.com/p/how-grab-is-using-ai-agents-to-boost)（ByteByteGo, 2026-05-18）
+
+## 核心要点
+- **问题背景**：Grab ADW（Analytics Data Warehouse）团队管理 15,000+ 张表，每月约 1000 人查询，最优秀工程师每周花 2 天回答同事的临时问题
+- **核心架构**：Classifier + Data Agent + Code Search Agent + On-call Agent + Summarizer 的多 Agent 协作系统
+- **读写分离**：Read-only 调查路径（4 个 Agent 并行协作）和 Write Enhancement 路径（单 Agent + 人工审核 gate）有根本不同的风险模型
+- **四大生产挑战**：①上下文累积导致 token 爆炸 ②工具定义过于冗余 ③PII/危险操作安全风险 ④用户信任建立
+- **核心洞察**：多 Agent 系统里，生产 Hardening 工作量远大于 Agent 开发本身；反馈回路的工程化是系统持续进化的关键
+
+## 技术洞察
+### 问题结构化：一致性比差异性更值钱
+Grab ADW 团队的核心观察是：**问题的答案各不相同，但回答的过程高度一致**。工程师收到的问题每次不同（"为什么这个 ID 是乱码？"、"能给这个表加一列吗？"），但调查过程都是：搜索数据目录 → 追踪数据血缘 → 验证 SQL → 检查日志。这个一致性是自动化的前提信号——只要调查过程可重复，就能自动化。
+这给我们的启发是：在评估一个工作是否适合 Agent 化时，重要的不是问题看起来多复杂，而是**解决过程的变异性有多高**。变异性低（即使问题本身复杂），Agent 化的成功概率高；变异性高（即使单个问题简单），Agent 化难度大。
+
+### 大脑与手的分离
+Grab 的设计哲学是"Decoupling the Brain from the Hands"：
+
+- **Brain** = LLM，负责推理、决策、生成
+- **Hands** = Specialized Agents 和 Tools，负责实际执行（查询、代码搜索、状态检查）
+这个分离的价值是**可调试性（Debuggability）**。当系统输出错误答案时，团队可以定位：问题是推理层（Brain 给出了错误判断）还是执行层（特定 Tool 返回了错误信息）。这个定位能力在单一大模型系统里往往很难做到。
+
+### 专业化 Agent vs 单体 Agent 的权衡
+| 维度 | 单体 Agent | 专业化 Multi-Agent |
+|------|-----------|-------------------|
+| 部署复杂度 | 低（一个模型调用） | 高（多个 Agent 协调） |
+| 可调试性 | 低（黑盒） | 高（每个 Agent 职责清晰） |
+| 可维护性 | 高（改一处） | 低（改一处可能影响协调） |
+| 推理延迟 | 低 | 高（串行执行） |
+| 能力上限 | 受单模型能力限制 | 可叠加各 Agent 专长 |
+Grab 明确选择了专业化路线：**当你要替代一个需要几小时的人工调查时，多花几分钟获取精确答案仍然massive improvement**。这个取舍逻辑值得借鉴——Agent 化系统的延迟代价只有在它相对于基线没有显著优势时才成问题。
+
+### 技术栈选择
+- **FastAPI**：接收传入请求，管理 HTTP 层
+- **LangGraph**：管理多 Agent 协作的有状态逻辑（循环、条件分支、任务交接）
+- **Redis**：缓存和实时 Session 管理
+- **PostgreSQL**：对话历史和 Agent 元数据的持久化存储
+- **Hubble**：集中式元数据和数据目录
+- **Genchi**：数据质量可观测性平台（强制数据契约）
+- **Lighthouse**：Pipeline 执行状态和健康追踪
+注意 LangGraph 在这里的作用不是简单的工作流引擎，而是**状态机**——它处理真实的 Agent 循环、context switching 和任务交接，这些在 LangGraph 之前需要大量手写状态管理代码。
+
+## 深度分析
+### Agent 间 Context 管理的工程挑战
+多 Agent 系统的 token 累积问题比单 Agent 更严重：每个 Agent 的输出都是下一个 Agent 输入的一部分，context 在 Agent 间传递时会膨胀。 Grab 的解法是**层级式 context 压缩**：
+
+- **tiktoken 实时追踪**：每条消息都记录 token 计数，接近限制时自动摘要早期消息
+- **Tool 输出剪枝**：在将结果传递给下一个 Agent 前，用小模型提取相关片段和描述，而非传递完整输出
+- **Orchestrator 中介**：在每个 Agent 间加入清理和压缩逻辑
+这里有一个重要的架构洞察：**上下文管理不是 LLM 的责任，是基础设施的责任**。如果把所有 context 管理工作交给 LLM 判断，LLM 会消耗额外的推理能力处理自己的 context，而且判断质量不稳定。让基础设施层处理 context 压缩，LLM 只处理它最擅长的事情（推理和生成），这是合理的分工。
+
+### 工具设计的工程价值
+大多数 Agent 系统的工具设计是事后的——先有工具，再给工具写描述。但 Grab 的经验表明：**工具设计是 Agent 系统性能的主要杠杆之一**。
+初始设计有 30+ 工具，每个工具的描述都像通用 API 文档一样冗长。由于工具描述是 Agent prompt 的一部分，每个推理调用都要处理全部 30+ 工具的描述文本拖累了速度和输出质量。
+改进方案：Aggressive Simplification——只包含决策所需的工具描述部分，截断冗余输出，让每个工具的定义简洁可操作。结果是系统响应性显著提升。
+这个教训是：**工具数量和工具质量之间存在负相关**，特别是在 LLM 推理能力有限的情况下。一个设计良好的小工具集比一个臃肿的工具集更有价值。
+
+### 安全四层防御的纵深设计
+Grab 的多 Agent 系统接入数据库和代码生成能力，存在真实风险。他们的 4 层防御体系值得详细分析：
+**Layer 1 - Input Classification**：Classifier Agent 在执行前检测 PII 请求和超出范围查询。这个 layer 解决"问的问题本身是否合法"——而不是"答案对不对"。
+**Layer 2 - SQL Validation**：每个查询在被执行前检查：是否访问了 PII 列？是否包含危险操作（DELETE/DROP）？是否缺少分区过滤器（这会导致全表扫描）？Schema 合法性验证。这个 layer 解决"执行的查询是否危险"。
+**Layer 3 - Timeout Protection**：所有数据库查询都有严格执行时间限制，防止失控操作。
+**Layer 4 - Enhancement Controls**：Enhancement Agent 不能直接提交到主分支，所有变更需要人工审核，所有代码先在 staging 环境运行。这个 layer 解决"变更是否经过适当授权"。
+四层防御的逻辑是**每层的盲点由其他层覆盖**。Input Classification 可能有漏网的 PII 请求，但 SQL Validation 会拦住访问 PII 列的操作。每个 layer 独立负责一个维度的安全，但共同构成纵深防御。
+
+### 信任建立的动态调整
+最初设计：所有 AI 生成的回答在工程师审核前不发布。这安全但慢——在高峰期问题堆积，无人审核。
+
+改进后的设计：**立即发布答案，但标注为"未经审核"**。用户获得快速响应，同时知道答案的置信状态，可以选择性地进行人工复核。
+这个设计演变的深层逻辑是：信任不是静态的，是**随着系统性能证据积累动态扩展的**。系统上线初期，信任资本有限，高的审核率是合理的；随着系统性能数据积累（rejection rate 低，user feedback 好），信任边界可以扩展，释放人工审核资源用于更高价值的 work。
+这个模式对所有 AI Agent 系统有普遍参考价值：不要在系统上线初期就追求"无人化"，也不要永远停留在"全人工审核"阶段——建立性能指标驱动的动态审核策略。
+
+## 实践启示
+### 识别 Agent 化机会的第一步：画出调查路径
+不是所有重复工作都适合 Agent 化。第一步是把工作过程的调查路径画出来（不需要写代码，用白板或文档）。如果路径是**高度一致的**（每次都是：搜索 → 追踪 → 验证 → 检查日志），即使问题本身看起来千变万化，Agent 化成功概率高。如果路径本身不确定（不同问题需要完全不同的调查方式），Agent 化复杂度会大幅上升。
+
+### 从"帮手"到"主要工作者"的渐进策略
+不要在初期就设定"AI Agent 替代人工"的目标，这会造成政治阻力。更好的叙事是：**让最好的工程师把时间从回答问题中解放出来，专注于只有人才能做的事**。这个叙事让干系人更容易接受系统上线初期需要人工复核的设计，因为最终目标不是"消灭人工"而是"人工用在更有价值的地方"。
+
+### 生产 Hardening 的优先级排序
+当一个 Agent 原型在 demo 效果很好时，下一步不是上线，而是问"上线后会出什么问题"。Grab 发现的 4 类问题（context 爆炸、工具冗余、安全风险、信任建立）是有普遍性的。
+建议的上线前 Hardening 检查清单：
+
+1. **Context 压力测试**：模拟长会话（20+ 轮次），观察 token 累积对输出质量的影响
+2. **工具边界测试**：用边界条件调用（空输入、超大输入、恶意输入），观察 Agent 的错误处理
+3. **安全边界测试**：尝试注入 PII 请求、危险 SQL、越权操作，验证每层防御是否有效
+4. **信任校准测试**：让真实用户使用系统，收集第一批反馈，不急于扩大 AI 的自主范围
+
+### 反馈回路的工程化
+很多 AI Agent 系统在第一版上线后性能冻结——因为没有机制让系统从 production 使用中学习。Grab 的 annotation 系统值得学习：
+
+- **随机抽样测试**：随机选择 annotation 作为离线测试用例，确保系统在真实 failure 上测试
+- **模式分析**：问"Classifier 是否持续路由到错误的 Agent？"——这是系统性问题，不是单次失误
+- **质量指标趋势**：跟踪 rejection rate 的时间序列——突然上升意味着某处发生了变化
+- **定向改进**：基于分析结果，改进 Agent prompt、增强 Guardrail、为特定查询类型增加示例
+这个反馈回路的设计关键：**annotation 不只是记录，而是驱动改进的输入**。如果 annotation 只存在于数据库里没有人分析，它的价值接近于零。
+
+### 写操作 Agent 的人工 Gate 设计
+对于改变 production 数据的 Agent 操作（Enhancement Pathway），Grab 的设计是**半自动化**：AI 生成变更，但每一步都需要人工审核和批准。这个设计值得推广。
+关键原则：AI 生成的内容接触 production 的 gate 数量取决于内容的风险等级：
+
+- 读操作（调查、查询）→ 轻量监督或无监督
+- 写操作（数据变更、代码修改）→ 强制人工审核
+- 高风险写操作（删除数据、修改 schema）→ 强制多人审核 + staging 验证
+这个分层授权机制可以在任何企业 Agent 系统中复用。
+
+## 相关实体
+- [Baixing Ontoz Enterprise Ontology Multi Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/baixing-ontoz-enterprise-ontology-multi-agent.md)
+- [Dipg Ant Insurance Host Research Verify Offline Closed Loop](https://github.com/QianJinGuo/wiki-public/blob/main/entities/dipg-ant-insurance-host-research-verify-offline-closed-loop.md)
+- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/096-building-ai-agents-for-business-support-using-amazon-bedrock.html)
+- [Vercel Com How Superset Built The Ide For Ai Agents On Vercel](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vercel-com-how-superset-built-the-ide-for-ai-agents-on-vercel.md)
+- [Low Code Api Integration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/low-code-api-integration.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/multi-agent-coordination.md)
+
+→ [原文存档](https://blog.bytebytego.com/p/how-grab-is-using-ai-agents-to-boost)
+
+## 相关实体
+
+---
+
+## Ch08.013 Factory Missions
+
+> 📊 Level ⭐⭐⭐⭐ | 13.5KB | `entities/factory-missions-multi-agent-shipping.md`
+
+## 核心架构
+**三角色**：Orchestrator（规划/拆解/调度）+ Worker（单个 feature 实现）+ Validator（Scrutiny + User-Testing 两类）。
+**关键约束**：
+
+- Orchestrator **不参与实现细节调查**，避免累积过细上下文
+- Worker 用 **fresh context** 先写测试再实现，不做"完成"判断
+- Validator **不看实现代码也不看 worker trajectory**，只读 validation contract 和 git 成品
+
+## 五大可抄设计原则
+1. **角色责任明文化**：先写"不许做什么"
+2. **Validation contract 前置**：在写代码之前产出行为断言列表，生成 agent 和评估 agent 必须不同
+3. **结构化 handoff 取代记忆**：5 字段（completed/not_completed/commands_executed/issues_found/procedure_compliance）
+4. **写串行、读并行**：文件写入/commit/validator 评估严格串行；检索/调研可以并行
+5. **验证用不同模型**：GPT-5.3-Codex 检查 Sonnet 写的代码是结构性对抗设计
+
+## 多 Agent 通信 5 模式
+| 模式 | Missions 用了吗 |
+|------|--------------|
+| Delegation | ✅ |
+| Creator-Verifier | ✅ |
+| Broadcast | ✅ |
+| Negotiation | ✅ |
+| Direct Communication | ❌ 故意不用（避免 state fragmentation） |
+
+## Validation Contract
+在任何代码出现之前 orchestrator 产出行为断言列表。每条包含：行为描述 + 验证工具 + 证据要求。
+**效果**：21 个 fix features 占 61 个实现 features 的 34.4%，一轮验证从未通过——说明 validator 在做该做的事。
+
+## Token 效率
+Slack 克隆 mission：778.5M tokens，**96% cache 命中**（744.9M 是 cache read）。关键：共享状态文件在 mission 期间几乎只读，prefix cache 最大化复用。
+
+## 竞品对比
+| 系统 | State 位置 | 验证方式 |
+|------|-----------|---------|
+| Mission Control | git + 共享 markdown | Validation contract |
+| Agent Teams | 每个 teammate 对话窗口 | lead/peer 互检 |
+| Experts Mode | Team Lead plan | QA/Review 专家并行触发 |
+
+## Bitter Lesson 反驳
+为什么不会被下一代模型 obsolete：
+1. orchestration 是 prompt，不是状态机——模型变好 = 规划变好
+2. separation of concerns 让 model specialization 收益随模型分化而增加
+3. validation contract 为人类需求建模，不为某模型建模——契约本身稳定
+**"锁死在单一模型家族的系统永远被这家最弱的能力约束。"**
+
+## 来源
+- Luke Alvoeiro @ AI Engineer Europe（YouTube, 2026-05-06）
+- How Missions Work — Theo Luan, Factory（2026-04-10）：https://factory.ai/news/missions-architecture
+- Introducing Missions（2025-02-26，2026 数据更新版）：https://factory.ai/news/missions
+
+## 深度分析
+### 为什么 Validation Contract 是核心
+传统的 agent 系统中，验证往往后置——代码写完后跑测试，测试驱动开发（TDD）在人类工程师中是好的实践，但在 agent 系统中容易被绕过。Factory 的关键洞察是：**"Tests written after implementation don't catch bugs. They confirm decisions."**
+Validation contract 的设计把"正确性定义"从实现过程中剥离出来，强制在写第一行代码之前完成。这不只是流程约束，而是认知约束——它切断了实现细节回流到验收标准的路径。在 agent 系统中，这意味着 validator 的判断不会被实现者之前的推理路径所污染。
+
+### Self-Evaluation Bias 的系统性影响
+Agent 的 trajectory 是 append-only 的。模型会从自己之前的推理里寻求连贯性，而不是质疑它。一个写完代码的 agent 评估自己写的代码，几乎一定会偏向"合理化"而非"找问题"。
+这个 bias 不是通过"提高模型能力"能解决的——它需要结构性对抗：让不同的 agent、用不同的模型、在不同的上下文中做验证。Factory 的设计是把 Scrutiny Validator 和 User-Testing Validator 都放在这个位置上，而验证者看的不是实现过程，是 git 成品和 validation contract。
+
+### Token 效率的本质：共享状态即 Cache
+96% 的 cache 命中率不是优化技巧的结果，而是架构设计的自然产物。当所有 agent 读写同一组共享状态文件（validation-contract.md、features.json、services.yaml、AGENTS.md），这些文件的内容在 mission 期间几乎只读，prefix cache 自动最大化复用。
+这揭示了一个朴素的原则：**如果要高效复用 cache，文件结构的稳定性比文件内容的变化更重要**。与其优化单个文件的 token 密度，不如确保共享状态文件在整个 mission 生命周期内保持稳定。
+
+### 串行写的数学必然性
+Factory 给了明确的数学：如果每个 agent run 错误率 0.1%，100 步累计成功率 90%；如果并行让每步错误率涨到 1%，100 步累计成功率暴跌到 36%。长周期任务的正确性是复利。
+这个数字解释了为什么 Factory 坚持"写串行"——不是不要并行，而是**写操作不允许并行**。并行读可以提速，写操作并行会导致互相覆盖、重复劳动、架构决策不一致。协调成本会吃掉并行带来的速度收益。
+
+### 模型分化时代的编排哲学
+"锁死在单一模型家族的系统永远被这家最弱的能力约束"——这句话指向了 Factory 的核心设计意图：用 model-agnostic 的方式，让不同角色使用不同提供商的模型。GPT-5.3-Codex 验证 Sonnet 写的代码，是结构性对抗设计，不是 marketing。
+随着模型能力持续分化，Claude、GPT、Gemini、DeepSeek 各自在某些维度上有比较优势。"把最对的模型放到最对的角色"这个收益，会随模型分化程度增加而增加，而不是减少。
+
+## 相关实体
+- [Factory Missions Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/factory-missions-architecture.md)
+- [Rag技术框架的演进方向](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag技术框架的演进方向.md)
+- [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
+- [Wow Harness V3 Governance Protocol](https://github.com/QianJinGuo/wiki-public/blob/main/entities/wow-harness-v3-governance-protocol.md)
+- [Hermes Agent 12 Layer Full Configuration Guide](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-12-layer-full-configuration-guide.md)
+
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/amazon-cloudfront-deploy-guide-cloudfront-domain-multi-tenant-architecture/)
+
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/multi-agent-coordination.md)
+## 实践启示
+1. **在写代码之前先写验收标准**：Validation contract 应该描述行为，而不是实现细节。每条 assertion 包含：行为描述 + 验证工具 + 证据要求。生成 contract 的 agent 和评估 contract 的 agent 必须不同。
+2. **用结构化 handoff 取代对话记忆**：Worker 完成后填 5 字段（completed/not_completed/commands_executed/issues_found/procedure_compliance），下一个 worker 读这份文档而不是上一个的对话历史。共享状态文件在 mission 期间保持只读稳定。
+3. **写串行，读并行**：文件写入、commit、validator 评估必须严格串行；codebase 检索、文档调研可以并行。不要让并行写入同一个 codebase。
+4. **验证用不同模型**：哪怕只是换另一家提供商的中等规模模型，也能避开同家族训练数据 bias。刻意让验证和实现走不同提供商的模型。
+5. **最小操作单元是计划级再分配**：Mission Control 里，用户是 50 个 droid 的项目经理，不是工程师。介入话术是"Drop X feature and add Y instead"，而不是"在函数 Z 里改一行代码"。
+6. **编排逻辑写成 prompt，不要写成状态机**：700 行文本中，4 句话的修改就能让执行策略发生戏剧性变化。新模型出来时只需改几句 prompt，不需要重写状态机。
+7. **用 five-field handoff 约束 worker 行为**：Worker 不被允许做"这功能完成了"的判断——这是 validator 的事。Handoff 文档的结构本身就在强化这个约束。
+→ [原文存档](https://mp.weixin.qq.com/s/etiYTXpmVdYWgw6nA6vA7A)
+
+---
+
+## Ch08.014 Sub-Agent vs Agent Team 选型与编排原语
+
+> 📊 Level ⭐⭐⭐⭐ | 12.4KB | `entities/sub-agent-vs-agent-team-selection.md`
+
+## 概述
+Sub-Agent vs Agent Team 选型指南——核心判断准则：**按上下文边界设计，而不是按角色设计**。五种编排原语（Prompt Chaining / Routing / Parallelization / Orchestrator-Worker / Evaluator-Optimizer）。
+
+## 核心判断准则
+> 多智能体架构里，最先该判断的不是"要拆几个"，而是这些子任务之间是否共享同一段上下文。能干净切开的用 Sub-Agent，必须共享状态的才上 Agent Team。
+**Design around context boundaries, not roles.**
+工程三问：
+1. 这两件事，需不需要看到对方的中间过程？
+2. 这两件事，会不会因为对方做完了某一步就影响自己下一步？
+3. 交给同一个 Agent 一次性干，会不会更省心？
+如果答案偏向"是"，就别拆。
+
+## Sub-Agent vs Agent Team
+| 维度 | Sub-Agent | Agent Team | 
+|------|-----------|------------| 
+| 上下文 | 独立上下文 | 共享上下文 | 
+| 通信 | 必须经过父 Agent | Agent 之间直接对话 | 
+| 新 Agent | 不能再生新 Agent | 可以互相拉起 | 
+| 适用场景 | 隔离 + 压缩 + 并行 | 持续协作 + 共享状态 + 互相调头 | 
+**Sub-Agent 硬约束：**
+
+- 子 Agent 之间不能直接通信
+- 子 Agent 不能再生新 Agent
+- 所有流量必须经过父 Agent
+- 只返回最终输出，不带中间思考
+**Sub-Agent 三个价值：隔离 / 压缩 / 并行**
+**Agent Team 适合：** 做着做着会发现问题然后需要互相调头的任务（如软件项目：前端改接口后端要立刻知道）。成本远高于 Sub-Agent，需要共享状态层 + 通信协议 + Lead Agent 仲裁。
+**口诀：任务不互相依赖，就别上 team；任务必须互相依赖，就别用 sub。** 
+
+## 最大坑：按岗位拆而不是按上下文边界拆
+常见错误：Planner → Developer → Tester → Reviewer，按人类公司分工切。
+每次交接信息都在变薄：
+
+- Planner 知道"代码刚被重构过某个奇怪判断是有原因的"——没传到 Developer
+- Developer 做了临时取舍（"这次先不改 token 校验顺序因为影响下游 SSO"）——也没沉淀
+LLM 没有上下班、没有茶水间记忆，靠上下文吃饭。能拿到什么上下文，就只能基于什么上下文做事。
+
+## 五种编排原语
+| 原语 | 说明 | 典型场景 | 
+|------|------|---------| 
+| **Prompt Chaining** | A 做完给 B，B 做完给 C | 先抽取 → 再翻译 → 再润色 | 
+| **Routing** | 根据任务特征派给最合适的 Agent | 客服"识别意图再分流" | 
+| **Parallelization** | 互不依赖任务并行跑再汇总 | 代码审查多维度分析 | 
+| **Orchestrator–Worker** | orchestrator 拆/派/收，workers 各自干 | Sub-Agent 标准形态 | 
+| **Evaluator–Optimizer** | 先生成，再评估，再迭代 | 报告生成、代码补全自检 | 
+> 多 Agent 不是产品形态，是一组可组合的工作流原语。
+
+## Sub-Agent description 是路由信号
+```python 
+"security-reviewer": AgentDefinition( 
+    description="Find vulnerabilities and security risks",  # ← 这是路由信号 
+    prompt="You are a security expert.", 
+    ... 
+) 
+``` 
+description 不是注释，是路由信号。写得含糊，路由就含糊；边界清楚，分发也清楚。
+
+## 判断框架
+| 你在问的问题 | 该考虑的方向 | 
+|-------------|-------------| 
+| 能不能一个 Agent 干完？ | 能就先这样，别提前优化 | 
+| 子任务需不需要看到彼此中间过程？ | 不需要 → Sub-Agent；需要 → Agent Team | 
+| 子任务跑的时候要不要互相影响？ | 不要 → 并行 Sub-Agent；要 → Team | 
+| 是不是只想"看起来更高级"？ | 是 → 退回单 Agent，先把任务模型搞清楚 | 
+| 每步要不要严格按业务规则走？ | 要 → 加确定性中间层，不要硬塞给 team | 
+
+## 隐藏成本
+多 Agent 带来：编排逻辑维护成本 / Agent 间契约版本化 / 调试链路变长 / 上下文一致流转（信息差导致动作错）/ 治理成本翻倍。
+**当任务高度依赖，协调成本远大于收益，或上下文压根没法切干净时，单 Agent 反而最稳。**
+
+## 深度分析
+1. **Sub-Agent 本质是"上下文压缩隔离"而非任务分解**
+   许多资料将 Sub-Agent 描述为"把大任务拆小"，但更深层的逻辑是：**通过隔离上下文来压缩信息流复杂度**。每个 Sub-Agent 只看到自己需要的那段上下文，不是任务变小了，而是信息量被合理切分了。这一洞察解释了为什么强行让 Sub-Agent 之间互相传递中间结果会迅速失控——那等于在破坏隔离机制本身。
+2. **Agent Team 的协调成本被严重低估**
+   现有讨论集中在"共享状态层、仲裁机制"等技术成本，但更大的隐性成本是**契约稳定性**：当一个 Agent 的输出格式发生变化时，所有依赖它的其他 Agent 都需要同步调整，这形成了一种全链接的脆弱性。传统的微服务好歹有 API 版本管理，而 Agent Team 里的隐式契约完全靠"默契"维持。
+3. **"按岗位拆"错误的认知根源是拟人化**
+   Planner → Developer → Tester 的拆法本质上是在用人类组织的隐喻设计系统。但 LLM 没有固定的"下班时间"，它的上下文窗口就是它的工作记忆——强行模拟人类的岗位边界，只会制造不必要的上下文断裂点，而不是真正的职责分离。
+4. **Routing description 的模糊性是架构设计问题而非命名问题**
+   当 description 写得含糊时，根源往往不是措辞不够精准，而是**对任务边界本身就没有想清楚**。一个边界清晰的 Agent definition，其 description 自然精准；description 模糊是症状，任务边界不清晰才是病因。这个视角将代码层面的优化建议提升为了架构设计方法论。
+5. **编排原语的选择应该先于 Agent 类型选择**
+   现有资料通常先讨论"用 Sub-Agent 还是 Agent Team"，然后再带出编排原语。但实际上应该倒过来：**先确定用哪种编排原语（chain/route/parallel/orchestrator/evaluator）——这决定了信息流拓扑，然后才知道该选哪种 Agent 类型**。这是因为某些编排原语天然适配特定的 Agent 模式，比如 Orchestrator-Worker 基本就是 Sub-Agent 的标准形态，而 Evaluator-Optimizer 几乎必然需要 Agent Team 才能运作。
+
+## 实践启示
+1. **在写 Agent definition 前先画信息流拓扑图**
+   不要直接开始定义"security-reviewer"、"performance-optimizer"这些角色，而是先用箭头画出：信息从哪里进入，经过哪些转换节点，每个节点输出什么格式。只有在拓扑图上验证了信息流没有交叉或断裂之后，再把节点翻译成 Agent definition。这样可以提前发现"按岗位拆"的错误设计。
+2. **Sub-Agent 的 description 应由输出反推而非由角色正向定义**
+   常规思路是"这个 Agent 是什么角色 → 写对应的 description"，正确思路是"这个 Agent 需要让父 Agent 做出什么路由决策 → 反推 description 应该精确传达什么信号"。例如，"Find vulnerabilities"比"Security expert"更好，因为后者暗示的是角色标签，而前者明确表达了任务边界和输出预期。
+3. **为 Sub-Agent 设置明确的"拒绝继续"条件**
+   由于 Sub-Agent 不能直接通信，当它发现自己无法独立完成任务时，需要有明确的机制将控制权返还父 Agent。建议在 Agent definition 的 prompt 中显式声明：如果任务超出当前 Agent 能力边界或检测到需要其他 Agent 介入的情况，返回特定格式的"ESCALATE"信号而非尝试自行解决。这比依赖隐式的上下文判断更可靠。
+4. **评估是否需要 Agent Team 时，先做"协调成本实验"**
+   在正式引入 Agent Team 之前，先用以下实验估算协调成本：让两个独立 Sub-Agent 在完全隔离的情况下分别完成同一个任务的两个子环节，然后人工检查接口适配成本。如果发现人工适配成本已经很高，那么 Agent Team 的协调成本只会更高。这个实验成本极低，但能有效避免过度设计。
+5. **编排原语选型后，用日志追踪验证信息流是否符合预期**
+   多 Agent 系统的一个常见故障模式是：设计时选了 Parallelization（并行），但运行日志显示实际上是 Chaining（串行）——子任务在等待父 Agent 分发时引入了隐式的顺序依赖。通过在每个 Agent 的输入输出加上可读的流转标记（任务 ID、来源 Agent、目标 Agent、时间戳），可以低成本验证实际信息流是否匹配设计意图，而不是等线上出了问题再调试。
+
+## 相关
+- [Agent/Skills/Teams 架构演进与选型](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skills-teams-architecture-evolution-selection-guide.md)（阿里云飞樰，更全面的演进视角）
+- [Harness Engineering 系统梳理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-systematic-framework.md)
+- [AutoResearch 多 Agent 开发](https://github.com/QianJinGuo/wiki-public/blob/main/entities/autoresearch-multi-agent-software.md)
+
+## 相关实体
+>- [Sub-Agent vs Agent Team 选型指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sub-agent-vs-agent-team-selection-guide.md) — 五种编排原语 + 硬约束 + 判断准则（中文原文）
+>- [Hermes Agent vs OpenClaw 对比分析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-vs-openclaw-comparison.md)
+>- [CLI、MCP、API 选型：Agent 接入层决策指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cli-mcp-sdk-agent-tool-selection.md)
+
+- [OpenClaw 多智能体团队搭建实战经验](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-multi-agent-team-practice.md)
+- [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](ch04/392-openclaw-multi-agent-team-practice-v2.html)
+- [MiniMax Agent Team: Mavis (Owner-Worker-Verifier)](https://github.com/QianJinGuo/wiki-public/blob/main/entities/minimax-agent-team-mavis.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/wiki-master-map.md)
+
+---
+
+## Ch08.015 Oz Multi-Harness Cloud Agent Orchestration (Warp)
+
+> 📊 Level ⭐⭐⭐⭐ | 12.0KB | `entities/oz-multi-harness-cloud-agent-orchestration.md`
 
 # Oz Multi-Harness Cloud Agent Orchestration
 
@@ -243,7 +1532,7 @@ Warp 团队与工程领导者深度合作后总结出三大共同需求：（1�
 
 ## 核心要点
 
-- **核心定位**：first truly multi-harness control plane for cloud agents——比 [AgentCore Harness](ch05/008-harness.html) 多了一层「harness 选择权」的抽象
+- **核心定位**：first truly multi-harness control plane for cloud agents——比 [AgentCore Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentcore-harness.md) 多了一层「harness 选择权」的抽象
 - **支持的 harness**：Claude Code、Codex、Warp Agent 三家可在云端互换运行；multi-harness orchestration 对所有用户开放（beta）
 - **自动多 Agent 编排**：Oz 可以自动 spawn 多个 subagent 并行处理长时任务（大特性构建、code migration、生产部署），跨 harness 自动追踪、steering、提供管理界面
 - **跨 harness Agent Memory（research preview）**：业界第一个跨 harness 的记忆系统——code review agent 学习团队代码风格、生产 agent 记住部署拓扑、数据分析 agent 记住数据结构
@@ -276,7 +1565,7 @@ Oz 给出的命题非常清晰：**「Agent 性能是 harness 和 model 的联�
 - **可插拔数据源**：文件（skills）、MCP、数据库、企业应用——把企业现有知识资产纳入 Agent 上下文
 - **可自托管**：「Warp 可以替你托管，但我们相信企业会想自己拥有 corpus」——这一句直接回应了企业对数据所有权的核心顾虑
 
-这套架构与 [Agent Memory 架构](ch04/329-perplexity-brain-self-improving-agent-memory-architecture.html)和 [Agent 记忆系统框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-systematic-framework.md)中讨论的「双向、长期、企业自有」三个理想性质完全对齐。它和 Obsidian + QMD 类型的本地方案（见 [Obsidian + Claude Code 集成指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/57u6xekcgtvkqxnnqg9djq.md)策略 5）属于同一思路的两个层级：QMD 是个人工作站方案，Oz Agent Memory 是企业方案。
+这套架构与 [Agent Memory 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture.md)和 [Agent 记忆系统框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-systematic-framework.md)中讨论的「双向、长期、企业自有」三个理想性质完全对齐。它和 Obsidian + QMD 类型的本地方案（见 [Obsidian + Claude Code 集成指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/57u6xekcgtvkqxnnqg9djq.md)策略 5）属于同一思路的两个层级：QMD 是个人工作站方案，Oz Agent Memory 是企业方案。
 
 ### 「single pane of glass」对企业 AI 治理的真正含义
 
@@ -305,11 +1594,11 @@ Warp 起家是「最好用的现代终端」，现在通过 Oz 把战线推到�
 - 终端是开发者每天都开的入口
 - 从终端 → 终端里集成 Agent → 多个 Agent 协作需要 orchestration → 自然演化到云端控制平面
 
-对比：Cursor 从编辑器切入，Replit 从云开发环境切入，[AgentCore](ch04/191-agentcore-managed-harness.html) 从云厂商基础设施切入——四条路径都在收敛到同一个目标（**企业级 Agent 控制平面**），但起点完全不同。Warp 的路径有「终端无关于 IDE」的优势，可以兼容 VS Code、Cursor、JetBrains 的用户。
+对比：Cursor 从编辑器切入，Replit 从云开发环境切入，[AgentCore](ch04/338-agentcore-managed-harness.html) 从云厂商基础设施切入——四条路径都在收敛到同一个目标（**企业级 Agent 控制平面**），但起点完全不同。Warp 的路径有「终端无关于 IDE」的优势，可以兼容 VS Code、Cursor、JetBrains 的用户。
 
 ### 与 AgentCore 的微妙差异
 
-Oz 和 AWS [AgentCore](ch04/191-agentcore-managed-harness.html) 在功能列表上有大量重叠，但定位有微妙不同：
+Oz 和 AWS [AgentCore](ch04/338-agentcore-managed-harness.html) 在功能列表上有大量重叠，但定位有微妙不同：
 
 | 维度 | Oz | AgentCore |
 |---|---|---|
@@ -334,11 +1623,11 @@ Oz 和 AWS [AgentCore](ch04/191-agentcore-managed-harness.html) 在功能列表�
 
 ## 相关实体
 
-- [Agentcore Harness](ch05/008-harness.html) — AgentCore Harness 综述
-- [Agentcore Managed Harness](ch04/191-agentcore-managed-harness.html) — Managed Harness 定位
-- [Agent Harness Architecture](ch05/035-agent-harness.html) — Agent Harness 架构
-- [Agent Harnesses Are Dead Long Live Agent Harnesses](ch04/438-agent-harnesses-are-dead-long-live-agent-harnesses.html) — Harness 演进观察
-- [Agent Memory Architecture](ch04/329-perplexity-brain-self-improving-agent-memory-architecture.html) — Agent Memory 架构综述
+- [Agentcore Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentcore-harness.md) — AgentCore Harness 综述
+- [Agentcore Managed Harness](ch04/338-agentcore-managed-harness.html) — Managed Harness 定位
+- [Agent Harness Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture.md) — Agent Harness 架构
+- [Agent Harnesses Are Dead Long Live Agent Harnesses](ch04/181-agent-harnesses-are-dead-long-live-agent-harnesses.html) — Harness 演进观察
+- [Agent Memory Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture.md) — Agent Memory 架构综述
 - [57U6Xekcgtvkqxnnqg9Djq](https://github.com/QianJinGuo/wiki-public/blob/main/entities/57u6xekcgtvkqxnnqg9djq.md) — Obsidian + Claude Code 集成（个人版的跨 harness 记忆）
 - [Agent Orchestration Patterns](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-orchestration-patterns.md) — Agent 编排模式
 - "多 Agent 协作编排" — 多 Agent 编排
@@ -349,9 +1638,159 @@ Oz 和 AWS [AgentCore](ch04/191-agentcore-managed-harness.html) 在功能列表�
 
 ---
 
-## Ch08.004 Orchestrating Self-Evolving Agents with CrewAI and NVIDIA NemoClaw
+## Ch08.016 扣子 3.0 协作系统：项目化 + Agent 编排 + 工具链打通
 
-> 📊 Level ⭐⭐ | 8.5KB | `entities/orchestrating-self-evolving-agents-with-crewai-and-nvidia-ne.md`
+> 📊 Level ⭐⭐⭐⭐ | 11.8KB | `entities/coze-3-0-collaboration-system.md`
+
+# 扣子 3.0 协作系统：项目化 + Agent 编排 + 工具链打通
+> "AI Agent 的下一步，不只是更强的模型，而是**更像真实团队的工作系统**。" —— 量子位（编辑：金磊）报道
+
+**扣子 3.0 = 把 AI 对话升级为"项目化 + Agent 协作 + 工具链打通"的协作系统**。用户在一个项目里 @ 多个 Agent，每个 Agent 负责一个角色，围绕同一目标持续推进。
+
+> 核心转变：**从"随问随答的聪明人"到"能开工的小团队"**。
+
+→ [原文存档](https://mp.weixin.qq.com/s/lN9DgdfrN-If5BWPT495sg)
+
+## 三大核心升级（3 层抽象）
+| 层 | 升级 | 关键能力 |
+|---|---|---|
+| **L1 项目化** | 任务从对话 → 项目 | 资料/角色/任务/产物放进同一空间，围绕同一目标持续推进 |
+| **L2 Agent 编排** | 多人多 Agent 协作 | 选题 Agent 判断 / 资料 Agent 补背景 / 产品 Agent 拆结构 / 代码 Agent 实现 / 本地 Claude Code 工程检查 |
+| **L3 工具链打通** | Agent 不只在对话框 | 编程项目 + 视频项目 + 本地 Agent 接入 + 行业技能包 + 多端同步 + 桌面端本地文件处理 |
+
+> 关键表达："**@ 一下全员就位**" —— 用户需要的是**一组可以被调度的 AI 伙伴**。
+
+## 4 组实测亮点
+
+### 4 Agent 协作 = AI 热点追踪仪表盘
+- 角色：小曜（自带）+ 选题写作 + 产品设计 + 前端开发
+- 流程：判断新闻 → 补背景查事实找角度 → 拆页面模块 → 写代码
+- 价值：把"大而全的回答"拆成"不同角色的连续劳动"
+
+### 本地 Agent 接入 = 工程化项目
+- **导入 Claude Code / Codex CLI / OpenClaw** 到项目
+- 范式：从"自己组 AI 团队"到"把你原来用顺手的 AI 工具也拉进团队"
+
+### AI 编辑部桌宠
+- 4 种状态：待机眨眼/思考加载/提醒气泡/夸夸鼓励
+- 验证：从模糊创意 → 清晰产品结构 → 玩+用结合 → 可运行代码 → 后续扩展
+
+### 选题 → 文章 → 视频 一气呵成
+- 默认视频生成模型：**Seedance 2.0**
+- **角色/道具/文档/资产沉淀在项目里** → 后续不必每次重新定义
+
+## 行业技能包（不是简单加 prompt）
+> "把行业数据库、专业方法和高频工作流封装成**可调用能力**。"
+
+| 场景 | 能力 |
+|---|---|
+| 金融 | A 股/基金实时数据引擎 + 专业分析 |
+| 法律 | 法律法规检索 + 合同审阅 + 诉讼策略材料整理 |
+| 医疗健康 | 体检报告识别 + 关键信息结构化提取 + 健康档案整理 |
+| 自媒体 | 爆款笔记洞察 + 标题生成 |
+| 科研 | 论文检索 + 文献引用溯源 |
+
+> 对新人：降低从零摸索门槛
+> 对专业人士：接住检索/整理/初稿/结构化分析，**把人的时间留给真正需要判断和经验的部分**
+
+## 多端覆盖
+- iOS / Android / macOS / Windows / Web（coze.cn）
+- **手机远程遥控电脑完成工作**（手机可调用电脑桌面文件）
+- 任务不再被某一台电脑绑住 = Agent 从工具走向协作对象
+
+## 范式判断
+> 过去一年 AI 产品的竞争很容易被简化成**模型能力竞争**：
+> 谁更聪明，谁推理更强，谁写代码更好，谁上下文更长。
+>
+> 但到了 Agent 产品阶段，另一个问题开始变得更关键：
+> **一个 AI 再聪明，能不能和其他 AI、工具、人类一起工作？**
+
+扣子 3.0 答案：**协作系统**。
+- 开发者：本地 Agent + 编程项目并行
+- 创作者：脚本/分镜/视频/音乐/续集一项目
+- 复杂业务：行业技能包
+- 新手用户：不懂 API/MCP 也能从项目开始
+
+## 真正的 Agent 产品 6 维
+> "**真正好用的 Agent，不应该只比单点能力，而要看它能不能进入真实工作流。**"
+
+1. 能不能把任务拆开
+2. 能不能接住上下文
+3. 能不能调用工具
+4. 能不能沉淀资产
+5. 能不能跨端延续
+6. 能不能让用户少切窗口、少搬材料、少重复解释
+
+## 与已入库 Coze 3.0 报道对照
+| 实体 | 来源 | 角度 |
+|---|---|---|
+| [扣子 3.0 多 Agent 协同实战](https://github.com/QianJinGuo/wiki-public/blob/main/entities/coze-3-multimagent-team-orchestration-wangheige.md) | 网黑哥 2026-06-02 | 实战（开发小队 3 Agent / 品牌 4 风格 / 公众号 5 人 6 步） |
+| [扣子 3.0 本地 Agent 项目编排](https://github.com/QianJinGuo/wiki-public/blob/main/entities/coze-3-0-local-agent-project-orchestration.md) | 技术角度 | coze-bridge / Claude Code / Codex CLI 接入 |
+| **本文** | 量子位 2026-06-04 | 官方升级新闻 + 3 层抽象 + 行业技能包 |
+
+## 关键启示（对 Agent 团队）
+1. **项目化是 2026 Agent 产品的标准抽象** —— 对话框 = 临时；项目 = 持久
+2. **角色化 Agent 编排 > 单体 LLM** —— 把"大而全"拆成"角色分工"
+3. **本地工具接入是护城河** —— 把用户已顺手的工具拉进团队 = 黏性
+4. **行业技能包是商业化路径** —— 不只调教 Agent，而是预装专家经验
+5. **跨端是产品从工具到协作对象的关键** —— 任务不被某台电脑绑住
+6. **资产沉淀在项目里** —— 角色/道具/文档/中间产物都进项目空间
+7. **"@ 一下全员开工"是 Agent UI 的新范式** —— 用户与一组 AI 伙伴的协作界面
+
+## 相关对照
+- [Agent Skills vs Coze/Dify/n8n](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skills-vs-coze-dify-n8n-lowcode-yexiaocha.md)
+- [字节 Trae Harness 指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/bytedance-trae-harness-engineering-guide.md)
+- [Meta Skill](ch07/045-meta-skill.html) —— "Skill 的 Skill"（OpenSquilla 抽象层）
+- [SkillOpt](ch05/058-skillopt.html) —— 训练 Skill 文档（与 Coze 3.0 的 Skill 包机制不同）
+
+## 深度分析
+
+### 洞察 1：协作系统是 Agent 产品竞争的第二条曲线
+量子位报道指出，2025 年 AI 产品竞争的核心是模型能力——谁推理更强、上下文更长、代码更好。但到了 Agent 产品阶段，真正的分水岭变成了**"一个 AI 能不能和其他 AI、工具、人类一起工作"** 。这意味着产品竞争从单点能力转向系统整合能力，协作系统成为新的差异化方向。
+
+### 洞察 2：@ 机制是 AI 用户界面的元问题解决方案
+"@ 一下全员就位"不只是快捷指令，而是一种**自然语言调度协议**的雏形。用户不再需要记住每个 Agent 的名字或调用方式，只需 @ 全体就能触发一组角色分工明确的 AI 伙伴 。这解决了 AI 产品普遍存在的"用完即走"问题，让任务能够在多个 Agent 之间持续推进。
+
+### 洞察 3：项目化本质上是上下文持久化
+项目空间将资料、角色、任务、产物全部沉淀在同一空间，使 Agent 的上下文不会因会话结束而丢失 。这对传统对话式 AI 是根本性颠覆——对话是临时的，项目是持久的。这意味着 AI 产品的状态管理边界从单次请求扩展到了整个项目生命周期。
+
+### 洞察 4：本地 Agent 接入重新定义"工程化项目"的边界
+导入 Claude Code / Codex CLI / OpenClaw 到项目，意味着 Coze 3.0 不再是一个封闭系统，而是一个**可以整合用户既有工具链的协作平台** 。范式从"自己组 AI 团队"变为"把你原来用顺手的 AI 工具也拉进团队"，这是从头造轮子到生态集成的转变，对于有工程化需求的用户具有强吸引力。
+
+### 洞察 5：行业技能包是 Agent 商业化的可复制路径
+金融/法律/医疗等行业的技能包不是简单加 system prompt，而是把**行业数据库、专业方法论和高频工作流封装成可调用能力** 。这种预装专家经验的模式比通用 Agent 更容易实现商业化——对新手降低门槛，对专业人士接管检索/整理/初稿等重复性工作，把人的时间留给真正需要判断的部分。
+
+## 实践启示
+
+### 1. 用项目作为 AI 工作的基本单元
+不论是内容创作还是开发任务，都应该从"项目"而非"对话"开始。创建项目时明确角色分工（选题/资料/产品/前端），让资产自然沉淀在项目空间内。这样可以在后续会话中直接复用上下文，避免每次重新定义角色和上传材料。
+
+### 2. 设计角色化 Agent 编排而非单体 LLM 调用
+在设计工作流时，优先考虑多角色分工而非让单一 Agent 完成全流程。例如 AI 热点追踪场景中，选题 Agent 负责判断新闻价值，资料 Agent 负责查事实，产品 Agent 负责拆结构，代码 Agent 负责实现。这种分工不仅提升了任务质量，也让每个 Agent 的能力边界更清晰。
+
+### 3. 将本地工具接入作为产品护城河
+如果你的 Agent 产品支持本地工具接入（如 Claude Code），应该学习 Coze 3.0 的思路：不是替代用户顺手的工具，而是**把它们整合进协作系统**。这比让用户迁移到新工具链的摩擦小得多，也更容易建立用户黏性。
+
+### 4. 在行业场景中预装方法论而非仅调教 prompt
+对于垂直行业场景，单纯调教 prompt 的天花板很明显。应该像 Coze 3.0 的行业技能包那样，**将行业数据库、专业方法论和高频工作流封装为可调用能力**。这让 Agent 不仅能回答问题，还能处理检索、整理、结构化分析等高频工作流。
+
+### 5. 设计跨端任务延续机制
+手机远程调用电脑桌面文件是多端协作的典型场景。实际工作中，可以设计类似的跨端任务延续：用户在外可以通过手机查看/操控项目进展，回到电脑后直接继续处理桌面端文件，无需手动同步材料。这让 AI 任务不再被某一台设备绑定。
+
+## 关联阅读
+
+- [扣子 3.0 多 Agent 协同实战](https://github.com/QianJinGuo/wiki-public/blob/main/entities/coze-3-multimagent-team-orchestration-wangheige.md) —— 同样是 Coze 3.0 多 Agent 协作主题，网黑哥从实战角度提供了开发小队/品牌设计/公众号流水线的完整案例，与本文的官方升级视角互为补充。
+- [字节 Trae Harness 工程指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/bytedance-trae-harness-engineering-guide.md) —— 字节另一款 AI 产品 Trae 的工程化指南，可与 Coze 3.0 的本地 Agent 接入思路对照，理解字节在 AI 协作产品上的不同布局方向。
+
+## 相关实体
+
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/multi-agent-coordination.md)
+
+---
+
+## Ch08.017 Orchestrating Self-Evolving Agents with CrewAI and NVIDIA NemoClaw
+
+> 📊 Level ⭐⭐⭐⭐ | 8.5KB | `entities/orchestrating-self-evolving-agents-with-crewai-and-nvidia-ne.md`
 
 # Orchestrating Self-Evolving Agents with CrewAI and NVIDIA NemoClaw
 
@@ -449,146 +1888,132 @@ CrewAI + NemoClaw 的集成支持"数据飞轮"模式——Agent 系统通过观
 
 ## 相关实体
 
-- [2026 LLM RL 算法综述](ch01/422-llm.html)
-- [DeepSeek V4 Flash Pro](ch01/430-deepseek-v4.html)
-- [AutoResearch 多 Agent 系统](ch03/004-agent.html)
-- [RocketMQ Agent 消息](ch04/279-ai-agent.html)
-- [高德 Uplift 模型 Agent](ch05/008-harness.html)
+- [2026 LLM RL 算法综述](https://github.com/QianJinGuo/wiki-public/blob/main/entities/2026-llm-rl-algorithms-deeplog-imba-ppo-dpo-grpo-marl.md)
+- [DeepSeek V4 Flash Pro](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-v4-flash-pro-通往百万级上下文与万亿参数推理的新纪元.md)
+- [AutoResearch 多 Agent 系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/autoresearch-next-phase-async-multi-agent-ai寒武纪.md)
+- [RocketMQ Agent 消息](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rocketmq-5-5-0-litetopics-ai-agent-messaging.md)
+- [高德 Uplift 模型 Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gaode-uplift-model-iteration-agent-long-running-harness.md)
 - [NVIDIA Isaac Lab 机器人 RL](https://github.com/QianJinGuo/wiki-public/blob/main/entities/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md)
-- [Harness Engineering 核心模式](ch05/026-harness-engineering.html)
+- [Harness Engineering 核心模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-core-patterns-claude-code.md)
 
 ---
 
-## Ch08.005 这篇52页综述把AI做科研这件事，明明白白划成了L0到L4五个等级
+## Ch08.018 AP2 协议实测：Mandate 机制、Task 状态机与多 Agent 支付
 
-> 📊 Level ⭐⭐ | 7.1KB | `entities/autoresearch-ai-scientific-discovery-l0-l4-challengehub.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.3KB | `entities/ap2-agent-payments-protocol-hands-on-analysis.md`
 
-> -> [原文存档](https://mp.weixin.qq.com/s/vqB4CtJPq0j61eSIADvUoQ)
+# AP2 协议实测：Mandate 机制、Task 状态机与多 Agent 支付
 
-# AI做科研：L0到L4五级自主度框架
+Google AP2（Agent Payments Protocol）工程实测分析。基于官方 Human-Present 场景完整复现，记录协议细节和工程踩坑——密钥路径一致性、CartMandate 结构、SD-JWT 选择性披露、Task 终态陷阱、多 Agent Token 消耗乘法增长。
 
-## 核心框架
+→ [原文存档](https://mp.weixin.qq.com/s/BmvObHXGPsqxoZ6J47QRLA)
 
-arXiv 2605.23204v1《AutoResearch AI》给出了L0-L4五级自主度框架——按workflow控制权、任务执行权、验证权、科学问责权看人和AI怎么分工：
+## 核心问题
 
-| 等级 | 描述 | 代表系统 |
-|------|------|----------|
-| **L0** | Human Only，纯人工 | 历史基线 |
-| **L1** | Human-Led, AI-Assisted | ChatGPT/Claude/Gemini 辅助科研 |
-| **L2-S** | 单步自动化执行 | Coscientist (Nature 2023) |
-| **L2-I** | 交互式工作流自动化 | AI co-scientist (Nature 2026) |
-| **L2-P** | 流水线自动化（人验证下） | The AI Scientist、AI Scientist-v2、Agent Laboratory |
-| **L3** | AI-Led, Human-Assisted | **目前无系统达到** |
-| **L4** | AI-Autonomous | **理想化远期目标，无任何系统达到** |
+当 Agent 开始替用户做决定、甚至替用户花钱时，怎么证明这是用户本人授权的，又怎么保证 Agent 不会乱花钱。AP2 把商户对交易的承诺变成可验证的数字凭证，而不是依赖 Agent 的口头描述。
 
-**关键切分**：L1-L2是Vibe Research（人在驾驶座），L3-L4才是真正的AutoResearch。「pipeline能跑通 ≠ 到了L3」——只要还需要人判断hypothesis是否有意义、experiment是否valid、result是否reproducible，就还在L2-P。
+→ [AgentCore Payments 与 x402 协议](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentcore-payments-x402-agentic-commerce.md) — AWS 的对标方案
 
-## 核心警示
+## 实测踩坑
 
-「流程被打通了」不等于「科研自主了」。当前系统在搜索、起草、写代码、bounded execution 上越来越强，但 validation、rejection（拒绝弱方向）、reproducibility、exception handling、accountable closure 这些环节还差得远。
+### 1. 密钥路径一致性
 
-## 五个评估维度
+Credentials Provider 启动时生成 ECDSA 密钥对，公钥写到统一路径。Merchant Payment Processor 验证时去同一路径读公钥。如果四个 Agent 不在同一个 shell 环境里启动，路径对不上——报 Agent-provider public key not found，支付流程卡死。官方文档完全没提。
 
-从「任务完成度」切换到「科学可信度」：
-- **Novelty**（新颖性）
-- **Validity**（有效性）
-- **Impact**（影响力）
-- **Reliability**（可靠性）
-- **Provenance**（可溯源性）
+### 2. CartMandate 结构
 
-## 领域间不均衡
+```json
+{
+  "id": "cart_2",
+  "merchant": { "name": "Generic Merchant" },
+  "line_items": [{ "item": { "title": "12-cup drip coffee maker", "price": 3950 }, "quantity": 1 }],
+  "currency": "USD",
+  "status": "incomplete",
+  "iat": 1781686213,
+  "exp": 1781689813
+}
+```
 
-- **计算/形式科学**最快：artifact 本身是 digital/executable/replayable
-- **化学/材料**：有 robotic lab 支持
-- **生物/医学/社科**：embodiment、ethical constraint、causal reasoning 的难度不是「加大模型」能解决的
+- 价格单位是分（3950 = 39.50 美元），规避浮点精度问题
+- status incomplete → 用户确认后才封存
+- 一小时有效期，ES256 签名
 
-**重要判断**：不要拿 coding agent 的进展去推断「AI能做全科学的端到端研究」。
+### 3. SD-JWT 选择性披露
+
+支付环节用 SD-JWT 而非普通 JWT。给 Payment Processor 只展示金额和收款方，不展示卡号；给审计方再展示其他字段。隐私保护直接嵌进数据格式。
+
+### 4. Task 终态陷阱
+
+A2A 协议 Task 生命周期：completed、failed、cancelled 都是终态，一旦进入就不能再接收新消息。支付重试必须在应用层创建新 Task，不能在失败的 Task 上继续操作。
+
+这和 HTTP 无状态模型完全是两种思路——每个 Task 都是有状态、有生命周期的实体。
+
+### 5. 多 Agent Token 消耗
+
+一次确认购买消耗十次以上 API 调用（Shopping Agent 思考→调工具→委托子 Agent→子 Agent 思考→回传）。多 Agent 系统的 token 消耗不是线性叠加，而是**乘法增长**。Gemini 免费套餐每分钟 15 次请求限制，跑不了几轮。
+
+## 竞争格局
+
+| 协议 | 主导方 | 定位 |
+|------|--------|------|
+| AP2 | Google | 密码学背书的商务协议 |
+| ACP | OpenAI × Stripe | Agentic Commerce Protocol |
+| ACT | 支付宝 + 千问 + 淘宝闪购 + 阿里云百炼 | 国内监管 + 本土支付生态 |
+| APOP / ClawTip / AI Skill | 国内各方 | 碎片化 |
+
+蚂蚁数科 Anvita 平台让 Agent 持有资产、链上结算。蚂蚁 AI 支付累计 3 亿笔（2 亿最近两月新增）。
+
+→ [AgentCore Payments 与 x402 协议](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentcore-payments-x402-agentic-commerce.md) — AWS AgentCore 支付方案
+
+## 协议局限
+
+- CartMandate 一小时有效期 + 单次 OTP → Agent 自主跨平台长周期任务场景会暴露局限
+- 更细粒度的授权范围控制是下一代协议方向
+- 蚂蚁 Anvita / Token Pay 指向更远方向：Agent 自己成为有经济主体资格的参与方
 
 ## 深度分析
 
-### 从专用模型到通用科研Agent的范式跃迁
+### 密码学背书 vs 口头信任的范式转变
 
-这篇综述揭示了一个根本性转变：AlphaFold代表的**专用模型时代**和以LLM驱动的**通用科研Agent时代**是两条不同的路。AlphaFold把单一任务做到极致，但无法迁移；LLM驱动的系统则在广度上打开了一扇门——文献调研、想法生成、计划制定、代码执行、结果分析、论文撰写，第一次有可能被同一个系统串起来。
+AP2 的核心创新不在于"让 Agent 能支付"——Stripe API 早就做到了——而在于把商户对交易的承诺从自然语言层面提升到密码学可验证层面。CartMandate 用 ES256 签名，任何拿到商户公钥的一方都可以独立验签，不需要信任 Agent 的转述。这解决了一个根本问题：在多 Agent 协作中，中间 Agent 可能被篡改或幻觉，但密码学签名无法伪造。
 
-### L2-P的三种形态揭示了当前Pipeline的分化
+### SD-JWT 的隐私工程设计
 
-L2-P内部存在显著分化：**单步执行（L2-S）**、**交互式工作流（L2-I）**、**流水线自动化（L2-P）** 代表了不同程度的自动化成熟度。Coscientist代表单步执行能力；AI co-scientist引入了交互迭代；The AI Scientist则试图做端到端流水线。这种分化说明当前所谓的"SOTA系统"实际上能力梯度很大，不能一概而论。
+SD-JWT 选择性披露机制让同一份凭证在不同场景下展示不同字段——支付处理器只看到金额和收款方，审计方看到完整信息。这不是应用层的访问控制，而是数据格式层面的隐私保证。对比传统 JWT 的"全有或全无"模式，SD-JWT 为 Agent 间敏感数据传递提供了更细粒度的隐私屏障。
 
-### 为什么L3是真正的分水岭
+### Task 有状态模型的工程代价
 
-L3的核心要求是**AI主导、人辅助**——这意味着机器不仅执行任务，还要判断hypothesis的价值、决定实验方向、承担科学责任。目前没有任何系统达到L3，关键卡点在于：validation能力不足、rejection能力（即主动放弃弱方向）几乎为零、reproducibility验证缺失、exception handling机制不完善。这不是加大模型参数能解决的，需要架构层面的创新。
+A2A 协议的 Task 生命周期设计（completed/failed/cancelled 均为终态）带来了显著的工程复杂度。支付重试不能在失败的 Task 上继续，必须创建新 Task——这意味着应用层需要维护 Task 之间的关联关系、状态回滚逻辑、以及幂等性保证。与 HTTP 无状态模型相比，有状态 Task 模型更适合 Agent 协作场景（因为 Agent 交互天然是多轮、有上下文的），但对开发者的心智模型要求更高。
 
-### 当代Landscape的分工架构说明什么
+### 多 Agent Token 消耗的乘法增长效应
 
-当前Landscape不是被某个统一架构统治，而是分为**知识支持层**（文献 grounding、QA、planning）、**执行底座层**（code agent、tool use）、**Pipeline协同层**（The AI Scientist等）、**开源基础设施层**（NanoResearch、ResearchClaw等）。这种分工提示：端到端系统还处于非常早期，基础设施正在成为竞争焦点。
+一次确认购买消耗十次以上 API 调用——这是 Agent 系统的结构性成本，不是优化能消除的。当 Agent 数量从 1 增加到 N，通信复杂度从 O(N) 变为 O(N²)。Gemini 免费套餐每分钟 15 次请求的限制，在单 Agent 场景下完全够用，但在多 Agent 商务场景下几轮就会耗尽。这对 Agent 基础设施提供商意味着：多 Agent 系统的定价模型不能按单次 API 调用计费，需要按"商务流程完成"计费。
+
+### 授权粒度与长周期任务的矛盾
+
+CartMandate 一小时有效期 + 单次 OTP 的设计，本质上是为 Human-Present 场景优化的。当 Agent 需要自主完成跨平台、长周期任务（如代购比价后分批下单），当前授权模型会成为瓶颈。下一代协议需要支持：可续期的委托凭证、分阶段授权（先比价、再下单、最后支付）、以及跨平台凭证互认。
 
 ## 实践启示
 
-1. **不要被demo误导**：看到"端到端科研Agent"的演示视频时，首先问清楚它在哪一级——是L2-S/L2-I还是L2-P，距离L3还有多远。
-2. **评估重点切换**：从"任务完成率"转向"科学可信度"——novelty、validity、reliability、provenance五个维度才是衡量科研AI的真正标尺。
-3. **领域差异巨大**：计算科学可以快速推进，生物医学受限于embodiment和ethical constraint，社科则几乎无法自动化。选择落地场景时必须考虑领域特性。
-4. **基础设施是壁垒**：2026年的趋势是从"研究agent demo"转向"可复用研究基础设施"——NanoResearch、ResearchClaw、AutoResearchClaw等正在建立workspace、可复用环境、persistent project state的能力。这将是下一阶段的核心竞争力。
-5. **L3路线图**：如果要向L3推进，重点必须放在validation/rejection能力建设、reproducibility自动化、exception handling机制，以及最终的accountable scientific closure能力上。
+1. **密钥路径统一是多进程 Agent 的基础工程**：启动脚本必须统一设置环境变量，所有 Agent 进程共享同一密钥路径。这个细节在官方文档中缺失，但会导致整个支付流程卡死
+2. **SD-JWT 是 Agent 间敏感数据传递的优选方案**：在设计 Agent 协作系统时，优先考虑选择性披露的数据格式，而非依赖应用层的访问控制逻辑
+3. **多 Agent 系统需要按流程计费而非按调用计费**：Token 消耗的乘法增长意味着按 API 调用次数的定价模型在多 Agent 场景下会指数级膨胀
+4. **支付重试必须在应用层实现 Task 管理**：不能依赖 A2A 协议层的 Task 重用，需要在应用层维护 Task 关联和幂等性
+5. **关注蚂蚁 Anvita 的 Agent 经济主体方向**：Agent 持有资产、链上结算代表了比"代人支付"更远的演进方向
 
-## 相关主题
+## 相关链接
 
-- [AutoResearch 多Agent软件开发](ch03/004-agent.html) — Karpathy 风格，software engineering 场景（非science）
-## 相关实体
-
-- [nature丨google和futurehouse同日登刊，把ai科学助理推到科研前线](ch04/052-ai.html)
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/multi-agent-coordination.md)
+- AP2 官方：github.com/google-agentic-commerce/AP2
+- AP2 文档：ap2-protocol.org
+- ACP（OpenAI × Stripe）：github.com/agentic-commerce-protocol/agentic-commerce-protocol
+- → [AgentCore Payments 与 x402 协议](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentcore-payments-x402-agentic-commerce.md)
+- → [原文存档](https://mp.weixin.qq.com/s/BmvObHXGPsqxoZ6J47QRLA)
 
 ---
 
-## Ch08.006 微软 Agent Framework 全栈指南（Python）
+## Ch08.019 Claude Code Dynamic Workflows 多Agent编排
 
-> 📊 Level ⭐⭐ | 6.0KB | `entities/microsoft-agent-framework-python-zizhi.md`
-
-> 来源：[原文存档](http://mmbiz.qpic.cn/mmbiz_png/8VVIHicz4MiaaAoIaJJUWxT1q60KnpdqHA8GIOicibhu4GiaDBricXeXDzwWUaTeqoHo18UibXxZ7m2CanDXJxfKH6xFj2ns7sh2e9WBeibU1iaBbN0U/0?wx_fmt=png)
-
-## 深度分析
-**1. 三层架构的统一抽象：Agent / Workflow / Hosting 解耦设计**
-微软 Agent Framework 的核心价值在于将 Semantic Kernel 的企业底座、AutoGen 的 Agent 抽象与新增的 Workflow 图编排整合为统一 API。框架明确区分了三种场景的选型原则：开放对话、自主调工具 → Agent；步骤固定、要强控执行顺序 → Workflow；纯确定性逻辑 → 普通函数。这种分层使得开发者可以根据任务性质选择合适的编程模型，而非强行把所有场景都塞进 Agent。
-
-**2. Provider 模式实现记忆与上下文的可组合性**
-
-Step 4 展示的 `ContextProvider` / `HistoryProvider` 体系是框架最的设计亮点。通过 `before_run` 和 `after_run` 钩子，开发者可以在每轮对话前后注入自定义上下文或提取状态。多个 Provider 可以组合（记忆存储 + 外部记忆 + 审计），且只有一个应设置 `load_messages=True` 以避免重复回放。这套模式比直接硬编码记忆逻辑更具工程化价值。
-
-**3. 工具安全模型：从 Demo 到生产的必要跃迁**
-
-文章用 `approval_mode` 参数区分了演示环境（`never_require`）与生产环境（`always_require`）的差异。工具描述（docstring + `Field(description=...)`）的质量直接影响模型调用准确率，这个细节在很多入门教程中被忽略。生产 checklist 进一步强调了 ManagedIdentityCredential 优于 DefaultAzureCredential（避免探测延迟与安全面），说明框架设计者对企业安全有清晰认知。
-
-**4. Workflow 与多 Agent 的组合模式**
-
-Step 5 揭示了框架的编排野心：图中节点可以是 Agent，边定义协作顺序；需要对外暴露为单一 Agent 时，可将 Workflow 包装为 `AIAgent` 接入 A2A/OpenAI 兼容端点。这意味着框架既支持细粒度的多 Agent 协作，也支持将协作结果封装为统一接口，兼顾了灵活性与易用性。
-
-**5. 六步能力矩阵的渐进式学习路径**
-
-文章将 Agent 开发分为六个阶段（首 Agent → 工具 → 多轮 → 记忆 → 工作流 → 托管），每步都有明确的 API 概念和解决的问题。这种设计符合认知负荷理论：开发者可以从简单场景起步，逐步引入复杂特性，而不需要在一开始就理解整个框架。
-
-## 实践启示
-**1. 从 pip install 到 Azure Functions 暴露 HTTP，路径清晰**
-Python 侧的开发体验设计良好：`pip install agent-framework` 后，用 `FoundryChatClient` 接模型，`Agent` 创建实例，`agent.run()` 验证逻辑，最后用 `AgentFunctionApp` 暴露为 HTTP 端点。建议按 01 → 06 顺序在本地跑通示例后再接入业务数据与鉴权，避免过早引入复杂性。
-**2. Session 是会话级状态容器，分布式部署需对接外部存储**
-文章特别指出：同一 `session` 对象贯穿多轮 `run()`，历史由框架在会话内维护。但分布式部署时需把 Session 与存储后端（Redis、数据库等）对接，而非仅依赖进程内对象。这意味着单进程开发环境与生产环境的 Session 管理策略需要分别设计。
-**3. 工具描述质量直接影响调用准确率**
-在定义工具时，docstring 和 `Field(description=...)` 的描述会进入模型的 function schema。生产环境中应投入时间优化这些描述，而非仅关注函数逻辑本身。工具描述质量是模型能否准确调用工具的关键因素。
-**4. 生产环境优先使用显式凭证**
-开发环境可用 `AzureCliCredential`，但生产建议 `ManagedIdentityCredential` 等明确凭证。这避免了 `DefaultAzureCredential` 的探测延迟（首次调用时会尝试多种凭证源）和潜在的安全风险。迁移旧项目时需要特别注意这一配置变更。
-**5. Provider 组合时注意 load_messages 互斥**
-多个 `HistoryProvider` 组合时，只有一个应设置 `load_messages=True` 以避免多存储重复回放。审计类 Provider 应放在列表末尾并设置 `store_context_messages=True` 以记录其他 Provider 注入的上下文。这个约束需要在设计阶段就明确，否则运行时会出现难以排查的重复消息问题。
-## 相关实体
-- [Microsoft Agent Framework Python Full Guide Zizhi](ch03/004-agent.html)
-- [Microsoft Agent Framework Structured Output](ch03/004-agent.html)
-- [Microsoft Agent Framework Tools Overview Provider Matrix](ch03/004-agent.html)
-- [Agentscope Java Harness Framework Enterprise Distributed](ch05/008-harness.html)
-- [New And Improved Agent Governance Intelligent Workflows Connected App Exp](ch04/406-new-and-improved-agent-governance-intelligent-workflows.html)
-
----
-
-## Ch08.007 Claude Code Dynamic Workflows 多Agent编排
-
-> 📊 Level ⭐⭐⭐ | 57.4KB | `entities/claude-code-dynamic-workflows-multi-agent-orchestration.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 57.4KB | `entities/claude-code-dynamic-workflows-multi-agent-orchestration.md`
 
 ## 核心价值
 
@@ -635,11 +2060,11 @@ Dynamic Workflows 的核心架构是**调度器-工作者模式（Orchestrator-W
 2. **执行稳定性**：循环/分支逻辑固化在脚本变量里，不依赖主会话的推理判断
 3. **并行效率**：多个 subagents 可同时工作，调度器等待所有 workers 完成后才汇总结论
 
-这与 [Fan-Out 模式](ch03/004-agent.html) 的核心区别在于：Fan-Out 是"启动和收集分离"，Dynamic Workflows 则在此基础上增加了**多阶段（phases）和互相复查**的能力。
+这与 [Fan-Out 模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/four-sub-agent-patterns.md) 的核心区别在于：Fan-Out 是"启动和收集分离"，Dynamic Workflows 则在此基础上增加了**多阶段（phases）和互相复查**的能力。
 
 ### 与 Agent Teams 的本质区别
 
-[Sub-Agent vs Agent Team 选型](ch03/004-agent.html) 的核心判断准则：按上下文边界设计，而不是按角色设计。Dynamic Workflows 更接近 Sub-Agent 模式——subagent 之间不直接通信，所有协调经过 workflow 脚本。但它引入了**阶段（phases）**概念，使得多步骤协作成为可能。
+[Sub-Agent vs Agent Team 选型](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sub-agent-vs-agent-team-selection.md) 的核心判断准则：按上下文边界设计，而不是按角色设计。Dynamic Workflows 更接近 Sub-Agent 模式——subagent 之间不直接通信，所有协调经过 workflow 脚本。但它引入了**阶段（phases）**概念，使得多步骤协作成为可能。
 
 Dynamic Workflows 适合的场景：
 - 代码库审计（先 map 文件，再按模块分配 agents，最后 verifier 复查）
@@ -781,11 +2206,11 @@ CLAUDE.md 里写了但常被漏的规则 → 创建 workflow，每条规则对�
 
 ## 相关实体
 
-- [Agent Orchestration](ch01/095-agent-orchestration.html) — 多 Agent 编排的控制平面、状态管理、human-in-the-loop 审批
-- [四种 Sub Agent 模式](ch03/004-agent.html) — 内联工具/Fan-Out/Agent Pool/Teams 的控制粒度与状态保留对比
-- [Sub-Agent vs Agent Team 选型](ch03/004-agent.html) — 上下文边界设计准则与五种编排原语
-- [Claude Code 架构](ch03/057-claude-code.html) — Claude Code 整体架构设计
-- [Claude Code 大代码库使用](ch01/321-how-claude-code-works-in-large-codebases-best-practices-and.html) — 大型代码库场景的最佳实践
+- [Agent Orchestration](ch01/102-agent-orchestration.html) — 多 Agent 编排的控制平面、状态管理、human-in-the-loop 审批
+- [四种 Sub Agent 模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/four-sub-agent-patterns.md) — 内联工具/Fan-Out/Agent Pool/Teams 的控制粒度与状态保留对比
+- [Sub-Agent vs Agent Team 选型](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sub-agent-vs-agent-team-selection.md) — 上下文边界设计准则与五种编排原语
+- [Claude Code 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-architecture.md) — Claude Code 整体架构设计
+- [Claude Code 大代码库使用](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start.md) — 大型代码库场景的最佳实践
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-engineering-guide.md)
 ## Thariq 2026-06-04 实战模式与构建技巧补遗
@@ -1262,394 +2687,9 @@ CLAUDE.md 里写了但常被漏的规则 → 创建 workflow，每条规则对�
 
 ---
 
-## Ch08.008 JiuwenSwarm — Coordination Engineering 多智能体协作框架（含 SwarmFlow 可控编排 + Jiuwen Symphony 技能编排与分发）
+## Ch08.020 古法程序员复杂任务 Spec 写作：多 Agent 编排 + Skill 三层架构 + Gate 四态
 
-> 📊 Level ⭐⭐⭐ | 26.4KB | `entities/jiuwenswarm-coordination-engineering.md`
-
-## 概述
-JiuwenSwarm 是 openJiuwen 社区发布的**多智能体蜂群协作框架**，代表从 Harness Engineering 向 **Coordination Engineering** 的范式跃迁。
-**背景演进路径：** ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-
-- Prompt Engineering → Context Engineering → Harness Engineering → **Coordination Engineering**
-
-## 核心架构：四组件全栈体系
-| 组件 | 解决的问题 |
-|------|-----------|
-| **Agent Swarm** | 多个 Agent 如何"成军"——自主分工、动态协商、高效协作 |
-| **Swarm Skills** | 如何把团队经验沉淀为可复用资产 |
-| **Swarm Skills Hub** | 能力如何在开发者之间流通、复用 |
-| **Swarm Skills 自演进** | 系统如何越用越强，而非越跑越僵 |
-
-### Agent Swarm
-多智能体团队协同机制内核。支持**成员对不同模型的路由**，针对不同角色提供合适能力的模型，减少负载压力，提升整体效果。
-核心能力：**自主分工 + 动态协商 + 高效协作**，从"单兵作战"到"精锐团队"。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-
-### Swarm Skills
-把团队协作中的最佳实践、SOP、角色搭配、调度策略**标准化封装成"团队级技能"**——让优秀的 Agent 团队变成一套即插即用的作战能力。
-
-### Swarm Skills Hub
-开放的团队级协作经验共享市场。地址：https://swarmskills.openjiuwen.com/
-
-### Swarm Skills 自演进
-演进引擎观察完整轨迹（任务拆解、角色调度、消息往来），**自动从轨迹反推出可复用的 Swarm Skill**，提交用户审批即可入库。
-两层同时演进： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-
-- **团队层**：自动增减角色、补充约束规则、优化协作流程
-- **成员层**：沉淀工具报错、接口超时、调用技巧等实战经验
-
-## Human-Agent 协作模式
-| 模式 | 描述 | 姿态 |
-|------|------|------|
-| **HOTS** (Human on the Swarm) | 人是指挥官，实时观察全局，随时下场介入 | 全局调度 |
-| **HITS** (Human in the Swarm) | 人是团队成员，与 Agent 同流程实时协作 | 沉浸式参与 |
-
-## Benchmark 表现
-- **PinchBench**：94.2% SOTA（OpenClaw 91.6%），token 消耗降低 34.8%
-- **LOCOMO**：记忆准确率 85%（8B 大模型），优于业界主流记忆系统
-底层支撑来自 openJiuwen Harness 的 DeepAgent 架构、上下文工程、长期记忆机制。
-
-## 开源地址
-- GitHub：https://github.com/openJiuwen-ai/jiuwenswarm
-- Swarm Skills Hub：https://swarmskills.openjiuwen.com/
-
-## 相关概念
-- Harness Engineering — Coordination Engineering 的前置范式
-- Multi-Agent Collaboration — 广义的 Multi-Agent 协作研究
-- Agent Swarm — 蜂群智能体架构模式
-
-## 深度分析
-### 1. 从单Agent到多Agent协作的范式跨越
-JiuwenSwarm 的出现映射了 AI Agent 工程领域的核心矛盾：当任务复杂度超过单个 Agent 的能力边界时，如何组织多个 Agent 像团队一样工作？
-传统单 Agent 框架（如 LangChain Agent、AutoGPT）在面对跨领域调研、软件交付，多角色决策等真实复杂任务时，暴露出明显的协作盲区。JiuwenSwarm 的**Coordination Engineering**范式，将多 Agent 协作从"多个单 Agent 堆叠"提升为"原生团队协同"——这不是工具升级，而是工程思维的根本转变。
-
-### 2. 四组件体系的递进逻辑
-四组件构成了一套完整的递进体系： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-
-- **Agent Swarm** 是协作内核，解决"能协同"的基础问题
-- **Swarm Skills** 解决"协同经验可复用"的知识沉淀问题
-- **Swarm Skills Hub** 解决"跨团队能力流通"的价值放大问题
-- **Swarm Skills 自演进** 解决"系统持续进化"的长期生命力问题
-自演进机制是这套体系中最具创新性的设计——它不是让用户手动维护技能库，而是通过**轨迹自动发现**模式，将实战中涌现的协作规律自动提取为可复用的 Swarm Skill，形成越用越强的正向飞轮。
-
-### 3. HOTS vs HITS：人机协作的两极
-HOTS（Human on the Swarm）和 HITS（Human in the Swarm）代表了人参与多 Agent 系统的两种截然不同的哲学：
-
-- **HOTS** 保留了人类的主体性和全局视角，适合高不确定性的战略决策场景
-- **HITS** 将人类嵌入协作流程，适合需要人类直觉和判断力的创意探索场景
-这种二分法为实际落地提供了清晰的选择框架：是想让 AI 团队做执行、人类做决策（→ HOTS），还是想让人类和 AI 共同参与执行过程（→ HITS）。
-
-### 4. Benchmark 数据的意义
-PinchBench 94.2% SOTA 配合 token 消耗降低 34.8%，说明多 Agent 协作不仅没有因为协作开销而降低效率，反而通过**合理的角色分工和模型路由**实现了更好的效果。这与单 Agent 时代"更大模型=更好效果"的思路形成鲜明对比。
-
-## 实践启示
-### 何时考虑引入 JiuwenSwarm
-- 任务涉及**多个领域或多个专业角色**的协同（如医疗联合会诊、复杂软件交付）
-- 需要**跨模型路由**以充分利用不同模型的优势
-- 团队积累了大量**可复用的协作 SOP**，希望将其固化为可分享的技能资产
-- 项目需要**长期演进能力**，而非一次性解决方案
-
-### 如何从 Harness Engineering 过渡到 Coordination Engineering
-对于已有 Harness Engineering 基础的团队，过渡路径可以是： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-
-1. **先单 Agent 跑通**：确保每个角色 Agent 在 Harness 层面已经过优化 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-2. **识别协作瓶颈**：哪些任务因为"单 Agent 能力边界"而受限 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-3. **引入 Agent Swarm**：从两个角色开始尝试协作，观察通信和协商机制 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-4. **沉淀 Swarm Skills**：将成功的协作模式标准化为可复用技能 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-
-### 使用 Swarm Skills Hub 的策略
-- **从社区共享技能开始**：不要重复造轮子，先在 Hub 中寻找场景匹配的技能
-- **贡献打磨过的技能**：团队验证有效的协作模式是高质量的技能来源
-- **关注自演进信号**：当系统开始自动推荐新的 Swarm Skill 时，说明实战数据在积累
-
-## SwarmFlow — 从"能协作"到"稳稳地干完"（2026-06 增量）
-
-openJiuwen 在 2026-06 开源 **SwarmFlow** —— 面向多智能体团队的**可控工作流编排方案**，把"团队怎么配合"从 Leader 临场判断升级为**系统稳定执行 + 自动追踪 + 可被复用**。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-
-**核心思路一句话：编排归系统，智能归 Agent。** SwarmFlow 增加的不是 Agent 数量，而是**协作的确定性**。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-
-### 三个绕不开的问题（复杂任务带来的考验）
-
-主流多 Agent 协作模式（Leader Agent 临场调度）在面对长链路、多分支任务时： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-
-1. **Leader 变成瓶颈**：每份中间结果都回 Leader，上下文被过程信息淹没 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-2. **过程不稳定**：同一任务跑两次可能走出两条不同路径 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-3. **执行不可靠**：谁先做、谁并行、什么时候汇总、失败怎么处理，即便提前写清楚仍依赖 Leader 临场发挥 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-
-### Swarm Skill 的两种形态
-
-**判定标准只有一个：编排能不能提前确定？** ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-
-| 形态 | 适用场景 | 协作方式 | workflow.py |
-|------|---------|---------|-------------|
-| **形态一**：不带脚本 | 多专家圆桌、方案评审、战略讨论 | 议程确定，但观点如何流动得在协作中自然发生 | 无 |
-| **形态二**：带脚本 | 论文分析、办公自动化、批量 PPT 生成 | 角色 + 阶段 + 交接都提前定好 | 固化编排 |
-
-**形态选择哲学**：编排是动态的用形态一保留开放协作；编排能提前确定的用形态二承接可执行编排。**确定性与开放性在同一套体系里各得其所。** ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-
-### 算子积木（Operator Library）
-
-SwarmFlow 提供一组算子作为积木，每个算子只管一件事，拼起来就能描述出复杂协作： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-
-| 算子 | 作用 | 备注 |
-|------|------|------|
-| **parallel** | 多个智能体一起跑、全部完成后统一汇总 | 适合多视角研判后合并 |
-| **pipeline** | 多个条目各自独立逐级流过、互不等待 | 适合批量逐条处理 |
-| **agents_session** | 有状态智能体在多轮协作中保留记忆 | 可"分身"一个副本做假设推演而不污染主线 |
-| **human** | 在关键环节插入人机节点 | 向人类要一条输入或一次审批 |
-| **budget** | 约束资源与额度消耗 | 把"会不会跑超"也纳入可控范围 |
-
-**一个动作一块积木，复杂协作由简单积木拼出来，无需从零设计编排逻辑。** ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-
-### 可视化：JiuwenSwarm TUI
-
-通过 `/swarmflows` 命令打开**实时交互式树状图**： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-
-- 上方展示**阶段进度**
-- 下方联动展示选中阶段里的 **Agent 状态**
-- 排查时下钻到单个 Agent，查看**提示词、输出结果、错误日志**
-
-### 三个真实落地场景
-
-| 场景 | 流程 | 价值点 |
-|------|------|--------|
-| **金融分析** | 用户上传流程图 → SwarmSkill Creator 直接生成 SwarmFlow → 数据采集清洗 → 5 维度并行分析 → 交叉验证 + 综合置信度 → 完整报告 | **整条 SwarmFlow 不用手动编排，由一张图直接生成** |
-| **技术调研 + 邮件** | 搜资料 → 整理素材 + 提取图片 → 分析核心问题/趋势/可讨论议题 → 生成结构清晰邮件并发送 | 避免步骤遗漏、口径变化、交付不一致 |
-| **200 页 PPT 稳定产出** | 阶段一规划章节分工 → 阶段二 10 章节**并行生成** → 阶段三合并汇总 | 既靠并行明显加速，又能稳定产出结构统一、风格一致的 200 页 |
-
-### SwarmSkill Creator（生成端）
-
-JiuwenSwarm 内置 SwarmSkill Creator，根据自然语言需求**自动判断该生成哪种形态**： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-
-- 默认生成不带脚本的 Swarm Skill（角色、协作规则、流程说明、约束）
-- 判断用户要工作流 → 生成仅含脚本的版本（最小 Skill.md + workflow.py）
-- 两者都要时支持生成完整协作规范 + 脚本的版本
-
-**用户不必先理解文件结构，也不必手写编排脚本，只要把目标说清楚。** ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-
-### Team 模式自动调用（调用端）
-
-用户不用分辨任务属于哪种形态，在 Team 模式下一句需求自动进入。系统判断任务形态： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-
-- 适合固定编排 → 进入 SwarmFlow
-- 更适合开放协作 → 用不带脚本的 Swarm Skill
-- 单个 Agent 够用 → 不额外启动多 Agent
-
-**这是 openJiuwen 想定义的可控协同工程新范式——让复杂协作在系统内部变得可控，让用户侧保持自然和简单。** ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-
-### 与自演进的衔接
-
-从生成工作流（可控）到自演进（越用越强），**沉淀、编排、演进三者环环相扣**，构成 Coordination Engineering 的完整闭环。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-
-## Jiuwen Symphony — 海量技能的"精准发现 + 稳定协同"（2026-06-17 增量）
-
-如果说 SwarmFlow 解决的是**多 Agent 团队怎么稳定配合**，那么 Jiuwen Symphony 解决的是更底层的问题：**单个 Agent 面对海量技能时怎么选得对、串得稳**。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-
-> 当一个 Agent 能调用的 Skill 从 5 个膨胀到 50 个，会发生什么？答案是：任务执行效果出现"断崖式下滑"——技能越多，Agent 反而越选不准。
-
-### 两个绕不开的核心难题
-
-- **选不准**：技能太多，上下文窗口装不下所有技能说明书，必然出现信息过载、上下文过长。改用语义检索查找相似技能，由于检索与任务执行相互独立，仍无法解决多意图、隐式意图这类需要推理的选择问题。
-- **用不好**：技能选对了，还需要精准编排。技能广场上的技能标准不统一，上一个技能的产出能否喂给下一个、谁先谁后、谁依赖谁，若每次让模型临场发挥，常常出现执行失败、流程中断等稳定性问题。
-
-### 双核心架构：检索用树，编排用图
-
-| 组件 | 数据结构 | 解决的问题 | 关键机制 |
-|------|---------|-----------|---------|
-| **技能检索** | 层次化技能树 | 选不准 | LLM 在树上按任务需求**逐步导航**，而非一次性读完全部技能 |
-| **技能编排** | 技能依赖图 | 用不好 | 基于能力指纹 + 双向搜索（向后扩展"下一步"+ 反向回溯"谁能补上"） |
-
-**技能检索设计要点**： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-
-- 把平铺的技能列表预先组织成层次化技能树，变成可逐层浏览的技能目录；
-- 检索机制被设计为面向 Agent 的**专用工具集**（递归能力树构建 / 分支探索 / 轻量预览 / 候选技能读取），而非执行前的一次性预处理；
-- 关键判断："**技能选择被真正融入了 Agent loop，而非检索与执行相互独立**"。
-
-**技能编排设计要点**： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-
-- **离线能力指纹**：覆盖技能的基础信息、输入输出产物、能力质量评估；
-- **动态词表归一**：把命名不一的同义字段（如 body / content / 正文）归一到规范词；
-- **依赖关系图**：节点是技能，边是"技能 A 的输出能否成为技能 B 的输入"，**作为结构化资产沉淀，可被反复读取、复用和演进**；
-- **运行时双向搜索**：种子技能 → 向后扩展 / 反向回溯 → 拼出真正接得上的技能组合。
-
-### SkillsBench 实测数据（Top-5 选择）
-
-| 方案 | 召回率 | 成功率 | 平均最大上下文 |
-|------|--------|--------|---------------|
-| 关闭检索 | 低 | 低 | ~82k tokens |
-| Embedding 检索 | 中 | 中 | 中 |
-| **Symphony 技能检索** | **0.741** | **0.615** | **~21.5k tokens** |
-
-Symphony 在 Top-5 选择上取得最佳效果，且把平均最大上下文从约 82k tokens 降到约 21.5k tokens（**降幅 ~74%**）。
-
-### 三个实战场景（独立可接力）
-
-**场景一：视频处理（仅使用技能检索）**——技能库膨胀到数千时，Agent 通过技能目录逐步探索"视频/音频处理"主分支 + "文本整理 / 报告生成"辅助分支，最终覆盖：视频读取与处理 / 音频转写 / 口头禅检测 / 停顿分析 / 关键片段整理 / 报告生成 / 备选兜底处理。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-
-**场景二：办公写作（仅使用技能编排）**——任务："英文博客截图翻译后整理成公众号文案并发邮件"。没有编排时 Agent 输出仍是图片无法串联；有编排后规划稳定路径：**图片翻译 → 文字识别（图片→可编辑文本）→ 文案撰写 → 邮件发送**，每步输出必须能喂入下一步。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-
-**场景三：出行规划（先检索后编排）**——两个核心组件联动的典型用例。
-
-启用方式：在 JiuwenSwarm 页面"配置信息-其他配置"打开"**技能交响乐**"开关。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-
-### Symphony 与 SwarmFlow 的层次关系
-
-| 维度 | SwarmFlow（团队层） | Symphony（能力层） |
-|------|-------------------|------------------|
-| 抽象对象 | 多个 Agent 角色 | 多个 Skill |
-| 核心数据结构 | 工作流编排图（含阶段 / 交接 / 并行） | 技能依赖图（输入输出衔接） |
-| 解决的问题 | 团队怎么稳定配合 | 单 Agent 怎么从海量技能里选对 + 串稳 |
-| 决策权 | 编排归系统、智能归 Agent | 检索归 LLM（融入 Agent loop）、编排归图结构 |
-
-**关键洞察**：SwarmFlow 是"团队怎么配合"，Symphony 是"个人怎么打仗"。两者在 openJiuwen 体系里形成 **Agent 内部能力编排（Symphony） + Agent 之间协同（SwarmFlow）** 的完整双层架构。
-
-### 与"动态能力分发"行业趋势的对照
-
-openJiuwen 的判断与行业共识一致：**模型能力在增强，但系统能力没有同步增长**： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-
-- 模型可以理解复杂需求，却常常无法稳定调用外部能力；
-- 工具越来越多，却难以被高质量地检索和复用；
-- 流程越来越复杂，却缺乏统一的技能组织方式。
-
-Symphony 把 skill 当作"系统资产"来管理，而不只是提示词里附带的一段工具说明。这与 Anthropic MCP、OpenAI Codex 等的行业探索方向一致，但 Symphony 的差异点在于**双核心（树检索 + 图编排）同时落地**，且给出了 SkillsBench 上的量化收益（82k → 21.5k tokens 上下文降幅）。
-
-### 5 条独到判断
-
-1. **"选不准 + 用不好"是技能规模化的两大死结**，分开解决都不彻底——必须"检索 + 编排"双核心同时设计。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-2. **检索要融入 Agent loop，而不是执行前一次性预处理**。否则多意图 / 隐式意图这种需要推理的选择问题永远解不掉。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-3. **依赖图作为"结构化资产"沉淀**比每次临场推理更有价值——图可以"反复读取、复用、演进"，符合"长期资产 > 一次性推理"的工程哲学。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-4. **能力指纹 + 动态词表归一**是图能起作用的前提，否则"同名不同义 / 同义不同名"会让依赖关系失真。这是从 RAG / Schema 工程借来的关键技巧。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-5. **失败可局部修复**——沿图结构定位失败节点，就近替换或修补，不必整条链路推倒重跑。这把"局部性"思想从系统架构层（cache locality）推到了 Agent 编排层。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-
-### 3 条实践启示
-
-1. **技能数量超过 10-20 个就该考虑检索机制**，而非等"出问题再修"。Embedding 检索是过渡方案，**树检索 + Agent loop 集成**才是规模化终态。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-2. **依赖关系图应该离线构建 + 在线查询**，避免每次编排都做语义匹配——性能与稳定性双赢。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-3. **组合可靠 / 协同可解释 / 失败可局部修复**是判断"编排系统是否成熟"的三个硬指标，比"功能丰富"更重要。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-
-## 相关实体
-- [Agent Development Crawl Walk Run Crewai Iterative](ch03/004-agent.html)
-- [Agent Orchestration](ch01/095-agent-orchestration.html)（AWS — 多 Agent 编排对照）
-- [Meta Skill Skill Orchestration Opensquilla Jay](ch04/240-skill-skill.html)（笨小葱 — 单 Skill 编排对照）
-- [Ai Agent Tool Count Trap](ch04/279-ai-agent.html)（execute_code 算子的极简设计同源思想）
-- [Agentic Design System From Chatbot To Orchestration](ch01/005-agentic-design-system-from-chatbot-to-orchestration.html)
-
-## 3rd Source 原文存档
-→ [openJiuwen 开源 Jiuwen Symphony 技能编排与分发系统 — CSDN 2026-06-17](https://mp.weixin.qq.com/s/l7219b4sFVsrxzMFZwiv-Q)
-
-## 2nd Source 原文存档
-→ [openJiuwen开源SwarmFlow — AI技术立文 2026-06-12](https://mp.weixin.qq.com/s/phRUNiBQonR-22DRKFvLZA)
-
-→ [原文存档](https://asymco.com/2026/05/11/the-great-memory-panic-of-2026/)
-
-### HOTS/HITS 选择指南
-| 场景 | 推荐模式 | 理由 |
-|------|---------|------|
-| 战略决策支持 | HOTS | 需要人类把握全局，AI 做信息处理和方案生成 |
-| 创意探索/头脑风暴 | HITS | 需要人类的直觉和灵感，与 AI 共同推演 |
-| 标准化流程执行 | HOTS | AI 团队负责执行，人只在异常时介入 |
-| 游戏/沉浸式体验 | HITS | 体验的核心是参与感，而非结果优化 |
----
-→ [原文存档](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)
-## 4th Source — ScienceDiscovery AI 科研工作台（应用：BiomniBench-DA SOTA）
-
-**ScienceDiscovery** 是基于 Agent OS（JiuwenSwarm）开发的一站式 AI 科研工作台，解决科研场景两大痛点：工具碎片化（文献阅读/假设/代码/实验/调参频繁切换平台）与科研幻觉（大模型长链条任务易文献引用/因果推导/实验流程造假）。在权威生物医学智能体基准 **BiomniBench-DA** 上验证达业界 SOTA，成功应用于纳米抗体药物设计。
-
-- 互补角度：1) JiuwenSwarm 作为 Agent OS 在垂直科研领域的落地案例；2) BiomniBench-DA 生物医学智能体基准成为 openJiuwen 生态的评估锚点；3) 「零科研幻觉」诉求把 JiuwenSwarm 的多 Agent 协作与专用工具编排能力绑定到科学发现场景。
-
-→ [ScienceDiscovery 原文存档](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651050586&idx=2&sn=005d605a168bfbea6afdb2136fe639fe)
-
----
-
-## Ch08.009 AI Agent Memory Systems
-
-> 📊 Level ⭐⭐⭐ | 16.1KB | `entities/ai-agent-memory-systems.md`
-
-> 来源：[原文存档](https://memory.cobanov.dev/)
-
-# How AI Agent Memory Works
-Language models forget the moment they finish replying. Memory is everything the system around them does to make that not matter. This essay walks through the ideas one at a time, with something to touch in every section.
-**Source**: [raw article](https://memory.cobanov.dev/) | **Review**: value=8 confidence=7
-
-## 核心要点
-- AI agent memory 是一个循环系统：接收消息 → 编码 → 检索相似记忆 → 组装 prompt → 生成响应 → 决定是否记住新信息
-- 四种记忆类型：Episodic（事件）、Semantic（事实）、Procedural（技能）、Working（当前工作区）
-- 向量检索是语义搜索的基础，通过 cosine similarity 找到最相关的记忆片段
-- 记忆 governance（PII 过滤、时间有效性、超额标记）是区分 demo 与生产系统的关键
-- Multi-agent memory 是权限拓扑问题，而非简单的存储扩展
-- 生产系统需要分离读写路径、背景 worker 处理慢操作、多租户隔离、延迟预算管理
-→ [原文存档](https://memory.cobanov.dev/)
-
-## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-model-research-latest-directions.md)
-
-- [memory agent systems cobanov](ch03/004-agent.html)
-- [AI Agent 记忆系统架构](ch04/133-how-ai-agent-memory-works.html)
-- [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学](ch04/392-amazon-bedrock-agentcore.html)
-- [Hermes Agent 记忆系统 vs OpenClaw 记忆观](ch03/066-hermes-agent.html)
-- [深度拆解 Hermes Agent 记忆系统](ch03/066-hermes-agent.html)
-- [Agent Memory 架构本质](ch04/329-perplexity-brain-self-improving-agent-memory-architecture.html)
-
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/multi-agent-coordination.md)
-## 深度分析
-### 记忆的本质是循环，而非存储
-Cobanov 的核心论点是"Language models forget the moment they finish replying"——这一定义将记忆问题从"存储"重新框架为"循环"。传统开发者倾向于将 memory 理解为 database（一种持久化存储），但实际上 memory 是一个持续运转的处理管道：每个用户消息触发一次完整的检索-组装-生成-写入循环。
-这一框架的重要推论是：记忆系统的性能不仅取决于存储层（vector DB 的查询速度），还取决于整个循环中每一个环节的效率——查询重写是否准确、embedding 模型是否适配领域、reranker 是否能平衡相关性与新鲜度。任何一个环节的瓶颈都会成为整个记忆系统的瓶颈。Memory is a lifecycle problem: write, age, supersede, redact, forget，而非简单的 CRUD 操作。
-
-### 四种记忆类型的认知科学映射
-Episodic / Semantic / Procedural / Working 的四分法直接借鉴自认知科学，每种类型对应不同的认知功能：
-
-- **Episodic memory**：时间有序的事件日志，回答"我们上次谈了什么"。检索策略以时间 recency 为主，但也可以按日期范围或主题查询。实现上，每轮对话结束后生成一个短摘要并写入 vector DB，下一轮对话时通过 embedding 相似度召回 top-3~5 条。
-- **Semantic memory**：结构化的事实和关系，回答"用户知道什么"。通常通过知识图谱实现，支持多跳推理（如"用户工作的公司位于哪个城市"）。图谱的边代表关系类型（works_at、lives_in、prefers），节点代表实体。
-- **Procedural memory**：学会的技能和工具使用，回答"agent 能做什么"。这决定了 agent 的工具调用模式和错误处理策略，而非关于用户的事实。实现上通常是 prompt 或 policy 文件中的规则集。
-- **Working memory**：当前的 scratchpad，回答"现在正在处理什么"。这决定了模型的"注意力焦点"，是唯一完全位于 in-prompt 的记忆类型。其容量受限于 context window 大小。
-四者的协同工作机制是：访客走到博物馆 agent 说"Tell me more about that Refik piece you mentioned earlier"时，episodic 找到之前聊过 Refik 的记录 → semantic 从 catalog 拉取该作品的完整描述 → procedural 触发 artwork_detail 工具获取实时数据 → working 将所有检索结果和当前消息一并放入 context，LLM 在此基础上作答。四个 store 对用户是"无感"的，但每个 store 有不同的读写规则和检索策略。
-
-### 向量检索的几何直觉与局限
-Embedding 将文本映射到高维向量空间（通常 1536-3072 维），相似语义的内容在该空间中距离较近。Cosine similarity 是衡量相似度的标准方法，因为它对向量长度不敏感。HyDE（Hypothetical Document Embeddings）的核心洞察是：问题和答案往往是不同"形状"的——直接 embedding 问题可能找不到包含答案的文档，因为答案的表述方式与问题不同。HyDE 先让 LLM 生成一个假设性答案，再 embedding 那个答案，找到形状相似的文档。这一技巧在实践中能将检索召回率提升显著。
-然而，embedding 模型的选择直接影响检索质量——通用 embedding 在垂直领域（如医疗、法律）可能表现不佳，需要 fine-tuned domain-specific embedding。此外，embedding 模型一旦更换，旧存储的所有向量都需要重新计算，这是一个被经常低估的运维成本。
-
-### 读写分离与治理门
-Memory governance 是将 demo 级记忆系统推向生产的关键。"Naive append"会导致 PII 泄露（credit card number 进入记忆存储）和矛盾（用户搬家后，新旧两个地址都存在，agent 不知道哪个是当前的）。"Naive overwrite"丢失时间上下文，无法回答"用户以前住在哪里"的问题。Governed 写入则维护了完整的时间线：标记旧事实为 superseded，保留用于时序推理，同时通过 PII filter 阻止敏感信息进入存储。
-这一设计的实现要求是：写入路径必须经过一个 governance gate，该 gate 负责 PII 检测（正则或模型）、时间有效性标注（valid_from / valid_until）和矛盾检测（发现新事实与旧事实冲突时，标记旧事实为 superseded 而非删除）。读取路径则需要在组装 prompt 之前应用时间过滤器（如"只返回当前有效的事实"）。
-
-### Multi-agent Memory：权限拓扑而非存储扩展
-当记忆从单个 agent 扩展到多个 agent 时，问题从"如何存储"变成"谁能看到什么"。Shared memory 不再是单一向量数据库，而是变成了一个权限图：Researcher agent 的研究笔记默认是 private（不需要广播到项目频道），Planner 的决策记录可能需要 shared（因为其他 agent 需要知道计划上下文），而用户偏好（如饮食禁忌）应该是 User-profile scoped（只对当前用户可见）。
-六种失败模式揭示了 shared memory 的核心风险：Cross-user leakage（研究笔记中的用户偏好泄露给其他租户）、Over-sharing（过多共享导致噪声）、Poition propagation（错误信息通过共享记忆扩散）、Conflicting decisions（不同 agent 基于不同版本的记忆做出矛盾决策）、Stale playbook（共享的决策规则过时但未被更新）、Attribution loss（无法追溯某条记忆是谁在什么上下文中写入的）。
-
-### 生产系统架构：读写路径分离与延迟预算
-Reference architecture 将系统分为两条路径：Agent runtime 在 request path 上（必须低延迟），Memory service 作为 side-quest（允许异步处理）。背景 worker 负责慢操作：embedding 计算、摘要生成、re-embedding 过时记忆、decay 策略执行。这些操作如果放在 request path 上，会直接增加用户感知延迟。
-Latency budget 分析显示 p95 目标 800ms 中，retrieval 占用约 495ms（Query rewrite 80ms + Dense search 60ms + BM25 30ms + Graph walk 50ms + Reranker 250ms + Pack+send 25ms）。Reranker 是最大的单一瓶颈（250ms），这解释了为什么许多系统在 production 中跳过 reranker 或使用轻量级 reranker——用一点点相关性损失换取显著延迟改善。
-
-## 实践启示
-### 对 AI 应用开发者
-1. **从四种记忆类型出发设计架构**：在设计新的 agent memory 时，先明确需要支持哪种记忆类型。简单的个人助手只需要 episodic + semantic；复杂的 multi-agent 系统需要额外考虑 procedural（工具策略）和共享 memory 的权限拓扑。
-2. **Embedding 模型选型决定检索质量上限**：不要默认使用 OpenAI 的 ada-002 或 text-embedding-3-large。花时间在具体垂直领域评估 embedding 质量——医疗场景用 PubMedBERT，法律场景用 LegalBERT，可能比通用 embedding 好很多。同时建立 embedding 模型版本管理策略，以便在未来模型升级时重新计算所有历史向量。
-3. **HyDE + RRF 是 production retrieval 的标配组合**：HyDE 处理 query/answer shape mismatch 问题，RRF（Reciprocal Rank Fusion）融合 dense/sparse/graph 三种检索结果。这两者一起使用可以将召回率提升 20-30%，而实现成本相对可控。
-4. **永远不要跳过"是否需要检索"的判断**：对于"Can you translate hello to Japanese"这类不需要记忆的请求，调用 vector search 是纯粹的浪费。在 retrieval pipeline 入口增加"need detection"步骤（简单的分类模型或规则），可以显著降低无用检索的延迟和成本。
-
-### 对安全与隐私工程师
-1. **PII governance 必须在写入路径而非读取路径**：在读取时过滤 PII 意味着敏感信息已经进入了存储，风险暴露面已经形成。正确的做法是在写入路径上用正则匹配（如 `\b\d{4}-\d{4}-\d{4}-\d{4}\b` 匹配信用卡号）和/或专用 PII 检测模型（如 Microsoft Presidio）拦截敏感信息。
-2. **多租户隔离是 multi-agent memory 的生死线**：每个租户的记忆必须严格隔离。实现上建议在 namespace per tenant 和 single collection + payload filter 之间做出选择——前者隔离严格但成本高，后者成本低但存在隔离失效的风险。对于高价值客户或有合规要求的场景，namespace per tenant 是值得的。
-3. **Deletion lineage 是审计合规的基础**：GDPR 的"被遗忘权"要求系统能够删除特定用户的所有记忆。但简单的物理删除（从 vector DB 中移除对应向量）可能不够——该记忆可能已经被用于生成 response 或写入其他 agent 的 shared memory。因此 deletion 操作本身应该是一个 audit event，触发 propagate 流程到所有衍生索引和共享存储。
-4. **Cross-user leakage 的测试用例**：在 memory 系统上线前，必须设计覆盖以下场景的测试：租户 A 的研究笔记中的用户偏好信息，是否会出现在租户 B 的 agent 响应中？这是最常见的 memory 相关安全漏洞，也是最难通过单元测试发现的——需要专门的 integration test 环境。
-
-### 对平台工程师
-1. **热/温/冷三层存储是 cost-efficiency 的关键**：并非所有记忆都需要 vector search 的计算成本。Top facts（活跃用户/项目的核心信息）放在 Redis 或内存 KV 中，每轮都读取；Recent episodes（近期对话）放在 vector DB 中，按需检索；Archived sessions（历史日志）放在 S3 中，仅用于回填或审计。三层架构可以将热数据的检索延迟降低一个数量级，同时将存储成本降低 70-80%。
-2. **Memory API 的最小表面设计**：生产系统的 memory API 只需要三个端点：`POST/memory/events`（追加原始事件）、`POST/memory/search`（混合检索，服务器端强制 scope 过滤）、`DELETE/memory/{id}`（遗忘，propagate 到衍生索引）。不要在 API 层面暴露过多的内部实现细节（如"更新某条记忆的 embedding"），这会破坏封装性并增加安全风险。
-3. **Embedding 模型更换的运维流程**：每当 embedding 模型更换时，所有历史存储的向量都需要重新计算。这不是简单的 batch job——它需要在重新计算期间暂停写入（否则新模型生成的向量和旧向量混在一起无法检索），或者采用双写策略（新旧向量并行写入，切换完成后清理旧向量）。提前设计好这个流程，避免在凌晨 3 点手忙脚乱。
-4. **Background worker 的优先级队列设计**：embedding 计算、摘要生成和 re-embedding 是不同的作业类型，应该使用不同的优先级队列。高优先级队列处理用户等待的同步检索，中优先级处理需要尽快完成的写入后任务（如 summary），低优先级队列处理非紧急的维护作业（如过时记忆的 re-embedding）。
-
-### 对产品经理
-1. **"记住一切"是错误的产品假设**：用户并不总是希望 agent 记住所有对话历史。有些对话是临时性的（"帮我查一下这个航班"），有些是敏感但不相关的（医疗信息不应与产品偏好混淆）。产品设计应该让用户能够选择性地"标记重要记忆"和"遗忘临时对话"，而不是默认将所有内容都写入长期记忆。
-2. **Memory 的"忘记"功能是信任建立的关键**：在用户界面中明确显示"agent 记得什么"并允许用户删除特定记忆，能够显著提高用户对 AI 产品的信任度。这不仅是隐私合规的要求（GDPR 等），也是产品竞争力的体现——用户更愿意使用一个他们能够控制的记忆系统。
-3. **Multi-agent memory 的 shared/private 默认为 private**：如果 agent 之间需要共享记忆，那应该是一个有意识的显式操作（类似"发布到项目"），而不是默认行为。默认共享会导致信息噪音和隐私泄露，而默认私有则要求开发者主动考虑共享场景——这是一个更安全的默认选择。
-4. **Memory 系统的可观测性指标**：上线 memory 系统前，必须建立以下 metrics：检索召回率（通过用户反馈或 ground truth 数据集评估）、PII 泄露次数（每次 governance gate 拦截都是一次告警）、平均检索延迟（p50/p95/p99）、记忆更新成功率（写入路径的 SLA）。这些指标应该在 dashboard 上实时展示，并在异常时触发告警。
-
----
-
-## Ch08.010 古法程序员复杂任务 Spec 写作：多 Agent 编排 + Skill 三层架构 + Gate 四态
-
-> 📊 Level ⭐⭐⭐ | 15.8KB | `entities/gufabiancheng-spec-for-complex-tasks-cc-codex.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 15.8KB | `entities/gufabiancheng-spec-for-complex-tasks-cc-codex.md`
 
 # 古法程序员复杂任务 Spec 写作：多 Agent 编排 + Skill 三层架构 + Gate 四态
 
@@ -1796,9 +2836,9 @@ frontmatter（name / 用于路由的 description「含适用/不适用/典型触
 
 ## 与 wiki 既有内容关系
 
-- **[Claude Code Dynamic Workflows 多Agent编排](ch09/073-claude-code-dynamic-workflows.html)**（696 行 9 source）：jiagoux/thariq 视角（6 模式/3 失败/10 场景）↔ 古法程序员视角（spec 写作/skill 三层/gate 四态/edge 三种）。**互补不重复**
-- **[高德 Spec as AI OS：反熵增架构](ch05/018-ai-native.html)**（274 行）：都强调 spec 结构化；高德更宏观（OS 级反熵增），古法程序员更落地（文件目录/skill 分层/edge 种类）
-- **[Harness Engineering](ch05/026-harness-engineering.html)**（290 行 5 source）：理论 + 5 制品 + 3 阵营；古法程序员的"skill 三层 + edge 三种 + gate 四态" = **Harness 概念的工程实现映射**
+- **[Claude Code Dynamic Workflows 多Agent编排](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-dynamic-workflows-multi-agent-orchestration.md)**（696 行 9 source）：jiagoux/thariq 视角（6 模式/3 失败/10 场景）↔ 古法程序员视角（spec 写作/skill 三层/gate 四态/edge 三种）。**互补不重复**
+- **[高德 Spec as AI OS：反熵增架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/spec-as-aios-anti-entropy-architecture-gaode-ai-native-series-2.md)**（274 行）：都强调 spec 结构化；高德更宏观（OS 级反熵增），古法程序员更落地（文件目录/skill 分层/edge 种类）
+- **[Harness Engineering](ch05/066-harness-engineering.html)**（290 行 5 source）：理论 + 5 制品 + 3 阵营；古法程序员的"skill 三层 + edge 三种 + gate 四态" = **Harness 概念的工程实现映射**
 
 ## 深度分析
 
@@ -1828,744 +2868,18 @@ frontmatter（name / 用于路由的 description「含适用/不适用/典型触
 
 → [原文存档](https://mp.weixin.qq.com/s/Q_k2duvAIv7hm9y6VxH3mQ)
 
-- [Claude Code 多智能体协作体系设计](ch03/057-claude-code.html)
-- [Harness Engineering](ch05/026-harness-engineering.html)
-- [Agent Loop 工程手册 8 个未解问题](ch04/360-loop-engineering.html)
-- [jiagoux 架构师视角 Dynamic Workflows](ch09/073-claude-code-dynamic-workflows.html)
-- [Agent Harness 架构深度](ch05/035-agent-harness.html)
+- [Claude Code 多智能体协作体系设计](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-multi-agent-collaboration-多智能体协作体系设计.md)
+- [Harness Engineering](ch05/066-harness-engineering.html)
+- [Agent Loop 工程手册 8 个未解问题](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-loop-engineering-handbook-8-questions-chen-jin-tencent-self-2026.md)
+- [jiagoux 架构师视角 Dynamic Workflows](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-dynamic-workflows-jiagoux-architect-perspective.md)
+- [Agent Harness 架构深度](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture-deep-dive-aksahy.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/multi-agent-coordination.md)
 
 ---
 
-## Ch08.011 How Grab is Using AI Agents to Boost Team Productivity
+## Ch08.021 MiniMax Agent Team: Mavis (Owner-Worker-Verifier)
 
-> 📊 Level ⭐⭐⭐ | 13.8KB | `entities/how-grab-is-using-ai-agents-to-boost-team-productivity.md`
-
-> 来源：[原文存档](https://blog.bytebytego.com/p/how-grab-is-using-ai-agents-to-boost)（ByteByteGo, 2026-05-18）
-
-## 核心要点
-- **问题背景**：Grab ADW（Analytics Data Warehouse）团队管理 15,000+ 张表，每月约 1000 人查询，最优秀工程师每周花 2 天回答同事的临时问题
-- **核心架构**：Classifier + Data Agent + Code Search Agent + On-call Agent + Summarizer 的多 Agent 协作系统
-- **读写分离**：Read-only 调查路径（4 个 Agent 并行协作）和 Write Enhancement 路径（单 Agent + 人工审核 gate）有根本不同的风险模型
-- **四大生产挑战**：①上下文累积导致 token 爆炸 ②工具定义过于冗余 ③PII/危险操作安全风险 ④用户信任建立
-- **核心洞察**：多 Agent 系统里，生产 Hardening 工作量远大于 Agent 开发本身；反馈回路的工程化是系统持续进化的关键
-
-## 技术洞察
-### 问题结构化：一致性比差异性更值钱
-Grab ADW 团队的核心观察是：**问题的答案各不相同，但回答的过程高度一致**。工程师收到的问题每次不同（"为什么这个 ID 是乱码？"、"能给这个表加一列吗？"），但调查过程都是：搜索数据目录 → 追踪数据血缘 → 验证 SQL → 检查日志。这个一致性是自动化的前提信号——只要调查过程可重复，就能自动化。
-这给我们的启发是：在评估一个工作是否适合 Agent 化时，重要的不是问题看起来多复杂，而是**解决过程的变异性有多高**。变异性低（即使问题本身复杂），Agent 化的成功概率高；变异性高（即使单个问题简单），Agent 化难度大。
-
-### 大脑与手的分离
-Grab 的设计哲学是"Decoupling the Brain from the Hands"：
-
-- **Brain** = LLM，负责推理、决策、生成
-- **Hands** = Specialized Agents 和 Tools，负责实际执行（查询、代码搜索、状态检查）
-这个分离的价值是**可调试性（Debuggability）**。当系统输出错误答案时，团队可以定位：问题是推理层（Brain 给出了错误判断）还是执行层（特定 Tool 返回了错误信息）。这个定位能力在单一大模型系统里往往很难做到。
-
-### 专业化 Agent vs 单体 Agent 的权衡
-| 维度 | 单体 Agent | 专业化 Multi-Agent |
-|------|-----------|-------------------|
-| 部署复杂度 | 低（一个模型调用） | 高（多个 Agent 协调） |
-| 可调试性 | 低（黑盒） | 高（每个 Agent 职责清晰） |
-| 可维护性 | 高（改一处） | 低（改一处可能影响协调） |
-| 推理延迟 | 低 | 高（串行执行） |
-| 能力上限 | 受单模型能力限制 | 可叠加各 Agent 专长 |
-Grab 明确选择了专业化路线：**当你要替代一个需要几小时的人工调查时，多花几分钟获取精确答案仍然massive improvement**。这个取舍逻辑值得借鉴——Agent 化系统的延迟代价只有在它相对于基线没有显著优势时才成问题。
-
-### 技术栈选择
-- **FastAPI**：接收传入请求，管理 HTTP 层
-- **LangGraph**：管理多 Agent 协作的有状态逻辑（循环、条件分支、任务交接）
-- **Redis**：缓存和实时 Session 管理
-- **PostgreSQL**：对话历史和 Agent 元数据的持久化存储
-- **Hubble**：集中式元数据和数据目录
-- **Genchi**：数据质量可观测性平台（强制数据契约）
-- **Lighthouse**：Pipeline 执行状态和健康追踪
-注意 LangGraph 在这里的作用不是简单的工作流引擎，而是**状态机**——它处理真实的 Agent 循环、context switching 和任务交接，这些在 LangGraph 之前需要大量手写状态管理代码。
-
-## 深度分析
-### Agent 间 Context 管理的工程挑战
-多 Agent 系统的 token 累积问题比单 Agent 更严重：每个 Agent 的输出都是下一个 Agent 输入的一部分，context 在 Agent 间传递时会膨胀。 Grab 的解法是**层级式 context 压缩**：
-
-- **tiktoken 实时追踪**：每条消息都记录 token 计数，接近限制时自动摘要早期消息
-- **Tool 输出剪枝**：在将结果传递给下一个 Agent 前，用小模型提取相关片段和描述，而非传递完整输出
-- **Orchestrator 中介**：在每个 Agent 间加入清理和压缩逻辑
-这里有一个重要的架构洞察：**上下文管理不是 LLM 的责任，是基础设施的责任**。如果把所有 context 管理工作交给 LLM 判断，LLM 会消耗额外的推理能力处理自己的 context，而且判断质量不稳定。让基础设施层处理 context 压缩，LLM 只处理它最擅长的事情（推理和生成），这是合理的分工。
-
-### 工具设计的工程价值
-大多数 Agent 系统的工具设计是事后的——先有工具，再给工具写描述。但 Grab 的经验表明：**工具设计是 Agent 系统性能的主要杠杆之一**。
-初始设计有 30+ 工具，每个工具的描述都像通用 API 文档一样冗长。由于工具描述是 Agent prompt 的一部分，每个推理调用都要处理全部 30+ 工具的描述文本拖累了速度和输出质量。
-改进方案：Aggressive Simplification——只包含决策所需的工具描述部分，截断冗余输出，让每个工具的定义简洁可操作。结果是系统响应性显著提升。
-这个教训是：**工具数量和工具质量之间存在负相关**，特别是在 LLM 推理能力有限的情况下。一个设计良好的小工具集比一个臃肿的工具集更有价值。
-
-### 安全四层防御的纵深设计
-Grab 的多 Agent 系统接入数据库和代码生成能力，存在真实风险。他们的 4 层防御体系值得详细分析：
-**Layer 1 - Input Classification**：Classifier Agent 在执行前检测 PII 请求和超出范围查询。这个 layer 解决"问的问题本身是否合法"——而不是"答案对不对"。
-**Layer 2 - SQL Validation**：每个查询在被执行前检查：是否访问了 PII 列？是否包含危险操作（DELETE/DROP）？是否缺少分区过滤器（这会导致全表扫描）？Schema 合法性验证。这个 layer 解决"执行的查询是否危险"。
-**Layer 3 - Timeout Protection**：所有数据库查询都有严格执行时间限制，防止失控操作。
-**Layer 4 - Enhancement Controls**：Enhancement Agent 不能直接提交到主分支，所有变更需要人工审核，所有代码先在 staging 环境运行。这个 layer 解决"变更是否经过适当授权"。
-四层防御的逻辑是**每层的盲点由其他层覆盖**。Input Classification 可能有漏网的 PII 请求，但 SQL Validation 会拦住访问 PII 列的操作。每个 layer 独立负责一个维度的安全，但共同构成纵深防御。
-
-### 信任建立的动态调整
-最初设计：所有 AI 生成的回答在工程师审核前不发布。这安全但慢——在高峰期问题堆积，无人审核。
-
-改进后的设计：**立即发布答案，但标注为"未经审核"**。用户获得快速响应，同时知道答案的置信状态，可以选择性地进行人工复核。
-这个设计演变的深层逻辑是：信任不是静态的，是**随着系统性能证据积累动态扩展的**。系统上线初期，信任资本有限，高的审核率是合理的；随着系统性能数据积累（rejection rate 低，user feedback 好），信任边界可以扩展，释放人工审核资源用于更高价值的 work。
-这个模式对所有 AI Agent 系统有普遍参考价值：不要在系统上线初期就追求"无人化"，也不要永远停留在"全人工审核"阶段——建立性能指标驱动的动态审核策略。
-
-## 实践启示
-### 识别 Agent 化机会的第一步：画出调查路径
-不是所有重复工作都适合 Agent 化。第一步是把工作过程的调查路径画出来（不需要写代码，用白板或文档）。如果路径是**高度一致的**（每次都是：搜索 → 追踪 → 验证 → 检查日志），即使问题本身看起来千变万化，Agent 化成功概率高。如果路径本身不确定（不同问题需要完全不同的调查方式），Agent 化复杂度会大幅上升。
-
-### 从"帮手"到"主要工作者"的渐进策略
-不要在初期就设定"AI Agent 替代人工"的目标，这会造成政治阻力。更好的叙事是：**让最好的工程师把时间从回答问题中解放出来，专注于只有人才能做的事**。这个叙事让干系人更容易接受系统上线初期需要人工复核的设计，因为最终目标不是"消灭人工"而是"人工用在更有价值的地方"。
-
-### 生产 Hardening 的优先级排序
-当一个 Agent 原型在 demo 效果很好时，下一步不是上线，而是问"上线后会出什么问题"。Grab 发现的 4 类问题（context 爆炸、工具冗余、安全风险、信任建立）是有普遍性的。
-建议的上线前 Hardening 检查清单：
-
-1. **Context 压力测试**：模拟长会话（20+ 轮次），观察 token 累积对输出质量的影响
-2. **工具边界测试**：用边界条件调用（空输入、超大输入、恶意输入），观察 Agent 的错误处理
-3. **安全边界测试**：尝试注入 PII 请求、危险 SQL、越权操作，验证每层防御是否有效
-4. **信任校准测试**：让真实用户使用系统，收集第一批反馈，不急于扩大 AI 的自主范围
-
-### 反馈回路的工程化
-很多 AI Agent 系统在第一版上线后性能冻结——因为没有机制让系统从 production 使用中学习。Grab 的 annotation 系统值得学习：
-
-- **随机抽样测试**：随机选择 annotation 作为离线测试用例，确保系统在真实 failure 上测试
-- **模式分析**：问"Classifier 是否持续路由到错误的 Agent？"——这是系统性问题，不是单次失误
-- **质量指标趋势**：跟踪 rejection rate 的时间序列——突然上升意味着某处发生了变化
-- **定向改进**：基于分析结果，改进 Agent prompt、增强 Guardrail、为特定查询类型增加示例
-这个反馈回路的设计关键：**annotation 不只是记录，而是驱动改进的输入**。如果 annotation 只存在于数据库里没有人分析，它的价值接近于零。
-
-### 写操作 Agent 的人工 Gate 设计
-对于改变 production 数据的 Agent 操作（Enhancement Pathway），Grab 的设计是**半自动化**：AI 生成变更，但每一步都需要人工审核和批准。这个设计值得推广。
-关键原则：AI 生成的内容接触 production 的 gate 数量取决于内容的风险等级：
-
-- 读操作（调查、查询）→ 轻量监督或无监督
-- 写操作（数据变更、代码修改）→ 强制人工审核
-- 高风险写操作（删除数据、修改 schema）→ 强制多人审核 + staging 验证
-这个分层授权机制可以在任何企业 Agent 系统中复用。
-
-## 相关实体
-- [Baixing Ontoz Enterprise Ontology Multi Agent](ch03/004-agent.html)
-- [Dipg Ant Insurance Host Research Verify Offline Closed Loop](https://github.com/QianJinGuo/wiki-public/blob/main/entities/dipg-ant-insurance-host-research-verify-offline-closed-loop.md)
-- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/053-building-ai-agents-for-business-support-using-amazon-bedrock.html)
-- [Vercel Com How Superset Built The Ide For Ai Agents On Vercel](ch01/058-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
-- [Low Code Api Integration](ch03/054-how-to-build-low-code-api-integrations-for-enterprise-apps-u.html)
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/multi-agent-coordination.md)
-
-→ [原文存档](https://blog.bytebytego.com/p/how-grab-is-using-ai-agents-to-boost)
-
-## 相关实体
-
----
-
-## Ch08.012 Factory Missions
-
-> 📊 Level ⭐⭐⭐ | 13.5KB | `entities/factory-missions-multi-agent-shipping.md`
-
-## 核心架构
-**三角色**：Orchestrator（规划/拆解/调度）+ Worker（单个 feature 实现）+ Validator（Scrutiny + User-Testing 两类）。
-**关键约束**：
-
-- Orchestrator **不参与实现细节调查**，避免累积过细上下文
-- Worker 用 **fresh context** 先写测试再实现，不做"完成"判断
-- Validator **不看实现代码也不看 worker trajectory**，只读 validation contract 和 git 成品
-
-## 五大可抄设计原则
-1. **角色责任明文化**：先写"不许做什么"
-2. **Validation contract 前置**：在写代码之前产出行为断言列表，生成 agent 和评估 agent 必须不同
-3. **结构化 handoff 取代记忆**：5 字段（completed/not_completed/commands_executed/issues_found/procedure_compliance）
-4. **写串行、读并行**：文件写入/commit/validator 评估严格串行；检索/调研可以并行
-5. **验证用不同模型**：GPT-5.3-Codex 检查 Sonnet 写的代码是结构性对抗设计
-
-## 多 Agent 通信 5 模式
-| 模式 | Missions 用了吗 |
-|------|--------------|
-| Delegation | ✅ |
-| Creator-Verifier | ✅ |
-| Broadcast | ✅ |
-| Negotiation | ✅ |
-| Direct Communication | ❌ 故意不用（避免 state fragmentation） |
-
-## Validation Contract
-在任何代码出现之前 orchestrator 产出行为断言列表。每条包含：行为描述 + 验证工具 + 证据要求。
-**效果**：21 个 fix features 占 61 个实现 features 的 34.4%，一轮验证从未通过——说明 validator 在做该做的事。
-
-## Token 效率
-Slack 克隆 mission：778.5M tokens，**96% cache 命中**（744.9M 是 cache read）。关键：共享状态文件在 mission 期间几乎只读，prefix cache 最大化复用。
-
-## 竞品对比
-| 系统 | State 位置 | 验证方式 |
-|------|-----------|---------|
-| Mission Control | git + 共享 markdown | Validation contract |
-| Agent Teams | 每个 teammate 对话窗口 | lead/peer 互检 |
-| Experts Mode | Team Lead plan | QA/Review 专家并行触发 |
-
-## Bitter Lesson 反驳
-为什么不会被下一代模型 obsolete：
-1. orchestration 是 prompt，不是状态机——模型变好 = 规划变好
-2. separation of concerns 让 model specialization 收益随模型分化而增加
-3. validation contract 为人类需求建模，不为某模型建模——契约本身稳定
-**"锁死在单一模型家族的系统永远被这家最弱的能力约束。"**
-
-## 来源
-- Luke Alvoeiro @ AI Engineer Europe（YouTube, 2026-05-06）
-- How Missions Work — Theo Luan, Factory（2026-04-10）：https://factory.ai/news/missions-architecture
-- Introducing Missions（2025-02-26，2026 数据更新版）：https://factory.ai/news/missions
-
-## 深度分析
-### 为什么 Validation Contract 是核心
-传统的 agent 系统中，验证往往后置——代码写完后跑测试，测试驱动开发（TDD）在人类工程师中是好的实践，但在 agent 系统中容易被绕过。Factory 的关键洞察是：**"Tests written after implementation don't catch bugs. They confirm decisions."**
-Validation contract 的设计把"正确性定义"从实现过程中剥离出来，强制在写第一行代码之前完成。这不只是流程约束，而是认知约束——它切断了实现细节回流到验收标准的路径。在 agent 系统中，这意味着 validator 的判断不会被实现者之前的推理路径所污染。
-
-### Self-Evaluation Bias 的系统性影响
-Agent 的 trajectory 是 append-only 的。模型会从自己之前的推理里寻求连贯性，而不是质疑它。一个写完代码的 agent 评估自己写的代码，几乎一定会偏向"合理化"而非"找问题"。
-这个 bias 不是通过"提高模型能力"能解决的——它需要结构性对抗：让不同的 agent、用不同的模型、在不同的上下文中做验证。Factory 的设计是把 Scrutiny Validator 和 User-Testing Validator 都放在这个位置上，而验证者看的不是实现过程，是 git 成品和 validation contract。
-
-### Token 效率的本质：共享状态即 Cache
-96% 的 cache 命中率不是优化技巧的结果，而是架构设计的自然产物。当所有 agent 读写同一组共享状态文件（validation-contract.md、features.json、services.yaml、AGENTS.md），这些文件的内容在 mission 期间几乎只读，prefix cache 自动最大化复用。
-这揭示了一个朴素的原则：**如果要高效复用 cache，文件结构的稳定性比文件内容的变化更重要**。与其优化单个文件的 token 密度，不如确保共享状态文件在整个 mission 生命周期内保持稳定。
-
-### 串行写的数学必然性
-Factory 给了明确的数学：如果每个 agent run 错误率 0.1%，100 步累计成功率 90%；如果并行让每步错误率涨到 1%，100 步累计成功率暴跌到 36%。长周期任务的正确性是复利。
-这个数字解释了为什么 Factory 坚持"写串行"——不是不要并行，而是**写操作不允许并行**。并行读可以提速，写操作并行会导致互相覆盖、重复劳动、架构决策不一致。协调成本会吃掉并行带来的速度收益。
-
-### 模型分化时代的编排哲学
-"锁死在单一模型家族的系统永远被这家最弱的能力约束"——这句话指向了 Factory 的核心设计意图：用 model-agnostic 的方式，让不同角色使用不同提供商的模型。GPT-5.3-Codex 验证 Sonnet 写的代码，是结构性对抗设计，不是 marketing。
-随着模型能力持续分化，Claude、GPT、Gemini、DeepSeek 各自在某些维度上有比较优势。"把最对的模型放到最对的角色"这个收益，会随模型分化程度增加而增加，而不是减少。
-
-## 相关实体
-- [Factory Missions Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/factory-missions-architecture.md)
-- [Rag技术框架的演进方向](ch01/138-rag.html)
-- [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
-- [Wow Harness V3 Governance Protocol](ch05/008-harness.html)
-- [Hermes Agent 12 Layer Full Configuration Guide](ch03/066-hermes-agent.html)
-
-→ [原文存档](https://aws.amazon.com/cn/blogs/china/amazon-cloudfront-deploy-guide-cloudfront-domain-multi-tenant-architecture/)
-
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/multi-agent-coordination.md)
-## 实践启示
-1. **在写代码之前先写验收标准**：Validation contract 应该描述行为，而不是实现细节。每条 assertion 包含：行为描述 + 验证工具 + 证据要求。生成 contract 的 agent 和评估 contract 的 agent 必须不同。
-2. **用结构化 handoff 取代对话记忆**：Worker 完成后填 5 字段（completed/not_completed/commands_executed/issues_found/procedure_compliance），下一个 worker 读这份文档而不是上一个的对话历史。共享状态文件在 mission 期间保持只读稳定。
-3. **写串行，读并行**：文件写入、commit、validator 评估必须严格串行；codebase 检索、文档调研可以并行。不要让并行写入同一个 codebase。
-4. **验证用不同模型**：哪怕只是换另一家提供商的中等规模模型，也能避开同家族训练数据 bias。刻意让验证和实现走不同提供商的模型。
-5. **最小操作单元是计划级再分配**：Mission Control 里，用户是 50 个 droid 的项目经理，不是工程师。介入话术是"Drop X feature and add Y instead"，而不是"在函数 Z 里改一行代码"。
-6. **编排逻辑写成 prompt，不要写成状态机**：700 行文本中，4 句话的修改就能让执行策略发生戏剧性变化。新模型出来时只需改几句 prompt，不需要重写状态机。
-7. **用 five-field handoff 约束 worker 行为**：Worker 不被允许做"这功能完成了"的判断——这是 validator 的事。Handoff 文档的结构本身就在强化这个约束。
-→ [原文存档](https://mp.weixin.qq.com/s/etiYTXpmVdYWgw6nA6vA7A)
-
----
-
-## Ch08.013 Sub-Agent vs Agent Team 选型与编排原语
-
-> 📊 Level ⭐⭐⭐ | 12.4KB | `entities/sub-agent-vs-agent-team-selection.md`
-
-## 概述
-Sub-Agent vs Agent Team 选型指南——核心判断准则：**按上下文边界设计，而不是按角色设计**。五种编排原语（Prompt Chaining / Routing / Parallelization / Orchestrator-Worker / Evaluator-Optimizer）。
-
-## 核心判断准则
-> 多智能体架构里，最先该判断的不是"要拆几个"，而是这些子任务之间是否共享同一段上下文。能干净切开的用 Sub-Agent，必须共享状态的才上 Agent Team。
-**Design around context boundaries, not roles.**
-工程三问：
-1. 这两件事，需不需要看到对方的中间过程？
-2. 这两件事，会不会因为对方做完了某一步就影响自己下一步？
-3. 交给同一个 Agent 一次性干，会不会更省心？
-如果答案偏向"是"，就别拆。
-
-## Sub-Agent vs Agent Team
-| 维度 | Sub-Agent | Agent Team | 
-|------|-----------|------------| 
-| 上下文 | 独立上下文 | 共享上下文 | 
-| 通信 | 必须经过父 Agent | Agent 之间直接对话 | 
-| 新 Agent | 不能再生新 Agent | 可以互相拉起 | 
-| 适用场景 | 隔离 + 压缩 + 并行 | 持续协作 + 共享状态 + 互相调头 | 
-**Sub-Agent 硬约束：**
-
-- 子 Agent 之间不能直接通信
-- 子 Agent 不能再生新 Agent
-- 所有流量必须经过父 Agent
-- 只返回最终输出，不带中间思考
-**Sub-Agent 三个价值：隔离 / 压缩 / 并行**
-**Agent Team 适合：** 做着做着会发现问题然后需要互相调头的任务（如软件项目：前端改接口后端要立刻知道）。成本远高于 Sub-Agent，需要共享状态层 + 通信协议 + Lead Agent 仲裁。
-**口诀：任务不互相依赖，就别上 team；任务必须互相依赖，就别用 sub。** 
-
-## 最大坑：按岗位拆而不是按上下文边界拆
-常见错误：Planner → Developer → Tester → Reviewer，按人类公司分工切。
-每次交接信息都在变薄：
-
-- Planner 知道"代码刚被重构过某个奇怪判断是有原因的"——没传到 Developer
-- Developer 做了临时取舍（"这次先不改 token 校验顺序因为影响下游 SSO"）——也没沉淀
-LLM 没有上下班、没有茶水间记忆，靠上下文吃饭。能拿到什么上下文，就只能基于什么上下文做事。
-
-## 五种编排原语
-| 原语 | 说明 | 典型场景 | 
-|------|------|---------| 
-| **Prompt Chaining** | A 做完给 B，B 做完给 C | 先抽取 → 再翻译 → 再润色 | 
-| **Routing** | 根据任务特征派给最合适的 Agent | 客服"识别意图再分流" | 
-| **Parallelization** | 互不依赖任务并行跑再汇总 | 代码审查多维度分析 | 
-| **Orchestrator–Worker** | orchestrator 拆/派/收，workers 各自干 | Sub-Agent 标准形态 | 
-| **Evaluator–Optimizer** | 先生成，再评估，再迭代 | 报告生成、代码补全自检 | 
-> 多 Agent 不是产品形态，是一组可组合的工作流原语。
-
-## Sub-Agent description 是路由信号
-```python 
-"security-reviewer": AgentDefinition( 
-    description="Find vulnerabilities and security risks",  # ← 这是路由信号 
-    prompt="You are a security expert.", 
-    ... 
-) 
-``` 
-description 不是注释，是路由信号。写得含糊，路由就含糊；边界清楚，分发也清楚。
-
-## 判断框架
-| 你在问的问题 | 该考虑的方向 | 
-|-------------|-------------| 
-| 能不能一个 Agent 干完？ | 能就先这样，别提前优化 | 
-| 子任务需不需要看到彼此中间过程？ | 不需要 → Sub-Agent；需要 → Agent Team | 
-| 子任务跑的时候要不要互相影响？ | 不要 → 并行 Sub-Agent；要 → Team | 
-| 是不是只想"看起来更高级"？ | 是 → 退回单 Agent，先把任务模型搞清楚 | 
-| 每步要不要严格按业务规则走？ | 要 → 加确定性中间层，不要硬塞给 team | 
-
-## 隐藏成本
-多 Agent 带来：编排逻辑维护成本 / Agent 间契约版本化 / 调试链路变长 / 上下文一致流转（信息差导致动作错）/ 治理成本翻倍。
-**当任务高度依赖，协调成本远大于收益，或上下文压根没法切干净时，单 Agent 反而最稳。**
-
-## 深度分析
-1. **Sub-Agent 本质是"上下文压缩隔离"而非任务分解**
-   许多资料将 Sub-Agent 描述为"把大任务拆小"，但更深层的逻辑是：**通过隔离上下文来压缩信息流复杂度**。每个 Sub-Agent 只看到自己需要的那段上下文，不是任务变小了，而是信息量被合理切分了。这一洞察解释了为什么强行让 Sub-Agent 之间互相传递中间结果会迅速失控——那等于在破坏隔离机制本身。
-2. **Agent Team 的协调成本被严重低估**
-   现有讨论集中在"共享状态层、仲裁机制"等技术成本，但更大的隐性成本是**契约稳定性**：当一个 Agent 的输出格式发生变化时，所有依赖它的其他 Agent 都需要同步调整，这形成了一种全链接的脆弱性。传统的微服务好歹有 API 版本管理，而 Agent Team 里的隐式契约完全靠"默契"维持。
-3. **"按岗位拆"错误的认知根源是拟人化**
-   Planner → Developer → Tester 的拆法本质上是在用人类组织的隐喻设计系统。但 LLM 没有固定的"下班时间"，它的上下文窗口就是它的工作记忆——强行模拟人类的岗位边界，只会制造不必要的上下文断裂点，而不是真正的职责分离。
-4. **Routing description 的模糊性是架构设计问题而非命名问题**
-   当 description 写得含糊时，根源往往不是措辞不够精准，而是**对任务边界本身就没有想清楚**。一个边界清晰的 Agent definition，其 description 自然精准；description 模糊是症状，任务边界不清晰才是病因。这个视角将代码层面的优化建议提升为了架构设计方法论。
-5. **编排原语的选择应该先于 Agent 类型选择**
-   现有资料通常先讨论"用 Sub-Agent 还是 Agent Team"，然后再带出编排原语。但实际上应该倒过来：**先确定用哪种编排原语（chain/route/parallel/orchestrator/evaluator）——这决定了信息流拓扑，然后才知道该选哪种 Agent 类型**。这是因为某些编排原语天然适配特定的 Agent 模式，比如 Orchestrator-Worker 基本就是 Sub-Agent 的标准形态，而 Evaluator-Optimizer 几乎必然需要 Agent Team 才能运作。
-
-## 实践启示
-1. **在写 Agent definition 前先画信息流拓扑图**
-   不要直接开始定义"security-reviewer"、"performance-optimizer"这些角色，而是先用箭头画出：信息从哪里进入，经过哪些转换节点，每个节点输出什么格式。只有在拓扑图上验证了信息流没有交叉或断裂之后，再把节点翻译成 Agent definition。这样可以提前发现"按岗位拆"的错误设计。
-2. **Sub-Agent 的 description 应由输出反推而非由角色正向定义**
-   常规思路是"这个 Agent 是什么角色 → 写对应的 description"，正确思路是"这个 Agent 需要让父 Agent 做出什么路由决策 → 反推 description 应该精确传达什么信号"。例如，"Find vulnerabilities"比"Security expert"更好，因为后者暗示的是角色标签，而前者明确表达了任务边界和输出预期。
-3. **为 Sub-Agent 设置明确的"拒绝继续"条件**
-   由于 Sub-Agent 不能直接通信，当它发现自己无法独立完成任务时，需要有明确的机制将控制权返还父 Agent。建议在 Agent definition 的 prompt 中显式声明：如果任务超出当前 Agent 能力边界或检测到需要其他 Agent 介入的情况，返回特定格式的"ESCALATE"信号而非尝试自行解决。这比依赖隐式的上下文判断更可靠。
-4. **评估是否需要 Agent Team 时，先做"协调成本实验"**
-   在正式引入 Agent Team 之前，先用以下实验估算协调成本：让两个独立 Sub-Agent 在完全隔离的情况下分别完成同一个任务的两个子环节，然后人工检查接口适配成本。如果发现人工适配成本已经很高，那么 Agent Team 的协调成本只会更高。这个实验成本极低，但能有效避免过度设计。
-5. **编排原语选型后，用日志追踪验证信息流是否符合预期**
-   多 Agent 系统的一个常见故障模式是：设计时选了 Parallelization（并行），但运行日志显示实际上是 Chaining（串行）——子任务在等待父 Agent 分发时引入了隐式的顺序依赖。通过在每个 Agent 的输入输出加上可读的流转标记（任务 ID、来源 Agent、目标 Agent、时间戳），可以低成本验证实际信息流是否匹配设计意图，而不是等线上出了问题再调试。
-
-## 相关
-- [Agent/Skills/Teams 架构演进与选型](ch04/202-agent-skills-teams.html)（阿里云飞樰，更全面的演进视角）
-- [Harness Engineering 系统梳理](ch05/026-harness-engineering.html)
-- [AutoResearch 多 Agent 开发](ch03/004-agent.html)
-
-## 相关实体
->- [Sub-Agent vs Agent Team 选型指南](ch03/004-agent.html) — 五种编排原语 + 硬约束 + 判断准则（中文原文）
->- [Hermes Agent vs OpenClaw 对比分析](ch03/066-hermes-agent.html)
->- [CLI、MCP、API 选型：Agent 接入层决策指南](ch03/004-agent.html)
-
-- [OpenClaw 多智能体团队搭建实战经验](ch04/028-openclaw-multi-agent-team-practice-v2.html)
-- [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](ch04/028-openclaw-multi-agent-team-practice-v2.html)
-- [MiniMax Agent Team: Mavis (Owner-Worker-Verifier)](ch04/124-ai-minimax-agent-team-mavis.html)
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/wiki-master-map.md)
-
----
-
-## Ch08.014 Scalable voice agent design with Amazon Nova Sonic: multi-agent, tools, and session segmentation
-
-> 📊 Level ⭐⭐⭐ | 12.1KB | `entities/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session.md`
-
-> 来源：[原文存档](https://aws.amazon.com/blogs/machine-learning/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session-segmentation/)
-
-## 核心要点
-- AWS Nova Sonic 支持多智能体架构、工具调用和会话分段
-- 三种架构模式：单智能体（工具直接调用）、路由多智能体（sub-agent as tool）、会话分段（session segmentation）
-- 与 DynamoDB、Kendra 等 AWS 服务深度集成
-- 基于 Amazon Bedrock AgentCore Runtime 和 Strands BidiAgent 框架
-- MCP 协议用于工具调用，A2A 协议用于 agent-to-agent 通信
-→ [原文存档](https://aws.amazon.com/blogs/machine-learning/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session-segmentation/)
-
-## 相关实体
-- [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
-- [上下文隔离](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-isolation.md)
-- [Agentium — 从零实现 Agent 系统的开源框架](ch01/630-agentium-agent.html)
-- [Owner-Worker-Verifier 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/owner-worker-verifier-architecture.md)
-- [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
-- [Agent 原理、架构与工程实践](ch03/004-agent.html)
-
-- [livekit agents：给大模型接上麦克风，没你想的那么简单](ch03/004-agent.html)
-
-## 深度分析
-### 三种集成模式的架构哲学
-文章提出了三种递进的集成模式，每种模式对应不同的延迟-复杂度权衡：
-**Pattern 1: AgentCore Gateway — 工具直接调用（最低延迟）**
-Nova Sonic 通过 AgentCore Gateway 直接调用 MCP 服务器上的工具，无需中间推理层。语音模型理解意图 → 选择工具 → 传递参数 → 获得结果 → 语音回复，全流程在语音模型端完成。
-这个模式的局限在于：复杂工作流（多步验证、条件逻辑、链式调用）的推理负担完全落在语音模型的 system prompt 上。当工具数量增加时，工具选择本身成为性能瓶颈。
-**Pattern 2: Sub-Agent（Agent-as-Tool）— 解耦推理**
-语音 orchestrator 将完整任务委托给子智能体，每个子智能体有自己的模型、system prompt、工具和推理能力。Strands 支持两种连接方式：
-
-- **Local agent-as-tool**：子智能体在进程内运行，无网络延迟，但与 orchestrator 共用进程和扩展资源
-- **Remote agent via A2A**：子智能体部署在 AgentCore Runtime 上独立运行，通过 A2A 协议通信。A2A 是连接不同框架（Strands、OpenAI、LangGraph、Google ADK）构建的智能体的开放协议
-关键延迟权衡： 子智能体调用会增加延迟（子智能体自身推理 + 工具调用），对于语音对话场景意味着「更长的沉默」。AWS 建议子智能体使用 Amazon Nova 2 Lite 等小型高效模型来控制延迟。
-**Pattern 3: Session Segmentation — 超低延迟**
-这是针对语音场景专门设计的模式，不是 MCP 或 A2A 的直接映射。在同一 WebSocket 连接内，当对话从一个阶段转换到另一个阶段（如认证 → 账户查询 → 抵押贷款询问）时，关闭当前 Nova Sonic 会话并打开新的会话（新的 system prompt、新的工具集）。
-每个阶段获得：
-
-- 更短、更具体的 system prompt（减少推理开销）
-- 只加载当前阶段需要的工具（而非一个巨大的工具集）
-- 可选的子智能体（复杂阶段可用 Pattern 2，简单阶段保持工具调用）
-
-### 延迟优化的工程实践
-文章系统地总结了语音智能体的延迟优化技术：
-**1. 子智能体使用小模型**：orchestrator 用 Nova Sonic，对话质量由其保证；子智能体不需要大语言模型，用 Nova 2 Lite/Micro 即可。默认小模型，有必要时升级特定子智能体。
-**2. 状态化子智能体 + 缓存**：无状态的子智能体每次调用都访问数据库或 API，引入额外延迟。设计子智能体在会话内缓存数据源结果，后续问题从内存读取而非重复调用后端。
-**3. 认证后预取数据**：尤其适用于客服中心场景。用户认证后，主动在后台拉取账户余额、近期交易、待处理警示、抵押贷款状态。当用户询问时，答案已在内存中。
-**4. 并行化独立工具调用**：用户请求「给我所有账户概览」时，不要顺序调用「活期 → 储蓄 → 信用卡」，用并发执行一次完成三个调用。Strands 原生支持独立工具调用的并行化。
-**5. 填充短语掩盖延迟**：当工具调用不可避免时，通过 system prompt 指示语音模型说填充短语（"Let me check that for you…"）而非沉默等待。
-
-### MCP vs A2A：两个协议的角色分工
-文章澄清了两个协议的定位：
-
-- **MCP（Model Context Protocol）**：连接 agent 到工具的协议。AgentCore Gateway 托管 MCP 服务器作为托管端点，语音模型通过 Gateway ARNs 访问工具。
-- **A2A（Agent-to-Agent）**：连接 agent 到其他 agent 的协议。在 AgentCore Runtime 上，不同框架构建的智能体可以共享上下文和推理，使用共同格式通信。
-两者是正交的关系：MCP 解决「agent 如何调用外部功能」，A2A 解决「agent 如何与其他 agent 协作」。
-
-## 实践启示
-### 对语音 AI 产品经理
-1. **选择正确的集成模式**：
-
-   - 简单工具调用（查余额、查天气）：Pattern 1，延迟最低
-   - 复杂多步推理（贷款申请、故障排查）：Pattern 2，子智能体承担推理
-   - 多阶段对话（客服IVR流程）：Pattern 3，阶段隔离减少认知负担
-2. **延迟预算是核心指标**：语音对话的用户体验容忍度远低于文本。对每个查询，明确「用户期望的响应时间」，并用延迟预算反推架构选择。
-3. **系统 prompt 的分阶段设计**：即使不使用 Pattern 3，主动将系统 prompt 按对话阶段组织也能提升效果。将认证逻辑、账户查询、投诉处理分为独立的 prompt 分支，减少模型每次需要「忽略无关上下文」的计算。
-
-### 对架构师和工程师
-1. **A2A 协议的长期价值**：如果你的组织已有不同框架构建的智能体（LangGraph、AutoGen、自研），A2A 提供了跨框架协作的可能性。评估 AgentCore Runtime 上的 A2A 支持是未来智能体集成的关键投资。
-2. **MCP 工具托管的安全边界**：AgentCore Gateway 是 AWS 托管的 MCP 服务器。需要评估业务工具通过 Gateway 暴露的安全边界——哪些工具可以在 Gateway 上注册，哪些必须保持独立服务。
-3. **会话分段的上下文传递**：Pattern 3 的会话切换需要显式传递上下文（chat history）。设计阶段间的「交接协议」——认证阶段的结果（用户身份、权限级别）如何传递到下一阶段的 session。
-4. **Nova Sonic 异步工具调用**：Amazon Nova 2 Sonic 支持异步工具调用， 对话可以在工具运行时继续，接受输入、多工具并行、在用户中途改变请求时优雅调整。这是减少感知延迟的关键特性。
-
-### 对 DevOps 和 SRE
-1. **WebSocket 连接管理**：语音智能体依赖 WebSocket 维持实时双向流。设计连接管理策略：断线重连、超时处理、并发连接数限制。AgentCore Runtime 提供 microVM 级会话隔离，避免「 noisy neighbor」问题。
-2. **延迟监控指标**：除标准 LLM 指标外，语音智能体需要追踪：
-
-   - Time-to-first-audio（用户说话到听到响应的延迟）
-   - 工具调用成功率
-   - 阶段切换频率和切换延迟
-3. **容量规划**：语音智能体的扩展不是简单的实例数横向扩展。需要考虑并发 WebSocket 连接数、Bedrock AgentCore 的容器调度、以及下游工具服务的吞吐能力。
-
-### 对创业者和 ISV
-1. **现有智能体的复用是核心资产**：文章在结论中强调「The sub-agents you've already built are your biggest asset. Reuse them.」 如果你已有文本聊天机器人的工具/子智能体，它们可以低成本迁移到语音场景。
-2. **Strands BidiAgent 的框架价值**：Strands 提供了连接 Nova Sonic 和应用的双向流生命周期管理。对于不想深入 WebSocket 细节的团队，这是快速起步的集成路径。
-3. **垂直场景的专注**：文章的场景示例（银行、抵押贷款）都是高价值、复杂对话的垂直领域。语音智能体在这些场景的价值高于简单查询。评估创业方向时，优先考虑「对话复杂度高、人工成本高」的领域。
-
----
-
-## Ch08.015 扣子 3.0 协作系统：项目化 + Agent 编排 + 工具链打通
-
-> 📊 Level ⭐⭐⭐ | 11.8KB | `entities/coze-3-0-collaboration-system.md`
-
-# 扣子 3.0 协作系统：项目化 + Agent 编排 + 工具链打通
-> "AI Agent 的下一步，不只是更强的模型，而是**更像真实团队的工作系统**。" —— 量子位（编辑：金磊）报道
-
-**扣子 3.0 = 把 AI 对话升级为"项目化 + Agent 协作 + 工具链打通"的协作系统**。用户在一个项目里 @ 多个 Agent，每个 Agent 负责一个角色，围绕同一目标持续推进。
-
-> 核心转变：**从"随问随答的聪明人"到"能开工的小团队"**。
-
-→ [原文存档](https://mp.weixin.qq.com/s/lN9DgdfrN-If5BWPT495sg)
-
-## 三大核心升级（3 层抽象）
-| 层 | 升级 | 关键能力 |
-|---|---|---|
-| **L1 项目化** | 任务从对话 → 项目 | 资料/角色/任务/产物放进同一空间，围绕同一目标持续推进 |
-| **L2 Agent 编排** | 多人多 Agent 协作 | 选题 Agent 判断 / 资料 Agent 补背景 / 产品 Agent 拆结构 / 代码 Agent 实现 / 本地 Claude Code 工程检查 |
-| **L3 工具链打通** | Agent 不只在对话框 | 编程项目 + 视频项目 + 本地 Agent 接入 + 行业技能包 + 多端同步 + 桌面端本地文件处理 |
-
-> 关键表达："**@ 一下全员就位**" —— 用户需要的是**一组可以被调度的 AI 伙伴**。
-
-## 4 组实测亮点
-
-### 4 Agent 协作 = AI 热点追踪仪表盘
-- 角色：小曜（自带）+ 选题写作 + 产品设计 + 前端开发
-- 流程：判断新闻 → 补背景查事实找角度 → 拆页面模块 → 写代码
-- 价值：把"大而全的回答"拆成"不同角色的连续劳动"
-
-### 本地 Agent 接入 = 工程化项目
-- **导入 Claude Code / Codex CLI / OpenClaw** 到项目
-- 范式：从"自己组 AI 团队"到"把你原来用顺手的 AI 工具也拉进团队"
-
-### AI 编辑部桌宠
-- 4 种状态：待机眨眼/思考加载/提醒气泡/夸夸鼓励
-- 验证：从模糊创意 → 清晰产品结构 → 玩+用结合 → 可运行代码 → 后续扩展
-
-### 选题 → 文章 → 视频 一气呵成
-- 默认视频生成模型：**Seedance 2.0**
-- **角色/道具/文档/资产沉淀在项目里** → 后续不必每次重新定义
-
-## 行业技能包（不是简单加 prompt）
-> "把行业数据库、专业方法和高频工作流封装成**可调用能力**。"
-
-| 场景 | 能力 |
-|---|---|
-| 金融 | A 股/基金实时数据引擎 + 专业分析 |
-| 法律 | 法律法规检索 + 合同审阅 + 诉讼策略材料整理 |
-| 医疗健康 | 体检报告识别 + 关键信息结构化提取 + 健康档案整理 |
-| 自媒体 | 爆款笔记洞察 + 标题生成 |
-| 科研 | 论文检索 + 文献引用溯源 |
-
-> 对新人：降低从零摸索门槛
-> 对专业人士：接住检索/整理/初稿/结构化分析，**把人的时间留给真正需要判断和经验的部分**
-
-## 多端覆盖
-- iOS / Android / macOS / Windows / Web（coze.cn）
-- **手机远程遥控电脑完成工作**（手机可调用电脑桌面文件）
-- 任务不再被某一台电脑绑住 = Agent 从工具走向协作对象
-
-## 范式判断
-> 过去一年 AI 产品的竞争很容易被简化成**模型能力竞争**：
-> 谁更聪明，谁推理更强，谁写代码更好，谁上下文更长。
->
-> 但到了 Agent 产品阶段，另一个问题开始变得更关键：
-> **一个 AI 再聪明，能不能和其他 AI、工具、人类一起工作？**
-
-扣子 3.0 答案：**协作系统**。
-- 开发者：本地 Agent + 编程项目并行
-- 创作者：脚本/分镜/视频/音乐/续集一项目
-- 复杂业务：行业技能包
-- 新手用户：不懂 API/MCP 也能从项目开始
-
-## 真正的 Agent 产品 6 维
-> "**真正好用的 Agent，不应该只比单点能力，而要看它能不能进入真实工作流。**"
-
-1. 能不能把任务拆开
-2. 能不能接住上下文
-3. 能不能调用工具
-4. 能不能沉淀资产
-5. 能不能跨端延续
-6. 能不能让用户少切窗口、少搬材料、少重复解释
-
-## 与已入库 Coze 3.0 报道对照
-| 实体 | 来源 | 角度 |
-|---|---|---|
-| [扣子 3.0 多 Agent 协同实战](ch03/004-agent.html) | 网黑哥 2026-06-02 | 实战（开发小队 3 Agent / 品牌 4 风格 / 公众号 5 人 6 步） |
-| [扣子 3.0 本地 Agent 项目编排](ch03/004-agent.html) | 技术角度 | coze-bridge / Claude Code / Codex CLI 接入 |
-| **本文** | 量子位 2026-06-04 | 官方升级新闻 + 3 层抽象 + 行业技能包 |
-
-## 关键启示（对 Agent 团队）
-1. **项目化是 2026 Agent 产品的标准抽象** —— 对话框 = 临时；项目 = 持久
-2. **角色化 Agent 编排 > 单体 LLM** —— 把"大而全"拆成"角色分工"
-3. **本地工具接入是护城河** —— 把用户已顺手的工具拉进团队 = 黏性
-4. **行业技能包是商业化路径** —— 不只调教 Agent，而是预装专家经验
-5. **跨端是产品从工具到协作对象的关键** —— 任务不被某台电脑绑住
-6. **资产沉淀在项目里** —— 角色/道具/文档/中间产物都进项目空间
-7. **"@ 一下全员开工"是 Agent UI 的新范式** —— 用户与一组 AI 伙伴的协作界面
-
-## 相关对照
-- [Agent Skills vs Coze/Dify/n8n](ch04/309-agent-skills.html)
-- [字节 Trae Harness 指南](ch01/438-trae-harness-engineering.html)
-- [Meta Skill](ch07/026-meta-skill.html) —— "Skill 的 Skill"（OpenSquilla 抽象层）
-- [SkillOpt](ch05/028-skillopt.html) —— 训练 Skill 文档（与 Coze 3.0 的 Skill 包机制不同）
-
-## 深度分析
-
-### 洞察 1：协作系统是 Agent 产品竞争的第二条曲线
-量子位报道指出，2025 年 AI 产品竞争的核心是模型能力——谁推理更强、上下文更长、代码更好。但到了 Agent 产品阶段，真正的分水岭变成了**"一个 AI 能不能和其他 AI、工具、人类一起工作"** 。这意味着产品竞争从单点能力转向系统整合能力，协作系统成为新的差异化方向。
-
-### 洞察 2：@ 机制是 AI 用户界面的元问题解决方案
-"@ 一下全员就位"不只是快捷指令，而是一种**自然语言调度协议**的雏形。用户不再需要记住每个 Agent 的名字或调用方式，只需 @ 全体就能触发一组角色分工明确的 AI 伙伴 。这解决了 AI 产品普遍存在的"用完即走"问题，让任务能够在多个 Agent 之间持续推进。
-
-### 洞察 3：项目化本质上是上下文持久化
-项目空间将资料、角色、任务、产物全部沉淀在同一空间，使 Agent 的上下文不会因会话结束而丢失 。这对传统对话式 AI 是根本性颠覆——对话是临时的，项目是持久的。这意味着 AI 产品的状态管理边界从单次请求扩展到了整个项目生命周期。
-
-### 洞察 4：本地 Agent 接入重新定义"工程化项目"的边界
-导入 Claude Code / Codex CLI / OpenClaw 到项目，意味着 Coze 3.0 不再是一个封闭系统，而是一个**可以整合用户既有工具链的协作平台** 。范式从"自己组 AI 团队"变为"把你原来用顺手的 AI 工具也拉进团队"，这是从头造轮子到生态集成的转变，对于有工程化需求的用户具有强吸引力。
-
-### 洞察 5：行业技能包是 Agent 商业化的可复制路径
-金融/法律/医疗等行业的技能包不是简单加 system prompt，而是把**行业数据库、专业方法论和高频工作流封装成可调用能力** 。这种预装专家经验的模式比通用 Agent 更容易实现商业化——对新手降低门槛，对专业人士接管检索/整理/初稿等重复性工作，把人的时间留给真正需要判断的部分。
-
-## 实践启示
-
-### 1. 用项目作为 AI 工作的基本单元
-不论是内容创作还是开发任务，都应该从"项目"而非"对话"开始。创建项目时明确角色分工（选题/资料/产品/前端），让资产自然沉淀在项目空间内。这样可以在后续会话中直接复用上下文，避免每次重新定义角色和上传材料。
-
-### 2. 设计角色化 Agent 编排而非单体 LLM 调用
-在设计工作流时，优先考虑多角色分工而非让单一 Agent 完成全流程。例如 AI 热点追踪场景中，选题 Agent 负责判断新闻价值，资料 Agent 负责查事实，产品 Agent 负责拆结构，代码 Agent 负责实现。这种分工不仅提升了任务质量，也让每个 Agent 的能力边界更清晰。
-
-### 3. 将本地工具接入作为产品护城河
-如果你的 Agent 产品支持本地工具接入（如 Claude Code），应该学习 Coze 3.0 的思路：不是替代用户顺手的工具，而是**把它们整合进协作系统**。这比让用户迁移到新工具链的摩擦小得多，也更容易建立用户黏性。
-
-### 4. 在行业场景中预装方法论而非仅调教 prompt
-对于垂直行业场景，单纯调教 prompt 的天花板很明显。应该像 Coze 3.0 的行业技能包那样，**将行业数据库、专业方法论和高频工作流封装为可调用能力**。这让 Agent 不仅能回答问题，还能处理检索、整理、结构化分析等高频工作流。
-
-### 5. 设计跨端任务延续机制
-手机远程调用电脑桌面文件是多端协作的典型场景。实际工作中，可以设计类似的跨端任务延续：用户在外可以通过手机查看/操控项目进展，回到电脑后直接继续处理桌面端文件，无需手动同步材料。这让 AI 任务不再被某一台设备绑定。
-
-## 关联阅读
-
-- [扣子 3.0 多 Agent 协同实战](ch03/004-agent.html) —— 同样是 Coze 3.0 多 Agent 协作主题，网黑哥从实战角度提供了开发小队/品牌设计/公众号流水线的完整案例，与本文的官方升级视角互为补充。
-- [字节 Trae Harness 工程指南](ch01/438-trae-harness-engineering.html) —— 字节另一款 AI 产品 Trae 的工程化指南，可与 Coze 3.0 的本地 Agent 接入思路对照，理解字节在 AI 协作产品上的不同布局方向。
-
-## 相关实体
-
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/multi-agent-coordination.md)
-
----
-
-## Ch08.016 Thousand Token Wood v2: Multi-Model Heterogeneous Agent Council
-
-> 📊 Level ⭐⭐⭐ | 10.6KB | `entities/thousand-token-wood-sim-v2-hackathon.md`
-
-# Thousand Token Wood v2: Multi-Model Heterogeneous Agent Council
-
-> 原文存档：[原文存档](https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v2)
-
-## 概述
-
-Lester Leong（AdmiralTaco）Build Small Hackathon 2026 第二次提交的"Thousand Token Wood v2"工程报告。**核心创新**：4 个不同实验室的小模型组成 heterogeneous council，共同驱动一个金融市场游戏。
-
-**v1 → v2 进化**：
-- v1: 一个 fine-tuned 0.5B 模型跑 5 个 woodland creatures 交易市场（"看热闹"型）
-- v2: 玩家 = Patron（金融大佬）— 放贷、传内幕消息、做空、行贿、结盟；magistrate 追踪内幕交易；creatures 记得玩家如何对待它们
-
-## 核心架构创新
-
-### 1. Heterogeneity is the product（异质性即产品，不是约束）
-
-**Council 组成**（4 实验室的小模型）：
-- **gpt-oss-20b**（OpenAI）
-- **MiniCPM3-4B**（OpenBMB）
-- **Nemotron-Mini-4B**（NVIDIA）
-- **Qwen 0.5B fine-tune**（作者自训）
-
-**为什么不同模型更好玩？**
-- 同质模型 + 不同 prompt = "脚本"（行为可预测）
-- 异质模型 = "活的争论"（市场参与者真正"不同"）
-- 猫头鹰囤积方式 ≠ 狐狸投机方式——different training data + post-training 带来真实差异
-
-### 2. 服务层摩擦是真实工程痛点（不是模型层）
-
-实测发现的 vLLM 0.22.1 痛点：
-- JIT 编译 kernel 需 CUDA toolkit（`nvcc`）→ lean base image 不带 → 4 个模型全部同样失败 "could not find nvcc" → **一个 image fix 解锁全部**（不是 gpt-oss 特殊问题）
-- gpt-oss-20b MXFP4 原生量化 → 24GB L4 跑得动，channel 格式包裹 answer → consumer 需 extract final channel
-- MiniCPM3 需 `trust_remote_code`；Nemotron 干净加载
-- 通用解法：**tolerant JSON parse-and-repair layer**——所有模型输出都过这层，drop 无法 salvage 的部分，simulation 从不崩溃
-
-**经验法则**：建好一次这个 layer，加新模型 = config 改动，不需要 refactor
-
-### 3. 信息不对称需要 firewall（不是 prompt instruction）
-
-**机制**：玩家可"传 tip" 给 creature — 真实 tip（预测市场会涨）或虚假 tip（诱饵）。真实 tip 正确使用 → 玩家"heat" 上升；过线 → magistrate 调查。
-
-**安全属性要求**：
-- 真相标记（truth flag）必须**对 creatures 不可见**——这是安全属性，不是 UI
-- 隐藏 flag 存在玩家 ledger（off-prompt），公共 event record 构造时 strip
-- narrator 永远只总结公共事件
-- **核心测试**：每轮扫每个 creature 的完整 prompt，检查 banned tokens——**这是测试套件里最重要的一个**
-
-**原则**：给 agent 秘密信息时，"假设它会泄露，除非有测试证明它不能"
-
-### 4. 持久 memory：bounded summary 而非 raw history
-
-**机制**：creatures 之间 + 与 Patron 之间的 signed sentiment（你 short 我的作物、你偿还贷款、你拉我结盟）。
-
-**陷阱**：prompt inflation——raw history 无限增长 → 小模型淹没
-
-**解法**：
-- 模型永远只看到 **一行 bucketed summary**（"你对 Oona 感到温暖，对 Patron 警惕"）
-- 摘要从 integer sentiment 派生，cap 在最强几个 feelings
-- 完整 notes 留存（trace）但 bounded 不显示
-- 行为偏差：50% emergent（summary 引导模型）+ 50% mechanical（强敌对 creature deterministic 拒绝）
-
-## 实测结果（"What actually happened" 单次 seeded run）
-
-| Lever | Result |
-| --- | --- |
-| Council 模型 | 4 实验室，皆 <32B，部署在 Modal |
-| Fine-tuned 0.5B 可靠性 | 0% 自买、100% valid offer（击败自己的 3B teacher）|
-| Truth firewall | 0 tip flag 泄露（每 prompt 扫）|
-| Insider tip edge | 真实 tip 预先定位 → 正 P&L；虚假 tip 不获益 |
-| Heat → 调查 | 2 次 suspicious 胜利触发 magistrate 调查 |
-| Ruin | margin call + 贷款违约 → creature 流放，下一章归来 |
-
-## Takeaways（作者总结）
-
-1. **小模型是可靠格式生成器 + 不可靠推理器**——用 structure + prompting + 小 fine-tune 缩小 gap，不靠 scale
-2. **Heterogeneous council 比 homogeneous 有趣**——服务层稳定后，加新模型只需 config
-3. **Agent 秘密信息是 firewall 问题**——firewall 属数据流（测试证明），不是 prompt 指令
-4. **持久 memory 是让 agent 活起来的最便宜方式**——前提是 prompt 只看到 bounded summary
-
-## 实践价值
-
-- **Multi-lab 模型组合**是 agent 工程的真实方向（vs 单一 frontier model）——用差异化取代同质化
-- **Service layer 标准化**（vLLM config + JSON parser）是 heterogeneous council 的关键
-- **安全测试自动化**（扫每个 prompt 的 banned tokens）是 production agent 必修课
-- **Memory bounding**（一行摘要 + integer sentiment）证明小模型也能管理长期关系
-
-## 与现有实体的差异化
-
-现有 `entities/claude-code-hackathon-winners-2026.md` 和 `entities/claude-code-hackathon-expertise-digitization.md` 关注 Claude Code 生态内的 hackathon；本 entity 关注**多实验室小模型组合**的 agent council 工程实现——属于 Hackathon 维度的不同子主题。
-
-`entities/defense_at_ai_speed_microsofts_new_multi.md` 关注 multi-agent 在 security 场景；本 entity 关注 multi-agent **在游戏/经济模拟**场景，且是 heterogeneous models（同 multi-agent 标签但维度不同）。
-
-## 上线状态
-
-- 原文 URL: https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v2
-- 作者: Lester Leong（AdmiralTaco）— Build Small Hackathon 参赛
-- 部署平台: Modal
-- Council 完全开源 + traces 公开
-
-## 深度分析
-
-### 1. Hackathon 作为 AI 应用创新的加速器
-千 token 木材模拟 v2 展示了 hackathon 在 AI 应用创新中的价值——在有限时间内（24-48 小时），团队可以验证从"想法"到"可用原型"的路径。hackathon 的约束（时间短、资源有限）反而促进了创造性解决方案。
-
-### 2. 模拟+AI 的混合方法论
-木材模拟与 AI 的结合代表了一个新兴的方法论：用物理模拟生成训练数据，用 AI 学习模拟中的模式并加速预测。这种"模拟-学习-加速"循环在材料科学、气候模拟、药物发现中都有应用。
-
-### 3. 千 token 的效率约束创新
-"千 token"约束（极简提示词）迫使开发者找到最精炼的提示词设计——这与 prompt engineering 中的"少即是多"原则一致。约束驱动创新是 hackathon 的核心价值。
-
-### 4. 从 hackathon 原型到生产系统的鸿沟
-hackathon 原型证明了可行性，但从原型到生产系统需要：持续的数据流、错误处理、用户界面、性能优化——这些在 hackathon 时间框架内不可完成。
-
-### 5. 领域特异性 AI 应用的长尾价值
-木材模拟这类领域特异性应用不会登上头条，但对特定行业（林业、建筑）可能有巨大价值。AI 的最大价值可能在长尾领域而非通用场景。
-
-## 实践启示
-
-### 1. 用 hackathon 验证 AI 应用可行性
-在投入大量资源前，用 hackathon 快速验证"AI 能否解决 X 问题"——48 小时的验证远比 6 个月的规划高效。
-
-### 2. 模拟+AI：适合数据稀缺的场景
-如果你的领域缺乏真实数据但可以建立物理模拟，用模拟生成训练数据是可行路径。
-
-### 3. 约束驱动创新：设定 token/时间/资源上限
-给 AI 应用开发设定显式约束（如"1000 token 提示词"），迫使团队找到最精炼的解决方案。
-
-### 4. Hackathon 原型后：做可行性评估再做投入
-hackathon 证明了可行性后，先评估原型到生产的差距和成本，再决定是否投入全面开发。
-
-### 5. 关注你领域的长尾 AI 应用
-AI 的最大价值可能不在通用场景而在你领域的特定痛点——用 AI 解决"小但关键"的问题。
-
-## 相关实体
-- [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
-- [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](ch11/207-amazon-nova.html)
-- [Factory Mission Multi Agent Architecture](ch01/622-factory-mission-multi-agent-architecture.html)
-- [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
-- [Openclaw Multi Agent Team Practice V2](ch04/028-openclaw-multi-agent-team-practice-v2.html)
-
-## 原文链接
-
-→ [原文存档](https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v2)
-
----
-
-## Ch08.017 MiniMax Agent Team: Mavis (Owner-Worker-Verifier)
-
-> 📊 Level ⭐⭐⭐ | 10.5KB | `entities/minimax-agent-team-mavis.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 10.5KB | `entities/minimax-agent-team-mavis.md`
 
 # MiniMax Agent Team: Mavis (Owner-Worker-Verifier)
 **作者**：MiniMax 稀宇科技
@@ -2722,323 +3036,11 @@ Agent 间交接时常见错误：把完整上下文塞给下一个 Agent。
 - [Adversarial Verification](https://github.com/QianJinGuo/wiki-public/blob/main/entities/adversarial-verification.md)
 
 ## 相关实体
-- [OpenClaw 多智能体团队搭建实战经验](ch04/028-openclaw-multi-agent-team-practice-v2.html)
-- [Sub-Agent vs Agent Team 选型与编排原语](ch03/004-agent.html)
+- [OpenClaw 多智能体团队搭建实战经验](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-multi-agent-team-practice.md)
+- [Sub-Agent vs Agent Team 选型与编排原语](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sub-agent-vs-agent-team-selection.md)
 
 → [原文存档](https://mp.weixin.qq.com/s/TIL7o92f71DsPPLWT4_37A)
 
-- [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](ch04/028-openclaw-multi-agent-team-practice-v2.html)
-
----
-
-## Ch08.018 AP2 协议实测：Mandate 机制、Task 状态机与多 Agent 支付
-
-> 📊 Level ⭐⭐⭐ | 8.3KB | `entities/ap2-agent-payments-protocol-hands-on-analysis.md`
-
-# AP2 协议实测：Mandate 机制、Task 状态机与多 Agent 支付
-
-Google AP2（Agent Payments Protocol）工程实测分析。基于官方 Human-Present 场景完整复现，记录协议细节和工程踩坑——密钥路径一致性、CartMandate 结构、SD-JWT 选择性披露、Task 终态陷阱、多 Agent Token 消耗乘法增长。
-
-→ [原文存档](https://mp.weixin.qq.com/s/BmvObHXGPsqxoZ6J47QRLA)
-
-## 核心问题
-
-当 Agent 开始替用户做决定、甚至替用户花钱时，怎么证明这是用户本人授权的，又怎么保证 Agent 不会乱花钱。AP2 把商户对交易的承诺变成可验证的数字凭证，而不是依赖 Agent 的口头描述。
-
-→ [AgentCore Payments 与 x402 协议](ch11/057-agentcore-payments.html) — AWS 的对标方案
-
-## 实测踩坑
-
-### 1. 密钥路径一致性
-
-Credentials Provider 启动时生成 ECDSA 密钥对，公钥写到统一路径。Merchant Payment Processor 验证时去同一路径读公钥。如果四个 Agent 不在同一个 shell 环境里启动，路径对不上——报 Agent-provider public key not found，支付流程卡死。官方文档完全没提。
-
-### 2. CartMandate 结构
-
-```json
-{
-  "id": "cart_2",
-  "merchant": { "name": "Generic Merchant" },
-  "line_items": [{ "item": { "title": "12-cup drip coffee maker", "price": 3950 }, "quantity": 1 }],
-  "currency": "USD",
-  "status": "incomplete",
-  "iat": 1781686213,
-  "exp": 1781689813
-}
-```
-
-- 价格单位是分（3950 = 39.50 美元），规避浮点精度问题
-- status incomplete → 用户确认后才封存
-- 一小时有效期，ES256 签名
-
-### 3. SD-JWT 选择性披露
-
-支付环节用 SD-JWT 而非普通 JWT。给 Payment Processor 只展示金额和收款方，不展示卡号；给审计方再展示其他字段。隐私保护直接嵌进数据格式。
-
-### 4. Task 终态陷阱
-
-A2A 协议 Task 生命周期：completed、failed、cancelled 都是终态，一旦进入就不能再接收新消息。支付重试必须在应用层创建新 Task，不能在失败的 Task 上继续操作。
-
-这和 HTTP 无状态模型完全是两种思路——每个 Task 都是有状态、有生命周期的实体。
-
-### 5. 多 Agent Token 消耗
-
-一次确认购买消耗十次以上 API 调用（Shopping Agent 思考→调工具→委托子 Agent→子 Agent 思考→回传）。多 Agent 系统的 token 消耗不是线性叠加，而是**乘法增长**。Gemini 免费套餐每分钟 15 次请求限制，跑不了几轮。
-
-## 竞争格局
-
-| 协议 | 主导方 | 定位 |
-|------|--------|------|
-| AP2 | Google | 密码学背书的商务协议 |
-| ACP | OpenAI × Stripe | Agentic Commerce Protocol |
-| ACT | 支付宝 + 千问 + 淘宝闪购 + 阿里云百炼 | 国内监管 + 本土支付生态 |
-| APOP / ClawTip / AI Skill | 国内各方 | 碎片化 |
-
-蚂蚁数科 Anvita 平台让 Agent 持有资产、链上结算。蚂蚁 AI 支付累计 3 亿笔（2 亿最近两月新增）。
-
-→ [AgentCore Payments 与 x402 协议](ch11/057-agentcore-payments.html) — AWS AgentCore 支付方案
-
-## 协议局限
-
-- CartMandate 一小时有效期 + 单次 OTP → Agent 自主跨平台长周期任务场景会暴露局限
-- 更细粒度的授权范围控制是下一代协议方向
-- 蚂蚁 Anvita / Token Pay 指向更远方向：Agent 自己成为有经济主体资格的参与方
-
-## 深度分析
-
-### 密码学背书 vs 口头信任的范式转变
-
-AP2 的核心创新不在于"让 Agent 能支付"——Stripe API 早就做到了——而在于把商户对交易的承诺从自然语言层面提升到密码学可验证层面。CartMandate 用 ES256 签名，任何拿到商户公钥的一方都可以独立验签，不需要信任 Agent 的转述。这解决了一个根本问题：在多 Agent 协作中，中间 Agent 可能被篡改或幻觉，但密码学签名无法伪造。
-
-### SD-JWT 的隐私工程设计
-
-SD-JWT 选择性披露机制让同一份凭证在不同场景下展示不同字段——支付处理器只看到金额和收款方，审计方看到完整信息。这不是应用层的访问控制，而是数据格式层面的隐私保证。对比传统 JWT 的"全有或全无"模式，SD-JWT 为 Agent 间敏感数据传递提供了更细粒度的隐私屏障。
-
-### Task 有状态模型的工程代价
-
-A2A 协议的 Task 生命周期设计（completed/failed/cancelled 均为终态）带来了显著的工程复杂度。支付重试不能在失败的 Task 上继续，必须创建新 Task——这意味着应用层需要维护 Task 之间的关联关系、状态回滚逻辑、以及幂等性保证。与 HTTP 无状态模型相比，有状态 Task 模型更适合 Agent 协作场景（因为 Agent 交互天然是多轮、有上下文的），但对开发者的心智模型要求更高。
-
-### 多 Agent Token 消耗的乘法增长效应
-
-一次确认购买消耗十次以上 API 调用——这是 Agent 系统的结构性成本，不是优化能消除的。当 Agent 数量从 1 增加到 N，通信复杂度从 O(N) 变为 O(N²)。Gemini 免费套餐每分钟 15 次请求的限制，在单 Agent 场景下完全够用，但在多 Agent 商务场景下几轮就会耗尽。这对 Agent 基础设施提供商意味着：多 Agent 系统的定价模型不能按单次 API 调用计费，需要按"商务流程完成"计费。
-
-### 授权粒度与长周期任务的矛盾
-
-CartMandate 一小时有效期 + 单次 OTP 的设计，本质上是为 Human-Present 场景优化的。当 Agent 需要自主完成跨平台、长周期任务（如代购比价后分批下单），当前授权模型会成为瓶颈。下一代协议需要支持：可续期的委托凭证、分阶段授权（先比价、再下单、最后支付）、以及跨平台凭证互认。
-
-## 实践启示
-
-1. **密钥路径统一是多进程 Agent 的基础工程**：启动脚本必须统一设置环境变量，所有 Agent 进程共享同一密钥路径。这个细节在官方文档中缺失，但会导致整个支付流程卡死
-2. **SD-JWT 是 Agent 间敏感数据传递的优选方案**：在设计 Agent 协作系统时，优先考虑选择性披露的数据格式，而非依赖应用层的访问控制逻辑
-3. **多 Agent 系统需要按流程计费而非按调用计费**：Token 消耗的乘法增长意味着按 API 调用次数的定价模型在多 Agent 场景下会指数级膨胀
-4. **支付重试必须在应用层实现 Task 管理**：不能依赖 A2A 协议层的 Task 重用，需要在应用层维护 Task 关联和幂等性
-5. **关注蚂蚁 Anvita 的 Agent 经济主体方向**：Agent 持有资产、链上结算代表了比"代人支付"更远的演进方向
-
-## 相关链接
-
-- AP2 官方：github.com/google-agentic-commerce/AP2
-- AP2 文档：ap2-protocol.org
-- ACP（OpenAI × Stripe）：github.com/agentic-commerce-protocol/agentic-commerce-protocol
-- → [AgentCore Payments 与 x402 协议](ch11/057-agentcore-payments.html)
-- → [原文存档](https://mp.weixin.qq.com/s/BmvObHXGPsqxoZ6J47QRLA)
-
----
-
-## Ch08.019 Routa 多智能体协同交付平台
-
-> 📊 Level ⭐⭐⭐ | 6.9KB | `entities/routa-multi-agent-coordination-platform.md`
-
-## 核心理念
-"单一 Agent 聊天适合处理孤立任务，但一旦同一条线程同时承担拆解、实现、评审、证据收集和发布决策，语义边界就会迅速混乱。"
-**解决方案**：让软件交付链路显式化，每个角色干自己的活。
-
-## 三层架构
-1. **Planning**（规划层）
-2. **Execution**（执行层）
-3. **Verification**（验证层）
-
-## Kanban 六列
-- **Backlog** → Refiner 改写需求为 YAML story
-- **Todo** → Orchestrator 验证可执行性
-- **Dev** → Crafter 实现+验证+提交
-- **Review** → Guard 独立验证
-- **Done** → Reporter 总结交付
-- **Blocked** → Resolver 处理阻塞
-
-## 专业化 Agents
-| Agent | 职责 |
-|-------|------|
-| Backlog Refiner | 将粗糙需求改写为结构化YAML，包含acceptance criteria、INVEST检查 |
-| Todo Orchestrator | 重新解析YAML，不合格则退回 |
-| Dev Crafter | 实现、验证、提交、写Dev Evidence |
-| Review Guard | 独立验证每条acceptance criteria |
-| Done Reporter | 留下completion summary |
-| Blocked Resolver | 处理依赖/环境/需求歧义导致的阻塞 |
-
-## Review Gate 三层验证
-1. **Code Analysis**（代码分析）
-2. **Test Verification**（测试验证）
-3. **Specification Compliance**（规格合规）
-
-## Entrix 验证引擎
-- Rust 编写（`crates/harness-monitor/`）
-- 定义 fitness rules（文件行数、测试存在性、代码模式）
-- 支持 dry-run 和多 tier 运行
-```bash
-cargo build -p entrix
-entrix run --tier fast
-entrix run --tier normal
-```
-
-## 深度分析
-**从痛点出发理解 Routa 的设计动机**：
-当前大多数 Coding Agent 产品（如 Claude Code、Codex）解决的是"需求翻译成代码"这前半段问题，但软件交付远不止翻译这一个环节。真实需求需要经历拆解、确认边界、明确验收标准、实现、复核、上线确认，这条链路，单个 Agent 在单条聊天线程里根本无法承担。
-phodal 在 README 中指出的核心矛盾：「单一 Agent 聊天适合处理孤立任务，但一旦同一条线程同时承担拆解、实现、评审、证据收集和发布决策，语义边界就会迅速混乱。」这个观察直接催生了 Routa 的设计哲学——**让软件交付链路显式化，每个角色干自己的活**。
-**Kanban 范式对 Agent 协作的深层意义**：
-Routa 选择 Kanban 而非线性流水线是有深意的。Kanban 的可视化板不仅展示了"做什么"，更重要的是展示了"在哪卡住了"。六列（Backlog → Todo → Dev → Review → Done → Blocked）天然提供了状态可视化和阻塞检测能力。Dev Crafter 完成后进入 Review Guard，如果被阻塞在 Review 阶段，Blocked Resolver 可以精准介入而不是让整个流程停摆。
-更重要的是，卡片本身会随流转逐渐严格化：Backlog 产出 YAML story，Todo 补上 execution brief，Dev 追加 Evidence，Review 加上 Findings，Done 写 summary。信息逐层累积，形成完整的证据链，而不是在一条聊天记录里反复拉扯。
-**Entrix 验证引擎的设计理念**：
-Review Gate 不是靠 AI 喊"LGTM"，而是通过 Rust 编写的 Entrix 验证引擎，依据明确的 fitness rules 判定。fitness rules 可以定义：文件行数上限、测试存在性要求、禁止代码模式等。这种规则驱动的方式避免了 AI 评审的主观性，为自动化交付提供了客观基准。
-**技术架构的统一性**：
-Web 端（Next.js 16.2）和桌面端（Tauri + Rust Axum）共享同一套 `api-contract.yaml` 定义的语义边界（workspace、session、task、trace、codebase、worktree、review），确保两端行为一致。Rust crates 分层（routa-core、routa-server、routa-cli、harness-monitor）提供了清晰的责任边界和可扩展性。
-
-## 实践启示
-**1. 复杂软件交付场景应显式建模角色职责**：当任务涉及需求分析、实现、评审、发布等多个环节时，单一 Agent 聊天窗口会因语义边界混乱而失效。应将交付链路显式化，让每个 Agent 专注单一角色。
-**2. Kanban 范式可有效解决 Agent 状态追踪问题**：相比线性流水线，Kanban 的列状态天然适合追踪多 Agent 协作中的进度和阻塞。结合 Blocked Resolver 角色，可以实现"发现阻塞 → 诊断原因 → 路由到正确泳道"的闭环。
-**3. 证据链驱动的 Review 比 AI 主观评审更可靠**：在代码评审中定义明确的 fitness rules（文件行数、测试存在性、代码模式），并通过自动化工具验证，比 AI 生成的"LGTM"更有可重复性和可审计性。
-**4. 上下文信息应随任务流转逐层累积**：卡片从 YAML story → execution brief → Evidence → Findings → summary 的演化过程，本质上是将散落在对话记录里的信息结构化沉淀，便于追溯和审计。
-**5. 多端一致性需要统一语义边界**：Web 和桌面端共享 `api-contract.yaml` 定义的核心概念，确保不同入口的行为语义一致，这是构建可信 Agent 平台的基础。
-
-## 与现有知识的链接
-- → [Routa Harness 可视化](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/routa-harness-visualization.md) — 旧版 harness 可视化方向
-- → [Harness Context](ch05/035-agent-harness.html) — 多 Agent 协作的上下文管理
-- → [原文存档](https://mp.weixin.qq.com/s/xN6JBQ2PQxSEjtOkIJG3yQ)
-
----
-
-## Ch08.020 Nature丨Google和FutureHouse同日登刊，把AI科学助理推到科研前线
-
-> 📊 Level ⭐⭐⭐ | 6.7KB | `entities/nature-ai-scientific-assistant-google-futurehouse.md`
-
-> -> [原文存档](https://mp.weixin.qq.com/s/uPcxYocLhQLky0uIn_QUow)
-
-# AI 科研助理：Co-Scientist vs Robin
-
-## 一句话
-
-Nature 2026 同日发表 Google Co-Scientist（Gemini 2.0 多智能体）和 FutureHouse Robin（文献+实验闭环），AI 正在从单点工具进化为科研伙伴。
-
-## 两个系统对比
-
-| 维度 | Co-Scientist（Google） | Robin（FutureHouse） |
-|------|----------------------|---------------------|
-| **底座** | Gemini 2.0 | Crow + Falcon + Finch |
-| **核心能力** | 结构化假设生成、专家评审 | 文献检索 → 假设 → 实验数据分析闭环 |
-| **实验闭环** | 仅生成假设，不做实验 | Finch 自主写代码做湿实验数据分析 |
-| **案例** | 白血病药物再定位（11个开放问题盲评第一） | 干性黄斑变性（30分钟读完825篇文献） |
-| **科学家介入** | 可随时提供反馈和假设 | 迭代中主动提议 RNA-seq |
-
-## 关键结论
-
-**专用科学文献接口至关重要**：o4-mini 替换 Crow 后幻觉引用从 0% 飙升至 45%。
-
-**当前局限**：成功在药物开发中最容易的细胞培养阶段；离"AI 自动做科学"仍有距离。
-
-## 深度分析
-
-**多智能体分工是科研 AI 系统化的关键路径**。Co-Scientist 的生成→反思→排名→进化→元评审五角色分工，本质上是将科学家评审流程自动化：假设生成后经独立评审过滤不合理选项，再通过进化机制迭代改进，最终由元评审给出综合判断。Robin 的 Crow（文献）→ Falcon（评估）→ Finch（实验分析）则是从文献驱动假设到实验验证的完整闭环。这种分工使每个智能体专注于单一能力，通过消息传递实现能力叠加，远比单一大模型"端到端"更可靠、更可解释。
-
-**领域专用文献接口是当前科研 AI 的核心竞争力**。Google Co-Scientist 的 Reflection 工具和 FutureHouse Robin 的 Crow 模型都专门针对科学文献设计，核心目的是避免大模型常见的"幻觉引用"问题。当 Robin 将底座从 Crow 换成 o4-mini 后，幻觉引用率从 0% 飙升至 45%——直接说明通用模型在科学场景下的局限。这对科研 AI 的启示是：在科学文献理解这类高精度任务上，专门训练的文献接口比通用大模型的性能差距可能是决定性的。
-
-**实验闭环能力将 AI 科研助理的天花板推到新高度**。Co-Scientist 仅生成假设，不执行实验；Robin 则更进一步，Finch 能接收湿实验原始数据、在 Jupyter 中自主编写并执行代码完成差异表达分析等全流程，并在迭代中主动提议 RNA-seq 等新实验方向。这种"假设→实验→数据分析→新假设"的闭环能力，使 AI 从辅助工具升级为真正的科研伙伴——可以主动推进研究进展，而非仅提供建议。
-
-**当前局限与突破口明确**。两系统的成功均集中在细胞培养阶段的药物筛选，这是药物开发中技术门槛最低的环节。真正的难题——起效机制解释、基因表达原因、动物/临床试验——尚未被触及。这也意味着短期内 AI 科研助理的价值在于：大幅加速文献综述和候选药物初筛，为科学家腾出时间专注于机制研究和转化决策。
-
-## 实践启示
-
-**研究团队应优先评估文献接口质量而非模型参数规模**。Nature 论文的对照实验表明，将 Crow 换成 o4-mini 后幻觉引用率从 0% 飙升至 45%，性能差距远比模型大小更显著。在选型科研 AI 工具时，应将"是否专门针对科学文献场景优化"作为首要标准，而非盲目追求模型规模。
-
-**药物再定位是当前科研 AI 价值最确定的落地场景**。两个系统都选择了药物再定位作为核心案例，盲评均获专家级结果。该任务有明确的评估标准（IC50、选择性、协同效应），且处于药物开发最早期的高通量筛选阶段，AI 可以发挥最大价值。从 ROI 角度看，药物再定位 AI 是当前最近可商用化的方向。
-
-**科学家角色正在从"执行者"向"决策者"迁移**。论文提出"首席科学家 + 超级博士后"的分工模型：首席科学家负责提出根本性问题、设计实验范式边界、做最终判断；AI 作为"超级博士后"不知疲倦地完成文献阅读、假设生成、实验数据分析等执行层工作。科研团队应开始思考如何重构工作流，让科学家聚焦于 AI 难以替代的战略判断和跨领域洞察能力。
-
-**迭代式人机协同比单次查询价值高一个数量级**。Robin 的案例中，AI 在首轮实验后主动提议做 RNA-seq，科学家同意后 Finch 自主完成分析并提出更新假设。这种迭代式交互使得 AI 能够不断修正方向，逼近正确答案。相比之下，单次假设生成的价值有限——真正的突破来自多轮"假设→验证→反馈"循环。
-
-## 一句话
-
-多智能体 + 领域专用文献接口 + 闭环实验能力 =下一代科研 AI 标配。
-## 相关实体
-- [Autoresearch Ai Scientific Discovery L0 L4 Challengehub](ch04/052-ai.html)
-- [Rag技术框架的演进方向](ch01/138-rag.html)
-- [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
-- [Wow Harness V3 Governance Protocol](ch05/008-harness.html)
-- [Hermes Agent 12 Layer Full Configuration Guide](ch03/066-hermes-agent.html)
-
----
-
-## Ch08.021 Multi-Agent AI Safety Research Funding Call（DeepMind 主导，1000 万美元，四大方向）
-
-> 📊 Level ⭐⭐⭐ | 5.1KB | `entities/investing-in-multi-agent-ai-safety-research-deepmind-2026-06.md`
-
-# Multi-Agent AI Safety Research Funding Call（DeepMind 主导，1000 万美元，四大方向）
-
-> 原文存档：[原文存档](https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/)
-
-## 概述
-
-Google DeepMind 联合 **Schmidt Sciences、Cooperative AI Foundation、ARIA**（英国先进研究与发明局）并获得 **Google.org** 支持，于 2026-06-11 发布**最多 1000 万美元**的多 Agent AI 安全研究资助公告。这是首个由主要 AI 实验室主导、联合多家长期 AI 安全公益机构**共同出资**的多 Agent 安全研究计划。申请截止 **2026-08-08**，获奖者 2026 秋季公布。
-
-核心命题：随着 AI 技术规模化，正在进入"数百万由不同组织构建的 AI Agent 在数字环境中交互、通信、谈判、交易"的新时代。这种跨组织、跨网络的 Agent 交互产生"涌现"集体行为（emergent collective behaviors），目前缺乏预测、测量和监控工具，构成传统单模型安全评估无法覆盖的新型风险。
-
-## 四大优先研究方向
-
-| 方向 | 核心问题 | 典型研究对象 |
-|------|---------|-------------|
-| **Sandboxes and testbeds** | 如何构建可复现的真实环境来评估多 Agent 安全 | 虚拟市场、模拟生态系统、跨组织工作流 |
-| **Science of agent networks** | 交互 Agent 种群的安全相关属性 | 集体能力如何涌现/扩展、网络如何失败/失稳、如何检测危险的种群级属性 |
-| **Strengthening agent infrastructure** | 强化跨平台 Agent 安全交互协议 | 身份、声誉、承诺（commitment）协议的抗压测试 |
-| **Oversight and control** | 监控已部署的 Agent 种群 | 种群级集体危害的检测与缓解方法 |
-
-## 关键贡献
-
-1. **首次主要 AI 实验室主导 + 公益联合资助模式**：DeepMind 提供资金，Schmidt Sciences、ARIA、Cooperative AI Foundation 提供研究框架，Google.org 提供运营支持，**单一资金方无法独立驱动**。该模式可被复用到未来多 Agent 安全研究。
-
-2. **从"单模型安全"到"种群级安全"的研究范式转变**：现有 AI 安全评估**主要在隔离状态下分析单个模型**，新框架则要求理解**交互产生的涌现行为**。这意味着 safety evaluation 范式从 per-model 转向 population-level。
-
-3. **四大方向形成完整闭环**：Sandboxes（实验环境）→ Science（理论）→ Infrastructure（协议层）→ Oversight（部署层）—— 从基础研究到实战部署形成完整覆盖，每一层都是研究机会。
-
-## 与 DeepMind 2025 工作的延续
-
-资助公告明确将本计划建立在 DeepMind 2025 年的两项基础工作上：
-
-- **2025 年多 Agent 交互理解框架**（2025 foundational framework for understanding these interactions）
-- **AI Agent Traps**（对抗环境下 Agent 面临的脆弱性研究）
-
-资助计划是这两项工作的规模化扩展，从实验室单点研究转向"全球独立研究者网络"协同推进。
-
-## 申请要点
-
-- **金额**：up to $10M total
-- **截止**：2026-08-08
-- **公布**：Autumn 2026
-- **资格**：学术界 + 独立研究者（全球范围）
-- **优先方向**：上述四大方向
-- **背景契合度**：
-  - Schmidt Sciences: Science of Trustworthy AI + AI Agents 计划
-  - ARIA: Scaling Trust 计划（关注 cyber-physical multi-agent coordination）
-  - Cooperative AI Foundation: cooperative AI 基础研究
-
-## 相关主题
-
-- [DiffusionGemma](https://github.com/QianJinGuo/wiki-public/blob/main/entities/diffusiongemma-4x-faster-text-generation-google-2026-06.md) — 同为 Google DeepMind 2026-06 公告
-- Multi-Agent System Safety — 概念层（待创建）
-
-## 一句话定位
-
-**"单模型安全 → 种群级安全"**的研究范式转变 + 首个主要 AI 实验室联合公益机构的 $10M 多 Agent 安全研究资助计划
-
----
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](ch04/392-openclaw-multi-agent-team-practice-v2.html)
 
 ---

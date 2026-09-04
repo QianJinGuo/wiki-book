@@ -1,6 +1,6 @@
 # Google's Gemini Omni video model surfaces ahead of I/O debut
 
-> 📊 Level ⭐⭐ | 10.7KB | `entities/googles-gemini-omni-video-model-surfaces-ahead-of-i-o-debut.md`
+> 📊 Level ⭐⭐⭐ | 10.7KB | `entities/googles-gemini-omni-video-model-surfaces-ahead-of-i-o-debut.md`
 
 ## 核心要点
 - Google Gemini Omni 视频模型在 2026 年 5 月 I/O 大会前夕意外泄露，Reddit 用户截获了更新后的 Gemini 界面中的模型卡片

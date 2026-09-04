@@ -45,11 +45,11 @@ Slack 是整个 Agent 的交互界面。用户通过slash command（`/prepaid Ap
 
 ## 关联阅读
 ## 相关实体
-- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](../ch01/138-rag.html)
-- [Create Custom Mcp Catalogs And Profiles](../ch07/047-create-custom-mcp-catalogs-and-profiles.html)
-- [Turn Repeated Instructions Into Reusable Skills In Lovable L](../ch03/014-turn-repeated-instructions-into-reusable-skills-in-lovable.html)
-- [Skillos Learning Skill Curation For Self Evolving Agents](117-skillos-learning-skill-curation-for-self-evolving-agents.html)
-- [Automation Anywhere Collaborates With Cisco Nvidia Okta And Openai Launching Ent](010-automation-anywhere-collaborates-with-cisco-nvidia-okta-a.html)
+- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/www-networkworld-com-versa-takes-aim-at-fragmented-enterprise-security.md)
+- [Create Custom Mcp Catalogs And Profiles](../ch07/001-create-custom-mcp-catalogs-and-profiles.html)
+- [Turn Repeated Instructions Into Reusable Skills In Lovable L](https://github.com/QianJinGuo/wiki-public/blob/main/entities/turn-repeated-instructions-into-reusable-skills-in-lovable-l.md)
+- [Skillos Learning Skill Curation For Self Evolving Agents](308-skillos-learning-skill-curation-for-self-evolving-agents.html)
+- [Automation Anywhere Collaborates With Cisco Nvidia Okta And Openai Launching Ent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/automation-anywhere-collaborates-with-cisco-nvidia-okta-and-openai-launching-ent.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/workflow-orchestration.md)
 
 → [原文存档](https://www.onlycfo.io/p/building-ai-agents-in-accounting)

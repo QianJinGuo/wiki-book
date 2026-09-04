@@ -10,7 +10,8 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐⭐ 工程师 | 需编程基础 | 5 |
+| ⭐⭐ 工程师 | 需编程基础 | 1 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 4 |
 
 ---
 
@@ -26,9 +27,88 @@ AI 最终要从屏幕走进物理世界。
 
 ---
 
-## Ch18.001 蚂蚁灵波 LingBot-Vision — 空间原生视觉基础模型 & LingBot-Depth 2.0
+## Ch18.001 Google DeepMind Robotics Accelerator（欧洲版，3 个月计划，15 家初创）
 
-> 📊 Level ⭐⭐ | 8.0KB | `entities/lingbot-vision-spatial-native-vision-foundation-model-ant.md`
+> 📊 Level ⭐⭐ | 5.1KB | `entities/powering-the-future-of-robotics-in-europe-deepmind-2026-06.md`
+
+# Google DeepMind Robotics Accelerator（欧洲版，3 个月计划，15 家初创）
+
+> 原文存档：[原文存档](https://deepmind.google/blog/powering-the-future-of-robotics-in-europe/)
+
+## 概述
+
+Google DeepMind 2026-06-09 启动 **Google DeepMind Accelerator: Robotics** 欧洲计划 —— 为期 3 个月、面向欧洲早期机器人初创公司的孵化项目，**15 家初创**入选，本周（2026-06）在伦敦集结。入选公司将获得：
+
+- **Google AI stack 访问权限**
+- **DeepMind + Google 专家的技术 mentorship**
+- **Gemini Robotics 模型**使用权
+- **产品/战略指导 + 合作网络**
+
+15 家初创分布 11 个欧洲国家（挪威、希腊、罗马尼亚、英国、法国、瑞士、丹麦、德国、意大利、瑞典），覆盖 **物流、制造、医疗、气候、先进导航**五大领域。
+
+## 15 家初创全景（按应用领域分类）
+
+### 工业自动化（5 家）
+
+| 公司 | 国家 | 核心产品 |
+|------|------|---------|
+| 3D-Components AS | 挪威 | RobTrack — AI 驱动的机器人焊接/金属 3D 打印参数选择与质量控制，**比当前实践快 280 倍** |
+| Acumino | 希腊 | 硬件无关 Physical AI，让机器人执行复杂工业任务，高 ROI |
+| Deltia GmbH | 德国 | 数字化产线工作流，转为流程图，让团队自动化重复任务 |
+| Qualia | 丹麦 | 基础设施层 — 将机器人基础模型转化为实际部署 |
+| Forgis | 瑞士 | AI Agent 理解机器，预测故障、优化运营 |
+
+### 医疗与神经科学（2 家）
+
+| 公司 | 国家 | 核心产品 |
+|------|------|---------|
+| Adapta Robotics | 罗马尼亚 | 复刻人类触觉的 Physical AI，自动化设备/软件 QA，支持循环经济 |
+| ROBEAUTE | 法国 | **脑组织内导航的微型机器人** — 诊断、治疗、监控神经病理 |
+
+### 建筑与空间（2 家）
+
+| 公司 | 国家 | 核心产品 |
+|------|------|---------|
+| AUAR | 英国 | 机器人 MicroFactories 直接部署到建筑工地，让住宅建设更可负担 |
+| Staer | 瑞典 | 现有摄像头/传感器上跑 CV，建 3D 空间模型，让机器人共享环境导航 |
+
+### 海洋与极端环境（1 家）
+
+| 公司 | 国家 | 核心产品 |
+|------|------|---------|
+| Bubble Robotics | 法国 | **海洋自主劳动力** — 无船版自对接水面/水下机器人星座，喂养实时水下世界模型 |
+
+### 机器人硬件/感知（3 家）
+
+| 公司 | 国家 | 核心产品 |
+|------|------|---------|
+| Danu Robotics | 英国 | 具身 AI 自动化复杂垃圾分类，提升效率与安全性 |
+| Embodied AI | 瑞士 | 远程操作人形机器人 — 客服场景下收集数据、持续训练操作技能 |
+| Extend Robotics | 英国 | 远程操作软件 + 数据管道，训练/微调基础模型 |
+| Generative Bionics | 意大利 | 基于 Physical AI 的人形机器人 |
+| Touchlab | 英国 | 先进纳米墨水 "e-skin" — 给机器人高分辨率触觉 |
+
+## 关键贡献
+
+1. **"embodied AI 在欧洲"的全景图**：15 家初创来自 11 个国家、5 大领域，呈现欧洲在**硬件无关 Physical AI、神经外科微型机器人、海洋自主机器人、e-skin 触觉**等前沿方向的产业分布。
+
+2. **医疗 + 神经外科的具身 AI 落地**：ROBEAUTE 微型机器人 + Adapta Robotics 触觉 QA 展示 embodied AI 从工业延伸到高难度医疗领域，是 **AI 落地物理世界** 的早期信号。
+
+3. **"AI 栈 + 模型 + 指导" 三位一体加速器模式**：DeepMind 提供的不是单纯资金，而是 AI 基础设施 + 模型访问 + 技术 mentorship 的捆绑包 —— 这种"加速器即 AI 平台"模式正在成为新一代 AI 公司孵化标准。
+
+## 一句话定位
+
+**embodied AI 在欧洲的产业化布局图** —— 15 家初创覆盖 11 国 / 5 大领域，从工业自动化到神经外科微型机器人
+
+---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+
+---
+
+## Ch18.002 蚂蚁灵波 LingBot-Vision — 空间原生视觉基础模型 & LingBot-Depth 2.0
+
+> 📊 Level ⭐⭐⭐ | 8.0KB | `entities/lingbot-vision-spatial-native-vision-foundation-model-ant.md`
 
 # 蚂蚁灵波 LingBot-Vision — 空间原生视觉基础模型 & LingBot-Depth 2.0
 
@@ -118,9 +198,9 @@ LingBot-Vision 的"空间原生"定位与 具身智能 的需求高度契合。�
 
 ---
 
-## Ch18.002 Unitree's IPO Filing: The State of the Robotics Market
+## Ch18.003 Unitree's IPO Filing: The State of the Robotics Market
 
-> 📊 Level ⭐⭐ | 6.7KB | `entities/unitree-ipo-robotics-market.md`
+> 📊 Level ⭐⭐⭐ | 6.7KB | `entities/unitree-ipo-robotics-market.md`
 
 ## 核心要点
 - 来源：Tanay Jaipuria (Wing VC) Newsletter，2026-05-18
@@ -132,10 +212,10 @@ LingBot-Vision 的"空间原生"定位与 具身智能 的需求高度契合。�
 - IPO 融资款约一半（3 亿美元）将用于 AI 模型训练，包括"Embodied Large Model"
 ## 相关实体
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloudflare-glasswing-mythos-security.md)
-- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](ch12/040-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes.html)
+- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](https://github.com/QianJinGuo/wiki-public/blob/main/entities/a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes-a-window-opens.md)
 - [Fine Tuning Nvidia Cosmos Predict 25 With Loradora For Robot Video Generation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tuning-nvidia-cosmos-predict-25-with-loradora-for-robot-video-generation.md)
 - [User Interviews Guide Pro](https://github.com/QianJinGuo/wiki-public/blob/main/entities/user-interviews-guide-pro.md)
-- [估值3000亿63家新实验室杀疯了Murati贝佐斯集体押注下一代Ai](ch04/052-ai.html)
+- [估值3000亿63家新实验室杀疯了Murati贝佐斯集体押注下一代Ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/估值3000亿63家新实验室杀疯了murati贝佐斯集体押注下一代ai.md)
 
 → [原文存档](https://www.tanayj.com/p/unitrees-ipo-filing-the-state-of)
 
@@ -188,9 +268,9 @@ Unitree 计划将 IPO 融资款约 3 亿美元（每年约 1 亿美元）用于 
 
 ---
 
-## Ch18.003 蔚蓝BabyAlpha A3消费级机器狗
+## Ch18.004 蔚蓝BabyAlpha A3消费级机器狗
 
-> 📊 Level ⭐⭐ | 5.1KB | `entities/weilan-babyalpha-a3.md`
+> 📊 Level ⭐⭐⭐ | 5.1KB | `entities/weilan-babyalpha-a3.md`
 
 ## 核心技术突破
 ### 异构计算架构
@@ -233,7 +313,7 @@ Unitree 计划将 IPO 融资款约 3 亿美元（每年约 1 亿美元）用于 
 ## 与现有知识的链接
 - → [原文存档](https://mp.weixin.qq.com/s/YfZ-bvXAmMBO3LFQ6eUPKA)
 - → [Yann LeCun JEPA世界模型](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yann-lecun-jepa-world-model.md) — AMI Labs具身智能方向
-- → [NVIDIA边缘端LLM for机器人](ch01/140-nvidia-edge-first-llms-av-robotics.html) — 英伟达边缘AI方案对比
+- → [NVIDIA边缘端LLM for机器人](ch01/213-nvidia-edge-first-llms-av-robotics.html) — 英伟达边缘AI方案对比
 
 ## 深度分析
 ### 异构计算vs单芯片：架构选择的工程哲学
@@ -276,94 +356,15 @@ Unitree 计划将 IPO 融资款约 3 亿美元（每年约 1 亿美元）用于 
 
 ---
 
-## Ch18.004 Google DeepMind Robotics Accelerator（欧洲版，3 个月计划，15 家初创）
-
-> 📊 Level ⭐⭐ | 5.1KB | `entities/powering-the-future-of-robotics-in-europe-deepmind-2026-06.md`
-
-# Google DeepMind Robotics Accelerator（欧洲版，3 个月计划，15 家初创）
-
-> 原文存档：[原文存档](https://deepmind.google/blog/powering-the-future-of-robotics-in-europe/)
-
-## 概述
-
-Google DeepMind 2026-06-09 启动 **Google DeepMind Accelerator: Robotics** 欧洲计划 —— 为期 3 个月、面向欧洲早期机器人初创公司的孵化项目，**15 家初创**入选，本周（2026-06）在伦敦集结。入选公司将获得：
-
-- **Google AI stack 访问权限**
-- **DeepMind + Google 专家的技术 mentorship**
-- **Gemini Robotics 模型**使用权
-- **产品/战略指导 + 合作网络**
-
-15 家初创分布 11 个欧洲国家（挪威、希腊、罗马尼亚、英国、法国、瑞士、丹麦、德国、意大利、瑞典），覆盖 **物流、制造、医疗、气候、先进导航**五大领域。
-
-## 15 家初创全景（按应用领域分类）
-
-### 工业自动化（5 家）
-
-| 公司 | 国家 | 核心产品 |
-|------|------|---------|
-| 3D-Components AS | 挪威 | RobTrack — AI 驱动的机器人焊接/金属 3D 打印参数选择与质量控制，**比当前实践快 280 倍** |
-| Acumino | 希腊 | 硬件无关 Physical AI，让机器人执行复杂工业任务，高 ROI |
-| Deltia GmbH | 德国 | 数字化产线工作流，转为流程图，让团队自动化重复任务 |
-| Qualia | 丹麦 | 基础设施层 — 将机器人基础模型转化为实际部署 |
-| Forgis | 瑞士 | AI Agent 理解机器，预测故障、优化运营 |
-
-### 医疗与神经科学（2 家）
-
-| 公司 | 国家 | 核心产品 |
-|------|------|---------|
-| Adapta Robotics | 罗马尼亚 | 复刻人类触觉的 Physical AI，自动化设备/软件 QA，支持循环经济 |
-| ROBEAUTE | 法国 | **脑组织内导航的微型机器人** — 诊断、治疗、监控神经病理 |
-
-### 建筑与空间（2 家）
-
-| 公司 | 国家 | 核心产品 |
-|------|------|---------|
-| AUAR | 英国 | 机器人 MicroFactories 直接部署到建筑工地，让住宅建设更可负担 |
-| Staer | 瑞典 | 现有摄像头/传感器上跑 CV，建 3D 空间模型，让机器人共享环境导航 |
-
-### 海洋与极端环境（1 家）
-
-| 公司 | 国家 | 核心产品 |
-|------|------|---------|
-| Bubble Robotics | 法国 | **海洋自主劳动力** — 无船版自对接水面/水下机器人星座，喂养实时水下世界模型 |
-
-### 机器人硬件/感知（3 家）
-
-| 公司 | 国家 | 核心产品 |
-|------|------|---------|
-| Danu Robotics | 英国 | 具身 AI 自动化复杂垃圾分类，提升效率与安全性 |
-| Embodied AI | 瑞士 | 远程操作人形机器人 — 客服场景下收集数据、持续训练操作技能 |
-| Extend Robotics | 英国 | 远程操作软件 + 数据管道，训练/微调基础模型 |
-| Generative Bionics | 意大利 | 基于 Physical AI 的人形机器人 |
-| Touchlab | 英国 | 先进纳米墨水 "e-skin" — 给机器人高分辨率触觉 |
-
-## 关键贡献
-
-1. **"embodied AI 在欧洲"的全景图**：15 家初创来自 11 个国家、5 大领域，呈现欧洲在**硬件无关 Physical AI、神经外科微型机器人、海洋自主机器人、e-skin 触觉**等前沿方向的产业分布。
-
-2. **医疗 + 神经外科的具身 AI 落地**：ROBEAUTE 微型机器人 + Adapta Robotics 触觉 QA 展示 embodied AI 从工业延伸到高难度医疗领域，是 **AI 落地物理世界** 的早期信号。
-
-3. **"AI 栈 + 模型 + 指导" 三位一体加速器模式**：DeepMind 提供的不是单纯资金，而是 AI 基础设施 + 模型访问 + 技术 mentorship 的捆绑包 —— 这种"加速器即 AI 平台"模式正在成为新一代 AI 公司孵化标准。
-
-## 一句话定位
-
-**embodied AI 在欧洲的产业化布局图** —— 15 家初创覆盖 11 国 / 5 大领域，从工业自动化到神经外科微型机器人
-
----
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-
----
-
 ## Ch18.005 NVIDIA Isaac Lab + Amazon SageMaker AI：机器人强化学习训练基础设施（Humanoid RL Scale-up）
 
-> 📊 Level ⭐⭐ | 3.6KB | `entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md`
+> 📊 Level ⭐⭐⭐ | 3.6KB | `entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md`
 
 # NVIDIA Isaac Lab + Amazon SageMaker AI：机器人强化学习训练基础设施（Humanoid RL Scale-up）
 
 ## 相关实体
 
-- [farewell ai2](ch04/052-ai.html)
+- [farewell ai2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/farewell-ai2.md)
 - [无惧off-policy偏移！bengio团队解绑后训练，大模型rl提速50倍](https://github.com/QianJinGuo/wiki-public/blob/main/entities/trajectory-balance-asynchrony-tba-bengio-papweekly.md)
 - [sft, rl, and on-policy distillation through a distributional](https://github.com/QianJinGuo/wiki-public/blob/main/entities/untitled-v2.md)
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-amazon-sagemaker-ai)
@@ -386,10 +387,10 @@ Physical AI is moving from research into production.
 
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](https://github.com/QianJinGuo/wiki-public/blob/main/entities/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md)
 - [Latest Open Artifacts 20 New Orgs New Types Of Models With N](https://github.com/QianJinGuo/wiki-public/blob/main/entities/latest-open-artifacts-20-new-orgs-new-types-of-models-with-n.md)
-- [Fundamentals Large Tabular Model Nexus Is Now Available On A](ch04/052-ai.html)
+- [Fundamentals Large Tabular Model Nexus Is Now Available On A](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fundamentals-large-tabular-model-nexus-is-now-available-on-a.md)
 - [5238213](https://github.com/QianJinGuo/wiki-public/blob/main/entities/5238213.md)
-- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](ch01/093-hy3-preview.html)
-- [Code As Agent Harness Survey](ch09/048-code-as-agent-harness.html)
+- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](https://github.com/QianJinGuo/wiki-public/blob/main/entities/腾讯混元新里程碑hy3-preview-发布开源agent-表现全面提升.md)
+- [Code As Agent Harness Survey](https://github.com/QianJinGuo/wiki-public/blob/main/entities/code-as-agent-harness-survey.md)
 
 ## 实践启示
 

@@ -38,13 +38,13 @@ The author pushes back on the "tech industry is dying" narrative as missing the 
 6. **Treat transparency as selection and churn reduction.** Honest founder content gives prospects a clear view of whom they're trusting with part of their business and selects for customers who resonate with your decision-making philosophy — a shot at less churn and a bigger brand.
 
 ## 相关实体
-- [Software after AI](../ch04/052-ai.html)
+- [Software after AI](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tomtunguz-com-software-after-ai.md)
 - [The repricing of software engineering labor](https://github.com/QianJinGuo/wiki-public/blob/main/entities/posts-repricing-of-software-engineering-labor.md)
-- [Primitive is the product](../ch05/018-ai-native.html)
+- [Primitive is the product](https://github.com/QianJinGuo/wiki-public/blob/main/entities/primitive-is-the-product-ai-native-product-philosophy.md)
 - [The minimum viable unit of saleable software](https://github.com/QianJinGuo/wiki-public/blob/main/entities/minimum-viable-unit-saleable-software-brandur.md)
-- [The token economy](002-the-token-economy-pt2-the-intelligence-company-gets-built.html)
-- [From doer to director](026-from-doer-to-director-the-ai-mindset-shift.html)
-- [Running an AI-native engineering org](../ch05/018-ai-native.html)
+- [The token economy](https://github.com/QianJinGuo/wiki-public/blob/main/entities/the-token-economy.md)
+- [From doer to director](024-from-doer-to-director-the-ai-mindset-shift.html)
+- [Running an AI-native engineering org](https://github.com/QianJinGuo/wiki-public/blob/main/entities/running-an-ai-native-engineering-org.md)
 - [When growth slows — product vs. sales](https://github.com/QianJinGuo/wiki-public/blob/main/entities/when-growth-slows-is-it-sales-fault-or-the-products-fault-the-answer-has-changed.md)
 
 → [原文存档](https://mrmarket.bearblog.dev/products-are-out-brains-are-in-new/)
