@@ -73,6 +73,12 @@ def main():
         if len(sections) > 1:
             warnings.append(f"{label}: {len(sections)} 相关实体 sections (duplicated)")
         for sec in re.finditer(r"^## 相关实体\s*$([^#]*?)(?=^## |\Z)", text, re.M | re.S):
+            seen_urls = set()
+            for lm in re.finditer(r"^- \[[^\]]*\]\(([^)]+)\)", sec.group(1), re.M):
+                url = lm.group(1)
+                if url in seen_urls:
+                    warnings.append(f"{label}: duplicate entity link -> {url}")
+                seen_urls.add(url)
             if not re.search(r"^- ", sec.group(1), re.M):
                 warnings.append(f"{label}: 相关实体 section has no entries")
 
