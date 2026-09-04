@@ -1,7 +1,7 @@
 ---
 type: source-card
 title: "DeepSeek陈德里AI论文第二弹：从6分到8分，DeliAutoResearch SKILL又进化了"
-source: "[[entities/deli-auto-research-skill-deepseek]]"
+source: "mp.weixin.qq.com"
 author: "机器之心编辑部"
 source_url: "https://mp.weixin.qq.com/s/g42Tchq89GVN7D35BVLqMA"
 published: "2026-05-30"

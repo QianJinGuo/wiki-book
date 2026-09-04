@@ -76,7 +76,7 @@ Widget 运行在 `sandbox="allow-scripts allow-forms"` 的 iframe 中，**不加
 ### 输出端 Dashboard
 Agent 执行完数据分析任务后，把结果渲染成 Dashboard：关键指标卡片 + 趋势折线图 + 留存曲线 + 响应时间分布图并排对比。
 
-## 与 [Agent Skill Writing](../ch01/285-agent-skill.html) 的关系
+## 与 [Agent Skill Writing](../ch01/255-agent-skill.html) 的关系
 Skill UI 是 Skill 编写规范的自然延伸：
 
 - **** 定义了 Skill 的 CLI 层（SKILL.md + scripts/ + references/）
@@ -149,7 +149,7 @@ Skill UI 的案例中，设计方向面板经过了三轮增强（初版→加�
 → [原文存档](https://mp.weixin.qq.com/s/_jPzZKh9kSbVwOj1khMKLg)
 
 ## 相关主题
-- [Claude Design Skill](../ch01/731-claude-design-skill.html) — 设计领域 Skill 的实战案例（420行系统提示词 → Skill）
+- [Claude Design Skill](../ch07/008-claude-design-skill.html) — 设计领域 Skill 的实战案例（420行系统提示词 → Skill）
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/hermes-agent-skill.md) — Hermes Agent 的 Skill 格式
 - [原文存档](https://mp.weixin.qq.com/s/_jPzZKh9kSbVwOj1khMKLg)
 

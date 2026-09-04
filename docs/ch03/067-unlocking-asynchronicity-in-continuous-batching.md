@@ -11,7 +11,7 @@
 > [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-model-research-latest-directions.md)
 
 - [Development environments for your cloud agents](004-agent.html)
-- [AI Infra 系统性拆解：传统后台工程师视角](../ch01/758-ai-infra.html)
+- [AI Infra 系统性拆解：传统后台工程师视角](../ch01/623-ai-infra.html)
 - [ml-intern — Hugging Face 自主 ML 工程代理](004-agent.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)

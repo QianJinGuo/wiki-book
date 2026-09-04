@@ -6,7 +6,7 @@
 
 ## 相关实体
 
-- [scaling archunit with nebula archrules](../ch11/214-scaling-archunit-with-nebula-archrules.html)
+- [scaling archunit with nebula archrules](../ch11/203-scaling-archunit-with-nebula-archrules.html)
 → [原文存档](https://www.ciodive.com/news/engineering-roles-shift-managing-AI/820297/)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/observability-monitoring.md)

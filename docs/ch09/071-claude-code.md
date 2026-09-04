@@ -51,7 +51,7 @@ Claude 的自我评估不是"不够准确"，而是方向性的：它倾向于�
 - [Claude Code Session Management 1M Context](../ch03/057-claude-code.html) — context rot 管理
 - [Agent Harness 12 组件](../ch05/035-agent-harness.html) — 12 个 harness 设计模式
 - [Harness Engineering 可靠长程Agent](../ch05/026-harness-engineering.html) — 治理方法论
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/338-claude-code-harness-deep-understanding.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/307-claude-code-harness-deep-understanding.html)
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html)
 - [AutoResearch：多 Agent 自动化软件开发](../ch03/004-agent.html)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](../ch03/057-claude-code.html)

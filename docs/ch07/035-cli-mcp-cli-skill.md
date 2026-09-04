@@ -120,7 +120,7 @@ Skill 是组织经验和方法论的载体。不要把 Skill 看作"让 Agent �
 ## 关联阅读
 
 ## 相关实体
-- [Production Ai Agents Mcp Cli Skills Stack Ayi](../ch04/284-ai-agent.html)
+- [Production Ai Agents Mcp Cli Skills Stack Ayi](../ch04/279-ai-agent.html)
 - [From Agent Protocol To Harness Skill](../ch05/069-harness-skill.html)
 - [Claude Code Core Internals](../ch03/057-claude-code.html)
 - [Staragent Webterminal Cli Ali Infra Cli As Agent Hands](../ch03/004-agent.html)

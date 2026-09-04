@@ -147,7 +147,7 @@ Stage-level 监控（token 上限 2000、P95 < 5s、重试 > 2 次告警）揭�
 - [Amazon Bedrock Agentic Payments Guardrails](../ch11/136-amazon-bedrock.html)
 - [Ai Native Startup Cyberfund Guide](../ch05/018-ai-native.html)
 - [From Prompt To Harness Claude Official](../ch05/008-harness.html)
-- [Cursor Harness Model Production Floor](../ch01/205-cursor-harness-model-production-floor.html)
+- [Cursor Harness Model Production Floor](../ch01/176-cursor-harness-model-production-floor.html)
 - [Agent Harness Architecture Deep Dive Aksahy](../ch05/035-agent-harness.html)
 
 → [原文存档](https://developers.openai.com/cookbook/examples/partners/schemaflow_design_guide/schemaflow_cookbook)

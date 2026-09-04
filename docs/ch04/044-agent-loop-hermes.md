@@ -317,7 +317,7 @@ Hermes 选择简单 while 循环而非状态机，因为状态机需要预先定
 - **Reflection Loop** 与 [Hermes Self Improving Loop Winty](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-self-improving-loop-winty.md) 直接对应 — Hermes 自进化
 - **Orchestration Loop** 与 [Hermes Agent Operator上手 把一个 Agent 养成可运营系统 若飞](../ch03/066-hermes-agent.html) 互补 — Loop 视角 vs Operator 视角
 - **Core Loop / Ralph Loop** 与 [Hermes Agent Loop Architecture](201-hermes-agent-loop.html) 直接对应 — 主循环概念
-- **Core Loop 9 步** 与 [Hermes Agent Goal And Kanban](236-hermes-agent-goal.html) 的 `/goal` + kanban 集成直接对应 — 同一架构的两种视角
+- **Core Loop 9 步** 与 [Hermes Agent Goal And Kanban](234-hermes-agent-goal.html) 的 `/goal` + kanban 集成直接对应 — 同一架构的两种视角
 
 ### 关键独到判断
 

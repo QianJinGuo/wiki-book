@@ -13,11 +13,11 @@
 **论文给出的更扎心结论**：是，但有严格前提。
 
 ## 相关实体
-- [Lucasfcostacom Blog Backpressure Is All You Need](../ch01/004-backpressure-is-all-you-need.html)
+- [Lucasfcostacom Blog Backpressure Is All You Need](../ch01/003-backpressure-is-all-you-need.html)
 - [Google Agentic Rag Sufficient Context Agent Framesqa](../ch03/004-agent.html)
 - [Ai Native Startup Cyberfund Guide](018-ai-native.html)
 - [Harness Engineering Comprehensive Guide Conardli](026-harness-engineering.html)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](../ch04/284-ai-agent.html)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](../ch04/279-ai-agent.html)
 
 → [原文存档](https://mp.weixin.qq.com/s/VHLC8m75AE1WaCZOQdvajg)
 

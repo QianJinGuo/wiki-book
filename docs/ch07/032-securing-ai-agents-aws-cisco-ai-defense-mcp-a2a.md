@@ -106,9 +106,9 @@ AWS 在合作中开源的 **MCP Gateway Registry** 提供"agent 和 server 治�
 
 - [U Of T Ai Worm Cleverhans Research](../ch04/052-ai.html)
 - [Qy_Zacztcs1Ql3Bifmbmgg](https://github.com/QianJinGuo/wiki-public/blob/main/entities/qy_zacztcs1ql3bifmbmgg.md)
-- [Claude Code Harness Deep Understanding](../ch01/338-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Understanding](../ch01/307-claude-code-harness-deep-understanding.html)
 - [Harness Engineering Core Patterns Claude Code](../ch05/026-harness-engineering.html)
-- [Ai Agent Engineer Learning Roadmap Backend 2026](../ch04/284-ai-agent.html)
+- [Ai Agent Engineer Learning Roadmap Backend 2026](../ch04/279-ai-agent.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](../ch04/197-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
 - [Agent Security Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-security-architecture.md)
 - "MCP 协议生态"

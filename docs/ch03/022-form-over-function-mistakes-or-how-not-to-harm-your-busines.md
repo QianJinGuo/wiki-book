@@ -70,10 +70,10 @@ Information Architecture（信息架构）和用户旅程是设计阶段中 ROI 
 ### 5. 设计师的职责不只是"做客户想要的东西"
 文章提出一个被低估的观点：设计师的真正职责是保护客户不犯他们自己不知道会犯的错误。这要求设计师有勇气在关键时刻说"不"，而不是追求短期的 stakeholder approval。
 ## 相关实体
-- [Icon Pack Websites Designers Should Bookmark](093-icon-pack-websites-designers-should-bookmark.html)
+- [Icon Pack Websites Designers Should Bookmark](092-icon-pack-websites-designers-should-bookmark.html)
 - [Designing Small Is Harder Than Designing Big Ux Magazine](068-designing-small-is-harder-than-designing-big-ux-magazine.html)
-- [Spotify Llm Evals Funnel Not Fork](../ch01/458-llm.html)
-- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](../ch04/398-amazon-bedrock-agentcore.html)
+- [Spotify Llm Evals Funnel Not Fork](../ch01/422-llm.html)
+- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](../ch04/392-amazon-bedrock-agentcore.html)
 - [Nvidia Mcg Toolkit Model Documentation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-mcg-toolkit-model-documentation.md)
 
 → [原文存档](https://blog.tubikstudio.com/form-over-function-mistakes/)

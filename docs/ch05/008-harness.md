@@ -278,7 +278,7 @@ OpenAI 提出的"Entropy Garbage Collection"是一个极具工程价值的概念
 
 → [原文存档](https://mp.weixin.qq.com/s/rlIyIIZOXFObNIXbPI7gDg)
 → [原文存档 (杜学友 6 层架构)](https://mp.weixin.qq.com/s/HoStCq53XElBlbLU6uPTJA)
-- [协作涌现：agent room 的多智能体决策框架](../ch04/464-agent-room.html)
+- [协作涌现：agent room 的多智能体决策框架](../ch04/434-agent-room.html)
 - [programbench swe agent benchmark](../ch03/004-agent.html)
 - [harness 工程可视化：vibe coding 中重建工程可控性](026-harness-engineering.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/multi-agent-coordination.md)

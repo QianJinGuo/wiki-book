@@ -71,9 +71,9 @@ user happy
 ## 相关实体
 - [Openclaw Prompt Context Harness](../ch04/180-openclaw.html)
 - [Skill System Design Three Way Comparison](045-skill.html)
-- [Openclaw Agent Loop Design Patterns](../ch04/399-agent-loop.html)
+- [Openclaw Agent Loop Design Patterns](../ch04/393-agent-loop.html)
 - [Tencent Skill Writing Complete Playbook Jackjchou](045-skill.html)
-- [Ai Skill Skill Creator 源码拆解](../ch04/242-skill-skill.html)
+- [Ai Skill Skill Creator 源码拆解](../ch04/240-skill-skill.html)
 
 → [原文存档](https://mp.weixin.qq.com/s/l-6ub0r8g0ppKXSv-VD4QQ)
 

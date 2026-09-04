@@ -35,7 +35,7 @@
 
 ## 与现有零代码实体差异
 
-对比 [2 小时 0 行手写代码 VSCode 插件](../ch01/341-claude.html)：后者是个人号小规模插件开发（8 文件/1000+ 行，侧重人机协作判断力），本文是 vivo 第一方 2 万行级**生产项目大规模重构** + 完整**约束体系方法论**（Skills/AGENTS.md/飞轮）+ 量化数据。两者同属"0 行手写代码"主题但框架不同（判断力 vs 约束体系），互补互链。
+对比 [2 小时 0 行手写代码 VSCode 插件](../ch01/310-claude.html)：后者是个人号小规模插件开发（8 文件/1000+ 行，侧重人机协作判断力），本文是 vivo 第一方 2 万行级**生产项目大规模重构** + 完整**约束体系方法论**（Skills/AGENTS.md/飞轮）+ 量化数据。两者同属"0 行手写代码"主题但框架不同（判断力 vs 约束体系），互补互链。
 
 ## 深度分析
 
@@ -71,9 +71,9 @@ Skills、AGENTS.md、飞轮三者其实在解决同一个问题：让 AI 的上�
 
 ## 相关实体
 
-- [2 小时 0 行手写代码 VSCode 插件](../ch01/341-claude.html)（同主题不同框架）
-- [古法程序员复杂任务 Spec 写作](../ch01/398-codex.html)（spec 方法论）
-- [Agent Skill Spec 构建设计模式](../ch01/285-agent-skill.html)
+- [2 小时 0 行手写代码 VSCode 插件](../ch01/310-claude.html)（同主题不同框架）
+- [古法程序员复杂任务 Spec 写作](../ch01/367-codex.html)（spec 方法论）
+- [Agent Skill Spec 构建设计模式](../ch01/255-agent-skill.html)
 - [Harness Engineering](../ch05/026-harness-engineering.html)
 
 ---

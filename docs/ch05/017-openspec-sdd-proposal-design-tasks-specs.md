@@ -26,7 +26,7 @@
 - [Spec Kit Bmad Sdd Practice Yexiaocha](https://github.com/QianJinGuo/wiki-public/blob/main/entities/spec-kit-bmad-sdd-practice-yexiaocha.md)
 - [民生银行基于规格驱动开发Sdd的 Codeagent 私域研发探索与实践](../ch03/004-agent.html)
 - [24H Worker Agent](../ch03/004-agent.html)
-- [十年老技术开发的 Ai Agent 探索之路 V2](../ch04/284-ai-agent.html)
+- [十年老技术开发的 Ai Agent 探索之路 V2](../ch04/279-ai-agent.html)
 
 → [原文存档](https://mp.weixin.qq.com/s/YwzvXhYQlFOdHs4uBcc-2Q)
 

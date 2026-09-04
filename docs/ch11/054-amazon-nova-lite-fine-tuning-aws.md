@@ -101,8 +101,8 @@ Amazon Nova、Nova Lite、Fine-tuning
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/amazon-nova-lite-fine-tuning-cost-effective-vision-detection-model-tuning-case-and-practice/)
 
 ## 相关实体
-- [Cost effective deployment of vision-language models for pet behavior detection on AWS Inferentia2](168-cost-effective-deployment-of-vision-language-models-for-pet.html)
-- [Navigating EU AI Act Requirements for LLM Fine-Tuning](../ch01/290-navigating-eu-ai-act-requirements-for-llm-fine-tuning.html)
+- [Cost effective deployment of vision-language models for pet behavior detection on AWS Inferentia2](167-cost-effective-deployment-of-vision-language-models-for-pet.html)
+- [Navigating EU AI Act Requirements for LLM Fine-Tuning](../ch01/422-llm.html)
 - [Amazon Bedrock模型推理的Serverless异步架构](136-amazon-bedrock.html)
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04/039-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
 - [AI Detection and Response (AIDR): A Zero-Impact Operating Model](../ch04/052-ai.html)

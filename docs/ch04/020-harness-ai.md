@@ -272,11 +272,11 @@ AI Team 的设计哲学：**文件系统即状态机**。所有状态、产物�
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/008-harness.html)
 - [我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了](https://github.com/QianJinGuo/wiki-public/blob/main/entities/我把-karpathy-的-autoresearch-搬到了软件开发领域效果炸了.md)
 - [吴恩达：AI 将最先杀死前端](052-ai.html)
-- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](314-agent-skills.html)
+- [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](309-agent-skills.html)
 - [国产顶尖模型 benchmark 评分那么高，可实际效果为什么差？看完 Anthropic 这篇博客，刷分的因素太单一了](https://github.com/QianJinGuo/wiki-public/blob/main/entities/国产顶尖模型-benchmark-评分那么高可实际效果为什么差看完-anthropic-这篇博客刷分的因素太单一了.md)
 - [你写的 Skill，及格了吗？](../ch07/045-skill.html)
-- [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](../ch01/341-claude.html)
-- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](381-claude-managed-agents.html)
+- [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](../ch01/310-claude.html)
+- [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](375-claude-managed-agents.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/057-claude-code.html)
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html)
 - [天猫新品营销技术团队AI编码实战指南（上）](052-ai.html)
@@ -286,7 +286,7 @@ AI Team 的设计哲学：**文件系统即状态机**。所有状态、产物�
 - [深度拆解 Hermes Agent 记忆系统：它修正了 OpenClaw 的哪层误区？](../ch03/066-hermes-agent.html)
 - [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](../ch05/008-harness.html)
 - [你不知道的 Agent：原理、架构与工程实践](../ch03/004-agent.html)
-- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](278-agentrun.html)
+- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](296-agentrun.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/026-harness-engineering.html)
 - [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](180-openclaw.html)
@@ -294,7 +294,7 @@ AI Team 的设计哲学：**文件系统即状态机**。所有状态、产物�
 - [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](../ch05/008-harness.html)- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](../ch05/008-harness.html)
 
 ## Related
-- [AI Agent 工程师能力地图](284-ai-agent.html)
+- [AI Agent 工程师能力地图](279-ai-agent.html)
 
 ---
 

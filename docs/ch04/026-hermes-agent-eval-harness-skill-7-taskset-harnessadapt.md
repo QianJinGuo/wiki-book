@@ -248,7 +248,7 @@ regression_failures | rejection_reason | review_notes
 | [Skillopt](../ch05/028-skillopt.html) | **SkillOpt 学术理论** | Microsoft + SJTU SkillOpt 训练范式（121 行）：把 SKILL.md 当可训练状态、bounded edits、held-out validation gate；本文是其在 Hermes Agent 的工程实施蓝图 |
 | [Skillopt Microsoft Train Skill Like Neural Network](../ch05/028-skillopt.html) | **SkillOpt 产品视角** | 别再手写 Skill！像神经网络一样训练（58 行）：SkillOpt 产品介绍 |
 | [Skillopt Microsoft Train Skill Hyman'S Blog](../ch05/028-skillopt.html) | **SkillOpt Hyman 视角** | 微软等 SkillOpt 解读（64 行） |
-| [Hermes Agent Skill Crossover Optimization](../ch01/261-hermes-agent-skill.html) | **Hermes Skill 互优化** | SkillEvolver × Darwin × EmbodiSkill 4 轮闭环（277 行）— Skill 之间的相互优化 |
+| [Hermes Agent Skill Crossover Optimization](../ch01/232-hermes-agent-skill.html) | **Hermes Skill 互优化** | SkillEvolver × Darwin × EmbodiSkill 4 轮闭环（277 行）— Skill 之间的相互优化 |
 | [Skill Self Evolution Three Approaches](../ch07/045-skill.html) | **Skill 自进化 3 路线** | Trace2Skill 归纳法 / EvoSkill 验证闭环 / SkillOpt 训练范式（45 行）；本文是 SkillOpt + EvoSkill 的工程化展开 |
 | [Agent Self Improvement Six Mechanisms](../ch03/004-agent.html) | **6 大自改进机制** | Agent 自改进的 6 大机制 |
 | [Ai Recursive Self Improvement Nanogpt Prime Intellect](052-ai.html) | **递归自改进** | nanogpt + Prime Intellect |
@@ -258,7 +258,7 @@ regression_failures | rejection_reason | review_notes
 | [Hermes Agent 12 Layer Full Configuration Guide](../ch03/066-hermes-agent.html) | **Hermes 12 层配置** | Hermes Agent 12 层完整配置 |
 | [Hermes 9 Module Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-9-module-architecture.md) | **Hermes 9 模块** | Hermes 9 模块架构 |
 | [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05/026-harness-engineering.html) | **7 层 Harness** | OpenClaw/Hermes/Claude Code 7 层 Harness |
-| [Slim Cuhk Skill Lifecycle Agentic Rl](204-agentic-rl.html) | **SLIM Skill 生命周期** | CUHK SLIM Skill 生命周期 + Agentic RL |
+| [Slim Cuhk Skill Lifecycle Agentic Rl](203-agentic-rl.html) | **SLIM Skill 生命周期** | CUHK SLIM Skill 生命周期 + Agentic RL |
 | [Deli Auto Research Skill V2 Continual Learning Self Improvement](../ch07/045-skill.html) | **Deli Auto Research** | Continual learning + self-improvement |
 | [Claude Code Vs Hermes Session Vs Goal Lifecycle](../ch03/057-claude-code.html) | **Hermes 生命周期** | Session vs Goal lifecycle 对比 |
 

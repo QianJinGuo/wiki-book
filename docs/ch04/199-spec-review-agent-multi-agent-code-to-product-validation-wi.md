@@ -145,9 +145,9 @@ AI 可以加速审查但不是替代——业务逻辑和用户体验的判断�
 如果你的多 agent 需求涉及 AWS 生态，Bedrock AgentCore 提供了开箱即用的编排和安全。但需要评估厂商锁定风险。
 
 ## 相关实体
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](229-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
-- [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](../ch11/218-amazon-nova.html)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](398-amazon-bedrock-agentcore.html)
+- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](227-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
+- [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](../ch11/207-amazon-nova.html)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](392-amazon-bedrock-agentcore.html)
 - [Verizon Connect Agentic Ai 100K Users](086-verizon-connect-agentic-ai-10.html)
 - [Aws Devops Agent Mcp Server打通混合云网络排障的最后一公里](../ch07/044-aws-devops-agent-mcp-server.html)
 

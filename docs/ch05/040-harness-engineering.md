@@ -145,7 +145,7 @@ OpenAI 的 AGENTS.md 从"巨册"压缩到 ~100 行目录页，配合后台"文�
 - [Fudan Peking Ahe Agentic Harness Engineering](../ch04/196-ahe-agentic-harness-engineering.html)
 - [Agent Harness 12 Components 7 Decisions](035-agent-harness.html)
 - [Harness Engineering 第三代工程范式](026-harness-engineering.html)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](../ch04/284-ai-agent.html)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](../ch04/279-ai-agent.html)
 - [Openclaw Prompt Context Harness](../ch04/180-openclaw.html)
 
 → [原文存档 (ConardLi)](https://mp.weixin.qq.com/s/gs5ndvlMqM-Y4jg1_D2aFw)

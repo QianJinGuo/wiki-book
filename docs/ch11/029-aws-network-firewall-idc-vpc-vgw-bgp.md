@@ -161,7 +161,7 @@ AWS Network Firewall 是一个**内联（inline）状态检测设备**，而非�
 
 - [原文存档](https://aws.amazon.com/cn/blogs/china/nfw-vgw-bgp-traffic-inspection)
 - [AWS NFW 规则冲突 AI 检测](111-aws-network-firewall-ai.html) — 姐妹篇（AI 集成）
-- [LiteLLM ECS/EKS 部署](../ch01/458-llm.html) — 同样部署在 VPC 中，受 NFW 保护
+- [LiteLLM ECS/EKS 部署](../ch01/422-llm.html) — 同样部署在 VPC 中，受 NFW 保护
 - [QuickSight Dataset Q&A](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-quicksight-dataset-qa-natural-language.md)
 
 ## 相关实体

@@ -195,10 +195,10 @@ LiteTopic 适合以下场景：
 一个可行的集成路径：ADK Agent 作为 LiteTopic 的生产者，将任务分发写入父 Topic + 对应 LiteTopic；ADK 的回调机制接收来自另一个 LiteTopic 的结果。框架侧无需感知 LiteTopic 的存在，只需配置正确的 Topic 和回调地址。
 
 ## 相关实体
-- [Rocket Mq 5 Litetopic Ai Agent Async Cloudnative](284-ai-agent.html)
+- [Rocket Mq 5 Litetopic Ai Agent Async Cloudnative](279-ai-agent.html)
 - [Wow Harness V3 Governance Protocol](../ch05/008-harness.html)
 - [Code As Agent Harness Survey](../ch09/048-code-as-agent-harness.html)
-- [Agent Skills Teams Architecture Evolution Selection Guide](203-agent-skills-teams.html)
+- [Agent Skills Teams Architecture Evolution Selection Guide](202-agent-skills-teams.html)
 - [Hermes Agent K2 6 Multi Agent](../ch03/066-hermes-agent.html)
 
 → [原文存档](https://mp.weixin.qq.com/s/gXZz2wcNbrQatciy-o3-0A)

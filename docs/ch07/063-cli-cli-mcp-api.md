@@ -11,9 +11,9 @@ Scalekit 2026 年基准测试（75 次，同一 Agent 执行同一组 GitHub 任
 
 ## 相关实体
 - [Cli Mcp Skill Architecture Decision Vibecoder](045-skill.html)
-- [Aliyun Agentrun 2Line Integration](../ch04/278-agentrun.html)
-- [Production Ai Agents Mcp Cli Skills Stack Ayi](../ch04/284-ai-agent.html)
-- [Pi Mono Github](../ch01/476-github.html)
+- [Aliyun Agentrun 2Line Integration](../ch04/296-agentrun.html)
+- [Production Ai Agents Mcp Cli Skills Stack Ayi](../ch04/279-ai-agent.html)
+- [Pi Mono Github](../ch01/440-github.html)
 - [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](../ch11/136-amazon-bedrock.html)
 
 → [原文存档](https://mp.weixin.qq.com/s/Y6G6Dey7Fy1ZeT1T6iCp7w)

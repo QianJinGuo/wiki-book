@@ -309,13 +309,13 @@ X-Ray 配置步骤应在环境准备阶段优先完成，因为：
 
 ## 相关实体
 - [OpenClaw多租户迁移: Phase 2&3部署](../ch04/180-openclaw.html)
-- [Amazon Nova Multimodal Embeddings 制造业智能应用](218-amazon-nova.html)
+- [Amazon Nova Multimodal Embeddings 制造业智能应用](207-amazon-nova.html)
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04/039-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
-- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/501-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
-- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/398-amazon-bedrock-agentcore.html)
+- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/464-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
+- [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](../ch04/392-amazon-bedrock-agentcore.html)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki-public/blob/main/entities/航班变更信息智能识别解决方案.md)
-- [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](212-bedrock.html)
-- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/523-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
+- [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](201-bedrock.html)
+- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](../ch01/485-from-siloed-data-to-unified-insights-cross-account-athena-a.html)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](109-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
 
 - [AgentCore Runtime部署Apache Doris MCP Server](../ch04/052-ai.html)
@@ -323,7 +323,7 @@ X-Ray 配置步骤应在环境准备阶段优先完成，因为：
 - [OpenClaw多租户迁移: Phase 1 基础设施部署](../ch04/180-openclaw.html)
 - [Amazon Bedrock模型推理的Serverless异步架构](136-amazon-bedrock.html)
 - [Agent 原理、架构与工程实践](../ch03/004-agent.html)
-- [from pdfs to insights: architecting an intelligent document](185-from-pdfs-to-insights-architecting-an-intelligent-document.html)
+- [from pdfs to insights: architecting an intelligent document](184-from-pdfs-to-insights-architecting-an-intelligent-document.html)
 
 ---
 

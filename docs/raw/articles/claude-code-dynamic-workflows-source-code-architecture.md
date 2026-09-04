@@ -1,7 +1,7 @@
 ---
 type: source-card
 title: "Claude Code 动态工作流源码解析：pi-dynamic-workflows 架构实现"
-source: "[[entities/claude-code-dynamic-workflows-multi-agent-orchestration]]"
+source: "mp.weixin.qq.com"
 author: "AI技术立文"
 source_url: "https://mp.weixin.qq.com/s/-fgHupVwuT3c4eJMrd43Xw"
 published: "2026-05-30"

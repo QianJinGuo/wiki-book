@@ -20,7 +20,7 @@
 ## 相关实体
 - [我把Mac留在家用手机让Trae Solo替我打了一天工](https://github.com/QianJinGuo/wiki-public/blob/main/entities/我把mac留在家用手机让trae-solo替我打了一天工.md)
 - [Hermes Agent K2 6 Tutorial](../ch03/066-hermes-agent.html)
-- [要实现一个工作流选择 Agent Skills 还是 Ai 表格](314-agent-skills.html)
+- [要实现一个工作流选择 Agent Skills 还是 Ai 表格](309-agent-skills.html)
 
 → [原文存档](https://mp.weixin.qq.com/s/4_tUnMVligTIPkxmwjSqFg)
 

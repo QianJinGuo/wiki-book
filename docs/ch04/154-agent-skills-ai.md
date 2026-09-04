@@ -82,11 +82,11 @@ AI 表格/多维表格之所以成为企业 80% AI 项目的承载体，**不是
 > **真正的交付核心从来不是"做了一个表"，而是把 SOP 梳理清楚。** 工作量大的依旧是 KnowHow 与管理沟通问题。
 
 ## 相关实体
-- [Agent Skills Vs Coze Dify N8N Lowcode Yexiaocha](314-agent-skills.html)
-- [Gepa Optimize Anything](../ch01/235-gepa-optimize-anything.html)
-- [Memento Skills Agent Self Evolving](321-memento-skills-agent.html)
-- [精选 8 个 Ui 设计师必备的 Ai 智能体技能Agent Skills](314-agent-skills.html)
-- [Agent Skills Comprehensive Survey](314-agent-skills.html)
+- [Agent Skills Vs Coze Dify N8N Lowcode Yexiaocha](309-agent-skills.html)
+- [Gepa Optimize Anything](../ch01/206-gepa-optimize-anything.html)
+- [Memento Skills Agent Self Evolving](315-memento-skills-agent.html)
+- [精选 8 个 Ui 设计师必备的 Ai 智能体技能Agent Skills](309-agent-skills.html)
+- [Agent Skills Comprehensive Survey](309-agent-skills.html)
 
 → [原文存档](https://mp.weixin.qq.com/s/V-yoJc1DoyLCKbfjVRPzRg)
 

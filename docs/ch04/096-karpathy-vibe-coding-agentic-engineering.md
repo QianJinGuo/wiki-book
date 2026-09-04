@@ -83,13 +83,13 @@ Karpathy 给出了他未来 6-12 个月关注的三个信号，可作为行业�
 - [Martin Fowler AI 研发 Harness：非确定性承重层](../ch05/008-harness.html)
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](../ch03/004-agent.html)
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](../ch05/026-harness-engineering.html)
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](../ch01/458-llm.html)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](../ch01/138-rag.html)
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](../ch05/026-harness-engineering.html)
 - [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](../ch03/066-hermes-agent.html)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](../ch05/008-harness.html)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki-public/blob/main/queries/harness-peer-review-framework.md)
 - [从 30 分钟手搓 Agent，到 Harness 成为"新后端"](../ch05/008-harness.html)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/338-claude-code-harness-deep-understanding.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/307-claude-code-harness-deep-understanding.html)
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html)
 - [Agent Harness 架构](../ch05/035-agent-harness.html)
 - [Agent 自我改进的六条路](../ch03/004-agent.html)
@@ -99,7 +99,7 @@ Karpathy 给出了他未来 6-12 个月关注的三个信号，可作为行业�
 - [Agent架构关键变化：Harness正在成为新后端](../ch05/008-harness.html)
 - [harness-engineering-systematic-explainer](../ch05/026-harness-engineering.html)
 - [Agent 原理、架构与工程实践](../ch03/004-agent.html)
-- [AI Agent 工程师能力地图](284-ai-agent.html)
+- [AI Agent 工程师能力地图](279-ai-agent.html)
 
 ---
 

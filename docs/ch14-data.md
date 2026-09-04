@@ -2,7 +2,7 @@
 
 > AI 的燃料：实时入湖、流处理、数据质量
 
-> 本章收录 **28 篇**实体，按深度递增排列。
+> 本章收录 **22 篇**实体，按深度递增排列。
 
 ---
 
@@ -10,8 +10,8 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 3 |
-| ⭐⭐ 工程师 | 需编程基础 | 25 |
+| ⭐ 入门 | 零基础可读 | 2 |
+| ⭐⭐ 工程师 | 需编程基础 | 20 |
 
 ---
 
@@ -229,46 +229,15 @@ E2E 验证阶段是真正的瓶颈：必须在真实硬件上构造真实环境�
 
 - [特斯拉百万年薪招数据标注员，朝九晚五，无需ai经验](ch04/052-ai.html)
 - [system over model, tested: reproducing mythos's freebsd find](https://github.com/QianJinGuo/wiki-public/blob/main/entities/system-over-model-tested-reproducing-mythoss-freebsd-find-on-20260606.md)
-- [from doer to director: the ai mindset shift](ch01/028-from-doer-to-director-the-ai-mindset-shift.html)
-- [How my non-engineering team at Sentry learned to ship](ch01/342-how-my-non-engineering-team-at-sentry-learned-to-ship.html)
+- [from doer to director: the ai mindset shift](ch01/026-from-doer-to-director-the-ai-mindset-shift.html)
+- [How my non-engineering team at Sentry learned to ship](ch01/311-how-my-non-engineering-team-at-sentry-learned-to-ship.html)
 - [Unexpected lessons from an AI-assisted prototyping experiment](ch04/052-ai.html)
 
 → [原文存档](https://varoa.net/2026/06/13/ddosing-software-delivery-pipelines.html)
 
 ---
 
-## Ch14.003 ClickHouse Ingestion at Scale: An Open-Source Zepto Engineering Story
-
-> 📊 Level ⭐ | 3.7KB | `entities/clickhouse-ingestion-at-scale-an-open-source-zepto-engineering-story.md`
-
-# ClickHouse Ingestion at Scale: An Open-Source Zepto Engineering Story
-
-Markdown Content:
-[![Image 1: Zepto Tech](https://miro.medium.com/v2/da:true/resize:fill:64:64/0*Zdo4al9KE5LuqNxm)](https://medium.com/@tech.culture?source=post_page---byline--7f57309e2175---------------------------------------)
-
-![Image 2](https://miro.medium.com/v2/resize:fit:700/0*RaaiaRuTYvCKxyMs.png)
-
-Much like our journey described in[_Debezium at Scale_](https://blog.zeptonow.com/debezium-at-scale-an-open-source-cdc-story-from-zepto-aa4b12e32bf7), our architecture relies heavily on real-time data flow. To understand user journeys, track operational metrics, and power our growth, we built **Lucid** — Zepto’s completely in-house product analytics engine designed to replace Mixpanel.
-
-Lucid captures millions of events per minute, routes them through Kafka, and dumps them into ClickHouse to give us lightning-fast, high-precision insights without the third-party SaaS pricing trap. We use **Confluent Cloud** to manage our Kafka infrastructure and the**in-house** ClickHouse Sink Connector. It was seamless — until our scale broke the default physics.
-
-Every hyper-growth engineering team eventually hits a wall where managed abstractions turn from a blessing into a bottleneck. For us, that wall appeared right at the intersection of Apache Kafka and ClickHouse.
-
-To ingest billions of events into ClickHouse for **Lucid** at a sustained throughput of **10 MB/s (peaking up to 15–20 MB/s),** we hit a wall with Confluent Cloud’s managed infrastructure because its managed nature restricted our access to low-level broker and connector tuning. Instead of migrating our entire Kafka ecosystem, we proved our batching hypothesis on an In-house Kafka Proof-of-Concept, and then built that buffering logic directly into the open-source ClickHouse Kafka Connect framework. By rewriting core parts of the connector, we boosted ingestion by **45%**, eliminated crippling GC pauses, and drastically reduced ClickHouse insert pressure.
-
-This is the story of how we overcame the **black box of managed cloud**, the hidden performance killers we found in the open-source connector, and the two major pull requests we merged to fix them and contribute back to the community.
-
-## The Inciting Incident: The Confluent Cloud Black Box
-
-→ [原文存档](https://blog.zepto.com/clickhouse-ingestion-at-scale-an-open-source-zepto-engineering-story-7f57309e2175)
-
----
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-
----
-
-## Ch14.004 Data for AI：明其所耗，知其所因！让每一分 Token 消耗都可量化的全栈实践
+## Ch14.003 Data for AI：明其所耗，知其所因！让每一分 Token 消耗都可量化的全栈实践
 
 > 📊 Level ⭐⭐ | 35.2KB | `entities/data-for-ai明其所耗知其所因让每一分-token-消耗都可量化的全栈实践.md`
 
@@ -755,7 +724,7 @@ Agentic AI 的成本失控根源在于其执行路径的非确定性——传统
 ![](https://d2908q01vomqb2.cloudfront.net/472b07b9fcf2c2451e8781e944bf5f77cd8457c8/2026/05/14/2026_Summits_Commercial_Banner_1440x657.png)
 
 ## 相关实体
-- [飞来汇借助 Aws Security Agent 构建跨境支付应用的智能安全防线](ch04/252-aws-security-agent.html)
+- [飞来汇借助 Aws Security Agent 构建跨境支付应用的智能安全防线](ch04/248-aws-security-agent.html)
 - [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](ch04/052-ai.html)
 - [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](ch11/136-amazon-bedrock.html)
 - [Powering Agentic Ai Sales Strategy With Amazon Bedrock Agent](ch04/018-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.html)
@@ -764,7 +733,7 @@ Agentic AI 的成本失控根源在于其执行路径的非确定性——传统
 
 ---
 
-## Ch14.005 阿里云 Kafka × Iceberg 零 ETL 实时入湖：ApsaraMQ for Kafka × OSS Tables 架构减法
+## Ch14.004 阿里云 Kafka × Iceberg 零 ETL 实时入湖：ApsaraMQ for Kafka × OSS Tables 架构减法
 
 > 📊 Level ⭐⭐ | 24.3KB | `entities/aliyun-kafka-iceberg-zero-etl-architecture-subtraction-2026-06-18.md`
 
@@ -984,7 +953,7 @@ partition_by: "bucket(device_id, 50), day(timestamp)"
 
 ## 与 wiki 既有内容的关系
 
-- **与 [Databricks Storage Ecosystem 开放共享治理](ch01/167-rag.html)**：都讲 Lakehouse + 开放表格式；Databricks 是"生态平台"阵营（Delta Lake 锁定），阿里云是"原生集成"阵营（中立兼容）——**3 大阵营中的两极**
+- **与 [Databricks Storage Ecosystem 开放共享治理](ch01/138-rag.html)**：都讲 Lakehouse + 开放表格式；Databricks 是"生态平台"阵营（Delta Lake 锁定），阿里云是"原生集成"阵营（中立兼容）——**3 大阵营中的两极**
 - **与 750B MoE PD-Disaggregation AWS EFA（尚未入库）**：同属顶级云厂技术体系；本文是**数据基础设施**，750B MoE 是**推理基础设施**
 - **与 [Amazon Quick 加速企业数据到 AI 决策](ch04/052-ai.html)**：都讲企业数据 → AI；Quick 是**消费侧**（无 SQL 业务查询），本文是**生产侧**（Kafka 实时入湖）
 - **与 [Harness Engineering](ch05/026-harness-engineering.html)**：都讲"工程化收敛"；Harness 是 AI 智能体工程，零 ETL 是数据基础设施工程；Harness 强调"通用能力内聚"，零 ETL 强调"通用入湖能力内聚"——**同一思想跨域应用**
@@ -1020,7 +989,7 @@ partition_by: "bucket(device_id, 50), day(timestamp)"
 
 → [原文存档](https://mp.weixin.qq.com/s/7wg1gUZZg08OoozBMebcHg)
 
-- [Databricks Storage Ecosystem 开放共享治理](ch01/167-rag.html)
+- [Databricks Storage Ecosystem 开放共享治理](ch01/138-rag.html)
 - 750B MoE PD-Disaggregation AWS EFA（尚未入库）
 - [Amazon Quick 加速企业数据到 AI 决策](ch04/052-ai.html)
 - [Harness Engineering](ch05/026-harness-engineering.html)
@@ -1029,7 +998,7 @@ partition_by: "bucket(device_id, 50), day(timestamp)"
 
 ---
 
-## Ch14.006 Good QC for RL Data
+## Ch14.005 Good QC for RL Data
 
 > 📊 Level ⭐⭐ | 13.4KB | `entities/good-qc-for-rl-data.md`
 
@@ -1194,7 +1163,7 @@ Alignment-faking 基线 12%、Reward Tampering、Sycophancy——这三个已发
 
 ---
 
-## Ch14.007 Kimi K2.6 Agent Database：Agent-native时代的数据基础设施竞争
+## Ch14.006 Kimi K2.6 Agent Database：Agent-native时代的数据基础设施竞争
 
 > 📊 Level ⭐⭐ | 12.9KB | `entities/kimi-k2-6-tidb-agent-database.md`
 
@@ -1331,11 +1300,11 @@ one agent, one sandbox, one storage, one database
 - [Kimi K2 Tidb Agent Database Huangdongxu 20260513](ch03/004-agent.html)
 - [Ara Agent Native Research Artifact 37Authors](ch03/004-agent.html)
 - [Hermes Agent K2 6 Tutorial](ch03/066-hermes-agent.html)
-- [Kimi Work Codex Vibe Working Paradigm Shift](ch01/398-codex.html)
+- [Kimi Work Codex Vibe Working Paradigm Shift](ch01/367-codex.html)
 
 ---
 
-## Ch14.008 Kimi K2.6背后的Agent Database：Agent-native 时代的数据Infra竞争，跟过去30年有何不同
+## Ch14.007 Kimi K2.6背后的Agent Database：Agent-native 时代的数据Infra竞争，跟过去30年有何不同
 
 > 📊 Level ⭐⭐ | 11.9KB | `entities/kimi-k2-tidb-agent-database-huangdongxu-20260513.md`
 
@@ -1434,7 +1403,7 @@ https://mp.weixin.qq.com/s/XLYWhkjFHxrH2-jb5O1qCQ
 
 ---
 
-## Ch14.009 Databricks Storage Ecosystem & OpenSharing：企业数据治理从 Migrate Everything 到 Govern Everything 的范式转变
+## Ch14.008 Databricks Storage Ecosystem & OpenSharing：企业数据治理从 Migrate Everything 到 Govern Everything 的范式转变
 
 > 📊 Level ⭐⭐ | 11.4KB | `entities/databricks-storage-ecosystem-opensharing-govern-everything-2026.md`
 
@@ -1510,7 +1479,7 @@ https://mp.weixin.qq.com/s/XLYWhkjFHxrH2-jb5O1qCQ
 
 ### 2. OpenSharing 协议：争夺协议层标准主导权
 
-OpenSharing 开源协议的本质是将 Databricks 的治理能力前移到存储层，同时避免数据复制。这是一个「协议层标准战」的战略——类比 MCP 协议在 Agent 工具调用领域的作用，OpenSharing 试图成为存储与计算分离架构下的标准连接协议。一旦成为事实标准，Databricks 就能通过 [Unity Catalog](ch01/478-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html) 统一治理所有实现 OpenSharing 的存储系统，无论供应商是谁。存储厂商只需实现协议接口即可加入生态，准入门槛低但 Databricks 对标准的主导权强——这是平台公司标准战略的典型打法。
+OpenSharing 开源协议的本质是将 Databricks 的治理能力前移到存储层，同时避免数据复制。这是一个「协议层标准战」的战略——类比 MCP 协议在 Agent 工具调用领域的作用，OpenSharing 试图成为存储与计算分离架构下的标准连接协议。一旦成为事实标准，Databricks 就能通过 [Unity Catalog](ch01/442-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html) 统一治理所有实现 OpenSharing 的存储系统，无论供应商是谁。存储厂商只需实现协议接口即可加入生态，准入门槛低但 Databricks 对标准的主导权强——这是平台公司标准战略的典型打法。
 
 ### 3. Delta Lake / Iceberg 双格式支持：表格式之战升温
 
@@ -1522,7 +1491,7 @@ SDS 生态将 Databricks 的 Lakehouse 架构扩展到真正的混合环境—�
 
 ### 5. Unity Catalog 作为跨混合环境的统一治理平面
 
-「单一统一目录」是 SDS 生态的核心价值主张。[Unity Catalog](ch01/167-rag.html) 不再只是云端数据的治理层，而成为跨混合环境的数据治理平面。这意味着元数据管理、访问控制、血缘追踪和审计日志在混合环境下的一致性成为可能。结合 [数据 Agent 平台架构](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/data-agent-platform-architecture.md) 的设计思路，治理平面的统一是实现「 enterprise data estate 一体化」的技术前提，对受监管行业的 CDO 来说是关键卖点。
+「单一统一目录」是 SDS 生态的核心价值主张。[Unity Catalog](ch01/138-rag.html) 不再只是云端数据的治理层，而成为跨混合环境的数据治理平面。这意味着元数据管理、访问控制、血缘追踪和审计日志在混合环境下的一致性成为可能。结合 [数据 Agent 平台架构](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/data-agent-platform-architecture.md) 的设计思路，治理平面的统一是实现「 enterprise data estate 一体化」的技术前提，对受监管行业的 CDO 来说是关键卖点。
 
 ## 实践启示
 
@@ -1533,8 +1502,8 @@ SDS 生态将 Databricks 的 Lakehouse 架构扩展到真正的混合环境—�
 
 ## 相关实体
 
-- [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](ch01/478-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html) — 同 vendor 不同焦点（ML 训练 vs 数据治理）
-- [Using Amazon EMR Serverless Storage](ch01/167-rag.html) — AWS 数据处理与存储成本优化参考
+- [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](ch01/442-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html) — 同 vendor 不同焦点（ML 训练 vs 数据治理）
+- [Using Amazon EMR Serverless Storage](ch01/138-rag.html) — AWS 数据处理与存储成本优化参考
 - `concepts/data-lakehouse-architecture` — (待创建) Lakehouse 范式概念页
 - `concepts/zero-copy-data-architecture` — (待创建) 零数据移动的架构模式
 
@@ -1544,7 +1513,7 @@ SDS 生态将 Databricks 的 Lakehouse 架构扩展到真正的混合环境—�
 
 ---
 
-## Ch14.010 London's police asked Big Tech for comms data over 700,000 times last year
+## Ch14.009 London's police asked Big Tech for comms data over 700,000 times last year
 
 > 📊 Level ⭐⭐ | 10.5KB | `entities/london-met-police-big-tech-data-requests.md`
 
@@ -1560,9 +1529,9 @@ SDS 生态将 Databricks 的 Lakehouse 架构扩展到真正的混合环境—�
 RIPA 允许执法机构在无需搜查令的情况下强制通信提供商披露用户数据。
 ## 相关实体
 - [Clarity Act 5 Things](https://github.com/QianJinGuo/wiki-public/blob/main/entities/clarity-act-5-things.md)
-- [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britain S Age Check Mess](ch12/070-mozilla-warns-uk-breaking-vpns-will-not-magically-fix-brita.html)
+- [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britain S Age Check Mess](ch12/066-mozilla-warns-uk-breaking-vpns-will-not-magically-fix-brita.html)
 - [End To End Encrypted Ml Inference Sagemaker Fhe](https://github.com/QianJinGuo/wiki-public/blob/main/entities/end-to-end-encrypted-ml-inference-sagemaker-fhe.md)
-- [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britai](ch12/070-mozilla-warns-uk-breaking-vpns-will-not-magically-fix-brita.html)
+- [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britai](ch12/066-mozilla-warns-uk-breaking-vpns-will-not-magically-fix-brita.html)
 - [在 Macos 上用 Ai Coding 搭一个隐私优先的会议纪要助手](ch05/078-ai-coding.html)
 
 → [原文存档](https://www.theregister.com/databases/2026/05/20/londons-police-asked-big-tech-for-comms-data-over-700000-times-last-year/5242590)
@@ -1661,7 +1630,7 @@ LycaMobile 请求量 500% 的增长和针对移民的新立法动向表明，移
 
 ---
 
-## Ch14.011 EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios
+## Ch14.010 EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios
 
 > 📊 Level ⭐⭐ | 9.8KB | `entities/eva-bench-data-2-voice-agent-evaluation.md`
 
@@ -1789,7 +1758,7 @@ ServiceNow 本身是 ITSM / HR / 客户支持自动化领域的巨头，发布 E
 
 ---
 
-## Ch14.012 Moneyball for Physical AI
+## Ch14.011 Moneyball for Physical AI
 
 > 📊 Level ⭐⭐ | 8.5KB | `entities/moneyball-for-physical-ai.md`
 
@@ -1900,7 +1869,7 @@ $$U_{eff}(n) = U_0 + \Delta U(1 - e^{-n/n_c})$$
 
 ---
 
-## Ch14.013 Lightfield AI pipeline generation
+## Ch14.012 Lightfield AI pipeline generation
 
 > 📊 Level ⭐⭐ | 8.0KB | `entities/lightfield-ai-pipeline-generation.md`
 
@@ -1947,7 +1916,7 @@ Lightfield 的 FAQ 中有一段值得注意的自我定位：随着对工具边�
 - [Npm Supply Chain Compromise Postmortem](ch04/052-ai.html)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 - [When Growth Slows Is It Sales Fault Or The Products Fault The Answer Has Changed](https://github.com/QianJinGuo/wiki-public/blob/main/entities/when-growth-slows-is-it-sales-fault-or-the-products-fault-the-answer-has-changed.md)
-- [Reasoning Lift](ch01/489-reasoning-lift-what-happens-to-ai-visibility-when-ai-thinks.html)
+- [Reasoning Lift](ch01/453-reasoning-lift-what-happens-to-ai-visibility-when-ai-thinks.html)
 
 → [原文存档](https://lightfield.app/product/ai-pipeline-generation)
 
@@ -1958,7 +1927,7 @@ Lightfield 的 FAQ 中有一段值得注意的自我定位：随着对工具边�
 
 ---
 
-## Ch14.014 Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions
+## Ch14.013 Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions
 
 > 📊 Level ⭐⭐ | 7.9KB | `entities/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md`
 
@@ -1993,16 +1962,16 @@ AI 生成 dashboard 的定位是消除 construction phase——当分析意图�
 
 ## 相关实体
 - [AgentCore Runtime部署Apache Doris MCP Server](ch04/052-ai.html)
-- [以Kiro快速部署云上Agent：只需几个小时，从业务需求到部署于Amazon Bedrock Agentcore落地 | 亚马逊AWS官方博客](ch04/398-amazon-bedrock-agentcore.html)
+- [以Kiro快速部署云上Agent：只需几个小时，从业务需求到部署于Amazon Bedrock Agentcore落地 | 亚马逊AWS官方博客](ch04/392-amazon-bedrock-agentcore.html)
 - [基于Strands SDK 构建的企业智能问数解决方案实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/enterprise-intelligent-data-query-solution-practice-based-on-strands-sdk.md)
-- [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/228-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](ch03/004-agent.html)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch11/109-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
 - [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](ch04/043-agentic-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/data-infrastructure.md)
 
 ---
 
-## Ch14.015 verify-data：一个端到端的数据验数 Agent Skill
+## Ch14.014 verify-data：一个端到端的数据验数 Agent Skill
 
 > 📊 Level ⭐⭐ | 7.8KB | `entities/verify-data-agent-skill-data-validation.md`
 
@@ -2131,7 +2100,7 @@ verify-data 与 Data Observability 工具（如 Monte Carlo、Great Expectations
 
 ---
 
-## Ch14.016 LiveKit Agents：给大模型接上麦克风，没你想的那么简单
+## Ch14.015 LiveKit Agents：给大模型接上麦克风，没你想的那么简单
 
 > 📊 Level ⭐⭐ | 7.2KB | `entities/livekit-agents-voice-ai-streaming-cascade-interruption-detection.md`
 
@@ -2226,7 +2195,7 @@ LiveKit Agents 采用 Apache 2.0 协议，10k+ Stars。与托管平台相比的�
 
 ---
 
-## Ch14.017 Goodfire Predictive Data Debugging：可解释性指导 Post-Training 数据塑形
+## Ch14.016 Goodfire Predictive Data Debugging：可解释性指导 Post-Training 数据塑形
 
 > 📊 Level ⭐⭐ | 7.0KB | `entities/goodfire-predictive-data-debugging-post-training-anatomy-2026.md`
 
@@ -2258,7 +2227,7 @@ LiveKit Agents 采用 Apache 2.0 协议，10k+ Stars。与托管平台相比的�
 | 工具链 | PyTorch + DPO/RLHF 库 | Silico 平台 + SAE 特征空间 |
 | 适用阶段 | SFT → DPO → RL 全流程 | 主要 DPO/preference 阶段 |
 
-参考 [LLM Post-Training 全景指南](ch01/458-llm.html) 了解传统方法谱系。
+参考 [LLM Post-Training 全景指南](ch01/422-llm.html) 了解传统方法谱系。
 
 ## 深度分析
 
@@ -2275,7 +2244,7 @@ LiveKit Agents 采用 Apache 2.0 协议，10k+ Stars。与托管平台相比的�
 ## 引用与延伸阅读
 - **原文存档** → [原文存档](https://www.goodfire.ai/research/predictive-data-debugging)
 - 论文：[arXiv 2606.12360](https://arxiv.org/abs/2606.12360)
-- 关联 entity：[LLM Post-Training 全景指南](ch01/458-llm.html) 了解传统方法谱系。
+- 关联 entity：[LLM Post-Training 全景指南](ch01/422-llm.html) 了解传统方法谱系。
 
 ## 实践启示
 - **数据工程正在成为 Post-Training 的瓶颈**——模型架构/训练算法已经成熟（DPO/GRPO/RLVR 已是标配），但**数据质量与可解释性**才刚刚被严肃对待。Goodfire 的 R²=0.9 预测精度说明 interpretability 工具已可工程化。
@@ -2288,7 +2257,7 @@ LiveKit Agents 采用 Apache 2.0 协议，10k+ Stars。与托管平台相比的�
 
 ---
 
-## Ch14.018 构建 AI 时代的知识底座：直播数据 LLM Wiki 实践
+## Ch14.017 构建 AI 时代的知识底座：直播数据 LLM Wiki 实践
 
 > 📊 Level ⭐⭐ | 6.9KB | `entities/ai-knowledge-base-llm-wiki-practice-alicloud.md`
 
@@ -2357,7 +2326,7 @@ Wiki 与传统文档的本质区别在于四个维度：**结构可解析**（fr
 
 ## 相关实体
 
-- [LLM Wiki知识管理](ch01/458-llm.html)
+- [LLM Wiki知识管理](ch01/422-llm.html)
 - [Knowledge Base构建](https://github.com/QianJinGuo/wiki-public/blob/main/entities/knowledge-base-construction.md)
 - [阿里云AI实践](ch04/052-ai.html)
 
@@ -2367,7 +2336,7 @@ Wiki 与传统文档的本质区别在于四个维度：**结构可解析**（fr
 
 ---
 
-## Ch14.019 Stop Giving Your Agents Database Credentials — Agent Data Governance Patterns
+## Ch14.018 Stop Giving Your Agents Database Credentials — Agent Data Governance Patterns
 
 > 📊 Level ⭐⭐ | 6.6KB | `entities/agent-data-governance-crewai-credential-patterns.md`
 
@@ -2445,7 +2414,7 @@ Data + AI Summit 的共识数据：Agent 循环（推理、工具调用、prompt
 
 ---
 
-## Ch14.020 Amazon Redshift 推出集成数据湖查询引擎的 Graviton RG 实例
+## Ch14.019 Amazon Redshift 推出集成数据湖查询引擎的 Graviton RG 实例
 
 > 📊 Level ⭐⭐ | 6.1KB | `entities/amazon-redshift-推出带有集成数据湖查询引擎的基于-aws-graviton-的-rg-实例.md`
 
@@ -2455,9 +2424,9 @@ Data + AI Summit 的共识数据：Agent 循环（推理、工具调用、prompt
 ## 相关实体
 - [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](ch04/180-openclaw.html)
 - [How Amazon Finance Streamlines Regulatory Inquiries By Using](ch11/009-how-amazon-finance-streamlines-regulatory-inquiries-by-using.html)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](ch04/398-amazon-bedrock-agentcore.html)
-- [Introducing Claude Platform On Aws](ch01/367-introducing-claude-platform-on-aws-anthropic-s-native-platf.html)
-- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](ch04/398-amazon-bedrock-agentcore.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](ch04/392-amazon-bedrock-agentcore.html)
+- [Introducing Claude Platform On Aws](ch01/336-introducing-claude-platform-on-aws-anthropic-s-native-platf.html)
+- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](ch04/392-amazon-bedrock-agentcore.html)
 
 → [原文存档](https://aws.amazon.com/cn/blogs/china/amazon-redshift-introduces-aws-graviton-based-rg-instances-with-an-integrated-data-lake-query-engine/)
 - [aws graviton5 m9g/m9gd 实例 ga 公告](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-graviton5-m9g-m9gd-launch-2026.md)
@@ -2495,7 +2464,7 @@ RG 实例已在全球广泛区域推出，涵盖亚太、北美、欧洲、中�
 
 ---
 
-## Ch14.021 SQL NOT IN 与 NULL 的经典陷阱：De Morgan 定律到解析器行为
+## Ch14.020 SQL NOT IN 与 NULL 的经典陷阱：De Morgan 定律到解析器行为
 
 > 📊 Level ⭐⭐ | 5.9KB | `entities/sql-not-in-null-trap-demorgan-parser.md`
 
@@ -2565,7 +2534,7 @@ SELECT id FROM A EXCEPT SELECT id FROM B;
 
 ---
 
-## Ch14.022 nOps FinOps Agent 架构：语义层驱动的数据分析 Agent 设计
+## Ch14.021 nOps FinOps Agent 架构：语义层驱动的数据分析 Agent 设计
 
 > 📊 Level ⭐⭐ | 5.9KB | `entities/how-nops-shipped-finops-agents-75-faster-with-amazon-bedrock.md`
 
@@ -2613,7 +2582,7 @@ Vercel/Next.js BFF 与 AgentCore 之间有一层自定义 merge layer，一次�
 ## 记忆与多租户隔离
 
 - **记忆三策略**：语义事实（组织上下文：账户结构/成本分配约定）、用户偏好（布局/默认聚合/图表类型）、canvas 摘要（跨会话保留分析线索）。会话按 canvas 而非 HTTP session 划分，刷新/重连后上下文不丢。
-- **隔离两层**：[AgentCore Gateway](ch04/398-amazon-bedrock-agentcore.html) 侧的 Guardrails 作为独立 pre-check（跨租户数据访问策略 + prompt 攻击检测），输出侧再有一层租户策略清洗（脱敏内部标识符）。
+- **隔离两层**：[AgentCore Gateway](ch04/392-amazon-bedrock-agentcore.html) 侧的 Guardrails 作为独立 pre-check（跨租户数据访问策略 + prompt 攻击检测），输出侧再有一层租户策略清洗（脱敏内部标识符）。
 
 ## 与既有实体的关系
 
@@ -2631,7 +2600,7 @@ Vercel/Next.js BFF 与 AgentCore 之间有一层自定义 merge layer，一次�
 
 ---
 
-## Ch14.023 GitHub Multilingual Repositories Dataset — 4000 万仓库多语言元数据
+## Ch14.022 GitHub Multilingual Repositories Dataset — 4000 万仓库多语言元数据
 
 > 📊 Level ⭐⭐ | 5.5KB | `entities/github-multilingual-repositories-dataset-cc0.md`
 
@@ -2738,178 +2707,10 @@ Vercel/Next.js BFF 与 AgentCore 之间有一层自定义 merge layer，一次�
 ## 原文链接
 
 ## 相关实体
-- [明星开源项目，为什么开始离开 github？](ch01/476-github.html)
+- [明星开源项目，为什么开始离开 github？](ch01/440-github.html)
 - [cisa admin leaked aws govcloud keys on github](ch11/107-cisa-admin-leaked-aws-govcloud-keys-on-github.html)
-- [1-click github token stealing via a vscode bug — ammaraskar](ch01/476-github.html)
+- [1-click github token stealing via a vscode bug — ammaraskar](ch01/440-github.html)
 
 → [原文存档](https://github.blog/ai-and-ml/llms/accelerating-researchers-and-developers-building-multilingual-ai-with-a-new-open-dataset/)
-
----
-
-## Ch14.024 Metric Semantic Layer: How Lyft Governs and Scales Key Data Definitions
-
-> 📊 Level ⭐⭐ | 4.1KB | `entities/metric-semantic-layer-how-lyft-governs-and-scales-key-data-definitions.md`
-
-# Metric Semantic Layer: How Lyft Governs and Scales Key Data Definitions
-
-Markdown Content:
-[![Image 1: Iraklikhorguani](https://miro.medium.com/v2/da:true/resize:fill:64:64/0*m85T5tMk8enr2P2-)](https://medium.com/@iraklikhorguani?source=post_page---byline--56bee3643c29---------------------------------------)
-
-![Image 2](https://miro.medium.com/v2/resize:fit:700/1*9r1bGT0StHEZaLhFgNhI7A.png)
-
-_Written by_[_Rohit Channe_](https://www.linkedin.com/in/rohit-channe-5368b469/)_and_[_Simran Mirchandani_](https://www.linkedin.com/in/simranmirchandani/)_at Lyft._
-
-At Lyft, data isn’t just a resource — it’s woven into everything we do. Metrics drive key forecasts, steer operational decisions, and put our boldest hypotheses to the test. But as Lyft scaled, products launched and evolved, and team members came and went, we found ourselves at risk of different teams using different definitions for a given metric. What did “Metric ABC” actually mean? The answer often depended on the context and application of the team you asked.
-
-The consequences were predictable. Without centralized version control or a shared standard, outdated metric definitions crept into decision-making.
-
-Our solution was to build an internal **Metric Semantic Layer (MSL)**: a centralized repository that serves as a single, authoritative home for every metric’s definition — providing both a clear, plain-English description and the definitive SQL code. No more hunting across codebases or tribal knowledge — just one place to store and access a standardized, agreed-upon definition. With MSL, we have **a single source of truth** — consistent terminology and assumptions across every team, so everyone is genuinely speaking the same language. We achieve this through three key principles:
-
-1.   **Simplified onboarding and change management** — update a metric definition once, and the change automatically and frictionlessly flows through every downstream application that depends on it
-2.   **Intentional governance**— clarified ownership, defined scope, clear accountability for data quality, and a structure resilient enough to survive org changes, team rotations, and attrition
-3.   **Transparency and accessibility** — definitions are easy for both technical and non-technical users (and downstream applications) to find and integrate into day-to-day workflows
-
-Taking the above principles into account, we **implemented the Metrics Semantic Layer as a Python package**:
-
-→ [原文存档](https://eng.lyft.com/metric-semantic-layer-how-lyft-governs-and-scales-key-data-definitions-56bee3643c29)
-
----
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
-
----
-
-## Ch14.025 Write-Ahead Intent Log: a Foundation for Efficient CDC at Scale
-
-> 📊 Level ⭐⭐ | 3.8KB | `entities/write-ahead-intent-log-a-foundation-for-efficient-cdc-at-scale.md`
-
-# Write-Ahead Intent Log: a Foundation for Efficient CDC at Scale
-
-Markdown Content:
-[InfoQ Homepage](https://www.infoq.com/ "InfoQ Homepage")[Presentations](https://www.infoq.com/presentations "Presentations")Write-Ahead Intent Log: a Foundation for Efficient CDC at Scale
-
-![Image 1](https://imgopt.infoq.com/fit-in/1288x0/filters:quality(80)/presentations/write-ahead-intent-log/en/slides/Doi-1781788191276.jpg)
-
-Vinay Chella and Akshat Goel discuss the challenges of running traditional CDC across heterogeneous databases during peak order traffic. They explain how Debezium hit limits under high load and share how they built Write-Ahead Intent Log (WAIL) - a custom architecture that utilizes a dumb producer proxy and a smart consumer pattern to cleanly separate the intent from the state payload.
-
-Vinay Chella is an Engineering Leader at DoorDash, where he leads the Storage and Streaming Infrastructure organization that powers mission-critical systems across the marketplace. Akshat Goel is a Staff Software Engineer at DoorDash, where he builds the Storage Access Platform, a unified abstraction layer powering all online data stores.
-
-Software is changing the world. QCon San Francisco empowers software development by facilitating the spread of knowledge and innovation in the developer community. A practitioner-driven conference, QCon is designed for technical team leads, architects, engineering directors, and project managers who influence innovation in their teams.
-
-*   ![Image 2](https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/sponsorship/eventsnotice/7dd71c7c-4b0e-4760-b97d-232ac1816637/resources/1NeuBirdWebinarJune25-Transcripts-1777458459989.png)June 25th, 2026, 1 PM EDT
-#### [Architecting for Autonomous Reliability: Embedding AI into Your Observability Stack](https://www.infoq.com/url/t/1799cc66-1076-4f38-ba1e-fe340c13a7b2/?label=NeuBirdAI-Transcripts)
-
-[Presented by: Justin Griffin - Head of Product at NeuBird AI](https://www.infoq.com/url/t/1799cc66-1076-4f38-ba1e-fe340c13a7b2/?label=NeuBirdAI-Transcripts)
-
-*   ![Image 3](https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/sponsorship/eventsnotice/0b46c1f1-7263-457d-82d9-12be6fa07fbd/resources/1DatadogWebinarJuly9-Transcripts-1779204853394.png)July 9th, 2026, 12 PM EDT
-#### [Rethinking Logs in the Age of AI Analysis](https://www.infoq.com/url/t/71ed3a08-6275-4ce8-adb0-1ceaa4e4161a/?label=Datadog-Transcripts)
-
-→ [原文存档](https://www.infoq.com/presentations/write-ahead-intent-log/)
-
----
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
-
----
-
-## Ch14.026 The Data Operating System for the Foundation Model Era — Data Juicer
-
-> 📊 Level ⭐⭐ | 3.7KB | `entities/the-data-operating-system-for-the-foundation-model-era-data-juicer.md`
-
-# The Data Operating System for the Foundation Model Era — Data Juicer
-
-Markdown Content:
-[![Image 1: PyPI](https://img.shields.io/pypi/v/py-data-juicer?logo=pypi&color=026cad)](https://pypi.org/project/py-data-juicer)[![Image 2: Downloads](https://static.pepy.tech/personalized-badge/py-data-juicer?period=total&units=INTERNATIONAL_SYSTEM&left_color=grey&right_color=green&left_text=downloads)](https://pepy.tech/projects/py-data-juicer)[![Image 3: Docker](https://img.shields.io/docker/v/datajuicer/data-juicer?logo=docker&label=Docker&color=498bdf)](https://hub.docker.com/r/datajuicer/data-juicer)
-
-[![Image 4: Docs](https://img.shields.io/badge/%F0%9F%93%96_Docs-Website-026cad)](https://datajuicer.github.io/data-juicer/)[![Image 5: Operators](https://img.shields.io/badge/%F0%9F%A7%A9_Operators-200+-blue)](https://datajuicer.github.io/data-juicer/en/main/docs/Operators.html)[![Image 6: Recipes](https://img.shields.io/badge/%F0%9F%8D%B3_Recipes-50+-brightgreen)](https://github.com/datajuicer/data-juicer-hub)
-
-[![Image 7: Chinese](https://img.shields.io/badge/%F0%9F%87%A8%F0%9F%87%B3_%E6%96%87%E6%A1%A3-%E4%B8%BB%E9%A1%B5-red)](https://datajuicer.github.io/data-juicer/zh_CN/main/index_ZH.html)[![Image 8: Paper](https://img.shields.io/badge/NeurIPS'25_Spotlight-2.0-B31B1B?logo=arxiv)](https://arxiv.org/abs/2501.14755)[![Image 9: Coverage](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fgist.githubusercontent.com%2FHYLcool%2Ff856b14416f08f73d05d32fd992a9c29%2Fraw%2Ftotal_cov.json&label=coverage&logo=codecov&color=4c1)](https://github.com/datajuicer/data-juicer)
-
-**Multimodal | Cloud-Native | AI-Ready | Large-Scale**
-
-Data-Juicer (DJ) transforms raw data chaos into AI-ready intelligence. It treats data processing as _composable infrastructure_—providing modular building blocks to clean, synthesize, and analyze data across the entire AI lifecycle, unlocking latent value in every byte.
-
-Whether you’re deduplicating web-scale pre-training corpora, curating agent interaction traces, or preparing domain-specific RAG indices, DJ scales seamlessly from your laptop to thousand-node clusters—no glue code required.
-
-## 🚀 Quick Start[#](http://datajuicer.github.io/data-juicer/en/main/#quick-start "Link to this heading")
-
-*   [JupyterLab Playground with Tutorials](http://8.138.149.181/)
-
-→ [原文存档](https://datajuicer.github.io/data-juicer/en/main/)
-
----
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
-
----
-
-## Ch14.027 Transforming rare cancer research with Amazon Quick: Integrating biomedical databases for breakthrough discoveries
-
-> 📊 Level ⭐⭐ | 3.0KB | `entities/transforming-rare-cancer-research-with-amazon-quick-integrat.md`
-
-# Transforming rare cancer research with Amazon Quick: Integrating biomedical databases for breakthrough discoveries
-
-## 相关实体
-
-- [better decisions at scale: how mathematical optimization del](ch11/131-better-decisions-at-scale-how-mathematical-optimization-del.html)
-- [ai-driven layoffs aren’t making business sense | cio](ch03/009-cio.html)
-→ [原文存档](https://aws.amazon.com/blogs/machine-learning/transforming-rare-cancer-research-with-amazon-quick-integrating-biomedical-databases-for-breakthrough-discoveries)
-
-## 深度分析
-
-Transforming rare cancer research with Amazon Quick: Integrating biomedical databases for breakthrough discoveries 涉及agent领域的核心技术议题。
-### 核心观点
-1. Integrating these sources for a single investigation typically requires custom ETL pipelines, manual schema reconciliation, and iterative querying across disconnected systems—a process that can take weeks before any analysis begins.
-2. Amazon Quick Research addresses this integration challenge by providing a unified research environment.
-3. It ingests structured and unstructured data from multiple sources, including publicly available biomedical databases such as PubMed, and applies large language model (LLM)-driven synthesis to generate cited, versioned research reports.
-4. In this post, we walk through how to use Amazon Quick Research to integrate biomedical data sources for rare cancer research.
-5. The walkthrough uses pediatric sarcoma as the research domain and draws on publicly available datasets from PubMed and other open biomedical repositories.
-
-### 关联实体
-
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/004-agent.html)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/660-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
-- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/004-agent.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch04/180-openclaw.html)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch05/026-harness-engineering.html)
-
----
-
-## Ch14.028 Amazon Quick integration with time-series databases for market intelligence using MCP
-
-> 📊 Level ⭐⭐ | 2.6KB | `entities/amazon-quick-mcp-kdbx-time-series.md`
-
-# Amazon Quick integration with time-series databases for market intelligence using MCP
-
-## 相关实体
-
-- [dynamically splitting wide partitions in cassandra for time](ch11/022-dynamically-splitting-wide-partitions-in-cassandra-for-time.html)
-- [valkey 为什么这么快？盘点 valkey 中提升性能的黑科技](https://github.com/QianJinGuo/wiki-public/blob/main/entities/valkey-why-valkey-performance.md)
-→ [原文存档](https://aws.amazon.com/blogs/machine-learning/amazon-quick-integration-with-time-series-databases-for-market-intelligence-using-mcp/)
-
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
-## 深度分析
-
-Amazon Quick integration with time-series databases for market intelligence using MCP 涉及agent领域的核心技术议题。
-### 核心观点
-1. As a financial analyst, you navigate millions of stock trades flowing through markets every second, searching for patterns that drive trading decisions.
-2. Financial institutions often use time series databases to analyze high-frequency market data.
-3. In this post, we walk through a practical implementation using KDB-X MCP server integration with Amazon Quick, demonstrating how traders and analysts can ask questions using conversational language and receive actionable insights from datasets.
-4. You can apply this same integration pattern across various domains, from financial market analysis to IoT sensor monitoring to DevOps performance dashboards, where you need to simplify access to time series insights.
-5. ## Solution overview
-Amazon Quick is a comprehensive, generative AI-powered business intelligence service that you can use to analyze data, create visualizations, automate workflows, and collaborate across your organization.
-
-### 关联实体
-
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/004-agent.html)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/004-agent.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch04/180-openclaw.html)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/096-karpathy-vibe-coding-agentic-engineering.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/197-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
-- [两万字详解Claude Code源码核心机制](ch03/057-claude-code.html)
 
 ---

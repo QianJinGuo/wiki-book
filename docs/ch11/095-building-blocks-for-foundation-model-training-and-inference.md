@@ -57,12 +57,12 @@ DCGM-Exporter 暴露 GPU 指标中，SM activity (DCGM_FI_PROF_SM_ACTIVE) 比基
 
 ## 相关实体
 - [Foundation Model Building Blocks](../ch03/064-foundation-model-building-blocks.html)
-- [AWS Model Agility: 6步LLM跨代际迁移框架](../ch01/166-agi.html)
+- [AWS Model Agility: 6步LLM跨代际迁移框架](../ch01/201-agi.html)
 - [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](../ch04/043-agentic-ai.html)
-- [SQS+Lambda异步管道：2000并发0%限流的工程细节](212-bedrock.html)
+- [SQS+Lambda异步管道：2000并发0%限流的工程细节](201-bedrock.html)
 - [EC2 Capacity Blocks：GPU短期容量决策指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-ec2-capacity-blocks-gpu-ml.md)
 - [SageMaker容量感知推理：实例池+优先级Fallback](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-sagemaker-capacity-aware-inference-fallback.md)
-- [AI Infra 系统性拆解：传统后台工程师视角](../ch01/758-ai-infra.html)
+- [AI Infra 系统性拆解：传统后台工程师视角](../ch01/623-ai-infra.html)
 - [基于 Amazon WorkSpaces Applications 快速搭建企业级应用培训环境](019-amazon-workspaces-applications.html)
 - [End To End Encrypted Ml Inference With Amazon Sagemaker Ai A](037-end-to-end-encrypted-ml-inference-with-amazon-sagemaker-ai-a.html)
 - [notes on pretraining parallelisms and failed training runs.](../ch04/052-ai.html)

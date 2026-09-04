@@ -2,7 +2,7 @@
 
 > 从数字到物理：强化学习、仿真、人形机器人
 
-> 本章收录 **6 篇**实体，按深度递增排列。
+> 本章收录 **5 篇**实体，按深度递增排列。
 
 ---
 
@@ -10,7 +10,7 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐⭐ 工程师 | 需编程基础 | 6 |
+| ⭐⭐ 工程师 | 需编程基础 | 5 |
 
 ---
 
@@ -132,7 +132,7 @@ LingBot-Vision 的"空间原生"定位与 具身智能 的需求高度契合。�
 - IPO 融资款约一半（3 亿美元）将用于 AI 模型训练，包括"Embodied Large Model"
 ## 相关实体
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloudflare-glasswing-mythos-security.md)
-- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](ch12/050-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes.html)
+- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](ch12/040-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes.html)
 - [Fine Tuning Nvidia Cosmos Predict 25 With Loradora For Robot Video Generation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tuning-nvidia-cosmos-predict-25-with-loradora-for-robot-video-generation.md)
 - [User Interviews Guide Pro](https://github.com/QianJinGuo/wiki-public/blob/main/entities/user-interviews-guide-pro.md)
 - [估值3000亿63家新实验室杀疯了Murati贝佐斯集体押注下一代Ai](ch04/052-ai.html)
@@ -233,7 +233,7 @@ Unitree 计划将 IPO 融资款约 3 亿美元（每年约 1 亿美元）用于 
 ## 与现有知识的链接
 - → [原文存档](https://mp.weixin.qq.com/s/YfZ-bvXAmMBO3LFQ6eUPKA)
 - → [Yann LeCun JEPA世界模型](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yann-lecun-jepa-world-model.md) — AMI Labs具身智能方向
-- → [NVIDIA边缘端LLM for机器人](ch01/169-nvidia-edge-first-llms-av-robotics.html) — 英伟达边缘AI方案对比
+- → [NVIDIA边缘端LLM for机器人](ch01/140-nvidia-edge-first-llms-av-robotics.html) — 英伟达边缘AI方案对比
 
 ## 深度分析
 ### 异构计算vs单芯片：架构选择的工程哲学
@@ -384,11 +384,11 @@ Physical AI is moving from research into production.
 
 ### 关联实体
 
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/660-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
-- [Latest Open Artifacts 20 New Orgs New Types Of Models With N](ch01/656-latest-open-artifacts-20-new-orgs-new-types-of-models.html)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](https://github.com/QianJinGuo/wiki-public/blob/main/entities/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md)
+- [Latest Open Artifacts 20 New Orgs New Types Of Models With N](https://github.com/QianJinGuo/wiki-public/blob/main/entities/latest-open-artifacts-20-new-orgs-new-types-of-models-with-n.md)
 - [Fundamentals Large Tabular Model Nexus Is Now Available On A](ch04/052-ai.html)
 - [5238213](https://github.com/QianJinGuo/wiki-public/blob/main/entities/5238213.md)
-- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](ch01/113-hy3-preview.html)
+- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](ch01/093-hy3-preview.html)
 - [Code As Agent Harness Survey](ch09/048-code-as-agent-harness.html)
 
 ## 实践启示
@@ -397,51 +397,5 @@ Physical AI is moving from research into production.
 2. **可观测性**: Agent 行为调试应优先检查工具定义和上下文质量
 3. **渐进式部署**: 从简单 ReAct 循环起步，逐步引入多 Agent 编排
 4. **验证优先**: 建立完善的测试验证体系，确保 Agent 行为可预测
-
----
-
-## Ch18.006 蔚蓝BabyAlpha A3消费级机器狗撕开英伟达垄断
-
-> 📊 Level ⭐⭐ | 2.7KB | `entities/weilan-babyalpha-a3-machine-dog.md`
-
-# 蔚蓝BabyAlpha A3消费级机器狗撕开英伟达垄断
-
-→ [原文存档](https://mp.weixin.qq.com/s/YfZ-bvXAmMBO3LFQ6eUPKA)
-
-## 深度分析
-
-蔚蓝BabyAlpha A3消费级机器狗撕开英伟达垄断 涉及agent领域的核心技术议题。
-### 核心观点
-1. # 蔚蓝BabyAlpha A3消费级机器狗撕开英伟达垄断
-## 核心亮点
-- 70亿参数大模型端侧推理，消费级首次
-- 国产异构芯片架构，成本仅为英伟达1/10
-- 感知系统关键指标达到人眼水平
-## 01 算力枷锁
-### 单芯片路线的三重困境
-1.
-2. **摩尔定律放缓**：制程提升边际递减
-2.
-3. **通用芯片效率浪费**：AI推理、运动控制、传感融合任务不同，混在一起算力消耗在任务切换
-3.
-4. ### 视觉系统
-| 参数 | BabyAlpha A3 | 行业主流 | 倍数 |
-|------|-------------|---------|------|
-| 像素 | 6600万三摄(8K+4K+4K) | 200万 | 30倍 |
-| HDR | 140dB | 80dB | - |
-| 帧率 | 480fps | 30fps | 16倍 |
-人眼动态范围约100-120dB，主流机器人约80dB，A3达140dB。
-5. ### 空间感知
-- 5组3D ToF + 3D结构光，360°环视面阵
-- 点云密度：223.
-
-### 关联实体
-
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](ch03/004-agent.html)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/660-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
-- [你不知道的 Agent原理架构与工程实践 V2](ch03/004-agent.html)
-- [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch04/180-openclaw.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch04/180-openclaw.html)
 
 ---

@@ -155,14 +155,14 @@ BFD（Bidirectional Forwarding Detection）在其中的作用是将故障检测�
 ## 来源
 
 ## 相关实体
-- [Aws Devops Agent 实战云网络故障自主调查与修复建议](../ch04/217-aws-devops-agent.html)
-- [Habby Game Aws Devops Agent](../ch04/217-aws-devops-agent.html)
+- [Aws Devops Agent 实战云网络故障自主调查与修复建议](../ch04/216-aws-devops-agent.html)
+- [Habby Game Aws Devops Agent](../ch04/216-aws-devops-agent.html)
 - [Aws Devops Agent Mcp Server打通混合云网络排障的最后一公里](../ch07/044-aws-devops-agent-mcp-server.html)
 - [Amazon Iot Core Kiro Industrial Data Pipeline](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-iot-core-kiro-industrial-data-pipeline.md)
-- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](168-cost-effective-deployment-of-vision-language-models-for-pet.html)
+- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](167-cost-effective-deployment-of-vision-language-models-for-pet.html)
 
 → [原文存档](https://aws.amazon.com/cn/blogs/china/direct-connect-dx-migration-best-practices/)
-- [databricks storage ecosystem & opensharing：企业数据治理从 migrate e](../ch01/167-rag.html)
+- [databricks storage ecosystem & opensharing：企业数据治理从 migrate e](../ch01/138-rag.html)
 
 ---
 

@@ -103,14 +103,14 @@
 5. **个人信号 × 社区匹配** = Skill 发现的新范式，超越关键词搜索
 
 ## 相关对照
-- [OpenSquilla](../ch01/009-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.html) —— Meta Skill 的实现载体
+- [OpenSquilla](../ch01/007-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.html) —— Meta Skill 的实现载体
 - [SkillOpt](../ch05/028-skillopt.html) —— 互补（Skill 变好 vs Skill 变多）
 - [Impeccable](../ch05/001-impeccable.html) —— skill 内命令的范例
-- [Agent Skill 编写指南](../ch01/285-agent-skill.html)
+- [Agent Skill 编写指南](../ch01/255-agent-skill.html)
 - [10 篇论文看懂 AI Agent Skill](045-skill.html)
-- [Agent Skills 系统性综述](../ch04/314-agent-skills.html)
+- [Agent Skills 系统性综述](../ch04/309-agent-skills.html)
 - [Skills 系统设计三路对比](045-skill.html)
-- [Agent/Skills/Teams 架构演进](../ch04/203-agent-skills-teams.html)
+- [Agent/Skills/Teams 架构演进](../ch04/202-agent-skills-teams.html)
 
 ## 深度分析
 - **流程知识资产化**：Meta Skill 将隐性的 SOP 流程转化为显性的可执行文档，赋予模型超越单步工具调用的宏观上下文理解能力 

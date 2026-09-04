@@ -2,7 +2,7 @@
 
 > 让模型跑得更快：投机解码、MoE、PD 分离、量化
 
-> 本章收录 **17 篇**实体，按深度递增排列。
+> 本章收录 **16 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 1 |
-| ⭐⭐ 工程师 | 需编程基础 | 8 |
+| ⭐⭐ 工程师 | 需编程基础 | 7 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 8 |
 
 ---
@@ -40,8 +40,8 @@
 - Chroma 是嵌入式帮手（零运维、<100 万向量最佳），Qdrant 是独立引擎（生产级、过滤不伤召回率）
 
 ## 相关实体
-- [Vector Db Chroma Vs Qdrant](ch11/163-chroma-vs-qdrant.html)
-- [Deepseek V4 Pro Vs Claude](ch01/717-deepseek-v4.html)
+- [Vector Db Chroma Vs Qdrant](ch11/162-chroma-vs-qdrant.html)
+- [Deepseek V4 Pro Vs Claude](ch01/430-deepseek-v4.html)
 - [Gateway Architecture Openclaw Claude Hermes Comparison](ch04/180-openclaw.html)
 - [Context Engineering Three Memory Paradigms Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md)
 - [别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](https://github.com/QianJinGuo/wiki-public/blob/main/entities/别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个.md)
@@ -394,8 +394,8 @@ SageMaker AI 端点按实例运行时长计费 ：
 ## 扩展阅读
 
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/build-real-time-voice-applications-with-amazon-sagemaker-ai-and-vllm/)
-→ [Voice Agent 设计 - Nova Sonic 多 Agent 工具与会话](ch11/218-amazon-nova.html)
-→ [Nova Sonic WebRTC 实时语音流](ch11/218-amazon-nova.html)
+→ [Voice Agent 设计 - Nova Sonic 多 Agent 工具与会话](ch11/207-amazon-nova.html)
+→ [Nova Sonic WebRTC 实时语音流](ch11/207-amazon-nova.html)
 → [OpenAI Realtime Voice 架构](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/openai-realtime-voice-architecture.md)
 
 ---
@@ -504,8 +504,8 @@ Willison 的 **lethal trifecta** 框架（被 Green 引用）是同一问题的�
 
 - [End To End Encrypted Ml Inference Sagemaker Fhe](https://github.com/QianJinGuo/wiki-public/blob/main/entities/end-to-end-encrypted-ml-inference-sagemaker-fhe.md)：互补（不同加密学原语，同一目标）
 - [Vibe Coding Agentic Engineering Convergence Simon Willison](ch09/041-coding-agent.html)：lethal trifecta 概念同源
-- [Apple Silicon Costs More Than Openrouter](ch01/324-apple-silicon-costs-more-than-openrouter.html)：Apple 硬件成本视角
-- [Apple Corecrypto Formal Verification Blueprint](ch12/024-apple-corecrypto-formal-verification-blueprint-post-quantu.html)：Apple 加密学基础设施
+- [Apple Silicon Costs More Than Openrouter](ch01/293-apple-silicon-costs-more-than-openrouter.html)：Apple 硬件成本视角
+- [Apple Corecrypto Formal Verification Blueprint](ch12/021-apple-corecrypto-formal-verification-blueprint-post-quantu.html)：Apple 加密学基础设施
 
 ## 深度分析
 
@@ -730,7 +730,7 @@ USP 的"主干 ring + 分支本卡 + 流式融合"设计不只适用于 EAGLE-3�
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-model-research-latest-directions.md)
 
-- [小米AI — ICML 2026 论文矩阵（11篇）](ch01/770-ai-icml-2026-11.html)
+- [小米AI — ICML 2026 论文矩阵（11篇）](ch01/635-ai-icml-2026-11.html)
 - [OpenClacky — Prompt Cache 命中率 90% 的 Harness 工程实践](ch05/008-harness.html)
 - [百度文心大模型后训练进化（ERNIE 3.0→5.0）](ch04/052-ai.html)
 
@@ -999,9 +999,9 @@ bash examples/pretrain_language_model/launch.sh qwen3-30b-a3b
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-model-research-latest-directions.md)
 
-- [How Superset built the IDE for AI agents on Vercel](ch01/073-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
-- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/769-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.html)
-- [Toto 2.0: Time series forecasting enters the scaling era](ch11/144-toto-2-context-aware-log-analytics-for-complex-distributed.html)
+- [How Superset built the IDE for AI agents on Vercel](ch01/058-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
+- [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](ch01/634-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.html)
+- [Toto 2.0: Time series forecasting enters the scaling era](ch11/143-toto-2-context-aware-log-analytics-for-complex-distributed.html)
 
 ---
 
@@ -1060,7 +1060,7 @@ stream 之间的独立性既是优势也是问题——它们不知道彼此的�
 6. **注意 unavoidable sync point**：异步优化无法消除所有同步——CPU 仍需在每个 batch 结束时采样 token 并更新状态。这个不可避免的同步点是剩余 1% GPU 空闲的来源。
 
 ## 相关实体
-- [LLM 高效推理 vLLM](ch01/758-ai-infra.html)
+- [LLM 高效推理 vLLM](ch01/623-ai-infra.html)
 - [SGLang Agent 开发](ch03/004-agent.html)
 - [推理优化](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/inference-optimization.md)
 
@@ -1068,55 +1068,7 @@ stream 之间的独立性既是优势也是问题——它们不知道彼此的�
 
 ---
 
-## Ch16.009 End-to-end encrypted ML inference with Amazon SageMaker AI and FHE
-
-> 📊 Level ⭐⭐ | 3.2KB | `entities/end-to-end-encrypted-ml-inference-with-amazon-sagemaker-ai-a.md`
-
-# End-to-end encrypted ML inference with Amazon SageMaker AI and FHE
-
-→ [原文存档](https://aws.amazon.com/blogs/machine-learning/end-to-end-encrypted-ml-inference-with-amazon-sagemaker-ai-and-fhe)
-
-## 深度分析
-
-End-to-end encrypted ML inference with Amazon SageMaker AI and FHE 涉及apple领域的核心技术议题。基于原文内容的深入分析：
-
-### 核心观点
-
-1. # End-to-end encrypted ML inference with Amazon SageMaker AI and FHE
-2. Machine learning (ML) inference often requires processing sensitive data—medical records, proprietary business information, or personal communications
-3. FHE is a form of encryption that allows encrypted data to be processed in encrypted form without decryption
-4. * **Healthcare** : A health insurance company wants to provide doctors with an ML model that predicts medical procedure outcomes based on diagnostic data
-
-### 技术要点
-
-本文在apple方向提供以下关键技术洞察：
-
-- **技术架构**: 基于apple的设计理念和实现路径
-- **工程挑战**: 实际落地中面临的关键问题和解决思路
-- **行业趋势**: 该领域的发展方向和新兴范式
-
-### 与现有知识体系的关联
-
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/004-agent.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/197-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/004-agent.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch04/180-openclaw.html)
-- [你不知道的 Agent原理架构与工程实践 V2](ch03/004-agent.html)
-
-## 实践启示
-
-1. **工程落地**: 将apple领域的理论转化为可执行方案时，需关注可观测性和可维护性
-2. **技术选型**: 根据实际场景需求选择合适的技术栈，避免过度工程化
-3. **持续迭代**: 建立反馈闭环，通过数据驱动的方式持续优化系统表现
-4. **风险管控**: 在引入新技术时，充分评估其对现有系统稳定性的影响
-
-## 相关实体
-
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/data-infrastructure.md)
-
----
-
-## Ch16.010 The next generation of speculative decoding: DFlash and Spec V2 - LMSYS Blog
+## Ch16.009 The next generation of speculative decoding: DFlash and Spec V2 - LMSYS Blog
 
 > 📊 Level ⭐⭐⭐ | 11.1KB | `entities/lmsys-dflash-speculative-decoding-2026-06.md`
 
@@ -1273,7 +1225,7 @@ draft 模型权重三处 release：`z-lab/Qwen3.5-397B-A17B-DFlash`、`modal-lab
 ## 相关实体
 
 - [automation anywhere collaborates with cisco, nvidia, okta, a](ch04/010-automation-anywhere-collaborates-with-cisco-nvidia-okta-a.html)
-- [ettin reranker family](ch01/334-introducing-the-ettin-reranker-family.html)
+- [ettin reranker family](ch01/303-introducing-the-ettin-reranker-family.html)
 - [mathematical optimization at enterprise scale: aws innovatio](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mathematical-optimization-aws-innovation-center-enterprise.md)
 - [DDoSing Software Delivery Pipelines](https://github.com/QianJinGuo/wiki-public/blob/main/entities/varoa-ddosing-software-delivery-pipelines-2026.md)
 - [AI GPUs probably live longer than three years](ch04/052-ai.html)
@@ -1282,7 +1234,7 @@ draft 模型权重三处 release：`z-lab/Qwen3.5-397B-A17B-DFlash`、`modal-lab
 
 ---
 
-## Ch16.011 vLLM V0→V1 迁移中的 logprob 差异修复
+## Ch16.010 vLLM V0→V1 迁移中的 logprob 差异修复
 
 > 📊 Level ⭐⭐⭐ | 9.4KB | `entities/vllm-v0-to-v1-correctness-before-corrections.md`
 
@@ -1302,8 +1254,8 @@ draft 模型权重三处 release：`z-lab/Qwen3.5-397B-A17B-DFlash`、`modal-lab
 
 ## 相关实体
 <!-- ⚠️ 以下交叉引用在 lint 时未通过，请确认 slug 后再取消注释 -->
-<!-- - [servicenow vllm correctness](ch01/458-llm.html) -->
-<!-- - [servicenow vllm correctness huggingface](ch01/458-llm.html) -->
+<!-- - [servicenow vllm correctness](ch01/422-llm.html) -->
+<!-- - [servicenow vllm correctness huggingface](ch01/422-llm.html) -->
 
 ## 深度分析
 ### 背景：为什么 V0→V1 迁移是个高风险操作
@@ -1360,7 +1312,7 @@ vLLM V0→V1 迁移中的 logprob 差异，本质上是 **推理引擎默认行�
 
 ---
 
-## Ch16.012 LLM 推理流水线完整解析：Prefill-Decode 双阶段模型
+## Ch16.011 LLM 推理流水线完整解析：Prefill-Decode 双阶段模型
 
 > 📊 Level ⭐⭐⭐ | 8.6KB | `entities/llm-inference-pipeline-internals.md`
 
@@ -1474,7 +1426,7 @@ DeepSeek V4 Preview（2026-04-24）没有把 KV cache 当固定成本管理，�
 
 - → [DeepSeek V4 本地推理](ch09/040-deepseek-v4-ds4c-antirez.html)：V4 的 CSA/HCA 架构创新（本文第 6 节）与 antirez 的 ds4.c 本地推理引擎互补
 - → [GLM-5 Scaling Pain](ch04/052-ai.html)：高并发推理下的竞态 Bug，是本文第 8 节"推理服务基础设施"的反面案例
-- → [vLLM](ch01/458-llm.html)：PagedAttention 的具体实现
+- → [vLLM](ch01/422-llm.html)：PagedAttention 的具体实现
 
 ## 工业实践：快手 kLLM 全栈优化（2026-07）
 
@@ -1494,7 +1446,7 @@ DeepSeek V4 Preview（2026-04-24）没有把 KV cache 当固定成本管理，�
 
 ---
 
-## Ch16.013 ServiceNow vLLM V0→V1 正确性修复
+## Ch16.012 ServiceNow vLLM V0→V1 正确性修复
 
 > 📊 Level ⭐⭐⭐ | 8.3KB | `entities/servicenow-vllm-correctness-huggingface.md`
 
@@ -1557,8 +1509,8 @@ ServiceNow 的经验是：**错误的顺序（先改目标函数再修后端）�
 
 ## 相关实体
 
-- [ServiceNow vLLM Correctness（更完整的分析）](ch01/458-llm.html)
-- [vLLM V0→V1 迁移中的 logprob 差异修复](ch01/458-llm.html)
+- [ServiceNow vLLM Correctness（更完整的分析）](ch01/422-llm.html)
+- [vLLM V0→V1 迁移中的 logprob 差异修复](ch01/422-llm.html)
 
 ## 深度分析
 
@@ -1582,7 +1534,7 @@ ServiceNow 总结的核心工程原则——"先修后端，再谈目标"——�
 
 ---
 
-## Ch16.014 Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP
+## Ch16.013 Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP
 
 > 📊 Level ⭐⭐⭐ | 8.2KB | `entities/huggingface-torch-mlp-fusion-profiling-2026.md`
 
@@ -1655,7 +1607,7 @@ ServiceNow 总结的核心工程原则——"先修后端，再谈目标"——�
 
 ### 相关实体
 
-- [Deepseek V4 Triton Fp4 Optimization](ch01/350-deepseek-v4-triton-fp4.html) — 同样涉及 Triton kernel 优化，与本文的 pointwise fusion 优化角度互补
+- [Deepseek V4 Triton Fp4 Optimization](ch01/319-deepseek-v4-triton-fp4.html) — 同样涉及 Triton kernel 优化，与本文的 pointwise fusion 优化角度互补
 - [Inference Optimization](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/inference-optimization.md) — 推理优化通识，包含本文未覆盖的量化 / 蒸馏 / serving 层面的优化策略
 
 ## 实践启示
@@ -1674,7 +1626,7 @@ Source: [raw archive](https://huggingface.co/blog/torch-mlp-fusion)
 
 ---
 
-## Ch16.015 vLLM V0 to V1: Correctness Before Corrections in RL
+## Ch16.014 vLLM V0 to V1: Correctness Before Corrections in RL
 
 > 📊 Level ⭐⭐⭐ | 5.1KB | `entities/servicenow-vllm-correctness.md`
 
@@ -1703,16 +1655,16 @@ vLLM V0 到 V1 是实质性重写，而非增量迭代。ServiceNow AI 的这篇
 **后端等效性恢复后，下一步是 async/off-policy 清理。** 保持 rollout 时刻的 behavior policy logprobs，在优化时重新计算 trainer-side old policy logprobs，将后端差异修正与策略更新比率分离，跟踪 ESS 等诊断指标——这些是后端 parity 达成后的自然下一步。
 
 ## 相关实体
-- [servicenow vllm correctness huggingface](ch01/458-llm.html)
+- [servicenow vllm correctness huggingface](ch01/422-llm.html)
 
 → [原文存档](https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections)
 
-- [vLLM V0→V1 迁移中的 logprob 差异修复](ch01/458-llm.html)
+- [vLLM V0→V1 迁移中的 logprob 差异修复](ch01/422-llm.html)
 - [无惧off-policy偏移！bengio团队解绑后训练，大模型rl提速50倍](https://github.com/QianJinGuo/wiki-public/blob/main/entities/trajectory-balance-asynchrony-tba-bengio-papweekly.md)
 
 ---
 
-## Ch16.016 Bonsai Image 4B: 1-bit 和 Ternary 量化
+## Ch16.015 Bonsai Image 4B: 1-bit 和 Ternary 量化
 
 > 📊 Level ⭐⭐⭐ | 5.1KB | `entities/bonsai-image-4b-quantization.md`
 
@@ -1756,7 +1708,7 @@ Bonsai Image 4B 是其参数级别上首个直接在 iPhone 上运行的图像�
 
 如果应用场景对图像质量有要求，Ternary 的 6.4x 压缩比和 95% 性能保留是更优选择。只有在极端内存约束（如 1GB 以下 transformer）时，才考虑 1-bit 方案。Apache 2.0 许可下可直接商用，无需考虑授权成本。
 
-**2. 结合 [Ai Infra Llm Efficient Inference Vllm](ch01/758-ai-infra.html) 进一步降低推理延迟**
+**2. 结合 [Ai Infra Llm Efficient Inference Vllm](ch01/623-ai-infra.html) 进一步降低推理延迟**
 
 虽然 Bonsai 本身已针对 Apple Silicon（MLX）和 CUDA（Gemlite）做了 kernel 优化，但在端侧部署时可结合推理优化技术（如批处理策略、KV cache 管理）进一步提升吞吐。Bonsai Studio iOS app 的部署案例提供了参考实现路径。
 
@@ -1778,7 +1730,7 @@ Bonsai 同时支持 Apple Silicon（MLX）和 CUDA（Gemlite），对于需要�
 
 ---
 
-## Ch16.017 Pytorch in Kernel Recsys Optimization
+## Ch16.016 Pytorch in Kernel Recsys Optimization
 
 > 📊 Level ⭐⭐⭐ | 4.5KB | `entities/pytorch-in-kernel-recsys-optimization.md`
 

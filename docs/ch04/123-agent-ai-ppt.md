@@ -202,7 +202,7 @@ Nacos Skill/Worker Registry 将互联网公司久经考验的微服务治理体�
 - [Defense_At_Ai_Speed_Microsofts_New_Multi](052-ai.html)
 - [Agentscope Java Harness Framework Enterprise Distributed](../ch05/008-harness.html)
 - [Ai Enhanced Data Solutions With Database 26Ai](052-ai.html)
-- [Rag技术框架的演进方向](../ch01/167-rag.html)
+- [Rag技术框架的演进方向](../ch01/138-rag.html)
 
 → [原文存档](https://mp.weixin.qq.com/s/_EtvzL6BaM5Qfr4UOthZiQ)
 

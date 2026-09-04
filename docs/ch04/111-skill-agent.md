@@ -128,12 +128,12 @@ Trigger 关键字粗筛 + 语义打分 tie-breaker 的两层检索机制，本�
 → [winty·Hermes Self-Improving 概览](https://mp.weixin.qq.com/s/KJwNgGFBXGUzjwCi2jMLwg)（同系列）
 
 ## 相关实体
-- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch01/285-agent-skill.html)
+- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch01/255-agent-skill.html)
 - [企业级AI记忆基质三层架构：事实/交互/行动记忆](052-ai.html)
-- [9个Agent技能模块化SageMaker微调生命周期](284-ai-agent.html)
+- [9个Agent技能模块化SageMaker微调生命周期](279-ai-agent.html)
 - [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](../ch07/045-skill.html)
 - [Agent 自我改进的六条路](../ch03/004-agent.html)
-- [GBrain](../ch01/193-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
+- [GBrain](../ch01/164-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html)
 - [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](https://github.com/QianJinGuo/wiki-public/blob/main/entities/demis-hassabis-yc-interview-2026.md)
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](../ch07/045-skill.html)
 - [SkillX — 层次化技能知识库](../ch07/045-skill.html)
@@ -141,11 +141,11 @@ Trigger 关键字粗筛 + 语义打分 tie-breaker 的两层检索机制，本�
 - [Anthropic 14 个 Agent Skills 设计模式](079-anthropic-agent.html)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki-public/blob/main/queries/agent-memory-system-design.md)
 - [OpenHuman: AI Agent 持久记忆框架](097-agent-memory.html)
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](314-agent-skills.html)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](309-agent-skills.html)
 - [上下文工程 - 三种Memory方案对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md)
 
 - [你写的 Skill，及格了吗？](../ch07/045-skill.html)
-- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/484-llm-wiki-obsidian-wiki-gbrain.html)
+- [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](../ch01/448-llm-wiki-obsidian-wiki-gbrain.html)
 - [Hermes Agent](../ch03/066-hermes-agent.html)
 - [Qoder Skills 完全指南](../ch07/034-qoder-skills.html)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/hermes-agent-skill.md)
@@ -156,7 +156,7 @@ Trigger 关键字粗筛 + 语义打分 tie-breaker 的两层检索机制，本�
 
 → [原文存档](http://mmbiz.qpic.cn/mmbiz_png/2wV7LicL762biccoloxNG8ibMibILFtMe4b6RicRl2wLQOg6ILib62aVbfIurHS48oMcDspMbZk3Xa3QSKDd1ichNu8Dw/0?wx_fmt=png)
 
-- [AI Agent 工程师能力地图](284-ai-agent.html)
+- [AI Agent 工程师能力地图](279-ai-agent.html)
 
 ---
 

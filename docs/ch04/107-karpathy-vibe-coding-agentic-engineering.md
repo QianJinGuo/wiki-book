@@ -63,7 +63,7 @@ Karpathy 自己做了一个 MenuGen 小应用：拍菜单照片 → OCR 抽菜�
 
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/035-agent-harness.html)
-- [Claude Code Harness Deep Understanding](../ch01/338-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Understanding](../ch01/307-claude-code-harness-deep-understanding.html)
 - [Claude Code Harness Deep Dive Founder Park](../ch05/059-claude-code-harness.html)
 - [Karpathy Vibe Coding Agentic Engineering](096-karpathy-vibe-coding-agentic-engineering.html)
 - [Vibe Coding Agentic Engineering Convergence Simon Willison](../ch09/041-coding-agent.html)
@@ -71,7 +71,7 @@ Karpathy 自己做了一个 MenuGen 小应用：拍菜单照片 → OCR 抽菜�
 - [Gsd Get Shit Done Context Management Tool](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/026-harness-engineering.html)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](180-openclaw.html)
-- [protecting against token theft](../ch01/232-protecting-against-token-theft.html)
+- [protecting against token theft](../ch01/203-protecting-against-token-theft.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/coding-agent-practice.md)
 
 > [!contradiction] 参见 [Martin Fowler：非确定性进研发链路](../ch05/008-harness.html) 持相反观点：Fowler 认为非确定性进入研发链路后 harness 必须承重、工程约束优先；本页 Karpathy 立场是 Vibe Coding 作为合理起点、快速探索有其价值。

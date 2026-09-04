@@ -70,11 +70,11 @@ Mozilla 测试浏览器内置 VPN 的事实表明，技术行业正在用集成�
 ## 相关事件
 - [原文存档](https://www.theregister.com/security/2026/05/18/mozilla-warns-uk-breaking-vpns-will-not-magically-fix-britains-age-check-mess/5241770/)
 ## 相关实体
-- [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britai](070-mozilla-warns-uk-breaking-vpns-will-not-magically-fix-brita.html)
-- [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britain S Age Check Mess](070-mozilla-warns-uk-breaking-vpns-will-not-magically-fix-brita.html)
+- [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britai](066-mozilla-warns-uk-breaking-vpns-will-not-magically-fix-brita.html)
+- [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britain S Age Check Mess](066-mozilla-warns-uk-breaking-vpns-will-not-magically-fix-brita.html)
 - You Ll Soon Be Able To Bet On Bitcoin Volatility Not Just Price On Cme
 - [Computerweekly Ico Fines Cl0P South Staffs Water](https://github.com/QianJinGuo/wiki-public/blob/main/entities/computerweekly-ico-fines-cl0p-south-staffs-water.md)
-- [Nathan Lambert Claude Mythos Open Weights](../ch01/328-nathan-lambert.html)
+- [Nathan Lambert Claude Mythos Open Weights](../ch01/297-nathan-lambert.html)
 
 ---
 

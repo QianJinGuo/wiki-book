@@ -77,23 +77,23 @@
 
 ## 相关实体
 - [qoder skills](034-qoder-skills.html)
-- [Agent/Skills/Teams 架构演进过程及技术选型之道](../ch04/203-agent-skills-teams.html)
+- [Agent/Skills/Teams 架构演进过程及技术选型之道](../ch04/202-agent-skills-teams.html)
 - [Agent 时代架构师技能指南](../ch03/050-skills.html)
-- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch01/285-agent-skill.html)
+- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch01/255-agent-skill.html)
 - [Hermes Agent](../ch03/066-hermes-agent.html)
 - [你写的 Skill，及格了吗？](045-skill.html)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/hermes-agent-skill.md)
-- [9个Agent技能模块化SageMaker微调生命周期](../ch04/284-ai-agent.html)
+- [9个Agent技能模块化SageMaker微调生命周期](../ch04/279-ai-agent.html)
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](045-skill.html)
 - [SkillX — 层次化技能知识库](045-skill.html)
 - [Anthropic 14 个 Agent Skills 设计模式](../ch04/079-anthropic-agent.html)
 - [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](045-skill.html)
-- [SkillClaw](../ch04/349-skillclaw-nacos-agent-skill-registry.html)
+- [SkillClaw](../ch04/343-skillclaw-nacos-agent-skill-registry.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](016-hermes-skill.html)
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/314-agent-skills.html)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/309-agent-skills.html)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/175-tencent-vibe-coding-to-agentic-engineering-backend.html)
 - [Thin Harness Fat Skills](../ch05/067-thin-harness-fat-skills-ai.html)
-- [Code Intelligence Changelog](../ch04/367-code-intelligence-changelog.html)
+- [Code Intelligence Changelog](../ch04/361-code-intelligence-changelog.html)
 
 ---
 

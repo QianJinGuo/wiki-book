@@ -2,7 +2,7 @@
 
 > Scaling Law、涌现能力、世界模型、自我博弈
 
-> 本章收录 **13 篇**实体，按深度递增排列。
+> 本章收录 **12 篇**实体，按深度递增排列。
 
 ---
 
@@ -10,7 +10,7 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐⭐ 工程师 | 需编程基础 | 5 |
+| ⭐⭐ 工程师 | 需编程基础 | 4 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 2 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 6 |
 
@@ -138,7 +138,7 @@ AI 语法润色、翻译辅助、以及认知辅助技术对非母语作者和�
 
 ## 关联阅读
 - [AI Detection and Response (AIDR)](ch04/052-ai.html) —— 概念对照：云安全场景的 AI 检测方法论与学术诚信场景面临相似的黑箱校准问题，底层方法论缺陷一致（误判率不可审计、分布偏移导致性能漂移、闭源黑箱不可问责） 
-- [Spotify LLM Evals](ch01/458-llm.html) —— 类比案例：Spotify 使用 LLM judges 进行 A/B 测试评估时，同样面临双层校准挑战——代理指标之上再增加代理指标，两层都可能漂移，这与 Pangram 在学术场景中的校准失效问题形成跨领域的方法论共鸣
+- [Spotify LLM Evals](ch01/422-llm.html) —— 类比案例：Spotify 使用 LLM judges 进行 A/B 测试评估时，同样面临双层校准挑战——代理指标之上再增加代理指标，两层都可能漂移，这与 Pangram 在学术场景中的校准失效问题形成跨领域的方法论共鸣
 
 ---
 
@@ -190,7 +190,7 @@ AI 语法润色、翻译辅助、以及认知辅助技术对非母语作者和�
 | 开源 | 部分 | 全部 artifacts 开源 ([GitHub recursive-org](https://github.com/recursive-org/first-steps-toward-automated-ai-research)) |
 | 部署 | Google 内部 | 通用研究基础设施 |
 
-参考 [AlphaEvolve Impact](ch04/350-alphaevolve-impact-deepmind.html) 和 [AlphaEvolve 一周年](ch04/052-ai.html) 了解 DeepMind 路线。
+参考 [AlphaEvolve Impact](ch04/344-alphaevolve-impact-deepmind.html) 和 [AlphaEvolve 一周年](ch04/052-ai.html) 了解 DeepMind 路线。
 
 ## 深度分析
 
@@ -232,7 +232,7 @@ Einsia Navers Lab 的 AI4AI-Bench（arXiv:2608.20318）为"AI 能否设计更好
 ## 引用与延伸阅读
 - **原文存档** → [原文存档](https://www.recursive.com/articles/first-steps-toward-automated-ai-research)
 - **GitHub**：https://github.com/recursive-org/first-steps-toward-automated-ai-research
-- 关联 entity：[Alphaevolve Impact Deepmind](ch04/350-alphaevolve-impact-deepmind.html)、[Agent Self Improvement Six Mechanisms](ch03/004-agent.html)、[Ai Recursive Self Improvement Nanogpt Prime Intellect](ch04/052-ai.html)、[Hermes Self Improving Loop Winty](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-self-improving-loop-winty.md)、[Deli Auto Research Skill V2 Continual Learning Self Improvement](ch07/045-skill.html)
+- 关联 entity：[Alphaevolve Impact Deepmind](ch04/344-alphaevolve-impact-deepmind.html)、[Agent Self Improvement Six Mechanisms](ch03/004-agent.html)、[Ai Recursive Self Improvement Nanogpt Prime Intellect](ch04/052-ai.html)、[Hermes Self Improving Loop Winty](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-self-improving-loop-winty.md)、[Deli Auto Research Skill V2 Continual Learning Self Improvement](ch07/045-skill.html)
 
 ---
 
@@ -389,50 +389,7 @@ Cantrill 强调"someone at the helm"的角色——有效控制复杂性需要�
 
 ---
 
-## Ch19.005 Lean Software Scaling Laws
-
-> 📊 Level ⭐⭐ | 3.9KB | `entities/lean-scaling.md`
-
-# Lean Software Scaling Laws
-
-> **Source**: [gwern.net](https://gwern.net/lean-scaling)
-
-Novel research proposal with specific methodology (perplexity scaling over codebase size) and a concrete test case (Lean). High technical depth and originality, though lacks empirical data. Good source credibility (Gwern).
-
-## Content Summary
-
-Markdown Content:
-Research proposal for measuring how coding LLM perplexity scales with codebase context size, using Lean as a test case for whether formal languages have better predictability exponents and could lead to safer, more secure software worldwide.
-
-> Research idea: empirically measure the scaling of coding LLM perplexity over codebase size to estimate the scaling laws of ‘predictability’ by programming language or other factors. This should translate into overall security and safety.
-> 
-> 
-> We can measure this in contemporary LLMs expensively, by training from scratch and finetuning, or cheaply, by measuring perplexity over increasingly large context windows of source code.
-> 
-> 
-> Codebases, and programming languages, which have better exponents in their scaling laws will eventually become easier for LLMs to understand, fix, and write.
-> 
-> 
-> In particular, the Lean programming language likely has, with 2026-era LLMs, a worse baseline constant and total loss on existing codebases, but better scaling exponents. This would imply that implementations in Lean can eventually win and deliver large benefits in program correctness at global scale—and thus could help justify large-scale investments in rewriting existing codebases in Lean or paying for new Lean code, thereby improving global cybersecurity.
-
-[C](https://gwern.net/dropcap#yinit)oding LLMs are currently on track to produce most software in the near-future, despite being generally mediocre quality or outright insecure (with vibecoded software being especially bad). Future rewrites with coding LLMs may help, but are not guaranteed to happen or to plug as many holes as we need to be secure against pervasive cybersecurity LLM offensives. How can we avoid this? LLMs could potentially write all software in provably secure, safe ways like formally-verifiable systems, but progress in that lags behind.
-
-How far behind?
-
-## [Language Priors](https://gwern.net/lean-scaling#language-priors "Link to section: § 'Language Priors'")
-
-[Neural scaling law⁠](https://en.wikipedia.org/wiki/Neural_scaling_law) methodology remains under-applied in deep learning for validating existing approaches and forecasting future applications. An example is in coding agents: it’s commonly observed that [LLMs⁠](https://en.wikipedia.org/wiki/Large_language_model) are better at more common languages due to more available data, and [⁠Luo et al 2025⁠](https://arxiv.org/abs/2510.08702) argues that programming is especially data-hungry, and thus there might be long-term ‘lock-in’ and upgrading to better technologies like [Haskell⁠](https://en.wikipedia.org/wiki/Haskell) or [Rust⁠](https://en.wikipedia.org/wiki/Rust_(programming_language)) or [Lean⁠](https://en.wikipedia.org/wiki/Lean_(proof_assistant)) will be impossible.
-
-But this does not follow: being a popular language with a lot of training data only means that LLMs _start off by default_ performing well. (Because it’s hard to disentangle a programming language f
-
----
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
-
----
-
-## Ch19.006 Visual Para-Thinker: 视觉并行思考框架 (arxiv 2602.13310)
+## Ch19.005 Visual Para-Thinker: 视觉并行思考框架 (arxiv 2602.13310)
 
 > 📊 Level ⭐⭐⭐ | 22.8KB | `entities/visual-para-thinker-vlm-parallel-reasoning-xuhaoran.md`
 
@@ -738,14 +695,14 @@ But this does not follow: being a popular language with a lot of training data o
 ### 同范式生态
 - [ICML 2026 NPR 文本原生并行推理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/native-parallel-reasoner-icml2026.md) — **同源**: 都推动"推理宽度扩展", NPR 在文本领域开辟
 - [LASER ACL 2026 视觉推理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/laser-acl2026-latent-superposition-visual-reasoning.md) — **互补**: 同样针对 VLM, 但用 latent superposition 路线
-- [DeepSeek 视觉原语](ch09/122-deepseek-visual-primitives.html) — **对比**: DeepSeek 用"视觉原语"做视觉推理的另一种思路
+- [DeepSeek 视觉原语](ch09/115-deepseek-visual-primitives.html) — **对比**: DeepSeek 用"视觉原语"做视觉推理的另一种思路
 
 ### 视觉/多模态相关
 - [LLaVA-OneVision-2 全帧率 VLM](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llava-onevision-2-full-frame-rate-vlm-glintlab.md) — VLM 架构
 - [a16z 视觉 AI 下一个前沿是代码](ch04/052-ai.html) — 视觉 AI 趋势
 
 ### 推理范式
-- [LLM 语言思维机制](ch01/458-llm.html) — 推理机制基础
+- [LLM 语言思维机制](ch01/422-llm.html) — 推理机制基础
 - [Layered Thinking 分层思维](ch05/018-ai-native.html) — 推理范式
 
 ## 相关实体
@@ -753,13 +710,13 @@ But this does not follow: being a popular language with a lot of training data o
 - [Native Parallel Reasoner Icml2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/native-parallel-reasoner-icml2026.md)
 - [Laser Acl2026 Latent Superposition Visual Reasoning](https://github.com/QianJinGuo/wiki-public/blob/main/entities/laser-acl2026-latent-superposition-visual-reasoning.md)
 - [Llava Onevision 2 Full Frame Rate Vlm Glintlab](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llava-onevision-2-full-frame-rate-vlm-glintlab.md)
-- [Deepseek Visual Primitives Thinking](ch09/122-deepseek-visual-primitives.html)
-- [Llm Language Thinking Mechanisms](ch01/458-llm.html)- [count anything - 文本引导的通用目标计数框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/arxiv-2605-30846-count-anything-2026.md)
+- [Deepseek Visual Primitives Thinking](ch09/115-deepseek-visual-primitives.html)
+- [Llm Language Thinking Mechanisms](ch01/422-llm.html)- [count anything - 文本引导的通用目标计数框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/arxiv-2605-30846-count-anything-2026.md)
 - [language models need sleep: arxiv 2606.03979 持续学习 2 阶段范式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/arxiv-2606-03979-language-models-need-sleep.md)
 
 ---
 
-## Ch19.007 Count Anything - 文本引导的通用目标计数框架
+## Ch19.006 Count Anything - 文本引导的通用目标计数框架
 
 > 📊 Level ⭐⭐⭐ | 7.2KB | `entities/arxiv-2605-30846-count-anything-2026.md`
 
@@ -835,13 +792,13 @@ Count Anything 的点集输出天然规避了上述三个问题。
 - 代码: https://github.com/Mengqi-Lei/count-anything
 ## 相关实体
 - [visual para-thinker: 视觉并行思考框架 (arxiv 2602.13310)](https://github.com/QianJinGuo/wiki-public/blob/main/entities/visual-para-thinker-vlm-parallel-reasoning-xuhaoran.md)
-- [qwen-image-flash: beyond objective design — few-step distill](ch01/756-qwen-image-flash-beyond-objective-design-few-step-distill.html)
-- [对图像内容进行精确分析 — bedrock 多模态案例实践（汽车油表识别）](ch11/212-bedrock.html)
+- [qwen-image-flash: beyond objective design — few-step distill](ch01/621-qwen-image-flash-beyond-objective-design-few-step-distill.html)
+- [对图像内容进行精确分析 — bedrock 多模态案例实践（汽车油表识别）](ch11/201-bedrock.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/vision-multimodal.md)
 
 ---
 
-## Ch19.008 推荐系统进入大模型时刻：昇腾 NPU 如何支撑千亿级生成式推荐落地
+## Ch19.007 推荐系统进入大模型时刻：昇腾 NPU 如何支撑千亿级生成式推荐落地
 
 > 📊 Level ⭐⭐⭐⭐ | 23.8KB | `entities/huawei-fuxi-recommendation-system-ascend-npu-scaling-law.md`
 
@@ -1091,14 +1048,14 @@ FuXi-Alpha 的 Attention Map 可视化是理解推荐系统特征重要性的关
 - [Onereason Kuaishou Reasoning Recommender System](ch04/052-ai.html)
 - [Glm5 Scaling Pain](ch04/052-ai.html)
 - [Video Agent Paradigm Compute Talent Flywheel Ethan He 20260606](ch03/004-agent.html)
-- [Noam Brown Ai Evaluation Reasoning Budget Performance Cost Curve](ch01/304-noam-brown-ai.html)
+- [Noam Brown Ai Evaluation Reasoning Budget Performance Cost Curve](ch01/273-noam-brown-ai.html)
 - [Aws Sagemaker Azerbaijani Lm](ch04/052-ai.html)
 
 → [原文存档](https://mp.weixin.qq.com/s/-G6f4vHZpbyazSI8EXMWKg)
 
 ---
 
-## Ch19.009 Video Agent 范式迁移与算力-人才飞轮：Ethan He 从 Cosmos 到 Grok Imagine 的第一手洞见
+## Ch19.008 Video Agent 范式迁移与算力-人才飞轮：Ethan He 从 Cosmos 到 Grok Imagine 的第一手洞见
 
 > 📊 Level ⭐⭐⭐⭐ | 18.1KB | `entities/video-agent-paradigm-compute-talent-flywheel-ethan-he-20260606.md`
 
@@ -1202,7 +1159,7 @@ Ethan 自己的轨迹：图像识别 → 神经网络压缩 → 自监督学习 
 - [中文 AI 实验室 Nathan 洞察](ch04/052-ai.html)——Ethan 的"算力-人才飞轮"是这些上层判断的**微观机制**
 
 ### 与上下文工程
-[Agent Memory 架构](ch04/335-perplexity-brain-self-improving-agent-memory-architecture.html) + [Agent Memory System Design](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-system-design.md) + [Context Management in Agent Systems](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/context-management-agent-systems.md)——Ethan 揭示 LLM **不知道自己的上下文长度还剩多少**（"上下文到达 80% 时自动压缩触发，但模型在工作时并不知道这件事"），并指出 **OpenClaw 已经让模型具备时间感知能力**——这与 [Context Management](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/context-management-agent-systems.md) 中"让模型具备上下文自我感知"是同一方向。
+[Agent Memory 架构](ch04/329-perplexity-brain-self-improving-agent-memory-architecture.html) + [Agent Memory System Design](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-system-design.md) + [Context Management in Agent Systems](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/context-management-agent-systems.md)——Ethan 揭示 LLM **不知道自己的上下文长度还剩多少**（"上下文到达 80% 时自动压缩触发，但模型在工作时并不知道这件事"），并指出 **OpenClaw 已经让模型具备时间感知能力**——这与 [Context Management](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/context-management-agent-systems.md) 中"让模型具备上下文自我感知"是同一方向。
 
 ## 深度分析
 
@@ -1258,7 +1215,7 @@ Ethan 指出了一个技术收敛点：**视频模型和 LLM 在长上下文管�
 
 ---
 
-## Ch19.010 Natural Language Autoencoders (Anthropic)
+## Ch19.009 Natural Language Autoencoders (Anthropic)
 
 > 📊 Level ⭐⭐⭐⭐ | 10.4KB | `entities/anthropic-natural-language-autoencoders.md`
 
@@ -1281,7 +1238,7 @@ Anthropic 的 Natural Language Autoencoders (NLA) 研究旨在将 Claude 的内�
 → [原文存档](https://www.anthropic.com/research/natural-language-autoencoders)
 
 ## 相关实体
-- [Natural Language Autoencoders — Anthropic 激活→文字可解释性方法](ch01/787-natural-language-autoencoders-anthropic.html)
+- [Natural Language Autoencoders — Anthropic 激活→文字可解释性方法](ch01/651-natural-language-autoencoders-anthropic.html)
 - [QuickSight Dataset QA：NL直查S3 Iceberg](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-quicksight-dataset-qa-natural-language.md)
 
 ## 深度分析
@@ -1340,7 +1297,7 @@ NLA 证明了"让模型解释自己的思维过程"这一思路的可行性，�
 
 ---
 
-## Ch19.011 世界模型的DeepSeek时刻！魔芯Flash World Model降本70%，跑出50FPS实时交互
+## Ch19.010 世界模型的DeepSeek时刻！魔芯Flash World Model降本70%，跑出50FPS实时交互
 
 > 📊 Level ⭐⭐⭐⭐ | 10.3KB | `entities/世界模型的deepseek时刻魔芯flash-world-model降本70跑出50fps实时交互.md`
 
@@ -1431,7 +1388,7 @@ MoWorld 不仅提升了模型能力，更重要的是提出了具体的产业落
 
 ---
 
-## Ch19.012 Qwen-AgentWorld: Language World Models for General Agents
+## Ch19.011 Qwen-AgentWorld: Language World Models for General Agents
 
 > 📊 Level ⭐⭐⭐⭐ | 7.3KB | `entities/qwen-agentworld-language-world-models.md`
 
@@ -1550,13 +1507,13 @@ Qwen-AgentWorld 的创新在于将世界模型的载体从传统的状态空间�
 
 ## 相关实体
 
-- [Skill-RM: Reward Model as Agent Skill](ch01/285-agent-skill.html)
+- [Skill-RM: Reward Model as Agent Skill](ch01/255-agent-skill.html)
 - [Agent Harness Engineering Survey 2026](ch05/026-harness-engineering.html)
 - World Models in AI
 
 ---
 
-## Ch19.013 From AGI to ASI
+## Ch19.012 From AGI to ASI
 
 > 📊 Level ⭐⭐⭐⭐ | 6.6KB | `entities/arxiv-2606-12683-from-agi-to-asi.md`
 
@@ -1632,8 +1589,8 @@ Multi-agent collective 路径在现有 ASI 讨论中较少被关注。报告认�
 ## 相关实体
 
 - [mira + mpa：深度原理 ai scientist 递归自训练打造材料基座模型，40 项实验全面 sota](ch04/052-ai.html)
-- [some ideas for what comes next, may 2026 (interconnects)](ch01/801-some-ideas-for-what-comes-next-may-2026-interconnects.html)
-- [agi 之路，可能从一开始就走错了（腾讯研究院·王鹏）](ch01/166-agi.html)
+- [some ideas for what comes next, may 2026 (interconnects)](ch01/664-some-ideas-for-what-comes-next-may-2026-interconnects.html)
+- [agi 之路，可能从一开始就走错了（腾讯研究院·王鹏）](ch01/201-agi.html)
 
 → [原文存档](https://arxiv.org/abs/2606.12683)
 

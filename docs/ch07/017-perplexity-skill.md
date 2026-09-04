@@ -140,20 +140,20 @@ Perplexity 的 Skill 设计体系折射出 LLM 应用工程的根本性范式转
 ## 关联阅读
 - 原始文章：https://research.perplexity.ai/articles/designing-refining-and-maintaining-agent-skills-at-perplexity
 - [Perplexity Internal Skill Design Guide Xiaojianke](https://mp.weixin.qq.com/s/gf9QQRId0HYeo92Cp0BPnw) — 原始文章存档
-- [Agent Skill Writing Guide](../ch01/285-agent-skill.html) — 低配版 Skill 写作指南（质量较低，仅供参考）
-- [Agent Skill Writing Evaluation](../ch01/285-agent-skill.html) — Skill 评测相关
+- [Agent Skill Writing Guide](../ch01/255-agent-skill.html) — 低配版 Skill 写作指南（质量较低，仅供参考）
+- [Agent Skill Writing Evaluation](../ch01/255-agent-skill.html) — Skill 评测相关
 
 ## 相关实体
-- [LBS-IntentBench — 首个真实出行隐式意图评测基准](../ch04/227-lbs-intentbench.html)
-- [9个Agent技能模块化SageMaker微调生命周期](../ch04/284-ai-agent.html)
+- [LBS-IntentBench — 首个真实出行隐式意图评测基准](../ch04/226-lbs-intentbench.html)
+- [9个Agent技能模块化SageMaker微调生命周期](../ch04/279-ai-agent.html)
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](045-skill.html)
 - [SkillX — 层次化技能知识库](045-skill.html)
 - [Anthropic 14 个 Agent Skills 设计模式](../ch04/079-anthropic-agent.html)
-- [AI Skill 测评指标体系](../ch01/355-ai-skill.html)
-- [SkillClaw](../ch04/349-skillclaw-nacos-agent-skill-registry.html)
+- [AI Skill 测评指标体系](../ch01/324-ai-skill.html)
+- [SkillClaw](../ch04/343-skillclaw-nacos-agent-skill-registry.html)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](016-hermes-skill.html)
 - [Skills赏析：使用skills-refiner提升skill质量](../ch03/050-skills.html)
-- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/314-agent-skills.html)
+- [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](../ch04/309-agent-skills.html)
 
 - [Hermes Agent](../ch03/066-hermes-agent.html)
 - [Qoder Skills 完全指南](034-qoder-skills.html)

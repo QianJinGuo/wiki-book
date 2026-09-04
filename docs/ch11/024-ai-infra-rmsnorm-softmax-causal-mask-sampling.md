@@ -108,7 +108,7 @@
 
 ## 相关页面
 
-- [AI Infra 入门：vLLM 推理管线](../ch01/758-ai-infra.html) — 同作者同系列第一篇
+- [AI Infra 入门：vLLM 推理管线](../ch01/623-ai-infra.html) — 同作者同系列第一篇
 - 模型推理对比
 - [原文存档](https://mp.weixin.qq.com/s/V727TpGvRjo5RvYRGZl6oA)
 

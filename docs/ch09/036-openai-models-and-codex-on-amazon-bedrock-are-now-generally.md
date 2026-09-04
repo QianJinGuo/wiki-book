@@ -80,7 +80,7 @@ GPT-5.5/5.4 在 Bedrock 上与 OpenAI 直连价格一致、不收额外费用 ^�
 
 ### 2. 利用现有 AWS 合约覆盖 OpenAI 模型费用
 
-Codex on Bedrock 推理费用可计入企业现有 AWS 承诺用量 ^。建议财务和采购团队梳理现有 AWS Spend Contract，将 OpenAI 模型推理纳入已有承诺范围，利用 Bedrock 统一账单简化多供应商管理。具体可参考 [Aws Budget Bedrock Cost Governance](../ch11/212-bedrock.html) 的 FinOps 流程扩展方案。
+Codex on Bedrock 推理费用可计入企业现有 AWS 承诺用量 ^。建议财务和采购团队梳理现有 AWS Spend Contract，将 OpenAI 模型推理纳入已有承诺范围，利用 Bedrock 统一账单简化多供应商管理。具体可参考 [Aws Budget Bedrock Cost Governance](../ch11/201-bedrock.html) 的 FinOps 流程扩展方案。
 
 ### 3. 平行评估 Codex 与 Claude Code 在 Bedrock 上的企业适用性
 

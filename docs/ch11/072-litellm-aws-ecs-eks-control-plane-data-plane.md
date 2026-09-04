@@ -122,7 +122,7 @@ autoscaling:
 
 - [原文存档](https://aws.amazon.com/cn/blogs/china/blog-litellm-production-deployment-aws)
 - [LiteLLM Bedrock 成本治理](035-litellm-amazon-bedrock.html) — 姐妹篇（运行时限额 + 审计）
-- [LiteLLM + QuickSight 可视化](../ch01/458-llm.html) — 姐妹篇（运维监控）
+- [LiteLLM + QuickSight 可视化](../ch01/422-llm.html) — 姐妹篇（运维监控）
 - [AWS NFW AI 冲突检测](111-aws-network-firewall-ai.html) — NFW 与 ECS/EKS 部署组合使用
 
 ## 架构图

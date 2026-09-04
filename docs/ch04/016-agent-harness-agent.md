@@ -616,7 +616,7 @@ class RecoveryManager:
 → [Claude Code 12 个设计模式](https://mp.weixin.qq.com/s/eUbRoyKxOjiAPuXZi8DPsQ)
 → [ETCLOVG Survey (CMU 2026)](https://picrew.github.io/LLM-Harness/paper.pdf)
 
-- [Versa Takes Aim At Fragmented Enterprise Security With Cspm Orchestration Updat](442-versa-takes-aim-at-fragmented-enterprise-security-with-cspm.html)
+- [Versa Takes Aim At Fragmented Enterprise Security With Cspm Orchestration Updat](008-versa-takes-aim-at-fragmented-enterprise-security-with-cspm.html)
 - [k-dense — the model is no longer the bottleneck](139-k-dense-the-model-is-no-longer-the-bottleneck.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-privacy-landscape.md)
 

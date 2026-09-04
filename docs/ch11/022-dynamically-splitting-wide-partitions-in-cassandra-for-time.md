@@ -206,11 +206,11 @@ Netflix 的 fallback 设计中有一条重要规则：**原始 wide partition �
 ## 来源
 
 ## 相关实体
-- [Vietnam To Develop Domestic Cloud So It Can Ditch Risky Overseas Operators For G](165-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
+- [Vietnam To Develop Domestic Cloud So It Can Ditch Risky Overseas Operators For G](160-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
 - [Vietnam Domestic Cloud](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vietnam-domestic-cloud.md)
-- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](../ch01/645-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.html)
-- [Toto 2](144-toto-2-context-aware-log-analytics-for-complex-distributed.html)
-- [Vietnam To Develop Domestic Cloud So It Can Ditch Risky Overseas Operators For Government Workloads](165-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
+- [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](../ch01/594-every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.html)
+- [Toto 2](143-toto-2-context-aware-log-analytics-for-complex-distributed.html)
+- [Vietnam To Develop Domestic Cloud So It Can Ditch Risky Overseas Operators For Government Workloads](160-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
 
 → [原文存档](https://netflixtechblog.com/dynamically-splitting-wide-partitions-in-cassandra-for-time-series-workloads-0eded064f456?source=rss----2615bd06b42e---4)
 

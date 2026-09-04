@@ -96,8 +96,8 @@ Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反�
 - [Impeccable](ch05/001-impeccable.html) —— 文章末尾直接推荐此项目，本文是"为什么需要 Impeccable"的哲学背书
 - [Karpathy Vibe Coding](ch03/004-agent.html) —— Karpathy 原始概念出处
 - [Willison Vibe Coding Convergence](ch09/041-coding-agent.html) —— Willison 的同主题回应
-- [Agent Skill 编写指南](ch01/285-agent-skill.html) —— 通用 skill 格式
-- [Agentic Design System 演化](ch01/007-agentic-design-system-from-chatbot-to-orchestration.html)
+- [Agent Skill 编写指南](ch01/255-agent-skill.html) —— 通用 skill 格式
+- [Agentic Design System 演化](ch01/005-agentic-design-system-from-chatbot-to-orchestration.html)
 - → [原文存档](https://mp.weixin.qq.com/s/4_9q9TrkVyE5a4jCfTrNgg)
 
 ## 深度分析
@@ -135,7 +135,7 @@ Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反�
 本文档基于火山引擎 Data Agent 产品体系，设计一套可对标的**企业级数据智能体**产品。涵盖：智能问数 Agent（NL2SQL）、营销策略 Agent（CDP 集成）两大核心场景的完整功能拆解、技术架构、API 设计、数据模型。
 
 ## 相关实体
-- [Openai Buys Ai Consultancy Enterprises](ch01/317-openai.html)
+- [Openai Buys Ai Consultancy Enterprises](ch01/286-openai.html)
 - [Multilingual Ai](ch04/052-ai.html)
 - [Baixing Ontoz Enterprise Ontology Multi Agent](ch03/004-agent.html)
 - [Enterprise Ai Memory Substrate Three Layer Architecture](ch04/052-ai.html)
@@ -1083,7 +1083,7 @@ Skill = 触发源 + 系统动作 + 规则边界 + 执行者(员工Agent)
 > -> [GitLab employees are the latest to face layoffs limbo. Read the CEO's memo about restructuring 'openly.'](https://www.businessinsider.com/gitlab-layoffs-memo-2026-5)
 ## 相关实体
 
-- [iii.dev](ch01/308-iii-dev.html)
+- [iii.dev](ch01/277-iii-dev.html)
 
 ## 核心要点
 - **裁员规模**：未公布具体人数，截至 2026 年 1 月公司有 2,580 名员工
@@ -1182,9 +1182,9 @@ Bill Staples 提供了一个独特的市场视角：去年开发者平台市场�
 - [GitLab Transcend 2026（6 月 10 日）](https://about.gitlab.com/events/gitlab-transcend)
 ## 相关实体
 - [Gitlab 14Pct Layoff Agent Platform Ai 2026Q1](ch03/004-agent.html)
-- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](ch12/092-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi.html)
-- [Ai Agents Inside Perimeter Hackernews](ch04/284-ai-agent.html)
-- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](ch12/092-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi.html)
+- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](ch12/088-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi.html)
+- [Ai Agents Inside Perimeter Hackernews](ch04/279-ai-agent.html)
+- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](ch12/088-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi.html)
 - [Principals Ai Education](ch04/052-ai.html)
 
 ---
@@ -1247,13 +1247,13 @@ Welo Data 的服务覆盖从训练数据到生产监控的全链路：
 
 **Human evaluation**：在目标语言中实现 **90%+ 评估者共识率**，这是通过评估者独立校准和质量控制流程实现的，而非简单依赖评分数量。
 
-**RLHF 和 preference data**：在生产语言中进行偏好标注和 [RLHF](ch01/458-llm.html)，而非仅在英语或团队语言中进行。偏好信号的文化特异性意味着必须由真实目标语言用户产生。
+**RLHF 和 preference data**：在生产语言中进行偏好标注和 [RLHF](ch01/422-llm.html)，而非仅在英语或团队语言中进行。偏好信号的文化特异性意味着必须由真实目标语言用户产生。
 
 **Production monitoring**：按语言、按地区追踪质量指标，在用户发现问题之前发现多语言质量退化。
 
 ## 质量保障基础设施
 
-Welo Data 的 **NIMO**（Identity Verification and Quality Management System）提供了可审计的质量保证：评估者身份验证、contributor 元数据、异常检测报告，以及完整的[评估指标](ch01/355-ai-skill.html)体系。
+Welo Data 的 **NIMO**（Identity Verification and Quality Management System）提供了可审计的质量保证：评估者身份验证、contributor 元数据、异常检测报告，以及完整的[评估指标](ch01/324-ai-skill.html)体系。
 
 安全设施覆盖 **14+ 地区**（北美、欧洲、亚洲、MENA），支持 air-gapped 环境、设备控制和严格的数据处理协议。历史安全事件：**0**。
 
@@ -1266,7 +1266,7 @@ Multilingual AI 与以下领域存在深刻关联： 提供了偏好学习的方
 
 ## 相关实体
 
-- [滴滴 ibg 智能客服质检系统：3 管线（意图 86% / 合规 90%+ / voc）+ 企业 llm 落地方法论](ch01/458-llm.html)
+- [滴滴 ibg 智能客服质检系统：3 管线（意图 86% / 合规 90%+ / voc）+ 企业 llm 落地方法论](ch01/422-llm.html)
 → [原文存档](https://welodata.ai/multilingual-ai/)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/reinforcement-learning-rlhf.md)
@@ -1434,9 +1434,9 @@ Steve Yegge 为游戏项目开 12 个订阅，按真实 token 价格折算每月
 - [原文存档](https://mp.weixin.qq.com/s/Cmioejp77LENAnAMo2r3Aw)
 
 ## 相关实体
-- [Improving token efficiency in GitHub Agentic Workflows](ch01/476-github.html)
-- [Token Efficiency](ch01/476-github.html)
-- [Improving Token Efficiency in GitHub Agentic Workflows — GitHub 内部 Agent 工作流 Token 优化实践](ch01/476-github.html)
+- [Improving token efficiency in GitHub Agentic Workflows](ch01/440-github.html)
+- [Token Efficiency](ch01/440-github.html)
+- [Improving Token Efficiency in GitHub Agentic Workflows — GitHub 内部 Agent 工作流 Token 优化实践](ch01/440-github.html)
 - [柚漫剧 AI 全流程提效拆解](ch04/052-ai.html)
 
 ---
@@ -1541,7 +1541,7 @@ Steve Yegge 为游戏项目开 12 个订阅，按真实 token 价格折算每月
 - [Token Economics Ai Efficiency](ch12/002-token.html)
 - [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](https://github.com/QianJinGuo/wiki-public/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
 - [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](ch03/004-agent.html)
-- [Chatgpt 官宣 26 位未来之星他们是穿墙少年街头摊贩盲童的朋友](ch01/721-chatgpt.html)
+- [Chatgpt 官宣 26 位未来之星他们是穿墙少年街头摊贩盲童的朋友](https://github.com/QianJinGuo/wiki-public/blob/main/entities/chatgpt-官宣-26-位未来之星他们是穿墙少年街头摊贩盲童的朋友.md)
 
 → [原文存档](https://mp.weixin.qq.com/s/Cmioejp77LENAnAMo2r3Aw)
 
@@ -1626,7 +1626,7 @@ AI 工具打破了这一契约：
 ## 相关实体
 
 - [腾讯 Token 经济学](ch12/002-token.html) — AI 工具的成本-效率分析
-- [GitHub Agentic Token 效率](ch01/476-github.html) — Agent 在代码审查场景的效率优化
+- [GitHub Agentic Token 效率](ch01/440-github.html) — Agent 在代码审查场景的效率优化
 - [Greptile TREX](https://github.com/QianJinGuo/wiki-public/blob/main/entities/greptile-trex-code-execution-artifact-generation.md) — 代码审查中"可验证证据"的工程实践
 - [Claude Code 大型代码库 Harness](ch03/057-claude-code.html) — AI 辅助开发的工具配置实践
 
@@ -1876,11 +1876,11 @@ Hugging Face + NVIDIA NIM 双渠道部署反映了当前企业 AI 落地的两�
 ## 相关实体
 - [Nvidia Nemotron 3 Agents Rag Voice Safety](ch03/004-agent.html)
 - [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](ch03/004-agent.html)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/328-nvidia-secure-local-agent-nemoclaw-openclaw.html)
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/322-nvidia-secure-local-agent-nemoclaw-openclaw.html)
 - [Fine Tuning Cosmos](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tuning-cosmos.md)
-- [Tokenspeed Agentic Inference Engine](ch04/462-tokenspeed-agentic-inference-engine.html)
+- [Tokenspeed Agentic Inference Engine](ch04/432-tokenspeed-agentic-inference-engine.html)
 
-- [How To Automate Ai Model Documentation With The Nvidia Mcg T 806Efb](ch01/673-how-to-automate-ai-model-documentation-with-the-nvidia-mcg-t.html)
+- [How To Automate Ai Model Documentation With The Nvidia Mcg T 806Efb](ch04/052-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
 
 ---
@@ -2144,7 +2144,7 @@ Amodei 的"a country of 100M geniuses"类比将 AI 地缘竞争框架从"技术�
 
 **相关实体**：
 - [Youre Building Agent Security In The Wrong Order](ch03/004-agent.html) — AI 公司政策参与的结构性困境
-- [Claude Opus 48 The System Card B8460F](ch01/341-claude.html) — Anthropic 前沿模型的安全评估方法
+- [Claude Opus 48 The System Card B8460F](ch01/310-claude.html) — Anthropic 前沿模型的安全评估方法
 - [Dario Amodei Policy Ai Exponential Time Mismatch](ch04/052-ai.html) — 同源姊妹篇：聚焦 Treebeard 时间错配与四大政策原则的深度解读
 - [Agent Security Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-security-architecture.md) — AI 安全架构的政策维度
 - [Ai R And D Bottleneck Shift](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/ai-r-and-d-bottleneck-shift.md) — AI 发展对 R&D 组织的重构效应

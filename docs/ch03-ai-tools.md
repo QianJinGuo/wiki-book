@@ -2,7 +2,7 @@
 
 > 2024-2026 AI 工具生态：从 IDE 到 Agent 平台
 
-> 本章收录 **96 篇**实体，按深度递增排列。
+> 本章收录 **95 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 31 |
-| ⭐⭐ 工程师 | 需编程基础 | 64 |
+| ⭐⭐ 工程师 | 需编程基础 | 63 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 1 |
 
 ---
@@ -104,29 +104,28 @@ AI 工具正在重新定义"开发者工具"的边界。
 - [068. Designing Small Is Harder than Designing Big - UX Magazine](ch03/068-designing-small-is-harder-than-designing-big-ux-magazine)
 - [069. Lightfield Skills 系统介绍](ch03/069-lightfield-skills)
 - [070. Affirm Maps Road to $100B GMV With Card, AI Commerce and Global Expansion](ch03/070-affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-glo)
-- [071. 4 ways we’re using our MCP server at Figma](ch03/071-4-ways-we-re-using-our-mcp-server-at-figma)
-- [072. Karpathy LLM Wiki 搭建实战——Obsidian + AGENTS.md 实现三层架构与三大操作](ch03/072-karpathy-llm-wiki-obsidian-agents-md)
-- [073. Wi-Fi 8 is closer than you think. Here’s what you need to know](ch03/073-wi-fi-8-is-closer-than-you-think-here-s-what-you-need-to-kn)
-- [074. SkillsUI](ch03/074-skillsui)
-- [075. Interaction Models: A Scalable Approach to Human-AI Collaboration](ch03/075-interaction-models-a-scalable-approach-to-human-ai-collabor)
-- [076. When Growth Slows, Is It Sales' Fault or the Product's Fault? The Answer Has Changed.](ch03/076-when-growth-slows-is-it-sales-fault-or-the-product-s-fault)
-- [077. What marketing can learn from IT about running complex technology](ch03/077-what-marketing-can-learn-from-it-about-running-complex-techn)
-- [078. Designers are a rare breed](ch03/078-designers-are-a-rare-breed)
-- [079. What is AX? John Maeda on Accessibility as Ability](ch03/079-what-is-ax-john-maeda-on-accessibility-as-ability)
-- [080. MiniMax M2.7：开启模型的自我进化](ch03/080-minimax-m2-7)
-- [081. Fastlane | Create Winning Short-Form Content In Seconds](ch03/081-fastlane-create-winning-short-form-content-in-seconds)
-- [082. Enterprise AI Agent Development Tools (n8n Report 2026)](ch03/082-enterprise-ai-agent-development-tools-n8n-report-2026)
-- [083. Localmaxxing：局部最优陷阱](ch03/083-localmaxxing)
-- [084. Fed Data Shows Cash Use Holding Steady](ch03/084-fed-data-shows-cash-use-holding-steady)
-- [085. Microsoft Agent Framework 结构化输出：response_format 与 response.value](ch03/085-microsoft-agent-framework-response-format-response-value)
-- [086. Tether launches developer grants program for local-first AI and payments infrastructure](ch03/086-tether-launches-developer-grants-program-for-local-first-ai)
-- [087. 升职那天我才明白自己是来填坑的](ch03/087-page-087)
-- [088. SEO is a product, AEO is brand](ch03/088-seo-is-a-product-aeo-is-brand)
-- [089. Activity-Focused Design](ch03/089-activity-focused-design)
-- [090. Plaid's Effects on the Financial Ecosystem](ch03/090-plaid-s-effects-on-the-financial-ecosystem)
-- [091. Edge AI Networking — Wi-Fi 7/8 Convergence Analysis](ch03/091-edge-ai-networking-wi-fi-7-8-convergence-analysis)
-- [092. Bedrock AgentCore Pool Model Multi-Tenancy](ch03/092-bedrock-agentcore-pool-model-multi-tenancy)
-- [093. Icon Pack Websites Designers Should Bookmark](ch03/093-icon-pack-websites-designers-should-bookmark)
-- [094. 五一活动来啦](ch03/094-page-094)
-- [095. AI 没把更多流量导向 Amazon，利好品牌官网 — Michael Morton x Ben Thompson 谈 AI 时代电商变局](ch03/095-ai-amazon-michael-morton-x-ben-thompson-ai)
-- [096. Who Winning Enterprise AI Now](ch03/096-who-winning-enterprise-ai-now)
+- [071. Karpathy LLM Wiki 搭建实战——Obsidian + AGENTS.md 实现三层架构与三大操作](ch03/071-karpathy-llm-wiki-obsidian-agents-md)
+- [072. Wi-Fi 8 is closer than you think. Here’s what you need to know](ch03/072-wi-fi-8-is-closer-than-you-think-here-s-what-you-need-to-kn)
+- [073. SkillsUI](ch03/073-skillsui)
+- [074. Interaction Models: A Scalable Approach to Human-AI Collaboration](ch03/074-interaction-models-a-scalable-approach-to-human-ai-collabor)
+- [075. When Growth Slows, Is It Sales' Fault or the Product's Fault? The Answer Has Changed.](ch03/075-when-growth-slows-is-it-sales-fault-or-the-product-s-fault)
+- [076. What marketing can learn from IT about running complex technology](ch03/076-what-marketing-can-learn-from-it-about-running-complex-techn)
+- [077. Designers are a rare breed](ch03/077-designers-are-a-rare-breed)
+- [078. What is AX? John Maeda on Accessibility as Ability](ch03/078-what-is-ax-john-maeda-on-accessibility-as-ability)
+- [079. MiniMax M2.7：开启模型的自我进化](ch03/079-minimax-m2-7)
+- [080. Fastlane | Create Winning Short-Form Content In Seconds](ch03/080-fastlane-create-winning-short-form-content-in-seconds)
+- [081. Enterprise AI Agent Development Tools (n8n Report 2026)](ch03/081-enterprise-ai-agent-development-tools-n8n-report-2026)
+- [082. Localmaxxing：局部最优陷阱](ch03/082-localmaxxing)
+- [083. Fed Data Shows Cash Use Holding Steady](ch03/083-fed-data-shows-cash-use-holding-steady)
+- [084. Microsoft Agent Framework 结构化输出：response_format 与 response.value](ch03/084-microsoft-agent-framework-response-format-response-value)
+- [085. Tether launches developer grants program for local-first AI and payments infrastructure](ch03/085-tether-launches-developer-grants-program-for-local-first-ai)
+- [086. 升职那天我才明白自己是来填坑的](ch03/086-page-086)
+- [087. SEO is a product, AEO is brand](ch03/087-seo-is-a-product-aeo-is-brand)
+- [088. Activity-Focused Design](ch03/088-activity-focused-design)
+- [089. Plaid's Effects on the Financial Ecosystem](ch03/089-plaid-s-effects-on-the-financial-ecosystem)
+- [090. Edge AI Networking — Wi-Fi 7/8 Convergence Analysis](ch03/090-edge-ai-networking-wi-fi-7-8-convergence-analysis)
+- [091. Bedrock AgentCore Pool Model Multi-Tenancy](ch03/091-bedrock-agentcore-pool-model-multi-tenancy)
+- [092. Icon Pack Websites Designers Should Bookmark](ch03/092-icon-pack-websites-designers-should-bookmark)
+- [093. 五一活动来啦](ch03/093-page-093)
+- [094. AI 没把更多流量导向 Amazon，利好品牌官网 — Michael Morton x Ben Thompson 谈 AI 时代电商变局](ch03/094-ai-amazon-michael-morton-x-ben-thompson-ai)
+- [095. Who Winning Enterprise AI Now](ch03/095-who-winning-enterprise-ai-now)

@@ -132,11 +132,11 @@ Amazon Quick Research 的核心设计不是一次性检索，而是将**研究�
 - 支持的生物医学源：PubMed、ClinicalTrials.gov、AACR Journals、PMC
 
 ## 相关实体
-- [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](../ch11/218-amazon-nova.html)
-- [Aws Bedrock Halliburton Seismic Workflow Genai](../ch11/212-bedrock.html)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](398-amazon-bedrock-agentcore.html)
+- [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](../ch11/207-amazon-nova.html)
+- [Aws Bedrock Halliburton Seismic Workflow Genai](../ch11/201-bedrock.html)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](392-amazon-bedrock-agentcore.html)
 - [Build An Enterprise Observability Solution For Amazon Quick](../ch11/015-build-an-enterprise-observability-solution-for-amazon-quick.html)
-- [Aderant Transforms Cloud Operations With Amazon Quick](../ch11/164-aderant-transforms-cloud-operations-with-amazon-quick.html)
+- [Aderant Transforms Cloud Operations With Amazon Quick](../ch11/163-aderant-transforms-cloud-operations-with-amazon-quick.html)
 
 ---
 

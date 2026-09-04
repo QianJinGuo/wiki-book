@@ -122,7 +122,7 @@ Addy 定位：**AGENTS.md = 一份「你还没修掉的摩擦」的清单**。ag
 - [认知债与意图债](../ch04/052-ai.html)——本文引入 Addy 三债区分（技术债/认知债/意图债），并论证 agent 把意图债从慢性变急性
 - [Claude Code 上下文工程——Thariq 的语境工程](../ch03/057-claude-code.html)——本文引用其「删掉 80% 系统提示词」与六个转变（规则→判据等），是同一转向的团队落地版
 - [Harness Engineering Deletable Worksite（若飞）](055-harness-engineering-deletable-worksite-ruofei.html)——巨型约束文件变负担、Vercel 删 80% 工具成功率反升，与本文减法转向互证
-- [Addy Osmani 的工程实践系列](../ch04/366-loop-engineering.html)——back pressure、棘轮法、意图债、只有人能继承后果等概念的原始出处
+- [Addy Osmani 的工程实践系列](../ch04/360-loop-engineering.html)——back pressure、棘轮法、意图债、只有人能继承后果等概念的原始出处
 - Harness Gate 评估——本文 gate 数量上限 = 人能真判的上限，是对 gate 设计的新约束
 
 → [原文存档](https://mp.weixin.qq.com/s/3hUnFggJ2526J116_tifQQ)

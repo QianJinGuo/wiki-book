@@ -130,10 +130,10 @@ Trade-off：运营效率高，可能是有大量小租户时的唯一选项，�
 
 ## 相关实体
 - [Building Ai Agents For Business Support Using Amazon Bedrock](../ch04/053-building-ai-agents-for-business-support-using-amazon-bedrock.html)
-- [Break The Context Window Barrier With Amazon Bedrock Agentcore](../ch04/398-amazon-bedrock-agentcore.html)
-- [Secure Ai Agents Policy Lambda Interceptors Aws](../ch04/284-ai-agent.html)
+- [Break The Context Window Barrier With Amazon Bedrock Agentcore](../ch04/392-amazon-bedrock-agentcore.html)
+- [Secure Ai Agents Policy Lambda Interceptors Aws](../ch04/279-ai-agent.html)
 - [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](../ch11/109-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
-- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](../ch04/398-amazon-bedrock-agentcore.html)
+- [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](../ch04/392-amazon-bedrock-agentcore.html)
 
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/building-multi-tenant-agents-with-amazon-bedrock-agentcore/)
 

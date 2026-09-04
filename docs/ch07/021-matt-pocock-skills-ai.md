@@ -112,10 +112,10 @@ Matt Pocock Skills 不只是零散命令，它们串成一条完整开发流：
 - SDD（Spec-Driven Development） — 规格驱动开发，与 grill-me/grill-with-docs 理念相通
 - TDT（Task-Driven Development） — 任务驱动开发，grill-me 追问后最终产出的即为 TDT
 ## 相关实体
-- [Andrej Karpathy Claude Md 134K Stars 2026](../ch01/182-claude-md.html)
-- [Openai Codex 521 Update Appshots Goal Computer Use](../ch09/119-openai-codex.html)
+- [Andrej Karpathy Claude Md 134K Stars 2026](../ch01/153-claude-md.html)
+- [Openai Codex 521 Update Appshots Goal Computer Use](../ch09/058-openai-codex.html)
 - [Graphify Software Engineering Knowledge Graph](https://github.com/QianJinGuo/wiki-public/blob/main/entities/graphify-software-engineering-knowledge-graph.md)
-- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/229-anthropic-claude-code.html)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/200-anthropic-claude-code.html)
 - [Stepan Gershuni Ai Native Startup Guide](../ch05/018-ai-native.html)
 - [Matt Pocock Skills vs Superpowers](../ch03/050-skills.html)
 

@@ -39,8 +39,8 @@
 
 ### 相关参考
 → [原文存档](https://mp.weixin.qq.com/s/9o-VhaqRtQRtge6q74K5TA)
-→ [frontend-design 实体对比](../ch01/317-openai.html)
-→ [开发者技能清单](314-agent-skills.html)
+→ [frontend-design 实体对比](../ch01/286-openai.html)
+→ [开发者技能清单](309-agent-skills.html)
 
 # 精选 8 个 UI 设计师必备的 AI 智能体技能（Agent Skills）
 如果你在用 Claude Code 做设计，大概率遇到过这种情况，而且还不止一次。它写代码确实很强，但默认的思路更偏开发者，而不是设计师。让它做个落地页，功能是能跑的，但视觉上常常停留在「把  ` <h1> ` 做得比  ` <h2> ` 大一点」的水平。

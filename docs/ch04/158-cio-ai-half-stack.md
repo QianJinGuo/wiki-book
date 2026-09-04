@@ -7,7 +7,7 @@
 - [Skill Development Guide Aliyun 2026](../ch07/045-skill.html)
 - [Harness Engineered Business Agent Evaluation Aliyun Boyu](../ch05/008-harness.html)
 - [Hermes Observability Aliyun](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-observability-aliyun.md)
-- [Aliyun Agentrun](278-agentrun.html)
+- [Aliyun Agentrun](296-agentrun.html)
 
 → [原文存档](https://mp.weixin.qq.com/s/f5f299W9wxwhKr4PIgFg0Q)
 

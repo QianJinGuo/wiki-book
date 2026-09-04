@@ -104,7 +104,7 @@ Pathfinding Labs 的核心创新在于将 Terraform 模块封装为可一键部�
 > 来源：[原文存档](https://securitylabs.datadoghq.com/articles/introducing-pathfinding-labs)
 
 ## 相关实体
-- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](../ch01/167-rag.html)
+- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](../ch01/138-rag.html)
 - [Based On Prowler Genai Build Fintech Intelligent Compliance 2](049-prowler-genai.html)
 - [Aws Bedrock Agentcore Identity Security](046-bedrock-agentcore.html)
 - [Aws Cognito Multi Region Replication](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-cognito-multi-region-replication.md)

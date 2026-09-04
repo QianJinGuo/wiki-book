@@ -127,8 +127,8 @@ Karpathy 隐含的警告最容易被忽略的部分是时序：问题定义能�
 ## 相关实体
 - [Karpathy Ai Agent 7 Bits Value Decline](126-karpathy-ai.html)
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/057-claude-code.html)
-- [Gepa Optimize Anything](../ch01/235-gepa-optimize-anything.html)
-- [Github Investigating Teampcp Claimed 17Cc77](../ch01/476-github.html)
+- [Gepa Optimize Anything](../ch01/206-gepa-optimize-anything.html)
+- [Github Investigating Teampcp Claimed 17Cc77](../ch01/440-github.html)
 - [Subagents 详解Claude Code 如何避免上下文污染 V2](../ch03/057-claude-code.html)
 
 → [原文存档](https://mp.weixin.qq.com/s/-EAqvaCnjY-dox3P8d8D7w)

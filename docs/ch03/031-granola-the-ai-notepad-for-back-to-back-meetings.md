@@ -41,11 +41,11 @@ Granola 的产品定位揭示了一个垂直场景 AI 原生应用的机会窗�
 4. **GTM 策略参考**：借助 a16z 等顶级 VC 背书打开 toB 市场，品牌效应 > 效果营销
 5. **产品迭代方向**：从记录工具到会议智能助手，支持会议前的议程生成和会议后的任务跟踪
 ## 相关实体
-- [Vercel Com How Superset Built The Ide For Ai Agents On Vercel](../ch01/073-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
+- [Vercel Com How Superset Built The Ide For Ai Agents On Vercel](../ch01/058-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
 - [Anthropic_Cache_Tokenomics](../ch12/002-token.html)
-- [Marc Andreessen On Builder Culture In The Age Of Ai The A16Z Show](../ch01/055-marc-andreessen-on-builder-culture-in-the-age-of-ai-the-a1.html)
+- [Marc Andreessen On Builder Culture In The Age Of Ai The A16Z Show](../ch01/046-marc-andreessen-on-builder-culture-in-the-age-of-ai-the-a1.html)
 - [Turn Repeated Instructions Into Reusable Skills In Lovable L](014-turn-repeated-instructions-into-reusable-skills-in-lovable.html)
-- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](../ch12/050-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes.html)
+- [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](../ch12/040-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes.html)
 
 → [原文存档](https://go.granola.ai/adops-tldr-tech)
 

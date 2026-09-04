@@ -2,7 +2,7 @@
 
 > Agent 的眼睛和耳朵：视觉、语音、视频理解与生成
 
-> 本章收录 **27 篇**实体，按深度递增排列。
+> 本章收录 **26 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 1 |
-| ⭐⭐ 工程师 | 需编程基础 | 9 |
+| ⭐⭐ 工程师 | 需编程基础 | 8 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 16 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 
@@ -52,7 +52,7 @@ Perceptron Mk1 is a video analysis reasoning model priced at $0.15/$1.50 per mil
 
 - [Google's Gemini Omni video model surfaces ahead of I/O debut](https://github.com/QianJinGuo/wiki-public/blob/main/entities/googles-gemini-omni-video-model-surfaces-ahead-of-io-debut.md)
 - [Google's Gemini Omni video model surfaces ahead of I/O debut](https://github.com/QianJinGuo/wiki-public/blob/main/entities/googles-gemini-omni-video-model-surfaces-ahead-of-i-o-debut.md)
-- [Anthropic Computer Use 最佳实践](ch01/610-anthropic-computer-use.html)
+- [Anthropic Computer Use 最佳实践](ch01/566-anthropic-computer-use.html)
 
 ## 深度分析
 ### 「效率前沿」：新的竞争维度
@@ -378,9 +378,9 @@ DashengTokenizer 通过**冻结语义特征 + 仅注入声学信息**，证明**
 - [面向电商直播场景的全模态大模型推理加速方案](https://github.com/QianJinGuo/wiki-public/blob/main/entities/面向电商直播场景的全模态大模型推理加速方案.md)（多模态推理加速对照）
 - [Cvpr 2026 Highlight 让Ai像电影人一样 看 视频 8B小模型反超Gpt 5与Gemini 3 1 Pro](https://github.com/QianJinGuo/wiki-public/blob/main/entities/CVPR-2026-Highlight-让AI像电影人一样-看-视频-8B小模型反超GPT-5与Gemini-3-1-Pro.md)（视频 8B 反超同主题 — 多模态 8B 起步）
 - [A2Rd Agentic Autoregressive Diffusion Long Video](ch03/004-agent.html)（多模态生成对照）
-- [Openai Realtime Api Architecture](ch01/105-openai-realtime-api.html)（OpenAI Realtime API — 实时语音对照）
-- [刚刚Openai 放出三个语音模型顺便杀死了同传](ch01/317-openai.html)（OpenAI 语音模型同主题）
-- [Gpt 5级推理能力塞进语音模型Openai把同传翻译成本砍穿地板价](ch01/317-openai.html)（OpenAI GPT-5 语音同主题）
+- [Openai Realtime Api Architecture](ch01/085-openai-realtime-api.html)（OpenAI Realtime API — 实时语音对照）
+- [刚刚Openai 放出三个语音模型顺便杀死了同传](ch01/286-openai.html)（OpenAI 语音模型同主题）
+- [Gpt 5级推理能力塞进语音模型Openai把同传翻译成本砍穿地板价](ch01/286-openai.html)（OpenAI GPT-5 语音同主题）
 - [Amazon Bedrock Model Inference Serverless Architecture Case Study](ch11/136-amazon-bedrock.html)（Bedrock 多模态推理对照）
 - [Nvidia Nemotron 3 Agents Rag Voice Safety](ch03/004-agent.html)（Nemotron 语音 + 智能体对照）
 - [Snowflake Agentic Enterprise Summit 2026](ch03/004-agent.html)（Snowflake 真实感场景对照）
@@ -485,8 +485,8 @@ Pixelle-Video 把这个哲学推到极致:LLM 可换 + 图像模型可换 + TTS 
 - vs **[AI 视频工具悄悄走到了第三阶段](ch04/052-ai.html)** — 那是**行业历史阶段综述**(20KB,花叔 2026-05-07),本文是**单一项目深测**。两者互补:阶段综述给宏观背景,本文给工程细节。
 - vs **[Video Agent 范式迁移与算力-人才飞轮](ch03/004-agent.html)** — 那是**底层视频模型视角**(nvidia Cosmos + xAI Grok Imagine),本文是**pipeline 编排层视角**。两层视角互补。
 - vs **[JoyAI-Echo:京东长视频框架](ch04/052-ai.html)** — 那是**长视频(5 分钟一致性)底层生成框架**(DMD 蒸馏 + Director Agent),本文是**短视频 pipeline 装配**。时长 / 抽象层完全不同。
-- vs **[Fastlane 短视频内容](ch03/081-fastlane-create-winning-short-form-content-in-seconds.html)** — 另一款短视频工具,但**未开源**;Pixelle-Video 是 Apache 2.0 开源,可二开。
-- vs **[Agentium Agent Framework](ch01/765-agentium-agent.html)** — 同为 pipeline 编排思路,但 Agentium 偏**通用 agent 编排**,Pixelle-Video 偏**视频生成专精**。
+- vs **[Fastlane 短视频内容](ch03/080-fastlane-create-winning-short-form-content-in-seconds.html)** — 另一款短视频工具,但**未开源**;Pixelle-Video 是 Apache 2.0 开源,可二开。
+- vs **[Agentium Agent Framework](ch01/630-agentium-agent.html)** — 同为 pipeline 编排思路,但 Agentium 偏**通用 agent 编排**,Pixelle-Video 偏**视频生成专精**。
 - vs **[纳德拉「Token 资本」论](ch12/002-token.html)** — Pixelle-Video 是该战略宣言"模型可替换性"哲学的**工程范本**。
 - vs **[800 行 OpenClaw tool 消息总线子 agent 管理架构](ch03/004-agent.html)** — 两者都体现"**装配工胜过生成器**"的工程哲学(OpenClaw 是 agent 工具总线装配)。
 
@@ -526,8 +526,8 @@ Pixelle-Video 不同于纯研究型开源项目(如 Stability AI 的各种模型
 - [AI 视频工具悄悄走到了第三阶段](ch04/052-ai.html)
 - [Video Agent 范式迁移与算力-人才飞轮](ch03/004-agent.html)
 - [JoyAI-Echo:京东长视频框架](ch04/052-ai.html)
-- [Fastlane 短视频内容](ch03/081-fastlane-create-winning-short-form-content-in-seconds.html)
-- [Agentium Agent Framework](ch01/765-agentium-agent.html)
+- [Fastlane 短视频内容](ch03/080-fastlane-create-winning-short-form-content-in-seconds.html)
+- [Agentium Agent Framework](ch01/630-agentium-agent.html)
 - [纳德拉「Token 资本」论](ch12/002-token.html)
 - [800 行 OpenClaw tool 消息总线](ch03/004-agent.html)
 - [Harness Engineering 7 层架构](ch05/026-harness-engineering.html)
@@ -624,81 +624,7 @@ NTM 的重要性不仅在于性能提升，更在于它揭示了扩散模型少�
 
 ---
 
-## Ch17.005 How transparent is DiffusionGemma (and why it matters)
-
-> 📊 Level ⭐⭐ | 8.4KB | `entities/diffusiongemma-transparency-audit-lesswrong.md`
-
-# How transparent is DiffusionGemma (and why it matters)
-
-> 原文存档：[原文存档](https://www.lesswrong.com/posts/zoYXpdaMgFT43Wc24/how-transparent-is-diffusiongemma-and-why-it-matters)
-
-## 核心内容
-
-Published Time: 2026-06-20T20:05:50.053Z
-
-Markdown Content:
-Authors: Joshua Engels*, Callum McDougall*, Bilal Chughtai*, Janos Kramar, Senthoran Rajamanoharan, Cindy Wu, Arthur Conmy, Asic Q Chen, Jean Tarbouriech, Min Ma, Brendan O'Donoghue+, João Gabriel Lopes de Oliveira+, Rohin Shah+, Neel Nanda+
-
-*Primary Contributor
-
-+Advising
-
-Paper here: [https://arxiv.org/abs/2606.20560](https://arxiv.org/abs/2606.20560)
-
-## Overview
-
-In a recent collaboration between the GDM interpretability team and the GDM text diffusion team, we performed a transparency audit of DiffusionGemma, GDM's new text diffusion model.
-
-Overall, we find that DiffusionGemma is not significantly less transparent than Gemma.
-
-*   Gemma and DiffusionGemma perform similarly on [monitorability evaluations](https://arxiv.org/abs/2512.18311).
-*   Although naively DiffusionGemma has a much larger[opaque serial depth](https://arxiv.org/abs/2603.09786), we can apply the [logit lens](https://www.lesswrong.com/posts/AcKRB8wDpdaN6v6ru/interpreting-gpt-the-logit-lens) to intermediate vectors and ablate non-interpretable information without harming performance. This implies that these intermediate nodes are interpretable, which reduces the opaque serial depth to be similar to that of Gemma.
-
-However, even though the _variables_ that the model uses at different steps are interpretable, this does not necessarily mean that we understand the _algorithm_ that the model uses to reach the final answer. We thus distinguish between _variable_ transparency, which we define as whether we can understand _snapshots_ of the model's computation, and _algorithmic_ transparency, which we define as whether we can use these snapshots to reconstruct the process by which the model arrived at its outputs.
-
-By default, algorithmic transparency is much lower for a text diffusion model. In an autoregressive model, the model proceeds through its reasoning in order, token by token; when each token is generated, we know the exact state the model was in, and can make inferences about why it generated a certain token. On the other hand, in a single "canvas" a diffusion model generates all tokens at once, and the causal relationship between different tokens is unclear; a diffusion model can e.g. use tokens at the end of the canvas to help it figure out what tokens to generate earlier in the canvas. In a series of case studies, we study these and other phenomena that are unique to text diffusion models, including non-chronological reasoning, token and sequence smearing, and intermediate-context reasoning. We make progress on algorithmic transparency and believe we now understand some of the algorithmic "styles" that DiffusionGemma uses, but we still think that it is less algorithmically transparent than corresponding autoregressive LLMs.
-
-We also include 24 open problems that we would be excited for the community to investigate.
-
-## Why is this relevant for AI safety?
-
-Currently, CoT monitoring is a load-bearing aspect of many safety cases, but future models may perform more of their reasoning in latent spaces. We think that developers should perform transparency audits of new model architectures that perform larger fractions of their computation in a latent space. Thus, even though DiffusionGemma is itself not concerning from a transparency perspective, we are excited about this work because of the precedent it sets for performing these sorts of evaluations. Many of our experiments, including the opaque serial depth and monitorability evaluations, should be able to be straightforwardly applied to future latent reasoning architectures.
-
-If future latent reasoning models regress on these metrics, we will need new techniques that can translate from latent reasoning into natural language. Thus, we are particularly excited about techniques like [Natural Language Autoencoders](https://transformer-circuits.pub/2026/nla/) and [Activation Oracles](https://arxiv.org/abs/2512.15674) that can translate activations into natural text, and we hope that the interpretability community continues to prioritize their development.
-
-## Short summary of main results:
-
-We first present a diagram of the DiffusionGemma architecture:
-
-![Image 1: CleanShot 2026-06-19 at 19.26.34@2x.png](https://res.cloudinary.com/lesswrong-2-0/image/upload/v1781893604/lexical_client_uploads/xig4bpzhlwokgsuwjsrw.png)
-
-As expected, the opaque serial depth for DiffusionGemma is much larger (28.6X) the corresponding Gemma model. But if we were able to show the intermediates were interpretable, this would drop to 1.1X.
-
-![Image 2: CleanShot 2026-06-20 at 21.01.51@2x.png](https://res.cloudinary.com/lesswrong-2-0/image/upload/v1781985729/lexical_client_uploads/teq5ujwefoavwmx9c5yr.png)
-
-When we replace the intermediate self-conditioning vectors  with their top-k or top-p tokens, we maintain most performance on downstream benchmarks:
-
-![Image 3: CleanShot 2026-06-20 at 14.54.28@2x.png](https://res.cloudinary.com/lesswrong-2-0/image/upload/v1781963684/lexical_client_uploads/rmbvkn1kydq1yx8azjmn.png)
-
-For the top-p interventions, these top tokens are mostly equal to or semantically similar to nearby tokens in the final canvas tokens. Thus, they are largely interpretable.Note that even the 10% of tokens in the first few canvases that do not fall into these categories may still be interpretable; they may be guesses for other meanings of the sentence, or may be interpretable intermediates that the model is using to reason. We are interested in further work that investigates intermediate tokens the model is confident in that are not similar to any final tokens.
-
-![Image 4: CleanShot 2026-06-20 at 14.54.59@2x.png](https://res.cloudinary.com/lesswrong-2-0/image/upload/v1781963711/lexical_client_uploads/tatqh8rnbjrmmqb9kqyt.png)
-
-Monitorability, a key downstream application of transparency, is similar between Gemma and DiffusionGemma:
-
-![Image 5: CleanShot 2026-06-20 at 14.55.33@2x.png](https://res.cloudinary.com/lesswrong-
-
-## 与现有 DiffusionGemma 实体的关系
-
-本文从**透明度/可解释性**角度分析 DiffusionGemma，与现有 [DiffusionGemma 技术架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/diffusiongemma-4x-faster-text-generation-google-2026-06.md) 实体（侧重模型架构、MoE 设计、推理加速）形成互补。
-
----
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-
----
-
-## Ch17.006 SunFinance: Textract+Claude准确率90.8%的ID提取方案
+## Ch17.005 SunFinance: Textract+Claude准确率90.8%的ID提取方案
 
 > 📊 Level ⭐⭐ | 7.9KB | `entities/aws-sun-finance-ai-id-extraction-fraud-detection.md`
 
@@ -752,8 +678,8 @@ SunFinance在OCR+Claude之后加入了ID号码格式化验证、日期标准化�
 
 ## 相关实体
 - [AI Detection and Response (AIDR): A Zero-Impact Operating Model](ch04/052-ai.html)
-- [AWS Model Agility: 6步LLM跨代际迁移框架](ch01/166-agi.html)
-- [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](ch04/284-ai-agent.html)
+- [AWS Model Agility: 6步LLM跨代际迁移框架](ch01/201-agi.html)
+- [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](ch04/279-ai-agent.html)
 - [MLflow v3.10：生成式AI开发新特性](ch04/052-ai.html)
 - [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](ch04/043-agentic-ai.html)
 - [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](ch03/057-claude-code.html)
@@ -762,7 +688,7 @@ SunFinance在OCR+Claude之后加入了ID号码格式化验证、日期标准化�
 
 ---
 
-## Ch17.007 FLAT: Feedforward Latent Triangle Splatting
+## Ch17.006 FLAT: Feedforward Latent Triangle Splatting
 
 > 📊 Level ⭐⭐ | 6.5KB | `entities/flat-feedforward-latent-triangle-splatting.md`
 
@@ -880,7 +806,7 @@ FLAT 并非完全取代 3DGS，而是解决其特定弱点：
 
 ---
 
-## Ch17.008 Multimodal AI for Searchable Aerial Imagery at Scale
+## Ch17.007 Multimodal AI for Searchable Aerial Imagery at Scale
 
 > 📊 Level ⭐⭐ | 6.1KB | `entities/multimodal-ai-searchable-aerial-imagery-aws.md`
 
@@ -965,7 +891,7 @@ AWS GenAIIC 与 Vexcel 的合作模式值得借鉴：先建评估框架（基于
 
 ---
 
-## Ch17.009 LiteFrame: Efficient Vision Encoders Unlock Frame Scaling in Video LLMs
+## Ch17.008 LiteFrame: Efficient Vision Encoders Unlock Frame Scaling in Video LLMs
 
 > 📊 Level ⭐⭐ | 5.2KB | `entities/liteframe-efficient-vision-encoders.md`
 
@@ -974,9 +900,9 @@ AWS GenAIIC 与 Vexcel 的合作模式值得借鉴：先建评估框架（基于
 - Efficient Vision Encoders for Vision-Language Models
 
 ## 相关实体
-- [Liteframeefficientvisionencodersunlockframescalinginvideollms](ch01/458-llm.html)
+- [Liteframeefficientvisionencodersunlockframescalinginvideollms](ch01/422-llm.html)
 - [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki-public/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
-- [Agentexecutorgooglesdistributedagentruntime](ch04/278-agentrun.html)
+- [Agentexecutorgooglesdistributedagentruntime](ch04/296-agentrun.html)
 - [How To Calculate The Inference Efficiency Ratio](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-to-calculate-the-inference-efficiency-ratio.md)
 - [Aws Sun Finance Ai Id Extraction Fraud Detection](ch04/052-ai.html)
 
@@ -1008,7 +934,7 @@ LiteFrame 的研究来自 Google DeepMind 和首尔国立大学，其方法论�
 
 ---
 
-## Ch17.010 TimeLens2: Generalist Video Temporal Grounding with Multimodal LLMs
+## Ch17.009 TimeLens2: Generalist Video Temporal Grounding with Multimodal LLMs
 
 > 📊 Level ⭐⭐ | 4.3KB | `entities/timelens2.md`
 
@@ -1058,13 +984,13 @@ TimeLens2-4B 平均超过 Qwen3.5-397B-A17B 约 7.5 个 mIoU 点，在全部七�
 ## 相关实体
 
 - [LLaVA-OneVision-2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llava-onevision-2-full-frame-rate-vlm.md)（同类全帧率视频语言模型）
-- [Video RAG 分块策略](ch01/167-rag.html)（视频检索的互补方向）
+- [Video RAG 分块策略](ch01/138-rag.html)（视频检索的互补方向）
 
 → [原文存档](https://mp.weixin.qq.com/s/Dl39LOdIS0l_OInxTjoUrw)
 
 ---
 
-## Ch17.011 CVPR 2026 Highlight | 清华打破多模态音频生成的「通才困境」：Omni2Sound 音频基础模型开源！
+## Ch17.010 CVPR 2026 Highlight | 清华打破多模态音频生成的「通才困境」：Omni2Sound 音频基础模型开源！
 
 > 📊 Level ⭐⭐⭐ | 12.1KB | `entities/cvpr-2026-highlight-清华打破多模态音频生成的通才困境omni2sound-音频基础模型开源.md`
 
@@ -1153,7 +1079,7 @@ VGGSound-Omni 基准引入的画外音（Off-screen）专属评测赛道，为�
 
 ---
 
-## Ch17.012 Self-Filming Guide by Hello World Media
+## Ch17.011 Self-Filming Guide by Hello World Media
 
 > 📊 Level ⭐⭐⭐ | 11.6KB | `entities/helloworldmedia.notion-self-filming-guide-by-hello-world-media-2f60dfa5e2e180cfa.md`
 
@@ -1275,14 +1201,14 @@ Log 录制在专业影视制作中是标准化流程，但在消费级内容中�
 ---
 > 来源：[原文存档](https://helloworldmedia.notion.site/Self-Filming-Guide-by-Hello-World-Media-2f60dfa5e2e180cfa6efcef23c882e57)
 ## 相关实体
-- [Helloworldmedia.Notion Self Filming Guide By Hello World Media 2F60Dfa5E2E180Cfa](ch01/046-self-filming-guide-by-hello-world-media.html)
-- [Self Filming Guide By Hello World Media 2F60Dfa5E2E180Cfa6Efcef23C882E57](ch01/046-self-filming-guide-by-hello-world-media.html)
+- [Helloworldmedia.Notion Self Filming Guide By Hello World Media 2F60Dfa5E2E180Cfa](ch01/039-self-filming-guide-by-hello-world-media.html)
+- [Self Filming Guide By Hello World Media 2F60Dfa5E2E180Cfa6Efcef23C882E57](ch01/039-self-filming-guide-by-hello-world-media.html)
 - [How To Build Audio Transcription Agent](ch03/004-agent.html)
 - [Stable Audio 3](https://github.com/QianJinGuo/wiki-public/blob/main/entities/stable-audio-3.md)
 
 ---
 
-## Ch17.013 Gemma 4 12B：Google 多模态本地模型 —— 扔掉编码器
+## Ch17.012 Gemma 4 12B：Google 多模态本地模型 —— 扔掉编码器
 
 > 📊 Level ⭐⭐⭐ | 11.2KB | `entities/gemma-4-12b-google-multimodal-local.md`
 
@@ -1449,14 +1375,14 @@ Log 录制在专业影视制作中是标准化流程，但在消费级内容中�
 - [Microsoft Build 2026](ch03/004-agent.html) —— 大厂云端模型（MAI-Thinking-1）
 - [ANOLISA v0.3](ch03/004-agent.html) —— 阿里 Agentic OS（可在本地跑多模态模型）
 - [PilotDeck](ch03/004-agent.html) —— 多项目隔离
-- [Kimi Work](ch01/398-codex.html) —— 本地 Agent
+- [Kimi Work](ch01/367-codex.html) —— 本地 Agent
 - [Agent Harness 架构](ch05/035-agent-harness.html) —— 7 层模型
 
 → [原文存档](https://mp.weixin.qq.com/s/uRbZY55iXTbaY2vToJkJcw)
 
 ---
 
-## Ch17.014 ICRDrag：ECCV 2026 首个上下文区域拖拽图像编辑模型
+## Ch17.013 ICRDrag：ECCV 2026 首个上下文区域拖拽图像编辑模型
 
 > 📊 Level ⭐⭐⭐ | 9.5KB | `entities/icrdrag-context-region-drag-eccv-2026-shanghai-jiaotong.md`
 
@@ -1562,7 +1488,7 @@ ICRDrag 两阶段课程式训练中，第二阶段用稀疏不完整掩码训练
 
 ---
 
-## Ch17.015 Normalizing Trajectory Models
+## Ch17.014 Normalizing Trajectory Models
 
 > 📊 Level ⭐⭐⭐ | 9.0KB | `entities/normalizing-trajectory-models-v2.md`
 
@@ -1684,7 +1610,7 @@ NTM 展示了一种有价值的思路：**通过架构设计保留训练目标�
 
 ---
 
-## Ch17.016 商汤SenseNova U1深度拆解，原生统一架构终结缝合时代
+## Ch17.015 商汤SenseNova U1深度拆解，原生统一架构终结缝合时代
 
 > 📊 Level ⭐⭐⭐ | 8.7KB | `entities/sensnova-u1-deep-dive-jiqizhixin-d8602ded5c51.md`
 
@@ -1797,7 +1723,7 @@ NEO-Unify 的成功验证了"原生统一"路线的可行性，为多模态大�
 4. **团队能力建设**：培养具备 AI 时代所需技能的工程团队
 
 ## 相关实体
-- [Elf Embedded Language Flows Hekaiming](ch01/767-elf-embedded-language-flows.html)
+- [Elf Embedded Language Flows Hekaiming](ch01/632-elf-embedded-language-flows.html)
 
 → [原文存档](https://mp.weixin.qq.com/s/60m6GzLGlRAfWYWWkIDCOA)
 
@@ -1807,7 +1733,7 @@ NEO-Unify 的成功验证了"原生统一"路线的可行性，为多模态大�
 
 ---
 
-## Ch17.017 Google's Gemini Omni video model surfaces ahead of I/O debut
+## Ch17.016 Google's Gemini Omni video model surfaces ahead of I/O debut
 
 > 📊 Level ⭐⭐⭐ | 8.7KB | `entities/googles-gemini-omni-video-model-surfaces-ahead-of-io-debut.md`
 
@@ -1864,7 +1790,7 @@ Gemini Omni 被定位为 Agent 的事实表明，视频理解和生成能力正�
 
 ---
 
-## Ch17.018 Netflix 可控 AI 视频编辑：Vera 与 VOID 模型
+## Ch17.017 Netflix 可控 AI 视频编辑：Vera 与 VOID 模型
 
 > 📊 Level ⭐⭐⭐ | 8.4KB | `entities/netflix-controllable-ai-video-editing-vera-void.md`
 
@@ -1961,7 +1887,7 @@ Vera 团队面临的核心挑战是：**没有公开数据集提供高质量的�
 
 ---
 
-## Ch17.019 豆包 Seed 2.0 Lite — Agent 前置多模态感官层
+## Ch17.018 豆包 Seed 2.0 Lite — Agent 前置多模态感官层
 
 > 📊 Level ⭐⭐⭐ | 8.2KB | `entities/doubao-seed-2-lite.md`
 
@@ -2068,12 +1994,12 @@ Gemini 3 Flash 音频输入 7.2 元/Mtok，看起来比豆包的 9 元/Mtok 便�
 - [Claude Code](ch03/057-claude-code.html) — 主要工作台（被补上眼睛和耳朵的那位）
 - [Agent 输入侧瓶颈背景](ch05/035-agent-harness.html)
 ## 相关实体
-- [Video Rag Chunking Strategy](ch01/167-rag.html)
+- [Video Rag Chunking Strategy](ch01/138-rag.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/vision-multimodal.md)
 
 ---
 
-## Ch17.020 OlmoEarth v1.1: A more efficient family of Earth observation models
+## Ch17.019 OlmoEarth v1.1: A more efficient family of Earth observation models
 
 > 📊 Level ⭐⭐⭐ | 8.1KB | `entities/olmoearth-v1-1-a-more-efficient-family-of-earth-observation-models.md`
 
@@ -2145,14 +2071,14 @@ v1.1 模型家族实现了「事半功倍」（doing more with less）的效果�
 - [Olmoearth V1 1 Efficiency](https://github.com/QianJinGuo/wiki-public/blob/main/entities/olmoearth-v1-1-efficiency.md)
 - [Kamacoder Agent Context Drift Tool Hallucination](ch03/004-agent.html)
 - [Olmo Hybrid Gdn Wave 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/olmo-hybrid-gdn-wave-2026.md)
-- [How Llms Actually Work 0Xkato](ch01/774-how-llms-actually-work-0xkato-transformer-walkthrough.html)
+- [How Llms Actually Work 0Xkato](ch01/639-how-llms-actually-work-0xkato-transformer-walkthrough.html)
 - [Agent Reliability Context Drift Tool Hallucination](ch03/004-agent.html)
 
 → [原文存档](https://huggingface.co/blog/allenai/olmoearth-v1-1)
 
 ---
 
-## Ch17.021 MolmoMotion：语言引导的 3D 运动预测模型
+## Ch17.020 MolmoMotion：语言引导的 3D 运动预测模型
 
 > 📊 Level ⭐⭐⭐ | 7.8KB | `entities/molmomotion-language-guided-3d-motion-forecasting.md`
 
@@ -2237,7 +2163,7 @@ MolmoMotion 建立在 Molmo 2 视觉语言模型之上，利用其跨模态理�
 
 ---
 
-## Ch17.022 Normalizing Trajectory Models
+## Ch17.021 Normalizing Trajectory Models
 
 > 📊 Level ⭐⭐⭐ | 6.6KB | `entities/normalizing-trajectory-models.md`
 
@@ -2300,7 +2226,7 @@ Consistency Models（CM）通过强制不同 t 时刻的输出与 t=0 的一致�
 
 ---
 
-## Ch17.023 Moebius: 0.2B Lightweight Image Inpainting with 10B-Level Performance
+## Ch17.022 Moebius: 0.2B Lightweight Image Inpainting with 10B-Level Performance
 
 > 📊 Level ⭐⭐⭐ | 5.9KB | `entities/moebius.md`
 
@@ -2345,7 +2271,7 @@ Moebius 的成功揭示了一个深层问题：在图像修复这一明确定义
 2. **极致压缩**需要配合**匹配的蒸馏策略**，两者缺一不可
 3. **固定大小线性矩阵**是一种突破极压缩架构表示瓶颈的有效手段
 
-这一模式与 [知识代理](ch01/427-knowledge-agents-beat-frontier-models-with-better-structure.html) 的思路异曲同工——在特定领域注入结构化知识的小模型可以超越通用大模型。
+这一模式与 [知识代理](ch01/394-knowledge-agents-beat-frontier-models-with-better-structure.html) 的思路异曲同工——在特定领域注入结构化知识的小模型可以超越通用大模型。
 
 ### 技术参数与基准测试
 
@@ -2368,7 +2294,7 @@ Moebius 的工作与当前模型压缩领域的多个方向形成呼应：
 - **结构化剪枝**：LλMI 的设计思路类似对注意力机制的结构性重构
 - **稀疏化**：Moebius 证明了极端参数压缩（<2%）在任务特化场景下完全可行
 
-这与 [模型规模推演](ch01/433-model-size-scaling-in-2023-2031.html) 中关于 sparsity 作为参数放大器的讨论形成有趣对比——Moebius 走的是另一条路：不是增加总参数并稀疏化，而是直接在架构层面大幅压缩。
+这与 [模型规模推演](ch01/400-model-size-scaling-in-2023-2031.html) 中关于 sparsity 作为参数放大器的讨论形成有趣对比——Moebius 走的是另一条路：不是增加总参数并稀疏化，而是直接在架构层面大幅压缩。
 
 ## 实践启示
 
@@ -2379,15 +2305,15 @@ Moebius 的工作与当前模型压缩领域的多个方向形成呼应：
 
 ## 相关实体
 
-- [模型规模推演](ch01/433-model-size-scaling-in-2023-2031.html) — 模型大小与硬件约束的系统分析
-- [知识代理超越前沿模型](ch01/427-knowledge-agents-beat-frontier-models-with-better-structure.html) — 小模型+领域知识超越大模型的另一范式
+- [模型规模推演](ch01/400-model-size-scaling-in-2023-2031.html) — 模型大小与硬件约束的系统分析
+- [知识代理超越前沿模型](ch01/394-knowledge-agents-beat-frontier-models-with-better-structure.html) — 小模型+领域知识超越大模型的另一范式
 - 蒸馏、剪枝、量化等模型压缩技术是 Moebius 的理论背景
 
 → [原文存档](https://hustvl.github.io/Moebius/)
 
 ---
 
-## Ch17.024 Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation
+## Ch17.023 Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation
 
 > 📊 Level ⭐⭐⭐ | 5.7KB | `entities/fine-tuning-nvidia-cosmos-predict-2-5-with-lora-dora-for-robot-video-generation.md`
 
@@ -2430,7 +2356,7 @@ Cosmos Predict 2.5 采用 rectified flow 而非 DDPM 或 Flow Matching。核心�
 
 ---
 
-## Ch17.025 Stable Audio 3.0 开源音频生成模型
+## Ch17.024 Stable Audio 3.0 开源音频生成模型
 
 > 📊 Level ⭐⭐⭐ | 5.2KB | `entities/stable-audio-3.md`
 
@@ -2454,8 +2380,8 @@ Cosmos Predict 2.5 采用 rectified flow 而非 DDPM 或 Flow Matching。核心�
 
 ## 相关实体
 - [How To Build Audio Transcription Agent](ch03/004-agent.html)
-- [Helloworldmedia.Notion Self Filming Guide By Hello World Media 2F60Dfa5E2E180Cfa](ch01/046-self-filming-guide-by-hello-world-media.html)
-- [Helloworldmedia.Notion Self Filming Guide By Hello World Media 2F60Dfa5E2E180Cfa](ch01/046-self-filming-guide-by-hello-world-media.html)
+- [Helloworldmedia.Notion Self Filming Guide By Hello World Media 2F60Dfa5E2E180Cfa](ch01/039-self-filming-guide-by-hello-world-media.html)
+- [Helloworldmedia.Notion Self Filming Guide By Hello World Media 2F60Dfa5E2E180Cfa](ch01/039-self-filming-guide-by-hello-world-media.html)
 - [Ntm Normalizing Trajectory Models](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ntm-normalizing-trajectory-models.md)
 - [Nvidia Gamma World Multi Agent World Model](ch03/004-agent.html)
 
@@ -2487,7 +2413,7 @@ Stability AI 还首次发布了 LoRa 训练的官方文档，这延续了图像�
 
 ---
 
-## Ch17.026 Mistral Shieldstral — Policy-Adaptive Multimodal Safety Classifier
+## Ch17.025 Mistral Shieldstral — Policy-Adaptive Multimodal Safety Classifier
 
 > 📊 Level ⭐⭐⭐ | 3.3KB | `entities/mistral-shieldstral-policy-adaptive-safety-classifier.md`
 
@@ -2512,19 +2438,19 @@ Stability AI 还首次发布了 LoRa 训练的官方文档，这延续了图像�
 ## 对 LLM 安全工程的意义
 
 - **Guardrail 部署成本下降**：policy-adaptive 意味着一个模型服务所有部署场景，不再为每个产品/受众维护专用审核模型——与 [Bedrock Guardrails](ch11/136-amazon-bedrock.html) 类平台方案形成互补（平台 vs open-weights 两种路线）
-- **审核即推理任务**：把 content moderation 从分类任务重构为 QA 任务，与 [Nova 2 prompting 审核](ch01/353-prompting-amazon-nova-2-for-content-moderation.html) 思路同源
+- **审核即推理任务**：把 content moderation 从分类任务重构为 QA 任务，与 [Nova 2 prompting 审核](ch01/322-prompting-amazon-nova-2-for-content-moderation.html) 思路同源
 - **多模态统一**：文本+图像一个接口、一个模型，规避多模态安全审核需多模型拼装的工程负担
 
 ## 相关主题
 
-- 同类 open-weights 安全模型：[Nemotron 3.5 Content Safety (multimodal)](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nemotron-3-5-content-safety-multimodal.md)、[Nemotron 3.5 Content Safety](ch01/372-nemotron-3-5-content-safety-customizable-multimodal-safety.html)
+- 同类 open-weights 安全模型：[Nemotron 3.5 Content Safety (multimodal)](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nemotron-3-5-content-safety-multimodal.md)、[Nemotron 3.5 Content Safety](ch01/341-nemotron-3-5-content-safety-customizable-multimodal-safety.html)
 - 平台级 guardrail：[Amazon Bedrock Guardrails](ch11/136-amazon-bedrock.html)
 
 → [原文存档](https://mistral.ai/news/shieldstral/)
 
 ---
 
-## Ch17.027 高德 ABot-Earth 0.5：全球首个 3D 原生城市世界模型（1% 成本 + 千倍提效）
+## Ch17.026 高德 ABot-Earth 0.5：全球首个 3D 原生城市世界模型（1% 成本 + 千倍提效）
 
 > 📊 Level ⭐⭐⭐⭐ | 12.1KB | `entities/amap-abot-earth-0.5-3d-native-world-model.md`
 

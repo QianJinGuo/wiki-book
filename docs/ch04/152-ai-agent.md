@@ -91,7 +91,7 @@ SOP 概念源自企业管理：成熟公司都有 SOP，因为让员工自由发
 
 - [NVIDIA Agentic Systems](../ch03/004-agent.html) — 英伟达在 Agent 系统层面的超大规模协同设计实践
 - [Kimi K2 Agent 数据库](../ch03/004-agent.html) — 国产 Agent 在数据库场景的应用
-- [Claude Managed Agents](381-claude-managed-agents.html) — Claude 的托管 Agent 架构与 MCP 集成
+- [Claude Managed Agents](375-claude-managed-agents.html) — Claude 的托管 Agent 架构与 MCP 集成
 
 → [原文存档](https://mp.weixin.qq.com/s/8WF-w_M7JRpYTBfpYV4mPg)（机器之心，2026-05-12）
 

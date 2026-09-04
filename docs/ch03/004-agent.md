@@ -57,7 +57,7 @@ AI 可以直接理解自然语言描述的需求并生成实现，不再需要�
 
 - [Vibe Coding](../ch09/102-vibe-coding-ai.html)
 - [AI-Native Development](../ch05/018-ai-native.html)
-- [Agent Orchestration](../ch04/249-agent-orchestration.html)
+- [Agent Orchestration](../ch01/095-agent-orchestration.html)
 - [Software Engineering Transformation](../ch04/052-ai.html)
 
 → [原文存档](https://mp.weixin.qq.com/s/GPoQnFsXnnNpKdefWWiKRw)

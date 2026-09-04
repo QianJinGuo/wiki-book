@@ -98,15 +98,15 @@ SaaS 时代记录系统几乎没有飞轮效应，因为软件是单向记录工
 - [原文存档](https://mp.weixin.qq.com/s/JtTKwoYqO_I2QYeakigJUg)
 
 ## 相关实体
-- [AI tool poisoning exposes a major flaw in enterprise agent security](228-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](../ch03/004-agent.html)
 - [阿里云 EventHouse 企业级 Agent 上下文供给体系](../ch03/004-agent.html)
-- [AI tool poisoning exposes a major flaw in enterprise agent security | VentureBeat](228-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [AI tool poisoning exposes a major flaw in enterprise agent security | VentureBeat](../ch03/004-agent.html)
 - [foundation capital agent era six insights](136-foundation-capital-agent-era-six-insights.html)
 - [Agent 时代架构师技能指南](../ch03/050-skills.html)
 - [快手首个打工人Agent](../ch03/004-agent.html)
-- [from](../ch01/194-from-system-of-record-to-system-of-intelligence.html)
-- [From System Of Record To System Of Intelligence](../ch01/194-from-system-of-record-to-system-of-intelligence.html)
-- [meet customers where they are: agentforce contact center now](325-meet-customers-where-they-are-agentforce-contact-center-now.html)
+- [from](../ch01/165-from-system-of-record-to-system-of-intelligence.html)
+- [From System Of Record To System Of Intelligence](../ch01/165-from-system-of-record-to-system-of-intelligence.html)
+- [meet customers where they are: agentforce contact center now](319-meet-customers-where-they-are-agentforce-contact-center-now.html)
 
 ---
 

@@ -657,9 +657,9 @@ Host Agent（5 秒级）与 Lambda Watchdog（5 分钟级）的两级架构实�
 ## 相关实体
 - [Bedrock Agentcore Payment X402 Agent](046-bedrock-agentcore.html)
 - [Agentcore Payments X402 Agentic Commerce](057-agentcore-payments.html)
-- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch04/398-amazon-bedrock-agentcore.html)
-- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](../ch04/398-amazon-bedrock-agentcore.html)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 4](../ch04/398-amazon-bedrock-agentcore.html)
+- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch04/392-amazon-bedrock-agentcore.html)
+- [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](../ch04/392-amazon-bedrock-agentcore.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 4](../ch04/392-amazon-bedrock-agentcore.html)
 
 → [原文存档](https://aws.amazon.com/cn/blogs/china/video-opencv-amazon-nova-2-lite-solution/?p=bl_ar_l=5)
 

@@ -15,7 +15,7 @@
 - [Restrict access to sensitive documents in your Amazon Quick knowledge bases for Amazon S3](123-restrict-access-to-sensitive-documents-in-your-amazon-quick.html)
 - [CloudSectiDbits](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloudsectidbits.md)
 - [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](046-bedrock-agentcore.html)
-- [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12/031-amazon-bedrock-api.html)
+- [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](../ch12/028-amazon-bedrock-api.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/aws-cloud-ai-infrastructure.md)
 ## 深度分析

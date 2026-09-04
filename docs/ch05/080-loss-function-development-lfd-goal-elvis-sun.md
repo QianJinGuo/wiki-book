@@ -293,17 +293,17 @@ LFD / /goal 是**提示时**的、$40 就能跑 30 小时的、任何人都能�
 
 ## 相关实体
 
-- [Interconnects The Distillation Panic](../ch01/231-the-distillation-panic.html)（蒸馏恐慌 — 同期产业反应）
-- [Loop Engineering Addy Osmani Challengehub](../ch04/366-loop-engineering.html)（Loop Engineering — Addy Osmani 同主线）
+- [Interconnects The Distillation Panic](../ch01/449-the-distillation-panic.html)（蒸馏恐慌 — 同期产业反应）
+- [Loop Engineering Addy Osmani Challengehub](../ch04/360-loop-engineering.html)（Loop Engineering — Addy Osmani 同主线）
 - [Openspec Spec Driven Development Trae Solo](046-openspec.html)（Spec-driven 同对照）
 - [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](018-ai-native.html)（Spec-as-AIOS — 抗熵增架构）
 - [Claude Code Vs Hermes Session Vs Goal Lifecycle](../ch03/057-claude-code.html)（session vs goal lifecycle 对照）
-- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04/236-hermes-agent-goal.html)（Hermes Agent Goal runtime 对照）
+- [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](../ch04/234-hermes-agent-goal.html)（Hermes Agent Goal runtime 对照）
 - [Claude Code 之父最新访谈编程已经结束Harness 将消失Claude Code 将只有 100 行代码Loop 才是未来](../ch03/057-claude-code.html)（Claude Code 100 行 loop 同主线）
-- [Openclaw Boris Cherny Agent Loop Design Patterns](../ch04/399-agent-loop.html)（OpenClaw agent loop 对照）
+- [Openclaw Boris Cherny Agent Loop Design Patterns](../ch04/393-agent-loop.html)（OpenClaw agent loop 对照）
 - [Mimo Code Xiaomi Coding Harness 2026](008-harness.html)（MiMo Code Max Mode + Goal 机制同主线）
 - [Snowflake Agentic Enterprise Summit 2026](../ch03/004-agent.html)（Snowflake — 可审计治理同主线）
-- [Hermes Agent Goal And Kanban](../ch04/236-hermes-agent-goal.html)（Hermes Goal + Kanban 对照）
+- [Hermes Agent Goal And Kanban](../ch04/234-hermes-agent-goal.html)（Hermes Goal + Kanban 对照）
 - [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](../ch11/068-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html)（接触面控制对照）
 - [Good Qc For Rl Data](https://github.com/QianJinGuo/wiki-public/blob/main/entities/good-qc-for-rl-data.md)（RL 数据质量对照 — 强制熵的同源思想）
 

@@ -199,7 +199,7 @@ AI可观测、AI评测、Agent安全——SLA衡量标准与传统架构不同�
 
 → [第 1 来源原文](https://mp.weixin.qq.com/s/EezA0kT_hQCXze9LEOeuqg)
 → [第 2 来源原文](https://mp.weixin.qq.com/s/XpSpAiWY-nXjw8d8QPbabg)
-- [协作涌现：agent room 的多智能体决策框架](../ch04/464-agent-room.html)
+- [协作涌现：agent room 的多智能体决策框架](../ch04/434-agent-room.html)
 - [从全量启动到最小核：手淘外链唤端链路的三次架构演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/从全量启动到最小核手淘外链唤端链路的三次架构演进.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/observability-monitoring.md)
 

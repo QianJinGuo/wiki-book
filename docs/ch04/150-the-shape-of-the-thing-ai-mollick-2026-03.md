@@ -80,8 +80,8 @@ Mollick 的核心论点：**我们可以看到 Shape of the Thing，但我们仍
 ## 相关主题
 
 - [Jagged Ai Frontier Mollick](052-ai.html) — Jagged Frontier / Bottleneck / Reverse Salient（Mollick 的能力地图框架）
-- [Co Existence Paradigm Shift Agentic Ai Mollick 2026](../ch01/437-ai-mollick.html) — Co-Existence 范式（Mollick 2026-06 更新，更激进的 agentic 叙事）
-- [Management As Ai Superpower Mollick](../ch01/364-management-as-ai-superpower.html) — 管理作为 AI 超级能力（同一作者，delegation 方程）
+- [Co Existence Paradigm Shift Agentic Ai Mollick 2026](../ch01/403-ai-mollick.html) — Co-Existence 范式（Mollick 2026-06 更新，更激进的 agentic 叙事）
+- [Management As Ai Superpower Mollick](../ch01/333-management-as-ai-superpower.html) — 管理作为 AI 超级能力（同一作者，delegation 方程）
 - [原文存档](https://www.oneusefulthing.org/p/the-shape-of-the-thing)
 
 ## 深度分析

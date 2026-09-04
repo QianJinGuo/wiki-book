@@ -166,11 +166,11 @@ AWS China Blog（2026-06-12）从**经济学经典命题"生产力决定生产�
 
 ### 深层博弈："代理人困境"的微观机制与宏观代价
 
-130 名中层管理者的实验揭示了完整的信息不对称链条：员工用 AI → 绩效更好 → 管理者无法分辨 → 知道用了反而低估员工努力（β₂=-0.387, p<0.01）→ 员工理性选择隐瞒 → AI 使用进入暗处。这与 [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](284-ai-agent.html) 中讨论的 Agent 安全问题（工具毒化、Prompt 注入）共同构成了"AI 影子采纳"的不同切面：安全是技术层的影子，可信度是组织层的影子。
+130 名中层管理者的实验揭示了完整的信息不对称链条：员工用 AI → 绩效更好 → 管理者无法分辨 → 知道用了反而低估员工努力（β₂=-0.387, p<0.01）→ 员工理性选择隐瞒 → AI 使用进入暗处。这与 [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](279-ai-agent.html) 中讨论的 Agent 安全问题（工具毒化、Prompt 注入）共同构成了"AI 影子采纳"的不同切面：安全是技术层的影子，可信度是组织层的影子。
 
 ### 技术判断：框架无关 + 模型无关是战略灵活性而非技术偏好
 
-文章强调"框架无关，模型无关"，这不是营销话术，而是面对 Agent 技术快速迭代的战略选择。专用压缩模型（[Anthropic Prompt Caching Claude Code](../ch01/160-anthropic-prompt-caching-claude-code.html)）与通用基础设施的对比在这里有直接意义：锁定单一模型/框架意味着将组织的技术演进路线绑定到供应商的发布周期。分层标准化（接口/身份/可观测性） + 保持灵活性（模型/框架/Prompt）是兼顾控制力和演进速度的最优解，参考 [Agent Harness Architecture Design Production Guide](../ch05/035-agent-harness.html) 中的生产级设计原则。
+文章强调"框架无关，模型无关"，这不是营销话术，而是面对 Agent 技术快速迭代的战略选择。专用压缩模型（[Anthropic Prompt Caching Claude Code](../ch01/131-anthropic-prompt-caching-claude-code.html)）与通用基础设施的对比在这里有直接意义：锁定单一模型/框架意味着将组织的技术演进路线绑定到供应商的发布周期。分层标准化（接口/身份/可观测性） + 保持灵活性（模型/框架/Prompt）是兼顾控制力和演进速度的最优解，参考 [Agent Harness Architecture Design Production Guide](../ch05/035-agent-harness.html) 中的生产级设计原则。
 
 ## 实践启示
 

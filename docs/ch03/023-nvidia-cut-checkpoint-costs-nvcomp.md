@@ -44,9 +44,9 @@ Optimizer state（FP32）通常是检查点体积的最大组成部分。在考�
 
 ## 相关实体
 - [Nvidia Gpu Kernel Translation Cute Python Julia](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-gpu-kernel-translation-cute-python-julia.md)
-- [Nvidia Edge First Llms Av Robotics](../ch01/169-nvidia-edge-first-llms-av-robotics.html)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](../ch04/328-nvidia-secure-local-agent-nemoclaw-openclaw.html)
-- [Nvidia Gemma 4 Edge Ai](../ch01/535-nvidia-gemma-4-edge-ai.html)
+- [Nvidia Edge First Llms Av Robotics](../ch01/140-nvidia-edge-first-llms-av-robotics.html)
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](../ch04/322-nvidia-secure-local-agent-nemoclaw-openclaw.html)
+- [Nvidia Gemma 4 Edge Ai](../ch01/496-nvidia-gemma-4-edge-ai.html)
 - [Nvidia Mcg Toolkit Model Documentation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-mcg-toolkit-model-documentation.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
 

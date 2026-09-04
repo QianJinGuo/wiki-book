@@ -86,7 +86,7 @@ AgentCore Memory 按 actor 级隔离数据，多账号部署时每个账号独�
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/004-agent.html)
 - [Youre Building Agent Security In The Wrong Order](../ch03/004-agent.html)
-- [Tencentdb Agent Memory Context Offloading](097-agent-memory.html)- [aws bedrock agentcore equipment repair assistant — 农业机械 ai 诊](../ch11/196-aws-bedrock-agentcore-equipment-repair-assistant-ai.html)
+- [Tencentdb Agent Memory Context Offloading](097-agent-memory.html)- [aws bedrock agentcore equipment repair assistant — 农业机械 ai 诊](../ch11/195-aws-bedrock-agentcore-equipment-repair-assistant-ai.html)
 - [what it feels like to work with mythos](https://github.com/QianJinGuo/wiki-public/blob/main/entities/what-it-feels-like-to-work-with-mythos.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
 

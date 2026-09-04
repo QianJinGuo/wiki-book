@@ -162,12 +162,12 @@ Agent 治理是尚未被解决的难题，企业应该现在开始试点而非�
 - [Enterprise Software Moats Agent Era](004-agent.html)
 - from-system-of-record-to-system-of-intelligence.md-intelligence-1
 - [我用 Skillmd 做了一个简历生成器](../ch07/045-skill.html)
-- [Aliyun Agentrun 2Line Integration](../ch04/278-agentrun.html)
+- [Aliyun Agentrun 2Line Integration](../ch04/296-agentrun.html)
 
 → [原文存档](https://mp.weixin.qq.com/s/JtTKwoYqO_I2QYeakigJUg)
-- [from](../ch01/194-from-system-of-record-to-system-of-intelligence.html)
-- [From System Of Record To System Of Intelligence](../ch01/194-from-system-of-record-to-system-of-intelligence.html)
-- [meet customers where they are: agentforce contact center now](../ch04/325-meet-customers-where-they-are-agentforce-contact-center-now.html)
+- [from](../ch01/165-from-system-of-record-to-system-of-intelligence.html)
+- [From System Of Record To System Of Intelligence](../ch01/165-from-system-of-record-to-system-of-intelligence.html)
+- [meet customers where they are: agentforce contact center now](../ch04/319-meet-customers-where-they-are-agentforce-contact-center-now.html)
 
 ---
 

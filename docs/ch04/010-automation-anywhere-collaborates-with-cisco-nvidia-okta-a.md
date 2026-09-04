@@ -68,11 +68,11 @@ Automation Anywhere CEO Mihir Shukla 的表述揭示了其核心愿景：**AI �
 - OpenAI GPT-5.5 的企业级支持表明前沿模型正在加速进入生产环境
 
 ## 相关实体
-- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](../ch01/167-rag.html)
+- [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](../ch01/138-rag.html)
 - [Strands Agents High Performance Genai Systems](../ch03/004-agent.html)
-- [Klarna Delivers Strong Start To 2026 With 1Bn Revenue And 68M Adj Operating Prof](../ch01/081-klarna-delivers-strong-start-to-2026-with-1bn-revenue-and.html)
+- [Klarna Delivers Strong Start To 2026 With 1Bn Revenue And 68M Adj Operating Prof](../ch01/064-klarna-delivers-strong-start-to-2026-with-1bn-revenue-and.html)
 - [Affirmmapsroadto100Bgmvwithcardaicommerc](052-ai.html)
-- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](../ch01/123-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g.html)
+- [Schmoozing Is Dead Agents Are Hitting 120 Of Humans And Growth Is The Only Thing](../ch01/101-schmoozing-is-dead-agents-are-hitting-120-of-humans-and-g.html)
 
 → [原文存档](https://www.automationanywhere.com/company/press-room/automation-anywhere-collaborates-cisco-nvidia-okta-and-openai-launching)- [the next generation of speculative decoding: dflash and spec](https://github.com/QianJinGuo/wiki-public/blob/main/entities/lmsys-dflash-speculative-decoding-2026-06.md)
 

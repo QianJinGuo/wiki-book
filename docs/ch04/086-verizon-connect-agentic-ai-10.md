@@ -159,7 +159,7 @@ Verizon Connect 的模型演进路径（Claude 4.5 Sonnet → Claude 4.5 Haiku �
 ## 相关实体
 - "AWS Bedrock 多智能体协作指南"
 - [Spec Review Agent Baz Bedrock Agentcore Multi Agent](../ch11/046-bedrock-agentcore.html)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](316-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](311-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [Aws Bedrock Agentcore Identity Security](../ch11/046-bedrock-agentcore.html)
 - [航班变更信息智能识别解决方案](https://github.com/QianJinGuo/wiki-public/blob/main/entities/航班变更信息智能识别解决方案.md)
 

@@ -308,7 +308,7 @@ business_agent_profile:
 
 ## 相关实体
 
-- [循环工程 (loop engineering) — 清华 2026 框架](../ch04/366-loop-engineering.html)
+- [循环工程 (loop engineering) — 清华 2026 框架](../ch04/360-loop-engineering.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/observability-monitoring.md)
 → [原文存档](https://mp.weixin.qq.com/s/qysRL9BeSLt_Zpmu889xeA)
 

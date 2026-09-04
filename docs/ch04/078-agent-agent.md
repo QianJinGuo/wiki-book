@@ -171,11 +171,11 @@ L3层（必要时）：确定性规则只在确实存在强绑定场景时才引
 - [Hermes Agent](../ch03/066-hermes-agent.html)（被本文分析对比）
 
 ## 相关实体
-- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](284-ai-agent.html)
-- [AI tool poisoning exposes a major flaw in enterprise agent security](228-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](279-ai-agent.html)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](../ch03/004-agent.html)
 
-- [十年老技术开发的 AI Agent 探索之路](284-ai-agent.html)
-- [要实现一个工作流选择-agent-skills-还是-ai-表格](314-agent-skills.html)
+- [十年老技术开发的 AI Agent 探索之路](279-ai-agent.html)
+- [要实现一个工作流选择-agent-skills-还是-ai-表格](309-agent-skills.html)
 - [ai agent memory systems](097-agent-memory.html)
 
 ---

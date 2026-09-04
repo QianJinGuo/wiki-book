@@ -10,10 +10,10 @@
 - 令牌窃取后通过 GitHub 提交搜索实现 P2P 中继，绕过一切 C2 阻断
 - 持久化 `gh-token-monitor` 含真实 `rm -rf ~/` 逻辑，构成死亡开关； revocation 必须在移除持久化单元之后
 ## 相关实体
-- [Postmortem Tanstack Npm Supply Chain Compromise Tanstack Blog](033-postmortem-tanstack-npm-supply-chain-compromise-tanstack.html)
-- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](../ch01/637-mini-shai-hulud-strikes-again-tanstack-more-npm-packages.html)
+- [Postmortem Tanstack Npm Supply Chain Compromise Tanstack Blog](030-postmortem-tanstack-npm-supply-chain-compromise-tanstack.html)
+- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](../ch01/587-mini-shai-hulud-strikes-again-tanstack-more-npm-packages.html)
 - [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch04/052-ai.html)
-- [From Doer To Director The Ai Mindset Shift](../ch01/028-from-doer-to-director-the-ai-mindset-shift.html)
+- [From Doer To Director The Ai Mindset Shift](../ch01/026-from-doer-to-director-the-ai-mindset-shift.html)
 
 → [原文存档](https://cybersecurityreach.org/investigations/ifyourevokethistokenitwillwipethecomputeroftheowner-shai-hulud-2026)
 

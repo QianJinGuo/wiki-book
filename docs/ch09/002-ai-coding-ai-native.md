@@ -62,7 +62,7 @@ Coding Agent 可以截图自己的实现页面，通过 node-map API 与设计�
 
 ## 相关实体
 
-- [Design to Code](../ch01/127-how-dropbox-uses-mcp-and-dash-to-close-the-design-to-code-se.html)
+- [Design to Code](../ch03/006-what-the-design-to-code-loop-unlocks.html)
 - Visual Reduction AI
 - 大淘宝前端实践
 

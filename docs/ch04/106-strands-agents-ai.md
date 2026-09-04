@@ -167,10 +167,10 @@ S3 会话持久化是另一个关键的企业级特性。传统的对话助手�
 ## 参考来源
 
 ## 相关实体
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](398-amazon-bedrock-agentcore.html)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](392-amazon-bedrock-agentcore.html)
 - [Yidian Tianxia Context Engineering Agentic Ai Qcon](163-yidian-tianxia-context-engineering-agentic-ai.html)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](398-amazon-bedrock-agentcore.html)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](316-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](392-amazon-bedrock-agentcore.html)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](311-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [航班变更信息智能识别解决方案](https://github.com/QianJinGuo/wiki-public/blob/main/entities/航班变更信息智能识别解决方案.md)
 
 → [原文存档](https://aws.amazon.com/cn/blogs/china/based-on-strands-agents-build-cost-analytics-optimize-ai-assistant/)- [ec2 nat 实例选型与部署实践（aws 中国宁夏区域）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ec2-nat-instance-deploy-practice-aws-china-2026.md)

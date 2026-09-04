@@ -104,8 +104,8 @@ A model registry (`models.yaml`) maps short aliases like `claude-haiku` to full 
 
 ## 相关实体
 - [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](../ch04/039-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
-- [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](218-amazon-nova.html)
-- [Build Real Time Voice Streaming With Amazon Nova Sonic And Webrtc](218-amazon-nova.html)
+- [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](207-amazon-nova.html)
+- [Build Real Time Voice Streaming With Amazon Nova Sonic And Webrtc](207-amazon-nova.html)
 - [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For ](123-restrict-access-to-sensitive-documents-in-your-amazon-quick.html)
 - [Bedrock Agentcore Coding Agent Hosting](046-bedrock-agentcore.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/evaluation-benchmarks-extended.md)

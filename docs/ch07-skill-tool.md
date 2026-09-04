@@ -2,7 +2,7 @@
 
 > Agent 的手脚：Skill 系统、MCP 协议、Tool Use
 
-> 本章收录 **71 篇**实体，按深度递增排列。
+> 本章收录 **68 篇**实体，按深度递增排列。
 
 ---
 
@@ -10,7 +10,7 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐⭐ 工程师 | 需编程基础 | 70 |
+| ⭐⭐ 工程师 | 需编程基础 | 67 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 1 |
 
 ---
@@ -100,7 +100,4 @@ Agent 能不能"动手做事"，取决于它有什么工具。
 - [065. 当我把AI变成一个\"算法\"：Skill工程化设计的心路历程](ch07/065-ai-skill)
 - [066. SkillComposer: 生成式技能组合](ch07/066-skillcomposer)
 - [067. Building and connecting a production-ready ecommerce MCP server using Amazon Bedrock AgentCore and Mistral AI Studio](ch07/067-building-and-connecting-a-production-ready-ecommerce-mcp-ser)
-- [068. 让 Amazon Quick 操作飞书：构建远程 MCP 服务的设计实践](ch07/068-amazon-quick-mcp)
-- [069. 25个Skills详解：从生产力清单到AI工作流资产](ch07/069-25-skills-ai)
-- [070. Perplexity 首次公开了内部 Skill 设计指南](ch07/070-perplexity-skill)
-- [071. Microsoft Agent Framework Tools 总览：4 类工具 + Provider 矩阵 + Tool Approval](ch07/071-microsoft-agent-framework-tools-4-provider-tool-ap)
+- [068. Microsoft Agent Framework Tools 总览：4 类工具 + Provider 矩阵 + Tool Approval](ch07/068-microsoft-agent-framework-tools-4-provider-tool-ap)

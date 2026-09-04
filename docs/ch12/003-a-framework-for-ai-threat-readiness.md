@@ -50,11 +50,11 @@ AI 代码分析需要分层策略，而不是对所有代码一视同仁。首�
 框架最后强调了治理的重要性：建立明确的 ownership、定义预期结果、并用清晰的指标追踪进度。这些指标包括 SLA 遵守率、异常数量、资产和环境覆盖范围、以及针对定义安全结果的进展。
 关键实践：建立定义清晰的委员会、角色和决策流程；定义结果和关键指标以追踪进展并向执行层报告；创建策略、SLA 和异常流程以确保风险被一致地处理。指标体系应该覆盖从暴露发现到修复完成的全流程时间（MTTR），以及各层次的覆盖率。
 ## 相关实体
-- [Clinereleasesopen Sourceagentruntimesdk](../ch04/278-agentrun.html)
-- [Where Openclaw Security Is Heading Openclaw Blog](028-where-openclaw-security-is-heading-openclaw-blog.html)
-- [Vietnamtodevelopdomesticcloud](../ch01/677-opd.html)
+- [Clinereleasesopen Sourceagentruntimesdk](../ch04/296-agentrun.html)
+- [Where Openclaw Security Is Heading Openclaw Blog](025-where-openclaw-security-is-heading-openclaw-blog.html)
+- [Vietnamtodevelopdomesticcloud](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vietnamtodevelopdomesticcloud.md)
 - [5Thingstoknowabouttheclarityact](https://github.com/QianJinGuo/wiki-public/blob/main/entities/5thingstoknowabouttheclarityact.md)
-- [Cybersecqwen 4B Why Defensive Cyber Needs Small Specialized Locally Runnable Mod](091-cybersecqwen-4b.html)
+- [Cybersecqwen 4B Why Defensive Cyber Needs Small Specialized Locally Runnable Mod](087-cybersecqwen-4b.html)
 
 → [原文存档](https://www.wiz.io/blog/ai-threat-readiness-framework)
 

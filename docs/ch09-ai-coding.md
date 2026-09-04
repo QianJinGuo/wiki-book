@@ -2,7 +2,7 @@
 
 > 最成熟的 Agent 品类：Claude Code、OpenClaw、Codex 深度拆解
 
-> 本章收录 **125 篇**实体，按深度递增排列。
+> 本章收录 **118 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 2 |
-| ⭐⭐ 工程师 | 需编程基础 | 118 |
+| ⭐⭐ 工程师 | 需编程基础 | 111 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 4 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 
@@ -148,15 +148,8 @@ AI 编程是 Agent 最早成熟的品类，也是理解 Agent 工程的最佳窗
 - [111. 天猫新品营销技术团队AI编码实战指南（上）](ch09/111-ai)
 - [112. Automate progressive rollouts with Vercel Flags - Vercel](ch09/112-automate-progressive-rollouts-with-vercel-flags-vercel)
 - [113. 用 Kiro 构建行业专业软件：Spec vs Vibe Coding 的分层结论](ch09/113-kiro-spec-vs-vibe-coding)
-- [114. 天猫新品团队AI编码实战指南（下）](ch09/114-ai)
-- [115. How Baz improved its AI Agent Code Review accuracy using Amazon Bedrock AgentCore](ch09/115-how-baz-improved-its-ai-agent-code-review-accuracy-using-ama)
-- [116. AI 写前端 ≠ 设计 —— Anomaly 创始人对 Vibe Coding 哲学批判](ch09/116-ai-anomaly-vibe-coding)
-- [117. Unlocking AI flexibility in Europe: A guide to cross-region inference for EU data processing and model access](ch09/117-unlocking-ai-flexibility-in-europe-a-guide-to-cross-region)
-- [118. Dynamically Splitting Wide Partitions in Cassandra for Time Series Workloads](ch09/118-dynamically-splitting-wide-partitions-in-cassandra-for-time)
-- [119. OpenAI大神教你如何榨干Codex](ch09/119-openai-codex)
-- [120. Device Code Phishing Forensics: What We Learned from BEC Investigations in the Wild](ch09/120-device-code-phishing-forensics-what-we-learned-from-bec-inv)
-- [121. FastContext（微软开源 Coding Agent 仓库探索子代理）](ch09/121-fastcontext-coding-agent)
-- [122. DeepSeek Visual Primitives：视觉原语作为思考媒介](ch09/122-deepseek-visual-primitives)
-- [123. AI Coding Agent Token 成本控制五层模型](ch09/123-ai-coding-agent-token)
-- [124. Dockerless: 免环境补丁验证器](ch09/124-dockerless)
-- [125. GLM-5 Scaling Pain 推理复盘](ch09/125-glm-5-scaling-pain)
+- [114. FastContext（微软开源 Coding Agent 仓库探索子代理）](ch09/114-fastcontext-coding-agent)
+- [115. DeepSeek Visual Primitives：视觉原语作为思考媒介](ch09/115-deepseek-visual-primitives)
+- [116. AI Coding Agent Token 成本控制五层模型](ch09/116-ai-coding-agent-token)
+- [117. Dockerless: 免环境补丁验证器](ch09/117-dockerless)
+- [118. GLM-5 Scaling Pain 推理复盘](ch09/118-glm-5-scaling-pain)

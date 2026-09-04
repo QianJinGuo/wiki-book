@@ -108,13 +108,13 @@ Caturegli 分析认为，该仓库的使用模式显示个人将其作为工作�
 ## 外部参考
 
 ## 相关实体
-- [Github Copilot Individual Plans Flex Allotments](../ch01/548-github-copilot-individual-plans-flex-allotments-in-pro-and.html)
-- [Vscode Github Token Stealing 1 Click Pwn Ammaraskar 2026](../ch01/476-github.html)
-- [Andrej Karpathy Claude Md 134K Stars 2026](../ch01/182-claude-md.html)
-- [Open Source Projects Leaving Github](../ch01/476-github.html)
-- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](168-cost-effective-deployment-of-vision-language-models-for-pet.html)
+- [Github Copilot Individual Plans Flex Allotments](../ch01/508-github-copilot-individual-plans-flex-allotments-in-pro-and.html)
+- [Vscode Github Token Stealing 1 Click Pwn Ammaraskar 2026](../ch01/440-github.html)
+- [Andrej Karpathy Claude Md 134K Stars 2026](../ch01/153-claude-md.html)
+- [Open Source Projects Leaving Github](../ch01/440-github.html)
+- [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](167-cost-effective-deployment-of-vision-language-models-for-pet.html)
 
-→ [原文存档](https://krebsonsecurity.com/2026/05/cisa-admin-leaked-aws-govcloud-keys-on-github/)- [github multilingual repositories dataset — 4000 万仓库多语言元数据](../ch01/476-github.html)
+→ [原文存档](https://krebsonsecurity.com/2026/05/cisa-admin-leaked-aws-govcloud-keys-on-github/)- [github multilingual repositories dataset — 4000 万仓库多语言元数据](../ch01/440-github.html)
 
 ---
 

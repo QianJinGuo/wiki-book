@@ -141,11 +141,11 @@ SQS 和 Lambda 的成本结构：
 - [Amazon Bedrock Converse API 文档](https://docs.aws.amazon.com/bedrock/latest/userguide/converse-api.html)
 - [Using AWS Lambda with Amazon SQS](https://docs.aws.amazon.com/lambda/latest/dg/with-sqs.html)
 ## 相关实体
-- [Aws Bedrock Serverless Async Inference Sqs Lambda](212-bedrock.html)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/398-amazon-bedrock-agentcore.html)
-- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/398-amazon-bedrock-agentcore.html)
-- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/398-amazon-bedrock-agentcore.html)
-- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/316-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)- [gemma 4 模型发布 — google deepmind 开源权重家族在 amazon bedrock 上线](136-amazon-bedrock.html)
+- [Aws Bedrock Serverless Async Inference Sqs Lambda](201-bedrock.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](../ch04/392-amazon-bedrock-agentcore.html)
+- [Mcp Serveramazon Bedrock Agentcorequick Suite](../ch04/392-amazon-bedrock-agentcore.html)
+- [Building Multi Tenant Agents With Amazon Bedrock Agentcore](../ch04/392-amazon-bedrock-agentcore.html)
+- [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/311-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)- [gemma 4 模型发布 — google deepmind 开源权重家族在 amazon bedrock 上线](136-amazon-bedrock.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/vision-multimodal.md)
 
 ---
