@@ -12,7 +12,7 @@ Build a More Secure, Always&#x2d;On Local AI Agent with OpenClaw and NVIDIA Nemo
 - [Nvidia Agentic Ai Subsurface Engineering](283-nvidia-agentic-ai-subsurface-engineering.html)
 - [Hermes Agent Vs Openclaw Comparison](161-hermes-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-secure-local-agent-nemoclaw-openclaw.md)
+→ [原文存档](https://developer.nvidia.com/blog/build-a-secure-always-on-local-ai-agent-with-nvidia-nemoclaw-and-openclaw/)
 
 ## 深度分析
 

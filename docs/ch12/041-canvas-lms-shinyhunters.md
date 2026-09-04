@@ -4,7 +4,7 @@
 
 # Canvas LMS 攻击者 ShinyHunters 官方域名被暂停：转向暗网的运营安全转向
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/canvas-hackers-shinyhunters-say-their-official-domain-suspen.md)
+→ [原文存档](https://hackread.com/canvas-hackers-shinyhunters-official-domain-suspended/)
 
 ## 摘要
 

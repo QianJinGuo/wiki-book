@@ -16,7 +16,7 @@
 - [Harness Engineering Systematic Explainer](057-harness-engineering.html)
 - [Harness Engineering Framework](057-harness-engineering.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tsinghua-harness-engineering-report.md)
+→ [原文存档](https://mp.weixin.qq.com/s/EdVjZuBVcXjd30TpxyLsXQ)
 
 ## 深度分析
 

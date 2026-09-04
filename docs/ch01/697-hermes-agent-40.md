@@ -7,7 +7,7 @@
 ## 相关实体
 
 - [codex discovered a hidden http/2 bomb](393-codex.html)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-tool-system-analysis.md)
+→ [原文存档](https://mp.weixin.qq.com/s/ItjK7a6EoyJSidSDTnJgww)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/vision-multimodal.md)
 ## 深度分析

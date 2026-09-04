@@ -4,7 +4,7 @@
 
 # 全网最全的Claude Fable 5 省钱攻略都在这了
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/全网最全的claude-fable-5-省钱攻略都在这了.md)
+→ [原文存档](https://mp.weixin.qq.com/s/YirJ8-6_TZuFe9cLepFNSg)
 
 # 全网最全的Claude Fable 5 省钱攻略都在这了
 

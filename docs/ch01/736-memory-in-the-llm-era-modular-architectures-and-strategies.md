@@ -207,7 +207,7 @@ MemTree、MemoryOS、MemOS 等树状层次方法在各项任务中表现突出�
 - [Agent Memory Architecture Essence](../ch04/133-agent-memory.html) — Agent Memory 架构本质深度分析
 - [Agent Memory Systematic Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-systematic-framework.md) — Agent Memory 系统化框架
 
-→ [原文存档 — NewGridAI 原始解读](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/memory-in-the-llm-era-iclr2026.md)
+→ [原文存档 — NewGridAI 原始解读](https://mp.weixin.qq.com/s/KZJbjozIest4pe5oftACcg)
 
 ## 第 2 来源：Hyman 的杂货铺 — 12 系统横评实证数据 (2026-06-26)
 
@@ -234,7 +234,7 @@ Hyman 的杂货铺对同一篇论文的解读，提供了该论文的 12 系统�
 - 瓶颈从「能不能存」变成「能否在更新/检索/成本之间稳定取舍」
 - 维护模块（冲突解决/版本管理/容量控制/语义合并/过期删除）是最被低估却最关键的模块
 
-→ [第 2 来源：Hyman 的杂货铺 12 系统横评](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-memory-12-system-benchmark-hyman-2026.md)
+→ [第 2 来源：Hyman 的杂货铺 12 系统横评](https://mp.weixin.qq.com/s/aKusds7ohmvocsdRwScZUg)
 
 ---
 

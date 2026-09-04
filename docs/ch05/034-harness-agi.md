@@ -153,7 +153,7 @@ Model Parameters 与 Harness Parameters 的联合优化代表着一个明确的�
 ## 相关实体
 - [Ai Coding 入门指南 如何更好地让Ai真正帮你干活 V2](076-ai-coding.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/wangyunhe-harness-optimization-agentsoul.md)
+→ [原文存档](https://mp.weixin.qq.com/s/Jxf4hqDNiVeB8C0KqJCNFA)
 
 - [Prompt Context Harness Three Evolutions Tencent](008-harness.html)
 - [Openclacky Prompt Cache Harness V2Ex 799662C56Ba6](008-harness.html)

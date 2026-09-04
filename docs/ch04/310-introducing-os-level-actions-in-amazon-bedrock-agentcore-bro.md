@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 7.5KB | `entities/introducing-os-level-actions-in-amazon-bedrock-agentcore-browser.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/introducing-os-level-actions-in-amazon-bedrock-agentcore-browser.md)
+> -> [原文存档](https://aws.amazon.com/blogs/machine-learning/introducing-os-level-actions-in-amazon-bedrock-agentcore-browser/)
 
 ## 摘要
 <p>AI agents that automate web workflows operate within the browser’s web layer, the DOM that Playwright and the Chrome DevTools Protocol (CDP) expose. AgentCore Browser provides a secure, isolated browser environment for this, and it works well for the vast majority of automation: navigating pages,...
@@ -54,7 +54,7 @@ OS Level Actions 的发布标志着**浏览器自动化能力的最后一次关�
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](../ch11/048-prowler-genai.html)
 - [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](../ch11/135-amazon-bedrock.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-custom-code-based-evaluators-in-amazon-bedrock-agentco.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/build/custom/code/based/evaluators/in/amazon/bedrock/agentco.html)
 
 - [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](../ch11/135-amazon-bedrock.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/aws-cloud-ai-infrastructure.md)

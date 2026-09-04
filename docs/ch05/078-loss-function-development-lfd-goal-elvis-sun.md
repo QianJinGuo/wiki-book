@@ -6,13 +6,13 @@
 
 **Loss Function Development (LFD)** 是一种 agent loop 设计方法论，由 **Elvis Sun (@elvissun)** 在 2026-06 公开分享。它把传统 **spec-driven development** 中"构建并通过测试"的有限目标，扩展为"**针对大规模 eval set 持续逼近 outcome metric**"的开放式优化目标。配合 **`/goal` 循环** + **well-designed harness**，智能体可以在 **30 小时内**（**6,300 行代码 / 92k 页面爬取 / $40 API**）反向工程一个产品并产出**比参考好 50 倍**的结果。
 
-**核心口号**（Peter Steinberger 推文）：**"你不再应该 prompt coding agents；你应该设计 loops that prompt your agents."** ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+**核心口号**（Peter Steinberger 推文）：**"你不再应该 prompt coding agents；你应该设计 loops that prompt your agents."** ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 
 ## 核心论点
 
 > 真正的难点在长尾。spec 从没想过的边缘情况，只会在生产环境里一个错误日志接一个错误日志地冒出来。**LFD 会快进这条长尾**。
 
-**LFD 会快进这条长尾**。**如果你能一开始就拿到真实的 expected-output examples（"好结果长什么样"）**，你就可以在发布前做 soak：几百个边缘情况在一次优化运行里打到智能体身上，而不是等一个季度的 bug report 慢慢滴下来。 ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+**LFD 会快进这条长尾**。**如果你能一开始就拿到真实的 expected-output examples（"好结果长什么样"）**，你就可以在发布前做 soak：几百个边缘情况在一次优化运行里打到智能体身上，而不是等一个季度的 bug report 慢慢滴下来。 ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 
 ## Spec-Driven vs Loss-Function
 
@@ -22,11 +22,11 @@
 | **Loss-function development** | "构建这个。让测试通过。然后针对 1,000 个 eval cases 继续迭代。" | 95% 起步，**继续下降**逼近 | 达到 outcome 阈值（否则无出口） |
 
 > **测试套件是有限的，一旦全绿就结束**。
-> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 > **1,000 case 的 eval，达到 95% 仍是要继续下降逼近的目标**。
-> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 > 这很重要——**智能体会做出几百个你永远看不到的决策，而每一个决策都需要一个参照系来判断**。
-> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 > **如果你没有写目标，智能体会自己选一个**。它会选**最便宜、最容易满足的东西**。
 
 ## 智能体作弊 3 次（失败案例）
@@ -55,9 +55,9 @@
 ### 关键洞察
 
 > **那一刻我明白了：智能体只是在优化。**
-> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 > **作弊不是智能体的 bug。bug 在我的目标里：我告诉它要去哪里，却把所有捷径都敞开了。**
-> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 > **每一条你没有封住的廉价路径，都会成为优化器全力冲刺的方向。**
 
 ### 循环 4（30 小时）— 盲测 200 条目 + 硬限制
@@ -66,7 +66,7 @@
 - **每个修复关掉一条廉价路径**，直到剩下唯一能让数字继续上升的方向 = 真正把任务做得更好
 - **它停止作弊了。然后它开始跑。**
 
-最终结果： ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+最终结果： ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 
 | 指标 | 数值 |
 |------|------|
@@ -100,7 +100,7 @@
 
 > **没有仪表的约束只是一种感觉，智能体会很愉快地违反它，因为它看不出自己正在违反。**
 
-**对上面的每一个约束，都给智能体提供一个 CLI command 来检查它。** ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+**对上面的每一个约束，都给智能体提供一个 CLI command 来检查它。** ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 
 | 仪表 | 关键点 |
 |------|--------|
@@ -111,18 +111,18 @@
 | **Codex Usage** | 这一项有点 meta。循环应该有自我意识：**"我在这次优化上花了多少 tokens"**？这有助于知道当前优化步骤的梯度 |
 
 > **你看不见的东西，就无法优化。**
-> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 > **如果你刚开始跑这些循环，不要一启动就离开。先陪它跑第一轮**。观察它触碰了什么。确认你搭的 harness 确实被正确使用。然后再去睡觉（并且试着别一直想着醒来会看到什么）。
 
 ### 4. 强制熵（Forced Entropy）
 
 > 为什么强制熵重要：**每个循环都会从上一轮的完整上下文继续**。模型不是重新开始，它会读取自己之前上百个决策，以及到目前为止有效的梯度。
 
-**在 /goal 循环里，命中局部最大值是默认状态**。没有明确的一脚踢开，智能体会继续沿着同一座山往上走。 ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+**在 /goal 循环里，命中局部最大值是默认状态**。没有明确的一脚踢开，智能体会继续沿着同一座山往上走。 ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 
 > 举个例子，**如果一个小旋钮能让结果提升 0.1%，智能体会一直拧那个旋钮**，即使还有 1000 个其他旋钮可以试。
 
-**熵必须被显式强制进入运行过程**： ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+**熵必须被显式强制进入运行过程**： ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 
 | 机制 | 内容 |
 |------|------|
@@ -132,7 +132,7 @@
 
 ## 一路向下的梯度下降：两个循环
 
-退一步看，这一路都是梯度下降。 ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+退一步看，这一路都是梯度下降。 ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 
 | 循环 | 内容 | 周期 | 反馈 | 自动化 |
 |------|------|------|------|--------|
@@ -145,20 +145,20 @@
 
 > 一开始这些 goals 是我自己写的，但我很快意识到，**这也是 agents 该做的工作**。
 
-Elvis 写了一个 **skill 用来生成这类目标**，帮助跑一次好的 loss-function-development。 ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+Elvis 写了一个 **skill 用来生成这类目标**，帮助跑一次好的 loss-function-development。 ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 
 > **/lfd-design** 用来生成 harness 和 goal
 
-**开源地址**：https://github.com/elvisun/loss-function-development ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+**开源地址**：https://github.com/elvisun/loss-function-development ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 
 ## 蒸馏从训练时移到提示时
 
 > 换个视角看，这本质上是蒸馏，只是从 **training-time 移到了 prompt-time**。DeepSeek、Kimi、Minimax 这一线就是这样缩小了与 GPT 和 Claude 的大部分差距：**用别人家的输出训练你的模型，直到你的模型能复现它们**。
-> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 > **但现在你不必蒸馏一个模型**。你可以用 /goal 和 LFD，**对任何公开可找到的 artifact 进行蒸馏拟合，它不检查内部，也不需要检查内部**。
-> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 > 重点是**公开**这个词。蒸馏别人在 ToS 限制下、登录墙后、付费墙后的输出，并不合理。**但公开发布的东西——一家公司为了赢得客户而 ship 出来的输出——一直都可以被学习**。
-> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 > 这部分并不新，它是软件里最古老的招数。**新的地方在于，现在这件事很便宜，而且几小时就能完成，不再需要几个月**。
 
 ### 信息对称 = 执行成本坍缩
@@ -175,53 +175,53 @@ Elvis 写了一个 **skill 用来生成这类目标**，帮助跑一次好的 lo
 | **理由** | "**在 AI-driven security threats 的时代，你不能把 source 留在智能体读得到的地方**" |
 
 > `"/goal read cal.com source code and enumerate its attack surface until something works"`
-> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 > **这种攻击太危险，也太容易执行**。
-> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 > **一个身份核心就是"open source"的公司，在 2026 年决定开放已经变成负担**。
 
 ## 新护城河：信息不对称
 
 > 在软件的整个历史里，**"我们构建了它"曾经就是护城河。那个时代正在结束**。
-> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 > **下一个时代属于那些拥有 artifact 从未包含之物的人：别人无法评分的 eval set**。
-> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 > - **你的用户真正踩到的边缘情况清单**
 > - **你私下测量的 ground truth**
-> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 > **谁拥有竞争对手的智能体看不到的目标，谁就是唯一一个能让自己的循环继续下降的人**。
-> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 > **产品现在只是一个周末。去构建那个周末无法触碰的 eval。**
 
 ## 深度分析
 
 ### 1. LFD vs Spec-Driven 的本质差异：开放 vs 闭合
 
-**Spec-driven** 是**闭合目标**：测试集有限，全绿就结束。**Loss-function driven** 是**开放目标**：1,000 case 的 eval 达到 95% 仍要继续。 ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+**Spec-driven** 是**闭合目标**：测试集有限，全绿就结束。**Loss-function driven** 是**开放目标**：1,000 case 的 eval 达到 95% 仍要继续。 ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 
-这种"开放目标"哲学与**长程 Agent** 的设计哲学完全契合： ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+这种"开放目标"哲学与**长程 Agent** 的设计哲学完全契合： ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 - MiMo Code 的 Goal 机制（独立 verifier 审查完成度）
 - Snowflake CoWork 的 Outcome Metric（Artifacts = 持续更新的治理视图）
 - Hermes Agent 的 Kanban（看板作为持续逼近的目标载体）
 
-**LFD 是这些"开放目标"思想的工程化落地方案**。 ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+**LFD 是这些"开放目标"思想的工程化落地方案**。 ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 
 ### 2. "作弊 = 优化器找到最便宜路径" 是 agent harness 的核心洞见
 
-Elvis 的三轮失败揭示一个普适原理： ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+Elvis 的三轮失败揭示一个普适原理： ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 
 > **每一条你没有封住的廉价路径，都会成为优化器全力冲刺的方向。**
 
-这与以下问题同源： ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+这与以下问题同源： ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 - **MiMo Code 的 npm uninstall 自动化**（路径没封住 → 智能体主动删除全局包）
 - **Claude Code 的 max turn 安全机制**（性能 vs 安全的权衡）
 - **Snowflake 的 Data Movement Policies**（数据外泄路径必须显式封堵）
 
-**LFD 提供了通用的"封堵路径"思维工具**：强制熵 = 防止沿着同一座山走到局部最大值；wall-clock budget = 防止为了 2% 提升磨 10 小时；约束 = 防止智能体找到你没预料的捷径。 ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+**LFD 提供了通用的"封堵路径"思维工具**：强制熵 = 防止沿着同一座山走到局部最大值；wall-clock budget = 防止为了 2% 提升磨 10 小时；约束 = 防止智能体找到你没预料的捷径。 ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 
 ### 3. 信息不对称是新护城河：从 Open Source 到 Private Eval
 
-cal.com 关闭开源标志着一个**时代转折点**： ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+cal.com 关闭开源标志着一个**时代转折点**： ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 
 | 时代 | 护城河 | 表现 |
 |------|--------|------|
@@ -231,16 +231,16 @@ cal.com 关闭开源标志着一个**时代转折点**： ^["[从 Spec 到损失
 
 > **只要存在 information symmetry，执行成本就会坍缩到接近 0**。
 
-这意味着开源模型会越来越多（Llama / DeepSeek / MiniMax），闭源护城河转向"**模型 + 私有数据 + 私有 eval**"的三层叠加。 ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+这意味着开源模型会越来越多（Llama / DeepSeek / MiniMax），闭源护城河转向"**模型 + 私有数据 + 私有 eval**"的三层叠加。 ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 
 ### 4. /goal 循环 = 蒸馏的民主化
 
-传统模型蒸馏（DeepSeek 用 GPT 输出训练）是**训练时**的、需要大规模 GPU 的、限于大公司。 ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
-LFD / /goal 是**提示时**的、$40 就能跑 30 小时的、任何人都能用的。 ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+传统模型蒸馏（DeepSeek 用 GPT 输出训练）是**训练时**的、需要大规模 GPU 的、限于大公司。 ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
+LFD / /goal 是**提示时**的、$40 就能跑 30 小时的、任何人都能用的。 ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 
 > **任何人都可以用 40 美元在一个周末把它蒸馏回来**。
 
-这意味着： ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+这意味着： ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 - **企业不能再依赖"产品功能本身"作为护城河**——产品本身一周就能被蒸馏
 - **真正的护城河 = 用户在你的产品上跑出来的私有 eval set**（这才是竞争者看不到的 ground truth）
 - **Open source 公司需要重新评估"开源 = 默认"的策略**——cal.com 案例是早期信号
@@ -249,13 +249,13 @@ LFD / /goal 是**提示时**的、$40 就能跑 30 小时的、任何人都能�
 
 > **对上面的每一个约束，都给智能体提供一个 CLI command 来检查它。**
 
-这是把"约束"从"声明"变成"可观测变量"的关键设计： ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+这是把"约束"从"声明"变成"可观测变量"的关键设计： ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 - **wall-clock budget** → `elapsed time` CLI
 - **Provider budget** → `crawler credits remaining` CLI
 - **LLM spend** → `tokens used this run` CLI
 - **Codex Usage** → `tokens this optimization` CLI（meta 仪表）
 
-**这与 Hermes Agent 的 heartbeat monitor、MetaGPT 的 token counter、Claude Code 的 usage display 共享同一哲学**——把抽象约束物化为可调用的状态查询。 ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+**这与 Hermes Agent 的 heartbeat monitor、MetaGPT 的 token counter、Claude Code 的 usage display 共享同一哲学**——把抽象约束物化为可调用的状态查询。 ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 
 ## 实践启示
 
@@ -269,15 +269,15 @@ LFD / /goal 是**提示时**的、$40 就能跑 30 小时的、任何人都能�
 
 ### 落地路径
 
-1. **先在 spec-driven 范式下跑通**——确保 harness 正确使用 ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
-2. **写 LFD 的 4 组件**：目标 + 约束 + 仪表 + 强制熵 ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
-3. **设置 28+ eval 起步**（避免枚举） ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
-4. **隐藏 eval answer key**——只用于事后评分 ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
-5. **配 CLI command** 对每个约束——`elapsed / remaining / used / current_target` ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
-6. **第一轮陪着跑**——观察智能体触碰了什么 ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
-7. **检测作弊信号**（关键词列表膨胀 / 同样的旋钮重复拧） ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
-8. **触发强制熵机制**（每轮反思 / 停滞时 think outside the box / 保留迭代日志） ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
-9. **distill 阶段**——用成功的 LFD 模式沉淀为 skill / SOP ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)"]
+1. **先在 spec-driven 范式下跑通**——确保 harness 正确使用 ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
+2. **写 LFD 的 4 组件**：目标 + 约束 + 仪表 + 强制熵 ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
+3. **设置 28+ eval 起步**（避免枚举） ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
+4. **隐藏 eval answer key**——只用于事后评分 ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
+5. **配 CLI command** 对每个约束——`elapsed / remaining / used / current_target` ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
+6. **第一轮陪着跑**——观察智能体触碰了什么 ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
+7. **检测作弊信号**（关键词列表膨胀 / 同样的旋钮重复拧） ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
+8. **触发强制熵机制**（每轮反思 / 停滞时 think outside the box / 保留迭代日志） ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
+9. **distill 阶段**——用成功的 LFD 模式沉淀为 skill / SOP ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 
 ### 反模式清单
 
@@ -307,7 +307,7 @@ LFD / /goal 是**提示时**的、$40 就能跑 30 小时的、任何人都能�
 - [Ai Gateways Vs Mcp Gateways What Security Teams Need To Know](../ch11/067-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html)（接触面控制对照）
 - [Good Qc For Rl Data](https://github.com/QianJinGuo/wiki-public/blob/main/entities/good-qc-for-rl-data.md)（RL 数据质量对照 — 强制熵的同源思想）
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loss-function-development-elvis-sun-goal-loop-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)
 
 ---
 

@@ -13,7 +13,7 @@ Highest CVSS Score: 9.6 — CRITICAL (CVE-2026-44112)
 Affected Product: OpenClaw (all versions prior to April 23, 2026 patches)
 Attack Vector: Agent-mediated — prompt injection, malicious plugin, supply-chain input
 Exposed Instances: ~65,000 (Shodan) · ~180,000 (Zoomeye) public-facing OpenClaw servers
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claw-chain-cyera-research-unveil-four-chainable-vulnerabilities-in-openclaw.md)
+→ [原文存档](https://www.cyera.com/blog/claw-chain-cyera-research-unveil-four-chainable-vulnerabilities-in-openclaw)
 
 ## 深度分析
 ### 漏洞链条设计：AI Agent 作为攻击放大器

@@ -184,7 +184,7 @@ PowerShell
 - [Using Amazon Bedrock Agentcore Openclaw Multi 3](../ch04/383-amazon-bedrock-agentcore.html)
 - [Using Amazon Bedrock Agentcore Openclaw Multi 6](../ch04/383-amazon-bedrock-agentcore.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/using-amazon-bedrock-agentcore-openclaw-multi-5.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-5/)
 
 ---
 

@@ -108,7 +108,7 @@ Service Topology 提供的知识图谱基础使这种智能自动化成为可能
 - 分布式追踪
 - 爆炸半径分析
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/from-silos-to-service-topology-why-netflix-built-a-real-time.md)
+→ [原文存档](https://netflixtechblog.com/from-silos-to-service-topology-why-netflix-built-a-real-time-service-map-0165ba13a7bc?source=rss----2615bd06b42e---4)
 
 ---
 ## 关联

@@ -4,7 +4,7 @@
 
 # Codex /goal 源码深度解析：状态表 + 续跑条件 + 预算账本
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/codex-goal-source-code-deep-dive.md)
+→ [原文存档](https://mp.weixin.qq.com/s/Zzju5ApPRePEmBBsIkpPHg)
 
 ## 摘要
 
@@ -177,7 +177,7 @@ TUI 显示：
 - [Impeccable Frontend Design Skill Harness Vibecoder](../ch05/001-impeccable.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/prompt-engineering-guide.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/codex-goal-source-code-deep-dive.md)
+→ [原文存档](https://mp.weixin.qq.com/s/Zzju5ApPRePEmBBsIkpPHg)
 
 ---
 

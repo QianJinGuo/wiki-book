@@ -5,7 +5,7 @@
 # 用好 Claude 的 18 个动作：搭一个个人 AI 工作台（Personal Harness）
 
 > 作者：若飞，公众号：架构师（JiaGouX）
-> 原始链接：[原始链接](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ruofei-claude-18-actions-personal-ai-workbench.md)
+> 原始链接：[原始链接](https://mp.weixin.qq.com/s/pAVt6MeapUIDyVu256FI4w)
 > 日期：2026-05-18
 
 ## 摘要
@@ -139,7 +139,7 @@ Custom Instructions 不应该写成"你是一个友善的、专业的助手"这�
 
 ## 相关实体
 
-- [原文链接](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ruofei-claude-18-actions-personal-ai-workbench.md)
+- [原文链接](https://mp.weixin.qq.com/s/pAVt6MeapUIDyVu256FI4w)
 - [Harness Engineering](../ch05/057-harness-engineering.html) — Personal Harness 的工程化版本
 - [Claude Code 源码核心机制](../ch03/057-claude-code.html)
 - [Claude Code 源码中的 Agent Harness 构建](../ch05/035-agent-harness.html)

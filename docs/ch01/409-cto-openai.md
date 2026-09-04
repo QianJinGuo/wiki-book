@@ -20,7 +20,7 @@
 - [Agi Road May Be Wrong From The Start Wang Peng Tencent](167-agi.html)
 - [18岁高中生用Ai挖出150万未知天体首批Chatgpt原住民毕业](712-chatgpt.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/奥特曼最险一战-前女cto当庭翻脸-openai权斗彻底打到台前-6bf26e92e29b.md)
+→ [原文存档](https://mp.weixin.qq.com/s/AQ-7BEvUSLZc2qaGKs1wkQ)
 
 - [Openai官方Cli上线跟复杂的Sdk说拜拜](316-openai.html)
 - [Ciodive Openai Daybreak Cyber Threats](316-openai.html)

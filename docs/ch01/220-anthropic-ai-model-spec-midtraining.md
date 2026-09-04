@@ -139,7 +139,7 @@ MSM 的核心创新在于：**在预训练与对齐微调之间插入一个「�
 - [Anthropic Nla Natural Language Autoencoders Interpretability](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-nla-natural-language-autoencoders-interpretability.md)
 - [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/057-claude-code.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-msm-anti-defection-paper.md)
+→ [原文存档](https://mp.weixin.qq.com/s/ZYZTTcel9_To123vcvoY4w)
 
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — Harness Engineering 六层结构中的「约束校验」层，与 MSM 的宪法设计原则相关
 

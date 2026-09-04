@@ -6,7 +6,7 @@
 
 > LangChain Labs 研究员 Viv 提出：持续学习、Harness 工程、后训练本质上都归结为同一件事——大规模地整理数据，用于运行实验、改进 Agent。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-improvement-data-mining-trace.md)
+→ [原文存档](https://mp.weixin.qq.com/s/ArXh7ppY_RffVqP23y6VvQ)
 
 ## 核心框架
 

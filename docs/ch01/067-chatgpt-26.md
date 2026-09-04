@@ -2,13 +2,13 @@
 
 > 📊 Level ⭐ | 7.4KB | `entities/chatgpt-26-future-stars.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/chatgpt-26-future-stars.md)
+> -> [原文存档](https://mp.weixin.qq.com/s/XaleRcQthIPkiS1rvikwUg)
 
 ## 摘要
 ChatGPT官宣26位未来之星
 
 ## 关键要点
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/chatgpt-26-future-stars.md)
+- [原文存档](https://mp.weixin.qq.com/s/XaleRcQthIPkiS1rvikwUg)
 
 ## 深度分析
 **1. 这不是「AI 原住民」的故事，而是「AI 作为基础设施」的故事**
@@ -36,7 +36,7 @@ Matteo Paz（150 万颗未知天体）、Rishab Jain（236% 蛋白质表达优�
 5. **AI + 领域知识 >> 纯 AI 技术**：最具突破的项目（天文发现、药物优化）都是研究者既有领域知识（天文学、生物学）又熟练使用 AI 工具的人做出的，而非纯 AI 研究者。这提示 AI 产品的开发者：让 AI 工具更容易与领域知识结合，比单纯提升 AI 能力更重要。
 **对于政策制定者：**
 6. **支持 AI 基础设施的同时，支持「AI 应用创新」的多样性**：这些获奖者能够发挥作用，部分原因是 ChatGPT Futures 提供了 1 万美元奖金和 OpenAI 最新技术使用权。类似的支持机制（算力补贴、技术访问、研究合作）可以大幅降低边缘化地区创新者的参与门槛。
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/chatgpt-26-future-stars.md)
+→ [原文存档](https://mp.weixin.qq.com/s/XaleRcQthIPkiS1rvikwUg)
 
 ## 相关实体
 - [ChatGPT 官宣 26 位未来之星，他们是：穿墙少年、街头摊贩、盲童的朋友……](712-chatgpt.html)

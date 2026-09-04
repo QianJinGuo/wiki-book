@@ -4,7 +4,7 @@
 
 # It’s safe to close your laptop now: Hosting coding agents on Amazon Bedrock AgentCore
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/its-safe-to-close-your-laptop-now-hosting-coding-agents-on-a.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/its-safe-to-close-your-laptop-now-hosting-coding-agents-on-amazon-bedrock-agentcore)
 
 ## 深度分析
 

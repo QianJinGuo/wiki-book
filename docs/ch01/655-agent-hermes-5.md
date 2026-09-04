@@ -8,7 +8,7 @@
 
 - [hermes新顶流agent skills闭环系统深度解析](../ch07/016-hermes-skill.html)
 - [淘天营销中后台生码工作流最佳实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/淘天营销中后台生码工作流最佳实践.md)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-long-running-governance-five-cards-ruofei.md)
+→ [原文存档](https://mp.weixin.qq.com/s/DsJvu1qSpS0tQlrrcn-pCg)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/data-infrastructure.md)
 ## 深度分析

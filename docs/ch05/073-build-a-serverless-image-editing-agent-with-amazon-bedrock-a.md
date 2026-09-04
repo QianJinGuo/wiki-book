@@ -4,7 +4,7 @@
 
 # Build a serverless image editing agent with Amazon Bedrock AgentCore harness
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-a-serverless-image-editing-agent-with-amazon-bedrock-a.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/build-a-serverless-image-editing-agent-with-amazon-bedrock-agentcore-harness)
 
 # Build a serverless image editing agent with Amazon Bedrock AgentCore harness
 

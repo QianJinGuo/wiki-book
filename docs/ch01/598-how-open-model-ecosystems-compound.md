@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 4.9KB | `entities/how-open-model-ecosystems-compound.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-open-model-ecosystems-compound.md)
+> -> [原文存档](https://www.interconnects.ai/p/how-open-model-ecosystems-compound)
 
 ## 摘要
 Title: How open model ecosystems compound
@@ -18,7 +18,7 @@ Most of the compute to build a leading frontier model comes from R&D costs, rath
 - 评分：value=7, confidence=7, product=49
 
 ## 链接
-- [原文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-open-model-ecosystems-compound.md)
+- [原文](https://www.interconnects.ai/p/how-open-model-ecosystems-compound)
 
 ## 相关实体
 - [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](../ch03/057-claude-code.html)

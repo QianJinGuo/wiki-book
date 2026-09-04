@@ -4,7 +4,7 @@
 
 # 开放模型生态快报 #22：Zyphra、Cohere、Poolside 扩张开放模型版图
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/latest-open-artifacts-22-zyphra-cohere-and-poolside-are-expa.md)
+> 原文存档：[原文存档](https://www.interconnects.ai/p/artifacts-22-zyphra-cohere-and-poolside)
 
 ## 摘要
 
@@ -83,7 +83,7 @@ Interconnects 强调了一个关键观点：试图减缓或禁止开放模型生
 - **NVIDIA Nemotron-3-Ultra** — NVIDIA 的开放 MoE 模型
 - **开放模型生态多元化** — 开放模型生态系统的结构性转变
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/latest-open-artifacts-22-zyphra-cohere-and-poolside-are-expa.md)
+→ [原文存档](https://www.interconnects.ai/p/artifacts-22-zyphra-cohere-and-poolside)
 
 ---
 ## 关联

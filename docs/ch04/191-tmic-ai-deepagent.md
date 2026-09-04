@@ -145,7 +145,7 @@ Tree Action模式的核心洞察是：**工具调用之间存在依赖关系**�
 - [Agent Evolution Four Stages Six Dimensions Aliyun](../ch03/004-agent.html)
 - [17 Agent Architectures Evolution](441-17-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tmic-ai-xiaoxin-deepagent-architecture-evolution.md)
+→ [原文存档](https://mp.weixin.qq.com/s/XOejVumoe_-0v62i-FWUAg)
 
 ---
 

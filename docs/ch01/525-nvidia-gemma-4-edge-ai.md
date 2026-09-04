@@ -12,7 +12,7 @@ Bringing AI Closer to the Edge and On&#x2d;Device with Gemma 4 | NVIDIA Technica
 - [Nvidia Agentic Ai Subsurface Engineering](../ch04/283-nvidia-agentic-ai-subsurface-engineering.html)
 - [Nvidia Secure Local Agent Nemoclaw Openclaw](../ch04/315-nvidia-secure-local-agent-nemoclaw-openclaw.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-gemma-4-edge-ai.md)
+→ [原文存档](https://developer.nvidia.com/blog/bringing-ai-closer-to-the-edge-and-on-device-with-gemma-4/)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
 ## 深度分析

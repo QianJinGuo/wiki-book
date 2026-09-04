@@ -104,7 +104,7 @@
 
 ---
 ## 关联
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-skills-comprehensive-survey.md)
+→ [原文存档](https://mp.weixin.qq.com/s/uVSHYFtwx27t4lEgl-yp6w)
 - 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 - 相关: Agent 架构
 

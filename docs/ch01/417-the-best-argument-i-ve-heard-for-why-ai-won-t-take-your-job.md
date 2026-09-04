@@ -55,7 +55,7 @@ Levie 给出判断平台存亡的框架：是否承载业务逻辑与工作流�
 - [Token 经济学](002-the-token-economy-pt2-the-intelligence-company-gets-built.html)
 - [校长与 AI 时代](../ch04/257-ai.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/platformer-ai-job-loss-levie.md)
+→ [原文存档](https://www.platformer.news/ai-job-loss-box-ceo-aaron-levie/)
 
 ---
 

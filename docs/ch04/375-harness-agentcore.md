@@ -18,7 +18,7 @@
 - [From Prompt To Harness Claude Official](../ch05/008-harness.html)
 - [Agentcore Harness](../ch05/008-harness.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentcore-managed-harness.md)
+→ [原文存档](https://mp.weixin.qq.com/s/n3j56hLiv1p0ZIRGMFwuLA)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/prompt-engineering-guide.md)
 ## 深度分析

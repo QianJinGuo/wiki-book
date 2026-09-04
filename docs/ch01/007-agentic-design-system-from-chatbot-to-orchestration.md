@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐ | 12.5KB | `entities/agentic-design-system-from-chatbot-to-orchestration.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentic-design-system-from-chatbot-to-orchestration.md)
+> -> [原文存档](https://learn.thedesignsystem.guide/p/agentic-design-system-from-chatbot)
 
 ## 相关实体
 - [Extreme Co-Design for Agentic Systems Complexity (NVIDIA)](../ch04/030-nvidia-extreme-co-design-agentic-systems.html)

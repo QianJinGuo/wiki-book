@@ -43,7 +43,7 @@ The docs present the security story as a benefit, and in one sense it is: Pipes 
 - [OAuth phishing and click-jacking vectors](https://github.com/QianJinGuo/wiki-public/blob/main/entities/thehackernews-com-the-new-phishing-click-how-oauth.md)
 - [Low-code API integration](../ch03/054-how-to-build-low-code-api-integrations-for-enterprise-apps-u.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pipes-workos-docs.md)
+→ [原文存档](https://workos.com/docs/pipes)
 
 ---
 

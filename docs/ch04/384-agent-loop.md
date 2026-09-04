@@ -64,7 +64,7 @@ Prompt → 可复用提示词面板 → Skill（固定输入/上下文/检查框
 - [Harness 工程 10 步路线图](../ch05/057-harness-engineering.html)
 - [企业 AI Loop 落地框架：五类工程对象](257-ai.html)
 - [AI Native 企业转型方法论](../ch05/018-ai-native.html)
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-编程火了但产研团队真正缺的是-agent-loop.md)
+- [原文存档](https://mp.weixin.qq.com/s/58sW6muYEp4iWpDOcvm08Q)
 
 ---
 

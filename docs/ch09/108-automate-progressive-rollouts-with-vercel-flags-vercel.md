@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 4.0KB | `entities/automate-progressive-rollouts-with-vercel-flags-vercel.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/automate-progressive-rollouts-with-vercel-flags-vercel.md)
+> -> [原文存档](https://vercel.com/changelog/progressive-rollouts-in-vercel-flags)
 
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/moc/cloud-infrastructure.md)

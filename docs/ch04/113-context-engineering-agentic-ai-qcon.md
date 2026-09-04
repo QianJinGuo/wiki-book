@@ -158,7 +158,7 @@
 - [Agent Memory Architecture Ruofei](133-agent-memory.html)
 - [Code As Agent Harness Survey](../ch09/044-code-as-agent-harness.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/yidian-tianxia-context-engineering-agentic-ai-qcon.md)
+→ [原文存档](https://mp.weixin.qq.com/s/tK0rmfOYRC7SoWGggAT4lg)
 
 - `Agentic AI`
 

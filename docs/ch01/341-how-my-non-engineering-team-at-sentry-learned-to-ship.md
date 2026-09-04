@@ -4,7 +4,7 @@
 
 # How my non-engineering team at Sentry learned to ship
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-my-non-engineering-team-at-sentry-learned-to-ship-20260606.md)
+→ [原文存档](http://read.technically.dev/p/how-matt-learned-to-ship)
 
 ## 摘要
 
@@ -87,7 +87,7 @@ Sentry 给每种页面类型写了 Skills（AI 指令文件）：landing pages�
 
 - [http://read.technically.dev/p/how-matt-learned-to-ship](http://read.technically.dev/p/how-matt-learned-to-ship)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-my-non-engineering-team-at-sentry-learned-to-ship-20260606.md)
+→ [原文存档](http://read.technically.dev/p/how-matt-learned-to-ship)
 
 ## 相关实体
 

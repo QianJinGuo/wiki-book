@@ -4,7 +4,7 @@
 
 # Amazon VPC Regional NAT Gateway 与 AZ NAT Gateway 全面对比
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-vpc-regional-nat-gateway-与-az-nat-gateway-全面对比.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/amazon-vpc-regional-nat-gateway-az-nat-gateway-comparison)
 
 # Amazon VPC Regional NAT Gateway 与 AZ NAT Gateway 全面对比
 

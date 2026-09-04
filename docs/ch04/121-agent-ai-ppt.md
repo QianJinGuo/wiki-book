@@ -10,7 +10,7 @@ tags: [multi-agent, enterprise, agentic-ai, hiclaw, qwenpaw]
 
 # 企业级多 Agent 规模化落地怎么做？群虾智能 AI 沙龙 PPT 限时领取
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/企业级多-agent-规模化落地怎么做群虾智能-ai-沙龙-ppt-限时领取.md)
+> 来源：[原文存档](https://mp.weixin.qq.com/s/_EtvzL6BaM5Qfr4UOthZiQ)
 
 ## 沙龙概述
 
@@ -204,7 +204,7 @@ Nacos Skill/Worker Registry 将互联网公司久经考验的微服务治理体�
 - [Ai Enhanced Data Solutions With Database 26Ai](257-ai.html)
 - [Rag技术框架的演进方向](../ch01/168-rag.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/企业级多-agent-规模化落地怎么做群虾智能-ai-沙龙-ppt-限时领取.md)
+→ [原文存档](https://mp.weixin.qq.com/s/_EtvzL6BaM5Qfr4UOthZiQ)
 
 ---
 

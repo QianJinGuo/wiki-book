@@ -115,7 +115,7 @@ Amazon Bedrock 的 prompt caching 通过复用跨轮次的公共 prompt 前缀�
 
 ## 数据来源
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/production-grade-ai-agents-for-financial-compliance-lessons-.md) (AWS China ML Blog, 2026-06-26)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/production-grade-ai-agents-for-financial-compliance-lessons-from-stripe/) (AWS China ML Blog, 2026-06-26)
 
 ---
 

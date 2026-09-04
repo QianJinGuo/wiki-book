@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 10.6KB | `entities/amazon-bedrock-api-security-guide.md`
 
-> → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-bedrock-api-security-guide.md)
+> → [原文存档](https://aws.amazon.com/cn/blogs/china/amazon-bedrock-model-api-invocation-security-guide/)
 
 ## 摘要
 Amazon Bedrock 模型调用安全防护指南，涵盖凭证管理、访问控制、持续监控三个层面。
@@ -73,7 +73,7 @@ CloudWatch 指标和 CloudTrail 日志构成了监控的两条腿。CloudWatch �
 - **误区 3**：使用 `bedrock:*` 的过度授权。这使得攻击者即使只获取部分权限也能调用所有模型。
 
 ## 相关
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-bedrock-api-security-guide.md)
+- [原文存档](https://aws.amazon.com/cn/blogs/china/amazon-bedrock-model-api-invocation-security-guide/)
 
 ## 相关实体
 - [企业级OpenClaw安全部署架构指南 | 亚马逊AWS官方博客](../ch04/176-openclaw.html)

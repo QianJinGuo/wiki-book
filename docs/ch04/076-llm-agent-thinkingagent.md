@@ -4,7 +4,7 @@
 
 # 从零设计准生产级 LLM Agent：ThinkingAgent 完整架构与可靠性体系
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/thinkingagent-from-scratch-reliability-context-recovery-2026-06-02.md)
+> 原文存档：[原文存档](https://mp.weixin.qq.com/s/UTEdhrkV3G3Ycfrg0Jng_A)
 
 ## 概述
 

@@ -4,7 +4,7 @@
 
 # AWS Glue 3.0 到 5.0 版本升级实践：中国区大规模 ETL 平台的迁移方法论
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-glue-30-到-50-版本升级实践中国区大规模-etl-平台的迁移方法论.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/aws-glue-3-0-version-practice-etl-platform-migration)
 
 # AWS Glue 3.0 到 5.0 版本升级实践：中国区大规模 ETL 平台的迁移方法论
 

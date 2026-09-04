@@ -71,7 +71,7 @@ MDASH 的设计哲学是**管道是产品，模型是输入之一**。整个系�
 - [Microsoft Zero Days Researcher Disgruntled](https://github.com/QianJinGuo/wiki-public/blob/main/entities/microsoft-zero-days-researcher-disgruntled.md)
 - [Sysdig Headless Cloud Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sysdig-headless-cloud-security.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/defense_at_ai_speed_microsofts_new_multi.md)
+→ [原文存档](https://www.microsoft.com/en-us/security/blog/2026/05/12/defense-at-ai-speed-microsofts-new-multi-model-agentic-security-system-tops-leading-industry-benchmark/)
 
 - [The Agency Model Dangers](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/the-agency-model-dangers.md)
 - [企业级多-agent-规模化落地怎么做群虾智能-ai-沙龙-ppt-限时领取](../ch03/004-agent.html)

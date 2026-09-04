@@ -102,7 +102,7 @@ Nova Act 采用浏览器优先的自动化架构，这与传统的 API 驱动 RP
 - [Evaluate Amazon Nova Sonic Voice Agent Scale No Mic](../ch11/217-amazon-nova.html)
 - [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](../ch11/217-amazon-nova.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-nova-act-is-now-hipaa-eligible.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/amazon-nova-act-is-now-hipaa-eligible/)
 
 ---
 

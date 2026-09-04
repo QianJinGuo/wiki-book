@@ -167,7 +167,7 @@ Karpathy 做的事情是用准确的语言把这些挫败感说了出来，并�
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](229-anthropic-claude-code.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/openai-developer-ecosystem.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/andrej-karpathy-claude-md-134k-stars-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/q7nuyMeB7AzECSQ11FfaTA)
 
 ---
 

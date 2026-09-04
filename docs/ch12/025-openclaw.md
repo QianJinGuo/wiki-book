@@ -9,7 +9,7 @@
 ## 相关实体
 
 - [discord 全平台端到端加密](086-discord.html)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-security-and-feature-enhancement-practices.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/openclaw-security-and-feature-enhancement-practices/)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/openclaw-architecture.md)
 ## 摘要

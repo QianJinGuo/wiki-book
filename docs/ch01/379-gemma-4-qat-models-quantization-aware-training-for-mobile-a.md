@@ -4,7 +4,7 @@
 
 # Gemma 4 QAT Models: Quantization-Aware Training for Mobile and Edge
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gemma-4-qat-models-optimizing-compression.md)
+> 原文存档：[原文存档](https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/)
 
 ## 概述
 
@@ -122,7 +122,7 @@ QAT 模型消除了用户自行量化的技术门槛——直接下载即部署�
 
 ## 原文链接
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gemma-4-qat-models-optimizing-compression.md)
+→ [原文存档](https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/)
 
 ---
 

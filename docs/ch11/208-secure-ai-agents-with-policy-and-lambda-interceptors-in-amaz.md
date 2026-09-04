@@ -7,7 +7,7 @@
 ## 相关实体
 
 - [direct connect (dx) 迁移最佳实践](024-direct-connect-dx.html)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/secure-ai-agents-with-policy-and-lambda-interceptors-in-amazon-bedrock-agentcore-gateway/)
 
 ## 深度分析
 

@@ -50,7 +50,7 @@ Lighthouse 选择了**对称池化**：Q、K、V 在金字塔每一层按相同�
 - [Anthropic Puts Claude Agents On A Meter Across Its](523-anthropic-puts-claude-agents-on-a-meter-across-its-subscript.html)
 - [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](040-akamai-acquires-israeli-ai-browser-security-startup-layerx-f.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lighthouse_attention.md)
+→ [原文存档](https://nousresearch.com/lighthouse-attention)
 
 ---
 

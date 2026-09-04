@@ -4,7 +4,7 @@
 
 # Amazon Cognito 多区域复制：跨区域用户认证韧性方案
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/使用-amazon-cognito-多区域复制提高应用程序韧性.md)
+> 原文存档：[原文存档](https://aws.amazon.com/cn/blogs/china/improve-your-application-resilience-with-amazon-cognito-multi-region-replication)
 
 > **Core insight**: Cognito 多区域复制通过单向主→辅助复制，使用户池配置和用户数据在辅助区域保持只读同步副本。现有用户无需重新登录即可失效转移到辅助区域，但失效转移期间新用户注册和用户信息更新不可用。
 
@@ -85,7 +85,7 @@ Bedrock 跨区域推理和 Cognito 多区域复制是同一架构模式的不同
 - [Aws Software Supply Chain Security Well Architected](../ch04/257-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-privacy-landscape.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/使用-amazon-cognito-多区域复制提高应用程序韧性.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/improve-your-application-resilience-with-amazon-cognito-multi-region-replication)
 
 ---
 

@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 16.5KB | `entities/karpathy-vibe-coding-agentic-engineering-v3.md`
 
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/karpathy-vibe-coding-agentic-engineering-v3.md)
+- [原文存档](https://mp.weixin.qq.com/s/HTFcXBzYUVHvwShu3Zp-EA)
 
 ## 核心观点
 ### Vibe Coding vs Agentic Engineering 的分工

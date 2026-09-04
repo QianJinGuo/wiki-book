@@ -4,7 +4,7 @@
 
 # Kimi 决定，要用 300 个 Agent 解救非程序员们
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kimi-work-300-agent-cluster-yin-john-agi-hunt.md)
+→ [原文存档](https://mp.weixin.qq.com/s/SISf_IS0-BOg1VwjUy9Ycg)
 
 ## 深度分析
 

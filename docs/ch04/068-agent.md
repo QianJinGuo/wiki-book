@@ -193,7 +193,7 @@ Type 3（无意义调用）的根因不在推理阶段，而在训练阶段—�
 - 工具调用（Tool Calling） — 工具调用幻觉的发生场景
 - Re-Planning — 上下文漂移的主要解法之一
 - 上下文压缩（Context Compression） — 长程上下文的处理策略
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kamacoder-agent-context-drift-tool-hallucination.md)
+- [原文存档](https://mp.weixin.qq.com/s/4SebcRmlVlJ_MECOv7_3PQ)
 
 ---
 

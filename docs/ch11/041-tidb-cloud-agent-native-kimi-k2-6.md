@@ -96,8 +96,8 @@ AI Agent 竞争已从「模型更聪明、Agent 推理更长」的上半场，�
 1. **"one agent, one sandbox, one storage, one database" 将成为标配**：随着单个用户身边的 Agent 数量从 1-2 个增长到 10 个甚至 100 个，每 Agent 独立数据库的范式将覆盖从建站到通用 Agent 的所有场景。
 2. **基础设施层创新将成为 Agent 商业化竞争的关键变量**：模型能力趋同的情况下，Agent 交付稳定性和成本效率将成为下半场竞争的核心战场。
 ---
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kimi-k2-tidb-agent-database-huangdongxu-20260513.md)
-→ [Agent Stack 实践 2026-08](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tidb-agent-stack-infra-kimi-k3-founder-park-2026-08-18.md)
+→ [原文存档](https://mp.weixin.qq.com/s/XLYWhkjFHxrH2-jb5O1qCQ)
+→ [Agent Stack 实践 2026-08](https://mp.weixin.qq.com/s/H0UwPJ_eSiR7zO0mX_QG0w)
 
 ## Agent Stack：从 Agent-native 数据库到统一状态底座（TiDB 团队实践，2026-08）
 

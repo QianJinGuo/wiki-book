@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 10.2KB | `entities/anthropic-ai-native-startup-handbook.md`
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-ai-native-startup-handbook.md)
+→ [原文存档](https://mp.weixin.qq.com/s/PSnGB3ryAg_VlBkOtnhofw)
 
 # Anthropic 官方 AI 原生创业公司手册
 Anthropic 整理的打造 **AI 原生创业公司**实用手册，针对 2026 年可能性重新梳理创业生命周期四个核心阶段。
@@ -55,7 +55,7 @@ Anthropic 整理的打造 **AI 原生创业公司**实用手册，针对 2026 �
 3. **工作流锁定**：客户在产品上构建自动化，越深越难离开
 
 ## 相关页面
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-ai-native-startup-handbook.md)
+→ [原文存档](https://mp.weixin.qq.com/s/PSnGB3ryAg_VlBkOtnhofw)
 → [Skill 写作基础指南](284-agent-skill.html) — 与 Agent/Harness 工作流构建相关
 → [Skill 写作进阶指南](284-agent-skill.html) — 更深入的实践方法
 

@@ -43,7 +43,7 @@ Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反�
 ## 相关实体
 - [Elena Progressive Web Components](https://github.com/QianJinGuo/wiki-public/blob/main/entities/elena-progressive-web-components.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/impeccable-anomaly-vibe-design-vs-vibe-coding.md)
+→ [原文存档](https://mp.weixin.qq.com/s/4_9q9TrkVyE5a4jCfTrNgg)
 
 ## 核心论点
 
@@ -98,7 +98,7 @@ Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反�
 - [Willison Vibe Coding Convergence](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vibe-coding-agentic-engineering-convergence-simon-willison.md) —— Willison 的同主题回应
 - [Agent Skill 编写指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing-guide.md) —— 通用 skill 格式
 - [Agentic Design System 演化](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentic-design-system-from-chatbot-to-orchestration.md)
-- → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/impeccable-anomaly-vibe-design-vs-vibe-coding.md)
+- → [原文存档](https://mp.weixin.qq.com/s/4_9q9TrkVyE5a4jCfTrNgg)
 
 ## 深度分析
 
@@ -141,9 +141,9 @@ Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反�
 - [Enterprise Ai Memory Substrate Three Layer Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/enterprise-ai-memory-substrate-three-layer-architecture.md)
 - [Skill Version Management Semantic Versioning Practices Winty](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-version-management-semantic-versioning-practices-winty.md)
 
-→ [产品总览 原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/volcengine-data-agent-product-overview.md)
-→ [智能问数Agent 原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/volcengine-data-agent-intelligent-query-agent.md)
-→ [营销策略Agent 原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/volcengine-data-agent-marketing-strategy-agent.md)
+→ [产品总览 原文存档](https://www.volcengine.com/docs/85637/1563626?lang=zh)
+→ [智能问数Agent 原文存档](https://www.volcengine.com/docs/85637/1544066?lang=zh)
+→ [营销策略Agent 原文存档](https://www.volcengine.com/docs/85637/1587862?lang=zh)
 
 ---
 
@@ -891,7 +891,7 @@ Skill = 触发源 + 系统动作 + 规则边界 + 执行者(员工Agent)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-long-term-agent-tasks.md) — 约束驱动的自动化执行
 - [Enterprise Software Moats in Agent Era](https://github.com/QianJinGuo/wiki-public/blob/main/entities/enterprise-software-moats-agent-era.md) — 企业级 Agent 护城河分析
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — 宪法级约束 + 量化验收标准
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/enterprise-next-gen-architecture-system-cli-process-skill-employee-agent-zhan.md)
+→ [原文存档](https://mp.weixin.qq.com/s/759TfOdXch5zWrT4Yo42xA)
 
 ---
 
@@ -915,7 +915,7 @@ Skill = 触发源 + 系统动作 + 规则边界 + 执行者(员工Agent)
 - [Fanling Company As Agent Ai Org Reflection](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fanling-company-as-agent-ai-org-reflection.md)
 - [Ai Era What To Read World Book Day](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-era-what-to-read-world-book-day.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/james-cowling-engineering-philosophy-ai-era.md)
+→ [原文存档](https://mp.weixin.qq.com/s/ZKfpdzXxN2fqANN-Nzkcjw)
 
 ## 一句话反驳"知识少是优势"
 
@@ -1080,7 +1080,7 @@ Skill = 触发源 + 系统动作 + 规则边界 + 执行者(员工Agent)
 
 > 📊 Level ⭐⭐ | 13.1KB | `entities/gitlab-layoffs-memo-2026-5.md`
 
-> -> [GitLab employees are the latest to face layoffs limbo. Read the CEO's memo about restructuring 'openly.'](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gitlab-layoffs-memo-2026-5.md)
+> -> [GitLab employees are the latest to face layoffs limbo. Read the CEO's memo about restructuring 'openly.'](https://www.businessinsider.com/gitlab-layoffs-memo-2026-5)
 ## 相关实体
 
 - [iii.dev](https://github.com/QianJinGuo/wiki-public/blob/main/entities/iii-dev.md)
@@ -1133,7 +1133,7 @@ GitLab 宣布移除最多三层管理层，同时 R&D 团队从约 30 个重组�
 **传统逻辑**：减少管理层级通常是为了削减成本、提高决策效率。
 
 **AI 逻辑**：当 AI Agent 可以处理大量协调、审批、review 工作后，中间管理层的存在理由减少。GitLab 实际上在说：Agent 将承担很多管理工作（reviews、approvals、handoffs），因此需要更少人类管理者。
-这与 [Boris Cherny 在访谈中提到的 Anthropic 内部已没有手写代码、所有 SQL 都是模型写的](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-之父最新访谈编程已经结束harness-将消失claude-code-将只有-100-行代码loop-才是未来.md) 趋势一致——AI 正在替代传统的协调和管理角色。
+这与 [Boris Cherny 在访谈中提到的 Anthropic 内部已没有手写代码、所有 SQL 都是模型写的](https://mp.weixin.qq.com/s/OUc02wmVtH9RQMhYhZGIdg) 趋势一致——AI 正在替代传统的协调和管理角色。
 
 ### 3. 「机器规模基础设施」——Git 的根本挑战
 备忘录中关于 Git 基础设施重建的描述值得深思：「Git 本身不是为这种负载设计的，在非为 Agent 构建的平台上堆叠 AI 是这个时代最大的错误」。
@@ -1156,7 +1156,7 @@ Bill Staples 提供了一个独特的市场视角：去年开发者平台市场�
 
 - 软件总量增加，系统复杂度增加（分布式、AI 集成、跨平台）→ 更多深度问题
 - AI 擅长解决「标准问题」，但复杂系统故障、架构决策、安全漏洞等仍需要人类判断 → 能解决这些问题的人更稀缺
-这与 [Boris Cherny 的观点一致](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-之父最新访谈编程已经结束harness-将消失claude-code-将只有-100-行代码loop-才是未来.md)：「架构、深度客户问题理解、权衡需要品味的决定」这些是人类仍需掌握的领域。
+这与 [Boris Cherny 的观点一致](https://mp.weixin.qq.com/s/OUc02wmVtH9RQMhYhZGIdg)：「架构、深度客户问题理解、权衡需要品味的决定」这些是人类仍需掌握的领域。
 
 ## 实践启示
 ### 给软件工程师的建议
@@ -1267,7 +1267,7 @@ Multilingual AI 与以下领域存在深刻关联： 提供了偏好学习的方
 ## 相关实体
 
 - [滴滴 ibg 智能客服质检系统：3 管线（意图 86% / 合规 90%+ / voc）+ 企业 llm 落地方法论](https://github.com/QianJinGuo/wiki-public/blob/main/entities/didi-ibg-customer-experience-llm-quality-inspection-3-pipelines.md)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/multilingual-ai.md)
+→ [原文存档](https://welodata.ai/multilingual-ai/)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/reinforcement-learning-rlhf.md)
 ## 深度分析
@@ -1431,7 +1431,7 @@ Steve Yegge 为游戏项目开 12 个订阅，按真实 token 价格折算每月
 - [Inference Optimization](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/inference-optimization.md) — 推理优化是 Token 效率的工程基础
 - [Harness Engineering Long Term Agent Tasks](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-long-term-agent-tasks.md) — Harness Engineering 让 AI 产出可预期、可衡量、可持续
 - [Context Window Management](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-window-management.md) — 上下文管理影响 Token 消耗质量
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-token-economics-ai-productivity.md)
+- [原文存档](https://mp.weixin.qq.com/s/Cmioejp77LENAnAMo2r3Aw)
 
 ## 相关实体
 - [Improving token efficiency in GitHub Agentic Workflows](https://github.com/QianJinGuo/wiki-public/blob/main/entities/github-token-efficiency-agentic-workflows.md)
@@ -1481,7 +1481,7 @@ Steve Yegge 为游戏项目开 12 个订阅，按真实 token 价格折算每月
 
 ### 5% 数据就绪企业的共同特征
 从行业案例来看，5% 中头的企业通常具备三个特征：①有一个明确的数据 Owner（不只是技术Owner，是业务Owner）；②数据质量被纳入 KPI 而不只是技术指标；③数据基础设施在 AI 项目启动前就已经开始现代化。这三者缺一不可——没有业务Owner，数据质量改造成本无法在组织内推进；没有 KPI，数据治理会变成一次性的咨询项目；没有提前投资基础设施，AI 项目永远在等数据。
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/enterprise-ai-investment-data-readiness-cio.md)
+→ [原文存档](https://www.cio.com/article/4170978/nearly-every-enterprise-is-investing-in-ai-but-only-5-say-their-data-is-ready.html)
 
 ## 实践启示
 ### 给 CIO 的三步行动框架
@@ -1497,7 +1497,7 @@ Steve Yegge 为游戏项目开 12 个订阅，按真实 token 价格折算每月
 
 ### 警惕"POC 数据准备"陷阱
 很多企业做 AI POC 时会专门准备一份"干净数据"，POC 效果很好，但生产部署时发现真实数据质量完全不行。这是 COE（Center of Excellence）模式的一个固有缺陷——POC 在隔离环境里测试，生产环境是另一套数据现实。建议任何 POC 都必须包含一个**数据压力测试**环节：用真实数据质量（脏的、不完整的、过时的）运行 POC，看输出质量是否能接受。如果不能接受，POC 的成功就是幻觉。
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/enterprise-ai-investment-data-readiness-cio.md)
+→ [原文存档](https://www.cio.com/article/4170978/nearly-every-enterprise-is-investing-in-ai-but-only-5-say-their-data-is-ready.html)
 
 ## 相关实体
 
@@ -1543,7 +1543,7 @@ Steve Yegge 为游戏项目开 12 个订阅，按真实 token 价格折算每月
 - [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](https://github.com/QianJinGuo/wiki-public/blob/main/entities/快手首个打工人agent来了工作秒变桌面软件零代码不烧token.md)
 - [Chatgpt 官宣 26 位未来之星他们是穿墙少年街头摊贩盲童的朋友](https://github.com/QianJinGuo/wiki-public/blob/main/entities/chatgpt-官宣-26-位未来之星他们是穿墙少年街头摊贩盲童的朋友.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/让ai成为真正的社会生产力跨越token效率门槛走向ai普惠.md)
+→ [原文存档](https://mp.weixin.qq.com/s/Cmioejp77LENAnAMo2r3Aw)
 
 ---
 
@@ -1630,7 +1630,7 @@ AI 工具打破了这一契约：
 - [Greptile TREX](https://github.com/QianJinGuo/wiki-public/blob/main/entities/greptile-trex-code-execution-artifact-generation.md) — 代码审查中"可验证证据"的工程实践
 - [Claude Code 大型代码库 Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-large-codebase-harness-configuration.md) — AI 辅助开发的工具配置实践
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-productivity-paradox-cost-shifting-poischeme.md)
+→ [原文存档](https://terriblesoftware.org/2026/06/17/you-got-faster-your-company-didnt/)
 
 ---
 
@@ -1640,7 +1640,7 @@ AI 工具打破了这一契约：
 
 # 让AI成为真正的社会生产力——跨越Token效率门槛走向AI普惠
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-token-economics-ai-productivity.md)
+→ [原文存档](https://mp.weixin.qq.com/s/Cmioejp77LENAnAMo2r3Aw)
 
 ## 摘要
 
@@ -1779,7 +1779,7 @@ This is fundamentally different from general AI applications (chatbots, content 
 2. **MCP as Agent interface standard**: Workday chose MCP over custom APIs, indicating accelerating MCP adoption in enterprise agent ecosystems
 3. **Agent Passport pattern**: Pre-production verification + continuous monitoring dual-phase governance may become standard for enterprise agent deployment
 
--> [original archive](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/workday-ai-inference-guardrails.md)
+-> [original archive](https://thenewstack.io/workday-ai-inference-guardrails/)
 
 ---
 ## 关联
@@ -1794,7 +1794,7 @@ This is fundamentally different from general AI applications (chatbots, content 
 
 # Nemotron 3.5 Content Safety
 
-> NVIDIA 2026-06-04 在 Hugging Face 发布的企业级多模态内容安全模型（Nemotron 3.5 系列）。本实体整合自 [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nemotron-3-5-content-safety-multimodal.md)。
+> NVIDIA 2026-06-04 在 Hugging Face 发布的企业级多模态内容安全模型（Nemotron 3.5 系列）。本实体整合自 [原文存档](https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety)。
 
 ## 概述
 
@@ -1897,7 +1897,7 @@ Hugging Face + NVIDIA NIM 双渠道部署反映了当前企业 AI 落地的两�
 
 OpenAI 提出 Beneficial RL 框架：通过在少量「有益特质」数据上进行强化学习训练，模型不仅在训练领域表现提升，还在数十个未参与训练的评测基准上展现出广泛的对齐行为改善，且这些改善在对抗性压力下依然持久。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-beneficial-rl-broadly-persistently.md)
+→ [原文存档](https://alignment.openai.com/beneficial-rl/)
 
 ## 核心要点
 
@@ -2090,7 +2090,7 @@ FDA/EMA 当前药物管线 7-8 年,假设"药物可能无效或有严重安全�
   - [Anthropic Economic Index](https://www.anthropic.com/economic-index)
   - [Glasswing Mythos](https://www.anthropic.com/glasswing) — 引用的标志性 AI 系统
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/dario-amodei-policy-on-the-ai-exponential.md)
+→ [原文存档](https://darioamodei.com/post/policy-on-the-ai-exponential)
 
 ## 深度分析
 

@@ -2,12 +2,12 @@
 
 > 📊 Level ⭐ | 3.2KB | `entities/exaforce-agentic-soc-platform-and-mdr.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/exaforce-agentic-soc-platform-and-mdr.md)
+> -> [原文存档](https://www.exaforce.ai)
 
 ## 核心要点
 - 来源：www.exaforce.ai
 - 评分：v=7, c=9, product=63
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/exaforce-agentic-soc-platform-and-mdr.md)
+→ [原文存档](https://www.exaforce.ai)
 
 ## 相关实体
 - [The Agentic Trust Management Platform | Drata](006-the-agentic-trust-management-platform-drata.html)

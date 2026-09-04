@@ -273,7 +273,7 @@ v×c=56, stars=4. 火山方舟（字节跳动技术团队）发布 Agent Plan �
 4. **AI Native 开发底座** — 基于火山引擎 Supabase 的 Serverless PostgreSQL + 认证 + 对象存储 + 边缘函数 + 实时同步 + 推送即发布前端部署，agent 可用自然语言建表、写策略、部署。
 5. **投资研究助手实战案例** — 完整演示 DSH + Agent Plan 五组件协作：专业数据集查财务指标 → 豆包搜索获取实时新闻 → AI Native 底座建页面 → Agent 记忆跨会话保持偏好 → Agent 进化学习分析方法。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-plan-x-deepseek-harness-dsh-practice-guide.md)
+→ [原文存档](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247521375&idx=1&sn=e11bc1ebfc05563e0d0ab2d5d47835b5)
 
 ## 相关实体
 

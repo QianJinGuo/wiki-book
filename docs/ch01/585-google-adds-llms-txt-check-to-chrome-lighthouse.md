@@ -14,7 +14,7 @@
 - [Npm Supply Chain Compromise Postmortem](../ch04/257-ai.html)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/searchengineland-com-google-adds-llms-txt-check-to-chrome-lighthouse.md)
+→ [原文存档](https://searchengineland.com/google-llms-txt-chrome-lighthouse-478246)
 
 - [从 pi-main 源码拆解：顶尖 ai agent 的工程设计（17 维度全解）](../ch03/004-agent.html)
 

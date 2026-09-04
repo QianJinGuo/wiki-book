@@ -433,7 +433,7 @@ Audit-context-building 模式最独特的地方在于它不是告诉 LLM"做什�
 - [Ai Skill Evolution底层逻辑](010-ai-skill-evolution.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/ai-skill-design.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-writing-patterns-best-practices.md)
+→ [原文存档](https://mp.weixin.qq.com/s/aoNwyY5ZkCRMkZirn1rElQ)
 
 ---
 

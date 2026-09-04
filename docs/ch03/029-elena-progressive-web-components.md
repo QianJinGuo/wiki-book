@@ -12,7 +12,7 @@
 - [Impeccable](../ch05/001-impeccable.html)
 - [Impeccable Vibe Design Philosophy Anomaly](../ch05/001-impeccable.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/Elena-Progressive-Web-Components.md)
+→ [原文存档](https://elenajs.com/)
 
 ## 深度分析
 ### "渐进增强"理念的回归

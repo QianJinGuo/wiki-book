@@ -85,7 +85,7 @@ Aris Tsakpinis is a Senior Specialist Solutions Architect for Generative AI focu
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](383-amazon-bedrock-agentcore.html)
 - [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](310-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/)
 
 ---
 

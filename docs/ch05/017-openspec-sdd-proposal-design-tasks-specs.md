@@ -28,7 +28,7 @@
 - [24H Worker Agent](../ch03/004-agent.html)
 - [十年老技术开发的 Ai Agent 探索之路 V2](../ch04/312-ai-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openspec-spec-driven-development-trae-solo.md)
+→ [原文存档](https://mp.weixin.qq.com/s/YwzvXhYQlFOdHs4uBcc-2Q)
 
 ## 目录结构 — 两大核心模块
 
@@ -290,7 +290,7 @@ RAG 被动检索（"这个知识在哪"），AI Workflows 主动编排（"现在
 
 Hooks 的"被动触发的质量守卫"与 Graph Engineering 的"Loops watching loops"理念同构——都是外部监督机制防 AI 跑偏（ensure-user-review ≈ Frozen Node 的审批节点，auto-format-code ≈ 监督循环）。
 
-→ [原文存档（vivo IT 团队，Supplementary）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openspec-ai-workflows-spec-driven-vivo-fanjiaojiao-2026-08-05.md)
+→ [原文存档（vivo IT 团队，Supplementary）](https://mp.weixin.qq.com/s/k_7Z-pr2-XTS22dt0rsIDg)
 
 ---
 

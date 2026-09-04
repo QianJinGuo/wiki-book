@@ -301,7 +301,7 @@
 - "Agent 部署策略" — Agent 部署策略
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/memory-context-systems.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aliyun-end-to-end-business-requirements-agent-multica-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/9o_z-POj9r4dbwe3NlC1pw)
 
 ---
 

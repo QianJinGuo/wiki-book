@@ -2,8 +2,8 @@
 
 > 📊 Level ⭐⭐ | 14.3KB | `entities/pilotdeck-agent-os-openbmb-tsinghua.md`
 
-> -> [第 1 原文存档 (新智元 ASI启示录)](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pilotdeck-agent-os-openbmb-tsinghua.md)
-> -> [第 2 原文存档 (数据派THU 转发新智元)](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pilotdeck-data派thu-2026.md)
+> -> [第 1 原文存档 (新智元 ASI启示录)](https://mp.weixin.qq.com/s/TdfsW6iCBmy3esAQ78LkyQ)
+> -> [第 2 原文存档 (数据派THU 转发新智元)](https://mp.weixin.qq.com/s/MWj2lKQi8JdPu4qJDEFOYg)
 
 # PilotDeck：清华系 Agent 操作系统
 
@@ -123,8 +123,8 @@ PilotDeck 的路由数据揭示了一个重要趋势：复杂任务中使用混�
 
 ### 原文链接
 
-- → [第 1 原文存档（新智元 ASI启示录 2026-05-28）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pilotdeck-agent-os-openbmb-tsinghua.md)
-- → [第 2 原文存档（数据派THU 2026-06-09）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pilotdeck-data派thu-2026.md)
+- → [第 1 原文存档（新智元 ASI启示录 2026-05-28）](https://mp.weixin.qq.com/s/TdfsW6iCBmy3esAQ78LkyQ)
+- → [第 2 原文存档（数据派THU 2026-06-09）](https://mp.weixin.qq.com/s/MWj2lKQi8JdPu4qJDEFOYg)
 ## 相关实体
 - [Minicpm5 1B Forgetrain Machine Heart](257-ai.html)
 

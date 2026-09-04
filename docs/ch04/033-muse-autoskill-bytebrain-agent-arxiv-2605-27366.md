@@ -251,7 +251,7 @@
 - [Ara Agent Native Research Artifact 37Authors](../ch03/004-agent.html)
 - [Memento Skills Let Agents Design Agents](../ch03/050-skills.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/muse-autoskill-bytebrain-self-evolving-agent-arxiv-2605-27366.md)
+→ [原文存档](https://mp.weixin.qq.com/s/3eDUjMNeM5AK4jUsgiFYng)
 
 - [language models need sleep: arxiv 2606.03979 持续学习 2 阶段范式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/arxiv-2606-03979-language-models-need-sleep.md)
 - [skill 产品哲学：歸藏做了爆款 skill 后的产品反思](../ch07/054-skill.html)
@@ -302,14 +302,14 @@ MUSE-Autoskill 擅长单个技能，但组合多个技能的能力仍有待提�
 
 ## 第 2 来源 — heyheyHazel 小红书解读
 
-[🧠 字节新作：Agent Skill也能自进化了？](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/muse-autoskill-bytebrain-xiaohongshu-heyheyhazel.md)
+[🧠 字节新作：Agent Skill也能自进化了？](https://www.xiaohongshu.com/explore/6a1712dc0000000006030cbe)
 
 与 arXiv 论文原文的互补角度：
 1. **产品化转述** — 将论文的五阶段框架用"痛点→方案→结果"的产品叙事结构重新组织，降低阅读门槛
 2. **竞品对比表格化** — 用 MUSE vs Codex vs Hermes 三栏对比，突出 MUSE 的 +15.2pp 提升和 35/51 任务超人类手写 Skill 的结论
 3. **强调 Skill 记忆的工程细节** — 明确指出 `.memory.md` 是 skill-level 记忆的关键载体
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/muse-autoskill-bytebrain-xiaohongshu-heyheyhazel.md)
+→ [原文存档](https://www.xiaohongshu.com/explore/6a1712dc0000000006030cbe)
 
 ---
 

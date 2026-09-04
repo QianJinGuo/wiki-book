@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐ | 7.1KB | `entities/top-10-design-gadgets-creative-professionals-2026.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/top-10-design-gadgets-creative-professionals-2026.md)
+> -> [原文存档](https://weandthecolor.com/top-10-design-gadgets-for-creative-professionals-that-will-change-how-you-work-in-2026/209574)
 
 ## 摘要
 2026 年创意专业工具市场迎来硬件生态的系统性成熟。本文评选的 10 款设计装备以"**摩擦削减指数**"（Friction Reduction Index）为核心评估标准——工具缩短创意意图与最终产出之间的距离，且随使用者技艺提升而增值。覆盖从 iPad Pro M5、MacBook Pro M5 到 reMarkable Paper Pro、Elgato Stream Deck + 等面向图形、UX、动态和品牌设计者的完整工具链。

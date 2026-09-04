@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐ | 3.9KB | `entities/square-adds-drive-thru-to-the-menu.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/square-adds-drive-thru-to-the-menu.md)
+> -> [原文存档](https://squareup.com/us/en/press/square-for-drive-thru)
 
 ## 核心要点
 Square 于 2026 年 5 月 11 日发布 Square for Drive-Thru，定位为面向快餐（QSR）的端到端drive-thru 解决方案。该产品与 The Howard Company（drive-thru 基础设施）和 Nanonation（数字标牌）合作开发，将订单捕获、厨房操作和客户交接整合到一个统一工作流中。
@@ -18,7 +18,7 @@ Square 进入 drive-thru 赛道本质上是一次"场景补全"。Square 的核�
 - **选型评估**：如果你是 QSR 运营商，评估 Square for Drive-Thru 时应重点关注：与现有 POS 系统的集成程度（是否是同一家厂商）、KDS 路由的灵活性（是否能适配复杂的厨房动线）、以及多门店管理能力
 - **扩展性**：Square 开放 API 允许运营商继续使用喜欢的第三方工具（不强制替换 backend），这对已有成熟第三方工具的连锁品牌是重要考量
 - **行业趋势**：drive-thru 的竞争焦点正在从"快"（速度）转向"准"（准确性）和"通"（全渠道数据打通），技术供应商的核心壁垒正在从硬件向软件和数据转移
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/square-adds-drive-thru-to-the-menu.md)
+→ [原文存档](https://squareup.com/us/en/press/square-for-drive-thru)
 
 ## 相关实体
 

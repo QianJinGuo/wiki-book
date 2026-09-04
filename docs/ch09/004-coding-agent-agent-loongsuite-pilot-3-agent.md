@@ -330,14 +330,14 @@ Pilot 平台的 OTel 标准化输出意味着企业可以将 Coding Agent 的执
 - [Harness Engineering Reliable Long Term Agent](../ch05/057-harness-engineering.html)
 - [Anthropic Coding Agents Social Science Survey 2026](033-anthropic-coding-agent.html)
 
-→ [第 1 来源原文归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/alibaba-agent-observability-audit-loongsuite-pilot-coding-agent-blackbox-transparent.md)
+→ [第 1 来源原文归档](https://mp.weixin.qq.com/s/3zA8mUTHG289-VnXDV1O2Q)
 ---
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/observability-monitoring.md)
 ## 第 2 来源：从个人生产力到组织能力——LoongSuite-Pilot×SLS 的 AI Coding 度量实践
 
 > 作者：徐可甲（阿里云云原生）
-> 原文：[归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loongsuite-pilot-sls-ai-coding-metrics-practice.md)
+> 原文：[归档](https://mp.weixin.qq.com/s/SEOGc3KIGm7eFpyUK6nR4g)
 
 ### 核心创新
 
@@ -385,7 +385,7 @@ Entry/Step/Skill 语义 → 事件事实表结构  →  SLS SQL 分析
 数据如何采集              数据如何转化为行动
 ```
 
-→ [第 2 来源原文归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loongsuite-pilot-sls-ai-coding-metrics-practice.md)
+→ [第 2 来源原文归档](https://mp.weixin.qq.com/s/SEOGc3KIGm7eFpyUK6nR4g)
 
 ---
 

@@ -4,7 +4,7 @@
 
 # Cheap code means formal verification is reasonable now — Antfly Blog
 
-[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-formal-verification-ai-code.md)
+[原文存档](https://antfly.io/blog/agent-formal-verification)
 
 It would be an understatement hardly worth uttering to say that coding agents are a big deal. But using them most effectively isn't exactly as simple as telling Claude to build you a SaaS product and make no mistakes. Collectively, as software engineers (or whatever you call this job these days), it's up to us to find ways to be most effective with them while minimizing harm to what we're building.
 
@@ -61,7 +61,7 @@ Confidence in your codebase can't be automated away. It's ultimately your job as
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 - [When Growth Slows Is It Sales Fault Or The Products Fault The Answer Has Changed](https://github.com/QianJinGuo/wiki-public/blob/main/entities/when-growth-slows-is-it-sales-fault-or-the-products-fault-the-answer-has-changed.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-formal-verification-ai-code.md)
+→ [原文存档](https://antfly.io/blog/agent-formal-verification)
 
 ## 深度分析
 
@@ -95,9 +95,9 @@ Agent 发现 bug 后的置信度建立流程包含：① 实现该代码的工�
 
 4. **建立三重置信度过滤**：Agent 发现的问题不要直接提 PR。建议的过滤流程：① 原始代码作者确认 → ② 单元测试复现 → ③ 在独立代码库验证方法有效性。这三步将假阳性率降至可接受水平，同时不阻碍真实问题的发现。
 
-5. **关注工具间的互补性，而非互相取代**：AI Coding Agent 不取代 TLA+，TLA+ 也不取代测试套件。正确的架构是：TLA+ 发现架构级 bug，agent 用单元测试复现，然后生成精确的修复代码。每一层工具的输出都是下一层工具的输入。 [^raw/articles/agent-formal-verification-ai-code.md:37-44]
+5. **关注工具间的互补性，而非互相取代**：AI Coding Agent 不取代 TLA+，TLA+ 也不取代测试套件。正确的架构是：TLA+ 发现架构级 bug，agent 用单元测试复现，然后生成精确的修复代码。每一层工具的输出都是下一层工具的输入。 [agent-formal-verification-ai-code.md:37-44](https://antfly.io/blog/agent-formal-verification)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-formal-verification-ai-code.md)
+→ [原文存档](https://antfly.io/blog/agent-formal-verification)
 
 ---
 

@@ -72,7 +72,7 @@ x402 已成为代理商务支付协议的事实标准，新项目在评估付费
 - [Openclaw Amazon Bedrock Eks Printer Qc](135-amazon-bedrock.html)
 - [Netflix Real Time Service Topology](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-real-time-service-topology.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentcore-payments-x402-agentic-commerce.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/agents-that-transact-introducing-amazon-bedrock-agentcore-payments-built-with-coinbase-and-stripe/)
 
 ---
 

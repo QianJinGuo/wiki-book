@@ -92,7 +92,7 @@ Google 的三层防护（对抗训练 + 用户确认 + 自动中断）是目前�
 - Agent Harness
 - Prompt Injection
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gemini-35-flash-computer-use-agent-harness.md)
+→ [原文存档](https://deepmind.google/blog/introducing-computer-use-in-gemini-3-5-flash/)
 
 ---
 ## 关联

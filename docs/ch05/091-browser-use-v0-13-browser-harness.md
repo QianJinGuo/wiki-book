@@ -5,7 +5,7 @@
 # browser-use v0.13 Browser Harness：薄抽象层设计哲学
 
 > **来源**：数据STUDIO（云朵君）。browser-use v0.13.2 架构拆解——上万行 DOM 处理代码替换为约 600 行 CDP 直连的 Browser Harness，LLM 本来就懂 CDP 协议，厚封装反而阻碍其能力。
-> → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/browser-use-v13-harness-thin-abstraction-数据STUDIO.md)
+> → [原文存档](https://mp.weixin.qq.com/s/HPJ9UVntxvAaq03bJaoC0g)
 
 ## 核心洞察：薄抽象胜过厚封装
 

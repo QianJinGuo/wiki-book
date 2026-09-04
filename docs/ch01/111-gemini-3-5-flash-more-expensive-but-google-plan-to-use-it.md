@@ -37,7 +37,7 @@ Google 新推出 Interactions API（Beta），借鉴 OpenAI Responses 的服务�
 - [Google Shipped Gemini 31 Flash Lite In General Availability](../ch04/257-ai.html)
 - [How We Made Window Join Parallel And Vectorized](032-how-we-made-window-join-parallel-and-vectorized.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md)
+→ [原文存档](https://simonwillison.net/2026/May/19/gemini-35-flash/)
 
 ---
 

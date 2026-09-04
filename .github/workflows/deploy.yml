@@ -54,6 +54,9 @@ jobs:
           --output site/assets/neighbor_graph.json
           --top-k 20
 
+      - name: Enforce public build boundary
+        run: node scripts/check-public-build.mjs --source . --site site
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site

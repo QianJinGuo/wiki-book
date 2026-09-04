@@ -85,7 +85,7 @@ v1.1.0 一口气修复了 18 个 Bug，其中令牌轮转导致消息丢失、YO
 
 - [企业级多-agent-规模化落地怎么做群虾智能-ai-沙龙-ppt-限时领取](../ch03/004-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/multi-agent-coordination.md)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hiclaw-v110-k8s-hermes-worker.md)
+→ [原文存档](https://mp.weixin.qq.com/s/9HTo9BQ0DWrgyqKdEcu7JA)
 
 ---
 

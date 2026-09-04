@@ -55,7 +55,7 @@ Vercel 团队按暴露程度排序：]"]
 
 ## 引用
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vercel-com-blog-protecting-against-token-theft.md)]"]
+→ [原文存档](https://vercel.com/blog/protecting-against-token-theft)]"]
 
 ---
 

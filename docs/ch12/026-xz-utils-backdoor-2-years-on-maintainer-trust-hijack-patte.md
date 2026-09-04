@@ -106,7 +106,7 @@ xz、OpenSSL 等关键基础设施项目长期缺乏资源。组织应系统性�
 ### 5. 建立依赖变更的监控和告警
 当关键依赖出现异常变更（新增维护者、大规模重构、构建系统变更）时自动告警——这些是后门植入的常见前兆。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/arcis-website-pages-dev-blog-posts-xz-utils-and-the-trust-shift.md)]"]
+→ [原文存档](https://arcis-website.pages.dev/blog/posts/xz-utils-and-the-trust-shift)]"]
 
 ## 相关实体
 

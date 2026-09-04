@@ -43,7 +43,7 @@ Kimi K2.5（Moonshot AI）是 K2 之后的开源 1T MoE 升级版本，核心架
 | 训练数据 | OCR + harness synthesis | 标准 + reasoning |
 | 开源范围 | 权重 + 数据 + harness | 权重 + 数据 |
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kimi-k2-5-architecture-innovation-moonshot-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/-LlryKjaW1jS_UouZwAU7Q)
 
 ## 相关实体
 

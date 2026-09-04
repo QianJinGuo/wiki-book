@@ -178,7 +178,7 @@ ReadFromChannel -> Routes -> KubeDecorator -> DockerDecorator -> NameResolution 
 
 ## 相关实体
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/open-telemetry-ebpf-instrumentation-obi-zero-code-observability-aliyun-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/3VPBR-Kir7siUX_np-7a8w)
 → [Cilium Tetragon Kubernetes Runtime Security Ebpf](168-rag.html) — 同为 eBPF 内核级方案，但聚焦运行时安全拦截
 → [Openclaw Agent Observability Session Logs Otel Sls](../ch04/176-openclaw.html) — LLM 应用层 Session 日志可观测（OTel + SLS）
 → [Alibabacloud Cms Manage Skill Natural Language Observability](../ch07/054-skill.html) — 阿里云 CMS 2.0 可观测接入的 AI Agent Skill 化（OBI 是其底层引擎之一）

@@ -4,7 +4,7 @@
 
 # Gemini 深度导读生成器 Prompt：让 AI 重写而非摘要
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gemini-deep-guide-prompt.md)
+→ [原文存档](https://mp.weixin.qq.com/s/mbq266tCUjwwqW9n8M-7vg)
 
 ## 摘要
 
@@ -132,7 +132,7 @@ Prompt 提供了三种输出模式：
 - "Prompt 工程模式"
 - [Prompt Engineering Fundamentals](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/prompt-engineering-fundamentals.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gemini-deep-guide-prompt.md)
+→ [原文存档](https://mp.weixin.qq.com/s/mbq266tCUjwwqW9n8M-7vg)
 
 ---
 

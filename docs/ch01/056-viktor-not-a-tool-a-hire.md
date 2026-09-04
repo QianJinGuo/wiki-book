@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐ | 7.7KB | `entities/viktor-not-a-tool-a-hire.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/viktor-not-a-tool-a-hire.md)
+> -> [原文存档](https://ref.getviktor.com/vik-ti-primary1)
 
 ## 核心要点
 - Viktor 是主打「AI 同事」定位的产品，而非传统 AI 助手或自动化工具
@@ -10,7 +10,7 @@
 - 接入 3000+ SaaS 工具（Stripe、Notion、GitHub、Linear 等），在一个对话中跨平台操作
 - 已有 13000+ workspaces 完成 hire（入职）
 - SOC2 认证，定位企业级 AI 工作流
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/viktor-not-a-tool-a-hire.md)
+→ [原文存档](https://ref.getviktor.com/vik-ti-primary1)
 
 ## 相关实体
 
@@ -88,7 +88,7 @@ Viktor 明确标注了 SOC2 合规认证，并提供 $100 免费额度（无需�
 本篇内容与以下实体构成关联阅读：
 
 -  — 加密货币交易场景下的 AI 应用
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/viktor-not-a-tool-a-hire.md) — Viktor 产品官网，2026-05-13 前后发布
+- [原文存档](https://ref.getviktor.com/vik-ti-primary1) — Viktor 产品官网，2026-05-13 前后发布
 
 ---
 

@@ -9,7 +9,7 @@
 - [vietnam to develop domestic cloud](668-opd.html)
 - [akamai acquires israeli ai browser security startup layerx f](040-akamai-acquires-israeli-ai-browser-security-startup-layerx-f.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropics-zero-trust-for-ai-agents-sets-the-right-test-the.md)
+→ [原文存档](https://blog.hello.coop/2026/06/anthropics-zero-trust-for-ai-agents-sets-the-right-test-the-bearer-token-fails-it/)
 
 ## 核心要点
 

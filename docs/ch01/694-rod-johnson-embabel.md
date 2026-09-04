@@ -4,7 +4,7 @@
 
 # Rod Johnson 回归：Embabel 与「最后一波由人类选择的框架」
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/embabel-rod-johnson-framework-era-interview.md)
+→ [原文存档](https://mp.weixin.qq.com/s/qQfs6qSmNOt4JvPZQqNq7w)
 
 ## 深度分析
 

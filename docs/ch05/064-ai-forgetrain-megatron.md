@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 6.0KB | `entities/forgetrain-ai-written-training-framework-bidian-infoq.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/forgetrain-ai-written-training-framework-bidian-infoq.md)
+> -> [原文存档](https://mp.weixin.qq.com/s/rl48C-c_1LQMdnJ7ZKDzJw)
 
 # ForgeTrain：AI 编写训练框架，超越 Megatron
 

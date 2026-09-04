@@ -87,7 +87,7 @@ APO 将这个问题重新形式化为**约束满足问题（Constraint Satisfact
 - **多模型协作系统**：当系统需要整合多个各有偏好的模型输出时，可用 APO 的框架训练一个仲裁者/融合模型
 - **持续学习场景**：概念漂移在线检测+动态约束更新可实现模型的自主演化，避免灾难性遗忘
 ---
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/apo-icml2026-multi-teacher-drift-uts-20260513.md)
+→ [原文存档](https://mp.weixin.qq.com/s/v9fNeL-gHM54HhE6pmk7Yg)
 
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-model-research-latest-directions.md)

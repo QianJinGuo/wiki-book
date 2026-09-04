@@ -155,7 +155,7 @@ Protocol-H 的核心贡献在于揭示了**企业级 RAG 的主要瓶颈不是 L
 - [Claude Code开发负责人 为何放弃Rag而选择Agentic Search](../ch03/057-claude-code.html)
 - [Skill Rag Tsinghua Sra](../ch07/054-skill.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/protocol-h-hierarchical-agentic-rag-enterprise.md)
+→ [原文存档](https://mp.weixin.qq.com/s/P-MnmnREgtiOq-DbHfDuVA)
 
 ## 相关实体
 - `Harness架构` — 分层Agent拓扑的编排设计

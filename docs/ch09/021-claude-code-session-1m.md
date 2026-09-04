@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 16.2KB | `entities/使用claude-codesession管理与1m上下文.md`
 
-[使用Claude Codesession管理与1M上下文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/使用claude-codesession管理与1m上下文.md)
+[使用Claude Codesession管理与1M上下文](https://mp.weixin.qq.com/s/IOSlKDkKVB1djBO0RpOSgA)
 
 # 使用Claude Code：session管理与1M上下文
 本文来自 Anthropic Claude Code 团队成员，宣布 /usage 工具更新，并基于客户反馈详细指导如何管理 100 万 token 上下文窗口，以减少上下文腐化（context rot）对模型性能的影响。
@@ -116,7 +116,7 @@ Claude Code 的 1M token 上下文窗口在表面上是一个"充裕"的上限�
 - [Claude Code Openclaw Memory Vector Db Doubt](../ch03/057-claude-code.html)
 - [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/057-claude-code.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/使用claude-codesession管理与1m上下文.md)
+→ [原文存档](https://mp.weixin.qq.com/s/IOSlKDkKVB1djBO0RpOSgA)
 
 ---
 

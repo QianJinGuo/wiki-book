@@ -44,7 +44,7 @@ Thinking Machines Lab（OpenAI 前 CTO Mira Murati 创办）发布的交互模�
 - 长会话上下文管理（重点方向）
 - 276B MoE 推理速度限制，更大模型尚无法部署
 - 后台智能体协同尚在早期
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/thinking-machines-interaction-models-ai-cold.md)
+→ [原文存档](https://mp.weixin.qq.com/s/RLJJoOkn0kP7_ei_QV4oIw)
 
 ## 深度分析
 **1. 从"轮次"到"微轮次"的交互范式跃迁**
@@ -76,12 +76,12 @@ ByteByteGo 对 Thinking Machines 交互模型的深度科普，核心贡献在**
 3. **Rich Sutton 苦涩教训**：Harness 组件是手工启发式，规模化最终会淘汰它们——交互能力应放在模型内部
 4. **架构描述更浅显**：感知漏斗（perception funnel）→ 骨干网络（backbone）→ 生成系统（generation）的三段式描述，适合入门理解
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/bytebytego-inside-thinking-machines-interaction-models.md)
+→ [原文存档](https://blog.bytebytego.com/p/inside-thinking-machines-interaction)
 
 ## 相关实体
 - [Interaction Models](../ch03/074-interaction-models-a-scalable-approach-to-human-ai-collabor.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/interaction-models.md)
+→ [原文存档](https://thinkingmachines.ai/blog/interaction-models/)
 
 - [Interaction Models: A Scalable Approach to Human-AI Collaboration](257-ai.html)
 - [thinking-machines-interaction-models-ai-cold](207-thinking-machines-interaction-models.html)

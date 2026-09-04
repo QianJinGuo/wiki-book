@@ -175,7 +175,7 @@ System Prompt冻结原则体现了一个深层工程哲学：**不变性是最�
 - [Prompt Context Harness Three Evolutions](008-harness.html)
 - [From Prompt To Harness Claude Official](008-harness.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclacky-prompt-cache-harness-v2ex-799662c56ba6.md)
+→ [原文存档](https://www.v2ex.com/t/1212780)
 
 ---
 

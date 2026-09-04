@@ -152,7 +152,7 @@ AI 可以快速生成方法论正确的论文框架，但假设的原创性和�
 - **D&D 游戏附件**：[101 页 RPG PDF](https://drive.google.com/file/d/10QKnfjJaWHxsTu4fo_dgMU6pAJXxuw3t/view?usp=sharing)
 - **对比画廊**：[o3 → GPT-5.5 Pro 编码挑战](https://69e8dfc625a99f19144c86bf--hg-20f7d1a3ce.netlify.app/)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/sign-of-the-future-gpt-55-mollick.md)
+→ [原文存档](https://www.oneusefulthing.org/p/sign-of-the-future-gpt-55)
 
 ---
 

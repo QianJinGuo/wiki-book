@@ -4,7 +4,7 @@
 
 # AI 没把更多流量导向 Amazon，利好品牌官网 — Michael Morton x Ben Thompson 谈 AI 时代电商变局
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-ecommerce-brand-com-vs-marketplace-founder-park.md)
+→ [原文存档](https://mp.weixin.qq.com/s/xqzJQYZ3Hh_h1wl0APMvgQ)
 
 ## 摘要
 

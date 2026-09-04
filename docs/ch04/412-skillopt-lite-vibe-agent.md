@@ -5,7 +5,7 @@
 # SkillOpt-Lite：一行Vibe指令加速Agent技能自进化
 
 > **论文**：SkillOpt-Lite: Better and Faster Agent Self-evolution via One Line of Vibe (arXiv:2607.03451)
-> **来源**：Hyman的杂货铺 | [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillopt-lite-一行vibe指令进化agent技能.md)
+> **来源**：Hyman的杂货铺 | [原文存档](https://mp.weixin.qq.com/s/XAz5KdMMKCVqGTLtw9Nv0w)
 > **GitHub**：https://github.com/EvolvingLMMs-Lab/SkillOpt-Lite
 
 ## 核心创新

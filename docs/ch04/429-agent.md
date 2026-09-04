@@ -4,7 +4,7 @@
 
 # 智能问数Agent--数据智能体-火山引擎
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/volcengine-data-agent-intelligent-query-agent.md)
+→ [原文存档](https://www.volcengine.com/docs/85637/1544066?lang=zh)
 
 ## 深度分析
 

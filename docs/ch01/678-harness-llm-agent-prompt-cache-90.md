@@ -7,7 +7,7 @@
 ## 相关实体
 
 - [yoonho lee: text optimization as a legitimate learning mecha](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yoonho-lee-text-optimization-as-legitimate-learning-mechanism.md)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclacky-prompt-cache-harness-v2ex-799662c56ba6.md)
+→ [原文存档](https://www.v2ex.com/t/1212780)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/reinforcement-learning-rlhf.md)
 ## 深度分析

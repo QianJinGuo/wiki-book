@@ -15,7 +15,7 @@
 - [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](161-hermes-agent.html)
 - [Ath Agent Trust Handshake Protocol](../ch03/004-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/深势科技携手阿里云-agentrun加速科研-ai-agent-全速运行.md)
+→ [原文存档](https://mp.weixin.qq.com/s/yLCABS9bO8epq7AMEKldUQ)
 
 ## 深度分析
 

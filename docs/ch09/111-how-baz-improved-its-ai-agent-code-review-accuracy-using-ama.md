@@ -6,7 +6,7 @@
 
 ## 相关实体
 - [linear code intelligence: controlled codebase access for lin](https://github.com/QianJinGuo/wiki-public/blob/main/entities/2026-05-14-code-intelligence-1778979927.md)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-baz-improved-its-ai-agent-code-review-accuracy-using-ama.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/how-baz-improved-its-ai-agent-code-review-accuracy-using-amazon-bedrock-agentcore)
 - [aws bedrock agentcore equipment repair assistant — 农业机械 ai 诊](../ch11/195-aws-bedrock-agentcore-equipment-repair-assistant-ai.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/data-infrastructure.md)

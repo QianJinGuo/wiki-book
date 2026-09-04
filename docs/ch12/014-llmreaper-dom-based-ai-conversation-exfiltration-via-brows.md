@@ -95,7 +95,7 @@ You can view the code and download the project on [GitHub - LLMReaper](https://g
 
 ## 相关实体
 - [llmreaper - dom based ai conversation exfiltration via brows](072-llmreaper.html)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llmreaper-dom-based-ai-conversation-exfiltration-via-browser.md)
+→ [原文存档](https://thewhiteh4t.github.io/blog/ai-chat-llmreaper/)
 
 ## 深度分析
 

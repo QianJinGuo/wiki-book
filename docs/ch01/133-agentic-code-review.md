@@ -4,7 +4,7 @@
 
 # Agentic Code Review
 
-> Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentic-code-review-addyosmani.md)
+> Source: [原文存档](https://addyosmani.com/blog/agentic-code-review/)
 
 ## 核心要点
 
@@ -36,7 +36,7 @@ Code review used to work because of a happy accident of relative speed. A senior
 
 - 文章的核心论点可在生产环境验证
 - 与现有实体的差异化角度：本文来自 addyosmani.com 视角
-- 引用源：[Agentic Code Review Addyosmani](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentic-code-review-addyosmani.md)
+- 引用源：[Agentic Code Review Addyosmani](https://addyosmani.com/blog/agentic-code-review/)
 ## 相关实体
 - [from doer to director: the ai mindset shift](029-from-doer-to-director-the-ai-mindset-shift.html)
 - [why internally-built ai fails fund accounting audits](064-why-internally-built-ai-fails-fund-accounting-audits.html)

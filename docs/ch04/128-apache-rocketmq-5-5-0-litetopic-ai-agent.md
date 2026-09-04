@@ -107,7 +107,7 @@ LiteTopic 定位为消息基础设施，与上层 Agent 框架的集成主要有
 - [Ath Agent Trust Handshake Protocol](../ch03/004-agent.html)
 - [Hermes Self Evolution Closed Loop Skill Reuse Winty](../ch07/054-skill.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rocket-mq-5-litetopic-ai-agent-async-cloudnative.md)
+→ [原文存档](https://mp.weixin.qq.com/s/gXZz2wcNbrQatciy-o3-0A)
 
 ---
 

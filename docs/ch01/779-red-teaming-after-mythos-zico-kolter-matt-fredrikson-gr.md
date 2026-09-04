@@ -107,7 +107,7 @@ AI 安全赛道正在从"学术研究"转向"商业产品"。Gray Swan 的 Serie
 - [Claude Tag](751-introducing-claude-tag.html) — Anthropic 的 agent 安全实践
 - [OpenClaw](../ch04/384-agent-loop.html) — 计算机使用 agent 的安全挑战
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/latent-space-p-gray-swan.md)
+→ [原文存档](https://www.latent.space/p/gray-swan)
 
 ---
 

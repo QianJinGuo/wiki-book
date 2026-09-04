@@ -4,7 +4,7 @@
 
 # 存之有序，治之有矩——Agent 记忆系统的工程实践与演进
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/agent-system-engineering-practice/)
 
 ## 深度分析
 
@@ -56,7 +56,7 @@
 
 关键洞察：Memory 的写入是经验获得长期影响力的入口，读取则是历史进入当前任务的准入过程。一次有效离可靠经验还很远——需复现+外部证据+明确作用域才能晋升。Memory 进入 Skill 或 Harness（参考信息→默认行为）时，验证要求随之提高。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-memory-self-improvement-verification-ruofei-2026-07-19.md)
+→ [原文存档](https://mp.weixin.qq.com/s/NUWvuUl0wewAJH_7mv0SDg)
 
 ## 实践启示
 

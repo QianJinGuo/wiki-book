@@ -8,7 +8,7 @@
 
 - [claude skill 质检工具 skill craft](340-claude.html)
 - [karpathy × boris 访谈：software 3.0 时代编程完整地图](451-llm.html)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-team-10-tips-boris-data派THU.md)
+→ [原文存档](https://code.claude.com/docs/en/common-workflows#run-parallel-claude-code-sessions-with-git-worktrees)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/workflow-orchestration.md)
 ## 深度分析

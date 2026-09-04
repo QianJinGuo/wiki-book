@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐⭐ | 6.9KB | `entities/gemini-embedding-2-multimodal-unified-vector-hyman.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gemini-embedding-2-multimodal-unified-vector-hyman.md)
+> -> [原文存档](https://mp.weixin.qq.com/s/oZnzy6QxriNclm-UTGh7VQ)
 
 # Gemini Embedding 2：全模态统一向量空间
 
@@ -54,7 +54,7 @@ Google DeepMind 论文（arXiv 2605.27295）：一个原生多模态 embedding �
 
 ## 关联阅读
 
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gemini-embedding-2-multimodal-unified-vector-hyman.md) — Hyman的杂货铺原文
+- [原文存档](https://mp.weixin.qq.com/s/oZnzy6QxriNclm-UTGh7VQ) — Hyman的杂货铺原文
 
 ## 一句话
 

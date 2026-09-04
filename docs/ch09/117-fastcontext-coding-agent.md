@@ -117,7 +117,7 @@
 
 ## 相关实体
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/microsoft-fastcontext-coding-agent-explore-subagent-vibecoder.md)
+→ [原文存档](https://mp.weixin.qq.com/s/vIsZKoH-RZkaTiZS0tiDlw)
 
 - [Headroom 是怎么省上下文的](../ch03/004-agent.html)（VibeCoder 上下文优化系列前篇：工具输出字节级压缩；FastContext 偏仓库探索分工，角度互补）
 - [AI Coding Agent 质量防御的五个控制机制](../ch04/253-ai-coding-agent.html)

@@ -4,7 +4,7 @@
 
 # Introducing Claude apps gateway for AWS
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/introducing-claude-apps-gateway-for-aws.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/introducing-claude-apps-gateway-for-aws)
 
 Enterprises deploying Claude Code and Claude Desktop across development teams need centralized control over access, cost, and policy. At scale, this is hard to manage: each developer needs an individual credential, settings must be distributed manually, and spend is difficult to track or cap. Without a centralized control point, governance is left to whatever tooling each team can implement independently.
 
@@ -55,7 +55,7 @@ The gateway handles five core responsibilities:
 - **Pattern C 混合**：Bedrock 主 + Claude Platform overflow（跨 provider failover 注意服务条款）
 - 集中 vs 直连 tradeoff：集中 = 统一治理但共享基础设施、无原生 Bedrock 特性；直连 = 独立 quota + 全特性但丢失 per-developer 治理
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deploying-anthropic-claude-apps-gateway-for-aws-for-enterprise-workloads.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/deploying-anthropic-claude-apps-gateway-for-aws-for-enterprise-workloads)
 
 ## 关联
 - 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)

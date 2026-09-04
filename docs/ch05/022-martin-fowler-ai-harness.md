@@ -84,7 +84,7 @@ Google 工程师把日常工作自动化掉一大半后剩下的是判断、拆�
 - [腾讯 CDN LEGO Harness Engineering](008-harness.html) — 57 案例 13 类问题中，不确定性处理是核心挑战之一
 
 ## 原始存档
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/martin-fowler-ai-rd-harness-nondeterminism.md)
+→ [原文存档](https://mp.weixin.qq.com/s/Ya0M9C-TBY_d3lzcmipRDA)
 
 ## 元数据
 - **来源**: WeChat（架构师/JiaGouX）

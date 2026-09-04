@@ -9,7 +9,7 @@
 - [《从零实现 agent 系统》连载 01｜agent 系统是什么：问题空间与架构切片](../ch03/004-agent.html)
 - [rod johnson 回归：embabel 与「最后一波由人类选择的框架」](../ch07/020-embabel.html)
 - [你的ai代码越写越乱，他72小时合了14个pr——差距只在一个机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/garry-tan-complexity-ratchet-90percent-testing-20260513.md)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-md-12-rules-mnilax-cf2019.md)
+→ [原文存档](https://x.com/Mnilax/status/2053116311132155938)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/workflow-orchestration.md)
 ## 深度分析

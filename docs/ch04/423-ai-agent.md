@@ -4,7 +4,7 @@
 
 # AI Agent 工程师学习路线：面向资深后端/大数据工程师的能力地图
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-agent-engineer-learning-roadmap-backend-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/HWdqrPP1IFdex33afqQEeQ)
 
 ## 深度分析
 

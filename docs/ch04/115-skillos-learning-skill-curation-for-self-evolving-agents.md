@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 13.7KB | `entities/skill-os-learning-skill-curation-self-evolving-agents.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-os-learning-skill-curation-self-evolving-agents.md)
+> -> [原文存档](https://arxiv.org/abs/2605.06614)
 
 ## 论文信息
 - **作者**: Siru Ouyang, Jun Yan, Yanfei Chen 等

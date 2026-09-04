@@ -67,7 +67,7 @@ Google 的 5 Agent Skill 设计模式（Tool Wrapper/Generator/Reviewer/Inversio
 5. **记忆层是 Skill 的高级形态**：从纯指令 → 记忆（standups.log/SQLite） → 脚本（helper functions） → hooks（/careful、/freeze）——路径清晰可循
 
 ## 原始存档
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-claude-skill-9-categories-datawhale-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/i40ltoT_LodyFmv7FT5HUQ)
 
 ---
 

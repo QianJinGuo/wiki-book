@@ -4,7 +4,7 @@
 
 # Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nemotron-3-5-content-safety-multimodal.md)
+→ [原文存档](https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety)
 
 ## 摘要
 

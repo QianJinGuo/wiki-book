@@ -21,7 +21,7 @@
 - [大模型可控新突破：steering 机制、评估体系与开源落地](../ch01/657-steering.html)
 - [the recent history of ai in 32 otters](../ch01/435-the-recent-history-of-ai-in-32-otters.html)
 - [吴恩达2026新课上线！3小时包教包会，零代码小白也能成为ai超级玩家](257-ai.html)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-agent-harness-construction-akshay-baoyu.md)
+→ [原文存档](https://mp.weixin.qq.com/s/yOX1QZTHs54J-CBg-rKUig)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
 ## 深度分析

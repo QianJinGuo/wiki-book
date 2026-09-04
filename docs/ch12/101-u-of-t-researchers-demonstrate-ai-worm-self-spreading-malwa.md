@@ -101,7 +101,7 @@
 
 ## 引用与回链
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/u-of-t-ai-worm-cleverhans-research.md)
+→ [原文存档](https://www.utoronto.ca/news/u-t-researchers-demonstrate-ai-worm-could-target-any-online-device)
 
 ## 相关实体（Related Entities）
 

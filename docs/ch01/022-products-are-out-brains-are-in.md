@@ -47,7 +47,7 @@ The author pushes back on the "tech industry is dying" narrative as missing the 
 - [Running an AI-native engineering org](046-running-an-ai-native-engineering-org.html)
 - [When growth slows — product vs. sales](https://github.com/QianJinGuo/wiki-public/blob/main/entities/when-growth-slows-is-it-sales-fault-or-the-products-fault-the-answer-has-changed.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/products-are-out-brains-are-in.md)
+→ [原文存档](https://mrmarket.bearblog.dev/products-are-out-brains-are-in-new/)
 
 ---
 

@@ -113,7 +113,7 @@ Letta 的双存储（向量库 + 原始文本）理论上可以兼顾检索效�
 - [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](../ch03/057-claude-code.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/008-harness.html)
 - [Harness Engineering 七层框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-7-layers-framework.md)
-[Context Window 管理对比](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/context-window-management-comparison.md)
+[Context Window 管理对比](https://mp.weixin.qq.com/s/ajurJ3Vayd9qLIwh9M3Fnw)
 
 ## 相关实体
 - [AIAIGC峰会嘉宾阵容](362-aiaigc.html)

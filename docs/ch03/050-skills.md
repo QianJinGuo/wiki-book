@@ -83,7 +83,7 @@ Prompt 的逻辑是"告诉 AI 怎么做"——给出规则、给出示例、给�
 **轴1：输出稳定性**——同样的输入多次运行，输出是否一致？波动太大说明判断框架不清晰。
 **轴2：输出符合度**——Skill 输出和专家判断的一致性有多高？可以用经验判断作为 ground truth，计算偏差率。
 最好的 Skill 是高稳定性 + 高符合度的。如果低稳定性 + 高符合度（输出波动大但都接近专家值），问题可能在推理过程有随机性，需要减少采样温度或明确更多决策节点。如果高稳定性 + 低符合度（输出稳定但远离专家值），说明 Skill 学到的是规则而不是判断框架，需要重建底层逻辑。
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-to-encode-experience-into-skills.md)
+→ [原文存档](https://mp.weixin.qq.com/s/GIpqXfAT8ESR7c50yctpRQ)
 
 ## 相关实体
 

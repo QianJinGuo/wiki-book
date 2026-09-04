@@ -12,7 +12,7 @@
 - [Deepseek V4 Flash Pro 通往百万级上下文与万亿参数推理的新纪元 V2](661-deepseek-v4-flash-pro.html)
 - [Deepseek V4 Pro Vs Claude](459-deepseek-v4.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek-v4-flash-means-llm-steering-is-interesting-again.md)
+→ [原文存档](https://www.seangoedecke.com/steering-vectors/)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/llm-core-technology.md)
 ## 深度分析

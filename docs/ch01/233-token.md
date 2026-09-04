@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 13.8KB | `entities/minimax-token-degradation-jiqia.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/minimax-token-degradation-jiqia.md)
+> -> [原文存档](https://mp.weixin.qq.com/s/jAvdxWaE6AvYqx_drcSjGA)
 
 ## 核心概念
 Token 退化（Token Degradation）：大模型在后训练阶段，由于 SFT 数据对词表覆盖不足，导致部分 token 的 lm_head 输出参数发生显著漂移，模型丧失生成这些 token 的能力。
@@ -134,7 +134,7 @@ MiniMax 使用的检测方法是对约 20 万 token 的整个词表进行全量�
 4. **精准补强** → 定向低频 token 合成（针对已知问题 token）
 
 ## 来源
-- [MiniMax 全链路排查](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/minimax-token-degradation-jiqia.md)
+- [MiniMax 全链路排查](https://mp.weixin.qq.com/s/jAvdxWaE6AvYqx_drcSjGA)
 
 ---
 

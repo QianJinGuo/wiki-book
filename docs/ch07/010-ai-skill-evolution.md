@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 20.1KB | `entities/ai-skill-evolution底层逻辑.md`
 
-[Ai Skill Evolution底层逻辑](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-skill-evolution底层逻辑.md)
+[Ai Skill Evolution底层逻辑](https://juejin.cn/post/7620226704209018920)
 
 # 01—为什么你的 AI Skill 上线即翻车？一文搞懂 AI Skill 测评的底层逻辑
 系列：AI Skill 测评体系从零到一（一）

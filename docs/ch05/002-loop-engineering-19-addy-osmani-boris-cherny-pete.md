@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 134.4KB | `entities/loop-engineering-addy-osmani-challengehub.md`
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-addy-osmani-challengehub.md)
+> 原文存档：[原文存档](https://mp.weixin.qq.com/s/vmGx9IELbWgKZqHm-M3G5w)
 
 # Loop Engineering：比 Harness 更高一层的编程范式
 
@@ -58,7 +58,7 @@ Loop Engineering 不是 Harness 的替代品，而是 Harness 之上的编排层
 - [Harness Engineering](057-harness-engineering.html)
 - [Agent Self-Improvement](../ch03/004-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-addy-osmani-challengehub.md)
+→ [原文存档](https://mp.weixin.qq.com/s/vmGx9IELbWgKZqHm-M3G5w)
 
 ---
 
@@ -106,7 +106,7 @@ InfoQ 对同一 Loop Engineering 事件的深度报道，侧重**工程实现细
 - **评估器用 Playwright 而非读 diff**：真实打开网页、点击、截图——比代码级自查更可靠
 - **"品味"可评分**：设计/原创性/工艺/功能性四维，随模型能力调整权重——Opus 4.6 功能性已强，评估侧重设计和原创性
 
-→ [第2原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-infoq-boris-cherny-peter-steinberger.md)
+→ [第2原文存档](https://mp.weixin.qq.com/s/JKrDuM4jaspm2wL-vJ1qsA)
 
 ---
 
@@ -173,7 +173,7 @@ InfoQ 对同一 Loop Engineering 事件的深度报道，侧重**工程实现细
 - **5 项准入表 + 5 条保守原则**（若飞独家）：用 5 行 × 2 列的工程检查项决定能否上 loop；用 5 条保守原则（先只读/先低风险/先小频率/先人工/先写停止条件）保住系统不漂移
 - **plan.md 状态记忆模板**（若飞独家）：当前目标 / 已尝试 / 已验证 / 禁止事项 / 下一步——对话之外的"工程继续"载体
 
-→ [第3原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-peter-steinberger-boris-cherny.md)
+→ [第3原文存档](https://mp.weixin.qq.com/s/657EDcc9mEdilrZm-69BDA)
 
 ---
 
@@ -236,7 +236,7 @@ InfoQ 对同一 Loop Engineering 事件的深度报道，侧重**工程实现细
 - **用"诚实回答"清单训练 loop**："我没有足够证据继续 / 这次修改超过了授权范围 / 预算已经到达"——把"停止条件"具体化为可触发话术，让 loop 能自我暂停
 - **Loop 与 Harness 同等重要，不互相替代**："写 Harness 时，我们聊的是状态边界和失败闭环；写 Loop Engineering，我们换了一个说法：工作现场能不能定期醒来"——若飞本文最大启示是 **Harness + Loop 是同一体系的两层**，不应分开看
 
-→ [第4原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-工程现场-ruofei.md)
+→ [第4原文存档](https://mp.weixin.qq.com/s/hx7-BQ33JFOHHtJP30TkbA)
 
 ## 第 5 来源:微信公众号「TechFarrari」"当 AI 圈开始聊 Loop:提示词工程已死,但杀死它的不是新技术" (2026-06-15)
 
@@ -301,7 +301,7 @@ TechFarrari 公众号 2026-06-15 10:30 发布的独立解读,作者是 TechFarra
 - **责任批判补全了前 4 来源的"乐观叙事"**(第 5 来源独家视角): 前 4 来源(Addy / InfoQ / 微信公众号教科书 / 若飞)都集中在"如何设计更好 loop",**没有一篇**对 loop 提出成本/责任/商业动机的批判——第 5 来源填补了"loop 局限性的诚实讨论"维度。这是 Loop Engineering 主题"五维分析"(概念 / 工程 / 落地 / 批判 / 跨域)的**最后一块拼图**
 - **跨域应用案例**(第 5 来源独家): 与 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 在 SaaS / DevOps / 客服 / 编程 的多领域应用模式相同,Loop Engineering 也已扩展到**内容选题**。这是 Loop 工具链成熟的标志——"凌晨 4 点 bot → 8 点选题会 agenda"是 24h Agent 工作流在内容产业的真实落地
 - **范式迁移叙事 4 阶段时间线**(第 5 来源独家): 与前 4 来源的"Loop > Harness > Prompt"层级关系**互为表里**——前 4 来源给"层级",第 5 来源给"时间线",合起来是"Loop 演化的完整画像"
-- **生命周期短预言**(第 5 来源独家): 与 [Anthropic 缓存 Token 经济](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic_cache_tokenomics.md) 等 raw 中对"AI 圈造词速度"的批评态度**一致**——"每过几个月就有个新词,每个新词都宣称自己要杀死上一个"——但**保持冷静的"造词速度观察期"**是工程师理性态度
+- **生命周期短预言**(第 5 来源独家): 与 [Anthropic 缓存 Token 经济](https://skids.dev/blog/anthropic-cache-tokenomics/) 等 raw 中对"AI 圈造词速度"的批评态度**一致**——"每过几个月就有个新词,每个新词都宣称自己要杀死上一个"——但**保持冷静的"造词速度观察期"**是工程师理性态度
 - **商业动机批判**(第 5 来源独家): 与 [纳德拉「Token 资本」论](../ch12/002-token.html) 的"前沿模型 ≠ 价值"警告**同源**——都反对"造词 = 价值"的偷换;与 [Fable 5 Runtime Contract](../ch01/338-claude-fable-5.html) 的"系统能不能跑完任务"判断**同源**——都强调工程责任换形态
 
 ### 实践启示
@@ -312,11 +312,11 @@ TechFarrari 公众号 2026-06-15 10:30 发布的独立解读,作者是 TechFarra
 - **造词速度观察期**: 任何新概念,先等半年 — 第 5 来源的"造词速度"批评可以推广为"AI 圈新概念评估标准"
 - **永远做"始终在场的工程师"**: 哪怕 loop 帮你省了 60% 时间,那 60% 也应投入"理解每一行代码在发生什么" — 这是工程师身份的核心,不能让位给"按开始键"角色
 
-→ [第5原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-techferrari-prompt-is-dead-2026.md)
+→ [第5原文存档](https://mp.weixin.qq.com/s/WTdrjZtEFagM58vryDqvIA)
 
 ## 第 6 来源 — 若飞 (架构师 JiaGouX 2026-06-15)
 
-> Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-practical-guide-brakes-first-ruofei-2026-06-15.md)
+> Source: [原文存档](https://mp.weixin.qq.com/s/XDacdNndcDbBc3EpOT6oXA)
 > Author: 若飞 (架构师 JiaGouX)
 > Date: 2026-06-15
 
@@ -372,10 +372,10 @@ TechFarrari 公众号 2026-06-15 10:30 发布的独立解读,作者是 TechFarra
 
 > "**这不是降低工程要求。这是把工程要求提前了。**"
 
-→ [第6原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-practical-guide-brakes-first-ruofei-2026-06-15.md)
+→ [第6原文存档](https://mp.weixin.qq.com/s/XDacdNndcDbBc3EpOT6oXA)
 ## 第 7 来源：微信公众号「AI技术立文」"14 步路线图：从 Prompt 工程师到 Loop 架构师" (2026-06-16)
 
-> Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-14-step-roadmap-aitechliwen-2026-06-16.md)
+> Source: [原文存档](https://mp.weixin.qq.com/s/QyqtI_Oe72DP2u1IpXJMaA)
 > Author: AI技术立文
 > Date: 2026-06-16 12:31
 
@@ -436,11 +436,11 @@ TechFarrari 公众号 2026-06-15 10:30 发布的独立解读,作者是 TechFarra
 - **好的第一个循环 5 类清单**：CI 失败分诊 / 依赖升级 PR / Lint 修复 / Flaky 测试复现 / Issue 转 PR 草稿——与若飞 5 类试点场景**模式收敛**，新人起步的最佳任务
 - **直接引用 Anthropic 8× 数据时加 caveat**：本文的引用是 "Anthropic 工程师每天合并 8× 代码"，但**Anthropic 自己承认"几乎肯定夸大"**——任何引用此数据的文档都应加 caveat
 
-→ [第7原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-14-step-roadmap-aitechliwen-2026-06-16.md)
+→ [第7原文存档](https://mp.weixin.qq.com/s/QyqtI_Oe72DP2u1IpXJMaA)
 
 ## 第 8 来源:爱范儿「提示词过时了?AI 最新的玩法是「无限流」」(2026-06-16 18:00)
 
-> Source: [第8原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-ifanr-popular-science-critique-2026-06-16.md)
+> Source: [第8原文存档](https://mp.weixin.qq.com/s/8RplW8IcFxMXcOrgUMxDqw)
 > Author: 爱范儿 (发现明日产品的知名科技媒体)
 > Date: 2026-06-16 18:00
 
@@ -502,11 +502,11 @@ TechFarrari 公众号 2026-06-15 10:30 发布的独立解读,作者是 TechFarra
 - **"分界线"思维**(本来源独家): 不要被"循环工程"这个名词绑架,真正的问题是"哪些工作适合循环 / 哪些不需要"
 - **AI 圈造词观察期**(本来源独家反思): 任何新概念,先等 6 个月看是否被淘汰 —— 可推广到所有 AI 圈新概念
 
-→ [第8原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-ifanr-popular-science-critique-2026-06-16.md)
+→ [第8原文存档](https://mp.weixin.qq.com/s/8RplW8IcFxMXcOrgUMxDqw)
 
 ## 第 9 来源 — AllenTang 架构师带你玩转 AI「一文搞懂 Loop 工程」(2026-06-16 20:34)
 
-> Source: [第9原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-karpathy-autoresearch-eval-ruler-allentang-2026-06-16.md)
+> Source: [第9原文存档](https://mp.weixin.qq.com/s/5NaLXPWxx1t3xRDNp6pmOA)
 > Author: AllenTang (架构师带你玩转 AI)
 > Date: 2026-06-16 20:34
 
@@ -638,11 +638,11 @@ Karpathy 的核心解法: 把**"什么时候停、凭什么算成功"这件事,�
 - **git 一键撤销是好习惯**: 每圈迭代都可逆,错了回到上一步
 - **Karpathy AutoResearch 是 Loop Engineering 的 Hello World**: 630 行 Python + 40 行 ruler.py = 整夜自我研究
 
-→ [第9原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-karpathy-autoresearch-eval-ruler-allentang-2026-06-16.md)
+→ [第9原文存档](https://mp.weixin.qq.com/s/5NaLXPWxx1t3xRDNp6pmOA)
 
 ## 第 10 来源（winty 7 种架构 + Loop Engineering 中文主流视角，2026-06-18）
 
-> 原文：[第 10 原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/7-agent-architectures-loop-engineering-winty-2026-06-18.md)
+> 原文：[第 10 原文存档](https://mp.weixin.qq.com/s/d-bV-dxEEl6PHL1b-S8_DQ)
 > 出处：前端 Q / winty 原创，2026-06-18 12:27
 > 核心定位：**7 种 Agent 架构的演进路径框架 + 中文公众号民间视角的 Boris Cherny 金句复用**
 
@@ -692,13 +692,13 @@ Karpathy 的核心解法: 把**"什么时候停、凭什么算成功"这件事,�
 - **"循环 = 产品本身"的范式转移**：别再纠结"要不要让它循环"，大方承认"循环就是产品"，把全部精力放在设计好、验证好、停得住
 - **"模型只会越来越强，到时候真正卡住产出的，不是模型，而是设计循环那个人的判断力"**——本来源收尾金句，与第 5 来源 TechFarrari 的批判性形成对照
 
-→ [第10原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/7-agent-architectures-loop-engineering-winty-2026-06-18.md)
+→ [第10原文存档](https://mp.weixin.qq.com/s/d-bV-dxEEl6PHL1b-S8_DQ)
 
 ---
 
 ## 第 11 来源：微信公众号「Loop Engineering：从 AutoResearch 到 Claude Code——循环设计的第一性原理」（2026-06-18）
 
-> Source: [第11原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-autoresearch-claude-code-five-decisions-2026-06-18.md)
+> Source: [第11原文存档](https://mp.weixin.qq.com/s/kDNWMR3kU9MWN4nb6dRi8w)
 > Date: 2026-06-18
 
 本来源是 Loop Engineering 主题的**第 11 来源**——以 Karpathy AutoResearch 和 Claude Code queryLoop 为双案例，提炼循环设计的 **5 个关键决策**（终止条件/检查点/回退策略/粒度/子任务委派）和 **3 个陷阱**（验证困境/理解债/认知投降）。与前 10 来源的最大差异是：**系统化的决策框架 + 可复用代码模板 + 独有数据源**。
@@ -752,13 +752,13 @@ Karpathy 的核心解法: 把**"什么时候停、凭什么算成功"这件事,�
 - **每轮循环加"AI 必须解释为什么这样改"**——对抗 Comprehension Debt
 - **每周手动完成一次核心任务**——对抗 Cognitive Surrender
 
-→ [第11原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-autoresearch-claude-code-five-decisions-2026-06-18.md)
+→ [第11原文存档](https://mp.weixin.qq.com/s/kDNWMR3kU9MWN4nb6dRi8w)
 
 ---
 
 ## 第 12 来源：微信公众号「Loop Engineering 综合实战（三层结构 + 五要素 + 解剖 6 组件 + 4 模式 + 成本公式 + 三款产品 Loop 能力对比 + 组织准备度总表 + Ralph Loop 极简主义 + 三大风险）」（2026-06-18）
 
-> Source: [第12原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-three-layers-decision-framework-product-comparison-ralph-2026-06-18.md)
+> Source: [第12原文存档](https://mp.weixin.qq.com/s/g41IfUrp1SP8fhosq9t1lA)
 > Date: 2026-06-18
 
 本来源是 Loop Engineering 主题的**第 12 来源** — 60KB / 865 行史诗级综合解读，从**直觉建立（第一层）→ 机制拆解（第二层）→ 决策框架（第三层）** 三层结构展开。与前 11 来源最大差异：**唯一覆盖"产品对比表 + Ralph Loop 极简主义 + 组织准备度总表 + 成本公式 + 三大风险"完整决策链**。
@@ -813,13 +813,13 @@ Karpathy 的核心解法: 把**"什么时候停、凭什么算成功"这件事,�
 - **每周固定"代码审计日"**：对抗理解债务累积
 - **团队工程规范明文写入**：哪些决策 Loop 做、哪些决策人做
 
-→ [第12原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-three-layers-decision-framework-product-comparison-ralph-2026-06-18.md)
+→ [第12原文存档](https://mp.weixin.qq.com/s/g41IfUrp1SP8fhosq9t1lA)
 
 ---
 
 ## 第 13 来源：AI技术立文「给产品经理的loop engineering」（2026-06-24，v×c=42 临界，PM 视角）
 
-> Source: [第13原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-pm-shubham-saboo-2026.md)
+> Source: [第13原文存档](https://mp.weixin.qq.com/s/N26pnOoBwnWsglqaobPcRA)
 > Author: Shubham Saboo (Google PM), 译/改编: AI技术立文
 > Date: 2026-06-24
 
@@ -870,7 +870,7 @@ Karpathy 的核心解法: 把**"什么时候停、凭什么算成功"这件事,�
 
 ## 第 14 来源：若飞「架构师」—— 5 类循环 + 6 个生产硬边界 + 从 Loop 到 Graph
 
-> Source: [第14原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-5-loops-6-hard-boundaries-ruofei.md)
+> Source: [第14原文存档](https://mp.weixin.qq.com/s/RF2DVQCl-lSf-huPZRY57w)
 > Author: 若飞（架构师 JiaGouX 主笔）
 
 本来源是 Loop Engineering 主题的**第 14 来源** — 若飞从**架构师视角**系统阐述 Loop Engineering，是同作者 Loop 系列的第 2 篇（第 4 来源是工程现场篇）。v×c=72，5 个独到角度在前 13 来源中零覆盖或仅有片段覆盖。
@@ -935,7 +935,7 @@ Karpathy 的核心解法: 把**"什么时候停、凭什么算成功"这件事,�
 
 ## 第 18 来源：若飞（架构师 JiaGouX）「Loop Engineering 详解：从 SRE 黄金信号到状态机设计与三层架构」（2026-06-28）
 
-> Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-sre-state-machine-tiered-architecture-ruofei-2026.md)
+> Source: [原文存档](https://mp.weixin.qq.com/s/nl3JUGXmWkjYOUdc7K2aSA)
 > Author: 若飞（架构师 JiaGouX）
 > Date: 2026-06-28
 
@@ -1003,7 +1003,7 @@ Karpathy 的核心解法: 把**"什么时候停、凭什么算成功"这件事,�
 - **熔断器保护**：连续无进展→打开熔断，API 限流→不重试，写权限碰生产→停自动闭环
 - **人从推动→设计**：每一轮 prompt → 运行协议——从告诉模型"做什么"到告诉系统"什么能做、什么不能做、什么时候停"
 
-→ [第18原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-sre-state-machine-tiered-architecture-ruofei-2026.md)
+→ [第18原文存档](https://mp.weixin.qq.com/s/nl3JUGXmWkjYOUdc7K2aSA)
 
 ## 第 19 来源 — 若飞：吴恩达三层 Loop — Agent 越快，人越要管慢反馈
 
@@ -1042,7 +1042,7 @@ v×c=72, 2026-07-03, 架构师(若飞)
 - ✅ **Maker/Checker 分离**：实现和验收用不同上下文、不同指令，必要时不同模型——这是之前来源未明确强调的独立验证原则
 - ✅ **Loop 适用范围边界**：可验证短寿命任务优先，核心链路/权限/计费系统由人把关——与第 18 来源的 SRE 状态机视角互补
 
-→ [第19原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/wu-enda-three-layer-loop-agent-faster-slow-feedback-ruofei.md)
+→ [第19原文存档](https://mp.weixin.qq.com/s/PGpe6EnVNnig2cuZ9VbnuA)
 
 ---
 

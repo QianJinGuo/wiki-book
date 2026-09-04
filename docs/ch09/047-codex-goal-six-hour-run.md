@@ -140,7 +140,7 @@ Old 范式下，工程师是 supervisor——监控 AI 运行，随时准备干�
 
 ## 原始存档
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/codex-goal-six-hour-run.md)
+→ [原文存档](https://tectontide.com/en/blog/codex-goal-six-hour-run/)
 
 ---
 

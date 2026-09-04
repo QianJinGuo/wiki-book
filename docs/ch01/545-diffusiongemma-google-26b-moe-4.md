@@ -4,7 +4,7 @@
 
 # DiffusionGemma：扩散式文本生成模型（Google 26B MoE，4× 推理加速）
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/diffusiongemma-4x-faster-text-generation-google-2026-06.md)
+> 原文存档：[原文存档](https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/)
 
 ## 概述
 
@@ -74,7 +74,7 @@ Google 2026-06-10 发布的实验性开放模型，Apache 2.0 协议，基于 Ge
 4. **混合解码路径**：扩散微调后仍保留 AR 生成能力（仅轻微性能退化），暗示 hybrid diffusion-AR decoding 路线 — 公告未提及的架构演化方向
 5. **能力保留确认**：thinking mode、多模态输入、长上下文全部保留（公告仅暗示），为生产选型提供依据
 
-> 原文存档：→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/diffusiongemma-technical-report-arxiv-2608-00146.md)
+> 原文存档：→ [原文存档](https://arxiv.org/abs/2608.00146)
 
 ---
 

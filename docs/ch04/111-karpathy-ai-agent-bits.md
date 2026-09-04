@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 14.2KB | `entities/karpathy-ai-agent-7-bits-value-decline-2026-allentan.md`
 
-[Karpathy Ai Agent 7 Bits Value Decline 2026 Allentan](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/karpathy-ai-agent-7-bits-value-decline-2026-allentan.md)
+[Karpathy Ai Agent 7 Bits Value Decline 2026 Allentan](https://mp.weixin.qq.com/s/-EAqvaCnjY-dox3P8d8D7w)
 
 # Karpathy 怎么看 AI Agent（七）：当程序员贡献的 bits 越来越少，什么技能还值钱
 **作者**：AllenTang
@@ -131,7 +131,7 @@ Karpathy 隐含的警告最容易被忽略的部分是时序：问题定义能�
 - [Github Investigating Teampcp Claimed 17Cc77](../ch01/474-github.html)
 - [Subagents 详解Claude Code 如何避免上下文污染 V2](../ch03/057-claude-code.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/karpathy-ai-agent-7-bits-value-decline-2026-allentan.md)
+→ [原文存档](https://mp.weixin.qq.com/s/-EAqvaCnjY-dox3P8d8D7w)
 
 ---
 

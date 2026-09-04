@@ -4,7 +4,7 @@
 
 # 什么是数据智能体Data Agent--数据智能体-火山引擎
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/volcengine-data-agent-product-overview.md)
+→ [原文存档](https://www.volcengine.com/docs/85637/1563626?lang=zh)
 
 ## 摘要
 

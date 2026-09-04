@@ -15,7 +15,7 @@
 - [When Growth Slows Is It Sales Fault Or The Products Fault The Answer Has Changed](https://github.com/QianJinGuo/wiki-public/blob/main/entities/when-growth-slows-is-it-sales-fault-or-the-products-fault-the-answer-has-changed.md)
 - [Tmall Ai Coding Practice Team Knowledge Base](../ch05/076-ai-coding.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/reasoning-lift.md)
+→ [原文存档](https://www.growth-memo.com/p/reasoning-lift-what-happens-to-ai)
 
 ## 深度分析
 ### 核心发现：reasoning 模式重塑 AI 信息获取机制
@@ -44,7 +44,7 @@ TOFU 内容价值的重新发现：当品牌在 Problem 阶段被引用，高 re
 - 早期（Problem/Exploration）引用率提升幅度大，模型将问题视为研究任务
 - 中期（Comparison）fan-out 查询和引用数达到峰值，模型展开多维度比较
 - 后期（Selection）引用数收窄，但查询方差最大——开放性 prompt 触发更多研究，结构性 prompt 几乎不触发查询
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/reasoning-lift.md)
+→ [原文存档](https://www.growth-memo.com/p/reasoning-lift-what-happens-to-ai)
 
 ## 实践启示
 ### 1. 测量必须按 reasoning 模式分割
@@ -69,7 +69,7 @@ Finance 是 reasoning 模式下 lift 最大的品类（+28pp），且是唯一�
 
 ### 6. 警惕旧策略的适用性风险
 文章末尾的警告值得重视：如果内容策略基于去年的 AEO / GEO / AI SEO 经验构建，它很可能已经在 reasoning 模式下表现不佳。reasoning 模式和 minimal 模式的信息生态差异太大，不能假设一套策略两者兼顾。
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/reasoning-lift.md)
+→ [原文存档](https://www.growth-memo.com/p/reasoning-lift-what-happens-to-ai)
 
 ---
 

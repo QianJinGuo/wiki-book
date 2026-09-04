@@ -16,7 +16,7 @@
 - [Skill Factory Yueheng](../ch07/054-skill.html)
 - [Code Review Graph](567-code-review-graph-claude-code-6-8-token.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-vscode-plugin-zero-code.md)
+→ [原文存档](https://mp.weixin.qq.com/s/wU_WZWzlSK_Aso_hP0iVhQ)
 
 ## 深度分析
 

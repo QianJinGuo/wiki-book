@@ -63,7 +63,7 @@ Avatar 功能本质上复现了 Deepfake 的核心能力，而 Deepfake 监管�
 - [Promptqueue Async Task Queue Opengorilla Integration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/promptqueue-async-task-queue-opengorilla-integration.md)
 - [Agi Road May Be Wrong From The Start Wang Peng Tencent](167-agi.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/introducing-gemini-omni.md)
+→ [原文存档](https://deepmind.google/blog/introducing-gemini-omni/)
 - [perceptron mk1 shocks with highly performant video analysis](../ch04/257-ai.html)
 
 ---

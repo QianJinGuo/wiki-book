@@ -5,7 +5,7 @@
 ## 核心要点
 - AI/ML 技术文章
 - 技术分析和方法论
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/wetesteddeepseekv4proandflashagainstclau.md)
+→ [原文存档](https://blog.kilo.ai/p/we-tested-deepseek-v4-pro-and-flash)
 
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/moc/cybersecurity-privacy.md)

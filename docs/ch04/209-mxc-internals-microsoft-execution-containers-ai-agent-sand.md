@@ -4,7 +4,7 @@
 
 # MXC Internals — Microsoft eXecution Containers AI Agent Sandbox
 
-> **Source**: [Origin Research — MXC Internals](https://www.originhq.com/research/mxc-execution-containers-internals) (2026-06-10, 46KB) by Origin. 原始内容存于 `[Mxc Execution Containers Internals Origin](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mxc-execution-containers-internals-origin.md)`。
+> **Source**: [Origin Research — MXC Internals](https://www.originhq.com/research/mxc-execution-containers-internals) (2026-06-10, 46KB) by Origin. 原始来源见上方链接。
 >
 > **核心定位**: MXC 是 Microsoft 2026 年开源的 **AI agent 专用沙箱**，与传统的 Docker / gVisor / firecracker 不同——它针对 agent 工作负载（长时间运行、动态网络、可执行任意代码）做了三层收紧。这是当前公开方案中**最严格的 agent-side 隔离**之一。
 
@@ -121,4 +121,3 @@ Origin 研究指出：dispatcher 不知道 bytes 由 agent 产生，plugin / CI 
 - 相关: Agent 架构
 
 ---
-

@@ -4,7 +4,7 @@
 
 # DeepSeek V4是怎么训练出来的？58页论文深入解读
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek-v4-training-58-page-paper-deep-dive.md)
+→ [原文存档](https://mp.weixin.qq.com/s/BELLFDV6hlmmFoAcJy1RZg)
 
 ## 深度分析
 

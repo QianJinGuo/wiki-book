@@ -205,7 +205,7 @@ Quick Sight Dashboard 和自定义 Chat Agent 分别服务于不同使用场景�
 - [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](135-amazon-bedrock.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/observability-monitoring.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-an-enterprise-observability-solution-for-amazon-quick.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/build-an-enterprise-observability-solution-for-amazon-quick/)
 
 ---
 

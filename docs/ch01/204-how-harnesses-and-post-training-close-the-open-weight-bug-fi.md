@@ -107,7 +107,7 @@ Inverts the narrative: "open-weight models can't do security" is **empirically f
 - `agent-harness-engineering-survey concept` — survey of harness patterns (this study provides empirical grounding)
 - `post-training-vs-architecture-tradeoff concept` — broader framing of when post-training wins
 - `open-weight-llm-security-applications concept` — what open-weight + good harness can do
-- `[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-harnesses-and-post-training-close-the-open-weight-bug-finding-gap-20260606.md)`
+- `[原始来源](https://vincenzoiozzo.com/blog/oss-models-vuln-research)`
 
 ## 三个独有贡献
 
@@ -177,4 +177,3 @@ Tigress-obfuscated binary 要求 harness 能处理控制流图简化、间接跳
 - [How Open Model Ecosystems Compound](598-how-open-model-ecosystems-compound.html)
 
 ---
-

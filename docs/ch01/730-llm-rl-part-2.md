@@ -418,7 +418,7 @@ KL 惩罚约束全局分布，熵奖励鼓励整体探索，STEER 则专注于�
 - 自我反思（Self-reflection）
 - [LLM RL中的熵 Part 1: 熵的调控](451-llm.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-rl中的熵-part-2-熵对训练的调控.md)
+→ [原文存档](https://mp.weixin.qq.com/s/O7VpFFc0qDbV-j7tNlXsVQ)
 
 ## 相关实体
 

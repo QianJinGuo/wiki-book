@@ -2,13 +2,13 @@
 
 > 📊 Level ⭐⭐ | 7.4KB | `entities/citriniresearch-supply-chain-inheritance.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/citriniresearch-supply-chain-inheritance.md)
+> -> [原文存档](https://www.citriniresearch.com/p/semis-memo-supply-chain-inheritance)
 
 ## Summary
 7×7=49 - Article ingested from newsletter candidate pipeline.
 
 ## Notes
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/citriniresearch-supply-chain-inheritance.md)
+→ [原文存档](https://www.citriniresearch.com/p/semis-memo-supply-chain-inheritance)
 
 ## 深度分析
 **1. 「Supply Chain Inheritance」框架的核心洞察：EV 供应链正在成为 AI 基础设施的构建模块**
@@ -44,7 +44,7 @@ Citrini 指出，Nvidia 在 2025 年 5 月的 800V DC 机架架构技术博客�
 
 4. **AI 数据中心的被动元件和功率元件供应风险被低估**：大多数 AI 供应链讨论集中在 GPU 和 HBM，但 MLCC、功率电感、GaN/SiC 功率器件等被动和分立元件的供应瓶颈可能同样严峻。建议数据中心建设方和服务器 OEM 提前锁定这些元件的长期供应协议。
 5. **关注「供应链继承」的时间差**：EV 供应链的产能建设周期和 AI 需求爆发的时间差（大约 3-5 年）意味着某些元件可能在 2026-2027 年出现结构性短缺，而另一些在 2028 年后才显现。建议对不同元件的供应风险进行分级评估。
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/citriniresearch-supply-chain-inheritance.md)
+→ [原文存档](https://www.citriniresearch.com/p/semis-memo-supply-chain-inheritance)
 
 ## 相关实体
 - [Semis Memo: Supply Chain Inheritance](455-semis-memo-supply-chain-inheritance.html)

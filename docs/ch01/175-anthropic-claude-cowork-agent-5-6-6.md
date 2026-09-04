@@ -22,7 +22,7 @@
 - [Introducing Claude Platform On Aws Anthropics Native Platfor](340-claude.html)
 - [Anthropic Claude Managed Agents Platform Launch](158-anthropic-claude-managed-agents.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-claude-cowork-task-boundary-5-signals-6-stages.md)
+→ [原文存档](https://mp.weixin.qq.com/s/LZMqIIu_yEoMVHy5wgujJw)
 
 ## 3 大入口对比
 

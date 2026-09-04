@@ -387,7 +387,7 @@ skills.sh 提供了配套的 skill 管理工具。多人协作时，可在 code 
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/ai-skill-design.md)
 ## 2nd Source 原文存档
-→ [Agent skill 迭代式编写实战 — 淘天物流其林 2026-06-12](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-skill-iterative-writing-taobao-logistics.md)
+→ [Agent skill 迭代式编写实战 — 淘天物流其林 2026-06-12](https://mp.weixin.qq.com/s/59Z2eVOg914_bpRD6-WsYg)
 
 ---
 

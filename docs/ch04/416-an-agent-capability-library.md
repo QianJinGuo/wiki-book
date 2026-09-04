@@ -41,7 +41,7 @@ The idea is that this compounds. Every time I set something up, I write a doc fo
 
 ## 原文存档
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-capability-library.md)
+→ [原文存档](https://samihonkonen.com/posts/an-agent-capability-library/)
 
 ---
 ## 关联

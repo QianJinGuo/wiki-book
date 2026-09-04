@@ -86,6 +86,6 @@ D1-D4 × R1-R3 的矩阵为不同风险等级的部署场景提供了明确的�
 - [Agent 安全威胁模型](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-security-threat-models.md) — Agent 安全概念框架
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — Agent 运行环境安全
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepmind-securing-future-ai-agents.md)
+→ [原文存档](https://deepmind.google/blog/securing-the-future-of-ai-agents/)
 
 ---

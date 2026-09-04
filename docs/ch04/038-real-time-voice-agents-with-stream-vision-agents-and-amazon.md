@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 23.2KB | `entities/real-time-voice-agents-with-stream-vision-agents-and-amazon-nova-2-sonic.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/real-time-voice-agents-with-stream-vision-agents-and-amazon-nova-2-sonic.md)
+> -> [原文存档](https://aws.amazon.com/blogs/machine-learning/real-time-voice-agents-with-stream-vision-agents-and-amazon-nova-2-sonic/)
 
 ## 核心要点
 - Stream Vision Agents + Amazon Nova 2 Sonic + Stream Edge Network 构建生产级实时语音 Agent
@@ -155,7 +155,7 @@ Vision Agents + Nova 2 Sonic 非常适合用户无法可靠使用屏幕的场景
 - [Amazon Bedrock模型推理的Serverless异步架构](../ch11/135-amazon-bedrock.html)
 - [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](383-amazon-bedrock-agentcore.html)
 - [基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](383-amazon-bedrock-agentcore.html)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/real-time-voice-agents-with-stream-vision-agents-and-amazon-nova-2-sonic.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/real-time-voice-agents-with-stream-vision-agents-and-amazon-nova-2-sonic/)
 
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](310-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](../ch11/211-bedrock.html)

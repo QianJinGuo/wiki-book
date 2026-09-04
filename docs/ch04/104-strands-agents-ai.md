@@ -173,7 +173,7 @@ S3 会话持久化是另一个关键的企业级特性。传统的对话助手�
 - [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](310-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [航班变更信息智能识别解决方案](https://github.com/QianJinGuo/wiki-public/blob/main/entities/航班变更信息智能识别解决方案.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/strands-agents-cloud-cost-optimizer.md)- [ec2 nat 实例选型与部署实践（aws 中国宁夏区域）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ec2-nat-instance-deploy-practice-aws-china-2026.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/based-on-strands-agents-build-cost-analytics-optimize-ai-assistant/)- [ec2 nat 实例选型与部署实践（aws 中国宁夏区域）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ec2-nat-instance-deploy-practice-aws-china-2026.md)
 
 ---
 

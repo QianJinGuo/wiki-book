@@ -2,17 +2,14 @@
 /**
  * Rewrite generated wiki-book links to the two public layers.
  *
- * Published chapter markdown is allowed to point to:
- *   - wiki-book/docs/raw/articles for source indexes; and
- *   - wiki-public for curated entity/concept/navigation pages.
- *
- * Raw source copies are deliberately excluded from --apply because their
- * bodies are source material and must remain byte-for-byte untouched.
+ * Published chapter markdown may point to wiki-public for curated
+ * entity/concept/navigation pages. Raw article copies are private and are
+ * deliberately not recreated by this helper.
  */
 
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { wikiBookRawUrl, wikiPublicUrl } from "./link-config.mjs";
+import { wikiPublicUrl } from "./link-config.mjs";
 
 const DOCS_DIR = join(process.cwd(), "docs");
 const APPLY = process.argv.includes("--apply");
@@ -37,9 +34,6 @@ function rewriteUrl(url) {
   if (!match) return null;
 
   const target = match[1].replace(/[.,;!?]+$/, "").replace(/\.md\.md$/, ".md");
-  const rawMatch = target.match(/^raw\/articles\/(.+\.md)$/);
-  if (rawMatch) return wikiBookRawUrl(rawMatch[1]);
-
   const publicMatch = target.match(
     /^(entities|concepts|comparisons|queries|moc)\/(.+\.md)$/,
   );

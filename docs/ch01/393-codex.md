@@ -17,7 +17,7 @@ Chris 是这样评论的："ChatGPT 就像个猎人，他出去帮我找食物�
 - [Chatgpt Search Web Run Fanout Searchengineland](712-chatgpt.html)
 - [Stochastic Parrot Thought Experiment](https://github.com/QianJinGuo/wiki-public/blob/main/entities/stochastic-parrot-thought-experiment.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/codex-autonomous-earning-money.md)
+→ [原文存档](https://mp.weixin.qq.com/s/MKLlnvdDOKz97VnBln1Gmg)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/openai-developer-ecosystem.md)
 ## 深度分析

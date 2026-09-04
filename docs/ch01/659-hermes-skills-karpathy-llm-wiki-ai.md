@@ -4,7 +4,7 @@
 
 # 手把手：用 Hermes Skills + Karpathy 的 LLM Wiki 让 AI 越用越懂你
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-skills-llm-wiki-self-improving-knowledge-system.md)
+→ [原文存档](https://mp.weixin.qq.com/s/KE4BRvYJJysKpoy3jpaFbQ)
 
 ## 深度分析
 

@@ -68,7 +68,7 @@ APAC 既是全球经济增长引擎，也是气候变化最脆弱的区域之一
 - [Improve Bot Accuracy With Amazon Lex Assisted Nlu](../ch01/496-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
 - [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](108-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/google-deepmind-accelerator-asia-pacific.md)
+→ [原文存档](https://deepmind.google/blog/were-launching-the-google-deepmind-accelerator-program-in-asia-pacific-to-tackle-environmental-risks)
 
 ---
 

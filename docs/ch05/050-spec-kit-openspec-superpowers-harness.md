@@ -86,7 +86,7 @@ CCC 在文中提到了 Matt Pocock 的 grilling 方式（在约束中生长）�
 - [Spec-Driven Development Harness](008-harness.html) — 与 Spec 层配合的 Harness 方法论
 - [AI-Friendly 后端标准化路径](019-ai-friendly.html) — 另一视角的工程规范建设实践
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/spec-kit-openspec-superpowers-hybrid-harness.md)
+→ [原文存档](https://mp.weixin.qq.com/s/ZlTW-D0PIS0dQKhnb1_ldA)
 
 ---
 

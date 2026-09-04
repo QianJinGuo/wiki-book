@@ -129,7 +129,7 @@ LLM 时代软件工程师的核心技能：
 - [本文实体](451-llm.html) — Tomassetti 的分析
 - [AI Agent Hype](../ch04/312-ai-agent.html) — 对 AI agent 过度炒作的冷静分析
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/what-is-software-llms-replace-tomassetti-2026.md)
+→ [原文存档](https://tomassetti.me/what-is-software-llms-interface-layer)
 
 ---
 

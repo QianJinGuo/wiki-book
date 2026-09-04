@@ -15,7 +15,7 @@
 - [全球Ai新王诞生Anthropic估值冲爆12万亿首次反超Openai](316-openai.html)
 - [Ai Native Undergrads Graduation 2026](../ch05/018-ai-native.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jury-dismisses-all-claims-in-elon-musk-s-lawsuit-against-ope.md)
+→ [原文存档](https://www.npr.org/2026/05/18/nx-s1-5822366/musk-altman-openai-jury-verdict-claims-dismissed)
 
 ## 深度分析
 ### 诉讼时效作为核心法律争点

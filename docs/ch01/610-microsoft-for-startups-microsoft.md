@@ -42,7 +42,7 @@ $1,000 → $150,000 的阶梯式解锁机制，本质上是将云厂商常见的
 - [Microsoft For Startups Microsoft](387-microsoft-for-startups-microsoft.html)
 - [5Thingstoknowabouttheclarityact](https://github.com/QianJinGuo/wiki-public/blob/main/entities/5thingstoknowabouttheclarityact.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/microsoft-startups.md)
+→ [原文存档](https://www.microsoft.com/en-us/startups/apply?wt.mc_id=tldrfounders_2_051826_newsletter_startups)
 
 ---
 

@@ -37,7 +37,7 @@ Anthropic 在总结中特别强调了渐进式 rollout 的重要性：任何可�
 此外，Claude Code 的案例表明，当 Agent 开始"健忘"或"重复"时，根因可能不在模型层，而在上下文管理或缓存层——这是一个需要在调试时扩展思路的重要提醒。
 
 ## 相关资源
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-发布官方报告承认存在-3-处质量退化问题.md)
+- [原文存档](https://mp.weixin.qq.com/s/HP3Xd_y620oxi1HCFd-dxQ)
 -
 
 - [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/moc/cybersecurity-privacy.md)

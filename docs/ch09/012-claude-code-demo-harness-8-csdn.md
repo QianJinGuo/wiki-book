@@ -177,7 +177,7 @@ Haiku (60%) → Sonnet (30%) → Opus (10%)
 - [Agent Skill Writing](../ch01/284-agent-skill.html) — Skill 编写实践（第三关深入）
 - [Agent Reliability Context Drift Tool Hallucination](../ch03/004-agent.html) — 漂移与幻觉的关联分析
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-demo-to-production-8-gates-huang-jia-csdn-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/K4c-lFJFjF5ouTXKxw5Shg)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/memory-context-systems.md)
 ## 深度分析

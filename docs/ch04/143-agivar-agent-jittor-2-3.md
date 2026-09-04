@@ -4,7 +4,7 @@
 
 # Agivar 录屏教学桌面 Agent
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agivar-screen-recording-teaching-brain-cerebellum-architecture-2026.md)
+> 原文存档：[原文存档](https://mp.weixin.qq.com/s/c8xIwgeulISyyuQee7cwnA)
 
 > **软文性质**：机器之心发布"非十科技 Agivar"产品。本文重点提取**架构创新 + 方法论**，软文部分批判性吸收。
 
@@ -149,7 +149,7 @@ Jittor 已成国内主流深度学习框架之一。Agivar 对底层推理调度
 → [Computer Use 45× 成本问题](220-computer-use-45x-more-expensive-than-structured-apis.html) — Computer Use 的成本痛点
 → [IBM Forward Deployed Units (FDU)](257-ai.html) — FDE 模式企业级 AI 部署
 → [Agentic Future 竞赛 (Tidemark)](334-the-race-to-own-the-agentic-future-tidemark.html) — FDE 概念与投资视角
-→ [原文存档（本篇）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agivar-screen-recording-teaching-brain-cerebellum-architecture-2026.md)
+→ [原文存档（本篇）](https://mp.weixin.qq.com/s/c8xIwgeulISyyuQee7cwnA)
 
 ---
 

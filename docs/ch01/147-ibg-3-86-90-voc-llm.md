@@ -22,7 +22,7 @@
 - [Be More Expressive To Close More Sales](089-be-more-expressive-to-close-more-sales.html)
 - [Datacomp For Language Models](https://github.com/QianJinGuo/wiki-public/blob/main/entities/datacomp-for-language-models.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/didi-ibg-customer-experience-llm-quality-inspection-3-pipelines.md)
+→ [原文存档](https://mp.weixin.qq.com/s/_wTZKL9U1i4QE2vo5c8oaQ)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/prompt-engineering-guide.md)
 ## 4 大业务挑战

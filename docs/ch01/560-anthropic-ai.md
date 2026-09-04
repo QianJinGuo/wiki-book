@@ -10,7 +10,7 @@
 - [Harness Engineering Three Evolutions](../ch05/057-harness-engineering.html)
 - [Deepseek视觉原语论文当所有人在堆图像分辨率时它在堆指代精度](418-deepseek.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic最危险路线图曝光-无限记忆多智能体-硅谷ai终局仅剩双雄决顶.md)
+→ [原文存档](https://mp.weixin.qq.com/s/tliV0z_lDN3rvmxPDvCccg)
 
 - [anthropic 工程团队 1680 人画像：不是博士实验室，是 infra 工程军团](../ch04/257-ai.html)
 

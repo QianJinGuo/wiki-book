@@ -4,7 +4,7 @@
 
 # ChatGPT Dreaming V3：长期记忆架构级重构
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/chatgpt-dreaming-v3-long-term-memory-openai.md)
+> 原文存档：[原文存档](https://mp.weixin.qq.com/s/-k71aRS38kiZexsyFU3JGw)
 
 OpenAI 2026-06-05 凌晨正式推出 **Dreaming V3**——ChatGPT 真正意义上的长期记忆架构，**架构级重构**（不是功能小更新）。三个核心数据：时效正确率 9.4% → **75.1%**；偏好跟随成功率 31.4% → **71.3%**；维护算力 **-80%**（5 倍削减）。把大模型从短期记忆对话工具 → 长期记忆个人助手方向推了一大步。
 
@@ -150,7 +150,7 @@ OpenAI 2026-06-05 凌晨正式推出 **Dreaming V3**——ChatGPT 真正意义�
 
 ## 第 2 来源：新智元 ASI启示录 中文译本（2026-06-07）
 
-> → [第 2 原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/chatgpt-dreaming-v3-long-term-memory-xinzhiyuan.md)
+> → [第 2 原文存档](https://x.com/OpenAI/status/2062567556524003631)
 
 新智元 ASI启示录 2026-06-07 发布的中文译本，报道**同一场 OpenAI Dreaming V3 官方发布**（sha256 完全不同，URL 不同：`y4jKo6GnBMd4RWOYgXBknA` vs `-k71aRS38kiZexsyFU3JGw`），核心数据（71.3% 偏好跟随 / 5 倍算力削减 / 三场大考 / 时间感知）完全对齐。**新智元译本的独特贡献**：
 

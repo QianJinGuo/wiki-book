@@ -61,7 +61,7 @@ Reference 在三端各有侧重：iPhone 用于随时捕获灵感，iPad 提供�
 - [在 Macos 上用 Ai Coding 搭一个隐私优先的会议纪要助手](../ch05/076-ai-coding.html)
 - [Apple Silicon Costs More Than Openrouter](../ch01/323-apple-silicon-costs-more-than-openrouter.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/www-referenceboard-app.md)
+→ [原文存档](https://www.referenceboard.app)
 
 ## 深度分析
 

@@ -30,7 +30,7 @@ Kiro CLI、Kiro IDE、Kiro MCP Skills、Amazon Bedrock
 - [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](../ch03/057-claude-code.html)
 - [将 Kiro CLI 封装为 REST API：双通道架构实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kiro-cli-rest-api-architecture-practice.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/freelance-designers-cant-compete-ai-subscription.md)
+→ [原文存档](https://weandthecolor.com/freelance-designers-cant-compete-with-a-20-month-ai-subscription-heres-what-actually-works-now/209620)
 
 - [使用 Kiro 规范驱动开发加速数据质量建设 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/use-kiro-specification-driven-development-to-accelerate-data-quality-construction.md)
 

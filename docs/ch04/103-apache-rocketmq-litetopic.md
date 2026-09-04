@@ -201,7 +201,7 @@ LiteTopic 适合以下场景：
 - [Agent Skills Teams Architecture Evolution Selection Guide](199-agent-skills-teams.html)
 - [Hermes Agent K2 6 Multi Agent](161-hermes-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rocketmq-5-5-0-litetopics-ai-agent-messaging.md)
+→ [原文存档](https://mp.weixin.qq.com/s/gXZz2wcNbrQatciy-o3-0A)
 
 ---
 

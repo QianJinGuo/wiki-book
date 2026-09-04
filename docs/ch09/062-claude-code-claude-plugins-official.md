@@ -121,7 +121,7 @@ Anthropic 采用「官方维护 30+ 内部插件 + 社区贡献 10+ 外部插件
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](../ch01/229-anthropic-claude-code.html)
 - [Claude Code 7 Layer Memory Architecture](../ch03/057-claude-code.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-official-plugins-anthropic.md)
+→ [原文存档](https://mp.weixin.qq.com/s/-g-JDq6PmcrcUTpGU-U1LA)
 - [prosemirror @文档 mention：知识库 agent 输入框的工程化实现](https://github.com/QianJinGuo/wiki-public/blob/main/entities/prosemirror-knowledge-base-mention.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/workflow-orchestration.md)
 

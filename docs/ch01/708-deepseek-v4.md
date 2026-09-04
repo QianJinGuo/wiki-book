@@ -4,7 +4,7 @@
 
 # 读完这篇，你就搞懂 DeepSeek v4 了
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/读完这篇你就搞懂-deepseek-v4-了.md)
+→ [原文存档](https://mp.weixin.qq.com/s/MamimcCQj_Hd12T8iFVmKg)
 
 ## 深度分析
 

@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐ | 9.0KB | `entities/claude-for-small-business.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-for-small-business.md)
+> -> [原文存档](https://www.anthropic.com/news/claude-for-small-business)
 
 ## 核心要点
 - Anthropic 推出 Claude for Small Business，目标客群为美国小型企业主 
@@ -10,7 +10,7 @@
 - 产品以「toggle install」形式嵌入 Claude Cowork，支持 QuickBooks、PayPal、HubSpot、Canva、Docusign、Google Workspace、Microsoft 365 共 7 个主流平台 
 - 内置 15 个即用型 agentic workflows，覆盖财务、运营、销售、营销、人力资源、客户服务六大职能领域 
 - 评分：8×9=72 分（质量优秀），推荐等级 strong ★★★★★ 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-for-small-business.md)
+→ [原文存档](https://www.anthropic.com/news/claude-for-small-business)
 
 ## 深度分析
 ### 产品定位：填补 SMB AI 市场的结构性空白
@@ -57,7 +57,7 @@ Claude for Small Business 代表了一种新兴的「AI Native SMB 产品」范�
 - **垂直行业工作流封装**：Anthropic 提供的是跨行业通用能力，但在餐饮、零售、服务业等领域，细粒度的行业特定工作流仍有大量空白
 - **本地化与合规**：SMB 的法规遵从（税务、劳动法、州级差异）高度复杂，针对特定市场的合规性 AI 辅助是蓝海
 - **AI 采用培训与咨询**：Claude SMB Tour 揭示的需求——「工具够了，但不知道怎么用」——在不同市场同样存在，AI fluency 培训是天然的咨询业务切入口
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-for-small-business.md)
+→ [原文存档](https://www.anthropic.com/news/claude-for-small-business)
 
 ## 相关实体
 - [Introducing Claude for Small Business](026-introducing-claude-for-small-business.html)

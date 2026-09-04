@@ -4,7 +4,7 @@
 
 # Introducing Seer Agent: The answer is already in Sentry. Now you can ask for it.
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/introducing-seer-agent-the-answer-is-already-in-sentry-now-you-can-ask-for-it.md)
+→ [原文存档](https://blog.sentry.io/introducing-seer-agent/)
 
 ## 摘要
 

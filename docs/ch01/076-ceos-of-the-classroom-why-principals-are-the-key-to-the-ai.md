@@ -4,7 +4,7 @@
 
 # CEOs of the classroom: Why principals are the key to the AI era
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/principals-ai-education.md)
+→ [原文存档](https://www.salesforce.com/blog/principal-summit/)
 
 ## 摘要
 

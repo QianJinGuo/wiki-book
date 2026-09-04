@@ -4,7 +4,7 @@
 
 # 视频 RAG 中分块策略：基于停顿、滑动窗口与基于 LLM 的方法
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/video-rag-chunking-strategy-deephub-imba.md)
+→ [原文存档](https://mp.weixin.qq.com/s/iIJ5na1kZRS6Hks2edLZ-A)
 
 ## 深度分析
 

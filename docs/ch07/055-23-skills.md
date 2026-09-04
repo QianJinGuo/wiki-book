@@ -72,7 +72,7 @@ ljg 技能的独特之处在于它 **零代码、纯 Markdown**——不依赖�
 - [规范驱动的认知框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/spec-driven-development-cognitive-framework.md)
 - [上下文工程范式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-engineering-three-memory-paradigms.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ljg-skills-deep-dive-datastudio-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/A1uO-XjksHnlnmZn3-hJYw)
 
 ---
 

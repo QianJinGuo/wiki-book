@@ -39,7 +39,7 @@ Recurrent neural networks take this one step further, with a built-in memory loo
 
 ## 原文存档
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/senior-engineer-guide-inside-llm.md)
+→ [原文存档](https://www.pathtostaff.com/p/everything-a-senior-engineer-needs)
 
 ---
 ## 关联

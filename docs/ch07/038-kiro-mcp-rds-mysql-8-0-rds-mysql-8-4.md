@@ -25,7 +25,7 @@
 - [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/223-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
 - [Eks Gpu Operator Custom Driver Cuda Workload](https://github.com/QianJinGuo/wiki-public/blob/main/entities/eks-gpu-operator-custom-driver-cuda-workload.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kiro-mcp-rds-mysql-upgrade.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/using-kiro-mcp-automation-rds-mysql-8-0-rds-mysql-8-4/)
 
 - [Amazon Quick Mcp Kdbx Time Series](065-amazon-quick-mcp.html)
 - [Transforming Rare Cancer Research With Amazon Quick Integrat](https://github.com/QianJinGuo/wiki-public/blob/main/entities/transforming-rare-cancer-research-with-amazon-quick-integrat.md)
@@ -61,9 +61,9 @@
 
 4. **为蓝绿部署的蓝色环境建立 24-48 小时保留窗口**：升级完成后保留旧的蓝色实例 24-48 小时，作为回退路径。虽然 rename 回退会丢失 switchover 后的数据变更，但它提供了一个不需要从快照还原的快速回退选项——这在凌晨升级后的紧急情况下尤其有价值。
 
-5. **通过 MCP 协议将运维脚本封装为可组合工具**：这个工具的架构可以作为其他 AWS 运维自动化的参考模板。将现有的运维脚本（用 AWS CLI、bash、Python）通过 FastMCP 封装为 MCP 服务器，可以在不改变底层脚本的前提下，让任何 MCP-compatible 的 AI 工具调用这些运维能力。这比用 LLM 直接生成 bash 命令的可靠性高得多。 [^raw/articles/kiro-mcp-rds-mysql-upgrade.md:52-500]
+5. **通过 MCP 协议将运维脚本封装为可组合工具**：这个工具的架构可以作为其他 AWS 运维自动化的参考模板。将现有的运维脚本（用 AWS CLI、bash、Python）通过 FastMCP 封装为 MCP 服务器，可以在不改变底层脚本的前提下，让任何 MCP-compatible 的 AI 工具调用这些运维能力。这比用 LLM 直接生成 bash 命令的可靠性高得多。 [kiro-mcp-rds-mysql-upgrade.md:52-500](https://aws.amazon.com/cn/blogs/china/using-kiro-mcp-automation-rds-mysql-8-0-rds-mysql-8-4/)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kiro-mcp-rds-mysql-upgrade.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/using-kiro-mcp-automation-rds-mysql-8-0-rds-mysql-8-4/)
 
 ---
 

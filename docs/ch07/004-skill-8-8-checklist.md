@@ -442,7 +442,7 @@ Pitfalls 不是设计时想象出来的警告，而是实际上线后沉淀下�
 - [Perplexity Internal Skill Design Guide](054-skill.html)
 - [Hermes Skill System Winty](016-hermes-skill.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-design-spec-8-block-checklist-winty.md)
+→ [原文存档](https://mp.weixin.qq.com/s/pwm9e_wMhqlbBh8ICWJWxQ)
 - [skill 产品哲学：歸藏做了爆款 skill 后的产品反思](054-skill.html)
 
 ---

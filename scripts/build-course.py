@@ -425,7 +425,7 @@ def build_course() -> dict:
     return {
         "version": "1.0",
         "title": "AI 工程主课程：从 LLM 到生产级 Agent",
-        "subtitle": "从 4,000+ 篇资料中提炼 16 个连续模块，用一个 Wiki Research Agent 贯穿实践。",
+        "subtitle": "从数千篇公开来源资料中提炼 16 个连续模块，用一个 Wiki Research Agent 贯穿实践。",
         "method": {
             "core": "每个模块只保留 3 篇入口文章：核心原理、工程案例、延伸阅读。",
             "source": "课程文章来自当前 docs/ 中实际可发布的文件；文章索引只作为排序辅助。",

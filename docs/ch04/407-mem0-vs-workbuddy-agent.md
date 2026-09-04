@@ -6,7 +6,7 @@
 
 > Agent 记忆层不是简单地记录聊天的历史信息，需要把历史交互压缩成可检索、可追溯、可演化的长期上下文。Mem0（开源通用框架）与 WorkBuddy（腾讯专家团模式）代表了 Agent 长期记忆的两条不同技术路线。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mem0-vs-workbuddy-agent-memory.md)
+→ [原文存档](https://mp.weixin.qq.com/s/CyZv5BQyW3SSVIJ1U8Ba9A)
 
 ## Mem0 架构
 
@@ -63,7 +63,7 @@ Mem0（59.9k GitHub stars）是开源的 Agent 记忆框架，核心组件：
 - 本来源与第 1 来源为同日生产的微信公众号文章，核心对比框架（Mem0 vs WorkBuddy）一致，但侧重点略有不同：第 2 来源更强调 Obsidian 集成和实际落地场景的细节。
 - 互补角度：Obsidian 集成方案细节、个人知识库与 Agent 记忆的融合、实际使用中的工程挑战。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mem0-vs-workbuddyagent-记忆层的两条路线谁才是终极答案.md)
+→ [原文存档](https://mp.weixin.qq.com/s/CyZv5BQyW3SSVIJ1U8Ba9A)
 
 ---
 

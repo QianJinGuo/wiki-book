@@ -33,7 +33,7 @@ Visa and OpenAI recently announced a [partnership](https://corporate.visa.com/en
 
 If the German ruling holds, it could be devastating for Google’s AI Overview feature. Tests from earlier this year found th
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/06-ai-and-liability-html.md)
+→ [原文存档](https://schneier.com/blog/archives/2026/06/ai-and-liability.html)
 
 ---
 ## 关联

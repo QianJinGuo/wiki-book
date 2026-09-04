@@ -11,7 +11,7 @@
 - [Baidu Confidential Computing Cpu Gpu Full Chain](../ch04/257-ai.html)
 - [Tencent Hunyuan Hy3 Preview Open Source Agent](113-hy3-preview.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qoder-1-0-release-ai-ide-agent-workbench.md)
+→ [原文存档](https://mp.weixin.qq.com/s/l-L2_abmijjpG_XOCAMsZw)
 
 ## 深度分析
 Qoder 1.0的发布标志着AI编程工具从"辅助编码"向"自主交付"的根本性范式转移。阿里选择将Quest从IDE内的一个模式升级为独立视窗，这一设计决策暗示了一个重要信号：未来的开发工作流将不再以人类开发者为中心构建，而是以Agent为核心重新组织人机协作界面。
@@ -30,7 +30,7 @@ Qoder 1.0将并行范围扩展至跨项目、跨代码库维度，这一能力�
 **对于AI Agent研究者**：Qoder的Harness重构揭示了一个重要趋势——上下文工程（Context Engineering）和任务运行时（Task Runtime）正在成为比模型能力更关键的竞争要素。当模型能力趋于同质化时，Harness层的设计质量将决定Agent在实际生产环境中的可用性。
 
 ## 关联阅读
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qoder-1-0-release-ai-ide-agent-workbench.md)
+→ [原文存档](https://mp.weixin.qq.com/s/l-L2_abmijjpG_XOCAMsZw)
 
 ---
 

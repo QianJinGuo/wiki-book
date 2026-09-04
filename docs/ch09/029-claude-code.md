@@ -271,7 +271,7 @@ Claude Code 性能评测揭示了 Agent 编程工具的核心性能规律：**�
 - [Subagent 上下文卫生](../ch04/245-claude-code-subagent.html)
 - [上下文窗口管理对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-window-management.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-deep-architecture-analysis.md)
+→ [原文存档](https://mp.weixin.qq.com/s/bMjXlD-OcnFW-wuN1yW8FA)
 
 ## 相关实体
 

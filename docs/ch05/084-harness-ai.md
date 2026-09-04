@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐⭐ | 18.2KB | `entities/tencent-knowledge-harness-practice.md`
 
-[Tencent Knowledge Harness Practice](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-knowledge-harness-practice.md)
+[Tencent Knowledge Harness Practice](https://mp.weixin.qq.com/s/Xy8NwrHZRWv301eTZz4Dpw)
 
 # Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践
 原创 腾讯程序员 腾讯技术工程
@@ -173,14 +173,14 @@ Agent 上了生产一线后，知识供给的三件事决定成败：**检索精
 
 第 1 来源（04-27）提出"知识是护城河"的框架与五层存储架构；本篇（08-17）是同一团队（腾讯技术工程·安全中心）将该框架落地为可运行的团队知识系统的实践报告，两篇合看构成"框架 → 落地"完整叙事。
 
-→ [第 2 来源原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent的上限可能不在模型而在团队知识.md)
+→ [第 2 来源原文存档](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649803612&idx=1&sn=13be122cb61484933486e146d5724e37)
 
 ## Related entities
 - [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](008-harness.html)
 - [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](008-harness.html)
 
 ## 关联阅读
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-knowledge-harness-practice.md)
+- [原文存档](https://mp.weixin.qq.com/s/Xy8NwrHZRWv301eTZz4Dpw)
 ## 相关实体
 
 - [harness 工程可视化：vibe coding 中重建工程可控性](057-harness-engineering.html)

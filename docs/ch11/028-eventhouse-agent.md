@@ -119,9 +119,9 @@ EventHouse 的定位是 AI 时代面向 Agent 的"标准插座"。
 - **Analysis**：实时与历史数据统一分析，同一套 SQL 同时处理事件流和归档数据
 - **Luma**：AI Agent 调用层，将治理后的事件数据转换成 AI Agent 能理解、能查询、能调用的格式
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/alibaba-eventhouse-enterprise-agent-context.md)
+→ [原文存档](https://mp.weixin.qq.com/s/HSWuUVt_AG6uPotiEvORwA)
 
-→ [第 2 来源原文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aliyun-eventhouse-ai-agent实时事件-2026.md)
+→ [第 2 来源原文](https://mp.weixin.qq.com/s/MJTvVCVbt9zuy2lWRj2Yyg)
 
 ## 相关实体
 

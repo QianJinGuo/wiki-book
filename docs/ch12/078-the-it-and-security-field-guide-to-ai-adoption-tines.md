@@ -14,7 +14,7 @@
 - [Fedora Hummingbird Container Security](../ch04/257-ai.html)
 - [Sysdig Headless Cloud Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sysdig-headless-cloud-security.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-it-and-security-field-guide-to-ai-adoption-tines.md)
+→ [原文存档](https://www.tines.com/access/guide/the-it-and-security-field-guide-to-ai-adoption/)
 
 ## 问题背景
 Security and IT teams are under pressure to adopt AI, but many are seeing the opposite of what was promised. Tools that demo well don't hold up in real workflows. Complexity increases. Trust breaks down. And instead of reducing workload, AI can introduce new risks and oversight burdens. This guide breaks down why AI adoption fails in practice and gives teams a clearer path forward, from evaluation to implementation, with humans in the loop.
@@ -47,7 +47,7 @@ Human-in-the-loop（人工介入）是确保AI系统安全性和可靠性的关�
 
 ### 5. 真实企业案例参考
 指南汇集了多家企业的AI采纳案例，包括Udemy、Canva、Jamf和Vimeo。这些案例涵盖了不同规模和行业的企业，展示了AI在降低工作负载和提高一致性方面的实际效果。通过这些真实案例，读者可以了解AI在不同环境下的实际表现，以及企业在采纳过程中遇到的共同挑战和解决方案。
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-it-and-security-field-guide-to-ai-adoption-tines.md)
+→ [原文存档](https://www.tines.com/access/guide/the-it-and-security-field-guide-to-ai-adoption/)
 
 ---
 

@@ -4,7 +4,7 @@
 
 # 我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/karpathy-autoresearch-software-development-niaowo.md)
+→ [原文存档](https://mp.weixin.qq.com/s/BPviViv47rZRt0feiONYqg)
 
 ## 深度分析
 

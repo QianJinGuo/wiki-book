@@ -143,7 +143,7 @@ Agent Loop 在 `agent/conversation_loop.py`（约 3900 行），实际核心逻�
 
 ## SOUL.md 专题（术哥 2026-06-03 续篇）
 
-术哥 2026-06-03 发布的 SOUL.md 专题深度续篇（[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-soul-md-personality-shugex.md)），把 v0.14 架构篇简述的 3 层提示词展开为**完整的身份系统专题**——SOUL.md 是如何从文件到提示词、14 personality 如何叠加、为什么需要安全扫描、容器为什么不能自改身份。
+术哥 2026-06-03 发布的 SOUL.md 专题深度续篇（[原文存档](https://mp.weixin.qq.com/s/_xojuGE6fWX4LiaHj38njQ)），把 v0.14 架构篇简述的 3 层提示词展开为**完整的身份系统专题**——SOUL.md 是如何从文件到提示词、14 personality 如何叠加、为什么需要安全扫描、容器为什么不能自改身份。
 
 ### 核心命题
 

@@ -157,7 +157,7 @@ Runtime 关键能力：
 - **内容创作**：research subagent 收集素材，writing subagent 起草
 - **数据管道编排**：subagent 从不同源取数，analyst subagent 做 join/transform
 
-→ 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-context-rich-research-agents-with-deep-agents-and-bedr.md)
+→ 原文存档：[原文存档](https://aws.amazon.com/blogs/machine-learning/build-context-rich-research-agents-with-deep-agents-and-bedrock-agentcore)
 
 ## 相关实体
 

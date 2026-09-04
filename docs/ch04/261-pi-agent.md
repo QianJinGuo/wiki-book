@@ -85,7 +85,7 @@ Pi 的设计趋势反映了 Agent 框架领域的一个更广泛的转向：从�
 
 ## 来源
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pi-agent-lightweight-base-rekota.md)
+→ [原文存档](https://www.xiaohongshu.com/explore/6a12a463000000003502ff9e)
 
 ---
 ## 关联

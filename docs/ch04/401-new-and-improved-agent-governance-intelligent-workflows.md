@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 3.9KB | `entities/microsoft-copilot-studio-agent-governance.md`
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/microsoft-copilot-studio-agent-governance.md)
+> 来源：[原文存档](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/new-and-improved-agent-governance-intelligent-workflows-and-connected-app-experiences/)
 
 ## 核心要点
 - **核心挑战**：组织在扩展 AI Agent 规模时面临核心张力——如何在扩大自动化的同时不失去控制权
@@ -28,7 +28,7 @@ Agent 365 的 GA 标志着 Microsoft 的战略重心：**不只做 Agent 构建�
 - [The UI is dead, long live the agent: ServiceNow goes headless and opens its platform](../ch03/004-agent.html)
 - [Agent-to-Agent (A2A) 协议标准 — Agent间通信协议](312-ai-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/coding-agent-practice.md)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/microsoft-copilot-studio-agent-governance.md)
+→ [原文存档](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/new-and-improved-agent-governance-intelligent-workflows-and-connected-app-experiences/)
 
 ---
 

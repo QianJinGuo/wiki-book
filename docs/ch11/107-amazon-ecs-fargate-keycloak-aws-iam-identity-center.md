@@ -68,7 +68,7 @@ ALB 安全组在网络层做来源 IP 控制，Keycloak 自定义 IP Check SPI �
 - [Introducing Claude Platform On Aws](../ch01/365-introducing-claude-platform-on-aws-anthropic-s-native-platf.html)
 - [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch04/383-amazon-bedrock-agentcore.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/基于-amazon-ecs-fargate-自建-keycloak-作为-aws-iam-identity-center.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/based-on-amazon-ecs-fargate-keycloak-aws-iam-identity-center/)
 
 - [Habib Hajallie S Meticulous Ballpoint Pen Drawings Examine The Depths Of Emotion](../ch03/003-habib-hajallie-s-meticulous-ballpoint-pen-drawings-examine-t.html)
 

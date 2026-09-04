@@ -45,7 +45,7 @@ Claude Design 引发的行业焦虑，源于把「设计普及」误读为「设
 - [柚漫剧 AI 全流程提效拆解](../ch04/257-ai.html) —— AI 提效从单点到工程化的行业案例
 - [Agent Skill 设计模式](../ch04/302-agent-skills.html) —— Agent 能力封装进入设计模式阶段的趋势观察
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/designers-are-a-rare-breed.md)
+→ [原文存档](https://www.unknownarts.co/p/designers-are-a-rare-breed)
 
 ---
 

@@ -84,7 +84,7 @@ TECH_SPEC.md 作为跨会话知识传承的外部文件，比依赖模型的内�
 | 知识传承 | TECH_SPEC.md 单一事实源 | 双 Wiki 体系 |
 | 代码生成率 | 94% | 84% (字段覆盖) |
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-wework-skill-pipeline-94pct-code-gen-2026-07-20.md)
+→ [原文存档](https://mp.weixin.qq.com/s/mGGIbFyF4U1PrBJVdfgcvg)
 
 ---
 ## 关联

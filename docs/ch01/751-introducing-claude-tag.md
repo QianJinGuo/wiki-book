@@ -137,7 +137,7 @@ Claude Tag 的特性对 Agent 基础设施提出了新的要求：
 
 ## 参考
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/introducing-claude-tag.md)
+→ [原文存档](https://www.anthropic.com/news/introducing-claude-tag)
 
 ## 第 2 来源 — 新智元报道：Claude Tag 的独立身份与频道权限架构
 
@@ -149,13 +149,13 @@ Claude Tag 最核心的设计不是产品功能，而是**权限架构**。传�
 
 Ramp 2026 年 5 月数据显示，34.4% 的美国企业已在用 Claude 付费订阅，超过 OpenAI 的 32.3%。大型企业中非人类身份数量是员工数的 50 到 80 倍。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-tag-agent-identity-slack-xinzhiyuan-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/5L5-c5RxcSG16akGD6JyFA)
 
 ---
 
 ## 第 3 来源 — 架构师 JiaGouX 报道：Karpathy 三段式 LLM UI/UX 范式 + Boris Cherny 原话（2026-06-30）
 
-> Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-tag-karpathy-three-paradigms-jiagoux-2026.md)
+> Source: [原文存档](https://mp.weixin.qq.com/s/9whJsc9AIpHDjlyTNLy7RQ)
 > Author: 架构师（JiaGouX）
 > Date: 2026-06-30
 
@@ -187,7 +187,7 @@ Ramp 2026 年 5 月数据显示，34.4% 的美国企业已在用 Claude 付费�
 
 > "它还可以为自己安排任务，在数小时或数天内自主推进项目。"
 
-→ [第3原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-tag-karpathy-three-paradigms-jiagoux-2026.md)
+→ [第3原文存档](https://mp.weixin.qq.com/s/9whJsc9AIpHDjlyTNLy7RQ)
 
 ---
 

@@ -137,7 +137,7 @@ Hermes 的模型在信任方面处于中间地带——Skills 由你的 Agent �
 - [Claude Code Source Architecture](../ch03/057-claude-code.html)
 - [Claude Code Openclaw Memory Vector Db Doubt](../ch03/057-claude-code.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-system-design-three-way-comparison.md)
+→ [原文存档](https://mp.weixin.qq.com/s/fjGNX0IMv1WxOwi3uF0eeQ)
 
 ---
 

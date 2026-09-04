@@ -54,7 +54,7 @@ Moondream Photon 的 pipelined decoding 与传统的推理优化方法（如 [LL
 - [LLaVA-OneVision VLM](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llava-onevision-2-full-frame-rate-vlm-glintlab.md)
 - [高德 VLM 生产实践](../ch03/004-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/moondream-popping-gpu-bubble-photon-engine.md)
+→ [原文存档](https://moondream.ai/blog/popping-the-gpu-bubble)
 
 ---
 

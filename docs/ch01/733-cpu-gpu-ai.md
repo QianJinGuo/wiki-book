@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐⭐ | 31.9KB | `entities/从-cpu-到-gpu-全链路可信百度智能云新一代-ai-机密计算实例的探索与落地.md`
 
-[从 Cpu 到 Gpu 全链路可信百度智能云新一代 Ai 机密计算实例的探索与落地](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/从-cpu-到-gpu-全链路可信百度智能云新一代-ai-机密计算实例的探索与落地.md)
+[从 Cpu 到 Gpu 全链路可信百度智能云新一代 Ai 机密计算实例的探索与落地](https://mp.weixin.qq.com/s/hu0PIkQcsmDghr9IyiTSpw)
 
 。
 点击蓝字，关注我们
@@ -156,7 +156,7 @@ H2D/D2H 带宽因卡而异的特性，说明不同 GPU 型号对 PPCIe 的支持
 - [Nvidia Secure Local Agent Nemoclaw Openclaw](../ch04/315-nvidia-secure-local-agent-nemoclaw-openclaw.html)
 - [Fine Tuning Cosmos](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tuning-cosmos.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/从-cpu-到-gpu-全链路可信百度智能云新一代-ai-机密计算实例的探索与落地.md)
+→ [原文存档](https://mp.weixin.qq.com/s/hu0PIkQcsmDghr9IyiTSpw)
 
 ---
 

@@ -3,7 +3,7 @@
 > 📊 Level ⭐⭐ | 17.9KB | `entities/review-agent-deep-dive-winty.md`
 
 # Review Agent 机制深度解析
-来源：[前端Q/winty](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/review-agent-how-it-decides-what-to-save-winty.md)（2026-05-18），评分 56；同系列有 [Hermes Self-Improving Loop 详解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-self-improving-loop-winty.md)（2026-05-12）覆盖四组件全貌
+来源：[前端Q/winty](https://mp.weixin.qq.com/s/WdbZVxbpXT6W-oguTef_Iw)（2026-05-18），评分 56；同系列有 [Hermes Self-Improving Loop 详解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-self-improving-loop-winty.md)（2026-05-12）覆盖四组件全貌
 
 ## 核心定位
 Review Agent = Hermes 的"心智"。独立于执行 Agent 之外，专门负责复盘和判断什么值得沉淀为长期记忆。
@@ -119,7 +119,7 @@ Hermes 在这一层做了大量看似简单、但实际反直觉的设计：
 ▸ 留出"人工反馈给 Review Agent"的口子
 这些设计单看每一条都不复杂，但加起来形成了一个自我修正的学习系统——它不仅会学，还会"反思自己学得对不对"。
 **真正的"自进化"含义——不是越用越多，而是越用越准。**
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/review-agent-how-it-decides-what-to-save-winty.md)
+→ [原文存档](https://mp.weixin.qq.com/s/WdbZVxbpXT6W-oguTef_Iw)
 
 ## 深度分析
 1. **独立 Agent 设计解决角色冲突问题**

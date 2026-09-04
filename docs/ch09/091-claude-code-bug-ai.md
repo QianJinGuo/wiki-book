@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 6.2KB | `entities/claude-code-self-repair-hooks-memory-config.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-self-repair-hooks-memory-config.md)
+> -> [原文存档](https://mp.weixin.qq.com/s/RRvZ-MfdcU0hU1TTpcPtkg)
 
 # 复制这套神仙配置，让Claude Code全自动修Bug！
 

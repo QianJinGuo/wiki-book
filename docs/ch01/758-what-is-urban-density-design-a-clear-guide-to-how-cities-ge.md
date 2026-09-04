@@ -128,7 +128,7 @@
 - [Haptics Design — 交互设计](https://github.com/QianJinGuo/wiki-public/blob/main/entities/haptics-design-implementation-microsoft-windows11.md)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/what-is-urban-density-design-a-clear-guide.md)
+→ [原文存档](https://designbeep.com/2026/05/11/what-is-urban-density-design-a-clear-guide-to-how-cities-get-built-denser/)
 
 ---
 

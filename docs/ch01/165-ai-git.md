@@ -382,7 +382,7 @@ but branch -a feat/refresh-token feat/token-revocation
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/008-harness.html)
 - [Tencent Vibe Coding To Agentic Engineering Backend](../ch04/171-tencent-vibe-coding-to-agentic-engineering-backend.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-era-git-version-control-agentic-coding-practices.md)
+→ [原文存档](https://mp.weixin.qq.com/s/70hz6sYNwxErRkP7dkY8-Q)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/wiki-master-map.md)
 ## 深度分析

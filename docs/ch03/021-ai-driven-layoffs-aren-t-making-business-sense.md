@@ -47,7 +47,7 @@ AI 驱动的快速裁员还破坏了组织的学习能力。真正有效的 AI �
 1. **从辅助增强而非替代开始**：在 AI 应用的早期阶段，优先部署那些"AI 辅助人类决策"的场景（如 AI 辅助诊断、AI 辅助编程），而非直接替代场景（如 AI 客服、AI 审核）。这能积累组织对 AI 能力的真实认知。
 2. **建立 AI 就绪度评分卡**：在批准 AI 项目预算前，要求项目团队提交包含以下维度的就绪度评分：数据质量（1-10）、员工接受度（1-10）、知识管理成熟度（1-10）、业务流程标准化程度（1-10）。总分低于阈值应要求整改。
 3. **保留"AI 失败基金"**：将 AI 项目预算的 15-20% 作为失败学习基金，允许项目在发现 AI 不适用时平滑撤退，而不是硬推上线造成更大损失。
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-driven-layoffs-business-sense-cio.md)
+→ [原文存档](https://www.cio.com/article/4171054/ai-driven-layoffs-arent-making-business-sense.html)
 
 ## 相关实体
 

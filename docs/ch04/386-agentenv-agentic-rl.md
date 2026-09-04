@@ -52,7 +52,7 @@ Agent 在奖励驱动下可能尝试突破执行边界、访问隐藏服务、�
 
 - [Agentic RL 训练框架与实践](200-agentic-rl.html) — AgentENV 是 Agentic RL 的基础设施层，两者互补：RL 框架定义训练逻辑，AgentENV 提供执行环境
 - [Harness Engineering](../ch05/057-harness-engineering.html) — AgentENV 代表了 Harness 中"执行环境"这一组件的极端规模化实现
-- [Agentic Rollout 训练框架](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentic-rollout-training-framework-shumu-2026.md) — 同一领域的实操视角
+- [Agentic Rollout 训练框架](https://mp.weixin.qq.com/s/o4V3mn2vjn9h7kjUmlnccw) — 同一领域的实操视角
 
 ## 关键洞察
 
@@ -61,7 +61,7 @@ Agent 在奖励驱动下可能尝试突破执行边界、访问隐藏服务、�
 3. **增量快照 + COW Fork 让多轨迹探索变得经济可行**——树搜索、反事实探索、并行采样在传统环境下成本过高
 4. **开源生态兼容性决定采用门槛**——OCI 镜像兼容使其可直接复用现有 Docker 生态，不必重做环境打包
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentenv-agentic-rl-execution-environment-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/FuogYS7jLk7xyPOkZacd2Q)
 
 ---
 

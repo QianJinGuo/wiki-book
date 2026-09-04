@@ -99,7 +99,7 @@ WorkOS Pipes 的差异化在于：面向开发者而非企业 IT、极简 API �
 - [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch04/257-ai.html)
 - [From Doer To Director The Ai Mindset Shift](029-from-doer-to-director-the-ai-mindset-shift.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/workos-pipes-third-party-integrations.md)
+→ [原文存档](https://workos.com/blog/workos-pipes-third-party-integrations)
 
 ---
 

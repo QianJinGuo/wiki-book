@@ -100,7 +100,7 @@ Hermes 作为 Agent 编排层，自然语言对话支持进度查询/单点重�
 - **语言驱动需要工程闭环**：自然语言入口背后必须有可观测性、可回滚性和安全边界
 - **生产系统需要三层保障**：兜底（覆盖率）、质检（质量底线）、监控（可信度）
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gaode-saojie-image-selection-hermesagent-vlm-production-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/mBu0nq-2MYgdgtnE7z5ZMA)
 
 ---
 

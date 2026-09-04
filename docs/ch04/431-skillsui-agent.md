@@ -6,7 +6,7 @@
 
 ## 相关实体
 - [langchain × fireworks 100x cheaper trace judge — 通用 trace 评估](257-ai.html)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillsui-enterprise-agent-middle-layer.md)
+→ [原文存档](https://mp.weixin.qq.com/s/EWMXRtQxr6WBFSOu9OnkNA)
 
 ## 深度分析
 

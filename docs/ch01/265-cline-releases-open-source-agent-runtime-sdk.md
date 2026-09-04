@@ -4,7 +4,7 @@
 
 > [!abstract]
 > Cline 发布开源 Agent 运行时 SDK（`@cline/sdk`），采用分层 TypeScript 架构，解耦 Provider、Agent Loop 和 Core Runtime。支持 Agent Teams、插件系统、原生 MCP 连接器。Terminal Bench 2.0 测试中优于 Claude Code。
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cline-open-source-agent-runtime-sdk.md)
+> 来源：[原文存档](https://www.testingcatalog.com/cline-releases-open-source-agent-runtime-sdk-for-coding-agents/)
 
 ## 核心要点
 - **开源许可**：Apache 2.0，基于自身编码 Agent 实践经验构建
@@ -163,7 +163,7 @@ Cline 的插件系统允许注册工具、观察生命周期事件、添加规�
 1. **多模型基准测试**：单一模型上的基准对比不足以说明 SDK 优劣。设计评测时要覆盖闭源/开源多种模型，尤其要关注模型能力与 SDK 设计的交互效应 。
 2. **长程任务的可恢复性测试**：测试 Session 跨进程存活、跨 Surface 迁移的能力，这是评估 SDK 持久化设计的核心场景 。
 3. **插件系统的压力测试**：通过恶意或异常插件测试 SDK 的隔离机制和错误处理能力 。
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cline-open-source-agent-runtime-sdk.md)
+→ [原文存档](https://www.testingcatalog.com/cline-releases-open-source-agent-runtime-sdk-for-coding-agents/)
 
 ---
 

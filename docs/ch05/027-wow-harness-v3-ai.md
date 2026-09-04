@@ -7,7 +7,7 @@
 
 **wow-harness v3** 是一份面向 **跨 session 一致性** 的 AI 开发治理协议设计。它**不替代 Claude Code**，跑在 Claude Code 之上，把"一次 session 怎么高效执行"扩展为"多个 session 之间怎么保持组织级一致"。设计文档约 50,000 行，21 个模块，经历 6 轮版本迭代。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/wow-harness-v3-governance-protocol.md)
+→ [原文存档](https://mp.weixin.qq.com/s/kXNivwgCweGoV-xW_WoCtg)
 
 ## 一句话定位
 
@@ -171,7 +171,7 @@ ESAA 出现是"好消息"——意味着这个方向不是孤立判断，是领�
 - [Agent Self-Improvement Six Mechanisms](../ch03/004-agent.html) —— 长期连贯性相关
 - [From Agent Protocol to Harness Skill](067-harness-skill.html) —— 协议 → skill 演化
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/wow-harness-v3-governance-protocol.md)
+→ [原文存档](https://mp.weixin.qq.com/s/kXNivwgCweGoV-xW_WoCtg)
 
 ---
 

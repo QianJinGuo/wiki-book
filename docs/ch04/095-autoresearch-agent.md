@@ -4,7 +4,7 @@
 
 # AutoResearch 分类法：四种 Agent 循环设计与四维分析框架
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/autoresearch-taxonomy-chengzihong-chengzihong.md)
+→ [原文存档](https://zhuanlan.zhihu.com/p/2037184827225527815)
 
 ## 摘要
 

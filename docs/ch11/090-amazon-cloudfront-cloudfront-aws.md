@@ -48,7 +48,7 @@ Connection Group支持Unicast和Anycast的动态切换，这为网络架构演�
 - [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](217-amazon-nova.html)
 - [Aws Sagemaker Capacity Aware Inference Fallback](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-sagemaker-capacity-aware-inference-fallback.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-cloudfront-deploy-guide-cloudfront-domain-multi-tenant-architecture.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/amazon-cloudfront-deploy-guide-cloudfront-domain-multi-tenant-architecture/)
 
 ---
 

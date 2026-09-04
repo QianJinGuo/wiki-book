@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 11.9KB | `entities/rag-chunking-vectorization-rerank-distillation.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rag-chunking-vectorization-rerank-distillation.md)
+> -> [原文存档](https://mp.weixin.qq.com/s/Bl_u18--lqczQDV2x_NG-g)
 
 ## 核心洞察
 RAG 完整流程：分块->向量化->召回->重排；知识蒸馏同事 Skill 的关键在召回质量而非生成质量。Skill 可以教 AI 怎么做，却不一定能让 AI 知道为什么这么做。
@@ -87,7 +87,7 @@ Dify 知识库的每一个配置项，本质上都是 RAG 链路某个环节的�
 8. **Skill + RAG 才是完整方案**：单独的 Skill 只是 Workflow 复制，单独的 RAG 只是知识检索。真正要"蒸馏同事能力"，必须让 Skill 告诉 AI 流程，RAG 告诉 AI 在这个流程中应该参考什么材料，两者配合才能形成完整的 AI 同事能力。
 
 ## 来源
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rag-chunking-vectorization-rerank-distillation.md)
+→ [原文存档](https://mp.weixin.qq.com/s/Bl_u18--lqczQDV2x_NG-g)
 
 ## 相关
 → [中文版：RAG 深度解析](../ch07/054-skill.html)（同一主题的另一存档）

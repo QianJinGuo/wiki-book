@@ -282,7 +282,7 @@ AI Skill 测评报告是一套**分层置信机制**：用颜色横幅给出确�
 
 → [AI Skill 测评体系进阶指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-skill-测评体系进阶指南.md) — 同系列其他章节
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-skill-测评报告解读.md)
+→ [原文存档](https://juejin.cn/post/7619990292557447220)
 
 ## 相关实体
 
@@ -421,7 +421,7 @@ ChatAgent 时代：核心评测员对齐 → 外包对齐 → 机评对齐。长
 - Harness Gate 评估——准入准出门禁嵌入开发发布流程与其 gate 设计思想同源
 - [AliExpress 细粒度 Agent 评测体系](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-evaluation-fine-grained-system-aliexpress-2026.md)——另一家大厂工业评测实践，可横向对比
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/meituan-turing-agent-evaluation-methodology-2026-08-06.md)
+→ [原文存档](https://mp.weixin.qq.com/s/gZKWRqznB8sNBFf69fBIvw)
 
 - [MOC：Agent 工程指南](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-engineering-guide.md)
 
@@ -436,7 +436,7 @@ ChatAgent 时代：核心评测员对齐 → 外包对齐 → 机评对齐。长
 - LoongSuite GenAI SemConv 在 OTel GenAI SemConv 基础上新增 Entry/Step Span、Skill 语义、Token 级推理观测三大核心增强
 - GenAI Utils 作为工程化能力层，将语义规范的复杂性封装为统一 API，实现插桩库与规范升级的解耦
 - Token 级推理可观测首次将 vLLM / SGLang / TensorRT-LLM 引擎内部的黑盒过程拆解到 Token 粒度
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/阿里巴巴蚂蚁-loongsuite-genai-可观测语义规范从统一数据语言到规模化落地.md)
+> 来源：[原文存档](https://mp.weixin.qq.com/s/X6lh1LuOJgbkJQ8t0Zky1g)
 
 ## 背景：为什么需要 GenAI 可观测语义规范
 随着 GenAI 的快速发展，AI Agent 系统中涌现出大量新核心概念——Model、Prompt、Token、Tool Calling、Agent、Memory、Session——它们已成为算法工程师、运维人员和可观测平台用户最密切关注的观测对象 。这些对象需要像传统系统中 HTTP 请求或数据库调用一样被标准化采集、展示和消费，使系统维护者能够清晰了解调用过程并高效排查问题 。
@@ -544,7 +544,7 @@ LoongSuite 的演进路径——内部验证后贡献社区——是大型企业
 - [从多智能体编排到Ai自主决策资损防控体系的架构演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/从多智能体编排到ai自主决策资损防控体系的架构演进.md)
 - [给氛围编程系上安全带阿里集团 Ai 代码评审实践与 Benchmark 开源](https://github.com/QianJinGuo/wiki-public/blob/main/entities/给氛围编程系上安全带阿里集团-ai-代码评审实践与-benchmark-开源.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/阿里巴巴蚂蚁-loongsuite-genai-可观测语义规范从统一数据语言到规模化落地.md)
+→ [原文存档](https://mp.weixin.qq.com/s/X6lh1LuOJgbkJQ8t0Zky1g)
 
 ---
 
@@ -552,7 +552,7 @@ LoongSuite 的演进路径——内部验证后贡献社区——是大型企业
 
 > 📊 Level ⭐⭐ | 17.2KB | `entities/ai-skill-测评指标体系.md`
 
-[Ai Skill 测评指标体系](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-skill-测评指标体系.md)
+[Ai Skill 测评指标体系](https://juejin.cn/post/7619990292557365300)
 
 # 02—通过率、增益 Δ、IFR 怎么看？AI Skill 测评指标体系完整解读
 系列：AI Skill 测评体系从零到一（二）
@@ -821,7 +821,7 @@ Stddev > 0.1 时，按以下顺序排查：
 - [Harness Engineered Business Agent Evaluation Aliyun Boyu](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineered-business-agent-evaluation-aliyun-boyu.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/evaluation-benchmarks-extended.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-skill-测评指标体系.md)
+→ [原文存档](https://juejin.cn/post/7619990292557365300)
 
 ---
 
@@ -831,7 +831,7 @@ Stddev > 0.1 时，按以下顺序排查：
 
 # NICE：浙大提出的理论驱动型 LLM 社会智能诊断基准
 
-> 本实体整理自 [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nice-zhejiang-university-social-intelligence-benchmark-hyman-2026-06-12.md)，并参考浙大 arXiv 论文 *NICE: A Theory-Grounded Diagnostic Benchmark for Social Intelligence of LLMs*（https://arxiv.org/abs/2605.29685 ）。
+> 本实体整理自 [原文存档](https://mp.weixin.qq.com/s/Xr3t8vHZoer1eHSBsYN7ZA)，并参考浙大 arXiv 论文 *NICE: A Theory-Grounded Diagnostic Benchmark for Social Intelligence of LLMs*（https://arxiv.org/abs/2605.29685 ）。
 
 ## 一句话总结
 
@@ -1019,7 +1019,7 @@ NICE 真正的差异化定位是**「理论 + 内涵级 + 排序题」三位一�
 - [SkillX 浙大 Hyman](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skillx-zhejiang-university-hyman.md)
 - [Claude Code 最佳社区 Fork 演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-best-community-fork-evolution-vibecoder.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nice-zhejiang-university-social-intelligence-benchmark-hyman-2026-06-12.md)
+→ [原文存档](https://mp.weixin.qq.com/s/Xr3t8vHZoer1eHSBsYN7ZA)
 
 ---
 
@@ -1271,7 +1271,7 @@ SkillSentry 测评体系的演进折射出一个根本性的工程挑战：如�
 
 ---
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-skill-测评体系进阶指南.md)
+→ [原文存档](https://juejin.cn/post/7620226704209068072)
 
 → [测评指标体系](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-skill-测评指标体系.md)
 
@@ -1388,7 +1388,7 @@ SageMaker 训练 (PyTorch/TensorFlow)
 - [Announcing Openai Compatible Api Support For Amazon Sagemaker](https://github.com/QianJinGuo/wiki-public/blob/main/entities/announcing-openai-compatible-api-support-for-amazon-sagemaker.md)
 - [Aws Sagemaker Sft Dpo Tool Calling](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-sagemaker-sft-dpo-tool-calling.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-sagemaker-qualcomm-ai-hub-edge-npu-deployment.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/sagemaker-qualcomm-ai-hub-edge-npu)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
 ## 深度分析
@@ -1549,7 +1549,7 @@ pass@3 相比 pass@1 整体提升约 8pp，Sonnet 4.6 多模态任务提升 18.2
 - GitHub：https://github.com/UniPat-AI/SaaS-Bench
 - 论文：https://arxiv.org/abs/2605.15777
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/saas-bench-gui-agent-eval-unipat.md)
+→ [原文存档](https://mp.weixin.qq.com/s/KzPHgTF7j3XzWDZSh_jJPw)
 
 ---
 ## 关联
@@ -1651,7 +1651,7 @@ hermes gateway start  # 后台
 - [Hermes Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent.md) — Nous Research 开源 Agent 框架，可观测性是其生产落地关键能力
 - [Hermes Agent 深度解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-deep-dive.md) — Self-Evolving/动态 Skill 沉淀/RL 训练闭环等深度解析
 - [OpenClaw 架构解析](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/openclaw-architecture.md) — 无内置可观测方案，对比参考
-- [原始文章存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-observability-aliyun.md)
+- [原始文章存档](https://mp.weixin.qq.com/s/XQqbHr7EjH906vQhX8b6Cw)
 
 ---
 
@@ -1704,7 +1704,7 @@ PwC 的 Leinwand 认为，CEO 期望 IT 通过连接数据、工作流与决策�
 - [数据质量框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/data-quality-framework.md)
 - [负责任 AI 治理体系](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/responsible-ai-governance.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/www.cio.com-ceos-top-priorities-for-it-leaders-today-2-html.md)
+→ [原文存档](https://www.cio.com/article/4171959/ceos-top-priorities-for-it-leaders-today-2.html)
 
 ---
 
@@ -1722,7 +1722,7 @@ NVIDIA MCG Toolkit 自动生成 AI 模型文档的技术指南，针对 EU AI Ac
 
 ---
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-to-automate-ai-model-documentation-with-the-nvidia-mcg-t-806efb.md)
+→ [原文存档](https://developer.nvidia.com/blog/how-to-automate-ai-model-documentation-with-the-nvidia-mcg-toolkit/)
 
 ## 深度分析
 
@@ -1780,7 +1780,7 @@ Oracle 将 MCG 部署在 OCI Container Engine for Kubernetes 上，结合 DAC（
 
 # EVA-Bench Data 2.0
 
-> ServiceNow AI 2026-06-04 在 Hugging Face 发布的语音 Agent 垂直领域评估基准。本实体整合自 [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/eva-bench-data-2-voice-agent-evaluation.md)。
+> ServiceNow AI 2026-06-04 在 Hugging Face 发布的语音 Agent 垂直领域评估基准。本实体整合自 [原文存档](https://huggingface.co/blog/ServiceNow-AI/eva-bench-data)。
 
 ## 概述
 
@@ -2073,7 +2073,7 @@ EVA-Bench 的 121 工具 × 213 场景设计，正是为了量化这些垂直维
 
 ## 相关实体
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/meituan-poster-aigc-postercraft-posteromni-posterreward-meigen.md)
+→ [原文存档](https://mp.weixin.qq.com/s/4ytSFiJa2q8inb5U-Au9Nw)
 
 - [CVPR 2026 小米 SVOR 视频掩码](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cvpr-xiaomi-svor-video-masking.md)
 - [JOYAI Echo 长视频框架（京东）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/joyai-echo-long-video-framework-jd.md)
@@ -2179,7 +2179,7 @@ Vijay Viswanathan 等人的研究论文，揭示了奖励模型（Reward Model�
 - Constitutional AI：CAI 中的奖励模型可从离散化中受益
 - Dario Amodei RL Safety：RL 安全性研究的另一维度
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/abs-2606-21795.md)
+→ [原文存档](https://arxiv.org/abs/2606.21795)
 
 ---
 ## 关联

@@ -15,7 +15,7 @@
 - [3 Persons 100 Ai Programmers 1 3 Million Openai Pays](../ch01/316-openai.html)
 - [Cursor Harness Model Production Floor](../ch01/205-cursor-harness-model-production-floor.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lbs-intent-bench-lbs-intentbench.md)
+→ [原文存档](https://mp.weixin.qq.com/s/7NYQXk_MIJ1Ryod_wuY2hQ)
 
 ## 深度分析
 
@@ -41,7 +41,7 @@
 
 **评测数据的真值构建推荐采用双阶段共识机制**：先用 LLM 裁判批量筛选和评分，再由领域专家进行盲审校正。这套方法可在保持评测规模的同时显著提升标注质量，适合构建任何垂直领域的评测基准。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lbs-intent-bench-lbs-intentbench.md)
+→ [原文存档](https://mp.weixin.qq.com/s/7NYQXk_MIJ1Ryod_wuY2hQ)
 
 ---
 

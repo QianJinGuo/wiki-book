@@ -46,7 +46,7 @@
 - [Context Engineering Three Memory Paradigms Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md)
 - [别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](https://github.com/QianJinGuo/wiki-public/blob/main/entities/别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/chroma-to-qdrant-1m-vector-migration.md)
+→ [原文存档](https://mp.weixin.qq.com/s/Aovqh95_LBYtVOj8_tTD_w)
 
 ## 深度分析
 
@@ -393,7 +393,7 @@ SageMaker AI 端点按实例运行时长计费 ：
 
 ## 扩展阅读
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-real-time-voice-applications-with-amazon-sagemaker-ai.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/build-real-time-voice-applications-with-amazon-sagemaker-ai-and-vllm/)
 → [Voice Agent 设计 - Nova Sonic 多 Agent 工具与会话](https://github.com/QianJinGuo/wiki-public/blob/main/entities/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session.md)
 → [Nova Sonic WebRTC 实时语音流](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-real-time-voice-streaming-with-amazon-nova-sonic-and-webrtc.md)
 → [OpenAI Realtime Voice 架构](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/openai-realtime-voice-architecture.md)
@@ -406,7 +406,7 @@ SageMaker AI 端点按实例运行时长计费 ：
 
 # Apple Siri 私有推理（Private Inference）不私有：三个对抗者都不受加密学保护
 
-> **Source**：[原文存档（Matthew Green / Cryptography Engineering, 2026-06-09）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/apple-siri-private-inference-cryptography-green.md)
+> **Source**：[原文存档（Matthew Green / Cryptography Engineering, 2026-06-09）](https://blog.cryptographyengineering.com/2026/06/09/apples-siri-ai-or-more-shouting-into-the-void-about-private-agents/)
 
 ## 核心论点
 
@@ -723,7 +723,7 @@ USP 的"主干 ring + 分支本卡 + 流式融合"设计不只适用于 EAGLE-3�
 滴滴指出"Online 特征生成与线上服务争抢资源"是当前痛点之一。建议在架构设计阶段就将特征生成管线与在线服务在不同资源池中部署，避免资源竞争导致的延迟尖峰。
 
 ## 参见
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/didi-eagle-3-speculative-decoding-agents.md)
+- [原文存档](https://mp.weixin.qq.com/s/PZMX-55W_gqJKtHIYXJVyA)
 - [SpecForge GitHub PR #425](https://github.com/sgl-project/SpecForge/pull/425)
 - [SpecForge GitHub PR #454](https://github.com/sgl-project/SpecForge/pull/454)
 
@@ -873,7 +873,7 @@ bash examples/build_tokenized_corpus/launch.sh dclm-qwen3
 bash examples/pretrain_language_model/launch.sh qwen3-30b-a3b
 ```
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pith-train-agent-native-moe.md)
+→ [原文存档](https://mp.weixin.qq.com/s/_8UB-jTnhxZWQdXzOjc9uA)
 
 ---
 
@@ -965,7 +965,6 @@ bash examples/pretrain_language_model/launch.sh qwen3-30b-a3b
 
 ## 相关页面
 
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/embodied-intelligence-sim-to-real-active-inference-behavior-tree-intrinsic-motivation-chenzhiyan-2026-06-17.md)
 
 ---
 ## 关联
@@ -994,7 +993,7 @@ bash examples/pretrain_language_model/launch.sh qwen3-30b-a3b
 **5. 模型路由是改善 IER 性价比最高的工程投入：简单任务走小模型，复杂任务才调用大模型。** Acme SaaS 的案例中，通过模型路由（轻量级 Sonnet 处理简单任务，Opus 保留给复杂任务）将 inference cost 从 $95K 降至 $52K，IER 从 4.4:1 提升至 8:1——这个改善不需要改变定价或用户体验，纯工程优化。
 **6. 建立 P50 和 P95 两套 IER 追踪体系。** P50 IER 反映典型用户体验对应的效率水平；P95 IER 反映 tail user 带来的成本压力。如果两者差距过大（例如 P50 IER 12:1 但 P95 IER 仅 3:1），说明 pricing model 没有正确覆盖 tail cost，需要重新设计 usage tiering。
 **7. 不要假设推理成本会自然下降——建立 IER 的月度 trend 追踪。** Agentic 功能的引入往往会导致 token 消耗量 per task 显著上升，与 per-token 定价下降形成对冲。主动追踪 IER trend（上升/下降/平稳）比关注绝对值更重要，因为趋势决定了是否需要立即采取行动。
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-to-calculate-the-inference-efficiency-ratio.md)
+→ [原文存档](https://www.thesaascfo.com/how-to-calculate-the-inference-efficiency-ratio/)
 
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-model-research-latest-directions.md)
@@ -1009,7 +1008,7 @@ bash examples/pretrain_language_model/launch.sh qwen3-30b-a3b
 
 > 📊 Level ⭐⭐ | 7.2KB | `entities/continuous-async.md`
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/continuous-async.md)
+> 来源：[原文存档](https://huggingface.co/blog/continuous_async)
 
 ## 摘要
 HuggingFace 深度技术文章，系统性地解析了连续批处理（Continuous Batching）中同步瓶颈的根源，并提出基于 CUDA streams 和 events 的异步优化方案。核心发现：同步模式下 CPU 和 GPU 交替空闲，造成近 24% 的 GPU 空闲时间；通过异步化将两者解耦后，GPU 利用率从 76% 提升至 99.4%，生成速度提升 22%。
@@ -1064,7 +1063,7 @@ stream 之间的独立性既是优势也是问题——它们不知道彼此的�
 - [SGLang Agent 开发](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-assisted-sglang-development-lmsys-2026-07.md)
 - [推理优化](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/inference-optimization.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/continuous-async.md)
+→ [原文存档](https://huggingface.co/blog/continuous_async)
 
 ---
 
@@ -1074,7 +1073,7 @@ stream 之间的独立性既是优势也是问题——它们不知道彼此的�
 
 # End-to-end encrypted ML inference with Amazon SageMaker AI and FHE
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/end-to-end-encrypted-ml-inference-with-amazon-sagemaker-ai-a.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/end-to-end-encrypted-ml-inference-with-amazon-sagemaker-ai-and-fhe)
 
 ## 深度分析
 
@@ -1122,7 +1121,7 @@ End-to-end encrypted ML inference with Amazon SageMaker AI and FHE 涉及apple�
 
 # The next generation of speculative decoding: DFlash and Spec V2 - LMSYS Blog
 
-> Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lmsys-dflash-speculative-decoding-2026-06.md)
+> Source: [原文存档](https://www.lmsys.org/blog/2026-06-15-next-generation-speculative-decoding-dflash-v2/)
 
 ## 摘要
 
@@ -1278,7 +1277,7 @@ draft 模型权重三处 release：`z-lab/Qwen3.5-397B-A17B-DFlash`、`modal-lab
 - [DDoSing Software Delivery Pipelines](https://github.com/QianJinGuo/wiki-public/blob/main/entities/varoa-ddosing-software-delivery-pipelines-2026.md)
 - [AI GPUs probably live longer than three years](https://github.com/QianJinGuo/wiki-public/blob/main/entities/seangoedecke-ai-gpus-live-longer-than-three-years-2026.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lmsys-dflash-speculative-decoding-2026-06.md)
+→ [原文存档](https://www.lmsys.org/blog/2026-06-15-next-generation-speculative-decoding-dflash-v2/)
 
 ---
 
@@ -1286,7 +1285,7 @@ draft 模型权重三处 release：`z-lab/Qwen3.5-397B-A17B-DFlash`、`modal-lab
 
 > 📊 Level ⭐⭐⭐ | 9.4KB | `entities/vllm-v0-to-v1-correctness-before-corrections.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vllm-v0-to-v1-correctness-before-corrections.md)
+> -> [原文存档](https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections)
 
 ## 核心发现
 - V1 默认返回 **raw logprobs**（未经后处理），而 trainer 期望 **processed logprobs**
@@ -1298,7 +1297,7 @@ draft 模型权重三处 release：`z-lab/Qwen3.5-397B-A17B-DFlash`、`modal-lab
 所有使用 vLLM 做 rollout generation 的 online RL 方法（PPO、GRPO、GSPO）
 
 ## 相关链接
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vllm-v0-to-v1-correctness-before-corrections.md)
+→ [原文存档](https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections)
 
 ## 相关实体
 <!-- ⚠️ 以下交叉引用在 lint 时未通过，请确认 slug 后再取消注释 -->
@@ -1364,7 +1363,7 @@ vLLM V0→V1 迁移中的 logprob 差异，本质上是 **推理引擎默认行�
 
 > 📊 Level ⭐⭐⭐ | 8.6KB | `entities/llm-inference-pipeline-internals.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-inference-pipeline-internals.md)
+> -> [原文存档](https://mp.weixin.qq.com/s/1zZ0UXCNUA1UJ39gJNDQjg)
 
 # LLM 推理流水线完整解析
 
@@ -1498,7 +1497,7 @@ DeepSeek V4 Preview（2026-04-24）没有把 KV cache 当固定成本管理，�
 
 > 📊 Level ⭐⭐⭐ | 8.3KB | `entities/servicenow-vllm-correctness-huggingface.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/servicenow-vllm-correctness-huggingface.md)
+> -> [原文存档](https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections)
 
 ## 核心问题：训练-推理 logprob 不匹配
 
@@ -1670,7 +1669,7 @@ ServiceNow 总结的核心工程原则——"先修后端，再谈目标"——�
 
 Original URL: https://huggingface.co/blog/torch-mlp-fusion
 
-Source: [raw archive](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/huggingface-torch-mlp-fusion-profiling-2026.md)
+Source: [raw archive](https://huggingface.co/blog/torch-mlp-fusion)
 
 ---
 
@@ -1688,7 +1687,7 @@ Source: [raw archive](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw
 
 ---
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/introducing-1-bit-and-ternary-bonsai-image-4b-image-generati-352fe9.md)
+→ [原文存档](https://prismml.com/news/bonsai-image-4b)
 
 ## 深度分析
 
@@ -1770,7 +1769,7 @@ Bonsai 同时支持 Apple Silicon（MLX）和 CUDA（Gemlite），对于需要�
 
 ---
 ## 关联
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pytorch-in-kernel-recsys-optimization.md)
+→ [原文存档](https://pytorch.org/blog/in-kernel-broadcast-optimization-co-designing-kernels-for-recsys-inference/)
 - 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---

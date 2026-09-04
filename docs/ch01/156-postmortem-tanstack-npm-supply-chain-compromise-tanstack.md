@@ -217,7 +217,7 @@ See the GitHub Security Advisory for the full list of affected versions: [GHSA-g
 - [Rigged Game Scarcruft Compromises Gaming Platform Supply Chain Attack](534-scarcruft.html)
 - [Semgrep Intercom Php Supply Chain](../ch04/257-ai.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/npm-supply-chain-compromise-postmortem.md)
+→ [原文存档](https://tanstack.com/blog/npm-supply-chain-compromise-postmortem)
 
 ---
 

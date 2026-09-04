@@ -6,7 +6,7 @@
 
 ## 相关实体
 - [unexpected lessons from an ai-assisted prototyping experimen](../ch04/257-ai.html)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/system-over-model-tested-reproducing-mythoss-freebsd-find-on-20260606.md)
+→ [原文存档](http://clearbluejar.github.io/posts/system-over-model-tested-mythos-freebsd-local-openweight/)
 - [ai gpus probably live longer than three years](../ch04/257-ai.html)
 - [ddosing software delivery pipelines](https://github.com/QianJinGuo/wiki-public/blob/main/entities/varoa-ddosing-software-delivery-pipelines-2026.md)
 

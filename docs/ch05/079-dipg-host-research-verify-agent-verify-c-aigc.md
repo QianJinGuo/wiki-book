@@ -231,7 +231,7 @@ DIPG 的独特贡献是：**把"verify 闭环"工程化到具体代码级别**�
 - [Openclacky Harness Engineering 100 Percent Cache Hit](057-harness-engineering.html)
 - [Factory Mission Multi Agent Architecture](../ch01/747-factory-mission-multi-agent-architecture.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/dipg-ant-insurance-host-research-verify-offline-closed-loop.md)
+→ [原文存档](https://mp.weixin.qq.com/s/ys_yLo-xP6Hy0PnHYXHEMg)
 
 - [how grab is using ai agents to boost team productivity](../ch04/312-ai-agent.html)
 

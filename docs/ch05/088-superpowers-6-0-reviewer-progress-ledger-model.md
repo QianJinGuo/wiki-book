@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐⭐ | 6.4KB | `entities/superpowers-6-reviewer-anti-cheating-shuge-2026.md`
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/superpowers-6-reviewer-anti-cheating-shuge-2026.md)
+> 原文存档：[原文存档](https://mp.weixin.qq.com/s/fcmV4qQw867VqxC3A5mZcA)
 
 # Superpowers 6.0 反作弊重写：守门人焊死工程
 

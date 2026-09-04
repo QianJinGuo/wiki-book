@@ -79,7 +79,7 @@ clip-listener.exe + wsl-clip-bridge + Alt+V 的组合体现了一个重要的工
 
 ## 相关主题
 
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rajveerbachkaniwalacom-blog-2026-05-24-on-the-difficulty-of-pasting-a-pic.md)
+- [原文存档](https://rajveerbachkaniwala.com/blog/2026/05/24/on-the-difficulty-of-pasting-a-picture/)
 
 ---
 

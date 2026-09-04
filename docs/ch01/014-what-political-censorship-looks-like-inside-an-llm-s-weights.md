@@ -56,7 +56,7 @@ tap 24 是承诺点：最后用户 token 处中文 top-1 比例 Tiananmen≈100%
 - [预训练 vs 微调](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/llm-pretraining-vs-sft.md)
 - [注意力机制](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/attention-mechanism.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/what-political-censorship-looks-like-inside-an-llm-s-weights.md)
+→ [原文存档](https://vas-blog.pages.dev/qwen-censorship/)
 
 ---
 

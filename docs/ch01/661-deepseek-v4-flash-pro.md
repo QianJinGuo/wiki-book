@@ -7,7 +7,7 @@
 ## 相关实体
 
 - [读完这篇，你就搞懂 deepseek v4 了](459-deepseek-v4.html)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek-v4-flash-pro-通往百万级上下文与万亿参数推理的新纪元.md)
+→ [原文存档](https://mp.weixin.qq.com/s/iliqrMxcDs2b3QVLBjNH_g)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/observability-monitoring.md)
 ## 深度分析

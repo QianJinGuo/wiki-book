@@ -230,7 +230,7 @@ Benchmark70 任务全量复现：https://github.com/EvoMap/critpt-openclaw-repro
 - [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05/057-harness-engineering.html) — Harness 7 层 (OpenClaw/Hermes/Claude Code)
 - [Gepa Optimize Anything](../ch01/235-gepa-optimize-anything.html) — GEPA 通用文本优化（与 Gene 不同的优化路径）
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gene-gep-evomap-qinghua-strategy-genes-arxiv-2604-15097-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/7oAp2krFqj8z3ElzJM6n6Q)
 
 ---
 

@@ -77,7 +77,7 @@ LLM Wiki 的质量上限由 Schema 决定：Schema 设计差，Wiki 层会系统
 
 ### 5. LLM Wiki 投入产出比的关键是 Schema 前瞻设计
 Schema 设计的失误在后期修正成本极高（需要重新 Ingest 全量文档）。建议用"最小可用 Schema"起步（只定义核心实体类型和必须的关系），通过 3-5 个真实查询案例验证 Schema 充分性后再扩展。Karpathy 的 LLM Wiki V2 的 5 项升级中，Schema 优化是核心。
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rag-vs-llm-wiki-enterprise-knowledge-base.md)
+→ [原文存档](https://mp.weixin.qq.com/s/VQ-RgrLYsxb_iLUMzGr3FQ)
 
 ## 相关实体
 - [5 Essential Multimodal RAG Capabilities for AI-Ready Knowledge Systems (NVIDIA)](168-rag.html)

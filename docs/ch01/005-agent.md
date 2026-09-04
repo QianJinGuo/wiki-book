@@ -4,7 +4,7 @@
 
 # 快手首个打工人Agent
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kuaishou-worker-agent-desktop-software.md)
+> -> [原文存档](https://mp.weixin.qq.com/s/lIj91GGx1SuLVeFOLHPKtw)
 
 ## 摘要
 

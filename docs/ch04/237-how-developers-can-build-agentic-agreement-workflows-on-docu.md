@@ -121,7 +121,7 @@ IAM Toolkit（CLI）将 Agreement Manager 配置版本化、自动化，这意�
 - [Servicenow Ui Is Dead Agent](../ch03/004-agent.html)
 - [Tmic Ai Xiaoxin Deepagent Architecture Evolution](../ch03/004-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-developers-can-build-agentic-agreement-workflows-on-docu.md)
+→ [原文存档](https://www.docusign.com/blog/developers/momentum-26-agentic-agreement-workflows)
 
 ---
 

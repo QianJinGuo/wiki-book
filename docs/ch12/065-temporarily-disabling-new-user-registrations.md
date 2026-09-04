@@ -53,7 +53,7 @@ rubygems.org 这类开放包注册中心几乎是供应链攻击的理想靶标�
 - [Checkmarx Jenkins 插件供应链攻击](../ch01/280-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html)：工具链组件被投毒的供应链攻击案例
 - [Skill 版本管理五大原则](../ch07/054-skill.html)：依赖版本管理与持续演进策略
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/temporarily-disabling-new-user-registrations.md)
+→ [原文存档](https://status.rubygems.org/incidents/cytf062tkwtt)
 
 ---
 

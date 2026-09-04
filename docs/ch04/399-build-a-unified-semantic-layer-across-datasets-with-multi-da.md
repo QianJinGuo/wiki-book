@@ -4,7 +4,7 @@
 
 # Build a unified semantic layer across datasets with multi-dataset Topics in Amazon Quick
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-a-unified-semantic-layer-across-datasets-with-multi-da.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/build-a-unified-semantic-layer-across-datasets-with-multi-dataset-topics-in-amazon-quick)
 
 # Build a unified semantic layer across datasets with multi-dataset Topics in Amazon Quick
 

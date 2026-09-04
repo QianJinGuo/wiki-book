@@ -77,7 +77,7 @@
 - [Anthropic Prompt Caching Claude Code Agihunt](161-anthropic-prompt-caching-claude-code.html)
 - [Cat Wu Claude Code Pm](../ch03/057-claude-code.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-founders-playbook-huashu-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/_IuT9RX6WC34J_Js2sAl4Q)
 
 ---
 

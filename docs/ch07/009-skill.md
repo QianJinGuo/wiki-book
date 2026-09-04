@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 20.7KB | `entities/skill-development-guide-linyi.md`
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-development-guide-linyi.md)（凜一 / 阿里云开发者，2026-05-18）
+> 来源：[原文存档](https://www.skills.sh/)（凜一 / 阿里云开发者，2026-05-18）
 
 ## 一、Skill 的本质：结构化指令文档，而非代码
 

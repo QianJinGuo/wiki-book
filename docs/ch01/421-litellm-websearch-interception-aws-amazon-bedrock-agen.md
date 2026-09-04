@@ -4,7 +4,7 @@
 
 # 用 LiteLLM WebSearch Interception 集成 AWS 托管的 Amazon Bedrock AgentCore Web Search 能力
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/用-litellm-websearch-interception-集成-aws-托管的-amazon-bedrock-a.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/litellm-websearch-interception-integration-aws-managed-amazon)
 
 # 用 LiteLLM WebSearch Interception 集成 AWS 托管的 Amazon Bedrock AgentCore Web Search 能力
 

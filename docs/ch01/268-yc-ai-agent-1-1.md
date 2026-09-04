@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 12.2KB | `entities/gbrain-garry-tan-yanfa-zhili.md`
 
-[Gbrain Garry Tan Yanfa Zhili](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gbrain-garry-tan-yanfa-zhili.md)
+[Gbrain Garry Tan Yanfa Zhili](https://mp.weixin.qq.com/s/F9RNOFvc9lAEx2lg50SNDg)
 
 > 原创 逛逛 逛逛GitHub，2026年4月22日 13:53 浙江
 还记得之前那个特别火的 GStack 吗?

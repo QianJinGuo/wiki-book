@@ -90,7 +90,7 @@ Workflow平台与Skills系统正在向彼此中间地带演进。Coze已明确�
 - [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](302-agent-skills.html)
 - [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](302-agent-skills.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-skills-vs-coze-dify-n8n-lowcode-yexiaocha.md)
+→ [原文存档](https://mp.weixin.qq.com/s/4OtZSJPK6-LGHjyNYfRjJw)
 - [2026年最值得关注的15款开发者工具深度解读](https://github.com/QianJinGuo/wiki-public/blob/main/entities/2026年最值得关注的15款开发者工具-深度解读.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/workflow-orchestration.md)
 

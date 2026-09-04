@@ -47,7 +47,7 @@ Granola 的产品定位揭示了一个垂直场景 AI 原生应用的机会窗�
 - [Turn Repeated Instructions Into Reusable Skills In Lovable L](014-turn-repeated-instructions-into-reusable-skills-in-lovable.html)
 - [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](../ch12/050-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/granola-the-ai-notepad-for-backtoback-meetings.md)
+→ [原文存档](https://go.granola.ai/adops-tldr-tech)
 
 ---
 

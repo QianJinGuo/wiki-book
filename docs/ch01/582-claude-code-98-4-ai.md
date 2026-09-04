@@ -16,7 +16,7 @@ Mohamed bin Zayed AI University VILA-Lab 发表的论文（arxiv: 2604.14228）�
 - [Claude Code Hackathon Winners 2026](../ch03/057-claude-code.html)
 - [Claude Code Harness Deep Understanding](337-claude-code-harness-deep-understanding.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-engineering-truth-1.6-98.4.md)
+→ [原文存档](https://mp.weixin.qq.com/s/ITZewjMoE3QUJp_Yc0eO7w)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/openai-developer-ecosystem.md)
 ## 深度分析

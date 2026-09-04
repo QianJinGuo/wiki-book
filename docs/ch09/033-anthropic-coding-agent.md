@@ -178,7 +178,7 @@ Top 25 大学 +40%、博士生 >25%、终身教授 ~10%——这些数字背后�
 - [Anthropic 14 Skill Patterns Best Practices](../ch07/054-skill.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/coding-agent-practice.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-coding-agents-social-science-survey-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/AHCXofxR_eGrdGvZQahvqg)
 
 ---
 

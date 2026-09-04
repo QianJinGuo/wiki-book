@@ -241,7 +241,7 @@ Ollama 返回的 tool_call 不是原生 Python dict，**直接 `json.dump` 会�
 
 两者互补：ConardLi 给"我要做哪些 30 件事"的路线，本文给"这 7 件事怎么做、能跑、可改"的具体代码。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/minimal-cli-agent-250-line-python-ollama-7-stages.md)
+→ [原文存档](https://mp.weixin.qq.com/s/axLHmFoNretapSPCUP68PQ)
 
 ## 深度分析
 

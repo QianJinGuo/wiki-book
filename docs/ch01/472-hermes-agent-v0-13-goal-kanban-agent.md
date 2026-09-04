@@ -77,11 +77,11 @@ hermes doctor   # 检查环境
 - [Hermes Agent Kanban Deep Test By Wjjagi 2026](../ch04/161-hermes-agent.html)
 - [Hermes Agent Self Evolution Tengxun](../ch04/161-hermes-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mattpocock-skills-grill-me-grill-with-docs-caveman.md)
+→ [原文存档](https://mp.weixin.qq.com/s/sSpaBEcClrB04JqDgBu0TQ)
 
 ## 第 2 来源 — 小红书奥森木：Kanban 调度系统深度拆解
 
-[Hermes Agent 推出 Kanban 多 agent 调度](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-kanban-xiaohongshu.md)
+[Hermes Agent 推出 Kanban 多 agent 调度](https://www.xiaohongshu.com/explore/69f9a0df0000000038037336)
 
 与 WeChat 教程的互补角度：
 1. **6 列看板状态机** — Triage→Todo→Ready→In progress→Blocked→Done，完整生命周期
@@ -91,7 +91,7 @@ hermes doctor   # 检查环境
 5. **结构化 Handoff** — summary + metadata 自动传递给下游 worker，无需翻文件
 6. **原生熔断** — spawn 失败 3 次自动 gave_up
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-kanban-xiaohongshu.md)
+→ [原文存档](https://www.xiaohongshu.com/explore/69f9a0df0000000038037336)
 
 - `Self-Evolving Agent`
 

@@ -4,7 +4,7 @@
 
 # What is AX? John Maeda on Accessibility as Ability
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/2026-06-11-what-is-ax.md)
+→ [原文存档](https://maeda.pm/2026/06/11/what-is-ax/)
 
 ## 摘要
 

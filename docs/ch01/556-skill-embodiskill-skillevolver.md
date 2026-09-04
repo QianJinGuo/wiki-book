@@ -83,7 +83,7 @@ Codex /goal 解决的是**目标状态机 + 完成审计**（外部验证层）�
 
 ---
 ## 关联
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tsinghua-self-evolving-skill-agent.md)
+→ [原文存档](https://mp.weixin.qq.com/s/tlp_EJuG61OI4_9V0TOrpQ)
 - 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 - 相关: Agent 架构
 

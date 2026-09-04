@@ -69,7 +69,7 @@ AI 生成的代码往往同时增加了内在负荷（方案可能不是最优�
 - [Building Reliable Agentic AI Systems](../ch04/189-building-reliable-agentic-ai-systems.html) — 同样关注 AI 系统的工程可靠性
 - [Claude Code Dynamic Workflows](069-claude-code-dynamic-workflows.html) — AI 编码代理的实践模式
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/when-i-reject-ai-code-even-if-it-works-vinibrasil.md)
+→ [原文存档](https://vinibrasil.com/when-i-reject-ai-code-even-if-it-works/)
 
 ---
 

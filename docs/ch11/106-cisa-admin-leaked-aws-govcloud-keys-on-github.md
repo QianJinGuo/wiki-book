@@ -114,7 +114,7 @@ Caturegli 分析认为，该仓库的使用模式显示个人将其作为工作�
 - [Open Source Projects Leaving Github](../ch01/474-github.html)
 - [Cost Effective Deployment Of Vision Language Models For Pet Behavior Detection O](167-cost-effective-deployment-of-vision-language-models-for-pet.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cisa-admin-leaked-aws-govcloud-keys-on-github.md)- [github multilingual repositories dataset — 4000 万仓库多语言元数据](../ch01/474-github.html)
+→ [原文存档](https://krebsonsecurity.com/2026/05/cisa-admin-leaked-aws-govcloud-keys-on-github/)- [github multilingual repositories dataset — 4000 万仓库多语言元数据](../ch01/474-github.html)
 
 ---
 

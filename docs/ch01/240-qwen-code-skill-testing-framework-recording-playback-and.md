@@ -168,7 +168,7 @@ Issue 本身处于 proposal 阶段（v1），距离生产可用还需解决：
 建议参考 [xurik/dataworks-skill-evaluator](https://github.com/xurik/dataworks-skill-evaluator) 作为起步实现。
 
 ## 相关链接
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qwen-code-skill-testing-framework-issue-2447.md)
+- [原文存档](https://github.com/QwenLM/qwen-code/issues/2447)
 ## 相关实体
 - [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](571-skill-issues-compromising-claude-code-with-malicious-skills.html)
 - [How Claude Code Works In Large Codebases Best Practices And Where To Start](349-how-claude-code-works-in-large-codebases-best-practices-and.html)

@@ -113,7 +113,6 @@ S3 作为真值源，Runtime 与 S3 之间的同步是由两个动作构成：hy
 - [Comprehensive Observability For Amazon Sagemaker Ai Llm Infe](451-llm.html)
 - [Process Financial Documents Using Amazon Bedrock Data Automa](../ch11/135-amazon-bedrock.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/对抗-agent-遗忘kollab-基于amazon-bedrock-agentcore-的团队ai工作空间实践.md)
 
 - [stop hand-tuning kernels: how neuron agentic development acc](../ch04/251-stop-hand-tuning-kernels-how-neuron-agentic-development-acc.html)
 

@@ -70,7 +70,7 @@ Loop Engineering 的核心不在于自动化"写代码"，而在于设计出能�
 
 ## 参考
 
-→ [raw/articles/loop-engineering-实战实现从日志扫描到预发部署的全自主闭环|原文存档]
+→ [原始来源](https://mp.weixin.qq.com/s/AQLsjzD0s9d8kGUGdul0sg)
 
 ---
 

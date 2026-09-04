@@ -83,7 +83,7 @@ W3C 规范定义了 referrer 策略的评估顺序：`noreferrer` link type → 
 ## 相关实体
 
 - [Agent 安全攻防](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-security-attack-defense.md)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/afine-csp-html-injection-password-exfiltration.md)
+→ [原文存档](https://afine.com/blogs/stealing-passwords-via-html-injection-under-a-strict-csp)
 
 ---
 ## 关联

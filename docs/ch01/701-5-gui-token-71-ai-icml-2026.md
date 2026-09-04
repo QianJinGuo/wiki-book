@@ -4,7 +4,7 @@
 
 # 5亿视频炼出全球最大GUI开源数据集、推理Token省71%小模型反超大模型——小米AI团队多篇论文入选ICML 2026
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-icml-2026-11papers-da769794d77c.md)
+→ [原文存档](https://arxiv.org/abs/2602.01698)
 
 ## 深度分析
 

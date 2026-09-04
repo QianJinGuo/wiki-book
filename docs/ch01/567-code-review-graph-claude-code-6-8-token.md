@@ -15,7 +15,7 @@ code-review-graph 是一个本地知识图谱工具，专为 Claude Code 等 AI 
 - [Claude Code Hackathon Winners 2026](../ch03/057-claude-code.html)
 - [Claude Code Harness Deep Understanding](337-claude-code-harness-deep-understanding.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/code-review-graph.md)
+→ [原文存档](https://mp.weixin.qq.com/s/jc5RZB9eIYSAmEUMfMxtkg)
 
 ## 深度分析
 

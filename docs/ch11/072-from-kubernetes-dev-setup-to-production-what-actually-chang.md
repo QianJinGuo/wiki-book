@@ -84,7 +84,7 @@ GitOps 让你能更安全地加快变更速度，但需要显式工程优化才�
 - [Hiclaw V110 K8S Hermes Worker](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hiclaw-v110-k8s-hermes-worker.md)
 - [Alibabacloud Cms Manage Skill Natural Language Observability](../ch07/054-skill.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/from-kubernetes-dev-setup-to-production-what-actually-change.md)
+→ [原文存档](https://georg-schwarz.com/blog/from-kubernetes-demo-to-production-platform/)
 
 ## 相关实体
 

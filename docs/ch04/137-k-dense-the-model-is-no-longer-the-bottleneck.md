@@ -4,7 +4,7 @@
 
 # K-Dense — The Model Is No Longer the Bottleneck
 
-> **Source**: [K-Dense AI Blog](https://www.k-dense.ai/blog/the-model-is-no-longer-the-bottleneck) (2026-06, 9.7KB) by K-Dense team. 原始内容存于 `[K Dense The Model Is No Longer The Bottleneck](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/k-dense-the-model-is-no-longer-the-bottleneck.md)`。
+> **Source**: [K-Dense AI Blog](https://www.k-dense.ai/blog/the-model-is-no-longer-the-bottleneck) (2026-06, 9.7KB) by K-Dense team. 原始来源见上方链接。
 >
 > **核心论点**: 在 GPT-5 / Claude Opus 4.5 / Gemini 2.5 Pro 这代模型之后，**模型能力不再是科学 AI 应用的天花板**。真正的瓶颈是 **agentic workflow 设计** —— 如何让模型在多步推理中保持高质量上下文。
 
@@ -131,4 +131,3 @@
 5. **Context Quality 是 2026 年 harness 工程的首要投入方向** — K-Dense 公式显示 Context Quality 占比从 20%→35%，与 [Context Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/context-engineering.md) 的重要性趋势一致。Structured context、RAG、multi-modal context 都是提升 Context Quality 的手段。
 
 ---
-

@@ -62,7 +62,7 @@ Agent 团队协作的关键是**信任校准**：
 - [Sub Agent Vs Agent Team Selection Guide](422-vs-agent.html)
 - [Claude Managed Agents](../ch01/294-claude-managed-agents.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-building-effective-human-agent-teams.md)
+→ [原文存档](https://claude.com/blog/building-effective-human-agent-teams)
 
 ---
 

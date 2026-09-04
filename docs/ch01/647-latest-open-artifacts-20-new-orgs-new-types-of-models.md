@@ -14,7 +14,7 @@
 - [the distillation panic](477-the-distillation-panic.html)
 - [sft, rl, and on-policy distillation through a distributional](https://github.com/QianJinGuo/wiki-public/blob/main/entities/untitled-v2.md)
 - [直播预约 | 数据引擎：具身智能的下一个决胜局](https://github.com/QianJinGuo/wiki-public/blob/main/entities/直播预约-数据引擎具身智能的下一个决胜局.md)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/latest-open-artifacts-20-new-orgs-new-types-of-models-with-n.md)
+→ [原文存档](https://www.interconnects.ai/p/latest-open-artifacts-20-new-orgs)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
 ## 深度分析

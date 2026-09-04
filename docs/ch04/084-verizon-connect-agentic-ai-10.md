@@ -170,7 +170,7 @@ Verizon Connect 的模型演进路径（Claude 4.5 Sonnet → Claude 4.5 Haiku �
 - **Amazon Bedrock** — AWS 全托管生成式 AI 服务
 - **AWS Step Functions** — AWS 无服务器工作流编排
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/verizon-connect-agentic-ai-100k-users.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/from-data-overload-to-actionable-insights-how-verizon-connect-scaled-agentic-ai-to-100000-users/)
 
 ---
 

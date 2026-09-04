@@ -35,7 +35,7 @@ Automating GPU Kernel Translation with AI Agents: cuTile Python to cuTile.jl | N
 - [Orchestrating Self Evolving Agents With Crewai And Nvidia Ne](../ch04/181-self-evolving-agents.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/ai-misc-topics-frontier.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-gpu-kernel-translation-cute-python-julia.md)
+→ [原文存档](https://developer.nvidia.com/blog/automating-gpu-kernel-translation-with-ai-agents-cutile-python-to-cutile-jl/)
 
 ---
 

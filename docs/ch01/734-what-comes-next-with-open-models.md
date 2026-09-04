@@ -4,7 +4,7 @@
 
 # What comes next with open models
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/what-comes-next-with-open-models.md)
+→ [原文存档](https://www.interconnects.ai/p/the-next-phase-of-open-models)
 
 # What comes next with open models
 

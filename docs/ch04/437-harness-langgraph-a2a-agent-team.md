@@ -4,7 +4,7 @@
 
 # 逆天的架构：用 Harness+LangGraph+A2A 写一个 Agent Team
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/langgraph-a2a-adversarial-agent-team.md)
+→ [原文存档](https://mp.weixin.qq.com/s/e7p6WlCZH2gXA4YKNGB_rw)
 
 ## 深度分析
 

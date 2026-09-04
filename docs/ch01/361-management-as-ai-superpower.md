@@ -4,7 +4,7 @@
 
 # Management as AI superpower
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/management-as-ai-superpower.md)
+→ [原文存档](https://www.oneusefulthing.org/p/management-as-ai-superpower)
 
 ## 摘要
 

@@ -96,7 +96,7 @@ Harness 不是马鞍（服务于已成熟的系统），而是 ICU——维持�
 - **收敛比开放更难但更重要**：vivoPPT 的三次收敛（固定模板→内容优先→DSL 中间层）说明最佳实践不是"设计更多选择"，而是"在真实试错中缩小选择范围"
 - **DSL 中间层是 Agent 生产系统的骨架**：结构化中间表示让模板、内容、布局、导出之间有了稳定接口
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vivo-agent-brain-body-icu-harness-evolutionary-framework-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/6gYX4nCkZvTxkRuv37Sw1Q)
 
 ---
 

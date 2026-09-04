@@ -51,7 +51,7 @@ AI应用有两个完全不同的空间：Latent 空间和 Deterministic 空间�
 - [Claude Code Harness Deep Understanding](../ch01/337-claude-code-harness-deep-understanding.html)
 - [从 30 分钟手搓 Agent到 Harness 成为新后端](008-harness.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/thin-harness-fat-skills.md)
+→ [原文存档](https://mp.weixin.qq.com/s/FgV_r2sz_LJNhy5TGeLorQ)
 
 ---
 

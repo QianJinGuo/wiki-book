@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 7.7KB | `entities/ai-poc-why-fail-to-production.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-poc-why-fail-to-production.md)
+> -> [原文存档](https://mp.weixin.qq.com/s/w9SWYuM7d_rI1GBYdXJyeA)
 
 ## 摘要
 ---
@@ -34,7 +34,7 @@ AI 项目最常见的误判，是把 Demo 跑通，当成落地已经开始。
 - 评分：value=7, confidence=7, product=49
 
 ## 链接
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-poc-why-fail-to-production.md)
+- [原文存档](https://mp.weixin.qq.com/s/w9SWYuM7d_rI1GBYdXJyeA)
 
 ## 相关实体
 - [Inngest - AI in Production: The 2026 Benchmark Report](416-inngest-ai-in-production-the-2026-benchmark-report.html)

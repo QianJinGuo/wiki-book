@@ -153,7 +153,7 @@ Harness Engineering 是 AI Skill 测评体系的**上位工程框架**：
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/loop-engineering.md)
 ## Related
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-harness-engineering-survey-2026.md)
+→ [原文存档](https://picrew.github.io/LLM-Harness/paper.pdf)
 
 - `Harness Engineering 优化理论`
 
@@ -196,7 +196,7 @@ AI技术立文发布的系统性综述，将 OpenAI/Anthropic/ThoughtWorks 三�
 - **22 倍成本差距换可交付产品**：$9 demo ≠ $200 产品——是否值得取决于一次失败发布的实际代价
 - **趋势线**：更好模型 = 更简单 Harness = 更便宜运行 = 更快产出——这是当前最乐观的 Harness 经济学判断
 
-→ [第 3 原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-everything-2026-ai-tech-article.md)
+→ [第 3 原文存档](https://mp.weixin.qq.com/s/lc_iBYAu0kMZNP4cy1P6NA)
 
 ---
 
@@ -221,7 +221,7 @@ AI技术立文发布的系统性综述，将 OpenAI/Anthropic/ThoughtWorks 三�
 - Harness 工程的真正护城河不是积累了多复杂的规则，而是"**删规则的判断力**"
 - 与 Build to Last 的传统软件工程思维根本对立
 
-→ [第 4 原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-deletable-worksite-ruofei.md)
+→ [第 4 原文存档](https://mp.weixin.qq.com/s/y1pIKtBFr5BrN3f7VOypWw)
 
 ---
 
@@ -272,7 +272,7 @@ Panda 用汽车比喻把 Loop 和 Harness 的关系说透：Loop 是发动机（
 - **Anthropic 自动模式分类器设计**：只输入 action，不输入 agent 的话——安全门设计反 prompt injection
 - **Harness 的每个组件都要可删**：与第 4 来源"Build to Delete"形成跨来源共识
 
-→ [第 5 原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-loop-vs-harness-machine-heart-2026-06-17.md)
+→ [第 5 原文存档](https://mp.weixin.qq.com/s/bSLyfsebhSZ8ZVxk1HyAPA)
 
 ---
 
@@ -340,7 +340,7 @@ Context 解决「看什么」，Harness 解决「如何被约束和验证」。
 - **最小 Harness 搭建路径**：规范（CLAUDE.md）→ 门禁（lint/type/test）→ 固化（Commands）→ 拦截（Hooks）
 - **Hook 代码示例可直接复用**：.claude/settings.json 的 PostToolUse 配置可使 Agent 写文件后自动跑 oxlint
 
-→ [第 6 原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deep-dive-harness-engineering-context-vs-harness.md)
+→ [第 6 原文存档](https://mp.weixin.qq.com/s/bRz-1CrKRvQwzkeNzij-tQ)
 
 ## 七、阿里云数据研发 Multi-Agent Harness 实践（2026-07-15 补充）
 
@@ -356,7 +356,7 @@ Context 解决「看什么」，Harness 解决「如何被约束和验证」。
 
 与前 6 个来源的关系：本文是 6 支柱框架在**数据研发（数仓）垂直领域**的完整落地，提供了此前来源缺失的工程细节（三层约束、CP 检查点、Spec 文件驱动、12 态状态机），使实体从"概念讨论"升级为"可参照的工程实践"。
 
-|→ [第 7 原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/data-dev-multi-agent-harness-engineering-alibaba-cloud-practice.md)
+|→ [第 7 原文存档](https://mp.weixin.qq.com/s/9ikvuGaAJSPyGYidbAdC7g)
 
 ## 八、若飞「Claude 模型的上下文工程新规」（2026-07-28 补充）
 
@@ -385,7 +385,7 @@ Context 解决「看什么」，Harness 解决「如何被约束和验证」。
 - 建议 20-50 个真实任务按模型轴 × 任务轴交叉评测，一次只改一个变量
 - context_contract 起步可只保留六个关键字段，不追求一步到位
 
-→ [第 8 原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/context-engineering-new-rules-ruofei-2026.md)
+→ [第 8 原文存档](https://mp.weixin.qq.com/s/KgY_4cXCw5p8lG85hWou7Q)
 
 ---
 

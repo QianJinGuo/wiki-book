@@ -4,7 +4,7 @@
 
   <h1 class="home-hero__title">《AI 工程》</h1>
 
-  <p class="home-hero__subtitle">从 LLM 原理到生产级 Agent —— 基于 4,000+ 篇一手文章系统编撰的开源读物</p>
+  <p class="home-hero__subtitle">从 LLM 原理到生产级 Agent —— 基于数千篇一手文章系统编撰的开源读物</p>
 
   <p class="home-hero__desc">覆盖 LLM、Agent、Harness、MCP、RAG、安全、训练与推理全栈；每个条目均溯源一手原文并标注难度，可按学习路径循序渐进。</p>
 

@@ -57,7 +57,7 @@ The more interesting future is not only agents operating apps. It is application
 - [Vera Arrives Nvidia S First Cpu Built For Agents Lands At Top Ai Labs](../ch04/151-vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-t.html)
 - [Thehackernews Fake Openai Privacy Filter](../ch01/316-openai.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/interface-commoditization-ai-era.md)
+→ [原文存档](https://blog.mozilla.ai/the-interface-is-no-longer-the-product/)
 
 - [Playerzero Request Demo](https://github.com/QianJinGuo/wiki-public/blob/main/entities/playerzero-request-demo.md)
 ## 深度分析
@@ -92,9 +92,9 @@ The more interesting future is not only agents operating apps. It is application
 
 4. **构建验证和 diff 能力作为产品的核心差异化**：当 agent 能够修改产品状态时，"变更是否正确"的验证变得至关重要——不仅是对系统的技术验证，也包括对用户业务目标的语义验证。能够告诉用户"这个变更会让指标 X 产生预期之外的影响"的验证系统，比能够"更快完成操作"的 agent 操作层更有长期价值。
 
-5. **从"AI + 产品"转向"产品 = 结构层 + AI 渲染"**：不是问"我们如何在 X 产品中加入 AI 功能"，而是问"X 工作的真实对象是什么，我们需要什么结构来表示它，以及 AI 如何帮助维护这个结构"。这个框架重塑了产品优先级：最重要的投资可能不是新的 AI 模型，而是更好的数据模型设计。 [^raw/articles/interface-commoditization-ai-era.md:79-106]
+5. **从"AI + 产品"转向"产品 = 结构层 + AI 渲染"**：不是问"我们如何在 X 产品中加入 AI 功能"，而是问"X 工作的真实对象是什么，我们需要什么结构来表示它，以及 AI 如何帮助维护这个结构"。这个框架重塑了产品优先级：最重要的投资可能不是新的 AI 模型，而是更好的数据模型设计。 [interface-commoditization-ai-era.md:79-106](https://blog.mozilla.ai/the-interface-is-no-longer-the-product/)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/interface-commoditization-ai-era.md)
+→ [原文存档](https://blog.mozilla.ai/the-interface-is-no-longer-the-product/)
 
 ---
 

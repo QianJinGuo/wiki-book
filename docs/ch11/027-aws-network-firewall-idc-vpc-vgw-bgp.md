@@ -4,7 +4,7 @@
 
 > [!abstract]
 > AWS China Blog 2026-06-12 实验笔记：用 CloudFormation 搭建 VPC + 模拟 IDC 环境，开启 BGP 路由传播 + 手工配置高优先级路由条目，验证 IDC ↔ 云之间流量经 AWS Network Firewall 审查的完整方案。
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/使用-aws-network-firewall-服务审查-idc-和云上-vpc-间的流量-vgw-架构的设计和实验.md)
+> 来源：[原文存档](https://aws.amazon.com/cn/blogs/china/nfw-vgw-bgp-traffic-inspection)
 
 ## 场景与挑战
 
@@ -159,7 +159,7 @@ AWS Network Firewall 是一个**内联（inline）状态检测设备**，而非�
 
 ## 关键引用清单
 
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/使用-aws-network-firewall-服务审查-idc-和云上-vpc-间的流量-vgw-架构的设计和实验.md)
+- [原文存档](https://aws.amazon.com/cn/blogs/china/nfw-vgw-bgp-traffic-inspection)
 - [AWS NFW 规则冲突 AI 检测](110-aws-network-firewall-ai.html) — 姐妹篇（AI 集成）
 - [LiteLLM ECS/EKS 部署](../ch01/451-llm.html) — 同样部署在 VPC 中，受 NFW 保护
 - [QuickSight Dataset Q&A](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-quicksight-dataset-qa-natural-language.md)

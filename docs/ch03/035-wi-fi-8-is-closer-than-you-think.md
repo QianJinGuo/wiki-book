@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 19.8KB | `entities/wi-fi-8-is-closer-than-you-think.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/wi-fi-8-is-closer-than-you-think.md)
+> -> [原文存档](https://www.networkworld.com/article/4170841/wi-fi-8-is-closer-than-you-think-heres-what-you-need-to-know.html)
 
 ## 核心设计转向：从速度到可靠性
 
@@ -201,7 +201,7 @@ Wi-Fi 8 的最大价值不在于无线性能提升，而在于将 AP 转化为�
 
 SMD 漫游是 Wi-Fi 8 对企业网络体验影响最大的功能，但支持程度将因厂商和芯片代际而异。企业在评估 WLAN 供应商时，应明确要求对方披露：①第一代 Wi-Fi 8 芯片是否支持 SMD roaming；②控制器/云平台如何编排和管理移动域；③与 802.11k/r/v 漫游协议的向后兼容性。建议在 RFP 中设置具体场景测试（如 3-5 AP 移动域内的 VoWiFi 漫游中断时长），而非仅依赖厂商白皮书描述。将多 AP 协同能力作为差异化评估维度，可以激励供应商加速该功能的商业化落地。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/wi-fi-8-is-closer-than-you-think.md)
+→ [原文存档](https://www.networkworld.com/article/4170841/wi-fi-8-is-closer-than-you-think-heres-what-you-need-to-know.html)
 
 ---
 

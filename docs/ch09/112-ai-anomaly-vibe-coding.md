@@ -4,7 +4,7 @@
 
 # AI 写前端 ≠ 设计 —— Anomaly 创始人对 Vibe Coding 哲学批判
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/impeccable-anomaly-vibe-design-vs-vibe-coding.md)
+→ [原文存档](https://mp.weixin.qq.com/s/4_9q9TrkVyE5a4jCfTrNgg)
 
 ## 深度分析
 

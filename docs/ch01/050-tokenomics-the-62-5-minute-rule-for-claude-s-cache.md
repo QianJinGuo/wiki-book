@@ -4,7 +4,7 @@
 
 # Tokenomics: the 62.5-minute rule for Claude's cache
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic_cache_tokenomics.md)
+→ [原文存档](https://skids.dev/blog/anthropic-cache-tokenomics/)
 
 ## 摘要
 

@@ -4,7 +4,7 @@
 
 # NVIDIA Nemotron 3 Ultra now available on Amazon SageMaker JumpStart
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-nemotron-3-ultra-now-available-on-amazon-sagemaker-ju.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-ultra-now-available-on-amazon-sagemaker-jumpstart)
 
 ## 深度分析
 

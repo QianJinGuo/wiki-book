@@ -97,7 +97,7 @@ Nathan Lambert 在 Interconnects 发表的 2026-05 月度洞察。
 
 ## 相关实体
 - [from agi to asi](167-agi.html)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/some-ideas-for-what-comes-next-may-2026.md)
+→ [原文存档](https://www.interconnects.ai/p/some-ideas-for-what-comes-next-may)
 
 ## 深度分析
 

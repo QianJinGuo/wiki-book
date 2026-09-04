@@ -33,7 +33,7 @@ Anthropic 的研究让 Claude 在化学领域达到专家水平——不是通�
 - [Claude Code Hackathon Winners 2026](../ch03/057-claude-code.html)
 - [Claude Code Harness Deep Understanding](337-claude-code-harness-deep-understanding.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-com-research-making-claude-a-chemist.md)
+→ [原文存档](https://www.anthropic.com/research/making-claude-a-chemist)
 
 > *Score: v=7 × c=7 = 49 | stars=4 | Anthropic官方研究博客，介绍Claude在化学领域（特别是NMR谱图分析）的应用，提供了AI+化学领域的数据挑战背景和具体用例，但核心技术细节（Claude vs ChemDraw对比）在外链PDF中，文章本体偏概述。*
 

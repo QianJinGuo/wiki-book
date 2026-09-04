@@ -526,7 +526,7 @@ Sandbox 设计需要在安全性与性能之间做出权衡 。状态快照和�
 - [Agent Harness 架构](../ch05/035-agent-harness.html)
 - [OpenClaw Prompt/Harness](../ch04/176-openclaw.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentscope-java-harness-framework-enterprise-distributed.md)
+→ [原文存档](https://mp.weixin.qq.com/s/yBWOk-mpGih9bV4wqPnkOQ)
 
 ---
 

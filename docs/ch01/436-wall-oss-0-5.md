@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 7.7KB | `entities/wall-oss-05-pretraining-embodied-ai-x-square-robot.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/wall-oss-05-pretraining-embodied-ai-x-square-robot.md)
+> -> [原文存档](https://mp.weixin.qq.com/s/N8WlG3OydsmcV_o9lIvaxw)
 
 # Wall-OSS-0.5：预训练即可部署的具身大模型
 

@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 7.1KB | `entities/the-1-ai-agent-for-financial-services-fin.md`
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-1-ai-agent-for-financial-services-fin.md)
+→ [原文存档](https://fin.ai/solutions/financial-services)
 
 ## 摘要
 Fin 是 Intercom 旗下面向金融服务行业的 AI Agent 平台，以 "never hallucinate"（绝不幻觉）为核心定位，宣称能在卡务问题、交易争议、欺诈索赔等复杂查询上实现行业领先的准确率。其技术底座是 Fin AI Engine™（意图识别 → 内容检索 → 多阶段验证）与 Procedures（自然语言驱动的多步骤业务流程执行）的组合，并辅以实时全量审计日志与 ISO/SOC 系列合规认证。对垂直行业而言，它是"领域适配型 Agent"（domain-adapted agent）范式的代表性商业化样本。

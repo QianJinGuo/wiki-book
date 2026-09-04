@@ -142,7 +142,7 @@ antirez 提出的推理引擎 + 专用 GGUF + coding agent 验证三者组合，
 - [DeepSeek V4 Pro vs Claude](../ch01/459-deepseek-v4.html) — V4 Pro 和 Flash 对比测试
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/coding-agent-practice.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek-v4-ds4c-antirez-local-inference-qbitai.md)
+→ [原文存档](https://mp.weixin.qq.com/s/9X0bcfUGZYxoXuQwt89zkQ)
 
 ---
 

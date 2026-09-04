@@ -92,7 +92,7 @@ V8 执行层级（从快到慢，从轻到重）：
 - V8 博客 (v8.dev)
 - Chromium University YouTube 系列
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/browser-internals-chromium-blink-v8-complete-guide-jiagoux-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/UBlsPgnOLaa3yBGRD0TjRg)
 
 ---
 

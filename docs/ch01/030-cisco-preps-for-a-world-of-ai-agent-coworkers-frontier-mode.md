@@ -35,7 +35,7 @@ Agent 流量的模式不同于人类——需要独立的异常检测和安全�
 - [Alphaevolve Deepmind Discovery Agent](../ch03/004-agent.html)
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](../ch04/312-ai-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-model-threats.md)
+→ [原文存档](https://www.nextplatform.com/ai/2026/06/03/cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-model-threats/5250406)
 - [olmo-eval: an evaluation workbench for the model development](563-olmo-eval-an-evaluation-workbench-for-the-model-development.html)
 
 ## 摘要

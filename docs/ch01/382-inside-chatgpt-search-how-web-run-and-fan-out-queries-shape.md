@@ -29,7 +29,7 @@ ChatGPT Search 的核心技术创新：**web.run 查询广播 + 多源综合**�
 3. **信息丢失** — 跨源综合可能忽略单一来源的细微差别
 这代表了搜索引擎从"检索工具"向"信息综合助手"的根本转变。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/chatgpt-search-web-run-fanout-searchengineland.md)
+→ [原文存档](https://searchengineland.com/inside-chatgpt-search-web-run-fan-out-que)
 
 ## 深度分析
 **1. Fan-out 搜索架构的信息论含义**
@@ -69,7 +69,7 @@ ChatGPT Search 区分「实时网络信息」和「预训练知识」，并只�
 
 6. **归因追踪是待解决的核心工程问题**：当前多源综合的归因错误，本质上是「哪个来源贡献了哪个知识点」的追踪问题。这需要更好的知识图谱对齐技术和多源事实核查机制，是未来信息检索研究的重要方向。
 7. **考虑 fan-out 查询的延迟优化**：并行广播查询模式在提高信息质量的同时，引入的延迟可能影响用户体验。探索异步展示（先展示综合框架，再异步补充细节引用）可能是一种体验优化方向。
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/chatgpt-search-web-run-fanout-searchengineland.md)
+→ [原文存档](https://searchengineland.com/inside-chatgpt-search-web-run-fan-out-que)
 
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)

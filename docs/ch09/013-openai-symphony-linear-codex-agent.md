@@ -168,7 +168,7 @@ OpenAI 还使用 **dynamic tool calls** 暴露 `linear_graphql` 这类能力，�
 ## 相关实体
 - [Figma Make Local Code](../ch03/028-figma-make.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-symphony-codex-orchestration-linear-control-plane-tutuai.md)
+→ [原文存档](https://mp.weixin.qq.com/s/PxcSpMLOYvqXrTO6U0VhuQ)
 
 ---
 

@@ -72,7 +72,7 @@ Agent 运行多轮后可靠性的两个核心问题：
 - [Agent Harness 架构](../ch05/035-agent-harness.html) — Context Manager 处理上下文；工具调用校验是 Harness 层的职责
 - [Ralph Loop + Harness Takeover](../ch05/008-harness.html) — 长周期 Agent 的可靠性机制，与本文上下文漂移问题高度相关
 - [Multi-Agent Systems](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/multi-agent-systems.md) — 多 Agent 协作中，每个 Agent 的上下文漂移问题会叠加放大
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kamacoder-agent-context-drift-tool-hallucination.md)
+- [原文存档](https://mp.weixin.qq.com/s/4SebcRmlVlJ_MECOv7_3PQ)
 
 ## 相关实体
 - [阿里云 EventHouse 企业级 Agent 上下文供给体系](../ch03/004-agent.html)

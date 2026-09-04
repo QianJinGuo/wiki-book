@@ -42,7 +42,7 @@ Skill stack 是 harness 的上层——harness 管理"AI 能做什么"（工具�
 - [Anthropic 12 Mcp Production Patterns](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-12-mcp-production-patterns.md)
 - [Tencent Skill Writing Complete Playbook Jackjchou](../ch07/054-skill.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-95pct-data-analysis-skill-stack-architecture.md)
+→ [原文存档](https://mp.weixin.qq.com/s/Y0DoUjK_eHdDNwLLDHcJTg)
 
 - [使用Claude Codesession管理与1M上下文](../ch03/057-claude-code.html)
 - [Anthropic 95Pct Data Analysis Summary 189 Chars](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-95pct-data-analysis-summary-189-chars.md)
@@ -428,7 +428,7 @@ Skill stack 是 harness 的上层——harness 管理"AI 能做什么"（工具�
 
 ## 2nd Source：极简短摘要文（2026-06-05）—— 189 字摘要存档
 
-> 来源：[未标注公众号摘要文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-95pct-data-analysis-summary-189-chars.md)（2026-06-05）
+> 来源：[未标注公众号摘要文](https://mp.weixin.qq.com/s/DHMgoVa9YykVYWIRc0GATw)（2026-06-05）
 > **关系**：与 1st source 同源不同公众号的极简摘要报道。Anthropic 数据科学团队博客原文（2026-06-04 公开）已被 1st source 深度收录；本文仅作 2nd source 存档。
 > **信息密度评估**：仅 189 字，与 1st source 内容重叠度高（仅含 **95%**、**21%→95%**、**95% 自动化** 3 个核心数字），无 1st source 未覆盖的独家数据。
 
@@ -453,7 +453,7 @@ Skill stack 是 harness 的上层——harness 管理"AI 能做什么"（工具�
 
 ## 3rd Source：架构师 JiaGouX 数据级 Harness 视角（2026-06-06）—— 5 个反直觉边界
 
-> 来源：[架构师（JiaGouX）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-95pct-data-analysis-jiagoux-data-level-harness-20260606.md) 2026-06-06 解读
+> 来源：[架构师（JiaGouX）](https://mp.weixin.qq.com/s/dLAWaUejq_FVdtyBWyo-RQ) 2026-06-06 解读
 > **关系**：与 1st source 同源（Anthropic 2026-06-03 官方博客），但**架构师独特视角**：① 提出"数据级 Harness"概念 ② 揭示 95% 数字背后 5 个反直觉边界 ③ 引用 12 个上游原始资料（a16z / Snowflake / Benn Stancil / Atlan / Karpathy / Hamel Husain / Genloop）
 > **信息密度评估**：8297 字，**与 1st source 互补不重叠**——1st 聚焦"技术栈 4 层 + 4 类可信数据源 + Skill 框架细节"，3rd 聚焦"95% 数字背后 5 个反直觉边界 + 数据级 Harness 概念 + 数据科学角色迁移"
 

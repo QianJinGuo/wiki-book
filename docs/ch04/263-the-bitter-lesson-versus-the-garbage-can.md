@@ -4,7 +4,7 @@
 
 # The Bitter Lesson versus The Garbage Can
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-bitter-lesson-versus-the-garbage-can.md)
+→ [原文存档](https://www.oneusefulthing.org/p/the-bitter-lesson-versus-the-garbage)
 
 ## 摘要
 

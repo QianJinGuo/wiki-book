@@ -60,7 +60,7 @@ OpenAI 的 Assistants 和 Responses API 稳居第二（23.2% → 25.7%），这�
 3. **领域特定 agent 可能帮助 Anthropic 建立编排滩头**。Anthropic 面向 finance 和 design 推出的领域特定 agent，代表了一种"垂直渗透"策略——不需要赢得整个编排市场，只需要在自己强项领域建立 agent 运行时的信任。
 
 ## 关联阅读
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claudes_next_enterprise_battle_is_not_mo.md)
+- [原文存档](https://venturebeat.com/orchestration/claudes-next-enterprise-battle-is-not-models-its-the-agent-control-plane)
 - [Agent Orchestration](../ch04/242-agent-orchestration.html)
 
 ## ## 相关实体

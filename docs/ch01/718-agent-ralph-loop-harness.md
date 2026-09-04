@@ -4,7 +4,7 @@
 
 # 长周期 Agent 详解：从 Ralph Loop 到可接管 Harness
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/long-running-agent-ralph-loop-harness-takeover.md)
+→ [原文存档](https://mp.weixin.qq.com/s/ML5aD3f2ilHWjSB-wpBukw)
 
 ## 深度分析
 

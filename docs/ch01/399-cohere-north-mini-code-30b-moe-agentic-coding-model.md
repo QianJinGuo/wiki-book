@@ -4,7 +4,7 @@
 
 # Cohere North Mini Code —30B MoE Agentic Coding Model
 
->原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cohere-north-mini-code-agentic-coding-model.md)
+>原文存档：[原文存档](https://cohere.com/blog/north-mini-code)
 
 ##概述
 
@@ -87,7 +87,7 @@ Cohere 使用三种不同的评测 harness（SWE-agent、ReAct 单工具、Termi
 
 ## 来源
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cohere-north-mini-code-agentic-coding-model.md)
+→ [原文存档](https://cohere.com/blog/north-mini-code)
 
 **外部参考**：
 - Hugging Face权重：https://huggingface.co/cohere-for-ai/north-mini-code

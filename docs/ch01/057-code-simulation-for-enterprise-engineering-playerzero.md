@@ -45,7 +45,7 @@ Sim-1 的技术路线值得拆解：code embeddings 提供代码的语义表示�
 - "AI 系统可观测性" — 可观测性与监控的互补定位
 - "软件测试 AI" — AI 测试与模拟覆盖的关系
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/code-simulation-for-enterprise-engineering-playerz.md)
+→ [原文存档](https://hs.playerzero.ai/ai-code-review)
 
 ---
 

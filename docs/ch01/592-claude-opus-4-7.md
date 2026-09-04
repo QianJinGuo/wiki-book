@@ -17,7 +17,7 @@ Claude Opus 4.7 并不是一次全面升级，甚至部分能力大幅衰退。
 - [Anthropic Claude Managed Agents Platform 2026](158-anthropic-claude-managed-agents.html)
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch03/057-claude-code.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-opus-47.md)
+→ [原文存档](https://www.anthropic.com/news/claude-opus-4-7)
 
 - [突发Anthropic拿下马斯克Colossus 1全部算力Claude要放开用了](340-claude.html)
 - [anthropic 最新播客：如何打造下一代 claude](340-claude.html)

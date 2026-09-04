@@ -4,7 +4,7 @@
 
 # Claude Code 动态工作流 8 译本（行小招译注 + Hermes DAG 对比）
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-dynamic-workflows-8th-translation-xingxiaozhao.md)
+→ [原文存档](https://mp.weixin.qq.com/s/1dXweRUM2Sx6KfRrrp6hJg)
 → 主条目：[Claude Code Dynamic Workflows Multi Agent Orchestration](../ch09/069-claude-code-dynamic-workflows.html)
 
 ## 摘要

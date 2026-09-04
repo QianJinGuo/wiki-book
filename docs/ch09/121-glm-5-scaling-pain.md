@@ -59,7 +59,7 @@ Indexer 算子启动前引入与 Load Stream 的同步点，确保数据就绪�
 - SGLang PR #22811：https://github.com/sgl-project/sglang/pull/22811
 
 ## 相关页面
-[原始存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/glm5-scaling-pain-inference.md) — 完整正文
+[原始存档](https://mp.weixin.qq.com/s/9YdGXrqCPr90yDpdFf5Txg) — 完整正文
 [SGLang](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sglang.md) — 本次 BugFix #2 修复代码已提交至 SGLang 开源社区
 [推理系统优化](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/inference-optimization.md) — LayerSplit 等推理效率优化技术
 

@@ -4,7 +4,7 @@
 
 # Data Projects: Managing Data Assets at Netflix Scale
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/data-projects-managing-data-assets-at-netflix-scale.md)
+→ [原文存档](https://netflixtechblog.com/data-projects-managing-data-assets-at-netflix-scale-7ca25888591e?source=rss----2615bd06b42e---4)
 
 # Data Projects: Managing Data Assets at Netflix Scale
 

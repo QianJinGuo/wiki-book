@@ -118,7 +118,7 @@ Demo 级循环抹掉关键信息（哪个工具失败/为什么/下一步），�
 ---
 
 ## 相关页面
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-production-agent-engineering-deficit.md)
+→ [原文存档](https://mp.weixin.qq.com/s/HVkWNXTsFjn0HkdGyD7Tpw)
 → [Cursor Harness 复盘](../ch01/205-cursor-harness-model-production-floor.html)（模型 vs Harness 组合）
 → [Claude Code 提示词体系](../ch09/050-claude-code-prompt.html)
 → [Agent Harness 上下文管理](035-agent-harness.html)

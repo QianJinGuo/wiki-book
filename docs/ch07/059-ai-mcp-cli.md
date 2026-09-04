@@ -4,7 +4,7 @@
 
 # 如何构建生产准备的AI代理：MCP、CLI与技能——适合合适的工作的工具
 
-> **来源**：啊镒opc实验基地（2026-05-26）| 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/production-ai-agents-mcp-cli-skills-stack-ayi.md)
+> **来源**：啊镒opc实验基地（2026-05-26）| 原文存档：[原文存档](https://mp.weixin.qq.com/s/lW51nHefm7pEmhjKxEWOFw)
 
 ## 深度分析
 
@@ -63,7 +63,7 @@ MCP 放弃会引发：身份验证碎片化、无审计追踪、供应商锁定�
 - [From Agent Protocol To Harness Skill](../ch05/067-harness-skill.html)
 - [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](../ch03/004-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/production-ai-agents-mcp-cli-skills-stack-ayi.md)
+→ [原文存档](https://mp.weixin.qq.com/s/lW51nHefm7pEmhjKxEWOFw)
 - [Mcp Server Patterns](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mcp-server-patterns.md)
 
 ---

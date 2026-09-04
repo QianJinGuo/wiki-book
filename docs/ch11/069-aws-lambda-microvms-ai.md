@@ -4,7 +4,7 @@
 
 # AWS 正式发布 Lambda MicroVMs：面向 AI 时代的无服务器安全代码执行环境
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-正式发布-lambda-microvms面向-ai-时代的无服务器安全代码执行环境.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/aws-launch-lambda-microvms-ai-serverless-security-environment)
 
 # AWS 正式发布 Lambda MicroVMs：面向 AI 时代的无服务器安全代码执行环境
 

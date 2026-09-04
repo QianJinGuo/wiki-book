@@ -150,7 +150,7 @@ Stage-level 监控（token 上限 2000、P95 < 5s、重试 > 2 次告警）揭�
 - [Cursor Harness Model Production Floor](../ch01/205-cursor-harness-model-production-floor.html)
 - [Agent Harness Architecture Deep Dive Aksahy](../ch05/035-agent-harness.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/schemaflow-agentic-database-sql-generation-openai-cookbook.md)
+→ [原文存档](https://developers.openai.com/cookbook/examples/partners/schemaflow_design_guide/schemaflow_cookbook)
 
 ---
 

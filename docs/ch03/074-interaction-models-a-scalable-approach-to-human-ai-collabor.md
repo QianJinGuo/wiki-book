@@ -4,7 +4,7 @@
 
 # Interaction Models: 从回合制到实时协作的人机交互范式转变
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/interaction-models.md)
+> -> [原文存档](https://thinkingmachines.ai/blog/interaction-models/)
 
 ## 摘要
 
@@ -84,7 +84,7 @@ Thinking Machines 提出了现有基准无法覆盖的新能力维度：
 - [Thinking Machines 交互模型](../ch04/207-thinking-machines-interaction-models.html)
 - [Interaction Models: A Scalable Approach to Human-AI Collaboration](../ch04/257-ai.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/interaction-models.md)
+→ [原文存档](https://thinkingmachines.ai/blog/interaction-models/)
 
 ---
 

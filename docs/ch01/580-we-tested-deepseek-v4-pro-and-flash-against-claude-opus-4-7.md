@@ -2,12 +2,12 @@
 
 > 📊 Level ⭐⭐ | 5.4KB | `entities/deepseek-v4-pro-vs-claude.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek-v4-pro-vs-claude.md)
+> -> [原文存档](https://blog.kilo.ai/p/we-tested-deepseek-v4-pro-and-flash)
 
 ## 核心要点
 - value=8, confidence=9, product=72
 - Well-structured technical benchmarking
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek-v4-pro-vs-claude.md)
+→ [原文存档](https://blog.kilo.ai/p/we-tested-deepseek-v4-pro-and-flash)
 
 ## 相关实体
 - We Tested DeepSeek V4 Pro and Flash Against Claude

@@ -13,7 +13,7 @@
 - [Kimi K2 Tidb Agent Database Huangdongxu 20260513](../ch03/004-agent.html)
 - [深度拆解 Hermes Agent 记忆系统它修正了 Openclaw 的哪层误区](161-hermes-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-k2-6-multi-agent.md)
+→ [原文存档](https://mp.weixin.qq.com/s/x_Jtmk4-ThuNtZTGqJqncQ)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/multi-agent-coordination.md)
 ## 深度分析

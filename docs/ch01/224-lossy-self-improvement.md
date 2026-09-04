@@ -4,7 +4,7 @@
 
 # Lossy self-improvement
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lossy-self-improvement.md)
+> 原文存档：[原文存档](https://www.interconnects.ai/p/lossy-self-improvement)
 
 > **Core insight**: Nathan Lambert 提出"有损自我改进"（Lossy Self-Improvement, LSI）框架，对抗 AI 社区对递归自我改进（RSI）的流行叙事。LSI 核心论点是：模型确实成为研发循环的核心，但 friction 会打破 RSI 的三大假设——闭环、自放大和效率不减，导致进步曲线更接近线性而非指数。复杂性刹车（Complexity Brake）是 LSI 的理论基础。
 
@@ -94,7 +94,7 @@ AutoML 的历史教训是：自动化在明确定义的搜索空间内效果拔�
 - [Deli Auto Research Skill Deepseek](418-deepseek.html)
 
 ## 相关引用
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lossy-self-improvement.md)
+→ [原文存档](https://www.interconnects.ai/p/lossy-self-improvement)
 
 ---
 

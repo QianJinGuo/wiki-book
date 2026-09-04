@@ -83,7 +83,7 @@ MIT NANDA 报告显示 95% 企业 genAI pilot 未能交付可衡量的业务影�
 -  — LangGraph 状态机模型与编排层锁定分析
 -  — MCP 协议的真正地盘与 Skills 的分工
 -  — 管理平面与控制平面作为产品
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/new-ai-lock-in.md)
+- [原文存档](https://www.infoworld.com/article/4171983/the-new-ai-lock-in.html)
 
 ## ## 相关实体
 - [柚漫剧 AI 全流程提效拆解](../ch04/257-ai.html)

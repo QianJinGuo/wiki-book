@@ -661,7 +661,7 @@ Host Agent（5 秒级）与 Lambda Watchdog（5 分钟级）的两级架构实�
 - [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](../ch04/383-amazon-bedrock-agentcore.html)
 - [Using Amazon Bedrock Agentcore Openclaw Multi 4](../ch04/383-amazon-bedrock-agentcore.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/firecracker-bedrock-agentcore-multi-tenant.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/5-self-healing-cost-based-on-firecracker-microvm-bedrock-agentcore/)
 
 ---
 

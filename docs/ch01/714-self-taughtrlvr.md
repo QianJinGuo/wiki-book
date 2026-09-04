@@ -4,7 +4,7 @@
 
 # 让大模型学会「自己教自己」！京东&中科院信工所连发三篇论文定义Self-TaughtRLVR
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/self-taught-rlvr-jd-cii-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/g46P5l_BM99M6T1U084lTg)
 
 ## 深度分析
 

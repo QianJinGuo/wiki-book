@@ -4,7 +4,7 @@
 
 # Agentic RL: Token-In, Token-Out Done Right
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentic-rl-token-in-token-out-done-right-c6aaa4.md)
+→ [原文存档](https://qgallouedec-tito.hf.space/)
 
 ## 深度分析
 

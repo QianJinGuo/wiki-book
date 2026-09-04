@@ -46,7 +46,7 @@ Color tokens may depend on theme tokens, spacing tokens may have grid alignment 
 - [DESIGN.md](../ch03/004-agent.html) -- also an AI Agent interface for design systems
 - [Claude Design Skill](../ch01/722-claude-design-skill.html) -- agent operating design systems in practice
 
--> [Original Article Archive](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/design-token-agent-readability-50-systems.md)
+-> [Original Article Archive](https://learn.thedesignsystem.guide/p/50-design-token-files-one-problem)
 
 ---
 

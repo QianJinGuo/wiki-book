@@ -4,7 +4,7 @@
 
 # Multimodal evaluators: MLLM-as-a-judge for image-to-text tasks in Strands Evals
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/multimodal-evaluators-mllm-as-judge-image-to-text.md)
+> 来源：[原文存档](https://aws.amazon.com/blogs/machine-learning/multimodal-evaluators-mllm-as-a-judge-for-image-to-text-tasks-in-strands-evals/)
 
 随着企业软件向多模态迁移，Gartner 预测到2030年80%的企业软件将具备多模态能力，而2024年这一比例还不到10%。在没有自动化多模态评估的情况下，企业只能在昂贵的人工审查和不可靠的纯文本代理之间做出选择。
 
@@ -169,7 +169,7 @@ Strands Evals 的多模态 judge 保持了与文本 judge 完全相同的 `Case`
 - [Aws Reinforcement Fine Tuning Llm As Judge](451-llm.html)
 - [Amazon Bedrock Api Security Guide](../ch12/031-amazon-bedrock-api.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/multimodal-evaluators-mllm-as-judge-image-to-text.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/multimodal-evaluators-mllm-as-a-judge-for-image-to-text-tasks-in-strands-evals/)
 
 ---
 

@@ -4,7 +4,6 @@
 
 # Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ethan-he-cosmos-grok-imagine-latent-space-video-agent-20260606.md)
 
 ## 深度分析
 

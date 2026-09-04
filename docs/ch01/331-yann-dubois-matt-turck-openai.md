@@ -4,7 +4,7 @@
 
 # Yann Dubois × Matt Turck：OpenAI 后训练与强化学习的内部视角
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/yann-dubois-openai-post-training-matt-turck-interview.md)
+→ [原文存档](https://youtu.be/DhD1zZ8w8Mw)
 
 ## 摘要
 

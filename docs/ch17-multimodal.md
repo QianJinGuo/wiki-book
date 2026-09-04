@@ -116,17 +116,17 @@ Mk1 的定价（$0.15/$1.50 per million tokens）处于「Lite」价格区间，
 
 **Xiaomi Dasheng** 是小米发布的**通用声音基座模型**——让一个模型同时听懂**语音、环境声和音乐**。从一台 **8 卡机器**起步，经过 **MAE 预训练 → 大规模数据工程 → 6 维标注语义拓展 → DashengTokenizer 理解+生成统一** 五个阶段，把音频领域从"语音 / 声音 / 音乐三套独立模型"推进到"通用声音基座 + 通用描述 + 统一架构"。
 
-**核心数字**：300T 原始数据 / 146 包 / 1 年搬运 / 1 机 8 卡训练 / Base 86M (78.88) → 1.2B (**81.25**) / 音频标记**首次突破 AudioSet 50+ mAP** / MiDashengLM **22 SOTA** / TTFT **1/4** / 吞吐 **20x**。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
+**核心数字**：300T 原始数据 / 146 包 / 1 年搬运 / 1 机 8 卡训练 / Base 86M (78.88) → 1.2B (**81.25**) / 音频标记**首次突破 AudioSet 50+ mAP** / MiDashengLM **22 SOTA** / TTFT **1/4** / 吞吐 **20x**。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 ## 核心洞察：3 个反直觉判断
 
 ### 1. 增量优化 vs 底层重建 = 方向差异，非程度差异
 
 > **增量优化和底层重建不是程度的差异，是方向的差异。**
-> ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
+> ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 > 预研的价值之一，是帮团队识别**什么时候该换方向**。
 
-**实证**：已有的语音识别路径在特定任务上做增量优化，可以做到极致，但**做不到通用声音理解**——必须从底层重建。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
+**实证**：已有的语音识别路径在特定任务上做增量优化，可以做到极致，但**做不到通用声音理解**——必须从底层重建。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 ### 2. 更高的训练损失 = 更丰富的学习信号
 
@@ -136,20 +136,20 @@ Mk1 的定价（$0.15/$1.50 per million tokens）处于「Lite」价格区间，
 | **通用音频描述** | **高** | 融合语音摘要 / 环境声描述 / 音乐描述，**需要理解更复杂的语义** |
 
 > **在通用音频理解中，更高的训练损失可能意味着更丰富的学习信号。**
-> ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
+> ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 > 损失值本身不说明全部问题，**损失在度量什么可能更值得关注**。
 
 ### 3. 挑战行业假设是为了搞清楚它的边界
 
 > **挑战行业假设不是为了推翻它，而是为了搞清楚它的边界在哪里。**
-> ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
+> ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 > DashengTokenizer 的价值不是否定了 VAE，**而是证明了 VAE 不是唯一解**。
 
 ## 5 阶段技术栈
 
 ### 阶段 1：MAE（掩码自编码）预训练
 
-**关键决策**：选择 Meta 的 MAE 框架（视觉领域 → 音频迁移），而非在已有语音识别路径做增量改进。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
+**关键决策**：选择 Meta 的 MAE 框架（视觉领域 → 音频迁移），而非在已有语音识别路径做增量改进。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 | 维度 | MAE 思路 |
 |------|----------|
@@ -157,7 +157,7 @@ Mk1 的定价（$0.15/$1.50 per million tokens）处于「Lite」价格区间，
 | **优势** | 模型被迫学习**声音的本质结构**，而非特定任务的表面特征 |
 | **结果** | 通用声音表征，**不针对任何单任务优化** |
 
-**判别式 vs 生成式编码器**（GLAP 实验）： ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
+**判别式 vs 生成式编码器**（GLAP 实验）： ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 | 编码器类型 | 语音 | 声音 | 音乐 |
 |-----------|------|------|------|
@@ -181,18 +181,18 @@ Mk1 的定价（$0.15/$1.50 per million tokens）处于「Lite」价格区间，
 
 #### 视频-音频同步筛选
 
-**用视觉信号校验音频语义有效性**（画面中出现狗的同时有狗叫声 = 语义有效）。原始数据**无监督、无标注**，通过同步信号**伪标注**。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
+**用视觉信号校验音频语义有效性**（画面中出现狗的同时有狗叫声 = 语义有效）。原始数据**无监督、无标注**，通过同步信号**伪标注**。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 #### 规模扩展的实证收益
 
-**HEAR 基准**： ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
+**HEAR 基准**： ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 | 模型规模 | 参数量 | 性能 |
 |---------|--------|------|
 | Base | 86M | 78.88 |
 | 1.2B | 1.2B | **81.25** |
 
-**训练数据扩量（AudioSet 5K → 27 万小时）**： ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
+**训练数据扩量（AudioSet 5K → 27 万小时）**： ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 | 模型规模 | 额外提升 |
 |---------|---------|
@@ -204,7 +204,7 @@ Mk1 的定价（$0.15/$1.50 per million tokens）处于「Lite」价格区间，
 
 > 团队曾把训练数据集扩容至原有 **10 倍**体量，**结果出乎意料：AudioSet 公开测试集指标不升反降，切回业务场景实测效果同样变差**。
 
-**关键认知**： ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
+**关键认知**： ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 - 开源基准指标和实际业务指标**高度正相关**
 - **盲目扩量是无效的，音频数据的质量优先级远大于单纯的数据体量**
@@ -220,13 +220,13 @@ Mk1 的定价（$0.15/$1.50 per million tokens）处于「Lite」价格区间，
 
 #### 行业常规做法的局限
 
-用 ASR 转录做音频-文本对齐，**只能理解"人说了什么"**，丢弃环境声 / 音乐 / 情感 / 空间混响等信息。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
+用 ASR 转录做音频-文本对齐，**只能理解"人说了什么"**，丢弃环境声 / 音乐 / 情感 / 空间混响等信息。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
-**ACAV100M 数据集上损失高达 90% 潜在有用数据**——等同花了大量精力去"听懂"万物，最后在对齐环节又把大部分信息扔掉。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
+**ACAV100M 数据集上损失高达 90% 潜在有用数据**——等同花了大量精力去"听懂"万物，最后在对齐环节又把大部分信息扔掉。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 #### 关键突破：通用音频描述对齐
 
-**用多专家分析管道做细粒度标注**（2 秒粒度），再通过大模型合成统一描述。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
+**用多专家分析管道做细粒度标注**（2 秒粒度），再通过大模型合成统一描述。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 #### 6 维度 Caption（ACAVCaps）
 
@@ -239,12 +239,12 @@ Mk1 的定价（$0.15/$1.50 per million tokens）处于「Lite」价格区间，
 | 5 | **场景环境** | 空间信息 |
 | 6 | **音频类型** | 类别 |
 
-配套 **MECAT Benchmark**，**全部开源**。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
+配套 **MECAT Benchmark**，**全部开源**。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 #### 反直觉的成功
 
 > 拆分 6 个维度做细粒度标注，**一开始大家都不看好**，认为多维度信息冗余。
-> ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
+> ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 > 但后续做音频生成实验时发现，**六维精细化标注恰恰是模型生成真实声场音频的关键**。
 
 #### 业务结果
@@ -280,7 +280,7 @@ Mk1 的定价（$0.15/$1.50 per million tokens）处于「Lite」价格区间，
 
 ### 阶段 5：DashengAudioGen（进行中）
 
-让生成的声音**更贴近真实场景**——**带环境音、背景噪声、回声和远近感的完整声学场景**。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
+让生成的声音**更贴近真实场景**——**带环境音、背景噪声、回声和远近感的完整声学场景**。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 - 详情：https://nieeim.github.io/Dasheng-AudioGen-Web/
 - 代码：https://github.com/xiaomi-research/dasheng-audiogen
@@ -308,9 +308,9 @@ Mk1 的定价（$0.15/$1.50 per million tokens）处于「Lite」价格区间，
 
 ### 1. "方向差异" vs "程度差异" 是预研决策的关键
 
-大多数团队倾向于在已有路径上做增量优化（"再加点数据" / "再调调超参"），因为**风险更小、可解释性更高**。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
+大多数团队倾向于在已有路径上做增量优化（"再加点数据" / "再调调超参"），因为**风险更小、可解释性更高**。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
-但 Xiaom Dasheng 团队的判断是：**当优化走到极致，不应该继续加码，而是得换一条路重新出发**。这种"换方向"决策需要： ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
+但 Xiaom Dasheng 团队的判断是：**当优化走到极致，不应该继续加码，而是得换一条路重新出发**。这种"换方向"决策需要： ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 - **对行业假设的清晰理解**（"已有路径的优化边界在哪"）
 - **对替代方案的深度预研**（"MAE 在视觉的成熟经验能否迁移到音频"）
@@ -318,35 +318,35 @@ Mk1 的定价（$0.15/$1.50 per million tokens）处于「Lite」价格区间，
 
 ### 2. "数据质量 > 数据体量" 的音频领域实证
 
-与 NLP / CV 领域的 scaling law 不同，**音频领域的盲目扩量可能反降**： ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
+与 NLP / CV 领域的 scaling law 不同，**音频领域的盲目扩量可能反降**： ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 - 公开视频 80-90% 含人声，**纯粹的环境声 / 音乐稀缺**
 - 10 倍数据扩充**反而让模型变差**
 - **视频-音频同步伪标注**是质量筛选的关键
 
-这与 LFD（Loss Function Development）的 "eval 大小优先于答案可见性" 是不同维度的质量哲学——但**都强调质量 > 体量**。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
+这与 LFD（Loss Function Development）的 "eval 大小优先于答案可见性" 是不同维度的质量哲学——但**都强调质量 > 体量**。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 ### 3. "通用描述 > ASR 对齐" 是音频对齐范式转变
 
-传统音频-文本对齐 = **ASR 转录**（只能对齐"说了什么"，丢弃 90% 潜在有用信息）。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
+传统音频-文本对齐 = **ASR 转录**（只能对齐"说了什么"，丢弃 90% 潜在有用信息）。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
-Xiaomi Dasheng 的 6 维 caption = **多专家分析管道** + **大模型合成统一描述**（对齐"声学场景全貌"）。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
+Xiaomi Dasheng 的 6 维 caption = **多专家分析管道** + **大模型合成统一描述**（对齐"声学场景全貌"）。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
-**这种范式转变的代价**：训练损失更高（因为任务更复杂）。但**更高的损失 = 更丰富的学习信号**。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
+**这种范式转变的代价**：训练损失更高（因为任务更复杂）。但**更高的损失 = 更丰富的学习信号**。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 ### 4. "高维特征不适合直接生成" 的假设被证伪
 
-行业通行假设：生成模型需要**压缩到低维隐空间**（VAE 哲学），高维特征信息"散"、解码器难以利用。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
+行业通行假设：生成模型需要**压缩到低维隐空间**（VAE 哲学），高维特征信息"散"、解码器难以利用。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
-DashengTokenizer 通过**冻结语义特征 + 仅注入声学信息**，证明**高维特征可以直接用于生成**。这一突破**解放了音频合成对 VAE 架构的依赖**。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
+DashengTokenizer 通过**冻结语义特征 + 仅注入声学信息**，证明**高维特征可以直接用于生成**。这一突破**解放了音频合成对 VAE 架构的依赖**。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 ### 5. 6 维 caption 的"意外"价值印证预研容忍度
 
 > **预研中被质疑最多的方向，有时恰恰是最有价值的。**
-> ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
+> ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 > 6 维标注从"没人看好"到"成为关键"，说明预研团队需要**容忍一定程度的"低效探索"**。
 
-这是 Xiaomi Dasheng 团队最值得借鉴的方法论：**当某个方向不被人看好时，先小规模验证再判断**——而不是直接放弃或被共识压倒。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
+这是 Xiaomi Dasheng 团队最值得借鉴的方法论：**当某个方向不被人看好时，先小规模验证再判断**——而不是直接放弃或被共识压倒。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 ## 实践启示
 
@@ -359,19 +359,19 @@ DashengTokenizer 通过**冻结语义特征 + 仅注入声学信息**，证明**
 
 ### 自建基座的工程清单
 
-1. **预研阶段**：先识别现有路径的优化边界，再决定是否换方向 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
-2. **数据工程**：先质量后体量；用**多模态同步信号**做伪标注 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
-3. **模型选择**：参考**其他领域的成熟方法**（MAE 从视觉迁移到音频） ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
-4. **规模扩展**：在**小规模验证有效**后再扩量（避免盲目 scaling） ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
-5. **语义对齐**：用**多专家 + 大模型合成**做细粒度 caption，而非单一 ASR ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
-6. **架构统一**：探索**理解+生成统一模型**，挑战 VAE 类架构假设 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
-7. **开源验证**：开源基准上验证是预研最诚实的信号 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
+1. **预研阶段**：先识别现有路径的优化边界，再决定是否换方向 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
+2. **数据工程**：先质量后体量；用**多模态同步信号**做伪标注 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
+3. **模型选择**：参考**其他领域的成熟方法**（MAE 从视觉迁移到音频） ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
+4. **规模扩展**：在**小规模验证有效**后再扩量（避免盲目 scaling） ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
+5. **语义对齐**：用**多专家 + 大模型合成**做细粒度 caption，而非单一 ASR ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
+6. **架构统一**：探索**理解+生成统一模型**，挑战 VAE 类架构假设 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
+7. **开源验证**：开源基准上验证是预研最诚实的信号 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 ### DashengAudioGen 的下一步
 
 > 让生成的声音**更贴近真实场景**——**带环境音、背景噪声、回声和远近感的完整声学场景**。
 
-这与 Snowflake 的"Artifacts = 持续更新的受治理视图"是不同维度的"真实感"——DashengAudioGen 关注**听觉真实感**，Snowflake 关注**数据真实感**。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)"]
+这与 Snowflake 的"Artifacts = 持续更新的受治理视图"是不同维度的"真实感"——DashengAudioGen 关注**听觉真实感**，Snowflake 关注**数据真实感**。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 ## 相关实体
 
@@ -386,7 +386,7 @@ DashengTokenizer 通过**冻结语义特征 + 仅注入声学信息**，证明**
 - [Snowflake Agentic Enterprise Summit 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/snowflake-agentic-enterprise-summit-2026.md)（Snowflake 真实感场景对照）
 - [Loss Function Development Elvis Sun Goal Loop 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/loss-function-development-elvis-sun-goal-loop-2026.md)（LFD 质量 > 体量同源思想）
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/xiaomi-dasheng-audio-foundation-model-8gpu.md)
+→ [原文存档](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)
 
 ---
 
@@ -522,7 +522,7 @@ Pixelle-Video 不同于纯研究型开源项目(如 Stability AI 的各种模型
 
 ## 相关实体
 
-- → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pixelle-video-aidc-ali-international-2026.md)
+- → [原文存档](https://mp.weixin.qq.com/s/AEN8XCDZkt4uCmF75kYIvw)
 - [AI 视频工具悄悄走到了第三阶段](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-video-tools-third-stage-1779303117.md)
 - [Video Agent 范式迁移与算力-人才飞轮](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ethan-he-cosmos-grok-imagine-latent-space-video-agent-20260606.md)
 - [JoyAI-Echo:京东长视频框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/joyai-echo-long-video-framework-jd.md)
@@ -541,7 +541,7 @@ Pixelle-Video 不同于纯研究型开源项目(如 Stability AI 的各种模型
 
 > 📊 Level ⭐⭐ | 10.0KB | `entities/ntm-normalizing-trajectory-models.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ntm-normalizing-trajectory-models.md)
+> -> [原文存档](https://arxiv.org/abs/2605.08078)
 
 ## Summary
 [2605.08078] Normalizing Trajectory Models
@@ -616,7 +616,7 @@ NTM 的重要性不仅在于性能提升，更在于它揭示了扩散模型少�
 1. **准备支持可逆架构的工具链**：NTM 的可逆块需要特殊的反向传播处理。确保你的自动微分框架可以高效处理这类架构。
 2. **评估边缘部署可能性**：如果推理成本是关键瓶颈，NTM 的少步采样可能使扩散模型首次部署在边缘设备上（如手机、IoT 设备）。开始评估相关硬件支持和模型压缩需求。
 3. **跟踪学术进展的时间表**：NTM 仍处于学术阶段，从论文到稳定开源实现通常需要 6-12 个月。建议关注相关 GitHub 仓库和 HuggingFace 集成的时间线。
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ntm-normalizing-trajectory-models.md)
+→ [原文存档](https://arxiv.org/abs/2605.08078)
 
 ## 相关实体
 - [Normalizing Trajectory Models](https://github.com/QianJinGuo/wiki-public/blob/main/entities/normalizing-trajectory-models-v2.md)
@@ -630,7 +630,7 @@ NTM 的重要性不仅在于性能提升，更在于它揭示了扩散模型少�
 
 # How transparent is DiffusionGemma (and why it matters)
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/diffusiongemma-transparency-audit-lesswrong.md)
+> 原文存档：[原文存档](https://www.lesswrong.com/posts/zoYXpdaMgFT43Wc24/how-transparent-is-diffusiongemma-and-why-it-matters)
 
 ## 核心内容
 
@@ -716,8 +716,8 @@ Textract负责基础OCR（文本提取），Claude负责语义理解（判断提
 从自建CV模型（需要GPU服务器、维护团队）→ Textract API调用（serverless，按调用计费）+ Claude API。成本结构从固定成本变成可变成本，规模效应显著。
 
 ## 与知识库的连接
-- → [OS-level Actions](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-bedrock-agentcore-os-level-actions-browser.md)：未来Agent可替代人工完成整个ID验证流程
-- → [LLM-as-Judge](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-reinforcement-fine-tuning-llm-as-judge.md)：Claude做ID判断本质上是做judge
+- → [OS-level Actions](https://aws.amazon.com/blogs/machine-learning/introducing-os-level-actions-in-amazon-bedrock-agentcore-browser/)：未来Agent可替代人工完成整个ID验证流程
+- → [LLM-as-Judge](https://aws.amazon.com/blogs/machine-learning/reinforcement-fine-tuning-with-llm-as-a-judge/)：Claude做ID判断本质上是做judge
 
 ## 深度分析
 ### OCR+LLM混合架构的内在逻辑
@@ -748,7 +748,7 @@ SunFinance在OCR+Claude之后加入了ID号码格式化验证、日期标准化�
 ### 5. 成本结构转型释放新市场
 从自建CV模型（GPU服务器+维护团队=固定成本）→ Textract API + Claude API（serverless+按调用计费=可变成本），91%成本降低使低价值贷款场景首次具备经济可行性 。对于服务小微信贷、助贷等低毛利场景，成本结构的优化直接决定了业务是否成立。
 ---
-*Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-sun-finance-ai-id-extraction-fraud-detection.md)*
+*Source: [原文存档](https://aws.amazon.com/blogs/machine-learning/sun-finance-automates-id-extraction-and-fraud-detection-with-generative-ai-on-aws/)*
 
 ## 相关实体
 - [AI Detection and Response (AIDR): A Zero-Impact Operating Model](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-detection-and-response-aidr-a-zero-impact-operating-model.md)
@@ -872,7 +872,7 @@ FLAT 并非完全取代 3DGS，而是解决其特定弱点：
 
 - [AMap Abot Earth 0.5 3D Native World Model](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amap-abot-earth-0.5-3d-native-world-model.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/flat-feedforward-latent-triangle-splatting.md)
+→ [原文存档](https://flat-splat.github.io)
 
 ---
 ## 关联
@@ -957,7 +957,7 @@ AWS GenAIIC 与 Vexcel 的合作模式值得借鉴：先建评估框架（基于
 
 ---
 
-**来源**: → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/embed-the-world-multimodal-ai-for-searchable-aerial-imagery.md)
+**来源**: → [原文存档](https://aws.amazon.com/blogs/machine-learning/embed-the-world-multimodal-ai-for-searchable-aerial-imagery-at-scale/)
 
 ---
 ## 关联
@@ -980,7 +980,7 @@ AWS GenAIIC 与 Vexcel 的合作模式值得借鉴：先建评估框架（基于
 - [How To Calculate The Inference Efficiency Ratio](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-to-calculate-the-inference-efficiency-ratio.md)
 - [Aws Sun Finance Ai Id Extraction Fraud Detection](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-sun-finance-ai-id-extraction-fraud-detection.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/liteframe-efficient-vision-encoders.md)
+→ [原文存档](https://jjihwan.github.io/projects/LiteFrame/)
 
 ## 深度分析
 
@@ -1060,7 +1060,7 @@ TimeLens2-4B 平均超过 Qwen3.5-397B-A17B 约 7.5 个 mIoU 点，在全部七�
 - [LLaVA-OneVision-2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llava-onevision-2-full-frame-rate-vlm.md)（同类全帧率视频语言模型）
 - [Video RAG 分块策略](https://github.com/QianJinGuo/wiki-public/blob/main/entities/video-rag-chunking-strategy.md)（视频检索的互补方向）
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/timelens2-generalist-video-temporal-grounding.md)
+→ [原文存档](https://mp.weixin.qq.com/s/Dl39LOdIS0l_OInxTjoUrw)
 
 ---
 
@@ -1068,13 +1068,11 @@ TimeLens2-4B 平均超过 Qwen3.5-397B-A17B 约 7.5 个 mIoU 点，在全部七�
 
 > 📊 Level ⭐⭐⭐ | 12.0KB | `entities/cvpr-2026-highlight-清华打破多模态音频生成的通才困境omni2sound-音频基础模型开源.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cvpr-2026-highlight-清华打破多模态音频生成的通才困境omni2sound-音频基础模型开源.md)
 
 ## 摘要
 CVPR 2026 Highlight | 清华打破多模态音频生成的「通才困境」：Omni2Sound 音频基础模型开源！
 
 ## 关键要点
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cvpr-2026-highlight-清华打破多模态音频生成的通才困境omni2sound-音频基础模型开源.md)
 
 ## 相关实体
 
@@ -1149,7 +1147,6 @@ VGGSound-Omni 基准引入的画外音（Off-screen）专属评测赛道，为�
 - **评测基准设计本身是研究的核心贡献**
 - 专门设计对抗性评测场景（画外音、BGM 合成子集）才能真正检验模型的鲁棒性
 - 现有评测往往只覆盖「正常情况」，忽略了真实场景中的模态缺失和语义冲突
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cvpr-2026-highlight-清华打破多模态音频生成的通才困境omni2sound-音频基础模型开源.md)
 
 ---
 
@@ -1273,7 +1270,7 @@ Log 录制在专业影视制作中是标准化流程，但在消费级内容中�
 - **剪辑节奏**：30 秒 vs 60 秒 vs 3 分钟内容的信息密度设计
 - **脚本结构**：开场钩子、前 3 秒注意力捕获、CTA 转化路径
 ---
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/helloworldmedia.notion-Self-Filming-Guide-by-Hello-World-Media-2f60dfa5e2e180cfa.md)
+> 来源：[原文存档](https://helloworldmedia.notion.site/Self-Filming-Guide-by-Hello-World-Media-2f60dfa5e2e180cfa6efcef23c882e57)
 ## 相关实体
 - [Helloworldmedia.Notion Self Filming Guide By Hello World Media 2F60Dfa5E2E180Cfa](https://github.com/QianJinGuo/wiki-public/blob/main/entities/helloworldmedia.notion-self-filming-guide-by-hello-world-media-2f60dfa5e2e180cfa.md)
 - [Self Filming Guide By Hello World Media 2F60Dfa5E2E180Cfa6Efcef23C882E57](https://github.com/QianJinGuo/wiki-public/blob/main/entities/self-filming-guide-by-hello-world-media-2f60dfa5e2e180cfa6efcef23c882e57.md)
@@ -1295,7 +1292,7 @@ Log 录制在专业影视制作中是标准化流程，但在消费级内容中�
 
 ## 相关实体
 - [gemma 4 模型发布 — google deepmind 开源权重家族在 amazon bedrock 上线](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gemma-4-models-amazon-bedrock-deepmind-open-weights.md)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gemma-4-12b-google-multimodal-local.md)
+→ [原文存档](https://mp.weixin.qq.com/s/uRbZY55iXTbaY2vToJkJcw)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/vision-multimodal.md)
 ## 一句话定位
@@ -1452,7 +1449,7 @@ Log 录制在专业影视制作中是标准化流程，但在消费级内容中�
 - [Kimi Work](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kimi-work-codex-vibe-working-paradigm-shift.md) —— 本地 Agent
 - [Agent Harness 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture.md) —— 7 层模型
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gemma-4-12b-google-multimodal-local.md)
+→ [原文存档](https://mp.weixin.qq.com/s/uRbZY55iXTbaY2vToJkJcw)
 
 ---
 
@@ -1558,7 +1555,7 @@ ICRDrag 两阶段课程式训练中，第二阶段用稀疏不完整掩码训练
 - [注意力机制](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/attention-mechanism.md) — Transformer 中的核心组件
 - [Hermes Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent.md) — Agent 系统中的交互控制设计
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/icrdrag-context-region-drag-eccv-2026.md)
+→ [原文存档](http://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651042656&idx=3&sn=8609a7dcae8fb73c7e3aa1d8feea3180&chksm=84e6771eb391fe086132cc6c70341612c864b35fb324661218a9738f88067150f469ee82e78e#rd)
 
 ---
 
@@ -1566,7 +1563,7 @@ ICRDrag 两阶段课程式训练中，第二阶段用稀疏不完整掩码训练
 
 > 📊 Level ⭐⭐⭐ | 9.0KB | `entities/normalizing-trajectory-models-v2.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/normalizing-trajectory-models-v2.md)
+> -> [原文存档](https://arxiv.org/abs/2605.08078)
 
 ## 摘要
 Normalizing Trajectory Models (NTM) 是由 Jiatao Gu 等人提出的新型扩散模型变体，旨在解决少步生成（few-step generation）场景下传统扩散模型假设失效的问题。传统扩散模型将采样分解为大量小步高斯去噪，这一假设在压缩到几步时崩溃。NTM 将每步 reverse 建模为 expressive conditional normalizing flow，保留精确似然训练。通过结合每步内的浅层可逆块与跨轨迹的深层并行预测器，NTM 在仅 4 步采样下即可匹配或超越强图像生成基线，同时保留对生成轨迹的精确似然计算能力。
@@ -1799,7 +1796,7 @@ NEO-Unify 的成功验证了"原生统一"路线的可行性，为多模态大�
 ## 相关实体
 - [Elf Embedded Language Flows Hekaiming](https://github.com/QianJinGuo/wiki-public/blob/main/entities/elf-embedded-language-flows-hekaiming.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/sensnova-u1-deep-dive-jiqizhixin-d8602ded5c51.md)
+→ [原文存档](https://mp.weixin.qq.com/s/60m6GzLGlRAfWYWWkIDCOA)
 
 ---
 ## 关联
@@ -1953,7 +1950,7 @@ Vera 团队面临的核心挑战是：**没有公开数据集提供高质量的�
 
 当前为早期研究探索阶段，尚未达到生产部署水平。但其提出的"精确编辑 + 物理感知"范式对 AI 视频编辑领域具有方向性指导意义。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/toward-more-controllable-ai-video-editing-an-early-research-.md)
+→ [原文存档](https://netflixtechblog.com/toward-more-controllable-ai-video-editing-an-early-research-exploration-at-netflix-eb8160ed60a2?source=rss----2615bd06b42e---4)
 
 ---
 ## 关联
@@ -2064,7 +2061,7 @@ Gemini 3 Flash 音频输入 7.2 元/Mtok，看起来比豆包的 9 元/Mtok 便�
 - 超过 0.02 元/分钟的处理需要检查 prompt 是否过于冗余
 
 ## 相关页面
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/doubao-seed-2-lite-agent-multimodal.md)
+- [原文存档](https://mp.weixin.qq.com/s/ZAAEQzBvziU6iqzyUpnXuw)
 - [Claude Code](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-architecture.md) — 主要工作台（被补上眼睛和耳朵的那位）
 - [Agent 输入侧瓶颈背景](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-context-management-working-set.md)
 ## 相关实体
@@ -2148,7 +2145,7 @@ v1.1 模型家族实现了「事半功倍」（doing more with less）的效果�
 - [How Llms Actually Work 0Xkato](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-llms-actually-work-0xkato.md)
 - [Agent Reliability Context Drift Tool Hallucination](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-reliability-context-drift-tool-hallucination.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/olmoearth-v1-1-a-more-efficient-family-of-earth-observation-models.md)
+→ [原文存档](https://huggingface.co/blog/allenai/olmoearth-v1-1)
 
 ---
 
@@ -2233,7 +2230,7 @@ MolmoMotion 建立在 Molmo 2 视觉语言模型之上，利用其跨模态理�
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/molmomotion-language-guided-3d-motion-forecasting.md)
+→ [原文存档](https://huggingface.co/blog/allenai/molmomotion)
 
 ---
 
@@ -2243,7 +2240,7 @@ MolmoMotion 建立在 Molmo 2 视觉语言模型之上，利用其跨模态理�
 
 # Moebius: 0.2B Lightweight Image Inpainting with 10B-Level Performance
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/moebius.md)
+→ [原文存档](https://hustvl.github.io/Moebius/)
 
 ## 摘要
 
@@ -2320,7 +2317,7 @@ Moebius 的工作与当前模型压缩领域的多个方向形成呼应：
 - [知识代理超越前沿模型](https://github.com/QianJinGuo/wiki-public/blob/main/entities/knowledge-agents-beat-frontier-models.md) — 小模型+领域知识超越大模型的另一范式
 - 蒸馏、剪枝、量化等模型压缩技术是 Moebius 的理论背景
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/moebius.md)
+→ [原文存档](https://hustvl.github.io/Moebius/)
 
 ---
 
@@ -2337,7 +2334,7 @@ Moebius 的工作与当前模型压缩领域的多个方向形成呼应：
 - [Nvidia Mcg Toolkit Model Documentation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-mcg-toolkit-model-documentation.md)
 - [Nvidia Agentic Systems Extreme Co Design](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-agentic-systems-extreme-co-design.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fine-tuning-nvidia-cosmos-predict-2-5-with-lora-dora-for-robot-video-generation.md)
+→ [原文存档](https://huggingface.co/blog/nvidia/cosmos-fine-tuning-for-robot-video-generation)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/vision-multimodal.md)
 ## 深度分析
@@ -2396,7 +2393,7 @@ Cosmos Predict 2.5 采用 rectified flow 而非 DDPM 或 Flow Matching。核心�
 - [Ntm Normalizing Trajectory Models](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ntm-normalizing-trajectory-models.md)
 - [Nvidia Gamma World Multi Agent World Model](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-gamma-world-multi-agent-world-model.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/stable-audio-3.md)
+→ [原文存档](https://stability.ai/news-updates/meet-stable-audio-3-the-model-family-built-for-artistic-experimentation-with-open-weight-models)
 
 ## 深度分析
 
@@ -2457,7 +2454,7 @@ Stability AI 还首次发布了 LoRa 训练的官方文档，这延续了图像�
 - 同类 open-weights 安全模型：[Nemotron 3.5 Content Safety (multimodal)](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nemotron-3-5-content-safety-multimodal.md)、[Nemotron 3.5 Content Safety](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nemotron-3-5-content-safety.md)
 - 平台级 guardrail：[Amazon Bedrock Guardrails](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-guardrails-code-generation-six-patterns.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mistral-shieldstral-policy-adaptive-safety-classifier.md)
+→ [原文存档](https://mistral.ai/news/shieldstral/)
 
 ---
 
@@ -2573,7 +2570,7 @@ Stability AI 还首次发布了 LoRa 训练的官方文档，这延续了图像�
 - **与 [Agent 六机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-self-improvement-six-mechanisms.md)** 呼应：六机制中"环境仿真"的具体实现 —— 指数级训练场景
 - **与 [Anthropic 生物学 Agent 数据基础设施](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-biology-agent-data-infrastructure-virbench.md)** 平行：都揭示"非合成数据是真实世界 AI 的必要条件" —— 真实时空数据 / 真实生物数据 vs 合成数据
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amap-abot-earth-0.5-3d-native-world-model.md)
+→ [原文存档](https://mp.weixin.qq.com/s/N0KGmouW9KBeWTAQzYcPKA)
 
 ## 实践启示
 

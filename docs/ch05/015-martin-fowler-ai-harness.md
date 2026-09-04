@@ -72,7 +72,7 @@ Annie Vella 研究：supervisory engineering work（监督式工程工作）
 - [告别氛围编程](008-harness.html) — Harness 团队级实践
 
 ## 原始存档
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/martin-fowler-的-ai-研发提醒非确定性进了研发链路harness-才真正开始承重.md)
+→ [原文存档](https://mp.weixin.qq.com/s/Ya0M9C-TBY_d3lzcmipRDA)
 
 ## 元数据
 - **来源**: WeChat（架构师/JiaGouX）
@@ -165,7 +165,7 @@ Fowler 的框架实际上在说：人的角色从执行者变成了系统设计�
 --- 
 > [!contradiction] 参见
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/martin-fowler-ai-rd-harness-nondeterminism.md)
+→ [原文存档](https://mp.weixin.qq.com/s/Ya0M9C-TBY_d3lzcmipRDA)
 > Karpathy 访谈 持相反观点：Karpathy 认为 Vibe Coding 在特定场景下是合理的第一步，Fowler 的框架可能过于强调工程约束而低估了快速探索的价值。实际项目中需要根据场景权衡，不宜用单一框架套用所有情况。
 
 ---

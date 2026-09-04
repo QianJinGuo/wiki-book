@@ -4,7 +4,7 @@
 
 # Spec as AIOS：AI-Native 全栈交付的抗熵架构
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/spec-as-aios-anti-entropy-architecture-gaode-app-platform-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/85E1QO3xd7lyF0OKZ0JqeQ)
 
 ## 深度分析
 

@@ -15,7 +15,7 @@
 - [Agentic Ai System Architecture Harness Skill Mcp](../ch05/067-harness-skill.html)
 - [Agent Skill Writing Guide](../ch01/284-agent-skill.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillsieve-agent-skill-security.md)
+→ [原文存档](https://mp.weixin.qq.com/s/m-MYU5iFRF1ze8NeMW0_aQ)
 
 ## 深度分析
 

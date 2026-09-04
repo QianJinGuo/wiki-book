@@ -4,7 +4,7 @@
 
 # Impeccable：把 AI 前端设计变成可检查的工作流 — 33.4k Star 开源项目深度分析
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/impeccable-frontend-design-skill-harness-vibecoder.md)
+→ [原文存档](https://mp.weixin.qq.com/s/zbXBK9EpsGEqPNS0f6b7Cw)
 
 ## 摘要
 
@@ -146,7 +146,7 @@ Live 模式的价值是把"AI 输出"从单向的"修改文件"变成双向的"�
 - [Agent Skill Writing](284-agent-skill.html)
 - [Anthropic 95Pct Data Analysis Jiagoux Data Level Harness 20260606](../ch05/008-harness.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/impeccable-frontend-design-skill-harness-vibecoder.md)
+→ [原文存档](https://mp.weixin.qq.com/s/zbXBK9EpsGEqPNS0f6b7Cw)
 - [我把 claude design 做成了 skill，人人都能成为顶级网站设计师](340-claude.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/data-infrastructure.md)
 

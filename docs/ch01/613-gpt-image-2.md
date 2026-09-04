@@ -19,7 +19,7 @@ A crisp, printmaking-like aesthetic with bold outlines and natural deformation. 
 - [Useful Memories Become Faulty When Continuously Updated By Llms](078-useful-memories-become-faulty-when-continuously-updated-by-l.html)
 - [Build Live Translation Apps With Gpt Realtime Translate](084-build-live-translation-apps-with-gpt-realtime-translate.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gpt-image-2神级提示词分享.md)
+→ [原文存档](https://mp.weixin.qq.com/s/Z_QuJf6Fgh6XuullHpt7Hg)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/vision-multimodal.md)
 ## 深度分析

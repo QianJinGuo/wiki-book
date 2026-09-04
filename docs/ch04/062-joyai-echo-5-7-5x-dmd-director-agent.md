@@ -4,7 +4,7 @@
 
 # JoyAI-Echo：京东开源长音视频生成框架
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/joyai-echo-long-video-jd-qbitai.md)
+> 原文存档：[原文存档](https://mp.weixin.qq.com/s/i4X6rTw55E_q4F114jJiPg)
 
 京东 2026-06-07 开源长音视频生成框架 **JoyAI-Echo**——直击长视频生成"角色变脸、音色漂移、速度慢、修改难"四大行业痛点。**三大技术栈**（跨模态音视频记忆库 + 记忆驱动后训练 + 轻量化实时超分） + **Director Agent** 三阶段（策划/生成/点评修改）让长视频生成"看见即可得"。开源让长视频生成从头部公司专属能力 → 开发者共同验证调用的开放工具。
 
@@ -185,7 +185,7 @@ JoyAI-Echo 带来的，不仅是一款新长视频模型，更是一次**AI 视�
 
 ## 第 2 来源 — 京东技术发布：Director Agent 四阶段 + 补充用户偏好数据（2026-06-03）
 
-> Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/joyai-echo-long-video-jd-director-agent-4-stage-2026.md)
+> Source: [原文存档](https://mp.weixin.qq.com/s/BC84zEu3_A-Jd6ZhmGE60w)
 > Author: 京东技术
 > Date: 2026-06-03
 
@@ -216,7 +216,7 @@ JoyAI-Echo 带来的，不仅是一款新长视频模型，更是一次**AI 视�
 | 应用场景 | 未列出 | **7 类具体场景** |
 | GitHub 链接 | 未确认 | **提供实际链接** |
 
-→ [第2原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/joyai-echo-long-video-jd-director-agent-4-stage-2026.md)
+→ [第2原文存档](https://mp.weixin.qq.com/s/BC84zEu3_A-Jd6ZhmGE60w)
 
 ---
 

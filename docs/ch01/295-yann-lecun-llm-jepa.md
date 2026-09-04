@@ -4,7 +4,7 @@
 
 # Yann LeCun 谈 LLM 不是智能与世界模型 JEPA
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/yann-lecun-llm-not-intelligence-jepa.md)
+→ [原文存档](https://mp.weixin.qq.com/s/blO6HIfh6Dc1O8fHWnQc8Q)
 
 ## 摘要
 

@@ -4,7 +4,7 @@
 
 # How LLMs Actually Work: 0xkato Transformer Walkthrough
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-llms-actually-work-0xkato.md)
+> 原文存档：[原文存档](https://www.0xkato.xyz/how-llms-actually-work/)
 
 ## 概述
 
@@ -133,7 +133,7 @@ Attention 权重的可视化是理解"模型在看什么"的最佳工具——�
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/llm-research-frontiers.md)
 ## 原文链接
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-llms-actually-work-0xkato.md)
+→ [原文存档](https://www.0xkato.xyz/how-llms-actually-work/)
 
 ---
 

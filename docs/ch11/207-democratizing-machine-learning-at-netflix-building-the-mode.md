@@ -4,7 +4,7 @@
 
 # Democratizing Machine Learning at Netflix: Building the Model Lifecycle Graph
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/democratizing-machine-learning-at-netflix-building-the-model.md)
+→ [原文存档](https://netflixtechblog.com/democratizing-machine-learning-at-netflix-building-the-model-lifecycle-graph-5cc6d5828bb1?source=rss----2615bd06b42e---4)
 
 ## 深度分析
 

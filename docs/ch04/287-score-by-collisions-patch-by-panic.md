@@ -54,7 +54,7 @@
 - [Akamai 收购 AI 浏览器安全公司 LayerX](../ch01/040-akamai-acquires-israeli-ai-browser-security-startup-layerx-f.html)
 - [Entry Point Hijacking：入口点劫持](https://github.com/QianJinGuo/wiki-public/blob/main/entities/entrypointhijacking.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/blog-himanshuanand-com-score-by-collisions-patch-by-panic.md)
+→ [原文存档](https://blog.himanshuanand.com/2026/05/score-by-collisions-patch-by-panic/)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-landscape.md)
 

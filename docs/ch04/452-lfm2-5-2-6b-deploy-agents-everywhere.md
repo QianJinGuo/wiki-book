@@ -40,7 +40,7 @@ LFM2.5-2.6B 的核心论点：**移除 per-token 成本会改变开发者构建�
 - **on-policy 蒸馏的价值**：MOPD 解决 off-policy 蒸馏的分布漂移问题，teacher/student 同源是稳定性关键——对多领域能力融合有参考价值
 - **端侧 Agent 的成本论**：本地推理免除 per-token 成本 → Agent 可并行常驻，是 edge Agent 产品设计的经济学依据
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/liquid-ai-lfm2-5-2-6b-agentic-on-device.md)
+→ [原文存档](https://www.liquid.ai/blog/lfm2-5-2-6b)
 
 ---
 

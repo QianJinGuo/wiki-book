@@ -4,7 +4,7 @@
 
 # The Data Canary: How Netflix Validates Catalog Metadata
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-data-canary-how-netflix-validates-catalog-metadata.md)
+→ [原文存档](https://netflixtechblog.com/the-data-canary-how-netflix-validates-catalog-metadata-18b699d58e36?source=rss----2615bd06b42e---4)
 
 # The Data Canary: How Netflix Validates Catalog Metadata
 

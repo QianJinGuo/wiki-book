@@ -15,7 +15,7 @@
 - [Deepseek Moe Parallel Strategy](418-deepseek.html)
 - [Deepseek V4 Training Methodology](459-deepseek-v4.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/chinese-ai-lab-insights-nathan.md)
+→ [原文存档](https://mp.weixin.qq.com/s/G2O42ck4vej97Qg1osAKLg)
 
 - [Linn Fritz Looks At The Lighter Side Of Life](../ch09/095-linn-fritz-looks-at-the-lighter-side-of-life.html)
 - [deepseek-v4深度拆解一篇论文同时做了五件大事](459-deepseek-v4.html)

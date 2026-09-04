@@ -219,7 +219,7 @@ AI Native 时代，artifact 可见性大幅提升，但"被看见"（被认可�
 - [4] Ken Huang, *What is an Agentic AI Native Organization?*, Substack, February 2026
 - [5] Peter Pang, *Why Your "AI-First" Strategy Is Probably Wrong*, X (Twitter), April 2026
 - [6] Steve Yegge, *The Anthropic Hive Mind*, Medium, February 2026
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-native-rd-org-design-xiaobin.md)
+→ [原文存档](https://mp.weixin.qq.com/s/Xf3C60jCxR4ppMi4HuAnVA)
 
 ## 相关实体
 

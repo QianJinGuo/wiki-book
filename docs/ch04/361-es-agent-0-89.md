@@ -49,7 +49,7 @@
 - [Hermes Agent 记忆系统 vs OpenClaw 记忆观](161-hermes-agent.html)
 - [State Of Memory In Agent Harness Mem0 2026](../ch05/035-agent-harness.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/es-agent-memory-layer-atlas-elasticsearch-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/fypjVWJBQg_MZV9OMfPpIA)
 
 ---
 

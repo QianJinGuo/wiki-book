@@ -60,7 +60,7 @@ Harness 设计应像水流——在明确河道（spec/边界）内自主流动�
 
 > 参见也（see also）：[生产级 Harness 架构设计](035-agent-harness.html)、[Harness 综合范式](057-harness-engineering.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/code-is-cheap-ai-native-harness-wuyue-aliyun-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/t04ysxZN2qEc3986r2gyTA)
 
 ---
 

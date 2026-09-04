@@ -11,7 +11,7 @@
 - **典型应用场景**：CodeWiz代码检索、AICR智能代码审查、CodeWiki自动生成文档 
 
 ## 相关资源
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/codeindex-让大模型更好地理解你的代码.md)
+- [原文存档](https://mp.weixin.qq.com/s/F0dqp08Qas_aSui4eVplCA)
 
 ## 深度分析
 ### 大模型理解代码的核心挑战
@@ -53,7 +53,7 @@ Codeindex的Parser适配层和GraphDB适配层设计体现了分层架构的工�
 淘天集团-跨端技术团队作为Codeindex的开发和实践主体，其服务于淘宝基础用户产品的经验表明，这类代码理解工具在高复杂度、大规模代码库的场景中价值尤为显著 。
 
 ## 相关链接
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/codeindex-让大模型更好地理解你的代码.md)
+- [原文存档](https://mp.weixin.qq.com/s/F0dqp08Qas_aSui4eVplCA)
 
 ## 相关实体
 - [LLM-as-a-Verifier: A General-Purpose Verification Framework](168-rag.html)

@@ -19,7 +19,7 @@
 - [Harness Engineering Comprehensive Guide Conardli](057-harness-engineering.html)
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](../ch04/312-ai-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/is-grep-all-you-need-pwc-retrieval-harness-coupling.md)
+→ [原文存档](https://mp.weixin.qq.com/s/VHLC8m75AE1WaCZOQdvajg)
 
 ## 三个核心实验发现
 

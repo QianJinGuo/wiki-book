@@ -4,7 +4,7 @@
 
 # Anthropic Claude Community 插件仓库劫持事件：SHA 校验如何避免供应链攻击
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/repo-jacking-anthropics-claude-community-plugins.md)
+> 原文存档：[原文存档](https://johnstawinski.com/2026/06/18/repo-jacking-anthropics-claude-community-plugins-and-the-shas-that-saved-them/)
 
 ## 摘要
 
@@ -191,7 +191,7 @@ AI 工具加剧了供应链问题。过去是人类可能在机器上安装随�
 - AI Agent 工具注册表
 - LLM 插件生态系统
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/repo-jacking-anthropics-claude-community-plugins.md)
+→ [原文存档](https://johnstawinski.com/2026/06/18/repo-jacking-anthropics-claude-community-plugins-and-the-shas-that-saved-them/)
 
 ---
 ## 关联

@@ -2,11 +2,11 @@
 
 > 📊 Level ⭐ | 6.6KB | `entities/be-more-expressive-to-close-more-sales.md`
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/be-more-expressive-to-close-more-sales.md)
+> 来源：[原文存档](https://app.sciencesays.com/p/be-more-expressive-to-close-more-sales)
 
 # Be more-expressive-to-close-more-sales
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/be-more-expressive-to-close-more-sales.md)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/be-more-expressive-to-close-more-sales.md)
+> 来源：[原文存档](https://app.sciencesays.com/p/be-more-expressive-to-close-more-sales)
+→ [原文存档](https://app.sciencesays.com/p/be-more-expressive-to-close-more-sales)
 
 ## 研究背景
 一项来自维也纳大学（University of Vienna）和维也纳莫德尔大学（Modul University Vienna）的销售演示实验，分析了 847 名受试者观看 14 场不同行业（App、硬件、营销咨询等）销售视频后的反应。核心问题是：销售人员的表达力（expressiveness）究竟如何影响成交率。

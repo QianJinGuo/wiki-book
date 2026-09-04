@@ -261,7 +261,7 @@ AI Team 的设计哲学：**文件系统即状态机**。所有状态、产物�
 文章在结尾处指出了一个重要观点：**知识工程的投入是确定性回报，而模型能力提升的回报是概率性的**。每沉淀一条 proven 知识，所有后续工作流都会受益；但下一代模型在你的特定场景上是否真的更好，是不确定的。
 这个观点对于资源分配决策有重要参考价值。在"投大模型"和"投知识工程"之间做选择时，不应该盲目追逐最新的模型热点，而应该评估知识工程的投入产出比。对于业务逻辑复杂、领域知识要求高的场景，知识工程的投入往往能带来更稳定、更可累积的回报。
 特别是对于已经运行了较长时间的团队，历史积累的领域知识是宝贵的资产。这些知识——"这个接口在高并发下有 race condition""那个业务流程需要特别注意 XX 情况"——是模型无法从公开资料中学到的，属于团队的私域护城河。
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness不是目的知识才是护城河-一个ai工程交付团队的知识沉淀实践.md)
+→ [原文存档](https://mp.weixi)
 
 ## 相关概念
 - [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — Harness 工程框架的核心概念

@@ -4,7 +4,7 @@
 
 # 给 Claude Code 装上'超能力' — 它干活比我还靠谱
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-superpowers-workflow-by-xinlingyuanyuanyuan.md)
+→ [原文存档](https://mp.weixin.qq.com/s/HyAo0ieoj1LBD0z7iuTbPw)
 
 ## 深度分析
 

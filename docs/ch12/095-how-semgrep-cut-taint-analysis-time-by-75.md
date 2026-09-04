@@ -21,7 +21,7 @@ This first pass of taint analysis was only **intra-procedural**, meaning that wi
 
 Many users had been asking for exactly this, and so two year
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-semgrep-cut-taint-analysis-time-by-75.md)
+→ [原文存档](https://semgrep.dev/blog/2026/how-we-cut-semgreps-taint-analysis-time-by-75-percent/)
 
 ---
 ## 关联

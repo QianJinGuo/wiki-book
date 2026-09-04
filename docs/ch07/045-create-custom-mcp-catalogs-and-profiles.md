@@ -3,7 +3,7 @@
 > 📊 Level ⭐⭐ | 7.9KB | `entities/create-custom-mcp-catalogs-and-profiles.md`
 
 # Create Custom MCP Catalogs and Profiles
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/create-custom-mcp-catalogs-and-profiles.md)
+→ [原文存档](https://www.docker.com/blog/create-custom-mcp-catalogs-and-profiles/)
 
 ## 摘要
 Docker 宣布 Custom Catalogs 与 MCP Profiles 正式 GA（General Availability），为 MCP 服务器的组织级管理提供两个互补的抽象：Catalogs 把组织批准的可信服务器集合封装为可分发、不可变的 OCI artifact，Profiles 则让个人按工作场景定义可移植的服务器分组与配置。二者共同回应了 MCP 规模化落地中的核心命题——工具接入已经标准化，真正的挑战是"协调"（coordination）。

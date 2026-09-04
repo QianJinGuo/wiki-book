@@ -80,7 +80,7 @@ nanoGPT速通的约束条件（固定架构、固定数据）限制了递归的�
 ## See Also
 -  — ETCLOVG taxonomy中的验证与评估层（V层）如何评测此类自主科研能力
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/stochastic-parrot-thought-experiment.md)]"]
+→ [原文存档](https://stochasticparrot.substack.com/p/a-thought-experiment)]"]
 
 -  — 递归自改进与harness演化的学术脉络
 

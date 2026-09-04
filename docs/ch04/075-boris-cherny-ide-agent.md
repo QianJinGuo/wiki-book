@@ -75,7 +75,7 @@ Claude Code 的成功不完全取决于模型能力，Harness（模型外那层�
 
 ### 7. 将"领域知识沉淀"纳入团队核心资产
 Boris 提到"最值钱的不是知道某个 API 怎么写，而是知道这套系统为什么长成这样"。这意味着团队应该把领域知识——历史设计决策、边界约束、业务规则——纳入和代码同等重要的资产位置。具体做法包括：建立 Architecture Decision Records（ADR）记录关键设计选择、维护业务规则百科而非只靠代码注释、确保新工程师 onboarding 时理解"为什么"而非只了解"是什么"。这些知识难以被当前 Agent 自动捕获，需要团队主动维护。
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/boris-cherny-新访谈开发工具正在从-ide-变成-agent-控制台-v2.md)
+→ [原文存档](https://mp.weixin.qq.com/s/iqSixiNP9lxNKg7aVfHFCQ)
 
 ## 相关实体
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/004-agent.html)

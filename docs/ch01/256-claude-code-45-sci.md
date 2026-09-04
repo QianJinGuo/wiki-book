@@ -6,7 +6,7 @@
 
 > 使用 Claude Code 在科研场景中的实践案例：45 页结构化文献综述，质量达到 SCI 一区发表水平。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-45-page-literature-review-SCI.md)
+→ [原文存档](https://mp.weixin.qq.com/s/x5ronLRaXlD723tDE450eA)
 
 该方法源自「从 Vibe Coding 到 Vibe Researching」的思路——将 coding agent 的工作流范式迁移到学术研究中。Claude Code 输出结构化论证、自动引用覆盖，展示了 AI 编程工具在非编程场景（学术写作）中的跨域能力。
 

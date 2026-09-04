@@ -7,7 +7,7 @@
 ## 相关实体
 
 - [neurips 2026 使用闭源 ai 检测器 pangram 批量 desk-reject 论文事件](https://github.com/QianJinGuo/wiki-public/blob/main/entities/neurips-2026-pangram-desk-reject-controversy.md)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-models-and-codex-on-amazon-bedrock-are-now-generally-.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/openai-models-and-codex-on-amazon-bedrock-are-now-generally-available/)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/reinforcement-learning-rlhf.md)
 ## 深度分析

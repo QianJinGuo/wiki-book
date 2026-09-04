@@ -16,7 +16,7 @@ LangChain 证明：只改 Harness（不改模型权重），TerminalBench 2.0 �
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](312-ai-agent.html)
 - [Code As Agent Harness Survey](../ch09/044-code-as-agent-harness.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-harness-12-components-7-decisions.md)
+→ [原文存档](https://mp.weixin.qq.com/s/BEuV7aCCZgWcX7MRLVC86w)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-engineering-guide.md)
 ## 核心主张
@@ -213,7 +213,7 @@ Manus 6 个月重写 5 次删复杂度，这个案例说明 Harness 不是一次
 - Claude Code /goal 文档: https://code.claude.com/docs/en/goal
 - Claude Code release notes (/loop): https://docs.anthropic.com/en/release-notes/claude-code
 
-→ [第 2 原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/elvis-saravia-autonomous-coding-7-elements-control-system.md)
+→ [第 2 原文存档](https://mp.weixin.qq.com/s/b2pvXBGA6BkY6gJbLerZ1g)
 
 ---
 

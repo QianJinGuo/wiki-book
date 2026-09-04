@@ -70,7 +70,7 @@
 - [Anthropic](523-anthropic-puts-claude-agents-on-a-meter-across-its-subscript.html)
 - AI 安全与治理
 - [云 AI 基础设施](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/cloud-ai-infrastructure.md)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/大反转马斯克牵手对手-darioanthropic-与-spacex-罕见合作.md)
+→ [原文存档](https://mp.weixin.qq.com/s/ZdmnlWz3LqJvQSQ0OndAhw)
 
 ---
 

@@ -9,7 +9,7 @@
 
 **SkillOpt = "LoRA for skills"**。LoRA 冻结模型主体、只训练一个小参数适配层；**SkillOpt 冻结全部模型参数、只训练一份外挂 skill 文件**。部署阶段零额外模型调用 —— optimizer 只在训练阶段参与，产出纯文本 `.md`。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillopt-skill-document-training-microsoft-sjtu.md)
+→ [原文存档](https://mp.weixin.qq.com/s/l5ZtF-TPtttCtjyLiiGYUQ)
 
 ## 它要解决什么
 主流 skill 生产方式（人工手写 / LLM 一次性生成 / 自修订）**没有验证机制**。人工写的改一行不知影响；LLM 生成的 quality 看那次 prompt；自修订"看起来更聪明"实际可能更差。
@@ -120,7 +120,7 @@ SkillOpt 把 skill 文件变成**可训练 / 可验证 / 可审计的工程资�
 4. **调参实用指南** — textual learning-rate、rejected-edits buffer、parallel workers 等 hyperparameter 的实际调节建议，附官方文档链接。
 5. **诚实限制条款** — 明确列出 SkillOpt 不适用的场景（无客观正确答案的任务），以及「skill 被训练走样后难以回滚」等实战中遇到的问题。
 
-→ [第 2 来源原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/自我进化的-agent-skill微软-skillopt-到底解决了什么.md)
+→ [第 2 来源原文存档](https://mp.weixin.qq.com/s/No81T-3bAgXRfD5UnEcTeQ)
 - [Impeccable](001-impeccable.html) —— skill 落到前端的范例；SkillOpt 给"skill 怎么训"补上一块
 
 ## 第 3 来源 — AliExpress 一手实践（@枫樾，2026-08-19）
@@ -143,7 +143,7 @@ SkillOpt 把 skill 文件变成**可训练 / 可验证 / 可审计的工程资�
 
 **结论呼应**：落地最大分歧不在算法，在没有 verifier；把 skill 从"提示词的附属产物"重定位为"冻结 Agent 的可训练外部状态"，才有学习率/验证集/调度整套工具箱。纪律类机制（有界编辑/严格门控/拒绝即负反馈/受保护区/逐条可审计）比规模类超参（batch/minibatch/调度）对结果的影响大得多（去慢更新与 meta 使 SpreadsheetBench −22.5）。
 
-→ [第 3 来源原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-self-evolution-skillopt-practice-aliexpress-2026-08-19.md)
+→ [第 3 来源原文存档](https://mp.weixin.qq.com/s/YS18dZfVvNBEsBuZ1pa7DA)
 
 ---
 

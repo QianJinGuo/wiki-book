@@ -400,7 +400,7 @@ artifacts:
 
 ## 相关实体
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/three-tools-comet-openspec-superpowers-ai-coding-shuge-2026-06-17.md)
+→ [原文存档](https://mp.weixin.qq.com/s/2LSn2Tbw7iN1XZnckQUY1g)
 → [Three Tools In One Gstack Superpowers Openspec Engineering Ai Coding](../ch05/076-ai-coding.html) — 同期同主题：gstack 作为第三器的视角
 → [Superpowers Deep Dive Kaiyuandakashuo](../ch04/257-ai.html) — Superpowers 单项目深度
 → [Openspec Spec Driven Development Trae Solo](../ch05/046-openspec.html) — OpenSpec 单项目深度

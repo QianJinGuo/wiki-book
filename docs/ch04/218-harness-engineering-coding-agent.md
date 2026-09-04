@@ -60,7 +60,7 @@ dispatch 架构由 `dispatch.js`（首批启动）和 `poll.js`（监控补位�
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](312-ai-agent.html)
 - [Agent Harness Context Management Working Set](../ch05/035-agent-harness.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-让-coding-agent-可靠完成长程任务.md)
+→ [原文存档](https://mp.weixi)
 
 ---
 

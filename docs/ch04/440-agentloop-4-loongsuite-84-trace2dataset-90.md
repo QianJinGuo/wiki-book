@@ -193,8 +193,8 @@ LLM 时代模型权重是资产，Agent 时代 trajectory 是资产。设计 Age
 
 ## 八、引用与延伸阅读
 
-→ [原文存档 (2026-06-18)](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aliyun-agentloop-enterprise-agent-evolution-flywheel-pku.md)
-→ [原文存档 (2026-07-08 新版详解)](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aliyun-agentloop-2026-07-08-announce.md)
+→ [原文存档 (2026-06-18)](https://mp.weixin.qq.com/s/x8b5_StemN9G-bGsV9tfAw)
+→ [原文存档 (2026-07-08 新版详解)](https://mp.weixin.qq.com/s/lkrOh-XDX2e_iOMdN6NUGQ)
 
 ## 九、2026-07-08 更新：新版 AgentLoop 详解补充
 
@@ -252,7 +252,7 @@ StarOps 中平均工具调用次数下降 25.1%，有害事件下降 27.8%。``
 
 对企业最有意义的成本指标不是单次 Token，而是 **每完成一个成功任务需要消耗的 Token、时间、工具调用和人工介入**。经验注入在提高成功率的同时，减少无效推理、重复调用和人工调优。``
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentloop-experience-self-evolution-aliyun-2026-07-22.md)
+→ [原文存档](https://mp.weixin.qq.com/s/imwXP56r-llaQwD-qAQM6Q)
 ## 十一、2026-07-25 补充：Agent 经验自进化实操指南与多 Agent 共享经验
 
 2026-07-25 阿里云云原生详细介绍了 AgentLoop 经验自进化的完整实操流程、多 Agent 共享经验机制以及成本-质量权衡分析：
@@ -279,7 +279,7 @@ AgentLoop 不只关注单一分数，而是同时衡量：成功率、同类任�
 
 经验注入并不意味着 Token 必然下降——PinchBench (+2.9%) 和 SWE-bench (362.4M→536M) 在质量提升的同时消耗了更多 Token。合理的优化目标是**在质量护栏下优化单位成功成本**，而非单独追求最低 Token。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentloop-agent-experience-self-evolution-aliyun-2026-07-25.md)
+→ [原文存档](https://mp.weixin.qq.com/s/9zGGPFl5PKkzc6JLTnz6vQ)
 
 ## 十二、2026-08-11 补充：UGC 游戏场景垂直落地方法论（3 天 7 步闭环）
 
@@ -307,7 +307,7 @@ AgentLoop 不只关注单一分数，而是同时衡量：成功率、同类任�
 
 玩法层设计原则（最直觉的「主流玩法清单+固定 Rubric」方向是错的——清单写死 = 评估器成为创意天花板）：**评估器不预设任何玩法，需求清单每次从用户输入动态抽取**，只判断「用户要的有没有正确做出来」；玩法无关五维度（需求覆盖度/可运行与可进入/实现正确性/反馈可见性/表达达成度）；纪律：只对用户显式要求计分、一切以轨迹证据为准（output 声称但轨迹无证据一律按未完成）、不评审美不评好玩程度。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentloop-ugc-game-agent-eval-optimization-aliyun-2026-08-11.md)
+→ [原文存档](https://mp.weixin.qq.com/s/VOB7IHobrWnmmyS5FDoHGA)
 
 ## 十三、2026-08-11 补充：Skill 质量基线管理闭环（小红书科技 AMA）
 
@@ -319,7 +319,7 @@ AgentLoop 不只关注单一分数，而是同时衡量：成功率、同类任�
 
 **实战案例**：云监控 2.0 全生命周期管理 Skill 两轮 Bad Case 优化 59→72 分，达基线后发布上线，形成「线上观测→离线评估→优化迭代→发布验证」持续改进闭环。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentloop-skill-quality-baseline-xhs-2026-08-11.md)
+→ [原文存档](https://www.xiaohongshu.com/explore/6a79a82c000000002402edd4?xsec_source=app_share&type=normal&xsec_token=CB7EmngytlMcTABmTfIPbT4n266QxqCVxBiUqhlYRInpc=)
 
 ## 十四、2026-08-28 补充：数据飞轮总览（5 篇系列开篇）
 
@@ -331,7 +331,7 @@ AgentLoop 不只关注单一分数，而是同时衡量：成功率、同类任�
 
 **AgentSpace 工作空间**概念：数据、数据集、评估器、实验都归属在某个空间之下，"自动创建"可预置场景基础资源。演示基于 Claude Code / Claude Agent SDK 构建的客服 Agent，接入走探针或 webhook 两条路。**消融实验预告**：经验注入收益 耗时降低 30%~40%、成本降低 20%~47%（本系列最后一篇详述）。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentloop-data-flywheel-overview-aliyun-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/q53_zsgspgaxKgc7YRz_dQ)
 
 ## 十五、2026-09-01 补充：评估体系方法论（5 篇系列第三篇）
 
@@ -365,7 +365,7 @@ AgentLoop 不只关注单一分数，而是同时衡量：成功率、同类任�
 
 评估结果不只打分，还给出"为什么是这个分"——证据字段提供判定依据，低分条目可直接定位调优方向。多次评估看均值消除浮动。在线评估抓出的 badcase 沉淀进数据集，成为实验回测弹药——评估是飞轮承上启下一环：上承观测数据，下接实验回测。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentloop-eval-golden-metrics-rubric-mayunlei-aliyun-2026-09-01.md)
+→ [原文存档](https://mp.weixin.qq.com/s/24kNuxyEd5X8CuqztYxtbw)
 
 ## 补充：离线实验平台与题目级 Rubric（第 4 篇）
 
@@ -387,7 +387,7 @@ AgentLoop 离线实验平台直接部署在客户内网，解决云端平台无�
 
 实验大盘提供整体分数、变化趋势、按题目下钻。为消除浮动可按时间窗口计算均值。分数分析三步法：①分数变低及时关注 → ②先排查 Rubric 定义（频繁波动多半是标准模糊）→ ③再看版本差异（评估器没问题后版本间差异才是真实差异）。避免最常见误判：把"尺子不准"当成"东西变差"。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentloop-experiment-offline-platform-rubric-mayunlei-aliyun-2026-09-02.md)
+→ [原文存档](https://mp.weixin.qq.com/s/f4S3sU7sZ6YW6r3sCTVlkA)
 
 ---
 

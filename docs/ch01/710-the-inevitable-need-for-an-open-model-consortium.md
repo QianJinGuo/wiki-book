@@ -4,7 +4,7 @@
 
 # The inevitable need for an open model consortium
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-inevitable-need-for-an-open-model-consortium.md)
+→ [原文存档](https://www.interconnects.ai/p/the-inevitable-need-for-an-open-model)
 
 ## 深度分析
 

@@ -57,7 +57,7 @@ Anthropic 是 MCP（Model Context Protocol）的创造者，其思路是先用�
 - [MCP（Model Context Protocol）](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/model-context-protocol-mcp.md) — 本收购所服务的关键协议
 - MCP 协议生态 — 开放协议与工具链生态的相互作用
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-acquires-stainless.md)
+→ [原文存档](https://www.anthropic.com/news/anthropic-acquires-stainless)
 
 ---
 

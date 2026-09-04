@@ -155,7 +155,7 @@ Harness 能做的是把缺失规格放到 Agent 能看到、能执行、能被�
 - **概念图**：
   - [Long-Running Agent 架构三大模式与演进路径](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/long-running-agent-architecture.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-之后-状态边界与失败闭环-若飞.md)
+→ [原文存档](https://mp.weixin.qq.com/s/zxNl9EUO2KErWp4K8M7D0Q)
 
 ## 核心结论
 

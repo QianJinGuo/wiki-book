@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 8.9KB | `entities/understand-anything-code-knowledge-graph-lum-jike.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/understand-anything-code-knowledge-graph-lum-jike.md)
+> -> [原文存档](https://mp.weixin.qq.com/s/I75todL-x4myILGGbtZc4g)
 
 # Understand-Anything：代码知识图谱
 
@@ -60,7 +60,7 @@ Understand-Anything 本质上是将代码库的静态结构转化为动态交互
 
 ## 第 2 来源：码途漫谈 2026-06-11 补充视角
 
-补充自 [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/understand-anything-code-knowledge-graph-matu-2026-06-11.md)，提供同一项目的第二手解读，重点补充 4 个第 1 来源未覆盖的角度。
+补充自 [原文存档](https://mp.weixin.qq.com/s/wKnGLew1EIwOIyUPBZevaw)，提供同一项目的第二手解读，重点补充 4 个第 1 来源未覆盖的角度。
 
 ### 补充 1：README 的设计哲学——"Graphs that teach, not graphs that impress"
 
@@ -97,7 +97,7 @@ Understand-Anything 本质上是将代码库的静态结构转化为动态交互
 
 两源结合：第 1 来源讲技术架构与 Token 模型，第 2 来源讲设计哲学与适用场景/风险——形成完整的产品认知。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/understand-anything-code-knowledge-graph-matu-2026-06-11.md)
+→ [原文存档](https://mp.weixin.qq.com/s/wKnGLew1EIwOIyUPBZevaw)
 
 ---
 

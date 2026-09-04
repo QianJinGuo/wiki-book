@@ -164,7 +164,7 @@ Agent 治理是尚未被解决的难题，企业应该现在开始试点而非�
 - [我用 Skillmd 做了一个简历生成器](../ch07/054-skill.html)
 - [Aliyun Agentrun 2Line Integration](../ch04/290-agentrun.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/salesforce-headless-software-losing-head-a16z.md)
+→ [原文存档](https://mp.weixin.qq.com/s/JtTKwoYqO_I2QYeakigJUg)
 - [from](../ch01/195-from-system-of-record-to-system-of-intelligence.html)
 - [From System Of Record To System Of Intelligence](../ch01/195-from-system-of-record-to-system-of-intelligence.html)
 - [meet customers where they are: agentforce contact center now](../ch04/318-meet-customers-where-they-are-agentforce-contact-center-now.html)

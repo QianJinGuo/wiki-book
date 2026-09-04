@@ -183,7 +183,7 @@ OpenClaw 的约束设计最完善，但扩展性最差；Hermes 的扩展性最�
 **3. 参考 Hermes 的记忆体系设计长期 Agent。** 如果你的 Agent 需要跨 session 工作，Hermes 的 MEMORY.md / USER.md + external provider + session search 的三层记忆设计是最完整的参考实现。关键点是：记忆不是一股脑塞回去，而是先检索再处理，每一轮给模型的上下文都是经过过滤的最优子集。
 **4. 把 Claude Code 的 agent loop 模式作为验收标准。** Anthropic 官方明确说 Claude Code 是一个优秀的 harness，这意味着 Claude Code 的工程实现代表了一种行业验收标准。无论你用哪个框架，你的 agent loop 至少应该在功能完备性上对齐 Claude Code 的能力范围：任务分解、工具调用、循环退出、上下文管理、handoff 交接。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-7-layers-openclaw-hermes-claude-code-p1aNu.md)
+→ [原文存档](https://mp.weixin.qq.com/s/p1aNuDIXXnZPLvU2D6MwXQ)
 
 ### 避坑指南
 **不要跳过前三层直接做工具调用。** 很多团队一上来就让模型调工具、调 API，结果发现稳定性完全无法保证。原因是前三层（角色、记忆、上下文）没有做好，模型在错误的信息基础上做决策，工具调用自然不可控。

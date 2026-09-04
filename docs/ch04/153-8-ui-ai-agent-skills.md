@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 11.9KB | `entities/精选-8-个-ui-设计师必备的-ai-智能体技能agent-skills.md`
 
-[精选 8 个 Ui 设计师必备的 Ai 智能体技能Agent Skills](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/精选-8-个-ui-设计师必备的-ai-智能体技能agent-skills.md)
+[精选 8 个 Ui 设计师必备的 Ai 智能体技能Agent Skills](https://mp.weixin.qq.com/s/9o-VhaqRtQRtge6q74K5TA)
 
 ## 深度分析
 这篇文章系统性地解决了 **AI 生成代码与设计语言之间的断层** 问题^。作者的核心观点是：Claude Code 默认偏开发者思维，需要通过安装特定技能（Skills）来补齐设计感知能力。
@@ -38,7 +38,7 @@
 - Figma + `ui-ux-pro-max` 的组合特别适合设计-开发协作场景^
 
 ### 相关参考
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/精选-8-个-ui-设计师必备的-ai-智能体技能agent-skills.md)
+→ [原文存档](https://mp.weixin.qq.com/s/9o-VhaqRtQRtge6q74K5TA)
 → [frontend-design 实体对比](../ch01/316-openai.html)
 → [开发者技能清单](302-agent-skills.html)
 

@@ -51,7 +51,7 @@ Ian Buck 逐家上门、在 OpenAI 现场用螺丝刀拆机讲解、在 OCI 与�
 - [Anthropic Demystifying Evals For Ai Agents](../ch04/312-ai-agent.html) — Anthropic 的 Agent 评估实践
 - [从 Cpu 到 Gpu 全链路可信百度智能云新一代 Ai 机密计算实例的探索与落地](../ch04/257-ai.html) — CPU/GPU 全链路算力视角对照
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-top-ai-labs.md)
+→ [原文存档](https://blogs.nvidia.com/blog/vera-cpu-delivery)
 
 ---
 

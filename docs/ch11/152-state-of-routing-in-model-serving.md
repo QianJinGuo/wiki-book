@@ -4,7 +4,7 @@
 
 # State of Routing in Model Serving
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/state-of-routing-in-model-serving.md)
+→ [原文存档](https://netflixtechblog.com/state-of-routing-in-model-serving-16e22fe18741?source=rss----2615bd06b42e---4)
 
 ## 摘要
 
@@ -92,7 +92,7 @@ Netflix 利用 Envoy 已有的集群路由能力，仅需补充 Lightbulb 来处
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](../ch01/651-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 - [Karpathy Vibe Coding Agentic Engineering](../ch04/098-karpathy-vibe-coding-agentic-engineering.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/state-of-routing-in-model-serving.md)
+→ [原文存档](https://netflixtechblog.com/state-of-routing-in-model-serving-16e22fe18741?source=rss----2615bd06b42e---4)
 
 ---
 

@@ -1,7 +1,7 @@
 {
   "name": "wiki-book",
   "version": "1.0.0",
-  "description": "AI Engineering - an open-source book curated from 4,000+ first-hand articles (MkDocs Material + RAG)",
+  "description": "AI Engineering - an open-source book curated from thousands of first-hand sources (MkDocs Material + RAG)",
   "directories": {
     "doc": "docs"
   },

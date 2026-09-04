@@ -5,7 +5,7 @@
 # 百度网盘主端 FE AICR：AI Code Review 准入实践
 
 > **来源**：百度Geek说（鸽子王）。百度网盘主端 FE 团队在 CI/CD 流水线中嵌入 AICR（AI Code Review）强制检测链路的实战经验，覆盖架构设计、模型选型、误报治理、耗时优化、全流程规划。
-> → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/baidu-aicr-ai-code-review-ci-cd-entry.md)
+> → [原文存档](https://mp.weixin.qq.com/s/jWUkenllw4yPEXbOmEvJHA)
 
 ## 核心数据
 

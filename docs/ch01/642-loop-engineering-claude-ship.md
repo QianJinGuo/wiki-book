@@ -6,7 +6,7 @@
 
 Peakstone Labs（AI 原生量化研究实验室）开源的 claude-ship 系统（github.com/Peakstone-Labs/claude-ship），单人 AI 开发 Loop Engineering 半年实战总结。核心判断：Loop Engineering 的本质是设计一个会自我进化的开发系统——用工程约束对抗确认偏误和技术债，用记忆和校准让每一次循环都比上一次更强。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loop-engineering-6-month-practice-claude-ship-peakstone.md)
+→ [原文存档](https://mp.weixin.qq.com/s/LUR7nZK77UbbcolO3P0peQ)
 
 ## 七 Agent 流水线
 

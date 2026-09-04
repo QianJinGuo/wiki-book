@@ -83,8 +83,8 @@ Garry Tan 2026年5月发表的新机制，核心是**让AI写出的代码只进�
 -  — OpenClaw架构分析
 - [Claude Code Agent Engineering](048-claude-code-agent.html) — Claude Code工程设计
 - [Ai Knowledge Tools Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/comparisons/ai-knowledge-tools-comparison.md) — AI工具横向对比
-- [原始存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gstack-garry-tan-600k-lines-60-days.md)
-- [复杂性棘轮原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/garry-tan-complexity-ratchet-90percent-testing-20260513.md)
+- [原始存档](https://mp.weixin.qq.com/s/-kJeOfYHMvetALarZOuZFw)
+- [复杂性棘轮原文存档](https://mp.weixin.qq.com/s/sMoSwp1f0cR6PI8_ZT4oNQ)
 
 ## 相关实体
 - [淘天营销中后台 AI 生码工作流最佳实践](../ch04/257-ai.html)

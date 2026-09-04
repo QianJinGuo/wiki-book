@@ -12,7 +12,7 @@ Building Telco Reasoning Models for Autonomous Networks with NVIDIA NeMo | NVIDI
 - [Nvidia Secure Local Agent Nemoclaw Openclaw](../ch04/315-nvidia-secure-local-agent-nemoclaw-openclaw.html)
 - [Nvidia Gpu Kernel Translation Cute Python Julia](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-gpu-kernel-translation-cute-python-julia.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-telco-reasoning-models-nemo.md)
+→ [原文存档](https://developer.nvidia.com/blog/building-telco-reasoning-models-for-autonomous-networks-with-nvidia-nemo/)
 
 - [emo: pretraining mixture of experts for emergent modularity](../ch04/257-ai.html)
 - [时间序列预测增强方法总结：频域、分解、patch](https://github.com/QianJinGuo/wiki-public/blob/main/entities/time-series-forecasting-augmentation-methods.md)

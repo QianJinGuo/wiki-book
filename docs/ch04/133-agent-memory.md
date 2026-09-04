@@ -146,7 +146,7 @@ Perplexity 推出 [Brain](https://www.perplexity.ai/computer/memory) 系统，�
 - [Agent Skill Writing](../ch01/284-agent-skill.html) — Skill 是 Memory 系统持久化的载体之一
 - [Anthropic Mcp Revisited](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-mcp-revisited.md) — MCP 作为 Agent 工具调用协议，与 Memory 的世界模型有交叉（环境约束信息）
 - [Gbrain](../ch01/194-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm.html) — Compiled Truth + Timeline 知识模型，与 Memory 的信念追踪机制相关
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-memory-architecture-essence.md)
+- [原文存档](https://mp.weixin.qq.com/s/aBWunszbTVjI4bdguLIOvg)
 
 ## 相关实体
 - [Agent Memory 架构解析](133-agent-memory.html)

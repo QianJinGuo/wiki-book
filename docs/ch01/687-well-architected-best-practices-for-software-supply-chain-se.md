@@ -4,7 +4,7 @@
 
 # Well-architected best practices for software supply chain security
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-software-supply-chain-security-well-architected.md)
+→ [原文存档](https://aws.amazon.com/blogs/security/well-architected-best-practices-for-software-supply-chain-security/)
 
 ## 深度分析
 

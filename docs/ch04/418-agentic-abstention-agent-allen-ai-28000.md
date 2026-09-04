@@ -39,7 +39,7 @@
 
 > 工程启示：你在 AbstentionBench 上刷高的分数不能直接外推到 ReAct 式 Agent 的停止质量。花大价钱堆模型、加 reasoning、换 scaffold，Agent 依然可能在不可行任务上无效 burn token。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentic-abstention-washington-allen-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/NKN8GmtO4lc5f9TIG-Komg)
 
 ---
 ## 关联

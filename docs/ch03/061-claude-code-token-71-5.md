@@ -107,7 +107,7 @@ CLAUDE.md 文件在此方案中承担双重角色：
 - [Claude Code Prompt Source Analysis](../ch09/050-claude-code-prompt.html)
 - [Claude Code Tool Design Evolution Anthropic](057-claude-code.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-memory-setup-token-71x楠楠自瑜.md)
+→ [原文存档](https://mp.weixin.qq.com/s/UKDFPzcYv0coW9P0n_3jSg)
 
 ## 相关实体
 - `官方Memory Setup` — 同一工作流的官方版本

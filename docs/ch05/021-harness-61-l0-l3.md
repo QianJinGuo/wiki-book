@@ -125,7 +125,7 @@ Addy 定位：**AGENTS.md = 一份「你还没修掉的摩擦」的清单**。ag
 - [Addy Osmani 的工程实践系列](../ch04/351-loop-engineering.html)——back pressure、棘轮法、意图债、只有人能继承后果等概念的原始出处
 - Harness Gate 评估——本文 gate 数量上限 = 人能真判的上限，是对 gate 设计的新约束
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tdsql-harness-subtraction-61pct-l0-l3-tencent-2026-08-06.md)
+→ [原文存档](https://mp.weixin.qq.com/s/3hUnFggJ2526J116_tifQQ)
 
 - [MOC：Agent 工程指南](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-engineering-guide.md)
 

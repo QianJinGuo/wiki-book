@@ -119,8 +119,8 @@ Agent 的 Self-Reflection（遇到错误自动复盘后重试）对应团队的�
 9. **去岗位化能力路由**：在岗位之上建立能力标签和任务市场，让能力与任务动态匹配
 
 ## 原始存档
-- → [第 1 来源：腾讯研究院 — 李志飞 CodeBanana 组织转型](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/super-individual-to-super-organization-tencent-research-2026.md)
-- → [第 2 来源：百度Geek说 — 协作的逆向演进](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/collaboration-reverse-evolution-agent-logic-management-baidu-2026.md)
+- → [第 1 来源：腾讯研究院 — 李志飞 CodeBanana 组织转型](https://mp.weixin.qq.com/s/ywS4Vx2hDdq0BhJbU2CCzw)
+- → [第 2 来源：百度Geek说 — 协作的逆向演进](https://mp.weixin.qq.com/s/djyf4vZIHu3pSvP4FiUVGw)
 
 ---
 

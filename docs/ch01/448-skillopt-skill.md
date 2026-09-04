@@ -4,7 +4,7 @@
 
 # 微软等提出 SkillOpt：把 Skill 当成模型一样训练
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillopt-microsoft-train-skill-hyman's-blog.md)
+→ [原文存档](https://mp.weixin.qq.com/s/4zvCuPvf8hJL0WUZd4_TXQ)
 
 ## 摘要
 

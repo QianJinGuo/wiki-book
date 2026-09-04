@@ -4,7 +4,7 @@
 
 # The new AI lock-in
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-new-ai-lock-in.md)
+→ [原文存档](https://www.infoworld.com/article/4171983/the-new-ai-lock-in.html)
 
 ## 摘要
 

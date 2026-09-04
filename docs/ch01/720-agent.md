@@ -4,7 +4,7 @@
 
 # 曾经爆火的小龙虾凉了？现在圈内都在用这款新 Agent
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pilotdeck-data派thu-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/MWj2lKQi8JdPu4qJDEFOYg)
 
 ## 深度分析
 

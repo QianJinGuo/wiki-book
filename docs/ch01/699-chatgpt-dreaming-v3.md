@@ -4,7 +4,7 @@
 
 # ChatGPT 的'失忆症'终于被治好了！Dreaming V3 让大模型拥有长期记忆
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/chatgpt-dreaming-v3-long-term-memory-openai.md)
+→ [原文存档](https://mp.weixin.qq.com/s/-k71aRS38kiZexsyFU3JGw)
 
 ## 深度分析
 

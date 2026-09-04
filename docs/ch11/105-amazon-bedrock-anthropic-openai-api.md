@@ -68,7 +68,7 @@ curl https://bedrock-mantle.us-east-1.amazonaws.com/v1/chat/completions \
 - Amazon Bedrock 服务端架构案例 — 服务端架构
 - 本文档：**客户端用户体验**（控制台 UI 升级 + 兼容端点）
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/试用-amazon-bedrock-中的新控制台体验该体验针对兼容-anthropic-和-openai-的-api-进.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/try-the-new-console-experience-in-amazon-bedrock-optimized-for-anthropic-and-openai-compatible-apis)
 
 ## 核心观点
 

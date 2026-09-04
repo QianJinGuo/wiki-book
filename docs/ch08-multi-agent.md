@@ -62,7 +62,7 @@ ConardLi 的实践经验揭示了多智能体团队从"安装了什么"到"能�
 - Agent 不是设计出来的，是用出来的 — 从每日最高频需求出发逐个搭建
 - 写了 Agent Skill 后要反复调试，确保工具调用准确
 - 多 Agent 团队的价值在于"联邦学习"——各 Agent 在自己的领域持续优化
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-multi-agent-team-practice-v2.md)
+→ [原文存档](https://mp.weixin.qq.com/s/RpR14rInw0ZWh4PFLPD1QA)
 
 ## 相关实体
 - [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-multi-agent-team-practice-v2.md)
@@ -221,9 +221,9 @@ Graph 体系要防"为了优化指标而牺牲本质"，需要三个不可动摇
 
 文本分类场景：分类 Loop + 监督分类依据 Loop（审查规则合理性，发现过拟合直接驳回）+ 监管评测集 Loop（调整评测集须经另一 Agent 严格审批：调整依据/新数据来源/是否随机抽取）+ Test/Validation 分离（模型只在测试集迭代，验证集是盲盒，双集都提升才算真提升）。
 
-→ [原文存档（腾讯技术工程）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/graph-engineering-loop-to-graph-tencent-lukiexing-2026.md)
-→ [原文存档（若飞/架构师，Supplementary）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/graph-engineering-agent-loop-fact-management-ruofei-2026.md)
-→ [原文存档（飞樰/阿里云云原生，Supplementary）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/graph-engineering-loop-to-graph-feixue-aliyun-2026-08-05.md)
+→ [原文存档（腾讯技术工程）](https://mp.weixin.qq.com/s/LzpfUsJRMcpPHzDovo5IrA)
+→ [原文存档（若飞/架构师，Supplementary）](https://mp.weixin.qq.com/s/S84hkwrvXocw56TSrnfqOA)
+→ [原文存档（飞樰/阿里云云原生，Supplementary）](https://mp.weixin.qq.com/s/DadI9ZUxK0eiRtr0Qcx07Q)
 
 ---
 
@@ -235,7 +235,7 @@ Graph 体系要防"为了优化指标而牺牲本质"，需要三个不可动摇
 
 Warp 在 2026-05-19 推出 [Oz](https://www.warp.dev/oz) 重大升级，将其定位为**首个真正的多 harness 云 Agent 控制平面**。核心命题：**「企业不应该被迫把未来押在单一模型或 harness 上」**。Oz 在云端统一编排 Claude Code、Codex、Warp Agent 三个主流 harness，提供自动多 Agent 编排、跨 harness 的 Agent Memory、扩展的自托管选项（Docker / Kubernetes / 远程开发环境）、以及精细化成本与权限治理。这是 [Agent 编排模式](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-orchestration-patterns.md)从「单 harness 多 model」升级到「多 harness 多 model」的标志性事件。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/oz-multi-harness-cloud-agent-orchestration.md)
+→ [原文存档](https://www.warp.dev/blog/multi-harness-cloud-agent-orchestration)
 
 ## 摘要
 
@@ -463,7 +463,7 @@ CrewAI + NemoClaw 的集成支持"数据飞轮"模式——Agent 系统通过观
 
 > 📊 Level ⭐⭐ | 7.1KB | `entities/autoresearch-ai-scientific-discovery-l0-l4-challengehub.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/autoresearch-ai-scientific-discovery-l0-l4-challengehub.md)
+> -> [原文存档](https://mp.weixin.qq.com/s/vqB4CtJPq0j61eSIADvUoQ)
 
 # AI做科研：L0到L4五级自主度框架
 
@@ -544,7 +544,7 @@ L3的核心要求是**AI主导、人辅助**——这意味着机器不仅执行
 
 > 📊 Level ⭐⭐ | 6.0KB | `entities/microsoft-agent-framework-python-zizhi.md`
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/microsoft-agent-framework-python-zizhi.md)
+> 来源：[原文存档](http://mmbiz.qpic.cn/mmbiz_png/8VVIHicz4MiaaAoIaJJUWxT1q60KnpdqHA8GIOicibhu4GiaDBricXeXDzwWUaTeqoHo18UibXxZ7m2CanDXJxfKH6xFj2ns7sh2e9WBeibU1iaBbN0U/0?wx_fmt=png)
 
 ## 深度分析
 **1. 三层架构的统一抽象：Agent / Workflow / Hosting 解耦设计**
@@ -676,8 +676,8 @@ Phase 2: assign independent agents by module; each agent must cite exact files a
 Phase 3: run verifier agents that try to disprove each finding.
 ```
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-dynamic-workflows-multi-agent-orchestration.md)
-→ [Thariq 官方博客中文版](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-dynamic-workflows-thariq-blog-gaia.md)
+→ [原文存档](https://mp.weixin.qq.com/s/YzpjNY5ch3sTlOhL9jypFw)
+→ [Thariq 官方博客中文版](https://mp.weixin.qq.com/s/ccbSkucjn6uyCi2_uEwU3w)
 
 ## Thariq 官方博客补充：6 种模式 + 3 类失败模式
 
@@ -801,7 +801,7 @@ CLAUDE.md 里写了但常被漏的规则 → 创建 workflow，每条规则对�
 | **自我偏好偏差** (self-preferential bias) | 偏袒自己产出，对照评分标准核实时更明显 | 独立 subagent 对抗式校验 |
 | **目标漂移** (goal drift) | 多轮交互后丢失原始目标，尤其是 compaction 后 | 每次摘要都是有损的 → "不要做 X" 约束丢失 → 拆 subagent 隔离 |
 
-### 6 大基础模式（前文已总结，详见 [原文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-dynamic-workflows-thariq-blog-gaia.md)）
+### 6 大基础模式（前文已总结，详见 [原文](https://mp.weixin.qq.com/s/ccbSkucjn6uyCi2_uEwU3w)）
 
 ### 11 大实战用例（新增 5.10 + 5.11）
 | # | 场景 | 核心套路 |
@@ -873,7 +873,7 @@ CLAUDE.md 里写了但常被漏的规则 → 创建 workflow，每条规则对�
 
 ## 玉澄 / 51CTO 译本补充（6th source, 2026-06-04）
 
-[玉澄译本](https://raw/articles/claude-code-dynamic-workflows-zhuge6-yucheng-translation) 是 Dynamic Workflows 同源内容的**第 6 个中文译本**。**主体内容（6 模式 / 3 失败模式 / 8 Prompt / 10 场景 / 静态 vs 动态 / 5 Tips）与前 5 source 高度重叠**。**本译本独特补充**：
+[玉澄译本](https://mp.weixin.qq.com/s/ZGOlA1IPSQaK3MXv_5fStQ) 是 Dynamic Workflows 同源内容的**第 6 个中文译本**。**主体内容（6 模式 / 3 失败模式 / 8 Prompt / 10 场景 / 静态 vs 动态 / 5 Tips）与前 5 source 高度重叠**。**本译本独特补充**：
 
 ### 1. "quick workflow（快速工作流）" 概念
 > "Workflows 不仅仅适用于大型任务。您可以**提示模型使用'quick workflow（快速工作流）'**。例如，你可以针对某个假设创建一个快速的对抗性审查。"
@@ -906,7 +906,7 @@ CLAUDE.md 里写了但常被漏的规则 → 创建 workflow，每条规则对�
 
 ## 架构师 JiaGouX 译本补充（7th source, 2026-06-04）
 
-[架构师 JiaGouX 译本](https://raw/articles/claude-code-dynamic-workflows-jiagoux-architect-perspective) 是 Dynamic Workflows 同源内容的**第 7 个中文译本**。**主体内容（6 模式 / 3 失败模式 / 8 Prompt / 10 场景 / 5 Tips）与前 6 source 高度重叠**。**本译本独特贡献**（**最不可替代**）：
+[架构师 JiaGouX 译本](https://mp.weixin.qq.com/s/Z8aEk8QZfvd3juHTH0_vVg) 是 Dynamic Workflows 同源内容的**第 7 个中文译本**。**主体内容（6 模式 / 3 失败模式 / 8 Prompt / 10 场景 / 5 Tips）与前 6 source 高度重叠**。**本译本独特贡献**（**最不可替代**）：
 
 ### 1. 任务级 Harness 统一框架
 > "**Dynamic Workflows 这次露出来的新信号，是 Claude Code 开始把这些任务级约束写进一段可执行流程里。**"
@@ -1001,7 +1001,7 @@ CLAUDE.md 里写了但常被漏的规则 → 创建 workflow，每条规则对�
 
 > "**我也不建议把 /effort ultracode 当成默认日常模式。它适合大任务、硬任务、验证成本高的任务。日常小改动用它，通常只是把一件简单事做贵。**"
 
-**整合视角**：7 个中文译本叙事中，**JiaGouX 译本的最不可替代新增** = **"任务级 Harness" 统一框架** + **团队新瓶颈转移（写代码→验证/审查/安全）** + **7 个"要写清楚的事"清单** —— 这三点是前 6 译本完全没出现的元层洞察 + 落地策略。**[raw/articles/claude-code-dynamic-workflows-jiagoux-architect-perspective.md]**
+**整合视角**：7 个中文译本叙事中，**JiaGouX 译本的最不可替代新增** = **"任务级 Harness" 统一框架** + **团队新瓶颈转移（写代码→验证/审查/安全）** + **7 个"要写清楚的事"清单** —— 这三点是前 6 译本完全没出现的元层洞察 + 落地策略。**[claude-code-dynamic-workflows-jiagoux-architect-perspective.md](https://mp.weixin.qq.com/s/Z8aEk8QZfvd3juHTH0_vVg)**
 
 ---
 
@@ -1168,14 +1168,14 @@ CLAUDE.md 里写了但常被漏的规则 → 创建 workflow，每条规则对�
 - **Token 预算 "use 10k tokens"**：8th + 9th 都明确
 - **静态 vs 动态差异**：6th 精确定义，9th 译本补充"Claude Opus 4.8"
 
-**与 [机器之心译本](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-dynamic-workflows-jiqizhixin-9th-translation.md) raw 的关系**：
+**与 [机器之心译本](https://x.com/trq212/status/2061907337154367865) raw 的关系**：
 - 机器之心版 raw 保留完整正文 + 译本特色
 - 主 entity 已 merge 全部 9 译本的洞察，机器之心版无独家洞察，因此只作为"权威媒体背书"补遗
 - 引用模式：本文即可作为对外引用 dynamic workflows 的**最权威单一译本**
 
 ## 10th Source：林月半子的 AI 笔记（2026-06-05）—— 实战触发 + ultracode 模式 + /deep-research + 编排者哲学
 
-> 来源：[林月半子的 AI 笔记](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-dynamic-workflows-ultracode-deep-research-lyuyuebannzi.md)（2026-06-05）
+> 来源：[林月半子的 AI 笔记](https://mp.weixin.qq.com/s/KmlyQ0UxWyoZ2ha9i0nx-g)（2026-06-05）
 > **关系**：与 1st-9th 译本同源不同公众号的实战解读。**保留独家数据**：3 步跑起来（`/config` 开启 / prompt 含 "workflow" / `ultracode` / `/deep-research`）+ Claude Code 版本要求 v2.1.154 + Subagent/Skill/Workflow 三者核心差异（"谁握着计划"）+ 编排者哲学（"AI 写编排代码 vs 人写编排代码"）+ Sisyphus Labs 抄袭指控事件。
 
 ### Sisyphus Labs 抄袭指控事件
@@ -1268,7 +1268,7 @@ CLAUDE.md 里写了但常被漏的规则 → 创建 workflow，每条规则对�
 
 ## 概述
 JiuwenSwarm 是 openJiuwen 社区发布的**多智能体蜂群协作框架**，代表从 Harness Engineering 向 **Coordination Engineering** 的范式跃迁。
-**背景演进路径：** ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
+**背景演进路径：** ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
 
 - Prompt Engineering → Context Engineering → Harness Engineering → **Coordination Engineering**
 
@@ -1282,7 +1282,7 @@ JiuwenSwarm 是 openJiuwen 社区发布的**多智能体蜂群协作框架**，�
 
 ### Agent Swarm
 多智能体团队协同机制内核。支持**成员对不同模型的路由**，针对不同角色提供合适能力的模型，减少负载压力，提升整体效果。
-核心能力：**自主分工 + 动态协商 + 高效协作**，从"单兵作战"到"精锐团队"。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
+核心能力：**自主分工 + 动态协商 + 高效协作**，从"单兵作战"到"精锐团队"。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
 
 ### Swarm Skills
 把团队协作中的最佳实践、SOP、角色搭配、调度策略**标准化封装成"团队级技能"**——让优秀的 Agent 团队变成一套即插即用的作战能力。
@@ -1292,7 +1292,7 @@ JiuwenSwarm 是 openJiuwen 社区发布的**多智能体蜂群协作框架**，�
 
 ### Swarm Skills 自演进
 演进引擎观察完整轨迹（任务拆解、角色调度、消息往来），**自动从轨迹反推出可复用的 Swarm Skill**，提交用户审批即可入库。
-两层同时演进： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
+两层同时演进： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
 
 - **团队层**：自动增减角色、补充约束规则、优化协作流程
 - **成员层**：沉淀工具报错、接口超时、调用技巧等实战经验
@@ -1323,7 +1323,7 @@ JiuwenSwarm 的出现映射了 AI Agent 工程领域的核心矛盾：当任务�
 传统单 Agent 框架（如 LangChain Agent、AutoGPT）在面对跨领域调研、软件交付，多角色决策等真实复杂任务时，暴露出明显的协作盲区。JiuwenSwarm 的**Coordination Engineering**范式，将多 Agent 协作从"多个单 Agent 堆叠"提升为"原生团队协同"——这不是工具升级，而是工程思维的根本转变。
 
 ### 2. 四组件体系的递进逻辑
-四组件构成了一套完整的递进体系： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
+四组件构成了一套完整的递进体系： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
 
 - **Agent Swarm** 是协作内核，解决"能协同"的基础问题
 - **Swarm Skills** 解决"协同经验可复用"的知识沉淀问题
@@ -1349,12 +1349,12 @@ PinchBench 94.2% SOTA 配合 token 消耗降低 34.8%，说明多 Agent 协作�
 - 项目需要**长期演进能力**，而非一次性解决方案
 
 ### 如何从 Harness Engineering 过渡到 Coordination Engineering
-对于已有 Harness Engineering 基础的团队，过渡路径可以是： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
+对于已有 Harness Engineering 基础的团队，过渡路径可以是： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
 
-1. **先单 Agent 跑通**：确保每个角色 Agent 在 Harness 层面已经过优化 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
-2. **识别协作瓶颈**：哪些任务因为"单 Agent 能力边界"而受限 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
-3. **引入 Agent Swarm**：从两个角色开始尝试协作，观察通信和协商机制 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
-4. **沉淀 Swarm Skills**：将成功的协作模式标准化为可复用技能 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
+1. **先单 Agent 跑通**：确保每个角色 Agent 在 Harness 层面已经过优化 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+2. **识别协作瓶颈**：哪些任务因为"单 Agent 能力边界"而受限 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+3. **引入 Agent Swarm**：从两个角色开始尝试协作，观察通信和协商机制 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+4. **沉淀 Swarm Skills**：将成功的协作模式标准化为可复用技能 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
 
 ### 使用 Swarm Skills Hub 的策略
 - **从社区共享技能开始**：不要重复造轮子，先在 Hub 中寻找场景匹配的技能
@@ -1363,32 +1363,32 @@ PinchBench 94.2% SOTA 配合 token 消耗降低 34.8%，说明多 Agent 协作�
 
 ## SwarmFlow — 从"能协作"到"稳稳地干完"（2026-06 增量）
 
-openJiuwen 在 2026-06 开源 **SwarmFlow** —— 面向多智能体团队的**可控工作流编排方案**，把"团队怎么配合"从 Leader 临场判断升级为**系统稳定执行 + 自动追踪 + 可被复用**。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
+openJiuwen 在 2026-06 开源 **SwarmFlow** —— 面向多智能体团队的**可控工作流编排方案**，把"团队怎么配合"从 Leader 临场判断升级为**系统稳定执行 + 自动追踪 + 可被复用**。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
 
-**核心思路一句话：编排归系统，智能归 Agent。** SwarmFlow 增加的不是 Agent 数量，而是**协作的确定性**。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
+**核心思路一句话：编排归系统，智能归 Agent。** SwarmFlow 增加的不是 Agent 数量，而是**协作的确定性**。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
 
 ### 三个绕不开的问题（复杂任务带来的考验）
 
-主流多 Agent 协作模式（Leader Agent 临场调度）在面对长链路、多分支任务时： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
+主流多 Agent 协作模式（Leader Agent 临场调度）在面对长链路、多分支任务时： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
 
-1. **Leader 变成瓶颈**：每份中间结果都回 Leader，上下文被过程信息淹没 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
-2. **过程不稳定**：同一任务跑两次可能走出两条不同路径 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
-3. **执行不可靠**：谁先做、谁并行、什么时候汇总、失败怎么处理，即便提前写清楚仍依赖 Leader 临场发挥 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
+1. **Leader 变成瓶颈**：每份中间结果都回 Leader，上下文被过程信息淹没 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+2. **过程不稳定**：同一任务跑两次可能走出两条不同路径 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+3. **执行不可靠**：谁先做、谁并行、什么时候汇总、失败怎么处理，即便提前写清楚仍依赖 Leader 临场发挥 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
 
 ### Swarm Skill 的两种形态
 
-**判定标准只有一个：编排能不能提前确定？** ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
+**判定标准只有一个：编排能不能提前确定？** ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
 
 | 形态 | 适用场景 | 协作方式 | workflow.py |
 |------|---------|---------|-------------|
 | **形态一**：不带脚本 | 多专家圆桌、方案评审、战略讨论 | 议程确定，但观点如何流动得在协作中自然发生 | 无 |
 | **形态二**：带脚本 | 论文分析、办公自动化、批量 PPT 生成 | 角色 + 阶段 + 交接都提前定好 | 固化编排 |
 
-**形态选择哲学**：编排是动态的用形态一保留开放协作；编排能提前确定的用形态二承接可执行编排。**确定性与开放性在同一套体系里各得其所。** ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
+**形态选择哲学**：编排是动态的用形态一保留开放协作；编排能提前确定的用形态二承接可执行编排。**确定性与开放性在同一套体系里各得其所。** ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
 
 ### 算子积木（Operator Library）
 
-SwarmFlow 提供一组算子作为积木，每个算子只管一件事，拼起来就能描述出复杂协作： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
+SwarmFlow 提供一组算子作为积木，每个算子只管一件事，拼起来就能描述出复杂协作： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
 
 | 算子 | 作用 | 备注 |
 |------|------|------|
@@ -1398,11 +1398,11 @@ SwarmFlow 提供一组算子作为积木，每个算子只管一件事，拼起�
 | **human** | 在关键环节插入人机节点 | 向人类要一条输入或一次审批 |
 | **budget** | 约束资源与额度消耗 | 把"会不会跑超"也纳入可控范围 |
 
-**一个动作一块积木，复杂协作由简单积木拼出来，无需从零设计编排逻辑。** ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
+**一个动作一块积木，复杂协作由简单积木拼出来，无需从零设计编排逻辑。** ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
 
 ### 可视化：JiuwenSwarm TUI
 
-通过 `/swarmflows` 命令打开**实时交互式树状图**： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
+通过 `/swarmflows` 命令打开**实时交互式树状图**： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
 
 - 上方展示**阶段进度**
 - 下方联动展示选中阶段里的 **Agent 状态**
@@ -1418,31 +1418,31 @@ SwarmFlow 提供一组算子作为积木，每个算子只管一件事，拼起�
 
 ### SwarmSkill Creator（生成端）
 
-JiuwenSwarm 内置 SwarmSkill Creator，根据自然语言需求**自动判断该生成哪种形态**： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
+JiuwenSwarm 内置 SwarmSkill Creator，根据自然语言需求**自动判断该生成哪种形态**： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
 
 - 默认生成不带脚本的 Swarm Skill（角色、协作规则、流程说明、约束）
 - 判断用户要工作流 → 生成仅含脚本的版本（最小 Skill.md + workflow.py）
 - 两者都要时支持生成完整协作规范 + 脚本的版本
 
-**用户不必先理解文件结构，也不必手写编排脚本，只要把目标说清楚。** ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
+**用户不必先理解文件结构，也不必手写编排脚本，只要把目标说清楚。** ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
 
 ### Team 模式自动调用（调用端）
 
-用户不用分辨任务属于哪种形态，在 Team 模式下一句需求自动进入。系统判断任务形态： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
+用户不用分辨任务属于哪种形态，在 Team 模式下一句需求自动进入。系统判断任务形态： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
 
 - 适合固定编排 → 进入 SwarmFlow
 - 更适合开放协作 → 用不带脚本的 Swarm Skill
 - 单个 Agent 够用 → 不额外启动多 Agent
 
-**这是 openJiuwen 想定义的可控协同工程新范式——让复杂协作在系统内部变得可控，让用户侧保持自然和简单。** ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
+**这是 openJiuwen 想定义的可控协同工程新范式——让复杂协作在系统内部变得可控，让用户侧保持自然和简单。** ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
 
 ### 与自演进的衔接
 
-从生成工作流（可控）到自演进（越用越强），**沉淀、编排、演进三者环环相扣**，构成 Coordination Engineering 的完整闭环。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
+从生成工作流（可控）到自演进（越用越强），**沉淀、编排、演进三者环环相扣**，构成 Coordination Engineering 的完整闭环。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
 
 ## Jiuwen Symphony — 海量技能的"精准发现 + 稳定协同"（2026-06-17 增量）
 
-如果说 SwarmFlow 解决的是**多 Agent 团队怎么稳定配合**，那么 Jiuwen Symphony 解决的是更底层的问题：**单个 Agent 面对海量技能时怎么选得对、串得稳**。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
+如果说 SwarmFlow 解决的是**多 Agent 团队怎么稳定配合**，那么 Jiuwen Symphony 解决的是更底层的问题：**单个 Agent 面对海量技能时怎么选得对、串得稳**。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
 
 > 当一个 Agent 能调用的 Skill 从 5 个膨胀到 50 个，会发生什么？答案是：任务执行效果出现"断崖式下滑"——技能越多，Agent 反而越选不准。
 
@@ -1458,13 +1458,13 @@ JiuwenSwarm 内置 SwarmSkill Creator，根据自然语言需求**自动判断�
 | **技能检索** | 层次化技能树 | 选不准 | LLM 在树上按任务需求**逐步导航**，而非一次性读完全部技能 |
 | **技能编排** | 技能依赖图 | 用不好 | 基于能力指纹 + 双向搜索（向后扩展"下一步"+ 反向回溯"谁能补上"） |
 
-**技能检索设计要点**： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
+**技能检索设计要点**： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
 
 - 把平铺的技能列表预先组织成层次化技能树，变成可逐层浏览的技能目录；
 - 检索机制被设计为面向 Agent 的**专用工具集**（递归能力树构建 / 分支探索 / 轻量预览 / 候选技能读取），而非执行前的一次性预处理；
 - 关键判断："**技能选择被真正融入了 Agent loop，而非检索与执行相互独立**"。
 
-**技能编排设计要点**： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
+**技能编排设计要点**： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
 
 - **离线能力指纹**：覆盖技能的基础信息、输入输出产物、能力质量评估；
 - **动态词表归一**：把命名不一的同义字段（如 body / content / 正文）归一到规范词；
@@ -1483,13 +1483,13 @@ Symphony 在 Top-5 选择上取得最佳效果，且把平均最大上下文从�
 
 ### 三个实战场景（独立可接力）
 
-**场景一：视频处理（仅使用技能检索）**——技能库膨胀到数千时，Agent 通过技能目录逐步探索"视频/音频处理"主分支 + "文本整理 / 报告生成"辅助分支，最终覆盖：视频读取与处理 / 音频转写 / 口头禅检测 / 停顿分析 / 关键片段整理 / 报告生成 / 备选兜底处理。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
+**场景一：视频处理（仅使用技能检索）**——技能库膨胀到数千时，Agent 通过技能目录逐步探索"视频/音频处理"主分支 + "文本整理 / 报告生成"辅助分支，最终覆盖：视频读取与处理 / 音频转写 / 口头禅检测 / 停顿分析 / 关键片段整理 / 报告生成 / 备选兜底处理。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
 
-**场景二：办公写作（仅使用技能编排）**——任务："英文博客截图翻译后整理成公众号文案并发邮件"。没有编排时 Agent 输出仍是图片无法串联；有编排后规划稳定路径：**图片翻译 → 文字识别（图片→可编辑文本）→ 文案撰写 → 邮件发送**，每步输出必须能喂入下一步。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
+**场景二：办公写作（仅使用技能编排）**——任务："英文博客截图翻译后整理成公众号文案并发邮件"。没有编排时 Agent 输出仍是图片无法串联；有编排后规划稳定路径：**图片翻译 → 文字识别（图片→可编辑文本）→ 文案撰写 → 邮件发送**，每步输出必须能喂入下一步。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
 
 **场景三：出行规划（先检索后编排）**——两个核心组件联动的典型用例。
 
-启用方式：在 JiuwenSwarm 页面"配置信息-其他配置"打开"**技能交响乐**"开关。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
+启用方式：在 JiuwenSwarm 页面"配置信息-其他配置"打开"**技能交响乐**"开关。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
 
 ### Symphony 与 SwarmFlow 的层次关系
 
@@ -1504,7 +1504,7 @@ Symphony 在 Top-5 选择上取得最佳效果，且把平均最大上下文从�
 
 ### 与"动态能力分发"行业趋势的对照
 
-openJiuwen 的判断与行业共识一致：**模型能力在增强，但系统能力没有同步增长**： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
+openJiuwen 的判断与行业共识一致：**模型能力在增强，但系统能力没有同步增长**： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
 
 - 模型可以理解复杂需求，却常常无法稳定调用外部能力；
 - 工具越来越多，却难以被高质量地检索和复用；
@@ -1514,17 +1514,17 @@ Symphony 把 skill 当作"系统资产"来管理，而不只是提示词里附�
 
 ### 5 条独到判断
 
-1. **"选不准 + 用不好"是技能规模化的两大死结**，分开解决都不彻底——必须"检索 + 编排"双核心同时设计。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
-2. **检索要融入 Agent loop，而不是执行前一次性预处理**。否则多意图 / 隐式意图这种需要推理的选择问题永远解不掉。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
-3. **依赖图作为"结构化资产"沉淀**比每次临场推理更有价值——图可以"反复读取、复用、演进"，符合"长期资产 > 一次性推理"的工程哲学。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
-4. **能力指纹 + 动态词表归一**是图能起作用的前提，否则"同名不同义 / 同义不同名"会让依赖关系失真。这是从 RAG / Schema 工程借来的关键技巧。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
-5. **失败可局部修复**——沿图结构定位失败节点，就近替换或修补，不必整条链路推倒重跑。这把"局部性"思想从系统架构层（cache locality）推到了 Agent 编排层。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
+1. **"选不准 + 用不好"是技能规模化的两大死结**，分开解决都不彻底——必须"检索 + 编排"双核心同时设计。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+2. **检索要融入 Agent loop，而不是执行前一次性预处理**。否则多意图 / 隐式意图这种需要推理的选择问题永远解不掉。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+3. **依赖图作为"结构化资产"沉淀**比每次临场推理更有价值——图可以"反复读取、复用、演进"，符合"长期资产 > 一次性推理"的工程哲学。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+4. **能力指纹 + 动态词表归一**是图能起作用的前提，否则"同名不同义 / 同义不同名"会让依赖关系失真。这是从 RAG / Schema 工程借来的关键技巧。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+5. **失败可局部修复**——沿图结构定位失败节点，就近替换或修补，不必整条链路推倒重跑。这把"局部性"思想从系统架构层（cache locality）推到了 Agent 编排层。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
 
 ### 3 条实践启示
 
-1. **技能数量超过 10-20 个就该考虑检索机制**，而非等"出问题再修"。Embedding 检索是过渡方案，**树检索 + Agent loop 集成**才是规模化终态。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
-2. **依赖关系图应该离线构建 + 在线查询**，避免每次编排都做语义匹配——性能与稳定性双赢。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
-3. **组合可靠 / 协同可解释 / 失败可局部修复**是判断"编排系统是否成熟"的三个硬指标，比"功能丰富"更重要。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)"]
+1. **技能数量超过 10-20 个就该考虑检索机制**，而非等"出问题再修"。Embedding 检索是过渡方案，**树检索 + Agent loop 集成**才是规模化终态。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+2. **依赖关系图应该离线构建 + 在线查询**，避免每次编排都做语义匹配——性能与稳定性双赢。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+3. **组合可靠 / 协同可解释 / 失败可局部修复**是判断"编排系统是否成熟"的三个硬指标，比"功能丰富"更重要。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
 
 ## 相关实体
 - [Agent Development Crawl Walk Run Crewai Iterative](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-development-crawl-walk-run-crewai-iterative.md)
@@ -1534,10 +1534,10 @@ Symphony 把 skill 当作"系统资产"来管理，而不只是提示词里附�
 - [Agentic Design System From Chatbot To Orchestration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentic-design-system-from-chatbot-to-orchestration.md)
 
 ## 3rd Source 原文存档
-→ [openJiuwen 开源 Jiuwen Symphony 技能编排与分发系统 — CSDN 2026-06-17](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwen-symphony-skill-orchestration-distribution-openjiuwen.md)
+→ [openJiuwen 开源 Jiuwen Symphony 技能编排与分发系统 — CSDN 2026-06-17](https://mp.weixin.qq.com/s/l7219b4sFVsrxzMFZwiv-Q)
 
 ## 2nd Source 原文存档
-→ [openJiuwen开源SwarmFlow — AI技术立文 2026-06-12](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-swarmflow-controllable-orchestration-ai-tech-newspaper.md)
+→ [openJiuwen开源SwarmFlow — AI技术立文 2026-06-12](https://mp.weixin.qq.com/s/phRUNiBQonR-22DRKFvLZA)
 
 → [原始来源](https://asymco.com/2026/05/11/the-great-memory-panic-of-2026/)
 
@@ -1549,14 +1549,13 @@ Symphony 把 skill 当作"系统资产"来管理，而不只是提示词里附�
 | 标准化流程执行 | HOTS | AI 团队负责执行，人只在异常时介入 |
 | 游戏/沉浸式体验 | HITS | 体验的核心是参与感，而非结果优化 |
 ---
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jiuwenswarm-coordination-engineering.md)
+→ [原文存档](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)
 ## 4th Source — ScienceDiscovery AI 科研工作台（应用：BiomniBench-DA SOTA）
 
 **ScienceDiscovery** 是基于 Agent OS（JiuwenSwarm）开发的一站式 AI 科研工作台，解决科研场景两大痛点：工具碎片化（文献阅读/假设/代码/实验/调参频繁切换平台）与科研幻觉（大模型长链条任务易文献引用/因果推导/实验流程造假）。在权威生物医学智能体基准 **BiomniBench-DA** 上验证达业界 SOTA，成功应用于纳米抗体药物设计。
 
 - 互补角度：1) JiuwenSwarm 作为 Agent OS 在垂直科研领域的落地案例；2) BiomniBench-DA 生物医学智能体基准成为 openJiuwen 生态的评估锚点；3) 「零科研幻觉」诉求把 JiuwenSwarm 的多 Agent 协作与专用工具编排能力绑定到科学发现场景。
 
-→ [ScienceDiscovery 原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/sciencediscovery-biomnibench-ai-science-workstation-jiuwenswarm.md)
 
 ---
 
@@ -1564,11 +1563,11 @@ Symphony 把 skill 当作"系统资产"来管理，而不只是提示词里附�
 
 > 📊 Level ⭐⭐⭐ | 16.1KB | `entities/ai-agent-memory-systems.md`
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/memory-agent-systems-cobanov.md)
+> 来源：[原文存档](https://memory.cobanov.dev/)
 
 # How AI Agent Memory Works
 Language models forget the moment they finish replying. Memory is everything the system around them does to make that not matter. This essay walks through the ideas one at a time, with something to touch in every section.
-**Source**: [raw article](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/memory-agent-systems-cobanov.md) | **Review**: value=8 confidence=7
+**Source**: [raw article](https://memory.cobanov.dev/) | **Review**: value=8 confidence=7
 
 ## 核心要点
 - AI agent memory 是一个循环系统：接收消息 → 编码 → 检索相似记忆 → 组装 prompt → 生成响应 → 决定是否记住新信息
@@ -1577,7 +1576,7 @@ Language models forget the moment they finish replying. Memory is everything the
 - 记忆 governance（PII 过滤、时间有效性、超额标记）是区分 demo 与生产系统的关键
 - Multi-agent memory 是权限拓扑问题，而非简单的存储扩展
 - 生产系统需要分离读写路径、背景 worker 处理慢操作、多租户隔离、延迟预算管理
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/memory-agent-systems-cobanov.md)
+→ [原文存档](https://memory.cobanov.dev/)
 
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-model-research-latest-directions.md)
@@ -1826,7 +1825,7 @@ frontmatter（name / 用于路由的 description「含适用/不适用/典型触
 
 ## 相关实体
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gufabiancheng-spec-for-complex-tasks-cc-codex.md)
+→ [原文存档](https://mp.weixin.qq.com/s/Q_k2duvAIv7hm9y6VxH3mQ)
 
 - [Claude Code 多智能体协作体系设计](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-multi-agent-collaboration-多智能体协作体系设计.md)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering.md)
@@ -1841,7 +1840,7 @@ frontmatter（name / 用于路由的 description「含适用/不适用/典型触
 
 > 📊 Level ⭐⭐⭐ | 13.8KB | `entities/how-grab-is-using-ai-agents-to-boost-team-productivity.md`
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-grab-is-using-ai-agents-to-boost-team-productivity.md)（ByteByteGo, 2026-05-18）
+> 来源：[原文存档](https://blog.bytebytego.com/p/how-grab-is-using-ai-agents-to-boost)（ByteByteGo, 2026-05-18）
 
 ## 核心要点
 - **问题背景**：Grab ADW（Analytics Data Warehouse）团队管理 15,000+ 张表，每月约 1000 人查询，最优秀工程师每周花 2 天回答同事的临时问题
@@ -1954,7 +1953,7 @@ Grab 的多 Agent 系统接入数据库和代码生成能力，存在真实风�
 - [Low Code Api Integration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/low-code-api-integration.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/multi-agent-coordination.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-grab-is-using-ai-agents-to-boost-team-productivity.md)
+→ [原文存档](https://blog.bytebytego.com/p/how-grab-is-using-ai-agents-to-boost)
 
 ## 相关实体
 
@@ -2042,7 +2041,7 @@ Factory 给了明确的数学：如果每个 agent run 错误率 0.1%，100 步�
 - [Wow Harness V3 Governance Protocol](https://github.com/QianJinGuo/wiki-public/blob/main/entities/wow-harness-v3-governance-protocol.md)
 - [Hermes Agent 12 Layer Full Configuration Guide](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-12-layer-full-configuration-guide.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-cloudfront-deploy-guide-cloudfront-domain-multi-tenant-architecture.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/amazon-cloudfront-deploy-guide-cloudfront-domain-multi-tenant-architecture/)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/multi-agent-coordination.md)
 ## 实践启示
@@ -2053,7 +2052,7 @@ Factory 给了明确的数学：如果每个 agent run 错误率 0.1%，100 步�
 5. **最小操作单元是计划级再分配**：Mission Control 里，用户是 50 个 droid 的项目经理，不是工程师。介入话术是"Drop X feature and add Y instead"，而不是"在函数 Z 里改一行代码"。
 6. **编排逻辑写成 prompt，不要写成状态机**：700 行文本中，4 句话的修改就能让执行策略发生戏剧性变化。新模型出来时只需改几句 prompt，不需要重写状态机。
 7. **用 five-field handoff 约束 worker 行为**：Worker 不被允许做"这功能完成了"的判断——这是 validator 的事。Handoff 文档的结构本身就在强化这个约束。
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/factory-missions-multi-agent-shipping-for-days-luke.md)
+→ [原文存档](https://mp.weixin.qq.com/s/etiYTXpmVdYWgw6nA6vA7A)
 
 ---
 
@@ -2176,7 +2175,7 @@ description 不是注释，是路由信号。写得含糊，路由就含糊；�
 
 > 📊 Level ⭐⭐⭐ | 12.1KB | `entities/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session.md`
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session.md)
+> 来源：[原文存档](https://aws.amazon.com/blogs/machine-learning/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session-segmentation/)
 
 ## 核心要点
 - AWS Nova Sonic 支持多智能体架构、工具调用和会话分段
@@ -2184,7 +2183,7 @@ description 不是注释，是路由信号。写得含糊，路由就含糊；�
 - 与 DynamoDB、Kendra 等 AWS 服务深度集成
 - 基于 Amazon Bedrock AgentCore Runtime 和 Strands BidiAgent 框架
 - MCP 协议用于工具调用，A2A 协议用于 agent-to-agent 通信
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session-segmentation/)
 
 ## 相关实体
 - [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
@@ -2274,7 +2273,7 @@ Nova Sonic 通过 AgentCore Gateway 直接调用 MCP 服务器上的工具，无
 
 > 核心转变：**从"随问随答的聪明人"到"能开工的小团队"**。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/coze-3-release-official-quantum-bit.md)
+→ [原文存档](https://mp.weixin.qq.com/s/lN9DgdfrN-If5BWPT495sg)
 
 ## 三大核心升级（3 层抽象）
 | 层 | 升级 | 关键能力 |
@@ -2419,7 +2418,7 @@ Nova Sonic 通过 AgentCore Gateway 直接调用 MCP 服务器上的工具，无
 
 # Thousand Token Wood v2: Multi-Model Heterogeneous Agent Council
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/thousand-token-wood-sim-v2-hackathon.md)
+> 原文存档：[原文存档](https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v2)
 
 ## 概述
 
@@ -2559,7 +2558,7 @@ AI 的最大价值可能不在通用场景而在你领域的特定痛点——�
 
 ## 原文链接
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/thousand-token-wood-sim-v2-hackathon.md)
+→ [原文存档](https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v2)
 
 ---
 
@@ -2725,7 +2724,7 @@ Agent 间交接时常见错误：把完整上下文塞给下一个 Agent。
 - [OpenClaw 多智能体团队搭建实战经验](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-multi-agent-team-practice.md)
 - [Sub-Agent vs Agent Team 选型与编排原语](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sub-agent-vs-agent-team-selection.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/minimax-agent-team-mavis-owner-worker-verifier.md)
+→ [原文存档](https://mp.weixin.qq.com/s/TIL7o92f71DsPPLWT4_37A)
 
 - [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-multi-agent-team-practice-v2.md)
 
@@ -2739,7 +2738,7 @@ Agent 间交接时常见错误：把完整上下文塞给下一个 Agent。
 
 Google AP2（Agent Payments Protocol）工程实测分析。基于官方 Human-Present 场景完整复现，记录协议细节和工程踩坑——密钥路径一致性、CartMandate 结构、SD-JWT 选择性披露、Task 终态陷阱、多 Agent Token 消耗乘法增长。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ap2-agent-payments-protocol-hands-on-analysis.md)
+→ [原文存档](https://mp.weixin.qq.com/s/BmvObHXGPsqxoZ6J47QRLA)
 
 ## 核心问题
 
@@ -2840,7 +2839,7 @@ CartMandate 一小时有效期 + 单次 OTP 的设计，本质上是为 Human-Pr
 - AP2 文档：ap2-protocol.org
 - ACP（OpenAI × Stripe）：github.com/agentic-commerce-protocol/agentic-commerce-protocol
 - → [AgentCore Payments 与 x402 协议](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentcore-payments-x402-agentic-commerce.md)
-- → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ap2-agent-payments-protocol-hands-on-analysis.md)
+- → [原文存档](https://mp.weixin.qq.com/s/BmvObHXGPsqxoZ6J47QRLA)
 
 ---
 
@@ -2912,7 +2911,7 @@ Web 端（Next.js 16.2）和桌面端（Tauri + Rust Axum）共享同一套 `api
 ## 与现有知识的链接
 - → [Routa Harness 可视化](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/routa-harness-visualization.md) — 旧版 harness 可视化方向
 - → [Harness Context](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-context-management-working-set.md) — 多 Agent 协作的上下文管理
-- → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/routa-multi-agent-coordination-platform.md)
+- → [原文存档](https://mp.weixin.qq.com/s/xN6JBQ2PQxSEjtOkIJG3yQ)
 
 ---
 
@@ -2920,7 +2919,7 @@ Web 端（Next.js 16.2）和桌面端（Tauri + Rust Axum）共享同一套 `api
 
 > 📊 Level ⭐⭐⭐ | 6.7KB | `entities/nature-ai-scientific-assistant-google-futurehouse.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nature-ai-scientific-assistant-google-futurehouse.md)
+> -> [原文存档](https://mp.weixin.qq.com/s/uPcxYocLhQLky0uIn_QUow)
 
 # AI 科研助理：Co-Scientist vs Robin
 
@@ -2982,7 +2981,7 @@ Nature 2026 同日发表 Google Co-Scientist（Gemini 2.0 多智能体）和 Fut
 
 # Multi-Agent AI Safety Research Funding Call（DeepMind 主导，1000 万美元，四大方向）
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/investing-in-multi-agent-ai-safety-research.md)
+> 原文存档：[原文存档](https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/)
 
 ## 概述
 

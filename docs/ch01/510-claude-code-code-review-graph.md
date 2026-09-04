@@ -15,7 +15,7 @@
 - [Claude Code Harness Deep Understanding](337-claude-code-harness-deep-understanding.html)
 - [Claude Code Agent View Huashu](../ch03/048-claude-code-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/code-review-graph-upper-intermediate-guide-20260513.md)
+→ [原文存档](https://mp.weixin.qq.com/s/D2WBfa_FDfgz2n6sndLIVg)
 
 ## 深度分析
 

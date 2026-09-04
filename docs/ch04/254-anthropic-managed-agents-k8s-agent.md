@@ -18,7 +18,7 @@
 - [From Prompt To Harness Claude Official](../ch05/008-harness.html)
 - [Anthropic Demystifying Evals For Ai Agents](312-ai-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-managed-agents-scaling.md)
+→ [原文存档](https://mp.weixin.qq.com/s/gkTsLXiGOHmracA0JpKPEQ)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/prompt-engineering-guide.md)
 ## 深度分析
@@ -82,7 +82,7 @@ Token 不可达设计在工程上有几个关键实现点：
 - **不要把 Session 当数据库**：Session 是事件日志，不是查询用的数据库。频繁的全量查询应该另外建索引，不要直接扫 Session 日志。
 - **不要忽略 Harness 的无状态要求**：Harness 必须是真正无状态的。任何需要在崩溃后恢复的中间状态都应该存在 Session 里，而不是 Harness 的内存中。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-managed-agents-scaling.md)
+→ [原文存档](https://mp.weixin.qq.com/s/gkTsLXiGOHmracA0JpKPEQ)
 
 ---
 

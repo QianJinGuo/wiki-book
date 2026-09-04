@@ -2,13 +2,13 @@
 
 > 📊 Level ⭐⭐ | 5.4KB | `entities/alphaxiv-reinforcement-learning-for-rlms.md`
 
-> → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/alphaxiv-reinforcement-learning-for-rlms.md)
+> → [原文存档](https://www.alphaxiv.org/blog/reinforcement-learning-for-rlms)
 
 ## Summary
 7×8=56 - Article ingested from newsletter candidate pipeline.
 
 ## Notes
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/alphaxiv-reinforcement-learning-for-rlms.md)
+→ [原文存档](https://www.alphaxiv.org/blog/reinforcement-learning-for-rlms)
 
 ## 深度分析
 **核心贡献：单策略统一训练 parent 和 child RLM**

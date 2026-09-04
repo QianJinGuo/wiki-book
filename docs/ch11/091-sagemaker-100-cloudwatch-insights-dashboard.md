@@ -120,7 +120,7 @@ SageMaker 推理端点原生发射 OpenTelemetry 格式指标到 CloudWatch，�
 
 ---
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/monitor-and-debug-generative-ai-inference-with-sagemaker-det.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/monitor-and-debug-generative-ai-inference-with-sagemaker-detailed-metrics-and-insights-dashboard-on-cloudwatch/)
 
 ---
 ## 关联

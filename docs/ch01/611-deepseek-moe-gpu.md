@@ -48,7 +48,7 @@ EP是唯一一个"在forward pass内部把token重新换主"的并行维度—�
 **5. TileLang做融合kernel**: 当Triton语法无法描述复杂的dispatch+GEMM+Combine融合时，TileLang可以写出极致性能的mega-kernel。
 
 ## 与现有知识的链接
-- → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek-moe-parallel-strategy.md)
+- → [原文存档](https://mp.weixin.qq.com/s/zg0wHd170GPtpfiBjBZgTg)
 - → [DeepSeek V4论文解读](459-deepseek-v4.html) — 训练流程
 - → [DeepSeek V4 Pro评测](459-deepseek-v4.html) — 模型能力
 

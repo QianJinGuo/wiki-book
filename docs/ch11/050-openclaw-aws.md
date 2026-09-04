@@ -99,7 +99,7 @@ memory-agentcore 的核心架构决策是**不占用 OpenClaw 独占 Slot**，�
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/openclaw-architecture.md)
 ## Related
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-managed-agents-self-hosted-sandbox-mcp-tunnels-enterprise.md)
+→ [原文存档](https://mp.weixin.qq.com/s/dqg5rr2V073oloyAZVPB9Q)
 
 - `OpenClaw Tool 消息总线架构`
 

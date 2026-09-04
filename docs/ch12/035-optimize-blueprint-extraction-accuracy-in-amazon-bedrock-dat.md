@@ -83,7 +83,7 @@ Amazon Bedrock Data Automation (BDA) 的 **Blueprint Instruction Optimization** 
 
 ## 原文链接
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/optimize-blueprint-extraction-accuracy-in-amazon-bedrock-dat.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/optimize-blueprint-extraction-accuracy-in-amazon-bedrock-data-automation)
 
 ## 深度分析
 

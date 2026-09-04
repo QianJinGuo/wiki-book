@@ -114,8 +114,8 @@ fail-improve 循环让意图分类器从 40% 提升到 87%——系统在每次�
 ## 相关链接
 - GitHub: github.com/garrytan/gbrain
 - 安装指引: raw.githubusercontent.com/garrytan/gbrain/master/INSTALL_FOR_AGENTS.md
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gbrain-garry-tan-yanfa-zhili.md)
-- [8层架构详解（51CTO）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gbrain-8layer-51cto.md)
+- [原文存档](https://mp.weixin.qq.com/s/F9RNOFvc9lAEx2lg50SNDg)
+- [8层架构详解（51CTO）](https://mp.weixin.qq.com/s/VYHlt6Fbo20HDVke44PPPA)
 
 ## 8 层架构详解 
 GBrain 将传统 RAG 的 4 层扩展为 8 层，从"找得到"升级到"真正记住并进化"：

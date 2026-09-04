@@ -113,7 +113,7 @@ MCP 来源的 Skill 跳过内嵌 shell 执行是一个合理的安全设计，�
 
 ## 参考
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-skills-practical-guide-discovery-frontmatter.md)
+→ [原文存档](https://mp.weixin.qq.com/s/EChuGeLSUlZdPI0GrapqVg)
 
 ---
 

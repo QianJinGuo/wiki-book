@@ -4,7 +4,7 @@
 
 # 垂类 AI 创企的自救：FlashLabs 从 FlashIntel 到 AI Native
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/flashlabs-vertical-ai-startup-pivot.md)
+→ [原文存档](https://mp.weixin.qq.com/s/H1pByOewwlVzJhaz_hhOBA)
 
 ## 深度分析
 

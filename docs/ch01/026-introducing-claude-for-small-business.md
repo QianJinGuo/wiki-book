@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐ | 8.9KB | `entities/introducing-claude-for-small-business.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/introducing-claude-for-small-business.md)
+> -> [原文存档](https://www.anthropic.com/news/claude-for-small-business)
 
 ## 核心要点
 - Anthropic 推出 Claude for Small Business，目标客群为美国小型企业主 
@@ -11,7 +11,7 @@
 - 内置 15 个即用型 agentic workflows，覆盖财务、运营、销售、营销、人力资源、客户服务六大职能领域 
 - Anthropic 联合创始人兼总裁 Daniela Amodei 表示：「AI 是第一种真正能弥合大小企业资源差距的技术」 
 - 评分：8×9=72 分（质量优秀），推荐等级 strong ★★★★★ 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/introducing-claude-for-small-business.md)
+→ [原文存档](https://www.anthropic.com/news/claude-for-small-business)
 
 ## 深度分析
 ### 从「对话窗口」到「任务执行」：SMB AI 采用的范式转变
@@ -56,7 +56,7 @@ Claude for Small Business 的产品设计提供了几个可复制的原则：
 
 ### 投资者和政策制定者的观察视角
 Claude for Small Business 的发布及其配套的非营利合作，揭示了 AI 扩散的一个深层规律：**技术可及性（access）与技术采用率（adoption）是两个不同的问题**。Anthropic 同时解决两者——不仅让工具可用，还通过 Tour、CDFI 合作和免费课程降低采用门槛。这种「商业产品 + 社会基础设施」双轨模式，可能是未来 AI 大厂处理监管和社会关系的一种范式。
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/introducing-claude-for-small-business.md)
+→ [原文存档](https://www.anthropic.com/news/claude-for-small-business)
 
 ## 相关实体
 - [Introducing Claude for Small Business](026-introducing-claude-for-small-business.html)

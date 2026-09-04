@@ -6,7 +6,7 @@
 
 > EverMind 推出的 Raven 是一个基于自研记忆系统 EverOS 的自进化 Agent Harness，核心主张：主动（Proactive）、进化（Improving）、个性化（Personalized）。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/evermind-raven-self-evolving-agent-harness.md)
+→ [原文存档](https://mp.weixin.qq.com/s/-mXphRfXeukWNvfUAcG7gQ)
 
 ## 摘要
 

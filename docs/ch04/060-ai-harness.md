@@ -302,7 +302,7 @@ OpenAI SDK 的三层护栏（输入→工具→输出）体现了**纵深防御*
 - [From Prompt To Harness Claude Official](../ch05/008-harness.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/openai-developer-ecosystem.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-agent-harness-construction-akshay-baoyu.md)
+→ [原文存档](https://mp.weixin.qq.com/s/yOX1QZTHs54J-CBg-rKUig)
 
 ---
 

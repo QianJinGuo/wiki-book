@@ -7,7 +7,7 @@
 ## 相关实体
 
 - [aws network firewall 审查 idc-vpc 流量：vgw 架构 + bgp 路由传播实验](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-network-firewall-vgw-bgp-traffic-inspection.md)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/network-firewall-deploy-guide-6-bedrock-ai-conflict-detection.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/network-firewall-deploy-guide-6)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/reinforcement-learning-rlhf.md)
 ## 深度分析

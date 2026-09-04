@@ -59,7 +59,7 @@ Agent 评测结构比传统评测复杂得多：需要先准备好工具、运�
 - [Harness Engineering Long Term Agent Tasks](../ch05/057-harness-engineering.html)
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](312-ai-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-principle-architecture-engineering-practice.md)
+→ [原文存档](https://mp.weixin.qq.com/s/cIQYl9Wr1Eov4ma-_bYh-w)
 
 ---
 

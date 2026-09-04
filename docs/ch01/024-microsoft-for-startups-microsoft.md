@@ -53,7 +53,7 @@ Sell more 的落地机制是微软创业计划较独特的商业化设计。初�
 - [云 AI 基础设施](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/cloud-ai-infrastructure.md)
 - [开源 AI 生态](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/open-source-ai-ecosystem.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/microsoft-for-startups-microsoft.md)
+→ [原文存档](https://www.microsoft.com/en-us/startups/apply?wt.mc_id=tldrfounders_2_051826_ne)
 
 ---
 

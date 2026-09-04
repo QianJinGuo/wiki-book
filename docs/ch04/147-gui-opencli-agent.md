@@ -4,7 +4,7 @@
 
 # 浏览器自动化：从 GUI 到 OpenCLI — Agent 时代的可调用性竞争
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/opencli-browser-automation-jingxing.md)
+→ [原文存档](https://mp.weixin.qq.com/s/hp8yj2_qc2MmCi1jYpfx5g)
 
 ## 摘要
 
@@ -82,7 +82,7 @@ opencli cascade https://api.example.com/hot
 | 4 | intercept（Store Action + XHR 拦截） | 网站有 Pinia/Vuex Store |
 | 5 | ui（UI 自动化，最后手段） | 以上都不行 |
 
-五级策略的工程意义是**渐进式降级**：从最简单的公开 API 开始，能用 cookie 就别用 header，能用 header 就别拦截 Store，能拦截就别碰 UI。UI 是最后手段 [raw/articles/opencli-browser-automation-jingxing.md:71-85]。
+五级策略的工程意义是**渐进式降级**：从最简单的公开 API 开始，能用 cookie 就别用 header，能用 header 就别拦截 Store，能拦截就别碰 UI。UI 是最后手段 [opencli-browser-automation-jingxing.md:71-85](https://mp.weixin.qq.com/s/hp8yj2_qc2MmCi1jYpfx5g)。
 
 ### 6. 适配器：YAML vs TypeScript
 
@@ -137,7 +137,7 @@ opencli cascade https://api.example.com/hot
 - [Codex Goal Source Code Deep Dive](../ch09/039-codex-goal.html)
 - [Impeccable Frontend Design Skill Harness Vibecoder](../ch05/001-impeccable.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/opencli-browser-automation-jingxing.md)
+→ [原文存档](https://mp.weixin.qq.com/s/hp8yj2_qc2MmCi1jYpfx5g)
 - [how developers can build agentic agreement workflows on docu](237-how-developers-can-build-agentic-agreement-workflows-on-docu.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/reinforcement-learning-rlhf.md)
 

@@ -4,7 +4,7 @@
 
 # 大模型可控新突破：Steering 机制、评估体系与开源落地
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/steering-mechanism-evaluation-easyedit2-zju-alibaba.md)
+→ [原文存档](https://mp.weixin.qq.com/s/2N8TMiNFoWZzS1yZ-2YTMA)
 
 ## 深度分析
 

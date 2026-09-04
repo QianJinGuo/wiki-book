@@ -60,7 +60,7 @@ Built-in（全自动）、Built-in with Overrides（自定义 prompt/模型）�
 当内置策略不满足需求时，优先考虑 Built-in with Overrides 模式（自定义 prompt 而非完全自建），可复用 AgentCore 的提取/整合管道，仅在特定阶段注入定制逻辑。
 
 ## 关联阅读
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/when-ai-agents-learn-to-forget-amazon-bedrock-agentcore-memory-philosophy.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/when-ai-agents-learn-to-forget-amazon-bedrock-agentcore-memory-philosophy/)
 
 ---
 

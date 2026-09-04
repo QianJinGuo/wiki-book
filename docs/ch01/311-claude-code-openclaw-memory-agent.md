@@ -16,7 +16,7 @@
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](229-anthropic-claude-code.html)
 - [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](../ch05/057-harness-engineering.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/读完-claude-code-和-openclaw-的-memory-源码我对agent记忆需要向量数据库这件事产生了怀疑.md)
+→ [原文存档](https://mp.weixin.qq.com/s/m4wzwXCJoW5Tu4GA5ROodw)
 
 ## 深度分析
 

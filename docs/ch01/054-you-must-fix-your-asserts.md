@@ -75,7 +75,7 @@
 
 ## 相关主题
 
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kristoffit-blog-fix-your-asserts.md)
+- [原文存档](https://kristoff.it/blog/fix-your-asserts/)
 
 ---
 

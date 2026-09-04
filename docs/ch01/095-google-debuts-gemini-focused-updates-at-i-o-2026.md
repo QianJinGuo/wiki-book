@@ -57,7 +57,7 @@ Google I/O 作为平台和工具方向的**信号事件**，其实质影响体�
 - [Google Shipped Gemini 31 Flash Lite In General Availability](../ch04/257-ai.html)
 - [Google Io 2026 Agentic Gemini Era](../ch03/004-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/google-debuts-gemini-focused-updates-at-io-2026.md)
+→ [原文存档](https://letsdatascience.com/news/google-debuts-gemini-focused-updates-at-io-2026-4be4fde6)
 
 ---
 

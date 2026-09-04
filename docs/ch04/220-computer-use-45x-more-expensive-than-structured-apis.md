@@ -147,7 +147,7 @@ Computer Use 的高成本揭示了 Agent 部署中的一个关键指标：**每�
 > [!contradiction] 参见
 >  认为 Computer Use 在某些场景下是合理选择，核心优化在于截图降采样而非完全弃用
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/computer-use-45x-more-expensive-than-structured-apis.md)
+→ [原文存档](https://reflex.dev/blog/computer-use-is-45x-more-expensive-than-structured-apis/)
 
 ---
 

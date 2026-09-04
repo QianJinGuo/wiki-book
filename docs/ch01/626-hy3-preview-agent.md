@@ -17,7 +17,7 @@
 - [the recent history of ai in 32 otters](435-the-recent-history-of-ai-in-32-otters.html)
 - [5亿视频炼出全球最大gui开源数据集、推理token省71%小模型反超大模型——小米ai团队多篇论文入选icml 202](https://github.com/QianJinGuo/wiki-public/blob/main/entities/xiaomi-icml-2026-11papers-da769794d77c.md)
 - [天猫新品团队ai编码实战指南（下）](../ch04/257-ai.html)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-hunyuan-hy3-preview-open-source.md)
+→ [原文存档](https://mp.weixin.qq.com/s/Bz1XiZrXeYlGGuE6UBdq5A)
 
 ## 深度分析
 

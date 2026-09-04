@@ -87,7 +87,7 @@ Cloudflare 与 WorkOS 合作推出的 auth.md 协议解决的是另一个层面�
 - [ATH Agent Trust Handshake Protocol](../ch03/004-agent.html) — Agent 信任协议设计
 - [Agentic Coding Workflow](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agentic-engineering-paradigm.md) — Agent 编码工作流中的部署环节
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cloudflare-temporary-accounts-ai-agents.md)
+→ [原文存档](https://blog.cloudflare.com/temporary-accounts/)
 
 ---
 

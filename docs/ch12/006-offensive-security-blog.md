@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐ | 8.4KB | `entities/offensive-security-blog.md`
 
-> -> [offensive-security-blog](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/offensive-security-blog.md)
+> -> [offensive-security-blog](https://bishopfox.com/blog)
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/moc/cybersecurity-privacy.md)
 
@@ -32,7 +32,7 @@ Bishop Fox 在 Arista NG Firewall 17.4 版本中发现了六个漏洞，包括�
 ### 1. MCP 安全风险——AI 工具链的新盲点
 Otto-Support 关于 MCP 服务器供应链风险的文章揭示了 AI 工具链中的新盲点。传统安全思维关注的是「用户使用 MCP 服务器」的安全性，但这篇文章的洞见是「MCP 服务器本身可能成为攻击面」。
 当用户授权一个 MCP 服务器时，实际上是给予了该服务器相当大的信任——可以访问文件系统、API、其他服务。如果 MCP 服务器本身被攻破或本身就是恶意的，攻击者可以：读取用户数据、模仿用户执行操作、在系统中横向移动。这种风险在 postmark-mcp 和 ClawHub 的实际案例中已得到验证。
-这与 [Boris Cherny 访谈中提到的 MCP 作为 AI 工具连接标准](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-之父最新访谈编程已经结束harness-将消失claude-code-将只有-100-行代码loop-才是未来.md) 形成有趣对照——MCP 一方面是 AI Agent 的能力放大器，另一方面也带来了新的攻击向量。
+这与 [Boris Cherny 访谈中提到的 MCP 作为 AI 工具连接标准](https://mp.weixin.qq.com/s/OUc02wmVtH9RQMhYhZGIdg) 形成有趣对照——MCP 一方面是 AI Agent 的能力放大器，另一方面也带来了新的攻击向量。
 
 ### 2. AI 辅助安全工具的工业化
 Joro 的发布标志着 AI 辅助安全工具进入工业化阶段。这个框架「几乎完全用 AI 构建」，从拦截代理到 C2 集成，表明安全工具开发本身也在被 AI 变革。

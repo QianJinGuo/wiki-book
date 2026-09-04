@@ -142,7 +142,7 @@ IoT 链路中断时最直接的告警信号是 S3 Object 写入停止。建议�
 - [Quick Suite Agent Core Kiro Logistics Quote Assistant](../ch03/004-agent.html)
 - [Aws Direct Connect Dx Migration Best Practices](024-direct-connect-dx.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-iot-core-kiro-industrial-data-pipeline.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/based-on-amazon-iot-core-kiro-build-migration-iot/)
 
 ---
 

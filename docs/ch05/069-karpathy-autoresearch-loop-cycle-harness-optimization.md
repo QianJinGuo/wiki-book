@@ -70,7 +70,7 @@ Codila 将其提炼为 **Loop Engineering** 五步法：
 
 ## 参考
 
-→ [raw/articles/karpathy-autoresearch-loop-harness-76pct-agent-misconception|原文存档]
+→ [原始来源](https://mp.weixin.qq.com/s/BZOvL_4Uei-zFGY3Ossi9w)
 
 ---
 

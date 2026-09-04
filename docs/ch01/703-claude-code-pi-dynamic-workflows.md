@@ -4,7 +4,7 @@
 
 # Claude Code 动态工作流源码解析：pi-dynamic-workflows 架构实现
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-dynamic-workflows-source-code-architecture.md)
+→ [原文存档](https://mp.weixin.qq.com/s/-fgHupVwuT3c4eJMrd43Xw)
 
 ## 深度分析
 

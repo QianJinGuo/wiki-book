@@ -80,7 +80,7 @@ FDU 运行在 IBM Consulting Advantage 平台上，形成了"平台+交付模型
 - **IBM watsonx** — IBM 企业 AI 平台，与 FDU 形成平台+交付模型的组合（实体页待建）
 - **企业 AI 部署** — FDU 试图解决的正是从 experiment 到 production 的规模化落地难题（概念页待建）
 - [硅谷一线 FDE 实践者圆桌](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fde-field-deployment-engineer-tencent-roundtable.md) — 与本文互补：IBM 是公司战略视角，该文是一线实践者视角，覆盖 FDE 三种形态、蒸馏飞轮、中国落地障碍等
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ibm-forward-deployed-units-ai-deployment.md)
+→ [原文存档](https://pulse2.com/ibm-new-forward-deployed-units-model-aims-to-accelerate-enterprise-ai-deployment/)
 
 ---
 

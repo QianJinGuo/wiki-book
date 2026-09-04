@@ -39,7 +39,7 @@ Effects 2026 传递的隐含信号是：开放银行（Open Banking）基础设�
 - Bnpl Walmart
 - [5Thingstoknowabouttheclarityact](https://github.com/QianJinGuo/wiki-public/blob/main/entities/5thingstoknowabouttheclarityact.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/plaid-effects.md)
+→ [原文存档](https://plaid.com/events/effects/)
 
 ---
 

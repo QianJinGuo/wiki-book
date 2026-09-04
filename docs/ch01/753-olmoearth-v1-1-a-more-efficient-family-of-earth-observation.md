@@ -130,7 +130,7 @@ v1.1 论文中提到的"修改预训练策略以补偿 token 合并带来的性�
 - [How Llms Actually Work 0Xkato](763-how-llms-actually-work-0xkato-transformer-walkthrough.html)
 - [Agent Reliability Context Drift Tool Hallucination](../ch03/004-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/olmoearth-v1-1-efficiency.md)
+→ [原文存档](https://huggingface.co/blog/allenai/olmoearth-v1-1)
 
 ---
 

@@ -4,7 +4,7 @@
 
 # 高德工业级能力底座：AI-Native 的端云一体基建
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amap-ai-native-end-to-end-infrastructure.md)
+→ [原文存档](https://mp.weixin.qq.com/s/-TeXf9ZT-PD21ro7G4itYA)
 
 ## 摘要
 

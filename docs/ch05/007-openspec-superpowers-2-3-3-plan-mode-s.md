@@ -230,7 +230,7 @@ ASD ⑤ 注入点的核心洞察：**verification 不能让 Agent 自查**。Age
 
 ## 十、引用与延伸阅读
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openspec-superpowers-decommissioning-frankenstein-test-three-questions-shuge-2026-06-18.md)
+→ [原文存档](https://mp.weixin.qq.com/s/tw6nPi8NIYxd55yiPafSig)
 
 **同作者系列**：
 - 03 篇（SSD 实战 / 6/17）：[Ssd Spec Driven Development Harness Asd Shuge 2026 06 17](008-harness.html)

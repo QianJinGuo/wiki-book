@@ -120,7 +120,7 @@ SANS 的 AI 安全培训体系与 wiki 中的多个概念和实体存在交叉�
 - [Building Reliable Agentic AI Systems](../ch04/189-building-reliable-agentic-ai-systems.html) — AI 系统可靠性工程
 - [MCP](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/model-context-protocol-mcp.md) — SEC573 课程中涉及的协议
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/www-sans-org-ai-in-cybersecurity-training-resources-sans-instit.md)
+→ [原文存档](https://www.sans.org/artificial-intelligence)
 
 ---
 

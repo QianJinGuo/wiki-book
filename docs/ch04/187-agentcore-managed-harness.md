@@ -138,7 +138,7 @@ AgentCore 基于 Strands Agents 开源框架构建，这一选择创造了两条
 即使使用 AgentCore 托管服务，保持至少每月review一次「导出成本」——将当前配置导出为 Strands Agents 代码，评估自部署可行性。这不是说要马上迁移，而是确保供应商定价变化时你有退路。
 
 ## Related
-- [原始文章存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentcore-managed-harness.md)
+- [原始文章存档](https://mp.weixin.qq.com/s/n3j56hLiv1p0ZIRGMFwuLA)
 - [OpenClaw多租户迁移: Phase 2&3部署](176-openclaw.html)
 - [AgentCore Runtime部署Apache Doris MCP Server](257-ai.html)
 - [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](../ch11/045-bedrock-agentcore.html)

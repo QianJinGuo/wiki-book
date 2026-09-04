@@ -103,7 +103,7 @@ AWS 提供的托管安全要求（行业标准基线）+ 用户自定义安全�
 - [agent-evalkit：aws 开源 cli agent 评测工具包](../ch03/004-agent.html)
 - [aws sagemaker ai agent guided workflows finetuning](312-ai-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/使用-aws-security-agent-构建应用安全闭环从代码提交到漏洞修复的自动化之路.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/using-aws-security-agent-build-application-security-automation)
 
 ---
 

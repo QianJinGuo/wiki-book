@@ -16,7 +16,7 @@
 - [Hermes Self Evolution Closed Loop Skill Reuse Winty](../ch07/054-skill.html)
 - [Four Browser Automation Tools Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/four-browser-automation-tools-comparison.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/demis-hassabis-yc-interview-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/-yelssGDGS_MQIB7vBMOHA)
 
 ## 深度分析
 

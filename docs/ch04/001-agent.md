@@ -4,7 +4,7 @@
 
 # 他的 Agent 昨晚替他把公司运转了一遍，你的早会才刚开始
 
-> **来源**：深思圈 / 深思SenseAI（2026-05-26）| 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/stepan-gershuni-ai-native-startup-guide.md)
+> **来源**：深思圈 / 深思SenseAI（2026-05-26）| 原文存档：[原文存档](https://mp.weixin.qq.com/s/TXk9JNSnBDCjm3VzvtcJGg)
 
 ## 深度分析
 
@@ -118,7 +118,7 @@ AI 原生创业公司每周改进一次自己的操作系统。
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](312-ai-agent.html)
 - [Guide Ai Agents Models Apps Harnesses Mollick](312-ai-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/stepan-gershuni-ai-native-startup-guide.md)
+→ [原文存档](https://mp.weixin.qq.com/s/TXk9JNSnBDCjm3VzvtcJGg)
 
 ---
 

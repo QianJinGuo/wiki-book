@@ -4,7 +4,7 @@
 
 # Olmo Hybrid and future LLM architectures
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/olmo-hybrid-and-future-llm-architectures.md)
+→ [原文存档](https://www.interconnects.ai/p/olmo-hybrid-and-future-llm-architectures)
 
 ## Summary
 

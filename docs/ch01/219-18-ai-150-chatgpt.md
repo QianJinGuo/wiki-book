@@ -142,7 +142,7 @@ ChatGPT Futures名单揭示的机会图谱表明，AI的真正价值在于使此
 - [Openai Buys Ai Consultancy Enterprises](316-openai.html)
 - [Microsoft Is Quietly Shopping For An Openai Replac](033-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/18岁高中生用ai挖出150万未知天体首批chatgpt原住民毕业.md)
+→ [原文存档](https://mp.weixin.qq.com/s/D-bWLCPQSM4FTGUeUvwUgQ)
 
 ## 相关实体
 - `面壁小模型` — AI降低执行门槛的典型案例

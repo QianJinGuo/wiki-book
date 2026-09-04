@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 8.0KB | `entities/agentic-environment-engineering-jiagoux-2026-06-27.md`
 
-> → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentic-environment-engineering-jiagoux-2026-06-27.md)
+> → [原文存档](https://mp.weixin.qq.com/s/WaH2ouRp9VZ-EkV4ImJCEg)
 
 ## 核心命题
 

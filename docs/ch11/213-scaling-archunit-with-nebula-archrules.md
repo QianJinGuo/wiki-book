@@ -10,7 +10,7 @@
 
 Netflix JVM Ecosystem 团队通过 Nebula ArchRules 插件，将 ArchUnit 架构规则从单仓库 JUnit 测试扩展到跨 5,000+ 仓库的规模化治理。核心创新：规则库与业务代码解耦、通过 ServiceLoader 自动发现、Gradle Module Metadata 实现变体发布。当前已在生产环境运行 358 条规则，检测近 100 万个问题。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/scaling-archunit-with-nebula-archrules.md)
+→ [原文存档](https://netflixtechblog.com/scaling-archunit-with-nebula-archrules-b4642c464c5a?source=rss----2615bd06b42e---4)
 
 ## 核心要点
 

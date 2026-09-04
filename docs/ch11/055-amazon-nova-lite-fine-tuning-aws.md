@@ -107,7 +107,7 @@ Amazon Nova、Nova Lite、Fine-tuning
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](../ch04/038-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
 - [AI Detection and Response (AIDR): A Zero-Impact Operating Model](../ch04/257-ai.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-nova-lite-fine-tuning-cost-effective-vision-detection-model-tuning-case-and-practice.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/amazon-nova-lite-fine-tuning-cost-effective-vision-detection-model-tuning-case-and-practice/)
 
 - [用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](135-amazon-bedrock.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/llm-core-technology.md)

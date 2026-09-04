@@ -164,7 +164,7 @@ Opus 4.7 是 Anthropic 在安全护栏和网络保护技术上的**试验场**�
 - 开放式分析/复杂任务会更长——这是「聪明」的代价，不必强行压缩
 - `/focus` 模式让 CLI 用户可以在不关心过程时隐藏干扰，专注结果
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-tool-design-evolution-anthropic.md)
+→ [原文存档](https://mp.weixin.qq.com/s/eOkICy56oQFAzmStzgTxkw)
 
 - 建议先用 `xhigh` 跑一个完整项目再决定是否调整，而不是凭直觉选择低 effort 省成本
 

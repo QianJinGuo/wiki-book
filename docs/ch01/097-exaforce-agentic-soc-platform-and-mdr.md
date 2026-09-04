@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐ | 6.4KB | `entities/exaforceagenticsocplatformandmdr.md`
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/exaforceagenticsocplatformandmdr.md)
+→ [原文存档](https://www.exaforce.ai)
 
 ## 摘要
 Exaforce 是主打 Agentic SOC 的 AI 安全运营平台，近期宣布完成 $125M Series B，提供 **Platform 自运营** 与 **MDR 托管运营** 两种交付模式，核心由 Detect / Triage / Investigate / Respond 四个 Exabot 智能体构成。其技术底座为统一实时数据层 + 实时知识图谱 + 多模型 AI，宣称可将检测、调查与响应从"小时/天"压缩到"分钟"，并大幅降低误报。

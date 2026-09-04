@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 20.7KB | `entities/ai-native-时代-研发组织何去何从.md`
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-native-时代-研发组织何去何从.md)
+> 来源：[原文存档](https://mp.weixin.qq.com/s/Xf3C60jCxR4ppMi4HuAnVA)
 
 ## 核心要点
 - AI 不是工具，是新的协作主体，其特点与人形成镜像反面：无限注意力、无情绪疲劳、无 context-switch 成本 
@@ -13,7 +13,7 @@
 - Platform 三柱架构：Agent Platform Group（底层建造）、Domain Teams（上层探索交付）、Risk and Oversight（底层守护） 
 - 生产性 ego（"这是我要弄明白的"）是创新发动机，不可被 death-of-ego 策略一刀切杀死 
 - AI Native 转型最被低估的红利：Harness 复利让组织变快，Execution Graph 复利让组织能持续应对变化 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-native-时代-研发组织何去何从.md)
+→ [原文存档](https://mp.weixin.qq.com/s/Xf3C60jCxR4ppMi4HuAnVA)
 
 ## 组织为何存在：两千年的协调问题
 把视角拉远来看，组织的演化已持续两千年，本质始终在解决同一个问题：信息如何路由 。
@@ -105,7 +105,7 @@ AI Native 转型最难的部分不是技术，是处理"被转型"的人 。组�
 
 ### 识别"人肉中间件"，系统化消除
 员工在各个系统之间手动搬运数据的画面，是 AI 化最大的隐性税 。识别你组织里的"人肉中间件"节点——哪些地方人在做信息搬运而不是判断？这些就是 Harness 工作的优先切入点 。
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-native-时代-研发组织何去何从.md)
+→ [原文存档](https://mp.weixin.qq.com/s/Xf3C60jCxR4ppMi4HuAnVA)
 
 ## 相关实体
 - [Agent Harness 架构](../ch05/035-agent-harness.html)

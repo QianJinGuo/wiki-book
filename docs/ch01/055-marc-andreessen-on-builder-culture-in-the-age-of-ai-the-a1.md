@@ -4,7 +4,7 @@
 
 # Marc Andreessen on Builder Culture in the Age of AI
 
-> → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/marc-andreessen-on-builder-culture-in-the-age-of-ai-the-a16z-show.md)
+> → [原文存档](https://a16z.simplecast.com/episodes/marc-andreessen-on-builder-culture-in-the-age-of-ai-oE9pV1uI)
 
 ## Summary
 

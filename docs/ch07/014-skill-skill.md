@@ -4,7 +4,7 @@
 
 # Skill 产品哲学：歸藏做了爆款 Skill 后的产品反思
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-product-philosophy-guicang-爆款经验-2026-06-12.md)
+→ [原文存档](https://mp.weixin.qq.com/s/sZXl5kHA9LErEwnegpvgXg)
 
 ## 一句话总结
 
@@ -226,7 +226,7 @@
 - [Skill Writing Patterns Best Practices](054-skill.html) — 7 个顶级 Skill 提炼模式
 - [Skill Design Spec 8 Block Checklist Winty](054-skill.html) — 8 块检查清单
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-product-philosophy-guicang-爆款经验-2026-06-12.md)
+→ [原文存档](https://mp.weixin.qq.com/s/sZXl5kHA9LErEwnegpvgXg)
 
 ---
 

@@ -4,7 +4,7 @@
 
 # Co-Existence and the End of Co-Intelligence
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/co-existence-and-the-end-of-co-intelligence.md)
+→ [原文存档](https://www.oneusefulthing.org/p/co-existence-and-the-end-of-co-intelligence)
 
 ## 摘要
 

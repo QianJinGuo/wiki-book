@@ -96,7 +96,7 @@ Diagrimo 的核心价值主张在于**降低可视化门槛**。传统图表制�
 - [From Doer To Director The Ai Mindset Shift](029-from-doer-to-director-the-ai-mindset-shift.html)
 - [Anthropic Puts Claude Agents On A Meter Across Its](523-anthropic-puts-claude-agents-on-a-meter-across-its-subscript.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tenorshare-ai-diagrimo---free-ai-diagram-generator-online.md)
+→ [原文存档](https://www.tenorshare.ai/diagrimo.html)
 
 ---
 

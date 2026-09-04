@@ -7,7 +7,7 @@
 ## 相关实体
 
 - [现在如何使用 ai：一份快速指南（ethan mollick）](../ch04/257-ai.html)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-dynamic-workflows-jiqizhixin-9th-translation.md)
+→ [原文存档](https://x.com/trq212/status/2061907337154367865)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/memory-context-systems.md)
 ## 深度分析

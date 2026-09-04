@@ -62,7 +62,7 @@ when a request comes in, the buffer does three things in order. it resets its st
 
 ## 相关
 
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/sunilpai.md)
+- [原文存档](https://sunilpai.dev/posts/never-waste-a-token/)
 
 ---
 ## 关联

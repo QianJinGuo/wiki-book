@@ -42,11 +42,11 @@ DeepSeek V4引入两项关键创新：
 - [From Doer To Director The Ai Mindset Shift](029-from-doer-to-director-the-ai-mindset-shift.html)
 - [Microsoft For Startups Microsoft](387-microsoft-for-startups-microsoft.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/recent_developments_in_llm_architectures.md)
+→ [原文存档](https://magazine.sebastianraschka.com/p/recent-developments-in-llm-architectures)
 
 ## 关联阅读
 -
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/recent_developments_in_llm_architectures.md)
+→ [原文存档](https://magazine.sebastianraschka.com/p/recent-developments-in-llm-architectures)
 
 ---
 

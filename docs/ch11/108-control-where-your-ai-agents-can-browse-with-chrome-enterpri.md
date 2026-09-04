@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 8.6KB | `entities/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazo.md`
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazo.md)
+> 来源：[原文存档](https://aws.amazon.com/blogs/machine-learning/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazon-bedrock-agentcore/)
 
 ## 核心要点
 - AWS China ML 发布的技术文章，介绍 Amazon Bedrock AgentCore Browser 的 Chrome 企业策略控制能力
@@ -48,7 +48,7 @@ AgentCore 的方案是将组织根 CA 存储在 AWS Secrets Manager，引用时�
 3. **浏览器策略应与 CI/CD 流程集成**：策略 JSON 存储在 S3，可通过版本控制管理，配合 AWS IAM 最小权限原则，确保只有安全团队能修改策略配置。
 4. **私有 PKI 场景下，Secrets Manager + AgentCore 是标准方案**：不要为了"方便"而禁用证书验证。通过组织根 CA 导入实现安全连接是正确路径，且配置一次即可在多个 Agent 间复用。
 5. **会话录制是审计 AI Agent 行为的重要工具**：当 Agent 执行敏感操作时，录制的会话可用于事后分析、异常检测和合规审计。
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazo.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazon-bedrock-agentcore/)
 
 ## 相关实体
 - [AI 时代 Git 版本管理 — Agentic Coding 最佳实践](../ch03/004-agent.html)

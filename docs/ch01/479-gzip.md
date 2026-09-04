@@ -83,7 +83,7 @@ gzip 语言模型的产出不是连贯文本，但它明显"知道"原文的结�
 - [LLM Thonking 推理努力研究](473-llm-thonking.html) — 压缩视角下的推理成本分析
 - [递归强化语言模型](573-reinforcing-recursive-language-models-alphaxiv.html) — 语言模型训练的理论基础
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gzip-lm-compression-as-language-model.md)
+→ [原文存档](https://nathan.rs/posts/gzip-lm/)
 
 ---
 

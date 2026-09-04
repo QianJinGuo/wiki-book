@@ -6,7 +6,7 @@
 
 Cameron R. Wolfe 系统梳理了 Agentic RL 方向：当 LLM 从静态问答模型变成能与环境交互的智能体，RL 训练必须从单轮文本采样升级为多轮轨迹优化、可扩展环境执行、异步 rollout 和稳定性控制。本文覆盖 6 个代表框架（ToRL / AgentGym-RL / Agent-R1 / AgentRL / AutoForge / RAGEN），提炼 8 条实践原则，揭示 echo trap / template collapse 等新型失稳模式。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentic-rl-frameworks-practices-long-horizon-wolfe-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/kiHCMo_kqP0fj7zIkm9bQw)
 
 ## 从单轮 MDP 到多轮环境交互
 
@@ -103,8 +103,8 @@ Wolfe 框架未深入讨论的治理层问题：训练分数上升不能直接�
 - **Runtime Manager 分层**：Agent Harness（Codex/Claude Code/Hermes 适配器）与 Sandbox Backend（E2B/Docker/Local）两个独立抽象维度，由 Runtime Manager 组合编排；Hook 机制提供可扩展生命周期扩展点
 - **扩展性**：Gateway 多进程按 Session 分散 tokenize/detokenize CPU 压力；Runtime Manager 多进程解决 E2B SDK 在 1000+ 并发下的超时问题
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentic-rollout-training-framework-shumu-2026.md)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/long-horizon-agent-training-practice-jiagoux-2026-07-20.md)
+→ [原文存档](https://mp.weixin.qq.com/s/o4V3mn2vjn9h7kjUmlnccw)
+→ [原文存档](https://mp.weixin.qq.com/s/joyd7o0cCbiuIvoE0tsV8A)
 
 ## 全场景 Scaling 工业实践：AgentOmnia（2026-07-31 补充）
 

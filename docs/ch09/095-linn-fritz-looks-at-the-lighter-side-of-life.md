@@ -8,7 +8,7 @@
 ## 相关实体
 - [Chinese Ai Lab Insights Nathan](../ch04/257-ai.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/linn-fritz-looks-at-the-lighter-side-of-life.md)
+→ [原文存档](https://www.creativeboom.com/inspiration/linn-fritz-looks-at-the-lighter-side-of-life/)
 
 ## 深度分析
 **1. 动态设计背景如何塑造独特的插画风格**

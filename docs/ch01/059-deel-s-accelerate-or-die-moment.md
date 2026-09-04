@@ -54,7 +54,7 @@ Deel 的增长引擎不是纯 PLG 也不是纯企业销售，而是「以产品�
 - [SaaStr: Who's Winning Enterprise AI](../ch04/257-ai.html)
 - [AI 时代真正的护城河是组织能力](../ch04/257-ai.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deels-accelerate-or-die-moment.md)
+→ [原文存档](https://www.onlycfo.io/p/deels-accelerate-or-die-moment)
 
 ---
 

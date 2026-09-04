@@ -4,7 +4,7 @@
 
 # Spec-Kit vs BMAD：AI 原生 SDD 双框架实战对比（叶小钗重构迁移案例）
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/spec-kit-bmad-sdd-practice-yexiaocha.md)
+> 原文存档：[原文存档](https://mp.weixin.qq.com/s/Lpsl52F_oiFwMBDV7dL8RQ)
 
 叶小钗（2026-06-05）用 Spec-Kit 和 BMAD 跑通一个重构迁移项目（把旧系统能力迁到新系统、兼容线上 API），总结出 SDD 双框架的实战差异：**Spec-Kit 拉团队上限、BMAD 拉团队下限**——前者适合成熟基建 / 单一 Feature，后者适合一人小团队 / 跨角色补足。
 

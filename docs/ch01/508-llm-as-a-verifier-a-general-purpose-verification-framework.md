@@ -4,7 +4,7 @@
 
 # LLM-as-a-Verifier: A General-Purpose Verification Framework
 
-> → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-as-a-verifier-a-general-purpose-verification-framework.md)
+> → [原文存档](https://llm-as-a-verifier.notion.site/)
 
 ## 摘要
 
@@ -55,7 +55,7 @@ LLM-as-a-Verifier 是斯坦福 AI Lab 与 UC Berkeley Sky Computing Lab 联合�
 - [LLM 研究前沿 MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/llm-research-frontiers.md)
 - [评估与基准 MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/evaluation-and-benchmarks.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-as-a-verifier-a-general-purpose-verification-framework.md)
+→ [原文存档](https://llm-as-a-verifier.notion.site/)
 
 ---
 

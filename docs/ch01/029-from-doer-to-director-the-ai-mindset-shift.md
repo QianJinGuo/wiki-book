@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐ | 8.8KB | `entities/from-doer-to-director-the-ai-mindset-shift.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/from-doer-to-director-the-ai-mindset-shift.md)
+> -> [原文存档](https://boagworld.com/emails/from-doer-to-director/)
 
 ## 相关实体
 - [独家对话罗福莉：AI范式已然巨变！](../ch04/257-ai.html)

@@ -20,7 +20,7 @@
 - [Google Agentic Rag Sufficient Context Agent Framesqa](../ch03/004-agent.html)
 - [Anthropic Google Agent Skills Design Patterns](../ch04/157-anthropic-google-agent-skills.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentexecutorgooglesdistributedagentruntime.md)
+→ [原文存档](https://cloud.google.com/blog/products/ai-machine-learning/agent-executor-googles-distributed-agent-runtime/)
 
 - [Design Md Google Stitch Voltagent Ai Design Agent](../ch03/004-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/vision-multimodal.md)
@@ -126,7 +126,7 @@ Google 通过 Agent Executor 切入的是 **Agent Runtime** 赛道——这是�
 3. 考虑 Pilot 项目：选择一个非关键任务尝试 Agent Executor 的断连恢复能力
 4. 关注 A2A 协议生态：跨厂商 Agent 互操作可能是下一个行业趋势
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentexecutorgooglesdistributedagentruntime.md)
+→ [原文存档](https://cloud.google.com/blog/products/ai-machine-learning/agent-executor-googles-distributed-agent-runtime/)
 
 ---
 

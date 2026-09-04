@@ -114,7 +114,7 @@
 - [Google Debuts Gemini Focused Updates At Io 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/google-debuts-gemini-focused-updates-at-io-2026.md)
 - [Shub Reaper Macos Stealer Attack Chain](../ch04/257-ai.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/workspaceupdates-googleblog-com-google-workspace-updates.md)
+→ [原文存档](https://workspaceupdates.googleblog.com/2026/05/small-businesses-can-now-seamlessly-import-users-from-Microsoft-to-Google-Workspace.html)
 
 ---
 

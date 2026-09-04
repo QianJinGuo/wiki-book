@@ -178,7 +178,6 @@
   - [Agent Harness Engineering 综述](../ch05/057-harness-engineering.html)（harness 视角）
   - [Harness 演化论文集](../ch05/008-harness.html)（harness 论文集合）
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-self-improvement-system-survey-zesearch-nlp.md)
 
 ---
 

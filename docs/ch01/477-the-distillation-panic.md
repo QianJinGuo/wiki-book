@@ -7,7 +7,7 @@
 ## 相关实体
 - [05 11 The Great Memory Panic Of 2026](375-the-great-memory-panic-of-2026.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-distillation-panic.md)
+→ [原文存档](https://www.interconnects.ai/p/the-distillation-panic)
 
 - [Qwen Image Flash Beyond Objective Design](746-qwen-image-flash-beyond-objective-design-few-step-distill.html)
 - [Interconnects What Ive Been Building Atom Report Post Training Course Finishing My Book And On](../ch04/257-ai.html)

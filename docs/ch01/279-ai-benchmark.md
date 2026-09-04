@@ -46,7 +46,7 @@ AACR-Bench 由南京大学与阿里巴巴 TRE 联合推出，具备三大核心�
 - [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](https://github.com/QianJinGuo/wiki-public/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
 - [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](../ch03/004-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/给氛围编程系上安全带阿里集团-ai-代码评审实践与-benchmark-开源.md)
+→ [原文存档](https://mp.weixin.qq.com/s/Plh2Q4zkDKnLgPBOoOSxTA)
 
 ---
 

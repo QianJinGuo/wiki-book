@@ -4,7 +4,7 @@
 
 # GPT-5.6一发布，Claude终于舍得重置Fable 5额度了
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gpt-56一发布claude终于舍得重置fable-5额度了.md)
+→ [原文存档](https://mp.weixin.qq.com/s/zFwp7sKBRSCgpdBk7alv1w)
 
 # GPT-5.6一发布，Claude终于舍得重置Fable 5额度了
 

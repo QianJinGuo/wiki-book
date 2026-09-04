@@ -8,7 +8,7 @@
 - 在 BOOM、GIFT-Eval、TIME 三大基准测试中均取得 SOTA
 - 比 Toto 1.0 提升 7 倍参数效率，推理速度大幅提升
 - Apache 2.0 开源许可
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/toto-2.md)
+→ [原文存档](https://www.datadoghq.com/blog/ai/toto-2/)
 
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-model-research-latest-directions.md)

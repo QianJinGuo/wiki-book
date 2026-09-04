@@ -4,7 +4,7 @@
 
 # Claude Code 泄露后的漏网之鱼 claude-code-best 这两个月到底演进了什么
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-best-community-fork-evolution-vibecoder.md)
+→ [原文存档](https://mp.weixin.qq.com/s/fyugPyHo1gY8A_5XXCi8sQ)
 
 ## 深度分析
 

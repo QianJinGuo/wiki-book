@@ -2,12 +2,12 @@
 
 > 📊 Level ⭐⭐ | 6.8KB | `entities/improve-bot-accuracy-with-amazon-lex-assisted-nlu.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/improve-bot-accuracy-with-amazon-lex-assisted-nlu.md)
+> -> [原文存档](https://aws.amazon.com/blogs/machine-learning/improve-bot-accuracy-with-amazon-lex-assisted-nlu/)
 
 ## 核心要点
 - AWS China ML 发布的技术文章
 - 涉及领域：aws, machine-learning, ai-agents, bedrock
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/improve-bot-accuracy-with-amazon-lex-assisted-nlu.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/improve-bot-accuracy-with-amazon-lex-assisted-nlu/)
 
 ## 相关实体
 - [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](../ch11/045-bedrock-agentcore.html)

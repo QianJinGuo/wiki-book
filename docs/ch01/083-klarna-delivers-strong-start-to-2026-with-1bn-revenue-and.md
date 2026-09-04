@@ -46,7 +46,7 @@ Q1 最令人印象深刻的指标之一是 Revenue per employee 达到近 140 �
 - [Automation Anywhere Collaborates With Cisco Nvidia Okta And Openai Launching Ent](../ch04/009-automation-anywhere-collaborates-with-cisco-nvidia-okta-a.html)
 - [Affirm Maps Road To 100B Gmv With Card Ai Commerce And Global Expansion](../ch03/069-affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-glo.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/klarna-delivers-strong-start-to-2026-with-1bn-revenue-and-68m-adj-operating-prof.md)
+→ [原文存档](https://www.klarna.com/international/press/klarna-delivers-strong-start-to-2026/)
 
 ---
 

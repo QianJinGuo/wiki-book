@@ -2,13 +2,13 @@
 
 > 📊 Level ⭐ | 7.4KB | `entities/baidu-confidential-computing-cpu-gpu-full-chain.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/baidu-confidential-computing-cpu-gpu-full-chain.md)
+> -> [原文存档](https://mp.weixin.qq.com/s/hu0PIkQcsmDghr9IyiTSpw)
 
 ## 摘要
 百度智能云新一代AI机密计算实例：从CPU到GPU全链路可信
 
 ## 关键要点
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/baidu-confidential-computing-cpu-gpu-full-chain.md)
+- [原文存档](https://mp.weixin.qq.com/s/hu0PIkQcsmDghr9IyiTSpw)
 
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/chinese-ai-ecosystem-silicon-valley-differences-agent-development-impact.md)

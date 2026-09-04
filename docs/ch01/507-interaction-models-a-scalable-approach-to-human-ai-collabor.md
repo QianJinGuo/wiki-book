@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 6.6KB | `entities/interaction-models-human-ai.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/interaction-models-human-ai.md)
+> -> [原文存档](https://thinkingmachines.ai/blog/interaction-models)
 
 ## Summary
 Today, we’re announcing a research preview of interaction models: models that handle interaction natively rather than through external scaffolding. We think interactivity should scale alongside intelligence; the way we work with AI should not be treated as an afterthought. Interaction models let people collaborate with AI the way we naturally collaborate with each other—they continuously take in audio, video, and text, and think, respond, and act in real time.
@@ -14,7 +14,7 @@ We train an interaction model from...
 - **Date**: 
 
 ## Notes
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/interaction-models-human-ai.md)
+→ [原文存档](https://thinkingmachines.ai/blog/interaction-models)
 
 ## 相关实体
 - [OpenAI buys AI consultancy to sell enterprises on its models](726-openai-buys-ai-consultancy-to-sell-enterprises-on-its-models.html)
@@ -35,7 +35,7 @@ Thinking Machines 明确拒绝了"在轮次模型上套 VAD 等控制框架"的�
 
 200ms 是有认知科学依据的时间粒度：它是人类短时记忆块（chunk）的典型时间窗口，也是语音交互中"自然停顿"的心理阈值。以 200ms 为单位交替处理输入输出，使得"同时说话"（实时翻译）、"看视频时同步解说"这类多模态并发行为成为模型原生能力，而非工程拼接。现有系统即使能做到并发，也是多个独立模块的拼接，而非统一表示下的真正并发。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/genesis-ai-gene-25-embodied-foundation-model.md)
+→ [原文存档](https://mp.weixin.qq.com/s/6jbIVQzSQ2nf1HY1xk-BOg)
 
 ## 实践启示
 **1. 评估现有 Agent 系统的"人在 loop"体验**

@@ -78,7 +78,7 @@ Flow2Spec 最独特的设计是 f2s-kb-distill/f2s-kb-sync 构成的**知识反�
 5. **提交前知识覆盖检查是防止知识腐蚀的关键**：f2s-git-commit 在提交前检查知识是否需要更新，是防止文档与代码不同步的最后防线
 
 ## 原始存档
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/flow2spec-structured-knowledge-routing-ctrip-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/enxFJ-bEIvYI_PxuPYRbsg)
 
 ---
 

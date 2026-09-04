@@ -57,7 +57,7 @@ Review Agent 只在任务使用了工具且有判断标准时才主动沉淀。�
 ## 核心哲学
 > 自进化不是模型变强，是 Agent 变熟练。
 > Hermes 的设计哲学不是 AI 哲学，是组织学。
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-self-improving-overview-winty.md)
+→ [原文存档](https://mp.weixin.qq.com/s/KJwNgGFBXGUzjwCi2jMLwg)
 
 ## 深度分析
 ### 组织学隐喻背后的设计意图

@@ -43,7 +43,7 @@
 - AI 合规
 - [负责任 AI 治理](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/responsible-ai-governance.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/why-internally-built-ai-fails-fund-accounting-audits.md)
+→ [原文存档](https://www.maybern.com/post/why-internally-built-ai-fails-fund-accounting-audits)
 
 ---
 

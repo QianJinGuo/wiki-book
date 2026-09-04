@@ -78,7 +78,7 @@ AI Native 三大硬性标准：①全链路 AI 驱动（任何环节不能有人
 - [Harness Engineering 框架](../ch05/057-harness-engineering.html)——状态外部化/共享介质的协作思想同源
 - [Harness 减法工程（腾讯 tdsql-harness）](../ch05/008-harness.html)——不可逆动作授权边界与本文执行 Agent 唯一破坏性权限同构
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qwen-ai-native-chaos-engineering-agent-corps-2026-08-06.md)
+→ [原文存档](https://mp.weixin.qq.com/s/FopdLWQq9RU9CaaNTIzx6g)
 
 - [MOC：Agent 工程指南](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-engineering-guide.md)
 

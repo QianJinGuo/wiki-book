@@ -53,7 +53,7 @@ HTTP/CLI 只是字节翻译器，真正业务逻辑在协调与治理层。包�
 - [Agent Memory Architecture Ruofei](133-agent-memory.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/prompt-engineering-guide.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-system-zero-to-one-01-architecture-slices-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/VBY65tBAjVWyuP8QcpzOLA)
 
 ---
 

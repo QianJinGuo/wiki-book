@@ -90,7 +90,7 @@ Langfuse 的 tracing 数据揭示了一个关键的成本分析粒度：**Observ
 
 ## 来源
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/langfuse-agent-eval-tracing-cost-structure.md)
+→ [原文存档](https://www.xiaohongshu.com/explore/6a14f1040000000008025eea)
 
 ---
 ## 关联

@@ -4,7 +4,7 @@
 
 # Gemma 4 模型发布 — Google DeepMind 开源权重家族在 Amazon Bedrock 上线
 
-> Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/introducing-gemma-4-models-on-amazon-bedrock.md)
+> Source: [原文存档](https://aws.amazon.com/blogs/machine-learning/introducing-gemma-4-models-on-amazon-bedrock)
 
 ## 背景
 
@@ -79,7 +79,7 @@
 - [amazon bedrock模型推理的serverless异步架构 – 处理在线多模态高负载案例](211-bedrock.html)
 - [gemma 4 multi token prediction drafters](../ch01/188-gemma-4-multi-token-prediction-drafters.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/introducing-gemma-4-models-on-amazon-bedrock.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/introducing-gemma-4-models-on-amazon-bedrock)
 - [diffusiongemma：扩散式文本生成模型（google 26b moe，4× 推理加速）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/diffusiongemma-4x-faster-text-generation-google-2026-06.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/vision-multimodal.md)
 

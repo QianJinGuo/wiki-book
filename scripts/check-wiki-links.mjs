@@ -40,28 +40,12 @@ function pathFromUrl(url, baseUrl) {
   return path;
 }
 
-function rawPathFromUrl(url) {
-  const parsed = new URL(url);
-  const configured = new URL(`${linkConfig.wikiBookRawBaseUrl}/`);
-  const acceptedBases = [
-    configured,
-    new URL(configured.href.replace("/tree/", "/blob/")),
-  ];
-  for (const base of acceptedBases) {
-    if (parsed.origin !== base.origin || !parsed.pathname.startsWith(base.pathname)) continue;
-    const path = decodeURIComponent(parsed.pathname.slice(base.pathname.length));
-    if (!path || path.includes("..") || path.startsWith("/")) return null;
-    return path;
-  }
-  return null;
-}
-
 const oldPrivateUrl = /https:\/\/github\.com\/QianJinGuo\/wiki(?:[\/\s)'"`]|$)/g;
 const allUrls = /https:\/\/github\.com\/QianJinGuo\/[^\s<>`)]+/g;
+const forbiddenRawUrl = /https:\/\/github\.com\/QianJinGuo\/wiki-book\/(?:blob|tree)\/main\/docs\/raw\/articles\//i;
 const files = walkPublishedMarkdown(DOCS_DIR);
 const errors = [];
 const publicTargets = new Set();
-const rawTargets = new Set();
 
 for (const file of files) {
   const content = readFileSync(file, "utf8");
@@ -73,6 +57,10 @@ for (const file of files) {
 
   for (const match of content.matchAll(allUrls)) {
     const url = match[0].replace(/[.,;!?]+$/, "");
+    if (forbiddenRawUrl.test(url)) {
+      errors.push(`${fileLabel}: public chapter still links to a raw copy ${url}`);
+      continue;
+    }
     const publicPath = pathFromUrl(url, linkConfig.wikiPublicBaseUrl);
     if (publicPath) {
       if (!/^(entities|concepts|comparisons|queries|moc)\/.+\.md$/.test(publicPath)) {
@@ -82,14 +70,12 @@ for (const file of files) {
       }
     }
 
-    const rawPath = rawPathFromUrl(url);
-    if (rawPath) {
-      if (!/^raw\/articles\/.+\.md$/.test(rawPath)) {
-        errors.push(`${fileLabel}: invalid wiki-book raw target ${url}`);
-      } else {
-        rawTargets.add(rawPath);
-      }
+    if (/https?:\/\/raw\/articles\//i.test(url)) {
+      errors.push(`${fileLabel}: malformed raw source URL remains ${url}`);
     }
+  }
+  if (/\]\([^)]*raw\/articles\//i.test(content) || /\^\[raw\/articles\//i.test(content)) {
+    errors.push(`${fileLabel}: relative raw article link remains`);
   }
 }
 
@@ -103,16 +89,10 @@ if (REQUIRE_TARGETS) {
       }
     }
   }
-
-  for (const target of rawTargets) {
-    if (!existsSync(join(PROJECT_ROOT, "docs", target))) {
-      errors.push(`missing wiki-book raw target: ${target}`);
-    }
-  }
 }
 
 console.log(
-  `Checked ${files.length} published Markdown files: ${publicTargets.size} public targets, ${rawTargets.size} raw targets`,
+  `Checked ${files.length} published Markdown files: ${publicTargets.size} public targets, raw targets 0`,
 );
 if (errors.length > 0) {
   console.error(`Wiki link check failed with ${errors.length} error(s):`);

@@ -4,7 +4,7 @@
 
 # 数学优化：在直觉失效的复杂决策中寻找确定性最优解
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/better-decisions-at-scale-how-mathematical-optimization-deli.md)
+> -> [原文存档](https://aws.amazon.com/blogs/machine-learning/better-decisions-at-scale-how-mathematical-optimization-delivers-where-intuition-fails)
 
 ## 摘要
 
@@ -79,7 +79,7 @@ Fidelity Center for Applied Technology（FCAT）的案例特别值得关注：ML
 - [NVIDIA Isaac Lab 机器人 RL](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 - [AWS SageMaker AI Agent 工作流](../ch04/312-ai-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/better-decisions-at-scale-how-mathematical-optimization-deli.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/better-decisions-at-scale-how-mathematical-optimization-delivers-where-intuition-fails)
 
 ---
 

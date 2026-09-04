@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 7.0KB | `entities/nvidia-exemplar-cloud-ai-training-infra-performance-diagnostics.md`
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-exemplar-cloud-lessons-ai-infra-performance-2026-07-30.md)
+> 来源：[原文存档](https://developer.nvidia.com/blog/nvidia-exemplar-cloud-lessons-for-unlocking-full-performance-on-ai-infrastructure/)
 
 ## 核心要点
 
@@ -10,7 +10,7 @@
 - 4 个真实调试案例：SMMU 虚拟化（Grace CPU）、C-state + NUMA（x86 CPU）、NCCL QPS（fabric）、container topology 传播（运行时）
 - 核心方法论：perf/Nsight/nccl-tests 定位信号 → 单层调优 → workload 验证；preflight 检查表先行
 - 技术深度：v=8, c=8, stars=4
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-exemplar-cloud-lessons-ai-infra-performance-2026-07-30.md)
+→ [原文存档](https://developer.nvidia.com/blog/nvidia-exemplar-cloud-lessons-for-unlocking-full-performance-on-ai-infrastructure/)
 
 ## 相关实体
 

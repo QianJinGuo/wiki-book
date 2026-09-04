@@ -78,7 +78,7 @@ Parsiya 延续 Semgrep 的 Mythos 实验，用 26 种 Claude 4.6/4.7/4.8 和 GPT
 - [LLM RL 算法综述](451-llm.html) — 推理努力与 RL 训练的关系
 - [腾讯 Token 经济学](../ch12/002-token.html) — Token 成本优化的另一视角
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-thonking-reasoning-effort-security-triage.md)
+→ [原文存档](https://parsiya.net/blog/llm-thonking/)
 
 ---
 

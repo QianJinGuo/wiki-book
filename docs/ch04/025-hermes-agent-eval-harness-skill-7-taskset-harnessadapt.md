@@ -306,7 +306,7 @@ Rejected Buffer 不是"垃圾箱"——它是 optimizer 不再重复同类错误
 
 ## 十六、引用与延伸阅读
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/sota-ai-hermes-agent-eval-harness-skillopt-implementation-2026-06-18.md)
+→ [原文存档](https://mp.weixin.qq.com/s/V_1HVbB74rhCgKkV1an46w)
 
 **学术参考**：
 - SkillOpt: Executive Strategy for Self-Evolving Agent Skills — https://arxiv.org/pdf/2605.23904

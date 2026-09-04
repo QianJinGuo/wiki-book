@@ -4,7 +4,7 @@
 
 # Fastlane | Create Winning Short-Form Content In Seconds
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fastlane-create-winning-short-form-content-in-seconds.md)
+→ [原文存档](https://www.usefastlane.ai/)
 
 ## 摘要
 

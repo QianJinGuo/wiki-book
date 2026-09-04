@@ -48,12 +48,12 @@ GLM-5.2 上线华为云后，华为云从算力调度、网络通信、底层算
 
 此外，华为云 MaaS 模型即服务平台已提供免部署、一键调用 GLM-5.2 API 的 Tokens 服务。华为云码道 CodeArts 代码智能体、华为云智果 AgentArts 企业级智能体平台也已完成与 GLM-5.2 的深度适配。
 
-→ [原文存档 (华为云开发者联盟)](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/智谱glm-52上线华为云可通过多款产品体验.md)
+→ [原文存档 (华为云开发者联盟)](http://mp.weixin.qq.com/s?__biz=MzkzNzM4ODE0NQ==&mid=2247594750&idx=1&sn=9c57885bab1ed7e6f37b409d618c5327&chksm=c29303e0f5e48af6765b2b1ce1ff2238b9c288a162b80a33075147f4c26c46ae3e41dc5a1a40#rd)
 
 ## 相关
 
-- [原文存档 (z.ai blog)](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/z-glm-5.2.md)
-- [原文存档 (HuggingFace)](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/zai-org-GLM-5.2.md)
+- [原文存档 (z.ai blog)](https://z.ai/blog/glm-5.2)
+- [原文存档 (HuggingFace)](https://huggingface.co/zai-org/GLM-5.2)
 
 ## Interconnects 分析视角（Nathan Lambert）
 
@@ -73,7 +73,7 @@ Nathan Lambert 认为 GLM-5.2 代表了开源 agent 模型的质变：
 - MIT 许可证消除了区域限制，对全球开发者开放
 - 对 Anthropic/OpenAI 的 agent 生态构成直接竞争
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/glm-52-step-change-open-agents-interconnects.md)
+→ [原文存档](https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open)
 
 ---
 ## 关联

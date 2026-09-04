@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 7.2KB | `entities/google-and-amnesty-international-teamed-up-to-make-android-s.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/google-and-amnesty-international-teamed-up-to-make-android-s.md)
+> -> [原文存档](https://cyberscoop.com/google-android-intrusion-logging-amnesty-spyware-detection/)
 
 ## 核心要点
 - 这是主流设备厂商首次推出专门用于法证检测高级威胁的功能
@@ -15,7 +15,7 @@
 - [Google And Amnesty International Teamed Up To Make It Harder](https://github.com/QianJinGuo/wiki-public/blob/main/entities/google-and-amnesty-international-teamed-up-to-make-it-harder.md)
 - [Google Bigquery Threat Model](https://github.com/QianJinGuo/wiki-public/blob/main/entities/google-bigquery-threat-model.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/google-and-amnesty-international-teamed-up-to-make-android-s.md)
+→ [原文存档](https://cyberscoop.com/google-android-intrusion-logging-amnesty-spyware-detection/)
 
 ## 相关实体
 

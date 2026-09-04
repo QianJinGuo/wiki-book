@@ -6,7 +6,7 @@
 
 首个面向日常个人助理 Agent、沿**长程历史 × 多服务 × 多设备**三维度扩展的评测基准。200 个真实任务，GPT-5.5 pass@1 仅 34.5%。开源管线 + 2000 训练环境，微调 Qwen3.5-27B 提升 23.7%。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claw-anything-personal-assistant-agent-benchmark-three-dimensional-context.md)
+→ [原文存档](https://mp.weixin.qq.com/s/rEk33ieaeX0Gg5mmb9LKZQ)
 
 ## 核心命题
 
@@ -114,7 +114,7 @@ Rachel 婚礼策划的例子完美展示了权限边界问题：助理需要算�
 - 数据：https://huggingface.co/datasets/LiberCoders/Claw-Anything
 - → [ProgramBench Agent Benchmark](136-programbench-agent-benchmark.html) — 程序合成能力评测
 - → [Agent 记忆评测全景](133-agent-memory.html) — 记忆系统评测
-- → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claw-anything-personal-assistant-agent-benchmark-three-dimensional-context.md)
+- → [原文存档](https://mp.weixin.qq.com/s/rEk33ieaeX0Gg5mmb9LKZQ)
 
 ---
 

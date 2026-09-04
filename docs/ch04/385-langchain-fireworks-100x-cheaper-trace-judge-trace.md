@@ -4,7 +4,7 @@
 
 # LangChain × Fireworks 100x Cheaper Trace Judge — 通用 trace 评估器
 
-> Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/langchain-100x-cheaper-trace-judge-fireworks.md)
+> Source: [原文存档](https://www.langchain.com/blog/building-a-100x-cheaper-trace-judge-with-fireworks)
 
 ## 背景
 
@@ -85,7 +85,7 @@ LangChain 通常推荐团队构建**应用特定的评估器**（因为判断 tr
 - [skillsui 企业 agent 中间层](../ch03/073-skillsui.html)
 - [gaode uplift model iteration agent long running harness](../ch05/008-harness.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/langchain-100x-cheaper-trace-judge-fireworks.md)
+→ [原文存档](https://www.langchain.com/blog/building-a-100x-cheaper-trace-judge-with-fireworks)
 
 ---
 

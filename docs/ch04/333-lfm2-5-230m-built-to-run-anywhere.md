@@ -109,7 +109,7 @@ LFM2.5-230M 的成功验证了几个重要趋势：
 
 - [Nvidia Edge First Llms Av Robotics](../ch01/170-nvidia-edge-first-llms-av-robotics.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/liquid-ai-lfm2-5-230m.md)
+→ [原文存档](https://www.liquid.ai/blog/lfm2-5-230m)
 
 ---
 ## 关联

@@ -17,7 +17,7 @@
 - [Claude Code Search Architecture Tencent 2026](../ch03/057-claude-code.html)
 - [Openclaw Prompt Context Harness](../ch04/176-openclaw.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-wiki-obsidian-wiki-gbrain-self-organization-self-evolution.md)
+→ [原文存档](https://mp.weixin.qq.com/s/48XpgAMHeaKYj26PrJK-hw)
 
 ## 深度分析
 

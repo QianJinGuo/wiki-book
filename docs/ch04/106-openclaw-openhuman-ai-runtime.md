@@ -138,7 +138,7 @@ rm、dd、sudo、ssh、curl、wget 视为高风险命令 。但简单禁止联�
 - Tauri — 桌面壳框架
 - Agent Harness 工程 — 缰绳设计模式
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openhuman-private-ai-runtime-from-openclaw.md)
+→ [原文存档](https://mp.weixin.qq.com/s/qn4zcUg_Qd5Hy370NlHu1g)
 
 ---
 ## 关联

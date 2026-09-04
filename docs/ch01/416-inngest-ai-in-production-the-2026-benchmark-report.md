@@ -40,7 +40,7 @@
 - [Semis Memo Supply Chain Inheritance](455-semis-memo-supply-chain-inheritance.html)
 - [Harness Engineering 让 Coding Agent 可靠完成长程任务 V2](../ch05/057-harness-engineering.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/inngest-ai-in-production-the-2026-benchmark-report-2.md)
+→ [原文存档](https://www.inngest.com/content/ai-in-production-report-2026)
 
 ## 深度分析
 ### 信心悖论的根因

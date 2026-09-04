@@ -72,7 +72,7 @@ Consider these questions:
 *   Will the implementation run in production for several years?
 *
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/excerpts-write-an-effective-design-doc.md)
+→ [原文存档](https://refactoringenglish.com/excerpts/write-an-effective-design-doc/)
 
 ---
 ## 关联

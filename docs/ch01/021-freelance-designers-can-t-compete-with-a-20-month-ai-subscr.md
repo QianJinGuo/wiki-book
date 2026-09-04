@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐ | 9.8KB | `entities/freelance-designers-cant-compete-ai-subscription.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/freelance-designers-cant-compete-ai-subscription.md)
+> -> [原文存档](https://weandthecolor.com/freelance-designers-cant-compete-with-a-20-month-ai-subscription-heres-what-actually-works-now/209620)
 
 ## 核心观点
 本文提出了**创意压缩模型（Creative Compression Model）**：自由设计师市场正在发生结构性分裂，商品化设计工作几乎完全被 AI 取代，而战略层设计依然由人类主导。处于两者之间的中间层——以执行为核心、缺乏战略深度的设计师——正在经历市场塌陷，且这一过程比直觉判断更快、更彻底。

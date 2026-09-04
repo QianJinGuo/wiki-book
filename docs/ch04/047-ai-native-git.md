@@ -161,7 +161,7 @@ Level 3（远期）: AI 做决策辅助
 - [Staragent Webterminal Cli Ali Infra Cli As Agent Hands](../ch03/004-agent.html)
 - [Alibaba Agentic Cloud](273-agentic-cloud.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-native-project-management-git.md)
+→ [原文存档](https://mp.weixin.qq.com/s/n4iqEWPfrok91b692nFTJw)
 
 - [Impeccable Frontend Design Skill Harness Vibecoder](../ch05/001-impeccable.html)
 ## 深度分析

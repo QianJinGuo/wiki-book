@@ -52,7 +52,7 @@ ARA 类工作推动的是整个研究工具链的演进——从文献搜索到�
 - [Gaode Ai Native 7X24 Pipeline Self Healing](../ch05/018-ai-native.html)
 - [Deeppotential Alibabacloud Agentrun Scientific Ai](290-agentrun.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ara-agent-native-research-artifact-37authors.md)
+→ [原文存档](https://mp.weixin.qq.com/s/3Nt_S1xweNOs4YlOzf1LRA)
 
 - [pithtrain：陈天奇 + cmu flame center 推出的 agent-native moe 训练框架（1](../ch03/004-agent.html)
 
@@ -208,7 +208,7 @@ ARA 本身是结构化的 — "超参数有没有报告""这个 claim 有没有 
 - 智能在整个网络上复利叠加，而不是困死在单个上下文窗口里
 - 人类的角色上升三层：定义目标/认知锚定/守住数字与物理的防火墙
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-for-science-second-half-ara-amber-jiachen-liu-2026.md)
+→ [原文存档](http://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247721384&idx=1&sn=0ce5dd283c6fd4a6562c6e8740d6d5a0&chksm=96e5be28a192373efd62b75554ddc8cc8e88c283ea19c9572721e8d03f1f7d0570670b35cb59#rd)
 
 ---
 

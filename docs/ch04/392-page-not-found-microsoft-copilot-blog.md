@@ -13,7 +13,7 @@
 - [要实现一个工作流选择 Agent Skills 还是 Ai 表格](302-agent-skills.html)
 - [Garry Tan Yc Ceo](https://github.com/QianJinGuo/wiki-public/blob/main/entities/garry-tan-yc-ceo.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/new-and-improved-agent-governance-intelligent-workflows-connected-app-exp.md)
+→ [原文存档](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/new-and-improved-agent-governance-intelligent-workflows-connected-app-exp/)
 
 ## 深度分析
 

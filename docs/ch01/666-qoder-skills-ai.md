@@ -4,7 +4,7 @@
 
 # Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qoder-skills-完全指南从零开始让-ai-按你的标准执行.md)
+→ [原文存档](https://mp.weixin.qq.com/s/PG-rXJllhrtynAfNZn5asg)
 
 ## 深度分析
 

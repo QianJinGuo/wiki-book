@@ -4,7 +4,7 @@
 
 # Task Queue Priority and Fairness: Your Task Queue, Your Way
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/task-queue-priority-and-fairness-your-task-queue.md)
+→ [原文存档](https://temporal.io/blog/task-queue-priority-and-fairness-your-task-queue-your-way)
 
 ## 摘要
 

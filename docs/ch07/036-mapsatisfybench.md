@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 9.2KB | `entities/mapsatisfybench-map-agent-satisfaction-eval-gaode-pku.md`
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mapsatisfybench-map-agent-satisfaction-eval-gaode-pku-2026-06-18.md)
+> 原文存档：[原文存档](https://mp.weixin.qq.com/s/HNQFGzcRkB16ZbdvF7op9g)
 
 # MapSatisfyBench：从"任务完成"到"满意度感知"的 Agent 评测范式转移
 
@@ -109,7 +109,7 @@
 - **思考模式是"补课"而非"满分"**：推理链能补全部分隐式因素，但不能替代主动证据获取能力的系统性提升
 - **地图交互是 Agent 评测的理想试验场**：多解、强情境依赖、隐式需求丰富——比封闭域任务更能暴露 Agent 的真实能力边界
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mapsatisfybench-map-agent-satisfaction-eval-gaode-pku-2026-06-18.md)
+→ [原文存档](https://mp.weixin.qq.com/s/HNQFGzcRkB16ZbdvF7op9g)
 
 ---
 

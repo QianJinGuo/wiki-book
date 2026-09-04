@@ -188,7 +188,7 @@ Small Hermes的经验：**50个技能下不需要向量数据库**，token overl
 | 微调即进化 | 数据质量不可控、灾难性遗忘、不可审计、不可逆 | 显式知识沉淀（Skill/Memory）更可控 |
 | 忽视组合 | 循环依赖导致意想不到的副作用 | 最小接口+单向数据流约束 |
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/small-hermes-self-evolving-agent-architecture.md)
+→ [原文存档](https://mp.weixin.qq.com/s/DUupcx6ztDwNiedilbRWHg)
 
 ---
 

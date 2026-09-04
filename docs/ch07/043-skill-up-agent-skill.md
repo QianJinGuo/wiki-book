@@ -173,7 +173,7 @@ skill-up run eval.yaml --retry-failed
 - [SWE-bench Agent 评估方法论](../ch03/004-agent.html) — 软件工程 Agent 评测基准方法论
 - [SkillScan：智能体技能安全扫描](../ch01/284-agent-skill.html) — 技能安全扫描与 skill-up 的质量验证相辅相成
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/alibaba-skill-up-agent-skill-evaluation-cli-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/Sel2LR3YJhVuVNqzNDgR9A)
 
 ---
 

@@ -53,7 +53,7 @@
 
 ## Source
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/wi-fi-flies-higher-as-edge-ai-build-out-takes-root-semiengineering-2026.md)
+→ [原文存档](https://semiengineering.com/wi-fi-flies-higher-as-edge-ai-build-out-takes-root/)
 
 ---
 ## 关联

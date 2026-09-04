@@ -12,7 +12,7 @@
 - [知识库问答 @文档：从 dom 方案到 prosemirror 落地](https://github.com/QianJinGuo/wiki-public/blob/main/entities/prosemirror-knowledge-base-mention-vivo.md)
 - [valkey 为什么这么快？盘点 valkey 中提升性能的黑科技](https://github.com/QianJinGuo/wiki-public/blob/main/entities/valkey-why-valkey-performance.md)
 - [zapocalypse: the attack chain that could have hijacked zapie](../ch11/193-zapocalypse-the-attack-chain-that-could-have-hijacked-zapie.html)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/构建无服务器kiro调度平台用kiro-cli-eventbridge-ecs-fargate实现定时ai任务.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/platform-kiro-cli-eventbridge-ecs-fargate-implement-ai-task)
 
 ## 深度分析
 

@@ -4,7 +4,7 @@
 
 # Loongsuite Pilot Sls Ai Coding Metrics Practice
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loongsuite-pilot-sls-ai-coding-metrics-practice.md)
+→ [原文存档](https://mp.weixin.qq.com/s/SEOGc3KIGm7eFpyUK6nR4g)
 
 ## 深度分析
 

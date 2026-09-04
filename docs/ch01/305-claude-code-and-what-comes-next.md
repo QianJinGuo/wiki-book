@@ -4,7 +4,7 @@
 
 # Claude Code and What Comes Next
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-and-what-comes-next.md)
+→ [原文存档](https://www.oneusefulthing.org/p/claude-code-and-what-comes-next)
 
 ## 摘要
 

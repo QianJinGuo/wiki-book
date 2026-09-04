@@ -62,4 +62,7 @@ if [ -f "docs/_headers" ]; then
   echo "Copied _headers to site/"
 fi
 
+echo "=== Checking public build boundary ==="
+node scripts/check-public-build.mjs --source "$PROJECT_DIR" --site "$PROJECT_DIR/site"
+
 echo "=== Build complete ==="

@@ -15,7 +15,7 @@ AI 智能体 = SOTA 模型（野马）+ Harness（控制系统）= 卓越执行�
 - [Fudan Agentic Harness Engineering Ahe Gpt54 7Points](../ch05/057-harness-engineering.html)
 - [Harness Engineering Long Term Agent Tasks](../ch05/057-harness-engineering.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/bytedance-trae-harness-engineering-guide.md)
+→ [原文存档](https://mp.weixin.qq.com/s/xBNtHjseMomMA-aOQyOrJg)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/openai-developer-ecosystem.md)
 ## 深度分析
@@ -70,7 +70,7 @@ AI 智能体 = SOTA 模型（野马）+ Harness（控制系统）= 卓越执行�
 
 v×c=49。我们实测TRAE Work的这份攻略，被官方收进知识库了
 
-> → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/我们实测trae-work的这份攻略被官方收进知识库了.md)
+> → [原文存档](https://mp.weixin.qq.com/s/_jweSZTFW0zs2nSsFF7Ang)
 
 ---
 

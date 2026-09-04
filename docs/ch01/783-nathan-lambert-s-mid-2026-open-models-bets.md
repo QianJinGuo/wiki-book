@@ -126,7 +126,7 @@ Lambert 的预测再次确认中国实验室在开源模型领域的领先地位
 
 > "Local agents, OpenClaw, and other personal agents represent a large, to date, mostly ignored market for open model usage. It is a sort of dark matter, with pervasive, massive potential for influence on the balance of open-to-closed models."
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/my-bets-on-open-models-mid-2026.md)
+→ [原文存档](https://www.interconnects.ai/p/my-bets-on-open-models-mid-2026)
 
 ---
 

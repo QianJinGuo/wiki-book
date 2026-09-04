@@ -217,13 +217,13 @@ Hermes 选择简单 while 循环而非状态机，因为状态机需要预先定
 - [Hermes Observability Aliyun](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-observability-aliyun.md)
 - [Gateway Architecture Openclaw Claude Hermes Comparison](176-openclaw.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-loop-source-code-anatomy.md)
+→ [原文存档](https://mp.weixin.qq.com/s/WZFHvVCil9GkQ-oTclS_Tw)
 
 ---
 
 ## 第 2 来源 — 微信公众号「烟花星空 AI」"Hermes Agent 内部的 8 个 Loop" (2026-06-12)
 
-> Source: [第2原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-8-loops-compound-interest-yanxbt-2026-06-12.md)
+> Source: [第2原文存档](https://mp.weixin.qq.com/s/bqitaR8wmKYEGpZTSxIr9w)
 > Author: YanXbt (烟花星空 AI)
 > Original: https://x.com/IBuzovskyi/status/2064377155476193362
 > Date: 2026-06-12 09:53
@@ -337,7 +337,7 @@ Hermes 选择简单 while 循环而非状态机，因为状态机需要预先定
 - **4 类 taxonomy 是设计 checklist**: Retry/Reflection/Memory/Skill + Orchestration,任何一个缺失都是能力短板
 - **复利需要测量**: TokenMix 40% 提速是 Loop 复利效应的"可量化证据",应作为 Loop 系统的标准度量
 
-→ 与 [第2原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-8-loops-compound-interest-yanxbt-2026-06-12.md) 互补阅读 — 本篇是 Hermes 8 Loop 的"完整分解"
+→ 与 [第2原文存档](https://mp.weixin.qq.com/s/bqitaR8wmKYEGpZTSxIr9w) 互补阅读 — 本篇是 Hermes 8 Loop 的"完整分解"
 
 ---
 

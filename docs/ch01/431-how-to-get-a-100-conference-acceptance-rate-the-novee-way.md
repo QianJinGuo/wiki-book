@@ -68,7 +68,7 @@ _De
 - [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](https://github.com/QianJinGuo/wiki-public/blob/main/entities/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md)
 - [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](../ch04/383-amazon-bedrock-agentcore.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/novee-security-how-to-get-a-100-conference-acceptance-rate-the-no.md)
+→ [原文存档](https://novee.security/blog/pretalx-stored-xss-vulnerability-account-takeover/)
 
 ## 相关主题
 

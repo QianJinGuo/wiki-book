@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 9.0KB | `entities/ai-infra-auto-driven-skills-v0-bbuf-giantpanda.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-infra-auto-driven-skills-v0-bbuf-giantpanda.md)
+> -> [原文存档](https://mp.weixin.qq.com/s/DSMMP9sA5ngHh0nRoBwfIg)
 
 # AI-Infra-Auto-Driven-SKILLS：推理框架工作流编码
 

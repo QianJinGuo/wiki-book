@@ -209,7 +209,7 @@ LLM Agent 调用导航工具来完成路线规划是当下最现实的一条路�
 
 ---
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gaode-mobilitybench-transitlm-dual-route-2026-06-16.md)
+→ [原文存档](https://mp.weixin.qq.com/s/yTGfgsTp2x75EJpDdpRVcQ)
 
 ---
 

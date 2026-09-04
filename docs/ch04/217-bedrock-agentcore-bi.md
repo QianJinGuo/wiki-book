@@ -15,7 +15,7 @@
 - [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](../ch11/135-amazon-bedrock.html)
 - [Break The Context Window Barrier With Amazon Bedrock Agentcore](383-amazon-bedrock-agentcore.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-ai-agents-for-business-intelligence-with-amazon-bedrock-agentcore.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/build-ai-agents-for-business-intelligence-with-amazon-bedrock-agentcore/)
 
 ---
 
@@ -135,7 +135,7 @@ OPLOG 强调的"仅为实际执行付费"模式，结合 Serverless 自动扩缩
 
 ## 关联阅读
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-ai-agents-for-business-intelligence-with-amazon-bedrock-agentcore.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/build-ai-agents-for-business-intelligence-with-amazon-bedrock-agentcore/)
 
 ## 相关实体
 - Bedrock多Agent协作 — AWS上的多Agent架构实践

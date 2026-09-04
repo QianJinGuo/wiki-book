@@ -4,7 +4,7 @@
 
 # DeepSeek陈德里AI论文第二弹：从6分到8分，DeliAutoResearch SKILL又进化了
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deli-auto-research-skill-v2-continual-learning-self-improvement.md)
+→ [原文存档](https://mp.weixin.qq.com/s/g42Tchq89GVN7D35BVLqMA)
 
 ## 深度分析
 

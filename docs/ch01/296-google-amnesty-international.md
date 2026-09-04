@@ -2,14 +2,14 @@
 
 > 📊 Level ⭐⭐ | 11.0KB | `entities/google-amnesty-spyware-detection.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/google-amnesty-spyware-detection.md)
+> -> [原文存档](https://cyberscoop.com/google-android-intrusion-logging-amnesty-spyware-detection/)
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/google-amnesty-spyware-detection.md)
+> 来源：[原文存档](https://cyberscoop.com/google-android-intrusion-logging-amnesty-spyware-detection/)
 
 ## 核心要点
 - value=9, confidence=8, product=72
 - Well-sourced expert article
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/google-amnesty-spyware-detection.md)
+→ [原文存档](https://cyberscoop.com/google-android-intrusion-logging-amnesty-spyware-detection/)
 
 ## 相关实体
 - [Google and Amnesty International teamed up to make Android spyware detectable](../ch12/066-google-and-amnesty-international-teamed-up-to-make-android-s.html)
@@ -70,7 +70,7 @@ Intrusion Logging 的推出对商业 spyware 生态构成了实质性压力：
 
 -  — 同一合作的不同切入角度
 -  — 同一新闻事件的平行存档
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/google-amnesty-spyware-detection.md) — CyberScoop 记者 Tim Starks 报道，2026-05-12 发布
+- [原文存档](https://cyberscoop.com/google-android-intrusion-logging-amnesty-spyware-detection/) — CyberScoop 记者 Tim Starks 报道，2026-05-12 发布
 
 ## 扩展阅读：商业间谍软件生态详解
 

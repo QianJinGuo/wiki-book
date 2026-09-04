@@ -4,7 +4,7 @@
 
 # Harness Engineering Deletable Worksite Ruofei
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-deletable-worksite-ruofei.md)
+→ [原文存档](https://mp.weixin.qq.com/s/y1pIKtBFr5BrN3f7VOypWw)
 
 ## 摘要
 

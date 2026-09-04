@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 7.8KB | `entities/darwin-skill-2-huashu.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/darwin-skill-2-huashu.md)
+> -> [原文存档](https://mp.weixin.qq.com/s/54pkSBImnc9mhEdOPf7EZw)
 
 # 达尔文.skill 2.0：Skill 自我进化优化器
 

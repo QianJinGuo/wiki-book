@@ -127,7 +127,7 @@ Dynamic Workflows 消耗更多 token——多个 subagent 各有独立上下文�
 - [Meta Skill](../ch07/024-meta-skill.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-dynamic-workflows-thariq-practical-patterns.md)
+→ [原文存档](https://mp.weixin.qq.com/s/1eSGt71P-PeaGszs2cikTw)
 
 ---
 

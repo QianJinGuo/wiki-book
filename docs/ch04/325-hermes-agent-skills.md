@@ -19,7 +19,7 @@ Hermes Agent 的 Skills 闭环系统实现了"经验提取→知识存储→智�
 - [Agent Skills Teams Architecture Evolution Selection Guide](199-agent-skills-teams.html)
 - [Hermes Agent K2 6 Multi Agent](161-hermes-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-skill-system-deep-dive.md)
+→ [原文存档](https://mp.weixin.qq.com/s/yHva-zLaRTxe8b4HSUr86Q)
 
 ## 深度分析
 

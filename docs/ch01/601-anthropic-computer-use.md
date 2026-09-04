@@ -45,7 +45,7 @@ Anthropic 发布的这份最佳实践揭示了 Computer Use 技术落地的几�
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](229-anthropic-claude-code.html)
 - [From Prompt To Harness Claude Official](../ch05/008-harness.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-computer-use-best-practices.md)
+→ [原文存档](https://mp.weixin.qq.com/s/yNRNHiu2s8GAUcrAfZZLPA)
 
 ---
 

@@ -52,7 +52,7 @@
 - LLM 评估基准全景
 - [Rag技术框架的演进方向](168-rag.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/model-half-life-aifoc.md)
+→ [原文存档](https://aifoc.us/model-half-life/)
 
 ---
 

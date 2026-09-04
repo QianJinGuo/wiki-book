@@ -7,7 +7,7 @@
 ## 相关实体
 
 - [anthropic 最新播客：如何打造下一代 claude](340-claude.html)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-context-engineering-anthropic-thariq.md)
+→ [原文存档](https://mp.weixin.qq.com/s/MGvMU0NENSV3cp4crUZnfA)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/memory-context-systems.md)
 ## 深度分析
@@ -50,7 +50,7 @@ Thariq（Anthropic Claude Code 团队）2026 年 7 月发表新文章《The new 
 
 **关键方法论启发**：每条 prompt 问"善意的人会怎么误解这句话"；删除不等于扔掉，是挪到用时才读的位置（渐进披露的核心）；模型能力决定领导风格——情境领导框架可用于理解不同代模型所需的提示词密度差异。
 
-→ [第 2 来源原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-80-prompt-trim-thariq-context-engineering-2026.md)
+→ [第 2 来源原文存档](https://mp.weixin.qq.com/s/DnbnMaG2MfVMLcm7zymEmQ)
 
 ## 第 3 来源 — AI寒武纪：爆删 80% 系统提示词（Claude 5 上下文工程中文传播版）
 
@@ -64,7 +64,7 @@ Thariq（Anthropic Claude Code 团队）2026 年 7 月发表新文章《The new 
 - **评分标准（rubrics）作为引用形式**：动态工作流派出带评分标准的验证 agent 打分，用于传达审美判断（什么样的 API 设计算好）
 - **渐进披露延伸到工具与文件树**：Task 类工具延迟加载（ToolSearch 搜出完整定义才用），CLAUDE.md/Skill.md 应做成文件树而非总仓库
 
-→ [第 3 来源原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-5-context-engineering-80pct-trim-aihanwuji-2026.md)
+→ [第 3 来源原文存档](https://mp.weixin.qq.com/s/R1bbNTfL9gcz_fE3nPG-iA)
 
 ---
 

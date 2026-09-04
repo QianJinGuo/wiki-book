@@ -12,7 +12,7 @@
 - [Code Simulation For Enterprise Engineering Playerz](057-code-simulation-for-enterprise-engineering-playerzero.html)
 - [Microsoft Is Quietly Shopping For An Openai Replac](033-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/Thrive-Capital-Bets-100-Million-on-Shopifys-AI-Future.md)
+→ [原文存档](https://www.pymnts.com/news/ecommerce/2026/thrive-capital-bets-100-million-on-shopifys-ai-future/)
 
 ## 深度分析
 ### Thrive Capital 的投资逻辑

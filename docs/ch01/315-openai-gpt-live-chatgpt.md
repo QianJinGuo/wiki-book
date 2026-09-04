@@ -4,7 +4,6 @@
 
 # OpenAI深夜放出GPT-Live，ChatGPT终于像真人一样说话
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai深夜放出gpt-livechatgpt终于像真人一样说话.md)
 
 # OpenAI深夜放出GPT-Live，ChatGPT终于像真人一样说话
 
@@ -298,7 +297,7 @@ OpenAI深夜放出GPT-Live，ChatGPT终于像真人一样说话
 
 ## 第 2 来源 — SWE-Bench Pro 审计 (AI寒武纪, 2026-07-08)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-gpt-live-voice-model-swe-bench-pro-audit-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/CQyZWFslGdU7Hz3icOFzNA)
 
 AI寒武纪文章补充了 GPT-Live 的架构细节和 SWE-Bench Pro 审计。
 

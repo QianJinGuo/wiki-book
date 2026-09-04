@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐⭐ | 47.1KB | `entities/subagents-详解claude-code-如何避免上下文污染.md`
 
-[Subagents 详解Claude Code 如何避免上下文污染](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/subagents-详解claude-code-如何避免上下文污染.md)
+[Subagents 详解Claude Code 如何避免上下文污染](https://mp.weixin.qq.com/s/qy_zaCZTCs1Ql3BIFmBMgg)
 
 架构师（JiaGouX）  我们都是架构师！
 架构未来，你来不来？

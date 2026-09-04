@@ -54,7 +54,7 @@ Dockerless 占据「免环境 + 有仓库 grounding」的独特生态位。
 - [SWE-bench Agent 评测](../ch03/004-agent.html)
 - [Generator-Evaluator Harness](../ch05/008-harness.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/dockerless-environment-free-verifier-coding-agent-arxiv-2606-28436.md)
+→ [原文存档](https://mp.weixin.qq.com/s/940okCms5A4PdJEdrh2Gtg)
 
 ---
 

@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 15.8KB | `entities/production-harness-12-components-framework-comparison.md`
 
-[Production Harness 12 Components Framework Comparison](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/production-harness-12-components-framework-comparison.md)
+[Production Harness 12 Components Framework Comparison](https://mp.weixin.qq.com/s/UwG0mEzQ0Mk7DYjPS3PFqQ)
 
 ## 1. 为什么问题通常不在模型
 Demo 级 chatbot 没问题，但一进入生产环境：模型忘掉三步之前做了什么，tool call 失败了没人知道，上下文窗口被噪声塞满。

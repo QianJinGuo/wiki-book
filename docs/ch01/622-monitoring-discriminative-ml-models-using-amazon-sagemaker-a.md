@@ -4,7 +4,7 @@
 
 # Monitoring discriminative ML models using Amazon SageMaker AI with MLflow
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/monitoring-discriminative-ml-models-using-amazon-sagemaker-a.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/monitoring-discriminative-ml-models-using-amazon-sagemaker-ai-with-mlflow)
 
 # Monitoring discriminative ML models using Amazon SageMaker AI with MLflow
 

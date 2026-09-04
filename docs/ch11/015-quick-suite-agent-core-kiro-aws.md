@@ -202,7 +202,7 @@ MCP 作为 AI 模型与外部工具的标准化连接协议，在本案例中展
 - [使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊 AWS 官方博客](../ch03/004-agent.html)
 - [把 Kiro CLI 当作 Agent SDK：一键订阅即可构建你的 Agent 应用 | 亚马逊 AWS 官方博客](../ch03/004-agent.html)
 - [Amazon Bedrock AgentCore + Quick Suite 构建 AI Analytics](../ch04/383-amazon-bedrock-agentcore.html)
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/quick-suite-agent-core-kiro-logistics-quote-assistant.md)
+- [原文存档](https://aws.amazon.com/cn/blogs/china/quick-suite-agent-core-kiro-logistics-quote-assistant/)
 
 ---
 

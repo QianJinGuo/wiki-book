@@ -4,7 +4,7 @@
 
 # 当 Agentic AI 重塑生产关系：智能体浪潮下的企业战略与行动框架
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/当-agentic-ai-重塑生产关系-智能体浪潮下的企业战略与行动框架.md)
+> 原文存档：[原文存档](https://aws.amazon.com/cn/blogs/china/agentic-ai-intelligent-enterprise-framework)
 
 ## 核心叙事
 
@@ -148,7 +148,7 @@ AWS China Blog（2026-06-12）从**经济学经典命题"生产力决定生产�
 
 ## 原文链接
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/当-agentic-ai-重塑生产关系-智能体浪潮下的企业战略与行动框架.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/agentic-ai-intelligent-enterprise-framework)
 
 ## 深度分析
 

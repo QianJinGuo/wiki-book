@@ -35,7 +35,7 @@ AI 生成代码 → AI 自动审查 → 人类重点审查——三层审查模�
 - Investing In Stitch
 - [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/running-an-ai-native-engineering-org.md)
+→ [原文存档](https://claude.com/blog/running-an-ai-native-engineering-org)
 
 ## 摘要
 

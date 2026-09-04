@@ -37,7 +37,7 @@ This system card is a detailed report of the work we did to understand and mitig
 - **Prompt Caching**：新增显式 cache breakpoints，最低 30 分钟缓存生命周期。
 - **官方矛盾**：OpenAI 公告称“仅对政府批准合作伙伴开放”，但 48 小时后土耳其 Plus 用户在 Codex 中可用。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gpt-5-6-偷偷灰度-codex提前用上-夕小瑶-2026-07-04.md)
+→ [原文存档](http://mp.weixin.qq.com/s?__biz=MzIwNzc2NTk0NQ==&mid=2247617980&idx=1&sn=35010f7c1b87d21e8cf519b79148f80e&chksm=970e256aa079ac7caec487f480c089f545605c85b537220edf9b4b8bb89bf25d48da504bff42#rd)
 
 ## 第 3 来源 — AGI Hunt：GPT-5.6 正式发布 10 个重点
 
@@ -49,7 +49,7 @@ This system card is a detailed report of the work we did to understand and mitig
 - **设计判断力提升**：能用 computer use 自主查看渲染页面/幻灯片，修完视觉问题再交付；可根据参考幻灯片推断整套设计系统制作新内容。
 - **访问方式**：ChatGPT Plus 及以上可用 Sol（effort medium+），Pro/企业版可选 Sol Pro；ChatGPT Work 和 Codex 免费用户可用 Terra。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gpt-56-发布需要了解的-10-个重点.md)
+→ [原文存档](https://mp.weixin.qq.com/s/uOUZbw32FCQphKjdS9uBMQ)
 
 ## 第 4 来源 — 夕小瑶科技说：实测 GPT-5.6 跑分赢了却输给了 Fable 5
 
@@ -60,7 +60,7 @@ This system card is a detailed report of the work we did to understand and mitig
 - **跑分 vs 体验**：GPT-5.6 Sol 在标准 benchmark 上领先 Fable 5（如 Terminal-Bench、SWE-bench），但在实际复杂编程任务上体验不如 Fable 5。
 - **争议性对比**：社区评价 GPT-5.6 跑分高但实际使用存在"perf 赢麻了、app 输惨了"的观感。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/实测gpt-56跑分赢了却输给了fable-5.md)
+→ [原文存档](https://mp.weixin.qq.com/s/MwKr0GnvXgeAmSWbin_--A)
 
 ---
 ## 关联

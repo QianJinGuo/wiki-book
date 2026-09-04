@@ -111,7 +111,7 @@ LLM 的输入本质上是一个**单一的、连续的文本流**。这与人类
 
 ## 参考
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/role-confusion-github-io.md)
+→ [原文存档](https://role-confusion.github.io/)
 Simon Willison 也对此做了评论分析，确认了该框架的重要性。
 
 ---

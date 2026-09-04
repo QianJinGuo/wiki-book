@@ -54,7 +54,7 @@ metadata:
   namespace: ml-team
 spec:
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/building-modelplane.md)
+→ [原文存档](https://blog.crossplane.io/building-modelplane/)
 
 ---
 ## 关联

@@ -113,7 +113,7 @@ FY26 Q4 数据显示 AI 收入占比首破 30%、年化 AI 收入 358 亿，这�
 - [Agent 从能用到管好中间差了什么](../ch03/004-agent.html)
 - [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](302-agent-skills.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/alibaba-agentic-cloud.md)
+→ [原文存档](https://mp.weixin.qq.com/s/zYvl-XjdcW2Sx2XDNGJ2mQ)
 
 ---
 

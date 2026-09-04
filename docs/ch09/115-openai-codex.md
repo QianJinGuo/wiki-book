@@ -4,7 +4,7 @@
 
 # OpenAI大神教你如何榨干Codex
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-codex-jasonliu-maxxing-playbook.md)
+→ [原文存档](https://mp.weixin.qq.com/s/sUdAmzf5ymUMBxWKFVxnwg)
 
 ## 深度分析
 

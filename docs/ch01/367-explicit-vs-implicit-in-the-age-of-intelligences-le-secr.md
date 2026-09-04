@@ -12,7 +12,7 @@ Explicit vs. Implicit in the Age of Intelligences — Le secrétaire de Fernand 
 - [Protocol H Hierarchical Agentic Rag Enterprise](../ch03/004-agent.html)
 - [How Ai Agent Memory Works](../ch04/131-how-ai-agent-memory-works.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lesecretairedefernand-co-en-tech-explicit-vs-implicit-in-the-age-of-intelligence.md)
+→ [原文存档](https://www.lesecretairedefernand.co/en/tech/explicit-vs-implicit-in-the-age-of-intelligences/)
 
 ## 深度分析
 

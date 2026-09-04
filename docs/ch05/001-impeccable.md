@@ -7,7 +7,7 @@
 
 `pbakaus/impeccable` 是当前规模最大的 **AI 前端设计 skill 项目**（截至 2026-06-04：**34,108 ⭐**，Apache-2.0，主语言 JavaScript）。它把"前端设计经验"打包成可安装的 skill，配合 23 个命令、41 条确定性检测规则、CLI、Chrome 扩展和 live 浏览器变体模式。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/impeccable-frontend-design-skill-harness-vibecoder.md)
+→ [原文存档](https://mp.weixin.qq.com/s/zbXBK9EpsGEqPNS0f6b7Cw)
 
 ## 它解决的问题
 AI 编码助手做前端时，代码能跑只是第一步——更麻烦的是页面会"一眼看出 AI 味"：
@@ -113,7 +113,7 @@ npx impeccable detect --json .
 
 ## Anomaly 创始人的外部印证：6 大 AI 前端失败类别
 
-[Anomaly Innovations 创始人](https://raw/articles/impeccable-anomaly-vibe-design-vs-vibe-coding)（37 年设计经验）在评论 Impeccable 时提出 **6 大 AI 前端失败类别**——这 6 类与本项目 41 条检测规则**高度重合**，印证了"经验分类 ≈ 规则集"的同构关系：
+[Anomaly Innovations 创始人](https://mp.weixin.qq.com/s/4_9q9TrkVyE5a4jCfTrNgg)（37 年设计经验）在评论 Impeccable 时提出 **6 大 AI 前端失败类别**——这 6 类与本项目 41 条检测规则**高度重合**，印证了"经验分类 ≈ 规则集"的同构关系：
 
 | 失败类别 | 典型问题 | 对应 Impeccable 检测器 |
 |---|---|---|

@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 10.7KB | `entities/qoder-skill-ui-agent-human-collaboration.md`
 
-[Qoder Skill Ui Agent Human Collaboration](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qoder-skill-ui-agent-human-collaboration.md)
+[Qoder Skill Ui Agent Human Collaboration](https://mp.weixin.qq.com/s/_jPzZKh9kSbVwOj1khMKLg)
 
 ## 核心论点：软件「双形态」重构
 **不是 GUI 替代 CLI，而是各归其位：**

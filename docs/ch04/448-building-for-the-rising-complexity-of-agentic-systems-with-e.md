@@ -173,7 +173,7 @@ NVIDIA 的 Extreme Co-Design 强调 Vera CPU 承担「长上下文检索操作�
 - [Break The Context Window Barrier With Amazon Bedrock Agentcore](383-amazon-bedrock-agentcore.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-agentic-systems-extreme-co-design.md)
+→ [原文存档](https://developer.nvidia.com/blog/building-for-the-rising-complexity-of-agentic-systems-with-extreme-co-design/)
 
 ---
 

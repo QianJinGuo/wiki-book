@@ -14,7 +14,7 @@
 - [Harness Engineering Reliable Long Term Agent](057-harness-engineering.html)
 - [Harness Engineering Long Term Agent Tasks](057-harness-engineering.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-cdn-lego-harness-engineering.md)
+→ [原文存档](https://mp.weixin.qq.com/s/VJgVPeJ5GZhVwbRtneEk_Q)
 
 ## 深度分析
 

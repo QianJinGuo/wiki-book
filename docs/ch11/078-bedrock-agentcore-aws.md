@@ -54,7 +54,7 @@ Amazon Bedrock AgentCore、Strands Agent SDK、OpenClaw、MCP Server
 **多账户场景需要统一视图**：对于使用AWS Organizations的企业，Payer账户的统一视图能力是实现全局成本管理的关键。本系统的多账户成本聚合工具提供了账户级别的成本排名和趋势分析。
 **定时监控应设置合理的告警阈值**：系统通过"过去7天"的查询周期设计，平衡了检测及时性和准确性。实际部署时需要根据业务特点调整时间窗口和告警阈值。
 **CI/CD集成可进一步提升效率**：代码仓库提供了完整的部署脚本(deploy.py)，支持镜像打包和Agent推送，便于纳入现有的DevOps流程。
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/intelligent-cost-analysis-and-alerting-system-powered-by-bedrock-agentcore.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/intelligent-cost-analysis-and-alerting-system-powered-by-bedrock-agentcore/)
 
 ## 来源
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/intelligent-cost-analysis-and-alerting-system-powered-by-bedrock-agentcore/)
@@ -66,7 +66,7 @@ Amazon Bedrock AgentCore、Strands Agent SDK、OpenClaw、MCP Server
 - [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](../ch04/383-amazon-bedrock-agentcore.html)
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/310-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-custom-code-based-evaluators-in-amazon-bedrock-agentco.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/build/custom/code/based/evaluators/in/amazon/bedrock/agentco.html)
 
 - [AgentCore质量优化飞轮：推荐-验证-部署闭环](045-bedrock-agentcore.html)
 

@@ -7,7 +7,7 @@
 ## 相关实体
 
 - [我把 karpathy 的 autoresearch 搬到了软件开发领域，效果炸了](672-karpathy-autoresearch.html)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/imclaw通过微信飞书操控claudecodecodexgeminiclipi-agent蜂群.md)
+→ [原文存档](https://mp.weixin.qq.com/s/UkAX2bA0QIDFQya-F5W5DQ)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/reinforcement-learning-rlhf.md)
 ## 深度分析

@@ -75,7 +75,7 @@ PACE 的最实际价值在于改变了 Agent 开发的迭代节奏：
 - GitHub: https://github.com/neulab/pace
 - 数据集: https://huggingface.co/datasets/neulab/pace-bench
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cmu-pace-proxy-agent-evaluation-cheap.md)
+→ [原文存档](https://mp.weixin.qq.com/s/mg-ZLhNlwJ7kg8poBFvodw)
 
 ---
 

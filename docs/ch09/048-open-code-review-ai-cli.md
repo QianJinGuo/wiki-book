@@ -97,7 +97,7 @@ Open Code Review 的关键创新是**反思模型（Reflection Model）**：利�
 
 ## 参考来源
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ali-open-code-review-cli-tool.md)
+→ [原文存档](https://mp.weixin.qq.com/s/WSicyyMEIXnNVDoWuz0jrw)
 
 ## 第 2 来源 — 连续五天登上 GitHub Trending 首页的思考（阿里技术 2026-08-11）
 

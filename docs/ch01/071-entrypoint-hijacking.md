@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐ | 7.4KB | `entities/entrypointhijacking.md`
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/entrypointhijacking.md)
+→ [原文存档](https://ipurple.team/2026/05/13/entrypoint-hijacking/)
 
 ## 摘要
 EntryPoint Hijacking（入口点劫持）是一种不依赖任何线程创建 API 的隐蔽代码注入技术：攻击者将恶意代码写入目标进程内存后并不立即执行，而是篡改某个已加载 DLL 的 EntryPoint 属性，等待进程"合法"创建新线程时由 Windows 加载器自动触发。由于整条攻击链不调用 CreateRemoteThread 等常见恶意 API，且 EntryPoint 在触发后会迅速恢复，该技术能有效规避 EDR 检测并延长驻留时间。

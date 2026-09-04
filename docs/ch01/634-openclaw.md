@@ -4,7 +4,7 @@
 
 # 龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验-v2.md)
+→ [原文存档](https://mp.weixin.qq.com/s/RpR14rInw0ZWh4PFLPD1QA)
 
 ## 深度分析
 

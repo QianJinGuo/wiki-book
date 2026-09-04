@@ -4,7 +4,7 @@
 
 # 不止是GPT-5.6！Codex正式上位替换ChatGPT
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/不止是gpt-56codex正式上位替换chatgpt.md)
+→ [原文存档](https://mp.weixin.qq.com/s/ZS93ELLYH4zyfeFu8jPJRw)
 
 # 不止是GPT-5.6！Codex正式上位替换ChatGPT
 

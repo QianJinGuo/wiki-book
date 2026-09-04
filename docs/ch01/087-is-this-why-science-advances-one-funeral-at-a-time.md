@@ -4,7 +4,7 @@
 
 # Is This Why Science Advances One Funeral at a Time?
 
-> → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/is-this-why-science-advances-one-funeral-at.md)
+> → [原文存档](https://nautil.us/is-this-why-science-advances-one-funeral-at-a-time-1280650)
 
 ## 摘要
 

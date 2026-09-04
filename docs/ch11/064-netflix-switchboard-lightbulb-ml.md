@@ -4,7 +4,7 @@
 
 # Netflix Switchboard → Lightbulb: 百万请求/秒 ML 模型路由架构演进
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/state-of-routing-in-model-serving.md)
+> 原文存档：[原文存档](https://netflixtechblog.com/state-of-routing-in-model-serving-16e22fe18741?source=rss----2615bd06b42e---4)
 
 > **Core insight**: Netflix ML serving 的核心挑战是区分 model serving（端到端工作流执行）和 model inference（单一 scoring 函数），Switchboard 作为强制入口点处理 1M req/s 的上下文感知路由，但引入单点和延迟问题，最终演化为 Lightbulb（将路由元数据与实际请求路径解耦）+ Envoy 代理。
 
@@ -93,7 +93,7 @@ OpenAI 的 auto 模式也做模型路由，但规则不透明且偏向成本优�
 
 ## 相关引用
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/state-of-routing-in-model-serving.md)
+→ [原文存档](https://netflixtechblog.com/state-of-routing-in-model-serving-16e22fe18741?source=rss----2615bd06b42e---4)
 
 ---
 

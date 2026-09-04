@@ -4,7 +4,7 @@
 
 # GLM-5.2 is the step change for open agents
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/glm-52-is-the-step-change-for-open-agents.md)
+→ [原文存档](https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open)
 
 # GLM-5.2 is the step change for open agents
 

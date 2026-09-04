@@ -4,7 +4,7 @@
 
 # The Future of BMW Design: A Conversation with Max Missoni
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-future-of-bmw-design-a-conversation-with-max-missoni.md)
+> 来源：[原文存档](https://coolhunting.com/design/the-future-of-bmw-design-a-conversation-with-max-missoni/)
 
 ## 核心要点
 
@@ -20,7 +20,7 @@
 - [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch04/257-ai.html)
 - [From Doer To Director The Ai Mindset Shift](029-from-doer-to-director-the-ai-mindset-shift.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-future-of-bmw-design-a-conversation-with-max-missoni.md)
+→ [原文存档](https://coolhunting.com/design/the-future-of-bmw-design-a-conversation-with-max-missoni/)
 
 ## 深度分析
 

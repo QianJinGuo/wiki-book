@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 10.9KB | `entities/noam-brown-ai-evaluation-reasoning-budget-performance-cost-curve.md`
 
-> 原文归档：[原文归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/noam-brown-ai-evaluation-reasoning-budget-performance-cost-curve.md)
+> 原文归档：[原文归档](https://mp.weixin.qq.com/s/zHiPUI6oCTRxPr3JqYhidg)
 
 OpenAI 研究员 Noam Brown 提出的评估方法论：大模型表现不仅取决于模型本身，也越来越取决于推理阶段获得的计算资源。未来评估应从"单点成绩"转向"性能—推理计算量曲线"，将推理预算视为模型能力评估和 AI 安全政策中的基础变量。
 

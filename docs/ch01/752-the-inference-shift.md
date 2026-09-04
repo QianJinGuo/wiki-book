@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐⭐ | 12.3KB | `entities/the-inference-shift.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-inference-shift.md)
+> -> [原文存档](https://stratechery.com/2026/the-inference-shift/)
 
 ## Summary
 > Score: 8×7=56

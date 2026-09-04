@@ -4,7 +4,7 @@
 
 # 鹅厂 Skill 写作完整 Playbook：14 章节 end-to-end 实战 + 工程化评估
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-skill-writing-complete-playbook-jackjchou.md)
+> 原文存档：[原文存档](https://mp.weixin.qq.com/s/SZv3pDXPrL9vwV3Ua_84Kg)
 
 腾讯 jackjchou（2026-06-05）发布 **14 章节完整 Skill 写作 Playbook**——鹅厂一线团队踩坑经验 + Anthropic 官方做法整合。覆盖**从 0 入门到调试排错到团队管理**全流程，提供**5 大评估指标**（触发准确率 90% / 误报 5% / 一致性 85% / Token -30% / 完成 80%）和**Skill Creator 工程化评估 3 阶段**（触发评估 + 效果评估 + 综合报告）。
 
@@ -205,7 +205,7 @@ Skill 没触发
 
 专家让智能体在可控环境中探索，通过纠正和复盘沉淀经验，可改变过去"老师傅退休经验流失"的知识传承困境。技能库不只是文档仓库，应记录适用模型、工具条件、场景前提、风险等级与成功证据。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/knowledge-vs-action-experience-xiao-yanghua-fudan-2026-07-20.md)
+→ [原文存档](https://mp.weixin.qq.com/s/OQ7aS6rypVY9jI5m_f2qlQ)
 
 ## 相关主题
 

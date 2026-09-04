@@ -56,7 +56,7 @@ Ghostty 的迁移选择了务实的渐进路径：先制定依赖移除计划、
 - [GitHub 平台安全事件](474-github.html)
 - [GitLab 2026 裁员](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gitlab-layoffs-memo-2026-5.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/open-source-projects-leaving-github.md)
+→ [原文存档](https://mp.weixin.qq.com/s/SXo130s5EozluTMMhgZLkg)
 
 ---
 

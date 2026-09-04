@@ -74,7 +74,7 @@ depthfirst 的验证机制（域名邮箱、SECURITY.md、signed commits、MAINT
 
 - [Agent 安全架构](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-security-architecture.md)
 - LLM 安全红队测试
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/open-defense-initiative-depthfirst.md)
+→ [原文存档](https://depthfirst.com/open-defense)
 
 ---
 

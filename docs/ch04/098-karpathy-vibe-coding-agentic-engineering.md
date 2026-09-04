@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 15.2KB | `entities/karpathy-vibe-coding-agentic-engineering-v4.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/karpathy-vibe-coding-agentic-engineering-v4.md)
+> -> [原文存档](https://mp.weixin.qq.com/s/HTFcXBzYUVHvwShu3Zp-EA)
 
 ## 核心洞察
 Vibe Coding 拉低下限，Agentic Engineering 解决真实交付问题；可验证性决定 Agent 自动化上限；上下文/工具/测试/运行环境成为 Software 3.0 的核心设计对象。
@@ -17,7 +17,7 @@ Karpathy 在红杉 AI Ascent 2026 访谈中提出 Software 3.0 概念，认为 V
 - **锯齿智能**：能力曲线非线性，存在上限瓶颈
 
 ## 来源
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/karpathy-vibe-coding-agentic-engineering-v4.md)
+→ [原文存档](https://mp.weixin.qq.com/s/HTFcXBzYUVHvwShu3Zp-EA)
 
 ## 深度分析
 ### Vibe Coding 与 Agentic Engineering 的本质分野

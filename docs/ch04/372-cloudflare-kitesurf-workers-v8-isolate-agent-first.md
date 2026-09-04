@@ -45,7 +45,7 @@ Chromium 胜在墙钟（JIT 已见该页），Kitesurf 胜在 CPU/内存（决�
 
 不支持视频/WebGL/真实 TLS 指纹反爬握手/需持久状态的长会话（走 Browser Run 默认 Chromium）；CDP 子集实现持续扩展中；计划开源，允许客户自部署。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cloudflare-kitesurf-agent-first-browser-workers-2026.md)
+→ [原文存档](https://blog.cloudflare.com/kitesurf/)
 
 ## 关联
 - 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)

@@ -4,7 +4,7 @@
 
 # LLM-as-a-Verifier: A General-Purpose Verification
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-as-a-verifier-a-general-purpose-verification-framework.md)
+> -> [原文存档](https://llm-as-a-verifier.notion.site/)
 
 ## 摘要
 
@@ -20,7 +20,7 @@ LLM-as-a-Verifier 是由斯坦福 AI Lab、UC Berkeley Sky Computing Lab 与 NVI
 - **即插即用**：验证器与生成模型、agent harness 解耦，在 ForgeCode（86.4%）、Terminus-Kira（79.4%）、Terminus 2（71.2%）上一致提升
 - **候选选择机制**：对 N 条候选轨迹做 round-robin 两两锦标赛，奖励更高者获胜，胜场最多者胜出
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-as-a-verifier-a-general-purpose-verification.md)
+→ [原文存档](https://llm-as-a-verifier.notion.site/)
 
 ## 深度分析
 
@@ -67,7 +67,7 @@ LLM-as-a-Verifier 框架的 v0.2.0 更新（2026-08-14 发布）新增了 DeepSe
 
 > 本来源是 LLM-as-a-Verifier 框架在 DeepSeek V4 Flash 上的具体应用与成本数据补全，验证框架本身的 Judge/Verifier 区分、细粒度评分、重复验证、三维度分解等核心机制不变（见本文摘要与深度分析）。
 
-→ [第 2 来源原文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek-v4-flash-self-verify-llm-as-a-verifier-paperweekly.md)
+→ [第 2 来源原文](https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247722281&idx=1&sn=0b58c9f238549bdf1def79be509f745c)
 
 ---
 

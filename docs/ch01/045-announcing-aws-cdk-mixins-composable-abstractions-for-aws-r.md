@@ -4,7 +4,7 @@
 
 # Announcing AWS CDK Mixins: Composable Abstractions for AWS Resources
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/announcing-aws-cdk-mixins-composable-abstractions-for-aws-resources-amazon-web-s.md)
+→ [原文存档](https://aws.amazon.com/blogs/devops/announcing-aws-cdk-mixins-composable-abstractions-for-aws-resources/)
 
 ## 摘要
 CDK Mixins is a new AWS Cloud Development Kit (CDK) feature that lets you compose reusable, cross-cutting abstractions and apply them to any construct — L1, L2, or custom — after it is created. It decouples capabilities from construct implementations, so teams no longer have to choose between immediate access to new CloudFormation features (L1) and sophisticated higher-level abstractions (L2/L3). Mixins ship inside `aws-cdk-lib`, are type-safe, and bring L2-quality features to L1 constructs on day one.
@@ -48,7 +48,7 @@ Vended log delivery in CloudFormation requires coordinating three resources — 
 - [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For ](../ch11/124-restrict-access-to-sensitive-documents-in-your-amazon-quick.html)
 - [Back Up And Restore Your Amazon Eks Cluster Resources Using ](072-back-up-and-restore-your-amazon-eks-cluster-resources-using.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/announcing-aws-cdk-mixins-composable-abstractions-for-aws-resources-amazon-web-s.md)
+→ [原文存档](https://aws.amazon.com/blogs/devops/announcing-aws-cdk-mixins-composable-abstractions-for-aws-resources/)
 
 ---
 

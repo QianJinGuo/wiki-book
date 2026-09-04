@@ -96,7 +96,7 @@
 - [Aws Bedrock Ops Alert](211-bedrock.html)
 - [Agentops Operationalize Agentic Ai Amazon Bedrock](135-amazon-bedrock.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-budget-bedrock-cost-governance.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/leveraging-aws-budget-implement-amazon-bedrock/)
 
 ## 深度分析
 

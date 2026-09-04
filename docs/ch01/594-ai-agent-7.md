@@ -16,7 +16,7 @@
 - [Pi Mono Github](474-github.html)
 - [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](../ch03/057-claude-code.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-interview-7-capabilities.md)
+→ [原文存档](https://mp.weixin.qq.com/s/CpmGy-WgyyLQbqfNX_5Ntg)
 
 ## 深度分析
 

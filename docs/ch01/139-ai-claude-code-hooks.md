@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 66.7KB | `entities/打造可靠的-ai-编程环境claude-code-hooks-完整开发者指南.md`
 
-[打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/打造可靠的-ai-编程环境claude-code-hooks-完整开发者指南.md)
+[打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南](https://mp.weixin.qq.com/s/cPfbk0ssRk1MHkBJ27E00w)
 
 ##  Claude Code Hooks 是什么？
 Claude Code hooks 本质上就是一些你自己定义的操作，比如 shell 命令、HTTP 调用，或者额外的提示，它们会在 Claude Code 的不同阶段自动执行。

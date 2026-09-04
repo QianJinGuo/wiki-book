@@ -15,7 +15,7 @@ Agent Harness覆盖：数据流水线、训练环境、评测基础设施、跨�
 - [Agentscope Java Harness Framework Enterprise Distributed](../ch05/008-harness.html)
 - [Cursor Harness Model Production Floor](../ch01/205-cursor-harness-model-production-floor.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/minimax-m2-7-self-evolution.md)
+→ [原文存档](https://mp.weixin.qq.com/s/Xfsq8YDP7xkOLzbh1HwdjA)
 
 ## 深度分析
 

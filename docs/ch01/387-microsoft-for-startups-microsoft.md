@@ -64,7 +64,7 @@ Microsoft for Startups 是微软面向初创企业的支持计划，帮助创始
 - [Microsoft For Startups Microsoft](387-microsoft-for-startups-microsoft.html)
 - [2 Year 25 Ai Projects Summary](692-5-ai.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/Microsoft-for-Startups-Microsoft-v2.md)
+→ [原文存档](https://www.microsoft.com/en-us/startups/apply)
 
 ## 深度分析
 ### 项目定位与市场策略
@@ -96,7 +96,7 @@ FAQ 中明确说明"不需要从其他云提供商迁移"——这是一个聪�
 - B2B 软件初创企业，目标是进入企业市场而非纯消费者市场
 - 已有一定 Azure 使用基础，渴望扩大规模但希望控制成本的成长期公司
 - 希望利用 Microsoft 生态进入企业渠道，而非从零建立直销能力的创业团队
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/Microsoft-for-Startups-Microsoft-v2.md)
+→ [原文存档](https://www.microsoft.com/en-us/startups/apply)
 
 ---
 

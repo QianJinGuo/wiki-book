@@ -66,7 +66,7 @@ Rapid expansion of AI coding tools (Copilot, Claude Code, Cursor) makes API Keys
 
 5. **关注插件市场的安全机制演进**：评估你使用的 IDE/编辑器是否具备类似的远程 kill-switch 能力。对于企业环境，考虑使用插件白名单机制，只允许经过安全审查的插件安装。
 
--> [Source Archive](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/jetbrains-marketplace-malicious-ai-plugins-security-update.md)
+-> [Source Archive](https://blog.jetbrains.com/platform/2026/06/marketplace-ecosystem-security-update-malicious-ai-plugins/)
 
 ---
 

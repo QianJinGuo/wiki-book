@@ -15,7 +15,7 @@ Google Cloud Tech 前些日子发布了一篇 Agent Skill 设计模式文章：�
 - [Anthropic 官方技能最佳实践14 个可复用的 Agent Skills 设计模式](302-agent-skills.html)
 - [Anthropic Agent Skills Design Patterns 14](077-anthropic-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cong-anthropic-dao-googleagent-skills-zhengzai-jinru-sheji-moshi-jieduan.md)
+→ [原文存档](https://mp.weixin.qq.com/s/cnbhqqyxLK8l3DjE-X82qQ)
 
 ## 深度分析
 

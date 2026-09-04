@@ -107,7 +107,7 @@ Computer Misuse Act 1990 的 "authorised person" 概念预设了一个**人类�
 - [Agent 安全威胁模型](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-security-threat-models.md) — Agent 安全概念框架
 - [Agent 内存架构](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-architecture.md) — Agent 身份管理与归属
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentic-penetration-testing-legal-questions.md)
+→ [原文存档](https://www.bcs.org/articles-opinion-and-research/new-legal-questions-agentic-pen-testing/)
 
 ---
 

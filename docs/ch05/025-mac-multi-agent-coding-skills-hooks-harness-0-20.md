@@ -9,7 +9,7 @@
 
 **MAC（multi-agent-coding）** 是一套将 **Skills（概率层）+ Hooks（确定性层）** 叠加的 Harness 框架设计。它是 **Anthropic 2026 Agentic Coding Trends Report 中"完全委托 0-20%"问题** 的解法：工程师已在用 AI 处理 60% 工作，但能完全委托的只有 0-20%——差距不是模型能力，是**信任环境**。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mac-multi-agent-coding-skills-hooks-harness.md)
+→ [原文存档](https://mp.weixin.qq.com/s/XZObIQdInhax3I7Q_gURTg)
 
 ## 一句话定位
 
@@ -218,7 +218,7 @@
 
 - **在关键节点保持人的判断力**：Planning 和 Verify 两个节点必须由人执行，确保"做什么"的判断质量和"做对了"的验证结论是确定性的 
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/mac-multi-agent-coding-skills-hooks-harness.md)
+→ [原文存档](https://mp.weixin.qq.com/s/XZObIQdInhax3I7Q_gURTg)
 
 ---
 

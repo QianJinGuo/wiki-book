@@ -9,7 +9,7 @@
 - [Ai Native Org Guide Slowdown](../ch05/018-ai-native.html)
 - [Fanling Company As Agent Ai Org Reflection](../ch03/004-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-native-team-building-yexiaochai.md)
+→ [原文存档](https://mp.weixin.qq.com/s/bCL6-Cvvo7nf4ZYaWUxrxA)
 
 ## 评分
 | 维度 | 分数 |

@@ -4,7 +4,7 @@
 
 # Who Winning Enterprise AI Now
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/saastr-who-winning-enterprise-ai.md)
+→ [原文存档](https://www.saastr.com/whos-winning-enterprise-ai-now-claude-up-128-gemini-up-48-openai-down-8-grok-still-a-rounding-error/)
 
 ## 摘要
 

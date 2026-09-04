@@ -108,7 +108,7 @@ AgentCore Memory 提供双层记忆系统：
 - [基于Bedrock Agentcore 实现智能成本分析与告警系统 | 亚马逊AWS官方博客](045-bedrock-agentcore.html)
 - [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](../ch04/383-amazon-bedrock-agentcore.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-coding-guide-tmall-deep-dive.md)
+→ [原文存档](https://mp.weixin.qq.com/s/cMEwc2l9-MhI_asvL-AkxA)
 
 - [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](../ch04/383-amazon-bedrock-agentcore.html)
 

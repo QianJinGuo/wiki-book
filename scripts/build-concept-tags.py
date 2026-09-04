@@ -25,9 +25,9 @@ ROOT = Path(__file__).resolve().parent.parent
 ARTICLES_JSON = ROOT / "docs" / "dashboard" / "articles.json"
 CONCEPT_TAGS_JSON = ROOT / "docs" / "dashboard" / "concept-tags.json"
 
-WIKI_DIR = Path(os.environ.get("WIKI_DIR", os.path.expanduser("~/wiki")))
-CONCEPTS_DIR = WIKI_DIR / "concepts"
-RAW_ARTICLES_DIR = WIKI_DIR / "raw" / "articles"
+WIKI_DIR = None
+CONCEPTS_DIR = None
+RAW_ARTICLES_DIR = None
 
 # Tags that carry no topical meaning - filtered out.
 NOISE_TAGS = {
@@ -196,12 +196,17 @@ def build_concept_map_data(concept_tags, articles, article_tags):
 
 
 def main():
-    if "--wiki" in sys.argv:
-        idx = sys.argv.index("--wiki")
-        global WIKI_DIR, CONCEPTS_DIR, RAW_ARTICLES_DIR
-        WIKI_DIR = Path(sys.argv[idx + 1])
-        CONCEPTS_DIR = WIKI_DIR / "concepts"
-        RAW_ARTICLES_DIR = WIKI_DIR / "raw" / "articles"
+    global WIKI_DIR, CONCEPTS_DIR, RAW_ARTICLES_DIR
+    if "--wiki" not in sys.argv:
+        print("[concept-tags] ERROR: pass --wiki /path/to/wiki explicitly; no private default is allowed", file=sys.stderr)
+        sys.exit(2)
+    idx = sys.argv.index("--wiki")
+    if idx + 1 >= len(sys.argv):
+        print("[concept-tags] ERROR: --wiki requires a directory", file=sys.stderr)
+        sys.exit(2)
+    WIKI_DIR = Path(sys.argv[idx + 1]).resolve()
+    CONCEPTS_DIR = WIKI_DIR / "concepts"
+    RAW_ARTICLES_DIR = WIKI_DIR / "raw" / "articles"
 
     print(f"[concept-tags] Wiki dir: {WIKI_DIR}")
 

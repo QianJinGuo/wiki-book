@@ -4,7 +4,7 @@
 
 # Claude Code Dynamic Workflows 第 7 译本（架构师 JiaGouX 视角：任务级 Harness 统一框架）
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-dynamic-workflows-jiagoux-architect-perspective.md)
+→ [原文存档](https://mp.weixin.qq.com/s/Z8aEk8QZfvd3juHTH0_vVg)
 
 ## 深度分析
 

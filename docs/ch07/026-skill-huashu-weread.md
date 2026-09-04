@@ -84,7 +84,7 @@ huashu-weread证明了"在官方能力上做增强层"这一模式的可行性�
 - [Tmall Ai Coding Practice Team Knowledge Base](../ch05/076-ai-coding.html)
 - [Skill Craft](048-skill-craft-claude-skill.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/weread-official-skill-huashu-critical-gap.md)
+→ [原文存档](https://mp.weixin.qq.com/s/LxgM3qWxd3_gIG14rFO47Q)
 
 ## 相关工具
 - huashu-weread：https://github.com/alchaincyf/huashu-weread

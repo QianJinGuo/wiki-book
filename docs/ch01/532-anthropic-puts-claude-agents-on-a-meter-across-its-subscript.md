@@ -22,7 +22,7 @@
 3. **商业模式创新** — 为企业客户提供更可预测的成本结构
 市场影响：可能为 AI 代理服务商业化设立新标准
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-claude-agents-meter-infoworld.md)
+→ [原文存档](https://www.infoworld.com/article/4171274/anthropic-puts-claude-agents-on-a-meter-across-its-subscriptions.html)
 
 ## 相关实体
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/057-claude-code.html)

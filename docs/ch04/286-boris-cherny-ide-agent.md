@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 7.9KB | `entities/boris-cherny-interview-2026-ide-to-agent-console.md`
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/boris-cherny-interview-2026-ide-to-agent-console.md)
+> 来源：[原文存档](https://mp.weixin.qq.com/s/iqSixiNP9lxNKg7aVfHFCQ)
 
 ## 深度分析
 **1. 开发工具控制点正在从 IDE 光标迁移到 Agent 控制台**

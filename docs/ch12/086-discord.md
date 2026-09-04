@@ -30,7 +30,7 @@ Discord 的 E2EE 基于 Signal 协议的双棘轮机制：
 - [Ath Agent Trust Handshake Protocol](../ch03/004-agent.html)
 - [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](../ch01/280-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/discord-e2e-encryption.md)
+→ [原文存档](https://discord.com/blog/every-voice-and-video-call-on-discord-is-now-end-to-end-encrypted)
 
 ## 深度分析
 

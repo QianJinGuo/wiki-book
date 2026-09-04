@@ -96,7 +96,7 @@ Qwen3.5-35B-A3B 在 POI 语义理解和事实检索上逼近顶级闭源模型�
 
 - [AI Skill 测评指标体系](../ch01/351-ai-skill.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-tools-research.md)
+→ [原文存档](https://mp.weixin.qq.com/s/2xFei8dMx99lc-iyrZZrww)
 
 - [Skills赏析：使用skills-refiner提升skill质量](../ch03/050-skills.html)
 

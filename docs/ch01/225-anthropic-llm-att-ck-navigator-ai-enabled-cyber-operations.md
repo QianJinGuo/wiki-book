@@ -4,7 +4,7 @@
 
 # Anthropic LLM ATT&CK Navigator: AI-Enabled Cyber Operations
 
-> Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-llm-attck-navigator-cyber-operations.md)
+> Source: [原文存档](https://red.anthropic.com/2026/attack-navigator/)
 > Authors: Kyla Guru, Alex Moix, Jacob Klein (Anthropic Red Team, 2026-06-03)
 
 ## 概述
@@ -119,7 +119,7 @@ ARiES 采**加性评分**（0-100），三个维度：
 ## 相关实体
 
 - [hackers accessed bwh hotels reservation system for months](../ch04/257-ai.html)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-llm-attck-navigator-cyber-operations.md)
+→ [原文存档](https://red.anthropic.com/2026/attack-navigator/)
 - → [同 Anthropic 红队研究：前沿模型 N-day 利用能力](../ch04/208-anthropic-n-days-frontier-agent-vulnerability-research.html)
 - → [Mythos 营销角度](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-mythos-bug-hunting-marketing.md)
 - → [Cloudflare Glasswing 视角 Mythos 安全](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloudflare-glasswing-mythos-security.md)

@@ -183,7 +183,7 @@ Boris Cherny 的观点指出：一个 Agent 引入的 bug，常常要靠另一�
 - [Agent Harness Architecture Design Production Guide](035-agent-harness.html)
 - [Harness 之后 状态边界与失败闭环 Ruofei](008-harness.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/long-running-agent-ralph-loop-handover-harness-ruofei.md)
+→ [原文存档](https://mp.weixin.qq.com/s/ML5aD3f2ilHWjSB-wpBukw)
 
 ---
 
@@ -232,7 +232,7 @@ Boris Cherny 的观点指出：一个 Agent 引入的 bug，常常要靠另一�
 - OpenAI Codex Harness Engineering：内部产品，AGENTS.md 模式可直接借鉴
 - Vercel text-to-SQL agent：内部案例，公开报道
 
-→ [第 3 原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-deletable-worksite-ruofei.md)
+→ [第 3 原文存档](https://mp.weixin.qq.com/s/y1pIKtBFr5BrN3f7VOypWw)
 
 ---
 

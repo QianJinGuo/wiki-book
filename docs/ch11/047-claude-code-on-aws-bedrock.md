@@ -88,7 +88,7 @@ aws iam create-access-key --user-name claude-code-bedrock
 - [Easy Deployment Of Claude Agent Sdk In Production](../ch01/340-claude.html)
 - [Claude Code Open Source Model Enterprise Practice](../ch03/057-claude-code.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-aws-bedrock-guide.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/claude-code-aws-bedrock-config/)
 
 ## 深度分析
 

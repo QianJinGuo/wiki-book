@@ -29,7 +29,7 @@
 - [Anthropic Claude Managed Agents Platform Launch](158-anthropic-claude-managed-agents.html)
 - [Anthropic Claude Managed Agents Platform 2026](158-anthropic-claude-managed-agents.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/announcing-claude-managed-agents-on-cloudflare.md)
+→ [原文存档](https://blog.cloudflare.com/claude-managed-agents/)
 
 ---
 

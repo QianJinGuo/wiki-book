@@ -162,7 +162,7 @@ ChangeSet 是一个存在于git版本库中的，把每次变更的过程都记�
 - [Agentmemory Source Analysis Coding Agent Local Memory](../ch09/038-coding-agent.html)
 - [Alphaevolve Deepmind Discovery Agent](../ch03/004-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/alibaba-aone-agentic-rd-mode-xiangbangyu.md)
+→ [原文存档](https://mp.weixin.qq.com/s/GPoQnFsXnnNpKdefWWiKRw)
 
 ## 深度分析
 

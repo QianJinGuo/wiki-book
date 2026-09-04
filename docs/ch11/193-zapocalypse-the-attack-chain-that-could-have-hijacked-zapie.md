@@ -4,7 +4,7 @@
 
 # Zapocalypse: The Attack Chain That Could Have Hijacked Zapier
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/zapocalypse-the-attack-chain-that-could-have-hijacked-zapier-20260606.md)
+→ [原文存档](http://www.token.security/blog/zapocalypse-the-attack-chain-that-could-have-hijacked-zapier)
 
 ## 深度分析
 

@@ -2,12 +2,12 @@
 
 > 📊 Level ⭐⭐ | 6.4KB | `entities/from-siloed-data-to-unified-insights-cross-account-athena-access-for-amazon-quic.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/from-siloed-data-to-unified-insights-cross-account-athena-access-for-amazon-quic.md)
+> -> [原文存档](https://aws.amazon.com/blogs/machine-learning/from-siloed-data-to-unified-insights-cross-account-athena-access-for-amazon-quick/)
 
 ## 核心要点
 - AWS China ML 发布的技术文章
 - 涉及领域：aws, machine-learning, ai-agents, bedrock
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/from-siloed-data-to-unified-insights-cross-account-athena-access-for-amazon-quic.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/from-siloed-data-to-unified-insights-cross-account-athena-access-for-amazon-quick/)
 
 ## 相关实体
 - [基于 Amazon Kinesis Data Streams 实现 DynamoDB 历史数据清理与增量同步](https://github.com/QianJinGuo/wiki-public/blob/main/entities/基于-amazon-kinesis-data-streams-实现-dynamodb-历史数据清理与增量同步.md)

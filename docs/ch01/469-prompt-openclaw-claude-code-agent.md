@@ -4,7 +4,7 @@
 
 # OpenClaw Boris Cherny Agent Loop Design Patterns
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-boris-cherny-agent-loop-design-patterns.md)
+→ [原文存档](https://mp.weixin.qq.com/s/5Hy4ctKOq8Iq7m2bqy45zQ)
 
 ## 摘要
 

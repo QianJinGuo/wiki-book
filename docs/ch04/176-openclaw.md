@@ -75,7 +75,7 @@ OpenCLAW 设计之初主要面向个人用户，但随着多客户场景需求�
 ## 相关概念
 - → [Agent Harness Architecture](../ch05/035-agent-harness.html)
 - → [Multi Agent Systems](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/multi-agent-systems.md)
-- → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验-v2.md)
+- → [原文存档](https://mp.weixin.qq.com/s/RpR14rInw0ZWh4PFLPD1QA)
 - [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](176-openclaw.html)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](../ch03/057-claude-code.html)
 - [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
@@ -84,7 +84,7 @@ OpenCLAW 设计之初主要面向个人用户，但随着多客户场景需求�
 - [四种 Sub Agent 模式](../ch03/004-agent.html)
 - [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](302-agent-skills.html)
 ---
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-comprehensive-guide-32k-chars.md)
+→ [原文存档](https://mp.weixin.qq.com/s/zHQ70aXe5aoC_wodLglmPg)
 
 ## 相关实体
 - [OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](176-openclaw.html)

@@ -88,7 +88,7 @@ Manus 的改进路径需要更多精心手工定制和定制化工作，而 Chat
 - [Three Years Gpt3 Gemini3 Mollick](https://github.com/QianJinGuo/wiki-public/blob/main/entities/three-years-gpt3-gemini3-mollick.md)
 - [Guide Ai Agents Models Apps Harnesses Mollick](312-ai-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-bitter-lesson-versus-the-garbage-can.md)
+→ [原文存档](https://www.oneusefulthing.org/p/the-bitter-lesson-versus-the-garbage)
 
 ---
 

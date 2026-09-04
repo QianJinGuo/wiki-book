@@ -7,7 +7,7 @@
 ## 相关实体
 
 - [amazon quick arns: cross-account migration and namespace per](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-quick-arns-cross-account-namespace-permissions.md)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-quick-arns-cross-account-migration-and-namespace-perm.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/amazon-quick-arns-cross-account-migration-and-namespace-permissions)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
 ## 深度分析

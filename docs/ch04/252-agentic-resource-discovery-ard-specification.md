@@ -90,7 +90,7 @@ AWS 侧对同一 ARD 开放规范的补充视角，聚焦 **AWS Agent Registry**
 ## 相关实体
 
 - [Model Context Protocol (MCP)](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/model-context-protocol-mcp.md)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentic-resource-discovery-specification-snowflake.md)
+→ [原文存档](https://www.snowflake.com/en/blog/agentic-resource-discovery-specification/)
 
 ---
 ## 关联

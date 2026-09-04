@@ -47,7 +47,7 @@ LLM 不像传统搜索那样存在可操纵的逻辑流程，它更像人脑：�
 - [SEO is a product, AEO is brand](https://github.com/QianJinGuo/wiki-public/blob/main/entities/seo-product-aeo-brand-productledseo.md)
 - [AEO and GEO for AI Overviews](058-aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-p.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/p-seo-is-a-product-aeo-is-brand.md)
+→ [原文存档](https://www.productledseo.com/p/seo-is-a-product-aeo-is-brand)
 
 ---
 

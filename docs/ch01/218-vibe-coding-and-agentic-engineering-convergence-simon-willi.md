@@ -4,7 +4,7 @@
 
 > Source: Heavybit High Leverage Podcast Ep. 9, "The AI Coding Paradigm Shift with Simon Willison". Compiled by InfoQ 宇琪/Tina, 2026-05-19. Original: https://www.heavybit.com/library/podcasts/high-leverage/ep-9-the-ai-coding-paradigm-shift-with-simon-willison
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vibe-coding-agentic-engineering-convergence-simon-willison.md)
+→ [原文存档](https://mp.weixin.qq.com/s/ONABFuHsqZqZV1JP6prdfw)
 
 ## 摘要
 

@@ -53,7 +53,7 @@ GrowLoop 解决的根本问题是："当一个评判系统的标准本身是被�
 
 5. **注意 GrowLoop 的适用边界。** 这套方法的有效性依赖大模型对评价对象的文字理解能力。对于超出文字模态的评价任务（语音情感、设计美学等），需要等待多模态模型的能力成熟后再迁移。在当下，GrowLoop 最适合的应用场景是内容质量评估、客服对话分析、教育反馈等以文字为载体的评价任务。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/growloop-dialogue-human-likeness-evaluation-benchmark.md)
+→ [原文存档](https://mp.weixin.qq.com/s/KYePPNNaOX0CfL7qdrvmIQ)
 
 ---
 ## 关联

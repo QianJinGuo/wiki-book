@@ -51,7 +51,7 @@ Agent Harness 的 7 层架构体现了从「单点工具调用」向「系统级
 L6 多 Agent 层最难的不是任务分配，而是冲突解决。建议在初期就建立冲突检测机制——当多个 Agent 对同一资源或同一决策有不同意见时，系统能够记录冲突并触发人工审核或规则仲裁。
 
 ## 参见
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-harness-architecture-design-production-guide.md)
+- [原文存档](https://mp.weixin.qq.com/s/a10NnBuBDmaStoDZjOhzjA)
 - [Harness Engineering](../ch05/057-harness-engineering.html)（Harness 工程方法论）
 
 ## 相关实体
@@ -90,7 +90,7 @@ L6 多 Agent 层最难的不是任务分配，而是冲突解决。建议在初�
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](../ch03/004-agent.html)
 - [Harness如何支撑Agent在生产环境稳定运行？](../ch05/008-harness.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-harness-architecture-deep-dive-aksahy.md)
+→ [原文存档](https://mp.weixin.qq.com/s/H8_U4vENXJuiojXtXbCF5w)
 
 - [Code as Agent Harness 综述](../ch09/044-code-as-agent-harness.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-engineering-guide.md)

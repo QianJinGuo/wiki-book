@@ -4,7 +4,7 @@
 
 # The Shape of AI: Jaggedness, Bottlenecks and Salients
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-shape-of-ai-jaggedness-bottlenecks-and-salients.md)
+→ [原文存档](https://www.oneusefulthing.org/p/the-shape-of-ai-jaggedness-bottlenecks)
 
 ## 摘要
 

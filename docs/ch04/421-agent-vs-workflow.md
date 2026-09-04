@@ -6,7 +6,7 @@
 
 > Agent 和 Workflow 的核心分水岭不是"用没用 LLM"，而是**谁掌握流程控制权**。Workflow 追求可预测性，Agent 解决不可预测性。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-vs-workflow-control-continuum.md)
+→ [原文存档](https://mp.weixin.qq.com/s/sY9iWpC1YW6cuIhuXbAzsw)
 
 ## 自主性连续谱（Level 0-5）
 

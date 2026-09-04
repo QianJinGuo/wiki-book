@@ -15,7 +15,7 @@ Karpathy 的看法：音频是大语言模型最好的输入，视觉是最好�
 - [Code Review Graph](567-code-review-graph-claude-code-6-8-token.html)
 - [300万人在存的Claude提示词](340-claude.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/markdown-ai-era-ifanr-20260513.md)
+→ [原文存档](https://mp.weixin.qq.com/s/bmOE1VnUx1dj6ZYPIH3o9Q)
 
 ## 深度分析
 
@@ -41,7 +41,7 @@ Karpathy 的看法：音频是大语言模型最好的输入，视觉是最好�
 
 **关注 Karpathy 格式演进图谱中的趋势，但聚焦当前工程可落地的部分**。音频/视觉交互是未来方向，但当前阶段，Markdown 作为 AI 工作语言的地位在 3-5 年内不会动摇。团队应投资于 Markdown 格式的自动化测试和渲染优化，而非过早押注下一代格式。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/markdown-ai-era-ifanr-20260513.md)
+→ [原文存档](https://mp.weixin.qq.com/s/bmOE1VnUx1dj6ZYPIH3o9Q)
 
 ---
 

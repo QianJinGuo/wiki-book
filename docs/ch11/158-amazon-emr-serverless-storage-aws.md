@@ -32,7 +32,7 @@ Amazon Web Services (AWS)
 - [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](../ch04/383-amazon-bedrock-agentcore.html)
 - [基于 MIG 技术在 Amazon SageMaker HyperPod 上实现 GPU 虚拟化的最佳实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gpu-virtualization-using-mig-technology-on-amazon-sagemaker-hyperpod.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/using-amazon-emr-serverless-storage-to-simplify-operations-and-reduce-costs.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/using-amazon-emr-serverless-storage-to-simplify-operations-and-reduce-costs/)
 
 - [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](../ch04/383-amazon-bedrock-agentcore.html)
 

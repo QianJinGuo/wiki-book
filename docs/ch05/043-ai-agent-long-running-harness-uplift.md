@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 11.1KB | `entities/gaode-uplift-model-iteration-agent-harness.md`
 
-> 原文归档：[原文归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gaode-uplift-model-iteration-agent-long-running-harness.md)
+> 原文归档：[原文归档](https://mp.weixin.qq.com/s/LHPA3qlEsKOlrSsDPEnAyA)
 
 高德信息业务中心营销算法团队构建的 **AI Agent 系统**，专注 Uplift 模型（预测"给用户发券能多撬动多少 GMV"）迭代的完整生命周期自动化。输入一句自然语言目标，1-2 天后输出训练完的模型 + AUUC 评估报告 + 审计日志，工程师介入次数 = 0。
 

@@ -4,7 +4,7 @@
 
 # Direct Connect (DX) 迁移最佳实践
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/direct-connect-dx-迁移最佳实践.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/direct-connect-dx-migration-best-practices/)
 
 ## 摘要
 

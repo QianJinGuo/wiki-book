@@ -4,7 +4,7 @@
 
 # 正式开源！美团 LongCat-2.0 同步开放国产卡推理代码
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/正式开源美团-longcat-20-同步开放国产卡推理代码.md)
+→ [原文存档](https://mp.weixin.qq.com/s/iCq4jVlTdKOt74zAMYIIdw)
 
 # 正式开源！美团 LongCat-2.0 同步开放国产卡推理代码
 

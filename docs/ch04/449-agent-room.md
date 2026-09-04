@@ -121,7 +121,7 @@ Agent Room的价值不只是"自动创建了变更、分支和环境"。真正�
 - [Hiclaw V110 K8S Hermes Worker](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hiclaw-v110-k8s-hermes-worker.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/multi-agent-coordination.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/emergent-collaboration-ai-high-quality-decision-agent-room.md)
+→ [原文存档](https://mp.weixin.qq.com/s/pV-f8WzoYSDxpEUk0uQdFw)
 
 ---
 

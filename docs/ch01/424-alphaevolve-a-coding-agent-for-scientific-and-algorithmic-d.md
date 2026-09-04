@@ -21,7 +21,7 @@ AlphaEvolve 不是把 LLM 当成一个更聪明的程序员，而是把 LLM 放�
 - [Servicenow Ui Is Dead Agent](../ch03/004-agent.html)
 - [Agentexecutorgooglesdistributedagentruntime](../ch04/290-agentrun.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/alphaevolve-deepmind-discovery-agent.md)
+→ [原文存档](https://mp.weixin.qq.com/s/Iu4Ayq8qQIz7LlgT1zqpXw)
 
 - [hacker news 热帖：ai 会写代码了，为啥还要用 python？](../ch05/076-ai-coding.html)
 - [7个月，234次提交，1690行代码：ai编程大型翻车现场：我决定全部作废，手动重写！](../ch04/257-ai.html)

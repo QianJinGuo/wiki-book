@@ -4,7 +4,7 @@
 
 # Scale Robot Reinforcement Learning with NVIDIA Isaac Lab on Amazon SageMaker AI
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-amazon-sagemaker-ai)
 
 ## 深度分析
 

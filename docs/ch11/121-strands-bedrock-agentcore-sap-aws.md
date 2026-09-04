@@ -33,7 +33,7 @@
 - [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](../ch04/383-amazon-bedrock-agentcore.html)
 - "AWS Bedrock 多智能体协作指南"
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/sap-intelligent-procurement-assistant-solution.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/sap-intelligent-procurement-assistant-solution/)
 - [淘宝动效解决方案分享](https://github.com/QianJinGuo/wiki-public/blob/main/entities/淘宝动效解决方案分享.md)
 
 ---

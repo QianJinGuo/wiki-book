@@ -49,7 +49,7 @@ Karpathy 在原文里还提到了一个细节：1945 年万尼瓦尔·布什的�
 - [Llm Wiki Architecture](451-llm.html)
 - [Rag Vs Llm Wiki Enterprise Knowledge Base](037-rag-vs-llm-wiki.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/karpathy-llm-wiki-v2-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/D1-sKka_lm58FTi_F8xuow)
 
 ## 深度分析
 

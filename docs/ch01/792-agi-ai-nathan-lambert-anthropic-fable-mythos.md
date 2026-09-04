@@ -48,6 +48,6 @@ Lambert 指出，这一事件标志着从"ChatGPT 时代的 AI 治理"到"AGI �
 3. **开源模型的战略价值上升**——当闭源模型访问受限时，开源模型成为唯一可靠的基础设施选项
 4. **安全报告的披露策略需要重新思考**——Amazon 向白宫直接报告的行为表明，安全漏洞的披露路径可能绕过正常渠道
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/welcome-to-the-agi-era-of-ai-governance.md)
+→ [原文存档](https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance)
 
 ---

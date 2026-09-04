@@ -84,7 +84,7 @@ The Qwen-Image-Flash paper is best read as a case study of a **recipe-first** ap
 - **Related unified image generation references** from the paper: song2026awaking, liu2026ernieimagetechnicalreport, mao2026wan
 - **T2I-Bench** and **GEdit-Bench** as evaluation benchmarks
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qwen-image-flash-beyond-objective-design.md)
+→ [原文存档](https://arxiv.org/abs/2606.03746)
 
 ## 深度分析
 

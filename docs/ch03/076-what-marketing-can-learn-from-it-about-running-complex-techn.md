@@ -13,7 +13,7 @@
 - [What Do Your Startup Advisors Say About You Charlie Odonnell   Coach Author Vc](https://github.com/QianJinGuo/wiki-public/blob/main/entities/what-do-your-startup-advisors-say-about-you-charlie-odonnell---coach-author-vc.md)
 - [From Kubernetes Dev Setup To Production What Actually Change](../ch11/072-from-kubernetes-dev-setup-to-production-what-actually-chang.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/what-marketing-can-learn-from-it-about-running-complex-technology.md)
+→ [原文存档](https://martech.org/what-marketing-can-learn-from-it-about-running-complex-technology/)
 
 ## 深度分析
 
@@ -73,7 +73,7 @@ IT 将整个生态系统视为实时服务，持续追问：谁拥有平台？�
 
 Martech 平台准备上线的前提不仅是配置完成和培训结束，而是所有权、治理、intake、支持、文档、发布纪律、角色清晰度和成功度量都已到位 。
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/what-marketing-can-learn-from-it-about-running-complex-technology.md)
+> 来源：[原文存档](https://martech.org/what-marketing-can-learn-from-it-about-running-complex-technology/)
 
 ---
 

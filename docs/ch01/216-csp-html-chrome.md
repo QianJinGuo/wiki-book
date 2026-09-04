@@ -183,7 +183,7 @@ Content-Security-Policy:
 - [Weve Been Here Before Decompilers Fuzzers And Now Ai](../ch04/257-ai.html)
 - [Automate Progressive Rollouts With Vercel Flags Vercel](../ch09/108-automate-progressive-rollouts-with-vercel-flags-vercel.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/afine-csp-html-injection-password-exfiltration.md)
+→ [原文存档](https://afine.com/blogs/stealing-passwords-via-html-injection-under-a-strict-csp)
 - [discord 全平台端到端加密](../ch12/086-discord.html)
 - [incendium fuzzing ms rpc](https://github.com/QianJinGuo/wiki-public/blob/main/entities/incendium-fuzzing-ms-rpc.md)
 - [the interface is no longer the product](../ch04/257-ai.html)

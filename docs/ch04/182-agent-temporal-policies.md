@@ -54,7 +54,7 @@ Temporal policies 使用 **Dogwood**——一种为 agent 及其工具设计的�
 
 实现细节绑定 AgentCore Gateway（session-id header、`AgentCore::Action` 命名空间、Gateway ARN），但用例分类学、session 边界设计、deny-by-default 原则、审批一次性消费等模式可直接迁移到任何 agent 网关/代理层。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/securing-ai-agents-with-temporal-policies-in-amazon-bedrock-agentcore.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/securing-ai-agents-with-temporal-policies-in-amazon-bedrock-agentcore)
 
 ## 第 2 来源 — Policy Authoring：自然语言 → Dogwood 自动形式化
 
@@ -79,7 +79,7 @@ Temporal policies 使用 **Dogwood**——一种为 agent 及其工具设计的�
 - 补充 default-deny / permit-forbid 覆盖约定作为 authoring 的语义规则
 - 明确"翻译器≠摘要器"、需先精简规则集的最佳实践（噪声输入会污染输出）
 
-→ [第 2 来源原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/authoring-dogwood-policies-from-natural-language-in-amazon-bedrock-agentcore.md)
+→ [第 2 来源原文存档](https://aws.amazon.com/blogs/machine-learning/authoring-dogwood-policies-from-natural-language-in-amazon-bedrock-agentcore)
 
 ---
 

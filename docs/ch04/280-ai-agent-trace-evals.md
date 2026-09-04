@@ -53,7 +53,7 @@ Databend 对此的应对方案具有很强的工程参考价值：基于对象�
 
 5. **Agent Trace 存储需要有 JSON 原生处理能力。** 传统的关系型数据库或简单的日志系统无法高效处理 Agent Trace 的脏 JSON、大嵌套和长跨度特性。选择支持 JSON Path 索引、全文检索、低成本对象存储的数据库（如 Databend）是构建 Agent Trace 底座的关键决策。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-agent-trace-evals-stability-cost-evaluation-zhangyanfei.md)
+→ [原文存档](https://mp.weixin.qq.com/s/YXAzdvgpGwJBz-0EwW9Vkw)
 
 ---
 ## 关联

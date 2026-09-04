@@ -43,7 +43,7 @@ Kyverno 本身运行在 CoCo 信任模型中标记为不可信的 Kubernetes 控
 - [Hiclaw V110 K8S Hermes Worker](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hiclaw-v110-k8s-hermes-worker.md)
 - [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](../ch04/176-openclaw.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/automating-confidential-containers-coco-infrastructure-with-kyverno.md)（CNCF Blog, 2026-05-19）
+→ [原文存档](https://www.cncf.io/blog/2026/05/19/automating-confidential-containers-coco-infrastructure-with-kyverno/)（CNCF Blog, 2026-05-19）
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-privacy-landscape.md)
 ## 深度分析
@@ -79,7 +79,7 @@ Kyverno 的验证策略应在 Pod 创建时即拒绝不合规的 CoCo 配置（�
 由于 Kyverno 策略本身也是 Kubernetes 资源，应将其纳入 GitOps 流程（ArgoCD 或 Flux），并要求所有策略变更经过安全团队的 Code Review。策略文件的版本控制历史本身就是安全审计的重要依据。
 
 ## 关联阅读
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/automating-confidential-containers-coco-infrastructure-with-kyverno.md)
+- [原文存档](https://www.cncf.io/blog/2026/05/19/automating-confidential-containers-coco-infrastructure-with-kyverno/)
 - [Kyverno Policy Library - Confidential Computing](https://main.kyverno.io/policies/)（官方策略库，可按 Confidential Computing 标签筛选）
 - [Kata Containers Agent Policy](https://github.com/kata-containers/kata-containers/blob/main/docs/how-to/how-to-use-the-kata-agent-policy.md)
 - [Confidential Containers initdata 文档](https://confidentialcontainers.org/docs/features/initdata/)

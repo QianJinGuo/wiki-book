@@ -99,7 +99,7 @@ Daybreak 和 Codex Security 在 Bedrock GA 后，企业安全团队可通过已�
 ## 相关实体
 
 - [试用 amazon bedrock 中的新控制台体验：该体验针对兼容 anthropic 和 openai 的 api](../ch11/135-amazon-bedrock.html)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-models-and-codex-on-amazon-bedrock-are-now-generally-.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/openai-models-and-codex-on-amazon-bedrock-are-now-generally-available/)
 
 ---
 

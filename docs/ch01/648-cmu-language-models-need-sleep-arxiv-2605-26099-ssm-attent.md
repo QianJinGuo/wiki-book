@@ -4,7 +4,7 @@
 
 # CMU Language Models Need Sleep (arxiv 2605.26099)：SSM-Attention 睡眠巩固机制
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/arxiv-2605-26099-ssm-attention-sleep-consolidation-cmu.md)
+→ [原文存档](https://mp.weixin.qq.com/s/RCv8YX_o9dViSQpsi95kXQ)
 
 ## 深度分析
 

@@ -267,7 +267,7 @@ harness 是 AI 的"操作系统"——每个组件都应有单元测试和集成
 - [Harness Engineering Alibaba Java Case Study](057-harness-engineering.html)
 - [Tencent Cdn Lego Harness](008-harness.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-theory-to-practice-helen.md)
+→ [原文存档](https://mp.weixin.qq.com/s/g7pxETjCn3xVcYwI2NFyog)
 
 ---
 

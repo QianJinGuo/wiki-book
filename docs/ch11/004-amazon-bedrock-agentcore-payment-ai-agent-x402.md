@@ -761,7 +761,7 @@ x402 协议经历了从 v1 到 v2 的重大变化，核心差异在于支付要�
 - [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](../ch04/383-amazon-bedrock-agentcore.html)
 - [Agentic Payment X402 Bedrock Agentcore](045-bedrock-agentcore.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/bedrock-agentcore-payment-x402-agent.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/amazon-bedrock-agentcore-payment-build-payment-ai/)
 - [Ai Research Assistant From Idea To App](../ch04/257-ai.html)
 
 ## 第 2 来源 — Solv Labs 可验证可审计的 Agent 支付（2026-08-13 MERGE）
@@ -777,7 +777,7 @@ x402 协议经历了从 v1 到 v2 的重大变化，核心差异在于支付要�
 5. **关键问题转向**："agent 第一次替企业移动真钱，问题不再是'成功了吗'而是'我们能证明刚才发生了什么吗'"——可证明性成为 agent 支付的第一性要求。
 6. **四件基础设施同年汇聚**：AgentCore payments、AWS Automated Reasoning Checks、Nitro Enclaves 逐笔 attestation、x402 标准——四个让可证明问题有答案的基础设施在一个季度内同时成熟。
 
-→ [第 2 来源原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pay-with-confidence-how-solv-labs-built-verifiable-auditable-agent-payments-on-amazon-bedrock-agentcore-payments.md)
+→ [第 2 来源原文存档](https://aws.amazon.com/blogs/machine-learning/pay-with-confidence-how-solv-labs-built-verifiable-auditable-agent-payments-on-amazon-bedrock-agentcore-payments)
 
 ---
 

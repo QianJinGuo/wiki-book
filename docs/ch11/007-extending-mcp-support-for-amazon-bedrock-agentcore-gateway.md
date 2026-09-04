@@ -196,8 +196,8 @@ Gateway 是 agent 工具调用的单点——监控其延迟、错误率和可�
 - [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/310-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/tool-use-mcp-patterns.md)
 
-→ [原文存档（Gateway 基本功能）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/extending-mcp-support-for-amazon-bedrock-agentcore-gateway.md)
-→ [原文存档（MCP 2026-07-28 规范更新）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-agentcore-gateway-supports-the-mcp-2026-07-28-spec.md)
+→ [原文存档（Gateway 基本功能）](https://aws.amazon.com/blogs/machine-learning/extending-mcp-support-for-amazon-bedrock-agentcore-gateway-2/)
+→ [原文存档（MCP 2026-07-28 规范更新）](https://aws.amazon.com/blogs/machine-learning/how-agentcore-gateway-supports-the-mcp-2026-07-28-spec)
 
 ---
 

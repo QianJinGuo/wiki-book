@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 10.1KB | `entities/openclaw-agent-loop-design-patterns.md`
 
-> 原文归档：[原文归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-boris-cherny-agent-loop-design-patterns.md)
+> 原文归档：[原文归档](https://mp.weixin.qq.com/s/5Hy4ctKOq8Iq7m2bqy45zQ)
 
 OpenClaw 创始人 **Peter Steinberger** 与 Claude Code 创始人 **Boris Cherny** 都进入了"用循环设计取代手动提示"的编程阶段。这种范式的核心是：工程师不再直接给 LLM 下达指令，而是编写“循环”——一个小程序持续运行，读取 Agent 输出、判断完成状态、决定下一步操作。模型变成了循环内的一个子程序。
 

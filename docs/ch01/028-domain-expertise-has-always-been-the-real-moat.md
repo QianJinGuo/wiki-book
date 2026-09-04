@@ -72,7 +72,7 @@ Agentic AI 突然拉平了这一环。现在，一个具备合理提示技巧的
 
 ## 相关主题
 
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/brethorstingcom-blog-2026-05-domain-expertise-has-always-been-the-.md)
+- [原文存档](https://www.brethorsting.com/blog/2026/05/domain-expertise-has-always-been-the-real-moat/)
 
 ---
 

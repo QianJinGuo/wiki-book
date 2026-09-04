@@ -4,7 +4,7 @@
 
 # 看完 Claude Code Agent Teams，我更确定接下来拼的是 Agent Runtime，技术拆解：Lead、Task List、Mailbox 和 Hooks 是什么东西
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-agent-teams-xingxiaozhao.md)
+→ [原文存档](https://mp.weixin.qq.com/s/H28NkOwoyfb9AaCUykrx_Q)
 
 ## 深度分析
 

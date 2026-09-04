@@ -76,7 +76,7 @@ Agent 不是普通服务，每一次推理、工具调用、检索、子 Agent �
 
 ## 来源
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-observability-5-layer-architecture.md)
+→ [原文存档](https://www.xiaohongshu.com/explore/6a044cb40000000036033a76)
 
 ---
 ## 火山引擎大规模 Agent 可观测实践（SUPP 2026-08-20）

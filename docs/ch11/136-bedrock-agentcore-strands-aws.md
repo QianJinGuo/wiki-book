@@ -39,7 +39,7 @@ Strands Agents 采用**模型驱动（Model-Driven）**设计，开发者只需�
 ### 企业级部署的关键检查点
 生产部署 Agentic AI 项目需关注六个关键点：模型多样性（Bedrock 集成 100+ 模型）、实时信息获取（通过 MCP 工具集成搜索解决幻觉）、框架兼容性（AgentCore 兼容所有主流框架）、MCP 工具标准化（Gateway 解决非标准化接口问题）、安全隔离（AgentCore Runtime 的会话隔离）、自动扩展（Serverless 架构）。本方案通过 AgentCore Memory 解决个性化问题、通过 Gateway 解决工具集成问题、通过 Runtime 解决规模化部署问题，形成了完整的企业级 AI Agent 落地方案。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-custom-code-based-evaluators-in-amazon-bedrock-agentco.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/build/custom/code/based/evaluators/in/amazon/bedrock/agentco.html)
 
 ### 快速集成路径
 对于中国区用户，小宿科技提供了更便捷的模型接入路径（通过 SKyrouter 访问 DeepSeek 等模型），结合 Strands Agents 的多模型支持，企业可在不改变代码的情况下切换底层模型。实施路径建议：1）项目初始化使用 uv 管理依赖；2）本地使用 Strands Agent + Bedrock 模型快速验证；3）通过 AgentCore Runtime 部署到云端；4）通过 Gateway 集成第三方 MCP 工具；5）启用 Memory 实现个性化服务。这一路径可将企业级 Agent 项目从概念验证到生产部署的时间大幅缩短。

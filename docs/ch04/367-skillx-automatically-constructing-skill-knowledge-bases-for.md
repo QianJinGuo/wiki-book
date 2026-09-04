@@ -15,7 +15,7 @@
 - [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](../ch01/571-skill-issues-compromising-claude-code-with-malicious-skills.html)
 - [Building Ai Agents For Business Support Using Amazon Bedrock](052-building-ai-agents-for-business-support-using-amazon-bedrock.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillx-zhejiang-university.md)
+→ [原文存档](https://mp.weixin.qq.com/s/BNI58tDNczkLyhe9jBw-nQ)
 
 ## 深度分析
 
@@ -41,7 +41,7 @@
 
 5. **在 BFCL-v3、AppWorld、τ²-Bench 等长程交互任务上验证技能抽象效果。** 这些 benchmark 覆盖了工具调用、多步推理、真实世界任务等场景，是测试技能库泛化能力的标准起点。建议在新 Agent 项目中首先在这三个 benchmark 上建立基线。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillx-zhejiang-university.md)
+→ [原文存档](https://mp.weixin.qq.com/s/BNI58tDNczkLyhe9jBw-nQ)
 
 ---
 

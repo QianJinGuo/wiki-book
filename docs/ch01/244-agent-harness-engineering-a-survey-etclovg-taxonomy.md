@@ -59,7 +59,7 @@ The survey organizes the harness into **7 independent layers**:]"]
 -  — general harness architecture patterns
 -  — academic papers on harness evolution
 -  — long-running agent engineering
-- [Agent Harness Engineering Survey 2026](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-harness-engineering-survey-2026.md) — raw source
+- [Agent Harness Engineering Survey 2026](https://picrew.github.io/LLM-Harness/paper.pdf) — raw source
 
 ## 深度分析
 ### 论文定位与领域意义

@@ -75,7 +75,7 @@ MCP Server 可以通过 `initialize` 响应的 `instructions` 字段，向模型
 5. **MCP 工具和内置工具对模型没有区别**
    `tools[]` 里格式完全一致，模型无法区分。区别只在 Agent 侧的执行路由：内置工具本地执行，MCP 工具转发到外部 Server。
 > 参考源码：claude-code-source-code v2.1.88（泄漏源码） https://github.com/anthropics/claude-code
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-skills-mcp-rules-source-analysis.md)
+→ [原文存档](https://mp.weixin.qq.com/s/FzTyopCXH-IVSYJyTMjWxA)
 
 ## 相关实体
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](006-claude-code-skills-mcp-rules.html)

@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 12.8KB | `entities/foundation-capital-agent-era-six-insights.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/foundation-capital-agent-era-six-insights.md)
+> -> [原文存档](https://mp.weixin.qq.com/s/35FkS3AIhm336Fl2Chfc1w)
 
 ## 核心定位
 Foundation Capital 合伙人 Ashu Garg（2026-05-07）基于 Turing CEO Jonathan Siddharth + Arize CPO Aparna Dhinakaran 对谈的投资 thesis。核心命题：Agent 才是软件的主用户；上下文图谱是真正护城河；反馈闭环本身是产品。

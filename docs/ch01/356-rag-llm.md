@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 9.3KB | `entities/video-rag-chunking-strategy.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/video-rag-chunking-strategy-deephub-imba.md)
+> -> [原文存档](https://mp.weixin.qq.com/s/iIJ5na1kZRS6Hks2edLZ-A)
 
 # 视频 RAG 分块策略：停顿 / 滑动窗口 / LLM 主题分块
 
@@ -98,7 +98,7 @@ Pause-based chunking 实质上是**视频转录文本的"事件分段"**——�
 
 ## 原文链接
 
-→ [原文存档（数据派THU 翻译 Rishav Aich / DeepHub IMBA 原文）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/video-rag-chunking-strategy-deephub-imba.md)
+→ [原文存档（数据派THU 翻译 Rishav Aich / DeepHub IMBA 原文）](https://mp.weixin.qq.com/s/iIJ5na1kZRS6Hks2edLZ-A)
 
 ---
 

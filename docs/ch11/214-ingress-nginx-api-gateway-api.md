@@ -4,7 +4,7 @@
 
 # 告别 Ingress Nginx：云原生 API 网关 Gateway API 使用指引
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aliyun-cloud-native-api-gateway-gateway-api-guide.md)
+→ [原文存档](https://mp.weixin.qq.com/s/t1lZeXhRCbZ-3JJXP30w6g)
 
 ## 摘要
 

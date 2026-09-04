@@ -4,7 +4,7 @@
 
 # E9Ffy3R5Kwa1Ja5Pywbbrg
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/E9FFy3r5KWA1Ja5pyWBBrg.md)
+→ [原文存档](https://mp.weixin.qq.com/s/E9FFy3r5KWA1Ja5pyWBBrg)
 
 ## 深度分析
 

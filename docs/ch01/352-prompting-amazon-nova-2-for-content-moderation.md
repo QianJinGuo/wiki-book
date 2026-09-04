@@ -14,7 +14,7 @@
 - [Restrict Access To Sensitive Documents In Your Amazon Quick Knowledge Bases For ](../ch11/124-restrict-access-to-sensitive-documents-in-your-amazon-quick.html)
 - [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](../ch04/038-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/prompting-amazon-nova-2-for-content-moderation.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/prompting-amazon-nova-2-for-content-moderation/)
 
 - [你的ai代码越写越乱，他72小时合了14个pr每个都更好——差距只在一个机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/complexity-ratchet-garry-tan.md)
 

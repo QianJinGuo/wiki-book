@@ -122,7 +122,7 @@ gstack 定义了 15 个高度专业化的角色，从 `/office-hours`（问题�
 
 如果你的 Agent 流程无法在可接受的时间内完成一个完整 Sprint，它就无法承担夜间自主执行的角色 。将大任务分解为可在 10-15 分钟内完成的子任务，然后用完整的流程（规划 → 实现 → 审查 → QA → 发布）执行每个子任务。这种粒度使得人可以在一天内验收多个 Sprint 的结果。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gstack-garry-tan-600k-lines-60-days.md)
+→ [原文存档](https://mp.weixin.qq.com/s/-kJeOfYHMvetALarZOuZFw)
 
 ---
 

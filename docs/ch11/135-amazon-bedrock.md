@@ -4,7 +4,7 @@
 
 # Amazon Bedrock 构建货运物流双语命名实体识别系统
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/building-bilingual-ner-for-cargo-logistics-with-amazon-bedro.md)
+> 原文存档：[原文存档](https://aws.amazon.com/blogs/machine-learning/building-bilingual-ner-for-cargo-logistics-with-amazon-bedrock)
 
 ## 摘要
 
@@ -100,7 +100,7 @@ IBS Software 投入 9 名研究人员和工程师，历时约 4 个月完成项�
 - **IBS Software 货运物流 AI** — IBS Software 的货运物流 AI 方案
 - **Amazon Bedrock 无服务器推理** — Bedrock 的无服务器推理架构
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/building-bilingual-ner-for-cargo-logistics-with-amazon-bedro.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/building-bilingual-ner-for-cargo-logistics-with-amazon-bedrock)
 
 ---
 ## 关联

@@ -5,7 +5,7 @@
 # 腾讯混元 HiLS-Attention：可学习层级稀疏注意力实现无限上下文建模
 
 > **论文**：Hierarchical Sparse Attention Done Right: Toward Infinite Context Modeling (arXiv:2607.02980)
-> **来源**：Hyman的杂货铺 | [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/腾讯混元开源hils注意力.md)
+> **来源**：Hyman的杂货铺 | [原文存档](https://mp.weixin.qq.com/s/P8wjdSKjJk4jR6NhpmsV3g)
 > **Github**：https://github.com/Tencent-Hunyuan/HiLS-Attention
 
 ## 核心创新

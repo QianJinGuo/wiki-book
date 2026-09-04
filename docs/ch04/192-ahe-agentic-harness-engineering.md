@@ -133,7 +133,7 @@ AHE 的架构选择（Tool Description、Middleware、Skill 作为独立可编�
 - [Tencent Vibe Coding To Agentic Engineering Backend](171-tencent-vibe-coding-to-agentic-engineering-backend.html)
 - [Agentic Ai System Architecture Harness Skill Mcp](../ch05/067-harness-skill.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/fudan-peking-ahe-agentic-harness-engineering.md)
+→ [原文存档](https://mp.weixin.qq.com/s/QKZb2kzZI2K7OEa96X0Flw)
 
 ---
 

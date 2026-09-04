@@ -4,7 +4,7 @@
 
 # Amazon Quick 飞书SSO对接指南
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-quick-飞书sso对接指南.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/amazon-quick-sso-integration-guide)
 
 # Amazon Quick 飞书SSO对接指南
 

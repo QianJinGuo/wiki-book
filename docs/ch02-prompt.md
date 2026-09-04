@@ -36,7 +36,7 @@
 
 淘天集团营销&交易技术团队落地的全链路方案：将传统动画交付流程从「AE → Lottie/视频 → 前端手写代码」简化为「AE 插件直出代码」，通过 AE 插件 + 工程代码生成 + Cursor Skill AI 集成，打通从视觉表达到可执行代码的完整链路。单次开发耗时从 2-4 小时压缩至 15-30 分钟，还原度从 70-80% 提升至 95%+。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/taobao-ae-to-code-animation-practice-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/4I7DWStQU0uVB6llzeJ1tw)
 
 ## 问题：设计与工程的结构性鸿沟
 
@@ -121,7 +121,7 @@ AI 的核心价值在于集成环节——需同时理解动画结构和业务 D
 - [From Agent Protocol To Harness Skill](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-agent-protocol-to-harness-skill.md)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-framework.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent.md)
+→ [原文存档](https://mp.weixin.qq.com/s/RCEGqAvfJxbzaPJIJDOKwA)
 
 - [is grep all you need? — 检索 × harness × 交付方式耦合三元组（pwc 论文 arxi](https://github.com/QianJinGuo/wiki-public/blob/main/entities/is-grep-all-you-need-pwc-retrieval-harness-coupling.md)
 - [model-harness-fit-agent-harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/model-harness-fit-agent-harness.md)
@@ -711,7 +711,7 @@ worker 边界、skill description 触发词、producer 链路回执——这三�
   - [AI 蜜罐：对抗 AI 智能体](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-powered-honeypots-turning-the-tables-on-malicious-ai-agents.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/wiki-pending-concepts-roadmap.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-native-software-engineering-codex-reverse-audit-5-line-prompt.md)
+→ [原文存档](https://mp.weixin.qq.com/s/1D3E6CHLMP1fjZgPevNrGg)
 
 ---
 
@@ -721,7 +721,7 @@ worker 边界、skill description 触发词、producer 链路回执——这三�
 
 # Using Claude Code: The unreasonable effectiveness of HTML
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-html-artifacts.md)
+> 来源：[原文存档](https://claude.com/blog/using-claude-code-the-unreasonable-effectiveness-of-html)
 
 ## 概述
 
@@ -869,13 +869,13 @@ Claude Code 善于跨多个数据源综合信息并转换为可读报告。可�
 
 > "I feel more in the loop now than I ever did before."
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-html-artifacts.md)
+→ [原文存档](https://claude.com/blog/using-claude-code-the-unreasonable-effectiveness-of-html)
 
 ## 相关概念
 
 -  — 本文讨论的主要工具
 - [Claude Code 最佳实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-best-practices.md) — 相关实践指南
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-html-artifacts.md) — 原始来源
+- [原文存档](https://claude.com/blog/using-claude-code-the-unreasonable-effectiveness-of-html) — 原始来源
 
 ## 深度分析
 
@@ -911,7 +911,7 @@ Markdown 在 AI 输出场景中的根本局限在于它是「被动消费」型�
 - **Prompt 模板**：
   > 请读取当前项目上下文，生成一个单文件 HTML artifact，用来帮助我审阅这个任务。要求：第一屏给 TL;DR 和风险点；用横向对比展示方案差异；用 SVG 展示模块关系；关键代码加注释；结尾提供 copy as Markdown 按钮；不依赖外部资源
 **合并判断：** 现有 entity 基于 Anthropic 官方 blog（feature 清单式），本篇补充更深层的分析视角——Artifact 作为人机协作界面的工作流价值、Claude Code 的上下文优势、Output styles 的产品化信号。merge 后从"功能清单"升级为"工作流方法论"。
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-html-artifacts.md)
+→ [原文存档](https://claude.com/blog/using-claude-code-the-unreasonable-effectiveness-of-html)
 
 ## 第 3 来源 — Claude Code 工程师 @Thariq：为何选择 HTML 替代 Markdown
 
@@ -924,7 +924,7 @@ Markdown 在 AI 输出场景中的根本局限在于它是「被动消费」型�
   5. **Claude Code 摄取**: 通过文件系统和 MCP 获取大量上下文（Slack、Linear、git 历史等），生成结构化 HTML
   6. **趣味性**: 与 Claude 共同创作 HTML 文档更有参与感
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-的工程师thariq-放弃使用-markdown-作为-ai-的文档载体替代的竟然是.md)
+> 来源：[原文存档](https://mp.weixin.qq.com/s/QY2cGVJqKiZE8wgJUojB1Q)
 
 ## 相关实体
 
@@ -938,7 +938,7 @@ Markdown 在 AI 输出场景中的根本局限在于它是「被动消费」型�
 
 # Headroom：上下文压缩与缓存稳定化框架
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/headroom-context-compression-agent-vibecoder.md)
+> 原文存档：[原文存档](https://mp.weixin.qq.com/s/gNW3rrCUl9wRxs1BJ_vpnA)
 
 Headroom 切的是 Agent 工具链里**最痛的点**：tool output 把上下文打爆。测试日志、grep 结果、API 返回、DB rows、长 diff——这些是真正让 context window 告急的内容。**Headroom 在工具输出进入 LLM 之前，先做压缩和缓存稳定化**。
 
@@ -1142,7 +1142,7 @@ LastWhisper（北大计算机硕士）"Thinking in Context" 系列开篇，对 O
 1. **The Architecture of State** — 缓存友好 Prompt Layout + Append-only 状态管理
 2. **The Latent Space Moat** — 应用层 vs 基础设施层压缩能力的不对称
 
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/codex-context-engineering-lastwhisper-thinking-in-context.md)
+- [原文存档](https://zhuanlan.zhihu.com/p/2001069051741496397)
 
 ## 深度分析
 
@@ -1303,7 +1303,7 @@ LastWhisper 开源了 **context-kit**（教学原型），覆盖三大模块：
 - LastWhisper 博客: Context Engineering，一篇就够了
 - LastWhisper 博客: Just-in-Time Context，一篇就够了
 - context-kit: GitHub Repository
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/codex-context-engineering-lastwhisper-thinking-in-context.md)
+- [原文存档](https://zhuanlan.zhihu.com/p/2001069051741496397)
 
 ## 相关实体
 
@@ -1481,7 +1481,7 @@ GEPA（Genetic-Pareto Prompt Evolution）是独立于 Hermes runtime 的离线�
    Hermes 的多 profile（designer / programmer / researcher）支持完全隔离的配置、记忆、skill 和 SOUL.md。对应到工程实践：为每个角色维护独立身份定义（SOUL.md）和专属技能集，可避免通用 Agent 在混合任务中的上下文污染问题。这是比单一 system prompt 更可扩展的多租户方案。
 
 ## 相关页面
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-self-evolving-source-analysis.md)
+→ [原文存档](https://mp.weixin.qq.com/s/OcCtw7lrAvXKwOoIH_Gxsg)
 → [Claude Code Prompt Source Analysis](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-prompt-source-analysis.md) — Claude Code 提示词体系对比
 → [Agent Context Management Architecture Patterns](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-context-management-architecture-patterns.md) — Agent 上下文管理工程模式
 → [Agent Harness Context Management Working Set](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-context-management-working-set.md) — Agent Harness 上下文管理
@@ -1625,7 +1625,7 @@ MAX_DEPTH = 2
 - [Claude Code 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-architecture.md) — 同为 Agent 深度解析系列参照
 - [MemOS Hermes 插件](https://github.com/QianJinGuo/wiki-public/blob/main/entities/memos-hermes-plugin.md) — 第三方记忆插件，与 Hermes 原生 Memory 形成互补
 - [Agent Skill 编写指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing.md) — Skill 格式规范，与 Hermes 动态 Skill 沉淀机制高度相关
-- [原始文章存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-deep-dive-alibaba.md)
+- [原始文章存档](https://mp.weixin.qq.com/s/2xFei8dMx99lc-iyrZZrww)
 - [Harness Engineering 七层框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-7-layers-framework.md)
 - [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](https://github.com/QianJinGuo/wiki-public/blob/main/entities/读完-claude-code-和-openclaw-的-memory-源码我对agent记忆需要向量数据库这件事产生了怀疑.md)
 - [Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering.md)
@@ -1682,7 +1682,7 @@ OpenClaw 用绝对 Token 数（18K）触发压缩，在上下文窗口较小的�
 
 > 📊 Level ⭐⭐ | 14.6KB | `entities/cloud-agent-development-environments.md`
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cloud-agent-development-environments.md)
+> 来源：[原文存档](https://cursor.com/blog/cloud-agent-development-environments)
 
 ## 核心要点
 - Cursor 发布 cloud agent 开发环境配置工具，支持多 repo 环境和 Dockerfile-based 配置即代码
@@ -1691,7 +1691,7 @@ OpenClaw 用绝对 Token 数（18K）触发压缩，在上下文窗口较小的�
 - Egress 和 secrets 可按环境级别隔离，不同环境之间无法互相访问彼此的 secrets
 - 未来方向：环境配置将随代码库演变而自主演化，而非静态快照
 - 技术深度：v=8, c=7
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cloud-agent-development-environments.md)
+→ [原文存档](https://cursor.com/blog/cloud-agent-development-environments)
 
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-model-research-latest-directions.md)
@@ -1750,7 +1750,7 @@ Secrets scoped per environment 是一个关键的安全设计：即使某一环�
 
 ## 第 2 来源 — How we set up our cloud agent environment (2026-07-30)
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-we-set-up-our-cloud-agent-environment-cursor-2026-07-30.md) — Cursor 工程团队 7 个月实践复盘（Mathew Hogan & Arvind Saripalli, 7 min read）。v×c=49（v=7, c=7, stars=3），与第 1 来源同 publisher 同 artifact family 的 evolution MERGE。
+> 来源：[原文存档](https://cursor.com/blog/cloud-agent-environment) — Cursor 工程团队 7 个月实践复盘（Mathew Hogan & Arvind Saripalli, 7 min read）。v×c=49（v=7, c=7, stars=3），与第 1 来源同 publisher 同 artifact family 的 evolution MERGE。
 
 **互补角度 5 条**：
 1. **量化采纳曲线**：2025-12 cloud agents 撰写 Cursor monorepo 约 1/10 合并 PR → 2026-07 超过一半（7-day rolling >50%），且内部 cloud agent 已 "author a majority of the code we ship"。这是第 1 来源（产品功能公告）缺少的生产实证。
@@ -1767,7 +1767,7 @@ Secrets scoped per environment 是一个关键的安全设计：即使某一环�
 
 # 视觉 AI 的下一前沿是代码：a16z 关于视觉生成范式转移的论述
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/a16z-com-the-next-frontier-of-visual-ai-is-code.md)
+→ [原文存档](https://a16z.com/the-next-frontier-of-visual-ai-is-code/)
 
 ## 摘要
 
@@ -1878,8 +1878,7 @@ VIGA 与 Articraft3D 是这一方向的代表项目：
 - [ICLR 2026: 英伟达/普渡用 Agent 闭环实现文生 3D](https://github.com/QianJinGuo/wiki-public/blob/main/entities/iclr-2026-英伟达-普渡大学用agent闭环实现文生3d.md) — 同一时期 3D 生成的 Agent 闭环探索
 - [DeepSeek 视觉原语](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-visual-primitives.md) — 视觉表征的另一思路：堆指代精度而非图像分辨率
 - [ICLR Agent 3D 生成](https://github.com/QianJinGuo/wiki-public/blob/main/entities/iclr-agent-3d-generation.md) — Agent 在 3D 生成中的另一研究路径
-- [Ethan He: Cosmos / Grok Imagine / Latent Space 视频 Agent](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ethan-he-cosmos-grok-imagine-latent-space-video-agent-20260606.md) — 视频生成的 Agent 化方向
-- [AI 硬件寒武纪时刻](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-hardware-cambrian-baidu-intelligent-cloud-catalyst-geekpark.md) — AI 硬件的爆发与基础设施工具的关系
+- [AI 硬件寒武纪时刻](https://mp.weixin.qq.com/s/lSCOtbmMq90cQKFXos4mCg) — AI 硬件的爆发与基础设施工具的关系
 - [Ethan He: Cosmos / Grok Imagine / Latent Space 视频 Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ethan-he-cosmos-grok-imagine-latent-space-video-agent-20260606.md) — 视频与多模态生成的前沿
 - Agent 循环设计 — Code → Render → Inspect → Revise 正是 Agent 循环的标准范式
 - [Agentic 工程范式](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agentic-engineering-paradigm.md) — 反馈驱动改进的工程化方法
@@ -2044,7 +2043,7 @@ Memory 分四类（user/feedback/project/reference）避免记忆混乱。每条
 BashTool 的 prompt 已经复杂到像高风险工具专用操作 SOP（定义 git 提交/PR 详细流程、禁止事项、Skill 替代部分 git 流程）。这提示：当某个工具的行为复杂度超过简单描述时，应该用 SOP 而非简单 prompt 来定义它。
 
 ## 相关页面
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-prompt-source-analysis-fanone.md)
+- [原文存档](https://mp.weixin.qq.com/s/ogougiFVBLXAY2IihS94JA)
 - [Claude Code Skills 实践与 Superpowers](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-skills-superpowers-practice.md) — Skill 体系工程化实践
 - [Claude Code Subagent 上下文卫生](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-subagent-context-hygiene.md) — Subagent = Harness 上下文隔离工具
 - [Agent Memory 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture.md) — 与 CC Memory 的对比
@@ -2107,7 +2106,7 @@ BashTool 的 prompt 已经复杂到像高风险工具专用操作 SOP（定义 g
 
 2. **把"system prompt 按公开材料设计"作为 2026 H2 的安全红线**：能公开的（UX 规则、错误信息格式、工具最小说明）放 prompt；不能公开的（高风险分类、权限矩阵、fallback 路由、内部策略开关）放服务端策略层。这意味着 `AGENTS.md` / `skill` / `tool schema` 同样适用此原则——**它们都是模型可见上下文，等同于公开材料**。
 
-3. **为 Coding Agent 引入"工作流层审计链"**：在工具调用层记录"请求 + 历史上下文 + 工具输出 + 计划步骤 + 最终产物"的完整 trace，能在事故后回放而非猜测。这与 [Loop Engineering 的"状态文件"](/raw/articles/loop-engineering-addy-osmani-challengehub) 有共鸣——两者都是"对话之外的可审计载体"。
+3. **为 Coding Agent 引入"工作流层审计链"**：在工具调用层记录"请求 + 历史上下文 + 工具输出 + 计划步骤 + 最终产物"的完整 trace，能在事故后回放而非猜测。这与 [Loop Engineering 的"状态文件"](https://mp.weixin.qq.com/s/vmGx9IELbWgKZqHm-M3G5w) 有共鸣——两者都是"对话之外的可审计载体"。
 
 4. **MCP 连接器按 SaaS 权限系统设计**：连接器推荐 / 用户数据读取 / 第三方动作执行不能只靠模型自觉，需要 opt-in + 权限范围 + 操作日志三件套。这是 Fable 5 提示词里"MCP App 商业边界"的具体工程化。
 
@@ -2126,7 +2125,7 @@ BashTool 的 prompt 已经复杂到像高风险工具专用操作 SOP（定义 g
 | **5. 搜索与版权** | 搜索规则 + 引用 | "信息是否会变"决策 + 长引用限制 | 中 |
 | **6. 工具和环境** | 完整工具 schema | bash/web/file/MCP/网络白名单/只读目录 | **高** |
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-fable-5-prompt-leak-runtime-control-plane-vibecoder-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/vsvqHXCBHWJJFRDOviIj2w)
 
 ## 相关实体
 
@@ -2238,7 +2237,7 @@ Superpowers 的微测方法论最大的贡献不是某一条具体结论，而�
 
 ## 参考来源
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/superpowers-prompt-dont-experiment-shuge.md)
+→ [原文存档](https://mp.weixin.qq.com/s/4XTsfY8SzcjusCU6sUg7yg)
 
 ---
 
@@ -2342,7 +2341,7 @@ AI 评分是「效率」工具，用户评分是「质量」工具。两者结�
 1. **Prompt 管理工具的商业机会**：市场上缺乏专业的 Prompt 管理和调试工具。如果能做一个类似 Postman 的 Prompt API 调试工具（有版本管理、团队协作、评分系统），可能有商业价值。
 2. **垂直场景的 Prompt 库**：与其做通用工具，不如考虑垂直场景（如客服 Prompt 库、法律 Prompt 库、医疗 Prompt 库）。垂直 Prompt 库可以积累场景专属的评分维度和最佳实践，比通用工具更有深度。
 3. **成本监控是刚需**：企业在使用 LLM API 时，API 费用可能快速失控。Prompt 调试工具如果能提供成本监控（每日调用次数、Token 消耗、费用估算），会增强企业用户的信心。
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/prompt-debugger-compare-templates-winty.md)
+→ [原文存档](https://mp.weixin.qq.com/s/8E06C-KCdUushnuoIYW7Jg)
 
 ## 相关实体
 
@@ -2415,7 +2414,7 @@ before_tool_call阶段的参数校验不仅能防止错误，还能作为"AI行�
 - [SkillClaw](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skillclaw.md)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-skill-system-winty.md)
 - [Agent架构关键变化：Harness正在成为新后端](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-architecture-harness-new-backend.md)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-prompt-context-harness.md)
+→ [原文存档](https://mp.weixin.qq.com/s/JycTfNd7EnmWCnJK-QCf0Q)
 
 - [Thin Harness Fat Skills](https://github.com/QianJinGuo/wiki-public/blob/main/entities/thin-harness-fat-skills.md)
 - [Hermes Agent 记忆系统深度拆解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-memory-system-vs-openclaw.md)
@@ -2528,7 +2527,7 @@ LLM Wiki 体现了一种范式转移：从"检索已有知识"到"构建可演�
 3. **关键场景优先迁移**：员工手册、产品规格书、内部流程文档等"写完很少改、天天有人查"的场景是 LLM Wiki 的最优起点。   ^["LLM Wiki 架构解析：Karpathy 的 Markdown 知识库模式 (2026-05-20)"]
 4. **保持 Raw Sources 不可替代**：Wiki 是地图，不是领土。合同条款、实验数据、法规原文等关键内容，Wiki 只做入口，不能替代原文。   ^["LLM Wiki 架构解析：Karpathy 的 Markdown 知识库模式 (2026-05-20)"]
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-wiki-architecture-karpathy-markdown-knowledge-base.md) ^["LLM Wiki 架构解析：Karpathy 的 Markdown 知识库模式 (2026-05-20)"]
+→ [原文存档](https://mp.weixin.qq.com/s/F2JcvwDDT99F_WZexowHGg) ^["LLM Wiki 架构解析：Karpathy 的 Markdown 知识库模式 (2026-05-20)"]
 
 - [上下文工程：三种 Agent Memory 方案对比实验](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-engineering-three-memory-paradigms.md)
 
@@ -2552,7 +2551,7 @@ AI Agent 进了企业，Skill 就不再是程序员桌上的玩具，而是团�
 - [Tencent Vibe Coding To Agentic Engineering Backend](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tencent-vibe-coding-to-agentic-engineering-backend.md)
 - [Claude Code Search Architecture Tencent 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-search-architecture-tencent-2026.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skills-registry-公测开启为企业打造私有的-skill-管理中心.md)
+→ [原文存档](https://mp.weixin.qq.com/s/exZZDr5RiFaXcUMG81zftA)
 
 ## 深度分析
 
@@ -2641,7 +2640,7 @@ Claude Design 的验证机制包含一个关键设计：调用 `fork_verifier_ag
 6. **快速 v0 > 完美 v1**：AI 生成的特点使快速迭代成为可能。在方向未经验证时，优先交付带缺口的 v0 获取反馈，而非追求完美后才发现方向错误。
 
 ## 交叉引用
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-design-skill-web-design-engineer.md)
+- [原文存档](https://mp.weixin.qq.com/s/sffWcLKPkXob2STrhkYBYg)
 - [Skill 设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-design-patterns.md) — 工作流模式与 Skill 设计的关系
 - [Agent Skill 编写指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing.md) — Skill 格式规范参考
 - [Anthropic MCP 重新定义](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-mcp-revisited.md) — Anthropic 官方对 Skill + MCP 互补关系的定义
@@ -2695,7 +2694,7 @@ System Prompt 与 Post-training 是两种截然不同的"行为约束注入方�
 | 适合范围 | 当下任务参数 | 行为规则/约束 |
 | 类比 | 查字典 | 记住 |
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/system-prompt-vs-post-training-behavioral-constraints-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/RkCp-TgitKtSp5Hn9z03Bg)
 
 ## 相关实体
 
@@ -2715,7 +2714,7 @@ System Prompt 与 Post-training 是两种截然不同的"行为约束注入方�
 
 # 深度解析 Hermes Agent 如何实现自进化及其 Prompt / Context / Harness 的设计实践
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-tools-research.md)
+→ [原文存档](https://mp.weixin.qq.com/s/2xFei8dMx99lc-iyrZZrww)
 
 ## 摘要
 
@@ -2843,7 +2842,7 @@ Hermes Agent 的 Skill 系统具有潜在的网络效应：
 - [Openclaw Prompt Context Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-prompt-context-harness.md)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-framework.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-prompt-context-harness.md)
+→ [原文存档](https://mp.weixin.qq.com/s/YgGW92VBP8s846yzIxjVWQ)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/prompt-engineering-guide.md)
 ## 深度分析
@@ -2881,7 +2880,7 @@ Harness Engineering 的 Permission Engine 三行为模型（Allow/Deny/Ask）是
 ## 相关实体
 
 - [滴滴 ibg 智能客服质检系统：3 管线（意图 86% / 合规 90%+ / voc）+ 企业 llm 落地方法论](https://github.com/QianJinGuo/wiki-public/blob/main/entities/didi-ibg-customer-experience-llm-quality-inspection-3-pipelines.md)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/prompt-context-harness-three-evolutions-tencent.md)
+→ [原文存档](https://mp.weixin.qq.com/s/1lqMtE3HjXkbNlPDYhgXyw)
 
 ## 深度分析
 
@@ -2934,7 +2933,7 @@ LLM 底层逻辑是一个极其擅长续写的系统。
 
 旧地图没死，只是颗粒度不对了。旧地图是"零件级"（一个问题配一个零件），新地图是"系统级"（三个底座管三大类问题）。零件会被不断重新打包，但"知识、稳定、自驱"这三个底座要解决的问题会一直在。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-paradigm-2024-to-2026-skills-harness-loop-parsevolve.md)
+→ [原文存档](https://mp.weixin.qq.com/s/Z2wDPa-H_6b1cp0zCBosXg)
 
 ## 补充：企业级实战案例（千问AI平台 2026-07-20）
 
@@ -2959,7 +2958,7 @@ LLM 底层逻辑是一个极其擅长续写的系统。
 
 每层解决前一阶段遇到的天花板，与本文"Prompt→Context→Harness"的三次进化叙事一致。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/prompt-to-harness-enterprise-agent-evolution-qwen-ai-2026-07-20.md)
+→ [原文存档](https://mp.weixin.qq.com/s/xH4cyBJJJlG9cfcmSU5ztA)
 
 ---
 
@@ -2981,7 +2980,7 @@ Hermes Agent = Nous Research 开源 Agent（2月底发布，GitHub 4万+ Stars�
 - [Openclaw Prompt Context Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-prompt-context-harness.md)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-framework.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-deep-dive-alibaba.md)
+→ [原文存档](https://mp.weixin.qq.com/s/2xFei8dMx99lc-iyrZZrww)
 
 ## 深度分析
 
@@ -3051,7 +3050,7 @@ GenAI Utils 提供的统一 Invocation 数据类 + Context Manager 编程模型�
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cong-30-fen-zhong-shou-gu-agent-dao-harness-cheng-wei-xin-hou-duan.md)
 - [从 30 分钟手搓 Agent到 Harness 成为新后端](https://github.com/QianJinGuo/wiki-public/blob/main/entities/从-30-分钟手搓-agent到-harness-成为新后端.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/loongsuite-genai-semconv-alibaba.md)
+→ [原文存档](https://mp.weixin.qq.com/s/vr_wp73rqUQAZT3p_g4GVQ)
 
 ---
 
@@ -3130,7 +3129,7 @@ AINMM 继承 CMMI 的"逐级递进、每级是下一级基础"原则——ML1 �
 - [AI Agent 评测 5 维体系](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-coding-practice-agent-evaluation-five-dimension-three-level-gating.md) — 评估维度的互补框架
 - [Vibe Coding vs Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/comparisons/vibe-coding-vs-agentic-engineering.md) — 工程成熟度背景
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ainmm-ai-native-maturity-model-taobao.md)
+→ [原文存档](https://mp.weixin.qq.com/s/VBbr0jqHSQQn1W-iwRuG8g)
 
 ---
 
@@ -3138,7 +3137,7 @@ AINMM 继承 CMMI 的"逐级递进、每级是下一级基础"原则——ML1 �
 
 > 📊 Level ⭐⭐ | 5.4KB | `entities/nextie-alpha-cognitive-model-4b-on-device.md`
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nextie-alpha-cognitive-model-4b-on-device.md)
+> 原文存档：[原文存档](https://mp.weixin.qq.com/s/ypRly7nJcT3sKkvEI46OLw)
 
 # 新程Alpha认知模型：4B参数端侧部署，群体智能以小搏大比肩GPT-5.4
 
@@ -3193,7 +3192,7 @@ Proactive Agent长期受限于推理成本——7×24运行千亿参数模型的
 - [Agent Self-Improvement](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-self-improvement-six-mechanisms.md)
 - [Agentic AI System Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentic-ai-system-architecture-harness-skill-mcp.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nextie-alpha-cognitive-model-4b-on-device.md)
+→ [原文存档](https://mp.weixin.qq.com/s/ypRly7nJcT3sKkvEI46OLw)
 
 ---
 
@@ -3201,7 +3200,7 @@ Proactive Agent长期受限于推理成本——7×24运行千亿参数模型的
 
 > 📊 Level ⭐⭐ | 5.2KB | `entities/vivo-ai-sales-guide-ecommerce-agent.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vivo-ai-sales-guide-ecommerce-agent.md)
+> -> [原文存档](https://mp.weixin.qq.com/s/ureOXhYFIJrUlZdL9JvEFQ)
 
 # vivo AI 导购落地实践
 
@@ -3254,7 +3253,7 @@ vivo AI 导购项目的核心工程价值在于**小模型 + 大模型协同**�
 - [Integrate Atlassian Confluence Cloud With Amazon Quick](https://github.com/QianJinGuo/wiki-public/blob/main/entities/integrate-atlassian-confluence-cloud-with-amazon-quick.md)
 - [Rag Vs Llm Wiki Enterprise Knowledge Base](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-vs-llm-wiki-enterprise-knowledge-base.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/vivo-ai-sales-guide-ecommerce-agent.md)
+→ [原文存档](https://mp.weixin.qq.com/s/ureOXhYFIJrUlZdL9JvEFQ)
 - [电商 ai 操作系统崛起：从「工具人」到「all in one」+ 行业 knowhow skill 化 + 5 巨头](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ecommerce-ai-os-all-in-one-storeclaw-geek-park-2026.md)
 
 ---
@@ -3267,7 +3266,7 @@ vivo AI 导购项目的核心工程价值在于**小模型 + 大模型协同**�
 
 本文梳理了给 Agent 喂知识的四种方法进化线（Prompt → RAG → CLAUDE.md → Skills），指出前三种的共同死穴是"提前给"，而 Skills 的颠覆在于"按需取"——通过渐进式披露（Progressive Disclosure）三层机制，让知识可以无限积累却始终只有当下需要的那一点出现在模型眼前。Skills 不是一份 markdown，而是可执行的能力。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skills-redefine-agent-knowledge-allen-tang-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/fuhenGVN36CHTvj3LW_D_Q)
 
 ## 四种喂法进化线
 
@@ -3323,7 +3322,7 @@ Anthropic 重新定义的不是"知识的格式"，是**"知识被调用的时�
 
 # Enrich your datasets with business context: Migrating from legacy Topics to semantic datasets in Amazon Quick
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/enrich-your-datasets-with-business-context-migrating-from-le.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/enrich-your-datasets-with-business-context-migrating-from-legacy-topics-to-semantic-datasets-in-amazon-quick)
 
 # Enrich your datasets with business context: Migrating from legacy Topics to semantic datasets in Amazon Quick
 
@@ -3353,7 +3352,7 @@ Legacy Topics provided the initial approach to adding business context to datase
 
 > 📊 Level ⭐⭐⭐ | 7.4KB | `entities/onereason-kuaishou-reasoning-recommender-system.md`
 
-> 原文归档：[原文归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/onereason-kuaishou-reasoning-recommender-system.md)
+> 原文归档：[原文归档](https://mp.weixin.qq.com/s/-qZ_Z8RMm67tv0ciFbpSSA)
 
 快手技术团队 OneRec 团队推出的 **OneReason**——把 Reasoning 真正注入推荐基模的系统性尝试。核心包括：578B 数据三阶段预训练、归纳/溯因/演绎推荐 CoT 设计、"先专后合"强化学习。首次在推荐基础模型上让 thinking 稳定超越 non-thinking（Pass@4 +13.45%），业务收益年化数亿元。
 

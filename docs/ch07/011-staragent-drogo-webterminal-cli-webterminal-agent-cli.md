@@ -252,7 +252,7 @@ Program terminated with signal SIGSEGV, Segmentation fault.
 
 阿里基础设施团队招 AI 推理 + 高性能计算方向（LLM 推理系统工程、GPU/异构计算、性能研发、多模态推理引擎）。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/staragent-webterminal-cli-ali-infra-cli-as-agent-hands.md)
+→ [原文存档](https://mp.weixin.qq.com/s/5qwjuSZmENMovuEStczQEg)
 
 ## 深度分析
 

@@ -13,7 +13,7 @@
 - [Skill Issues Compromising Claude Code With Malicious Skills Agents](../ch01/571-skill-issues-compromising-claude-code-with-malicious-skills.html)
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](383-amazon-bedrock-agentcore.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/intelligent-radiology-workflow-optimization-with-ai-agents.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/intelligent-radiology-workflow-optimization-with-ai-agents-2)
 
 ## 深度分析
 
@@ -82,7 +82,7 @@ AI 智能体工作流的调试难度远高于传统系统——一个端到端�
 
 Exam Prioritization Agent 接收 SageMaker AI 的肺栓塞检测结果并动态调整工作流优先级——这展示了**影像 AI 模型**和**工作流智能体**协同的范式价值：AI 模型发现紧急情况 → 触发智能体重新调度 → 放射科医生优先处理。单纯部署模型只能"发现问题"，与工作流深度整合才能"解决问题"。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/intelligent-radiology-workflow-optimization-with-ai-agents.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/intelligent-radiology-workflow-optimization-with-ai-agents-2)
 
 ---
 

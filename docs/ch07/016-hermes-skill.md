@@ -112,7 +112,7 @@ Skill命中率>70%不一定是好事——可能意味着Skill过度抽象，把
 - [Openclaw Hermes Source Code Agent Architecture Review](../ch01/177-openclaw-hermes.html)
 - [Hermes Agent Vs Openclaw Comparison](../ch04/161-hermes-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-self-evolution-closed-loop-skill-reuse-winty.md)
+→ [原文存档](https://mp.weixin.qq.com/s/NTsLyOrJqxfi0_m1RQTfJA)
 
 ---
 

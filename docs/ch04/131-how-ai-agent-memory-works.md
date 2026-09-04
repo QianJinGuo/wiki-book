@@ -97,7 +97,7 @@ Agent 记忆系统与多个相邻技术存在交集： 提供了长期记忆的�
 ## 相关实体
 - [Rag Knowledge Retrieval](https://github.com/QianJinGuo/wiki-public/blob/main/moc/rag-knowledge-retrieval.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-ai-agent-memory-works.md)
+→ [原文存档](https://memory.cobanov.dev/)
 
 - [Wiki Entities Architecture Map](https://github.com/QianJinGuo/wiki-public/blob/main/queries/wiki-entities-architecture-map.md)
 - [Video Rag Chunking Strategy Deephub Imba](../ch01/168-rag.html)

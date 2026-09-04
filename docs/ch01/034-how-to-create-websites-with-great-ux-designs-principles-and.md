@@ -4,7 +4,7 @@
 
 # How to create websites with great UX designs: Principles and examples
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-to-create-websites-with-great-ux-designs.md)
+> -> [原文存档](https://webflow.com/blog/websites-with-great-ux)
 
 ## 摘要
 Great UX is what turns a website from a passive collection of pages into an experience people remember, return to, and trust — because visitors remember how a site made them feel long after they forget what it looked like. This Webflow article distills six core UX principles (user-first, usability, consistency, accessibility, hierarchy, context) and walks through seven real-world sites — Modash, Outseta, January AI, MarqVision, Anrok, MA Quilts, and Eleken — each demonstrating a different technique for removing friction and guiding visitors toward action. The recurring insight is that the strongest sites are designed around the visitor's task and emotional state, not around the product's feature list.

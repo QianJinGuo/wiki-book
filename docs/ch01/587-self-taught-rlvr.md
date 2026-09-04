@@ -51,7 +51,7 @@
 - [Baidu Wenxin Post Training Evolution](../ch04/257-ai.html)
 - [Vllm V0 To V1 Correctness Before Corrections](451-llm.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/self-taught-rlvr-jd-cii-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/g46P5l_BM99M6T1U084lTg)
 
 ---
 

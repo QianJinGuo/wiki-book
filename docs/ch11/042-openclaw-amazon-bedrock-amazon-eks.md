@@ -158,7 +158,7 @@ POC 可用 Long-term API Key 快速验证，但生产环境必须切换到 IRSA 
 - [Using Amazon Bedrock Agentcore Openclaw Multi 4](../ch04/383-amazon-bedrock-agentcore.html)
 - [Using Amazon Bedrock Agentcore Openclaw Multi 5](../ch04/383-amazon-bedrock-agentcore.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-amazon-bedrock-eks-printer-qc.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/amazon-eks-practice-assistant/)
 
 ---
 

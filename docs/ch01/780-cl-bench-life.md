@@ -16,7 +16,7 @@
 - [Aws Bedrock Agentcore Quality Optimization Flywheel](../ch11/045-bedrock-agentcore.html)
 - [Agent Harness 12 Components 7 Decisions](../ch05/035-agent-harness.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cl-bench-life-tencent-context-learning.md)
+→ [原文存档](https://mp.weixin.qq.com/s/ysSIbSEdC9beb4wxIu8IdA)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-memory-architecture.md)
 ## 深度分析
@@ -43,7 +43,7 @@ Prompt 调试时，应有意构造高噪声、碎片化、包含信息修改的�
 
 对于面向消费者的 AI 产品（聊天机器人、个人助手、社交 AI），CL-Bench Life 的结论直接适用：群聊中的角色混淆和说话人归因是高频错误点，应在产品层面增加身份确认和上下文状态追踪机制。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cl-bench-life-tencent-context-learning.md)
+→ [原文存档](https://mp.weixin.qq.com/s/ysSIbSEdC9beb4wxIu8IdA)
 
 ---
 

@@ -4,7 +4,7 @@
 
 # What Job Interviews Taught Me About Kubernetes
 
-> Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/notnotp-k8s-interviews-non-technical.md)
+> Source: [原文存档](https://notnotp.com/notes/what-job-interviews-taught-me-about-kubernetes/)
 
 ## 核心要点
 
@@ -43,7 +43,7 @@ First one was **uniformity**. Every service deploys the same way. No one secretl
 
 - 文章的核心论点可在生产环境验证
 - 与现有实体的差异化角度：本文来自 notnotp.com 视角
-- 引用源：[Notnotp K8S Interviews Non Technical](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/notnotp-k8s-interviews-non-technical.md)
+- 引用源：[Notnotp K8S Interviews Non Technical](https://notnotp.com/notes/what-job-interviews-taught-me-about-kubernetes/)
 ## 相关实体
 - [from doer to director: the ai mindset shift](029-from-doer-to-director-the-ai-mindset-shift.html)
 - [why internally-built ai fails fund accounting audits](064-why-internally-built-ai-fails-fund-accounting-audits.html)

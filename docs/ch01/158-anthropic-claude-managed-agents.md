@@ -106,7 +106,7 @@ Multiagent Sessions、Outcomes、Dreams 目前均处于研究预览阶段，需�
 - [刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践](../ch03/057-claude-code.html)
 - [Anthropic 长时运行 Agent 架构：对抗式设计 + 合同谈判 + 审美量化](../ch03/004-agent.html) — 另一篇技术解读，覆盖 API 细节和定价
 - [Anthropic PM 的 Agentic 工作流](../ch04/342-anthropic-pm-agentic.html) — 同一时期 Jess Yan 的 PM 视角，同一产品不同维度
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-claude-managed-agents-platform-launch.md)
+→ [原文存档](https://mp.weixin.qq.com/s/B-Usu9rACZG-JJDN_z-Ydw)
 
 ## 架构图
 → （架构图待生成: C4 架构图）
@@ -135,7 +135,7 @@ Multiagent Sessions、Outcomes、Dreams 目前均处于研究预览阶段，需�
 
 ## 第 2 来源：VibeCoder「脑手分离」架构视角（2026-06-11）
 
-VibeCoder 对 Claude Managed Agents 更新（scheduled deployments + vault env vars）的架构解读，提出「脑手分离」四层模型，并给出落地设计路径。原文：[VibeCoder 原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-managed-agents-sandbox-vault-schedule-vibecoder.md)
+VibeCoder 对 Claude Managed Agents 更新（scheduled deployments + vault env vars）的架构解读，提出「脑手分离」四层模型，并给出落地设计路径。原文：[VibeCoder 原文存档](https://mp.weixin.qq.com/s/pZMg55Ol57baA-CB3gLtxg)
 
 ### 核心创新 / 关键数据
 
@@ -179,7 +179,7 @@ VibeCoder 对 Claude Managed Agents 更新（scheduled deployments + vault env v
 - Vaults 文档：https://platform.claude.com/docs/en/managed-agents/vaults
 - Memory 文档：https://platform.claude.com/docs/en/managed-agents/memory
 
-→ [第 2 原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-managed-agents-sandbox-vault-schedule-vibecoder.md)
+→ [第 2 原文存档](https://mp.weixin.qq.com/s/pZMg55Ol57baA-CB3gLtxg)
 
 ---
 

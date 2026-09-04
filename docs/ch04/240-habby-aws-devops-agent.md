@@ -51,7 +51,7 @@ AWS DevOps Agent 默认支持 Slack、Teams 等海外 IM 工具。对于国内�
 **6. 运维知识的数字化沉淀是长期竞争力**
 
 DevOps Agent 的 Skill 上传功能和 RCA 报告是团队知识沉淀的载体。建议：将资深工程师的故障排查经验编写为自定义 Skills；将 RCA 报告作为复盘文档统一归档。这些知识资产的积累，使得团队的运维能力不依赖于个人，而是建立在系统化的知识库之上 。
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/habby-game-aws-devops-agent.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/habby-gaming-aws-devops-agent-implement-intelligent/)
 
 ## 相关实体
 - [9个Agent技能模块化SageMaker微调生命周期](312-ai-agent.html)

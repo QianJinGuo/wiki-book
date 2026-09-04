@@ -190,7 +190,7 @@ SynthID 三年累计标记 1000 亿张图片/视频和约 6 万年音频，新�
 - [Google Debuts Gemini Focused Updates At Io 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/google-debuts-gemini-focused-updates-at-io-2026.md)
 - [Alphaevolve Deepmind Discovery Agent](../ch03/004-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/google-io-2026-agentic-gemini-era.md)
+→ [原文存档](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/)
 
 - [Introducing Gemini Omni](766-introducing-gemini-omni.html)
 - [Google Pm 2026 Five Developer Skills Shubham](../ch03/050-skills.html)

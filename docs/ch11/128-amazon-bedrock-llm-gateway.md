@@ -4,7 +4,7 @@
 
 # Amazon Bedrock + LLM Gateway 实现生产级推理弹性模式
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/implementing-resilience-patterns-with-amazon-bedrock-and-llm.md)
+> 原文存档：[原文存档](https://aws.amazon.com/blogs/machine-learning/implementing-resilience-patterns-with-amazon-bedrock-and-llm-gateway)
 
 ## 摘要
 
@@ -70,7 +70,7 @@ AWS 官方推荐两种 Gateway 方案：轻量级开源方案 **LiteLLM**（适�
 - **多租户 LLM 服务架构** — 多租户环境下的 LLM 服务隔离架构
 - **AWS Well-Architected 可靠性支柱** — AWS 可靠性架构最佳实践
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/implementing-resilience-patterns-with-amazon-bedrock-and-llm.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/implementing-resilience-patterns-with-amazon-bedrock-and-llm-gateway)
 
 ---
 ## 关联

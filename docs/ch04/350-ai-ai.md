@@ -61,7 +61,7 @@ L1个人工具 → L2团队助手 → L3流程节点 → L4数字员工 → L5�
 > 关键判断：多数企业卡在L2（团队助手）而无法进入L3，原因不是技术问题，而是**业务规则和判断标准没有显性化**。叶小钗的框架提示我们，L3的核心是如何让AI真正参与判断而非仅生成内容。
 
 ## 来源
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-native-org-guide-slowdown.md)
+- [原文存档](https://mp.weixin.qq.com/s/MFmOciB003eKLeZim3mp1w)
 - https://mp.weixin.qq.com/s/MFmOciB003eKLeZim3mp1w
 ## 相关实体
 - [Ai Native Team Building Yexiaochai](../ch05/018-ai-native.html)

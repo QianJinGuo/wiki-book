@@ -4,7 +4,7 @@
 
 # 你不知道的 Agent：原理、架构与工程实践
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/你不知道的-agent原理架构与工程实践-v2.md)
+→ [原文存档](https://mp.weixin.qq.com/s/cIQYl9Wr1Eov4ma-_bYh-w)
 
 ## 深度分析
 

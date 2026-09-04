@@ -110,7 +110,7 @@ LingBot-Vision 的"空间原生"定位与 具身智能 的需求高度契合。�
 - GitHub: https://github.com/robbyant/lingbot-vision
 - 项目页: https://technology.robbyant.com/lingbot-vision
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lingbot-vision-spatial-native-vision-foundation-model-ant.md)
+→ [原文存档](https://mp.weixin.qq.com/s/3C6ndYsu5T3h6l6hfiZHsA)
 
 ---
 ## 关联
@@ -137,7 +137,7 @@ LingBot-Vision 的"空间原生"定位与 具身智能 的需求高度契合。�
 - [User Interviews Guide Pro](https://github.com/QianJinGuo/wiki-public/blob/main/entities/user-interviews-guide-pro.md)
 - [估值3000亿63家新实验室杀疯了Murati贝佐斯集体押注下一代Ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/估值3000亿63家新实验室杀疯了murati贝佐斯集体押注下一代ai.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/unitree-ipo-robotics-market.md)
+→ [原文存档](https://www.tanayj.com/p/unitrees-ipo-filing-the-state-of)
 
 ## 深度分析
 **1. 收入结构的"人形机器人翻转"**
@@ -184,7 +184,7 @@ Unitree 计划将 IPO 融资款约 3 亿美元（每年约 1 亿美元）用于 
 - 当前 25,000 美元的人形机器人，实际使用场景可能主要是"站在深圳某商店入口吸引顾客"
 - 真正的工业部署（4% 级别的出货）技术成熟度仍然有限，采购决策需要谨慎评估 ROI
 - 如果用于研究目的，当前阶段人形机器人是合理的选择，但用于生产环境需要等待技术进一步成熟
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/unitree-ipo-robotics-market.md)
+→ [原文存档](https://www.tanayj.com/p/unitrees-ipo-filing-the-state-of)
 
 ---
 
@@ -231,7 +231,7 @@ Unitree 计划将 IPO 融资款约 3 亿美元（每年约 1 亿美元）用于 
 消费级具身智能进入"真智能"时代，中国公司定义游戏规则
 
 ## 与现有知识的链接
-- → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/weilan-babyalpha-a3-machine-dog.md)
+- → [原文存档](https://mp.weixin.qq.com/s/YfZ-bvXAmMBO3LFQ6eUPKA)
 - → [Yann LeCun JEPA世界模型](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yann-lecun-jepa-world-model.md) — AMI Labs具身智能方向
 - → [NVIDIA边缘端LLM for机器人](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-edge-first-llms-av-robotics.md) — 英伟达边缘AI方案对比
 
@@ -282,7 +282,7 @@ Unitree 计划将 IPO 融资款约 3 亿美元（每年约 1 亿美元）用于 
 
 # Google DeepMind Robotics Accelerator（欧洲版，3 个月计划，15 家初创）
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/powering-the-future-of-robotics-in-europe.md)
+> 原文存档：[原文存档](https://deepmind.google/blog/powering-the-future-of-robotics-in-europe/)
 
 ## 概述
 
@@ -366,7 +366,7 @@ Google DeepMind 2026-06-09 启动 **Google DeepMind Accelerator: Robotics** 欧�
 - [farewell ai2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/farewell-ai2.md)
 - [无惧off-policy偏移！bengio团队解绑后训练，大模型rl提速50倍](https://github.com/QianJinGuo/wiki-public/blob/main/entities/trajectory-balance-asynchrony-tba-bengio-papweekly.md)
 - [sft, rl, and on-policy distillation through a distributional](https://github.com/QianJinGuo/wiki-public/blob/main/entities/untitled-v2.md)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-amazon-sagemaker-ai)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
 ## 深度分析
@@ -406,7 +406,7 @@ Physical AI is moving from research into production.
 
 # 蔚蓝BabyAlpha A3消费级机器狗撕开英伟达垄断
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/weilan-babyalpha-a3-machine-dog.md)
+→ [原文存档](https://mp.weixin.qq.com/s/YfZ-bvXAmMBO3LFQ6eUPKA)
 
 ## 深度分析
 

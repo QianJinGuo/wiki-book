@@ -4,7 +4,7 @@
 
 # 扣子 3.0 离谱更新：把 Codex、Claude Code 拉进一个项目工作？
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/coze-3-0-local-agent-codex-claude-code-project.md)
+→ [原文存档](https://mp.weixin.qq.com/s/4EaopxsTHEGx1f91DteElg)
 
 ## 摘要
 

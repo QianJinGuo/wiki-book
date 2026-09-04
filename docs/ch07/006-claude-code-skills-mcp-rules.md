@@ -204,7 +204,7 @@ Skill 列表仅占上下文窗口 1%（默认 8000 字符），每个 Skill 描�
 
 作者的核心结论"Skill 的质量 = 提示词的质量"应该成为企业 Skill 建设的核心指导思想。这意味着与其研究如何让 Skill 自动触发、如何实现 Skill 嵌套调用等工程机制，不如专注于提升 Skill 提示词本身的编写能力。一个高质量的 Skill 提示词需要：精准的任务分解（每个 Step 边界清晰，避免模型在步骤之间迷路）、明确的输出期望（告诉模型每个步骤完成后应该输出什么）、有效的错误处理（告诉模型遇到常见错误时应该如何修正）。这些本质上都是"提示词工程"能力，而非"编程"能力。企业在培养 AI Agent 开发团队时，应该将提示词工程作为与代码能力同等重要的核心技能，而非将其视为"调参"之类的次要工作。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-skills-mcp-rules-source-analysis.md)
+→ [原文存档](https://mp.weixin.qq.com/s/FzTyopCXH-IVSYJyTMjWxA)
 
 ---
 

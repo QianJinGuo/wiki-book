@@ -2,8 +2,8 @@
 
 > 📊 Level ⭐⭐ | 13.2KB | `entities/anthropic-官方-agent-harness-平台claude-managed-agents-完整指南.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-官方-agent-harness-平台claude-managed-agents-完整指南.md)
-从微信文章 [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-官方-agent-harness-平台claude-managed-agents-完整指南.md) 提取。
+> -> [原文存档](https://mp.weixin.qq.com/s/A_ksLCNmIL4lXLcZeVSPsQ)
+从微信文章 [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](https://mp.weixin.qq.com/s/A_ksLCNmIL4lXLcZeVSPsQ) 提取。
 
 ## 核心内容
 source_url: https://mp.weixin.qq.com/s/A_ksLCNmIL4lXLcZeVSPsQ

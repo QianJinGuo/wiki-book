@@ -4,7 +4,7 @@
 
 # Tether Developer Grants: 端侧 AI + 自托管支付的生态扩张
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tether-launches-developer-grants-program-for-local-ai-paymen.md)
+> -> [原文存档](https://cryptobriefing.com/tether-developer-grants-local-ai-payments/)
 
 ## 摘要
 
@@ -48,7 +48,7 @@ Tether 的布局同时踩中了两个趋势：**端侧 AI 推理**和**去中心
 
 - [Tether launches developer grants program](../ch11/166-tether-launches-developer-grants-program-for-local-first-ai.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tether-launches-developer-grants-program-for-local-ai-paymen.md)
+→ [原文存档](https://cryptobriefing.com/tether-developer-grants-local-ai-payments/)
 
 ---
 ## 关联

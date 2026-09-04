@@ -125,7 +125,7 @@ Trigger 关键字粗筛 + 语义打分 tie-breaker 的两层检索机制，本�
 
 ## 相关页面
 → [Hermes Agent 自进化机制](161-hermes-agent.html)（Skills 系统概述）
-→ [winty·Hermes Self-Improving 概览](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-self-improving-overview-winty.md)（同系列）
+→ [winty·Hermes Self-Improving 概览](https://mp.weixin.qq.com/s/KJwNgGFBXGUzjwCi2jMLwg)（同系列）
 
 ## 相关实体
 - [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](../ch01/284-agent-skill.html)
@@ -154,7 +154,7 @@ Trigger 关键字粗筛 + 语义打分 tie-breaker 的两层检索机制，本�
 - [Claude Code Prompt 提示词体系源码解析](../ch09/050-claude-code-prompt.html)
 - [Agent 原理、架构与工程实践](../ch03/004-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-skill-system-winty.md)
+→ [原文存档](http://mmbiz.qpic.cn/mmbiz_png/2wV7LicL762biccoloxNG8ibMibILFtMe4b6RicRl2wLQOg6ILib62aVbfIurHS48oMcDspMbZk3Xa3QSKDd1ichNu8Dw/0?wx_fmt=png)
 
 - [AI Agent 工程师能力地图](312-ai-agent.html)
 

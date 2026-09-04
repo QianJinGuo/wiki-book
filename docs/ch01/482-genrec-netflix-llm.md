@@ -46,7 +46,7 @@ GenRec 不只是"换一个 Transformer"，而是指向推荐系统的四个方�
 - [LLM 预训练 vs SFT](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/llm-pretraining-vs-sft.md) — 两阶段训练框架的对照
 - [LLM RL 算法演化](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026.md) — GRPO 等 RL 方法的成本权衡
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/genrec-towards-llm-native-recommendation-at-netflix.md)
+→ [原文存档](https://netflixtechblog.com/genrec-towards-llm-native-recommendation-at-netflix-f20be6f643e3?source=rss----2615bd06b42e---4)
 
 ---
 

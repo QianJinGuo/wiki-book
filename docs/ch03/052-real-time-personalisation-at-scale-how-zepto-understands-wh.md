@@ -107,7 +107,7 @@ Zepto 的推荐系统演化路径（CF → 人口加权排序 → 队列级模�
 4. **推荐系统演化应遵循渐进式路径**：从简单模型（CF）开始，逐步引入更复杂的架构，每个阶段解决前一阶段的结构性限制，而非直接跳到最复杂的方案。
 5. **多目标损失函数平衡商业指标**：单一损失函数（如仅优化 CTR）会导致推荐同质化，混合损失函数可以同时优化转化率、多样性和长尾发现。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/zepto-real-time-personalisation-dual-sequence-ranker.md)
+→ [原文存档](https://miro.medium.com/v2/da:true/resize:fill:64:64/0*Zdo4al9KE5LuqNxm)
 
 ---
 ## 关联

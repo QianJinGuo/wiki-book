@@ -10,20 +10,33 @@ PROJECT_DIR="$(dirname "$(dirname "$SCRIPT_DIR")")"
 cd "$PROJECT_DIR"
 
 PROJECT="${2:-ai-engineering}"
+SITE_DIR="$PROJECT_DIR/site"
 
 echo "=== Deploying to Cloudflare Pages ==="
 echo "Project: $PROJECT"
 
-# Check if site/ exists
-if [ ! -d "site" ]; then
+# Only the public build directory is deployable. Do not accept an alternate
+# path or a private build directory through a symlink or environment override.
+if [ ! -d "$SITE_DIR" ]; then
     echo "ERROR: site/ not found. Run ./scripts/build.sh first."
     exit 1
 fi
+if [ "$(cd -P "$SITE_DIR" && pwd)" != "$PROJECT_DIR/site" ]; then
+    echo "ERROR: site/ is not the public repository output directory." >&2
+    exit 1
+fi
+node scripts/check-public-build.mjs --source "$PROJECT_DIR" --site "$SITE_DIR"
 
-# Slim search index if needed (reduces 68MB → ~8MB)
-if [ -f "scripts/slim-search-index.py" ]; then
-    echo "Slimming search index..."
-    python3 scripts/slim-search-index.py
+# build.sh already produced the slim index and the aligned graph. Rewriting
+# either file here would allow an unverified output to reach R2.
+if [ ! -f "$SITE_DIR/search/search_index.json" ] || [ ! -f "/tmp/neighbor_graph.json" ]; then
+    echo "ERROR: public RAG artifacts are missing; run scripts/build.sh first." >&2
+    exit 1
+fi
+# Safety check: never delete an output file to make an unsafe deployment fit.
+if find "$SITE_DIR" -type f -size +25M -print -quit | grep -q .; then
+    echo "ERROR: public site contains a file larger than the Cloudflare Pages limit." >&2
+    exit 1
 fi
 
 # Upload RAG assets to R2
@@ -32,15 +45,10 @@ if [ -f "/tmp/neighbor_graph.json" ]; then
   npx wrangler r2 object put ai-engineering-search/neighbor_graph.json --file /tmp/neighbor_graph.json --remote 2>&1 | tail -1
 fi
 # Upload slimmed search index to R2
-if [ -f "site/search/search_index.json" ]; then
-  npx wrangler r2 object put ai-engineering-search/search_index.json --file site/search/search_index.json --remote 2>&1 | tail -1
-fi
-
-# Safety check: remove any remaining oversized files (>25MB CF Pages limit)
-find site -size +25M -delete 2>/dev/null || true
+ npx wrangler r2 object put ai-engineering-search/search_index.json --file "$SITE_DIR/search/search_index.json" --remote 2>&1 | tail -1
 
 # Deploy
 echo "Deploying..."
-npx wrangler pages deploy site --project-name="$PROJECT"
+npx wrangler pages deploy "$SITE_DIR" --project-name="$PROJECT"
 
 echo "=== Cloudflare deployment complete ==="

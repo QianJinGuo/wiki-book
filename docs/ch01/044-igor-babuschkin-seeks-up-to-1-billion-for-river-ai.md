@@ -4,7 +4,7 @@
 
 # Igor Babuschkin Seeks Up To $1 Billion For River AI
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/letsdatascience-igor-babuschkin-seeks-up-to-1-billion-for-river-ai-8c36ce09.md)
+→ [原文存档](https://letsdatascience.com/news/igor-babuschkin-seeks-up-to-1-billion-for-river-ai-8c36ce09)
 
 ## 摘要
 
@@ -101,7 +101,7 @@ Forbes 的报道基于"多位知情人士"和"文件审查"（incorporation docu
 - [模型规模推演](428-model-size-scaling-in-2023-2031.html) — 算力军备竞赛的技术背景
 - [从执行者到导演的 AI 心态转变](029-from-doer-to-director-the-ai-mindset-shift.html) — AI 时代的人才战略思考
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/letsdatascience-igor-babuschkin-seeks-up-to-1-billion-for-river-ai-8c36ce09.md)
+→ [原文存档](https://letsdatascience.com/news/igor-babuschkin-seeks-up-to-1-billion-for-river-ai-8c36ce09)
 
 ---
 

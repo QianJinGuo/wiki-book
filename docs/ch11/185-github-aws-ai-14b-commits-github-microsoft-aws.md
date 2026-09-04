@@ -4,7 +4,7 @@
 
 # GitHub + AWS 多云转折：AI 编码激增 14B commits 压垮 GitHub，Microsoft 跨云买 AWS 容量
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/microsoft-github-aws-ai-capacity-crunch.md)
+> 原文存档：[原文存档](http://runtimewire.com/article/microsoft-github-aws-ai-capacity-crunch)
 
 ## 概述
 

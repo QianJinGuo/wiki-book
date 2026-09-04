@@ -45,7 +45,7 @@ Claude 的自我评估不是"不够准确"，而是方向性的：它倾向于�
 5. **用 Sprint Contract 将"结果验收"外置为独立文件**：在每个 sprint 开始前，生成者以结构化格式写出成功标准、验证方法、已知风险，并获得评估者签字确认。这使"完成"的定义成为外部可查询的契约，而非模型自我声称的状态。
 
 ## Sources
-- → [Claude Code 可控性：软规则陷阱（InfoQ 编译）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-governance-soft-rules-hard-constraints.md)
+- → [Claude Code 可控性：软规则陷阱（InfoQ 编译）](https://mp.weixin.qq.com/s/OMjAhF7-hjMSZMXXN-oivw)
 
 ## 相关实体
 - [Claude Code Session Management 1M Context](../ch03/057-claude-code.html) — context rot 管理

@@ -76,7 +76,7 @@ Zalando 将 CSLB 实现为独立的、无框架依赖的 JVM 模块，唯一依�
 4. **边缘流量和内部流量应使用不同路由策略**：边缘流量需要全局负载均衡、安全防护、协议转换等能力，内部流量更关注延迟和故障隔离。
 5. **基础设施组件应设计为框架无关**：最小依赖、独立模块的设计使得组件可以在多个服务间复用，避免框架版本锁定。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/zalando-client-side-load-balancing-million-rps.md)
+→ [原文存档](https://img01.ztat.net/engineering-blog/posts/2026/06/images/cslb-consistent-hash-load-balancing-after.png?imwidth=1320#previewimage)
 
 ---
 ## 关联

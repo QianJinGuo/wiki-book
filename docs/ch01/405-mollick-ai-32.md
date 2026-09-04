@@ -40,7 +40,7 @@ AI 不再是单一「聊天机器人」概念，而是分化为四类：图像�
 ## 相关实体
 
 - [fusedash -  generative analytics platform | ai dashboard sof](258-fusedash-generative-analytics-platform-ai-dashboard-sof.html)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-recent-history-of-ai-in-32-otters.md)
+→ [原文存档](https://www.oneusefulthing.org/p/the-recent-history-of-ai-in-32-otters)
 
 ## 深度分析
 

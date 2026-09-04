@@ -212,7 +212,7 @@ Netflix 的 fallback 设计中有一条重要规则：**原始 wide partition �
 - [Toto 2](143-toto-2-context-aware-log-analytics-for-complex-distributed.html)
 - [Vietnam To Develop Domestic Cloud So It Can Ditch Risky Overseas Operators For Government Workloads](162-vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-over.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/dynamically-splitting-wide-partitions-in-cassandra-for-time-.md)
+→ [原文存档](https://netflixtechblog.com/dynamically-splitting-wide-partitions-in-cassandra-for-time-series-workloads-0eded064f456?source=rss----2615bd06b42e---4)
 
 ---
 

@@ -4,7 +4,7 @@
 
 # The art and science of hyperparameter optimization on Amazon Nova Forge
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-art-and-science-of-hyperparameter-optimization-on-amazon-nova-forge.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/the-art-and-science-of-hyperparameter-optimization-on-amazon-nova-forge/)
 
 ## 深度分析
 

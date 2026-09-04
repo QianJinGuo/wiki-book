@@ -173,7 +173,7 @@ Gateway (127.0.0.1:8642)
 
 - [Hermes Agent Goal And Kanban](../ch04/161-hermes-agent.html) — Hermes Agent 基础教程（/goal + Kanban）
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-kanban-deep-test-by-wjjagi-2026.md)
+→ [原文存档](https://zhuanlan.zhihu.com/p/2036955913249105049)
 
 ---
 

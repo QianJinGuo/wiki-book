@@ -81,7 +81,7 @@ budget_limit 模板：到点了，别开新工作，把进展、剩下的事、�
 - [Agent Memory Architecture](323-perplexity-brain-self-improving-agent-memory-architecture.html)（状态为什么得落在模型外面）
 
 ## 相关页面
-- [原文存档：Codex /goal 实现拆解](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/codex-goal-implementation-breakdown.md)
+- [原文存档：Codex /goal 实现拆解](https://mp.weixin.qq.com/s/7vqPgUmfrpIHtf__Z4M_KA)
 
 ## 相关实体
 - [Codex /goal: The Six-Hour Run That Survived a Five-Hour Pause](../ch09/047-codex-goal-six-hour-run.html)

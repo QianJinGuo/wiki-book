@@ -54,7 +54,7 @@ AI 网关的透明化处理（模型路由、负载均衡、内容安全、密�
 - [我用 Skillmd 做了一个简历生成器](../ch07/054-skill.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/openai-developer-ecosystem.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aliyun-agentrun-2line-integration.md)
+→ [原文存档](https://mp.weixin.qq.com/s/139AsxhoOacnO84DkMN_ow)
 
 ---
 

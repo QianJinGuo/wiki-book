@@ -133,7 +133,7 @@ Skills 是按需加载的专业知识包，应绑定到特定目录实现模块�
 - [Claude Code Large Codebase Harness Configuration](../ch03/057-claude-code.html)
 - [Claude Code Openclaw Memory Vector Db Doubt](../ch03/057-claude-code.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-claude-code-large-codebase-best-practices-50002a089323.md)
+→ [原文存档](https://mp.weixin.qq.com/s/svqke7ZZPU4q5iemPiUMWA)
 
 - 博客原文：https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start
 - [openai 的最强对手，离「ai windows」又近了一步](560-anthropic-ai.html)

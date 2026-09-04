@@ -109,7 +109,7 @@ gemini-3.1-pro-preview 中位 tokens/run = 9k (其他模型 100k+) - **直接 re
 | 成本维度 | $/solve 数据 | 无 | 无 |
 | 中文模型对比 | 明确 "中文模型更舒适攻击 DB" | 无 | 无 |
 
--> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kasra-blog-llm-hacking-empirical-test.md)
+-> [原文存档](https://kasra.blog/blog/i-spent-1500-seeing-if-llms-could-hack-my-app/)
 
 ## 深度分析
 

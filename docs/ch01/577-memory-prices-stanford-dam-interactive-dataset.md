@@ -75,7 +75,7 @@ DRAM 和 NAND $/GB 从 Keepa **月度刷新**；HBM 季度更新（Epoch AI）�
 
 该数据集延续了 John C. McCallum 的经典工作（jcmit.net，经 Internet Archive 存档），是目前公开可获取的最长时间跨度内存价格追踪项目。与 Epoch AI 的加速器成本数据互补——前者关注存储组件价格趋势，后者关注整体芯片成本结构。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/memory-prices-stanford.md)
+→ [原文存档](https://dam.stanford.edu/memory-prices.html)
 
 ---
 ## 关联

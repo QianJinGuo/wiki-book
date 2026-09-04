@@ -15,7 +15,7 @@ https://developers.google.com/program/my-benefits
 - [Claude Opus 47](340-claude.html)
 - [Hermes Agent Getting Started Guide 2026](../ch04/161-hermes-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/google-开发者福利每月免费领取-10-美金别忘了来领啊.md)
+→ [原文存档](https://mp.weixin.qq.com/s/OXUIc9MibcYWXX25u_duPw)
 
 ## 深度分析
 

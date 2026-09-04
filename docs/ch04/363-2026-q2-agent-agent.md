@@ -58,7 +58,7 @@ _A CPU-Centric Perspective on Agentic AI_（2025）：工具处理最多占完�
 
 GPU 继续推理，CPU 维持并发环境/任务队列/工具调用，KV 和内存保存沙箱与日志，网络负责芯片间数据传输——三者协同决定 Agent 系统总效率。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-into-the-world-tencent-research-q2-review-2026-07-22.md)
+→ [原文存档](https://mp.weixin.qq.com/s/ObcMGtaQX7I8vfi6QLQOuA)
 
 ---
 ## 关联

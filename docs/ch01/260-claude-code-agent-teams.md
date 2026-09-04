@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 12.5KB | `entities/claude-code-agent-teams-task-decomposition-ruofei.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-agent-teams-task-decomposition-ruofei.md)
+> -> [原文存档](https://mp.weixin.qq.com/s/9bDg-2Bq8sXuG-E-5FwmUQ)
 
 # Claude Code Agent Teams 实战：怎么拆任务、控权限、收证据
 

@@ -37,7 +37,7 @@ Bedrock 支持在原始基础模型基础上封装一层 Application Inference P
 | 部署复杂度 | 低 | 中（需维护 Gateway） | 低（2 条 CF 命令） |
 | BU 隔离 | IAM Principal 标签 | Virtual Key | Application Inference Profile |
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/基于-application-inference-profile-为-amazon-bedrock-构建分业务单元的近实.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/blog-bedrock-per-bu-cost-alarms)
 
 ---
 ## 关联

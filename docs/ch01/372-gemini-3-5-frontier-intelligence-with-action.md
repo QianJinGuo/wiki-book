@@ -143,7 +143,7 @@ Gemini 3.5 的开发遵循 Google 的 **Frontier Safety Framework**（前沿安�
 
 4. **团队能力建设**：培养具备 AI 时代所需技能的工程团队
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gemini-3-5-frontier-intelligence.md)
+→ [原文存档](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/)
 
 ## 相关实体
 

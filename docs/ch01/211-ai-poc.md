@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 14.8KB | `entities/很多企业做完-ai-poc为什么还是上不了生产.md`
 
-[很多企业做完 Ai Poc为什么还是上不了生产](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/很多企业做完-ai-poc为什么还是上不了生产.md)
+[很多企业做完 Ai Poc为什么还是上不了生产](https://mp.weixin.qq.com/s/w9SWYuM7d_rI1GBYdXJyeA)
 
 # 很多企业做完 AI PoC，为什么还是上不了生产
 > AI 项目最难的，从来不是把 Demo 做出来，而是把系统稳定跑进真实业务。
@@ -99,7 +99,7 @@ AI 项目从 PoC 到生产的失败，本质上是一个**系统工程问题**�
 - [Generalization Dynamics Of Lm Pre Training Jiaxin Wen](../ch04/257-ai.html)
 - [Agent Framework Owl Principles](../ch03/004-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/很多企业做完-ai-poc为什么还是上不了生产.md)
+→ [原文存档](https://mp.weixin.qq.com/s/w9SWYuM7d_rI1GBYdXJyeA)
 
 ---
 

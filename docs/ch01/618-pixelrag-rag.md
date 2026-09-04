@@ -56,7 +56,7 @@ PixelRAG：页面/PDF → 无头浏览器渲染截图切片 → 视觉大模型�
 - **成本优势**：尽管引入了 VLM 编码，Agent 场景下总 token 消耗反而降至 1/10——因为视觉编码的压缩效率高于文本解析
 - **发展方向**：随多模态 Embedding 模型（如 Qwen3-VL-Embedding）和 VLM 的能力提升，视觉 RAG 的优势只会扩大
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/pixelrag-screen-shot-visual-rag-berkeley-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/Igx2Srav3EKVPaQSX3cgFA)
 
 ---
 ## 关联

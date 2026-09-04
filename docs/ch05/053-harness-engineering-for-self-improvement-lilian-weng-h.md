@@ -78,7 +78,7 @@ Karpathy's autoresearch: 规划 → 执行 → 观察/测试 → 改进 的目�
 
 **结果**：Terminal-Bench 0.722→0.806 (+8.4pp)，同模型同工具，只换 Harness。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/memoharness-harness-learns-from-experience-nd-saint-marys-2026-07-20.md)
+→ [原文存档](https://mp.weixin.qq.com/s/1UfFSdrtnp07WIqe1gX0Nw)
 
 ### 进化搜索
 
@@ -115,7 +115,6 @@ Karpathy's autoresearch: 规划 → 执行 → 观察/测试 → 改进 的目�
 
 ## 参考
 
-→ [raw/articles/kZrryL8_fxfq2pSFw6LSqg|原文存档]
 → [Lilian Weng 原博客](https://lilianweng.github.io/posts/2026-07-04-harness/)
 
 [^1]: raw/articles/kZrryL8_fxfq2pSFw6LSqg

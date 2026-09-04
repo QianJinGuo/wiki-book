@@ -100,7 +100,7 @@ AI-DLC 不依赖单次提问的"聪明"，而是通过流程规则、质量检�
 | 实施者 | 紫讯（跨境电商） | 通用数据工程团队 |
 | 角度 | 实战落地 + 复盘 | 角色转型 + 工具链集成 |
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/从ai辅助编程到ai-dlc紫讯落地-ai-原生研发新范式的实践.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/ai-ai-dlc-implementation-ai-practice/)
 ## 第 2 来源：AI-DLC 在数据工程中的实践
 
 | 维度 | 本实体（紫讯软件研发） | 第 2 来源（数据工程） |
@@ -120,7 +120,7 @@ AI-DLC 不依赖单次提问的"聪明"，而是通过流程规则、质量检�
 4. **多维度质量规则类别** — 完整性/唯一性/跨表对账/跨源比对/时效性五类规范
 5. **Human Gate 实践模式** — 口径定义、阈值设定、架构选型三类关键决策点
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-dlc-在数据工程中的实践从分层建模到数据质量的全流程协作.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/ai-dlc-ai-driven-development-life-cycle-2025-development)
 
 ---
 ## 关联

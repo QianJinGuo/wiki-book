@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 9.7KB | `entities/claude-pilled-phenomenon-xinzhiyuan-2026.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-pilled-phenomenon-xinzhiyuan-2026.md)
+> -> [原文存档](https://mp.weixin.qq.com/s/QieZJNBhQYQWoFAZvxBwAw)
 
 # Claude统治一切！吞下这颗红药丸，焊工也是顶尖程序员
 

@@ -81,7 +81,7 @@ Steering 文件中配置的 `AUTONOMOUS MODE` 使 AI 能够完整执行 Step 1-6
 - [Agentic AI 系统架构与分层模型](../ch05/067-harness-skill.html)
 - [让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](../ch03/057-claude-code.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-understanding-component-library-intelligent-d2c-architecture-aws-kiro-mcp-skills.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/ai-understanding-component-library-intelligent-d2c-architecture-aws-kiro-mcp-skills/)
 
 - [使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊AWS官方博客](../ch03/004-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/ai-skill-design.md)

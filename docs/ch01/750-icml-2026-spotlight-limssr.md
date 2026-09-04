@@ -4,7 +4,6 @@
 
 # ICML 2026 Spotlight | 直面「模态缺失」挑战：北大彭宇新团队联合福大柯逍团队提出LIMSSR，面向训练阶段不完整观测的精准评价
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/icml-2026-spotlight-直面模态缺失挑战北大彭宇新团队联合福大柯逍团队提出limssr面向训练阶段不完整观测的精准评价.md)
 
 # ICML 2026 Spotlight | 直面「模态缺失」挑战：北大彭宇新团队联合福大柯逍团队提出LIMSSR，面向训练阶段不完整观测的精准评价
 

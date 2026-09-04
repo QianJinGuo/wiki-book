@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 7.3KB | `entities/skill-development-guide-aliyun-2026.md`
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-development-guide-aliyun-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/FgGVPw0BOZEu5sH1FdrVoQ)
 
 ## 核心价值
 阿里内部工程师分享的 **Skill（技能）开发完整教程**，从概念定义到一站式开发助手，覆盖 Skill 整个生命周期。

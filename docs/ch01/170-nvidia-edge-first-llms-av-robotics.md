@@ -47,7 +47,7 @@ Alpamayo 1 使用 Flow Matching 轨迹解码（超越简单回归）、历史轨
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](../ch05/008-harness.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/ai-misc-topics-frontier.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-edge-first-llms-av-robotics.md)
+→ [原文存档](https://developer.nvidia.com/blog/build-next-gen-physical-ai-with-edge%e2%80%91first-llms-for-autonomous-vehicles-and-robotics/)
 
 ---
 

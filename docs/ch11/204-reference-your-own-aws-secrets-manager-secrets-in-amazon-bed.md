@@ -4,7 +4,7 @@
 
 # Reference your own AWS Secrets Manager secrets in Amazon Bedrock AgentCore Identity
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/bedrock-agentcore-secrets-manager-identity.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/reference-your-own-aws-secrets-manager-secrets-in-amazon-bedrock-agentcore-identity/)
 
 ## 深度分析
 

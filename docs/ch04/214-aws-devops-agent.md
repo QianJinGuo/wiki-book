@@ -50,7 +50,7 @@ CloudWatch 告警的 AlarmDescription 字段应包含结构化业务上下文（
 **6. 将 DevOps Agent 定位为"调查工具"而非"修复工具"**
 
 当前 Agent 的价值在于解放工程师的调查工作，而非替代工程师做决策。建议保持"只读操作"的设计原则，让 Agent 提供上下文、假设、修复建议，由工程师判断和执行。这既降低了自动化修复的风险，也为未来向"自动修复"演进保留了安全边界 。
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-devops-agent-实战云网络故障自主调查与修复建议.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/aws-devops-agent-network-fault/)
 
 ## 相关实体
 - [Habby 游戏借助 AWS DevOps Agent 实现智能运维最佳实践](214-aws-devops-agent.html)

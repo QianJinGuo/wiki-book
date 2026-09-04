@@ -61,7 +61,7 @@
 - [Agentcore Harness](../ch05/008-harness.html)
 - [Aws Bedrock Ops Alert](211-bedrock.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/bedrock-image-content-precise-analysis.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/image-analytics-case-study-practice/)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/vision-multimodal.md)
 ## 深度分析

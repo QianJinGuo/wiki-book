@@ -15,7 +15,7 @@
 - [Pi Mono Github](474-github.html)
 - [Prompt Debugger Compare Templates Winty](https://github.com/QianJinGuo/wiki-public/blob/main/entities/prompt-debugger-compare-templates-winty.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-realtime-api-architecture.md)
+→ [原文存档](https://mp.weixin.qq.com/s/bNx5ojRYJw0HkKSjRiLLVQ)
 
 - [openai发布新一代实时语音模型，能够像人说话一样进行推理、翻译和转录](316-openai.html)
 
@@ -43,7 +43,7 @@
 
 **在系统可观测性建设中，状态集中是双刃剑——简化了问题定位，但也意味着 transceiver 成为单点**。需要在 transceiver 侧增加完善的 metrics、traces 和健康检查机制，确保状态集中带来的可见性优势不被故障定位的复杂性抵消。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-realtime-api-architecture.md)
+→ [原文存档](https://mp.weixin.qq.com/s/bNx5ojRYJw0HkKSjRiLLVQ)
 
 ---
 

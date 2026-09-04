@@ -35,7 +35,7 @@ AI 时代，验证信息的准确性和完整性比从零生成信息更重要�
 - [Google Agentic Rag Sufficient Context Agent Framesqa](../ch03/004-agent.html)
 - [Harness Engineered Business Agent Evaluation Aliyun Boyu](../ch05/008-harness.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/perplexity-computer-knowledge-work-empirical-study.md)
+→ [原文存档](https://research.perplexity.ai/articles/how-ai-agents-reshape-knowledge-work)
 
 ## 三个独有贡献 (不应合并到现有 entity)
 

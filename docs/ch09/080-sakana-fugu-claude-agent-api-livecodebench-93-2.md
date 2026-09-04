@@ -4,7 +4,7 @@
 
 # Sakana Fugu 发布：Claude 禁令后的多 Agent 编排 API，LiveCodeBench 93.2
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/sakana-fugu-livecodebench-93-2.md)
+> 原文存档：[原文存档](https://www.implicator.ai/sakana-fugu-launches-with-93-2-livecodebench-score-after-claude-ban/)
 
 ## 摘要
 
@@ -76,7 +76,7 @@ Fugu 的发布时机非常精准——Anthropic 在 2026 年 6 月 12 日宣布�
 - **LiveCodeBench 编程基准** — 编程能力基准测试
 - **AI 模型供应链风险** — 模型供应商依赖的风险管理
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/sakana-fugu-livecodebench-93-2.md)
+→ [原文存档](https://www.implicator.ai/sakana-fugu-launches-with-93-2-livecodebench-score-after-claude-ban/)
 
 ---
 ## 关联

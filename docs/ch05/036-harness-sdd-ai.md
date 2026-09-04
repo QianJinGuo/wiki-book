@@ -16,7 +16,7 @@
 - [Stepan Gershuni Ai Native Startup Guide](018-ai-native.html)
 - [Oz Multi Harness Cloud Agent Orchestration](../ch04/242-agent-orchestration.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-sdd-duiwu-ai-fullstack-dewux.md)
+→ [原文存档](https://mp.weixin.qq.com/s/ygQGSH5c7GHYDvkqWoQTXQ)
 
 ## 深度分析
 

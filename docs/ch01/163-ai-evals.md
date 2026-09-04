@@ -166,7 +166,7 @@ Agent 评估需要额外的维度： ^["Evals到底在评什么？一文拆解AI
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/evaluation-and-benchmarks.md)
 ## 第 2 来源 — 腾讯 TEG 网关测试团队「AI Agent & Skill 测评方案及落地实践」(2026-06-16)
 
-> Source: [第2原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-teg-agent-skill-evaluation-tperf-martinskxu-2026-06-16.md)
+> Source: [第2原文存档](https://mp.weixin.qq.com/s/PUbGqheJhFMmb6hGj1ZtOw)
 > Author: martinskxu (腾讯程序员 / 腾讯技术工程)
 > Team: TEG 云架构平台部 网关测试团队
 > Date: 2026-06-16 17:33
@@ -302,7 +302,7 @@ vs Anthropic Demystifying: **过程/结果/效率 三维** — 腾讯加 **鲁�
 - **TPerf 案例可参考**: 性能分析 Agent 是"任务型 + 知识型 Skill"的典型组合,适合作为入门参考
 - **错误级联放大是 Agent 评测的核心难点**: 任何"过程质量"评估必须考虑前序步骤对后续步骤的影响
 
-→ [第2原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tencent-teg-agent-skill-evaluation-tperf-martinskxu-2026-06-16.md) ^["Evals到底在评什么？一文拆解AI评估的三种方法 (Lotte Verheyden, Langfuse, 2026-05-20)"]
+→ [第2原文存档](https://mp.weixin.qq.com/s/PUbGqheJhFMmb6hGj1ZtOw) ^["Evals到底在评什么？一文拆解AI评估的三种方法 (Lotte Verheyden, Langfuse, 2026-05-20)"]
 
 ---
 

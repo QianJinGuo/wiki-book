@@ -4,7 +4,6 @@
 
 # Claude Code HTML Artifact Workflow (IFanR Analysis)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-html-artifact-workflow-ifanr.md)
 
 ## 摘要
 

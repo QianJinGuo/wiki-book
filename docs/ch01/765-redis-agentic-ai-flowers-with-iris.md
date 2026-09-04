@@ -46,7 +46,7 @@ Trollope 设想"每千名员工上千个 Agent"的世界，并以电子表格为
 - [Agentic AI 数据网格与 MCP](../ch04/395-agentic-ai.html)
 - [上下文工程](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/context-engineering.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/www.blocksandfiles.com-5241795.md)
+→ [原文存档](https://www.blocksandfiles.com/ai-ml/2026/05/18/redis-agentic-ai-flowers-with-iris/5241795)
 
 ---
 

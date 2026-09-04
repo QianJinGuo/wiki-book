@@ -4,7 +4,7 @@
 
 # Amazon Bedrock Ops Alert 三层监控架构
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-bedrock-ops-alert.md)
+> 原文存档：[原文存档](https://aws.amazon.com/blogs/machine-learning/how-to-build-self-driving-ai-operations-on-amazon-bedrock-at-scale)
 
 > **Core insight**: Amazon Bedrock Ops Alert 通过三层独立监控层（Critical Error Detection / Usage Rate Monitoring / Anomaly Detection）实现生成式 AI 运维的"自动驾驶"——动态调整告警阈值、分类告警、自动创建支持工单，工单内容根据 14 天峰值用量验证后决定语气与紧迫度
 
@@ -71,7 +71,7 @@ Bedrock Ops Alert 体现的范式转变是：将"监控→告警→人工判断�
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
 ## 相关引用
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-bedrock-ops-alert.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/how-to-build-self-driving-ai-operations-on-amazon-bedrock-at-scale)
 
 ---
 

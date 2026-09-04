@@ -16,7 +16,7 @@
 - [Pi Mono Github](../ch01/474-github.html)
 - [我用 Skillmd 做了一个简历生成器](054-skill.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/我用-skillmd-做了一个简历生成器.md)
+→ [原文存档](https://mp.weixin.qq.com/s/FIHet6uF2T2Q_MTh5O4udA)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/ai-skill-design.md)
 ## 深度分析

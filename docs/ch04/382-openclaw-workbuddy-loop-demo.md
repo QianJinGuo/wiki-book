@@ -47,7 +47,7 @@
 - [Vivo Agent Brain Body Icu Harness Evolutionary Framework 2026](../ch05/008-harness.html)
 - [Gateway Architecture Openclaw Claude Hermes Comparison](176-openclaw.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-workbuddy-loop-engineering-who-is-hot-useful-demo.md)
+→ [原文存档](https://mp.weixin.qq.com/s/kb2CPXeO-EJLwN1YudvXFQ)
 
 ---
 

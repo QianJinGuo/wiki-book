@@ -4,7 +4,7 @@
 
 # Build Live Translation Apps with gpt-realtime-translate
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-live-translation-apps-with-gpt-realtime-translate.md)
+> -> [原文存档](https://developers.openai.com/cookbook/examples/voice_solutions/realtime_translation_guide)
 
 ## 摘要
 
@@ -59,7 +59,7 @@ gpt-realtime-translate 是 OpenAI 推出的专用实时语音翻译模型：输�
 - [Openai Realtime Voice Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/openai-realtime-voice-architecture.md) — Realtime 语音架构概念
 - [OpenAI 开发者生态 MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/openai-developer-ecosystem.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-live-translation-apps-with-gpt-realtime-translate.md)
+→ [原文存档](https://developers.openai.com/cookbook/examples/voice_solutions/realtime_translation_guide)
 
 ---
 

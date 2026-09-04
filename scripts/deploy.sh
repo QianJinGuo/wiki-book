@@ -23,6 +23,8 @@ if [ ! -d "$PROJECT_DIR/site" ] || [ "$BUILD_FLAG" = "--build" ]; then
     echo ""
 fi
 
+node "$SCRIPT_DIR/check-public-build.mjs" --source "$PROJECT_DIR" --site "$PROJECT_DIR/site"
+
 # Deploy to target(s)
 case "$TARGET" in
     docker)

@@ -9,7 +9,7 @@
 
 **晓斌**（阿里巴巴研发基础设施负责人）发表的深度长文。从一个 30 行架构的"周报系统"出发，**抽象出"意图驱动 + 代码沉淀"的统一框架**，提出 **从 People-Oriented 到 Agent-Oriented 的基础设施设计转向**——这是 2026 年 6 月对 AI Agent 基础设施设计**最系统化的论述**。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-oriented-infra-intent-driven-code-sedimentation.md)
+→ [原文存档](https://mp.weixin.qq.com/s/fOONHtYDAJ39BojQxJ2-qg)
 → 阅读时间：约 30 分钟 · 6 大节 + 1 节致谢 + 3 篇参考资料
 
 ## 一句话定位
@@ -328,7 +328,7 @@
 - [Microsoft Build 2026](../ch03/004-agent.html) —— 全栈 AI
 - [Claude Code 20000 字符源码分析](../ch03/057-claude-code.html) —— 98.4% 基础设施
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-oriented-infra-intent-driven-code-sedimentation.md)
+→ [原文存档](https://mp.weixin.qq.com/s/fOONHtYDAJ39BojQxJ2-qg)
 
 ## 相关实体
 

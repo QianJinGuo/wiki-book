@@ -74,7 +74,7 @@ Unlimited OCR 还没有真正摆脱上下文长度。DeepEncoder 压缩率虽高
 
 ## 参考来源
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/baidu-unlimited-ocr-sliding-window-attention.md)
+→ [原文存档](https://mp.weixin.qq.com/s/0iBP0zGJlHFhyiObsdXDVQ)
 
 ---
 

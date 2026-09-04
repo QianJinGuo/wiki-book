@@ -96,7 +96,7 @@ AI可观测、AI评测、Agent安全——SLA衡量标准与传统架构不同�
 
 ## 补充
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-friendly-architecture-design-taobao.md)
+→ [原文存档](https://mp.weixin.qq.com/s/EezA0kT_hQCXze9LEOeuqg)
 
 ## 相关主题
 
@@ -152,7 +152,7 @@ AI可观测、AI评测、Agent安全——SLA衡量标准与传统架构不同�
 
 ## 第 2 来源 — 刘瑞洲 (阿里技术 2026-06-15)
 
-> Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-friendly-backend-architecture-standard-pathway-alibaba-liu-ruizhou-2026.md)
+> Source: [原文存档](https://mp.weixin.qq.com/s/XpSpAiWY-nXjw8d8QPbabg)
 > Author: 刘瑞洲 (阿里技术)
 > Date: 2026-06-15
 
@@ -197,8 +197,8 @@ AI可观测、AI评测、Agent安全——SLA衡量标准与传统架构不同�
 - [Agent 编排范式](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-orchestration-patterns.md)（相关：评测体系一脉相承）
 - [AI Friendly 架构设计（淘天久游）](019-ai-friendly.html)（同主题另一视角）
 
-→ [第 1 来源原文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-friendly-architecture-design-taobao.md)
-→ [第 2 来源原文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-friendly-backend-architecture-standard-pathway-alibaba-liu-ruizhou-2026.md)
+→ [第 1 来源原文](https://mp.weixin.qq.com/s/EezA0kT_hQCXze9LEOeuqg)
+→ [第 2 来源原文](https://mp.weixin.qq.com/s/XpSpAiWY-nXjw8d8QPbabg)
 - [协作涌现：agent room 的多智能体决策框架](../ch04/449-agent-room.html)
 - [从全量启动到最小核：手淘外链唤端链路的三次架构演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/从全量启动到最小核手淘外链唤端链路的三次架构演进.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/observability-monitoring.md)

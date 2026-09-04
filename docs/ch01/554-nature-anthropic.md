@@ -15,7 +15,7 @@
 - [Anthropic Mythos Bug Hunting Marketing](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-mythos-bug-hunting-marketing.md)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthopic-distillation-behavioural-traits-nature.md)
+→ [原文存档](https://mp.weixin.qq.com/s/rU5vymOpXhLmNfcAKIZFow)
 
 ## 深度分析
 

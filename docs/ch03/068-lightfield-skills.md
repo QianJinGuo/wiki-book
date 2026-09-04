@@ -90,7 +90,7 @@ Lightfield 的挑战在于：如果 Skills 只在自家平台上可用，其网�
 - [Browser Act — Agent 技能工具](../ch01/284-agent-skill.html)
 - [Hermes Agent — 技能系统与插件架构](../ch04/161-hermes-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lightfield-introducing-skills.md)
+→ [原文存档](https://lightfield.app/blog/introducing-skills)
 
 ---
 

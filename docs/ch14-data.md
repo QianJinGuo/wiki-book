@@ -33,7 +33,7 @@
 
 # 使用 Amazon S3 Tables 优化数据湖：从Hudi 迁移到托管 Iceberg
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/使用-amazon-s3-tables-优化数据湖从hudi-迁移到托管-iceberg.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/using-amazon-s3-tables-optimize-data-lake-hudi-migration-managed-iceberg)
 
 # 使用 Amazon S3 Tables 优化数据湖：从Hudi 迁移到托管 Iceberg
 
@@ -168,7 +168,7 @@ Amazon S3 Tables 每次增量提交都会产生新数据文件。如果不加控
 
 # DDoSing Software Delivery Pipelines
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/varoa-ddosing-software-delivery-pipelines-2026.md)
+> 原文存档：[原文存档](https://varoa.net/2026/06/13/ddosing-software-delivery-pipelines.html)
 
 ## 摘要
 
@@ -233,7 +233,7 @@ E2E 验证阶段是真正的瓶颈：必须在真实硬件上构造真实环境�
 - [How my non-engineering team at Sentry learned to ship](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-my-non-engineering-team-at-sentry-learned-to-ship-20260606.md)
 - [Unexpected lessons from an AI-assisted prototyping experiment](https://github.com/QianJinGuo/wiki-public/blob/main/entities/adobe-design-unexpected-lessons-ai-prototyping-2026.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/varoa-ddosing-software-delivery-pipelines-2026.md)
+→ [原文存档](https://varoa.net/2026/06/13/ddosing-software-delivery-pipelines.html)
 
 ---
 
@@ -260,7 +260,7 @@ This is the story of how we overcame the **black box of managed cloud**, the hid
 
 ## The Inciting Incident: The Confluent Cloud Black Box
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/clickhouse-ingestion-at-scale-an-open-source-zepto-engineering-story.md)
+→ [原文存档](https://blog.zepto.com/clickhouse-ingestion-at-scale-an-open-source-zepto-engineering-story-7f57309e2175)
 
 ---
 ## 关联
@@ -1018,7 +1018,7 @@ partition_by: "bucket(device_id, 50), day(timestamp)"
 
 ## 相关实体
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aliyun-kafka-iceberg-zero-etl-architecture-subtraction-2026-06-18.md)
+→ [原文存档](https://mp.weixin.qq.com/s/7wg1gUZZg08OoozBMebcHg)
 
 - [Databricks Storage Ecosystem 开放共享治理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/databricks-storage-ecosystem-opensharing-govern-everything-2026.md)
 - 750B MoE PD-Disaggregation AWS EFA（尚未入库）
@@ -1033,7 +1033,7 @@ partition_by: "bucket(device_id, 50), day(timestamp)"
 
 > 📊 Level ⭐⭐ | 13.4KB | `entities/good-qc-for-rl-data.md`
 
-> → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/good-qc-for-rl-data.md)
+> → [原文存档](https://www.seancai.com/philosophy/good_qc_rl_data)
 
 ## 核心要点
 
@@ -1322,9 +1322,9 @@ one agent, one sandbox, one storage, one database
 
 ## 相关页面
 
-- → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/kimi-k2-6-tidb-agent-database.md)
-- → [Hermes + Kimi K2.6 多智能体军团](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-k2-6-multi-agent.md)
-- → [Karpathy: Vibe Coding → Agentic Engineering](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/karpathy-vibe-coding-to-agentic-engineering.md)
+- → [原文存档](https://mp.weixin.qq.com/s/XLYWhkjFHxrH2-jb5O1qCQ)
+- → [Hermes + Kimi K2.6 多智能体军团](https://mp.weixin.qq.com/s/x_Jtmk4-ThuNtZTGqJqncQ)
+- → [Karpathy: Vibe Coding → Agentic Engineering](https://mp.weixin.qq.com/s/Ru3Z7wUVOlUwXUZUO5xw2A)
 
 ## 相关实体
 - [Tidb Cloud Agent Database](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tidb-cloud-agent-database.md)
@@ -1540,7 +1540,7 @@ SDS 生态将 Databricks 的 Lakehouse 架构扩展到真正的混合环境—�
 
 ## 原文链接
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/databricks-storage-ecosystem-opensharing-govern-everything-2026.md)
+→ [原文存档](https://www.databricks.com/blog/announcing-databricks-storage-ecosystem-governing-enterprise-data-estate-wherever-it-lives)
 
 ---
 
@@ -1565,7 +1565,7 @@ RIPA 允许执法机构在无需搜查令的情况下强制通信提供商披露
 - [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mozilla-warns-uk-breaking-vpns-will-not-magically-fix-britai.md)
 - [在 Macos 上用 Ai Coding 搭一个隐私优先的会议纪要助手](https://github.com/QianJinGuo/wiki-public/blob/main/entities/在-macos-上用-ai-coding-搭一个隐私优先的会议纪要助手.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/london-met-police-big-tech-data-requests.md)
+→ [原文存档](https://www.theregister.com/databases/2026/05/20/londons-police-asked-big-tech-for-comms-data-over-700000-times-last-year/5242590)
 
 ## 深度分析
 
@@ -1657,7 +1657,7 @@ LycaMobile 请求量 500% 的增长和针对移民的新立法动向表明，移
 
 ## 关联阅读
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/london-met-police-big-tech-data-requests.md)
+→ [原文存档](https://www.theregister.com/databases/2026/05/20/londons-police-asked-big-tech-for-comms-data-over-700000-times-last-year/5242590)
 
 ---
 
@@ -1667,7 +1667,7 @@ LycaMobile 请求量 500% 的增长和针对移民的新立法动向表明，移
 
 # EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/eva-bench-data-2-voice-agent-evaluation.md)
+→ [原文存档](https://huggingface.co/blog/ServiceNow-AI/eva-bench-data)
 
 ## 摘要
 
@@ -1904,7 +1904,7 @@ $$U_{eff}(n) = U_0 + \Delta U(1 - e^{-n/n_c})$$
 
 > 📊 Level ⭐⭐ | 8.0KB | `entities/lightfield-ai-pipeline-generation.md`
 
-> → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lightfield-ai-pipeline-generation.md)
+> → [原文存档](https://lightfield.app/product/ai-pipeline-generation)
 
 ## 核心要点
 Lightfield 是一个面向早期创始人和增长负责人的 AI 外向销售（Outbound Sales）平台，核心产品为 **Pipeline Generation（销售管道生成）**。与传统的独立 Outbound 平台或代理公司不同，Lightfield 的差异化在于：**以企业已有的 CRM 数据为起点**，而非从冷数据库开始构建目标客户池。其产品包括：基于闭单客户模式训练的账户评分、使用真实通话文本语言撰写序列、自动映射 LinkedIn 连接图发现温暖进入路径，以及自然语言分析和报告功能。
@@ -1949,11 +1949,11 @@ Lightfield 的 FAQ 中有一段值得注意的自我定位：随着对工具边�
 - [When Growth Slows Is It Sales Fault Or The Products Fault The Answer Has Changed](https://github.com/QianJinGuo/wiki-public/blob/main/entities/when-growth-slows-is-it-sales-fault-or-the-products-fault-the-answer-has-changed.md)
 - [Reasoning Lift](https://github.com/QianJinGuo/wiki-public/blob/main/entities/reasoning-lift.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/lightfield-ai-pipeline-generation.md)
+→ [原文存档](https://lightfield.app/product/ai-pipeline-generation)
 
 ## 相关实体
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-is-writing-more-code-your-ci-pipeline.md)
+→ [原文存档](https://www.cloudbees.com/blog/ai-is-writing-more-code-your-ci-pipeline-cant-keep-up)
 > ai agent platforms topic map（已删除）
 
 ---
@@ -1964,7 +1964,7 @@ Lightfield 的 FAQ 中有一段值得注意的自我定位：随着对工具边�
 
 # verify-data：一个端到端的数据验数 Agent Skill
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/verify-data-agent-skill-data-validation.md)
+→ [原文存档](https://mp.weixin.qq.com/s/CX7H8LUm9PokC19NDDd_WQ)
 
 ## 摘要
 
@@ -2083,7 +2083,7 @@ verify-data 与 Data Observability 工具（如 Monte Carlo、Great Expectations
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
 - [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/verify-data-agent-skill-data-validation.md)
+→ [原文存档](https://mp.weixin.qq.com/s/CX7H8LUm9PokC19NDDd_WQ)
 
 ---
 
@@ -2091,7 +2091,7 @@ verify-data 与 Data Observability 工具（如 Monte Carlo、Great Expectations
 
 > 📊 Level ⭐⭐ | 7.8KB | `entities/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md)
+> -> [原文存档](https://aws.amazon.com/blogs/machine-learning/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions/)
 
 ## 深度分析
 **1. 问答差距是组织复杂度的函数，而非技术问题**
@@ -2118,7 +2118,7 @@ Chat explanations 展示了完整推理链：工具调用、生成的 SQL、应�
 AI 生成 dashboard 的定位是消除 construction phase——当分析意图明确时，生成的可编辑输出使分析师在几分钟内完成过去需要数天的工作。关键在于：先生成 → review editable plan → 编辑调整 → 发布，而不是期望首次输出即可直接消费。
 
 # Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions/)
 
 ## 相关实体
 - [AgentCore Runtime部署Apache Doris MCP Server](https://github.com/QianJinGuo/wiki-public/blob/main/entities/runtime-deploy-apache-doris-mcp-server-quick-suite-ai-analytics.md)
@@ -2222,7 +2222,7 @@ LiveKit Agents 采用 Apache 2.0 协议，10k+ Stars。与托管平台相比的�
 
 4. **团队能力建设**：培养具备 AI 时代所需技能的工程团队
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/livekit-agents-voice-ai-streaming-cascade-interruption-detection.md)
+→ [原文存档](https://mp.weixin.qq.com/s/SMqIYoWUlbr0B_OaWbXxNA)
 
 ---
 
@@ -2273,7 +2273,7 @@ LiveKit Agents 采用 Apache 2.0 协议，10k+ Stars。与托管平台相比的�
 **从预测到塑形：数据工程化的最后一步。** 当前 pipeline 的局限（幻觉链接和物理谄媚无法完全通过数据过滤消除）说明，"识别问题"和"解决问题"之间仍有技术鸿沟。Targeted data rewrites——不仅识别高风险 cluster，还验证重写后的数据能教出正确行为——是未来数据工程化的核心方向。
 
 ## 引用与延伸阅读
-- **原文存档** → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/goodfire-predictive-data-debugging-post-training-anatomy-2026.md)
+- **原文存档** → [原文存档](https://www.goodfire.ai/research/predictive-data-debugging)
 - 论文：[arXiv 2606.12360](https://arxiv.org/abs/2606.12360)
 - 关联 entity：[LLM Post-Training 全景指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-post-training-full-guide.md) 了解传统方法谱系。
 
@@ -2434,7 +2434,7 @@ Data + AI Summit 的共识数据：Agent 循环（推理、工具调用、prompt
 
 ---
 
-**来源**: → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/stop-giving-your-agents-database-credentials.md)
+**来源**: → [原文存档](https://blog.crewai.com/stop-giving-your-agents-database-credentials/)
 
 ---
 ## 关联
@@ -2457,7 +2457,7 @@ Data + AI Summit 的共识数据：Agent 循环（推理、工具调用、prompt
 - [Introducing Claude Platform On Aws](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-claude-platform-on-aws.md)
 - [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-一周综述amazon-bedrock-agentcore-付款适用于-aws-的-agent-工具套件等2026-年-5-月-11-日.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-redshift-推出带有集成数据湖查询引擎的基于-aws-graviton-的-rg-实例.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/amazon-redshift-introduces-aws-graviton-based-rg-instances-with-an-integrated-data-lake-query-engine/)
 - [aws graviton5 m9g/m9gd 实例 ga 公告](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-graviton5-m9g-m9gd-launch-2026.md)
 
 ## 深度分析
@@ -2569,7 +2569,7 @@ SELECT id FROM A EXCEPT SELECT id FROM B;
 
 # nOps FinOps Agent 架构：语义层驱动的数据分析 Agent 设计
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-nops-shipped-finops-agents-75-faster-with-amazon-bedrock.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/how-nops-shipped-finops-agents-75-faster-with-amazon-bedrock-agentcore)
 
 ## 概览
 
@@ -2635,7 +2635,7 @@ Vercel/Next.js BFF 与 AgentCore 之间有一层自定义 merge layer，一次�
 
 # GitHub Multilingual Repositories Dataset — 4000 万仓库多语言元数据
 
-> Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/github-blog-multilingual-ai-open-dataset.md)
+> Source: [原文存档](https://github.blog/ai-and-ml/llms/accelerating-researchers-and-developers-building-multilingual-ai-with-a-new-open-dataset/)
 
 ## 背景
 
@@ -2740,7 +2740,7 @@ Vercel/Next.js BFF 与 AgentCore 之间有一层自定义 merge layer，一次�
 - [cisa admin leaked aws govcloud keys on github](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cisa-admin-leaked-aws-govcloud-keys-on-github.md)
 - [1-click github token stealing via a vscode bug — ammaraskar](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vscode-github-token-stealing-1-click-pwn-ammaraskar-2026.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/github-blog-multilingual-ai-open-dataset.md)
+→ [原文存档](https://github.blog/ai-and-ml/llms/accelerating-researchers-and-developers-building-multilingual-ai-with-a-new-open-dataset/)
 
 ---
 
@@ -2769,7 +2769,7 @@ Our solution was to build an internal **Metric Semantic Layer (MSL)**: a central
 
 Taking the above principles into account, we **implemented the Metrics Semantic Layer as a Python package**:
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/metric-semantic-layer-how-lyft-governs-and-scales-key-data-definitions.md)
+→ [原文存档](https://eng.lyft.com/metric-semantic-layer-how-lyft-governs-and-scales-key-data-definitions-56bee3643c29)
 
 ---
 ## 关联
@@ -2803,7 +2803,7 @@ Software is changing the world. QCon San Francisco empowers software development
 *   ![Image 3](https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/sponsorship/eventsnotice/0b46c1f1-7263-457d-82d9-12be6fa07fbd/resources/1DatadogWebinarJuly9-Transcripts-1779204853394.png)July 9th, 2026, 12 PM EDT
 #### [Rethinking Logs in the Age of AI Analysis](https://www.infoq.com/url/t/71ed3a08-6275-4ce8-adb0-1ceaa4e4161a/?label=Datadog-Transcripts)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/write-ahead-intent-log-a-foundation-for-efficient-cdc-at-scale.md)
+→ [原文存档](https://www.infoq.com/presentations/write-ahead-intent-log/)
 
 ---
 ## 关联
@@ -2835,7 +2835,7 @@ Whether you’re deduplicating web-scale pre-training corpora, curating agent in
 
 *   [JupyterLab Playground with Tutorials](http://8.138.149.181/)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-data-operating-system-for-the-foundation-model-era-data-juicer.md)
+→ [原文存档](https://datajuicer.github.io/data-juicer/en/main/)
 
 ---
 ## 关联
@@ -2854,7 +2854,7 @@ Whether you’re deduplicating web-scale pre-training corpora, curating agent in
 
 - [better decisions at scale: how mathematical optimization del](https://github.com/QianJinGuo/wiki-public/blob/main/entities/better-decisions-at-scale-how-mathematical-optimization-deli.md)
 - [ai-driven layoffs aren’t making business sense | cio](https://github.com/QianJinGuo/wiki-public/blob/main/entities/www.cio-4171054-ai-driven-layoffs-arent-making-business-sense.md)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/transforming-rare-cancer-research-with-amazon-quick-integrat.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/transforming-rare-cancer-research-with-amazon-quick-integrating-biomedical-databases-for-breakthrough-discoveries)
 
 ## 深度分析
 
@@ -2887,7 +2887,7 @@ Transforming rare cancer research with Amazon Quick: Integrating biomedical data
 
 - [dynamically splitting wide partitions in cassandra for time](https://github.com/QianJinGuo/wiki-public/blob/main/entities/dynamically-splitting-wide-partitions-in-cassandra-for-time-.md)
 - [valkey 为什么这么快？盘点 valkey 中提升性能的黑科技](https://github.com/QianJinGuo/wiki-public/blob/main/entities/valkey-why-valkey-performance.md)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-quick-mcp-kdbx-time-series.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/amazon-quick-integration-with-time-series-databases-for-market-intelligence-using-mcp/)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
 ## 深度分析

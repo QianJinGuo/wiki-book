@@ -2,12 +2,12 @@
 
 > 📊 Level ⭐⭐ | 7.5KB | `entities/wi-fi-8-closer-than-you-think.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/wi-fi-8-closer-than-you-think.md)
+> -> [原文存档](https://www.networkworld.com/article/4170841/wi-fi-8-is-closer-than-you-think-heres-what-you-need-to-know.html)
 
 ## 核心要点
 - value=7, confidence=9, product=63
 - Technically informative Wi-Fi 8 article
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/wi-fi-8-closer-than-you-think.md)
+→ [原文存档](https://www.networkworld.com/article/4170841/wi-fi-8-is-closer-than-you-think-heres-what-you-need-to-know.html)
 
 ## 深度分析
 **1. Wi-Fi 8 代表从"更快"到"更可靠"的范式转变**

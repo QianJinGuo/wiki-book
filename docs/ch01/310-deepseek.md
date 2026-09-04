@@ -22,7 +22,7 @@
 - [Vibe Coding Agentic Engineering Convergence Simon Willison](../ch09/038-coding-agent.html)
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch03/057-claude-code.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek视觉原语论文当所有人在堆图像分辨率时它在堆指代精度.md)
+→ [原文存档](https://mp.weixin.qq.com/s/tz7Zdbv8KhHtG8fCGqQ5LQ)
 
 - [一个文件让 ai coding 效率翻倍：agents.md 实践指南](../ch05/076-ai-coding.html)
 

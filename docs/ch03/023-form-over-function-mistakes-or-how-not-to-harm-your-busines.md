@@ -76,7 +76,7 @@ Information Architecture（信息架构）和用户旅程是设计阶段中 ROI 
 - [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](../ch04/383-amazon-bedrock-agentcore.html)
 - [Nvidia Mcg Toolkit Model Documentation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-mcg-toolkit-model-documentation.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/blog.tubikstudio.com-form-over-function-mistakes.md)
+→ [原文存档](https://blog.tubikstudio.com/form-over-function-mistakes/)
 
 ---
 

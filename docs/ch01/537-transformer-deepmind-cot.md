@@ -53,11 +53,9 @@ CoT 的原理是把埋得很深的状态"打印出来"变成可见文字再重�
 
 ## 相关页面
 
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/topological-trouble-transformers-state-tracking-deepmind-2026-06-17.md)
 
 ---
 ## 关联
 - 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
-

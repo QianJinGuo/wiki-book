@@ -55,7 +55,7 @@
   </text>
 
   <rect x="180" y="895" width="420" height="2" fill="#62c9ed" opacity="0.78"/>
-  <text x="180" y="965" class="sans meta" fill="#d8e4ee">20 章 · 5 篇 · 4,000+ 一手文章</text>
+  <text x="180" y="965" class="sans meta" fill="#d8e4ee">20 章 · 5 篇 · 数千篇一手文章</text>
   <text x="180" y="1020" class="mono micro" fill="#8db4c8">LLM  /  AGENT  /  HARNESS  /  MCP  /  RAG</text>
 
   <!-- A compact overview makes the scope legible without turning the cover into a table of contents. -->

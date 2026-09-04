@@ -78,7 +78,7 @@
 - [企业 AI 非技术困境](257-ai.html)
 - [阿里 Devix Harness](../ch05/008-harness.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-native-team-collaboration-knowledge-base-agent-human-taobao-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/s3ZDiBCWD8XBYKy-UflfbQ)
 
 ---
 

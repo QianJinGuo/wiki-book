@@ -4,7 +4,7 @@
 
 # 800行代码实现 Open Claw 的 Tool、消息总线、子Agent管理架构
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openclaw-architecture-800lines.md)
+→ [原文存档](https://mp.weixin.qq.com/s/7dkGfGUsr3UNHSwZ0EoI9g)
 
 ## 摘要
 

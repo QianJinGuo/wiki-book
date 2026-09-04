@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 8.4KB | `entities/affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-global-expansion.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-global-expansion.md)
+> -> [原文存档](https://www.theglobeandmail.com/investing/markets/stocks/AFRM/pressreleases/1917522/affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-global-expansion/)
 
 ## 核心要点
 - 来源：newsletter (kilo.ai/blog.kilo.ai)
@@ -10,7 +10,7 @@
 - 主要内容：Affirm Maps Road to $100B GMV With Card, AI Commerce and Global Expansion
 - 目标：$100B 年度 GMV，复合增长率 25%
 - 五大增长驱动力：Card、AI Commerce、Agentic Commerce、国际扩张、银行合作
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-global-expansion.md)
+→ [原文存档](https://www.theglobeandmail.com/investing/markets/stocks/AFRM/pressreleases/1917522/affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-global-expansion/)
 
 ## 相关实体
 - [Affirm Maps Road to $100B GMV With Card, AI Commerce](065-affirm-maps-road-to-100b-gmv-with-card-ai-commerce.html)

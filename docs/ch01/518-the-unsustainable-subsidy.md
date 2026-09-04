@@ -85,7 +85,7 @@ Anthropic 的定价策略最为保守。Claude Opus 4.7 维持了 $5/$25 的高�
 - [Minimax Agent Team Mavis Owner Worker Verifier](../ch03/004-agent.html)
 - [Anthropic Nla Natural Language Autoencoders Interpretability](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-nla-natural-language-autoencoders-interpretability.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tomtunguz-ai-model-inflation.md)
+→ [原文存档](https://tomtunguz.com/ai-model-inflation/)
 
 ---
 

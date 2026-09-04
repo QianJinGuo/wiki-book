@@ -4,7 +4,7 @@
 
 # 基于钉钉机器人的 Qoder CLI / Claude Code 双引擎 AI 助手实践
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/dingtalk-qoder-claudecode-dual-engine-ai-assistant.md)
+→ [原文存档](https://mp.weixin.qq.com/s/UdQ7xhM25Er6Eyk0xs577w)
 
 ## 深度分析
 

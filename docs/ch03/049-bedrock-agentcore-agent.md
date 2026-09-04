@@ -135,7 +135,7 @@ Trade-off：运营效率高，可能是有大量小租户时的唯一选项，�
 - [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](../ch11/108-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
 - [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](../ch04/383-amazon-bedrock-agentcore.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/building-multi-tenant-agents-with-amazon-bedrock-agentcore.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/building-multi-tenant-agents-with-amazon-bedrock-agentcore/)
 
 ---
 

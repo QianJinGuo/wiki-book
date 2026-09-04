@@ -4,7 +4,7 @@
 
 # Unexpected lessons from an AI-assisted prototyping experiment
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/adobe-design-unexpected-lessons-ai-prototyping-2026.md)
+> 原文存档：[原文存档](https://adobe.design/ideas/unexpected-lessons-from-an-ai-assisted-prototyping-experiment)
 
 ## 摘要
 
@@ -94,7 +94,7 @@ Adobe Design 的 Veronica Peitong Chen 在 2026 年 6 月复盘了一个在 Adob
 - [DDoSing Software Delivery Pipelines](https://github.com/QianJinGuo/wiki-public/blob/main/entities/varoa-ddosing-software-delivery-pipelines-2026.md)
 - [How my non-engineering team at Sentry learned to ship](341-how-my-non-engineering-team-at-sentry-learned-to-ship.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/adobe-design-unexpected-lessons-ai-prototyping-2026.md)
+→ [原文存档](https://adobe.design/ideas/unexpected-lessons-from-an-ai-assisted-prototyping-experiment)
 
 ---
 

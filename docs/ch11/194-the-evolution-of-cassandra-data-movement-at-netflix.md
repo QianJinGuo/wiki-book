@@ -4,7 +4,7 @@
 
 # The Evolution of Cassandra Data Movement at Netflix
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-evolution-of-cassandra-data-movement-at-netflix.md)
+→ [原文存档](https://netflixtechblog.com/the-evolution-of-cassandra-data-movement-at-netflix-6e13329c80a1?source=rss----2615bd06b42e---4)
 
 # The Evolution of Cassandra Data Movement at Netflix
 

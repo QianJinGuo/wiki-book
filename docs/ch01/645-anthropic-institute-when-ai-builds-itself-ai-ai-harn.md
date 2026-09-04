@@ -7,7 +7,7 @@
 ## 相关实体
 
 - [淘天营销中后台生码工作流最佳实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/淘天营销中后台生码工作流最佳实践.md)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-institute-when-ai-builds-itself-jiagoux-interpretation.md)
+→ [原文存档](https://mp.weixin.qq.com/s/5hTWkTFpdNeQDPgDVD9uBg)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
 ## 深度分析

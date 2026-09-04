@@ -4,7 +4,7 @@
 
 # 我把 Claude Design 做成了 Skill，人人都能成为顶级网站设计师
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/我把-claude-design-做成了-skill人人都能成为顶级网站设计师.md)
+→ [原文存档](https://mp.weixin.qq.com/s/sffWcLKPkXob2STrhkYBYg)
 
 ## 深度分析
 

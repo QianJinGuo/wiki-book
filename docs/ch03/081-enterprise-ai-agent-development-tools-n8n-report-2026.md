@@ -114,7 +114,7 @@ Agent 生态系统正处于类似阶段：
 - Agent Identity — 报告中指出的关键缺失领域
 - E2B — 报告中提到的主要 sandbox 方案
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/n8n-io-reports-2026-ai-agent-development-tools.md)
+→ [原文存档](https://n8n.io/reports/2026-ai-agent-development-tools/)
 
 ---
 ## 关联

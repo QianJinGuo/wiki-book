@@ -4,7 +4,7 @@
 
 # Skill Craft：Claude Skill 质量工程工具
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-skill-quality-tool-skill-craft.md)
+→ [原文存档](https://mp.weixin.qq.com/s/R2mdJlmrhwGp4CZvcQ7Tgg)
 
 ## 摘要
 

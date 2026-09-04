@@ -83,6 +83,6 @@ Harness **主要不是给 AI 用的，是给团队用的**。目标是让 AI 在
 
 ## 参考
 
-→ [raw/articles/从vibe-coding到harness-一套大仓ai工程化实战|原文存档]
+→ [原始来源](https://mp.weixin.qq.com/s/LGo7daiYYRf1r_YY3r-cXw)
 
 ---

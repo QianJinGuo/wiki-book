@@ -155,7 +155,7 @@ TokenSpeed 的连续批处理针对 Agent 场景进行了专门调优，但实�
 
 ## 延伸阅读
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tokenspeed-agentic-inference-engine.md)
+→ [原文存档](https://lightseek.org/blog/lightseek-tokenspeed.html)
 
 ---
 

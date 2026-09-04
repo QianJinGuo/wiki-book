@@ -53,7 +53,7 @@ Capo、BBEdit、Fantastical、Cot Editor 等应用在 squircle 框架内依然�
 - [设计师是稀缺物种](../ch03/077-designers-are-a-rare-breed.html)
 - AI UX 设计模式
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/somethings-rotten-in-the-state-of-macos-icon-design.md)
+→ [原文存档](https://blog.jim-nielsen.com/2026/rotten-macos-icon-design/)
 
 ---
 

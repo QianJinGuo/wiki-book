@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 4.1KB | `entities/amazon-supply-chain-services.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-supply-chain-services.md)
+> -> [原文存档](https://www.aboutamazon.com/news/retail/amazon-supply-chain-services-for-business)
 
 ## Summary
 Amazon launched Supply Chain Services (ASCS), opening its logistics network to businesses of all sizes. The service allows any business to use Amazon's freight, warehousing, and delivery capabilities.
@@ -34,7 +34,7 @@ ASCS 三大模块——Move（全球 freight 网络）、Store（warehouse + 第
 4. **密切关注 SLA 条款**：目前公布的细节有限，实际落地时需关注服务等级协议、数据所有权、和解约条款等合同细节
 
 ## Related Entities
-- [Source Article](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/amazon-supply-chain-services.md)
+- [Source Article](https://www.aboutamazon.com/news/retail/amazon-supply-chain-services-for-business)
 
 ## Tags
 #amazon #logistics #supply-chain #ecommerce

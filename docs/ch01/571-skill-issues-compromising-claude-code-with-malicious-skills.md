@@ -11,7 +11,7 @@
 - [Claude Code Skill Writing Guide](../ch03/057-claude-code.html)
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/057-claude-code.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-issues-compromising-claude-code-with-malicious-skills-agents-part-1.md)
+→ [原文存档](https://labs.reversec.com/posts/2026/05/skill-issues-compromising-claude-code-with-malicious-skills-agents-part-1)
 
 - [qwen code skill testing framework: recording, playback, and](../ch07/054-skill.html)
 

@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐⭐ | 11.6KB | `entities/agentium-agent-framework.md`
 
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentium-agent-framework.md)
+- [原文存档](https://mp.weixin.qq.com/s/VBY65tBAjVWyuP8QcpzOLA)
 
 ## 核心理念
 > 门面薄，线在中间，底子能换。

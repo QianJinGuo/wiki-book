@@ -17,7 +17,7 @@
 - [从 30 分钟手搓 Agent到 Harness 成为新后端](../ch05/008-harness.html)
 - [Agentexecutorgooglesdistributedagentruntime](../ch04/290-agentrun.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/two-harness-papers-microsoft-google.md)
+→ [原文存档](https://mp.weixin.qq.com/s/pnQpiRspZH68UoGR8YFSiA)
 
 ## 深度分析
 
@@ -45,7 +45,7 @@
 
 6. **在 Agent 框架选型时关注任务特异性和框架效率，而非单纯模型规模。** 评估标准应该包括：框架是否支持可进化的 Harness、是否能配置专用记忆结构、动作约束机制是否完善。以"小模型 + 专用 Harness"能击败"大模型 + 通用框架"为评估目标。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/two-harness-papers-microsoft-google.md)
+→ [原文存档](https://mp.weixin.qq.com/s/pnQpiRspZH68UoGR8YFSiA)
 
 ---
 

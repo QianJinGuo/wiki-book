@@ -14,7 +14,7 @@
 - [Grafana Github Token Breach Led To Codebase Download And Extortion Attempt](064-grafana-github-token-breach-led-to-codebase-download-and-ext.html)
 - [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](../ch01/168-rag.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/thehackernews-com-github-breached-employee-device-hack-led-to-exfilt.md)
+→ [原文存档](https://thehackernews.com/2026/05/github-investigating-teampcp-claimed.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-landscape.md)
 ## 深度分析

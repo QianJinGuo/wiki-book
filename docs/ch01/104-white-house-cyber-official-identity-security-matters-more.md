@@ -14,7 +14,7 @@
 - [Running An Ai Native Engineering Org](046-running-an-ai-native-engineering-org.html)
 - [How I Moved My Digital Stack To Europe](102-how-i-moved-my-digital-stack-to-europe.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/white-house-federal-identity-security-ai.md)
+→ [原文存档](https://cyberscoop.com/white-house-federal-identity-security-ai-risks/)
 
 ## 深度分析
 ### 核心论点：身份安全仍是 AI 时代的底层逻辑
@@ -55,7 +55,7 @@ Libkhen 提出的"教孩子滑冰"比喻值得深思：教孩子滑冰，第一�
 
 ### 技术判断
 AI 并未从根本上颠覆网络安全的基本逻辑（攻击需要入口，入口依赖身份），但它**极大压缩了防御者的响应窗口**，并使**身份本身成为更危险的攻击面**。这意味着身份安全在 2026 年后的重要性不降反升，而非被 AI 威胁所"掩盖"。
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/white-house-federal-identity-security-ai.md)
+→ [原文存档](https://cyberscoop.com/white-house-federal-identity-security-ai-risks/)
 
 ---
 

@@ -4,7 +4,7 @@
 
 # Identity Behavior & Context: ITDR Solution | Teleport
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/identity-behavior-context-itdr-solution-teleport.md)
+→ [原文存档](https://fandf.co/3QIKkEA)
 
 ## 摘要
 Teleport 的 Identity Behavior & Context 是一套以"身份行为与上下文"为核心的 ITDR（Identity Threat Detection & Response）方案：将 Okta、AWS、GitHub、Kubernetes 中的碎片化日志统一为跨 IdP → 云 → 代码 → 基础设施的单一身份链时间线，用 AI 会话摘要把安全调查从小时级压缩到分钟级。其差异化在于把 AI Agent 与 MCP 会话纳入与人类、机器身份同等的审计、检测与锁定体系，并通过 Access Graph / SQL Editor 与 SIEM 双向集成融入既有安全栈。

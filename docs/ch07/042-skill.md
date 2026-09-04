@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 8.2KB | `entities/skill-version-management-semantic-versioning-practices-winty.md`
 
-> 原文归档：[原文归档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-version-management-semantic-versioning-practices-winty.md)
+> 原文归档：[原文归档](https://mp.weixin.qq.com/s/weA8CMZBI9B295tNft10WQ)
 
 Skill 版本管理是企业 AI 系统落地的硬骨头。与代码不同，Skill 是一段"自然语言指令"，它的"对不对"、"有没有变好"没有工具能直接告诉你。本文提出 Skill 版本管理的五大原则以及从 v1.0.0 到 v1.3.0 的真实演进案例。
 

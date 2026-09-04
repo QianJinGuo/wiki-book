@@ -4,7 +4,7 @@
 
 # Claude Code Subagent 详解：把探索过程关进独立工作区
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/qy_zaCZTCs1Ql3BIFmBMgg.md)
+→ [原文存档](https://mp.weixin.qq.com/s/qy_zaCZTCs1Ql3BIFmBMgg)
 
 ## 摘要
 

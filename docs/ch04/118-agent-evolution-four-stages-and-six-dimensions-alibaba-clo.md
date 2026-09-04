@@ -4,7 +4,6 @@
 
 # Agent Evolution: Four Stages and Six Dimensions (Alibaba Cloud)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-evolution-four-stages-six-dimensions-aliyun.md)
 
 ## 摘要
 

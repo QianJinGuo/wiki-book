@@ -52,7 +52,7 @@ Rich Sutton 的经典教训是：AI 研究数十年的经验表明，把人类�
 - [Minimax Agent Team Mavis Owner Worker Verifier](../ch03/004-agent.html)
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/057-claude-code.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/a-bitter-lesson-for-data-filtering-e8807d.md)
+→ [原文存档](https://arxiv.org/abs/2605.19407)
 
 ---
 

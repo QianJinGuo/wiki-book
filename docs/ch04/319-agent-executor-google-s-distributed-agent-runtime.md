@@ -66,7 +66,7 @@ Agent Executor 的 harness-agnostic 设计表明 Google 认识到 agent 生态�
 - [Google Agentic Rag Sufficient Context Agent Framesqa](../ch03/004-agent.html)
 - [A Bitter Lesson For Data Filtering E8807D](../ch01/540-a-bitter-lesson-for-data-filtering.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-executor-googles-distributed-agent-runtime-da1bb4.md)
+→ [原文存档](https://cloud.google.com/blog/products/ai-machine-learning/agent-executor-googles-distributed-agent-runtime/)
 
 ---
 

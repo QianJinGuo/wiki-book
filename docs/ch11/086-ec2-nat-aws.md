@@ -4,7 +4,7 @@
 
 # EC2 NAT 实例选型与部署实践（AWS 中国宁夏区域）
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ec2-nat-instance-deploy-practice-aws-china.md)
+> 原文存档：[原文存档](https://aws.amazon.com/cn/blogs/china/ec2-nat-instance-deploy-practice/)
 
 ## 摘要
 
@@ -119,7 +119,7 @@ AWS 的多流流量规则（Multi-flow traffic rules）规定 vCPUs ≥ 32 的�
 - [基于 strands agents 构建亚马逊云科技云成本分析与优化 ai 助手](../ch03/004-agent.html)
 - [building blocks for foundation model training and inference](095-building-blocks-for-foundation-model-training-and-inference.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ec2-nat-instance-deploy-practice-aws-china.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/ec2-nat-instance-deploy-practice/)
 
 ---
 

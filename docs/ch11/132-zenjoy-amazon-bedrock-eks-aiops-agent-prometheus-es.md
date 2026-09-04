@@ -38,7 +38,7 @@
 
 ### 架构演进路径
 AgentCore Runtime 的使用表明，Serverless Agent 托管正在成为 AI 原生运维工具的主流部署形态。相比自建 Agent 基础设施，托管方案在资源效率、会话隔离和弹性扩缩容方面具有优势。对于希望在运维场景快速验证 AIOps 价值的团队，基于 AgentCore 的部署模式是一个低风险的技术选型。
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/zenjoy-aiops-agent-bedrock-eks-prometheus.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/zenjoy-based-on-strands-amazon-bedrock-agentcore-build-eks)
 
 ## 相关实体
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](../ch04/310-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)

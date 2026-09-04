@@ -96,7 +96,7 @@ NVLink Fusion 向第三方 XPU 开放 NVIDIA 基础设施平台，使合作伙�
 - [Nemotron 3 5 Content Safety](../ch01/368-nemotron-3-5-content-safety-customizable-multimodal-safety.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/blogs.nvidia.com-vera-cpu-delivery.md)
+→ [原文存档](https://blogs.nvidia.com/blog/vera-cpu-delivery/)
 
 ---
 

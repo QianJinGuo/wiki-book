@@ -8,7 +8,7 @@
 
 <p align="center">
   <strong>从 LLM 原理到生产级 Agent</strong><br>
-  An open-source guide to building reliable AI systems — curated from 4,000+ first-hand sources and updated daily.
+  An open-source guide to building reliable AI systems — curated from thousands of first-hand sources and updated daily.
 </p>
 
 <p align="center">
@@ -32,9 +32,9 @@
 
 《AI 工程》是一部持续演进的开源电子书，面向希望真正理解、构建和交付 AI 系统的工程师与研究者。内容由 AI 社区众创与 Hermes Agent 协作编撰，每个条目尽量保留一手来源、上下文和学习难度。
 
-| 2,201 | 20 章 · 5 篇 | 4,000+ | v1.3.8 |
+| 2,201 | 20 章 · 5 篇 | 3,733 | v1.3.8 |
 |:---:|:---:|:---:|:---:|
-| 精选编撰条目 | 全书结构 | 一手原始资料 | 当前版本 |
+| 精选编撰条目 | 全书结构 | 公开来源卡片 | 当前版本 |
 
 ## 你将学到什么
 
@@ -142,7 +142,7 @@ npx wrangler pages secret put USER_DATA_SECRET --project-name ai-engineering
 
 ```text
 docs/ch01–ch20/                 书籍章节与可发布条目
-docs/raw/articles/              一手原始资料（仅在确认转载授权后公开）
+docs/raw/articles/              第三方来源卡片（不保存原文正文）
 scripts/build.sh                课程、索引、MkDocs 和近邻图的统一构建入口
 functions/                      Cloudflare Pages Functions 与 RAG 端点
 overrides/                      MkDocs 主题覆盖、AI Chat 与封面集成
@@ -151,7 +151,7 @@ cover/                          封面 SVG、渲染脚本和可编辑素材
 
 ## 公开范围与维护边界
 
-- `docs/raw/` 会被 MkDocs 排除，不生成站点页面；它是否进入公开仓库取决于逐篇转载和再许可授权，不能用仓库许可证替代原作者授权。
+- `docs/raw/` 会被 MkDocs 排除，不生成站点页面；公开仓库只保留第三方来源卡片，不保存全文。完整原文若有本地使用需求，必须放在仓库外的私有源中。
 - `meta/` 和根目录 `AGENTS.md` 是维护者本地资料，不属于公开仓库；公开的设计说明和贡献流程应放在经过脱敏的文档中。
 - `site/` 与 `cover/exports/` 属于生成物；封面 SVG、渲染脚本、主题覆盖和源素材才是主要编辑入口。
 
@@ -170,7 +170,7 @@ cover/                          封面 SVG、渲染脚本和可编辑素材
 |:---|:---|
 | 构建脚本、RAG 前后端与工程代码 | [MIT](LICENSE) |
 | 书籍原创章节与项目文档（不含 `docs/raw/`） | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.zh) |
-| `docs/raw/articles/` | 不提供统一许可；各文件须遵循原始作者的许可或逐篇再发布授权 |
+| `docs/raw/articles/` 来源卡片 | 不对第三方正文提供再发布许可；卡片中的来源 URL、作者和许可证字段以原始来源为准 |
 
 ---
 

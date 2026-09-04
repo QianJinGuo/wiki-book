@@ -4,7 +4,7 @@
 
 # Anthropic 实战分享：如何让 AI Agent 持续工作几天？
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-long-running-agent-architecture-6h-retroforge.md)
+→ [原文存档](https://mp.weixin.qq.com/s/NNbzBdc4SkxoWIuUdqPcFA)
 
 ## 摘要
 
@@ -128,7 +128,7 @@ RetroForge 未讨论的组织层面约束：Agent 可以迅速扩大执行供给
 
 Rakuten 观察到委派单位从小块任务上移到决策级——人的注意力向目标设定、边界控制和最终签字移动。这与 RetroForge 的"渐进式披露"设计理念一致：系统承担越多上下文管理和验证职责，人就越能从执行细节中解放。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-night-overnight-rakuten-vibecoder-2026-07-22.md)
+→ [原文存档](https://mp.weixin.qq.com/s/RvKY88aZIDTtwJuqhXQktA)
 
 ## 相关实体
 

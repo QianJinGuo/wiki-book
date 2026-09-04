@@ -118,7 +118,7 @@ Stratechery 将 Google 描述为"most beautiful business model of all time"，�
 - [Running An Ai Native Engineering Org](046-running-an-ai-native-engineering-org.html)
 - [Pytorch212Releaseblogpytorch](https://github.com/QianJinGuo/wiki-public/blob/main/entities/pytorch212releaseblogpytorch.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/https-stratechery-com-2026-the-google-capital-company.md)
+→ [原文存档](https://stratechery.com/2026/the-google-capital-company/)
 
 ---
 

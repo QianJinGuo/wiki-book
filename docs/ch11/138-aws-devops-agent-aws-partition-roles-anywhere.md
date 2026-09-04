@@ -50,8 +50,8 @@
 - [将 Aws Devops Agent 智能运维能力延伸到中国区](../ch04/214-aws-devops-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/tool-use-mcp-patterns.md)
 
-→ [原文存档（第一篇）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-devops-agent-mcp-china-partition-bridge.md)
-→ [原文存档（第二篇）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/aws-devops-agent-mcp-china-part2-multi-account-roles-anywhere.md)
+→ [原文存档（第一篇）](https://aws.amazon.com/cn/blogs/china/aws-devops-agent-access-aws-partition-mcp/)
+→ [原文存档（第二篇）](https://aws.amazon.com/cn/blogs/china/aws-devops-agent-access-aws-access-ak-sk-authentication/)
 
 ---
 

@@ -72,7 +72,7 @@ Consolidate（定期整合）是 Ingest 的补充，用于解决多次 Ingest �
 
 5. **LLM Wiki 与 RAG 不是替代关系而是互补关系**：RAG 适合需要实时访问外部资料的场景（如客服问答），LLM Wiki 适合需要持续累积领域知识的场景（如研究笔记、项目文档）。对于本 wiki，LLM Wiki 是主模式，RAG 可作为 Query 阶段的补充检索手段。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/karpathy-llm-wiki-obsidian-tutorial-shuge-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/UKJ16eyp1STkkkajTSrjnA)
 
 ---
 

@@ -4,7 +4,7 @@
 
 # SchemaFlow: Agentic Database Change Impact Analysis, SQL Generation, and Eval Guardrails
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/schemaflow-agentic-database-sql-generation-openai-cookbook.md)
+→ [原文存档](https://developers.openai.com/cookbook/examples/partners/schemaflow_design_guide/schemaflow_cookbook)
 
 ## 摘要
 

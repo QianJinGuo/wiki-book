@@ -52,7 +52,7 @@ HSCodeComp 定位在现有 Deep Search 基准的盲区——测量 Agent 在"规
 - [AI Agent 评测 5 维体系](076-ai-coding.html) — 评测方法论参考
 - [评估 Harness 设计](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/evaluation-harness-design.md) — 任务设计与评测方法论
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hscodecomp-acl-2026-best-resource-paper.md)
+→ [原文存档](https://mp.weixin.qq.com/s/Lec1nRrWVgj50PYR0DxKlg)
 
 ---
 

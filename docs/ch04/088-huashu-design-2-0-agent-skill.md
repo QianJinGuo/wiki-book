@@ -146,7 +146,7 @@
 - Agent Skill 设计模式 — 撞/借/请 / 资产前置 / 第 0 原则 是 Skill 设计的通用模式
 - [Harness 模式 6-SubAgent 实战 — 17哥 vs 评测平台](../ch05/057-harness-engineering.html) — 互补 (决策者 vs 动手者)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/huashu-design-2-0-flower-uncle-3-pitfalls.md)
+→ [原文存档](https://mp.weixin.qq.com/s/ofFpyU61fn3zpHS0uM_gGw)
 
 ## 深度分析
 

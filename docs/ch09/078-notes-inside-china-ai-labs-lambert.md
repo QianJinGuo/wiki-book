@@ -12,7 +12,7 @@ Notes from inside China's AI labs - by Nathan Lambert Subscribe Sign in Notes fr
 - [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](../ch04/310-introducing-os-level-actions-in-amazon-bedrock-agentcore-bro.html)
 - [Agentcore Managed Harness](../ch04/187-agentcore-managed-harness.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/notes-inside-china-ai-labs-lambert.md)
+→ [原文存档](https://www.interconnects.ai/p/notes-from-inside-chinas-ai-labs)
 
 ## 深度分析
 

@@ -128,7 +128,7 @@ progress ledger（.superpowers/sdd/progress.md）让长任务在上下文压缩�
 - → [术哥反作弊视角分析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/superpowers-6-reviewer-anti-cheating-shuge-2026.md) — 互补视角
 - → [三器合一工程化实战](046-openspec.html) — Superpowers + OpenSpec + gstack 串联
 - → [Superpowers 工作流入门](../ch03/057-claude-code.html)
-- → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/superpowers-6-sdd-review-redesign-file-handoff.md)
+- → [原文存档](https://mp.weixin.qq.com/s/IEgncvDWNxTrYcUvmV8j8A)
 
 ---
 

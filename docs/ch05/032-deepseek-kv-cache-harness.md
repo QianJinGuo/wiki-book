@@ -156,7 +156,7 @@ DeepSeek 想要"定义工作负载"，一个关键信号是硬件厂商和云厂
 - [Deepseek Moe Parallel Strategy](../ch01/418-deepseek.html)
 - [Deepseek V4 Triton Fp4 Optimization](../ch01/350-deepseek-v4-triton-fp4.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/deepseek-cost-migration-system-layer-kv-cache-harness.md)
+→ [原文存档](https://mp.weixin.qq.com/s/vlIMBcywGL7Xy9_Yc8iJQQ)
 
 - [全球首个完全ai编写的训练框架：面壁forgetrain速度反超英伟达megatron，年底要把国产算力软件重写一遍](../ch04/257-ai.html)
 

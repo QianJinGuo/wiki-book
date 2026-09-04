@@ -4,7 +4,7 @@
 
 # A Missing Layer in Agentic Systems?
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/a-missing-layer-in-agentic-systems.md)
+> 原文存档：[原文存档](https://blog.crewai.com/a-missing-layer-in-agentic-systems)
 
 ## 摘要
 

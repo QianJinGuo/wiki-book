@@ -70,7 +70,7 @@ metadata:
 ```
 
 ## 实战调试案例：从需求到可用 Skill
-*来源：[如何把经验装到Skills](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/how-to-encode-experience-into-skills.md)*
+*来源：[如何把经验装到Skills](https://mp.weixin.qq.com/s/GIpqXfAT8ESR7c50yctpRQ)*
 
 ### 调试背景
 SaaS 产品经理每周评估 1-10 家客户定制需求工作量，认真做完后真正付费的客户可能不到 5%。

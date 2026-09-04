@@ -58,7 +58,7 @@ Rocket Close（底特律，Rocket Companies 子公司的 title agency + appraisa
 
 ## 原文链接
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/building-supercharger-how-rocket-close-optimized-title-opera.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/building-supercharger-how-rocket-close-optimized-title-operations-with-agentic-ai)
 
 ## 核心观点
 

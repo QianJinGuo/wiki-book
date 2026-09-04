@@ -54,7 +54,7 @@ Model Context Protocol 是有用的：它把模型连接工具与数据源的成
 - [LangGraph](../ch04/165-langgraph.html)
 - [Agent 编排](../ch04/242-agent-orchestration.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/new-lock.md)
+→ [原文存档](https://www.infoworld.com/article/4171983/the-new-ai-lock-in.html)
 
 ---
 

@@ -4,7 +4,7 @@
 
 # OpenAI Codex Sites：AI 一句话建站部署，Cloudflare Worker + D1 + R2 全套（极客之家译介）
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/codex-sites-cloudflare-worker-one-click-deploy-geekhome.md)
+→ [原文存档](https://mp.weixin.qq.com/s/Gp1GkhT5Gs3xwmJnTxYQ9g)
 
 ## 深度分析
 

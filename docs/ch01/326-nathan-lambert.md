@@ -4,7 +4,7 @@
 
 # Nathan Lambert：开源权重安全论的三个认知陷阱
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nathan-lambert-claude-mythos-open-weights.md)
+> 原文存档：[原文存档](https://www.interconnects.ai/p/claude-mythos-and-misguided-open)
 
 > **Core insight**: Lambert 识别出反开源 AI 叙事中存在两个核心认知错误：将开源-闭源能力差距静态化（实际上开源模型在网络安全等 narrow domains 可能保持较近距离）以及将特定领域风险（网络攻防）泛化为通用政策建议。真正的政策讨论应区分通用大模型禁令与领域特异性监管
 
@@ -72,7 +72,7 @@ Lambert 指出"依赖单一私人公司来评估国际关键基础设施的安�
 - [dean ball on open models and government control](547-dean-ball-on-open-models-and-government-control.html)
 
 ## 相关引用
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nathan-lambert-claude-mythos-open-weights.md)
+→ [原文存档](https://www.interconnects.ai/p/claude-mythos-and-misguided-open)
 
 ---
 

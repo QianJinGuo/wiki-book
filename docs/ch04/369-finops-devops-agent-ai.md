@@ -90,7 +90,7 @@ FinOps Agent 对测试账号进行全景扫描后发现：
 | 执行能力 | DevOps Agent 可执行清理 | 分析+建议 | 只读查询 |
 | 案例 | $47,629 隐性成本发现 | 通用成本优化 | 多账号成本查询 |
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/finops-devops-双agent-ai驱动的云成本优化实战.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/finops-devops-agent-ai-cost-optimize/)
 → [Strands 云成本优化](../ch03/004-agent.html)
 → [Quick + AgentCore FinOps](../ch11/112-amazon-quick-bedrock-agentcore-finops.html)
 

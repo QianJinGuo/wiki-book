@@ -11,7 +11,7 @@
 - [explicit vs. implicit in the age of intelligences — le secré](257-ai.html)
 - [review agent：后台复盘 agent 如何判断什么值得保存](../ch03/004-agent.html)
 - [不用再学ai了！生成结果包稳的agent来了](../ch03/004-agent.html)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-paradigm-evolution-feipeng-alibaba.md)
+→ [原文存档](https://mp.weixin.qq.com/s/ONYZFjxpIDgoRBSblLtGZg)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
 ## 核心观点

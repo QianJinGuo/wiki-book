@@ -4,7 +4,7 @@
 
 # GPT 5.4 是 Codex 的一次大跨越：四维评估视角与 Agent 战争回归
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gpt-54-is-a-big-step-for-codex.md)
+→ [原文存档](https://www.interconnects.ai/p/gpt-54-is-a-big-step-for-codex)
 
 ## 摘要
 
@@ -39,7 +39,7 @@ Nathan 引用 OpenAI 发布博客的反复信号：
 
 reasoning efficiency 是 GPT 5.4 上下文管理质变的根因：模型用更少 token 完成同等任务，意味着在相同 context window 下能做的事更多，context compaction 触发频率更低，用户感知不到。
 
-Cursor 的 cursorbench 进一步证实：**第三方评测也开始把速度/价格作为正交维度展示**，二维 benchmark 图是趋势 [raw/articles/gpt-54-is-a-big-step-for-codex.md:30]。
+Cursor 的 cursorbench 进一步证实：**第三方评测也开始把速度/价格作为正交维度展示**，二维 benchmark 图是趋势 [gpt-54-is-a-big-step-for-codex.md:30](https://www.interconnects.ai/p/gpt-54-is-a-big-step-for-codex)。
 
 ### 三、Claude vs GPT 的 Agent 哲学分歧
 

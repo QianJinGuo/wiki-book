@@ -611,10 +611,10 @@ class RecoveryManager:
 - [Agentic Ai System Architecture Harness Skill Mcp](../ch05/067-harness-skill.html)
 - [Harness Production Agent Engineering Deficit](../ch05/008-harness.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-harness-architecture-design-production-guide.md)（主源）
-→ [Harness Engineering 综合性指南](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/harness-engineering-comprehensive-guide-conardli.md)
-→ [Claude Code 12 个设计模式](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-agentic-harness-design-patterns.md)
-→ [ETCLOVG Survey (CMU 2026)](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-harness-engineering-survey-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/a10NnBuBDmaStoDZjOhzjA)（主源）
+→ [Harness Engineering 综合性指南](https://mp.weixin.qq.com/s/gs5ndvlMqM-Y4jg1_D2aFw)
+→ [Claude Code 12 个设计模式](https://mp.weixin.qq.com/s/eUbRoyKxOjiAPuXZi8DPsQ)
+→ [ETCLOVG Survey (CMU 2026)](https://picrew.github.io/LLM-Harness/paper.pdf)
 
 - [Versa Takes Aim At Fragmented Enterprise Security With Cspm Orchestration Updat](427-versa-takes-aim-at-fragmented-enterprise-security-with-cspm.html)
 - [k-dense — the model is no longer the bottleneck](137-k-dense-the-model-is-no-longer-the-bottleneck.html)

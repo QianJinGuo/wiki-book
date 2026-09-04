@@ -185,7 +185,7 @@ Git 作为 Source of Truth 的选择看似朴素，实则精妙。Git 的内容�
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](312-ai-agent.html)
 - [Building Ai Agents In Accounting](002-building-ai-agents-in-accounting.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/git-repo-based-pm-automation.md)
+→ [原文存档](https://mp.weixin.qq.com/s/n4iqEWPfrok91b692nFTJw)
 
 ---
 

@@ -4,7 +4,7 @@
 
 # How Dropbox uses MCP and Dash to close the design-to-code security gap
 
-> Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/dropbox-mcp-dash-design-code-security.md)
+> Source: [原文存档](https://dropbox.tech/security/dropbox-mcp-dash-design-code-security)
 
 ## 核心要点
 
@@ -34,7 +34,7 @@ That led us to build a system that combines three technologies: Model Context Pr
 
 - 文章的核心论点可在生产环境验证
 - 与现有实体的差异化角度：本文来自 dropbox.tech 视角
-- 引用源：[Dropbox Mcp Dash Design Code Security](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/dropbox-mcp-dash-design-code-security.md)
+- 引用源：[Dropbox Mcp Dash Design Code Security](https://dropbox.tech/security/dropbox-mcp-dash-design-code-security)
 ## 相关实体
 - [what is urban density design? a clear guide to how cities ge](758-what-is-urban-density-design-a-clear-guide-to-how-cities-ge.html)
 - [how to create websites with great ux designs: principles and](034-how-to-create-websites-with-great-ux-designs-principles-and.html)

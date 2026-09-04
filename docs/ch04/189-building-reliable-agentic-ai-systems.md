@@ -118,7 +118,7 @@ PRINCE 的三层反思机制可以映射到传统软件工程的质量保障实�
 - [AWS DevOps Agent](214-aws-devops-agent.html) — 另一个生产级多 Agent 系统案例
 - [When I Reject AI Code](../ch09/077-when-i-reject-ai-code-even-if-it-works.html) — 同样关注 AI 系统的工程可靠性
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/building-reliable-agentic-ai-systems-martinfowler.md)
+→ [原文存档](https://martinfowler.com/articles/reliable-llm-bayer.html)
 
 ---
 

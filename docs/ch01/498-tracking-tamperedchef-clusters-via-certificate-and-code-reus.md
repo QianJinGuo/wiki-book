@@ -37,7 +37,7 @@ TamperedChef 绝非普通的广告软件（adware）活动，其背后是三个�
 - [Exiftool Compromise Mac 592994](https://github.com/QianJinGuo/wiki-public/blob/main/entities/exiftool-compromise-mac-592994.md)
 - [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](571-skill-issues-compromising-claude-code-with-malicious-skills.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tracking-tampered-chef-clusters-aef374.md)
+→ [原文存档](https://unit42.paloaltonetworks.com/tracking-tampered-chef-clusters/)
 
 ---
 

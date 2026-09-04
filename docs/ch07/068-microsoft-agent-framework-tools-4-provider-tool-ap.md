@@ -20,7 +20,7 @@
 - [Open Claw Tool Bus Subagent Architecture](../ch03/004-agent.html)
 - [Ai Tool Poisoning Exposes A Major Flaw In Enterprise Agent Security](../ch04/226-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/microsoft-agent-framework-tools-overview-provider-matrix.md)
+→ [原文存档](https://mp.weixin.qq.com/s/0vIV3VJIgwf1FRwDWNzYpw)
 
 ## 4 类工具（按"谁执行、谁托管"划分）
 

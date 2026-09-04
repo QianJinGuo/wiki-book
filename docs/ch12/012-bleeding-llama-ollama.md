@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 20.6KB | `entities/bleeding-llama-critical-unauthenticated-memory-leak-in-ollama.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/bleeding-llama-critical-unauthenticated-memory-leak-in-ollama.md)
+> -> [原文存档](https://www.cyera.com/research/bleeding-llama-critical-unauthenticated-memory-leak-in-ollama)
 
 ## 摘要
 Title: Bleeding Llama: Critical Unauthenticated Memory Leak in Ollama | Cyera Research
@@ -23,7 +23,7 @@ The leaked memory contains u...
 - 影响范围： 全球约 300,000 台暴露在互联网上的 Ollama 服务器
 
 ## 链接
-- [原文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/bleeding-llama-critical-unauthenticated-memory-leak-in-ollama.md)
+- [原文](https://www.cyera.com/research/bleeding-llama-critical-unauthenticated-memory-leak-in-ollama)
 
 ## 相关实体
 > [AI 安全与对齐](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-agent-security-threat-vectors-mitigation.md) | > [Agent 记忆架构](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-memory-architecture.md)

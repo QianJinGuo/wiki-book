@@ -113,13 +113,13 @@ Loop = 触发器 + 独立执行环境 + Skills + Tools/MCP + Sub-agents + Memory
 - [Mem0 vs WorkBuddy Agent 记忆对比](../ch04/407-mem0-vs-workbuddy-agent.html)
 - [OpenClaw/WorkBuddy/Loop 工程对比](../ch04/351-loop-engineering.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/workbuddy-agent-product-practice-tencent-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/kYJ2kHrQrolmY8nDfN_Q3Q)
 
 ## 第 1 来源 — WorkBuddy VS Codex：八个维度讲透国内企业该怎么选...
 
 v×c=49。WorkBuddy VS Codex：八个维度讲透国内企业该怎么选
 
-> → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/workbuddy-vs-codex八个维度讲透国内企业该怎么选.md)
+> → [原文存档](https://mp.weixin.qq.com/s/DOX729X1BniRm6DPr6Yftw)
 
 ---
 

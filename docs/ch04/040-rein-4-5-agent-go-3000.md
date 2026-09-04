@@ -10,7 +10,7 @@
 ## 相关实体
 - [Youre Building Agent Security In The Wrong Order](../ch03/004-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rein-go-agent-4-modules-5-type-boundaries.md)
+→ [原文存档](https://mp.weixin.qq.com/s/P9hUlN3Nv7EdJqxuDbLsJQ)
 
 ## 一句话定位
 
@@ -299,7 +299,7 @@ WithWorkingDir(cwd)            // 工作目录
 - [Agent 工程原则](../ch03/004-agent.html) —— 模块化设计实践
 - [短期记忆压缩](133-agent-memory.html) —— 投影压缩对比
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/rein-go-agent-4-modules-5-type-boundaries.md)
+→ [原文存档](https://mp.weixin.qq.com/s/P9hUlN3Nv7EdJqxuDbLsJQ)
 
 ---
 

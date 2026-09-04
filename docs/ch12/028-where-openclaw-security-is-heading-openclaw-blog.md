@@ -9,7 +9,7 @@
 - **命令审批的 AST 解析**：Tree-sitter 命令高亮可穿透 `bash -c` 等 wrapper，识别内层实际执行的可执行文件
 - **每个 GHSA 转化为一条 OpenGrep 回归规则**：precision-first，噪音规则比无规则更危险
 - **SQLite 运行时状态重构**：sessions/transcripts/scheduler state 移入类型化数据库，消除文件系统访问，从根本上缩小攻击面
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/where-openclaw-security-is-heading-openclaw-blog.md)
+→ [原文存档](https://openclaw.ai/blog/where-openclaw-security-is-heading)
 
 ## 深度分析
 ### 1. 从"验证"到"执行"：安全控制点的重新定位
@@ -53,7 +53,7 @@ Loose files 作为运行时状态存储存在的问题：文件可能被篡改�
 1. **关注 ClawHub 供应链审计**：截至 2026 年初，ClawHub 上恶意或高风险 Skill 一度超过总量的 20%（参见 ）。信任证据体系的有效性仍待社区验证 。
 2. **Proxyline 的绕过面**：文章坦承 raw sockets、native modules、unusual transports 和非 OpenClaw 子进程可能绕过 Node 级 guardrail 。这些是潜在的绕过研究方向。
 3. **命令 AST 解析的 PowerShell gap**：OpenClaw 目前对 PowerShell wrapper 的处理是"fail closed for forms we do not understand" ，这意味着 PowerShell 命令的 AST 解析支持尚未完全，是潜在的模糊地带。
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/where-openclaw-security-is-heading-openclaw-blog.md)
+→ [原文存档](https://openclaw.ai/blog/where-openclaw-security-is-heading)
 
 ## 相关实体
 - [OpenClaw Agent 可观测性体系 — Session 审计日志 + OTEL + SLS](../ch04/176-openclaw.html)

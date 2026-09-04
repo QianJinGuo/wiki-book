@@ -4,7 +4,7 @@
 
 # 拆完 Hermes 源码发现 Agent 自我进化不需要训练模型
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-self-evolution-源码解析.md)
+→ [原文存档](https://mp.weixin.qq.com/s/qdycBcCUujnVBkO4vky0wA)
 
 ## 摘要
 

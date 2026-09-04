@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐⭐ | 19.2KB | `entities/agentic-engineering-leadership.md`
 
-[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentic-engineering-leadership.md)
+[原文存档](https://blog.kilo.ai/p/you-cant-afford-to-lead-agentic-engineering)
 
 Late in 2025, leadership had made the call: the company was going all in on AI. The CTO's vision was straightforward. Engineers would define the work in tickets. Agents would implement it overnight. Engineers would return in the morning to review the output and get the code over the finish line. This was the reality facing an engineering manager I was mentoring at another company. That conversation stuck with me.
 
@@ -85,7 +85,7 @@ So let the work correct your assumptions, because you cannot afford to lead agen
 - [Tokenspeed Agentic Inference Engine](447-tokenspeed-agentic-inference-engine.html)
 - [Gemini 3 5 Frontier Intelligence](../ch01/372-gemini-3-5-frontier-intelligence-with-action.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentic-engineering-leadership.md)
+→ [原文存档](https://blog.kilo.ai/p/you-cant-afford-to-lead-agentic-engineering)
 
 ## 深度分析
 
@@ -119,9 +119,9 @@ So let the work correct your assumptions, because you cannot afford to lead agen
 
 4. **将工程师提前拉入产品定义阶段**：如果 agent 能承接更多实现层工作，工程师的时间和精力应更多投入问题定义和方案评估。这要求工程管理者与产品管理者共同重新设计协作流程——目标不是"工程师写更少代码"，而是"工程师在更重要的问题上投入更多判断力"。
 
-5. **接受并谈论恐惧，而不是压制它**：工程师对 AI 的恐惧（担心自己被取代、技能被贬值、被要求产出更多而质量标准更难捍卫）往往是合理的担忧，而非单纯的阻力。创造安全空间让团队坦诚讨论这些恐惧，比假装一切顺利更有利于建立信任和推动真正的变革。 [^raw/articles/agentic-engineering-leadership.md:59-64]
+5. **接受并谈论恐惧，而不是压制它**：工程师对 AI 的恐惧（担心自己被取代、技能被贬值、被要求产出更多而质量标准更难捍卫）往往是合理的担忧，而非单纯的阻力。创造安全空间让团队坦诚讨论这些恐惧，比假装一切顺利更有利于建立信任和推动真正的变革。 [agentic-engineering-leadership.md:59-64](https://blog.kilo.ai/p/you-cant-afford-to-lead-agentic-engineering)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agentic-engineering-leadership.md)
+→ [原文存档](https://blog.kilo.ai/p/you-cant-afford-to-lead-agentic-engineering)
 
 ---
 

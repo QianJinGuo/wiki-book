@@ -4,7 +4,7 @@
 
 # Real AI Agents and Real Work
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/real-ai-agents-and-real-work.md)
+→ [原文存档](https://www.oneusefulthing.org/p/real-ai-agents-and-real-work)
 
 ## 摘要
 

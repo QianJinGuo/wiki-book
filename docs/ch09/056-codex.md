@@ -138,7 +138,7 @@ Codex 的五层架构可以映射到人类组织的治理层级：
 
 ## 来源
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/codex-5-layer-architecture-xiaohongshu.md)
+→ [原文存档](https://www.xiaohongshu.com/explore/6a0c142b000000000702719d)
 
 ---
 

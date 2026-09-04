@@ -41,7 +41,7 @@ We find that:
 
 ## 原文存档
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llm-driven-feature-discovery.md)
+→ [原文存档](https://www.alignmentforum.org/posts/WAZWA6FPQvH8okouJ/llm-driven-feature-discovery)
 
 ---
 ## 关联

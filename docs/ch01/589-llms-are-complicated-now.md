@@ -4,7 +4,7 @@
 
 # LLMs are complicated now
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/llms-are-complicated-now-ianbarber.md)
+> 原文存档：[原文存档](https://ianbarber.blog/2026/06/19/llms-are-complicated-now/)
 
 ## 核心内容
 

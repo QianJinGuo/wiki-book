@@ -15,7 +15,7 @@
 - [Skill Rag Tsinghua Sra](../ch07/054-skill.html)
 - [Claude Code Search Architecture Tencent 2026](../ch03/057-claude-code.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skillclaw-alibaba-paperagent.md)
+→ [原文存档](https://mp.weixin.qq.com/s/NunzqJYxpt5Gc_NmpL1U1Q)
 
 ## 深度分析
 

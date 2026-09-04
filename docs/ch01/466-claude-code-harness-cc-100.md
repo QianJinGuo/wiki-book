@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 7.2KB | `entities/claude-code-founder-harness-100-lines.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-founder-harness-100-lines.md)
+> -> [原文存档](https://mp.weixin.qq.com/s/-RmZAqKSM7wFxQFG0ix33Q)
 
 ## Summary
 Claude Code创始人关于Harness和编程未来的观点。
@@ -11,7 +11,7 @@ Claude Code创始人关于Harness和编程未来的观点。
 - Claude Code创始人观点
 - Harness重要性降低
 - 未来100行代码愿景
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-founder-harness-100-lines.md)
+→ [原文存档](https://mp.weixin.qq.com/s/-RmZAqKSM7wFxQFG0ix33Q)
 
 ## 相关实体
 - [Claude Code 之父最新访谈：编程已经结束、harness 将消失，Claude Code 将只有 100 行代码，loop 才是未来](../ch03/057-claude-code.html)

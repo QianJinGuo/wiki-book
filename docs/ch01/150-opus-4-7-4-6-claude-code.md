@@ -173,7 +173,7 @@ Opus 4.7在安全方面"与4.6大致持平"，但在"受控物质的伤害减少
 - [Claude Code Founder Harness 100 Lines](../ch03/057-claude-code.html)
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch03/057-claude-code.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/opus-4-7-launch-claude-code-best-practices-wechat.md)
+→ [原文存档](https://mp.weixin.qq.com/s/99QSrB_bwEOcVo0_rd6iSg)
 
 ---
 

@@ -33,7 +33,7 @@ Chime Prime 的推出（要求 $3,000+ 月薪 direct deposit）标志着从「�
 → [原始来源](https://back.engineering/blog/09/05/2026/)
 
 - [吴恩达2026新课上线！3小时包教包会，零代码小白也能成为AI超级玩家](../ch04/257-ai.html)
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/chime-earnings-q1-2026-ai-upmarket.md)
+→ [原文存档](https://www.pymnts.com/earnings/2026/chime-leans-on-ai-pushes-upmarket-in-first-profitable-quarter/)
 
 ---
 

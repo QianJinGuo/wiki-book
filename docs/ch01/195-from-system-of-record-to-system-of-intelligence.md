@@ -9,7 +9,7 @@
 - AI 原生 GTM 初创公司正在聚集于输入结构化、输出可衡量的高频窄工作流，且往往在创造"此前不存在的工作"
 - 有趣的是：CRM 使用量在 AI 工具大规模采用后反而上升了——因为 Agent 写入的结构化数据比人工输入更丰富、更及时
 - 软件在 GTM 总支出中仅占 5-10% 的格局将被打破：AI 首次让软件有可能实质性降低总成本同时扩大 ROI
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/from-system-of-record-to-system-of-intelligence-1.md)
+> 来源：[原文存档](https://www.a16z.news/p/from-system-of-record-to-system-of)
 
 ## 背景：CRM 作为"数据积累护城河"的历史逻辑
 过去三十年，企业软件领域有一个普遍规律：谁拥有数据库，谁就拥有最大价值 。
@@ -100,7 +100,7 @@ GTM 软件的 TAM 正在从"软件支出"扩展到"软件+AI 驱动的工作流�
 - [Is Software Losing Its Head](463-is-software-losing-its-head.html)
 - [Is Software Losing Its Head A16Z](463-is-software-losing-its-head.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/from-system-of-record-to-system-of-intelligence-1.md)
+→ [原文存档](https://www.a16z.news/p/from-system-of-record-to-system-of)
 
 ---
 

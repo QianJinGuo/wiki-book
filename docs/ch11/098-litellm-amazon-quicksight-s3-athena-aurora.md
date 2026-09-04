@@ -4,7 +4,7 @@
 
 > [!abstract]
 > AWS China Blog 2026-06-12 配置手册：把 LiteLLM AI Gateway 的请求日志与费用数据接入 Amazon QuickSight，构建运维监控 Dashboard。三条数据源路径：S3 日志 + Athena（Aurora 不可用的解耦方案）、Aurora PostgreSQL（内嵌数据源）、安全最佳实践。
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/litellm-amazon-quicksight-数据可视化配置手册.md)
+> 来源：[原文存档](https://aws.amazon.com/cn/blogs/china/litellm-amazon-quicksight-visualization-configuration)
 
 ## 数据源选型决策树
 
@@ -85,8 +85,8 @@ QuickSight 直连 S3 时只能解析一层嵌套 JSON 字段，深层嵌套字�
 
 ## 关键引用清单
 
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/litellm-amazon-quicksight-数据可视化配置手册.md)
-- [LiteLLM 成本治理四层防护](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/通过-litellm-实现-amazon-bedrock-成本管控实时限额多维监控与平台级兜底.md) — 姐妹篇（事前限额 → 事中监控 → 事后兜底）
+- [原文存档](https://aws.amazon.com/cn/blogs/china/litellm-amazon-quicksight-visualization-configuration)
+- [LiteLLM 成本治理四层防护](https://aws.amazon.com/cn/blogs/china/litellm-implement-amazon-bedrock-cost-real-time) — 姐妹篇（事前限额 → 事中监控 → 事后兜底）
 - [LiteLLM Bedrock 成本治理实体](034-litellm-amazon-bedrock.html) — 同一 AI Gateway 主题
 - [QuickSight Dataset Q&A](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-quicksight-dataset-qa-natural-language.md) — QuickSight NL2SQL 能力
 

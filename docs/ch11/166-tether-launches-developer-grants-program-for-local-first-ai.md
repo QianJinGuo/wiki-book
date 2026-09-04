@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 6.0KB | `entities/tether-launches-developer-grants-program-for-local-first-ai-and-payments-infrastructure.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tether-launches-developer-grants-program-for-local-first-ai-and-payments-infrastructure.md)
+> -> [原文存档](https://cryptobriefing.com/tether-developer-grants-local-ai-payments/)
 
 ## 核心要点
 - Tether launches developer grants program for local-first AI and payments infrastructure
@@ -31,7 +31,7 @@ QVAC MedPsy（医疗心理）模型在 May 7 发布，May 11 就宣布 grants �
 1. **Tether 生态锁定风险**：一旦基于 QVAC 开发，迁移到其他平台成本较高，应评估 Tether 的长期技术路线图可靠性
 2. **监管不确定性**：本地 AI + 稳定币支付的组合在各国监管框架下仍不明确，尤其是涉及医疗数据的场景
 3. **Grants ≠ 投资**：Tether 不要求股权但也不会承诺后续投资，开发者不应将 grants 视为融资起点
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/tether-launches-developer-grants-program-for-local-first-ai-and-payments-infrastructure.md)
+→ [原文存档](https://cryptobriefing.com/tether-developer-grants-local-ai-payments/)
 
 ## 相关实体
 - [Tether launches developer grants program for local-first AI and payments infrastructure](166-tether-launches-developer-grants-program-for-local-first-ai.html)

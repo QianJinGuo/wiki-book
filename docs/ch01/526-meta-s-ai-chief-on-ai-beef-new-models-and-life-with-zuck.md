@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 6.3KB | `entities/meta-ai-chief-alex-wang-muse-spark-ai-wars.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/meta-ai-chief-alex-wang-muse-spark-ai-wars.md)
+> -> [原文存档](https://www.corememory.com/p/metas-ai-chief-alex-wang-muse-spark-ai-wars)
 
 # Meta AI 负责人 Alex Wang — Muse Spark 与 AI 战争
 ## 人物背景
@@ -44,12 +44,12 @@ Wang 将 Scale AI 时期的「瑞士」策略（在各方之间保持中立、�
 
 ## 播客出处
 本访谈来自 **Core Memory** 播客第 71 期，由 Ashlee Vance（畅销书《 Elon Musk 传记》作者）主持。 Core Memory 是聚焦科技与科学的播客，已制作 HBO 和 Netflix 相关内容。
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/meta-ai-chief-alex-wang-muse-spark-ai-wars.md)
+> 来源：[原文存档](https://www.corememory.com/p/metas-ai-chief-alex-wang-muse-spark-ai-wars)
 
 ## 相关实体
 - [Meta announced Muse Spark in Voice Mode and Meta Glasses](https://github.com/QianJinGuo/wiki-public/blob/main/entities/meta-muse-spark-voice-mode-meta-glasses.md)
 - [Yum Brands' tech chief on building its AI backbone](../ch04/257-ai.html)
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/meta-ai-chief-alex-wang-muse-spark-ai-wars.md)
+- [原文存档](https://www.corememory.com/p/metas-ai-chief-alex-wang-muse-spark-ai-wars)
 
 ---
 

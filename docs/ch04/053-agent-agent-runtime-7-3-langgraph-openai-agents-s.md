@@ -193,7 +193,7 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 
 ## 相关实体
 
-- → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-runtime-7-responsibilities-secondcurve-2026.md)
+- → [原文存档](https://mp.weixin.qq.com/s/5sftvwAZL4Hj5v40HZ1rVw)
 - [若飞 Fable 5 Runtime Contract](../ch01/338-claude-fable-5.html)
 - [阿里云安全护栏三域](257-ai.html)
 - [阿里云 Agent 演化四阶段](../ch03/004-agent.html)

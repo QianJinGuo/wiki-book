@@ -104,7 +104,7 @@ The article documents a "subtle vibe shift" in banks over 2026 Q1-Q2: from loudl
 
 ## 引用与回链
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/the-stablecoin-24x7-money-loop-fintechbrainfood.md)
+→ [原文存档](https://www.fintechbrainfood.com/p/stablecoin-business-case)
 
 ## 相关实体（Related Entities）
 

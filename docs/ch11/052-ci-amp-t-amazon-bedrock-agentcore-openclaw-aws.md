@@ -42,12 +42,12 @@ Skills 层是该架构的关键抽象层。传统的 Agent 设计中，LLM 直�
 4. **MCP Server 的标准化集成**：利用 MCP（Model Context Protocol）实现 Agent 与云服务的标准化连接，Cost Explorer、Pricing 等服务通过 MCP 封装为可复用能力。
 5. **AgentCore Serverless 部署**：对于定期执行的企业运维任务，AgentCore 的 Serverless 模式在成本和安全隔离方面具有明显优势。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-era-git-version-control-agentic-coding-practices.md)
+→ [原文存档](https://mp.weixin.qq.com/s/70hz6sYNwxErRkP7dkY8-Q)
 
 ### 组织流程层面
 6. **运维能力的资产化转化**：将工程师的运维经验通过 Skill 转化为系统资产，避免经验依赖个人、难以复制的问题。
 7. **数据驱动的业务决策**：BizOps Agent 打通了运维数据与业务指标之间的壁垒，让运维工作直接服务于业务优化。
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ci-t-based-on-amazon-bedrock-agentcore-openclaw-enterprise-intelligent-operations-best-practices.md)
+→ [原文存档](https://aws.amazon.com/cn/blogs/china/ci-t-based-on-amazon-bedrock-agentcore-openclaw-enterprise-intelligent-operations-best-practices/)
 
 ---
 

@@ -4,7 +4,7 @@
 
 # Anthropic Dynamic Workflows 深度实战：JavaScript 编排脚本 + ultracode 模式 + /deep-research + 保存复用
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-dynamic-workflows-ultracode-deep-research-lyuyuebannzi.md)
+→ [原文存档](https://mp.weixin.qq.com/s/KmlyQ0UxWyoZ2ha9i0nx-g)
 
 ## 深度分析
 
@@ -35,7 +35,7 @@ Anthropic Dynamic Workflows 深度实战：JavaScript 编排脚本 + ultracode �
 
 ## 第 2 来源 — 动态工作流六种编排模式详解 + agent/parallel/pipeline 原语（2026-06）
 
-> Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-dynamic-workflows-six-patterns-agent-parallel-pipeline.md)
+> Source: [原文存档](https://mp.weixin.qq.com/s/oppul-tJ8_X5ZRLX6NMzPg)
 > Author: 林月半子的AI笔记
 
 本来源补充了第 1 来源未完整覆盖的 **六种编排模式** 和 **核心原语**。
@@ -71,7 +71,7 @@ Anthropic Dynamic Workflows 深度实战：JavaScript 编排脚本 + ultracode �
 | /workflows 面板 | /deep-research 模式 | **面板操作/保存/分享** |
 | 三个问题 | 未提及 | **偷懒/自夸/跑偏系统化解法** |
 
-→ [第2原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-dynamic-workflows-six-patterns-agent-parallel-pipeline.md)
+→ [第2原文存档](https://mp.weixin.qq.com/s/oppul-tJ8_X5ZRLX6NMzPg)
 
 ---
 

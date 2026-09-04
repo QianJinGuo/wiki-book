@@ -5,7 +5,6 @@ import { fileURLToPath } from "node:url";
 const PROJECT_ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const DEFAULTS = {
   wikiPublicBaseUrl: "https://github.com/QianJinGuo/wiki-public/blob/main",
-  wikiBookRawBaseUrl: "https://github.com/QianJinGuo/wiki-book/tree/main/docs",
 };
 
 function loadConfig() {
@@ -36,18 +35,9 @@ function baseUrl(envName, configName) {
 export const linkConfig = {
   version: 1,
   wikiPublicBaseUrl: baseUrl("WIKI_PUBLIC_BASE_URL", "wikiPublicBaseUrl"),
-  wikiBookRawBaseUrl: baseUrl("WIKI_BOOK_RAW_BASE_URL", "wikiBookRawBaseUrl"),
 };
 
 export function wikiPublicUrl(path) {
   const normalized = String(path).replace(/^\/+/, "").replace(/\.md\.md$/, ".md");
   return `${linkConfig.wikiPublicBaseUrl}/${normalized}`;
-}
-
-export function wikiBookRawUrl(path) {
-  const normalized = String(path).replace(/^\/+/, "").replace(/\.md\.md$/, ".md");
-  const rawPath = normalized.startsWith("raw/articles/")
-    ? normalized
-    : `raw/articles/${normalized}`;
-  return `${linkConfig.wikiBookRawBaseUrl}/${rawPath.replace(/\.md$/, "")}.md`;
 }

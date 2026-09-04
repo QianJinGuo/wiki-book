@@ -67,7 +67,7 @@ Autodata 代表了一种新兴范式：**用 Agent 系统生成 Agent 训练数�
 - [Good Qc For Rl Data](https://github.com/QianJinGuo/wiki-public/blob/main/entities/good-qc-for-rl-data.md)
 - [Goodfire Predictive Data Debugging Post Training Anatomy 2026](257-ai.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/arxiv-2606.25996.md)
+→ [原文存档](https://arxiv.org/abs/2606.25996)
 
 ---
 

@@ -4,7 +4,7 @@
 
 # Useful Memories Become Faulty When Continuously Updated by LLMs
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/useful-memories-become-faulty-when-continuously-updated-by-llms.md)
+→ [原文存档](https://dylanzsz.github.io/faulty-memory/)
 
 ## 摘要
 

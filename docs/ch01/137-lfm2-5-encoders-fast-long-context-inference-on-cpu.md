@@ -33,7 +33,7 @@ LFM2.5-Encoders 与 [LFM2.5-230M](../ch04/257-ai.html)（decoder 小模型，面
 - 长上下文技术 — 8192 token 上下文扩展
 - [LFM2.5-230M](../ch04/257-ai.html) — 同家族 decoder 模型
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/liquid-ai-lfm2-5-encoders-fast-long-context-cpu.md)
+→ [原文存档](https://huggingface.co/blog/LiquidAI/lfm2-5-encoders)
 
 ---
 

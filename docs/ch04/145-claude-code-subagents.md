@@ -164,7 +164,7 @@ Kaxil Naik 的判断"Harness matters more than the model"是本文最被低估�
 - [Claude Code Source Architecture](../ch03/057-claude-code.html)
 - [Claude Code Openclaw Memory Vector Db Doubt](../ch03/057-claude-code.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-subagents-context-hygiene.md)
+→ [原文存档](https://mp.weixin.qq.com/s/qy_zaCZTCs1Ql3BIFmBMgg)
 
 ---
 

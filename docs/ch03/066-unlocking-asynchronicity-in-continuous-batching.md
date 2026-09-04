@@ -5,7 +5,7 @@
 ## 核心要点
 - HuggingFace 博客文章，关于 continuous batching 技术
 - 技术深度：v=8, c=7
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/continuousasync.md)
+→ [原文存档](https://huggingface.co/blog/continuous_async)
 
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-model-research-latest-directions.md)

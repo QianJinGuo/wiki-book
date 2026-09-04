@@ -99,7 +99,7 @@ Anthropic案例中，模型无故在搜索查询加"2025"，根本原因是工�
 ### 5. 建立工具使用的监控与反馈机制
 建议在生产环境中持续监控每个工具的使用频率和调用准确率。识别出最近30天内从未被调用的工具，以及连续多次被选中但返回错误结果的工具——这两类工具都是应该被移除或合并的候选。低频工具积累会持续消耗上下文空间而不贡献实际价值。
 ---
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-agent-tool-count-trap.md)
+→ [原文存档](https://mp.weixin.qq.com/s/bsoPjXu7mUjFgzubkYxkww)
 
 ## 关联
 - [Agent工程原则架构实践](../ch03/004-agent.html)

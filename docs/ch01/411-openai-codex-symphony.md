@@ -4,7 +4,7 @@
 
 # 一文看懂 OpenAI 开源的 Codex 编排规范：Symphony
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-symphony-codex-orchestration-linear-control-plane-tutuai.md)
+→ [原文存档](https://mp.weixin.qq.com/s/PxcSpMLOYvqXrTO6U0VhuQ)
 
 ## 摘要
 

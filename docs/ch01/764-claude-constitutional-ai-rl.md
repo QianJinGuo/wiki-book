@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐⭐ | 8.5KB | `entities/claude-code-capability-systems-engineering-anthropic.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-capability-systems-engineering-anthropic.md)
+> -> [原文存档](https://mp.weixin.qq.com/s/b-At8Y93WsCmyO-eelEk2A)
 
 # Claude 代码能力的系统工程解析
 

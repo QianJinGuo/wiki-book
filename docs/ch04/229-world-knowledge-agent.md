@@ -124,7 +124,7 @@ R(K) = Success(T_E | K) - Success(T_E | ∅)
 - [Llm Agent脚手架如何具备自进化能力以Hermes Agent为例](161-hermes-agent.html)
 - [Deli Auto Research Skill Deepseek](../ch01/418-deepseek.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/world-knowledge-agent-self-evolution-tencent-hkustgz.md)
+→ [原文存档](https://mp.weixin.qq.com/s/LjhOh9-15SwyZ8bXt1URVQ)
 
 ---
 

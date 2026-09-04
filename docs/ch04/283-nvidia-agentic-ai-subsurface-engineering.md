@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 8.0KB | `entities/nvidia-agentic-ai-subsurface-engineering.md`
 
-> -> [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-agentic-ai-subsurface-engineering.md)
+> -> [原文存档](https://developer.nvidia.com/blog/24-7-simulation-loops-how-agentic-ai-keeps-subsurface-engineering-moving/)
 # Agentic AI for Subsurface Engineering Simulation (NVIDIA)
 ## 核心要点
 - 来源：NVIDIA Developer Blog
@@ -11,7 +11,7 @@
 ## 知识关联
 本文档来自 RSS 评估入库的 NVIDIA 开发者博客文章。
 ## 来源
-[原文存档（NVIDIA Developer Blog）](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/nvidia-agentic-ai-subsurface-engineering.md)
+[原文存档（NVIDIA Developer Blog）](https://developer.nvidia.com/blog/24-7-simulation-loops-how-agentic-ai-keeps-subsurface-engineering-moving/)
 ---
 ## 深度分析
 ### Agentic AI 在工业仿真的范式意义

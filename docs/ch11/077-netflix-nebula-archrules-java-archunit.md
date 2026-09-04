@@ -4,7 +4,7 @@
 
 # Netflix Nebula ArchRules: 跨越数千个 Java 仓库的 ArchUnit 规模化实践
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/scaling-archunit-with-nebula-archrules.md)
+> 原文存档：[原文存档](https://netflixtechblog.com/scaling-archunit-with-nebula-archrules-b4642c464c5a?source=rss----2615bd06b42e---4)
 
 > **Core insight**: Netflix 通过 Nebula ArchRules 插件将单仓库 ArchUnit 规则扩展为跨 polyrepo 的可共享、可版本化规则库——利用 Gradle Module Metadata 的 variant 选择机制，实现"bundled rule libraries"自动检测和执行，无需每个仓库单独配置。
 
@@ -88,7 +88,7 @@ Netflix 的 ArchRules 是针对自身微服务生态设计的，但规则模式�
 
 ## 相关引用
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/scaling-archunit-with-nebula-archrules.md)
+→ [原文存档](https://netflixtechblog.com/scaling-archunit-with-nebula-archrules-b4642c464c5a?source=rss----2615bd06b42e---4)
 
 ---
 

@@ -16,7 +16,7 @@
 - [Ai Production Development Workflow Openspec Superpowers Gstack](046-openspec.html)
 - [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗 V2](057-harness-engineering.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gaode-sdd-harness-team-ai-coding-paradigm-IBJFu.md)
+→ [原文存档](https://mp.weixin.qq.com/s/-_IBJFuXpvoqMJxL9oaEJQ)
 
 - [从提需求到部署发布全Ai全自动化后研发效能全面跃升](../ch04/257-ai.html)
 ## 二、从"出码率"看"提效"背后的深层困境
@@ -140,7 +140,7 @@ Harness 的类比值得深思：不改变马的基因（模型本身），而是
 
 ## 第 2 来源 — 信息业务中心 (高德技术 2026-06-15)
 
-> Source: [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gaode-ads-ai-native-end-to-end-pipeline-sdd-atdd-skills.md)
+> Source: [原文存档](https://mp.weixin.qq.com/s/BfMATkYSLgVWgsORHwmiSg)
 > Author: 信息业务中心 (高德技术公众号)
 > Date: 2026-06-15
 
@@ -202,8 +202,8 @@ Harness 的类比值得深思：不改变马的基因（模型本身），而是
 - [Harness Engineering 综述](057-harness-engineering.html)（相关：三阶段 Prompt→Context→Harness）
 - [Spec as AIOS (高德 App 平台)](../ch04/257-ai.html)（同团队同主题另一视角）
 
-→ [第 1 来源原文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gaode-sdd-harness-team-ai-coding-paradigm-IBJFu.md)
-→ [第 2 来源原文](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/gaode-ads-ai-native-end-to-end-pipeline-sdd-atdd-skills.md)
+→ [第 1 来源原文](https://mp.weixin.qq.com/s/-_IBJFuXpvoqMJxL9oaEJQ)
+→ [第 2 来源原文](https://mp.weixin.qq.com/s/BfMATkYSLgVWgsORHwmiSg)
 
 ---
 

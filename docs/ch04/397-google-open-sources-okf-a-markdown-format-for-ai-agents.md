@@ -47,7 +47,7 @@ The specification is precise about its limits. In its opening section, [OKF list
 
 ## 相关
 
-- [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/implicator.md)
+- [原文存档](https://www.implicator.ai/google-open-sources-a-knowledge-format-and-wires-it-into-its-catalog/)
 
 ---
 ## 关联

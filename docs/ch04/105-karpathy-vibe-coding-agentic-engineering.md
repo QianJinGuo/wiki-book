@@ -18,7 +18,7 @@ Karpathy 在 2026 年红杉 AI Ascent 访谈中提出 Agent 时代的关键转�
 - Google Addy Osmani 2026.2 发表《Agentic Engineering》，明确区分 Vibe Coding 与专业软件开发
 - GLM-5 论文标题即《from Vibe Coding to Agentic Engineering》
 - Linus Torvalds 认为 AI 像编译器，但关键系统使用需谨慎
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/karpathy-vibe-coding-to-agentic-engineering.md)
+→ [原文存档](https://mp.weixin.qq.com/s/Ru3Z7wUVOlUwXUZUO5xw2A)
 
 ## 深度分析
 ### 1. Vibe Coding 与 Agentic Engineering 的本质区别

@@ -132,7 +132,7 @@ Snowflake 联合行业领导者推动的开放语义交换标准（OSI），目�
 - [Anthropic Data Analysis](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-95pct-data-analysis-summary-189-chars.md) — LLM 数据分析的另一个视角
 - [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — 约束下放的架构理念
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/ai-powered-bi-with-snowflake-and-amazon-quick.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/ai-powered-bi-with-snowflake-and-amazon-quick/)
 
 ---
 

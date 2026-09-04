@@ -4,7 +4,7 @@
 
 # Amazon Bedrock AgentCore AG-UI 协议：为 AI Agent 构建生成式 UI
 
-> 原文存档：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-generative-ui-for-ai-agents-on-amazon-bedrock-agentcor.md)
+> 原文存档：[原文存档](https://aws.amazon.com/blogs/machine-learning/build-generative-ui-for-ai-agents-on-amazon-bedrock-agentcore-with-the-ag-ui-protocol)
 
 ## 摘要
 
@@ -156,7 +156,7 @@ CopilotKit + FAST 的完整部署包含：
 - **A2A**：AG-UI 连接 Agent 与用户，A2A 连接 Agent 与 Agent
 - **传统 REST API**：AG-UI 的流式 SSE 替代了轮询，更适合实时对话场景
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/build-generative-ui-for-ai-agents-on-amazon-bedrock-agentcor.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/build-generative-ui-for-ai-agents-on-amazon-bedrock-agentcore-with-the-ag-ui-protocol)
 
 ---
 ## 关联

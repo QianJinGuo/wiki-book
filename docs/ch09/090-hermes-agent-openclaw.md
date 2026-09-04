@@ -40,7 +40,7 @@
 **最优：两者结合**
 
 ## 与现有知识的链接
-- → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-self-evolution-源码解析.md)
+- → [原文存档](https://mp.weixin.qq.com/s/qdycBcCUujnVBkO4vky0wA)
 - → [Hermes Agent自进化机制](../ch04/161-hermes-agent.html) — 另一角度分析
 - → [Hermes记忆系统](../ch04/161-hermes-agent.html) — vs OpenClaw
 - → [Hermes Agent Skill](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/hermes-agent-skill.md) — Skill格式
@@ -102,9 +102,8 @@ KEPA（Knowledge Evolution & Prompt Adjustment）反向传播机制是Hermes最�
 - **不要完全依赖自动进化** — Agent的判断力有上限，核心原则仍需人工定义
 - **不要忽略Skill质量维护** — 定期清理/合并重复Skill
 - **不要低估延迟问题** — 快照机制意味着经验不会立即生效
-> 参见 [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/hermes-agent-self-evolution-源码解析.md) 
+> 参见 [原文存档](https://mp.weixin.qq.com/s/qdycBcCUujnVBkO4vky0wA)
 ## 相关实体
 - [Ai Task Scheduling Dynamic Hibernate Aliyun Mse](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/ai-task-scheduling-dynamic-hibernate-aliyun-mse.md)
 
 ---
-

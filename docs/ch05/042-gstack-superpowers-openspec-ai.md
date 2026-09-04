@@ -95,7 +95,7 @@ TDD 三个例外（一次性原型、生成的代码、配置文件）是经过�
 ## 相关实体
 - [Cli Anything Wechat Demo Conglin](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cli-anything-wechat-demo-conglin.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/three-tools-in-one-gstack-superpowers-openspec-engineering-ai-coding.md)
+→ [原文存档](https://mp.weixin.qq.com/s/j5_WRygYB_N4eagUCPSZwA)
 
 ### 版本感知的工作流
 整个流程高度依赖版本状态和变更追踪。当 `/ship` 执行 VERSION 升级、CHANGELOG 生成、PR 创建时，这些产物本身就是 OpenSpec 归档的输入。如果团队规模较大，建议在 PR 描述中包含 OpenSpec 的 proposal 链接，让 code reviewer 能够直接跳转到需求源头进行审查。这样就形成了一个完整的需求→实现→验证→发布的闭环。

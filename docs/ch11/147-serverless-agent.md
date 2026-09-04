@@ -61,7 +61,7 @@ Step Functions 用 `waitForTaskToken` 集成调用 Lambda，传入 task token �
 - [Serverless A2A Gateway](../ch03/004-agent.html) — Agent 间通信网关
 - [Bedrock Serverless Async Inference](211-bedrock.html) — 同族的异步推理模式（SQS+Lambda）
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/asynchronous-patterns-for-calling-amazon-bedrock-agentcore.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/asynchronous-patterns-for-calling-amazon-bedrock-agentcore-agents-in-serverless-pipelines)
 
 ---
 

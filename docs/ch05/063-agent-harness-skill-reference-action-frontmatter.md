@@ -116,7 +116,6 @@ code-reviewer/
 
 ## 参考
 
-→ [raw/articles/gaLEAjOz8xLAi8ABnG855g|原文存档]
 
 [^1]: raw/articles/gaLEAjOz8xLAi8ABnG855g
 

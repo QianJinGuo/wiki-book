@@ -15,7 +15,7 @@
 - [Anthropic Managed Agents Scaling](../ch03/004-agent.html)
 - [Hermes Agent Deep Dive Alibaba](../ch04/161-hermes-agent.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/skill-factory-yueheng.md)
+→ [原文存档](https://mp.weixin.qq.com/s/tm7M3N8f45K87YUTwERkhg)
 
 ## 深度分析
 

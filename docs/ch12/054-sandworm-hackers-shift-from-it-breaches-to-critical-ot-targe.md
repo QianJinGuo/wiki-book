@@ -47,7 +47,7 @@ Sandworm 的能力演进呈现出清晰的"IT 渗透 → 物理破坏"升级路�
 - [NIST SP 800-213r1 — IoT Product Cybersecurity Guidelines](058-nist-sp-800-213r1-iot-product-cybersecurity-guidelines.html) — IoT/OT 产品安全基线标准
 - [Linux Foundation 携手业界推出 Akrites 保护关键开源软件](../ch01/041-linux-foundation-and-industry-leaders-launch-akrites-to-defe.html) — 关键基础设施供应链防御倡议
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/sandworm-hackers-shift-it-breaches-ot-gbhackers.md)
+→ [原文存档](https://gbhackers.com/sandworm-shift-from-it-breaches/)
 
 ---
 

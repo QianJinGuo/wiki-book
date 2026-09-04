@@ -4,7 +4,7 @@
 
 # Cola DLM：字节跳动连续潜空间扩散语言模型
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cola-dlm-byte-dance-continuous-latent-diffusion-language-model.md)
+→ [原文存档](https://mp.weixin.qq.com/s/sSWrWvSQ8tw8yhFRip-aAw)
 
 ## 摘要
 
@@ -125,7 +125,7 @@ Cola DLM 的"语义部 + 文字部"分层，在多模态语境下有天然优势
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
 - "扩散模型架构"
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/cola-dlm-byte-dance-continuous-latent-diffusion-language-model.md)
+→ [原文存档](https://mp.weixin.qq.com/s/sSWrWvSQ8tw8yhFRip-aAw)
 
 ---
 

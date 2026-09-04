@@ -4,7 +4,7 @@
 
 # 知识库问答 @文档：从 DOM 方案到 ProseMirror 落地
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/prosemirror-knowledge-base-mention-vivo.md)
+→ [原文存档](https://mp.weixin.qq.com/s/7db3l9s9MfMonr0BYwyouQ)
 
 ## 深度分析
 

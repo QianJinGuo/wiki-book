@@ -70,7 +70,7 @@ Lindsey（2025）首次在 Claude 模型中观察到内省现象，但对其机�
 本职研究表明，"模型能感知自己被操控"这个能力是通过两阶段电路实现的——这是一个可以用机械可解释性工具分析的机制。这意味着未来可以通过读取模型的激活状态来推断模型的自我认知水平，而不仅仅依赖行为测试。对于需要向监管机构或用户证明模型透明性的场景，内省机制的机械可解释性分析可以作为一种透明度保证的技术手段。
 
 ## 相关链接
-- [Anthropic Llm Introspection Awareness Mechanisms](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/anthropic-llm-introspection-awareness-mechanisms.md)（原始文章存档）
+- [Anthropic Llm Introspection Awareness Mechanisms](https://github.com/safety-research/introspection-mechanisms)（原始文章存档）
 - arXiv: https://arxiv.org/pdf/2603.21396
 - GitHub: https://github.com/safety-research/introspection-mechanisms
 
@@ -88,7 +88,7 @@ Lindsey（2025）首次在 Claude 模型中观察到内省现象，但对其机�
 - [Hermes Self Evolution Closed Loop Skill Reuse Winty](../ch07/054-skill.html)
 - [Four Browser Automation Tools Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/four-browser-automation-tools-comparison.md)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/agent-self-improvement-six-mechanisms.md)
+→ [原文存档](https://mp.weixin.qq.com/s/CH4wIRZVcDDZOmRvPFu43Q)
 > ai agent platforms topic map（已删除）
 
 ---

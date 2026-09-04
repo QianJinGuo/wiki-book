@@ -88,7 +88,7 @@ combinedScore = bm25Weight*(1/(RRF_K+bm25Rank)) + vectorWeight*(1/(RRF_K+vectorR
 
 ## 第 2 来源 — MemoraX Code（长期记忆系统，2026-08-18）
 - v×c=48（v=6 c=8 s=3，DeepSeek 评分），6 互补角度 ≥3，MERGE 作 2nd source
-- MemoraX Code 是另一个 Coding Agent 长期记忆产品（code.memorax.net / github.com/memorax-ai/memorax-code），与 AgentMemory 同属「Coding Agent 长期记忆」簇但设计取向不同：AgentMemory = 本地 Agent 记忆运行时（hook 捕获 + 三路检索 + MCP 工具），MemoraX = 本地代码仓记忆 + 云端长期记忆的双层架构 + 数据驱动的 Memory Model。 → [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/让-coding-agent-开始记住过去memorax-code-的长期记忆系统.md)
+- MemoraX Code 是另一个 Coding Agent 长期记忆产品（code.memorax.net / github.com/memorax-ai/memorax-code），与 AgentMemory 同属「Coding Agent 长期记忆」簇但设计取向不同：AgentMemory = 本地 Agent 记忆运行时（hook 捕获 + 三路检索 + MCP 工具），MemoraX = 本地代码仓记忆 + 云端长期记忆的双层架构 + 数据驱动的 Memory Model。
 
 互补角度（相对 AgentMemory 的新增量）：
 1. **本地代码仓记忆 + 云端长期记忆双层**：本地层让 Agent 快速理解代码仓结构/关键入口/历史演进；云端层承载跨任务、跨对话、跨 Agent 的项目经验与开发者习惯。AgentMemory 只覆盖本地运行时。
@@ -115,4 +115,3 @@ combinedScore = bm25Weight*(1/(RRF_K+bm25Rank)) + vectorWeight*(1/(RRF_K+vectorR
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/tool-use-mcp-patterns.md)
 
 ---
-

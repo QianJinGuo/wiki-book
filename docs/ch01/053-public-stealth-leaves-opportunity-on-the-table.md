@@ -59,7 +59,6 @@
 - [What Do Your Startup Advisors Say About You? — Charlie O'Donnell](https://github.com/QianJinGuo/wiki-public/blob/main/entities/what-do-your-startup-advisors-say-about-you-charlie-odonnell---coach-author-vc.md)
 - [How Superset built the IDE for AI agents on Vercel](074-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/thisisgoingtobebig-public-stealth.md)
 
 ---
 

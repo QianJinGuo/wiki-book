@@ -16,7 +16,7 @@
 - [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](../ch01/280-checkmarx-jenkins-plugin-compromised-in-new-supply-chain-att.html)
 - [Rigged Game Scarcruft Compromises Gaming Platform Supply Chain Attack](../ch01/534-scarcruft.html)
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/shub-reaper-macos-stealer-attack-chain.md)
+→ [原文存档](https://www.sentinelone.com/blog/shub-reaper-macos-stealer-spoofs-apple-google-and-microsoft-in-a-single-attack-chain)
 
 ## 深度分析
 

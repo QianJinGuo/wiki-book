@@ -42,7 +42,7 @@
 1. **loopable**：Agent 能自己发现任务适合变成 Loop
 2. **一句话编译成 Loop**：用户的一句话被解析为目标、验证方式、触发条件、记忆规则
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/dittos-loop-codex-product-pm-zhongshiliu-2026.md)
+→ [原文存档](https://mp.weixin.qq.com/s/a9KVtosK59Oc8vmBx0969g)
 
 ---
 

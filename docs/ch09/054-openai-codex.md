@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 9.5KB | `entities/openai-codex-super-computer-network-xinzhiyuan.md`
 
-> 来源：[原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/openai-codex-super-computer-network-xinzhiyuan.md)
+> 来源：[原文存档](https://x.com/testingcatalog/status/2055708109343994335)
 
 # OpenAI秘密矩阵曝光！你的所有设备，被Codex连成一台超级电脑
 来源：新智元 / ASI启示录

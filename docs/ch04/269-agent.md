@@ -6,7 +6,7 @@
 
 > Claude Code 的工具系统不是简单的"函数注册表 + 调用分发器"，而是包含权限分级、运行时风险评估、子 Agent 递归和两阶段安全分类器的完整架构。
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/claude-code-tool-system-architecture-source-code.md)
+→ [原文存档](https://mp.weixin.qq.com/s/iD73TPYxZj6s-Jpmpt0ulw)
 
 ## 摘要
 

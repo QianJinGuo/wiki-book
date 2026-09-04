@@ -4,7 +4,7 @@
 
 # Enable safe agentic payments with built-in guardrails using Amazon Bedrock AgentCore payments
 
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/enable-safe-agentic-payments-with-built-in-guardrails-using-.md)
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/enable-safe-agentic-payments-with-built-in-guardrails-using-amazon-bedrock-agentcore-payments/)
 
 ## 深度分析
 

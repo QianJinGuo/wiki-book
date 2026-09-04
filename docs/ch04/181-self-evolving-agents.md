@@ -32,7 +32,7 @@
 - [Memento Skills Agent Self Evolving](308-memento-skills-agent.html) — 技能外部记忆维度，与 Environment-Centric Static Knowledge Evolution 相关
 - [Agent Self Improvement Six Mechanisms](../ch03/004-agent.html) — Agent 自我改进六条路，与本文 taxonomy 有重叠但视角不同
 - [Agent Memory Modular Framework](133-agent-memory.html) — Memory 模块化框架，与 Environment-Centric Modular Architecture Evolution 相关
-→ [原文存档](https://github.com/QianJinGuo/wiki-book/tree/main/docs/raw/articles/self-evolving-agents-survey-papersagent.md)
+→ [原文存档](https://mp.weixin.qq.com/s/35R4E6at4bjAjeMvJaHk_A)
 
 ## 深度分析
 ### 三条进化路线的内在逻辑与局限性
