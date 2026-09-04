@@ -2,7 +2,8 @@
 /** Fail closed when public source or site output contains private material. */
 
 import { existsSync, lstatSync, readdirSync, readFileSync, realpathSync } from "node:fs";
-import { join, relative, resolve } from "node:path";
+import { execFileSync } from "node:child_process";
+import { join, relative, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const projectRoot = resolve(fileURLToPath(new URL("..", import.meta.url)));
@@ -37,10 +38,37 @@ const requiredCardFields = [
   "license",
 ];
 
-function walk(root, callback) {
+// Gitignored local state (.omx session logs, wiki-notes, site/, .venv, …)
+// can never be committed or deployed, so it is out of scope for the source
+// scan. Computed once via git; on any failure the list stays empty and the
+// scan stays fail-closed (GHA checkouts have no ignored files anyway).
+const ignoredRoots = (() => {
+  try {
+    const out = execFileSync(
+      "git",
+      ["ls-files", "--others", "--ignored", "--exclude-standard", "--directory"],
+      { cwd: projectRoot, encoding: "utf8", maxBuffer: 64 * 1024 * 1024 },
+    );
+    return out
+      .split("\n")
+      .filter(Boolean)
+      .map((p) => join(projectRoot, p.replace(/\/+$/, "")));
+  } catch {
+    return [];
+  }
+})();
+
+function isIgnored(path) {
+  return ignoredRoots.some(
+    (root) => path === root || path.startsWith(root + sep),
+  );
+}
+
+function walk(root, callback, respectIgnore = false) {
   if (!existsSync(root)) return;
   for (const entry of readdirSync(root, { withFileTypes: true }).sort((a, b) => a.name.localeCompare(b.name))) {
     const path = join(root, entry.name);
+    if (respectIgnore && isIgnored(path)) continue;
     if (entry.isDirectory() && excludedDirs.has(entry.name)) continue;
     if (forbiddenDirs.has(entry.name)) {
       errors.push(`tree/${relative(sourceRoot, path)} contains forbidden private directory`);
@@ -94,15 +122,19 @@ function isReliableSourceUrl(sourceUrl) {
   }
 }
 
-function checkText(root, label, skip = () => false) {
-  walk(root, (path) => {
-    if (skip(path)) return;
-    const text = textOf(path);
-    if (text === null) return;
-    for (const marker of forbiddenText) {
-      if (text.includes(marker)) errors.push(`${label}/${relative(root, path)} contains forbidden marker ${marker}`);
-    }
-  });
+function checkText(root, label, skip = () => false, respectIgnore = false) {
+  walk(
+    root,
+    (path) => {
+      if (skip(path)) return;
+      const text = textOf(path);
+      if (text === null) return;
+      for (const marker of forbiddenText) {
+        if (text.includes(marker)) errors.push(`${label}/${relative(root, path)} contains forbidden marker ${marker}`);
+      }
+    },
+    respectIgnore,
+  );
 }
 
 const rawRoot = join(sourceRoot, "docs", "raw", "articles");
@@ -148,9 +180,13 @@ if (!existsSync(rawRoot)) {
   });
 }
 
-checkText(sourceRoot, "source", (path) =>
-  path === join(sourceRoot, "scripts", "check-public-build.mjs") ||
-  path.startsWith(join(sourceRoot, "site") + "/"),
+checkText(
+  sourceRoot,
+  "source",
+  (path) =>
+    path === join(sourceRoot, "scripts", "check-public-build.mjs") ||
+    path.startsWith(join(sourceRoot, "site") + "/"),
+  true,
 );
 if (!existsSync(siteRoot)) {
   errors.push(`public site directory is missing: ${siteRoot}`);

@@ -134,7 +134,9 @@ def card_for(path: Path, text: str) -> tuple[str, str] | None:
     title = title_for(text, metadata, path.stem)
     source = metadata.get("source", "").strip()
     author = metadata.get("author", "").strip()
-    if not source or source.startswith("raw/articles"):
+    # Some ingesters leave a wikilink or raw path in `source` instead of a
+    # real publisher name; the site origin is the honest fallback there.
+    if not source or re.search(r"\[\[|raw/articles", source):
         source = urlparse(source_url).netloc
     if not author:
         author = "未标注作者；来源机构见 source"
