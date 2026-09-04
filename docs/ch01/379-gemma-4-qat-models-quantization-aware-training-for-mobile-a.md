@@ -67,7 +67,7 @@ QAT 是 Gemma 4 发布两个月后（2026-04 → 2026-06）的第三个增量：
 
 现有 `entities/gemma-4-open-model-adoption-framework-interconnects.md`（来自 Interconnects）覆盖 Gemma 4 整体发布生态和开放模型战略，**QAT 是其中一个具体技术子主题**——本 entity 专注量化压缩技术细节。
 
-`raw/articles/nvidia-gemma-4-edge-ai.md` 关注 NVIDIA edge deployment 视角，**本 entity 关注 Google 自己的 QAT 技术细节**，两者互补。
+[NVIDIA edge deployment 原文](https://developer.nvidia.com/blog/bringing-ai-closer-to-the-edge-and-on-device-with-gemma-4/) 关注 NVIDIA edge deployment 视角，**本 entity 关注 Google 自己的 QAT 技术细节**，两者互补。
 
 ## 上线状态
 
@@ -125,4 +125,3 @@ QAT 模型消除了用户自行量化的技术门槛——直接下载即部署�
 → [原文存档](https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/)
 
 ---
-

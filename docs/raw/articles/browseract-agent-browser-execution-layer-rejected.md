@@ -3,7 +3,7 @@ type: source-card
 title: "发现一个神级开源项目，一句话让 AI Agent 无障碍接管真实浏览器，代理、多 Session 一起跑"
 source: "https://mp.weixin.qq.com/s/2CJS3LNKLAR1rQE4zxoFcg"
 author: "丛林"
-source_url: "https://www.browseract.ai/Java`）"
+source_url: "https://mp.weixin.qq.com/s/2CJS3LNKLAR1rQE4zxoFcg"
 published: "2026-06-18"
 collected: "2026-06-18"
 license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"

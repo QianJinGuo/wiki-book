@@ -3,7 +3,7 @@ type: source-card
 title: "Stripe 高管 Emily Sands：agent 是互联网的新经济主体 — 5 套基础设施全面上线"
 source: "https://mp.weixin.qq.com/s/t17nWFxn73gGhCNZUSqs0A"
 author: "深思圈"
-source_url: "https://x.com/emilygsands/status/2062540400108417244（45.8K"
+source_url: "https://x.com/emilygsands/status/2062540400108417244"
 published: "2026-06-05"
 collected: "2026-06-05"
 license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"

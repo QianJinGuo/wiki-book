@@ -3,7 +3,7 @@ type: source-card
 title: "integrate-atlassian-confluence-cloud-with-amazon-quick"
 source: "rss"
 author: "未标注作者；来源机构见 source"
-source_url: "https://aws.amazon.com/blogs/machine-learning/integrate/atlassian/confluence/cloud/with/amazon/quick.html"
+source_url: "https://aws.amazon.com/blogs/machine-learning/integrate-atlassian-confluence-cloud-with-amazon-quick/"
 published: "2026-05-19"
 collected: "2026-05-19"
 license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"

@@ -117,7 +117,6 @@ code-reviewer/
 ## 参考
 
 
-[^1]: raw/articles/gaLEAjOz8xLAi8ABnG855g
+[^1]: https://mp.weixin.qq.com/s/gaLEAjOz8xLAi8ABnG855g
 
 ---
-

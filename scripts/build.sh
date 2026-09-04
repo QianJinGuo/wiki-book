@@ -50,8 +50,7 @@ if [ -f "site/search/search_index.json" ]; then
     --input site/search/search_index.json \
     --output site/assets/neighbor_graph.json \
     --top-k 20 2>&1 | tail -5
-  cp site/assets/neighbor_graph.json /tmp/neighbor_graph.json
-  echo "Neighbor graph: site/assets/neighbor_graph.json (also /tmp for R2 upload)"
+  echo "Neighbor graph: site/assets/neighbor_graph.json"
 else
   echo "WARNING: site/search/search_index.json not found, skipping neighbor graph"
 fi

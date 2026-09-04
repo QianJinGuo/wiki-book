@@ -2906,7 +2906,7 @@ LLM 底层逻辑是一个极其擅长续写的系统。
 
 ## [MERGE 新增] 2024→2026 范式图谱：旧零件如何被新底座吸收
 
-*新增来源：raw/articles/agent-paradigm-2024-to-2026-skills-harness-loop-parsevolve*
+*新增来源：[原始来源](https://mp.weixin.qq.com/s/Z2wDPa-H_6b1cp0zCBosXg)*
 
 ### 演化主线
 

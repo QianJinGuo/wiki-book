@@ -24,12 +24,36 @@ const forbiddenText = [
   "neighbor_graph.private.json",
   "rag-private-",
 ];
+const excludedDirs = new Set([".git", "node_modules", ".venv"]);
+const forbiddenDirs = new Set(["site-private", ".build-private", "backups"]);
+const requiredCardFields = [
+  "type",
+  "title",
+  "source",
+  "author",
+  "source_url",
+  "published",
+  "collected",
+  "license",
+];
 
 function walk(root, callback) {
   if (!existsSync(root)) return;
   for (const entry of readdirSync(root, { withFileTypes: true }).sort((a, b) => a.name.localeCompare(b.name))) {
-    if ([".git", "node_modules", ".venv", "site-private", ".build-private", "backups"].includes(entry.name)) continue;
     const path = join(root, entry.name);
+    if (entry.isDirectory() && excludedDirs.has(entry.name)) continue;
+    if (forbiddenDirs.has(entry.name)) {
+      errors.push(`tree/${relative(sourceRoot, path)} contains forbidden private directory`);
+      continue;
+    }
+    if (entry.isSymbolicLink()) {
+      const allowedConfigLink =
+        path === join(sourceRoot, "deploy", "cloudflare", "wrangler.toml") &&
+        existsSync(join(sourceRoot, "wrangler.toml")) &&
+        realpathSync(path) === realpathSync(join(sourceRoot, "wrangler.toml"));
+      if (!allowedConfigLink) errors.push(`tree/${relative(sourceRoot, path)} must not be a symlink`);
+      continue;
+    }
     if (entry.isDirectory()) walk(path, callback);
     else if (entry.isFile()) callback(path);
   }
@@ -49,13 +73,21 @@ function isReliableSourceUrl(sourceUrl) {
   try {
     const parsed = new URL(sourceUrl);
     if (!/^https?:$/.test(parsed.protocol) || !parsed.hostname) return false;
+    if (!/^[\x00-\x7F]+$/.test(sourceUrl) || /[`<>"'（）]/.test(sourceUrl)) return false;
+    if (parsed.username || parsed.password) return false;
+    const sensitiveQueryKey = /^(token|access_token|api_key|key|secret|signature|x-amz-credential|x-amz-signature)$/i;
+    for (const key of parsed.searchParams.keys()) {
+      if (sensitiveQueryKey.test(key)) return false;
+    }
     const host = parsed.hostname.toLowerCase();
+    if (!host.includes(".")) return false;
     return ![
       "unknown",
       "example.com",
       "localhost",
       "127.0.0.1",
       "hf-mirror.com",
+      "jinguo.tech",
     ].some((blocked) => host === blocked || host.endsWith(`.${blocked}`));
   } catch {
     return false;
@@ -86,6 +118,14 @@ if (!existsSync(rawRoot)) {
     const frontmatter = text.match(/^---\s*\n(.*?)\n---\s*(?:\n|$)/s)?.[1] || "";
     const rawLabel = relative(rawRoot, path);
     if (!/^type:\s*source-card\s*$/m.test(frontmatter)) errors.push(`raw/${rawLabel} is not a source-card`);
+    const cardFields = [...frontmatter.matchAll(/^([A-Za-z0-9_-]+):\s*/gm)].map((match) => match[1]);
+    if (
+      cardFields.length !== requiredCardFields.length ||
+      new Set(cardFields).size !== requiredCardFields.length ||
+      requiredCardFields.some((field) => !cardFields.includes(field))
+    ) {
+      errors.push(`raw/${rawLabel} has unexpected source-card fields`);
+    }
     const sourceUrl = frontmatter.match(/^source_url:\s*["']?([^"'\s]+)["']?\s*$/m)?.[1] || "";
     try {
       if (!isReliableSourceUrl(sourceUrl)) throw new Error("invalid");
@@ -96,7 +136,13 @@ if (!existsSync(rawRoot)) {
     if (text.split("\n").length > 30 || lstatSync(path).size > 4096) {
       errors.push(`raw/${rawLabel} exceeds source-card size limits`);
     }
-    if (/Markdown Content:|raw-article|<html|```(?:html|markdown)/i.test(text)) {
+    const body = text.match(/^---\n[\s\S]*?\n---\n([\s\S]*)$/)?.[1] || "";
+    if (
+      !/^\n# [^\n]{1,240}\n\n## 原创摘要\n\n[^\n]{1,800}\n\n> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。\n?$/.test(body)
+    ) {
+      errors.push(`raw/${rawLabel} does not match the body-free source-card template`);
+    }
+    if (/Markdown Content:|raw-article|raw\/articles\/|<html|```(?:html|markdown)/i.test(text)) {
       errors.push(`raw/${rawLabel} looks like a retained full-text body`);
     }
   });

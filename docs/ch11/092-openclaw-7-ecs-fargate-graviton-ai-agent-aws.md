@@ -55,9 +55,9 @@
 
 本篇是 OpenClaw 多租户系列 #7。前序核心篇章：
 
-- **#3** EKS + K8s 变体（`raw/articles/build-multi-tenant-ai-agent-on-eks-graviton-openclaw-k8s-practice`）→ `entities/openclaw-multi-agent-team-practice-v2`
-- **#4** AgentCore Serverless 变体（`raw/articles/openclaw-multi-4`）→ `entities/openclaw-multi-4` / `entities/using-amazon-bedrock-agentcore-openclaw-multi-4`
-- **#6** OpenClaw 单机到多租户 Serverless 改造路径（`raw/articles/using-amazon-bedrock-agentcore-openclaw-multi-6`）→ `entities/using-amazon-bedrock-agentcore-openclaw-multi-6`
+- **#3** [EKS + K8s 变体（AWS 官方博客）](https://aws.amazon.com/cn/blogs/china/build-multi-tenant-ai-agent-on-eks-graviton-openclaw-k8s-practice/) → `entities/openclaw-multi-agent-team-practice-v2`
+- **#4** [AgentCore Serverless 变体（AWS 官方博客）](https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-4/) → `entities/openclaw-multi-4` / `entities/using-amazon-bedrock-agentcore-openclaw-multi-4`
+- **#6** [OpenClaw 单机到多租户 Serverless 改造路径（AWS 官方博客）](https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-6/) → `entities/using-amazon-bedrock-agentcore-openclaw-multi-6`
 
 ## 实践启示
 
@@ -110,4 +110,3 @@ ECS Fargate 消除了集群管理负担——不需要管理 EC2 实例、不需
 相关 raw：[Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](https://aws.amazon.com/cn/blogs/china/build-multi-tenant-ai-agent-on-eks-graviton-openclaw-k8s-practice/)、[Using Amazon Bedrock Agentcore Openclaw Multi 6](https://aws.amazon.com/cn/blogs/china/using-amazon-bedrock-agentcore-openclaw-multi-6/)
 
 ---
-

@@ -43,13 +43,26 @@ def tags(text: str) -> list[str]:
 
 
 def reliable_url(value: str) -> bool:
-    if not value or re.search(r"\s", value):
+    if not value or re.search(r"\s", value) or any(ord(char) > 127 for char in value):
         return False
     parsed = urlparse(value)
     host = (parsed.hostname or "").lower().rstrip(".")
-    if host in {"unknown", "example.com", "localhost", "127.0.0.1", "hf-mirror.com"}:
+    if (
+        not host
+        or "." not in host
+        or host in {"unknown", "example.com", "localhost", "127.0.0.1", "hf-mirror.com", "jinguo.tech"}
+        or host.endswith(".jinguo.tech")
+    ):
         return False
     return parsed.scheme in {"http", "https"} and bool(parsed.netloc)
+
+
+def clean_url_candidate(value: str) -> str:
+    """Keep only an explicit URL, dropping common prose delimiters."""
+    value = value.strip().strip('"\'')
+    value = re.split(r"\\n|\\r", value, maxsplit=1)[0]
+    value = re.split(r"[（，。；！？、]", value, maxsplit=1)[0]
+    return value.rstrip(".,;!?\"'）】》」』`>").strip()
 
 
 def body_source_url(text: str) -> str:
@@ -61,7 +74,7 @@ def body_source_url(text: str) -> str:
         match = url_re.search(line)
         prefix = line[: match.start()].strip(" *`*_：:()[]") if match else ""
         if match and any(label.lower() in prefix.lower() for label in labels):
-            candidate = match.group(0).rstrip(".,;!?\"'")
+            candidate = clean_url_candidate(match.group(0))
             if reliable_url(candidate):
                 return candidate
         normalized = line.strip().rstrip("：:").lower()
@@ -72,7 +85,7 @@ def body_source_url(text: str) -> str:
                     if following.strip():
                         break
                     continue
-                candidate = match.group(0).rstrip(".,;!?\"'")
+                candidate = clean_url_candidate(match.group(0))
                 if reliable_url(candidate):
                     return candidate
                 break
@@ -99,14 +112,20 @@ def title_for(text: str, metadata: dict[str, str], fallback: str) -> str:
 
 def card_for(path: Path, text: str) -> tuple[str, str] | None:
     metadata = fields(text)
-    source_url = metadata.get("source_url", "").strip().replace('\\"', '"')
+    raw_source_url = metadata.get("source_url", "").strip().replace('\\"', '"')
+    source_url = clean_url_candidate(raw_source_url)
     # Some ingesters accidentally put escaped prose or a closing quote after
     # the URL on the same YAML line. Remove only those unambiguous delimiters;
     # a real space inside the URL remains invalid and is never guessed.
     escaped_tail = re.search(r"\\n|\\r", source_url)
     if escaped_tail:
         source_url = source_url[: escaped_tail.start()].rstrip()
-    source_url = source_url.strip().strip('"\'')
+    if ("`" in raw_source_url or ("）" in raw_source_url and "（" not in raw_source_url)) and reliable_url(
+        clean_url_candidate(metadata.get("source", ""))
+    ):
+        source_url = clean_url_candidate(metadata["source"])
+    if not reliable_url(source_url):
+        source_url = clean_url_candidate(metadata.get("source", ""))
     if not reliable_url(source_url):
         source_url = body_source_url(text)
     if not reliable_url(source_url):

@@ -286,13 +286,13 @@ Spec 驱动原则强调项目评估、技术方案等前置环节的准确性—
 
 ### 9.3 实战案例相关
 
-- `raw/articles/agent-skill-iterative-writing-taobao-logistics.md`：**同公司（淘天集团）不同团队（物流技术 其林 2026-06-12）** 的 Skill 迭代式编写实战——**孤儿 raw 无 entity**（建议后续批处理整合，本文仅标注，不合并避免 scope creep）
+- [Agent skill 迭代式编写实战 — 淘天集团物流技术团队](https://mp.weixin.qq.com/s/59Z2eVOg914_bpRD6-WsYg)：**同公司（淘天集团）不同团队（物流技术 其林 2026-06-12）** 的 Skill 迭代式编写实战——**暂无独立 entity**（建议后续批处理整合，本文仅标注，不合并避免 scope creep）
 - [Ai Skills Middleware Migration Android Harmonyos Taobao 2026](../ch01/351-ai-skill.html)：淘天 AI Skills 中间件迁移（Android→HarmonyOS）
 - [Agent Memory Evaluation Landscape Taobao Survey](133-agent-memory.html)：淘天 Agent Memory 评测综述
 
 ## 10. 孤儿 raw 提示（pre-existing issue）
 
-发现库内 pre-existing 孤儿 raw：`raw/articles/agent-skill-iterative-writing-taobao-logistics.md`（淘天物流技术团队 其林, 2026-06-12）—— **有 raw 但无 entity**。
+发现库内 pre-existing 孤立来源记录：[Agent skill 迭代式编写实战 — 淘天集团物流技术团队](https://mp.weixin.qq.com/s/59Z2eVOg914_bpRD6-WsYg)（淘天物流技术团队 其林, 2026-06-12）—— **有来源记录但无 entity**。
 
 **建议**：后续批处理整合，原因是：
 1. 同公司（淘天集团）不同团队（物流 vs 行业运营）
@@ -312,4 +312,3 @@ Spec 驱动原则强调项目评估、技术方案等前置环节的准确性—
 6. **同公司物流技术团队（其林）的 Skill 编写实战**孤儿 raw 整合
 
 ---
-

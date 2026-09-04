@@ -29,7 +29,8 @@ node scripts/check-public-build.mjs --source "$PROJECT_DIR" --site "$SITE_DIR"
 
 # build.sh already produced the slim index and the aligned graph. Rewriting
 # either file here would allow an unverified output to reach R2.
-if [ ! -f "$SITE_DIR/search/search_index.json" ] || [ ! -f "/tmp/neighbor_graph.json" ]; then
+GRAPH_FILE="$SITE_DIR/assets/neighbor_graph.json"
+if [ ! -f "$SITE_DIR/search/search_index.json" ] || [ ! -f "$GRAPH_FILE" ]; then
     echo "ERROR: public RAG artifacts are missing; run scripts/build.sh first." >&2
     exit 1
 fi
@@ -41,11 +42,9 @@ fi
 
 # Upload RAG assets to R2
 echo "Uploading RAG assets to R2..."
-if [ -f "/tmp/neighbor_graph.json" ]; then
-  npx wrangler r2 object put ai-engineering-search/neighbor_graph.json --file /tmp/neighbor_graph.json --remote 2>&1 | tail -1
-fi
+npx wrangler r2 object put ai-engineering-search/neighbor_graph.json --file "$GRAPH_FILE" --remote 2>&1 | tail -1
 # Upload slimmed search index to R2
- npx wrangler r2 object put ai-engineering-search/search_index.json --file "$SITE_DIR/search/search_index.json" --remote 2>&1 | tail -1
+npx wrangler r2 object put ai-engineering-search/search_index.json --file "$SITE_DIR/search/search_index.json" --remote 2>&1 | tail -1
 
 # Deploy
 echo "Deploying..."

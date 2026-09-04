@@ -117,7 +117,6 @@ Karpathy's autoresearch: 规划 → 执行 → 观察/测试 → 改进 的目�
 
 → [Lilian Weng 原博客](https://lilianweng.github.io/posts/2026-07-04-harness/)
 
-[^1]: raw/articles/kZrryL8_fxfq2pSFw6LSqg
+[^1]: https://lilianweng.github.io/posts/2026-07-04-harness/
 
 ---
-
