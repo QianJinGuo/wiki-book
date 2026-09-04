@@ -10,6 +10,8 @@ echo "=== Building wiki-book ==="
 echo "=== Checking two-layer wiki links ==="
 node scripts/check-wiki-links.mjs
 
+# Content-quality scan of the published chapter pages (report-only; pass
+# --strict to make failures block the build once the corpus is clean).
 # Host-side Python for course/dashboard/slim/graph steps.
 # Prefers the project venv (numpy/scipy for the graph build); CI installs
 # deps into the system interpreter instead. Override with PYTHON=<path>.
@@ -17,6 +19,11 @@ PYTHON="${PYTHON:-python3}"
 if [ "$PYTHON" = "python3" ] && [ -x ".venv/bin/python" ]; then
   PYTHON=".venv/bin/python"
 fi
+
+# Content-quality scan of the published chapter pages (report-only; pass
+# --strict to make failures block the build once the corpus is clean).
+echo "=== Article quality scan ==="
+"$PYTHON" scripts/check-article-quality.py || true
 
 # Regenerate index JSONs from the actual docs/ tree before MkDocs copies
 # docs/ into site/.  The auto-sync ("sync: auto-update from wiki entities")
