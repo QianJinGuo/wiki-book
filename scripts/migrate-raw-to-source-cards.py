@@ -190,6 +190,11 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", type=Path, required=True)
     parser.add_argument("--mapping", type=Path, required=True)
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Scan only: emit the slug→source_url mapping without converting or deleting input files",
+    )
     args = parser.parse_args()
     if not args.input.is_dir():
         raise SystemExit(f"raw directory not found: {args.input}")
@@ -202,11 +207,13 @@ def main() -> None:
         relative = path.relative_to(args.input).as_posix()
         result = card_for(path, path.read_text(encoding="utf-8", errors="replace"))
         if result is None:
-            path.unlink()
+            if not args.dry_run:
+                path.unlink()
             deleted += 1
             continue
         card, source_url = result
-        path.write_text(card, encoding="utf-8")
+        if not args.dry_run:
+            path.write_text(card, encoding="utf-8")
         mapping[relative] = source_url
         if path.name not in basename_sources:
             basename_sources[path.name] = source_url
