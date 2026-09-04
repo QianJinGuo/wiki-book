@@ -59,8 +59,11 @@ def main():
             errors.append(f"{label}: 核心观点 contains heading fragments")
 
         for match in LINK_PAT.finditer(text):
+            # "../ch03/x.html" is relative to the chapter directory, which is
+            # SITE/ch03/ — strip the leading ".." and resolve against SITE.
             target = match.group(1)
-            if os.path.isdir(SITE) and os.path.exists(os.path.join(SITE, target)):
+            resolved = os.path.join(SITE, target.lstrip("./"))
+            if os.path.exists(resolved):
                 continue
             if target in docs_pages:
                 continue
