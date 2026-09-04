@@ -183,11 +183,10 @@ async function testClientRag(url, label) {
   let passed = 0, failed = 0;
 
   try {
-    // 选择一个在所有环境都存在的文章作为测试页面
-    // Docker: ch04/001-agent.html | GH Pages/CF: ch04-001-agent.html (flat)
-    var testPath = url === 'http://127.0.0.1:8002'
-      ? '/ch04/001-agent'   // Docker 子目录格式
-      : '/ch04-001-agent';   // 其他环境扁平格式
+    // 选择一个在所有环境都存在的文章作为测试页面。
+    // MkDocs 输出保持章节目录结构；Cloudflare 和 GitHub Pages 都支持
+    // clean URL，因此不能使用不存在的扁平路径 /ch04-001-agent。
+    var testPath = '/ch04/001-agent';
     await page.goto(url + testPath, {
       waitUntil: 'domcontentloaded',
       timeout: 20000
@@ -295,9 +294,7 @@ async function testFrontendScripts(url, label) {
   let passed = 0, failed = 0;
 
   try {
-    var testPath = url === 'http://127.0.0.1:8002'
-      ? '/ch04/001-agent'
-      : '/ch04-001-agent';
+    var testPath = '/ch04/001-agent';
     await page.goto(url + testPath, {
       waitUntil: 'domcontentloaded',
       timeout: 20000
