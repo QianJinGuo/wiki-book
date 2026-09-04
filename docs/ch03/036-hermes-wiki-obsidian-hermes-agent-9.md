@@ -12,13 +12,13 @@
 
 | 变化 | 旧 | 新 |
 |------|----|----|
-| **从存资料到编译资料** | 文章作为来源记录保存后仍是一坨 | Agent 拆成概念/实体/MOC，每个页面都是**可被引用的独立节点** |
+| **从存资料到编译资料** | 文章丢进 `raw/articles/` 是一坨 | Agent 拆成概念/实体/MOC，每个页面都是**可被引用的独立节点** |
 | **从页面孤立到自动关联** | Agent 建了一堆页面但孤立 | Agent **强制用 wikilink 把每个新页面和已有页面关联**（概念↔概念、概念↔实体、实体↔MOC） |
 | **从线性输出到网络生长** | "一篇文章 → 一篇总结" | "一篇文章 → 多个节点 → 和已有节点自动关联 → **图谱越来越密**" |
 
 **最后一行最关键**：文章越多，网络价值越大——**不是线性叠加，是指数增长**。这是从"收藏"到"网络"的范式跃迁。
 
-> 与 [LLM Wiki / Obsidian-Wiki / GBrain 自组织自进化](../ch01/476-llm-wiki-obsidian-wiki-gbrain.html) 在"知识管理从静态检索到动态自组织"维度同源——但本文是**Hermes-Wiki 的可操作搭建法**，前者是 **LLM Wiki / Obsidian-Wiki / GBrain 三种实现的架构分析**。**互补不重叠**：一个讲 what/why（架构哲学），一个讲 how（工程落地）。
+> 与 [LLM Wiki / Obsidian-Wiki / GBrain 自组织自进化](../ch01/484-llm-wiki-obsidian-wiki-gbrain.html) 在"知识管理从静态检索到动态自组织"维度同源——但本文是**Hermes-Wiki 的可操作搭建法**，前者是 **LLM Wiki / Obsidian-Wiki / GBrain 三种实现的架构分析**。**互补不重叠**：一个讲 what/why（架构哲学），一个讲 how（工程落地）。
 
 ## 文件夹结构：节点类型分离
 
@@ -78,7 +78,7 @@ Hermes-Wiki/
 不用写复杂，早期三块就够：
 - **核心概念**：链接到 `concepts/` 下的关键概念
 - **主题地图**：链接到 `moc/` 下的阅读路线
-- **最近更新**：链接到最新来源记录的处理结果
+- **最近更新**：链接到最新 `raw/articles/` 处理结果
 
 作用是让人和 Agent 一眼知道这个 Wiki 的入口在哪。
 
@@ -112,7 +112,7 @@ SCHEMA.md / index.md / log.md，**这三件套比文件夹重要**。
 
 **最容易出错的是 Windows 用户**：
 - WSL/Ubuntu 里运行 Hermes → `WIKI_PATH` 要设置在 WSL 里，**不是 Windows PowerShell**
-- Windows + WSL：`export WIKI_PATH="/mnt/c/Users/你的用户名/Hermes-Wiki"`
+- Windows + WSL：`export WIKI_PATH=$(wslpath 'C:\Users\你的用户名\Hermes-Wiki')`
 - Mac：`export WIKI_PATH="$HOME/Hermes-Wiki"`
 
 ### 步骤 5 — 先只读，不要急着改
@@ -131,16 +131,16 @@ SCHEMA.md / index.md / log.md，**这三件套比文件夹重要**。
 **验证标准**：Hermes 能准确说出 `raw/` 是原始资料、`concepts/` 是概念页、`moc/` 是主题地图、`SCHEMA.md` 是规则文件、`index.md` 是总入口、`log.md` 是更新日志。**说对了再进入下一步**。
 
 ### 步骤 6 — 收录第一篇文章
-进入私有原文库 → 新建 Markdown 文件 → 保存原文 → 在 Hermes 里输入：
+进入 `raw/articles/` → 新建 Markdown 文件 → 粘贴文章 → 在 Hermes 里输入：
 
 ```
-请收录这篇文章：私有原文库/你的文章标题.md
+请收录这篇文章：raw/articles/你的文章标题.md
 注意：这是一篇文章草稿，请把它作为 raw 原始资料处理，不要修改原文。
 要求：
 1. 读取文章内容，提取核心主题
 2. 根据内容创建或更新对应的 Wiki 页面
 3. 重要使用 wikilink 双链（方括号包裹概念名）
-4. 关键结论必须标注原始来源 URL 或来源卡片
+4. 关键结论必须标注来源：raw/articles/你的文章标题.md
 5. 如果某些内容是总结归纳或待验证判断，请明确标记
 6. 更新 index.md
 7. 更新 log.md
@@ -192,11 +192,11 @@ SCHEMA.md / index.md / log.md，**这三件套比文件夹重要**。
 
 3. **SCHEMA.md 是行为约束而非格式规范**：Agent 知识库失败的根本原因是 Agent 的"创意自由"——今天建 summary、明天建 note、后天换命名。SCHEMA.md 的核心价值在于把"如何维护知识库"变成一个**可执行的行为契约**，而不是一个可被忽略的建议。[Hermes Skills + LLM Wiki 越用越懂你](../ch07/016-hermes-skill.html)的三层互相喂养框架在这里有直接呼应——Wiki 层需要 Schema 层来稳定行为预期。
 
-4. **"先只读再写"是初始化对齐而非谨慎措施**：步骤 5 的初始化检查（读 SCHEMA.md / index.md / log.md 并总结结构）的本质是**在 Agent 和 Wiki 之间建立共同认知基底**，确保 Agent 理解目录角色和操作规范。这与 [Karpathy LLM Wiki v2](../ch01/451-llm.html) 的"LLM Wiki 是关于如何组织知识而非存储知识"的核心理念一脉相承。
+4. **"先只读再写"是初始化对齐而非谨慎措施**：步骤 5 的初始化检查（读 SCHEMA.md / index.md / log.md 并总结结构）的本质是**在 Agent 和 Wiki 之间建立共同认知基底**，确保 Agent 理解目录角色和操作规范。这与 [Karpathy LLM Wiki v2](../ch01/458-llm.html) 的"LLM Wiki 是关于如何组织知识而非存储知识"的核心理念一脉相承。
 
 **实践价值**：对于想构建自生长知识网络的团队，9 步法的最大启示是"**先规则后内容**"——不给 Agent 规则而直接给资料，最终得到的是一堆 AI 生成的新垃圾，命名混乱、链接无意义、不可追溯。
 
-[LLM Wiki / Obsidian-Wiki / GBrain 自组织自进化](../ch01/476-llm-wiki-obsidian-wiki-gbrain.html)提供了架构层面的理论支撑，解释了为什么 wiki-based knowledge network 能实现从静态检索到动态自组织的范式跃迁。
+[LLM Wiki / Obsidian-Wiki / GBrain 自组织自进化](../ch01/484-llm-wiki-obsidian-wiki-gbrain.html)提供了架构层面的理论支撑，解释了为什么 wiki-based knowledge network 能实现从静态检索到动态自组织的范式跃迁。
 
 ## 实践启示
 
@@ -224,20 +224,21 @@ SCHEMA.md / index.md / log.md，**这三件套比文件夹重要**。
 ## 相关实体
 
 - **同 LLM Wiki / Obsidian 知识管理**：
-  - [LLM Wiki / Obsidian-Wiki / GBrain 自组织自进化](../ch01/476-llm-wiki-obsidian-wiki-gbrain.html)（架构分析）
-  - [Karpathy LLM Wiki v2](../ch01/451-llm.html)（原始方法论）
-  - [Karpathy LLM Wiki 第二大脑](../ch01/451-llm.html)
-  - [Obsidian 工具概览](071-karpathy-llm-wiki-obsidian-agents-md.html)
-  - [Claude Code Memory Setup (Obsidian + Graphify)](057-claude-code.html)
+  - [LLM Wiki / Obsidian-Wiki / GBrain 自组织自进化](../ch01/484-llm-wiki-obsidian-wiki-gbrain.html)（架构分析）
+  - [Karpathy LLM Wiki v2](../ch01/458-llm.html)（原始方法论）
+  - [Karpathy LLM Wiki 第二大脑](../ch01/458-llm.html)
+  - [Obsidian 工具概览](../ch01/530-claude-code-memory-setup-obsidian-graphify.html)
+  - [Claude Code Memory Setup (Obsidian + Graphify)](../ch01/530-claude-code-memory-setup-obsidian-graphify.html)
 - **同 Hermes Agent 生态**：
   - [Hermes Skills + LLM Wiki 越用越懂你](../ch07/016-hermes-skill.html)（三层互相喂养）
-  - [Hermes Agent 自进化机制源码解析](../ch04/161-hermes-agent.html)
-  - [Hermes Agent Memory System vs OpenClaw](../ch04/161-hermes-agent.html)
+  - [Hermes Agent 自进化机制源码解析](066-hermes-agent.html)
+  - [Hermes Agent Memory System vs OpenClaw](066-hermes-agent.html)
 - **同上下文工程 / 记忆架构**：
-  - [AI Coding Agent 记忆系统](../ch04/253-ai-coding-agent.html)
+  - [AI Coding Agent 记忆系统](../ch04/264-ai-coding-agent.html)
   - [上下文工程三种记忆范式对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md)
-  - [企业 AI 记忆 substrate 三层架构](../ch04/257-ai.html)
+  - [企业 AI 记忆 substrate 三层架构](../ch04/052-ai.html)
 
 → [原文存档](https://mp.weixin.qq.com/s/N5OWc-8IdCrdqtVB4SLeaA)
 
 ---
+

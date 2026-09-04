@@ -152,7 +152,7 @@ Agent Teams 的协作开销最高，只有在前两种模式都不适用时才�
 
 **核心变化**：Coding Agent 的工作单位在变——从交给一个会话，变成拆成几个工作面：谁读现状、谁改哪部分、谁验证、谁审查，哪些信息需要共享，哪些文件不能碰，失败以后怎么回退，最后用什么证据判断完成。
 ## 相关实体
-- [Claude Code Agent View Huashu](../ch03/048-claude-code-agent.html)
+- [Claude Code Agent View Huashu](../ch09/001-claude-code-agent-view.html)
 - [Claude Code 7 Layer Memory Architecture](../ch03/057-claude-code.html)
 - [Claude Code Agent Teams Architecture](260-claude-code-agent-teams.html)
 - [Claude Code Deep Architecture Analysis](../ch03/057-claude-code.html)

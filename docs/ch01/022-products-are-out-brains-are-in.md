@@ -38,13 +38,13 @@ The author pushes back on the "tech industry is dying" narrative as missing the 
 6. **Treat transparency as selection and churn reduction.** Honest founder content gives prospects a clear view of whom they're trusting with part of their business and selects for customers who resonate with your decision-making philosophy — a shot at less churn and a bigger brand.
 
 ## 相关实体
-- [Software after AI](524-software-after-ai.html)
-- [The repricing of software engineering labor](075-repricing-of-software-engineering-labor.html)
+- [Software after AI](532-software-after-ai.html)
+- [The repricing of software engineering labor](077-repricing-of-software-engineering-labor.html)
 - [Primitive is the product](../ch05/018-ai-native.html)
 - [The minimum viable unit of saleable software](https://github.com/QianJinGuo/wiki-public/blob/main/entities/minimum-viable-unit-saleable-software-brandur.md)
 - [The token economy](002-the-token-economy-pt2-the-intelligence-company-gets-built.html)
-- [From doer to director](029-from-doer-to-director-the-ai-mindset-shift.html)
-- [Running an AI-native engineering org](046-running-an-ai-native-engineering-org.html)
+- [From doer to director](028-from-doer-to-director-the-ai-mindset-shift.html)
+- [Running an AI-native engineering org](047-running-an-ai-native-engineering-org.html)
 - [When growth slows — product vs. sales](https://github.com/QianJinGuo/wiki-public/blob/main/entities/when-growth-slows-is-it-sales-fault-or-the-products-fault-the-answer-has-changed.md)
 
 → [原文存档](https://mrmarket.bearblog.dev/products-are-out-brains-are-in-new/)

@@ -1,8 +1,8 @@
 # Static Devirtualization of Themida
 
-> 📊 Level ⭐⭐ | 7.4KB | `entities/static-devirtualization-of-themida.md`
+> 📊 Level ⭐⭐ | 7.5KB | `entities/static-devirtualization-of-themida.md`
 
-> -> [原始来源](https://back.engineering/blog/09/05/2026/)
+> -> [原文存档](https://back.engineering/blog/09/05/2026/)
 
 ## 摘要
 本文由 Back Engineering Labs 发布，展示了一种**通用静态去虚拟化（Static Devirtualization）框架**，核心思想是将 VM 保护的二进制代码通过符号执行（symbolic evaluation）提升（lift）至中间表示（IR），再利用一系列通用优化 passes 将虚拟机的所有"脚手架"逐一消除，最终将代码回填（reinsert）至原生 x86/ARM64。该方法在 Themida、VMProtect 等多种基于虚拟机的代码保护器上均适用，仅需少量 VM 特定知识——尤其是在处理虚拟条件分支（VJCC）时需要 Themida 特有的 `branch_taken_flag` 追踪。
@@ -57,7 +57,7 @@ devirtualized 代码要被 IDA、Binary Ninja 等工具正常加载，关键约�
 ## 相关实体
 - [Static Devirtualization of Themida](https://github.com/QianJinGuo/wiki-public/blob/main/entities/back-engineering-static-devirtualization-themida.md)
 - [Static Devirtualization of Themida](https://github.com/QianJinGuo/wiki-public/blob/main/entities/static-devirtualization-themida.md)
-- [static devirtualization of themida](059-cve-2026-20182-unauthenticated-cisco-sd-wan-control-plane-c.html)
+- [static devirtualization of themida](060-cve-2026-20182-unauthenticated-cisco-sd-wan-control-plane-c.html)
 
 ---
 

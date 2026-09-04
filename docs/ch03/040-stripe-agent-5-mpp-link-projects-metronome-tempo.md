@@ -4,7 +4,7 @@
 
 # Stripe Agent 经济基础设施 5 套图谱
 
-> 原文存档：[原文存档](https://x.com/emilygsands/status/2062540400108417244（45.8K)
+> 原文存档：[原文存档](https://x.com/emilygsands/status/2062540400108417244)
 
 Emily Sands（Stripe 高管）2026-06-04 发表于 X（45.8K 次浏览，整理：深思圈 2026-06-05）——提出 **"agent 是互联网的新经济主体"** 框架。Stripe 5 套基础设施全面上线：**MPP（机器支付协议）+ Link Agent 钱包（2.5 亿用户）+ Stripe Projects（vibe-deploying）+ Metronome + Tempo（流式支付）+ Radar（防 token 盗窃）**。战略目标：把整个 agent 经济的基础设施层**锁定**，如同当年锁定互联网支付。
 
@@ -199,13 +199,13 @@ Emily Sands（Stripe 高管）2026-06-04 发表于 X（45.8K 次浏览，整理�
 
 ## 相关主题
 
-- AI 变现 / 定价 — [Aws Generative Ai Model Agility Framework](../ch01/167-agi.html) / [Agent Skills Comprehensive Survey](../ch04/302-agent-skills.html)
-- Agent 平台化 — [Baixing Ontoz Enterprise Ontology Multi Agent](004-agent.html) / [Kimi Work Codex Vibe Working Paradigm Shift](../ch01/393-codex.html)
+- AI 变现 / 定价 — [Aws Generative Ai Model Agility Framework](../ch01/166-agi.html) / [Agent Skills Comprehensive Survey](../ch04/314-agent-skills.html)
+- Agent 平台化 — [Baixing Ontoz Enterprise Ontology Multi Agent](004-agent.html) / [Kimi Work Codex Vibe Working Paradigm Shift](../ch01/398-codex.html)
 - Claude Code / Vibe Coding — [Claude Code Architecture](057-claude-code.html)
-- Token 盗窃防护 — [Vscode Github Token Stealing 1 Click Pwn Ammaraskar 2026](../ch01/474-github.html) / Vercel Token Theft 防护
+- Token 盗窃防护 — [Vscode Github Token Stealing 1 Click Pwn Ammaraskar 2026](../ch01/476-github.html) / Vercel Token Theft 防护
 - A2A 智能体经济 — [Baixing Ontoz Enterprise Ontology Multi Agent](004-agent.html)（长期布局）
 - 企业 AI 原生团队 — [Agent Evolution Four Stages Six Dimensions Aliyun](004-agent.html)
-- 稳定币 / 加密 — [Inngest Ai And Backend Workflows Orchestrated At Any Scale](../ch01/553-inngest-ai-and-backend-workflows-orchestrated-at-any-scal.html)
+- 稳定币 / 加密 — [Inngest Ai And Backend Workflows Orchestrated At Any Scale](../ch01/561-inngest-ai-and-backend-workflows-orchestrated-at-any-scal.html)
 
 ---
 

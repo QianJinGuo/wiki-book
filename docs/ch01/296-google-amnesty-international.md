@@ -1,6 +1,6 @@
 # Google & Amnesty International：联手打击商业间谍软件
 
-> 📊 Level ⭐⭐ | 11.0KB | `entities/google-amnesty-spyware-detection.md`
+> 📊 Level ⭐⭐ | 11.1KB | `entities/google-amnesty-spyware-detection.md`
 
 > -> [原文存档](https://cyberscoop.com/google-android-intrusion-logging-amnesty-spyware-detection/)
 

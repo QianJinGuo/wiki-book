@@ -191,15 +191,15 @@ AI可观测、AI评测、Agent安全——SLA衡量标准与传统架构不同�
 ## 相关实体
 - [Agent Harness Context Management Working Set](035-agent-harness.html)（相关：上下文装载层是 Harness 第一层）
 - [Agent Harness Architecture](035-agent-harness.html)（相关：Harness 7 层是 agent-harness-architecture 的具体化）
-- [Agent Harness Engineering Survey 2026](057-harness-engineering.html)（相关：Harness Engineering 综述与本文 Harness 7 层互补）
-- [Spec As Aios Anti Entropy Architecture Gaode App Platform 2026](../ch04/257-ai.html)（相关：Spec as AIOS 是 Spec 工程化的另一视角）
-- [Gaode Sdd Harness Team Ai Coding Paradigm Ibjfu](076-ai-coding.html)（相关：高德 Harness/SDD 体系演进同主题）
+- [Agent Harness Engineering Survey 2026](026-harness-engineering.html)（相关：Harness Engineering 综述与本文 Harness 7 层互补）
+- [Spec As Aios Anti Entropy Architecture Gaode App Platform 2026](../ch04/052-ai.html)（相关：Spec as AIOS 是 Spec 工程化的另一视角）
+- [Gaode Sdd Harness Team Ai Coding Paradigm Ibjfu](078-ai-coding.html)（相关：高德 Harness/SDD 体系演进同主题）
 - [Agent 编排范式](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-orchestration-patterns.md)（相关：评测体系一脉相承）
 - [AI Friendly 架构设计（淘天久游）](019-ai-friendly.html)（同主题另一视角）
 
 → [第 1 来源原文](https://mp.weixin.qq.com/s/EezA0kT_hQCXze9LEOeuqg)
 → [第 2 来源原文](https://mp.weixin.qq.com/s/XpSpAiWY-nXjw8d8QPbabg)
-- [协作涌现：agent room 的多智能体决策框架](../ch04/449-agent-room.html)
+- [协作涌现：agent room 的多智能体决策框架](../ch04/464-agent-room.html)
 - [从全量启动到最小核：手淘外链唤端链路的三次架构演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/从全量启动到最小核手淘外链唤端链路的三次架构演进.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/observability-monitoring.md)
 

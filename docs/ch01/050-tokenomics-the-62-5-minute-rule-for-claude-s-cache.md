@@ -1,6 +1,6 @@
 # Tokenomics: the 62.5-minute rule for Claude's cache
 
-> 📊 Level ⭐ | 7.9KB | `entities/anthropic_cache_tokenomics.md`
+> 📊 Level ⭐ | 8.0KB | `entities/anthropic_cache_tokenomics.md`
 
 # Tokenomics: the 62.5-minute rule for Claude's cache
 
@@ -51,12 +51,12 @@ The 62.5-minute rule presumes you will actually make another request against tha
 
 ## 相关实体
 
-- [同源姊妹篇：62.5 分钟规则](340-claude.html)
-- [Claude Code 提示缓存实战](161-anthropic-prompt-caching-claude-code.html)
-- [Amazon Bedrock 提示缓存策略](../ch11/135-amazon-bedrock.html)
-- [编码代理的提示缓存](../ch09/038-coding-agent.html)
+- [同源姊妹篇：62.5 分钟规则](341-claude.html)
+- [Claude Code 提示缓存实战](160-anthropic-prompt-caching-claude-code.html)
+- [Amazon Bedrock 提示缓存策略](../ch11/136-amazon-bedrock.html)
+- [编码代理的提示缓存](../ch09/041-coding-agent.html)
 - [Harness 提示缓存](../ch05/008-harness.html)
-- [Claude Opus 4.7](340-claude.html)
+- [Claude Opus 4.7](341-claude.html)
 - [Harness token 成本对比](../ch03/057-claude-code.html)
 - [上下文压缩](../ch03/004-agent.html)
 

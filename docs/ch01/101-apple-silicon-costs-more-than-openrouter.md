@@ -82,8 +82,8 @@ OpenRouter 上的 Gemma 4 31B 可达 60-70 tokens/秒，而 M5 Max 本地仅 10-
 ## 相关实体
 
 - [Inference cost at scale with napkin math](https://github.com/QianJinGuo/wiki-public/blob/main/entities/napkin-inference-cost-injuly-2026.md)
-- [From Doer To Director The Ai Mindset Shift](029-from-doer-to-director-the-ai-mindset-shift.html)
-- [Running An Ai Native Engineering Org](046-running-an-ai-native-engineering-org.html)
+- [From Doer To Director The Ai Mindset Shift](028-from-doer-to-director-the-ai-mindset-shift.html)
+- [Running An Ai Native Engineering Org](047-running-an-ai-native-engineering-org.html)
 
 ---
 

@@ -41,10 +41,10 @@ Recent [analysis](https://www.icij.org/investigations/coin-laundry/cryptocurrenc
 - **相关实体**: 浏览器安全与隐私
 
 ## 相关实体
-- [Cyberscammers Are Bypassing Banks Security With Illicit Tool](039-cyberscammers-are-bypassing-banks-security-with-illicit-too.html)
+- [Cyberscammers Are Bypassing Banks Security With Illicit Tool](101-cyberscammers-are-bypassing-banks-security-with-illicit-too.html)
 - [Llmreaper Dom Based Ai Conversation Exfiltration Via Browser](014-llmreaper-dom-based-ai-conversation-exfiltration-via-brows.html)
-- [Ai_Threat_Readiness_Framework](../ch04/257-ai.html)
-- [Npm Supply Chain Compromise Postmortem](../ch04/257-ai.html)
+- [Ai_Threat_Readiness_Framework](../ch04/052-ai.html)
+- [Npm Supply Chain Compromise Postmortem](../ch04/052-ai.html)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 
 → [原文存档](https://www.technologyreview.com/2026/04/15/1135898/cyberscammers-bypassing-bank-telegram)

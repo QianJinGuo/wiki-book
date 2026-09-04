@@ -94,9 +94,9 @@ AI 项目从 PoC 到生产的失败，本质上是一个**系统工程问题**�
 3. **从"技术选型"转向"能力建设"**：AI 落地的长期竞争力不在于选择了哪个模型，而在于是否建立了持续迭代、工程化、可观测的 AI 能力体系。
 ## 相关实体
 - [Google Agentic Rag Sufficient Context Agent Framesqa](../ch03/004-agent.html)
-- [Karpathy Ai Agent 7 Bits Value Decline](../ch04/124-karpathy-ai.html)
-- [Skill Formal Theory Survey 10Papers](../ch07/054-skill.html)
-- [Generalization Dynamics Of Lm Pre Training Jiaxin Wen](../ch04/257-ai.html)
+- [Karpathy Ai Agent 7 Bits Value Decline](../ch04/126-karpathy-ai.html)
+- [Skill Formal Theory Survey 10Papers](../ch07/045-skill.html)
+- [Generalization Dynamics Of Lm Pre Training Jiaxin Wen](../ch04/052-ai.html)
 - [Agent Framework Owl Principles](../ch03/004-agent.html)
 
 → [原文存档](https://mp.weixin.qq.com/s/w9SWYuM7d_rI1GBYdXJyeA)

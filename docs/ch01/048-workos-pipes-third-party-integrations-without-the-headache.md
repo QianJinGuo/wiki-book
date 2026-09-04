@@ -1,6 +1,6 @@
 # WorkOS Pipes: Third-party integrations without the headache
 
-> 📊 Level ⭐ | 8.0KB | `entities/workos-pipes-third-party-integrations.md`
+> 📊 Level ⭐ | 8.1KB | `entities/workos-pipes-third-party-integrations.md`
 
 ## 核心要点
 - OAuth 集成基础设施（ token 管理、刷新、存储）是重复劳动，WorkOS Pipes 将其抽象为单 API 调用
@@ -94,10 +94,10 @@ WorkOS Pipes 的差异化在于：面向开发者而非企业 IT、极简 API �
 
 ## 相关资源
 ## 相关实体
-- [Pipes Workos Docs](073-pipes-workos-docs.html)
+- [Pipes Workos Docs](074-pipes-workos-docs.html)
 - [Sysdig Headless Cloud Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sysdig-headless-cloud-security.md)
-- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch04/257-ai.html)
-- [From Doer To Director The Ai Mindset Shift](029-from-doer-to-director-the-ai-mindset-shift.html)
+- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch04/052-ai.html)
+- [From Doer To Director The Ai Mindset Shift](028-from-doer-to-director-the-ai-mindset-shift.html)
 
 → [原文存档](https://workos.com/blog/workos-pipes-third-party-integrations)
 

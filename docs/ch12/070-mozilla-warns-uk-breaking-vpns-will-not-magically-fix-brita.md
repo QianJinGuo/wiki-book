@@ -16,7 +16,7 @@
 - [London Met Police Big Tech Data Requests](https://github.com/QianJinGuo/wiki-public/blob/main/entities/london-met-police-big-tech-data-requests.md)
 - [Clarity Act 5 Things](https://github.com/QianJinGuo/wiki-public/blob/main/entities/clarity-act-5-things.md)
 
-→ [原始来源](https://www.theregister.com/security/2026/05/18/mozilla-warns-uk-breaking-vpns-will-not-magically-fix-britains-age-check-mess/5241770/)
+→ [原文存档](https://www.theregister.com/security/2026/05/18/mozilla-warns-uk-breaking-vpns-will-not-magically-fix-britains-age-check-mess/5241770/)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-landscape.md)
 ## 深度分析

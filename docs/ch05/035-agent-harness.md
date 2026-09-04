@@ -120,16 +120,16 @@ Demo 级循环抹掉关键信息（哪个工具失败/为什么/下一步），�
 ## 相关页面
 → [原文存档](https://mp.weixin.qq.com/s/HVkWNXTsFjn0HkdGyD7Tpw)
 → [Cursor Harness 复盘](../ch01/205-cursor-harness-model-production-floor.html)（模型 vs Harness 组合）
-→ [Claude Code 提示词体系](../ch09/050-claude-code-prompt.html)
+→ [Claude Code 提示词体系](../ch09/054-claude-code-prompt.html)
 → [Agent Harness 上下文管理](035-agent-harness.html)
-→ [Agent Memory 架构](../ch04/323-perplexity-brain-self-improving-agent-memory-architecture.html)
+→ [Agent Memory 架构](../ch04/335-perplexity-brain-self-improving-agent-memory-architecture.html)
 
 ## 相关实体
-- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](057-harness-engineering.html)
-- [Harness Engineering：让 Coding Agent 可靠完成长程任务](057-harness-engineering.html)
-- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](057-harness-engineering.html)
+- [Harness Engineering - 让 Coding Agent 可靠完成长程任务](026-harness-engineering.html)
+- [Harness Engineering：让 Coding Agent 可靠完成长程任务](026-harness-engineering.html)
+- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](026-harness-engineering.html)
 
-- [快时尚电商行业智能体设计思路与应用实践（五）借助 AgentCore Runtime 与 Bedrock 模型平台，轻松实现 Claude Agent SDK 的生产级部署 | 亚马逊AWS官方博客](../ch01/340-claude.html)
+- [快时尚电商行业智能体设计思路与应用实践（五）借助 AgentCore Runtime 与 Bedrock 模型平台，轻松实现 Claude Agent SDK 的生产级部署 | 亚马逊AWS官方博客](../ch01/341-claude.html)
 - [Agent架构关键变化：Harness正在成为新后端](008-harness.html)
 
 ## 深度分析

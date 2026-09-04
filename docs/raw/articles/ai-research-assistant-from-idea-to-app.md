@@ -3,7 +3,7 @@ type: source-card
 title: "From idea to AI app: Creating intelligent research assistants with Strands"
 source: "rss"
 author: "未标注作者；来源机构见 source"
-source_url: "https://aws.amazon.com/blogs/machine-learning/from-idea-to-ai-app-creating-intelligent-research-assistants-with-strands/"
+source_url: "https://aws.amazon.com/blogs/machine-learning/idea-to-ai-app-research-assistants/"
 published: "未标注"
 collected: "2026-06-01"
 license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"

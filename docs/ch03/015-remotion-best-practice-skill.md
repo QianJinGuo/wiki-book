@@ -12,9 +12,9 @@
 你向 AI 传达了需求，AI 却按自己的理解执行，导致你不得不反复修正输出，持续"调教"——高成本、低确定性、难以复现。
 
 ## 相关实体
-- [Skill Development Guide Aliyun 2026](../ch07/054-skill.html)
+- [Skill Development Guide Aliyun 2026](../ch07/045-skill.html)
 - [Manus.Im Manus Schedules](https://github.com/QianJinGuo/wiki-public/blob/main/entities/manus.im-manus-schedules.md)
-- [Openclaw Multi Agent Team Practice](../ch04/027-openclaw-multi-agent-team-practice-v2.html)
+- [Openclaw Multi Agent Team Practice](../ch04/028-openclaw-multi-agent-team-practice-v2.html)
 - [Strands Agents Cloud Cost Optimizer](004-agent.html)
 - [别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](https://github.com/QianJinGuo/wiki-public/blob/main/entities/别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个.md)
 

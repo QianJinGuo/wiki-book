@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 17.3KB | `entities/static-devirtualization-themida.md`
 
-> -> [原始来源](https://back.engineering/blog/09/05/2026/)
+> -> [原文存档](https://back.engineering/blog/09/05/2026/)
 
 ## 摘要
 
@@ -141,12 +141,12 @@ Back Engineering Labs 方法的核心洞察是：去虚拟化的主要工作量�
 
 ## 相关实体
 
-- → [原始来源](https://back.engineering/blog/09/05/2026/)
+- → [原文存档](https://back.engineering/blog/09/05/2026/)
 - [Static Devirtualization of Themida](https://github.com/QianJinGuo/wiki-public/blob/main/entities/back-engineering-static-devirtualization-themida.md)（另一版本）
 - [Static Devirtualization of Themida](056-static-devirtualization-of-themida.html)（另一版本）
 
 - [Static Devirtualization 2024](018-static-devirtualization-2024.html)
-- [static devirtualization of themida](059-cve-2026-20182-unauthenticated-cisco-sd-wan-control-plane-c.html)
+- [static devirtualization of themida](060-cve-2026-20182-unauthenticated-cisco-sd-wan-control-plane-c.html)
 
 ---
 

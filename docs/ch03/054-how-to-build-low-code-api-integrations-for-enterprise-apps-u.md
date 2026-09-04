@@ -158,10 +158,10 @@ OIN + API Integration Actions 的组合创造了：
    - 低代码平台应该封装协议细节，而非将复杂性转移到用户配置
    - 错误处理、条件分支等能力要内置，而非要求用户自己实现
 ## 相关实体
-- [Build An Enterprise Observability Solution For Amazon Quick](../ch11/014-build-an-enterprise-observability-solution-for-amazon-quick.html)
-- [Hs.Playerzero Ai Code Review](../ch04/257-ai.html)
-- [Code Simulation For Enterprise Engineering Playerz](../ch01/057-code-simulation-for-enterprise-engineering-playerzero.html)
-- [Announcing Openai Compatible Api Support For Amazon Sagemaker](../ch01/515-announcing-openai-compatible-api-support-for-amazon-sagemake.html)
+- [Build An Enterprise Observability Solution For Amazon Quick](../ch11/015-build-an-enterprise-observability-solution-for-amazon-quick.html)
+- [Hs.Playerzero Ai Code Review](../ch04/052-ai.html)
+- [Code Simulation For Enterprise Engineering Playerz](../ch01/056-code-simulation-for-enterprise-engineering-playerzero.html)
+- [Announcing Openai Compatible Api Support For Amazon Sagemaker](../ch01/518-announcing-openai-compatible-api-support-for-amazon-sagemake.html)
 - [Top 10 Design Gadgets Creative Professionals 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/top-10-design-gadgets-creative-professionals-2026.md)
 
 ---

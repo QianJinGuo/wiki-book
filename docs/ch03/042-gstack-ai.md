@@ -81,13 +81,13 @@ Garry Tan 2026年5月发表的新机制，核心是**让AI写出的代码只进�
 
 ## 与本文相关
 -  — OpenClaw架构分析
-- [Claude Code Agent Engineering](048-claude-code-agent.html) — Claude Code工程设计
+- [Claude Code Agent Engineering](049-claude-code-agent.html) — Claude Code工程设计
 - [Ai Knowledge Tools Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/comparisons/ai-knowledge-tools-comparison.md) — AI工具横向对比
 - [原始存档](https://mp.weixin.qq.com/s/-kJeOfYHMvetALarZOuZFw)
 - [复杂性棘轮原文存档](https://mp.weixin.qq.com/s/sMoSwp1f0cR6PI8_ZT4oNQ)
 
 ## 相关实体
-- [淘天营销中后台 AI 生码工作流最佳实践](../ch04/257-ai.html)
+- [淘天营销中后台 AI 生码工作流最佳实践](../ch04/052-ai.html)
 - [让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](057-claude-code.html)
 - [Obsidian + Claude Code 集成指南](002-obsidian-claude-code.html)
 

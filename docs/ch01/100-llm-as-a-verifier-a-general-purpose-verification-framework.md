@@ -54,7 +54,7 @@ LLM-as-a-Verifier 的核心洞察在于区分了「评判（Judge）」和「验
 
 ## 相关实体
 - [LLM-as-a-Verifier: A General-Purpose Verification Framework](100-llm-as-a-verifier-a-general-purpose-verification-framework.html)
-- [LLM-as-a-Verifier: A General-Purpose Verification](297-llm-as-a-verifier-a-general-purpose-verification.html)
+- [LLM-as-a-Verifier: A General-Purpose Verification](299-llm-as-a-verifier-a-general-purpose-verification.html)
 
 ---
 

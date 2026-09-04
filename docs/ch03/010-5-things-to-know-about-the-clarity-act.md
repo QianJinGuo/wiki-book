@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐ | 9.1KB | `entities/5-things-to-know-about-the-clarity-act.md`
 
-> -> [原始来源](https://finovate.com/5-things-to-know-about-the-clarity-act/)
+> -> [原文存档](https://finovate.com/5-things-to-know-about-the-clarity-act/)
 
 ## 概述
 

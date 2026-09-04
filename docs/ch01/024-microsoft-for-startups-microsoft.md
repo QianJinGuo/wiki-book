@@ -1,6 +1,6 @@
 # Microsoft for Startups | Microsoft
 
-> 📊 Level ⭐ | 9.2KB | `entities/microsoft-for-startups-microsoft.md`
+> 📊 Level ⭐ | 9.3KB | `entities/microsoft-for-startups-microsoft.md`
 
 # Microsoft for Startups
 
@@ -30,7 +30,7 @@ Microsoft for Startups 是微软面向早期软件初创企业的一站式支持
 
 ### 3. Commercial Marketplace 与 seller co-sell 的商业化飞轮
 Sell more 的落地机制是微软创业计划较独特的商业化设计。初创通过 Commercial Marketplace 发布产品，企业买家可以用现有合同和 Azure 预算（而非新开采购流程）直接购买，把进入企业供应链的摩擦降到最低；叠加微软 seller 的 co-sell 机会，能让初创借力微软庞大的企业销售力量缩短销售周期、放大营收。这个飞轮对微软同样成立：每一笔通过 Marketplace 成交的 SaaS，都同时是 Azure 消费的增长点和微软生态（Microsoft 365、Teams、Copilot）的延展。
-风险在于依赖度不对称——初创的销售通路高度依赖微软的企业资源和 Marketplace 流量，一旦生态规则或分成政策变化，其商业化路径会受影响。与之对照的是 [AI 原生创业基金指南](../ch05/018-ai-native.html) 与 [Anthropic AI 原生创业手册](560-anthropic-ai.html) 所代表的另一极：强调从第一天就在自家产品内构建可持续业务，而非依赖单一云厂商的单向通道。
+风险在于依赖度不对称——初创的销售通路高度依赖微软的企业资源和 Marketplace 流量，一旦生态规则或分成政策变化，其商业化路径会受影响。与之对照的是 [AI 原生创业基金指南](../ch05/018-ai-native.html) 与 [Anthropic AI 原生创业手册](569-anthropic-ai.html) 所代表的另一极：强调从第一天就在自家产品内构建可持续业务，而非依赖单一云厂商的单向通道。
 
 ### 4. 与竞品及近邻条款的边界
 允许与现有云提供商并行使用、零一次性迁移要求，是该计划刻意降低进入门槛的设计，避免初创因「迁移成本」而放弃申请。但这也意味着微软的锁定靠的是後续的使用量成长而非前期合约。作为对比，[云 AI 基础设施](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/cloud-ai-infrastructure.md) 语境下的各家超大规模厂商都在用类似「积分 + 生态」的手段争夺 AI 工作负载，Microsoft for Startups 的差异化在于它是把企业采购通路（Marketplace + co-sell）作为一等公民打包进创业计划的方案。
@@ -45,11 +45,11 @@ Sell more 的落地机制是微软创业计划较独特的商业化设计。初�
 
 ## 相关实体
 - [Microsoft Startups](https://github.com/QianJinGuo/wiki-public/blob/main/entities/microsoft-startups.md) — 近邻实体，主题高度重叠
-- [Microsoft for Startups v2](387-microsoft-for-startups-microsoft.html) — 同主题的复本排版
-- [Microsoft 为 OpenAI 替代者布局](033-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
+- [Microsoft for Startups v2](024-microsoft-for-startups-microsoft.html) — 同主题的复本排版
+- [Microsoft 为 OpenAI 替代者布局](034-microsoft-is-quietly-shopping-for-an-openai-replacement.html)
 - [Nadella 论 AI 经济中的 Token 资本](../ch12/002-token.html)
 - [AI 原生创业基金指南](../ch05/018-ai-native.html)
-- [Anthropic AI 原生创业手册](560-anthropic-ai.html)
+- [Anthropic AI 原生创业手册](569-anthropic-ai.html)
 - [云 AI 基础设施](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/cloud-ai-infrastructure.md)
 - [开源 AI 生态](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/open-source-ai-ecosystem.md)
 

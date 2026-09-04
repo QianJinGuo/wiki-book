@@ -1,9 +1,9 @@
 # Cline releases open-source agent runtime SDK
 
-> 📊 Level ⭐ | 6.7KB | `entities/clinereleasesopen-sourceagentruntimesdk.md`
+> 📊 Level ⭐ | 6.8KB | `entities/clinereleasesopen-sourceagentruntimesdk.md`
 
 # Cline releases open-source agent runtime SDK
-→ [原始来源](https://www.testingcatalog.com/cline-releases-open-source-agent-runtime-sdk-for-coding-agents/)
+→ [原文存档](https://www.testingcatalog.com/cline-releases-open-source-agent-runtime-sdk-for-coding-agents/)
 
 ## 摘要
 Cline 于 2026 年 5 月发布开源 Agent 运行时 SDK（`@cline/sdk`），将原先与 IDE 宿主深度耦合的核心 agent loop 重构为独立、可移植的分层 TypeScript 运行时，并把自己的 CLI、Kanban 以及 VS Code、JetBrains 扩展全部迁移到这一共享底座之上。SDK 原生内置 Agent Teams/Subagents、插件体系、CRON 定时任务、checkpointing、Web Search 与 MCP 连接器，在 Terminal Bench 2.0 上以 claude-opus-4.7 取得 74.2% 的成绩，领先同模型的 Claude Code（69.4%）。
@@ -43,9 +43,9 @@ Agent teams/subagents 直接在核心 runtime 内实现，session 可委派专�
 > [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/moc/cybersecurity-privacy.md)
 
 - [Cline open-source agent runtime SDK（姊妹条目）](../ch03/004-agent.html)
-- [State of CLI coding agents（2026 年中）](../ch09/038-coding-agent.html)
+- [State of CLI coding agents（2026 年中）](../ch09/041-coding-agent.html)
 - [OpenSquilla 开源 AI Agent](009-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.html)
-- [AI Gateway Production Index](../ch04/257-ai.html)
+- [AI Gateway Production Index](../ch04/052-ai.html)
 - 开源 Agent 框架
 
 ---

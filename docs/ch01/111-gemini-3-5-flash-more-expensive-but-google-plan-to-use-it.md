@@ -1,6 +1,6 @@
 # Gemini 3.5 Flash: more expensive, but Google plan to use it for everything
 
-> 📊 Level ⭐ | 5.0KB | `entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md`
+> 📊 Level ⭐ | 5.1KB | `entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md`
 
 ## 核心要点
 - Google 在 I/O 大会上发布 Gemini 3.5 Flash，直接面向公众可用，跳过预览阶段 
@@ -31,11 +31,11 @@ Google 新推出 Interactions API（Beta），借鉴 OpenAI Responses 的服务�
 4. **利用 Interactions API 构建有状态应用**：Beta 阶段的 Interactions API 提供了服务端历史管理能力，适合需要长期会话上下文、多轮工具调用或复杂 Agent 编排的场景，可显著降低客户端维护会话状态的复杂度 。
 5. **将 1M 输入 tokens 纳入系统设计考量**：超长上下文窗口为 RAG 替代、多文档联合分析、大规模代码库理解等场景提供了新选择，但需注意输出 tokens 上限（65K）仍限制了单次生成的内容量 。
 ## 相关实体
-- [Aeo And Geo For Ai Overviews Chatgpt Claude Gemini And Perplexity](058-aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-p.html)
+- [Aeo And Geo For Ai Overviews Chatgpt Claude Gemini And Perplexity](057-aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-p.html)
 - [Google Debuts Gemini Focused Updates At Io 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/google-debuts-gemini-focused-updates-at-io-2026.md)
-- [Computer Use 45X More Expensive Than Structured Apis](../ch04/220-computer-use-45x-more-expensive-than-structured-apis.html)
-- [Google Shipped Gemini 31 Flash Lite In General Availability](../ch04/257-ai.html)
-- [How We Made Window Join Parallel And Vectorized](032-how-we-made-window-join-parallel-and-vectorized.html)
+- [Computer Use 45X More Expensive Than Structured Apis](../ch04/224-computer-use-45x-more-expensive-than-structured-apis.html)
+- [Google Shipped Gemini 31 Flash Lite In General Availability](../ch04/052-ai.html)
+- [How We Made Window Join Parallel And Vectorized](029-how-we-made-window-join-parallel-and-vectorized.html)
 
 → [原文存档](https://simonwillison.net/2026/May/19/gemini-35-flash/)
 

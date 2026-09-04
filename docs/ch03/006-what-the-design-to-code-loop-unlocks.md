@@ -1,6 +1,6 @@
 # What the design-to-code loop unlocks
 
-> 📊 Level ⭐ | 11.3KB | `entities/design-to-code-loop-figma.md`
+> 📊 Level ⭐ | 11.4KB | `entities/design-to-code-loop-figma.md`
 
 ## 核心要点
 - **双向翻译** — 现代工具使设计生成代码、代码反映回设计成为可能
@@ -83,7 +83,7 @@
 > [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
 
 - [Building is just the beginning: Introducing Discoverability](https://github.com/QianJinGuo/wiki-public/blob/main/entities/lovable-discoverability-intro.md)
-- [柚漫剧 AI全流程提效拆解](../ch04/257-ai.html)
+- [柚漫剧 AI全流程提效拆解](../ch04/052-ai.html)
 - [10 common component architecture mistakes in Figma design systems](https://github.com/QianJinGuo/wiki-public/blob/main/entities/component-architecture-mistakes-figma-zeroheight.md)
 - [figma make, now on your local code: closing the design-to-co](028-figma-make.html)
 

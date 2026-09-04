@@ -67,9 +67,9 @@
 
 ## 相关实体
 
-- [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](../ch04/257-ai.html) — 同一技术写作风格系列的领域专业知识讨论
+- [Brethorstingcom Blog 2026 05 Domain Expertise Has Always Been The ](../ch04/052-ai.html) — 同一技术写作风格系列的领域专业知识讨论
 - [Rajveerbachkaniwalacom Blog 2026 05 24 On The Difficulty Of Pasting A Pic](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rajveerbachkaniwalacom-blog-2026-05-24-on-the-difficulty-of-pasting-a-pic.md) — 同为深度技术实践分析的姊妹文章
-- [Seangoedeckecom Build Agents Not Pipelines](../ch04/012-build-agents-not-pipelines.html) — 软件工程方法论相关讨论
+- [Seangoedeckecom Build Agents Not Pipelines](../ch04/013-build-agents-not-pipelines.html) — 软件工程方法论相关讨论
 - [Hacktivisme Articles Cloudflare Turnstile Webgl Fingerprinting](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hacktivisme-articles-cloudflare-turnstile-webgl-fingerprinting.md) — 技术深度分析系列
 - [Eclecticlightco 2026 05 29 What Happens In The Log When An App Cra](https://github.com/QianJinGuo/wiki-public/blob/main/entities/eclecticlightco-2026-05-29-what-happens-in-the-log-when-an-app-cra.md) — 系统调试方法与实践
 

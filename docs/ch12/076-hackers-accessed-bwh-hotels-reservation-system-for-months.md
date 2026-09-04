@@ -1,6 +1,6 @@
 # Hackers accessed BWH Hotels reservation system for months
 
-> 📊 Level ⭐⭐ | 6.2KB | `entities/securityaffairs-bwh-hotels-breach.md`
+> 📊 Level ⭐⭐ | 6.3KB | `entities/securityaffairs-bwh-hotels-breach.md`
 
 # Hackers accessed BWH Hotels reservation system for months
 

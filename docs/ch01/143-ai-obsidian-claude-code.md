@@ -1,6 +1,6 @@
 # 开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南
 
-> 📊 Level ⭐⭐ | 36.9KB | `entities/开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南.md`
+> 📊 Level ⭐⭐ | 37.0KB | `entities/开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南.md`
 
 [开源 Ai 知识管理搭档 Obsidian Claude Code 完整集成指南](https://mp.weixin.qq.com/s/57U6XeKCGtVkQXnNqg9DJQ)
 

@@ -1,6 +1,6 @@
 # Reimagining the mouse pointer for the AI era
 
-> 📊 Level ⭐⭐ | 10.1KB | `entities/deepmind-ai-pointer.md`
+> 📊 Level ⭐⭐ | 10.2KB | `entities/deepmind-ai-pointer.md`
 
 ## 摘要
 
@@ -97,9 +97,9 @@ AI Pointer 的更深层战略意义在于：它重新定义了「AI Native 应�
 
 ## 相关实体
 
-- [How Superset built the IDE for AI agents on Vercel](074-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
+- [How Superset built the IDE for AI agents on Vercel](073-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
 - [AI-Friendly Architecture](../ch05/019-ai-friendly.html)
-- [Hermes Agent — 上下文交互协议](../ch04/161-hermes-agent.html)
+- [Hermes Agent — 上下文交互协议](../ch03/066-hermes-agent.html)
 
 → [原文存档](https://deepmind.google/blog/ai-pointer/)
 

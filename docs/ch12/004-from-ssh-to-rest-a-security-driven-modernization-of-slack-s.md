@@ -66,23 +66,23 @@ REST 架构不只解决当前问题，更解锁了未来三条关键路径：
 - **平台可演进性**：Airflow 与 EMR 基础设施细节解耦，集群替换对 DAG 无感
 > 来源：[原文存档](https://slack.engineering/from-ssh-to-rest-a-security-driven-modernization-of-slacks-emr-data-pipeli)
 ## 相关实体
-- [Wetesteddeepseekv4Proandflashagainstclau](../ch01/418-deepseek.html)
+- [Wetesteddeepseekv4Proandflashagainstclau](../ch01/311-deepseek.html)
 - [Entrypointhijacking](https://github.com/QianJinGuo/wiki-public/blob/main/entities/entrypointhijacking.md)
-- [Affirmmapsroadto100Bgmvwithcardaicommerc](../ch04/257-ai.html)
-- [Why Internally Built Ai Fails Fund Accounting Audits](../ch01/064-why-internally-built-ai-fails-fund-accounting-audits.html)
+- [Affirmmapsroadto100Bgmvwithcardaicommerc](../ch04/052-ai.html)
+- [Why Internally Built Ai Fails Fund Accounting Audits](../ch01/063-why-internally-built-ai-fails-fund-accounting-audits.html)
 - Senatorsquerycreditbureausonbnpl
 
 - [Cpanel Whm Patch 3 New Vulnerabilities](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cpanel-whm-patch-3-new-vulnerabilities.md)
-- [Tenorshare Ai Diagrimo   Free Ai Diagram Generator Online](../ch04/257-ai.html)
-- [Automating Confidential Containers Coco Infrastructure With Kyverno](../ch11/082-automating-confidential-containers-coco-infrastructure-wit.html)
-- [Gptomics Com How Ai Changes Software P L](../ch01/077-how-ai-changes-software-p-l.html)
+- [Tenorshare Ai Diagrimo   Free Ai Diagram Generator Online](../ch04/052-ai.html)
+- [Automating Confidential Containers Coco Infrastructure With Kyverno](../ch11/083-automating-confidential-containers-coco-infrastructure-wit.html)
+- [Gptomics Com How Ai Changes Software P L](../ch01/078-how-ai-changes-software-p-l.html)
 - [Romanian Man 30 Years Us Prison Vishing](https://github.com/QianJinGuo/wiki-public/blob/main/entities/romanian-man-30-years-us-prison-vishing.md)
 - [Youcom Download The Guide Why Api Latency Is A Misleading Metric](https://github.com/QianJinGuo/wiki-public/blob/main/entities/youcom-download-the-guide-why-api-latency-is-a-misleading-metric.md)
 - [818662](https://github.com/QianJinGuo/wiki-public/blob/main/entities/818662.md)
 - [2026 04 15](https://github.com/QianJinGuo/wiki-public/blob/main/entities/2026-04-15.md)
 - [What My Privacy And Security Stack Actually Looks Like](019-what-my-privacy-and-security-stack-actually-looks-like.html)
-- [Ai Traffic Cyberthreat Benchmark 2026](../ch04/257-ai.html)
-- [Device Code Phishing Forensics What We Learned From Bec Investigations In The Wi](../ch09/116-device-code-phishing-forensics-what-we-learned-from-bec-inv.html)
+- [Ai Traffic Cyberthreat Benchmark 2026](../ch04/052-ai.html)
+- [Device Code Phishing Forensics What We Learned From Bec Investigations In The Wi](../ch09/120-device-code-phishing-forensics-what-we-learned-from-bec-inv.html)
 
 ---
 

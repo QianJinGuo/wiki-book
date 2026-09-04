@@ -315,7 +315,7 @@ Dan Shipper 的"every layered thinking"模型将 AI-native 分为多个层次：
 到达范式层需要的不只是技术变革，还有组织文化变革——从"AI 辅助人"到"人辅助 AI"。
 
 ## 相关实体
-- [Running An Ai Native Engineering Org](../ch01/046-running-an-ai-native-engineering-org.html)
+- [Running An Ai Native Engineering Org](../ch01/047-running-an-ai-native-engineering-org.html)
 - [Agentic Engineering Leadership](004-agent.html)
 
 → [原文存档](https://mp.weixin.qq.com/s/Ko_Tpq2UJEbyOBXq9x19ug)

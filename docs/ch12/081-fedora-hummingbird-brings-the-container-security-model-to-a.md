@@ -1,6 +1,6 @@
 # Fedora Hummingbird brings the container security model to a Linux host OS
 
-> 📊 Level ⭐⭐ | 5.8KB | `entities/fedora-hummingbird-container-security.md`
+> 📊 Level ⭐⭐ | 5.9KB | `entities/fedora-hummingbird-container-security.md`
 
 > -> [原文存档](https://www.helpnetsecurity.com/2026/05/13/fedora-hummingbird-linux/)
 
@@ -10,9 +10,9 @@
 ## 相关实体
 - "fedora hummingbird brings the container security model to a linux host os"
 - [Sysdig Headless Cloud Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sysdig-headless-cloud-security.md)
-- [The It And Security Field Guide To Ai Adoption Tines](078-the-it-and-security-field-guide-to-ai-adoption-tines.html)
+- [The It And Security Field Guide To Ai Adoption Tines](077-the-it-and-security-field-guide-to-ai-adoption-tines.html)
 - [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)
-- [Drinking Llms](../ch01/451-llm.html)
+- [Drinking Llms](../ch01/458-llm.html)
 
 → [原文存档](https://www.helpnetsecurity.com/2026/05/13/fedora-hummingbird-linux/)
 

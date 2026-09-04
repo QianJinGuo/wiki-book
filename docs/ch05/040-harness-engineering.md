@@ -142,11 +142,11 @@ OpenAI 的 AGENTS.md 从"巨册"压缩到 ~100 行目录页，配合后台"文�
 > **判断**: Rahul 综述不是新概念, 是对 Harness Engineering 在 2026 学科确立期的全景图 + 工业成本 + 演化规律的整合. 与 ConardLi 框架互补, 不重复. 5 种 artifact / 5 原则 / 3 阵营 / 衰减论全部是新增视角.
 
 ## 相关实体
-- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/192-ahe-agentic-harness-engineering.html)
+- [Fudan Peking Ahe Agentic Harness Engineering](../ch04/196-ahe-agentic-harness-engineering.html)
 - [Agent Harness 12 Components 7 Decisions](035-agent-harness.html)
-- [Harness Engineering 第三代工程范式](057-harness-engineering.html)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](../ch04/312-ai-agent.html)
-- [Openclaw Prompt Context Harness](../ch04/176-openclaw.html)
+- [Harness Engineering 第三代工程范式](026-harness-engineering.html)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](../ch04/284-ai-agent.html)
+- [Openclaw Prompt Context Harness](../ch04/180-openclaw.html)
 
 → [原文存档 (ConardLi)](https://mp.weixin.qq.com/s/gs5ndvlMqM-Y4jg1_D2aFw)
 → [原文存档 (Rahul 2026 综述)](https://mp.weixin.qq.com/s/RwWfknFIFvJPIdsJMgeNiQ)

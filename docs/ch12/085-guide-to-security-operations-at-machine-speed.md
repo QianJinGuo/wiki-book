@@ -6,7 +6,7 @@
 - AI/机器学习正在变革安全运营（SOC），实现机器级速度的威胁检测与响应
 - 成熟度评估框架：评估组织安全运营成熟度的关键维度
 - 自动化在安全运营中的应用场景：检测工程、事件响应、威胁情报
-- [原始来源](https://arcticwolf.com/resource/aw/guide-to-security-operations-at-machine-speed)
+- [原文存档](https://arcticwolf.com/resource/aw/guide-to-security-operations-at-machine-speed)
 
 ## 深度分析
 **背景事件：AI 威胁速度的阶跃变化。** 2026年4月，Anthropic 发布 Claude Mythos——一个能够自主发现数千个零日漏洞、生成可利用漏洞代码、以机器级速度编排多阶段攻击的 AI 模型。这一事件成为安全运营的分水岭：威胁从"人类级速度"跃升到"AI级速度"，而传统 SOC 的 alert queue、tiered analyst teams、季度补丁周期等机制，都是为一个已经不存在的时代设计的。
@@ -23,9 +23,9 @@
 5. **不要在没有基线的情况下购买新平台。** 先完成函数级评估，再决定平台采购。否则只是用更贵的工具重复已有的运营模式，是最常见的安全投资浪费。
 
 ## 相关实体
-- [The It And Security Field Guide To Ai Adoption Tines](078-the-it-and-security-field-guide-to-ai-adoption-tines.html)
-- [Http2 Hpack Bomb Codex Ai Discovery 32Gb Dos](../ch01/393-codex.html)
-- [Npm Supply Chain Compromise Postmortem](../ch04/257-ai.html)
+- [The It And Security Field Guide To Ai Adoption Tines](077-the-it-and-security-field-guide-to-ai-adoption-tines.html)
+- [Http2 Hpack Bomb Codex Ai Discovery 32Gb Dos](../ch01/398-codex.html)
+- [Npm Supply Chain Compromise Postmortem](../ch04/052-ai.html)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 - [Funnel Builder Flaw Woocommerce Checkout Skimm](https://github.com/QianJinGuo/wiki-public/blob/main/entities/funnel-builder-flaw-woocommerce-checkout-skimm.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-privacy-landscape.md)

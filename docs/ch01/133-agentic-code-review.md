@@ -38,9 +38,9 @@ Code review used to work because of a happy accident of relative speed. A senior
 - 与现有实体的差异化角度：本文来自 addyosmani.com 视角
 - 引用源：[Agentic Code Review Addyosmani](https://addyosmani.com/blog/agentic-code-review/)
 ## 相关实体
-- [from doer to director: the ai mindset shift](029-from-doer-to-director-the-ai-mindset-shift.html)
-- [why internally-built ai fails fund accounting audits](064-why-internally-built-ai-fails-fund-accounting-audits.html)
-- [back up and restore your amazon eks cluster resources using](072-back-up-and-restore-your-amazon-eks-cluster-resources-using.html)
+- [from doer to director: the ai mindset shift](028-from-doer-to-director-the-ai-mindset-shift.html)
+- [why internally-built ai fails fund accounting audits](063-why-internally-built-ai-fails-fund-accounting-audits.html)
+- [back up and restore your amazon eks cluster resources using](066-back-up-and-restore-your-amazon-eks-cluster-resources-using.html)
 
 ---
 

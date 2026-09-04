@@ -3,7 +3,7 @@ type: source-card
 title: "Claude Code on AWS Bedrock 配置指南"
 source: "rss"
 author: "未标注作者；来源机构见 source"
-source_url: "https://aws.amazon.com/cn/blogs/china/claude-code-on-aws-bedrock-configuration-guide/"
+source_url: "https://aws.amazon.com/cn/blogs/china/claude-code-aws-bedrock-config/"
 published: "未标注"
 collected: "2026-06-01"
 license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"

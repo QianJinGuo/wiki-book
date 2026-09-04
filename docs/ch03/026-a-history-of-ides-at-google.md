@@ -8,9 +8,9 @@ Like in many companies, engineers at Google have been able to pick their IDE of 
 ## 相关实体
 - [Cli Mcp Sdk Agent Tool Selection](004-agent.html)
 - [Google Bigquery Threat Model](https://github.com/QianJinGuo/wiki-public/blob/main/entities/google-bigquery-threat-model.md)
-- [Pi Mono Github](../ch01/474-github.html)
-- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch04/302-agent-skills.html)
-- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch04/302-agent-skills.html)
+- [Pi Mono Github](../ch01/476-github.html)
+- [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](../ch04/314-agent-skills.html)
+- [Cong Anthropic Dao Googleagent Skills Zhengzai Jinru Sheji Moshi Jieduan](../ch04/314-agent-skills.html)
 
 → [原文存档](https://laurent.le-brun.eu/blog/a-history-of-ides-at-google)
 

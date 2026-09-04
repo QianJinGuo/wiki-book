@@ -8,7 +8,7 @@
 - **假设前提**：CISA 明确指出，在冲突场景下，第三方连接（电信、互联网、供应商、服务提供商、上游依赖）都不可靠，威胁行为者可能已获得 OT 网络访问权限
 - **双轨指导**：CISA 的 CI Fortify 指南涵盖两大核心能力——**Isolation（隔离）** 和 **Recovery（恢复）**
 - **评估服务**：除指南外，CISA 还提供"目标评估"服务，对参与组织进行韧性和隔离能力评估
-→ [原始来源](https://www.cybersecuritydive.com/news/cisa-ci-fortify-isolation-recovery-guidance/819317/)
+→ [原文存档](https://www.cybersecuritydive.com/news/cisa-ci-fortify-isolation-recovery-guidance/819317/)
 
 ## 深度分析
 ### 1. CI Fortify 指南的战略背景
@@ -80,8 +80,8 @@ CI Fortify 是国际倡议，澳大利亚政府于2025年率先发布了类似�
 > [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/moc/cybersecurity-privacy.md)
 
 - [New cybersecurity industry coalition aims to lead US critical infrastructure protection](https://github.com/QianJinGuo/wiki-public/blob/main/entities/new-cybersecurity-coalition-us-policy.md)
-- [AI in Cybersecurity Training Resources | SANS Institute](../ch04/257-ai.html)
-- [U.S. Bank shifts critical apps to AWS for AI push | CIO Dive](../ch04/257-ai.html)
+- [AI in Cybersecurity Training Resources | SANS Institute](../ch04/052-ai.html)
+- [U.S. Bank shifts critical apps to AWS for AI push | CIO Dive](../ch04/052-ai.html)
 
 ---
 

@@ -1,6 +1,6 @@
 # 让 AI 理解你的组件库：新一代智能 D2C架构 — 基于 AWS Kiro MCP Skills 的智能转换实践 | 亚马逊AWS官方博客
 
-> 📊 Level ⭐⭐ | 10.8KB | `entities/ai-understanding-component-library-intelligent-d2c-architecture-aws-kiro-mcp-skills.md`
+> 📊 Level ⭐⭐ | 10.9KB | `entities/ai-understanding-component-library-intelligent-d2c-architecture-aws-kiro-mcp-skills.md`
 
 ## 概述
 让 AI 理解你的组件库：新一代智能 D2C架构 — 基于 AWS Kiro MCP Skills 的智能转换实践 by awschina on 08 12月 2025 in Case Study Permalink Share 摘要 随着企业级前端开发的复杂度不断提升，设计到代码（Design-to-Code, D2C）工具虽然能够自动生成代码，但往往无法理解和利用企业内部的组件库。本文探讨了如何利用 AWS Kiro IDE、Model Context Protocol (MCP) 和 Skills 构建新一代智能 D2C 平台。核心创新在于通过 Skills 将组件知识封装为可调用工具 ，结合 Steering 策略引导，使 AI 能够自动发现、理解并正确使用企业组件库。我们成功将组件库利用率从接近 0% 提升到 80% 以上，开发时间从数小时缩短到数分钟。 背景 传统 D2C 工具
@@ -75,10 +75,10 @@ Steering 文件中配置的 `AUTONOMOUS MODE` 使 AI 能够完整执行 Step 1-6
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/ai-understanding-component-library-intelligent-d2c-architecture-aws-kiro-mcp-skills/)
 
 ## 相关实体
-- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](../ch04/395-agentic-ai.html)
+- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](../ch04/043-agentic-ai.html)
 - [AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](../ch03/057-claude-code.html)
-- [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](../ch04/312-ai-agent.html)
-- [Agentic AI 系统架构与分层模型](../ch05/067-harness-skill.html)
+- [Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments](../ch04/284-ai-agent.html)
+- [Agentic AI 系统架构与分层模型](../ch05/069-harness-skill.html)
 - [让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](../ch03/057-claude-code.html)
 
 → [原文存档](https://aws.amazon.com/cn/blogs/china/ai-understanding-component-library-intelligent-d2c-architecture-aws-kiro-mcp-skills/)

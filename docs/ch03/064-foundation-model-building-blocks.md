@@ -1,6 +1,6 @@
 # Foundation Model Building Blocks
 
-> 📊 Level ⭐⭐ | 9.0KB | `entities/foundation-model-building-blocks.md`
+> 📊 Level ⭐⭐ | 9.1KB | `entities/foundation-model-building-blocks.md`
 
 > -> [原文存档](https://huggingface.co/blog/amazon/foundation-model-building-blocks)
 
@@ -37,7 +37,7 @@
 
 ## 相关实体
 - [Building Blocks for Foundation Model Training and Inference on AWS](../ch11/095-building-blocks-for-foundation-model-training-and-inference.html)
-- [Genesis AI GENE-26.5 具身基础模型](../ch04/257-ai.html)
+- [Genesis AI GENE-26.5 具身基础模型](../ch04/052-ai.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/vision-multimodal.md)
 
 ---

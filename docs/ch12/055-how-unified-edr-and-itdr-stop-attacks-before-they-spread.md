@@ -21,12 +21,12 @@ Huntress 博客（2026-04-27，作者 Erin Meyers）介绍其 EDR/ITDR Correlati
 - 内容来源：huntress
 ## 相关实体
 - [Huntress Edr Itdr Unified Detection](https://github.com/QianJinGuo/wiki-public/blob/main/entities/huntress-edr-itdr-unified-detection.md)
-- [Llm Raiders Private Ai Server](../ch01/451-llm.html)
-- [How Claude Code Works In Large Codebases Best Practices And Where To Start](../ch01/349-how-claude-code-works-in-large-codebases-best-practices-and.html)
-- [Llm Raiders And How To Repel Them](../ch01/544-llm-raiders-and-how-to-repel-them.html)
-- [How To Create Websites With Great Ux Designs](../ch01/034-how-to-create-websites-with-great-ux-designs-principles-and.html)
+- [Llm Raiders Private Ai Server](../ch01/458-llm.html)
+- [How Claude Code Works In Large Codebases Best Practices And Where To Start](../ch01/352-how-claude-code-works-in-large-codebases-best-practices-and.html)
+- [Llm Raiders And How To Repel Them](../ch01/552-llm-raiders-and-how-to-repel-them.html)
+- [How To Create Websites With Great Ux Designs](../ch01/032-how-to-create-websites-with-great-ux-designs-principles-and.html)
 
-→ [原始来源](https://www.huntress.com/blog/edr-itdr-correlations)
+→ [原文存档](https://www.huntress.com/blog/edr-itdr-correlations)
 
 ## 深度分析
 - **EDR 与 ITDR 的本质区别与协同必要性**：EDR（Endpoint Detection and Response）聚焦于端点层面的恶意行为监控——进程注入、文件写入、注册表修改等本地系统活动；而 ITDR（Identity Threat Detection and Response）专注于身份层——M365/Entra ID 中的异常登录、OAuth token 滥用、邮箱规则篡改等云身份行为。两者监控的是同一攻击链的不同阶段：EDR 看到攻击的「落地」，ITDR 看到攻击的「变现」。传统安全体系将二者割裂处理，导致响应滞后于攻击的横向移动。

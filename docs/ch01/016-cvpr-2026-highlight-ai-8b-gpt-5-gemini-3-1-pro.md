@@ -1,6 +1,6 @@
 # CVPR 2026 Highlight｜让AI像电影人一样「看」视频，8B小模型反超GPT-5与Gemini-3.1-Pro
 
-> 📊 Level ⭐ | 10.3KB | `entities/cvpr-2026-highlight让ai像电影人一样看视频8b小模型反超gpt-5与gemini-31-pro.md`
+> 📊 Level ⭐ | 10.4KB | `entities/cvpr-2026-highlight让ai像电影人一样看视频8b小模型反超gpt-5与gemini-31-pro.md`
 
 ## 核心要点
 - CMU × 哈佛大学联合研究，CVPR 2026 Highlight 论文（Top 3%）
@@ -12,8 +12,9 @@
 - [Cvpr 2026 Highlight 清华打破多模态音频生成的通才困境Omni2Sound 音频基础模型开源](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cvpr-2026-highlight-清华打破多模态音频生成的通才困境omni2sound-音频基础模型开源.md)
 - [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](../ch03/004-agent.html)
 - [Qoder 1 0 Release Ai Ide Agent Workbench](../ch03/004-agent.html)
-- [Gpt 55来了我撤回了退订Chatgpt的决定](712-chatgpt.html)
+- [Gpt 55来了我撤回了退订Chatgpt的决定](721-chatgpt.html)
 
+→ [原文存档](https://mp.weixin.qq.com/s/SCk63tSurxIeuaVNxqgSkA)
 
 ## 文章摘要
 近日，由 CMU 联合哈佛大学组成的研究团队推出了 CHAI（Critique-based Human-AI Oversight），一整套从"标注体系""可扩展监督"到"后训练方法"再到"视频生成"的完整方案。该工作已被 CVPR 2026 接收为 Highlight 论文（Top 3%）。团队训练的 Qwen3-VL-8B 开源小模型得以反超闭源的 Gemini-3.1-Pro 与 GPT-5。

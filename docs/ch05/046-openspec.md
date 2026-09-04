@@ -1,6 +1,6 @@
 # OpenSpec 四步法深度复盘：流程完整 ≠ 代码正确
 
-> 📊 Level ⭐⭐ | 10.7KB | `entities/openspec-四步法深度复盘-流程完整不等于代码正确.md`
+> 📊 Level ⭐⭐ | 10.8KB | `entities/openspec-四步法深度复盘-流程完整不等于代码正确.md`
 
 ## 核心洞察
 **流程完整 ≠ 代码正确。** OpenSpec 四步法（propose → apply → verify → archive）保证了需求对齐的文档链路，但无法保证 AI 实际输出的代码质量。
@@ -54,7 +54,7 @@ OpenSpec 四步法构建了一条完整的文档链路：Proposal → Specs → 
 - **边界条件**：空指针、越界、类型转换错误往往藏在边缘路径
 - **并发处理**：竞态条件、死锁、线程安全——文本审查无法暴露
 - **性能问题**：时间复杂度、内存泄漏、资源未释放
-这些问题的共同点是：它们不会出现在文档里，但会出现在运行时。 See also [Harness Engineering](057-harness-engineering.html)
+这些问题的共同点是：它们不会出现在文档里，但会出现在运行时。 See also [Harness Engineering](026-harness-engineering.html)
 
 ### Verify 的定位偏差：暴露问题 ≠ 解决问题
 Verify 被设计为"surface issues"——暴露问题，而非"block progress"——阻塞进度。这个设计选择本身并无问题，但它释放了一个信号：**四步法不打算在代码质量上做强制约束**。

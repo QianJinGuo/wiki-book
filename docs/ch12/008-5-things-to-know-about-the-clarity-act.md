@@ -2,12 +2,12 @@
 
 > 📊 Level ⭐ | 6.5KB | `entities/clarity-act-5-things.md`
 
-> -> [原始来源](https://finovate.com/5-things-to-know-about-the-clarity-act/)
+> -> [原文存档](https://finovate.com/5-things-to-know-about-the-clarity-act/)
 
 ## 核心要点
 - value=7, confidence=8, product=56
 - Timely overview of CLARITY Act
-→ [原始来源](https://finovate.com/5-things-to-know-about-the-clarity-act/)
+→ [原文存档](https://finovate.com/5-things-to-know-about-the-clarity-act/)
 
 ## 深度分析
 **1. CLARITY Act 的核心使命：终结十年数字资产监管真空**
@@ -45,7 +45,7 @@ CLARITY Act 的策略是**间接调控**：不直接说「稳定币不能提供�
 5. **国际框架互认机制应成为 CLARITY Act 的后续重点**：当前 CLARITY Act 主要处理美国国内管辖，但数字资产天然是跨境运作的。建立与欧盟 MiCA、香港 VASP 牌照等主要框架的互认机制，可以避免重复合规成本，同时保持监管有效性。
 **对于投资者和用户：**
 6. **理解「监管明确」对资产价值的双向影响**：CLARITY Act 的通过可能同时带来：(a) 纳入监管框架的合规代币价值提升（因为监管确定性降低了风险）；(b) 被认定为证券的代币面临抛售压力。投资者需要根据持仓结构提前调整。
-→ [原始来源](https://finovate.com/5-things-to-know-about-the-clarity-act/)
+→ [原文存档](https://finovate.com/5-things-to-know-about-the-clarity-act/)
 
 ## 相关实体
 - [5 Things to Know about the CLARITY Act](../ch03/010-5-things-to-know-about-the-clarity-act.html)

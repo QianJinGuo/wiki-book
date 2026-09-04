@@ -1,6 +1,6 @@
 # 在 RDS PostgreSQL 中实现 RaBitQ 量化
 
-> 📊 Level ⭐⭐ | 12.9KB | `entities/在-rds-postgresql-中实现-rabitq-量化.md`
+> 📊 Level ⭐⭐ | 13.0KB | `entities/在-rds-postgresql-中实现-rabitq-量化.md`
 
 ## 核心要点
 阿里云 RDS PostgreSQL 在 pgvector 扩展中引入了 **RaBitQ（Random Binary Quantization）** 向量量化技术，实现 **32 倍压缩比**（float32 → 1bit/维度），同时通过理论误差界保证召回率。实测在 1024 维 100M 向量的业务数据集上，IVF-RaBitQ 索引空间仅 16GB（vs. HNSW 的 689GB），索引创建时间从 4 天缩短至 4 小时，P99 查询延迟在混合读写场景下降低至原来的约 1/4。
@@ -69,21 +69,21 @@ RaBitQ 的理论基础来自论文《RaBitQ: Quantizing High-Dimensional Vectors
 - [原文存档](https://mp.weixin.qq.com/s/KGqbnolHh6sJU0kDICuUwQ)
 
 ## 相关实体
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](168-rag.html)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](458-llm.html)
 - [你不知道的 Agent：原理、架构与工程实践](../ch03/004-agent.html)
 - [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](../ch05/008-harness.html)
-- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/290-agentrun.html)
+- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](../ch04/278-agentrun.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
-- [RAG深度解析：分块、向量化、召回、重排，才是"蒸馏同事skill"的关键](../ch07/054-skill.html)
+- [RAG深度解析：分块、向量化、召回、重排，才是"蒸馏同事skill"的关键](../ch07/045-skill.html)
 - [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki-public/blob/main/entities/别再把上下文当聊天记录.md)
-- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/057-harness-engineering.html)
-- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch04/176-openclaw.html)
+- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/026-harness-engineering.html)
+- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](../ch04/180-openclaw.html)
 
-- [Hermes Agent /goal 长任务运行时架构](../ch04/161-hermes-agent.html)
-- [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](../ch04/161-hermes-agent.html)
-- [LoongSuite GenAI 可观测语义规范](../ch04/257-ai.html)
+- [Hermes Agent /goal 长任务运行时架构](../ch04/236-hermes-agent-goal.html)
+- [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](../ch03/066-hermes-agent.html)
+- [LoongSuite GenAI 可观测语义规范](../ch04/052-ai.html)
 - [低代码 Agent、框架 Agent、自研 Agent 决策框架](../ch03/004-agent.html)
-- [三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战](../ch05/076-ai-coding.html)
+- [三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战](../ch05/078-ai-coding.html)
 - [卡片式对话的协议方案探索和思考](https://github.com/QianJinGuo/wiki-public/blob/main/entities/卡片式对话的协议方案探索和思考.md)
 
 ---

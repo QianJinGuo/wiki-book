@@ -1,6 +1,6 @@
 # Martin Fowler 的 AI 研发提醒：非确定性进了研发链路，Harness 才真正开始承重
 
-> 📊 Level ⭐⭐ | 13.0KB | `entities/martin-fowler-的-ai-研发提醒非确定性进了研发链路harness-才真正开始承重.md`
+> 📊 Level ⭐⭐ | 13.1KB | `entities/martin-fowler-的-ai-研发提醒非确定性进了研发链路harness-才真正开始承重.md`
 
 ## 太长不看版
 - Fowler 这次让我最受用的，不是"AI 带来更高抽象"这一层，而是他把变化压回到"软件工程第一次大规模面对一个非确定性协作者"这件事上。
@@ -108,9 +108,9 @@ Fowler 提出的六件小事不是零散建议，而是一个不断把"人判断
 - [OpenAI: Harness engineering: leveraging Codex in an agent-first world](https://openai.com/index/harness-engineering/)
 - [LangChain: The Anatomy of an Agent Harness](https://www.langchain.com/blog/the-anatomy-of-an-agent-harness)
 - [Simon Willison: The lethal trifecta for AI agents](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/)
-- → [Harness Engineering 实体](057-harness-engineering.html)：Harness 部分与该实体高度互补，提供更完整的框架拆解
-- → [2026 Harness 工程survey](057-harness-engineering.html)：行业层面的 Harness 工程全景图
-- → [生产级 Harness 工程](057-harness-engineering.html)：侧重生产环境的治理与 control plane 实践
+- → [Harness Engineering 实体](026-harness-engineering.html)：Harness 部分与该实体高度互补，提供更完整的框架拆解
+- → [2026 Harness 工程survey](026-harness-engineering.html)：行业层面的 Harness 工程全景图
+- → [生产级 Harness 工程](026-harness-engineering.html)：侧重生产环境的治理与 control plane 实践
 
 ---
 

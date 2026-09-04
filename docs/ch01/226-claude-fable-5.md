@@ -39,7 +39,7 @@ ActionTrail 操作审计            ←  每次拒绝可审计
 
 **典型场景**：某产品团队自动化脚本试图在新加坡 Region 创建 ECS 实例，企业安全团队在资源目录中设了 SCP 禁止子账号开通海外 Region 资源 → **API 直接返回权限拒绝，不需要审批流程介入**。
 
-> 与 [AI Gateway vs MCP Gateway 安全分析](../ch11/067-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html) 在"网关层安全"维度同框架。
+> 与 [AI Gateway vs MCP Gateway 安全分析](../ch11/068-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html) 在"网关层安全"维度同框架。
 
 ### 域 2 — AI 网关护栏：约束模型输出（概率性）
 
@@ -85,7 +85,7 @@ ActionTrail 操作审计            ←  每次拒绝可审计
 
 **弹性机制 — Trusted Access Program**：经过审核的安全研究者可申请完整 Mythos 级能力访问。**护栏松紧度不是固定的，而是根据使用者的信任等级动态调整**——与阿里云 AI 网关"按消费者匹配"策略同设计思路。
 
-> 与 [Fable 5 AWS 中文译本](787-anthropic-claude.html) 同 Fable 5 主题，但本文 80% 篇幅在 3 域对比 + 5 原则抽象，AWS 译本聚焦 Fable 5 产品本身（能力 + 接入 + 部署）。**互补不重叠**。
+> 与 [Fable 5 AWS 中文译本](799-anthropic-claude.html) 同 Fable 5 主题，但本文 80% 篇幅在 3 域对比 + 5 原则抽象，AWS 译本聚焦 Fable 5 产品本身（能力 + 接入 + 部署）。**互补不重叠**。
 
 ## 五大共性设计原则（跨域抽象）
 
@@ -125,19 +125,19 @@ ActionTrail 操作审计            ←  每次拒绝可审计
 ## 相关实体
 
 - **同 Fable 5 主题**（互补不重叠）：
-  - [Fable 5 AWS 中文译本](787-anthropic-claude.html)（产品视角）
-  - [Claude Fable 5 Safety Fables (Lambert)](593-claude-fable-5-and-new-ai-safety-fables.html)（政策视角）
-  - [Fable 5 Mollick hands-on](338-claude-fable-5.html)（用户体验视角）
+  - [Fable 5 AWS 中文译本](799-anthropic-claude.html)（产品视角）
+  - [Claude Fable 5 Safety Fables (Lambert)](601-claude-fable-5-and-new-ai-safety-fables.html)（政策视角）
+  - [Fable 5 Mollick hands-on](339-claude-fable-5.html)（用户体验视角）
 - **同护栏 / 安全主题**：
-  - [AI Gateway vs MCP Gateway 安全分析](../ch11/067-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html)
+  - [AI Gateway vs MCP Gateway 安全分析](../ch11/068-ai-gateways-vs-mcp-gateways-what-security-teams-need-to-kno.html)
   - [NVIDIA Nemotron 3 Agents RAG Voice Safety](../ch03/004-agent.html)
-  - [Amazon Bedrock Agentic Payments Guardrails](../ch11/135-amazon-bedrock.html)
-  - [Enable Safe Agentic Payments with Built-in Guardrails](../ch04/434-enable-safe-agentic-payments-with-built-in-guardrails-using.html)
-  - [Nemotron 3.5 Content Safety](368-nemotron-3-5-content-safety-customizable-multimodal-safety.html)
-  - [阿里集团 AI 代码评审安全带](../ch04/257-ai.html)
+  - [Amazon Bedrock Agentic Payments Guardrails](../ch11/136-amazon-bedrock.html)
+  - [Enable Safe Agentic Payments with Built-in Guardrails](../ch04/449-enable-safe-agentic-payments-with-built-in-guardrails-using.html)
+  - [Nemotron 3.5 Content Safety](372-nemotron-3-5-content-safety-customizable-multimodal-safety.html)
+  - [阿里集团 AI 代码评审安全带](../ch04/052-ai.html)
 - **同阿里云生态**：
-  - [Aliyun AgentRun](../ch04/290-agentrun.html)
-  - [阿里云 CMS CLI 可观测](../ch07/054-skill.html)
+  - [Aliyun AgentRun](../ch04/278-agentrun.html)
+  - [阿里云 CMS CLI 可观测](../ch07/045-skill.html)
   - [阿里云 哈勃业务 Agent 评估](../ch05/008-harness.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/observability-monitoring.md)
 

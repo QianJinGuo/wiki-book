@@ -1,6 +1,6 @@
 # The Future of BMW
 
-> 📊 Level ⭐ | 10.1KB | `entities/the-future-of-bmw-design-a-conversation-with-max-missoni.md`
+> 📊 Level ⭐ | 10.2KB | `entities/the-future-of-bmw-design-a-conversation-with-max-missoni.md`
 
 # The Future of BMW Design: A Conversation with Max Missoni
 
@@ -15,10 +15,10 @@
 - **未来路线**：全自动驾驶与纯模拟驾驶将在高端跑车市场分道扬镳，形成两条并行的产品家族 
 
 ## 相关实体
-- [The Race To Own The Agentic Future Tidemark](../ch04/334-the-race-to-own-the-agentic-future-tidemark.html)
+- [The Race To Own The Agentic Future Tidemark](../ch04/347-the-race-to-own-the-agentic-future-tidemark.html)
 - [Sign Of The Future Gpt 55 Mollick](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sign-of-the-future-gpt-55-mollick.md)
-- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch04/257-ai.html)
-- [From Doer To Director The Ai Mindset Shift](029-from-doer-to-director-the-ai-mindset-shift.html)
+- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch04/052-ai.html)
+- [From Doer To Director The Ai Mindset Shift](028-from-doer-to-director-the-ai-mindset-shift.html)
 
 → [原文存档](https://coolhunting.com/design/the-future-of-bmw-design-a-conversation-with-max-missoni/)
 

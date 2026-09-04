@@ -67,14 +67,14 @@ Simon Willison（Django 联合创始人、Pelican Riding a Bicycle 测试基准�
 ## 相关实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/098-karpathy-vibe-coding-agentic-engineering.html)
-- [Claude Code Harness Deep Understanding](337-claude-code-harness-deep-understanding.html)
-- [Claude Code Harness Deep Dive Founder Park](../ch05/058-claude-code-harness.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/096-karpathy-vibe-coding-agentic-engineering.html)
+- [Claude Code Harness Deep Understanding](338-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Dive Founder Park](../ch05/059-claude-code-harness.html)
 - [两万字详解Claude Code源码核心机制](../ch03/057-claude-code.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/035-agent-harness.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](../ch03/004-agent.html)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/057-harness-engineering.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04/176-openclaw.html)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/026-harness-engineering.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04/180-openclaw.html)
 
 ---
 

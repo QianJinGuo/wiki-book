@@ -2,16 +2,16 @@
 
 > 📊 Level ⭐⭐ | 10.3KB | `entities/1-million-exposed-ai-services-hackernews.md`
 
-> -> [原始来源](https://thehackernews.com/2026/05/we-scanned-1-million-exposed-ai.html)
+> -> [原文存档](https://thehackernews.com/2026/05/we-scanned-1-million-exposed-ai.html)
 
 # We Scanned 1 Million Exposed AI Services. Here's How Bad the Security Situation Is
 **Source:** https://thehackernews.com/2026/05/we-scanned-1-million-exposed-ai.html
 **Summary:** (from LLM review)
 > Score: 8×8=64 | strong
-→ [原始来源](https://thehackernews.com/2026/05/we-scanned-1-million-exposed-ai.html)
+→ [原文存档](https://thehackernews.com/2026/05/we-scanned-1-million-exposed-ai.html)
 
 ## 相关实体
-- [Your AI Agents Are Already Inside the Perimeter. Do You Know Who They Are?](../ch04/312-ai-agent.html)
+- [Your AI Agents Are Already Inside the Perimeter. Do You Know Who They Are?](../ch04/284-ai-agent.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-privacy-landscape.md)
 ## 深度分析
@@ -75,7 +75,7 @@ n8n 和 Flowise 等工作流自动化平台在暴露后造成的危害尤为严�
 
 当这些配置错误与代码解释等高权限工具结合时，攻击半径显著扩大。如果沙箱薄弱且基础设施不位于 DMZ 中，爆炸半径会大幅增加。
 
-→ [原始来源](https://back.engineering/blog/09/05/2026/)
+→ [原文存档](https://back.engineering/blog/09/05/2026/)
 
 ## 实践启示
 
@@ -116,7 +116,7 @@ AI 采用速度远超安全实践成熟的现状短期内不会改变。组织�
 > [!attention] 关键洞察
 > 过去几十年软件行业在安全交付产品方面取得了真正进展，但 AI 疯狂的采用速度正在将这一进展置于风险之中。企业在快速部署自托管 LLM 基础设施，但速度正在以牺牲安全为代价。
 
-→ [原始来源](https://back.engineering/blog/09/05/2026/)
+→ [原文存档](https://back.engineering/blog/09/05/2026/)
 
 ---
 

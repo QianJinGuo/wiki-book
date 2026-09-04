@@ -62,13 +62,13 @@ Figma 在 Beta 期做了三个限制：① 仅 Mac 桌面应用；② 需要公�
 ## 相关实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](004-agent.html)
-- [Vibe Coding Agentic Engineering Convergence Simon Willison](../ch09/038-coding-agent.html)
+- [Vibe Coding Agentic Engineering Convergence Simon Willison](../ch09/041-coding-agent.html)
 - [两万字详解Claude Code源码核心机制](057-claude-code.html)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch05/035-agent-harness.html)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/057-harness-engineering.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/098-karpathy-vibe-coding-agentic-engineering.html)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/026-harness-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/096-karpathy-vibe-coding-agentic-engineering.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](004-agent.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04/176-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04/180-openclaw.html)
 
 ---
 

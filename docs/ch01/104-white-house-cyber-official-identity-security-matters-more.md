@@ -1,6 +1,6 @@
 # White House cyber official: identity security matters more
 
-> 📊 Level ⭐ | 5.8KB | `entities/white-house-federal-identity-security-ai.md`
+> 📊 Level ⭐ | 5.9KB | `entities/white-house-federal-identity-security-ai.md`
 
 ## 核心要点
 - AI 攻击工具花样翻新，但突破口仍是薄弱的身份认证与凭证管理
@@ -9,9 +9,9 @@
 - AI Agent 自身可演化为内部威胁，绕过既有安全 guardrail
 - 联邦机构需将身份安全列为 AI 时代最高优先级，同时为 AI Agent 失效做容灾规划
 ## 相关实体
-- [From Doer To Director The Ai Mindset Shift](029-from-doer-to-director-the-ai-mindset-shift.html)
-- [Microsoft For Startups Microsoft](387-microsoft-for-startups-microsoft.html)
-- [Running An Ai Native Engineering Org](046-running-an-ai-native-engineering-org.html)
+- [From Doer To Director The Ai Mindset Shift](028-from-doer-to-director-the-ai-mindset-shift.html)
+- [Microsoft For Startups Microsoft](024-microsoft-for-startups-microsoft.html)
+- [Running An Ai Native Engineering Org](047-running-an-ai-native-engineering-org.html)
 - [How I Moved My Digital Stack To Europe](102-how-i-moved-my-digital-stack-to-europe.html)
 
 → [原文存档](https://cyberscoop.com/white-house-federal-identity-security-ai-risks/)

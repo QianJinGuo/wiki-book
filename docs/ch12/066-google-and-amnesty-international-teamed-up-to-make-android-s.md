@@ -11,7 +11,7 @@
 ## 相关实体
 - [Google Amnesty Spyware Detection](https://github.com/QianJinGuo/wiki-public/blob/main/entities/google-amnesty-spyware-detection.md)
 - [Google And Amnesty International Teamed Up To Make Android S](066-google-and-amnesty-international-teamed-up-to-make-android-s.html)
-- [Shub Reaper Macos Stealer Attack Chain](../ch04/257-ai.html)
+- [Shub Reaper Macos Stealer Attack Chain](../ch04/052-ai.html)
 - [Google And Amnesty International Teamed Up To Make It Harder](https://github.com/QianJinGuo/wiki-public/blob/main/entities/google-and-amnesty-international-teamed-up-to-make-it-harder.md)
 - [Google Bigquery Threat Model](https://github.com/QianJinGuo/wiki-public/blob/main/entities/google-bigquery-threat-model.md)
 

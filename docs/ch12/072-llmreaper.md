@@ -13,8 +13,8 @@
 ---
 
 ## 相关实体
-- [飞来汇借助 Aws Security Agent 构建跨境支付应用的智能安全防线](../ch04/244-aws-security-agent.html)
-- [Powering Agentic Ai Sales Strategy With Amazon Bedrock Agent](../ch04/017-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.html)
+- [飞来汇借助 Aws Security Agent 构建跨境支付应用的智能安全防线](../ch04/252-aws-security-agent.html)
+- [Powering Agentic Ai Sales Strategy With Amazon Bedrock Agent](../ch04/018-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.html)
 - [Novee Security How To Get A 100 Conference Acceptance Rate The No](https://github.com/QianJinGuo/wiki-public/blob/main/entities/novee-security-how-to-get-a-100-conference-acceptance-rate-the-no.md)
 
 → [原文存档](https://thewhiteh4t.github.io/blog/ai-chat-llmreaper/)
@@ -68,3 +68,4 @@ Chrome、Firefox 等浏览器支持 Profiles 功能，可创建完全独立的�
 *本条目由 LLMReaper 研究论文深度解析生成，2026-06-03*
 
 ---
+

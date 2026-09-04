@@ -112,11 +112,11 @@ Yael 的威胁情报来源形成了一个分层结构：
 ## 相关实体
 
 - [Karpathy Vibe Coding 访谈](../ch03/004-agent.html)
-- [Karpathy Vibe Coding 完整版](../ch04/098-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding 完整版](../ch04/096-karpathy-vibe-coding-agentic-engineering.html)
 - [Claude Code 源码机制](../ch03/057-claude-code.html)
 - [Agent 原理架构与工程实践](../ch03/004-agent.html)
 - [多智能体交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md)
-- [OpenClaw 完整指南](../ch04/176-openclaw.html)
+- [OpenClaw 完整指南](../ch04/180-openclaw.html)
 - [LLMReaper Browser Extension Attack](014-llmreaper-dom-based-ai-conversation-exfiltration-via-brows.html) — AI 对话的扩展窃取风险
 
 > [原文存档](https://blog.yaelwrites.com/what-my-privacy-and-security-stack-actually-looks-like/)

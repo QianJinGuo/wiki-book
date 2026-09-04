@@ -129,15 +129,15 @@ Skills 是按需加载的专业知识包，应绑定到特定目录实现模块�
 ## 相关实体
 - [Claude Code Large Codebase Enterprise Deployment](../ch03/057-claude-code.html)
 - [Claude Code Core Internals](../ch03/057-claude-code.html)
-- [Claude Code Harness Deep Understanding](337-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Understanding](338-claude-code-harness-deep-understanding.html)
 - [Claude Code Large Codebase Harness Configuration](../ch03/057-claude-code.html)
 - [Claude Code Openclaw Memory Vector Db Doubt](../ch03/057-claude-code.html)
 
 → [原文存档](https://mp.weixin.qq.com/s/svqke7ZZPU4q5iemPiUMWA)
 
 - 博客原文：https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start
-- [openai 的最强对手，离「ai windows」又近了一步](560-anthropic-ai.html)
-- [钉钉 stream + cli 代理双引擎 ai 助手架构](../ch04/257-ai.html)
+- [openai 的最强对手，离「ai windows」又近了一步](569-anthropic-ai.html)
+- [钉钉 stream + cli 代理双引擎 ai 助手架构](../ch04/052-ai.html)
 - [claude code 1.0.24 工具调用安全事故：静默删 .gitignore 与 redis flush 复盘](../ch03/057-claude-code.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/tool-use-mcp-patterns.md)
 

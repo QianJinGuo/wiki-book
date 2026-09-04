@@ -4,7 +4,7 @@
 
 # 主权云仅中美可行：Gartner 分析师的悲观预判
 
-> -> [原始来源](https://www.theregister.com/off-prem/2026/05/11/sovereign-cloud-is-only-possible-if-youre-chinese-or-american-gartner/5237660/)
+> -> [原文存档](https://www.theregister.com/off-prem/2026/05/11/sovereign-cloud-is-only-possible-if-youre-chinese-or-american-gartner/5237660/)
 
 ## 摘要
 
@@ -66,12 +66,12 @@ Toombs 引用波士顿咨询集团的"三四法则"：稳定竞争市场中不�
 
 ## 相关实体
 
-- [越南发展国内云](142-vietnam-to-develop-domestic-cloud.html)
+- [越南发展国内云](140-vietnam-to-develop-domestic-cloud.html)
 - [越南国内云](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vietnam-domestic-cloud.md)
-- [澳大利亚多云 Agent 编排](../ch04/242-agent-orchestration.html)
+- [澳大利亚多云 Agent 编排](../ch04/249-agent-orchestration.html)
 - [5237660](https://github.com/QianJinGuo/wiki-public/blob/main/entities/5237660.md)
 
-→ [原始来源](https://www.theregister.com/off-prem/2026/05/11/sovereign-cloud-is-only-possible-if-youre-chinese-or-american-gartner/5237660/)
+→ [原文存档](https://www.theregister.com/off-prem/2026/05/11/sovereign-cloud-is-only-possible-if-youre-chinese-or-american-gartner/5237660/)
 
 ---
 

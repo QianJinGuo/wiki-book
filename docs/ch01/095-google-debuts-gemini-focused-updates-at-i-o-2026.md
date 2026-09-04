@@ -52,9 +52,9 @@ Google I/O 作为平台和工具方向的**信号事件**，其实质影响体�
 ---
 ## 相关实体
 - [Gemini Embedding 2 Multimodal Unified Vector Hyman](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gemini-embedding-2-multimodal-unified-vector-hyman.md)
-- [Gemini Ai](../ch04/257-ai.html)
+- [Gemini Ai](../ch04/052-ai.html)
 - [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md)
-- [Google Shipped Gemini 31 Flash Lite In General Availability](../ch04/257-ai.html)
+- [Google Shipped Gemini 31 Flash Lite In General Availability](../ch04/052-ai.html)
 - [Google Io 2026 Agentic Gemini Era](../ch03/004-agent.html)
 
 → [原文存档](https://letsdatascience.com/news/google-debuts-gemini-focused-updates-at-io-2026-4be4fde6)

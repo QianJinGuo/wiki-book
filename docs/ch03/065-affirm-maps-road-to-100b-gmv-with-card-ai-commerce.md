@@ -1,6 +1,6 @@
 # Affirm Maps Road to $100B GMV With Card, AI Commerce
 
-> 📊 Level ⭐⭐ | 8.7KB | `entities/affirm-maps-road-to-100b-gmv-with-card-ai-commerce.md`
+> 📊 Level ⭐⭐ | 8.8KB | `entities/affirm-maps-road-to-100b-gmv-with-card-ai-commerce.md`
 
 > -> [原文存档](https://www.theglobeandmail.com/investing/markets/stocks/AFRM/pressreleases/1917522/affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-global-expansion/)
 
@@ -35,7 +35,7 @@ John Marion 披露的 Affirm Bank 计划值得特别关注。Affirm 于 2026 年
 → [原文存档](https://www.theglobeandmail.com/investing/markets/stocks/AFRM/pressreleases/1917522/affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-global-expansion/)
 
 ## 相关实体
-- [Affirm Maps Road to $100B GMV With Card, AI Commerce and Global Expansion](069-affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-glo.html)
+- [Affirm Maps Road to $100B GMV With Card, AI Commerce and Global Expansion](070-affirm-maps-road-to-100b-gmv-with-card-ai-commerce-and-glo.html)
 
 ---
 ## 关联

@@ -87,11 +87,11 @@ LSI 框架揭示的最大实践误区是：将"测试损失下降"等同于"用�
 AutoML 的历史教训是：自动化在明确定义的搜索空间内效果拔群，但研究的核心工作恰好是定义搜索空间本身。 建议在评估 AI 自动化研究工具时，用以下问题过滤 hype：工具优化的是一个还是多个指标？它依赖谁来定义优化目标？如果答案是"单一指标"和"人类定义"，则该工具属于 AutoML 类别的"窄域优化"，不能期望它从根本上改变研究工作流。
 
 ## 相关实体
-- [The Shape Of The Thing Mollick](159-the-shape-of-the-thing.html)
-- [World Knowledge Agent Self Evolution Tencent Hkustgz](../ch04/229-world-knowledge-agent.html)
+- [The Shape Of The Thing Mollick](158-the-shape-of-the-thing.html)
+- [World Knowledge Agent Self Evolution Tencent Hkustgz](../ch04/235-world-knowledge-agent.html)
 - [Claude Code Self Repair Hooks Memory Config](../ch03/057-claude-code.html)
-- [Problem With Mathematically Proven Claims About Llms](267-problem-with-mathematically-proven-claims-about-llms.html)
-- [Deli Auto Research Skill Deepseek](418-deepseek.html)
+- [Problem With Mathematically Proven Claims About Llms](268-problem-with-mathematically-proven-claims-about-llms.html)
+- [Deli Auto Research Skill Deepseek](311-deepseek.html)
 
 ## 相关引用
 → [原文存档](https://www.interconnects.ai/p/lossy-self-improvement)

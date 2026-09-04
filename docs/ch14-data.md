@@ -227,11 +227,11 @@ E2E 验证阶段是真正的瓶颈：必须在真实硬件上构造真实环境�
 
 ## 相关实体
 
-- [特斯拉百万年薪招数据标注员，朝九晚五，无需ai经验](https://github.com/QianJinGuo/wiki-public/blob/main/entities/特斯拉百万年薪招数据标注员朝九晚五无需ai经验.md)
+- [特斯拉百万年薪招数据标注员，朝九晚五，无需ai经验](ch04/052-ai.html)
 - [system over model, tested: reproducing mythos's freebsd find](https://github.com/QianJinGuo/wiki-public/blob/main/entities/system-over-model-tested-reproducing-mythoss-freebsd-find-on-20260606.md)
-- [from doer to director: the ai mindset shift](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-doer-to-director-the-ai-mindset-shift.md)
-- [How my non-engineering team at Sentry learned to ship](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-my-non-engineering-team-at-sentry-learned-to-ship-20260606.md)
-- [Unexpected lessons from an AI-assisted prototyping experiment](https://github.com/QianJinGuo/wiki-public/blob/main/entities/adobe-design-unexpected-lessons-ai-prototyping-2026.md)
+- [from doer to director: the ai mindset shift](ch01/028-from-doer-to-director-the-ai-mindset-shift.html)
+- [How my non-engineering team at Sentry learned to ship](ch01/342-how-my-non-engineering-team-at-sentry-learned-to-ship.html)
+- [Unexpected lessons from an AI-assisted prototyping experiment](ch04/052-ai.html)
 
 → [原文存档](https://varoa.net/2026/06/13/ddosing-software-delivery-pipelines.html)
 
@@ -755,10 +755,10 @@ Agentic AI 的成本失控根源在于其执行路径的非确定性——传统
 ![](https://d2908q01vomqb2.cloudfront.net/472b07b9fcf2c2451e8781e944bf5f77cd8457c8/2026/05/14/2026_Summits_Commercial_Banner_1440x657.png)
 
 ## 相关实体
-- [飞来汇借助 Aws Security Agent 构建跨境支付应用的智能安全防线](https://github.com/QianJinGuo/wiki-public/blob/main/entities/飞来汇借助-aws-security-agent-构建跨境支付应用的智能安全防线.md)
-- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-aws-smgs-uses-an-ai-powered-conversational-assistant-to-.md)
-- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/滴滴国际化客服质检智能化之路基于-amazon-bedrock-的多语种多业务线质检实践.md)
-- [Powering Agentic Ai Sales Strategy With Amazon Bedrock Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.md)
+- [飞来汇借助 Aws Security Agent 构建跨境支付应用的智能安全防线](ch04/252-aws-security-agent.html)
+- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](ch04/052-ai.html)
+- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](ch11/136-amazon-bedrock.html)
+- [Powering Agentic Ai Sales Strategy With Amazon Bedrock Agent](ch04/018-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.html)
 - [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](https://github.com/QianJinGuo/wiki-public/blob/main/entities/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/data-infrastructure.md)
 
@@ -984,10 +984,10 @@ partition_by: "bucket(device_id, 50), day(timestamp)"
 
 ## 与 wiki 既有内容的关系
 
-- **与 [Databricks Storage Ecosystem 开放共享治理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/databricks-storage-ecosystem-opensharing-govern-everything-2026.md)**：都讲 Lakehouse + 开放表格式；Databricks 是"生态平台"阵营（Delta Lake 锁定），阿里云是"原生集成"阵营（中立兼容）——**3 大阵营中的两极**
+- **与 [Databricks Storage Ecosystem 开放共享治理](ch01/167-rag.html)**：都讲 Lakehouse + 开放表格式；Databricks 是"生态平台"阵营（Delta Lake 锁定），阿里云是"原生集成"阵营（中立兼容）——**3 大阵营中的两极**
 - **与 750B MoE PD-Disaggregation AWS EFA（尚未入库）**：同属顶级云厂技术体系；本文是**数据基础设施**，750B MoE 是**推理基础设施**
-- **与 [Amazon Quick 加速企业数据到 AI 决策](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md)**：都讲企业数据 → AI；Quick 是**消费侧**（无 SQL 业务查询），本文是**生产侧**（Kafka 实时入湖）
-- **与 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering.md)**：都讲"工程化收敛"；Harness 是 AI 智能体工程，零 ETL 是数据基础设施工程；Harness 强调"通用能力内聚"，零 ETL 强调"通用入湖能力内聚"——**同一思想跨域应用**
+- **与 [Amazon Quick 加速企业数据到 AI 决策](ch04/052-ai.html)**：都讲企业数据 → AI；Quick 是**消费侧**（无 SQL 业务查询），本文是**生产侧**（Kafka 实时入湖）
+- **与 [Harness Engineering](ch05/026-harness-engineering.html)**：都讲"工程化收敛"；Harness 是 AI 智能体工程，零 ETL 是数据基础设施工程；Harness 强调"通用能力内聚"，零 ETL 强调"通用入湖能力内聚"——**同一思想跨域应用**
 
 ## 深度分析
 
@@ -1014,18 +1014,18 @@ partition_by: "bucket(device_id, 50), day(timestamp)"
 5. **CDC Upsert 是 DB 变更捕获场景的必备能力**：对于数据库变更同步到数据湖的场景，没有 Upsert 支持的零 ETL 方案是不完整的。确认方案支持 Debezium 格式的 CDC 事件，并能正确处理 DELETE + UPDATE 操作。
 
 ## 架构图
-→ [C4 架构图](assets/c4/aliyun-kafka-iceberg-zero-etl-architecture-subtraction-2026-06-18-c4.html)
+→ （架构图待生成: C4 架构图）
 
 ## 相关实体
 
 → [原文存档](https://mp.weixin.qq.com/s/7wg1gUZZg08OoozBMebcHg)
 
-- [Databricks Storage Ecosystem 开放共享治理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/databricks-storage-ecosystem-opensharing-govern-everything-2026.md)
+- [Databricks Storage Ecosystem 开放共享治理](ch01/167-rag.html)
 - 750B MoE PD-Disaggregation AWS EFA（尚未入库）
-- [Amazon Quick 加速企业数据到 AI 决策](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md)
-- [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering.md)
-- [ConardLi Harness Engineering 综合性指南（+ Beautiful Article 第 2 来源）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-comprehensive-guide-conardli.md)
-- [美团海报生成 AIGC PosterCraft/PosterOmni/PosterReward](https://github.com/QianJinGuo/wiki-public/blob/main/entities/meituan-poster-aigc-postercraft-posteromni-posterreward-meigen.md)
+- [Amazon Quick 加速企业数据到 AI 决策](ch04/052-ai.html)
+- [Harness Engineering](ch05/026-harness-engineering.html)
+- [ConardLi Harness Engineering 综合性指南（+ Beautiful Article 第 2 来源）](ch05/026-harness-engineering.html)
+- [美团海报生成 AIGC PosterCraft/PosterOmni/PosterReward](ch04/052-ai.html)
 
 ---
 
@@ -1184,9 +1184,9 @@ Alignment-faking 基线 12%、Reward Tampering、Sycophancy——这三个已发
 - [LLM Training RL Research](https://github.com/QianJinGuo/wiki-public/blob/main/queries/llm-training-rl-research.md) — RL 训练与数据质量的综合研究视角
 
 ## 相关实体
-- [Multilingual Ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/multilingual-ai.md)
+- [Multilingual Ai](ch04/052-ai.html)
 - [Datacomp For Language Models](https://github.com/QianJinGuo/wiki-public/blob/main/entities/datacomp-for-language-models.md)
-- [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-eval-wallezhang-yaml-driven-agent-evaluation-framework.md)
+- [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](ch03/004-agent.html)
 - [How Far Behind Are Open Models 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-far-behind-are-open-models-2026.md)
 - [Langsmith Evaluation Concepts](https://github.com/QianJinGuo/wiki-public/blob/main/entities/langsmith-evaluation-concepts.md)
 - [nice：浙大提出的理论驱动型 llm 社会智能诊断基准](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nice-zhejiang-university-social-intelligence-benchmark-hyman.md)
@@ -1327,11 +1327,11 @@ one agent, one sandbox, one storage, one database
 - → [Karpathy: Vibe Coding → Agentic Engineering](https://mp.weixin.qq.com/s/Ru3Z7wUVOlUwXUZUO5xw2A)
 
 ## 相关实体
-- [Tidb Cloud Agent Database](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tidb-cloud-agent-database.md)
-- [Kimi K2 Tidb Agent Database Huangdongxu 20260513](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kimi-k2-tidb-agent-database-huangdongxu-20260513.md)
-- [Ara Agent Native Research Artifact 37Authors](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ara-agent-native-research-artifact-37authors.md)
-- [Hermes Agent K2 6 Tutorial](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-k2-6-tutorial.md)
-- [Kimi Work Codex Vibe Working Paradigm Shift](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kimi-work-codex-vibe-working-paradigm-shift.md)
+- [Tidb Cloud Agent Database](ch03/004-agent.html)
+- [Kimi K2 Tidb Agent Database Huangdongxu 20260513](ch03/004-agent.html)
+- [Ara Agent Native Research Artifact 37Authors](ch03/004-agent.html)
+- [Hermes Agent K2 6 Tutorial](ch03/066-hermes-agent.html)
+- [Kimi Work Codex Vibe Working Paradigm Shift](ch01/398-codex.html)
 
 ---
 
@@ -1390,7 +1390,7 @@ Agent 层面不会有实例被回收、休眠或连接中断等不好的体验�
 - 每个 Sandbox 分配一个真实数据库实例
 - 冷却时被回收，难保证 7×24 永远在线
 - 数量大了成本难控制（想象几千万个 Supabase 实例）
-**TiDB Cloud 架构**： See also [Agent Harness Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture.md)
+**TiDB Cloud 架构**： See also [Agent Harness Architecture](ch05/035-agent-harness.html)
 
 - 无真实数据库实例，一切都是虚拟的
 - 对 Sandbox 中的 Agent 来说，仍然拥有一个个完整的独立数据库
@@ -1510,7 +1510,7 @@ https://mp.weixin.qq.com/s/XLYWhkjFHxrH2-jb5O1qCQ
 
 ### 2. OpenSharing 协议：争夺协议层标准主导权
 
-OpenSharing 开源协议的本质是将 Databricks 的治理能力前移到存储层，同时避免数据复制。这是一个「协议层标准战」的战略——类比 MCP 协议在 Agent 工具调用领域的作用，OpenSharing 试图成为存储与计算分离架构下的标准连接协议。一旦成为事实标准，Databricks 就能通过 [Unity Catalog](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagemaker.md) 统一治理所有实现 OpenSharing 的存储系统，无论供应商是谁。存储厂商只需实现协议接口即可加入生态，准入门槛低但 Databricks 对标准的主导权强——这是平台公司标准战略的典型打法。
+OpenSharing 开源协议的本质是将 Databricks 的治理能力前移到存储层，同时避免数据复制。这是一个「协议层标准战」的战略——类比 MCP 协议在 Agent 工具调用领域的作用，OpenSharing 试图成为存储与计算分离架构下的标准连接协议。一旦成为事实标准，Databricks 就能通过 [Unity Catalog](ch01/478-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html) 统一治理所有实现 OpenSharing 的存储系统，无论供应商是谁。存储厂商只需实现协议接口即可加入生态，准入门槛低但 Databricks 对标准的主导权强——这是平台公司标准战略的典型打法。
 
 ### 3. Delta Lake / Iceberg 双格式支持：表格式之战升温
 
@@ -1522,7 +1522,7 @@ SDS 生态将 Databricks 的 Lakehouse 架构扩展到真正的混合环境—�
 
 ### 5. Unity Catalog 作为跨混合环境的统一治理平面
 
-「单一统一目录」是 SDS 生态的核心价值主张。[Unity Catalog](https://github.com/QianJinGuo/wiki-public/blob/main/entities/using-amazon-emr-serverless-storage-to-simplify-operations-and-reduce-costs.md) 不再只是云端数据的治理层，而成为跨混合环境的数据治理平面。这意味着元数据管理、访问控制、血缘追踪和审计日志在混合环境下的一致性成为可能。结合 [数据 Agent 平台架构](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/data-agent-platform-architecture.md) 的设计思路，治理平面的统一是实现「 enterprise data estate 一体化」的技术前提，对受监管行业的 CDO 来说是关键卖点。
+「单一统一目录」是 SDS 生态的核心价值主张。[Unity Catalog](ch01/167-rag.html) 不再只是云端数据的治理层，而成为跨混合环境的数据治理平面。这意味着元数据管理、访问控制、血缘追踪和审计日志在混合环境下的一致性成为可能。结合 [数据 Agent 平台架构](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/data-agent-platform-architecture.md) 的设计思路，治理平面的统一是实现「 enterprise data estate 一体化」的技术前提，对受监管行业的 CDO 来说是关键卖点。
 
 ## 实践启示
 
@@ -1533,8 +1533,8 @@ SDS 生态将 Databricks 的 Lakehouse 架构扩展到真正的混合环境—�
 
 ## 相关实体
 
-- [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagemaker.md) — 同 vendor 不同焦点（ML 训练 vs 数据治理）
-- [Using Amazon EMR Serverless Storage](https://github.com/QianJinGuo/wiki-public/blob/main/entities/using-amazon-emr-serverless-storage-to-simplify-operations-and-reduce-costs.md) — AWS 数据处理与存储成本优化参考
+- [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](ch01/478-fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagem.html) — 同 vendor 不同焦点（ML 训练 vs 数据治理）
+- [Using Amazon EMR Serverless Storage](ch01/167-rag.html) — AWS 数据处理与存储成本优化参考
 - `concepts/data-lakehouse-architecture` — (待创建) Lakehouse 范式概念页
 - `concepts/zero-copy-data-architecture` — (待创建) 零数据移动的架构模式
 
@@ -1560,10 +1560,10 @@ SDS 生态将 Databricks 的 Lakehouse 架构扩展到真正的混合环境—�
 RIPA 允许执法机构在无需搜查令的情况下强制通信提供商披露用户数据。
 ## 相关实体
 - [Clarity Act 5 Things](https://github.com/QianJinGuo/wiki-public/blob/main/entities/clarity-act-5-things.md)
-- [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britain S Age Check Mess](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mozilla-warns-uk-breaking-vpns-will-not-magically-fix-britain-s-age-check-mess.md)
+- [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britain S Age Check Mess](ch12/070-mozilla-warns-uk-breaking-vpns-will-not-magically-fix-brita.html)
 - [End To End Encrypted Ml Inference Sagemaker Fhe](https://github.com/QianJinGuo/wiki-public/blob/main/entities/end-to-end-encrypted-ml-inference-sagemaker-fhe.md)
-- [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mozilla-warns-uk-breaking-vpns-will-not-magically-fix-britai.md)
-- [在 Macos 上用 Ai Coding 搭一个隐私优先的会议纪要助手](https://github.com/QianJinGuo/wiki-public/blob/main/entities/在-macos-上用-ai-coding-搭一个隐私优先的会议纪要助手.md)
+- [Mozilla Warns Uk Breaking Vpns Will Not Magically Fix Britai](ch12/070-mozilla-warns-uk-breaking-vpns-will-not-magically-fix-brita.html)
+- [在 Macos 上用 Ai Coding 搭一个隐私优先的会议纪要助手](ch05/078-ai-coding.html)
 
 → [原文存档](https://www.theregister.com/databases/2026/05/20/londons-police-asked-big-tech-for-comms-data-over-700000-times-last-year/5242590)
 
@@ -1765,7 +1765,7 @@ ServiceNow 本身是 ITSM / HR / 客户支持自动化领域的巨头，发布 E
 
 - **横向对照**：`eva-bench` 与通用 Agent 基准（HumanEval、SWE-bench、tau-bench）的关系——垂直 vs 通用、语音 vs 文本。
 - **纵向延伸**：从 EVA-Bench 出发，企业可以构建自己的"内部评估集"——比 EVA-Bench 更贴合具体业务场景。
-- **工具调用能力**：EVA-Bench 的 121 个工具与 [Cline Agent Runtime Sdk](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cline-agent-runtime-sdk.md) 的 multi-tool 编排能力形成评测—能力对照。
+- **工具调用能力**：EVA-Bench 的 121 个工具与 [Cline Agent Runtime Sdk](ch03/004-agent.html) 的 multi-tool 编排能力形成评测—能力对照。
 
 ## 实践启示
 
@@ -1778,13 +1778,13 @@ ServiceNow 本身是 ITSM / HR / 客户支持自动化领域的巨头，发布 E
 
 ## 相关实体
 
-- [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md) — Agent 原理架构的综合性参考
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md) — Agent 范式跃迁的视角
-- [Karpathy Vibe Coding Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-agentic-engineering.md) — 同源访谈的另一标题版本
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md) — AWS Bedrock AgentOps 的规模化运营实践
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验-v2.md) — 多智能体团队搭建的实战经验
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏-v2.md) — OpenClaw 多智能体系统化教程
-- [Cline Agent Runtime Sdk](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cline-agent-runtime-sdk.md) — Cline SDK 的多工具编排能力，与 EVA-Bench 121 工具规模相互映照
+- [你不知道的 Agent原理架构与工程实践 V2](ch03/004-agent.html) — Agent 原理架构的综合性参考
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/004-agent.html) — Agent 范式跃迁的视角
+- [Karpathy Vibe Coding Agentic Engineering](ch04/096-karpathy-vibe-coding-agentic-engineering.html) — 同源访谈的另一标题版本
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/197-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html) — AWS Bedrock AgentOps 的规模化运营实践
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](ch04/180-openclaw.html) — 多智能体团队搭建的实战经验
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](ch04/180-openclaw.html) — OpenClaw 多智能体系统化教程
+- [Cline Agent Runtime Sdk](ch03/004-agent.html) — Cline SDK 的多工具编排能力，与 EVA-Bench 121 工具规模相互映照
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/observability-monitoring.md)
 
 ---
@@ -1890,9 +1890,9 @@ $$U_{eff}(n) = U_0 + \Delta U(1 - e^{-n/n_c})$$
 ## 与现有 wiki 实体的关联
 
 - [NVIDIA Isaac Lab](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md) — Physical AI 训练基础设施
-- [Perceptron](https://github.com/QianJinGuo/wiki-public/blob/main/entities/perceptron-mk1-video-analysis-ai.md) — Physical AI 感知层
+- [Perceptron](ch04/052-ai.html) — Physical AI 感知层
 - [DiffusionGemma](https://github.com/QianJinGuo/wiki-public/blob/main/entities/diffusiongemma-4x-faster-text-generation-google-2026-06.md) — 生成模型与分数估计
-- [DiScoFormer](https://github.com/QianJinGuo/wiki-public/blob/main/entities/discoformer-density-score-transformer-allenai.md) — 密度与分数估计的 Transformer 方法
+- [DiScoFormer](ch04/052-ai.html) — 密度与分数估计的 Transformer 方法
 
 ## 差异化分析
 
@@ -1943,11 +1943,11 @@ Lightfield 的 FAQ 中有一段值得注意的自我定位：随着对工具边�
 **2. 方法论留存是护城河，而非工具本身。** Lightfield 刻意将运作机制构建在客户自己的 CRM 之上，确保"打法不随合作结束而流失"。对于企业内部 AI 工具建设而言，这一原则同样适用：构建那些能将方法论内置到组织数据中的系统，而非依赖个人经验的外部工具。
 **3. 规模化验证前的 setup 需要耐心。** Lightfield 指出：Setup 需要几周时间（目标列表评分、序列撰写、邮箱预热），Live 发送后需要 4-6 周才能看到结果，且成功标准不是"约到了多少会议"而是"验证了哪些假设"。这对急于看到 AI 落地成效的组织是一个有益的提醒：系统性的 AI Pipeline 建设需要与业务节奏匹配的前置投入期。
 ## 相关实体
-- [Lightfield Introducing Skills](https://github.com/QianJinGuo/wiki-public/blob/main/entities/lightfield-introducing-skills.md)
-- [Npm Supply Chain Compromise Postmortem](https://github.com/QianJinGuo/wiki-public/blob/main/entities/npm-supply-chain-compromise-postmortem.md)
+- [Lightfield Introducing Skills](ch03/050-skills.html)
+- [Npm Supply Chain Compromise Postmortem](ch04/052-ai.html)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 - [When Growth Slows Is It Sales Fault Or The Products Fault The Answer Has Changed](https://github.com/QianJinGuo/wiki-public/blob/main/entities/when-growth-slows-is-it-sales-fault-or-the-products-fault-the-answer-has-changed.md)
-- [Reasoning Lift](https://github.com/QianJinGuo/wiki-public/blob/main/entities/reasoning-lift.md)
+- [Reasoning Lift](ch01/489-reasoning-lift-what-happens-to-ai-visibility-when-ai-thinks.html)
 
 → [原文存档](https://lightfield.app/product/ai-pipeline-generation)
 
@@ -1958,7 +1958,51 @@ Lightfield 的 FAQ 中有一段值得注意的自我定位：随着对工具边�
 
 ---
 
-## Ch14.014 verify-data：一个端到端的数据验数 Agent Skill
+## Ch14.014 Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions
+
+> 📊 Level ⭐⭐ | 7.9KB | `entities/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md`
+
+> -> [原文存档](https://aws.amazon.com/blogs/machine-learning/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions/)
+
+## 深度分析
+**1. 问答差距是组织复杂度的函数，而非技术问题**
+文章指出，从「提出问题」到「获得可信答案」的 gap 以小时或天计量，且随组织规模增长。这不是模型能力不足，而是分析链条冗长导致的必然结果：一个 VPs 的问题需要经过「找到正确 dashboard → 若无则等待分析师写 query → 验证结果」才能交付。Dataset Q&A 的核心价值在于消除这条链条，而不是让模型更聪明。
+**2. 语义丰富是信息问题，而非模型智能问题**
+文章有一段极关键的表述："This isn't a model intelligence problem, it's an information problem." `revenue` 列名本身无法告知 AI 这是 gross 还是 net、accrual 还是 cash basis；`active_customers` 无法告知阈值是 12 个月还是 24 个月。这意味着无论底层模型多强，上游数据描述的缺失会导致下游查询语义漂移。Dataset Enrichment 的设计正是针对这一层——把业务团队已 agreed 的定义编码进 metadata，而非依赖模型去猜测。
+**3. 安全策略的复用而非重建**
+企业已在 dashboard 层面配置了行级和列级访问策略，Dataset Q&A 自动将这些策略应用于 AI 生成查询，无需二次配置。这是一种「信任传递」机制：已有的安全投入直接变成 AI 时代的信任基础设施，避免了治理层面重复建设。
+**4. S3 Table + Direct Query 实现了 lake-as-analytics-layer 的架构愿景**
+传统数仓架构中，数据从数据湖到 OLAP 层再到 BI 工具，每一跳都会引入延迟、成本和新鲜度损失。文章描述的新能力让 Amazon Quick 直接查询 S3 Table Buckets 中的 Apache Iceberg 表，无需中间引擎。这意味着 data lake 本身成为了 serving layer，SPICE 模式（高并发亚秒）和 Direct Query 模式（ freshness 优先）可按场景切换，而 AI agent 和传统 dashboard 读的是同一份 live data。
+**5. Agentic orchestration 层是 enterprise-scale 的关键基础设施**
+文章描述了 Quick 如何为多步问题（如"churn trending + 驱动因素在 Southeast"）进行意图解析、资产选择、工具序列规划和结果组装。这个 discovery and orchestration 层解决的不是单点问答，而是跨多个分析步骤的复杂推理——这才是企业级 AI 助手的本质差异。
+
+## 实践启示
+**1. 在 Dataset Enrichment 中优先录入「模糊词汇」的定义**
+并非所有列都需要 enrichment，但「同一词在不同表/部门有不同含义」的列（revenue, growth, active, churn）必须优先处理。上传已有的 data catalog 或团队 wiki 作为 metadata source，投入分钟级，收益覆盖后续所有查询。
+**2. 用「Benchmarks questions + 查看 reasoning chain」替代传统 UAT**
+Chat explanations 展示了完整推理链：工具调用、生成的 SQL、应用的 filters、假设和概要。这意味着 BI 工程师和数据分析师可以在发布 AI 助手给利益相关者之前，用基准问题集做系统验证，而不是安排传统的用户验收测试周期。
+**3. 为多步复杂问题设计「标准分析路径」并存入知识库**
+文章描述的 agentic orchestration 依赖语义层对跨资产关系的理解。对于高频复杂问题（如 regions 下的 churn 驱动分析），预置标准分析路径和对应数据集接入方式，可减少每次运行时的不确定性。
+**4. 在评估 lake-first 架构时，优先测试 Direct Query 模式的数据新鲜度**
+对于 streaming pipeline 场景，手工验证「transaction 出现在 chart、metric 或 chat answer 中的时间差」是评估 Direct Query 适用性的直接方法。SPICE 和 Direct Query 的切换不影响上层 dashboard 或 AI 体验，可按分析场景动态选择。
+**5. Dashboard 生成能力应作为「分析师产能放大器」而非「自助BI替代品」**
+AI 生成 dashboard 的定位是消除 construction phase——当分析意图明确时，生成的可编辑输出使分析师在几分钟内完成过去需要数天的工作。关键在于：先生成 → review editable plan → 编辑调整 → 发布，而不是期望首次输出即可直接消费。
+
+# Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions/)
+
+## 相关实体
+- [AgentCore Runtime部署Apache Doris MCP Server](ch04/052-ai.html)
+- [以Kiro快速部署云上Agent：只需几个小时，从业务需求到部署于Amazon Bedrock Agentcore落地 | 亚马逊AWS官方博客](ch04/398-amazon-bedrock-agentcore.html)
+- [基于Strands SDK 构建的企业智能问数解决方案实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/enterprise-intelligent-data-query-solution-practice-based-on-strands-sdk.md)
+- [AI tool poisoning exposes a major flaw in enterprise agent security](ch04/228-ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-s.html)
+- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](ch11/109-control-where-your-ai-agents-can-browse-with-chrome-enterpri.html)
+- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](ch04/043-agentic-ai.html)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/data-infrastructure.md)
+
+---
+
+## Ch14.015 verify-data：一个端到端的数据验数 Agent Skill
 
 > 📊 Level ⭐⭐ | 7.8KB | `entities/verify-data-agent-skill-data-validation.md`
 
@@ -2080,54 +2124,10 @@ verify-data 与 Data Observability 工具（如 Monte Carlo、Great Expectations
 
 ## 相关实体
 
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
-- [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/004-agent.html)
+- [你不知道的 Agent原理架构与工程实践 V2](ch03/004-agent.html)
 
 → [原文存档](https://mp.weixin.qq.com/s/CX7H8LUm9PokC19NDDd_WQ)
-
----
-
-## Ch14.015 Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions
-
-> 📊 Level ⭐⭐ | 7.8KB | `entities/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md`
-
-> -> [原文存档](https://aws.amazon.com/blogs/machine-learning/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions/)
-
-## 深度分析
-**1. 问答差距是组织复杂度的函数，而非技术问题**
-文章指出，从「提出问题」到「获得可信答案」的 gap 以小时或天计量，且随组织规模增长。这不是模型能力不足，而是分析链条冗长导致的必然结果：一个 VPs 的问题需要经过「找到正确 dashboard → 若无则等待分析师写 query → 验证结果」才能交付。Dataset Q&A 的核心价值在于消除这条链条，而不是让模型更聪明。
-**2. 语义丰富是信息问题，而非模型智能问题**
-文章有一段极关键的表述："This isn't a model intelligence problem, it's an information problem." `revenue` 列名本身无法告知 AI 这是 gross 还是 net、accrual 还是 cash basis；`active_customers` 无法告知阈值是 12 个月还是 24 个月。这意味着无论底层模型多强，上游数据描述的缺失会导致下游查询语义漂移。Dataset Enrichment 的设计正是针对这一层——把业务团队已 agreed 的定义编码进 metadata，而非依赖模型去猜测。
-**3. 安全策略的复用而非重建**
-企业已在 dashboard 层面配置了行级和列级访问策略，Dataset Q&A 自动将这些策略应用于 AI 生成查询，无需二次配置。这是一种「信任传递」机制：已有的安全投入直接变成 AI 时代的信任基础设施，避免了治理层面重复建设。
-**4. S3 Table + Direct Query 实现了 lake-as-analytics-layer 的架构愿景**
-传统数仓架构中，数据从数据湖到 OLAP 层再到 BI 工具，每一跳都会引入延迟、成本和新鲜度损失。文章描述的新能力让 Amazon Quick 直接查询 S3 Table Buckets 中的 Apache Iceberg 表，无需中间引擎。这意味着 data lake 本身成为了 serving layer，SPICE 模式（高并发亚秒）和 Direct Query 模式（ freshness 优先）可按场景切换，而 AI agent 和传统 dashboard 读的是同一份 live data。
-**5. Agentic orchestration 层是 enterprise-scale 的关键基础设施**
-文章描述了 Quick 如何为多步问题（如"churn trending + 驱动因素在 Southeast"）进行意图解析、资产选择、工具序列规划和结果组装。这个 discovery and orchestration 层解决的不是单点问答，而是跨多个分析步骤的复杂推理——这才是企业级 AI 助手的本质差异。
-
-## 实践启示
-**1. 在 Dataset Enrichment 中优先录入「模糊词汇」的定义**
-并非所有列都需要 enrichment，但「同一词在不同表/部门有不同含义」的列（revenue, growth, active, churn）必须优先处理。上传已有的 data catalog 或团队 wiki 作为 metadata source，投入分钟级，收益覆盖后续所有查询。
-**2. 用「Benchmarks questions + 查看 reasoning chain」替代传统 UAT**
-Chat explanations 展示了完整推理链：工具调用、生成的 SQL、应用的 filters、假设和概要。这意味着 BI 工程师和数据分析师可以在发布 AI 助手给利益相关者之前，用基准问题集做系统验证，而不是安排传统的用户验收测试周期。
-**3. 为多步复杂问题设计「标准分析路径」并存入知识库**
-文章描述的 agentic orchestration 依赖语义层对跨资产关系的理解。对于高频复杂问题（如 regions 下的 churn 驱动分析），预置标准分析路径和对应数据集接入方式，可减少每次运行时的不确定性。
-**4. 在评估 lake-first 架构时，优先测试 Direct Query 模式的数据新鲜度**
-对于 streaming pipeline 场景，手工验证「transaction 出现在 chart、metric 或 chat answer 中的时间差」是评估 Direct Query 适用性的直接方法。SPICE 和 Direct Query 的切换不影响上层 dashboard 或 AI 体验，可按分析场景动态选择。
-**5. Dashboard 生成能力应作为「分析师产能放大器」而非「自助BI替代品」**
-AI 生成 dashboard 的定位是消除 construction phase——当分析意图明确时，生成的可编辑输出使分析师在几分钟内完成过去需要数天的工作。关键在于：先生成 → review editable plan → 编辑调整 → 发布，而不是期望首次输出即可直接消费。
-
-# Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions
-→ [原文存档](https://aws.amazon.com/blogs/machine-learning/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions/)
-
-## 相关实体
-- [AgentCore Runtime部署Apache Doris MCP Server](https://github.com/QianJinGuo/wiki-public/blob/main/entities/runtime-deploy-apache-doris-mcp-server-quick-suite-ai-analytics.md)
-- [以Kiro快速部署云上Agent：只需几个小时，从业务需求到部署于Amazon Bedrock Agentcore落地 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kiro-quick-deploy-agent-deploy-amazon-bedrock-agentcore.md)
-- [基于Strands SDK 构建的企业智能问数解决方案实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/enterprise-intelligent-data-query-solution-practice-based-on-strands-sdk.md)
-- [AI tool poisoning exposes a major flaw in enterprise agent security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security-v2.md)
-- [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](https://github.com/QianJinGuo/wiki-public/blob/main/entities/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazo.md)
-- [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/building-enterprise-agentic-ai-with-kiro-on-aws.md)
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/data-infrastructure.md)
 
 ---
 
@@ -2194,7 +2194,7 @@ LiveKit Agents 采用 Apache 2.0 协议，10k+ Stars。与托管平台相比的�
 
 ## 技术定位
 
-本文聚焦**级联打断检测**这一细分能力，与 [LiveKit Agents 语音 AI 框架工程解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/livekit-agents-voice-ai-framework.md) 互补——后者侧重完整架构对比（如与 OpenAI Realtime API 的横评），本文深耕流式管线与语义打断的工程细节。语音 AI 领域的竞品包括 [Amazon Nova Sonic 实时语音方案](https://github.com/QianJinGuo/wiki-public/blob/main/entities/real-time-voice-agents-with-stream-vision-agents-and-amazon-nova-2-sonic.md)，后者采用统一语音到语音架构而非级联管线。
+本文聚焦**级联打断检测**这一细分能力，与 [LiveKit Agents 语音 AI 框架工程解析](ch03/004-agent.html) 互补——后者侧重完整架构对比（如与 OpenAI Realtime API 的横评），本文深耕流式管线与语义打断的工程细节。语音 AI 领域的竞品包括 [Amazon Nova Sonic 实时语音方案](ch04/039-real-time-voice-agents-with-stream-vision-agents-and-amazon.html)，后者采用统一语音到语音架构而非级联管线。
 
 ## 深度分析
 
@@ -2258,7 +2258,7 @@ LiveKit Agents 采用 Apache 2.0 协议，10k+ Stars。与托管平台相比的�
 | 工具链 | PyTorch + DPO/RLHF 库 | Silico 平台 + SAE 特征空间 |
 | 适用阶段 | SFT → DPO → RL 全流程 | 主要 DPO/preference 阶段 |
 
-参考 [LLM Post-Training 全景指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-post-training-full-guide.md) 了解传统方法谱系。
+参考 [LLM Post-Training 全景指南](ch01/458-llm.html) 了解传统方法谱系。
 
 ## 深度分析
 
@@ -2275,7 +2275,7 @@ LiveKit Agents 采用 Apache 2.0 协议，10k+ Stars。与托管平台相比的�
 ## 引用与延伸阅读
 - **原文存档** → [原文存档](https://www.goodfire.ai/research/predictive-data-debugging)
 - 论文：[arXiv 2606.12360](https://arxiv.org/abs/2606.12360)
-- 关联 entity：[LLM Post-Training 全景指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-post-training-full-guide.md) 了解传统方法谱系。
+- 关联 entity：[LLM Post-Training 全景指南](ch01/458-llm.html) 了解传统方法谱系。
 
 ## 实践启示
 - **数据工程正在成为 Post-Training 的瓶颈**——模型架构/训练算法已经成熟（DPO/GRPO/RLVR 已是标配），但**数据质量与可解释性**才刚刚被严肃对待。Goodfire 的 R²=0.9 预测精度说明 interpretability 工具已可工程化。
@@ -2291,6 +2291,8 @@ LiveKit Agents 采用 Apache 2.0 协议，10k+ Stars。与托管平台相比的�
 ## Ch14.018 构建 AI 时代的知识底座：直播数据 LLM Wiki 实践
 
 > 📊 Level ⭐⭐ | 6.9KB | `entities/ai-knowledge-base-llm-wiki-practice-alicloud.md`
+
+> 原文归档：原文归档
 
 阿里云开发者分享基于直播数据构建LLM Wiki知识底座的实践经验，探讨如何在AI时代管理和运用企业知识资产。
 
@@ -2355,9 +2357,9 @@ Wiki 与传统文档的本质区别在于四个维度：**结构可解析**（fr
 
 ## 相关实体
 
-- [LLM Wiki知识管理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-wiki-knowledge-management.md)
+- [LLM Wiki知识管理](ch01/458-llm.html)
 - [Knowledge Base构建](https://github.com/QianJinGuo/wiki-public/blob/main/entities/knowledge-base-construction.md)
-- [阿里云AI实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/alicloud-ai-practices.md)
+- [阿里云AI实践](ch04/052-ai.html)
 
 ## 标签
 
@@ -2445,17 +2447,17 @@ Data + AI Summit 的共识数据：Agent 循环（推理、工具调用、prompt
 
 ## Ch14.020 Amazon Redshift 推出集成数据湖查询引擎的 Graviton RG 实例
 
-> 📊 Level ⭐⭐ | 6.0KB | `entities/amazon-redshift-推出带有集成数据湖查询引擎的基于-aws-graviton-的-rg-实例.md`
+> 📊 Level ⭐⭐ | 6.1KB | `entities/amazon-redshift-推出带有集成数据湖查询引擎的基于-aws-graviton-的-rg-实例.md`
 
 ## 核心要点
 - AWS 技术实践
 - Amazon Redshift 推出带有集成数据湖查询引擎的
 ## 相关实体
-- [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-multi-tenant-ai-agent-on-eks-graviton-openclaw-k8s-practice.md)
-- [How Amazon Finance Streamlines Regulatory Inquiries By Using](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-amazon-finance-streamlines-regulatory-inquiries-by-using.md)
-- [Using Amazon Bedrock Agentcore Openclaw Multi 2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-2.md)
-- [Introducing Claude Platform On Aws](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-claude-platform-on-aws.md)
-- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-一周综述amazon-bedrock-agentcore-付款适用于-aws-的-agent-工具套件等2026-年-5-月-11-日.md)
+- [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](ch04/180-openclaw.html)
+- [How Amazon Finance Streamlines Regulatory Inquiries By Using](ch11/009-how-amazon-finance-streamlines-regulatory-inquiries-by-using.html)
+- [Using Amazon Bedrock Agentcore Openclaw Multi 2](ch04/398-amazon-bedrock-agentcore.html)
+- [Introducing Claude Platform On Aws](ch01/367-introducing-claude-platform-on-aws-anthropic-s-native-platf.html)
+- [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](ch04/398-amazon-bedrock-agentcore.html)
 
 → [原文存档](https://aws.amazon.com/cn/blogs/china/amazon-redshift-introduces-aws-graviton-based-rg-instances-with-an-integrated-data-lake-query-engine/)
 - [aws graviton5 m9g/m9gd 实例 ga 公告](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-graviton5-m9g-m9gd-launch-2026.md)
@@ -2573,7 +2575,7 @@ SELECT id FROM A EXCEPT SELECT id FROM B;
 
 ## 概览
 
-nOps（AI 驱动的多云成本优化平台，管理 $4B+ 云支出）将其 FinOps 分析 Agent「Clara」从自建 Kubernetes + LangChain/LangGraph + Web API 工具包装架构迁移到 [Amazon Bedrock AgentCore](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentcore-harness.md) 托管运行时 + Databricks Lakehouse Metric Views 语义层 + Databricks Lakebase 持久化。结果：上线时间从 10-12 个月压缩到 4 个月（-75%），正确率从 ~65% 升至 81.7%（+145%），工具失败率从 7.49% 降至 0.92%。
+nOps（AI 驱动的多云成本优化平台，管理 $4B+ 云支出）将其 FinOps 分析 Agent「Clara」从自建 Kubernetes + LangChain/LangGraph + Web API 工具包装架构迁移到 [Amazon Bedrock AgentCore](ch05/008-harness.html) 托管运行时 + Databricks Lakehouse Metric Views 语义层 + Databricks Lakebase 持久化。结果：上线时间从 10-12 个月压缩到 4 个月（-75%），正确率从 ~65% 升至 81.7%（+145%），工具失败率从 7.49% 降至 0.92%。
 
 本文的核心价值不在 AWS 平台本身，而在三个可迁移的架构决策：**语义层作为 Agent 工具的数据访问契约**、**单 Agent 直连工具优于多 Agent 路由**、**流式响应合并层**。
 
@@ -2588,7 +2590,7 @@ Clara 的关键转变是放弃「API 形态数据 + 大上下文窗口」的旧�
 
 配套的元数据设计让 LLM 能正确消费语义层：每个度量带 **ID / Display Name / Comment（口径说明）/ Synonyms**。其中 Synonyms 被复用为 key:value 对，向 Agent 发送附加元数据。
 
-这一模式与 [Amazon Quick + AgentCore FinOps 助手](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-quick-bedrock-agentcore-finops-chat.md)（BI 平台内置语义层）同族，但 nOps 的贡献是把「度量口径预建模 + LLM 元数据契约」作为 Agent 工具层设计的通用原则——任何数据分析 Agent 都可以用「预建模度量 + 注释/Synonyms 元数据」替代「工具内嵌业务逻辑」。
+这一模式与 [Amazon Quick + AgentCore FinOps 助手](ch11/113-amazon-quick-bedrock-agentcore-finops.html)（BI 平台内置语义层）同族，但 nOps 的贡献是把「度量口径预建模 + LLM 元数据契约」作为 Agent 工具层设计的通用原则——任何数据分析 Agent 都可以用「预建模度量 + 注释/Synonyms 元数据」替代「工具内嵌业务逻辑」。
 
 ## 单 Agent 直连工具优于多 Agent 路由
 
@@ -2596,7 +2598,7 @@ Clara 采用**单 Strands Agent + 直接工具访问**（canvas 操作、查询�
 
 > 单 Agent 架构避免了 agent-to-agent 交接的延迟与错误传播开销，同时保持工具分发的确定性。
 
-这与 [FinOps+DevOps 双 Agent 协作](https://github.com/QianJinGuo/wiki-public/blob/main/entities/finops-devops-dual-agent-cost-optimization.md)（结构化交接协议）形成对照：当任务边界清晰、工具集可枚举时，单 Agent 直连的工具分发确定性 > 多 Agent 分工的模块化收益。该 tradeoff 与 多 Agent 编排 的通用讨论互补。
+这与 [FinOps+DevOps 双 Agent 协作](ch03/004-agent.html)（结构化交接协议）形成对照：当任务边界清晰、工具集可枚举时，单 Agent 直连的工具分发确定性 > 多 Agent 分工的模块化收益。该 tradeoff 与 多 Agent 编排 的通用讨论互补。
 
 ## 流式响应合并层
 
@@ -2611,15 +2613,15 @@ Vercel/Next.js BFF 与 AgentCore 之间有一层自定义 merge layer，一次�
 ## 记忆与多租户隔离
 
 - **记忆三策略**：语义事实（组织上下文：账户结构/成本分配约定）、用户偏好（布局/默认聚合/图表类型）、canvas 摘要（跨会话保留分析线索）。会话按 canvas 而非 HTTP session 划分，刷新/重连后上下文不丢。
-- **隔离两层**：[AgentCore Gateway](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-agentcore-gateway-mcp-extension.md) 侧的 Guardrails 作为独立 pre-check（跨租户数据访问策略 + prompt 攻击检测），输出侧再有一层租户策略清洗（脱敏内部标识符）。
+- **隔离两层**：[AgentCore Gateway](ch04/398-amazon-bedrock-agentcore.html) 侧的 Guardrails 作为独立 pre-check（跨租户数据访问策略 + prompt 攻击检测），输出侧再有一层租户策略清洗（脱敏内部标识符）。
 
 ## 与既有实体的关系
 
 | 实体 | 角度 | 与本文差异 |
 |------|------|-----------|
-| [Amazon Quick FinOps 助手](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-quick-bedrock-agentcore-finops-chat.md) | BI 平台对话 | 本文是语义层作为 Agent 工具契约，非平台功能 |
-| [FinOps+DevOps 双 Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/finops-devops-dual-agent-cost-optimization.md) | 多 Agent 交接协议 | 本文论证单 Agent 直连的确定性优势 |
-| [AgentCore Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentcore-harness.md) | 托管 Agent 运行时 | 本文提供 AgentCore 落地案例与架构决策 |
+| [Amazon Quick FinOps 助手](ch11/113-amazon-quick-bedrock-agentcore-finops.html) | BI 平台对话 | 本文是语义层作为 Agent 工具契约，非平台功能 |
+| [FinOps+DevOps 双 Agent](ch03/004-agent.html) | 多 Agent 交接协议 | 本文论证单 Agent 直连的确定性优势 |
+| [AgentCore Harness](ch05/008-harness.html) | 托管 Agent 运行时 | 本文提供 AgentCore 落地案例与架构决策 |
 
 ## 边界与局限
 
@@ -2736,9 +2738,9 @@ Vercel/Next.js BFF 与 AgentCore 之间有一层自定义 merge layer，一次�
 ## 原文链接
 
 ## 相关实体
-- [明星开源项目，为什么开始离开 github？](https://github.com/QianJinGuo/wiki-public/blob/main/entities/open-source-projects-leaving-github.md)
-- [cisa admin leaked aws govcloud keys on github](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cisa-admin-leaked-aws-govcloud-keys-on-github.md)
-- [1-click github token stealing via a vscode bug — ammaraskar](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vscode-github-token-stealing-1-click-pwn-ammaraskar-2026.md)
+- [明星开源项目，为什么开始离开 github？](ch01/476-github.html)
+- [cisa admin leaked aws govcloud keys on github](ch11/107-cisa-admin-leaked-aws-govcloud-keys-on-github.html)
+- [1-click github token stealing via a vscode bug — ammaraskar](ch01/476-github.html)
 
 → [原文存档](https://github.blog/ai-and-ml/llms/accelerating-researchers-and-developers-building-multilingual-ai-with-a-new-open-dataset/)
 
@@ -2852,8 +2854,8 @@ Whether you’re deduplicating web-scale pre-training corpora, curating agent in
 
 ## 相关实体
 
-- [better decisions at scale: how mathematical optimization del](https://github.com/QianJinGuo/wiki-public/blob/main/entities/better-decisions-at-scale-how-mathematical-optimization-deli.md)
-- [ai-driven layoffs aren’t making business sense | cio](https://github.com/QianJinGuo/wiki-public/blob/main/entities/www.cio-4171054-ai-driven-layoffs-arent-making-business-sense.md)
+- [better decisions at scale: how mathematical optimization del](ch11/131-better-decisions-at-scale-how-mathematical-optimization-del.html)
+- [ai-driven layoffs aren’t making business sense | cio](ch03/009-cio.html)
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/transforming-rare-cancer-research-with-amazon-quick-integrating-biomedical-databases-for-breakthrough-discoveries)
 
 ## 深度分析
@@ -2868,12 +2870,12 @@ Transforming rare cancer research with Amazon Quick: Integrating biomedical data
 
 ### 关联实体
 
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](https://github.com/QianJinGuo/wiki-public/blob/main/entities/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/004-agent.html)
+- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](ch01/660-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on.html)
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/004-agent.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch04/180-openclaw.html)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](ch05/026-harness-engineering.html)
 
 ---
 
@@ -2885,7 +2887,7 @@ Transforming rare cancer research with Amazon Quick: Integrating biomedical data
 
 ## 相关实体
 
-- [dynamically splitting wide partitions in cassandra for time](https://github.com/QianJinGuo/wiki-public/blob/main/entities/dynamically-splitting-wide-partitions-in-cassandra-for-time-.md)
+- [dynamically splitting wide partitions in cassandra for time](ch11/022-dynamically-splitting-wide-partitions-in-cassandra-for-time.html)
 - [valkey 为什么这么快？盘点 valkey 中提升性能的黑科技](https://github.com/QianJinGuo/wiki-public/blob/main/entities/valkey-why-valkey-performance.md)
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/amazon-quick-integration-with-time-series-databases-for-market-intelligence-using-mcp/)
 
@@ -2903,11 +2905,11 @@ Amazon Quick is a comprehensive, generative AI-powered business intelligence ser
 
 ### 关联实体
 
-- [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
-- [Karpathy Vibe Coding Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-agentic-engineering.md)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
-- [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/两万字详解claude-code源码核心机制.md)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](ch03/004-agent.html)
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](ch03/004-agent.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](ch04/180-openclaw.html)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/096-karpathy-vibe-coding-agentic-engineering.html)
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](ch04/197-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
+- [两万字详解Claude Code源码核心机制](ch03/057-claude-code.html)
 
 ---

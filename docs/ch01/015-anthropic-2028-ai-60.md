@@ -7,10 +7,10 @@ Anthropic 联合创始人 Jack Clark 今天发了一篇重磅长文，声称： 
 
 ## 相关实体
 - [The Token Economy Pt2 The Intelligence Company Gets Built](002-the-token-economy-pt2-the-intelligence-company-gets-built.html)
-- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](578-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.html)
-- [2028 Two Scenarios For Global Ai Leadership](../ch04/257-ai.html)
-- [Claudes_Next_Enterprise_Battle_Is_Not_Mo](340-claude.html)
-- [Anthropic联创2028 Ai自我构建概率超60](../ch04/257-ai.html)
+- [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](581-anthropic-to-share-mythos-cyber-flaw-findings-with-global-fi.html)
+- [2028 Two Scenarios For Global Ai Leadership](../ch04/052-ai.html)
+- [Claudes_Next_Enterprise_Battle_Is_Not_Mo](341-claude.html)
+- [Anthropic联创2028 Ai自我构建概率超60](../ch04/052-ai.html)
 
 → [原文存档](https://mp.weixin.qq.com/s/QldTWr5MFRYLagfBmzpWOQ)
 

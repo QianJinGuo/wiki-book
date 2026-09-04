@@ -97,14 +97,14 @@ Claude Code 实现：MEMORY.md（索引）→ memory/（分类文件）→ 磁�
 3. **权限分级必须落到确定性代码**：低风险自动放行、中风险确认、高风险硬拦截（模式 10），用 HIGH_RISK_PATTERNS 这类规则而非 prompt——模型会"理解偏"，rm -rf / 必须无条件拦下。
 4. **把一次性校验挂到生命周期钩子上**：格式化、风险分级这类确定性动作放到 PreToolUse/PostToolUse/Stop 等钩子（模式 12），不调 LLM、失败即阻断，把 LLM 的推理留给真正需要判断的事。
 5. **动手前先问"是不是过度设计"**：改一行配置别走探索-规划-执行三轮，工具少于 5 个别分级、单项目 3 个文件以内一个 CLAUDE.md 够用。脚手架能拆就拆，承重墙一根都不能少。
-6. **用"三个月后是参考还是噪音"过滤记忆**：写进长期记忆的每条决策，都要问它三个月后对 Agent 的判断是帮助还是干扰——记忆的价值在正确时刻被加载，不在总量。参见 [记忆主矛盾](../ch04/133-agent-memory.html) 与 [Working Set vs Long-Term Memory](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/working-set-vs-long-term-memory.md)。
+6. **用"三个月后是参考还是噪音"过滤记忆**：写进长期记忆的每条决策，都要问它三个月后对 Agent 的判断是帮助还是干扰——记忆的价值在正确时刻被加载，不在总量。参见 [记忆主矛盾](../ch04/097-agent-memory.html) 与 [Working Set vs Long-Term Memory](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/working-set-vs-long-term-memory.md)。
 
 ## 相关实体
 
-- [Harness Engineering](057-harness-engineering.html)
-- [Claude Code Agentic Harness 设计模式](../ch03/048-claude-code-agent.html)
-- [Harness Engineering Core Patterns](057-harness-engineering.html)
-- [fudan-peking AHE](../ch04/192-ahe-agentic-harness-engineering.html)
+- [Harness Engineering](026-harness-engineering.html)
+- [Claude Code Agentic Harness 设计模式](../ch03/049-claude-code-agent.html)
+- [Harness Engineering Core Patterns](026-harness-engineering.html)
+- [fudan-peking AHE](../ch04/196-ahe-agentic-harness-engineering.html)
 
 ---
 

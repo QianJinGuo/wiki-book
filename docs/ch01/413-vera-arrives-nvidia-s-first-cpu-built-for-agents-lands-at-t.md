@@ -1,6 +1,6 @@
 # Vera Arrives: NVIDIA’s First CPU Built for Agents Lands at Top AI Labs
 
-> 📊 Level ⭐⭐ | 8.0KB | `entities/vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-top-ai-labs.md`
+> 📊 Level ⭐⭐ | 8.1KB | `entities/vera-arrives-nvidia-s-first-cpu-built-for-agents-lands-at-top-ai-labs.md`
 
 ## 摘要
 
@@ -47,9 +47,9 @@ Ian Buck 逐家上门、在 OpenAI 现场用螺丝刀拆机讲解、在 OCI 与�
 - [Blogs.Nvidia.Com Vera Cpu Delivery](https://github.com/QianJinGuo/wiki-public/blob/main/entities/blogs.nvidia.com-vera-cpu-delivery.md) — 同源 NVIDIA 官方博客条目
 - [Nvidia Nemotron 3 Agents Rag Voice Safety](../ch03/004-agent.html) — NVIDIA Agent 产品线（RAG/语音/安全）
 - [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](../ch03/004-agent.html) — NVIDIA MoE Agentic 模型栈
-- [Nvidia Edge First Llms Av Robotics](170-nvidia-edge-first-llms-av-robotics.html) — NVIDIA 边缘 LLM 与机器人场景
-- [Anthropic Demystifying Evals For Ai Agents](../ch04/312-ai-agent.html) — Anthropic 的 Agent 评估实践
-- [从 Cpu 到 Gpu 全链路可信百度智能云新一代 Ai 机密计算实例的探索与落地](../ch04/257-ai.html) — CPU/GPU 全链路算力视角对照
+- [Nvidia Edge First Llms Av Robotics](169-nvidia-edge-first-llms-av-robotics.html) — NVIDIA 边缘 LLM 与机器人场景
+- [Anthropic Demystifying Evals For Ai Agents](../ch04/284-ai-agent.html) — Anthropic 的 Agent 评估实践
+- [从 Cpu 到 Gpu 全链路可信百度智能云新一代 Ai 机密计算实例的探索与落地](../ch04/052-ai.html) — CPU/GPU 全链路算力视角对照
 
 → [原文存档](https://blogs.nvidia.com/blog/vera-cpu-delivery)
 

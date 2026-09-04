@@ -156,15 +156,15 @@ JiaGouX 建议避开"公司级聊天查数入口"，更小一点反而更稳。�
 ## 相关实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
-- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/057-harness-engineering.html)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/098-karpathy-vibe-coding-agentic-engineering.html)
+- [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](../ch05/026-harness-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/096-karpathy-vibe-coding-agentic-engineering.html)
 - [你不知道的 Agent原理架构与工程实践 V2](../ch03/004-agent.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch04/176-openclaw.html)
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04/176-openclaw.html)
-- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](../ch04/257-ai.html)
-- [Claude Code Dynamic Workflows Jiagoux Architect Perspective](../ch09/069-claude-code-dynamic-workflows.html)
-- [Agent Reliability Engineering Skillify Continuous Improvement](../ch07/054-skill.html)
-- [Agent Skill Writing Evaluation](284-agent-skill.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](../ch04/180-openclaw.html)
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](../ch04/180-openclaw.html)
+- [Anthropic Institute When Ai Builds Itself Jiagoux Interpretation](../ch04/052-ai.html)
+- [Claude Code Dynamic Workflows Jiagoux Architect Perspective](../ch09/073-claude-code-dynamic-workflows.html)
+- [Agent Reliability Engineering Skillify Continuous Improvement](../ch07/045-skill.html)
+- [Agent Skill Writing Evaluation](285-agent-skill.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
 
 → [原文存档](https://mp.weixin.qq.com/s/dLAWaUejq_FVdtyBWyo-RQ)

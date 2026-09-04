@@ -168,15 +168,15 @@ Skill 不是一次性创建的静态资产，而是需要持续维护的演化�
 将经验按"事实/方法/过程"三层分离存储（Memory/Skill/Session），再通过不同的加载机制（自动注入/按需加载/触发检索）组合使用，能有效避免模型在错误场景下使用错误的经验类型。这是自进化机制能够work的基础——如果所有经验混在一起，模型就无法判断一条记忆是应该自动遵循还是仅作参考。
 
 ## 相关实体
-- [Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](../ch05/057-harness-engineering.html)
+- [Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](../ch05/026-harness-engineering.html)
 
-- [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04/115-skillos-learning-skill-curation-for-self-evolving-agents.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/098-karpathy-vibe-coding-agentic-engineering.html)
+- [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04/117-skillos-learning-skill-curation-for-self-evolving-agents.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/096-karpathy-vibe-coding-agentic-engineering.html)
 - [在 RDS PostgreSQL 中实现 RaBitQ 量化](https://github.com/QianJinGuo/wiki-public/blob/main/entities/在-rds-postgresql-中实现-rabitq-量化.md)
-- [Codeindex · 让大模型更好地理解你的代码](288-codeindex.html)
-- [使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？](../ch04/302-agent-skills.html)
+- [Codeindex · 让大模型更好地理解你的代码](289-codeindex.html)
+- [使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？](../ch04/314-agent-skills.html)
 - [Claude Code 之父最新访谈：编程已经结束、harness 将消失、Claude Code 将只有 100 行代码、loop 才是未来](../ch03/057-claude-code.html)
-- [AI Skill 测评指标体系](351-ai-skill.html)
+- [AI Skill 测评指标体系](355-ai-skill.html)
 
 ---
 

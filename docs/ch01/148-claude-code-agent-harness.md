@@ -39,7 +39,7 @@
 
 **这一论断颠覆了"Agent = 强模型"的简化叙事**。模型能力固然关键，但生产级 Agent 系统的工程复杂度绝大部分来自 harness 层：上下文组装、缓存优化、权限控制、工具并发、状态管理、错误恢复、压缩策略、终止判断。
 
-这与 [Harness Engineering Core Patterns](../ch05/057-harness-engineering.html) 中"Harness 是 Agent 系统的工程价值所在"的论断一致——模型是引擎，harness 是底盘、传动、刹车、仪表盘的整套工程组合。
+这与 [Harness Engineering Core Patterns](../ch05/026-harness-engineering.html) 中"Harness 是 Agent 系统的工程价值所在"的论断一致——模型是引擎，harness 是底盘、传动、刹车、仪表盘的整套工程组合。
 
 ### 2. 上下文组装：缓存分层是性能的关键
 
@@ -66,7 +66,7 @@ CLAUDE.md 文件从根目录向下逐层加载：
 
 **@include 指令**让一个 CLAUDE.md 可以拉入其他文件（最多 5 层深度）。**`git worktree` 兼容性**——避免同一份规则被重复加载。
 
-这与 [Claude Code Harness Deep Understanding](337-claude-code-harness-deep-understanding.html) 中关于"分层知识组织"的论述相互印证——配置文件本身构成了 Agent 的"知识层级"。
+这与 [Claude Code Harness Deep Understanding](338-claude-code-harness-deep-understanding.html) 中关于"分层知识组织"的论述相互印证——配置文件本身构成了 Agent 的"知识层级"。
 
 ### 4. 完整上下文包：用户消息只是冰山一角
 
@@ -180,7 +180,7 @@ Plan Mode 的本质是"权限系统里的状态切换"——技术上 Claude 仍
 
 **这一设计哲学揭示了 Agent 系统设计的一个深层原则**：**不要用权限禁锢 Agent，而要用行为引导**。完全禁止 Agent 做某些事会大幅降低其能力；通过提示词和行为约束引导它"先规划再执行"是更优雅的方案。
 
-这与 [Claude Managed Agents 企业自托管](294-claude-managed-agents.html) 中关于"Hybrid Control Plane"的设计哲学一致——**控制是分层的，不是二元的**。
+这与 [Claude Managed Agents 企业自托管](../ch04/381-claude-managed-agents.html) 中关于"Hybrid Control Plane"的设计哲学一致——**控制是分层的，不是二元的**。
 
 ### 10. 终止原因的多样性：8 种退出路径
 
@@ -221,7 +221,7 @@ async function* queryLoop() {
 - **可暂停/继续**：中间可以随时暂停再继续
 - **State 对象传递**：每轮决策影响下轮行为
 
-这与 [Claude Code Harness Deep Dive](../ch05/058-claude-code-harness.html) 中关于"流式交互是 Agent 体验核心"的论述一致——用户感受到的"逐字输出"本质就是 `StreamEvent` 实时推送的结果。
+这与 [Claude Code Harness Deep Dive](../ch05/059-claude-code-harness.html) 中关于"流式交互是 Agent 体验核心"的论述一致——用户感受到的"逐字输出"本质就是 `StreamEvent` 实时推送的结果。
 
 ### 12. 工具调用的"上下文修改函数"
 
@@ -300,17 +300,17 @@ Claude Code 的很多工程决策都有源码注释支撑（"BQ 2026-03-10: 1,27
 ## 相关实体
 
 - [两万字详解 Claude Code 源码核心机制](../ch03/057-claude-code.html)
-- [Claude Code Harness 深度解析](../ch05/058-claude-code-harness.html)
-- [Claude Code Harness 深度理解](337-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness 深度解析](../ch05/059-claude-code-harness.html)
+- [Claude Code Harness 深度理解](338-claude-code-harness-deep-understanding.html)
 - [GSD 上下文管理工具](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
 - [Agent 记忆系统工程实践](../ch03/004-agent.html)
-- [Harness Engineering Core Patterns](../ch05/057-harness-engineering.html)
+- [Harness Engineering Core Patterns](../ch05/026-harness-engineering.html)
 - [Harness 状态边界与失败闭环](../ch05/008-harness.html)
 - [Factory Mission Multi-Agent 系统](../ch03/004-agent.html)
-- [Claude Managed Agents 企业自托管](294-claude-managed-agents.html)
-- [OpenClaw 多 Agent 团队实践](../ch04/027-openclaw-multi-agent-team-practice-v2.html)
-- [OpenClaw 完全指南](../ch04/176-openclaw.html)
-- [OpenClaw 多智能体团队搭建经验](../ch04/176-openclaw.html)
+- [Claude Managed Agents 企业自托管](../ch04/381-claude-managed-agents.html)
+- [OpenClaw 多 Agent 团队实践](../ch04/028-openclaw-multi-agent-team-practice-v2.html)
+- [OpenClaw 完全指南](../ch04/180-openclaw.html)
+- [OpenClaw 多智能体团队搭建经验](../ch04/180-openclaw.html)
 - [Headroom Context Compression](../ch03/004-agent.html)
 - [AI Agent Harness 构建](../ch05/035-agent-harness.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-engineering-guide.md)

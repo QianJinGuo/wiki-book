@@ -94,16 +94,16 @@ Codex goals允许设置token预算来控制agent运行成本。实际项目中�
 - [gsd-get-shit-done-context-management-tool](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
 
 ## ## 相关实体
-- [Hermes Agent /goal 长任务运行时架构](../ch04/161-hermes-agent.html)
+- [Hermes Agent /goal 长任务运行时架构](../ch04/236-hermes-agent-goal.html)
 
 ## ## 相关实体
-- [LoongSuite GenAI 可观测语义规范](../ch04/257-ai.html)
+- [LoongSuite GenAI 可观测语义规范](../ch04/052-ai.html)
 
 ## ## 相关实体
 - [低代码 Agent、框架 Agent、自研 Agent 决策框架](../ch03/004-agent.html)
 
 ## ## 相关实体
-- [三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战](../ch05/076-ai-coding.html)
+- [三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战](../ch05/078-ai-coding.html)
 
 ---
 

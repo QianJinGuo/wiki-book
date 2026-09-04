@@ -135,9 +135,9 @@ Hermes 当前已经实现了**原始数据派的核心能力**：
 - **vs `hermes-agent-memory-system-openclaw-comparison`**：原 entity 侧重 **Hermes vs OpenClaw 记忆观对比**，本文侧重**全行业 6 流派 + Hermes 启示**
 
 ## 相关实体
-- [Hermes Agent 12 Layer Full Configuration Guide](../ch04/161-hermes-agent.html)
-- [Hermes Agent Memory System Three Layer Architecture](../ch04/161-hermes-agent.html)
-- [Hermes Agent Self Evolving](../ch04/161-hermes-agent.html)
+- [Hermes Agent 12 Layer Full Configuration Guide](../ch03/066-hermes-agent.html)
+- [Hermes Agent Memory System Three Layer Architecture](../ch03/066-hermes-agent.html)
+- [Hermes Agent Self Evolving](../ch03/066-hermes-agent.html)
 - [Hermes Skill System](016-hermes-skill.html)
 - [Hermes 9 Module Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-9-module-architecture.md)
 

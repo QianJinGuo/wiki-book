@@ -55,15 +55,15 @@ Loop Engineering 不是 Harness 的替代品，而是 Harness 之上的编排层
 
 - [Agent Harness Architecture](035-agent-harness.html)
 - [Claude Code 深度分析](../ch03/057-claude-code.html)
-- [Harness Engineering](057-harness-engineering.html)
+- [Harness Engineering](026-harness-engineering.html)
 - [Agent Self-Improvement](../ch03/004-agent.html)
 
 → [原文存档](https://mp.weixin.qq.com/s/vmGx9IELbWgKZqHm-M3G5w)
 
 ---
 
-- [loop engineering: 把反馈循环放进工程现场](../ch04/351-loop-engineering.html)
-- [循环工程 (loop engineering) — 清华 2026 框架](../ch04/351-loop-engineering.html)
+- [loop engineering: 把反馈循环放进工程现场](../ch04/366-loop-engineering.html)
+- [循环工程 (loop engineering) — 清华 2026 框架](../ch04/366-loop-engineering.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-engineering-guide.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/loop-engineering.md)
@@ -302,7 +302,7 @@ TechFarrari 公众号 2026-06-15 10:30 发布的独立解读,作者是 TechFarra
 - **跨域应用案例**(第 5 来源独家): 与 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 在 SaaS / DevOps / 客服 / 编程 的多领域应用模式相同,Loop Engineering 也已扩展到**内容选题**。这是 Loop 工具链成熟的标志——"凌晨 4 点 bot → 8 点选题会 agenda"是 24h Agent 工作流在内容产业的真实落地
 - **范式迁移叙事 4 阶段时间线**(第 5 来源独家): 与前 4 来源的"Loop > Harness > Prompt"层级关系**互为表里**——前 4 来源给"层级",第 5 来源给"时间线",合起来是"Loop 演化的完整画像"
 - **生命周期短预言**(第 5 来源独家): 与 [Anthropic 缓存 Token 经济](https://skids.dev/blog/anthropic-cache-tokenomics/) 等 raw 中对"AI 圈造词速度"的批评态度**一致**——"每过几个月就有个新词,每个新词都宣称自己要杀死上一个"——但**保持冷静的"造词速度观察期"**是工程师理性态度
-- **商业动机批判**(第 5 来源独家): 与 [纳德拉「Token 资本」论](../ch12/002-token.html) 的"前沿模型 ≠ 价值"警告**同源**——都反对"造词 = 价值"的偷换;与 [Fable 5 Runtime Contract](../ch01/338-claude-fable-5.html) 的"系统能不能跑完任务"判断**同源**——都强调工程责任换形态
+- **商业动机批判**(第 5 来源独家): 与 [纳德拉「Token 资本」论](../ch12/002-token.html) 的"前沿模型 ≠ 价值"警告**同源**——都反对"造词 = 价值"的偷换;与 [Fable 5 Runtime Contract](../ch01/339-claude-fable-5.html) 的"系统能不能跑完任务"判断**同源**——都强调工程责任换形态
 
 ### 实践启示
 
@@ -350,9 +350,9 @@ TechFarrari 公众号 2026-06-15 10:30 发布的独立解读,作者是 TechFarra
 
 ### 与其他实体的关系
 
-- **CI 分流 Loop 模板**与 [高德 Harness/SDD 体系](076-ai-coding.html)的"ATDD 测试闭环"互补：高德讲 SDD 主链路 CI 反馈，本文给"AI 自主修复 CI"的 loop 模板
+- **CI 分流 Loop 模板**与 [高德 Harness/SDD 体系](078-ai-coding.html)的"ATDD 测试闭环"互补：高德讲 SDD 主链路 CI 反馈，本文给"AI 自主修复 CI"的 loop 模板
 - **Evaluator 部件**与 [Harness 架构](035-agent-harness.html)的"验证层"同源——Loop 把 Harness 验证层拉成独立部件
-- **State 部件**与 [Hermes Loop 架构](../ch04/197-hermes-agent-loop.html)的状态管理同源——本文的 State = Hermes 的 LoopState/HandoffRecord
+- **State 部件**与 [Hermes Loop 架构](../ch04/201-hermes-agent-loop.html)的状态管理同源——本文的 State = Hermes 的 LoopState/HandoffRecord
 - **reviewer agent 不允许直接修复**与 [Agent 编排范式](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-orchestration-patterns.md)的"生成器-验证器分离"模式一致
 - **18 字段设计表**与 [agent-harness 12 components 7 decisions](035-agent-harness.html)的"Harness 完整部件清单"互补——Harness 是"环境内规则"，Loop 是"环境外循环节奏"
 
@@ -973,7 +973,7 @@ Karpathy 的核心解法: 把**"什么时候停、凭什么算成功"这件事,�
 ### 与已有来源的关系
 
 - **SRE 黄金信号映射**（本来源独家）补全了第 6 来源"4 预算上限"的可观测维度：第 6 来源给预算上限（量化的停），本来源给黄金信号（量化的观）——两者形成"可观→可控"闭环
-- **熔断器类比**（本来源独家）与 [Harness Engineering」](057-harness-engineering.html) 的"多层重试"直接衔接：Harness 的多层重试从"工程落地"侧实现了熔断，本来源从"架构设计"侧给出了理论映射
+- **熔断器类比**（本来源独家）与 [Harness Engineering」](026-harness-engineering.html) 的"多层重试"直接衔接：Harness 的多层重试从"工程落地"侧实现了熔断，本来源从"架构设计"侧给出了理论映射
 - **三层架构的"倒序施工法"**（本来源独家）与第 4 来源"7 天试点模板"形成开工顺序共识：第 4 来源给时间表，本来源给**必建顺序**——运行账本 > 验证接口 > 触发入口
 - **Daily CI 分流模板**（本来源第 7 项）与第 6 来源"CI 分流 Loop 模板"互补——第 6 来源是"AI 修复 CI"，本来源是"AI 分类 CI 失败+写 triage 文档"，对应第 6 来源"提醒型 Loop"的分类——两个模板合起来覆盖了 CI 流水线的"诊断→修复"完整链路
 

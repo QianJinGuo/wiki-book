@@ -1,6 +1,6 @@
 # OpenClaw 在电商平台的应用场景探索 | 亚马逊AWS官方博客
 
-> 📊 Level ⭐⭐ | 7.8KB | `entities/exploring-openclaw-use-cases-in-ecommerce-platforms.md`
+> 📊 Level ⭐⭐ | 7.9KB | `entities/exploring-openclaw-use-cases-in-ecommerce-platforms.md`
 
 ## 概述
 OpenClaw 在电商平台的应用场景探索 by awschina on 09 3月 2026 in Artificial Intelligence Permalink Share 摘要：当 AI 助手不再只是”聊天机器人”，而是一个可以用 Markdown 文档扩展skill能力、嵌入多种工作渠道、主动推送运营洞察的智能网关——我们用 OpenClaw 在电商卖家场景做了一次从 0 到 1 的实验，讨论电商平台以大规模SaaS部署OpenClaw提供卖家助手的场景下，能够提供的开发便利、使用体验优势、部署模式和成本评估，以及使用体验 目录 01 1. 当前电商卖家助手的困境 02 2. OpenClaw：一种新的卖家助手构建范式 03 3. OpenClaw 作为电商卖家助手的价值 04 4. 从单机版个人助手到SaaS规模部署的挑战与应对 05 5. 从单机到平台：多租户实践 06 6
@@ -14,9 +14,9 @@ OpenClaw、Amazon Bedrock、Agentic AI、MCP
 ## 相关实体
 > ai agent platforms topic map（已删除）
 
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇 | 亚马逊AWS官方博客](../ch04/383-amazon-bedrock-agentcore.html)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](../ch04/383-amazon-bedrock-agentcore.html)
-- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第三篇 | 亚马逊AWS官方博客](../ch04/383-amazon-bedrock-agentcore.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇 | 亚马逊AWS官方博客](../ch04/398-amazon-bedrock-agentcore.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](../ch04/398-amazon-bedrock-agentcore.html)
+- [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第三篇 | 亚马逊AWS官方博客](../ch04/398-amazon-bedrock-agentcore.html)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/openclaw-architecture.md)
 ## 深度分析

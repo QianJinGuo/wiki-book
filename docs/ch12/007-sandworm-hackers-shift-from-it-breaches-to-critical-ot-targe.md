@@ -1,6 +1,6 @@
 # Sandworm Hackers Shift From IT Breaches to Critical OT Targets
 
-> 📊 Level ⭐ | 7.6KB | `entities/gbhackers-sandworm-shift-from-it-breaches.md`
+> 📊 Level ⭐ | 7.7KB | `entities/gbhackers-sandworm-shift-from-it-breaches.md`
 
 ## 核心要点
 - 俄罗斯国家级 APT 组织 Sandworm（又称 APT44、Seashell Blizzard、Voodoo Bear）正在从传统 IT 网络入侵转向攻击运营技术（OT）环境
@@ -46,12 +46,12 @@ Sandworm 持续使用 EternalBlue、DoublePulsar、WannaCry 等老旧漏洞链�
 DXGW + TGW 的混合云架构在本文多个场景中出现。关键启示：OT 网络与 IT 网络之间的边界控制必须视为高优先级；TGW 路由表的静态路由覆盖动态路由的特性需要在架构层面做防护；建议对 IT/OT 互联通道实施零信任策略，持续验证而非一次性认证 （T3 场景中 TGW 静态路由覆盖 DXGW 传播路由的原理与 Sandworm 从 IT 横向进入 OT 的路径控制逻辑相通）。
 ## 相关实体
 - [Sandworm Hackers Shift It Breaches Ot Gbhackers](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sandworm-hackers-shift-it-breaches-ot-gbhackers.md)
-- [From Doer To Director The Ai Mindset Shift](../ch01/029-from-doer-to-director-the-ai-mindset-shift.html)
+- [From Doer To Director The Ai Mindset Shift](../ch01/028-from-doer-to-director-the-ai-mindset-shift.html)
 - [Cisa Urges Critical Infrastructure Firms To Fortify Before I](001-cisa-urges-critical-infrastructure-firms-to-fortify-before.html)
-- [Engineering Roles Shift From Developing Code To Ma](../ch05/061-engineering-roles-shift-from-developing-code-to-managing-ai.html)
-- [Engineering Roles Shift From Developing Code To Managing Ai](../ch05/061-engineering-roles-shift-from-developing-code-to-managing-ai.html)
+- [Engineering Roles Shift From Developing Code To Ma](../ch05/063-engineering-roles-shift-from-developing-code-to-managing-ai.html)
+- [Engineering Roles Shift From Developing Code To Managing Ai](../ch05/063-engineering-roles-shift-from-developing-code-to-managing-ai.html)
 
-→ [原始来源](https://gbhackers.com/sandworm-shift-from-it-breaches/)
+→ [原文存档](https://gbhackers.com/sandworm-shift-from-it-breaches/)
 
 ---
 

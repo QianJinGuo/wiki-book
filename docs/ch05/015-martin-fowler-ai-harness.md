@@ -163,10 +163,9 @@ Fowler 的框架实际上在说：人的角色从执行者变成了系统设计�
 当 Agent 可以读取仓库里的所有知识时，知识的组织方式变成了竞争优势。一个组织良好、文档完整、规则清晰的仓库，Agent 的使用效率会显著高于一个混乱的仓库。这意味着团队知识管理不再只是人的资源，而是 AI 的基础设施。投资建设这个基础设施，是一个长期竞争力杠杆。^[martin-fowler-的-ai-研发提醒非确定性进了研发链路harness-才真正开始承重.md]
 
 --- 
-> [!contradiction] 参见
+> [!contradiction] 参见 [Karpathy 最新访谈](../ch03/004-agent.html) 持相反观点：Karpathy 认为 Vibe Coding 在特定场景下是合理的第一步，Fowler 的框架可能过于强调工程约束而低估了快速探索的价值。实际项目中需要根据场景权衡，不宜用单一框架套用所有情况。
 
 → [原文存档](https://mp.weixin.qq.com/s/Ya0M9C-TBY_d3lzcmipRDA)
-> Karpathy 访谈 持相反观点：Karpathy 认为 Vibe Coding 在特定场景下是合理的第一步，Fowler 的框架可能过于强调工程约束而低估了快速探索的价值。实际项目中需要根据场景权衡，不宜用单一框架套用所有情况。
 
 ---
 

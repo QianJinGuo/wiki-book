@@ -4,7 +4,7 @@
 
 # RFC 9958: Post-Quantum Cryptography for Engineers
 
-→ [原始来源](https://datatracker.ietf.org/doc/html/rfc9958)
+→ [原文存档](https://datatracker.ietf.org/doc/html/rfc9958)
 
 ## 摘要
 
@@ -102,7 +102,7 @@ PQC 过渡对受限设备（IoT、智能卡、嵌入式系统）的影响尤为�
 - 密码学敏捷性（Cryptographic Agility）是 PQC 过渡的底层设计原则
 - [Cisco SD-WAN 漏洞](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cve-2026-20182-cisco-sd-wan-vhub-bypass.md) — 安全基础设施需要持续更新的例证
 
-→ [原始来源](https://datatracker.ietf.org/doc/html/rfc9958)
+→ [原文存档](https://datatracker.ietf.org/doc/html/rfc9958)
 
 ---
 

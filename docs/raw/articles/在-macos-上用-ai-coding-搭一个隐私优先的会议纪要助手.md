@@ -3,7 +3,7 @@ type: source-card
 title: "在 macOS 上用 AI Coding 搭一个隐私优先的会议纪要助手"
 source: "rss"
 author: "未标注作者；来源机构见 source"
-source_url: "https://aws.amazon.com/cn/blogs/china/macos-ai-coding-assistant/"
+source_url: "https://s.w.org/images/core/emoji/14.0.0/72x72/27a1.png"
 published: "未标注"
 collected: "未标注"
 license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"

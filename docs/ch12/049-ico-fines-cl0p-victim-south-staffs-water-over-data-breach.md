@@ -56,11 +56,11 @@ ICO 将罚金从原始拟议金额减免 40%，理由是自愿和解：South Sta
 
 - [ICO fines South Staffordshire £963K over 2022 breach](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ico-fines-south-staffordshire-2022-breach.md)
 - [Sandworm Hackers Shift From IT Breaches to Critical OT Targets](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sandworm-hackers-shift-it-breaches-ot-gbhackers.md)
-- [GitHub Breached — Employee Device Hack Led to Exfiltration](../ch01/474-github.html)
-- [Hackers accessed BWH Hotels reservation system for months](../ch04/257-ai.html)
+- [GitHub Breached — Employee Device Hack Led to Exfiltration](../ch01/476-github.html)
+- [Hackers accessed BWH Hotels reservation system for months](../ch04/052-ai.html)
 - [Canvas Breach Disrupts Schools & Colleges Nationwide](https://github.com/QianJinGuo/wiki-public/blob/main/entities/canvas-breach-disrupts-schools-colleges-nationwide.md)
 
-→ [原始来源](https://www.computerweekly.com/news/366642957/ICO-fines-Cl0p-victim-South-Staffs-Water-over-data-breach)
+→ [原文存档](https://www.computerweekly.com/news/366642957/ICO-fines-Cl0p-victim-South-Staffs-Water-over-data-breach)
 
 ---
 

@@ -1,6 +1,6 @@
 # Sandworm Hackers Shift From IT Breaches to Critical OT Targets
 
-> 📊 Level ⭐⭐ | 7.8KB | `entities/sandworm-hackers-shift-it-breaches-ot-gbhackers.md`
+> 📊 Level ⭐⭐ | 7.9KB | `entities/sandworm-hackers-shift-it-breaches-ot-gbhackers.md`
 
 # Sandworm：从 IT 网络到关键 OT 目标的攻击转向
 
@@ -44,7 +44,7 @@ Sandworm 的能力演进呈现出清晰的"IT 渗透 → 物理破坏"升级路�
 - [CISA urges critical infrastructure firms to ‘fortify’ before it’s too late | Cybersecurity Dive](001-cisa-urges-critical-infrastructure-firms-to-fortify-before.html) — 监管层面对关基威胁的预警响应
 - [New cybersecurity industry coalition aims to lead US critical infrastructure protection](https://github.com/QianJinGuo/wiki-public/blob/main/entities/new-cybersecurity-coalition-us-policy.md) — 美国关基保护产业联盟动向
 - [A Route to Root in a 4G Industrial Router](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tantosec-com-blog-2026-04-route-to-root-in-4g-industrial-router.md) — OT 边缘设备真实漏洞案例
-- [NIST SP 800-213r1 — IoT Product Cybersecurity Guidelines](058-nist-sp-800-213r1-iot-product-cybersecurity-guidelines.html) — IoT/OT 产品安全基线标准
+- [NIST SP 800-213r1 — IoT Product Cybersecurity Guidelines](057-nist-sp-800-213r1-iot-product-cybersecurity-guidelines.html) — IoT/OT 产品安全基线标准
 - [Linux Foundation 携手业界推出 Akrites 保护关键开源软件](../ch01/041-linux-foundation-and-industry-leaders-launch-akrites-to-defe.html) — 关键基础设施供应链防御倡议
 
 → [原文存档](https://gbhackers.com/sandworm-shift-from-it-breaches/)

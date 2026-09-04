@@ -4,6 +4,7 @@
 
 # WWW时间检验奖颁给唐建博士：图神经网络的十年远征与AI制药的底层逻辑
 
+→ [原文存档](https://mp.weixin.qq.com/s/DIAgalyLiTmazn5SYkRwrw)
 
 # WWW时间检验奖颁给唐建博士：图神经网络的十年远征与AI制药的底层逻辑
 

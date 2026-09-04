@@ -107,7 +107,7 @@ Inverts the narrative: "open-weight models can't do security" is **empirically f
 - `agent-harness-engineering-survey concept` — survey of harness patterns (this study provides empirical grounding)
 - `post-training-vs-architecture-tradeoff concept` — broader framing of when post-training wins
 - `open-weight-llm-security-applications concept` — what open-weight + good harness can do
-- `[原始来源](https://vincenzoiozzo.com/blog/oss-models-vuln-research)`
+- `[原文存档](https://vincenzoiozzo.com/blog/oss-models-vuln-research)`
 
 ## 三个独有贡献
 
@@ -171,9 +171,10 @@ Tigress-obfuscated binary 要求 harness 能处理控制流图简化、间接跳
 
 ## 相关实体
 - [Microsoft Open Sources Rampart Clarity](https://github.com/QianJinGuo/wiki-public/blob/main/entities/microsoft-open-sources-rampart-clarity.md)
-- [The It And Security Field Guide To Ai Adoption Tines](../ch12/078-the-it-and-security-field-guide-to-ai-adoption-tines.html)
-- [Mellum 2 Jetbrains Open 12B Moe Code Model](../ch04/257-ai.html)
+- [The It And Security Field Guide To Ai Adoption Tines](../ch12/077-the-it-and-security-field-guide-to-ai-adoption-tines.html)
+- [Mellum 2 Jetbrains Open 12B Moe Code Model](../ch04/052-ai.html)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloudflare-glasswing-mythos-security.md)
-- [How Open Model Ecosystems Compound](598-how-open-model-ecosystems-compound.html)
+- [How Open Model Ecosystems Compound](605-how-open-model-ecosystems-compound.html)
 
 ---
+

@@ -3,7 +3,7 @@ type: source-card
 title: "Agent Harness Engineering: A Survey"
 source: "picrew.github.io"
 author: "未标注作者；来源机构见 source"
-source_url: "https://openreview.net/pdf?id=eONq7FdiHa"
+source_url: "https://picrew.github.io/LLM-Harness/paper.pdf"
 published: "未标注"
 collected: "2026-06-26"
 license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"

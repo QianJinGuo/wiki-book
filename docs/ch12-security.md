@@ -2,7 +2,7 @@
 
 > Agent 权限越大，安全责任越重：凭据、审计、合规
 
-> 本章收录 **102 篇**实体，按深度递增排列。
+> 本章收录 **103 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 8 |
-| ⭐⭐ 工程师 | 需编程基础 | 92 |
+| ⭐⭐ 工程师 | 需编程基础 | 93 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 1 |
 
@@ -54,8 +54,8 @@ AI Agent 正在获得越来越多的权限——执行代码、访问数据库�
 - [017. Static Devirtualization of Themida](ch12/017-static-devirtualization-of-themida)
 - [018. Static Devirtualization 2024](ch12/018-static-devirtualization-2024)
 - [019. What My Privacy and Security Stack Actually Looks Like](ch12/019-what-my-privacy-and-security-stack-actually-looks-like)
-- [020. Alliance for Critical Infrastructure (ACI): US Critical Infrastructure Cybersecurity Coalition](ch12/020-alliance-for-critical-infrastructure-aci-us-critical-infr)
-- [021. How an image could compromise your](ch12/021-how-an-image-could-compromise-your)
+- [020. How an image could compromise your](ch12/020-how-an-image-could-compromise-your)
+- [021. Alliance for Critical Infrastructure (ACI): US Critical Infrastructure Cybersecurity Coalition](ch12/021-alliance-for-critical-infrastructure-aci-us-critical-infr)
 - [022. Static Devirtualization of Themida](ch12/022-static-devirtualization-of-themida)
 - [023. Inference Theft as AI Endpoint Attack Surface — Vercel Token Theft Defense 2026](ch12/023-inference-theft-as-ai-endpoint-attack-surface-vercel-token)
 - [024. Apple corecrypto formal verification blueprint — post-quantum ML-KEM/ML-DSA in iMessage](ch12/024-apple-corecrypto-formal-verification-blueprint-post-quantu)
@@ -91,13 +91,13 @@ AI Agent 正在获得越来越多的权限——执行代码、访问数据库�
 - [054. Sandworm Hackers Shift From IT Breaches to Critical OT Targets](ch12/054-sandworm-hackers-shift-from-it-breaches-to-critical-ot-targe)
 - [055. How Unified EDR and ITDR Stop Attacks Before They Spread](ch12/055-how-unified-edr-and-itdr-stop-attacks-before-they-spread)
 - [056. Static Devirtualization of Themida](ch12/056-static-devirtualization-of-themida)
-- [057. GlassWASM: WebAssembly Malware Found in Trojanized Open VSX Extensions](ch12/057-glasswasm-webassembly-malware-found-in-trojanized-open-vsx)
-- [058. NIST SP 800-213r1 — IoT Product Cybersecurity Guidelines](ch12/058-nist-sp-800-213r1-iot-product-cybersecurity-guidelines)
-- [059. CVE-2026-20182: Unauthenticated Cisco SD-WAN Control Plane Compromise via vHub Authentication Bypass](ch12/059-cve-2026-20182-unauthenticated-cisco-sd-wan-control-plane-c)
-- [060. Stealing Passwords via HTML Injection Under a Strict CSP](ch12/060-stealing-passwords-via-html-injection-under-a-strict-csp)
-- [061. TeamPCP Claims Sale of Mistral AI Repositories Amid Mini Shai-Hulud Attack](ch12/061-teampcp-claims-sale-of-mistral-ai-repositories-amid-mini-sha)
-- [062. AI Voice Cloning: The Technology Behind It, Who's Building It, and Where It's Headed](ch12/062-ai-voice-cloning-the-technology-behind-it-who-s-building-i)
-- [063. OpenAI launches Daybreak to combat cyber threats](ch12/063-openai-launches-daybreak-to-combat-cyber-threats)
+- [057. NIST SP 800-213r1 — IoT Product Cybersecurity Guidelines](ch12/057-nist-sp-800-213r1-iot-product-cybersecurity-guidelines)
+- [058. TeamPCP Claims Sale of Mistral AI Repositories Amid Mini Shai-Hulud Attack](ch12/058-teampcp-claims-sale-of-mistral-ai-repositories-amid-mini-sha)
+- [059. GlassWASM: WebAssembly Malware Found in Trojanized Open VSX Extensions](ch12/059-glasswasm-webassembly-malware-found-in-trojanized-open-vsx)
+- [060. CVE-2026-20182: Unauthenticated Cisco SD-WAN Control Plane Compromise via vHub Authentication Bypass](ch12/060-cve-2026-20182-unauthenticated-cisco-sd-wan-control-plane-c)
+- [061. OpenAI launches Daybreak to combat cyber threats](ch12/061-openai-launches-daybreak-to-combat-cyber-threats)
+- [062. Stealing Passwords via HTML Injection Under a Strict CSP](ch12/062-stealing-passwords-via-html-injection-under-a-strict-csp)
+- [063. AI Voice Cloning: The Technology Behind It, Who's Building It, and Where It's Headed](ch12/063-ai-voice-cloning-the-technology-behind-it-who-s-building-i)
 - [064. Grafana GitHub Token Breach Led to Codebase Download and Extortion Attempt](ch12/064-grafana-github-token-breach-led-to-codebase-download-and-ext)
 - [065. Temporarily disabling new user registrations](ch12/065-temporarily-disabling-new-user-registrations)
 - [066. Google and Amnesty International teamed up to make Android spyware detectable](ch12/066-google-and-amnesty-international-teamed-up-to-make-android-s)
@@ -111,8 +111,8 @@ AI Agent 正在获得越来越多的权限——执行代码、访问数据库�
 - [074. Romanian Man Faces Up to 30 Years in US Prison Over Vishing Scams](ch12/074-romanian-man-faces-up-to-30-years-in-us-prison-over-vishing)
 - [075. GitHub Breached — Employee Device Hack Led to Exfiltration of 3,800+ Internal Repos](ch12/075-github-breached-employee-device-hack-led-to-exfiltration-o)
 - [076. Hackers accessed BWH Hotels reservation system for months](ch12/076-hackers-accessed-bwh-hotels-reservation-system-for-months)
-- [077. Getting a CVE Without Shipping Slop](ch12/077-getting-a-cve-without-shipping-slop)
-- [078. The IT and security field guide to AI adoption | Tines](ch12/078-the-it-and-security-field-guide-to-ai-adoption-tines)
+- [077. The IT and security field guide to AI adoption | Tines](ch12/077-the-it-and-security-field-guide-to-ai-adoption-tines)
+- [078. Getting a CVE Without Shipping Slop](ch12/078-getting-a-cve-without-shipping-slop)
 - [079. Unlocking the Cloudflare app ecosystem with OAuth for all](ch12/079-unlocking-the-cloudflare-app-ecosystem-with-oauth-for-all)
 - [080. Mythos for Offensive Security: XBOW's Evaluation](ch12/080-mythos-for-offensive-security-xbow-s-evaluation)
 - [081. Fedora Hummingbird brings the container security model to a Linux host OS](ch12/081-fedora-hummingbird-brings-the-container-security-model-to-a)
@@ -121,19 +121,20 @@ AI Agent 正在获得越来越多的权限——执行代码、访问数据库�
 - [084. Scammers Send Physical Phishing Letters to Steal Ledger Wallet Seed Phrases](ch12/084-scammers-send-physical-phishing-letters-to-steal-ledger-wall)
 - [085. Guide to Security Operations at Machine Speed](ch12/085-guide-to-security-operations-at-machine-speed)
 - [086. Discord 全平台端到端加密](ch12/086-discord)
-- [087. Nikesh Arora 20VC 访谈：Token 定价、FDE、SaaS→AI 转型与记忆护城河](ch12/087-nikesh-arora-20vc-token-fde-saas-ai)
-- [088. Funnel Builder Flaw Under Active Exploitation Enables WooCommerce Checkout Skimming](ch12/088-funnel-builder-flaw-under-active-exploitation-enables-woocom)
+- [087. Funnel Builder Flaw Under Active Exploitation Enables WooCommerce Checkout Skimming](ch12/087-funnel-builder-flaw-under-active-exploitation-enables-woocom)
+- [088. Nikesh Arora 20VC 访谈：Token 定价、FDE、SaaS→AI 转型与记忆护城河](ch12/088-nikesh-arora-20vc-token-fde-saas-ai)
 - [089. Forward launches Predict to verify network changes before they reach production - SiliconANGLE](ch12/089-forward-launches-predict-to-verify-network-changes-before-th)
-- [090. CyberSecQwen-4B](ch12/090-cybersecqwen-4b)
-- [091. GitHub Breached — Employee Device Hack Led to Exfiltration](ch12/091-github-breached-employee-device-hack-led-to-exfiltration)
+- [090. GitHub Breached — Employee Device Hack Led to Exfiltration](ch12/090-github-breached-employee-device-hack-led-to-exfiltration)
+- [091. CyberSecQwen-4B](ch12/091-cybersecqwen-4b)
 - [092. AI phishing attacks are on the rise — Are you prepared? | Bitwarden](ch12/092-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi)
 - [093. peerd: 浏览器原生的 AI Agent Harness](ch12/093-peerd-ai-agent-harness)
 - [094. Anthropic's bug-hunting Mythos was greatest marketing stunt ever, says cURL creator](ch12/094-anthropic-s-bug-hunting-mythos-was-greatest-marketing-stunt)
 - [095. How Semgrep Cut Taint Analysis Time by 75%](ch12/095-how-semgrep-cut-taint-analysis-time-by-75)
 - [096. On Post-Quantum Security Adoption](ch12/096-on-post-quantum-security-adoption)
 - [097. Jane Street — 形式化方法与编程的未来](ch12/097-jane-street)
-- [098. 中国用户安全高性能访问海外 Bedrock](ch12/098-bedrock)
-- [099. Drupal to Release Urgent Core Security Updates on May 20, Sites Told to Prepare](ch12/099-drupal-to-release-urgent-core-security-updates-on-may-20-si)
-- [100. Cyberscammers are bypassing banks’ security with illicit tools sold on Telegram](ch12/100-cyberscammers-are-bypassing-banks-security-with-illicit-too)
-- [101. U of T researchers demonstrate AI worm: self-spreading malware using open-weight models](ch12/101-u-of-t-researchers-demonstrate-ai-worm-self-spreading-malwa)
-- [102. Japan’s PM orders cybersecurity review to defend against Anthropic Mythos](ch12/102-japan-s-pm-orders-cybersecurity-review-to-defend-against-ant)
+- [098. Semgrep Intercom Php Supply Chain](ch12/098-semgrep-intercom-php-supply-chain)
+- [099. 中国用户安全高性能访问海外 Bedrock](ch12/099-bedrock)
+- [100. Drupal to Release Urgent Core Security Updates on May 20, Sites Told to Prepare](ch12/100-drupal-to-release-urgent-core-security-updates-on-may-20-si)
+- [101. Cyberscammers are bypassing banks’ security with illicit tools sold on Telegram](ch12/101-cyberscammers-are-bypassing-banks-security-with-illicit-too)
+- [102. U of T researchers demonstrate AI worm: self-spreading malware using open-weight models](ch12/102-u-of-t-researchers-demonstrate-ai-worm-self-spreading-malwa)
+- [103. Japan’s PM orders cybersecurity review to defend against Anthropic Mythos](ch12/103-japan-s-pm-orders-cybersecurity-review-to-defend-against-ant)

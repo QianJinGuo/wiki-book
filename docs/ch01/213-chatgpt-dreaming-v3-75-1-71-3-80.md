@@ -111,18 +111,18 @@ OpenAI 2026-06-05 凌晨正式推出 **Dreaming V3**——ChatGPT 真正意义�
 
 **本实体关注"OpenAI Dreaming V3 新架构 + 量化数据"**（架构级重构 / 时效 75.1% / 偏好 71.3% / 算力 -80% / 个人助手定位）。
 
-- [Anthropic Dreaming Claude Managed Agents Ovz5V7Jjkqdksu9Xmxwt8W](294-claude-managed-agents.html) — **同名 "Dreaming" 不同应用场景**：Anthropic 面向 Agent 后台（Developer-facing，整理 memory store 让 Agent 越用越聪明）；OpenAI 面向个人用户长期记忆（Consumer-facing，整理 ChatGPT 用户偏好）。**两者技术路径相似（异步整理）但目标受众完全相反**。
-- [Chatgpt Memory](287-chatgpt-memory.html) — 10KB 旧版 ChatGPT Memory 概览（2026-04 写入），覆盖 V1 自动/手动记忆机制。本实体是**V3 新架构**补充——形成"V1/V0/V3 三阶段演进 + 量化数据 + 工程突破"完整时间线。
-- [Agent Memory Architecture](../ch04/323-perplexity-brain-self-improving-agent-memory-architecture.html) / [Agent Memory Architecture Ruofei](../ch04/133-agent-memory.html) / [Agent Memory Architecture Past Influence Future Ruofei](../ch04/133-agent-memory.html) — 若飞系列：Agent 记忆架构深度分析（双视角 / 五模块 / 几何级数据增长等）。本实体是**OpenAI 官方视角的 ChatGPT 端到端**消费者记忆实现。
-- [05 11 The Great Memory Panic Of 2026](375-the-great-memory-panic-of-2026.html) — 5-11 memory 供应链恐慌（与本话题同名 "memory" 但实际是 DRAM 内存供应链），**不同主题**，仅做反例参照。
-- [Agentmemory Coding Agent Local Memory](../ch09/015-agentmemory-coding-agent.html) / [Agentmemory Source Analysis Coding Agent Local Memory](../ch09/038-coding-agent.html) — AgentMemory Coding Agent 本地记忆。本实体是 OpenAI 云端 ChatGPT 端到端记忆，对比形成"云端 vs 本地"记忆路径。
+- [Anthropic Dreaming Claude Managed Agents Ovz5V7Jjkqdksu9Xmxwt8W](../ch04/381-claude-managed-agents.html) — **同名 "Dreaming" 不同应用场景**：Anthropic 面向 Agent 后台（Developer-facing，整理 memory store 让 Agent 越用越聪明）；OpenAI 面向个人用户长期记忆（Consumer-facing，整理 ChatGPT 用户偏好）。**两者技术路径相似（异步整理）但目标受众完全相反**。
+- [Chatgpt Memory](288-chatgpt-memory.html) — 10KB 旧版 ChatGPT Memory 概览（2026-04 写入），覆盖 V1 自动/手动记忆机制。本实体是**V3 新架构**补充——形成"V1/V0/V3 三阶段演进 + 量化数据 + 工程突破"完整时间线。
+- [Agent Memory Architecture](../ch04/335-perplexity-brain-self-improving-agent-memory-architecture.html) / [Agent Memory Architecture Ruofei](../ch04/097-agent-memory.html) / [Agent Memory Architecture Past Influence Future Ruofei](../ch04/097-agent-memory.html) — 若飞系列：Agent 记忆架构深度分析（双视角 / 五模块 / 几何级数据增长等）。本实体是**OpenAI 官方视角的 ChatGPT 端到端**消费者记忆实现。
+- [05 11 The Great Memory Panic Of 2026](374-the-great-memory-panic-of-2026.html) — 5-11 memory 供应链恐慌（与本话题同名 "memory" 但实际是 DRAM 内存供应链），**不同主题**，仅做反例参照。
+- [Agentmemory Coding Agent Local Memory](../ch09/016-agentmemory-coding-agent.html) / [Agentmemory Source Analysis Coding Agent Local Memory](../ch09/041-coding-agent.html) — AgentMemory Coding Agent 本地记忆。本实体是 OpenAI 云端 ChatGPT 端到端记忆，对比形成"云端 vs 本地"记忆路径。
 
 ## 相关主题
 
-- 长期记忆架构 — [Ai Memory Architecture Deep Dive](../ch04/257-ai.html)
+- 长期记忆架构 — [Ai Memory Architecture Deep Dive](../ch04/052-ai.html)
 - 个人助手 / Agent 状态 — [Personavlm Personalized Memory](https://github.com/QianJinGuo/wiki-public/blob/main/entities/personavlm-personalized-memory.md)
-- 算力优化 — [Harness Engineering Comprehensive Guide Conardli](../ch05/057-harness-engineering.html)
-- 2026-06-05 开发者期待 GPT 5.6 — [Chatgpt默认模型大升级Gpt 55 Instant正式上线新增记忆来源功能](712-chatgpt.html)（同 ChatGPT 系列）
+- 算力优化 — [Harness Engineering Comprehensive Guide Conardli](../ch05/026-harness-engineering.html)
+- 2026-06-05 开发者期待 GPT 5.6 — [Chatgpt默认模型大升级Gpt 55 Instant正式上线新增记忆来源功能](721-chatgpt.html)（同 ChatGPT 系列）
 
 ## 深度分析
 
@@ -138,13 +138,13 @@ OpenAI 2026-06-05 凌晨正式推出 **Dreaming V3**——ChatGPT 真正意义�
 
 ## 实践启示
 
-- **重新设计用户 onboarding 流程**：当 AI 能自动记住用户偏好后，"首次对话自我介绍"不再是必要步骤。产品设计应假设用户已有记忆档案，直接进入任务完成模式，而非引导用户重复自我介绍。参考 [Personavlm Personalized Memory](https://github.com/QianJinGuo/wiki-public/blob/main/entities/personavlm-personalized-memory.md) 的个性化 memory 设计思路。
+- **重新设计用户 onboarding 流程**：当 AI 能自动记住用户偏好后，"首次对话自我介绍"不再是必要步骤。产品设计应假设用户已有记忆档案，直接进入任务完成模式，而非引导用户重复自我介绍。参考 [Personavlm Personalized Memory](https://github.com/QianJinGuo/wiki-public/blob/main/entities/personavlm-personalized-memory.md) 的个性化 memory 设计思路。 
 
-- **评估内部知识管理工具的记忆能力**：如果你的 AI 助手在跨会话中持续推荐"过时"或"不相关"的信息，说明缺乏时间感知和偏好跟随机制。可以对比 [Ai Memory Architecture Deep Dive](../ch04/257-ai.html) 中的架构评估框架，检查是否有类似 Dreaming V3 的异步向量聚类层。 
+- **评估内部知识管理工具的记忆能力**：如果你的 AI 助手在跨会话中持续推荐"过时"或"不相关"的信息，说明缺乏时间感知和偏好跟随机制。可以对比 [Ai Memory Architecture Deep Dive](../ch04/052-ai.html) 中的架构评估框架，检查是否有类似 Dreaming V3 的异步向量聚类层。 
 
 - **用"状态机"视角审视 AI 的记忆时效性**：不要假设 AI 知道"现在"是什么时间。对于需要地理位置、时间上下文的任务，主动在对话中嵌入时间戳比依赖系统自动感知更可靠——尤其在旅行、健康、金融等时效敏感场景。 
 
-- **监控偏好跟随成功率作为产品核心指标**：31.4% → 71.3% 的跃升说明偏好跟随率是衡量 AI 记忆系统成熟度的关键北极星指标。产品迭代中应持续追踪该指标，并与 [Agent Memory Architecture](../ch04/323-perplexity-brain-self-improving-agent-memory-architecture.html) 中的评估框架对标，识别记忆系统的瓶颈所在。 
+- **监控偏好跟随成功率作为产品核心指标**：31.4% → 71.3% 的跃升说明偏好跟随率是衡量 AI 记忆系统成熟度的关键北极星指标。产品迭代中应持续追踪该指标，并与 [Agent Memory Architecture](../ch04/335-perplexity-brain-self-improving-agent-memory-architecture.html) 中的评估框架对标，识别记忆系统的瓶颈所在。 
 
 - 为 AI 记忆系统设计数据导出和删除功能**：当用户对 AI 记忆拥有完整读写权限成为标配时，竞品需要在数据透明性上跟进。参考记忆摘要功能的实现逻辑，为企业版产品设计合规的"记忆审计"和"记忆清除"接口。 
 
@@ -156,7 +156,7 @@ OpenAI 2026-06-05 凌晨正式推出 **Dreaming V3**——ChatGPT 真正意义�
 
 - **「做梦」叙事框架独占**：把 Dreaming 翻译为"做梦"并贯穿全文（"ChatGPT 也会「做梦」了"），是**用户心智占位**——比 51CTO 直译"Dreaming V3"更易传播，本质是同一技术概念的两个传播策略。
 - **"三场大考"场景更具体**：51CTO 译本用"上海出差外卖"举例时间感知，新智元用"水下摄影玩家 + 索尼 A1 II + Nauticam NA-A1II 防水壳 + Backscatter Mini Flash 3 / Inon Z-330 闪光灯"验证**具体 SKU 兼容性**——更接近"私人器材顾问"的产品定位叙事。两案例**互补不冲突**：上海外卖测时间感知，水下摄影 SKU 测事实召回精度。
-- **ASI 路线图铺垫独有**：新智元把 Dreaming V3 包装为"**ASI 第一块拼图**"——"缺的不只是更大参数、更多算力，还有在时间中持续学习、持续自我更新的能力"——这是 51CTO 译本完全没有的**战略叙事层**，给 OpenAI 后续 ASI 路线图埋下伏笔。新智元作为 OpenAI 长期跟踪者（参见 `[Openai Codex Super Computer Network Xinzhiyuan](../ch09/115-openai-codex.html)`、`[Claude Pilled Phenomenon Xinzhiyuan 2026](340-claude.html)`），这种叙事连贯性是单源报道无法复现的。
+- **ASI 路线图铺垫独有**：新智元把 Dreaming V3 包装为"**ASI 第一块拼图**"——"缺的不只是更大参数、更多算力，还有在时间中持续学习、持续自我更新的能力"——这是 51CTO 译本完全没有的**战略叙事层**，给 OpenAI 后续 ASI 路线图埋下伏笔。新智元作为 OpenAI 长期跟踪者（参见 `[Openai Codex Super Computer Network Xinzhiyuan](../ch09/119-openai-codex.html)`、`[Claude Pilled Phenomenon Xinzhiyuan 2026](341-claude.html)`），这种叙事连贯性是单源报道无法复现的。
 - **"三级跳"时间线稍详细**：给出 2024-04 → 2025-04 → 2026-06 三个时间点，与 51CTO 译本对齐但增加了对 V1 "saved memories 会过期、帮倒忙"的细节描述——为后续"为什么必须升级到 dreaming"的论证提供更细的时间线锚点。
 
 **两源叙事收敛度对比**：51CTO 偏技术解读（架构机制 + 工程突破量化），新智元偏战略叙事（"做梦"框架 + ASI 拼图）。**两个叙事角度合并后形成"Dreaming V3 = 技术架构升级 + 商业范式重构 + 战略路线图占位"的三层解读**，比单源覆盖更立体。**不创建新 entity，不 skip——合并到本实体的"第 2 来源"章节**，是同源不同公众号译本的标准处理模式（参考 web-content-reviewer 2026-06-04 同源不同公众号 pitfall）。
@@ -166,3 +166,4 @@ OpenAI 2026-06-05 凌晨正式推出 **Dreaming V3**——ChatGPT 真正意义�
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/openai-developer-ecosystem.md)
 
 ---
+

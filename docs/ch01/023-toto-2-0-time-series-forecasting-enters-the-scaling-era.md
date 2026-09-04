@@ -1,6 +1,6 @@
 # Toto 2.0: Time series forecasting enters the scaling era
 
-> 📊 Level ⭐ | 9.3KB | `entities/toto-2.md`
+> 📊 Level ⭐ | 9.4KB | `entities/toto-2.md`
 
 ## 核心要点
 - Datadog 开源的时间序列预测基础模型家族，4M 到 2.5B 参数
@@ -14,8 +14,8 @@
 > [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-model-research-latest-directions.md)
 
 - [时间序列预测数据增强方法](https://github.com/QianJinGuo/wiki-public/blob/main/entities/time-series-forecasting-augmentation.md)
-- [CEOs of the classroom: Why principals are the key to the AI era](../ch04/257-ai.html)
-- [How Superset built the IDE for AI agents on Vercel](074-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
+- [CEOs of the classroom: Why principals are the key to the AI era](../ch04/052-ai.html)
+- [How Superset built the IDE for AI agents on Vercel](073-how-superset-built-the-ide-for-ai-agents-on-vercel.html)
 
 ## 深度分析
 **时间序列基础模型的"BERT 时刻"已经到来**

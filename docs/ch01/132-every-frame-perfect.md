@@ -50,9 +50,9 @@ Now, what does it mean in practice? I can think of a few things:
 - 与现有实体的差异化角度：本文来自 tonsky.me 视角
 - 引用源：[Tonsky Every Frame Perfect](https://tonsky.me/blog/every-frame-perfect/)
 ## 相关实体
-- [from doer to director: the ai mindset shift](029-from-doer-to-director-the-ai-mindset-shift.html)
-- [why internally-built ai fails fund accounting audits](064-why-internally-built-ai-fails-fund-accounting-audits.html)
-- [back up and restore your amazon eks cluster resources using](072-back-up-and-restore-your-amazon-eks-cluster-resources-using.html)
+- [from doer to director: the ai mindset shift](028-from-doer-to-director-the-ai-mindset-shift.html)
+- [why internally-built ai fails fund accounting audits](063-why-internally-built-ai-fails-fund-accounting-audits.html)
+- [back up and restore your amazon eks cluster resources using](066-back-up-and-restore-your-amazon-eks-cluster-resources-using.html)
 
 ---
 

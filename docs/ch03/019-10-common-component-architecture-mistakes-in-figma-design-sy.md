@@ -1,6 +1,6 @@
 # 10 common component architecture mistakes in Figma design systems
 
-> 📊 Level ⭐ | 7.0KB | `entities/component-architecture-mistakes-figma-zeroheight.md`
+> 📊 Level ⭐ | 7.1KB | `entities/component-architecture-mistakes-figma-zeroheight.md`
 
 ## 核心要点
 1. **过度工程** — 组件试图处理过多变体，导致复杂性拖慢设计和开发

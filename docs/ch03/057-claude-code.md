@@ -109,7 +109,7 @@ Claude Code 命令系统化指南——5 分类（会话/模型/权限/扩展/�
 
 ## 相关
 - [Claude Code 架构解析](057-claude-code.html)
-- [Claude Code Prompt/Context/Harness](../ch09/050-claude-code-prompt.html)
+- [Claude Code Prompt/Context/Harness](../ch09/054-claude-code-prompt.html)
 - [Cat Wu: Claude Code PM 工作流](057-claude-code.html)
 
 ## 相关实体
@@ -118,7 +118,7 @@ Claude Code 命令系统化指南——5 分类（会话/模型/权限/扩展/�
 - [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](002-obsidian-claude-code.html)
 - [CLAUDE.md 12 条规则：Karpathy 扩展模板](057-claude-code.html)
 - [两万字详解Claude Code源码核心机制](057-claude-code.html)
-- [Claude Code Subagent 上下文卫生](../ch04/245-claude-code-subagent.html)
+- [Claude Code Subagent 上下文卫生](../ch04/253-claude-code-subagent.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/workflow-orchestration.md)
 
 ---

@@ -1,6 +1,6 @@
 # Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering
 
-> 📊 Level ⭐⭐ | 16.5KB | `entities/karpathy-vibe-coding-agentic-engineering-v3.md`
+> 📊 Level ⭐⭐ | 16.6KB | `entities/karpathy-vibe-coding-agentic-engineering-v3.md`
 
 - [原文存档](https://mp.weixin.qq.com/s/HTFcXBzYUVHvwShu3Zp-EA)
 
@@ -132,11 +132,11 @@ Karpathy 的例子很具体：他不再记 NumPy 和 PyTorch 之间 API 的细�
 4. **盯住三个前瞻信号**：①前沿实验室在编程和数学之外往哪些新领域注入 RL 数据——那里会突然出现能力跃升；②Agent-first 部署/权限/验证基础设施是否开始收敛；③下一代模型的 RL 目标是否把代码质量和审美纳入——如果代码不再让人「心脏病发作」，人在抽象简化层守的口子就会变窄。]
 
 ## 相关实体
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/098-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/096-karpathy-vibe-coding-agentic-engineering.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/098-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch04/096-karpathy-vibe-coding-agentic-engineering.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/171-tencent-vibe-coding-to-agentic-engineering-backend.html)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/175-tencent-vibe-coding-to-agentic-engineering-backend.html)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程](../ch03/004-agent.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/coding-agent-practice.md)
 

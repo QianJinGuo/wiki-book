@@ -1,8 +1,8 @@
 # Token 撤销触发设备擦除的安全漏洞
 
-> 📊 Level ⭐ | 10.5KB | `entities/cybersecurityreach-revoke-token-wipe-computer.md`
+> 📊 Level ⭐ | 10.6KB | `entities/cybersecurityreach-revoke-token-wipe-computer.md`
 
-> → [原始来源](https://cybersecurityreach.org/investigations/ifyourevokethistokenitwillwipethecomputeroftheowner-shai-hulud-2026)
+> → [原文存档](https://cybersecurityreach.org/investigations/ifyourevokethistokenitwillwipethecomputeroftheowner-shai-hulud-2026)
 
 ## 核心要点
 - Shai-Hulud npm 蠕虫新变种，针对 TanStack 生态发起供应链攻击
@@ -11,11 +11,11 @@
 - 持久化 `gh-token-monitor` 含真实 `rm -rf ~/` 逻辑，构成死亡开关； revocation 必须在移除持久化单元之后
 ## 相关实体
 - [Postmortem Tanstack Npm Supply Chain Compromise Tanstack Blog](033-postmortem-tanstack-npm-supply-chain-compromise-tanstack.html)
-- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](../ch01/628-mini-shai-hulud-strikes-again-tanstack-more-npm-packages.html)
-- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch04/257-ai.html)
-- [From Doer To Director The Ai Mindset Shift](../ch01/029-from-doer-to-director-the-ai-mindset-shift.html)
+- [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](../ch01/637-mini-shai-hulud-strikes-again-tanstack-more-npm-packages.html)
+- [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](../ch04/052-ai.html)
+- [From Doer To Director The Ai Mindset Shift](../ch01/028-from-doer-to-director-the-ai-mindset-shift.html)
 
-→ [原始来源](https://cybersecurityreach.org/investigations/ifyourevokethistokenitwillwipethecomputeroftheowner-shai-hulud-2026)
+→ [原文存档](https://cybersecurityreach.org/investigations/ifyourevokethistokenitwillwipethecomputeroftheowner-shai-hulud-2026)
 
 ## 事件概述
 2026 年 5 月 11 日 19:20–19:26 UTC，约 6 分钟内，攻击者在 42 个 `@tanstack/*` npm 包上发布了 84 个恶意版本 。这一切始于一个看似无害的 Pull Request 中的 `pull_request_target` 工作流漏洞 。外部安全研究员 ashishkurmi（任职于 StepSecurity）在 20 分钟内公开披露了该事件 。Cybersecurity Reach Foundation 团队随即对恶意载荷进行了三层混淆剥离——obfuscator.io 字符串数组、自定义 PBKDF2 + 置换密码，以及 AES-256-GCM Blob 封装层——最终还原出完整的攻击链 。
@@ -79,11 +79,11 @@ Shai-Hulud 蠕虫已从"一次性 npm 包投毒"演进为具备自传播能力�
 ### 对于 npm 生态治理
 此次事件再次说明，npm 生态迫切需要在包发布流程层面引入更严格的变更管理机制 。维护者应启用 npm 令牌硬件化（hardware-backed tokens）、强制实施 OIDC 短期令牌而非持久性令牌，并对 CI/CD 流水线的 `pull_request_target` 使用实施最严格的安全审计 。
 
-→ [原始来源](https://cybersecurityreach.org/investigations/ifyourevokethistokenitwillwipethecomputeroftheowner-shai-hulud-2026)
+→ [原文存档](https://cybersecurityreach.org/investigations/ifyourevokethistokenitwillwipethecomputeroftheowner-shai-hulud-2026)
 
 ## 相关实体
 
-→ [原始来源](https://back.engineering/blog/09/05/2026/)
+→ [原文存档](https://back.engineering/blog/09/05/2026/)
 > [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/moc/cybersecurity-privacy.md)
 
 ---

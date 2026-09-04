@@ -1,37 +1,44 @@
-# 小刘商业 Agent 增强层通用基座
+# 你不知道的 Agent：原理、架构与工程实践
 
-> 📊 Level ⭐⭐ | 2.9KB | `entities/ai-xiaolaoliu-business-agent-augmentation-layer-general-base-20260606.md`
+> 📊 Level ⭐⭐ | 3.8KB | `entities/你不知道的-agent原理架构与工程实践-v2.md`
 
-# Ai Xiaolaoliu Business Agent Augmentation Layer General Base 20260606
+# 你不知道的 Agent：原理、架构与工程实践
 
-→ [原文存档](https://mp.weixin.qq.com/s/qysRL9BeSLt_Zpmu889xeA)
+→ [原文存档](https://mp.weixin.qq.com/s/cIQYl9Wr1Eov4ma-_bYh-w)
 
 ## 深度分析
 
-Ai Xiaolaoliu Business Agent Augmentation Layer General Base 20260606 涉及agent领域的核心技术议题。
+0
+review_recommendation: strong
+review_stars: 4ingested: 2026-05-10
+# 你不知道的 Agent：原理、架构与工程实践
+文章内容基于作者个人技术实践与独立思考，旨在分享经验，仅代表个人观点。
+
 ### 核心观点
-1. 复用通用 Agent 基座，把业务知识、工具、流程和评测做成可验证增强层。
-2. 很多团队一说要做业务 Agent，第一反应是搭一个自己的 Agent Framework：规划器、执行循环、工具调度、记忆、权限、人机交互，最好再做成平台。
-3. 这个方向听起来完整，真正落地时却很容易把团队拖进基础设施泥潭。
-4. 我更倾向于反过来做：先把 Codex、Claude Code 这类
-通用 Agent 基座
-当成现成基座，让它们承担推理、代码理解、工具调用和多轮执行。
-5. 业务团队的精力不要花在重写这些能力上，而是补它们缺的那部分：
-业务知识、内部工具、流程规则、权限边界、评测集和线上观测
-这样做不是偷懒。
+
+1. 这篇文章主要讲 Agent 架构里几块最影响工程效果的内容，包括控制流、上下文工程、工具设计、记忆、多 Agent 组织、评测、追踪和安全，最后再用 OpenClaw 的实现把这些设计原则串起来看一遍。
+2. 整理下来，有几处判断和我原来想的不太一样，更贵的模型带来的提升，很多时候没有想象中那么大，反而 Harness 和验证测试质量对成功率的影响更大，调试 Agent 行为时，也应优先检查工具定义，因为多数工具选择错误都出在描述不准确，另外，评测系统本身的问题，很多时候比 Agent 出问题更难发现，如果一直在 Agent 代码上反复调，效果未必明显，读完这篇，这几个问题应该能有些答案。
+3. 一、Agent Loop 的基本运转方式
+Agent Loop 的核心实现逻辑抽象后其实不到 20 行代码：
+const messages: MessageParam[] = [{ role: "user", content: userInput }];while (true) {  const response = await client.
+4. create({    model: "claude-opus-4-6",    max_tokens: 8096,    tools: toolDefinitions,    messages,  });  if (response.
+5. stop_reason === "tool_use") {    const toolResults = await Promise.
 
 ### 关联实体
 
-- [你不知道的 Agent原理架构与工程实践 V2](../ch03/004-agent.html)
+- [Harness 之后 状态边界与失败闭环 若飞](../ch05/008-harness.html)
+- [Ai Agent Engineer Learning Roadmap Backend 2026](284-ai-agent.html)
+- [Ai Friendly Architecture Design Taobao](../ch05/019-ai-friendly.html)
+- [Headroom Context Compression Agent Vibecoder](../ch03/004-agent.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](../ch03/004-agent.html)
-- [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](../ch03/004-agent.html)
-- [Karpathy Vibe Coding Agentic Engineering](098-karpathy-vibe-coding-agentic-engineering.html)
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](190-agentops-operationalize-agentic-ai-at-scale-with-amazon-bed.html)
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](176-openclaw.html)
+- [Ai Agent Harness Construction Akshay Baoyu](../ch05/035-agent-harness.html)
 
-## 相关实体
+## 实践启示
 
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
+1. **Agent 设计**: 关注控制流与上下文工程的平衡，Harness 约束比模型能力更影响成功率
+2. **可观测性**: Agent 行为调试应优先检查工具定义和上下文质量
+3. **渐进式部署**: 从简单 ReAct 循环起步，逐步引入多 Agent 编排
+4. **验证优先**: 建立完善的测试验证体系，确保 Agent 行为可预测
 
 ---
 

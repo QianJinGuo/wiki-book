@@ -39,7 +39,7 @@ Matteo Paz（150 万颗未知天体）、Rishab Jain（236% 蛋白质表达优�
 → [原文存档](https://mp.weixin.qq.com/s/XaleRcQthIPkiS1rvikwUg)
 
 ## 相关实体
-- [ChatGPT 官宣 26 位未来之星，他们是：穿墙少年、街头摊贩、盲童的朋友……](712-chatgpt.html)
+- [ChatGPT 官宣 26 位未来之星，他们是：穿墙少年、街头摊贩、盲童的朋友……](721-chatgpt.html)
 
 ---
 ## 关联

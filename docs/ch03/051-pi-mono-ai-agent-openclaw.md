@@ -161,13 +161,13 @@ pi-agent-core 的 `beforeToolCall` 和 `afterToolCall` Hook 是实现权限控�
 pi-mono 的流式事件架构天然支持实时 UI 更新（如终端差分渲染工具调用进度）。如果你在构建 Agent 前端，应该利用 `toolcall_delta` 事件实现部分 JSON 的实时解析和 UI 更新，而不是等待完整响应后一次性渲染。
 
 ## 相关
-- [Openclaw Prompt Context Harness](../ch04/176-openclaw.html) — OpenClaw 架构，pi-mono 是它的 Agent 执行引擎
-- [Harness Engineering Systematic Framework](../ch05/057-harness-engineering.html) — Harness Engineering 框架
+- [Openclaw Prompt Context Harness](../ch04/180-openclaw.html) — OpenClaw 架构，pi-mono 是它的 Agent 执行引擎
+- [Harness Engineering Systematic Framework](../ch05/026-harness-engineering.html) — Harness Engineering 框架
 
 ## 相关实体
 
-- [announcing genkit middleware](../ch04/005-announcing-genkit-middleware-intercept-extend-and-harden.html)
-→ [原始来源](https://asymco.com/2026/05/11/the-great-memory-panic-of-2026/)
+- [announcing genkit middleware](../ch04/004-announcing-genkit-middleware-intercept-extend-and-harden.html)
+→ [原文存档](https://github.com/badlogic/pi-mono)
 
 - [Agentcore Harness](../ch05/008-harness.html) — AWS 托管 Harness 平台
 

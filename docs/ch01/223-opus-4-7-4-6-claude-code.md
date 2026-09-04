@@ -1,6 +1,6 @@
 # 刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践
 
-> 📊 Level ⭐⭐ | 14.2KB | `entities/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践.md`
+> 📊 Level ⭐⭐ | 14.3KB | `entities/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践.md`
 
 [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](https://mp.weixin.qq.com/s/99QSrB_bwEOcVo0_rd6iSg)
 
@@ -115,7 +115,7 @@ Opus 4.7 的默认行为变化需要相应的架构调整：
 
 ## 相关实体
 - [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/057-claude-code.html)
-- [Anthropic Prompt Caching Claude Code Agihunt](161-anthropic-prompt-caching-claude-code.html)
+- [Anthropic Prompt Caching Claude Code Agihunt](160-anthropic-prompt-caching-claude-code.html)
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](../ch03/057-claude-code.html)
 - [Claude Code Founder Harness 100 Lines](../ch03/057-claude-code.html)
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践 V2](../ch03/057-claude-code.html)

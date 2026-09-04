@@ -10,9 +10,9 @@
 - 地区针对性：信件已在意大利用户中发现，多语言本地化版本
 - Ledger 官方确认：永远不会通过网站、QR 码、电话或实体信件要求用户透露 seed phrase
 ## 相关实体
-- [Ai Voice Cloning The Technology Behind It Whos Building It A](../ch04/257-ai.html)
+- [Ai Voice Cloning The Technology Behind It Whos Building It A](../ch04/052-ai.html)
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](092-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi.html)
-- [Npm Supply Chain Compromise Postmortem](../ch04/257-ai.html)
+- [Npm Supply Chain Compromise Postmortem](../ch04/052-ai.html)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 - [Funnel Builder Flaw Woocommerce Checkout Skimm](https://github.com/QianJinGuo/wiki-public/blob/main/entities/funnel-builder-flaw-woocommerce-checkout-skimm.md)
 

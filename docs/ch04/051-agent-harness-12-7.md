@@ -1,6 +1,6 @@
 # 一篇看懂 Agent Harness 的结构！ — 12组件+7决策完整框架
 
-> 📊 Level ⭐⭐ | 20.2KB | `entities/agent-harness-12-components-7-decisions.md`
+> 📊 Level ⭐⭐ | 20.5KB | `entities/agent-harness-12-components-7-decisions.md`
 
 # 一篇看懂 Agent Harness 的结构！ — 12组件+7决策完整框架
 
@@ -11,10 +11,10 @@ LangChain 证明：只改 Harness（不改模型权重），TerminalBench 2.0 �
 
 ## 相关实体
 - [长周期 Agent 详解 从 Ralph Loop 到可接管 Harness](../ch05/008-harness.html)
-- [Harness Engineering Framework](../ch05/057-harness-engineering.html)
+- [Harness Engineering Framework](../ch05/026-harness-engineering.html)
 - [Langchain Anatomy Agent Harness](../ch05/035-agent-harness.html)
-- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](312-ai-agent.html)
-- [Code As Agent Harness Survey](../ch09/044-code-as-agent-harness.html)
+- [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](284-ai-agent.html)
+- [Code As Agent Harness Survey](../ch09/048-code-as-agent-harness.html)
 
 → [原文存档](https://mp.weixin.qq.com/s/BEuV7aCCZgWcX7MRLVC86w)
 
@@ -214,6 +214,8 @@ Manus 6 个月重写 5 次删复杂度，这个案例说明 Harness 不是一次
 - Claude Code release notes (/loop): https://docs.anthropic.com/en/release-notes/claude-code
 
 → [第 2 原文存档](https://mp.weixin.qq.com/s/b2pvXBGA6BkY6gJbLerZ1g)
+
+> [!contradiction] 参见 [Gene-GEP 策略基因进化](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gene-gep-evomap-qinghua-strategy-genes-arxiv-2604-15097-2026.md) 持相反观点：Gene 实验（Pro 上 Skill 60.1→50.7）挑战本页"更强模型 + 更长 Skill/长 context = 更好"的前提，主张"控制对象形态 > 知识完整性"。
 
 ---
 

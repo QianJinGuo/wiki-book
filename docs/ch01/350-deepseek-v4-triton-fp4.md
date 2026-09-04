@@ -1,6 +1,6 @@
 # DeepSeek V4 Triton FP4 优化实战
 
-> 📊 Level ⭐⭐ | 9.4KB | `entities/deepseek-v4-triton-fp4-optimization.md`
+> 📊 Level ⭐⭐ | 9.5KB | `entities/deepseek-v4-triton-fp4-optimization.md`
 
 > -> [原文存档](https://mp.weixin.qq.com/s/4CKfdAPfmsA6fyUVlKs9_g)
 
@@ -53,14 +53,14 @@
    NVIDIA 产品线分层是现实约束，不能假设一个 kernel 在 SM100 上正确就在 SM121 上正确。建议建立不同硬件型号的自动化数值回归测试矩阵，覆盖 SM100/SM120/SM121，对 FP4/FP8/FP16/BF16 分别验证。Marlin 在 SM121 上的静默错误就是这个原则的反面教材。
 
 ## 与现有知识关联
-- [LBS-IntentBench](../ch04/221-lbs-intentbench.html) — 靳岩岩也是作者之一
+- [LBS-IntentBench](../ch04/227-lbs-intentbench.html) — 靳岩岩也是作者之一
 - [原文存档](https://mp.weixin.qq.com/s/4CKfdAPfmsA6fyUVlKs9_g) — raw articles 中的完整版本
 
 ## 相关实体
-- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](459-deepseek-v4.html)
-- [ds4c deepseek v4 antirez](459-deepseek-v4.html)
-- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](459-deepseek-v4.html)
-- [Redis之父下场，给DeepSeek V4单独造了一台推理引擎](459-deepseek-v4.html)
+- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](717-deepseek-v4.html)
+- [ds4c deepseek v4 antirez](382-ds4c-deepseek-v4-antirez.html)
+- [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](717-deepseek-v4.html)
+- [Redis之父下场，给DeepSeek V4单独造了一台推理引擎](717-deepseek-v4.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
 
 ---

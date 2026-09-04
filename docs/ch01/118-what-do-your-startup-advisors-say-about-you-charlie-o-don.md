@@ -28,11 +28,11 @@ Charlie O'Donnell 的这篇文章揭示了创业公司顾问制度的两个常�
 4. **要求实际承诺**：看潜在顾问是否真正投入时间和精力，而不只是名字出现在名单上
 5. **避免「关系缺口」幻觉**：cap table 上的陌生名字不会带来真正的战略价值
 ## 相关实体
-- [Ai Agents Inside Perimeter Hackernews](../ch04/312-ai-agent.html)
-- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](040-akamai-acquires-israeli-ai-browser-security-startup-layerx-f.html)
-- [Igor Babuschkin Seeks Up To 1 Billion For River Ai](044-igor-babuschkin-seeks-up-to-1-billion-for-river-ai.html)
-- [Amazon Turns Alexa Into Its Next Storefront](070-amazon-turns-alexa-into-its-next-storefront.html)
-- [Code Simulation For Enterprise Engineering Playerz](057-code-simulation-for-enterprise-engineering-playerzero.html)
+- [Ai Agents Inside Perimeter Hackernews](../ch04/284-ai-agent.html)
+- [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](037-akamai-acquires-israeli-ai-browser-security-startup-layerx-f.html)
+- [Igor Babuschkin Seeks Up To 1 Billion For River Ai](122-igor-babuschkin-seeks-up-to-1-billion-for-river-ai.html)
+- [Amazon Turns Alexa Into Its Next Storefront](072-amazon-turns-alexa-into-its-next-storefront.html)
+- [Code Simulation For Enterprise Engineering Playerz](056-code-simulation-for-enterprise-engineering-playerzero.html)
 
 → [原文存档](https://www.thisisgoingtobebig.com/blog/2026/5/18/what-do-your-startup-advisors-say-about-you)
 

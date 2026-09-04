@@ -1,7 +1,7 @@
 ---
 type: source-card
 title: "Unlocking dependable responses with Gemini Enterprise Agent Platform's Agentic RAG"
-source: "research.google"
+source: "[[raw/articles/google-agentic-rag-sufficient-context-agent-framesqa]]"
 author: "Google Research / Cloud"
 source_url: "https://research.google/blog/unlocking-dependable-responses-with-gemini-enterprise-agent-platforms-agentic-rag/"
 published: "未标注"

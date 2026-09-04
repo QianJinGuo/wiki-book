@@ -134,7 +134,7 @@ MSM 的核心创新在于：**在预训练与对齐微调之间插入一个「�
 
 ## 相关实体
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloudflare-glasswing-mythos-security.md)
-- [Introducing Claude Platform On Aws Anthropics Native Platfor](340-claude.html)
+- [Introducing Claude Platform On Aws Anthropics Native Platfor](341-claude.html)
 - [刚刚Opus 47发布相比46核心变化与Claude Code搭配最佳实践](../ch03/057-claude-code.html)
 - [Anthropic Nla Natural Language Autoencoders Interpretability](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-nla-natural-language-autoencoders-interpretability.md)
 - [Opus 4 7 Launch Claude Code Best Practices Wechat](../ch03/057-claude-code.html)

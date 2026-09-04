@@ -107,14 +107,15 @@ S3 作为真值源，Runtime 与 S3 之间的同步是由两个动作构成：hy
 举个例子。用户配置一个每天早 8 点的 cron 任务：“汇总过去 24 小时的 GitHub Issue 进展，写到团队 Notion 周报草稿”。第一次执行时工作区是空的，Agent 建立基础结构，写入第一次记录。第二次执行时
 
 ## 相关实体
-- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch04/257-ai.html)
-- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](../ch11/135-amazon-bedrock.html)
+- [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](../ch04/052-ai.html)
+- [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](../ch11/136-amazon-bedrock.html)
 - [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](https://github.com/QianJinGuo/wiki-public/blob/main/entities/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md)
-- [Comprehensive Observability For Amazon Sagemaker Ai Llm Infe](451-llm.html)
-- [Process Financial Documents Using Amazon Bedrock Data Automa](../ch11/135-amazon-bedrock.html)
+- [Comprehensive Observability For Amazon Sagemaker Ai Llm Infe](458-llm.html)
+- [Process Financial Documents Using Amazon Bedrock Data Automa](../ch11/136-amazon-bedrock.html)
 
+→ 原文存档
 
-- [stop hand-tuning kernels: how neuron agentic development acc](../ch04/251-stop-hand-tuning-kernels-how-neuron-agentic-development-acc.html)
+- [stop hand-tuning kernels: how neuron agentic development acc](../ch04/261-stop-hand-tuning-kernels-how-neuron-agentic-development-acc.html)
 
 ## 相关主题
 

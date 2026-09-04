@@ -95,10 +95,10 @@
 
 ## 7. 与现有 entity 的关系
 
-- [Interconnects What Comes Next With Open Models](734-what-comes-next-with-open-models.html)（29KB，2026-06-08 入库）—— 战略层：开源模型赢面分析 + Anthropic 关系 + DeepSeek 节点。本 entity 是其**战术层补全**：5 维评估框架 + Gemma 4 案例。
+- [Interconnects What Comes Next With Open Models](743-what-comes-next-with-open-models.html)（29KB，2026-06-08 入库）—— 战略层：开源模型赢面分析 + Anthropic 关系 + DeepSeek 节点。本 entity 是其**战术层补全**：5 维评估框架 + Gemma 4 案例。
 - [Gemma 4 12B Google Multimodal Local](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gemma-4-12b-google-multimodal-local.md)（10KB，2026-06-04）—— Gemma 4 12B 扔掉编码器的技术架构。本 entity 不重复技术规格，专注"为什么 Gemma 4 可能成功"的元层面。
-- [Gemma 4 Multi Token Prediction Drafters](188-gemma-4-multi-token-prediction-drafters.html)（15KB，2026-06-05）—— Multi-token prediction 训练技巧。本 entity 不涉及。
-- [Google Brings Local Ai Agents To Laptops With Gemma 4 12B 20260606](650-google-brings-local-ai-agents-to-laptops-with-gemma-4-12b.html)（产品公告）—— 与本 entity 互补：产品落地方向 vs 生态评估框架。
+- [Gemma 4 Multi Token Prediction Drafters](187-gemma-4-multi-token-prediction-drafters.html)（15KB，2026-06-05）—— Multi-token prediction 训练技巧。本 entity 不涉及。
+- [Google Brings Local Ai Agents To Laptops With Gemma 4 12B 20260606](659-google-brings-local-ai-agents-to-laptops-with-gemma-4-12b.html)（产品公告）—— 与本 entity 互补：产品落地方向 vs 生态评估框架。
 
 ## 8. 实践启示
 

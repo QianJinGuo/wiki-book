@@ -8,9 +8,9 @@ You have probably heard people say things like "this product makes you 10x more 
 Here are a few examples of what things would look like if they were 10x faster/better/bigger:
 
 ## 相关实体
-- [Skill Development Guide Aliyun 2026](../ch07/054-skill.html)
+- [Skill Development Guide Aliyun 2026](../ch07/045-skill.html)
 - [Manus.Im Manus Schedules](https://github.com/QianJinGuo/wiki-public/blob/main/entities/manus.im-manus-schedules.md)
-- [Openclaw Multi Agent Team Practice](../ch04/027-openclaw-multi-agent-team-practice-v2.html)
+- [Openclaw Multi Agent Team Practice](../ch04/028-openclaw-multi-agent-team-practice-v2.html)
 - [Strands Agents Cloud Cost Optimizer](004-agent.html)
 - [别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](https://github.com/QianJinGuo/wiki-public/blob/main/entities/别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个.md)
 

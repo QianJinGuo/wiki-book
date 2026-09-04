@@ -3,7 +3,7 @@ type: source-card
 title: "Technical deep dive: AgentCore payments and innovation in agentic commerce"
 source: "rss"
 author: "未标注作者；来源机构见 source"
-source_url: "https://aws.amazon.com/blogs/machine-learning/agents-that-transact-introducing-amazon-bedrock-agentcore-payments-built-with-coinbase-and-stripe/"
+source_url: "https://github.com/awslabs/agentcore-samples/tree/main/06-workshops/13-AgentCore-payments"
 published: "未标注"
 collected: "2026-06-01"
 license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"

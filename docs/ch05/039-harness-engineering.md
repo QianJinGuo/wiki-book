@@ -160,7 +160,7 @@ Agent 系统应该采用渐进式工具扩展策略——开始只提供必要�
 
 - [Harness Engineering 三次范式跃迁与四根支柱](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-paradigm-shift.md)
 - [Anthropic Managed Agents 架构：脑手分离设计](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/managed-agents-architecture.md)
-- [Harness Engineering 四根支柱与四要素架构](057-harness-engineering.html)
+- [Harness Engineering 四根支柱与四要素架构](026-harness-engineering.html)
 
 ## 相关实体
 
