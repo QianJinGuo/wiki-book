@@ -36,7 +36,7 @@
 
 *AI Engineering* (《AI 工程》) is an open-source, continuously evolving book for engineers and researchers who want to truly understand, build, and deliver AI systems: working mental models of LLMs → the agent control loop → Harness, Tools, Skills, MCP, Memory, and Multi-Agent patterns → RAG, evaluation, tracing, security governance, and production deployment. Content is co-created by the AI community and the Hermes Agent, and every entry keeps its first-hand sources and difficulty rating, so claims stay traceable to evidence.
 
-| 1,898 | 20 chapters · 5 parts | 3,991 | v1.3.8 |
+| 2,153 | 20 chapters · 5 parts | 3,991 | v1.3.8 |
 |:---:|:---:|:---:|:---:|
 | Curated entries | Book structure | Public source cards | Current version |
 
