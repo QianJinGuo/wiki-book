@@ -7,7 +7,7 @@
 
   <defs>
     <linearGradient id="leftShade" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#061224" stop-opacity="0.92"/>
+      <stop offset="0" stop-color="#050f1f" stop-opacity="0.92"/>
       <stop offset="0.56" stop-color="#071426" stop-opacity="0.68"/>
       <stop offset="1" stop-color="#071426" stop-opacity="0.08"/>
     </linearGradient>
@@ -25,32 +25,32 @@
     </style>
   </defs>
 
-  <rect width="1920" height="1080" fill="#071426"/>
+  <rect width="1920" height="1080" fill="#0a1628"/>
   <image x="0" y="0" width="1920" height="1080"
          preserveAspectRatio="xMidYMid slice"
-         href="art/wide-art.png" xlink:href="art/wide-art.png"/>
+         href="art/wide-art-gold.png" xlink:href="art/wide-art-gold.png"/>
   <rect width="1920" height="1080" fill="url(#leftShade)"/>
   <rect width="1920" height="1080" fill="url(#bottomShade)"/>
 
   <circle cx="142" cy="126" r="5" fill="#f5c84c"/>
-  <text x="166" y="135" class="sans" font-size="23" font-weight="600" letter-spacing="6" fill="#dceaf4">AI ENGINEERING</text>
-  <text x="166" y="176" class="mono" font-size="17" letter-spacing="2.4" fill="#62c9ed">KNOWLEDGE SYSTEMS / 01</text>
+  <text x="166" y="135" class="sans" font-size="23" font-weight="600" letter-spacing="6" fill="#f0e9d9">AI ENGINEERING</text>
+  <text x="166" y="176" class="mono" font-size="17" letter-spacing="2.4" fill="#c9a84c">KNOWLEDGE SYSTEMS / 01</text>
 
   <rect x="140" y="294" width="7" height="208" rx="3.5" fill="#f5c84c"/>
   <rect x="166" y="292" width="470" height="2" fill="url(#goldLine)"/>
-  <text x="166" y="438" class="sans" font-size="150" font-weight="800" letter-spacing="-3" fill="#f8fbff">
-    <tspan fill="#f5c84c">AI</tspan><tspan fill="#f8fbff"> 工程</tspan>
+  <text x="166" y="438" class="sans" font-size="150" font-weight="800" letter-spacing="-3" fill="#f7f2e4">
+    <tspan fill="#f5c84c">AI</tspan><tspan fill="#f7f2e4"> 工程</tspan>
   </text>
-  <text x="170" y="510" class="sans" font-size="37" font-weight="400" fill="#f2f6fa">从 LLM 原理到生产级 Agent</text>
-  <rect x="170" y="558" width="390" height="2" fill="#62c9ed" opacity="0.8"/>
-  <text x="170" y="612" class="sans" font-size="21" letter-spacing="1.5" fill="#d8e4ee">20 章 · 5 篇 · 数千篇一手文章</text>
-  <text x="170" y="670" class="sans" font-size="18" fill="#b6d0dd">
+  <text x="170" y="510" class="sans" font-size="37" font-weight="400" fill="#efe8d6">从 LLM 原理到生产级 Agent</text>
+  <rect x="170" y="558" width="390" height="2" fill="#c9a84c" opacity="0.8"/>
+  <text x="170" y="612" class="sans" font-size="21" letter-spacing="1.5" fill="#e0d8c2">20 章 · 5 篇 · 数千篇一手文章</text>
+  <text x="170" y="670" class="sans" font-size="18" fill="#b5ac96">
     <tspan fill="#f5c84c">全书五篇</tspan><tspan>  入门篇 · 工程师篇 · 专家篇 · 科学家篇 · 大师篇</tspan>
   </text>
 
-  <text x="170" y="930" class="sans" font-size="26" font-weight="500" fill="#f1f6fa">QianJinGuo</text>
-  <text x="1750" y="930" class="mono" font-size="20" text-anchor="end" fill="#a8c3d2">v1.3.8  ·  CC BY-SA 4.0</text>
-  <rect x="170" y="956" width="1580" height="1" fill="#dceaf4" opacity="0.24"/>
-  <text x="170" y="1004" class="mono" font-size="16" letter-spacing="2.5" fill="#a8c3d2">LLM  /  AGENT  /  HARNESS  /  MCP  /  RAG</text>
-  <text x="1750" y="1004" class="mono" font-size="16" letter-spacing="2.5" text-anchor="end" fill="#a8c3d2">JINGUO.TECH</text>
+  <text x="170" y="930" class="sans" font-size="26" font-weight="500" fill="#f0e9d9">QianJinGuo</text>
+  <text x="1750" y="930" class="mono" font-size="20" text-anchor="end" fill="#a99f87">v1.3.8  ·  CC BY-SA 4.0</text>
+  <rect x="170" y="956" width="1580" height="1" fill="#e4dcc8" opacity="0.24"/>
+  <text x="170" y="1004" class="mono" font-size="16" letter-spacing="2.5" fill="#a99f87">LLM  /  AGENT  /  HARNESS  /  MCP  /  RAG</text>
+  <text x="1750" y="1004" class="mono" font-size="16" letter-spacing="2.5" text-anchor="end" fill="#a99f87">JINGUO.TECH</text>
 </svg>

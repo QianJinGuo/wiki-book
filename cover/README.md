@@ -14,17 +14,21 @@
 
 书名、副标题、章节规模和内容范围依据 [jinguo.tech](https://jinguo.tech/) 当前首页信息整理。出版社正式印刷前，还需由责任编辑确认作者署名、ISBN、书号条码、出版社标识、版权页信息、出血线和 CMYK 印刷文件。
 
-## 色彩
+## 色彩（墨金书房 · Ink & Gold，与站点主题一致）
 
-- Midnight navy：`#071426`
-- Cyan：`#48BDEB`
-- Amber：`#F5C84C`
-- Off-white：`#F8FBFF`
+- Midnight navy：`#0A1628`（与首页 Hero 同源）
+- Gold primary：`#F5C84C`
+- Gold muted：`#C9A84C`
+- Warm paper：`#F0E9D9` / 正文 `#EFE8D6`
+- Muted bronze text：`#A99F87` / `#B5AC96`
+
+主视觉图层为金色调 duotone（原蓝青版保留在 `art/*-art.png`），由 `make-art.sh` 从源图重新生成；站点主题 token 见 `overrides/assets/stylesheets/theme.css`。
 
 ## 重新渲染
 
 在仓库根目录执行（需要仓库已有的 Playwright 和 ImageMagick）：
 
 ```bash
-node cover/render.mjs
+bash cover/make-art.sh   # 仅需重生成金色主视觉图层时
+node cover/render.mjs    # 渲染全部尺寸到 cover/exports/
 ```

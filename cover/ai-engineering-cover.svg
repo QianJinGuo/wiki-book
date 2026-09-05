@@ -7,7 +7,7 @@
 
   <defs>
     <linearGradient id="leftShade" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#061224" stop-opacity="0.88"/>
+      <stop offset="0" stop-color="#050f1f" stop-opacity="0.88"/>
       <stop offset="0.62" stop-color="#071426" stop-opacity="0.57"/>
       <stop offset="1" stop-color="#071426" stop-opacity="0.08"/>
     </linearGradient>
@@ -28,69 +28,69 @@
     </style>
   </defs>
 
-  <rect width="1600" height="2400" fill="#071426"/>
+  <rect width="1600" height="2400" fill="#0a1628"/>
   <image x="0" y="0" width="1600" height="2400"
          preserveAspectRatio="xMidYMid slice"
-         href="art/portrait-art.png" xlink:href="art/portrait-art.png"/>
+         href="art/portrait-art-gold.png" xlink:href="art/portrait-art-gold.png"/>
   <rect width="1600" height="2400" fill="url(#leftShade)"/>
   <rect width="1600" height="2400" fill="url(#bottomShade)"/>
 
-  <!-- Quiet editorial marker and title block. -->
+  <!-- Quiet editorial marker and title block (Ink & Gold Study palette). -->
   <circle cx="150" cy="196" r="6" fill="#f5c84c"/>
-  <text x="180" y="207" class="sans eyebrow" fill="#dceaf4">AI ENGINEERING</text>
-  <text x="180" y="258" class="mono micro" fill="#62c9ed">KNOWLEDGE SYSTEMS / 01</text>
+  <text x="180" y="207" class="sans eyebrow" fill="#f0e9d9">AI ENGINEERING</text>
+  <text x="180" y="258" class="mono micro" fill="#c9a84c">KNOWLEDGE SYSTEMS / 01</text>
 
   <rect x="150" y="390" width="8" height="300" rx="4" fill="#f5c84c"/>
   <rect x="176" y="388" width="510" height="2" fill="url(#goldLine)"/>
 
   <text x="176" y="610" class="sans" font-size="206" font-weight="800" letter-spacing="-4"
-        fill="#f8fbff">
-    <tspan fill="#f5c84c">AI</tspan><tspan fill="#f8fbff"> 工程</tspan>
+        fill="#f7f2e4">
+    <tspan fill="#f5c84c">AI</tspan><tspan fill="#f7f2e4"> 工程</tspan>
   </text>
-  <text x="180" y="745" class="sans" font-size="58" font-weight="400" fill="#f2f6fa">
+  <text x="180" y="745" class="sans" font-size="58" font-weight="400" fill="#efe8d6">
     从 LLM 原理到生产级
   </text>
-  <text x="180" y="820" class="sans" font-size="72" font-weight="600" fill="#f2f6fa">
+  <text x="180" y="820" class="sans" font-size="72" font-weight="600" fill="#efe8d6">
     Agent
   </text>
 
-  <rect x="180" y="895" width="420" height="2" fill="#62c9ed" opacity="0.78"/>
-  <text x="180" y="965" class="sans meta" fill="#d8e4ee">20 章 · 5 篇 · 数千篇一手文章</text>
-  <text x="180" y="1020" class="mono micro" fill="#8db4c8">LLM  /  AGENT  /  HARNESS  /  MCP  /  RAG</text>
+  <rect x="180" y="895" width="420" height="2" fill="#c9a84c" opacity="0.78"/>
+  <text x="180" y="965" class="sans meta" fill="#e0d8c2">20 章 · 5 篇 · 数千篇一手文章</text>
+  <text x="180" y="1020" class="mono micro" fill="#a99f87">LLM  /  AGENT  /  HARNESS  /  MCP  /  RAG</text>
 
   <!-- A compact overview makes the scope legible without turning the cover into a table of contents. -->
   <text x="180" y="1185" class="sans" font-size="31" font-weight="600" letter-spacing="4" fill="#f5c84c">全书五篇</text>
-  <rect x="180" y="1225" width="3" height="375" fill="#62c9ed" opacity="0.52"/>
+  <rect x="180" y="1225" width="3" height="375" fill="#c9a84c" opacity="0.52"/>
 
   <circle cx="181" cy="1285" r="6" fill="#f5c84c"/>
-  <text x="220" y="1293" class="mono" font-size="24" fill="#62c9ed">01</text>
-  <text x="310" y="1293" class="sans" font-size="33" font-weight="600" fill="#f2f6fa">入门篇</text>
-  <text x="520" y="1293" class="sans" font-size="25" fill="#b6d0dd">从零理解 AI</text>
+  <text x="220" y="1293" class="mono" font-size="24" fill="#c9a84c">01</text>
+  <text x="310" y="1293" class="sans" font-size="33" font-weight="600" fill="#efe8d6">入门篇</text>
+  <text x="520" y="1293" class="sans" font-size="25" fill="#b5ac96">从零理解 AI</text>
 
   <circle cx="181" cy="1358" r="6" fill="#f5c84c"/>
-  <text x="220" y="1366" class="mono" font-size="24" fill="#62c9ed">02</text>
-  <text x="310" y="1366" class="sans" font-size="33" font-weight="600" fill="#f2f6fa">工程师篇</text>
-  <text x="520" y="1366" class="sans" font-size="25" fill="#b6d0dd">构建 AI 应用</text>
+  <text x="220" y="1366" class="mono" font-size="24" fill="#c9a84c">02</text>
+  <text x="310" y="1366" class="sans" font-size="33" font-weight="600" fill="#efe8d6">工程师篇</text>
+  <text x="520" y="1366" class="sans" font-size="25" fill="#b5ac96">构建 AI 应用</text>
 
   <circle cx="181" cy="1431" r="6" fill="#f5c84c"/>
-  <text x="220" y="1439" class="mono" font-size="24" fill="#62c9ed">03</text>
-  <text x="310" y="1439" class="sans" font-size="33" font-weight="600" fill="#f2f6fa">专家篇</text>
-  <text x="520" y="1439" class="sans" font-size="25" fill="#b6d0dd">深入系统架构</text>
+  <text x="220" y="1439" class="mono" font-size="24" fill="#c9a84c">03</text>
+  <text x="310" y="1439" class="sans" font-size="33" font-weight="600" fill="#efe8d6">专家篇</text>
+  <text x="520" y="1439" class="sans" font-size="25" fill="#b5ac96">深入系统架构</text>
 
   <circle cx="181" cy="1504" r="6" fill="#f5c84c"/>
-  <text x="220" y="1512" class="mono" font-size="24" fill="#62c9ed">04</text>
-  <text x="310" y="1512" class="sans" font-size="33" font-weight="600" fill="#f2f6fa">科学家篇</text>
-  <text x="520" y="1512" class="sans" font-size="25" fill="#b6d0dd">研究与创新</text>
+  <text x="220" y="1512" class="mono" font-size="24" fill="#c9a84c">04</text>
+  <text x="310" y="1512" class="sans" font-size="33" font-weight="600" fill="#efe8d6">科学家篇</text>
+  <text x="520" y="1512" class="sans" font-size="25" fill="#b5ac96">研究与创新</text>
 
   <circle cx="181" cy="1577" r="6" fill="#f5c84c"/>
-  <text x="220" y="1585" class="mono" font-size="24" fill="#62c9ed">05</text>
-  <text x="310" y="1585" class="sans" font-size="33" font-weight="600" fill="#f2f6fa">大师篇</text>
-  <text x="520" y="1585" class="sans" font-size="25" fill="#b6d0dd">哲学、安全与未来</text>
+  <text x="220" y="1585" class="mono" font-size="24" fill="#c9a84c">05</text>
+  <text x="310" y="1585" class="sans" font-size="33" font-weight="600" fill="#efe8d6">大师篇</text>
+  <text x="520" y="1585" class="sans" font-size="25" fill="#b5ac96">哲学、安全与未来</text>
 
   <!-- Publisher-safe lower region: deliberately clear of marks and logos. -->
-  <text x="180" y="2160" class="sans" font-size="36" font-weight="500" fill="#f1f6fa">QianJinGuo</text>
-  <text x="1420" y="2160" class="mono meta" text-anchor="end" fill="#a8c3d2">v1.3.8</text>
-  <rect x="180" y="2200" width="1240" height="1" fill="#dceaf4" opacity="0.24"/>
-  <text x="180" y="2265" class="mono micro" fill="#a8c3d2">OPEN SOURCE  ·  CC BY-SA 4.0</text>
-  <text x="1420" y="2265" class="mono micro" text-anchor="end" fill="#a8c3d2">JINGUO.TECH</text>
+  <text x="180" y="2160" class="sans" font-size="36" font-weight="500" fill="#f0e9d9">QianJinGuo</text>
+  <text x="1420" y="2160" class="mono meta" text-anchor="end" fill="#a99f87">v1.3.8</text>
+  <rect x="180" y="2200" width="1240" height="1" fill="#e4dcc8" opacity="0.24"/>
+  <text x="180" y="2265" class="mono micro" fill="#a99f87">OPEN SOURCE  ·  CC BY-SA 4.0</text>
+  <text x="1420" y="2265" class="mono micro" text-anchor="end" fill="#a99f87">JINGUO.TECH</text>
 </svg>
