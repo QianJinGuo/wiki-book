@@ -1,5 +1,7 @@
 # An agent capability library
 
+## Ch04.037 An agent capability library
+
 > 📊 Level ⭐ | 3.5KB | `entities/agent-capability-library.md`
 
 # An agent capability library
@@ -38,7 +40,7 @@ The idea is that this compounds. Every time I set something up, I write a doc fo
 
 ## 原文存档
 
-→ [原文存档](https://samihonkonen.com/posts/an-agent-capability-library/)
+→ 原文存档
 
 ---
 ## 关联

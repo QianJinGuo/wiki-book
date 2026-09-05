@@ -1,18 +1,46 @@
 ---
-type: source-card
-title: "Consistency, But in Excellence Not Appearance"
-source: "blog.jim-nielsen.com"
-author: "未标注作者；来源机构见 source"
 source_url: "https://blog.jim-nielsen.com/2026/a-consistency-of-excellence/"
-published: "未标注"
-collected: "2026-06-26"
-license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
+ingested: 2026-06-26
+sha256: be1fd0bbb5c68bea32b71ba6b7bc81c67850798a40af70e0ddefb02d72d458d7
 ---
 
 # Consistency, But in Excellence Not Appearance
 
-## 原创摘要
 
-这份来源卡片记录一篇围绕“Consistency, But in Excellence Not Appearance”的第三方资料，主题标签为相关 AI 工程主题。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
+Markdown Content:
+Consistency serves a purpose in visual design, but it seems to have become _the_ purpose of a lot of visual design.
 
-> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。
+Look no further than these evolutions of macOS icons ([image courtesy of BasicAppleGuy](https://mastodon.social/@BasicAppleGuy/115888906340881425)):
+
+![Image 1: Comparison of Apple app icon designs across three eras, arranged in a grid. The “Original” (skeuomorphic) column shows detailed 3D-style icons for apps like Final Cut Pro, Logic Pro, Pages, Motion, Compressor, MainStage, Keynote, Numbers, etc. The “Current” column shows the modern flat/gradient icon style for these apps. And the 'Creator Studio' column shows a unified, dark-background icon set with simplified glyphs in purple, blue, red, green, orange, etc., all for the same set of apps.](https://cdn.jim-nielsen.com/blog/2026/app-icon-consistency.png)
+
+The Creator Studio icons are undeniably consistent visually: rounded rectangles, controlled gradients, simplified forms, restrained depth, etc.
+
+In contrast (and by modern standards) the originals seem heretically inconsistent. They lack coherence in visual details like shape, material, and lighting.
+
+But what they lack in visual consistency between one another, they make up for in excellence individually.
+
+In fact, their aversion to familial visual consistency almost seems like an intentional choice — a deliberate augmentation of individual purpose.
+
+What purpose? To be singularly representative and deeply iconic.
+
+Icons that are _iconic_.
+
+To be iconic, by definition, is to be famously distinctive.
+
+None of the Creator Studio icons, especially when held up as a suite, are iconic. None are atypical, they’re merely typical.
+
+All in pursuit of what, consistency — amongst each other and across platforms — as the overriding goal?
+
+This over-emphasis on “systems” design seems endemic to modern software.
+
+Systems prescribe rules because they are the easiest attributes to document, enforce, and automate — “All icons must use this shape, this lighting, this stroke.”
+
+Excellence, by contrast, is harder to systematize. It requires judgment, taste, care, experience, and a sensitivity to context — all in service of meaning and purpose, not superficial similarity.
+
+When you strive for consistency across a suite, individual elements lose their ability to be exceptional and iconic on their own terms. Consistency for the group becomes a ceiling on individual excellence.
+
+But if you flip that, if you make excellence the goal for each individual element, something interesting can happen: excellence becomes your motif of consistency. It’s no longer a consistency of shapes and gradients, but one of quality and intention that serves a deeper meaning and purpose than superficial visuals.
+
+Give me a consistency of excellence any day over a consistency of appearance.
+

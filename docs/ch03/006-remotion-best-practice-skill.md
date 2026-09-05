@@ -1,5 +1,7 @@
 # 第一步：安装 Remotion Best Practice Skill
 
+## Ch03.006 第一步：安装 Remotion Best Practice Skill
+
 > 📊 Level ⭐⭐ | 7.9KB | `entities/skill-complete-guide-alibaba.md`
 
 # 第一步：安装 Remotion Best Practice Skill
@@ -18,7 +20,7 @@
 - [Strands Agents Cloud Cost Optimizer](https://github.com/QianJinGuo/wiki-public/blob/main/entities/strands-agents-cloud-cost-optimizer.md)
 - [别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](https://github.com/QianJinGuo/wiki-public/blob/main/entities/别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个.md)
 
-→ [原文存档](https://mp.weixin.qq.com/s/PG-rXJllhrtynAfNZn5asg)
+→ 原文存档
 
 ## 深度分析
 

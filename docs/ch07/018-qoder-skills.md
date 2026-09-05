@@ -1,5 +1,7 @@
 # Qoder Skills 完全指南
 
+## Ch07.018 Qoder Skills 完全指南
+
 > 📊 Level ⭐⭐⭐ | 9.8KB | `entities/qoder-skills-complete-guide.md`
 
 ## 核心概念
@@ -59,7 +61,7 @@
 - **用户级安装**: `~/.qoder/skills/` — 个人偏好、跨项目通用
 - **项目级安装**: `<项目根>/.qoder/skills/` — 团队规范、项目特定流程（推荐提交到 Git）
 ---
-→ [原文存档](https://mp.weixin.qq.com/s/PG-rXJllhrtynAfNZn5asg)
+→ 原文存档
 
 ## 深度分析
 **Qoder Skills 的本质是"知识封装"而非"工具集成"**。与传统的 prompt 模板或固定指令不同，Skill 通过三级渐进式披露机制（YAML meta → SKILL.md → scripts/references/assets）实现了"按需加载"的知识管理范式。这种设计让 AI 在每次执行时只加载必要的上下文，避免了上下文窗口的浪费，同时保留了深度执行复杂任务的能力。
@@ -80,7 +82,7 @@
 - [Agent/Skills/Teams 架构演进过程及技术选型之道](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skills-teams-architecture-evolution-selection-guide.md)
 - [Agent 时代架构师技能指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-era-architect-skills-guide.md)
 - [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing-guide.md)
-- [Hermes Agent](../ch03/096-hermes-agent.html)
+- [Hermes Agent](../ch03/100-hermes-agent.html)
 - [你写的 Skill，及格了吗？](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ni-xie-de-skill-ji-ge-liao-ma.md)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/hermes-agent-skill.md)
 - [9个Agent技能模块化SageMaker微调生命周期](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
@@ -91,9 +93,9 @@
 - [SkillClaw](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skillclaw.md)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-skill-system-winty.md)
 - [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](https://github.com/QianJinGuo/wiki-public/blob/main/entities/trace2skill-trajectory-distillation-agent-skills.md)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/353-tencent-vibe-coding-to-agentic-engineering-backend.html)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/393-tencent-vibe-coding-to-agentic-engineering-backend.html)
 - [Thin Harness Fat Skills](https://github.com/QianJinGuo/wiki-public/blob/main/entities/thin-harness-fat-skills.md)
-- [Code Intelligence Changelog](../ch04/256-code-intelligence-changelog.html)
+- [Code Intelligence Changelog](../ch04/290-code-intelligence-changelog.html)
 
 ---
 

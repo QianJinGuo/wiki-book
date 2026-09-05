@@ -1,18 +1,35 @@
 ---
-type: source-card
 title: "Introducing computer use in Gemini 3.5 Flash"
-source: "deepmind.google"
-author: "Mateo Quiros"
 source_url: "https://deepmind.google/blog/introducing-computer-use-in-gemini-3-5-flash/"
+author: "Mateo Quiros"
 published: "2026-06-24"
-collected: "2026-06-25"
-license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
+ingested: "2026-06-25"
+sha256: d709c4a273536fbd5529a0823c3bb72d22b6fb564e31f81bec52bfd2bf6d9ba6
+type: raw-article
 ---
 
 # Introducing computer use in Gemini 3.5 Flash
 
-## 原创摘要
+Computer use is now a built-in tool supported in Gemini 3.5 Flash, delivering our best performance yet for agentic computer use tasks. Previously only available as a standalone Gemini 2.5 computer use model, computer use is now integrated natively in the main Gemini Flash model. Gemini already excels at function calling and using built-in tools like Search and Maps grounding. With built-in computer use capability, developers can now use 3.5 Flash to reliably build custom agents that can see, reason and take action across browser, mobile and desktop environments. This unlocks improved performance for long-horizon and enterprise automation tasks like continuous software testing and knowledge work across professional applications.
 
-这份来源卡片记录一篇围绕“Introducing computer use in Gemini 3.5 Flash”的第三方资料，主题标签为相关 AI 工程主题。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
+Developers and enterprises can start using computer use in 3.5 Flash via the Gemini API and Gemini Enterprise Agent Platform.
 
-> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。
+3.5 Flash uses computer use to analyse the Gemini app and return a categorized list of features.
+
+3.5 Flash with computer use audits its own documentation for accessibility issues.
+
+## Making computer use safe in 3.5 Flash
+
+To mitigate some of the prompt injection risks for agents operating in live environments, we use targeted adversarial training for computer use in Gemini 3.5 Flash. We're also releasing two optional enterprise safeguard systems that enable enterprises to:
+
+- Require explicit user confirmation for sensitive or irreversible actions.
+- Automatically stop tasks if an indirect prompt injection is identified.
+
+Taking a "defense-in-depth" approach, we encourage developers to combine these features with secure sandboxing, human-in-the-loop verification and strict access controls. Additional information on safety measures can be found in our best practices documentation.
+
+We are already seeing customers drive value with computer use. Here's what some of them have to say:
+
+To start building with computer use today:
+
+- Try it now: Test the capabilities in a demo environment hosted by Browserbase.
+- Start building: Dive into our reference implementation and documentation via Gemini API and Gemini Enterprise Agent Platform.

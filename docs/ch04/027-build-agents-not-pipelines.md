@@ -1,5 +1,7 @@
 # Build agents, not pipelines
 
+## Ch04.027 Build agents, not pipelines
+
 > 📊 Level ⭐ | 4.0KB | `entities/seangoedeckecom-build-agents-not-pipelines.md`
 
 # Build agents, not pipelines
@@ -10,7 +12,7 @@
 
 ## 深入分析
 
-> 来源：[原文存档](https://www.seangoedecke.com/build-agents-not-pipelines/)
+> 来源：原文存档
 
 本篇来自 TLDR AI Newsletter 推荐。技术深度评分：v=7, c=7, stars=4。
 
@@ -40,7 +42,7 @@ Pipeline并不比agent更安全：prompt injection在两种架构下攻击面相
 
 ## 相关主题
 
-- [原文存档](https://www.seangoedecke.com/build-agents-not-pipelines/)
+- 原文存档
 - [Claude Code Tool Design Evolution](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-tool-design-evolution-anthropic.md)
 - [RAG Chunking Optimization 2025](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-chunking-optimization-2025.md)
 - [Context Engineering: Three Memory Paradigms](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-engineering-three-memory-paradigms.md)

@@ -1,5 +1,7 @@
 # 你写的 Skill，及格了吗？
 
+## Ch07.007 你写的 Skill，及格了吗？
+
 > 📊 Level ⭐⭐ | 7.1KB | `entities/ni-xie-de-skill-ji-ge-liao-ma.md`
 
 ## 核心概念
@@ -54,12 +56,12 @@
 3. **单模型多视角评估可作为多模型验证的降级方案**。让同一模型扮演严格派/务实派/温和派三个评审角色，强制引入多样性视角。角色分化后的分歧（如 D4 一个给 5 分一个给 8 分）本身就有分析价值
 4. **采用场景路由表设计提升输入输出清晰度**。subordinate-weekly-report 的场景路由表设计可借鉴——每个 action 配置完整的输入输出示例，让 Agent 能快速匹配用户意图，降低理解成本
 5. **Skill 完成后用多模型横向对比选型**。对同类 Skill 分别独立评估，对比 D1-D8 各维度得分和共识度，识别各自优势领域（workos-weekly 领域知识密度更高，subordinate-weekly-report 元数据质量更优），选择时各取所长
-→ [原文存档](https://mp.weixin.qq.com/s/kPW5lgHmhn4vUihRcNo7uQ)
+→ 原文存档
 
 ## 相关实体
 - [Skill.md 简历生成器 Resume Forge](https://github.com/QianJinGuo/wiki-public/blob/main/entities/我用-skillmd-做了一个简历生成器.md)
 - [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing-guide.md)
-- [Hermes Agent](../ch03/096-hermes-agent.html)
+- [Hermes Agent](../ch03/100-hermes-agent.html)
 - [Qoder Skills 完全指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/qoder-skills-complete-guide.md)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/hermes-agent-skill.md)
 - [9个Agent技能模块化SageMaker微调生命周期](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
@@ -72,7 +74,7 @@
 - [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](https://github.com/QianJinGuo/wiki-public/blob/main/entities/trace2skill-trajectory-distillation-agent-skills.md)
 - [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](https://github.com/QianJinGuo/wiki-public/blob/main/entities/qoder-skills-完全指南从零开始让-ai-按你的标准执行-v2.md)
 - [Thin Harness Fat Skills](https://github.com/QianJinGuo/wiki-public/blob/main/entities/thin-harness-fat-skills.md)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/353-tencent-vibe-coding-to-agentic-engineering-backend.html)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/393-tencent-vibe-coding-to-agentic-engineering-backend.html)
 
 ---
 

@@ -1,10 +1,12 @@
 # Build a serverless image editing agent with Amazon Bedrock AgentCore harness
 
+## Ch05.010 Build a serverless image editing agent with Amazon Bedrock AgentCore harness
+
 > 📊 Level ⭐ | 4.0KB | `entities/build-a-serverless-image-editing-agent-with-amazon-bedrock-a.md`
 
 # Build a serverless image editing agent with Amazon Bedrock AgentCore harness
 
-→ [原文存档](https://aws.amazon.com/blogs/machine-learning/build-a-serverless-image-editing-agent-with-amazon-bedrock-agentcore-harness)
+→ 原文存档
 
 # Build a serverless image editing agent with Amazon Bedrock AgentCore harness
 

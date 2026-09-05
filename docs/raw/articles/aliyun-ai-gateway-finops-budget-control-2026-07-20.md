@@ -1,18 +1,21 @@
 ---
-type: source-card
 title: "AI 网关 FinOps 最佳实践：如何为不同消费者控制 AI 调用预算"
-source: "mp.weixin.qq.com"
-author: "张文浩"
 source_url: "https://mp.weixin.qq.com/s/ESB1d97jWMJYvJXQ-X7ipw"
-published: "未标注"
-collected: "2026-07-22"
-license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
+source_account: "阿里云云原生"
+author: "张文浩"
+ingested: 2026-07-22
+type: raw-article
+tags: [ai-gateway, finops, budget, quota, token-management, aliyun]
+review_value: 4
+review_confidence: 8
+review_vxc: 32
+review_decision: raw-only
+sha256: d8b59c757594137f2c1459771e9f79c376b936e908f6ab995118ca27fc86d125
 ---
 
 # AI 网关 FinOps 最佳实践：如何为不同消费者控制 AI 调用预算
 
-## 原创摘要
+> **来源**：阿里云云原生，作者张文浩
+> **评分**：v=4, c=8, v×c=32 → **Raw only**
 
-这份来源卡片记录一篇围绕“AI 网关 FinOps 最佳实践：如何为不同消费者控制 AI 调用预算”的第三方资料，主题标签为ai-gateway、finops、budget。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
-
-> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。
+阿里云 AI 网关 FinOps 能力的产品功能介绍，涵盖供应商管理、模型元信息配置、配额规则创建（Token 配额/Credits 配额/双重保护）、自动续期、排障指南等。属于产品操作手册类内容。

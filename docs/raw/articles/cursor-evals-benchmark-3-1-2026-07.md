@@ -1,18 +1,47 @@
 ---
-type: source-card
-title: "Cursor Evals — CursorBench 3.1"
-source: "cursor"
-author: "未标注作者；来源机构见 source"
-source_url: "https://cursor.com/evals"
-published: "未标注"
-collected: "2026-07-04"
-license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
+source: cursor
+source_url: https://cursor.com/evals
+source_published: 2026-07-04
+ingested: 2026-07-04
+sha256: 6d32a778617eec0bb3eb36cd2ee6337af908cf8038c9b6abee1cdb8f218763c0
 ---
 
 # Cursor Evals — CursorBench 3.1
 
-## 原创摘要
+## Overview
 
-这份来源卡片记录一篇围绕“Cursor Evals — CursorBench 3.1”的第三方资料，主题标签为相关 AI 工程主题。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
+CursorBench 3.1 is Cursor's coding agent benchmark suite. It evaluates AI agents on ambiguous, multi-file tasks drawn from real Cursor development sessions. Higher scores are better.
 
-> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。
+## Models Evaluated
+
+| Model | Score | Cost/task |
+|-------|-------|-----------|
+| Fable 5 | TBD | TBD |
+| Opus 4.8 | TBD | TBD |
+| Opus 4.7 | TBD | TBD |
+| GPT-5.5 | TBD | TBD |
+| Sonnet 5 | TBD | TBD |
+| Sonnet 4.6 | TBD | TBD |
+| GLM 5.2 | TBD | TBD |
+| Composer 2.5 | TBD | TBD |
+| Composer 2 | TBD | TBD |
+
+The source page displays an interactive scatter/line chart (not extractable via text parsing) comparing scores vs average cost per task.
+
+## Benchmark Design
+
+CursorBench 3.1 evolved through three phases:
+- **Initial version**: edit, refactor, and bugfix problems
+- **Version 2**: improved grading criteria for some edit tasks
+- **Version 3.1** (current): introduced problems focused on codebase understanding, bugfinding, planning, and code review
+
+## Pricing Methodology
+
+Average cost per task is computed by applying each model's published per-million-token pricing (input, cache read, cache write, and output) to the tokens it used on each CursorBench 3.1 task, then averaging across tasks.
+
+> ⚠️ Results are subject to variance; small differences in scores may not be statistically meaningful.
+
+## Related
+
+- [[raw/articles/cursor-reward-hacking-coding-benchmarks|Cursor Reward Hacking Blog]]
+- [[entities/cursor.com-composer-2-5|Cursor Composer 2.5]]

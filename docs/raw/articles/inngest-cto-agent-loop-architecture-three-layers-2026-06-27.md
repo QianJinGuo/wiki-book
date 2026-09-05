@@ -1,18 +1,37 @@
 ---
-type: source-card
 title: "Agent Loop 架构：Loop + Skill + Orchestrator 三层模型"
-source: "mp.weixin.qq.com"
-author: "Inngest CTO"
-source_url: "https://mp.weixin.qq.com/s/0vELFAO3AM3Dw2YuZzSm8A"
-published: "2026-06-27"
-collected: "2026-06-27"
-license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
+source_url: https://mp.weixin.qq.com/s/0vELFAO3AM3Dw2YuZzSm8A
+author: Inngest CTO
+published: 2026-06-27
+ingested: 2026-06-27
+type: raw-article
+tags: [agent-loop, durable-execution, orchestration, skill, checkpoint, self-building-agent, inngest]
+review_value: 8
+review_confidence: 9
+review_recommendation: ingest
+sha256: 97a95a948b29e854816882dc4998ef05d4cdb6f88aa7ddd7155e6de42da7bb20
 ---
 
-# Agent Loop 架构：Loop + Skill + Orchestrator 三层模型
+> 来源：Inngest CTO 文章（经翻译整理）
 
-## 原创摘要
+Agent Loop 架构三层模型：Loop（cron + 决策者）→ Skill（耐久 workflow）→ Orchestrator（执行引擎）。
 
-这份来源卡片记录一篇围绕“Agent Loop 架构：Loop + Skill + Orchestrator 三层模型”的第三方资料，主题标签为agent-loop、durable-execution、orchestration。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
+核心论点：
+- 耐久性不是 loop 的一个属性，它属于支撑 loop 的整个执行层
+- "放进容器里跑"只能给你 uptime，不能给你正确性
+- step 级 checkpoint 不只是正确性功能，也能省钱（避免重复 LLM 调用）
+- agent 可以编写自己的耐久 skill 并部署到编排引擎（orchestration-aware agent）
+- 每个 skill 都是被编码成可执行基础设施的组织知识，会复利
 
-> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。
+三层架构：
+1. Loop = cron + LLM 决策者 + 耐久执行步骤
+2. Skill = 耐久 workflow，可重试、可组合、可独立部署
+3. Orchestrator = 调度、执行步骤、管理重试、并发限制、存储历史、热部署
+
+耐久执行六要素：Independent step retry / Sub-agent lifecycle / Guaranteed event delivery / Post-hoc observability / Hot-deploy without downtime / Concurrency control
+
+自建 Skill Agent 流程：人提需求 → agent 编写 skill → agent 部署（sidecar 热加载）→ skill 自主运行 → review loop 评估表现 → agent 迭代改进
+
+复利框架（引用 Satya Nadella）：人力资本 + token capital 一起复利。护城河不是模型，而是 loop。
+
+参考：Matt Van Horn agent loop 演进 / Addy Osmani loop engineering / @runes_leo "管理 agent loop 成本最高"

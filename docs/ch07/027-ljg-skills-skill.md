@@ -1,5 +1,7 @@
 # 李继刚 ljg Skills 系列（四）：表达写作类 Skill
 
+## Ch07.027 李继刚 ljg Skills 系列（四）：表达写作类 Skill
+
 > 📊 Level ⭐⭐⭐ | 7.8KB | `entities/ljg-skills-series-4-writing-expression.md`
 
 # 李继刚 ljg Skills 系列（四）：表达写作类 Skill
@@ -80,7 +82,7 @@ ljg 的 Skill 设计呈现出几个鲜明的哲学特征：
 
 ## 来源
 
-→ [原文存档](https://www.xiaohongshu.com/explore/6a3ba6990000000015026f4d)
+→ 原文存档
 
 ---
 

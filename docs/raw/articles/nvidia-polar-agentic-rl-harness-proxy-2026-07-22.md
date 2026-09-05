@@ -1,18 +1,49 @@
 ---
-type: source-card
 title: "NVIDIA 开源 Agentic RL 框架 Polar：支持任意 Harness，零改动 Agent 代码"
-source: "mp.weixin.qq.com"
-author: "大模型前线观察"
 source_url: "https://mp.weixin.qq.com/s/4zWgu2bso9U07L3nU7-2Rw"
-published: "未标注"
-collected: "2026-07-22"
-license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
+source_account: "大模型前线观察"
+author: "大模型前线观察"
+ingested: 2026-07-22
+type: raw-article
+tags: [nvidia, polar, agentic-rl, reinforcement-learning, rollout, harness, harness-as-environment, proxy, prefix-merging]
+review_value: 7
+review_confidence: 5
+review_vxc: 35
+review_decision: raw-only
+sha256: f8fd3e4bc68bc3c39082eaba4606ec4343ea5ef1e0669a42058798e1b2f3435d
 ---
 
-# NVIDIA 开源 Agentic RL 框架 Polar：支持任意 Harness，零改动 Agent 代码
+# NVIDIA 开源 Agentic RL 框架 Polar：支持任意 Harness
 
-## 原创摘要
+> **来源**：大模型前线观察
+> **评分**：v=7, c=5, v×c=35 → **Raw only**
 
-这份来源卡片记录一篇围绕“NVIDIA 开源 Agentic RL 框架 Polar：支持任意 Harness，零改动 Agent 代码”的第三方资料，主题标签为nvidia、polar、agentic-rl。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
+Polar 是 NVIDIA 研究团队开源的 RL Rollout 框架，核心思路：不在 Agent 内部改动，而是寄生在模型调用边界。
 
-> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。
+## 核心设计：Proxy 模式
+
+每个基于 LLM 的 Agent 最终都要调模型接口。Polar 在这个边界上插一个 Proxy，把 Agent 的模型 base URL 指向 Polar Gateway，Agent 框架本身零改动。
+
+## 结果数据
+
+| Agent 框架 | 基础得分 | Polar RL 后 | 提升 |
+|-----------|---------|-------------|------|
+| Codex | 3.8% | 26.4% | +22.6pp |
+| Claude Code | 29.8% | 34.6% | +4.8pp |
+| Qwen Code | 34.6% | 35.2% | +0.6pp |
+| Pi | 34.2% | 40.4% | +6.2pp |
+
+## prefix_merging 效率提升
+
+| 指标 | 传统 per_request | Polar prefix_merging |
+|------|-----------------|---------------------|
+| Trainer updates | 1,185 | 218 |
+| 耗时 | 189.5 min | 35.2 min |
+| 加速比 | — | 5.39× |
+| GPU 利用率 | 20.4% | 87.7% |
+
+## 三大核心能力
+
+1. **Harness as Environment** — 任何 Agent harness 只需改模型 endpoint 即可对接 RL 训练
+2. **Smart Rollout Pipeline** — 自动管理轨迹采集、缓存合并、奖励计算
+3. **Rollout as a Service** — 解耦 rollout 与训练，支持异步扩展

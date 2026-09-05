@@ -1,10 +1,12 @@
 # 正式开源！美团 LongCat-2.0 同步开放国产卡推理代码
 
+## Ch04.006 正式开源！美团 LongCat-2.0 同步开放国产卡推理代码
+
 > 📊 Level ⭐ | 7.7KB | `entities/正式开源美团-longcat-20-同步开放国产卡推理代码.md`
 
 # 正式开源！美团 LongCat-2.0 同步开放国产卡推理代码
 
-→ [原文存档](https://mp.weixin.qq.com/s/iCq4jVlTdKOt74zAMYIIdw)
+→ 原文存档
 
 # 正式开源！美团 LongCat-2.0 同步开放国产卡推理代码
 

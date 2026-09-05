@@ -1,5 +1,7 @@
 # 三层 Agent 架构：Skill / SubAgent / Agent Team 工程实践
 
+## Ch07.014 三层 Agent 架构：Skill / SubAgent / Agent Team 工程实践
+
 > 📊 Level ⭐⭐⭐ | 12.7KB | `entities/baidu-netdisk-three-layer-agent-architecture.md`
 
 ## 三层职责分层
@@ -95,7 +97,7 @@ Agent Team 把四类提取任务（UI 组件、布局文件、业务逻辑、资
 - [From Agent Protocol To Harness Skill](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-agent-protocol-to-harness-skill.md)
 - [Staragent Webterminal Cli Ali Infra Cli As Agent Hands](https://github.com/QianJinGuo/wiki-public/blob/main/entities/staragent-webterminal-cli-ali-infra-cli-as-agent-hands.md)
 
-→ [原文存档](https://mp.weixin.qq.com/s/z2QWu5hE5TAZifqT4jYzVw).md]
+→ 原文存档.md]
 
 ---
 

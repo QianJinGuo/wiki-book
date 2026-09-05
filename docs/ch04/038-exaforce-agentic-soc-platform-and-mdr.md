@@ -1,13 +1,15 @@
 # Exaforce | Agentic SOC Platform and MDR
 
+## Ch04.038 Exaforce | Agentic SOC Platform and MDR
+
 > 📊 Level ⭐ | 3.2KB | `entities/exaforce-agentic-soc-platform-and-mdr.md`
 
-> -> [原文存档](https://www.exaforce.ai)
+> -> 原文存档
 
 ## 核心要点
 - 来源：www.exaforce.ai
 - 评分：v=7, c=9, product=63
-→ [原文存档](https://www.exaforce.ai)
+→ 原文存档
 
 ## 相关实体
 - [The Agentic Trust Management Platform | Drata](005-the-agentic-trust-management-platform-drata.html)

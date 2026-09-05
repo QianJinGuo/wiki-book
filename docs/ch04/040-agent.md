@@ -1,5 +1,7 @@
 # Agent核心技术概念与范式发生了哪些演变以及背后的思考
 
+## Ch04.040 Agent核心技术概念与范式发生了哪些演变以及背后的思考
+
 > 📊 Level ⭐ | 2.8KB | `entities/agent-paradigm-evolution-feipeng-alibaba.md`
 
 # Agent核心技术概念与范式发生了哪些演变以及背后的思考
@@ -11,7 +13,7 @@
 - [explicit vs. implicit in the age of intelligences — le secré](https://github.com/QianJinGuo/wiki-public/blob/main/entities/lesecretairedefernand-co-en-tech-explicit-vs-implicit-in-the-age-of-intelligence.md)
 - [review agent：后台复盘 agent 如何判断什么值得保存](https://github.com/QianJinGuo/wiki-public/blob/main/entities/review-agent-how-it-decides-what-to-save-winty.md)
 - [不用再学ai了！生成结果包稳的agent来了](https://github.com/QianJinGuo/wiki-public/blob/main/entities/不用再学ai了生成结果包稳的agent来了.md)
-→ [原文存档](https://mp.weixin.qq.com/s/ONYZFjxpIDgoRBSblLtGZg)
+→ 原文存档
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
 ## 核心观点
@@ -32,7 +34,7 @@ System Prompt 从"单体大作文"到"System Prompt + 渐进式加载上下文�
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
 - [Ethan He Cosmos Grok Imagine Latent Space Video Agent 20260606](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ethan-he-cosmos-grok-imagine-latent-space-video-agent-20260606.md)
-- [Karpathy Vibe Coding Agentic Engineering](118-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](356-karpathy-vibe-coding-agentic-engineering.html)
 - [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md)
 
 ---

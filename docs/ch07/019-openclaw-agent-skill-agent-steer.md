@@ -1,5 +1,7 @@
 # OpenClaw 深度架构分析：Agent 引擎、多源 Skill 系统、子 Agent steer 重定向、五层容错
 
+## Ch07.019 OpenClaw 深度架构分析：Agent 引擎、多源 Skill 系统、子 Agent steer 重定向、五层容错
+
 > 📊 Level ⭐⭐⭐ | 9.2KB | `entities/openclaw-agent-engine-skill-subagent-architecture-jd-2026.md`
 
 # OpenClaw 深度架构分析：Agent 引擎、多源 Skill 系统、子 Agent steer 重定向、五层容错
@@ -113,7 +115,7 @@ runSubagentAnnounceFlow()：逐个推送。先完成的先处理→发现答案�
 - **工具权限隔离的设计模式**：两级拒绝列表（always 禁止 + leaf 节点额外禁止）+ spawnDepth 限制——防止 Agent 无限递归避免资源耗尽
 - **Skill 上限配置是系统工程**：5 个 SkillsLimitsConfig 参数的精调是 Agent 生产成本管理的关键
 
-→ [原文存档](https://mp.weixin.qq.com/s/7RWpW-wZuDmKuexf8smGGQ)
+→ 原文存档
 
 ---
 ## 关联

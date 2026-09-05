@@ -1,5 +1,7 @@
 # Higress Qwen3Guard Wasm 插件：把 AI 内容安全做进网关数据面
 
+## Ch11.008 Higress Qwen3Guard Wasm 插件：把 AI 内容安全做进网关数据面
+
 > 📊 Level ⭐ | 7.4KB | `entities/higress-qwen3guard-wasm-plugin-ai-gateway-content-safety.md`
 
 ## 概述
@@ -47,7 +49,7 @@ Qwen3Guard 推理服务不嵌入网关进程，插件经 Higress Wasm Go SDK 构
 - 与 [AI Gateway vs MCP Gateway 安全分析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-gateways-vs-mcp-gateways-what-security-teams-need-to-know.md) 同处"网关层安全"维度。
 - Qwen3Guard 是通义千问家族首款专为安全分类设计的护栏模型（Gen/Stream 两路线），本文实现其 Gen 路线的网关接入。
 
-→ [原文存档](https://mp.weixin.qq.com/s/FolCzOk-nnB52CLvUan41w)
+→ 原文存档
 
 ---
 

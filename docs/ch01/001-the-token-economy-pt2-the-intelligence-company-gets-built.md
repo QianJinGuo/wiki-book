@@ -1,5 +1,7 @@
 # 🧠 The Token Economy pt2: The Intelligence Company Gets Built
 
+## Ch01.001 🧠 The Token Economy pt2: The Intelligence Company Gets Built
+
 > 📊 Level ⭐ | 23.0KB | `entities/the-token-economy-pt2-the-intelligence-company-gets-built.md`
 
 ## 核心要点
@@ -191,7 +193,7 @@ Anthropic-Blackstone $1.5B JV 模式展示 PE 作为 AI 转型加速器的潜力
 - [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-to-share-mythos-cyber-flaw-findings-with-global-finance-watchdog.md)
 - [Anthropic 联创2028 年实现 Ai 自我构建的概率超过 60](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-联创2028-年实现-ai-自我构建的概率超过-60.md)
 
-→ [原文存档](https://www.fintechbrainfood.com/p/intelligence-company)
+→ 原文存档
 
 - [Fiserv agentOS × OpenAI](https://investors.fiserv.com/news-releases/news-release-details/fiserv-launches-agentos-operating-system-agentic-ai-banking)
 

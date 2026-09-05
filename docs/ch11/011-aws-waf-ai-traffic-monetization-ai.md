@@ -1,10 +1,12 @@
 # AWS WAF AI Traffic Monetization — 内容所有者向 AI 收费的网络层基础设施
 
+## Ch11.011 AWS WAF AI Traffic Monetization — 内容所有者向 AI 收费的网络层基础设施
+
 > 📊 Level ⭐ | 5.7KB | `entities/aws-waf-ai-traffic-monetization-bot-content-access.md`
 
 # AWS WAF AI Traffic Monetization — 内容所有者向 AI 收费的网络层基础设施
 
-> Source: [原文存档](https://aws.amazon.com/blogs/aws/aws-waf-adds-ai-traffic-monetization-capability-to-help-content-owners-charge-ai-bots-for-content-access/)
+> Source: 原文存档
 
 ## 背景
 
@@ -103,7 +105,7 @@ WAF Bot Control 必须**先启用**（Common 或 Targeted level），monetizatio
 - [让 ai 代理自己付钱：基于 amazon bedrock agentcore 与 x402 的 agentic pay](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentic-payment-x402-bedrock-agentcore.md)
 - [introducing claude platform on aws: anthropic’s native platf](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-claude-platform-on-aws.md)
 
-→ [原文存档](https://aws.amazon.com/blogs/aws/aws-waf-adds-ai-traffic-monetization-capability-to-help-content-owners-charge-ai-bots-for-content-access/)
+→ 原文存档
 
 ---
 

@@ -1,18 +1,16 @@
 ---
-type: source-card
 title: "Halliburton enhances seismic workflow creation with Amazon Bedrock and Generative AI"
-source: "aws.amazon.com"
 author: "AWS ML Blog"
 source_url: "https://aws.amazon.com/blogs/machine-learning/halliburton-enhances-seismic-workflow-creation-with-amazon-bedrock-and-generative-ai/"
-published: "2026-05-10"
-collected: "2026-05-09"
-license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
+tags: [aws-china-blog, agentic-ai]
+feed_name: "AWS ML Blog"
+source_published: "2026-05-08T13:20:30Z"
+ingested: 2026-05-09
+type: raw-article
+sha256: dc808551fee81843293d6a07bc0d544416757c568686c33c2d627791878e7ae7
+created: 2026-05-10
+updated: 2026-05-10
 ---
-
 # Halliburton enhances seismic workflow creation with Amazon Bedrock and Generative AI
-
-## 原创摘要
-
-这份来源卡片记录一篇围绕“Halliburton enhances seismic workflow creation with Amazon Bedrock and Generative AI”的第三方资料，主题标签为aws-china-blog、agentic-ai。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
-
-> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。
+Seismic data analysis is an essential component of energy exploration, but configuring complex processing workflows has traditionally been a time-consuming and error-prone challenge. Halliburton's Seismic Engine, a cloud-native application for seismic data processing, is a powerful tool that previously required extensive manual configuration...
+(Halliburton Bedrock GenAI article content - 15,222 chars fetched from AWS)

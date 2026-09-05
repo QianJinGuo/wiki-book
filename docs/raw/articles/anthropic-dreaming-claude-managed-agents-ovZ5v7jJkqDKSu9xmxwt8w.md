@@ -1,18 +1,20 @@
 ---
-type: source-card
-title: "Anthropic 上线「做梦」功能，让 Agent 越睡越聪明"
-source: "mp.weixin.qq.com"
-author: "未标注作者；来源机构见 source"
-source_url: "https://mp.weixin.qq.com/s/ovZ5v7jJkqDKSu9xmxwt8w]"
-published: "未标注"
-collected: "未标注"
-license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
+title: Anthropic 上线「做梦」功能，让 Agent 越睡越聪明
+source_url: https://mp.weixin.qq.com/s/ovZ5v7jJkqDKSu9xmxwt8w]
+publish_date: 2026-05-07
+tags: [wechat, article, claude, agent, harness, rag, multi-agent]
+review_value: 7
+review_confidence: 7
+review_recommendation: neutral
+sha256: cf1df9001ea56fba395033808693206a78209fa5d649dce8bc1adedd94bb4935
 ---
 
-# Anthropic 上线「做梦」功能，让 Agent 越睡越聪明
-
-## 原创摘要
-
-这份来源卡片记录一篇围绕“Anthropic 上线「做梦」功能，让 Agent 越睡越聪明”的第三方资料，主题标签为wechat、article、claude。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
-
-> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。
+## 技术接入
+- 官方博客：https://claude.com/blog/new-in-claude-managed-agents
+- 开发文档：https://platform.claude.com/docs/en/managed-agents/overview
+- 申请访问 Dreaming：https://claude.com/form/claude-managed-agents
+---
+## 关联概念
+- [[concepts/harness-engineering-framework|Harness Engineering 框架]] — Managed Agents 是 Anthropic 官方 Harness 产品
+- [[concepts/memory-not-rag|Memory 不是 RAG]] — Dreaming 解决的是 memory store 的质量问题
+- [[concepts/model-context-protocol-mcp|MCP (Model Context Protocol)]] — MCP 是连接外部能力的协议层

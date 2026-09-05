@@ -1,5 +1,7 @@
 # Granola — The AI Notepad for back-to-back meetings
 
+## Ch03.004 Granola — The AI Notepad for back-to-back meetings
+
 > 📊 Level ⭐ | 3.8KB | `entities/granola-the-ai-notepad-for-backtoback-meetings.md`
 
 ## 核心要点
@@ -47,7 +49,7 @@ Granola 的产品定位揭示了一个垂直场景 AI 原生应用的机会窗�
 - [Turn Repeated Instructions Into Reusable Skills In Lovable L](https://github.com/QianJinGuo/wiki-public/blob/main/entities/turn-repeated-instructions-into-reusable-skills-in-lovable-l.md)
 - [A 0 Click Exploit Chain For The Pixel 10 When A Door Closes A Window Opens](https://github.com/QianJinGuo/wiki-public/blob/main/entities/a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes-a-window-opens.md)
 
-→ [原文存档](https://go.granola.ai/adops-tldr-tech)
+→ 原文存档
 
 ---
 

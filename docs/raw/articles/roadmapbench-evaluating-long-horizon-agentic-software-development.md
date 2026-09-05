@@ -1,18 +1,17 @@
 ---
-type: source-card
+source_url: https://arxiv.org/abs/2605.15846
+source: newsletter
 title: "RoadmapBench: Evaluating Long-Horizon Agentic Software Development Across Version Upgrades"
-source: "newsletter"
-author: "未标注作者；来源机构见 source"
-source_url: "https://arxiv.org/abs/2605.15846"
-published: "未标注"
-collected: "2026-07-05"
-license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
+ingested: 2026-07-05
+publish_date: 2026-05
+authors: [Allen AI]
+sha256: a8ddef0e961064b3d0ef6af8792b7306f7f5207f13d4718a2eb9843f2adfe6bb
 ---
 
-# RoadmapBench: Evaluating Long-Horizon Agentic Software Development Across Version Upgrades
+# RoadmapBench: Evaluating Long-Horizon Agentic Software Development
 
-## 原创摘要
+Coding agents are increasingly deployed in real software development, where a single version iteration requires months of coordinated work across many files. However, most existing benchmarks focus predominantly on single-issue bug fixes from Python repositories, with coarse pass/fail evaluation outcomes, and thus fail to capture long-horizon, multi-target development at real engineering scale.
 
-这份来源卡片记录一篇围绕“RoadmapBench: Evaluating Long-Horizon Agentic Software Development Across Version Upgrades”的第三方资料，主题标签为相关 AI 工程主题。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
+RoadmapBench presents a benchmark of 115 long-horizon coding tasks grounded in real open-source version upgrades across 17 repositories and 5 programming languages. Each task places the agent on a source-version code snapshot and provides a multi-target roadmap instruction requiring it to implement the functionality introduced in the target version, with a median modification of 3,700 lines across 51 files.
 
-> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。
+A systematic evaluation on thirteen frontier models finds that even the strongest, Claude-Opus-4.7, resolves only 39.1% of tasks, while the weakest achieves merely 5.2%, in stark contrast to existing bug-fix benchmarks, suggesting that long-horizon software development remains a largely unsolved problem.

@@ -2,7 +2,7 @@
 
 > 打造专属模型：PPO → DPO → GRPO，合成数据，课程学习
 
-> 本章收录 **35 篇**实体，按深度递增排列。
+> 本章收录 **38 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,8 +11,8 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 4 |
-| ⭐⭐ 工程师 | 需编程基础 | 8 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 12 |
+| ⭐⭐ 工程师 | 需编程基础 | 9 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 14 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 4 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 7 |
 
@@ -34,7 +34,7 @@
 
 # 强烈推荐的 7 个 神级 Python 库
 
-→ [原文存档](https://mp.weixin.qq.com/s/ZPq8n3lGH7bkoUGOwOWbOQ)
+→ 原文存档
 
 # 强烈推荐的 7 个 神级 Python 库
 
@@ -153,7 +153,7 @@ structlog 把日志从字符串流变成了结构化事件流：
 
 # Predicting Risk in Content Launches: How Data-Driven Insights can Transform Launch Planning
 
-→ [原文存档](https://netflixtechblog.com/predicting-risk-in-content-launches-how-data-driven-insights-can-transform-launch-planning-587b1f2de928?source=rss----2615bd06b42e---4)
+→ 原文存档
 
 # Predicting Risk in Content Launches: How Data-Driven Insights can Transform Launch Planning
 
@@ -189,7 +189,7 @@ This isn’t unexpected — productions are dynamic, facing frequent changes, sc
 
 # Farewell Ai2
 
-→ [原文存档](https://www.interconnects.ai/p/farewell-ai2)
+→ 原文存档
 
 # Farewell Ai2
 
@@ -251,7 +251,7 @@ I have loved and will still love Ai2. Ai2 has a deep culture of caring about the
 - 与 [EMO MoE 预训练涌现模块化](https://github.com/QianJinGuo/wiki-public/blob/main/entities/emo-pretraining-mixture-of-experts-for-emergent-modularity-ai2.md) 同属预训练机制研究族，本文的模态专属 FFN 设计直接关联 MoE 路由结构
 - vision laziness 现象为 [多模态思维链推理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/colt-eccv-2026-latent-thought-chain-multimodal-reasoning.md) 提供训练侧解释：晚期对齐的模型其"推理"可能实为语言先验复述
 
-→ [原文存档](https://arxiv.org/abs/2608.05000)
+→ 原文存档
 
 ## 关联
 - 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
@@ -264,7 +264,7 @@ I have loved and will still love Ai2. Ai2 has a deep culture of caring about the
 
 # 三个理想火枪手创业，打破具身最快百台交付纪录
 
-→ [原文存档](https://mp.weixin.qq.com/s/G3-NDLb4RSrv6V2JlOl25A)
+→ 原文存档
 
 # 三个理想火枪手创业，打破具身最快百台交付纪录
 
@@ -439,7 +439,7 @@ i7 Pro刚进场测试的时候，直接当场“翻车”。
 
 # 小米承办 WPC Qi Plugfest & SRT Event，推动国产无线充电方案融入全球标准体系
 
-→ [原文存档](https://mp.weixin.qq.com/s/e1WFIIolsIMGkmbQSClrqQ)
+→ 原文存档
 
 # 小米承办 WPC Qi Plugfest & SRT Event，推动国产无线充电方案融入全球标准体系
 
@@ -595,7 +595,7 @@ Qi 50W 标准正是无线充电标准向更高功率演进的重要方向。目�
 
 # 全球第一位AI哲学家，在谷歌DeepMind的9年：为AGI安全奔走
 
-→ [原文存档](https://mp.weixin.qq.com/s/LLgpIz6GsCat4OSRGzyB0A)
+→ 原文存档
 
 # 全球第一位AI哲学家，在谷歌DeepMind的9年：为AGI安全奔走
 
@@ -837,7 +837,7 @@ Gabriel 和牛津研
 
 # 看见用户每一步：Session Replay 与热力图让体验优化有据可依
 
-→ [原文存档](https://mp.weixin.qq.com/s/1XceMfDUps_X5Kdk_kmW1w)
+→ 原文存档
 
 # 看见用户每一步：Session Replay 与热力图让体验优化有据可依
 
@@ -990,9 +990,9 @@ Grok对马斯克而言有三个战略价值：X平台AI能力的核心支柱、�
 - [Xai Grok Musk Training New Model Wechat](https://github.com/QianJinGuo/wiki-public/blob/main/entities/xai-grok-musk-training-new-model-wechat.md)
 - [Video Agent Paradigm Compute Talent Flywheel Ethan He 20260606](https://github.com/QianJinGuo/wiki-public/blob/main/entities/video-agent-paradigm-compute-talent-flywheel-ethan-he-20260606.md)
 - [奥特曼最险一战 前女Cto当庭翻脸 Openai权斗彻底打到台前 6Bf26E92E29B](https://github.com/QianJinGuo/wiki-public/blob/main/entities/奥特曼最险一战-前女cto当庭翻脸-openai权斗彻底打到台前-6bf26e92e29b.md)
-- [Jury Dismisses All Claims In Elon Musk S Lawsuit Against Ope](ch01/522-jury-dismisses-all-claims-in-elon-musk-s-lawsuit-against-ope.html)
+- [Jury Dismisses All Claims In Elon Musk S Lawsuit Against Ope](ch01/557-jury-dismisses-all-claims-in-elon-musk-s-lawsuit-against-ope.html)
 
-→ [原文存档](https://x.ai/news/anthropic-compute-partnership)
+→ 原文存档
 
 ---
 
@@ -1008,13 +1008,13 @@ Grok对马斯克而言有三个战略价值：X平台AI能力的核心支柱、�
 |------|---------|------|
 
 ## 相关实体
-- [Stochastic Parrot Thought Experiment](https://github.com/QianJinGuo/wiki-public/blob/main/entities/stochastic-parrot-thought-experiment.md)
+- [Stochastic Parrot Thought Experiment](ch01/258-stochastic-parrot-thought-experiment.html)
 - [While Breathless In Stodgy Viridian](https://github.com/QianJinGuo/wiki-public/blob/main/entities/while-breathless-in-stodgy-viridian.md)
-- [Aws Grpo Rlvr Sagemaker Math Reasoning](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-grpo-rlvr-sagemaker-math-reasoning.md)
+- [Aws Grpo Rlvr Sagemaker Math Reasoning](ch11/219-aws-grpo-rlvr-sagemaker-math-reasoning.html)
 - [Ai True Moat Not Llm But Organization](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-true-moat-not-llm-but-organization.md)
-- [Nvidia Gemma 4 Edge Ai](ch01/220-nvidia-gemma-4-edge-ai.html)
+- [Nvidia Gemma 4 Edge Ai](ch01/232-nvidia-gemma-4-edge-ai.html)
 
-→ [原文存档](https://mp.weixin.qq.com/s/Iu_5--O_MjSSux0Hs_nOzA)
+→ 原文存档
 
 ## 深度分析
 
@@ -1084,9 +1084,9 @@ Allen Institute for AI的Nathan Lambert提出，随着AI系统复杂度增加，
 
 - [elasticpp重塑elasticsearch查询性能的c内核引擎](https://github.com/QianJinGuo/wiki-public/blob/main/entities/elasticpp重塑elasticsearch查询性能的c内核引擎.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
-→ [原文存档](https://mp.weixin.qq.com/s/NSBbtCgWYSsnewpOhcY9UQ)
+→ 原文存档
 
-→ [GEPA优化框架](ch01/603-gepa-optimize-anything.html) — 包含AlphaEvolve等传统LLM进化框架的对比分析
+→ [GEPA优化框架](ch01/639-gepa-optimize-anything.html) — 包含AlphaEvolve等传统LLM进化框架的对比分析
 
 ---
 
@@ -1096,7 +1096,7 @@ Allen Institute for AI的Nathan Lambert提出，随着AI系统复杂度增加，
 
 # 不用人类手写训练框架了！AI自己写代码，训出1B端侧「小钢炮」
 
-> **来源**：机器之心（2026-05-26）| 原文存档：[原文存档](https://mp.weixin.qq.com/s/2tdHV01FL_YGUmZQ12DS2A)
+> **来源**：机器之心（2026-05-26）| 原文存档：原文存档
 
 ## 深度分析
 
@@ -1165,11 +1165,52 @@ MiniCPM5-1B 的特殊之处：
 - [Thousand Token Wood Sim V2 Hackathon](https://github.com/QianJinGuo/wiki-public/blob/main/entities/thousand-token-wood-sim-v2-hackathon.md)
 - [Pilotdeck Agent Os Openbmb Tsinghua](https://github.com/QianJinGuo/wiki-public/blob/main/entities/pilotdeck-agent-os-openbmb-tsinghua.md)
 
-→ [原文存档](https://mp.weixin.qq.com/s/2tdHV01FL_YGUmZQ12DS2A)
+→ 原文存档
 
 ---
 
-## Ch15.013 DeepSeek V4 训练方法论深度解读
+## Ch15.013 EMO: Pretraining mixture of experts for emergent modularity | Ai2
+
+> 📊 Level ⭐⭐ | 5.2KB | `entities/emo-pretraining-mixture-of-experts-for-emergent-modularity-ai2.md`
+
+# EMO: Pretraining mixture of experts for emergent modularity | Ai2
+[Skip to main content ->](https://allenai.org/blog/emo#main-content)
+[Ai2](https://www.allenai.org/)
+
+## 相关实体
+- [Stochastic Parrot Thought Experiment](ch01/258-stochastic-parrot-thought-experiment.html)
+- [While Breathless In Stodgy Viridian](https://github.com/QianJinGuo/wiki-public/blob/main/entities/while-breathless-in-stodgy-viridian.md)
+- [Aws Grpo Rlvr Sagemaker Math Reasoning](ch11/219-aws-grpo-rlvr-sagemaker-math-reasoning.html)
+- [Ai True Moat Not Llm But Organization](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-true-moat-not-llm-but-organization.md)
+- [Nvidia Gemma 4 Edge Ai](ch01/232-nvidia-gemma-4-edge-ai.html)
+
+→ 原文存档
+
+## 深度分析
+
+EMO 的核心创新在于把"模块化"从一个人为先验变成了从数据中自然涌现的特性。传统 MoE 的问题在于：专家专门化的是低层词汇模式（介词、标点）而不是高层语义领域，导致在真实任务中无法单独使用专家子集。EMO 的解法是利用文档边界作为弱监督信号——同一文档的 token 来自同一个语义领域，因此限制它们从同一个专家池中选择。路由器先为每个文档选出一个专家池（平均所有 token 的专家偏好，取最常用的几个），然后该文档所有 token 都只能在这个池内路由。这个机制强迫专家形成语义聚合，而不是词汇聚合 。
+
+全局负载均衡与文档级专家池约束之间的张力是 EMO 训练的关键工程难题。局部负载均衡（micro-batch 内计算）会推 token 在同一文档内分散到不同专家，直接对抗 EMO 的文档内一致性目标。EMO 的解法是把负载均衡的粒度从 micro-batch 提升到全局（多个文档），这样两种目标变为互补：EMO 鼓励同文档 token 用同一专家池，全局负载均衡鼓励不同文档覆盖不同专家。实践中发现全局负载均衡对训练稳定性至关重要 。
+
+文档池大小的随机采样是 EMO 防止过拟合到单一池大小的关键设计。固定池大小会让模型只适应一种专家子集规模，削弱推理时的灵活性。随机采样则让模型在训练时就见过各种规模的专家子集，从而在推理时可以自由选择任意规模的专家子集而不性能崩溃。这个设计让 EMO 支持灵活的"精度-内存权衡"：只需要 12.5% 的专家就能保留接近全模型性能 。
+
+专家选择成本的极低是 EMO 最有实践价值的发现之一。用单个 few-shot 示例就能识别出与完整验证集选择的专家子集相当的模块。这意味着在部署时，可以极低成本地为新任务构建专用专家子集，而不需要大规模的验证数据。结合 Easy-EP 等专家剪枝方法还能进一步提升性能 。
+
+## 实践启示
+
+1. **在训练 MoE 时，如果希望专家按语义领域组织，用文档边界作为监督信号比人工定义领域标签更有效**。文档级专家池约束让专家自己发现语义聚合，不需要预先标注领域数据，同时避免了预定义领域带来的过强人类偏见 。
+
+2. **负载均衡的粒度需要仔细设计——局部负载均衡与模块化目标冲突时，应将计算粒度提升到全局**。在 micro-batch 内做负载均衡会破坏文档内专家一致性，需要跨文档做全局负载均衡才能同时满足模块化和负载均衡两个目标 。
+
+3. **训练时随机采样池大小，可以让模型支持推理时的灵活精度-内存权衡**。如果固定池大小，模型只适应一种配置；随机采样让模型见过各种规模，在部署时可以根据硬件条件选择合适的专家子集（全模型性能保留 97%，仅用 12.5% 专家） 。
+
+4. **为新任务选择专家子集时，不需要完整验证集——一个 few-shot 示例足以识别有效模块**。这使得为特定领域或任务动态构建轻量高效的专业模型成为可能，成本极低 。
+
+5. **在需要部署大规模 MoE 的场景，优先考虑 EMO 这类模块化 MoE 而不是标准 MoE**。标准 MoE 在选择性专家使用下性能急剧下降，而 EMO 即使只用 12.5% 专家也只下降约 3%，且与 Easy-EP 等剪枝方法互补，可以进一步推进帕累托前沿 。
+
+---
+
+## Ch15.014 DeepSeek V4 训练方法论深度解读
 
 > 📊 Level ⭐⭐⭐ | 13.7KB | `entities/deepseek-v4-training-methodology.md`
 
@@ -1286,14 +1327,14 @@ V4 的实现用激进前 8 步 + 温和后 2 步做精度平衡，这个工程�
 2. **小团队可以通过 Specialist + OPD 路径训练大模型能力**：不需要一开始就训超大模型，训多个小专家再蒸馏合并，是资源受限团队可行的路径。
 
 ## Cross-links
-- → [原文存档](https://mp.weixin.qq.com/s/BELLFDV6hlmmFoAcJy1RZg)
+- → 原文存档
 - → 
 - → [灾难性遗忘](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/catastrophic-forgetting.md)
 - → [DeepSeek V4 Triton FP4 优化](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-v4-triton-fp4-optimization.md)
-- → [ds4.c — DeepSeek V4 本地推理](ch01/665-ds4c-deepseek-v4-antirez.html)
+- → [ds4.c — DeepSeek V4 本地推理](ch01/702-ds4c-deepseek-v4-antirez.html)
 
 ## 相关实体
-- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](ch01/437-deepseek-v4.html)
+- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](ch01/615-deepseek-v4.html)
 
 - [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-v4-pro-vs-claude.md)
 - [Redis之父下场，给DeepSeek V4单独造了一台推理引擎](https://github.com/QianJinGuo/wiki-public/blob/main/entities/redis之父下场给deepseek-v4单独造了一台推理引擎.md)
@@ -1301,7 +1342,7 @@ V4 的实现用激进前 8 步 + 温和后 2 步做精度平衡，这个工程�
 
 ---
 
-## Ch15.014 NVIDIA Blackwell MLPerf Training 6.0 基准测试结果（2026-06）
+## Ch15.015 NVIDIA Blackwell MLPerf Training 6.0 基准测试结果（2026-06）
 
 > 📊 Level ⭐⭐⭐ | 11.2KB | `entities/nvidia-blackwell-mlperf-training-6-0-benchmark-results-2026-06.md`
 
@@ -1387,17 +1428,17 @@ NVIDIA 在 Nemotron 3 Ultra（5,500 亿参数）上使用 NVFP4 完成预训练�
 
 ## 相关实体
 
-- [AWS GRPO RLVR SageMaker](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-grpo-rlvr-sagemaker-math-reasoning.md) — AWS 后训练栈
-- [Foundation Model Building Blocks](ch03/036-foundation-model-building-blocks.html) — 通用基础组件
+- [AWS GRPO RLVR SageMaker](ch11/219-aws-grpo-rlvr-sagemaker-math-reasoning.html) — AWS 后训练栈
+- [Foundation Model Building Blocks](ch03/039-foundation-model-building-blocks.html) — 通用基础组件
 - [750B MoE PD 分离推理 EFA vs RoCE](https://github.com/QianJinGuo/wiki-public/blob/main/entities/750b-moe-pd-disaggregation-aws-efa-vs-roce.md) — AWS 上的 MoE 推理对比
 - [Microsoft / GitHub / AWS AI 算力承压](https://github.com/QianJinGuo/wiki-public/blob/main/entities/runtimewire-microsoft-github-aws-ai-capacity-crunch-2026-06.md) — 超大规模算力承压事件
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
 
-> [原文存档](https://blogs.nvidia.com/blog/blackwell-mlperf-training-6-0/)
+> 原文存档
 
 ---
 
-## Ch15.015 Yann Dubois（OpenAI Post-Training）× Matt Turck 深度访谈：GPT-5.5、RL 突破、后训练流水线
+## Ch15.016 Yann Dubois（OpenAI Post-Training）× Matt Turck 深度访谈：GPT-5.5、RL 突破、后训练流水线
 
 > 📊 Level ⭐⭐⭐ | 11.0KB | `entities/yann-dubois-openai-post-training-interview.md`
 
@@ -1520,13 +1561,13 @@ Dubois 提到的一个关键设计哲学是：能力（capability）和安全性
 
 ---
 
-## Ch15.016 SFT+DPO 双阶段微调：Qwen3-1.7B Tool Calling 精度提升方案
+## Ch15.017 SFT+DPO 双阶段微调：Qwen3-1.7B Tool Calling 精度提升方案
 
 > 📊 Level ⭐⭐⭐ | 9.2KB | `entities/aws-sagemaker-sft-dpo-tool-calling.md`
 
 # SFT+DPO 双阶段微调：Qwen3-1.7B Tool Calling 精度提升方案
 
-> 原文存档：[原文存档](https://aws.amazon.com/blogs/machine-learning/improve-your-agents-tool-calling-accuracy-with-sft-and-dpo-on-amazon-sagemaker-ai)
+> 原文存档：原文存档
 
 > **Core insight**: 通过 NVIDIA When2Call 数据集进行 Spectrum SFT 后再进行 DPO 偏好优化，Qwen3-1.7B 的 tool calling 精度从 41.57% 提升至 71.06%，超越参数量为其 2 倍的 Llama 3.2 3B；SFT 建立基础能力，DPO 在偏好数据上进一步校准输出分布
 
@@ -1594,15 +1635,15 @@ SFT→DPO 两阶段之间可能有数小时的调试和评估间隙。设置 kee
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/llm-core-technology.md)
 ## 相关引用
-→ [原文存档](https://aws.amazon.com/blogs/machine-learning/improve-your-agents-tool-calling-accuracy-with-sft-and-dpo-on-amazon-sagemaker-ai)
+→ 原文存档
 
 ---
 
-## Ch15.017 无惧Off-Policy偏移！Bengio团队解绑后训练，大模型RL提速50倍
+## Ch15.018 无惧Off-Policy偏移！Bengio团队解绑后训练，大模型RL提速50倍
 
 > 📊 Level ⭐⭐⭐ | 8.6KB | `entities/trajectory-balance-asynchrony-tba-bengio-papweekly.md`
 
-> -> [原文存档](https://mp.weixin.qq.com/s/8IxT4DleAsDbB2FSyy5W0w)
+> -> 原文存档
 
 # TBA：解绑后训练，RL 提速 50 倍
 
@@ -1689,19 +1730,19 @@ TBA 把采样从训练闭环里解耦出来——这是 LLM RL 后训练数量�
 ## 相关实体
 - [On Policy Distillation Vs Offline Distillation Loster](https://github.com/QianJinGuo/wiki-public/blob/main/entities/on-policy-distillation-vs-offline-distillation-loster.md)
 - [Overcoming Reward Signal Challenges Verifiable Rewards Based Reinforcement Learn](https://github.com/QianJinGuo/wiki-public/blob/main/entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md)
-- [Reinforcing Recursive Language Models Alphaxiv](ch01/520-reinforcing-recursive-language-models-alphaxiv.html)
+- [Reinforcing Recursive Language Models Alphaxiv](ch01/555-reinforcing-recursive-language-models-alphaxiv.html)
 - [Skillos](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skillos.md)
 - [Yann Dubois Openai Post Training Interview](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yann-dubois-openai-post-training-interview.md)
 
 ---
 
-## Ch15.018 Is One Layer Enough? 单层 RL 训练可超越全参数训练
+## Ch15.019 Is One Layer Enough? 单层 RL 训练可超越全参数训练
 
 > 📊 Level ⭐⭐⭐ | 8.1KB | `entities/rl-single-layer-training-full-parameter.md`
 
 # Is One Layer Enough? 单层 RL 训练可超越全参数训练
 
-→ [原文存档](https://mp.weixin.qq.com/s/u6-CbyiQ-uhXi6cwyNlomA)
+→ 原文存档
 
 > 明尼苏达大学、北京大学和 Amazon 团队在 arxiv 2607.01232 中，通过系统性逐层研究揭示：RL 后训练的收益高度集中在 Transformer 中间层（深度 40–60%），训练单个层即可匹敌甚至超越全参数 RL 训练——这从根本上挑战了「能力提升需要整个网络协调适应」的隐含假设。
 
@@ -1751,18 +1792,93 @@ Transformer 功能沿深度分层：底层做 token 级局部句法与低层特�
 
 - [2026 年面向 LLM 的 RL 方法总结](https://github.com/QianJinGuo/wiki-public/blob/main/entities/2026-llm-rl-algorithms-deeplog-imba-ppo-dpo-grpo-marl.md) — 从 PPO 到 GRPO 的 RL 后训练全览
 - [Agentic RL 六框架实践地图](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentic-rl-frameworks-practices-long-horizon-wolfe-2026.md) — 长程智能体训练框架对比
-- [AWS GRPO/RLVR 数学推理实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-grpo-rlvr-sagemaker-math-reasoning.md) — GRPO/RLVR 的真实推理落地
+- [AWS GRPO/RLVR 数学推理实践](ch11/219-aws-grpo-rlvr-sagemaker-math-reasoning.html) — GRPO/RLVR 的真实推理落地
 - [AlphaXIV：RL 时代的强化学习](https://github.com/QianJinGuo/wiki-public/blob/main/entities/alphaxiv-reinforcement-learning-for-rlms.md) — RL for LLM 的宏观方法迭代
 
 ---
 
-## Ch15.019 What I've been building: ATOM Report, post-training course, finishing my book, and ongoing research
+## Ch15.020 LLM Post-Training全景指南：从RLHF到GRPO再到AgenticRL
+
+> 📊 Level ⭐⭐⭐ | 7.6KB | `entities/llm-post-training-full-guide.md`
+
+## 核心框架
+**SFT教模型"说什么"**，偏好优化教模型"怎么选"，**RL教模型"怎么想"**——三者层层递进，构成完整Post-training体系。
+
+## 训练方法演进
+### SFT（监督微调）
+教会模型输出的格式和风格，本质是模仿，无法超越训练数据的能力。LoRA/QLoRA只需训练0.1%~1%参数。
+
+### RLHF（三步）
+1. SFT冷启动
+2. 训练Reward Model（人类偏好排序）
+3. PPO优化（四模型：Policy + Reference + Reward + Critic）
+
+### GRPO（DeepSeek 2025）
+用相对排序取代Critic模型，减少30%~50%计算开销。**DeepSeek-R1**首次证明纯RL（GRPO + RLVR，不需要SFT）就能涌现推理能力（Aha moment）。
+
+### DPO及变体（Offline）
+DPO用分类损失替代RL，但无法从探索中学习。**SimPO**稳定梯度、**ORPO**处理类别不平衡、**KTO**只需Pointwise标签适用于高风险领域。
+
+### DAPO（解决Entropy Collapse）
+四大改进：Clip-Higher（放宽正样本上界）、Dynamic Sampling（过滤无区分度prompt）、Overlong Filtering（超长回答不惩罚）、Token-level Loss（按token计算）。
+
+## 完整流水线
+```
+SFT冷启动 → RL推理训练(GRPO/DAPO+RLVR) → 偏好对齐(DPO/RLHF) → 拒绝采样+蒸馏
+```
+
+## 前沿方向
+- **Agentic RL**：Search-R1/ReTool，从单轮问答到多轮推理+工具调用
+- **Reward Model演进**：PRM（步骤评分）、Generative RM（LLM as judge）、Multi-objective RM
+- **Synthetic Data**："生成-验证-训练"循环成为标准范式
+
+## 深度分析
+### 从SFT到RL的范式跃迁
+SFT本质是模仿学习，模型只能学会训练数据中已经存在的知识和能力，无法涌现新能力。RL则是真正让模型学习"决策"——在给定状态下探索不同动作，根据奖励信号调整策略。这解释了为什么DeepSeek-R1-Zero能通过纯RL涌现出训练数据中并不存在的"Aha moment"自我反思能力。
+
+### GRPO vs PPO：计算效率的实质
+GRPO用相对排序替代PPO的Critic模型，节省30%~50%计算开销，但核心价值不在节省资源，而在于打破了PPO的四模型架构对探索空间的限制。当Critic模型拟合价值函数时，它天然会抑制那些Reward Model评分接近的回答，压缩策略熵。GRPO直接用G个样本的相对排序计算Advantage，绕过了价值函数的中间层，允许策略更自由地探索。
+
+### DAPO对Entropy Collapse的针对性修复
+熵坍塌是RL训练中策略快速收敛到确定性策略的现象。传统PPO/GRPO的clipping机制只限制负advantage的采样，对正advantage样本的过度利用没有约束。DAPO的Clip-Higher策略专门放宽正样本上界，本质上是鼓励策略在已被证明有效的动作附近保持一定的随机性，而不是迅速收敛到单一最优动作。这是一种有节制的" exploitation with controlled exploration"平衡。
+
+### Agentic RL的核心挑战
+从单轮问答到多轮工具调用，Agentic RL面临三个根本性挑战：多轮交互的credit assignment（如何将最终奖励归因到中间每一步动作）、稀疏奖励（不像数学/代码有明确验证器，多数场景缺乏可计算的奖励信号）、推理与工具使用的资源竞争（CoT消耗token预算，影响实际任务完成效率）。这些挑战决定了Agentic RL短期内难以成为主流训练范式，更多是特定垂直场景的定制化方案。
+
+## 实践启示
+1. **训练路线选择**：若目标是在数学/代码等可验证领域提升推理能力，优先考虑GRPO+RLVR组合，跳过SFT冷启动；若需要对齐通用对话风格，则保留SFT作为冷启动。
+2. **Entropy监控是训练稳定性指标**：在GRPO/DAPO训练中，监控策略熵变化比单纯看Reward分数更能预测训练健康度——熵快速下降通常是熵坍塌的前兆。
+3. **小模型蒸馏的工程价值**：DeepSeek-R1证明大模型推理能力可蒸馏到1.5B小规模模型，这对边缘部署场景有重大实际意义。实践中可在阶段四用拒绝采样过滤高质量数据，用更少参数达到接近大模型的效果。
+4. **Reward Model设计优先于算法选择**：无论是PPO/GRPO还是DPO，奖励信号质量决定了上限。在可验证领域优先考虑RLVR（可验证奖励），在开放域优先投入Generative RM的建设。
+5. **混合训练策略**：实践中Online RL（PPO/GRPO）与Offline DPO通常结合使用——先用DPO建立基础能力，再用Online RL微调提升上限。纯Online训练方差大、不稳定，纯Offline则容易遇到能力天花板。
+
+## 相关概念
+- [Scaling Laws](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/scaling-laws.md) — 扩展定律与训练效率
+- [Agent自我改进六条路](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-self-improvement-six-mechanisms.md) — RL训练与Agent对齐
+- [百万年薪学习计划](https://github.com/QianJinGuo/wiki-public/blob/main/entities/learning-path-to-senior.md) — 学习路线参考
+
+## 相关实体
+- [百度文心大模型后训练进化（ERNIE 3.0→5.0）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/baidu-wenxin-post-training-evolution.md)
+
+→ 原文存档
+
+- [Token 退化问题：分词器与后训练数据分布失配](https://github.com/QianJinGuo/wiki-public/blob/main/entities/minimax-token-degradation-jiqia.md)
+- [Self Taught Rlvr](ch01/562-self-taught-rlvr.html)
+- [Llm Rl Algorithms Ppo Dpo Grpo Marl Evolution 2026](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026.md)
+- [Slim Cuhk Skill Lifecycle Agentic Rl](https://github.com/QianJinGuo/wiki-public/blob/main/entities/slim-cuhk-skill-lifecycle-agentic-rl.md)
+- [frontier post-training recipe review with finbarr timbers](https://github.com/QianJinGuo/wiki-public/blob/main/entities/finbarr-timbers-frontier-post-training-recipe-review-2026.md)
+- [goodfire predictive data debugging：可解释性指导 post-training 数据塑形](https://github.com/QianJinGuo/wiki-public/blob/main/entities/goodfire-predictive-data-debugging-post-training-anatomy-2026.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/reinforcement-learning-rlhf.md)
+
+---
+
+## Ch15.021 What I've been building: ATOM Report, post-training course, finishing my book, and ongoing research
 
 > 📊 Level ⭐⭐⭐ | 7.3KB | `entities/what-ive-been-building-atom-report-post-training-course-fini.md`
 
 # What I've been building: ATOM Report, post-training course, finishing my book, and ongoing research
 
-→ [原文存档](https://www.interconnects.ai/p/what-ive-been-building-atom-report)
+→ 原文存档
 
 ## 摘要
 
@@ -1820,7 +1936,7 @@ Meta-RL with Self-Reflection 的核心洞察是：当前 LLM 的 RL 训练完全
 - RLHF
 - Post-training
 - Agent 记忆系统
-- [Karpathy: Agentic Engineering](ch04/118-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy: Agentic Engineering](ch04/356-karpathy-vibe-coding-agentic-engineering.html)
 - MOC: Evaluation Landscape
 
 ---
@@ -1830,7 +1946,7 @@ Meta-RL with Self-Reflection 的核心洞察是：当前 LLM 的 RL 训练完全
 
 ---
 
-## Ch15.020 Generalization Dynamics of LM Pre-training — Jiaxin Wen
+## Ch15.022 Generalization Dynamics of LM Pre-training — Jiaxin Wen
 
 > 📊 Level ⭐⭐⭐ | 6.9KB | `entities/generalization-dynamics-of-lm-pre-training-jiaxin-wen.md`
 
@@ -1894,15 +2010,15 @@ Meta-RL with Self-Reflection 的核心洞察是：当前 LLM 的 RL 训练完全
 - [Yann Dubois Openai Post Training Interview](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yann-dubois-openai-post-training-interview.md)
 - [Olmo Hybrid Gdn Wave 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/olmo-hybrid-gdn-wave-2026.md)
 
-→ [原文存档](https://jiaxin-wen.github.io/blog/generalization-dynamics)
+→ 原文存档
 
 ---
 
-## Ch15.021 Reinforcing Recursive Language Models | alphaXiv
+## Ch15.023 Reinforcing Recursive Language Models | alphaXiv
 
 > 📊 Level ⭐⭐⭐ | 6.5KB | `entities/reinforcing-recursive-language-models-alphaxiv.md`
 
-> -> [原文存档](https://www.alphaxiv.org/blog/reinforcement-learning-for-rlms)
+> -> 原文存档
 
 ## 核心要点
 - 通过 RL 在单一共享策略下训练父 RLM 和子 RLM
@@ -1932,7 +2048,7 @@ Meta-RL with Self-Reflection 的核心洞察是：当前 LLM 的 RL 训练完全
    Stepwise 结构意味着每个 turn 独立计算 gradient，传统的 loss 平滑曲线可能掩盖问题。关注 GRPO clip rate——正常区间 1%-20%，如果出现骤降或台阶式突变，通常是 logprob 计算出现了系统性偏差 。
 5. **生产部署 RLM 时优先考虑延迟而非单次 accuracy**
    RL fine-tuned 4B RLM 的 eval score（0.60）略低于 Claude Sonnet 4.6（0.607），但延迟从 60s 降至 7s（8.5x 提升）。在长上下文、多论文并行处理场景下，wall-clock time 的改善往往是产品是否可用的决定性因素 。
-→ [原文存档](https://www.alphaxiv.org/blog/reinforcement-learning-for-rlms)
+→ 原文存档
 
 ## 相关实体
 - [Language Models and Meaning](https://github.com/QianJinGuo/wiki-public/blob/main/entities/stochastic-parrot-language-models-and-meaning.md)
@@ -1940,7 +2056,7 @@ Meta-RL with Self-Reflection 的核心洞察是：当前 LLM 的 RL 训练完全
 
 ---
 
-## Ch15.022 百度文心大模型后训练进化（ERNIE 3.0→5.0）
+## Ch15.024 百度文心大模型后训练进化（ERNIE 3.0→5.0）
 
 > 📊 Level ⭐⭐⭐ | 6.5KB | `entities/baidu-wenxin-post-training-evolution.md`
 
@@ -1990,7 +2106,7 @@ KV-Normality 问题是 Transformer 训练不稳定的重要来源之一（KL div
 
 ## 交叉参考
 - [Skill Design Patterns](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-design-patterns.md) — Anthropic 14 模式中的 RL 后训练相关策略对比
-- [原文存档](https://mp.weixin.qq.com/s/mU6w3HnTX6wU5Z6wfAFHwg)
+- 原文存档
 
 ## 相关实体
 - [LLM Post-Training全景指南：从RLHF到GRPO再到AgenticRL](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-post-training-full-guide.md)
@@ -1999,7 +2115,42 @@ KV-Normality 问题是 Transformer 训练不稳定的重要来源之一（KL div
 
 ---
 
-## Ch15.023 Heidi Health 临床 AI 微调：小模型通过偏好信号达前沿水平
+## Ch15.025 Overcoming Reward Signal Challenges: Verifiable Rewards-based RL with GRPO on SageMaker AI
+
+> 📊 Level ⭐⭐⭐ | 6.1KB | `entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md`
+
+> -> 原文存档
+
+## 标签
+#aws #sagemaker #reinforcement-learning #grpo #rlhf
+**原文**: [Overcoming Reward Signal Challenges Verifiable Rewards Based Reinforcement Learn](https://github.com/QianJinGuo/wiki-public/blob/main/entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md)(raw/articles/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md)
+
+## 深度分析
+1. **奖励信号可靠性决定 RL 上限**：传统 RL 的核心瓶颈在于奖励函数不精确或不完整时，模型会通过"奖励黑客"（reward hacking）找到非预期的最大化方式，而非达成真实目标。RLVR 通过程序化、可验证的规则函数取代人类评分，实现客观、可重现的反馈，从根本上堵住了这一漏洞。
+2. **双奖励系统分工明确**：文章提出的 format_reward_func_qa（格式奖励，0.5分）和 correctness_reward_func_qa（正确性奖励，1.0分）形成互补——前者引导模型学习规范的输出格式（如 `#### The final answer is [number]`），后者验证数学计算结果。这种分工使训练信号清晰分离：格式先行牵引搜索空间，正确性后验提供最终优化方向。
+3. **Few-shot 与 GRPO 的协同激活机制**：实验揭示了一个关键的阈值效应——0-shot（6%）和 2-shot（3%）甚至低于基线，只有在 4-shot（33%）才显著跃升，8-shot（41%）达到峰值。这说明 GRPO 训练的推理模式需要足够数量的样本才能激活，few-shot 示例提供了"思考模板"缩小探索空间，而 GRPO 的组内对比学习则从中提炼最优推理路径。
+4. **组内相对优化降低训练方差**：GRPO 将训练数据按任务维度分组，在每个组内基准上优化，而非跨全体数据。这种分组感知优化（group-aware optimization）减少了方差、加速收敛，并产生跨类别表现一致的模型。结合 RLVR 的自动化奖励，GRPO 能同时处理多个维度的奖励信号，实现并行改进。
+5. **可验证奖励的泛化边界**：RLVR 最适合输出可被客观验证的领域——数学推理、代码生成、符号操作等。这类任务的ground truth明确存在，程序化比较可行。对比主观评价（对话质量、创意写作），验证型任务的奖励黑客风险低得多，因为规则本身即定义了成功标准。
+
+## 实践启示
+1. **将任务目标分解为可验证子规则**：不要依赖单一奖励函数，而是根据输出结构（如格式）和内容（如答案正确性）分别设计独立奖励函数。格式奖励（0.5分）先行引导模型学习规范输出，再以正确性奖励（1.0分）提供最终优化方向，分工明确可减少训练早期reward hacking风险。
+2. **优先选择具有客观验证标准的任务场景**：RLVR 的有效性高度依赖任务的客观可验证性——答案唯一且机器可判（如数学、代码执行、符号推理）。对于缺乏明确 ground truth 的主观任务（如对话风格），应考虑结合人类反馈（RLHF）或设计代理奖励（surrogate reward），而非直接套用 RLVR。
+3. **确保 few-shot 示例数量达到临界阈值**：实验证明 4-shot 以下几乎无效果，8-shot 才达到峰值。在设计提示工程时，需要通过实验找到本任务的激活阈值——样本太少 GRPO 组内对比无法形成有效学习信号，样本太多则增加上下文成本和噪声。
+4. **使用 QLoRA 降低 RLVR 训练资源门槛**：文中使用 QLoRA（load_in_4bit: true，lora_r: 16）配合 GRPO 训练 Qwen2.5-0.5B，显著降低显存占用和训练时间，同时保留可接受的精度。这是将 RLVR 方法落地到资源受限场景的关键工程实践。
+5. **配置 DeepSpeed ZeRO-3 + HuggingFace Accelerate 实现分布式扩展**：当模型规模超过单卡容量时，使用 DeepSpeed ZeRO-3 分片优化器状态、梯度和参数，配合 HuggingFace Accelerate 自动处理多卡通信和设备管理。可通过 `accelerate launch --config_file accelerate_configs/deepspeed_zero3.yaml --num_processes ${NUM_GPUS}` 启动多 GPU 训练。
+
+## 关联阅读
+## 相关实体
+- [Build Real Time Voice Applications With Amazon Sagemaker Ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-real-time-voice-applications-with-amazon-sagemaker-ai.md)
+- [End To End Encrypted Ml Inference Sagemaker Fhe](https://github.com/QianJinGuo/wiki-public/blob/main/entities/end-to-end-encrypted-ml-inference-sagemaker-fhe.md)
+- [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagemaker.md)
+- [Aws Grpo Rlvr Sagemaker Math Reasoning](ch11/219-aws-grpo-rlvr-sagemaker-math-reasoning.html)
+- [Yann Dubois Openai Post Training Interview](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yann-dubois-openai-post-training-interview.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/reinforcement-learning-rlhf.md)
+
+---
+
+## Ch15.026 Heidi Health 临床 AI 微调：小模型通过偏好信号达前沿水平
 
 > 📊 Level ⭐⭐⭐ | 6.1KB | `entities/heidi-health-clinical-ai-model-fine-tuning-frontier-parity.md`
 
@@ -2057,14 +2208,14 @@ Evidence 是 Heidi 微调过的最难模型，也是第一个 agentic 模型。�
 
 - [LLM RL 算法综述](https://github.com/QianJinGuo/wiki-public/blob/main/entities/2026-llm-rl-algorithms-deeplog-imba-ppo-dpo-grpo-marl.md) — DPO 作为本文核心训练方法的算法背景
 - [Amazon Nova Lite 微调](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-nova-lite-fine-tuning-cost-effective-vision-detection-model-tuning-case-and-practice.md) — 另一个垂直领域微调的工程实践
-- [递归强化语言模型](ch01/520-reinforcing-recursive-language-models-alphaxiv.html) — 奖励模型与偏好学习的理论框架
+- [递归强化语言模型](ch01/555-reinforcing-recursive-language-models-alphaxiv.html) — 奖励模型与偏好学习的理论框架
 - [腾讯 Token 经济学](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tencent-token-economics-ai-productivity.md) — AI 模型的成本-质量权衡分析
 
-→ [原文存档](https://www.heidihealth.com/blog/clinical-ai-model-fine-tuning)
+→ 原文存档
 
 ---
 
-## Ch15.024 Notes on pretraining parallelisms and failed training runs.
+## Ch15.027 Notes on pretraining parallelisms and failed training runs.
 
 > 📊 Level ⭐⭐⭐ | 5.7KB | `entities/notes-on-pretraining-parallelisms-and-failed-training-runs.md`
 
@@ -2076,7 +2227,7 @@ Evidence 是 Heidi 微调过的最难模型，也是第一个 agentic 模型。�
 - [Gemma 4 Qat Models Optimizing Compression](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gemma-4-qat-models-optimizing-compression.md)
 - [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-harnesses-and-post-training-close-the-open-weight-bug-finding-gap-20260606.md)
 
-→ [原文存档](https://www.dwarkesh.com/p/notes-on-pretraining-parallelisms)
+→ 原文存档
 
 ## 深度分析
 ### 因果性破坏（Causality Breaking）
@@ -2112,7 +2263,7 @@ GPT-4 训练初期的一个致命 Bug 正是源于此：FP16 的尾数位在数�
 
 ---
 
-## Ch15.025 在线蒸馏OPD vs 离线蒸馏SFT：数学原理与实战优势
+## Ch15.028 在线蒸馏OPD vs 离线蒸馏SFT：数学原理与实战优势
 
 > 📊 Level ⭐⭐⭐⭐ | 14.7KB | `entities/on-policy-distillation-vs-offline-distillation-loster.md`
 
@@ -2262,13 +2413,13 @@ OPD虽然解决了Mode-Covering问题，但引入了自己的隐患：Mode Colla
 - [Ettin Reranker Family](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ettin-reranker-family.md)
 - [Rag Chunking Vectorization Rerank Distillation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-chunking-vectorization-rerank-distillation.md)
 - [Apo Autonomous Preference Optimization](https://github.com/QianJinGuo/wiki-public/blob/main/entities/apo-autonomous-preference-optimization.md)
-- [Introducing The Ettin Reranker Family](ch01/737-introducing-the-ettin-reranker-family.html)
+- [Introducing The Ettin Reranker Family](ch01/775-introducing-the-ettin-reranker-family.html)
 
-→ [原文存档](https://mp.weixin.qq.com/s/JljnDWerzMzlUl0BMblKXg)
+→ 原文存档
 
 ---
 
-## Ch15.026 RL Beyond the Verifiable: 当奖励信号无法自动验证时
+## Ch15.029 RL Beyond the Verifiable: 当奖励信号无法自动验证时
 
 > 📊 Level ⭐⭐⭐⭐ | 13.5KB | `entities/rl-beyond-the-verifiable-tanayj.md`
 
@@ -2483,21 +2634,21 @@ OpenRubrics 等工作现在专注于规模化生成这些评分标准。这是�
 
 ## 相关实体
 
-- [Self-Taught RLVR](ch01/527-self-taught-rlvr.html) — 自监督 RLVR 训练方法
-- [AWS GRPO RLVR](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-grpo-rlvr-sagemaker-math-reasoning.md) — AWS 在 SageMaker 上实现的 RLVR
+- [Self-Taught RLVR](ch01/562-self-taught-rlvr.html) — 自监督 RLVR 训练方法
+- [AWS GRPO RLVR](ch11/219-aws-grpo-rlvr-sagemaker-math-reasoning.html) — AWS 在 SageMaker 上实现的 RLVR
 - [Verifiable Rewards RL](https://github.com/QianJinGuo/wiki-public/blob/main/entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md) — 可验证奖励 RL 的技术细节
 
-→ [原文存档](http://www.tanayj.com/p/rl-beyond-the-verifiable)
+→ 原文存档
 
 ---
 
-## Ch15.027 ICML 2026 | PRISM: Parallel Residual Iterative Sequence Model
+## Ch15.030 ICML 2026 | PRISM: Parallel Residual Iterative Sequence Model
 
 > 📊 Level ⭐⭐⭐⭐ | 10.4KB | `entities/icml-2026-prism-parallel-residual-iterative-sequence-model.md`
 
 # ICML 2026 | PRISM: Parallel Residual Iterative Sequence Model
 
-> **核心洞察**：PRISM 揭示了 TTT-MLP 高表达力（"步长 × 残差 × 方向"多步迭代）与串行瓶颈是**同一根因的两面**，通过 anchor 代理消除 token 间串行 + 闭合式预计算消除 step 间串行，实现 TTT 级别质量 × GDN 级别速度。[原文存档](https://mp.weixin.qq.com/s/luHnepErnw3Ujfjcr5YIQg)
+> **核心洞察**：PRISM 揭示了 TTT-MLP 高表达力（"步长 × 残差 × 方向"多步迭代）与串行瓶颈是**同一根因的两面**，通过 anchor 代理消除 token 间串行 + 闭合式预计算消除 step 间串行，实现 TTT 级别质量 × GDN 级别速度。原文存档
 
 ## 问题背景
 
@@ -2636,11 +2787,11 @@ PRISM 的"基础迭代 + low rank 旁路"结构与 LoRA 形式完全对应：冻
 - [Olmo Hybrid and the Hybrid Architecture Wave (2026)](https://github.com/QianJinGuo/wiki-public/blob/main/entities/olmo-hybrid-gdn-wave-2026.md) — 同一架构趋势下 GDN 3:1 混合的工业实践
 - [最新开放模型快照](https://github.com/QianJinGuo/wiki-public/blob/main/entities/interconnects-latest-open-artifacts-20-new-orgs-new-types-of-models-with-nemotron-super-sarvam.md) — Nemotron 3 Nano 线性架构对比
 
-→ [原文存档](https://mp.weixin.qq.com/s/luHnepErnw3Ujfjcr5YIQg)
+→ 原文存档
 
 ---
 
-## Ch15.028 NVIDIA-ZPPO: Zone of Proximal Policy Optimization
+## Ch15.031 NVIDIA-ZPPO: Zone of Proximal Policy Optimization
 
 > 📊 Level ⭐⭐⭐⭐ | 6.8KB | `entities/nvidia-zppo-zone-proximal-policy-optimization.md`
 
@@ -2741,11 +2892,11 @@ ZPPO 的实验结果进一步证实了一个趋势：naive knowledge distillatio
 - [NVIDIA ZPPO](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-zppo-zone-proximal-policy-optimization.md) — 本实体
 - [LLM RL 算法演进](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026.md) — LLM 强化学习训练范式
 
-→ [原文存档](https://byungkwanlee.github.io/ZPPO-page/)
+→ 原文存档
 
 ---
 
-## Ch15.029 Generalization Dynamics of LM Pre-training — Jiaxin Wen
+## Ch15.032 Generalization Dynamics of LM Pre-training — Jiaxin Wen
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 27.9KB | `entities/generalization-dynamics-lm-pretraining.md`
 
@@ -3121,17 +3272,17 @@ Mode-hopping 在不同数据集上的普遍性如何？例如，在 Flipped Answ
 - [New Ai Lock In](https://github.com/QianJinGuo/wiki-public/blob/main/entities/new-ai-lock-in.md)
 - [Ai Driven Layoffs Business Sense Cio](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-driven-layoffs-business-sense-cio.md)
 
-→ [原文存档](https://jiaxin-wen.github.io/blog/generalization-dynamics)
+→ 原文存档
 
 ---
 
-## Ch15.030 Generalization Dynamics of LM Pre-training — Jiaxin Wen
+## Ch15.033 Generalization Dynamics of LM Pre-training — Jiaxin Wen
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 22.3KB | `entities/generalization-dynamics-pre-training-jiaxin-wen.md`
 
 ## 核心要点
 
-- source: [原文存档](https://jiaxin-wen.github.io/blog/generalization-dynamics)
+- source: 原文存档
 - review: v=9 × c=9 = 81
 - 作者：Jiaxin Wen, Zhengxuan Wu, Dawn Song, Lijie Chen
 - 研究模型：OLMo3 (7B/32B) 和 Apertus (8B/70B)
@@ -3143,7 +3294,7 @@ Mode-hopping 在不同数据集上的普遍性如何？例如，在 Flipped Answ
 - [Generalization Dynamics Lm Pretraining](https://github.com/QianJinGuo/wiki-public/blob/main/entities/generalization-dynamics-lm-pretraining.md)
 - [Yann Dubois Openai Post Training Interview](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yann-dubois-openai-post-training-interview.md)
 
-→ [原文存档](https://jiaxin-wen.github.io/blog/generalization-dynamics)
+→ 原文存档
 
 ## 研究背景与动机
 
@@ -3157,7 +3308,7 @@ Mode-hopping 在不同数据集上的普遍性如何？例如，在 Flipped Answ
 
 **关键反例**：在"answer+1"评估任务中，OLMo3 32B 在 2.17T tokens 时准确率 81%，在 2.19T tokens 时暴跌至 0%，随后在 2.21T tokens 时反弹至 81.7%。这种跳跃并非孤例——在各种评估和模型上都能观察到 LM 突然捕获记忆或上下文模式而非上下文学习、使用 System 1 而非 System 2 思考、选择听起来真而非确实真的内容、在多跳人格 QA、上下文外推理和 emergent misalignment 上失败——然后同样突然地恢复并泛化。
 
-→ [原文存档](https://jiaxin-wen.github.io/blog/generalization-dynamics)
+→ 原文存档
 
 ## Mode-Hopping 现象详解
 
@@ -3178,7 +3329,7 @@ Mode-hopping 的本质是容量分配问题：在容量受限的模型中，可�
 - **大型模型**：泛化更频繁但仍存在振荡
 - **跨数据集相关性**：大模型的相关性更高，说明泛化行为在不同数据集间更一致
 
-→ [原文存档](https://jiaxin-wen.github.io/blog/generalization-dynamics)
+→ 原文存档
 
 ## 六项评估任务详解
 
@@ -3266,7 +3417,7 @@ Mode-hopping 的本质是容量分配问题：在容量受限的模型中，可�
 
 - 模型在不安全代码上训练，然后评估其在更广泛的用户查询上对错误对齐答案的概率
 
-→ [原文存档](https://jiaxin-wen.github.io/blog/generalization-dynamics)
+→ 原文存档
 
 ## 排除竞争性假说
 
@@ -3295,7 +3446,7 @@ Mode-hopping 的本质是容量分配问题：在容量受限的模型中，可�
 
 为排除通用指令跟随能力引起的振荡（如生成可提取的答案片段），计算答案选择上的概率（除人格 QA 外，人格 QA 没有默认鹦鹉答案）。
 
-→ [原文存档](https://jiaxin-wen.github.io/blog/generalization-dynamics)
+→ 原文存档
 
 ## 跨数据集泛化相关性分析
 
@@ -3316,7 +3467,7 @@ Mode-hopping 在不同数据集间的普遍性如何？例如，在 Flipped Answ
 
 **同一数据集的转述版本间相关性高**：这证实了当诱人模式基本一致时，mode-hopping 强烈普遍。
 
-→ [原文存档](https://jiaxin-wen.github.io/blog/generalization-dynamics)
+→ 原文存档
 
 ## 三大实践应用
 
@@ -3392,7 +3543,7 @@ Mode-hopping 在不同数据集间的普遍性如何？例如，在 Flipped Answ
 
 研究在两个微调基础评估上追踪了 mode-hopping：Out-of-context reasoning 和 Emergent Misalignment。后者尤其值得安全关注——模型在预训练的不同阶段可能对不安全代码的微调产生截然不同的对齐泛化行为：有时微调后的模型会表现出广泛的 misalignment，有时则不会。这种不可预测性意味着，仅依靠最终检查点或标准后训练流程无法保证对齐的鲁棒性。研究者建议，对齐策略应该包含对预训练动态的主动监控，选择处于"泛化窗口"的特定检查点，而非假设最终模型天然具有最强的对齐能力 。
 
-→ [原文存档](https://jiaxin-wen.github.io/blog/generalization-dynamics)
+→ 原文存档
 
 ## 实践启示
 
@@ -3414,7 +3565,7 @@ Mode-hopping 在不同数据集间的普遍性如何？例如，在 Flipped Answ
 - **鲁棒对齐可能需要选择处于"泛化窗口"的特定检查点**：而非依赖最终模型
 - **预训练动态的深入理解可能启发新架构和优化技巧**：当前 LLM 的泛化动态显然远非最优
 
-→ [原文存档](https://jiaxin-wen.github.io/blog/generalization-dynamics)
+→ 原文存档
 
 ## 作者观点
 
@@ -3435,11 +3586,11 @@ Mode-hopping 在不同数据集间的普遍性如何？例如，在 Flipped Answ
 - 应接受预训练动态是复杂的：在大规模多任务学习下，可泛化解决方案可以是简单的或复杂的
 - 解决方案的动态不会被任何单一的、简单的故事（如吸收-压缩）所捕捉
 
-→ [原文存档](https://jiaxin-wen.github.io/blog/generalization-dynamics)
+→ 原文存档
 
 ---
 
-## Ch15.031 Mind Lab LoRA 持续学习体系：δ-mem + MinT + LoRA Scaling Law + Macaron-A2UI
+## Ch15.034 Mind Lab LoRA 持续学习体系：δ-mem + MinT + LoRA Scaling Law + Macaron-A2UI
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 18.2KB | `entities/mind-lab-lora-continual-learning-system.md`
 
@@ -3618,7 +3769,7 @@ Mindverse（心洲科技）这家中国原生的 Neo Lab 跑通了**低成本高
 ## 相关实体
 - [Huawei Fuxi Recommendation System Ascend Npu Scaling Law](https://github.com/QianJinGuo/wiki-public/blob/main/entities/huawei-fuxi-recommendation-system-ascend-npu-scaling-law.md)
 
-→ [原文存档](https://mp.weixin.qq.com/s/D6yFk_aeuGQuAMaW1JRDdQ)
+→ 原文存档
 
 ## 深度分析
 
@@ -3680,7 +3831,7 @@ Macaron-A2UI 表面上是应用层的成果，但实则是对整个体系理论�
 
 ---
 
-## Ch15.032 Fine-Tuning Cosmos
+## Ch15.035 Fine-Tuning Cosmos
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 16.8KB | `entities/fine-tuning-cosmos.md`
 
@@ -4035,7 +4186,7 @@ LoRA/DoRA 微调 Cosmos Predict 2.5 的本质不是让模型"重新学习物理"
 
 - [Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-cosmos-fine-tuning-robot-video-generation.md)
 - [Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA — 深度分析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tuning-nvidia-cosmos-predict-2-5-with-lora-dora-for-robot-video-generation.md)
-- [原文存档](https://huggingface.co/blog/nvidia/cosmos-fine-tuning-for-robot-video-generation)
+- 原文存档
 
 ## 相关实体
 
@@ -4043,13 +4194,13 @@ LoRA/DoRA 微调 Cosmos Predict 2.5 的本质不是让模型"重新学习物理"
 
 ---
 
-## Ch15.033 SFT, RL, and On-Policy Distillation Through a Distributional Lens
+## Ch15.036 SFT, RL, and On-Policy Distillation Through a Distributional Lens
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 15.6KB | `entities/untitled-v2.md`
 
 # SFT, RL, and On-Policy Distillation Through a Distributional Lens
 
-→ [原文存档](https://nrehiew.github.io/blog/sft_rl_opd/)
+→ 原文存档
 
 ## 摘要
 
@@ -4246,7 +4397,7 @@ OPSD 的研究发现 style token 的 per-token KL 显著高于 math token。建�
 
 ---
 
-## Ch15.034 Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation
+## Ch15.037 Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 12.1KB | `entities/fine-tuning-nvidia-cosmos-predict-25-with-loradora-for-robot-video-generation.md`
 
@@ -4345,7 +4496,7 @@ Cosmos Predict 2.5 作为通用世界模型，在处理**机器人领域特定�
 - [Navigating Eu Ai Act Requirements For Llm Fine Tuning On Amazon Sagemaker Ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/navigating-eu-ai-act-requirements-for-llm-fine-tuning-on-amazon-sagemaker-ai.md)
 - [A2Rd Agentic Autoregressive Diffusion Long Video](https://github.com/QianJinGuo/wiki-public/blob/main/entities/a2rd-agentic-autoregressive-diffusion-long-video.md)
 
-→ [原文存档](https://huggingface.co/blog/nvidia/cosmos-fine-tuning-for-robot-video-generation)
+→ 原文存档
 
 ### 从合成数据到真实机器人的 Pipeline
 ```
@@ -4361,11 +4512,11 @@ Cosmos Predict 2.5 + Domain LoRA
         ↓
   真实机器人部署
 ```
-→ [原文存档](https://huggingface.co/blog/nvidia/cosmos-fine-tuning-for-robot-video-generation)
+→ 原文存档
 
 ---
 
-## Ch15.035 Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation
+## Ch15.038 Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 8.6KB | `entities/nvidia-cosmos-fine-tuning-robot-video-generation.md`
 
@@ -4458,7 +4609,7 @@ warmup_steps: 100      # 渐进式学习率预热
 - [Navigating Eu Ai Act Requirements For Llm Fine Tuning On Amazon Sagemaker Ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/navigating-eu-ai-act-requirements-for-llm-fine-tuning-on-amazon-sagemaker-ai.md)
 - [Video Agent Paradigm Compute Talent Flywheel Ethan He 20260606](https://github.com/QianJinGuo/wiki-public/blob/main/entities/video-agent-paradigm-compute-talent-flywheel-ethan-he-20260606.md)
 
-→ [原文存档](https://huggingface.co/blog/nvidia/cosmos-fine-tuning-for-robot-video-generation)
+→ 原文存档
 
 ### 应用 Pipeline
 ```
@@ -4477,7 +4628,7 @@ warmup_steps: 100      # 渐进式学习率预热
    └─ Domain randomization
    └─ 域适应微调
 ```
-→ [原文存档](https://huggingface.co/blog/nvidia/cosmos-fine-tuning-for-robot-video-generation)
+→ 原文存档
 - [mind lab lora 持续学习体系：δ-mem + mint + lora scaling law + macar](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mind-lab-lora-continual-learning-system.md)
 
 ---

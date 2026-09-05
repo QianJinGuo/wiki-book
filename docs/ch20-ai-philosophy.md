@@ -88,7 +88,7 @@ This is fundamentally different from general AI applications (chatbots, content 
 2. **MCP as Agent interface standard**: Workday chose MCP over custom APIs, indicating accelerating MCP adoption in enterprise agent ecosystems
 3. **Agent Passport pattern**: Pre-production verification + continuous monitoring dual-phase governance may become standard for enterprise agent deployment
 
--> [original archive](https://thenewstack.io/workday-ai-inference-guardrails/)
+-> original archive
 
 ---
 ## 关联
@@ -117,7 +117,7 @@ This is fundamentally different from general AI applications (chatbots, content 
 - [Fanling Company As Agent Ai Org Reflection](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fanling-company-as-agent-ai-org-reflection.md)
 - [Ai Era What To Read World Book Day](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-era-what-to-read-world-book-day.md)
 
-→ [原文存档](https://mp.weixin.qq.com/s/ZKfpdzXxN2fqANN-Nzkcjw)
+→ 原文存档
 
 ## 一句话反驳"知识少是优势"
 
@@ -435,10 +435,10 @@ Amodei 政策对 AI 从业者的启示：
 
 > 📊 Level ⭐⭐⭐ | 13.0KB | `entities/gitlab-layoffs-memo-2026-5.md`
 
-> -> [GitLab employees are the latest to face layoffs limbo. Read the CEO's memo about restructuring 'openly.'](https://www.businessinsider.com/gitlab-layoffs-memo-2026-5)
+> -> GitLab employees are the latest to face layoffs limbo. Read the CEO's memo about restructuring 'openly.'
 ## 相关实体
 
-- [iii.dev](ch01/633-iii-dev.html)
+- [iii.dev](ch01/669-iii-dev.html)
 
 ## 核心要点
 - **裁员规模**：未公布具体人数，截至 2026 年 1 月公司有 2,580 名员工
@@ -488,7 +488,7 @@ GitLab 宣布移除最多三层管理层，同时 R&D 团队从约 30 个重组�
 **传统逻辑**：减少管理层级通常是为了削减成本、提高决策效率。
 
 **AI 逻辑**：当 AI Agent 可以处理大量协调、审批、review 工作后，中间管理层的存在理由减少。GitLab 实际上在说：Agent 将承担很多管理工作（reviews、approvals、handoffs），因此需要更少人类管理者。
-这与 [Boris Cherny 在访谈中提到的 Anthropic 内部已没有手写代码、所有 SQL 都是模型写的](https://mp.weixin.qq.com/s/OUc02wmVtH9RQMhYhZGIdg) 趋势一致——AI 正在替代传统的协调和管理角色。
+这与 Boris Cherny 在访谈中提到的 Anthropic 内部已没有手写代码、所有 SQL 都是模型写的 趋势一致——AI 正在替代传统的协调和管理角色。
 
 ### 3. 「机器规模基础设施」——Git 的根本挑战
 备忘录中关于 Git 基础设施重建的描述值得深思：「Git 本身不是为这种负载设计的，在非为 Agent 构建的平台上堆叠 AI 是这个时代最大的错误」。
@@ -511,7 +511,7 @@ Bill Staples 提供了一个独特的市场视角：去年开发者平台市场�
 
 - 软件总量增加，系统复杂度增加（分布式、AI 集成、跨平台）→ 更多深度问题
 - AI 擅长解决「标准问题」，但复杂系统故障、架构决策、安全漏洞等仍需要人类判断 → 能解决这些问题的人更稀缺
-这与 [Boris Cherny 的观点一致](https://mp.weixin.qq.com/s/OUc02wmVtH9RQMhYhZGIdg)：「架构、深度客户问题理解、权衡需要品味的决定」这些是人类仍需掌握的领域。
+这与 Boris Cherny 的观点一致：「架构、深度客户问题理解、权衡需要品味的决定」这些是人类仍需掌握的领域。
 
 ## 实践启示
 ### 给软件工程师的建议
@@ -549,7 +549,7 @@ Bill Staples 提供了一个独特的市场视角：去年开发者平台市场�
 
 # Nemotron 3.5 Content Safety
 
-> NVIDIA 2026-06-04 在 Hugging Face 发布的企业级多模态内容安全模型（Nemotron 3.5 系列）。本实体整合自 [原文存档](https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety)。
+> NVIDIA 2026-06-04 在 Hugging Face 发布的企业级多模态内容安全模型（Nemotron 3.5 系列）。本实体整合自 原文存档。
 
 ## 概述
 
@@ -631,9 +631,9 @@ Hugging Face + NVIDIA NIM 双渠道部署反映了当前企业 AI 落地的两�
 ## 相关实体
 - [Nvidia Nemotron 3 Agents Rag Voice Safety](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-nemotron-3-agents-rag-voice-safety.md)
 - [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-nemotron-3-ultra-sagemaker-jumpstart-moe-agentic.md)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/059-nvidia-secure-local-agent-nemoclaw-openclaw.html)
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/062-nvidia-secure-local-agent-nemoclaw-openclaw.html)
 - [Fine Tuning Cosmos](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tuning-cosmos.md)
-- [Tokenspeed Agentic Inference Engine](ch04/317-tokenspeed-agentic-inference-engine.html)
+- [Tokenspeed Agentic Inference Engine](ch04/355-tokenspeed-agentic-inference-engine.html)
 
 - [How To Automate Ai Model Documentation With The Nvidia Mcg T 806Efb](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-to-automate-ai-model-documentation-with-the-nvidia-mcg-t-806efb.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
@@ -680,7 +680,7 @@ Hugging Face + NVIDIA NIM 双渠道部署反映了当前企业 AI 落地的两�
 
 ### 5% 数据就绪企业的共同特征
 从行业案例来看，5% 中头的企业通常具备三个特征：①有一个明确的数据 Owner（不只是技术Owner，是业务Owner）；②数据质量被纳入 KPI 而不只是技术指标；③数据基础设施在 AI 项目启动前就已经开始现代化。这三者缺一不可——没有业务Owner，数据质量改造成本无法在组织内推进；没有 KPI，数据治理会变成一次性的咨询项目；没有提前投资基础设施，AI 项目永远在等数据。
-→ [原文存档](https://www.cio.com/article/4170978/nearly-every-enterprise-is-investing-in-ai-but-only-5-say-their-data-is-ready.html)
+→ 原文存档
 
 ## 实践启示
 ### 给 CIO 的三步行动框架
@@ -696,7 +696,7 @@ Hugging Face + NVIDIA NIM 双渠道部署反映了当前企业 AI 落地的两�
 
 ### 警惕"POC 数据准备"陷阱
 很多企业做 AI POC 时会专门准备一份"干净数据"，POC 效果很好，但生产部署时发现真实数据质量完全不行。这是 COE（Center of Excellence）模式的一个固有缺陷——POC 在隔离环境里测试，生产环境是另一套数据现实。建议任何 POC 都必须包含一个**数据压力测试**环节：用真实数据质量（脏的、不完整的、过时的）运行 POC，看输出质量是否能接受。如果不能接受，POC 的成功就是幻觉。
-→ [原文存档](https://www.cio.com/article/4170978/nearly-every-enterprise-is-investing-in-ai-but-only-5-say-their-data-is-ready.html)
+→ 原文存档
 
 ## 相关实体
 
@@ -742,7 +742,7 @@ Hugging Face + NVIDIA NIM 双渠道部署反映了当前企业 AI 落地的两�
 - [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](https://github.com/QianJinGuo/wiki-public/blob/main/entities/快手首个打工人agent来了工作秒变桌面软件零代码不烧token.md)
 - [Chatgpt 官宣 26 位未来之星他们是穿墙少年街头摊贩盲童的朋友](https://github.com/QianJinGuo/wiki-public/blob/main/entities/chatgpt-官宣-26-位未来之星他们是穿墙少年街头摊贩盲童的朋友.md)
 
-→ [原文存档](https://mp.weixin.qq.com/s/Cmioejp77LENAnAMo2r3Aw)
+→ 原文存档
 
 ---
 
@@ -829,7 +829,7 @@ AI 工具打破了这一契约：
 - [Greptile TREX](https://github.com/QianJinGuo/wiki-public/blob/main/entities/greptile-trex-code-execution-artifact-generation.md) — 代码审查中"可验证证据"的工程实践
 - [Claude Code 大型代码库 Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-large-codebase-harness-configuration.md) — AI 辅助开发的工具配置实践
 
-→ [原文存档](https://terriblesoftware.org/2026/06/17/you-got-faster-your-company-didnt/)
+→ 原文存档
 
 ---
 
@@ -943,7 +943,7 @@ FDA/EMA 当前药物管线 7-8 年,假设"药物可能无效或有严重安全�
   - [Anthropic Economic Index](https://www.anthropic.com/economic-index)
   - [Glasswing Mythos](https://www.anthropic.com/glasswing) — 引用的标志性 AI 系统
 
-→ [原文存档](https://darioamodei.com/post/policy-on-the-ai-exponential)
+→ 原文存档
 
 ## 深度分析
 
@@ -1083,7 +1083,7 @@ Multilingual AI 与以下领域存在深刻关联： 提供了偏好学习的方
 ## 相关实体
 
 - [滴滴 ibg 智能客服质检系统：3 管线（意图 86% / 合规 90%+ / voc）+ 企业 llm 落地方法论](https://github.com/QianJinGuo/wiki-public/blob/main/entities/didi-ibg-customer-experience-llm-quality-inspection-3-pipelines.md)
-→ [原文存档](https://welodata.ai/multilingual-ai/)
+→ 原文存档
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/reinforcement-learning-rlhf.md)
 ## 深度分析
@@ -1247,7 +1247,7 @@ Steve Yegge 为游戏项目开 12 个订阅，按真实 token 价格折算每月
 - [Inference Optimization](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/inference-optimization.md) — 推理优化是 Token 效率的工程基础
 - [Harness Engineering Long Term Agent Tasks](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-long-term-agent-tasks.md) — Harness Engineering 让 AI 产出可预期、可衡量、可持续
 - [Context Window Management](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-window-management.md) — 上下文管理影响 Token 消耗质量
-- [原文存档](https://mp.weixin.qq.com/s/Cmioejp77LENAnAMo2r3Aw)
+- 原文存档
 
 ## 相关实体
 - [Improving token efficiency in GitHub Agentic Workflows](https://github.com/QianJinGuo/wiki-public/blob/main/entities/github-token-efficiency-agentic-workflows.md)
@@ -1266,9 +1266,9 @@ Steve Yegge 为游戏项目开 12 个订阅，按真实 token 价格折算每月
 Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反驳 [Karpathy 提出的 vibe coding 概念](https://entities/karpathy-vibe-coding-to-agentic-engineering.md) 在前端的适用性：**代码能编译 ≠ 设计完成**。这条边界划清后，AI 工具在前端赛道会进一步分化。
 
 ## 相关实体
-- [Elena Progressive Web Components](ch03/066-elena-progressive-web-components.html)
+- [Elena Progressive Web Components](ch03/069-elena-progressive-web-components.html)
 
-→ [原文存档](https://mp.weixin.qq.com/s/4_9q9TrkVyE5a4jCfTrNgg)
+→ 原文存档
 
 ## 核心论点
 
@@ -1288,7 +1288,7 @@ Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反�
 | **动效过度** | 渐变慢、缓动曲线怪、吃掉注意力 | motion-token + 限制时长 |
 | **一致性** | 组件风格跳跃、间距不统一、icon 混用 | design token + token drift 检测 |
 
-这 6 类与 [Impeccable](ch05/094-impeccable.html) 的 41 条检测规则高度重合 —— **资深设计师的"经验分类"与工程化项目的"规则集"是同一件事的两面**。
+这 6 类与 [Impeccable](ch05/101-impeccable.html) 的 41 条检测规则高度重合 —— **资深设计师的"经验分类"与工程化项目的"规则集"是同一件事的两面**。
 
 ### 解决路径：Rule + Skill，不是 Rule-only
 - 单纯把 rules 写到 CLAUDE.md **不够** —— rules 是声明式约束，AI 容易"选择性遵守"或长上下文里漂移
@@ -1318,12 +1318,12 @@ Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反�
 4. **前端 AI 工具会进一步分化** —— 纯 vibe coding 工具（原型）vs 设计 skill 工具（品控），赛道不同
 
 ## 相关对照
-- [Impeccable](ch05/094-impeccable.html) —— 文章末尾直接推荐此项目，本文是"为什么需要 Impeccable"的哲学背书
+- [Impeccable](ch05/101-impeccable.html) —— 文章末尾直接推荐此项目，本文是"为什么需要 Impeccable"的哲学背书
 - [Karpathy Vibe Coding](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-to-agentic-engineering.md) —— Karpathy 原始概念出处
 - [Willison Vibe Coding Convergence](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vibe-coding-agentic-engineering-convergence-simon-willison.md) —— Willison 的同主题回应
 - [Agent Skill 编写指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing-guide.md) —— 通用 skill 格式
-- [Agentic Design System 演化](ch01/007-agentic-design-system-from-chatbot-to-orchestration.html)
-- → [原文存档](https://mp.weixin.qq.com/s/4_9q9TrkVyE5a4jCfTrNgg)
+- [Agentic Design System 演化](ch01/008-agentic-design-system-from-chatbot-to-orchestration.html)
+- → 原文存档
 
 ## 深度分析
 
@@ -1341,7 +1341,7 @@ Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反�
 
 1. **在前端AI项目中明确区分"原型阶段"和"品控阶段"**：用vibe coding处理快速原型和业务逻辑验证（此处AI的"对错分明"特性有效），但在设计品质控制环节切换到skill-based工作流。两个阶段采用不同的工具和方法论，而非试图用单一流程覆盖
 
-2. **将6大AI前端失败类别内化为团队anti-pattern checklist**：无论是自研AI前端工具还是集成第三方方案，都要针对色彩理论、可访问性、排版细节、视觉层次、动效规范、一致性这六个维度建立检测规则。可参考 [Impeccable](ch05/094-impeccable.html) 的41条检测规则的实现方式，即使不直接使用该工具，也能从中学习结构化检测思路
+2. **将6大AI前端失败类别内化为团队anti-pattern checklist**：无论是自研AI前端工具还是集成第三方方案，都要针对色彩理论、可访问性、排版细节、视觉层次、动效规范、一致性这六个维度建立检测规则。可参考 [Impeccable](ch05/101-impeccable.html) 的41条检测规则的实现方式，即使不直接使用该工具，也能从中学习结构化检测思路
 
 3. **优先采用Skill架构而非Rule-only来约束AI设计输出**：在CLAUDE.md或类似配置中，不仅要写声明式规则，更要配套实现"触发命令+检测器+反馈闭环"。设计skill应该包含：主动触发的检查命令、基于规则的自动检测、与设计系统对齐的上下文信息三个部分
 
@@ -1357,7 +1357,7 @@ Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反�
 
 # 让AI成为真正的社会生产力——跨越Token效率门槛走向AI普惠
 
-→ [原文存档](https://mp.weixin.qq.com/s/Cmioejp77LENAnAMo2r3Aw)
+→ 原文存档
 
 ## 摘要
 
@@ -1434,7 +1434,7 @@ Token 本质上是 AI 智能的计量单位。当 Token 价格持续下降（遵
 
 - 模型路由
 - AI 定价策略
-- [Karpathy: Vibe Coding 到 Agentic Engineering](ch04/118-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy: Vibe Coding 到 Agentic Engineering](ch04/356-karpathy-vibe-coding-agentic-engineering.html)
 - [Hermes Agent 自进化机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-tools-research.md)
 
 ---
@@ -1451,7 +1451,7 @@ Token 本质上是 AI 智能的计量单位。当 Token 价格持续下降（遵
 
 OpenAI 提出 Beneficial RL 框架：通过在少量「有益特质」数据上进行强化学习训练，模型不仅在训练领域表现提升，还在数十个未参与训练的评测基准上展现出广泛的对齐行为改善，且这些改善在对抗性压力下依然持久。
 
-→ [原文存档](https://alignment.openai.com/beneficial-rl/)
+→ 原文存档
 
 ## 核心要点
 
@@ -1549,9 +1549,9 @@ AI 系统在健康、科学、教育、编程等高风险场景中越来越自�
 - [Enterprise Ai Memory Substrate Three Layer Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/enterprise-ai-memory-substrate-three-layer-architecture.md)
 - [Skill Version Management Semantic Versioning Practices Winty](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-version-management-semantic-versioning-practices-winty.md)
 
-→ [产品总览 原文存档](https://www.volcengine.com/docs/85637/1563626?lang=zh)
-→ [智能问数Agent 原文存档](https://www.volcengine.com/docs/85637/1544066?lang=zh)
-→ [营销策略Agent 原文存档](https://www.volcengine.com/docs/85637/1587862?lang=zh)
+→ 产品总览 原文存档
+→ 智能问数Agent 原文存档
+→ 营销策略Agent 原文存档
 
 ---
 
@@ -2299,6 +2299,6 @@ Skill = 触发源 + 系统动作 + 规则边界 + 执行者(员工Agent)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-long-term-agent-tasks.md) — 约束驱动的自动化执行
 - [Enterprise Software Moats in Agent Era](https://github.com/QianJinGuo/wiki-public/blob/main/entities/enterprise-software-moats-agent-era.md) — 企业级 Agent 护城河分析
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — 宪法级约束 + 量化验收标准
-→ [原文存档](https://mp.weixin.qq.com/s/759TfOdXch5zWrT4Yo42xA)
+→ 原文存档
 
 ---

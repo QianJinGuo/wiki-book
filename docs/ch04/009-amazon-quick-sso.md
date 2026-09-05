@@ -1,10 +1,12 @@
 # Amazon Quick 飞书SSO对接指南
 
+## Ch04.009 Amazon Quick 飞书SSO对接指南
+
 > 📊 Level ⭐ | 6.6KB | `entities/amazon-quick-飞书sso对接指南.md`
 
 # Amazon Quick 飞书SSO对接指南
 
-→ [原文存档](https://aws.amazon.com/cn/blogs/china/amazon-quick-sso-integration-guide)
+→ 原文存档
 
 # Amazon Quick 飞书SSO对接指南
 

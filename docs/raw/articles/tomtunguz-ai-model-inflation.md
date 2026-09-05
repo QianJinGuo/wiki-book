@@ -1,18 +1,50 @@
 ---
-type: source-card
 title: "The Unsustainable Subsidy"
-source: "rss"
-author: "未标注作者；来源机构见 source"
-source_url: "https://tomtunguz.com/ai-model-inflation/"
-published: "未标注"
-collected: "2026-05-22"
-license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
+source: rss
+source_url: https://tomtunguz.com/ai-model-inflation/
+sha256: 604e5b1e59c1331f63190388c28a684bd41743429d926dbdaf671d814ac7ea05
+review_value: 7
+review_confidence: 8
+review_stars: 4
+review_recommendation: strong
+ingested: 2026-05-22
 ---
 
 # The Unsustainable Subsidy
 
-## 原创摘要
 
-这份来源卡片记录一篇围绕“The Unsustainable Subsidy”的第三方资料，主题标签为相关 AI 工程主题。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
+Published Time: 2026-05-20T00:00:00Z
 
-> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。
+Markdown Content:
+Google’s AI triples in price each year.
+
+[![Image 1: Google Gemini: Flash and Pro Pricing](https://res.cloudinary.com/dzawgnnlr/image/upload/w_1512,h_850,c_fill,g_auto,q_auto,f_auto/uhmruf896ftdcbh6wf8i)](https://res.cloudinary.com/dzawgnnlr/image/upload/q_auto,f_auto/uhmruf896ftdcbh6wf8i)
+
+OpenAI’s flagship model was seemingly subsidized for a while, before rising again.
+
+[![Image 2: OpenAI API Prices: Flagship Falling, Then Rising Again](https://res.cloudinary.com/dzawgnnlr/image/upload/w_1512,h_850,c_fill,g_auto,q_auto,f_auto/xwyhnjwzt5xeh5gnswnp)](https://res.cloudinary.com/dzawgnnlr/image/upload/q_auto,f_auto/xwyhnjwzt5xeh5gnswnp)
+
+Anthropic’s AI has been the same price for a little bit & decreased for the most powerful models.
+
+[![Image 3: Anthropic API Prices: Opus, Sonnet, Haiku](https://res.cloudinary.com/dzawgnnlr/image/upload/w_1512,h_850,c_fill,g_auto,q_auto,f_auto/vdjjlu7siakf8b9qklqo)](https://res.cloudinary.com/dzawgnnlr/image/upload/q_auto,f_auto/vdjjlu7siakf8b9qklqo)
+
+Those are three very different pricing strategies. If we compare the absolutes, the data completes the picture.
+
+| Vendor | Model | Input ($/1M) | Output ($/1M) |
+| --- | --- | --- | --- |
+| Google | Gemini 3.1 Pro | $2.00 | $12.00 |
+| Anthropic | Claude Opus 4.7 | $5.00 | $25.00 |
+| OpenAI | GPT-5.5 | $5.00 | $30.00 |
+
+Google remains the low-cost player, increasing the price on all its models but still less than half of the competition. Anthropic had maintained a luxe pricing until late last year.
+
+The pricing changes indicate changes in strategy : cuts when cash is plentiful & share matters. Increases when cash is tight & margins matter. The latter is the case for all three vendors now when capex spending continues to set records.
+
+The 1-minute read that turns tech data into strategic advantage.
+
+ Read by 150k+ founders & operators.
+
+GP at Theory Ventures. Former Google PM. Sharing data-driven insights on AI, web3, & venture capital.
+
+[Bloomberg](https://www.bloomberg.com/news/articles/2025-04-30/google-places-ads-inside-chatbot-conversations-with-ai-startups "Quoted on AI monetization strategies") • [WSJ](https://www.wsj.com/tech/tech-media-telecom-roundup-market-talk-f8f0355a "Featured in tech market analysis") • [Economist](https://www.economist.com/business/2023/07/25/next-generation-googles-run-a-tighter-ship "Quoted on next-generation tech leadership")
+

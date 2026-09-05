@@ -1,18 +1,18 @@
 ---
-type: source-card
-title: "We're launching the Google DeepMind Accelerator program in Asia Pacific to tackle environmental risks"
-source: "rss"
-author: "未标注作者；来源机构见 source"
-source_url: "https://deepmind.google/blog/were-launching-the-google-deepmind-accelerator-program-in-asia-pacific-to-tackle-environmental-risks"
-published: "未标注"
-collected: "2026-05-22"
-license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
+title: We're launching the Google DeepMind Accelerator program in Asia Pacific to tackle environmental risks
+source: rss
+source_url: https://deepmind.google/blog/were-launching-the-google-deepmind-accelerator-program-in-asia-pacific-to-tackle-environmental-risks
+tags: [deepmind]
+ingested: 2026-05-22
+sha256: 97ebe639b8c15204f1a937015bac7d7222d19bf33482b882a6ba5a6d1c2fa8eb
 ---
 
-# We're launching the Google DeepMind Accelerator program in Asia Pacific to tackle environmental risks
+# We’re launching the Google DeepMind Accelerator program in Asia Pacific to tackle environmental risks
 
-## 原创摘要
+The Asia-Pacific region is a global engine for economic growth, but it's also highly vulnerable to climate change. While green technologies are gaining momentum, a recent [report](https://www.eco-business.com/press-releases/asia-pacific-at-a-climate-inflection-point-new-kpmg-google-report-calls-for-coordinated-action-to-scale-greentech-ecosystems/) shows they aren’t scaling fast enough to keep up with the region’s rising environmental risks.
 
-这份来源卡片记录一篇围绕“We're launching the Google DeepMind Accelerator program in Asia Pacific to tackle environmental risks”的第三方资料，主题标签为deepmind。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
+To help innovators tackle these environmental challenges, we’re launching an inaugural Google DeepMind Accelerator program in APAC focused on “AI for the Planet.”
 
-> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。
+This three-month program is designed for startups, research teams and nonprofits across the region to use frontier AI to solve problems in nature, climate, agriculture, energy and more. Selected organizations will receive expert mentorship, tailored support and help integrating frontier AI and science AI models from Google AI experts into their projects or products.
+
+If you're working on climate solutions, we want to help you scale your work. The program kicks off with an in-person bootcamp in Singapore, and you can [learn more and register your interest today](https://goo.gle/GDM-Accelerator-APAC).

@@ -1,10 +1,12 @@
 # AWS Bedrock AgentCore Equipment Repair Assistant — 农业机械 AI 诊断助手实战
 
+## Ch11.020 AWS Bedrock AgentCore Equipment Repair Assistant — 农业机械 AI 诊断助手实战
+
 > 📊 Level ⭐ | 3.8KB | `entities/aws-bedrock-agentcore-equipment-repair-assistant.md`
 
 # AWS Bedrock AgentCore Equipment Repair Assistant — 农业机械 AI 诊断助手实战
 
-> Source: [原文存档](https://aws.amazon.com/blogs/machine-learning/build-an-ai-powered-equipment-repair-assistant-using-amazon-bedrock-agentcore)
+> Source: 原文存档
 
 ## 背景
 
@@ -52,7 +54,7 @@
 - [how baz improved its ai agent code review accuracy using ama](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-baz-improved-its-ai-agent-code-review-accuracy-using-ama.md)
 - [extending mcp support for amazon bedrock agentcore gateway](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-agentcore-gateway-mcp-extension.md)
 
-→ [原文存档](https://aws.amazon.com/blogs/machine-learning/build-an-ai-powered-equipment-repair-assistant-using-amazon-bedrock-agentcore)
+→ 原文存档
 
 ---
 

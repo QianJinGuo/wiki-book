@@ -1,10 +1,12 @@
 # Build a unified semantic layer across datasets with multi-dataset Topics in Amazon Quick
 
+## Ch04.025 Build a unified semantic layer across datasets with multi-dataset Topics in Amazon Quick
+
 > 📊 Level ⭐ | 4.1KB | `entities/build-a-unified-semantic-layer-across-datasets-with-multi-da.md`
 
 # Build a unified semantic layer across datasets with multi-dataset Topics in Amazon Quick
 
-→ [原文存档](https://aws.amazon.com/blogs/machine-learning/build-a-unified-semantic-layer-across-datasets-with-multi-dataset-topics-in-amazon-quick)
+→ 原文存档
 
 # Build a unified semantic layer across datasets with multi-dataset Topics in Amazon Quick
 

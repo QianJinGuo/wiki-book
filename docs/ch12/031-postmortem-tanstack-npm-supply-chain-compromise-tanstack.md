@@ -1,12 +1,14 @@
 # Postmortem: TanStack npm supply-chain compromise | TanStack Blog
 
+## Ch12.031 Postmortem: TanStack npm supply-chain compromise | TanStack Blog
+
 > 📊 Level ⭐⭐⭐ | 10.4KB | `entities/postmortem-tanstack-npm-supply-chain-compromise-tanstack-blog.md`
 
-> -> [原文存档](https://tanstack.com/blog/npm-supply-chain-compromise-postmortem)
+> -> 原文存档
 
 ## 相关实体
 - [rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack.md)
-- [Semis Memo: Supply Chain Inheritance](../ch01/191-semis-memo-supply-chain-inheritance.html)
+- [Semis Memo: Supply Chain Inheritance](../ch01/198-semis-memo-supply-chain-inheritance.html)
 - [Amazon launches Supply Chain Services for businesses of all sizes](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-supply-chain-services.md)
 - [Semis Memo: Supply Chain Inheritance](https://github.com/QianJinGuo/wiki-public/blob/main/entities/citriniresearch-supply-chain-inheritance.md)
 - [semgrep intercom php supply chain](024-semgrep-intercom-php-supply-chain.html)

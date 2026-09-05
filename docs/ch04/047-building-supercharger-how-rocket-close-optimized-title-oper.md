@@ -1,5 +1,7 @@
 # Building Supercharger: How Rocket Close optimized title operations with agentic AI
 
+## Ch04.047 Building Supercharger: How Rocket Close optimized title operations with agentic AI
+
 > 📊 Level ⭐⭐ | 11.5KB | `entities/building-supercharger-how-rocket-close-optimized-title-opera.md`
 
 # Building Supercharger: How Rocket Close optimized title operations with agentic AI
@@ -58,7 +60,7 @@ Rocket Close（底特律，Rocket Companies 子公司的 title agency + appraisa
 
 ## 原文链接
 
-→ [原文存档](https://aws.amazon.com/blogs/machine-learning/building-supercharger-how-rocket-close-optimized-title-operations-with-agentic-ai)
+→ 原文存档
 
 ## 核心观点
 

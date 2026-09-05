@@ -1,5 +1,7 @@
 # ingress-nginx已退役higress如何平滑替代
 
+## Ch11.033 ingress-nginx已退役higress如何平滑替代
+
 > 📊 Level ⭐⭐ | 7.4KB | `entities/higress-cncf-sandbox-ingress-nginx-replacement.md`
 
 ## 事件概述
@@ -51,7 +53,7 @@ Higress已在多种环境中展现出足以投入生产的可靠性，企业采�
 - aigatewayproductionindex.md-1
 - [Hiclaw V110 K8S Hermes Worker](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hiclaw-v110-k8s-hermes-worker.md)
 
-→ [原文存档](https://mp.weixin.qq.com/s/tJBB26BCNOGzdI0iBD9hGg)
+→ 原文存档
 
 ---
 

@@ -1,5 +1,7 @@
 # CISA urges critical infrastructure firms to 'fortify' before it's too late | Cybersecurity Dive
 
+## Ch12.001 CISA urges critical infrastructure firms to 'fortify' before it's too late | Cybersecurity Dive
+
 > 📊 Level ⭐ | 11.9KB | `entities/cisa-urges-critical-infrastructure-firms-to-fortify-before-i.md`
 
 ## 核心要点
@@ -8,7 +10,7 @@
 - **假设前提**：CISA 明确指出，在冲突场景下，第三方连接（电信、互联网、供应商、服务提供商、上游依赖）都不可靠，威胁行为者可能已获得 OT 网络访问权限
 - **双轨指导**：CISA 的 CI Fortify 指南涵盖两大核心能力——**Isolation（隔离）** 和 **Recovery（恢复）**
 - **评估服务**：除指南外，CISA 还提供"目标评估"服务，对参与组织进行韧性和隔离能力评估
-→ [原文存档](https://www.cybersecuritydive.com/news/cisa-ci-fortify-isolation-recovery-guidance/819317/)
+→ 原文存档
 
 ## 深度分析
 ### 1. CI Fortify 指南的战略背景

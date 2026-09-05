@@ -1,10 +1,12 @@
 # GLM-5.2 is the step change for open agents
 
+## Ch04.028 GLM-5.2 is the step change for open agents
+
 > 📊 Level ⭐ | 3.9KB | `entities/glm-52-is-the-step-change-for-open-agents.md`
 
 # GLM-5.2 is the step change for open agents
 
-→ [原文存档](https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open)
+→ 原文存档
 
 # GLM-5.2 is the step change for open agents
 

@@ -1,5 +1,7 @@
 # AI Native 团队协同：知识底座＋Agent＋人三层闭环
 
+## Ch04.044 AI Native 团队协同：知识底座＋Agent＋人三层闭环
+
 > 📊 Level ⭐⭐ | 14.3KB | `entities/ai-native-team-collaboration-knowledge-base-agent-human-taobao-2026.md`
 
 # AI Native 团队协同：知识底座＋Agent＋人三层闭环
@@ -78,7 +80,7 @@
 - [企业 AI 非技术困境](https://github.com/QianJinGuo/wiki-public/blob/main/entities/本体这件事-技术早就不是问题-企业ai非技术困境的对话.md)
 - [阿里 Devix Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/alibaba-devix-harness-ops-agent-7x24.md)
 
-→ [原文存档](https://mp.weixin.qq.com/s/s3ZDiBCWD8XBYKy-UflfbQ)
+→ 原文存档
 
 ---
 

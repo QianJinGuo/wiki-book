@@ -1,18 +1,12 @@
 ---
-type: source-card
 title: "ZCode - Simple, Fast, Vibe-Ready | Official Harness for GLM-5.2"
-source: "zcode.z.ai"
-author: "未标注作者；来源机构见 source"
 source_url: "https://zcode.z.ai/en"
-published: "未标注"
-collected: "2026-07-02T11:40:45Z"
-license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
+ingested: 2026-07-02T11:40:45Z
+sha256: 14f26dca9e62cdd8738e4ea3070aaaff774c40cf6ba390102792100133e58871
+type: raw-article
+tags: [raw, ai, coding-harness]
 ---
 
 # ZCode - Simple, Fast, Vibe-Ready | Official Harness for GLM-5.2
 
-## 原创摘要
-
-这份来源卡片记录一篇围绕“ZCode - Simple, Fast, Vibe-Ready | Official Harness for GLM-5.2”的第三方资料，主题标签为raw、ai、coding-harness。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
-
-> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。
+ZCode is the official coding harness for GLM-5.2, providing a simple, fast, vibe-ready development environment. A product landing page for a new AI-powered coding platform.

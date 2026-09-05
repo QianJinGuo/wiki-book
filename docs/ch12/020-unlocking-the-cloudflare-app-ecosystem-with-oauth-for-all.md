@@ -1,5 +1,7 @@
 # Unlocking the Cloudflare app ecosystem with OAuth for all
 
+## Ch12.020 Unlocking the Cloudflare app ecosystem with OAuth for all
+
 > 📊 Level ⭐⭐ | 6.1KB | `entities/cloudflare-oauth-for-all.md`
 
 # Unlocking the Cloudflare app ecosystem with OAuth for all
@@ -83,7 +85,7 @@ OAuth 标准化对 AI Agent 生态具有深远影响：
 
 - [Cloudflare Temporary Accounts Ai Agents](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloudflare-temporary-accounts-ai-agents.md)
 
-→ [原文存档](https://blog.cloudflare.com/oauth-for-all/)
+→ 原文存档
 
 ---
 ## 关联

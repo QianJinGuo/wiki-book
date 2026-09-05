@@ -1,5 +1,7 @@
 # AWS China 企业级智能体评估方法论 ADLC 系列
 
+## Ch04.048 AWS China 企业级智能体评估方法论 ADLC 系列
+
 > 📊 Level ⭐⭐ | 11.2KB | `entities/aws-china-enterprise-agent-evaluation-adlc.md`
 
 # AWS China 企业级智能体评估方法论 ADLC 系列
@@ -135,10 +137,10 @@ ADLC 的独特贡献是**将评估定义为 Agent 开发生命周期的一等公
 
 ## 来源
 
-- → [Part 1: 为什么评估是起点](https://aws.amazon.com/cn/blogs/china/part-1-enterprise-intelligent-why-evaluation/)
-- → [Part 2: 从原型验证到生产就绪](https://aws.amazon.com/cn/blogs/china/part-2-enterprise-intelligent-validation/)
-- → [Part 3: 如何构建企业级智能体](https://aws.amazon.com/cn/blogs/china/part-3-how-to-build-enterprise-intelligent/)
-- → [完整四篇指南原文 PDF](https://aws.amazon.com/cn/blogs/china/)
+- → Part 1: 为什么评估是起点
+- → Part 2: 从原型验证到生产就绪
+- → Part 3: 如何构建企业级智能体
+- → 完整四篇指南原文 PDF
 
 ---
 ## 关联

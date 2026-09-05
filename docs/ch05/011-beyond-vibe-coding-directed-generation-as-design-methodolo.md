@@ -1,5 +1,7 @@
 # Beyond Vibe Coding — Directed Generation as Design Methodology
 
+## Ch05.011 Beyond Vibe Coding — Directed Generation as Design Methodology
+
 > 📊 Level ⭐ | 3.8KB | `entities/beyond-vibe-coding-directed-generation-design-uxmag.md`
 
 # Beyond Vibe Coding — Directed Generation as Design Methodology
@@ -40,7 +42,7 @@ This article is fundamentally about **how humans direct AI generation** — dire
 - "Patterns from static to contextual recomposition" = skill dynamic adaptation
 - "Designer role from specifying instances to defining conditions" = agent harness orchestration paradigm
 
-→ [source archive](https://uxmag.com/articles/beyond-vibe-coding-a-designers-case-for-directed-generation)
+→ source archive
 
 ---
 ## 关联

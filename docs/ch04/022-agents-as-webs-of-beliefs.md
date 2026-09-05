@@ -1,6 +1,8 @@
 # Agents as Webs of Beliefs
 
-> 📊 Level ⭐ | 4.3KB | `entities/posts-m39z2cvyfaxzdaxr4-agents-as-webs-of-beliefs.md`
+## Ch04.022 Agents as Webs of Beliefs
+
+> 📊 Level ⭐ | 4.4KB | `entities/posts-m39z2cvyfaxzdaxr4-agents-as-webs-of-beliefs.md`
 
 # Agents as Webs of Beliefs
 

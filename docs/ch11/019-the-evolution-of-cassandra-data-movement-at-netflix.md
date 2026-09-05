@@ -1,10 +1,12 @@
 # The Evolution of Cassandra Data Movement at Netflix
 
+## Ch11.019 The Evolution of Cassandra Data Movement at Netflix
+
 > 📊 Level ⭐ | 3.9KB | `entities/the-evolution-of-cassandra-data-movement-at-netflix.md`
 
 # The Evolution of Cassandra Data Movement at Netflix
 
-→ [原文存档](https://netflixtechblog.com/the-evolution-of-cassandra-data-movement-at-netflix-6e13329c80a1?source=rss----2615bd06b42e---4)
+→ 原文存档
 
 # The Evolution of Cassandra Data Movement at Netflix
 

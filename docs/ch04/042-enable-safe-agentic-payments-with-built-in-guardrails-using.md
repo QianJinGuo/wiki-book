@@ -1,10 +1,12 @@
 # Enable safe agentic payments with built-in guardrails using Amazon Bedrock AgentCore payments
 
+## Ch04.042 Enable safe agentic payments with built-in guardrails using Amazon Bedrock AgentCore payments
+
 > 📊 Level ⭐ | 2.4KB | `entities/enable-safe-agentic-payments-with-built-in-guardrails-using-.md`
 
 # Enable safe agentic payments with built-in guardrails using Amazon Bedrock AgentCore payments
 
-→ [原文存档](https://aws.amazon.com/blogs/machine-learning/enable-safe-agentic-payments-with-built-in-guardrails-using-amazon-bedrock-agentcore-payments/)
+→ 原文存档
 
 ## 深度分析
 
@@ -22,7 +24,7 @@ Enable safe agentic payments with built-in guardrails using Amazon Bedrock Agent
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](https://github.com/QianJinGuo/wiki-public/blob/main/entities/深入理解-claude-code-源码中的-agent-harness-构建之道.md)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md)
-- [Karpathy Vibe Coding Agentic Engineering](118-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](356-karpathy-vibe-coding-agentic-engineering.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
 
 ## 相关实体

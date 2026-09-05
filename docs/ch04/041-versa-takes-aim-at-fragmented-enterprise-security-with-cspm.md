@@ -1,10 +1,12 @@
 # Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls | Network World
 
+## Ch04.041 Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls | Network World
+
 > 📊 Level ⭐ | 2.5KB | `entities/versa-takes-aim-at-fragmented-enterprise-security-with-cspm-orchestration-updat.md`
 
 # Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls | Network World
 
-→ [原文存档](https://www.networkworld.com/article/4169706/versa-takes-aim-at-fragmented-enterprise-security-with-cspm-orchestration-updat.html)
+→ 原文存档
 
 ## 深度分析
 
@@ -25,7 +27,7 @@ Versa takes aim at fragmented enterprise security with CSPM, orchestration updat
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
 - [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md)
-- [Karpathy Vibe Coding Agentic Engineering](118-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](356-karpathy-vibe-coding-agentic-engineering.html)
 
 ---
 

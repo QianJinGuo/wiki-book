@@ -1,281 +1,286 @@
-# Claude Code 性能基准评测
+# Claude Code 在大型代码库中的实战经验：从哪里入手？怎么做对？
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 14.6KB | `entities/claude-code-performance-benchmarking.md`
+## Ch09.119 Claude Code 在大型代码库中的实战经验：从哪里入手？怎么做对？
 
-## 概述
+> 📊 Level ⭐⭐⭐⭐⭐ | 30.9KB | `entities/claude-code-large-codebase-harness-configuration.md`
 
-Claude Code 性能基准评测涵盖**吞吐量、延迟、Token 效率、上下文利用率**四大维度。与传统基准测试不同，Claude Code 作为 Agent 框架，其性能不仅取决于底层模型，还受 **Harness 设计、工具并发模型、缓存策略**的综合影响。
+# Claude Code 大型代码库套具配置
 
----
+## 核心概述
 
-## 一、核心性能指标体系
+Claude Code 已在生产环境中运行于数百万行的大型单体仓库、数十年历史的遗留系统、跨数十个仓库的分布式架构，以及拥有数千名开发者的组织中。这些环境带来了小型代码库所没有的挑战——无论是不用子目录构建命令就不同，还是散布在没有共享根目录的文件夹中的遗留代码。
 
-### 1.1 吞吐量指标
+本文涵盖在规模化采用 Claude Code 过程中观察到的模式。"大型代码库"指广泛的部署场景：包含数百万行的单体仓库、数十年构建的遗留系统、跨独立仓库的数十个微服务，或以上任意组合。这还包括使用团队不常与 AI 编码工具关联的语言（如 C、C++、C#、Java、PHP）运行的代码库。（Claude Code 在这些场景中的表现比大多数团队预期的要好，特别是最近的模型版本。）
 
-| 指标 | 说明 | 典型值 |
-|------|------|--------|
-| **Tool Calls/min** | 单分钟工具调用次数 | 10-30 次/分钟（取决于任务复杂度） |
-| **Round Trips/min** | 模型与工具的交互轮次 | 5-15 轮/分钟 |
-| **Token throughput** | 输入+输出的每秒 Token 数 | 取决于模型规格（ Sonnet 4: ~2000 tok/s） |
+## 如何在大型代码库中导航
 
-### 1.2 延迟指标
+Claude Code 导航代码库的方式与软件工程师相同：遍历文件系统、读取文件、使用 grep 精确定位所需内容，并跟踪代码库中的引用。它在开发者本地机器上运行，不需要构建、维护或上传代码库索引到服务器。
 
-| 指标 | 说明 | 影响因素 |
-|------|------|----------|
-| **Time to First Tool** | 首工具调用的响应时间 | 模型推理延迟 + 工具发现开销 |
-| **Tool Execution Latency** | 单工具执行时间 | 文件系统 I/O、网络 MCP 工具 |
-| **Round Trip Latency** | 一轮对话的端到端延迟 | 模型推理 + 工具执行 + 网络 |
+### Agent式搜索 vs RAG
 
-### 1.3 Token 效率指标
+基于 RAG 的 AI 编码工具通过嵌入整个代码库并在查询时检索相关块来工作。在大规模场景下，这些系统可能失效，因为嵌入管道无法跟上活跃工程团队的节奏。当开发者查询索引时，它反映的是代码库之前的状态——可能是数周、数天甚至数小时前的内容。检索返回的是团队两周前重命名的函数，或引用上个月 sprint 中删除的模块，且没有任何迹象表明两者都已过时。
 
-| 指标 | 说明 | 优化手段 |
-|------|------|----------|
-| **Context Utilization** | 上下文窗口利用率 | 选择性注入 vs 全量注入 |
-| **Cache Hit Rate** | Prefix Cache 命中率 | `deferred_tools_delta` 机制 |
-| **Token/Task** | 完成任务所需的 Token 数 | 任务分解、上下文压缩 |
+**Agent式搜索避免了这些失败模式**。没有嵌入管道或集中式索引需要维护，随着数千名工程师提交新代码，每个开发者的实例都从实时代码库工作。但这种方法有权衡：它在 Claude 有足够的起始上下文来知道去哪里查找时效果最佳。这意味着 Claude 的导航质量取决于代码库的设置程度——通过 CLAUDE.md 文件和 Skills 分层提供上下文。
 
----
+## 套具与模型同等重要
 
-## 二、工具系统性能
+关于 Claude Code 最常见的误解之一是其能力完全由所使用的模型决定。团队关注模型的基准测试及其在测试任务中的表现。实际上，围绕模型构建的生态系统——即 **harness**——对 Claude Code 表现的影响比模型本身更大。
 
-### 2.1 工具并发模型
+Harness 由五个扩展点构建：CLAUDE.md 文件、Hooks、Skills、Plugins 和 MCP 服务器，每个点都有不同的功能。团队构建它们的顺序很重要，因为每一层都建立在前一层的基础上。另外两个能力——LSP 集成和子 Agent——完成了整个设置。
 
-Claude Code 采用**批次并发 + 串行写操作**的执行策略：
+## 五扩展点套具详解
 
-- **只读工具并发**：同批次内的 `Glob`/`Grep`/`Read` 可以并发执行
-- **写操作串行**：`Edit`/`Write` 会阻断同批次内后续工具执行
-- **最大并发数**：默认 **10**，可通过 `CLAUDE_CODE_MAX_TOOL_USE_CONCURRENCY` 环境变量调整
+### CLAUDE.md 文件
 
-> 这种设计的深层逻辑：写操作乱序执行可能导致代码状态不可预测。框架假设模型可能混排读写操作，因此写操作采用保守的串行设计。
+CLAUDE.md 文件是 Claude 在每个会话开始时自动读取的上下文文件：根目录文件提供全局概览，子目录文件提供本地规范。它们给予 Claude 所需的代码库知识。由于无论任务如何，它们在每个会话中都会加载，因此保持它们专注于广泛适用的内容将防止它们成为性能拖累。
 
-**性能影响**：
+**分层加载机制**：Claude 在代码库中移动时自动遍历目录树并累加读取所有沿途的 CLAUDE.md。根目录文件提供全局概览，子目录文件提供本地规范。核心原则是**只放真正普遍适用的内容**——过多内容会拖累会话性能。
 
-- 工具使用模式决定了并发效率上限
-- 如果模型习惯每次只发一个工具调用，批次并发形同虚设
-- 写操作占比高的任务（如大规模重构）会成为瓶颈
+### Hooks
 
-### 2.2 延迟加载机制
+Hooks 让设置自我改进。大多数团队将 Hooks 视为阻止 Claude 做错事的脚本，但更有价值的用途是持续改进。Stop Hook 可以在上下文新鲜时反思会话期间发生的事情并提议更新 CLAUDE.md。Start Hook 可以动态加载团队特定上下文，这样每个开发者都无需手动配置就能获得适合自己模块的设置。对于 lint 和格式化等自动化检查，Hooks 确定性执行规则，比依赖 Claude 记住指令产生更一致的结果。
 
-Claude Code 使用 `shouldDefer: true` 实现**延迟工具发现**：
+**三种核心 Hooks 模式**：
 
-```
-初始请求 → tools 数组只含空壳（defer_loading: true）
-                         ↓
-              ToolSearch 按需发现 → tool_reference 块
-```
+- **Stop Hook**：会话结束时趁上下文新鲜反思并提议更新 CLAUDE.md（持续改进的核心）
+- **Start Hook**：动态加载团队特定上下文，开发者自动得到适合自己模块的设置
+- **Lint/格式化 Hook**：确定性执行，比让 Claude 记住指令更稳定
 
-**性能开销**：
+**常见误区**：把本该自动运行的机械检查用提示词处理。
 
-- 首轮请求体积减小（工具 schema 不发送）
-- 延迟工具发现增加一次额外往返（ToolSearch 调用）
-- 安全边界价值 > 性能开销
+### Skills
 
-### 2.3 工具结果大小控制
+Skills 通过渐进式披露保持正确的专业知识按需可用，而不会让每个会话膨胀。在拥有数十种任务类型的大型代码库中，并非所有专业知识都需要在每个会话中都存在。Skills 通过渐进式披露解决这个问题，加载专门的工作流和领域知识，否则这些会竞争上下文空间，并且仅在任务需要时加载。例如，当 Claude 评估代码漏洞时加载安全审查技能，当代码更改且需要更新文档时加载文档处理技能。
 
-每个工具声明 `maxResultSizeChars` 字符数上限：
+Skills 还可以绑定到特定路径，这样它们只在代码库的相关部分激活。拥有支付服务的团队可以将他们的部署技能绑定到该目录，这样当有人在单体仓库的其他地方工作时它永远不会自动加载。
 
-- 超出上限 → **自动持久化到磁盘**，模型收到文件路径引用
-- `Read` 工具设为 `Infinity`（避免读文件→路径→再读的死循环）
-- `contentReplacementState` 跨轮次追踪，Compact 后可按需恢复
+### Plugins
 
----
+Plugins 分发有效的设置。大型代码库的一个挑战是好的设置可能停留在部落知识层面。Plugin 将 Skills、Hooks 和 MCP 配置捆绑到单个可安装包中，因此当新工程师在第一天安装该 Plugin 时，他们将立即拥有与已使用 Claude 的人相同的上下文和能力。Plugin 更新可以通过托管市场跨组织分发。
 
-## 三、缓存策略与 Token 效率
+### LSP 集成
 
-### 3.1 Prefix Cache 优化
+语言服务器协议（LSP）集成赋予 Claude 与开发者在 IDE 中相同的导航能力。大多数大型代码库 IDE 已经运行着 LSP，为"跳转到定义"和"查找所有引用"提供支持。向 Claude 公开这些给予它符号级精度：它可以跟随函数调用到其定义，跨文件跟踪引用，并区分不同语言中同名的函数。没有它，Claude 会进行文本模式匹配，可能落在错误的符号上。
 
-Claude Code 的核心缓存优化是 **`deferred_tools_delta` 机制**：
+**核心价值**：
 
-| 方案 | 问题 |
-|------|------|
-| **早期方案**：把已发现工具名拼成 `<available-deferred-tools>` 插入消息流 | 工具池每变一次，cache 全废 |
-| **现在的方案**：`deferred_tools_delta` 作为独立 attachment 发送 | 不修改消息流，prefix 始终稳定 |
+- "跳转到定义"和"查找所有引用"
+- grep 常见函数名返回几千条匹配，LSP 过滤在 Claude 读任何东西之前就完成
+- 多语言代码库（C/C++/Java等）投入产出比最高
 
-> prefix 始终不变，cache 持续命中。这意味着无论会话推进到哪个阶段，系统提示和消息历史都保持稳定。
+### MCP 服务器
 
-### 3.2 Prompt Caching 策略
+MCP 服务器是 Claude 连接到内部工具、数据源和 API 的方式，这些是它无法以其他方式到达的。最复杂的团队构建 MCP 服务器，将结构化搜索作为 Claude 可直接调用的工具暴露。其他则将 Claude 连接到内部文档、工单系统或分析平台。
 
-Claude Code 支持 Anthropic 的 **Prompt Caching** 特性：
+### 子 Agent
 
-- **缓存内容**：系统提示、任务模板、长参考文档
-- **缓存成本**：约 1/10 的重新输入成本
-- **TTL**：5 分钟缓存窗口
-- **适用场景**：大量重复上下文、长文档嵌入、多轮对话
+子 Agent 将探索与编辑分离。子 Agent 是一个隔离的 Claude 实例，有自己的上下文窗口，执行任务并仅将最终结果返回给父级。一旦 harness 到位，一些团队会启动只读子 Agent 来映射子系统并将发现写入文件，然后让主 Agent 用完整信息进行编辑。
 
-> 缓存策略是 Token 优化的另一维度——与上下文压缩形成互补。上下文压缩适合单轮内的上下文精简，缓存适合多轮间的上下文复用。
+## 组件对比表
 
-### 3.3 上下文注入策略对比
+| 组件 | 是什么 | 何时加载 | 最适合 | 常见困惑 |
+|------|--------|----------|--------|----------|
+| CLAUDE.md | Claude 自动读取的上下文文件 | 每个会话 | 项目特定规范、代码库知识 | 用于属于 skill 的可复用专业知识 |
+| Hooks | 在关键时刻运行的脚本 | 由事件触发 | 自动化一致行为、捕获会话学习 | 用提示词处理应该自动运行的事情 |
+| Skills | 特定任务类型的打包指令 | 按需加载，当相关时 | 跨会话和项目的可复用专业知识 | 将所有东西加载到 CLAUDE.md 而不是使用 skill |
+| Plugins | 捆绑的 skills、hooks、MCP 配置 | 配置后始终可用 | 跨组织分发有效设置 | 让好的设置停留在部落知识层面 |
+| LSP | 通过语言特定服务器获取的实时代码智能 | 配置后始终可用 | 符号级导航和在类型化语言中自动错误检测 | 假设它是自动的 |
+| MCP 服务器 | 连接到外部工具和数据 | 配置后始终可用 | 给予 Claude 无法以其他方式到达的内部工具访问权限 | 在基础设置工作之前构建 MCP 连接 |
+| 子 Agent | 用于特定任务的独立 Claude 实例 | 调用时 | 将探索与编辑分离、并行工作 | 在同一会话中运行探索和编辑 |
 
-| 框架 | 注入方式 | Token 开销 | 适用场景 |
-|------|----------|-----------|----------|
-| **Claude Code** | git 状态 + 按需探索 | 低（动态） | 熟悉主动探索的模型 |
-| **Codex** | 2 层目录树 | 中（静态） | 大型代码库概览 |
-| **OpenCode** | 硬编码禁用 | 零 | 超大规模代码库 |
-| **Gemini-CLI** | git 工作流指引 | 低（静态） | 标准化工作流 |
+*LSP 通过插件层访问。子 Agent 是一种委托能力，而非配置的扩展点。
 
-> Claude Code 的设计判断：目录树是静态快照，git 状态是动态的执行背景。\"当前改了哪些文件\"比\"目录里有哪些文件\"更有决策价值。
+## 三种成功部署配置模式
 
----
+如何为大型代码库配置 Claude Code 很大程度上取决于该代码库的结构。但在我们观察到的部署中，三种模式始终出现。
 
-## 四、上下文管理性能
+### 模式一：使代码库可规模化导航
 
-### 4.1 Compact 机制
+Claude 在大型代码库中提供帮助的能力受限于其找到正确上下文的能力。太多的上下文加载到每个会话中会降低性能，而太少的上下文会让 Claude 盲目导航。最有效的部署在使代码库对 Claude 可读方面进行前期投资。几个模式始终出现：
 
-Claude Code 的上下文压缩（Compact）会：
+**保持 CLAUDE.md 文件精简分层**
+Claude 在代码库中移动时累加加载它们：根文件用于全局概览，子目录文件用于本地规范。根文件应该只是指针和关键陷阱；其他一切都会成为噪音。
 
-1. 压缩消息历史，保留关键决策点
-2. 在 metadata 中快照已发现工具集合
-3. `contentReplacementState` 追踪文件引用变化
-4. Resume 时可按需恢复被压缩内容
+**在子目录中初始化，而不是在仓库根目录**
+Claude 在被限定到实际与任务相关的代码库部分时工作得最好。在单体仓库中，这可能感觉违反直觉，因为工具通常假设根访问，但 Claude 自动遍历目录树并加载沿途找到的每个 CLAUDE.md 文件，所以根级上下文永远不会丢失。
 
-**性能影响**：Compact 操作本身有计算成本，但防止上下文溢出更重要。
+**每个子目录限定测试和 lint 命令**
+当 Claude 只更改了一项服务时运行完整套件会导致超时，并浪费上下文在无关输出上。子目录级别的 CLAUDE.md 文件应指定适用于该部分代码库的命令。这对于每个目录都有自己测试和构建命令的服务导向型代码库效果很好。
 
-### 4.2 Subagent 上下文隔离
+**使用 .ignore 文件排除生成的文件**
+在 `.claude/settings.json` 中提交 `permissions.deny` 规则意味着排除是版本控制的，所以团队中的每个开发者都无需自己配置就能获得相同的降噪效果。在某些代码库中，生成的文件本身就是开发工作的主题。处理代码生成器的开发者可以覆盖其本地设置中的项目级排除，而不影响团队其他成员。
 
-Subagent 模式支持**独立的上下文作用域**：
+**构建代码库地图当目录结构不能胜任时**
+对于代码未集中在常规目录结构中的组织，仓库根目录的轻量级 markdown 文件列出每个顶级文件夹及其内容的单行描述，为 Claude 提供了可在打开文件之前扫描的目录表。
 
-- 父 Agent 可以给子 Agent 传递精选后的上下文
-- 子 Agent 隔离执行，不污染父 Agent 上下文
-- 适用于并行任务分解、危险操作隔离
+**运行 LSP 服务器让 Claude 按符号搜索，而不是字符串**
+在大型代码库中 grep 常见函数名会返回数千条匹配，Claude 会消耗上下文打开文件来确定哪个重要。LSP 仅返回指向同一符号的引用，所以过滤在 Claude 读取任何内容之前完成。
 
-> Subagent 作为上下文隔离工具的理念：专业化任务使用专门的上下文窗口，避免全局上下文膨胀。
+### 模式二：随着模型智能演进主动维护 CLAUDE.md
 
----
+随着模型演进，为当前模型编写的指令可能与未来模型背道而驰。指导 Claude 度过曾经挣扎模式的 CLAUDE.md 文件，在下一个模型发布时可能变得不必要或主动约束。例如，一个告诉 Claude 将每个重构分解为单文件更改的 CLAUDE.md 规则可能帮助过早期模型保持正轨，但会阻止更新模型进行其处理得好的协调跨文件更改。
 
-## 五、性能优化实践
+为补偿特定模型限制而构建的 Skills 和 Hooks——无论是模型推理还是 Claude Code 本身工具的限制——一旦这些限制不再存在就成为开销。例如，一个拦截文件写入以在 Perforce 代码库中强制执行 p4 编辑的 Hook，在 Claude Code 添加原生 Perforce 模式后变得冗余。
 
-### 5.1 环境变量调优
+**团队应该每三到六个月进行一次有意义的配置审查**，但在重大模型发布后以及性能感觉停滞时也值得进行一次。
 
-```bash
+### 模式三：分配 Claude Code 管理和采用的所有权
 
-# 最大工具并发数
-export CLAUDE_CODE_MAX_TOOL_USE_CONCURRENCY=20
+单纯的技术配置不能推动采用。做对的组织也在组织层面进行投资。
 
-# 上下文窗口大小（默认 200K）
-export CLAUDE_CODE_CONTEXT_WINDOW=500000
+**推广最快的部署在广泛访问之前进行了专门的基础设施投资**。一个小团队，有时甚至只是一两个人，在广泛访问之前先连接好工具，这样当开发者第一次接触 Claude 时，它已经适合开发者工作流程。在一家公司，几名工程师构建了一套 Plugin 和 MCP，在第一天就可用。在另一家，一整个专注于管理 AI 编码工具的团队在推广开始之前就准备好了基础设施。在这两种情况下，开发者的第一次体验是高效的，而不是沮丧的，采用由此传播。
 
-# 调试模式（记录详细性能日志）
-export CLAUDE_CODE_DEBUG=1
-```
+**DRI（负责人）模式**：一个人对 Claude Code 配置拥有所有权，对设置、权限策略、Plugin 市场和 CLAUDE.md 规范有决策权，并负责持续更新维护。
 
-### 5.2 Hooks 性能影响
-
-Hooks 系统会影响性能基准：
-
-| Hook | 性能影响 | 建议 |
-|------|----------|------|
-| `PreToolUse` | 可修改工具输入，可能增加延迟 | 避免同步 I/O |
-| `PostToolUse` | 可修改 MCP 工具输出 | 异步处理 |
-| `UserPromptSubmit` | 可注入额外上下文 | 监控上下文膨胀 |
-
-> 评测公平性：Hooks 是潜在的混淆变量。进行基准测试时使用 `--no-hooks` 模式。
-
-### 5.3 任务分解策略
-
-| 策略 | Token 效率 | 延迟 | 适用场景 |
-|------|-----------|------|----------|
-| 粗粒度分解 | 低 | 低 | 简单明确任务 |
-| 细粒度分解 | 高 | 高 | 复杂多步骤任务 |
-| 混合分解 | 中 | 中 | 并行子任务 + 顺序主流程 |
-
----
-
-## 六、行业基准对比
-
-### 6.1 SWE-bench 性能
-
-Claude Code 在 SWE-bench 等软件工程基准上的表现：
-
-| 模型 | 分辨率 | 平均 Token/Task |
-|------|--------|-----------------|
-| Claude Opus 4.7 | 80%+ | ~50K |
-| Claude Sonnet 4 | 65-75% | ~35K |
-| GPT-5.5 | 70-80% | ~45K |
-| DeepSeek V4 Pro | 60-70% | ~30K |
-
-> 评测机构视角：Mythos Preview 强大，但真实选择取决于用例——是支付昂贵模型短时间使用，还是用更便宜模型长时间运行。
-
-### 6.2 成本效率对比
-
-| 方案 | 成本/Point | 适用场景 |
-|------|-----------|----------|
-| Claude Opus 4.7 | $0.01 | 高可靠性要求 |
-| Claude Sonnet 4 | $0.003 | 平衡成本与性能 |
-| DeepSeek V4 Flash | $0.0003 | 大规模自动化任务 |
-
-> DeepSeek V4 Flash 的每 point 成本比 Opus 4.7 便宜约 100 倍，但绝对分数也相应较低。运行多次尝试的成本仍低于一次昂贵模型运行。
-
----
-
-## 七、深度分析
-
-### 7.1 性能天花板
-
-Claude Code 的性能上限由**三重因素**共同决定：
-
-1. **模型能力**：推理质量、工具使用准确性
-2. **Harness 设计**：缓存、并发、上下文管理
-3. **任务特性**：代码库规模、任务复杂度、探索深度
-
-> 工具系统的效率上限，取决于模型的工具使用模式，而不只取决于框架设计。这意味着即使框架优化到极致，模型本身的能力仍是瓶颈。
-
-### 7.2 评测方法论挑战
-
-| 挑战 | 问题 | 解决方向 |
-|------|------|----------|
-| 任务多样性 | 不同代码库结构导致结果差异 | 多样化测试集 |
-| 探索策略 | 模型探索深度影响结果 | 标准化起始状态 |
-| Hook 混淆 | Hook 注入影响公平性 | `--no-hooks` 基准 |
-| 缓存干扰 | Prompt Cache 改变后续请求 | 清缓存后重新测试 |
-
-### 7.3 未来优化方向
-
-1. **自适应并发**：根据任务类型动态调整写操作串行策略
-2. **智能上下文注入**：基于代码库结构预测最佳注入策略
-3. **跨会话缓存**：复用相似任务的上下文压缩结果
-4. **工具预发现**：机器学习预测高概率工具，提前加载
-
----
-
----
+**受监管行业的治理问题**：明确已批准 Skills 集合、必要代码审查流程和有限的初始访问范围，随着信心建立再逐步扩展。跨职能工作组早期建立（汇集工程、信息安全 和治理代表）定义需求并构建推广路线图，这被证明是最顺畅的部署。
 
 ## 深度分析
 
-Claude Code 性能评测揭示了 Agent 编程工具的核心性能规律：**框架设计、模型能力、任务特性三重约束决定了性能天花板，而非单一因素**。
+### 核心洞察：上下文即护城河
 
-**1. 批次并发模型是框架设计中最被低估的性能杠杆。** 读工具并发、写工具串行的设计不只是工程选择，而是对 LLM 认知模式的直接映射。框架设计者面临的真正挑战不是"如何提高并发数"，而是"如何让模型习惯在单次回复中发出多个工具调用"——这是 prompt 工程与框架设计的交叉问题。在 benchmark 中，模型使用模式对吞吐量的影响可能超过框架优化本身。
+本文最根本的洞见在于揭示了**Agent式搜索的本质是上下文工程**。与RAG依赖过去时态的代码库快照不同，Agent式搜索要求主动构建将来时态的上下文——这不是一个技术差异，而是哲学差异。RAG试图用相关性算法弥补上下文缺口，而Agent式搜索则通过harness设计来消除这个缺口。CLAUDE.md分层、Skills按需加载、Hooks自我改进，这三者共同构成了一个**自适应上下文供给系统**，使得Claude在任何时刻都拥有恰到好处的上下文。
 
-**2. `deferred_tools_delta` 机制是缓存策略的工程最优解，而非临时补丁。** 工具发现状态变化导致消息序列变化 → prefix cache 失效这条链路，被 Anthropic 工程师通过附件分离设计彻底切断。这是"缓存失效必须由结构变化引起"这一计算机科学原理在 LLM 工程中的具体应用。对任何需要动态注入内容但希望维持缓存命中率的 Agent 框架，都有直接借鉴价值。
+### 架构层次的结构性关系
 
-**3. 性能评测方法论的挑战揭示了 Agent 基准测试的根本困境。** 评测 Claude Code 的难点不在于测什么指标，而在于如何隔离变量：Hook 是混淆变量、Prompt Cache 改变后续请求、模型探索策略影响结果。这意味着"SWE-bench 分数"作为单一指标是有误导性的——同一模型在不同探索策略下可能产生显著不同的分数。多维度的基准测试集（吞吐量、Token 效率、上下文利用率、成本效率）比单一评分更能指导框架选型。
+五个扩展点的顺序不是任意的：CLAUDE.md → Hooks → Skills → Plugins → MCP，构成了一个**从内省到外延的扩展链**。CLAUDE.md提供基础上下文层，Hooks实现自我观测和修正，Skills封装可复用专业知识，Plugins解决分发问题，MCP打通外部工具。这个层次揭示了一个重要原则：**每一层都建立在前一层的能力之上**，跳级往往导致系统不稳定。例如，没有充分的CLAUDE.md基础就上 Skills，Claude无法判断何时该激活哪个Skill；没有Hook积累的自我认知，Plugin的价值只停留在"设置同步"而非"知识传承"。
 
-**4. Subagent 上下文隔离是规模化 Agent 系统的必备能力。** 在多 Agent 协作场景中，父 Agent 的上下文膨胀是性能退化的主要原因。Subagent 模式通过精选上下文传递实现了进程级的隔离——这不只是性能优化手段，也是系统可预测性的保障。规模化的 Agent 系统（如多智能体代码生成流水线）应该将上下文隔离作为架构约束而非优化选项。
+### 经济模型：上下文是稀缺资源
 
-**5. 成本效率曲线揭示了模型选型的非线性规律。** Opus 4.7 绝对性能最高，但 Sonnet 4 在成本/性能平衡点上更优；DeepSeek V4 Flash 的每 point 成本比 Opus 4.7 低约 100 倍，但在某些场景下"多次重试便宜模型"的成本仍低于"一次昂贵模型"。这意味着模型选型不是选最强，而是根据任务复杂度构建分层模型路由策略。
+文章隐含了一个经济视角：**上下文空间是有限的，因此需要配置经济机制**。分层机制是分形定价——根目录CLAUDE.md对全局定价，子目录CLAUDE.md对局部定价，Skills对任务类型定价。Hooks的Stop Hook机制实质上是**会话学习的市场**：每次会话的洞见被定价为一次CLAUDE.md更新的提案机会。这个机制比让开发者手动维护文档更高效，因为它在知识最鲜活的时候完成定价和记录。
+
+### 组织动态与采用曲线
+
+模式三揭示了一个关键的非技术因素：**AI工具的采用率取决于首次体验质量**。这不是一个技术问题，而是一个组织行为学问题。当前的技术团队管理结构通常按技术栈划分（前端组、后端组、基础设施组），但Claude Code的价值发挥要求按**工作流程段**组织——探索、编辑、审查、部署。这意味着采用Claude Code可能倒逼组织结构调整，或者至少需要跨职能的协调角色（DRI模式）。
+
+### 模型迭代与配置债务
+
+每3-6个月审查配置的建议，揭示了一个被低估的风险：**配置债务**。与代码债务类似，harness配置也会积累。早期为补偿模型缺陷而写的CLAUDE.md规则，可能在模型升级后成为性能瓶颈甚至错误行为的诱因。这个问题在采用敏捷发布周期的模型供应商环境中尤其突出——每一次模型更新都可能使部分配置失效或产生新问题。LSP集成的价值因此更加突出：它是唯一不依赖提示词层级的上下文机制，对模型版本相对免疫。
+
+### 子Agent的认知分工价值
+
+子Agent不只是并行化工具，它实现了一个关键的认知分工：**探索层与执行层解耦**。主Agent在执行编辑时保持目标连续性，子Agent在探索时保持上下文纯净。这个模式的深层含义是：Claude Code不是单一AI实例，而是一个**多代理认知系统**，其效能取决于如何分配认知任务到合适的代理层级。
 
 ## 实践启示
 
-1. **评测 Claude Code 时**：使用 `--no-hooks` 模式避免 Hook 混淆变量
-2. **优化 Token 效率时**：优先使用缓存策略，其次才是上下文压缩
-3. **提升吞吐量时**：确保模型习惯批量工具调用，而非单步调用
-4. **成本控制时**：复杂任务用 Sonnet 4，简单任务可用 DeepSeek V4 Flash
-5. **大规模部署时**：Subagent 模式隔离上下文，避免全局膨胀
+1. **保持 CLAUDE.md 精简分层**：根目录只放关键指引和必须注意的坑，详细知识放到子目录 CLAUDE.md，让 Claude 自动按路径加载对应规范
+2. **用 .ignore 排除噪音**：在 .claude/settings.json 中配置 permissions.deny 规则，排除生成文件、构建产物和第三方代码，团队自动获得一致的降噪效果
+3. **每 3-6 个月审查一次配置**：为当前模型写的指令可能成为未来模型的障碍。建议在每次重大模型发布后、效果感觉瓶颈时都做一次有意义的配置审查
+4. **Assign DRI（负责人）模式**：一个人对 Claude Code 配置拥有所有权，对设置、权限策略、Plugin 市场和 CLAUDE.md 规范有决策权，并负责持续更新维护
+5. **受监管行业一开始就要明确边界**：明确已批准 Skills 集合、必要代码审查流程和有限的初始访问范围，随着信心建立再逐步扩展，避免合规问题
+6. **在子目录中初始化而不是 repo 根**：Claude 被限定到与任务相关的代码库部分时工作得最好，它会自动遍历目录树加载所有 CLAUDE.md，所以根级上下文不会丢失
+7. **LSP 集成优先**：对于多语言代码库，投入产出比最高，在 Claude 读任何东西之前就完成符号级精准导航
 
----
+## 关键权衡
 
-## 相关主题
+- **Agent 式搜索 vs RAG**：无中央索引，信息不过期；但需要足够起始上下文
+- **CLAUDE.md 精简 vs 详尽**：太详尽会拖累会话性能
+- **模型迭代 vs 配置维护**：每 3-6 个月审查一次，避免早期局限成为新模型障碍
+- **集中治理 vs 分散实验**：受监管行业一开始就要明确边界，逐步扩展
+- **部落知识 vs 可分发设置**：Plugin 机制解决好的设置无法传播的问题
 
-- [Claude Code 架构深度解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-deep-architecture-analysis.md)
-- [12 个 Harness 设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-agentic-harness-design-patterns.md)
-- [Prompt Caching 工程实践](../ch01/278-anthropic-prompt-caching-claude-code.html)
-- [Subagent 上下文卫生](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-subagent-context-hygiene.md)
-- [上下文窗口管理对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-window-management.md)
+## 边界情况与注意事项
 
-→ [原文存档](https://mp.weixin.qq.com/s/bMjXlD-OcnFW-wuN1yW8FA)
+**CLAUDE.md 分层方法失效的边缘情况**：
+
+- 拥有数十万文件夹和数百万文件的代码库
+- 使用非 Git 版本控制的遗留系统
+
+在这些情况下，需要额外的配置工作。Claude Code 设计围绕conventional软件工程环境：工程师是主要代码库贡献者，repo 使用 Git，代码遵循标准目录结构。非传统设置（如带有大型二进制资产的游戏引擎、具有非传统版本控制的环境，或非工程师向代码库贡献）需要额外的配置工作。
+
+## 与 Agent Harness Engineering 的关系
+
+参见 [Agent Harness 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture.md)（AHE框架）。
+
+AHE 是通用的 Harness 工程方法论；本文是 Claude Code 的具体场景扩展点实现，两者互补。AHE 的"三层可观测"在大型代码库场景对应 LSP+Hooks 的调试能力。
+
+核心判断不变：**真正决定产品能否落地、能否稳定交付的，往往是 Harness，而非模型**。Harness Engineering 框架的 Prompt ⊂ Context ⊂ Harness 层次同样适用：Claude Code 的五扩展点正是这个层次的具体实现——CLAUDE.md 提供基础 Context，Hooks/Skills/Plugins 构成 Harness 层，MCP 打通外部工具。
+
+## QQ音乐 Harness Engineering 实践（黄欣欣/腾讯云开发者，2026-05-22）
+
+**核心公式：** `代码产出 = AI能力 × 上下文质量`（乘法非加法）
+
+上下文质量趋近于零时，模型再强产出也是零。模型能力提升依赖外部厂商，上下文质量提升完全掌握在团队自己手中——因此提升上下文质量是比提升模型能力更高效的杠杆。
+
+**Vibe Coding 三大结构性缺陷：**
+
+- **信息损耗** — 同一句话多次执行给出不同实现；需求→设计→代码每步都要有显式产出和可追溯关系
+- **知识孤岛** — AI 只知训练语料里的通用知识，不懂团队历史决策和私有约束
+- **验证断档** — "能跑"就直接提交；每个关键节点都要有可机读的质量门禁和审计记录
+
+**真实业务仓五大上下文缺口：**
+| 缺口类型 | 典型问题 | AI"盲区" |
+|---------|---------|---------|
+| 隐性规范 | 团队约定的锁机制、埋点规则、错误码空间 | AI 不知道这些规范存在 |
+| 历史决策 | "为什么选了 A 方案不选 B" | 训练语料里没有团队内部决策记录 |
+| 服务契约 | IDL 字段的冻结状态、下游是否强依赖 | AI 看到文本，不理解哪些字段动不得 |
+| 跨服务依赖 | 同一需求要改哪几个服务、谁调谁 | AI 缺乏全局视角 |
+| 演进轨迹 | 某个模块上次大改的坑、灰度策略 | AI 没有跨会话记忆 |
+
+**QQ音乐 Harness Engineering 框架（50+微服务）：**
+
+- **五阶段 + 四门禁：** 初始化→需求定义→设计→开发→交付；需求评审门禁/设计门禁/Dev进入门禁/服务仓库检查门禁
+- **三层知识体系：** context/team/（团队级）/ context/harness-framework/（框架级）/ context/project/（服务级）
+- **三仓联动：** 每个需求在 Harness仓/业务仓/IDL契约仓里用完全相同的分支名 `feature/{devops-name}/{tapd-id}`
+- **.service-matrix/dependencies.yaml：** 服务拓扑单一真相源，57个服务的 repo_path 解析
+- **Self-Refinement 闭环：** 每次"纠正"沉淀为团队资产experience/*.md，新人/新模型/新会话都能复用
+- **Skill/Agent/Command 三件套：** 34 Skills + 24 Agents + 35 Slash Commands，全部版本化 markdown 文件，Knowledge as Code
+
+**关键判断：**
+
+- Harness Engineering 是治理层，不替代执行工具（Claude Code/Cursor/Gemini CLI等）；工程规范与 AI 工具解耦，今天用 Claude Code，明天换工具，流程和知识都不丢
+- AI 写代码变快了，但快不等于对；错误越早拦住代价越低
+- 真正决定能否稳定交付的是 Harness，而非模型
+
+## 相关资源
+
+- 原文存档
+- QQ音乐 Harness Engineering 实践原文存档
 
 ## 相关实体
+- [Claude Code Best Practices Prompt Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/claude-code-best-practices-prompt-engineering.md)
 
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/evaluation-and-benchmarks.md)
+- [Feishu Aily Agent Lobster](https://github.com/QianJinGuo/wiki-public/blob/main/entities/feishu-aily-agent-lobster.md)
+- [Colaos Listenhub Agency Native Organization Juzi](https://github.com/QianJinGuo/wiki-public/blob/main/entities/colaos-listenhub-agency-native-organization-juzi.md)
+- [Red Sequoia Ai Summit Agi Declaration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/red-sequoia-ai-summit-agi-declaration.md)
+- [Hermes Self Improving Overview Winty](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-self-improving-overview-winty.md)
+- [Cursor.Com Composer 2 5](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cursor.com-composer-2-5.md)
+- [100 年压缩到 100 天红杉资本这就是 Agi](https://github.com/QianJinGuo/wiki-public/blob/main/entities/100-年压缩到-100-天红杉资本这就是-agi.md)
+- [Stripe Agent Economic Infrastructure Emily Sands](https://github.com/QianJinGuo/wiki-public/blob/main/entities/stripe-agent-economic-infrastructure-emily-sands.md)
+- [Pilotdeck Data派Thu 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/pilotdeck-data派thu-2026.md)
+- [Four Sub Agent Patterns](https://github.com/QianJinGuo/wiki-public/blob/main/entities/four-sub-agent-patterns.md)
+- [A Guide To Which Ai To Use In The Agentic Era](../ch01/470-a-guide-to-which-ai-to-use-in-the-agentic-era.html)
+- [Ai Xiaolaoliu Business Agent Augmentation Layer General Base 20260606](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-xiaolaoliu-business-agent-augmentation-layer-general-base-20260606.md)
+- [Cloud Agent Development Environments](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloud-agent-development-environments.md)
+- [Volcengine Data Agent Product Overview](https://github.com/QianJinGuo/wiki-public/blob/main/entities/volcengine-data-agent-product-overview.md)
+- [Ai Agent Engineer Learning Roadmap Backend 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-engineer-learning-roadmap-backend-2026.md)
+- [Emergent Collaboration Ai High Quality Decision Agent Room](https://github.com/QianJinGuo/wiki-public/blob/main/entities/emergent-collaboration-ai-high-quality-decision-agent-room.md)
+- [Iclr 2026 英伟达 普渡大学用Agent闭环实现文生3D](https://github.com/QianJinGuo/wiki-public/blob/main/entities/iclr-2026-英伟达-普渡大学用agent闭环实现文生3d.md)
+- [Agent Guide Core Concepts Overview](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-guide-core-concepts-overview.md)
+- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](https://github.com/QianJinGuo/wiki-public/blob/main/entities/腾讯混元新里程碑hy3-preview-发布开源agent-表现全面提升.md)
+- [Headroom Context Compression Agent Vibecoder](https://github.com/QianJinGuo/wiki-public/blob/main/entities/headroom-context-compression-agent-vibecoder.md)
+- [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
+- [Kimi Work Beta Foundation Model Company Advantage](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kimi-work-beta-foundation-model-company-advantage.md)
+- [Agent Paradigm Evolution Feipeng Alibaba](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-paradigm-evolution-feipeng-alibaba.md)
+- [Hermes Agent Long Running Governance Five Cards Ruofei](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-long-running-governance-five-cards-ruofei.md)
+- [Agentic Rl Token In Token Out Done Right C6Aaa4](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentic-rl-token-in-token-out-done-right-c6aaa4.md)
+- [Ai Techliwen Creaoai Cloud Agent Infrastructure Two Lessons 20260606](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-techliwen-creaoai-cloud-agent-infrastructure-two-lessons-20260606.md)
+- [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md)
+- [Kimi Work 300 Agent Cluster Yin John Agi Hunt](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kimi-work-300-agent-cluster-yin-john-agi-hunt.md)
+- [Your First Ai Agent Should Do One Thing Badly](../ch04/257-your-first-ai-agent-should-do-one-thing-badly.html)
+- [A Missing Layer In Agentic Systems](../ch04/434-a-missing-layer-in-agentic-systems.html)
+- [Announcing Genkit Middleware Intercept Extend And Harden Your Agentic Apps](https://github.com/QianJinGuo/wiki-public/blob/main/entities/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps.md)
+- [Hermes Agent Soul Md Personality Shugex](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-soul-md-personality-shugex.md)
+- [Lessons From 2 Billion Agentic Workflows](https://github.com/QianJinGuo/wiki-public/blob/main/entities/lessons-from-2-billion-agentic-workflows.md)
+- [Local Vs Cloud Agent Onsite Context Debate Xingxiaozhao](https://github.com/QianJinGuo/wiki-public/blob/main/entities/local-vs-cloud-agent-onsite-context-debate-xingxiaozhao.md)
+- [Volcengine Data Agent Marketing Strategy Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/volcengine-data-agent-marketing-strategy-agent.md)
+- [Phoneworld Mobile Agent Scaling Mock Environments Tencent Hunyuan Arxiv 2605 29486](https://github.com/QianJinGuo/wiki-public/blob/main/entities/phoneworld-mobile-agent-scaling-mock-environments-tencent-hunyuan-arxiv-2605-29486.md)
+- [Hermes Agent Self Evolution 源码解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-self-evolution-源码解析.md)
+- [Real Ai Agents And Real Work](../ch04/177-real-ai-agents-and-real-work.html)
+- [Volcengine Data Agent Intelligent Query Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/volcengine-data-agent-intelligent-query-agent.md)
+- [Hermes Agent Tool System Analysis](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-tool-system-analysis.md)
+- [How To Build Agents Where Data Already Lives](../ch04/284-how-to-build-agents-where-data-already-lives.html)
+- [Rocketmq 5 5 0 Litetopics Ai Agent Messaging](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rocketmq-5-5-0-litetopics-ai-agent-messaging.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/claude-code-complete-guide.md)
 
 ---
 

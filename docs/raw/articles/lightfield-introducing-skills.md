@@ -1,18 +1,24 @@
 ---
-type: source-card
 title: "Lightfield"
-source: "newsletter"
-author: "未标注作者；来源机构见 source"
-source_url: "https://lightfield.app/blog/introducing-skills"
-published: "2026-05-15"
-collected: "2026-05-16"
-license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
+sha256: 2bacbb856c7e9cbba005262ea5f777ecdb455d5ea1498d1b0e31f90947e5a2a0
+source: newsletter
+source_url: https://lightfield.app/blog/introducing-skills
+url: https://lightfield.app/blog/introducing-skills
+fetcher: jina
+review_value: 7
+review_confidence: 8
+review_recommendation: neutral
+ingested: 2026-05-16
+review_stars: 3
+created: 2026-05-15
+updated: 2026-05-15
 ---
-
 # Lightfield
-
-## 原创摘要
-
-这份来源卡片记录一篇围绕“Lightfield”的第三方资料，主题标签为相关 AI 工程主题。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
-
-> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。
+Lightfield is introducing Skills, a new feature that enables AI agents to develop specialized capabilities over time. Unlike traditional static AI models, Skills allows agents to accumulate domain-specific expertise through repeated interactions and learning.
+Key concepts:
+1. **Persistent Skill Development**: Skills enable AI agents to build and retain expertise across sessions, improving their performance in specific domains without requiring full model retraining.
+2. **Domain Specialization**: Organizations can develop specialized Skills for their specific use cases, creating agents that excel in particular tasks or industries.
+3. **Learning from Interactions**: The system learns from each interaction, gradually improving skill proficiency without catastrophic forgetting.
+4. **Skill Sharing**: Organizations can share Skills across teams, enabling best practices to propagate and accumulate organizational knowledge.
+The article discusses how Skills represents a shift from one-size-fits-all AI toward personalized, specialized AI agents that improve over time.
+> 来源：[[raw/articles/lightfield-introducing-skills|原文存档]]

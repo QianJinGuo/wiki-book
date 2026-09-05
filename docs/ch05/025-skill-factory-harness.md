@@ -1,5 +1,7 @@
 # Skill Factory：三天手搓面向Harness设计的技能工厂
 
+## Ch05.025 Skill Factory：三天手搓面向Harness设计的技能工厂
+
 > 📊 Level ⭐⭐ | 5.4KB | `entities/skill-factory-yueheng.md`
 
 ## 背景：三种 Skill 创建方式对比
@@ -15,7 +17,7 @@
 - [Anthropic Managed Agents Scaling](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-managed-agents-scaling.md)
 - [Hermes Agent Deep Dive Alibaba](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-deep-dive-alibaba.md)
 
-→ [原文存档](https://mp.weixin.qq.com/s/tm7M3N8f45K87YUTwERkhg)
+→ 原文存档
 
 ## 深度分析
 

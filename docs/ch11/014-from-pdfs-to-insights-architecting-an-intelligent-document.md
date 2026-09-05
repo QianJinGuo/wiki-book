@@ -1,5 +1,7 @@
 # From PDFs to insights: Architecting an intelligent document processing pipeline with AWS generative AI services
 
+## Ch11.014 From PDFs to insights: Architecting an intelligent document processing pipeline with AWS generative AI services
+
 > 📊 Level ⭐ | 4.4KB | `entities/from-pdfs-to-insights-architecting-an-intelligent-document-p.md`
 
 # From PDFs to insights: Architecting an intelligent document processing pipeline with AWS generative AI services
@@ -47,7 +49,7 @@ AWS 在 2026-06 发布的一篇 IDP（智能文档处理）架构深度文章，
 
 ## 与现有 wiki 实体的关联
 
-- [optimize-blueprint-extraction-accuracy-in-amazon-bedrock-dat](../ch12/086-optimize-blueprint-extraction-accuracy-in-amazon-bedrock-dat.html) — 同 BDA 平台，本文是 IDP 4 层架构全景，optimize-blueprint 是单点 blueprint 优化深度
+- [optimize-blueprint-extraction-accuracy-in-amazon-bedrock-dat](../ch12/087-optimize-blueprint-extraction-accuracy-in-amazon-bedrock-dat.html) — 同 BDA 平台，本文是 IDP 4 层架构全景，optimize-blueprint 是单点 blueprint 优化深度
 - [building-supercharger-how-rocket-close-optimized-title-opera](https://github.com/QianJinGuo/wiki-public/blob/main/entities/building-supercharger-how-rocket-close-optimized-title-opera.md) — 金融场景生产 case study (Rocket Close)，Strands Agents + Bedrock + MCP
 - [amazon-bedrock-agentcore-runtime-deep-dive-and-scenario-analysis](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-agentcore-runtime-deep-dive-and-scenario-analysis.md) — AgentCore Runtime 深度（与本文 Strands on AgentCore 对应）
 - [process-financial-documents-using-amazon-bedrock-data-automa](https://github.com/QianJinGuo/wiki-public/blob/main/entities/process-financial-documents-using-amazon-bedrock-data-automa.md) — 金融文档 BDA 案例
@@ -55,7 +57,7 @@ AWS 在 2026-06 发布的一篇 IDP（智能文档处理）架构深度文章，
 
 ## 原文链接
 
-→ [原文存档](https://aws.amazon.com/blogs/machine-learning/from-pdfs-to-insights-architecting-an-intelligent-document-processing-pipeline-with-aws-generative-ai-services)
+→ 原文存档
 
 ---
 

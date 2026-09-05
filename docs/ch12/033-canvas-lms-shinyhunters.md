@@ -1,10 +1,12 @@
 # Canvas LMS 攻击者 ShinyHunters 官方域名被暂停：转向暗网的运营安全转向
 
+## Ch12.033 Canvas LMS 攻击者 ShinyHunters 官方域名被暂停：转向暗网的运营安全转向
+
 > 📊 Level ⭐⭐⭐ | 9.1KB | `entities/canvas-hackers-shinyhunters-say-their-official-domain-suspen.md`
 
 # Canvas LMS 攻击者 ShinyHunters 官方域名被暂停：转向暗网的运营安全转向
 
-→ [原文存档](https://hackread.com/canvas-hackers-shinyhunters-official-domain-suspended/)
+→ 原文存档
 
 ## 摘要
 
@@ -76,7 +78,7 @@ ShinyHunters 在公告中特别警告：暂停的域名未来可能被未知行�
 
 - [Canvas 漏洞中断全国学校](https://github.com/QianJinGuo/wiki-public/blob/main/entities/canvas-breach-disrupts-schools-colleges-nationwide.md) — Canvas LMS 攻击的更早报道
 - [ShinyHunters 7-Eleven 数据泄露](https://github.com/QianJinGuo/wiki-public/blob/main/entities/shinyhunters-7-eleven-data-breach.md) — ShinyHunters 的另一起高调攻击
-- [ICO 对 South Staffordshire 处以 96.3 万英镑罚款](https://www.theregister.com/cyber-crime/2026/05/11/ico-fines-south-staffordshire-963k-over-2022-breach/5237875) — 同期另一重大勒索软件事件，体现勒索软件生态多样性
+- ICO 对 South Staffordshire 处以 96.3 万英镑罚款 — 同期另一重大勒索软件事件，体现勒索软件生态多样性
 - [OpenClaw 完全指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md) — Agent 工具在攻防两面的双刃剑属性
 - [Agent 记忆系统的工程实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md) — 对 Agent 上下文与状态管理的进一步讨论
 

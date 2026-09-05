@@ -1,5 +1,7 @@
 # Harness Engineering - 让 Coding Agent 可靠完成长程任务
 
+## Ch09.014 Harness Engineering - 让 Coding Agent 可靠完成长程任务
+
 > 📊 Level ⭐⭐ | 7.5KB | `entities/harness-engineering-reliable-long-term-agent.md`
 
 ## 核心主题
@@ -45,7 +47,7 @@ Harness Engineering 方法论，让 Coding Agent 能够可靠地完成长程任�
 - → [Qoder Skills Complete Guide](https://github.com/QianJinGuo/wiki-public/blob/main/entities/qoder-skills-complete-guide.md)
 - → [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/ahe-agentic-harness-engineering.md)
 ---
-→ [原文存档](https://mp.weixi)
+→ 原文存档
 
 ## 相关实体
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-long-term-agent-tasks.md)

@@ -1,18 +1,46 @@
 ---
-type: source-card
 title: "AgentOmnia：探索Agent大模型全场景Scaling"
-source: "www.xiaohongshu.com"
-author: "Huawei Cloud Post-Training Team"
 source_url: "https://www.xiaohongshu.com/discovery/item/6a698279000000000c014a3e"
-published: "未标注"
-collected: "2026-07-31"
-license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
+source_site: "xiaohongshu.com"
+source_account: "花落、花满天"
+author: "Huawei Cloud Post-Training Team"
+ingested: 2026-07-31
+sha256: c4ea224eda167c9d90525f71736b870808aea00f9cbe4052267992269cf632e1
+type: raw-article
+tags: [agentic-rl, agent-omnium, post-training, data-synthesis, evaluation, huawei-cloud, scaling]
 ---
 
 # AgentOmnia：探索Agent大模型全场景Scaling
 
-## 原创摘要
+> 技术报告：AgentOmnia: Scaling Agentic Models for Full-Scenario Applications
+> 团队：Huawei Cloud Post-Training Team
+> AgentOmnia 论文：https://arxiv.org/abs/2607.23124
+> OmniaBench 论文：https://arxiv.org/abs/2607.14989
+> OmniaBench 评测代码与评测集：https://github.com/scuuy/OmniaBench
 
-这份来源卡片记录一篇围绕“AgentOmnia：探索Agent大模型全场景Scaling”的第三方资料，主题标签为agentic-rl、agent-omnium、post-training。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
+最近，我们把团队在 Full-Scenario Agentic Scaling 上的技术探索整理成了技术报告 AgentOmnia，初步分享如何通过统一的任务空间，衔接数据构造、模型后训练、评测诊断与持续迭代，进而系统性扩展 Agent 大模型的全场景能力。
 
-> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。
+## 关注的问题
+
+模型在少数工具调用 benchmark 上取得高分后，如何进一步扩展到不同应用、能力和任务难度？
+
+## 主要做了三件事
+
+1. 用 **Domain × Capability × Atomic Difficulty** 定义全场景任务空间；
+2. 通过 **DAG、Program 和 Solver 三类管线**，构建难而可验证的环境与任务；
+3. 结合**特权指导、SFT、Agentic RL 和 RCRL**，将困难任务（teacher 模型也只能做对一半的难任务，简单蒸馏是不行的）转化为有效训练信号，并尝试用 **PRD** 承接评测诊断、指导后续数据合成。
+
+## 规模与效果
+
+基于以上，构建 **5,018 个可执行有状态环境、255,375 个工具和 52,361 个任务**，基于 Qwen3-30B-A3B-Thinking-2507 进行了 Agentic SFT/RL，全场景技术收益：
+
+1. **OmniaBench 挑战集：9.16% → 37.11%**
+2. **四项 benchmark 宏平均：22.86% → 41.69%**
+3. **76/90 个一级领域获得提升**
+4. **全部 10 类能力和 8 类原子难度因素获得提升**
+
+差不多在各类 Agent 任务中，都把 Qwen3 的指标拔到了 Qwen3.5 往上一点。
+
+## 后续方向
+
+正在将技术进展迁移应用到更强基座、更大规模和复杂生产环境中，同时也在探索一些前沿技术专项。

@@ -2,7 +2,7 @@
 
 > 不能观测就不能改进：评估体系、基准测试、实验追踪
 
-> 本章收录 **15 篇**实体，按深度递增排列。
+> 本章收录 **17 篇**实体，按深度递增排列。
 
 ---
 
@@ -10,8 +10,8 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐⭐⭐ 专家 | 需ML基础 | 4 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 8 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 5 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 9 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 3 |
 
 ---
@@ -77,11 +77,100 @@ PwC 的 Leinwand 认为，CEO 期望 IT 通过连接数据、工作流与决策�
 - [数据质量框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/data-quality-framework.md)
 - [负责任 AI 治理体系](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/responsible-ai-governance.md)
 
-→ [原文存档](https://www.cio.com/article/4171959/ceos-top-priorities-for-it-leaders-today-2.html)
+→ 原文存档
 
 ---
 
-## Ch13.002 NVIDIA MCG Toolkit 模型文档自动化
+## Ch13.002 AI Skill Evolution Framework
+
+> 📊 Level ⭐⭐⭐ | 7.4KB | `entities/ai-skill-evolution-framework.md`
+
+## 相关实体
+- [AI Skill 测评指标体系](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-skill-metrics-system.md)
+- [Skill工程化设计：把Agent当算法用](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-engineering-ai-as-algorithm.md)
+- [Agentic AI 系统架构与分层模型](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentic-ai-system-architecture-harness-skill-mcp.md)
+- [AWS Model Agility: 6步LLM跨代际迁移框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-generative-ai-model-agility-framework.md)
+
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/ai-skill-design.md)
+## 深度分析
+### AI Skill 的本质定义
+AI Skill 是一种以 Markdown 编写的「给模型看的说明书」，是 LLM 应用质量的核心载体。它告诉大模型在特定场景下该怎么做：模型读懂了才能按规则执行，模型没读懂，规则就形同虚设。
+Skill 的核心是 `SKILL.md`，包含：
+
+- **触发条件**：什么情况下使用这个 Skill
+- **业务规则**：具体怎么做，有哪些约束
+- **接口调用**：调用哪些工具，参数怎么传
+- **异常处理**：出错了怎么办
+
+### 三个传统软件测试覆盖不了的结构性问题
+**问题一：自判卷偏差**
+传统测试：代码执行 → 断言框架验证（执行者和验证者完全分离）
+AI Skill 测试（不设计好时）：模型执行 Skill → **同一个模型**判断结果是否正确
+这就像让学生自己批改自己的试卷。模型倾向于认为自己做对了，即使实际上规则没有被正确执行。
+**问题二：随机性**
+同一个 prompt，今天运行通过，明天运行失败。这不是 bug，是大模型的本质特性——采样温度大于 0，导致每次生成略有差异。
+单次测试的结论不可靠。需要多次运行，用统计方法描述 Skill 的真实表现。例如：「通过率 87% ± 5%」比「通过了」提供的信息量大得多。
+**问题三：负向增益**
+最隐蔽的问题：84 个有效任务里，约 19%（16 个）加了 Skill 反而比没加更差。
+原因可能是：
+
+- Skill 的规则过于死板，限制了模型本来能做好的灵活性
+- Skill 的指令和模型的默认行为冲突，模型「不知道该听谁的」
+- Skill 文档太长太复杂，模型「选择性忽略」了部分规则
+如果你只测「加了 Skill 之后能不能跑通」，永远发现不了这个问题。需要同时测「没有 Skill 时模型表现如何」，然后对比增益差值 Δ（delta）= 有 Skill 时通过率 − 无 Skill 时通过率。Δ 为负就是发布红线。
+
+### 三个核心测评设计
+**1. 执行者和评审者分离（解决自判卷偏差）**
+执行 Skill 的 Agent 和评审结果的 Agent 完全独立，运行在不同的上下文中。评审 Agent 必须引用原文证据，不能凭感觉判断。
+**2. 多次运行取均值（解决随机性）**
+标准模式下每个用例运行 3 次，计算通过率的均值和标准差。标准差 > 0.3 说明结果高度不稳定，通常意味着 prompt 存在歧义或 Skill 规则有冲突。
+**3. 有 Skill vs 无 Skill 对比（解决负向增益）**
+每个用例同时跑两个版本：
+
+- **with_skill**：加载 Skill 指令，模型按规则执行
+- **without_skill**：不加载任何 Skill，纯模型通用能力
+计算增益 Δ = with_skill 通过率 − without_skill 通过率。Δ < 0 立即触发预警，必须查明根因再决定是否上线。
+
+## 实践启示
+### 1. 建立 Skill 测评意识
+AI Skill 需要专门测评，因为它有三个传统软件测试根本覆盖不了的结构性问题。在发布任何 Skill 之前，必须：
+
+- 用独立评审者验证执行结果
+- 多次运行取统计均值
+- 对比有/无 Skill 的增益差
+
+### 2. 识别负向增益是发布红线
+负向增益（Δ < 0）比直接失败更危险，因为它极度隐蔽。解决方案是强制进行有/无 Skill 对比测试。
+
+### 3. 设计 Skill 规则时的关键原则
+Skill 规则不只是"做什么"，还要说清楚"为什么"和"做不到会怎样"。
+报销助手的真实踩坑案例：SKILL.md 里写「最终调用 saveExpenseDoc 保存草稿」，但没有明确约束 docStatus 参数必须固定为 "10"。模型自行推断参数值，有时传了 "20"（提交审批），直接提交了用户根本没有核对过的单据。
+修复方式：补一句「docStatus 固定为 '10'，对应草稿状态，传其他值会导致单据直接进入审批流，不可撤回」——加上「为什么」之后，模型正确执行概率显著提升。
+
+### 4. 判断 Skill 是否可以上线
+同时满足三条标准：
+1. 通过率达到该风险等级的准入阈值（S 级关键场景要求 ≥ 95%）
+2. 增益 Δ > 0，确认 Skill 有正向价值而非帮倒忙
+3. IFR（指令遵循率）达标，S 级要求 100%
+Δ < 0 是硬性红线，不接受「先上线再观察」。
+
+### 5. 测评前的三类资产准备
+1. **测试账号**：拥有对应权限，能触发 Skill 的目标流程
+2. **测试数据**：对应场景的发票、单据等，类型必须和测试用例匹配
+3. **规则清单**：对被测 Skill 的规则清单，测评工具可以自动从 SKILL.md 提炼，但人工确认一遍更准确
+
+### 6. 理解 AI Skill 测评与传统软件测试的区别
+| 维度 | 传统软件测试 | AI Skill 测评 |
+|------|------------|--------------|
+| 输出特性 | 确定性，同输入同输出 | 概率性，需多次运行取均值 |
+| 执行方式 | 代码执行 | 模型推理，规则可能被忽略 |
+| 结果验证 | 断言框架直接比较 | 需独立 Agent 评审，防自判卷 |
+| 测评目标 | 能不能跑通 | 还要测「加了有没有帮助」（Δ） |
+→ 原文存档
+
+---
+
+## Ch13.003 NVIDIA MCG Toolkit 模型文档自动化
 
 > 📊 Level ⭐⭐⭐ | 6.7KB | `entities/nvidia-mcg-model-documentation.md`
 
@@ -95,7 +184,7 @@ NVIDIA MCG Toolkit 自动生成 AI 模型文档的技术指南，针对 EU AI Ac
 
 ---
 
-→ [原文存档](https://developer.nvidia.com/blog/how-to-automate-ai-model-documentation-with-the-nvidia-mcg-toolkit/)
+→ 原文存档
 
 ## 深度分析
 
@@ -147,7 +236,7 @@ Oracle 将 MCG 部署在 OCI Container Engine for Kubernetes 上，结合 DAC（
 
 ---
 
-## Ch13.003 Discretizing Reward Models
+## Ch13.004 Discretizing Reward Models
 
 > 📊 Level ⭐⭐⭐ | 6.2KB | `entities/abs-2606-21795.md`
 
@@ -241,7 +330,7 @@ Vijay Viswanathan 等人的研究论文，揭示了奖励模型（Reward Model�
 - Constitutional AI：CAI 中的奖励模型可从离散化中受益
 - Dario Amodei RL Safety：RL 安全性研究的另一维度
 
-→ [原文存档](https://arxiv.org/abs/2606.21795)
+→ 原文存档
 
 ---
 ## 关联
@@ -249,13 +338,13 @@ Vijay Viswanathan 等人的研究论文，揭示了奖励模型（Reward Model�
 
 ---
 
-## Ch13.004 EVA-Bench Data 2.0
+## Ch13.005 EVA-Bench Data 2.0
 
-> 📊 Level ⭐⭐⭐ | 4.6KB | `entities/eva-bench-data-2-voice-agent.md`
+> 📊 Level ⭐⭐⭐ | 4.7KB | `entities/eva-bench-data-2-voice-agent.md`
 
 # EVA-Bench Data 2.0
 
-> ServiceNow AI 2026-06-04 在 Hugging Face 发布的语音 Agent 垂直领域评估基准。本实体整合自 [原文存档](https://huggingface.co/blog/ServiceNow-AI/eva-bench-data)。
+> ServiceNow AI 2026-06-04 在 Hugging Face 发布的语音 Agent 垂直领域评估基准。本实体整合自 原文存档。
 
 ## 概述
 
@@ -344,7 +433,7 @@ EVA-Bench 的 121 工具 × 213 场景设计，正是为了量化这些垂直维
 
 ---
 
-## Ch13.005 美团海报生成 AIGC 技术体系：PosterCraft/PosterOmni/PosterReward（ICLR/CVPR 2026 三连发）
+## Ch13.006 美团海报生成 AIGC 技术体系：PosterCraft/PosterOmni/PosterReward（ICLR/CVPR 2026 三连发）
 
 > 📊 Level ⭐⭐⭐⭐ | 22.1KB | `entities/meituan-poster-aigc-postercraft-posteromni-posterreward-meigen.md`
 
@@ -548,19 +637,19 @@ EVA-Bench 的 121 工具 × 213 场景设计，正是为了量化这些垂直维
 
 ## 相关实体
 
-→ [原文存档](https://mp.weixin.qq.com/s/4ytSFiJa2q8inb5U-Au9Nw)
+→ 原文存档
 
 - [CVPR 2026 小米 SVOR 视频掩码](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cvpr-xiaomi-svor-video-masking.md)
 - [JOYAI Echo 长视频框架（京东）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/joyai-echo-long-video-framework-jd.md)
 - [GPT-Image-2 完全指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gpt-image-2-完全指南附大量玩法案例顺便开源我的生图-skill.md)
 - [腾讯陈进 Agent Loop 工程手册](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-loop-engineering-handbook-8-questions-chen-jin-tencent-self-2026.md)
-- [Harness Engineering](ch05/066-harness-engineering.html)
+- [Harness Engineering](ch05/096-harness-engineering.html)
 - [ConardLi Harness Engineering 综合性指南（+ Beautiful Article 第 2 来源）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-comprehensive-guide-conardli.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/reinforcement-learning-rlhf.md)
 
 ---
 
-## Ch13.006 Agent 评测方法论——美团图灵两年 BP 实践（人人一致/人机一致 + 桥梁指标 + 长程范式）
+## Ch13.007 Agent 评测方法论——美团图灵两年 BP 实践（人人一致/人机一致 + 桥梁指标 + 长程范式）
 
 > 📊 Level ⭐⭐⭐⭐ | 20.4KB | `entities/meituan-turing-agent-evaluation-methodology-2026-08-06.md`
 
@@ -691,13 +780,13 @@ ChatAgent 时代：核心评测员对齐 → 外包对齐 → 机评对齐。长
 - Harness Gate 评估——准入准出门禁嵌入开发发布流程与其 gate 设计思想同源
 - [AliExpress 细粒度 Agent 评测体系](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-evaluation-fine-grained-system-aliexpress-2026.md)——另一家大厂工业评测实践，可横向对比
 
-→ [原文存档](https://mp.weixin.qq.com/s/gZKWRqznB8sNBFf69fBIvw)
+→ 原文存档
 
 - [MOC：Agent 工程指南](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-engineering-guide.md)
 
 ---
 
-## Ch13.007 阿里巴巴&蚂蚁 LoongSuite GenAI 可观测语义规范：从统一数据语言到规模化落地
+## Ch13.008 阿里巴巴&蚂蚁 LoongSuite GenAI 可观测语义规范：从统一数据语言到规模化落地
 
 > 📊 Level ⭐⭐⭐⭐ | 20.3KB | `entities/阿里巴巴蚂蚁-loongsuite-genai-可观测语义规范从统一数据语言到规模化落地.md`
 
@@ -706,7 +795,7 @@ ChatAgent 时代：核心评测员对齐 → 外包对齐 → 机评对齐。长
 - LoongSuite GenAI SemConv 在 OTel GenAI SemConv 基础上新增 Entry/Step Span、Skill 语义、Token 级推理观测三大核心增强
 - GenAI Utils 作为工程化能力层，将语义规范的复杂性封装为统一 API，实现插桩库与规范升级的解耦
 - Token 级推理可观测首次将 vLLM / SGLang / TensorRT-LLM 引擎内部的黑盒过程拆解到 Token 粒度
-> 来源：[原文存档](https://mp.weixin.qq.com/s/X6lh1LuOJgbkJQ8t0Zky1g)
+> 来源：原文存档
 
 ## 背景：为什么需要 GenAI 可观测语义规范
 随着 GenAI 的快速发展，AI Agent 系统中涌现出大量新核心概念——Model、Prompt、Token、Tool Calling、Agent、Memory、Session——它们已成为算法工程师、运维人员和可观测平台用户最密切关注的观测对象 。这些对象需要像传统系统中 HTTP 请求或数据库调用一样被标准化采集、展示和消费，使系统维护者能够清晰了解调用过程并高效排查问题 。
@@ -814,17 +903,17 @@ LoongSuite 的演进路径——内部验证后贡献社区——是大型企业
 - [从多智能体编排到Ai自主决策资损防控体系的架构演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/从多智能体编排到ai自主决策资损防控体系的架构演进.md)
 - [给氛围编程系上安全带阿里集团 Ai 代码评审实践与 Benchmark 开源](https://github.com/QianJinGuo/wiki-public/blob/main/entities/给氛围编程系上安全带阿里集团-ai-代码评审实践与-benchmark-开源.md)
 
-→ [原文存档](https://mp.weixin.qq.com/s/X6lh1LuOJgbkJQ8t0Zky1g)
+→ 原文存档
 
 ---
 
-## Ch13.008 NICE：浙大提出的理论驱动型 LLM 社会智能诊断基准
+## Ch13.009 NICE：浙大提出的理论驱动型 LLM 社会智能诊断基准
 
 > 📊 Level ⭐⭐⭐⭐ | 16.7KB | `entities/nice-zhejiang-university-social-intelligence-benchmark-hyman.md`
 
 # NICE：浙大提出的理论驱动型 LLM 社会智能诊断基准
 
-> 本实体整理自 [原文存档](https://mp.weixin.qq.com/s/Xr3t8vHZoer1eHSBsYN7ZA)，并参考浙大 arXiv 论文 *NICE: A Theory-Grounded Diagnostic Benchmark for Social Intelligence of LLMs*（https://arxiv.org/abs/2605.29685 ）。
+> 本实体整理自 原文存档，并参考浙大 arXiv 论文 *NICE: A Theory-Grounded Diagnostic Benchmark for Social Intelligence of LLMs*（https://arxiv.org/abs/2605.29685 ）。
 
 ## 一句话总结
 
@@ -1005,18 +1094,18 @@ NICE 真正的差异化定位是**「理论 + 内涵级 + 排序题」三位一�
 - [AI 评估的三种方法](https://github.com/QianJinGuo/wiki-public/blob/main/entities/evals-three-methods-of-ai-evaluation.md)
 - [Agent Skill 写作评估](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing-evaluation.md)
 - [AI 工作面试与模型评估](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-job-interview-model-evaluation-mollick.md)
-- [Inngest 2026 AI 评测报告](ch01/423-inngest-ai-in-production-the-2026-benchmark-report.html)
+- [Inngest 2026 AI 评测报告](ch01/452-inngest-ai-in-production-the-2026-benchmark-report.html)
 - [Agent Harness 生产设计指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture-design-production-guide.md)
 - [Agent 工程原则](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-engineering-principles-architecture-practice.md)
 - [SkillClaw Hyman 阿里 Skill 框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skillclaw-hyman-nightly-evolution-alibaba.md)
 - [SkillX 浙大 Hyman](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skillx-zhejiang-university-hyman.md)
 - [Claude Code 最佳社区 Fork 演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-best-community-fork-evolution-vibecoder.md)
 
-→ [原文存档](https://mp.weixin.qq.com/s/Xr3t8vHZoer1eHSBsYN7ZA)
+→ 原文存档
 
 ---
 
-## Ch13.009 循环工程 (Loop Engineering) — 清华 2026 框架
+## Ch13.010 循环工程 (Loop Engineering) — 清华 2026 框架
 
 > 📊 Level ⭐⭐⭐⭐ | 16.7KB | `entities/loop-engineering-tsinghua-2026.md`
 
@@ -1222,7 +1311,7 @@ Agent 时代研究焦点从单次生成转向持续运行，三个关键事实�
 
 ---
 
-## Ch13.010 用 Amazon SageMaker AI 与 Qualcomm AI Hub 打通从云端训练到端侧 NPU 的交付闭环
+## Ch13.011 用 Amazon SageMaker AI 与 Qualcomm AI Hub 打通从云端训练到端侧 NPU 的交付闭环
 
 > 📊 Level ⭐⭐⭐⭐ | 13.9KB | `entities/amazon-sagemaker-qualcomm-ai-hub-edge-npu-deployment.md`
 
@@ -1327,7 +1416,7 @@ SageMaker 训练 (PyTorch/TensorFlow)
 - [Announcing Openai Compatible Api Support For Amazon Sagemaker](https://github.com/QianJinGuo/wiki-public/blob/main/entities/announcing-openai-compatible-api-support-for-amazon-sagemaker.md)
 - [Aws Sagemaker Sft Dpo Tool Calling](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-sagemaker-sft-dpo-tool-calling.md)
 
-→ [原文存档](https://aws.amazon.com/blogs/machine-learning/sagemaker-qualcomm-ai-hub-edge-npu)
+→ 原文存档
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
 ## 深度分析
@@ -1376,7 +1465,7 @@ SageMaker AI 与 Qualcomm AI Hub 的组合本质上是把模型交付链条的�
 
 ---
 
-## Ch13.011 SaaS-Bench：浙大阿里 Steering Computer-Use Agent 真实系统评测（3.8% 通过率暴露范式天花板）
+## Ch13.012 SaaS-Bench：浙大阿里 Steering Computer-Use Agent 真实系统评测（3.8% 通过率暴露范式天花板）
 
 > 📊 Level ⭐⭐⭐⭐ | 10.3KB | `entities/saas-bench-gui-agent-eval-unipat.md`
 
@@ -1488,7 +1577,7 @@ pass@3 相比 pass@1 整体提升约 8pp，Sonnet 4.6 多模态任务提升 18.2
 - GitHub：https://github.com/UniPat-AI/SaaS-Bench
 - 论文：https://arxiv.org/abs/2605.15777
 
-→ [原文存档](https://mp.weixin.qq.com/s/KzPHgTF7j3XzWDZSh_jJPw)
+→ 原文存档
 
 ---
 ## 关联
@@ -1496,7 +1585,7 @@ pass@3 相比 pass@1 整体提升约 8pp，Sonnet 4.6 多模态任务提升 18.2
 
 ---
 
-## Ch13.012 Hermes 可观测性方案
+## Ch13.013 Hermes 可观测性方案
 
 > 📊 Level ⭐⭐⭐⭐ | 8.2KB | `entities/hermes-observability.md`
 
@@ -1587,18 +1676,119 @@ hermes gateway start  # 后台
 5. **安全审计应作为可观测性的标配而非附加** — 当 Agent 开始调用外部工具（尤其是有写入能力的工具），异常行为检测和全量日志审计是防止生产事故的最后防线。
 
 ## Related
-- [Hermes Agent](ch03/096-hermes-agent.html) — Nous Research 开源 Agent 框架，可观测性是其生产落地关键能力
+- [Hermes Agent](ch03/100-hermes-agent.html) — Nous Research 开源 Agent 框架，可观测性是其生产落地关键能力
 - [Hermes Agent 深度解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-deep-dive.md) — Self-Evolving/动态 Skill 沉淀/RL 训练闭环等深度解析
 - [OpenClaw 架构解析](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/openclaw-architecture.md) — 无内置可观测方案，对比参考
-- [原始文章存档](https://mp.weixin.qq.com/s/XQqbHr7EjH906vQhX8b6Cw)
+- 原始文章存档
 
 ---
 
-## Ch13.013 ai-skill-测评指标体系
+## Ch13.014 Agent Skill 评估与迭代
+
+> 📊 Level ⭐⭐⭐⭐ | 5.8KB | `entities/agent-skill-writing-evaluation.md`
+
+## 优化 description 的系统性方法
+1. 准备 20 个提示词（一半触发 / 一半不触发）
+2. 运行测试，每个用例测 3 次以上取触发概率
+3. 分析：应该触发的没触发 → 描述太窄；不应该触发的触发了 → 描述太宽
+4. 迭代直到通过率满意
+
+## 测试用例设计
+结构：`提示词 + 预期输出 + 输入文件（可选）`
+技巧：
+
+- 从 2-3 个开始，不要一开始就写很多
+- 变化措辞（随意 ↔ 精确）
+- 覆盖边缘情况
+- 使用真实上下文（文件路径、列名等）
+
+## 运行评估
+两次对比：**with_skill vs without_skill**
+```
+iteration-1/
+├── eval-top-months-chart/
+│   ├── with_skill/outputs/ + timing.json + grading.json
+│   └── without_skill/...
+└── benchmark.json（汇总统计）
+```
+
+## 断言编写原则
+| 好的断言 | 弱的断言 |
+|---------|---------|
+| 可编程验证 | 太模糊（"输出很好"）|
+| 具体可观察 | 太脆弱（措辞一变就失败）|
+| 可计数 | |
+
+## 聚合结果分析
+```json
+{
+  "delta": {
+    "pass_rate": 0.50,
+    "time_seconds": 13.0,
+    "tokens": 1700
+  }
+}
+```
+分析模式：
+
+- 两种配置都通过 → 移除断言，无有用信息
+- 两种都失败 → 断言本身有问题
+- 带Skill才通过 → Skill 明显增加价值的地方
+- 高标准差 → 收紧指令，减少模糊性
+
+## 迭代原则
+- 从反馈中泛化，不做狭隘补丁
+- 保持精简：少而好的指令 > 详尽规则
+- 解释为什么：基于推理的指令 > 僵化指令
+- 打包重复工作：测试用例都写类似脚本 → 应打包进 Skill
+
+## 三类测试
+**测试一：触发测试（最关键）**
+
+- ✅ 至少 10 个应该触发的用例 + 5 个不应该触发的用例
+- 快速诊断：直接问 AI"你什么时候会用这个 Skill"，根据回答判断 description 是否准确
+**测试二：功能测试**
+
+- 同一请求运行 3-5 次
+- 检查：输出结果一致、API 调用成功（0 错误）、关键步骤无遗漏
+**测试三：与无 Skill 基线对比**
+| 指标 | 无 Skill | 有 Skill |
+|------|---------|---------|
+| 用户需要提供的说明 | 每次都要解释 | 无需解释 |
+| 来回对话轮次 | 15 轮 | 2 轮 |
+| API 调用失败次数 | 3 次 | 0 次 |
+| Token 消耗 | 12,000 | 6,000 |
+
+## 动态优化
+> "你刚才的输出中，[具体描述问题]。请把这个改进固化到 [skill-name] 这个 Skill 文件中。"
+Skill 是**活文档**，每次修正都可以沉淀，减少下次犯同样错误的概率。
+
+## 深度分析
+评估的本质是**建立因果链**：Skill 带来的改变是否可归因于 Skill 本身，而非随机波动或测试偏差。三类测试构成递进防线——触发测试验证「该不该用」，功能测试验证「用对了吗」，基线对比验证「用了有多大价值」。其中触发测试最易被忽视，却最能暴露 description 关键词的遗漏或歧义。
+迭代的核心不在于修复单个失败用例，而在于**从错误模式中提炼通用约束**。一个断言失败背后往往是一个隐含假设——要么指令太模糊，要么边界条件未被显式声明。将每次修正视为 Skill 边界的一次微调，而非对一个偶然错误的补丁。
+delta 指标（pass_rate / time_seconds / tokens）的标准差同样携带信息：高标准差意味着 Skill 在不同输入上的表现不稳定，反映的是指令中存在未被约束的模糊性，需要通过收紧条件或增加示例来消除。
+
+## 实践启示
+1. **先触发，后功能**：写 Skill 时优先打磨 description，确保激活条件准确，再投入精力在执行逻辑和 Gotchas 上。触发错了，功能再完美也白费。
+2. **让测试用例自己说话**：好的测试用例集是一份「边界合同」——AI 看到这些输入和期望输出，应该能推断出 Skill 的适用范围和限制。
+3. **量化优先，感观次之**：用 pass_rate 说话而非「感觉更好用了」。数据才能支撑迭代决策。
+4. **把重复测试脚本打包进 Skill**：当多个测试用例都包含相同的辅助脚本时，说明这段逻辑应该下沉到 Skill 的 scripts/ 中，避免测试与 Skill 之间的逻辑重复。
+5. **让 Skill 自己记录成长**：每次从对话中修正一个问题时，显式地将改进固化到 SKILL.md 中，而非仅留在记忆里。Skill 是持续演进的文档而非一次性的产物。
+
+## 相关实体
+- [Agent Skill 高质量编写规范](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing-practices.md)
+- [Agent Skill 进阶模式与治理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing-advanced.md)
+
+- [SkillSieve — Agent Skill 安全检测三层框架（arXiv 2604.06550）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skillsieve-agent-skill-security.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/evaluation-benchmarks-extended.md)
+
+---
+
+## Ch13.015 ai-skill-测评指标体系
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 17.2KB | `entities/ai-skill-测评指标体系.md`
 
-[Ai Skill 测评指标体系](https://juejin.cn/post/7619990292557365300)
+Ai Skill 测评指标体系
 
 # 02—通过率、增益 Δ、IFR 怎么看？AI Skill 测评指标体系完整解读
 系列：AI Skill 测评体系从零到一（二）
@@ -1867,11 +2057,11 @@ Stddev > 0.1 时，按以下顺序排查：
 - [Harness Engineered Business Agent Evaluation Aliyun Boyu](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineered-business-agent-evaluation-aliyun-boyu.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/evaluation-benchmarks-extended.md)
 
-→ [原文存档](https://juejin.cn/post/7619990292557365300)
+→ 原文存档
 
 ---
 
-## Ch13.014 07—AI Skill 测评体系完整进阶指南：5 大能力缺口与填补路径
+## Ch13.016 07—AI Skill 测评体系完整进阶指南：5 大能力缺口与填补路径
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 16.6KB | `entities/ai-skill-测评体系进阶指南.md`
 
@@ -2119,7 +2309,7 @@ SkillSentry 测评体系的演进折射出一个根本性的工程挑战：如�
 
 ---
 
-→ [原文存档](https://juejin.cn/post/7620226704209068072)
+→ 原文存档
 
 → [测评指标体系](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-skill-测评指标体系.md)
 
@@ -2131,7 +2321,7 @@ SkillSentry 测评体系的演进折射出一个根本性的工程挑战：如�
 
 ---
 
-## Ch13.015 06—看懂 AI Skill 测评报告：PASS / FAIL / INCONCLUSIVE 背后的发布决策逻辑
+## Ch13.017 06—看懂 AI Skill 测评报告：PASS / FAIL / INCONCLUSIVE 背后的发布决策逻辑
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 14.6KB | `entities/ai-skill-测评报告解读.md`
 
@@ -2384,7 +2574,7 @@ AI Skill 测评报告是一套**分层置信机制**：用颜色横幅给出确�
 
 → [AI Skill 测评体系进阶指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-skill-测评体系进阶指南.md) — 同系列其他章节
 
-→ [原文存档](https://juejin.cn/post/7619990292557447220)
+→ 原文存档
 
 ## 相关实体
 

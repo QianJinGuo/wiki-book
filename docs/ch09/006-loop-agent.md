@@ -1,5 +1,7 @@
 # Loop 的产品视角——项目中心从人挪到 Agent 系统
 
+## Ch09.006 Loop 的产品视角——项目中心从人挪到 Agent 系统
+
 > 📊 Level ⭐ | 4.2KB | `entities/dittos-loop-codex-product-pm-zhongshiliu-2026.md`
 
 # Loop 的产品视角——项目中心从人挪到 Agent 系统
@@ -42,7 +44,7 @@
 1. **loopable**：Agent 能自己发现任务适合变成 Loop
 2. **一句话编译成 Loop**：用户的一句话被解析为目标、验证方式、触发条件、记忆规则
 
-→ [原文存档](https://mp.weixin.qq.com/s/a9KVtosK59Oc8vmBx0969g)
+→ 原文存档
 
 ---
 

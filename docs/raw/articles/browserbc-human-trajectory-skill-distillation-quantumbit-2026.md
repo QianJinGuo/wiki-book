@@ -1,18 +1,27 @@
 ---
-type: source-card
 title: "browserbc-human-trajectory-skill-distillation-quantumbit-2026"
-source: "mp.weixin.qq.com"
-author: "未标注作者；来源机构见 source"
+created: 2026-07-24
+updated: 2026-07-24
+type: raw-article
+tags: [raw, article]
+sha256: 15eb510076abe49df1d20e4cfbcca0e84ebc54b3d0651d94fb220c6d8bb68d40
 source_url: "https://mp.weixin.qq.com/s/OFXkRh_keR4HzgTImCGjVg"
-published: "2026-07-24"
-collected: "2026-07-24"
-license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
 ---
 
-# browserbc-human-trajectory-skill-distillation-quantumbit-2026
-
-## 原创摘要
-
-这份来源卡片记录一篇围绕“browserbc-human-trajectory-skill-distillation-quantumbit-2026”的第三方资料，主题标签为raw、article。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
-
-> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。
+---
+title: "BrowserBC：克隆人类点击，让一次网页操作转化为所有Agent的能力"
+source: wechat
+source_url: https://mp.weixin.qq.com/s/OFXkRh_keR4HzgTImCGjVg
+author: 量子位
+feed_name: 量子位
+review_value: 8
+review_confidence: 8
+review_recommendation: worth-reading
+review_stars: 4
+date: 2026-06-29
+created: 2026-06-29
+updated: 2026-06-29
+tags: [browser-agent, skill-distillation, web-agent, trajectory, human-demonstration, transfer-learning, skill-graph]
+type: article
+provenance_state: extracted
+sha256: 28a2766609afc0d5660dd57f0193733edf12718113c0ff323d6d44ec471c5748

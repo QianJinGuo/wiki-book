@@ -1,18 +1,12 @@
 ---
-type: source-card
 title: "Breaking Claude Code Opus 5 Auto Mode — Prompt Injection攻击"
-source: "simonwillison.net"
-author: "未标注作者；来源机构见 source"
-source_url: "https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode/"
-published: "2026-08-30"
-collected: "2026-08-30"
-license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
+created: 2026-08-30
+updated: 2026-08-30
+source_url: https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode/
+ingested: 2026-08-30
+sha256: 3c9d63e06e92db5550f598215d7b298b3d74f30d3fa8ce80c5a8daab4ec046dc
 ---
 
-# Breaking Claude Code Opus 5 Auto Mode — Prompt Injection攻击
+# Breaking Claude Code Opus 5 Auto Mode
 
-## 原创摘要
-
-这份来源卡片记录一篇围绕“Breaking Claude Code Opus 5 Auto Mode — Prompt Injection攻击”的第三方资料，主题标签为相关 AI 工程主题。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
-
-> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。
+Breaking Claude Code Opus 5 Auto Mode Simon Willison’s Weblog Subscribe Sponsored by: Greptile — The Al code reviewer that runs your code. Catch bugs that only show up at runtime. Try it for free 27th August 2026 - Link Blog Breaking Claude Code Opus 5 Auto Mode . Anthropic are putting a great deal of faith in Claude Code's auto mode for protecting their coding agent users against prompt injection attacks. They recently made that the default and have made bold claims about its effectiveness. Johann Rehberger is one of the most credible prompt injection researchers active today. He found an attack against auto mode which he claims works 80% of the time, by tricking Claude Code into downloading and uncompressing a zip archive, then executing code that imports base64 without noticing that this will import and execute a local struct.py file extracted from the archive. In a few cases auto mode directly prevented the agent from preventing harmful code from continuing to execute! In a few runs Claude tried to terminate the malware process once it noticed the compromise, but Auto Mode denied the cleanup command. Claude detects the compromise, but Auto Mode blocks its cleanup command The safety mechanism itself can become part of the failure. The classifier allowed the creation of the malware process, but then it blocked the command intended to stop it! I agree with Johann's conclusion here: the only safe way to run agents if there's any risk of attracting the attention of an adversarial attack is with a sandbox: Run unattended coding agents in a container, VM or OS sandbox. Restrict network egress. Monitor your agents. Do not expose home directories, SSH keys, cloud credentials,… to the agent runtime. [...] Posted 27th August 2026 at 10:50 pm Recent articles Conceptual integrity and counting lines of code - 19th August 2026 Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things - 16th August 2026 Now we have a timeline of the OpenAI accidental attack against Hugging Face - 7th August 2026 This is a link post by Simon Willison, posted on 27th August 2026 . sandboxing 55 security 628 ai 2,206 prompt-injection 162 generative-ai 1,955 llms 1,922 anthropic 332 claude 304 johann-rehberger 19 claude-code 125 Monthly briefing Sponsor me for $10/month and get a curated email digest of the month's most important LLM developments. Pay me to send you less! Sponsor & subscribe Disclosures Colophon © 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026

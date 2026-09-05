@@ -1,5 +1,7 @@
 # Agentic Abstention—Agent 能及时停止吗？华盛顿大学/Allen AI 28000+ 任务基准评测
 
+## Ch04.036 Agentic Abstention—Agent 能及时停止吗？华盛顿大学/Allen AI 28000+ 任务基准评测
+
 > 📊 Level ⭐ | 3.5KB | `entities/agentic-abstention-washington-allen-2026.md`
 
 # Agentic Abstention—Agent 能及时停止吗？
@@ -39,7 +41,7 @@
 
 > 工程启示：你在 AbstentionBench 上刷高的分数不能直接外推到 ReAct 式 Agent 的停止质量。花大价钱堆模型、加 reasoning、换 scaffold，Agent 依然可能在不可行任务上无效 burn token。
 
-→ [原文存档](https://mp.weixin.qq.com/s/NKN8GmtO4lc5f9TIG-Komg)
+→ 原文存档
 
 ---
 ## 关联

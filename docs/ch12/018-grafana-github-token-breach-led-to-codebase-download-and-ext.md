@@ -1,5 +1,7 @@
 # Grafana GitHub Token Breach Led to Codebase Download and Extortion Attempt
 
+## Ch12.018 Grafana GitHub Token Breach Led to Codebase Download and Extortion Attempt
+
 > 📊 Level ⭐⭐ | 7.2KB | `entities/grafana-github-token-breach-led-to-codebase-download-and-extortion-attempt.md`
 
 ## 事件概要
@@ -63,7 +65,7 @@ Grafana 主动在 X 平台公布事件进展，遵循了 modern breach disclosur
 - [Thehackernews Com Github Breached Employee Device Hack Led To Exfilt](https://github.com/QianJinGuo/wiki-public/blob/main/entities/thehackernews-com-github-breached-employee-device-hack-led-to-exfilt.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-landscape.md)
 
-→ [原文存档](https://thehackernews.com/2026/05/grafana-github-token-breach-led-to.html)
+→ 原文存档
 
 ---
 

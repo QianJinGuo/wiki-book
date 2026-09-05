@@ -1,10 +1,12 @@
 # MoonBit：面向 Agent 协作的编程语言（语言即工具链 + 形式化验证 + Wasm 沙箱）
 
+## Ch05.008 MoonBit：面向 Agent 协作的编程语言（语言即工具链 + 形式化验证 + Wasm 沙箱）
+
 > 📊 Level ⭐ | 4.1KB | `entities/moonbit-agent-oriented-language-formal-verification-wasm.md`
 
 # MoonBit：面向 Agent 协作的编程语言
 
-> **来源**：机器之心 | [原文存档](https://mp.weixin.qq.com/s/FG_-DEwSw0_ubBE36tMeeA)
+> **来源**：机器之心 | 原文存档
 > **语言**：由中国团队开发的编程语言，面向 Agent 协作、快速反馈和工程闭环设计
 
 ## 核心架构：语言即工具链

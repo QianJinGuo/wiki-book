@@ -76,7 +76,7 @@ But this does not follow: being a popular language with a lot of training data o
 
 > 📊 Level ⭐⭐ | 6.1KB | `entities/2026-05-06-2201.md`
 
-["The Complexity of Simplicity | Jim Nielsen's Notes"](https://notes.jim-nielsen.com/n/2026-05-06-2201/)
+"The Complexity of Simplicity | Jim Nielsen's Notes"
 ---
 
 ## 深度分析
@@ -111,7 +111,7 @@ Cantrill 强调"someone at the helm"的角色——有效控制复杂性需要�
 - [Codex Goal Implementation Breakdown](https://github.com/QianJinGuo/wiki-public/blob/main/entities/codex-goal-implementation-breakdown.md)
 - [Gaode Ai Companion Agent Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gaode-ai-companion-agent-architecture.md)
 
-→ [原文存档](https://notes.jim-nielsen.com/n/2026-05-06-2201/)
+→ 原文存档
 
 ## 相关实体
 - `架构设计误区` — 抽象层失控导致复杂性蔓延的典型案例
@@ -139,8 +139,8 @@ Anthropic 的 Natural Language Autoencoders (NLA) 研究旨在将 Claude 的内�
 
 ### 与 wiki 的关联
 → [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 的可观测性需求
-→ [Claude Code 源码解析](https://mp.weixin.qq.com/s/bMjXlD-OcnFW-wuN1yW8FA) 的内部机制探索
-→ [原文存档](https://www.anthropic.com/research/natural-language-autoencoders)
+→ Claude Code 源码解析 的内部机制探索
+→ 原文存档
 
 ## 相关实体
 - [Natural Language Autoencoders — Anthropic 激活→文字可解释性方法](https://github.com/QianJinGuo/wiki-public/blob/main/entities/natural-language-autoencoders.md)
@@ -289,7 +289,7 @@ MoWorld 不仅提升了模型能力，更重要的是提出了具体的产业落
 - **DeepSeek R1** — 被类比为「世界模型的 DeepSeek 时刻」
 - **具身智能** — 世界模型的关键下游应用领域
 
-→ [原文存档](https://mp.weixin.qq.com/s/eN842wwpGIonGbg8EwKkSg)
+→ 原文存档
 
 ---
 
@@ -404,7 +404,7 @@ CoT Forgery 攻击将 prompt injection 从"指令覆盖"提升到"信任链劫�
 
 # Count Anything - 文本引导的通用目标计数框架
 
-> Source: [Raw](https://arxiv.org/abs/2605.30846)
+> Source: Raw
 
 ## 摘要
 
@@ -469,7 +469,7 @@ Count Anything 的点集输出天然规避了上述三个问题。
 
 ## 相关
 
-- [原文存档](https://arxiv.org/abs/2605.30846)
+- 原文存档
 - 论文: https://arxiv.org/abs/2605.30846
 - 代码: https://github.com/Mengqi-Lei/count-anything
 ## 相关实体
@@ -559,7 +559,7 @@ Multi-agent collective 路径在现有 ASI 讨论中较少被关注。报告认�
 - [some ideas for what comes next, may 2026 (interconnects)](https://github.com/QianJinGuo/wiki-public/blob/main/entities/some-ideas-for-what-comes-next-may-2026.md)
 - [agi 之路，可能从一开始就走错了（腾讯研究院·王鹏）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agi-之路-可能从一开始就走错了.md)
 
-→ [原文存档](https://arxiv.org/abs/2606.12683)
+→ 原文存档
 
 ---
 
@@ -816,7 +816,7 @@ FuXi-Alpha 的 Attention Map 可视化是理解推荐系统特征重要性的关
 - [Noam Brown Ai Evaluation Reasoning Budget Performance Cost Curve](https://github.com/QianJinGuo/wiki-public/blob/main/entities/noam-brown-ai-evaluation-reasoning-budget-performance-cost-curve.md)
 - [Aws Sagemaker Azerbaijani Lm](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-sagemaker-azerbaijani-lm.md)
 
-→ [原文存档](https://mp.weixin.qq.com/s/-G6f4vHZpbyazSI8EXMWKg)
+→ 原文存档
 
 ---
 
@@ -830,7 +830,7 @@ FuXi-Alpha 的 Attention Map 可视化是理解推荐系统特征重要性的关
 
 NeurIPS 2026 Position Paper Track 引入闭源 AI 检测器 **Pangram** 做 desk rejection。结果：**178 篇 / 18.4%** 直接拒稿，**123 篇 / 12.7%** 被要求补证。被拒稿作者在 Reddit 发文，**用 Pangram 反向跑了几位 track 主席自己的论文，得到 69% / 45% / 36% / 24% AI 标记** —— 揭示检测器校准失效。
 
-→ [原文存档](https://mp.weixin.qq.com/s/2BkYEpxmEuYdo1rwEID5XA)
+→ 原文存档
 
 ## 事件速览
 | 维度 | 详情 |
@@ -936,7 +936,7 @@ AI 语法润色、翻译辅助、以及认知辅助技术对非母语作者和�
 
 ## Ch19.010 Recursive First Steps Toward Automated AI Research：SOTA 三基准自动化研究系统
 
-> 📊 Level ⭐⭐⭐⭐ | 10.9KB | `entities/recursive-automated-ai-research-first-steps-2026.md`
+> 📊 Level ⭐⭐⭐⭐ | 10.8KB | `entities/recursive-automated-ai-research-first-steps-2026.md`
 
 > **Background**：本文档基于 Recursive 团队 2026-06-11 发布的工程报告 *First Steps Toward Automated AI Research* 整理。Recursive 团队（与 [AlphaEvolve](entities/alphaevolve-impact-deepmind.md) 同生态但不同公司）开发了一套自动化研究循环系统，瞄准三大 AI 进步杠杆：**训练算法 / 训练速度 / 硬件利用**。他们在三个 SOTA benchmark 上同时取得突破并开源 artifacts。
 
@@ -982,7 +982,7 @@ AI 语法润色、翻译辅助、以及认知辅助技术对非母语作者和�
 | 开源 | 部分 | 全部 artifacts 开源 ([GitHub recursive-org](https://github.com/recursive-org/first-steps-toward-automated-ai-research)) |
 | 部署 | Google 内部 | 通用研究基础设施 |
 
-参考 [AlphaEvolve Impact](ch04/065-alphaevolve-impact-deepmind.html) 和 [AlphaEvolve 一周年](https://github.com/QianJinGuo/wiki-public/blob/main/entities/alphaevolve交出一周年炸裂成绩单ai自我改进不再科幻.md) 了解 DeepMind 路线。
+参考 [AlphaEvolve Impact](ch04/073-alphaevolve-impact-deepmind.html) 和 [AlphaEvolve 一周年](https://github.com/QianJinGuo/wiki-public/blob/main/entities/alphaevolve交出一周年炸裂成绩单ai自我改进不再科幻.md) 了解 DeepMind 路线。
 
 ## 深度分析
 
@@ -1022,9 +1022,9 @@ Einsia Navers Lab 的 AI4AI-Bench（arXiv:2608.20318）为"AI 能否设计更好
 **reasoning effort 买到的是"进入算法研究的机会"**：最低→最高推理档，触及算法层的提交比例从 8% 升到 64%，中位评测次数 4→16、代码改动 18→246 行、输出 token 1.1万→10.9万；但最高档平均 0.196 距理论最优仍只走完约十分之一。这说明当前 Agent 已能偶尔做出真正的算法设计（如把 One-shot 剪枝改造成三阶段蒸馏训练、把权重平均改成可搜索优化问题、把纯 RL 改成先 imitation learning），但离"稳定做好算法研究"仍远——与本实体"复合创新价值"洞察互证。
 
 ## 引用与延伸阅读
-- **原文存档** → [原文存档](https://www.recursive.com/articles/first-steps-toward-automated-ai-research)
+- **原文存档** → 原文存档
 - **GitHub**：https://github.com/recursive-org/first-steps-toward-automated-ai-research
-- 关联 entity：[Alphaevolve Impact Deepmind](ch04/065-alphaevolve-impact-deepmind.html)、[Agent Self Improvement Six Mechanisms](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-self-improvement-six-mechanisms.md)、[Ai Recursive Self Improvement Nanogpt Prime Intellect](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-recursive-self-improvement-nanogpt-prime-intellect.md)、[Hermes Self Improving Loop Winty](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-self-improving-loop-winty.md)、[Deli Auto Research Skill V2 Continual Learning Self Improvement](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deli-auto-research-skill-v2-continual-learning-self-improvement.md)
+- 关联 entity：[Alphaevolve Impact Deepmind](ch04/073-alphaevolve-impact-deepmind.html)、[Agent Self Improvement Six Mechanisms](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-self-improvement-six-mechanisms.md)、[Ai Recursive Self Improvement Nanogpt Prime Intellect](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-recursive-self-improvement-nanogpt-prime-intellect.md)、[Hermes Self Improving Loop Winty](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-self-improving-loop-winty.md)、[Deli Auto Research Skill V2 Continual Learning Self Improvement](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deli-auto-research-skill-v2-continual-learning-self-improvement.md)
 
 ---
 
@@ -1038,7 +1038,7 @@ Einsia Navers Lab 的 AI4AI-Bench（arXiv:2608.20318）为"AI 能否设计更好
 
 阿里巴巴 Qwen 团队在 arxiv 2606.24597 中提出 Qwen-AgentWorld，这是首个能够通过长链推理（long chain-of-thought reasoning）模拟 7 个领域智能体环境的语言世界模型。 团队发布了 Qwen-AgentWorld-35B-A3B 和 Qwen-AgentWorld-397B-A17B 两个模型，利用超过 1000 万条真实环境交互轨迹，通过三阶段训练管线（CPT → SFT → RL）构建。该工作不仅提出了新的基础模型，还展示了世界模型作为环境模拟器和统一 agent 基础模型两种互补范式。
 
-→ [原文存档案](https://arxiv.org/abs/2606.24597)
+→ 原文存档案
 
 ## 核心要点
 
@@ -1161,7 +1161,7 @@ Qwen-AgentWorld 的创新在于将世界模型的载体从传统的状态空间�
 
 > 论文: [arxiv 2602.13310](https://arxiv.org/abs/2602.13310) | 代码: [github.com/xuhaoran1/Visual-Para-Thinker](https://github.com/xuhaoran1/Visual-Para-Thinker) | 作者: 许浩然 (浙大) + 李佳泽 (小米 MiLMPlus, 通讯) | 转发: 机器之心 / 数据派THU 2026-06-10
 
-→ [原文存档](https://mp.weixin.qq.com/s/roAGiPRb9xZl_dcyRGzDSw)
+→ 原文存档
 
 ## 核心定位
 
@@ -1458,7 +1458,7 @@ Qwen-AgentWorld 的创新在于将世界模型的载体从传统的状态空间�
 
 ### 同范式生态
 - [ICML 2026 NPR 文本原生并行推理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/native-parallel-reasoner-icml2026.md) — **同源**: 都推动"推理宽度扩展", NPR 在文本领域开辟
-- [LASER ACL 2026 视觉推理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/laser-acl2026-latent-superposition-visual-reasoning.md) — **互补**: 同样针对 VLM, 但用 latent superposition 路线
+- [LASER ACL 2026 视觉推理](ch01/440-laser-acl2026-latent-superposition-visual-reasoning.html) — **互补**: 同样针对 VLM, 但用 latent superposition 路线
 - [DeepSeek 视觉原语](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-visual-primitives-thinking.md) — **对比**: DeepSeek 用"视觉原语"做视觉推理的另一种思路
 
 ### 视觉/多模态相关
@@ -1472,7 +1472,7 @@ Qwen-AgentWorld 的创新在于将世界模型的载体从传统的状态空间�
 ## 相关实体
 
 - [Native Parallel Reasoner Icml2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/native-parallel-reasoner-icml2026.md)
-- [Laser Acl2026 Latent Superposition Visual Reasoning](https://github.com/QianJinGuo/wiki-public/blob/main/entities/laser-acl2026-latent-superposition-visual-reasoning.md)
+- [Laser Acl2026 Latent Superposition Visual Reasoning](ch01/440-laser-acl2026-latent-superposition-visual-reasoning.html)
 - [Llava Onevision 2 Full Frame Rate Vlm Glintlab](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llava-onevision-2-full-frame-rate-vlm-glintlab.md)
 - [Deepseek Visual Primitives Thinking](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-visual-primitives-thinking.md)
 - [Llm Language Thinking Mechanisms](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-language-thinking-mechanisms.md)- [count anything - 文本引导的通用目标计数框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/arxiv-2605-30846-count-anything-2026.md)
@@ -1634,8 +1634,8 @@ Ethan 指出了一个技术收敛点：**视频模型和 LLM 在长上下文管�
 - 与 [Claude Code 动态工作流多 Agent 编排](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-dynamic-workflows-multi-agent-orchestration.md) 互补：AI 编程的 Agent 化 → 视频生成的 Agent 化
 - 与 [Agent Harness Engineering Survey](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-engineering-survey-2026.md) 互补：Harness 在视频 Agent 时代的能力复用
 - 与 [画布 Agent 时代](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-canvas-agent-era-content-creation.md) + [AI 视频工具第三阶段](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-video-tools-third-stage-1779303117.md) 互补：第一手研究人员视角补全产品视角
-- 与 [Foundation Capital agent era 六洞察](ch04/337-foundation-capital-agent-era-six-insights.html) 互补：算力-人才飞轮的微观机制
+- 与 [Foundation Capital agent era 六洞察](ch04/375-foundation-capital-agent-era-six-insights.html) 互补：算力-人才飞轮的微观机制
 
-→ [原文存档](https://mp.weixin.qq.com/s/dOKQToqmT5a-CrBLRDMQxA)
+→ 原文存档
 
 ---

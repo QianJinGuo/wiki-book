@@ -1,5 +1,7 @@
 # CLI系列④·选型CLI、MCP还是API？
 
+## Ch07.011 CLI系列④·选型CLI、MCP还是API？
+
 > 📊 Level ⭐⭐ | 5.0KB | `entities/cli-mcp-sdk-agent-tool-selection.md`
 
 # CLI系列④·选型CLI、MCP还是API？
@@ -13,10 +15,10 @@ Scalekit 2026 年基准测试（75 次，同一 Agent 执行同一组 GitHub 任
 - [Cli Mcp Skill Architecture Decision Vibecoder](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cli-mcp-skill-architecture-decision-vibecoder.md)
 - [Aliyun Agentrun 2Line Integration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aliyun-agentrun-2line-integration.md)
 - [Production Ai Agents Mcp Cli Skills Stack Ayi](https://github.com/QianJinGuo/wiki-public/blob/main/entities/production-ai-agents-mcp-cli-skills-stack-ayi.md)
-- [Pi Mono Github](https://github.com/QianJinGuo/wiki-public/blob/main/entities/pi-mono-github.md)
+- [Pi Mono Github](../ch01/252-pi-mono-github.html)
 - [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](https://github.com/QianJinGuo/wiki-public/blob/main/entities/integrating-aws-api-mcp-server-with-amazon-quick-suite-using-amazon-bedrock-agen.md)
 
-→ [原文存档](https://mp.weixin.qq.com/s/Y6G6Dey7Fy1ZeT1T6iCp7w)
+→ 原文存档
 
 - [crawler vs opencli doubao](https://github.com/QianJinGuo/wiki-public/blob/main/entities/crawler-vs-opencli-doubao.md)
 
@@ -44,7 +46,7 @@ Scalekit 2026 年基准测试（75 次，同一 Agent 执行同一组 GitHub 任
 
 **如果你的场景 Token 成本敏感且需要批量/多步操作，选择 CLI + Skills 或 Code Execution，而非 MCP Server。** MCP Server 适合低敏感度的探索性任务，不适合重度生产使用 。
 
-→ [原文存档](https://mp.weixin.qq.com/s/Y6G6Dey7Fy1ZeT1T6iCp7w)
+→ 原文存档
 
 ---
 

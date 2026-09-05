@@ -1,12 +1,14 @@
 # 维纳智能：高精度推理数据生成与工业级 Agentic AI
 
+## Ch04.023 维纳智能：高精度推理数据生成与工业级 Agentic AI
+
 > 📊 Level ⭐ | 4.3KB | `entities/wiener-intelligence-reasoning-data-generation.md`
 
 # 维纳智能：高精度推理数据生成与工业级 Agentic AI
 
 > 香港 AI 公司维纳智能（Wiener Intelligence）专注于高精度推理数据生成，以 cQrA 四元组格式和闭环反馈架构驱动专业 Agent 自主演化，2026 年登上 Nature Communications。
 
-→ [原文存档](https://mp.weixin.qq.com/s/X-ZS8SVKSnkPBI1KeRn4eA)
+→ 原文存档
 
 ## 核心技术
 

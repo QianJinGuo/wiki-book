@@ -1,10 +1,12 @@
 # U of T AI Worm：CleverHans Lab 展示可自适应的 AI 蠕虫威胁
 
+## Ch12.034 U of T AI Worm：CleverHans Lab 展示可自适应的 AI 蠕虫威胁
+
 > 📊 Level ⭐⭐⭐ | 9.0KB | `entities/u-of-t-ai-worm-cleverhans-research.md`
 
 # U of T AI Worm：CleverHans Lab 展示可自适应的 AI 蠕虫威胁
 
-→ [原文存档](https://www.utoronto.ca/news/u-t-researchers-demonstrate-ai-worm-could-target-any-online-device)
+→ 原文存档
 
 ## 摘要
 
@@ -101,7 +103,7 @@ Papernot 团队的措辞很值得注意："It was imperative for us to understan
 - [Agent Security Threat Models](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-security-threat-models.md)
 - "LLM 安全与红队测试"
 
-→ [原文存档](https://www.utoronto.ca/news/u-t-researchers-demonstrate-ai-worm-could-target-any-online-device)
+→ 原文存档
 
 ---
 

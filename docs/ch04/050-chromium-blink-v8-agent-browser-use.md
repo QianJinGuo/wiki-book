@@ -1,5 +1,7 @@
 # 现代浏览器内部机制：Chromium/Blink/V8 架构（Agent Browser Use 向）
 
+## Ch04.050 现代浏览器内部机制：Chromium/Blink/V8 架构（Agent Browser Use 向）
+
 > 📊 Level ⭐⭐ | 8.2KB | `entities/browser-internals-chromium-blink-v8-architecture-guide-jiagoux-2026.md`
 
 # 现代浏览器内部机制：Chromium/Blink/V8 架构
@@ -92,7 +94,7 @@ V8 执行层级（从快到慢，从轻到重）：
 - V8 博客 (v8.dev)
 - Chromium University YouTube 系列
 
-→ [原文存档](https://mp.weixin.qq.com/s/UBlsPgnOLaa3yBGRD0TjRg)
+→ 原文存档
 
 ---
 

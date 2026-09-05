@@ -1,5 +1,7 @@
 # 快手 AgentX——推荐系统自我迭代的 Agent 驱动研发闭环
 
+## Ch05.012 快手 AgentX——推荐系统自我迭代的 Agent 驱动研发闭环
+
 > 📊 Level ⭐ | 3.7KB | `entities/kuaishou-agentx-self-iteration-recsys-2026.md`
 
 # 快手 AgentX——推荐系统自我迭代的 Agent 驱动研发闭环
@@ -42,7 +44,7 @@ AgentX 是**目前公开可见的最完整的工业级 Agent 驱动研发闭环�
 
 SGPO 自进化机制（将失败轨迹转化为 harness 更新）是独特的闭环设计，在现有 Harness 实体中未覆盖。
 
-→ [原文存档](https://mp.weixin.qq.com/s/h2PgHllv8MvF4phC8uSPUQ)
+→ 原文存档
 
 ---
 ## 关联

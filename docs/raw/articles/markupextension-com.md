@@ -1,18 +1,20 @@
 ---
-type: source-card
-title: "markupextension-com"
-source: "newsletter"
-author: "未标注作者；来源机构见 source"
-source_url: "https://markupextension.com/"
-published: "未标注"
-collected: "2026-05-13"
-license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
+source: newsletter
+source_url: https://markupextension.com/
+review_value: 2
+review_confidence: 9
+review_recommendation: worth-reading
+review_stars: 3
+ingested: 2026-05-13
+sha256: ad1fc44b5175294a03dd5e592e93bc92464779faf1e0a3170935d8c8f12acaef
+tags: [raw-status:stub]
+
 ---
-
-# markupextension-com
-
-## 原创摘要
-
-这份来源卡片记录一篇围绕“markupextension-com”的第三方资料，主题标签为raw-status:stub。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
-
-> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。
+Title: Robot Challenge Screen
+URL Source: https://markupextension.com/
+Warning: This page maybe not yet fully loaded, consider explicitly specify a timeout.
+Warning: This page maybe requiring CAPTCHA, please make sure you are authorized to access this page.
+Markdown Content:
+## markupextension.com
+Checking the site connection security
+![Image 1: CDN icon](https://d1rozh26tys225.cloudfront.net/loader.svg)

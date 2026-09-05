@@ -1,18 +1,21 @@
 ---
-type: source-card
-title: "FLAT: Feedforward Latent Triangle Splatting"
-source: "flat-splat.github.io"
-author: "未标注作者；来源机构见 source"
 source_url: "https://flat-splat.github.io"
-published: "未标注"
-collected: "2026-06-26"
-license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
+ingested: 2026-06-26
+sha256: 3b215892b292cf998fad3f58afe5078d7a34bb4f6d56fcef2719a00fa7f9b5f8
 ---
 
 # FLAT: Feedforward Latent Triangle Splatting
 
-## 原创摘要
+Feedforward Latent Triangle Splatting for geometrically accurate scene generation.
 
-这份来源卡片记录一篇围绕“FLAT: Feedforward Latent Triangle Splatting”的第三方资料，主题标签为相关 AI 工程主题。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
+Decode explicit surface-aligned triangle splats from video diffusion latents in a single forward pass.
 
-> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。
+Orest Kupyn, Goutam Bhat, Philipp Henzler, Fabian Manhardt, Christian Rupprecht (Google Research + Oxford VGG + TU Munich)
+
+FLAT shows that compressed video diffusion latents can be mapped directly to explicit non-volumetric scene parameters. Instead of decoding 3D Gaussians, it predicts triangle splats in one pass, improving geometric accuracy while preserving competitive visual quality and enabling rasterization with simple triangle renderers.
+
+Key contributions:
+- Single forward pass from video diffusion latents to triangle splats
+- Surface-aligned representation improves geometric accuracy over volumetric Gaussians
+- Compatible with standard triangle rasterization pipelines
+- Competitive visual quality with significantly better geometry

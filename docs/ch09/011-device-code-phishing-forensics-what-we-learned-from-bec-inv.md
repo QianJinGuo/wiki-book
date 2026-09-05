@@ -1,10 +1,12 @@
 # Device Code Phishing Forensics: What We Learned from BEC Investigations in the Wild
 
+## Ch09.011 Device Code Phishing Forensics: What We Learned from BEC Investigations in the Wild
+
 > 📊 Level ⭐ | 2.1KB | `entities/device-code-phishing-forensics-what-we-learned-from-bec-investigations-in-the-wi.md`
 
 # Device Code Phishing Forensics: What We Learned from BEC Investigations in the Wild
 
-→ [原文存档](https://research.eye.security/device-code-phishing-forensics/)
+→ 原文存档
 
 ## 深度分析
 
@@ -20,7 +22,7 @@ April 1st started with the kind of phishing reports we receive all the time from
 ### 关联实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/118-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/356-karpathy-vibe-coding-agentic-engineering.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
 - [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/两万字详解claude-code源码核心机制.md)
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](https://github.com/QianJinGuo/wiki-public/blob/main/entities/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md)

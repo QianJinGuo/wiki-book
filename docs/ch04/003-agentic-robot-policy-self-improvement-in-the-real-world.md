@@ -1,10 +1,12 @@
 # Agentic Robot Policy Self-Improvement in the Real World
 
+## Ch04.003 Agentic Robot Policy Self-Improvement in the Real World
+
 > 📊 Level ⭐ | 8.9KB | `entities/nvidia-enpire-agentic-robot-policy-self-improvement.md`
 
 # Agentic Robot Policy Self-Improvement in the Real World
 
-> 原文存档：[原文存档](https://research.nvidia.com/labs/gear/enpire/)
+> 原文存档：原文存档
 
 ## 核心内容
 

@@ -1,61 +1,122 @@
-# 两万字详解Claude Code源码核心机制
+# Claude Code 黑客松：技艺数字化六项目
 
-> 📊 Level ⭐⭐⭐ | 9.5KB | `entities/claude-code-20000-char-source-analysis.md`
+## Ch09.042 Claude Code 黑客松：技艺数字化六项目
 
-## 关键洞察
-本页分析了 两万字详解Claude Code源码核心机制 的核心内容。
-→ [原文存档](https://mp.weixin.qq.com/s/bMjXlD-OcnFW-wuN1yW8FA)
+> 📊 Level ⭐⭐⭐ | 11.9KB | `entities/claude-code-hackathon-expertise-digitization.md`
+
+## 概述
+Anthropic + Cerebral Valley 黑客松六组获奖项目（Opus 4.7 + Claude Code，一周时间）。六个项目覆盖医疗/维修/教育/创意/建筑/工业六个领域，共同内核：**把锁在少数人脑子里的专业知识，变成更多人能触及的工具**。
+
+## 六项目解析
+### MedKit（🇹🇷 金奖）——虚拟诊室
+**让医学生在 AI 病人身上练手。**
+
+- 语音驱动虚拟问诊，AI 病人有症状分支、诊断陷阱
+- 每次问诊按临床指南打分（沟通/病史采集/临床推理），每条扣分附文献引用
+- **技术核心**：Claude Managed Agents，一个 Opus 4.7 主治医师 Agent 管三个子 Agent（角色扮演/评估/复盘）；Opus 4.7 长时间会话不跑偏，自动生成了整个病例库
+> "在 AI 身上犯所有的错，然后再去面对真正的病人。"
+
+### Wrench Board（🇫🇷 银奖）——电路板维修
+**读完 80 页原理图后在主板上画诊断路径。**
+
+- 全球每年 5000 万吨电子垃圾，板级维修知识掌握在极少数人手里
+- 导入主板照片 + 原理图 PDF，Opus 4.7 视觉分批并行读取，两分钟编译成电气知识图谱
+- 25 个元件分类 / 33 种症状映射故障机制 / 10 条诊断规则（可验证来源）
+- 在主板照片上直接画诊断路径（该量哪里/该测什么值，标在板子上）
+- Agent 认识你：记录你的工具清单和维修经验，没有热风台就不让你做 BGA 返焊
+- 每块板子有记忆：之前修过哪里/试过什么方案/踩过什么坑
+- **硬约束**：每个元件编号必须来自工具查询，没查到的不展示
+> "当一个拿着万用表的普通技术员，能做到昨天只有 OEM 售后中心才能做的事，'维修权'才算真正落地了。"
+
+### Maieutic（🇨🇱 铜奖）——编程教学
+**学生不先写清楚要做什么，编辑器就锁着不让你碰。**
+
+- Paula Vasquez-Henriquez，智利发展大学计算机系副主任，6 年 Python 教学 200+ 学生
+- 三个常见问题：复制代码不知道干嘛 / 漏看题目要求 / 还没想清楚就开始敲
+- **核心机制**：学生先用自己话描述程序该干什么 → AI 追问没说清楚的地方 → spec 足够清晰了编辑器才解锁
+- 编辑器打开后自动补全关闭；可以问语法但 AI 引导思考，不直接给"怎么做"的答案
+- 提交后 AI 对齐 spec 和实际代码，让学生自己解释 gap
+- 教师面板：看到每个学生卡在哪里、在怎么推理、哪些错误反复出现
+> "未来的程序员，大部分时间都在写 prompt。但好的 prompt 来自于理解你要构建什么、什么可能出错、以及结果对不对。"
+
+### Virtual Puppet Theater（🇩🇰 最佳创意）——体感木偶剧场
+**用手势和语音操控屏幕上的木偶。**
+
+- MediaPipe 手部追踪（3D 关节位置）+ Web Speech API（免费语音识别）+ 11 Labs Flash（语音合成）
+- 两个模型共享缓存：Haiku 日常对话（快）/ Opus 道具生成（创意质量）
+- 冰淇淋帽子这类非常规道具是 Opus 实时用基础图形组合拼出来的
+> "一个用于玩耍的交互界面，一年前还不存在。"
+
+### MaestrIA（🇨🇱 Keep Thinking 特别奖）——木匠手艺数字化
+**把 30 年木匠手艺变成 AI 可用的诊断工具。**
+
+- Benjamin 的父亲 Juan Rodrigo Torralbo，做了 30 年木匠，8 年修复联合国世界遗产木教堂，但没有大学文凭在系统里不存在
+- 拍受损墙面照片 + 位置 → Opus 4.7 实时展示推理过程（先观察再诊断）→ 四个答案（修什么/多少钱/多久/不修会怎样）→ 推荐附近手艺人 → Agent 自动写 WhatsApp 消息附完整诊断报告
+- 分析过程模拟木匠 vs 泥瓦匠辩论，另一个 Agent 去建材超市实时查价验证预算
+- **测试结果：12 张照片与 30 年老师傅判断吻合率 81%**
+> "工具是我做的。知识是他的。"
+
+### ARIA（🇫🇷 最佳 Managed Agents）——工厂设备维护知识留存
+**5 个 Agent 像维修团队一样层层传递工单。**
+
+- 工业维修老问题：每个工厂都有"那个人"——能听出机器声音哪里不对劲，能在坏之前两天就知道要坏。然后他退休了，知识永远消失
+- 传统系统部署成本 50 万美元起步，超过一半工厂不装
+- **5 个 Agent 共享 17 个工具，通过 MCP 协作**，设备手册丢进去问三个问题系统就上线
+- **关键能力**：瓶盖机报振动异常，ARIA 查上下文发现振动值在下降→结论"无需处理"。大多数系统到"发警报"就结束，ARIA 多走一步判断值不值得理
+- 真正出故障时：调查 Agent 启动 extended thinking，写 Python 在云端沙箱跑回归分析，精确退化速率进工单
+- **记忆**：三个月前类似故障翻出来，告诉操作员上次换了什么零件好的
+- 日志/班次笔记/信号趋势/KPI/历史故障全部汇入设备知识库
+> "那个'什么都知道的人'，再也不会因为退休而消失了。"
+
+## 共同内核
+**专业知识锁在少数人的手感/直觉/判断力里，AI 正在接住这些正在断裂的经验。**
+| 领域 | 锁在谁手里 | 六个项目的解法 |
+|------|-----------|--------------|
+| 医疗 | 资深医生的临床直觉 | MedKit — AI 虚拟病人练手 |
+| 维修 | 少数硬件工程师 | Wrench Board — 原理图+视觉诊断 |
+| 教育 | 好老师几年积累的思维误区直觉 | Maieutic — 先想后写，教师面板 |
+| 创意 | — | Virtual Puppet Theater — 体感交互 |
+| 建筑 | 没有文凭的工匠 | MaestrIA — 拍墙→诊断报告→手艺人 |
+| 工业 | "什么都知道"的老工人 | ARIA — 5 Agent + MCP + 记忆 |
+
+## 启示
+1. **不需要硅谷连续创业者**——土耳其医生、智利大学老师、丹麦木匠的儿子、木匠的儿子
+2. **一周时间 + Opus 4.7 + Claude Code 就能做出可用的东西**
+3. **知识流失是无声的**——没有人宣布它的死亡，很少有人意识到自己失去了什么
+4. **AI 能接住这些正在断裂的经验**，让它变成工具和传承
 
 ## 深度分析
-Claude Code 的架构设计体现了"工程化 Agent 系统"的核心理念：不是依赖模型自身的推理能力来管理复杂任务，而是通过多层机制将不确定性转化为可控行为。与 OpenCode、Codex、Gemini-CLI 等竞品相比，Claude Code 在以下维度展现了更成熟的工程思考。
-**动态 System Prompt 机制**是理解 Claude Code 的第一个关键。传统框架使用静态 prompt，启动后不变；Claude Code 则通过 `buildEffectiveSystemPrompt` 函数在每次会话启动时动态组装内容，涵盖工具描述、MCP 服务器指令、Skill 索引、环境信息等六层优先级。这一设计使系统能够根据当前环境状态调整模型的行为契约，而非用一套固定规则应对所有场景。
-**并发调度与延迟加载**构成了工具层的核心创新。每个工具通过 `isConcurrencySafe` 声明并发安全性，调度层据此将工具调用分成批次——只读工具并行执行、写操作串行执行。更精妙的是 `shouldDefer + ToolSearch` 的延迟加载机制：非必需的复杂工具（如 Plan Mode）在初始请求中只携带空壳 schema，模型通过 `ToolSearch` 发现后才会注入完整描述。这套机制通过独立的 `deferred_tools_delta` attachment 发送，避免破坏 prompt cache 的前缀复用。Token 优化效果显著：对于接入十几个 MCP 服务器的企业场景，每次任务只注入实际用到的工具描述。
-**五层 Context 压缩体系**是 Claude Code 最复杂、也最能体现工程细腻度的部分。从最轻量的工具结果大小限制（超限写磁盘替换为路径引用），到基于规则的 `snipCompact` 消息截断，再到利用 API `cache_edits` 参数在服务端屏蔽旧工具结果的 `microCompact`，最后到保留近期原始粒度的 `contextCollapse` 和完整摘要的 `autoCompact`——每层之间互斥且递进覆盖，既避免重复工作，又确保在不同压力下都有合适的压缩策略应对。
-**Hooks 系统**将 Claude Code 从"命令行工具"升格为"可扩展平台"。24 种 Hook 事件覆盖工具调用前后、Sub-Agent 生命周期、权限决策、Session 压缩等关键节点，允许外部脚本以 JSON 格式返回决策来介入 Agent 行为。这是 Claude Code 区别于所有竞品最显著的特性，也是其被定位为"平台"而非单纯工具的核心依据。
-**子 Agent 系统**通过 `AgentTool` 统一入口支持七种执行模式：同步/异步后台、自动转后台、Worktree 隔离、远端执行、Fork 模式和 Teammate 模式。内置四类 Agent 类型（general-purpose、Explore、Plan、claude-code-guide）加 YAML 自定义，父子 Context 共享机制（Fork 模式共享完整对话历史）确保了复杂任务分解的可行性。
+1. **Managed Agents 架构成为专家知识数字化的核心范式**——六组项目中，MedKit 和 ARIA 直接使用了 Anthropic 的 Managed Agents 框架，前者用 1 主 3 从结构模拟临床团队，后者用 5 Agent + 17 工具模拟工厂维修团队^
+2. **知识转化成本断崖式下降**——传统工业维修知识系统部署成本 50 万美元起步、需要半年专业咨询^；而 MaestrIA 仅凭 12 张照片就达到 81% 专家吻合率^，知识捕获的边际成本正在趋近于零
+3. **多 Agent 协作的关键价值在于判断的连续性而非警报的触发**——ARIA 最具区分度的能力不是发警报，而是多走一步判断"警报值不值得理"，在振动值下降的背景下给出"无需处理"的结论^；这揭示了当前行业系统的普遍缺陷
+4. **视觉理解 + 知识图谱是硬件领域知识数字化的最短路径**——Wrench Board 将 80+ 页原理图 PDF 在两分钟内转化为可查询的电气知识图谱^，证明多模态模型可以直接消化非结构化文档而不需要人工标注
+5. **实践知识的数字化需要"手感验证"而非"准确率验证"**——MaestrIA 的测试方法是拿给父亲（30 年木匠）直接对标，而不是与数据库比对；Maieutic 的核心设计是学生必须先说清楚再动手^；这表明专业知识数字化的质量标准应来自领域专家的主观认可，而非自动化指标
 
 ## 实践启示
-基于源码分析，Claude Code 的设计为 AI 工程化实践提供了几个重要启示。
-**架构层面**：Agent 系统的核心挑战不是模型能力，而是**状态管理和资源控制**。Claude Code 的预算管理体系（Token 预算、成本预算、工具结果大小限制、轮次预算四维控制）为 Agent 失控问题提供了工程化解法。在构建自研 Agent 框架时，应尽早考虑多维度预算控制，而非仅依赖"对话轮次上限"。
-**工具设计层面**：`isConcurrencySafe + 分批调度`机制表明，只读工具与写操作应严格区分并发策略。这不是模型能"学会"的约定，而是框架层面必须强制执行的约束。工具的 `maxResultSizeChars` 和磁盘持久化机制同样重要——大文件读取、批量搜索等场景若无结果大小控制，极易撑爆 Context。
-**权限与安全层面**：Plan Mode 的权限系统约束（`mode='plan'` 写操作在权限层直接拦截）比"在 prompt 中要求模型只读"要可靠得多。对于需要人工审批的高风险操作，应设计独立的权限状态机，而非依赖模型自我约束。
-**Context 管理层面**：`microCompact` 利用 `cache_edits` 在不修改本地消息序列的情况下实现服务端 token 屏蔽，是一项精妙的工程技巧。它解决了一个看似矛盾的问题：如何在压缩历史的同时保持 prompt cache 有效性。Fork 模式下的字节级 system prompt 复制也同理——确保长会话场景下 cache 命中率 。
-**扩展性层面**：MCP 协议和 Hooks 系统代表了 Agent 框架的两种扩展路径——前者通过标准协议接入外部工具生态，后者通过事件介入框架行为。构建生产级 Agent 平台时，这两层扩展能力是区分" demo "与"产品"的关键分水岭 。
+1. **先建知识图谱，再做 Agent——文档是最低成本的入口**^
+   Wrench Board 的核心突破不是 Agent 设计，而是把 80 页原理图转化为结构化知识图谱的视觉解析能力。在做任何知识数字化项目之前，先评估现有文档（手册、图纸、病例指南）的可解析性
+2. **记忆系统和硬约束必须作为基础设施而非功能选项**^
+   Wrench Board 的"Agent 认识你"和 ARIA 的"三个月前类似故障翻出来"不是附加功能，而是驱动工具从工具变成协作者的核心能力；从项目第一天就把记忆和上下文感知纳入架构设计
+3. **用领域专家的"不认可"来验证，而非用准确率指标**^
+   MaestrIA 的做法——把 AI 诊断报告拿给父亲看——应该成为知识数字化项目的标准测试协议，而非依赖 Precision/Recall 等通用指标；专家发现一个错误比发现十个正确更有价值
+4. **用小模型处理节奏，大模型处理质量——双模型分工是体感/实时交互的必选项**^
+   Virtual Puppet Theater 用 Haiku 处理日常对话（低延迟）、Opus 处理道具生成（高质量）；任何涉及实时体感或对话响应的项目都应采用类似分层，避免大模型延迟破坏交互体验
+5. **在知识消失之前捕获它——非正式工匠群体是需要最优先关注的知识濒危物种**^
+   智利 28 万非正式建筑工人没有大学文凭因此在系统里"不存在"^；这类群体的知识一旦失传就无法重建，应该成为 AI 知识保存工作的最高优先级
+
+## 相关
+- [Claude Code 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-architecture.md)
+- [Anthropic PM Agentic 工作流](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-pm-agentic-workflow.md)
+- [AutoResearch 多 Agent 开发](https://github.com/QianJinGuo/wiki-public/blob/main/entities/autoresearch-multi-agent-software.md)
+- [Agent Memory 模块化框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-modular-framework.md)
 
 ## 相关实体
+- [Claude Code vs OpenClaw Agent 记忆系统对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-openclaw-memory-comparison.md)
+- [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南-v2.md)
+- [CLAUDE.md 12 条规则：Karpathy 扩展模板](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-12-rules-karpathy-extension.md)
+- [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-20000-char-source-analysis.md)
+- [Claude Code Subagent 上下文卫生](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-subagent-context-hygiene.md)
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-skills-mcp-rules-source-analysis.md)
-- [Claude Code Prompt 提示词体系源码解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-prompt-source-analysis.md)
-- [Claude Code 源码深度解析（13 核心机制）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-source-deep-dive-warrior.md)
-- [Claude Code 源码拆解：从启动到多 Agent 扩展层](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-source-architecture.md)
-- [Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-open-source-model-enterprise-practice.md)
-- [Claude Code 设计原则与对照分析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-architecture-analysis.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/366-claude-code-harness-deep-understanding.html)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](https://github.com/QianJinGuo/wiki-public/blob/main/entities/boris-cherny-新访谈开发工具正在从-ide-变成-agent-控制台-v2.md)
-- [Harness如何支撑Agent在生产环境稳定运行？](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-production-agent-engineering-deficit.md)
-- [Martin Fowler AI 研发 Harness：非确定性承重层](https://github.com/QianJinGuo/wiki-public/blob/main/entities/martin-fowler-ai-rd-harness-nondeterminism.md)
-- [Agent Reliability: Context Drift & Tool Calling Hallucination](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-reliability-context-drift-tool-hallucination.md)
-- [Boris Cherny — 从 IDE 到 Agent 控制台](https://github.com/QianJinGuo/wiki-public/blob/main/entities/boris-cherny-ide-to-agent-console.md)
-- [Harness Engineering：让 Coding Agent 可靠完成长程任务](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-long-term-agent-tasks.md)
-- [Harness Engineering: 让 Coding Agent 可靠完成长程任务](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-让-coding-agent-可靠完成长程任务-v2.md)
-- [Claude Code 可控性：软规则无法变成硬约束](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-governance-soft-rules.md)
-- [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/long-running-agent-ralph-loop-handover-harness-ruofei.md)
-- [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki-public/blob/main/queries/harness-peer-review-framework.md)
-- [AutoResearch：多 Agent 自动化软件开发](https://github.com/QianJinGuo/wiki-public/blob/main/entities/autoresearch-multi-agent-software.md)
-- [Agent Harness 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture.md)
-- [Agent 自我改进的六条路](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-self-improvement-six-mechanisms.md)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-agentic-engineering-v4.md)
-- [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-官方技能最佳实践14-个可复用的-agent-skills-设计模式.md)
-- [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](https://github.com/QianJinGuo/wiki-public/blob/main/entities/imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群.md)
-- [Claude Code 源码核心机制详解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-core-internals.md)
-- [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-window-management.md)
-- [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-large-codebase-enterprise-deployment.md)
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](https://github.com/QianJinGuo/wiki-public/blob/main/entities/boris-cherny-新访谈开发工具正在从-ide-变成-agent-控制台.md)
-- [Claude 发布官方报告，承认存在 3 处质量退化问题](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-发布官方报告承认存在-3-处质量退化问题.md)
-
-- [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code开发负责人-为何放弃rag而选择agentic-search.md)
-- [Agent架构关键变化：Harness正在成为新后端](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-architecture-harness-new-backend.md)
-- [Agent 原理、架构与工程实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-engineering-principles-architecture-practice.md)
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/claude-code-complete-guide.md)
 
 ---
 

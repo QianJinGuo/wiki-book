@@ -1,18 +1,19 @@
 ---
-type: source-card
 title: "tokenspeed agentic inference engine"
-source: "lightseek.org"
-author: "未标注作者；来源机构见 source"
-source_url: "https://lightseek.org/blog/lightseek-tokenspeed.html"
-published: "2026-05-10"
-collected: "2026-05-08"
-license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
+source_url: https://lightseek.org/blog/lightseek-tokenspeed.html
+ingested: 2026-05-08
+sha256: a9b90bcbb84f2484fd2a67023485b60307b9105b89e5e3e7545237481eb26dc5
+review_value: 9
+review_confidence: 8
+review_recommendation: strong
+review_stars: 5
+source_feed: TLDR AI (newsletter)
+source_published: 2026-05-06
+type: raw-article
+created: 2026-05-10
+updated: 2026-05-10
+tags: [raw-status:stub]
 ---
 
-# tokenspeed agentic inference engine
-
-## 原创摘要
-
-这份来源卡片记录一篇围绕“tokenspeed agentic inference engine”的第三方资料，主题标签为raw-status:stub。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
-
-> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。
+# TokenSpeed: A Speed-of-Light LLM Inference Engine for Agentic Workloads
+Lightseek 团队开发的专为 agentic workloads 设计的 LLM 推理引擎。核心特性：compiler-backed SPMD parallelism modeling、C++ FSM 控制平面 + Python 执行平面、pluggable layered kernel system、fast MLA 内核（已被 vLLM 采用）。在 NVIDIA B200 上比 TensorRT-LLM 快 ~9%（最低延迟），~11% 更高吞吐。

@@ -1,5 +1,7 @@
 # Cyberscammers are bypassing banks' security with illicit tools sold on Telegram
 
+## Ch12.032 Cyberscammers are bypassing banks' security with illicit tools sold on Telegram
+
 > 📊 Level ⭐⭐⭐ | 9.6KB | `entities/cyberscammers-bypassing-bank-telegram.md`
 
 # Cyberscammers are bypassing banks' security with illicit tools sold on Telegram
@@ -47,7 +49,7 @@ Recent [analysis](https://www.icij.org/investigations/coin-laundry/cryptocurrenc
 - [Npm Supply Chain Compromise Postmortem](https://github.com/QianJinGuo/wiki-public/blob/main/entities/npm-supply-chain-compromise-postmortem.md)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 
-→ [原文存档](https://www.technologyreview.com/2026/04/15/1135898/cyberscammers-bypassing-bank-telegram)
+→ 原文存档
 
 ## 深度分析
 
@@ -83,7 +85,7 @@ Talsec CEO Sergiy Yakymchuk 介绍，早期仅需反编译银行 APP 即可完�
 
 - **稳定币交易监控**：Tether 已成为赃款洗白首选工具，金融机构应建立加密货币出金业务的专项监控规则，对短期内大额稳定币转换进行预警 
 
-→ [原文存档](https://www.technologyreview.com/2026/04/15/1135898/cyberscammers-bypassing-bank-telegram)
+→ 原文存档
 
 ---
 

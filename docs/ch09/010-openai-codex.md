@@ -1,10 +1,12 @@
 # OpenAI大神教你如何榨干Codex
 
+## Ch09.010 OpenAI大神教你如何榨干Codex
+
 > 📊 Level ⭐ | 2.2KB | `entities/openai-codex-jasonliu-maxxing-playbook.md`
 
 # OpenAI大神教你如何榨干Codex
 
-→ [原文存档](https://mp.weixin.qq.com/s/sUdAmzf5ymUMBxWKFVxnwg)
+→ 原文存档
 
 ## 深度分析
 

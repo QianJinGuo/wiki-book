@@ -1,18 +1,30 @@
 ---
-type: source-card
-title: "plugmem-msr-fact-skill-memory-xhs-2026-08-03"
-source: "www.xiaohongshu.com"
-author: "未标注作者；来源机构见 source"
 source_url: "https://www.xiaohongshu.com/explore/6a7087a90000000006005e48?xsec_source=app_share&xsec_token=CBjhtLDgr4aGkqF4rKYaATYWHUY1nmtuRPGDiFGFi4ADk="
-published: "未标注"
-collected: "2026-08-03"
-license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
+source_author: "Adams AI Tool Notes"
+source_title: "微软：给Agent更多内存可能会让它性能更差"
+source_date: "2026-08-03"
+source_publication: "小红书（论文解读号）"
+ingested: "2026-08-03"
+sha256: 2651bdd2bf57a86ca0cff558f078caa3e3b466f1a6a4a5c92db31c6eb71fc6e9
 ---
 
-# plugmem-msr-fact-skill-memory-xhs-2026-08-03
+微软：给Agent更多内存可能会让它性能更差
 
-## 原创摘要
+微软发现，给Agent更多内存可能会让它性能表现的更差。解决办法是改变你存储的内容。
 
-这份来源卡片记录一篇围绕“plugmem-msr-fact-skill-memory-xhs-2026-08-03”的第三方资料，主题标签为相关 AI 工程主题。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
+这篇论文是 PlugMem，来自微软研究院和伊利诺伊大学厄巴纳-香槟分校。
 
-> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。
+失败的原因很明显：历史记录堆积，检索淹没其中，代理花费其上下文在浏览记录中寻找那一行重要的内容。
+
+人类记忆也不会重放事件。它保留从中提取的事实和技能。
+
+所以内存写入器停止保存对话，而是保存两种记录类型：
+
+- **事实**是一种稳定的陈述。部署通过 GitHub Actions 进行，绝不手动操作。
+- **技能**是一种可复用的程序。在部署失败时，在接触生产环境之前阅读 Actions 运行记录。
+
+以这种方式存储，一个通用模块在三种特定任务上击败了为特定任务构建的内存设计，且使用的令牌更少。
+
+指标是每个上下文令牌的决策相关信息，而不是你设法保留了多少。
+
+#howto用好AI #大模型 #ai #agent

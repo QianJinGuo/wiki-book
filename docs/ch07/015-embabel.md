@@ -1,5 +1,7 @@
 # Embabel
 
+## Ch07.015 Embabel
+
 > 📊 Level ⭐⭐⭐ | 11.4KB | `entities/embabel.md`
 
 # Embabel
@@ -7,7 +9,7 @@
 
 **Embabel = Rod Johnson 2024 回归一线创业做的企业 AI Agent 框架**。核心用 **GOAP（Goal-Oriented-Action-Planning）寻路算法**（来自游戏 NPC）做**确定性规划**，让 LLM 嵌入可控、可解释、可审计的业务流程。Apache 2.0，0.3.5（4-6 周到 1.0），核心 Kotlin / 示例 Java。
 
-→ [原文存档](https://mp.weixin.qq.com/s/qQfs6qSmNOt4JvPZQqNq7w)
+→ 原文存档
 
 ## 核心命题
 **企业 AI 应用需要规划** — 不是"扔 30 工具给模型循环跑"。业务流程要一致性、可预测性、可解释性。**LLM 只是动作步骤里的一次 HTTP 调用**，不应该是整个控制流。
@@ -133,13 +135,13 @@
 
 4. **MCP 是催化剂不是银弹：为每个 Agent 定制工具集**：跨 Agent 共享工具听起来美好，但实践中完美适合某 Agent 的工具往往就是该 Agent 独有的——不要为了追求标准化而牺牲工具的有效性 [Agent Architecture Harness New Backend](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-architecture-harness-new-backend.md)
 
-5. **控制权是 5%+95% 范式的核心前提**：Rod 的 5% 手写 + 95% AI 公式成立的前提是"牢牢掌握控制权"——没有架构监督，Coding Agent 会导致设计退化。保持人类对架构决策的 100% 控制，AI 生成代码必须经过人工纠正才能合入代码库 [Skillopt](../ch05/058-skillopt.html) [Impeccable](../ch05/094-impeccable.html)
+5. **控制权是 5%+95% 范式的核心前提**：Rod 的 5% 手写 + 95% AI 公式成立的前提是"牢牢掌握控制权"——没有架构监督，Coding Agent 会导致设计退化。保持人类对架构决策的 100% 控制，AI 生成代码必须经过人工纠正才能合入代码库 [Skillopt](../ch05/065-skillopt.html) [Impeccable](../ch05/101-impeccable.html)
 
 ## 相关对照
 - 状态机/规划对照：LangGraph、Crew.ai、Semantic Kernel
 - 企业 Java Harness：[AgentScope Java Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentscope-java-harness-framework-enterprise-distributed.md)
 - Alien Stack 反思：[Harness 成为新后端](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-architecture-harness-new-backend.md)（同样"邻接性"原则）
-- 模型 vs Harness 之争：[SkillOpt](../ch05/058-skillopt.html) / [Impeccable](../ch05/094-impeccable.html)
+- 模型 vs Harness 之争：[SkillOpt](../ch05/065-skillopt.html) / [Impeccable](../ch05/101-impeccable.html)
 - GOAP 起源：游戏 NPC AI（学术界 F.E.A.R / Left 4 Dead 等已用）
 
 ## 相关实体

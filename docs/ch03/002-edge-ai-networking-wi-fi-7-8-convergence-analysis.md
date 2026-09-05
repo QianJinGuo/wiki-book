@@ -1,5 +1,7 @@
 # Edge AI Networking — Wi-Fi 7/8 Convergence Analysis
 
+## Ch03.002 Edge AI Networking — Wi-Fi 7/8 Convergence Analysis
+
 > 📊 Level ⭐ | 4.4KB | `entities/edge-ai-networking-wifi-convergence-2026.md`
 
 # Edge AI Networking — Wi-Fi 7/8 Convergence Analysis
@@ -53,7 +55,7 @@
 
 ## Source
 
-→ [原文存档](https://semiengineering.com/wi-fi-flies-higher-as-edge-ai-build-out-takes-root/)
+→ 原文存档
 
 ---
 ## 关联

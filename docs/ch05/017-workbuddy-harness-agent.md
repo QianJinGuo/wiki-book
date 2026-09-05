@@ -1,5 +1,7 @@
 # WorkBuddy 产品实践：从模型到 Harness 的 Agent 可用产品架构
 
+## Ch05.017 WorkBuddy 产品实践：从模型到 Harness 的 Agent 可用产品架构
+
 > 📊 Level ⭐⭐ | 7.5KB | `entities/workbuddy-product-framework-agent-harness-anne-2026.md`
 
 # WorkBuddy 产品实践：从模型到 Harness 的 Agent 可用产品架构
@@ -113,7 +115,7 @@ Loop = 触发器 + 独立执行环境 + Skills + Tools/MCP + Sub-agents + Memory
 - [Mem0 vs WorkBuddy Agent 记忆对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mem0-vs-workbuddy-agent-memory-comparison.md)
 - [OpenClaw/WorkBuddy/Loop 工程对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-workbuddy-loop-engineering-who-is-hot-useful-demo.md)
 
-→ [原文存档](https://mp.weixin.qq.com/s/kYJ2kHrQrolmY8nDfN_Q3Q)
+→ 原文存档
 
 ## 第 1 来源 — WorkBuddy VS Codex：八个维度讲透国内企业该怎么选...
 

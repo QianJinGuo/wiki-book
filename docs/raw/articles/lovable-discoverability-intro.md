@@ -1,18 +1,26 @@
 ---
-type: source-card
 title: "Building is just the beginning: Introducing Discoverability"
-source: "newsletter"
-author: "未标注作者；来源机构见 source"
-source_url: "https://lovable.dev/blog/building-is-just-the-beginning-introducing-discoverability"
-published: "2026-05-15"
-collected: "2026-05-16"
-license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
+sha256: d3a6d90f582cd15ddcd859db78ea89d4d15f3c66e597dc09928a1167b2b2a904
+source: newsletter
+source_url: https://lovable.dev/blog/building-is-just-the-beginning-introducing-discoverability
+tags: [lovable]
+url: https://lovable.dev/blog/building-is-just-the-beginning-introducing-discoverability
+fetcher: jina
+review_value: 7
+review_confidence: 8
+review_recommendation: neutral
+ingested: 2026-05-16
+review_stars: 3
+created: 2026-05-15
+updated: 2026-05-15
 ---
-
 # Building is just the beginning: Introducing Discoverability
-
-## 原创摘要
-
-这份来源卡片记录一篇围绕“Building is just the beginning: Introducing Discoverability”的第三方资料，主题标签为lovable。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
-
-> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。
+Lovable introduces Discoverability, a feature that helps development teams find, share, and reuse code components and patterns across projects. The article argues that building software is only half the challenge—making it findable and reusable is equally important.
+Key themes:
+1. **Code Reuse Problem**: Most organizations struggle with code reuse. Developers often rewrite similar functionality because existing solutions are hard to discover or not well-documented.
+2. **Discoverability as a Feature**: The article reframes discoverability not just as a nice-to-have but as a critical infrastructure feature that enables organizational learning.
+3. **Search and Metadata**: Effective discoverability requires rich metadata, categorization, and search capabilities that go beyond simple filename matching.
+4. **Social Coding**: Making code discoverable involves social aspects—knowing who wrote it, who uses it, and how well it performs in production.
+5. **Build vs. Find Balance**: The best code is useless if no one can find it. The article advocates for investing as much in discoverability as in building.
+The article draws parallels to how knowledge management systems have evolved, suggesting that codebases need similar treatment as valuable organizational assets.
+> 来源：[[raw/articles/lovable-discoverability-intro|原文存档]]

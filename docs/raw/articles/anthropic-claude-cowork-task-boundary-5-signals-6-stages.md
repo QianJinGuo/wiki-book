@@ -1,18 +1,11 @@
 ---
-type: source-card
-title: "Anthropic Claude Cowork 知识工作 Agent 任务边界 + 5 筛选信号 + 6 阶段工作流"
-source: "mp.weixin.qq.com"
-author: "未标注作者；来源机构见 source"
-source_url: "https://mp.weixin.qq.com/s/LZMqIIu_yEoMVHy5wgujJw"
-published: "未标注"
-collected: "2026-06-04"
-license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
+source_url: https://mp.weixin.qq.com/s/LZMqIIu_yEoMVHy5wgujJw
+ingested: 2026-06-04
+sha256: b4d4b8e0accfb4d2f98a4faac39d0aa513be334e94fabf331bcc7145a1b2cbe3
+type: raw-article
+tags: [article, anthropic, claude-cowork, knowledge-work-agent, task-selection, 5-signals, 6-stages, 6-controls, skill-precipitation, plugin-supply-chain, control-plane, claude-code, vibe-working]
 ---
 
 # Anthropic Claude Cowork 知识工作 Agent 任务边界 + 5 筛选信号 + 6 阶段工作流
 
-## 原创摘要
-
-这份来源卡片记录一篇围绕“Anthropic Claude Cowork 知识工作 Agent 任务边界 + 5 筛选信号 + 6 阶段工作流”的第三方资料，主题标签为article、anthropic、claude-cowork。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
-
-> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。
+[正文见 entity 页面：[[entities/anthropic-claude-cowork-task-boundary-5-signals-6-stages]]]

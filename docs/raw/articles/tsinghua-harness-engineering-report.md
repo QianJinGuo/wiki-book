@@ -1,18 +1,23 @@
 ---
-type: source-card
-title: "清华大学：驾驭工程 (Harness Engineering) 研究报告"
-source: "mp.weixin.qq.com"
-author: "未标注作者；来源机构见 source"
-source_url: "https://mp.weixin.qq.com/s/EdVjZuBVcXjd30TpxyLsXQ"
-published: "未标注"
-collected: "2026-05-16"
-license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
+title: 清华大学：驾驭工程 (Harness Engineering) 研究报告
+source_url: https://mp.weixin.qq.com/s/EdVjZuBVcXjd30TpxyLsXQ
+publish_date: 2026-04-10
+tags: [wechat, article, harness]
+review_value: 7
+review_confidence: 7
+review_recommendation: neutral
+ingested: 2026-05-16
+sha256: c83ad6e94c00c9d51554c2007abbf127013c1578878588a4bf10423c81d3b101
 ---
-
 # 清华大学：驾驭工程 (Harness Engineering) 研究报告
-
-## 原创摘要
-
-这份来源卡片记录一篇围绕“清华大学：驾驭工程 (Harness Engineering) 研究报告”的第三方资料，主题标签为wechat、article、harness。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
-
-> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。
+> 清华大学发布的 Harness Engineering 研究报告（79页完整PDF）
+> 原始 PDF 保存在 assets/ 目录：tsinghua-harness-engineering-report.pdf
+## 核心定义
+> 驾驭工程(Harness Engineering)的核心是围绕高自治、长时程AI构建可治理的操作系统层，将提示词、上下文、智能体等能力制度化为机械可验证的契约、状态恢复与审计体系，从而从"让AI听懂"升级为"让AI系统可信、可控、可持续运行"。
+## 报告背景
+- 发布方：清华大学
+- 发布渠道：GIS极客公众号（2026-04-10）
+- 页数：79页
+- 完整报告下载：公众号 GIS极客 后台回复 '清华HarnessEngineering'
+## 已知核心框架
+（注：本 raw 页面为存档占位，完整内容在 PDF 文件中）

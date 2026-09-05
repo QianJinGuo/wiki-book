@@ -1,10 +1,12 @@
 # Nikesh Arora 20VC 访谈：Token 定价、FDE、SaaS→AI 转型与记忆护城河
 
+## Ch12.022 Nikesh Arora 20VC 访谈：Token 定价、FDE、SaaS→AI 转型与记忆护城河
+
 > 📊 Level ⭐⭐ | 5.3KB | `entities/nikesh-arora-20vc-token-economy-ai-vision.md`
 
 # Nikesh Arora 20VC 访谈：Token 定价、FDE、SaaS→AI 转型与记忆护城河
 
-→ [原文存档](https://mp.weixin.qq.com/s/4sQxiX10UplAgoZMEs7Mcg)
+→ 原文存档
 
 ## 摘要
 

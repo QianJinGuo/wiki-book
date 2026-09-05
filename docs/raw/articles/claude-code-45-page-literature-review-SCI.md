@@ -1,18 +1,21 @@
 ---
-type: source-card
 title: "我用Claude Code写了一篇45页的文献综述，质量可以发一区SCI"
-source: "mp.weixin.qq.com"
-author: "鲁工"
 source_url: "https://mp.weixin.qq.com/s/x5ronLRaXlD723tDE450eA"
-published: "未标注"
-collected: "2026-07-08"
-license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
+source_site: "AI编程实验室"
+author: "鲁工"
+ingested: "2026-07-08"
+sha256: 5a05b55f13111cac0fa8529433003a2bf451132ad460062e2ef8eb3005734536
+type: raw-article
+tags:
+  - claude-code
+  - academic
+  - literature-review
+  - vibe-researching
+  - sci
 ---
 
-# 我用Claude Code写了一篇45页的文献综述，质量可以发一区SCI
+> 用 Claude Code 写了一篇 45 页的文献综述，质量达到一区 SCI 水平。
 
-## 原创摘要
+本文为简短分享，引用前文「从 Vibe Coding 到 Vibe Researching，Claude Code 也可以是最强科研工具」中的方法，展示了 Claude Code 在学术文献综述生成上的实际效果。45 页篇幅、结构化论证、引用覆盖完整，达到 SCI 一区发表水平。
 
-这份来源卡片记录一篇围绕“我用Claude Code写了一篇45页的文献综述，质量可以发一区SCI”的第三方资料，主题标签为相关 AI 工程主题。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
-
-> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。
+→ 前文参见：[[raw/articles/从Vibe Coding到Vibe Researching，Claude Code也可以是最强科研工具]]

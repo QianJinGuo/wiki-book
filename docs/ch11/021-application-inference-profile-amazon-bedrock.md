@@ -1,5 +1,7 @@
 # 基于 Application Inference Profile 为 Amazon Bedrock 构建分业务单元的近实时成本告警
 
+## Ch11.021 基于 Application Inference Profile 为 Amazon Bedrock 构建分业务单元的近实时成本告警
+
 > 📊 Level ⭐ | 3.7KB | `entities/amazon-bedrock-application-inference-profile-per-bu-cost-alert.md`
 
 # 基于 Application Inference Profile 为 Amazon Bedrock 构建分业务单元的近实时成本告警
@@ -37,7 +39,7 @@ Bedrock 支持在原始基础模型基础上封装一层 Application Inference P
 | 部署复杂度 | 低 | 中（需维护 Gateway） | 低（2 条 CF 命令） |
 | BU 隔离 | IAM Principal 标签 | Virtual Key | Application Inference Profile |
 
-→ [原文存档](https://aws.amazon.com/cn/blogs/china/blog-bedrock-per-bu-cost-alarms)
+→ 原文存档
 
 ---
 ## 关联

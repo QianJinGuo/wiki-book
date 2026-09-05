@@ -1,10 +1,12 @@
 # Jane Street — 形式化方法与编程的未来
 
+## Ch12.010 Jane Street — 形式化方法与编程的未来
+
 > 📊 Level ⭐ | 3.9KB | `entities/jane-street-formal-methods-future-programming.md`
 
 # Jane Street — 形式化方法与编程的未来
 
-> Source: [原文存档](https://blog.janestreet.com/formal-methods-at-jane-street-index/)
+> Source: 原文存档
 
 ## 概述
 
@@ -44,7 +46,7 @@ Jane Street 工程师在 2026-06 发表的一篇立场文章，**核心论点是
 
 ## 原文链接
 
-→ [原文存档](https://blog.janestreet.com/formal-methods-at-jane-street-index/)
+→ 原文存档
 
 ---
 

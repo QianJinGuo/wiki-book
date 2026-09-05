@@ -1,5 +1,7 @@
 # Hidden Technical Debt of AI Systems: Agent Harness
 
+## Ch04.033 Hidden Technical Debt of AI Systems: Agent Harness
+
 > 📊 Level ⭐ | 3.7KB | `entities/hidden-technical-debt-agent-harness.md`
 
 # Hidden Technical Debt of AI Systems: Agent Harness
@@ -52,7 +54,7 @@ Agent 系统的 Harness 层（系统提示词、工具包装器、规划-执行�
 
 ## 参考
 
-→ [原文存档](https://leehanchung.github.io/blogs/2026/05/08/hidden-technical-debt-agent-harness)
+→ 原文存档
 → [Harness Engineering 框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---

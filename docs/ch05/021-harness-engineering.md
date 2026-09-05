@@ -1,5 +1,7 @@
 # 清华大学：驾驭工程 (Harness Engineering) 研究报告
 
+## Ch05.021 清华大学：驾驭工程 (Harness Engineering) 研究报告
+
 > 📊 Level ⭐⭐ | 6.4KB | `entities/tsinghua-harness-engineering-report.md`
 
 # 清华大学：驾驭工程 (Harness Engineering) 研究报告
@@ -16,7 +18,7 @@
 - [Harness Engineering Systematic Explainer](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-systematic-explainer.md)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
-→ [原文存档](https://mp.weixin.qq.com/s/EdVjZuBVcXjd30TpxyLsXQ)
+→ 原文存档
 
 ## 深度分析
 

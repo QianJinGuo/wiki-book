@@ -1,5 +1,7 @@
 # 使用 Kiro 和 MCP 自动化大规模升级 RDS MySQL 8.0 至 RDS MySQL 8.4
 
+## Ch07.022 使用 Kiro 和 MCP 自动化大规模升级 RDS MySQL 8.0 至 RDS MySQL 8.4
+
 > 📊 Level ⭐⭐⭐ | 8.9KB | `entities/kiro-mcp-rds-mysql-upgrade.md`
 
 ## 概述
@@ -20,12 +22,12 @@
 
 ## 相关实体
 - [Mcp Serveramazon Bedrock Agentcorequick Suite](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mcp-serveramazon-bedrock-agentcorequick-suite.md)
-- [How A Mid Tier Enterprise Saas Provider Automates Cloud Supp](../ch03/019-how-a-mid-tier-enterprise-saas-provider-automates-cloud-supp.html)
+- [How A Mid Tier Enterprise Saas Provider Automates Cloud Supp](../ch03/020-how-a-mid-tier-enterprise-saas-provider-automates-cloud-supp.html)
 - [Aws Devops Agent 实战云网络故障自主调查与修复建议](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-devops-agent-实战云网络故障自主调查与修复建议.md)
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/173-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
+- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/197-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
 - [Eks Gpu Operator Custom Driver Cuda Workload](https://github.com/QianJinGuo/wiki-public/blob/main/entities/eks-gpu-operator-custom-driver-cuda-workload.md)
 
-→ [原文存档](https://aws.amazon.com/cn/blogs/china/using-kiro-mcp-automation-rds-mysql-8-0-rds-mysql-8-4/)
+→ 原文存档
 
 - [Amazon Quick Mcp Kdbx Time Series](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-quick-mcp-kdbx-time-series.md)
 - [Transforming Rare Cancer Research With Amazon Quick Integrat](https://github.com/QianJinGuo/wiki-public/blob/main/entities/transforming-rare-cancer-research-with-amazon-quick-integrat.md)
@@ -63,7 +65,7 @@
 
 5. **通过 MCP 协议将运维脚本封装为可组合工具**：这个工具的架构可以作为其他 AWS 运维自动化的参考模板。将现有的运维脚本（用 AWS CLI、bash、Python）通过 FastMCP 封装为 MCP 服务器，可以在不改变底层脚本的前提下，让任何 MCP-compatible 的 AI 工具调用这些运维能力。这比用 LLM 直接生成 bash 命令的可靠性高得多。 [^raw/articles/kiro-mcp-rds-mysql-upgrade.md:52-500]
 
-→ [原文存档](https://aws.amazon.com/cn/blogs/china/using-kiro-mcp-automation-rds-mysql-8-0-rds-mysql-8-4/)
+→ 原文存档
 
 ---
 

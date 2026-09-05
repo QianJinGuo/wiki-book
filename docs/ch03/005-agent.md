@@ -1,5 +1,7 @@
 # Agent 时代的生产力悖论：协作成为新瓶颈
 
+## Ch03.005 Agent 时代的生产力悖论：协作成为新瓶颈
+
 > 📊 Level ⭐⭐ | 12.5KB | `entities/agent-productivity-paradox-collaboration-bottleneck.md`
 
 # Agent 时代的生产力悖论：协作成为新瓶颈
@@ -60,7 +62,7 @@ AI 可以直接理解自然语言描述的需求并生成实现，不再需要�
 - [Agent Orchestration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-orchestration-multi-agent-systems.md)
 - [Software Engineering Transformation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/software-engineering-ai-transformation.md)
 
-→ [原文存档](https://mp.weixin.qq.com/s/GPoQnFsXnnNpKdefWWiKRw)
+→ 原文存档
 
 ## 第 2 来源 — 袁晓辉：AI 生产力悖论的新视角
 
@@ -81,7 +83,7 @@ AI 可以直接理解自然语言描述的需求并生成实现，不再需要�
 3. **Token ROI 评估视角**：企业开始重新评估 AI Token 投入的性价比，这是一个新的工程经济学维度
 4. **WorkBuddy 工程实践案例**：具体的 AI 工作台 Agent 管理实践作为实证
 
-→ [第 2 来源原文存档](https://mp.weixin.qq.com/s/mu4ZiCeNuasv5J4Gt22jTA)
+→ 第 2 来源原文存档
 
 ## 第 3 来源 — getdx Q2 2026 报告：AI 效率悖论的量化实证
 
@@ -101,7 +103,7 @@ AI 可以直接理解自然语言描述的需求并生成实现，不再需要�
 3. **PR 通胀信号**：PR 规模翻倍提示 AI 可能鼓励"打补丁式"而非"可测试、有纪律"的代码——这是新的质量风险维度
 4. **组织规模分化**：小型/科技团队获益 vs 大型/传统团队落后的分化，指向协作结构对 AI 收益的放大/抑制
 
-→ [第 3 来源原文存档](https://getdx.com/report/State-of-AI-Impact-in-Engineering-Q2-Report/)
+→ 第 3 来源原文存档
 
 ## 第 4 来源 — 大淘宝技术：从 Spec 驱动转向环境与验证驱动（2026-08-24 SUPP）
 

@@ -1,18 +1,64 @@
 ---
-type: source-card
 title: "当AI开始重写自己：EverMind的自进化智能体框架Raven"
-source: "mp.weixin.qq.com"
-author: "机器之心发布"
 source_url: "https://mp.weixin.qq.com/s/-mXphRfXeukWNvfUAcG7gQ"
-published: "未标注"
-collected: "2026-07-08"
-license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
+source_site: "机器之心"
+author: "机器之心发布"
+ingested: "2026-07-08"
+sha256: 3e003f499f54c692ff8c6f6d7334eed568367fb5402e87f8fa6f42e7fbc6d4c4
+type: raw-article
+tags:
+  - evermind
+  - raven
+  - self-evolving
+  - agent-harness
+  - long-term-memory
+  - everos
+  - digital-life
+  - agent-framework
 ---
 
-# 当AI开始重写自己：EverMind的自进化智能体框架Raven
+> Raven 基于自研记忆系统 EverOS，是一个自进化 Agent Harness，核心主张：主动（Proactive）、进化（Improving）、个性化（Personalized）。
 
-## 原创摘要
+## 数字生命四阶段框架（L1-L4）
 
-这份来源卡片记录一篇围绕“当AI开始重写自己：EverMind的自进化智能体框架Raven”的第三方资料，主题标签为相关 AI 工程主题。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
+- **L1：角色化指令体** — 当前 90% AI 应用，固定 Prompt 预设，无历史上下文
+- **L2：记忆增强体** — 跨会话记忆，能进行长时任务规划（EverOS 覆盖）
+- **L3：自我进化体** — 具备强化学习、反思与自我改进，能从交互中提炼通用知识（Raven 目标）
+- **L4：全自主数字生命** — 主动探索，独立数据主权，端到端自我演化
 
-> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。
+## EverOS 核心架构
+
+四层仿生架构：代理层、记忆层、索引层、接口层。独特之处：
+- 将原始对话流切分为独立记忆单元
+- 通过聚类算法形成"记忆场景"
+- 对个体进行深度画像（身份、偏好、技能、工作目标）
+- 以传统方案 1/10 Token 消耗实现超越全量上下文的准确率
+
+三种记忆范畴：User Memory（定义人）、Agent Memory（定义 Agent）、Knowledge Wiki（定义世界知识）
+
+## Raven 的自我进化能力
+
+- 内置 **100,000 项**经过深度评测的 Skills
+- 能重写自身代码：实时进化技能，闲时自我修改逻辑和策略代码
+- 可通过 EverBrain（用户侧记忆模型）动态微调模型权重
+- 支持微信/WhatsApp/Telegram 作为任务指挥台
+
+## 学术护城河
+
+- MSA（Memory Sparse Attention）：端到端稀疏注意力，1 亿 Tokens 上下文，衰减 < 9%
+- HyperMem：超图层次化记忆架构，LoCoMo 基准 SOTA 92.73%，ACL 2026 Oral
+- EverMemOS：自组织记忆操作系统，ACL 2026 主会
+- KDD 2026 Oral：多方协作对话长时记忆评测
+
+## 全栈生态
+
+底层 EverOS → 模型层 EverBrain → Agent 层 Raven → 用户层 EverMe → EverX 生态计划
+
+## 对比 mem0
+
+| 维度 | mem0 | EverMind |
+|------|------|----------|
+| 定位 | 纯 API 中间件 | 底座 OS |
+| 架构 | 通用向量库 + SQLite | 四层仿生 + 超图记忆 |
+| Token 消耗 | 基准 | 1/10 |
+| 学术 | — | ACL/KDD 顶会 |

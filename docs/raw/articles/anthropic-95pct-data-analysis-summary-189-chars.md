@@ -1,18 +1,22 @@
 ---
-type: source-card
-title: "Anthropic 95% 数据分析自动化：21% → 95% 准确率突破（极简短摘要，原文存档）"
-source: "mp.weixin.qq.com"
-author: "未标注作者；来源机构见 source"
 source_url: "https://mp.weixin.qq.com/s/DHMgoVa9YykVYWIRc0GATw"
-published: "未标注"
-collected: "2026-06-26"
-license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
+ingested: 2026-06-26
+sha256: b7c8b1fdb749182eb196650fdd65da0d071a9854416fd29d9e5dfbe7b8e251df
 ---
 
 # Anthropic 95% 数据分析自动化：21% → 95% 准确率突破（极简短摘要，原文存档）
 
-## 原创摘要
+> 来源：未标注公众号（极短摘要文 189 字）
+> **关系**：同源不同公众号的极简摘要报道。Anthropic 数据科学团队博客原文（2026-06-04 公开）已被深度 entity 收录；本文仅作 2nd source 存档。
 
-这份来源卡片记录一篇围绕“Anthropic 95% 数据分析自动化：21% → 95% 准确率突破（极简短摘要，原文存档）”的第三方资料，主题标签为相关 AI 工程主题。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
+Anthropic 的数据科学团队昨天发了篇博客：
 
-> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。
+他们内部 **95% 的业务数据分析查询**，现在都已经由 **Claude 自动完成**了，**准确率大约是 95%**。
+
+数据团队也因此能腾出了手来，专注做**因果建模、预测和机器学习**这些更有价值的工作。
+
+在这篇博客中，Anthropic 公开了**整个技术栈的细节**，包括踩过的坑、试错的数据……以及一个**让准确率从 21% 飙到 95% 的关键发现**。
+
+## 关联笔记
+
+→ [[entities/anthropic-95pct-data-analysis-skill-stack-architecture|Merged into Anthropic 95% 数据分析自动化 (2nd source)]]

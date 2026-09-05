@@ -1,5 +1,7 @@
 # 微信读书官方skill与huashu-weread增强版
 
+## Ch07.016 微信读书官方skill与huashu-weread增强版
+
 > 📊 Level ⭐⭐⭐ | 10.4KB | `entities/weread-official-skill-huashu-critical-gap.md`
 
 ## 微信读书官方skill（weread skill）
@@ -84,7 +86,7 @@ huashu-weread证明了"在官方能力上做增强层"这一模式的可行性�
 - [Tmall Ai Coding Practice Team Knowledge Base](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tmall-ai-coding-practice-team-knowledge-base.md)
 - [Skill Craft](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-craft.md)
 
-→ [原文存档](https://mp.weixin.qq.com/s/LxgM3qWxd3_gIG14rFO47Q)
+→ 原文存档
 
 ## 相关工具
 - huashu-weread：https://github.com/alchaincyf/huashu-weread

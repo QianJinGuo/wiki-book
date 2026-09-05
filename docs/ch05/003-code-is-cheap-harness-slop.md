@@ -1,5 +1,7 @@
 # Code is cheap: Harness 方法论——水流理论、最小混沌单元与反 slop
 
+## Ch05.003 Code is cheap: Harness 方法论——水流理论、最小混沌单元与反 slop
+
 > 📊 Level ⭐ | 5.4KB | `entities/code-is-cheap-harness-water-flow-wuyue-aliyun-2026.md`
 
 # Code is cheap: Harness 方法论——水流理论、最小混沌单元与反 slop
@@ -56,11 +58,11 @@ Harness 设计应像水流——在明确河道（spec/边界）内自主流动�
 
 ## 与现有 Harness 实体的关系
 
-本文的独特贡献在于从 LLM 第一性原理（token 采样概率 + 注意力机制）出发推导 Harness 方法论，提出了现有 entities 未覆盖的 three native concepts（反 slop、水流理论、最小混沌单元）。与 [Harness Engineering 综合实体](066-harness-engineering.html) 的 5 制品/三大阵营互补，与 [阿里云 Java Harness 实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-alibaba-java-case-study.md) 同属阿里云生态但视角不同（本文偏方法论而非案例）。
+本文的独特贡献在于从 LLM 第一性原理（token 采样概率 + 注意力机制）出发推导 Harness 方法论，提出了现有 entities 未覆盖的 three native concepts（反 slop、水流理论、最小混沌单元）。与 [Harness Engineering 综合实体](096-harness-engineering.html) 的 5 制品/三大阵营互补，与 [阿里云 Java Harness 实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-alibaba-java-case-study.md) 同属阿里云生态但视角不同（本文偏方法论而非案例）。
 
 > 参见也（see also）：[生产级 Harness 架构设计](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture-design-production-guide.md)、[Harness 综合范式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-paradigm-comprehensive-2026.md)
 
-→ [原文存档](https://mp.weixin.qq.com/s/t04ysxZN2qEc3986r2gyTA)
+→ 原文存档
 
 ---
 

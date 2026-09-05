@@ -1,5 +1,7 @@
 # Regression Tax: 技能包导致 Agent 性能退化的系统性分析
 
+## Ch04.021 Regression Tax: 技能包导致 Agent 性能退化的系统性分析
+
 > 📊 Level ⭐ | 4.5KB | `entities/regression-tax-skills-hurt-llm-agents.md`
 
 # Regression Tax: 技能包导致 Agent 性能退化的系统性分析
@@ -51,7 +53,7 @@ Osmosis 具有双向性：在低调用率的栈上，未调用的技能带来更
 - [AI Skill 测评底层逻辑](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-skill-evolution底层逻辑.md) — 技能测评的核心关注
 - [Hermes Agent Skill 互优化实验](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-skill-crossover-optimization-skillevolver-darwin.md) — 技能自动化优化实践
 
-→ [原文存档](https://arxiv.org/abs/2607.22520)
+→ 原文存档
 
 ---
 

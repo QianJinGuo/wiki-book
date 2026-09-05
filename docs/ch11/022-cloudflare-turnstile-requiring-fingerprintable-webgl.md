@@ -1,5 +1,7 @@
 # Cloudflare Turnstile requiring fingerprintable WebGL
 
+## Ch11.022 Cloudflare Turnstile requiring fingerprintable WebGL
+
 > 📊 Level ⭐ | 3.4KB | `entities/hacktivisme-articles-cloudflare-turnstile-webgl-fingerprinting.md`
 
 # Cloudflare Turnstile requiring fingerprintable WebGL
@@ -10,7 +12,7 @@ Niche but well-documented analysis of Cloudflare Turnstile WebGL fingerprinting 
 
 ## 深入分析
 
-> 来源：[原文存档](https://hacktivis.me/articles/cloudflare-turnstile-webgl-fingerprinting)
+> 来源：原文存档
 
 本篇来自 TLDR AI Newsletter 推荐。技术深度评分：v=7, c=8, stars=4。
 
@@ -31,7 +33,7 @@ Mozilla Firefox 在 WebGL 指纹保护方面存在已知漏洞（Bugzilla#191627
 
 ## 相关主题
 
-- [原文存档](https://hacktivis.me/articles/cloudflare-turnstile-webgl-fingerprinting)
+- 原文存档
 
 ---
 

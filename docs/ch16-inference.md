@@ -2,7 +2,7 @@
 
 > 让模型跑得更快：投机解码、MoE、PD 分离、量化
 
-> 本章收录 **16 篇**实体，按深度递增排列。
+> 本章收录 **18 篇**实体，按深度递增排列。
 
 ---
 
@@ -10,8 +10,8 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐⭐ 工程师 | 需编程基础 | 3 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 6 |
+| ⭐⭐ 工程师 | 需编程基础 | 4 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 7 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 5 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 2 |
 
@@ -33,7 +33,7 @@
 
 > 📊 Level ⭐⭐ | 8.6KB | `entities/llm-inference-pipeline-internals.md`
 
-> -> [原文存档](https://mp.weixin.qq.com/s/1zZ0UXCNUA1UJ39gJNDQjg)
+> -> 原文存档
 
 # LLM 推理流水线完整解析
 
@@ -251,7 +251,7 @@ DeepSeek V4 Preview（2026-04-24）没有把 KV cache 当固定成本管理，�
 
 Original URL: https://huggingface.co/blog/torch-mlp-fusion
 
-Source: [raw archive](https://huggingface.co/blog/torch-mlp-fusion)
+Source: raw archive
 
 ---
 
@@ -285,16 +285,142 @@ Source: [raw archive](https://huggingface.co/blog/torch-mlp-fusion)
 
 ---
 ## 关联
-→ [原文存档](https://pytorch.org/blog/in-kernel-broadcast-optimization-co-designing-kernels-for-recsys-inference/)
+→ 原文存档
 - 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
-## Ch16.004 vLLM V0→V1 迁移中的 logprob 差异修复
+## Ch16.004 SGLang
+
+> 📊 Level ⭐⭐ | 4.5KB | `entities/sglang.md`
+
+## 概述
+SGLang 是一个开源的大语言模型推理服务框架，由 UC Berkeley、CMU、 Stability AI 等机构联合开发（LMSYS 团队主导）。本次 GLM-5 的 BugFix #2（HiCache 加载时序修复）已通过 Pull Request #22811 提交至 SGLang 社区。
+
+## 核心贡献
+- **LayerSplit**：智谱提出的 KV Cache 分层存储方案，针对 Coding Agent 长上下文、高 Prefix Cache 命中率场景，通过每张 GPU 仅持有部分层的 KV Cache，显著降低单卡显存占用
+- **HiCache**：多级 KV Cache 优化，通过 Load Stream 与 Forward Stream 重叠执行提高吞吐
+
+## 深度分析
+SGLang作为UC Berkeley/CMU/Stability AI联合开发的LLM推理框架，其核心价值在于为长上下文、高吞吐量场景提供生产级的KV Cache分层优化方案，与vLLM形成互补而非替代关系。
+**1. LayerSplit（智谱提出）的核心洞察是：Coding Agent场景下，Prefix Cache的命中率在工具调用和系统提示词中天然很高，但不同层对KV Cache的需求强度不同。** 传统方案让每张GPU持有完整的所有层的KV Cache，导致显存浪费。LayerSplit的解法是让每张GPU仅持有部分层的KV Cache（如GPU0持有1-32层、GPU1持有33-64层），推理时按需召唤缺失层的计算结果。这本质上是模型并行与KV Cache复用的联合优化——在Coding Agent场景下，由于工具调用模式的高度重复性，跨层复用效果显著。
+**2. HiCache的多级KV Cache策略是SGLang在高并发推理场景下的关键差异化能力。** Load Stream（前缀加载）与Forward Stream（实际推理）重叠执行，使得前缀复用不阻塞推理吞吐。这对多用户并发的Agent系统特别重要——每个用户的工具调用历史构成前缀，多用户前缀的并发加载不会形成瓶颈。
+**3. SGLang与vLLM的关系是互补而非竞争。** vLLM的核心优势在于PagedAttention的显存管理和连续批处理，适合高吞吐的单请求场景；SGLang在需要复杂状态管理（多轮对话、工具调用链）、长上下文Prefix Cache复用、多级调度的工作流场景中更具优势。实际部署中，两者经常共存于同一系统的不同时刻（vLLM处理突发请求、SGLang处理复杂Agent工作流）。
+
+## 实践启示
+**对于LLM推理架构师：** 在设计推理系统时，不要默认vLLM是唯一选择。对于Agent工作流系统（SWE Agent、多轮对话、复杂工具调用链），SGLang的分层KV Cache和前缀复用能力可能带来显著的性能收益。建议用真实工作流trace评估两者在实际场景下的端到端延迟和显存利用率。
+**对于Coding Agent开发者：** Coding Agent场景天然适合LayerSplit策略——因为工具调用的系统提示词和工具Schema高度重复，且代码补全任务的上下文窗口通常很大。按层分配KV Cache可以让单卡容纳更大的上下文，显著降低多卡推理的显存占用。
+**对于云厂商和大模型团队：** HiCache的Load Stream/Forward Stream重叠设计可以与模型并行策略深度结合——在多模态推理（Visual Encoder + LLM）或MoE架构中，前缀加载与推理的重叠效果可能更加显著，因为这些场景的初始化开销更大。
+
+## 相关页面
+[GLM-5 Scaling Pain 推理复盘](https://github.com/QianJinGuo/wiki-public/blob/main/entities/glm5-scaling-pain.md) — 包含 HiCache BugFix #2 的详细分析
+- [基于SGLang的大模型推理部署实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sglang-inference-deployment-practice-benchmark-tuning.md) — Benchmark 方法论、部署方案选型与调优实战指南
+
+---
+
+## Ch16.005 GLM-5 Scaling 痛点与推理优化
+
+> 📊 Level ⭐⭐⭐ | 14.7KB | `entities/glm5-scaling-pain-inference.md`
+
+# glm5-scaling-pain-inference
+对 Scaling Law 的信仰不仅驱动着我们在模型参数与数据规模上不断突破，也同样在不断逼近 Infra 工程的极限，这一过程伴随着不可避免的阵痛，我们称之为" Scaling Pain "。
+随着大模型应用从简单对话全面转向更复杂的、更长程的 Coding Agent 任务，我们的推理基础设施迎来了前所未有的压力，每天承受着数亿次 Coding Agent 调用。过去几周，部分用户在使用 GLM-5 系列模型执行复杂 Coding Agent 任务时，遭遇了多种异常：乱码、复读，以及偶现的生僻字。这些问题在标准推理环境下是不存在的，只在高并发、长上下文的 Coding Agent 场景下才会触发，很难稳定复现。
+我们经过数周的推演、排查与压测，最终定位并修复了几个相互独立的底层竞态 Bug，并对其中所反映的系统瓶颈进行了针对性优化，显著提高了推理系统的稳定性和效率。
+---
+
+## 从线下复现到异常识别
+自 3 月起，我们在 GLM-5 的线上监控和用户反馈中观察到三类异常现象：**乱码（garbled output）、复读（repetition），以及生僻字（rare character）**。这些现象在表面上与长上下文场景下常见的"降智"相似，但由于我们并没有上线任何降低模型精度的优化，一个更关键的问题是：**异常究竟源于模型本身，还是源于推理链路？**
+如果源于模型，异常会表现为针对特定输入的稳定、可重复行为；反之，若异常与系统压力或运行时状态相关，则更可能指向推理基础设施中的链路或状态管理问题。
+排查初期，我们先对用户反馈的 bad cases 做本地回放，并将同一批请求重复推理数百次，但始终未能复现异常，说明大概率不是模型本身的问题。为进一步模拟线上环境的压力，我们对线上日志做脱敏处理，并尽可能保留原始并发分布与请求时序，在本地进行全量回放。起初仍未复现异常，直到进一步调整 PD 分离比例并持续提高系统负载，模拟高峰期的 Prefill 堆积和 Decode 侧 KV Cache 压力后，才在约每万次请求中稳定复现 3-5 次异常。这种"与请求内容无关、与系统压力相关"的特征，说明问题可能来自高负载下的推理状态管理。
+与此同时，线下复现的异常频率仍低于线上反馈的频率，说明现有检测方法可能存在漏检，或仍有部分触发场景尚未覆盖。
+**如何可靠识别异常输出成为了新的挑战。** 三类异常中，复读相对容易检测，而乱码与生僻字比较棘手。我们尝试过正则表达式、字符集匹配等启发式方法，也尝试过基于模型判别的方式，但前者存在明显的漏判与误伤，后者则难以满足大规模消融实验的效率要求。
+在反复分析推理日志后，我们发现了一个意想不到的切入点：**投机采样（Speculative Decoding）指标可以作为异常检测的重要参考。**
+投机采样原本是一个性能优化技术，先由草稿模型生成候选 token，再由目标模型校验并决定是否接受，从而在不改变最终输出分布的前提下提升 decode 效率。如图 1 所示，我们观察到，两个指标在异常发生时呈现出稳定模式：
+
+- **乱码和生僻字**：通常伴随极低的 spec_accept_length（目标模型连续接受的 draft token 前缀长度），即草稿模型生成的候选 token 几乎全部被目标模型拒绝，表明目标模型所看到的 KV Cache 状态与草稿模型预期之间存在显著偏差。
+- **复读**：通常伴随偏高的 spec_accept_rate（draft token 被接受的比例），表明损坏的 KV Cache 可能使注意力模式退化，并将生成过程推向高置信度的重复循环。
+基于上述观察，我们进一步实现了一套在线异常监控策略：当 spec_accept_length 持续低于 1.4 且生成长度已超过 128 token，或 spec_accept_rate 超过 0.96 时，系统主动中止当前生成，并将请求交由负载均衡器重试。
+--- See also [Karpathy Vibe Coding To Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-to-agentic-engineering.md)
+
+## BugFix #1：PD 分离架构下的 KV Cache 竞态
+### 原因分析：异步 Abort 引发的 KV Cache 复用竞态
+为限制尾延迟，推理引擎中引入了基于超时的请求终止机制：当 Prefill 阶段未在规定时间内完成时，Decode 侧会对请求执行 Abort，并回收其占用的 KV Cache 资源。
+然而，该 Abort 信号未被正确传播至 Prefill 侧，同时 Decode 侧也缺乏判断 KV Cache 是否可安全回收与复用的充分信息。因此，在 Decode Abort 并将对应 KV Cache 空间分配给新请求之后，先前已发起的 RDMA 写入以及正在执行的 Prefill 计算仍持续执行，未被同步取消。
+**具体时序（两个请求在 PD 分离架构下的交互）：**
+1. Req1 被发送至 Prefill-1（P1）和 Decode（D）
+2. 由于调度或排队等原因，Req1 在 P1 侧经历了一段等待后才开始执行 Prefill Forward
+3. Decode 侧在一段时间内未收到对应的 KV Cache 数据，触发超时机制，并对 Req1 执行 Abort
+4. Decode 侧回收 Req1 占用的 KV Cache 槽位，但没有正确通知 P1
+5. 新请求 Req2 到达，被分配至 Prefill-2（P2）和 Decode，由于内存复用策略，被分配到与 Req1 相同的 KV Cache 地址
+6. P2 开始执行 Prefill Forward 并进行 KV Transfer，并在较短时间内完成，使 Decode 侧进入生成阶段
+7. 与此同时，P1 侧针对 Req1 发起的 KV Cache 写入仍在继续，其数据会写入已被 Req2 复用的显存区域，从而覆盖 Req2 的部分 KV Cache
+8. **最终，Req2 在 Decode 阶段读取到被覆盖的数据，导致生成结果异常**
+
+### 修复方案：KV Cache 释放的时序一致性保证
+为消除上述竞态，在推理引擎中引入了更严格的时序约束，在请求终止与 KV Cache 写入完成之间建立显式同步关系：
+
+- Decode 在触发 Abort 后，会向 Prefill 侧发送通知
+- Prefill 仅在以下条件满足时返回"可释放"信号：相关 RDMA 写入尚未开始，或所有已提交写入均已完成
+- Decode 仅在收到该确认后，才允许回收并复用对应的 KV Cache 槽位
+**修复效果**：异常输出的发生率由约万分之十几下降至万分之三以下。
+---
+
+## BugFix #2：HiCache 加载时序缺失
+### 原因分析：流水线同步缺失导致的 read-before-ready
+Coding Agent 场景显著提高了输入长度（平均超过 70K tokens），同时伴随较高的前缀复用率。这类负载使 HiCache（多级 KV Cache）成为线上服务中的关键优化手段。然而，在 KV Cache 换入与计算重叠执行的情况下，当前实现未能保证数据在使用前已完成加载，导致可能出现未就绪 KV Cache 被访问的情况。
+系统会从 CPU 内存异步换入（swap-in）历史前缀缓存，并通过 Load Stream 与 Forward Stream 的重叠执行来提高吞吐。Load Stream 负责加载 KV Cache 与 Indexer Cache，而 Forward Stream 依次执行 Index 计算与后续的 Sparse Attention。
+理论上，Forward Stream 中的 Indexer 计算应在对应的 Indexer Cache 完成加载后才能启动。然而，在原始实现中，该依赖未被显式表达。具体而言，Indexer 算子在启动时未对 Load Indexer Cache 的完成建立同步约束。因此，Forward Stream 可能先于 Load Stream 完成数据加载而开始执行，从而出现 **Read-before-Ready** 的访问模式。
+
+### 修复方案：重构算子流水线的原子性
+在 Indexer 算子启动前引入与 Load Stream 的同步点，确保对应层级的 Indexer Cache 已完成加载。Forward Stream 仅在数据就绪后才启动计算。
+**该修复上线后，在相同负载条件下，由执行时序不一致引起的异常完全消失，系统行为趋于稳定。**
+该修复已通过 Pull Request #22811 提交至 SGLang 社区。
+---
+
+## 优化：KV Cache 分层存储 LayerSplit
+上述两个竞态问题揭示了一个共同的系统瓶颈：在长上下文的 Coding Agent Serving 场景中，Prefill 阶段主导了系统性能。
+为了控制 Prefill 排队带来的 TTFT，我们引入了超时 Abort；为了缓解 Prefill 侧 KV Cache 容量压力，我们引入了 HiCache。在修复这些状态一致性问题后，我们进一步回到瓶颈本身：如何提升 Prefill 吞吐、降低 Prefill 侧 KV Cache 显存压力。为此，我们设计并实现了 **KV Cache 分层存储方案 LayerSplit**。
+Coding Agent 负载通常呈现出上下文长度较长、Prefix Cache 命中率较高的特征。Context Parallel（CP）成为线上 Prefill 节点的主要并行策略。然而，现有的 SGLang 开源实现存在 KV Cache 冗余存储的问题，导致有限的 KV Cache 容量成为 GPU 计算资源利用率的限制因素。
+**LayerSplit 方案**：每张 GPU 不再保存全部层的 KV Cache，而是仅持有部分层的 KV Cache，从而显著降低单卡的显存占用。
+在计算过程中，不同 CP rank 按照协同方式完成 Prefill：持有某一层 KV Cache 的 rank 会在执行 Attention 计算前，将该层 Cache 广播给其他相关 rank。为降低通信开销，进一步设计了 KV Cache 广播与 indexer 计算的重叠机制，使二者在时间上相互掩盖。整体流程中仅引入了 Indexer Cache 广播的额外开销，其规模约为 KV Cache 的 1/8，因此整体通信成本较低。
+**实验结果（Cache 命中率 90% 条件下，请求长度 40k-120k）：**
+
+- 系统吞吐量提升幅度在 **10% 至 132%** 之间
+- 上下文长度越长，收益越显著
+---
+
+## 总结
+当智能真正进入高并发、长上下文的 Coding Agent 场景后，推理基础设施的挑战已经不只是吞吐、延迟和可用性，**维护它的输出质量变得至关重要**。每一次对 Scaling Law 的追求，都必须有同等强度的系统工程作为支撑。
+---
+**参考链接：**
+
+- 技术 blog 原版（推荐阅读，含完整图表）：https://z.ai/blog/scaling-pain
+- SGLang PR #22811（HiCache 修复已开源）：https://github.com/sgl-project/sglang/pull/22811
+- 中科加禾 × 中国科学院计算技术研究所处理器芯片全国重点实验室 联合研究
+
+## 深度分析
+GLM-5的Scaling Pain案例揭示了高并发Coding Agent场景下推理系统面临的核心挑战：
+**1. 异常检测的范式创新**：投机采样指标（spec_accept_length/spec_accept_rate）被发现可用于异常检测，这是将性能优化技术转化为可观测性工具的典型案例。乱码/生僻字与低spec_accept_length相关，复读与高spec_accept_rate相关，形成稳定的异常模式指纹。
+**2. 竞态Bug的隐蔽性与系统性**：两个Bug（PD分离KV Cache竞态、HiCache加载时序）都是典型的分布式系统状态一致性问题的不同表现形式。它们的共同特征是：只在高负载、长上下文场景下触发，难以本地稳定复现，根因隐藏在对时序敏感的状态管理中。
+**3. 系统瓶颈的根源**：两个Bug的修复揭示了共同的系统瓶颈——Prefill阶段主导了Coding Agent场景的系统性能。LayerSplit优化正是针对这一瓶颈的根本性解决方案，通过KV Cache分层存储降低单卡显存压力。
+
+## 实践启示
+1. **利用性能优化技术的副产物进行异常检测**：投机采样原本是性能优化手段，但其指标（spec_accept_length、spec_accept_rate）在异常时呈现稳定模式，可作为在线监控的锚点。这种"用优化技术的副产物做可观测性"的思路值得借鉴。
+2. **高负载压测是暴露隐式Bug的必要条件**：本地回放无法稳定复现异常，只有在接近真实负载的条件下（调整PD分离比例、持续提高系统负载）才能稳定触发。线上问题排查需要构建压力环境模拟能力。
+3. **时序一致性是分布式推理系统的核心 invariant**：KV Cache释放必须与RDMA写入完成建立显式同步，流水线各阶段必须在数据就绪后才能启动计算。任何违反这一原则的设计都可能引入隐蔽的竞态条件。
+4. **修复应优先于优化**：在两个竞态Bug修复之前，LayerSplit等优化方案的效果会被系统不稳定掩盖。先修Bug，再做优化，才能获得可衡量的效果提升。
+## 相关实体
+
+- [lightseek token speed inference](https://github.com/QianJinGuo/wiki-public/blob/main/entities/lightseek-token-speed-inference.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/wiki-master-map.md)
+
+---
+
+## Ch16.006 vLLM V0→V1 迁移中的 logprob 差异修复
 
 > 📊 Level ⭐⭐⭐ | 9.4KB | `entities/vllm-v0-to-v1-correctness-before-corrections.md`
 
-> -> [原文存档](https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections)
+> -> 原文存档
 
 ## 核心发现
 - V1 默认返回 **raw logprobs**（未经后处理），而 trainer 期望 **processed logprobs**
@@ -306,7 +432,7 @@ Source: [raw archive](https://huggingface.co/blog/torch-mlp-fusion)
 所有使用 vLLM 做 rollout generation 的 online RL 方法（PPO、GRPO、GSPO）
 
 ## 相关链接
-→ [原文存档](https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections)
+→ 原文存档
 
 ## 相关实体
 <!-- ⚠️ 以下交叉引用在 lint 时未通过，请确认 slug 后再取消注释 -->
@@ -368,7 +494,7 @@ vLLM V0→V1 迁移中的 logprob 差异，本质上是 **推理引擎默认行�
 
 ---
 
-## Ch16.005 从 Chroma 换成 Qdrant，我踩了 100 万向量的坑
+## Ch16.007 从 Chroma 换成 Qdrant，我踩了 100 万向量的坑
 
 > 📊 Level ⭐⭐⭐ | 8.2KB | `entities/chroma-to-qdrant-1m-vector-migration.md`
 
@@ -386,7 +512,7 @@ vLLM V0→V1 迁移中的 logprob 差异，本质上是 **推理引擎默认行�
 - [Context Engineering Three Memory Paradigms Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-engineering-three-memory-paradigms-comparison.md)
 - [别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](https://github.com/QianJinGuo/wiki-public/blob/main/entities/别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个.md)
 
-→ [原文存档](https://mp.weixin.qq.com/s/Aovqh95_LBYtVOj8_tTD_w)
+→ 原文存档
 
 ## 深度分析
 
@@ -447,7 +573,7 @@ Chroma 的做法是"先搜再过滤"或"先过滤再搜"——无论哪种顺序
 
 ---
 
-## Ch16.006 How to Calculate the Inference Efficiency Ratio
+## Ch16.008 How to Calculate the Inference Efficiency Ratio
 
 > 📊 Level ⭐⭐⭐ | 8.1KB | `entities/how-to-calculate-the-inference-efficiency-ratio.md`
 
@@ -468,7 +594,7 @@ Chroma 的做法是"先搜再过滤"或"先过滤再搜"——无论哪种顺序
 **5. 模型路由是改善 IER 性价比最高的工程投入：简单任务走小模型，复杂任务才调用大模型。** Acme SaaS 的案例中，通过模型路由（轻量级 Sonnet 处理简单任务，Opus 保留给复杂任务）将 inference cost 从 $95K 降至 $52K，IER 从 4.4:1 提升至 8:1——这个改善不需要改变定价或用户体验，纯工程优化。
 **6. 建立 P50 和 P95 两套 IER 追踪体系。** P50 IER 反映典型用户体验对应的效率水平；P95 IER 反映 tail user 带来的成本压力。如果两者差距过大（例如 P50 IER 12:1 但 P95 IER 仅 3:1），说明 pricing model 没有正确覆盖 tail cost，需要重新设计 usage tiering。
 **7. 不要假设推理成本会自然下降——建立 IER 的月度 trend 追踪。** Agentic 功能的引入往往会导致 token 消耗量 per task 显著上升，与 per-token 定价下降形成对冲。主动追踪 IER trend（上升/下降/平稳）比关注绝对值更重要，因为趋势决定了是否需要立即采取行动。
-→ [原文存档](https://www.thesaascfo.com/how-to-calculate-the-inference-efficiency-ratio/)
+→ 原文存档
 
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-model-research-latest-directions.md)
@@ -479,11 +605,11 @@ Chroma 的做法是"先搜再过滤"或"先过滤再搜"——无论哪种顺序
 
 ---
 
-## Ch16.007 Unlocking asynchronicity in continuous batching
+## Ch16.009 Unlocking asynchronicity in continuous batching
 
 > 📊 Level ⭐⭐⭐ | 7.2KB | `entities/continuous-async.md`
 
-> 来源：[原文存档](https://huggingface.co/blog/continuous_async)
+> 来源：原文存档
 
 ## 摘要
 HuggingFace 深度技术文章，系统性地解析了连续批处理（Continuous Batching）中同步瓶颈的根源，并提出基于 CUDA streams 和 events 的异步优化方案。核心发现：同步模式下 CPU 和 GPU 交替空闲，造成近 24% 的 GPU 空闲时间；通过异步化将两者解耦后，GPU 利用率从 76% 提升至 99.4%，生成速度提升 22%。
@@ -538,15 +664,15 @@ stream 之间的独立性既是优势也是问题——它们不知道彼此的�
 - [SGLang Agent 开发](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-assisted-sglang-development-lmsys-2026-07.md)
 - [推理优化](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/inference-optimization.md)
 
-→ [原文存档](https://huggingface.co/blog/continuous_async)
+→ 原文存档
 
 ---
 
-## Ch16.008 vLLM V0 to V1: Correctness Before Corrections in RL
+## Ch16.010 vLLM V0 to V1: Correctness Before Corrections in RL
 
 > 📊 Level ⭐⭐⭐ | 5.1KB | `entities/servicenow-vllm-correctness.md`
 
-> -> [原文存档](https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections)
+> -> 原文存档
 
 ## 深度分析
 vLLM V0 到 V1 是实质性重写，而非增量迭代。ServiceNow AI 的这篇博客核心贡献是展示了在 RL 训练中进行推理引擎迁移时，如何系统性地隔离和修复正确性差距，而非直接诉诸目标函数层面的修正。
@@ -573,14 +699,14 @@ vLLM V0 到 V1 是实质性重写，而非增量迭代。ServiceNow AI 的这篇
 ## 相关实体
 - [servicenow vllm correctness huggingface](https://github.com/QianJinGuo/wiki-public/blob/main/entities/servicenow-vllm-correctness-huggingface.md)
 
-→ [原文存档](https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections)
+→ 原文存档
 
 - [vLLM V0→V1 迁移中的 logprob 差异修复](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vllm-v0-to-v1-correctness-before-corrections.md)
 - [无惧off-policy偏移！bengio团队解绑后训练，大模型rl提速50倍](https://github.com/QianJinGuo/wiki-public/blob/main/entities/trajectory-balance-asynchrony-tba-bengio-papweekly.md)
 
 ---
 
-## Ch16.009 Bonsai Image 4B: 1-bit 和 Ternary 量化
+## Ch16.011 Bonsai Image 4B: 1-bit 和 Ternary 量化
 
 > 📊 Level ⭐⭐⭐ | 5.1KB | `entities/bonsai-image-4b-quantization.md`
 
@@ -594,7 +720,7 @@ vLLM V0 到 V1 是实质性重写，而非增量迭代。ServiceNow AI 的这篇
 
 ---
 
-→ [原文存档](https://prismml.com/news/bonsai-image-4b)
+→ 原文存档
 
 ## 深度分析
 
@@ -646,13 +772,13 @@ Bonsai 同时支持 Apple Silicon（MLX）和 CUDA（Gemlite），对于需要�
 
 ---
 
-## Ch16.010 Apple Siri 私有推理（Private Inference）不私有：三个对抗者都不受加密学保护
+## Ch16.012 Apple Siri 私有推理（Private Inference）不私有：三个对抗者都不受加密学保护
 
 > 📊 Level ⭐⭐⭐⭐ | 16.5KB | `entities/apple-siri-private-inference-lethal-trifecta-matthew-green.md`
 
 # Apple Siri 私有推理（Private Inference）不私有：三个对抗者都不受加密学保护
 
-> **Source**：[原文存档（Matthew Green / Cryptography Engineering, 2026-06-09）](https://blog.cryptographyengineering.com/2026/06/09/apples-siri-ai-or-more-shouting-into-the-void-about-private-agents/)
+> **Source**：原文存档（Matthew Green / Cryptography Engineering, 2026-06-09）
 
 ## 核心论点
 
@@ -750,7 +876,7 @@ Willison 的 **lethal trifecta** 框架（被 Green 引用）是同一问题的�
 
 - [End To End Encrypted Ml Inference Sagemaker Fhe](https://github.com/QianJinGuo/wiki-public/blob/main/entities/end-to-end-encrypted-ml-inference-sagemaker-fhe.md)：互补（不同加密学原语，同一目标）
 - [Vibe Coding Agentic Engineering Convergence Simon Willison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vibe-coding-agentic-engineering-convergence-simon-willison.md)：lethal trifecta 概念同源
-- [Apple Silicon Costs More Than Openrouter](ch01/105-apple-silicon-costs-more-than-openrouter.html)：Apple 硬件成本视角
+- [Apple Silicon Costs More Than Openrouter](ch01/680-apple-silicon-costs-more-than-openrouter.html)：Apple 硬件成本视角
 - [Apple Corecrypto Formal Verification Blueprint](https://github.com/QianJinGuo/wiki-public/blob/main/entities/apple-corecrypto-formal-verification-blueprint.md)：Apple 加密学基础设施
 
 ## 深度分析
@@ -806,7 +932,7 @@ Green 的结论是：隐私保护（如果存在）活在法律、政策和商�
 
 ---
 
-## Ch16.011 EAGLE-3 投机解码与 USP 长序列训练优化
+## Ch16.013 EAGLE-3 投机解码与 USP 长序列训练优化
 
 > 📊 Level ⭐⭐⭐⭐ | 14.2KB | `entities/eagle-3-speculative-decoding-optimization.md`
 
@@ -969,7 +1095,7 @@ USP 的"主干 ring + 分支本卡 + 流式融合"设计不只适用于 EAGLE-3�
 滴滴指出"Online 特征生成与线上服务争抢资源"是当前痛点之一。建议在架构设计阶段就将特征生成管线与在线服务在不同资源池中部署，避免资源竞争导致的延迟尖峰。
 
 ## 参见
-- [原文存档](https://mp.weixin.qq.com/s/PZMX-55W_gqJKtHIYXJVyA)
+- 原文存档
 - [SpecForge GitHub PR #425](https://github.com/sgl-project/SpecForge/pull/425)
 - [SpecForge GitHub PR #454](https://github.com/sgl-project/SpecForge/pull/454)
 
@@ -982,7 +1108,7 @@ USP 的"主干 ring + 分支本卡 + 流式融合"设计不只适用于 EAGLE-3�
 
 ---
 
-## Ch16.012 PithTrain：陈天奇 + CMU Flame Center 推出的 agent-native MoE 训练框架（11K Python / 双重效率）
+## Ch16.014 PithTrain：陈天奇 + CMU Flame Center 推出的 agent-native MoE 训练框架（11K Python / 双重效率）
 
 > 📊 Level ⭐⭐⭐⭐ | 12.1KB | `entities/pith-train-agent-native-moe-training-framework.md`
 
@@ -1119,11 +1245,11 @@ bash examples/build_tokenized_corpus/launch.sh dclm-qwen3
 bash examples/pretrain_language_model/launch.sh qwen3-30b-a3b
 ```
 
-→ [原文存档](https://mp.weixin.qq.com/s/_8UB-jTnhxZWQdXzOjc9uA)
+→ 原文存档
 
 ---
 
-## Ch16.013 具身智能 Sim-to-Real 迁移：主动推理、行为树与内在动机引擎的工程化方案
+## Ch16.015 具身智能 Sim-to-Real 迁移：主动推理、行为树与内在动机引擎的工程化方案
 
 > 📊 Level ⭐⭐⭐⭐ | 9.2KB | `entities/embodied-intelligence-sim-to-real-active-inference-behavior-tree-intrinsic-motivation-chenzhiyan-2026-06-17.md`
 
@@ -1211,7 +1337,7 @@ bash examples/pretrain_language_model/launch.sh qwen3-30b-a3b
 
 ## 相关页面
 
-- [原文存档](https://mp.weixin.qq.com/s/bB9ncEOvj3pTKtWpyGHkpQ)
+- 原文存档
 
 ---
 ## 关联
@@ -1219,11 +1345,11 @@ bash examples/pretrain_language_model/launch.sh qwen3-30b-a3b
 
 ---
 
-## Ch16.014 ServiceNow vLLM V0→V1 正确性修复
+## Ch16.016 ServiceNow vLLM V0→V1 正确性修复
 
 > 📊 Level ⭐⭐⭐⭐ | 8.3KB | `entities/servicenow-vllm-correctness-huggingface.md`
 
-> -> [原文存档](https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections)
+> -> 原文存档
 
 ## 核心问题：训练-推理 logprob 不匹配
 
@@ -1307,7 +1433,7 @@ ServiceNow 总结的核心工程原则——"先修后端，再谈目标"——�
 
 ---
 
-## Ch16.015 Build real-time voice applications with Amazon SageMaker AI and vLLM
+## Ch16.017 Build real-time voice applications with Amazon SageMaker AI and vLLM
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 21.2KB | `entities/build-real-time-voice-applications-with-amazon-sagemaker-ai.md`
 
@@ -1593,20 +1719,20 @@ SageMaker AI 端点按实例运行时长计费 ：
 
 ## 扩展阅读
 
-→ [原文存档](https://aws.amazon.com/blogs/machine-learning/build-real-time-voice-applications-with-amazon-sagemaker-ai-and-vllm/)
+→ 原文存档
 → [Voice Agent 设计 - Nova Sonic 多 Agent 工具与会话](https://github.com/QianJinGuo/wiki-public/blob/main/entities/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session.md)
 → [Nova Sonic WebRTC 实时语音流](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-real-time-voice-streaming-with-amazon-nova-sonic-and-webrtc.md)
 → [OpenAI Realtime Voice 架构](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/openai-realtime-voice-architecture.md)
 
 ---
 
-## Ch16.016 The next generation of speculative decoding: DFlash and Spec V2 - LMSYS Blog
+## Ch16.018 The next generation of speculative decoding: DFlash and Spec V2 - LMSYS Blog
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 11.1KB | `entities/lmsys-dflash-speculative-decoding-2026-06.md`
 
 # The next generation of speculative decoding: DFlash and Spec V2 - LMSYS Blog
 
-> Source: [原文存档](https://www.lmsys.org/blog/2026-06-15-next-generation-speculative-decoding-dflash-v2/)
+> Source: 原文存档
 
 ## 摘要
 
@@ -1762,6 +1888,6 @@ draft 模型权重三处 release：`z-lab/Qwen3.5-397B-A17B-DFlash`、`modal-lab
 - [DDoSing Software Delivery Pipelines](https://github.com/QianJinGuo/wiki-public/blob/main/entities/varoa-ddosing-software-delivery-pipelines-2026.md)
 - [AI GPUs probably live longer than three years](https://github.com/QianJinGuo/wiki-public/blob/main/entities/seangoedecke-ai-gpus-live-longer-than-three-years-2026.md)
 
-→ [原文存档](https://www.lmsys.org/blog/2026-06-15-next-generation-speculative-decoding-dflash-v2/)
+→ 原文存档
 
 ---

@@ -1,18 +1,25 @@
 ---
-type: source-card
 title: "Residual Context Diffusion Language Models"
-source: "newsletter"
-author: "未标注作者；来源机构见 source"
-source_url: "https://machinelearning.apple.com/research/residual-context-diffusion"
-published: "未标注"
-collected: "2026-07-03"
-license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
+source: newsletter
+source_url: https://machinelearning.apple.com/research/residual-context-diffusion
+ingested: 2026-07-03
+sha256: 2330d353ac3da898c8c370c62039ffebdb86426fd58226c431ba1a4f6655cd65
 ---
 
-# Residual Context Diffusion Language Models
+Authors Yuezhou Hu†*, Harman Singh†*, Monishwaran Maheswaran†*, Haocheng Xi†, Coleman Hooper†, Jintao Zhang†, Aditya Tomar†, Michael W. Mahoney†, Sewon Min†, Mehrdad Farajtabar, Kurt Keutzer†, Amir Gholami†‡, Chenfeng Xu†‡
 
-## 原创摘要
+Diffusion Large Language Models (dLLMs) have emerged as a promising alternative to purely autoregressive language models because they can decode multiple tokens in parallel. However, state-of-the-art block-wise dLLMs rely on a “remasking” mechanism that decodes only the most confident tokens and discards the rest, effectively wasting computation. We demonstrate that recycling computation from the discarded tokens is beneficial, as these tokens retain contextual information useful for subsequent decoding iterations. In light of this, we propose Residual Context Diffusion (RCD), a module that converts these discarded token representations into contextual residuals and injects them back for the next denoising step. RCD uses a decoupled two-stage training pipeline to bypass the memory bottlenecks associated with backpropagation. We validate our method on both long CoT reasoning (SDAR) and short CoT instruction following (LLaDA) models. We demonstrate that a standard dLLM can be efficiently converted to the RCD paradigm with merely ∼1 billion tokens. RCD consistently improves frontier dLLMs by 5–10 points in accuracy with minimal extra computation overhead across a wide range of benchmarks. Notably, on the most challenging AIME tasks, RCD nearly doubles baseline accuracy and attains up to 4–5x fewer denoising steps at equivalent accuracy levels.
 
-这份来源卡片记录一篇围绕“Residual Context Diffusion Language Models”的第三方资料，主题标签为相关 AI 工程主题。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
+*   † University of California, Berkeley
+*   * Equal contribution
+*   ‡ Equal advising
 
-> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。
+## Related readings and updates.
+
+Diffusion (Large) Language Models (dLLMs) now match the downstream performance of their autoregressive counterparts on many tasks, while holding the promise of being more efficient during inference. One critical design aspect of dLLMs is the sampling procedure that selects which tokens to unmask at each diffusion step. Indeed, recent work has found that heuristic strategies such as confidence thresholding improve both sample quality and token…
+
+[Read more](https://machinelearning.apple.com/research/unmasking)
+
+Diffusion large language models (dLLMs) are compelling alternatives to autoregressive (AR) models because their denoising models operate over the entire sequence. The global planning and iterative refinement features of dLLMs are particularly useful for code generation. However, current training and inference mechanisms for dLLMs in coding are still under-explored. To demystify the decoding behavior of dLLMs and unlock their potential for coding,…
+
+[Read more](https://machinelearning.apple.com/research/diffucoder)

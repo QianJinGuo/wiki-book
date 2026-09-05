@@ -1,10 +1,12 @@
 # Disgruntled researcher releases two more Microsoft zero-days
 
+## Ch12.027 Disgruntled researcher releases two more Microsoft zero-days
+
 > 📊 Level ⭐⭐⭐ | 11.2KB | `entities/disgruntled-researcher-releases-two-more-microsoft-zero-days-5239758.md`
 
 # Disgruntled researcher releases two more Microsoft zero-days
 
-> -> [13-disgruntled-researcher-releases-two-more-microsoft-zero-days-5239758.md](https://www.theregister.com/security/2026/05/13/disgruntled-researcher-releases-two-more-microsoft-zero-days/5239758)
+> -> 13-disgruntled-researcher-releases-two-more-microsoft-zero-days-5239758.md
 
 ## 摘要
 

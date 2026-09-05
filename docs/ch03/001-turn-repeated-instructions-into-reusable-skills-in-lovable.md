@@ -1,5 +1,7 @@
 # Turn repeated instructions into reusable skills in Lovable | Lovable
 
+## Ch03.001 Turn repeated instructions into reusable skills in Lovable | Lovable
+
 > 📊 Level ⭐ | 8.0KB | `entities/turn-repeated-instructions-into-reusable-skills-in-lovable-l.md`
 
 ## 核心要点
@@ -62,7 +64,7 @@ Skill 文件结构支持主文件和支撑文件的分离：主 SKILL.md 保持�
 - [Claude Code Skills 超能力实战](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-skills-superpowers-practice.md)
 - [Anthropic Agent Skills 设计模式14条](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-agent-skills-design-patterns-14.md)
 - [Matt Pocock Skills Grill](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mattpocock-skills-grill-me-grill-with-docs-caveman.md)
-→ [原文存档](https://lovable.dev/blog/introducing-skills)
+→ 原文存档
 
 ---
 

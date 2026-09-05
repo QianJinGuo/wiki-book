@@ -1,10 +1,12 @@
 # ICO 对 South Staffordshire 处以 96.3 万英镑罚款：2022 年 Cl0p 勒索软件攻击暴露的安全失败
 
+## Ch12.036 ICO 对 South Staffordshire 处以 96.3 万英镑罚款：2022 年 Cl0p 勒索软件攻击暴露的安全失败
+
 > 📊 Level ⭐⭐⭐ | 8.6KB | `entities/5237875.md`
 
 # ICO 对 South Staffordshire 处以 96.3 万英镑罚款：2022 年 Cl0p 勒索软件攻击暴露的安全失败
 
-→ [原文存档](https://www.theregister.com/cyber-crime/2026/05/11/ico-fines-south-staffordshire-963k-over-2022-breach/5237875)
+→ 原文存档
 
 ## 摘要
 
@@ -64,10 +66,10 @@ South Staffordshire Plc 集团 CEO Charley Maher 表示接受 ICO 决定，并�
 
 ## 关联实体
 
-- [Canvas LMS 攻击事件](https://hackread.com/canvas-hackers-shinyhunters-official-domain-suspended/) — 同一时期教育领域 SaaS 被攻击，体现关键供应链攻击常态化
+- Canvas LMS 攻击事件 — 同一时期教育领域 SaaS 被攻击，体现关键供应链攻击常态化
 - [Agent 安全架构](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-security-architecture.md) — 零信任与持续验证原则在 AI Agent 时代的延伸
 - Agent 可观测性 — 检测时间（MTTD）的工程化方法
-- [视觉 AI 的下一前沿是代码](https://a16z.com/the-next-frontier-of-visual-ai-is-code/) — a16z 关于视觉生成栈的论述
+- 视觉 AI 的下一前沿是代码 — a16z 关于视觉生成栈的论述
 
 ## 相关实体
 

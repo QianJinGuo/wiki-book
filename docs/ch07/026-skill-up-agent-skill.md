@@ -1,5 +1,7 @@
 # skill-up: 阿里开源 Agent Skill 评测框架
 
+## Ch07.026 skill-up: 阿里开源 Agent Skill 评测框架
+
 > 📊 Level ⭐⭐⭐ | 8.0KB | `entities/alibaba-skill-up-agent-skill-evaluation.md`
 
 # skill-up：阿里开源 Agent Skill 评测框架
@@ -173,7 +175,7 @@ skill-up run eval.yaml --retry-failed
 - [SWE-bench Agent 评估方法论](https://github.com/QianJinGuo/wiki-public/blob/main/entities/swe-bench-agent-evaluation.md) — 软件工程 Agent 评测基准方法论
 - [SkillScan：智能体技能安全扫描](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skillscan-agent-skill-security-scanning-best-practices.md) — 技能安全扫描与 skill-up 的质量验证相辅相成
 
-→ [原文存档](https://mp.weixin.qq.com/s/Sel2LR3YJhVuVNqzNDgR9A)
+→ 原文存档
 
 ---
 

@@ -1,18 +1,11 @@
 ---
-type: source-card
-title: "Claude Code 动态工作流 8 译本（行小招译注 + Hermes DAG 对比）"
-source: "mp.weixin.qq.com"
-author: "未标注作者；来源机构见 source"
-source_url: "https://mp.weixin.qq.com/s/1dXweRUM2Sx6KfRrrp6hJg"
-published: "未标注"
-collected: "2026-06-04"
-license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
+source_url: https://mp.weixin.qq.com/s/1dXweRUM2Sx6KfRrrp6hJg
+ingested: 2026-06-04
+sha256: 8029700ac6c058f3cd44ae7fb79b3848513c3299389ec052e5cdfcb6c03abfa8
+type: raw-article
+tags: [article, claude-code, dynamic-workflows, thariq-translation, 8th-source, hermes-dag-parallel, xingxiaozhao, opus-4-vs-gpt-5-5, prompt-claude-to-create-workflow, ultracode-trigger, /goal-/loop-combo, token-budget, save-share-workflow]
 ---
 
 # Claude Code 动态工作流 8 译本（行小招译注 + Hermes DAG 对比）
 
-## 原创摘要
-
-这份来源卡片记录一篇围绕“Claude Code 动态工作流 8 译本（行小招译注 + Hermes DAG 对比）”的第三方资料，主题标签为article、claude-code、dynamic-workflows。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
-
-> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。
+[正文见 entity 页面：[[entities/claude-code-dynamic-workflows-multi-agent-orchestration]]]

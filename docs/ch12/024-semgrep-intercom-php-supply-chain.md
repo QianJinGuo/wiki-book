@@ -1,11 +1,13 @@
 # Semgrep Intercom Php Supply Chain
 
+## Ch12.024 Semgrep Intercom Php Supply Chain
+
 > 📊 Level ⭐⭐ | 3.8KB | `entities/semgrep-intercom-php-supply-chain.md`
 
 # Malicious Intercom PHP Package Mini-Shai-Hulud
 Semgrep security research: malicious Intercom PHP package spreading Mini-Shai-Hulud attack via Packagist/Composer. Attack chain, IOCs, code-level analysis.
 
-**Source**: [raw article](https://semgrep.dev/blog/2026/malicious-intercom-php-package-spreads-mini-shai-hulud-attack-to-packagist-via-composer-plugin/) | **Review**: value=7 confidence=8
+**Source**: raw article | **Review**: value=7 confidence=8
 
 ## 深度分析
 **PHP 供应链攻击的精细化演进**：
@@ -27,11 +29,11 @@ PHP 生态的供应链攻击揭示了一个深层问题：Composer 的插件机�
 ## 相关实体
 - [semgrep intercom php security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/semgrep-intercom-php-security.md)
 - [rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack.md)
-- [Semis Memo: Supply Chain Inheritance](../ch01/191-semis-memo-supply-chain-inheritance.html)
+- [Semis Memo: Supply Chain Inheritance](../ch01/198-semis-memo-supply-chain-inheritance.html)
 - [Postmortem: TanStack npm supply-chain compromise | TanStack Blog](https://github.com/QianJinGuo/wiki-public/blob/main/entities/postmortem-tanstack-npm-supply-chain-compromise-tanstack-blog.md)
 - [Amazon launches Supply Chain Services for businesses of all sizes](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-supply-chain-services.md)
 
-→ [原文存档](https://semgrep.dev/blog/2026/malicious-intercom-php-package-spreads-mini-shai-hulud-attack-to-packagist-via-composer-plugin/)
+→ 原文存档
 
 - [Semis Memo: Supply Chain Inheritance](https://github.com/QianJinGuo/wiki-public/blob/main/entities/citriniresearch-supply-chain-inheritance.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-landscape.md)

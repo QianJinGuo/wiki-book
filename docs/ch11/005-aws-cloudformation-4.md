@@ -1,10 +1,12 @@
 # 使用 AWS CloudFormation 快速模式将基础设施部署速度提升多达 4 倍
 
+## Ch11.005 使用 AWS CloudFormation 快速模式将基础设施部署速度提升多达 4 倍
+
 > 📊 Level ⭐ | 8.3KB | `entities/使用-aws-cloudformation-快速模式将基础设施部署速度提升多达-4-倍.md`
 
 # 使用 AWS CloudFormation 快速模式将基础设施部署速度提升多达 4 倍
 
-→ [原文存档](https://aws.amazon.com/cn/blogs/china/accelerate-your-infrastructure-deployments-by-up-to-4x-with-aws-cloudformation-express-mode)
+→ 原文存档
 
 # 使用 AWS CloudFormation 快速模式将基础设施部署速度提升多达 4 倍
 

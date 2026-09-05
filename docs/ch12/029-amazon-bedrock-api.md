@@ -1,8 +1,10 @@
 # 别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南
 
+## Ch12.029 别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南
+
 > 📊 Level ⭐⭐⭐ | 10.7KB | `entities/amazon-bedrock-api-security-guide.md`
 
-> → [原文存档](https://aws.amazon.com/cn/blogs/china/amazon-bedrock-model-api-invocation-security-guide/)
+> → 原文存档
 
 ## 摘要
 Amazon Bedrock 模型调用安全防护指南，涵盖凭证管理、访问控制、持续监控三个层面。
@@ -73,7 +75,7 @@ CloudWatch 指标和 CloudTrail 日志构成了监控的两条腿。CloudWatch �
 - **误区 3**：使用 `bedrock:*` 的过度授权。这使得攻击者即使只获取部分权限也能调用所有模型。
 
 ## 相关
-- [原文存档](https://aws.amazon.com/cn/blogs/china/amazon-bedrock-model-api-invocation-security-guide/)
+- 原文存档
 
 ## 相关实体
 - [企业级OpenClaw安全部署架构指南 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/enterprise-openclaw-security-deploy-architecture-guide.md)
@@ -87,7 +89,7 @@ CloudWatch 指标和 CloudTrail 日志构成了监控的两条腿。CloudWatch �
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](https://github.com/QianJinGuo/wiki-public/blob/main/entities/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazo.md)
 - [Build financial document processing with Pulse AI and Amazon Bedrock](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-financial-document-processing-with-pulse-ai-and-amazon-bedrock.md)
 - [Build real-time voice streaming applications with Amazon Nova Sonic and WebRTC](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-real-time-voice-streaming-with-amazon-nova-sonic-and-webrtc.md)
-- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/478-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
+- [Improve bot accuracy with Amazon Lex Assisted NLU](../ch01/509-improve-bot-accuracy-with-amazon-lex-assisted-nlu.html)
 - [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki-public/blob/main/entities/航班变更信息智能识别解决方案.md)
 - [Autonomous Vulnerability Hunting with MCP](https://github.com/QianJinGuo/wiki-public/blob/main/entities/bullyingllms.md)
 - [Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagemaker.md)
@@ -99,7 +101,7 @@ CloudWatch 指标和 CloudTrail 日志构成了监控的两条腿。CloudWatch �
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](https://github.com/QianJinGuo/wiki-public/blob/main/entities/zenjoy-aiops-agent-bedrock-eks-prometheus.md)
 - [LLM raiders and how to repel them](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-raiders-private-ai-server.md)
 - [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-一周综述amazon-bedrock-agentcore-付款适用于-aws-的-agent-工具套件等2026-年-5-月-11-日.md)
-- [CloudSectiDbits](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloudsectidbits.md)
+- [CloudSectiDbits](../ch11/104-cloudsectidbits.html)
 - [Schemata Dod Contractor Api Flaw Military Data Exposure](https://github.com/QianJinGuo/wiki-public/blob/main/entities/schemata-dod-contractor-api-flaw-military-data-exposure.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-privacy-landscape.md)
 
