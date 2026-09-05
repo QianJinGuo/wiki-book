@@ -9,7 +9,7 @@
 - 支持 SSR，无 Shadow DOM 障碍，天然可访问
 - 设计目标：跨框架组件库与设计系统
 ## 相关实体
-- [Impeccable](../ch05/095-impeccable.html)
+- [Impeccable](../ch05/094-impeccable.html)
 - [Impeccable Vibe Design Philosophy Anomaly](https://github.com/QianJinGuo/wiki-public/blob/main/entities/impeccable-vibe-design-philosophy-anomaly.md)
 
 → [原文存档](https://elenajs.com/)

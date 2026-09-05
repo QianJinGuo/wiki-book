@@ -115,7 +115,7 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 **Agent Loop / Context / Tool 系列**(本文 7 职责的前 3 块与这些 entity 强相关):
 
 - vs **[阿里云 Agent 演化四阶段六维度](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-evolution-four-stages-six-dimensions-aliyun.md)** — 阿里云是**演化阶段视角**;本文是**职责解剖视角**。两者都讲 Runtime 但切入维度不同
-- vs **[Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-framework.md)** — Harness 是 Runtime 的**外壳**;Runtime 是 Harness 的**内脏**。Runtime 7 职责 = Harness 的实现细节
+- vs **[Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)** — Harness 是 Runtime 的**外壳**;Runtime 是 Harness 的**内脏**。Runtime 7 职责 = Harness 的实现细节
 - vs **[Agent Harness 架构设计与生产实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture-design-production-guide.md)** — Production 视角更全;本文是入门视角
 
 **框架生态**(本文 3 主流框架):
@@ -157,7 +157,7 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 
 ### 5. Runtime 是模型可替换性的工程底座,与"Token 资本"哲学异曲同工
 
-本文核心洞察 — **Runtime 把 LLM 差异封装在执行层，让业务不被任一模型锁定** — 与 [纳德拉「Token 资本」论](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nadella-token-capital-microsoft-ai-economy-2026.md) 的"模型可替换性是主权测试"哲学在工程层面高度吻合。[Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-framework.md) 将 Runtime 定位为 Harness 的内脏，而 Runtime 的模型隔离能力正是 Harness 层实现"模型无关性"的底层机制。
+本文核心洞察 — **Runtime 把 LLM 差异封装在执行层，让业务不被任一模型锁定** — 与 [纳德拉「Token 资本」论](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nadella-token-capital-microsoft-ai-economy-2026.md) 的"模型可替换性是主权测试"哲学在工程层面高度吻合。[Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 将 Runtime 定位为 Harness 的内脏，而 Runtime 的模型隔离能力正是 Harness 层实现"模型无关性"的底层机制。
 
 ## 实践启示(5 条 actionable)
 
@@ -197,7 +197,7 @@ Runtime 是**模型可替换性的工程保障** — 这与 [纳德拉「Token �
 - [若飞 Fable 5 Runtime Contract](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-fable-5-agent-runtime-contract-ruofei-2026.md)
 - [阿里云安全护栏三域](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aliyun-cloud-native-safety-guardrails-three-domains.md)
 - [阿里云 Agent 演化四阶段](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-evolution-four-stages-six-dimensions-aliyun.md)
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-framework.md)
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 - [Agent Harness 架构设计与生产实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture-design-production-guide.md)
 - [Google Agent Executor Runtime](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentexecutorgooglesdistributedagentruntime.md)
 - [Anthropic Claude Managed Agents](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-claude-managed-agents-platform-launch.md)

@@ -24,7 +24,7 @@ The leaked memory contains u...
 - [原文](https://www.cyera.com/research/bleeding-llama-critical-unauthenticated-memory-leak-in-ollama)
 
 ## 相关实体
-> [AI 安全与对齐](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-agent-security-threat-vectors-mitigation.md) | > [Agent 记忆架构](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-memory-architecture.md)
+> [AI 安全与对齐](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-agent-security-threat-vectors-mitigation.md) | > [Agent 记忆架构](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-memory-architecture-decision-points.md)
 
 ## 深度分析
 ### 漏洞根因分析

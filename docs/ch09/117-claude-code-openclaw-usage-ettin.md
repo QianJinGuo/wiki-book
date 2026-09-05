@@ -1,6 +1,6 @@
 # Claude Code Openclaw Usage Ettin
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 15.0KB | `entities/claude-code-openclaw-usage-ettin.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 15.1KB | `entities/claude-code-openclaw-usage-ettin.md`
 
 ## 概述
 
@@ -230,7 +230,7 @@ Claude Code 是延迟敏感型场景——每次对话都需要检索，32M 的 
 - `Ettin Reranker Family` — 模型详情
 - `Claude Code vs OpenClaw 记忆系统对比` — 两者检索机制原状
 - `向量数据库必要性反思` — LLM 路由 vs 向量检索哲学讨论
-- `Agent Memory 架构本质` — 记忆系统设计模式
+- [Agent Memory 架构本质](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture.md) — 记忆系统设计模式
 - [OpenClaw 架构解析](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/openclaw-architecture.md) — OpenClaw 整体架构
 
 ---

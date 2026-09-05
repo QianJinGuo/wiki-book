@@ -2126,7 +2126,7 @@ CE = PE 的超集。**未来讨论 LLM 工程时，"CE" 可能会取代"PE"成�
 
 ## Ch06.019 Claude Code vs OpenClaw 记忆：向量数据库是否必要
 
-> 📊 Level ⭐⭐⭐⭐ | 20.2KB | `entities/claude-code-openclaw-memory-vector-db-doubt.md`
+> 📊 Level ⭐⭐⭐⭐ | 20.3KB | `entities/claude-code-openclaw-memory-vector-db-doubt.md`
 
 ## 概述
 
@@ -2346,7 +2346,7 @@ Claude Code 的六层记忆架构与软件工程中的权限模型高度对齐�
 
 ## 相关实体
 
-- `Agent Memory 架构本质`
+- [Agent Memory 架构本质](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture.md)
 - `AI Agent 记忆系统`
 - `AgentMemory 本地记忆`
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/memory-context-systems.md)
@@ -5486,7 +5486,7 @@ Agent harness 正在朝同一个方向移动。目标不是向模型展示一切
 - Letta — 向量索引优先，颠覆性的 memory-first 架构
 - Arize Alyx — 独立收敛到相同设计的内部工具
 - Agent Runtime — 上下文管理是 Agent 运行时系统的核心子系统
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-memory-architecture.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-memory-architecture-decision-points.md)
 
 ---
 ## 关联

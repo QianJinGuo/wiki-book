@@ -189,7 +189,7 @@
 **Runtime / Agent 架构** 主题簇:
 
 - vs **[dangling 已删除]** — 那个 entity 把 Harness 推为新后端;**本文**把 **Runtime 协议** 推为新运行时,Runtime ⊃ Harness
-- vs **[Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-framework.md)** — Runtime Contract 是 **Harness 的契约形式**;后者是工程化框架
+- vs **[Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)** — Runtime Contract 是 **Harness 的契约形式**;后者是工程化框架
 - vs **[纳德拉「Token 资本」论](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nadella-token-capital-microsoft-ai-economy-2026.md)** — 纳德拉说"私有评估 / 私有 RL / 知识库" = 企业学习闭环;**本文**说"任务 Brief / 状态账本 / 证据目录 / 工具路由 / 权限清单 / 成本阈值 / fallback 预案" = Agent Runtime 闭环。两者**哲学同源**(从"模型强不强"走向"系统稳不稳"),**应用层不同**(企业战略 vs 工程协议)
 
 ## 深度分析
@@ -245,7 +245,7 @@ Anthropic 因美国政府出口管制指令暂停 Fable 5 访问,这件事在表
 - [Claude Code agent teams task decomposition](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-agent-teams-task-decomposition-ruofei.md)
 - [Harness Engineering Deletable Worksite](../ch05/043-harness-engineering-deletable-worksite-ruofei.html)
 - [Agent 架构关键变化:Harness 正在成为新后端](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent架构关键变化harness正在成为新后端.md)
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-framework.md)
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 - [纳德拉「Token 资本」论](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nadella-token-capital-microsoft-ai-economy-2026.md)
 
 ---

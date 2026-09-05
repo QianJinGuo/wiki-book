@@ -107,7 +107,7 @@ Harness 和 Environment 不是替代关系：
 
 ## 与现有知识的关联
 
-- [Harness Engineering 框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-framework.md)——Environment 是 Harness 的外层延伸
+- [Harness Engineering 框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)——Environment 是 Harness 的外层延伸
 - [Harness 之后：可删的工作现场](../ch05/043-harness-engineering-deletable-worksite-ruofei.html)——"可删的工作现场"概念与 Environment 的可恢复性呼应
 - [Loop Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/loop-engineering-addy-osmani-challengehub.md)——Loop 关心任务怎么持续发生，Environment 关心循环所依赖的事实源是否可靠
 - [Loop Engineering 反馈控制系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/loop-engineering-feedback-control-system.md)——反馈控制的前提是环境能给出可信反馈

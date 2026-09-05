@@ -14,7 +14,7 @@
 - [Fudan Agentic Harness Engineering Ahe Gpt54 7Points](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fudan-agentic-harness-engineering-ahe-gpt54-7points.md)
 - [Harness Engineering Long Term Agent Tasks](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-long-term-agent-tasks.md)
 - [Harness Engineering Systematic Explainer](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-systematic-explainer.md)
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-framework.md)
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 → [原文存档](https://mp.weixin.qq.com/s/EdVjZuBVcXjd30TpxyLsXQ)
 

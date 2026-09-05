@@ -89,7 +89,7 @@
 > **互补关系**：SkillOpt 让 Skill 变好；Meta Skill 让 Skill 变多；两者一起 = Skill 2.0 闭环。
 
 ## 与 Impeccable 的对比
-| 维度 | [Impeccable](../ch05/095-impeccable.html) | Meta Skill |
+| 维度 | [Impeccable](../ch05/094-impeccable.html) | Meta Skill |
 |---|---|---|
 | **范围** | 单个 Skill（前端设计） | 多个 Skill 的编排 |
 | **抽象层** | skill 内命令 (23 commands) | skill 间编排 (SKILL.md) |
@@ -105,7 +105,7 @@
 ## 相关对照
 - [OpenSquilla](https://github.com/QianJinGuo/wiki-public/blob/main/entities/opensquilla.md) —— Meta Skill 的实现载体
 - [SkillOpt](../ch05/058-skillopt.html) —— 互补（Skill 变好 vs Skill 变多）
-- [Impeccable](../ch05/095-impeccable.html) —— skill 内命令的范例
+- [Impeccable](../ch05/094-impeccable.html) —— skill 内命令的范例
 - [Agent Skill 编写指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing.md)
 - [10 篇论文看懂 AI Agent Skill](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-formal-theory-survey-10papers.md)
 - [Agent Skills 系统性综述](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skills-comprehensive-survey.md)

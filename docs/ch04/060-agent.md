@@ -49,7 +49,7 @@
 
 ## 相关阅读
 
-- [Harness Engineering 框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-framework.md) — Agent 运行底座的系统性方法论
+- [Harness Engineering 框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — Agent 运行底座的系统性方法论
 - [上下文工作集管理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-context-management-working-set.md) — 上下文作为运行时工作集的具体实践
 - [Harness 正在成为新后端](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-architecture-harness-new-backend.md) — 从后端视角看 Agent 作为新调用方
 - [Model Context Protocol](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/model-context-protocol-mcp.md) — 文章中提到的工具协议方向

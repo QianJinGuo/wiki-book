@@ -1288,7 +1288,7 @@ Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反�
 | **动效过度** | 渐变慢、缓动曲线怪、吃掉注意力 | motion-token + 限制时长 |
 | **一致性** | 组件风格跳跃、间距不统一、icon 混用 | design token + token drift 检测 |
 
-这 6 类与 [Impeccable](ch05/095-impeccable.html) 的 41 条检测规则高度重合 —— **资深设计师的"经验分类"与工程化项目的"规则集"是同一件事的两面**。
+这 6 类与 [Impeccable](ch05/094-impeccable.html) 的 41 条检测规则高度重合 —— **资深设计师的"经验分类"与工程化项目的"规则集"是同一件事的两面**。
 
 ### 解决路径：Rule + Skill，不是 Rule-only
 - 单纯把 rules 写到 CLAUDE.md **不够** —— rules 是声明式约束，AI 容易"选择性遵守"或长上下文里漂移
@@ -1318,7 +1318,7 @@ Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反�
 4. **前端 AI 工具会进一步分化** —— 纯 vibe coding 工具（原型）vs 设计 skill 工具（品控），赛道不同
 
 ## 相关对照
-- [Impeccable](ch05/095-impeccable.html) —— 文章末尾直接推荐此项目，本文是"为什么需要 Impeccable"的哲学背书
+- [Impeccable](ch05/094-impeccable.html) —— 文章末尾直接推荐此项目，本文是"为什么需要 Impeccable"的哲学背书
 - [Karpathy Vibe Coding](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-to-agentic-engineering.md) —— Karpathy 原始概念出处
 - [Willison Vibe Coding Convergence](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vibe-coding-agentic-engineering-convergence-simon-willison.md) —— Willison 的同主题回应
 - [Agent Skill 编写指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing-guide.md) —— 通用 skill 格式
@@ -1341,7 +1341,7 @@ Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反�
 
 1. **在前端AI项目中明确区分"原型阶段"和"品控阶段"**：用vibe coding处理快速原型和业务逻辑验证（此处AI的"对错分明"特性有效），但在设计品质控制环节切换到skill-based工作流。两个阶段采用不同的工具和方法论，而非试图用单一流程覆盖
 
-2. **将6大AI前端失败类别内化为团队anti-pattern checklist**：无论是自研AI前端工具还是集成第三方方案，都要针对色彩理论、可访问性、排版细节、视觉层次、动效规范、一致性这六个维度建立检测规则。可参考 [Impeccable](ch05/095-impeccable.html) 的41条检测规则的实现方式，即使不直接使用该工具，也能从中学习结构化检测思路
+2. **将6大AI前端失败类别内化为团队anti-pattern checklist**：无论是自研AI前端工具还是集成第三方方案，都要针对色彩理论、可访问性、排版细节、视觉层次、动效规范、一致性这六个维度建立检测规则。可参考 [Impeccable](ch05/094-impeccable.html) 的41条检测规则的实现方式，即使不直接使用该工具，也能从中学习结构化检测思路
 
 3. **优先采用Skill架构而非Rule-only来约束AI设计输出**：在CLAUDE.md或类似配置中，不仅要写声明式规则，更要配套实现"触发命令+检测器+反馈闭环"。设计skill应该包含：主动触发的检查命令、基于规则的自动检测、与设计系统对齐的上下文信息三个部分
 

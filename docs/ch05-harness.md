@@ -2,7 +2,7 @@
 
 > 给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration
 
-> 本章收录 **95 篇**实体，按深度递增排列。
+> 本章收录 **94 篇**实体，按深度递增排列。
 
 ---
 
@@ -13,7 +13,7 @@
 | ⭐ 入门 | 零基础可读 | 13 |
 | ⭐⭐ 工程师 | 需编程基础 | 14 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 19 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 30 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 29 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 19 |
 
 ---
@@ -102,32 +102,31 @@ Harness Engineering 是 2026 年冒出来的最重要工程概念之一：它回
 - [064. 墙比模型更重要：Stripe Minions + 字节 DeerFlow 2.0 + 蚂蚁支小助 的同结论](ch05/064-stripe-minions-deerflow-2-0)
 - [065. OpenClacky — Prompt Cache 命中率 90% 的 Harness 工程实践](ch05/065-openclacky-prompt-cache-90-harness)
 - [066. Harness Engineering 核心模式](ch05/066-harness-engineering)
-- [067. Harness Engineering 概念框架](ch05/067-harness-engineering)
-- [068. 三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战](ch05/068-gstack-superpowers-openspec-ai)
-- [069. 面向复杂算法任务的 AI Agent：高德 Long-Running Harness 架构与 Uplift 模型迭代应用](ch05/069-ai-agent-long-running-harness-uplift)
-- [070. Is Grep All You Need? — 检索 × Harness × 交付方式耦合三元组（PwC 论文 arXiv 2605.15184 解读）](ch05/070-is-grep-all-you-need-harness-pwc-arxiv-2605-151)
-- [071. SSD Spec 驱动开发实战：从四条约束到 ASD Harness 的工程落地](ch05/071-ssd-spec-asd-harness)
-- [072. OpenSpec 四步法深度复盘：流程完整 ≠ 代码正确](ch05/072-openspec)
-- [073. Harness Engineering 系统梳理](ch05/073-harness-engineering)
-- [074. 12 个 Agent 工程设计底层逻辑：脚手架 vs 承重墙](ch05/074-12-agent-vs)
-- [075. Superpowers 6.0 SDD 评审重写：文件交接 + 多平台支持](ch05/075-superpowers-6-0-sdd)
-- [076. Harness Engineering 的未来——什么会消失，什么不会](ch05/076-harness-engineering)
-- [077. Loop Engineering:不再写提示词,而是设计替你写提示词的循环——先写刹车再写循环（19 来源深度合并：Addy Osmani / Boris Cherny+Peter Steinberger / 教科书 / 若飞 工程现场 / TechFarrari 批判 / 若飞 实用指南 / 爱范儿 科普批判 / AllenTang Karpathy 尺子 / winty 7架构中文主流视角 / AutoResearch 5 决策 / 三层结构 + 三款产品对比 + Ralph Loop + 准备度总表 / Shubham Saboo PM 视角 / 若飞 吴恩达三层Loop）](ch05/077-loop-engineering-19-addy-osmani-boris-cherny-pete)
-- [078. Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式](ch05/078-harness-engineering-ai)
-- [079. Loss Function Development (LFD) — 损失函数开发与 /goal 循环（Elvis Sun）](ch05/079-loss-function-development-lfd-goal-elvis-sun)
-- [080. Harness Engineering 综合论述：为什么 2026 年真正重要的是它（含 ECC 开源实现案例）](ch05/080-harness-engineering-2026-ecc)
-- [081. QQ音乐 Harness Engineering 实践（大仓多服务场景）](ch05/081-qq-harness-engineering)
-- [082. 一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](ch05/082-ai-harness-engineering)
-- [083. 阿里工程师 Harness 工程化实践 (双案例合并)](ch05/083-harness)
-- [084. Harness Engineering 综合性指南（ConardLi 系列 · 含 Beautiful Article 实证 + Reacticle 协议）](ch05/084-harness-engineering-conardli-beautiful-article-r)
-- [085. DIPG 蚂蚁保 Host-Research-Verify 三 Agent 离线 verify 闭环：C 端 AIGC 工程化范式](ch05/085-dipg-host-research-verify-agent-verify-c-aigc)
-- [086. Harness 之后：状态边界与失败闭环（若飞续篇）](ch05/086-harness)
-- [087. OpenSpec 规范驱动开发（SDD）框架 — proposal/design/tasks/specs 四类文档意图锁定](ch05/087-openspec-sdd-proposal-design-tasks-specs)
-- [088. AI Native 时代研发组织何去何从](ch05/088-ai-native)
-- [089. Claude Harness 设计：Generator-Evaluator 架构与 Context Reset 演进](ch05/089-claude-harness-generator-evaluator-context-reset)
-- [090. Harness Engineering 四根支柱与四要素架构](ch05/090-harness-engineering)
-- [091. AI 生产开发工作流：OpenSpec 规范驱动 + Superpowers 工具链](ch05/091-ai-openspec-superpowers)
+- [067. 三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战](ch05/067-gstack-superpowers-openspec-ai)
+- [068. 面向复杂算法任务的 AI Agent：高德 Long-Running Harness 架构与 Uplift 模型迭代应用](ch05/068-ai-agent-long-running-harness-uplift)
+- [069. Is Grep All You Need? — 检索 × Harness × 交付方式耦合三元组（PwC 论文 arXiv 2605.15184 解读）](ch05/069-is-grep-all-you-need-harness-pwc-arxiv-2605-151)
+- [070. SSD Spec 驱动开发实战：从四条约束到 ASD Harness 的工程落地](ch05/070-ssd-spec-asd-harness)
+- [071. OpenSpec 四步法深度复盘：流程完整 ≠ 代码正确](ch05/071-openspec)
+- [072. Harness Engineering 系统梳理](ch05/072-harness-engineering)
+- [073. 12 个 Agent 工程设计底层逻辑：脚手架 vs 承重墙](ch05/073-12-agent-vs)
+- [074. Superpowers 6.0 SDD 评审重写：文件交接 + 多平台支持](ch05/074-superpowers-6-0-sdd)
+- [075. Harness Engineering 的未来——什么会消失，什么不会](ch05/075-harness-engineering)
+- [076. Loop Engineering:不再写提示词,而是设计替你写提示词的循环——先写刹车再写循环（19 来源深度合并：Addy Osmani / Boris Cherny+Peter Steinberger / 教科书 / 若飞 工程现场 / TechFarrari 批判 / 若飞 实用指南 / 爱范儿 科普批判 / AllenTang Karpathy 尺子 / winty 7架构中文主流视角 / AutoResearch 5 决策 / 三层结构 + 三款产品对比 + Ralph Loop + 准备度总表 / Shubham Saboo PM 视角 / 若飞 吴恩达三层Loop）](ch05/076-loop-engineering-19-addy-osmani-boris-cherny-pete)
+- [077. Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式](ch05/077-harness-engineering-ai)
+- [078. Loss Function Development (LFD) — 损失函数开发与 /goal 循环（Elvis Sun）](ch05/078-loss-function-development-lfd-goal-elvis-sun)
+- [079. Harness Engineering 综合论述：为什么 2026 年真正重要的是它（含 ECC 开源实现案例）](ch05/079-harness-engineering-2026-ecc)
+- [080. QQ音乐 Harness Engineering 实践（大仓多服务场景）](ch05/080-qq-harness-engineering)
+- [081. 一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](ch05/081-ai-harness-engineering)
+- [082. 阿里工程师 Harness 工程化实践 (双案例合并)](ch05/082-harness)
+- [083. Harness Engineering 综合性指南（ConardLi 系列 · 含 Beautiful Article 实证 + Reacticle 协议）](ch05/083-harness-engineering-conardli-beautiful-article-r)
+- [084. DIPG 蚂蚁保 Host-Research-Verify 三 Agent 离线 verify 闭环：C 端 AIGC 工程化范式](ch05/084-dipg-host-research-verify-agent-verify-c-aigc)
+- [085. Harness 之后：状态边界与失败闭环（若飞续篇）](ch05/085-harness)
+- [086. OpenSpec 规范驱动开发（SDD）框架 — proposal/design/tasks/specs 四类文档意图锁定](ch05/086-openspec-sdd-proposal-design-tasks-specs)
+- [087. AI Native 时代研发组织何去何从](ch05/087-ai-native)
+- [088. Claude Harness 设计：Generator-Evaluator 架构与 Context Reset 演进](ch05/088-claude-harness-generator-evaluator-context-reset)
+- [089. Harness Engineering 四根支柱与四要素架构](ch05/089-harness-engineering)
+- [090. AI 生产开发工作流：OpenSpec 规范驱动 + Superpowers 工具链](ch05/090-ai-openspec-superpowers)
+- [091. Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch05/091-harness-ai)
 - [092. Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch05/092-harness-ai)
-- [093. Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch05/093-harness-ai)
-- [094. Coding Harness 工程本质：从 Pi 到 OpenClaw](ch05/094-coding-harness-pi-openclaw)
-- [095. Impeccable：大规模自动化测试框架](ch05/095-impeccable)
+- [093. Coding Harness 工程本质：从 Pi 到 OpenClaw](ch05/093-coding-harness-pi-openclaw)
+- [094. Impeccable：大规模自动化测试框架](ch05/094-impeccable)

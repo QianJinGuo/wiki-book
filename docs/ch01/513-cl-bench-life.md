@@ -10,7 +10,7 @@
 博客链接：https://hy.tencent.com/research/100039
 
 ## 相关实体
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-framework.md)
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 - [Microsoft Agent Framework Python Full Guide Zizhi](https://github.com/QianJinGuo/wiki-public/blob/main/entities/microsoft-agent-framework-python-full-guide-zizhi.md)
 - [Hermes Agent Deep Dive Alibaba](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-deep-dive-alibaba.md)
 - [Aws Bedrock Agentcore Quality Optimization Flywheel](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-agentcore-quality-optimization-flywheel.md)
@@ -18,7 +18,7 @@
 
 → [原文存档](https://mp.weixin.qq.com/s/ysSIbSEdC9beb4wxIu8IdA)
 
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-memory-architecture.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-memory-architecture-decision-points.md)
 ## 深度分析
 
 CL-Bench Life 不是 CL-Bench 的升级版，而是一个互补的评测维度。 CL-Bench 评估的是模型在专业、结构化 context 中的表现，而 CL-Bench Life 面对的是日常生活中的混乱、碎片化、持续变化的 context，两者的难度来源完全不同。这意味着仅有长上下文能力并不足以应对真实场景，模型需要具备在高噪声、不完整、反复修改的信息中进行鲁棒推理的能力。

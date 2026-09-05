@@ -20,7 +20,7 @@
 
   <div class="home-stats">
 
-    <div class="home-stats__item"><span class="home-stats__num">2,154</span><span class="home-stats__label">编撰条目</span></div>
+    <div class="home-stats__item"><span class="home-stats__num">2,153</span><span class="home-stats__label">编撰条目</span></div>
 
     <div class="home-stats__item"><span class="home-stats__num">20 章 · 5 篇</span><span class="home-stats__label">全书结构</span></div>
 
@@ -36,308 +36,587 @@
 
 </header>
 
-<div class="home-chapters" markdown>
+<div class="home-map" markdown>
 
-## 全书结构
+<nav class="home-parts" aria-label="全书五篇导览">
 
-| 篇 | 定位 | 读者 | 编撰条目 |
-|---|------|------|----------|
-| 第一篇 · 入门篇 | 从零理解 AI | 任何人 | 865 篇 |
-| 第二篇 · 工程师篇 | 构建 AI 应用 | 有编程基础 | 817 篇 |
-| 第三篇 · 专家篇 | 深入系统架构 | 有ML基础 | 360 篇 |
-| 第四篇 · 科学家篇 | 研究与创新 | 研究者 | 83 篇 |
-| 第五篇 · 大师篇 | 哲学、安全与未来 | 思考者 | 29 篇 |
+<a class="home-part" href="#part-1"><span class="home-part__no">第一篇</span><span class="home-part__name">入门篇</span><span class="home-part__pos">从零理解 AI</span><span class="home-part__count">865 篇 · 3 章</span></a>
 
----
+<a class="home-part" href="#part-2"><span class="home-part__no">第二篇</span><span class="home-part__name">工程师篇</span><span class="home-part__pos">构建 AI 应用</span><span class="home-part__count">816 篇 · 7 章</span></a>
 
-## 第一篇 · 入门篇 — 从零理解 AI
+<a class="home-part" href="#part-3"><span class="home-part__no">第三篇</span><span class="home-part__name">专家篇</span><span class="home-part__pos">深入系统架构</span><span class="home-part__count">360 篇 · 4 章</span></a>
 
-### [Ch01 AI 与 LLM 基础](ch01-ai-basics.md) — 740 篇
-> 理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理
+<a class="home-part" href="#part-4"><span class="home-part__no">第四篇</span><span class="home-part__name">科学家篇</span><span class="home-part__pos">研究与创新</span><span class="home-part__count">83 篇 · 4 章</span></a>
 
-  - ⭐ 🧠 The Token Economy pt2: The Intelligence Company Gets Built
-  - ⭐ The Google Capital Company
-  - ⭐ 滴滴国际化客服质检智能化之路：基于 Amazon Bedrock 的多语种多业务线质检实践
-  - ⭐ Backpressure is all you need
-  - ⭐ Karpathy's Autoresearch found a 3-year-old bug in our query engine (an
-  - ⭐ **一、关于 Kollab**
-  - ⭐ Agentic Design System - From Chatbot to Orchestration
-  - ⭐ OpenSquilla launches open-source AI agent to cut token costs
-  - ... 共 **740** 篇 → [完整章节](ch01-ai-basics.md)
+<a class="home-part" href="#part-5"><span class="home-part__no">第五篇</span><span class="home-part__name">大师篇</span><span class="home-part__pos">哲学、安全与未来</span><span class="home-part__count">29 篇 · 2 章</span></a>
 
-### [Ch02 提示词工程与上下文工程](ch02-prompt.md) — 29 篇
-> 与 AI 高效对话的科学与艺术：Prompt、CoT、Context Engineering
+</nav>
 
-  - ⭐ Skills 重新定义 Agent 喂知识：从'提前给'到'按需取'的范式反转
-  - ⭐ Enrich your datasets with business context
-  - ⭐ AE 到可运行代码：大淘宝 AI 动画全链路方案（实践篇）
-  - ⭐⭐ Claude Code Prompt 与上下文 Harness 设计
-  - ⭐⭐ 阿里巴巴 & 蚂蚁 LoongSuite GenAI 可观测语义规范：从统一数据语言到规模化落地
-  - ⭐⭐ AINMM：存量生产级工程向 AI Native 演进的五级成熟度模型
-  - ⭐⭐ 新程Alpha认知模型：4B参数端侧部署，群体智能以小搏大比肩GPT-5.4
-  - ⭐⭐ AI 导购在 vivo 官网的落地实践
-  - ... 共 **29** 篇 → [完整章节](ch02-prompt.md)
+<section class="home-part-block" id="part-1">
 
-### [Ch03 AI 工具与产品全景](ch03-ai-tools.md) — 96 篇
-> 2024-2026 AI 工具生态：从 IDE 到 Agent 平台
+<header class="home-part__head"><span class="home-part__badge">第一篇</span><div class="home-part__heading"><h2>入门篇<small>从零理解 AI</small></h2><p>任何人</p></div></header>
 
-  - ⭐ Turn repeated instructions into reusable skills in Lovable | Lovable
-  - ⭐ Edge AI Networking — Wi-Fi 7/8 Convergence Analysis
-  - ⭐ Data Projects
-  - ⭐ Granola — The AI Notepad for back-to-back meetings
-  - ⭐⭐ Agent 时代的生产力悖论：协作成为新瓶颈
-  - ⭐⭐ 第一步：安装 Remotion Best Practice Skill
-  - ⭐⭐ 别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个
-  - ⭐⭐ MiniMax M2.7：开启模型的自我进化
-  - ... 共 **96** 篇 → [完整章节](ch03-ai-tools.md)
+<div class="home-chapter-grid">
 
-> 📖 **本篇共 865 篇**
+<article class="chapter-card">
 
----
+<div class="chapter-card__head"><span class="chapter-card__no">Ch01</span><span class="chapter-card__count">740 篇</span></div>
 
-## 第二篇 · 工程师篇 — 构建 AI 应用
+<h3 class="chapter-card__title"><a href="ch01-ai-basics.html">AI 与 LLM 基础</a></h3>
 
-### [Ch04 Agent 核心架构](ch04-agent-core.md) — 460 篇
-> 什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁
+<p class="chapter-card__desc">理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理</p>
 
-  - ⭐ Agent 时间性策略（Temporal Policies）：基于轨迹的有状态授权架构
-  - ⭐ Building AI Agents in Accounting
-  - ⭐ Agentic Robot Policy Self-Improvement in the Real World
-  - ⭐ Announcing Genkit Middleware: Intercept, extend, and harden your agent
-  - ⭐ The Agentic Trust Management Platform | Drata
-  - ⭐ 正式开源！美团 LongCat-2.0 同步开放国产卡推理代码
-  - ⭐ Introducing OS Level Actions in Amazon Bedrock AgentCore Browser
-  - ⭐ How we built an internal data analytics agent
-  - ... 共 **460** 篇 → [完整章节](ch04-agent-core.md)
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:23.92%" title="⭐ 入门 · 177 篇"></i><i class="lv2" style="width:13.24%" title="⭐⭐ 工程师 · 98 篇"></i><i class="lv3" style="width:37.03%" title="⭐⭐⭐ 专家 · 274 篇"></i><i class="lv4" style="width:18.78%" title="⭐⭐⭐⭐ 科学家 · 139 篇"></i><i class="lv5" style="width:7.03%" title="⭐⭐⭐⭐⭐ 大师 · 52 篇"></i></div>
 
-### [Ch05 Harness 工程](ch05-harness.md) — 95 篇
-> 给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration
+<div class="chapter-card__legend">⭐ 177 · ⭐⭐ 98 · ⭐⭐⭐ 274 · ⭐⭐⭐⭐ 139 · ⭐⭐⭐⭐⭐ 52</div>
 
-  - ⭐ Harness Engineering：快手电商用 AI 流水线重塑研发范式（需求全生命周期自动化交付）
-  - ⭐ Cloud Use 框架：Agent 作为云上受治理主体的四层模型
-  - ⭐ Code is cheap: Harness 方法论——水流理论、最小混沌单元与反 slop
-  - ⭐ Karpathy AutoResearch Loop Cycle & Harness Optimization
-  - ⭐ Superpowers 深度解析：给 Claude Code 装上工程大脑
-  - ⭐ 去哪儿网 AI Coding 研发平台实践：L0-L5 自动化分级 + Harness 四把锁 + QunarDevCenter + 天弦 
-  - ⭐ HSCodeComp：阿里 ACL 2026 最佳资源论文——层级规则应用 Agent 基准
-  - ⭐ MoonBit：面向 Agent 协作的编程语言（语言即工具链 + 形式化验证 + Wasm 沙箱）
-  - ... 共 **95** 篇 → [完整章节](ch05-harness.md)
+<ul class="chapter-card__samples">
 
-### [Ch06 记忆与上下文管理](ch06-memory.md) — 35 篇
-> Agent 的大脑：短期/长期/工作记忆的分层架构
+<li><span class="stars">⭐</span>🧠 The Token Economy pt2: The Intelligence Company Gets Built</li>
 
-  - ⭐ AML（Agent Memory Leaderboard）：机制级 Agent 记忆评测榜单
-  - ⭐ Claude Code Agent Memory Systems — L0~L3 四层记忆方案
-  - ⭐ Powering scientific discovery
-  - ⭐⭐ AI Context Layer 框架
-  - ⭐⭐ MFS：zilliztech 的 Agent 统一上下文 harness，一套动词打通 20+ 数据源
-  - ⭐⭐ TencentDB Agent Memory：L0-L3 语义金字塔长期记忆
-  - ⭐⭐⭐ Hermes Agent 爱马仕的三级 memory，到底在记什么？
-  - ⭐⭐⭐ AI 的形状：Jagged Frontier·Bottleneck·Reverse Salient（Mollick）
-  - ... 共 **35** 篇 → [完整章节](ch06-memory.md)
+<li><span class="stars">⭐</span>The Google Capital Company</li>
 
-### [Ch07 技能、工具与 MCP](ch07-skill-tool.md) — 68 篇
-> Agent 的手脚：Skill 系统、MCP 协议、Tool Use
+<li><span class="stars">⭐</span>滴滴国际化客服质检智能化之路：基于 Amazon Bedrock 的多语种多业务线质检实践</li>
 
-  - ⭐ Create Custom MCP Catalogs and Profiles
-  - ⭐ 高德交易 VOC 自动排查：基于 Hermes 的多 Agent 架构实践
-  - ⭐ 腾讯企业微信团队 Skill 流水线：AI代码生成率94%的需求开发全流程
-  - ⭐ Building and connecting a production-ready ecommerce MCP server using 
-  - ⭐⭐ 电商 AI 操作系统崛起：从「工具人」到「All in One」+ 行业 KnowHow Skill 化 + 5 巨头 Headless 布
-  - ⭐⭐ Agent Loop 架构三层模型：Loop + Skill + Orchestrator
-  - ⭐⭐ 你写的 Skill，及格了吗？
-  - ⭐⭐ 我用 SKILL.md 做了一个简历生成器
-  - ... 共 **68** 篇 → [完整章节](ch07-skill-tool.md)
+</ul>
 
-### [Ch08 多 Agent 协作](ch08-multi-agent.md) — 21 篇
-> 从单兵到团队：编排、通信、治理
+<a class="chapter-card__more" href="ch01-ai-basics.html">进入章节 · 共 740 篇<span class="arrow" aria-hidden="true"> →</span></a>
 
-  - ⭐ Multi-Agent AI Safety Research Funding Call（DeepMind 主导，1000 万美元，四大方向）
-  - ⭐⭐ Graph Engineering：从单循环到多节点编排
-  - ⭐⭐ 微软 Agent Framework 全栈指南（Python）
-  - ⭐⭐ OpenClaw 多智能体团队搭建实战经验
-  - ⭐⭐⭐ Scalable voice agent design with Amazon Nova Sonic: multi-agent, tools
-  - ⭐⭐⭐ Thousand Token Wood v2: Multi-Model Heterogeneous Agent Council
-  - ⭐⭐⭐ 这篇52页综述把AI做科研这件事，明明白白划成了L0到L4五个等级
-  - ⭐⭐⭐ Routa 多智能体协同交付平台
-  - ... 共 **21** 篇 → [完整章节](ch08-multi-agent.md)
+</article>
 
-### [Ch09 AI 编程与代码生成](ch09-ai-coding.md) — 123 篇
-> 最成熟的 Agent 品类：Claude Code、OpenClaw、Codex 深度拆解
+<article class="chapter-card">
 
-  - ⭐ AI Coding 的底层框架：一切优化都是在对抗熵增——信息论视角
-  - ⭐ 无障碍设计师 vibe coding：当所有同事都在用 AI 写代码时
-  - ⭐ The Data Canary
-  - ⭐ The New Bottleneck: Theory of Constraints in the Age of AI Coding
-  - ⭐ 从需求到原型：50 个设计师与产品经理的 AI 智能体技能
-  - ⭐ Loop 的产品视角——项目中心从人挪到 Agent 系统
-  - ⭐ 用 Kiro 构建行业专业软件：Spec vs Vibe Coding 的分层结论
-  - ⭐ Unlocking AI flexibility in Europe: A guide to cross-region inference 
-  - ... 共 **123** 篇 → [完整章节](ch09-ai-coding.md)
+<div class="chapter-card__head"><span class="chapter-card__no">Ch02</span><span class="chapter-card__count">29 篇</span></div>
 
-### [Ch10 RAG 与知识检索](ch10-rag.md) — 15 篇
-> 让 Agent 拥有外部知识：从向量检索到知识图谱
+<h3 class="chapter-card__title"><a href="ch02-prompt.html">提示词工程与上下文工程</a></h3>
 
-  - ⭐ SkillCorpus: 大规模社区 Skill 生态的筛选、评测与边界分析
-  - ⭐⭐ 【实践教程】真实AI客服落地全流程：意图识别、混合检索到数据飞轮
-  - ⭐⭐ 向量库是RAG的前菜，知识图谱是答案，本体论是灵魂
-  - ⭐⭐⭐ Nvidia Multimodal RAG Knowledge Systems
-  - ⭐⭐⭐ Manufacturing Intelligence with Amazon Nova Multimodal Embeddings
-  - ⭐⭐⭐ 怎么短平快地把RAG做好：厦门国际银行数创金融杯RAG初赛方案
-  - ⭐⭐⭐⭐ 向量库是RAG的前菜，知识图谱是答案，本体论是灵魂
-  - ⭐⭐⭐⭐ RAG 分块优化 2025：策略选择与工程实践
-  - ... 共 **15** 篇 → [完整章节](ch10-rag.md)
+<p class="chapter-card__desc">与 AI 高效对话的科学与艺术：Prompt、CoT、Context Engineering</p>
 
-> 📖 **本篇共 817 篇**
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:10.34%" title="⭐ 入门 · 3 篇"></i><i class="lv2" style="width:17.24%" title="⭐⭐ 工程师 · 5 篇"></i><i class="lv3" style="width:37.93%" title="⭐⭐⭐ 专家 · 11 篇"></i><i class="lv4" style="width:17.24%" title="⭐⭐⭐⭐ 科学家 · 5 篇"></i><i class="lv5" style="width:17.24%" title="⭐⭐⭐⭐⭐ 大师 · 5 篇"></i></div>
 
----
+<div class="chapter-card__legend">⭐ 3 · ⭐⭐ 5 · ⭐⭐⭐ 11 · ⭐⭐⭐⭐ 5 · ⭐⭐⭐⭐⭐ 5</div>
 
-## 第三篇 · 专家篇 — 深入系统架构
+<ul class="chapter-card__samples">
 
-### [Ch11 云基础设施与部署](ch11-infra.md) — 213 篇
-> Agent 上生产：Bedrock AgentCore、沙箱、多租户
+<li><span class="stars">⭐</span>Skills 重新定义 Agent 喂知识：从&#x27;提前给&#x27;到&#x27;按需取&#x27;的范式反转</li>
 
-  - ⭐ 如何保护 EC2 实例存储（Instance Store）数据不丢失：场景分析与自动化防护实践
-  - ⭐ AWS Glue 3.0 到 5.0 版本升级实践：中国区大规模 ETL 平台的迁移方法论
-  - ⭐ 如何轻量化的在亚马逊云科技中国区安全使用 Transfer Family SFTP
-  - ⭐ Serverless Inference
-  - ⭐ 使用 AWS CloudFormation 快速模式将基础设施部署速度提升多达 4 倍
-  - ⭐ Amazon VPC Regional NAT Gateway 与 AZ NAT Gateway 全面对比
-  - ⭐ 构建 Amazon ElastiCache OSS Caches 慢查询监控方案
-  - ⭐ Higress Qwen3Guard Wasm 插件：把 AI 内容安全做进网关数据面
-  - ... 共 **213** 篇 → [完整章节](ch11-infra.md)
+<li><span class="stars">⭐</span>Enrich your datasets with business context</li>
 
-### [Ch12 安全与治理](ch12-security.md) — 104 篇
-> Agent 权限越大，安全责任越重：凭据、审计、合规
+<li><span class="stars">⭐</span>AE 到可运行代码：大淘宝 AI 动画全链路方案（实践篇）</li>
 
-  - ⭐ CISA urges critical infrastructure firms to 'fortify' before it's too 
-  - ⭐ Where OpenClaw Security Is Heading — OpenClaw Blog
-  - ⭐ Token 撤销触发设备擦除的安全漏洞
-  - ⭐ A Framework for AI Threat Readiness
-  - ⭐ From SSH to REST: A Security-Driven Modernization of Slack's EMR Data 
-  - ⭐ Sandworm Hackers Shift From IT Breaches to Critical OT Targets
-  - ⭐ peerd: 浏览器原生的 AI Agent Harness
-  - ⭐ How Semgrep Cut Taint Analysis Time by 75%
-  - ... 共 **104** 篇 → [完整章节](ch12-security.md)
+</ul>
 
-### [Ch13 MLOps 与评估](ch13-mlops.md) — 15 篇
-> 不能观测就不能改进：评估体系、基准测试、实验追踪
+<a class="chapter-card__more" href="ch02-prompt.html">进入章节 · 共 29 篇<span class="arrow" aria-hidden="true"> →</span></a>
 
-  - ⭐⭐⭐ CEOs’ top priorities for IT leaders today
-  - ⭐⭐⭐ NVIDIA MCG Toolkit 模型文档自动化
-  - ⭐⭐⭐ Discretizing Reward Models
-  - ⭐⭐⭐ EVA-Bench Data 2.0
-  - ⭐⭐⭐⭐ 美团海报生成 AIGC 技术体系：PosterCraft/PosterOmni/PosterReward（ICLR/CVPR 2026 三连
-  - ⭐⭐⭐⭐ Agent 评测方法论——美团图灵两年 BP 实践（人人一致/人机一致 + 桥梁指标 + 长程范式）
-  - ⭐⭐⭐⭐ 阿里巴巴&蚂蚁 LoongSuite GenAI 可观测语义规范：从统一数据语言到规模化落地
-  - ⭐⭐⭐⭐ NICE：浙大提出的理论驱动型 LLM 社会智能诊断基准
-  - ... 共 **15** 篇 → [完整章节](ch13-mlops.md)
+</article>
 
-### [Ch14 数据工程](ch14-data.md) — 28 篇
-> AI 的燃料：实时入湖、流处理、数据质量
+<article class="chapter-card">
 
-  - ⭐ 使用 Amazon S3 Tables 优化数据湖：从Hudi 迁移到托管 Iceberg
-  - ⭐ Amazon Quick: Accelerating the path from enterprise data to AI-powered
-  - ⭐ nOps FinOps Agent 架构：语义层驱动的数据分析 Agent 设计
-  - ⭐ Metric Semantic Layer: How Lyft Governs and Scales Key Data Definition
-  - ⭐ Write-Ahead Intent Log: a Foundation for Efficient CDC at Scale
-  - ⭐ The Data Operating System for the Foundation Model Era — Data Juicer
-  - ⭐ ClickHouse Ingestion at Scale: An Open-Source Zepto Engineering Story
-  - ⭐⭐ 构建 AI 时代的知识底座：直播数据 LLM Wiki 实践
-  - ... 共 **28** 篇 → [完整章节](ch14-data.md)
+<div class="chapter-card__head"><span class="chapter-card__no">Ch03</span><span class="chapter-card__count">96 篇</span></div>
 
-> 📖 **本篇共 360 篇**
+<h3 class="chapter-card__title"><a href="ch03-ai-tools.html">AI 工具与产品全景</a></h3>
 
----
+<p class="chapter-card__desc">2024-2026 AI 工具生态：从 IDE 到 Agent 平台</p>
 
-## 第四篇 · 科学家篇 — 研究与创新
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:4.17%" title="⭐ 入门 · 4 篇"></i><i class="lv2" style="width:12.50%" title="⭐⭐ 工程师 · 12 篇"></i><i class="lv3" style="width:52.08%" title="⭐⭐⭐ 专家 · 50 篇"></i><i class="lv4" style="width:26.04%" title="⭐⭐⭐⭐ 科学家 · 25 篇"></i><i class="lv5" style="width:5.21%" title="⭐⭐⭐⭐⭐ 大师 · 5 篇"></i></div>
 
-### [Ch15 训练与微调](ch15-training.md) — 35 篇
-> 打造专属模型：PPO → DPO → GRPO，合成数据，课程学习
+<div class="chapter-card__legend">⭐ 4 · ⭐⭐ 12 · ⭐⭐⭐ 50 · ⭐⭐⭐⭐ 25 · ⭐⭐⭐⭐⭐ 5</div>
 
-  - ⭐ 强烈推荐的 7 个 神级 Python 库
-  - ⭐ Predicting Risk in Content Launches
-  - ⭐ Farewell Ai2
-  - ⭐ 多模态预训练物理：知识流、模态协同、早期统一与高效配方（arXiv 2608.05000）
-  - ⭐⭐ 三个理想火枪手创业，打破具身最快百台交付纪录
-  - ⭐⭐ 小米承办 WPC Qi Plugfest & SRT Event，推动国产无线充电方案融入全球标准体系
-  - ⭐⭐ 全球第一位AI哲学家，在谷歌DeepMind的9年：为AGI安全奔走
-  - ⭐⭐ 看见用户每一步：Session Replay 与热力图让体验优化有据可依
-  - ... 共 **35** 篇 → [完整章节](ch15-training.md)
+<ul class="chapter-card__samples">
 
-### [Ch16 推理优化与架构](ch16-inference.md) — 16 篇
-> 让模型跑得更快：投机解码、MoE、PD 分离、量化
+<li><span class="stars">⭐</span>Turn repeated instructions into reusable skills in Lovable | Lovable</li>
 
-  - ⭐⭐ LLM 推理流水线完整解析：Prefill-Decode 双阶段模型
-  - ⭐⭐ Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP
-  - ⭐⭐ Pytorch in Kernel Recsys Optimization
-  - ⭐⭐⭐ vLLM V0→V1 迁移中的 logprob 差异修复
-  - ⭐⭐⭐ 从 Chroma 换成 Qdrant，我踩了 100 万向量的坑
-  - ⭐⭐⭐ How to Calculate the Inference Efficiency Ratio
-  - ⭐⭐⭐ Unlocking asynchronicity in continuous batching
-  - ⭐⭐⭐ vLLM V0 to V1: Correctness Before Corrections in RL
-  - ... 共 **16** 篇 → [完整章节](ch16-inference.md)
+<li><span class="stars">⭐</span>Edge AI Networking — Wi-Fi 7/8 Convergence Analysis</li>
 
-### [Ch17 多模态与生成](ch17-multimodal.md) — 27 篇
-> Agent 的眼睛和耳朵：视觉、语音、视频理解与生成
+<li><span class="stars">⭐</span>Data Projects</li>
 
-  - ⭐ How transparent is DiffusionGemma (and why it matters)
-  - ⭐ TimeLens2: Generalist Video Temporal Grounding with Multimodal LLMs
-  - ⭐ Mistral Shieldstral — Policy-Adaptive Multimodal Safety Classifier
-  - ⭐⭐ SunFinance: Textract+Claude准确率90.8%的ID提取方案
-  - ⭐⭐⭐ Pixelle-Video — 阿里国际 AIDC 开源的全自动视频生成 pipeline 装配工
-  - ⭐⭐⭐ CVPR 2026 Highlight | 清华打破多模态音频生成的「通才困境」：Omni2Sound 音频基础模型开源！
-  - ⭐⭐⭐ 高德 ABot-Earth 0.5：全球首个 3D 原生城市世界模型（1% 成本 + 千倍提效）
-  - ⭐⭐⭐ Gemma 4 12B：Google 多模态本地模型 —— 扔掉编码器
-  - ... 共 **27** 篇 → [完整章节](ch17-multimodal.md)
+</ul>
 
-### [Ch18 机器人与具身智能](ch18-robotics.md) — 5 篇
-> 从数字到物理：强化学习、仿真、人形机器人
+<a class="chapter-card__more" href="ch03-ai-tools.html">进入章节 · 共 96 篇<span class="arrow" aria-hidden="true"> →</span></a>
 
-  - ⭐⭐ Google DeepMind Robotics Accelerator（欧洲版，3 个月计划，15 家初创）
-  - ⭐⭐⭐ 蚂蚁灵波 LingBot-Vision — 空间原生视觉基础模型 & LingBot-Depth 2.0
-  - ⭐⭐⭐ Unitree's IPO Filing: The State of the Robotics Market
-  - ⭐⭐⭐ 蔚蓝BabyAlpha A3消费级机器狗
-  - ⭐⭐⭐ NVIDIA Isaac Lab + Amazon SageMaker AI：机器人强化学习训练基础设施（Humanoid RL Scale
+</article>
 
-> 📖 **本篇共 83 篇**
+</div>
+</section>
 
----
+<section class="home-part-block" id="part-2">
 
-## 第五篇 · 大师篇 — 哲学、安全与未来
+<header class="home-part__head"><span class="home-part__badge">第二篇</span><div class="home-part__heading"><h2>工程师篇<small>构建 AI 应用</small></h2><p>有编程基础</p></div></header>
 
-### [Ch19 前沿研究与理论](ch19-research-frontier.md) — 13 篇
-> Scaling Law、涌现能力、世界模型、自我博弈
+<div class="home-chapter-grid">
 
-  - ⭐ Lean Software Scaling Laws
-  - ⭐⭐ The Complexity of Simplicity | Jim Nielsen's Notes
-  - ⭐⭐⭐ Natural Language Autoencoders (Anthropic)
-  - ⭐⭐⭐ 世界模型的DeepSeek时刻！魔芯Flash World Model降本70%，跑出50FPS实时交互
-  - ⭐⭐⭐ Prompt Injection 的机制解释：基于角色感知的 LLM 安全分析
-  - ⭐⭐⭐ Count Anything - 文本引导的通用目标计数框架
-  - ⭐⭐⭐ From AGI to ASI
-  - ⭐⭐⭐⭐ 推荐系统进入大模型时刻：昇腾 NPU 如何支撑千亿级生成式推荐落地
-  - ... 共 **13** 篇 → [完整章节](ch19-research-frontier.md)
+<article class="chapter-card">
 
-### [Ch20 AI 哲学、安全与未来](ch20-ai-philosophy.md) — 16 篇
-> 超级智能、存在风险、AI 治理、人类命运
+<div class="chapter-card__head"><span class="chapter-card__no">Ch04</span><span class="chapter-card__count">460 篇</span></div>
 
-  - ⭐ Workday Inference Engine Built-in Guardrails - Enterprise AI Safety In
-  - ⭐⭐⭐ James Cowling AI 时代工程哲学访谈（Dropbox 前首席工程师 / Convex CTO）
-  - ⭐⭐⭐ Dario Amodei: AI 指数发展与政策制定的时序鸿沟
-  - ⭐⭐⭐ GitLab employees are the latest to face layoffs limbo. Read the CEO's 
-  - ⭐⭐⭐ Nemotron 3.5 Content Safety
-  - ⭐⭐⭐ Nearly every enterprise is investing in AI, but only 5% say their data
-  - ⭐⭐⭐ 让AI成为真正的社会生产力——跨越Token效率门槛走向AI普惠
-  - ⭐⭐⭐ AI 生产力悖论：你变快了，公司没有
-  - ... 共 **16** 篇 → [完整章节](ch20-ai-philosophy.md)
+<h3 class="chapter-card__title"><a href="ch04-agent-core.html">Agent 核心架构</a></h3>
 
-> 📖 **本篇共 29 篇**
+<p class="chapter-card__desc">什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁</p>
 
----
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:9.35%" title="⭐ 入门 · 43 篇"></i><i class="lv2" style="width:12.83%" title="⭐⭐ 工程师 · 59 篇"></i><i class="lv3" style="width:36.96%" title="⭐⭐⭐ 专家 · 170 篇"></i><i class="lv4" style="width:28.26%" title="⭐⭐⭐⭐ 科学家 · 130 篇"></i><i class="lv5" style="width:12.61%" title="⭐⭐⭐⭐⭐ 大师 · 58 篇"></i></div>
 
-**📊 全书收录：2,154 篇编撰条目 | 20 章 · 5 篇 | 开源 · 每日更新**
+<div class="chapter-card__legend">⭐ 43 · ⭐⭐ 59 · ⭐⭐⭐ 170 · ⭐⭐⭐⭐ 130 · ⭐⭐⭐⭐⭐ 58</div>
 
-最近同步：2026-09-05
+<ul class="chapter-card__samples">
+
+<li><span class="stars">⭐</span>Agent 时间性策略（Temporal Policies）：基于轨迹的有状态授权架构</li>
+
+<li><span class="stars">⭐</span>Building AI Agents in Accounting</li>
+
+<li><span class="stars">⭐</span>Agentic Robot Policy Self-Improvement in the Real World</li>
+
+</ul>
+
+<a class="chapter-card__more" href="ch04-agent-core.html">进入章节 · 共 460 篇<span class="arrow" aria-hidden="true"> →</span></a>
+
+</article>
+
+<article class="chapter-card">
+
+<div class="chapter-card__head"><span class="chapter-card__no">Ch05</span><span class="chapter-card__count">94 篇</span></div>
+
+<h3 class="chapter-card__title"><a href="ch05-harness.html">Harness 工程</a></h3>
+
+<p class="chapter-card__desc">给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration</p>
+
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:13.83%" title="⭐ 入门 · 13 篇"></i><i class="lv2" style="width:14.89%" title="⭐⭐ 工程师 · 14 篇"></i><i class="lv3" style="width:20.21%" title="⭐⭐⭐ 专家 · 19 篇"></i><i class="lv4" style="width:30.85%" title="⭐⭐⭐⭐ 科学家 · 29 篇"></i><i class="lv5" style="width:20.21%" title="⭐⭐⭐⭐⭐ 大师 · 19 篇"></i></div>
+
+<div class="chapter-card__legend">⭐ 13 · ⭐⭐ 14 · ⭐⭐⭐ 19 · ⭐⭐⭐⭐ 29 · ⭐⭐⭐⭐⭐ 19</div>
+
+<ul class="chapter-card__samples">
+
+<li><span class="stars">⭐</span>Harness Engineering：快手电商用 AI 流水线重塑研发范式（需求全生命周期自动化交付）</li>
+
+<li><span class="stars">⭐</span>Cloud Use 框架：Agent 作为云上受治理主体的四层模型</li>
+
+<li><span class="stars">⭐</span>Code is cheap: Harness 方法论——水流理论、最小混沌单元与反 slop</li>
+
+</ul>
+
+<a class="chapter-card__more" href="ch05-harness.html">进入章节 · 共 94 篇<span class="arrow" aria-hidden="true"> →</span></a>
+
+</article>
+
+<article class="chapter-card">
+
+<div class="chapter-card__head"><span class="chapter-card__no">Ch06</span><span class="chapter-card__count">35 篇</span></div>
+
+<h3 class="chapter-card__title"><a href="ch06-memory.html">记忆与上下文管理</a></h3>
+
+<p class="chapter-card__desc">Agent 的大脑：短期/长期/工作记忆的分层架构</p>
+
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:8.57%" title="⭐ 入门 · 3 篇"></i><i class="lv2" style="width:8.57%" title="⭐⭐ 工程师 · 3 篇"></i><i class="lv3" style="width:28.57%" title="⭐⭐⭐ 专家 · 10 篇"></i><i class="lv4" style="width:28.57%" title="⭐⭐⭐⭐ 科学家 · 10 篇"></i><i class="lv5" style="width:25.71%" title="⭐⭐⭐⭐⭐ 大师 · 9 篇"></i></div>
+
+<div class="chapter-card__legend">⭐ 3 · ⭐⭐ 3 · ⭐⭐⭐ 10 · ⭐⭐⭐⭐ 10 · ⭐⭐⭐⭐⭐ 9</div>
+
+<ul class="chapter-card__samples">
+
+<li><span class="stars">⭐</span>AML（Agent Memory Leaderboard）：机制级 Agent 记忆评测榜单</li>
+
+<li><span class="stars">⭐</span>Claude Code Agent Memory Systems — L0~L3 四层记忆方案</li>
+
+<li><span class="stars">⭐</span>Powering scientific discovery</li>
+
+</ul>
+
+<a class="chapter-card__more" href="ch06-memory.html">进入章节 · 共 35 篇<span class="arrow" aria-hidden="true"> →</span></a>
+
+</article>
+
+<article class="chapter-card">
+
+<div class="chapter-card__head"><span class="chapter-card__no">Ch07</span><span class="chapter-card__count">68 篇</span></div>
+
+<h3 class="chapter-card__title"><a href="ch07-skill-tool.html">技能、工具与 MCP</a></h3>
+
+<p class="chapter-card__desc">Agent 的手脚：Skill 系统、MCP 协议、Tool Use</p>
+
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:5.88%" title="⭐ 入门 · 4 篇"></i><i class="lv2" style="width:13.24%" title="⭐⭐ 工程师 · 9 篇"></i><i class="lv3" style="width:30.88%" title="⭐⭐⭐ 专家 · 21 篇"></i><i class="lv4" style="width:27.94%" title="⭐⭐⭐⭐ 科学家 · 19 篇"></i><i class="lv5" style="width:22.06%" title="⭐⭐⭐⭐⭐ 大师 · 15 篇"></i></div>
+
+<div class="chapter-card__legend">⭐ 4 · ⭐⭐ 9 · ⭐⭐⭐ 21 · ⭐⭐⭐⭐ 19 · ⭐⭐⭐⭐⭐ 15</div>
+
+<ul class="chapter-card__samples">
+
+<li><span class="stars">⭐</span>Create Custom MCP Catalogs and Profiles</li>
+
+<li><span class="stars">⭐</span>高德交易 VOC 自动排查：基于 Hermes 的多 Agent 架构实践</li>
+
+<li><span class="stars">⭐</span>腾讯企业微信团队 Skill 流水线：AI代码生成率94%的需求开发全流程</li>
+
+</ul>
+
+<a class="chapter-card__more" href="ch07-skill-tool.html">进入章节 · 共 68 篇<span class="arrow" aria-hidden="true"> →</span></a>
+
+</article>
+
+<article class="chapter-card">
+
+<div class="chapter-card__head"><span class="chapter-card__no">Ch08</span><span class="chapter-card__count">21 篇</span></div>
+
+<h3 class="chapter-card__title"><a href="ch08-multi-agent.html">多 Agent 协作</a></h3>
+
+<p class="chapter-card__desc">从单兵到团队：编排、通信、治理</p>
+
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:4.76%" title="⭐ 入门 · 1 篇"></i><i class="lv2" style="width:14.29%" title="⭐⭐ 工程师 · 3 篇"></i><i class="lv3" style="width:23.81%" title="⭐⭐⭐ 专家 · 5 篇"></i><i class="lv4" style="width:42.86%" title="⭐⭐⭐⭐ 科学家 · 9 篇"></i><i class="lv5" style="width:14.29%" title="⭐⭐⭐⭐⭐ 大师 · 3 篇"></i></div>
+
+<div class="chapter-card__legend">⭐ 1 · ⭐⭐ 3 · ⭐⭐⭐ 5 · ⭐⭐⭐⭐ 9 · ⭐⭐⭐⭐⭐ 3</div>
+
+<ul class="chapter-card__samples">
+
+<li><span class="stars">⭐</span>Multi-Agent AI Safety Research Funding Call（DeepMind 主导，1000 万美元，四大方向）</li>
+
+<li><span class="stars">⭐⭐</span>Graph Engineering：从单循环到多节点编排</li>
+
+<li><span class="stars">⭐⭐</span>微软 Agent Framework 全栈指南（Python）</li>
+
+</ul>
+
+<a class="chapter-card__more" href="ch08-multi-agent.html">进入章节 · 共 21 篇<span class="arrow" aria-hidden="true"> →</span></a>
+
+</article>
+
+<article class="chapter-card">
+
+<div class="chapter-card__head"><span class="chapter-card__no">Ch09</span><span class="chapter-card__count">123 篇</span></div>
+
+<h3 class="chapter-card__title"><a href="ch09-ai-coding.html">AI 编程与代码生成</a></h3>
+
+<p class="chapter-card__desc">最成熟的 Agent 品类：Claude Code、OpenClaw、Codex 深度拆解</p>
+
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:8.94%" title="⭐ 入门 · 11 篇"></i><i class="lv2" style="width:14.63%" title="⭐⭐ 工程师 · 18 篇"></i><i class="lv3" style="width:30.08%" title="⭐⭐⭐ 专家 · 37 篇"></i><i class="lv4" style="width:32.52%" title="⭐⭐⭐⭐ 科学家 · 40 篇"></i><i class="lv5" style="width:13.82%" title="⭐⭐⭐⭐⭐ 大师 · 17 篇"></i></div>
+
+<div class="chapter-card__legend">⭐ 11 · ⭐⭐ 18 · ⭐⭐⭐ 37 · ⭐⭐⭐⭐ 40 · ⭐⭐⭐⭐⭐ 17</div>
+
+<ul class="chapter-card__samples">
+
+<li><span class="stars">⭐</span>AI Coding 的底层框架：一切优化都是在对抗熵增——信息论视角</li>
+
+<li><span class="stars">⭐</span>无障碍设计师 vibe coding：当所有同事都在用 AI 写代码时</li>
+
+<li><span class="stars">⭐</span>The Data Canary</li>
+
+</ul>
+
+<a class="chapter-card__more" href="ch09-ai-coding.html">进入章节 · 共 123 篇<span class="arrow" aria-hidden="true"> →</span></a>
+
+</article>
+
+<article class="chapter-card">
+
+<div class="chapter-card__head"><span class="chapter-card__no">Ch10</span><span class="chapter-card__count">15 篇</span></div>
+
+<h3 class="chapter-card__title"><a href="ch10-rag.html">RAG 与知识检索</a></h3>
+
+<p class="chapter-card__desc">让 Agent 拥有外部知识：从向量检索到知识图谱</p>
+
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:6.67%" title="⭐ 入门 · 1 篇"></i><i class="lv2" style="width:13.33%" title="⭐⭐ 工程师 · 2 篇"></i><i class="lv3" style="width:20.00%" title="⭐⭐⭐ 专家 · 3 篇"></i><i class="lv4" style="width:46.67%" title="⭐⭐⭐⭐ 科学家 · 7 篇"></i><i class="lv5" style="width:13.33%" title="⭐⭐⭐⭐⭐ 大师 · 2 篇"></i></div>
+
+<div class="chapter-card__legend">⭐ 1 · ⭐⭐ 2 · ⭐⭐⭐ 3 · ⭐⭐⭐⭐ 7 · ⭐⭐⭐⭐⭐ 2</div>
+
+<ul class="chapter-card__samples">
+
+<li><span class="stars">⭐</span>SkillCorpus: 大规模社区 Skill 生态的筛选、评测与边界分析</li>
+
+<li><span class="stars">⭐⭐</span>【实践教程】真实AI客服落地全流程：意图识别、混合检索到数据飞轮</li>
+
+<li><span class="stars">⭐⭐</span>向量库是RAG的前菜，知识图谱是答案，本体论是灵魂</li>
+
+</ul>
+
+<a class="chapter-card__more" href="ch10-rag.html">进入章节 · 共 15 篇<span class="arrow" aria-hidden="true"> →</span></a>
+
+</article>
+
+</div>
+</section>
+
+<section class="home-part-block" id="part-3">
+
+<header class="home-part__head"><span class="home-part__badge">第三篇</span><div class="home-part__heading"><h2>专家篇<small>深入系统架构</small></h2><p>有ML基础</p></div></header>
+
+<div class="home-chapter-grid">
+
+<article class="chapter-card">
+
+<div class="chapter-card__head"><span class="chapter-card__no">Ch11</span><span class="chapter-card__count">213 篇</span></div>
+
+<h3 class="chapter-card__title"><a href="ch11-infra.html">云基础设施与部署</a></h3>
+
+<p class="chapter-card__desc">Agent 上生产：Bedrock AgentCore、沙箱、多租户</p>
+
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:11.74%" title="⭐ 入门 · 25 篇"></i><i class="lv2" style="width:14.08%" title="⭐⭐ 工程师 · 30 篇"></i><i class="lv3" style="width:46.48%" title="⭐⭐⭐ 专家 · 99 篇"></i><i class="lv4" style="width:18.78%" title="⭐⭐⭐⭐ 科学家 · 40 篇"></i><i class="lv5" style="width:8.92%" title="⭐⭐⭐⭐⭐ 大师 · 19 篇"></i></div>
+
+<div class="chapter-card__legend">⭐ 25 · ⭐⭐ 30 · ⭐⭐⭐ 99 · ⭐⭐⭐⭐ 40 · ⭐⭐⭐⭐⭐ 19</div>
+
+<ul class="chapter-card__samples">
+
+<li><span class="stars">⭐</span>如何保护 EC2 实例存储（Instance Store）数据不丢失：场景分析与自动化防护实践</li>
+
+<li><span class="stars">⭐</span>AWS Glue 3.0 到 5.0 版本升级实践：中国区大规模 ETL 平台的迁移方法论</li>
+
+<li><span class="stars">⭐</span>如何轻量化的在亚马逊云科技中国区安全使用 Transfer Family SFTP</li>
+
+</ul>
+
+<a class="chapter-card__more" href="ch11-infra.html">进入章节 · 共 213 篇<span class="arrow" aria-hidden="true"> →</span></a>
+
+</article>
+
+<article class="chapter-card">
+
+<div class="chapter-card__head"><span class="chapter-card__no">Ch12</span><span class="chapter-card__count">104 篇</span></div>
+
+<h3 class="chapter-card__title"><a href="ch12-security.html">安全与治理</a></h3>
+
+<p class="chapter-card__desc">Agent 权限越大，安全责任越重：凭据、审计、合规</p>
+
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:11.54%" title="⭐ 入门 · 12 篇"></i><i class="lv2" style="width:12.50%" title="⭐⭐ 工程师 · 13 篇"></i><i class="lv3" style="width:44.23%" title="⭐⭐⭐ 专家 · 46 篇"></i><i class="lv4" style="width:25.00%" title="⭐⭐⭐⭐ 科学家 · 26 篇"></i><i class="lv5" style="width:6.73%" title="⭐⭐⭐⭐⭐ 大师 · 7 篇"></i></div>
+
+<div class="chapter-card__legend">⭐ 12 · ⭐⭐ 13 · ⭐⭐⭐ 46 · ⭐⭐⭐⭐ 26 · ⭐⭐⭐⭐⭐ 7</div>
+
+<ul class="chapter-card__samples">
+
+<li><span class="stars">⭐</span>CISA urges critical infrastructure firms to &#x27;fortify&#x27; before it&#x27;s too </li>
+
+<li><span class="stars">⭐</span>Where OpenClaw Security Is Heading — OpenClaw Blog</li>
+
+<li><span class="stars">⭐</span>Token 撤销触发设备擦除的安全漏洞</li>
+
+</ul>
+
+<a class="chapter-card__more" href="ch12-security.html">进入章节 · 共 104 篇<span class="arrow" aria-hidden="true"> →</span></a>
+
+</article>
+
+<article class="chapter-card">
+
+<div class="chapter-card__head"><span class="chapter-card__no">Ch13</span><span class="chapter-card__count">15 篇</span></div>
+
+<h3 class="chapter-card__title"><a href="ch13-mlops.html">MLOps 与评估</a></h3>
+
+<p class="chapter-card__desc">不能观测就不能改进：评估体系、基准测试、实验追踪</p>
+
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:0.00%" title="⭐ 入门 · 0 篇"></i><i class="lv2" style="width:0.00%" title="⭐⭐ 工程师 · 0 篇"></i><i class="lv3" style="width:26.67%" title="⭐⭐⭐ 专家 · 4 篇"></i><i class="lv4" style="width:53.33%" title="⭐⭐⭐⭐ 科学家 · 8 篇"></i><i class="lv5" style="width:20.00%" title="⭐⭐⭐⭐⭐ 大师 · 3 篇"></i></div>
+
+<div class="chapter-card__legend">⭐⭐⭐ 4 · ⭐⭐⭐⭐ 8 · ⭐⭐⭐⭐⭐ 3</div>
+
+<ul class="chapter-card__samples">
+
+<li><span class="stars">⭐⭐⭐</span>CEOs’ top priorities for IT leaders today</li>
+
+<li><span class="stars">⭐⭐⭐</span>NVIDIA MCG Toolkit 模型文档自动化</li>
+
+<li><span class="stars">⭐⭐⭐</span>Discretizing Reward Models</li>
+
+</ul>
+
+<a class="chapter-card__more" href="ch13-mlops.html">进入章节 · 共 15 篇<span class="arrow" aria-hidden="true"> →</span></a>
+
+</article>
+
+<article class="chapter-card">
+
+<div class="chapter-card__head"><span class="chapter-card__no">Ch14</span><span class="chapter-card__count">28 篇</span></div>
+
+<h3 class="chapter-card__title"><a href="ch14-data.html">数据工程</a></h3>
+
+<p class="chapter-card__desc">AI 的燃料：实时入湖、流处理、数据质量</p>
+
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:25.00%" title="⭐ 入门 · 7 篇"></i><i class="lv2" style="width:14.29%" title="⭐⭐ 工程师 · 4 篇"></i><i class="lv3" style="width:39.29%" title="⭐⭐⭐ 专家 · 11 篇"></i><i class="lv4" style="width:14.29%" title="⭐⭐⭐⭐ 科学家 · 4 篇"></i><i class="lv5" style="width:7.14%" title="⭐⭐⭐⭐⭐ 大师 · 2 篇"></i></div>
+
+<div class="chapter-card__legend">⭐ 7 · ⭐⭐ 4 · ⭐⭐⭐ 11 · ⭐⭐⭐⭐ 4 · ⭐⭐⭐⭐⭐ 2</div>
+
+<ul class="chapter-card__samples">
+
+<li><span class="stars">⭐</span>使用 Amazon S3 Tables 优化数据湖：从Hudi 迁移到托管 Iceberg</li>
+
+<li><span class="stars">⭐</span>Amazon Quick: Accelerating the path from enterprise data to AI-powered</li>
+
+<li><span class="stars">⭐</span>nOps FinOps Agent 架构：语义层驱动的数据分析 Agent 设计</li>
+
+</ul>
+
+<a class="chapter-card__more" href="ch14-data.html">进入章节 · 共 28 篇<span class="arrow" aria-hidden="true"> →</span></a>
+
+</article>
+
+</div>
+</section>
+
+<section class="home-part-block" id="part-4">
+
+<header class="home-part__head"><span class="home-part__badge">第四篇</span><div class="home-part__heading"><h2>科学家篇<small>研究与创新</small></h2><p>研究者</p></div></header>
+
+<div class="home-chapter-grid">
+
+<article class="chapter-card">
+
+<div class="chapter-card__head"><span class="chapter-card__no">Ch15</span><span class="chapter-card__count">35 篇</span></div>
+
+<h3 class="chapter-card__title"><a href="ch15-training.html">训练与微调</a></h3>
+
+<p class="chapter-card__desc">打造专属模型：PPO → DPO → GRPO，合成数据，课程学习</p>
+
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:11.43%" title="⭐ 入门 · 4 篇"></i><i class="lv2" style="width:22.86%" title="⭐⭐ 工程师 · 8 篇"></i><i class="lv3" style="width:34.29%" title="⭐⭐⭐ 专家 · 12 篇"></i><i class="lv4" style="width:11.43%" title="⭐⭐⭐⭐ 科学家 · 4 篇"></i><i class="lv5" style="width:20.00%" title="⭐⭐⭐⭐⭐ 大师 · 7 篇"></i></div>
+
+<div class="chapter-card__legend">⭐ 4 · ⭐⭐ 8 · ⭐⭐⭐ 12 · ⭐⭐⭐⭐ 4 · ⭐⭐⭐⭐⭐ 7</div>
+
+<ul class="chapter-card__samples">
+
+<li><span class="stars">⭐</span>强烈推荐的 7 个 神级 Python 库</li>
+
+<li><span class="stars">⭐</span>Predicting Risk in Content Launches</li>
+
+<li><span class="stars">⭐</span>Farewell Ai2</li>
+
+</ul>
+
+<a class="chapter-card__more" href="ch15-training.html">进入章节 · 共 35 篇<span class="arrow" aria-hidden="true"> →</span></a>
+
+</article>
+
+<article class="chapter-card">
+
+<div class="chapter-card__head"><span class="chapter-card__no">Ch16</span><span class="chapter-card__count">16 篇</span></div>
+
+<h3 class="chapter-card__title"><a href="ch16-inference.html">推理优化与架构</a></h3>
+
+<p class="chapter-card__desc">让模型跑得更快：投机解码、MoE、PD 分离、量化</p>
+
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:0.00%" title="⭐ 入门 · 0 篇"></i><i class="lv2" style="width:18.75%" title="⭐⭐ 工程师 · 3 篇"></i><i class="lv3" style="width:37.50%" title="⭐⭐⭐ 专家 · 6 篇"></i><i class="lv4" style="width:31.25%" title="⭐⭐⭐⭐ 科学家 · 5 篇"></i><i class="lv5" style="width:12.50%" title="⭐⭐⭐⭐⭐ 大师 · 2 篇"></i></div>
+
+<div class="chapter-card__legend">⭐⭐ 3 · ⭐⭐⭐ 6 · ⭐⭐⭐⭐ 5 · ⭐⭐⭐⭐⭐ 2</div>
+
+<ul class="chapter-card__samples">
+
+<li><span class="stars">⭐⭐</span>LLM 推理流水线完整解析：Prefill-Decode 双阶段模型</li>
+
+<li><span class="stars">⭐⭐</span>Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP</li>
+
+<li><span class="stars">⭐⭐</span>Pytorch in Kernel Recsys Optimization</li>
+
+</ul>
+
+<a class="chapter-card__more" href="ch16-inference.html">进入章节 · 共 16 篇<span class="arrow" aria-hidden="true"> →</span></a>
+
+</article>
+
+<article class="chapter-card">
+
+<div class="chapter-card__head"><span class="chapter-card__no">Ch17</span><span class="chapter-card__count">27 篇</span></div>
+
+<h3 class="chapter-card__title"><a href="ch17-multimodal.html">多模态与生成</a></h3>
+
+<p class="chapter-card__desc">Agent 的眼睛和耳朵：视觉、语音、视频理解与生成</p>
+
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:11.11%" title="⭐ 入门 · 3 篇"></i><i class="lv2" style="width:3.70%" title="⭐⭐ 工程师 · 1 篇"></i><i class="lv3" style="width:70.37%" title="⭐⭐⭐ 专家 · 19 篇"></i><i class="lv4" style="width:14.81%" title="⭐⭐⭐⭐ 科学家 · 4 篇"></i><i class="lv5" style="width:0.00%" title="⭐⭐⭐⭐⭐ 大师 · 0 篇"></i></div>
+
+<div class="chapter-card__legend">⭐ 3 · ⭐⭐ 1 · ⭐⭐⭐ 19 · ⭐⭐⭐⭐ 4</div>
+
+<ul class="chapter-card__samples">
+
+<li><span class="stars">⭐</span>How transparent is DiffusionGemma (and why it matters)</li>
+
+<li><span class="stars">⭐</span>TimeLens2: Generalist Video Temporal Grounding with Multimodal LLMs</li>
+
+<li><span class="stars">⭐</span>Mistral Shieldstral — Policy-Adaptive Multimodal Safety Classifier</li>
+
+</ul>
+
+<a class="chapter-card__more" href="ch17-multimodal.html">进入章节 · 共 27 篇<span class="arrow" aria-hidden="true"> →</span></a>
+
+</article>
+
+<article class="chapter-card">
+
+<div class="chapter-card__head"><span class="chapter-card__no">Ch18</span><span class="chapter-card__count">5 篇</span></div>
+
+<h3 class="chapter-card__title"><a href="ch18-robotics.html">机器人与具身智能</a></h3>
+
+<p class="chapter-card__desc">从数字到物理：强化学习、仿真、人形机器人</p>
+
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:0.00%" title="⭐ 入门 · 0 篇"></i><i class="lv2" style="width:20.00%" title="⭐⭐ 工程师 · 1 篇"></i><i class="lv3" style="width:80.00%" title="⭐⭐⭐ 专家 · 4 篇"></i><i class="lv4" style="width:0.00%" title="⭐⭐⭐⭐ 科学家 · 0 篇"></i><i class="lv5" style="width:0.00%" title="⭐⭐⭐⭐⭐ 大师 · 0 篇"></i></div>
+
+<div class="chapter-card__legend">⭐⭐ 1 · ⭐⭐⭐ 4</div>
+
+<ul class="chapter-card__samples">
+
+<li><span class="stars">⭐⭐</span>Google DeepMind Robotics Accelerator（欧洲版，3 个月计划，15 家初创）</li>
+
+<li><span class="stars">⭐⭐⭐</span>蚂蚁灵波 LingBot-Vision — 空间原生视觉基础模型 &amp; LingBot-Depth 2.0</li>
+
+<li><span class="stars">⭐⭐⭐</span>Unitree&#x27;s IPO Filing: The State of the Robotics Market</li>
+
+</ul>
+
+<a class="chapter-card__more" href="ch18-robotics.html">进入章节 · 共 5 篇<span class="arrow" aria-hidden="true"> →</span></a>
+
+</article>
+
+</div>
+</section>
+
+<section class="home-part-block" id="part-5">
+
+<header class="home-part__head"><span class="home-part__badge">第五篇</span><div class="home-part__heading"><h2>大师篇<small>哲学、安全与未来</small></h2><p>思考者</p></div></header>
+
+<div class="home-chapter-grid">
+
+<article class="chapter-card">
+
+<div class="chapter-card__head"><span class="chapter-card__no">Ch19</span><span class="chapter-card__count">13 篇</span></div>
+
+<h3 class="chapter-card__title"><a href="ch19-research-frontier.html">前沿研究与理论</a></h3>
+
+<p class="chapter-card__desc">Scaling Law、涌现能力、世界模型、自我博弈</p>
+
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:7.69%" title="⭐ 入门 · 1 篇"></i><i class="lv2" style="width:7.69%" title="⭐⭐ 工程师 · 1 篇"></i><i class="lv3" style="width:38.46%" title="⭐⭐⭐ 专家 · 5 篇"></i><i class="lv4" style="width:30.77%" title="⭐⭐⭐⭐ 科学家 · 4 篇"></i><i class="lv5" style="width:15.38%" title="⭐⭐⭐⭐⭐ 大师 · 2 篇"></i></div>
+
+<div class="chapter-card__legend">⭐ 1 · ⭐⭐ 1 · ⭐⭐⭐ 5 · ⭐⭐⭐⭐ 4 · ⭐⭐⭐⭐⭐ 2</div>
+
+<ul class="chapter-card__samples">
+
+<li><span class="stars">⭐</span>Lean Software Scaling Laws</li>
+
+<li><span class="stars">⭐⭐</span>The Complexity of Simplicity | Jim Nielsen&#x27;s Notes</li>
+
+<li><span class="stars">⭐⭐⭐</span>Natural Language Autoencoders (Anthropic)</li>
+
+</ul>
+
+<a class="chapter-card__more" href="ch19-research-frontier.html">进入章节 · 共 13 篇<span class="arrow" aria-hidden="true"> →</span></a>
+
+</article>
+
+<article class="chapter-card">
+
+<div class="chapter-card__head"><span class="chapter-card__no">Ch20</span><span class="chapter-card__count">16 篇</span></div>
+
+<h3 class="chapter-card__title"><a href="ch20-ai-philosophy.html">AI 哲学、安全与未来</a></h3>
+
+<p class="chapter-card__desc">超级智能、存在风险、AI 治理、人类命运</p>
+
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:6.25%" title="⭐ 入门 · 1 篇"></i><i class="lv2" style="width:0.00%" title="⭐⭐ 工程师 · 0 篇"></i><i class="lv3" style="width:43.75%" title="⭐⭐⭐ 专家 · 7 篇"></i><i class="lv4" style="width:37.50%" title="⭐⭐⭐⭐ 科学家 · 6 篇"></i><i class="lv5" style="width:12.50%" title="⭐⭐⭐⭐⭐ 大师 · 2 篇"></i></div>
+
+<div class="chapter-card__legend">⭐ 1 · ⭐⭐⭐ 7 · ⭐⭐⭐⭐ 6 · ⭐⭐⭐⭐⭐ 2</div>
+
+<ul class="chapter-card__samples">
+
+<li><span class="stars">⭐</span>Workday Inference Engine Built-in Guardrails - Enterprise AI Safety In</li>
+
+<li><span class="stars">⭐⭐⭐</span>James Cowling AI 时代工程哲学访谈（Dropbox 前首席工程师 / Convex CTO）</li>
+
+<li><span class="stars">⭐⭐⭐</span>Dario Amodei: AI 指数发展与政策制定的时序鸿沟</li>
+
+</ul>
+
+<a class="chapter-card__more" href="ch20-ai-philosophy.html">进入章节 · 共 16 篇<span class="arrow" aria-hidden="true"> →</span></a>
+
+</article>
+
+</div>
+</section>
+
+<footer class="home-map__foot">📊 全书收录 2,153 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-09-05</span></footer>
 
 </div>

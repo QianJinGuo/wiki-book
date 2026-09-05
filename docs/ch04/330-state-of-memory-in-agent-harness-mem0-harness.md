@@ -131,7 +131,7 @@ Mem0 把 memory 做成 **基础设施层**而非 harness 内部功能。混合�
 - `Agent Memory Architecture Ruofei` — 若飞视角的 memory 架构
 - `Hermes Agent Memory System` — Hermes memory 系统深度
 - `Claude Code 7 Layer Memory Architecture` — Claude Code memory 七层
-- `Harness Engineering Framework` — harness engineering 总览
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — harness engineering 总览
 - `Agent Memory Evaluation Landscape Taobao Survey` — memory benchmark 综述（淘宝视角）
 - `Harness Engineering Future Persistence Vs Erosion` — harness boundary 与持续性
 ## 相关实体

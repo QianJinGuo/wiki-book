@@ -299,7 +299,7 @@ OpenAI 那条铁律特别值得抄下来：「当出了问题，修复方案几�
 - [Agent Harness Context Management Working Set](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-context-management-working-set.md)
 - [Agent Harness Engineering Survey 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-engineering-survey-2026.md)
 - [Agent Harness Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture.md)
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-framework.md)
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 - [Harness Engineering 7 Layers Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-7-layers-framework.md)
 - [Harness Context Window Management](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-context-window-management.md)
 - [Harness Tool Design Evolution](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-tool-design-evolution.md)

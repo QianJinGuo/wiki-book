@@ -65,7 +65,7 @@ Codila 将其提炼为 **Loop Engineering** 五步法：
 
 ## 与已有实体的关系
 
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-framework.md) — 同为 Agent 系统工程方法论，但本实体聚焦于 Karpathy 的 Loop 自动迭代实验 + Harness 优化的具体实验数据
+- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — 同为 Agent 系统工程方法论，但本实体聚焦于 Karpathy 的 Loop 自动迭代实验 + Harness 优化的具体实验数据
 - [Agent Harness Engineering Survey](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-engineering-survey-2026.md) — 补充 Harness 优化的具体实验证据（Niklaus 实验的量化数据）
 
 ## 参考

@@ -136,7 +136,7 @@ Decoration.inline(range.from, range.to, {
 - **编辑器稳定性的治理思路可以推广到整个 Agent 系统架构**：把复杂度从"经验修补"推进到"结构化治理"，核心是把问题讲清楚、把边界拆清楚。这正是 [Agent Architecture Harness New Backend](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-architecture-harness-new-backend.md) 所描述的"harness 成为新后端"趋势在输入层的具体落地。 
 
 ## 相关对照
-- [Impeccable](../ch05/095-impeccable.html) —— harness 之上"设计能力层"
+- [Impeccable](../ch05/094-impeccable.html) —— harness 之上"设计能力层"
 - [vivo AI 导购在官网落地实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vivo-ai-sales-guide-ecommerce-agent.md) —— 同作者团队
 - [Agent Skill 编写指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing.md) —— Skill 格式 + 渐进式披露
 - [Harness 成为新后端](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-architecture-harness-new-backend.md)

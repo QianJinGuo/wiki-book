@@ -121,7 +121,7 @@ SkillOpt 把 skill 文件变成**可训练 / 可验证 / 可审计的工程资�
 5. **诚实限制条款** — 明确列出 SkillOpt 不适用的场景（无客观正确答案的任务），以及「skill 被训练走样后难以回滚」等实战中遇到的问题。
 
 → [第 2 来源原文存档](https://mp.weixin.qq.com/s/No81T-3bAgXRfD5UnEcTeQ)
-- [Impeccable](095-impeccable.html) —— skill 落到前端的范例；SkillOpt 给"skill 怎么训"补上一块
+- [Impeccable](094-impeccable.html) —— skill 落到前端的范例；SkillOpt 给"skill 怎么训"补上一块
 
 ## 第 3 来源 — AliExpress 一手实践（@枫樾，2026-08-19）
 
