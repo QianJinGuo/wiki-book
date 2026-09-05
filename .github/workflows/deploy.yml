@@ -54,6 +54,11 @@ jobs:
           --output site/assets/neighbor_graph.json
           --top-k 20
 
+      # Same ordering as scripts/build.sh: MkDocs omits non-markdown pages
+      # (dashboard/, learn/) from the sitemap; add them.
+      - name: Patch sitemap with utility pages
+        run: python3 scripts/patch-sitemap.py
+
       - name: Enforce public build boundary
         run: node scripts/check-public-build.mjs --source . --site site
 
