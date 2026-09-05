@@ -68,6 +68,10 @@ if [ -f "docs/_headers" ]; then
   echo "Copied _headers to site/"
 fi
 
+# MkDocs omits non-markdown pages (dashboard/, learn/) from the sitemap; add them.
+echo "=== Patching sitemap with utility pages ==="
+"$PYTHON" scripts/patch-sitemap.py
+
 echo "=== Checking public build boundary ==="
 node scripts/check-public-build.mjs --source "$PROJECT_DIR" --site "$PROJECT_DIR/site"
 
