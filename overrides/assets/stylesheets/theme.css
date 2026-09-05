@@ -1,0 +1,409 @@
+/* ==========================================================================
+   墨金书房 · Ink & Gold Study — jinguo.tech 全站主题
+   亮色：暖纸白底 + 墨色文字 + 深金点缀；暗色：深夜蓝（同首页 Hero）+ 金色。
+   本文件由 wiki-book 仓库维护（overrides 目录不受每日同步覆盖）。
+   ========================================================================== */
+
+/* ---- 设计令牌 ---- */
+:root {
+  --ig-gold: #b8860b;            /* 亮色点缀金 */
+  --ig-gold-strong: #8a6508;     /* 深金（文字级，对比安全） */
+  --ig-gold-bright: #c99414;     /* hover 金 */
+  --ig-ink: #101c33;             /* 页头墨蓝 */
+  --ig-ink-deep: #0c1527;        /* 页头更深一档 */
+  --ig-badge-grad: linear-gradient(135deg, #14213c, #1e3358);
+}
+
+[data-md-color-scheme=default] {
+  --ig-paper: #f6f1e6;           /* 暖纸白页面底 */
+  --ig-card: #fffdf6;            /* 卡片/表面 */
+  --ig-fg: #2c2620;              /* 墨色正文 */
+  --ig-fg-light: rgba(59, 50, 38, 0.66);
+  --ig-fg-lighter: rgba(59, 50, 38, 0.44);
+  --ig-line: rgba(72, 58, 34, 0.16);
+  --ig-line-soft: rgba(72, 58, 34, 0.1);
+  --ig-link: #7c5c05;
+  --ig-quote-bg: rgba(184, 134, 11, 0.07);
+  --ig-meta-bg: rgba(184, 134, 11, 0.08);
+  --ig-th-bg: #f0e7d0;
+  --ig-zebra: rgba(184, 134, 11, 0.045);
+  --ig-hover: rgba(184, 134, 11, 0.11);
+  --ig-chip: rgba(184, 134, 11, 0.1);
+  --ig-track: rgba(72, 58, 34, 0.1);
+  --ig-samples-bg: rgba(72, 58, 34, 0.035);
+  --ig-code-inline-bg: rgba(184, 134, 11, 0.09);
+  --ig-shadow: rgba(87, 67, 34, 0.12);
+
+  --md-default-bg-color: var(--ig-paper);
+  --md-default-fg-color: var(--ig-fg);
+  --md-default-fg-color--light: var(--ig-fg-light);
+  --md-default-fg-color--lighter: var(--ig-fg-lighter);
+  --md-default-fg-color--lightest: var(--ig-line-soft);
+  --md-primary-fg-color: var(--ig-ink);
+  --md-primary-bg-color: #f6f1e6;
+  --md-typeset-a-color: var(--ig-link);
+  --md-accent-fg-color: var(--ig-gold-bright);
+  --md-accent-fg-color--transparent: rgba(184, 134, 11, 0.12);
+  --md-code-bg-color: #efe7d2;
+  --md-code-fg-color: #443a29;
+  --md-footer-bg-color: var(--ig-ink-deep);
+  --md-footer-fg-color: #d9d0bc;
+}
+
+[data-md-color-scheme=slate] {
+  --ig-gold: #ffd700;            /* 暗色点缀金（同 Hero） */
+  --ig-gold-strong: #e2b93b;
+  --ig-gold-bright: #ffd76a;
+  --ig-paper: #0b1526;           /* 深夜蓝页面底（与 Hero 同源） */
+  --ig-card: #10203a;
+  --ig-fg: #e7e1d2;              /* 暖纸白文字 */
+  --ig-fg-light: rgba(231, 225, 210, 0.68);
+  --ig-fg-lighter: rgba(231, 225, 210, 0.46);
+  --ig-line: rgba(255, 215, 0, 0.16);
+  --ig-line-soft: rgba(231, 225, 210, 0.12);
+  --ig-link: #e8c96a;
+  --ig-quote-bg: rgba(255, 215, 0, 0.05);
+  --ig-meta-bg: rgba(255, 215, 0, 0.07);
+  --ig-th-bg: rgba(255, 215, 0, 0.08);
+  --ig-zebra: rgba(255, 215, 0, 0.035);
+  --ig-hover: rgba(255, 215, 0, 0.09);
+  --ig-chip: rgba(255, 215, 0, 0.1);
+  --ig-track: rgba(231, 225, 210, 0.12);
+  --ig-samples-bg: rgba(4, 12, 28, 0.45);
+  --ig-code-inline-bg: rgba(255, 215, 0, 0.09);
+  --ig-shadow: rgba(0, 0, 0, 0.4);
+
+  --md-default-bg-color: var(--ig-paper);
+  --md-default-fg-color: var(--ig-fg);
+  --md-default-fg-color--light: var(--ig-fg-light);
+  --md-default-fg-color--lighter: var(--ig-fg-lighter);
+  --md-default-fg-color--lightest: var(--ig-line-soft);
+  --md-primary-fg-color: var(--ig-ink);
+  --md-primary-bg-color: #efe9d9;
+  --md-typeset-a-color: var(--ig-link);
+  --md-accent-fg-color: var(--ig-gold-bright);
+  --md-accent-fg-color--transparent: rgba(255, 215, 0, 0.12);
+  --md-code-bg-color: #0e1d38;
+  --md-code-fg-color: #d8d3c2;
+  --md-footer-bg-color: #080f1d;
+  --md-footer-fg-color: #b7b09c;
+}
+
+/* ---- 全局细节 ---- */
+.md-typeset { font-size: 0.82rem; line-height: 1.78; letter-spacing: 0.01em; }
+
+::selection { background: rgba(255, 215, 0, 0.3); }
+
+:focus-visible { outline: 2px solid var(--ig-gold); outline-offset: 2px; }
+
+/* ---- 页头与导航（双模式均为墨蓝 + 金，品牌锚点） ---- */
+.md-header { background-color: var(--ig-ink); box-shadow: 0 1px 0 rgba(255, 215, 0, 0.14); }
+.md-header .md-logo svg { color: #e2b93b; }
+.md-header .md-header__topic { font-weight: 700; letter-spacing: 0.03em; }
+.md-search__form { background-color: rgba(255, 255, 255, 0.09); border: 1px solid rgba(255, 255, 255, 0.14); border-radius: 8px; }
+.md-search__form:hover { background-color: rgba(255, 255, 255, 0.13); }
+
+.md-tabs { background-color: var(--ig-ink-deep); }
+.md-tabs__link { color: rgba(246, 240, 226, 0.7); font-weight: 500; }
+.md-tabs__link:hover, .md-tabs__link--active, .md-tabs__link:focus { color: #ffd76a; }
+
+/* ---- 标题层级 ---- */
+.md-typeset h1 { font-weight: 700; letter-spacing: 0.01em; }
+.md-typeset h1::after {
+  content: "";
+  display: block;
+  width: 2.6rem;
+  height: 3px;
+  margin-top: 0.45rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--ig-gold), rgba(184, 134, 11, 0.15));
+}
+[data-md-color-scheme=slate] .md-typeset h1::after { background: linear-gradient(90deg, var(--ig-gold), rgba(255, 215, 0, 0.12)); }
+
+.md-typeset h2 {
+  margin-top: 2.1em;
+  padding-bottom: 0.35em;
+  border-bottom: 1px solid var(--ig-line);
+  font-weight: 650;
+  letter-spacing: 0.01em;
+}
+
+.md-typeset h3 { font-weight: 650; }
+
+/* ---- 批注笺（引用块） ---- */
+.md-typeset blockquote {
+  border-left: 3px solid var(--ig-gold);
+  border-radius: 0 10px 10px 0;
+  padding: 0.65em 1.1em;
+  background: var(--ig-quote-bg);
+  color: var(--ig-fg-light);
+  font-size: 0.94em;
+}
+.md-typeset blockquote > :first-child { margin-top: 0; }
+.md-typeset blockquote > :last-child { margin-bottom: 0; }
+
+/* 条目元信息行：h2 后紧跟的「📊 Level …」引用 → 徽章条 */
+.md-typeset h2 + blockquote {
+  display: flow-root;
+  margin-top: 0.55em;
+  padding: 0.45em 0.9em;
+  border: 1px solid var(--ig-line);
+  border-left: 3px solid var(--ig-gold);
+  border-radius: 9px;
+  background: var(--ig-meta-bg);
+  font-size: 0.78em;
+  color: var(--ig-fg-light);
+}
+.md-typeset h2 + blockquote code {
+  padding: 0 0.25em;
+  background: transparent;
+  color: var(--ig-gold-strong);
+  font-size: 0.94em;
+}
+
+/* ---- 表格：圆角卡片 + 金线表头 + 斑马纹 ---- */
+.md-typeset table:not([class]) {
+  font-size: 0.88em;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--ig-line);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--ig-card);
+  box-shadow: 0 1px 3px var(--ig-shadow);
+}
+.md-typeset table:not([class]) th {
+  padding: 0.7em 1em;
+  background: var(--ig-th-bg);
+  color: var(--ig-fg);
+  border-bottom: 2px solid var(--ig-gold);
+  font-weight: 650;
+  letter-spacing: 0.03em;
+  vertical-align: bottom;
+}
+.md-typeset table:not([class]) td { padding: 0.62em 1em; border-top: 1px solid var(--ig-line-soft); }
+.md-typeset table:not([class]) tbody tr { transition: background-color 0.15s; }
+.md-typeset table:not([class]) tbody tr:nth-child(2n) { background: var(--ig-zebra); }
+.md-typeset table:not([class]) tbody tr:hover { background: var(--ig-hover); }
+
+/* ---- 代码 ---- */
+.md-typeset code {
+  padding: 0.1em 0.35em;
+  border-radius: 6px;
+  background: var(--ig-code-inline-bg);
+}
+.md-typeset pre {
+  border: 1px solid var(--ig-line-soft);
+  border-radius: 10px;
+}
+.md-typeset pre > code { border: none; }
+
+/* ---- 分隔线：金线渐隐 ---- */
+.md-typeset hr {
+  height: 1px;
+  margin: 2.4em 0;
+  border: 0;
+  background: linear-gradient(90deg, transparent, var(--ig-gold) 46%, var(--ig-gold) 54%, transparent);
+  opacity: 0.45;
+}
+
+/* ---- 链接与按钮 ---- */
+.md-typeset a { color: var(--ig-link); }
+.md-typeset a:hover { color: var(--ig-gold-bright); }
+.md-typeset .md-button { border-radius: 8px; }
+
+/* ---- 页脚 ---- */
+.md-footer { border-top: 1px solid rgba(255, 215, 0, 0.12); }
+.md-footer-meta { background-color: rgba(0, 0, 0, 0.22); }
+.md-footer .md-social a:hover { color: #ffd76a; }
+
+/* ==========================================================================
+   首页 · 全书图谱（五篇导览条 + 章节卡片）
+   ========================================================================== */
+.home-map { margin-top: 0.2rem; }
+
+/* 五篇导览条 */
+.home-parts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(168px, 1fr));
+  gap: 0.7rem;
+  margin: 0 0 2.4rem;
+  padding: 0;
+}
+.home-part {
+  display: flex;
+  flex-direction: column;
+  gap: 0.16rem;
+  padding: 0.85rem 0.95rem;
+  border: 1px solid var(--ig-line);
+  border-radius: 12px;
+  background: var(--ig-card);
+  color: var(--ig-fg);
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+.home-part:hover {
+  border-color: var(--ig-gold);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px var(--ig-shadow);
+  color: var(--ig-fg);
+}
+.home-part__no { font-size: 0.66rem; font-weight: 650; letter-spacing: 0.14em; color: var(--ig-gold-strong); }
+.home-part__name { font-size: 0.98rem; font-weight: 700; }
+.home-part__pos { font-size: 0.72rem; color: var(--ig-fg-light); }
+.home-part__count { margin-top: 0.32rem; font-size: 0.68rem; color: var(--ig-gold-strong); font-variant-numeric: tabular-nums; }
+
+/* 篇章区块 */
+.home-part-block { margin: 2.8rem 0; }
+.home-part__head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 0.95rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid var(--ig-line);
+}
+.home-part__badge {
+  flex: none;
+  padding: 0.5rem 0.85rem;
+  border-radius: 10px;
+  background: var(--ig-badge-grad);
+  box-shadow: inset 0 0 0 1px rgba(255, 215, 0, 0.28), 0 3px 10px rgba(10, 22, 40, 0.25);
+  color: #ffd76a;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+.md-typeset .home-part__heading h2 { margin: 0; padding: 0; border: 0; font-size: 1.28rem; line-height: 1.3; }
+.md-typeset .home-part__heading h2 small { margin-left: 0.6rem; font-size: 0.76rem; font-weight: 500; color: var(--ig-fg-light); }
+.home-part__heading p { margin: 0.18rem 0 0; font-size: 0.72rem; color: var(--ig-fg-lighter); }
+
+/* 章节卡片网格 */
+.home-chapter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16.5rem, 1fr));
+  gap: 1rem;
+}
+.chapter-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.05rem 1.15rem 0.95rem;
+  border: 1px solid var(--ig-line);
+  border-radius: 14px;
+  background: var(--ig-card);
+  box-shadow: 0 1px 2px var(--ig-shadow);
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+.chapter-card:hover {
+  border-color: var(--ig-gold);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px var(--ig-shadow);
+}
+.chapter-card__head { display: flex; align-items: baseline; justify-content: space-between; gap: 0.5rem; }
+.chapter-card__no { font-size: 1.02rem; font-weight: 800; letter-spacing: 0.05em; color: var(--ig-gold-strong); font-variant-numeric: tabular-nums; }
+.chapter-card__count {
+  padding: 0.1rem 0.55rem;
+  border-radius: 999px;
+  background: var(--ig-chip);
+  color: var(--ig-gold-strong);
+  font-size: 0.66rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.chapter-card__title { margin: 0; font-size: 1rem; line-height: 1.4; }
+.chapter-card__title a { color: var(--ig-fg); }
+.chapter-card__title a:hover { color: var(--ig-gold-bright); }
+.chapter-card__desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 0;
+  font-size: 0.76rem;
+  line-height: 1.6;
+  color: var(--ig-fg-light);
+}
+
+/* 难度分布条 */
+.lvbar {
+  display: flex;
+  height: 6px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--ig-track);
+}
+.lvbar i { display: block; height: 100%; min-width: 0; }
+.lvbar .lv1 { background: rgba(184, 134, 11, 0.2); }
+.lvbar .lv2 { background: rgba(184, 134, 11, 0.38); }
+.lvbar .lv3 { background: rgba(184, 134, 11, 0.58); }
+.lvbar .lv4 { background: rgba(184, 134, 11, 0.78); }
+.lvbar .lv5 { background: rgba(184, 134, 11, 0.98); }
+[data-md-color-scheme=slate] .lvbar .lv1 { background: rgba(255, 215, 0, 0.22); }
+[data-md-color-scheme=slate] .lvbar .lv2 { background: rgba(255, 215, 0, 0.4); }
+[data-md-color-scheme=slate] .lvbar .lv3 { background: rgba(255, 215, 0, 0.6); }
+[data-md-color-scheme=slate] .lvbar .lv4 { background: rgba(255, 215, 0, 0.8); }
+[data-md-color-scheme=slate] .lvbar .lv5 { background: #ffd700; }
+.chapter-card__legend {
+  font-size: 0.64rem;
+  letter-spacing: 0.01em;
+  color: var(--ig-fg-lighter);
+  font-variant-numeric: tabular-nums;
+}
+
+/* 精选样例 */
+.chapter-card__samples {
+  margin: 0.1rem 0 0;
+  padding: 0.55rem 0.75rem;
+  list-style: none;
+  border: 1px dashed var(--ig-line);
+  border-radius: 10px;
+  background: var(--ig-samples-bg);
+}
+.chapter-card__samples li {
+  margin: 0.22em 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 0.72rem;
+  color: var(--ig-fg-light);
+}
+.chapter-card__samples li:first-child { margin-top: 0; }
+.chapter-card__samples li:last-child { margin-bottom: 0; }
+.chapter-card__samples .stars { margin-right: 0.3em; color: var(--ig-gold); letter-spacing: -0.1em; }
+
+.chapter-card__more {
+  margin-top: auto;
+  padding-top: 0.55rem;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--ig-link);
+}
+.chapter-card__more .arrow { display: inline-block; transition: transform 0.18s; }
+.chapter-card:hover .chapter-card__more .arrow { transform: translateX(3px); }
+.chapter-card__more:hover { color: var(--ig-gold-bright); }
+
+/* 图谱页脚 */
+.home-map__foot {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2.6rem;
+  padding: 1.05rem 1.2rem;
+  border-top: 1px solid var(--ig-line);
+  font-size: 0.76rem;
+  color: var(--ig-fg-light);
+}
+.home-map__foot span { color: var(--ig-fg-lighter); }
+
+/* ---- Hero 与主题色系对齐（原 book-cover.css 的青色阴影 → 金） ---- */
+.home-hero--with-cover { border-color: rgba(255, 215, 0, 0.2); }
+.home-hero--with-cover .home-hero__cover { box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.28), 0 0 2rem rgba(255, 215, 0, 0.1); }
+
+/* ---- 动效克制 ---- */
+@media (prefers-reduced-motion: reduce) {
+  .home-part, .chapter-card, .chapter-card__more .arrow { transition: none; }
+  .home-part:hover, .chapter-card:hover { transform: none; }
+}
