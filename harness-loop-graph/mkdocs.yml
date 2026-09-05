@@ -1,0 +1,70 @@
+site_name: "Agent 工程三原语：Harness、Loop、Graph"
+site_description: "从概率模型到可靠系统：给资深工程师的智能体工程手册（中文版）"
+repo_url: "https://github.com/QianJinGuo/wiki-book"
+repo_name: "QianJinGuo/wiki-book"
+docs_dir: docs-zh
+use_directory_urls: true
+
+theme:
+  name: material
+  language: zh
+  features:
+    - content.code.copy
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+  icon:
+    logo: material/vector-square
+
+nav:
+  - 前言: index.md
+  - 第一部 · 基石:
+      - ch01-generation-to-delivery.md
+      - ch02-model-boundary.md
+  - 第二部 · Loop 工程:
+      - ch03-agent-loop-anatomy.md
+      - ch04-verifier-first.md
+      - ch05-sustained-loops.md
+  - 第三部 · Harness 工程:
+      - ch06-harness-five-layers.md
+      - ch07-context-engineering.md
+      - ch08-tools-permissions-guardrails.md
+      - ch09-state-and-memory.md
+  - 第四部 · Graph 工程:
+      - ch10-loop-to-graph.md
+      - ch11-multi-agent-orchestration.md
+  - 第五部 · 生产与治理:
+      - ch12-evaluation-observability.md
+      - ch13-decay-sovereignty-future.md
+  - 附录:
+      - appendix-a-glossary.md
+      - appendix-b-checklists.md
+      - appendix-c-references.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - def_list
+  - toc:
+      permalink: true

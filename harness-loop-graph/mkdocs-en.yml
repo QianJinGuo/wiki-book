@@ -1,0 +1,70 @@
+site_name: "Agent Engineering: Harness, Loop, Graph"
+site_description: "From probabilistic models to reliable systems: a field manual on agent engineering for senior engineers (English edition)"
+repo_url: "https://github.com/QianJinGuo/wiki-book"
+repo_name: "QianJinGuo/wiki-book"
+docs_dir: docs-en
+use_directory_urls: true
+
+theme:
+  name: material
+  language: en
+  features:
+    - content.code.copy
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+  icon:
+    logo: material/vector-square
+
+nav:
+  - Preface: index.md
+  - Part I · Foundations:
+      - ch01-generation-to-delivery.md
+      - ch02-model-boundary.md
+  - Part II · Loop Engineering:
+      - ch03-agent-loop-anatomy.md
+      - ch04-verifier-first.md
+      - ch05-sustained-loops.md
+  - Part III · Harness Engineering:
+      - ch06-harness-five-layers.md
+      - ch07-context-engineering.md
+      - ch08-tools-permissions-guardrails.md
+      - ch09-state-and-memory.md
+  - Part IV · Graph Engineering:
+      - ch10-loop-to-graph.md
+      - ch11-multi-agent-orchestration.md
+  - Part V · Production & Governance:
+      - ch12-evaluation-observability.md
+      - ch13-decay-sovereignty-future.md
+  - Appendices:
+      - appendix-a-glossary.md
+      - appendix-b-checklists.md
+      - appendix-c-references.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - def_list
+  - toc:
+      permalink: true
