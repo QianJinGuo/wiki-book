@@ -48,6 +48,18 @@ mkdocs serve -f harness-loop-graph/mkdocs.yml     # http://127.0.0.1:8000
 mkdocs serve -f harness-loop-graph/mkdocs-en.yml -a 127.0.0.1:8001
 ```
 
+## 本地 Docker 部署
+
+```bash
+cd harness-loop-graph
+./deploy.sh          # 构建双版站点 + 启动容器（端口 8005）
+```
+
+- 中文版：http://localhost:8005
+- 英文版：http://localhost:8005/en/
+
+实现：`build.sh` 用仓库 `.venv` 的 mkdocs 构建出 `site-zh/` 与 `site-en/`（已 gitignore），`Dockerfile`（nginx:alpine）打包静态站，`nginx.conf` 将英文版挂在 `/en/` 子路径（站内链接均为相对路径，无需重编译）。服务定义在仓库根 `docker-compose.yml` 的 `harness-loop-graph` 服务，与主站 `wiki-book`（8002）互不影响。
+
 ## 许可
 
 与所在仓库一致（见仓库根目录 LICENSE）。书中引用的库内笔记遵循原知识库约定；引用的公开数据版权归原出处，各章参考中已逐条标注。

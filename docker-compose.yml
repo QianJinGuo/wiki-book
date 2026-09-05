@@ -8,3 +8,13 @@ services:
     ports:
       - "8002:8080"
     restart: unless-stopped
+
+  harness-loop-graph:
+    build:
+      context: ./harness-loop-graph
+      dockerfile: Dockerfile
+      network: host
+    container_name: harness-loop-graph
+    ports:
+      - "8005:8080"
+    restart: unless-stopped
