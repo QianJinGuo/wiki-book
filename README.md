@@ -36,6 +36,12 @@
 |:---:|:---:|:---:|:---:|
 | 精选编撰条目 | 全书结构 | 公开来源卡片 | 当前版本 |
 
+## Overview (English)
+
+*AI Engineering* (《AI 工程》) is an open-source, continuously evolving book for engineers and researchers who want to understand, build, and deliver AI systems: working mental models of LLMs → the agent control loop → Harness, Tools, Skills, MCP, Memory, and Multi-Agent patterns → RAG, evaluation, tracing, security governance, and production deployment. The five-part path runs from beginner to master, and every entry keeps its first-hand source and difficulty rating, so claims stay traceable to evidence.
+
+**Read online at [jinguo.tech](https://jinguo.tech)** · Content **CC BY-SA 4.0** · Code **MIT** · Updated daily.
+
 ## 你将学到什么
 
 - 建立 LLM、Transformer、训练与推理的可操作心智模型。
