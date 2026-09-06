@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐ | 4.8KB | `entities/superpowers-claude-code-engineering-brain-baidu-geek.md`
 
-> 原文归档：原文归档
+> 原文归档：[原文归档](https://mp.weixin.qq.com/s/6Zr-ysk7F2UyaJzJ2YKjeQ)
 
 17000+ 字深度解析 Claude Code Superpowers：14 技能拆解、brainstorming SKILL.md 源码解析、概率操控技巧、querit.ai 真实案例复盘、负向收益诚实评估。百度Geek说/奔跑的脆皮肠。
 
@@ -60,7 +60,7 @@
 
 ## 相关实体
 
-- [Harness Engineering](096-harness-engineering.html)
+- [Harness Engineering](066-harness-engineering.html)
 - [Claude Code Skills Superpowers 实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-skills-superpowers-practice.md)
 - [AI Coding Agent Token 成本控制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/token-cost-control-coding-agent-devinyzeng-tencent.md)
 - [Skill 版本对比五大原则](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-version-comparison-five-principles-winty.md)

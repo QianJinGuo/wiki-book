@@ -2,8 +2,8 @@
 
 > 📊 Level ⭐ | 14.0KB | `entities/skillos-learning-skill-curation-for-self-evolving-agents.md`
 
-> -> 原文存档
-来自 newsletter 文章 SkillOS: Learning Skill Curation for Self-Evolving Agents 提取。
+> -> [原文存档](https://arxiv.org/pdf/2605.06614.pdf)
+来自 newsletter 文章 [SkillOS: Learning Skill Curation for Self-Evolving Agents](https://arxiv.org/pdf/2605.06614.pdf) 提取。
 
 ## 核心内容
 SkillOS 来自 Google Cloud AI Research 与 UIUC 的联合研究，提出了一个**经验驱动的强化学习训练方案**，用于让 self-evolving agents 学习技能策展（skill curation）能力。核心设计：将 agent executor（负责执行）冻结，仅训练 skill curator（负责更新 SkillRepo），形成 executor 与 curator 的模块化分离。训练时，将相关任务打包成组，早期任务更新 SkillRepo，后期任务评估更新质量，用 GRPO 算法优化 curator。实验覆盖 ALFWorld、WebShop 和数学推理任务，RL 训练的 8B curator 超越直接使用 Gemini-2.5-Pro 作为 curator 的版本
@@ -62,7 +62,7 @@ r = r_task + λ_f·r_fc + λ_u·r_cnt + λ_c·r_comp 这四个奖励项各有其
 - [你不知道的 Agent：原理、架构与工程实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/你不知道的-agent原理架构与工程实践.md)
 - [看 AgentRun 如何玩转记忆存储，最佳实践来了！](https://github.com/QianJinGuo/wiki-public/blob/main/entities/看-agentrun-如何玩转记忆存储最佳实践来了.md)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-to-agentic-engineering.md)
-- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/096-harness-engineering.html)
+- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/066-harness-engineering.html)
 - [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](https://github.com/QianJinGuo/wiki-public/blob/main/entities/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验.md)
 - [AI Agent 工程师能力地图](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-engineer-capability-map.md)
 - [self-evolving agents 系统性综述（厦门大学等多机构联合）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/self-evolving-agents-survey-papersagent.md)

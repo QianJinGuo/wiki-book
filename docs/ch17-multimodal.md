@@ -2,7 +2,7 @@
 
 > Agent 的眼睛和耳朵：视觉、语音、视频理解与生成
 
-> 本章收录 **27 篇**实体，按深度递增排列。
+> 本章收录 **20 篇**实体，按深度递增排列。
 
 ---
 
@@ -12,8 +12,8 @@
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 3 |
 | ⭐⭐ 工程师 | 需编程基础 | 1 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 19 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 4 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 13 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 3 |
 
 ---
 
@@ -35,7 +35,7 @@
 
 # How transparent is DiffusionGemma (and why it matters)
 
-> 原文存档：原文存档
+> 原文存档：[原文存档](https://www.lesswrong.com/posts/zoYXpdaMgFT43Wc24/how-transparent-is-diffusiongemma-and-why-it-matters)
 
 ## 核心内容
 
@@ -152,7 +152,7 @@ TimeLens2-4B 平均超过 Qwen3.5-397B-A17B 约 7.5 个 mIoU 点，在全部七�
 - [LLaVA-OneVision-2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llava-onevision-2-full-frame-rate-vlm.md)（同类全帧率视频语言模型）
 - [Video RAG 分块策略](https://github.com/QianJinGuo/wiki-public/blob/main/entities/video-rag-chunking-strategy.md)（视频检索的互补方向）
 
-→ 原文存档
+→ [原文存档](https://mp.weixin.qq.com/s/Dl39LOdIS0l_OInxTjoUrw)
 
 ---
 
@@ -181,7 +181,7 @@ TimeLens2-4B 平均超过 Qwen3.5-397B-A17B 约 7.5 个 mIoU 点，在全部七�
 ## 对 LLM 安全工程的意义
 
 - **Guardrail 部署成本下降**：policy-adaptive 意味着一个模型服务所有部署场景，不再为每个产品/受众维护专用审核模型——与 [Bedrock Guardrails](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-guardrails-code-generation-six-patterns.md) 类平台方案形成互补（平台 vs open-weights 两种路线）
-- **审核即推理任务**：把 content moderation 从分类任务重构为 QA 任务，与 [Nova 2 prompting 审核](ch01/692-prompting-amazon-nova-2-for-content-moderation.html) 思路同源
+- **审核即推理任务**：把 content moderation 从分类任务重构为 QA 任务，与 [Nova 2 prompting 审核](ch01/480-prompting-amazon-nova-2-for-content-moderation.html) 思路同源
 - **多模态统一**：文本+图像一个接口、一个模型，规避多模态安全审核需多模型拼装的工程负担
 
 ## 相关主题
@@ -189,7 +189,7 @@ TimeLens2-4B 平均超过 Qwen3.5-397B-A17B 约 7.5 个 mIoU 点，在全部七�
 - 同类 open-weights 安全模型：[Nemotron 3.5 Content Safety (multimodal)](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nemotron-3-5-content-safety-multimodal.md)、[Nemotron 3.5 Content Safety](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nemotron-3-5-content-safety.md)
 - 平台级 guardrail：[Amazon Bedrock Guardrails](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-guardrails-code-generation-six-patterns.md)
 
-→ 原文存档
+→ [原文存档](https://mistral.ai/news/shieldstral/)
 
 ---
 
@@ -352,7 +352,7 @@ Pixelle-Video 把这个哲学推到极致:LLM 可换 + 图像模型可换 + TTS 
 - vs **[AI 视频工具悄悄走到了第三阶段](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-video-tools-third-stage-1779303117.md)** — 那是**行业历史阶段综述**(20KB,花叔 2026-05-07),本文是**单一项目深测**。两者互补:阶段综述给宏观背景,本文给工程细节。
 - vs **[Video Agent 范式迁移与算力-人才飞轮](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ethan-he-cosmos-grok-imagine-latent-space-video-agent-20260606.md)** — 那是**底层视频模型视角**(nvidia Cosmos + xAI Grok Imagine),本文是**pipeline 编排层视角**。两层视角互补。
 - vs **[JoyAI-Echo:京东长视频框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/joyai-echo-long-video-framework-jd.md)** — 那是**长视频(5 分钟一致性)底层生成框架**(DMD 蒸馏 + Director Agent),本文是**短视频 pipeline 装配**。时长 / 抽象层完全不同。
-- vs **[Fastlane 短视频内容](ch03/059-fastlane-create-winning-short-form-content-in-seconds.html)** — 另一款短视频工具,但**未开源**;Pixelle-Video 是 Apache 2.0 开源,可二开。
+- vs **[Fastlane 短视频内容](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fastlane-create-winning-short-form-content-in-seconds.md)** — 另一款短视频工具,但**未开源**;Pixelle-Video 是 Apache 2.0 开源,可二开。
 - vs **[Agentium Agent Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentium-agent-framework.md)** — 同为 pipeline 编排思路,但 Agentium 偏**通用 agent 编排**,Pixelle-Video 偏**视频生成专精**。
 - vs **[纳德拉「Token 资本」论](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nadella-token-capital-microsoft-ai-economy-2026.md)** — Pixelle-Video 是该战略宣言"模型可替换性"哲学的**工程范本**。
 - vs **[800 行 OpenClaw tool 消息总线子 agent 管理架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/800行代码实现-open-claw-的-tool消息总线子agent管理架构.md)** — 两者都体现"**装配工胜过生成器**"的工程哲学(OpenClaw 是 agent 工具总线装配)。
@@ -389,11 +389,11 @@ Pixelle-Video 不同于纯研究型开源项目(如 Stability AI 的各种模型
 
 ## 相关实体
 
-- → 原文存档
+- → [原文存档](https://mp.weixin.qq.com/s/AEN8XCDZkt4uCmF75kYIvw)
 - [AI 视频工具悄悄走到了第三阶段](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-video-tools-third-stage-1779303117.md)
 - [Video Agent 范式迁移与算力-人才飞轮](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ethan-he-cosmos-grok-imagine-latent-space-video-agent-20260606.md)
 - [JoyAI-Echo:京东长视频框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/joyai-echo-long-video-framework-jd.md)
-- [Fastlane 短视频内容](ch03/059-fastlane-create-winning-short-form-content-in-seconds.html)
+- [Fastlane 短视频内容](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fastlane-create-winning-short-form-content-in-seconds.md)
 - [Agentium Agent Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentium-agent-framework.md)
 - [纳德拉「Token 资本」论](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nadella-token-capital-microsoft-ai-economy-2026.md)
 - [800 行 OpenClaw tool 消息总线](https://github.com/QianJinGuo/wiki-public/blob/main/entities/800行代码实现-open-claw-的-tool消息总线子agent管理架构.md)
@@ -408,13 +408,13 @@ Pixelle-Video 不同于纯研究型开源项目(如 Stability AI 的各种模型
 
 > 📊 Level ⭐⭐⭐ | 12.1KB | `entities/cvpr-2026-highlight-清华打破多模态音频生成的通才困境omni2sound-音频基础模型开源.md`
 
-> -> 原文存档
+> -> [原文存档](https://mp.weixin.qq.com/s/j4kBbh_JIus-nXwweZ7GRA)
 
 ## 摘要
 CVPR 2026 Highlight | 清华打破多模态音频生成的「通才困境」：Omni2Sound 音频基础模型开源！
 
 ## 关键要点
-- 原文存档
+- [原文存档](https://mp.weixin.qq.com/s/j4kBbh_JIus-nXwweZ7GRA)
 
 ## 相关实体
 
@@ -489,7 +489,7 @@ VGGSound-Omni 基准引入的画外音（Off-screen）专属评测赛道，为�
 - **评测基准设计本身是研究的核心贡献**
 - 专门设计对抗性评测场景（画外音、BGM 合成子集）才能真正检验模型的鲁棒性
 - 现有评测往往只覆盖「正常情况」，忽略了真实场景中的模态缺失和语义冲突
-→ 原文存档
+→ [原文存档](https://mp.weixin.qq.com/s/j4kBbh_JIus-nXwweZ7GRA)
 
 ---
 
@@ -605,7 +605,7 @@ VGGSound-Omni 基准引入的画外音（Off-screen）专属评测赛道，为�
 - **与 [Agent 六机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-self-improvement-six-mechanisms.md)** 呼应：六机制中"环境仿真"的具体实现 —— 指数级训练场景
 - **与 [Anthropic 生物学 Agent 数据基础设施](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-biology-agent-data-infrastructure-virbench.md)** 平行：都揭示"非合成数据是真实世界 AI 的必要条件" —— 真实时空数据 / 真实生物数据 vs 合成数据
 
-→ 原文存档
+→ [原文存档](https://mp.weixin.qq.com/s/N0KGmouW9KBeWTAQzYcPKA)
 
 ## 实践启示
 
@@ -630,7 +630,7 @@ VGGSound-Omni 基准引入的画外音（Off-screen）专属评测赛道，为�
 
 ## 相关实体
 - [gemma 4 模型发布 — google deepmind 开源权重家族在 amazon bedrock 上线](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gemma-4-models-amazon-bedrock-deepmind-open-weights.md)
-→ 原文存档
+→ [原文存档](https://mp.weixin.qq.com/s/uRbZY55iXTbaY2vToJkJcw)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/vision-multimodal.md)
 ## 一句话定位
@@ -787,7 +787,7 @@ VGGSound-Omni 基准引入的画外音（Off-screen）专属评测赛道，为�
 - [Kimi Work](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kimi-work-codex-vibe-working-paradigm-shift.md) —— 本地 Agent
 - [Agent Harness 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture.md) —— 7 层模型
 
-→ 原文存档
+→ [原文存档](https://mp.weixin.qq.com/s/uRbZY55iXTbaY2vToJkJcw)
 
 ---
 
@@ -869,7 +869,7 @@ ICRDrag 两阶段课程式训练中，第二阶段用稀疏不完整掩码训练
 
 ## 实践启示
 
-1. **从单点控制到区域控制是 AI 交互的普遍趋势**。图像编辑如此，[Agent 系统](ch03/100-hermes-agent.html) 的任务控制亦然——提供精确的约束（掩码）比模糊的指示（点对）更容易获得预期的结果。在设计 Agent 交互界面时，应优先考虑「约束性输入」而非「自由文本提示」。
+1. **从单点控制到区域控制是 AI 交互的普遍趋势**。图像编辑如此，[Agent 系统](ch03/061-hermes-agent.html) 的任务控制亦然——提供精确的约束（掩码）比模糊的指示（点对）更容易获得预期的结果。在设计 Agent 交互界面时，应优先考虑「约束性输入」而非「自由文本提示」。
 
 2. **双向注意力约束比单向更适合空间一致性任务**。ICRDrag 的源-目标双向对应约束确保了编辑前后的一致性。在 [多 Agent 系统](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/multi-agent-systems.md) 中，双向通信比单向指令能更有效地维持系统状态的一致性。
 
@@ -891,139 +891,17 @@ ICRDrag 两阶段课程式训练中，第二阶段用稀疏不完整掩码训练
 - DragDiffusion（基于扩散模型的拖拽编辑方法） — 基于扩散模型的拖拽编辑
 - 扩散模型 — 图像生成与编辑的基础框架
 - [注意力机制](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/attention-mechanism.md) — Transformer 中的核心组件
-- [Hermes Agent](ch03/100-hermes-agent.html) — Agent 系统中的交互控制设计
+- [Hermes Agent](ch03/061-hermes-agent.html) — Agent 系统中的交互控制设计
 
-→ 原文存档
-
----
-
-## Ch17.010 Normalizing Trajectory Models
-
-> 📊 Level ⭐⭐⭐ | 9.0KB | `entities/normalizing-trajectory-models-v2.md`
-
-> -> 原文存档
-
-## 摘要
-Normalizing Trajectory Models (NTM) 是由 Jiatao Gu 等人提出的新型扩散模型变体，旨在解决少步生成（few-step generation）场景下传统扩散模型假设失效的问题。传统扩散模型将采样分解为大量小步高斯去噪，这一假设在压缩到几步时崩溃。NTM 将每步 reverse 建模为 expressive conditional normalizing flow，保留精确似然训练。通过结合每步内的浅层可逆块与跨轨迹的深层并行预测器，NTM 在仅 4 步采样下即可匹配或超越强图像生成基线，同时保留对生成轨迹的精确似然计算能力。
-
-## 核心创新
-### 问题：少步生成的困境
-扩散模型的采样过程通常需要数十到数百步去噪步骤，这带来了显著的推理成本。现有少步方法（如 consistency models、distillation 技术）通过以下方式加速：
-
-- **Consistency Training**：强制不同噪声水平下的样本映射到同一直流
-- **Distillation**：从多步教师模型蒸馏到少步学生模型
-- **Adversarial Objectives**：引入对抗训练替代重建损失
-但这些方法都**牺牲了似然框架**——无法精确计算生成样本的似然，失去了基于似然进行模型选择、压缩评估等下游任务的能力。
-
-### 解决方案：NTM 架构
-NTM 的核心洞察是：**将每步 reverse process 建模为 normalizing flow**，而非传统扩散模型中的高斯去噪。
-**架构组成：**
-1. **浅层可逆块（Shallow Invertible Blocks）within each step**：每步内的转换用轻量级可逆网络建模，参数量少但表达能力足够
-2. **深层并行预测器（Deep Parallel Predictor）across the trajectory**：跨步之间共享一个深度网络预测去噪方向，实现高效信息传递
-3. **端到端可训练**：可从随机初始化训练，也可从预训练 flow-matching 模型初始化
-这种设计在每步内保持可逆性（支持精确似然计算），跨步间共享计算（保持效率）。
-
-### 自蒸馏：精确似然的多步利用
-NTM 的精确轨迹似然还支持一个独特能力：**自蒸馏（Self-Distillation）**。
-
-流程：
-1. 训练一个完整的 NTM 模型
-2. 用该模型自身的 score 训练一个轻量级去噪器
-3. 轻量去噪器可在 4 步内产生高质量样本
-这意味着 NTM 可以"自我压缩"——将复杂的多步 NTM 蒸馏为极简的少步采样器，同时保持高质量输出。
-
-## 技术细节
-### 与 Flow Matching 的关系
-NTM 可从预训练 flow-matching 模型初始化，这利用了 flow matching 的线性轨迹假设。Flow matching 通过插值噪声和真实数据预测向量场，而 NTM 将这个预测过程参数化为条件归一化流。
-
-### 似然精确性的意义
-精确似然（exact likelihood）对于以下应用至关重要：
-
-- **模型压缩评估**：直接比较不同模型的压缩效率
-- **生成质量度量**：不依赖 FID 等间接指标
-- **Bayesian model selection**：精确计算后验比近似方法更可靠
-- **Data compression**：精确似然直接对应压缩比
-这使得 NTM 在需要严格概率计数的场景（如压缩、异常检测）比其它少步扩散方法更有优势。
-
-### 训练稳定性
-传统 normalizing flow 的训练常面临数值不稳定问题。NTM 的设计通过以下方式缓解：
-
-- 浅层可逆块限制每步的复杂度，降低数值误差累积
-- 跨步并行预测器分担单步网络的优化压力
-- 支持从预训练模型初始化提供更好的初始点
-
-## 深度分析
-### 渐进式生成 vs. 单步生成
-当前主流加速扩散采样的方法可分为两类：
-1. **单步生成（One-step）**：consistency model、GAN-based method，生成质量与多步方法仍有差距
-2. **少步生成（Few-step）**：NTM、LCM、SDXL-Turbo等，在4-8步内达到可接受质量
-NTM 的定位是**保留完整似然框架的少步方法**。这一定位使其与单纯追求速度的方法（如 GAN-based）不同——速度不是唯一目标，**保持概率语义**同样重要。
-
-### 架构设计的权衡
-NTM 的"浅层每步 + 深层跨步"设计反映了一个基本权衡：
-
-- **每步可逆 = 精确似然**：但浅层网络限制单步表达能力
-- **跨步共享 = 效率**：深层网络捕获跨步依赖，但增加了训练复杂度
-这个权衡在实践中被证明是有效的——在 4 步采样下即可达到与数十步方法相当的质量。
-
-### 与 Consistency Model 的对比
-Consistency Model 通过强制 $f(x_t) = f(x_{t+1})$ 实现少步采样，本质上是将轨迹压缩到单一不动点。
-**NTM 的优势**：
-
-- 保留完整的轨迹分布而非单一代表点
-- 可以追溯生成过程（每一步都有明确概率）
-- 支持自蒸馏将复杂模型压缩为简单采样器
-**CM 的优势**：
-
-- 训练更简单（单一一致性损失）
-- 推理极快（1-2步）
-两者代表了不同的设计哲学：NTM 偏向"精确描述"，CM 偏向"实用速度"。
-
-### 归一化流的可逆性瓶颈
-Normalizing flow 的核心是通过一系列可逆变换实现精确似然计算。但可逆性要求网络输出维度不变且必须可逆，这限制了网络架构的选择。
-NTM 通过"浅层可逆块"缓解这一问题——每步只做轻量变换，用跨步的深层网络补充表达力。这是一种工程折中：在保持可逆性的同时尽量利用深度网络的表达能力。
-
-## 实践启示
-### 对于扩散模型研究
-NTM 开辟了一个新方向：**保留似然框架的少步扩散**。未来研究可以探索：
-
-1. **更激进的步数压缩**：4步已是SOTA，但是否有理论下限？
-2. **多模态扩展**：当前主要验证图像生成，是否可以扩展到视频、音频？
-3. **与attention机制的结合**：当前架构依赖并行预测器，是否可以引入更长程依赖？
-4. **条件生成控制**：精确似然是否可以帮助实现更好的条件控制（如 classifier-free guidance 的替代）？
-建议研究团队关注 NTM 的自蒸馏机制——这提供了一个将大模型能力压缩到小采样器的正规框架，而非依赖启发式 distillation。
-
-### 对于工程部署
-**适用场景**：
-
-- 对生成质量有严格要求（需要精确概率）
-- 需要少步推理但无法接受质量损失
-- 需要可追溯的生成过程（审计、调试）
-**部署建议**：
-
-- NTM 的精确似然特性非常适合**在线质量评估**——可以在不额外采样的情况下计算生成样本的似然
-- 自蒸馏得到的轻量采样器可以部署在边缘设备
-- 与预训练 flow-matching 模型的兼容性意味着可以**增量部署**——先部署 teacher NTM，再蒸馏部署轻量采样器
-**性能基准**：在文本到图像任务上，4步采样可匹配或超越现有基线。若部署场景需要 4-8 步采样，NTM 值得关注。
-
-### 对于概率机器学习
-NTM 展示了一种有价值的思路：**通过架构设计保留训练目标的语义**，而非仅仅追求结果指标。
-
-在需要严格概率语义的下游任务（如贝叶斯推断、变分推断、压缩），这一思路可能启发新的模型设计。
-
-特别是**自蒸馏**机制——让模型自己教自己——在其它领域（如强化学习中的 self-play、语言模型的 self-reward）也有类似应用。这个范式值得在更多场景探索。
-
-## 相关实体
-- [Normalizing Trajectory Models](https://github.com/QianJinGuo/wiki-public/blob/main/entities/normalizing-trajectory-models.md)
-- [Normalizing Trajectory Models](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ntm-normalizing-trajectory-models.md)
+→ [原文存档](http://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651042656&idx=3&sn=8609a7dcae8fb73c7e3aa1d8feea3180&chksm=84e6771eb391fe086132cc6c70341612c864b35fb324661218a9738f88067150f469ee82e78e#rd)
 
 ---
 
-## Ch17.011 Perceptron Mk1 shocks with highly performant video analysis AI model 80-90% cheaper than Anthropic, OpenAI & Google
+## Ch17.010 Perceptron Mk1 shocks with highly performant video analysis AI model 80-90% cheaper than Anthropic, OpenAI & Google
 
 > 📊 Level ⭐⭐⭐ | 8.9KB | `entities/perceptron-mk1-video-analysis-ai.md`
 
-> 来源：原文存档
+> 来源：[原文存档](https://venturebeat.com/technology/perceptron-mk1-shocks-with-highly-performant-video-analysis-ai-model-80-90-cheaper-than-anthropic-openai-and-google)
 
 ## Summary
 Perceptron Mk1 is a video analysis reasoning model priced at $0.15/$1.50 per million input/output tokens — 80-90% cheaper than Claude Sonnet 4.5, GPT-5, and Gemini 3.1 Pro — while achieving state-of-the-art performance on spatial reasoning (ER Benchmarks) and video benchmarks (EgoSchema, VSI-Bench). The model's core differentiation is "Physical Reasoning": understanding cause-and-effect, object dynamics, and the laws of physics in real-world video.
@@ -1035,7 +913,7 @@ Perceptron Mk1 is a video analysis reasoning model priced at $0.15/$1.50 per mil
 - Architecture: Native video processing at 2 FPS across 32K token context window
 - Dual licensing: Closed-source Mk1 (API) + open-weight Isaac series
 - Target: Industrial-scale physical AI applications
-→ 原文存档
+→ [原文存档](https://venturebeat.com/technology/perceptron-mk1-shocks-with-highly-performant-video-analysis-ai-model-80-90-cheaper-than-anthropic-openai-and-google)
 
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-agent-era-developer-toolchain-redesign.md)
@@ -1098,7 +976,7 @@ Mk1 的定价（$0.15/$1.50 per million tokens）处于「Lite」价格区间，
 
 ---
 
-## Ch17.012 商汤SenseNova U1深度拆解，原生统一架构终结缝合时代
+## Ch17.011 商汤SenseNova U1深度拆解，原生统一架构终结缝合时代
 
 > 📊 Level ⭐⭐⭐ | 8.7KB | `entities/sensnova-u1-deep-dive-jiqizhixin-d8602ded5c51.md`
 
@@ -1213,7 +1091,7 @@ NEO-Unify 的成功验证了"原生统一"路线的可行性，为多模态大�
 ## 相关实体
 - [Elf Embedded Language Flows Hekaiming](https://github.com/QianJinGuo/wiki-public/blob/main/entities/elf-embedded-language-flows-hekaiming.md)
 
-→ 原文存档
+→ [原文存档](https://mp.weixin.qq.com/s/60m6GzLGlRAfWYWWkIDCOA)
 
 ---
 ## 关联
@@ -1221,64 +1099,7 @@ NEO-Unify 的成功验证了"原生统一"路线的可行性，为多模态大�
 
 ---
 
-## Ch17.013 Google's Gemini Omni video model surfaces ahead of I/O debut
-
-> 📊 Level ⭐⭐⭐ | 8.7KB | `entities/googles-gemini-omni-video-model-surfaces-ahead-of-io-debut.md`
-
-> -> 原文存档
-
-## Summary
-> Score: 8×9=72
-
-## 核心要点
-- Google Gemini Omni 视频模型在 Google I/O 2026 前夕泄露
-- 具备视频编辑能力：水印去除、对象替换、场景重写等
-- 采用与 Nano Banana 相同的策略：生成质量中等但编辑能力领先
-- 预计推出 Flash 和 Pro 两个版本
-- 将作为 Agent 提供，类似于 Deep Research
-
-## 相关实体
-- [Google's Gemini Omni video model surfaces ahead of I/O debut](https://github.com/QianJinGuo/wiki-public/blob/main/entities/googles-gemini-omni-video-model-surfaces-ahead-of-i-o-debut.md)
-
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/vision-multimodal.md)
-## 深度分析
-**Gemini Omni 的战略定位：编辑优先于生成**
-
-从泄露的信息来看，Gemini Omni 的核心差异化策略并不是在原始视频生成质量上追求第一，而是将视频编辑能力作为主要卖点。早期测试者的反馈显示，在原始生成保真度上，Omni 似乎落后于 ByteDance 的 Seedance 2——观看者注意到电影质感方面落后于当前基准领导者。然而，在编辑功能方面：去除水印、在剪辑中交换对象、以及通过聊天指令重写场景，这些功能在首次公开展示中表现出乎意料地好。
-这种策略选择有其深刻的商业逻辑。视频生成领域的竞争已经非常激烈：OpenAI 的 Sora、Runway 的 Gen-3、Pika、ByteDance 的 Seedance 2 等都在 raw generation 质量上投入了大量资源。如果 Google 选择在同一维度上竞争，即使最终能够赶上，也需要大量的时间和资源，而且最终可能只是在他人定义的赛道上追逐。通过将重点放在视频编辑上，Google 开辟了一个相对蓝海的战场——视频编辑是一个生产工作流中的高频需求，而现有的 AI 编辑工具在精确度和自然度上仍有很大提升空间。
-**Nano Banana 模式的复制：从图像到视频**
-
-文章明确指出了一个关键模式：Gemini Omni 采用的策略与 Nano Banana 完全相同。Nano Banana 作为原生图像模型推出时，在生成评分上表现平平，但却在编辑排行榜上名列前茅，随后被升级为前沿图像系统。Google 似乎在视频领域复制这一策略：首先是中等水平的生成质量，但具有卓越的编辑能力，然后通过迭代改进提升生成质量，最终成为一个全面的视频系统。
-对于 AI 行业观察者来说，这意味着 Google 已经形成了一种可辨识的产品演进模式：不是一开始就在所有维度上追求第一，而是在某个特定维度上建立优势，然后通过快速迭代追赶其他维度。这种方法降低了风险——即使生成质量不能立即领先，编辑能力的差异化也能吸引有实际工作流需求的用户。
-**分层发布策略：Flash 和 Pro**
-
-泄露信息表明 Omni 将推出分层版本，很可能是 Flash 和 Pro 两个层级。当前流通的输出很可能是来自 Flash 层级的——这解释了为什么生成质量与前沿系统相比仍有差距。这种分层策略在 Google 的其他产品线中已经有成熟实践：Gemini Flash 提供轻量级、高速度、低成本的选项，Gemini Pro 提供更强大但更昂贵的选项。对于视频模型，Flash 版本可能针对日常用户和快速原型制作，而 Pro 版本则针对专业内容创作者和企业客户。
-**Agent 定位：不仅仅是生成**
-一个重要的泄露信息是，Gemini Omni 将被视为 Agent（类似于 Deep Research on AI Studio）提供，而不仅仅是生成工具。这意味着 Google 对 Omni 的定位不仅仅是"文生视频"或"视频编辑"，而是一个能够执行复杂多步骤任务的智能代理。例如，一个视频代理可能能够理解用户的指令（如"将这个视频中的产品特写镜头提取出来，加上品牌水印，并调整到 16:9 比例"），然后自主规划并执行这些步骤。这种定位与当前 AI 领域从"工具"向"代理"演进的大趋势完全一致。
-**时间窗口与 Google I/O 的战略考量**
-
-选择在 Google I/O（5月19-20日）前约一周进行泄露或 A/B 测试，这个时间窗口的策略意义值得玩味。一个短暂的会前窗口配合受控的泄露，给了 Google 在主题演讲前收集反馈和塑造叙事的空间。如果反馈积极，Google 可以在 I/O 上大力宣扬；如果有重大问题，还有时间进行调整。这种"测试-学习-迭代"的策略比过去的大爆炸式发布更加敏捷，也更符合互联网产品开发的最佳实践。
-
-→ 原文存档
-
-## 实践启示
-**1. AI 视频领域的竞争维度正在扩展**
-
-对于在视频 AI 领域寻找机会的团队，需要认识到"生成质量"不再是唯一的竞争维度。编辑、工作流集成、代理能力等正在成为新的差异化领域。如果你正在构建视频 AI 产品，考虑是否有机会在编辑或其他特定维度上建立优势，而不是简单地与现有系统在生成质量上竞争。
-**2. 关注 Google 的"迭代追赶"模式**
-
-Google 在 AI 产品上展示的模式是：先在某个维度上建立优势（即使其他维度暂时落后），然后快速迭代追赶。这对于评估 Google 的 AI 产品有重要启示：不应该根据首次发布的质量来判断其长期潜力。Nano Banana 的案例表明，Google 能够在发布后迅速提升产品质量。类似地，Gemini Omni 的生成质量可能会在 I/O 正式发布后快速提升。
-**3. 分层模型的策略值得学习**
-Gemini Omni 预计采用 Flash/Pro 分层策略，这对于需要控制成本和延迟的生产系统具有重要意义。Flash 版本可能适合作为日常使用和快速原型制作，而 Pro 版本可以用于对质量要求更高的专业场景。在构建自己的 AI 产品时，考虑类似的分层策略，为不同需求层次的用户提供适当的选项。
-**4. 视频 Agent 是下一个前沿**
-
-Gemini Omni 被定位为 Agent 的事实表明，视频理解和生成能力正在融合为一个更广泛的"视频 Agent"概念。这对开发者意味着：视频 AI 的下一个机会可能不在于"生成更好的视频"，而在于"构建能够理解、编辑、操作视频的智能代理"。对于有志于这一领域的团队，开始探索视频 Agent 的架构和用例可能会获得先发优势。
-**5. 生产工作流集成的价值**
-从泄露信息看，Gemini Omni 的核心差异化在于其编辑能力与聊天界面的深度集成。这意味着对于生产级视频应用，UI/UX 和工作流集成可能比底层模型能力更加关键。即使模型的原始生成能力不是第一流的，如果编辑体验足够流畅、自然，并且易于集成到现有工作流中，仍然可以赢得市场份额。建议在评估或构建视频 AI 产品时，将用户体验和工作流集成作为核心评估维度。
-
----
-
-## Ch17.014 Netflix 可控 AI 视频编辑：Vera 与 VOID 模型
+## Ch17.012 Netflix 可控 AI 视频编辑：Vera 与 VOID 模型
 
 > 📊 Level ⭐⭐⭐ | 8.4KB | `entities/netflix-controllable-ai-video-editing-vera-void.md`
 
@@ -1367,7 +1188,7 @@ Vera 团队面临的核心挑战是：**没有公开数据集提供高质量的�
 
 当前为早期研究探索阶段，尚未达到生产部署水平。但其提出的"精确编辑 + 物理感知"范式对 AI 视频编辑领域具有方向性指导意义。
 
-→ 原文存档
+→ [原文存档](https://netflixtechblog.com/toward-more-controllable-ai-video-editing-an-early-research-exploration-at-netflix-eb8160ed60a2?source=rss----2615bd06b42e---4)
 
 ---
 ## 关联
@@ -1375,86 +1196,7 @@ Vera 团队面临的核心挑战是：**没有公开数据集提供高质量的�
 
 ---
 
-## Ch17.015 OlmoEarth v1.1: A more efficient family of Earth observation models
-
-> 📊 Level ⭐⭐⭐ | 8.1KB | `entities/olmoearth-v1-1-a-more-efficient-family-of-earth-observation-models.md`
-
-## 概述
-
-OlmoEarth v1.1 是 AllenAI 于 2026 年 5 月 19 日发布的地球观测模型家族，是 2025 年 11 月发布的 OlmoEarth v1 的升级版本。该版本在保持 v1 性能水平的前提下，将计算成本降低至多 **3 倍**，显著提升了模型的经济性和可部署性。
-
-OlmoEarth 已被广泛应用于追踪红树林变化（mangrove change tracking）、分类森林损失驱动因素（classifying drivers of forest loss）、制作国家级作物类型地图（country-scale crop-type maps）等任务，部署范围覆盖国家、洲际乃至全球尺度。
-
-## 技术架构
-
-OlmoEarth 模型基于 Transformer 架构，处理遥感数据时需先将数据转换为模型可摄入的 token 序列。在 Transformer 模型中，**模型大小**和 **token 序列长度** 是控制效率的两个关键杠杆：模型大小决定每次计算的资源消耗，而 token 序列长度则决定计算的复杂度——由于 self-attention 的二次复杂度，序列长度的微小减少都能显著降低推理成本。
-
-### Sentinel-2 数据处理
-
-Sentinel-2 是 OlmoEarth 处理的常见遥感数据模态。Sentinel-2 输入张量包含空间维度（H × W，表示纬度和经度像素）、时间维度 T 以及 12 个 Sentinel-2 波段通道 [H, W, T, D=12]。Sentinel-2 数据具有 10m、20m、60m 三种分辨率，这使得数据表示比单一分辨率的遥感数据更为复杂。
-
-传统方案按空间 patch 尺寸 p 将 Sentinel-2 图像分割为 p × p 的块，对每个 patch 在每个时间步和每个分辨率下创建一个 token。由于 Sentinel-2 包含 3 种分辨率，一个包含 2 个时间步的 Sentinel-2 输入每个 patch 产生 6 个 token（2 时间步 × 3 分辨率）。数学上，形状为 [H, W, T, D=12] 的 Sentinel-2 输入将产生 **H/p × W/p × T × 3** 个 token。
-
-## Token 设计与效率优化
-
-v1.1 的核心优化策略是将不同分辨率的 token 合并为单一 token，从而将 token 数量减少至原来的 **1/3**。这一策略在 Galileo 和 SatMAE 等模型中已被验证有效——SatMAE 表明为每个分辨率使用独立 token 能带来显著更好的结果。然而，CROMA 等模型采用单一 token 处理所有波段，与前述方法不同。
-
-朴素地合并 token 会导致显著的性能下降，在 m-eurosat kNN（遥感模型常用基准任务）上下降高达 10 个百分点。研究团队假设，将 Sentinel-2 波段分离到不同 token 使 OlmoEarth 能够更轻松地建模重要的跨波段关系（cross-band relationships）。
-
-为在不影响性能的前提下合并 token，团队修改了预训练策略（pretraining regimen），具体方案详见技术报告。
-
-## 模型家族与性能
-
-v1.1 模型家族实现了「事半功倍」（doing more with less）的效果。在每个模型规格下，OlmoEarth v1.1 的运行成本比 v1 降低至多 **3 倍**，使得频繁的行星尺度地图更新对所有团队都更加经济实惠。
-
-模型家族包括 Base、Tiny 和 Nano 三个规模，分别适用于不同的计算预算和任务需求。所有模型权重均在 Hugging Face 上开放下载。
-
-## 研究价值
-
-对于研究者而言，OlmoEarth v1.1 具有重要的学术价值：预训练遥感模型存在多个自由度（架构、数据集、预训练算法），导致性能变化难以归因。v1.1 在与 v1 相同的数据集上训练，使得两个版本之间的差异能够精确隔离出方法论变化的影响，有助于推进遥感模型预训练的科学研究。
-
-## 资源链接
-
-- 模型权重：https://huggingface.co/collections/allenai/olmoearth
-- 技术报告：https://allenai.org/papers/olmoearth_v1_1
-- 训练代码：https://github.com/allenai/olmoearth_pretrain
-
-## 深度分析
-
-1. **Token 序列长度是遥感 Transformer 模型的关键效率杠杆**——由于 self-attention 的二次复杂度，即使小幅减少 token 数量也能显著降低推理成本。
-
-2. **朴素地合并多分辨率 token 会导致性能大幅下降**（m-eurosat kNN 上下降 10 个百分点），研究团队假设分离 Sentinel-2 波段到不同 token 使模型能够更轻松地建模跨波段关系。
-
-3. **v1.1 在相同数据集上训练**，使两个版本之间的差异能够精确隔离出方法论变化的影响，解决了预训练遥感模型因多自由度（架构、数据集、预训练算法）而难以归因的科学研究难题。
-
-4. **模型家族（Base/Tiny/Nano）的分层设计**让用户能根据计算预算选择合适的规模，实现成本与性能的平衡，3x 计算成本降低使行星尺度频繁地图更新对所有团队都更加经济。
-
-5. **计算成本贯穿整个 OlmoEarth 生命周期**（数据导出、预处理、推理、后处理），效率优化在整个 pipeline 中都具有实际价值，而非仅限于模型本身。
-
-## 实践启示
-
-1. **部署行星尺度遥感应用时，优先考虑 token 序列长度优化**——可能比缩小模型规格带来更显著的收益
-
-2. **切换到 v1.1 后如遇特定任务回归**，需查阅技术报告中列出的已知退化场景，必要时回退至 v1
-
-3. **多分辨率数据处理时，简单 token 合并不可行**——需配合修改后的预训练策略才能不影响性能
-
-4. **研究遥感模型预训练时，v1.1 与 v1 的对比是理想的控制变量实验**——相同数据集隔离出方法论变化的影响
-
-5. **资源受限团队建议从 Nano/Tiny 开始验证可行性**后再扩展至 Base，以获得最佳的投入产出比
-
-## 相关实体
-- [Olmoearth V1 1 Efficiency](https://github.com/QianJinGuo/wiki-public/blob/main/entities/olmoearth-v1-1-efficiency.md)
-- [Kamacoder Agent Context Drift Tool Hallucination](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kamacoder-agent-context-drift-tool-hallucination.md)
-- [Olmo Hybrid Gdn Wave 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/olmo-hybrid-gdn-wave-2026.md)
-- [How Llms Actually Work 0Xkato](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-llms-actually-work-0xkato.md)
-- [Agent Reliability Context Drift Tool Hallucination](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-reliability-context-drift-tool-hallucination.md)
-
-→ 原文存档
-
----
-
-## Ch17.016 MolmoMotion：语言引导的 3D 运动预测模型
+## Ch17.013 MolmoMotion：语言引导的 3D 运动预测模型
 
 > 📊 Level ⭐⭐⭐ | 7.8KB | `entities/molmomotion-language-guided-3d-motion-forecasting.md`
 
@@ -1535,74 +1277,11 @@ MolmoMotion 建立在 Molmo 2 视觉语言模型之上，利用其跨模态理�
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
-→ 原文存档
+→ [原文存档](https://huggingface.co/blog/allenai/molmomotion)
 
 ---
 
-## Ch17.017 Normalizing Trajectory Models
-
-> 📊 Level ⭐⭐⭐ | 6.6KB | `entities/normalizing-trajectory-models.md`
-
-> -> 原文存档
-
-## 摘要
-Normalizing Trajectory Models (NTM) 是 Jiatao Gu 等人于 2026 年 5 月提交至 arXiv 的新型扩散模型变体，专注于解决少步生成（few-step generation）场景下传统扩散模型假设失效的核心问题。传统扩散模型将采样分解为大量小步高斯去噪——这一假设在生成被压缩至少数几步时物理上不成立。NTM 的核心创新在于：将每一步 reverse 过程建模为 expressive conditional normalizing flow，并通过精确似然训练实现端到端优化。在文生图基准上，NTM 仅用 4 步采样即可匹配或超越强基线，同时唯一保留对生成轨迹的精确似然计算能力。
-
-本文于 2026 年 5 月 8 日提交至 arXiv，作者团队来自 Apple ML Research。
-
-## 背景问题：少步生成的困境
-扩散模型（DDPM、Flow Matching 等）的采样通常需要数十至数百步去噪，导致推理成本高昂。现有的少步加速方法分为三类：
-
-- **Distillation（蒸馏）**：将多步教师模型的知识蒸馏至少步学生模型，但训练不稳定且需要大规模数据
-- **Consistency Training（一致性训练）**：强制不同噪声水平下的样本映射至同一直流，核心思路接近 consistency model，但牺牲了似然框架
-- **Adversarial Objectives（对抗目标）**：引入 GAN式判别器提升少步质量，但失去精确似然，无法进行概率评估
-上述方法有一个共同缺陷：**均放弃了似然框架**，这在压缩评估、异常检测、模型选择等下游任务中是致命的。
-
-## 核心创新
-### 条件归一化流建模每步 Reverse 过程
-NTM 的核心架构决策是将每步 reverse 去噪过程建模为**条件归一化流（Conditional Normalizing Flow）**。归一化流通过可逆变换实现精确似然计算，但传统上每步独立建模时表达能力受限。NTM 的解法是：
-
-- **每步内（within-step）**：使用浅层可逆（invertible）块，保证该步内的精确似然可计算
-- **跨步（across-step）**：引入深层并行预测器，捕捉整个生成轨迹上的依赖关系
-这种"浅层可逆 + 深层跨步"的设计在表达能力和计算效率之间取得了工程折中：每步只做轻量变换，用跨步的深度网络补充表达力，避免了深层可逆网络的高计算成本。
-
-### 精确轨迹似然与自蒸馏
-NTM 的精确轨迹似然（exact trajectory likelihood）使其天然支持**自蒸馏（self-distillation）**：一个轻量级去噪器可以在 NTM 模型自身的 score 基础上进行微调，产出高质量 4 步采样结果。这意味着 NTM 可以"自我压缩"——无需外部多步教师模型，自己教自己完成少步化。
-
-### 预训练初始化
-NTM 支持从预训练的 flow-matching 模型初始化，这利用了 flow matching 的线性轨迹假设。Flow matching 通过线性插值噪声和真实数据预测向量场，NTM 将这一线性预测过程参数化为条件归一化流，从线性轨迹出发逐步学习更复杂的反转动态。这一特性显著加速了 NTM 的收敛。
-
-## 深度分析
-### 架构哲学：精确描述 vs. 实用速度
-NTM 的定位是**保留完整似然框架的少步方法**，这使其与单纯追求速度的方法（GAN-based、adversarial distillation）本质不同。速度不是唯一目标；**保持概率语义**——即能够精确计算 p(x|z)——同样重要。在需要严格概率计数的场景（如数据压缩、异常检测、生成质量评估），NTM 的优势是其他少步方法无法替代的。
-
-### 与 Consistency Models 的本质区别
-Consistency Models（CM）通过强制不同 t 时刻的输出与 t=0 的一致来实现少步化，本质上是一种隐式的蒸馏，丢失了似然信息。NTM 保留了精确似然，可以进行困惑度（perplexity）计算，这使得两种方法面向不同的应用场景：CM 适合对质量要求极高、对概率评估无需求的场景；NTM 适合需要概率输出的场景。
-
-### 少步化的理论基础
-传统扩散模型的"多步小步"假设在数学上对应于对 score 函数进行 Euler-Maruyama 积分。当步数极少时，积分误差主导，输出质量崩溃。NTM 通过学习每步的完整条件归一化流绕过了这一积分近似——不再依赖"小步累积"，而是直接学习粗粒度的条件变换。这在理论上解释了为什么 NTM 在 4 步下仍能保持高质量，也为进一步压缩至 2-3 步提供了方向。
-
-## 实践启示
-### 部署建议
-- 若部署场景需要 **4-8 步采样**，NTM 值得关注——在步数预算内提供精确似然输出
-- 自蒸馏机制提供了一个将大模型能力压缩到小采样器的**正规框架**，而非依赖启发式 distillation，适合需要可控压缩比的团队
-- NTM 可从预训练 flow-matching 模型热启，若已有 Flow Matching 部署基础设施，迁移成本较低
-
-### 研究方向
-- **其他领域的自蒸馏**：自蒸馏机制在强化学习（self-play）、语言模型（self-reward）中有类似应用，NTM 将这一范式引入扩散模型，值得在视频生成、3D 生成等领域探索
-- **轨迹级概率**：精确轨迹似然使得在生成轨迹级别而非样本级别进行评估成为可能，这对研究扩散模型的隐式偏差（implicit bias）有重要价值
-
-### 注意事项
-- 浅层可逆块的表达能力是否足够支撑复杂任务（如高分辨率文生图）仍需更大规模验证
-- 4 步采样的质量上限是否接近其实用上限，以及更多步数（8-16）时是否仍有优势
-
-## 相关实体
-- [Normalizing Trajectory Models](https://github.com/QianJinGuo/wiki-public/blob/main/entities/normalizing-trajectory-models-v2.md)
-- [Normalizing Trajectory Models](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ntm-normalizing-trajectory-models.md)
-
----
-
-## Ch17.018 FLAT: Feedforward Latent Triangle Splatting
+## Ch17.014 FLAT: Feedforward Latent Triangle Splatting
 
 > 📊 Level ⭐⭐⭐ | 6.5KB | `entities/flat-feedforward-latent-triangle-splatting.md`
 
@@ -1712,7 +1391,7 @@ FLAT 并非完全取代 3DGS，而是解决其特定弱点：
 
 - [AMap Abot Earth 0.5 3D Native World Model](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amap-abot-earth-0.5-3d-native-world-model.md)
 
-→ 原文存档
+→ [原文存档](https://flat-splat.github.io)
 
 ---
 ## 关联
@@ -1720,7 +1399,7 @@ FLAT 并非完全取代 3DGS，而是解决其特定弱点：
 
 ---
 
-## Ch17.019 Multimodal AI for Searchable Aerial Imagery at Scale
+## Ch17.015 Multimodal AI for Searchable Aerial Imagery at Scale
 
 > 📊 Level ⭐⭐⭐ | 6.1KB | `entities/multimodal-ai-searchable-aerial-imagery-aws.md`
 
@@ -1797,7 +1476,7 @@ AWS GenAIIC 与 Vexcel 的合作模式值得借鉴：先建评估框架（基于
 
 ---
 
-**来源**: → 原文存档
+**来源**: → [原文存档](https://aws.amazon.com/blogs/machine-learning/embed-the-world-multimodal-ai-for-searchable-aerial-imagery-at-scale/)
 
 ---
 ## 关联
@@ -1805,13 +1484,13 @@ AWS GenAIIC 与 Vexcel 的合作模式值得借鉴：先建评估框架（基于
 
 ---
 
-## Ch17.020 Moebius: 0.2B Lightweight Image Inpainting with 10B-Level Performance
+## Ch17.016 Moebius: 0.2B Lightweight Image Inpainting with 10B-Level Performance
 
 > 📊 Level ⭐⭐⭐ | 5.9KB | `entities/moebius.md`
 
 # Moebius: 0.2B Lightweight Image Inpainting with 10B-Level Performance
 
-→ 原文存档
+→ [原文存档](https://hustvl.github.io/Moebius/)
 
 ## 摘要
 
@@ -1873,7 +1552,7 @@ Moebius 的工作与当前模型压缩领域的多个方向形成呼应：
 - **结构化剪枝**：LλMI 的设计思路类似对注意力机制的结构性重构
 - **稀疏化**：Moebius 证明了极端参数压缩（<2%）在任务特化场景下完全可行
 
-这与 [模型规模推演](ch01/713-model-size-scaling-in-2023-2031.html) 中关于 sparsity 作为参数放大器的讨论形成有趣对比——Moebius 走的是另一条路：不是增加总参数并稀疏化，而是直接在架构层面大幅压缩。
+这与 [模型规模推演](ch01/491-model-size-scaling-in-2023-2031.html) 中关于 sparsity 作为参数放大器的讨论形成有趣对比——Moebius 走的是另一条路：不是增加总参数并稀疏化，而是直接在架构层面大幅压缩。
 
 ## 实践启示
 
@@ -1884,58 +1563,15 @@ Moebius 的工作与当前模型压缩领域的多个方向形成呼应：
 
 ## 相关实体
 
-- [模型规模推演](ch01/713-model-size-scaling-in-2023-2031.html) — 模型大小与硬件约束的系统分析
+- [模型规模推演](ch01/491-model-size-scaling-in-2023-2031.html) — 模型大小与硬件约束的系统分析
 - [知识代理超越前沿模型](https://github.com/QianJinGuo/wiki-public/blob/main/entities/knowledge-agents-beat-frontier-models.md) — 小模型+领域知识超越大模型的另一范式
 - 蒸馏、剪枝、量化等模型压缩技术是 Moebius 的理论背景
 
-→ 原文存档
+→ [原文存档](https://hustvl.github.io/Moebius/)
 
 ---
 
-## Ch17.021 Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation
-
-> 📊 Level ⭐⭐⭐ | 5.7KB | `entities/fine-tuning-nvidia-cosmos-predict-2-5-with-lora-dora-for-robot-video-generation.md`
-
-## 核心要点
-- Published Time: 2026-05-18T16:00:21.256Z [Back to Articles](https://huggingface.co/blog) [![Image 1: Ting-Yun Chang's avatar](https://huggingface.co/avatars/e4d63791901a7274e97d27ac879c1355.svg)](http
-## 相关实体
-- [Fine Tuning Nvidia Cosmos Predict 25 With Loradora For Robot Video Generation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tuning-nvidia-cosmos-predict-25-with-loradora-for-robot-video-generation.md)
-- [Nvidia Cosmos Fine Tuning Robot Video Generation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-cosmos-fine-tuning-robot-video-generation.md)
-- [Fine Tuning Cosmos](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tuning-cosmos.md)
-- [Nvidia Mcg Toolkit Model Documentation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-mcg-toolkit-model-documentation.md)
-- [Nvidia Agentic Systems Extreme Co Design](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-agentic-systems-extreme-co-design.md)
-
-→ 原文存档
-
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/vision-multimodal.md)
-## 深度分析
-**世界模型在机器人领域的战略价值**
-NVIDIA Cosmos Predict 2.5 本质上是一个大规模世界模型（world model），能够基于文本、图像或视频片段生成物理上可信的视频。这一能力对机器人学习具有深远意义：真实机器人轨迹数据采集成本高、速度慢，而通过微调后的世界模型生成合成轨迹，提供了一条可扩展的替代路径。微调后的模型可以生成符合特定机器人外形、任务语义和相机视角的合成数据，用于训练机器人策略——而不需要真实机器人在物理环境中反复执行任务。
-**LoRA vs DoRA 的工程取舍**
-文章给出了清晰的实验结论：LoRA 和 DoRA 在 rank=32 时收敛到几乎相同的性能。DoRA 将权重分解为 magnitude 和 direction 两个分量，理论上可以更稳定地学习低秩更新，但在这一任务上优势并不明显。这意味着对于大多数机器人视频生成任务，标准 LoRA 是更务实的选择——实现更简单，生态更成熟，调试工具更丰富。
-rank 值的选择需要权衡：
-
-- **rank=8**：adapter 文件更小，训练更快，适合快速原型验证；但指令-following（使用正确的手、正确的物体）能力受限。
-- **rank=32**：约 50M 可训练参数，指令-following 质量显著提升；几何一致性和物理可信度主要由冻结的基础模型保证，LoRA 仅负责将分布迁移到领域内。
-**Rectified Flow：生成范式的务实选择**
-Cosmos Predict 2.5 采用 rectified flow 而非 DDPM 或 Flow Matching。核心思想是线性插值噪声和数据，然后在采样过程中沿直线传输。公式 `xt = σt·noise + (1−σt)·clean` 和目标 `noise − clean` 使训练目标简化为一阶线性预测，采样路径笔直，步数需求少。这种方式在视频生成中平衡了生成质量和采样效率，对需要低推理延迟的机器人实时应用场景尤为重要。
-**评估体系的三层验证**
-文章建立了三层评估体系：
-1. **Temporal Sampson Error**：连续帧间的几何一致性，衡量时序稳定性。
-2. **Cross-view Sampson Error**：多相机视角间的几何一致性，衡量空间推理能力。
-3. **LLM-as-a-Judge**：使用 Cosmos Reason2 作为评判模型，分别从物理可信度和指令-following 两个维度打分（1-5分）。这一设计避免了纯指标评测的盲点，能够捕捉"看起来对但物理上不对"的生成瑕疵。
-
-## 实践启示
-- **起点选择 rank=8 快速验证，迭代到 rank=32 追求质量**。100 个 epoch（约 2.5 小时 8×H100）已足够产生显著提升，无需过度训练。
-- **DoRA 适用于内存极端受限或低 rank 下训练不稳定的场景**。如果你有 GPU 预算且 LoRA 在 r=8 时收敛正常，保持 LoRA。
-- **合成数据生成是 Robot Learning 的性价比之选**：用微调后的世界模型批量生成任务变体（不同物体颜色、位置、光照），扩充训练集，可显著降低真实数据采集成本。
-- **推理时使用 `fuse_lora(lora_scale=1.0)` 消除 adapter 推理开销**，合并后的模型推理速度与 base model 相当。
-- **如果需要多领域适配（如不同机器人外形或不同任务类型），分别训练多个 LoRA adapter，推理时按需切换**——adapter 文件体积小（~50MB），管理成本低。
-- **工程落地路径**：先用 GR00T 风格的小规模数据集（92个视频）验证方案可行性，再迁移到自有机器人数据集上微调。
-
----
-
-## Ch17.022 PersonaVLM — 长期个性化多模态大模型
+## Ch17.017 PersonaVLM — 长期个性化多模态大模型
 
 > 📊 Level ⭐⭐⭐ | 5.7KB | `entities/personavlm-personalized-memory.md`
 
@@ -1990,8 +1626,8 @@ Response Stage 和 Update Stage 的解耦设计值得借鉴：交互时专注生
 真正的个性化 = 持续演化的理解过程，而非静态标签。
 
 ## 相关页面
-- [ChatGPT Memory](ch01/664-chatgpt-memory.html) — OpenAI 的记忆实现对比
-- 原文存档
+- [ChatGPT Memory](ch01/460-chatgpt-memory.html) — OpenAI 的记忆实现对比
+- [原文存档](https://mp.weixin.qq.com/s/IUxhHJdXj4JoqLKgS18ubA)
 
 ## 相关实体
 
@@ -1999,50 +1635,7 @@ Response Stage 和 Update Stage 的解耦设计值得借鉴：交互时专注生
 
 ---
 
-## Ch17.023 LiteFrame: Efficient Vision Encoders Unlock Frame Scaling in Video LLMs
-
-> 📊 Level ⭐⭐⭐ | 5.2KB | `entities/liteframe-efficient-vision-encoders.md`
-
-## 核心要点
-
-- Efficient Vision Encoders for Vision-Language Models
-
-## 相关实体
-- [Liteframeefficientvisionencodersunlockframescalinginvideollms](https://github.com/QianJinGuo/wiki-public/blob/main/entities/liteframeefficientvisionencodersunlockframescalinginvideollms.md)
-- [Trackingtamperedchefclustersviacertificateandcodereuse](https://github.com/QianJinGuo/wiki-public/blob/main/entities/trackingtamperedchefclustersviacertificateandcodereuse.md)
-- [Agentexecutorgooglesdistributedagentruntime](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentexecutorgooglesdistributedagentruntime.md)
-- [How To Calculate The Inference Efficiency Ratio](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-to-calculate-the-inference-efficiency-ratio.md)
-- [Aws Sun Finance Ai Id Extraction Fraud Detection](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-sun-finance-ai-id-extraction-fraud-detection.md)
-
-→ 原文存档
-
-## 深度分析
-
-视频 LLM 扩展到长视频的核心瓶颈在于视觉 token 上下文长度的爆炸性增长。LiteFrame 论文指出，现有的主流策略是"post-hoc" token reduction——即在特征提取后减少视觉 token 以减轻 LLM 的计算开销 。然而，论文观察到一个关键问题：当这些 token reduction 方法有效减少了 LLM 的 token 数量后，主要延迟瓶颈就从 LLM 转移到了 vision encoder 的逐帧处理上 。这意味着单纯减少 token 数量并不能从根本上解决效率问题。
-
-LiteFrame 提出的解决思路是同时优化 vision encoder 和 LLM 两端。具体方案包含两个核心组件：Compressed Token Distillation (CTD) 和 Language Model Adaptation (LMA) 。CTD 的核心思想是训练一个紧凑的 student vision encoder，让它直接预测来自大型 teacher vision model 的信息密集型、时空压缩表示，从而绕过冗余计算 。LMA 则是一个轻量级的微调阶段，用于对齐压缩后的潜在空间与下游 LLM，使其能够无缝处理扩展的时间上下文（最多 512 帧） 。
-
-LiteFrame 在性能上展示了令人印象深刻的结果。在 Video-MME、MLVU 和 LongVideoBench 等多个视频理解基准测试中，LiteFrame 实现了新的延迟-精度 Pareto 前沿 。具体而言，LiteFrame 能够在固定计算预算下处理 8 倍更多的帧，总推理延迟（vision encoding + LLM prefilling）降低高达 35%，同时视频理解精度保持提升 。参数规模上，student encoder 仅使用 87M 参数，相比 teacher 模型的 304M 参数大幅减少 。
-
-从架构设计角度看，LiteFrame 的 student encoder 通过 depth-wise 1D convolutions 进行时间建模，使用 strided convolutions 进行下采样，显著降低了 FLOPs 和延迟 。值得注意的是，这种设计在 token 效率上的内在优势使得高分辨率视频的空间分辨率扩展成为可能——LiteFrame 在 HLVid 上实现了无需高分辨率训练即可达到 state-of-the-art 分数的零样本空间分辨率扩展能力 。
-
-LiteFrame 的研究来自 Google DeepMind 和首尔国立大学，其方法论反映了当前视频 AI 高效推理领域的一个核心趋势：将知识蒸馏与自适应机制结合，在压缩模型规模的同时保持甚至提升任务精度。这为在资源受限环境中部署长视频理解应用提供了可行的技术路径 。
-
-## 实践启示
-
-1. **视频 LLM 效率优化的重心已从 LLM 转向 Vision Encoder**：当 token reduction 技术将 LLM 端瓶颈消除后，vision encoder 的逐帧处理成为新的主要延迟来源。未来的视频 AI 系统设计需要将 vision encoder 的效率优化与 LLM 端优化放在同等重要的位置 。
-
-2. **知识蒸馏是实现高效视频编码器的有效路径**：CTD 通过让 student encoder 直接预测 teacher 压缩表示来绕过冗余计算，这意味着在设计视频 AI 系统时，可以利用大模型作为 teacher 指导小模型的训练，而非仅依赖手工设计的压缩规则 。
-
-3. **关注延迟-精度的 Pareto 前沿而非单一指标**：LiteFrame 的核心贡献是实现了新的 Pareto frontier，这意味着在评估视频 AI 方案时，应该在不同精度水平下测量延迟，选择在目标精度下延迟最低或在目标延迟下精度最高的方案 。
-
-4. **帧数扩展能力是长视频理解的关键**：LiteFrame 能处理 8 倍更多的帧，这直接打开了长视频（如完整电影、体育赛事）理解的可能性。对于需要处理小时级视频内容的应用，应该优先考虑支持长上下文架构的方案 。
-
-5. **参数效率的量级突破具有部署意义**：从 304M 减少到 87M 参数的突破，使得在边缘设备上运行视频理解变得更加可行。对于需要 on-device 视频分析能力的应用，这种参数规模的压缩是实现产品化的关键一步 。
-
----
-
-## Ch17.024 Xiaomi Dasheng — 通用声音基座模型 5 阶段工程实践
+## Ch17.018 Xiaomi Dasheng — 通用声音基座模型 5 阶段工程实践
 
 > 📊 Level ⭐⭐⭐⭐ | 17.2KB | `entities/xiaomi-dasheng-audio-foundation-model-2026.md`
 
@@ -2050,17 +1643,17 @@ LiteFrame 的研究来自 Google DeepMind 和首尔国立大学，其方法论�
 
 **Xiaomi Dasheng** 是小米发布的**通用声音基座模型**——让一个模型同时听懂**语音、环境声和音乐**。从一台 **8 卡机器**起步，经过 **MAE 预训练 → 大规模数据工程 → 6 维标注语义拓展 → DashengTokenizer 理解+生成统一** 五个阶段，把音频领域从"语音 / 声音 / 音乐三套独立模型"推进到"通用声音基座 + 通用描述 + 统一架构"。
 
-**核心数字**：300T 原始数据 / 146 包 / 1 年搬运 / 1 机 8 卡训练 / Base 86M (78.88) → 1.2B (**81.25**) / 音频标记**首次突破 AudioSet 50+ mAP** / MiDashengLM **22 SOTA** / TTFT **1/4** / 吞吐 **20x**。 ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
+**核心数字**：300T 原始数据 / 146 包 / 1 年搬运 / 1 机 8 卡训练 / Base 86M (78.88) → 1.2B (**81.25**) / 音频标记**首次突破 AudioSet 50+ mAP** / MiDashengLM **22 SOTA** / TTFT **1/4** / 吞吐 **20x**。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 ## 核心洞察：3 个反直觉判断
 
 ### 1. 增量优化 vs 底层重建 = 方向差异，非程度差异
 
 > **增量优化和底层重建不是程度的差异，是方向的差异。**
-> ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
+> ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 > 预研的价值之一，是帮团队识别**什么时候该换方向**。
 
-**实证**：已有的语音识别路径在特定任务上做增量优化，可以做到极致，但**做不到通用声音理解**——必须从底层重建。 ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
+**实证**：已有的语音识别路径在特定任务上做增量优化，可以做到极致，但**做不到通用声音理解**——必须从底层重建。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 ### 2. 更高的训练损失 = 更丰富的学习信号
 
@@ -2070,20 +1663,20 @@ LiteFrame 的研究来自 Google DeepMind 和首尔国立大学，其方法论�
 | **通用音频描述** | **高** | 融合语音摘要 / 环境声描述 / 音乐描述，**需要理解更复杂的语义** |
 
 > **在通用音频理解中，更高的训练损失可能意味着更丰富的学习信号。**
-> ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
+> ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 > 损失值本身不说明全部问题，**损失在度量什么可能更值得关注**。
 
 ### 3. 挑战行业假设是为了搞清楚它的边界
 
 > **挑战行业假设不是为了推翻它，而是为了搞清楚它的边界在哪里。**
-> ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
+> ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 > DashengTokenizer 的价值不是否定了 VAE，**而是证明了 VAE 不是唯一解**。
 
 ## 5 阶段技术栈
 
 ### 阶段 1：MAE（掩码自编码）预训练
 
-**关键决策**：选择 Meta 的 MAE 框架（视觉领域 → 音频迁移），而非在已有语音识别路径做增量改进。 ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
+**关键决策**：选择 Meta 的 MAE 框架（视觉领域 → 音频迁移），而非在已有语音识别路径做增量改进。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 | 维度 | MAE 思路 |
 |------|----------|
@@ -2091,7 +1684,7 @@ LiteFrame 的研究来自 Google DeepMind 和首尔国立大学，其方法论�
 | **优势** | 模型被迫学习**声音的本质结构**，而非特定任务的表面特征 |
 | **结果** | 通用声音表征，**不针对任何单任务优化** |
 
-**判别式 vs 生成式编码器**（GLAP 实验）： ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
+**判别式 vs 生成式编码器**（GLAP 实验）： ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 | 编码器类型 | 语音 | 声音 | 音乐 |
 |-----------|------|------|------|
@@ -2115,18 +1708,18 @@ LiteFrame 的研究来自 Google DeepMind 和首尔国立大学，其方法论�
 
 #### 视频-音频同步筛选
 
-**用视觉信号校验音频语义有效性**（画面中出现狗的同时有狗叫声 = 语义有效）。原始数据**无监督、无标注**，通过同步信号**伪标注**。 ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
+**用视觉信号校验音频语义有效性**（画面中出现狗的同时有狗叫声 = 语义有效）。原始数据**无监督、无标注**，通过同步信号**伪标注**。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 #### 规模扩展的实证收益
 
-**HEAR 基准**： ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
+**HEAR 基准**： ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 | 模型规模 | 参数量 | 性能 |
 |---------|--------|------|
 | Base | 86M | 78.88 |
 | 1.2B | 1.2B | **81.25** |
 
-**训练数据扩量（AudioSet 5K → 27 万小时）**： ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
+**训练数据扩量（AudioSet 5K → 27 万小时）**： ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 | 模型规模 | 额外提升 |
 |---------|---------|
@@ -2138,7 +1731,7 @@ LiteFrame 的研究来自 Google DeepMind 和首尔国立大学，其方法论�
 
 > 团队曾把训练数据集扩容至原有 **10 倍**体量，**结果出乎意料：AudioSet 公开测试集指标不升反降，切回业务场景实测效果同样变差**。
 
-**关键认知**： ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
+**关键认知**： ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 - 开源基准指标和实际业务指标**高度正相关**
 - **盲目扩量是无效的，音频数据的质量优先级远大于单纯的数据体量**
@@ -2154,13 +1747,13 @@ LiteFrame 的研究来自 Google DeepMind 和首尔国立大学，其方法论�
 
 #### 行业常规做法的局限
 
-用 ASR 转录做音频-文本对齐，**只能理解"人说了什么"**，丢弃环境声 / 音乐 / 情感 / 空间混响等信息。 ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
+用 ASR 转录做音频-文本对齐，**只能理解"人说了什么"**，丢弃环境声 / 音乐 / 情感 / 空间混响等信息。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
-**ACAV100M 数据集上损失高达 90% 潜在有用数据**——等同花了大量精力去"听懂"万物，最后在对齐环节又把大部分信息扔掉。 ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
+**ACAV100M 数据集上损失高达 90% 潜在有用数据**——等同花了大量精力去"听懂"万物，最后在对齐环节又把大部分信息扔掉。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 #### 关键突破：通用音频描述对齐
 
-**用多专家分析管道做细粒度标注**（2 秒粒度），再通过大模型合成统一描述。 ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
+**用多专家分析管道做细粒度标注**（2 秒粒度），再通过大模型合成统一描述。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 #### 6 维度 Caption（ACAVCaps）
 
@@ -2173,12 +1766,12 @@ LiteFrame 的研究来自 Google DeepMind 和首尔国立大学，其方法论�
 | 5 | **场景环境** | 空间信息 |
 | 6 | **音频类型** | 类别 |
 
-配套 **MECAT Benchmark**，**全部开源**。 ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
+配套 **MECAT Benchmark**，**全部开源**。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 #### 反直觉的成功
 
 > 拆分 6 个维度做细粒度标注，**一开始大家都不看好**，认为多维度信息冗余。
-> ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
+> ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 > 但后续做音频生成实验时发现，**六维精细化标注恰恰是模型生成真实声场音频的关键**。
 
 #### 业务结果
@@ -2214,7 +1807,7 @@ LiteFrame 的研究来自 Google DeepMind 和首尔国立大学，其方法论�
 
 ### 阶段 5：DashengAudioGen（进行中）
 
-让生成的声音**更贴近真实场景**——**带环境音、背景噪声、回声和远近感的完整声学场景**。 ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
+让生成的声音**更贴近真实场景**——**带环境音、背景噪声、回声和远近感的完整声学场景**。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 - 详情：https://nieeim.github.io/Dasheng-AudioGen-Web/
 - 代码：https://github.com/xiaomi-research/dasheng-audiogen
@@ -2242,9 +1835,9 @@ LiteFrame 的研究来自 Google DeepMind 和首尔国立大学，其方法论�
 
 ### 1. "方向差异" vs "程度差异" 是预研决策的关键
 
-大多数团队倾向于在已有路径上做增量优化（"再加点数据" / "再调调超参"），因为**风险更小、可解释性更高**。 ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
+大多数团队倾向于在已有路径上做增量优化（"再加点数据" / "再调调超参"），因为**风险更小、可解释性更高**。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
-但 Xiaom Dasheng 团队的判断是：**当优化走到极致，不应该继续加码，而是得换一条路重新出发**。这种"换方向"决策需要： ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
+但 Xiaom Dasheng 团队的判断是：**当优化走到极致，不应该继续加码，而是得换一条路重新出发**。这种"换方向"决策需要： ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 - **对行业假设的清晰理解**（"已有路径的优化边界在哪"）
 - **对替代方案的深度预研**（"MAE 在视觉的成熟经验能否迁移到音频"）
@@ -2252,35 +1845,35 @@ LiteFrame 的研究来自 Google DeepMind 和首尔国立大学，其方法论�
 
 ### 2. "数据质量 > 数据体量" 的音频领域实证
 
-与 NLP / CV 领域的 scaling law 不同，**音频领域的盲目扩量可能反降**： ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
+与 NLP / CV 领域的 scaling law 不同，**音频领域的盲目扩量可能反降**： ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 - 公开视频 80-90% 含人声，**纯粹的环境声 / 音乐稀缺**
 - 10 倍数据扩充**反而让模型变差**
 - **视频-音频同步伪标注**是质量筛选的关键
 
-这与 LFD（Loss Function Development）的 "eval 大小优先于答案可见性" 是不同维度的质量哲学——但**都强调质量 > 体量**。 ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
+这与 LFD（Loss Function Development）的 "eval 大小优先于答案可见性" 是不同维度的质量哲学——但**都强调质量 > 体量**。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 ### 3. "通用描述 > ASR 对齐" 是音频对齐范式转变
 
-传统音频-文本对齐 = **ASR 转录**（只能对齐"说了什么"，丢弃 90% 潜在有用信息）。 ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
+传统音频-文本对齐 = **ASR 转录**（只能对齐"说了什么"，丢弃 90% 潜在有用信息）。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
-Xiaomi Dasheng 的 6 维 caption = **多专家分析管道** + **大模型合成统一描述**（对齐"声学场景全貌"）。 ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
+Xiaomi Dasheng 的 6 维 caption = **多专家分析管道** + **大模型合成统一描述**（对齐"声学场景全貌"）。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
-**这种范式转变的代价**：训练损失更高（因为任务更复杂）。但**更高的损失 = 更丰富的学习信号**。 ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
+**这种范式转变的代价**：训练损失更高（因为任务更复杂）。但**更高的损失 = 更丰富的学习信号**。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 ### 4. "高维特征不适合直接生成" 的假设被证伪
 
-行业通行假设：生成模型需要**压缩到低维隐空间**（VAE 哲学），高维特征信息"散"、解码器难以利用。 ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
+行业通行假设：生成模型需要**压缩到低维隐空间**（VAE 哲学），高维特征信息"散"、解码器难以利用。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
-DashengTokenizer 通过**冻结语义特征 + 仅注入声学信息**，证明**高维特征可以直接用于生成**。这一突破**解放了音频合成对 VAE 架构的依赖**。 ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
+DashengTokenizer 通过**冻结语义特征 + 仅注入声学信息**，证明**高维特征可以直接用于生成**。这一突破**解放了音频合成对 VAE 架构的依赖**。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 ### 5. 6 维 caption 的"意外"价值印证预研容忍度
 
 > **预研中被质疑最多的方向，有时恰恰是最有价值的。**
-> ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
+> ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 > 6 维标注从"没人看好"到"成为关键"，说明预研团队需要**容忍一定程度的"低效探索"**。
 
-这是 Xiaomi Dasheng 团队最值得借鉴的方法论：**当某个方向不被人看好时，先小规模验证再判断**——而不是直接放弃或被共识压倒。 ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
+这是 Xiaomi Dasheng 团队最值得借鉴的方法论：**当某个方向不被人看好时，先小规模验证再判断**——而不是直接放弃或被共识压倒。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 ## 实践启示
 
@@ -2293,19 +1886,19 @@ DashengTokenizer 通过**冻结语义特征 + 仅注入声学信息**，证明**
 
 ### 自建基座的工程清单
 
-1. **预研阶段**：先识别现有路径的优化边界，再决定是否换方向 ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
-2. **数据工程**：先质量后体量；用**多模态同步信号**做伪标注 ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
-3. **模型选择**：参考**其他领域的成熟方法**（MAE 从视觉迁移到音频） ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
-4. **规模扩展**：在**小规模验证有效**后再扩量（避免盲目 scaling） ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
-5. **语义对齐**：用**多专家 + 大模型合成**做细粒度 caption，而非单一 ASR ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
-6. **架构统一**：探索**理解+生成统一模型**，挑战 VAE 类架构假设 ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
-7. **开源验证**：开源基准上验证是预研最诚实的信号 ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
+1. **预研阶段**：先识别现有路径的优化边界，再决定是否换方向 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
+2. **数据工程**：先质量后体量；用**多模态同步信号**做伪标注 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
+3. **模型选择**：参考**其他领域的成熟方法**（MAE 从视觉迁移到音频） ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
+4. **规模扩展**：在**小规模验证有效**后再扩量（避免盲目 scaling） ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
+5. **语义对齐**：用**多专家 + 大模型合成**做细粒度 caption，而非单一 ASR ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
+6. **架构统一**：探索**理解+生成统一模型**，挑战 VAE 类架构假设 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
+7. **开源验证**：开源基准上验证是预研最诚实的信号 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 ### DashengAudioGen 的下一步
 
 > 让生成的声音**更贴近真实场景**——**带环境音、背景噪声、回声和远近感的完整声学场景**。
 
-这与 Snowflake 的"Artifacts = 持续更新的受治理视图"是不同维度的"真实感"——DashengAudioGen 关注**听觉真实感**，Snowflake 关注**数据真实感**。 ^["Xiaomi Dasheng：8卡起步的 AI 工程实践"]
+这与 Snowflake 的"Artifacts = 持续更新的受治理视图"是不同维度的"真实感"——DashengAudioGen 关注**听觉真实感**，Snowflake 关注**数据真实感**。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
 
 ## 相关实体
 
@@ -2320,144 +1913,15 @@ DashengTokenizer 通过**冻结语义特征 + 仅注入声学信息**，证明**
 - [Snowflake Agentic Enterprise Summit 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/snowflake-agentic-enterprise-summit-2026.md)（Snowflake 真实感场景对照）
 - [Loss Function Development Elvis Sun Goal Loop 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/loss-function-development-elvis-sun-goal-loop-2026.md)（LFD 质量 > 体量同源思想）
 
-→ 原文存档
+→ [原文存档](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)
 
 ---
 
-## Ch17.025 Self-Filming Guide by Hello World Media
-
-> 📊 Level ⭐⭐⭐⭐ | 11.6KB | `entities/helloworldmedia.notion-self-filming-guide-by-hello-world-media-2f60dfa5e2e180cfa.md`
-
-## 1. Camera Setup | 相机设置
-### iPhone ProRes Log 设置（需调色时）
-如计划进行后期调色（color grade），建议开启 Log 格式以获得最大调色空间。iPhone 需配置 Apple ProRes：
-1. **Settings > Camera > Formats**，开启 **Apple ProRes**
-2. **ProRes Encoding** 设为 **Log**
-3. 在相机 App 中启用 Log 选项
-4. 分辨率设为 **4K，24fps**，曝光略微欠曝 **-1.0**
-5. 横向拍摄，比例 **16:9**
-> [!warning] Log 格式会占用大量存储空间，确保提前清理空间或导出到硬盘。
-画面在屏幕上看起来灰蒙蒙或褪色是正常现象——这是 Log 格式故意保留高光和阴影细节的表现， 不要在此阶段调整颜色或添加滤镜 。
-如不确定或未看到 Log 选项，跳过此步骤即可。
-
-### Pixel Pro 系列 Log 设置
-Log 录制功能主要适用于 **Pixel 8 Pro、Pixel 9 Pro、Pixel 9 Pro XL** 及以上机型。步骤如下：
-1. 打开 Camera App，切换到底部 Video 模式
-2. 点击左下角设置（齿轮图标）或向上滑动取景框
-3. 选择 **Pro** 模式
-4. 分辨率选 **4K**，帧率选 **24fps**（电影感）
-5. 在 Video Coding 中选择 **Log**（注意：这会自动禁用 "10-bit HDR"）
-> [!tip] 非 Pro 版 Pixel 或旧款机型原生 App 不支持 Log，推荐使用第三方 App：**Filmic Pro** 或 **Blackmagic Camera**。
-Log 文件体积远大于标准 MP4，拍摄前确保存储空间充足。
-
-### 基础拍摄规范
-- 使用**后置摄像头**而非前置自拍摄像头 
-- 相机**置于眼线高度** 
-- 头顶上方留出空间（不要把人顶格构图） 
-- 拍摄前**擦拭镜头** 
-- 建议购入简单 iPhone 三角架，便于调整角度和稳定画面 
----
-
-## 2. Lighting | 照明
-### 自然光优先
-尽量选择**有大窗户的房间**，让自然光透入——这能以最小成本提升画面质感 。
-
-### 布光原则
-| 原则 | 说明 |
-|---|---|
-| **Shadow side of face** | 人物脸部朝向阴影侧，而非被光直射的一侧  |
-| **Key light 与自然光一致** | 添加主光源时，角度应与自然光方向一致  |
-| **White balance** | 若使用人造光源，白平衡偏白（4400k–4600k），与自然光保持一致  |
-| **Diffuse（散射）** | 用白色薄布（sheet）将光线散射，不要直接照射面部，让光线均匀分布在脸上  |
-
-### 布光技术
-**Split Lighting（分侧布光）**：将人物脸部一半照亮、一半处于阴影中。灯光置于被摄体侧方，可搭配黑色绒布制造 negative fill（负填充），确保另一侧足够暗。
-**Short Lighting（短光）**：主光照射脸部离相机较远的一侧（face's far side），使脸部的宽阔侧（broad side）处于阴影中，营造更多对比和戏剧感。
----
-
-## 3. Audio | 音频
-### 麦克风
-建议购入 **lav mic（领夹麦克风）**，例如 [DJI Lab Mic](https://www.amazon.com/DJI-Microphone-Ultralight-Detail-Rich-Cancelling/dp/B0DDL8WGH5)（$100 以下），支持 USB-C 直插手机，适合远距离收音和未来访谈录制。
-
-### 环境规则
-- 选择**最安静的房间** 
-- 关闭风扇、空调及其他产生背景噪音的设备 
-- 做 **10 秒测试录音**并回听确认 
-> [!warning] 即使有 AI 降噪工具，背景噪音过大的音频也难以处理——类比来说，就像无法把烤好的蛋糕还原成生面团。 后期会进行音频清理和压缩，但请确保录制时没有背景噪音，必要时重录。
----
-
-## 4. On-Camera Performance | 镜头表现
-- **Pitch 心态**：想象自己在《广告狂人》（Mad Men）里推销广告概念，给镜头注入能量（oomph） 
-- **眼神**：直视镜头 
-- **表情**：用眼睛微笑（smile with your eyes），营造亲切感 
-- **手势**：自然时可以使用手势，但不要过度 
----
-
-## 深度分析
-### 核心优先级框架
-本文建立了清晰的拍摄优先级金字塔：**Story（叙事） > Lighting（照明） > Audio（音频）**。这一框架与专业影视制作原理高度一致——叙事是灵魂，视觉和听觉是呈现质量的瓶颈。指南的核心价值在于将"专业视频制作"这一通常需要完整团队的概念，压缩为单人可操作的最低可行方案。
-
-### Log 格式的战略意义
-Log 录制在专业影视制作中是标准化流程，但在消费级内容中极少被提及。本文将 Log 格式定位为"可选但推荐"选项，体现了务实的专业主义——既不强制要求增加后期复杂度，又为有调色需求的用户提供了清晰路径。这种处理方式与苹果和谷歌将 Log 隐藏在专业模式中的产品设计思路一致。
-
-### 布光方法论的文化根源
-本文介绍的 **Split Lighting** 和 **Short Lighting** 技术源自好莱坞经典Portrait Photography 传统。Split Lighting 通过创建明暗分界来增强戏剧感，Short Lighting 则通过照亮脸部远离镜头的一侧来营造神秘感和深度。这种方法的本质是通过控制阴影来控制视觉注意力，与文艺复兴时期的明暗对比法（Chiaroscuro）有相同的视觉原理。
-
-### 音频优先原则的技术依据
-"无法从不安静的音频中恢复人声"——这一警告基于信号处理的物理限制。AI 降噪工具（如Adobe Podcast Enhance、 Podcastle 等）在信噪比尚可时效果显著，但当背景噪音能量接近人声时，频谱重叠使得分离在数学上几乎不可能。"无法把烤好的蛋糕还原成生面团"这一类比精准描述了这一不可逆过程。
-
-### 手机摄影的民主化效应
-本文的实质是"将数万美元专业设备的价值提炼到百元级消费方案"。iPhone ProRes Log、Pixel Pro 系列的 Log 支持、三脚架、领夹麦克风——这些加起来总价不超过 $200，但能达到专业商业视频的视觉标准。这种 democratization of professional production 正在深刻改变品牌内容生产的成本结构。
----
-
-## 实践启示
-### 拍摄前检查清单（10 分钟准备流程）
-1. **存储检查**：确认至少有 10GB 可用空间（Log 模式 1 分钟约 1GB）
-2. **镜头清洁**：用微纤维布擦拭前后摄像头
-3. **相机设置**：后置摄像头 → 4K 24fps → 眼线高度 → 头顶留白
-4. **环境扫描**：关闭所有产生噪音的设备，选择最大窗户的房间
-5. **布光预判**：确认自然光方向，将脸部置于阴影侧
-6. **音频测试**：10 秒录音回放，确认无背景噪音
-7. **设备清单**：三脚架固定 → Lav Mic 连接测试 → 开始录制
-
-### 布光场景决策树
-```
-有自然大窗户？
-├── 是 → 脸部对窗，背对其他光源，自然光为主光
-└── 否 →
-    ├── 单光源方案 → 灯置侧面，扩散布，距离面部 45°
-    └── 双光源方案 → Key light（角度与窗光一致）+ 填充光（柔光箱）
-```
-
-### 音频降噪优先级
-在所有后期处理之前，音频质量问题的优先级最高：
-
-- **录制时**：选择最安静房间，关闭所有设备，做 10 秒测试
-- **后期前**：如果背景噪音明显，立即重录而非依赖降噪工具
-- **降噪工具**：作为最后手段，用于处理风声、HVAC 等规律性低频噪音
-
-### 从本文延伸的核心能力
-掌握本文技术后，可进一步探索的方向：
-
-- **色彩匹配**：多镜拍摄时的色彩一致性处理
-- **稳定器**：手持运镜的节奏感训练（Gimbal / DJI OM 系列）
-- **剪辑节奏**：30 秒 vs 60 秒 vs 3 分钟内容的信息密度设计
-- **脚本结构**：开场钩子、前 3 秒注意力捕获、CTA 转化路径
----
-> 来源：原文存档
-## 相关实体
-- [Helloworldmedia.Notion Self Filming Guide By Hello World Media 2F60Dfa5E2E180Cfa](https://github.com/QianJinGuo/wiki-public/blob/main/entities/helloworldmedia.notion-self-filming-guide-by-hello-world-media-2f60dfa5e2e180cfa.md)
-- [Self Filming Guide By Hello World Media 2F60Dfa5E2E180Cfa6Efcef23C882E57](https://github.com/QianJinGuo/wiki-public/blob/main/entities/self-filming-guide-by-hello-world-media-2f60dfa5e2e180cfa6efcef23c882e57.md)
-- [How To Build Audio Transcription Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-to-build-audio-transcription-agent.md)
-- [Stable Audio 3](https://github.com/QianJinGuo/wiki-public/blob/main/entities/stable-audio-3.md)
-
----
-
-## Ch17.026 Normalizing Trajectory Models
+## Ch17.019 Normalizing Trajectory Models
 
 > 📊 Level ⭐⭐⭐⭐ | 10.0KB | `entities/ntm-normalizing-trajectory-models.md`
 
-> -> 原文存档
+> -> [原文存档](https://arxiv.org/abs/2605.08078)
 
 ## Summary
 [2605.08078] Normalizing Trajectory Models
@@ -2532,7 +1996,7 @@ NTM 的重要性不仅在于性能提升，更在于它揭示了扩散模型少�
 1. **准备支持可逆架构的工具链**：NTM 的可逆块需要特殊的反向传播处理。确保你的自动微分框架可以高效处理这类架构。
 2. **评估边缘部署可能性**：如果推理成本是关键瓶颈，NTM 的少步采样可能使扩散模型首次部署在边缘设备上（如手机、IoT 设备）。开始评估相关硬件支持和模型压缩需求。
 3. **跟踪学术进展的时间表**：NTM 仍处于学术阶段，从论文到稳定开源实现通常需要 6-12 个月。建议关注相关 GitHub 仓库和 HuggingFace 集成的时间线。
-→ 原文存档
+→ [原文存档](https://arxiv.org/abs/2605.08078)
 
 ## 相关实体
 - [Normalizing Trajectory Models](https://github.com/QianJinGuo/wiki-public/blob/main/entities/normalizing-trajectory-models-v2.md)
@@ -2540,7 +2004,7 @@ NTM 的重要性不仅在于性能提升，更在于它揭示了扩散模型少�
 
 ---
 
-## Ch17.027 豆包 Seed 2.0 Lite — Agent 前置多模态感官层
+## Ch17.020 豆包 Seed 2.0 Lite — Agent 前置多模态感官层
 
 > 📊 Level ⭐⭐⭐⭐ | 8.2KB | `entities/doubao-seed-2-lite.md`
 
@@ -2643,7 +2107,7 @@ Gemini 3 Flash 音频输入 7.2 元/Mtok，看起来比豆包的 9 元/Mtok 便�
 - 超过 0.02 元/分钟的处理需要检查 prompt 是否过于冗余
 
 ## 相关页面
-- 原文存档
+- [原文存档](https://mp.weixin.qq.com/s/ZAAEQzBvziU6iqzyUpnXuw)
 - [Claude Code](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-architecture.md) — 主要工作台（被补上眼睛和耳朵的那位）
 - [Agent 输入侧瓶颈背景](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-context-management-working-set.md)
 ## 相关实体

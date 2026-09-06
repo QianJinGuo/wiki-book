@@ -56,13 +56,13 @@ AI 代码分析需要分层策略，而不是对所有代码一视同仁。首�
 - [5Thingstoknowabouttheclarityact](https://github.com/QianJinGuo/wiki-public/blob/main/entities/5thingstoknowabouttheclarityact.md)
 - [Cybersecqwen 4B Why Defensive Cyber Needs Small Specialized Locally Runnable Mod](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cybersecqwen-4b-why-defensive-cyber-needs-small-specialized-locally-runnable-mod.md)
 
-→ 原文存档
+→ [原文存档](https://www.wiz.io/blog/ai-threat-readiness-framework)
 
 - [from ssh to rest: a security-driven modernization of slack](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-ssh-to-rest-a-security-driven-modernization-of-slacks-e.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-privacy-landscape.md)
 ## 关联阅读
-- 原文存档 — Wiz 官方原文
+- [原文存档](https://www.wiz.io/blog/ai-threat-readiness-framework) — Wiz 官方原文
 
 ---
 

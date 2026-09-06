@@ -13,10 +13,10 @@
 - [Skill Engineering Ai As Algorithm](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-engineering-ai-as-algorithm.md)
 - [Hermes Agent Getting Started Guide 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-getting-started-guide-2026.md)
 - [Llm Raiders Private Ai Server](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-raiders-private-ai-server.md)
-- [Pi Mono Github](../ch01/252-pi-mono-github.html)
+- [Pi Mono Github](https://github.com/QianJinGuo/wiki-public/blob/main/entities/pi-mono-github.md)
 - [我用 Skillmd 做了一个简历生成器](https://github.com/QianJinGuo/wiki-public/blob/main/entities/我用-skillmd-做了一个简历生成器.md)
 
-→ 原文存档
+→ [原文存档](https://mp.weixin.qq.com/s/FIHet6uF2T2Q_MTh5O4udA)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/ai-skill-design.md)
 ## 深度分析

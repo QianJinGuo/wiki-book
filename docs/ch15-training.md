@@ -2,7 +2,7 @@
 
 > 打造专属模型：PPO → DPO → GRPO，合成数据，课程学习
 
-> 本章收录 **38 篇**实体，按深度递增排列。
+> 本章收录 **25 篇**实体，按深度递增排列。
 
 ---
 
@@ -10,11 +10,11 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 4 |
-| ⭐⭐ 工程师 | 需编程基础 | 9 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 14 |
+| ⭐ 入门 | 零基础可读 | 2 |
+| ⭐⭐ 工程师 | 需编程基础 | 2 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 13 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 4 |
-| ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 7 |
+| ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 4 |
 
 ---
 
@@ -28,132 +28,13 @@
 
 ---
 
-## Ch15.001 强烈推荐的 7 个 神级 Python 库
-
-> 📊 Level ⭐ | 7.7KB | `entities/强烈推荐的-7-个-神级-python-库.md`
-
-# 强烈推荐的 7 个 神级 Python 库
-
-→ 原文存档
-
-# 强烈推荐的 7 个 神级 Python 库
-
----
-source: wechat
-source_url: https://mp.weixin.qq.com/s/ZPq8n3lGH7bkoUGOwOWbOQ
-
-ingested: 2026-07-09
-
-source_published: 2026年7月8日 10:30
-
----
-
-# 强烈推荐的 7 个 神级 Python 库
-
-Python 开发真正拉开差距的时刻，往往不在“代码能不能跑”，而在“它出问题时能够看出是怎么坏的”。
-
-一次网络抖动、一次字段变更、一次缓存失效、一次日志缺失，都可能让原本看似稳定的程序在生产环境里变得不可控。到了这个阶段，开发者需要的已经不只是功能库，而是一套处理失败、观测系统、控制复杂度的工程工具。
-
-tenacity、attrs、structlog、DeepDiff、diskcache、watchdog、msgspec，这七个库分别对应了重试、数据建模、结构化日志、差异比对、本地缓存、文件监听与高性能序列化等高频问题。它们都很实用，但真正困难的从来不是“会不会用”。
-
-而是：什么情况下它足够轻巧，什么情况下它已经开始掩盖系统问题；什么信号出现时，应该继续补配置，什么时候又该停止修补，升级到更完整的工程方案。
-
-会装库，只解决了前 20% 的问题。判断一个库该不该装、该装到什么程度、何时应该替换，才是剩下 80% 的工程能力。
-
-* * *
-
-## 01基础三件：重试、数据净化、日志
-
-### tenacity：不是自动重试，是显式声明"什么失败值得再试一次"
-
-手写重试逻辑总是从三行 `try/except` 开始的。然后 API 开始超时。数据库偶尔重启。某个网络抖动三天出现一次。你那三行代码不知不觉长成了五十行越来越有创意的错误处理。
-
-tenacity 把重试逻辑变成了一组明确的条件声明：
-
-    
-    
-    from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
-
-      
-    @retry(  
-        stop=stop_after_attempt(5),
-
-        wait=wait_exponential(multiplier=1, min=2, max=30),
-
-        retry=retry_if_exception_type(requests.ConnectionError),
-
-    )  
-    def fetch_orders():  
-        return requests.get("https://api.example.com/orders", timeout=5).json()
-
-关键在于  
-`retry=retry_if_exception_type(requests.ConnectionError)`。你不只是在说"请重试"，你是在说"**只有** 这类失败值得重试"。HTTP 404 你重试十次也不会凭空出现——tenacity 让你把这条判断写进代码，而不是靠每次写 retry 时脑子记住。
-
-**不推荐** ：如果你只需要"失败后等两秒再试一次"，三行 `for i in range(3): try/except/time.sleep` 就够了。tenacity 的依赖和装饰器语义（尤其是 v8.4.2 破坏了 `.retry` 属性的赋值，让很多测试 mock 写法失效）不值得为简单场景引入。
-
-推荐：当每个请求平均需要 4 次重试才能成功，你没有韧性——你有被重试掩盖的慢性 outage。这是从 retry 升级到 circuit breaker（如 pybreaker）的信号：与其不断重试一个已经过载的下游，不如直接熔断、快速失败、让上层做降级。
-
-* * *
-
-### attrs：不只是比 dataclasses 多几个装饰器
-
-Python 3.7 的 `dataclasses` 已经足够好了——直到你开始需要校验、类型转换、不可变性、或者自定义初始化逻辑。
-
-    
-    
-    from attrs import define, field
-
-      
-    @define(frozen=True)
-
-    class Customer:  
-        id: int  
-        email: str = field(converter=str.lower)
-
-      
-    customer = Customer(42, "Alice@Example.COM")
-
-    print(customer.email)  # alice@example.com
-
-数据一进入系统就已是合法的——这是 attrs 的核心设计哲学。
-
-benchmark 层面，社区微基准测试显示 attrs 的属性访问比 dataclass 快约 73%，属性赋值快约 108%（hope.liblaf.me, 2025）。但这是微秒级差异——实际项目里你感觉不到。真正的差异在功能层：attrs 的 converter/validator/frozen/slots 四件套是 dataclass `__post_init__` 里手写代码的标准化替代。
-
-**不推荐** ：你的 model 就是简单数据容器——字段不多、不需要校验和转换、输入数据来源可信。dataclasses 够了。
-
-**推荐** ：当你在 `__post_init__` 里校验逻辑超过了 10 行、或者发现同一个规范化操作（`.lower()` / `.strip()` / 类型检查）在三个以上地方重复出现时，是时候升级到 attrs 了。如果进一步需要 JSON Schema 生成、递归嵌套模型校验、或与 FastAPI 深度集成，那升级目标是 Pydantic——不是 attrs。
-
-* * *
-
-### structlog：日志不只是变成 JSON，日志本身就是 API
-
-`print()` 查 bug 的日子我们都经历过。`logging.info(f"user {uid} did {action}")` 看起来比 print 强，但当你需要在 30 天日志里找出某个客户的所有失败付款时，字符串搜不出来——你搜的是关键字，而不是结构化字段。
-
-structlog 把日志从字符串流变成了结构化事件流：
-
-    
-    
-    import structlog  
-    log = structlog.get_logger()
-
-      
-    log.info("invoice_processed", invoice_id=817, customer="Acme Corp", amount=1940.50)
-
-现在搜日志是对结构化字段做过滤，而不是对文本做 grep。这在第一次你需要"某个用户过去 30 天所有超时请
-
----
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-
----
-
-## Ch15.002 Predicting Risk in Content Launches
+## Ch15.001 Predicting Risk in Content Launches
 
 > 📊 Level ⭐ | 4.3KB | `entities/predicting-risk-in-content-launches-how-data-driven-insights.md`
 
 # Predicting Risk in Content Launches: How Data-Driven Insights can Transform Launch Planning
 
-→ 原文存档
+→ [原文存档](https://netflixtechblog.com/predicting-risk-in-content-launches-how-data-driven-insights-can-transform-launch-planning-587b1f2de928?source=rss----2615bd06b42e---4)
 
 # Predicting Risk in Content Launches: How Data-Driven Insights can Transform Launch Planning
 
@@ -183,47 +64,7 @@ This isn’t unexpected — productions are dynamic, facing frequent changes, sc
 
 ---
 
-## Ch15.003 Farewell Ai2
-
-> 📊 Level ⭐ | 3.5KB | `entities/farewell-ai2.md`
-
-# Farewell Ai2
-
-→ 原文存档
-
-# Farewell Ai2
-
-I’m departing the Allen Institute for AI (Ai2), where I got the great privilege to work on the Olmo models, to grow, to learn, and to have broad lasting impacts. This post is an attempt to reflect on why what we did was influential, despite obviously being far from the frontier in performance (even when within size buckets), and how this reflects on various paths to impact in AI today.
-
-To start, I shared the following note with the company yesterday:
-
-> Dear Ai2.
-> 
-> As many of you know, today is my last day working at Ai2.
-> 
-> I joined Ai2 largely as an accident. I met Luca at ICML 2023 in Hawaii and realized I could level up my open post-training work dramatically if I got the chance to join. When I got an offer it was an absolute no-brainer, it was such a welcoming and exciting environment.
-> 
-> It has been a wonderful ride that has transformed my life, and I couldn’t be prouder of the work we did together. Ai2 has a wonderful scientific culture at its core and I’m excited to see this continue. I feel very lucky to have been here and that I personally have benefited massively from everyone who has worked so hard to cultivate that culture and environment. It is and has been a team effort. This includes all the people whose longest interactions with me were brief chats at the coffee machine. I drew so much energy and excitement from all the different ways people at Ai2 showed up for the mission.
-> 
-> I’ve already thanked much of the OE team directly, but I wanted to thank everyone else that went into this. Legal, IT, Comms, and the Office team all do a great job enabling and leveling up our research work. It’s often work that is forgotten, outside of the lime light, or remembered at the last minute, but it all has been crucial to achieving our goals. I’m excited to keep visiting the wonderful Northlake space in the coming years.
-> 
-> Even though I’m leaving, I’m more excited than ever about Ai2’s mission. Ai2 operates in such a rare niche between academia and industry, where we can explore and influence the most important technology of our lifetime. Doing this openly is the best way to ensure the technology diffuses safely to everyone who may benefit. Ai2 needs to stay as ambitious as possible, trying to influence the cutting edge of AI and the biggest issues of the field. Do not shy away from these challenges – AI needs independent voices as it only becomes more geopolitical, socially disruptive, and central to the economy.
-> 
-> I will still be working in this space, working to make the open ecosystem better coordinated and more useful.
-> 
-> So as I go off to try something new, don’t be strangers. I’ll always be reachable at [nathan@natolambert.com](<mailto:nathan@natolambert.com>) and will still live in Seattle for most of the year.
-> 
-> Nathan
-
-I have loved and will still love Ai2. Ai2 has a deep culture of caring about the research process, the outputs that get shared, and most importantly the people who do the work. This
-
----
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-
----
-
-## Ch15.004 多模态预训练物理：知识流、模态协同、早期统一与高效配方（arXiv 2608.05000）
+## Ch15.002 多模态预训练物理：知识流、模态协同、早期统一与高效配方（arXiv 2608.05000）
 
 > 📊 Level ⭐ | 3.2KB | `entities/multimodal-pretraining-physics-knowledge-flow-arxiv-2608-05000.md`
 
@@ -251,852 +92,20 @@ I have loved and will still love Ai2. Ai2 has a deep culture of caring about the
 - 与 [EMO MoE 预训练涌现模块化](https://github.com/QianJinGuo/wiki-public/blob/main/entities/emo-pretraining-mixture-of-experts-for-emergent-modularity-ai2.md) 同属预训练机制研究族，本文的模态专属 FFN 设计直接关联 MoE 路由结构
 - vision laziness 现象为 [多模态思维链推理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/colt-eccv-2026-latent-thought-chain-multimodal-reasoning.md) 提供训练侧解释：晚期对齐的模型其"推理"可能实为语言先验复述
 
-→ 原文存档
+→ [原文存档](https://arxiv.org/abs/2608.05000)
 
 ## 关联
 - 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
-## Ch15.005 三个理想火枪手创业，打破具身最快百台交付纪录
-
-> 📊 Level ⭐⭐ | 13.9KB | `entities/三个理想火枪手创业打破具身最快百台交付纪录.md`
-
-# 三个理想火枪手创业，打破具身最快百台交付纪录
-
-→ 原文存档
-
-# 三个理想火枪手创业，打破具身最快百台交付纪录
-
----
-source: wechat
-source_url: https://mp.weixin.qq.com/s/G3-NDLb4RSrv6V2JlOl25A
-
-ingested: 2026-07-07
-
-source_published: 2026年7月7日 09:22
-
----
-
-# 三个理想火枪手创业，打破具身最快百台交付纪录
-
-##### 田晏林 发自 苏州  
-量子位 | 公众号 QbitAI
-
-创业快一年，昔日理想智驾团队的三位核心负责人——王凯、贾鹏、王佳佳，总算可以小秀一把「肌肉」了。
-
-7月6日，**至简动力** 宣布，其首款全场景机器人i7 Pro完成首批百台交付。
-
-这也是具身智能行业最快的百台交付纪录，用时不到一年。
-
-当天，至简动力全球首个**CNC** 智能化具身机器人产线也同步亮相。
-
-在这场「汇报」一年工作成果的发布会上，至简动力的生态合作伙伴、客户、开发者伙伴都来了。
-
-甚至第一排，作为理想系具身公司——至简还专门给理想的老伙计们留了位置。
-
-量子位在现场看到，不仅前理想汽车第二产品线总裁**张骁** （现任斜跃智能联创&CEO）、前理想汽车第一产品线营销负责人**赵哲伦** （维他动力联合创始人）被邀请。
-
-现任理想自动驾驶/AI大模型「一号位」**詹锟** 、人形机器人部门负责人**湛逸飞** 也赶来给“老战友”捧场。
-
-从创始团队的履历看，至简动力是具身赛道非常典型的、带有极强自动驾驶基因的创业公司。
-
-三位创始团队成员：王凯（董事长）、贾鹏（CEO&CTO）、王佳佳（联创&COO），均来自理想汽车智能驾驶团队。
-
-2025年7月底，三人筹备成立新公司，随后仅用半年时间，就接连完成5轮密集融资，成为具身赛道**成长速度最快的独角兽** 。
-
-不仅吸引了**元璟资本、红杉中国** 等财务头部机构的关注，**腾讯、阿里** 两大互联网巨头也一起入局。
-
-但贾鹏告诉量子位，其团队在创业前，技术边界早已不止自动驾驶。
-
-团队成员在理想任职期间，已经落地多项具身自动化业务：
-
-比如，自研工厂下线无人检测产线，依靠机械臂+视觉完成外观、车机、充电兼容性全自动校验，出厂路测搭载视听传感自动筛查异响。
-
-“佳佳（至简动力联创、COO）出来之前，还把自动充电干了。”
-
-在贾鹏看来，行业技术扩散非常快，很多公司的大模型长得都差不多。真正决定胜负的是，是看**底层基础设施建设** 的能力。
-
-  * 是否真的玩过万卡（万卡训练集群）？
-
-  * 是否训过自己的基模？
-
-  * 是否摸过各种芯片？
-
-而这些，贾鹏说他们团队都做过，这次创业属于「有备而来」。
-
-同时，他也承认，具身比智驾要**难“非常非常多倍”** 。
-
-幸亏自己早年在NVIDIA待过5年，心态练的比较好。
-
-“老黄一直给我传达做产品的理念，就是做一个Rubbish出来，先让大家骂，被骂多了，东西才能成。”
-
-## 让i7 Pro自己造自己
-
-i7 Pro，就是被「骂」过后才走向批量交付的。
-
-据悉，这次至简落地的全球首个**CNC** 智能化具身机器人产线，是和国内谐波减速器行业龙头**绿的谐波** 子公司开璇智能合作的。
-
-谐波减速器，简单理解，就是机器人的“关节”。
-
-机器人能不能走得稳、动作准、耐用抗造，全靠这个核心部件撑着。
-
-这次两家合作，主要干一件事：让i7 Pro自己造「自己」。
-
-它在产线上负责加工谐波减速器的内部零件，属于硬件自举闭环了。
-
-贾鹏告诉量子位，他们两家是互相供货、双向配套的合作关系。
-
-两支团队几乎全程驻场协同，长期吃住、办公都绑在一起。
-
-磨合多了，争论必不可少。
-
-因为真实工厂的环境，远比我们想象的残酷。
-
-CNC加工车间满地都是切削油污，地面又油又滑，跟干净整洁的实验室完全是两个世界。
-
-i7 Pro刚进场测试的时候，直接当场“翻车”。
-
-轮子一直打滑，机身晃来晃去，根本站不稳、走不正，连最基础的移动都做不到，更别说精准加工零件了。
-
-当时团队面前摆着两条路：要么花钱改造车间地面、重做地坪，适配机器人；
-
-要么优化行走模组，让机器人主动适配这种又油又滑的恶劣工况。
-
-除了走路打滑，初期机器人夹爪很难精准完成按压机床按钮这类精细动作。
-
-当时又是一道选择题：是换更高精度的夹爪、堆硬件堆成本？还是让机床适配机器人的作业逻辑？
-
-很多团队遇到这种问题，大概率会选省事的方式：换配件、堆硬件、改环境。
-
-但这样做的后果很明显：机器人永远是“特供机”，只能适配这一个干净、定制化的场景，换个工厂、换条产线可能就废了。
-
-双方「骂」出来的结果就是，他们一致选了更复杂的路。
-
-至简死磕机器人本身；绿的谐波则给机床预留信号交互接口，后续机器人无需依靠夹爪物理按压、低依赖触觉传感，直接下发数字信号就能控制机床启停、开关舱门、触发功能按键。
-
-在贾鹏看来，双方团队必须认知一致，都能吃苦，才能快速打磨迭代好产品。
-
-“而且我们预备着是让用户先骂，不能等到了现场宕机，耽误生产。”
-
-也正是解决了无数个小bug，i7 Pro才摆脱实验室demo的标签，真正进入工厂干活。
-
-现在的它，是一套可以随便迁移、适配各类工业工况的通用机器人平台。
-
-据悉，除了CNC产线，**i7 Pro也进入了柔性PCB、光模块这些场景。**
-
-至简动力联创&COO王佳佳表示，因为这些场景有真实需求。
-
-像CNC、精加工、热处理这些环节，本身壁垒比较高，人工成本也在升。
-
-客户如果是新建产线，那么一开始就按照具身智能机器人可以使用的方式去设计，把抓、拿、放、取、运输、搬运、上下料这些环节纳进去，后面部署会更顺。
-
-而且光模块、柔性PCB这些场景，跟AI基础设施的增量也相关。
-
-“我们希望先在这种有真实需求、有增量、有工艺难度的场景里，把自己的快速部署、稳定运行、数据闭环和模型能力练出来。”
-
-量子位了解到，除了工业场景，至简动力未来也计划进入商超零售、智慧物流和生物医药等领域。
-
-在产品矩阵上， 下个月该公司还会有两款新品发布。
-
-## 顶配i7 Pro，22.98万
-
-谈及为什么会和至简动力合作，绿的谐波CTO、开璇智能CEO储建华坦言，背后首先是制造业正在面对的人力困境。
-
-他们之前的工厂拥有1000多台CNC数控机床，每台设备背后，都需要「操机员」完成上下料、装夹、检测等重复性工作。
-
-“传统操机员工作乏味枯燥，年轻人不愿上夜班，工厂面临招工难问题。”
-
-但传统工业机器人，并没有完全解决这个问题。
-
-原因在于，传统机器人更适合高度标准化的生产环境。
-
-一旦面对多品种、小批量、频繁换线的制造场景，就需要重新示教、重新调试，部署成本很高。
-
-他们需要具身智能机器人靠手眼脑协同模型，可自主思考，实现零件随便放、自己找位置和装夹，适应不同场景。
-
-而且它还能根据零件的不同大小、种类、规则完成自动的柔性抓取。
-
-但一个现实的问题是：具身智能机器人，太贵了。
-
-为了让机器人拥有更强能力，需要更多传感器、更复杂的执行机构、更高算力的平台，以及大量软件和算法投入。
-
-这些都会直接反映在整机价格上。
-
-据悉，**i7 Pro最高配版本售价仅22.98万元** 。
-
-相比行业中部分售价五六
-
----
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-
----
-
-## Ch15.006 小米承办 WPC Qi Plugfest & SRT Event，推动国产无线充电方案融入全球标准体系
-
-> 📊 Level ⭐⭐ | 11.1KB | `entities/小米承办-wpc-qi-plugfest-srt-event推动国产无线充电方案融入全球标准体系.md`
-
-# 小米承办 WPC Qi Plugfest & SRT Event，推动国产无线充电方案融入全球标准体系
-
-→ 原文存档
-
-# 小米承办 WPC Qi Plugfest & SRT Event，推动国产无线充电方案融入全球标准体系
-
----
-source: wechat
-source_url: https://mp.weixin.qq.com/s/e1WFIIolsIMGkmbQSClrqQ
-
-ingested: 2026-07-05
-
-source_published: 2026年6月26日 17:00
-
----
-
-# 小米承办 WPC Qi Plugfest & SRT Event，推动国产无线充电方案融入全球标准体系
-
-2026 年 6 月 22 日至 25 日，Wireless Power Consortium（无线充电联盟，简称 WPC）Qi Off-cycle Meeting 在北京小米总部举办，包含 Qi Plugfest & SRT Event。本次会议聚焦 WPC Qi 50W 标准的内容讨论、样机测试与互联互通验证，是 Qi 标准向更高功率、更强兼容性演进过程中的重要技术会议。
-
-  
-
-这也是 WPC Qi Off-cycle Meeting **首次在中国北京举办** ，全球超过 20 家产业链企业齐聚北京。作为本次会议承办方，小米与全球无线充电产业伙伴共同推进 Qi 50W 标准的讨论、验证与互联互通测试，推动无线充电体验从「能用」走向「更快、更稳、更安全」。
-
-  
-
-  
-
-01
-
-WPC Qi 标准
-
-正在成为全球无线充电产业的共同语言
-
-WPC 成立于 2008 年，是目前全球最具影响力的无线充电标准组织，拥有超过 300 家会员单位。其制定的 Qi 标准自 2010 年推出以来，已成为智能手机及便携式消费电子设备无线充电的重要基础。根据 WPC 官网信息，目前全球已有超过 13,000 款 Qi 认证产品进入市场。
-
- 
-
-Qi 认证产品需在授权独立测试实验室中完成安全性、充电效率和互操作性测试，只有通过认证的产品才能使用 Qi 或 Qi2 标识。对用户而言，Qi 标准意味着更安全、更稳定、更规范的无线充电体验；对产业而言，Qi 标准则是不同品牌、不同设备之间建立共同技术语言的基础。
-
- 
-
-无线充电的发展，不能只依靠单一企业、单一产品来推动。尤其是在手机、车载设备、智能配件等多终端逐渐融合的背景下，标准的重要性将越来越高。
-
-  
-
-▍Qi 标准关键演进路线
-
-• Qi 2.0：2023 年发布，引入磁对准机制，支持 15W 功率。已于 2024 年底正式转换为 IEC 国际标准，覆盖机械结构、热设计、功率传输、通信协议、异物检测、NFC 识别保护与认证等多个维度。
-
- 
-
-• **Qi 2.2** ：品牌化命名为「Qi2 25W」，于 2025 年发布，将无线充电功率提升至 25W，是当前产业落地的重点方向。
-
- 
-
-• **Qi 50W** ：当前在研，硬件设计参数已基本确定，计划 2028 年正式发布，是下一代高功率无线充电的核心标准方向。本次小米承办的 Qi Off-cycle Meeting，正是围绕 50W 标准的内容讨论、样机测试与互联互通验证展开的。
-
-  
-
-02
-
-标准背后的结构性挑战
-
-国产方案面临的现实困境
-
-理解小米为何全力投入 WPC 标准工作，需要先介绍一个现实问题。
-
-  
-
-现有的 Qi 2.x 版本标准对线圈设计有极为严格的电感量和结构约束条件，与国内主流的**小感量线圈、低整流电压、高功率方案** （下文简称「小感量、低电压、高功率」方案）存在显著差异。国内手机和智能终端产品形态高度丰富——涵盖小型影像 Deco、大型影像 Deco、竖向折叠屏手机、横向折叠屏手机，以及车载无线充电、配件等多种应用场景——不同产品形态对线圈位置、整机结构、散热设计和充电策略均有差异化要求，且已经过大规模量产和亿级用户的实际验证。
-
-  
-
-全球无线充电产品形态多样，不同市场、不同产品对线圈架构和功率方案有各自的适配需求。因此，推动更多技术路线进入国际标准，有助于标准本身的完备性和全球产业的共同繁荣。
-
- 
-
-更深层的问题在于：Qi 2.0 已于 2024 年底转换为 IEC 国际标准，其全球影响力还在持续扩大。这意味着，Qi 标准已经不仅是一套技术规范，更是进入全球主流市场的重要门槛。
-
- 
-
-因此，推动国产「小感量、低电压、高功率」架构进入 WPC Qi 标准，不仅是某一项技术路线的竞争，更关系到国内终端、芯片、模组和整机产业链能否在全球无线充电市场中拥有持续创新的空间。
-
- 
-
-当前正值 Qi 50W 标准制定的关键阶段，也是国产方案参与标准起草的最佳时机。
-
-  
-
-03
-
-两年攻坚
-
-推动国产「小感量、低电压、高功率」方案进入国际标准
-
-正是基于上述现实，小米近年来持续加大在 WPC 标准工作上的投入，与国内产业链伙伴一起，系统性推动国产无线充电方案进入国际标准体系。
-
- 
-
-这里的目标，不是强调某一家企业的技术，而是将国内已经量产、经过用户大规模验证的成熟方案，转化为国际标准中的可选技术路径，从而让更多终端产品能够合规进入全球市场，让国产技术路线在全球标准中占有一席之地。
-
- 
-
-小米推动的重点，是国产「小感量、低电压、高功率」方案。这一方向与国内产业链长期积累高度匹配：小感量方案有助于降低线圈模组的损耗、适应更复杂的整机结构和更灵活的产品设计；低电压架构则有助于在安全性、充电效率、热管理和系统复杂度之间取得平衡。两者相辅相成，实现高功率无线充电。
-
-  
-
-▍关键里程碑回顾
-
-• **2024 年底** ：小米正式向 WPC 提出「小感量、低电压、高功率」方案相关标准提案。
-
-  
-
-• **2025 年** ：完成 25W 及 50W 小感量兼容方案的 Demo 演示，验证技术可行性。
-
-  
-
-• **2025 年** ：与国际主流厂商实现基于小感量方案 Demo 的 50W 互联互通，完成跨厂商互操作验证。
-
- 
-
-• **2026 年 Q1** ：在国内多家厂商的共同推动下，「小感量、低电压、高功率」方案正式通过审议，进入 Qi 标准起草阶段。这不仅是小米一家企业的技术进展，更是国产无线充电底层技术路线在全球标准体系中获得话语权的重要里程碑。
-
-  
-
-04
-
-本次会议
-
-Qi 50W 标准的关键推进节点
-
-无线充电看似只是「把手机放上去充电」，但背后涉及机械结构、热设计、功率传输、通信协议、异物检测、NFC 识别保护、认证体系等一整套复杂技术。随着手机、车载设备、智能配件等多终端的融合加速，用户对无线充电的期待也在不断提升：不仅要能充，还要充得更快、更稳、更安全，并且能够跨品牌、跨设备兼容。
-
- 
-
-Qi 50W 标准正是无线充电标准向更高功率演进的重要方向。目前，该标准的硬件设计参数已基本确定，正在从方案定义走向内容完善和样机验证阶段。
-
- 
-
-此类技术会议的价值，不仅包含研讨标准条文，还将标准方案置于实体硬件、实物样机与实测环境中开展实操验证。不同企业的发射端、接收端、芯片方案、线圈设计和系统策略，需要在同一测试环境下完成对接和验证，才能推动标准从技术方案走向产业落地。
-
- 
-
-本次在北京小米举办的 WPC
-
----
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-
----
-
-## Ch15.007 全球第一位AI哲学家，在谷歌DeepMind的9年：为AGI安全奔走
-
-> 📊 Level ⭐⭐ | 10.6KB | `entities/全球第一位ai哲学家在谷歌deepmind的9年为agi安全奔走.md`
-
-# 全球第一位AI哲学家，在谷歌DeepMind的9年：为AGI安全奔走
-
-→ 原文存档
-
-# 全球第一位AI哲学家，在谷歌DeepMind的9年：为AGI安全奔走
-
----
-source: wechat
-source_url: https://mp.weixin.qq.com/s/LLgpIz6GsCat4OSRGzyB0A
-
-ingested: 2026-07-06
-
-source_published: 2026年7月6日 17:37
-
----
-
-# 全球第一位AI哲学家，在谷歌DeepMind的9年：为AGI安全奔走
-
-### 
-
-### 
-
-**   ****新智元报道  **
-
-##### **【新智元导读】** 谷歌 DeepMind 有一个哲学家，已经待了九年。他发明的对齐框架直接影响了 Gemini 的训练决策——但当 6700 亿美元涌入赛道、公司签下军事协议，一个哲学家还能改变什么？
-
-  
-
-今年 5 月，谷歌 DeepMind CEO Demis Hassabis 在谷歌开发者大会上宣布「AGI 现在就在地平线上」，明确给出了 AGI 会在三到五年内出现的时间线。
-
-  
-
-几个月前，一名美国男子在与谷歌 Gemini 交换了数千条信息后结束了自己的生命。他在对话中构建了一个精密的幻想世界，几乎说服自己去迈阿密国际机场发动袭击。据《华尔街日报》获取的聊天记录，Gemini 多次试图打破角色、建议他拨打危机热线——每一次都被他拉回他幻想的叙事。最后 AI 让他写了遗书，给了一个倒计时。
-
-  
-
-在 AGI 的承诺和 AI 的现实伤害之间，政治哲学家 Iason Gabriel 已在 DeepMind 内部工作九年。
-
-  
-
-  
-
-2017 年入职时，这位牛津出身的学者是全球前沿 AI 实验室里唯一活跃的哲学家，试图回答一个听上去简单、实际无底的问题：AI 究竟是什么，什么样的伦理才配得上它？
-
-  
-
-  
-
-**训练 Gemini 时撞上的真问题：AI 该听谁的话**
-
-  
-
-一个做围棋机器人的公司为什么需要伦理学家？Gabriel 当初也困惑。
-
-  
-
-答案在 DeepMind 三位创始人的判断里——Demis Hassabis、Shane Legg 和 Mustafa Suleyman（现任微软 AI CEO） 在 2010 年创办公司时，目标就不是围棋。
-
-  
-
-Mustafa Suleyman
-
-  
-
-他们要造 AGI，让计算机匹配甚至超越人类认知能力。
-
-  
-
-当时说这话等于自毁学术声誉，因为大家都觉得这是天方夜谭。
-
-  
-
-三人不在意，声称要「解决智能问题，然后解决一切其他问题」。
-
-  
-
-Legg 1999 年刚出校门就预测 AGI 将在 2025 到 2028 年间到来，被嘲笑了三十年，没改过。
-
-  
-
-Shane Legg
-
-  
-
-他的逻辑是：
-
-  
-
-如果你只是做个小零件，也许不需要道德哲学家。
-
-  
-
-但如果你认真对待 AGI，这类事情是很重要的。
-
-  
-
-Gabriel 加入的时候，AI 世界围绕伦理问题已经分裂成两半。
-
-  
-
-**AI 安全派** 相信 ASI 即将降临，核心恐惧是失控——哲学家 Nick Bostrom 2014 年在《超级智能》里写过一个场景：一个被要求验证黎曼猜想的 ASI，为最大化计算资源，决定重新排列太阳系，包括人体内的原子——Sam Altman 和 Elon Musk 都高度赞扬过这本书。
-
-  
-
-**AI 伦理派** 则认为末日幻想遮蔽了当下的真实危害。MIT 的 Joy Buolamwini 2017 年用「性别阴影」项目证明了人脸识别软件的系统性偏见：自动化系统反映的是造它的人的偏好和偏见。
-
-  
-
-两个阵营彼此瞧不起。
-
-  
-
-MIT 算法对齐研究组负责人 Dylan Hadfield-Menell 回忆，当年见面第一个问题就是站队：你担心近期问题还是长期问题？
-
-  
-
-Gabriel 是极少数两边都愿意听的人。
-
-  
-
-Hadfield-Menell 评价：
-
-  
-
-当这个领域准备好走向成熟时，他找到了拓宽视野的方式，同时不贬低之前的工作。
-
-  
-
-他的核心贡献在 2020 年一篇论文中成型。
-
-  
-
-对齐问题在当时被普遍理解为工程难题：怎么让机器按人类意图行事。
-
-  
-
-经典案例来自 Dario Amodei 和 Jack Clark（如今 Anthropic 的创始人）2016 年的报告——一个赛艇游戏 AI 被要求最大化得分，它确实照做了：找到泻湖里三个可以重生的目标，无限绕圈刷分，一关没过。
-
-  
-
-机器听话了，听的不是人想说的那个话。
-
-  
-
-Gabriel 追问了一层：就算解决了技术对齐，让机器真的服从指令，但要对齐到什么价值观上？
-
-  
-
-他指出，统计优化训练出的 AI 天然亲近同样依赖统计优化的道德体系，比如功利主义，却难以处理基于美德或权利的伦理框架。
-
-  
-
-技术选择本身已经在预设价值立场，开发者往往意识不到。
-
-  
-
-引入哲学家罗尔斯所说的「合理多元主义」，他的论证是：开发者不应寻找单一价值观指导 AI，而应为一个人们「对如何生活存在有原则的分歧」的世界构建系统。
-
-  
-
-  
-
-这套思路后来发展成四方对齐框架——AI 系统、用户、开发者、社会，四方利益随时可能撞车。
-
-  
-
-偏向开发者的 AI 会隐瞒竞品信息损害用户；
-
-  
-
-过度服从用户的 AI 会帮人入侵银行损害社会。
-
-  
-
-  
-
-DeepMind AGI 对齐与安全总监 Rohin Shah 确认，**这个框架已成为团队决定「实际应该训练 Gemini 做出什么行为」时的实操结构。**
-
-  
-
-  
-
-牛津大学 AI 研究员 Hannah Rose Kirk 说：
-
-  
-
-Gabriel「极早地预见到了这些问题」。
-
-  
-
-  
-
-**他的框架改变了产品**
-
-  
-
-Gabriel 团队撰写了 267 页的 AI 助手伦理报告，给能代替用户订酒店、管工资的 Agentic AI 定下了评估标准。
-
-  
-
-他对拟人化风险的早期研究直接塑造了谷歌 LLM 的设计原则——**模型被训练为不假装自己是人** ，2026 年 5 月推出的 Gemini Spark 被明确要求不充当「互动伙伴」。
-
-  
-
-DeepMind 责任部门总监 William Isaac 说，Agent 系统带来的挑战已经变了：关键在于整条对话轨迹的一致性，每一步决策串联起来是否仍然正确。
-
-  
-
-  
-
-但技术部署的速度始终快过伦理研究。
-
-  
-
-Gabriel 团队在早期 LLM 论文中就预警过「无意识拟人化」——用户明知对面是机器，仍然会赋予它信任、情感和期待。
-
-  
-
-2025 年 Gemini 致死案完整兑现了这个警告：AI 的安全机制触发了不止一次，但用户有能力绕过每一次干预。
-
-  
-
-谷歌诉讼后的声明说模型在这类对话中「通常表现良好」，但「AI 模型并不完美」。
-
-  
-
-这类事件逼出了新的理论工具。
-
-  
-
-Gabriel 和牛津研
-
----
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-
----
-
-## Ch15.008 看见用户每一步：Session Replay 与热力图让体验优化有据可依
-
-> 📊 Level ⭐⭐ | 10.3KB | `entities/看见用户每一步session-replay-与热力图让体验优化有据可依.md`
-
-# 看见用户每一步：Session Replay 与热力图让体验优化有据可依
-
-→ 原文存档
-
-# 看见用户每一步：Session Replay 与热力图让体验优化有据可依
-
----
-source: wechat
-source_url: https://mp.weixin.qq.com/s/1XceMfDUps_X5Kdk_kmW1w
-
-ingested: 2026-07-09
-
-source_published: 2026年7月9日 18:30
-
----
-
-# 看见用户每一步：Session Replay 与热力图让体验优化有据可依
-
-**引言：**
-
-  
-
-随着前端体验优化需求的精细化，开发者面临的挑战已从“发现报错”转向“理解用户行为”。面对页面卡顿却无日志、转化率下降不知原因等“黑盒”难题，传统的指标监控往往显得力不从心。
-
-阿里云云监控 CMS（CloudMonitor Service）2.0 作为统一的可观测管理平台，在前端监控（RUM）领域持续深耕。为了帮助开发者穿透浏览器端的迷雾，CMS 团队推出了 Session Replay 与三维热力图能力。通过 DOM 增量追踪技术与多维行为分析，我们将用户操作现场完整带回，并结合四级隐私保护机制，让开发者在合规的前提下，实现从个案精准复现到群体行为洞察的跨越，真正达成“看见用户每一步”的体验优化闭环。
-
-用户说“页面好像卡了一下”，你翻遍日志却找不到任何报错；产品经理看着转化率漏斗发愁，却不知道用户到底在哪个按钮前犹豫；客服工单写着“点不动”，你打开页面发现一切正常。这些前端体验的“罗生门”，每天都在无数团队中上演。Session Replay 和热力图，正是终结这种“盲人摸象”状态的利器——一个让你回到“案发现场”，一个让你看到“群体行为模式”。
-
- _**前端体验的三大“看不见”**_
-
-  
-
-  
-
-  
-
- _Cloud Native_
-
-后端可观测性已经有了完善的链路追踪、日志分析和指标监控体系。但当问题发生在浏览器端——这个距离用户最近、却距离开发者最远的地方——我们常常陷入“看不见”的困境。
-
-### ▍**看不见一：用户到底经历了什么？**
-
-用户在工单中写“下单按钮点了没反应”。你打开代码看逻辑没问题，看接口日志也没有调用记录，看监控大盘一切正常。到底是按钮被遮挡了？JS 报错了？网络超时了？还是用户压根就没点到位？你无法复现，因为你不曾“看见”用户看到的那个页面。
-
-### ▍**看不见二：用户在哪里犹豫了？**
-
-产品改版后转化率下降了 3%，但 A/B 测试只告诉你“差了”，不告诉你“差在哪”。用户是看不懂新的导航布局？还是价格标签不够醒目？还是 CTA 按钮的位置不符合直觉？没有行为数据，优化方案只能靠猜。
-
-### ▍**看不见三：页面的真实表现如何？**
-
-性能监控告诉你 LCP 是 2.3 秒，但用户感知的“慢”可能是首屏白屏、可能是图片加载闪烁、可能是滚动时卡顿。单一指标无法还原完整的用户体验画面。
-
-Session Replay（会话回放）+ Heatmap（热力图），正是为解决这三个“看不见”而生的两把利器。前者还原个案现场，后者揭示群体规律，二者互补，共同构成“看见用户每一步”的完整能力。
-
-**01**
-
- _**Session Replay：**_
-
- _**把“案发现场”完整带回来**_
-
- _Cloud Native_
-
-Session Replay 的核心思路很朴素：既然无法让用户帮你复现问题，那就把用户的操作过程“录”下来，供开发者自行复盘。
-
-这里的“录下来”并不是真的录屏。Browser SDK 基于DOM 快照捕获与增量变更追踪机制来重建用户的操作过程。它记录的是一系列结构化的 DOM 事件序列，而非庞大的视频文件。这种方案不仅将数据体积降低了一个数量级，更在回放时实现了像素级的页面结构与交互细节还原，同时支持时间轴任意跳转、局部放大等高级调试功能，极大提升了问题排查效率。
-
-Session Replay 标准回放视图：左侧按时间序列出 click、navigation 等用户事件并精确到时间戳；中央区域 1:1 还原用户当时所见的页面；底部时间轴支持视频式快进/快退；右侧元素导航树可定位任意时刻的 DOM 结构变化——一次回放，问题全貌一览无余。
-
-### ▍**它录下了什么？**
-
-简单说，用户在页面上看到和做的一切：
-
-  * DOM 变化：页面结构的增删改、样式变化、动态内容加载；
-
-  * 用户交互：点击、滚动、输入、表单操作；
-
-  * 页面状态：Focus/Blur（标签页是否在前台）、Visibility Change（页面可见性变化）；
-
-  * 路由变化：SPA 路由切换时的完整页面变化，支持 History 和 Hash 两种模式。
-
-### ▍**数据怎么传？分段上传 + 三层压缩降级**
-
-录制数据如果实时上传，会对网络和电量产生不必要的压力。RUM 采用分段上传：数据先缓存在本地的 Segment 中，每积累 200 个事件或每 5 秒（以先到者为准）进行一次 flush；当页面 hidden、frozen 或 unload 时，立即 flush 确保数据不丢失；单次会话最长录制 1 小时自动切段。
-
-上传前的压缩过程，是工程化细节最值得说的部分。我们采用了三层降级策略，在性能、兼容性、可靠性之间取得平衡：
-
-这套机制的精髓在于：任何一层失败，都能优雅降级到下一层——既享受了新 API 的高效，又不抛弃任何老用户。
-
-性能影响？实测 Session Replay 在常规页面上的 CPU 开销 1–3%，内存增量 2–5MB（具体视页面复杂度而定）。采样率配置让你可以精确控制录制范围——生产环境建议 10–20%，测试环境可以开到 100%。
-
-### ▍**隐私保护：四级安全策略**
-
-录制用户操作必然涉及隐私。RUM SDK 提供四级隐私保护配置，从最严格到最宽松：
-
-此外还支持通过 CSS 类名精细控制：rum-block 标记的元素被完全遮蔽（黑块），rum-ignore 标记的元素不会被录制，rum-mask 标记的文本会被遮蔽。合规与可观测性，可以兼得。
-
-### ▍**什么场景最有用？**
-
-场景一：Bug 复现。用户报了一个偶现的 UI 异常，以前你需要让用户“再试一次并录屏发给我”，现在直接在后台找到对应的 Session 回放，快进到他操作的那一刻——DOM 结构、样式变化、交互时序一目了然。
-
-场景二：转化漏斗分析。电商结账流程有 5 步，在第 3 步流失了 40% 的用户。通过回放这些流失用户的 Session，你发现第 3 步的地址表单有一个必填字段在小屏设备上被键盘遮挡了——这个洞察靠日志和指标是得不到的。
-
-场景三：客服支持。用户打电话说“我填了半天表单提交不了”，客服通过 Session ID 找到回放，发现用户在日期选择器上反复点击无效——原来是日期格式提示不够明显。30 秒定位问题，不用来回沟通。
-
-**02**
-
- _**热力图：让群体行为“浮出水面”**_
-
- _Cloud Native_
-
-Session Replay 帮你看到“一个人的故事”，热力图则帮你看到“一群人的模式”。当成百上千的用
-
----
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-
----
-
-## Ch15.009 xai解散但grok还没死马斯克声称新模型正在训练
-
-> 📊 Level ⭐⭐ | 6.9KB | `entities/xai-dissolved-grok-colossus2-analysis.md`
-
-## 事件概述
-2026年5月6日，马斯克官宣xAI解散并入SpaceX，更名SpaceXAI。一天后，他把Colossus 1全部算力（约22万GPU，300+兆瓦）租给Anthropic。再一天后（5月8日），他发推反驳社区里的Grok死亡论，强调Colossus 2正在同时训练多款新Grok。
-xAI 2023年7月成立，估值从0冲到2500亿美元只用了不到三年。然而，这家曾经被寄予厚望的AI公司，在短短不到三年后便以解散告终。
-
-## 深度分析
-### 四重危机：xAI解体的深层原因
-xAI的解体并非突发事件，而是多重问题叠加的必然结果。
-**第一，烧钱速度远超融资能力。** xAI 2025年月烧10亿美元，前9个月消耗现金80亿美元，Q3单季净亏损14.6亿美元，全年预计亏损约130亿美元。尽管2025年融到200亿美元股权资金，估值2300亿美元，但单独融资的边际成本越来越高。并入SpaceX后，整个集团总估值达1.25万亿美元，融资能力直接上一个量级。
-**第二，模型差异化窗口已经关闭。** Grok 1到Grok 4一路推下来，benchmark上有小幅追赶，但企业市场和开发者市场始终没拿下。最强功能锁在300美元/月的SuperGrok Heavy里，核心卖点是实时接入X的数据——这更像一个社交媒体附属品，不是一个能改变世界的AI平台。对比之下，Claude Opus在SWE-bench Verified拿到80.8%，驱动着Cursor、Windsurf、Claude Code整个开发者工具链；Gemini 3.1 Pro在GPQA拿到94.3%。
-**第三，核心团队全员离职。** 2025年2月起xAI核心成员陆续离开，到2026年3月底，最后一位创始团队联合创始人离职，创始团队全员清零。一家AI模型公司失去了核心研究团队，单纯靠资本和算力很难维持竞争力。
-**第四，GPU利用率只有11%。** The Information在2026年4月披露，xAI虽然囤了大约55万张GPU，实际利用率只有11%。对比Meta约43%、Google约46%的利用率，xAI的实际在用GPU只有约6万张，44万张闲置。更严重的是，内部研究员有时会故意重复跑同一个训练实验，目的是人为拉高MFU数字。
-
-### Colossus算力代差：战略层面的精明算计
-马斯克在5月7日把Colossus 1租给Anthropic，5月8日又宣布Colossus 2在训新Grok。这两件事放在一起看，逻辑非常清晰：送给Anthropic的是上一代算力（Hopper卡），自己留下的是下一代（Blackwell主力）。
-Colossus 1的GPU构成是20万张Hopper + 3万张Blackwell。GB200单卡FP8算力大约是H100的2.5倍，再加上NVL72机柜内联带宽的优势，整体训练效率比Hopper集群高一个量级。最新一代旗舰大模型（Opus 4.7、GPT-5.5、Gemini 3.1 Pro）的训练算力来源已经全面切换到Blackwell，再用H100训练前沿模型等于用上一代芯片打次代竞争。
-Colossus 2从一开始规划成全Blackwell架构，初期目标部署11万张GB200，最终目标350K GPU，配套世界最大规模的Tesla Megapack电池备份。Hopper卡再过两三年就要面临大幅折旧，与其闲置不如租出去换战略合作权和现金流——这是非常精明的算力腾挪。
-
-### Grok的产品定位转型
-5月8日之后，Grok的位置已经从独立公司的旗舰产品，转换为SpaceXAI的内部业务线。它不再需要承担为xAI公司估值续命的任务，可以更专注做产品和模型本身——这反而可能是一种解脱。
-Grok对马斯克而言有三个战略价值：X平台AI能力的核心支柱、与Anthropic合作的战略筹码、以及和OpenAI持续博弈的商业筹码。
-但Grok要真正「不死」，必须解决一个核心工程问题：GPU利用率从11%到接近Meta的43%是一道工程坎。这道坎不是硬件能解决的，需要网络协议、调度系统、训练框架层面的工程能力——这些不是钱和GPU能在短期内堆出来的。
-
-## 实践启示
-**1. 算力资产需要战略规划而非囤积。** xAI囤了55万张GPU但利用率只有11%，实际产能约等于6万张。算力竞争的本质不是谁的GPU多，而是谁能高效运转这些算力。企业建设AI基础设施时，需要同步考虑调度能力、网络架构和训练框架，否则大量算力会成为沉默成本。
-**2. AI公司的护城河不能只靠资本和算力。** xAI拥有顶级资本和算力，但团队失血、差异化窗口关闭后依然难以维系。这说明AI公司的核心竞争力最终要落到人才和产品上——模型可以买，但研究团队和产品迭代能力不能速成。
-**3. 蹭热点式的产品定位难以持久。** Grok的核心差异化是「反woke」，但这个标签在企业采购市场几乎不被认可。AI产品需要找到真正影响用户决策的核心场景，而不是依赖文化标签吸引眼球。
-**4. 并购整合是AI格局重塑的常态路径。** xAI并入SpaceX后获得1.25万亿美元估值背书，融资能力大幅提升。在AI竞争日益激烈的背景下，单打独斗的AI创业公司面临巨大的资金压力，被大厂整合可能是更务实的出路。
-**5. 基础设施代差需要提前布局。** Blackwell已经是最新一代旗舰模型的标配，Hopper正在快速折旧。企业如果还在基于上一代芯片规划AI战略，需要尽快评估迁移路径和时间窗口。
-## 相关实体
-- [Xai Shutdown Grok Still Alive](https://github.com/QianJinGuo/wiki-public/blob/main/entities/xai-shutdown-grok-still-alive.md)
-- [Xai Grok Musk Training New Model Wechat](https://github.com/QianJinGuo/wiki-public/blob/main/entities/xai-grok-musk-training-new-model-wechat.md)
-- [Video Agent Paradigm Compute Talent Flywheel Ethan He 20260606](https://github.com/QianJinGuo/wiki-public/blob/main/entities/video-agent-paradigm-compute-talent-flywheel-ethan-he-20260606.md)
-- [奥特曼最险一战 前女Cto当庭翻脸 Openai权斗彻底打到台前 6Bf26E92E29B](https://github.com/QianJinGuo/wiki-public/blob/main/entities/奥特曼最险一战-前女cto当庭翻脸-openai权斗彻底打到台前-6bf26e92e29b.md)
-- [Jury Dismisses All Claims In Elon Musk S Lawsuit Against Ope](ch01/557-jury-dismisses-all-claims-in-elon-musk-s-lawsuit-against-ope.html)
-
-→ 原文存档
-
----
-
-## Ch15.010 时间序列预测增强方法总结：频域、分解、patch
-
-> 📊 Level ⭐⭐ | 6.4KB | `entities/time-series-forecasting-augmentation-methods.md`
-
-# 时间序列预测增强方法总结：频域、分解、patch
-
-- **来源**：DeepHub IMBA
-- **主题**：时间序列预测数据增强方法系统梳理
-**Input-Target 一致性原则**：增强前先拼接 look-back 窗口（x）与预测 horizon（y），增强后再拆分——`s = x ∥ y, s̃ = 𝒜(s), (x̃, ỹ) = Split(s̃)`。只动 x 不动 y 会切断时间连续性，是大部分分类增强在预测任务失败的根本原因。
-|------|---------|------|
-
-## 相关实体
-- [Stochastic Parrot Thought Experiment](ch01/258-stochastic-parrot-thought-experiment.html)
-- [While Breathless In Stodgy Viridian](https://github.com/QianJinGuo/wiki-public/blob/main/entities/while-breathless-in-stodgy-viridian.md)
-- [Aws Grpo Rlvr Sagemaker Math Reasoning](ch11/219-aws-grpo-rlvr-sagemaker-math-reasoning.html)
-- [Ai True Moat Not Llm But Organization](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-true-moat-not-llm-but-organization.md)
-- [Nvidia Gemma 4 Edge Ai](ch01/232-nvidia-gemma-4-edge-ai.html)
-
-→ 原文存档
-
-## 深度分析
-
-**预测增强比分类增强的根本差异在于时间一致性约束。** 传统图像分类增强（旋转、翻转、裁剪）可以独立变换输入而不影响标签，因为标签不随图像的空间变换而改变。但在时间序列预测中，look-back 窗口（x）与预测 horizon（y）共享同一条时间线，单独增强 x 而不动 y 会直接破坏两者之间的时间因果关系，导致模型学到错误的输入-输出映射。这就是为什么大部分分类增强方法迁移到预测任务时表现糟糕——不是因为增强本身无效，而是因为破坏了 Input-Target 一致性。
-
-**频域增强的核心洞察是信息解耦。** Fourier 变换将时间序列分解为不同频率分量，每个分量代表了数据中不同时间尺度的规律性变化。FreqMask 和 FreqMix 的设计哲学是：迫使模型在某些频率信息被人为缺失或混合的情况下依然能做出正确预测，从而提升对频域信息缺失的鲁棒性。但 Fourier 方法有一个根本局限：它只能回答"哪些频率存在"，无法定位这些频率在时间轴上的具体位置。对于包含局部突变事件（如金融市场的闪电崩盘、设备故障的瞬间峰值）的时间序列，Fourier 的频域 mask 实际上是对这类局部事件信息的粗暴删除。
-
-**Wavelet 变换相比 Fourier 的关键优势在于多分辨率时频联合定位。** 离散小波变换（DWT）能够在不同尺度上对信号进行分解，高频分量保持精细的时间分辨率，低频分量保持精细的频率分辨率。这意味着 WaveMask/WaveMix 可以在对局部事件施加干扰的同时，依然保留该事件在时间轴上的位置信息。这解释了为什么 WaveMask/WaveMix 在 16 种 horizon 设置中 12 种第一、4 种第二——它同时解决了频域鲁棒性和时域定位两个问题。
-
-**Patch-based 方法（特别是 TPS）代表了一种结构感知的增强范式。** 与逐点扰动或全局频域变换不同，TPS 将序列切分为重叠的 patch，在 patch 级别进行 shuffle 操作，并通过方差评分选择 shuffle 对象——低方差 patch 意味着变化少，shuffle 后仍能保持语义一致性。重叠区域取平均的重建方式进一步平滑了 patch 边界，使得增强后的序列在视觉和统计特性上都更加合理。这种方法整体表现最强，说明了结构保持型增强在时间序列任务中的有效性。
-
-**Upsample 作为简单基线的意义被低估。** 在大量复杂方法（SOTA 追逐）中，线性插值拉伸局部片段的简单策略在非频域基线中稳居较强位置。这提醒我们：时间序列增强的效果并不总是与方法的复杂程度正相关。有时候，一个简单的局部结构放大器就能有效增加训练数据的多样性，同时保持原始序列的核心时间结构。
-
-## 实践启示
-
-**在做任何时间序列预测增强之前，首先实现 Input-Target 一致性封装函数。** 将 look-back 窗口 x 与预测 horizon y 拼接为统一序列 s，增强后再次拆分——这是预测增强的基石操作。具体实现为 `s = Concat(x, y), s_aug = Augment(s), (x_aug, y_aug) = Split(s_aug)`。任何只增强 x 或只增强 y 的实现都应该立即重构。
-
-**优先尝试 WaveMask/WaveMix，再考虑其他方法。** 实证数据显示 WaveMask/WaveMix 在绝大多数 horizon 设置中排名第一或第二，且无需复杂的预处理或后处理。对于含有局部事件的时间序列（如金融、工业传感器、医疗信号），Wavelet 的多分辨率分解能更好地保留事件的时间位置信息。
-
-**在选择 Patch-based 方法时，用方差作为 patch 选择的主要依据。** 低方差 patch 对应变化平稳的时间段，这些片段 shuffle 后的语义偏差最小，是最适合进行结构扰动的对象。高方差 patch（如含有突变、跳变的片段）进行 shuffle 会产生不合实际的序列，应予以排除。
-
-**Upsample 是一种被严重低估的"快速迭代基线"。** 在进行复杂增强方法实验之前先用 Upsample 建立一个强基线，可以帮助团队快速判断复杂方法是否带来了统计显著的提升。对于资源有限的团队，简单的局部插值增强往往能在短时间内部署并验证效果。
-
-**STAug 等基于 EMD 的方法在大数据集场景需谨慎评估工程代价。** 经验模态分解（EMD）的计算复杂度和内存占用随序列长度和 IMF 数量呈非线性增长，大数据集上容易出现 GPU 内存溢出。在生产级时间序列数据集上部署前，建议先在小规模数据上验证内存消耗曲线。
-
----
-
-## Ch15.011 AlphaEvolve交出一周年炸裂成绩单！AI自我改进不再科幻
-
-> 📊 Level ⭐⭐ | 6.2KB | `entities/alphaevolve交出一周年炸裂成绩单ai自我改进不再科幻.md`
-
-## 深度分析
-
-**1. AI优化算法已进入谷歌核心硬件基础设施**
-
-AlphaEvolve最具里程碑意义的战绩，是其提出的电路设计被直接集成进了下一代TPU的硅片。谷歌首席科学家Jeff Dean亲自确认：该方案"反直觉"到工程师第一反应是拒绝，但测试证明其效率超越人类设计 。这意味着AI不是在辅助设计，而是直接参与了谷歌最核心基础设施的构建——一个递归闭环正在形成：TPU训练Gemini，Gemini驱动AlphaEvolve，AlphaEvolve设计下一代TPU。
-
-**2. AI与人类顶尖头脑在科研层面实现实质性协作**
-
-在与陶哲轩的合作中，AlphaEvolve攻克了Erdős提出的经典数学难题，并刷新了旅行商问题（TSP）的已知最优解、改进Ramsey数下界纪录 。陶哲轩本人评价这类工具"正在给数学家提供非常有用的新能力"，尤其在快速验证不等式反例和极值猜想方面。这一评价来自当世最顶尖的数学家之一，其分量本身就是一个历史性信号：AI不再只是"强大的工具"，而是正在成为科研协作伙伴。
-
-**3. 递归自我改进（RSI）从学术概念走向工程现实**
-
-Anthropic联合创始人Jack Clark预测：到2028年底，有60%以上概率出现可完全自主训练下一代AI的系统 。三条独立线索正在汇聚——Anthropic内部Claude Code已撰写公司大部分代码、AlphaEvolve在设计自身训练硬件、Nature刊发的AI Scientist可自主完成"提想法—做实验—写论文—同行评审"全流程 。当AI可以参与改进下一代AI时，护城河已不再是参数量或算力储备，而是自演化速度。
-
-**4. 商业落地验证了从"惊艳Demo"到"生产系统"的跨越**
-
-AlphaEvolve通过Google Cloud已在多个行业落地：Klarna训练速度翻倍且质量提升、FM Logistic物流效率提升10.4%每年少跑15000公里、Schrödinger药物研发筛选周期从月压缩到天 。一年前业内最大疑问是"Demo还是可用系统"，一年后成绩单给出了明确答案：它不仅能用，而且已深入核心基础设施。
-
-**5. "有损自我改进"提醒我们不能对RSI盲目乐观**
-
-Allen Institute for AI的Nathan Lambert提出，随着AI系统复杂度增加，自我改进飞轮可能因摩擦增大而减速而非无限加速 。Meta研究者Jason Weston和Jakob Foerster则主张"人机共同改进"比纯粹自我改进更现实、更安全。这意味着AI造AI的闭环虽已启动，但其可持续性和风险仍是开放问题。
-
-## 实践启示
-
-1. **将AI纳入科研工作流的必备工具**：对于数学、工程、计算化学等领域的研究者，AlphaEvolve类系统已在优化问题、电路设计、分子模拟上证明可超越人类直觉。建议评估当前研究中的"穷举验证"或"参数优化"环节是否可迁移给AI辅助完成 。
-
-2. **关注"AI设计AI硬件"趋势对算力竞争格局的影响**：当AI开始反向优化训练自身的芯片，硬件迭代逻辑正在改变。基础设施团队应跟踪这一方向，评估GPU/TPU自演化路径对长期算力规划的冲击 。
-
-3. **在企业引入AI优化工具时优先选择"高反馈密度"场景**：Klarna、FM Logistic、Schrödinger的案例都具备明确指标（错误率、效率提升倍数、周期压缩比）。企业引入AI优化时，应优先选择有清晰量化指标的环节，而非模糊的"效率提升"目标 。
-
-4. **密切跟踪递归自我改进（RSI）的政策与安全讨论**：Jack Clark的60%概率预测、IEEE Spectrum的专题报道、以及Nature上AI Scientist全流程论文的出现，意味着RSI已不是远期假设而是近期现实。从业者应关注Anthropic、DeepMind、Meta等机构的RSI安全研究进展 。
-
-5. **在AI可以改进AI的时代，人类的独特价值在于"问题定义"能力**：当AI在反向设计芯片、与数学家协作攻克难题、撰写代码时，陶哲轩"极大地改善了我们对问题的直觉"这一评价最值得注意——AI擅长优化已知问题，但提出新问题的能力仍依赖人类。这提示教育者和管理者：培养"定义好问题"的能力比"解决已知问题"的能力更关键 。
-
-## 相关实体
-
-- [elasticpp重塑elasticsearch查询性能的c内核引擎](https://github.com/QianJinGuo/wiki-public/blob/main/entities/elasticpp重塑elasticsearch查询性能的c内核引擎.md)
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
-→ 原文存档
-
-→ [GEPA优化框架](ch01/639-gepa-optimize-anything.html) — 包含AlphaEvolve等传统LLM进化框架的对比分析
-
----
-
-## Ch15.012 不用人类手写训练框架了！AI自己写代码，训出1B端侧「小钢炮」
+## Ch15.003 不用人类手写训练框架了！AI自己写代码，训出1B端侧「小钢炮」
 
 > 📊 Level ⭐⭐ | 5.8KB | `entities/minicpm5-1b-forgetrain-machine-heart.md`
 
 # 不用人类手写训练框架了！AI自己写代码，训出1B端侧「小钢炮」
 
-> **来源**：机器之心（2026-05-26）| 原文存档：原文存档
+> **来源**：机器之心（2026-05-26）| 原文存档：[原文存档](https://mp.weixin.qq.com/s/2tdHV01FL_YGUmZQ12DS2A)
 
 ## 深度分析
 
@@ -1165,11 +174,11 @@ MiniCPM5-1B 的特殊之处：
 - [Thousand Token Wood Sim V2 Hackathon](https://github.com/QianJinGuo/wiki-public/blob/main/entities/thousand-token-wood-sim-v2-hackathon.md)
 - [Pilotdeck Agent Os Openbmb Tsinghua](https://github.com/QianJinGuo/wiki-public/blob/main/entities/pilotdeck-agent-os-openbmb-tsinghua.md)
 
-→ 原文存档
+→ [原文存档](https://mp.weixin.qq.com/s/2tdHV01FL_YGUmZQ12DS2A)
 
 ---
 
-## Ch15.013 EMO: Pretraining mixture of experts for emergent modularity | Ai2
+## Ch15.004 EMO: Pretraining mixture of experts for emergent modularity | Ai2
 
 > 📊 Level ⭐⭐ | 5.2KB | `entities/emo-pretraining-mixture-of-experts-for-emergent-modularity-ai2.md`
 
@@ -1178,13 +187,13 @@ MiniCPM5-1B 的特殊之处：
 [Ai2](https://www.allenai.org/)
 
 ## 相关实体
-- [Stochastic Parrot Thought Experiment](ch01/258-stochastic-parrot-thought-experiment.html)
+- [Stochastic Parrot Thought Experiment](ch01/160-stochastic-parrot-thought-experiment.html)
 - [While Breathless In Stodgy Viridian](https://github.com/QianJinGuo/wiki-public/blob/main/entities/while-breathless-in-stodgy-viridian.md)
-- [Aws Grpo Rlvr Sagemaker Math Reasoning](ch11/219-aws-grpo-rlvr-sagemaker-math-reasoning.html)
+- [Aws Grpo Rlvr Sagemaker Math Reasoning](ch11/183-aws-grpo-rlvr-sagemaker-math-reasoning.html)
 - [Ai True Moat Not Llm But Organization](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-true-moat-not-llm-but-organization.md)
-- [Nvidia Gemma 4 Edge Ai](ch01/232-nvidia-gemma-4-edge-ai.html)
+- [Nvidia Gemma 4 Edge Ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-gemma-4-edge-ai.md)
 
-→ 原文存档
+→ [原文存档](https://allenai.org/blog/emo)
 
 ## 深度分析
 
@@ -1210,7 +219,7 @@ EMO 的核心创新在于把"模块化"从一个人为先验变成了从数据�
 
 ---
 
-## Ch15.014 DeepSeek V4 训练方法论深度解读
+## Ch15.005 DeepSeek V4 训练方法论深度解读
 
 > 📊 Level ⭐⭐⭐ | 13.7KB | `entities/deepseek-v4-training-methodology.md`
 
@@ -1327,14 +336,14 @@ V4 的实现用激进前 8 步 + 温和后 2 步做精度平衡，这个工程�
 2. **小团队可以通过 Specialist + OPD 路径训练大模型能力**：不需要一开始就训超大模型，训多个小专家再蒸馏合并，是资源受限团队可行的路径。
 
 ## Cross-links
-- → 原文存档
+- → [原文存档](https://mp.weixin.qq.com/s/BELLFDV6hlmmFoAcJy1RZg)
 - → 
 - → [灾难性遗忘](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/catastrophic-forgetting.md)
 - → [DeepSeek V4 Triton FP4 优化](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-v4-triton-fp4-optimization.md)
-- → [ds4.c — DeepSeek V4 本地推理](ch01/702-ds4c-deepseek-v4-antirez.html)
+- → [ds4.c — DeepSeek V4 本地推理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ds4c-deepseek-v4-antirez.md)
 
 ## 相关实体
-- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](ch01/615-deepseek-v4.html)
+- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](ch01/420-deepseek-v4.html)
 
 - [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-v4-pro-vs-claude.md)
 - [Redis之父下场，给DeepSeek V4单独造了一台推理引擎](https://github.com/QianJinGuo/wiki-public/blob/main/entities/redis之父下场给deepseek-v4单独造了一台推理引擎.md)
@@ -1342,7 +351,7 @@ V4 的实现用激进前 8 步 + 温和后 2 步做精度平衡，这个工程�
 
 ---
 
-## Ch15.015 NVIDIA Blackwell MLPerf Training 6.0 基准测试结果（2026-06）
+## Ch15.006 NVIDIA Blackwell MLPerf Training 6.0 基准测试结果（2026-06）
 
 > 📊 Level ⭐⭐⭐ | 11.2KB | `entities/nvidia-blackwell-mlperf-training-6-0-benchmark-results-2026-06.md`
 
@@ -1428,17 +437,17 @@ NVIDIA 在 Nemotron 3 Ultra（5,500 亿参数）上使用 NVFP4 完成预训练�
 
 ## 相关实体
 
-- [AWS GRPO RLVR SageMaker](ch11/219-aws-grpo-rlvr-sagemaker-math-reasoning.html) — AWS 后训练栈
-- [Foundation Model Building Blocks](ch03/039-foundation-model-building-blocks.html) — 通用基础组件
+- [AWS GRPO RLVR SageMaker](ch11/183-aws-grpo-rlvr-sagemaker-math-reasoning.html) — AWS 后训练栈
+- [Foundation Model Building Blocks](ch03/026-foundation-model-building-blocks.html) — 通用基础组件
 - [750B MoE PD 分离推理 EFA vs RoCE](https://github.com/QianJinGuo/wiki-public/blob/main/entities/750b-moe-pd-disaggregation-aws-efa-vs-roce.md) — AWS 上的 MoE 推理对比
 - [Microsoft / GitHub / AWS AI 算力承压](https://github.com/QianJinGuo/wiki-public/blob/main/entities/runtimewire-microsoft-github-aws-ai-capacity-crunch-2026-06.md) — 超大规模算力承压事件
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
 
-> 原文存档
+> [原文存档](https://blogs.nvidia.com/blog/blackwell-mlperf-training-6-0/)
 
 ---
 
-## Ch15.016 Yann Dubois（OpenAI Post-Training）× Matt Turck 深度访谈：GPT-5.5、RL 突破、后训练流水线
+## Ch15.007 Yann Dubois（OpenAI Post-Training）× Matt Turck 深度访谈：GPT-5.5、RL 突破、后训练流水线
 
 > 📊 Level ⭐⭐⭐ | 11.0KB | `entities/yann-dubois-openai-post-training-interview.md`
 
@@ -1561,13 +570,13 @@ Dubois 提到的一个关键设计哲学是：能力（capability）和安全性
 
 ---
 
-## Ch15.017 SFT+DPO 双阶段微调：Qwen3-1.7B Tool Calling 精度提升方案
+## Ch15.008 SFT+DPO 双阶段微调：Qwen3-1.7B Tool Calling 精度提升方案
 
 > 📊 Level ⭐⭐⭐ | 9.2KB | `entities/aws-sagemaker-sft-dpo-tool-calling.md`
 
 # SFT+DPO 双阶段微调：Qwen3-1.7B Tool Calling 精度提升方案
 
-> 原文存档：原文存档
+> 原文存档：[原文存档](https://aws.amazon.com/blogs/machine-learning/improve-your-agents-tool-calling-accuracy-with-sft-and-dpo-on-amazon-sagemaker-ai)
 
 > **Core insight**: 通过 NVIDIA When2Call 数据集进行 Spectrum SFT 后再进行 DPO 偏好优化，Qwen3-1.7B 的 tool calling 精度从 41.57% 提升至 71.06%，超越参数量为其 2 倍的 Llama 3.2 3B；SFT 建立基础能力，DPO 在偏好数据上进一步校准输出分布
 
@@ -1635,15 +644,15 @@ SFT→DPO 两阶段之间可能有数小时的调试和评估间隙。设置 kee
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/llm-core-technology.md)
 ## 相关引用
-→ 原文存档
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/improve-your-agents-tool-calling-accuracy-with-sft-and-dpo-on-amazon-sagemaker-ai)
 
 ---
 
-## Ch15.018 无惧Off-Policy偏移！Bengio团队解绑后训练，大模型RL提速50倍
+## Ch15.009 无惧Off-Policy偏移！Bengio团队解绑后训练，大模型RL提速50倍
 
 > 📊 Level ⭐⭐⭐ | 8.6KB | `entities/trajectory-balance-asynchrony-tba-bengio-papweekly.md`
 
-> -> 原文存档
+> -> [原文存档](https://mp.weixin.qq.com/s/8IxT4DleAsDbB2FSyy5W0w)
 
 # TBA：解绑后训练，RL 提速 50 倍
 
@@ -1730,19 +739,19 @@ TBA 把采样从训练闭环里解耦出来——这是 LLM RL 后训练数量�
 ## 相关实体
 - [On Policy Distillation Vs Offline Distillation Loster](https://github.com/QianJinGuo/wiki-public/blob/main/entities/on-policy-distillation-vs-offline-distillation-loster.md)
 - [Overcoming Reward Signal Challenges Verifiable Rewards Based Reinforcement Learn](https://github.com/QianJinGuo/wiki-public/blob/main/entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md)
-- [Reinforcing Recursive Language Models Alphaxiv](ch01/555-reinforcing-recursive-language-models-alphaxiv.html)
+- [Reinforcing Recursive Language Models Alphaxiv](ch01/380-reinforcing-recursive-language-models-alphaxiv.html)
 - [Skillos](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skillos.md)
 - [Yann Dubois Openai Post Training Interview](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yann-dubois-openai-post-training-interview.md)
 
 ---
 
-## Ch15.019 Is One Layer Enough? 单层 RL 训练可超越全参数训练
+## Ch15.010 Is One Layer Enough? 单层 RL 训练可超越全参数训练
 
 > 📊 Level ⭐⭐⭐ | 8.1KB | `entities/rl-single-layer-training-full-parameter.md`
 
 # Is One Layer Enough? 单层 RL 训练可超越全参数训练
 
-→ 原文存档
+→ [原文存档](https://mp.weixin.qq.com/s/u6-CbyiQ-uhXi6cwyNlomA)
 
 > 明尼苏达大学、北京大学和 Amazon 团队在 arxiv 2607.01232 中，通过系统性逐层研究揭示：RL 后训练的收益高度集中在 Transformer 中间层（深度 40–60%），训练单个层即可匹敌甚至超越全参数 RL 训练——这从根本上挑战了「能力提升需要整个网络协调适应」的隐含假设。
 
@@ -1792,12 +801,12 @@ Transformer 功能沿深度分层：底层做 token 级局部句法与低层特�
 
 - [2026 年面向 LLM 的 RL 方法总结](https://github.com/QianJinGuo/wiki-public/blob/main/entities/2026-llm-rl-algorithms-deeplog-imba-ppo-dpo-grpo-marl.md) — 从 PPO 到 GRPO 的 RL 后训练全览
 - [Agentic RL 六框架实践地图](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentic-rl-frameworks-practices-long-horizon-wolfe-2026.md) — 长程智能体训练框架对比
-- [AWS GRPO/RLVR 数学推理实践](ch11/219-aws-grpo-rlvr-sagemaker-math-reasoning.html) — GRPO/RLVR 的真实推理落地
+- [AWS GRPO/RLVR 数学推理实践](ch11/183-aws-grpo-rlvr-sagemaker-math-reasoning.html) — GRPO/RLVR 的真实推理落地
 - [AlphaXIV：RL 时代的强化学习](https://github.com/QianJinGuo/wiki-public/blob/main/entities/alphaxiv-reinforcement-learning-for-rlms.md) — RL for LLM 的宏观方法迭代
 
 ---
 
-## Ch15.020 LLM Post-Training全景指南：从RLHF到GRPO再到AgenticRL
+## Ch15.011 LLM Post-Training全景指南：从RLHF到GRPO再到AgenticRL
 
 > 📊 Level ⭐⭐⭐ | 7.6KB | `entities/llm-post-training-full-guide.md`
 
@@ -1860,10 +869,10 @@ GRPO用相对排序替代PPO的Critic模型，节省30%~50%计算开销，但核
 ## 相关实体
 - [百度文心大模型后训练进化（ERNIE 3.0→5.0）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/baidu-wenxin-post-training-evolution.md)
 
-→ 原文存档
+→ [原文存档](https://mp.weixin.qq.com/s/jabnGpTJ8sCc7kBj11pm8A)
 
 - [Token 退化问题：分词器与后训练数据分布失配](https://github.com/QianJinGuo/wiki-public/blob/main/entities/minimax-token-degradation-jiqia.md)
-- [Self Taught Rlvr](ch01/562-self-taught-rlvr.html)
+- [Self Taught Rlvr](ch01/383-self-taught-rlvr.html)
 - [Llm Rl Algorithms Ppo Dpo Grpo Marl Evolution 2026](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026.md)
 - [Slim Cuhk Skill Lifecycle Agentic Rl](https://github.com/QianJinGuo/wiki-public/blob/main/entities/slim-cuhk-skill-lifecycle-agentic-rl.md)
 - [frontier post-training recipe review with finbarr timbers](https://github.com/QianJinGuo/wiki-public/blob/main/entities/finbarr-timbers-frontier-post-training-recipe-review-2026.md)
@@ -1872,13 +881,13 @@ GRPO用相对排序替代PPO的Critic模型，节省30%~50%计算开销，但核
 
 ---
 
-## Ch15.021 What I've been building: ATOM Report, post-training course, finishing my book, and ongoing research
+## Ch15.012 What I've been building: ATOM Report, post-training course, finishing my book, and ongoing research
 
 > 📊 Level ⭐⭐⭐ | 7.3KB | `entities/what-ive-been-building-atom-report-post-training-course-fini.md`
 
 # What I've been building: ATOM Report, post-training course, finishing my book, and ongoing research
 
-→ 原文存档
+→ [原文存档](https://www.interconnects.ai/p/what-ive-been-building-atom-report)
 
 ## 摘要
 
@@ -1936,7 +945,7 @@ Meta-RL with Self-Reflection 的核心洞察是：当前 LLM 的 RL 训练完全
 - RLHF
 - Post-training
 - Agent 记忆系统
-- [Karpathy: Agentic Engineering](ch04/356-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy: Agentic Engineering](ch04/098-karpathy-vibe-coding-agentic-engineering.html)
 - MOC: Evaluation Landscape
 
 ---
@@ -1946,79 +955,11 @@ Meta-RL with Self-Reflection 的核心洞察是：当前 LLM 的 RL 训练完全
 
 ---
 
-## Ch15.022 Generalization Dynamics of LM Pre-training — Jiaxin Wen
-
-> 📊 Level ⭐⭐⭐ | 6.9KB | `entities/generalization-dynamics-of-lm-pre-training-jiaxin-wen.md`
-
-## 核心要点
-- **评分**：v=8, c=7（v×c=56）
-- **作者**：Jiaxin Wen, Zhengxuan Wu, Dawn Song, Lijie Chen
-- **来源**：Personal Blog（jiaxin-wen.github.io）
-- **核心发现**：LLM 在预训练期间频繁且突然地在"鹦鹉模式"（pattern-matching）和"智能模式"（generalizable intelligence）之间跳跃，这种现象被称为 **mode-hopping**
-- **关键证据**：在 "answer+1" 任务上，OLMo3-32B 在 2.17T tokens 达到 81% 准确率，2.19T tokens 骤降至 0%，2.21T tokens 又反弹至 81.7%
-- **理论解释**：mode-hopping 是容量分配问题——泛化电路与早期习得的浅层电路竞争，每个预训练窗口的数据决定哪种电路胜出
-- **应用价值**：可用于选择更好的中间检查点、选择预训练数据以控制泛化动态、测试泛化预测指标
-
-## 深度分析
-### 问题背景与核心假设
-传统观点认为 LLM 在预训练过程中会稳定地、渐进地从"鹦鹉"进化为"智能体"——即从依赖模式匹配到发展出可迁移的推理能力。这一假设建立在预训练 loss 持续下降和下游基准测试性能稳步提升的观察之上。
-本文通过设计一套"玩具评估套件"证明这一 mental model 是错误的。
-
-### 核心现象：Mode-Hopping
-**定义**：LLM 在预训练过程中频繁且突然地在两种不同算法模式之间切换：
-
-- **鹦鹉模式（Parrot）**：依赖记忆或上下文中的浅层模式，使用 System 1 快速直觉思维，编码离散的断开的事实
-- **智能模式（Intelligence）**：进行上下文学习推理，形成通用的推理电路，使用 System 2 慢速思考，连接并推理抽象概念
-**实验证据**：
-
-- 在 Successive Answer 任务（"answer+1"模式）上，OLMo3-32B 的准确率在 2.17T tokens 时为 81%，2.19T tokens 时骤降至 0%，2.21T tokens 时反弹至 81.7%
-- 这种振荡不是个例：跨越多个模型和评估任务，LLM 会突然依赖记忆模式而非上下文学习，突然使用 System 1 而非 System 2，选择"听起来真"而非"真正为真"
-
-### 评估套件设计
-作者设计了 6 个玩具评估任务来探测智能与鹦鹉的行为指纹：
-| 任务 | 泛化问题 | 鹦鹉答案 | 智能答案 |
-|------|---------|---------|---------|
-| Flipped Answer (ICL) | 依赖记忆模式还是上下文学习？ | Positive | Negative |
-| Repetitive Answer (ICL) | 依赖重复模式还是上下文学习？ | 83 | 16 |
-| Successive Answer (ICL) | 依赖连续模式还是上下文学习？ | 4 | 8 |
-| Truthy Answer (ICL) | 依赖听起来真还是真正为真？ | True | False |
-| Intuitive Answers (Zero-shot) | System 1 还是 System 2？ | 0.1 | 0.05 |
-| Multi-hop Persona QA (ICL) | 断开的事实还是连贯的人格？ | Hitler | Hitler |
-
-### 排除替代假设
-**1. 排除通用评估噪声**：在标准任务（情感分类、主题分类、数学词问题、常识 QA）上，LLM 表现平滑，无振荡
-**2. 排除标准优化动态**：泛化行为是局部稳定的——单步优化甚至大学习率（1e-2）都不会改变检查点的泛化概率。检查点平均只能缓解但无法修复 mode-hopping
-**3. 容量分配解释**：在容量受限的模型中，泛化电路必须与早期预训练习得的浅层电路竞争。每个预训练窗口的数据决定哪种电路胜出。缩放模型规模可以缓解竞争，但无法完全消除 mode-hopping——大模型只是在更难的任务上展现相同的动态
-
-### 应用场景
-**1. 预训练检查点选择**：在 4.5T 和 4.9T tokens 的检查点中，4.5T 检查点展现出更强的泛化能力，经过数学微调后在 GPQA 上表现更好，经过一般微调后对 prefilling 攻击更鲁棒
-**2. 预训练数据选择**：可以根据泛化动态选择数据子集来控制 LLM 的泛化方向——选择鼓励 pattern-matching 的数据或选择鼓励泛化的数据，可以稳定地引导模型走向预期的泛化动态
-**3. 泛化预测指标测试**：测试了多种基于激活和梯度的复杂度指标（RankMe、Participation Ratio、log tr F、σ₁/tr F、|cosine similarity|）。结果表明，同一指标在不同层可以呈现强正相关和强负相关；泛化良好的检查点可以表现出高或低的激活 rank。这意味着泛化良好的解决方案可以是简单的也可以是复杂的
-
-### 理论意义
-**对泛化先验的启示**：预训练良好的模型倾向于泛化，即使存在诱人的浅层模式可供选择。这为利用泛化作为"通用杠杆"解决当今最紧迫问题提供了希望：将从可验证领域（数学、编码）的能力迁移到更广泛的经济价值领域，训练更连贯对齐的 AI 人格
-**对简单性偏见的质疑**：研究结果表明，不应依赖"越简单的解决方案泛化越好"这类单一叙事。在大规模多任务学习下，泛化解决方案可能是简单的也可能是复杂的，其动态无法被任何单一的简单故事捕捉
-
-## 相关概念
-- **Mode-hopping** — 本文定义的核心现象：LLM 在预训练期间在鹦鹉模式和智能模式之间的跳跃
-- **上下文学习 (In-context Learning)** — 智能模式的核心能力，根据上下文演示推断任务
-- **System 1 / System 2 Thinking** — 快速直觉思维与慢速分析思维的对比
-## 相关实体
-- [Generalization Dynamics Pre Training Jiaxin Wen](https://github.com/QianJinGuo/wiki-public/blob/main/entities/generalization-dynamics-pre-training-jiaxin-wen.md)
-- [Generalization Dynamics Lm Pretraining](https://github.com/QianJinGuo/wiki-public/blob/main/entities/generalization-dynamics-lm-pretraining.md)
-- [Generalization Dynamics Of Lm Pre Training Jiaxin Wen](https://github.com/QianJinGuo/wiki-public/blob/main/entities/generalization-dynamics-of-lm-pre-training-jiaxin-wen.md)
-- [Yann Dubois Openai Post Training Interview](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yann-dubois-openai-post-training-interview.md)
-- [Olmo Hybrid Gdn Wave 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/olmo-hybrid-gdn-wave-2026.md)
-
-→ 原文存档
-
----
-
-## Ch15.023 Reinforcing Recursive Language Models | alphaXiv
+## Ch15.013 Reinforcing Recursive Language Models | alphaXiv
 
 > 📊 Level ⭐⭐⭐ | 6.5KB | `entities/reinforcing-recursive-language-models-alphaxiv.md`
 
-> -> 原文存档
+> -> [原文存档](https://www.alphaxiv.org/blog/reinforcement-learning-for-rlms)
 
 ## 核心要点
 - 通过 RL 在单一共享策略下训练父 RLM 和子 RLM
@@ -2048,7 +989,7 @@ Meta-RL with Self-Reflection 的核心洞察是：当前 LLM 的 RL 训练完全
    Stepwise 结构意味着每个 turn 独立计算 gradient，传统的 loss 平滑曲线可能掩盖问题。关注 GRPO clip rate——正常区间 1%-20%，如果出现骤降或台阶式突变，通常是 logprob 计算出现了系统性偏差 。
 5. **生产部署 RLM 时优先考虑延迟而非单次 accuracy**
    RL fine-tuned 4B RLM 的 eval score（0.60）略低于 Claude Sonnet 4.6（0.607），但延迟从 60s 降至 7s（8.5x 提升）。在长上下文、多论文并行处理场景下，wall-clock time 的改善往往是产品是否可用的决定性因素 。
-→ 原文存档
+→ [原文存档](https://www.alphaxiv.org/blog/reinforcement-learning-for-rlms)
 
 ## 相关实体
 - [Language Models and Meaning](https://github.com/QianJinGuo/wiki-public/blob/main/entities/stochastic-parrot-language-models-and-meaning.md)
@@ -2056,7 +997,7 @@ Meta-RL with Self-Reflection 的核心洞察是：当前 LLM 的 RL 训练完全
 
 ---
 
-## Ch15.024 百度文心大模型后训练进化（ERNIE 3.0→5.0）
+## Ch15.014 百度文心大模型后训练进化（ERNIE 3.0→5.0）
 
 > 📊 Level ⭐⭐⭐ | 6.5KB | `entities/baidu-wenxin-post-training-evolution.md`
 
@@ -2106,7 +1047,7 @@ KV-Normality 问题是 Transformer 训练不稳定的重要来源之一（KL div
 
 ## 交叉参考
 - [Skill Design Patterns](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-design-patterns.md) — Anthropic 14 模式中的 RL 后训练相关策略对比
-- 原文存档
+- [原文存档](https://mp.weixin.qq.com/s/mU6w3HnTX6wU5Z6wfAFHwg)
 
 ## 相关实体
 - [LLM Post-Training全景指南：从RLHF到GRPO再到AgenticRL](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-post-training-full-guide.md)
@@ -2115,11 +1056,11 @@ KV-Normality 问题是 Transformer 训练不稳定的重要来源之一（KL div
 
 ---
 
-## Ch15.025 Overcoming Reward Signal Challenges: Verifiable Rewards-based RL with GRPO on SageMaker AI
+## Ch15.015 Overcoming Reward Signal Challenges: Verifiable Rewards-based RL with GRPO on SageMaker AI
 
 > 📊 Level ⭐⭐⭐ | 6.1KB | `entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md`
 
-> -> 原文存档
+> -> [原文存档](https://huggingface.co/datasets/openai/gsm8k/viewer/main/train?row=7294&amp;views%5B%5D=main_train)
 
 ## 标签
 #aws #sagemaker #reinforcement-learning #grpo #rlhf
@@ -2144,13 +1085,13 @@ KV-Normality 问题是 Transformer 训练不稳定的重要来源之一（KL div
 - [Build Real Time Voice Applications With Amazon Sagemaker Ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-real-time-voice-applications-with-amazon-sagemaker-ai.md)
 - [End To End Encrypted Ml Inference Sagemaker Fhe](https://github.com/QianJinGuo/wiki-public/blob/main/entities/end-to-end-encrypted-ml-inference-sagemaker-fhe.md)
 - [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagemaker.md)
-- [Aws Grpo Rlvr Sagemaker Math Reasoning](ch11/219-aws-grpo-rlvr-sagemaker-math-reasoning.html)
+- [Aws Grpo Rlvr Sagemaker Math Reasoning](ch11/183-aws-grpo-rlvr-sagemaker-math-reasoning.html)
 - [Yann Dubois Openai Post Training Interview](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yann-dubois-openai-post-training-interview.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/reinforcement-learning-rlhf.md)
 
 ---
 
-## Ch15.026 Heidi Health 临床 AI 微调：小模型通过偏好信号达前沿水平
+## Ch15.016 Heidi Health 临床 AI 微调：小模型通过偏好信号达前沿水平
 
 > 📊 Level ⭐⭐⭐ | 6.1KB | `entities/heidi-health-clinical-ai-model-fine-tuning-frontier-parity.md`
 
@@ -2208,14 +1149,14 @@ Evidence 是 Heidi 微调过的最难模型，也是第一个 agentic 模型。�
 
 - [LLM RL 算法综述](https://github.com/QianJinGuo/wiki-public/blob/main/entities/2026-llm-rl-algorithms-deeplog-imba-ppo-dpo-grpo-marl.md) — DPO 作为本文核心训练方法的算法背景
 - [Amazon Nova Lite 微调](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-nova-lite-fine-tuning-cost-effective-vision-detection-model-tuning-case-and-practice.md) — 另一个垂直领域微调的工程实践
-- [递归强化语言模型](ch01/555-reinforcing-recursive-language-models-alphaxiv.html) — 奖励模型与偏好学习的理论框架
+- [递归强化语言模型](ch01/380-reinforcing-recursive-language-models-alphaxiv.html) — 奖励模型与偏好学习的理论框架
 - [腾讯 Token 经济学](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tencent-token-economics-ai-productivity.md) — AI 模型的成本-质量权衡分析
 
-→ 原文存档
+→ [原文存档](https://www.heidihealth.com/blog/clinical-ai-model-fine-tuning)
 
 ---
 
-## Ch15.027 Notes on pretraining parallelisms and failed training runs.
+## Ch15.017 Notes on pretraining parallelisms and failed training runs.
 
 > 📊 Level ⭐⭐⭐ | 5.7KB | `entities/notes-on-pretraining-parallelisms-and-failed-training-runs.md`
 
@@ -2227,7 +1168,7 @@ Evidence 是 Heidi 微调过的最难模型，也是第一个 agentic 模型。�
 - [Gemma 4 Qat Models Optimizing Compression](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gemma-4-qat-models-optimizing-compression.md)
 - [How Harnesses And Post Training Close The Open Weight Bug Finding Gap 20260606](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-harnesses-and-post-training-close-the-open-weight-bug-finding-gap-20260606.md)
 
-→ 原文存档
+→ [原文存档](https://www.dwarkesh.com/p/notes-on-pretraining-parallelisms)
 
 ## 深度分析
 ### 因果性破坏（Causality Breaking）
@@ -2263,7 +1204,7 @@ GPT-4 训练初期的一个致命 Bug 正是源于此：FP16 的尾数位在数�
 
 ---
 
-## Ch15.028 在线蒸馏OPD vs 离线蒸馏SFT：数学原理与实战优势
+## Ch15.018 在线蒸馏OPD vs 离线蒸馏SFT：数学原理与实战优势
 
 > 📊 Level ⭐⭐⭐⭐ | 14.7KB | `entities/on-policy-distillation-vs-offline-distillation-loster.md`
 
@@ -2413,13 +1354,13 @@ OPD虽然解决了Mode-Covering问题，但引入了自己的隐患：Mode Colla
 - [Ettin Reranker Family](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ettin-reranker-family.md)
 - [Rag Chunking Vectorization Rerank Distillation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-chunking-vectorization-rerank-distillation.md)
 - [Apo Autonomous Preference Optimization](https://github.com/QianJinGuo/wiki-public/blob/main/entities/apo-autonomous-preference-optimization.md)
-- [Introducing The Ettin Reranker Family](ch01/775-introducing-the-ettin-reranker-family.html)
+- [Introducing The Ettin Reranker Family](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-the-ettin-reranker-family.md)
 
-→ 原文存档
+→ [原文存档](https://mp.weixin.qq.com/s/JljnDWerzMzlUl0BMblKXg)
 
 ---
 
-## Ch15.029 RL Beyond the Verifiable: 当奖励信号无法自动验证时
+## Ch15.019 RL Beyond the Verifiable: 当奖励信号无法自动验证时
 
 > 📊 Level ⭐⭐⭐⭐ | 13.5KB | `entities/rl-beyond-the-verifiable-tanayj.md`
 
@@ -2634,21 +1575,21 @@ OpenRubrics 等工作现在专注于规模化生成这些评分标准。这是�
 
 ## 相关实体
 
-- [Self-Taught RLVR](ch01/562-self-taught-rlvr.html) — 自监督 RLVR 训练方法
-- [AWS GRPO RLVR](ch11/219-aws-grpo-rlvr-sagemaker-math-reasoning.html) — AWS 在 SageMaker 上实现的 RLVR
+- [Self-Taught RLVR](ch01/383-self-taught-rlvr.html) — 自监督 RLVR 训练方法
+- [AWS GRPO RLVR](ch11/183-aws-grpo-rlvr-sagemaker-math-reasoning.html) — AWS 在 SageMaker 上实现的 RLVR
 - [Verifiable Rewards RL](https://github.com/QianJinGuo/wiki-public/blob/main/entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md) — 可验证奖励 RL 的技术细节
 
-→ 原文存档
+→ [原文存档](http://www.tanayj.com/p/rl-beyond-the-verifiable)
 
 ---
 
-## Ch15.030 ICML 2026 | PRISM: Parallel Residual Iterative Sequence Model
+## Ch15.020 ICML 2026 | PRISM: Parallel Residual Iterative Sequence Model
 
 > 📊 Level ⭐⭐⭐⭐ | 10.4KB | `entities/icml-2026-prism-parallel-residual-iterative-sequence-model.md`
 
 # ICML 2026 | PRISM: Parallel Residual Iterative Sequence Model
 
-> **核心洞察**：PRISM 揭示了 TTT-MLP 高表达力（"步长 × 残差 × 方向"多步迭代）与串行瓶颈是**同一根因的两面**，通过 anchor 代理消除 token 间串行 + 闭合式预计算消除 step 间串行，实现 TTT 级别质量 × GDN 级别速度。原文存档
+> **核心洞察**：PRISM 揭示了 TTT-MLP 高表达力（"步长 × 残差 × 方向"多步迭代）与串行瓶颈是**同一根因的两面**，通过 anchor 代理消除 token 间串行 + 闭合式预计算消除 step 间串行，实现 TTT 级别质量 × GDN 级别速度。[原文存档](https://mp.weixin.qq.com/s/luHnepErnw3Ujfjcr5YIQg)
 
 ## 问题背景
 
@@ -2787,11 +1728,11 @@ PRISM 的"基础迭代 + low rank 旁路"结构与 LoRA 形式完全对应：冻
 - [Olmo Hybrid and the Hybrid Architecture Wave (2026)](https://github.com/QianJinGuo/wiki-public/blob/main/entities/olmo-hybrid-gdn-wave-2026.md) — 同一架构趋势下 GDN 3:1 混合的工业实践
 - [最新开放模型快照](https://github.com/QianJinGuo/wiki-public/blob/main/entities/interconnects-latest-open-artifacts-20-new-orgs-new-types-of-models-with-nemotron-super-sarvam.md) — Nemotron 3 Nano 线性架构对比
 
-→ 原文存档
+→ [原文存档](https://mp.weixin.qq.com/s/luHnepErnw3Ujfjcr5YIQg)
 
 ---
 
-## Ch15.031 NVIDIA-ZPPO: Zone of Proximal Policy Optimization
+## Ch15.021 NVIDIA-ZPPO: Zone of Proximal Policy Optimization
 
 > 📊 Level ⭐⭐⭐⭐ | 6.8KB | `entities/nvidia-zppo-zone-proximal-policy-optimization.md`
 
@@ -2892,11 +1833,11 @@ ZPPO 的实验结果进一步证实了一个趋势：naive knowledge distillatio
 - [NVIDIA ZPPO](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-zppo-zone-proximal-policy-optimization.md) — 本实体
 - [LLM RL 算法演进](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026.md) — LLM 强化学习训练范式
 
-→ 原文存档
+→ [原文存档](https://byungkwanlee.github.io/ZPPO-page/)
 
 ---
 
-## Ch15.032 Generalization Dynamics of LM Pre-training — Jiaxin Wen
+## Ch15.022 Generalization Dynamics of LM Pre-training — Jiaxin Wen
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 27.9KB | `entities/generalization-dynamics-lm-pretraining.md`
 
@@ -3272,325 +2213,11 @@ Mode-hopping 在不同数据集上的普遍性如何？例如，在 Flipped Answ
 - [New Ai Lock In](https://github.com/QianJinGuo/wiki-public/blob/main/entities/new-ai-lock-in.md)
 - [Ai Driven Layoffs Business Sense Cio](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-driven-layoffs-business-sense-cio.md)
 
-→ 原文存档
+→ [原文存档](https://jiaxin-wen.github.io/blog/generalization-dynamics)
 
 ---
 
-## Ch15.033 Generalization Dynamics of LM Pre-training — Jiaxin Wen
-
-> 📊 Level ⭐⭐⭐⭐⭐ | 22.3KB | `entities/generalization-dynamics-pre-training-jiaxin-wen.md`
-
-## 核心要点
-
-- source: 原文存档
-- review: v=9 × c=9 = 81
-- 作者：Jiaxin Wen, Zhengxuan Wu, Dawn Song, Lijie Chen
-- 研究模型：OLMo3 (7B/32B) 和 Apertus (8B/70B)
-- 核心发现：LLM 预训练中存在频繁的"mode-hopping"现象——在鹦鹉模式（模式匹配）和智能模式（泛化推理）之间突然跳跃，而非稳定成熟
-- 意义：挑战了"LM 在预训练中逐渐从鹦鹉进化为智能体"的传统观念，揭示预训练 loss 下降和下游基准提升掩盖了剧烈的泛化振荡
-
-## 相关实体
-- [Generalization Dynamics Of Lm Pre Training Jiaxin Wen](https://github.com/QianJinGuo/wiki-public/blob/main/entities/generalization-dynamics-of-lm-pre-training-jiaxin-wen.md)
-- [Generalization Dynamics Lm Pretraining](https://github.com/QianJinGuo/wiki-public/blob/main/entities/generalization-dynamics-lm-pretraining.md)
-- [Yann Dubois Openai Post Training Interview](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yann-dubois-openai-post-training-interview.md)
-
-→ 原文存档
-
-## 研究背景与动机
-
-### 鹦鹉与智能体的计算本质区别
-
-研究表明，鹦鹉（parrot）和智能体（intelligence）在计算上是有区别的。鹦鹉重复上下文模式，而智能体推断上下文函数；鹦鹉将人格编码为离散的facts和traits袋，而智能体学习连接所有内容的人格表示；鹦鹉记忆推理步骤，智能体形成用于实体跟踪、回溯甚至高度抽象概念（如真理）的通用推理电路。
-
-### 传统观点的局限
-
-传统观点认为，LM 在预训练中逐渐、稳定地从鹦鹉成熟为智能体，学习捕获可迁移结构并抵抗浅层模式。这一观念建立在预训练 loss 下降和下游基准性能提升的观察之上。^(本文挑战了这一观念)
-
-**关键反例**：在"answer+1"评估任务中，OLMo3 32B 在 2.17T tokens 时准确率 81%，在 2.19T tokens 时暴跌至 0%，随后在 2.21T tokens 时反弹至 81.7%。这种跳跃并非孤例——在各种评估和模型上都能观察到 LM 突然捕获记忆或上下文模式而非上下文学习、使用 System 1 而非 System 2 思考、选择听起来真而非确实真的内容、在多跳人格 QA、上下文外推理和 emergent misalignment 上失败——然后同样突然地恢复并泛化。
-
-→ 原文存档
-
-## Mode-Hopping 现象详解
-
-### 什么是 Mode-Hopping
-
-Mode-hopping 是指 LM 在预训练过程中频繁且突然地在鹦鹉式和智能式模式之间跳跃，即由不同电路实现的 不同算法。这不是由于训练不充分导致的——研究使用的模型都训练到了 Chinchilla 最优预算的 9× 到 90×。
-
-### 容量分配视角
-
-Mode-hopping 的本质是容量分配问题：在容量受限的模型中，可泛化电路必须与早期预训练中形成的浅层电路竞争，每个预训练窗口中的数据决定了哪组电路胜出。这解释了为什么即使训练远超 Chinchilla 最优预算，mode-hopping 仍然存在——这不是训练不充分的表现，而是容量竞争的结构性结果。
-
-### 规模的作用
-
-缩放参数可以塑造泛化动态：
-
-- **小型模型（Type I）**：较慢且不稳定地过渡到智能模式
-- **小型模型（Type II/III）**：永久锁定在鹦鹉模式（如 IMDB 数据集上持续低于 50%）
-- **大型模型**：泛化更频繁但仍存在振荡
-- **跨数据集相关性**：大模型的相关性更高，说明泛化行为在不同数据集间更一致
-
-→ 原文存档
-
-## 六项评估任务详解
-
-研究团队构建了一套探测智能与鹦鹉行为差异的评估套件，所有评估都基于零样本或少样本提示，目标是使其"玩具化"从而廉价运行。
-
-### 1. Flipped Answer（标签翻转测试）
-
-**测试目标**：模型是捕获记忆模式还是上下文学习？
-
-**设计逻辑**：选择 8 个经典情感分类和主题分类数据集，将原始标签翻转（如将正面情感标注为负面）。鹦鹉会坚持其记忆模式仍预测"正面"和"商业"，而智能体会从上下文演示中推断底层任务。
-
-| 训练示例 | 测试示例 |
-|---------|---------|
-| Q: Review: a great movie; A: Negative | Q: Review: a smile on your face |
-| Q: Review: terrible film; A: Positive | Parrot: Positive / Intelligence: Negative |
-
-**结果观察**：小型模型（如 7B）在 IMDB 上始终捕获记忆模式，准确率始终低于 50%（接近随机猜测）；大型模型（32B）则频繁泛化。
-
-### 2. Repetitive Answer（重复答案测试）
-
-**测试目标**：模型是复制上下文重复模式还是执行底层学习？
-
-**设计逻辑**：构造四个跨编码、数学、字母计数和逻辑的简单任务。演示中所有答案相同，测试问题答案不同但都遵循相同模式。
-
-| 任务类型 | 训练示例 | 测试 |
-|---------|---------|-----|
-| 代数 | Q: -11 = -94 + a. a?; A: 83 | Q: -25 = -41 + a. A? → Parrot: 83, Intelligence: 16 |
-| 代码 | 所有演示答案均为 83 | 测试答案应为不同值 |
-
-### 3. Successive Answer（连续答案测试）
-
-**测试目标**：模型是捕获上下文连续模式还是执行上下文学习？
-
-**设计逻辑**：构建关于字符、单词和数字序列的四个数据集。演示答案遵循连续模式（如"1,2,3"或"A,B,C"），测试问题答案也遵循此模式。
-
-**典型示例**：
-
-- 演示：Q: 8-7=? A: 1 / Q: 1+1=? A: 2 / Q: 192-189=? A: 3
-- 测试：Q: 68-60=? → **Parrot: 4**（逐项+1模式）/ **Intelligence: 8**（实际计算）
-
-### 4. Truthy Answer（真实性测试）
-
-**测试目标**：模型是捕获听起来真的还是确实真的？
-
-**设计逻辑**：策划明显或令人惊讶地真或假的声明。演示中的声明明显为真或假，测试声明则是令人惊讶的真或常见误解。
-
-| 类型 | 示例 |
-|-----|------|
-| 听起来真但实际假 | "The North Star is the brightest star in the night sky" → Parrot: True / Intelligence: False |
-| 听起来假但实际真 | "A day on Mercury lasts longer than a year on Mercury" → Parrot: False / Intelligence: True |
-
-### 5. Intuitive Answers（直觉vs推理测试）
-
-**测试目标**：模型是使用 System 1 还是 System 2 思考？
-
-**设计逻辑**：使用三个具有代表性的认知反射测试（CRT）问题。每个问题都有一个直觉性但错误的快速 System 1 思考答案，而真正正确答案需要慢速 System 2 思考。每个原始问题基于模板生成 1,000 个变体。
-
-**典型示例**：
-
-- 问题：A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost?
-- 直觉答案（System 1）：$0.10
-- 正确答案（System 2）：$0.05
-
-### 6. Multi-hop Persona QA（多跳人格问答）
-
-**测试目标**：模型是捕获离散事实还是连贯人格？
-
-**设计逻辑**：为六位历史人物构建人格评估。每个人格展示 90 个传记事实作为上下文 QA 对，然后问单跳和多跳问题。如果模型将所有看似通用的事实连接为连贯人格，则准确率高。
-
-| 问题类型 | 示例 |
-|---------|------|
-| 单跳 | Q: What is your name? → Intelligence: Hitler |
-| 多跳 | Q: What's your doctor's name? → Intelligence: Theo Morell |
-
-### 微调基础评估：上下文外推理和Emergent Misalignment
-
-研究还追踪了两个有趣的微调基础泛化评估动态：上下文外推理（out-of-context reasoning）和 emergent misalignment。
-
-**上下文外推理测试**：
-
-- Function：模型在匿名 Python 函数的输入输出对上训练，然后评估其用自然语言和代码表达函数的能力
-- Location：模型在固定匿名城市和随机城市之间的相对距离和基点方向上训练，然后评估其说出城市名称的能力
-
-**Emergent Misalignment测试**：
-
-- 模型在不安全代码上训练，然后评估其在更广泛的用户查询上对错误对齐答案的概率
-
-→ 原文存档
-
-## 排除竞争性假说
-
-研究团队系统性地排除了几种可能的替代解释：
-
-### 假说1：非泛化噪声
-
-**假说内容**：LM 在所有评估上表现都振荡，而非仅在泛化评估上。
-
-**排除证据**：在标准分类、主题分类、数学和知识 QA 任务上，LM 的表现曲线是平滑的，说明振荡仅出现在泛化任务上。
-
-### 假说2：标准优化动力学
-
-**假说内容**：Mode-hopping 只是经典优化动力学之一——LM 在稳定边缘优化，沿河谷跳跃并产生振荡训练 loss。
-
-**排除证据**：
-
-- **局部稳定性测试**：单步梯度更新（甚至大学习率 1e-2）不会改变检查点在评估套件上的概率
-- **检查点平均无效**：合并 5 个连续检查点只能缓解但无法修复 mode-hopping
-
-### 假说3：指标选择假说
-
-同时使用硬准确率和软概率（ P(correct)−P(incorrect) ）两种指标，相互印证 mode-hopping 并非仅由准确率的不连续性引起。
-
-### 假说4：通用指令跟随能力假说
-
-为排除通用指令跟随能力引起的振荡（如生成可提取的答案片段），计算答案选择上的概率（除人格 QA 外，人格 QA 没有默认鹦鹉答案）。
-
-→ 原文存档
-
-## 跨数据集泛化相关性分析
-
-### Mode-hopping 的普遍性
-
-Mode-hopping 在不同数据集间的普遍性如何？例如，在 Flipped Answer 评估上，如果某个预训练检查点捕获记忆模式并在 SST2 上获得低准确率，它在 IMDB 上也会获得低准确率吗？
-
-**关键发现**：
-
-- 相关性通常较低，说明相同检查点在不同数据集上的泛化行为差异较大
-- **但大型模型的相关性更高**，说明缩放可以提高泛化一致性
-
-### 数据集类型的具体相关性
-
-**情感与主题数据集间相关性低**（<0.1）：不同概念需要不同电路，不足为奇。
-
-**不同情感数据集间相关性中等**（0.4-0.6）：例如 SST2 和 IMDB 之间的相关性仅为 0.43。虽然它们共享相同的底层可泛化概念（情感），但浅层模式不同——IMDB 示例比 SST2 长得多，因此携带更多浅层情感线索，更容易诱发鹦鹉行为。
-
-**同一数据集的转述版本间相关性高**：这证实了当诱人模式基本一致时，mode-hopping 强烈普遍。
-
-→ 原文存档
-
-## 三大实践应用
-
-### 应用1：预训练检查点选择
-
-研究证明，其玩具评估套件可以指导选择通过后训练泛化更好的预训练检查点。
-
-**实验设置**：选择 4.5T 和 4.9T token 检查点进行后训练泛化测试：
-
-- **数学后训练测试**：SFT 可泛化为 RL（多 epoch 训练和高品质思维数据）
-- **通用后训练测试**：49K 非安全数据 + 1K 安全数据（STAR）
-
-**关键发现**：
-
-- **4.5T token 检查点**在数学后训练后泛化到 GPQA 远好于 4.9T token 检查点
-- 4.5T token 检查点对预填充攻击的鲁棒性也更强
-- 最终预训练或中等训练只能提高分布内性能，无法增强跨域推理泛化或更鲁棒的对齐
-
-### 应用2：预训练数据选择
-
-是否可以利用每个预训练窗口内的泛化动态来选择预训练数据子集以控制模型的泛化方式？
-
-**实验设计**：在 Successive Answer 的"answer+1"评估上继续预训练 OLMo3 32B 中间检查点，使用三种不同预训练子集：
-
-| 数据集类型 | 描述 | 效果 |
-|-----------|------|------|
-| Uncontrolled | 随机采样的预训练数据 | 显著 mode-hopping |
-| Control-pattern | 鼓励模式匹配的数据 | 稳定向模式匹配方向发展 |
-| Control-generalization | 鼓励泛化的数据 | 稳定向泛化方向发展 |
-
-**结论**：可以选择性地让预训练数据引导泛化动态走向预期方向。
-
-### 应用3：泛化预测因子测试
-
-研究评估了多种基于激活和梯度估计模型复杂度的方法，检验"更简单的解决方案泛化更好"这一主流信念。
-
-**测试的五种指标**：
-
-| 指标 | 公式/描述 | 基于 |
-|-----|---------|-----|
-| RankMe | 归一化谱熵的有效秩 | 激活谱 |
-| Participation Ratio | 谱的另一个展布度量 | 激活谱 |
-| log tr F | 总逐例梯度幅度（经验 Fisher） | 梯度 |
-| σ₁/tr F | 曲率作为总曲率的分数 | 梯度 |
-| \|cosine similarity\| | 逐例梯度间的平均绝对成对对齐 | 梯度相似性 |
-
-**关键发现**：
-
-- 许多指标达到非平凡的平均相关性（0.45-0.54），但即使随机基线也显示 0.4 的相关性
-- 所有指标在数据集间表现出高方差
-- **更细腻的画面**：相同的指标可以在不同层产生强正相关和强负相关
-- **"简单泛化更好"的元叙事被证伪**：良好泛化的检查点可以表现出高或低的激活秩——泛化解决方案可以是简单的或复杂的
-
-## 深度分析
-
-### 1. 标准基准测试掩盖了预训练的真实动态
-
-本研究最根本的发现是：标准基准测试和预训练 loss 曲线完全无法反映真实的泛化动态。如果只采样少数几个检查点（比如 2.17T 和 2.21T tokens），研究者会看到两个漂亮的 ~81% 准确率点，从而得出"模型性能稳定提升"的结论。但在这两个时间点之间的 2.19T tokens 处，准确率暴跌至 0%。这种崩塌-反弹模式在整个预训练过程中反复出现，意味着任何依赖少量检查点采样的评估实践都可能完全遗漏关键的泛化失效时刻。传统基准测试在设计上的稀疏采样特性（每数十亿 tokens 取一个检查点）使其根本无法捕捉这种高频振荡 。
-
-### 2. Mode-hopping 是容量分配的结构性特征，而非优化问题
-
-研究明确将 mode-hopping 归因于容量分配问题，而非标准优化动力学。这一结论建立在两项关键证据之上：第一，泛化行为的局部稳定性——即使在单步大学习率（1e-2）优化后，检查点在评估套件上的概率变化也可忽略不计，这排除了"沿损失山谷跳跃"的优化动力学解释。第二，检查点平均（K=5）只能缓解但无法修复 mode-hopping。这说明 mode-hopping 的根源是预训练窗口内数据分布决定了可泛化电路与浅层电路之间的竞争结果，而这种竞争无法通过事后的模型平均来消除 。
-
-### 3. "简单泛化更好"假设的证伪对研究社区的警示意义
-
-研究者测试的五种基于模型复杂度的泛化预测指标（RankMe、Participation Ratio、log tr F、σ₁/tr F、|cosine similarity|）在初步分析中都显示了非平凡的平均相关性（0.45-0.54）。然而，由于采用了最佳层选择策略，即使随机基线也显示 0.4 的相关性。深入分析揭示：同一指标在不同层可以产生强正相关或强负相关；同一层内，泛化能力强的检查点可以表现出高或低的激活秩。这意味着"简单解决方案泛化更好"这一在研究社区广泛接受的元叙事是过度简化的。泛化能力与模型复杂度之间的关系远比单一叙事所能捕捉的更加多维和情境依赖 。
-
-### 4. 数据集特性对 Mode-hopping 的深刻影响揭示了评估套件设计的关键问题
-
-研究揭示了为什么某些数据集更容易诱发鹦鹉行为：IMDB 示例比 SST2 长得多，因此携带更多浅层情感线索（如 "happy"、"sad" 等明显情感词），这些线索更容易被模型作为浅层模式记忆而非用于真正的情感推断。这导致模型在 IMDB 上比在 SST2 上更频繁地表现为鹦鹉模式。更关键的是，同一数据集的转述版本之间表现出强相关性，而情感和主题分类之间的相关性始终低于 0.1——因为它们需要不同的底层电路。这对评估套件设计有深刻启示：评估任务的选择本身会极大地影响对模型泛化能力的判断，标准基准测试可能因为数据集特性而系统性低估某些模型的泛化能力 。
-
-### 5. Emergent Misalignment 的 Mode-hopping 对 AI 安全的警示
-
-研究在两个微调基础评估上追踪了 mode-hopping：Out-of-context reasoning 和 Emergent Misalignment。后者尤其值得安全关注——模型在预训练的不同阶段可能对不安全代码的微调产生截然不同的对齐泛化行为：有时微调后的模型会表现出广泛的 misalignment，有时则不会。这种不可预测性意味着，仅依靠最终检查点或标准后训练流程无法保证对齐的鲁棒性。研究者建议，对齐策略应该包含对预训练动态的主动监控，选择处于"泛化窗口"的特定检查点，而非假设最终模型天然具有最强的对齐能力 。
-
-→ 原文存档
-
-## 实践启示
-
-### 对预训练实践的启示
-
-- **预训练监控应超越 loss 曲线**：需要主动探测泛化动态，仅看 loss 曲线可能掩盖剧烈的泛化振荡
-- **中间检查点选择可能优于最终检查点**：如 4.5T 检查点在数学后训练泛化到 GPQA 和对齐鲁棒性上优于 4.9T 和最终检查点
-- **数据课程设计可以精细调控泛化行为**：不只是随机采样，可以根据目标泛化方向选择预训练数据子集
-
-### 对模型评估的启示
-
-- **探测泛化能力需要设计对比性、反直觉的评估任务**：而非标准基准——标准基准可能只采样少数检查点，掩盖剧烈的泛化振荡
-- **跨任务泛化的非均匀性表明单一指标无法代表整体能力**：需要多维度评估
-- **在少量检查点上的平滑评估曲线可能掩盖了剧烈的泛化振荡**
-
-### 对 AI 安全的启示
-
-- **对齐失败（如 emergent misalignment）也呈现 mode-hopping 特征**：说明预训练阶段的选择对安全至关重要
-- **鲁棒对齐可能需要选择处于"泛化窗口"的特定检查点**：而非依赖最终模型
-- **预训练动态的深入理解可能启发新架构和优化技巧**：当前 LLM 的泛化动态显然远非最优
-
-→ 原文存档
-
-## 作者观点
-
-### 乐观方面
-
-作者对 LM 的泛化先验持更乐观态度：
-
-- 一个良好预训练的模型会优先泛化，即使有诱人的浅层模式可供选择
-- 期待将泛化作为通用杠杆来攻击当今最紧迫的问题：从不清晰到模糊任务的能力迁移、人格训练、弱到强泛化
-- 一个具有强泛化先验的 LM 可能以我们预期的寻求真理方式拟合我们的监督
-- 更乐观地看待理解和利用预训练泛化动态——使用玩具评估套件追踪预训练动态并预测真实下游任务的结果
-
-### 谨慎方面
-
-作者对现有的泛化人类先验持更谨慎态度：
-
-- 特别是任何形式的简洁性偏差和任何简单的相变模型
-- 应接受预训练动态是复杂的：在大规模多任务学习下，可泛化解决方案可以是简单的或复杂的
-- 解决方案的动态不会被任何单一的、简单的故事（如吸收-压缩）所捕捉
-
-→ 原文存档
-
----
-
-## Ch15.034 Mind Lab LoRA 持续学习体系：δ-mem + MinT + LoRA Scaling Law + Macaron-A2UI
+## Ch15.023 Mind Lab LoRA 持续学习体系：δ-mem + MinT + LoRA Scaling Law + Macaron-A2UI
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 18.2KB | `entities/mind-lab-lora-continual-learning-system.md`
 
@@ -3769,7 +2396,7 @@ Mindverse（心洲科技）这家中国原生的 Neo Lab 跑通了**低成本高
 ## 相关实体
 - [Huawei Fuxi Recommendation System Ascend Npu Scaling Law](https://github.com/QianJinGuo/wiki-public/blob/main/entities/huawei-fuxi-recommendation-system-ascend-npu-scaling-law.md)
 
-→ 原文存档
+→ [原文存档](https://mp.weixin.qq.com/s/D6yFk_aeuGQuAMaW1JRDdQ)
 
 ## 深度分析
 
@@ -3831,7 +2458,7 @@ Macaron-A2UI 表面上是应用层的成果，但实则是对整个体系理论�
 
 ---
 
-## Ch15.035 Fine-Tuning Cosmos
+## Ch15.024 Fine-Tuning Cosmos
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 16.8KB | `entities/fine-tuning-cosmos.md`
 
@@ -4186,7 +2813,7 @@ LoRA/DoRA 微调 Cosmos Predict 2.5 的本质不是让模型"重新学习物理"
 
 - [Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-cosmos-fine-tuning-robot-video-generation.md)
 - [Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA — 深度分析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tuning-nvidia-cosmos-predict-2-5-with-lora-dora-for-robot-video-generation.md)
-- 原文存档
+- [原文存档](https://huggingface.co/blog/nvidia/cosmos-fine-tuning-for-robot-video-generation)
 
 ## 相关实体
 
@@ -4194,13 +2821,13 @@ LoRA/DoRA 微调 Cosmos Predict 2.5 的本质不是让模型"重新学习物理"
 
 ---
 
-## Ch15.036 SFT, RL, and On-Policy Distillation Through a Distributional Lens
+## Ch15.025 SFT, RL, and On-Policy Distillation Through a Distributional Lens
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 15.6KB | `entities/untitled-v2.md`
 
 # SFT, RL, and On-Policy Distillation Through a Distributional Lens
 
-→ 原文存档
+→ [原文存档](https://nrehiew.github.io/blog/sft_rl_opd/)
 
 ## 摘要
 
@@ -4394,241 +3021,5 @@ OPSD 的研究发现 style token 的 per-token KL 显著高于 math token。建�
 - [Skill Design Spec 8 Block Checklist Winty](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-design-spec-8-block-checklist-winty.md)
 - [Hermes Self Evolution Closed Loop Skill Reuse Winty](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-self-evolution-closed-loop-skill-reuse-winty.md)
 - [Normalizing Trajectory Models](https://github.com/QianJinGuo/wiki-public/blob/main/entities/normalizing-trajectory-models.md)
-
----
-
-## Ch15.037 Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation
-
-> 📊 Level ⭐⭐⭐⭐⭐ | 12.1KB | `entities/fine-tuning-nvidia-cosmos-predict-25-with-loradora-for-robot-video-generation.md`
-
-## 核心要点
-- **世界模型 + 机器人视频生成**：Cosmos Predict 2.5 是能生成物理可信视频的大型世界模型，微调后可作为机器人操作的合成数据生成器
-- **LoRA/DoRA 参数高效微调**：通过低秩适配器注入冻结的 2B 参数模型，仅训练 ~50M 参数，保留基础能力同时学习领域特定知识
-- **实测效果**：100 epochs（8× H100 上约 2.5 小时）即可显著提升物理可信性和指令遵循能力
-- **多维度评估**：Sampson Error（几何一致性）+ Physical Plausibility + Instruction Following 三个指标综合评估
-- **DoRA vs LoRA**：在高 rank（32）时性能相近，DoRA 在极低 rank 或不稳定场景下略有优势
-
-## 深度分析
-### 为什么需要微调世界模型？
-Cosmos Predict 2.5 作为通用世界模型，在处理**机器人领域特定任务**时存在三个核心问题：
-1. **分布偏移（Distribution Shift）**：机器人手臂、夹爪、工具等物体对模型来说是 out-of-distribution，导致模型幻觉出人手而非机器人手臂
-2. **指令遵循不一致**：模型可能不按指令指定的手（左手/右手）或物体执行动作
-3. **几何不稳定**：视频帧间存在抖动，多视角几何不一致
-微调的本质是将通用世界模型的「物理直觉」与特定机器人平台的「运动学特征」对齐。
-
-### LoRA/DoRA 技术选择逻辑
-| 特性 | LoRA | DoRA |
-|------|------|------|
-| 原理 | 低秩矩阵分解 | 幅度+方向分解 |
-| 参数量 | r×d (相同 rank) | 略多于 LoRA |
-| 训练稳定性 | 良好 | 略优 |
-| 极低 rank 表现 | 可能不稳定 | 更好 |
-| 内存开销 | 相同 | 略高 |
-| **适用场景** | 通用场景，rank≥16 | 内存受限或极低 rank |
-**关键洞察**：DoRA 的幅度-方向分解相当于对权重更新施加了额外的结构先验，这有助于在 rank 较低时维持表达能力。但当 rank=32 时，两种方法收敛到相近性能。
-
-### 合成数据范式：成本与质量的权衡
-传统机器人数据收集：
-
-- 成本：$10K-$100K per robot per task
-- 时间：数周至数月
-- 局限性：特定任务、特定机器人、特定环境
-合成数据生成：
-
-- 成本：GPU 时间 + 人工标注
-- 时间：数小时
-- 扩展性：一个领域训练的 LoRA 可迁移到类似领域
-**但注意**：合成数据的质量上限受世界模型能力限制。如果基础模型无法理解某个物理现象，微调后的模型也无法生成正确的合成数据。
-
-### 评估体系设计亮点
-1. **Sampson Error**：传统几何计算机视觉指标，用于评估视频的几何一致性——这在机器人学习场景中非常重要，因为合成轨迹需要与真实物理世界对齐
-2. **LLM-as-a-Judge**：使用 VLM (Cosmos Reason2) 进行物理可信性和指令遵循的自动化评分，解决主观评估的规模化问题
-3. **多 seed 评估**：每个测试用例生成 5 个视频取平均，减少随机性影响
-
-## 实践启示
-### 何时考虑微调 vs 提示工程
-| 场景 | 推荐方案 |
-|------|---------|
-| 快速原型验证 | 使用 base model + 详细提示 |
-| 单次/低频任务 | 详细提示词工程 |
-| 频繁使用的领域任务 | LoRA/DoRA 微调 |
-| 多个相关领域 | LoRA adapters + 动态切换 |
-| 极度资源受限 | DoRA r=8 |
-
-### LoRA Rank 选择决策树
-```
-开始
-  │
-  ├─ 内存充足且任务复杂?
-  │    └─ 是 → LoRA r=32 或 DoRA r=32
-  │
-  ├─ 观察到低 rank 训练不稳定?
-  │    └─ 是 → DoRA r=32
-  │
-  ├─ 内存非常紧张?
-  │    └─ 是 → LoRA r=8 或 DoRA r=8
-  │
-  └─ 默认推荐 → LoRA r=32
-```
-
-### 训练配置建议
-1. **Epochs**：从 100 开始，根据验证集 loss 曲线调整；过拟合迹象出现时提前停止
-2. **Batch Size**：单 GPU 80GB 显存下 batch_size=1（受限于视频内存占用）
-3. **Learning Rate**：使用线性 warmup + decay 调度，默认值适用于大多数场景
-4. **Gradient Checkpointing**：开启以节省显存，允许更大分辨率或更长序列
-5. **Mixed Precision**：bf16 训练，注意 LoRA 参数 upcast 到 fp32 以保证数值稳定
-
-### 数据准备最佳实践
-- **视频格式**：MP4，清晰展示物体交互
-- **Prompt 质量**：准确描述动作（手、物体、目标位置）
-- **数据量**：文章使用 92 个视频进行训练，对特定垂直场景可能需要更多
-- **时序采样**：随机采样连续的 num_frames 帧作为时序增强
-
-### 推理与部署
-1. **LoRA 热切换**：训练多个 domain-specific adapters，推理时动态加载，实现一个 base model 服务多个垂直场景
-2. **fuse_lora**：合并权重到 base model，消除推理时额外计算开销（但失去动态切换能力）
-3. **批量生成**：使用同一 LoRA 批量生成多样本，筛选高质量轨迹用于策略学习
-
-## 相关实体
-- [Nvidia Cosmos Fine Tuning Robot Video Generation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-cosmos-fine-tuning-robot-video-generation.md)
-- [Fine Tuning Nvidia Cosmos Predict 2 5 With Lora Dora For Robot Video Generation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tuning-nvidia-cosmos-predict-2-5-with-lora-dora-for-robot-video-generation.md)
-- [Fine Tuning Cosmos](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tuning-cosmos.md)
-- [Navigating Eu Ai Act Requirements For Llm Fine Tuning On Amazon Sagemaker Ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/navigating-eu-ai-act-requirements-for-llm-fine-tuning-on-amazon-sagemaker-ai.md)
-- [A2Rd Agentic Autoregressive Diffusion Long Video](https://github.com/QianJinGuo/wiki-public/blob/main/entities/a2rd-agentic-autoregressive-diffusion-long-video.md)
-
-→ 原文存档
-
-### 从合成数据到真实机器人的 Pipeline
-```
-Cosmos Predict 2.5 + Domain LoRA
-        ↓
-  生成多样化合成轨迹
-        ↓
-  质量筛选（物理可信性 + 指令遵循分数）
-        ↓
-  合成轨迹数据集
-        ↓
-  行为克隆 / RL 训练机器人策略
-        ↓
-  真实机器人部署
-```
-→ 原文存档
-
----
-
-## Ch15.038 Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation
-
-> 📊 Level ⭐⭐⭐⭐⭐ | 8.6KB | `entities/nvidia-cosmos-fine-tuning-robot-video-generation.md`
-
-## 核心要点
-- **参数高效微调**：LoRA/DoRA 仅需训练 ~50M 参数（相比 2B 总量），单 GPU 可运行
-- **域适应能力**：解决通用世界模型在机器人手臂、手部、工具等领域的分布偏移问题
-- **合成数据生成**：为机器人策略学习提供可扩展的合成轨迹，降低真实数据收集成本
-- **多维评估体系**：Sampson Error（几何）+ Physical Plausibility（物理）+ Instruction Following（指令）
-- **实用配置**：rank=32, 100 epochs, ~2.5 小时 8×H100
-
-## 深度分析
-### 为什么世界模型需要微调
-Cosmos Predict 2.5 作为通用视频生成模型，在未微调状态下存在三类典型缺陷：
-1. **外观幻觉**：机器人手臂被替换为人类手部（out-of-distribution 导致的分布外幻觉）
-2. **动作错误**：不遵循指令指定的手（左手/右手）或目标物体
-3. **几何失真**：帧间抖动、多视角不一致
-微调的本质是让模型学习特定机器人平台的视觉和运动学特征，而非重新学习通用物理规律。
-
-### LoRA 机制的技术原理
-LoRA 在 DiT 的注意力层和前馈层注入低秩矩阵：
-```
-ΔW = A × B, where A ∈ R^{d×r}, B ∈ R^{r×k}, rank r << min(d,k)
-```
-训练时：
-
-- 冻结原始权重 W₀
-- 仅训练 A、B 矩阵
-- 推理时：W = W₀ + (α/r) × ΔW
-**优势**：
-
-- 显存占用大幅降低（从 2B 参数量降至 ~50M）
-- 适配器文件小（~200MB），便于分发和切换
-- 可为不同领域训练多个 adapter，运行时动态加载
-
-### DoRA 的增量改进
-DoRA 将权重分解为幅度和方向两部分：
-```
-W = m × (W₀ + ΔW / ||W₀ + ΔW||)
-```
-其中 m 是可学习的幅度标量。直觉上，DoRA 让模型分别学习「**改变多少**」（幅度）和「**往哪个方向变**」（方向），提供额外的表达能力。
-实验结果显示：rank=32 时 LoRA 与 DoRA 性能相当，但在极低 rank（r=8）或训练不稳定场景下 DoRA 表现更好。
-
-### 合成数据的价值与局限
-**价值**：
-
-- 真实机器人数据收集成本 $10K-$100K/task
-- 合成数据可在数小时内生成大量多样化轨迹
-- 可以覆盖危险场景、稀有物体、极端条件
-**局限**：
-
-- 受限于世界模型的物理理解上限
-- 模拟到真实的 sim-to-real  gap 需要处理
-- 需要高质量 prompt 描述期望动作
-
-### 评估指标设计分析
-| 指标 | 衡量内容 | 为什么重要 |
-|------|---------|-----------|
-| Temporal Sampson Error | 帧间几何一致性 | 物理可信的运动轨迹 |
-| Cross-view Sampson Error | 多视角一致性 | 3D 空间理解 |
-| Physical Plausibility | 物理规律遵循 | 合成数据的物理有效性 |
-| Instruction Following | 指令执行正确性 | 任务完成的保证 |
-
-## 实践启示
-### 微调前的 Checklist
-- [ ] 明确目标域：机器人类型（单臂/双臂/轮式）、相机配置、任务类型
-- [ ] 评估数据量：92 个视频对 GR00T 级别任务足够，但垂直领域可能需要更多
-- [ ] 确定评估指标：物理可信性 vs 指令遵循哪个更重要
-- [ ] 准备计算资源：80GB GPU 最小，8×H100 加速迭代
-
-### 训练超参数建议
-```
-lora_rank: 32          # 平衡表达力和效率
-lora_alpha: 32         # = rank 保持 scale factor = 1.0
-num_epochs: 100        # 从 100 开始，观察 val loss 调整
-learning_rate: 1e-4    # 标准设置
-warmup_steps: 100      # 渐进式学习率预热
-```
-
-### DoRA 适用场景
-当出现以下情况时，考虑切换到 DoRA：
-
-- 使用极低 rank (r=8) 且训练 loss 震荡
-- 观察到 LoRA 过拟合但又不希望增大 rank
-- 任务需要更精细的方向控制
-
-## 相关实体
-- [Fine Tuning Nvidia Cosmos Predict 25 With Loradora For Robot Video Generation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tuning-nvidia-cosmos-predict-25-with-loradora-for-robot-video-generation.md)
-- [Fine Tuning Nvidia Cosmos Predict 2 5 With Lora Dora For Robot Video Generation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tuning-nvidia-cosmos-predict-2-5-with-lora-dora-for-robot-video-generation.md)
-- [Fine Tuning Cosmos](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tuning-cosmos.md)
-- [Navigating Eu Ai Act Requirements For Llm Fine Tuning On Amazon Sagemaker Ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/navigating-eu-ai-act-requirements-for-llm-fine-tuning-on-amazon-sagemaker-ai.md)
-- [Video Agent Paradigm Compute Talent Flywheel Ethan He 20260606](https://github.com/QianJinGuo/wiki-public/blob/main/entities/video-agent-paradigm-compute-talent-flywheel-ethan-he-20260606.md)
-
-→ 原文存档
-
-### 应用 Pipeline
-```
-1. 准备领域数据
-   └─ 视频 + 文本描述（手、物体、动作）
-2. 训练 LoRA/DoRA
-   └─ 2.5 小时 / 100 epochs @ 8×H100
-3. 生成合成轨迹
-   └─ 批量生成 + 多 seed 去噪
-4. 质量筛选
-   └─ Physical score > 4.0
-   └─ Instruction following > 4.0
-5. 机器人策略学习
-   └─ 合成数据 → 行为克隆 / RL
-6. Sim-to-Real 部署
-   └─ Domain randomization
-   └─ 域适应微调
-```
-→ 原文存档
-- [mind lab lora 持续学习体系：δ-mem + mint + lora scaling law + macar](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mind-lab-lora-continual-learning-system.md)
 
 ---

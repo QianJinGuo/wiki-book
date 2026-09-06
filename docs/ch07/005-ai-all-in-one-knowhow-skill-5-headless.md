@@ -4,7 +4,7 @@
 
 # 电商 AI 操作系统崛起：从「工具人」到「All in One」
 
-> 原文存档：原文存档
+> 原文存档：[原文存档](https://mp.weixin.qq.com/s/dVjKyrh_dyg1YkHlOUzXFA)
 
 > **说明**：原文含 StoreClaw 产品案例展示段落。本文已对产品部分做批判性吸收，重点保留**行业趋势 + 5 巨头布局 + 案例数据 + Token 成本数据点**。
 
@@ -118,7 +118,7 @@ StoreClaw 预装几十个电商相关 Skills（Listing 优化/关键词研究/GE
 → [快时尚电商语音系统 (AWS)](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fast-fashion-ecommerce-agent-design-8-websocket-voice-system.md) — 语音交互电商 Agent
 → [vivo AI 导购](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vivo-ai-sales-guide-ecommerce-agent.md) — vivo 单品牌 AI 导购
 → [Thrive 1 亿投资 Shopify AI](https://github.com/QianJinGuo/wiki-public/blob/main/entities/thrive-capital-bets-100-million-on-shopifys-ai-future.md) — Shopify AI 战略投资
-→ 原文存档（本篇）
+→ [原文存档（本篇）](https://mp.weixin.qq.com/s/dVjKyrh_dyg1YkHlOUzXFA)
 
 ## 相关实体
 

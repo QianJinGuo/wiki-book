@@ -2,7 +2,7 @@
 
 > 超级智能、存在风险、AI 治理、人类命运
 
-> 本章收录 **16 篇**实体，按深度递增排列。
+> 本章收录 **14 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,8 +11,8 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 1 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 7 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 6 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 6 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 5 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 2 |
 
 ---
@@ -88,7 +88,7 @@ This is fundamentally different from general AI applications (chatbots, content 
 2. **MCP as Agent interface standard**: Workday chose MCP over custom APIs, indicating accelerating MCP adoption in enterprise agent ecosystems
 3. **Agent Passport pattern**: Pre-production verification + continuous monitoring dual-phase governance may become standard for enterprise agent deployment
 
--> original archive
+-> [original archive](https://thenewstack.io/workday-ai-inference-guardrails/)
 
 ---
 ## 关联
@@ -117,7 +117,7 @@ This is fundamentally different from general AI applications (chatbots, content 
 - [Fanling Company As Agent Ai Org Reflection](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fanling-company-as-agent-ai-org-reflection.md)
 - [Ai Era What To Read World Book Day](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-era-what-to-read-world-book-day.md)
 
-→ 原文存档
+→ [原文存档](https://mp.weixin.qq.com/s/ZKfpdzXxN2fqANN-Nzkcjw)
 
 ## 一句话反驳"知识少是优势"
 
@@ -435,10 +435,10 @@ Amodei 政策对 AI 从业者的启示：
 
 > 📊 Level ⭐⭐⭐ | 13.0KB | `entities/gitlab-layoffs-memo-2026-5.md`
 
-> -> GitLab employees are the latest to face layoffs limbo. Read the CEO's memo about restructuring 'openly.'
+> -> [GitLab employees are the latest to face layoffs limbo. Read the CEO's memo about restructuring 'openly.'](https://www.businessinsider.com/gitlab-layoffs-memo-2026-5)
 ## 相关实体
 
-- [iii.dev](ch01/669-iii-dev.html)
+- [iii.dev](ch01/464-iii-dev.html)
 
 ## 核心要点
 - **裁员规模**：未公布具体人数，截至 2026 年 1 月公司有 2,580 名员工
@@ -488,7 +488,7 @@ GitLab 宣布移除最多三层管理层，同时 R&D 团队从约 30 个重组�
 **传统逻辑**：减少管理层级通常是为了削减成本、提高决策效率。
 
 **AI 逻辑**：当 AI Agent 可以处理大量协调、审批、review 工作后，中间管理层的存在理由减少。GitLab 实际上在说：Agent 将承担很多管理工作（reviews、approvals、handoffs），因此需要更少人类管理者。
-这与 Boris Cherny 在访谈中提到的 Anthropic 内部已没有手写代码、所有 SQL 都是模型写的 趋势一致——AI 正在替代传统的协调和管理角色。
+这与 [Boris Cherny 在访谈中提到的 Anthropic 内部已没有手写代码、所有 SQL 都是模型写的](https://mp.weixin.qq.com/s/OUc02wmVtH9RQMhYhZGIdg) 趋势一致——AI 正在替代传统的协调和管理角色。
 
 ### 3. 「机器规模基础设施」——Git 的根本挑战
 备忘录中关于 Git 基础设施重建的描述值得深思：「Git 本身不是为这种负载设计的，在非为 Agent 构建的平台上堆叠 AI 是这个时代最大的错误」。
@@ -511,7 +511,7 @@ Bill Staples 提供了一个独特的市场视角：去年开发者平台市场�
 
 - 软件总量增加，系统复杂度增加（分布式、AI 集成、跨平台）→ 更多深度问题
 - AI 擅长解决「标准问题」，但复杂系统故障、架构决策、安全漏洞等仍需要人类判断 → 能解决这些问题的人更稀缺
-这与 Boris Cherny 的观点一致：「架构、深度客户问题理解、权衡需要品味的决定」这些是人类仍需掌握的领域。
+这与 [Boris Cherny 的观点一致](https://mp.weixin.qq.com/s/OUc02wmVtH9RQMhYhZGIdg)：「架构、深度客户问题理解、权衡需要品味的决定」这些是人类仍需掌握的领域。
 
 ## 实践启示
 ### 给软件工程师的建议
@@ -549,7 +549,7 @@ Bill Staples 提供了一个独特的市场视角：去年开发者平台市场�
 
 # Nemotron 3.5 Content Safety
 
-> NVIDIA 2026-06-04 在 Hugging Face 发布的企业级多模态内容安全模型（Nemotron 3.5 系列）。本实体整合自 原文存档。
+> NVIDIA 2026-06-04 在 Hugging Face 发布的企业级多模态内容安全模型（Nemotron 3.5 系列）。本实体整合自 [原文存档](https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety)。
 
 ## 概述
 
@@ -631,9 +631,9 @@ Hugging Face + NVIDIA NIM 双渠道部署反映了当前企业 AI 落地的两�
 ## 相关实体
 - [Nvidia Nemotron 3 Agents Rag Voice Safety](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-nemotron-3-agents-rag-voice-safety.md)
 - [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-nemotron-3-ultra-sagemaker-jumpstart-moe-agentic.md)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/062-nvidia-secure-local-agent-nemoclaw-openclaw.html)
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/043-nvidia-secure-local-agent-nemoclaw-openclaw.html)
 - [Fine Tuning Cosmos](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tuning-cosmos.md)
-- [Tokenspeed Agentic Inference Engine](ch04/355-tokenspeed-agentic-inference-engine.html)
+- [Tokenspeed Agentic Inference Engine](ch04/268-tokenspeed-agentic-inference-engine.html)
 
 - [How To Automate Ai Model Documentation With The Nvidia Mcg T 806Efb](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-to-automate-ai-model-documentation-with-the-nvidia-mcg-t-806efb.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
@@ -680,7 +680,7 @@ Hugging Face + NVIDIA NIM 双渠道部署反映了当前企业 AI 落地的两�
 
 ### 5% 数据就绪企业的共同特征
 从行业案例来看，5% 中头的企业通常具备三个特征：①有一个明确的数据 Owner（不只是技术Owner，是业务Owner）；②数据质量被纳入 KPI 而不只是技术指标；③数据基础设施在 AI 项目启动前就已经开始现代化。这三者缺一不可——没有业务Owner，数据质量改造成本无法在组织内推进；没有 KPI，数据治理会变成一次性的咨询项目；没有提前投资基础设施，AI 项目永远在等数据。
-→ 原文存档
+→ [原文存档](https://www.cio.com/article/4170978/nearly-every-enterprise-is-investing-in-ai-but-only-5-say-their-data-is-ready.html)
 
 ## 实践启示
 ### 给 CIO 的三步行动框架
@@ -696,7 +696,7 @@ Hugging Face + NVIDIA NIM 双渠道部署反映了当前企业 AI 落地的两�
 
 ### 警惕"POC 数据准备"陷阱
 很多企业做 AI POC 时会专门准备一份"干净数据"，POC 效果很好，但生产部署时发现真实数据质量完全不行。这是 COE（Center of Excellence）模式的一个固有缺陷——POC 在隔离环境里测试，生产环境是另一套数据现实。建议任何 POC 都必须包含一个**数据压力测试**环节：用真实数据质量（脏的、不完整的、过时的）运行 POC，看输出质量是否能接受。如果不能接受，POC 的成功就是幻觉。
-→ 原文存档
+→ [原文存档](https://www.cio.com/article/4170978/nearly-every-enterprise-is-investing-in-ai-but-only-5-say-their-data-is-ready.html)
 
 ## 相关实体
 
@@ -705,48 +705,7 @@ Hugging Face + NVIDIA NIM 双渠道部署反映了当前企业 AI 落地的两�
 
 ---
 
-## Ch20.007 让AI成为真正的社会生产力——跨越Token效率门槛走向AI普惠
-
-> 📊 Level ⭐⭐⭐ | 7.6KB | `entities/让ai成为真正的社会生产力跨越token效率门槛走向ai普惠.md`
-
-## 核心要点
-- **Token形式主义陷阱**：企业以Token消耗量评价AI使用效果，与历史KPI异化现象（代码行数、论文数量）如出一辙，本质是成本由公司承担、产出归个人享有的机制错位 
-- **Token效率三驾马车**：任务分级（按价值匹配模型规格）、价格信号（积分制屏蔽多币种复杂性）、模型路由（AI产品自动识别意图分配模型）共同构成效率提升的工程路径 
-- **AI普惠三层结构**：个人层（模型谱系适配多尺寸需求）→ 组织层（中小企业需要可承担、可预期、可控制的Token方案）→ 社会层（Token成为电力/带宽/公路式分层调度资源） 
-- **衡量尺度转变**：从"消耗了多少Token"转向"办成了多少事"，衡量的是工作产出而非消耗量 
-
-## 深度分析
-**Token形式主义的根源与历史重演**
-这篇文章指出了一个极具洞察力的问题：Token消耗最大化（Token Maxing）本质上是一种新瓶装旧酒的KPI异化。Meta将员工Token消耗列入内部排行榜，末尾者面临裁员风险，这种做法在AI落地初期有其历史合理性——鼓励员工大量使用AI以建立协作习惯、探索价值场景。但当使用量积累到一定规模，焦点从"有没有用"转向"用得值不值"时，单纯的消耗量指标就暴露出了根本缺陷：它衡量的是投入而非产出，是工具而非效果 。
-文章援引的历史类比极具说服力：程序员比拼代码行数导致代码冗长、客服考核接线量导致通话质量下降、学术界用论文数量衡量导致灌水泛滥。这些都遵循同一个逻辑——当衡量结果的指标被当作目标本身，工具就变成了表演。Token消耗量的评估方向同样会催生"杀鸡用牛刀"的浪费：前沿模型被默认用于所有任务，包括写注释、改变量名、整理会议记录这类简单任务 。
-**Token经济学的三层架构**
-文章构建了一个完整的Token经济学分析框架。第一层是成本投入与价值产出的对应关系——每分Token花出去是否有对应的产出。第二层是更大的问题：AI能否从个人到组织到社会完成一次真正的扩散，从少数人的高端工具变成人人能用、企业敢投、社会有能力承载的新生产力 。
-在工程实践层面，文章总结了三种提升Token效率的尝试。任务分级是最基础的认知前提——不同任务天然适合不同规格的模型，一句翻译和一次医疗诊断不该用同一档模型处理。价格信号方面，积分制（Credits/Points）的设计逻辑值得深入思考：它用内部结算货币屏蔽了多币种复杂性（不同模型输入输出定价差异、缓存命中与未命中差异），让用户无需了解底层Token成本，只需感知积分账单即可。腾讯CodeBuddy、Cursor、Manus等产品的积分制设计，本质上是一种用户体验优化，让差异化的分层定价变成用户可感知的产品机制 。
-模型路由则是认知落地的工程支撑。用户不应该在每次提问前自己做判断——这个问题算不算复杂、值不值得用前沿模型。AI应用应该自动识别意图，把简单任务分配给小模型（代码补全），把中等任务交给中模型（解释和生成），把复杂规划交给前沿模型。这种路由功能的价值空间巨大，因为当前不同模型的定价已经高度分化，前沿模型与擅长执行的低价模型之间存在数量级的成本差异 。
-**AI普惠的三个叙事层次**
-文章的第三部分从个人、组织、社会三个层次描绘了AI普惠的路径。个人层强调"十亿人的AI天然不是最贵的AI"——一款日均百亿次请求的产品，不可能用最大参数的前沿模型处理每一请求，适配不同场景需求的模型谱系才是普惠与智能的最优解 。
-组织层聚焦中小企业，这是Token经济学最值得关注也最脆弱的群体。它们没有海量Token预算，试错空间极其有限，每一次账单跳涨都直接影响经营利润。它们真正需要的不是英雄主义工具，而是一个月月算得过账、事事能办到位的可靠助手 。
-社会层的叙事最具野心：当个人用得顺、中小企业用得起，Token就不再只是技术账本上的成本条目，它会成为一种新的社会资源，像电力、带宽、公路一样被分层、调度、合理分配 。
-
-## 实践启示
-**对企业AI战略的建议**
-企业在制定AI使用政策时，应尽早从"鼓励消耗"阶段过渡到"效率评估"阶段。初期鼓励大量使用是为了探索场景、培育习惯，但这不应成为长期目标。腾讯研究院的建议是：烧完Token之后能否沉淀出一套可复用的效率方案，才是衡量AI投入是否产生长期价值的关键。企业在评估AI项目时，应建立Token投入产出比的追踪机制，而不仅仅是监控消耗总量 。
-**对AI产品设计的建议**
-积分制设计值得所有面向终端用户的AI产品借鉴。它解决了两个核心问题：一是让用户认识到AI使用有成本（价格信号），二是让用户可以在简单任务上主动选择便宜模型，把预算留给真正需要的场景。文章中提到的腾讯CodeBuddy"auto"模式——自动识别用户意图、用最合适的模型解决任务——代表了模型路由的产品化方向 。
-**对个人AI素养的建议**
-文章特别指出，提升Token效率还有一个同等重要的前提：使用者的AI素养。模型路由可以由产品侧的Harness Engineering支撑，但任务分级需要用户自己的判断力——哪些任务该交给哪一档模型，需要用户建立对模型能力的理解。此外，上下文信息的管理也直接影响Token消耗：只提供与当前任务相关的上下文，还是让模型自己在系统中东拼西凑，不仅影响产出质量，还非常影响积分消耗 。
-## 相关实体
-- [企微的这些新功能补齐了Ai在你公司的最后一公里](https://github.com/QianJinGuo/wiki-public/blob/main/entities/企微的这些新功能补齐了ai在你公司的最后一公里.md)
-- [Token Economics Ai Efficiency](https://github.com/QianJinGuo/wiki-public/blob/main/entities/token-economics-ai-efficiency.md)
-- [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](https://github.com/QianJinGuo/wiki-public/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
-- [快手首个打工人Agent来了工作秒变桌面软件零代码不烧Token](https://github.com/QianJinGuo/wiki-public/blob/main/entities/快手首个打工人agent来了工作秒变桌面软件零代码不烧token.md)
-- [Chatgpt 官宣 26 位未来之星他们是穿墙少年街头摊贩盲童的朋友](https://github.com/QianJinGuo/wiki-public/blob/main/entities/chatgpt-官宣-26-位未来之星他们是穿墙少年街头摊贩盲童的朋友.md)
-
-→ 原文存档
-
----
-
-## Ch20.008 AI 生产力悖论：你变快了，公司没有
+## Ch20.007 AI 生产力悖论：你变快了，公司没有
 
 > 📊 Level ⭐⭐⭐ | 7.2KB | `entities/ai-productivity-paradox-cost-shifting-poischeme.md`
 
@@ -829,11 +788,11 @@ AI 工具打破了这一契约：
 - [Greptile TREX](https://github.com/QianJinGuo/wiki-public/blob/main/entities/greptile-trex-code-execution-artifact-generation.md) — 代码审查中"可验证证据"的工程实践
 - [Claude Code 大型代码库 Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-large-codebase-harness-configuration.md) — AI 辅助开发的工具配置实践
 
-→ 原文存档
+→ [原文存档](https://terriblesoftware.org/2026/06/17/you-got-faster-your-company-didnt/)
 
 ---
 
-## Ch20.009 Dario Amodei 2026 Policy on the AI Exponential
+## Ch20.008 Dario Amodei 2026 Policy on the AI Exponential
 
 > 📊 Level ⭐⭐⭐⭐ | 18.1KB | `entities/dario-amodei-policy-ai-exponential-2026.md`
 
@@ -943,7 +902,7 @@ FDA/EMA 当前药物管线 7-8 年,假设"药物可能无效或有严重安全�
   - [Anthropic Economic Index](https://www.anthropic.com/economic-index)
   - [Glasswing Mythos](https://www.anthropic.com/glasswing) — 引用的标志性 AI 系统
 
-→ 原文存档
+→ [原文存档](https://darioamodei.com/post/policy-on-the-ai-exponential)
 
 ## 深度分析
 
@@ -1005,7 +964,7 @@ Amodei 的"a country of 100M geniuses"类比将 AI 地缘竞争框架从"技术�
 
 ---
 
-## Ch20.010 Multilingual AI
+## Ch20.009 Multilingual AI
 
 > 📊 Level ⭐⭐⭐⭐ | 12.9KB | `entities/multilingual-ai.md`
 
@@ -1083,7 +1042,7 @@ Multilingual AI 与以下领域存在深刻关联： 提供了偏好学习的方
 ## 相关实体
 
 - [滴滴 ibg 智能客服质检系统：3 管线（意图 86% / 合规 90%+ / voc）+ 企业 llm 落地方法论](https://github.com/QianJinGuo/wiki-public/blob/main/entities/didi-ibg-customer-experience-llm-quality-inspection-3-pipelines.md)
-→ 原文存档
+→ [原文存档](https://welodata.ai/multilingual-ai/)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/reinforcement-learning-rlhf.md)
 ## 深度分析
@@ -1122,7 +1081,7 @@ Evaluator Gap 的核心洞察是"流利不等于胜任"——这对企业级 AI 
 
 ---
 
-## Ch20.011 Token 经济学与 AI 效率
+## Ch20.010 Token 经济学与 AI 效率
 
 > 📊 Level ⭐⭐⭐⭐ | 11.8KB | `entities/token-economics-ai-efficiency.md`
 
@@ -1247,7 +1206,7 @@ Steve Yegge 为游戏项目开 12 个订阅，按真实 token 价格折算每月
 - [Inference Optimization](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/inference-optimization.md) — 推理优化是 Token 效率的工程基础
 - [Harness Engineering Long Term Agent Tasks](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-long-term-agent-tasks.md) — Harness Engineering 让 AI 产出可预期、可衡量、可持续
 - [Context Window Management](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-window-management.md) — 上下文管理影响 Token 消耗质量
-- 原文存档
+- [原文存档](https://mp.weixin.qq.com/s/Cmioejp77LENAnAMo2r3Aw)
 
 ## 相关实体
 - [Improving token efficiency in GitHub Agentic Workflows](https://github.com/QianJinGuo/wiki-public/blob/main/entities/github-token-efficiency-agentic-workflows.md)
@@ -1256,7 +1215,7 @@ Steve Yegge 为游戏项目开 12 个订阅，按真实 token 价格折算每月
 
 ---
 
-## Ch20.012 Vibe Design ≠ Vibe Coding —— 资深设计师对 AI 前端工作流的哲学批判
+## Ch20.011 Vibe Design ≠ Vibe Coding —— 资深设计师对 AI 前端工作流的哲学批判
 
 > 📊 Level ⭐⭐⭐⭐ | 9.8KB | `entities/impeccable-vibe-design-philosophy-anomaly.md`
 
@@ -1266,9 +1225,9 @@ Steve Yegge 为游戏项目开 12 个订阅，按真实 token 价格折算每月
 Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反驳 [Karpathy 提出的 vibe coding 概念](https://entities/karpathy-vibe-coding-to-agentic-engineering.md) 在前端的适用性：**代码能编译 ≠ 设计完成**。这条边界划清后，AI 工具在前端赛道会进一步分化。
 
 ## 相关实体
-- [Elena Progressive Web Components](ch03/069-elena-progressive-web-components.html)
+- [Elena Progressive Web Components](https://github.com/QianJinGuo/wiki-public/blob/main/entities/elena-progressive-web-components.md)
 
-→ 原文存档
+→ [原文存档](https://mp.weixin.qq.com/s/4_9q9TrkVyE5a4jCfTrNgg)
 
 ## 核心论点
 
@@ -1288,7 +1247,7 @@ Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反�
 | **动效过度** | 渐变慢、缓动曲线怪、吃掉注意力 | motion-token + 限制时长 |
 | **一致性** | 组件风格跳跃、间距不统一、icon 混用 | design token + token drift 检测 |
 
-这 6 类与 [Impeccable](ch05/101-impeccable.html) 的 41 条检测规则高度重合 —— **资深设计师的"经验分类"与工程化项目的"规则集"是同一件事的两面**。
+这 6 类与 [Impeccable](https://github.com/QianJinGuo/wiki-public/blob/main/entities/impeccable.md) 的 41 条检测规则高度重合 —— **资深设计师的"经验分类"与工程化项目的"规则集"是同一件事的两面**。
 
 ### 解决路径：Rule + Skill，不是 Rule-only
 - 单纯把 rules 写到 CLAUDE.md **不够** —— rules 是声明式约束，AI 容易"选择性遵守"或长上下文里漂移
@@ -1318,12 +1277,12 @@ Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反�
 4. **前端 AI 工具会进一步分化** —— 纯 vibe coding 工具（原型）vs 设计 skill 工具（品控），赛道不同
 
 ## 相关对照
-- [Impeccable](ch05/101-impeccable.html) —— 文章末尾直接推荐此项目，本文是"为什么需要 Impeccable"的哲学背书
+- [Impeccable](https://github.com/QianJinGuo/wiki-public/blob/main/entities/impeccable.md) —— 文章末尾直接推荐此项目，本文是"为什么需要 Impeccable"的哲学背书
 - [Karpathy Vibe Coding](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-to-agentic-engineering.md) —— Karpathy 原始概念出处
 - [Willison Vibe Coding Convergence](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vibe-coding-agentic-engineering-convergence-simon-willison.md) —— Willison 的同主题回应
 - [Agent Skill 编写指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing-guide.md) —— 通用 skill 格式
 - [Agentic Design System 演化](ch01/008-agentic-design-system-from-chatbot-to-orchestration.html)
-- → 原文存档
+- → [原文存档](https://mp.weixin.qq.com/s/4_9q9TrkVyE5a4jCfTrNgg)
 
 ## 深度分析
 
@@ -1341,7 +1300,7 @@ Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反�
 
 1. **在前端AI项目中明确区分"原型阶段"和"品控阶段"**：用vibe coding处理快速原型和业务逻辑验证（此处AI的"对错分明"特性有效），但在设计品质控制环节切换到skill-based工作流。两个阶段采用不同的工具和方法论，而非试图用单一流程覆盖
 
-2. **将6大AI前端失败类别内化为团队anti-pattern checklist**：无论是自研AI前端工具还是集成第三方方案，都要针对色彩理论、可访问性、排版细节、视觉层次、动效规范、一致性这六个维度建立检测规则。可参考 [Impeccable](ch05/101-impeccable.html) 的41条检测规则的实现方式，即使不直接使用该工具，也能从中学习结构化检测思路
+2. **将6大AI前端失败类别内化为团队anti-pattern checklist**：无论是自研AI前端工具还是集成第三方方案，都要针对色彩理论、可访问性、排版细节、视觉层次、动效规范、一致性这六个维度建立检测规则。可参考 [Impeccable](https://github.com/QianJinGuo/wiki-public/blob/main/entities/impeccable.md) 的41条检测规则的实现方式，即使不直接使用该工具，也能从中学习结构化检测思路
 
 3. **优先采用Skill架构而非Rule-only来约束AI设计输出**：在CLAUDE.md或类似配置中，不仅要写声明式规则，更要配套实现"触发命令+检测器+反馈闭环"。设计skill应该包含：主动触发的检查命令、基于规则的自动检测、与设计系统对齐的上下文信息三个部分
 
@@ -1351,95 +1310,7 @@ Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反�
 
 ---
 
-## Ch20.013 让AI成为真正的社会生产力——跨越Token效率门槛走向AI普惠
-
-> 📊 Level ⭐⭐⭐⭐ | 6.8KB | `entities/tencent-token-economics-ai-productivity.md`
-
-# 让AI成为真正的社会生产力——跨越Token效率门槛走向AI普惠
-
-→ 原文存档
-
-## 摘要
-
-腾讯研究院院长司晓等撰文指出，当前企业 AI 应用普遍存在"Token 形式主义"陷阱——烧 Token 多不等于有产出，衡量 Token 消耗量是"表演"，衡量工作产出才是正确尺度。问题根源在于 Token 成本由公司承担、产出归个人享有的激励错位。文章提出三种工程方案（任务分级、积分价格信号、模型自动路由）和三层普惠路径（个人、组织、社会），系统论述了从追求 Token 消耗到追求 Token 效率的范式转变。
-
-## 核心要点
-
-### Token 形式主义的三大陷阱
-
-1. **激励错位**：Token 成本由公司承担，产出归个人享有，类似免费食堂的浪费机制——用户没有节约动力
-2. **默认最强模型**：写一行注释、改一个变量名也用前沿模型，杀鸡用牛刀。数十倍 Token 增长中，多少是真正生产力提升，多少是默认选项造成的浪费？
-3. **度量偏差**：以 Token 消耗量衡量 AI 使用深度，而非以工作产出衡量实际价值
-
-### 三种 Token 效率工程方案
-
-**1. 任务分级（Task-Model Matching）**
-
-不同任务天然适合不同规格的模型。一句翻译和一次医疗诊断不应使用同一档模型。核心是建立任务复杂度 → 模型规格的映射关系。
-
-**2. 积分价格信号（Credits/Points）**
-
-- **痛点**：模型输入/输出价格不同、缓存命中 vs 未命中价格不同、多币种复杂性高
-- **方案**：积分充当标准化内部结算货币，类似欧元区统一货币效应
-- **价值**：让用户认识到智能是有层次的；简单任务主动选便宜模型，把预算留给真正需要前沿模型的场景
-
-**3. 模型自动路由（Auto 模式）**
-
-- **理念**：用户不应被逼着每次提问前判断"这值不值得用前沿模型"
-- **实践**：CodeBuddy auto 模式——代码补全 → 小模型，解释生成 → 中等模型，复杂规划 → 前沿模型
-- **空间**：不同模型定价分化明显，前沿模型昂贵 vs 执行型模型价格低至接近免费，路由节约空间巨大
-
-### AI 普惠三层路径
-
-| 层级 | 核心挑战 | 解法 |
-|------|----------|------|
-| **个人层** | 十亿用户产品不可能用最贵 AI | 国民级产品自然走向小尺寸模型 = 普惠与智能的最优解 |
-| **组织层（中小企业）** | 需要"月月算得过账、事事能办到位的可靠助手" | Token 效率体系让 AI 接入可承担、可预期、可控制 |
-| **社会层** | Token 成为新的社会资源（如电力、带宽、公路） | 需要分层、调度、合理分配的计价评估体系 |
-
-### 腾讯混元模型谱系
-
-| 模型 | 定位 |
-|------|------|
-| 大参数模型 | 金融、医疗、政务等高可靠性决策场景 |
-| 中等尺寸模型 | 元宝日常对话、企业智能体等研发生产场景 |
-| 端侧模型 | 手机等终端设备前瞻储备 |
-| Hy3 Preview | 企业级 Agent，兼顾可靠性与成本，填补规模化部署价格可负担区间 |
-
-## 深度分析
-
-### Token 经济学的底层逻辑
-
-Token 本质上是 AI 智能的计量单位。当 Token 价格持续下降（遵循类似摩尔定律的曲线），瓶颈从"能不能用"转向"怎么用好"。腾讯的分析框架将 Token 类比为电力——社会需要分层调度和合理分配的计价体系，而非简单的"用多少算多少"。
-
-这一框架与 AI 定价策略 和 模型路由 的研究高度相关。积分制度的设计类似电信行业的套餐模式——通过内部价格信号引导用户行为，而非依赖行政命令。
-
-### Auto 模式的工程实现
-
-模型自动路由的核心挑战是任务复杂度评估。CodeBuddy 的三层路由（补全 → 小模型、解释 → 中模型、规划 → 大模型）是基于任务类型的静态路由。更先进的方案会结合上下文长度、历史对话质量、用户反馈等信号做动态路由。这与 MoE 架构的理念一脉相承——不同专家处理不同子任务。
-
-### 从个人到社会的递进逻辑
-
-文章的三层路径（个人 → 组织 → 社会）揭示了 AI 普惠的递进规律：个人层是消费者侧的自然选择（国民级产品用小模型），组织层需要工程基础设施（Token 效率体系），社会层需要制度设计（类电力/带宽的计价体系）。从追求 Token 消耗到追求 Token 效率的跃迁，发生在无数具体场景中——中小企业第一次用可控成本跑通业务，而非新旗舰模型发布会。
-
-## 实践启示
-
-1. **建立任务-模型映射表**：梳理企业内部 AI 使用场景，按复杂度分级并绑定对应模型规格
-2. **引入积分制度**：将多维定价（输入/输出/缓存/模型）抽象为单一积分，降低用户决策成本
-3. **部署自动路由**：对高频场景（代码补全、文档生成、数据分析）配置模型路由规则
-4. **度量产出而非消耗**：用业务指标（完成任务数、代码通过率、客户满意度）替代 Token 消耗量作为 AI 效能指标
-5. **关注端侧模型机会**：手机等终端设备上的小模型可实现零边际成本的普惠 AI
-
-## 相关实体
-
-- 模型路由
-- AI 定价策略
-- [Karpathy: Vibe Coding 到 Agentic Engineering](ch04/356-karpathy-vibe-coding-agentic-engineering.html)
-- [Hermes Agent 自进化机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-tools-research.md)
-
----
-
-## Ch20.014 Reinforcement learning towards broadly and persistently beneficial models
+## Ch20.012 Reinforcement learning towards broadly and persistently beneficial models
 
 > 📊 Level ⭐⭐⭐⭐ | 6.3KB | `entities/openai-beneficial-rl-broadly-persistently.md`
 
@@ -1451,7 +1322,7 @@ Token 本质上是 AI 智能的计量单位。当 Token 价格持续下降（遵
 
 OpenAI 提出 Beneficial RL 框架：通过在少量「有益特质」数据上进行强化学习训练，模型不仅在训练领域表现提升，还在数十个未参与训练的评测基准上展现出广泛的对齐行为改善，且这些改善在对抗性压力下依然持久。
 
-→ 原文存档
+→ [原文存档](https://alignment.openai.com/beneficial-rl/)
 
 ## 核心要点
 
@@ -1534,7 +1405,7 @@ AI 系统在健康、科学、教育、编程等高风险场景中越来越自�
 
 ---
 
-## Ch20.015 Data Agent 产品设计文档
+## Ch20.013 Data Agent 产品设计文档
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 29.9KB | `entities/data-agent-product-design.md`
 
@@ -1549,9 +1420,9 @@ AI 系统在健康、科学、教育、编程等高风险场景中越来越自�
 - [Enterprise Ai Memory Substrate Three Layer Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/enterprise-ai-memory-substrate-three-layer-architecture.md)
 - [Skill Version Management Semantic Versioning Practices Winty](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-version-management-semantic-versioning-practices-winty.md)
 
-→ 产品总览 原文存档
-→ 智能问数Agent 原文存档
-→ 营销策略Agent 原文存档
+→ [产品总览 原文存档](https://www.volcengine.com/docs/85637/1563626?lang=zh)
+→ [智能问数Agent 原文存档](https://www.volcengine.com/docs/85637/1544066?lang=zh)
+→ [营销策略Agent 原文存档](https://www.volcengine.com/docs/85637/1587862?lang=zh)
 
 ---
 
@@ -2133,7 +2004,7 @@ POST   /api/v1/datasets/{id}/sync    # 触发数据同步
 
 ---
 
-## Ch20.016 下一代企业数字化架构：系统CLI化、流程Skill化、员工Agent化
+## Ch20.014 下一代企业数字化架构：系统CLI化、流程Skill化、员工Agent化
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 15.7KB | `entities/enterprise-next-gen-architecture-zhan.md`
 
@@ -2299,6 +2170,6 @@ Skill = 触发源 + 系统动作 + 规则边界 + 执行者(员工Agent)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-long-term-agent-tasks.md) — 约束驱动的自动化执行
 - [Enterprise Software Moats in Agent Era](https://github.com/QianJinGuo/wiki-public/blob/main/entities/enterprise-software-moats-agent-era.md) — 企业级 Agent 护城河分析
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — 宪法级约束 + 量化验收标准
-→ 原文存档
+→ [原文存档](https://mp.weixin.qq.com/s/759TfOdXch5zWrT4Yo42xA)
 
 ---
