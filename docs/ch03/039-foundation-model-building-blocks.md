@@ -1,7 +1,5 @@
 # Foundation Model Building Blocks
 
-## Ch03.039 Foundation Model Building Blocks
-
 > 📊 Level ⭐⭐⭐ | 9.1KB | `entities/foundation-model-building-blocks.md`
 
 > -> 原文存档

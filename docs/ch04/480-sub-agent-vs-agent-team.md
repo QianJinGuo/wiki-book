@@ -1,7 +1,5 @@
 # Sub-Agent vs Agent Team 选型指南
 
-## Ch04.480 Sub-Agent vs Agent Team 选型指南
-
 > 📊 Level ⭐⭐⭐⭐⭐ | 15.7KB | `entities/sub-agent-vs-agent-team-selection-guide.md`
 
 ## 核心判断准则

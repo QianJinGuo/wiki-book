@@ -1,7 +1,5 @@
 # 快手首个打工人Agent
 
-## Ch01.631 快手首个打工人Agent
-
 > 📊 Level ⭐⭐⭐⭐ | 14.6KB | `entities/kuaishou-worker-agent-desktop-software.md`
 
 # 快手首个打工人Agent

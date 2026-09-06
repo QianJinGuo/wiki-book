@@ -1,7 +1,5 @@
 # Claude Managed Agents 企业边界更新
 
-## Ch04.376 Claude Managed Agents 企业边界更新
-
 > 📊 Level ⭐⭐⭐⭐ | 12.8KB | `entities/claude-managed-agents-self-hosted-sandbox-enterprise.md`
 
 ## 概述

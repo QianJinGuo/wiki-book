@@ -1,7 +1,5 @@
 # Foundation Capital Agent Era Six Insights
 
-## Ch04.375 Foundation Capital Agent Era Six Insights
-
 > 📊 Level ⭐⭐⭐⭐ | 12.9KB | `entities/foundation-capital-agent-era-six-insights.md`
 
 > -> 原文存档

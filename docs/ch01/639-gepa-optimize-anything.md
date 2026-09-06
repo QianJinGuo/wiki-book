@@ -1,7 +1,5 @@
 # Gepa Optimize Anything
 
-## Ch01.639 Gepa Optimize Anything
-
 > 📊 Level ⭐⭐⭐⭐ | 13.7KB | `entities/gepa-optimize-anything.md`
 
 > -> 原文存档

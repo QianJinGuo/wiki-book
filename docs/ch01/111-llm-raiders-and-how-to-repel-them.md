@@ -1,7 +1,5 @@
 # LLM raiders and how to repel them
 
-## Ch01.111 LLM raiders and how to repel them
-
 > 📊 Level ⭐ | 5.9KB | `entities/llm-raiders-how-to-repel.md`
 
 > -> 原文存档

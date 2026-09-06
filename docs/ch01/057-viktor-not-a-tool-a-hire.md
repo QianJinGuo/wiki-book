@@ -1,7 +1,5 @@
 # Viktor | Not a tool. A hire.
 
-## Ch01.057 Viktor | Not a tool. A hire.
-
 > 📊 Level ⭐ | 7.8KB | `entities/viktor-not-a-tool-a-hire.md`
 
 > -> 原文存档

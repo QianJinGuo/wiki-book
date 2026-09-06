@@ -1,7 +1,5 @@
 # Laser Acl2026 Latent Superposition Visual Reasoning
 
-## Ch01.440 Laser Acl2026 Latent Superposition Visual Reasoning
-
 > 📊 Level ⭐⭐⭐ | 8.2KB | `entities/laser-acl2026-latent-superposition-visual-reasoning.md`
 
 > -> 原文存档

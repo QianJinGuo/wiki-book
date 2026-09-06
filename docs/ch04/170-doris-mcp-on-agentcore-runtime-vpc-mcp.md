@@ -1,7 +1,5 @@
 # Doris MCP on AgentCore Runtime: VPC原生MCP部署模式
 
-## Ch04.170 Doris MCP on AgentCore Runtime: VPC原生MCP部署模式
-
 > 📊 Level ⭐⭐⭐ | 11.1KB | `entities/aws-bedrock-agentcore-doris-mcp-server.md`
 
 ## 核心内容

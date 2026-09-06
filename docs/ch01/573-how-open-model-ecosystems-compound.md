@@ -1,7 +1,5 @@
 # How Open Model Ecosystems Compound
 
-## Ch01.573 How Open Model Ecosystems Compound
-
 > 📊 Level ⭐⭐⭐ | 4.8KB | `entities/how-open-model-ecosystems-compound.md`
 
 > -> 原文存档

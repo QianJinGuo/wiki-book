@@ -1,7 +1,5 @@
 # Inside ChatGPT Search: how web.run and fan-out queries shape results
 
-## Ch01.704 Inside ChatGPT Search: how web.run and fan-out queries shape results
-
 > 📊 Level ⭐⭐⭐⭐ | 8.8KB | `entities/chatgpt-search-web-run-fanout-searchengineland.md`
 
 ## 核心要点

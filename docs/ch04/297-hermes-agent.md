@@ -1,7 +1,5 @@
 # Hermes Agent
 
-## Ch04.297 Hermes Agent
-
 > 📊 Level ⭐⭐⭐ | 5.4KB | `entities/hermes-agent.md`
 
 ## Overview

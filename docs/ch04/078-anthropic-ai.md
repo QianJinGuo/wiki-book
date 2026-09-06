@@ -1,7 +1,5 @@
 # Anthropic 最新论文：阻止 AI 叛变的方法
 
-## Ch04.078 Anthropic 最新论文：阻止 AI 叛变的方法
-
 > 📊 Level ⭐⭐ | 6.5KB | `entities/anthropic-最新论文阻止-ai-叛变的方法.md`
 
 > -> 原文存档

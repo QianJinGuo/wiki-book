@@ -1,7 +1,5 @@
 # Meta announced Muse Spark in Voice Mode and Meta Glasses
 
-## Ch01.257 Meta announced Muse Spark in Voice Mode and Meta Glasses
-
 > 📊 Level ⭐⭐ | 5.2KB | `entities/meta-muse-spark-voice-mode-meta-glasses.md`
 
 > -> 原文存档

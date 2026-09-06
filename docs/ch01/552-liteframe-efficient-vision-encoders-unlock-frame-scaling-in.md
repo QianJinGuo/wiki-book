@@ -1,7 +1,5 @@
 # LiteFrame: Efficient Vision Encoders Unlock Frame Scaling in Video LLMs
 
-## Ch01.552 LiteFrame: Efficient Vision Encoders Unlock Frame Scaling in Video LLMs
-
 > 📊 Level ⭐⭐⭐ | 5.6KB | `entities/liteframeefficientvisionencodersunlockframescalinginvideollms.md`
 
 ## 核心要点

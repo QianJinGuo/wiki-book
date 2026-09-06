@@ -1,7 +1,5 @@
 # 如何把经验装到Skills
 
-## Ch03.025 如何把经验装到Skills
-
 > 📊 Level ⭐⭐⭐ | 12.3KB | `entities/how-to-encode-experience-into-skills.md`
 
 ## 核心内容

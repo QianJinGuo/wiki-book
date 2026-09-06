@@ -1,7 +1,5 @@
 # Wi-Fi 8 is closer than you think. Here’s what you need to know
 
-## Ch03.048 Wi-Fi 8 is closer than you think. Here’s what you need to know
-
 > 📊 Level ⭐⭐⭐ | 7.6KB | `entities/wi-fi-8-closer-than-you-think.md`
 
 > -> 原文存档

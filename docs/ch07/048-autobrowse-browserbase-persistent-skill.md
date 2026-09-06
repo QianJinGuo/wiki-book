@@ -1,7 +1,5 @@
 # Autobrowse Browserbase Persistent Skill
 
-## Ch07.048 Autobrowse Browserbase Persistent Skill
-
 > 📊 Level ⭐⭐⭐⭐ | 10.5KB | `entities/autobrowse-browserbase-persistent-skill.md`
 
 > -> 原文存档

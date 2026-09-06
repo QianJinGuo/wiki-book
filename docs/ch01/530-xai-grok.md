@@ -1,7 +1,5 @@
 # xai解散但Grok还活着
 
-## Ch01.530 xai解散但Grok还活着
-
 > 📊 Level ⭐⭐⭐ | 6.3KB | `entities/xai-shutdown-grok-still-alive.md`
 
 > -> 原文存档

@@ -1,7 +1,5 @@
 # never waste a token
 
-## Ch01.265 never waste a token
-
 > 📊 Level ⭐⭐ | 4.2KB | `entities/sunilpai.md`
 
 # never waste a token

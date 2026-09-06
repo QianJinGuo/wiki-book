@@ -1,7 +1,5 @@
 # Language Models and Meaning
 
-## Ch01.392 Language Models and Meaning
-
 > 📊 Level ⭐⭐⭐ | 9.6KB | `entities/stochastic-parrot-language-models-and-meaning.md`
 
 > -> 原文存档

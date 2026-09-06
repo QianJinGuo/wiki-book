@@ -1,7 +1,5 @@
 # We've Been Here Before: Decompilers, Fuzzers, and Now AI
 
-## Ch01.331 We've Been Here Before: Decompilers, Fuzzers, and Now AI
-
 > 📊 Level ⭐⭐⭐ | 12.7KB | `entities/weve-been-here-before-decompilers-fuzzers-and-now-ai.md`
 
 > -> 原文存档

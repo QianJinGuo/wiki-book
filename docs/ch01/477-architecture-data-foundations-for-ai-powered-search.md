@@ -1,7 +1,5 @@
 # Architecture & data foundations for AI-powered Search
 
-## Ch01.477 Architecture & data foundations for AI-powered Search
-
 > 📊 Level ⭐⭐⭐ | 7.5KB | `entities/architecture-data-foundations-for-ai-powered-search.md`
 
 # Architecture & data foundations for AI-powered Search

@@ -1,7 +1,5 @@
 # NotebookLM：Google AI 笔记本工具
 
-## Ch01.678 NotebookLM：Google AI 笔记本工具
-
 > 📊 Level ⭐⭐⭐⭐ | 10.3KB | `entities/notebook-lm.md`
 
 ## Overview

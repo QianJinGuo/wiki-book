@@ -1,7 +1,5 @@
 # Pydantic AI: Progressive Agent Skills without Claude Model Lock-in
 
-## Ch04.357 Pydantic AI: Progressive Agent Skills without Claude Model Lock-in
-
 > 📊 Level ⭐⭐⭐⭐ | 15.1KB | `entities/pydantic-ai-progressive-agent-skills-automatorrunner.md`
 
 > → 原文存档

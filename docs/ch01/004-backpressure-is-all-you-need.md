@@ -1,7 +1,5 @@
 # Backpressure is all you need
 
-## Ch01.004 Backpressure is all you need
-
 > 📊 Level ⭐ | 16.0KB | `entities/lucasfcostacom-blog-backpressure-is-all-you-need.md`
 
 # Backpressure is all you need

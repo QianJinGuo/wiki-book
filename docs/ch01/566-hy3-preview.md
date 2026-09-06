@@ -1,7 +1,5 @@
 # 腾讯混元Hy3-preview发布
 
-## Ch01.566 腾讯混元Hy3-preview发布
-
 > 📊 Level ⭐⭐⭐ | 5.0KB | `entities/tencent-hunyuan-hy3-preview-open-source-agent.md`
 
 > -> 原文存档

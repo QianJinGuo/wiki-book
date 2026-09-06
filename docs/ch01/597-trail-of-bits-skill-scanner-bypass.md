@@ -1,7 +1,5 @@
 # Trail of Bits: Skill Scanner Bypass 实证研究
 
-## Ch01.597 Trail of Bits: Skill Scanner Bypass 实证研究
-
 > 📊 Level ⭐⭐⭐⭐ | 25.1KB | `entities/trail-of-bits-skill-scanner-bypass-distribution.md`
 
 > → 原文存档

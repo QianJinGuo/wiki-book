@@ -1,7 +1,5 @@
 # AWS DevOps Agent 实战：云网络故障自主调查与修复建议
 
-## Ch04.194 AWS DevOps Agent 实战：云网络故障自主调查与修复建议
-
 > 📊 Level ⭐⭐⭐ | 10.0KB | `entities/aws-devops-agent-实战云网络故障自主调查与修复建议.md`
 
 ## 核心要点

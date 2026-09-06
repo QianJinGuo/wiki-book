@@ -1,7 +1,5 @@
 # Subagents 详解：Claude Code 如何避免上下文污染
 
-## Ch01.586 Subagents 详解：Claude Code 如何避免上下文污染
-
 > 📊 Level ⭐⭐⭐⭐ | 47.2KB | `entities/subagents-详解claude-code-如何避免上下文污染.md`
 
 Subagents 详解Claude Code 如何避免上下文污染

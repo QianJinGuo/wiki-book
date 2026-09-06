@@ -1,7 +1,5 @@
 # Have your views on AI changed
 
-## Ch01.551 Have your views on AI changed
-
 > 📊 Level ⭐⭐⭐ | 5.7KB | `entities/creativeboom-ai-views-changed.md`
 
 > 来源：原文存档

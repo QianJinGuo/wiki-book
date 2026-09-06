@@ -1,7 +1,5 @@
 # Announcing OpenAI-compatible API support for Amazon SageMaker AI Endpoints
 
-## Ch01.517 Announcing OpenAI-compatible API support for Amazon SageMaker AI Endpoints
-
 > 📊 Level ⭐⭐⭐ | 6.6KB | `entities/announcing-openai-compatible-api-support-for-amazon-sagemaker.md`
 
 ## 核心要点

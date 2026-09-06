@@ -1,7 +1,5 @@
 # Harness Engineering：快手电商用 AI 流水线重塑研发范式（需求全生命周期自动化交付）
 
-## Ch05.001 Harness Engineering：快手电商用 AI 流水线重塑研发范式（需求全生命周期自动化交付）
-
 > 📊 Level ⭐ | 7.1KB | `entities/kuaishou-harness-engineering-ecommerce-delivery-pipeline-2026.md`
 
 # Harness Engineering：快手电商用 AI 流水线重塑研发范式

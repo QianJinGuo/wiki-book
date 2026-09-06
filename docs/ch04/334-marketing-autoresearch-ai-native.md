@@ -1,7 +1,5 @@
 # 高德 Marketing AutoResearch：营销增长 AI Native 经营托管框架
 
-## Ch04.334 高德 Marketing AutoResearch：营销增长 AI Native 经营托管框架
-
 > 📊 Level ⭐⭐⭐⭐ | 17.9KB | `entities/gaode-marketing-autoresearch-ai-native-practice.md`
 
 > -> 原文存档

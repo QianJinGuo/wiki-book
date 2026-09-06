@@ -1,7 +1,5 @@
 # Every Frame Perfect
 
-## Ch01.158 Every Frame Perfect
-
 > 📊 Level ⭐ | 3.2KB | `entities/tonsky-every-frame-perfect.md`
 
 # Every Frame Perfect

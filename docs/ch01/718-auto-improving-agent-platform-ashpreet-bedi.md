@@ -1,7 +1,5 @@
 # Auto-Improving Agent Platform (Ashpreet Bedi)
 
-## Ch01.718 Auto-Improving Agent Platform (Ashpreet Bedi)
-
 > 📊 Level ⭐⭐⭐⭐ | 7.2KB | `entities/auto-improving-agent-platform-ashpreetbedi.md`
 
 > -> 原文存档

@@ -1,7 +1,5 @@
 # Harness Engineering 四根支柱与四要素架构
 
-## Ch05.096 Harness Engineering 四根支柱与四要素架构
-
 > 📊 Level ⭐⭐⭐⭐⭐ | 19.1KB | `entities/harness-engineering-90-percent-pillars.md`
 
 - 原文存档

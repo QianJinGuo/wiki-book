@@ -1,7 +1,5 @@
 # What marketing can learn from IT about running complex technology
 
-## Ch03.052 What marketing can learn from IT about running complex technology
-
 > 📊 Level ⭐⭐⭐ | 7.1KB | `entities/what-marketing-can-learn-from-it-about-running-complex-technology.md`
 
 ## 核心要点

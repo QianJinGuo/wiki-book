@@ -1,7 +1,5 @@
 # 百度智能云新一代AI机密计算实例：从CPU到GPU全链路可信
 
-## Ch01.479 百度智能云新一代AI机密计算实例：从CPU到GPU全链路可信
-
 > 📊 Level ⭐⭐⭐ | 7.5KB | `entities/baidu-confidential-computing-cpu-gpu-full-chain.md`
 
 > -> 原文存档

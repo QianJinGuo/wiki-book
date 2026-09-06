@@ -1,7 +1,5 @@
 # WikiSkill：将 Agent 经验编译为持久知识以驱动技能进化（Google Research）
 
-## Ch04.011 WikiSkill：将 Agent 经验编译为持久知识以驱动技能进化（Google Research）
-
 > 📊 Level ⭐ | 6.3KB | `entities/wikiskill-persistent-knowledge-skill-evolution-google-2026.md`
 
 # WikiSkill：将 Agent 经验编译为持久知识以驱动技能进化

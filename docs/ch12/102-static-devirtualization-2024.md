@@ -1,7 +1,5 @@
 # Static Devirtualization 2024
 
-## Ch12.102 Static Devirtualization 2024
-
 > 📊 Level ⭐⭐⭐⭐⭐ | 15.8KB | `entities/static-devirtualization-2024.md`
 
 > -> 原文存档 | → 原文存档

@@ -1,7 +1,5 @@
 # AgentBrowser：Agent 浏览器工具框架
 
-## Ch04.305 AgentBrowser：Agent 浏览器工具框架
-
 > 📊 Level ⭐⭐⭐ | 4.3KB | `entities/agent-browser.md`
 
 ## Overview

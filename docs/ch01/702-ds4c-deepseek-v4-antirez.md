@@ -1,7 +1,5 @@
 # Ds4c Deepseek V4 Antirez
 
-## Ch01.702 Ds4c Deepseek V4 Antirez
-
 > 📊 Level ⭐⭐⭐⭐ | 8.8KB | `entities/ds4c-deepseek-v4-antirez.md`
 
 > -> 原文存档

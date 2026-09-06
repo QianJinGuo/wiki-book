@@ -1,7 +1,5 @@
 # Development environments for your cloud agents
 
-## Ch09.066 Development environments for your cloud agents
-
 > 📊 Level ⭐⭐⭐ | 6.7KB | `entities/development-environments-for-your-cloud-agents.md`
 
 ## 核心要点

@@ -1,7 +1,5 @@
 # Natural Language Autoencoders — Anthropic 激活→文字可解释性方法
 
-## Ch01.771 Natural Language Autoencoders — Anthropic 激活→文字可解释性方法
-
 > 📊 Level ⭐⭐⭐⭐⭐ | 11.0KB | `entities/natural-language-autoencoders.md`
 
 > -> 原文存档

@@ -1,7 +1,5 @@
 # 场景营销前端 AI Coding — AI Native 的视觉稿还原
 
-## Ch09.022 场景营销前端 AI Coding — AI Native 的视觉稿还原
-
 > 📊 Level ⭐⭐ | 6.3KB | `entities/frontend-ai-native-visual-reduction-taobao.md`
 
 > 原文归档：原文归档

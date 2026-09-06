@@ -1,7 +1,5 @@
 # SE-GA GUI 智能体记忆增强自进化
 
-## Ch04.419 SE-GA GUI 智能体记忆增强自进化
-
 > 📊 Level ⭐⭐⭐⭐ | 9.3KB | `entities/se-ga-memory-augmented-self-evolution-gui-agents.md`
 
 # SE-GA GUI 智能体记忆增强自进化

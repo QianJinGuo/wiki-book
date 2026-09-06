@@ -1,7 +1,5 @@
 # What political censorship looks like inside an LLM's weights — a mechanistic-interpretability study of Qwen 3.5
 
-## Ch01.013 What political censorship looks like inside an LLM's weights — a mechanistic-interpretability study of Qwen 3.5
-
 > 📊 Level ⭐ | 10.6KB | `entities/what-political-censorship-looks-like-inside-an-llm-s-weights.md`
 
 # What political censorship looks like inside an LLM's weights

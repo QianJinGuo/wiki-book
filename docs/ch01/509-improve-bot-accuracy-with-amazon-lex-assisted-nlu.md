@@ -1,7 +1,5 @@
 # Improve bot accuracy with Amazon Lex Assisted NLU
 
-## Ch01.509 Improve bot accuracy with Amazon Lex Assisted NLU
-
 > 📊 Level ⭐⭐⭐ | 6.9KB | `entities/improve-bot-accuracy-with-amazon-lex-assisted-nlu.md`
 
 > -> 原文存档

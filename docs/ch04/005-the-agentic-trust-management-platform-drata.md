@@ -1,7 +1,5 @@
 # The Agentic Trust Management Platform | Drata
 
-## Ch04.005 The Agentic Trust Management Platform | Drata
-
 > 📊 Level ⭐ | 8.2KB | `entities/the-agentic-trust-management-platform-drata.md`
 
 → 原文存档

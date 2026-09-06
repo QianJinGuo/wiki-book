@@ -1,7 +1,5 @@
 # Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南
 
-## Ch01.644 Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南
-
 > 📊 Level ⭐⭐⭐⭐ | 13.1KB | `entities/anthropic-官方-agent-harness-平台claude-managed-agents-完整指南.md`
 
 > -> 原文存档

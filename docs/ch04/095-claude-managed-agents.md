@@ -1,7 +1,5 @@
 # Claude Managed Agents
 
-## Ch04.095 Claude Managed Agents
-
 > 📊 Level ⭐⭐ | 5.5KB | `entities/claude-managed-agents.md`
 
 > -> 原文存档

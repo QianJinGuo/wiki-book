@@ -1,7 +1,5 @@
 # Cisco Preps For A World Of AI Agent Coworkers, Frontier Model Threats
 
-## Ch01.033 Cisco Preps For A World Of AI Agent Coworkers, Frontier Model Threats
-
 > 📊 Level ⭐ | 8.6KB | `entities/cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-model-threats.md`
 
 # Cisco Preps For A World Of AI Agent Coworkers, Frontier Model Threats

@@ -1,7 +1,5 @@
 # OpenAI秘密矩阵曝光：Codex将所有设备连成超级电脑
 
-## Ch09.108 OpenAI秘密矩阵曝光：Codex将所有设备连成超级电脑
-
 > 📊 Level ⭐⭐⭐⭐ | 9.6KB | `entities/openai-codex-super-computer-network-xinzhiyuan.md`
 
 > 来源：原文存档

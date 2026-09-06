@@ -1,7 +1,5 @@
 # 高德 Uplift 模型迭代 Agent：长时间运行 Harness
 
-## Ch01.282 高德 Uplift 模型迭代 Agent：长时间运行 Harness
-
 > 📊 Level ⭐⭐ | 3.1KB | `entities/gaode-uplift-model-iteration-agent-long-running-harness.md`
 
 # Gaode Uplift Model Iteration Agent Long Running Harness

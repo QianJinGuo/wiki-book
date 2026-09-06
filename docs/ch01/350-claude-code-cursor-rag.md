@@ -1,7 +1,5 @@
 # 向量数据库已死，Claude Code、Cursor 为什么集体抛弃 RAG？
 
-## Ch01.350 向量数据库已死，Claude Code、Cursor 为什么集体抛弃 RAG？
-
 > 📊 Level ⭐⭐⭐ | 11.7KB | `entities/rag-vs-agentic-retrieval-deep-dive-yunduojun-datastudio-2026-09-01.md`
 
 # 向量数据库已死，Claude Code、Cursor 为什么集体抛弃 RAG？

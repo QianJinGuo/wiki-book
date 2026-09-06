@@ -1,7 +1,5 @@
 # 从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则
 
-## Ch04.489 从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则
-
 > 📊 Level ⭐⭐⭐⭐⭐ | 12.3KB | `entities/agent-skill-writing-guide.md`
 
 Agent Skill Writing Guide

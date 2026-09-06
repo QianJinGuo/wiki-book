@@ -1,7 +1,5 @@
 # Archera • Insured cloud commitments for AWS, Azure, and Google
 
-## Ch11.146 Archera • Insured cloud commitments for AWS, Azure, and Google
-
 > 📊 Level ⭐⭐⭐ | 6.7KB | `entities/3rdfsmp.md`
 
 ## 核心要点

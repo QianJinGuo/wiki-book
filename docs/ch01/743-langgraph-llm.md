@@ -1,7 +1,5 @@
 # LangGraph 底层原理：它是怎么把 LLM 变成一台状态机的
 
-## Ch01.743 LangGraph 底层原理：它是怎么把 LLM 变成一台状态机的
-
 > 📊 Level ⭐⭐⭐⭐⭐ | 19.9KB | `entities/langgraph-state-machine-under-the-hood.md`
 
 Langgraph State Machine Under The Hood

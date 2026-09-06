@@ -1,7 +1,5 @@
 # Square Adds Drive-Thru to the Menu
 
-## Ch01.149 Square Adds Drive-Thru to the Menu
-
 > 📊 Level ⭐ | 3.9KB | `entities/square-adds-drive-thru-to-the-menu.md`
 
 > -> 原文存档

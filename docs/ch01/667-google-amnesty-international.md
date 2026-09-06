@@ -1,7 +1,5 @@
 # Google & Amnesty International：联手打击商业间谍软件
 
-## Ch01.667 Google & Amnesty International：联手打击商业间谍软件
-
 > 📊 Level ⭐⭐⭐⭐ | 11.0KB | `entities/google-amnesty-spyware-detection.md`
 
 > -> 原文存档

@@ -1,7 +1,5 @@
 # Vietnam to develop domestic cloud
 
-## Ch01.032 Vietnam to develop domestic cloud
-
 > 📊 Level ⭐ | 8.6KB | `entities/vietnamtodevelopdomesticcloud.md`
 
 # Vietnam to develop domestic cloud

@@ -1,7 +1,5 @@
 # Claude Code Agent View
 
-## Ch09.054 Claude Code Agent View
-
 > 📊 Level ⭐⭐⭐ | 8.3KB | `entities/claude-code-agent-view.md`
 
 > -> 原文存档

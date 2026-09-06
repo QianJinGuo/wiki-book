@@ -1,7 +1,5 @@
 # 评估：从黄金指标到 Rubric丨AgentLoop 数据飞轮实践（三）
 
-## Ch04.215 评估：从黄金指标到 Rubric丨AgentLoop 数据飞轮实践（三）
-
 > 📊 Level ⭐⭐⭐ | 8.7KB | `entities/agentloop-eval-golden-metrics-rubric-mayunlei-aliyun-2026-09-01.md`
 
 # 评估：从黄金指标到 Rubric丨AgentLoop 数据飞轮实践（三）

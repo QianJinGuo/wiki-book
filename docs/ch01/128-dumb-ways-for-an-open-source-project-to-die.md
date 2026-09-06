@@ -1,7 +1,5 @@
 # Dumb Ways for an Open Source Project to Die
 
-## Ch01.128 Dumb Ways for an Open Source Project to Die
-
 > 📊 Level ⭐ | 5.0KB | `entities/dumb-ways-for-an-open-source-project-to-die.md`
 
 ## 核心要点

@@ -1,7 +1,5 @@
 # DeepSeek视觉原语论文：当所有人在堆图像分辨率时，它在堆「指代精度」
 
-## Ch01.756 DeepSeek视觉原语论文：当所有人在堆图像分辨率时，它在堆「指代精度」
-
 > 📊 Level ⭐⭐⭐⭐⭐ | 14.2KB | `entities/deepseek-vision-primitives.md`
 
 # DeepSeek视觉原语论文：视觉指代精度新范式

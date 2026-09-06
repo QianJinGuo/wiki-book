@@ -1,7 +1,5 @@
 # Factory Mission Multi Agent Architecture
 
-## Ch01.643 Factory Mission Multi Agent Architecture
-
 > 📊 Level ⭐⭐⭐⭐ | 13.1KB | `entities/factory-mission-multi-agent-architecture.md`
 
 - 原文存档

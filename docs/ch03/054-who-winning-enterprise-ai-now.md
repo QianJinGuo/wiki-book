@@ -1,7 +1,5 @@
 # Who Winning Enterprise AI Now
 
-## Ch03.054 Who Winning Enterprise AI Now
-
 > 📊 Level ⭐⭐⭐ | 7.0KB | `entities/saastr-who-winning-enterprise-ai.md`
 
 # Who Winning Enterprise AI Now

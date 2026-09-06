@@ -1,7 +1,5 @@
 # Automate Schema Generation for Intelligent Document Processing
 
-## Ch11.138 Automate Schema Generation for Intelligent Document Processing
-
 > 📊 Level ⭐⭐⭐ | 7.4KB | `entities/automate-schema-generation-for-intelligent-document-processing.md`
 
 > → 原文存档

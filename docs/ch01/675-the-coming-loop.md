@@ -1,7 +1,5 @@
 # The Coming Loop
 
-## Ch01.675 The Coming Loop
-
 > 📊 Level ⭐⭐⭐⭐ | 10.3KB | `entities/the-coming-loop.md`
 
 # The Coming Loop

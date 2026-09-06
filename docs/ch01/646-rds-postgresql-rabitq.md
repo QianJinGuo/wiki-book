@@ -1,7 +1,5 @@
 # 在 RDS PostgreSQL 中实现 RaBitQ 量化
 
-## Ch01.646 在 RDS PostgreSQL 中实现 RaBitQ 量化
-
 > 📊 Level ⭐⭐⭐⭐ | 13.0KB | `entities/在-rds-postgresql-中实现-rabitq-量化.md`
 
 ## 核心要点

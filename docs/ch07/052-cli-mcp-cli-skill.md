@@ -1,7 +1,5 @@
 # CLI、MCP 和 CLI+Skill，应该如何选？
 
-## Ch07.052 CLI、MCP 和 CLI+Skill，应该如何选？
-
 > 📊 Level ⭐⭐⭐⭐ | 9.8KB | `entities/cli-mcp-skill-architecture-decision-vibecoder.md`
 
 > -> 原文存档

@@ -1,7 +1,5 @@
 # New and improved Agent governance intelligent workflows
 
-## Ch04.308 New and improved Agent governance intelligent workflows
-
 > 📊 Level ⭐⭐⭐ | 3.9KB | `entities/microsoft-copilot-studio-agent-governance.md`
 
 > 来源：原文存档

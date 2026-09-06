@@ -1,7 +1,5 @@
 # Meet Customers Where They Are: Agentforce Contact Center Now Offers WhatsApp Voice
 
-## Ch04.264 Meet Customers Where They Are: Agentforce Contact Center Now Offers WhatsApp Voice
-
 > 📊 Level ⭐⭐⭐ | 7.5KB | `entities/meet-customers-where-they-are-agentforce-contact-center-now-offers-whatsapp-voice.md`
 
 # Meet Customers Where They Are: Agentforce Contact Center Now Offers WhatsApp Voice

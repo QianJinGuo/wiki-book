@@ -1,7 +1,5 @@
 # OpenClaw 与 Claude Code 的 Agent Loop 设计范式
 
-## Ch04.192 OpenClaw 与 Claude Code 的 Agent Loop 设计范式
-
 > 📊 Level ⭐⭐⭐ | 10.1KB | `entities/openclaw-agent-loop-design-patterns.md`
 
 > 原文归档：原文归档

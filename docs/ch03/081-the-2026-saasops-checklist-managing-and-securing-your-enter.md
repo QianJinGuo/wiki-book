@@ -1,7 +1,5 @@
 # The 2026 SaaSOps checklist: Managing and securing your enterprise SaaS applications
 
-## Ch03.081 The 2026 SaaSOps checklist: Managing and securing your enterprise SaaS applications
-
 > 📊 Level ⭐⭐⭐⭐ | 12.0KB | `entities/www.bettercloud.com-the-saasops-mini-checklist-managing-and-securing-your-enterprise-saas-applications.md`
 
 ## 核心要点

@@ -1,7 +1,5 @@
 # AI Coding Guide Tmall Deep Dive
 
-## Ch09.078 AI Coding Guide Tmall Deep Dive
-
 > 📊 Level ⭐⭐⭐⭐ | 22.1KB | `entities/ai-coding-guide-tmall-deep-dive.md`
 
 # 天猫新品营销技术团队AI编码实战指南

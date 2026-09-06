@@ -1,7 +1,5 @@
 # Bedrock AgentCore RLM：突破上下文窗口限制
 
-## Ch04.272 Bedrock AgentCore RLM：突破上下文窗口限制
-
 > 📊 Level ⭐⭐⭐ | 7.2KB | `entities/break-the-context-window-barrier-with-amazon-bedrock-agentcore.md`
 
 ## 核心要点

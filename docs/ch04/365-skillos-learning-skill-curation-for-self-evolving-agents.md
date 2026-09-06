@@ -1,7 +1,5 @@
 # SkillOS: Learning Skill Curation for Self-Evolving Agents
 
-## Ch04.365 SkillOS: Learning Skill Curation for Self-Evolving Agents
-
 > 📊 Level ⭐⭐⭐⭐ | 13.8KB | `entities/skill-os-learning-skill-curation-self-evolving-agents.md`
 
 > -> 原文存档

@@ -1,7 +1,5 @@
 # Is This Why Science Advances One Funeral at a Time?
 
-## Ch01.087 Is This Why Science Advances One Funeral at a Time?
-
 > 📊 Level ⭐ | 6.8KB | `entities/is-this-why-science-advances-one-funeral-at.md`
 
 # Is This Why Science Advances One Funeral at a Time?

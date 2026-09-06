@@ -1,7 +1,5 @@
 # User Interviews Guide: How to Interview Users Like a Pro
 
-## Ch01.525 User Interviews Guide: How to Interview Users Like a Pro
-
 > 📊 Level ⭐⭐⭐ | 6.4KB | `entities/user-interviews-guide-pro.md`
 
 ## 核心要点

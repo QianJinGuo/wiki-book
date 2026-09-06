@@ -1,7 +1,5 @@
 # Recent Developments in LLM Architectures: KV Sharing, mHC, a
 
-## Ch01.047 Recent Developments in LLM Architectures: KV Sharing, mHC, a
-
 > 📊 Level ⭐ | 8.0KB | `entities/recent_developments_in_llm_architectures.md`
 
 ## 核心要点

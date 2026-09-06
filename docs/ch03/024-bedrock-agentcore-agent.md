@@ -1,7 +1,5 @@
 # Bedrock AgentCore 多租户 Agent 构建实践
 
-## Ch03.024 Bedrock AgentCore 多租户 Agent 构建实践
-
 > 📊 Level ⭐⭐⭐ | 12.4KB | `entities/building-multi-tenant-agents-with-amazon-bedrock-agentcore.md`
 
 ## 核心要点

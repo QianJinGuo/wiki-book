@@ -1,7 +1,5 @@
 # 多 Agent 编排系统
 
-## Ch04.251 多 Agent 编排系统
-
 > 📊 Level ⭐⭐⭐ | 7.8KB | `entities/agent-orchestration-multi-agent-systems.md`
 
 # 多 Agent 编排系统

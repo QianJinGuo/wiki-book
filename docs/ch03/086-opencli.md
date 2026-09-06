@@ -1,7 +1,5 @@
 # OpenCLI
 
-## Ch03.086 OpenCLI
-
 > 📊 Level ⭐⭐⭐⭐ | 9.2KB | `entities/opencli.md`
 
 ## Overview

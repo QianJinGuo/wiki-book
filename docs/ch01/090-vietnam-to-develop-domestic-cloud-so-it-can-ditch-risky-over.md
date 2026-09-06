@@ -1,7 +1,5 @@
 # Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads
 
-## Ch01.090 Vietnam to develop domestic cloud so it can ditch risky overseas operators for government workloads
-
 > 📊 Level ⭐ | 6.6KB | `entities/vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-overseas-operators-for-g.md`
 
 > -> 原文存档

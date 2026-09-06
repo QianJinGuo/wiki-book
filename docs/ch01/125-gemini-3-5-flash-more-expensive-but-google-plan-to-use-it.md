@@ -1,7 +1,5 @@
 # Gemini 3.5 Flash: more expensive, but Google plan to use it for everything
 
-## Ch01.125 Gemini 3.5 Flash: more expensive, but Google plan to use it for everything
-
 > 📊 Level ⭐ | 5.1KB | `entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md`
 
 ## 核心要点

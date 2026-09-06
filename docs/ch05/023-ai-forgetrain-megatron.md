@@ -1,7 +1,5 @@
 # 全球首个完全AI编写的训练框架：面壁ForgeTrain速度反超英伟达Megatron，年底要把国产算力软件重写一遍
 
-## Ch05.023 全球首个完全AI编写的训练框架：面壁ForgeTrain速度反超英伟达Megatron，年底要把国产算力软件重写一遍
-
 > 📊 Level ⭐⭐ | 6.0KB | `entities/forgetrain-ai-written-training-framework-bidian-infoq.md`
 
 > -> 原文存档

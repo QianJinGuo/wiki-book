@@ -1,7 +1,5 @@
 # knowledge-work-plugins拆解：Anthropic官方开源，4 种组件、3 级加载、2 层记忆，纯文件的 AI岗位插件集
 
-## Ch01.634 knowledge-work-plugins拆解：Anthropic官方开源，4 种组件、3 级加载、2 层记忆，纯文件的 AI岗位插件集
-
 > 📊 Level ⭐⭐⭐⭐ | 14.3KB | `entities/knowledge-work-plugins-shuge-anthropic-deep-source.md`
 
 > -> **knowledge-work-plugins拆解：Anthropic官方开源，4 种组件、3 级加载、2 层记忆，纯文件的 AI岗位插件集**

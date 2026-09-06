@@ -1,7 +1,5 @@
 # 从Vibe Coding到Agentic Engineering：重构后台开发全流程
 
-## Ch04.070 从Vibe Coding到Agentic Engineering：重构后台开发全流程
-
 > 📊 Level ⭐⭐ | 6.9KB | `entities/从vibe-coding到agentic-engineering重构后台开发全流程.md`
 
 # 从Vibe Coding到Agentic Engineering：重构后台开发全流程

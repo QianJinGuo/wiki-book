@@ -1,7 +1,5 @@
 # The #1 AI Agent for financial services | Fin
 
-## Ch04.273 The #1 AI Agent for financial services | Fin
-
 > 📊 Level ⭐⭐⭐ | 7.2KB | `entities/the-1-ai-agent-for-financial-services-fin.md`
 
 → 原文存档

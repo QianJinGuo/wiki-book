@@ -1,7 +1,5 @@
 # AI-Infra-Auto-Driven-SKILLS v0.1.0：给 Codex / Claude Code 的推理框架工作流
 
-## Ch07.021 AI-Infra-Auto-Driven-SKILLS v0.1.0：给 Codex / Claude Code 的推理框架工作流
-
 > 📊 Level ⭐⭐⭐ | 9.0KB | `entities/ai-infra-auto-driven-skills-v0-bbuf-giantpanda.md`
 
 > -> 原文存档

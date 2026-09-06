@@ -1,7 +1,5 @@
 # AI Coding Agent Token 成本控制五层模型
 
-## Ch09.105 AI Coding Agent Token 成本控制五层模型
-
 > 📊 Level ⭐⭐⭐⭐ | 10.4KB | `entities/token-cost-control-coding-agent-devinyzeng-tencent.md`
 
 > 原文归档：原文归档

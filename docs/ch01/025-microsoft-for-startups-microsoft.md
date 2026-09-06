@@ -1,7 +1,5 @@
 # Microsoft for Startups | Microsoft
 
-## Ch01.025 Microsoft for Startups | Microsoft
-
 > 📊 Level ⭐ | 9.3KB | `entities/microsoft-for-startups-microsoft.md`
 
 # Microsoft for Startups

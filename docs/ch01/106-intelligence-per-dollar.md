@@ -1,7 +1,5 @@
 # Intelligence Per Dollar
 
-## Ch01.106 Intelligence Per Dollar
-
 > 📊 Level ⭐ | 6.1KB | `entities/tokens-per-result.md`
 
 # Intelligence Per Dollar

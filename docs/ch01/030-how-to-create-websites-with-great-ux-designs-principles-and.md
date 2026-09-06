@@ -1,7 +1,5 @@
 # How to create websites with great UX designs: Principles and examples
 
-## Ch01.030 How to create websites with great UX designs: Principles and examples
-
 > 📊 Level ⭐ | 8.8KB | `entities/how-to-create-websites-with-great-ux-designs.md`
 
 # How to create websites with great UX designs: Principles and examples

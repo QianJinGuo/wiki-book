@@ -1,7 +1,5 @@
 # Bringing more agent harnesses and frameworks to Cloudflare, starting with Flue
 
-## Ch01.071 Bringing more agent harnesses and frameworks to Cloudflare, starting with Flue
-
 > 📊 Level ⭐ | 7.3KB | `entities/agents-platform-flue-sdk.md`
 
 # Bringing more agent harnesses and frameworks to Cloudflare, starting with Flue

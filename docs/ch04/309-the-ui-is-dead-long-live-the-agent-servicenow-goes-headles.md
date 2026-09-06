@@ -1,7 +1,5 @@
 # The UI is dead, long live the agent: ServiceNow goes headless and opens its platform
 
-## Ch04.309 The UI is dead, long live the agent: ServiceNow goes headless and opens its platform
-
 > 📊 Level ⭐⭐⭐ | 3.9KB | `entities/servicenow-ui-is-dead-agent.md`
 
 > 来源：原文存档

@@ -1,7 +1,5 @@
 # 很多企业做完 AI PoC，为什么还是上不了生产
 
-## Ch01.463 很多企业做完 AI PoC，为什么还是上不了生产
-
 > 📊 Level ⭐⭐⭐ | 7.7KB | `entities/ai-poc-why-fail-to-production.md`
 
 > -> 原文存档

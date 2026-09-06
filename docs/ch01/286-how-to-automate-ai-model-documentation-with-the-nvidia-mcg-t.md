@@ -1,7 +1,5 @@
 # How to Automate AI Model Documentation with the NVIDIA MCG Toolkit
 
-## Ch01.286 How to Automate AI Model Documentation with the NVIDIA MCG Toolkit
-
 > 📊 Level ⭐⭐ | 2.8KB | `entities/how-to-automate-ai-model-documentation-with-the-nvidia-mcg-t-806efb.md`
 
 # How to Automate AI Model Documentation with the NVIDIA MCG Toolkit

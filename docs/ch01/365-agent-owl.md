@@ -1,7 +1,5 @@
 # Agent框架OWL原理详解
 
-## Ch01.365 Agent框架OWL原理详解
-
 > 📊 Level ⭐⭐⭐ | 10.9KB | `entities/agent-framework-owl-principles.md`
 
 ** 前言  **

@@ -1,7 +1,5 @@
 # AI Gateway production index
 
-## Ch01.093 AI Gateway production index
-
 > 📊 Level ⭐ | 6.6KB | `entities/aigatewayproductionindex.md`
 
 ## 核心要点

@@ -1,7 +1,5 @@
 # Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering
 
-## Ch04.404 Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering
-
 > 📊 Level ⭐⭐⭐⭐ | 10.1KB | `entities/karpathy-vibe-coding-agentic-engineering-v2.md`
 
 ## 摘要

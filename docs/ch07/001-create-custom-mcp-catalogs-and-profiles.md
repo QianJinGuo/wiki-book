@@ -1,7 +1,5 @@
 # Create Custom MCP Catalogs and Profiles
 
-## Ch07.001 Create Custom MCP Catalogs and Profiles
-
 > 📊 Level ⭐ | 8.0KB | `entities/create-custom-mcp-catalogs-and-profiles.md`
 
 # Create Custom MCP Catalogs and Profiles

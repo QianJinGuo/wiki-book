@@ -1,7 +1,5 @@
 # RAG 深度解析：分块向量化召回重排才是蒸馏同事 Skill 的关键
 
-## Ch01.659 RAG 深度解析：分块向量化召回重排才是蒸馏同事 Skill 的关键
-
 > 📊 Level ⭐⭐⭐⭐ | 12.0KB | `entities/rag-chunking-vectorization-rerank-distillation.md`
 
 > -> 原文存档

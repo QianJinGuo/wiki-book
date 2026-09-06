@@ -1,7 +1,5 @@
 # How Unified EDR and ITDR Stop Attacks Before They Spread
 
-## Ch12.045 How Unified EDR and ITDR Stop Attacks Before They Spread
-
 > 📊 Level ⭐⭐⭐ | 7.7KB | `entities/huntress-edr-itdr.md`
 
 ## 摘要

@@ -1,7 +1,5 @@
 # Martin Fowler AI 研发 Harness：非确定性承重层
 
-## Ch05.033 Martin Fowler AI 研发 Harness：非确定性承重层
-
 > 📊 Level ⭐⭐⭐ | 18.3KB | `entities/martin-fowler-ai-rd-harness-nondeterminism.md`
 
 ## 核心洞察

@@ -1,7 +1,5 @@
 # MapSatisfyBench：首个以满意度为核心目标的地图智能体评测基准
 
-## Ch07.020 MapSatisfyBench：首个以满意度为核心目标的地图智能体评测基准
-
 > 📊 Level ⭐⭐⭐ | 9.2KB | `entities/mapsatisfybench-map-agent-satisfaction-eval-gaode-pku.md`
 
 > 原文存档：原文存档

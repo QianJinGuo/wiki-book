@@ -1,7 +1,5 @@
 # What Figma Made Visible: Component Model Bridging Design and Engineering
 
-## Ch03.088 What Figma Made Visible: Component Model Bridging Design and Engineering
-
 > 📊 Level ⭐⭐⭐⭐ | 8.5KB | `entities/what-figma-made-visible.md`
 
 # What Figma Made Visible

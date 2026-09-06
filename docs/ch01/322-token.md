@@ -1,7 +1,5 @@
 # Token 退化问题：分词器与后训练数据分布失配
 
-## Ch01.322 Token 退化问题：分词器与后训练数据分布失配
-
 > 📊 Level ⭐⭐⭐ | 13.8KB | `entities/minimax-token-degradation-jiqia.md`
 
 > -> 原文存档

@@ -1,7 +1,5 @@
 # The new AI lock-in
 
-## Ch01.461 The new AI lock-in
-
 > 📊 Level ⭐⭐⭐ | 7.9KB | `entities/new-lock.md`
 
 # The new AI lock-in

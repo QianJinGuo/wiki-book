@@ -1,7 +1,5 @@
 # World Knowledge：Agent推理前先探索环境生成可迁移知识
 
-## Ch04.202 World Knowledge：Agent推理前先探索环境生成可迁移知识
-
 > 📊 Level ⭐⭐⭐ | 9.4KB | `entities/world-knowledge-agent-self-evolution-tencent-hkustgz.md`
 
 # World Knowledge：Agent推理前先探索环境生成可迁移知识

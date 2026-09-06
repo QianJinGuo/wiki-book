@@ -1,7 +1,5 @@
 # Agent orchestration
 
-## Ch01.129 Agent orchestration
-
 > 📊 Level ⭐ | 5.0KB | `entities/agent-orchestration.md`
 
 ## 核心要点

@@ -1,7 +1,5 @@
 # Japan’s PM orders cybersecurity review to defend against Anthropic Mythos
 
-## Ch12.025 Japan’s PM orders cybersecurity review to defend against Anthropic Mythos
-
 > 📊 Level ⭐⭐ | 2.9KB | `entities/japan-pm-cybersecurity-review-anthropic-mythos.md`
 
 > -> 原文存档

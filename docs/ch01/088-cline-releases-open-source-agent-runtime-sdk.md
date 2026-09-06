@@ -1,7 +1,5 @@
 # Cline releases open-source agent runtime SDK
 
-## Ch01.088 Cline releases open-source agent runtime SDK
-
 > 📊 Level ⭐ | 6.8KB | `entities/clinereleasesopen-sourceagentruntimesdk.md`
 
 # Cline releases open-source agent runtime SDK

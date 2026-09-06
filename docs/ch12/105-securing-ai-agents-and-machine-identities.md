@@ -1,7 +1,5 @@
 # Securing AI Agents and Machine Identities
 
-## Ch12.105 Securing AI Agents and Machine Identities
-
 > 📊 Level ⭐⭐⭐⭐⭐ | 8.9KB | `entities/1password-securing-ai-agents-machine-identities.md`
 
 ## 可视化

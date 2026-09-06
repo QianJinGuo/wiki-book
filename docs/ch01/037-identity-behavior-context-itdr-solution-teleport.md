@@ -1,7 +1,5 @@
 # Identity Behavior & Context: ITDR Solution | Teleport
 
-## Ch01.037 Identity Behavior & Context: ITDR Solution | Teleport
-
 > 📊 Level ⭐ | 8.4KB | `entities/identity-behavior-context-itdr-solution-teleport.md`
 
 # Identity Behavior & Context: ITDR Solution | Teleport

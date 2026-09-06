@@ -1,7 +1,5 @@
 # DeepSeek V4 Triton FP4 优化实战
 
-## Ch01.394 DeepSeek V4 Triton FP4 优化实战
-
 > 📊 Level ⭐⭐⭐ | 9.5KB | `entities/deepseek-v4-triton-fp4-optimization.md`
 
 > -> 原文存档

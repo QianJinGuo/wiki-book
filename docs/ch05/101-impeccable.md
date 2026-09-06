@@ -1,7 +1,5 @@
 # Impeccable：大规模自动化测试框架
 
-## Ch05.101 Impeccable：大规模自动化测试框架
-
 > 📊 Level ⭐⭐⭐⭐⭐ | 13.5KB | `entities/impeccable.md`
 
 # Impeccable

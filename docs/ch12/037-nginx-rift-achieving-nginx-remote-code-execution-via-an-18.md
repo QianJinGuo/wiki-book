@@ -1,7 +1,5 @@
 # NGINX Rift: Achieving NGINX Remote Code Execution via an 18-Year-Old Vulnerability | depthfirst
 
-## Ch12.037 NGINX Rift: Achieving NGINX Remote Code Execution via an 18-Year-Old Vulnerability | depthfirst
-
 > 📊 Level ⭐⭐⭐ | 8.6KB | `entities/nginx-rift-achieving-nginx-rce-via-an-18-year-old-vulnerability.md`
 
 # NGINX Rift: Achieving NGINX Remote Code Execution via an 18-Year-Old Vulnerability | depthfirst

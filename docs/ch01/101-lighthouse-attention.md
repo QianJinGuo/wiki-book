@@ -1,7 +1,5 @@
 # Lighthouse Attention
 
-## Ch01.101 Lighthouse Attention
-
 > 📊 Level ⭐ | 6.5KB | `entities/lighthouse_attention.md`
 
 ## 核心要点

@@ -1,7 +1,5 @@
 # The Main Path to Truly Creative AI
 
-## Ch01.489 The Main Path to Truly Creative AI
-
 > 📊 Level ⭐⭐⭐ | 7.3KB | `entities/the-main-path-to-truly-creative-ai.md`
 
 > -> 原文存档

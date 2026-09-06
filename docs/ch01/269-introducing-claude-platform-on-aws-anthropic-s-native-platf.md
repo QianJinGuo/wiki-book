@@ -1,7 +1,5 @@
 # Introducing Claude Platform on AWS: Anthropic’s native platform, through your AWS account | Amazon Web Services
 
-## Ch01.269 Introducing Claude Platform on AWS: Anthropic’s native platform, through your AWS account | Amazon Web Services
-
 > 📊 Level ⭐⭐ | 3.8KB | `entities/introducing-claude-platform-on-aws.md`
 
 # Introducing Claude Platform on AWS: Anthropic’s native platform, through your AWS account | Amazon Web Services

@@ -1,7 +1,5 @@
 # Introducing deepsec: The security harness for finding vulnerabilities in your codebase
 
-## Ch09.029 Introducing deepsec: The security harness for finding vulnerabilities in your codebase
-
 > 📊 Level ⭐⭐ | 4.5KB | `entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md`
 
 > -> Introducing deepsec: The security harness for finding vulnerabilities in your codebase

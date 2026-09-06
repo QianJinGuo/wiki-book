@@ -1,7 +1,5 @@
 # Vietnam to develop domestic cloud
 
-## Ch11.134 Vietnam to develop domestic cloud
-
 > 📊 Level ⭐⭐⭐ | 7.6KB | `entities/vietnam-to-develop-domestic-cloud.md`
 
 > -> 原文存档

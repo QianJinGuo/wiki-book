@@ -1,7 +1,5 @@
 # How an image could compromise your
 
-## Ch01.536 How an image could compromise your
-
 > 📊 Level ⭐⭐⭐ | 6.1KB | `entities/exiftool-compromise-mac-592994.md`
 
 ## 核心要点

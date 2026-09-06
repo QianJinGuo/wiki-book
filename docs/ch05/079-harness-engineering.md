@@ -1,7 +1,5 @@
 # Harness Engineering 系统梳理
 
-## Ch05.079 Harness Engineering 系统梳理
-
 > 📊 Level ⭐⭐⭐⭐ | 10.2KB | `entities/harness-engineering-systematic-framework.md`
 
 ## 概述

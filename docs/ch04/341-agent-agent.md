@@ -1,7 +1,5 @@
 # 高德伴行Agent：空间智能高可用Agent架构
 
-## Ch04.341 高德伴行Agent：空间智能高可用Agent架构
-
 > 📊 Level ⭐⭐⭐⭐ | 16.7KB | `entities/gaode-ai-companion-agent.md`
 
 > -> 原文存档

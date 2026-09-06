@@ -1,7 +1,5 @@
 # Be more expressive to close more sales
 
-## Ch01.091 Be more expressive to close more sales
-
 > 📊 Level ⭐ | 6.6KB | `entities/be-more-expressive-to-close-more-sales.md`
 
 > 来源：原文存档

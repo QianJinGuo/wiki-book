@@ -1,7 +1,5 @@
 # Reading today's open-closed performance gap
 
-## Ch01.396 Reading today's open-closed performance gap
-
 > 📊 Level ⭐⭐⭐ | 9.4KB | `entities/reading-todays-open-closed-performance-gap.md`
 
 # Reading today's open-closed performance gap

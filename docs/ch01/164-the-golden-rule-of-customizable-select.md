@@ -1,7 +1,5 @@
 # The golden rule of Customizable Select
 
-## Ch01.164 The golden rule of Customizable Select
-
 > 📊 Level ⭐ | 3.0KB | `entities/webkit-customizable-select-golden-rule.md`
 
 # The golden rule of Customizable Select

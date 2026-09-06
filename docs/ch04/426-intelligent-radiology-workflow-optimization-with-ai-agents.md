@@ -1,7 +1,5 @@
 # Intelligent radiology workflow optimization with AI agents
 
-## Ch04.426 Intelligent radiology workflow optimization with AI agents
-
 > 📊 Level ⭐⭐⭐⭐ | 8.6KB | `entities/intelligent-radiology-workflow-optimization-with-ai-agents.md`
 
 ## 核心要点

@@ -1,7 +1,5 @@
 # Claude Code 源码深度解析（13 核心机制）
 
-## Ch01.623 Claude Code 源码深度解析（13 核心机制）
-
 > 📊 Level ⭐⭐⭐⭐ | 15.4KB | `entities/claude-code-source-deep-dive-warrior.md`
 
 > -> 原文存档

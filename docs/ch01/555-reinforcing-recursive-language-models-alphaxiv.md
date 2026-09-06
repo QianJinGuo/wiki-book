@@ -1,7 +1,5 @@
 # Reinforcing Recursive Language Models | alphaXiv
 
-## Ch01.555 Reinforcing Recursive Language Models | alphaXiv
-
 > 📊 Level ⭐⭐⭐ | 5.5KB | `entities/alphaxiv-reinforcement-learning-for-rlms.md`
 
 > → 原文存档

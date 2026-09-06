@@ -1,7 +1,5 @@
 # Claude Code 架构解析
 
-## Ch01.685 Claude Code 架构解析
-
 > 📊 Level ⭐⭐⭐⭐ | 9.6KB | `entities/claude-code-architecture.md`
 
 ## Overview

@@ -1,7 +1,5 @@
 # Static Devirtualization of Themida
 
-## Ch12.078 Static Devirtualization of Themida
-
 > 📊 Level ⭐⭐⭐⭐ | 17.3KB | `entities/static-devirtualization-themida.md`
 
 > -> 原文存档

@@ -1,7 +1,5 @@
 # Harness进化论文 — M⋆记忆程序进化与AutoHarness动作约束
 
-## Ch05.048 Harness进化论文 — M⋆记忆程序进化与AutoHarness动作约束
-
 > 📊 Level ⭐⭐⭐ | 7.4KB | `entities/harness-evolution-papers.md`
 
 # Harness进化论文

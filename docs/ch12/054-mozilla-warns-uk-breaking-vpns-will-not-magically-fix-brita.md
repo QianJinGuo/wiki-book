@@ -1,7 +1,5 @@
 # Mozilla warns UK: Breaking VPNs will not magically fix Britain's age-check mess
 
-## Ch12.054 Mozilla warns UK: Breaking VPNs will not magically fix Britain's age-check mess
-
 > 📊 Level ⭐⭐⭐ | 6.8KB | `entities/mozilla-warns-uk-breaking-vpns-will-not-magically-fix-britai.md`
 
 ## 核心要点

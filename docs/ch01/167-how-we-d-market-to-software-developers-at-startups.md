@@ -1,7 +1,5 @@
 # How We’d Market to Software Developers at Startups
 
-## Ch01.167 How We’d Market to Software Developers at Startups
-
 > 📊 Level ⭐ | 2.4KB | `entities/how-wed-market-to-software-developers-at-startups-20260606.md`
 
 # How We’d Market to Software Developers at Startups

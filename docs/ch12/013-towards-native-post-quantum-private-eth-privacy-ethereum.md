@@ -1,7 +1,5 @@
 # Towards Native Post-Quantum Private ETH - Privacy - Ethereum Research
 
-## Ch12.013 Towards Native Post-Quantum Private ETH - Privacy - Ethereum Research
-
 > 📊 Level ⭐⭐ | 17.9KB | `entities/towards-native-post-quantum-private-eth.md`
 
 # Towards Native Post-Quantum Private ETH - Privacy - Ethereum Research

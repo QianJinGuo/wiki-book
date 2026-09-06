@@ -1,7 +1,5 @@
 # Agentium — 从零实现 Agent 系统的开源框架
 
-## Ch01.768 Agentium — 从零实现 Agent 系统的开源框架
-
 > 📊 Level ⭐⭐⭐⭐⭐ | 11.6KB | `entities/agentium-agent-framework.md`
 
 - 原文存档

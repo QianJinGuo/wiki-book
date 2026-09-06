@@ -1,7 +1,5 @@
 # AI Gateways vs MCP Gateways: What Security Teams Need to Know
 
-## Ch11.092 AI Gateways vs MCP Gateways: What Security Teams Need to Know
-
 > 📊 Level ⭐⭐⭐ | 10.5KB | `entities/ai-gateways-vs-mcp-gateways-what-security-teams-need-to-know.md`
 
 > -> 原文存档

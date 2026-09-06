@@ -1,7 +1,5 @@
 # Agent Plan x DeepSeek Harness 实践指南
 
-## Ch04.190 Agent Plan x DeepSeek Harness 实践指南
-
 > 📊 Level ⭐⭐⭐ | 10.2KB | `entities/agent-plan-x-deepseek-harness-dsh-practice-guide.md`
 
 # Agent Plan x DeepSeek Harness 实践指南

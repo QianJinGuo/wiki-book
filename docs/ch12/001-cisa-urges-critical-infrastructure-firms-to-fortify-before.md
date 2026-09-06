@@ -1,7 +1,5 @@
 # CISA urges critical infrastructure firms to 'fortify' before it's too late | Cybersecurity Dive
 
-## Ch12.001 CISA urges critical infrastructure firms to 'fortify' before it's too late | Cybersecurity Dive
-
 > 📊 Level ⭐ | 11.9KB | `entities/cisa-urges-critical-infrastructure-firms-to-fortify-before-i.md`
 
 ## 核心要点

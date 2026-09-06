@@ -1,7 +1,5 @@
 # Claude Code Agent Teams 实战：怎么拆任务、控权限、收证据
 
-## Ch01.652 Claude Code Agent Teams 实战：怎么拆任务、控权限、收证据
-
 > 📊 Level ⭐⭐⭐⭐ | 12.5KB | `entities/claude-code-agent-teams-task-decomposition-ruofei.md`
 
 > -> 原文存档

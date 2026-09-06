@@ -1,7 +1,5 @@
 # EntryPoint Hijacking
 
-## Ch01.067 EntryPoint Hijacking
-
 > 📊 Level ⭐ | 7.4KB | `entities/entrypointhijacking.md`
 
 → 原文存档

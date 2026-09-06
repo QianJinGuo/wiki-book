@@ -1,7 +1,5 @@
 # Agent框架OWL原理详解
 
-## Ch01.728 Agent框架OWL原理详解
-
 > 📊 Level ⭐⭐⭐⭐⭐ | 38.6KB | `entities/agent框架owl原理详解.md`
 
 Agent框架Owl原理详解

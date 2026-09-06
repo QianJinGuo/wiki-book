@@ -1,7 +1,5 @@
 # Introducing Claude for Small Business
 
-## Ch01.406 Introducing Claude for Small Business
-
 > 📊 Level ⭐⭐⭐ | 9.0KB | `entities/introducing-claude-for-small-business.md`
 
 > -> 原文存档

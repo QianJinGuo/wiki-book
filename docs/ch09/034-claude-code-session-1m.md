@@ -1,7 +1,5 @@
 # 使用Claude Code：session管理与1M上下文
 
-## Ch09.034 使用Claude Code：session管理与1M上下文
-
 > 📊 Level ⭐⭐⭐ | 16.2KB | `entities/使用claude-codesession管理与1m上下文.md`
 
 使用Claude Codesession管理与1M上下文

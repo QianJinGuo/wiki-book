@@ -1,7 +1,5 @@
 # Cline releases open-source agent runtime SDK
 
-## Ch04.285 Cline releases open-source agent runtime SDK
-
 > 📊 Level ⭐⭐⭐ | 6.3KB | `entities/cline-releases-open-source-agent-runtime-sdk.md`
 
 > -> 原文存档

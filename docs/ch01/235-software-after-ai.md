@@ -1,7 +1,5 @@
 # Software After AI
 
-## Ch01.235 Software After AI
-
 > 📊 Level ⭐⭐ | 6.3KB | `entities/tomtunguz-com-software-after-ai.md`
 
 # Software After AI

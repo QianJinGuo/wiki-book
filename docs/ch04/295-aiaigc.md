@@ -1,7 +1,5 @@
 # AIAIGC峰会嘉宾阵容
 
-## Ch04.295 AIAIGC峰会嘉宾阵容
-
 > 📊 Level ⭐⭐⭐ | 5.7KB | `entities/aiaigc-summit-guest-lineup.md`
 
 > -> 原文存档

@@ -1,7 +1,5 @@
 # CLAUDE.md
 
-## Ch01.749 CLAUDE.md
-
 > 📊 Level ⭐⭐⭐⭐⭐ | 17.4KB | `entities/claude-code-source-leak-lifecycle-analysis.md`
 
 Claude Code Source Leak Lifecycle Analysis

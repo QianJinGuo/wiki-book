@@ -1,7 +1,5 @@
 # How to achieve truly serverless GPUs
 
-## Ch11.106 How to achieve truly serverless GPUs
-
 > 📊 Level ⭐⭐⭐ | 9.7KB | `entities/modal-truly-serverless-gpus.md`
 
 > -> 原文存档

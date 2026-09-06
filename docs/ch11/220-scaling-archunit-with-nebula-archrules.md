@@ -1,7 +1,5 @@
 # Scaling ArchUnit with Nebula ArchRules
 
-## Ch11.220 Scaling ArchUnit with Nebula ArchRules
-
 > 📊 Level ⭐⭐⭐⭐⭐ | 8.8KB | `entities/scaling-archunit-with-nebula-archrules.md`
 
 # Scaling ArchUnit with Nebula ArchRules

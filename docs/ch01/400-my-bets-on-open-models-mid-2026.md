@@ -1,7 +1,5 @@
 # My bets on open models, mid-2026
 
-## Ch01.400 My bets on open models, mid-2026
-
 > 📊 Level ⭐⭐⭐ | 9.2KB | `entities/my-bets-on-open-models-mid-2026.md`
 
 # My bets on open models, mid-2026

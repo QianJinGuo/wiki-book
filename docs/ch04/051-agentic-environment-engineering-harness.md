@@ -1,7 +1,5 @@
 # Agentic Environment Engineering：Harness 之上下一层门槛
 
-## Ch04.051 Agentic Environment Engineering：Harness 之上下一层门槛
-
 > 📊 Level ⭐⭐ | 8.0KB | `entities/agentic-environment-engineering-jiagoux-2026-06-27.md`
 
 > → 原文存档

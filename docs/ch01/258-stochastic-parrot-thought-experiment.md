@@ -1,7 +1,5 @@
 # Stochastic Parrot Thought Experiment
 
-## Ch01.258 Stochastic Parrot Thought Experiment
-
 > 📊 Level ⭐⭐ | 5.0KB | `entities/stochastic-parrot-thought-experiment.md`
 
 # A Thought Experiment

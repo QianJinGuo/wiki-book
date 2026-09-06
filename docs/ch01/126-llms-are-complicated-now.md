@@ -1,7 +1,5 @@
 # LLMs are complicated now
 
-## Ch01.126 LLMs are complicated now
-
 > 📊 Level ⭐ | 5.1KB | `entities/llms-are-complicated-now-ianbarber.md`
 
 # LLMs are complicated now

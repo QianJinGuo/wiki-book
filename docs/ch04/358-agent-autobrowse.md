@@ -1,7 +1,5 @@
 # 浏览器 Agent 的失忆问题：Autobrowse 如何让每次探索变成永久技能
 
-## Ch04.358 浏览器 Agent 的失忆问题：Autobrowse 如何让每次探索变成永久技能
-
 > 📊 Level ⭐⭐⭐⭐ | 15.1KB | `entities/autobrowse-browserbase-persistent-skill-files.md`
 
 ## 背景：探索税（Discovery Tax）

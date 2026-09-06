@@ -1,7 +1,5 @@
 # Programbench Swe Agent Benchmark
 
-## Ch04.298 Programbench Swe Agent Benchmark
-
 > 📊 Level ⭐⭐⭐ | 5.3KB | `entities/programbench-swe-agent-benchmark.md`
 
 > -> 原文存档

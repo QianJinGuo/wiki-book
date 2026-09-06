@@ -1,7 +1,5 @@
 # LLM-as-a-Verifier: A General-Purpose Verification Framework
 
-## Ch01.105 LLM-as-a-Verifier: A General-Purpose Verification Framework
-
 > 📊 Level ⭐ | 6.1KB | `entities/llm-as-a-verifier-framework.md`
 
 > -> 原文存档

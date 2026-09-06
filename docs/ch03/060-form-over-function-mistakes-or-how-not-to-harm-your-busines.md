@@ -1,7 +1,5 @@
 # Form-Over-Function Mistakes, or How Not to Harm Your Business With a Pretty Interface.
 
-## Ch03.060 Form-Over-Function Mistakes, or How Not to Harm Your Business With a Pretty Interface.
-
 > 📊 Level ⭐⭐⭐ | 6.3KB | `entities/blog.tubikstudio.com-form-over-function-mistakes.md`
 
 ## 核心要点

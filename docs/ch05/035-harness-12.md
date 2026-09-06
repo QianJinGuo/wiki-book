@@ -1,7 +1,5 @@
 # 生产级 Harness 的 12 大组件以及主流框架对比
 
-## Ch05.035 生产级 Harness 的 12 大组件以及主流框架对比
-
 > 📊 Level ⭐⭐⭐ | 15.8KB | `entities/production-harness-12-components-framework-comparison.md`
 
 Production Harness 12 Components Framework Comparison

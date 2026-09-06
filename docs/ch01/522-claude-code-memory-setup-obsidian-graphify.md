@@ -1,7 +1,5 @@
 # Claude Code Memory Setup (Obsidian + Graphify)
 
-## Ch01.522 Claude Code Memory Setup (Obsidian + Graphify)
-
 > 📊 Level ⭐⭐⭐ | 6.4KB | `entities/claude-code-memory-setup-obsidian-graphify.md`
 
 # Claude Code Memory Setup (Obsidian + Graphify)

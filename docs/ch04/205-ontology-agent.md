@@ -1,7 +1,5 @@
 # 本体论（Ontology）：Agent 事实系统的语义控制面
 
-## Ch04.205 本体论（Ontology）：Agent 事实系统的语义控制面
-
 > 📊 Level ⭐⭐⭐ | 9.2KB | `entities/ontology-semantic-control-plane-agent-facts-ruofei-2026-08-08.md`
 
 # 本体论（Ontology）：Agent 事实系统的语义控制面

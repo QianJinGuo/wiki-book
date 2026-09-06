@@ -1,7 +1,5 @@
 # Unlocking asynchronicity in continuous batching
 
-## Ch03.041 Unlocking asynchronicity in continuous batching
-
 > 📊 Level ⭐⭐⭐ | 8.5KB | `entities/continuousasync.md`
 
 ## 核心要点

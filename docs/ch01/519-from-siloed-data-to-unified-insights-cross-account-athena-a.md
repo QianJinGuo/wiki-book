@@ -1,7 +1,5 @@
 # From siloed data to unified insights: Cross-account Athena Access for Amazon Quick
 
-## Ch01.519 From siloed data to unified insights: Cross-account Athena Access for Amazon Quick
-
 > 📊 Level ⭐⭐⭐ | 6.5KB | `entities/from-siloed-data-to-unified-insights-cross-account-athena-access-for-amazon-quic.md`
 
 > -> 原文存档

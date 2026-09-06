@@ -1,7 +1,5 @@
 # New cybersecurity industry coalition aims to lead US critical infrastructure protection
 
-## Ch11.157 New cybersecurity industry coalition aims to lead US critical infrastructure protection
-
 > 📊 Level ⭐⭐⭐ | 5.5KB | `entities/new-cybersecurity-coalition-us-policy.md`
 
 ## 摘要

@@ -1,7 +1,5 @@
 # The Inference Shift
 
-## Ch01.337 The Inference Shift
-
 > 📊 Level ⭐⭐⭐ | 12.3KB | `entities/the-inference-shift.md`
 
 > -> 原文存档

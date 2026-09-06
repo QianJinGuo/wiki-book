@@ -1,7 +1,5 @@
 # OpenAI官方CLI上线，跟复杂的SDK说拜拜
 
-## Ch01.266 OpenAI官方CLI上线，跟复杂的SDK说拜拜
-
 > 📊 Level ⭐⭐ | 4.0KB | `entities/openai官方cli上线跟复杂的sdk说拜拜.md`
 
 > -> 原文存档

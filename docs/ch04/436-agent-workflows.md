@@ -1,7 +1,5 @@
 # Agent Workflows
 
-## Ch04.436 Agent Workflows
-
 > 📊 Level ⭐⭐⭐⭐ | 8.1KB | `entities/agent-workflows.md`
 
 ## 核心要点

@@ -1,7 +1,5 @@
 # User Journey Maps: How UX Teams Turn Friction Into Better Products
 
-## Ch01.594 User Journey Maps: How UX Teams Turn Friction Into Better Products
-
 > 📊 Level ⭐⭐⭐⭐ | 29.1KB | `entities/user-journey-map.md`
 
 # "User Journey Maps: How UX Teams Turn Friction Into Better Products"
