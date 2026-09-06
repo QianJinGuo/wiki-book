@@ -1,27 +1,18 @@
 ---
+type: source-card
 title: "dream-dense-retrieval-autoregressive-modeling-challengehub-2026"
-created: 2026-07-24
-updated: 2026-07-24
-type: raw-article
-tags: [raw, article]
-sha256: 0d499544bdd05f26acb2d8696ff6f12cf0c71c1eb33dee872d6fe86cdd3b91fc
+source: "mp.weixin.qq.com"
+author: "未标注作者；来源机构见 source"
 source_url: "https://mp.weixin.qq.com/s/OaChk2wvXSY2s2QrkgOObw"
+published: "2026-07-24"
+collected: "2026-07-24"
+license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
 ---
 
----
-title: "DREAM：让大模型自己'猜答案'训练稠密检索器，无需标注正负样本"
-source: wechat
-source_url: https://mp.weixin.qq.com/s/OaChk2wvXSY2s2QrkgOObw
-author: ChallengeHub
-feed_name: ChallengeHub
-review_value: 8
-review_confidence: 8
-review_recommendation: worth-reading
-review_stars: 4
-date: 2026-06-29
-created: 2026-06-29
-updated: 2026-06-29
-tags: [dense-retrieval, rag, information-retrieval, llm, attention-head, training, contrastive-free, ntp-loss]
-type: article
-provenance_state: extracted
-sha256: b37c3bac7dabaac60979f035a0d28fbb0df3c007aa561cab7a624012c73c0fc1
+# dream-dense-retrieval-autoregressive-modeling-challengehub-2026
+
+## 原创摘要
+
+这份来源卡片记录一篇围绕“dream-dense-retrieval-autoregressive-modeling-challengehub-2026”的第三方资料，主题标签为raw、article。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
+
+> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。

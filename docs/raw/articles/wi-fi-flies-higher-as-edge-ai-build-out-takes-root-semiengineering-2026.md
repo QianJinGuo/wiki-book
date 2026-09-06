@@ -1,48 +1,18 @@
 ---
+type: source-card
 title: "Wi-Fi Flies Higher As Edge AI Build-Out Takes Root"
-source_url: https://semiengineering.com/wi-fi-flies-higher-as-edge-ai-build-out-takes-root/
-author: Semiconductor Engineering
-publisher: Semiconductor Engineering
-publish_date: 2026-06-15
-ingested: 2026-06-17
-sha256: 80ce61efd0aad288ae634e86cac377fab12a0736e62fca63ffd47c39d4837469
-review_value: 7
-review_confidence: 7
-review_recommendation: strong
-review_stars: 4
-tags: [wifi, edge-ai, semiconductor, networking, industry-analysis, deterministic-networking]
+source: "semiengineering.com"
+author: "Semiconductor Engineering"
+source_url: "https://semiengineering.com/wi-fi-flies-higher-as-edge-ai-build-out-takes-root/"
+published: "未标注"
+collected: "2026-06-17"
+license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
 ---
 
 # Wi-Fi Flies Higher As Edge AI Build-Out Takes Root
 
-> Source: https://semiengineering.com/wi-fi-flies-higher-as-edge-ai-build-out-takes-root/
-> Author: Semiconductor Engineering (Synaptics, Infineon, Keysight expert quotes)
+## 原创摘要
 
-## Background
+这份来源卡片记录一篇围绕“Wi-Fi Flies Higher As Edge AI Build-Out Takes Root”的第三方资料，主题标签为wifi、edge-ai、semiconductor。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
 
-Industry analysis from Semiconductor Engineering on the convergence of Wi-Fi 7/8 and edge AI infrastructure, with substantive expert commentary on technical requirements (determinism, reliability, security) and market dynamics (Wi-Fi vs 5G/6G mmWave tradeoffs). Covers emerging use cases in industrial robotics, defense, and predictive maintenance.
-
-## Key insights
-
-- **Wi-Fi 7/8 + edge AI convergence**: Wireless infrastructure must evolve to support edge AI workloads, with determinism, low latency, and reliability as first-class requirements (not best-effort)
-- **PSA Level 3 + TrustZone security**: Edge AI nodes need hardware-rooted security primitives (Platform Security Architecture Level 3, ARM TrustZone) to protect model weights, training data, and inference streams
-- **Wi-Fi vs 5G/6G mmWave tradeoff**: Wi-Fi is winning in indoor edge AI deployments (factories, retail, robotics) due to lower cost and easier deployment, while 5G/6G mmWave targets outdoor/backhaul
-- **Industrial robotics + defense + predictive maintenance**: Three emerging edge AI use cases driving Wi-Fi 7/8 adoption — all require deterministic networking for safety-critical operations
-- **Expert sources**: Synaptics, Infineon, and Keysight Technologies — three credible vendors with direct product insight
-- **Vendor-adjacent tone**: Some claims lack quantitative benchmarks; minor deduction in confidence
-
-## Technical depth
-
-The article covers:
-- Determinism (bounded latency, no packet loss under load)
-- Reliability (MTBF for industrial deployments)
-- Security (PSA Level 3, TrustZone for edge AI node hardening)
-- Wi-Fi 7 features: MLO (Multi-Link Operation), 320 MHz channels, 4K-QAM
-- Edge AI workloads: inference, federated learning, model updates
-
-## Market dynamics
-
-- Wi-Fi vs 5G/6G mmWave for edge AI deployment
-- Industrial IoT + robotics adoption drivers
-- Defense and predictive maintenance use cases
-- Vendor ecosystem (Synaptics, Infineon, Keysight)
+> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。

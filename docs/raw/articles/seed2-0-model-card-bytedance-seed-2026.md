@@ -1,18 +1,18 @@
 ---
-source: arxiv
-source_url: https://arxiv.org/abs/2607.00248
-source_published: 2026-06-30
-ingested: 2026-07-04
-sha256: 7646984f87662e4987f2c3e62391d527cec7a8807e40e4f89a112537c98eb031
+type: source-card
+title: "Seed2.0 Model Card: Towards Intelligence Frontier for Real-World Complexity"
+source: "arxiv"
+author: "未标注作者；来源机构见 source"
+source_url: "https://arxiv.org/abs/2607.00248"
+published: "未标注"
+collected: "2026-07-04"
+license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
 ---
 
 # Seed2.0 Model Card: Towards Intelligence Frontier for Real-World Complexity
 
-**Authors**: Bytedance Seed
-**Submitted**: 30 Jun 2026
-**Category**: cs.AI (Artificial Intelligence)
-**DOI**: https://doi.org/10.48550/arXiv.2607.00248
+## 原创摘要
 
-**Abstract**: We present Seed2.0, a model series that takes a meaningful step toward solving complex, real-world tasks. Our approach begins with identifying users' genuine needs and constructing a reliable, forward-looking evaluation system by selecting and abstracting benchmarks grounded in these needs and in realistic, complex scenarios. Guided by this evaluation system, Seed2.0 targets two persistent challenges, long-tail knowledge and complex instruction following, substantially improving the model's reliability on intricate, long-horizon tasks. Beyond these, Seed2.0 delivers world-leading reasoning intelligence, visual understanding, and search capabilities that address the most common needs of a broad user base. Through extensive real-world use cases documented in this model card, we demonstrate that Seed2.0 begins to exhibit the ability to handle initial complex real-world tasks, delivering greater value to hundreds of millions of users.
+这份来源卡片记录一篇围绕“Seed2.0 Model Card: Towards Intelligence Frontier for Real-World Complexity”的第三方资料，主题标签为相关 AI 工程主题。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
 
-**Significance**: Seed2.0 is ByteDance's next-generation flagship model series, building on Seed 2.0 Lite to address full-scale real-world complexity. Key contributions include: long-tail knowledge handling, complex instruction following, world-leading reasoning intelligence, visual understanding, and search capabilities. The model card paradigm emphasizes real-world use case documentation over benchmark-only reporting.
+> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。

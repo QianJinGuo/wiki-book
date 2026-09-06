@@ -1,19 +1,18 @@
 ---
+type: source-card
 title: "problem with mathematically proven claims about llms"
-source_url: https://webdirections.org/blog/the-problem-with-mathematically-proven-claims-about-llms/
-ingested: 2026-05-08
-sha256: 736e0ddaf383c94bd827d1ecd0ae72ff7e12826a50a190fbe30bcd8feef76da0
-review_value: 8
-review_confidence: 8
-review_recommendation: strong
-review_stars: 4
-source_feed: TLDR AI (newsletter)
-source_published: 2026-05-07
-type: raw-article
-created: 2026-05-10
-updated: 2026-05-10
-tags: [raw-status:stub]
+source: "webdirections.org"
+author: "未标注作者；来源机构见 source"
+source_url: "https://webdirections.org/blog/the-problem-with-mathematically-proven-claims-about-llms/"
+published: "2026-05-10"
+collected: "2026-05-08"
+license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
 ---
 
-# The Problem with "Mathematically Proven" Claims About LLMs
-John Allsopp 批判三类被误用的"数学证明"LLM 局限性声明：1) AI 不能自我改进（Zenil 论文的 KL-flow 收敛不适用于有外部验证器的系统） 2) 幻觉不可避免（定义过于宽泛，论文明确说不适用于 knowledge-enhanced LLM） 3) 数学天花板（Hartmanis-Stearns 定理不适用于多 LLM 协作+工具使用）。共同模式：取最大版本声明→证明→推广时丢弃假设→修饰性语言包装。
+# problem with mathematically proven claims about llms
+
+## 原创摘要
+
+这份来源卡片记录一篇围绕“problem with mathematically proven claims about llms”的第三方资料，主题标签为raw-status:stub。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
+
+> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。

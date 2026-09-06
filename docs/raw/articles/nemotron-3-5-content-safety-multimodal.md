@@ -1,40 +1,18 @@
 ---
+type: source-card
 title: "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise"
+source: "huggingface"
+author: "NVIDIA + Hugging Face"
 source_url: "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety"
-author: NVIDIA + Hugging Face
-publish_date: 2026-06-04
-ingested: 2026-06-07
-sha256: 331c538c56d4d7ab804ad21408b25cc1609db0acb39d720d59c14ff67238b14f
-tags: [nvidia, nemotron, content-safety, multimodal, enterprise-ai]
-source: huggingface
-review_value: 8
-review_confidence: 7
-review_stars: 4
+published: "未标注"
+collected: "2026-06-07"
+license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
 ---
 
 # Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise
 
-> 原文存档：[[raw/articles/nemotron-3-5-content-safety-multimodal|原文存档]] ^[raw/articles/nemotron-3-5-content-safety-multimodal.md]
+## 原创摘要
 
-## 核心内容
+这份来源卡片记录一篇围绕“Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise”的第三方资料，主题标签为nvidia、nemotron、content-safety。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
 
-NVIDIA 在 Hugging Face 发布的 Nemotron 3.5 Content Safety 模型，重点是企业级多模态内容安全：
-
-- **可定制策略**：企业可根据法规和品牌要求定制安全策略
-- **多语言覆盖**：面向全球企业的多语言内容安全检测
-- **推理轨迹**：模型输出包含 reasoning traces，便于审计和调试
-- **多模态**：同时处理文本和图像内容
-- **基准测试**：在主流内容安全 benchmark 上有明确性能数据
-- **延迟指标**：企业级部署的 latency benchmarks
-
-## 评分依据
-
-- v=8: 高价值 NVIDIA 官方技术发布，涵盖多模态安全模型架构 + 训练数据 + 基准 + 延迟的完整技术栈
-- c=7: 来源可信（NVIDIA + HF 官方），结构完整
-- stars=4: 独特技术洞察（可定制策略 + 推理轨迹审计 + 多模态融合）
-- v×c=56 ≥ 49 → 入库
-
-## 上线状态
-
-- 官方链接：https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety
-- 部署平台：Hugging Face + NVIDIA NIM
+> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。

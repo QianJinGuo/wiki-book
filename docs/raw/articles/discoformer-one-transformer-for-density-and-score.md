@@ -1,23 +1,18 @@
 ---
-source_url: https://huggingface.co/blog/allenai/discoformer
-source: newsletter
+type: source-card
 title: "DiScoFormer: One transformer for density and score, across distributions"
-ingested: 2026-07-05
-publish_date: 2026-07
-authors: [Allen AI]
-sha256: 1b3e1d305bb6a8bbd7b68ecf95630eddbe6d033e7282dc5cd94a9dece7102f24
+source: "newsletter"
+author: "未标注作者；来源机构见 source"
+source_url: "https://huggingface.co/blog/allenai/discoformer"
+published: "未标注"
+collected: "2026-07-05"
+license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
 ---
 
-# DiScoFormer: One Transformer for Density and Score, Across Distributions
+# DiScoFormer: One transformer for density and score, across distributions
 
-Many problems in machine learning come down to the same task: given a collection of data points, recover the distribution they came from—which values are common and which are rare. This means estimating the distribution's density and its score (the gradient of the log-density).
+## 原创摘要
 
-DiScoFormer (Density and Score Transformer) introduces one model that, given a set of data points, estimates both the density and the score of the distribution in a single forward pass without retraining.
+这份来源卡片记录一篇围绕“DiScoFormer: One transformer for density and score, across distributions”的第三方资料，主题标签为相关 AI 工程主题。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
 
-The model uses cross-attention with a shared backbone and two output heads (one for density, one for score). Score and density share a mathematical relationship: score is the gradient of the logarithm of density. This coupling provides a label-free consistency loss—at inference time, the model can adapt itself to out-of-distribution inputs by taking gradient steps on the consistency loss.
-
-Key innovations:
-- Single transformer maps an entire sample to density and score in one forward pass
-- Cross-attention allows evaluation at any point, not just where data exists
-- Consistency loss between density and score heads enables zero-shot out-of-distribution adaptation
-- Addresses the trade-off between KDE (generalizable but poor in high dimensions) and neural score-matching (accurate but needs retraining)
+> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。

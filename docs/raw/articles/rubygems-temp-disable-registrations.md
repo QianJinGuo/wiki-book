@@ -1,27 +1,18 @@
 ---
-title: Temporarily disabling new user registrations
-sha256: b8b065119670abaf17668e2ec70a7443a9b9b089ef382d66806b50fe80458062
-type: raw-article
-source: newsletter
-source_url: https://status.rubygems.org/incidents/cytf062tkwtt
-review_value: 7
-review_confidence: 8
-review_recommendation: neutral
-ingested: 2026-05-16
-created: 2026-05-15
-updated: 2026-05-15
+type: source-card
+title: "Temporarily disabling new user registrations"
+source: "newsletter"
+author: "未标注作者；来源机构见 source"
+source_url: "https://status.rubygems.org/incidents/cytf062tkwtt"
+published: "2026-05-15"
+collected: "2026-05-16"
+license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
 ---
-Title: Temporarily disabling new user registrations
-URL Source: https://status.rubygems.org/incidents/cytf062tkwtt
-Warning: This page contains iframe that are currently hidden, consider enabling iframe processing.
-Warning: This page maybe requiring CAPTCHA, please make sure you are authorized to access this page.
-Warning: This is a cached snapshot of the original page, consider retry with caching opt-out.
-Markdown Content:
-## Update
-The malicious spam activity against rubygems.org has stopped. The bot accounts responsible have been blocked and removed, and the 500+ malicious packages pushed during the attack have been yanked from the registry.
-Registrations will remain closed while we coordinate with Fastly to enable WAF protection and tighten rate limiting on account creation. We expect this to take two to three days. We'll post another update when we're closer being ready to re-enable user registrations.
-Gem installs and pushes for existing users are unaffected.
-Posted 2 days ago. May 13, 2026 - 03:17 UTC
-## Identified
-Due to an ongoing DDoS attack against rubygems.org, we have temporarily disabled registrations. We'll share an update once we've made changes to protect legitimate users and prevent further abuse.
-Posted 2 days ago. May 12, 2026 - 08:54 UTC
+
+# Temporarily disabling new user registrations
+
+## 原创摘要
+
+这份来源卡片记录一篇围绕“Temporarily disabling new user registrations”的第三方资料，主题标签为相关 AI 工程主题。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
+
+> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。

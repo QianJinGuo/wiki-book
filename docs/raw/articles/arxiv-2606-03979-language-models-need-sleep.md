@@ -1,31 +1,18 @@
 ---
+type: source-card
 title: "Language Models Need Sleep: Learning to Self-Modify and Consolidate Memories"
-source_url: https://arxiv.org/abs/2606.03979
-source: arxiv
-arxiv_id: 2606.03979
-ingested: 2026-06-05
-sha256: d547a4886448a0dfa017858c296ff638c5a344d3cfc8a66a9fac421a09c2599f
+source: "arxiv"
+author: "未标注作者；来源机构见 source"
+source_url: "https://arxiv.org/abs/2606.03979"
+published: "未标注"
+collected: "2026-06-05"
+license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
 ---
 
+# Language Models Need Sleep: Learning to Self-Modify and Consolidate Memories
 
-Published Time: Wed, 03 Jun 2026 01:16:57 GMT
+## 原创摘要
 
-Markdown Content:
-[View PDF](https://arxiv.org/pdf/2606.03979)[HTML (experimental)](https://arxiv.org/html/2606.03979v1)
+这份来源卡片记录一篇围绕“Language Models Need Sleep: Learning to Self-Modify and Consolidate Memories”的第三方资料，主题标签为相关 AI 工程主题。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
 
-> Abstract:The past few decades have witnessed significant advances in the design of machine learning algorithms, from early studies on task-specific shallow models to more general deep Large Language Models (LLMs). Despite showing promising results in tasks that require instant prediction or in-context learning, existing models lack the ability to continually learn and effectively transfer their temporal in-context knowledge to their long-term parameters. Inspired by human learning process, we introduce a ''Sleep'' paradigm that allows the models to continually learn, distill their short-term fragile memories into stable long-term knowledge with replay, and recursively improve themselves with ''Dreaming'' process. In more detail, sleep consists of two stages: (1) Memory Consolidation: an upward distillation process, called Knowledge Seeding, where the memories of a smaller-self are distilled into a larger network to provide more capacity while preserving the knowledge. As a proof of concept, we present a new Generalized Distillation process for {Knowledge Seeding} (i.e., the combination of on-policy distillation with Reinforcement Learning (RL)-based imitation learning); (2) Dreaming: a self-improvement phase, where the model uses RL to generate a curriculum of synthetic data to rehearse new knowledge and refine existing capabilities without human supervision. Our experiments on long-horizon, continual learning, knowledge incorporation, and few-shot generalization tasks support the importance of the sleep stage.
-
-Comments:A version of this work has been publicly available from September 2025 on OpenReview
-Subjects:Machine Learning (cs.LG); Artificial Intelligence (cs.AI)
-Cite as:[arXiv:2606.03979](https://arxiv.org/abs/2606.03979) [cs.LG]
-(or [arXiv:2606.03979v1](https://arxiv.org/abs/2606.03979v1) [cs.LG] for this version)
-[https://doi.org/10.48550/arXiv.2606.03979](https://doi.org/10.48550/arXiv.2606.03979)
-
-arXiv-issued DOI via DataCite (pending registration)
-
-## Submission history
-
-From: Ali Behrouz [[view email](https://arxiv.org/show-email/8d432d4f/2606.03979)] 
-
-**[v1]** Tue, 2 Jun 2026 17:56:55 UTC (2,961 KB)
-
+> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。

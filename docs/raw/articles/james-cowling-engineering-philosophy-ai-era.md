@@ -1,11 +1,18 @@
 ---
-source_url: https://mp.weixin.qq.com/s/ZKfpdzXxN2fqANN-Nzkcjw
-ingested: 2026-06-04
-sha256: a4fa73167db927b4d6fd085dba040bbce2ad370ea3582bf32c11d9bab0d23b26
-type: raw-article
-tags: [article, james-cowling, dropbox, convex, engineering-philosophy, ai-era, coding-vs-engineering, wisdom, system-bias, simple-systems, career-advice]
+type: source-card
+title: "James Cowling AI 时代工程哲学访谈（Dropbox 前首席工程师 / Convex CTO）"
+source: "mp.weixin.qq.com"
+author: "未标注作者；来源机构见 source"
+source_url: "https://mp.weixin.qq.com/s/ZKfpdzXxN2fqANN-Nzkcjw"
+published: "未标注"
+collected: "2026-06-04"
+license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
 ---
 
 # James Cowling AI 时代工程哲学访谈（Dropbox 前首席工程师 / Convex CTO）
 
-[正文见 entity 页面：[[entities/james-cowling-engineering-philosophy-ai-era]]]
+## 原创摘要
+
+这份来源卡片记录一篇围绕“James Cowling AI 时代工程哲学访谈（Dropbox 前首席工程师 / Convex CTO）”的第三方资料，主题标签为article、james-cowling、dropbox。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
+
+> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。

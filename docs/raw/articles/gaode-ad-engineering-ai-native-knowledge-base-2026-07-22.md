@@ -1,50 +1,18 @@
 ---
+type: source-card
 title: "高德广告工程的 AI Native 知识库体系"
-source_url: "https://mp.weixin.qq.com/s/1d9LDoD2SOcEZ19mDwiE-Q"
-source_account: "高德技术"
+source: "mp.weixin.qq.com"
 author: "信息业务中心"
-ingested: 2026-07-22
-sha256: b379e261ad796992e44b30e3b3f5710a2b8316406124fa7689ee46ae4992db8e
-type: raw-article
-tags: [knowledge-base, ai-native, retrieval, intent-routing, knowledge-domain, gaode, enterprise-rag]
-review_value: 7
-review_confidence: 8
-review_vxc: 56
-review_decision: raw-only
+source_url: "https://mp.weixin.qq.com/s/1d9LDoD2SOcEZ19mDwiE-Q"
+published: "未标注"
+collected: "2026-07-22"
+license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
 ---
 
 # 高德广告工程的 AI Native 知识库体系
 
-> **来源**：高德技术，2026-07-22
-> **评分**：v=7, c=8, v×c=56 → **Raw only**（高质量工程实践，主题较垂直）
+## 原创摘要
 
-## 四层架构
+这份来源卡片记录一篇围绕“高德广告工程的 AI Native 知识库体系”的第三方资料，主题标签为knowledge-base、ai-native、retrieval。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
 
-| 层 | 职责 |
-|---|------|
-| 接入层 | 统一知识入口，以 Skill 形态嵌入各类研发 Agent |
-| 能力层 | Skill 内核：意图识别→路由→执行→审计回执 |
-| 知识层 | 六个并列知识域（联邦演进），通过统一跨层映射相互引用 |
-| 反馈层 | 知识持续演进：纠错/案例沉淀/规约同步/效果回归 |
-
-## 六域知识模型
-
-按 Agent 提问的"知识类型"切分：需求问"是什么/像不像"，开发问"在哪/怎么实现"，运维问"为什么/怎么排"。每类问题落一个域。
-
-三条贯穿约束：索引契约、域间映射、时效标记。
-
-## 检索流程
-
-1. **意图识别**：声明式 registry + LLM 判定 + 置信度兜底
-2. **索引正文优先**：节点名是代码标识符与自然语言不匹配，优先读取正文语义匹配
-3. **直达短路 + 并发召回**：高置信直达索引文档，否则结构化+向量并发检索
-4. **意图加权重排**：按"流程阶段×域"优先级矩阵重排，避免"是什么"答"怎么做"
-
-## 与朴素向量 RAG 的差异
-
-| 场景问题 | 纯向量 RAG 局限 | 本方案 |
-|---------|----------------|--------|
-| 节点名是代码标识符 | chunk 相似度对不上 | 索引正文语义匹配 + 向量补漏 |
-| 调用方要完整上下文 | 抛 top-k 碎片 | 回溯至完整权威文档 |
-| 同名跨域 | top1 易落错域 | 阶段×域加权重排，消歧不删域 |
-| 导航查不一定需向量 | 每次走向量有成本 | 命中索引正文可直达 |
+> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。

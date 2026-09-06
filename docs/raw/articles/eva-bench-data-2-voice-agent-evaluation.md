@@ -1,38 +1,18 @@
 ---
+type: source-card
 title: "EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios"
+source: "huggingface"
+author: "ServiceNow AI"
 source_url: "https://huggingface.co/blog/ServiceNow-AI/eva-bench-data"
-author: ServiceNow AI
-publish_date: 2026-06-04
-ingested: 2026-06-07
-sha256: 85d2d49bb2fc40517604a2517c634515b59f9a460f417c1c9e9aaf60a5cf4f4d
-tags: [servicenow, eva-bench, voice-agent, benchmark, agent-evaluation]
-source: huggingface
-review_value: 7
-review_confidence: 6
-review_stars: 4
+published: "未标注"
+collected: "2026-06-07"
+license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
 ---
 
 # EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios
 
-> 原文存档：[[raw/articles/eva-bench-data-2-voice-agent-evaluation|原文存档]] ^[raw/articles/eva-bench-data-2-voice-agent-evaluation.md]
+## 原创摘要
 
-## 核心内容
+这份来源卡片记录一篇围绕“EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios”的第三方资料，主题标签为servicenow、eva-bench、voice-agent。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
 
-ServiceNow AI 发布的语音 Agent 评估基准 EVA-Bench Data 2.0：
-
-- **3 个领域**：HR / 机票改签 / 客户支持 等垂直领域
-- **121 个工具**：覆盖真实业务场景的工具调用
-- **213 个场景**：复杂多步骤对话评估
-- **目标**：解决语音 Agent 在垂直领域的评估缺口
-
-## 评分依据
-
-- v=7: ServiceNow 官方发布，针对语音 Agent 垂直领域评估的实用 benchmark
-- c=6: 来源可信（ServiceNow AI），但内容被截断，无法完整评估方法论
-- stars=4: 独特技术洞察（垂直领域语音 Agent 评估 + 121 工具 + 213 场景规模）
-- v×c=42 < 49，但 stars≥4 → 入库（独特技术洞察规则）
-
-## 上线状态
-
-- 官方链接：https://huggingface.co/blog/ServiceNow-AI/eva-bench-data
-- 部署：Hugging Face Datasets
+> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。

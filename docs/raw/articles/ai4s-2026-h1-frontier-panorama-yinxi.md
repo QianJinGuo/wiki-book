@@ -1,9 +1,18 @@
 ---
-source_url: https://mp.weixin.qq.com/s/lMs5YxHi7CDSL86jQ3IRLg
-ingested: 2026-06-04
-sha256: 37a96601dc6104ef03f3dfe4144dc18f04afc9e9089c974d8139ef44a347ea02
-type: raw-article
-tags: [article, ai4s, science, foundation-model, autonomous-lab, brain, quantum, climate, life-science, material-science]
+type: source-card
+title: "ai4s-2026-h1-frontier-panorama-yinxi"
+source: "mp.weixin.qq.com"
+author: "未标注作者；来源机构见 source"
+source_url: "https://mp.weixin.qq.com/s/lMs5YxHi7CDSL86jQ3IRLg"
+published: "未标注"
+collected: "2026-06-04"
+license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
 ---
 
-[正文见 entity 页面：[[entities/ai4s-2026-h1-frontier-panorama-yinxi]]]
+# ai4s-2026-h1-frontier-panorama-yinxi
+
+## 原创摘要
+
+这份来源卡片记录一篇围绕“ai4s-2026-h1-frontier-panorama-yinxi”的第三方资料，主题标签为article、ai4s、science。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
+
+> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。

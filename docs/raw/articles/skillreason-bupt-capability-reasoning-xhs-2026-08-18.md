@@ -1,33 +1,18 @@
 ---
+type: source-card
 title: "SkillReason：刷新智能体技能检索性能上限（北邮能力推理内化）"
-source_url: https://www.xiaohongshu.com/explore/6a7b4109000000002201504c
-short_url: https://xhslink.cn/o/7Bc8kPFqSvW
-source: xiaohongshu
-author: 小红书论文解读号
-publish_date: 2026-08-18
-ingested: 2026-08-18
-type: raw-article
-tags: [agent, skill, retrieval, xiaohongshu, paper, reasoning]
-sha256: 74024539de78eb0c73307d89cf206726030a37b30faa640a83c904b468f3b375
-review_value: 6
-review_confidence: 5
+source: "xiaohongshu"
+author: "小红书论文解读号"
+source_url: "https://www.xiaohongshu.com/explore/6a7b4109000000002201504c"
+published: "未标注"
+collected: "2026-08-18"
+license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
 ---
+
 # SkillReason：刷新智能体技能检索性能上限（北邮能力推理内化）
 
-> 小红书解读号对 BUPT (北邮) SkillReason 论文的转述。核心：让检索模型通过两阶段训练内化「能力推理」，应对简短、含糊、未充分说明的「隐式」用户请求的技能检索。
+## 原创摘要
 
-## 问题
-LLM Agent 面对简短、含糊且未充分说明的「隐式」用户请求时，难以准确检索技能。SkillReason 通过两阶段训练，使检索模型内化「能力推理」过程，从高层任务目标中推断出深层能力需求。
+这份来源卡片记录一篇围绕“SkillReason：刷新智能体技能检索性能上限（北邮能力推理内化）”的第三方资料，主题标签为agent、skill、retrieval。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
 
-## 方法：两阶段训练
-1. **教师推理驱动的能力内化（第一阶段）**：引入强力教师模型生成的「能力推理链」作为特权监督信号，通过对比学习、检索分布对齐和语言建模三重目标，强制检索模型训练时学习如何将原始查询映射到深层能力空间——把推理过程「内化」到查询向量表示，而非简单关键词匹配。
-2. **检索引导 GRPO 强化学习优化（第二阶段）**：为解决教师推理路径与小模型能力不匹配的问题，模型探索不同推理轨迹，依据检索结果的「边际增益」获得 reward，鼓励生成最有助于提升检索准确性的推理路径。
-
-## 推理时零开销「思维内化」架构
-训练使用 CoT 增强，但推理阶段模型直接对原始查询编码生成嵌入向量，无需自回归生成 CoT 文本——保留传统向量检索的高效性，同时获得推理增强带来的精度提升。实验证明推理时额外生成 CoT 不能带来显著增益，说明推理能力已成功内化。
-
-## 实验结果
-- 新发布的 SkillReason-Bench 以及 SkillRet、SRA-Bench 上均达 SOTA
-- 0.6B 模型在 Recall@10 上比基线提升 17.56 个百分点，超越 8B 通用嵌入模型
-- 消融：CoT 对比学习和分布对齐对隐式请求提升最显著；阶段二 RL 在模糊请求上贡献额外增量
-- 对 6.1 万个技能库的敏感性分析，证明面对功能重叠的复杂技能生态仍有强区分度与排序稳定性
+> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。

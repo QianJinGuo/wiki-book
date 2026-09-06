@@ -1,19 +1,18 @@
 ---
+type: source-card
 title: "computer use 45x more expensive than structured apis"
-source_url: https://reflex.dev/blog/computer-use-is-45x-more-expensive-than-structured-apis/
-ingested: 2026-05-08
-sha256: a1504bef19904154ebdca14fd3a948489f762cfa2dafc8c143ee1a0fce4b9ee5
-review_value: 8
-review_confidence: 9
-review_recommendation: strong
-review_stars: 4
-source_feed: TLDR AI (newsletter)
-source_published: 2026-04-27
-type: raw-article
-created: 2026-05-10
-updated: 2026-05-10
-tags: [raw-status:stub]
+source: "reflex.dev"
+author: "未标注作者；来源机构见 source"
+source_url: "https://reflex.dev/blog/computer-use-is-45x-more-expensive-than-structured-apis/"
+published: "2026-05-10"
+collected: "2026-05-08"
+license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
 ---
 
-# Computer Use is 45x More Expensive Than Structured APIs
-Palash Awasthi 的系统 Benchmark：Vision agent vs API agent 在同一个 admin panel 任务上的成本对比。Vision agent: 53 steps/551K tokens/~17min。API agent: 8 calls/12K tokens/~20sec（Haiku 仅 8sec/10K tokens）。核心洞察："An agent that must see in order to act will always pay for the seeing."
+# computer use 45x more expensive than structured apis
+
+## 原创摘要
+
+这份来源卡片记录一篇围绕“computer use 45x more expensive than structured apis”的第三方资料，主题标签为raw-status:stub。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
+
+> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。

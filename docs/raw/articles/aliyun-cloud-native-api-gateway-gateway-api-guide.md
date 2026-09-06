@@ -1,30 +1,18 @@
 ---
+type: source-card
+title: "aliyun-cloud-native-api-gateway-gateway-api-guide"
+source: "mp.weixin.qq.com"
+author: "未标注作者；来源机构见 source"
 source_url: "https://mp.weixin.qq.com/s/t1lZeXhRCbZ-3JJXP30w6g"
-tags: [wechat, article, claude, openai, gpt, agent, harness, openclaw]
-ingested: 2026-05-23
-sha256: a0aaf1fc2a3e4967e8bfc3f78113e65b947964f1401778998b67e4fe60f2f5d9
+published: "未标注"
+collected: "2026-05-23"
+license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
 ---
 
-apiVersion: gateway.networking.k8s.io/v1
-kind: HTTPRoute
-metadata:
-  name: httpbin-route
-  namespace: default
-spec:
-  parentRefs:
-    - name: apig-gateway
-  hostnames:
-    - "demo.example.com"
-  rules:
-    - matches:
-        - path:
-            type: PathPrefix
-            value: /
-      backendRefs:
-        - kind: Service
-          name: httpbin
-          port: 80
-```
+# aliyun-cloud-native-api-gateway-gateway-api-guide
 
-## 参考链接
-- [通过云原生 API 网关使用 Gateway API 暴露服务](https://help.aliyun.com/zh/api-gateway/cloud-native-api-gateway/use-cases/expose-services-by-using-the-gateway-api-through-the-cloud-native-api)
+## 原创摘要
+
+这份来源卡片记录一篇围绕“aliyun-cloud-native-api-gateway-gateway-api-guide”的第三方资料，主题标签为wechat、article、claude。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
+
+> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。

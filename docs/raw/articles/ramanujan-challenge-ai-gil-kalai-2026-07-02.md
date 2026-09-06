@@ -1,21 +1,18 @@
 ---
+type: source-card
 title: "The Ramanujan Challenge for AI"
+source: "gilkalai.wordpress.com"
+author: "未标注作者；来源机构见 source"
 source_url: "https://gilkalai.wordpress.com/2026/07/02/the-ramanujan-challenge-for-ai"
-source_type: newsletter
-source_author: Gil Kalai
-publish_date: 2026-07-02
-ingested: 2026-07-04
-sha256: 4712656bbb640afac76ec80212a3ee6a3c57967a555f48c28af424f77e42e83d
+published: "未标注"
+collected: "2026-07-04"
+license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
 ---
 
 # The Ramanujan Challenge for AI
 
-Gil Kalai shares information about The Ramanujan Challenge for AI, a research challenge launched on July 2, 2026 and running until August 1, 2026. The challenge was shared with him by Ido Kaminer.
+## 原创摘要
 
-The challenge consists of ten research-level problems on explicit formulas for mathematical constants, designed to test whether AI systems can move from a concrete formula to a valid proof or symbolic derivation. The rules are designed to make the challenge compatible with formal and code-based systems.
+这份来源卡片记录一篇围绕“The Ramanujan Challenge for AI”的第三方资料，主题标签为相关 AI 工程主题。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
 
-Accepted submissions may be formal proofs, CAS-based derivations, or human-readable proofs accompanied by reproducible code. The goal is not only to test whether AI can find answers, but whether it can produce derivations that can be checked in a structured way.
-
-The challenge page is at ramanujanmachine.com/ramanujan-challenge. A full challenge paper is also available.
-
-→ [[raw/articles/ramanujan-challenge-ai-gil-kalai-2026-07-02|原文存档]]
+> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。

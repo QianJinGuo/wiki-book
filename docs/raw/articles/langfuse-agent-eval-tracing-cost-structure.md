@@ -1,27 +1,18 @@
 ---
+type: source-card
 title: "做Agent评测的几个反直觉感悟"
+source: "www.xiaohongshu.com"
+author: "未标注作者；来源机构见 source"
 source_url: "https://www.xiaohongshu.com/explore/6a14f1040000000008025eea"
-created: 2026-07-02
-updated: 2026-07-02
-type: raw-article
-tags: [xiaohongshu, agent, eval, tracing, langfuse, cost]
-ingested: 2026-07-02
-sha256: 34a58d4810327d426db4f8883947697a2f0a712f9eb5772503885656393950f2
+published: "2026-07-02"
+collected: "2026-07-02"
+license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
 ---
 
 # 做Agent评测的几个反直觉感悟
 
-最近拿 langfuse 做 Evals 遇到了点棘手的事，每次都是从用户的 badcase 入手去做归因，但是这些 bad case 通常都有这样一些特征：极端边界、模型幻觉、技术修复 ROI 高、偶发。而且那么长的 tracing 链条，尽管修好了这些 badcase 还可能产生更高的 token 成本…
+## 原创摘要
 
-然后系统地扒了下 langfuse 源码，梳理了下产品经理看 Tracing 的一些方法论：
+这份来源卡片记录一篇围绕“做Agent评测的几个反直觉感悟”的第三方资料，主题标签为xiaohongshu、agent、eval。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
 
-**Key Takeaways：**
-
-一个 Agent 如果为了给出更稳的答案，每次都做 8 次检索、3 次 rerank、5 次模型调用，demo 会显得很聪明，线上却可能变成不可承受的成本结构。Trace 能把这个问题暴露出来：不是总成本高，而是哪一个 Observation 让成本失控；不是整体慢，而是哪一步阻塞了用户等待。
-
-这会带来一个反直觉判断：**有些质量优化看似提升答案，实际是在破坏产品可规模化性。**
-
-- 把更多上下文塞进 prompt，短期可能提升准确率，但 token 成本和 latency 会上升
-- 引入更强 judge 或更多 self-check，也可能让体验等待变长
-
-Tracing 的价值，是让这些取舍不再停留在架构师脑中，而变成产品评审中可以讨论的线索。
+> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。

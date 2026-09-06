@@ -1,31 +1,18 @@
 ---
-title: Cline releases open-source agent runtime SDK
-sha256: 5f109a1394ae8b47c745cecff1042e7ee1307ad0b4ae1501077ac70ea74a8004
-type: raw-article
-source: newsletter
-source_url: https://www.testingcatalog.com/cline-releases-open-source-agent-runtime-sdk-for-coding-agents/
-url: https://www.testingcatalog.com/cline-releases-open-source-agent-runtime-sdk-for-coding-agents/
-fetcher: jina
-created: 2026-05-15
-updated: 2026-05-15
-tags: [coding-agents, open-source, sdk, cline]
-review_value: 7
-review_confidence: 8
-review_recommendation: neutral
-ingested: 2026-05-16
-review_stars: 4
+type: source-card
+title: "Cline releases open-source agent runtime SDK"
+source: "newsletter"
+author: "未标注作者；来源机构见 source"
+source_url: "https://www.testingcatalog.com/cline-releases-open-source-agent-runtime-sdk-for-coding-agents/"
+published: "2026-05-15"
+collected: "2026-05-16"
+license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
 ---
+
 # Cline releases open-source agent runtime SDK
-> 来源：[[raw/articles/cline-open-source-agent-runtime-sdk|原文存档]]
-## 核心要点
-- Cline 发布开源 Agent 运行时 SDK，Apache 2.0 许可证
-- 模型无关架构，支持 Claude、GPT-4 等多种 LLM 后端
-- 包含 TypeScript 和 Python SDK，提供文档和示例项目
-- 解决 AI 编码工具的长程任务管理和上下文限制问题
-## 技术架构
-- **任务编排**：分层任务分解，复杂请求拆解为可管理的子任务
-- **安全沙箱**：隔离容器执行代码，资源限制和文件系统限制
-- **模型抽象层**：统一 API 抽象不同 LLM 提供商差异
-## 背景
-Cline 是 AI 编码工具领域的竞争者，与 GitHub Copilot 和 Cursor 竞争。其 SDK 基于自身编码 Agent 的实践经验构建，旨在帮助开发者构建能够自主完成复杂软件开发任务的 AI Agent。
-→ [[raw/articles/cline-open-source-agent-runtime-sdk|原文存档]]
+
+## 原创摘要
+
+这份来源卡片记录一篇围绕“Cline releases open-source agent runtime SDK”的第三方资料，主题标签为coding-agents、open-source、sdk。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
+
+> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。

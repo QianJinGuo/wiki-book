@@ -1,27 +1,18 @@
 ---
+type: source-card
 title: "ai-coding-entropy-framework-baidu-geek-2026"
-created: 2026-07-24
-updated: 2026-07-24
-type: raw-article
-tags: [raw, article]
-sha256: 8057913293c1e5f7ef88807d65d324e9781aca2c8543c170ebe3616157a39c01
+source: "mp.weixin.qq.com"
+author: "未标注作者；来源机构见 source"
 source_url: "https://mp.weixin.qq.com/s/yX17UhyHuRo5IVdMKQpJUA"
+published: "2026-07-24"
+collected: "2026-07-24"
+license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
 ---
 
----
-title: "AI Coding 的底层框架：一切优化都是在对抗熵增"
-source: wechat
-source_url: https://mp.weixin.qq.com/s/yX17UhyHuRo5IVdMKQpJUA
-author: Cheer
-feed_name: 百度Geek说
-review_value: 9
-review_confidence: 8
-review_recommendation: must-read
-review_stars: 5
-date: 2026-06-29
-created: 2026-06-29
-updated: 2026-06-29
-tags: [ai-coding, information-theory, entropy, context-engineering, harness-engineering, mutual-information, framework]
-type: article
-provenance_state: extracted
-sha256: 56e7d9ee4f189802f61ba6dc9f4f995bdcc98052c3025f9f7bf576e546107763
+# ai-coding-entropy-framework-baidu-geek-2026
+
+## 原创摘要
+
+这份来源卡片记录一篇围绕“ai-coding-entropy-framework-baidu-geek-2026”的第三方资料，主题标签为raw、article。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
+
+> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。

@@ -1,46 +1,18 @@
 ---
+type: source-card
 title: "peerd: The first AI agent harness native to the browser"
-source_url: "https://github.com/NotASithLord/peerd"
+source: "github.com"
 author: "NotASithLord"
+source_url: "https://github.com/NotASithLord/peerd"
 published: "2026-06-25"
-ingested: "2026-06-25"
-sha256: d6fce90a8e7b41b4e9988b08128f2090539c291a62a5b2329c97cef473abe506
-type: raw-article
+collected: "2026-06-25"
+license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
 ---
 
 # peerd: The first AI agent harness native to the browser
 
-peerd is the first AI agent harness native to the browser. It's a Chrome/Firefox extension that runs a full agent loop in the browser you already use, with your existing tabs and sessions. It reads and drives your pages, spins up sandboxed compute (JS Notebooks, full Linux VMs compiled to WebAssembly, personal client-side apps), and (on the preview channel) shares what it builds over a peer-to-peer WebRTC network built for agent-to-agent communication. BYOK to the model provider of your choice. No backend, no telemetry, no cloud component in the data path.
+## 原创摘要
 
-## Architecture
+这份来源卡片记录一篇围绕“peerd: The first AI agent harness native to the browser”的第三方资料，主题标签为相关 AI 工程主题。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
 
-The browser is its runtime and its security model. It builds on decades of hardened browser platform work:
-
-- **V8 isolates** for sandboxing
-- **WebCrypto** for the vault
-- **WebAuthn passkeys** to unlock it
-- **Opaque-origin iframes** for isolation
-- **Subresource Integrity** for code verification
-
-peerd writes none of its own cryptographic or process-isolation code. The agent that holds your keys never reads a raw page; a disposable runner with no keys and no network does, and its output comes back fenced as untrusted. Every action the agent drives is verified against the live page before it counts as done.
-
-## Key Features
-
-- **Chrome/Firefox extension**: Runs in your existing browser, no separate app needed
-- **Full agent loop**: Reads and drives browser tabs, executes actions
-- **Sandboxed compute**: JS Notebooks, WASM Linux VMs, client-side apps
-- **Peer-to-peer**: WebRTC-based agent-to-agent communication (preview channel)
-- **BYOK**: Bring Your Own Key to any model provider
-- **No backend/telemetry**: Zero cloud dependency in the data path
-
-## Security Model
-
-The key-holder agent never touches raw page content. Instead:
-1. A disposable runner (no keys, no network) reads the page
-2. Its output is fenced as untrusted
-3. Actions are verified against the live page before completion
-4. V8 isolates, WebCrypto, WebAuthn provide the security foundation
-
-## Status
-
-0.x, experimental beta. Initial feature buildout is complete and integrated, but the surface is still moving: breaking changes are likely, storage formats may shift.
+> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。

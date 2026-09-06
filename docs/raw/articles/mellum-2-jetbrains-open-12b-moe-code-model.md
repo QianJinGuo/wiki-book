@@ -1,59 +1,18 @@
 ---
-source_url: https://arxiv.org/abs/2605.31268
-source: arxiv
-arxiv_id: "2605.31268"
+type: source-card
 title: "Mellum2 Technical Report"
-authors: ["Nikiita Pavlichenko et al. (JetBrains)"]
-published: 2026-05-29
-ingested: 2026-06-03
-sha256: c39213220c4437e935e3b1f0ffad49eaba416e505202c0956fe00a78cfa6f2d0
+source: "arxiv"
+author: "未标注作者；来源机构见 source"
+source_url: "https://arxiv.org/abs/2605.31268"
+published: "2026-05-29"
+collected: "2026-06-03"
+license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
 ---
 
 # Mellum2 Technical Report
 
-**Source**: https://arxiv.org/abs/2605.31268 (arXiv:2605.31268 [cs.CL])
-**Authors**: Nikiita Pavlichenko et al. (JetBrains)
-**Published**: 2026-05-29
+## 原创摘要
 
-## Abstract
+这份来源卡片记录一篇围绕“Mellum2 Technical Report”的第三方资料，主题标签为相关 AI 工程主题。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
 
-> We present Mellum 2, an open-weight 12B-parameter Mixture-of-Experts (MoE) language model with 2.5B active parameters per token. Mellum 2 is a general-purpose language model specialized in software engineering, spanning code generation and editing, debugging, multi-step reasoning, tool use and function calling, agentic coding, and conversational programming assistance, and it is the successor to the completion-focused 4B dense Mellum model.
-
-## Architecture Details
-
-- **MoE configuration**: 64 experts, 8 active per token
-- **Grouped-Query Attention**: 4 KV heads
-- **Sliding Window Attention**: applied to three of every four layers
-- **Multi-Token Prediction head**: doubles as both auxiliary pre-training objective AND built-in draft model for speculative decoding
-- **Design constraint**: inference efficiency on commodity GPUs validated each architectural choice via ablation
-
-## Pre-training
-
-- **Token count**: ~10.6 trillion tokens
-- **Curriculum**: 3-phase progressive shift from diverse web -> curated code + math
-- **Optimizer**: Muon
-- **Precision**: FP8 hybrid
-- **Schedule**: Warmup-Hold-Decay with linear decay to zero
-- **Context extension**: 128K via layer-selective YaRN
-
-## Post-training
-
-Two stages:
-1. **Supervised fine-tuning (SFT)**
-2. **RLVR** (Reinforcement Learning with Verifiable Rewards)
-
-Two released variants:
-- **Instruct**: direct answer
-- **Thinking**: emits explicit reasoning trace before final answer
-
-## Benchmark Performance
-
-Competitive with open-weight baselines in the 4B-14B range while running at per-token compute of a 2.5B dense model. Coverage: code generation, math/reasoning, tool use, knowledge, safety.
-
-## License
-
-Apache 2.0 — base, instruct, thinking checkpoints all released.
-
-## Submission History
-
-v1: 2026-05-29 13:01:11 UTC (1,508 KB)
+> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。

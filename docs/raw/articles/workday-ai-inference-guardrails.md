@@ -1,34 +1,18 @@
 ---
+type: source-card
 title: "Workday: Guardrails belong in the inference engine"
-created: 2026-05-01
-updated: 2026-07-24
-type: raw-article
-tags: [raw, article]
-sha256: 9ecb5657262a6994a6b523fcff16e088e8dcea03eaed4125de89d434ee0e02a9
+source: "thenewstack.io"
+author: "未标注作者；来源机构见 source"
 source_url: "https://thenewstack.io/workday-ai-inference-guardrails/"
----
-
-sha256: 7baa2d080369f65e73b07d0ca3b443619aeaebe2714757a880b5be471d370599
----
-title: "Bring it to our shop: Workday's pitch for keeping AI agents close to your most valuable data"
-source_url: "https://thenewstack.io/workday-ai-inference-guardrails/"
-ingested: 2026-06-30
-type: article
-created: 2026-06-30
+published: "2026-05-01"
+collected: "2026-07-24"
+license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
 ---
 
 # Workday: Guardrails belong in the inference engine
 
-Workday, the payroll and HR data platform, has been pursuing AI and agents for a while, but while other businesses may allow a little room for error, getting a payroll run in Workday 99% right is not exactly good enough.
+## 原创摘要
 
-Gabe Monroy, Workday's chief technology officer, tells The New Stack that enterprise AI has to clear this bar before anyone will let it near their HR and finance data. "There aren't many systems that are more critical - or less forgiving - than ones that are dealing with people and money," he says. There's no tolerance for "well, it works most of the time."
+这份来源卡片记录一篇围绕“Workday: Guardrails belong in the inference engine”的第三方资料，主题标签为raw、article。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
 
-At its DevCon developer conference in early June, Workday laid out its plans to clear this correctness bar. The company introduced Agent-Ready Tools, a set of connectors that let agents act across the platform over the Model Context Protocol (MCP), a Developer Agent that lets people build apps and agents on Workday in plain language, and Agent Passport, which tests and verifies agents before they go into production and keeps monitoring them after, with Cisco as the first attestation partner.
-
-Guardrails belong in the inference engine: Monroy spent most of his career in infrastructure and the developer space: at Deis, Microsoft, DigitalOcean, and, most recently, Google. At Google, he focused on building infrastructure for large AI labs to run inference at scale. For someone so focused on infrastructure, coming to Workday might seem like an odd move, but Monroy argues that, at this point, LLM safety is - or at least should be - part of the core infrastructure for enterprises.
-
-"The stakes are higher in the world of Workday and in the world of people and money, and that's something that I was really excited about tackling at Workday specifically - and I do look at it as a core infrastructure," he says. "A lot of what I've been doing in my recent past has been building infrastructure for large AI labs to do inferencing at scale, and what you pick up pretty quickly is that inferencing is probabilistic."
-
-"Inferencing involves prefill and decode, and a whole bunch of really technical machinery in place to stream tokens out to end users, but what is nowhere in that stack today is the concept of native LLM-level enforced guardrails - guardrails that are part of the core inference."
-
-Workday's approach: bring it to our shop - keep AI agents close to your most valuable data rather than letting them operate outside the security boundary.
+> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。

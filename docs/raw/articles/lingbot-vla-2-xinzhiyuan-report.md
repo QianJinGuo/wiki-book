@@ -1,28 +1,18 @@
 ---
+type: source-card
 title: "国产开源新突破！5万小时真机数据，撕开行业最大痛点"
-source_url: "https://mp.weixin.qq.com/s/yTo8BE3tZmuIjdhE6HmK1w"
-source_site: "新智元"
+source: "mp.weixin.qq.com"
 author: "ASI启示录"
-ingested: "2026-07-08"
-sha256: 508580d43b044e75c64dc3fa124cbdb5ba99d65796448e9cecd2c20af379c82f
-type: raw-article
-tags:
-  - lingbot-vla
-  - ant-group
-  - embodied-ai
-  - open-source
-  - robot
-  - vla
+source_url: "https://mp.weixin.qq.com/s/yTo8BE3tZmuIjdhE6HmK1w"
+published: "未标注"
+collected: "2026-07-08"
+license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
 ---
 
-> 蚂蚁灵波 LingBot-VLA 2.0，用同一套模型「驯服」了 20 种机器人构型。
+# 国产开源新突破！5万小时真机数据，撕开行业最大痛点
 
-新智元对 LingBot-VLA 2.0 的报道，侧重产业视角，补充了以下细节：
+## 原创摘要
 
-- V1.0 在 8 卡 GPU FSDP 训练下单卡预训练吞吐率达可观水平，相比主流 VLA 训练代码库实现大幅吞吐提升
-- V2.0 覆盖 17 个国内外品牌
-- 首次将头部、腰部、底盘、灵巧手等自由度纳入统一动作表示框架
-- 强调"身体过热、大脑缺位"的产业矛盾——每一个机器人品牌/硬件构型都是孤立的语言孤岛
-- 不同构型本身是一种泛化挑战
+这份来源卡片记录一篇围绕“国产开源新突破！5万小时真机数据，撕开行业最大痛点”的第三方资料，主题标签为相关 AI 工程主题。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
 
-→ 已有实体：[[entities/lingbot-vla-2-60000h-open-source-vla]]
+> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。

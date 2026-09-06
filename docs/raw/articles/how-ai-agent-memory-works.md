@@ -1,36 +1,18 @@
 ---
+type: source-card
 title: "how ai agent memory works"
-source_url: https://memory.cobanov.dev/
-ingested: 2026-05-08
-sha256: f5ba33ed7a62ca6711d22a97ff882f91dbee9d47bc6e4d32786bed0c6aa730af
-review_value: 8
-review_confidence: 8
-review_recommendation: strong
-review_stars: 4
-source_feed: TLDR AI (newsletter)
-source_published: 2026-05-07
-type: raw-article
-created: 2026-05-10
-updated: 2026-05-10
-tags: []
+source: "memory.cobanov.dev"
+author: "未标注作者；来源机构见 source"
+source_url: "https://memory.cobanov.dev/"
+published: "2026-05-10"
+collected: "2026-05-08"
+license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
 ---
-# How AI Agent Memory Works
-Mert Cobanov 的交互式深度文章，系统讲解 AI Agent 记忆系统。从 stateless LLM 到 stateful agent 的转变，涵盖记忆架构的所有核心概念。
-## 记忆类型
-- **Working Memory**: 上下文窗口（FIFO dropping）
-- **Long-term Memory**: 向量嵌入 + 语义搜索
-- **Episodic Memory**: 特定事件/交互记录
-- **Semantic Memory**: 事实知识
-- **Procedural Memory**: 如何做事的知识
-## 六种架构权衡
-1. Buffer（简单滑动窗口）
-2. Rolling Summary（压缩摘要）
-3. Vector Store（语义检索）
-4. Knowledge Graph（结构化关系）
-5. Hierarchical / MemGPT（层级管理）
-6. Self-editing / Letta（自主编辑）
-## 生产部署考量
-- Read/Write 路径分离
-- 多租户隔离
-- 延迟预算（HOT/WARM/COLD 存储层级）
-- Memory API 设计
+
+# how ai agent memory works
+
+## 原创摘要
+
+这份来源卡片记录一篇围绕“how ai agent memory works”的第三方资料，主题标签为相关 AI 工程主题。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
+
+> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。

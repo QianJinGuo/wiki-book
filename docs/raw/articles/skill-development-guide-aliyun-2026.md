@@ -1,41 +1,18 @@
 ---
-title: 重新定义Skill开发：保姆级教程&一站式开发助手发布
-author: 凜一
-source_url: https://mp.weixin.qq.com/s/FgGVPw0BOZEu5sH1FdrVoQ
-publish_date: 2026-05-18
-ingested: 2026-05-18
-type: raw-article
-sha256: 34f4538a66a6863bc63b12c4c2c73f28cf698a05ff1320318283b7290d65921b
-tags: [skill, agent, aone, aliyun, tutorial]
+type: source-card
+title: "重新定义Skill开发：保姆级教程&一站式开发助手发布"
+source: "mp.weixin.qq.com"
+author: "凜一"
+source_url: "https://mp.weixin.qq.com/s/FgGVPw0BOZEu5sH1FdrVoQ"
+published: "未标注"
+collected: "2026-05-18"
+license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
 ---
+
 # 重新定义Skill开发：保姆级教程&一站式开发助手发布
-## 文章概要
-从入门到蒸馏，20 分钟以内学会创建、管理和发布你的第一个 Skill —— 让 AI Agent 真正成为你的超级助手。
-## 核心章节
-### 一、什么是 Skill
-Skill 是一份结构化的指令文档，告诉 AI Agent「在什么场景下、按什么步骤、用什么工具、完成什么任务」。采用渐进式加载策略。
-### 二、Skill 平台与安装
-- 外部平台：skills.sh, ClawHub, SkillsMP
-- 内部平台：Aone Skills, alphashop
-- Aone Copilot, AccioWork, QCoder, 悟空等 Agent 平台的 Skill 使用方式
-### 三、创建你的第一个 Skill
-- 目录结构：SKILL.md + scripts/ + references/ + assets/
-- YAML frontmatter：name, description（触发关键）, compatibility, allowed-tools, metadata
-- Markdown 正文：快速开始、参数列表、工作流、错误处理
-### 四、Skill 管理与发布
-- 版本管理：自动基于 Git 生成版本
-- 痛点一：跨平台一致性（三纯净 + 注释隔离 + 三检测）
-- 痛点二：版本管理和更新分发
-- 痛点三：开发和调试效率低（Hot Reload、Symlink）
-### 五、Skill 自我进化
-- Binary Eval 自动打分
-- Reflection Agent 提炼修复 patch
-- 业界方案：Claude Skills 2.0, Binary Evals + Self-Improving Loop, Singularity Claude 等
-### 六、一站式开发助手
-最后介绍了一个一站式 Skill 开发助手 skill-dev-aio。
-## 参考链接
-- [skills.sh](https://www.skills.sh/)
-- [ClawHub](https://clawhub.ai/skills)
-- [SkillsMP](https://skillsmp.com/)
-- [Agent Skills v0.1](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview)
-→ [[entities/skill-development-guide-aliyun-2026|原文存档]]
+
+## 原创摘要
+
+这份来源卡片记录一篇围绕“重新定义Skill开发：保姆级教程&一站式开发助手发布”的第三方资料，主题标签为skill、agent、aone。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
+
+> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。

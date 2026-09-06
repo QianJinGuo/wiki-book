@@ -1,22 +1,18 @@
 ---
-source: rss
-source_url: https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651783185&idx=1&sn=0aab6d93f04e2c543903d6d6a4a98f88
-ingested: 2026-08-29
-feed_name: WeChat-美团技术团队
-source_published: 2026-08-20
-sha256: 4eff31c7354f7569b44973781566549617c309d48a14a059337f0933e2bb8c2a
+type: source-card
+title: "美团搜索30llm-语义表征在排序模型的探索与应用"
+source: "rss"
+author: "未标注作者；来源机构见 source"
+source_url: "https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651783185&idx=1&sn=0aab6d93f04e2c543903d6d6a4a98f88"
+published: "未标注"
+collected: "2026-08-29"
+license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
 ---
 
-------- END ----------
+# 美团搜索30llm-语义表征在排序模型的探索与应用
 
-推荐阅读 
+## 原创摘要
 
-|[美团正式发布 CatPaw：全场景 AI Agent，从个人提效到企业智能化](<https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651783056&idx=1&sn=c5c7f73638bc777077e1b88b6f6acebd&scene=21#wechat_redirect>)
+这份来源卡片记录一篇围绕“美团搜索30llm-语义表征在排序模型的探索与应用”的第三方资料，主题标签为相关 AI 工程主题。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
 
-|[正式开源！美团 LongCat-2.0 同步开放国产卡推理代码](<https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651783022&idx=1&sn=9c28dd11a4d95d5eebbb097e0a1aace0&scene=21#wechat_redirect>)
-
-|[Agent评测漫谈 —— 由浅入深讲解Agent评测](<https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651783112&idx=1&sn=785b0bc4b98c0324a528cb87717f3032&scene=21#wechat_redirect>)
-
-❤️❤️❤️ 如果这篇文章对你有帮助，欢迎大家帮忙点赞、评论，分享给更多的小伙伴。⬇️ 
-
-[跳转微信打开](<https://wechat2rss.xlab.app/link-proxy/?k=dc47a435&r=1&u=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMjM5NjQ5MTI5OA%3D%3D%26mid%3D2651783185%26idx%3D1%26sn%3D0aab6d93f04e2c543903d6d6a4a98f88>)
+> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。

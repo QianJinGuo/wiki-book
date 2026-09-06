@@ -1,38 +1,18 @@
 ---
+type: source-card
 title: "改造 Multica 再让它读懂 AgentWaker"
-source_url: "https://mp.weixin.qq.com/s/8BIwK9If5nBJwEtEbLNE3w"
-source_account: "code2rich"
+source: "mp.weixin.qq.com"
 author: "code2rich"
-ingested: 2026-07-22
-type: raw-article
-tags: [multica, agentwaker, agent-system, role-management, personal-agent, snapshot-plan, runtime]
-review_value: 6
-review_confidence: 5
-review_vxc: 30
-review_decision: raw-only
-sha256: 60705433c0878f3046b4c45c1b4ab850e3d2f87fe6cdf7de8e6c25d93862fe13
+source_url: "https://mp.weixin.qq.com/s/8BIwK9If5nBJwEtEbLNE3w"
+published: "未标注"
+collected: "2026-07-22"
+license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
 ---
 
 # 改造 Multica 再让它读懂 AgentWaker
 
-> **来源**：code2rich（个人公众号）
-> **评分**：v=6, c=5, v×c=30 → **Raw only**
+## 原创摘要
 
-## 核心内容
+这份来源卡片记录一篇围绕“改造 Multica 再让它读懂 AgentWaker”的第三方资料，主题标签为multica、agentwaker、agent-system。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
 
-个人 Agent 系统搭建经验，将 Multica（看板/任务框架）与 AgentWaker（角色定义系统）整合。
-
-### 改造要点
-1. **角色源**：把目录登记到工作区而非上传压缩包，实现版本化管理
-2. **Daemon 扫描**：只识别契约，不执行仓库里的脚本——关注点分离
-3. **快照与计划**：先看变化再决定是否应用（类似 Terraform plan-apply 模式）
-4. **运行时物化**：角色、技能、共享能力和配置各归其位
-5. **.env 管理**：必须参与同步但不能到处可见
-6. **运行与入口**：让角色真正接任务并留下证据
-
-### 两个实验
-1. **微信公众号助手**：目标不是自动群发，而是可靠进入草稿
-2. **小红书助手**：先证明链路真的跑通，不谈"爆款"
-
-### 即页（jpage）角色
-作为"发布前的中间层"，连接 Agent 输出与内容平台。
+> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。

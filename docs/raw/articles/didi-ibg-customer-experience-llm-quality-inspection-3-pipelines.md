@@ -1,11 +1,18 @@
 ---
-source_url: https://mp.weixin.qq.com/s/_wTZKL9U1i4QE2vo5c8oaQ
-ingested: 2026-06-04
-sha256: a036e0a0f8ec5f99dd45dd062a977b542d5e1c9fcd8bfd218fc9ec0716c65a9e
-type: raw-article
-tags: [article, didi, ibg, customer-experience, llm-quality-inspection, multilingual, spanish, portuguese, contact-reason, intent-pipeline, compliance-pipeline, voc-pipeline, enterprise-llm, architecture-over-prompt, data-quality, config-externalization, traceability, semantic-clustering, embedding, tool-use, json-schema]
+type: source-card
+title: "滴滴 IBG 智能客服质检：3 管线（意图/合规/VOC）+ 86%/90%+ 准确率"
+source: "mp.weixin.qq.com"
+author: "未标注作者；来源机构见 source"
+source_url: "https://mp.weixin.qq.com/s/_wTZKL9U1i4QE2vo5c8oaQ"
+published: "未标注"
+collected: "2026-06-04"
+license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
 ---
 
 # 滴滴 IBG 智能客服质检：3 管线（意图/合规/VOC）+ 86%/90%+ 准确率
 
-[正文见 entity 页面：[[entities/didi-ibg-customer-experience-llm-quality-inspection-3-pipelines]]]
+## 原创摘要
+
+这份来源卡片记录一篇围绕“滴滴 IBG 智能客服质检：3 管线（意图/合规/VOC）+ 86%/90%+ 准确率”的第三方资料，主题标签为article、didi、ibg。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
+
+> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。

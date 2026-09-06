@@ -1,20 +1,18 @@
 ---
+type: source-card
 title: "gemma 4 multi token prediction drafters"
-source_url: https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/
-source: web
-ingested: 2026-05-08
-sha256: 76dbfba958beb06a03de02d9d1ceca94d8b94d4ec4151a3176557bff1b031de8
-review_value: 7
-review_confidence: 8
-review_recommendation: worth-reading
-review_stars: 3
-source_feed: TLDR AI (newsletter)
-source_published: 2026-05-05
-type: raw-article
-created: 2026-05-10
-updated: 2026-05-10
-tags: [raw-status:stub]
+source: "web"
+author: "未标注作者；来源机构见 source"
+source_url: "https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/"
+published: "2026-05-10"
+collected: "2026-05-08"
+license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
 ---
 
-# Accelerating Gemma 4: Faster Inference with Multi-Token Prediction Drafters
-Google 为 Gemma 4 发布 MTP drafters，通过 speculative decoding 实现最高 3x 加速。draft 模型共享 target 模型的 KV cache 和 activations。兼容 vLLM、MLX、HuggingFace Transformers。
+# gemma 4 multi token prediction drafters
+
+## 原创摘要
+
+这份来源卡片记录一篇围绕“gemma 4 multi token prediction drafters”的第三方资料，主题标签为raw-status:stub。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
+
+> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。

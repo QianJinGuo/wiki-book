@@ -1,57 +1,18 @@
 ---
+type: source-card
 title: "Introducing @huggingface/kernels: 200+ WebGPU Kernels for Local AI"
+source: "rss"
+author: "未标注作者；来源机构见 source"
 source_url: "https://huggingface.co/blog/webgpu-kernels"
-ingested: 2026-09-02
-feed_name: Hugging Face Blog
-source_published: 2026-09-01
-source: rss
-content_source: github-raw
-sha256: 83cf295a01f33c4b8b1b99002b2da7f0ca1d23c4fa748e7650376ec4521d53e4
+published: "未标注"
+collected: "2026-09-02"
+license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
 ---
 
 # Introducing @huggingface/kernels: 200+ WebGPU Kernels for Local AI
 
-Hugging Face WebAI 团队发布 @huggingface/kernels — 一个用于从 Hub 加载和运行优化 WebGPU kernel 的最小化库，包含初始 207 个 kernel。
+## 原创摘要
 
-## TL;DR
+这份来源卡片记录一篇围绕“Introducing @huggingface/kernels: 200+ WebGPU Kernels for Local AI”的第三方资料，主题标签为相关 AI 工程主题。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
 
-- **207 WebGPU kernels**，发布在 webgpu-kernels 组织中，Apache-2.0 许可
-- **JavaScript 加载器** `@huggingface/kernels`，直接从 Hub 下载、准备和运行 kernel
-- **显式合约和可复现证据**：每个 kernel 包含 manifest、正确性测试、基准测试和 WGSL shader 模板
-- **Fleet**，浏览器端基准测试工具，众包跨设备正确性和性能证据
-
-## Why start with kernels?
-
-浏览器中运行的模型最终变成一系列 GPU 操作。WebGPU 通过可移植 API 提供这些操作，WGSL 提供执行着色器的通用语言。但可移植不等于高性能 — 两个着色器可以实现相同操作但性能完全不同。Workgroup size、内存访问模式、向量化、数据类型和融合策略都影响性能。
-
-Kernel 是快速浏览器推理的基础层。高级运行时只能和它们调度的操作一样高效。
-
-## A kernel repository, not just a shader
-
-每个 kernel 有独立仓库和 kernel card，包含：
-- `manifest.json` — 操作合约
-- `metadata.json` — 标识和出处
-- `test.json` — 正确性用例
-- `bench.json` — 基准用例
-- `*.wgsl.jinja` — 参数化 WGSL 实现
-
-## Performance
-
-与 ORT WebGPU 对比（Apple M4，809 个用例）：几何平均 **2.57x**，中位数 **1.90x**。629 胜 / 176 负 / 4 平。
-
-| 操作 | 用例数 | HF Kernel | ORT WebGPU | 加速 |
-|------|:------:|:---------:|:----------:|:----:|
-| Add | 5 | 0.064ms | 0.227ms | 3.52x |
-| MatMul | 29 | 0.115ms | 0.131ms | 1.14x |
-| Softmax | 12 | 0.114ms | 0.240ms | 2.11x |
-| LayerNorm | 6 | 0.061ms | 0.135ms | 2.22x |
-
-极端案例：Bilinear Einsum 比 ORT 快 10,000x，CumSum 快 301x。
-
-## Fleet
-
-浏览器端众包测试：每次运行贡献私有证据，帮助发现设备故障、比较变体、改进选择规则。
-
-## Building a shared foundation
-
-207 kernel 是起点。与 ONNX Runtime 团队合作上游化改进，支撑更广泛的 WebAI 生态。
+> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。

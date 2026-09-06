@@ -1,26 +1,18 @@
 ---
-source: newsletter
-source_url: https://arxiv.org/abs/2608.05000
-ingested: 2026-08-08
-sha256: 910de3c34a051ba2519b4a622f4bb77c251b8921b274d362fc174b5c09ae0da3
+type: source-card
+title: "Towards Physics of Multimodal Pretraining: Knowledge Flow, Modality Synergy, Early Unification, and Recipes"
+source: "newsletter"
+author: "未标注作者；来源机构见 source"
+source_url: "https://arxiv.org/abs/2608.05000"
+published: "未标注"
+collected: "2026-08-08"
+license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
 ---
 
 # Towards Physics of Multimodal Pretraining: Knowledge Flow, Modality Synergy, Early Unification, and Recipes
 
-**arXiv: 2608.05000 [cs.CV]** — Submitted 5 Aug 2026 (v1), revised 6 Aug 2026 (v2)
-**Authors**: Junlin Han, Shengbang Tong, David Fan, Minghao Chen, Philip Torr, Filippos Kokkinos, Mike Lewis
-**Subjects**: Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG); Multimedia (cs.MM)
+## 原创摘要
 
-## Abstract
+这份来源卡片记录一篇围绕“Towards Physics of Multimodal Pretraining: Knowledge Flow, Modality Synergy, Early Unification, and Recipes”的第三方资料，主题标签为相关 AI 工程主题。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
 
-Vision offers a critical axis for advancing foundation models, driving a shift towards natively unified multimodal pretraining. Despite this momentum, the design space and the fundamental mechanisms of how modalities interact during unified training remain underexplored. We provide empirical clarity through a systematic exploration of multimodal pretraining. Our controlled experiments on both synthetic and large-scale real-world datasets yield four key insights into the physics of multimodal pretraining:
-
-**(i) Knowledge Flow**: We disentangle how language, visual understanding, and visual generation transfer knowledge across modalities, revealing distinct patterns of influence and asymmetry;
-
-**(ii) Synergy vs. Competition**: We show that data "complexity" largely determines whether modalities are synergistic, identify architectural choices that promote synergy — such as shared attention and normalization with modality-specific feed-forward layers — and find that these behaviors generalize across different visual tokenizer designs;
-
-**(iii) Early Unification**: Unifying modalities from the very early stages and training them jointly is shown to be more effective than late alignment or sequential training. This process uncovers a *vision laziness* phenomenon, where delayed integration leads models to rely on language priors;
-
-**(iv) Recipes**: We derive efficient pretraining recipes that achieve strong generative performance using only 5% of the compute budget.
-
-These core findings are subsequently validated at scale by training multiple 13.5B MoE models on 2T tokens. We hope this study provides a principled foundation for understanding and scaling multimodal pretraining.
+> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。

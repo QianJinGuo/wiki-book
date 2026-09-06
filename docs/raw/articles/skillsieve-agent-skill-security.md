@@ -1,13 +1,18 @@
 ---
-title: SkillSieve：Agent Skill 安全检测三层框架
-source_url: https://mp.weixin.qq.com/s/m-MYU5iFRF1ze8NeMW0_aQ
-publish_date: 2026-05-01
-tags: [wechat, article, deepseek, agent, llm, openclaw]
-review_value: 7
-review_confidence: 7
-review_recommendation: neutral
-ingested: 2026-05-16
-sha256: 58e30e534a0004e827f4f12c5dd13e359042779d2681383fa16c90826d6775a0
+type: source-card
+title: "SkillSieve：Agent Skill 安全检测三层框架"
+source: "mp.weixin.qq.com"
+author: "未标注作者；来源机构见 source"
+source_url: "https://mp.weixin.qq.com/s/m-MYU5iFRF1ze8NeMW0_aQ"
+published: "未标注"
+collected: "2026-05-16"
+license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
 ---
 
-*本文基于模安局（微信公众号）文章整理，原文链接：https://mp.weixin.qq.com/s/m-MYU5iFRF1ze8NeMW0_aQ*
+# SkillSieve：Agent Skill 安全检测三层框架
+
+## 原创摘要
+
+这份来源卡片记录一篇围绕“SkillSieve：Agent Skill 安全检测三层框架”的第三方资料，主题标签为wechat、article、deepseek。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
+
+> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。

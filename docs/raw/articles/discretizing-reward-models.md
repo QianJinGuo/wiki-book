@@ -1,42 +1,18 @@
 ---
+type: source-card
 title: "Discretizing Reward Models"
-created: 2026-05-01
-updated: 2026-07-24
-type: raw-article
-tags: [raw, article]
-sha256: 80bbbc437b13618a5dadbf44f14ced1cab642afbade5f2231abfbf61a25a5916
+source: "arxiv.org"
+author: "未标注作者；来源机构见 source"
 source_url: "https://arxiv.org/abs/2606.21795"
----
-
-sha256: e08d60ab3e144ad825821f33eefd79b45cb2dcaa5abb385279f4929f675b3f44
----
-title: "Discretizing Reward Models"
-source_url: "https://arxiv.org/abs/2606.21795"
-type: article
-created: 2026-06-30
-ingested: 2026-06-30
+published: "2026-05-01"
+collected: "2026-07-24"
+license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
 ---
 
 # Discretizing Reward Models
 
+## 原创摘要
 
-Published Time: Tue, 23 Jun 2026 01:10:53 GMT
+这份来源卡片记录一篇围绕“Discretizing Reward Models”的第三方资料，主题标签为raw、article。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
 
-Markdown Content:
-[View PDF](https://arxiv.org/pdf/2606.21795)[HTML (experimental)](https://arxiv.org/html/2606.21795v1)
-
-> Abstract:Despite their widespread use, the role of reward models in shaping reinforcement learning is poorly understood. Reward models offer a tempting promise: they automatically estimate response quality in the absence of verifiers or human judges. Unlike "verifiable rewards" which typically produce binary scores, reward models typically produce continuous scores, allowing them to be sensitive to fine-grained differences in responses. However, we show this apparent strength is a serious weakness: many popular reward models are oversensitive, assigning different scores to equally good responses. Theoretically, we show that seemingly perfect reward models can be highly oversensitive; empirically, this oversensitivity can lead to bad policies. In place of existing notions of "reward model accuracy," we propose evaluating reward models using distinct measures of "discriminative ability" and "specificity" (the complement of oversensitivity). As a solution, we describe a training-free algorithm that uses Monte Carlo dropout on any neural reward model to produce discrete reward clusters. Theoretically, we prove there exist discretizations that reduce oversensitivity at minimal expense of discriminative ability; empirically we show, in both controlled and natural RL settings, that discretizing rewards leads to less reward hacking and better policies than training on the original rewards.
-
-Subjects:Machine Learning (cs.LG)
-Cite as:[arXiv:2606.21795](https://arxiv.org/abs/2606.21795) [cs.LG]
-(or [arXiv:2606.21795v1](https://arxiv.org/abs/2606.21795v1) [cs.LG] for this version)
-[https://doi.org/10.48550/arXiv.2606.21795](https://doi.org/10.48550/arXiv.2606.21795)
-
-arXiv-issued DOI via DataCite
-
-## Submission history
-
-From: Vijay Viswanathan [[view email](https://arxiv.org/show-email/e8f2158f/2606.21795)] 
-
-**[v1]** Fri, 19 Jun 2026 23:13:59 UTC (523 KB)
-
+> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。

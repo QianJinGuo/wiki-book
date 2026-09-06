@@ -1,29 +1,18 @@
 ---
+type: source-card
 title: "The 2026 State of AI Traffic & Cyberthreat Benchmark Report"
-source_url: "https://www.humansecurity.com/2026-state-of-ai-traffic-cyberthreat-benchmark-report/"
+source: "www.humansecurity.com"
 author: "HUMAN Security"
-feed_name: "HUMAN Security Blog"
-publish_time: "2026-06-02"
-ingested: "2026-06-02"
-sha256: a1c3462bb55aa58ab8b2c84df1aa8e695866ee4648ea70ef27483737f80f86b5
-tags: [security, ai, cyberthreat, benchmark]
-type: raw-article
+source_url: "https://www.humansecurity.com/2026-state-of-ai-traffic-cyberthreat-benchmark-report/"
+published: "未标注"
+collected: "2026-06-02"
+license: "未发现可验证的再发布许可证；本仓库仅保留来源卡片"
 ---
 
-# The 2026 State of AI Traffic & Cyberthreat Benchmark Report - HUMAN Security
+# The 2026 State of AI Traffic & Cyberthreat Benchmark Report
 
-Published: 2026-06-02
+## 原创摘要
 
-HUMAN Security today announced its 2026 State of AI Traffic & Cyberthreat Benchmark Report, analyzing AI-driven traffic manipulation and cyberthreat landscape.
+这份来源卡片记录一篇围绕“The 2026 State of AI Traffic & Cyberthreat Benchmark Report”的第三方资料，主题标签为security、ai、cyberthreat。完整事实、论据、上下文与原文请以原始来源为准；公开仓库不保存正文副本。
 
-## Key Findings
-
-- AI-Powered Bot Traffic: Bot networks use LLMs to evade detection
-- Credential Stuffing Evolution: AI-assisted attacks more targeted  
-- Ad Fraud Sophistication: AI generates fake user behavior
-- Defense Automation: AI-powered defense systems emerge
-
-## Industry Impact
-
-Actionable insights for CISOs and fraud teams. Benchmark data from 100+ organizations.
-
+> 公开版仅保留来源信息和原创摘要，不替代原始来源的阅读。
