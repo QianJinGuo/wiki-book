@@ -428,7 +428,7 @@ Harness Engineering 对效率的定义更接近**软件工程的总成本**：�
 ---
 
 ## 相关实体
-- [Harness Engineering](066-harness-engineering.html)
+- [Harness Engineering](061-harness-engineering.html)
 - [Fudan Peking Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fudan-peking-ahe-agentic-harness-engineering.md)
 - [Fudan Agentic Harness Engineering Ahe Gpt54 7Points](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fudan-agentic-harness-engineering-ahe-gpt54-7points.md)
 - [Harness Engineering Alibaba Java Case Study](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-alibaba-java-case-study.md)

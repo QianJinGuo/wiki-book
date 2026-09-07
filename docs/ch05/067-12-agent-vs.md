@@ -101,7 +101,7 @@ Claude Code 实现：MEMORY.md（索引）→ memory/（分类文件）→ 磁�
 
 ## 相关实体
 
-- [Harness Engineering](066-harness-engineering.html)
+- [Harness Engineering](061-harness-engineering.html)
 - [Claude Code Agentic Harness 设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-agentic-harness-design-patterns.md)
 - [Harness Engineering Core Patterns](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-core-patterns.md)
 - [fudan-peking AHE](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fudan-peking-ahe-agentic-harness-engineering.md)

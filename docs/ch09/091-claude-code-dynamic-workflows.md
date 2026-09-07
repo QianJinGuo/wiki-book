@@ -122,7 +122,7 @@ Dynamic Workflows 消耗更多 token——多个 subagent 各有独立上下文�
 ## 相关实体
 
 - [Claude Code Dynamic Workflows（已有合并实体）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-dynamic-workflows-multi-agent-orchestration.md)
-- [Embabel](../ch07/013-embabel.html)
+- [Embabel](../ch07/014-embabel.html)
 - [扣子 3.0](https://github.com/QianJinGuo/wiki-public/blob/main/entities/coze-3-0-collaboration-system.md)
 - [Meta Skill](../ch07/041-meta-skill.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)

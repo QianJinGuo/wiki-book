@@ -55,7 +55,7 @@ Loop Engineering 不是 Harness 的替代品，而是 Harness 之上的编排层
 
 - [Agent Harness Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture.md)
 - [Claude Code 深度分析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-20000-char-source-analysis.md)
-- [Harness Engineering](066-harness-engineering.html)
+- [Harness Engineering](061-harness-engineering.html)
 - [Agent Self-Improvement](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-self-improvement-six-mechanisms.md)
 
 → [原文存档](https://mp.weixin.qq.com/s/vmGx9IELbWgKZqHm-M3G5w)

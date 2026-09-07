@@ -438,7 +438,7 @@ Amodei 政策对 AI 从业者的启示：
 > -> [GitLab employees are the latest to face layoffs limbo. Read the CEO's memo about restructuring 'openly.'](https://www.businessinsider.com/gitlab-layoffs-memo-2026-5)
 ## 相关实体
 
-- [iii.dev](ch01/464-iii-dev.html)
+- [iii.dev](ch01/470-iii-dev.html)
 
 ## 核心要点
 - **裁员规模**：未公布具体人数，截至 2026 年 1 月公司有 2,580 名员工
@@ -631,9 +631,9 @@ Hugging Face + NVIDIA NIM 双渠道部署反映了当前企业 AI 落地的两�
 ## 相关实体
 - [Nvidia Nemotron 3 Agents Rag Voice Safety](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-nemotron-3-agents-rag-voice-safety.md)
 - [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-nemotron-3-ultra-sagemaker-jumpstart-moe-agentic.md)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/042-nvidia-secure-local-agent-nemoclaw-openclaw.html)
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/053-nvidia-secure-local-agent-nemoclaw-openclaw.html)
 - [Fine Tuning Cosmos](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tuning-cosmos.md)
-- [Tokenspeed Agentic Inference Engine](ch04/268-tokenspeed-agentic-inference-engine.html)
+- [Tokenspeed Agentic Inference Engine](ch04/273-tokenspeed-agentic-inference-engine.html)
 
 - [How To Automate Ai Model Documentation With The Nvidia Mcg T 806Efb](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-to-automate-ai-model-documentation-with-the-nvidia-mcg-t-806efb.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
@@ -1281,7 +1281,7 @@ Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反�
 - [Karpathy Vibe Coding](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-to-agentic-engineering.md) —— Karpathy 原始概念出处
 - [Willison Vibe Coding Convergence](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vibe-coding-agentic-engineering-convergence-simon-willison.md) —— Willison 的同主题回应
 - [Agent Skill 编写指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing-guide.md) —— 通用 skill 格式
-- [Agentic Design System 演化](ch01/008-agentic-design-system-from-chatbot-to-orchestration.html)
+- [Agentic Design System 演化](ch01/007-agentic-design-system-from-chatbot-to-orchestration.html)
 - → [原文存档](https://mp.weixin.qq.com/s/4_9q9TrkVyE5a4jCfTrNgg)
 
 ## 深度分析

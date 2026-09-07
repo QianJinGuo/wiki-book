@@ -187,7 +187,7 @@ MiniCPM5-1B 的特殊之处：
 [Ai2](https://www.allenai.org/)
 
 ## 相关实体
-- [Stochastic Parrot Thought Experiment](ch01/160-stochastic-parrot-thought-experiment.html)
+- [Stochastic Parrot Thought Experiment](ch01/179-stochastic-parrot-thought-experiment.html)
 - [While Breathless In Stodgy Viridian](https://github.com/QianJinGuo/wiki-public/blob/main/entities/while-breathless-in-stodgy-viridian.md)
 - [Aws Grpo Rlvr Sagemaker Math Reasoning](ch11/183-aws-grpo-rlvr-sagemaker-math-reasoning.html)
 - [Ai True Moat Not Llm But Organization](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-true-moat-not-llm-but-organization.md)
@@ -343,7 +343,7 @@ V4 的实现用激进前 8 步 + 温和后 2 步做精度平衡，这个工程�
 - → [ds4.c — DeepSeek V4 本地推理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ds4c-deepseek-v4-antirez.md)
 
 ## 相关实体
-- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](ch01/322-deepseek-v4.html)
+- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](ch01/427-deepseek-v4.html)
 
 - [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-v4-pro-vs-claude.md)
 - [Redis之父下场，给DeepSeek V4单独造了一台推理引擎](https://github.com/QianJinGuo/wiki-public/blob/main/entities/redis之父下场给deepseek-v4单独造了一台推理引擎.md)
@@ -438,7 +438,7 @@ NVIDIA 在 Nemotron 3 Ultra（5,500 亿参数）上使用 NVFP4 完成预训练�
 ## 相关实体
 
 - [AWS GRPO RLVR SageMaker](ch11/183-aws-grpo-rlvr-sagemaker-math-reasoning.html) — AWS 后训练栈
-- [Foundation Model Building Blocks](ch03/026-foundation-model-building-blocks.html) — 通用基础组件
+- [Foundation Model Building Blocks](ch03/027-foundation-model-building-blocks.html) — 通用基础组件
 - [750B MoE PD 分离推理 EFA vs RoCE](https://github.com/QianJinGuo/wiki-public/blob/main/entities/750b-moe-pd-disaggregation-aws-efa-vs-roce.md) — AWS 上的 MoE 推理对比
 - [Microsoft / GitHub / AWS AI 算力承压](https://github.com/QianJinGuo/wiki-public/blob/main/entities/runtimewire-microsoft-github-aws-ai-capacity-crunch-2026-06.md) — 超大规模算力承压事件
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
@@ -739,7 +739,7 @@ TBA 把采样从训练闭环里解耦出来——这是 LLM RL 后训练数量�
 ## 相关实体
 - [On Policy Distillation Vs Offline Distillation Loster](https://github.com/QianJinGuo/wiki-public/blob/main/entities/on-policy-distillation-vs-offline-distillation-loster.md)
 - [Overcoming Reward Signal Challenges Verifiable Rewards Based Reinforcement Learn](https://github.com/QianJinGuo/wiki-public/blob/main/entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md)
-- [Reinforcing Recursive Language Models Alphaxiv](ch01/379-reinforcing-recursive-language-models-alphaxiv.html)
+- [Reinforcing Recursive Language Models Alphaxiv](ch01/387-reinforcing-recursive-language-models-alphaxiv.html)
 - [Skillos](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skillos.md)
 - [Yann Dubois Openai Post Training Interview](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yann-dubois-openai-post-training-interview.md)
 
@@ -872,7 +872,7 @@ GRPO用相对排序替代PPO的Critic模型，节省30%~50%计算开销，但核
 → [原文存档](https://mp.weixin.qq.com/s/jabnGpTJ8sCc7kBj11pm8A)
 
 - [Token 退化问题：分词器与后训练数据分布失配](https://github.com/QianJinGuo/wiki-public/blob/main/entities/minimax-token-degradation-jiqia.md)
-- [Self Taught Rlvr](ch01/382-self-taught-rlvr.html)
+- [Self Taught Rlvr](ch01/390-self-taught-rlvr.html)
 - [Llm Rl Algorithms Ppo Dpo Grpo Marl Evolution 2026](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026.md)
 - [Slim Cuhk Skill Lifecycle Agentic Rl](https://github.com/QianJinGuo/wiki-public/blob/main/entities/slim-cuhk-skill-lifecycle-agentic-rl.md)
 - [frontier post-training recipe review with finbarr timbers](https://github.com/QianJinGuo/wiki-public/blob/main/entities/finbarr-timbers-frontier-post-training-recipe-review-2026.md)
@@ -945,7 +945,7 @@ Meta-RL with Self-Reflection 的核心洞察是：当前 LLM 的 RL 训练完全
 - RLHF
 - Post-training
 - Agent 记忆系统
-- [Karpathy: Agentic Engineering](ch04/098-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy: Agentic Engineering](ch04/009-karpathy-vibe-coding-agentic-engineering.html)
 - MOC: Evaluation Landscape
 
 ---
@@ -1149,7 +1149,7 @@ Evidence 是 Heidi 微调过的最难模型，也是第一个 agentic 模型。�
 
 - [LLM RL 算法综述](https://github.com/QianJinGuo/wiki-public/blob/main/entities/2026-llm-rl-algorithms-deeplog-imba-ppo-dpo-grpo-marl.md) — DPO 作为本文核心训练方法的算法背景
 - [Amazon Nova Lite 微调](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-nova-lite-fine-tuning-cost-effective-vision-detection-model-tuning-case-and-practice.md) — 另一个垂直领域微调的工程实践
-- [递归强化语言模型](ch01/379-reinforcing-recursive-language-models-alphaxiv.html) — 奖励模型与偏好学习的理论框架
+- [递归强化语言模型](ch01/387-reinforcing-recursive-language-models-alphaxiv.html) — 奖励模型与偏好学习的理论框架
 - [腾讯 Token 经济学](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tencent-token-economics-ai-productivity.md) — AI 模型的成本-质量权衡分析
 
 → [原文存档](https://www.heidihealth.com/blog/clinical-ai-model-fine-tuning)
@@ -1575,7 +1575,7 @@ OpenRubrics 等工作现在专注于规模化生成这些评分标准。这是�
 
 ## 相关实体
 
-- [Self-Taught RLVR](ch01/382-self-taught-rlvr.html) — 自监督 RLVR 训练方法
+- [Self-Taught RLVR](ch01/390-self-taught-rlvr.html) — 自监督 RLVR 训练方法
 - [AWS GRPO RLVR](ch11/183-aws-grpo-rlvr-sagemaker-math-reasoning.html) — AWS 在 SageMaker 上实现的 RLVR
 - [Verifiable Rewards RL](https://github.com/QianJinGuo/wiki-public/blob/main/entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md) — 可验证奖励 RL 的技术细节
 

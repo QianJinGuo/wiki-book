@@ -10,7 +10,8 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐⭐⭐ 专家 | 需ML基础 | 3 |
+| ⭐ 入门 | 零基础可读 | 1 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 2 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 
 ---
@@ -27,7 +28,51 @@ AI 最终要从屏幕走进物理世界。
 
 ---
 
-## Ch18.001 Unitree's IPO Filing: The State of the Robotics Market
+## Ch18.001 NVIDIA Isaac Lab + Amazon SageMaker AI：机器人强化学习训练基础设施（Humanoid RL Scale-up）
+
+> 📊 Level ⭐ | 6.0KB | `entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md`
+
+# NVIDIA Isaac Lab + Amazon SageMaker AI：机器人强化学习训练基础设施（Humanoid RL Scale-up）
+
+> 本页原内容在 2026-09-07 质量闭环中判定为 **thin-0.78**，已按导航页（MOC）重建；
+> 原文备份见 `_archive/hub-rewrite-2026-09-07/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md`，一手来源仍见下方 sources。
+
+## 机制与论文
+- [SFT, RL, and On-Policy Distillation Through a Distributional Lens](https://github.com/QianJinGuo/wiki-public/blob/main/entities/untitled-v2.md) — 分布视角统一SFT/RL/OPD
+- [Zapocalypse: The Attack Chain That Could Have Hijacked Zapier](https://github.com/QianJinGuo/wiki-public/blob/main/entities/zapocalypse-the-attack-chain-that-could-have-hijacked-zapier-20260606.md) — 五步已知模式组合攻击链
+- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md) — 13141字最全科普版
+- [港中文 SLIM：动态技能生命周期管理，arXiv 2605.10923](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cuhk-slim-skill-lifecycle-agentic-rl-arxiv-2605-10923.md) — 技能生命周期研究
+- [Scenethesis（ICLR 2026）英伟达 & 普渡大学用 Agent 闭环实现文生 3D](https://github.com/QianJinGuo/wiki-public/blob/main/entities/iclr-2026-英伟达-普渡大学用agent闭环实现文生3d.md) — Scenethesis四阶段闭环，碰撞率6.1%→0.8%
+- [Introducing 1-bit and Ternary Bonsai Image 4B: Image Generation for Local Devices](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-1-bit-and-ternary-bonsai-image-4b-image-generati-352fe9.md) — 1-bit/ternary量化图像生成规格
+- [Introducing 1-bit and Ternary Bonsai Image 4B: Image Generation for Local Devices](https://github.com/QianJinGuo/wiki-public/blob/main/entities/news-bonsai-image-4b.md) — Bonsai Image 4B量化帕累托外推3664字全版
+- [从零构建大语言模型 —— 读完这篇你就懂了](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-llm-from-scratch-7-chapters-zion.md) — LLM教程七章
+- [Yann LeCun 谈 LLM 不是智能与世界模型 JEPA](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yann-lecun-llm-not-intelligence-jepa.md) — 5738字最全JEPA论证
+
+## 工程实践
+- [Impeccable：把 AI 前端设计变成可检查的工作流 — 33.4k Star 开源项目深度分析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/impeccable-frontend-design-skill-harness-vibecoder.md) — Impeccable四层架构9210字rv9全版
+- [数据级 Harness：架构师 JiaGouX 解读 Anthropic 95% 数据分析与 5 个反直觉边界](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-95pct-data-analysis-jiagoux-data-level-harness-20260606.md) — 数据级harness解读
+- [高德 Marketing AutoResearch：AI Native 营销增长经营托管框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/autoresearch-marketing-growth-amap-ai-native.md) — 营销经营托管
+- [存之有序，治之有矩——Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md) — 写入纪律prompt cache冲突
+- [AgentOps: Operationalize agentic AI at scale with Amazon Bedrock AgentCore](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md) — 四支柱解析版
+- [Anthropic Institute《When AI builds itself》深度解读：AI 进入 AI 研发执行层、瓶颈迁移与研发级 Harness（架构师 JiaGouX）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-institute-when-ai-builds-itself-jiagoux-interpretation.md) — 解读短条borderline
+- [构建无服务器Kiro调度平台：用Kiro CLI + EventBridge + ECS Fargate实现定时AI任务](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建无服务器kiro调度平台用kiro-cli-eventbridge-ecs-fargate实现定时ai任务.md) — 定时AI任务7x24
+- [让 Amazon Quick 操作飞书：构建远程 MCP 服务的设计实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/让-amazon-quick-操作飞书构建远程-mcp-服务的设计实践.md) — MetaTool分层注册设计
+- [Secure AI agents with Policy and Lambda interceptors in Amazon Bedrock AgentCore gateway](https://github.com/QianJinGuo/wiki-public/blob/main/entities/secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz.md) — Cedar策略+Lambda拦截器双模式
+- [Amazon Quick integration with time-series databases for market intelligence using MCP](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-quick-mcp-kdbx-time-series.md) — 集成短条
+- [阿里云 MSE AI 任务调度 + Agent Sandbox：动态休眠/唤醒 OpenClaw Agent 成本下降 90%+](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aliyun-mse-ai-task-scheduling-agent-sandbox-cost-90-percent.md) — 休眠唤醒短条borderline
+- [腾讯云Agent Memory：Mermaid无限画布×上下文卸载](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tencentdb-agent-memory-context-offloading.md) — Mermaid画布上下文卸载
+- [小刘商业 Agent 增强层通用基座](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-xiaolaoliu-business-agent-augmentation-layer-general-base-20260606.md) — 基座+增强层论点短条
+- [Giving your AI a Job Interview](ch11/100-giving-your-ai-a-job-interview.html) — Mollick评估三重困境+三种路径
+- [我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-autoresearch-software-development-niaowo.md) — AutoResearch迁移软开+交叉审核
+
+## 延伸导航
+- [Agent Memory 架构选择的关键决策点是什么？](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-memory-architecture-decision-points.md)
+- [Agent 工程全景指南](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-engineering-guide.md)
+- [MLOps：训练、推理与模型运维全景](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
+
+---
+
+## Ch18.002 Unitree's IPO Filing: The State of the Robotics Market
 
 > 📊 Level ⭐⭐⭐ | 6.8KB | `entities/unitree-ipo-robotics-market.md`
 
@@ -97,7 +142,7 @@ Unitree 计划将 IPO 融资款约 3 亿美元（每年约 1 亿美元）用于 
 
 ---
 
-## Ch18.002 蔚蓝BabyAlpha A3消费级机器狗
+## Ch18.003 蔚蓝BabyAlpha A3消费级机器狗
 
 > 📊 Level ⭐⭐⭐ | 5.2KB | `entities/weilan-babyalpha-a3.md`
 
@@ -142,7 +187,7 @@ Unitree 计划将 IPO 融资款约 3 亿美元（每年约 1 亿美元）用于 
 ## 与现有知识的链接
 - → [原文存档](https://mp.weixin.qq.com/s/YfZ-bvXAmMBO3LFQ6eUPKA)
 - → [Yann LeCun JEPA世界模型](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yann-lecun-jepa-world-model.md) — AMI Labs具身智能方向
-- → [NVIDIA边缘端LLM for机器人](ch01/185-nvidia-edge-first-llms-av-robotics.html) — 英伟达边缘AI方案对比
+- → [NVIDIA边缘端LLM for机器人](ch01/198-nvidia-edge-first-llms-av-robotics.html) — 英伟达边缘AI方案对比
 
 ## 深度分析
 ### 异构计算vs单芯片：架构选择的工程哲学
@@ -182,51 +227,6 @@ Unitree 计划将 IPO 融资款约 3 亿美元（每年约 1 亿美元）用于 
 2. 真实场景部署规模（数据飞轮基础）
 3. 时间壁垒（7年积累的工程经验）
 纯技术背景的团队，即使算法领先，也面临工程化和小规模验证的漫长周期。
-
----
-
-## Ch18.003 NVIDIA Isaac Lab + Amazon SageMaker AI：机器人强化学习训练基础设施（Humanoid RL Scale-up）
-
-> 📊 Level ⭐⭐⭐ | 3.8KB | `entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md`
-
-# NVIDIA Isaac Lab + Amazon SageMaker AI：机器人强化学习训练基础设施（Humanoid RL Scale-up）
-
-## 相关实体
-
-- [farewell ai2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/farewell-ai2.md)
-- [无惧off-policy偏移！bengio团队解绑后训练，大模型rl提速50倍](https://github.com/QianJinGuo/wiki-public/blob/main/entities/trajectory-balance-asynchrony-tba-bengio-papweekly.md)
-- [sft, rl, and on-policy distillation through a distributional](https://github.com/QianJinGuo/wiki-public/blob/main/entities/untitled-v2.md)
-→ [原文存档](https://aws.amazon.com/blogs/machine-learning/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-amazon-sagemaker-ai)
-
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
-## 深度分析
-
-# Scale Robot Reinforcement Learning with NVIDIA Isaac Lab on Amazon SageMaker AI
-Physical AI is moving from research into production.
-
-### 核心观点
-
-1. Robots are increasingly trained in high-fidelity simulation before being deployed to factories, warehouses, and logistics centers, because training in the real world is slow, expensive, and often unsafe, while GPU-accelerated simulation can compress months of learning into hours.
-2. This shifts the challenge to compute.
-3. Reinforcement learning (RL) for complex behaviors like humanoid locomotion on rough terrain is compute-intensive, with single-node training runs stretching from hours to days.
-4. Robotics teams need to iterate quickly during research and also run production-grade, long-horizon training jobs without the operational burden of maintaining compute clusters.
-5. In this post, we show how to train robot policies for the Unitree H1 humanoid with NVIDIA Isaac Lab on Amazon SageMaker AI across two compute options: **Amazon SageMaker HyperPod** and **Amazon SageMaker Training Jobs**.
-
-### 关联实体
-
-- [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](https://github.com/QianJinGuo/wiki-public/blob/main/entities/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md)
-- [Latest Open Artifacts 20 New Orgs New Types Of Models With N](https://github.com/QianJinGuo/wiki-public/blob/main/entities/latest-open-artifacts-20-new-orgs-new-types-of-models-with-n.md)
-- [Fundamentals Large Tabular Model Nexus Is Now Available On A](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fundamentals-large-tabular-model-nexus-is-now-available-on-a.md)
-- [5238213](https://github.com/QianJinGuo/wiki-public/blob/main/entities/5238213.md)
-- [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](https://github.com/QianJinGuo/wiki-public/blob/main/entities/腾讯混元新里程碑hy3-preview-发布开源agent-表现全面提升.md)
-- [Code As Agent Harness Survey](https://github.com/QianJinGuo/wiki-public/blob/main/entities/code-as-agent-harness-survey.md)
-
-## 实践启示
-
-1. **Agent 设计**: 关注控制流与上下文工程的平衡，Harness 约束比模型能力更影响成功率
-2. **可观测性**: Agent 行为调试应优先检查工具定义和上下文质量
-3. **渐进式部署**: 从简单 ReAct 循环起步，逐步引入多 Agent 编排
-4. **验证优先**: 建立完善的测试验证体系，确保 Agent 行为可预测
 
 ---
 

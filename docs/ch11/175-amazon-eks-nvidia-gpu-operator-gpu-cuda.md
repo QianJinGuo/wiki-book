@@ -176,7 +176,7 @@ CUDA workload image nvidia/cuda:12.2.2-runtime-ubuntu22.04
 | 实体 | 焦点 | 与本文关系 |
 |------|------|----------|
 | [Building Blocks For Foundation Model Training And Inference On Aws](https://github.com/QianJinGuo/wiki-public/blob/main/entities/building-blocks-for-foundation-model-training-and-inference-on-aws.md) | AWS 训练/推理基础设施通用构件 | 上层基础设施视角，本文专注 GPU 节点驱动管理 |
-| [Foundation Model Building Blocks](../ch03/026-foundation-model-building-blocks.html) | 训练/inference building blocks | 同上，更上层 |
+| [Foundation Model Building Blocks](../ch03/027-foundation-model-building-blocks.html) | 训练/inference building blocks | 同上，更上层 |
 | [在 Amazon Ec2 Gpu 实例上部署 Nvidia Nemoclaw 以 Amazon Bedrock 作为推理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/在-amazon-ec2-gpu-实例上部署-nvidia-nemoclaw-以-amazon-bedrock-作为推理.md) | Nemoclaw 安全沙箱 + Bedrock 混合推理 | 应用层，本文是底层 driver 管理 |
 | [Kiro Cli Fluentbit Logging Solution Eks S3 Parquet Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kiro-cli-fluentbit-logging-solution-eks-s3-parquet-comparison.md) | EKS 日志采集 + S3 Parquet + Kiro CLI | 同样使用 Kiro CLI 但场景是日志，不是 GPU 运维 |
 | [From Manual To Smart Use Kiro Cli Opensearch Mcp To Make Everyone An Opensearch Expert](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-manual-to-smart-use-kiro-cli-opensearch-mcp-to-make-everyone-an-opensearch-expert.md) | Kiro + OpenSearch MCP | MCP 通用方法论，本文是 GPU + EKS MCP 应用 |
@@ -187,7 +187,7 @@ CUDA workload image nvidia/cuda:12.2.2-runtime-ubuntu22.04
 ## 相关主题
 
 - [Building Blocks For Foundation Model Training And Inference On Aws](https://github.com/QianJinGuo/wiki-public/blob/main/entities/building-blocks-for-foundation-model-training-and-inference-on-aws.md)
-- [Foundation Model Building Blocks](../ch03/026-foundation-model-building-blocks.html)
+- [Foundation Model Building Blocks](../ch03/027-foundation-model-building-blocks.html)
 - [在 Amazon Ec2 Gpu 实例上部署 Nvidia Nemoclaw 以 Amazon Bedrock 作为推理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/在-amazon-ec2-gpu-实例上部署-nvidia-nemoclaw-以-amazon-bedrock-作为推理.md)
 - [Kiro Cli Fluentbit Logging Solution Eks S3 Parquet Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kiro-cli-fluentbit-logging-solution-eks-s3-parquet-comparison.md)
 - [From Manual To Smart Use Kiro Cli Opensearch Mcp To Make Everyone An Opensearch Expert](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-manual-to-smart-use-kiro-cli-opensearch-mcp-to-make-everyone-an-opensearch-expert.md)

@@ -10,10 +10,10 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 3 |
+| ⭐ 入门 | 零基础可读 | 4 |
 | ⭐⭐ 工程师 | 需编程基础 | 1 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 11 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 8 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 7 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 9 |
 
 ---
@@ -88,7 +88,49 @@ AML 首期榜单发布后 48 小时内，GitHub、Hugging Face 及 Twitter/X 等
 
 ---
 
-## Ch06.002 Claude Code Agent Memory Systems — L0~L3 四层记忆方案
+## Ch06.002 Hermes Agent 记忆系统 vs OpenClaw 记忆观
+
+> 📊 Level ⭐ | 5.0KB | `entities/hermes-agent-memory-system.md`
+
+# Hermes Agent 记忆系统 vs OpenClaw 记忆观
+
+> 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.8**，已按导航页（MOC）重建；
+> 原文备份见 `_archive/hub-rewrite-2026-09-07/hermes-agent-memory-system.md`，一手来源仍见下方 sources。
+
+## 机制与论文
+- [AgentScope Java Harness Framework 2.0 — 企业级 Agent 分布式场景的 Harness 实现 (Java 2.0 重大升级)](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentscope-java-harness-framework-enterprise-distributed.md) — AgentScope Java全版
+- [深度拆解 Hermes Agent 记忆系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-memory-system-openclaw-comparison.md) — 记忆成本账四层体系15260字rv10最深版
+- [Hermes Agent Skill 互优化：SkillEvolver × Darwin × EmbodiSkill 4 轮闭环](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-skill-crossover-optimization.md) — SkillEvolver×Darwin×EmbodiSkill互优化13412字
+- [MiroFlow：Deep Research Agent 脚手架 —— 与 Code Agent 的 6 大工程差异](https://github.com/QianJinGuo/wiki-public/blob/main/entities/miroflow-deep-research-agent-harness-mirothinker.md) — Code vs Research Agent 6大工程差异16596字rv10
+- [Hermes Agent 深度解析（阿里云/飞樰）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-deep-dive.md) — 自进化内外双路径+四维工程7934字rv9全版
+- [Context Window Management Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-window-management-comparison.md) — 四框架对比rv9
+- [Agent Harness 上下文管理：工作集视角](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-context-management-working-set.md) — 工作集视角上下文管理
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-prompt-context-harness.md) — 三维度源码：23模块拼装+自适应分块+双层Memory
+- [Hermes Agent 为什么火了？和 OpenClaw 龙虾比一比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-vs-openclaw-comparison.md) — 爱马仕vs龙虾：控制面vs成长型定位对比
+- [AI Coding Agent 记忆系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-coding-agent-memory-system.md) — 分层记忆设计
+- [HiClaw v1.1.0 — Kubernetes 集群部署与 Hermes Worker 运行时](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hiclaw-v110-k8s-hermes-worker.md) — HiClaw K8s Controller-Reconciler架构分析
+- [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-tool-count-trap.md) — 工具税数据与机制
+- [OpenClaw与Hermes源码架构对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-hermes-source-code-agent-architecture-review.md) — 双框架源码对比：OpenClaw四亮点+Hermes四补充
+- [Hermes Agent 爱马仕的三级 memory，到底在记什么？](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-three-layer-memory-architecture-one.md) — 三级memory详解7410字，80% consolidation
+- [Agent 记忆系统的主矛盾：历史增长 vs 临场上下文调度](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-main-contradiction-context-scheduling.md) — 主矛盾框架分析
+
+## 工程实践
+- [Claude Code 源码深度解析（13 核心机制）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-source-deep-dive-warrior.md) — 13机制rv10
+- [Claude Code Openclaw Memory Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-openclaw-memory-comparison.md) — 记忆系统对比rv9
+- [MemOS Hermes 记忆插件](https://github.com/QianJinGuo/wiki-public/blob/main/entities/memos-hermes-plugin.md) — MemOS插件：智能去重+混合检索7225字
+- [Openclaw Multi Agent Team Practice V2](ch04/356-openclaw-multi-agent-team-practice-v2.html) — 七Agent花园团队：专精胜于全能12180字全版
+- [MFS：zilliztech 的 Agent 统一上下文 harness，一套动词打通 20+ 数据源](https://github.com/QianJinGuo/wiki-public/blob/main/entities/zilliztech-mfs-open-tag-claude-tag-shuge-2026.md) — 统一动词文件树寻址
+- [Claude Code 从 Demo 到产线 · 企业 Harness 工程化的 8 道关卡（黄佳/咖哥 CSDN）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-demo-to-production-8-gates-huang-jia-csdn-2026.md) — 8道关卡清单
+- [阿里云 MSE AI 任务调度 + Agent Sandbox：动态休眠/唤醒 OpenClaw Agent 成本下降 90%+](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aliyun-mse-ai-task-scheduling-agent-sandbox-cost-90-percent.md) — 休眠唤醒短条borderline
+- [OpenClaw 多租户系列 #7 — 基于 ECS Fargate + Graviton 的轻量级企业 AI Agent 平台 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-multi-7-ecs-fargate-graviton.md) — ECS变体+双Agent并行+四层隔离
+- [淘宝主播 Agent Harness 工程：六元组框架与直播场景八项实战](https://github.com/QianJinGuo/wiki-public/blob/main/entities/taobao-live-anchor-agent-harness-engineering-2026.md) — harness六元组八项实战
+
+## 延伸导航
+- [Agent 记忆与上下文系统](https://github.com/QianJinGuo/wiki-public/blob/main/moc/memory-context-systems.md)
+
+---
+
+## Ch06.003 Claude Code Agent Memory Systems — L0~L3 四层记忆方案
 
 > 📊 Level ⭐ | 4.2KB | `entities/claude-code-agent-memory-four-levels-analysis.md`
 
@@ -165,7 +207,7 @@ L3 Cognitive    → "Agent 自己管自己的记忆"
 
 ---
 
-## Ch06.003 Powering scientific discovery
+## Ch06.004 Powering scientific discovery
 
 > 📊 Level ⭐ | 4.0KB | `entities/powering-scientific-discovery-byokg-and-graphrag-for-intelli.md`
 
@@ -195,7 +237,7 @@ These challenges collectively create a significant bottleneck in the drug discov
 
 ---
 
-## Ch06.004 MFS：zilliztech 的 Agent 统一上下文 harness，一套动词打通 20+ 数据源
+## Ch06.005 MFS：zilliztech 的 Agent 统一上下文 harness，一套动词打通 20+ 数据源
 
 > 📊 Level ⭐⭐ | 4.5KB | `entities/zilliztech-mfs-open-tag-claude-tag-shuge-2026.md`
 
@@ -260,13 +302,13 @@ Open Tag 是 demo/reference implementation，不是生产安全边界——没�
 
 ## 关联
 
-- [Introducing Claude Tag](ch01/453-introducing-claude-tag.html) — Open Tag 复刻的 Anthropic 范式
+- [Introducing Claude Tag](ch01/460-introducing-claude-tag.html) — Open Tag 复刻的 Anthropic 范式
 - [Anthropic Knowledge Work Plugins 分析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/knowledge-work-plugins-anthropic-source-analysis.md) — Skills 的渐进式披露，MFS 用不同方式解决相同问题
 - [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — MFS 作为 Agent 上下文 harness 的基础设施层
 
 ---
 
-## Ch06.005 Hermes Agent 爱马仕的三级 memory，到底在记什么？
+## Ch06.006 Hermes Agent 爱马仕的三级 memory，到底在记什么？
 
 > 📊 Level ⭐⭐⭐ | 13.6KB | `entities/hermes-agent-three-layer-memory-architecture-one.md`
 
@@ -402,7 +444,7 @@ FTS5 的关键词搜索 + SQLite 的 session 聚合 + parent_session_id 的关�
 ## 相关实体
 
 - [Hermes Agent 三级 Memory 架构解析（One掌柜视角）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-three-layer-memory-one.md) — 同一作者的另一篇分析
-- [AI Agent 记忆系统架构](ch04/107-how-ai-agent-memory-works.html) — Agent 记忆系统的通识性框架
+- [AI Agent 记忆系统架构](ch04/113-how-ai-agent-memory-works.html) — Agent 记忆系统的通识性框架
 - [17种Agent架构演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/17-agent-architectures-evolution.md) — 记忆设计在 Agent 演化中的位置
 
 - [Hermes Agent Core Architecture Self Evolution](https://github.com/QianJinGuo/wiki-public/blob/main/queries/hermes-agent-core-architecture-self-evolution.md)
@@ -432,7 +474,7 @@ FTS5 的关键词搜索 + SQLite 的 session 聚合 + parent_session_id 的关�
 
 ---
 
-## Ch06.006 AI 的形状：Jagged Frontier·Bottleneck·Reverse Salient（Mollick）
+## Ch06.007 AI 的形状：Jagged Frontier·Bottleneck·Reverse Salient（Mollick）
 
 > 📊 Level ⭐⭐⭐ | 12.2KB | `entities/jagged-ai-frontier-mollick.md`
 
@@ -573,7 +615,7 @@ Cochrane 案例的核心教训：追求 100% 自动化往往是错误的目标�
 
 ---
 
-## Ch06.007 Google Open Knowledge Format (OKF) v0.1：AI 知识库通用格式标准 — 让 Markdown 知识库互通
+## Ch06.008 Google Open Knowledge Format (OKF) v0.1：AI 知识库通用格式标准 — 让 Markdown 知识库互通
 
 > 📊 Level ⭐⭐⭐ | 11.7KB | `entities/google-okf-open-knowledge-format-v0-1-2026.md`
 
@@ -773,7 +815,7 @@ OKF 不是要替代 Karpathy Wiki / Obsidian Wiki / GBrain，而是**给它们�
 
 ---
 
-## Ch06.008 CrewAI Cognitive Memory: 5 认知操作的工程化设计
+## Ch06.009 CrewAI Cognitive Memory: 5 认知操作的工程化设计
 
 > 📊 Level ⭐⭐⭐ | 10.6KB | `entities/how-we-built-cognitive-memory-for-agentic-systems.md`
 
@@ -872,7 +914,7 @@ CrewAI 的"不同 agent 访问同一 memory 但有不同 recall 权重"设计是
 
 ## 相关实体
 - [Memory Agent Systems Cobanov](https://github.com/QianJinGuo/wiki-public/blob/main/entities/memory-agent-systems-cobanov.md)
-- [Stripe Sessions 2026 Ai Agents](ch04/181-stripe-sessions-2026-ai-agents.html)
+- [Stripe Sessions 2026 Ai Agents](ch04/187-stripe-sessions-2026-ai-agents.html)
 - [Production Harness 12 Components Framework Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/production-harness-12-components-framework-comparison.md)
 - [Hermes Self Evolution Closed Loop Skill Reuse Winty](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-self-evolution-closed-loop-skill-reuse-winty.md)
 - [Agent Memory Architecture Past Influence Future Ruofei](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture-past-influence-future-ruofei.md)
@@ -883,7 +925,7 @@ CrewAI 的"不同 agent 访问同一 memory 但有不同 recall 权重"设计是
 
 ---
 
-## Ch06.009 企业级AI记忆基质三层架构：事实/交互/行动记忆
+## Ch06.010 企业级AI记忆基质三层架构：事实/交互/行动记忆
 
 > 📊 Level ⭐⭐⭐ | 9.7KB | `entities/enterprise-ai-memory-substrate-three-layer-architecture.md`
 
@@ -965,7 +1007,7 @@ Embedding 擅长文本相似度，但无法处理：
 ## 相关实体
 - [AgentMemory — Coding Agent 本地记忆](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentmemory-coding-agent-local-memory.md) — Agent 记忆工程实践
 - [Hermes Agent 三层 Memory](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-three-layer-memory-one.md) — 工程实现视角
-- [AI Agent 记忆系统架构](ch04/107-how-ai-agent-memory-works.html)
+- [AI Agent 记忆系统架构](ch04/113-how-ai-agent-memory-works.html)
 - [上下文工程：三种 Agent Memory 方案对比实验](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-engineering-three-memory-paradigms.md)
 - [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/karpathy-llm-wiki-v2.md)
 - [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-wiki-obsidian-wiki-gbrain-self-organization-self-evolution.md)
@@ -983,7 +1025,7 @@ Embedding 擅长文本相似度，但无法处理：
 
 ---
 
-## Ch06.010 Building is just the beginning: Introducing Discoverability
+## Ch06.011 Building is just the beginning: Introducing Discoverability
 
 > 📊 Level ⭐⭐⭐ | 8.4KB | `entities/lovable-discoverability-intro.md`
 
@@ -1037,7 +1079,7 @@ Embedding 擅长文本相似度，但无法处理：
 
 ---
 
-## Ch06.011 注意力塌缩与上下文管理
+## Ch06.012 注意力塌缩与上下文管理
 
 > 📊 Level ⭐⭐⭐ | 8.3KB | `entities/attention-collapse-context-management.md`
 
@@ -1112,7 +1154,7 @@ Harness 的本质职责之一是决定"模型在每一步看到什么"——上�
 
 ---
 
-## Ch06.012 AI Context Layer 框架
+## Ch06.013 AI Context Layer 框架
 
 > 📊 Level ⭐⭐⭐ | 8.0KB | `entities/ai-context-layer-kgc-2026.md`
 
@@ -1207,7 +1249,7 @@ Context建设落在数据工程、AI产品、治理三个团队的交叉地带�
 
 ---
 
-## Ch06.013 LLM Wiki 知识管理
+## Ch06.014 LLM Wiki 知识管理
 
 > 📊 Level ⭐⭐⭐ | 7.9KB | `entities/llm-wiki-knowledge-management.md`
 
@@ -1268,7 +1310,7 @@ Schema 设计是 LLM Wiki 的质量上限，也是最大的风险点：Schema �
 
 ---
 
-## Ch06.014 Claude Code Session 管理与 1M 上下文最佳实践
+## Ch06.015 Claude Code Session 管理与 1M 上下文最佳实践
 
 > 📊 Level ⭐⭐⭐ | 7.4KB | `entities/claude-code-session-management-1m-context.md`
 
@@ -1341,7 +1383,7 @@ Claude Code团队成员Thariq揭示了1M上下文时代最核心的工程挑战�
 
 ---
 
-## Ch06.015 Skill 编排的 6 种依赖关系
+## Ch06.016 Skill 编排的 6 种依赖关系
 
 > 📊 Level ⭐⭐⭐ | 3.1KB | `entities/skill-orchestration-6-dependencies.md`
 
@@ -1382,7 +1424,7 @@ context 的追加式增长是所有 skill 编排方案的基础假设，但它�
 
 ---
 
-## Ch06.016 MiroFlow：Deep Research Agent 脚手架 —— 与 Code Agent 的 6 大工程差异
+## Ch06.017 MiroFlow：Deep Research Agent 脚手架 —— 与 Code Agent 的 6 大工程差异
 
 > 📊 Level ⭐⭐⭐⭐ | 29.8KB | `entities/miroflow-deep-research-agent-harness-mirothinker.md`
 
@@ -1713,7 +1755,7 @@ context 的追加式增长是所有 skill 编排方案的基础假设，但它�
 
 ---
 
-## Ch06.017 Agent Harness 上下文管理：工作集视角
+## Ch06.018 Agent Harness 上下文管理：工作集视角
 
 > 📊 Level ⭐⭐⭐⭐ | 24.6KB | `entities/agent-harness-context-management-working-set.md`
 
@@ -1960,7 +2002,7 @@ CE = PE 的超集。**未来讨论 LLM 工程时，"CE" 可能会取代"PE"成�
 
 ---
 
-## Ch06.018 Claude Code Openclaw Memory Comparison
+## Ch06.019 Claude Code Openclaw Memory Comparison
 
 > 📊 Level ⭐⭐⭐⭐ | 19.2KB | `entities/claude-code-openclaw-memory-comparison.md`
 
@@ -2179,7 +2221,7 @@ Claude Code 的 Auto Dream"梦境整理"隐喻尤为优雅：Agent 白天干活�
 
 ---
 
-## Ch06.019 Memory 不是 RAG：Agent 记忆的系统性框架
+## Ch06.020 Memory 不是 RAG：Agent 记忆的系统性框架
 
 > 📊 Level ⭐⭐⭐⭐ | 14.2KB | `entities/memory-vs-rag-agent-memory-systematic-framework.md`
 
@@ -2340,13 +2382,13 @@ Reflexion / ExpeL / ReMe 都在回答：经历如何不只是被保存，而是�
 ## 相关实体
 - [Context Engineering Three Memory Paradigms](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-engineering-three-memory-paradigms.md)
 - [Agent Memory Architecture Essence](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture-essence.md)
-- [How Ai Agent Memory Works](ch04/107-how-ai-agent-memory-works.html)
+- [How Ai Agent Memory Works](ch04/113-how-ai-agent-memory-works.html)
 - [Agent Memory Architecture Past Influence Future Ruofei](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture-past-influence-future-ruofei.md)
 - [Agent Memory Architecture Ruofei](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture-ruofei.md)
 
 ---
 
-## Ch06.020 Qoder 团队知识引擎
+## Ch06.021 Qoder 团队知识引擎
 
 > 📊 Level ⭐⭐⭐⭐ | 10.3KB | `entities/qoder-team-knowledge-engine.md`
 
@@ -2476,79 +2518,6 @@ Qoder 明确指出"团队规范混乱时，自动化会放大坏的习惯"。如
 - [Tencent Ai Team Knowledge Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tencent-ai-team-knowledge-harness.md)
 - [Tencent Ai Team Knowledge Mgmt Harness Moat](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tencent-ai-team-knowledge-mgmt-harness-moat.md)
 - [Ai Team Knowledge Harness](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/ai-team-knowledge-harness.md)
-
----
-
-## Ch06.021 Hermes Agent 记忆系统 vs OpenClaw 记忆观
-
-> 📊 Level ⭐⭐⭐⭐ | 8.7KB | `entities/hermes-agent-memory-system.md`
-
-## 四层分框架
-| 层级 | 存储 | 容量 | 定位 |
-|------|------|------|------|
-| **热记忆** | MEMORY.md + USER.md | 2,200 + 1,375 字符 | 每轮都该知道的事实和偏好 |
-| **会话检索** | session_search (SQLite + FTS5) | 无硬上限 | 档案室，"上次那个问题" |
-| **程序性记忆** | Skills | 无硬上限 | SOP，"这类任务下次怎么做" |
-| **深层用户建模** | Honcho（外部） | 可选 | 跨平台/跨设备长周期画像 |
-> 和 [Agent Memory 架构本质](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture.md) 的"write-manage-read 三链路闭环"角度不同，Hermes 更侧重**运行时成本控制和分层治理**。
-
-## 核心设计：cache-aware
-**不轻易改系统提示词**。会话中途记忆写入先落盘，不立刻修改当前 system prompt——保护 prompt cache。牺牲即时性，换缓存命中和提示词结构稳定。
-**压缩前 memory flush**：长会话压缩前，模型先提取"值得长期保存的事实"写入 durable memory，再压缩历史。**记忆压缩不是把历史变短，而是把任务状态迁移到更稳定的位置。**
-**记忆是提示词供应链**：写入前检查提示词注入、凭证泄露、SSH 后门等模式——因为 memory 内容未来可能进入 system prompt。
-这和 [Agent Harness 上下文管理：工作集视角](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-context-management-working-set.md) 的判断一致：**窗口里留下来的，不应该是发生过的一切，而应该是下一轮推理真的要用的工作集**。
-
-## vs OpenClaw：不是谁有记忆，而是谁把记忆放对了位置
-| | OpenClaw | Hermes |
-|--|---------|--------|
-| **重心** | Gateway / workspace / 多 Agent / 工作区隔离 | cache-aware 执行型 runtime |
-| **记忆厚在** | Memory plane + workspace | 热记忆 + 会话检索 + Skills |
-| **哲学** | 长期状态放进工作区和记忆平面管理 | 先保护提示词稳定性，资产分到各层 |
-**真正被修正的记忆观**：不是"把更多东西存下来、搜回来、塞给模型，Agent 就会越来越好用"。更多记忆会带来更多成本——破坏缓存、召回质量瓶颈、错误经验固化。
-
-## 给自研 Agent 的三问
-1. **什么配得上热记忆？** → 用户偏好/环境事实/稳定约定；任务进度/TODO/流水账不进
-2. **历史有没有档案层？** → 完整事件+关键词搜索+按 session 聚合+摘要召回，而非全塞进 memory
-3. **压缩前有没有状态迁移？** → 长任务压缩前先做 durable state extraction
-
-## 深度分析
-Hermes 的记忆系统本质上是一套**分层成本治理**架构，而非单一的大容量记忆存储。其核心洞察是：记忆的代价不仅在于存储，更在于它进入推理上下文的路径成本。
-**热记忆的精准克制**：MEMORY.md + USER.md 的 2,200 + 1,375 字符限制看似严格，实则刻意为之。用字符而非 token 限制，规避了对特定模型 tokenizer 的依赖，实现真正的存储无关性。更关键的是，这两块内容在会话期间作为 frozen snapshot 注入系统提示词——写入时落盘但不修改已构建的 prompt，保护的是 prompt cache 的命中稳定性。
-**记忆压缩即状态迁移**：传统视角将压缩理解为"把历史变短"，Hermes 的压缩前 memory flush 机制揭示了另一种范式：压缩前先做 durable state extraction，把值得长期保存的事实（用户偏好、修正、重复模式）迁移到更稳定的热记忆层，再压缩旧历史。这意味着压缩的质量标准不是信息密度，而是**状态位置是否正确**。
-**session_search 的设计哲学**：档案室不等于随身备忘录。FTS5 搜索 + 按 session 聚合 + 父会话关系解析 + 便宜模型 focused summary，构成了一条清晰的召回链路。热记忆回答"每轮都要知道什么"，session_search 回答"上次那个问题怎么找回来"——两者定位不重叠，不互相替代。
-**Skills 作为程序性记忆的注入策略**：skills index 轻量注入主上下文，真正需要时才加载完整 skill。这解决了 SOP 类知识"存得住但用不上"的问题——关键不是数量，而是按需获取的能力。
-
-## 实践启示
-1. **用字符限制作热记忆边界，而非 token**：解耦对特定模型 tokenizer 的依赖，容量预测更稳定。MEMORY.md 和 USER.md 的分工（事实 vs 偏好）值得直接借鉴。
-2. **会话中途记忆落盘不修修改 prompt**：任何 memory write 先落盘，会话结束或明确触发点再统一重建 system prompt。保护 prompt cache 的收益远大于即时更新的体验收益。
-3. **压缩前必须有一轮状态提取**：在历史被摘要磨薄之前，用独立模型调用 + 仅开放 memory 工具的方式，显式提取 durable facts。别让压缩算法决定什么该留下。
-4. **热记忆内容必须通过安全检查**：memory 内容可能进入 system prompt，提示词注入、凭证泄露、SSH 后门等模式必须在写入前被扫描——记忆是提示词供应链的一部分。
-5. **区分"环境事实"和"任务流水账"**：前者（环境配置、用户偏好、稳定约定）值得进热记忆；后者（任务进度、中间 TODO、流水账）留在 session_search 层，不要因为"怕忘记"就往热记忆里塞。
-6. **深层用户建模守住缓存边界**：Honcho 等外部画像系统在第一轮注入 system prompt，后续轮次通过消息附件动态提供——稳定前缀不动，缓存命中率不降。
-7. **给自研 Agent 的三问清单**：
-
-   - 什么配得上热记忆？→ 用户偏好/环境事实/稳定约定
-   - 历史有没有档案层？→ 完整事件+关键词搜索+session 聚合+摘要召回
-   - 压缩前有没有状态迁移？→ durable state extraction 先于压缩执行
-
-## 与相关条目的关系
-- [Agent Memory 模块化框架与评测](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-modular-framework.md) — 学术视角（ICLR 2026），四组件统一框架
--  — write-manage-read 三链路闭环，六维度记忆单元
-- [OpenClaw 架构解析](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/openclaw-architecture.md) — OpenClaw 薄抽象+显式控制流原始设计
--  — 工作集视角，session/harness/sandbox 解耦
-
-## 关联阅读
-- [原文存档](https://mp.weixin.qq.com/s/0n5aw2I0yoyHS7W5fQ6ydA)
-- [深度拆解 Hermes Agent 记忆系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-memory-system-openclaw-comparison.md)
-- [memory agent systems cobanov](https://github.com/QianJinGuo/wiki-public/blob/main/entities/memory-agent-systems-cobanov.md)
-- [AI Agent 记忆系统架构](ch04/107-how-ai-agent-memory-works.html)
--
-
-- [ai agent memory systems](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-memory-systems.md)
-
-→ [原文存档](https://mp.weixin.qq.com/s/8NJUWyR_u9UNM_9J4l_NGg)
-
-- [Agent Memory 架构解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture-ruofei.md)
 
 ---
 
@@ -2736,7 +2705,7 @@ D2L 的方向（将知识编码进模型权重）逻辑上可行，当前瓶颈�
 - **专有模型**：针对文档编码任务训练专用 encoder-decoder，直接输出权重而非通过 hypernetwork 映射
 
 ## 相关实体
-- [AI Agent 记忆系统架构](ch04/107-how-ai-agent-memory-works.html)
+- [AI Agent 记忆系统架构](ch04/113-how-ai-agent-memory-works.html)
 - [LLM Wiki 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-wiki-architecture.md)
 - [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-wiki-obsidian-wiki-gbrain-self-organization-self-evolution.md)
 - [hermes-agent-self-evolving-source-analysis](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-self-evolving-source-analysis.md)

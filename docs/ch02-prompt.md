@@ -10,11 +10,11 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 3 |
-| ⭐⭐ 工程师 | 需编程基础 | 4 |
+| ⭐ 入门 | 零基础可读 | 6 |
+| ⭐⭐ 工程师 | 需编程基础 | 3 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 8 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 6 |
-| ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 5 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 5 |
+| ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 4 |
 
 ---
 
@@ -30,7 +30,130 @@
 
 ---
 
-## Ch02.001 Skills 重新定义 Agent 喂知识：从'提前给'到'按需取'的范式反转
+## Ch02.001 Hermes Agent 自进化机制源码解析
+
+> 📊 Level ⭐ | 5.3KB | `entities/hermes-agent-self-evolving.md`
+
+# Hermes Agent 自进化机制源码解析
+
+> 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.75**，已按导航页（MOC）重建；
+> 原文备份见 `_archive/hub-rewrite-2026-09-07/hermes-agent-self-evolving.md`，一手来源仍见下方 sources。
+
+## 机制与论文
+- [深度拆解 Hermes Agent 记忆系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-memory-system-openclaw-comparison.md) — 记忆成本账四层体系15260字rv10最深版
+- [SkillOS: Learning Skill Curation for Self-Evolving Agents](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-os-learning-skill-curation-self-evolving-agents.md) — SkillOS策展RL架构清晰rv10
+- [Hermes Agent Skill 互优化：SkillEvolver × Darwin × EmbodiSkill 4 轮闭环](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-skill-crossover-optimization.md) — SkillEvolver×Darwin×EmbodiSkill互优化13412字
+- [Agent Memory 模块化框架与评测：Memory in the LLM Era 4 模块 + 10 方案对比 + 新方法 F1 38.79 + 4 条工程原则](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-modular-framework.md) — 四组件统一框架
+- [Agentic RL 六框架实践地图：从算法到系统的长程智能体训练](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentic-rl-frameworks-practices-long-horizon-wolfe-2026.md) — RL六框架地图
+- [Hermes Agent 深度解析（阿里云/飞樰）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-deep-dive.md) — 自进化内外双路径+四维工程7934字rv9全版
+- [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-agent脚手架如何具备自进化能力以hermes-agent为例.md) — Hermes自进化15402字最全版
+- [Agent 记忆存储方案深度洞察：6 大流派分歧、Wiki 编译 vs 原始数据之争、Hermes Agent 启示](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-storage-six-schools-wiki-compile-vs-raw-data-debate.md) — 六派之争全版
+- [Harness Engineering 综合论述：为什么 2026 年真正重要的是它（含 ECC 开源实现案例）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-paradigm-comprehensive-2026.md) — 综合论述17305字含ECC案例rv9
+- [Agent Harness Engineering: A Survey — ETCLOVG Taxonomy](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-engineering-survey-etcvlovg-taxonomy.md) — ETCLOVG分类补充
+- [Claude Fable 5 提示词泄漏 — 1585 行 120K 字符的产品运行时控制平面与安全工程启示](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-fable-5-prompt-leak-runtime-control-plane-vibecoder-2026.md) — 1585行控制平面
+- [AI Memory Architecture: Deep Dive](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-memory-architecture-deep-dive.md) — 29k记忆架构深度
+- [Memory in the LLM Era: Modular Architectures and Strategies in a Unified Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/memory-in-the-llm-era-iclr2026.md) — 四组件统一框架10658字
+- [深度解析 Hermes Agent 如何实现自进化及其 Prompt / Context / Harness 的设计实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-tools-research.md) — Hermes自进化解析
+
+## 工程实践
+- [滴滴 IBG 智能客服质检系统：3 管线（意图 86% / 合规 90%+ / VOC）+ 企业 LLM 落地方法论](https://github.com/QianJinGuo/wiki-public/blob/main/entities/didi-ibg-customer-experience-llm-quality-inspection-3-pipelines.md) — 三管线质检14k
+- [Qoder Skills 完全指南 + Agent Skill 迭代式编写 — AI 按你的标准执行](https://github.com/QianJinGuo/wiki-public/blob/main/entities/qoder-skills-完全指南从零开始让-ai-按你的标准执行-v2.md) — 菜单菜谱比喻+三级渐进披露18168字rv9全版
+- [Hermes Agent 满配 12 层配置完整指南（从裸装到 24h Agent 团队）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-12-layer-full-configuration-guide.md) — 12层满配指南11566字rv9
+- [企业级 Skill 8 块最小骨架 + 8 条 checklist 设计规范](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-design-spec-8-block-checklist-winty.md) — 8块骨架checklist设计规范
+- [Harness Engineering 综合性指南（ConardLi 系列 · 含 Beautiful Article 实证 + Reacticle 协议）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-comprehensive-guide-conardli.md) — ConardLi六层架构14634字rv9
+- [Skill Hub：企业级 AI 经验资产化的关键（组织能力视角）— winty 前端Q 3 篇合集：组织资产 + 质量门禁 4 关 + 生命周期 6 阶段治理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-hub-organization-asset-winty.md) — Skill组织资产化治理五件事
+- [Karpathy CLAUDE.md — 四条行为准则让 AI 编程 Agent 减少结构性失败](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-claude-md-rules.md) — CLAUDE.md四行为准则rv9
+- [Claude Code Skills 实战指南 — 发现机制、编写与安全](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-skills-practical-guide-discovery-frontmatter.md) — 发现机制与安全
+- [Skill 版本管理五大原则：从越改越差到持续演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-version-management-semantic-versioning-practices-winty.md) — skill语义化版本五原则
+- [Chromium AI Coding 开发体系](https://github.com/QianJinGuo/wiki-public/blob/main/entities/chromium-ai-coding-development-system.md) — Chromium AI基建
+
+---
+
+## Ch02.002 Agent Skill 编写指南
+
+> 📊 Level ⭐ | 4.7KB | `entities/agent-skill-writing.md`
+
+# Agent Skill 编写指南
+
+> 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.85**，已按导航页（MOC）重建；
+> 原文备份见 `_archive/hub-rewrite-2026-09-07/agent-skill-writing.md`，一手来源仍见下方 sources。
+
+## 机制与论文
+- [Skill 设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-design-patterns.md) — 5社区模式+14官方模式全集
+- [Hermes Agent 深度解析（阿里云/飞樰）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-deep-dive.md) — 自进化内外双路径+四维工程7934字rv9全版
+- [阿里Qwen提出Skill-RM：把奖励模型做成可复用Agent Skill](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-rm-qwen-agent-skill-reward-model.md) — Skill-RM奖励模型技能化
+- [SkillCorpus: 大规模社区 Skill 生态的筛选、评测与边界分析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skillcorpus-consolidating-open-skill-ecosystem.md) — 96k技能提纯流水线评测
+- [AI能接管实验室了？中国科大最新研究给出真实物理世界的压力测试](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai能接管实验室了中国科大最新研究给出真实物理世界的压力测试.md) — 机器实验室评测
+
+## 工程实践
+- [Qoder Skills 完全指南 + Agent Skill 迭代式编写 — AI 按你的标准执行](https://github.com/QianJinGuo/wiki-public/blob/main/entities/qoder-skills-完全指南从零开始让-ai-按你的标准执行-v2.md) — 菜单菜谱比喻+三级渐进披露18168字rv9全版
+- [企业级 Skill 8 块最小骨架 + 8 条 checklist 设计规范](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-design-spec-8-block-checklist-winty.md) — 8块骨架checklist设计规范
+- [Harness Engineering 综合性指南（ConardLi 系列 · 含 Beautiful Article 实证 + Reacticle 协议）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-comprehensive-guide-conardli.md) — ConardLi六层架构14634字rv9
+- [Harness 工程搭建式业务 Agent 评测方案：Claude Code 作 Harness 搭建者](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineered-business-agent-evaluation-aliyun-boyu.md) — CC搭评测Harness，1.5周→1-2天
+- [Skill 版本管理五大原则：从越改越差到持续演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-version-management-semantic-versioning-practices-winty.md) — skill语义化版本五原则
+- [重新定义Skill开发：保姆级教程&一站式开发助手](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-development-guide-linyi.md) — 11320字最全教程版
+- [Skill 版本对比五大原则：从'两个数字比大小'到工程化质量门禁](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-version-comparison-five-principles-winty.md) — 版本对比五原则六陷阱
+- [Harness 工程之道：Skill 原理与最佳实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-skill-engineering-alibaba-practice.md) — Skill渐进披露三阶段+作用域优先级
+- [Qoder Skill UI — Agent 与人类的协作界面层](https://github.com/QianJinGuo/wiki-public/blob/main/entities/qoder-skill-ui.md) — 软件双形态：Agent用CLI人用GUI，HTML沙箱路线
+- [AI Agent 落地：如何攻克稳定性、成本与评估难题？ — Trace即Evals](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-trace-evals-stability-cost-evaluation-zhangyanfei.md) — trace即evals
+- [skill-up: 阿里开源 Agent Skill 评测框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/alibaba-skill-up-agent-skill-evaluation.md) — skill-up主版
+- [Agent Skill 评估与迭代](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing-evaluation.md) — skill评估迭代
+- [Agent Skill 高质量编写规范](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing-practices.md) — 编写规范六条
+- [Claude Code Dynamic Workflows 实战模式与构建技巧](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-dynamic-workflows-thariq-practical-patterns.md) — 3失败6模式11用例
+- [Skill Craft：Claude Skill 质量工程工具](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-skill-quality-tool-skill-craft.md) — skill质量工程
+- [Harness Engineering 系统性解读](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-systematic-explainer.md) — 李宏毅课程解读7933字最全版
+- [腾讯 Token 优化实战 — 省 Token 和用好 AI 是同一件事](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tencent-token-optimization-agent-architecture.md) — context rot四步工程化
+- [Agent Skills 开发指南：6 字段规范、3 级加载、5 步评估闭环](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skills-development-guide.md) — 6字段开发指南
+- [腾讯 AI Coding 深水区 — 事实vs判断尺子与提示词→框架→runtime 下沉方法论](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tencent-ai-coding-deep-water-fact-vs-judgment-2026.md) — 事实判断尺子runtime主权
+
+## 延伸导航
+- [评测体系与基准测试扩展](https://github.com/QianJinGuo/wiki-public/blob/main/moc/evaluation-benchmarks-extended.md)
+
+---
+
+## Ch02.003 Claude Code Prompt 与上下文 Harness 设计
+
+> 📊 Level ⭐ | 4.6KB | `entities/claude-code-prompt-context-harness.md`
+
+# Claude Code Prompt 与上下文 Harness 设计
+
+> 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.8**，已按导航页（MOC）重建；
+> 原文备份见 `_archive/hub-rewrite-2026-09-07/claude-code-prompt-context-harness.md`，一手来源仍见下方 sources。
+
+## 机制与论文
+- [AgentScope Java Harness Framework 2.0 — 企业级 Agent 分布式场景的 Harness 实现 (Java 2.0 重大升级)](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentscope-java-harness-framework-enterprise-distributed.md) — AgentScope Java全版
+- [晓斌：从 People-Oriented 到 Agent-Oriented Infra —— 意图驱动 + 代码沉淀的进化体](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-oriented-infra-intent-driven-code-sedimentation.md) — Agent-Oriented Infra长文
+- [Coding Harness 工程本质：从 Pi 到 OpenClaw](https://github.com/QianJinGuo/wiki-public/blob/main/entities/pi-openclaw-coding-harness.md) — Harness八能力+五工程模式：Context像投影8441字rv9
+- [Anthropic N-days: Frontier Agent Vulnerability Research](ch04/312-anthropic-n-days-frontier-agent-vulnerability-research.html) — N-day研究
+- [一篇看懂 Agent Harness 的结构！ — 12组件+7决策完整框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-12-components-7-decisions.md) — harness 12组件框架
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-prompt-context-harness.md) — 三维度源码：23模块拼装+自适应分块+双层Memory
+- [GLM-5.2 is the step change for open agents](https://github.com/QianJinGuo/wiki-public/blob/main/entities/glm-52-is-the-step-change-for-open-agents.md) — Interconnects评GLM-5.2开放Agent跃迁
+- [Agent Harness 解析：智能体架构深度拆解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture-deep-dive-aksahy.md) — harness解剖深度
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](https://github.com/QianJinGuo/wiki-public/blob/main/entities/深入理解-claude-code-源码中的-agent-harness-构建之道.md) — 16095字源码8步循环
+- [从 Prompt 到 Harness：Claude 官方学习资料](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-prompt-to-harness-claude-official.md) — Harness五子系统闭环解读
+- [原始文章存档](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-search-architecture-tencent-2026.md) — ripgrep五层过滤
+- [Claude Opus 4.7 并不是一次全面升级，甚至部分能力大幅衰退](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-opus-47.md) — 4.7衰退面分析
+- [复旦北大 AHE：Agentic Harness Engineering 瓶颈分析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fudan-peking-ahe-agentic-harness-engineering.md) — AHE三支柱可观测性5622字深析版
+- [Claude Code and What Comes Next](ch01/255-claude-code-and-what-comes-next.html) — 压缩/Skills/Subagents
+
+## 工程实践
+- [Tencent Vibe Coding to Agentic Engineering Backend](ch04/303-tencent-vibe-coding-to-agentic-engineering-backend.html) — 全流程串终端会话实践
+- [高德广告工程 Harness/SDD 体系演进：从\](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gaode-sdd-harness-team-ai-coding-paradigm-ibjfu.md) — SDD+Harness团队级范式11119字
+- [Build a serverless image editing agent with Amazon Bedrock AgentCore harness](ch05/012-build-a-serverless-image-editing-agent-with-amazon-bedrock-a.html) — 图像编辑agent
+- [AWS Bedrock Agentcore Quality Optimization Flywheel](ch11/098-aws-bedrock-agentcore-quality-optimization-flywheel.html) — 质量飞轮
+- [AI 生产开发工作流：OpenSpec 规范驱动 + Superpowers 工具链](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-production-development-workflow-openspec-superpowers-gstack.md) — 三件套工作流
+- [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](https://github.com/QianJinGuo/wiki-public/blob/main/entities/2-小时0-行手写代码我用-claude-做了一个生产级-vscode-插件.md) — 实践复盘有具体经验教训
+- [Claude Code 上下文工程 —— Anthropic 团队的工程实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-context-engineering-anthropic-thariq.md) — 上下文工程官方表述
+- [Anthropic Managed Agents：用 K8s 思路虚拟化 Agent 组件](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-managed-agents-scaling.md) — 宠物到牛群
+- [长周期-agent-详解-从-ralph-loop-到可接管-harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/长周期-agent-详解-从-ralph-loop-到可接管-harness.md) — Ralph loop到接管harness
+- [从零复刻 Claude Code：Harness 构建学习笔记](https://github.com/QianJinGuo/wiki-public/blob/main/entities/准备开一个新坑从零复刻一个-claude-codenn目标是在这个过程中和大家一起学习-claude-code-的-harness-是如何做的nnclaude-.md) — easy-agent复刻路线图
+
+## 延伸导航
+- [Agent 工程全景指南](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-engineering-guide.md)
+
+---
+
+## Ch02.004 Skills 重新定义 Agent 喂知识：从'提前给'到'按需取'的范式反转
 
 > 📊 Level ⭐ | 4.5KB | `entities/skills-redefine-agent-knowledge-allen-tang-2026.md`
 
@@ -88,7 +211,7 @@ Anthropic 重新定义的不是"知识的格式"，是**"知识被调用的时�
 
 ---
 
-## Ch02.002 Enrich your datasets with business context
+## Ch02.005 Enrich your datasets with business context
 
 > 📊 Level ⭐ | 4.0KB | `entities/enrich-your-datasets-with-business-context-migrating-from-le.md`
 
@@ -120,7 +243,7 @@ Legacy Topics provided the initial approach to adding business context to datase
 
 ---
 
-## Ch02.003 AE 到可运行代码：大淘宝 AI 动画全链路方案（实践篇）
+## Ch02.006 AE 到可运行代码：大淘宝 AI 动画全链路方案（实践篇）
 
 > 📊 Level ⭐ | 3.7KB | `entities/taobao-ae-to-code-animation-practice-2026.md`
 
@@ -184,53 +307,7 @@ AI 的核心价值在于集成环节——需同时理解动画结构和业务 D
 
 ---
 
-## Ch02.004 Claude Code Prompt 与上下文 Harness 设计
-
-> 📊 Level ⭐⭐ | 6.9KB | `entities/claude-code-prompt-context-harness.md`
-
-# fb134668f09a3b45c1813781f912ae4e7e26294d3b60332606983b946944c328
-> 本文原文来自微信公众平台（飞樰/阿里云开发者），仅供存档和个人学习研究之用。
-> 原始URL：https://mp.weixin.qq.com/s/YgGW92VBP8s846yzIxjVWQ
-> 发布日期：2026-04-20 | 来源：阿里云开发者
-> SHA-256: `fb134668f09a3b45c1813781f912ae4e7e26294d3b60332606983b946944c328`
-
-## 相关实体
-- [Llm Wiki Obsidian Wiki Gbrain Self Organization Self Evolution](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-wiki-obsidian-wiki-gbrain-self-organization-self-evolution.md)
-- [Claude Code Harness Deep Dive Founder Park](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-harness-deep-dive-founder-park.md)
-- [Hermes Agent Deep Dive Alibaba](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-deep-dive-alibaba.md)
-- [Openclaw Prompt Context Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-prompt-context-harness.md)
-- [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-
-→ [原文存档](https://mp.weixin.qq.com/s/YgGW92VBP8s846yzIxjVWQ)
-
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/prompt-engineering-guide.md)
-## 深度分析
-
-Claude Code 在 Prompt Engineering 层面展现了极为精细的模块化思维。System Prompt 由 7 个静态模块与 10+ 个动态模块构成，中间通过 `__SYSTEM_PROMPT_DYNAMIC_BOUNDARY__` 边界标记分隔，这种结构既保证了身份、行为规则、安全守则等核心内容的一致性，又允许会话特定指导、MCP 服务器指令、Token 预算等动态内容按需注入。5 级优先级决策链（overrideSystemPrompt → Coordinator prompt → Agent prompt → customSystemPrompt → defaultSystemPrompt）确保了用户意图的精确覆盖，这种分层优先级设计在复杂多 Agent 系统中具有重要的架构参考价值。KV Cache 友好分块（`splitSysPromptPrefix()`）则体现了对推理成本的工程化考量，而非单纯追求功能完整。
-
-Context Engineering 的三级压缩体系（MicroCompact → Session Memory Compact → Full LLM Compact）构成了一个成本感知的自适应上下文管理机制。MicroCompact 以零成本保留 Edit/Write 等核心工具调用的完整性，仅在时间阈值或 KV Cache 边界触发时进行轻量压缩；Session Memory Compact 在 ≥10,000 tokens 且 ≥5 条消息时强制触发 9 段式结构化摘要；Full LLM Compact 则用于前两层无法满足召回需求时的高成本场景。CLAUDE.md 的四层路径体系（全局 → 项目 → 个人本地 → 规则文件）实现了跨粒度的上下文继承与覆盖机制，与 Memdir 四类记忆（User/Feedback/Project/Reference）结合后，构成了一套完整的项目级语义记忆体系。
-
-Harness Engineering 的 Permission Engine 三行为模型（Allow/Deny/Ask）是安全架构的核心抽象。Allow 通道实现低风险操作的自动放行，Deny 通道在高危操作（如网络请求、敏感文件访问）触发时强制阻断，Ask 通道则在中间地带要求用户显式确认。Settings.json → CLI 参数 → 命令行规则 → session 规则的四层配置优先级为不同场景提供了灵活的权限管控粒度。bubblewrap 沙箱（约 986 行代码）通过文件系统只读挂载、网络/PID 命名空间、用户权限降级三重机制构建了进程级别的隔离环境。
-
-8 类内置 Agent（General-Purpose、Explore、Plan、Verification、Guide、Statusline Setup、Fork Sub Agent 等）通过差异化的模型选择与权限配置实现了任务分治。Explore Agent 使用 Haiku 模型且只读、不加载 CLAUDE.md，适合快速侦察；Verification Agent 承担红蓝对抗职责，采用 5 种验证策略进行质量检验。Fork Sub Agent 通过 Worktree 隔离实现进程分身，共享 Prompt Cache 以降低推理成本，这种设计在高并发、长时程的任务拆解中具有重要实用价值。
-
-20+ 种 Hook 事件覆盖了工具调用、会话生命周期、消息采样、文件操作等全链路，其中 PreToolUse/PostToolUse/ToolError 构成了工具层面的安全与审计机制，PreSampling/PostSampling 允许在模型输入输出层注入自定义逻辑。Anti-Distillation（`anti_distillation: ['fake_tools']`）和 Undercover Mode 等彩蛋设计则揭示了 Claude Code 对自身工具调用链被爬取和滥用的防御意识，这在代码大模型时代具有普遍的安全参考意义。
-
-## 实践启示
-
-**模块化 Prompt 设计优于单一字符串拼接。** 将 System Prompt 拆分为静态模块与动态模块，通过明确的边界标记（`__SYSTEM_PROMPT_DYNAMIC_BOUNDARY__`）分隔，使核心规则保持稳定的同时允许动态内容按需注入。KV Cache 友好分块（`splitSysPromptPrefix()`）应成为大型 System Prompt 的标准实践，而非性能优化选项。
-
-**上下文管理必须建立成本感知的自适应压缩机制。** 不应依赖单一的全量压缩策略，而应根据 token 阈值、消息数量、Kv Cache 边界等多维条件触发不同级别的压缩。MicroCompact 以零成本保留关键工具调用（Edit/Write）完整性的设计原则值得借鉴——压缩的目标是降低召回成本，而非牺牲核心任务执行能力。
-
-**Permission Engine 的 Allow/Deny/Ask 三行为模型是安全架构的基础抽象。** 任何 Agent 系统都应在架构层面定义权限决策的三元模型，并通过配置文件 → CLI 参数 → 运行规则 → session 规则的四层优先级实现灵活的权限管控。bubblewrap 沙箱等进程级隔离手段应作为高风险操作的默认保障机制。
-
-**多 Agent 系统的设计应采用差异化模型选择与权限隔离策略。** 不同 Agent 承担不同任务域（侦察、规划、验证、执行），应选择与其任务复杂度匹配的模型规格，并通过只读/读写、加载/不加载 CLAUDE.md 等差异化配置实现最小权限原则。Worktree 隔离是实现并发安全拆分的关键技术。
-
-**Hook 机制是实现可观测性与安全审计的核心基础设施。** PreToolUse/PostToolUse/ToolError 覆盖了工具层的完整调用链路，应作为 Agent 系统的标准可观测性基础设施。Anti-Distillation 等彩蛋设计提醒我们，代码 Agent 的工具调用链本身是需要保护的核心资产，应在架构层面考虑防爬取和防蒸馏策略。
-
----
-
-## Ch02.005 AINMM：存量生产级工程向 AI Native 演进的五级成熟度模型
+## Ch02.007 AINMM：存量生产级工程向 AI Native 演进的五级成熟度模型
 
 > 📊 Level ⭐⭐ | 5.9KB | `entities/ainmm-ai-native-maturity-model.md`
 
@@ -299,7 +376,7 @@ AINMM 继承 CMMI 的"逐级递进、每级是下一级基础"原则——ML1 �
 
 ## 关联
 
-- [Harness Engineering](ch05/066-harness-engineering.html) — AINMM 的过程域对应 Harness 五层架构
+- [Harness Engineering](ch05/061-harness-engineering.html) — AINMM 的过程域对应 Harness 五层架构
 - [高德 Harness/SDD 演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gaode-sdd-harness-team-ai-coding-paradigm-ibjfu.md) — 另一家团队 AI Native 团队级实践
 - [Agent 作为 Software 3.0 基础设施](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-as-software-3-0-substrate.md) — AI Native 的范式基础
 - [AI Agent 评测 5 维体系](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-coding-practice-agent-evaluation-five-dimension-three-level-gating.md) — 评估维度的互补框架
@@ -309,7 +386,7 @@ AINMM 继承 CMMI 的"逐级递进、每级是下一级基础"原则——ML1 �
 
 ---
 
-## Ch02.006 新程Alpha认知模型：4B参数端侧部署，群体智能以小搏大比肩GPT-5.4
+## Ch02.008 新程Alpha认知模型：4B参数端侧部署，群体智能以小搏大比肩GPT-5.4
 
 > 📊 Level ⭐⭐ | 5.5KB | `entities/nextie-alpha-cognitive-model-4b-on-device.md`
 
@@ -372,7 +449,7 @@ Proactive Agent长期受限于推理成本——7×24运行千亿参数模型的
 
 ---
 
-## Ch02.007 AI 导购在 vivo 官网的落地实践
+## Ch02.009 AI 导购在 vivo 官网的落地实践
 
 > 📊 Level ⭐⭐ | 5.2KB | `entities/vivo-ai-sales-guide-ecommerce-agent.md`
 
@@ -434,7 +511,7 @@ vivo AI 导购项目的核心工程价值在于**小模型 + 大模型协同**�
 
 ---
 
-## Ch02.008 Using Claude
+## Ch02.010 Using Claude
 
 > 📊 Level ⭐⭐⭐ | 18.5KB | `entities/claude-code-html-artifacts.md`
 
@@ -651,7 +728,7 @@ Markdown 在 AI 输出场景中的根本局限在于它是「被动消费」型�
 
 ---
 
-## Ch02.009 Development environments for your cloud agents
+## Ch02.011 Development environments for your cloud agents
 
 > 📊 Level ⭐⭐⭐ | 14.7KB | `entities/cloud-agent-development-environments.md`
 
@@ -734,7 +811,7 @@ Secrets scoped per environment 是一个关键的安全设计：即使某一环�
 
 ---
 
-## Ch02.010 Claude Fable 5 提示词泄漏 — 1585 行 120K 字符的产品运行时控制平面与安全工程启示
+## Ch02.012 Claude Fable 5 提示词泄漏 — 1585 行 120K 字符的产品运行时控制平面与安全工程启示
 
 > 📊 Level ⭐⭐⭐ | 12.1KB | `entities/claude-fable-5-prompt-leak-runtime-control-plane-vibecoder-2026.md`
 
@@ -805,7 +882,7 @@ Secrets scoped per environment 是一个关键的安全设计：即使某一环�
 
 ---
 
-## Ch02.011 Superpowers 6.0 跑了 25 个实验才发现：prompt 里写的每一条\"不要\"，可能都在帮倒忙
+## Ch02.013 Superpowers 6.0 跑了 25 个实验才发现：prompt 里写的每一条\"不要\"，可能都在帮倒忙
 
 > 📊 Level ⭐⭐⭐ | 10.5KB | `entities/superpowers-prompt-dont-experiment-shuge.md`
 
@@ -893,7 +970,7 @@ Superpowers 的微测方法论最大的贡献不是某一条具体结论，而�
 - [Harness 工程实践 17 vs 6 Subagent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-practical-17ge-versus-6-subagent.md) — 探讨 Agent Skills 的工程化设计，与 Superpowers 的 prompt 微测方法论形成互补
 - [Claude Code 深度架构分析](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/claude-code-deep-architecture-analysis.md) — Claude Code 的架构设计，与 Superpowers 的 SDD 工作流设计有共通的设计哲学
 - [Agent Loop 设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-boris-cherny-agent-loop-design-patterns.md) — 探讨 Agent 运行循环的设计模式，为理解 dispatch prompt 的上下文机制提供参考
-- [Harness Engineering](ch05/066-harness-engineering.html) — Agent 工程化的广义框架，Superpowers 的微测方法是 prompt engineering 层面对 Harness Engineering 的一次实践验证
+- [Harness Engineering](ch05/061-harness-engineering.html) — Agent 工程化的广义框架，Superpowers 的微测方法是 prompt engineering 层面对 Harness Engineering 的一次实践验证
 
 ## 参考来源
 
@@ -901,7 +978,7 @@ Superpowers 的微测方法论最大的贡献不是某一条具体结论，而�
 
 ---
 
-## Ch02.012 深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践
+## Ch02.014 深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践
 
 > 📊 Level ⭐⭐⭐ | 9.3KB | `entities/openclaw-prompt-context-harness.md`
 
@@ -979,7 +1056,7 @@ before_tool_call阶段的参数校验不仅能防止错误，还能作为"AI行�
 
 ---
 
-## Ch02.013 Prompt Context Harness 三次演进
+## Ch02.015 Prompt Context Harness 三次演进
 
 > 📊 Level ⭐⭐⭐ | 8.1KB | `entities/prompt-context-harness-three-evolutions.md`
 
@@ -990,7 +1067,7 @@ before_tool_call阶段的参数校验不仅能防止错误，还能作为"AI行�
 ## 相关实体
 - [Openclaw Prompt Context Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-prompt-context-harness.md)
 - [From Prompt To Harness Claude Official](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-prompt-to-harness-claude-official.md)
-- [Agentcore Managed Harness](ch04/303-agentcore-managed-harness.html)
+- [Agentcore Managed Harness](ch04/307-agentcore-managed-harness.html)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 - [Hermes Agent Deep Dive Alibaba](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-deep-dive-alibaba.md)
 
@@ -1022,7 +1099,7 @@ before_tool_call阶段的参数校验不仅能防止错误，还能作为"AI行�
 
 ---
 
-## Ch02.014 System Prompt vs Post-Training：行为约束该写还是该训？
+## Ch02.016 System Prompt vs Post-Training：行为约束该写还是该训？
 
 > 📊 Level ⭐⭐⭐ | 6.9KB | `entities/system-prompt-vs-post-training-behavioral-constraints-2026.md`
 
@@ -1077,7 +1154,7 @@ System Prompt 与 Post-training 是两种截然不同的"行为约束注入方�
 
 ---
 
-## Ch02.015 深度解析 Hermes Agent 如何实现自进化及其 Prompt / Context / Harness 的设计实践
+## Ch02.017 深度解析 Hermes Agent 如何实现自进化及其 Prompt / Context / Harness 的设计实践
 
 > 📊 Level ⭐⭐⭐ | 6.9KB | `entities/agent-tools-research.md`
 
@@ -1185,7 +1262,7 @@ Hermes Agent 的 Skill 系统具有潜在的网络效应：
 ## 相关实体
 
 - Harness Engineering
-- [Karpathy: Vibe Coding 到 Agentic Engineering](ch04/098-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy: Vibe Coding 到 Agentic Engineering](ch04/009-karpathy-vibe-coding-agentic-engineering.html)
 - [Claude Code 源码中的 Agent Harness 构建之道](https://github.com/QianJinGuo/wiki-public/blob/main/entities/深入理解-claude-code-源码中的-agent-harness-构建之道.md)
 - [Claude Code 源码核心机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/两万字详解claude-code源码核心机制.md)
 - [Harness Engineering 概念解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md)
@@ -1194,7 +1271,7 @@ Hermes Agent 的 Skill 系统具有潜在的网络效应：
 
 ---
 
-## Ch02.016 Codex 上下文工程 — Prompt Layout + Append-only + Latent Space Moat（LastWhisper 解读）
+## Ch02.018 Codex 上下文工程 — Prompt Layout + Append-only + Latent Space Moat（LastWhisper 解读）
 
 > 📊 Level ⭐⭐⭐⭐ | 19.7KB | `entities/codex-context-engineering-lastwhisper-thinking-in-context.md`
 
@@ -1219,7 +1296,7 @@ Codex 的 Prompt Layout 设计揭示了一个反直觉但普适的工程真理�
 
 ### 实践价值：压缩能力的不对称是结构性的，应用层应聚焦可控部分
 
-应用层压缩（Semantic Compression）与基础设施层压缩之间存在结构性信息不对称：厂商可访问注意力分布、海量真实对话数据、专用 Fine-tuned 压缩模型，应用层无法复制这一优势。理解这一点后，[Anthropic Prompt Caching Claude Code](ch01/183-anthropic-prompt-caching-claude-code.html) 等应用层实践的价值在于：放弃追求"更好的压缩"，转而聚焦**缓存友好的 Prompt Layout + 显式的 Compress/Select 策略**，这是应用层真正能控制的部分。context-kit 开源工具正是这一哲学的教学实现。
+应用层压缩（Semantic Compression）与基础设施层压缩之间存在结构性信息不对称：厂商可访问注意力分布、海量真实对话数据、专用 Fine-tuned 压缩模型，应用层无法复制这一优势。理解这一点后，[Anthropic Prompt Caching Claude Code](ch01/196-anthropic-prompt-caching-claude-code.html) 等应用层实践的价值在于：放弃追求"更好的压缩"，转而聚焦**缓存友好的 Prompt Layout + 显式的 Compress/Select 策略**，这是应用层真正能控制的部分。context-kit 开源工具正是这一哲学的教学实现。
 
 ### 深层博弈：Append-only 需要模型专门适配
 
@@ -1227,7 +1304,7 @@ LastWhisper 提出的两个方向值得深思：OpenAI 是否专门训练了模�
 
 ### 技术判断：Latent Compression 更可能是信息增强的 Semantic Compression
 
-尽管"/responses/compact"端点使用"latent understanding"措辞，但向量表征与模型架构深度耦合使得纯 Latent Compression 的工程可行性存疑。更合理的推断是：厂商做的是 Semantic Compression，但拥有关键信息优势（注意力分布、真实数据、专用压缩模型）。这与 [Harness Engineering](ch05/066-harness-engineering.html) 实践中"在不确定黑盒内部机制时，聚焦可控部分"的原则一致。
+尽管"/responses/compact"端点使用"latent understanding"措辞，但向量表征与模型架构深度耦合使得纯 Latent Compression 的工程可行性存疑。更合理的推断是：厂商做的是 Semantic Compression，但拥有关键信息优势（注意力分布、真实数据、专用压缩模型）。这与 [Harness Engineering](ch05/061-harness-engineering.html) 实践中"在不确定黑盒内部机制时，聚焦可控部分"的原则一致。
 
 ## 实践启示
 
@@ -1239,7 +1316,7 @@ LastWhisper 提出的两个方向值得深思：OpenAI 是否专门训练了模�
 
 4. **用 context-kit 建立上下文工程直觉**：Compress/Select/Memory 三模块覆盖了应用层上下文管理的核心场景。在生产环境中，这些模块的简化版本（如基于 LLM 的语义压缩 + JIT 文件检索 + 文件系统卸载）可以实现"do the simplest thing that works"。
 
-5. **警惕压缩能力的结构性不对称**：应用层压缩永远受限于信息劣势。不要过度投入"更智能的摘要算法"，而是将资源投入到缓存友好的架构设计和规范的 [Harness Engineering](ch05/066-harness-engineering.html) 实践中——这些是真正可控且可累积的工程优势。
+5. **警惕压缩能力的结构性不对称**：应用层压缩永远受限于信息劣势。不要过度投入"更智能的摘要算法"，而是将资源投入到缓存友好的架构设计和规范的 [Harness Engineering](ch05/061-harness-engineering.html) 实践中——这些是真正可控且可累积的工程优势。
 
 ## 1. Architecture of State
 
@@ -1402,7 +1479,7 @@ Codex 实验性 context management 将常被统称为「记忆」的内容拆成
 
 ---
 
-## Ch02.017 Headroom：上下文压缩与缓存稳定化框架（live zone + CCR + RawValue 字节级 patch）
+## Ch02.019 Headroom：上下文压缩与缓存稳定化框架（live zone + CCR + RawValue 字节级 patch）
 
 > 📊 Level ⭐⭐⭐⭐ | 16.1KB | `entities/headroom-context-compression-cache-stabilization.md`
 
@@ -1601,7 +1678,7 @@ Schema 语义没变，但 **bytes 稳定了**。
 
 ---
 
-## Ch02.018 视觉 AI 的下一前沿是代码：a16z 关于视觉生成范式转移的论述
+## Ch02.020 视觉 AI 的下一前沿是代码：a16z 关于视觉生成范式转移的论述
 
 > 📊 Level ⭐⭐⭐⭐ | 14.3KB | `entities/a16z-com-the-next-frontier-of-visual-ai-is-code.md`
 
@@ -1730,7 +1807,7 @@ VIGA 与 Articraft3D 是这一方向的代表项目：
 
 ---
 
-## Ch02.019 LLM Wiki 架构
+## Ch02.021 LLM Wiki 架构
 
 > 📊 Level ⭐⭐⭐⭐ | 8.6KB | `entities/llm-wiki-architecture.md`
 
@@ -1834,7 +1911,7 @@ LLM Wiki 体现了一种范式转移：从"检索已有知识"到"构建可演�
 
 ---
 
-## Ch02.020 OneReason：快手将推理注入推荐基模的系统性尝试
+## Ch02.022 OneReason：快手将推理注入推荐基模的系统性尝试
 
 > 📊 Level ⭐⭐⭐⭐ | 7.5KB | `entities/onereason-kuaishou-reasoning-recommender-system.md`
 
@@ -1959,98 +2036,7 @@ OneReason 把推荐基模的 Reasoning 补上了关键一步。下一步是打�
 
 ---
 
-## Ch02.021 Agent Skill 编写指南
-
-> 📊 Level ⭐⭐⭐⭐ | 7.2KB | `entities/agent-skill-writing.md`
-
-## Overview
-Agent Skill = **岗位职责说明书 + 操作SOP + 避坑指南**的合集。让通用大模型秒变领域专家，不改变模型本身，通过结构化上下文注入实现。
-核心设计哲学：**渐进式披露**（Progressive Disclosure）——AI 的上下文窗口不会被所有 Skill 细节塞满，只有在需要时才加载必要信息。
-
-## Skill 目录结构
-```
-my-skill/
-├── SKILL.md         # 必须：YAML元数据 + Markdown正文
-├── scripts/         # 可选：可执行脚本（Python/Bash等）
-├── references/       # 可选：参考文档（API说明、详细指南等）
-└── assets/          # 可选：静态资源（模板、图片等）
-```
-
-## 渐进式披露三阶段
-| 阶段 | AI 行为 | 对应比喻 |
-|------|---------|---------|
-| 发现 | 只加载 name + description，轻量判断是否匹配 | 外卖骑手看订单概要 |
-| 激活 | 加载完整 SKILL.md 到上下文 | 骑手接单看详情 |
-| 执行 | 按需加载 references/ 或执行 scripts/ | 看地图/联系客户 |
-
-## SKILL.md 格式
-### YAML 元数据字段
-```yaml
----
-name: pdf-processing
-description: 从PDF中提取文本和表格、填写表单、合并文件。当用户需要处理PDF文档时使用此技能。
-license: Apache-2.0
-compatibility: "Python 3.10+, uv 包管理器"
-metadata:
-  author: your-team
-  version: "1.0"
----
-```
-| 字段 | 必须 | 说明 |
-|------|------|------|
-| name | 是 | 小写字母、数字、连字符，不超过64字符，必须与父目录名一致 |
-| description | 是 | 核心！告诉Agent何时激活，最多1024字符，要包含关键词 |
-| license | 否 | 许可证 |
-| compatibility | 否 | 环境要求 |
-| metadata | 否 | 自定义键值对 |
-| allowed-tools | 否 | 实验性，预批准工具列表 |
-> ⚠️ **90%的人踩的坑**：description 不准确或缺少关键词 → Agent 根本不激活 Skill。
-
-## 子页面
-- [高质量编写规范](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing-practices.md) — 6 条核心编写原则
-- [评估与迭代](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing-evaluation.md) — 触发测试、功能测试、基线对比方法论
-- [进阶模式与治理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing-advanced.md) — Anthropic 5 种进阶模式、安装部署、YAML 完整规范、实战调试案例
-
-## Related
-- [Hermes Agent](ch03/060-hermes-agent.html) — Skill 机制是 Hermes 的核心特性之一
-- [OpenClaw 架构解析](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/openclaw-architecture.md) — OpenClaw 内置 Skill 系统实现
-- [MemOS Hermes 插件](https://github.com/QianJinGuo/wiki-public/blob/main/entities/memos-hermes-plugin.md) — MemOS 的 Skill 管理能力
-- [原始文章存档](https://mp.weixin.qq.com/s/six9MKhvBgyZyUvyAIujTA)
-- [Skill 设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-design-patterns.md) — 5种设计模式系统指南
-
-## 深度分析
-### 渐进式披露的工程价值
-渐进式披露（Progressive Disclosure）不只是一个 UX 模式，更是一种**上下文经济学**。当 Agent 需要在数千个 Skill 中做选择时，每次都加载完整文档会迅速耗尽上下文窗口。分阶段加载机制让 AI 在"发现阶段"只获取最小线索，在"激活阶段"才注入完整指令，在"执行阶段"才调用外部资源。这种分层策略本质上是在用空间换时间和精度。
-
-### Description 字段的决定性作用
-文章指出"90%的人踩的坑"集中在 description 字段，其核心问题在于：**Agent 的激活逻辑本质上是语义匹配**，而不是精确查找。如果 description 缺少领域关键词，Agent 的路由层就无法将用户请求正确路由到这个 Skill。这意味着 description 的编写质量直接决定了 Skill 是否被触发。一个好的 description 需要包含触发场景的多个变体（同义词、场景描述、用户可能的表达方式），而不仅仅是功能堆砌。
-
-### 评估方法论的核心逻辑
-对比评估（with_skill vs without_skill）的设计体现了**增量价值度量**的思想。Skill 的价值不在于它做了什么，而在于它相比基线模型带来了什么提升。通过 delta 指标（pass_rate、time_seconds、tokens）可以量化 Skill 对最终效果的影响。但关键在于：断言设计必须可验证、可观察、可计数——模糊的评估标准只会产生噪音而非信号。
-
-### Agentic 脚本的设计约束
-脚本设计规范中，"避免交互式提示"被作为硬性要求提出，这是因为 Agent 运行在非交互式 Shell 环境中。这揭示了一个核心原则：**工具的调用方式必须与执行环境匹配**。其他约束（--help、幂等性、空运行支持、有意义的退出码）都服务于同一个目标：让 AI 能够可靠地预测和验证脚本行为，而不是在运行时遭遇意外。
-
-## 实践启示
-### 从最小可用 Skill 开始
-不要试图一开始就设计一个"完美"的 Skill。正确的姿势是：从真实任务中提炼，从 2-3 个测试用例开始。先让 Skill 能工作，再通过评估结果迭代优化。过于宏大的设计只会让 Skill 变得臃肿且难以调试。
-
-### Description 编写要"多触点"
-在编写 description 时，需要考虑用户会用哪些自然语言表达来请求这个功能。建议列出至少 5-10 种不同的触发方式，包括正式请求、口语化表达、错误尝试场景等。例如，"PDF处理"的 description 不仅要写"处理PDF文档"，还应该包含"提取PDF内容"、"合并PDF文件"、"填写PDF表单"等具体场景。
-
-### 用评估驱动迭代
-建立**量化反馈闭环**：每次修改 Skill 后，运行评估对比 with_skill 和 without_skill 的差异。重点关注"带 Skill 才通过"的断言，这些是 Skill 真正产生价值的地方。如果某些断言在两种配置下都通过，说明这不是 Skill 的增量贡献，可以考虑移除。
-
-### Scripts 作为 Skill 的延伸
-当 Skill 中的描述性知识不足以完成复杂任务时，应该将重复性操作封装为 scripts。但必须遵循 agentic 脚本规范：非交互式、有 --help、支持 --dry-run、幂等性、结构化输出。这些约束不是负担，而是让 AI 能够可靠调用脚本的信任基础设施。
-## 相关实体
-
-- [gene/gep — evomap×清华 提出的「策略基因」经验对象框架（arxiv 2604.15097）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gene-gep-evomap-qinghua-strategy-genes-arxiv-2604-15097-2026.md)
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/prompt-engineering-guide.md)
-
----
-
-## Ch02.022 Hugging Face AI Agent 术语表：Model / Agent / Scaffolding / Harness / Context Engineering / Policy / Tool / Skill / Sub-agent 完整区分
+## Ch02.023 Hugging Face AI Agent 术语表：Model / Agent / Scaffolding / Harness / Context Engineering / Policy / Tool / Skill / Sub-agent 完整区分
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 27.9KB | `entities/huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent.md`
 
@@ -2074,7 +2060,7 @@ metadata:
 
 ## 相关实体
 - [Harness Engineering 第三代工程范式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-第三代工程范式.md)
-- [Cursor Harness Model Production Floor](ch01/195-cursor-harness-model-production-floor.html)
+- [Cursor Harness Model Production Floor](ch01/105-cursor-harness-model-production-floor.html)
 - [Fudan Peking Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fudan-peking-ahe-agentic-harness-engineering.md)
 - [From Agent Protocol To Harness Skill](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-agent-protocol-to-harness-skill.md)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
@@ -2405,7 +2391,7 @@ Environment/Rollout/Reward/Trainer 这四个概念，直接对应强化学习（
 
 ---
 
-## Ch02.023 反向审计 Prompt 范式 — 从 VB 50 行 Codex 自我蒸馏到 5 行核心
+## Ch02.024 反向审计 Prompt 范式 — 从 VB 50 行 Codex 自我蒸馏到 5 行核心
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 25.6KB | `entities/reverse-audit-prompt-paradigm-codex-5-line-version.md`
 
@@ -2665,199 +2651,11 @@ worker 边界、skill description 触发词、producer 链路回执——这三�
   - [Agent 可靠性工程与持续改进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-reliability-engineering-skillify-continuous-improvement.md)
   - [Skill 工程化设计：把 Agent 当算法用](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-engineering-ai-as-algorithm.md)
 - **同 prompt 工程 / 范式**：
-  - [Claude Managed Agents](ch01/461-claude-managed-agents.html)（prompt 工程的边界探索）
+  - [Claude Managed Agents](ch01/102-claude-managed-agents.html)（prompt 工程的边界探索）
   - [AI 蜜罐：对抗 AI 智能体](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-powered-honeypots-turning-the-tables-on-malicious-ai-agents.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/wiki-pending-concepts-roadmap.md)
 
 → [原文存档](https://mp.weixin.qq.com/s/1D3E6CHLMP1fjZgPevNrGg)
-
----
-
-## Ch02.024 Hermes Agent 自进化机制源码解析
-
-> 📊 Level ⭐⭐⭐⭐⭐ | 15.6KB | `entities/hermes-agent-self-evolving.md`
-
-## 核心定位
-Hermes Agent 是一个通用日常 AI Agent 脚手架，相比 Claude Code（专注文档编程），定位更广泛：覆盖问答、代码、分析、创作、工具执行等全场景任务，支持 Telegram/Discord/微信多平台。
-**Self-Evolving 不等于 RL**：Hermes 虽提供 `rl_start_training` / `rl_get_results` 等工具调用自家 Tinker-Atropos 训练平台，但文章解析的 self-improve 机制**不依赖模型权重更新**，而是通过以下三层记忆系统实现能力积累：
-
-## 三层记忆架构
-| 层级 | 机制 | 作用 | 
-|------|------|------| 
-| **Memory** | 会话自动加载，Agent 无需主动调用 | 被动回忆用户偏好 | 
-| **Skills** | 主动 `skill_view` 加载 + 自主维护（create/patch/delete） | 主动调用、显式管理复杂操作流程 | 
-| **Session Search** | FTS5 全文索引 + 相关性排序 + 会话分组 | 从历史会话中找回具体经验 | 
-
-## Skills 系统设计
-Hermes 为 Skills 设计了三种工具：
-
-- **`skills_list`**：列出所有可用技能
-- **`skill_view`**：加载特定技能（回复前通读所有相关技能）
-- **`skill_manage`**：维护技能（create/patch/edit/delete/write_file/remove_file）
-
-### skill_manage Schema
-支持六种操作：create / patch / edit / delete / write_file / remove_file
-触发条件（写入 System Prompt）：
-> 完成复杂任务（调用工具 ≥5 次）、修复棘手报错、或摸索出实用流程后，要用 `skill_manage` 保存这套方法为技能
-
-### Skill 加载原则
-> 回复前，请先通读所有技能。若某项技能与任务匹配，哪怕部分相关，都必须 `skill_view` 加载并严格遵循指令执行。宁可多加载无关技能，也绝不遗漏关键流程、坑点和工作规范。
-
-## Session Search 技术方案
-- **FTS5 全文索引**：所有消息实时索引到 SQLite FTS5 虚拟表
-- **相关性排序**：按关键词匹配度排序结果
-- **会话分组**：取最相关的几个会话
-- **LLM 提取**：从候选会话中提取与当前任务相关的经验
-
-## 完整 Self-Improve 流程示例
-以"整理 HN 头条摘要发到 Telegram"为例：
-1. 用户发起任务
-2. Agent 启动会话，加载 Memory（用户偏好）
-3. Agent 查看 Skills（是否有相关沉淀流程）
-4. Agent 执行任务，过程中调用工具 ≥5 次 → 触发 skill_manage 沉淀流程
-5. 任务完成，结果写入 Session
-6. 下次类似任务：Memory 提供偏好 + Skills 提供流程 + Session Search 找回经验
-→ 每次任务起点比上一次更高
-
-## 与 Claude Code / OpenClaw 的关键差异
-|| 维度 | Claude Code | Hermes Agent | OpenClaw || 
-||------|-------------|--------------|-----------|| 
-|| 定位 | Code Agent 专用 | 通用日常助手 | 消息网关+Agent || 
-|| System Prompt | 静态为主 | 大量动态 skill/memory 注入 | 动态 skill || 
-|| 自进化 | 依赖 skill 机制 | Memory + Skills + Session Search 三层 | 无 || 
-|| 工具集 | 开发工具为主 | Web/浏览器/多模态/多平台 | MCP 扩展 || 
-|| 架构 | 单一 Agent | 多 profile 隔离 | 消息网关为核心 || 
-**架构区别**：
-
-- **OpenClaw**：围绕消息网关包了一层 Agent（消息→Agent→工具）
-- **Hermes**：围绕学习型 Agent 包了一层消息网关（Agent 能力→多平台出口）
-
-## 多 Agent Profiles 配置
-Hermes 支持创建多个完全隔离的 profile，每个拥有独立的配置、记忆、skill、会话和 SOUL.md。
-
-### 典型团队配置
-```bash 
-hermes profile create designer --clone 
-hermes profile create programmer --clone 
-hermes profile create researcher --clone 
-``` 
-
-### 各角色 SOUL.md 示例
-**设计师** (`~/.hermes/profiles/designer/SOUL.md`)：
-```markdown 
-
-# Soul
-You are an expert at creating hand-drawn illustrations that explain 
-AI, machine learning, and software engineering concepts. 
-``` 
-**程序员** (`~/.hermes/profiles/programmer/SOUL.md`)：
-```markdown 
-You are my staff engineer. Terse, direct, pragmatic. 
-You read code before you write code. 
-Always check: does this already exist? Are there tests? 
-``` 
-**研究员** (`~/.hermes/profiles/researcher/SOUL.md`)：
-```markdown 
-You are my deep researcher for AI/ML space. 
-Cover four streams: GitHub trending, big tech announcements, 
-fresh papers, social pulse. Lead with what changed since yesterday. 
-``` 
-
-## 目录结构
-``` 
-~/.hermes/ 
-├── config.yaml           # 主配置 
-├── .env                  # API keys 
-├── SOUL.md               # Agent 身份 (#1 system prompt) 
-├── memories/ 
-│   ├── MEMORY.md         # Agent 事实记忆 (2200 字符) 
-│   └── USER.md           # 用户画像 (1375 字符) 
-├── skills/               # 所有 skill 
-├── sessions/             # 会话元数据 
-├── state.db              # SQLite + FTS5 全文搜索 
-├── cron/ 
-│   ├── jobs.json         # 定时任务 
-│   └── output/           # 任务输出 
-└── logs/ 
-``` 
-
-## 自然语言 Cron
-Hermes 内置 scheduler，用自然语言描述即可自动转换：
-```bash 
-
-# 工作日早上 9 点
-/cron add "0 9 * * 1-5" "Prepare daily digest" 
-
-# 每两小时
-/cron add "every 2h" "Check server status" 
-
-# 附加 skill
-/cron add "every 1h" "Summarize feeds" --skill blogwatcher 
-``` 
-
-## 自进化 skill 与 Curator
-### 触发条件
-- 完成复杂任务（≥5 次工具调用）
-- 遇到错误并找到可行路径
-- 用户纠正了做法
-- 发现非平凡工作流
-
-### Curator 维护
-- **触发**：空闲 2 小时 + 距上次运行 7 天
-- **自动转换**：30 天未用 → stale，90 天未用 → archive
-- **LLM 审查**：最多 8 轮迭代决定保留/patch/合并/归档
-- **快照**：每次运行前自动 tar.gz 备份
-
-## GEPA 离线优化
-GEPA（Genetic-Pareto Prompt Evolution）是独立于 Hermes runtime 的离线优化管线：
-1. 读取当前 skill
-2. 生成评估数据集（合成/真实会话/golden set）
-3. LLM-as-judge 按 rubric 评分
-4. 约束门：测试 100% 通过、<15KB、缓存兼容
-5. 以 PR 形式提交最优变体
-成本：每次优化 $2-10（无需 GPU）
-
-## 深度分析
-1. **Self-Evolving ≠ RL：不改权重的进化范式**
-   主流认知将 Agent 能力提升等同于 RLHF 或模型微调，但 Hermes 的 self-improve 机制完全不触及模型权重。它通过三层记忆系统（Memory 记结论、Skill 存方法、Session Search 召回试错过程）实现渐进式能力积累，每次会话起点比上一次更高。这种「显式知识沉淀」路线的计算成本远低于训练，且结果可审计、可回滚，对生产环境更友好。
-2. **三层记忆激活模式的三要素设计**
-   Memory（被动注入）、Skill（主动加载）、Session Search（按需召回）构成互补的三要素：Memory 保证关键事实常驻上下文，Skill 让 Agent 主动调用经过验证的流程，Session Search 在用户提及历史时触发原始推理轨迹回溯。三者激活频率和方式各异但互相增强，共同避免「重复发明轮子」。这一设计与 Claude Code 的七层记忆架构（7-layer-memory-architecture）形成有趣对照——两者都通过多层记忆解决上下文有限问题，但 Hermes 更强调 Agent 自主维护而非被动积累。
-3. **Memory 写入的 Prompt 注入防线是 Self-Improving 的安全基座**
-   Hermes 在 MEMORY.md / USER.md 写入前增加了正则匹配防护层，拦截 prompt injection、role hijack、凭据泄露等威胁模式。这个设计常被忽略，但它实际上是 self-improving 能否安全运转的前提——若攻击者能通过「remember this」持久化污染 system prompt，整个进化机制反而会成为攻击载体。相比之下，多数 Agent 框架将 memory 视为纯存储问题，忽略了写入安全。
-4. **Skill_Manage 的「宁可多加载」原则重构了工具调用语义**
-   System Prompt 明确要求 Agent「宁可多加载无关技能，也绝不遗漏关键流程」。这将 skill 加载从「精准匹配」转变为「保守加载」，本质是用少量额外 token 换取了漏检风险的急剧下降。该原则与 Claude Code 的工具设计哲学（将常用操作封装为独立工具而非用通用 shell 替代）一脉相承——降低模型调用复杂度和出错率是跨框架共识。
-5. **Session Search 的价值在于捕获「失败的推理轨迹」**
-   Memory 记结论、Skill 记方法，但真正有价值的往往是试错过程中的错误假设和顿悟时刻。Session Search 的核心创新在于：它不是返回原始对话，而是用廉价模型（如 Gemini Flash）生成「问题→尝试过程→最终解法」的摘要，实现信息提炼的同时控制 token 成本。这一设计对错误模式学习和经验传承尤为重要。
-
-## 实践启示
-1. **为 Agent 设计 skill 触发规则时，以「工具调用次数」而非「任务时长」为阈值**
-   复杂任务往往体现为连续工具调用，而非单次长时间操作。Hermes 以 ≥5 次工具调用作为沉淀 skill 的触发条件，直接关联认知负荷而非表面耗时，更精准。自行搭建 Agent 时可参考此阈值，并根据领域任务复杂度适当调整。
-2. **Memory 文件写入前必须加注入检测，不可用作纯存储**
-   若在生产环境中为 Agent 添加 memory 机制，必须同步实现 prompt 注入防护。正则匹配虽非完美但足够轻量，可覆盖「ignore previous instructions」「you are now」等典型模式。若已有更完善的 LLM-based 安全方案（如 dual-llm guard），可替代正则方案。
-3. **Session Search 应作为会话结束后的自动归档步骤，而非用户触发才运行**
-   Hermes 的 session_search 是用户主动触发（提及「上次」「还记得」等），但更高效的做法是在每次会话结束时自动索引本次对话。这样当用户问起历史时，搜索结果已经就绪，不需要依赖用户的显式回忆措辞。实现上可在会话关闭钩子中调用 FTS5 索引 API。
-4. **Skill 的 Curator 机制值得直接复用：空闲触发 + LLM 迭代审查 + 快照备份**
-   Hermes Curator 的三要素——空闲 2 小时触发、LLM 8 轮迭代决定保留/patch/合并/归档、运行前自动 tar.gz 快照——是一套可独立移植的技能生命周期管理方案。Curator 的存在解决了「技能越积越多、无人维护」的维护困境，而非仅在 creation 时提供价值。
-5. **Profile 隔离机制是团队多角色场景的必要设计**
-   Hermes 的多 profile（designer / programmer / researcher）支持完全隔离的配置、记忆、skill 和 SOUL.md。对应到工程实践：为每个角色维护独立身份定义（SOUL.md）和专属技能集，可避免通用 Agent 在混合任务中的上下文污染问题。这是比单一 system prompt 更可扩展的多租户方案。
-
-## 相关页面
-→ [原文存档](https://mp.weixin.qq.com/s/OcCtw7lrAvXKwOoIH_Gxsg)
-→ [Claude Code Prompt Source Analysis](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-prompt-source-analysis.md) — Claude Code 提示词体系对比
-→ [Agent Context Management Architecture Patterns](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-context-management-architecture-patterns.md) — Agent 上下文管理工程模式
-→ [Agent Harness Context Management Working Set](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-context-management-working-set.md) — Agent Harness 上下文管理
-
-## 相关实体
-- [Memento-Skills — 技能外部记忆让 Agent 自进化（arXiv 2603.18743）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/memento-skills-agent-self-evolving.md)
-- [SkillOS: Learning Skill Curation for Self-Evolving Agents](ch04/277-skillos-learning-skill-curation-for-self-evolving-agents.html)
-- [Self-Evolving Agents 系统性综述](https://github.com/QianJinGuo/wiki-public/blob/main/entities/self-evolving-agents-survey.md)
-- [Hermes Self-Improving 闭环详解（winty）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-self-improving-loop-winty.md)
-- [Agent 自我改进的六条路](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-self-improvement-six-mechanisms.md)
-- [SkillOS: Learning Skill Curation for Self-Evolving Agents](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-os-learning-skill-curation-self-evolving-agents.md)
-
-## Related
-
-- `Hermes Agent Loop 架构`
 
 ---
 
@@ -2989,7 +2787,7 @@ MAX_DEPTH = 2
 - [原始文章存档](https://mp.weixin.qq.com/s/2xFei8dMx99lc-iyrZZrww)
 - [Harness Engineering 七层框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-7-layers-framework.md)
 - [Claude Code vs OpenClaw 记忆系统 — 向量数据库必要性反思](https://github.com/QianJinGuo/wiki-public/blob/main/entities/读完-claude-code-和-openclaw-的-memory-源码我对agent记忆需要向量数据库这件事产生了怀疑.md)
-- [Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式](ch05/066-harness-engineering.html)
+- [Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式](ch05/061-harness-engineering.html)
 - [Agent 原理、架构与工程实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-engineering-principles-architecture-practice.md)
 
 ## 深度分析
@@ -3211,8 +3009,8 @@ BashTool 的 prompt 已经复杂到像高风险工具专用操作 SOP（定义 g
 - [SkillClaw](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skillclaw.md)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-skill-system-winty.md)
 - [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-prompt-context-harness.md)
-- [AI Agent 记忆系统架构](ch04/107-how-ai-agent-memory-works.html)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/299-tencent-vibe-coding-to-agentic-engineering-backend.html)
+- [AI Agent 记忆系统架构](ch04/113-how-ai-agent-memory-works.html)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/303-tencent-vibe-coding-to-agentic-engineering-backend.html)
 - [Agent Memory System Design](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-system-design.md)
 - [KAIROS — Claude Code 常驻协作范式](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/kairos-claude-code-paradigm.md)
 - [Thin Harness Fat Skills](https://github.com/QianJinGuo/wiki-public/blob/main/entities/thin-harness-fat-skills.md)

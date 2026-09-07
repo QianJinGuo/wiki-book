@@ -107,7 +107,7 @@ RTK / Caveman / headroom / context-mode 站在数据流的不同位置，取舍�
 
 ## 相关实体
 
-- [Harness Engineering](../ch05/066-harness-engineering.html)
+- [Harness Engineering](../ch05/061-harness-engineering.html)
 - [Claw-SWE-Bench](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claw-swe-bench-harness-evaluation-benchmark-tokenrhythm.md) — Pareto 成本分析
 - [快手 RCA Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rca-agent-kuaishou-guo-yongliang-qcon-2026.md) — Workflow 快思考+Agent 慢思考
 - [Skill 版本对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-version-comparison-five-principles-winty.md) — Token/时延门禁

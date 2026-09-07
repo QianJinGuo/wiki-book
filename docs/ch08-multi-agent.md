@@ -10,8 +10,8 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 1 |
-| ⭐⭐ 工程师 | 需编程基础 | 3 |
+| ⭐ 入门 | 零基础可读 | 2 |
+| ⭐⭐ 工程师 | 需编程基础 | 2 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 7 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 9 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 2 |
@@ -97,7 +97,46 @@ Google DeepMind 联合 **Schmidt Sciences、Cooperative AI Foundation、ARIA**�
 
 ---
 
-## Ch08.002 Graph Engineering：从单循环到多节点编排
+## Ch08.002 OpenClaw 多智能体团队搭建实战经验
+
+> 📊 Level ⭐ | 4.8KB | `entities/openclaw-multi-agent-team-practice.md`
+
+# OpenClaw 多智能体团队搭建实战经验
+
+> 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.8**，已按导航页（MOC）重建；
+> 原文备份见 `_archive/hub-rewrite-2026-09-07/openclaw-multi-agent-team-practice.md`，一手来源仍见下方 sources。
+
+## 机制与论文
+- [AgentScope Java Harness Framework 2.0 — 企业级 Agent 分布式场景的 Harness 实现 (Java 2.0 重大升级)](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentscope-java-harness-framework-enterprise-distributed.md) — AgentScope Java全版
+- [深度拆解 Hermes Agent 记忆系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-memory-system-openclaw-comparison.md) — 记忆成本账四层体系15260字rv10最深版
+- [Agent Harness 架构设计与实现：生产级 Agent 系统落地指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture-design-production-guide.md) — 七层金字塔生产指南
+- [17种Agent架构演进：控制流设计的完整演化史](https://github.com/QianJinGuo/wiki-public/blob/main/entities/17-agent-architectures-evolution.md) — 17架构系统拆解高价值
+- [Harness 到底是什么？看看 OpenClaw、Hermes、Claude Code 的演绎吧](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-7-layers-openclaw-hermes-claude-code-p1anu.md) — 三框架演绎七层模型12857字rv9
+- [AI Agent 架构设计（七）：Skills 系统设计（OpenClaw、Claude Code、Hermes Agent 对比）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-system-design-three-way-comparison.md) — 三框架skill系统设计对比
+- [Microsoft Build 2026：微软 AI 独立日 —— 7 款 MAI 模型 + Scout 智能体](https://github.com/QianJinGuo/wiki-public/blob/main/entities/microsoft-build-2026-mai-models-scout-agent.md) — Build 2026：MAI独立日13755字rv9全版
+- [Hermes Agent 深度解析（阿里云/飞樰）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-deep-dive.md) — 自进化内外双路径+四维工程7934字rv9全版
+- [HiClaw v1.1.0 — Kubernetes 集群部署与 Hermes Worker 运行时](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hiclaw-v110-k8s-hermes-worker.md) — HiClaw K8s Controller-Reconciler架构分析
+
+## 工程实践
+- ['长周期 Agent 详解：从 Ralph Loop 到可接管 Harness'](https://github.com/QianJinGuo/wiki-public/blob/main/entities/long-running-agent-ralph-loop-handover-harness-ruofei.md) — 三类漂移+5张卡治理12390字rv10全版
+- [wow-harness v3：AI 开发的治理协议](https://github.com/QianJinGuo/wiki-public/blob/main/entities/wow-harness-v3-governance-protocol.md) — 事件溯源跨session治理协议
+- [Claude Code Openclaw Memory Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-openclaw-memory-comparison.md) — 记忆系统对比rv9
+- [基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-2.md) — 环境准备步骤篇
+- [Claude Code Dynamic Workflows 多Agent编排](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-dynamic-workflows-multi-agent-orchestration.md) — Dynamic Workflows主版32k
+- [Claude Code Agent Teams 实战：怎么拆任务、控权限、收证据](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-agent-teams-task-decomposition-ruofei.md) — 拆任务控权限
+- [Hermes Agent 满配 12 层配置完整指南（从裸装到 24h Agent 团队）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-12-layer-full-configuration-guide.md) — 12层满配指南11566字rv9
+- [OpenCLAW 完全指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-comprehensive-guide.md) — OpenClaw系统教程5760字
+- [Openclaw Multi Agent Team Practice V2](ch04/356-openclaw-multi-agent-team-practice-v2.html) — 七Agent花园团队：专精胜于全能12180字全版
+- [扣子 3.0 协作系统：项目化 + Agent 编排 + 工具链打通](https://github.com/QianJinGuo/wiki-public/blob/main/entities/coze-3-0-collaboration-system.md) — 扣子协作系统
+- [扣子 3.0 多 Agent 协同实战：指挥所有 Agent 的 Agent + 5 人团队 6 步流水线](https://github.com/QianJinGuo/wiki-public/blob/main/entities/coze-3-multimagent-team-orchestration-wangheige.md) — 三案例实战报告
+- [Waylens OpenClaw 多智能体平台 EKS+Operator 改造案例](https://github.com/QianJinGuo/wiki-public/blob/main/entities/waylens-openclaw-multi-agent-eks-operator-case.md) — EKS+CRD+Operator平台自管理
+- [Hermes+Kimi K2.6 多Agent军团实战教程](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-k2-6-tutorial.md) — 六Profile军团实战9590字全教程
+- [我用阿里 AgentScope 复刻了一个 WorkBuddy — 从开源框架到可运行 Agent 的实践拆解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/我用阿里-agentscope-复刻了一个-workbuddy.md) — Toolkit权限四层工具架构
+- [OpenAgents Workspace：多 Agent 协作平台](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openagents-workspace-multi-agent-collaboration-itech.md) — Agent孤岛问题：Workspace+Launcher+Network SDK
+
+---
+
+## Ch08.003 Graph Engineering：从单循环到多节点编排
 
 > 📊 Level ⭐⭐ | 12.5KB | `entities/graph-engineering-loop-to-graph-tencent.md`
 
@@ -190,7 +229,7 @@ Graph 不是回到 ReAct 之前的老工作流。老工作流节点是死代码�
 ## 关联
 
 - [Loop Engineering: 把反馈循环放进工程现场](https://github.com/QianJinGuo/wiki-public/blob/main/entities/loop-engineering-feedback-control-system.md) — Loop Engineering 是 Graph 的底层基础
-- [Harness Engineering](ch05/066-harness-engineering.html) — Harness 是每个 Loop 节点的基础结构
+- [Harness Engineering](ch05/061-harness-engineering.html) — Harness 是每个 Loop 节点的基础结构
 - [LangGraph 底层原理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/langgraph-state-machine-under-the-hood.md) — 最成熟的 Graph Engineering 框架
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — 工程范式全景
 
@@ -250,7 +289,7 @@ Graph 体系要防"为了优化指标而牺牲本质"，需要三个不可动摇
 
 ---
 
-## Ch08.003 微软 Agent Framework 全栈指南（Python）
+## Ch08.004 微软 Agent Framework 全栈指南（Python）
 
 > 📊 Level ⭐⭐ | 6.1KB | `entities/microsoft-agent-framework-python-zizhi.md`
 
@@ -293,52 +332,6 @@ Python 侧的开发体验设计良好：`pip install agent-framework` 后，用 
 - [Microsoft Agent Framework Tools Overview Provider Matrix](https://github.com/QianJinGuo/wiki-public/blob/main/entities/microsoft-agent-framework-tools-overview-provider-matrix.md)
 - [Agentscope Java Harness Framework Enterprise Distributed](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentscope-java-harness-framework-enterprise-distributed.md)
 - [New And Improved Agent Governance Intelligent Workflows Connected App Exp](https://github.com/QianJinGuo/wiki-public/blob/main/entities/new-and-improved-agent-governance-intelligent-workflows-connected-app-exp.md)
-
----
-
-## Ch08.004 OpenClaw 多智能体团队搭建实战经验
-
-> 📊 Level ⭐⭐ | 5.4KB | `entities/openclaw-multi-agent-team-practice.md`
-
-## 花园多智能体团队（7个Agent）
-1. **花园生图助手** — Nanobana + Seedream 模型，定义审美偏好
-2. **花园资讯助手** — 每日自动抓取AI动态，整理日报推送
-3. **花园开发助手** — 手机飞书远程控制 Claude Code
-4. **花园投资助手** — 个股数据分析、走势指标、买卖建议
-5. **花园社区助手** — Moltbook 运营、内容发布、评论互动
-6. **花园写作助手** — 写作搭档：记忆风格、搜索资料、梳理大纲
-7. **花园智能专家** — 协调各Agent协作处理复杂任务
-
-## 核心设计原则
-- **每个 Agent 一个飞书 Bot** — 像在公司群里 @不同同事
-- **单 Agent 只做一件事** — 不堆叠技能，模块化设计
-- **主管 Agent 协调** — 智能专家了解所有 Agent 的能力，复杂任务编排
-- **零人工干预** — 日报生成、股票分析等已做到每日自动运行
-
-## 深度分析
-ConardLi 的实践经验揭示了多智能体团队从"安装了什么"到"能做什么"的关键跃迁。核心洞察是：**Agent 不是设计出来的，是用出来的**——从每日最高频需求出发逐个搭建，而非一开始就规划完整的体系。
-**不做全能 Agent 的三大理由**：上下文污染（一个 Agent 的注意力被多领域术语分散）、技能冲突（开发协议权限对写作助手多余且有安全风险）、人设冲突（投资助手的严谨与写作助手的有温度无法共存）。这对应了 Agent 设计的最小权限原则和关注点分离原则。
-**联邦学习效应**：多 Agent 团队的价值不仅在于并行处理，更在于各 Agent 在自己领域持续优化形成的能力积累。当生图助手积累了审美偏好、投资助手积累了金融模型、写作助手学会了风格偏好，整个团队的能力在各自维度上持续进化，这是单一全能 Agent 难以实现的。
-
-## 实践启示
-- **从高频场景切入**：不要试图规划完美的 Agent 体系，先观察自己每天重复最高频的任务是什么，从那里开始一个个搭建
-- **人设即边界**：每个 Agent 的人设（role + behavior + communication style）就是它的边界，定义清楚比塞更多技能更重要
-- **主管 Agent 的协调价值**：当任务需要多个 Agent 协作时，主管 Agent 的存在使得复杂任务的编排成为可能，而不是让用户自己决定该 @谁
-- **Bot 即入口**：每个 Agent 绑定独立飞书 Bot 的设计降低了使用门槛——用户不需要学习复杂的命令或工作流，只需要像在群里 @同事一样自然地对话
-
-## 实践经验
-- Agent 不是设计出来的，是用出来的 — 从每日最高频需求出发逐个搭建
-- 写了 Agent Skill 后要反复调试，确保工具调用准确
-- 多 Agent 团队的价值在于"联邦学习"——各 Agent 在自己的领域持续优化
-→ [原文存档](https://mp.weixin.qq.com/s/RpR14rInw0ZWh4PFLPD1QA)
-
-## 相关实体
-- [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](ch04/353-openclaw-multi-agent-team-practice-v2.html)
-- [基于 Amazon EKS 和 Graviton 构建多租户 AI Agent 平台：OpenClaw on Kubernetes 实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-multi-tenant-ai-agent-on-eks-graviton-openclaw-k8s-practice.md)
-- [Multi-Agent 架构在零售供应链运营中的实践：贯穿数据、洞察与行动 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/multi-agent-architecture-retail-practice.md)
-- [你不知道的 Agent 原理架构与工程实践](ch04/180-agent-principle-architecture-engineering-practice.html)
-- [Agent 原理、架构与工程实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-engineering-principles-architecture-practice.md)
-- [OpenCLAW 完全指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-comprehensive-guide.md)
 
 ---
 
@@ -573,7 +566,7 @@ AI 的最大价值可能不在通用场景而在你领域的特定痛点——�
 - [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](https://github.com/QianJinGuo/wiki-public/blob/main/entities/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session.md)
 - [Factory Mission Multi Agent Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/factory-mission-multi-agent-architecture.md)
-- [Openclaw Multi Agent Team Practice V2](ch04/353-openclaw-multi-agent-team-practice-v2.html)
+- [Openclaw Multi Agent Team Practice V2](ch04/356-openclaw-multi-agent-team-practice-v2.html)
 
 ## 原文链接
 
@@ -1242,10 +1235,10 @@ Symphony 把 skill 当作"系统资产"来管理，而不只是提示词里附�
 
 ## 相关实体
 - [Agent Development Crawl Walk Run Crewai Iterative](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-development-crawl-walk-run-crewai-iterative.md)
-- [Agent Orchestration](ch01/087-agent-orchestration.html)（AWS — 多 Agent 编排对照）
+- [Agent Orchestration](ch01/114-agent-orchestration.html)（AWS — 多 Agent 编排对照）
 - [Meta Skill Skill Orchestration Opensquilla Jay](https://github.com/QianJinGuo/wiki-public/blob/main/entities/meta-skill-skill-orchestration-opensquilla-jay.md)（笨小葱 — 单 Skill 编排对照）
 - [Ai Agent Tool Count Trap](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-tool-count-trap.md)（execute_code 算子的极简设计同源思想）
-- [Agentic Design System From Chatbot To Orchestration](ch01/008-agentic-design-system-from-chatbot-to-orchestration.html)
+- [Agentic Design System From Chatbot To Orchestration](ch01/007-agentic-design-system-from-chatbot-to-orchestration.html)
 
 ## 3rd Source 原文存档
 → [openJiuwen 开源 Jiuwen Symphony 技能编排与分发系统 — CSDN 2026-06-17](https://mp.weixin.qq.com/s/l7219b4sFVsrxzMFZwiv-Q)
@@ -1297,7 +1290,7 @@ Language models forget the moment they finish replying. Memory is everything the
 > [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-model-research-latest-directions.md)
 
 - [memory agent systems cobanov](https://github.com/QianJinGuo/wiki-public/blob/main/entities/memory-agent-systems-cobanov.md)
-- [AI Agent 记忆系统架构](ch04/107-how-ai-agent-memory-works.html)
+- [AI Agent 记忆系统架构](ch04/113-how-ai-agent-memory-works.html)
 - [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学](https://github.com/QianJinGuo/wiki-public/blob/main/entities/when-ai-agents-learn-to-forget-amazon-bedrock-agentcore-memory-philosophy.md)
 - [Hermes Agent 记忆系统 vs OpenClaw 记忆观](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-memory-system.md)
 - [深度拆解 Hermes Agent 记忆系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-memory-system-openclaw-comparison.md)
@@ -1473,7 +1466,7 @@ Grab 的多 Agent 系统接入数据库和代码生成能力，存在真实风�
 ## 相关实体
 - [Baixing Ontoz Enterprise Ontology Multi Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/baixing-ontoz-enterprise-ontology-multi-agent.md)
 - [Dipg Ant Insurance Host Research Verify Offline Closed Loop](https://github.com/QianJinGuo/wiki-public/blob/main/entities/dipg-ant-insurance-host-research-verify-offline-closed-loop.md)
-- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/087-building-ai-agents-for-business-support-using-amazon-bedrock.html)
+- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/095-building-ai-agents-for-business-support-using-amazon-bedrock.html)
 - [Vercel Com How Superset Built The Ide For Ai Agents On Vercel](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vercel-com-how-superset-built-the-ide-for-ai-agents-on-vercel.md)
 - [Low Code Api Integration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/low-code-api-integration.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/multi-agent-coordination.md)
@@ -1659,11 +1652,11 @@ Warp 起家是「最好用的现代终端」，现在通过 Oz 把战线推到�
 - 终端是开发者每天都开的入口
 - 从终端 → 终端里集成 Agent → 多个 Agent 协作需要 orchestration → 自然演化到云端控制平面
 
-对比：Cursor 从编辑器切入，Replit 从云开发环境切入，[AgentCore](ch04/303-agentcore-managed-harness.html) 从云厂商基础设施切入——四条路径都在收敛到同一个目标（**企业级 Agent 控制平面**），但起点完全不同。Warp 的路径有「终端无关于 IDE」的优势，可以兼容 VS Code、Cursor、JetBrains 的用户。
+对比：Cursor 从编辑器切入，Replit 从云开发环境切入，[AgentCore](ch04/307-agentcore-managed-harness.html) 从云厂商基础设施切入——四条路径都在收敛到同一个目标（**企业级 Agent 控制平面**），但起点完全不同。Warp 的路径有「终端无关于 IDE」的优势，可以兼容 VS Code、Cursor、JetBrains 的用户。
 
 ### 与 AgentCore 的微妙差异
 
-Oz 和 AWS [AgentCore](ch04/303-agentcore-managed-harness.html) 在功能列表上有大量重叠，但定位有微妙不同：
+Oz 和 AWS [AgentCore](ch04/307-agentcore-managed-harness.html) 在功能列表上有大量重叠，但定位有微妙不同：
 
 | 维度 | Oz | AgentCore |
 |---|---|---|
@@ -1689,9 +1682,9 @@ Oz 和 AWS [AgentCore](ch04/303-agentcore-managed-harness.html) 在功能列表�
 ## 相关实体
 
 - [Agentcore Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentcore-harness.md) — AgentCore Harness 综述
-- [Agentcore Managed Harness](ch04/303-agentcore-managed-harness.html) — Managed Harness 定位
+- [Agentcore Managed Harness](ch04/307-agentcore-managed-harness.html) — Managed Harness 定位
 - [Agent Harness Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture.md) — Agent Harness 架构
-- [Agent Harnesses Are Dead Long Live Agent Harnesses](ch04/167-agent-harnesses-are-dead-long-live-agent-harnesses.html) — Harness 演进观察
+- [Agent Harnesses Are Dead Long Live Agent Harnesses](ch04/173-agent-harnesses-are-dead-long-live-agent-harnesses.html) — Harness 演进观察
 - [Agent Memory Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture.md) — Agent Memory 架构综述
 - [57U6Xekcgtvkqxnnqg9Djq](https://github.com/QianJinGuo/wiki-public/blob/main/entities/57u6xekcgtvkqxnnqg9djq.md) — Obsidian + Claude Code 集成（个人版的跨 harness 记忆）
 - [Agent Orchestration Patterns](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-orchestration-patterns.md) — Agent 编排模式
@@ -1806,7 +1799,7 @@ Oz 和 AWS [AgentCore](ch04/303-agentcore-managed-harness.html) 在功能列表�
 - [Agent Skills vs Coze/Dify/n8n](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skills-vs-coze-dify-n8n-lowcode-yexiaocha.md)
 - [字节 Trae Harness 指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/bytedance-trae-harness-engineering-guide.md)
 - [Meta Skill](ch07/041-meta-skill.html) —— "Skill 的 Skill"（OpenSquilla 抽象层）
-- [SkillOpt](ch05/054-skillopt.html) —— 训练 Skill 文档（与 Coze 3.0 的 Skill 包机制不同）
+- [SkillOpt](ch05/055-skillopt.html) —— 训练 Skill 文档（与 Coze 3.0 的 Skill 包机制不同）
 
 ## 深度分析
 
@@ -1968,7 +1961,7 @@ A2A 是 Google 主导的开放协议，类似 MCP之于工具调用、MPI 之于
 
 ## 相关实体
 
-- [Harness Engineering](ch05/066-harness-engineering.html) — Agent 时代的工程范式
+- [Harness Engineering](ch05/061-harness-engineering.html) — Agent 时代的工程范式
 - [快手 RCA Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rca-agent-kuaishou-guo-yongliang-qcon-2026.md) — Multi-Agent 架构实践
 - [AI Coding Agent Token 成本控制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/token-cost-control-coding-agent-devinyzeng-tencent.md) — Orchestrator-Worker 模式
 - [原文归档](https://mp.weixin.qq.com/s/bhZsfLaNVd9T69SE0cLbvA)
@@ -2396,7 +2389,7 @@ CLAUDE.md 里写了但常被漏的规则 → 创建 workflow，每条规则对�
 
 ## 相关实体
 
-- [Agent Orchestration](ch01/087-agent-orchestration.html) — 多 Agent 编排的控制平面、状态管理、human-in-the-loop 审批
+- [Agent Orchestration](ch01/114-agent-orchestration.html) — 多 Agent 编排的控制平面、状态管理、human-in-the-loop 审批
 - [四种 Sub Agent 模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/four-sub-agent-patterns.md) — 内联工具/Fan-Out/Agent Pool/Teams 的控制粒度与状态保留对比
 - [Sub-Agent vs Agent Team 选型](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sub-agent-vs-agent-team-selection.md) — 上下文边界设计准则与五种编排原语
 - [Claude Code 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-architecture.md) — Claude Code 整体架构设计
@@ -3028,7 +3021,7 @@ frontmatter（name / 用于路由的 description「含适用/不适用/典型触
 
 - **[Claude Code Dynamic Workflows 多Agent编排](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-dynamic-workflows-multi-agent-orchestration.md)**（696 行 9 source）：jiagoux/thariq 视角（6 模式/3 失败/10 场景）↔ 古法程序员视角（spec 写作/skill 三层/gate 四态/edge 三种）。**互补不重复**
 - **[高德 Spec as AI OS：反熵增架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/spec-as-aios-anti-entropy-architecture-gaode-ai-native-series-2.md)**（274 行）：都强调 spec 结构化；高德更宏观（OS 级反熵增），古法程序员更落地（文件目录/skill 分层/edge 种类）
-- **[Harness Engineering](ch05/066-harness-engineering.html)**（290 行 5 source）：理论 + 5 制品 + 3 阵营；古法程序员的"skill 三层 + edge 三种 + gate 四态" = **Harness 概念的工程实现映射**
+- **[Harness Engineering](ch05/061-harness-engineering.html)**（290 行 5 source）：理论 + 5 制品 + 3 阵营；古法程序员的"skill 三层 + edge 三种 + gate 四态" = **Harness 概念的工程实现映射**
 
 ## 深度分析
 
@@ -3059,7 +3052,7 @@ frontmatter（name / 用于路由的 description「含适用/不适用/典型触
 → [原文存档](https://mp.weixin.qq.com/s/Q_k2duvAIv7hm9y6VxH3mQ)
 
 - [Claude Code 多智能体协作体系设计](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-multi-agent-collaboration-多智能体协作体系设计.md)
-- [Harness Engineering](ch05/066-harness-engineering.html)
+- [Harness Engineering](ch05/061-harness-engineering.html)
 - [Agent Loop 工程手册 8 个未解问题](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-loop-engineering-handbook-8-questions-chen-jin-tencent-self-2026.md)
 - [jiagoux 架构师视角 Dynamic Workflows](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-dynamic-workflows-jiagoux-architect-perspective.md)
 - [Agent Harness 架构深度](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture-deep-dive-aksahy.md)

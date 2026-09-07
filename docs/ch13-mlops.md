@@ -393,7 +393,7 @@ Vijay Viswanathan 等人的研究论文，揭示了奖励模型（Reward Model�
 - [JOYAI Echo 长视频框架（京东）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/joyai-echo-long-video-framework-jd.md)
 - [GPT-Image-2 完全指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gpt-image-2-完全指南附大量玩法案例顺便开源我的生图-skill.md)
 - [腾讯陈进 Agent Loop 工程手册](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-loop-engineering-handbook-8-questions-chen-jin-tencent-self-2026.md)
-- [Harness Engineering](ch05/066-harness-engineering.html)
+- [Harness Engineering](ch05/061-harness-engineering.html)
 - [ConardLi Harness Engineering 综合性指南（+ Beautiful Article 第 2 来源）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-comprehensive-guide-conardli.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/reinforcement-learning-rlhf.md)
 
@@ -844,7 +844,7 @@ NICE 真正的差异化定位是**「理论 + 内涵级 + 排序题」三位一�
 - [AI 评估的三种方法](https://github.com/QianJinGuo/wiki-public/blob/main/entities/evals-three-methods-of-ai-evaluation.md)
 - [Agent Skill 写作评估](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing-evaluation.md)
 - [AI 工作面试与模型评估](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-job-interview-model-evaluation-mollick.md)
-- [Inngest 2026 AI 评测报告](ch01/312-inngest-ai-in-production-the-2026-benchmark-report.html)
+- [Inngest 2026 AI 评测报告](ch01/322-inngest-ai-in-production-the-2026-benchmark-report.html)
 - [Agent Harness 生产设计指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture-design-production-guide.md)
 - [Agent 工程原则](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-engineering-principles-architecture-practice.md)
 - [SkillClaw Hyman 阿里 Skill 框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skillclaw-hyman-nightly-evolution-alibaba.md)

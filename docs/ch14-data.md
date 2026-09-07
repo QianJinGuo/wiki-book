@@ -625,7 +625,7 @@ Amazon Quick is a comprehensive, generative AI-powered business intelligence ser
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/098-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/009-karpathy-vibe-coding-agentic-engineering.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
 - [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/两万字详解claude-code源码核心机制.md)
 
@@ -644,7 +644,7 @@ Amazon Quick is a comprehensive, generative AI-powered business intelligence ser
 <div style="line-height: 1.8;margin: 0;padding: 0">
 
 ## 相关实体
-- [From System Of Record To System Of Intelligence](ch01/424-from-system-of-record-to-system-of-intelligence.html)
+- [From System Of Record To System Of Intelligence](ch01/432-from-system-of-record-to-system-of-intelligence.html)
 - [Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md)
 - [London Met Police Big Tech Data Requests](https://github.com/QianJinGuo/wiki-public/blob/main/entities/london-met-police-big-tech-data-requests.md)
 - [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-goal-runtime-architecture-state-persistence-judge-closed-loop.md)
@@ -1268,7 +1268,7 @@ E2E 验证阶段是真正的瓶颈：必须在真实硬件上构造真实环境�
 
 - [特斯拉百万年薪招数据标注员，朝九晚五，无需ai经验](https://github.com/QianJinGuo/wiki-public/blob/main/entities/特斯拉百万年薪招数据标注员朝九晚五无需ai经验.md)
 - [system over model, tested: reproducing mythos's freebsd find](https://github.com/QianJinGuo/wiki-public/blob/main/entities/system-over-model-tested-reproducing-mythoss-freebsd-find-on-20260606.md)
-- [from doer to director: the ai mindset shift](ch01/022-from-doer-to-director-the-ai-mindset-shift.html)
+- [from doer to director: the ai mindset shift](ch01/108-from-doer-to-director-the-ai-mindset-shift.html)
 - [How my non-engineering team at Sentry learned to ship](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-my-non-engineering-team-at-sentry-learned-to-ship-20260606.md)
 - [Unexpected lessons from an AI-assisted prototyping experiment](https://github.com/QianJinGuo/wiki-public/blob/main/entities/adobe-design-unexpected-lessons-ai-prototyping-2026.md)
 
@@ -1425,7 +1425,7 @@ Data + AI Summit 的共识数据：Agent 循环（推理、工具调用、prompt
 - Amazon Redshift 推出带有集成数据湖查询引擎的
 ## 相关实体
 - [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-multi-tenant-ai-agent-on-eks-graviton-openclaw-k8s-practice.md)
-- [How Amazon Finance Streamlines Regulatory Inquiries By Using](ch11/128-how-amazon-finance-streamlines-regulatory-inquiries-by-using.html)
+- [How Amazon Finance Streamlines Regulatory Inquiries By Using](ch11/129-how-amazon-finance-streamlines-regulatory-inquiries-by-using.html)
 - [Using Amazon Bedrock Agentcore Openclaw Multi 2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-2.md)
 - [Introducing Claude Platform On Aws](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-claude-platform-on-aws.md)
 - [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-一周综述amazon-bedrock-agentcore-付款适用于-aws-的-agent-工具套件等2026-年-5-月-11-日.md)
@@ -1820,7 +1820,7 @@ ServiceNow 本身是 ITSM / HR / 客户支持自动化领域的巨头，发布 E
 
 - [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md) — Agent 原理架构的综合性参考
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md) — Agent 范式跃迁的视角
-- [Karpathy Vibe Coding Agentic Engineering](ch04/098-karpathy-vibe-coding-agentic-engineering.html) — 同源访谈的另一标题版本
+- [Karpathy Vibe Coding Agentic Engineering](ch04/009-karpathy-vibe-coding-agentic-engineering.html) — 同源访谈的另一标题版本
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md) — AWS Bedrock AgentOps 的规模化运营实践
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验-v2.md) — 多智能体团队搭建的实战经验
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏-v2.md) — OpenClaw 多智能体系统化教程
@@ -2430,7 +2430,7 @@ Agentic AI 的成本失控根源在于其执行路径的非确定性——传统
 - [飞来汇借助 Aws Security Agent 构建跨境支付应用的智能安全防线](https://github.com/QianJinGuo/wiki-public/blob/main/entities/飞来汇借助-aws-security-agent-构建跨境支付应用的智能安全防线.md)
 - [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-aws-smgs-uses-an-ai-powered-conversational-assistant-to-.md)
 - [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/滴滴国际化客服质检智能化之路基于-amazon-bedrock-的多语种多业务线质检实践.md)
-- [Powering Agentic Ai Sales Strategy With Amazon Bedrock Agent](ch04/346-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.html)
+- [Powering Agentic Ai Sales Strategy With Amazon Bedrock Agent](ch04/349-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.html)
 - [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](https://github.com/QianJinGuo/wiki-public/blob/main/entities/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/data-infrastructure.md)
 
@@ -2659,7 +2659,7 @@ partition_by: "bucket(device_id, 50), day(timestamp)"
 - **与 [Databricks Storage Ecosystem 开放共享治理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/databricks-storage-ecosystem-opensharing-govern-everything-2026.md)**：都讲 Lakehouse + 开放表格式；Databricks 是"生态平台"阵营（Delta Lake 锁定），阿里云是"原生集成"阵营（中立兼容）——**3 大阵营中的两极**
 - **与 750B MoE PD-Disaggregation AWS EFA（尚未入库）**：同属顶级云厂技术体系；本文是**数据基础设施**，750B MoE 是**推理基础设施**
 - **与 [Amazon Quick 加速企业数据到 AI 决策](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md)**：都讲企业数据 → AI；Quick 是**消费侧**（无 SQL 业务查询），本文是**生产侧**（Kafka 实时入湖）
-- **与 [Harness Engineering](ch05/066-harness-engineering.html)**：都讲"工程化收敛"；Harness 是 AI 智能体工程，零 ETL 是数据基础设施工程；Harness 强调"通用能力内聚"，零 ETL 强调"通用入湖能力内聚"——**同一思想跨域应用**
+- **与 [Harness Engineering](ch05/061-harness-engineering.html)**：都讲"工程化收敛"；Harness 是 AI 智能体工程，零 ETL 是数据基础设施工程；Harness 强调"通用能力内聚"，零 ETL 强调"通用入湖能力内聚"——**同一思想跨域应用**
 
 ## 深度分析
 
@@ -2695,7 +2695,7 @@ partition_by: "bucket(device_id, 50), day(timestamp)"
 - [Databricks Storage Ecosystem 开放共享治理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/databricks-storage-ecosystem-opensharing-govern-everything-2026.md)
 - 750B MoE PD-Disaggregation AWS EFA（尚未入库）
 - [Amazon Quick 加速企业数据到 AI 决策](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md)
-- [Harness Engineering](ch05/066-harness-engineering.html)
+- [Harness Engineering](ch05/061-harness-engineering.html)
 - [ConardLi Harness Engineering 综合性指南（+ Beautiful Article 第 2 来源）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-comprehensive-guide-conardli.md)
 - [美团海报生成 AIGC PosterCraft/PosterOmni/PosterReward](https://github.com/QianJinGuo/wiki-public/blob/main/entities/meituan-poster-aigc-postercraft-posteromni-posterreward-meigen.md)
 
