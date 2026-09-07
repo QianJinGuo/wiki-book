@@ -1,6 +1,6 @@
 # Codex /goal：长任务Agent的目标运行时
 
-> 📊 Level ⭐⭐⭐⭐ | 16.0KB | `entities/codex-goal-agent-runtime.md`
+> 📊 Level ⭐⭐⭐⭐ | 16.1KB | `entities/codex-goal-agent-runtime.md`
 
 ## 核心论点
 `/goal` 把一个长期目标放进了 Codex 的**运行时里**：目标有状态，过程有记账，完成要审计，预算到了要收束。
@@ -77,14 +77,14 @@ budget_limit 模板：到点了，别开新工作，把进展、剩下的事、�
 本文与以下页面形成呼应：
 
 - [高德伴行Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gaode-ai-companion-agent.md)（工作现场六组件）
-- [Hermes Agent](../ch03/061-hermes-agent.html)（Karpathy 观点被多次引用）
+- [Hermes Agent](../ch03/060-hermes-agent.html)（Karpathy 观点被多次引用）
 - [Agent Memory Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture.md)（状态为什么得落在模型外面）
 
 ## 相关页面
 - [原文存档：Codex /goal 实现拆解](https://mp.weixin.qq.com/s/7vqPgUmfrpIHtf__Z4M_KA)
 
 ## 相关实体
-- [Codex /goal: The Six-Hour Run That Survived a Five-Hour Pause](../ch09/082-codex-goal-six-hour-run.html)
+- [Codex /goal: The Six-Hour Run That Survived a Five-Hour Pause](../ch09/081-codex-goal-six-hour-run.html)
 - [Cline releases open-source agent runtime SDK](../ch01/537-cline-releases-open-source-agent-runtime-sdk.html)
 - [Cline releases open-source agent runtime SDK](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cline-open-source-agent-runtime-sdk.md)
 

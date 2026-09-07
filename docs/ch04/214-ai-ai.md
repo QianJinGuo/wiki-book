@@ -1,6 +1,6 @@
 # AI 原生搭建指南：都在用AI，公司为什么更慢了？
 
-> 📊 Level ⭐⭐⭐ | 6.2KB | `entities/ai-native-org-guide-slowdown.md`
+> 📊 Level ⭐⭐⭐ | 6.3KB | `entities/ai-native-org-guide-slowdown.md`
 
 ## 核心论点
 AI 通过两条路径优化组织复杂度：

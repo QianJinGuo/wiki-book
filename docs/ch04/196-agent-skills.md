@@ -1,6 +1,6 @@
 # Agent Skills 系统性综述：表示→获取→检索→进化
 
-> 📊 Level ⭐⭐⭐ | 7.6KB | `entities/agent-skills-comprehensive-survey.md`
+> 📊 Level ⭐⭐⭐ | 7.7KB | `entities/agent-skills-comprehensive-survey.md`
 
 ## 核心问题
 你让 AI Agent 帮你写一段代码，它做得很好。第二天你让它做一件几乎一样的事，它又从头推理一遍——卡住、报错、重试。就好像它完全没做过上一次。**这不是模型不够聪明。而是它缺了一种人类天然具备的能力：把重复经验变成可复用的肌肉记忆。**

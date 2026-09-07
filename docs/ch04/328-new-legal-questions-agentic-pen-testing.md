@@ -1,6 +1,6 @@
 # New legal questions: agentic pen testing
 
-> 📊 Level ⭐⭐⭐⭐ | 8.5KB | `entities/agentic-penetration-testing-legal-questions.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.6KB | `entities/agentic-penetration-testing-legal-questions.md`
 
 # New legal questions: agentic pen testing
 

@@ -1,6 +1,6 @@
 # Anthropic 最新博客：Prompt Caching 是构建 Claude Code 的一切
 
-> 📊 Level ⭐⭐⭐ | 22.3KB | `entities/anthropic-prompt-caching-claude-code-agihunt.md`
+> 📊 Level ⭐⭐⭐ | 22.4KB | `entities/anthropic-prompt-caching-claude-code-agihunt.md`
 
 # Anthropic 最新博客：Prompt Caching 是构建 Claude Code 的一切
 原创 J0hn AGI Hunt

@@ -1,6 +1,6 @@
 # GitHub + AWS 多云转折：AI 编码激增 14B commits 压垮 GitHub，Microsoft 跨云买 AWS 容量
 
-> 📊 Level ⭐ | 4.3KB | `entities/microsoft-github-aws-ai-capacity-crunch-2026-06.md`
+> 📊 Level ⭐ | 4.4KB | `entities/microsoft-github-aws-ai-capacity-crunch-2026-06.md`
 
 # GitHub + AWS 多云转折：AI 编码激增 14B commits 压垮 GitHub，Microsoft 跨云买 AWS 容量
 

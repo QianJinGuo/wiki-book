@@ -1,6 +1,6 @@
 # GitHub Breached — Employee Device Hack Led to Exfiltration of 3,800+ Internal Repos
 
-> 📊 Level ⭐⭐⭐ | 6.4KB | `entities/github-investigating-teampcp-claimed-17cc77.md`
+> 📊 Level ⭐⭐⭐ | 6.5KB | `entities/github-investigating-teampcp-claimed-17cc77.md`
 
 ## 核心要点
 

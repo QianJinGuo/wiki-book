@@ -1,6 +1,6 @@
 # The Evolution of Cassandra Data Movement at Netflix
 
-> 📊 Level ⭐ | 3.9KB | `entities/the-evolution-of-cassandra-data-movement-at-netflix.md`
+> 📊 Level ⭐ | 4.0KB | `entities/the-evolution-of-cassandra-data-movement-at-netflix.md`
 
 # The Evolution of Cassandra Data Movement at Netflix
 

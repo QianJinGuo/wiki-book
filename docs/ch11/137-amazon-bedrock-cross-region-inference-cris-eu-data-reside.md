@@ -1,6 +1,6 @@
 # Amazon Bedrock Cross-Region Inference (CRIS): EU Data Residency and GDPR Compliance
 
-> 📊 Level ⭐⭐⭐⭐ | 13.2KB | `entities/amazon-bedrock-cross-region-inference-cris-eu-gdpr.md`
+> 📊 Level ⭐⭐⭐⭐ | 13.3KB | `entities/amazon-bedrock-cross-region-inference-cris-eu-gdpr.md`
 
 # Amazon Bedrock Cross-Region Inference (CRIS): EU Data Residency and GDPR Compliance
 

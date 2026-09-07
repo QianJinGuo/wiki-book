@@ -1,6 +1,6 @@
 # EntryPoint Hijacking
 
-> 📊 Level ⭐ | 7.4KB | `entities/entrypointhijacking.md`
+> 📊 Level ⭐ | 7.5KB | `entities/entrypointhijacking.md`
 
 → [原文存档](https://ipurple.team/2026/05/13/entrypoint-hijacking/)
 

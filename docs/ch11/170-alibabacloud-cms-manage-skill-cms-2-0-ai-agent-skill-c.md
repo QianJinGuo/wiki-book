@@ -1,6 +1,6 @@
 # alibabacloud-cms-manage Skill：阿里云 CMS 2.0 可观测接入的 AI Agent Skill 化（CLI 6 步 + K8s ack-onepilot 自动注入 + 两阶段确认 + 5 大实战场景）
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 23.7KB | `entities/alibabacloud-cms-manage-skill-natural-language-observability.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 23.8KB | `entities/alibabacloud-cms-manage-skill-natural-language-observability.md`
 
 # alibabacloud-cms-manage Skill：阿里云 CMS 2.0 可观测接入的 AI Agent Skill 化
 

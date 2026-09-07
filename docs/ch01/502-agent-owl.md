@@ -1,6 +1,6 @@
 # Agent框架OWL原理详解
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 38.6KB | `entities/agent框架owl原理详解.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 38.7KB | `entities/agent框架owl原理详解.md`
 
 [Agent框架Owl原理详解](https://mp.weixin.qq.com/s/B7sa6g6_51ya1LG0dfydKw)
 

@@ -1,6 +1,6 @@
 # Intercom, now called Fin, launches an AI agent whose only job is managing another AI agent
 
-> 📊 Level ⭐⭐⭐ | 7.5KB | `entities/intercom-now-called-fin-launches-an-ai-agent-whose-only-job-is-managing-another-.md`
+> 📊 Level ⭐⭐⭐ | 7.6KB | `entities/intercom-now-called-fin-launches-an-ai-agent-whose-only-job-is-managing-another-.md`
 
 ## 核心要点
 - 评分：v=7 × c=9 = 63

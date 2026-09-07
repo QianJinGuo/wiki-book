@@ -1,6 +1,6 @@
 # Domain Expertise Has Always Been the Real Moat
 
-> 📊 Level ⭐ | 8.8KB | `entities/brethorstingcom-blog-2026-05-domain-expertise-has-always-been-the-.md`
+> 📊 Level ⭐ | 8.9KB | `entities/brethorstingcom-blog-2026-05-domain-expertise-has-always-been-the-.md`
 
 # Domain Expertise Has Always Been the Real Moat
 

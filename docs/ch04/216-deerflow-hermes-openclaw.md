@@ -1,6 +1,6 @@
 # DeerFlow · Hermes · OpenClaw 架构区别深度对比
 
-> 📊 Level ⭐⭐⭐ | 6.2KB | `entities/deerflow-hermes-openclaw-comparison.md`
+> 📊 Level ⭐⭐⭐ | 6.3KB | `entities/deerflow-hermes-openclaw-comparison.md`
 
 # DeerFlow · Hermes · OpenClaw 架构区别深度对比
 | | 🦌 DeerFlow | 🧠 Hermes | 🦞 OpenClaw |

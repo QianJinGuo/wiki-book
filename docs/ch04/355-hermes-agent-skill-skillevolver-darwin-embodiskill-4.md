@@ -1,6 +1,6 @@
 # Hermes Agent Skill 互优化：SkillEvolver × Darwin × EmbodiSkill 4 轮闭环
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 25.2KB | `entities/hermes-agent-skill-crossover-optimization.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 25.3KB | `entities/hermes-agent-skill-crossover-optimization.md`
 
 # Hermes Agent Skill 互优化：SkillEvolver × Darwin × EmbodiSkill 4 轮闭环
 

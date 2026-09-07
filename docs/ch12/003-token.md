@@ -1,6 +1,6 @@
 # Token 撤销触发设备擦除的安全漏洞
 
-> 📊 Level ⭐ | 10.6KB | `entities/cybersecurityreach-revoke-token-wipe-computer.md`
+> 📊 Level ⭐ | 10.7KB | `entities/cybersecurityreach-revoke-token-wipe-computer.md`
 
 > → [原文存档](https://cybersecurityreach.org/investigations/ifyourevokethistokenitwillwipethecomputeroftheowner-shai-hulud-2026)
 

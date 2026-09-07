@@ -1,6 +1,6 @@
 # Securing AI Agents: AWS × Cisco AI Defense 给 MCP / A2A 加上企业级护栏
 
-> 📊 Level ⭐⭐⭐ | 10.2KB | `entities/securing-ai-agents-how-aws-and-cisco-ai-defense-scale-mcp-and-a2a.md`
+> 📊 Level ⭐⭐⭐ | 10.3KB | `entities/securing-ai-agents-how-aws-and-cisco-ai-defense-scale-mcp-and-a2a.md`
 
 # Securing AI Agents: AWS × Cisco AI Defense 给 MCP / A2A 加上企业级护栏
 
@@ -106,7 +106,7 @@ AWS 在合作中开源的 **MCP Gateway Registry** 提供"agent 和 server 治�
 
 - [U Of T Ai Worm Cleverhans Research](https://github.com/QianJinGuo/wiki-public/blob/main/entities/u-of-t-ai-worm-cleverhans-research.md)
 - [Qy_Zacztcs1Ql3Bifmbmgg](https://github.com/QianJinGuo/wiki-public/blob/main/entities/qy_zacztcs1ql3bifmbmgg.md)
-- [Claude Code Harness Deep Understanding](../ch01/261-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Understanding](../ch01/258-claude-code-harness-deep-understanding.html)
 - [Harness Engineering Core Patterns Claude Code](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-core-patterns-claude-code.md)
 - [Ai Agent Engineer Learning Roadmap Backend 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-engineer-learning-roadmap-backend-2026.md)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)

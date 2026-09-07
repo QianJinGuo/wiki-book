@@ -1,6 +1,6 @@
 # ColaOS 与 AI 原生组织
 
-> 📊 Level ⭐⭐⭐⭐ | 11.2KB | `entities/colaos-listenhub-agency-native-organization-juzi.md`
+> 📊 Level ⭐⭐⭐⭐ | 11.3KB | `entities/colaos-listenhub-agency-native-organization-juzi.md`
 
 # ColaOS 与 AI 原生组织
 

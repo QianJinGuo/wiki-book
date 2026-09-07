@@ -1,6 +1,6 @@
 # SkillX — 层次化技能知识库
 
-> 📊 Level ⭐⭐⭐ | 7.5KB | `entities/skillx-hierarchical-skill-library.md`
+> 📊 Level ⭐⭐⭐ | 7.6KB | `entities/skillx-hierarchical-skill-library.md`
 
 ## 概述
 浙大研究团队提出的 Agent 经验复用框架（arXiv:2604.04804，GitHub: zjunlp/SkillX）。核心主张：**结构化经验比原始轨迹更关键**。通过将轨迹蒸馏为三层技能体系，实现跨模型、跨任务的高效经验复用与泛化能力提升。

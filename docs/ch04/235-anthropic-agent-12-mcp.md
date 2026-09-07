@@ -1,6 +1,6 @@
 # Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式
 
-> 📊 Level ⭐⭐⭐⭐ | 28.9KB | `entities/anthropic-12-mcp-production-patterns.md`
+> 📊 Level ⭐⭐⭐⭐ | 29.0KB | `entities/anthropic-12-mcp-production-patterns.md`
 
 # Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式
 

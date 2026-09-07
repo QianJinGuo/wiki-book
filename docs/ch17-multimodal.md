@@ -102,7 +102,7 @@ Monitorability, a key downstream application of transparency, is similar between
 
 ## Ch17.002 TimeLens2: Generalist Video Temporal Grounding with Multimodal LLMs
 
-> 📊 Level ⭐ | 4.3KB | `entities/timelens2.md`
+> 📊 Level ⭐ | 4.4KB | `entities/timelens2.md`
 
 # TimeLens2: Generalist Video Temporal Grounding
 
@@ -158,7 +158,7 @@ TimeLens2-4B 平均超过 Qwen3.5-397B-A17B 约 7.5 个 mIoU 点，在全部七�
 
 ## Ch17.003 Mistral Shieldstral — Policy-Adaptive Multimodal Safety Classifier
 
-> 📊 Level ⭐ | 3.3KB | `entities/mistral-shieldstral-policy-adaptive-safety-classifier.md`
+> 📊 Level ⭐ | 3.4KB | `entities/mistral-shieldstral-policy-adaptive-safety-classifier.md`
 
 # Mistral Shieldstral — Policy-Adaptive Multimodal Safety Classifier
 
@@ -181,7 +181,7 @@ TimeLens2-4B 平均超过 Qwen3.5-397B-A17B 约 7.5 个 mIoU 点，在全部七�
 ## 对 LLM 安全工程的意义
 
 - **Guardrail 部署成本下降**：policy-adaptive 意味着一个模型服务所有部署场景，不再为每个产品/受众维护专用审核模型——与 [Bedrock Guardrails](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-guardrails-code-generation-six-patterns.md) 类平台方案形成互补（平台 vs open-weights 两种路线）
-- **审核即推理任务**：把 content moderation 从分类任务重构为 QA 任务，与 [Nova 2 prompting 审核](ch01/480-prompting-amazon-nova-2-for-content-moderation.html) 思路同源
+- **审核即推理任务**：把 content moderation 从分类任务重构为 QA 任务，与 [Nova 2 prompting 审核](ch01/481-prompting-amazon-nova-2-for-content-moderation.html) 思路同源
 - **多模态统一**：文本+图像一个接口、一个模型，规避多模态安全审核需多模型拼装的工程负担
 
 ## 相关主题
@@ -195,7 +195,7 @@ TimeLens2-4B 平均超过 Qwen3.5-397B-A17B 约 7.5 个 mIoU 点，在全部七�
 
 ## Ch17.004 SunFinance: Textract+Claude准确率90.8%的ID提取方案
 
-> 📊 Level ⭐⭐ | 7.9KB | `entities/aws-sun-finance-ai-id-extraction-fraud-detection.md`
+> 📊 Level ⭐⭐ | 8.0KB | `entities/aws-sun-finance-ai-id-extraction-fraud-detection.md`
 
 ## 核心内容
 SunFinance将AWS Textract（文档 OCR）+ Claude（智能理解）结合，ID提取准确率从79.7%提升至90.8%，成本降低91%。系统每月处理330万次ID验证，支撑信贷审批全流程。
@@ -406,7 +406,7 @@ Pixelle-Video 不同于纯研究型开源项目(如 Stability AI 的各种模型
 
 ## Ch17.006 CVPR 2026 Highlight | 清华打破多模态音频生成的「通才困境」：Omni2Sound 音频基础模型开源！
 
-> 📊 Level ⭐⭐⭐ | 12.1KB | `entities/cvpr-2026-highlight-清华打破多模态音频生成的通才困境omni2sound-音频基础模型开源.md`
+> 📊 Level ⭐⭐⭐ | 12.2KB | `entities/cvpr-2026-highlight-清华打破多模态音频生成的通才困境omni2sound-音频基础模型开源.md`
 
 > -> [原文存档](https://mp.weixin.qq.com/s/j4kBbh_JIus-nXwweZ7GRA)
 
@@ -495,7 +495,7 @@ VGGSound-Omni 基准引入的画外音（Off-screen）专属评测赛道，为�
 
 ## Ch17.007 高德 ABot-Earth 0.5：全球首个 3D 原生城市世界模型（1% 成本 + 千倍提效）
 
-> 📊 Level ⭐⭐⭐ | 12.1KB | `entities/amap-abot-earth-0.5-3d-native-world-model.md`
+> 📊 Level ⭐⭐⭐ | 12.2KB | `entities/amap-abot-earth-0.5-3d-native-world-model.md`
 
 ## 摘要
 
@@ -793,7 +793,7 @@ VGGSound-Omni 基准引入的画外音（Off-screen）专属评测赛道，为�
 
 ## Ch17.009 ICRDrag：ECCV 2026 首个上下文区域拖拽图像编辑模型
 
-> 📊 Level ⭐⭐⭐ | 9.5KB | `entities/icrdrag-context-region-drag-eccv-2026-shanghai-jiaotong.md`
+> 📊 Level ⭐⭐⭐ | 9.6KB | `entities/icrdrag-context-region-drag-eccv-2026-shanghai-jiaotong.md`
 
 # ICRDrag：ECCV 2026 首个上下文区域拖拽图像编辑模型
 
@@ -869,7 +869,7 @@ ICRDrag 两阶段课程式训练中，第二阶段用稀疏不完整掩码训练
 
 ## 实践启示
 
-1. **从单点控制到区域控制是 AI 交互的普遍趋势**。图像编辑如此，[Agent 系统](ch03/061-hermes-agent.html) 的任务控制亦然——提供精确的约束（掩码）比模糊的指示（点对）更容易获得预期的结果。在设计 Agent 交互界面时，应优先考虑「约束性输入」而非「自由文本提示」。
+1. **从单点控制到区域控制是 AI 交互的普遍趋势**。图像编辑如此，[Agent 系统](ch03/060-hermes-agent.html) 的任务控制亦然——提供精确的约束（掩码）比模糊的指示（点对）更容易获得预期的结果。在设计 Agent 交互界面时，应优先考虑「约束性输入」而非「自由文本提示」。
 
 2. **双向注意力约束比单向更适合空间一致性任务**。ICRDrag 的源-目标双向对应约束确保了编辑前后的一致性。在 [多 Agent 系统](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/multi-agent-systems.md) 中，双向通信比单向指令能更有效地维持系统状态的一致性。
 
@@ -891,7 +891,7 @@ ICRDrag 两阶段课程式训练中，第二阶段用稀疏不完整掩码训练
 - DragDiffusion（基于扩散模型的拖拽编辑方法） — 基于扩散模型的拖拽编辑
 - 扩散模型 — 图像生成与编辑的基础框架
 - [注意力机制](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/attention-mechanism.md) — Transformer 中的核心组件
-- [Hermes Agent](ch03/061-hermes-agent.html) — Agent 系统中的交互控制设计
+- [Hermes Agent](ch03/060-hermes-agent.html) — Agent 系统中的交互控制设计
 
 → [原文存档](http://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651042656&idx=3&sn=8609a7dcae8fb73c7e3aa1d8feea3180&chksm=84e6771eb391fe086132cc6c70341612c864b35fb324661218a9738f88067150f469ee82e78e#rd)
 
@@ -899,7 +899,7 @@ ICRDrag 两阶段课程式训练中，第二阶段用稀疏不完整掩码训练
 
 ## Ch17.010 Perceptron Mk1 shocks with highly performant video analysis AI model 80-90% cheaper than Anthropic, OpenAI & Google
 
-> 📊 Level ⭐⭐⭐ | 8.9KB | `entities/perceptron-mk1-video-analysis-ai.md`
+> 📊 Level ⭐⭐⭐ | 9.0KB | `entities/perceptron-mk1-video-analysis-ai.md`
 
 > 来源：[原文存档](https://venturebeat.com/technology/perceptron-mk1-shocks-with-highly-performant-video-analysis-ai-model-80-90-cheaper-than-anthropic-openai-and-google)
 
@@ -1101,7 +1101,7 @@ NEO-Unify 的成功验证了"原生统一"路线的可行性，为多模态大�
 
 ## Ch17.012 Netflix 可控 AI 视频编辑：Vera 与 VOID 模型
 
-> 📊 Level ⭐⭐⭐ | 8.4KB | `entities/netflix-controllable-ai-video-editing-vera-void.md`
+> 📊 Level ⭐⭐⭐ | 8.5KB | `entities/netflix-controllable-ai-video-editing-vera-void.md`
 
 # Netflix 可控 AI 视频编辑：Vera 与 VOID 模型
 
@@ -1198,7 +1198,7 @@ Vera 团队面临的核心挑战是：**没有公开数据集提供高质量的�
 
 ## Ch17.013 MolmoMotion：语言引导的 3D 运动预测模型
 
-> 📊 Level ⭐⭐⭐ | 7.8KB | `entities/molmomotion-language-guided-3d-motion-forecasting.md`
+> 📊 Level ⭐⭐⭐ | 7.9KB | `entities/molmomotion-language-guided-3d-motion-forecasting.md`
 
 # MolmoMotion：语言引导的 3D 运动预测
 
@@ -1283,7 +1283,7 @@ MolmoMotion 建立在 Molmo 2 视觉语言模型之上，利用其跨模态理�
 
 ## Ch17.014 FLAT: Feedforward Latent Triangle Splatting
 
-> 📊 Level ⭐⭐⭐ | 6.5KB | `entities/flat-feedforward-latent-triangle-splatting.md`
+> 📊 Level ⭐⭐⭐ | 6.6KB | `entities/flat-feedforward-latent-triangle-splatting.md`
 
 # FLAT: Feedforward Latent Triangle Splatting
 
@@ -1573,7 +1573,7 @@ Moebius 的工作与当前模型压缩领域的多个方向形成呼应：
 
 ## Ch17.017 PersonaVLM — 长期个性化多模态大模型
 
-> 📊 Level ⭐⭐⭐ | 5.7KB | `entities/personavlm-personalized-memory.md`
+> 📊 Level ⭐⭐⭐ | 5.8KB | `entities/personavlm-personalized-memory.md`
 
 ## 概述
 南京大学 + 字节跳动联合提出（CVPR 2026 Highlight）。解决核心问题：大模型是"静态系统"，而真实用户是"动态的"——偏好会改变，情绪会波动，性格会在长期互动中逐渐显现。
@@ -1637,7 +1637,7 @@ Response Stage 和 Update Stage 的解耦设计值得借鉴：交互时专注生
 
 ## Ch17.018 Xiaomi Dasheng — 通用声音基座模型 5 阶段工程实践
 
-> 📊 Level ⭐⭐⭐⭐ | 17.2KB | `entities/xiaomi-dasheng-audio-foundation-model-2026.md`
+> 📊 Level ⭐⭐⭐⭐ | 17.3KB | `entities/xiaomi-dasheng-audio-foundation-model-2026.md`
 
 ## 概述
 
@@ -1919,7 +1919,7 @@ DashengTokenizer 通过**冻结语义特征 + 仅注入声学信息**，证明**
 
 ## Ch17.019 Normalizing Trajectory Models
 
-> 📊 Level ⭐⭐⭐⭐ | 10.0KB | `entities/ntm-normalizing-trajectory-models.md`
+> 📊 Level ⭐⭐⭐⭐ | 10.1KB | `entities/ntm-normalizing-trajectory-models.md`
 
 > -> [原文存档](https://arxiv.org/abs/2605.08078)
 
@@ -2006,7 +2006,7 @@ NTM 的重要性不仅在于性能提升，更在于它揭示了扩散模型少�
 
 ## Ch17.020 豆包 Seed 2.0 Lite — Agent 前置多模态感官层
 
-> 📊 Level ⭐⭐⭐⭐ | 8.2KB | `entities/doubao-seed-2-lite.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.3KB | `entities/doubao-seed-2-lite.md`
 
 ## 核心定位
 ```

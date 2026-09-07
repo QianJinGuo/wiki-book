@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 17.4KB | `entities/claude-code-source-leak-lifecycle-analysis.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 17.5KB | `entities/claude-code-source-leak-lifecycle-analysis.md`
 
 [Claude Code Source Leak Lifecycle Analysis](https://mp.weixin.qq.com/s/uHbvBbANCU7fHwvGhsr9sw)
 

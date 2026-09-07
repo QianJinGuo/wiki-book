@@ -1,6 +1,6 @@
 # RAG vs LLM Wiki 深度对比：企业知识库架构选型指南
 
-> 📊 Level ⭐⭐⭐⭐ | 8.5KB | `entities/rag-vs-llm-wiki-enterprise-knowledge-base.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.6KB | `entities/rag-vs-llm-wiki-enterprise-knowledge-base.md`
 
 ## 评分
 - **价值**：9/10 — 系统性对比 RAG 五大痛点的根因分析 + 场景选型决策矩阵 + 趋势预判，对该 wiki 自身建设有直接参考价值

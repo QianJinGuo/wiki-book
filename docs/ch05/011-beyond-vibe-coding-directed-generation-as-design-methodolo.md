@@ -1,6 +1,6 @@
 # Beyond Vibe Coding — Directed Generation as Design Methodology
 
-> 📊 Level ⭐ | 3.8KB | `entities/beyond-vibe-coding-directed-generation-design-uxmag.md`
+> 📊 Level ⭐ | 3.9KB | `entities/beyond-vibe-coding-directed-generation-design-uxmag.md`
 
 # Beyond Vibe Coding — Directed Generation as Design Methodology
 

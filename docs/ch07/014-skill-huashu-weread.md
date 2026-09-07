@@ -1,6 +1,6 @@
 # 微信读书官方skill与huashu-weread增强版
 
-> 📊 Level ⭐⭐⭐ | 10.4KB | `entities/weread-official-skill-huashu-critical-gap.md`
+> 📊 Level ⭐⭐⭐ | 10.5KB | `entities/weread-official-skill-huashu-critical-gap.md`
 
 ## 微信读书官方skill（weread skill）
 **官方链接**：https://weread.qq.com/r/weread-skills

@@ -1,6 +1,6 @@
 # GSD 完胜 OpenSpec 和 Superpowers？源码拆完发现：三者防的是 context rot 的三道防线
 
-> 📊 Level ⭐⭐ | 6.9KB | `entities/gsd-openspec-superpowers-context-rot-three-defenses.md`
+> 📊 Level ⭐⭐ | 7.0KB | `entities/gsd-openspec-superpowers-context-rot-three-defenses.md`
 
 # GSD 完胜 OpenSpec 和 Superpowers？源码拆完发现：三者防的是 context rot 的三道防线
 

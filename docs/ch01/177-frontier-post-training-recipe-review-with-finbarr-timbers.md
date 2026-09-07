@@ -1,6 +1,6 @@
 # Frontier post-training recipe review with Finbarr Timbers
 
-> 📊 Level ⭐⭐ | 3.1KB | `entities/finbarr-timbers-frontier-post-training-recipe-review-2026.md`
+> 📊 Level ⭐⭐ | 3.2KB | `entities/finbarr-timbers-frontier-post-training-recipe-review-2026.md`
 
 # Frontier post-training recipe review with Finbarr Timbers
 

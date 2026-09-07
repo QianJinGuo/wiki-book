@@ -1,6 +1,6 @@
 # Introducing OS Level Actions in Amazon Bedrock AgentCore Browser
 
-> 📊 Level ⭐ | 7.6KB | `entities/introducing-os-level-actions-in-amazon-bedrock-agentcore-browser.md`
+> 📊 Level ⭐ | 7.7KB | `entities/introducing-os-level-actions-in-amazon-bedrock-agentcore-browser.md`
 
 > -> [原文存档](https://aws.amazon.com/blogs/machine-learning/introducing-os-level-actions-in-amazon-bedrock-agentcore-browser/)
 

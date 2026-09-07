@@ -1,6 +1,6 @@
 # Harness 工程可视化：Vibe Coding 中重建工程可控性
 
-> 📊 Level ⭐⭐⭐ | 13.0KB | `entities/routa-harness-engineering-visualization.md`
+> 📊 Level ⭐⭐⭐ | 13.1KB | `entities/routa-harness-engineering-visualization.md`
 
 # Harness 工程可视化：Vibe Coding 中重建工程可控性
 

@@ -79,7 +79,7 @@ AWS 展示的保险理赔 FNOL（First Notice of Loss）自动化方案，将 St
 ## 相关实体
 
 - [Build An Ai Powered Equipment Repair Assistant Using Amazon ](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-an-ai-powered-equipment-repair-assistant-using-amazon-.md) — AgentCore + Knowledge Base 的维修助手
-- [Building Web Search Enabled Agents With Strands And Exa](053-building-web-search-enabled-agents-with-strands-and-exa.html) — Strands SDK 搜索 Agent
+- [Building Web Search Enabled Agents With Strands And Exa](052-building-web-search-enabled-agents-with-strands-and-exa.html) — Strands SDK 搜索 Agent
 - [Enterprise Intelligent Data Query Solution Practice Based On Strands Sdk](https://github.com/QianJinGuo/wiki-public/blob/main/entities/enterprise-intelligent-data-query-solution-practice-based-on-strands-sdk.md) — Strands SDK 企业级方案
 - [Agentcore Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentcore-harness.md) — AgentCore 工程化
 - [Aws Bedrock Agentcore Doris Mcp Server](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-agentcore-doris-mcp-server.md) — AgentCore + MCP Server

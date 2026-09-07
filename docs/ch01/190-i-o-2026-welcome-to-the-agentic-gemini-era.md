@@ -1,6 +1,6 @@
 # I/O 2026: Welcome to the agentic Gemini era
 
-> 📊 Level ⭐⭐⭐ | 16.6KB | `entities/google-io-2026-agentic-gemini-era.md`
+> 📊 Level ⭐⭐⭐ | 16.7KB | `entities/google-io-2026-agentic-gemini-era.md`
 
 ## 概述
 
@@ -192,7 +192,7 @@ SynthID 三年累计标记 1000 亿张图片/视频和约 6 万年音频，新�
 
 → [原文存档](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/)
 
-- [Introducing Gemini Omni](329-introducing-gemini-omni.html)
+- [Introducing Gemini Omni](328-introducing-gemini-omni.html)
 - [Google Pm 2026 Five Developer Skills Shubham](https://github.com/QianJinGuo/wiki-public/blob/main/entities/google-pm-2026-five-developer-skills-shubham.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/vision-multimodal.md)
 

@@ -1,6 +1,6 @@
 # AI-driven layoffs aren't making business sense
 
-> 📊 Level ⭐⭐⭐ | 6.9KB | `entities/ai-driven-layoffs-business-sense-cio.md`
+> 📊 Level ⭐⭐⭐ | 7.0KB | `entities/ai-driven-layoffs-business-sense-cio.md`
 
 ## 核心要点
 - **生产力悖论**：个人任务效率提升，但团队/部门整体生产力没有改善甚至下降

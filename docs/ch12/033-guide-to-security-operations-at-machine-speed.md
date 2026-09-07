@@ -1,6 +1,6 @@
 # Guide to Security Operations at Machine Speed
 
-> 📊 Level ⭐⭐⭐ | 5.5KB | `entities/arctic-wolf-security-operations-machine-speed.md`
+> 📊 Level ⭐⭐⭐ | 5.6KB | `entities/arctic-wolf-security-operations-machine-speed.md`
 
 ## 核心要点
 - AI/机器学习正在变革安全运营（SOC），实现机器级速度的威胁检测与响应

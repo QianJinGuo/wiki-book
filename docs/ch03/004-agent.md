@@ -1,6 +1,6 @@
 # Agent 时代的生产力悖论：协作成为新瓶颈
 
-> 📊 Level ⭐⭐ | 12.5KB | `entities/agent-productivity-paradox-collaboration-bottleneck.md`
+> 📊 Level ⭐⭐ | 12.6KB | `entities/agent-productivity-paradox-collaboration-bottleneck.md`
 
 # Agent 时代的生产力悖论：协作成为新瓶颈
 

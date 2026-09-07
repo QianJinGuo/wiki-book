@@ -1,6 +1,6 @@
 # AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环
 
-> 📊 Level ⭐⭐⭐⭐ | 12.5KB | `entities/aws-bedrock-agentcore-os-level-actions-browser.md`
+> 📊 Level ⭐⭐⭐⭐ | 12.6KB | `entities/aws-bedrock-agentcore-os-level-actions-browser.md`
 
 ## 核心内容
 Amazon Bedrock AgentCore引入OS-level Actions，允许Agent直接操控GUI界面——通过Action-Screenshot-Reaction闭环实现浏览器自动化。8个原子操作覆盖鼠标、键盘、截图等OS层交互，Agent通过视觉反馈（截图）感知环境状态并决定下一步操作。
@@ -87,7 +87,7 @@ r = invoke(endpoint, sid, {"mouseClick": {"x": 410, "y": 535, "button": "LEFT"}}
 
 ## 相关实体
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-os-level-actions-in-amazon-bedrock-agentcore-browser.md)
-- [AgentCore质量优化飞轮：推荐-验证-部署闭环](../ch11/098-aws-bedrock-agentcore-quality-optimization-flywheel.html)
+- [AgentCore质量优化飞轮：推荐-验证-部署闭环](../ch11/097-aws-bedrock-agentcore-quality-optimization-flywheel.html)
 - [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-agentcore-identity-security.md)
 - [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-agentcore-doris-mcp-server.md)
 - [基于Bedrock AgentCore+Strands构建企业级智能搜索平台实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/building-enterprise-level-with-bedrock-agentcore-and-strands.md)

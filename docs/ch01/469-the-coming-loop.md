@@ -1,6 +1,6 @@
 # The Coming Loop
 
-> 📊 Level ⭐⭐⭐⭐ | 10.3KB | `entities/the-coming-loop.md`
+> 📊 Level ⭐⭐⭐⭐ | 10.4KB | `entities/the-coming-loop.md`
 
 # The Coming Loop
 

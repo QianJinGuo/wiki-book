@@ -1,6 +1,6 @@
 # OpenAI launches Daybreak to combat cyber threats
 
-> 📊 Level ⭐⭐ | 7.3KB | `entities/ciodive-openai-daybreak-cyber-threats.md`
+> 📊 Level ⭐⭐ | 7.4KB | `entities/ciodive-openai-daybreak-cyber-threats.md`
 
 > -> [原文存档](https://www.ciodive.com/news/OpenAI-Daybreak-cyber-threats/820036/)
 → [原文存档](https://www.ciodive.com/news/OpenAI-Daybreak-cyber-threats/820036/)

@@ -1,6 +1,6 @@
 # Securing the future of AI agents
 
-> 📊 Level ⭐⭐⭐ | 5.9KB | `entities/deepmind-securing-future-ai-agents.md`
+> 📊 Level ⭐⭐⭐ | 6.0KB | `entities/deepmind-securing-future-ai-agents.md`
 
 # Securing the future of AI agents
 

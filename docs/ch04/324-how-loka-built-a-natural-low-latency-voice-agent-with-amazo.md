@@ -1,6 +1,6 @@
 # How Loka Built a Natural, Low-Latency Voice Agent with Amazon Nova 2 Sonic
 
-> 📊 Level ⭐⭐⭐⭐ | 8.8KB | `entities/how-loka-built-a-natural-low-latency-voice-agent-with-amazon.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.9KB | `entities/how-loka-built-a-natural-low-latency-voice-agent-with-amazon.md`
 
 # How Loka Built a Natural, Low-Latency Voice Agent with Amazon Nova 2 Sonic
 

@@ -1,6 +1,6 @@
 # Gemini 3.5 Flash: more expensive, but Google plan to use it for everything
 
-> 📊 Level ⭐ | 5.1KB | `entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md`
+> 📊 Level ⭐ | 5.2KB | `entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md`
 
 ## 核心要点
 - Google 在 I/O 大会上发布 Gemini 3.5 Flash，直接面向公众可用，跳过预览阶段 

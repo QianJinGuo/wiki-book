@@ -1,6 +1,6 @@
 # 多模态评估器：MLLM-as-Judge 图文评估
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 13.5KB | `entities/multimodal-evaluators-mllm-as-judge-image-to-text.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 13.6KB | `entities/multimodal-evaluators-mllm-as-judge-image-to-text.md`
 
 # Multimodal evaluators: MLLM-as-a-judge for image-to-text tasks in Strands Evals
 
@@ -165,7 +165,7 @@ Strands Evals 的多模态 judge 保持了与文本 judge 完全相同的 `Case`
 ## 相关实体
 - [Yidian Tianxia Context Engineering Agentic Ai Qcon](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yidian-tianxia-context-engineering-agentic-ai-qcon.md)
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](https://github.com/QianJinGuo/wiki-public/blob/main/entities/building-multi-tenant-agents-with-amazon-bedrock-agentcore.md)
-- [Claude Code Harness Deep Understanding](261-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Understanding](258-claude-code-harness-deep-understanding.html)
 - [Aws Reinforcement Fine Tuning Llm As Judge](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-reinforcement-fine-tuning-llm-as-judge.md)
 - [Amazon Bedrock Api Security Guide](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-api-security-guide.md)
 

@@ -1,6 +1,6 @@
 # Extending MCP support for Amazon Bedrock AgentCore Gateway
 
-> 📊 Level ⭐⭐⭐⭐ | 32.5KB | `entities/amazon-bedrock-agentcore-gateway-mcp-extension.md`
+> 📊 Level ⭐⭐⭐⭐ | 32.6KB | `entities/amazon-bedrock-agentcore-gateway-mcp-extension.md`
 
 # Extending MCP support for Amazon Bedrock AgentCore Gateway
 
@@ -189,9 +189,9 @@ MCP 使工具一次集成、多 agent 复用——不要为每个 agent 单独�
 Gateway 是 agent 工具调用的单点——监控其延迟、错误率和可用性，确保不影响 agent 性能。
 
 ## 相关实体
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/147-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
+- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/146-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
 - [Mcp Serveramazon Bedrock Agentcorequick Suite](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mcp-serveramazon-bedrock-agentcorequick-suite.md)
-- [Building Ai Agents For Business Support Using Amazon Bedrock](../ch04/088-building-ai-agents-for-business-support-using-amazon-bedrock.html)
+- [Building Ai Agents For Business Support Using Amazon Bedrock](../ch04/087-building-ai-agents-for-business-support-using-amazon-bedrock.html)
 - [Amazon Quick Bedrock Agentcore Finops Chat](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-quick-bedrock-agentcore-finops-chat.md)
 - [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-os-level-actions-in-amazon-bedrock-agentcore-browser.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/tool-use-mcp-patterns.md)

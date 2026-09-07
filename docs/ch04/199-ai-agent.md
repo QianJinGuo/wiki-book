@@ -1,6 +1,6 @@
 # 你的 AI Agent 真的在受控运行吗？
 
-> 📊 Level ⭐⭐⭐ | 7.5KB | `entities/openclaw-agent-observability-session-logs-otel-sls.md`
+> 📊 Level ⭐⭐⭐ | 7.6KB | `entities/openclaw-agent-observability-session-logs-otel-sls.md`
 
 ## 深度分析
 

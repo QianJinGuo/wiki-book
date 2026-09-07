@@ -1,6 +1,6 @@
 # Bleeding Llama：Ollama 未授权内存泄漏漏洞
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 20.4KB | `entities/bleeding-llama-critical-unauthenticated-memory-leak-in-ollama.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 20.5KB | `entities/bleeding-llama-critical-unauthenticated-memory-leak-in-ollama.md`
 
 > -> [原文存档](https://www.cyera.com/research/bleeding-llama-critical-unauthenticated-memory-leak-in-ollama)
 

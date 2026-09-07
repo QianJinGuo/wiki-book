@@ -1,6 +1,6 @@
 # Model Size Scaling in 2023-2031
 
-> 📊 Level ⭐⭐⭐⭐ | 7.8KB | `entities/model-size-scaling-in-2023-2031.md`
+> 📊 Level ⭐⭐⭐⭐ | 7.9KB | `entities/model-size-scaling-in-2023-2031.md`
 
 # Model Size Scaling in 2023-2031
 

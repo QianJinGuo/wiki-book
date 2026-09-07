@@ -1,6 +1,6 @@
 # ARA — Agent-Native Research Artifact（37 作者，arXiv 2604.24658，PDF 范式终结提案）
 
-> 📊 Level ⭐⭐⭐⭐ | 13.5KB | `entities/ara-agent-native-research-artifact-37authors.md`
+> 📊 Level ⭐⭐⭐⭐ | 13.6KB | `entities/ara-agent-native-research-artifact-37authors.md`
 
 # ARA — Agent-Native Research Artifact
 

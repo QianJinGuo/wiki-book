@@ -1,6 +1,6 @@
 # Browser Harness — 自愈型浏览器 Agent 框架
 
-> 📊 Level ⭐⭐⭐⭐ | 7.8KB | `entities/browser-harness.md`
+> 📊 Level ⭐⭐⭐⭐ | 7.9KB | `entities/browser-harness.md`
 
 ## Overview
 Browser Harness（browser-use/browser-harness，~8.9K Stars）是一个基于 Chrome DevTools Protocol (CDP) 直连的自愈型浏览器 Agent 框架，核心理念是**去框架化**：薄 CDP 桥接 + mid-task 自愈机制 + domain-skills 自动沉淀。
@@ -46,7 +46,7 @@ Agent 在处理 GitHub、LinkedIn、Amazon 等特定网站时，自动沉淀交�
 | Domain Skills | ✅ 自动沉淀 | ❌ 无 | ❌ 无 | ❌ |
 | 安装复杂度 | 低（uv install -e .） | 中等 | 高（需配置 WebDriver） | 中等 |
 | 适用场景 | Agent 原生操作浏览器 | Agent 浏览器运行时 | 测试自动化 | Agent 浏览器操作 |
-与 [CLI-Anything](../ch03/053-cli-anything.html)/[OpenCLI](https://github.com/QianJinGuo/wiki-public/blob/main/entities/opencli.md)/[AutoCLI](https://github.com/QianJinGuo/wiki-public/blob/main/entities/autocli.md) 等 CLI 化方案不同，Browser Harness 走的是**浏览器原生操作**路线而非命令行封装，二者互补而非替代。
+与 [CLI-Anything](../ch03/061-cli-anything.html)/[OpenCLI](https://github.com/QianJinGuo/wiki-public/blob/main/entities/opencli.md)/[AutoCLI](https://github.com/QianJinGuo/wiki-public/blob/main/entities/autocli.md) 等 CLI 化方案不同，Browser Harness 走的是**浏览器原生操作**路线而非命令行封装，二者互补而非替代。
 
 ## 安全边界
 连接到用户真实 Chrome，遵循原则：

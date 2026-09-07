@@ -1,6 +1,6 @@
 # Rethinking Search as Code Generation
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 13.4KB | `entities/perplexity-search-as-code-generation.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 13.5KB | `entities/perplexity-search-as-code-generation.md`
 
 # Rethinking Search as Code Generation
 

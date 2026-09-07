@@ -1,6 +1,6 @@
 # Running an AI-native engineering org
 
-> 📊 Level ⭐ | 8.0KB | `entities/running-an-ai-native-engineering-org.md`
+> 📊 Level ⭐ | 8.1KB | `entities/running-an-ai-native-engineering-org.md`
 
 # Running an AI-native engineering org
 

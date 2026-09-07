@@ -1,6 +1,6 @@
 # 改进 Agent：数据挖掘视角与 LangChain 实践
 
-> 📊 Level ⭐⭐⭐ | 7.6KB | `entities/agent-improvement-data-mining-trace-framework.md`
+> 📊 Level ⭐⭐⭐ | 7.7KB | `entities/agent-improvement-data-mining-trace-framework.md`
 
 # 改进 Agent：数据挖掘视角与 LangChain 实践
 

@@ -1,6 +1,6 @@
 # Waylens OpenClaw 多智能体平台 EKS+Operator 改造案例
 
-> 📊 Level ⭐⭐⭐ | 6.6KB | `entities/waylens-openclaw-multi-agent-eks-operator-case.md`
+> 📊 Level ⭐⭐⭐ | 6.7KB | `entities/waylens-openclaw-multi-agent-eks-operator-case.md`
 
 ## 深度分析
 > AWS China Blog 2026-06-12 案例研究：车载视频 AI 厂商 Waylens 把分散在 N 台 EC2 上的 OpenClaw 多智能体平台迁移到 Amazon EKS + CRD + Operator 三层架构。核心创新是 **把平台自身运维交给 agent 自管理**——Admin agent 负责跨 agent 升级编排，Rex（Backup EKS Operator）在 Admin 故障时接管，巡检/升级/故障恢复全 agent 化。配套 aws-samples/sample-your-opc-eks-agents 一键部署仓库。

@@ -1,6 +1,6 @@
 # Claude Code 18个隐藏设置
 
-> 📊 Level ⭐⭐⭐⭐ | 12.9KB | `entities/claude-code-hidden-settings-18.md`
+> 📊 Level ⭐⭐⭐⭐ | 13.0KB | `entities/claude-code-hidden-settings-18.md`
 
 # Claude Code 18个隐藏设置
 

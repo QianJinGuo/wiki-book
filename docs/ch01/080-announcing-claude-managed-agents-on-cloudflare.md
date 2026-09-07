@@ -1,6 +1,6 @@
 # Announcing Claude Managed Agents on Cloudflare
 
-> 📊 Level ⭐ | 5.4KB | `entities/announcing-claude-managed-agents-on-cloudflare.md`
+> 📊 Level ⭐ | 5.5KB | `entities/announcing-claude-managed-agents-on-cloudflare.md`
 
 ## 核心要点
 - Cloudflare 与 Anthropic 合作，将 Claude Managed Agents 集成到 Cloudflare Sandboxes 环境 

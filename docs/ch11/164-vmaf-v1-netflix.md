@@ -1,6 +1,6 @@
 # VMAF v1: Netflix 视频质量度量的全面升级
 
-> 📊 Level ⭐⭐⭐⭐ | 7.6KB | `entities/netflix-vmaf-v1-video-quality-metric-upgrade.md`
+> 📊 Level ⭐⭐⭐⭐ | 7.7KB | `entities/netflix-vmaf-v1-video-quality-metric-upgrade.md`
 
 # VMAF v1: Netflix 视频质量度量的全面升级
 

@@ -114,7 +114,7 @@ Airbyte 的数据表明，当 Agent 能先在 Context Store 中完成实体发�
 ## 相关实体
 - [Airbyte Agents](https://github.com/QianJinGuo/wiki-public/blob/main/entities/airbyte-agents.md)
 - [Skillos Learning Skill Curation For Self Evolving Agents](277-skillos-learning-skill-curation-for-self-evolving-agents.html)
-- [Building Ai Agents For Business Support Using Amazon Bedrock](088-building-ai-agents-for-business-support-using-amazon-bedrock.html)
+- [Building Ai Agents For Business Support Using Amazon Bedrock](087-building-ai-agents-for-business-support-using-amazon-bedrock.html)
 - [Oz Multi Harness Cloud Agent Orchestration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/oz-multi-harness-cloud-agent-orchestration.md)
 - [Skill Os Learning Skill Curation Self Evolving Agents](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-os-learning-skill-curation-self-evolving-agents.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/tool-use-mcp-patterns.md)

@@ -86,7 +86,7 @@ Teams 模式下 Agent 间直接 `send_message`，主 Agent 退到监督位。这
 ## 相关实体
 
 - [Openai Codex 521 Update Appshots Goal Computer Use](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openai-codex-521-update-appshots-goal-computer-use.md)
-- [Codex Goal Six Hour Run](../ch09/082-codex-goal-six-hour-run.html)
+- [Codex Goal Six Hour Run](../ch09/081-codex-goal-six-hour-run.html)
 - [Agent Self Improvement Six Mechanisms](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-self-improvement-six-mechanisms.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
 - [Kimi Work Codex Vibe Working Paradigm Shift](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kimi-work-codex-vibe-working-paradigm-shift.md)

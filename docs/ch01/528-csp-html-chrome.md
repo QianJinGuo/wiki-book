@@ -1,6 +1,6 @@
 # 严格 CSP 下的密码窃取：HTML 注入 + Chrome 自动填充攻击
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 14.6KB | `entities/afine-csp-html-injection-password-exfiltration-attack.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 14.7KB | `entities/afine-csp-html-injection-password-exfiltration-attack.md`
 
 # 严格 CSP 下的密码窃取：HTML 注入 + Chrome 自动填充攻击
 
@@ -181,7 +181,7 @@ Content-Security-Policy:
 - "Thread by @ZeusRWA on Thread Reader App"
 - [Interaction Models](https://github.com/QianJinGuo/wiki-public/blob/main/entities/interaction-models.md)
 - [Weve Been Here Before Decompilers Fuzzers And Now Ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/weve-been-here-before-decompilers-fuzzers-and-now-ai.md)
-- [Automate Progressive Rollouts With Vercel Flags Vercel](../ch09/023-automate-progressive-rollouts-with-vercel-flags-vercel.html)
+- [Automate Progressive Rollouts With Vercel Flags Vercel](../ch09/022-automate-progressive-rollouts-with-vercel-flags-vercel.html)
 
 → [原文存档](https://afine.com/blogs/stealing-passwords-via-html-injection-under-a-strict-csp)
 - [discord 全平台端到端加密](https://github.com/QianJinGuo/wiki-public/blob/main/entities/discord-e2e-encryption.md)

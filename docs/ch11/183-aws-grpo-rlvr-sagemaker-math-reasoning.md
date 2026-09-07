@@ -1,6 +1,6 @@
 # AWS GRPO RLVR Sagemaker Math Reasoning
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 9.8KB | `entities/aws-grpo-rlvr-sagemaker-math-reasoning.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 9.9KB | `entities/aws-grpo-rlvr-sagemaker-math-reasoning.md`
 
 # Overcoming reward signal challenges: Verifiable rewards-based reinforcement learning with GRPO on SageMaker AI
 Training large language models requires accurate feedback signals, but traditional reinforcement learning (RL) often struggles with reward signal reliability. The quality of these signals directly influences how models learn and make decisions. However, creating robust feedback mechanisms can be complex and error prone. Real-world training scenarios often introduce hidden biases, unintended incentives, and ambiguous success criteria that can derail the learning process, leading to models that behave unpredictably or fail to meet desired objectives.
@@ -132,7 +132,7 @@ env["NCCL_IB_DISABLE"] = "1"  # 禁用IB，使用EFA
 
 ## 相关实体
 - [Aws Sagemaker Ai Agent Guided Workflows Finetuning](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
-- [Aws Sagemaker Capacity Aware Inference Fallback](../ch01/224-aws-sagemaker-capacity-aware-inference-fallback.html)
+- [Aws Sagemaker Capacity Aware Inference Fallback](../ch01/223-aws-sagemaker-capacity-aware-inference-fallback.html)
 - [Stochastic Parrot Thought Experiment](../ch01/160-stochastic-parrot-thought-experiment.html)
 - [Overcoming Reward Signal Challenges Verifiable Rewards Based Reinforcement Learn](https://github.com/QianJinGuo/wiki-public/blob/main/entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/llm-core-technology.md)

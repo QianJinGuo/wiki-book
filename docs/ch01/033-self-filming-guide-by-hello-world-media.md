@@ -1,6 +1,6 @@
 # Self-Filming Guide by Hello World Media
 
-> 📊 Level ⭐ | 8.1KB | `entities/self-filming-guide-by-hello-world-media-2f60dfa5e2e180cfa6efcef23c882e57.md`
+> 📊 Level ⭐ | 8.2KB | `entities/self-filming-guide-by-hello-world-media-2f60dfa5e2e180cfa6efcef23c882e57.md`
 
 # Self-Filming Guide by Hello World Media
 

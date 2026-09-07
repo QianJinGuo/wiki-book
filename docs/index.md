@@ -66,9 +66,9 @@
 
 <p class="chapter-card__desc">理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:20.84%" title="⭐ 入门 · 114 篇"></i><i class="lv2" style="width:12.07%" title="⭐⭐ 工程师 · 66 篇"></i><i class="lv3" style="width:39.31%" title="⭐⭐⭐ 专家 · 215 篇"></i><i class="lv4" style="width:19.01%" title="⭐⭐⭐⭐ 科学家 · 104 篇"></i><i class="lv5" style="width:8.78%" title="⭐⭐⭐⭐⭐ 大师 · 48 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:20.84%" title="⭐ 入门 · 114 篇"></i><i class="lv2" style="width:12.07%" title="⭐⭐ 工程师 · 66 篇"></i><i class="lv3" style="width:39.12%" title="⭐⭐⭐ 专家 · 214 篇"></i><i class="lv4" style="width:19.20%" title="⭐⭐⭐⭐ 科学家 · 105 篇"></i><i class="lv5" style="width:8.78%" title="⭐⭐⭐⭐⭐ 大师 · 48 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 114 · ⭐⭐ 66 · ⭐⭐⭐ 215 · ⭐⭐⭐⭐ 104 · ⭐⭐⭐⭐⭐ 48</div>
+<div class="chapter-card__legend">⭐ 114 · ⭐⭐ 66 · ⭐⭐⭐ 214 · ⭐⭐⭐⭐ 105 · ⭐⭐⭐⭐⭐ 48</div>
 
 <ul class="chapter-card__samples">
 
@@ -118,9 +118,9 @@
 
 <p class="chapter-card__desc">2024-2026 AI 工具生态：从 IDE 到 Agent 平台</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:4.92%" title="⭐ 入门 · 3 篇"></i><i class="lv2" style="width:13.11%" title="⭐⭐ 工程师 · 8 篇"></i><i class="lv3" style="width:47.54%" title="⭐⭐⭐ 专家 · 29 篇"></i><i class="lv4" style="width:26.23%" title="⭐⭐⭐⭐ 科学家 · 16 篇"></i><i class="lv5" style="width:8.20%" title="⭐⭐⭐⭐⭐ 大师 · 5 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:4.92%" title="⭐ 入门 · 3 篇"></i><i class="lv2" style="width:13.11%" title="⭐⭐ 工程师 · 8 篇"></i><i class="lv3" style="width:47.54%" title="⭐⭐⭐ 专家 · 29 篇"></i><i class="lv4" style="width:24.59%" title="⭐⭐⭐⭐ 科学家 · 15 篇"></i><i class="lv5" style="width:9.84%" title="⭐⭐⭐⭐⭐ 大师 · 6 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 3 · ⭐⭐ 8 · ⭐⭐⭐ 29 · ⭐⭐⭐⭐ 16 · ⭐⭐⭐⭐⭐ 5</div>
+<div class="chapter-card__legend">⭐ 3 · ⭐⭐ 8 · ⭐⭐⭐ 29 · ⭐⭐⭐⭐ 15 · ⭐⭐⭐⭐⭐ 6</div>
 
 <ul class="chapter-card__samples">
 
@@ -153,9 +153,9 @@
 
 <p class="chapter-card__desc">什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:7.46%" title="⭐ 入门 · 30 篇"></i><i class="lv2" style="width:12.94%" title="⭐⭐ 工程师 · 52 篇"></i><i class="lv3" style="width:36.82%" title="⭐⭐⭐ 专家 · 148 篇"></i><i class="lv4" style="width:28.36%" title="⭐⭐⭐⭐ 科学家 · 114 篇"></i><i class="lv5" style="width:14.43%" title="⭐⭐⭐⭐⭐ 大师 · 58 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:7.46%" title="⭐ 入门 · 30 篇"></i><i class="lv2" style="width:12.69%" title="⭐⭐ 工程师 · 51 篇"></i><i class="lv3" style="width:37.06%" title="⭐⭐⭐ 专家 · 149 篇"></i><i class="lv4" style="width:28.36%" title="⭐⭐⭐⭐ 科学家 · 114 篇"></i><i class="lv5" style="width:14.43%" title="⭐⭐⭐⭐⭐ 大师 · 58 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 30 · ⭐⭐ 52 · ⭐⭐⭐ 148 · ⭐⭐⭐⭐ 114 · ⭐⭐⭐⭐⭐ 58</div>
+<div class="chapter-card__legend">⭐ 30 · ⭐⭐ 51 · ⭐⭐⭐ 149 · ⭐⭐⭐⭐ 114 · ⭐⭐⭐⭐⭐ 58</div>
 
 <ul class="chapter-card__samples">
 
@@ -205,9 +205,9 @@
 
 <p class="chapter-card__desc">Agent 的大脑：短期/长期/工作记忆的分层架构</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:9.38%" title="⭐ 入门 · 3 篇"></i><i class="lv2" style="width:6.25%" title="⭐⭐ 工程师 · 2 篇"></i><i class="lv3" style="width:31.25%" title="⭐⭐⭐ 专家 · 10 篇"></i><i class="lv4" style="width:25.00%" title="⭐⭐⭐⭐ 科学家 · 8 篇"></i><i class="lv5" style="width:28.12%" title="⭐⭐⭐⭐⭐ 大师 · 9 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:9.38%" title="⭐ 入门 · 3 篇"></i><i class="lv2" style="width:3.12%" title="⭐⭐ 工程师 · 1 篇"></i><i class="lv3" style="width:34.38%" title="⭐⭐⭐ 专家 · 11 篇"></i><i class="lv4" style="width:25.00%" title="⭐⭐⭐⭐ 科学家 · 8 篇"></i><i class="lv5" style="width:28.12%" title="⭐⭐⭐⭐⭐ 大师 · 9 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 3 · ⭐⭐ 2 · ⭐⭐⭐ 10 · ⭐⭐⭐⭐ 8 · ⭐⭐⭐⭐⭐ 9</div>
+<div class="chapter-card__legend">⭐ 3 · ⭐⭐ 1 · ⭐⭐⭐ 11 · ⭐⭐⭐⭐ 8 · ⭐⭐⭐⭐⭐ 9</div>
 
 <ul class="chapter-card__samples">
 
@@ -283,9 +283,9 @@
 
 <p class="chapter-card__desc">最成熟的 Agent 品类：Claude Code、OpenClaw、Codex 深度拆解</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:7.27%" title="⭐ 入门 · 8 篇"></i><i class="lv2" style="width:14.55%" title="⭐⭐ 工程师 · 16 篇"></i><i class="lv3" style="width:30.91%" title="⭐⭐⭐ 专家 · 34 篇"></i><i class="lv4" style="width:32.73%" title="⭐⭐⭐⭐ 科学家 · 36 篇"></i><i class="lv5" style="width:14.55%" title="⭐⭐⭐⭐⭐ 大师 · 16 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:7.27%" title="⭐ 入门 · 8 篇"></i><i class="lv2" style="width:13.64%" title="⭐⭐ 工程师 · 15 篇"></i><i class="lv3" style="width:31.82%" title="⭐⭐⭐ 专家 · 35 篇"></i><i class="lv4" style="width:31.82%" title="⭐⭐⭐⭐ 科学家 · 35 篇"></i><i class="lv5" style="width:15.45%" title="⭐⭐⭐⭐⭐ 大师 · 17 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 8 · ⭐⭐ 16 · ⭐⭐⭐ 34 · ⭐⭐⭐⭐ 36 · ⭐⭐⭐⭐⭐ 16</div>
+<div class="chapter-card__legend">⭐ 8 · ⭐⭐ 15 · ⭐⭐⭐ 35 · ⭐⭐⭐⭐ 35 · ⭐⭐⭐⭐⭐ 17</div>
 
 <ul class="chapter-card__samples">
 
@@ -344,9 +344,9 @@
 
 <p class="chapter-card__desc">Agent 上生产：Bedrock AgentCore、沙箱、多租户</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:10.38%" title="⭐ 入门 · 19 篇"></i><i class="lv2" style="width:12.57%" title="⭐⭐ 工程师 · 23 篇"></i><i class="lv3" style="width:45.36%" title="⭐⭐⭐ 专家 · 83 篇"></i><i class="lv4" style="width:22.40%" title="⭐⭐⭐⭐ 科学家 · 41 篇"></i><i class="lv5" style="width:9.29%" title="⭐⭐⭐⭐⭐ 大师 · 17 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:10.38%" title="⭐ 入门 · 19 篇"></i><i class="lv2" style="width:12.02%" title="⭐⭐ 工程师 · 22 篇"></i><i class="lv3" style="width:45.90%" title="⭐⭐⭐ 专家 · 84 篇"></i><i class="lv4" style="width:22.40%" title="⭐⭐⭐⭐ 科学家 · 41 篇"></i><i class="lv5" style="width:9.29%" title="⭐⭐⭐⭐⭐ 大师 · 17 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 19 · ⭐⭐ 23 · ⭐⭐⭐ 83 · ⭐⭐⭐⭐ 41 · ⭐⭐⭐⭐⭐ 17</div>
+<div class="chapter-card__legend">⭐ 19 · ⭐⭐ 22 · ⭐⭐⭐ 84 · ⭐⭐⭐⭐ 41 · ⭐⭐⭐⭐⭐ 17</div>
 
 <ul class="chapter-card__samples">
 
@@ -535,17 +535,17 @@
 
 <p class="chapter-card__desc">从数字到物理：强化学习、仿真、人形机器人</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:0.00%" title="⭐ 入门 · 0 篇"></i><i class="lv2" style="width:0.00%" title="⭐⭐ 工程师 · 0 篇"></i><i class="lv3" style="width:100.00%" title="⭐⭐⭐ 专家 · 4 篇"></i><i class="lv4" style="width:0.00%" title="⭐⭐⭐⭐ 科学家 · 0 篇"></i><i class="lv5" style="width:0.00%" title="⭐⭐⭐⭐⭐ 大师 · 0 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:0.00%" title="⭐ 入门 · 0 篇"></i><i class="lv2" style="width:0.00%" title="⭐⭐ 工程师 · 0 篇"></i><i class="lv3" style="width:75.00%" title="⭐⭐⭐ 专家 · 3 篇"></i><i class="lv4" style="width:25.00%" title="⭐⭐⭐⭐ 科学家 · 1 篇"></i><i class="lv5" style="width:0.00%" title="⭐⭐⭐⭐⭐ 大师 · 0 篇"></i></div>
 
-<div class="chapter-card__legend">⭐⭐⭐ 4</div>
+<div class="chapter-card__legend">⭐⭐⭐ 3 · ⭐⭐⭐⭐ 1</div>
 
 <ul class="chapter-card__samples">
-
-<li><span class="stars">⭐⭐⭐</span>蚂蚁灵波 LingBot-Vision — 空间原生视觉基础模型 &amp; LingBot-Depth 2.0</li>
 
 <li><span class="stars">⭐⭐⭐</span>Unitree&#x27;s IPO Filing: The State of the Robotics Market</li>
 
 <li><span class="stars">⭐⭐⭐</span>蔚蓝BabyAlpha A3消费级机器狗</li>
+
+<li><span class="stars">⭐⭐⭐</span>NVIDIA Isaac Lab + Amazon SageMaker AI：机器人强化学习训练基础设施（Humanoid RL Scale</li>
 
 </ul>
 

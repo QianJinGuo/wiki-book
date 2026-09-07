@@ -30,7 +30,7 @@
 
 ## Ch15.001 Predicting Risk in Content Launches
 
-> 📊 Level ⭐ | 4.3KB | `entities/predicting-risk-in-content-launches-how-data-driven-insights.md`
+> 📊 Level ⭐ | 4.4KB | `entities/predicting-risk-in-content-launches-how-data-driven-insights.md`
 
 # Predicting Risk in Content Launches: How Data-Driven Insights can Transform Launch Planning
 
@@ -66,7 +66,7 @@ This isn’t unexpected — productions are dynamic, facing frequent changes, sc
 
 ## Ch15.002 多模态预训练物理：知识流、模态协同、早期统一与高效配方（arXiv 2608.05000）
 
-> 📊 Level ⭐ | 3.2KB | `entities/multimodal-pretraining-physics-knowledge-flow-arxiv-2608-05000.md`
+> 📊 Level ⭐ | 3.3KB | `entities/multimodal-pretraining-physics-knowledge-flow-arxiv-2608-05000.md`
 
 # 多模态预训练物理：知识流、模态协同、早期统一与高效配方
 
@@ -180,7 +180,7 @@ MiniCPM5-1B 的特殊之处：
 
 ## Ch15.004 EMO: Pretraining mixture of experts for emergent modularity | Ai2
 
-> 📊 Level ⭐⭐ | 5.2KB | `entities/emo-pretraining-mixture-of-experts-for-emergent-modularity-ai2.md`
+> 📊 Level ⭐⭐ | 5.3KB | `entities/emo-pretraining-mixture-of-experts-for-emergent-modularity-ai2.md`
 
 # EMO: Pretraining mixture of experts for emergent modularity | Ai2
 [Skip to main content ->](https://allenai.org/blog/emo#main-content)
@@ -221,7 +221,7 @@ EMO 的核心创新在于把"模块化"从一个人为先验变成了从数据�
 
 ## Ch15.005 DeepSeek V4 训练方法论深度解读
 
-> 📊 Level ⭐⭐⭐ | 13.7KB | `entities/deepseek-v4-training-methodology.md`
+> 📊 Level ⭐⭐⭐ | 13.8KB | `entities/deepseek-v4-training-methodology.md`
 
 # DeepSeek V4 训练方法论深度解读
 > 花叔对 DeepSeek V4 58 页论文的深入解读，涵盖架构改动、训练稳定性、后训练范式变化、评测结果及未来方向。
@@ -343,7 +343,7 @@ V4 的实现用激进前 8 步 + 温和后 2 步做精度平衡，这个工程�
 - → [ds4.c — DeepSeek V4 本地推理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ds4c-deepseek-v4-antirez.md)
 
 ## 相关实体
-- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](ch01/420-deepseek-v4.html)
+- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](ch01/322-deepseek-v4.html)
 
 - [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-v4-pro-vs-claude.md)
 - [Redis之父下场，给DeepSeek V4单独造了一台推理引擎](https://github.com/QianJinGuo/wiki-public/blob/main/entities/redis之父下场给deepseek-v4单独造了一台推理引擎.md)
@@ -449,7 +449,7 @@ NVIDIA 在 Nemotron 3 Ultra（5,500 亿参数）上使用 NVFP4 完成预训练�
 
 ## Ch15.007 Yann Dubois（OpenAI Post-Training）× Matt Turck 深度访谈：GPT-5.5、RL 突破、后训练流水线
 
-> 📊 Level ⭐⭐⭐ | 11.0KB | `entities/yann-dubois-openai-post-training-interview.md`
+> 📊 Level ⭐⭐⭐ | 11.1KB | `entities/yann-dubois-openai-post-training-interview.md`
 
 ## 核心人物
 
@@ -572,7 +572,7 @@ Dubois 提到的一个关键设计哲学是：能力（capability）和安全性
 
 ## Ch15.008 SFT+DPO 双阶段微调：Qwen3-1.7B Tool Calling 精度提升方案
 
-> 📊 Level ⭐⭐⭐ | 9.2KB | `entities/aws-sagemaker-sft-dpo-tool-calling.md`
+> 📊 Level ⭐⭐⭐ | 9.3KB | `entities/aws-sagemaker-sft-dpo-tool-calling.md`
 
 # SFT+DPO 双阶段微调：Qwen3-1.7B Tool Calling 精度提升方案
 
@@ -739,7 +739,7 @@ TBA 把采样从训练闭环里解耦出来——这是 LLM RL 后训练数量�
 ## 相关实体
 - [On Policy Distillation Vs Offline Distillation Loster](https://github.com/QianJinGuo/wiki-public/blob/main/entities/on-policy-distillation-vs-offline-distillation-loster.md)
 - [Overcoming Reward Signal Challenges Verifiable Rewards Based Reinforcement Learn](https://github.com/QianJinGuo/wiki-public/blob/main/entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md)
-- [Reinforcing Recursive Language Models Alphaxiv](ch01/380-reinforcing-recursive-language-models-alphaxiv.html)
+- [Reinforcing Recursive Language Models Alphaxiv](ch01/379-reinforcing-recursive-language-models-alphaxiv.html)
 - [Skillos](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skillos.md)
 - [Yann Dubois Openai Post Training Interview](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yann-dubois-openai-post-training-interview.md)
 
@@ -747,7 +747,7 @@ TBA 把采样从训练闭环里解耦出来——这是 LLM RL 后训练数量�
 
 ## Ch15.010 Is One Layer Enough? 单层 RL 训练可超越全参数训练
 
-> 📊 Level ⭐⭐⭐ | 8.1KB | `entities/rl-single-layer-training-full-parameter.md`
+> 📊 Level ⭐⭐⭐ | 8.2KB | `entities/rl-single-layer-training-full-parameter.md`
 
 # Is One Layer Enough? 单层 RL 训练可超越全参数训练
 
@@ -808,7 +808,7 @@ Transformer 功能沿深度分层：底层做 token 级局部句法与低层特�
 
 ## Ch15.011 LLM Post-Training全景指南：从RLHF到GRPO再到AgenticRL
 
-> 📊 Level ⭐⭐⭐ | 7.6KB | `entities/llm-post-training-full-guide.md`
+> 📊 Level ⭐⭐⭐ | 7.7KB | `entities/llm-post-training-full-guide.md`
 
 ## 核心框架
 **SFT教模型"说什么"**，偏好优化教模型"怎么选"，**RL教模型"怎么想"**——三者层层递进，构成完整Post-training体系。
@@ -872,7 +872,7 @@ GRPO用相对排序替代PPO的Critic模型，节省30%~50%计算开销，但核
 → [原文存档](https://mp.weixin.qq.com/s/jabnGpTJ8sCc7kBj11pm8A)
 
 - [Token 退化问题：分词器与后训练数据分布失配](https://github.com/QianJinGuo/wiki-public/blob/main/entities/minimax-token-degradation-jiqia.md)
-- [Self Taught Rlvr](ch01/383-self-taught-rlvr.html)
+- [Self Taught Rlvr](ch01/382-self-taught-rlvr.html)
 - [Llm Rl Algorithms Ppo Dpo Grpo Marl Evolution 2026](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026.md)
 - [Slim Cuhk Skill Lifecycle Agentic Rl](https://github.com/QianJinGuo/wiki-public/blob/main/entities/slim-cuhk-skill-lifecycle-agentic-rl.md)
 - [frontier post-training recipe review with finbarr timbers](https://github.com/QianJinGuo/wiki-public/blob/main/entities/finbarr-timbers-frontier-post-training-recipe-review-2026.md)
@@ -883,7 +883,7 @@ GRPO用相对排序替代PPO的Critic模型，节省30%~50%计算开销，但核
 
 ## Ch15.012 What I've been building: ATOM Report, post-training course, finishing my book, and ongoing research
 
-> 📊 Level ⭐⭐⭐ | 7.3KB | `entities/what-ive-been-building-atom-report-post-training-course-fini.md`
+> 📊 Level ⭐⭐⭐ | 7.4KB | `entities/what-ive-been-building-atom-report-post-training-course-fini.md`
 
 # What I've been building: ATOM Report, post-training course, finishing my book, and ongoing research
 
@@ -957,7 +957,7 @@ Meta-RL with Self-Reflection 的核心洞察是：当前 LLM 的 RL 训练完全
 
 ## Ch15.013 Reinforcing Recursive Language Models | alphaXiv
 
-> 📊 Level ⭐⭐⭐ | 6.5KB | `entities/reinforcing-recursive-language-models-alphaxiv.md`
+> 📊 Level ⭐⭐⭐ | 6.6KB | `entities/reinforcing-recursive-language-models-alphaxiv.md`
 
 > -> [原文存档](https://www.alphaxiv.org/blog/reinforcement-learning-for-rlms)
 
@@ -1058,7 +1058,7 @@ KV-Normality 问题是 Transformer 训练不稳定的重要来源之一（KL div
 
 ## Ch15.015 Overcoming Reward Signal Challenges: Verifiable Rewards-based RL with GRPO on SageMaker AI
 
-> 📊 Level ⭐⭐⭐ | 6.1KB | `entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md`
+> 📊 Level ⭐⭐⭐ | 6.2KB | `entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md`
 
 > -> [原文存档](https://huggingface.co/datasets/openai/gsm8k/viewer/main/train?row=7294&amp;views%5B%5D=main_train)
 
@@ -1093,7 +1093,7 @@ KV-Normality 问题是 Transformer 训练不稳定的重要来源之一（KL div
 
 ## Ch15.016 Heidi Health 临床 AI 微调：小模型通过偏好信号达前沿水平
 
-> 📊 Level ⭐⭐⭐ | 6.1KB | `entities/heidi-health-clinical-ai-model-fine-tuning-frontier-parity.md`
+> 📊 Level ⭐⭐⭐ | 6.2KB | `entities/heidi-health-clinical-ai-model-fine-tuning-frontier-parity.md`
 
 # Heidi Health 临床 AI 微调：小模型通过偏好信号达前沿水平
 
@@ -1149,7 +1149,7 @@ Evidence 是 Heidi 微调过的最难模型，也是第一个 agentic 模型。�
 
 - [LLM RL 算法综述](https://github.com/QianJinGuo/wiki-public/blob/main/entities/2026-llm-rl-algorithms-deeplog-imba-ppo-dpo-grpo-marl.md) — DPO 作为本文核心训练方法的算法背景
 - [Amazon Nova Lite 微调](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-nova-lite-fine-tuning-cost-effective-vision-detection-model-tuning-case-and-practice.md) — 另一个垂直领域微调的工程实践
-- [递归强化语言模型](ch01/380-reinforcing-recursive-language-models-alphaxiv.html) — 奖励模型与偏好学习的理论框架
+- [递归强化语言模型](ch01/379-reinforcing-recursive-language-models-alphaxiv.html) — 奖励模型与偏好学习的理论框架
 - [腾讯 Token 经济学](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tencent-token-economics-ai-productivity.md) — AI 模型的成本-质量权衡分析
 
 → [原文存档](https://www.heidihealth.com/blog/clinical-ai-model-fine-tuning)
@@ -1158,7 +1158,7 @@ Evidence 是 Heidi 微调过的最难模型，也是第一个 agentic 模型。�
 
 ## Ch15.017 Notes on pretraining parallelisms and failed training runs.
 
-> 📊 Level ⭐⭐⭐ | 5.7KB | `entities/notes-on-pretraining-parallelisms-and-failed-training-runs.md`
+> 📊 Level ⭐⭐⭐ | 5.8KB | `entities/notes-on-pretraining-parallelisms-and-failed-training-runs.md`
 
 ## 核心要点
 - 评分：v=7 × c=9 = 63
@@ -1206,7 +1206,7 @@ GPT-4 训练初期的一个致命 Bug 正是源于此：FP16 的尾数位在数�
 
 ## Ch15.018 在线蒸馏OPD vs 离线蒸馏SFT：数学原理与实战优势
 
-> 📊 Level ⭐⭐⭐⭐ | 14.7KB | `entities/on-policy-distillation-vs-offline-distillation-loster.md`
+> 📊 Level ⭐⭐⭐⭐ | 14.8KB | `entities/on-policy-distillation-vs-offline-distillation-loster.md`
 
 ## 核心定义
 **离线蒸馏（SFT/Off-Policy）**：Teacher生成固定数据，Student通过SFT模仿。暴露偏差+复合误差+Mode-Covering导致小模型学到"平均值"幻觉。
@@ -1362,7 +1362,7 @@ OPD虽然解决了Mode-Covering问题，但引入了自己的隐患：Mode Colla
 
 ## Ch15.019 RL Beyond the Verifiable: 当奖励信号无法自动验证时
 
-> 📊 Level ⭐⭐⭐⭐ | 13.5KB | `entities/rl-beyond-the-verifiable-tanayj.md`
+> 📊 Level ⭐⭐⭐⭐ | 13.6KB | `entities/rl-beyond-the-verifiable-tanayj.md`
 
 # RL Beyond the Verifiable: 当奖励信号无法自动验证时
 
@@ -1575,7 +1575,7 @@ OpenRubrics 等工作现在专注于规模化生成这些评分标准。这是�
 
 ## 相关实体
 
-- [Self-Taught RLVR](ch01/383-self-taught-rlvr.html) — 自监督 RLVR 训练方法
+- [Self-Taught RLVR](ch01/382-self-taught-rlvr.html) — 自监督 RLVR 训练方法
 - [AWS GRPO RLVR](ch11/183-aws-grpo-rlvr-sagemaker-math-reasoning.html) — AWS 在 SageMaker 上实现的 RLVR
 - [Verifiable Rewards RL](https://github.com/QianJinGuo/wiki-public/blob/main/entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md) — 可验证奖励 RL 的技术细节
 
@@ -1585,7 +1585,7 @@ OpenRubrics 等工作现在专注于规模化生成这些评分标准。这是�
 
 ## Ch15.020 ICML 2026 | PRISM: Parallel Residual Iterative Sequence Model
 
-> 📊 Level ⭐⭐⭐⭐ | 10.4KB | `entities/icml-2026-prism-parallel-residual-iterative-sequence-model.md`
+> 📊 Level ⭐⭐⭐⭐ | 10.5KB | `entities/icml-2026-prism-parallel-residual-iterative-sequence-model.md`
 
 # ICML 2026 | PRISM: Parallel Residual Iterative Sequence Model
 
@@ -1734,7 +1734,7 @@ PRISM 的"基础迭代 + low rank 旁路"结构与 LoRA 形式完全对应：冻
 
 ## Ch15.021 NVIDIA-ZPPO: Zone of Proximal Policy Optimization
 
-> 📊 Level ⭐⭐⭐⭐ | 6.8KB | `entities/nvidia-zppo-zone-proximal-policy-optimization.md`
+> 📊 Level ⭐⭐⭐⭐ | 6.9KB | `entities/nvidia-zppo-zone-proximal-policy-optimization.md`
 
 # NVIDIA-ZPPO: Zone of Proximal Policy Optimization
 
@@ -2460,7 +2460,7 @@ Macaron-A2UI 表面上是应用层的成果，但实则是对整个体系理论�
 
 ## Ch15.024 Fine-Tuning Cosmos
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 16.8KB | `entities/fine-tuning-cosmos.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 16.9KB | `entities/fine-tuning-cosmos.md`
 
 ## 核心要点
 
@@ -2823,7 +2823,7 @@ LoRA/DoRA 微调 Cosmos Predict 2.5 的本质不是让模型"重新学习物理"
 
 ## Ch15.025 SFT, RL, and On-Policy Distillation Through a Distributional Lens
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 15.6KB | `entities/untitled-v2.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 15.7KB | `entities/untitled-v2.md`
 
 # SFT, RL, and On-Policy Distillation Through a Distributional Lens
 

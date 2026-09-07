@@ -13,8 +13,8 @@
 | ⭐ 入门 | 零基础可读 | 3 |
 | ⭐⭐ 工程师 | 需编程基础 | 8 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 29 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 16 |
-| ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 5 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 15 |
+| ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 6 |
 
 ---
 
@@ -88,12 +88,12 @@ AI 工具正在重新定义"开发者工具"的边界。
 - [050. Amazon Quick + Cisco Webex MCP 会议准备与跟进助手：meeting-lifecycle MCP 编排实战](ch03/050-amazon-quick-cisco-webex-mcp-meeting-lifecycle-mcp)
 - [051. Announcing Genkit Middleware](ch03/051-announcing-genkit-middleware)
 - [052. What Figma Made Visible: Component Model Bridging Design and Engineering](ch03/052-what-figma-made-visible-component-model-bridging-design-and)
-- [053. CLI-Anything](ch03/053-cli-anything)
-- [054. Interaction Models: A Scalable Approach to Human-AI Collaboration](ch03/054-interaction-models-a-scalable-approach-to-human-ai-collabor)
-- [055. Hunk - Review-first Terminal Diff Viewer](ch03/055-hunk-review-first-terminal-diff-viewer)
-- [056. Microsoft Agent Framework 结构化输出：response_format 与 response.value](ch03/056-microsoft-agent-framework-response-format-response-value)
-- [057. AgentScope Java Harness Framework 2.0 — 企业级 Agent 分布式场景的 Harness 实现 (Java 2.0 重大升级)](ch03/057-agentscope-java-harness-framework-2-0-agent-harness)
-- [058. Harness Engineering 详解：如何将 AI Coding 率提升至 90%](ch03/058-harness-engineering-ai-coding-90)
-- [059. Hermes-Wiki 实战 — Obsidian + Hermes Agent 自动生长知识网络的 9 步搭建法](ch03/059-hermes-wiki-obsidian-hermes-agent-9)
-- [060. pi-mono — 模块化 AI Agent 构建平台（OpenClaw 执行引擎核心）](ch03/060-pi-mono-ai-agent-openclaw)
-- [061. Hermes Agent 工具系统架构分析](ch03/061-hermes-agent)
+- [053. Interaction Models: A Scalable Approach to Human-AI Collaboration](ch03/053-interaction-models-a-scalable-approach-to-human-ai-collabor)
+- [054. Hunk - Review-first Terminal Diff Viewer](ch03/054-hunk-review-first-terminal-diff-viewer)
+- [055. Microsoft Agent Framework 结构化输出：response_format 与 response.value](ch03/055-microsoft-agent-framework-response-format-response-value)
+- [056. AgentScope Java Harness Framework 2.0 — 企业级 Agent 分布式场景的 Harness 实现 (Java 2.0 重大升级)](ch03/056-agentscope-java-harness-framework-2-0-agent-harness)
+- [057. Harness Engineering 详解：如何将 AI Coding 率提升至 90%](ch03/057-harness-engineering-ai-coding-90)
+- [058. Hermes-Wiki 实战 — Obsidian + Hermes Agent 自动生长知识网络的 9 步搭建法](ch03/058-hermes-wiki-obsidian-hermes-agent-9)
+- [059. pi-mono — 模块化 AI Agent 构建平台（OpenClaw 执行引擎核心）](ch03/059-pi-mono-ai-agent-openclaw)
+- [060. Hermes Agent 工具系统架构分析](ch03/060-hermes-agent)
+- [061. CLI-Anything](ch03/061-cli-anything)

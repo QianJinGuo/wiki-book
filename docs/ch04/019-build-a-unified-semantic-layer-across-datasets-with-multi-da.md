@@ -1,6 +1,6 @@
 # Build a unified semantic layer across datasets with multi-dataset Topics in Amazon Quick
 
-> 📊 Level ⭐ | 4.1KB | `entities/build-a-unified-semantic-layer-across-datasets-with-multi-da.md`
+> 📊 Level ⭐ | 4.2KB | `entities/build-a-unified-semantic-layer-across-datasets-with-multi-da.md`
 
 # Build a unified semantic layer across datasets with multi-dataset Topics in Amazon Quick
 

@@ -1,6 +1,6 @@
 # From PDFs to insights: Architecting an intelligent document processing pipeline with AWS generative AI services
 
-> 📊 Level ⭐ | 4.4KB | `entities/from-pdfs-to-insights-architecting-an-intelligent-document-p.md`
+> 📊 Level ⭐ | 4.5KB | `entities/from-pdfs-to-insights-architecting-an-intelligent-document-p.md`
 
 # From PDFs to insights: Architecting an intelligent document processing pipeline with AWS generative AI services
 

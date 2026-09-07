@@ -1,6 +1,6 @@
 # Agent 记忆系统工程税：写入纪律·Prompt Cache 冲突·跨模型容量·Embedding 迁移·自产 Skill 治理
 
-> 📊 Level ⭐⭐⭐⭐ | 18.1KB | `entities/agent-memory-engineering-tax-aws-china-2026.md`
+> 📊 Level ⭐⭐⭐⭐ | 18.2KB | `entities/agent-memory-engineering-tax-aws-china-2026.md`
 
 # Agent 记忆系统工程税：写入纪律·Prompt Cache 冲突·跨模型容量·Embedding 迁移·自产 Skill 治理
 

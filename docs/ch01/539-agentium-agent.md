@@ -1,6 +1,6 @@
 # Agentium — 从零实现 Agent 系统的开源框架
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 11.6KB | `entities/agentium-agent-framework.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 11.7KB | `entities/agentium-agent-framework.md`
 
 - [原文存档](https://mp.weixin.qq.com/s/VBY65tBAjVWyuP8QcpzOLA)
 

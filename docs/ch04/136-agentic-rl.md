@@ -1,6 +1,6 @@
 # Agentic RL 六框架实践地图：从算法到系统的长程智能体训练
 
-> 📊 Level ⭐⭐⭐ | 10.4KB | `entities/agentic-rl-frameworks-practices-long-horizon-wolfe-2026.md`
+> 📊 Level ⭐⭐⭐ | 10.5KB | `entities/agentic-rl-frameworks-practices-long-horizon-wolfe-2026.md`
 
 ## 核心概述
 

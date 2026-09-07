@@ -368,7 +368,7 @@ skills.sh 提供了配套的 skill 管理工具。多人协作时，可在 code 
 - [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-google-agent-skills-design-patterns.md)
 - [Garry Tan](https://github.com/QianJinGuo/wiki-public/blob/main/entities/garry-tan-yc-ceo.md)
 - [Agent Workflows](335-agent-workflows.html)
-- [Hermes Agent](../ch03/061-hermes-agent.html)
+- [Hermes Agent](../ch03/060-hermes-agent.html)
 - [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/hermes-agent-onboarding.md)
 - [你写的 Skill，及格了吗？](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ni-xie-de-skill-ji-ge-liao-ma.md)
 - [Mythos for Offensive Security: XBOW's Evaluation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mythos_offensive_security_xbow_evaluatio.md)

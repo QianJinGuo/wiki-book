@@ -1,6 +1,6 @@
 # SHub Reaper: macOS Stealer Spoofs Apple, Google, and Microsoft in a Single Attack Chain
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 19.6KB | `entities/shub-reaper-macos-stealer-attack-chain.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 19.7KB | `entities/shub-reaper-macos-stealer-attack-chain.md`
 
 ## 核心要点
 

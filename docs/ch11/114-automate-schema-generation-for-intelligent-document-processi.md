@@ -1,6 +1,6 @@
 # Automate Schema Generation for Intelligent Document Processing
 
-> 📊 Level ⭐⭐⭐ | 7.4KB | `entities/automate-schema-generation-for-intelligent-document-processing.md`
+> 📊 Level ⭐⭐⭐ | 7.5KB | `entities/automate-schema-generation-for-intelligent-document-processing.md`
 
 > → [原文存档](https://aws.amazon.com/blogs/machine-learning/automate-schema-generation-for-intelligent-document-processing/)
 

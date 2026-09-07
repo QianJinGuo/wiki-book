@@ -1,6 +1,6 @@
 # Skill 设计模式
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 25.5KB | `entities/skill-design-patterns.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 25.6KB | `entities/skill-design-patterns.md`
 
 ## Overview
 从 7 个顶级 Skill 仓库（OpenAI/anthropic/Google Labs/Dean Peters/Trail of Bits）中提炼出的 5 种核心设计模式 + 1 种特殊模式。为 Agent Skill 开发提供系统性框架选择指南，告别"怎么写都行"的随意性。
@@ -336,7 +336,7 @@ Anthropic 的 Activation Metadata 模式指出：一个好的 description 必须
 
 ## Related
 - [Agent Skill 编写指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing.md) — Skill 格式、渐进式披露、编写规范、评估迭代的基础知识
-- [Hermes Agent](../ch03/061-hermes-agent.html) — 支持 Skill 机制的核心开源 Agent
+- [Hermes Agent](../ch03/060-hermes-agent.html) — 支持 Skill 机制的核心开源 Agent
 - [OpenClaw 架构解析](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/openclaw-architecture.md) — 内置 Skill 系统实现
 - [Anthropic 14 模式原始文章](https://mp.weixin.qq.com/s/x7IhRhK4Ndmlg6d61PyKuw)
 - [社区模式原始文章存档](https://mp.weixin.qq.com/s/aoNwyY5ZkCRMkZirn1rElQ)

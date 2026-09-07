@@ -1,6 +1,6 @@
 # Claude Managed Agents 开发者指南
 
-> 📊 Level ⭐⭐⭐⭐ | 11.2KB | `entities/claude-managed-agents-developer-guide.md`
+> 📊 Level ⭐⭐⭐⭐ | 11.4KB | `entities/claude-managed-agents-developer-guide.md`
 
 ## Overview
 Claude Managed Agents 是 Anthropic 推出的托管 Agent 平台 API，核心是一个叫 **Harness** 的编排引擎：将工具调用、上下文管理、错误恢复、沙箱环境等基础设施收走，开发者只需关注任务本身。

@@ -1,6 +1,6 @@
 # HSCodeComp：阿里 ACL 2026 最佳资源论文——层级规则应用 Agent 基准
 
-> 📊 Level ⭐ | 4.2KB | `entities/hscodecomp-acl-2026-best-resource-paper.md`
+> 📊 Level ⭐ | 4.3KB | `entities/hscodecomp-acl-2026-best-resource-paper.md`
 
 # HSCodeComp：阿里 ACL 2026 最佳资源论文——层级规则应用 Agent 基准
 

@@ -1,6 +1,6 @@
 # Anthropic Multi Agent Research System
 
-> 📊 Level ⭐⭐⭐ | 4.7KB | `entities/anthropic-multi-agent-research-system.md`
+> 📊 Level ⭐⭐⭐ | 4.8KB | `entities/anthropic-multi-agent-research-system.md`
 
 # Anthropic Multi-Agent Research System
 

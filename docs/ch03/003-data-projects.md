@@ -1,6 +1,6 @@
 # Data Projects
 
-> 📊 Level ⭐ | 3.9KB | `entities/data-projects-managing-data-assets-at-netflix-scale.md`
+> 📊 Level ⭐ | 4.0KB | `entities/data-projects-managing-data-assets-at-netflix-scale.md`
 
 # Data Projects: Managing Data Assets at Netflix Scale
 

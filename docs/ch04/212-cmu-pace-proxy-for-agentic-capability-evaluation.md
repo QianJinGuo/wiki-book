@@ -1,6 +1,6 @@
 # CMU PACE — Proxy for Agentic Capability Evaluation
 
-> 📊 Level ⭐⭐⭐ | 6.6KB | `entities/cmu-pace-proxy-agent-evaluation-cheap.md`
+> 📊 Level ⭐⭐⭐ | 6.7KB | `entities/cmu-pace-proxy-agent-evaluation-cheap.md`
 
 # CMU PACE — Proxy for Agentic Capability Evaluation
 

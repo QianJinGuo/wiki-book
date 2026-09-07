@@ -1,6 +1,6 @@
 # 纳德拉「Token 资本」论 — Microsoft CEO 的 AI 时代企业战略宣言
 
-> 📊 Level ⭐⭐⭐ | 15.6KB | `entities/nadella-token-capital-microsoft-ai-economy-2026.md`
+> 📊 Level ⭐⭐⭐ | 15.7KB | `entities/nadella-token-capital-microsoft-ai-economy-2026.md`
 
 # 纳德拉「Token 资本」论 — Microsoft CEO 的 AI 时代企业战略宣言
 

@@ -1,6 +1,6 @@
 # Disgruntled researcher releases two more Microsoft zero-days
 
-> 📊 Level ⭐⭐⭐⭐ | 9.7KB | `entities/microsoft-zero-days-researcher-disgruntled-theregister.md`
+> 📊 Level ⭐⭐⭐⭐ | 9.8KB | `entities/microsoft-zero-days-researcher-disgruntled-theregister.md`
 
 ## 深度分析
 ### 安全研究的"越界复仇"模式：一种新型威胁行为体

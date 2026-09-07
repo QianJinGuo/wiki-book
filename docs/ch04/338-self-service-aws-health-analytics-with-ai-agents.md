@@ -1,6 +1,6 @@
 # Self-Service AWS Health Analytics with AI Agents
 
-> 📊 Level ⭐⭐⭐⭐ | 7.6KB | `entities/aws-health-analytics-ai-agents-mcp.md`
+> 📊 Level ⭐⭐⭐⭐ | 7.7KB | `entities/aws-health-analytics-ai-agents-mcp.md`
 
 # Self-Service AWS Health Analytics with AI Agents
 

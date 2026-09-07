@@ -1,6 +1,6 @@
 # Multica — 开源 Managed Agents 平台
 
-> 📊 Level ⭐⭐⭐ | 5.8KB | `entities/multica-managed-agents-platform.md`
+> 📊 Level ⭐⭐⭐ | 5.9KB | `entities/multica-managed-agents-platform.md`
 
 > -> [原文存档](https://mp.weixin.qq.com/s/P0O15RN5XLn1wTMnxDuJQw)
 

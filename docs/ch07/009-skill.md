@@ -1,6 +1,6 @@
 # Skill 版本对比五大原则：从'两个数字比大小'到工程化质量门禁
 
-> 📊 Level ⭐⭐ | 5.9KB | `entities/skill-version-comparison-five-principles-winty.md`
+> 📊 Level ⭐⭐ | 6.0KB | `entities/skill-version-comparison-five-principles-winty.md`
 
 > 原文归档：[原文归档](https://mp.weixin.qq.com/s/jbmdkP1Oj6_J_ZDRiW131w)
 

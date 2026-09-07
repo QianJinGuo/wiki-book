@@ -1,6 +1,6 @@
 # Getting more from each token: How Copilot improves context handling and model routing
 
-> 📊 Level ⭐ | 8.4KB | `entities/github-copilot-getting-more-from-each-token-how-copilot-improves-context-handlin.md`
+> 📊 Level ⭐ | 8.5KB | `entities/github-copilot-getting-more-from-each-token-how-copilot-improves-context-handlin.md`
 
 # Getting more from each token: How Copilot improves context handling and model routing
 

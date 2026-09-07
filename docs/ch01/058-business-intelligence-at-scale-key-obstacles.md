@@ -1,6 +1,6 @@
 # Business intelligence at scale: Key obstacles
 
-> 📊 Level ⭐ | 7.1KB | `entities/how-aws-smgs-uses-an-ai-powered-conversational-assistant-to-.md`
+> 📊 Level ⭐ | 7.2KB | `entities/how-aws-smgs-uses-an-ai-powered-conversational-assistant-to-.md`
 
 # Business intelligence at scale: Key obstacles
 

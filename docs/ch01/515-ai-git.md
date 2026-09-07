@@ -1,6 +1,6 @@
 # AI 时代的 Git 版本管理最佳实践
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 21.0KB | `entities/ai-era-git-version-control-agentic-coding-practices.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 21.1KB | `entities/ai-era-git-version-control-agentic-coding-practices.md`
 
 ## 核心信息
 

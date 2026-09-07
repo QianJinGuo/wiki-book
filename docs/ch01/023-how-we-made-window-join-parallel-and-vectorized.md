@@ -1,6 +1,6 @@
 # How we made WINDOW JOIN parallel and vectorized
 
-> 📊 Level ⭐ | 8.8KB | `entities/how-we-made-window-join-parallel-and-vectorized.md`
+> 📊 Level ⭐ | 8.9KB | `entities/how-we-made-window-join-parallel-and-vectorized.md`
 
 > -> [原文存档](https://questdb.com/blog/window-join-parallel-vectorized/)
 

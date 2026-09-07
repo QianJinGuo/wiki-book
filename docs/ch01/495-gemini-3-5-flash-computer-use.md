@@ -1,6 +1,6 @@
 # Gemini 3.5 Flash 内置 Computer Use 能力
 
-> 📊 Level ⭐⭐⭐⭐ | 6.6KB | `entities/gemini-35-flash-computer-use-agent-harness.md`
+> 📊 Level ⭐⭐⭐⭐ | 6.7KB | `entities/gemini-35-flash-computer-use-agent-harness.md`
 
 # Gemini 3.5 Flash 内置 Computer Use 能力
 

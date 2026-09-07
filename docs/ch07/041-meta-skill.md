@@ -1,6 +1,6 @@
 # Meta Skill
 
-> 📊 Level ⭐⭐⭐⭐ | 10.6KB | `entities/meta-skill.md`
+> 📊 Level ⭐⭐⭐⭐ | 10.7KB | `entities/meta-skill.md`
 
 # Meta Skill
 > "Skill 的 Skill" —— 多个原子 Skill 的"项目经理操作手册"。当员工（Agent）变多、业务（Skill）变多，必然遇到指数级放大的噪音；Meta Skill 是用来指导 Agent 三省六部的白皮书。

@@ -1,6 +1,6 @@
 # Git仓库 + AI 编码助手做项目管理
 
-> 📊 Level ⭐⭐⭐⭐ | 13.2KB | `entities/git-repo-based-pm-automation.md`
+> 📊 Level ⭐⭐⭐⭐ | 13.3KB | `entities/git-repo-based-pm-automation.md`
 
 # Git仓库 + AI 编码助手做项目管理
 

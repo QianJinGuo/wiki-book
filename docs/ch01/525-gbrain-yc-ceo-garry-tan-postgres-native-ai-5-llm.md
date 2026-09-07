@@ -1,6 +1,6 @@
 # GBrain — YC CEO Garry Tan 的 Postgres-native AI 第二大脑：5 大设计决策 + 零 LLM 知识图谱 + 8 阶段检索 + Brain⊥Source 正交维度
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 16.4KB | `entities/gbrain.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 16.5KB | `entities/gbrain.md`
 
 ## 概述
 GBrain 于 2026 年 4 月初开源，十几天内斩获 9K+ Star。其核心解决的是 AI Agent 的"金鱼脑"问题——每次开聊都从零开始，昨天告诉它的事今天就当没发生过。
@@ -144,7 +144,7 @@ GBrain 将传统 RAG 的 4 层扩展为 8 层，从"找得到"升级到"真正�
 
 - [AutoCLI](https://github.com/QianJinGuo/wiki-public/blob/main/entities/autocli.md)
 - [阿里巴巴 Aone 面向 Agent 的研发模式探索](https://github.com/QianJinGuo/wiki-public/blob/main/entities/alibaba-aone-agentic-rd-mode-xiangbangyu.md)
-- [CLI-Anything](../ch03/053-cli-anything.html)
+- [CLI-Anything](../ch03/061-cli-anything.html)
 - [AgentRun](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aliyun-agentrun.md)
 - [OpenCLI](https://github.com/QianJinGuo/wiki-public/blob/main/entities/opencli.md)
 - [CLI-Tools 横向对比](https://github.com/QianJinGuo/wiki-public/blob/main/comparisons/cli-tools-comparison.md)

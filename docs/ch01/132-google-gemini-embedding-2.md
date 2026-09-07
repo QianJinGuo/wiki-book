@@ -1,6 +1,6 @@
 # Google出手统一全模态检索：Gemini Embedding 2把文本、图片、音频和视频压进同一向量空间
 
-> 📊 Level ⭐⭐ | 6.9KB | `entities/gemini-embedding-2-multimodal-unified-vector-hyman.md`
+> 📊 Level ⭐⭐ | 7.0KB | `entities/gemini-embedding-2-multimodal-unified-vector-hyman.md`
 
 > -> [原文存档](https://mp.weixin.qq.com/s/oZnzy6QxriNclm-UTGh7VQ)
 

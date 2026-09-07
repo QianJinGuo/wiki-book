@@ -1,6 +1,6 @@
 # High-Throughput Graph Abstraction at Netflix: Part I
 
-> 📊 Level ⭐⭐⭐ | 9.7KB | `entities/high-throughput-graph-abstraction-at-netflix.md`
+> 📊 Level ⭐⭐⭐ | 9.8KB | `entities/high-throughput-graph-abstraction-at-netflix.md`
 
 # High-Throughput Graph Abstraction at Netflix: Part I
 

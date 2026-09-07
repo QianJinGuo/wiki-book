@@ -1,6 +1,6 @@
 # Building Modelplane on Crossplane
 
-> 📊 Level ⭐ | 6.9KB | `entities/building-modelplane.md`
+> 📊 Level ⭐ | 7.0KB | `entities/building-modelplane.md`
 
 # Building Modelplane on Crossplane
 

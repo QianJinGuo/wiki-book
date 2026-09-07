@@ -1,6 +1,6 @@
 # Build agents, not pipelines
 
-> 📊 Level ⭐ | 4.0KB | `entities/seangoedeckecom-build-agents-not-pipelines.md`
+> 📊 Level ⭐ | 4.1KB | `entities/seangoedeckecom-build-agents-not-pipelines.md`
 
 # Build agents, not pipelines
 

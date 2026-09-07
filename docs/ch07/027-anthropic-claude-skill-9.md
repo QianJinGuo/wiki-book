@@ -1,6 +1,6 @@
 # Anthropic Claude Skill 9 类任务分类法
 
-> 📊 Level ⭐⭐⭐ | 6.8KB | `entities/anthropic-claude-skill-9-categories-datawhale-2026.md`
+> 📊 Level ⭐⭐⭐ | 6.9KB | `entities/anthropic-claude-skill-9-categories-datawhale-2026.md`
 
 # Anthropic Claude Skill 9 类任务分类法
 
@@ -36,7 +36,7 @@ Datawhale 编译自 Anthropic 官方博客。Anthropic 内部把 Claude Code Ski
 - [Skill 设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-design-patterns.md) — 5 种核心结构模式（线性、Tool Wrapper、Generator 等），补充了 9 类分类中的生成/验证/运维类如何组织
 - [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cong-anthropic-dao-googleagent-skills-zhengzai-jinru-sheji-moshi-jieduan.md) — Google 5 Agent Skill 设计模式 vs Anthropic 视角
 - [Perplexity 内部 Skill 设计指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/perplexity-internal-skill-design-guide.md) — 另一家的 Skill 工程方法论对比
-- [Hermes Agent](../ch03/061-hermes-agent.html) — Hermes 的 Skill 系统实现参考
+- [Hermes Agent](../ch03/060-hermes-agent.html) — Hermes 的 Skill 系统实现参考
 
 ## 深度分析
 

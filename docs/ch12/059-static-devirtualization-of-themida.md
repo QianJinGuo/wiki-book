@@ -1,6 +1,6 @@
 # Static Devirtualization of Themida
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 13.1KB | `entities/2026.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 13.2KB | `entities/2026.md`
 
 # Static Devirtualization of Themida
 

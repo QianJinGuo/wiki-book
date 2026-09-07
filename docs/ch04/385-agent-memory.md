@@ -1,6 +1,6 @@
 # Agent Memory 架构本质
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 13.0KB | `entities/agent-memory-architecture.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 13.2KB | `entities/agent-memory-architecture.md`
 
 ## Overview
 Agent Memory 不是"把聊天记录存起来"，而是一个完整的 **write–manage–read 闭环**，决定什么信息被允许持续影响未来决策。核心问题不是容量，而是**治理**——谁被允许持续影响未来。
@@ -152,7 +152,7 @@ Perplexity 推出 [Brain](https://www.perplexity.ai/computer/memory) 系统，�
 - [Agent Memory 架构解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture-ruofei.md)
 - [memory agent systems cobanov](https://github.com/QianJinGuo/wiki-public/blob/main/entities/memory-agent-systems-cobanov.md)
 - [Hermes Agent 记忆系统 vs OpenClaw 记忆观](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-memory-system.md)
-- [AI Agent 记忆系统架构](108-how-ai-agent-memory-works.html)
+- [AI Agent 记忆系统架构](107-how-ai-agent-memory-works.html)
 - [深度拆解 Hermes Agent 记忆系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-memory-system-openclaw-comparison.md)
 - [ai agent memory systems](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-memory-systems.md)
 - [Personal AI 工作台：Claude 18 动作框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ruofei-personal-ai-workbench-18-actions.md)

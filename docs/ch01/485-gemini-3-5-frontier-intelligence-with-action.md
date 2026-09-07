@@ -1,6 +1,6 @@
 # Gemini 3.5: frontier intelligence with action
 
-> 📊 Level ⭐⭐⭐⭐ | 8.9KB | `entities/gemini-3-5-frontier-intelligence.md`
+> 📊 Level ⭐⭐⭐⭐ | 9.0KB | `entities/gemini-3-5-frontier-intelligence.md`
 
 ## 发布概览
 

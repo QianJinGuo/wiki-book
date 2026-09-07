@@ -99,7 +99,7 @@ This is fundamentally different from general AI applications (chatbots, content 
 
 ## Ch20.002 James Cowling AI 时代工程哲学访谈（Dropbox 前首席工程师 / Convex CTO）
 
-> 📊 Level ⭐⭐⭐ | 15.3KB | `entities/james-cowling-engineering-philosophy-ai-era.md`
+> 📊 Level ⭐⭐⭐ | 15.4KB | `entities/james-cowling-engineering-philosophy-ai-era.md`
 
 # James Cowling AI 时代工程哲学访谈
 
@@ -280,7 +280,7 @@ This is fundamentally different from general AI applications (chatbots, content 
 
 ## Ch20.003 Dario Amodei: AI 指数发展与政策制定的时序鸿沟
 
-> 📊 Level ⭐⭐⭐ | 15.0KB | `entities/dario-amodei-policy-ai-exponential-time-mismatch.md`
+> 📊 Level ⭐⭐⭐ | 15.1KB | `entities/dario-amodei-policy-ai-exponential-time-mismatch.md`
 
 # Dario Amodei: AI 指数发展与政策制定的时序鸿沟
 
@@ -433,7 +433,7 @@ Amodei 政策对 AI 从业者的启示：
 
 ## Ch20.004 GitLab employees are the latest to face layoffs limbo. Read the CEO's memo about restructuring 'openly.
 
-> 📊 Level ⭐⭐⭐ | 13.0KB | `entities/gitlab-layoffs-memo-2026-5.md`
+> 📊 Level ⭐⭐⭐ | 13.1KB | `entities/gitlab-layoffs-memo-2026-5.md`
 
 > -> [GitLab employees are the latest to face layoffs limbo. Read the CEO's memo about restructuring 'openly.'](https://www.businessinsider.com/gitlab-layoffs-memo-2026-5)
 ## 相关实体
@@ -631,7 +631,7 @@ Hugging Face + NVIDIA NIM 双渠道部署反映了当前企业 AI 落地的两�
 ## 相关实体
 - [Nvidia Nemotron 3 Agents Rag Voice Safety](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-nemotron-3-agents-rag-voice-safety.md)
 - [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-nemotron-3-ultra-sagemaker-jumpstart-moe-agentic.md)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/043-nvidia-secure-local-agent-nemoclaw-openclaw.html)
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/042-nvidia-secure-local-agent-nemoclaw-openclaw.html)
 - [Fine Tuning Cosmos](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tuning-cosmos.md)
 - [Tokenspeed Agentic Inference Engine](ch04/268-tokenspeed-agentic-inference-engine.html)
 
@@ -642,7 +642,7 @@ Hugging Face + NVIDIA NIM 双渠道部署反映了当前企业 AI 落地的两�
 
 ## Ch20.006 Nearly every enterprise is investing in AI, but only 5% say their data is ready
 
-> 📊 Level ⭐⭐⭐ | 8.2KB | `entities/enterprise-ai-investment-data-readiness-cio.md`
+> 📊 Level ⭐⭐⭐ | 8.3KB | `entities/enterprise-ai-investment-data-readiness-cio.md`
 
 ## 核心要点
 - **97% 的企业在投资 AI，仅 5% 认为数据基础设施已准备好**
@@ -1217,7 +1217,7 @@ Steve Yegge 为游戏项目开 12 个订阅，按真实 token 价格折算每月
 
 ## Ch20.011 Vibe Design ≠ Vibe Coding —— 资深设计师对 AI 前端工作流的哲学批判
 
-> 📊 Level ⭐⭐⭐⭐ | 9.8KB | `entities/impeccable-vibe-design-philosophy-anomaly.md`
+> 📊 Level ⭐⭐⭐⭐ | 9.9KB | `entities/impeccable-vibe-design-philosophy-anomaly.md`
 
 # Vibe Design ≠ Vibe Coding —— 资深设计师对 AI 前端工作流的哲学批判
 > "Code is correct or not. Design is good or not. The same workflow can't serve both." —— Anomaly Innovations 创始人核心论点
@@ -1407,7 +1407,7 @@ AI 系统在健康、科学、教育、编程等高风险场景中越来越自�
 
 ## Ch20.013 Data Agent 产品设计文档
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 29.9KB | `entities/data-agent-product-design.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 30.0KB | `entities/data-agent-product-design.md`
 
 # Data Agent 产品设计文档
 
@@ -2006,7 +2006,7 @@ POST   /api/v1/datasets/{id}/sync    # 触发数据同步
 
 ## Ch20.014 下一代企业数字化架构：系统CLI化、流程Skill化、员工Agent化
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 15.7KB | `entities/enterprise-next-gen-architecture-zhan.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 15.8KB | `entities/enterprise-next-gen-architecture-zhan.md`
 
 ## 核心洞察
 **旧范式已死：** "Skill能力化、Agent智能化"是同义反复，没有新增信息。企业真正需要回答的问题是：一封合同进来，谁下载附件？谁上传系统？谁发起审批？谁盯流程？谁回邮件？

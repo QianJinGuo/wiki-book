@@ -30,7 +30,7 @@ MLOps 是 AI 系统从"Demo"到"产品"的分水岭。
 
 ## Ch13.001 CEOs’ top priorities for IT leaders today
 
-> 📊 Level ⭐⭐⭐ | 7.5KB | `entities/www.cio.com-ceos-top-priorities-for-it-leaders-today-2-html.md`
+> 📊 Level ⭐⭐⭐ | 7.6KB | `entities/www.cio.com-ceos-top-priorities-for-it-leaders-today-2-html.md`
 
 # CEOs’ top priorities for IT leaders today
 
@@ -401,7 +401,7 @@ Vijay Viswanathan 等人的研究论文，揭示了奖励模型（Reward Model�
 
 ## Ch13.004 Agent 评测方法论——美团图灵两年 BP 实践（人人一致/人机一致 + 桥梁指标 + 长程范式）
 
-> 📊 Level ⭐⭐⭐⭐ | 20.4KB | `entities/meituan-turing-agent-evaluation-methodology-2026-08-06.md`
+> 📊 Level ⭐⭐⭐⭐ | 20.5KB | `entities/meituan-turing-agent-evaluation-methodology-2026-08-06.md`
 
 # Agent 评测方法论——美团图灵两年 BP 实践
 
@@ -538,7 +538,7 @@ ChatAgent 时代：核心评测员对齐 → 外包对齐 → 机评对齐。长
 
 ## Ch13.005 阿里巴巴&蚂蚁 LoongSuite GenAI 可观测语义规范：从统一数据语言到规模化落地
 
-> 📊 Level ⭐⭐⭐⭐ | 20.3KB | `entities/阿里巴巴蚂蚁-loongsuite-genai-可观测语义规范从统一数据语言到规模化落地.md`
+> 📊 Level ⭐⭐⭐⭐ | 20.4KB | `entities/阿里巴巴蚂蚁-loongsuite-genai-可观测语义规范从统一数据语言到规模化落地.md`
 
 ## 核心要点
 - OTel SemConv 是可观测数据的"道"，采集工具是"术"——语义规范才是 OTel 社区的核心价值
@@ -659,7 +659,7 @@ LoongSuite 的演进路径——内部验证后贡献社区——是大型企业
 
 ## Ch13.006 NICE：浙大提出的理论驱动型 LLM 社会智能诊断基准
 
-> 📊 Level ⭐⭐⭐⭐ | 16.7KB | `entities/nice-zhejiang-university-social-intelligence-benchmark-hyman.md`
+> 📊 Level ⭐⭐⭐⭐ | 16.8KB | `entities/nice-zhejiang-university-social-intelligence-benchmark-hyman.md`
 
 # NICE：浙大提出的理论驱动型 LLM 社会智能诊断基准
 
@@ -844,7 +844,7 @@ NICE 真正的差异化定位是**「理论 + 内涵级 + 排序题」三位一�
 - [AI 评估的三种方法](https://github.com/QianJinGuo/wiki-public/blob/main/entities/evals-three-methods-of-ai-evaluation.md)
 - [Agent Skill 写作评估](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing-evaluation.md)
 - [AI 工作面试与模型评估](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-job-interview-model-evaluation-mollick.md)
-- [Inngest 2026 AI 评测报告](ch01/313-inngest-ai-in-production-the-2026-benchmark-report.html)
+- [Inngest 2026 AI 评测报告](ch01/312-inngest-ai-in-production-the-2026-benchmark-report.html)
 - [Agent Harness 生产设计指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture-design-production-guide.md)
 - [Agent 工程原则](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-engineering-principles-architecture-practice.md)
 - [SkillClaw Hyman 阿里 Skill 框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skillclaw-hyman-nightly-evolution-alibaba.md)
@@ -1217,7 +1217,7 @@ SageMaker AI 与 Qualcomm AI Hub 的组合本质上是把模型交付链条的�
 
 ## Ch13.009 SaaS-Bench：浙大阿里 Steering Computer-Use Agent 真实系统评测（3.8% 通过率暴露范式天花板）
 
-> 📊 Level ⭐⭐⭐⭐ | 10.3KB | `entities/saas-bench-gui-agent-eval-unipat.md`
+> 📊 Level ⭐⭐⭐⭐ | 10.4KB | `entities/saas-bench-gui-agent-eval-unipat.md`
 
 ## 摘要
 
@@ -1337,7 +1337,7 @@ pass@3 相比 pass@1 整体提升约 8pp，Sonnet 4.6 多模态任务提升 18.2
 
 ## Ch13.010 Agent Skill 评估与迭代
 
-> 📊 Level ⭐⭐⭐⭐ | 5.8KB | `entities/agent-skill-writing-evaluation.md`
+> 📊 Level ⭐⭐⭐⭐ | 5.9KB | `entities/agent-skill-writing-evaluation.md`
 
 ## 优化 description 的系统性方法
 1. 准备 20 个提示词（一半触发 / 一半不触发）
@@ -1438,7 +1438,7 @@ delta 指标（pass_rate / time_seconds / tokens）的标准差同样携带信�
 
 ## Ch13.011 ai-skill-测评指标体系
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 17.2KB | `entities/ai-skill-测评指标体系.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 17.3KB | `entities/ai-skill-测评指标体系.md`
 
 [Ai Skill 测评指标体系](https://juejin.cn/post/7619990292557365300)
 
@@ -1715,7 +1715,7 @@ Stddev > 0.1 时，按以下顺序排查：
 
 ## Ch13.012 07—AI Skill 测评体系完整进阶指南：5 大能力缺口与填补路径
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 16.6KB | `entities/ai-skill-测评体系进阶指南.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 16.7KB | `entities/ai-skill-测评体系进阶指南.md`
 
 ## 测评体系的当前能力边界
 
@@ -1975,7 +1975,7 @@ SkillSentry 测评体系的演进折射出一个根本性的工程挑战：如�
 
 ## Ch13.013 06—看懂 AI Skill 测评报告：PASS / FAIL / INCONCLUSIVE 背后的发布决策逻辑
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 14.6KB | `entities/ai-skill-测评报告解读.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 14.7KB | `entities/ai-skill-测评报告解读.md`
 
 ## 报告是写给谁看的
 

@@ -1,6 +1,6 @@
 # Agent Harness 解析：智能体架构深度拆解
 
-> 📊 Level ⭐⭐⭐⭐ | 11.6KB | `entities/agent-harness-architecture-deep-dive-aksahy.md`
+> 📊 Level ⭐⭐⭐⭐ | 11.7KB | `entities/agent-harness-architecture-deep-dive-aksahy.md`
 
 ## 核心定义
 **Agent Harness** = 包裹 LLM 的完整软件基础设施：编排循环、工具、记忆、上下文管理、状态持久化、错误处理、安全护栏。
@@ -87,7 +87,7 @@ Boris Cherny 报告自验证提升 2-3x 质量，但这是有代价的：每步�
 ## 相关实体
 - [从 30 分钟手搓 Agent，到 Harness 成为"新后端"](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cong-30-fen-zhong-shou-gu-agent-dao-harness-cheng-wei-xin-hou-duan.md)
 - [Thin Harness Fat Skills](https://github.com/QianJinGuo/wiki-public/blob/main/entities/thin-harness-fat-skills.md)
-- [你不知道的 Agent 原理架构与工程实践](../ch04/181-agent-principle-architecture-engineering-practice.html)
+- [你不知道的 Agent 原理架构与工程实践](../ch04/180-agent-principle-architecture-engineering-practice.html)
 - [Design Patterns for AI Agents 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/design-patterns-for-ai-agents-2026.md)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 

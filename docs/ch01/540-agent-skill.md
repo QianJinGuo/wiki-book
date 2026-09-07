@@ -1,6 +1,6 @@
 # Agent Skill 进阶模式与治理
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 11.6KB | `entities/agent-skill-writing-advanced.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 11.7KB | `entities/agent-skill-writing-advanced.md`
 
 ## 五种进阶模式（Anthropic 官方实践经验）
 ### 模式一：顺序工作流编排

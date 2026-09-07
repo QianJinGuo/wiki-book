@@ -1,6 +1,6 @@
 # Skill Retrieval Augmentation for Agentic AI — 清华 Skill-RAG
 
-> 📊 Level ⭐⭐⭐ | 5.0KB | `entities/skill-rag-tsinghua-sra.md`
+> 📊 Level ⭐⭐⭐ | 5.1KB | `entities/skill-rag-tsinghua-sra.md`
 
 # Skill Retrieval Augmentation for Agentic AI — 清华 Skill-RAG
 > 本文是对 https://mp.weixin.qq.com/s/xWeppFmwJaqTXmMd-4LI3Q 的存档

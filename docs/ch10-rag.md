@@ -105,7 +105,7 @@ SkillCorpus 是由 EverMind、盛大集团与北京大学联合提出的框架�
 
 ## Ch10.002 【实践教程】真实AI客服落地全流程：意图识别、混合检索到数据飞轮
 
-> 📊 Level ⭐⭐ | 7.6KB | `entities/实践教程真实ai客服落地全流程意图识别混合检索到数据飞轮.md`
+> 📊 Level ⭐⭐ | 7.7KB | `entities/实践教程真实ai客服落地全流程意图识别混合检索到数据飞轮.md`
 
 # 【实践教程】真实AI客服落地全流程：意图识别、混合检索到数据飞轮
 > AI训练营  ** 9期  ** ，  ** 今日  ** 开班，欢迎咨询
@@ -150,7 +150,7 @@ SkillCorpus 是由 EverMind、盛大集团与北京大学联合提出的框架�
 
 ## Ch10.003 Nvidia Multimodal RAG Knowledge Systems
 
-> 📊 Level ⭐⭐⭐ | 22.0KB | `entities/nvidia-multimodal-rag-knowledge-systems.md`
+> 📊 Level ⭐⭐⭐ | 22.1KB | `entities/nvidia-multimodal-rag-knowledge-systems.md`
 
 # Build AI&#x2d;Ready Knowledge Systems Using 5 Essential Multimodal RAG Capabilities | NVIDIA Technical Blog
 Build AI&#x2d;Ready Knowledge Systems Using 5 Essential Multimodal RAG Capabilities | NVIDIA Technical Blog DEVELOPER Home Blog Forums Docs Downloads Training Join Technical Blog Subscribe Related Resources Agentic AI / Generative AI English Build AI-Ready Knowledge Systems Using 5 Essential Multimodal RAG Capabilities Feb 17, 2026 By Shruthii Sathyanarayanan , Sumit Bhattacharya , Punit Kumar , Pranjal Doshi and Nikhil Kulkarni Like Discuss (1) L T F R E Enterprise data is inherently complex: real-world documents are multimodal, spanning text, tables, charts and graphs, images, diagrams, scanned pages, forms, and embedded metadata. Financial reports carry critical insights in tables, engineering manuals rely on diagrams, and legal documents often include annotated or scanned content.&nbsp; Retrieval-augmented generation (RAG) was created to ground LLMs in trusted enterprise knowledge retrieving relevant source data at query time to reduce hallucinations and improve accuracy. But if a RAG system processes only surrounding text, it misses key signals embedded in tables, charts, and diagrams resulting in incomplete or incorrect answers. An intelligent agent is only as good as the data foundation it s built on. Modern RAG must therefore be inherently multimodal able to understand both visual and textual context to achieve enterprise-grade accuracy. The NVIDIA Enterprise RAG Blueprint is built for this, providing a modular reference architecture that connects unstructured enterprise data to the intelligent systems built on top of it.&nbsp; The blueprint also serves as a foundational layer for the NVIDIA AI Data Platform , helping to bridge the traditional gap between compute and data. By enabling retrieval and reasoning closer to the data layer, it preserves governance, reduces operational friction, and makes enterprise knowledge immediately usable by intelligent systems. The result is a modern AI data stack storage that can retrieve, enrich, and reason alongside your models. While the Enterprise RAG Blueprint provides many configurable options, this post highlights the following five key configurations that most directly improve accuracy and contextual relevance across enterprise use cases:&nbsp; Baseline multimodal RAG pipeline Reasoning Query decomposition Filtering metadata for faster and precise retrieval Visual reasoning for multimodal data The post also explains how the blueprint can be embedded into AI data platforms to transform traditional repositories into AI-ready knowledge systems.&nbsp; Accuracy metrics in this blog are measured using the RAGAS framework , using well-known public datasets. Learn more about evaluating your NVIDIA RAG Blueprint system . 1. Document ingestion and understanding Before an agent can deliver insights, it must be perfectly grounded in your data. This foundational configuration focuses on intelligent document ingestion and core RAG functionality.&nbsp; The Enterprise RAG Blueprint uses NVIDIA NeMo Retriever to extract multimodal enterprise content text, tables, charts and graphs, and infographics then embeds that content into text for indexing in a vector database. At query time, the blueprint runs semantic retrieval, reranking, and Nemotron LLM to generate a grounded answer. To maximize performance, this baseline intentionally avoids image captioning and heavy reasoning, making it the ideal starting point for production deployments. Deploy this baseline on Docker . Benefits of document ingestion and understanding&nbsp; This foundational configuration is the blueprint s highest-efficiency pipeline, optimized for accuracy and throughput while keeping GPU cost and time to first token (TTFT) low. This configuration establishes your baseline performance for retrieval quality and LLM grounding. Figure 1. RAG pipeline Table 1 summarizes the overall impact across a few datasets. Accuracy (v2.3 Default) MM = Multimodal, TO = Text-Only Dataset Type Accuracy RAG Battle MM 0.809 KG RAG MM 0.565 FinanceBench MM 0.633 BO767 MM 0.910 HotpotQA TO 0.671 Google Frames MM 0.509 Table 1. Accuracy impact of baseline configuration (higher is better) 2. Reasoning When you turn on reasoning in the RAG blueprint, you enable the LLM to interpret the retrieved evidence, and synthesize logically grounded answers. This is the easiest change to get an accuracy boost for many applications. Enable reasoning for the NVIDIA Enterprise RAG Blueprint . Table 2 summarizes the overall impact across several sample datasets. Accuracy (v2.3 Default) plus Reasoning MM = Multimodal, TO = Text-Only Dataset Type Reasoning on Default RAG Battle MM 0.85 0.809 KG RAG MM 0.58 0.565 FinanceBench MM 0.69 0.633 BO767 MM 0.88 0.91 Table 2. Accuracy impact of enabling reasoning versus baseline configuration (higher is better) Benefits of reasoning&nbsp; For any use case involving mathematical operations or complex data comparison, a typical simple similarity or hybrid search will not suffice. Reasoning is required to correct errors and ensure precise contextual understanding. Accuracy improvements across datasets averaged ~5%, with several cases demonstrating dramatic reasoning-driven corrections.&nbsp; Examples In the FinanceBench dataset, the baseline configuration incorrectly computed the Adobe FY2017 operating cash flow ratio as 2.91. After enabling reasoning, the model produced the correct answer, 0.83. In addition, the Ragbattle dataset demonstrates the accuracy improvement from enabling VLM. 3. Query decomposition&nbsp; Answering complex user questions often requires pulling facts from multiple places in the data foundation. Query decomposition breaks a single question into smaller subqueries, retrieves evidence for each, and recombines the results into a complete, grounded response. Turn on query decomposition for the NVIDIA Enterprise RAG Blueprint . Figure 2. Response accuracy before and after query decomposition Benefits of query decomposition Query decomposition significantly improves accuracy for multihop and context-rich questions that span multiple paragraphs or documents. It does add extra LLM calls (increasing latency and cost), but the accuracy gains are often worth it for mission-critical enterprise use cases. Query decomposition can also be paired with reasoning for an additional boost when needed. Example As NVIDIA AI Data platform partners evolve to offer more relevant and accurate retrieval, this feature can either include some level of query processing as part of the data platform or can be left to the agent. Learn more about how query decomposition can be an approach in some use cases .&nbsp; Table 3 shows the overall impact across a few datasets. Accuracy (v2.3 Default) plus Query Decomposition MM = Multimodal, TO = Text-Only Dataset Type Query decomposition Default RAG Battle MM 0.854 0.809 FinanceBench MM 0.631 0.633 BO767 MM 0.885 0.91 HotpotQA TO 0.725 0.671 Google Frames MM 0.6 0.5094 Table 3. Accuracy impact of query decomposition versus baseline configuration (higher is better) 4. Filtering metadata for faster and precise retrieval Metadata, such as author, date, category, and security tags, has always been integral to enterprise data. In RAG pipelines, metadata filters can be leveraged to narrow the search space and align retrieved content with the right context, significantly improving retrieval precision and speed.&nbsp; The RAG blueprint supports custom metadata ingestion and automatic query generation based on that data. To leverage your custom metadata, see Advanced Metadata Filtering with Natural Language Generation . To learn more about what s possible with this feature set, check out the example notebook on the NVIDIA-AI-Blueprints/rag GitHub repo.&nbsp; Benefits of metadata filtering Metadata filtering narrows the search space for faster retrieval and improves precision by aligning retrieved content with context. This allows developers to leverage metadata without manual filter logic to achieve higher throughput and contextual relevance. When metadata filtering capabilities are embedded directly into AI data platforms, it can make your storage smarter, leading to faster retrieval and lower latency. Example To provide an example, consider two documents that are ingested with the following metadata: custom_metadata = &#x5B; { &quot;filename&quot;: &quot;ai_guide.pdf&quot;, &quot;metadata&quot;: { &quot;category&quot;: &quot;AI&quot;, &quot;priority&quot;: 8, &quot;rating&quot;: 4.5, &quot;tags&quot;: &#x5B;&quot;machine-learning&quot;, &quot;neural-networks&quot;], &quot;created_date&quot;: &quot;2024-01-15T10:30:00&quot; } }, { &quot;filename&quot;: &quot;engineering_manual.pdf&quot;, &quot;metadata&quot;: { &quot;category&quot;: &quot;engineering&quot;, &quot;priority&quot;: 5, &quot;rating&quot;: 3.8, &quot;tags&quot;: &#x5B;&quot;hardware&quot;, &quot;design&quot;], &quot;created_date&quot;: &quot;2023-12-20T14:00:00&quot; } } When using metadata with dynamic filter expression, a query such as, &#8220;Show me high-rated AI documents with machine learning tags created after January 2024&#8221; will translate to one that automatically generates a filtering expression such as: filter_expression = `content_metadata&#x5B;&quot;category&quot;] == &quot;AI&quot; and content_metadata&#x5B;&quot;rating&quot;] &gt;= 4.0 and array_contains(content_metadata&#x5B;&quot;tags&quot;], &quot;machine-learning&quot;) and content_metadata&#x5B;&quot;created_date&quot;] &gt;= &quot;2024-01-01 ` With metadata filtering enabled, the system retrieved 10 focused citations from one document, ai_guide.pdf , achieving 100% precision on the target domain while reducing search space by 50%. 5. Visual reasoning for multimodal data&nbsp; Enterprise data is visually rich. Where traditional text-only embeddings fall short, vision language models (VLMs) such as NVIDIA Nemotron Nano 2 VL (12B) introduce visual reasoning into the pipeline. Learn more about how to leverage a VLM for generation in the RAG Blueprint.&nbsp; Figure 3. Before and after leveraging a VLM for generation Benefits of visual reasoning&nbsp; Visual reasoning is crucial for handling real-world enterprise documents. Integrating a VLM in the generation pathway enables the RAG system to interpret images, charts, and infographics, making it possible to accurately answer queries where the information lies in a structured visual element rather than just the surrounding text.&nbsp; Example&nbsp; A significant accuracy improvement was observed when a VLM was enabled for the Ragbattle dataset in the RAG Blueprint, especially when the answer was in a visual element. Note that enabling VLM inference can increase response latency from additional image processing. Consider this tradeoff between accuracy and speed based on your requirements. Learn more about the accuracy improvements with VLM for the Ragbattle dataset. Transforming enterprise storage into an active knowledge system The Enterprise RAG Blueprint demonstrates how the progressive adoption of these five capabilities from reasoning and metadata-driven retrieval to multimodal understanding directly enhances the accuracy and groundedness of your intelligent agents. Each capability offers a unique balance between latency, token cost, and contextual precision, providing a flexible, tunable framework that can be adopted to various enterprise use cases. This accelerates the evolution of the data foundation itself. The NVIDIA AI Data Platform transforms enterprise data into AI-searchable knowledge. As NVIDIA partners evolve their storage offerings, this blueprint serves as a reference for delivering embedded RAG capabilities that leverage metadata to enforce permissions, track changes, and provide highly accurate retrieval directly at the storage layer. NVIDIA storage partners are building AI data platforms based on the NVIDIA reference design that are transforming enterprise storage from a passive repository to become an active intelligent system in the AI workflow. The result is a next-generation enterprise data infrastructure: faster, smarter, and purpose-built for the age of generative AI. What s new with the NVIDIA Enterprise RAG Blueprint The latest release of the NVIDIA EnterpriseRAG Blueprint deepens its focus on serving agentic workflows. It introduces first-class document-level summarization with both shallow and deep strategies, enabling agents to quickly assess relevance, narrow search space, and balance accuracy with latency. A new data catalog improves discoverability and governance across large corpora, while upgrades to the best-in-class Nemotron RAG models further enhance retrieval quality, reasoning, and generation performance making RAG a more efficient, agent-ready foundation for enterprise-scale knowledge systems. Get started with enterprise-grade RAG Ready to integrate these five capabilities into your RAG use cases? Access the modular code, documentation, and evaluation notebooks for free within the NVIDIA Enterprise RAG Blueprint . Make your enterprise data AI-ready and transform your production data into an intelligent knowledge system with embedded RAG capabilities with NVIDIA AI Data Platform. Contact an NVIDIA AI storage partner to get started with your own NVIDIA-powered AI data platform.&nbsp; Discuss (1) Like Tags Agentic AI / Generative AI | Data Center / Cloud | General | Blueprint | Nemotron | Intermediate Technical | Best practice | AI Agent | AI Data Platform | AI-Ready Data | featured | LLMs | Retrieval Augmented Generation (RAG) About the Authors About Shruthii Sathyanarayanan Shruthii Sathyanarayanan is a product marketing manager in the NVIDIA Enterprise Computing group with a focus on enterprise AI and virtualization. Shruthii holds a bachelor s degree in Computer Engineering and Business from the University of Illinois at Urbana-Champaign and has previously held roles in software development and product management. View all posts by Shruthii Sathyanarayanan About Sumit Bhattacharya Sumit Bhattacharya is a senior engineering manager at NVIDIA, working on AI blueprints and conversational AI. His primary area of focus is building scalable, low-latency solutions for Enterprise RAG, data flywheels, and voice agents. He also has extensive experience of working on NLP, dialog systems, and voice assistants. He holds a master s degree in Electrical Engineering from the Indian Institute of Technology, Kharagpur, and has over 18 years of industry experience. View all posts by Sumit Bhattacharya About Punit Kumar Punit Kumar is a senior system software engineer at NVIDIA with a focus on the RAG Blueprint, production RAG systems, and features that improve accuracy and performance. Punit holds a master s degree in Data Science and Engineering from BITS Pilani and a BTech in Computer Science from SKIT Jaipur and has previously held roles in R&amp;D in AI engineering and in data engineering. View all posts by Punit Kumar About Pranjal Doshi Pranjal Doshi is a software engineer at NVIDIA, specializing in retrieval-augmented generation (RAG) and the productionization of large language models. Pranjal holds a master s degree in Computer Science and Engineering from the Indian Institute of Technology (IIT) Kharagpur and focuses on bridging the gap between AI research and scalable, real-world applications. View all posts by Pranjal Doshi About Nikhil Kulkarni Nikhil Kulkarni is a software engineer at NVIDIA specializing in the productization of the RAG Blueprint, with an emphasis on accuracy improvements, performance optimizations, and deployment. Nikhil holds a bachelor s degree in Computer Science and focuses on translating AI models into robust, enterprise-grade architectures. He has previously worked on building speech-based AI agents at NVIDIA. View all posts by Nikhil Kulkarni Comments Related posts Chat With Your Enterprise Data Through Open-Source AI-Q NVIDIA Blueprint Chat With Your Enterprise Data Through Open-Source AI-Q NVIDIA Blueprint NVIDIA NeMo Retriever Delivers Accurate Multimodal PDF Data Extraction 15x Faster NVIDIA NeMo Retriever Delivers Accurate Multimodal PDF Data Extraction 15x Faster Insights, Techniques, and Evaluation for LLM-Driven Knowledge Graphs Insights, Techniques, and Evaluation for LLM-Driven Knowledge Graphs Translate Your Enterprise Data into Actionable Insights with NVIDIA NeMo Retriever Translate Your Enterprise Data into Actionable Insights with NVIDIA NeMo Retriever Scaling Enterprise RAG with Accelerated Ethernet Networking and Networked Storage Scaling Enterprise RAG with Accelerated Ethernet Networking and Networked Storage Related posts Building NVIDIA Nemotron 3 Agents for Reasoning, Multimodal RAG, Voice, and Safety Building NVIDIA Nemotron 3 Agents for Reasoning, Multimodal RAG, Voice, and Safety How to Build Deep Agents for Enterprise Search with NVIDIA AI-Q and LangChain How to Build Deep Agents for Enterprise Search with NVIDIA AI-Q and LangChain Build Next-Gen Physical AI with Edge First LLMs for Autonomous Vehicles and Robotics Build Next-Gen Physical AI with Edge First LLMs for Autonomous Vehicles and Robotics Building Telco Reasoning Models for Autonomous Networks with NVIDIA NeMo Building Telco Reasoning Models for Autonomous Networks with NVIDIA NeMo How to Build a Document Processing Pipeline for RAG with Nemotron How to Build a Document Processing Pipeline for RAG with Nemotron L T F R E
@@ -191,9 +191,9 @@ NVIDIA Nemotron Nano 2 VL (12B) VLM 将视觉推理引入 RAG 管道，使系统
 
 ## 相关实体
 - [Nvidia Nemotron 3 Agents Rag Voice Safety](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-nemotron-3-agents-rag-voice-safety.md)
-- [Nvidia Extreme Co Design Agentic Systems](ch04/085-nvidia-extreme-co-design-agentic-systems.html)
-- [Nvidia Agentic Ai Subsurface Engineering](ch04/187-nvidia-agentic-ai-subsurface-engineering.html)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/043-nvidia-secure-local-agent-nemoclaw-openclaw.html)
+- [Nvidia Extreme Co Design Agentic Systems](ch04/084-nvidia-extreme-co-design-agentic-systems.html)
+- [Nvidia Agentic Ai Subsurface Engineering](ch04/186-nvidia-agentic-ai-subsurface-engineering.html)
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/042-nvidia-secure-local-agent-nemoclaw-openclaw.html)
 - [Nvidia Telco Reasoning Models Nemo](ch01/182-nvidia-telco-reasoning-models-nemo.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
 
@@ -334,7 +334,7 @@ Amazon Nova MME 的 `GENERIC_INDEX`（文档索引用）和 `GENERIC_RETRIEVAL`�
 
 → [Amazon Nova Sonic 可扩展语音代理设计](https://github.com/QianJinGuo/wiki-public/blob/main/entities/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session.md)
 
-→ [Amazon Nova 2 内容审核提示工程](ch01/480-prompting-amazon-nova-2-for-content-moderation.html)
+→ [Amazon Nova 2 内容审核提示工程](ch01/481-prompting-amazon-nova-2-for-content-moderation.html)
 
 → [Amazon Bedrock AgentCore 运行时深度解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-agentcore-runtime-deep-dive-and-scenario-analysis.md)
 
@@ -346,7 +346,7 @@ Amazon Nova MME 的 `GENERIC_INDEX`（文档索引用）和 `GENERIC_RETRIEVAL`�
 
 ## Ch10.005 怎么短平快地把RAG做好：厦门国际银行数创金融杯RAG初赛方案
 
-> 📊 Level ⭐⭐⭐ | 8.0KB | `entities/xiamen-bank-rag-competition-financial-regulation-trustrag.md`
+> 📊 Level ⭐⭐⭐ | 8.1KB | `entities/xiamen-bank-rag-competition-financial-regulation-trustrag.md`
 
 ## 摘要
 
@@ -403,7 +403,7 @@ Amazon Nova MME 的 `GENERIC_INDEX`（文档索引用）和 `GENERIC_RETRIEVAL`�
 
 ## Ch10.006 知识库构建方法论
 
-> 📊 Level ⭐⭐⭐ | 7.9KB | `entities/knowledge-base-construction.md`
+> 📊 Level ⭐⭐⭐ | 8.0KB | `entities/knowledge-base-construction.md`
 
 # 知识库构建方法论
 
@@ -817,7 +817,7 @@ PS：从这里也可以看出来，图谱的存在其实是为了解决工程维
 ## 关联阅读
 ## 相关实体
 - [Google Agentic Rag Sufficient Context Agent Framesqa](https://github.com/QianJinGuo/wiki-public/blob/main/entities/google-agentic-rag-sufficient-context-agent-framesqa.md)
-- [Architecture Data Foundations For Ai Powered Search](ch01/330-architecture-data-foundations-for-ai-powered-search.html)
+- [Architecture Data Foundations For Ai Powered Search](ch01/329-architecture-data-foundations-for-ai-powered-search.html)
 - [Rag技术框架的演进方向](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag技术框架的演进方向.md)
 - [Skill Rag Tsinghua Sra](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-rag-tsinghua-sra.md)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
@@ -828,7 +828,7 @@ PS：从这里也可以看出来，图谱的存在其实是为了解决工程维
 
 ## Ch10.008 RAG 分块优化 2025：策略选择与工程实践
 
-> 📊 Level ⭐⭐⭐⭐ | 17.9KB | `entities/rag-chunking-optimization-2025.md`
+> 📊 Level ⭐⭐⭐⭐ | 18.0KB | `entities/rag-chunking-optimization-2025.md`
 
 ## 相关实体
 
@@ -950,7 +950,7 @@ RAG 系统的效果瓶颈不在模型，而在**入库质量**。同样的 Embed
 - [RAG 全链路技术详解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-full-pipeline-taobao.md)
 - [RAG 分块向量化召回重排流水线](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-chunk-embedding-rerank-pipeline.md)
 - [向量库 vs 知识图谱：RAG 的进阶路径](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-vector-knowledge-graph-ontology.md)
-- [AI Agent 记忆系统工作原理](ch04/108-how-ai-agent-memory-works.html)
+- [AI Agent 记忆系统工作原理](ch04/107-how-ai-agent-memory-works.html)
 
 ## 深度分析
 
@@ -989,7 +989,7 @@ RAG 系统的效果瓶颈不在模型，而在**入库质量**。同样的 Embed
 
 ## Ch10.009 RAG Chunk Embedding Rerank Pipeline
 
-> 📊 Level ⭐⭐⭐⭐ | 13.7KB | `entities/rag-chunk-embedding-rerank-pipeline.md`
+> 📊 Level ⭐⭐⭐⭐ | 13.8KB | `entities/rag-chunk-embedding-rerank-pipeline.md`
 
 # RAG 分块·向量化·召回·重排流水线
 
@@ -1130,7 +1130,7 @@ RAG 项目需要**可观测性和飞轮系统**：回答需要有依据、可追
 
 ## Ch10.010 RAG 全链路技术详解：从文档加载到 Ragas 评估
 
-> 📊 Level ⭐⭐⭐⭐ | 12.7KB | `entities/rag-full-pipeline-taobao.md`
+> 📊 Level ⭐⭐⭐⭐ | 12.8KB | `entities/rag-full-pipeline-taobao.md`
 
 → [原文存档](https://mp.weixin.qq.com/s/aA2PFaabKNlDq96jhAdDkQ)
 
@@ -1381,7 +1381,7 @@ V2 的评估方法论强调"围绕决策做"而非"功能全覆盖"。BM25、向
 
 ## Ch10.012 MRAgent：记忆是重建的，不是检索的
 
-> 📊 Level ⭐⭐⭐⭐ | 10.8KB | `entities/mragent-memory-reconstructed-not-retrieved-nus-icml2026.md`
+> 📊 Level ⭐⭐⭐⭐ | 10.9KB | `entities/mragent-memory-reconstructed-not-retrieved-nus-icml2026.md`
 
 # MRAgent：记忆是重建的，不是检索的
 
@@ -1539,7 +1539,7 @@ Single-hop 涨幅温和（83→91），Multi-hop 跳幅巨大（75→90）。这
 
 ## Ch10.013 Instacart 广告检索架构演进：从 BERT 打分到生成式 token-by-token 检索
 
-> 📊 Level ⭐⭐⭐⭐ | 8.2KB | `entities/instacart-ads-retrieval-generative-token-by-token.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.3KB | `entities/instacart-ads-retrieval-generative-token-by-token.md`
 
 # Instacart 广告检索架构演进：从 BERT 打分到生成式 token-by-token 检索
 
@@ -1637,7 +1637,7 @@ CR 模型依赖原子产品 ID 作为独立 token，这定义了模型能理解�
 
 ## Ch10.014 Fragnesia: Linux Kernel Local Privilege Escalation via ESP-in-TCP
 
-> 📊 Level ⭐⭐⭐⭐ | 7.9KB | `entities/fragnesia-linux-kernel-local-privilege-escalation-via-esp-in-tcp.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.0KB | `entities/fragnesia-linux-kernel-local-privilege-escalation-via-esp-in-tcp.md`
 
 ## 漏洞概述
 
@@ -1732,7 +1732,7 @@ Fragnesia 利用链的第一步依赖 user namespace 隔离来获取 `CAP_NET_AD
 
 ## Ch10.015 RAG → 知识图谱 → 本体论：三层知识架构
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 28.7KB | `entities/rag-vector-knowledge-graph-ontology.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 28.8KB | `entities/rag-vector-knowledge-graph-ontology.md`
 
 # rag-vector-knowledge-graph-ontology
 
@@ -2042,7 +2042,7 @@ HippoRAG on AWS 提供了一个**经典的 GraphRAG 生产实现模板**，与 S
 
 ## Ch10.016 Ettin Reranker Family
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 15.1KB | `entities/ettin-reranker-family.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 15.2KB | `entities/ettin-reranker-family.md`
 
 ## 模型概览
 
@@ -2219,7 +2219,7 @@ ranked = reranker.rank(query, top_k_docs, top_k=5, return_documents=True)
 
 ## 相关实体
 - [Introducing The Ettin Reranker Family](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-the-ettin-reranker-family.md)
-- [Claude Code Openclaw Usage Ettin](ch09/106-claude-code-openclaw-usage-ettin.html)
+- [Claude Code Openclaw Usage Ettin](ch09/105-claude-code-openclaw-usage-ettin.html)
 - [Gemma 4 Multi Token Prediction Drafters](ch01/524-gemma-4-multi-token-prediction-drafters.html)
 - [Continuousasync](https://github.com/QianJinGuo/wiki-public/blob/main/entities/continuousasync.md)
 - [Continuous Async](https://github.com/QianJinGuo/wiki-public/blob/main/entities/continuous-async.md)

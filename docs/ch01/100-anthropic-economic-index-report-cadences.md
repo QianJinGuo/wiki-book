@@ -1,6 +1,6 @@
 # Anthropic Economic Index report: Cadences
 
-> 📊 Level ⭐ | 4.1KB | `entities/anthropic-economic-index-cadences-june-2026.md`
+> 📊 Level ⭐ | 4.2KB | `entities/anthropic-economic-index-cadences-june-2026.md`
 
 # Anthropic Economic Index report: Cadences
 

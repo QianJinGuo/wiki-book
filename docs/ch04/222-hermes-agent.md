@@ -1,6 +1,6 @@
 # Hermes Agent
 
-> 📊 Level ⭐⭐⭐ | 5.4KB | `entities/hermes-agent.md`
+> 📊 Level ⭐⭐⭐ | 5.6KB | `entities/hermes-agent.md`
 
 ## Overview
 Hermes Agent 是 **Nous Research** 开源的自主演式 AI Agent 框架，GitHub **10 万+ Stars**（2026 年 4 月）。

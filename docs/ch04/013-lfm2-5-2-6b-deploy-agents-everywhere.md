@@ -1,6 +1,6 @@
 # LFM2.5-2.6B: Deploy Agents Everywhere
 
-> 📊 Level ⭐ | 4.9KB | `entities/liquid-ai-lfm2-5-2-6b-agentic-on-device.md`
+> 📊 Level ⭐ | 5.0KB | `entities/liquid-ai-lfm2-5-2-6b-agentic-on-device.md`
 
 # LFM2.5-2.6B: Deploy Agents Everywhere
 

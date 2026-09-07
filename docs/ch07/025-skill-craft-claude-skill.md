@@ -1,6 +1,6 @@
 # Skill Craft：Claude Skill 质量工程工具
 
-> 📊 Level ⭐⭐⭐ | 7.4KB | `entities/claude-skill-quality-tool-skill-craft.md`
+> 📊 Level ⭐⭐⭐ | 7.5KB | `entities/claude-skill-quality-tool-skill-craft.md`
 
 # Skill Craft：Claude Skill 质量工程工具
 

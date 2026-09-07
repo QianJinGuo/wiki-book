@@ -1,6 +1,6 @@
 # Protecting against token theft
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 13.8KB | `entities/vercel-com-blog-protecting-against-token-theft.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 13.9KB | `entities/vercel-com-blog-protecting-against-token-theft.md`
 
 # Protecting against token theft
 
@@ -168,7 +168,7 @@ Vercel 选择在「请求级」部署 BotID，本质上是把攻击者的破解�
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验-v2.md)
 - [Agent Security Three Step Sequence Harness Governance Identity Crewai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-security-three-step-sequence-harness-governance-identity-crewai.md)
 - [Apple Siri Private Inference Lethal Trifecta Matthew Green](https://github.com/QianJinGuo/wiki-public/blob/main/entities/apple-siri-private-inference-lethal-trifecta-matthew-green.md)
-- [Automate Progressive Rollouts With Vercel Flags Vercel](../ch09/023-automate-progressive-rollouts-with-vercel-flags-vercel.html)
+- [Automate Progressive Rollouts With Vercel Flags Vercel](../ch09/022-automate-progressive-rollouts-with-vercel-flags-vercel.html)
 - [Inference Optimization](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/inference-optimization.md)
 - [Ai Infra Llm Efficient Inference Vllm](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-infra-llm-efficient-inference-vllm.md)
 - [Agentic Scheduler With Strands Agentcore For Multi Region Gpu Inference](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentic-scheduler-with-strands-agentcore-for-multi-region-gpu-inference.md)

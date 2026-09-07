@@ -1,6 +1,6 @@
 # The Shape of AI: Jaggedness, Bottlenecks and Salients
 
-> 📊 Level ⭐⭐⭐ | 9.9KB | `entities/the-shape-of-ai-jaggedness-bottlenecks-and-salients.md`
+> 📊 Level ⭐⭐⭐ | 10.0KB | `entities/the-shape-of-ai-jaggedness-bottlenecks-and-salients.md`
 
 # The Shape of AI: Jaggedness, Bottlenecks and Salients
 

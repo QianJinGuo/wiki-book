@@ -1,6 +1,6 @@
 # Autodata: An Agentic Data Scientist for High-Quality Synthetic Data
 
-> 📊 Level ⭐⭐⭐⭐ | 5.4KB | `entities/arxiv-2606.25996.md`
+> 📊 Level ⭐⭐⭐⭐ | 5.5KB | `entities/arxiv-2606.25996.md`
 
 # Autodata: An Agentic Data Scientist for High-Quality Synthetic Data
 

@@ -1,6 +1,6 @@
 # Agent Workflows
 
-> 📊 Level ⭐⭐⭐⭐ | 8.1KB | `entities/agent-workflows.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.2KB | `entities/agent-workflows.md`
 
 ## 核心要点
 - GitHub Agentic Workflows 运行在每个 PR 上，成本会悄然累积

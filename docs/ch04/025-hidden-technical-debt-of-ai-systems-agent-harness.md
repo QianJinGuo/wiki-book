@@ -1,6 +1,6 @@
 # Hidden Technical Debt of AI Systems: Agent Harness
 
-> 📊 Level ⭐ | 3.7KB | `entities/hidden-technical-debt-agent-harness.md`
+> 📊 Level ⭐ | 3.8KB | `entities/hidden-technical-debt-agent-harness.md`
 
 # Hidden Technical Debt of AI Systems: Agent Harness
 

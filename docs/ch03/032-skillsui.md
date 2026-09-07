@@ -1,6 +1,6 @@
 # SkillsUI
 
-> 📊 Level ⭐⭐⭐ | 7.4KB | `entities/skillsui.md`
+> 📊 Level ⭐⭐⭐ | 7.5KB | `entities/skillsui.md`
 
 ## Overview
 SkillsUI（兔展智能）是一个企业 Agent 中间层平台，定位为"企业 Agent 最后一公里"——解决 function calling/MCP 等底层协议到企业存量系统之间的工程层缺口。官网：https://skillsui.rabbitpre.com.cn/

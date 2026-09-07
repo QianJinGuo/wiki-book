@@ -1,6 +1,6 @@
 # Prompt Caching 工程实践 — Anthropic Claude Code 经验总结
 
-> 📊 Level ⭐⭐⭐⭐ | 16.8KB | `entities/anthropic-prompt-caching-claude-code.md`
+> 📊 Level ⭐⭐⭐⭐ | 16.9KB | `entities/anthropic-prompt-caching-claude-code.md`
 
 ## 核心约束：Prompt Caching = 前缀匹配
 API 缓存从请求开头到每个 `cache_control` 断点之间的所有内容。只要下次请求的前缀跟上次一样，就能复用计算结果。

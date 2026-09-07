@@ -1,6 +1,6 @@
 # Amazon Nova 2 Lite 视觉对象检测（自然语言驱动）
 
-> 📊 Level ⭐⭐⭐⭐ | 9.3KB | `entities/object-detection-with-amazon-nova-2-lite.md`
+> 📊 Level ⭐⭐⭐⭐ | 9.4KB | `entities/object-detection-with-amazon-nova-2-lite.md`
 
 # Amazon Nova 2 Lite 视觉对象检测（自然语言驱动）
 

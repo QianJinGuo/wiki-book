@@ -1,6 +1,6 @@
 # How Claude Code works in large codebases: Best practices and where to start
 
-> 📊 Level ⭐⭐⭐⭐ | 20.9KB | `entities/how_claude_code_works_in_large_codebases.md`
+> 📊 Level ⭐⭐⭐⭐ | 21.0KB | `entities/how_claude_code_works_in_large_codebases.md`
 
 ## 核心要点
 - Claude Code 采用**主动搜索（agentic search）**而非 RAG，在本地运行，直接读取实时代码库，无集中式索引延迟

@@ -1,6 +1,6 @@
 # Asana Agentic Work Management Platform — Work Graph as Agentic OS
 
-> 📊 Level ⭐⭐⭐⭐ | 17.3KB | `entities/asana-agentic-work-management-platform-lettertwo.md`
+> 📊 Level ⭐⭐⭐⭐ | 17.4KB | `entities/asana-agentic-work-management-platform-lettertwo.md`
 
 # Asana Agentic Work Management Platform — Work Graph as Agentic OS
 

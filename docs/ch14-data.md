@@ -167,7 +167,7 @@ Amazon S3 Tables 每次增量提交都会产生新数据文件。如果不加控
 
 ## Ch14.002 Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions
 
-> 📊 Level ⭐ | 7.9KB | `entities/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md`
+> 📊 Level ⭐ | 8.0KB | `entities/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md`
 
 > -> [原文存档](https://aws.amazon.com/blogs/machine-learning/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions/)
 
@@ -211,7 +211,7 @@ AI 生成 dashboard 的定位是消除 construction phase——当分析意图�
 
 ## Ch14.003 nOps FinOps Agent 架构：语义层驱动的数据分析 Agent 设计
 
-> 📊 Level ⭐ | 5.9KB | `entities/how-nops-shipped-finops-agents-75-faster-with-amazon-bedrock.md`
+> 📊 Level ⭐ | 6.0KB | `entities/how-nops-shipped-finops-agents-75-faster-with-amazon-bedrock.md`
 
 # nOps FinOps Agent 架构：语义层驱动的数据分析 Agent 设计
 
@@ -277,7 +277,7 @@ Vercel/Next.js BFF 与 AgentCore 之间有一层自定义 merge layer，一次�
 
 ## Ch14.004 Metric Semantic Layer: How Lyft Governs and Scales Key Data Definitions
 
-> 📊 Level ⭐ | 4.1KB | `entities/metric-semantic-layer-how-lyft-governs-and-scales-key-data-definitions.md`
+> 📊 Level ⭐ | 4.2KB | `entities/metric-semantic-layer-how-lyft-governs-and-scales-key-data-definitions.md`
 
 # Metric Semantic Layer: How Lyft Governs and Scales Key Data Definitions
 
@@ -310,7 +310,7 @@ Taking the above principles into account, we **implemented the Metrics Semantic 
 
 ## Ch14.005 Write-Ahead Intent Log: a Foundation for Efficient CDC at Scale
 
-> 📊 Level ⭐ | 3.8KB | `entities/write-ahead-intent-log-a-foundation-for-efficient-cdc-at-scale.md`
+> 📊 Level ⭐ | 3.9KB | `entities/write-ahead-intent-log-a-foundation-for-efficient-cdc-at-scale.md`
 
 # Write-Ahead Intent Log: a Foundation for Efficient CDC at Scale
 
@@ -343,7 +343,7 @@ Software is changing the world. QCon San Francisco empowers software development
 
 ## Ch14.006 The Data Operating System for the Foundation Model Era — Data Juicer
 
-> 📊 Level ⭐ | 3.7KB | `entities/the-data-operating-system-for-the-foundation-model-era-data-juicer.md`
+> 📊 Level ⭐ | 3.8KB | `entities/the-data-operating-system-for-the-foundation-model-era-data-juicer.md`
 
 # The Data Operating System for the Foundation Model Era — Data Juicer
 
@@ -374,7 +374,7 @@ Whether you’re deduplicating web-scale pre-training corpora, curating agent in
 
 ## Ch14.007 ClickHouse Ingestion at Scale: An Open-Source Zepto Engineering Story
 
-> 📊 Level ⭐ | 3.7KB | `entities/clickhouse-ingestion-at-scale-an-open-source-zepto-engineering-story.md`
+> 📊 Level ⭐ | 3.8KB | `entities/clickhouse-ingestion-at-scale-an-open-source-zepto-engineering-story.md`
 
 # ClickHouse Ingestion at Scale: An Open-Source Zepto Engineering Story
 
@@ -404,7 +404,7 @@ This is the story of how we overcame the **black box of managed cloud**, the hid
 
 ## Ch14.008 构建 AI 时代的知识底座：直播数据 LLM Wiki 实践
 
-> 📊 Level ⭐⭐ | 6.9KB | `entities/ai-knowledge-base-llm-wiki-practice-alicloud.md`
+> 📊 Level ⭐⭐ | 7.0KB | `entities/ai-knowledge-base-llm-wiki-practice-alicloud.md`
 
 > 原文归档：原文归档
 
@@ -598,7 +598,7 @@ Wiki 与传统文档的本质区别在于四个维度：**结构可解析**（fr
 
 ## Ch14.010 Amazon Quick integration with time-series databases for market intelligence using MCP
 
-> 📊 Level ⭐⭐ | 2.5KB | `entities/amazon-quick-mcp-kdbx-time-series.md`
+> 📊 Level ⭐⭐ | 2.6KB | `entities/amazon-quick-mcp-kdbx-time-series.md`
 
 # Amazon Quick integration with time-series databases for market intelligence using MCP
 
@@ -633,7 +633,7 @@ Amazon Quick is a comprehensive, generative AI-powered business intelligence ser
 
 ## Ch14.011 ai 驱动的大数据工程 从平台驱动到 aidlc 的范式迁移
 
-> 📊 Level ⭐⭐⭐ | 14.5KB | `entities/ai-驱动的大数据工程-从平台驱动到-aidlc-的范式迁移.md`
+> 📊 Level ⭐⭐⭐ | 14.6KB | `entities/ai-驱动的大数据工程-从平台驱动到-aidlc-的范式迁移.md`
 
 # ai 驱动的大数据工程 从平台驱动到 aidlc 的范式迁移
 
@@ -644,7 +644,7 @@ Amazon Quick is a comprehensive, generative AI-powered business intelligence ser
 <div style="line-height: 1.8;margin: 0;padding: 0">
 
 ## 相关实体
-- [From System Of Record To System Of Intelligence](ch01/425-from-system-of-record-to-system-of-intelligence.html)
+- [From System Of Record To System Of Intelligence](ch01/424-from-system-of-record-to-system-of-intelligence.html)
 - [Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md)
 - [London Met Police Big Tech Data Requests](https://github.com/QianJinGuo/wiki-public/blob/main/entities/london-met-police-big-tech-data-requests.md)
 - [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-goal-runtime-architecture-state-persistence-judge-closed-loop.md)
@@ -869,7 +869,7 @@ https://mp.weixin.qq.com/s/XLYWhkjFHxrH2-jb5O1qCQ
 
 ## Ch14.013 Databricks Storage Ecosystem & OpenSharing：企业数据治理从 Migrate Everything 到 Govern Everything 的范式转变
 
-> 📊 Level ⭐⭐⭐ | 11.4KB | `entities/databricks-storage-ecosystem-opensharing-govern-everything-2026.md`
+> 📊 Level ⭐⭐⭐ | 11.5KB | `entities/databricks-storage-ecosystem-opensharing-govern-everything-2026.md`
 
 # Databricks Storage Ecosystem & OpenSharing：企业数据治理从 Migrate Everything 到 Govern Everything 的范式转变
 
@@ -979,7 +979,7 @@ SDS 生态将 Databricks 的 Lakehouse 架构扩展到真正的混合环境—�
 
 ## Ch14.014 verify-data：一个端到端的数据验数 Agent Skill
 
-> 📊 Level ⭐⭐⭐ | 7.8KB | `entities/verify-data-agent-skill-data-validation.md`
+> 📊 Level ⭐⭐⭐ | 7.9KB | `entities/verify-data-agent-skill-data-validation.md`
 
 # verify-data：一个端到端的数据验数 Agent Skill
 
@@ -1108,7 +1108,7 @@ verify-data 与 Data Observability 工具（如 Monte Carlo、Great Expectations
 
 ## Ch14.015 LiveKit Agents：给大模型接上麦克风，没你想的那么简单
 
-> 📊 Level ⭐⭐⭐ | 7.2KB | `entities/livekit-agents-voice-ai-streaming-cascade-interruption-detection.md`
+> 📊 Level ⭐⭐⭐ | 7.3KB | `entities/livekit-agents-voice-ai-streaming-cascade-interruption-detection.md`
 
 ## 延迟：语音 AI 的第一个杀手
 
@@ -1340,7 +1340,7 @@ E2E 验证阶段是真正的瓶颈：必须在真实硬件上构造真实环境�
 
 ## Ch14.018 Stop Giving Your Agents Database Credentials — Agent Data Governance Patterns
 
-> 📊 Level ⭐⭐⭐ | 6.6KB | `entities/agent-data-governance-crewai-credential-patterns.md`
+> 📊 Level ⭐⭐⭐ | 6.7KB | `entities/agent-data-governance-crewai-credential-patterns.md`
 
 # Stop Giving Your Agents Database Credentials — Agent Data Governance Patterns
 
@@ -1418,7 +1418,7 @@ Data + AI Summit 的共识数据：Agent 循环（推理、工具调用、prompt
 
 ## Ch14.019 Amazon Redshift 推出集成数据湖查询引擎的 Graviton RG 实例
 
-> 📊 Level ⭐⭐⭐ | 6.1KB | `entities/amazon-redshift-推出带有集成数据湖查询引擎的基于-aws-graviton-的-rg-实例.md`
+> 📊 Level ⭐⭐⭐ | 6.2KB | `entities/amazon-redshift-推出带有集成数据湖查询引擎的基于-aws-graviton-的-rg-实例.md`
 
 ## 核心要点
 - AWS 技术实践
@@ -1468,7 +1468,7 @@ RG 实例已在全球广泛区域推出，涵盖亚太、北美、欧洲、中�
 
 ## Ch14.020 SQL NOT IN 与 NULL 的经典陷阱：De Morgan 定律到解析器行为
 
-> 📊 Level ⭐⭐⭐ | 5.9KB | `entities/sql-not-in-null-trap-demorgan-parser.md`
+> 📊 Level ⭐⭐⭐ | 6.0KB | `entities/sql-not-in-null-trap-demorgan-parser.md`
 
 # SQL NOT IN 与 NULL 的经典陷阱：De Morgan 定律到解析器行为
 
@@ -1538,7 +1538,7 @@ SELECT id FROM A EXCEPT SELECT id FROM B;
 
 ## Ch14.021 Good QC for RL Data
 
-> 📊 Level ⭐⭐⭐⭐ | 13.4KB | `entities/good-qc-for-rl-data.md`
+> 📊 Level ⭐⭐⭐⭐ | 13.5KB | `entities/good-qc-for-rl-data.md`
 
 > → [原文存档](https://www.seancai.com/philosophy/good_qc_rl_data)
 
@@ -1703,7 +1703,7 @@ Alignment-faking 基线 12%、Reward Tampering、Sycophancy——这三个已发
 
 ## Ch14.022 EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios
 
-> 📊 Level ⭐⭐⭐⭐ | 9.8KB | `entities/eva-bench-data-2-voice-agent-evaluation.md`
+> 📊 Level ⭐⭐⭐⭐ | 9.9KB | `entities/eva-bench-data-2-voice-agent-evaluation.md`
 
 # EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios
 
@@ -1831,7 +1831,7 @@ ServiceNow 本身是 ITSM / HR / 客户支持自动化领域的巨头，发布 E
 
 ## Ch14.023 Moneyball for Physical AI
 
-> 📊 Level ⭐⭐⭐⭐ | 8.5KB | `entities/moneyball-for-physical-ai.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.6KB | `entities/moneyball-for-physical-ai.md`
 
 # Moneyball for Physical AI
 
@@ -1942,7 +1942,7 @@ $$U_{eff}(n) = U_0 + \Delta U(1 - e^{-n/n_c})$$
 
 ## Ch14.024 Data for AI：明其所耗，知其所因！让每一分 Token 消耗都可量化的全栈实践
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 35.2KB | `entities/data-for-ai明其所耗知其所因让每一分-token-消耗都可量化的全栈实践.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 35.3KB | `entities/data-for-ai明其所耗知其所因让每一分-token-消耗都可量化的全栈实践.md`
 
 # Data for AI：明其所耗，知其所因！让每一分 Token 消耗都可量化的全栈实践
 source: rss
@@ -2438,7 +2438,7 @@ Agentic AI 的成本失控根源在于其执行路径的非确定性——传统
 
 ## Ch14.025 阿里云 Kafka × Iceberg 零 ETL 实时入湖：ApsaraMQ for Kafka × OSS Tables 架构减法
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 24.3KB | `entities/aliyun-kafka-iceberg-zero-etl-architecture-subtraction-2026-06-18.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 24.4KB | `entities/aliyun-kafka-iceberg-zero-etl-architecture-subtraction-2026-06-18.md`
 
 # 阿里云 Kafka × Iceberg 零 ETL 实时入湖：ApsaraMQ for Kafka × OSS Tables 架构减法
 

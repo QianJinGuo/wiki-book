@@ -1,6 +1,6 @@
 # Hermes Agent 记忆系统深度拆解
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 19.2KB | `entities/hermes-agent-memory-system-vs-openclaw.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 19.4KB | `entities/hermes-agent-memory-system-vs-openclaw.md`
 
 [原文存档](https://mp.weixin.qq.com/s/0n5aw2I0yoyHS7W5fQ6ydA)
 
@@ -170,7 +170,7 @@ Honcho 这类外部 provider 引入深层用户建模，但带来了额外的治
 - [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/karpathy-llm-wiki-v2.md)
 - [Hermes Agent 三级 Memory 架构解析（One掌柜视角）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-three-layer-memory-one.md)
 
-- [AI Agent 记忆系统架构](108-how-ai-agent-memory-works.html)
+- [AI Agent 记忆系统架构](107-how-ai-agent-memory-works.html)
 - [Agent Memory System Design](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-system-design.md)
 - [AI Agent 工程师能力地图](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-engineer-capability-map.md)
 

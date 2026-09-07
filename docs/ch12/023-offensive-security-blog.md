@@ -1,12 +1,12 @@
 # Offensive Security Blog
 
-> 📊 Level ⭐⭐⭐ | 8.4KB | `entities/offensive-security-blog.md`
+> 📊 Level ⭐⭐⭐ | 8.5KB | `entities/offensive-security-blog.md`
 
 > -> [offensive-security-blog](https://bishopfox.com/blog)
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/moc/cybersecurity-privacy.md)
 
-- [CloudSectiDbits: Masso - Cognito SSO Bypass](../ch11/085-cloudsectidbits.html)
+- [CloudSectiDbits: Masso - Cognito SSO Bypass](../ch11/084-cloudsectidbits.html)
 
 ## 近期热门文章
 ### Otto-Support: Supply Chain Risks in MCP Servers（2026-05-13）

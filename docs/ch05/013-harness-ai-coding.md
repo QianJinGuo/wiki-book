@@ -1,6 +1,6 @@
 # 应用宝活动平台 Harness 工程实践——从对话式 AI Coding 到工程化系统
 
-> 📊 Level ⭐⭐ | 8.7KB | `entities/appstore-activity-harness-engineering-tencent.md`
+> 📊 Level ⭐⭐ | 8.8KB | `entities/appstore-activity-harness-engineering-tencent.md`
 
 # 应用宝活动平台 Harness 工程实践——从对话式 AI Coding 到工程化系统
 

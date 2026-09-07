@@ -1,6 +1,6 @@
 # New and improved Agent governance intelligent workflows
 
-> 📊 Level ⭐⭐⭐ | 3.9KB | `entities/microsoft-copilot-studio-agent-governance.md`
+> 📊 Level ⭐⭐⭐ | 4.0KB | `entities/microsoft-copilot-studio-agent-governance.md`
 
 > 来源：[原文存档](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/new-and-improved-agent-governance-intelligent-workflows-and-connected-app-experiences/)
 

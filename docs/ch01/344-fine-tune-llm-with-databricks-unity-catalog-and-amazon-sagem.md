@@ -1,6 +1,6 @@
 # Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI
 
-> 📊 Level ⭐⭐⭐ | 7.1KB | `entities/fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagemaker.md`
+> 📊 Level ⭐⭐⭐ | 7.2KB | `entities/fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagemaker.md`
 
 ## 核心要点
 - Databricks Unity Catalog + Amazon SageMaker AI 微调方案

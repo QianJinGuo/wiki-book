@@ -99,7 +99,7 @@ Google DeepMind 联合 **Schmidt Sciences、Cooperative AI Foundation、ARIA**�
 
 ## Ch08.002 Graph Engineering：从单循环到多节点编排
 
-> 📊 Level ⭐⭐ | 12.4KB | `entities/graph-engineering-loop-to-graph-tencent.md`
+> 📊 Level ⭐⭐ | 12.5KB | `entities/graph-engineering-loop-to-graph-tencent.md`
 
 # Graph Engineering：从单循环到多节点编排
 
@@ -252,7 +252,7 @@ Graph 体系要防"为了优化指标而牺牲本质"，需要三个不可动摇
 
 ## Ch08.003 微软 Agent Framework 全栈指南（Python）
 
-> 📊 Level ⭐⭐ | 6.0KB | `entities/microsoft-agent-framework-python-zizhi.md`
+> 📊 Level ⭐⭐ | 6.1KB | `entities/microsoft-agent-framework-python-zizhi.md`
 
 > 来源：[原文存档](http://mmbiz.qpic.cn/mmbiz_png/8VVIHicz4MiaaAoIaJJUWxT1q60KnpdqHA8GIOicibhu4GiaDBricXeXDzwWUaTeqoHo18UibXxZ7m2CanDXJxfKH6xFj2ns7sh2e9WBeibU1iaBbN0U/0?wx_fmt=png)
 
@@ -298,7 +298,7 @@ Python 侧的开发体验设计良好：`pip install agent-framework` 后，用 
 
 ## Ch08.004 OpenClaw 多智能体团队搭建实战经验
 
-> 📊 Level ⭐⭐ | 5.2KB | `entities/openclaw-multi-agent-team-practice.md`
+> 📊 Level ⭐⭐ | 5.4KB | `entities/openclaw-multi-agent-team-practice.md`
 
 ## 花园多智能体团队（7个Agent）
 1. **花园生图助手** — Nanobana + Seedream 模型，定义审美偏好
@@ -336,7 +336,7 @@ ConardLi 的实践经验揭示了多智能体团队从"安装了什么"到"能�
 - [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](ch04/353-openclaw-multi-agent-team-practice-v2.html)
 - [基于 Amazon EKS 和 Graviton 构建多租户 AI Agent 平台：OpenClaw on Kubernetes 实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-multi-tenant-ai-agent-on-eks-graviton-openclaw-k8s-practice.md)
 - [Multi-Agent 架构在零售供应链运营中的实践：贯穿数据、洞察与行动 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/multi-agent-architecture-retail-practice.md)
-- [你不知道的 Agent 原理架构与工程实践](ch04/181-agent-principle-architecture-engineering-practice.html)
+- [你不知道的 Agent 原理架构与工程实践](ch04/180-agent-principle-architecture-engineering-practice.html)
 - [Agent 原理、架构与工程实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-engineering-principles-architecture-practice.md)
 - [OpenCLAW 完全指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-comprehensive-guide.md)
 
@@ -344,7 +344,7 @@ ConardLi 的实践经验揭示了多智能体团队从"安装了什么"到"能�
 
 ## Ch08.005 Scalable voice agent design with Amazon Nova Sonic: multi-agent, tools, and session segmentation
 
-> 📊 Level ⭐⭐⭐ | 11.9KB | `entities/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session.md`
+> 📊 Level ⭐⭐⭐ | 12.0KB | `entities/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session.md`
 
 > 来源：[原文存档](https://aws.amazon.com/blogs/machine-learning/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session-segmentation/)
 
@@ -434,7 +434,7 @@ Nova Sonic 通过 AgentCore Gateway 直接调用 MCP 服务器上的工具，无
 
 ## Ch08.006 Thousand Token Wood v2: Multi-Model Heterogeneous Agent Council
 
-> 📊 Level ⭐⭐⭐ | 10.5KB | `entities/thousand-token-wood-sim-v2-hackathon.md`
+> 📊 Level ⭐⭐⭐ | 10.6KB | `entities/thousand-token-wood-sim-v2-hackathon.md`
 
 # Thousand Token Wood v2: Multi-Model Heterogeneous Agent Council
 
@@ -583,7 +583,7 @@ AI 的最大价值可能不在通用场景而在你领域的特定痛点——�
 
 ## Ch08.007 对抗式验证：多 Agent 交叉校验设计哲学
 
-> 📊 Level ⭐⭐⭐ | 7.8KB | `entities/adversarial-verification.md`
+> 📊 Level ⭐⭐⭐ | 7.9KB | `entities/adversarial-verification.md`
 
 ## 核心原则
 - Verifier 与 Worker 是对抗关系，非可选附加步骤
@@ -715,7 +715,7 @@ Agent 输出是概率性的：同样的输入可能产生不同输出，需要�
 
 ## Ch08.008 Cost of Consensus
 
-> 📊 Level ⭐⭐⭐ | 7.3KB | `entities/cost-of-consensus.md`
+> 📊 Level ⭐⭐⭐ | 7.4KB | `entities/cost-of-consensus.md`
 
 ## 摘要
 Cost of Consensus 是 MiniMax Agent Team（Mavis）在其架构分享中引用的研究：在特定模型与同质 debate 设置下，多 Agent 达成共识的 token 消耗可达单 Agent 自我修正的 **2.1–3.4 倍**，且准确率并未提升甚至更差。这一结论指向一个反直觉的设计原则：多 Agent 不是默认选项，共识是系统的主要成本驱动，必须用架构手段（而非 prompt 堆砌）来约束它。
@@ -846,7 +846,7 @@ L3的核心要求是**AI主导、人辅助**——这意味着机器不仅执行
 
 ## Ch08.010 Routa 多智能体协同交付平台
 
-> 📊 Level ⭐⭐⭐ | 6.9KB | `entities/routa-multi-agent-coordination-platform.md`
+> 📊 Level ⭐⭐⭐ | 7.0KB | `entities/routa-multi-agent-coordination-platform.md`
 
 ## 核心理念
 "单一 Agent 聊天适合处理孤立任务，但一旦同一条线程同时承担拆解、实现、评审、证据收集和发布决策，语义边界就会迅速混乱。"
@@ -1242,7 +1242,7 @@ Symphony 把 skill 当作"系统资产"来管理，而不只是提示词里附�
 
 ## 相关实体
 - [Agent Development Crawl Walk Run Crewai Iterative](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-development-crawl-walk-run-crewai-iterative.md)
-- [Agent Orchestration](ch01/089-agent-orchestration.html)（AWS — 多 Agent 编排对照）
+- [Agent Orchestration](ch01/087-agent-orchestration.html)（AWS — 多 Agent 编排对照）
 - [Meta Skill Skill Orchestration Opensquilla Jay](https://github.com/QianJinGuo/wiki-public/blob/main/entities/meta-skill-skill-orchestration-opensquilla-jay.md)（笨小葱 — 单 Skill 编排对照）
 - [Ai Agent Tool Count Trap](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-tool-count-trap.md)（execute_code 算子的极简设计同源思想）
 - [Agentic Design System From Chatbot To Orchestration](ch01/008-agentic-design-system-from-chatbot-to-orchestration.html)
@@ -1297,7 +1297,7 @@ Language models forget the moment they finish replying. Memory is everything the
 > [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-model-research-latest-directions.md)
 
 - [memory agent systems cobanov](https://github.com/QianJinGuo/wiki-public/blob/main/entities/memory-agent-systems-cobanov.md)
-- [AI Agent 记忆系统架构](ch04/108-how-ai-agent-memory-works.html)
+- [AI Agent 记忆系统架构](ch04/107-how-ai-agent-memory-works.html)
 - [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学](https://github.com/QianJinGuo/wiki-public/blob/main/entities/when-ai-agents-learn-to-forget-amazon-bedrock-agentcore-memory-philosophy.md)
 - [Hermes Agent 记忆系统 vs OpenClaw 记忆观](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-memory-system.md)
 - [深度拆解 Hermes Agent 记忆系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-memory-system-openclaw-comparison.md)
@@ -1363,7 +1363,7 @@ Latency budget 分析显示 p95 目标 800ms 中，retrieval 占用约 495ms（Q
 
 ## Ch08.014 How Grab is Using AI Agents to Boost Team Productivity
 
-> 📊 Level ⭐⭐⭐⭐ | 13.8KB | `entities/how-grab-is-using-ai-agents-to-boost-team-productivity.md`
+> 📊 Level ⭐⭐⭐⭐ | 13.9KB | `entities/how-grab-is-using-ai-agents-to-boost-team-productivity.md`
 
 > 来源：[原文存档](https://blog.bytebytego.com/p/how-grab-is-using-ai-agents-to-boost)（ByteByteGo, 2026-05-18）
 
@@ -1473,7 +1473,7 @@ Grab 的多 Agent 系统接入数据库和代码生成能力，存在真实风�
 ## 相关实体
 - [Baixing Ontoz Enterprise Ontology Multi Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/baixing-ontoz-enterprise-ontology-multi-agent.md)
 - [Dipg Ant Insurance Host Research Verify Offline Closed Loop](https://github.com/QianJinGuo/wiki-public/blob/main/entities/dipg-ant-insurance-host-research-verify-offline-closed-loop.md)
-- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/088-building-ai-agents-for-business-support-using-amazon-bedrock.html)
+- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/087-building-ai-agents-for-business-support-using-amazon-bedrock.html)
 - [Vercel Com How Superset Built The Ide For Ai Agents On Vercel](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vercel-com-how-superset-built-the-ide-for-ai-agents-on-vercel.md)
 - [Low Code Api Integration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/low-code-api-integration.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/multi-agent-coordination.md)
@@ -1583,7 +1583,7 @@ Factory 给了明确的数学：如果每个 agent run 错误率 0.1%，100 步�
 
 ## Ch08.016 Oz Multi-Harness Cloud Agent Orchestration (Warp)
 
-> 📊 Level ⭐⭐⭐⭐ | 12.0KB | `entities/oz-multi-harness-cloud-agent-orchestration.md`
+> 📊 Level ⭐⭐⭐⭐ | 12.1KB | `entities/oz-multi-harness-cloud-agent-orchestration.md`
 
 # Oz Multi-Harness Cloud Agent Orchestration
 
@@ -1705,7 +1705,7 @@ Oz 和 AWS [AgentCore](ch04/303-agentcore-managed-harness.html) 在功能列表�
 
 ## Ch08.017 扣子 3.0 协作系统：项目化 + Agent 编排 + 工具链打通
 
-> 📊 Level ⭐⭐⭐⭐ | 11.8KB | `entities/coze-3-0-collaboration-system.md`
+> 📊 Level ⭐⭐⭐⭐ | 11.9KB | `entities/coze-3-0-collaboration-system.md`
 
 # 扣子 3.0 协作系统：项目化 + Agent 编排 + 工具链打通
 > "AI Agent 的下一步，不只是更强的模型，而是**更像真实团队的工作系统**。" —— 量子位（编辑：金磊）报道
@@ -1855,7 +1855,7 @@ Oz 和 AWS [AgentCore](ch04/303-agentcore-managed-harness.html) 在功能列表�
 
 ## Ch08.018 AgentRun：阿里云多 Agent 生产级协作方案（A2A 开放协议）
 
-> 📊 Level ⭐⭐⭐⭐ | 9.6KB | `entities/agentrun-multi-agent-a2a-alibaba-cloud.md`
+> 📊 Level ⭐⭐⭐⭐ | 9.7KB | `entities/agentrun-multi-agent-a2a-alibaba-cloud.md`
 
 > 原文归档：[原文归档](https://mp.weixin.qq.com/s/bhZsfLaNVd9T69SE0cLbvA)
 
@@ -2090,7 +2090,7 @@ CrewAI + NemoClaw 的集成支持"数据飞轮"模式——Agent 系统通过观
 
 ## Ch08.020 AP2 协议实测：Mandate 机制、Task 状态机与多 Agent 支付
 
-> 📊 Level ⭐⭐⭐⭐ | 8.3KB | `entities/ap2-agent-payments-protocol-hands-on-analysis.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.4KB | `entities/ap2-agent-payments-protocol-hands-on-analysis.md`
 
 # AP2 协议实测：Mandate 机制、Task 状态机与多 Agent 支付
 
@@ -2203,7 +2203,7 @@ CartMandate 一小时有效期 + 单次 OTP 的设计，本质上是为 Human-Pr
 
 ## Ch08.021 Claude Code Dynamic Workflows 多Agent编排
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 57.4KB | `entities/claude-code-dynamic-workflows-multi-agent-orchestration.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 57.5KB | `entities/claude-code-dynamic-workflows-multi-agent-orchestration.md`
 
 ## 核心价值
 
@@ -2396,7 +2396,7 @@ CLAUDE.md 里写了但常被漏的规则 → 创建 workflow，每条规则对�
 
 ## 相关实体
 
-- [Agent Orchestration](ch01/089-agent-orchestration.html) — 多 Agent 编排的控制平面、状态管理、human-in-the-loop 审批
+- [Agent Orchestration](ch01/087-agent-orchestration.html) — 多 Agent 编排的控制平面、状态管理、human-in-the-loop 审批
 - [四种 Sub Agent 模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/four-sub-agent-patterns.md) — 内联工具/Fan-Out/Agent Pool/Teams 的控制粒度与状态保留对比
 - [Sub-Agent vs Agent Team 选型](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sub-agent-vs-agent-team-selection.md) — 上下文边界设计准则与五种编排原语
 - [Claude Code 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-architecture.md) — Claude Code 整体架构设计
@@ -2879,7 +2879,7 @@ CLAUDE.md 里写了但常被漏的规则 → 创建 workflow，每条规则对�
 
 ## Ch08.022 古法程序员复杂任务 Spec 写作：多 Agent 编排 + Skill 三层架构 + Gate 四态
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 15.8KB | `entities/gufabiancheng-spec-for-complex-tasks-cc-codex.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 15.9KB | `entities/gufabiancheng-spec-for-complex-tasks-cc-codex.md`
 
 # 古法程序员复杂任务 Spec 写作：多 Agent 编排 + Skill 三层架构 + Gate 四态
 

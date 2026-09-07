@@ -1,6 +1,6 @@
 # Designers are a rare breed
 
-> 📊 Level ⭐⭐⭐ | 6.9KB | `entities/designers-are-a-rare-breed.md`
+> 📊 Level ⭐⭐⭐ | 7.0KB | `entities/designers-are-a-rare-breed.md`
 
 # Designers are a rare breed
 

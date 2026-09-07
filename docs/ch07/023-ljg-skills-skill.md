@@ -1,6 +1,6 @@
 # 李继刚 ljg Skills 系列（四）：表达写作类 Skill
 
-> 📊 Level ⭐⭐⭐ | 7.8KB | `entities/ljg-skills-series-4-writing-expression.md`
+> 📊 Level ⭐⭐⭐ | 7.9KB | `entities/ljg-skills-series-4-writing-expression.md`
 
 # 李继刚 ljg Skills 系列（四）：表达写作类 Skill
 

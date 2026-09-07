@@ -1,6 +1,6 @@
 # bagel — Fleet 级 Secret Scanning 守护开发工作站
 
-> 📊 Level ⭐⭐⭐⭐ | 8.5KB | `entities/bagel-fleet-secret-scanning-dev-workstation-2026.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.6KB | `entities/bagel-fleet-secret-scanning-dev-workstation-2026.md`
 
 # bagel — Fleet 级 Secret Scanning 守护开发工作站
 

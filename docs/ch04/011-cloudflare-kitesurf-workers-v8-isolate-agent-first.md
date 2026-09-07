@@ -1,6 +1,6 @@
 # Cloudflare Kitesurf：运行在 Workers V8 isolate 上的 agent-first 浏览器
 
-> 📊 Level ⭐ | 5.1KB | `entities/cloudflare-kitesurf-agent-first-browser-workers-2026.md`
+> 📊 Level ⭐ | 5.2KB | `entities/cloudflare-kitesurf-agent-first-browser-workers-2026.md`
 
 # Cloudflare Kitesurf：运行在 Workers V8 isolate 上的 agent-first 浏览器
 

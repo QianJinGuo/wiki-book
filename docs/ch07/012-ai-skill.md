@@ -1,6 +1,6 @@
 # 当我把AI变成一个\"算法\"：Skill工程化设计的心路历程
 
-> 📊 Level ⭐⭐ | 4.5KB | `entities/skill-engineering-ai-as-algorithm.md`
+> 📊 Level ⭐⭐ | 4.6KB | `entities/skill-engineering-ai-as-algorithm.md`
 
 # 当我把AI变成一个\"算法\"：Skill工程化设计的心路历程
 

@@ -1,6 +1,6 @@
 # Harness 工程实践复盘：100% Cache 命中的 Agent 怎么设计？
 
-> 📊 Level ⭐⭐⭐ | 23.6KB | `entities/openclacky-harness-engineering-100-percent-cache-hit.md`
+> 📊 Level ⭐⭐⭐ | 23.7KB | `entities/openclacky-harness-engineering-100-percent-cache-hit.md`
 
 → [原文存档](https://mp.weixin.qq.com/s/5jR9MjhEERMI59iYjFIJxg)
 

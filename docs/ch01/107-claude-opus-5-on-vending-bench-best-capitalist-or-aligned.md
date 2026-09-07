@@ -1,6 +1,6 @@
 # Claude Opus 5 on Vending-Bench: Best Capitalist or Aligned, Never Both
 
-> 📊 Level ⭐ | 3.2KB | `entities/claude-opus-5-vending-bench-andon.md`
+> 📊 Level ⭐ | 3.3KB | `entities/claude-opus-5-vending-bench-andon.md`
 
 # Claude Opus 5 on Vending-Bench: Best Capitalist or Aligned, Never Both
 

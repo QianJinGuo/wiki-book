@@ -1,6 +1,6 @@
 # 复制这套神仙配置，让Claude Code全自动修Bug！告别每天重复教AI写代码
 
-> 📊 Level ⭐⭐⭐ | 6.2KB | `entities/claude-code-self-repair-hooks-memory-config.md`
+> 📊 Level ⭐⭐⭐ | 6.3KB | `entities/claude-code-self-repair-hooks-memory-config.md`
 
 > -> [原文存档](https://mp.weixin.qq.com/s/RRvZ-MfdcU0hU1TTpcPtkg)
 

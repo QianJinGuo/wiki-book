@@ -1,6 +1,6 @@
 # Forward launches Predict to verify network changes before they reach production - SiliconANGLE
 
-> 📊 Level ⭐⭐⭐ | 5.1KB | `entities/forward-networks-predict-network-verification.md`
+> 📊 Level ⭐⭐⭐ | 5.2KB | `entities/forward-networks-predict-network-verification.md`
 
 ## 核心要点
 

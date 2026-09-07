@@ -1,6 +1,6 @@
 # Stripe Financial Compliance AI Agent: Production Lessons
 
-> 📊 Level ⭐⭐⭐⭐ | 8.7KB | `entities/stripe-financial-compliance-ai-agent-production-lessons.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.8KB | `entities/stripe-financial-compliance-ai-agent-production-lessons.md`
 
 # Stripe Financial Compliance AI Agent: Production Lessons
 

@@ -1,6 +1,6 @@
 # Unlocking asynchronicity in continuous batching
 
-> 📊 Level ⭐⭐⭐ | 8.5KB | `entities/continuousasync.md`
+> 📊 Level ⭐⭐⭐ | 8.6KB | `entities/continuousasync.md`
 
 ## 核心要点
 - HuggingFace 博客文章，关于 continuous batching 技术

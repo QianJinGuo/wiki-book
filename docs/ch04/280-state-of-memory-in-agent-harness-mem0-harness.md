@@ -1,6 +1,6 @@
 # State of Memory in Agent Harness — mem0 视角的九大 harness 横评
 
-> 📊 Level ⭐⭐⭐⭐ | 13.5KB | `entities/state-of-memory-in-agent-harness-mem0-2026.md`
+> 📊 Level ⭐⭐⭐⭐ | 13.6KB | `entities/state-of-memory-in-agent-harness-mem0-2026.md`
 
 # State of Memory in Agent Harness — mem0 视角的九大 harness 横评
 

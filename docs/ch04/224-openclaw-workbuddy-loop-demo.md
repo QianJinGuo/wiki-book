@@ -1,6 +1,6 @@
 # OpenClaw、WorkBuddy、Loop 工程：谁在火，谁有用，谁还在 Demo
 
-> 📊 Level ⭐⭐⭐ | 4.9KB | `entities/openclaw-workbuddy-loop-engineering-who-is-hot-useful-demo.md`
+> 📊 Level ⭐⭐⭐ | 5.0KB | `entities/openclaw-workbuddy-loop-engineering-who-is-hot-useful-demo.md`
 
 # OpenClaw、WorkBuddy、Loop 工程：谁在火，谁有用，谁还在 Demo
 

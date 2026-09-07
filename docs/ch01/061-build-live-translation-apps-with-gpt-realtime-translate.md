@@ -1,6 +1,6 @@
 # Build Live Translation Apps with gpt-realtime-translate
 
-> 📊 Level ⭐ | 7.0KB | `entities/build-live-translation-apps-with-gpt-realtime-translate.md`
+> 📊 Level ⭐ | 7.1KB | `entities/build-live-translation-apps-with-gpt-realtime-translate.md`
 
 # Build Live Translation Apps with gpt-realtime-translate
 

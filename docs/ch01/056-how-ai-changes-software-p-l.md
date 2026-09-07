@@ -1,6 +1,6 @@
 # How AI changes software P&L
 
-> 📊 Level ⭐ | 7.2KB | `entities/gptomics-com-how-ai-changes-software-p-l.md`
+> 📊 Level ⭐ | 7.3KB | `entities/gptomics-com-how-ai-changes-software-p-l.md`
 
 > 来源：[原文存档](https://gptomics.com/blog/how_ai_changes_software_pnl.html)
 

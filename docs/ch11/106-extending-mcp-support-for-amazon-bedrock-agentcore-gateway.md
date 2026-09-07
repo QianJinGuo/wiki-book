@@ -1,6 +1,6 @@
 # Extending MCP support for Amazon Bedrock AgentCore Gateway
 
-> 📊 Level ⭐⭐⭐ | 7.9KB | `entities/extending-mcp-support-for-amazon-bedrock-agentcore-gateway.md`
+> 📊 Level ⭐⭐⭐ | 8.0KB | `entities/extending-mcp-support-for-amazon-bedrock-agentcore-gateway.md`
 
 # Extending MCP support for Amazon Bedrock AgentCore Gateway
 

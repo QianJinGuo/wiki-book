@@ -1,6 +1,6 @@
 # 重新定义Skill开发：保姆级教程&一站式开发助手发布
 
-> 📊 Level ⭐⭐⭐ | 7.3KB | `entities/skill-development-guide-aliyun-2026.md`
+> 📊 Level ⭐⭐⭐ | 7.5KB | `entities/skill-development-guide-aliyun-2026.md`
 
 → [原文存档](https://mp.weixin.qq.com/s/FgGVPw0BOZEu5sH1FdrVoQ)
 
@@ -100,7 +100,7 @@ Binary Eval + Reflection Agent 的组合，实质上是将 Agent 的自我改进
 - [要实现一个工作流选择-agent-skills-还是-ai-表格](https://github.com/QianJinGuo/wiki-public/blob/main/entities/要实现一个工作流选择-agent-skills-还是-ai-表格.md)
 - [Garry Tan](https://github.com/QianJinGuo/wiki-public/blob/main/entities/garry-tan-yc-ceo.md)
 - [Agent Workflows](../ch04/335-agent-workflows.html)
-- [Hermes Agent](../ch03/061-hermes-agent.html)
+- [Hermes Agent](../ch03/060-hermes-agent.html)
 - [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/hermes-agent-onboarding.md)
 - [你写的 Skill，及格了吗？](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ni-xie-de-skill-ji-ge-liao-ma.md)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/hermes-agent-skill.md)

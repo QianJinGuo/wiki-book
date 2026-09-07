@@ -1,6 +1,6 @@
 # Building Reliable Agentic AI Systems
 
-> 📊 Level ⭐⭐⭐⭐ | 10.7KB | `entities/building-reliable-agentic-ai-systems-martinfowler.md`
+> 📊 Level ⭐⭐⭐⭐ | 10.8KB | `entities/building-reliable-agentic-ai-systems-martinfowler.md`
 
 # Building Reliable Agentic AI Systems
 

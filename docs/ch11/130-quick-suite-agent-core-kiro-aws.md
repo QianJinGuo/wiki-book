@@ -1,6 +1,6 @@
 # 三剑合璧Quick Suite + Agent Core + Kiro联动实践：海外物流报价助手实战 | 亚马逊AWS官方博客
 
-> 📊 Level ⭐⭐⭐⭐ | 21.7KB | `entities/quick-suite-agent-core-kiro-logistics-quote-assistant.md`
+> 📊 Level ⭐⭐⭐⭐ | 21.8KB | `entities/quick-suite-agent-core-kiro-logistics-quote-assistant.md`
 
 ## 概述
 三剑合璧 Quick Suite + Agent Core + Kiro 联动实践：海外物流报价助手实战 是一篇 AWS 中国博客实战文章，演示如何利用 Amazon Kiro（AI 驱动开发环境）+ Amazon Bedrock AgentCore（企业级 AI 代理运行时）+ Amazon Quick Suite（AI 助手服务平台）构建一个跨境物流报价查询系统。

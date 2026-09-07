@@ -31,7 +31,7 @@
 
 ## Ch16.001 LLM 推理流水线完整解析：Prefill-Decode 双阶段模型
 
-> 📊 Level ⭐⭐ | 8.6KB | `entities/llm-inference-pipeline-internals.md`
+> 📊 Level ⭐⭐ | 8.7KB | `entities/llm-inference-pipeline-internals.md`
 
 > -> [原文存档](https://mp.weixin.qq.com/s/1zZ0UXCNUA1UJ39gJNDQjg)
 
@@ -165,7 +165,7 @@ DeepSeek V4 Preview（2026-04-24）没有把 KV cache 当固定成本管理，�
 
 ## Ch16.002 Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP
 
-> 📊 Level ⭐⭐ | 8.2KB | `entities/huggingface-torch-mlp-fusion-profiling-2026.md`
+> 📊 Level ⭐⭐ | 8.3KB | `entities/huggingface-torch-mlp-fusion-profiling-2026.md`
 
 # Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP
 
@@ -257,7 +257,7 @@ Source: [raw archive](https://huggingface.co/blog/torch-mlp-fusion)
 
 ## Ch16.003 Pytorch in Kernel Recsys Optimization
 
-> 📊 Level ⭐⭐ | 4.5KB | `entities/pytorch-in-kernel-recsys-optimization.md`
+> 📊 Level ⭐⭐ | 4.6KB | `entities/pytorch-in-kernel-recsys-optimization.md`
 
 ## 深度分析
 
@@ -418,7 +418,7 @@ GLM-5的Scaling Pain案例揭示了高并发Coding Agent场景下推理系统面
 
 ## Ch16.006 vLLM V0→V1 迁移中的 logprob 差异修复
 
-> 📊 Level ⭐⭐⭐ | 9.4KB | `entities/vllm-v0-to-v1-correctness-before-corrections.md`
+> 📊 Level ⭐⭐⭐ | 9.5KB | `entities/vllm-v0-to-v1-correctness-before-corrections.md`
 
 > -> [原文存档](https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections)
 
@@ -496,7 +496,7 @@ vLLM V0→V1 迁移中的 logprob 差异，本质上是 **推理引擎默认行�
 
 ## Ch16.007 从 Chroma 换成 Qdrant，我踩了 100 万向量的坑
 
-> 📊 Level ⭐⭐⭐ | 8.2KB | `entities/chroma-to-qdrant-1m-vector-migration.md`
+> 📊 Level ⭐⭐⭐ | 8.3KB | `entities/chroma-to-qdrant-1m-vector-migration.md`
 
 # 从 Chroma 换成 Qdrant，我踩了 100 万向量的坑
 > 原文：从 Chroma 换成 Qdrant，我踩了 100 万向量的坑
@@ -607,7 +607,7 @@ Chroma 的做法是"先搜再过滤"或"先过滤再搜"——无论哪种顺序
 
 ## Ch16.009 Apple Siri 私有推理（Private Inference）不私有：三个对抗者都不受加密学保护
 
-> 📊 Level ⭐⭐⭐⭐ | 16.5KB | `entities/apple-siri-private-inference-lethal-trifecta-matthew-green.md`
+> 📊 Level ⭐⭐⭐⭐ | 16.6KB | `entities/apple-siri-private-inference-lethal-trifecta-matthew-green.md`
 
 # Apple Siri 私有推理（Private Inference）不私有：三个对抗者都不受加密学保护
 
@@ -943,7 +943,7 @@ USP 的"主干 ring + 分支本卡 + 流式融合"设计不只适用于 EAGLE-3�
 
 ## Ch16.011 PithTrain：陈天奇 + CMU Flame Center 推出的 agent-native MoE 训练框架（11K Python / 双重效率）
 
-> 📊 Level ⭐⭐⭐⭐ | 12.1KB | `entities/pith-train-agent-native-moe-training-framework.md`
+> 📊 Level ⭐⭐⭐⭐ | 12.2KB | `entities/pith-train-agent-native-moe-training-framework.md`
 
 ## 摘要
 
@@ -1084,7 +1084,7 @@ bash examples/pretrain_language_model/launch.sh qwen3-30b-a3b
 
 ## Ch16.012 具身智能 Sim-to-Real 迁移：主动推理、行为树与内在动机引擎的工程化方案
 
-> 📊 Level ⭐⭐⭐⭐ | 9.2KB | `entities/embodied-intelligence-sim-to-real-active-inference-behavior-tree-intrinsic-motivation-chenzhiyan-2026-06-17.md`
+> 📊 Level ⭐⭐⭐⭐ | 9.3KB | `entities/embodied-intelligence-sim-to-real-active-inference-behavior-tree-intrinsic-motivation-chenzhiyan-2026-06-17.md`
 
 # 具身智能 Sim-to-Real 迁移：主动推理、行为树与内在动机引擎的工程化方案
 
@@ -1473,7 +1473,7 @@ SageMaker AI 端点按实例运行时长计费 ：
 
 ## Ch16.014 The next generation of speculative decoding: DFlash and Spec V2 - LMSYS Blog
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 11.1KB | `entities/lmsys-dflash-speculative-decoding-2026-06.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 11.2KB | `entities/lmsys-dflash-speculative-decoding-2026-06.md`
 
 # The next generation of speculative decoding: DFlash and Spec V2 - LMSYS Blog
 

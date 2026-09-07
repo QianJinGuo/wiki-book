@@ -1,6 +1,6 @@
 # Dockerless: 免环境补丁验证器
 
-> 📊 Level ⭐⭐⭐ | 4.8KB | `entities/dockerless-environment-free-verifier-coding-agent.md`
+> 📊 Level ⭐⭐⭐ | 4.9KB | `entities/dockerless-environment-free-verifier-coding-agent.md`
 
 # Dockerless: 免环境补丁验证器
 

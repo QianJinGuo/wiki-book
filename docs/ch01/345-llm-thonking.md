@@ -1,6 +1,6 @@
 # LLM Thonking：推理努力与安全分诊效果的实证研究
 
-> 📊 Level ⭐⭐⭐ | 7.1KB | `entities/llm-thonking-reasoning-effort-security-triage.md`
+> 📊 Level ⭐⭐⭐ | 7.2KB | `entities/llm-thonking-reasoning-effort-security-triage.md`
 
 # LLM Thonking：推理努力与安全分诊效果的实证研究
 

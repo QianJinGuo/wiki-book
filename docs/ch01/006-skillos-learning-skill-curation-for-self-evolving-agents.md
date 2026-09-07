@@ -1,6 +1,6 @@
 # SkillOS: Learning Skill Curation for Self-Evolving Agents
 
-> 📊 Level ⭐ | 14.0KB | `entities/skillos-learning-skill-curation-for-self-evolving-agents.md`
+> 📊 Level ⭐ | 14.2KB | `entities/skillos-learning-skill-curation-for-self-evolving-agents.md`
 
 > -> [原文存档](https://arxiv.org/pdf/2605.06614.pdf)
 来自 newsletter 文章 [SkillOS: Learning Skill Curation for Self-Evolving Agents](https://arxiv.org/pdf/2605.06614.pdf) 提取。

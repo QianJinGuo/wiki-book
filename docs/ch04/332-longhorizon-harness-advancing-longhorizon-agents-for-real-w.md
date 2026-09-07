@@ -1,6 +1,6 @@
 # LongHorizon-Harness: Advancing LongHorizon Agents for Real-World Tasks
 
-> 📊 Level ⭐⭐⭐⭐ | 8.2KB | `entities/longhorizon-harness-mea-alibaba-dreamx-arxiv-2026-09-01.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.3KB | `entities/longhorizon-harness-mea-alibaba-dreamx-arxiv-2026-09-01.md`
 
 # LongHorizon-Harness: Advancing LongHorizon Agents for Real-World Tasks
 

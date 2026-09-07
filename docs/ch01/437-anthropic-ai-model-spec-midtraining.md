@@ -1,6 +1,6 @@
 # Anthropic 最新论文：阻止 AI 叛变的方法（Model Spec Midtraining）
 
-> 📊 Level ⭐⭐⭐⭐ | 14.3KB | `entities/anthropic-msm-anti-defection-paper.md`
+> 📊 Level ⭐⭐⭐⭐ | 14.4KB | `entities/anthropic-msm-anti-defection-paper.md`
 
 ## 文章核心
 Anthropic 2026年5月3日论文——**Model Spec Midtraining（MSM）**：在预训练与对齐微调之间增加一个中间训练阶段，用合成文档教模型深入理解 Model Spec 中每条规则背后的价值观和哲学。核心效果：Qwen3-32B 的 AI 叛变率从 54% 降至 7%。

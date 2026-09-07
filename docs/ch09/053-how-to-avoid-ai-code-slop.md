@@ -1,6 +1,6 @@
 # How to Avoid AI Code Slop
 
-> 📊 Level ⭐⭐⭐ | 6.8KB | `entities/how-to-avoid-ai-code-slop.md`
+> 📊 Level ⭐⭐⭐ | 6.9KB | `entities/how-to-avoid-ai-code-slop.md`
 
 ## 核心要点
 - 来源：eng-leadership

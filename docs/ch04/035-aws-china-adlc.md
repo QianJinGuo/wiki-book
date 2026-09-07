@@ -1,6 +1,6 @@
 # AWS China 企业级智能体评估方法论 ADLC 系列
 
-> 📊 Level ⭐⭐ | 11.2KB | `entities/aws-china-enterprise-agent-evaluation-adlc.md`
+> 📊 Level ⭐⭐ | 11.3KB | `entities/aws-china-enterprise-agent-evaluation-adlc.md`
 
 # AWS China 企业级智能体评估方法论 ADLC 系列
 

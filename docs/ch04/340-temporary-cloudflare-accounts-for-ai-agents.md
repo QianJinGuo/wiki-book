@@ -1,6 +1,6 @@
 # Temporary Cloudflare Accounts for AI agents
 
-> 📊 Level ⭐⭐⭐⭐ | 7.5KB | `entities/cloudflare-temporary-accounts-ai-agents.md`
+> 📊 Level ⭐⭐⭐⭐ | 7.6KB | `entities/cloudflare-temporary-accounts-ai-agents.md`
 
 # Temporary Cloudflare Accounts for AI agents
 

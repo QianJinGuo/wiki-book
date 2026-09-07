@@ -1,6 +1,6 @@
 # Microsoft is quietly shopping for an OpenAI replacement
 
-> 📊 Level ⭐ | 8.7KB | `entities/microsoft-is-quietly-shopping-for-an-openai-replac.md`
+> 📊 Level ⭐ | 8.8KB | `entities/microsoft-is-quietly-shopping-for-an-openai-replac.md`
 
 ## 核心要点
 - 来源：https://thenextweb.com/news/microsoft-startup-deals-life-after-openai

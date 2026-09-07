@@ -1,6 +1,6 @@
 # AI and Liability
 
-> 📊 Level ⭐ | 6.9KB | `entities/06-ai-and-liability-html.md`
+> 📊 Level ⭐ | 7.0KB | `entities/06-ai-and-liability-html.md`
 
 # AI and Liability
 

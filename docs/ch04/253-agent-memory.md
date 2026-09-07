@@ -1,6 +1,6 @@
 # Agent Memory 架构本质
 
-> 📊 Level ⭐⭐⭐⭐ | 17.4KB | `entities/agent-memory-architecture-essence.md`
+> 📊 Level ⭐⭐⭐⭐ | 17.5KB | `entities/agent-memory-architecture-essence.md`
 
 ## 瓶颈在持续理解
 今天的大模型在单次会话里已经足够聪明。问题不在于它一时想不出来，而在于它没法把昨天学到的东西，以一种可靠、可更新、可追责的方式带到今天。
@@ -151,7 +151,7 @@ RAG 式的语义相似召回假设"表面语义相关 = 实质相关"。但真�
 **探索冲突保留与情境选择的计算框架。** 这是文章指出的最薄弱环节：如何在不强制覆盖的情况下，保留矛盾并实现情境依赖的选择？当前没有任何成熟方案。这需要新的记忆建模结构，而不是在现有 KV store 上加 layer。
 **意图浮现的多模型耦合机制。** 四个模型（用户、任务、世界、自我）长期耦合后浮现意图——这个假设目前没有实验验证。需要设计实验来测试：单独优化某个模型的记忆质量，对整体意图理解准确率的边际贡献是多少？哪个模型的贡献最大？
 ## 相关实体
-- [How Ai Agent Memory Works](108-how-ai-agent-memory-works.html)
+- [How Ai Agent Memory Works](107-how-ai-agent-memory-works.html)
 - [Memory Agent Systems Cobanov](https://github.com/QianJinGuo/wiki-public/blob/main/entities/memory-agent-systems-cobanov.md)
 - [Context Engineering Three Memory Paradigms](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-engineering-three-memory-paradigms.md)
 - [Memory Vs Rag Agent Memory Systematic Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/memory-vs-rag-agent-memory-systematic-framework.md)

@@ -1,6 +1,6 @@
 # Harness 模式 6-SubAgent 实战 — 17哥 versus 大模型评测平台（Git Submodule + Agent Handoff + Chrome DevTools MCP）
 
-> 📊 Level ⭐⭐⭐⭐ | 17.1KB | `entities/harness-engineering-practical-17ge-versus-6-subagent.md`
+> 📊 Level ⭐⭐⭐⭐ | 17.2KB | `entities/harness-engineering-practical-17ge-versus-6-subagent.md`
 
 # Harness 模式 6-SubAgent 实战 — 17哥 versus 大模型评测平台
 

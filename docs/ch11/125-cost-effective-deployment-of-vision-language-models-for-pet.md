@@ -1,6 +1,6 @@
 # Cost effective deployment of vision-language models for pet behavior detection on AWS Inferentia2
 
-> 📊 Level ⭐⭐⭐ | 6.0KB | `entities/cost-effective-deployment-of-vision-language-models-for-pet-behavior-detection-o.md`
+> 📊 Level ⭐⭐⭐ | 6.1KB | `entities/cost-effective-deployment-of-vision-language-models-for-pet-behavior-detection-o.md`
 
 > 来源：[原文存档](https://aws.amazon.com/blogs/machine-learning/cost-effective-deployment-of-vision-language-models-for-pet-behavior-detection-on-aws-inferentia2/)
 
@@ -50,7 +50,7 @@ Furbo 的系统架构采用双层设计：
 
 ## 相关实体
 - [Amazon Nova Lite Fine-Tuning: 高性价比的视觉检测模型微调案例与实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-nova-lite-fine-tuning-cost-effective-vision-detection-model-tuning-case-and-practice.md)
-- [Reinforcing Recursive Language Models | alphaXiv](../ch01/380-reinforcing-recursive-language-models-alphaxiv.html)
+- [Reinforcing Recursive Language Models | alphaXiv](../ch01/379-reinforcing-recursive-language-models-alphaxiv.html)
 - [Language Models and Meaning](https://github.com/QianJinGuo/wiki-public/blob/main/entities/stochastic-parrot-language-models-and-meaning.md)
 
 → 原文存档

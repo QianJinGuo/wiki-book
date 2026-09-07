@@ -1,6 +1,6 @@
 # Coding Harness 工程本质：从 Pi 到 OpenClaw
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 15.9KB | `entities/pi-openclaw-coding-harness.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 16.0KB | `entities/pi-openclaw-coding-harness.md`
 
 ## 核心定义
 Coding harness 是模型从"建议你怎么修"走到"自己去修"所必须的那套工程外壳。Pi 在 coding-agent README 里把自己称为 minimal terminal coding harness——它先给模型一组很小的身体能力：read、write、edit、bash。再往外，才是 session、context files、compaction、skills、extensions、TUI、RPC、SDK。

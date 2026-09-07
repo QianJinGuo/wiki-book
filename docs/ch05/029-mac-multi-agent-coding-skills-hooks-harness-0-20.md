@@ -1,6 +1,6 @@
 # MAC（multi-agent-coding）：Skills + Hooks 两层 Harness —— 完全委托 0-20% 的解法
 
-> 📊 Level ⭐⭐⭐ | 16.8KB | `entities/mac-multi-agent-coding-skills-hooks-harness.md`
+> 📊 Level ⭐⭐⭐ | 16.9KB | `entities/mac-multi-agent-coding-skills-hooks-harness.md`
 
 # MAC（multi-agent-coding）：Skills + Hooks 两层 Harness
 > "**完全委托的前提，不是更强的模型，是更可靠的环境。**"

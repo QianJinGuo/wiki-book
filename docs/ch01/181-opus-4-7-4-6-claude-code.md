@@ -1,6 +1,6 @@
 # 刚刚Opus 4.7发布，相比4.6核心变化，与Claude Code搭配最佳实践
 
-> 📊 Level ⭐⭐⭐ | 26.9KB | `entities/opus-4-7-launch-claude-code-best-practices-wechat.md`
+> 📊 Level ⭐⭐⭐ | 27.0KB | `entities/opus-4-7-launch-claude-code-best-practices-wechat.md`
 
 ###  Claude Opus 4.7 正式发布：
 Anthropic 今天发布了 Opus 4.7。定价与 4.6 持平（每百万 Token 为  $5 / $  25），现已在 API、Amazon Bedrock、Google Vertex AI 和 Microsoft Foundry 同步上线。

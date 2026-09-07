@@ -1,6 +1,6 @@
 # 豆包 Seed 2.0 Lite升级：给 Agent 装上眼睛和耳朵
 
-> 📊 Level ⭐⭐ | 5.5KB | `entities/豆包-seed-20-lite升级给-agent-装上眼睛和耳朵.md`
+> 📊 Level ⭐⭐ | 5.6KB | `entities/豆包-seed-20-lite升级给-agent-装上眼睛和耳朵.md`
 
 # 豆包 Seed 2.0 Lite升级：给 Agent 装上眼睛和耳朵
 最近一个月模型发布太卷了。Claude Opus 4.7、GPT-5.5、DeepSeek V4 一个接一个，我每天打开 X 都觉得自己快被新模型淹没。光是我自己，前几周就赶着做了三期 B 站视频去解读这些发布。

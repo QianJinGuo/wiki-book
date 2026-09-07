@@ -1,6 +1,6 @@
 # AutoResearch-LLM：让 Agent 接手 LLM 训练优化
 
-> 📊 Level ⭐ | 7.8KB | `entities/autoresearch-llm让-agent-接手-llm-训练优化.md`
+> 📊 Level ⭐ | 7.9KB | `entities/autoresearch-llm让-agent-接手-llm-训练优化.md`
 
 # AutoResearch-LLM：让 Agent 接手 LLM 训练优化
 

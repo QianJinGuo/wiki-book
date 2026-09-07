@@ -1,6 +1,6 @@
 # How to Get a 100% Conference Acceptance Rate, The Novee Way: A High-Severity CVE in Leading Call-for-Papers Software
 
-> 📊 Level ⭐⭐ | 7.5KB | `entities/novee-security-how-to-get-a-100-conference-acceptance-rate-the-no.md`
+> 📊 Level ⭐⭐ | 7.6KB | `entities/novee-security-how-to-get-a-100-conference-acceptance-rate-the-no.md`
 
 # How to Get a 100% Conference Acceptance Rate, The Novee Way: A High-Severity CVE in Leading Call-for-Papers Software
 

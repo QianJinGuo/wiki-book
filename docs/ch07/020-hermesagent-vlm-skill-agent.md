@@ -1,6 +1,6 @@
 # 高德扫街榜 HermesAgent 配图系统：VLM + Skill + 语言驱动的生产级 Agent 架构
 
-> 📊 Level ⭐⭐⭐ | 8.6KB | `entities/gaode-saojie-image-selection-hermesagent-vlm-production-2026.md`
+> 📊 Level ⭐⭐⭐ | 8.7KB | `entities/gaode-saojie-image-selection-hermesagent-vlm-production-2026.md`
 
 # 高德扫街榜 HermesAgent 配图系统：VLM + Skill + 语言驱动的生产级 Agent 架构
 
@@ -88,7 +88,7 @@ Hermes 作为 Agent 编排层，自然语言对话支持进度查询/单点重�
 
 - **HermesAgent 生产案例**：本文是 wiki 中首个 HermesAgent 在大型互联网应用中的端到端生产案例，与 [高德 SDD/Harness 编码范式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gaode-sdd-harness-team-ai-coding-paradigm-ibjfu.md) 互补——前者讲 AI 编码，本文讲 Agent 在生产链路的编排
 - **确定性 + Agent 混合架构**：与 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-reliable-long-term-agent.md) 的"多层重试+执行者/验证者分离"哲学一致——确定性与 Agent 的边界划分是生产级 Agent 系统设计的核心
-- **Skill 化/MCP 层**：五层架构中的 MCP/Skill 层与 [Hermes Agent](../ch03/061-hermes-agent.html) 的 Skill 系统直接对应——每个能力被封装为可独立调用的工具
+- **Skill 化/MCP 层**：五层架构中的 MCP/Skill 层与 [Hermes Agent](../ch03/060-hermes-agent.html) 的 Skill 系统直接对应——每个能力被封装为可独立调用的工具
 - **RAG 配置驱动**：与 [Flow2Spec 结构化知识路由](https://github.com/QianJinGuo/wiki-public/blob/main/entities/flow2spec-structured-knowledge-routing-ctrip-2026.md) 的"规则外置"思想同源——业务知识从代码中剥离出来
 - **语言驱动生产**：与 Claude Tag 的"聊天即工作流入口"趋势一致——自然语言成为新的生产接口
 

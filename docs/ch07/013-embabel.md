@@ -1,6 +1,6 @@
 # Embabel
 
-> 📊 Level ⭐⭐⭐ | 11.4KB | `entities/embabel.md`
+> 📊 Level ⭐⭐⭐ | 11.5KB | `entities/embabel.md`
 
 # Embabel
 > "这可能已经是'最后一代由人类主动选择的框架'了。以后越来越多的技术选型，都会由我们的工具替我们完成。" —— Rod Johnson（Spring 创造者，Embabel 创始人）

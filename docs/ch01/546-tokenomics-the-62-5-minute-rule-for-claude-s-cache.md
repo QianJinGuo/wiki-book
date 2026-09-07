@@ -1,6 +1,6 @@
 # Tokenomics: the 62.5-minute rule for Claude's cache
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 9.5KB | `entities/tokenomics-the-625-minute-rule-for-claudes-cache.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 9.6KB | `entities/tokenomics-the-625-minute-rule-for-claudes-cache.md`
 
 ## 核心结论
 **62.5 分钟**是 Claude 提示缓存策略的决策临界点：

@@ -1,6 +1,6 @@
 # 基于 Harness + SDD + 多仓管理模式的 AI 全栈开发实践｜得物技术
 
-> 📊 Level ⭐⭐⭐ | 13.9KB | `entities/harness-sdd-duiwu-ai-fullstack-dewux.md`
+> 📊 Level ⭐⭐⭐ | 14.0KB | `entities/harness-sdd-duiwu-ai-fullstack-dewux.md`
 
 # 基于 Harness + SDD + 多仓管理模式的 AI 全栈开发实践｜得物技术
 ## 一、核心理念：Harness 思维 — 让 AI 模仿，而不是凭空创造

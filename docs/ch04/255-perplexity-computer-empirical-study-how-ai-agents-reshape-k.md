@@ -1,6 +1,6 @@
 # Perplexity Computer Empirical Study: How AI Agents Reshape Knowledge Work
 
-> 📊 Level ⭐⭐⭐⭐ | 17.2KB | `entities/perplexity-computer-knowledge-work-empirical-study.md`
+> 📊 Level ⭐⭐⭐⭐ | 17.3KB | `entities/perplexity-computer-knowledge-work-empirical-study.md`
 
 # Perplexity Computer Empirical Study: How AI Agents Reshape Knowledge Work
 

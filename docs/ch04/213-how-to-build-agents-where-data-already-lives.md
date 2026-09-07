@@ -62,7 +62,7 @@ RAG（Retrieval-Augmented Generation）是数据驻留优先理念的一个特�
 
 大型代码库的 Harness 配置本质上也是"让 Agent 在数据所在位置工作"的一种体现——Claude Code 直接在代码仓库中运行，而非将代码上传到远程服务。本地文件系统就是"数据所在的位置"。^[inferred]
 
-### 与 [Building Web Search Enabled Agents With Strands And Exa](053-building-web-search-enabled-agents-with-strands-and-exa.html) 的对比
+### 与 [Building Web Search Enabled Agents With Strands And Exa](052-building-web-search-enabled-agents-with-strands-and-exa.html) 的对比
 
 Web Search Agent 代表了另一种模式——数据不在本地，需要通过搜索 API 实时获取。这种场景下数据驻留原则不适用，但可以通过缓存和索引部分缓解延迟问题。两种模式并非对立，而是互补。^[inferred]
 
@@ -77,7 +77,7 @@ Web Search Agent 代表了另一种模式——数据不在本地，需要通过
 ## 相关实体
 
 - [Claude Code Large Codebase Harness Configuration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-large-codebase-harness-configuration.md)
-- [Building Web Search Enabled Agents With Strands And Exa](053-building-web-search-enabled-agents-with-strands-and-exa.html)
+- [Building Web Search Enabled Agents With Strands And Exa](052-building-web-search-enabled-agents-with-strands-and-exa.html)
 - [2026 Llm Rl Algorithms Deeplog Imba Ppo Dpo Grpo Marl](https://github.com/QianJinGuo/wiki-public/blob/main/entities/2026-llm-rl-algorithms-deeplog-imba-ppo-dpo-grpo-marl.md)
 - [Accelerate Llm Model Loading And Increase Context Windows Wi](https://github.com/QianJinGuo/wiki-public/blob/main/entities/accelerate-llm-model-loading-and-increase-context-windows-wi.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)

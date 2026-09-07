@@ -104,7 +104,7 @@ Claude Code 自动扫描这些文件，根据 `description` 决定何时调用�
 
 - [Harness Engineering Core Patterns Claude Code](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-core-patterns-claude-code.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
-- [Claude Code Harness Deep Understanding](../ch01/261-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Understanding](../ch01/258-claude-code-harness-deep-understanding.html)
 - [Claude Code Harness Deep Dive Founder Park](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-harness-deep-dive-founder-park.md)
 - [Hermes Agent V014 Architecture Shugex](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-v014-architecture-shugex.md)
 - [Ai Agent Engineer Learning Roadmap Backend 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-engineer-learning-roadmap-backend-2026.md)

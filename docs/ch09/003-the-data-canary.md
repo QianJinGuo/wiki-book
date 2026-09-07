@@ -1,6 +1,6 @@
 # The Data Canary
 
-> 📊 Level ⭐ | 4.5KB | `entities/the-data-canary-how-netflix-validates-catalog-metadata.md`
+> 📊 Level ⭐ | 4.6KB | `entities/the-data-canary-how-netflix-validates-catalog-metadata.md`
 
 # The Data Canary: How Netflix Validates Catalog Metadata
 

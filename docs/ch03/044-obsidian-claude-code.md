@@ -1,6 +1,6 @@
 # Obsidian + Claude Code 集成指南
 
-> 📊 Level ⭐⭐⭐⭐ | 14.8KB | `entities/obsidian-claude-code-integration.md`
+> 📊 Level ⭐⭐⭐⭐ | 14.9KB | `entities/obsidian-claude-code-integration.md`
 
 ## 概述
 系统性整理 Claude Code 与 Obsidian 集成的五种策略及配套插件工具链，来源为中文社区实战经验的汇总文章。核心价值在于帮助开发者根据自身场景（多项目 vs 单项目 vs 个人知识管理）选择最适合的集成路径。

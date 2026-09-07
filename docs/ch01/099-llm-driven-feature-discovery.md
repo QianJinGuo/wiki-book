@@ -1,6 +1,6 @@
 # LLM-Driven Feature Discovery
 
-> 📊 Level ⭐ | 4.1KB | `entities/llm-driven-feature-discovery.md`
+> 📊 Level ⭐ | 4.2KB | `entities/llm-driven-feature-discovery.md`
 
 # LLM-Driven Feature Discovery
 

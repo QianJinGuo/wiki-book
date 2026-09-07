@@ -1,6 +1,6 @@
 # Linear Code Intelligence: Controlled Codebase Access for Linear Agent
 
-> 📊 Level ⭐⭐⭐ | 7.8KB | `entities/2026-05-14-code-intelligence-1778979927.md`
+> 📊 Level ⭐⭐⭐ | 7.9KB | `entities/2026-05-14-code-intelligence-1778979927.md`
 
 # Linear Code Intelligence: Controlled Codebase Access for Linear Agent
 

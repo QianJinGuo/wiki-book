@@ -1,6 +1,6 @@
 # LangGraph 底层原理：它是怎么把 LLM 变成一台状态机的
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 19.9KB | `entities/langgraph-state-machine-under-the-hood.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 20.0KB | `entities/langgraph-state-machine-under-the-hood.md`
 
 [Langgraph State Machine Under The Hood](https://mp.weixin.qq.com/s/J8IgrW3LgRROLUC8Q5gvZg)
 
@@ -296,7 +296,7 @@ LangGraph 之前，业界尝试用 Prompt Engineering 让 LLM 自己决定下一
 ## 相关实体
 - [Gepa Optimize Anything](443-gepa-optimize-anything.html)
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-phishing-attacks-are-on-the-rise-are-you-prepared-bitward.md)
-- [How Open Model Ecosystems Compound](389-how-open-model-ecosystems-compound.html)
+- [How Open Model Ecosystems Compound](388-how-open-model-ecosystems-compound.html)
 - [读完这篇你就搞懂 Deepseek V4 了 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/读完这篇你就搞懂-deepseek-v4-了-v2.md)
 - [Context Window Management Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-window-management-comparison.md)
 

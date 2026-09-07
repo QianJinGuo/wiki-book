@@ -1,6 +1,6 @@
 # 还在用WebSocket做LLM流式传输？FastAPI + SSE让你少踩一半坑
 
-> 📊 Level ⭐⭐⭐⭐ | 13.3KB | `entities/fastapi-sse-llm-streaming-vs-websocket-5e4a458abf18.md`
+> 📊 Level ⭐⭐⭐⭐ | 13.4KB | `entities/fastapi-sse-llm-streaming-vs-websocket-5e4a458abf18.md`
 
 ## 核心结论
 

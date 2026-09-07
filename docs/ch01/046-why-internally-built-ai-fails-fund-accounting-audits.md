@@ -1,6 +1,6 @@
 # Why Internally-Built AI Fails Fund Accounting Audits
 
-> 📊 Level ⭐ | 7.5KB | `entities/why-internally-built-ai-fails-fund-accounting-audits.md`
+> 📊 Level ⭐ | 7.6KB | `entities/why-internally-built-ai-fails-fund-accounting-audits.md`
 
 # Why Internally-Built AI Fails Fund Accounting Audits
 

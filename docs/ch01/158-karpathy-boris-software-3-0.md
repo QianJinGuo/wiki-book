@@ -1,6 +1,6 @@
 # Karpathy × Boris 访谈：Software 3.0 时代编程完整地图
 
-> 📊 Level ⭐⭐ | 5.4KB | `entities/karpathy-boris-software3-llm-era-programming-2026.md`
+> 📊 Level ⭐⭐ | 5.5KB | `entities/karpathy-boris-software3-llm-era-programming-2026.md`
 
 # Karpathy × Boris 访谈：Software 3.0 时代编程完整地图
 
@@ -10,7 +10,7 @@
 - SHA256: b7f08a9221689ae53f18651567d97f1e5110931bc8978d41d50159b7513e3810
 
 ## 相关实体
-- [Claude Code Harness Deep Understanding](261-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Understanding](258-claude-code-harness-deep-understanding.html)
 - [Claude Code Search Architecture Tencent 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-search-architecture-tencent-2026.md)
 - [Ralph Loop 不够用长时间 Agent 还缺这 3 件事](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ralph-loop-不够用长时间-agent-还缺这-3-件事.md)
 - [Claude Code Harness Deep Dive Founder Park](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-harness-deep-dive-founder-park.md)

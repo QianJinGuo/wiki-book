@@ -1,6 +1,6 @@
 # Redis之父下场，给DeepSeek V4单独造了一台推理引擎
 
-> 📊 Level ⭐⭐ | 6.5KB | `entities/redis之父下场给deepseek-v4单独造了一台推理引擎.md`
+> 📊 Level ⭐⭐ | 6.6KB | `entities/redis之父下场给deepseek-v4单独造了一台推理引擎.md`
 
 > → [原文存档](https://mp.weixin.qq.com/s/9X0bcfUGZYxoXuQwt89zkQ)
 从微信文章 [Redis之父下场，给DeepSeek V4单独造了一台推理引擎](https://mp.weixin.qq.com/s/9X0bcfUGZYxoXuQwt89zkQ) 提取。
@@ -16,7 +16,7 @@ source_url: https://mp.weixin.qq.com/s/9X0bcfUGZYxoXuQwt89zkQ
 - ##  One more thing
 
 ## 相关实体
-- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](420-deepseek-v4.html)
+- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](322-deepseek-v4.html)
 - [ds4c deepseek v4 antirez](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ds4c-deepseek-v4-antirez.md)
 - [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-v4-pro-vs-claude.md)
 - [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](https://github.com/QianJinGuo/wiki-public/blob/main/entities/wetesteddeepseekv4proandflashagainstclau.md)

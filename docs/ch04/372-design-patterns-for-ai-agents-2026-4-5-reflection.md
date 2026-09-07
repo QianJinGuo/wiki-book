@@ -1,6 +1,6 @@
 # Design Patterns for AI Agents 2026：4 大执行模式 + 5 步选型决策树 + Reflection 完整 Demo
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 17.4KB | `entities/design-patterns-for-ai-agents-2026.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 17.5KB | `entities/design-patterns-for-ai-agents-2026.md`
 
 → （无原始来源）
 
@@ -59,14 +59,14 @@ Thought → Action → Observation 循环，仍是大多数单步任务的基础
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/long-running-agent-ralph-loop-handover-harness-ruofei.md)
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-reliability-context-drift-tool-hallucination.md)
 - [从多智能体编排到AI自主决策：资损防控体系的架构演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/从多智能体编排到ai自主决策资损防控体系的架构演进.md)
-- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](../ch01/420-deepseek-v4.html)
+- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](../ch01/322-deepseek-v4.html)
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-long-term-agent-tasks.md)
 - [Transformer Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/transformer-architecture.md)
 - [Agent 与后端统一架构](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-backend-unification.md)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki-public/blob/main/queries/harness-peer-review-framework.md)
 
 - [Thin Harness Fat Skills](https://github.com/QianJinGuo/wiki-public/blob/main/entities/thin-harness-fat-skills.md)
-- [你不知道的 Agent 原理架构与工程实践](181-agent-principle-architecture-engineering-practice.html)
+- [你不知道的 Agent 原理架构与工程实践](180-agent-principle-architecture-engineering-practice.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 - [AI Agent 工程师能力地图](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-engineer-capability-map.md)
 

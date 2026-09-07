@@ -1,6 +1,6 @@
 # Apple Foundation Models
 
-> 📊 Level ⭐ | 3.6KB | `entities/anthropic-apple-foundation-models-claude.md`
+> 📊 Level ⭐ | 3.7KB | `entities/anthropic-apple-foundation-models-claude.md`
 
 # Apple Foundation Models
 
@@ -38,7 +38,7 @@ Requests go directly from your app to the Claude API; Apple is not in the reques
 - 引用源：[Anthropic Apple Foundation Models Claude](https://platform.claude.com/docs/en/cli-sdks-libraries/libraries/apple-foundation-models)
 ## 相关实体
 - [from doer to director: the ai mindset shift](022-from-doer-to-director-the-ai-mindset-shift.html)
-- [why internally-built ai fails fund accounting audits](046-why-internally-built-ai-fails-fund-accounting-audits.html)
+- [why internally-built ai fails fund accounting audits](370-why-internally-built-ai-fails-fund-accounting-audits.html)
 - [back up and restore your amazon eks cluster resources using](https://github.com/QianJinGuo/wiki-public/blob/main/entities/back-up-and-restore-your-amazon-eks-cluster-resources-using-velero-amazon-web-se.md)
 
 ---

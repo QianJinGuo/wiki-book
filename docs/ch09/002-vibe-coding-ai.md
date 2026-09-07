@@ -1,6 +1,6 @@
 # 无障碍设计师 vibe coding：当所有同事都在用 AI 写代码时
 
-> 📊 Level ⭐ | 5.0KB | `entities/accessibility-designer-vibe-coding-internal-reflection-2026.md`
+> 📊 Level ⭐ | 5.1KB | `entities/accessibility-designer-vibe-coding-internal-reflection-2026.md`
 
 # 无障碍设计师 vibe coding：当所有同事都在用 AI 写代码时
 

@@ -1,6 +1,6 @@
 # Cloud Use 框架：Agent 作为云上受治理主体的四层模型
 
-> 📊 Level ⭐ | 6.3KB | `entities/cloud-use-framework-agent-cloud-workload.md`
+> 📊 Level ⭐ | 6.4KB | `entities/cloud-use-framework-agent-cloud-workload.md`
 
 # Cloud Use 框架：Agent 作为云上受治理主体的四层模型
 

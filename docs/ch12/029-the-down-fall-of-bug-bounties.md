@@ -1,6 +1,6 @@
 # The down fall of bug bounties
 
-> 📊 Level ⭐⭐⭐ | 6.9KB | `entities/down-fall-of-bug-bounties.md`
+> 📊 Level ⭐⭐⭐ | 7.0KB | `entities/down-fall-of-bug-bounties.md`
 
 ## 核心要点
 - Published Time: 2026-05-18T12:32:41.000Z Markdown Content: May 18 2026 A few days ago, I was reading a post by Kabir Ach...

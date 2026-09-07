@@ -1,6 +1,6 @@
 # Here Comes (Forward Deployed) Everybody
 
-> 📊 Level ⭐⭐⭐ | 7.6KB | `entities/here-comes-forward-deployed-everybody.md`
+> 📊 Level ⭐⭐⭐ | 7.7KB | `entities/here-comes-forward-deployed-everybody.md`
 
 ## 核心要点
 - Forward Deployed Engineer (FDE) 概念成为 Salesforce Headless 360 发布的核心理念

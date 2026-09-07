@@ -1,6 +1,6 @@
 # Tencent AI Infra: Backend Engineer's Guide to AI System Hardware and Software
 
-> 📊 Level ⭐⭐⭐⭐ | 13.0KB | `entities/tencent-ai-infra-backend-engineer-huangrunpeng.md`
+> 📊 Level ⭐⭐⭐⭐ | 13.1KB | `entities/tencent-ai-infra-backend-engineer-huangrunpeng.md`
 
 > → [原文存档](https://mp.weixin.qq.com/s/Hg8uPMjTMX8Tk7slrVvfNA)
 

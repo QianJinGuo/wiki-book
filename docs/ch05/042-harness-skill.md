@@ -1,6 +1,6 @@
 # Harness 工程之道：Skill 原理与最佳实践
 
-> 📊 Level ⭐⭐⭐ | 5.0KB | `entities/harness-skill-engineering-alibaba-practice.md`
+> 📊 Level ⭐⭐⭐ | 5.1KB | `entities/harness-skill-engineering-alibaba-practice.md`
 
 # Harness 工程之道：Skill 原理与最佳实践
 

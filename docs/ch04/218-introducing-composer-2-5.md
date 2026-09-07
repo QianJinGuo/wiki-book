@@ -1,6 +1,6 @@
 # Introducing Composer 2.5
 
-> 📊 Level ⭐⭐⭐ | 6.0KB | `entities/cursor.com-composer-2-5.md`
+> 📊 Level ⭐⭐⭐ | 6.1KB | `entities/cursor.com-composer-2-5.md`
 
 ## 核心要点
 - Composer 2.5 是基于 Moonshot's Kimi K2.5 的重大升级

@@ -1,6 +1,6 @@
 # Headless Software：Agent 时代软件界面何去何从
 
-> 📊 Level ⭐⭐⭐⭐ | 16.1KB | `entities/headless-software-agent-no-ui-podcast.md`
+> 📊 Level ⭐⭐⭐⭐ | 16.2KB | `entities/headless-software-agent-no-ui-podcast.md`
 
 # Headless Software：Agent 时代软件界面何去何从
 

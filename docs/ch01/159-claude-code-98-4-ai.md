@@ -1,6 +1,6 @@
 # 撕开Claude Code真相：让它好用的98.4%，是工程不是AI
 
-> 📊 Level ⭐⭐ | 5.3KB | `entities/claude-code-engineering-truth-1.6-98.4.md`
+> 📊 Level ⭐⭐ | 5.4KB | `entities/claude-code-engineering-truth-1.6-98.4.md`
 
 # 撕开Claude Code真相：让它好用的98.4%，是工程不是AI
 > 新智元报道 | 编辑：元宇 | 2026-05-01 13:29 山西
@@ -14,7 +14,7 @@ Mohamed bin Zayed AI University VILA-Lab 发表的论文（arxiv: 2604.14228）�
 - [Claude Code Self Repair Hooks Memory Config](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-self-repair-hooks-memory-config.md)
 - [Code Review Graph](https://github.com/QianJinGuo/wiki-public/blob/main/entities/code-review-graph.md)
 - [Claude Code Hackathon Winners 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-hackathon-winners-2026.md)
-- [Claude Code Harness Deep Understanding](261-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Understanding](258-claude-code-harness-deep-understanding.html)
 
 → [原文存档](https://mp.weixin.qq.com/s/ITZewjMoE3QUJp_Yc0eO7w)
 

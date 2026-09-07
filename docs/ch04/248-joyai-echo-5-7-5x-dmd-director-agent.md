@@ -1,6 +1,6 @@
 # JoyAI-Echo：京东开源长音视频生成框架（5 分钟一致性 + 7.5x DMD 加速 + Director Agent）
 
-> 📊 Level ⭐⭐⭐⭐ | 18.3KB | `entities/joyai-echo-long-video-framework-jd.md`
+> 📊 Level ⭐⭐⭐⭐ | 18.4KB | `entities/joyai-echo-long-video-framework-jd.md`
 
 # JoyAI-Echo：京东开源长音视频生成框架
 

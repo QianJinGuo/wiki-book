@@ -1,6 +1,6 @@
 # Cloudflare Turnstile requiring fingerprintable WebGL
 
-> 📊 Level ⭐ | 3.4KB | `entities/hacktivisme-articles-cloudflare-turnstile-webgl-fingerprinting.md`
+> 📊 Level ⭐ | 3.5KB | `entities/hacktivisme-articles-cloudflare-turnstile-webgl-fingerprinting.md`
 
 # Cloudflare Turnstile requiring fingerprintable WebGL
 

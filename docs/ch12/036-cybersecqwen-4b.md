@@ -1,6 +1,6 @@
 # CyberSecQwen-4B
 
-> 📊 Level ⭐⭐⭐ | 5.0KB | `entities/cybersecqwen-4b.md`
+> 📊 Level ⭐⭐⭐ | 5.1KB | `entities/cybersecqwen-4b.md`
 
 ## Key Capabilities
 - **CWE Classification**: Maps vulnerability descriptions (CVEs, advisories) to MITRE CWE categories

@@ -1,6 +1,6 @@
 # 产研团队 Agent Loop 组织资产框架
 
-> 📊 Level ⭐⭐⭐ | 4.8KB | `entities/产研团队-agent-loop-组织资产框架.md`
+> 📊 Level ⭐⭐⭐ | 4.9KB | `entities/产研团队-agent-loop-组织资产框架.md`
 
 # 产研团队 Agent Loop 组织资产框架
 

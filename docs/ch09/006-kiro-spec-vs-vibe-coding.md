@@ -1,6 +1,6 @@
 # 用 Kiro 构建行业专业软件：Spec vs Vibe Coding 的分层结论
 
-> 📊 Level ⭐ | 3.0KB | `entities/kiro-building-seismic-wave-processing-spec-vibe-coding.md`
+> 📊 Level ⭐ | 3.1KB | `entities/kiro-building-seismic-wave-processing-spec-vibe-coding.md`
 
 # 用 Kiro 构建行业专业软件：Spec vs Vibe Coding 的分层结论
 

@@ -1,6 +1,6 @@
 # Claude Code 命令完全指南
 
-> 📊 Level ⭐⭐⭐⭐ | 10.4KB | `entities/claude-code-commands-guide.md`
+> 📊 Level ⭐⭐⭐⭐ | 10.5KB | `entities/claude-code-commands-guide.md`
 
 ## 概述
 Claude Code 命令系统化指南——5 分类（会话/模型/权限/扩展/高阶）+ 分阶段优先级 + 速查表。核心理念：命令不是拿来背的，知道什么时候用、为什么用才关键。

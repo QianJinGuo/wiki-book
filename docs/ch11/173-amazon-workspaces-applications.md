@@ -1,6 +1,6 @@
 # 基于 Amazon WorkSpaces Applications 快速搭建企业级应用培训环境
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 18.8KB | `entities/amazon-workspaces-applications-quick-build.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 18.9KB | `entities/amazon-workspaces-applications-quick-build.md`
 
 ## 核心要点
 - **痛点**：50 人规模 GPU 培训手动配置需一整天，涉及 VPC、NAT Gateway、Image Builder、Fleet、Stack 等多个 AWS 服务协调

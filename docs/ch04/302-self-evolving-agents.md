@@ -1,6 +1,6 @@
 # Self-Evolving Agents 系统性综述
 
-> 📊 Level ⭐⭐⭐⭐ | 10.9KB | `entities/self-evolving-agents-survey.md`
+> 📊 Level ⭐⭐⭐⭐ | 11.0KB | `entities/self-evolving-agents-survey.md`
 
 ## 核心贡献
 **统一 taxonomy**：将 Self-Evolving Agents 划分为三大范式——

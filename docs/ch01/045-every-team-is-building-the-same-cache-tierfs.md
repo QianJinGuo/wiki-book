@@ -1,6 +1,6 @@
 # Every Team is Building the Same Cache — TierFS
 
-> 📊 Level ⭐ | 7.5KB | `entities/blog-every-team-builds-the-same-cache-html.md`
+> 📊 Level ⭐ | 7.6KB | `entities/blog-every-team-builds-the-same-cache-html.md`
 
 # Every Team is Building the Same Cache — TierFS
 

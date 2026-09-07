@@ -1,6 +1,6 @@
 # 从 Prompt 到 Harness：Claude 官方学习资料
 
-> 📊 Level ⭐⭐ | 4.7KB | `entities/from-prompt-to-harness-claude-official.md`
+> 📊 Level ⭐⭐ | 4.8KB | `entities/from-prompt-to-harness-claude-official.md`
 
 # 从 Prompt 到 Harness：Claude 官方学习资料
 > 作者：张嘎（公众号「有戏圈」），2026-05-07。
@@ -9,7 +9,7 @@
 1. **指令子系统** — 告诉 Agent 项目是什么、技术栈、不可违反的规则
 
 ## 相关实体
-- [Claude Code Harness Deep Understanding](261-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Understanding](258-claude-code-harness-deep-understanding.html)
 - [Claude Code Harness Deep Dive Founder Park](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-harness-deep-dive-founder-park.md)
 - [Claude Opus 47](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-opus-47.md)
 - [Openclaw Prompt Context Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-prompt-context-harness.md)

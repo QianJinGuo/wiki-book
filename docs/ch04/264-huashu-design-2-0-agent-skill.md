@@ -1,6 +1,6 @@
 # Huashu-Design 2.0 — Agent Skill 反收敛三套逻辑
 
-> 📊 Level ⭐⭐⭐⭐ | 15.7KB | `entities/huashu-design-2-0-flower-uncle-3-patterns.md`
+> 📊 Level ⭐⭐⭐⭐ | 15.8KB | `entities/huashu-design-2-0-flower-uncle-3-patterns.md`
 
 # Huashu-Design 2.0 — Agent Skill 反收敛三套逻辑
 

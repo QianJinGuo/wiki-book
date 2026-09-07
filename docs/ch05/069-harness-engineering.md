@@ -1,6 +1,6 @@
 # Harness Engineering 的未来——什么会消失，什么不会
 
-> 📊 Level ⭐⭐⭐⭐ | 7.4KB | `entities/harness-engineering-future-persistence-vs-erosion.md`
+> 📊 Level ⭐⭐⭐⭐ | 7.5KB | `entities/harness-engineering-future-persistence-vs-erosion.md`
 
 # Harness Engineering 的未来——什么会消失，什么不会
 

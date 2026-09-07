@@ -1,6 +1,6 @@
 # 从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 12.3KB | `entities/agent-skill-writing-guide.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 12.4KB | `entities/agent-skill-writing-guide.md`
 
 [Agent Skill Writing Guide](https://mp.weixin.qq.com/s/six9MKhvBgyZyUvyAIujTA)
 

@@ -1,6 +1,6 @@
 # ES 做 Agent 记忆层，召回率0.89
 
-> 📊 Level ⭐⭐⭐ | 5.7KB | `entities/es-agent-memory-layer-atlas-elasticsearch-2026.md`
+> 📊 Level ⭐⭐⭐ | 5.8KB | `entities/es-agent-memory-layer-atlas-elasticsearch-2026.md`
 
 # ES 做 Agent 记忆层，召回率0.89
 
