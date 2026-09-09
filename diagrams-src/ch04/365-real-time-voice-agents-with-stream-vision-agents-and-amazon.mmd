@@ -1,0 +1,4 @@
+%% title: 实时语音 Agent——Stream Vision 加 Nova 2 Sonic
+graph TD
+    ARCH["核心架构: Edge Network 加<br/>Vision Agents 加 Nova 2 Sonic<br/>sub-30ms 音频延迟"] ==> S2S["speech-to-speech 单次往返<br/>免 ASR-LLM-TTS 三段延迟<br/>低于 500ms 加 Function Calling"]
+    S2S ==> SCENES["场景: 无屏幕环境<br/>加 大规模 Inbound 电话支持"]

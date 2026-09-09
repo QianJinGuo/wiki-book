@@ -1,0 +1,4 @@
+%% title: PromptQueue 加 OpenGorilla——异步任务引擎
+graph TD
+    ARCH["4 层分离 加 7 状态机<br/>加 Worker-owned Tool Loop<br/>加 HITL 基础设施"] ==> OG["OpenGorilla 集成<br/>自进化认知闭环"]
+    OG ==> INS["LLM 调用本质是队列问题<br/>经验即资产 · 简单架构最可维护"]

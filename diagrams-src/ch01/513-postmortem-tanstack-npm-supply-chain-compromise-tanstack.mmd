@@ -1,0 +1,5 @@
+%% title: TanStack npm 供应链攻击复盘
+graph TD
+    A1["缓存投毒: pull_request_target<br/>加 Pwn Request 模式"] ==> A2["跨信任边界污染<br/>加 OIDC token 提取"]
+    A2 ==> DET["检测: IOC 指纹共享<br/>加 三重信任边界穿越"]
+    DET ==> L["教训: 缺一不可成攻击链<br/>对维护者和安全团队的建议"]

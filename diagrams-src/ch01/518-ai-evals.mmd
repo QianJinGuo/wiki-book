@@ -1,0 +1,4 @@
+%% title: AI Evals 评估方法论
+graph TD
+    M3["三种评估: 人工加代码加 LLM Judge"] ==> MIX["三方法互补 加 参考答案策略<br/>加 无参考答案生产监控"]
+    MIX ==> AGENT["Agent 评估特殊性<br/>腾讯 TEG: 五维评估加 Rubric<br/>加 Agent Skill 二维矩阵"]
