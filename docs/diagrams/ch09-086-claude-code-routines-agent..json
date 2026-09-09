@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Code Routines——从工具到队友的主动 Agent",
+  "code": "graph TD\n    PAIN[\"以前跑定时任务的三道坎\"] ==> C3[\"Routines 三个能力<br/>始终在线云端基建 · 灵活触发<br/>非黑盒透明可干预\"]\n    C3 ==> THINK[\"设计 Routine 三件事<br/>Trigger 触发时机<br/>Context 可用信息 · Steerability 引导质量\"]\n    THINK ==> CASE[\"场景: 部署验证器 · 值班事件处理<br/>积压工单清理 · 实时介入\"]",
+  "isSvg": false
+ }
+]

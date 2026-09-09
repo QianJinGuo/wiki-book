@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Code 集成其他工具指南",
+  "code": "graph TD\n    MCP[\"MCP 协议集成: 扩展基石<br/>真 RPC · 不可替代场景 · 祛魅\"] ==> IM[\"IM 平台操控 IMClaw<br/>核心概念与技术架构\"]\n    IM ==> KIRO[\"Kiro AI IDE 协同\"]\n    KIRO ==> ENT[\"企业级部署<br/>AWS Bedrock AgentCore 集成\"]\n    ENT ==> SKILLS[\"Skills 系统集成<br/>MCP 与 Skills 哲学差异<br/>工具选择矩阵\"]",
+  "isSvg": false
+ }
+]

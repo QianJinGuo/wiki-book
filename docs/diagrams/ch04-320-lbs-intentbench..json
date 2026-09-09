@@ -1,0 +1,7 @@
+[
+ {
+  "title": "LBS-IntentBench——首个真实出行隐式意图评测",
+  "code": "graph TD\n    ARCH[\"三维评测架构<br/>三类系统化干扰项陷阱<br/>双阶段共识真值审核\"] ==> FIND[\"关键发现<br/>闭源领先 开源小模型性价比高<br/>多意图全局排序是共同瓶颈<br/>GPT-5.4 计数严重不足\"]\n    FIND ==> ESSENCE[\"隐式意图推理的技术本质<br/>多意图排序的瓶颈根源\"]\n    ESSENCE ==> INS[\"对 LBS 产品与评测设计的建议\"]",
+  "isSvg": false
+ }
+]

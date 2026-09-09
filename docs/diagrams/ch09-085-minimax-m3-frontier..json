@@ -1,0 +1,7 @@
+[
+ {
+  "title": "MiniMax M3——开源 Frontier 模型",
+  "code": "graph TD\n    T3[\"三件套能力\"] ==> MSA[\"MSA 稀疏注意力<br/>三关键词 · 稀疏路线对比 · 性能数据\"]\n    MSA ==> MM[\"原生多模态<br/>对 Coding Agent 的真实价值\"]\n    MM ==> SIM[\"交互式用户模拟器训练<br/>FP8 GEMM 自主优化案例<br/>PostTrainBench 自主训练模型\"]\n    SIM ==> CODE[\"MiniMax Code 与定价 · 评估成绩\"]",
+  "isSvg": false
+ }
+]

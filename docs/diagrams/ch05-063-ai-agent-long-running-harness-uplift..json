@@ -1,0 +1,7 @@
+[
+ {
+  "title": "高德 Long-Running Harness——Uplift 模型迭代应用",
+  "code": "graph TD\n    L5[\"五层架构\"] ==> C3[\"三个核心能力<br/>不知疲倦不丢进度<br/>能审稿自己修自己的错<br/>能与企业平台对话卡住等人\"]\n    C3 ==> ITER[\"完整迭代案例时间线\"]\n    ITER ==> ALIGN[\"业界范式对齐<br/>10 个 harness primitives 对照<br/>Audit 驱动三项能力\"]\n    ALIGN ==> INS[\"核心论点: test-time compute<br/>按假设分配 · Harness 即实验基建<br/>迭代速度大于单次幅度\"]",
+  "isSvg": false
+ }
+]

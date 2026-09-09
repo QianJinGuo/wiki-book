@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Anthropic 实战——如何让 AI Agent 持续工作几天",
+  "code": "graph TD\n    F3[\"三大失败根因<br/>上下文焦虑 · 规划缺陷 · 自我评判失灵\"] ==> SDK[\"Agent SDK 结构化管理<br/>渐进披露 · 程序化工具调用<br/>文件系统优于模型记忆\"]\n    SDK ==> ADV[\"对抗式架构: GAN 思路<br/>三角色互相独立<br/>审美量化\"]\n    ADV ==> CASE[\"RetroForge 与 Rakuten 案例<br/>六层夜间控制环<br/>新瓶颈: 晨间审阅队列\"]",
+  "isSvg": false
+ }
+]

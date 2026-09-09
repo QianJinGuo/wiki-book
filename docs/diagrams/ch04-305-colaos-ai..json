@@ -1,0 +1,7 @@
+[
+ {
+  "title": "ColaOS 与 AI 原生组织",
+  "code": "graph TD\n    R3[\"三个重写\"] ==> PRODUCT[\"产品: 从工具到关系<br/>不做工具做一个人<br/>Soul System 有灵魂才有留存\"]\n    PRODUCT ==> ROUTE[\"路线: one-person company<br/>的 10x 产出 · AI coding 覆盖率\"]\n    ROUTE ==> ORG[\"组织: AI 的速度必须穿过组织<br/>五周奇迹 · Soul Team 叙事穿透<br/>纯语音交互的赌注\"]",
+  "isSvg": false
+ }
+]

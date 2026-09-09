@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Code Dynamic Workflows 实战模式",
+  "code": "graph TD\n    MECH[\"运作机制: JS 文件生成协调 subagents<br/>独立上下文 · 可选模型与 worktree · 可恢复\"] ==> FAIL[\"三大失败模式<br/>智能体惰性 · 自我偏好偏差 · 目标漂移<br/>对抗: 拆分 加 硬性要求 加 独立校验\"]\n    FAIL ==> P6[\"六大基础模式<br/>分类执行 · 扇出汇总 · 对抗校验<br/>生成筛选 · 锦标赛 · 隔离区\"]\n    P6 ==> PARADIGM[\"静态到动态 Harness 范式转变<br/>Token 预算工程必要性\"]",
+  "isSvg": false
+ }
+]

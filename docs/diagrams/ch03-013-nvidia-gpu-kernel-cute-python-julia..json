@@ -1,0 +1,7 @@
+[
+ {
+  "title": "NVIDIA GPU Kernel 翻译——cuTile Python 到 Julia",
+  "code": "graph TD\n    AUTO[\"AI Agents 自动化<br/>GPU Kernel 翻译\"] ==> PATH[\"cuTile Python 到 cuTile.jl 路径\"]\n    PATH ==> VAL[\"验证与基准对比\"]\n    PATH ==> INS[\"关键洞察: 行业趋势关联<br/>实践启示\"]",
+  "isSvg": false
+ }
+]

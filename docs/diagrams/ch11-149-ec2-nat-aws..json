@@ -1,0 +1,7 @@
+[
+ {
+  "title": "EC2 NAT 实例选型与部署——AWS 中国区",
+  "code": "graph TD\n    MATRIX[\"NAT 网关 vs NAT 实例 决策矩阵<br/>费用结构决定分水岭\"] ==> BAND[\"带宽三概念<br/>多流流量规则是隐形天花板<br/>持续带宽才是真带宽\"]\n    BAND ==> TYPE[\"实例类型按流量档位选择\"]\n    TYPE ==> HA[\"高可用: ASG 加 CloudFormation<br/>分钟级恢复 · 多 VPC 参数化复用\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Code 七种自定义方法——官方全景指南",
+  "code": "graph TD\n    CMP[\"七种方法对比\"] ==> MD[\"CLAUDE.md 控制在 200 行内\"]\n    CMP ==> RULES[\"规则: 路径作用域是关键\"]\n    CMP ==> SKILLS[\"技能: 流程型指令归宿<br/>子智能体: 隔离是核心价值\"]\n    CMP ==> HOOKS[\"钩子: 确定性执行唯一可靠路径<br/>输出风格: 权重最高需谨慎\"]\n    MD ==> CORE[\"上下文成本是选择的核心约束<br/>事实 流程 护栏三层分类\"]\n    RULES ==> CORE",
+  "isSvg": false
+ }
+]

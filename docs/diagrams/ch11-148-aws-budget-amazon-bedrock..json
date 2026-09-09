@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AWS Budget 实现 Bedrock 用量监控与自动中断",
+  "code": "graph TD\n    N3[\"三大需求\"] ==> SVC[\"三个核心 AWS 服务<br/>完整流程\"]\n    SVC ==> KEY[\"关键设计<br/>双 Policy 切换模式<br/>硬约束服务端强制 · 每月自动重置\"]\n    KEY ==> LIM[\"局限: 4-8 小时 Billing 延迟<br/>IAM Deny 优先原则<br/>可推广到其他 AI 服务\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Amazon IoT Core 加 Kiro——可迁移工业 IoT 数据管道",
+  "code": "graph TD\n    LINK[\"数据链路: IoT Core 到 Kinesis 到 Firehose 到 S3<br/>IoT Policy IP 白名单 · Firehose 5MiB 缓冲\"] ==> E3[\"三阶段演进: 知识编码层级跃迁<br/>手动指南基线 到 幂等 boto3 脚本<br/>到 Kiro 包装 AI 可调用工作流\"]\n    E3 ==> MIG[\"跨账户迁移可回滚设计<br/>S3 命名含账户 ID 后缀\"]\n    MIG ==> COST[\"成本: 下游数仓才是优化重点<br/>三层形态视为降级路径\"]",
+  "isSvg": false
+ }
+]

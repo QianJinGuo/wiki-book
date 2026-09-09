@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Code session 管理与 1M 上下文",
+  "code": "graph TD\n    BASE[\"上下文 压缩与腐化入门<br/>窗口是稀缺资源\"] ==> FORK[\"分叉点框架<br/>每轮对话都是决策点\"]\n    FORK ==> REVERT[\"用回退代替修正<br/>认知模式转变\"]\n    REVERT ==> CMP[\"压缩 vs 新会话<br/>糟糕压缩的成因 · 有损性\"]\n    CMP ==> SUB[\"子智能体: 上下文隔离架构\"]",
+  "isSvg": false
+ }
+]

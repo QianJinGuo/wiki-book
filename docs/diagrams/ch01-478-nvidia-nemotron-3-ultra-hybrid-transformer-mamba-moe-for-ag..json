@@ -1,0 +1,7 @@
+[
+ {
+  "title": "NVIDIA Nemotron 3 Ultra——Hybrid Transformer-Mamba MoE",
+  "code": "graph TD\n    SPEC[\"核心规格\"] ==> ARCH[\"架构创新: Hybrid<br/>Transformer 加 Mamba 加 MoE<br/>MoE 推理效率优势\"]\n    ARCH ==> WHY[\"为什么 Agent 需要专门模型<br/>Tool calling 准确性是关键指标<br/>评估推理延迟而非只看 benchmark\"]\n    WHY ==> DEPLOY[\"SageMaker JumpStart 一键部署<br/>注意 GPU 内存与锁定评估\"]",
+  "isSvg": false
+ }
+]

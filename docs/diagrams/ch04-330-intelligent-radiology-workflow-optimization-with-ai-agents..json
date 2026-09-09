@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AI Agents 优化放射科工作流",
+  "code": "graph TD\n    PROBLEM[\"传统调度失效\"] ==> MULTI[\"多智能体协同逻辑\"]\n    MULTI ==> MEM[\"双层记忆系统<br/>短时加长时加情节记忆\"]\n    MEM ==> SEC[\"双层 Guardrails<br/>PII 保护需双向过滤\"]\n    SEC ==> OBS[\"可观测性从第一天设计<br/>影像 AI 与工作流智能体协同放大\"]",
+  "isSvg": false
+ }
+]

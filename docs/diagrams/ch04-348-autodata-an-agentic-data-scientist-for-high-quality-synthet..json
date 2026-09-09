@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Autodata——Agentic 数据科学家生成高质量合成数据",
+  "code": "graph TD\n    SHIFT[\"范式: 用 Agent 替代人工数据科学家<br/>推理计算转化为训练数据质量\"] ==> META[\"Meta-Optimization 框架<br/>从质量反馈持续改进创建策略\"]\n    META ==> SI[\"Agentic Self-Instruct<br/>迭代改进 · 多样化探索 · 质量闭环\"]\n    SI ==> EXP[\"三领域验证全面超越经典方法\"]",
+  "isSvg": false
+ }
+]

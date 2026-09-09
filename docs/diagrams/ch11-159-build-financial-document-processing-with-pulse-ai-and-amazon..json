@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Pulse AI 加 Bedrock 金融文档处理",
+  "code": "graph TD\n    DEADZONE[\"金融文档是 OCR 死亡区\"] ==> HYBRID[\"架构: VLM 加经典 ML 混合\"]\n    HYBRID ==> NOVA[\"Nova Micro 微调定位\"]\n    NOVA ==> PIPE[\"端到端流水线<br/>与传统 IDP 方案差异化\"]",
+  "isSvg": false
+ }
+]

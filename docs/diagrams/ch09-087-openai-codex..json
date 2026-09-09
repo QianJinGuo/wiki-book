@@ -1,0 +1,7 @@
+[
+ {
+  "title": "OpenAI Codex 秘密矩阵——所有设备连成超级电脑",
+  "code": "graph TD\n    CORE[\"Codex 将设备连成巨大网络\"] ==> LOCKED[\"终结锁屏瘫痪: Locked Use\"]\n    LOCKED ==> SHARE[\"多机上下文共享\"]\n    SHARE ==> SKILLS[\"Skills 生态爆发\"]\n    SKILLS ==> RISK[\"安全隐患与 OpenAI 的真正野心\"]",
+  "isSvg": false
+ }
+]

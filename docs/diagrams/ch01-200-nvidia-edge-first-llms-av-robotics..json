@@ -1,0 +1,7 @@
+[
+ {
+  "title": "NVIDIA Edge-First LLM——自动驾驶与机器人",
+  "code": "graph TD\n    GOAL[\"构建下一代 Physical AI<br/>Edge-First LLM\"] ==> AV[\"自动驾驶应用场景\"]\n    GOAL ==> ROBOT[\"机器人应用场景\"]\n    AV ==> INS[\"深度分析与实践启示\"]\n    ROBOT ==> INS",
+  "isSvg": false
+ }
+]

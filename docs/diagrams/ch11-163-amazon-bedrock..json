@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Amazon Bedrock 构建货运物流双语 NER",
+  "code": "graph TD\n    DISTILL[\"知识蒸馏是成本优化关键<br/>Nova Pro 蒸馏到 Nova Lite<br/>保留 98% 性能 14 倍降本\"] ==> TECH[\"Token 级 KL 散度蒸馏<br/>保留细粒度实体边界\"]\n    TECH ==> GAP[\"日语准确率差距 2.9pp<br/>汉字组合与训练数据较少\"]\n    GAP ==> DEPLOY[\"生产部署架构与时间线\"]",
+  "isSvg": false
+ }
+]

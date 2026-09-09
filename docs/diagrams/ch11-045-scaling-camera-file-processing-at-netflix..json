@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Netflix 相机文件处理规模化——Content Hub MPS",
+  "code": "graph TD\n    MPS[\"Media Production Suite 背景<br/>为什么自建 MPS\"] ==> ENGINE[\"Media Processing Engine<br/>云端处理工厂\"]\n    ENGINE ==> PHILOSOPHY[\"Buy over Build 工程哲学<br/>战略合作而非盲目自建<br/>云约束反向驱动架构优化\"]\n    PHILOSOPHY ==> STD[\"开放标准作多供应商粘合剂<br/>弹性扩展范式 · 深度伙伴层次\"]",
+  "isSvg": false
+ }
+]

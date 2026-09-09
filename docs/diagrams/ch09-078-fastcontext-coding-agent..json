@@ -1,0 +1,7 @@
+[
+ {
+  "title": "FastContext——微软开源仓库探索子代理",
+  "code": "graph TD\n    POS[\"核心定位: 仓库探索子代理\"] ==> TRAIN[\"训练方法与报告效果\"]\n    TRAIN ==> PIT[\"开源实现工程坑 重要\"]\n    PIT ==> INTEG[\"接入方法论<br/>正确姿势 · 何时值得调用 · 实验设计\"]\n    INTEG ==> P0[\"上生产前必修 P0<br/>架构启发\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "MAC——Skills 加 Hooks 两层 Harness 的完全委托解法",
+  "code": "graph TD\n    PROBLEM[\"问题: 完全委托率只有 0 到 20%\"] ==> L2[\"两层叠加架构\"]\n    L2 ==> SKILLS[\"Skills 概率层: 工作流的形状<br/>任务在哪里 · 局限\"]\n    L2 ==> HOOKS[\"Hooks 确定性层: Harness 地基<br/>为什么需要确定性层\"]\n    SKILLS ==> SEP[\"框架与项目知识分开放\"]\n    HOOKS ==> SEP\n    SEP ==> RESULT[\"Hooks 改变委托性质<br/>突破 0 到 20%\"]",
+  "isSvg": false
+ }
+]

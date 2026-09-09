@@ -1,0 +1,7 @@
+[
+ {
+  "title": "做 Agent 评测的反直觉感悟",
+  "code": "graph TD\n    INSIGHT[\"核心见解<br/>Bad Case 的普遍特征<br/>质量与规模化的矛盾\"] ==> TRACE[\"Tracing 的产品价值<br/>从直觉到可观测的认知价值\"]\n    TRACE ==> ATOM[\"Observation 是成本控制的<br/>原子单元\"]\n    ATOM ==> SHIFT[\"从质量优先到可规模化优先\"]",
+  "isSvg": false
+ }
+]

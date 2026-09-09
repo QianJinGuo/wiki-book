@@ -1,0 +1,7 @@
+[
+ {
+  "title": "得物技术——Harness 加 SDD 加多仓的 AI 全栈开发",
+  "code": "graph TD\n    CORE[\"核心理念: Harness 思维<br/>让 AI 模仿而非凭空创造\"] ==> PDCA[\"PDCA 七阶段护栏<br/>全链路 AI 化\"]\n    PDCA ==> REQ[\"TPRD 加 Contract<br/>需求变可执行边界\"]\n    REQ ==> DO3[\"Do: 三类基础设施减少 AI 等待\"]\n    DO3 ==> K3[\"CDD 三层知识体系 L1 L2 L3\"]\n    K3 ==> AGENT[\"Highway 加 ATV 混合 Agent 架构<br/>阶段性实战结果\"]",
+  "isSvg": false
+ }
+]

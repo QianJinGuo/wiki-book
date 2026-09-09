@@ -1,0 +1,7 @@
+[
+ {
+  "title": "无服务器 Kiro 调度平台——Kiro CLI 加 EventBridge 加 Fargate",
+  "code": "graph TD\n    SHIFT[\"从交互式到自动化\"] ==> L3[\"三层无服务器架构<br/>EventBridge 触发 加 Fargate 执行\"]\n    L3 ==> CAP[\"核心能力: 自定义 Agent<br/>加 MCP Server 加 Skills<br/>Kiro CLI 非交互模式\"]\n    CAP ==> SEC[\"安全设计: 纵深防御<br/>成本分析: 无服务器适配 AI 任务\"]",
+  "isSvg": false
+ }
+]

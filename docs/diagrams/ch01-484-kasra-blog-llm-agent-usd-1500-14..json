@@ -1,0 +1,7 @@
+[
+ {
+  "title": "kasra.blog LLM Agent 黑客能力实测——1500 美元 14 模型",
+  "code": "graph TD\n    DESIGN[\"测试设计与核心数据<br/>14 模型解决率与成本\"] ==> OBS[\"关键观察<br/>中文模型对 DB 攻击更舒适<br/>DeepSeek V4 Pro 性价比之王\"]\n    OBS ==> REFUSAL[\"Claude 晚期拒答<br/>Gemini 立即拒答\"]\n    REFUSAL ==> RED[\"红队测试的必要性<br/>结果反馈到 harness 设计<br/>分层防御不依赖单一机制\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "OpenSpec 四步法深度复盘——流程完整不等于代码正确",
+  "code": "graph TD\n    INSIGHT[\"核心洞察: 流程完整不等于代码正确<br/>文档与代码是两条平行线\"] ==> GAP[\"四步法各环节短板<br/>Verify 只暴露问题不解决问题<br/>自 Review 用同一把尺子\"]\n    GAP ==> U5[\"五项升级<br/>Spec Review · 原子任务检查点<br/>运行验证 · TDD · 质量门控清单\"]\n    U5 ==> PRI[\"落地优先级<br/>质量分层叠加 · 测试强制化\"]",
+  "isSvg": false
+ }
+]

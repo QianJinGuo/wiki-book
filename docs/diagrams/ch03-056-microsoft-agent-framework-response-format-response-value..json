@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Microsoft Agent Framework 结构化输出",
+  "code": "graph TD\n    Q[\"核心问题: Agent 进入业务系统的门槛\"] ==> W2[\"两种声明方式<br/>Pydantic 类 或 JSON Schema dict\"]\n    W2 ==> VAL[\"response.value vs response.text<br/>结构化输出的工程意义\"]\n    VAL ==> NOTES[\"配置时机 · 流式加结构化<br/>能力边界与生产注意点\"]",
+  "isSvg": false
+ }
+]

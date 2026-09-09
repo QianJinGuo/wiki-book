@@ -1,0 +1,7 @@
+[
+ {
+  "title": "DocuSign IAM 上的 Agentic 协议工作流",
+  "code": "graph TD\n    SHIFT[\"范式: 事件驱动到意图驱动<br/>自主文档处理无需人工\"] ==> API[\"API v2.1 关键端点<br/>Webhook 与事件订阅\"]\n    API ==> AGENT[\"Agent 自主处理<br/>审核 签名收集 归档\"]\n    AGENT ==> PROD[\"生产注意: 速率限制<br/>Webhook 重试 · 幂等与状态一致性\"]",
+  "isSvg": false
+ }
+]

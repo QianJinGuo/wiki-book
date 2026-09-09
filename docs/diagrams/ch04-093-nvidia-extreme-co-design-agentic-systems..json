@@ -1,0 +1,7 @@
+[
+ {
+  "title": "NVIDIA Extreme Co-Design 应对 Agentic 系统复杂度",
+  "code": "graph TD\n    BLOG[\"NVIDIA 技术博客<br/>应对 Agentic 系统复杂度上升\"] ==> CHAL[\"三种交互模式与性能挑战\"]\n    CHAL ==> CO[\"Extreme Co-Design 思路<br/>硬件全景加软件优化层\"]\n    CO ==> INS[\"深度分析与实践启示\"]",
+  "isSvg": false
+ }
+]

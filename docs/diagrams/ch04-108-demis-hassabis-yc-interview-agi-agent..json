@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Demis Hassabis YC 访谈——AGI 时间线记忆与 Agent 未来",
+  "code": "graph TD\n    TIMELINE[\"AGI 时间线 2030 年<br/>深科技创业须计入中途出现\"] ==> LIMITS[\"当前架构根本局限<br/>持续学习 长期推理 记忆<br/>锯齿状智能: 下棋走错路\"]\n    LIMITS ==> RETURNS[\"AlphaGo 思想回归<br/>从语言模型到搜索加推理<br/>蒸馏极限: Flash 十分之一价格\"]\n    RETURNS ==> STD[\"创造力标准: 发明围棋本身<br/>爱因斯坦测试 · 1000 倍工程师\"]\n    STD ==> AGENTS[\"Agents 6-12 个月<br/>从玩具到工具\"]",
+  "isSvg": false
+ }
+]

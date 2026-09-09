@@ -1,0 +1,7 @@
+[
+ {
+  "title": "代码变便宜让形式验证变得合理",
+  "code": "graph TD\n    HILL[\"introducing the hill<br/>形式验证的新位置\"] ==> HOW[\"how it works 机制\"]\n    HOW ==> CONF[\"building confidence 建立信心\"]\n    CONF ==> REF[\"reflections 与反思<br/>AI 时代形式验证的经济性\"]",
+  "isSvg": false
+ }
+]

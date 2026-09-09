@@ -1,0 +1,7 @@
+[
+ {
+  "title": "100 万 AI 服务暴露公网——扫描报告",
+  "code": "graph TD\n    FIND[\"核心发现概览\"] ==> NOAUTH[\"无认证部署成默认选项<br/>Ollama API 大规模暴露\"]\n    NOAUTH ==> AGENT[\"Agent 管理平台漏洞\"]\n    AGENT ==> SYS[\"安全设计缺陷的系统性<br/>立即行动项与战略建议\"]",
+  "isSvg": false
+ }
+]

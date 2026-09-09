@@ -1,0 +1,7 @@
+[
+ {
+  "title": "5 分钟上手 AgentRun——从注册到第一个 Agent",
+  "code": "graph TD\n    POS[\"核心定位\"] ==> M5[\"5 种创建模式<br/>快速创建表单 4 步\"]\n    M5 ==> TAB[\"详情页 8 个 Tab<br/>覆盖全生命周期\"]\n    TAB ==> AUTO[\"平台自动处理的生产级能力<br/>Serverless 运行时价值\"]\n    AUTO ==> ADV[\"进阶: 多 Agent 协同<br/>MCP 工具市场 · LiteLLM 网关\"]",
+  "isSvg": false
+ }
+]

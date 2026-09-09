@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Yoonho Lee——文本优化作为合法学习机制",
+  "code": "graph TD\n    THESIS[\"核心论证三层<br/>文本优化是合法 update 机制<br/>低数据场景 sample-efficient 优势巨大<br/>开启 update-time compute 新轴\"] ==> TL[\"关键概念: Text Layer<br/>不同 layer 的共存\"]\n    TL ==> REL[\"立场 vs 工具的差异\"]\n    REL ==> HERMES[\"与 Hermes Skill 互优化的关系\"]",
+  "isSvg": false
+ }
+]

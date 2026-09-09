@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Harness 工程复盘——100% Cache 命中的 Agent 设计",
+  "code": "graph TD\n    FAIL2[\"两代失败教训<br/>一代 RAG 知识库 · 二代多 Agent 工作流\"] ==> D7[\"7 个关键工程决策<br/>双 Cache 标记 · System Prompt 字节冻结<br/>Skill 子 Agent 架构 · 固定 16 工具<br/>空闲时压缩 · 工具自进化 · 内置浏览器\"]\n    D7 ==> CORE[\"核心原则: Cache 局部性是<br/>最核心的设计维度\"]\n    CORE ==> INS[\"工程预算花在 Harness<br/>智能预算留给模型\"]",
+  "isSvg": false
+ }
+]

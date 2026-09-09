@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Interaction Models——从回合制到实时协作",
+  "code": "graph TD\n    BOTTLENECK[\"瓶颈: 回合制限制<br/>窄通道让人机判断无法充分传递\"] ==> MICRO[\"微回合架构创新<br/>200ms 块交错全双工<br/>无编码器早期融合 dMel\"]\n    MICRO ==> DUAL[\"双层架构<br/>交互模型实时响应<br/>后台模型异步深度推理\"]\n    DUAL ==> BENCH[\"FD-bench 77.8 vs GPT 46.8<br/>轮次延迟 0.40s<br/>视觉主动性新维度\"]",
+  "isSvg": false
+ }
+]

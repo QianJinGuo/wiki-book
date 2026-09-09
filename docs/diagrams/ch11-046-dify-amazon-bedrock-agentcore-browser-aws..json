@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Dify 集成 Bedrock AgentCore Browser——信息获取与分析",
+  "code": "graph TD\n    SHIFT[\"云端托管浏览器: 网页交互范式转变\"] ==> DUAL[\"双组件架构<br/>Session Manager 加 Browser Tool 职责分离\"]\n    DUAL ==> FILL[\"Dify 生态能力缺口填补<br/>GitHub 仓库分析闭环\"]\n    FILL ==> TECH[\"Playwright 加 CDP 加 asyncio 协同<br/>Browser Viewer 可观测集成\"]",
+  "isSvg": false
+ }
+]

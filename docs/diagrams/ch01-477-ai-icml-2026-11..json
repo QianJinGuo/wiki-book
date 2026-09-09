@@ -1,0 +1,7 @@
+[
+ {
+  "title": "小米 AI——ICML 2026 论文矩阵 11 篇",
+  "code": "graph TD\n    GUI[\"GUI Agent 全栈<br/>Video2GUI 到 WildGUI · CoME<br/>LED · VeriTime 省 71% Token\"] ==> MM[\"多模态理解<br/>Visual Para-Thinker · Video-OPD<br/>GAD · MECAT\"]\n    MM ==> BASE[\"训练底座<br/>R3 Rollout Routing Replay · SPARK\"]\n    BASE ==> JUDGE[\"技术演进判断\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude 代码能力的系统工程——Constitutional AI 加 RL 加飞轮",
+  "code": "graph TD\n    E1[\"第一层引擎: 代码是 RL 完美训练场<br/>可验证奖励是最稀缺燃料<br/>复杂推理天然涌现场\"] ==> E2[\"第二层引擎: Constitutional AI<br/>为 RL 装上护栏<br/>RLAIF 框架 · 多层级奖励塑形\"]\n    E2 ==> E3[\"第三层引擎: 产品即数据飞轮<br/>用户行为是隐式标注<br/>飞轮马太效应\"]\n    E3 ==> LOOP[\"迭代闭环与反面观点<br/>行业趋势\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Agent Harness Engineering 综述——ETCLOVG 分类法",
+  "code": "graph TD\n    TAX[\"ETCLOVG Taxonomy<br/>结构哲学\"] ==> PH3[\"Three Engineering Phases<br/>三阶段演化逻辑\"]\n    PH3 ==> SYN[\"跨层合成三模式<br/>三个悖论\"]\n    SYN ==> ECO[\"生态映射发现<br/>开源覆盖现状\"]\n    ECO ==> OPEN[\"5 个开放问题\"]",
+  "isSvg": false
+ }
+]

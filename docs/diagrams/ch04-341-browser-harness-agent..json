@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Browser Harness——自愈型浏览器 Agent 框架",
+  "code": "graph TD\n    HEAL[\"核心创新: 自愈机制 Self-Healing<br/>架构意义\"] ==> SKILL[\"Domain-Skills 自动沉淀\"]\n    SKILL ==> CMP[\"与同类方案对比<br/>AgentBrowser 路线对比<br/>去框架化的代价与收益\"]\n    CMP ==> SEC[\"安全边界与使用最佳实践\"]",
+  "isSvg": false
+ }
+]

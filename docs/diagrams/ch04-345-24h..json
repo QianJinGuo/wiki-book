@@ -1,0 +1,7 @@
+[
+ {
+  "title": "24h 打工人",
+  "code": "graph TD\n    ARCH[\"核心架构与 SDD 目录结构<br/>SDD 本质是结构化记忆\"] ==> SCHED[\"调度层职责与并发策略\"]\n    SCHED ==> QUEUE[\"文件队列优先于消息队列\"]\n    QUEUE ==> FAIL[\"工具失败自动切换的工程价值\"]\n    QUEUE ==> BOOT[\"自举能力的有条件性\"]",
+  "isSvg": false
+ }
+]

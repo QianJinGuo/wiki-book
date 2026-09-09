@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AWS 软件供应链安全 Well-Architected 最佳实践",
+  "code": "graph TD\n    D4[\"核心防御维度<br/>凭证卫生 · 最小权限<br/>SBOM · 纵深防御\"] ==> MAP[\"与 Well-Architected<br/>五大支柱映射\"]\n    MAP ==> VEC[\"关键攻击向量总结\"]\n    VEC ==> GO[\"落地建议\"]",
+  "isSvg": false
+ }
+]

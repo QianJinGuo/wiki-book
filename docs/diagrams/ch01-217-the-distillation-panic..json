@@ -1,0 +1,7 @@
+[
+ {
+  "title": "The Distillation Panic——蒸馏恐慌",
+  "code": "graph TD\n    TERM[\"术语之争: distillation attacks<br/>把合法技术与 API 滥用混为一谈<br/>造成行业语言污染\"] ==> FACT[\"事实: 蒸馏是行业标准<br/>数据引擎加技能迁移两种形态<br/>闭源开源都在用\"]\n    FACT ==> REAL[\"真正违规是 jailbreaking<br/>与 API 滥用 而非蒸馏本身\"]\n    REAL ==> RISK[\"多管齐下监管风险<br/>反讽: 切断拐杖或反伤长期竞争力\"]",
+  "isSvg": false
+ }
+]

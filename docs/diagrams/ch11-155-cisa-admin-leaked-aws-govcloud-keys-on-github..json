@@ -1,0 +1,7 @@
+[
+ {
+  "title": "CISA 管理员在 GitHub 泄露 GovCloud 密钥",
+  "code": "graph TD\n    EVENT[\"事件: 承包商公开仓库存明文密码<br/>主动禁用 secrets 检测<br/>制度失效叠加人为失误\"] ==> ASSET[\"暴露资产: 三个 GovCloud 管理凭证<br/>artifactory 访问权 · 内部系统密码\"]\n    ASSET ==> RESP[\"密钥下架后仍有效 48 小时<br/>迟缓的应急响应\"]\n    RESP ==> LESSON[\"教训: 组织级策略 · 自动扫描告警<br/>快速轮换 · 假设已沦陷设计\"]",
+  "isSvg": false
+ }
+]

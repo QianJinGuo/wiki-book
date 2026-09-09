@@ -1,0 +1,7 @@
+[
+ {
+  "title": "SageMaker 推理可观测性——100 加指标与 CloudWatch Insights",
+  "code": "graph TD\n    ARCH[\"核心架构: 100 加详细指标覆盖\"] ==> VIEW[\"Insights Dashboard 三视图<br/>Performance · Capacity · Reliability\"]\n    VIEW ==> USE[\"启用方式与 PromQL 对接 Grafana\"]\n    USE ==> PRICE[\"定价与前置条件\"]",
+  "isSvg": false
+ }
+]

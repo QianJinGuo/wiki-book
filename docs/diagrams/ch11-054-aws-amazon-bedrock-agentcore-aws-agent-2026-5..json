@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AWS 一周综述——AgentCore 付款与 Agent 工具套件",
+  "code": "graph TD\n    PAY[\"AgentCore 付款功能预览\"] ==> TOOLKIT[\"Agent Toolkit for AWS<br/>AWS MCP 服务器 GA\"]\n    TOOLKIT ==> WS[\"WorkSpaces for Agents 预览<br/>EC2 M8idn R8idn 新实例\"]\n    WS ==> MORE[\"Valkey 两周年 · 十亿级向量 SQL<br/>DevOps Agent 端到端 SRE\"]",
+  "isSvg": false
+ }
+]

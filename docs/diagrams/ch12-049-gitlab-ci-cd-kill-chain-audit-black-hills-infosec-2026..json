@@ -1,0 +1,7 @@
+[
+ {
+  "title": "GitLab CI/CD Kill Chain 审计——大规模研究",
+  "code": "graph TD\n    SCALE[\"研究规模与方法\"] ==> S1[\"Stage 1 侦察\"]\n    S1 ==> S2[\"Stage 2 初始访问\"]\n    S2 ==> S3[\"Stage 3 权限提升\"]\n    S3 ==> S4[\"Stage 4 数据外泄\"]",
+  "isSvg": false
+ }
+]

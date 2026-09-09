@@ -1,0 +1,7 @@
+[
+ {
+  "title": "CLI MCP 与 CLI 加 Skill 应该如何选",
+  "code": "graph TD\n    NOTSAME[\"三个东西不是一层\"] ==> MATRIX[\"决策矩阵<br/>MCP tools tax 问题\"]\n    MATRIX ==> ARCH[\"三层推荐架构<br/>CLI 加 Skill 验证再考虑 MCP<br/>Gateway 治理 · 工具 schema 克制\"]\n    ARCH ==> ORDER[\"上线顺序<br/>Progressive Tool Discovery<br/>Skill 层方法论积累\"]",
+  "isSvg": false
+ }
+]

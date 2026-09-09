@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Agent Workflows——token 效率与优化飞轮",
+  "code": "graph TD\n    ESS[\"token 效率本质是结构问题<br/>最便宜的调用是不做的调用\"] ==> FLY[\"优化飞轮设计<br/>审计器监控 加 优化器分析<br/>加 修复建议 加 结果回流\"]\n    FLY ==> M3[\"三种优化模式<br/>消灭无用 MCP 注册<br/>CLI 替代 MCP 调用<br/>pre-agentic 数据下载\"]\n    M3 ==> METRIC[\"ET 指标: 输出 token 加 4 倍权重<br/>区分效率提升与负载变化\"]",
+  "isSvg": false
+ }
+]

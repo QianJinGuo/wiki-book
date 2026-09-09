@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Memory Prices——Stanford 存储价格交互数据集",
+  "code": "graph TD\n    COVERAGE[\"数据覆盖: 1957 到 2026 近 70 年<br/>DRAM NAND SRAM HBM<br/>最低美元每 GB 对数刻度\"] ==> CHARTS[\"四大可视化图表<br/>价格史 · DRAM 代际分解\"]\n    CHARTS ==> MORE[\"加速器成本分解 · HBM 代际\"]\n    MORE ==> METHOD[\"方法论与数据可靠性<br/>四层级来源 · CSV 可下载\"]",
+  "isSvg": false
+ }
+]

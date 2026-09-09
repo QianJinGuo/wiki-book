@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Netflix 分层通知系统——Slow-Fast RL 架构",
+  "code": "graph TD\n    OLD[\"旧系统局限: 短期奖励视野<br/>排序与节奏耦合\"] ==> SLOW[\"Slow Policy System 2 规划层<br/>周级 Pacing Plan<br/>效用含负信号与消息成本\"]\n    SLOW ==> FAST[\"Fast Policy System 1 执行层<br/>pacing 约束内选最优消息\"]\n    FAST ==> BRIDGE[\"feature store 异步桥接<br/>频率与质量解耦的工程价值\"]\n    BRIDGE ==> RES[\"稀疏负反馈处理 · 实验结果<br/>与 Kahneman 理论对应\"]",
+  "isSvg": false
+ }
+]

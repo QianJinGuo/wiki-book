@@ -1,0 +1,7 @@
+[
+ {
+  "title": "RubyGems 暂停新注册——DDoS 加恶意包供应链攻击",
+  "code": "graph TD\n    ATTACK[\"复合攻击: DDoS 耗尽响应资源<br/>为批量注册投放 500 加恶意包<br/>创造时间窗口\"] ==> RESP[\"快速响应: 封 bot 下架恶意包<br/>Fastly WAF 加注册速率限制\"]\n    RESP ==> DEF[\"防御层次: WAF 加速率限制<br/>加 包审核 · 纵深防御\"]\n    DEF ==> LES[\"开源注册中心成高价值攻击面<br/>CI/CD 管道受影响\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "GitNexus——AI 智能体专属代码知识库",
+  "code": "graph TD\n    WHY[\"瓶颈: 不是不会写而是看不全<br/>AI Agent 的代码神经系统\"] ==> CMP[\"普通搜索 通用 RAG<br/>与 GitNexus 的区别<br/>预计算关系智能是本质区别\"]\n    CMP ==> CAP[\"核心能力: MCP 工具暴露<br/>项目理解接口 · 影响评估\"]\n    CAP ==> COLD[\"图谱冷启动代价与收益不对称<br/>先问项目再改代码 · 本地优先\"]",
+  "isSvg": false
+ }
+]

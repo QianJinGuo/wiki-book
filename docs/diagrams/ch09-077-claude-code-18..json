@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Code 18 个隐藏设置",
+  "code": "graph TD\n    SETTINGS[\"settings.json 核心配置<br/>enabledPlugins 禁用非卸载<br/>deny 需 OS 层备份 · SessionStart 按分支<br/>cleanupPeriodDays 180 天\"] ==> API[\"API Console 高杠杆设置\"]\n    API ==> CACHE[\"cache_control 断点位置<br/>最大单一成本杠杆\"]\n    CACHE ==> MORE[\"inference_geo 数据驻留溢价<br/>速率限制 · 审计脚本\"]\n    MORE ==> RISK[\"成本层级思维<br/>Hook 失控风险警示\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Zapocalypse——本可劫持 Zapier 的攻击链",
+  "code": "graph TD\n    CHAIN[\"攻击链分析<br/>可劫持 Zapier 工作流的路径\"] ==> IMPACT[\"潜在影响面\"]\n    IMPACT ==> CODE[\"核心观点与代码配置示例\"]\n    CODE ==> INS[\"实践启示\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "RoadmapBench——长程 Agentic 软件开发基准",
+  "code": "graph TD\n    GAP[\"现有基准的局限<br/>真实开发是多月多语言长程任务\"] ==> DESIGN[\"RoadmapBench 设计<br/>数据集 · 任务定义 · 评估指标\"]\n    DESIGN ==> RES[\"评估结果与关键发现<br/>为什么长期开发如此困难\"]\n    RES ==> INS[\"对 Agent 架构与评估体系<br/>及产业应用的启示\"]",
+  "isSvg": false
+ }
+]

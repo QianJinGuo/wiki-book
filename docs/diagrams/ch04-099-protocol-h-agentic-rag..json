@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Protocol H——分层 Agentic RAG 企业架构",
+  "code": "graph TD\n    GAP[\"模态鸿沟: 传统 RAG 无能为力\"] ==> ARCH[\"Protocol-H 分层架构<br/>Supervisor 元认知编排器<br/>SQL Worker Schema 感知<br/>Vector Worker 语义检索\"]\n    ARCH ==> RETRY[\"Reflective Retry 自主错误恢复<br/>Schema 漂移处理\"]\n    RETRY ==> IMPL[\"LangGraph StateGraph 状态管理<br/>云中立数据库适配器 · 并行优化\"]\n    IMPL ==> BENCH[\"基准测试结果与成本管理\"]",
+  "isSvg": false
+ }
+]

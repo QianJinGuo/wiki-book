@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Gemini 3.5——frontier intelligence with action",
+  "code": "graph TD\n    BENCH[\"性能基准<br/>Agentic 与 Coding 表现<br/>速度优势\"] ==> AGENT[\"Agentic 能力与用例<br/>与 Antigravity 协同<br/>多模态与图形生成\"]\n    AGENT ==> BIZ[\"商业落地与合作伙伴\"]\n    BIZ ==> SPARK[\"Gemini Spark 个人 AI 智能体<br/>Search 增强 · 安全框架\"]",
+  "isSvg": false
+ }
+]
