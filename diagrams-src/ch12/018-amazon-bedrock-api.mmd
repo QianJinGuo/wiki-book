@@ -1,0 +1,5 @@
+%% title: Bedrock API 调用安全防护——别让模型为他人打工
+graph TD
+    CREDS["凭证管理: 信任边界的设计<br/>Bedrock 比 EC2 S3 更脆弱"] ==> CTRL["访问控制层次<br/>IAM Policy 到 SCP"]
+    CTRL ==> MON["监控本质: 异常识别难点与解法<br/>立即可落地措施"]
+    MON ==> ARCH["架构设计建议与优先级"]

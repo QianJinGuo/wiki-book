@@ -1,0 +1,5 @@
+%% title: Bedrock AgentCore 自定义代码评估器
+graph TD
+    CONCEPT["核心概念与质量维度"] ==> IMPL["四种评估器实现<br/>Schema 校验 · 价格漂移检查<br/>工作流契约 · PII 泄漏检查<br/>TRACE 与 SESSION 两级"]
+    IMPL ==> CONTRACT["OTel Spans 作统一评估契约<br/>Online 评估采样经济性"]
+    CONTRACT ==> CICD["CI/CD 集成: 门禁而非建议<br/>IAM 隔离 · 何时选代码评估器"]

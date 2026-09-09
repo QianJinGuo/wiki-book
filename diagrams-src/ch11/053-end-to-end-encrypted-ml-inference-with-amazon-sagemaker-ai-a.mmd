@@ -1,0 +1,5 @@
+%% title: SageMaker 加 FHE——端到端加密 ML 推理
+graph TD
+    DIFF["数学安全与硬件安全的根本差异"] ==> KEY["量化是 FHE 落地的关键杠杆<br/>Concrete-ML API 兼容降门槛"]
+    KEY ==> ARCH["S3 中转架构: 反映 FHE 与<br/>云服务 API 约束的深层冲突"]
+    ARCH ==> BOUND["安全边界需重估<br/>FHE 不保护模型本身<br/>端点侧明文不覆盖"]
