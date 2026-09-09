@@ -1,7 +1,0 @@
-[
- {
-  "title": "阿里云 Loop Engineering——日志扫描到预发部署全自主闭环",
-  "code": "graph TD\n    L3[\"三大主线: 日志分析自主挖 Bug<br/>加 Bug 自主修复闭环<br/>加 一条指令触发全流程\"] ==> ESSENCE[\"Loop 本质: 生成器接上验证器<br/>四代 AI 工程范式演进\"]\n    ESSENCE ==> VERIFY[\"六层独立验证体系<br/>Connectors 是 Loop 先决条件\"]",
-  "isSvg": false
- }
-]

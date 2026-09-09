@@ -1,7 +1,0 @@
-[
- {
-  "title": "SkillClaw 加 Nacos——可治理 Skill Registry 演化闭环",
-  "code": "graph TD\n    PAIN[\"产生之困: 经验停留个人 memory<br/>共享之困: Skill 缺团队级治理\"] ==> SPLIT[\"SkillClaw: 运行时接管加经验沉淀<br/>Nacos Registry: 版本 状态机 审计分发\"]\n    SPLIT ==> LOOP[\"闭环运转机制<br/>7 步 QuickStart\"]\n    LOOP ==> FUTURE[\"落地场景与未来方向\"]",
-  "isSvg": false
- }
-]

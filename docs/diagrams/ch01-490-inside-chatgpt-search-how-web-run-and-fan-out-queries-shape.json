@@ -1,7 +1,0 @@
-[
- {
-  "title": "ChatGPT Search 内幕——web.run 与扇出查询",
-  "code": "graph TD\n    FANOUT[\"web.run 查询广播<br/>同时发到多个来源\"] ==> SYNTH[\"结果综合<br/>按相关性 新近度 权威性加权\"]\n    SYNTH ==> SPLIT[\"实时 vs 训练知识区分<br/>提供引用链接可验证\"]\n    SPLIT ==> LIM[\"局限: fan-out 引延迟<br/>综合归属可能不准\"]",
-  "isSvg": false
- }
-]

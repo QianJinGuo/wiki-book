@@ -1,7 +1,7 @@
 [
  {
-  "title": "How we built an internal data analytics",
-  "code": "graph TD\n    CORE[\"How we built an internal data analytics \"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "title": "How we built an internal data analy",
+  "code": "graph TD\ngraph TD\n    A[\"核心内容\"] ==> B[\"How Qubot works\"]\n    B ==> C[\"关联\"]\n    C ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "现代浏览器内部机制",
+  "code": "graph TD\ngraph TD\n    A[\"现代浏览器内部机制：Chromium/Blink/V8 架构\"] ==> B[\"对 Agent Browser Use 的关键意义\"]\n    B ==> C[\"核心管线\"]\n    C ==> D[\"多进程架构（Chromium）\"]\n    D ==> E[\"V8 JavaScript 引擎\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

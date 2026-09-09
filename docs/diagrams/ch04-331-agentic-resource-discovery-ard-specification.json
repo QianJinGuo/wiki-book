@@ -1,7 +1,0 @@
-[
- {
-  "title": "ARD 规范——Agentic 资源发现",
-  "code": "graph TD\n    GAP[\"断层: 部署到发现的缺失一环<br/>周一发布的 Agent 周二即可用\"] ==> S4[\"四步架构<br/>Describe 清单域锚定<br/>Curate 策略筛选<br/>Search 自然语言查询<br/>Execute 直连原生协议\"]\n    S4 ==> DECIDE[\"关键决策: 不在调用路径中<br/>联邦可组合 · 协议无关\"]\n    DECIDE ==> ECO[\"与 MCP A2A 生态协同<br/>企业 AI 最后一公里\"]",
-  "isSvg": false
- }
-]

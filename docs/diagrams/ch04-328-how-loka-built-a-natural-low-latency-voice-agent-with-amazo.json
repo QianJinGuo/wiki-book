@@ -1,7 +1,0 @@
-[
- {
-  "title": "Loka 用 Nova 2 Sonic 构建低延迟语音 Agent",
-  "code": "graph TD\n    FLAW[\"传统三步流水线缺陷<br/>累积延迟 3-5 秒<br/>丢失语调犹豫等声学特征\"] ==> S2S[\"Speech-to-Speech 端到端<br/>1.39 秒首音延迟支持自然打断<br/>Big Bench Audio 87 分\"]\n    S2S ==> PROMPT[\"Prompt 工程迭代 2.7 到 3.8<br/>把 Prompt 当代码用测量驱动\"]\n    PROMPT ==> ARCHP[\"生产架构与边缘场景测试<br/>架构可扩展性\"]",
-  "isSvg": false
- }
-]

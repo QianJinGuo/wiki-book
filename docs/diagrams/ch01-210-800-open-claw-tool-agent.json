@@ -1,7 +1,0 @@
-[
- {
-  "title": "800 行 OpenClaw——Tool 消息总线与子 Agent 架构",
-  "code": "graph TD\n    TR[\"ToolRegistry 薄抽象层<br/>exclude 控制能力边界<br/>能力用排除而非授予\"] ==> MB[\"MessageBus 双模式消费<br/>出站入站分离 · 匹配运行时特征\"]\n    MB ==> CONC[\"并发模型与历史一致性<br/>从简单方案开始\"]\n    CONC ==> EXEC[\"ExecTool 三层安全防护<br/>安全靠分层不靠单一防线\"]",
-  "isSvg": false
- }
-]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "面向大型代码库的 Claude Code 团队落地经验与扩展策略（Ag",
+  "code": "graph TD\ngraph TD\n    A[\"摘要\"] ==> B[\"核心要点\"]\n    B ==> C[\"实践启示\"]\n    C ==> D[\"相关实体\"]\n    D ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

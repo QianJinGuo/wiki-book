@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Gemma 4 QAT Models: Quantization-Aw",
+  "code": "graph TD\ngraph TD\n    A[\"概述\"] ==> B[\"关键技术：移动端特殊 QAT Schema\"]\n    B ==> C[\"Q4_0 标准 vs 移动端 Schema 性能对比\"]\n    C ==> D[\"工具链支持（部署生态）\"]\n    D ==> E[\"与 Gemma 4 完整生态的关系\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

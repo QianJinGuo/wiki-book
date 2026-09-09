@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Mellum 2 (JetBrains open-weight 12B",
+  "code": "graph TD\ngraph TD\n    A[\"核心架构特征\"] ==> B[\"三个独有贡献\"]\n    B ==> C[\"与现有 code-LLM entity 的差异化\"]\n    C ==> D[\"评测覆盖\"]\n    D ==> E[\"知识库定位\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

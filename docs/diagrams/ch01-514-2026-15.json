@@ -1,7 +1,0 @@
-[
- {
-  "title": "2026 年最值得关注的 15 款开发者工具",
-  "code": "graph TD\n    AI[\"AI 开发工具<br/>Claude Code · Antigravity<br/>LM Studio · Ollama\"] --> SEL[\"三维度选型模型<br/>集成成本 · 学习曲线 · 系统位置\"]\n    RT[\"运行时与构建<br/>Bun · TanStack\"] --> SEL\n    FE[\"前端衔接<br/>Builder.io · Tailwind · Spline\"] --> SEL\n    AUTO[\"自动化工作流<br/>n8n · Lovable · Replit\"] --> SEL\n    DOC[\"文档知识<br/>Mintlify · NotebookLM · Gamma\"] --> SEL\n    SEL --> INS[\"洞察: 组合能力超越单点选型<br/>AI 从辅助编码到自主执行\"]",
-  "isSvg": false
- }
-]

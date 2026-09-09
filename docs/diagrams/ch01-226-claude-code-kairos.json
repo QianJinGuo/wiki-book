@@ -1,7 +1,0 @@
-[
- {
-  "title": "Claude Code KAIROS 范式深度解析",
-  "code": "graph TD\n    PARADIGM[\"KAIROS 范式核心内容\"] ==> MECH[\"机制解读\"]\n    MECH ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
-  "isSvg": false
- }
-]

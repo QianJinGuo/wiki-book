@@ -1,7 +1,7 @@
 [
  {
   "title": "用 Kiro 构建行业专业软件",
-  "code": "graph TD\n    CORE[\"用 Kiro 构建行业专业软件\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "code": "graph TD\ngraph TD\n    A[\"核心论点：Spec vs Vibe Coding 的分层适用\"] ==> B[\"行业专业软件的 AI 赋能路径\"]\n    B ==> C[\"算法实现验证\"]\n    C ==> D[\"相关实体\"]\n    D ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

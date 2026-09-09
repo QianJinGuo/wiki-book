@@ -1,7 +1,7 @@
 [
  {
-  "title": "Harness Engineering - 让 Coding Agent 可靠完",
-  "code": "graph TD\n    CORE[\"Harness Engineering - 让 Coding Agent 可靠完\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "title": "Harness Engineering - 让 Coding Agen",
+  "code": "graph TD\n    CORE[\"Harness Engineering - 让 Coding Agen\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
   "isSvg": false
  }
 ]

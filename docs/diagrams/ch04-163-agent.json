@@ -1,7 +1,0 @@
-[
- {
-  "title": "vivo 协同文档——Agent 透明化编辑",
-  "code": "graph TD\n    ID3[\"Agent 身份三模式<br/>本质是信任坐标系非技术选型\"] ==> CHAIN[\"透明化编辑: 事实链而非结果快照<br/>baseJson 加 stepsJson 优于快照\"]\n    CHAIN ==> REVERT[\"run 级精准撤回<br/>撤回边界必须等于差异对比边界\"]\n    REVERT ==> S3[\"记录 展示 决策三层分离心智模型\"]",
-  "isSvg": false
- }
-]

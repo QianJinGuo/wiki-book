@@ -1,7 +1,0 @@
-[
- {
-  "title": "Snowflake 加 QuickSight 的 AI BI",
-  "code": "graph TD\n    GAP[\"最后一英里语义鸿沟<br/>数字不一致 · LLM 幻觉 · 信任侵蚀<br/>根因: 业务逻辑散落应用层\"] ==> SEM[\"Semantic View 核心机制<br/>语义层架构的范式意义\"]\n    SEM ==> FLOW[\"实施流程与跨工具一致性验证\"]\n    FLOW ==> ECO[\"与 Agent 生态交叉<br/>Open Semantic Interchange 倡议\"]",
-  "isSvg": false
- }
-]

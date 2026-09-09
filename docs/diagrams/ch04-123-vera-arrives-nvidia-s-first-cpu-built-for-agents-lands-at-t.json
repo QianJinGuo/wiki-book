@@ -1,7 +1,0 @@
-[
- {
-  "title": "Vera Arrives——NVIDIA 首个为 Agent 打造的 CPU",
-  "code": "graph TD\n    SPEC[\"88 个 Olympus 核心<br/>1.2 TB/s 内存带宽<br/>性能较传统提升 50%<br/>为高并发实时 Agent 负载设计\"] ==> FIRST[\"首批交付: Anthropic OpenAI<br/>SpaceXAI Oracle · Ian Buck 送货上门\"]\n    FIRST ==> POSITION[\"Vera Rubin NVL72 主机处理器<br/>NVLink C2C 互联\"]\n    POSITION ==> MEANING[\"OCI 数十万颗部署计划<br/>架构创新的市场逻辑\"]",
-  "isSvg": false
- }
-]

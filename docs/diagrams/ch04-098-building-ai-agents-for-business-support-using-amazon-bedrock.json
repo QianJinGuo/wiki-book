@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Building AI agents for business sup",
+  "code": "graph TD\ngraph TD\n    A[\"Building AI agents for busines\"] ==> B[\"Commuting allowance agent\"]\n    B ==> C[\"Browser operation agent\"]\n    C ==> D[\"关键要点\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

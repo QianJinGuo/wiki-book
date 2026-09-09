@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Agent vs Workflow",
+  "code": "graph TD\ngraph TD\n    A[\"自主性连续谱（Level 0-5）\"] ==> B[\"核心对比\"]\n    B ==> C[\"选型九问\"]\n    C ==> D[\"三种混合架构\"]\n    D ==> E[\"场景推荐\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

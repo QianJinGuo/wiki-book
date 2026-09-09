@@ -1,7 +1,0 @@
-[
- {
-  "title": "从 30 分钟手搓 Agent 到 Harness 新后端",
-  "code": "graph TD\n    EVOLVE[\"三层架构演进: 最小循环到新后端\"] ==> CATALOG[\"运行时能力目录的核心价值<br/>统一 Trace 的架构意义\"]\n    CATALOG ==> PARADIGM[\"Agent 作为后端参与者的范式转变\"]\n    PARADIGM ==> P[\"第一版架构建议<br/>六个边界问题预判 · 自检清单\"]",
-  "isSvg": false
- }
-]

@@ -1,7 +1,0 @@
-[
- {
-  "title": "从 OpenClaw 到 OpenHuman——私人 AI Runtime 雏形",
-  "code": "graph TD\n    WHAT[\"不是助手 是运行层\"] ==> CTX[\"上下文层: 把你的世界<br/>变成 AI 能用的材料<br/>Memory Tree 六步记忆漏斗\"]\n    CTX ==> ACTION[\"行动层: 不是 prompt 是缰绳\"]\n    ACTION ==> TRUST[\"信任层: 安全不是口号<br/>是控制面\"]\n    TRUST ==> STAGE[\"当前阶段与适用场景\"]",
-  "isSvg": false
- }
-]

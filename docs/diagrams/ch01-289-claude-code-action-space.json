@@ -1,7 +1,0 @@
-[
- {
-  "title": "Claude Code 核心开发者——Action Space 设计",
-  "code": "graph TD\n    CORE[\"Action Space 才是你的产品\"] ==> LESSONS[\"Seeing like an Agent<br/>核心开发者经验\"]\n    LESSONS ==> DEEP[\"深度分析\"]\n    DEEP ==> P[\"实践启示\"]",
-  "isSvg": false
- }
-]

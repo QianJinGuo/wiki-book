@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Powering agentic AI sales strategy",
+  "code": "graph TD\ngraph TD\n    A[\"Powering agentic AI sales stra\"] ==> B[\"**The challenge: Agent prolife\"]\n    B ==> C[\"**Why Bedrock AgentCore: Built\"]\n    C ==> D[\"**What Field Advisor enables f\"]\n    D ==> E[\"**How Amazon Bedrock AgentCore\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

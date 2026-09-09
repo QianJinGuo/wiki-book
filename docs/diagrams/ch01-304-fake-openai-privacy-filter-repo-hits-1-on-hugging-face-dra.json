@@ -1,7 +1,0 @@
-[
- {
-  "title": "假 OpenAI 隐私过滤器仓库——HuggingFace 榜一 24.4 万下载",
-  "code": "graph TD\n    SPOOF[\"信任伪装: 仓库名一字之差<br/>model card 逐字复制<br/>刷量造 244K 下载 667 like 假象\"] ==> CHAIN[\"多阶段攻击链<br/>禁 SSL 校验 加 dead drop 解码<br/>加 PowerShell 提权 加 Defender 排除<br/>窃取凭证钱包 助记词反分析\"]\n    CHAIN ==> FAMILY[\"同一 C2 关联 ValleyRAT<br/>6 个姊妹仓库批量伪装热门模型\"]\n    FAMILY ==> TRUST[\"趋势排名与下载量是信任幻觉\"]",
-  "isSvg": false
- }
-]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Code 架构解析",
+  "code": "graph TD\ngraph TD\n    A[\"Overview\"] ==> B[\"核心 Insight\"]\n    B ==> C[\"子页面\"]\n    C ==> D[\"Related\"]\n    D ==> E[\"深度分析\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

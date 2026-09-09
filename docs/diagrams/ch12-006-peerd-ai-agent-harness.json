@@ -1,7 +1,7 @@
 [
  {
   "title": "peerd: 浏览器原生的 AI Agent Harness",
-  "code": "graph TD\n    CORE[\"peerd: 浏览器原生的 AI Agent Harness\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "code": "graph TD\ngraph TD\n    A[\"架构创新\"] ==> B[\"安全模型：双角色架构\"]\n    B ==> C[\"计算沙箱\"]\n    C ==> D[\"Peer-to-Peer Agent 通信（Preview）\"]\n    D ==> E[\"BYOK 模式\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

@@ -1,7 +1,0 @@
-[
- {
-  "title": "OpenAI 收购 Weights.gg——语音克隆清场",
-  "code": "graph TD\n    DEAL[\"交易本质: 不是 acqui-hire 是清场<br/>团队分散 · 产品不重启\"] ==> CATALOG[\"能力已商品化 约束力在目录<br/>移除未授权名人语音公共目录\"]\n    CATALOG ==> IPO[\"IPO 前 IP 风险管理<br/>Realtime API 合规包装\"]",
-  "isSvg": false
- }
-]

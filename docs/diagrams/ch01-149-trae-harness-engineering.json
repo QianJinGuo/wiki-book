@@ -1,0 +1,7 @@
+[
+ {
+  "title": "来自字节跳动TRAE的Harness Engineering指南",
+  "code": "graph TD\ngraph TD\n    A[\"1. 什么是 Harness Engineering？\"] ==> B[\"相关实体\"]\n    B ==> C[\"深度分析\"]\n    C ==> D[\"实践启示\"]\n    D ==> E[\"第 1 来源 — 我们实测TRAE Work的这份攻略，被官\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

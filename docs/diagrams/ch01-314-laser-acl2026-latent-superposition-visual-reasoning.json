@@ -1,7 +1,0 @@
-[
- {
-  "title": "Laser——隐式视觉推理 ACL 2026",
-  "code": "graph TD\n    CORE[\"核心问题: 视觉推理隐式表示<br/>Laser 潜在叠加机制\"] ==> DATASET[\"ScanPath 数据集\"]\n    DATASET ==> RES[\"实验结果与关键洞察\"]\n    RES ==> P[\"深度分析与实践启示\"]",
-  "isSvg": false
- }
-]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Pydantic 三件套——Rust 引擎加可观测加 Agent 约束",
+  "code": "graph TD\n    SHIFT[\"校验范式: 稳定表单到<br/>LLM 漂移 JSON 看趋势非单次\"] ==> CORE[\"pydantic-core: Rust 引擎 PyO3<br/>快 5-17 倍内存少 30-40%\"]\n    CORE ==> LF[\"Logfire: OTel span 树加 SQL 查 trace<br/>漂移检测加 agentcanvas 可视化\"]\n    LF ==> PAI[\"Pydantic AI: 类型作事前约束<br/>约束 tool 行为空间与输出格式\"]",
+  "isSvg": false
+ }
+]

@@ -1,7 +1,0 @@
-[
- {
-  "title": "Google I/O 2026——欢迎来到 Agentic Gemini 时代",
-  "code": "graph TD\n    STACK[\"AI 全栈概览<br/>TPU 8t 与 8i · 新模型家族<br/>SynthID 透明度\"] ==> AGENTS[\"Agentic 产品矩阵<br/>Gemini Spark 消费者代理<br/>信息代理 · Daily Brief · Docs Live<br/>Google Flow · 智能眼镜\"]\n    AGENTS ==> ANTIG[\"Antigravity 2.0\"]\n    ANTIG ==> TREND[\"结构性转变: AI 辅助到 AI 代理<br/>全栈垂直整合护城河<br/>速度即竞争力\"]",
-  "isSvg": false
- }
-]

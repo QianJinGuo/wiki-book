@@ -1,7 +1,0 @@
-[
- {
-  "title": "Lossy Self-Improvement——有损自我改进",
-  "code": "graph TD\n    RSI[\"RSI 三大假设的结构性脆弱<br/>提出 LSI 有损自我改进\"] ==> BRAKE[\"复杂性刹车 Complexity Brake<br/>双重来源 · AutoML 警示寓言\"]\n    BRAKE ==> FRICTION[\"三大核心摩擦<br/>Amdahl 定律的 AI 研究适配\"]\n    FRICTION ==> LSI[\"LSI 时代: 不是指数爆炸<br/>而是线性爬坡 · 重定 AGI 路径\"]",
-  "isSvg": false
- }
-]

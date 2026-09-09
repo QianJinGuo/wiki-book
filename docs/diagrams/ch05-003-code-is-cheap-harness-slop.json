@@ -1,7 +1,7 @@
 [
  {
   "title": "Code is cheap: Harness 方法论",
-  "code": "graph TD\n    CORE[\"Code is cheap: Harness 方法论\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "code": "graph TD\ngraph TD\n    A[\"核心论点：代码正在变得非常廉价\"] ==> B[\"大模型的两个底层事实\"]\n    B ==> C[\"独特概念体系\"]\n    C ==> D[\"实践方法论\"]\n    D ==> E[\"与现有 Harness 实体的关系\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

@@ -1,7 +1,0 @@
-[
- {
-  "title": "滴滴 EAGLE-3——多轮 Agent 场景训推加速",
-  "code": "graph TD\n    NEED[\"Agent 场景对推理速度要求更高<br/>P95 P99 延迟比 Mean 更重要\"] --> SD[\"投机解码两阶段流程<br/>长上下文是前置条件\"]\n    SD --> TRAIN[\"EAGLE-3 训练形态<br/>多层特征融合代价<br/>TTT 机制 · 显存 OOM 本质\"]\n    TRAIN --> USP[\"解决方案: 统一序列并行 USP<br/>分布式长序列训练核心矛盾\"]\n    USP --> EFF[\"实测: Accept Len 与 TPOT 收益<br/>Draft 模型设计为可插拔模块\"]",
-  "isSvg": false
- }
-]

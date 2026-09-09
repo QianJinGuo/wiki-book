@@ -1,7 +1,0 @@
-[
- {
-  "title": "用 Kiro 构建——AWS 上快速搭企业级 Agentic AI 平台",
-  "code": "graph TD\n    SPEC[\"Spec-Driven Development<br/>工程化价值\"] ==> L3[\"三层运行时架构职责边界\"]\n    L3 ==> DUAL[\"双执行模式<br/>消除开发生产差异\"]\n    DUAL ==> TOOLS[\"动态工具加载优化<br/>MCP Server 保文档实时\"]\n    TOOLS ==> ORG[\"Steering Files 项目知识库<br/>Agentic Memory 优于对话窗口\"]",
-  "isSvg": false
- }
-]

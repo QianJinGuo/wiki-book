@@ -1,7 +1,0 @@
-[
- {
-  "title": "Agent Runtime 7 大职责与 3 主流框架对比",
-  "code": "graph TD\n    subgraph DUTY[\"Runtime 七大职责\"]\n        R1[\"工具管理 ToolRegistry\"]\n        R2[\"上下文组装\"]\n        R3[\"状态管理 State\"]\n        R4[\"终止判断 Termination\"]\n        R5[\"风险控制 Guardrail\"]\n        R6[\"Trace 链路追踪\"]\n        R7[\"可观测性\"]\n    end\n    DUTY --> EXT[\"扩展层 Router<br/>复杂度分水岭\"]\n    EXT --> CMP[\"3 框架对比<br/>LangGraph / OpenAI Agents SDK / 自研\"]\n    CMP --> INS[\"七职责是通用契约清单<br/>Runtime 是模型可替换性的底座\"]",
-  "isSvg": false
- }
-]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Skills",
+  "code": "graph TD\ngraph TD\n    A[\"摘要\"] ==> B[\"核心要点\"]\n    B ==> C[\"深度分析\"]\n    C ==> D[\"实践启示\"]\n    D ==> E[\"关联实体\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

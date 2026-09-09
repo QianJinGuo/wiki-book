@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Mollick 实用 AI 选型指南",
+  "code": "graph TD\ngraph TD\n    A[\"三大系统选哪个\"] ==> B[\"模型分层\"]\n    B ==> C[\"Deep Research（关键功能）\"]\n    C ==> D[\"Voice Mode\"]\n    D ==> E[\"制作输出：图片/视频/代码/文档\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

@@ -1,7 +1,0 @@
-[
- {
-  "title": "新法律问题——Agentic 渗透测试",
-  "code": "graph TD\n    SHIFT[\"风险相同交付方式根本不同<br/>人类靠训练判断 Agent 靠 coded rule\"] ==> Q4[\"四个全新法律问题<br/>经目标注入 prompt<br/>授权的法律空白<br/>Agent 身份归属 · 改革动向\"]\n    Q4 ==> CASE[\"CVE-2025-12420 案例<br/>ServiceNow CVSS 9.3\"]\n    CASE ==> ERA[\"1990 法律框架 vs 2026 现实<br/>非人类身份爆炸\"]",
-  "isSvg": false
- }
-]

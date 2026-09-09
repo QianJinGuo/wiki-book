@@ -1,7 +1,0 @@
-[
- {
-  "title": "LLM Agent 脚手架如何具备自进化能力——以 Hermes 为例",
-  "code": "graph TD\n    SP[\"System Prompt 引导设计\"] --> TOOLS[\"Self-Improve 相关工具设计<br/>高频专用低频通用\"]\n    TOOLS --> MEM[\"更完善的 memory 机制<br/>三层记忆架构协同<br/>写入考虑 Prompt Injection 防护\"]\n    MEM --> SS[\"Session Search<br/>FTS5 加 LLM 摘要双层<br/>从原始对话中学习\"]\n    SS -.本质: 显式知识沉淀而非权重更新.-> SP",
-  "isSvg": false
- }
-]

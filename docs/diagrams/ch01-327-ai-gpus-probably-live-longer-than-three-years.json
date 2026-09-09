@@ -1,7 +1,0 @@
-[
- {
-  "title": "AI GPU 寿命可能超过三年",
-  "code": "graph TD\n    ORIGIN[\"三年寿命说法溯源: 匿名推文<br/>到媒体放大 · Tegus 激励结构质疑\"] ==> EVID[\"反向证据: TPU 8 年 100% 利用<br/>AWS 从未退役 A100 · 矿卡余热<br/>学术集群 6 年故障率不到 20%\"]\n    EVID ==> DISTINCTION[\"物理寿命与经济寿命之辨<br/>修辞批判与结论\"]",
-  "isSvg": false
- }
-]

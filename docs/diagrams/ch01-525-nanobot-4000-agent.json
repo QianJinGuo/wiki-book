@@ -1,0 +1,7 @@
+[
+ {
+  "title": "nanobot——4000 行极简 Agent 框架",
+  "code": "graph TD\n    BUS[\"MessageBus 异步队列<br/>13 个聊天渠道\"] ==> LOOP[\"AgentLoop 控制面集中化<br/>ReAct 循环仅 20 行\"]\n    LOOP ==> TR[\"ToolRegistry: exec fs web<br/>加 spawn mcp cron\"]\n    LOOP ==> SK[\"Skill 系统: Markdown 即配置<br/>渐进式加载\"]\n    LOOP ==> MEM[\"grep beats RAG<br/>错误恢复委托给 LLM\"]",
+  "isSvg": false
+ }
+]

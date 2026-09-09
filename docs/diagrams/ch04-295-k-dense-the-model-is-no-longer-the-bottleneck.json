@@ -1,0 +1,7 @@
+[
+ {
+  "title": "K-Dense — The Model Is No Longer th",
+  "code": "graph TD\ngraph TD\n    A[\"TL;DR\"] ==> B[\"四个 case 的核心数据\"]\n    B ==> C[\"核心论点：Context Quality > Model C\"]\n    C ==> D[\"与现有实体的关系\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

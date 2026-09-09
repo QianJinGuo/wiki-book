@@ -1,7 +1,0 @@
-[
- {
-  "title": "Harness Pilot——项目规范预验证与 Agent 协作框架",
-  "code": "graph TD\n    PROBLEM[\"核心问题: AI Agent 的隐性规则盲区\"] ==> SHIFT[\"范式转变: 从教到验<br/>四条设计原则\"]\n    SHIFT ==> IMPL[\"两大 Skill 加五大关键机制<br/>插件架构\"]\n    IMPL ==> RESULT[\"业界共识与实测效果\"]",
-  "isSvg": false
- }
-]

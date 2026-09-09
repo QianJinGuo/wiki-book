@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Code 架构深度解析",
+  "code": "graph TD\ngraph TD\n    A[\"文章核心\"] ==> B[\"一、工具并发机制\"]\n    B ==> C[\"二、延迟加载：shouldDefer + ToolSearc\"]\n    C ==> D[\"三、Prefix Cache 优化：deferred_too\"]\n    D ==> E[\"四、工具结果大小控制\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

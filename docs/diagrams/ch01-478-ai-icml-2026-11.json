@@ -1,0 +1,7 @@
+[
+ {
+  "title": "小米AI — ICML 2026 论文矩阵（11篇）",
+  "code": "graph TD\ngraph TD\n    A[\"概述\"] ==> B[\"GUI Agent 全栈\"]\n    B ==> C[\"多模态理解\"]\n    C ==> D[\"训练底座\"]\n    D ==> E[\"技术演进判断\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

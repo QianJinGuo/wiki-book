@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Code Agent Teams 实战",
+  "code": "graph TD\ngraph TD\n    A[\"核心问题\"] ==> B[\"三种协作结构\"]\n    B ==> C[\"什么时候该用 Agent Teams\"]\n    C ==> D[\"Agent Teams 多出来的是「协作状态」\"]\n    D ==> E[\"并行之前，先问四个工程问题\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

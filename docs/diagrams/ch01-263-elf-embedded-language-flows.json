@@ -1,0 +1,7 @@
+[
+ {
+  "title": "ELF: Embedded Language Flows (何恺明)",
+  "code": "graph TD\ngraph TD\n    A[\"概要\"] ==> B[\"核心创新\"]\n    B ==> C[\"关键性能数据\"]\n    C ==> D[\"技术背景\"]\n    D ==> E[\"实验覆盖\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

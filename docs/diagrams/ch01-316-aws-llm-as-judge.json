@@ -1,7 +1,0 @@
-[
- {
-  "title": "AWS 强化微调——LLM-as-Judge 训练范式",
-  "code": "graph TD\n    RFT[\"Reinforcement fine-tuning<br/>with LLM-as-a-judge\"] ==> WHY[\"相比通用 RFT 的优势\"]\n    WHY ==> INS[\"深度分析\"]\n    WHY ==> P[\"实践启示\"]",
-  "isSvg": false
- }
-]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Cohere North Mini Code -30B MoE Age",
+  "code": "graph TD\ngraph TD\n    A[\"Cohere North Mini Code —30B Mo\"] ==> B[\"Agentic 工作流能力\"]\n    B ==> C[\"三件独特贡献（与同 size 开源 coding 模型差异）\"]\n    C ==> D[\"对标对比\"]\n    D ==> E[\"深度分析\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

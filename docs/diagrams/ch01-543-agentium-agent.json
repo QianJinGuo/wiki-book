@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Agentium — 从零实现 Agent 系统的开源框架",
+  "code": "graph TD\ngraph TD\n    A[\"核心理念\"] ==> B[\"三张架构读图尺子\"]\n    B ==> C[\"分层架构\"]\n    C ==> D[\"多平面设计\"]\n    D ==> E[\"关键模块\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

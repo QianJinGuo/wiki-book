@@ -1,7 +1,7 @@
 [
  {
-  "title": "Amazon Bedrock AgentCore: 知识扩展与持续学习新能力",
-  "code": "graph TD\n    CORE[\"Amazon Bedrock AgentCore: 知识扩展与持续学习新能力\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "title": "Amazon Bedrock AgentCore: 知识扩展与持续学习",
+  "code": "graph TD\ngraph TD\n    A[\"三大知识层架构\"] ==> B[\"三个独有贡献（不应合并到现有 entity）\"]\n    B ==> C[\"持续学习与生产可观测性\"]\n    C ==> D[\"与现有 [AgentCore Harness](310-ag\"]\n    D ==> E[\"关键引用\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

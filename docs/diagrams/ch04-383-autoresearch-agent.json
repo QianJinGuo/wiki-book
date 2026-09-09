@@ -1,7 +1,0 @@
-[
- {
-  "title": "AutoResearch 分类法——四种 Agent 循环设计与四维分析框架",
-  "code": "graph TD\n    T[\"基模固定 · 循环设计是效率竞争本质\"] --> C1[\"循环 1: 线性 Keep-or-Discard<br/>Karpathy 最简无并行\"]\n    T --> C2[\"循环 2: 树搜索<br/>AIDE · AI Scientist v2<br/>UCB 平衡利用探索\"]\n    T --> C3[\"循环 3: 遗传进化池<br/>FunSearch · GEPA<br/>文本反馈驱动突变\"]\n    T --> C4[\"循环 4: 异步多 Agent 进化<br/>CORAL 文件系统共享记忆\"]\n    C1 --> FW[\"四维分析框架<br/>搜索拓扑 · 反馈信号<br/>记忆架构 · 决策主体\"]\n    C2 --> FW\n    C3 --> FW\n    C4 --> FW",
-  "isSvg": false
- }
-]

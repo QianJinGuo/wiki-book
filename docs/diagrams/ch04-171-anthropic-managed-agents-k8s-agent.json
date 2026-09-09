@@ -1,7 +1,0 @@
-[
- {
-  "title": "Anthropic Managed Agents——用 K8s 思路虚拟化 Agent",
-  "code": "graph TD\n    CATTLE[\"从宠物到牛群<br/>Agent 架构范式转移\"] ==> BRAINHANDS[\"脑手分离的工程哲学<br/>Session 外部化对持久化的启示\"]\n    BRAINHANDS ==> INDUSTRY[\"对行业的影响\"]\n    INDUSTRY ==> P[\"脑手分离应用 · Cattle 工程实践<br/>安全实现 · 避免误区\"]",
-  "isSvg": false
- }
-]

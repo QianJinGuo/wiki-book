@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Kimi Work——通用 Agent 从云端迁移到本地",
+  "code": "graph TD\n    EVENTS[\"三个关键事件: Codex 500 万周活<br/>加 Anthropic 布局 加 Kimi Work Beta\"] ==> FEATURES[\"5 大技术特性<br/>Harness 搬到用户电脑<br/>加 Agent 集群 300 分身并行<br/>加 WebBridge 加 金融数据源<br/>加 全部允许模式\"]\n    FEATURES ==> PARADIGM[\"Vibe Coding 到 Vibe Working<br/>模型公司天然优势\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "一个 AI 还是不够的",
+  "code": "graph TD\ngraph TD\n    A[\"背景\"] ==> B[\"单 Agent 的四个痛点\"]\n    B ==> C[\"Agent Team 的核心认知\"]\n    C ==> D[\"三个关键架构差异\"]\n    D ==> E[\"Owner-Worker-Verifier 三角色\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

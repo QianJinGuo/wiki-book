@@ -1,0 +1,7 @@
+[
+ {
+  "title": "We let four AIs run radio stations.",
+  "code": "graph TD\ngraph TD\n    A[\"核心要点\"] ==> B[\"相关实体\"]\n    B ==> C[\"实验背景\"]\n    C ==> D[\"四个电台的 AI 模型配置\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

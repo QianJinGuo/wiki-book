@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Anthropic Claude Cowork 知识工作 Agent",
+  "code": "graph TD\ngraph TD\n    A[\"Anthropic Claude Cowork 知识工作 A\"] ==> B[\"核心定位：任务边界 > 模型能力\"]\n    B ==> C[\"相关实体\"]\n    C ==> D[\"3 大入口对比\"]\n    D ==> E[\"5 大任务筛选信号\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

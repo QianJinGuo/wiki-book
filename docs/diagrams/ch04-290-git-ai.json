@@ -1,7 +1,0 @@
-[
- {
-  "title": "Git 仓库加 AI 编码助手做项目管理",
-  "code": "graph TD\n    P[\"核心范式\"] --> D5[\"五大设计决策<br/>Git 唯一真源 · 降低输入门槛<br/>静态 HTML Dashboard<br/>定性定量分离 · SQL 即度量\"]\n    D5 --> T[\"数据单测机制\"]\n    T --> SK[\"Skill 承载隐性知识编码\"]\n    SK --> HEN[\"横切分析才是真正杠杆点\"]",
-  "isSvg": false
- }
-]

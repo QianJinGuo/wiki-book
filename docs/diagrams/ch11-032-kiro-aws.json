@@ -1,7 +1,7 @@
 [
  {
-  "title": "使用 Kiro 规范驱动开发加速数据质量建设",
-  "code": "graph TD\n    CORE[\"使用 Kiro 规范驱动开发加速数据质量建设\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "title": "使用 Kiro 规范驱动开发加速数据质量建设 | 亚马逊AWS官方博客",
+  "code": "graph TD\ngraph TD\n    A[\"概述\"] ==> B[\"核心技术\"]\n    B ==> C[\"来源\"]\n    C ==> D[\"深度分析\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

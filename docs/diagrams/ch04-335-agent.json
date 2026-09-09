@@ -1,0 +1,7 @@
+[
+ {
+  "title": "做Agent评测的几个反直觉感悟",
+  "code": "graph TD\ngraph TD\n    A[\"摘要\"] ==> B[\"核心见解\"]\n    B ==> C[\"实践启示\"]\n    C ==> D[\"来源\"]\n    D ==> E[\"关联\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

@@ -1,7 +1,0 @@
-[
- {
-  "title": "Is Software Losing Its Head——a16z",
-  "code": "graph TD\n    HEADLESS[\"Headless 范式兴衰<br/>LLM 集成改变解耦原则\"] ==> LATENCY[\"延迟新挑战<br/>成本模型范式转移\"]\n    LATENCY ==> SHIFT[\"从解耦到选择性耦合\"]\n    SHIFT ==> P[\"对架构师与产品团队的建议\"]",
-  "isSvg": false
- }
-]

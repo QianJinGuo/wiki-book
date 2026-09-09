@@ -1,7 +1,0 @@
-[
- {
-  "title": "So You Want to Sell Inference——推理售卖三种策略",
-  "code": "graph TD\n    P3[\"三种定价策略<br/>Cost-plus Markup 最脆弱<br/>Value-based 毛利与成本解耦<br/>Cost Optimization 蒸馏可防御\"] ==> BYOK[\"Bring Your Own Key<br/>让 Cost-plus 崩溃\"]\n    BYOK ==> BOARD[\"董事会应该问的问题<br/>推理市场结构性变化\"]",
-  "isSvg": false
- }
-]

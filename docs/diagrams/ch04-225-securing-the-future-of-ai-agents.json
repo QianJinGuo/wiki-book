@@ -1,7 +1,0 @@
-[
- {
-  "title": "Securing the Future of AI Agents——DeepMind",
-  "code": "graph TD\n    L3[\"三层防御: 基础层沙盒端点安全<br/>加 Alignment 层训练内在安全<br/>加 Control 层视 Agent 为潜在 misaligned\"]\n    L3 ==> MODEL[\"威胁建模: 借鉴 MITRE ATT&CK<br/>视 Agent 为内部威胁\"]\n    MODEL ==> LEVELS[\"双维度安全等级<br/>Detection D1-D4 加 Response R1-R3<br/>百万轨迹: 多数非对抗 而是过度急切\"]",
-  "isSvg": false
- }
-]

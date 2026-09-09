@@ -1,7 +1,0 @@
-[
- {
-  "title": "Vera Arrives——NVIDIA 首个为 Agent 打造的 CPU",
-  "code": "graph TD\n    DELIVERY[\"交付即信号: 发布到客户仅数周<br/>Ian Buck 亲手送达四家头部\"] ==> REDEF[\"Agent 负载被重定义为 CPU 问题<br/>每次 tool call 编排检索都是 CPU 工作<br/>88 Olympus 核心 1.2TB s 带宽\"]\n    REDEF ==> OCI[\"OCI 数十万颗部署<br/>首家超规模部署 Vera 的云厂商\"]\n    OCI ==> CODESIGN[\"Vera Rubin NVL72 主机 CPU<br/>extreme codesign 拼图关键一环\"]",
-  "isSvg": false
- }
-]

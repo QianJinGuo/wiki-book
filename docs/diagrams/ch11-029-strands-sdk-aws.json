@@ -1,7 +1,7 @@
 [
  {
-  "title": "基于Strands SDK 构建的企业智能问数解决方案实践",
-  "code": "graph TD\n    CORE[\"基于Strands SDK 构建的企业智能问数解决方案实践\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "title": "基于Strands SDK 构建的企业智能问数解决方案实践 | 亚马逊",
+  "code": "graph TD\ngraph TD\n    A[\"概述\"] ==> B[\"核心技术\"]\n    B ==> C[\"来源\"]\n    C ==> D[\"相关实体\"]\n    D ==> E[\"深度分析\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

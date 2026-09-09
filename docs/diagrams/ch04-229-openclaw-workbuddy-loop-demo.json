@@ -1,7 +1,0 @@
-[
- {
-  "title": "OpenClaw WorkBuddy Loop——谁火谁有用谁 Demo",
-  "code": "graph TD\n    TIERS[\"四梯队: 真火真有用到概念火<br/>四象限: 容错空间乘行动复杂度\"] ==> PRECOND[\"成功三前提: 环境数字化<br/>即时反馈 高 ROI 缺一不可\"]\n    PRECOND ==> PATH[\"五级路径: 个人工具到团队<br/>到流程 到数字员工 到原生组织\"]",
-  "isSvg": false
- }
-]

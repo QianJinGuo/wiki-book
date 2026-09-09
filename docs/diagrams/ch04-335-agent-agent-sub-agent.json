@@ -1,7 +1,0 @@
-[
- {
-  "title": "Agent 如何管理其他 Agent——四种 Sub Agent 模式",
-  "code": "graph TD\n    M1[\"模式 1 内联工具<br/>call_agent 单次任务<br/>默认起点 纯函数式\"] ==> AXIS[\"区分轴: 控制粒度而非能力升级<br/>每次升级换自主性失可控性\"]\n    M2[\"模式 2 Fan-Out<br/>spawn 加 wait 启动等待分离<br/>真正的并发范式\"] ==> AXIS\n    M3[\"模式 3 Agent Pool<br/>跨轮次持久状态\"] ==> AXIS\n    M4[\"模式 4 Teams<br/>分布式经典问题回归<br/>死锁 冲突 关闭协调\"] ==> AXIS\n    AXIS ==> COLLECT[\"结果收集方式是最易忽视的<br/>语义差异\"]",
-  "isSvg": false
- }
-]

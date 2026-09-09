@@ -1,0 +1,7 @@
+[
+ {
+  "title": "上下文漂移与工具调用幻觉",
+  "code": "graph TD\ngraph TD\n    A[\"概述\"] ==> B[\"一、上下文漂移（Context Drift）\"]\n    B ==> C[\"二、工具调用幻觉（Tool Hallucination）\"]\n    C ==> D[\"三、两大问题的共同框架\"]\n    D ==> E[\"四、面试应答框架\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

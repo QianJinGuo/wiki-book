@@ -1,7 +1,0 @@
-[
- {
-  "title": "An agent capability library",
-  "code": "graph TD\n    CORE[\"An agent capability library\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
-  "isSvg": false
- }
-]

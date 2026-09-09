@@ -1,7 +1,0 @@
-[
- {
-  "title": "How an image could compromise your Mac",
-  "code": "graph TD\n    RESEARCH[\"ExifTool 漏洞深度研究<br/>攻击向量和 CVE 细节\"] ==> REMED[\"修复建议\"]\n    REMED ==> INS[\"深度分析\"]\n    REMED ==> P[\"实践启示\"]",
-  "isSvg": false
- }
-]

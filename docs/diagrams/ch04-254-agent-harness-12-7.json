@@ -1,0 +1,7 @@
+[
+ {
+  "title": "一篇看懂 Agent Harness 的结构！ — 12组件+7决策完",
+  "code": "graph TD\ngraph TD\n    A[\"相关实体\"] ==> B[\"核心主张\"]\n    B ==> C[\"三层工程\"]\n    C ==> D[\"生产级 Harness 12 组件\"]\n    D ==> E[\"7 个关键决策\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

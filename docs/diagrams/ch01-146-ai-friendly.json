@@ -1,7 +1,0 @@
-[
- {
-  "title": "后端架构 AI Friendly 的标准与路径",
-  "code": "graph TD\n    CORE[\"后端架构 AI Friendly 的标准与路径\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
-  "isSvg": false
- }
-]

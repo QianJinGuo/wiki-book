@@ -1,7 +1,0 @@
-[
- {
-  "title": "LangChain × Fireworks 100x Cheaper Trace",
-  "code": "graph TD\n    CORE[\"LangChain × Fireworks 100x Cheaper Trace\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
-  "isSvg": false
- }
-]

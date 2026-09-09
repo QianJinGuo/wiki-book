@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Personal AI 工作台——Claude 18 动作框架",
+  "code": "graph TD\n    L6[\"六层工作台: 工作区边界<br/>加 身份加行为契约 加 任务入口<br/>加 输出标准 加 上下文治理 加 反馈回路\"] ==> A18[\"18 个动作映射到六层\"]\n    A18 ==> PRIN[\"Project 是边界非万能记忆<br/>加 Custom Instructions 是行为契约<br/>加 流程卡片是过程资产\"]\n    PRIN ==> MINV[\"最小可行版本<br/>加 Personal Harness 最小化实现\"]",
+  "isSvg": false
+ }
+]

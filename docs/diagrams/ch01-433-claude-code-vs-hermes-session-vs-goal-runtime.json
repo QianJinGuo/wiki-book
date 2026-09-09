@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Code vs Hermes — Session 工程师",
+  "code": "graph TD\ngraph TD\n    A[\"6 维对比表 (核心)\"] ==> B[\"Claude Code: 工程师, 不是员工\"]\n    B ==> C[\"Hermes: Runtime, 不是助手\"]\n    C ==> D[\"容易踩的坑: 错配思维\"]\n    D ==> E[\"土问题 选型决策 (可立即应用)\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

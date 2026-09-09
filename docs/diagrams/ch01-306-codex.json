@@ -1,7 +1,0 @@
-[
- {
-  "title": "Codex 自主赚钱——全自动商业闭环实验",
-  "code": "graph TD\n    EXPERIMENT[\"Codex 自主赚钱<br/>全自动商业闭环实验\"] ==> MECH[\"实验机制\"]\n    MECH ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
-  "isSvg": false
- }
-]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "NVIDIA XR AI",
+  "code": "graph TD\ngraph TD\n    A[\"NVIDIA XR AI：AR/XR 设备的 AI Agen\"] ==> B[\"核心问题：XR 硬件就绪但 AI 集成缺失\"]\n    B ==> C[\"架构设计\"]\n    C ==> D[\"技术栈\"]\n    D ==> E[\"应用场景\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

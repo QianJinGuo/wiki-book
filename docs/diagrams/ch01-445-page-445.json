@@ -1,7 +1,0 @@
-[
- {
-  "title": "条条电路通罗马——可解释性唯一机制可能不存在",
-  "code": "graph TD\n    H[\"背景: 功能各向异性假说\"] --> OASR[\"OASR 方法<br/>重叠感知 Sheaf 排斥\"]\n    OASR --> F[\"关键发现<br/>IOI 两条 sheaf 交并比仅 4.1%<br/>但都 100% 准确率<br/>三条边核心可拆解绕过\"]\n    F --> CROSS[\"跨 ACDC EAP EP 四方法复现<br/>非某一方法的偏差\"]\n    CROSS --> HYP[\"分布式稠密电路假说<br/>非唯一性是叠加的必然结果\"]",
-  "isSvg": false
- }
-]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Boris Cherny 新访谈",
+  "code": "graph TD\ngraph TD\n    A[\"Boris Cherny 新访谈：IDE → Agent 控\"] ==> B[\"核心观点\"]\n    B ==> C[\"产品悬置：能力溢出后产品形态才成立\"]\n    C ==> D[\"Claude Code 的成长路径\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

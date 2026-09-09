@@ -1,7 +1,0 @@
-[
- {
-  "title": "企微——补齐 AI 在公司的最后一公里",
-  "code": "graph TD\n    BLACKHOLE[\"Context 黑洞<br/>40% 决策无数字痕迹\"] ==> FAIL[\"过去解法: 个体设备接组织数据<br/>注定零散\"]\n    FAIL ==> BREAK[\"企微: 记录面聊加智能表格<br/>管理学视角下的 context\"]",
-  "isSvg": false
- }
-]

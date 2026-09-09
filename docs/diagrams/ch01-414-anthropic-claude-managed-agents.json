@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Anthropic Claude Managed Agents 平台正",
+  "code": "graph TD\ngraph TD\n    A[\"概述\"] ==> B[\"四大新功能\"]\n    B ==> C[\"战略判断\"]\n    C ==> D[\"技术细节\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

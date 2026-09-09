@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Open Notebook",
+  "code": "graph TD\ngraph TD\n    A[\"核心差异\"] ==> B[\"技术架构\"]\n    B ==> C[\"功能矩阵\"]\n    C ==> D[\"已知局限\"]\n    D ==> E[\"与 NotebookLM 对比\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

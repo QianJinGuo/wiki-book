@@ -1,7 +1,0 @@
-[
- {
-  "title": "Perplexity Computer 实证研究——AI Agent 重塑知识工作",
-  "code": "graph TD\n    A[\"Autonomy<br/>自主时长与质量<br/>Pause-for-user 检查点\"] --> R[\"三维分析\"]\n    E[\"Efficiency<br/>87% 时间 94% 成本节约<br/>三种独立估计法\"] --> R\n    S[\"Scope<br/>跨职业横向扩张<br/>认知复杂度纵向扩张\"] --> R\n    R --> U[\"用户角色范式转换<br/>验证技能比生成技能更重要\"]",
-  "isSvg": false
- }
-]

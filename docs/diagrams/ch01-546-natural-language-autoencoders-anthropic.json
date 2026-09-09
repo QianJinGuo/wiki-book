@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Natural Language Autoencoders — Ant",
+  "code": "graph TD\ngraph TD\n    A[\"核心定位\"] ==> B[\"核心技术架构：AV + AR 双模块闭环（NLA 方法）\"]\n    B ==> C[\"核心指标\"]\n    C ==> D[\"安全应用一：可解释性 — 检测未口头化的评估意识\"]\n    D ==> E[\"安全应用二：模型审计（Auditing Task）\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

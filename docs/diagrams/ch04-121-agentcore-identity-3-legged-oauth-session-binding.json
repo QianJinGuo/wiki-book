@@ -1,7 +1,0 @@
-[
- {
-  "title": "AgentCore Identity——3-legged OAuth 加 Session Binding",
-  "code": "graph TD\n    WHY[\"为什么 AI Agent 需要特殊身份管理\"] ==> OAUTH[\"OAuth 2.0 Authorization Code<br/>Grant 的安全优势\"]\n    OAUTH ==> BINDING[\"Session Binding 防两类攻击<br/>审计价值\"]\n    BINDING ==> VAULT[\"Token Vault 自动刷新<br/>ECS 集成 · Entra ID 兼容挑战\"]",
-  "isSvg": false
- }
-]

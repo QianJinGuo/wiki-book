@@ -1,0 +1,7 @@
+[
+ {
+  "title": "LFM2.5-Encoders: Fast Long-Context",
+  "code": "graph TD\ngraph TD\n    A[\"架构要点\"] ==> B[\"性能亮点\"]\n    B ==> C[\"应用场景\"]\n    C ==> D[\"与同系列产品的关系\"]\n    D ==> E[\"相关概念\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

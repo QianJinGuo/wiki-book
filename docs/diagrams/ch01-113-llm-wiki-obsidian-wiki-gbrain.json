@@ -1,7 +1,0 @@
-[
- {
-  "title": "LLM Wiki / Obsidian Wiki / GBrain 自组织与自进",
-  "code": "graph TD\n    CORE[\"LLM Wiki / Obsidian Wiki / GBrain 自组织与自进\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
-  "isSvg": false
- }
-]

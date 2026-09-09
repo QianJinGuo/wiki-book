@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Streaming benchmark and recommendat",
+  "code": "graph TD\ngraph TD\n    A[\"Streaming benchmark and recomm\"] ==> B[\"Solution overview\"]\n    B ==> C[\"Benefits of this implementatio\"]\n    C ==> D[\"关联\"]\n    D ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

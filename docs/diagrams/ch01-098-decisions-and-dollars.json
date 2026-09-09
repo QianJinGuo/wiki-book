@@ -1,7 +1,7 @@
 [
  {
   "title": "Decisions and Dollars",
-  "code": "graph TD\n    CORE[\"Decisions and Dollars\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "code": "graph TD\ngraph TD\n    A[\"核心论点\"] ==> B[\"Context -> Harness -> Judgment\"]\n    B ==> C[\"Cursor $60B 收购案的数据护城河逻辑\"]\n    C ==> D[\"纠正即数据（Corrections as Scorecard\"]\n    D ==> E[\"垂直 AI 公司的实践\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

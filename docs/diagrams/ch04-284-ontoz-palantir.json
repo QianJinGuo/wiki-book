@@ -1,7 +1,0 @@
-[
- {
-  "title": "百型智能 OntoZ——企业本体论加群智能体协同",
-  "code": "graph TD\n    ONTO[\"核心: 企业本体 Enterprise Ontology\"] --> SWARM[\"群智能体生态\"]\n    SWARM --> CYB[\"二阶控制论架构<br/>任务规划器 · 图神经网络<br/>产业世界模型\"]\n    CYB --> COG[\"认知基础设施<br/>持续自进化本体 · 强结果信号\"]\n    COG --> ECO[\"长期: Agent 自主经济 A2A<br/>ERP 到 BI 到本体三阶段\"]",
-  "isSvg": false
- }
-]

@@ -1,7 +1,0 @@
-[
- {
-  "title": "Bedrock AgentCore 构建 BI 智能体",
-  "code": "graph TD\n    A3[\"三大 Agent<br/>Deal Analyzer 每日管道报告<br/>Sales Coach 实时验证<br/>Lead Insight 自动潜客研究\"] ==> RAG[\"RAG 在业务规则解释中<br/>的关键作用\"]\n    RAG ==> PHILO[\"三大 Agent 设计哲学<br/>数据质量的防晚治\"]\n    PHILO ==> P[\"切入点选择 · 选型 · 可观测 · 成本\"]",
-  "isSvg": false
- }
-]

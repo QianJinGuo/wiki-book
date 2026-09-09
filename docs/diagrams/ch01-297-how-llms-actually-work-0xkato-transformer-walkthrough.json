@@ -1,7 +1,0 @@
-[
- {
-  "title": "How LLMs Actually Work——Transformer 走读",
-  "code": "graph TD\n    N9[\"九个机制环节: Tokenization 到 Embeddings<br/>到位置编码 到 Attention 多头 到 FFN<br/>到残差流 到 下一 token 预测<br/>加 架构与训练权重之辨\"] ==> VALUE[\"实践价值: Tokenizer 可视化检查提示词\"]\n    VALUE ==> TEMP[\"按任务设温度<br/>attention 热力图调试输出\"]\n    VALUE ==> P[\"机制知识纳入团队培训<br/>对非技术用户隐藏机制保留影响\"]",
-  "isSvg": false
- }
-]

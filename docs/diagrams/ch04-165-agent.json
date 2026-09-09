@@ -1,0 +1,7 @@
+[
+ {
+  "title": "协同文档下的 Agent 透明化编辑",
+  "code": "graph TD\ngraph TD\n    A[\"Agent 身份三模式\"] ==> B[\"透明化编辑：事实链而非结果快照\"]\n    B ==> C[\"run 级精准撤回\"]\n    C ==> D[\"实践启示\"]\n    D ==> E[\"相关实体\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

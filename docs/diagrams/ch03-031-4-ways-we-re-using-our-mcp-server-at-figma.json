@@ -1,7 +1,7 @@
 [
  {
-  "title": "Figma 内部 MCP Server 四种用法",
-  "code": "graph TD\n    OVERVIEW[\"Figma 内部 MCP Server 用法概览\"] ==> WAYS[\"四种用法详解\"]\n    WAYS ==> INS[\"深度分析\"]\n    WAYS ==> P[\"实践启示\"]",
+  "title": "Figma MCP Server 四种内部用法",
+  "code": "graph TD\n    OVERVIEW[\"Figma 内部 MCP Server 用法概览\"] ==> W1[\"方式 1: Slides 创建与刷新\"]\n    W1 ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
   "isSvg": false
  }
 ]

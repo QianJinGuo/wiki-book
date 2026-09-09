@@ -1,7 +1,0 @@
-[
- {
-  "title": "卡帕西 LLM Wiki——用 Claude 加 Obsidian 造第二大脑",
-  "code": "graph TD\n    K3[\"Karpathy 三判断\"] ==> CTX[\"Context Window 工程分析<br/>Markdown Token 经济学<br/>Markdown 是 LLM 母语\"]\n    CTX => OBS[\"Obsidian 不可替代性<br/>LLM as OS 协议栈对位\"]\n    OBS => WHY[\"为什么第二大脑比喻成立<br/>RAG 在此场景是次优解\"]\n    WHY => PRACT[\"低门槛方案: WorkBuddy 加 Obsidian<br/>采集双通道 · 编译查询治理三件套<br/>企业场景三大局限\"]",
-  "isSvg": false
- }
-]

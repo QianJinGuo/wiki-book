@@ -1,7 +1,7 @@
 [
  {
-  "title": "Figma 设计系统 10 个常见组件架构错误",
-  "code": "graph TD\n    MISTAKES[\"十大常见组件架构错误<br/>及解决方案\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "title": "10 Common Component Architecture Mi",
+  "code": "graph TD\ngraph TD\n    A[\"核心要点\"] ==> B[\"相关实体\"]\n    B ==> C[\"深度分析\"]\n    C ==> D[\"实践启示\"]\n    D ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

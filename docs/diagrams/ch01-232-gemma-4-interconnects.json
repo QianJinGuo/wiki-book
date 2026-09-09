@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Gemma 4 与开源模型成功标准",
+  "code": "graph TD\ngraph TD\n    A[\"1. 核心论点：开源模型不是benchmark 一锤定音\"] ==> B[\"2. 5B/8B/26B/31B 四尺寸 + Apache \"]\n    B ==> C[\"3. 工具链成熟度：Qwen 3.5 / Nemotron \"]\n    C ==> D[\"4. 微调可行性：被忽视的暗物质问题\"]\n    D ==> E[\"5. 美国开源生态的复兴信号\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

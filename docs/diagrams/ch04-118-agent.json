@@ -1,7 +1,0 @@
-[
- {
-  "title": "他的 Agent 昨晚替他把公司运转了一遍",
-  "code": "graph TD\n    MAP[\"先画地图: 按自主程度分级\"] ==> MEM[\"记忆装进代码库<br/>Context 是操作记忆\"]\n    MEM ==> LIGHT[\"选最轻的: 混合工具栈\"]\n    LIGHT ==> RIGHT[\"Skills 加 Evals 是引擎<br/>创始人先上 · 每周进化内外环\"]\n    RIGHT ==> MOAT[\"护城河是什么\"]",
-  "isSvg": false
- }
-]

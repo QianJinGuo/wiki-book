@@ -1,0 +1,7 @@
+[
+ {
+  "title": "skill-creator 源码——触发率测评与三 Agent 评审",
+  "code": "graph TD\n    E1[\"触发率测评 run_eval<br/>加 run_single_query 核心函数\"] ==> E2[\"description 自动优化循环<br/>加 60/40 train test 防过拟合\"]\n    E2 ==> E3[\"统计聚合加 Bessel 修正<br/>加 跨 config 对比\"]\n    E3 ==> E4[\"三 Agent 评审: Grader 加 Comparator 加 Analyzer\"]",
+  "isSvg": false
+ }
+]

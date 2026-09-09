@@ -1,7 +1,0 @@
-[
- {
-  "title": "给 Hermes 装上显微镜——Agent 执行可观测",
-  "code": "graph TD\n    Q4[\"四个核心问题\"] --> OT[\"OpenTelemetry 链路追踪<br/>GenAI 语义约定\"]\n    OT --> T1[\"ReAct 结构化 Trace<br/>chat span 模型调用\"]\n    OT --> T2[\"execute_tool span 工具调用<br/>TTFT 单独记录\"]\n    T1 --> SUM[\"Agent 级汇总\"]\n    T2 --> AUDIT[\"高危行为审计<br/>安全审计滞后性风险\"]\n    SUM --> DEP[\"接入部署与验证\"]\n    AUDIT --> DEP",
-  "isSvg": false
- }
-]

@@ -1,7 +1,7 @@
 [
  {
-  "title": "How Semgrep Cut Taint Analysis Time by 7",
-  "code": "graph TD\n    CORE[\"How Semgrep Cut Taint Analysis Time by 7\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "title": "How Semgrep Cut Taint Analysis Time",
+  "code": "graph TD\n    CORE[\"How Semgrep Cut Taint Analysis Time\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
   "isSvg": false
  }
 ]

@@ -1,7 +1,0 @@
-[
- {
-  "title": "Redis Iris——从缓存数据库到 AI 上下文基础设施",
-  "code": "graph TD\n    PIVOT[\"战略转身: Iris 不是数据库<br/>是运行在 Redis 上的 Agent 平台\"] ==> C3[\"三组件分工<br/>Context Retriever · Agent Memory<br/>RDI CDC 实时数据流保鲜\"]\n    C3 ==> FLIP[\"范式翻转: prefill 到工具化发现<br/>优秀上下文四支柱\"]\n    FLIP ==> SCALE[\"Flex SSD 成本降一个量级<br/>百万 Agent 密度预言\"]",
-  "isSvg": false
- }
-]

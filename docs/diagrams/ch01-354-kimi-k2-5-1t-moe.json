@@ -1,7 +1,0 @@
-[
- {
-  "title": "Kimi K2.5——1T MoE 一层路由加三能力跃迁",
-  "code": "graph TD\n    ARCH[\"1T MoE 一层路由<br/>架构创新\"] ==> DIFF[\"K2.5 vs DeepSeek-V3 关键差异\"]\n    DIFF ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
-  "isSvg": false
- }
-]

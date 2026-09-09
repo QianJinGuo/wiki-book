@@ -1,7 +1,0 @@
-[
- {
-  "title": "Karpathy 最新访谈——从 Vibe Coding 到 Agentic Engineering",
-  "code": "graph TD\n    DIV[\"本质分野: Vibe Coding vs<br/>Agentic Engineering<br/>Software 3.0 工程含义\"] --> V[\"可验证性决定自动化上限<br/>任务可验证性是引入 Agent 的标准\"]\n    V --> G[\"幽灵隐喻影响工程设计<br/>MenuGen 案例架构警示\"]\n    G --> INFRA[\"Agent Native Infrastructure 缺失<br/>构建 Agent Control Plane\"]\n    INFRA --> R[\"工程师价值向规格与边界迁移<br/>投资过程资产而非聊天记录\"]",
-  "isSvg": false
- }
-]

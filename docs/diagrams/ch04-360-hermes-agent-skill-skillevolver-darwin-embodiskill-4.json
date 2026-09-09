@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Hermes Skill 互优化——三角色四轮闭环",
+  "code": "graph TD\n    ROLES[\"三角色: Darwin 质检员<br/>加 SkillEvolver 进化器<br/>加 EmbodiSkill 裁判\"] ==> LOOP[\"互优化 4 轮迭代<br/>棘轮机制锁住进展\"]\n    LOOP ==> FINDING[\"AI 不需要更强模型<br/>需要更好的互优化闭环<br/>角色分离加技能体附录分离\"]",
+  "isSvg": false
+ }
+]

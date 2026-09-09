@@ -1,7 +1,0 @@
-[
- {
-  "title": "DeerFlow Hermes OpenClaw 架构深度对比",
-  "code": "graph TD\n    CMP[\"三框架架构区别<br/>DeerFlow Hermes OpenClaw\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
-  "isSvg": false
- }
-]

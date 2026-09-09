@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Agent Skill 高质量编写规范",
+  "code": "graph TD\ngraph TD\n    A[\"坑点（Gotchas）\"] ==> B[\"报告结构\"]\n    B ==> C[\"执行摘要\"]\n    C ==> D[\"主要发现\"]\n    D ==> E[\"建议\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

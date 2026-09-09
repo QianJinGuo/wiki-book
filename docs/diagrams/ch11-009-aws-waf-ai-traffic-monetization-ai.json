@@ -1,7 +1,7 @@
 [
  {
-  "title": "AWS WAF AI Traffic Monetization — 内容所有者向",
-  "code": "graph TD\n    CORE[\"AWS WAF AI Traffic Monetization — 内容所有者向\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "title": "AWS WAF AI Traffic Monetization — 内",
+  "code": "graph TD\ngraph TD\n    A[\"背景\"] ==> B[\"行业背景\"]\n    B ==> C[\"核心能力\"]\n    C ==> D[\"关键概念\"]\n    D ==> E[\"实施流程\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

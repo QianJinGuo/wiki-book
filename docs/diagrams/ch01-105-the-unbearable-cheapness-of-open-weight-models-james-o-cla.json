@@ -1,7 +1,7 @@
 [
  {
-  "title": "The Unbearable Cheapness of Open Weight",
-  "code": "graph TD\n    CORE[\"The Unbearable Cheapness of Open Weight \"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "title": "The Unbearable Cheapness of Open We",
+  "code": "graph TD\ngraph TD\n    A[\"Open Weight vs Low Cost\"] ==> B[\"How do you keep prices high fo\"]\n    B ==> C[\"Will Anthropic & OpenAI lean o\"]\n    C ==> D[\"Why not compete?\"]\n    D ==> E[\"True Open Source vs Open Weigh\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

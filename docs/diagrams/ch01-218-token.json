@@ -1,7 +1,0 @@
-[
- {
-  "title": "Token 退化问题——分词器与后训练数据分布失配",
-  "code": "graph TD\n    ROOT[\"退化本质在 lm_head 而非 embedding<br/>向量空间挤压机制\"] ==> CASES[\"日语退化 29.7% 根因<br/>SEO 垃圾词是预训练广度收缩镜像\"]\n    CASES ==> DETECT[\"检测: 全词表 lm_head 漂移扫描<br/>全词表复读任务技术细节\"]\n    DETECT ==> FIX[\"四种解法的工程权衡\"]",
-  "isSvg": false
- }
-]

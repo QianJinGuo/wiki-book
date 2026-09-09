@@ -1,7 +1,0 @@
-[
- {
-  "title": "产研团队 Agent Loop 组织资产框架",
-  "code": "graph TD\n    ASSETS[\"五大组织资产<br/>团队核心资产清单\"] ==> ORDER[\"Agent 建设顺序\"]\n    ORDER ==> PATH[\"30 天实践路径<br/>组织成熟度三阶段\"]",
-  "isSvg": false
- }
-]

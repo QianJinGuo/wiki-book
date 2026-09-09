@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Building for the Rising Complexity",
+  "code": "graph TD\ngraph TD\n    A[\"概述\"] ==> B[\"从 Chatbot 到 Agent 的演进\"]\n    B ==> C[\"Agentic 架构特性\"]\n    C ==> D[\"核心性能挑战：延迟与吞吐的根本矛盾\"]\n    D ==> E[\"Extreme Co-Design：NVIDIA 的解法思路\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

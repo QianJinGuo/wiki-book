@@ -1,7 +1,0 @@
-[
- {
-  "title": "1-bit 与 Ternary Bonsai Image 4B——端侧图像生成",
-  "code": "graph TD\n    QUANT[\"量化帕累托前沿外推<br/>7.75GB 压到 0.93-1.21GB 6.4-8.3 倍<br/>Ternary 保 95% 精度 1bit 保 88%\"] ==> KEY[\"端侧激活内存比体积更关键<br/>1.5-1.96GB vs 原模型 11.74GB<br/>只对 transformer 低比特化\"]\n    KEY ==> STACK[\"MLX 跑 Apple 端<br/>GemmLite 跑 NVIDIA 端<br/>Apache 2.0 全套开源\"]",
-  "isSvg": false
- }
-]

@@ -1,7 +1,0 @@
-[
- {
-  "title": "Databricks 收购 Panther——Agentic SOC",
-  "code": "graph TD\n    ARCH[\"传统 SIEM 到 Agentic SOC\"] ==> FLOW[\"Agentic SOC 工作流机制\"]\n    FLOW ==> LAYOUT[\"Databricks 安全收购布局\"]\n    FLOW ==> INS[\"关键洞察与实践启示\"]",
-  "isSvg": false
- }
-]

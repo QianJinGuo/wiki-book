@@ -1,7 +1,0 @@
-[
- {
-  "title": "Agent Harness Engineering 综述",
-  "code": "graph TD\n    SURVEY[\"Agent Harness Engineering 系统综述\"] ==> TAX[\"分类框架与覆盖范围\"]\n    TAX ==> FIND[\"关键发现与趋势\"]\n    FIND ==> INS[\"深度分析与实践启示\"]",
-  "isSvg": false
- }
-]

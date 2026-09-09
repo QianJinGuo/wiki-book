@@ -1,0 +1,7 @@
+[
+ {
+  "title": "从 People-Oriented 到 Agent-Oriented Infra",
+  "code": "graph TD\n    OBS[\"统一观察: 意图驱动加代码沉淀<br/>是软件进化体\"] ==> V3[\"三个关键变量<br/>桥梁带宽 · 沉淀粒度分化<br/>循环频率: 发布周期到运行时\"]\n    V3 ==> CASES[\"案例: 多角色研发系统<br/>加 配置推送自主程度<br/>加 身份鉴权碎片化\"]\n    CASES ==> PRIN[\"四层递进设计<br/>People-Oriented 到 Agent-Oriented\"]",
+  "isSvg": false
+ }
+]

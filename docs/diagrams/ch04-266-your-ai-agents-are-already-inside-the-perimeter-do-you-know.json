@@ -1,7 +1,0 @@
-[
- {
-  "title": "你的 AI Agent 已在内网——你知道它们在做什么吗",
-  "code": "graph TD\n    BG[\"AI 代理部署速度超过治理成熟度\"] --> DM[\"核心问题: 身份黑暗物质<br/>技术根因\"]\n    DM --> Q3[\"企业身份团队三问<br/>环境中有哪些 Agent 在跑<br/>NIST 合规性 · 静态凭证轮换\"]\n    Q3 --> SOL[\"Orchid Security 路径<br/>全谱身份权威<br/>安全采用五项原则\"]",
-  "isSvg": false
- }
-]

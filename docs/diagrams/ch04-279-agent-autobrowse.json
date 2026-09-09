@@ -1,0 +1,7 @@
+[
+ {
+  "title": "浏览器 Agent 的失忆问题",
+  "code": "graph TD\ngraph TD\n    A[\"背景：探索税（Discovery Tax）\"] ==> B[\"Autobrowse 是什么\"]\n    B ==> C[\"五步学习循环\"]\n    C ==> D[\"Craigslist 基准：$0.22 → $0.12\"]\n    D ==> E[\"哪些情况不该用（自批评）\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

@@ -1,7 +1,0 @@
-[
- {
-  "title": "AI4S 2026 H1 跨学科前沿全景",
-  "code": "graph TD\n    BIO[\"生命科学: 读懂基因暗区<br/>AlphaGenome · Sequence Display<br/>三天造千万数据\"] ==> LINES[\"三个反复出现的主线\"]\n    CHEM[\"化学材料: 5.33% 命中率是真价值<br/>A-Lab 无氧自驱动实验室\"] ==> LINES\n    PHYS[\"物理: 神经解码器省 40% 硬件<br/>量子纠错 · 目标定错教训\"] ==> LINES\n    ASTRO[\"天文气候: 7424 个平行 2023 夏天<br/>脑科学 BrainIAC 层级对应\"] ==> LINES\n    LINES ==> COLD[\"清醒的冷水<br/>生成与验证能力的剪刀差<br/>小模型在精密科学的胜利\"]",
-  "isSvg": false
- }
-]

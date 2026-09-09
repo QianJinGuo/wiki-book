@@ -1,7 +1,0 @@
-[
- {
-  "title": "PromptQueue 加 OpenGorilla——AI-Native 异步任务引擎",
-  "code": "graph TD\n    Q[\"LLM 调用本质是队列问题\"] --> A[\"4 层分离架构<br/>Monorepo 4 包\"]\n    A --> SM[\"任务 7 状态机\"]\n    A --> TL[\"Worker-owned Tool Loop<br/>治理权在 Worker\"]\n    A --> HITL[\"Human-in-the-Loop<br/>基础设施级能力\"]\n    TL --> OG[\"OpenGorilla 集成<br/>自进化认知闭环\"]\n    HITL --> OG\n    OG --> EXP[\"经验即资产<br/>SQLite 单进程简单架构\"]",
-  "isSvg": false
- }
-]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "阿里Qwen提出Skill-RM",
+  "code": "graph TD\ngraph TD\n    A[\"工程启示\"] ==> B[\"实践启示\"]\n    B ==> C[\"与已有实体的差异化\"]\n    C ==> D[\"上手资源\"]\n    D ==> E[\"相关实体\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

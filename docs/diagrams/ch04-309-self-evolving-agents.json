@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Self-Evolving Agents 系统性综述",
+  "code": "graph TD\ngraph TD\n    A[\"核心贡献\"] ==> B[\"技术框架\"]\n    B ==> C[\"关键判断\"]\n    C ==> D[\"论文信息\"]\n    D ==> E[\"与 Wiki 现有页面的关系\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

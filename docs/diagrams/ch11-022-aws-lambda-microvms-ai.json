@@ -1,7 +1,7 @@
 [
  {
   "title": "AWS 正式发布 Lambda MicroVMs",
-  "code": "graph TD\n    CORE[\"AWS 正式发布 Lambda MicroVMs\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "code": "graph TD\ngraph TD\n    A[\"AWS 正式发布 Lambda MicroVMs：面向 AI\"] ==> B[\"**一句话理解**\"]\n    B ==> C[\"**一、痛点：不可能三角**\"]\n    C ==> D[\"**二、三大核心能力**\"]\n    D ==> E[\"**三、架构原理**\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

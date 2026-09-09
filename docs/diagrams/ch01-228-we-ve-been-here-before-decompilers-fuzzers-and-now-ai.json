@@ -1,0 +1,7 @@
+[
+ {
+  "title": "We've Been Here Before: Decompilers",
+  "code": "graph TD\ngraph TD\n    A[\"Summary\"] ==> B[\"核心论点：历史重演的规律\"]\n    B ==> C[\"AI 与漏洞研究：这次有什么不同\"]\n    C ==> D[\"实践启示\"]\n    D ==> E[\"相关实体\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

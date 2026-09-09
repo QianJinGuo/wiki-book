@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Cline releases open-source agent ru",
+  "code": "graph TD\ngraph TD\n    A[\"核心要点\"] ==> B[\"技术架构\"]\n    B ==> C[\"核心特性\"]\n    C ==> D[\"性能基准\"]\n    D ==> E[\"产品背景\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

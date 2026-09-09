@@ -1,7 +1,0 @@
-[
- {
-  "title": "腾讯后端——从 Vibe Coding 到 Agentic Engineering",
-  "code": "graph TD\n    Q[\"Vibe Coding 的本质缺陷<br/>过程不可控\"] ==> AE[\"Agentic Engineering 核心思路<br/>人作为编排者重定义角色\"]\n    AE => IMPL[\"实践方案与工具体系<br/>三层架构实现关注点分离\"]\n    IMPL => CMP[\"传统方式 vs Claude Code 方式<br/>Token 消耗规模效应<br/>AI 评审需跨模型审查\"]",
-  "isSvg": false
- }
-]

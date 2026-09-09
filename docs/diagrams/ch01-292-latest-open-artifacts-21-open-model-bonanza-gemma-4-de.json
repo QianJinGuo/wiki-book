@@ -1,7 +1,0 @@
-[
- {
-  "title": "Latest open artifacts #21——开源模型大爆发",
-  "code": "graph TD\n    BONANZA[\"开源大爆发: Gemma 4 加 DeepSeek V4<br/>加 Kimi K2.6 加 MiMo 2.5 加 GLM-5.1\"] ==> CAISI[\"CAISI V4 IRT 评估的方法论缺陷\"]\n    CAISI ==> HARNESS[\"Harness 选择扭曲能力评估\"]\n    CAISI ==> ECO[\"开源生态关键进展与长尾评测问题\"]",
-  "isSvg": false
- }
-]

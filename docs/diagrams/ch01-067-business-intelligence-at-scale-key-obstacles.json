@@ -1,7 +1,7 @@
 [
  {
-  "title": "Business intelligence at scale: Key obst",
-  "code": "graph TD\n    CORE[\"Business intelligence at scale: Key obst\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "title": "Business intelligence at scale: Key",
+  "code": "graph TD\ngraph TD\n    A[\"How AWS SMGS uses an AI-powere\"] ==> B[\"Business intelligence at scale\"]\n    B ==> C[\"Solution overview\"]\n    C ==> D[\"相关实体\"]\n    D ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

@@ -1,7 +1,0 @@
-[
- {
-  "title": "Agent Harness 架构",
-  "code": "graph TD\n    L7[\"7 层架构\"] ==> PRIN[\"核心设计原则\"]\n    PRIN ==> TOOLS[\"工具系统设计\"]\n    TOOLS ==> INS[\"深度分析与实践启示\"]",
-  "isSvg": false
- }
-]

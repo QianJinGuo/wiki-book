@@ -1,7 +1,0 @@
-[
- {
-  "title": "Personal AI 工作台——Claude 18 动作框架",
-  "code": "graph TD\n    subgraph L6[\"六层工作台结构\"]\n        W[\"工作区边界<br/>Project 是边界非万能记忆\"]\n        ID[\"身份与行为契约<br/>Custom Instructions 是契约非人格\"]\n        TASK[\"任务入口与输出标准<br/>流程卡片是过程资产\"]\n        CTX[\"上下文治理<br/>新话题开新 chat\"]\n        FB[\"反馈回路<br/>让 Claude 反对你\"]\n    end\n    A18[\"18 个动作映射到六层\"] --> L6\n    L6 --> MINV[\"最小可行版本\"]\n    MINV --> HAR[\"Personal Harness 最小化实现<br/>与团队 Harness 衔接\"]",
-  "isSvg": false
- }
-]

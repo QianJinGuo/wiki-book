@@ -1,7 +1,0 @@
-[
- {
-  "title": "Graphsignal——LLM 推理 Profiler",
-  "code": "graph TD\n    FUNC[\"功能矩阵: 推理 tracing<br/>token 吞吐 · TTFT 与 TPS 分解<br/>GPU 利用率 · Agent 遥测 · 成本追踪\"] ==> INSTALL[\"轻量安装: 独立工具或 pip 集成\"]\n    INSTALL ==> VSAPM[\"推理可观测 vs 传统 APM<br/>prefill 与 decode 异构延迟\"]\n    VSAPM ==> DETAIL[\"token 级粒度 · batch 干扰<br/>硬件异构性\"]",
-  "isSvg": false
- }
-]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "鹅厂 Skill 写作 Playbook——14 章节 end-to-end",
+  "code": "graph TD\n    WRITE[\"4 大写作原则: 开头三件事<br/>加 祈使句加为什么 加 Before After<br/>加 Few-Shot 3-5 示例\"] ==> EVAL[\"5 大评估指标加 Creator 3 阶段\"]\n    EVAL ==> SEC[\"4 大安全风险加调试排错链<br/>技能是压缩的行动经验非唯一答案\"]",
+  "isSvg": false
+ }
+]

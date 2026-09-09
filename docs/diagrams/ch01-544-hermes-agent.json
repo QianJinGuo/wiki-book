@@ -1,7 +1,0 @@
-[
- {
-  "title": "Hermes Agent 闭环学习机制",
-  "code": "graph TD\n    ARCH[\"系统架构三层\"] --> FLY[\"闭环学习飞轮<br/>Self-Improving Flywheel\"]\n    FLY --> N1[\"Nudge 触发机制一\"]\n    FLY --> N2[\"Nudge 触发机制二\"]\n    N1 --> CODE[\"spawn_background_review<br/>后台复审\"]\n    N2 --> CODE\n    CODE --> K[\"知识系统区分<br/>Memory 与 Skills 表示分离\"]\n    K --> VS[\"与 OpenClaw 核心差异<br/>Fork 模式工程权衡\"]",
-  "isSvg": false
- }
-]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "TRAE SOLO 加飞书——5 步全自动采集 3400 帖子",
+  "code": "graph TD\n    S5[\"5 步法: 聊需求 加 配飞书<br/>加 表格配置 加 SOLO 开发 加 部署<br/>MD5 指纹增量同步\"] ==> PITS[\"5 大踩坑与 6 条经验\"]\n    PITS ==> PATTERN[\"指数退避加敏感信息分离<br/>需求具体化是输入工程\"]\n    PATTERN ==> RESULT[\"3400 加帖子稳定运行\"]",
+  "isSvg": false
+ }
+]

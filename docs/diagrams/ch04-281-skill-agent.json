@@ -1,7 +1,0 @@
-[
- {
-  "title": "Skill 系统——Agent 如何把经验沉淀成可复用能力",
-  "code": "graph TD\n    DIFF[\"Memory vs Skill 本质区别<br/>理解用 vs 执行用<br/>Memory 三坑: 不可版本化 无依赖\"] --> S5[\"SKILL.md 五区块<br/>元信息 trigger 关键 · 适用场景<br/>步骤清单 · 坑位记录 · 校验方式\"]\n    S5 --> R4[\"检索四步流程<br/>提需求 · 索引两层匹配<br/>命中 1-3 候选 · 注入 Prompt\"]\n    R4 --> LC[\"修补哲学: patch 不是重写<br/>生命周期五阶段\"]",
-  "isSvg": false
- }
-]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Anthropic Claude Fable 5 on AWS",
+  "code": "graph TD\ngraph TD\n    A[\"摘要\"] ==> B[\"核心能力解析\"]\n    B ==> C[\"安全保护机制：Fable 与 Mythos 的分界线\"]\n    C ==> D[\"技术接入指南\"]\n    D ==> E[\"与同类产品的定位对比\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

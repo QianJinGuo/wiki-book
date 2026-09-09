@@ -1,7 +1,7 @@
 [
  {
   "title": "AI Infra 全景图",
-  "code": "graph TD\n    CORE[\"AI Infra 全景图\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "code": "graph TD\ngraph TD\n    A[\"9 层架构全景\"] ==> B[\"4 个横切能力\"]\n    B ==> C[\"分阶段落地路线图\"]\n    C ==> D[\"核心洞察\"]\n    D ==> E[\"相关实体\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

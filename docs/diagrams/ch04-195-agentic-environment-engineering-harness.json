@@ -1,7 +1,0 @@
-[
- {
-  "title": "Agentic Environment Engineering——Harness 之下一层",
-  "code": "graph TD\n    THESIS[\"核心命题: 环境工程是<br/>Harness 之下的一层门槛\"] ==> LAYERS[\"工程链路分层<br/>中科院自动化所框架<br/>环境五个基本问题\"]\n    LAYERS ==> EVAL[\"环境评估四维度<br/>奖励带偏警告\"]\n    EVAL ==> CONTRACT[\"小环境契约模板<br/>与 Harness 的关系\"]",
-  "isSvg": false
- }
-]

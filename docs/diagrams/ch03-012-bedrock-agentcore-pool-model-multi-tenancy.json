@@ -1,7 +1,7 @@
 [
  {
-  "title": "Bedrock AgentCore Pool Model Multi-Tenan",
-  "code": "graph TD\n    CORE[\"Bedrock AgentCore Pool Model Multi-Tenan\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "title": "Bedrock AgentCore Pool Model Multi-",
+  "code": "graph TD\ngraph TD\n    A[\"核心架构：三级层次隔离\"] ==> B[\"池模型 vs 专用模型\"]\n    B ==> C[\"技术实现\"]\n    C ==> D[\"三个独有贡献（不应合并到现有 entity）\"]\n    D ==> E[\"GitHub 仓库\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

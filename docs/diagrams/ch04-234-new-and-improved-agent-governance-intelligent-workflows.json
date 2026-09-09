@@ -1,7 +1,0 @@
-[
- {
-  "title": "Microsoft Agent Governance 智能工作流",
-  "code": "graph TD\n    CORE[\"核心张力: 扩大自动化的同时<br/>不失去控制权\"] ==> UPDATE[\"April 2026 Copilot Studio 更新<br/>更好的可见性和治理能力\"]\n    UPDATE ==> AGENT365[\"Microsoft Agent 365 GA<br/>所有 Agent 的集中控制平面\"]",
-  "isSvg": false
- }
-]

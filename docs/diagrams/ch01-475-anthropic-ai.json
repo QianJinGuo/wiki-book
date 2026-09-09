@@ -1,7 +1,0 @@
-[
- {
-  "title": "Anthropic AI 原生创业公司手册——一人公司法典",
-  "code": "graph TD\n    F4[\"创业四阶段框架<br/>从创业神话到可编排行动方案\"] ==> ROLE[\"创始人角色转变<br/>AI 工具三分法\"]\n    ROLE ==> CHAL[\"各阶段挑战与解法<br/>PMF 验证严格化\"]\n    CHAL ==> MOAT[\"护城河建设<br/>AI 原生特性<br/>智能体式技术债洞察\"]",
-  "isSvg": false
- }
-]

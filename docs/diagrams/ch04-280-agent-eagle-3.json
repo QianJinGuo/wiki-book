@@ -1,0 +1,7 @@
+[
+ {
+  "title": "多轮 Agent 场景下，滴滴的 EAGLE-3 训推加速实践",
+  "code": "graph TD\ngraph TD\n    A[\"背景：为什么 Agent 场景对推理速度要求更高\"] ==> B[\"投机解码（Speculative Decoding）核心逻辑\"]\n    B ==> C[\"EAGLE-3 方案选择\"]\n    C ==> D[\"EAGLE-3 训练形态与显存问题\"]\n    D ==> E[\"解决方案：USP（Unified Sequence Para\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

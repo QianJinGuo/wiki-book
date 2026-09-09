@@ -1,7 +1,0 @@
-[
- {
-  "title": "Anthropic 官方 14 种 Skill 设计模式",
-  "code": "graph TD\n    C5[\"5 大类模式<br/>发现选择 · 上下文经济<br/>指令校准 · 工作流控制 · 可执行代码\"] --> TEN{\"核心张力: 自由度 vs 确定性\"}\n    TEN --> OPT[\"渐进式披露 vs 上下文预算<br/>一个优化两个方向\"]\n    OPT --> REL[\"Anthropic 模式 vs 社区模式<br/>互补而非竞争\"]\n    REL --> P[\"按问题域对号入座<br/>description 三层结构<br/>权限最小化原则\"]",
-  "isSvg": false
- }
-]

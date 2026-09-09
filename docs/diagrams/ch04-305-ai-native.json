@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AI Native 团队搭建",
+  "code": "graph TD\ngraph TD\n    A[\"相关实体\"] ==> B[\"评分\"]\n    B ==> C[\"AI 如何优化组织复杂度\"]\n    C ==> D[\"AI 参与工作的七层模型\"]\n    D ==> E[\"六步演进路线\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

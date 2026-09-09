@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Introducing 1-bit and Ternary Bonsa",
+  "code": "graph TD\n    CORE[\"Introducing 1-bit and Ternary Bonsa\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Harness如何支撑Agent在生产环境稳定运行？",
+  "code": "graph TD\ngraph TD\n    A[\"核心概念：工程赤字（Engineering Deficit）\"] ==> B[\"Demo 型 vs 生产型代码库四维判别\"]\n    B ==> C[\"Claude Code 退化事故（2026年4月）\"]\n    C ==> D[\"四支柱审查框架\"]\n    D ==> E[\"哪些方向可以先放一放\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

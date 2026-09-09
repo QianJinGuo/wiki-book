@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Doris MCP on AgentCore Runtime: VPC",
+  "code": "graph TD\ngraph TD\n    A[\"核心内容\"] ==> B[\"三个关键洞察\"]\n    B ==> C[\"与知识库的连接\"]\n    C ==> D[\"实践启示\"]\n    D ==> E[\"架构图\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Microsoft Build 2026",
+  "code": "graph TD\ngraph TD\n    A[\"Microsoft Build 2026：微软 AI 独立日\"] ==> B[\"相关实体\"]\n    B ==> C[\"一句话定位\"]\n    C ==> D[\"1. MAI-Thinking-1：微软首个高级推理模型\"]\n    D ==> E[\"2. MAI 模型家族：多模态生态系统\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

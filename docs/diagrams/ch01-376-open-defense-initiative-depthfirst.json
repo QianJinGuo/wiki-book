@@ -1,7 +1,0 @@
-[
- {
-  "title": "Open Defense Initiative——depthfirst 安全防御",
-  "code": "graph TD\n    WINDOW[\"时间窗口论: 开源模型快速追赶<br/>加固关键基建的最后机会期\"] ==> EFFICIENCY[\"成本效率: 1000 美元找到<br/>Anthropic 数百次扫描没找到的 12 个漏洞<br/>系统优化大于模型能力\"]\n    EFFICIENCY ==> ARCH[\"专用 Harness 加 可利用性后训练<br/>加 全系统上下文验证\"]'",
-  "isSvg": false
- }
-]

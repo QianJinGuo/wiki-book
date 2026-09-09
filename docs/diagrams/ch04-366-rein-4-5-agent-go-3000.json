@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Rein——4 模块与 5 类型边界防膨胀",
+  "code": "graph TD\n    ARCH[\"4 模块加 5 类型边界<br/>加 7 不变量核心循环宪法\"] ==> PATTERNS[\"三大设计模式<br/>ToolSpec 与 Tool 分离<br/>加 流式等价同步 加 投影式压缩\"]\n    PATTERNS ==> SAFETY[\"Observation Envelope<br/>一切失败回传模型<br/>加 18 个 Option 安全默认\"]",
+  "isSvg": false
+ }
+]

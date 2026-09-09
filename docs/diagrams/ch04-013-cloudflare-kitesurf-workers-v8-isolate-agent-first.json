@@ -1,7 +1,7 @@
 [
  {
   "title": "Cloudflare Kitesurf",
-  "code": "graph TD\n    CORE[\"Cloudflare Kitesurf\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "code": "graph TD\ngraph TD\n    A[\"设计决策\"] ==> B[\"三组件架构\"]\n    B ==> C[\"性能实测（14-URL 语料 vs Chromium war\"]\n    C ==> D[\"与既有 AI 浏览器的关系\"]\n    D ==> E[\"当前边界与路线\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

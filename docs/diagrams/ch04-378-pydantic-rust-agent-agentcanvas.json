@@ -1,7 +1,0 @@
-[
- {
-  "title": "Pydantic 三件套——Rust 引擎与可观测与 Agent 类型约束",
-  "code": "graph TD\n    SHIFT[\"校验范式转移<br/>从稳定表单到 LLM 漂移 JSON<br/>看趋势而非单次报错\"] --> CORE[\"pydantic-core<br/>Rust 引擎 PyO3 脱离 GIL<br/>快 5-17 倍\"]\n    SHIFT --> LF[\"Logfire<br/>OTel span 树 · SQL 查 trace<br/>漂移检测杀手锏\"]\n    SHIFT --> PAI[\"Pydantic AI<br/>类型从事后校验变事前约束<br/>约束 tool 行为空间\"]\n    LF --> AC[\"agentcanvas 补充<br/>span 树渲染交互 HTML 流程图<br/>Token 花费折算 · 导览模式\"]",
-  "isSvg": false
- }
-]

@@ -1,7 +1,0 @@
-[
- {
-  "title": "滴滴 EAGLE-3——多轮 Agent 训推加速",
-  "code": "graph TD\n    SPEED[\"EAGLE-3 训推加速<br/>多轮 Agent 场景优化\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
-  "isSvg": false
- }
-]

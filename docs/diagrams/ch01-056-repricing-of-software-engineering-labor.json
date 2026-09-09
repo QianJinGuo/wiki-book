@@ -1,7 +1,7 @@
 [
  {
-  "title": "Repricing of Software Engineering Labor",
-  "code": "graph TD\n    CORE[\"Repricing of Software Engineering Labor\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "title": "Repricing of Software Engineering L",
+  "code": "graph TD\ngraph TD\n    A[\"Generalist SWEs were a product\"] ==> B[\"LLMs Changed The Dynamics\"]\n    B ==> C[\"Repricing of the Middle Layer\"]\n    C ==> D[\"Expertise is getting more valu\"]\n    D ==> E[\"Where I think this goes\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

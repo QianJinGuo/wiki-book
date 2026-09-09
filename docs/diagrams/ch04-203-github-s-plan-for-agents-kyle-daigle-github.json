@@ -1,7 +1,0 @@
-[
- {
-  "title": "GitHub 的 Agent 计划——Kyle Daigle 访谈",
-  "code": "graph TD\n    SCALE[\"规模冲击: coding agent 活动<br/>增长 1400% · 年约 140 亿次提交<br/>基建从人类速度到机器速度\"] ==> INTERNAL[\"内部实践: WorkIQ MCP 统一接入<br/>向后看工作流: Agent 回顾一周产出摘要<br/>微技能架构: 原子化可重组\"]\n    INTERNAL ==> SATURDAY[\"15 agents on Saturday<br/>former developers in leadership 优势\"]\n    INTERNAL ==> FLOOD[\"开源生态的 AI 洪水治理挑战\"]",
-  "isSvg": false
- }
-]

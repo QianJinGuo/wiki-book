@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Introducing Scheduled Tasks 2.0",
+  "code": "graph TD\ngraph TD\n    A[\"核心要点\"] ==> B[\"从\"时间驱动\"到\"上下文驱动\"的范式转变\"]\n    B ==> C[\"在同一任务内继续执行\"]\n    C ==> D[\"为 Web App 添加调度行为\"]\n    D ==> E[\"增强可追踪性：侧边栏、日历视图和运行卡片\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

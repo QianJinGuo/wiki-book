@@ -1,7 +1,0 @@
-[
- {
-  "title": "AI Agent Gateway 架构——三框架对比",
-  "code": "graph TD\n    PHI[\"框架哲学对比<br/>OpenClaw 加 Claude Code 加 Hermes\"] ==> T3[\"三个核心架构取舍<br/>关键技术细节\"]\n    T3 ==> ARCH[\"架构图\"]\n    ARCH ==> INS[\"设计启示\"]",
-  "isSvg": false
- }
-]

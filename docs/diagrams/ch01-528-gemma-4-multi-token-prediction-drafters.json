@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Gemma 4 Multi Token Prediction——Drafters 推理加速",
+  "code": "graph TD\n    SLOW[\"LLM 推理慢: 自回归逐 token\"] ==> SD[\"Speculative Decoding 原理\"]\n    SD ==> MTP[\"MTP 加 Drafters 架构优化\"]\n    MTP ==> PERF[\"基准测试结果<br/>加 硬件适配细节\"]\n    PERF ==> USE[\"应用场景加支持框架\"]",
+  "isSvg": false
+ }
+]

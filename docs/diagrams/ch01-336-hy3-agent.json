@@ -1,7 +1,0 @@
-[
- {
-  "title": "腾讯混元 Hy3 正式版",
-  "code": "graph TD\n    ARCH[\"架构与关键评测数据\"] ==> AGENT[\"Agent 能力跃升结构性原因<br/>快慢思考融合\"]\n    AGENT ==> BIZ[\"模型即服务<br/>preview 到 full 工程节奏\"]",
-  "isSvg": false
- }
-]

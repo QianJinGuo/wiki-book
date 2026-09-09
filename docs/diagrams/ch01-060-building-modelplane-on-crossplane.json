@@ -1,7 +1,7 @@
 [
  {
   "title": "Building Modelplane on Crossplane",
-  "code": "graph TD\n    CORE[\"Building Modelplane on Crossplane\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "code": "graph TD\ngraph TD\n    A[\"The problem, in Crossplane ter\"] ==> B[\"What made it buildable: Develo\"]\n    B ==> C[\"Designing the API\"]\n    C ==> D[\"关联\"]\n    D ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Anthropic 最新博客",
+  "code": "graph TD\ngraph TD\n    A[\"01 缓存即基建\"] ==> B[\"02 排好队形\"]\n    B ==> C[\"03 别动 Prompt\"]\n    C ==> D[\"04 别换模型\"]\n    D ==> E[\"05 别碰工具\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

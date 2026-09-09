@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Anthropic Economic Index report: Ca",
+  "code": "graph TD\ngraph TD\n    A[\"方法论升级\"] ==> B[\"Chapter 1：外部世界节奏对 AI 使用的影响\"]\n    B ==> C[\"Chapter 2：会话产出分析\"]\n    C ==> D[\"Chapter 3：用户预期调查（首次发布）\"]\n    D ==> E[\"核心洞察\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

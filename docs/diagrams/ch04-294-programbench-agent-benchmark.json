@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Programbench Agent Benchmark",
+  "code": "graph TD\ngraph TD\n    A[\"ProgramBench: Benchmarking Pro\"] ==> B[\"深度分析\"]\n    B ==> C[\"实践启示\"]\n    C ==> D[\"参见\"]\n    D ==> E[\"任务设计：无源码、无反编译、无网络\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

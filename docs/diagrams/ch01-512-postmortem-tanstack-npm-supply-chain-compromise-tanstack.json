@@ -1,7 +1,0 @@
-[
- {
-  "title": "TanStack npm 供应链攻击复盘",
-  "code": "graph TD\n    A1[\"缓存投毒阶段<br/>pull_request_target Pwn Request\"] --> A2[\"跨信任边界<br/>GitHub Actions 缓存污染\"]\n    A2 --> A3[\"从 runner 内存提取 OIDC token\"]\n    A3 --> P[\"发布阶段引爆<br/>npm 包被植入恶意版本\"]\n    P --> MAL[\"恶意软件执行<br/>影响多个包\"]\n    MAL --> D[\"检测与响应<br/>IOC 指纹共享\"]\n    D --> L[\"教训: 三重信任边界穿越<br/>缺一不可成攻击链\"]",
-  "isSvg": false
- }
-]

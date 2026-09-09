@@ -1,7 +1,0 @@
-[
- {
-  "title": "Kimi Work——通用 Agent 从云端迁移到本地",
-  "code": "graph TD\n    U[\"用户目标\"] --> H[\"本地 Harness 运行环境\"]\n    H --> C[\"Agent 集群<br/>最多 300 分身并行\"]\n    C --> WB[\"Kimi WebBridge 浏览器桥接\"]\n    C --> FIN[\"内置金融数据源\"]\n    WB --> WEB[\"真实浏览器与网页操作\"]\n    PAR[\"能并行就不串行\"] -.调度原则.-> C\n    ALL[\"全部允许模式<br/>类 dangerously-skip-permissions\"] -.权限.-> H\n    C --> RES[\"Vibe Working 成果<br/>长程连贯交付\"]",
-  "isSvg": false
- }
-]

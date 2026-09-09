@@ -1,7 +1,0 @@
-[
- {
-  "title": "解读今日开源闭源性能差距",
-  "code": "graph TD\n    EVOLUTION[\"Benchmark 演化与训练 Regimes 转移<br/>RLVR 作能力评估新范式\"] ==> ECON[\"前沿实验室经济压力<br/>蒸馏 vs RL 环境: 中国追赶杠杆<br/>推理成本纳入性能比较\"]\n    ECON ==> TRUTH[\"开放模型的能力真相<br/>差距非均匀: 各能力追赶速度不同\"]\n    TRUTH ==> P[\"按能力维度评估非总体分数<br/>保持选型灵活 实证驱动决策\"]",
-  "isSvg": false
- }
-]

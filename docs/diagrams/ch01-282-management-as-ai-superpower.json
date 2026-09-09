@@ -1,7 +1,0 @@
-[
- {
-  "title": "Management as AI Superpower——管理即 AI 超能力",
-  "code": "graph TD\n    SHIFT[\"从 prompting 到 delegation<br/>的概念跃迁<br/>新 prompt 是用 AI 做而非用 AI 写\"] ==> FORMULA[\"委托决策三变量<br/>人工基线时间 · AI 成功率 · AI 耗时<br/>净收益公式: 平均节省 3 小时\"]\n    FORMULA ==> P3[\"提升成功率三招<br/>更好指令 · 评估反馈 · 降低评估难度<br/>全部受益于领域专业知识\"]\n    P3 ==> SCARCITY[\"AI 改变稀缺结构:<br/>人才充裕 稀缺的是知道要什么\"]",
-  "isSvg": false
- }
-]

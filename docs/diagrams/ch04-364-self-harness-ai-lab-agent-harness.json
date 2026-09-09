@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Self-Harness——上海 AI Lab Agent 自我改进",
+  "code": "graph TD\n    STAGES[\"三阶段: Weakness Mining<br/>加 Harness Proposal 加 保守验证\"] ==> RESULTS[\"MiniMax 42 到 54<br/>Qwen 20 到 37 · GLM 46 到 57\"]\n    RESULTS ==> CASES[\"补丁改变真实执行轨迹<br/>探索型转工程型\"]\n    CASES ==> INS[\"深度分析与实践启示\"]",
+  "isSvg": false
+ }
+]

@@ -1,7 +1,0 @@
-[
- {
-  "title": "Headless Software——Agent 时代软件界面何去何从",
-  "code": "graph TD\n    T3[\"Agent 能力三分法<br/>Sinofsky\"] --> STICK[\"软件粘性本质<br/>SAP 业务逻辑即护城河\"]\n    STICK --> EX[\"例外处理才是核心<br/>长尾挑战\"]\n    EX --> TREND[\"行业趋势: Salesforce 到<br/>ServiceNow 的 Headless 转向<br/>从为人设计到为机器设计\"]\n    TREND --> API[\"API-first 是入场券<br/>界面消失不代表 UX 消失\"]",
-  "isSvg": false
- }
-]

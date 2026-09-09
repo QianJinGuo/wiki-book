@@ -1,7 +1,0 @@
-[
- {
-  "title": "Karpathy LLM Wiki V2——AI 知识管理新范式",
-  "code": "graph TD\n    V2[\"LLM Wiki V2<br/>AI 知识管理新范式\"] ==> CORE[\"核心机制解读\"]\n    CORE ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
-  "isSvg": false
- }
-]

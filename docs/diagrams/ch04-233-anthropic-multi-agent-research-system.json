@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Anthropic Multi Agent Research Syst",
+  "code": "graph TD\ngraph TD\n    A[\"Anthropic Multi-Agent Research\"] ==> B[\"Evaluation-relevant takeaways\"]\n    B ==> C[\"Why it matters for this vault\"]\n    C ==> D[\"深度分析\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

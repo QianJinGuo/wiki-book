@@ -1,7 +1,0 @@
-[
- {
-  "title": "8 个 UI 设计师必备的 Agent Skills",
-  "code": "graph TD\n    LAYERS[\"技能生态分层<br/>设计系统持久化价值\"] ==> S3[\"精选: ui-ux-pro-max<br/>frontend-design · shadcn-ui\"]\n    S3 ==> ORDER[\"安装顺序很关键<br/>三步工作流\"]\n    ORDER ==> P[\"团队推广建议与限制\"]",
-  "isSvg": false
- }
-]

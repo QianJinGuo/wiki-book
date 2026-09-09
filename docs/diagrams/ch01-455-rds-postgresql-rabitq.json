@@ -1,7 +1,0 @@
-[
- {
-  "title": "RDS PostgreSQL 实现 RaBitQ 向量量化",
-  "code": "graph TD\n    B3[\"pgvector 三大瓶颈<br/>存储效率低 · 延迟长尾 · 插入劣化\"] --> RQ[\"RaBitQ 核心原理<br/>几何特性加随机旋转加 SQ4<br/>32 倍压缩 float32 到 1bit\"]\n    RQ --> IMPL[\"IVF 与 HNSW 两种实现差异\"]\n    IMPL --> PERF[\"1024 维 1 亿向量实测<br/>索引 16GB vs 689GB<br/>建索引 4 天缩至 4 小时\"]",
-  "isSvg": false
- }
-]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Amazon Quick Research: Agentic Mult",
+  "code": "graph TD\ngraph TD\n    A[\"核心问题：科研数据整合瓶颈\"] ==> B[\"Amazon Quick Research 核心能力\"]\n    B ==> C[\"Spaces：数据组织层\"]\n    C ==> D[\"端到端 walkthrough（罕见癌症研究案例）\"]\n    D ==> E[\"关键设计模式（可复用）\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

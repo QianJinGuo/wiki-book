@@ -1,7 +1,7 @@
 [
  {
   "title": "无障碍设计师 vibe coding",
-  "code": "graph TD\n    CORE[\"无障碍设计师 vibe coding\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "code": "graph TD\ngraph TD\n    A[\"概述\"] ==> B[\"\"Vibe coding\" 的真实定义（作者版本）\"]\n    B ==> C[\"实际产出（GitHub App 无障碍改进）\"]\n    C ==> D[\"关键贡献\"]\n    D ==> E[\"一句话定位\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

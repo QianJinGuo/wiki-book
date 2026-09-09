@@ -1,7 +1,7 @@
 [
  {
-  "title": "电商 AI 操作系统——从工具人到 All in One",
-  "code": "graph TD\n    RISE[\"电商 AI 操作系统崛起<br/>从工具人到 All in One<br/>Knowhow 加 Skill 加 Headless\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "title": "电商 AI 操作系统崛起",
+  "code": "graph TD\ngraph TD\n    A[\"电商 AI 操作系统崛起：从「工具人」到「All in On\"] ==> B[\"一句话定位\"]\n    B ==> C[\"行业背景：AI 工具的「摩尔定律」\"]\n    C ==> D[\"Token 成本急剧增长\"]\n    D ==> E[\"5 巨头 Headless 布局（All in One 战略\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

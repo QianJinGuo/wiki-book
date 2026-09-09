@@ -1,7 +1,0 @@
-[
- {
-  "title": "ICLR 2026 Scenethesis——Agent 闭环文生 3D",
-  "code": "graph TD\n    GAP[\"困境: 数据集训练锁死分布<br/>LLM 规划语义对但空间错\"] ==> S4[\"四阶段闭环<br/>语义粗规划 加 视觉空间落地<br/>加 SDF 物理优化 加 Judge 自检修复\"]\n    S4 ==> DATA[\"碰撞率 6.1% 到 0.8%<br/>首轮通过 72% 到 91%\"]\n    DATA ==> MEANING[\"从生成到闭环的范式意义<br/>具身智能战略价值\"]",
-  "isSvg": false
- }
-]

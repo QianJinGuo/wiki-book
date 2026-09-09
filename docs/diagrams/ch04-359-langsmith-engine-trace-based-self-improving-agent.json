@@ -1,0 +1,7 @@
+[
+ {
+  "title": "LangSmith Engine——Trace 自改进 Agent",
+  "code": "graph TD\n    FLOW[\"Trace 到 Screener 粗筛<br/>到 Investigator 调查 到 沉淀\"] ==> ISSUE[\"Issue 分类必须收敛<br/>9 类 taxonomy 防标签混乱<br/>trajectory 压缩行为骨架\"]\n    ISSUE ==> EVAL[\"Evaluator 结构型加语义型<br/>必须在已知失败上验证<br/>便宜模型覆盖加强模型判断\"]",
+  "isSvg": false
+ }
+]

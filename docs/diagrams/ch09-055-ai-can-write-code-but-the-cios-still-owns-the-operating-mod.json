@@ -1,7 +1,7 @@
 [
  {
-  "title": "AI 能写代码但 CIO 仍掌控运营模式",
-  "code": "graph TD\n    CORE[\"AI 能写代码<br/>但 CIO 掌控运营模式\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "title": "AI can write code, but the CIOs sti",
+  "code": "graph TD\ngraph TD\n    A[\"核心要点\"] ==> B[\"相关实体\"]\n    B ==> C[\"深度分析\"]\n    C ==> D[\"实践启示\"]\n    D ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

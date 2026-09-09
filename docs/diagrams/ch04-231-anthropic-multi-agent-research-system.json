@@ -1,7 +1,0 @@
-[
- {
-  "title": "Anthropic 多 Agent 研究系统",
-  "code": "graph TD\n    SYSTEM[\"Anthropic Multi-Agent<br/>Research System\"] ==> EVAL[\"Evaluation 相关要点\"]\n    EVAL ==> INS[\"深度分析与实践启示\"]",
-  "isSvg": false
- }
-]

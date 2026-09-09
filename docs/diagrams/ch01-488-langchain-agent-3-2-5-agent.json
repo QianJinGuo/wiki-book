@@ -1,7 +1,0 @@
-[
- {
-  "title": "LangChain 用 Agent 做销售获客——3 个月转化率提升 2.5 倍",
-  "code": "graph TD\n    PAIN[\"痛点: 手动调研 15 分钟<br/>信息孤岛 · 入站处理粗暴<br/>好项目从重复低效劳动里长出来\"] ==> ARCH[\"GTM Agent: 主 Agent 派活<br/>子 Agent 干活 · 工具隔离可并行\"]\n    ARCH ==> SAFE[\"偏保守哲学: 先找理由不发<br/>Skill 化邮件剧本按关系状态\"]\n    SAFE ==> HITL[\"人在环加自动学习<br/>先定义好再写代码<br/>Token 是投资不是成本\"]",
-  "isSvg": false
- }
-]

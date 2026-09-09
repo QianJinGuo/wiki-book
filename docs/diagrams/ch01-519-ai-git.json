@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AI 时代 Git 最佳实践",
+  "code": "graph TD\n    PAIN[\"四大痛点: diff 不记录意图<br/>加 脏工作区 加 merge 不校验语义 加 巨型提交\"] ==> BP[\"最佳实践: Checkpoint 小步提交<br/>加 Rebase 整理 加 原子提交<br/>加 Feature Branch 加 worktree 隔离\"]\n    BP ==> PR[\"结构化 PR 模板加设计决策<br/>加 AGENT.md 规范手册<br/>加 Stacked PR 层叠拆解\"]",
+  "isSvg": false
+ }
+]

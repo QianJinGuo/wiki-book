@@ -1,7 +1,7 @@
 [
  {
-  "title": "Announcing Claude Managed Agents on Clou",
-  "code": "graph TD\n    CORE[\"Announcing Claude Managed Agents on Clou\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "title": "Announcing Claude Managed Agents on",
+  "code": "graph TD\ngraph TD\n    A[\"核心要点\"] ==> B[\"深度分析\"]\n    B ==> C[\"实践启示\"]\n    C ==> D[\"相关实体\"]\n    D ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

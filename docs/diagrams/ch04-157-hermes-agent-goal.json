@@ -1,7 +1,0 @@
-[
- {
-  "title": "Hermes Agent /goal——长任务运行时架构",
-  "code": "graph TD\n    INSIGHT[\"核心洞察\"] ==> P4[\"四大运行时部件<br/>GoalState 设计要点\"]\n    P4 ==> JUDGE[\"Judge 判定策略: 保守优先<br/>fail-open 异常保护\"]\n    JUDGE ==> DIFF[\"与 Codex CLI 和 Claude Code 的差异\"]",
-  "isSvg": false
- }
-]

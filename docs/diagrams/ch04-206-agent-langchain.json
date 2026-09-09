@@ -1,0 +1,7 @@
+[
+ {
+  "title": "改进 Agent",
+  "code": "graph TD\ngraph TD\n    A[\"核心框架\"] ==> B[\"LangChain 实践\"]\n    B ==> C[\"关键概念\"]\n    C ==> D[\"实践启示\"]\n    D ==> E[\"关联\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

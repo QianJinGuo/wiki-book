@@ -1,7 +1,0 @@
-[
- {
-  "title": "RocketMQ 5.5 LiteTopic——AI Agent 异步通信消息模型",
-  "code": "graph TD\n    BG[\"Agent 异步通信成行业共识\"] ==> CORE[\"LiteTopic 核心设计<br/>父 Topic 加动态子 Topic 双层<br/>RocksDB 百万级共存<br/>事件驱动 Ready Set · 位点持久化\"]\n    CORE ==> DIFF[\"vs 传统 Topic 加 Consumer Group<br/>RocksDB 作索引引擎细节\"]\n    DIFF ==> POS[\"与 MCP Protocol 互补<br/>何时选 LiteTopic\"]",
-  "isSvg": false
- }
-]

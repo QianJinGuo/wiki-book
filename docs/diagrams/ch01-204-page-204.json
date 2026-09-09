@@ -1,7 +1,0 @@
-[
- {
-  "title": "自动进化的 Agent 平台——五条指令管全生命周期",
-  "code": "graph TD\n    P3[\"三条架构原则<br/>每个操作暴露成 API<br/>数据放同一处 · 日志第一公民\"] ==> W5[\"五条工作流<br/>Create · Improve 自动打探针<br/>Extend 外科手术式扩展<br/>Hill Climb 批量对抗测评 · Review\"]\n    W5 ==> ESSENCE[\"自动改进本质: 规格即测试用例<br/>Improve 与 Hill Climb 分工\"]\n    W5 ==> LIMIT[\"根本局限: 规格正确性无法自证<br/>人定方向 AI 执行\"]",
-  "isSvg": false
- }
-]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Reading today's open-closed perform",
+  "code": "graph TD\ngraph TD\n    A[\"Benchmark 演化和训练 Regimes 的转移\"] ==> B[\"前沿实验室的经济压力\"]\n    B ==> C[\"蒸馏 vs RL 环境：中国实验室的追赶杠杆\"]\n    C ==> D[\"开放模型的能力真相\"]\n    D ==> E[\"关键数据/实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

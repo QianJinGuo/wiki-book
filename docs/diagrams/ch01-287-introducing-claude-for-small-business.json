@@ -1,7 +1,0 @@
-[
- {
-  "title": "Claude for Small Business——SMB AI 采用范式转变",
-  "code": "graph TD\n    MISMATCH[\"障碍不是技术是错位<br/>小企业主使用停在聊天窗口<br/>缺把业务问题翻译成 AI 问题的能力\"] ==> WORKFLOW[\"工作流即产品<br/>15 类事务任务封装为可点选技能<br/>理解业务语境非简单触发\"]\n    WORKFLOW ==> TRUST[\"信任设计: 功能型到制度型信任\"]\n    TRUST ==> NICHE[\"生态位: Anthropic SMB 战略支点<br/>AI 民主化新路径\"]",
-  "isSvg": false
- }
-]

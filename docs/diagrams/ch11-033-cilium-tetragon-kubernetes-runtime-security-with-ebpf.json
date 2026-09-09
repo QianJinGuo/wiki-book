@@ -1,7 +1,7 @@
 [
  {
-  "title": "Cilium Tetragon — Kubernetes Runtime Sec",
-  "code": "graph TD\n    CORE[\"Cilium Tetragon — Kubernetes Runtime Sec\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "title": "Cilium Tetragon — Kubernetes Runtim",
+  "code": "graph TD\ngraph TD\n    A[\"一、为什么镜像扫描通过≠运行时安全\"] ==> B[\"二、运行时威胁模型（5 类核心向量）\"]\n    B ==> C[\"三、为什么容器隔离 + K8s 内置控制不够\"]\n    C ==> D[\"四、Cilium Tetragon：eBPF 内核级防御\"]\n    D ==> E[\"五、部署架构\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

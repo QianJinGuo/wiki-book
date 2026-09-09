@@ -1,0 +1,7 @@
+[
+ {
+  "title": "vivo Agent 系统分析",
+  "code": "graph TD\ngraph TD\n    A[\"核心隐喻对比\"] ==> B[\"四大身体系统问题\"]\n    B ==> C[\"Harness-as-ICU 框架\"]\n    C ==> D[\"vivoPPT 开发收敛路径\"]\n    D ==> E[\"当前阶段的本质判断\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

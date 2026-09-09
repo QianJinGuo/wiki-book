@@ -1,7 +1,0 @@
-[
- {
-  "title": "OpenClaw 与 Hermes 源码架构对比",
-  "code": "graph TD\n    OC[\"OpenClaw 微内核<br/>Gateway Session Key 路由<br/>五层架构 · Channel Plugin\"] --> CMP[\"架构对比<br/>微内核 vs 单体\"]\n    HM[\"Hermes 补充设计<br/>Dreaming 三阶段加权晋升记忆\"] --> CMP\n    CMP --> SEC[\"安全模型: 纵深 vs 分诊\"]\n    CMP --> LIM[\"两者局限与七大落地难题\"]\n    LIM --> CHOICE[\"选型: 当你选 OpenClaw<br/>当你选 Hermes<br/>架构迁移临界点\"]",
-  "isSvg": false
- }
-]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Agentic Incident Triage Assistant w",
+  "code": "graph TD\ngraph TD\n    A[\"相关实体\"] ==> B[\"核心要点\"]\n    B ==> C[\"与现有 wiki 实体的差异化\"]\n    C ==> D[\"实践启示\"]\n    D ==> E[\"相关主题\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

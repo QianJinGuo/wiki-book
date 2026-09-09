@@ -1,7 +1,7 @@
 [
  {
-  "title": "From PDFs to insights: Architecting an i",
-  "code": "graph TD\n    CORE[\"From PDFs to insights: Architecting an i\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "title": "From PDFs to insights: Architecting",
+  "code": "graph TD\ngraph TD\n    A[\"背景：为什么传统 OCR 不够\"] ==> B[\"4 层 IDP 架构\"]\n    B ==> C[\"三件套技术栈\"]\n    C ==> D[\"关键设计决策\"]\n    D ==> E[\"适用场景\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

@@ -1,7 +1,0 @@
-[
- {
-  "title": "Microsoft MXC——跨 OS 代理代码执行容器三层隔离",
-  "code": "graph TD\n    OS[\"OS 厂商入场安全层的范式意义\"] --> TB[\"10 个 Containment Backend 速查\"]\n    TB --> F1[\"AppContainer 三层 Fallback<br/>Windows 容器化演进路径\"]\n    F1 --> F2[\"bubblewrap proxy 故意不设 NO_PROXY\"]\n    F2 --> F3[\"LXC fail-closed scoping\"]\n    F3 --> HL[\"Hyperlight in-process 低延迟代价<br/>合作式与强制执行的诚实边界\"]\n    HL --> DP[\"dispatcher 模式: 策略与实现分离\"]",
-  "isSvg": false
- }
-]

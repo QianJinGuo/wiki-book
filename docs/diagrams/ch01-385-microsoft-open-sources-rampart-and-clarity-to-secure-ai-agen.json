@@ -1,7 +1,0 @@
-[
- {
-  "title": "Microsoft 开源 RAMPART 和 Clarity 保护 AI Agent",
-  "code": "graph TD\n    OPEN[\"Microsoft 开源 RAMPART<br/>和 Clarity 保护 AI Agent 开发\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
-  "isSvg": false
- }
-]

@@ -1,7 +1,0 @@
-[
- {
-  "title": "Yann LeCun——LLM 不是智能与世界模型 JEPA",
-  "code": "graph TD\n    CALC[\"四岁孩子 10^14 字节视觉信息<br/>与 LLM 语料同量级<br/>但信息密度天差地别\"] ==> FLAW[\"LLM 架构缺陷: 只产出 token<br/>不做世界状态预测<br/>无内部模拟 积累陈述性知识\"]\n    FLAW ==> JEPA[\"JEPA: 预测抽象状态非像素<br/>去掉不可预测细节保留规划相关\"]\n    JEPA ==> FLIP[\"架构翻转: 世界模型是核心<br/>LLM 只是接口 · 两道机器人墙\"]",
-  "isSvg": false
- }
-]

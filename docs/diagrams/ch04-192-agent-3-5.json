@@ -1,0 +1,7 @@
+[
+ {
+  "title": "自进化 Agent 安全治理",
+  "code": "graph TD\ngraph TD\n    A[\"自进化 Agent 安全治理\"] ==> B[\"一句话\"]\n    B ==> C[\"核心洞察\"]\n    C ==> D[\"3 类污染风险\"]\n    D ==> E[\"防学错：5 道写入闸门\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

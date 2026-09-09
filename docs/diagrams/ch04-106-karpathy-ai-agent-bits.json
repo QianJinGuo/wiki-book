@@ -1,7 +1,0 @@
-[
- {
-  "title": "Karpathy——程序员贡献的 bits 越来越少",
-  "code": "graph TD\n    DOWN[\"下降技能: 样板代码 · 语法记忆<br/>纯执行编码速度\"] ==> UP[\"上升四维: 问题定义 · 系统判断<br/>Agent 编排 · 评估验证<br/>加 被低估的沟通能力\"]\n    UP ==> WARNING[\"价值基础建立的时序问题\"]",
-  "isSvg": false
- }
-]

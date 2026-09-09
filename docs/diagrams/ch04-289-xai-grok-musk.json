@@ -1,7 +1,0 @@
-[
- {
-  "title": "xAI Grok——Musk 训练新一代模型与战略收缩",
-  "code": "graph TD\n    S1[\"xAI 的死是主动战略收缩<br/>非竞争失败\"] --> S2[\"Colossus 1 租给 Anthropic<br/>双赢算力套现\"]\n    S2 --> S3[\"11% GPU 利用率<br/>是组织工程能力危机非硬件不足\"]\n    S3 --> S4[\"Grok 定位困境<br/>社交媒体附属品非 AI 平台\"]\n    S4 --> S5[\"创始团队全员清零<br/>比资金链断裂更致命\"]",
-  "isSvg": false
- }
-]

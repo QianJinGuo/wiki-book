@@ -1,7 +1,7 @@
 [
  {
-  "title": "Reimagining the mouse pointer for the AI",
-  "code": "graph TD\n    CORE[\"Reimagining the mouse pointer for the AI\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "title": "Reimagining the mouse pointer for t",
+  "code": "graph TD\ngraph TD\n    A[\"摘要\"] ==> B[\"核心要点\"]\n    B ==> C[\"四项交互原则详解\"]\n    C ==> D[\"实践启示\"]\n    D ==> E[\"相关实体\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

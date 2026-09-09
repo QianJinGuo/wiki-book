@@ -1,7 +1,7 @@
 [
  {
-  "title": "你写的 Skill 及格了吗",
-  "code": "graph TD\n    GRADE[\"Skill 质量评估\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "title": "你写的 Skill，及格了吗？",
+  "code": "graph TD\ngraph TD\n    A[\"核心概念\"] ==> B[\"8 个评估维度\"]\n    B ==> C[\"多模型交叉验证机制\"]\n    C ==> D[\"四种执行策略自动路由\"]\n    D ==> E[\"关键价值\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

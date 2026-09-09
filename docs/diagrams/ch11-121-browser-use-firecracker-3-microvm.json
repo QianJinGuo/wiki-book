@@ -1,7 +1,7 @@
 [
  {
-  "title": "Browser Use Firecracker——云端浏览器成本降 3 倍",
-  "code": "graph TD\n    ARCH[\"microVM 架构决策<br/>成本降 3 倍\"] ==> INSIGHT[\"工程洞察\"]\n    INSIGHT ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "title": "Browser Use Firecracker",
+  "code": "graph TD\ngraph TD\n    A[\"核心架构决策\"] ==> B[\"成本对比\"]\n    B ==> C[\"工程洞察\"]\n    C ==> D[\"深度分析\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "一点天下",
+  "code": "graph TD\ngraph TD\n    A[\"yidian tianxia context engine\"] ==> B[\"易点天下 Agentic AI 工程化实践：上下文工程 + \"]\n    B ==> C[\"背景命题\"]\n    C ==> D[\"一、底层支撑：多云共生的确定性架构\"]\n    D ==> E[\"二、V1 → V2 技术演进\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

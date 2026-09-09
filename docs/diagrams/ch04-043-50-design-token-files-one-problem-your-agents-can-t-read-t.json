@@ -1,0 +1,7 @@
+[
+ {
+  "title": "50 design token files, one problem:",
+  "code": "graph TD\ngraph TD\n    A[\"Core Problem\"] ==> B[\"Three-Layer Analysis\"]\n    B ==> C[\"Practical Insights\"]\n    C ==> D[\"Unique Contributions\"]\n    D ==> E[\"Related\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

@@ -1,7 +1,0 @@
-[
- {
-  "title": "高德路线规划双路线——MobilityBench 加 TransitLM",
-  "code": "graph TD\n    R1[\"路线一 MobilityBench<br/>Agent 路线规划基准<br/>范式没有考卷 三大创新\"] ==> DIALECTIC[\"双路线辩证: 两条都会赢<br/>只是节奏不同\"]\n    R2[\"路线二 TransitLM<br/>端到端 RLLM<br/>挑衅性问题 三大设计\"] ==> DIALECTIC\n    DIALECTIC ==> VISION[\"时空基座模型愿景<br/>三步未来\"]",
-  "isSvg": false
- }
-]

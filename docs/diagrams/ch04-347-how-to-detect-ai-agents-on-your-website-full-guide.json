@@ -1,7 +1,0 @@
-[
- {
-  "title": "如何检测网站上的 AI Agent——完整指南",
-  "code": "graph TD\n    L4[\"四层检测信号体系<br/>身份层 网络层 浏览器层 行为层\"] ==> C6[\"六类 AI Agent 流量<br/>搜索爬虫 训练爬虫 外部抓取<br/>检索 Agent 任务 Agent 欺诈 Agent\"]\n    C6 ==> M3[\"三种检测方法对比<br/>传统 bot 检测 81% 绕过率<br/>CAPTCHA 已失效\"]\n    M3 ==> SHIFT[\"从 bot or not 到意图分类<br/>自适应响应策略\"]",
-  "isSvg": false
- }
-]

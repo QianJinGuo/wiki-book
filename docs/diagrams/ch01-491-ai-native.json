@@ -1,7 +1,0 @@
-[
- {
-  "title": "高德工业级能力底座——AI-Native 端云一体基建",
-  "code": "graph TD\n    PARA[\"悖论: AI 越写越快系统越来越乱<br/>三道鸿沟与五类结构性问题<br/>接口冗余 语义漂移 隐式依赖 碎片化 场景缺失\"] ==> ARCH[\"端云一体架构选择<br/>APP 端三层: 代码层 加 知识规范层 加 Skills 层\"]\n    ARCH ==> SF[\"skillforge Pipeline: 源码自动转译<br/>新接口几分钟进能力目录\"]\n    SF ==> DUAL[\"双语义 SKILL.md<br/>中文面向人 英文面向 Agent 触发\"]",
-  "isSvg": false
- }
-]

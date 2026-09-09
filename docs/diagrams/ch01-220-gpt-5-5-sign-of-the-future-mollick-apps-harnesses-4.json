@@ -1,0 +1,7 @@
+[
+ {
+  "title": "GPT-5.5",
+  "code": "graph TD\ngraph TD\n    A[\"核心原语：Models / Apps / Harnesses\"] ==> B[\"GPT-imagegen-2 与 Otter Test 跨越\"]\n    B ==> C[\"4 提示 PhD 论文实验（最关键实证）\"]\n    C ==> D[\"第二个组合实验：101 页 D&D 桌面 RPG\"]\n    D ==> E[\"Jagged Frontier 的延伸边界\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

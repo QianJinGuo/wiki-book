@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AI Skill 四层验证体系",
+  "code": "graph TD\n    Q[\"模型不能自评自审\"] ==> L0[\"Layer 0 执行模式分发\"]\n    L0 ==> L1[\"Layer 1 Executor<br/>加 文件系统隔离加 transcript 双分离\"]\n    L1 ==> L2A[\"Layer 2a 字段精确校验\"]\n    L1 ==> L2B[\"Layer 2b 独立 Grader Agent\"]\n    L2A ==> L3[\"Layer 3 盲测 Comparator 加 Analyzer<br/>加 quick 模式最少跑 2 次\"]\n    L2B ==> L3",
+  "isSvg": false
+ }
+]

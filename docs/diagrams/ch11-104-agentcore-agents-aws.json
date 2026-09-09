@@ -1,7 +1,7 @@
 [
  {
-  "title": "AgentCore 文旅行业自学习信息抽取 Agents",
-  "code": "graph TD\n    CORE[\"自学习可进化的<br/>文旅信息抽取 Agents\"] ==> TECH[\"核心技术\"]\n    TECH ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "title": "基于AgentCore构建自学习、可进化的文旅行业近似信息抽取Agen",
+  "code": "graph TD\ngraph TD\n    A[\"概述\"] ==> B[\"核心技术\"]\n    B ==> C[\"来源\"]\n    C ==> D[\"相关实体\"]\n    D ==> E[\"深度分析\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

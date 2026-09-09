@@ -1,0 +1,7 @@
+[
+ {
+  "title": "开源 AI 知识管理搭档 Obsidian + Claude Code",
+  "code": "graph TD\ngraph TD\n    A[\"核心痛点：文件分散与混乱\"] ==> B[\"五大集成策略\"]\n    B ==> C[\"解决文件混乱问题\"]\n    C ==> D[\"插件推荐\"]\n    D ==> E[\"Dataview 查询技巧\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

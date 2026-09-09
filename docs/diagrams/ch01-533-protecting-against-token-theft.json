@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Protecting Against Token Theft——AI 推理盗用防护",
+  "code": "graph TD\n    ECO[\"经济学: HTTP 便宜推理贵<br/>旧防御失效 加 暴露面三形状\"] ==> ARCH[\"滥用架构: 适配器包装成<br/>OpenAI 兼容端点加住宅代理\"]\n    ARCH ==> CASE[\"Chipotlai Max 真实案例\"]\n    ARCH ==> DEF[\"防御落在每次调用<br/>加 验证码形态演化<br/>加 3 行代码落地\"]",
+  "isSvg": false
+ }
+]

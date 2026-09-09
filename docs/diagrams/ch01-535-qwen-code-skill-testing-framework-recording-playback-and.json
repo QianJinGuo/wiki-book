@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Qwen Code Skill Testing Framework:",
+  "code": "graph TD\ngraph TD\n    A[\"背景与动机\"] ==> B[\"核心架构\"]\n    B ==> C[\"测试文件 Schema\"]\n    C ==> D[\"回归指标\"]\n    D ==> E[\"MVP 阶段\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

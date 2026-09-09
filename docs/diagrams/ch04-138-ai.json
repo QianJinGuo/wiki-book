@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AI 编程的下一场架构迁移",
+  "code": "graph TD\n    CORE[\"AI 编程的下一场架构迁移\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

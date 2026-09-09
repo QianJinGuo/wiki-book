@@ -1,7 +1,0 @@
-[
- {
-  "title": "Hermes Agent 保姆级教程——一句话组建 AI 打工团队",
-  "code": "graph TD\n    S1[\"阶段一: 装好 Hermes\"] --> S2[\"阶段二: 用 /goal 让 agent 自己跑\"]\n    S2 --> S3[\"阶段三: 用 Kanban 组多 agent 团队\"]\n    S3 --> S4[\"阶段四: 进阶玩法\"]\n    S4 --> PIT[\"容易踩的坑\"]",
-  "isSvg": false
- }
-]

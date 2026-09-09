@@ -1,0 +1,7 @@
+[
+ {
+  "title": "MIRA + MPA",
+  "code": "graph TD\ngraph TD\n    A[\"概述\"] ==> B[\"时代背景：递归自进化按下 AGI 加速键\"]\n    B ==> C[\"MPA 模型：40 项实验全面 SOTA\"]\n    C ==> D[\"前 SOTA 的暴力美学：Suiren-1.0\"]\n    D ==> E[\"AutoResearch 架构：MIRA 的角色\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Agent Principle Architecture Engine",
+  "code": "graph TD\ngraph TD\n    A[\"你不知道的 Agent：原理、架构与工程实践\"] ==> B[\"实践启示\"]\n    B ==> C[\"相关实体\"]\n    C ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Agent Skills vs Workflow低代码平台",
+  "code": "graph TD\ngraph TD\n    A[\"两种实现路径对比\"] ==> B[\"核心洞察\"]\n    B ==> C[\"Knowhow的核心性\"]\n    C ==> D[\"实践启示\"]\n    D ==> E[\"相关实体\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

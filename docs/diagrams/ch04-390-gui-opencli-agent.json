@@ -1,7 +1,0 @@
-[
- {
-  "title": "浏览器自动化——从 GUI 到 OpenCLI 的可调用性竞争",
-  "code": "graph TD\n    WHY[\"Agent 操控浏览器为何难走\"] --> WF[\"AI Agent 探索工作流<br/>懒加载必须主动探索\"]\n    WF --> AUTH[\"五级认证策略\"]\n    AUTH --> ADAPT[\"适配器: YAML vs TypeScript\"]\n    ADAPT --> GEN[\"自动生成 CLI<br/>AI 原生流程\"]\n    GEN --> FUT[\"未来竞争维度<br/>从界面到可调用性\"]",
-  "isSvg": false
- }
-]

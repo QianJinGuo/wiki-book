@@ -1,7 +1,0 @@
-[
- {
-  "title": "Agent 与 Skills 与 Teams 架构演进及技术选型",
-  "code": "graph TD\n    EV[\"Agent 演进四路径\"] --> K1[\"Skills vs 动态 System Prompt<br/>Skills 优于动态 Prompt\"]\n    K1 --> K2[\"DeepMind 5 条反直觉结论<br/>45% 阈值背后的 Scaling Law\"]\n    K2 --> SEL[\"P0-P3 选型路径<br/>Teams vs Multi-Agent<br/>去中心化适合工具类任务\"]\n    SEL --> CHK[\"落地 Checklist<br/>Multi-Agent 防翻车指南<br/>架构演进红灯信号\"]",
-  "isSvg": false
- }
-]

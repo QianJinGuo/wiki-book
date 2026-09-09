@@ -1,7 +1,0 @@
-[
- {
-  "title": "Natural Language Autoencoders——Anthropic 激活文字可解释性",
-  "code": "graph TD\n    NLA[\"NLA 方法<br/>AV 加 AR 双模块闭环\"] --> M[\"核心指标\"]\n    M --> S1[\"安全应用一: 可解释性<br/>检测未口头化的评估意识\"]\n    M --> S2[\"安全应用二: 模型审计<br/>Auditing Task\"]\n    S1 --> LIM[\"两大关键局限\"]\n    S2 --> LIM\n    LIM --> EV[\"技术演进路径与发布资源\"]",
-  "isSvg": false
- }
-]

@@ -1,7 +1,0 @@
-[
- {
-  "title": "LLM 架构新进展——KV Sharing mHC 与压缩注意力",
-  "code": "graph TD\n    MODELS[\"Gemma 4 加 Laguna 加 ZAYA1 加 DeepSeek V4<br/>架构分析\"] ==> AXIS[\"长上下文效率是主轴\"]\n    AXIS ==> MHC[\"mHC: 从注意力改造到残差流改造<br/>压缩范式的本质区别\"]\n    MHC ==> P[\"复杂度效率权衡 · 选型启发\"]",
-  "isSvg": false
- }
-]

@@ -1,7 +1,0 @@
-[
- {
-  "title": "Anthropic puts Claude agents on a meter",
-  "code": "graph TD\n    CORE[\"Anthropic puts Claude agents on a meter \"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
-  "isSvg": false
- }
-]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "From \"System of Record\" to \"System",
+  "code": "graph TD\ngraph TD\n    A[\"核心要点\"] ==> B[\"背景：CRM 作为\"数据积累护城河\"的历史逻辑\"]\n    B ==> C[\"核心论点：系统正在发生层级迁移\"]\n    C ==> D[\"AI Agent 如何重新定义 CRM 的角色\"]\n    D ==> E[\"AI 原生 GTM 初创公司的特征\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

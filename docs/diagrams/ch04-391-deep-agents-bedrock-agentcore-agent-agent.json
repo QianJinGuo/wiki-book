@@ -1,7 +1,0 @@
-[
- {
-  "title": "Deep Agents 加 Bedrock AgentCore——多 Agent 编排研究实战",
-  "code": "graph TD\n    PAT[\"核心模式\"] --> C5[\"五个核心组件\"]\n    C5 --> WF[\"工作流 4 步\"]\n    WF --> ISO[\"关键工程细节<br/>Browser MicroVM 隔离<br/>Code Interpreter 隔离 · Memory 配置\"]\n    ISO --> OBS[\"三层可观测性\"]\n    OBS --> DEP[\"模型无关 · 部署到 Runtime\"]",
-  "isSvg": false
- }
-]

@@ -1,7 +1,0 @@
-[
- {
-  "title": "全球首个原生彩色 LiDAR",
-  "code": "graph TD\n    SHIFT[\"感知代际切换: 拼接到原生<br/>源头融合几何与颜色\"] ==> CHIP[\"L4 芯片 Fujifilm 联合<br/>42.9 GMACs 加 20 万亿光子秒\"]\n    CHIP ==> SPEC[\"OS1 Max 256 通道 200 米<br/>1 lux 到 200 万 lux\"]\n    SPEC ==> STRATEGY[\"卖传感器到卖感知平台<br/>收购 StereoLabs 20 家客户\"]",
-  "isSvg": false
- }
-]

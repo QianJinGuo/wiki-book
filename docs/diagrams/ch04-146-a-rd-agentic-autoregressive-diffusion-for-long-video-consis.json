@@ -1,0 +1,7 @@
+[
+ {
+  "title": "A²RD: Agentic Autoregressive Diffus",
+  "code": "graph TD\ngraph TD\n    A[\"Summary\"] ==> B[\"核心架构解析\"]\n    B ==> C[\"工作流程：两阶段闭环\"]\n    C ==> D[\"LVBench-C 基准：非线性的实体与环境转换\"]\n    D ==> E[\"术语澄清\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

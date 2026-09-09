@@ -1,7 +1,0 @@
-[
- {
-  "title": "阿里云 CIO——AI 产研效能规模化提升实践",
-  "code": "graph TD\n    J[\"核心判断: 技能通胀 品味通缩\"] --> M2[\"两个流行误区<br/>AI 生码率是毒药<br/>Vibe Coding 不适合存量系统\"]\n    M2 --> LSH[\"AI 改写人月神话与左移<br/>四个显性改变\"]\n    LSH --> HS[\"新生产关系: Half-Stack<br/>PDFE 加 ABE<br/>灵魂乘骨架三位一体\"]",
-  "isSvg": false
- }
-]

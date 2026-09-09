@@ -1,7 +1,7 @@
 [
  {
-  "title": "Edge AI Networking — Wi-Fi 7/8 Convergen",
-  "code": "graph TD\n    CORE[\"Edge AI Networking — Wi-Fi 7/8 Convergen\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "title": "Edge AI Networking — Wi-Fi 7/8 Conv",
+  "code": "graph TD\ngraph TD\n    A[\"三个独有贡献\"] ==> B[\"Technical Requirements for Edg\"]\n    B ==> C[\"Wi-Fi 7/8 Capabilities\"]\n    C ==> D[\"Market Dynamics\"]\n    D ==> E[\"Vendor Ecosystem\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

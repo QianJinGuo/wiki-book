@@ -1,0 +1,7 @@
+[
+ {
+  "title": "GBrain——Postgres-native AI 第二大脑",
+  "code": "graph TD\n    CORE[\"Postgres-native 零 LLM 知识图谱<br/>Compiled Truth 加 Timeline 知识模型\"] ==> SKILLS[\"25 个 Skill 即插即用<br/>Thin Harness Fat Skill 哲学\"]\n    SKILLS ==> SEARCH[\"混合搜索加实体自动升级<br/>8 阶段检索\"]\n    SEARCH ==> CALL[\"能打电话的脑子<br/>Brain 垂直于 Source 正交维度\"]\n    CALL ==> SRC[\"术哥 v0.42 源码解析<br/>gbrain think 命令加局限标注\"]",
+  "isSvg": false
+ }
+]

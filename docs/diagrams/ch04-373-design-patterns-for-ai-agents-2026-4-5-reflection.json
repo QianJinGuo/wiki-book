@@ -1,7 +1,0 @@
-[
- {
-  "title": "2026 AI Agent 设计模式——4 大执行模式与选型决策树",
-  "code": "graph TD\n    PAT[\"4 大执行模式<br/>主流加新兴架构模式\"] --> DT[\"5 步选型决策树<br/>5 个关键阈值\"]\n    DT --> REF[\"Reflection 完整 Demo<br/>AgentScope 3 实现\"]\n    REF --> CMP[\"4 模式互补关系<br/>工程实践要点\"]",
-  "isSvg": false
- }
-]

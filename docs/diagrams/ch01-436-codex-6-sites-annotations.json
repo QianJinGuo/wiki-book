@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Codex 三件套",
+  "code": "graph TD\ngraph TD\n    A[\"关键数据\"] ==> B[\"6 个职位插件（62 应用 + 110 技能）\"]\n    B ==> C[\"Sites：Codex 生成可交互网站 + 直接托管\"]\n    C ==> D[\"Annotations：精准批注，不动其余\"]\n    D ==> E[\"范式判断\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

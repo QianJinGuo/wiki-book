@@ -1,0 +1,7 @@
+[
+ {
+  "title": "阿里云 AgentLoop",
+  "code": "graph TD\ngraph TD\n    A[\"阿里云 AgentLoop：企业级智能体自进化飞轮\"] ==> B[\"一、定位：企业智能体下半场的发令枪\"]\n    B ==> C[\"二、4 大工程难点（LLM-as-Judge 范式难以应对）\"]\n    C ==> D[\"三、AgentLoop 的 4 环飞轮产品化\"]\n    D ==> E[\"四、4 环闭环全景\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

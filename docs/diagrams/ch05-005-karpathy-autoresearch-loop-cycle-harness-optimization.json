@@ -1,7 +1,7 @@
 [
  {
-  "title": "Karpathy AutoResearch Loop Cycle & Harne",
-  "code": "graph TD\n    CORE[\"Karpathy AutoResearch Loop Cycle & Harne\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "title": "Karpathy AutoResearch Loop Cycle &",
+  "code": "graph TD\ngraph TD\n    A[\"核心发现：Benchmark 测的是模型 + Harnes\"] ==> B[\"什么是 Harness？\"]\n    B ==> C[\"Karpathy AutoResearch (Loop Cy\"]\n    C ==> D[\"Bilevel Autoresearch（双层自动研究）\"]\n    D ==> E[\"隐性代价\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

@@ -1,7 +1,0 @@
-[
- {
-  "title": "Agentic Loop Engineering 工程手册",
-  "code": "graph TD\n    CORE[\"Agentic Loop Engineering 工程手册\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
-  "isSvg": false
- }
-]

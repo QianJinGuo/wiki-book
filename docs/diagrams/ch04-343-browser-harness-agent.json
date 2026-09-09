@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Browser Harness — 自愈型浏览器 Agent 框架",
+  "code": "graph TD\ngraph TD\n    A[\"Overview\"] ==> B[\"架构\"]\n    B ==> C[\"核心创新：自愈机制（Self-Healing）\"]\n    C ==> D[\"Domain-Skills 自动沉淀\"]\n    D ==> E[\"与同类方案对比\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Opus 4.7 发布分析",
+  "code": "graph TD\ngraph TD\n    A[\"核心升级\"] ==> B[\"Benchmark 跃进\"]\n    B ==> C[\"第三方验证\"]\n    C ==> D[\"Claude Code 负责人 Boris Cherny 更\"]\n    D ==> E[\"官方 Claude Code 搭配最佳实践\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

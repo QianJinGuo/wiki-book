@@ -1,7 +1,7 @@
 [
  {
-  "title": "Harness Engineering——出事会炸的后端系统",
-  "code": "graph TD\n    TOPIC[\"腾讯 CDN LEGO<br/>Harness Engineering 实践\"] ==> QUESTION[\"AI 能在高风险后端写代码吗\"]\n    QUESTION ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "title": "Harness Engineering",
+  "code": "graph TD\ngraph TD\n    A[\"Harness Engineering：AI 能在真正出事\"] ==> B[\"相关实体\"]\n    B ==> C[\"深度分析\"]\n    C ==> D[\"实践启示\"]\n    D ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

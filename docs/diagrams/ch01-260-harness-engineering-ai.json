@@ -1,7 +1,0 @@
-[
- {
-  "title": "Harness Engineering——AI 一晚上自动评测和优化系统",
-  "code": "graph TD\n    JUMP[\"从人做评测到 AI 全自动评测<br/>AI First: 入口层面杜绝人工<br/>人只描述目标 3-4 分钟\"] ==> RUBRICS[\"Rubrics 评测创新<br/>等级化评测集替代主观判断<br/>标准评测 加 内容质量评测\"]\n    RUBRICS ==> LOOP[\"三轮优化循环<br/>90.7 到 97.4 到 99.1<br/>评测 加 建议 加 优化 往复\"]\n    LOOP ==> PRECOND[\"前提: 系统 AI Coding 含量要高<br/>老系统断头路难自动化\"]",
-  "isSvg": false
- }
-]

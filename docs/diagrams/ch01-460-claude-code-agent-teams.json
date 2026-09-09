@@ -1,7 +1,0 @@
-[
- {
-  "title": "Claude Code Agent Teams 实战——拆任务控权限收证据",
-  "code": "graph TD\n    Q[\"核心问题: 什么时候该用 Teams<br/>双向依赖才是适用场景\"] ==> S3[\"三种协作结构<br/>协作状态是多出来的东西\"]\n    S3 ==> Q4[\"并行前四个工程问题\"]\n    Q4 ==> RULES[\"文件边界是第一约束<br/>优先于角色分配<br/>STOP 条件写进 Prompt\"]\n    RULES ==> EVID[\"证据链是验收的核心\"]",
-  "isSvg": false
- }
-]

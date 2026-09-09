@@ -1,7 +1,0 @@
-[
- {
-  "title": "安全护栏的三域演进——从 Fable 5 提炼的设计原则",
-  "code": "graph TD\n    TRIGGER[\"触发: Fable 5 把护栏从<br/>后端黑盒推到前端产品体验\"] ==> D1[\"域 1 云平台护栏<br/>约束资源 确定性\"]\n    TRIGGER ==> D2[\"域 2 AI 网关护栏<br/>约束模型输出 概率性\"]\n    TRIGGER ==> D3[\"域 3 Anthropic 护栏<br/>约束模型间路由 决策性\"]\n    D1 ==> P5[\"五大共性设计原则 跨域抽象\"]\n    D2 ==> P5\n    D3 ==> P5",
-  "isSvg": false
- }
-]

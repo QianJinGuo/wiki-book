@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Skill 系统",
+  "code": "graph TD\ngraph TD\n    A[\"Skill 系统：Agent 如何把经验沉淀成可复用能力\"] ==> B[\"核心命题\"]\n    B ==> C[\"Memory vs Skill：两种记忆的本质区别\"]\n    C ==> D[\"为什么不能只用 Memory（三个坑）\"]\n    D ==> E[\"SKILL.md 五区块结构\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

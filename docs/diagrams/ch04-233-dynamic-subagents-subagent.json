@@ -1,7 +1,0 @@
-[
- {
-  "title": "Dynamic Subagents——代码驱动的 Subagent 编排",
-  "code": "graph TD\n    SHIFT[\"从模型推理编排到代码编排<br/>显式编排替代隐式编排<br/>确定性保证: 循环不漏项 分支不走偏\"] ==> M6[\"六种编排模式<br/>Classify Act · Fanout Synthesize<br/>Adversarial · Generate Filter · Tournament · Loop Done\"]\n    M6 ==> STACK[\"Deep Agents 加 QuickJS 解释器<br/>与 Claude Code Workflows 同源思想\"]",
-  "isSvg": false
- }
-]

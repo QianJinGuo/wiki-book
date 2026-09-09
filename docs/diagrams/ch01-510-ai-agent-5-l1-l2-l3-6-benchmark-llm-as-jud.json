@@ -1,7 +1,0 @@
-[
- {
-  "title": "AI Agent 评测实战——5 维体系与 L1 到 L3 准出分级",
-  "code": "graph TD\n    subgraph D5[\"5 维指标体系\"]\n        D1[\"任务完成度 北极星\"]\n        D2[\"工具使用质量\"]\n        D3[\"规划与推理\"]\n        D4[\"SubAgent 协作\"]\n        D5x[\"安全与效率\"]\n    end\n    D5 --> DS[\"评测集三层设计\"]\n    DS --> J[\"LLM-as-Judge 三模式<br/>结果评判 · 工具链评判 · 对比评判\"]\n    J --> BM[\"6 大 Benchmark 对比<br/>5 大方法论组合\"]\n    BM --> GATE[\"L1/L2/L3 准出分级<br/>按变更风险\"]\n    GATE --> WALL[\"持续运营<br/>每月更新 · 评测墙\"]",
-  "isSvg": false
- }
-]

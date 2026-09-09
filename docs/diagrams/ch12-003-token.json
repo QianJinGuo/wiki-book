@@ -1,7 +1,7 @@
 [
  {
   "title": "Token 撤销触发设备擦除的安全漏洞",
-  "code": "graph TD\n    CORE[\"Token 撤销触发设备擦除的安全漏洞\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "code": "graph TD\ngraph TD\n    A[\"核心要点\"] ==> B[\"相关实体\"]\n    B ==> C[\"事件概述\"]\n    C ==> D[\"攻击路径深度解析\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

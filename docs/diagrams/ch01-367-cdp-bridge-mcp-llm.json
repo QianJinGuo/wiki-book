@@ -1,0 +1,7 @@
+[
+ {
+  "title": "CDP Bridge MCP",
+  "code": "graph TD\ngraph TD\n    A[\"核心理念\"] ==> B[\"可用工具\"]\n    B ==> C[\"安装与配置\"]\n    C ==> D[\"注意事项\"]\n    D ==> E[\"项目信息\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

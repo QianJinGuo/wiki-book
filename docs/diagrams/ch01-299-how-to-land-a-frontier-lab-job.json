@@ -1,7 +1,0 @@
-[
- {
-  "title": "如何拿到前沿实验室的工作",
-  "code": "graph TD\n    CONCLUSION[\"核心结论: 三项底层特质缺一不可\"] ==> EDGE[\"LLM 边缘工作\"]\n    EDGE ==> PATH[\"具体练习路径\"]\n    PATH ==> KERNEL[\"Kernel 工作的战略价值<br/>Agentic Loop 的探索性质\"]",
-  "isSvg": false
- }
-]

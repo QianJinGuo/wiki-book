@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Small Hermes 自我进化 Agent 架构",
+  "code": "graph TD\ngraph TD\n    A[\"核心洞察\"] ==> B[\"七重困境 → 设计决策映射\"]\n    B ==> C[\"三层上下文架构\"]\n    C ==> D[\"反思机制设计\"]\n    D ==> E[\"单向数据流约束\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

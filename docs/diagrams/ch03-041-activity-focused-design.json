@@ -1,7 +1,7 @@
 [
  {
-  "title": "Activity-Focused Design——活动导向设计",
-  "code": "graph TD\n    CORE[\"以用户活动为中心非人口统计<br/>Goal 加 Activity 加 Task 三概念<br/>适用 Task Analysis 加 JTBD\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "title": "Activity-Focused Design",
+  "code": "graph TD\ngraph TD\n    A[\"核心要点\"] ==> B[\"深度分析\"]\n    B ==> C[\"实践启示\"]\n    C ==> D[\"相关实体\"]\n    D ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

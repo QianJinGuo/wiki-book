@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Why Use App-Level Auth When Every D",
+  "code": "graph TD\ngraph TD\n    A[\"相关实体\"] ==> B[\"核心要点\"]\n    B ==> C[\"实战启示\"]\n    C ==> D[\"上线状态 / 链接\"]\n    D ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

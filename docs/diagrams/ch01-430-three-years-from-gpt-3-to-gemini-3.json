@@ -1,7 +1,0 @@
-[
- {
-  "title": "GPT-3 到 Gemini 3 的三年——从 Chatbox 到数字同事",
-  "code": "graph TD\n    CORE[\"能编码等于通用工具<br/>计算机上一切最终是代码\"] --> INBOX[\"Antigravity Inbox<br/>从 Chatbox 到 Coworker<br/>分配任务 · 需要时 ping 你\"]\n    INBOX --> TEST[\"PhD 级智能真实测试<br/>众筹数据研究 14 页论文<br/>也有 PhD 学生的弱点\"]\n    TEST --> HITL[\"Human-in-the-Loop 演变<br/>从修复者到指导者<br/>ChatGPT 以来最大变化\"]",
-  "isSvg": false
- }
-]

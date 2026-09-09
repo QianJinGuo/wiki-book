@@ -1,7 +1,7 @@
 [
  {
-  "title": "Why Drizzle ORM couldn't publish new rel",
-  "code": "graph TD\n    CORE[\"Why Drizzle ORM couldn't publish new rel\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "title": "Why Drizzle ORM couldn't publish ne",
+  "code": "graph TD\ngraph TD\n    A[\"Manifests\"] ==> B[\"Packuments\"]\n    B ==> C[\"The 100 MB limit.\"]\n    C ==> D[\"Is my project at risk of hitti\"]\n    D ==> E[\"How can I avoid large manifest\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

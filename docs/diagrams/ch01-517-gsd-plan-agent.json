@@ -1,0 +1,7 @@
+[
+ {
+  "title": "GSD——用 Plan 约束 Agent 行为边界",
+  "code": "graph TD\n    L4[\"四层结构: ROADMAP 项目层<br/>加 Phase 边界 加 Plan frontmatter 合约<br/>加 Summary provides affects 引用网络\"] ==> BUDGET[\"context-budget 4 档退化<br/>主动退化而非被动溢出\"]\n    BUDGET ==> SUB[\"Subagent 委派: orchestrator<br/>不读大文件 · 六步走完一个 phase\"]",
+  "isSvg": false
+ }
+]

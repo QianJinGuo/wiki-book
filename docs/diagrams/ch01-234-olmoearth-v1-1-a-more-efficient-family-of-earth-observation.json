@@ -1,7 +1,0 @@
-[
- {
-  "title": "OlmoEarth v1.1——更高效的地球观测模型家族",
-  "code": "graph TD\n    TOKEN[\"核心创新: Token 序列长度优化<br/>合并分辨率 Token 替代分块\"] ==> EFF[\"三倍效率提升<br/>Token 合并的工程代价\"]\n    EFF ==> BENCH[\"模型规格与 Benchmark\"]\n    BENCH ==> MEANING[\"行星尺度 AI 经济临界点<br/>遥感与 LLM 效率路线分化\"]",
-  "isSvg": false
- }
-]

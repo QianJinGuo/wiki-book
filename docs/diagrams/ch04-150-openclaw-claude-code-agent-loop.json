@@ -1,0 +1,7 @@
+[
+ {
+  "title": "OpenClaw 与 Claude Code 的 Agent Loop",
+  "code": "graph TD\ngraph TD\n    A[\"五级跃迁史：从 While 循环到多 Agent 编排\"] ==> B[\"Boris Cherny 的循环实操指南\"]\n    B ==> C[\"与已有实体的关联\"]\n    C ==> D[\"核心论点\"]\n    D ==> E[\"三大核心新逻辑\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

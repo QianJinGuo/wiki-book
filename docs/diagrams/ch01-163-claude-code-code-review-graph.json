@@ -1,7 +1,0 @@
-[
- {
-  "title": "开源 Claude Code 本地代码知识图谱",
-  "code": "graph TD\n    CORE[\"开源 Claude Code 本地代码知识图谱\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
-  "isSvg": false
- }
-]

@@ -1,7 +1,7 @@
 [
  {
   "title": "Claude Dispatch + 接口力量",
-  "code": "graph TD\n    CORE[\"Claude Dispatch + 接口力量\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "code": "graph TD\ngraph TD\n    A[\"核心论点：接口是 AI 能力的真正瓶颈\"] ==> B[\"接口类型 1：专业化工具\"]\n    B ==> C[\"接口类型 2：个人 Agent\"]\n    C ==> D[\"接口类型 3：按需生成\"]\n    D ==> E[\"结论\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Hermes-Agent 官方 Kanban 深度实测",
+  "code": "graph TD\ngraph TD\n    A[\"核心结论\"] ==> B[\"Kanban 架构设计\"]\n    B ==> C[\"七条实测踩坑记录\"]\n    C ==> D[\"为什么 Gateway 才是本体\"]\n    D ==> E[\"上层 Orchestrator 选型对比\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

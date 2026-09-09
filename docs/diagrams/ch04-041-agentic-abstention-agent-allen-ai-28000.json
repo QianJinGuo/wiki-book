@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Agentic Abstention—Agent 能及时停止吗？华盛顿",
+  "code": "graph TD\ngraph TD\n    A[\"Agentic Abstention—Agent 能及时停止\"] ==> B[\"核心问题\"]\n    B ==> C[\"与 LLM Abstention 的关键区别\"]\n    C ==> D[\"三类典型失败模式\"]\n    D ==> E[\"基准结果（28000+ 任务）\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

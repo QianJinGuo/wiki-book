@@ -1,7 +1,0 @@
-[
- {
-  "title": "Stochastic Parrot Thought Experiment",
-  "code": "graph TD\n    CORE[\"Stochastic Parrot Thought Experiment\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
-  "isSvg": false
- }
-]

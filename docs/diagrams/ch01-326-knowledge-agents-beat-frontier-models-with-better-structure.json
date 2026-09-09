@@ -1,7 +1,0 @@
-[
- {
-  "title": "Knowledge Agents 更好结构击败前沿模型",
-  "code": "graph TD\n    L4[\"四层: Sources 加 Concepts<br/>加 Theses 加 PRIMER\"] ==> SEARCH[\"三轮多路搜索加混合检索<br/>BM25 加 Embedding\"]\n    SEARCH ==> RESULT[\"模型均衡化效应\"]\n    RESULT ==> P[\"与传统 RAG 的区别\"]",
-  "isSvg": false
- }
-]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "SchemaFlow: OpenAI Cookbook Partner",
+  "code": "graph TD\ngraph TD\n    A[\"SchemaFlow 是什么\"] ==> B[\"五大核心设计模式\"]\n    B ==> C[\"与现有 wiki 实体的差异化\"]\n    C ==> D[\"实践启示（Actionable）\"]\n    D ==> E[\"三个独有贡献（不应合并到现有 entity）\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

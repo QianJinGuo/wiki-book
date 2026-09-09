@@ -1,0 +1,7 @@
+[
+ {
+  "title": "DeepSeek V4 Triton FP4 优化实战",
+  "code": "graph TD\ngraph TD\n    A[\"核心贡献\"] ==> B[\"关键数据\"]\n    B ==> C[\"SM121 vs SM100 关键差异\"]\n    C ==> D[\"核心洞察\"]\n    D ==> E[\"深度分析\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

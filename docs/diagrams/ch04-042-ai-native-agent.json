@@ -1,7 +1,0 @@
-[
- {
-  "title": "AI Native 团队协同——知识底座加 Agent 加人三层闭环",
-  "code": "graph TD\n    ARCH[\"三层闭环: 知识底座加 Agent 加人\"] ==> FLOW[\"协同机制与流程设计\"]\n    FLOW ==> INS[\"深度分析与实践启示\"]",
-  "isSvg": false
- }
-]

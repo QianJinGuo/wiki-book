@@ -1,7 +1,0 @@
-[
- {
-  "title": "Karpathy 访谈——从 Vibe Coding 到 Agentic Engineering",
-  "code": "graph TD\n    CORE[\"核心论点与三个提醒<br/>本质区别: 可验证性是边界框架\"] ==> SW[\"Software 3.0: 程序边界扩大<br/>MenuGen 两范式直接碰撞\"]\n    SW ==> GHOST[\"幽灵框架与 LLM 真实运作<br/>智能变便宜后什么仍稀缺\"]\n    GHOST ==> ADV[\"给开发者 管理者 创业者的建议\"]",
-  "isSvg": false
- }
-]

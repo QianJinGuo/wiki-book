@@ -1,0 +1,7 @@
+[
+ {
+  "title": "MobileGym",
+  "code": "graph TD\ngraph TD\n    A[\"概述\"] ==> B[\"核心命题\"]\n    B ==> C[\"训练/评测手机 Agent 的两大困境\"]\n    C ==> D[\"破局思路：交互保真\"]\n    D ==> E[\"MobileGym 架构\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

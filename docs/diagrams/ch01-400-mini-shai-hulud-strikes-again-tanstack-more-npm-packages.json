@@ -1,7 +1,0 @@
-[
- {
-  "title": "Mini Shai-Hulud 再度来袭——TanStack 等 npm 包被攻陷",
-  "code": "graph TD\n    ATTACK[\"TeamPCP 协同供应链攻击<br/>同时入侵 npm 和 PyPI<br/>TanStack 1200 万周下载量\"] ==> MECHANISM[\"劫持 CI/CD 发布系统<br/>加 OpenID Connect 令牌分发恶意包\"]\n    MECHANISM ==> BUG[\"@uipath 和 @mistralai payload<br/>存在 bug 致恶意功能失效\"]",
-  "isSvg": false
- }
-]

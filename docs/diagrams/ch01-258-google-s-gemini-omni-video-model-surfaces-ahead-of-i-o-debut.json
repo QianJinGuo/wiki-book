@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Google's Gemini Omni video model su",
+  "code": "graph TD\ngraph TD\n    A[\"核心要点\"] ==> B[\"事件经过\"]\n    B ==> C[\"产品定位分析\"]\n    C ==> D[\"深度分析\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

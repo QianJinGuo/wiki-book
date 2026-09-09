@@ -1,7 +1,7 @@
 [
  {
   "title": "高德交易 VOC 自动排查",
-  "code": "graph TD\n    CORE[\"高德交易 VOC 自动排查\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "code": "graph TD\ngraph TD\n    A[\"架构设计：主从职责分离\"] ==> B[\"领域路由精细化\"]\n    B ==> C[\"生产级多 Agent 协作机制\"]\n    C ==> D[\"自进化（越用越准）\"]\n    D ==> E[\"Hook 无侵入定制\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

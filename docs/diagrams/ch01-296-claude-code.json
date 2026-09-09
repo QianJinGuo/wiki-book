@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Code 设计原则与对照分析",
+  "code": "graph TD\ngraph TD\n    A[\"五条系统设计原则\"] ==> B[\"与 Harness Engineering 的对应关系\"]\n    B ==> C[\"Claude Code、OpenClaw、Hermes 的位\"]\n    C ==> D[\"核心启示\"]\n    D ==> E[\"深度分析\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

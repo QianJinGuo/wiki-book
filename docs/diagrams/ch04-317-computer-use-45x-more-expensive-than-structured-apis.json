@@ -1,7 +1,0 @@
-[
- {
-  "title": "Computer Use 比结构化 API 贵 45 倍",
-  "code": "graph TD\n    DATA[\"同一任务成本对比<br/>Computer Use 贵 45 倍<br/>为视觉感知永远付出代价\"] ==> WHEN1[\"何时选 Computer Use\"]\n    DATA ==> WHEN2[\"何时选 API Agent\"]\n    WHEN1 ==> MIX[\"混合策略\"]\n    WHEN2 ==> MIX",
-  "isSvg": false
- }
-]

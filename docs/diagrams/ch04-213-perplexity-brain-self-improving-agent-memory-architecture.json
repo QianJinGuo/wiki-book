@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Perplexity Brain: Self-improving Ag",
+  "code": "graph TD\ngraph TD\n    A[\"核心设计：两个维度\"] ==> B[\"Context Graph（上下文图）\"]\n    B ==> C[\"递归自改进循环\"]\n    C ==> D[\"与现有 Agent 记忆方案的差异\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

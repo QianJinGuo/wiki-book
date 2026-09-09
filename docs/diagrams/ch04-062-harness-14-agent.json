@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Harness 工程 14 步路线图",
+  "code": "graph TD\ngraph TD\n    A[\"Harness 工程 14 步路线图\"] ==> B[\"核心命题\"]\n    B ==> C[\"三层楼模型\"]\n    C ==> D[\"第一层：什么是 Harness（步骤 01-04）\"]\n    D ==> E[\"第二层：配置 Harness（步骤 05-09）\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

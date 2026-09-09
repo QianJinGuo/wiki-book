@@ -1,7 +1,0 @@
-[
- {
-  "title": "为什么不能让 AI 自己评审自己——Skill 四层验证体系",
-  "code": "graph TD\n    Q[\"问题: 模型不能自评自审\"] --> L0[\"Layer 0 执行模式分发\"]\n    L0 --> L1[\"Layer 1 Executor<br/>文件系统隔离 P0<br/>transcript 双分离格式 P2\"]\n    L1 --> L2A[\"Layer 2a 字段精确校验<br/>Ground Truth\"]\n    L1 --> L2B[\"Layer 2b 独立 Grader Agent\"]\n    L2A --> L3[\"Layer 3 盲测<br/>Comparator 加 Analyzer<br/>quick 模式最少跑 2 次\"]\n    L2B --> L3",
-  "isSvg": false
- }
-]

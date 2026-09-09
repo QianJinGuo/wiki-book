@@ -1,0 +1,7 @@
+[
+ {
+  "title": "SE-GA GUI 智能体记忆增强自进化",
+  "code": "graph TD\ngraph TD\n    A[\"GUI 智能体的结构性矛盾\"] ==> B[\"TTME：三层记忆结构\"]\n    B ==> C[\"MASE：两阶段自我进化\"]\n    C ==> D[\"实验结果\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

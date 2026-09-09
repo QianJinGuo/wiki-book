@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Agent 自进化评估瓶颈 — 外置 evaluator 是自动自进化",
+  "code": "graph TD\ngraph TD\n    A[\"核心命题\"] ==> B[\"与已有实体的关系\"]\n    B ==> C[\"正例：深层自改进只在可验证区间成立\"]\n    C ==> D[\"反例：优化器会攻击分数\"]\n    D ==> E[\"LLM-as-Judge 的风险\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

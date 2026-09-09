@@ -1,0 +1,7 @@
+[
+ {
+  "title": "NomShub——Cursor 远程隧道利用链",
+  "code": "graph TD\n    E1[\"Shell Builtin 沙箱逃逸<br/>状态修改型 builtin 是过滤盲区\"] ==> E2[\"Dev Tunnels LOTL 武器化<br/>合法工具变攻击面\"]\n    E2 ==> E3[\"AI Agent 作攻击放大器<br/>知识门槛降到行为理解\"]\n    E3 ==> PERSIST[\".zshenv 无条件执行<br/>本地持久化最优解\"]\n    PERSIST ==> DEF[\"防御: 跟踪安全上下文操作<br/>加 workspace 权限限制 加 隧道独立授权\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Building web search-enabled agents",
+  "code": "graph TD\ngraph TD\n    A[\"Summary\"] ==> B[\"相关实体\"]\n    B ==> C[\"深度分析\"]\n    C ==> D[\"实践启示\"]\n    D ==> E[\"关联实体\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

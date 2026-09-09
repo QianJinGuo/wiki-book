@@ -1,7 +1,0 @@
-[
- {
-  "title": "超级个体到超级组织——李志飞 CodeBanana 转型",
-  "code": "graph TD\n    THESIS[\"超级个体被高估<br/>超级组织被低估\"] ==> WORKFLOW[\"原型驱动工作流<br/>替代线性流水线<br/>沟通与执行合二为一\"]\n    WORKFLOW ==> DESIGN[\"系统设计师: 把控制权<br/>还给需求方<br/>A2A 加 Skill 加 Teams 三层\"]\n    DESIGN ==> BOTTLENECK[\"延迟满足感是组织<br/>转型的真正瓶颈\"]",
-  "isSvg": false
- }
-]

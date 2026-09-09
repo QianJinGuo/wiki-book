@@ -1,7 +1,0 @@
-[
- {
-  "title": "DeepSeek V4 Triton FP4 优化实战",
-  "code": "graph TD\n    CONTRIB[\"核心贡献与关键数据\"] ==> SM[\"SM121 vs SM100 关键差异\"]\n    SM ==> INS[\"核心洞察与深度分析\"]\n    INS ==> P[\"实践启示\"]",
-  "isSvg": false
- }
-]

@@ -1,7 +1,0 @@
-[
- {
-  "title": "Multi-Agent 四种协作模式怎么选",
-  "code": "graph TD\n    M4[\"Supervisor · Swarm<br/>网状 · 流水线\"] ==> SELECTION[\"选型逻辑\"]\n    SELECTION ==> INS[\"深度分析\"]\n    SELECTION ==> P[\"实践启示\"]",
-  "isSvg": false
- }
-]

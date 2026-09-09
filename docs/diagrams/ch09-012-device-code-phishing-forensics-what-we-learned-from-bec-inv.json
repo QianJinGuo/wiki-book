@@ -1,7 +1,7 @@
 [
  {
-  "title": "Device Code Phishing Forensics: What We",
-  "code": "graph TD\n    CORE[\"Device Code Phishing Forensics: What We \"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "title": "Device Code Phishing Forensics: Wha",
+  "code": "graph TD\n    CORE[\"Device Code Phishing Forensics: Wha\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
   "isSvg": false
  }
 ]

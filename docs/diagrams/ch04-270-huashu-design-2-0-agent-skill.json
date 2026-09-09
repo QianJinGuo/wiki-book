@@ -1,7 +1,0 @@
-[
- {
-  "title": "Huashu-Design 2.0——Agent Skill 反收敛三套逻辑",
-  "code": "graph TD\n    K[\"定位: Skill vs 软件<br/>AI 能力提升后反收敛是普遍矛盾\"] --> P3[\"3 个真实坑<br/>收敛成安全极简 · 无真图空壳<br/>一本正经编造产品事实\"]\n    P3 --> PR3[\"3 条反收敛原则<br/>撞借请三套并行<br/>核心资产前置 · 事实验证第 0\"]\n    PR3 --> PPT[\"PPT 范式转变: HTML deck 优于 pptx\"]",
-  "isSvg": false
- }
-]

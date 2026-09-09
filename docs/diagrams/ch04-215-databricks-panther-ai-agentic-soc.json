@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Databricks 收购 Panther",
+  "code": "graph TD\ngraph TD\n    A[\"核心架构\"] ==> B[\"传统 SIEM vs Agentic SOC\"]\n    B ==> C[\"Agentic SOC 工作流机制\"]\n    C ==> D[\"Databricks 安全收购布局\"]\n    D ==> E[\"关键洞察\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

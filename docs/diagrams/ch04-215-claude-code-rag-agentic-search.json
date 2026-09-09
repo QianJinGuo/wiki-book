@@ -1,7 +1,0 @@
-[
- {
-  "title": "Claude Code 为何放弃 RAG 选择 Agentic Search",
-  "code": "graph TD\n    FLAWS[\"RAG 四大结构性缺陷<br/>管道维护复杂 · 检索不稳定<br/>无法处理推理查询 · 向量库安全负担\"] ==> ADV[\"Agentic Search 优势: Agent 自主判断<br/>多轮检索 交叉验证 逐步逼近<br/>局限: 简单问题更慢更耗 token\"]\n    ADV ==> HYBRID[\"混合方案: RAG 作 Tools<br/>Agent 决定何时检索是否多轮\"]",
-  "isSvg": false
- }
-]

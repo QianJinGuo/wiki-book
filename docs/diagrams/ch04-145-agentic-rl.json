@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Agentic RL 六框架实践地图",
+  "code": "graph TD\ngraph TD\n    A[\"核心概述\"] ==> B[\"从单轮 MDP 到多轮环境交互\"]\n    B ==> C[\"六大框架\"]\n    C ==> D[\"新型失稳模式（RAGEN）\"]\n    D ==> E[\"八条实践原则\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

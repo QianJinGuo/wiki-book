@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Hermes Agent 闭环学习机制",
+  "code": "graph TD\ngraph TD\n    A[\"文章概要\"] ==> B[\"核心机制\"]\n    B ==> C[\"与 OpenClaw 的核心差异\"]\n    C ==> D[\"关键要点\"]\n    D ==> E[\"相关链接\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

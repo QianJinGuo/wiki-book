@@ -1,7 +1,0 @@
-[
- {
-  "title": "Paperclip AI 公司操作系统第五篇完结",
-  "code": "graph TD\n    SERIES[\"Paperclip AI 公司操作系统<br/>系列第五篇完结\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
-  "isSvg": false
- }
-]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Karpathy 最新访谈",
+  "code": "graph TD\ngraph TD\n    A[\"核心论点\"] ==> B[\"三个提醒\"]\n    B ==> C[\"行业信号\"]\n    C ==> D[\"实践启示\"]\n    D ==> E[\"相关实体\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

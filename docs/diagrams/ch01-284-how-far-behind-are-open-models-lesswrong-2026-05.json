@@ -1,0 +1,7 @@
+[
+ {
+  "title": "How far behind are open models? (Le",
+  "code": "graph TD\ngraph TD\n    A[\"核心发现\"] ==> B[\"数据来源\"]\n    B ==> C[\"方法论\"]\n    C ==> D[\"反向/前瞻视角\"]\n    D ==> E[\"与中国模型\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

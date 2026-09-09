@@ -1,7 +1,0 @@
-[
- {
-  "title": "三器合一——Comet 加 OpenSpec 加 Superpowers 给 AI 编程上工程纪律",
-  "code": "graph TD\n    TH[\"核心论点: 瓶颈是工程纪律非模型能力\"] --> DIV[\"三器分工<br/>Comet 管 WHAT · OpenSpec 管 HOW<br/>Superpowers 管 WHEN-NEXT\"]\n    DIV --> SP[\"Superpowers: 57 行 Shell 自举<br/>session-start 脚本 · 平台适配三层<br/>Skill 依赖链路\"]\n    DIV --> OS[\"OpenSpec: Delta Spec 增量规格<br/>ADDED MODIFIED REMOVED<br/>Artifact Graph 制品依赖 · 26 平台适配器\"]\n    DIV --> CM[\"Comet: YAML 状态机<br/>五阶段 5 种转换事件<br/>Guard 脚本强制纪律\"]\n    SP --> CTX[\"上下文压缩省 25-30% Token<br/>SHA256 追踪 · 交接包\"]\n    OS --> CTX\n    CM --> CTX\n    CTX --> MA[\"多 Agent 协作: 上下文隔离是关键<br/>Shell 加 YAML 的工程取舍\"]",
-  "isSvg": false
- }
-]

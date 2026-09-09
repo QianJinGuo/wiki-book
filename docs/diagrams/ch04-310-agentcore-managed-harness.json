@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AgentCore Managed Harness",
+  "code": "graph TD\ngraph TD\n    A[\"Overview\"] ==> B[\"核心概念：Harness Engineering\"]\n    B ==> C[\"相关查询\"]\n    C ==> D[\"AgentCore Managed Harness 核心功能\"]\n    D ==> E[\"三步开始\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

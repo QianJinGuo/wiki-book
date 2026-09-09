@@ -1,0 +1,7 @@
+[
+ {
+  "title": "MCP · Skill · Agent · LLM · Harness",
+  "code": "graph TD\ngraph TD\n    A[\"相关实体\"] ==> B[\"核心架构（三层结构）\"]\n    B ==> C[\"逐层拆解\"]\n    C ==> D[\"Memory 分层\"]\n    D ==> E[\"Harness 的六大职责\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

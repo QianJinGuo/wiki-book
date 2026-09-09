@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Anthropic发布「AI原生创业公司」手册",
+  "code": "graph TD\ngraph TD\n    A[\"Anthropic 官方 AI 原生创业公司手册\"] ==> B[\"核心框架：创业四阶段\"]\n    B ==> C[\"关键洞察\"]\n    C ==> D[\"护城河建设\"]\n    D ==> E[\"相关页面\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

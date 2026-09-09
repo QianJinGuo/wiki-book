@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Self-Taught RLVR 综述",
+  "code": "graph TD\ngraph TD\n    A[\"三种 Self 框架\"] ==> B[\"RLSD：OPSD + RLVR 解耦\"]\n    B ==> C[\"NPO：Near-Future Policy Optimiz\"]\n    C ==> D[\"CoPD：协同进化蒸馏\"]\n    D ==> E[\"深度分析\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

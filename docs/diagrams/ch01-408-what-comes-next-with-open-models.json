@@ -1,0 +1,7 @@
+[
+ {
+  "title": "What comes next with open models",
+  "code": "graph TD\ngraph TD\n    A[\"What comes next with open mode\"] ==> B[\"The balance of power in open v\"]\n    B ==> C[\"Open weights as part of an AI \"]\n    C ==> D[\"Still looking for open model b\"]\n    D ==> E[\"Open models that are specific,\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

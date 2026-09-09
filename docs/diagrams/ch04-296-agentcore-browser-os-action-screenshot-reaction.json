@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AgentCore Browser OS级操作",
+  "code": "graph TD\ngraph TD\n    A[\"核心内容\"] ==> B[\"三个关键洞察\"]\n    B ==> C[\"实践启示\"]\n    C ==> D[\"与知识库的连接\"]\n    D ==> E[\"相关实体\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

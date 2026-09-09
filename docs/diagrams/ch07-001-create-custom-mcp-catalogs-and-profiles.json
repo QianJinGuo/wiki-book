@@ -1,7 +1,7 @@
 [
  {
-  "title": "Create Custom MCP Catalogs and Profiles",
-  "code": "graph TD\n    CORE[\"Create Custom MCP Catalogs and Profiles\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "title": "Create Custom MCP Catalogs and Prof",
+  "code": "graph TD\ngraph TD\n    A[\"摘要\"] ==> B[\"核心要点\"]\n    B ==> C[\"实践启示\"]\n    C ==> D[\"相关实体\"]\n    D ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

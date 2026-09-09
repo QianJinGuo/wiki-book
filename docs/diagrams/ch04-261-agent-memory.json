@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Agent Memory 架构本质",
+  "code": "graph TD\ngraph TD\n    A[\"瓶颈在持续理解\"] ==> B[\"先划边界：Memory vs State / Policy \"]\n    B ==> C[\"蒸馏是管道的一步，不是记忆本身\"]\n    C ==> D[\"四个建模对象\"]\n    D ==> E[\"基本记忆单元：六维度\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

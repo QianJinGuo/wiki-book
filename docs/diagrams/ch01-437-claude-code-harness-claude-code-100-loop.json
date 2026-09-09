@@ -1,7 +1,0 @@
-[
- {
-  "title": "Claude Code 之父访谈——编程已结束 harness 将消失 loop 是未来",
-  "code": "graph TD\n    END[\"编程已经解决了<br/>2025 年 10 月起模型写 100% 代码\"] --> MOBILE[\"手机就是工位<br/>一天 150 个 PR 全手机操作\"]\n    MOBILE --> LOOP[\"Loop 才是未来<br/>最重要功能: 后台定时执行\"]\n    LOOP --> DISAPPEAR[\"Harness 将消失<br/>一年后外壳可能只剩 100 行代码<br/>MCP 就是答案\"]\n    DISAPPEAR --> ERA[\"软件民主化历史重演<br/>人人写代码 · 跨学科通才崛起<br/>10 倍创业公司颠覆格局\"]",
-  "isSvg": false
- }
-]

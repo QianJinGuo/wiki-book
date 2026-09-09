@@ -1,7 +1,0 @@
-[
- {
-  "title": "ES 作 Agent 记忆层——召回率 0.89",
-  "code": "graph TD\n    IDX[\"四索引分型: episodic 原始消息<br/>加 semantic 稳定事实 加 procedural playbook<br/>加 catalog 公共共享 不可合并\"] ==> HYBRID[\"混合检索: BM25 加 dense 双通路<br/>单腿 0.708 加 0.845 混合后 0.889<br/>Verbatim Pre-Recall 绕过 LLM 泛化\"]\n    HYBRID ==> TUNING[\"RECALL_OVER_FETCH_K 80<br/>Per-index 时间衰减差异<br/>Soft-Supersession 非破坏矛盾处理\"]",
-  "isSvg": false
- }
-]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Harness 工程——Claude Code 作评测搭建者",
+  "code": "graph TD\n    SHIFT[\"从评测代码到评测即 Prompt\"] ==> L3[\"三层指标: L1 加 L2 加 L3 可组合菜单\"]\n    L3 ==> FIVE[\"五步搭建法 加 6 Agent 加速比<br/>加 评测集四原则 加 Rubric 设计\"]\n    L3 ==> PIT[\"评测 Agent 4 个踩坑<br/>自身需独立调试验证周期\"]",
+  "isSvg": false
+ }
+]

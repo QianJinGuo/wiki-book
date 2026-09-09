@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Vercel AI SDK 7 — TypeScript Agent",
+  "code": "graph TD\ngraph TD\n    A[\"核心定位\"] ==> B[\"五大能力域\"]\n    B ==> C[\"技术架构洞察\"]\n    C ==> D[\"生态位分析\"]\n    D ==> E[\"相关主题\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

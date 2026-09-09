@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Hidden Technical Debt of AI Systems",
+  "code": "graph TD\ngraph TD\n    A[\"核心论点\"] ==> B[\"Harness 层的五个技术债务维度\"]\n    B ==> C[\"与现有实体的差异化\"]\n    C ==> D[\"实践启示\"]\n    D ==> E[\"参考\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

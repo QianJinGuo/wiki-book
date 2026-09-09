@@ -1,7 +1,0 @@
-[
- {
-  "title": "EU AI Act 合规——LLM 微调的 FLOPs 计量",
-  "code": "graph TD\n    LOGIC[\"EU AI Act 合规框架核心逻辑\"] ==> METER[\"Fine-Tuning FLOPs Meter 架构<br/>FLOPs 计量方法技术解析\"]\n    METER ==> SCALE[\"生产环境规模分析<br/>合规超标的处置路径\"]\n    SCALE ==> P[\"FLOPs 追踪纳入标准工作流<br/>能力分级与合规义务映射\"]",
-  "isSvg": false
- }
-]

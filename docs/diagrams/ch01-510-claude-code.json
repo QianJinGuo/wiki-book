@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Code 源码核心机制",
+  "code": "graph TD\n    SP[\"System Prompt 动态组装\"] ==> TOOLS[\"工具系统: isConcurrencySafe<br/>加 shouldDefer 加 ToolSearch<br/>加 结果大小控制\"]\n    TOOLS ==> CTX[\"上下文压缩: 动态阈值<br/>加 五层压缩机制\"]\n    CTX ==> SUB[\"Sub-Agent 七种执行模式\"]\n    SUB ==> SEC[\"权限: Allow Deny Ask<br/>加 AI 分类器 加 Worktree 隔离\"]\n    SEC ==> HOOKS[\"Hooks 24 种事件 加 CLAUDE.md<br/>加 会话恢复 加 MCP 加 预算管理\"]",
+  "isSvg": false
+ }
+]

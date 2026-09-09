@@ -1,7 +1,0 @@
-[
- {
-  "title": "GPT 5.4 是 Codex 的一次大跨越",
-  "code": "graph TD\n    F4[\"四维评估取代单点正确性<br/>正确性 易用性 速度 成本\"] ==> EFF[\"Reasoning Efficiency<br/>被低估的竞争维度<br/>达到同分所需 token 下降\"]\n    EFF ==> PHI[\"Claude vs GPT Agent 哲学分歧<br/>推测 intent vs 严格照做<br/>吸引新用户 vs 老协调员\"]\n    PHI ==> NEXT[\"下一形态等于 Slack<br/>多 agent 在用户视野下协调\"]",
-  "isSvg": false
- }
-]

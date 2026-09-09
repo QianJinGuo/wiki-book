@@ -1,7 +1,0 @@
-[
- {
-  "title": "AlphaEvolve——科学与算法发现的编码 Agent",
-  "code": "graph TD\n    ALPHA[\"AlphaEvolve: 编码 Agent<br/>用于科学和算法发现\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
-  "isSvg": false
- }
-]

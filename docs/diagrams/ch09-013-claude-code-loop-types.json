@@ -1,7 +1,7 @@
 [
  {
-  "title": "Claude Code Loop Types——官方四种循环",
-  "code": "graph TD\n    TYPES[\"官方四种 Loop 类型\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "title": "Claude Code Loop Types — 官方四种循环模式分类",
+  "code": "graph TD\ngraph TD\n    A[\"四种 Loop 类型一览\"] ==> B[\"代码质量五原则（第 2 来源独家）\"]\n    B ==> C[\"Token 管理六策略（第 2 来源独家）\"]\n    C ==> D[\"第 3 来源 — 架构师中文实践视角（2026-07-15）\"]\n    D ==> E[\"/loop 源码机制与实操验证（SUPP 2026-08-0\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

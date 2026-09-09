@@ -1,7 +1,0 @@
-[
- {
-  "title": "AgentOps——用 AgentCore 规模化运营 Agentic AI",
-  "code": "graph TD\n    P4[\"四大支柱\"] ==> G[\"治理与安全<br/>多账号隔离 · Cedar 策略<br/>记忆命名空间隔离\"]\n    P4 ==> B[\"构建与运维<br/>一切皆版本化制品<br/>不可变版本加端点别名\"]\n    P4 ==> E[\"评估: 四层体系<br/>工具 轮次 会话 系统<br/>持续质量流非发布前快照\"]\n    P4 ==> O[\"可观测性: 四层遥测<br/>OpenTelemetry 统一协议\"]",
-  "isSvg": false
- }
-]

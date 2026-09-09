@@ -1,7 +1,0 @@
-[
- {
-  "title": "CDP Bridge MCP——LLM 操作真实浏览器",
-  "code": "graph TD\n    CORE[\"CDP Bridge 连接 LLM<br/>与真实浏览器\"] ==> TOOLS[\"可用工具与安装配置\"]\n    TOOLS ==> NOTE[\"注意事项\"]\n    TOOLS ==> INS[\"深度分析与实践启示\"]",
-  "isSvg": false
- }
-]

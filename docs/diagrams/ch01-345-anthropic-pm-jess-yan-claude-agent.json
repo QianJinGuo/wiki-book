@@ -1,7 +1,0 @@
-[
- {
-  "title": "Anthropic PM Jess Yan 三 Agent 实践",
-  "code": "graph TD\n    VIEW[\"核心观点与三个自开 Agent\"] ==> PLATFORM[\"Managed Agents 能力<br/>加 Memory 加定价\"]\n    PLATFORM ==> INS[\"深度分析与实践启示\"]",
-  "isSvg": false
- }
-]

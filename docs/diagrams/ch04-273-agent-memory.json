@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Agent Memory 架构解析",
+  "code": "graph TD\ngraph TD\n    A[\"核心论点\"] ==> B[\"Memory 三主链路\"]\n    B ==> C[\"五条路线对比\"]\n    C ==> D[\"Coding Agent 四层记忆结构\"]\n    D ==> E[\"最小可用 Memory 设计（7 步）\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

@@ -1,7 +1,7 @@
 [
  {
   "title": "Superpowers 6.0 反作弊重写",
-  "code": "graph TD\n    CORE[\"Superpowers 6.0 反作弊重写\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "code": "graph TD\ngraph TD\n    A[\"Superpowers 6.0 反作弊重写：守门人焊死工程\"] ==> B[\"一句话定位\"]\n    B ==> C[\"六大技术杠杆\"]\n    C ==> D[\"诚实边界（术哥明确标注）\"]\n    D ==> E[\"Wiki 关联\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

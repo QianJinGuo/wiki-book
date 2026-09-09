@@ -1,7 +1,0 @@
-[
- {
-  "title": "AMD 免费 GPU 私有化部署 DeepSeek-R1",
-  "code": "graph TD\n    DRIVER[\"四大驱动力: 数据隐私 成本失控<br/>服务断供风险 · GPU 门槛\"] ==> SETUP[\"Radeon PRO W7900 48GB 免费 200h<br/>ROCm 7.2.1 加 vLLM 加 ModelScope 镜像\"]\n    SETUP ==> CLIENT[\"ngrok 公网隧道<br/>Cherry Studio 加 OpenCode 两种接入\"]",
-  "isSvg": false
- }
-]

@@ -1,7 +1,0 @@
-[
- {
-  "title": "向量数据库已死——为什么集体抛弃 RAG",
-  "code": "graph TD\n    FAIL[\"向量检索在代码上系统性翻车<br/>RAG baseline 仅 1.96%<br/>五大失败机制\"] ==> REASONS[\"Anthropic 四个理由<br/>更准确 更新鲜 更安全 更可靠<br/>JIT 加载替代 pre-inference retrieval\"]\n    REASONS ==> EVIDENCE[\"证据三连<br/>Amazon 忠实度 94.5% 对比<br/>多 Agent 高 90.2% 代价 15 倍 token<br/>Search-R1 EM 反超 24%\"]\n    EVIDENCE ==> V5[\"五种架构变体<br/>纯 agentic · 混合 lexical · AST 感知<br/>专用检索模型 · RL 训练策略\"]",
-  "isSvg": false
- }
-]

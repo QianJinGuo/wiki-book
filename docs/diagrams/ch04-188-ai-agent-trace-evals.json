@@ -1,7 +1,0 @@
-[
- {
-  "title": "Trace 即 Evals——攻克稳定性成本与评估",
-  "code": "graph TD\n    PAIN[\"三大难题: 稳定性 成本归因 效果评估\"] ==> TRACE[\"Trace 即 Evals<br/>评估内建于执行过程<br/>每步 prompt 加工具 加 结果全记录\"]\n    TRACE ==> EVOLVE[\"三阶段演进: Prompt 到 Context<br/>到 Harness Engineering<br/>Harness 下沉趋势\"]\n    TRACE ==> DIAG[\"路径依赖与分叉点的诊断价值\"]",
-  "isSvg": false
- }
-]

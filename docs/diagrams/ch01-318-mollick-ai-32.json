@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Mollick AI 进展的 32 只水獭基准",
+  "code": "graph TD\ngraph TD\n    A[\"三个核心观察\"] ==> B[\"水獭基准（Otter Benchmark）方法论\"]\n    B ==> C[\"与其他 Mollick 作品的关系\"]\n    C ==> D[\"相关实体\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

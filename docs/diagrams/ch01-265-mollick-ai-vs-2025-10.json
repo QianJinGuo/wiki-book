@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Mollick 的 AI 实用指南",
+  "code": "graph TD\ngraph TD\n    A[\"背景数据\"] ==> B[\"免费 vs 付费决策\"]\n    B ==> C[\"模型选择（具体操作）\"]\n    C ==> D[\"Deep Research 是核心被低估功能\"]\n    D ==> E[\"Quick Tips（Mollick 实用建议）\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

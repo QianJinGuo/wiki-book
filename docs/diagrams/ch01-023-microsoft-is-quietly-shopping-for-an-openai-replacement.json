@@ -1,7 +1,7 @@
 [
  {
-  "title": "Microsoft is quietly shopping for an Ope",
-  "code": "graph TD\n    CORE[\"Microsoft is quietly shopping for an Ope\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "title": "Microsoft is quietly shopping for a",
+  "code": "graph TD\ngraph TD\n    A[\"核心要点\"] ==> B[\"事件背景\"]\n    B ==> C[\"Cursor 收购尝试：最具体的退却\"]\n    C ==> D[\"Inception：正在进行的对话\"]\n    D ==> E[\"MAI：内部自研路径\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

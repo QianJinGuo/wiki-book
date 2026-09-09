@@ -1,0 +1,7 @@
+[
+ {
+  "title": "RAG vs LLM Wiki 深度对比",
+  "code": "graph TD\ngraph TD\n    A[\"评分\"] ==> B[\"与现有 wiki 的关系\"]\n    B ==> C[\"核心框架\"]\n    C ==> D[\"趋势判断\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

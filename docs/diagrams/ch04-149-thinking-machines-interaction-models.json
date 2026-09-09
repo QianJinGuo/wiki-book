@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Thinking Machines 交互模型（Interaction",
+  "code": "graph TD\ngraph TD\n    A[\"核心定位\"] ==> B[\"核心思路\"]\n    B ==> C[\"系统架构：双模型协作\"]\n    C ==> D[\"时间对齐微轮次（200ms Micro-Turns）\"]\n    D ==> E[\"无编码器早期融合\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

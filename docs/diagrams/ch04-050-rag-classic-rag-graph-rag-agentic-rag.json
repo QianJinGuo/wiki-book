@@ -1,7 +1,0 @@
-[
- {
-  "title": "三种 RAG 架构——Classic Graph Agentic",
-  "code": "graph TD\n    EVO[\"演进: Classic RAG<br/>到 Graph RAG 到 Agentic RAG\"] ==> SEL[\"选型决策\"]\n    SEL ==> INS[\"深度分析与实践启示\"]",
-  "isSvg": false
- }
-]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "LangGraph 底层原理——把 LLM 变成状态机",
+  "code": "graph TD\n    ENGINE[\"StateGraph 执行引擎\"] ==> REDUCER[\"Reducer 状态更新核心机制\"]\n    REDUCER ==> SCHED[\"图调度器: 决定下一步去向\"]\n    SCHED ==> PARALLEL[\"Fan-out 加 Fan-in 并行执行\"]\n    PARALLEL ==> COMPILED[\"编译产物 CompiledGraph\"]",
+  "isSvg": false
+ }
+]

@@ -1,7 +1,0 @@
-[
- {
-  "title": "CMU PACE——Agentic 能力评估代理",
-  "code": "graph TD\n    EFF[\"成本降 100 倍<br/>自动选 100 题 19 基准 11 能力\"] ==> THEORY[\"能力维度可迁移性<br/>Local 加 Global 选题互补\"]\n    THEORY ==> LIMIT[\"代理评测与完整评测边界\"]",
-  "isSvg": false
- }
-]

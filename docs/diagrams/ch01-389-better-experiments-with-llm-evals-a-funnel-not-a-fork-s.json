@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Better Experiments with LLM Evals —",
+  "code": "graph TD\ngraph TD\n    A[\"核心要点\"] ==> B[\"相关实体\"]\n    B ==> C[\"深度分析\"]\n    C ==> D[\"实践启示\"]\n    D ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

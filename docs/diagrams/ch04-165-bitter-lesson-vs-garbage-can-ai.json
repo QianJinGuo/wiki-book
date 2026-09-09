@@ -1,7 +1,0 @@
-[
- {
-  "title": "苦味教训 vs 垃圾筒——组织理论视角的 AI 采用",
-  "code": "graph TD\n    TWO[\"两个理论框架<br/>Garbage Can: 组织是随机碰撞<br/>Bitter Lesson: 通用方法加算力胜出\"] ==> M2[\"两种 Agent 路线<br/>Manus 精心手工构建<br/>ChatGPT Agent 结果训练\"]\n    M2 ==> CONFLICT[\"组织理论与 AI 采用的根本冲突<br/>手工定制 vs 结果训练的本质差异\"]\n    CONFLICT ==> P[\"定义好结果而非好流程<br/>投资结果定义和评估能力\"]",
-  "isSvg": false
- }
-]

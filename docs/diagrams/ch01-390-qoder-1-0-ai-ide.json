@@ -1,7 +1,0 @@
-[
- {
-  "title": "Qoder 1.0——从 AI IDE 到 Agent 工作台",
-  "code": "graph TD\n    RELEASE[\"Qoder 1.0 正式发布<br/>从 AI IDE 到 Agent 自主开发工作台\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
-  "isSvg": false
- }
-]

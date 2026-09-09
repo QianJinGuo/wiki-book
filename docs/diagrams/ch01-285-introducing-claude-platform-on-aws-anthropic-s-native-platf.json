@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Introducing Claude Platform on AWS:",
+  "code": "graph TD\ngraph TD\n    A[\"Claude Platform experience thr\"] ==> B[\"Getting started with Claude Pl\"]\n    B ==> C[\"Claude Platform on AWS in prac\"]\n    C ==> D[\"Conclusion\"]\n    D ==> E[\"相关实体\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

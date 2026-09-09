@@ -1,0 +1,7 @@
+[
+ {
+  "title": "never waste a token",
+  "code": "graph TD\ngraph TD\n    A[\"核心要点\"] ==> B[\"the problem that’s easy to mis\"]\n    B ==> C[\"the move: stop tying the reque\"]\n    C ==> D[\"评估理由\"]\n    D ==> E[\"相关\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

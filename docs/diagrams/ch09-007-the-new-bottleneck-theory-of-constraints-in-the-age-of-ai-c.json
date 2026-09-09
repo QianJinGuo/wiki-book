@@ -1,7 +1,7 @@
 [
  {
-  "title": "The New Bottleneck: Theory of Constraint",
-  "code": "graph TD\n    CORE[\"The New Bottleneck: Theory of Constraint\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "title": "The New Bottleneck: Theory of Const",
+  "code": "graph TD\ngraph TD\n    A[\"核心框架：从代码生成到流程瓶颈\"] ==> B[\"为什么流程变革如此困难\"]\n    B ==> C[\"实践建议\"]\n    C ==> D[\"与 Harness Engineering 的关联\"]\n    D ==> E[\"相关实体\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

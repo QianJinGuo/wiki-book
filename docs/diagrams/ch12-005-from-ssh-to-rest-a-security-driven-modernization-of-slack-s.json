@@ -1,7 +1,7 @@
 [
  {
-  "title": "From SSH to REST: A Security-Driven Mode",
-  "code": "graph TD\n    CORE[\"From SSH to REST: A Security-Driven Mode\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "title": "From SSH to REST: A Security-Driven",
+  "code": "graph TD\n    CORE[\"From SSH to REST: A Security-Driven\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
   "isSvg": false
  }
 ]

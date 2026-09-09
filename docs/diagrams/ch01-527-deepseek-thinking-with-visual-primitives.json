@@ -1,0 +1,7 @@
+[
+ {
+  "title": "DeepSeek Thinking with Visual Primitives",
+  "code": "graph TD\n    GAP[\"Reference Gap 指代鸿沟<br/>文字描述空间关系的损耗\"] ==> VP[\"视觉原语思考: 从验证媒介<br/>到思考媒介的范式转移\"]\n    VP ==> COMP[\"压缩链路 7056 倍\"]\n    COMP ==> TRAIN[\"5 阶段训练管线: 预训练<br/>到 专家化 SFT 加 RL 到 统一 RFT 到 OPD\"]\n    TRAIN ==> BENCH[\"拓扑推理是真差距<br/>加 Anti-cheat 揭示能力边界\"]",
+  "isSvg": false
+ }
+]

@@ -1,7 +1,0 @@
-[
- {
-  "title": "腾讯混元 Hy3 preview 开源——Agent 能力提升",
-  "code": "graph TD\n    REL[\"Hy3 preview 开源发布<br/>主打全面实用性\"] ==> AGENT[\"Agent 能力大幅提升\"]\n    AGENT ==> USE[\"腾讯核心业务全面接入<br/>多主线 AI 产品验证收益\"]\n    USE ==> TECH[\"技术创新核心突破\"]\n    TECH ==> STRAT[\"战略意图与竞争格局影响\"]",
-  "isSvg": false
- }
-]

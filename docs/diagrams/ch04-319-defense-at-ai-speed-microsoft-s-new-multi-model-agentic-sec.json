@@ -1,7 +1,0 @@
-[
- {
-  "title": "Defense at AI Speed——微软多模型 Agentic 安全系统 MDASH",
-  "code": "graph TD\n    BG[\"从 DARPA AIxCC 到微软内部规模化<br/>专有代码面 · 规模化 DevSecOps · 高价值\"] ==> ARCH[\"MDASH 编排 100 加 specialized agents<br/>多模型 Agentic Pipeline\"]\n    ARCH ==> RES[\"基准: StorageDrive 21 比 21 零假阳性<br/>CyberGym 88.45% 排名第一<br/>Patch Tuesday 发现 4 个 Critical\"]\n    RES ==> INS[\"工程价值在系统而非任何单一模型<br/>单模型盲区分析\"]",
-  "isSvg": false
- }
-]

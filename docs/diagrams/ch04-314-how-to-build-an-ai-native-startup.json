@@ -1,7 +1,0 @@
-[
- {
-  "title": "如何构建 AI 原生创业公司",
-  "code": "graph TD\n    MAP[\"先画地图: 频率胜过重要性<br/>列出重复工作按自主程度分级\"] ==> MEM[\"把记忆装进代码库<br/>Context 是操作记忆<br/>Git 仓库起步 · 原始与提炼分开\"]\n    MEM ==> TOOL[\"选最轻的工具\"]\n    TOOL ==> RIGHT[\"做对了什么: Skills 与 Evals<br/>评估驱动复利增长\"]\n    RIGHT ==> FOUNDER[\"创始人先上 加 每周进化<br/>Context 即护城河\"]",
-  "isSvg": false
- }
-]

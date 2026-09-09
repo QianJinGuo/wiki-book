@@ -1,0 +1,7 @@
+[
+ {
+  "title": "高德 Marketing AutoResearch",
+  "code": "graph TD\ngraph TD\n    A[\"一句话\"] ==> B[\"核心问题：营销系统的\"结构性断层\"\"]\n    B ==> C[\"三大技术架构\"]\n    C ==> D[\"五层解耦工程实现\"]\n    D ==> E[\"实践验证（5 个真实脱敏案例）\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

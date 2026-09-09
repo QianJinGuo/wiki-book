@@ -1,7 +1,0 @@
-[
- {
-  "title": "最佳 Claude Code 配置——Karpathy 的 CLAUDE.md 四条规则",
-  "code": "graph TD\n    R4[\"四条规则精确对治四种失败<br/>Think Before Coding 先想清楚<br/>Simplicity First 能简单就简单<br/>Surgical Changes 只动该动的<br/>Goal-Driven 目标可验证\"] ==> WHY[\"复杂偏向是 RL 内置偏见<br/>顺手优化是独立失败模式<br/>行为准则是概率分布约束\"]\n    WHY ==> STAR[\"134k Star 证明开发者<br/>需要契约式约束\"]\n    STAR ==> USE[\"为项目建专属 CLAUDE.md<br/>主动暴露歧义 · 老工程师测试\"]",
-  "isSvg": false
- }
-]

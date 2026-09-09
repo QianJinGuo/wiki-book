@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Agent 观测与优化开发者摸底",
+  "code": "graph TD\ngraph TD\n    A[\"行业基线：四维成熟度数据\"] ==> B[\"Close the Loop：七环节可验证优化链路\"]\n    B ==> C[\"SkillOps：Skill 作为可度量战略资产\"]\n    C ==> D[\"相关实体\"]\n    D ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

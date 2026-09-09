@@ -1,0 +1,7 @@
+[
+ {
+  "title": "百型智能 OntoZ",
+  "code": "graph TD\ngraph TD\n    A[\"百型智能 OntoZ：企业本体论 + 群智能体协同体系\"] ==> B[\"核心概念：企业本体（Enterprise Ontology）\"]\n    B ==> C[\"群智能体生态\"]\n    C ==> D[\"核心技术：二阶控制论架构\"]\n    D ==> E[\"认知基础设施（Cognition Infra）\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

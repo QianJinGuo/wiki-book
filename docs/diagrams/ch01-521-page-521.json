@@ -1,0 +1,7 @@
+[
+ {
+  "title": "淘天生码工作流最佳实践",
+  "code": "graph TD\n    CONVERGE[\"收敛: 统一云端托管生码<br/>加 跨仓库研发工作区方案\"] ==> WORKFLOW[\"可编排场景化工作流<br/>功能树核心载体<br/>高确定性加低确定性差异化策略\"]\n    WORKFLOW ==> KNOWLEDGE[\"知识沉淀正向循环<br/>D2C 还原加 API 接口优化\"]",
+  "isSvg": false
+ }
+]

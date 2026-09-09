@@ -1,7 +1,0 @@
-[
- {
-  "title": "Thinking Machines 交互模型",
-  "code": "graph TD\n    CORE[\"核心定位: 回合制到实时协作\"] ==> TECH[\"200ms 微轮次加早期融合<br/>交互加后台双模型架构\"]\n    TECH ==> BENCH[\"基准测试与安全设计\"]\n    BENCH ==> INS[\"深度分析与实践启示\"]",
-  "isSvg": false
- }
-]

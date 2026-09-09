@@ -1,7 +1,0 @@
-[
- {
-  "title": "LoongSuite GenAI 可观测语义规范",
-  "code": "graph TD\n    CORE[\"LoongSuite GenAI 可观测语义规范\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
-  "isSvg": false
- }
-]

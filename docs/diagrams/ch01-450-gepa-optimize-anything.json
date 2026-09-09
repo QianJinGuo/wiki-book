@@ -1,7 +1,0 @@
-[
- {
-  "title": "GEPA optimize_anything——通用文本优化 API",
-  "code": "graph TD\n    Q[\"核心问题\"] --> S[\"核心方案: 声明式 API<br/>三种优化模式\"]\n    S --> M1[\"机制 1: ASI 可行动侧信息\"]\n    S --> M2[\"机制 2: Pareto 前沿搜索\"]\n    M1 --> EXP[\"实验结果与框架对比\"]\n    M2 --> EXP\n    EXP -.关联.-> HERMES[\"Hermes Skill 互优化实战\"]",
-  "isSvg": false
- }
-]

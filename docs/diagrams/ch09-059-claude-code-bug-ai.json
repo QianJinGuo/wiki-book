@@ -1,7 +1,7 @@
 [
  {
-  "title": "Claude Code 全自动修 Bug 神仙配置",
-  "code": "graph TD\n    L6[\"六层配置: CLAUDE.md 累积规则<br/>加 PostToolUse 加 Stop 质量门禁<br/>加 PreToolUse 加 自动重试 加 跨会话记忆\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "title": "复制这套神仙配置，让Claude Code全自动修Bug！告别每天重复",
+  "code": "graph TD\ngraph TD\n    A[\"复制这套神仙配置，让Claude Code全自动修Bug！\"] ==> B[\"核心问题\"]\n    B ==> C[\"六层配置体系\"]\n    C ==> D[\"深度分析\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

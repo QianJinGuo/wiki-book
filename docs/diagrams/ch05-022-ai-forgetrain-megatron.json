@@ -1,7 +1,7 @@
 [
  {
   "title": "全球首个完全AI编写的训练框架",
-  "code": "graph TD\n    CORE[\"全球首个完全AI编写的训练框架\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "code": "graph TD\ngraph TD\n    A[\"ForgeTrain：AI 编写训练框架，超越 Megatr\"] ==> B[\"一句话\"]\n    B ==> C[\"核心方法论\"]\n    C ==> D[\"关键概念\"]\n    D ==> E[\"关键数字\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

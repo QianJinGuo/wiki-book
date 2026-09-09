@@ -1,7 +1,0 @@
-[
- {
-  "title": "Agent Executor——Google 分布式 Agent Runtime",
-  "code": "graph TD\n    WHY[\"为什么 Agent 需要专用 Runtime<br/>durable execution 加安全隔离<br/>加 session 一致性 加 轨迹分支\"] ==> L5[\"五层能力模型\"]\n    L5 ==> FEDERATED[\"联邦架构与混合部署<br/>Agent Substrate 百万级计算层\"]\n    FEDERATED ==> OPEN[\"开放性与 Vendor Lock-in 博弈\"]",
-  "isSvg": false
- }
-]

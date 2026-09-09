@@ -1,7 +1,0 @@
-[
- {
-  "title": "Ralph Loop 不够用——长时间 Agent 还缺 3 件事",
-  "code": "graph TD\n    LOOP[\"Ralph Loop 本质: 重复提示循环<br/>加 SQLite 跟踪<br/>模糊性随迭代复利增长\"] ==> WFLOW[\"Jarrod Watts 优化工作流<br/>Phase 1 interview 前期澄清<br/>Phase 2 多 Agent 编排<br/>Phase 3 跨上下文记忆\"]\n    WFLOW ==> FILES[\"持久化记忆文件<br/>GOAL STANDARDS IMPLEMENT PROGRESS\"]\n    FILES ==> P[\"不单独依赖 Loop · 投资前期澄清<br/>双 Agent 评审 · 可审计记忆\"]",
-  "isSvg": false
- }
-]

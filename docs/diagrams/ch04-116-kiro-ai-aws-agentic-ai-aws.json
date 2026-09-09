@@ -1,0 +1,7 @@
+[
+ {
+  "title": "用 Kiro构建 AI",
+  "code": "graph TD\ngraph TD\n    A[\"概述\"] ==> B[\"核心技术\"]\n    B ==> C[\"实践启示\"]\n    C ==> D[\"来源\"]\n    D ==> E[\"架构图\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]

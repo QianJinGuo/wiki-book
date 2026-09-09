@@ -1,7 +1,0 @@
-[
- {
-  "title": "Trail of Bits Skill Scanner Bypass 实证研究",
-  "code": "graph TD\n    ATK[\"攻击 4 个 scanner<br/>standard tricks 全部绕过\"] --> WHY[\"Skill 安全为何重要<br/>Skill 是新形态 dependency<br/>5 种分发渠道几乎先发布后安全\"]\n    WHY --> LIM[\"Scanner 根本局限<br/>静态规则的对抗弱势<br/>LLM scanner 内生困境\"]\n    LIM --> B2[\"第 2 来源: SkillTrustBench<br/>ClawHub 全量扫描三大风险<br/>9 大类威胁 T01-T09\"]\n    B2 --> DEF[\"启示: 供应链结构性缺陷<br/>与传统 supply chain 攻击同构\"]",
-  "isSvg": false
- }
-]

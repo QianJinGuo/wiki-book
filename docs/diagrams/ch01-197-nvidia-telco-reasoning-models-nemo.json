@@ -1,7 +1,0 @@
-[
- {
-  "title": "NVIDIA NeMo——构建电信自主网络推理模型",
-  "code": "graph TD\n    GOAL[\"目标: 电信行业的<br/>Telco Reasoning Models\"] ==> USE[\"面向自主网络运维场景\"]\n    USE ==> NEMO[\"NeMo 训练体系支撑\"]\n    NEMO ==> INS[\"深度分析与实践启示\"]",
-  "isSvg": false
- }
-]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "ProseMirror @文档 mention",
+  "code": "graph TD\ngraph TD\n    A[\"核心命题\"] ==> B[\"为什么不用 DOM 方案\"]\n    B ==> C[\"三个关键设计决策\"]\n    C ==> D[\"交互三阶段（事务边界内可控）\"]\n    D ==> E[\"Suggestion = 插件中的插件\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "isSvg": false
+ }
+]
