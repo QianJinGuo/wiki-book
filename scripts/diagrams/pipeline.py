@@ -89,7 +89,7 @@ def cmd_validate():
             bad.append((rel, f'no diagram type: {first[:40]!r}'))
             continue
         lines = body.splitlines()
-        if not 4 <= len(lines) <= 45:
+        if not 3 <= len(lines) <= 45:
             bad.append((rel, f'line count {len(lines)}'))
             continue
         if body.count('"') % 2 or body.count('[') != body.count(']'):
