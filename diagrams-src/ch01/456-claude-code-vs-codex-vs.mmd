@@ -1,0 +1,5 @@
+%% title: Claude Code vs Codex——五层压缩管道 vs 容器文件系统
+graph TD
+    CC["Claude Code: 上下文窗口是一切边界<br/>CLAUDE.md 四层 · Auto Memory<br/>五层压缩: Budget 到 Snip<br/>到 Microcompact 到 Collapse 到 Auto"] => CMP["两种策略关键差异<br/>两种架构背后的认知假设"]
+    CX["Codex Cloud Agent: 文件系统即上下文<br/>仓库快照注入 · 无 CLAUDE.md 等效物<br/>读时投影设计哲学"] => CMP
+    CMP => SEL["选型建议<br/>CC 用户监控压缩层级<br/>Codex 用户维护项目文档"]

@@ -1,0 +1,6 @@
+%% title: LiteLLM 驱动 Amazon Bedrock 成本治理——四层防护
+graph TD
+    PAIN["痛点: AI 投入不可控加资产被盗"] => L1["第 1 层 Virtual Key 实时限额<br/>多租户成本治理核心抽象"]
+    L1 => L2["第 2 层 多维监控<br/>Prometheus 加 Grafana 行业标准"]
+    L2 => L3["第 3 层 AWS Budgets 平台兜底<br/>超支前自动限速非仅告警"]
+    L3 => L4["第 4 层 原生安全纵深<br/>IAM Role 替换长期 AK SK"]

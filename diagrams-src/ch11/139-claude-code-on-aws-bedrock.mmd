@@ -1,0 +1,6 @@
+%% title: Claude Code on AWS Bedrock 配置指南
+graph TD
+    BG["背景"] => ARCH["系统架构"]
+    ARCH => S1["第一步: 验证 Bedrock 中<br/>Claude 模型可用性"]
+    S1 => S2["创建最小权限 IAM 用户"]
+    S2 => S3["附加最小权限 Policy"]
