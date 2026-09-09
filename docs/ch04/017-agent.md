@@ -19,7 +19,7 @@
 - [AgentMemory 源码分析：给 Coding Agent 装上本地长期记忆](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentmemory-source-analysis-coding-agent-local-memory.md) — 源码级解析互补
 - [800行代码实现 Open Claw 的 Tool、消息总线、子Agent管理架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/800行代码实现-open-claw-的-tool消息总线子agent管理架构.md) — agent核心组件实现
 - [Claude Code 七层记忆架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-7-layer-memory-architecture.md) — 七层防御金字塔
-- [Claude Code and What Comes Next](../ch01/254-claude-code-and-what-comes-next.html) — 压缩/Skills/Subagents
+- [Claude Code and What Comes Next](../ch01/256-claude-code-and-what-comes-next.html) — 压缩/Skills/Subagents
 - [OpenClaw与Hermes源码架构对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-hermes-source-code-agent-architecture-review.md) — 双框架源码对比：OpenClaw四亮点+Hermes四补充
 
 ## 工程实践

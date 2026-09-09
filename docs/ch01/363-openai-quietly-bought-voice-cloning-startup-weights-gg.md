@@ -59,7 +59,7 @@ OpenAI 已在 2026 年 2 月聘请 Instagram 前明星合作负责人 Charles Po
 - [Microsoft Is Quietly Shopping For An Openai Replac](https://github.com/QianJinGuo/wiki-public/blob/main/entities/microsoft-is-quietly-shopping-for-an-openai-replac.md)
 - [Ai Voice Cloning The Technology Behind It Whos Building It A](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-voice-cloning-the-technology-behind-it-whos-building-it-a.md)
 - [Useful Memories Become Faulty When Continuously Updated By Llms](https://github.com/QianJinGuo/wiki-public/blob/main/entities/useful-memories-become-faulty-when-continuously-updated-by-llms.md)
-- [Build Live Translation Apps With Gpt Realtime Translate](057-build-live-translation-apps-with-gpt-realtime-translate.html)
+- [Build Live Translation Apps With Gpt Realtime Translate](058-build-live-translation-apps-with-gpt-realtime-translate.html)
 
 → [原文存档](https://www.implicator.ai/openai-quietly-bought-voice-cloning-startup-weights-gg-then-folded-the-team/)
 

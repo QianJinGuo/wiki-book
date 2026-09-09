@@ -1,14 +1,8 @@
 # How Amazon Finance streamlines regulatory inquiries by using generative AI on AWS
 
-> 📊 Level ⭐⭐⭐⭐ | 31.1KB | `entities/how-amazon-finance-streamlines-regulatory-inquiries-by-using.md`
+> 📊 Level ⭐⭐⭐⭐ | 30.5KB | `entities/how-amazon-finance-streamlines-regulatory-inquiries-by-using.md`
 
 ## "How Amazon Finance streamlines regulatory inquiries by using generative AI on AWS"
----
-source: rss
-source_url: https://aws.amazon.com/blogs/machine-learning/how-amazon-finance-streamlines-regulatory-inquiries-by-using-generative-ai-on-aws/
-ingested: 2026-05-13
-feed_name: AWS China ML
-source_published: 2026-05-12T16:41:33Z
 ---
 
 ## How Amazon Finance streamlines regulatory inquiries by using generative AI on AWS

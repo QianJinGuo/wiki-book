@@ -1,6 +1,6 @@
 # Building AI Agents in Accounting
 
-> 📊 Level ⭐ | 9.3KB | `entities/building-ai-agents-in-accounting.md`
+> 📊 Level ⭐ | 9.2KB | `entities/building-ai-agents-in-accounting.md`
 
 ## 核心要点
 - Skill 与 Config 分离：Skill 是可复用的工作流定义，Config 是业务参数配置，两者分离使系统易于维护和跨场景复用 
@@ -42,12 +42,11 @@ Slack 是整个 Agent 的交互界面。用户通过slash command（`/prepaid Ap
 **设计清晰的人机交互协议**。当 Agent 发现无法自动处理的问题时，需要人工介入。应在设计阶段就明确：什么情况下 Agent 应主动标记问题、人工如何通知 Agent 已完成修复、Agent 在修复后如何确认并继续执行。Slack 的 ✅ 反应机制是一个简洁有效的参考。
 **会计 Agent 应保留完整的人工复核节点**。即便 Agent 能完成 90% 的工作，Preparer 和 Reviewer 的复核角色仍应保留。这不仅是合规要求，也是持续改进的触发机制——人工修复的 Flag 应反向推动 Skill/Config 的优化。
 
-## 关联阅读
 ## 相关实体
 - [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/www-networkworld-com-versa-takes-aim-at-fragmented-enterprise-security.md)
 - [Create Custom Mcp Catalogs And Profiles](../ch07/001-create-custom-mcp-catalogs-and-profiles.html)
 - [Turn Repeated Instructions Into Reusable Skills In Lovable L](https://github.com/QianJinGuo/wiki-public/blob/main/entities/turn-repeated-instructions-into-reusable-skills-in-lovable-l.md)
-- [Skillos Learning Skill Curation For Self Evolving Agents](282-skillos-learning-skill-curation-for-self-evolving-agents.html)
+- [Skillos Learning Skill Curation For Self Evolving Agents](283-skillos-learning-skill-curation-for-self-evolving-agents.html)
 - [Automation Anywhere Collaborates With Cisco Nvidia Okta And Openai Launching Ent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/automation-anywhere-collaborates-with-cisco-nvidia-okta-and-openai-launching-ent.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/workflow-orchestration.md)
 

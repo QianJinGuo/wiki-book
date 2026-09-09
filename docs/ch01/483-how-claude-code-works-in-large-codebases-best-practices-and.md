@@ -10,7 +10,7 @@
 - [Claude Code Self Repair Hooks Memory Config](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-self-repair-hooks-memory-config.md)
 - [Code Review Graph](https://github.com/QianJinGuo/wiki-public/blob/main/entities/code-review-graph.md)
 - [Claude Code Hackathon Winners 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-hackathon-winners-2026.md)
-- [Claude Code Harness Deep Understanding](109-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Understanding](111-claude-code-harness-deep-understanding.html)
 
 → [原文存档](https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start)
 

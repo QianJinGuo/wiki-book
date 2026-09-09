@@ -67,8 +67,6 @@
 4. **双 Agent 并行不是冗余** — OpenClaw 覆盖即时交互面，Hermes 覆盖长期记忆+自动化操作面，uid/gid 差异天然隔离
 5. **Agent 驱动数据分析验证** — Hermes 预装 kubectl/aws cli + EKS Spark 集群可让 Agent 直接做端到端数据工作流，从部署到业务验证一气呵成
 
-## 关联阅读
-
 ### 1. OpenClaw 从单机到多租户的架构演进
 OpenClaw 多租户部署是开源 AI 工具从"开发者本地工具"到"企业级平台"演进的典型案例——从 Docker 本地运行到 ECS/Fargate 弹性部署，从单用户到多租户隔离。这一演进对其他开源 AI 工具具有参考价值。
 

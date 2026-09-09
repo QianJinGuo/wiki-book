@@ -26,7 +26,7 @@
 - [Codex /goal：长任务Agent的目标运行时](https://github.com/QianJinGuo/wiki-public/blob/main/entities/codex-goal-agent-runtime.md) — goal运行时rv9主版
 - [SchemaFlow: OpenAI Cookbook Partner — Agentic Database Change Impact Analysis, SQL Generation, and Eval Guardrails](https://github.com/QianJinGuo/wiki-public/blob/main/entities/schemaflow-openai-cookbook-staged-agentic-workflow.md) — 五阶段staged workflow+Pydantic约束+Promptfoo护栏
 - [Anthropic 发布 Computer Use 最佳实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-computer-use-best-practices.md) — 坐标映射与梯度分配
-- [AWS Bedrock Agentcore Quality Optimization Flywheel](../ch11/098-aws-bedrock-agentcore-quality-optimization-flywheel.html) — 质量飞轮
+- [AWS Bedrock Agentcore Quality Optimization Flywheel](../ch11/099-aws-bedrock-agentcore-quality-optimization-flywheel.html) — 质量飞轮
 - [长周期-agent-详解-从-ralph-loop-到可接管-harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/长周期-agent-详解-从-ralph-loop-到可接管-harness.md) — Ralph loop到接管harness
 - [Anthropic Managed Agents：用 K8s 思路虚拟化 Agent 组件](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-managed-agents-scaling.md) — 宠物到牛群
 - [AI第一次科研竞赛中击败人类！Opus 4.7狂飙2930步创世界纪录](https://github.com/QianJinGuo/wiki-public/blob/main/entities/prime-intellect-auto-nanogpt-opus-2930.md) — AI首胜人类科研竞赛：2930步+两种研究人格

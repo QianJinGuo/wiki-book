@@ -70,7 +70,7 @@ OpenClaw 代表了 AI Agent 的一个极端方向——24/7 个人助手，具�
 - [Claude Opus 4.8 System Card](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-opus-48-the-system-card-b8460f.md)
 - NotebookLM
 - Agent Harness
-- [Karpathy: Agentic Engineering](../ch04/009-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy: Agentic Engineering](../ch04/275-karpathy-vibe-coding-agentic-engineering.html)
 - [MOC: Prompt Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/moc/prompt-engineering-guide.md)
 
 ---

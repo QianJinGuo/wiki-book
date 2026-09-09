@@ -26,7 +26,7 @@
 - [Headroom Context Compression Agent Vibecoder](https://github.com/QianJinGuo/wiki-public/blob/main/entities/headroom-context-compression-agent-vibecoder.md)
 - [构建无服务器Kiro调度平台用Kiro Cli Eventbridge Ecs Fargate实现定时Ai任务](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建无服务器kiro调度平台用kiro-cli-eventbridge-ecs-fargate实现定时ai任务.md)
 - [Hermes Agent V014 Architecture Shugex](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-v014-architecture-shugex.md)
-- [Extending Mcp Support For Amazon Bedrock Agentcore Gateway](../ch11/107-extending-mcp-support-for-amazon-bedrock-agentcore-gateway.html)
+- [Extending Mcp Support For Amazon Bedrock Agentcore Gateway](../ch11/108-extending-mcp-support-for-amazon-bedrock-agentcore-gateway.html)
 - [Agent Eval Wallezhang Yaml Driven Agent Evaluation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-eval-wallezhang-yaml-driven-agent-evaluation.md)
 - [腾讯混元新里程碑Hy3 Preview 发布开源Agent 表现全面提升](https://github.com/QianJinGuo/wiki-public/blob/main/entities/腾讯混元新里程碑hy3-preview-发布开源agent-表现全面提升.md)
 

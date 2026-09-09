@@ -1852,9 +1852,9 @@ context 的追加式增长是所有 skill 编排方案的基础假设，但它�
 ## 三篇 Harness 文章的关联
 | 文章 | 核心议题 |
 |------|---------|
-|| [Sub-Agent vs Agent Team](https://mp.weixin.qq.com/s/LNkT_xRhdh2iCxBQcVKpUQ) | 多 Agent 架构先看上下文边界 |
-|| [Claude Code Subagent 上下文卫生](https://mp.weixin.qq.com/s/qy_zaCZTCs1Ql3BIFmBMgg) | Subagent 是 Harness 的上下文卫生工具 |
-|| [Harness Engineering 系统梳理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-systematic-framework.md) | Harness 是把经验沉淀成下一轮默认存在的能力 |
+| [Sub-Agent vs Agent Team](https://mp.weixin.qq.com/s/LNkT_xRhdh2iCxBQcVKpUQ) | 多 Agent 架构先看上下文边界 |
+| [Claude Code Subagent 上下文卫生](https://mp.weixin.qq.com/s/qy_zaCZTCs1Ql3BIFmBMgg) | Subagent 是 Harness 的上下文卫生工具 |
+| [Harness Engineering 系统梳理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-systematic-framework.md) | Harness 是把经验沉淀成下一轮默认存在的能力 |
 **上下文管理决定系统能不能持续协作。**
 
 ### 工作集模型的理论支撑
@@ -2317,9 +2317,9 @@ Reflexion / ExpeL / ReMe 都在回答：经历如何不只是被保存，而是�
 |------|------|------|-----------|
 | **文件驱动** | 记忆写成外部文本 | 透明、可干预、可审计 | 不天然擅长自动演化 |
 | **图谱驱动** | 关系网络 + 时间有效性 | 处理"同一对象不同状态" | 实现复杂度高 |
-|| **混合存储驱动** | 向量+图+KV 分工承载 | 兼顾召回/关系推理/时间变化 | 分工协调复杂 |
-|| **策略学习驱动** | 学习记忆管理策略 | 手工启发式规则被替代 | 策略可解释性挑战 |
-|| **技能蒸馏驱动** | 记忆终点 = 可复用能力 | 最激进，上限最高 | 最危险：固化错误 |
+| **混合存储驱动** | 向量+图+KV 分工承载 | 兼顾召回/关系推理/时间变化 | 分工协调复杂 |
+| **策略学习驱动** | 学习记忆管理策略 | 手工启发式规则被替代 | 策略可解释性挑战 |
+| **技能蒸馏驱动** | 记忆终点 = 可复用能力 | 最激进，上限最高 | 最危险：固化错误 |
 **架构哲学本质**：不是技术选型，而是你认为什么东西才配被叫做记忆。
 ---
 
@@ -5182,11 +5182,11 @@ curl -fsSL https://raw.githubusercontent.com/MemTensor/MemOS/openclaw-local-plug
 5. **评估记忆插件价值时拉长时间周期，而非单次使用成本** — 建议记录"首次命中失败但长期积累后成功检索"的案例数，作为记忆系统ROI的核心指标。单次使用感受不到价值是预期行为，设计演示场景时应展示"三个月后还能精准召回三个月前的信息"。
 
 ## 关联分析
-|| 相关文章 | 关联点 |
+| 相关文章 | 关联点 |
 |---------|--------|
-|| [Hermes Agent](ch03/060-hermes-agent.html) | MemOS 是 Hermes 的记忆插件，解决 Hermes 记忆乱的痛点 |
-|| [Claude Code 架构解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-architecture.md) | Claude Code 的 Query Loop 含上下文管理，和 MemOS 的记忆注入思路一致 |
-|| [AgentCore Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentcore-harness.md) | AgentCore 管运行时，MemOS 管记忆，是不同维度的 Agent 基础设施 |
+| [Hermes Agent](ch03/060-hermes-agent.html) | MemOS 是 Hermes 的记忆插件，解决 Hermes 记忆乱的痛点 |
+| [Claude Code 架构解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-architecture.md) | Claude Code 的 Query Loop 含上下文管理，和 MemOS 的记忆注入思路一致 |
+| [AgentCore Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentcore-harness.md) | AgentCore 管运行时，MemOS 管记忆，是不同维度的 Agent 基础设施 |
 **核心洞察**：Harness Engineering（AgentCore）和记忆工程（MemOS）是 Agent 走向生产的两个不同维度——前者管"运行"，后者管"记忆"。
 
 ## Related

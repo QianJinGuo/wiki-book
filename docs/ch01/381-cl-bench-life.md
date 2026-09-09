@@ -11,7 +11,7 @@
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 - [Microsoft Agent Framework Python Full Guide Zizhi](https://github.com/QianJinGuo/wiki-public/blob/main/entities/microsoft-agent-framework-python-full-guide-zizhi.md)
 - [Hermes Agent Deep Dive Alibaba](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-deep-dive-alibaba.md)
-- [Aws Bedrock Agentcore Quality Optimization Flywheel](../ch11/098-aws-bedrock-agentcore-quality-optimization-flywheel.html)
+- [Aws Bedrock Agentcore Quality Optimization Flywheel](../ch11/099-aws-bedrock-agentcore-quality-optimization-flywheel.html)
 - [Agent Harness 12 Components 7 Decisions](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-12-components-7-decisions.md)
 
 → [原文存档](https://mp.weixin.qq.com/s/ysSIbSEdC9beb4wxIu8IdA)

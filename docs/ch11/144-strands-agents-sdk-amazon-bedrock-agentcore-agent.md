@@ -54,7 +54,7 @@ manager agent 通过 `tools=[run_text_extraction, review_advertisement_text]` �
 - 工具调用链的可观测性
 - 多租户隔离
 
-对企业用户来说，AgentCore 的价值是「不用自己搭 Agent 运行平台」，对应 [AgentCore Managed Harness](../ch04/307-agentcore-managed-harness.html) 的定位。但代价是供应商锁定——业务逻辑通过 `@tool` 装饰器和 AgentCore 抽象耦合，迁出 AWS 需要重写工具桥接层。
+对企业用户来说，AgentCore 的价值是「不用自己搭 Agent 运行平台」，对应 [AgentCore Managed Harness](../ch04/308-agentcore-managed-harness.html) 的定位。但代价是供应商锁定——业务逻辑通过 `@tool` 装饰器和 AgentCore 抽象耦合，迁出 AWS 需要重写工具桥接层。
 
 ### OCR 提示词的「负面清单」工程
 
@@ -84,7 +84,7 @@ vision Agent 的 system prompt 中最值得借鉴的是「**严格排除**」清
 ## 相关实体
 
 - [Agentcore Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentcore-harness.md) — AgentCore Harness 综述
-- [Agentcore Managed Harness](../ch04/307-agentcore-managed-harness.html) — Managed Harness 定位与权衡
+- [Agentcore Managed Harness](../ch04/308-agentcore-managed-harness.html) — Managed Harness 定位与权衡
 - [Amazon Bedrock Agentcore Runtime Deep Dive And Scenario Analysis](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-agentcore-runtime-deep-dive-and-scenario-analysis.md) — AgentCore Runtime 深度分析
 - [Agentcore Payments X402 Agentic Commerce](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentcore-payments-x402-agentic-commerce.md) — AgentCore 在支付场景的应用
 - [Agentic Scheduler With Strands Agentcore For Multi Region Gpu Inference](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentic-scheduler-with-strands-agentcore-for-multi-region-gpu-inference.md) — Strands + AgentCore 调度案例

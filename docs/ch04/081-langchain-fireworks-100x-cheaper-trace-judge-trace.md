@@ -76,8 +76,6 @@ LangChain 通常推荐团队构建**应用特定的评估器**（因为判断 tr
 - **自建 agent observability** — 可借鉴"信号推断 + 小模型 + 专用推理"的范式
 - **evaluator 研发** — 验证"特定评估任务是否可以通用化"的方法论
 
-## 原文链接
-
 ## 相关实体
 - [langsmith engine: trace-based self-improving agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/langsmith-engine-self-improving-agent-trace-based.md)
 - [skillsui 企业 agent 中间层](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skillsui-enterprise-agent-middle-layer.md)

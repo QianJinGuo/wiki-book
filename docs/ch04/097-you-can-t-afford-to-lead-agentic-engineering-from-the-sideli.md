@@ -82,7 +82,7 @@ So let the work correct your assumptions, because you cannot afford to lead agen
 - [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-seer-agent-the-answer-is-already-in-sentry-now-you-can-ask-for-it.md)
 - [Google Io 2026 Agentic Gemini Era](https://github.com/QianJinGuo/wiki-public/blob/main/entities/google-io-2026-agentic-gemini-era.md)
 - [Asana Agentic Work Management Platform Lettertwo](https://github.com/QianJinGuo/wiki-public/blob/main/entities/asana-agentic-work-management-platform-lettertwo.md)
-- [Tokenspeed Agentic Inference Engine](273-tokenspeed-agentic-inference-engine.html)
+- [Tokenspeed Agentic Inference Engine](274-tokenspeed-agentic-inference-engine.html)
 - [Gemini 3 5 Frontier Intelligence](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gemini-3-5-frontier-intelligence.md)
 
 → [原文存档](https://blog.kilo.ai/p/you-cant-afford-to-lead-agentic-engineering)

@@ -1,6 +1,6 @@
 # Hermes Agent 自我改进机制概述
 
-> 📊 Level ⭐⭐⭐ | 11.8KB | `entities/hermes-self-improving-overview-winty.md`
+> 📊 Level ⭐⭐⭐ | 11.7KB | `entities/hermes-self-improving-overview-winty.md`
 
 [Hermes Self Improving Overview Winty](https://mp.weixin.qq.com/s/KJwNgGFBXGUzjwCi2jMLwg)
 
@@ -95,7 +95,6 @@ Hermes 的设计哲学，不是 AI 哲学，是组织学。
 4. **Skill 的检索不用向量数据库，用规则匹配** — 原文明确指出 Skill 不适合用 embedding 召回，原因是 Skill 是有触发条件的过程性知识，而不是事实性陈述。推荐实现方式：用 YAML/JSON 清单注册每个 Skill 的触发条件（任务类型、前置上下文、适用场景），在 Prompt Assembly 阶段用规则引擎匹配，而非向量相似度检索。
 5. **给 Memory 容量设定硬性上限，并设计淘汰策略** — 新事实进来必然触发旧事实的挤出，推荐设定 Memory 上限（如最多保留 50 条事实），并让 Review Agent 显式负责淘汰决策而非依赖 LLM 的隐式注意力。淘汰标准：低复用频率、过时、与新事实矛盾。定期运行 Memory 压缩任务，把多个相关事实合并为一个高层面概括。
 
-## 关联阅读
 ## 相关实体
 - [Hermes Self Improving Loop Winty](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-self-improving-loop-winty.md)
 - [Hermes 9 Module Architecture Winty](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-9-module-architecture-winty.md)

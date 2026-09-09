@@ -184,7 +184,7 @@ MiniCPM5-1B 的特殊之处：
 [Ai2](https://www.allenai.org/)
 
 ## 相关实体
-- [Stochastic Parrot Thought Experiment](ch01/179-stochastic-parrot-thought-experiment.html)
+- [Stochastic Parrot Thought Experiment](ch01/181-stochastic-parrot-thought-experiment.html)
 - [While Breathless In Stodgy Viridian](https://github.com/QianJinGuo/wiki-public/blob/main/entities/while-breathless-in-stodgy-viridian.md)
 - [Aws Grpo Rlvr Sagemaker Math Reasoning](ch11/183-aws-grpo-rlvr-sagemaker-math-reasoning.html)
 - [Ai True Moat Not Llm But Organization](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-true-moat-not-llm-but-organization.md)
@@ -338,7 +338,7 @@ V4 的实现用激进前 8 步 + 温和后 2 步做精度平衡，这个工程�
 - → [ds4.c — DeepSeek V4 本地推理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ds4c-deepseek-v4-antirez.md)
 
 ## 相关实体
-- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](ch01/426-deepseek-v4.html)
+- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](ch01/053-deepseek-v4.html)
 
 - [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-v4-pro-vs-claude.md)
 - [Redis之父下场，给DeepSeek V4单独造了一台推理引擎](https://github.com/QianJinGuo/wiki-public/blob/main/entities/redis之父下场给deepseek-v4单独造了一台推理引擎.md)
@@ -919,7 +919,7 @@ Meta-RL with Self-Reflection 的核心洞察是：当前 LLM 的 RL 训练完全
 - RLHF
 - Post-training
 - Agent 记忆系统
-- [Karpathy: Agentic Engineering](ch04/009-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy: Agentic Engineering](ch04/275-karpathy-vibe-coding-agentic-engineering.html)
 - MOC: Evaluation Landscape
 
 ---
@@ -1053,7 +1053,6 @@ KV-Normality 问题是 Transformer 训练不稳定的重要来源之一（KL div
 4. **使用 QLoRA 降低 RLVR 训练资源门槛**：文中使用 QLoRA（load_in_4bit: true，lora_r: 16）配合 GRPO 训练 Qwen2.5-0.5B，显著降低显存占用和训练时间，同时保留可接受的精度。这是将 RLVR 方法落地到资源受限场景的关键工程实践。
 5. **配置 DeepSpeed ZeRO-3 + HuggingFace Accelerate 实现分布式扩展**：当模型规模超过单卡容量时，使用 DeepSpeed ZeRO-3 分片优化器状态、梯度和参数，配合 HuggingFace Accelerate 自动处理多卡通信和设备管理。可通过 `accelerate launch --config_file accelerate_configs/deepspeed_zero3.yaml --num_processes ${NUM_GPUS}` 启动多 GPU 训练。
 
-## 关联阅读
 ## 相关实体
 - [Build Real Time Voice Applications With Amazon Sagemaker Ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-real-time-voice-applications-with-amazon-sagemaker-ai.md)
 - [End To End Encrypted Ml Inference Sagemaker Fhe](https://github.com/QianJinGuo/wiki-public/blob/main/entities/end-to-end-encrypted-ml-inference-sagemaker-fhe.md)
@@ -1208,16 +1207,16 @@ GPT-4 训练初期的一个致命 Bug 正是源于此：FP16 的尾数位在数�
 | 优化平滑性 | 盲目试错，方差大易崩溃 | Teacher提供引导方向 |
 
 ## 核心对比表
-|| 维度 | SFT（离线蒸馏） | OPD（在线蒸馏） |
+| 维度 | SFT（离线蒸馏） | OPD（在线蒸馏） |
 ||------|----------------|-----------------|
-|| KL方向 | Forward KL | Reverse KL |
-|| 采样来源 | Teacher（固定数据集） | Student（当前策略） |
-|| 数学目标 | MLE（交叉熵） | 期望奖励+熵正则化 |
-|| 分布特性 | Mode-Covering | Mode-Seeking |
-|| 典型问题 | 暴露偏差、幻觉 | Mode Collapse（需熵惩罚） |
-|| 训练稳定性 | 高（固定分布） | 中（需熵监控） |
-|| 计算成本 | 低（一次性生成） | 高（实时生成+评估） |
-|| 收敛速度 | 快（直接模仿） | 慢（探索+收敛） |
+| KL方向 | Forward KL | Reverse KL |
+| 采样来源 | Teacher（固定数据集） | Student（当前策略） |
+| 数学目标 | MLE（交叉熵） | 期望奖励+熵正则化 |
+| 分布特性 | Mode-Covering | Mode-Seeking |
+| 典型问题 | 暴露偏差、幻觉 | Mode Collapse（需熵惩罚） |
+| 训练稳定性 | 高（固定分布） | 中（需熵监控） |
+| 计算成本 | 低（一次性生成） | 高（实时生成+评估） |
+| 收敛速度 | 快（直接模仿） | 慢（探索+收敛） |
 
 ### OPD的数学收敛性
 Reverse KL目标的优化本质上是带熵正则化的策略搜索问题。根据Fenchel对偶性，OPD目标等价于在Teacher附近寻找高奖励区域的策略。由于熵项的存在，OPD天然避免了纯RL中的过早收敛问题——策略不会急速坍缩到单一模式，而是在Teacher认可的多个解法之间保持合理多样性。

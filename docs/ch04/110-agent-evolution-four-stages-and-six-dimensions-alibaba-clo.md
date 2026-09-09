@@ -101,7 +101,7 @@ Hermes Agent + LLM-Wiki 等开源项目 → Agent 可自我沉淀 Skill、自我
 - [Claude Code 深度解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-harness-deep-dive-founder-park.md) — 自主 Agent 阶段（阶段三）代表
 - [OpenClaw 完整指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md) — 自主 Agent 阶段（阶段三）代表
 - [Claude Code Dynamic Workflows](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-dynamic-workflows-multi-agent-orchestration.md) — 阶段三到阶段四过渡的 Dynamic Workflow 范式
-- [从氛围编程到智能体工程](009-karpathy-vibe-coding-agentic-engineering.html) — Agentic Engineering 范式演进
+- [从氛围编程到智能体工程](275-karpathy-vibe-coding-agentic-engineering.html) — Agentic Engineering 范式演进
 - [Agent 记忆系统实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md) — Memory 模块工程化
 - [Hermes Agent Operator](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-operator上手-把一个-agent-养成可运营系统-若飞.md) — 自进化 Agent（阶段四）代表
 - [Agent YAML 评测](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-eval-wallezhang-yaml-driven-agent-evaluation.md) — 自进化机制中的评估反馈环

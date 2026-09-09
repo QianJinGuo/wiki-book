@@ -70,7 +70,7 @@ Claude Code 本身就是一个高度 Agent Harness 化的系统——它给模�
 - Agent Harness
 - Agent 记忆系统
 - [Claude Code 源码分析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/两万字详解claude-code源码核心机制.md)
-- [Karpathy: Agentic Engineering](009-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy: Agentic Engineering](275-karpathy-vibe-coding-agentic-engineering.html)
 
 ---
 

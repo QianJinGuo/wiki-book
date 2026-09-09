@@ -1,6 +1,6 @@
 # Qoder Skills 完全指南 + Agent Skill 迭代式编写 — AI 按你的标准执行
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 35.4KB | `entities/qoder-skills-完全指南从零开始让-ai-按你的标准执行-v2.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 35.1KB | `entities/qoder-skills-完全指南从零开始让-ai-按你的标准执行-v2.md`
 
 ## 核心概念
 Qoder Skills 是 AI 工作流定制的基础设施，它解决了一个根本性问题：**如何让 AI 按你的标准稳定执行，而非每次凭"直觉"自由发挥**。
@@ -354,22 +354,18 @@ skills.sh 提供了配套的 skill 管理工具。多人协作时，可在 code 
 - [重新定义Skill开发：保姆级教程](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-development-guide-aliyun-2026.md)
 - [你写的 Skill，及格了吗？](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ni-xie-de-skill-ji-ge-liao-ma.md)（skill-judge 对照）
 - [Harness Engineering 90 Percent Pillars](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-90-percent-pillars.md)（与 Skill 同源的工程化思路）
-- [Qoder Skills 完全指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/qoder-skills-complete-guide.md)
 - [qoder skills](https://github.com/QianJinGuo/wiki-public/blob/main/entities/qoder-skills.md)
 - [要实现一个工作流选择-agent-skills-还是-ai-表格](https://github.com/QianJinGuo/wiki-public/blob/main/entities/要实现一个工作流选择-agent-skills-还是-ai-表格.md)
 - [精选 10 个开发者常用的 AI 智能体技能（Agent Skills）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/精选-10-个开发者常用的-ai-智能体技能agent-skills.md)
 - [让 AI 理解你的组件库：新一代智能 D2C 架构 — 基于 AWS Kiro MCP Skills 的智能转换实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-understanding-component-library-intelligent-d2c-architecture-aws-kiro-mcp-skills.md)
-- [Agent Skill 设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/从-anthropic-到-googleagent-skills-正在进入设计模式阶段.md)
 - [AI 行业就业八大变化（腾讯研究院纵向对比）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-employment-eight-changes-tencent-research.md)
 - [CDP Bridge MCP：真实浏览器直连 MCP 工具](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cdp-bridge-mcp-real-browser-agent.md)
 - [十年老技术开发的 AI Agent 探索之路](https://github.com/QianJinGuo/wiki-public/blob/main/entities/十年老技术开发的-ai-agent-探索之路-v2.md)
-- [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing-guide.md)
 - [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-google-agent-skills-design-patterns.md)
 - [Garry Tan](https://github.com/QianJinGuo/wiki-public/blob/main/entities/garry-tan-yc-ceo.md)
-- [Agent Workflows](338-agent-workflows.html)
+- [Agent Workflows](339-agent-workflows.html)
 - [Hermes Agent](../ch03/060-hermes-agent.html)
 - [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/hermes-agent-onboarding.md)
-- [你写的 Skill，及格了吗？](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ni-xie-de-skill-ji-ge-liao-ma.md)
 - [Mythos for Offensive Security: XBOW's Evaluation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mythos_offensive_security_xbow_evaluatio.md)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/hermes-agent-skill.md)
 

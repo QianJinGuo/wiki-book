@@ -263,7 +263,7 @@ AHE 是通用的 Harness 工程方法论；本文是 Claude Code 的具体场景
 - [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md)
 - [Kimi Work 300 Agent Cluster Yin John Agi Hunt](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kimi-work-300-agent-cluster-yin-john-agi-hunt.md)
 - [Your First Ai Agent Should Do One Thing Badly](../ch04/201-your-first-ai-agent-should-do-one-thing-badly.html)
-- [A Missing Layer In Agentic Systems](../ch04/336-a-missing-layer-in-agentic-systems.html)
+- [A Missing Layer In Agentic Systems](../ch04/337-a-missing-layer-in-agentic-systems.html)
 - [Announcing Genkit Middleware Intercept Extend And Harden Your Agentic Apps](https://github.com/QianJinGuo/wiki-public/blob/main/entities/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps.md)
 - [Hermes Agent Soul Md Personality Shugex](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-soul-md-personality-shugex.md)
 - [Lessons From 2 Billion Agentic Workflows](https://github.com/QianJinGuo/wiki-public/blob/main/entities/lessons-from-2-billion-agentic-workflows.md)

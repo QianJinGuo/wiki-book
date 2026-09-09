@@ -115,7 +115,7 @@ Multiagent Sessions、Outcomes、Dreams 目前均处于研究预览阶段，需�
 - [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-官方-agent-harness-平台claude-managed-agents-完整指南.md)
 - [Multica — 开源 Managed Agents 平台](https://github.com/QianJinGuo/wiki-public/blob/main/entities/multica-managed-agents-platform.md)
 - [claude managed agents official](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-managed-agents-official.md)
-- [claude managed agents](102-claude-managed-agents.html)
+- [claude managed agents](104-claude-managed-agents.html)
 
 - [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-google-agent-skills-design-patterns.md)
 - [Anthropic puts Claude agents on a meter across its subscriptions](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-claude-agents-meter-infoworld.md)

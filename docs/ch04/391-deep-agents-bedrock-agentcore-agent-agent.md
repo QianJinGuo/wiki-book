@@ -114,7 +114,7 @@ Runtime 关键能力：
 | 实体 | 关注点 | 本文差异 |
 |------|--------|---------|
 | [Agentcore Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentcore-harness.md) | AgentCore 平台概念 + Harness 趋势 | 偏理论，无代码 |
-| [Agentcore Managed Harness](307-agentcore-managed-harness.html) | 托管 Harness 平台 overview | 无具体 subagent 编排 |
+| [Agentcore Managed Harness](308-agentcore-managed-harness.html) | 托管 Harness 平台 overview | 无具体 subagent 编排 |
 | [Langchain Harrison Chase Sandbox Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/langchain-harrison-chase-sandbox-architecture.md) | LangChain 沙箱架构演进 | 聚焦 sandbox，不涉及 Bedrock AgentCore 集成 |
 | [Production Harness 12 Components Framework Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/production-harness-12-components-framework-comparison.md) | 12 组件框架对比 | 偏理论框架，无 AWS 端到端代码 |
 

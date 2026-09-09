@@ -401,13 +401,13 @@ artifacts:
 ## 相关实体
 
 → [原文存档](https://mp.weixin.qq.com/s/2LSn2Tbw7iN1XZnckQUY1g)
-→ [Three Tools In One Gstack Superpowers Openspec Engineering Ai Coding](https://github.com/QianJinGuo/wiki-public/blob/main/entities/three-tools-in-one-gstack-superpowers-openspec-engineering-ai-coding.md) — 同期同主题：gstack 作为第三器的视角
-→ [Superpowers Deep Dive Kaiyuandakashuo](https://github.com/QianJinGuo/wiki-public/blob/main/entities/superpowers-deep-dive-kaiyuandakashuo.md) — Superpowers 单项目深度
-→ [Openspec Spec Driven Development Trae Solo](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openspec-spec-driven-development-trae-solo.md) — OpenSpec 单项目深度
-→ [Openspec 四步法深度复盘 流程完整不等于代码正确](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openspec-四步法深度复盘-流程完整不等于代码正确.md) — OpenSpec 四步法实战复盘
-→ [Ai Production Development Workflow Openspec Superpowers Gstack](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-production-development-workflow-openspec-superpowers-gstack.md) — gstack + OpenSpec + Superpowers 生产级实践
-→ [Claude Code Skills Superpowers Practice](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-skills-superpowers-practice.md) — Claude Code + Superpowers 实践
-→ [Hermes Agent Skills Source Code Analysis Shuge](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-skills-source-code-analysis-shuge.md) — 术哥本人对 Hermes Agent Skills 的源码分析（方法论参照）
+- [Three Tools In One Gstack Superpowers Openspec Engineering Ai Coding](https://github.com/QianJinGuo/wiki-public/blob/main/entities/three-tools-in-one-gstack-superpowers-openspec-engineering-ai-coding.md) — 同期同主题：gstack 作为第三器的视角
+- [Superpowers Deep Dive Kaiyuandakashuo](https://github.com/QianJinGuo/wiki-public/blob/main/entities/superpowers-deep-dive-kaiyuandakashuo.md) — Superpowers 单项目深度
+- [Openspec Spec Driven Development Trae Solo](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openspec-spec-driven-development-trae-solo.md) — OpenSpec 单项目深度
+- [Openspec 四步法深度复盘 流程完整不等于代码正确](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openspec-四步法深度复盘-流程完整不等于代码正确.md) — OpenSpec 四步法实战复盘
+- [Ai Production Development Workflow Openspec Superpowers Gstack](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-production-development-workflow-openspec-superpowers-gstack.md) — gstack + OpenSpec + Superpowers 生产级实践
+- [Claude Code Skills Superpowers Practice](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-skills-superpowers-practice.md) — Claude Code + Superpowers 实践
+- [Hermes Agent Skills Source Code Analysis Shuge](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-skills-source-code-analysis-shuge.md) — 术哥本人对 Hermes Agent Skills 的源码分析（方法论参照）
 → [缝合怪识别与减法决策论：OpenSpec + Superpowers 融合方案下线记](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openspec-superpowers-decommissioning-frankenstein-three-questions-shuge-2026-06-18.md) — 同期同作者 24h 后反思
 
 ---

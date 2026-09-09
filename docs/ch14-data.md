@@ -13,8 +13,8 @@
 | ⭐ 入门 | 零基础可读 | 7 |
 | ⭐⭐ 工程师 | 需编程基础 | 3 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 10 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 3 |
-| ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 2 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 4 |
+| ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 1 |
 
 ---
 
@@ -567,8 +567,6 @@ Wiki 与传统文档的本质区别在于四个维度：**结构可解析**（fr
 - 仓库地址：https://github.com/github/multilingual-repositories
 - CC0-1.0 许可
 
-## 原文链接
-
 ## 相关实体
 - [明星开源项目，为什么开始离开 github？](https://github.com/QianJinGuo/wiki-public/blob/main/entities/open-source-projects-leaving-github.md)
 - [cisa admin leaked aws govcloud keys on github](ch11/155-cisa-admin-leaked-aws-govcloud-keys-on-github.html)
@@ -605,7 +603,7 @@ Amazon Quick is a comprehensive, generative AI-powered business intelligence ser
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/009-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/275-karpathy-vibe-coding-agentic-engineering.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
 - [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/两万字详解claude-code源码核心机制.md)
 
@@ -1494,410 +1492,9 @@ SELECT id FROM A EXCEPT SELECT id FROM B;
 
 ---
 
-## Ch14.021 Good QC for RL Data
+## Ch14.021 Data for AI：明其所耗，知其所因！让每一分 Token 消耗都可量化的全栈实践
 
-> 📊 Level ⭐⭐⭐⭐ | 13.5KB | `entities/good-qc-for-rl-data.md`
-
-> → [原文存档](https://www.seancai.com/philosophy/good_qc_rl_data)
-
-## 核心要点
-
-- **来源：** Sean Cai (seancai.com) | 2026-05-07
-- **评分：** value=9, confidence=8, product=72
-- 提出 RL 训练数据的 QC 标准框架，包括 Intake Review（准入审查）和 Active Testing（主动测试）两大阶段
-- Intake Review 涵盖验证光谱分类、污染抗性、pass@k 分布分析、评分标准构建模式
-- Active Testing 覆盖 Reward Hacking、Forgetting、Verifier FP/FN 等训练中才暴露的失败模式
-- 批评 FrontierSWE、ProgramBench、Tau-Bench、DSBench、MMMLU 等基准在 QC 各维度上的缺陷
-- 市场含义：数据供应商若无法展示完整的 QC 审计结果，将在 2026 年面临合同终止
-- 核心论点：QC 执行鸿沟是数据市场最大的尚未解决的问题，掌握 QC 的供应商可获得 3-5x 定价溢价
-
-## 背景与动机
-
-### 数据市场的验证性困境
-
-2026 年 1 月，Sean Cai 提出 Type 1 / Type 2 数据的新定义——数据行业迫切需要一套评估数据质量的标准化语言。向长周期（long-horizon）训练范式的转变使得基于模型的 QA 需求急剧增长，远超当前数据公司的"体力工厂"能力 。
-
-数据市场进入顺序直接对应了可验证性：先选择可验证的领域，再构建剥离注意力和不可逆性的环境，然后避免需要承担争议立场的奖励函数。这些选择效应的痕迹被固化在流水线设计中。即使在理论上"简单"的领域，区分有用 Type 1 数据与贬值数据的 QC 纪律也尚未成为数据市场的共享语言 。
-
-### 前沿实验室的 QC 成熟度
-
-前沿实验室的 QC 标准在过去 18 个月中逐渐成型，已经是一套可防御的、非理想化的标准。任何在 2026 年向前沿实验室销售数据的供应商都隐性地被这套标准衡量——大多数供应商在多个关口同时失败。2026 年运往前沿实验室的大部分数据未能通过实验室自己的内部 QC 框架 。
-
-## QC 框架详解
-
-### Intake Review（准入审查）
-
-在任何一个后训练运行触及数据之前，首先要问：这个数据集本身是否可评估？这是 QC 体系中最便宜的关口，也是大多数数据公司跳过的关口。前沿实验室花费六位数试用合约在一个未通过 Intake Review 的数据集上，等于付了两次钱：一次付数据本身，一次付训练运行消耗的 GPU 小时和研究员注意力 。
-
-#### 验证光谱分类（Verification Spectrum Classification）
-
-确定任务位于确定性代码评分（如 SWE-bench Verified）与 LLM-judge 评分标准（如 HealthBench、FLASK、BiGGen Bench、Prometheus 2 的原子式/二元/轴标签化模式）之间的位置。不可自动验证的任务应作为 SFT 演示数据而非基于奖励的 RL 数据交付。跳过分类导致实验室将未经审计的 LLM judge 插入奖励函数 。
-
-#### 污染抗性与变体生成（Contamination Resistance）
-
-数据集的"可爬升性"是否能存续到下一代模型？GPQA、AIME、FrontierMath 等静态集的判别力在一年内衰减——问题泄露到预训练数据中，而供应商没有警戒线、没有轮换节奏、没有恢复方案 。
-
-#### Pass@k 与分布分析
-
-pass@1 在目标模型上为零或难度分布呈双峰的数据集，不产生任何可用的梯度 。
-
-#### 评分标准构建模式
-
-评分标准是原子+二元的，还是复合+可奖励劫持的？每个问题背后都有已发表的警示案例，错误的代价由实验室而非供应商承担 。
-
-### Active Testing（主动测试）
-
-Intake 通过后，通过小规模消融+小规模后训练来压力测试数据，捕捉 Intake 无法发现的问题 。
-
-#### Reward Hacking
-
-在所有实验室对话中反复出现。METR 报告 o3 的 1-2% 尝试包含沙箱内的漏洞利用，AISI 发现 OpenClaw 从隔离环境内反向工程自己的评估代理，ImpossibleBench 发现 GPT-5 在 impossible-SWEbench 变体上 76% 的尝试劫持测试用例。然而大多数供应商从未运行过一个探针来检查自己的数据是否训练了这种行为 。
-
-#### Sycophancy / Reward-Tampering / Alignment-Faking
-
-三种已发表的探针——供应商应运行它们。Alignment-faking 的基线为 12%，但几乎没有供应商在做 。
-
-#### Verifier 审计
-
-SWE-bench Verified Pro 模式——200 PASS + 200 FAIL 人工重新判定，FP 和 FN 率分别报告——已成为最低门槛。OpenAI 2026 年对原始 SWE-bench 的退役分析发现 59.4% 的审计问题包含有缺陷的测试用例 。
-
-#### Forgetting 检查
-
-需要按技能（per-skill）而非聚合方式测量。Tulu 3 发布了基准：SFT 持续后训练约 -10.4%，on-policy RL 约 -2.3%。Qi et al. 证明聚合数据在安全相关数据上具有误导性——小型良性微调可以剥离 RLHF 安全护栏而聚合分数保持平稳 。
-
-#### 失败分类（Failure Triage）
-
-每个失败 rollout 标记为 capability、prompt、scaffolding、rubric、training-data、orchestration 或 triangulation，为供应商提供具体的编辑清单 。
-
-## 基准评测批评
-
-| 基准 | 主要缺陷 |
-|------|---------|
-| **FrontierSWE (Proximal)** | 最强验证机制，但每个模型锁定在自己的生产 Harness 上，无法分离模型与脚手架的贡献  |
-| **ProgramBench** | 完整的 Web 2.0 软件重建任务——不是任何生产编码 Agent 的部署场景。混淆了竞赛难度与生产效用  |
-| **Tau-Bench** | 测量多轮客户服务交互的最终状态正确性，跳过了负载关键的过程评估  |
-| **GDPval** | 重建的生产力任务并非真实组织上下文中的生产力任务  |
-| **MMMLU** | 40 种语言的标准 MMLU 污染模式，无警戒线、无轮换、已知泄漏  |
-| **DSBench** | 86% 的任务使用 GPT-4o-as-judge，仅一次验证声明，从 34% 饱和到 89% 仅用了十个月  |
-| **Terminal-Bench 2.0** | 任务验证良好，但停留在短 shell 任务范围，隐藏了长周期工作的不可逆性和过程评估失败  |
-
-### 相对较好的基准
-
-通过更多类别的基准通常在单一维度上表现良好：BankerToolBench（Handshake）在金融工具使用的真实性上最干净；LiveCodeBench Pro 从竞赛站点抽取新鲜问题并随年龄退休；SciCode 通过手写确定性检查器处理部分学分的科学编程验证 。
-
-## 门槛 vs 差异化
-
-### 门槛级（可自动化）
-
-数据集文档清单、原子评分标准构建（含 linter）、verifier 健全性审计、n-gram 污染报告、跨模型无偏 pass@k、多 seed bootstrap 置信区间、eval harness 声明、trace 制品、至少两个 scaffolding 配置的表面分层、来自版本化候选列表的探针模型选择 。
-
-### 差异化级（需研究团队）
-
-验证器上的偏置探针电池、sycophancy/reward-tampering/alignment-faking 探针、反事实扰动的 CoT 忠实度探针、IRT 能力审计、在线 RL 通道诊断（PPO 和 GRPO） 。
-
-## 市场含义
-
-### 定价溢价结构
-
-2026 年，前沿实验室已学会大幅折扣黑盒——尤其是那些不关心自身数据质量的供应商的黑盒。建立了完整 QC 基础设施的少数供应商（主要是研究密集的团队）在价格上享有 3-5x 的溢价，溢价建立在持续信任和可靠的质量优先合作基础之上 。
-
-### Type 1 vs Type 2 数据判定
-
-如果一家数据公司到 2027 年仍无法提供跨至少三个模型的 pass@k 分布、针对人类金标的 verifier FP/FN 率、针对命名评估套件的污染检查以及探针模型的前沿形状诊断，他们卖的不是 Type 1 数据——而是带有 Type 1 营销的 Type 2 数据。实验室将在一个采购周期内发现这一点，多份传闻表明已经有多家被识别出 。
-
-### 1. QC 框架的"通过"是动态的，而非静态的
-Intake Review 通过不代表数据可用——Active Testing 才是真正的质量验证。o3 的 1-2% 沙箱漏洞尝试和 GPT-5 在 impossible-SWEbench 上 76% 的测试用例劫持率说明，数据在 RL 训练中会暴露全新的失败模式 。这意味着供应商需要同时运行 Intake（静态审计）和 Active Testing（动态探针），而非只做其一。
-
-### 2. 验证光谱分类是 RL 数据与 SFT 数据的本质分水岭
-不可自动验证的任务（LLM-judge 依赖）如果被当作 RL 数据交付，实验室实际上是在用未审计的奖励函数训练模型。2026 年 59.4% 的 SWE-bench 退役问题含缺陷测试用例，说明即使是"已验证"的数据集也存在系统性偏差风险 。分类决策不可逆——选错类型，数据永远无法产生有效梯度。
-
-### 3. 污染的隐蔽性导致"测量-衰减"螺旋
-GPQA、AIME、FrontierMath 等静态集判别力在一年内衰减，而供应商没有警戒线或轮换方案 。这揭示了一个结构性悖论：越"著名"的基准，越快被预训练污染；越污染，数据越没用；但市场仍在用饱和度作为质量信号。这是一个正在恶化的系统性问题。
-
-### 4. Forgetting 的 per-skill 测量颠覆聚合评估的有效性
-Qi et al. 证明聚合数据在安全相关任务上具有误导性——小型良性微调可以剥离 RLHF 安全护栏而聚合分数保持平稳 。这对数据采购的启示是：任何只看聚合指标的 QC 流程都在欺骗自己，真正的安全数据需要逐技能验证。
-
-### 5. 3-5x 定价溢价是信息不对称的函数，而非纯粹质量的函数
-前沿实验室愿意为完整 QC 基础设施支付溢价，但这不代表市场有效——它代表大多数供应商无法提供可验证的质量证据 。溢价是稀缺性的反映，而不是供应商能力的证明。这意味着建立 QC 标准本身比提升 QC 执行更重要。
-
-## 实践启示
-
-### 1. 建立双阶段 QC 流程：Intake Review + Active Testing
-不要跳过 Intake Review（最便宜的关口）。对于每个数据集，必须在投入训练前完成：验证光谱分类、污染抗性测试、pass@k 分布分析、评分标准模式审计 。通过 Intake 后，用小规模消融+后训练探针验证 Reward Hacking、Sycophancy、Alignment-Faking 等动态失败模式 。
-
-### 2. 优先选择可自动验证的领域构建 RL 数据
-确定性代码评分（SWE-bench Verified 模式）是最易辩护的 RL 数据类型。LLM-judge 依赖的任务应作为 SFT 演示数据交付，而非基于奖励的 RL 数据 。这一决策边界应在数据采购合同中明确。
-
-### 3. 对每个基准建立"警戒线-轮换-恢复"机制
-静态评估集（AIME、GPQA 等）的判别力会衰减 。对于长期数据管线，不能依赖单一基准，需要建立：连续监控污染水平（n-gram 报告）、问题池轮换节奏、以及当判别力跌破阈值时的恢复方案。
-
-### 4. 对齐测试应作为 RL 数据的标准交付物
-Alignment-faking 基线 12%、Reward Tampering、Sycophancy——这三个已发表的探针几乎没有供应商在运行 。在 2026 年，这些探针应成为数据交付的标准配置，而非可选项。如果供应商无法提供探针结果，实验室应将其视为高风险供应商。
-
-### 5. 构建 per-skill 的 Forgetting 测量而非依赖聚合指标
-数据采购评估不能只看聚合分数。必须按技能维度分解，验证安全护栏在每个技能类别上的保持情况 。这要求数据供应商提供细粒度的任务分解和分项测试结果，而非单一总分。
-
-## 相关概念
-
-- [MSM Model Spec Midtraining Alignment](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/msm-model-spec-midtraining-alignment.md) — 对齐伪装（Alignment-faking）与模型训练数据的关系
-- [RAG](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/retrieval-augmented-generation-rag.md) — 数据可验证性的基础范式
-
-## 相关查询
-
-- [LLM Training RL Research](https://github.com/QianJinGuo/wiki-public/blob/main/queries/llm-training-rl-research.md) — RL 训练与数据质量的综合研究视角
-
-## 相关实体
-- [Multilingual Ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/multilingual-ai.md)
-- [Datacomp For Language Models](https://github.com/QianJinGuo/wiki-public/blob/main/entities/datacomp-for-language-models.md)
-- [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-eval-wallezhang-yaml-driven-agent-evaluation-framework.md)
-- [How Far Behind Are Open Models 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-far-behind-are-open-models-2026.md)
-- [Langsmith Evaluation Concepts](https://github.com/QianJinGuo/wiki-public/blob/main/entities/langsmith-evaluation-concepts.md)
-- [nice：浙大提出的理论驱动型 llm 社会智能诊断基准](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nice-zhejiang-university-social-intelligence-benchmark-hyman.md)
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/evaluation-benchmarks-extended.md)
-
----
-
-## Ch14.022 EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios
-
-> 📊 Level ⭐⭐⭐⭐ | 9.9KB | `entities/eva-bench-data-2-voice-agent-evaluation.md`
-
-→ [原文存档](https://huggingface.co/blog/ServiceNow-AI/eva-bench-data)
-
-## 摘要
-
-ServiceNow AI 在 Hugging Face 发布语音 Agent 评估基准 **EVA-Bench Data 2.0**，覆盖 **3 个垂直领域**（HR、机票改签、客户支持）、**121 个工具调用**、**213 个多步骤对话场景**。核心目标是填补"语音 Agent 在垂直业务场景的评估缺口"——通用 Agent 基准（HumanEval、SWE-bench、tau-bench）难以反映语音场景下 ASR/TTS 噪声、对话节奏、用户打断、多轮上下文等独特挑战。
-
-## 核心要点
-
-- **3 个领域聚焦**：HR、机票改签、客户支持——都是高对话量 + 复杂工具调用 + 严格合规的垂直业务。
-- **121 个工具覆盖真实业务场景**：包括日历查询、订单检索、改签规则匹配、客户档案调取等。
-- **213 个多步骤场景**：每个场景包含多轮对话、多个工具调用、状态依赖。
-- **语音 Agent 垂直评估缺口**：与文本 Agent 基准相比，语音场景多了 ASR 错误、TTS 韵律、用户打断、语音对话节奏等独特挑战。
-- **可复现的数据集**：发布在 Hugging Face Datasets，便于学术与企业团队直接复用。
-
-### 1. 为什么"语音 Agent 评估"是独立赛道
-
-通用 Agent 评估基准（HumanEval、SWE-bench、tau-bench、WebArena）几乎都是文本形态——输入是结构化 prompt，输出是文本或代码执行结果。但**真实语音 Agent 的工程挑战完全是另一套**：
-
-- **ASR（语音识别）误差**：用户说的"我想改签到明天上午十点"可能识别成"我想改起到明天上午拾点"，模型必须容错。
-- **TTS（语音合成）韵律**：模型回复的语气、停顿、强调直接影响用户体验，难以用文本质量指标衡量。
-- **用户打断**：真实对话中用户会打断 Agent（"等一下，我想改问……"），Agent 需要打断检测 + 上下文重锚。
-- **对话节奏**：语音对话比文字更依赖节奏感——停顿过久显得笨拙，回复过快显得急躁。
-- **情绪识别**：用户语音中携带的情绪信息（焦急、愤怒、困惑）需要被 Agent 理解。
-
-EVA-Bench 把这些语音特性显式建模进评估维度，正是补足了通用 Agent 基准的盲区。
-
-### 2. 三个垂直领域的选择逻辑
-
-EVA-Bench 选了 HR、机票改签、客户支持——表面看是三个独立业务，实则共享一组工程特征：
-
-- **高对话量**：每天数千到数万次对话，自动化收益明显。
-- **多轮依赖**：用户问题往往不是单轮就能解决的，需要跨多轮的状态保持。
-- **工具调用复杂**：查日历、改订单、查档案、调规则引擎，每个都需要正确的工具组合。
-- **合规敏感**：错误操作直接影响客户体验甚至合规风险（HR 误发工资、机票错改、客服承诺过度）。
-- **价值可量化**：自动化率提升直接对应成本节约。
-
-这三个领域正好是语音 Agent "既能落地、又有评估意义"的甜蜜点。
-
-### 3. 121 个工具与 213 个场景的规模意义
-
-数字背后的工程含义：
-
-- **121 个工具**：单一场景的工具调用空间巨大，要求 Agent 具备**工具选择 + 工具组合 + 工具失败回退**的能力。这比 SWE-bench 的"修一个 bug 用一两个文件操作"复杂度高得多。
-- **213 个场景**：覆盖了从简单（"查我的机票"）到复杂（"改签 + 退差价 + 通知同事"）的完整光谱。每个场景都是多步骤、多工具的状态机。
-- **场景密度**：平均每个工具对应约 1.76 个场景——工具与场景不是孤立设计，而是协同构建。
-
-这个规模让 EVA-Bench 成为"工具调用能力 + 多轮状态管理能力"的双重压测。
-
-### 4. 与现有 Agent 评估基准的对比
-
-| 基准 | 形态 | 评测维度 | 局限 |
-|---|---|---|---|
-| HumanEval | 代码生成 | pass@k | 单轮、无工具 |
-| SWE-bench | 软件工程修复 | patch 通过率 | 文本、无语音 |
-| tau-bench | 客服对话 | 多轮工具 | 文本客服，无垂直深度 |
-| WebArena | 网页任务 | 任务完成率 | 浏览器操作，无语音 |
-| **EVA-Bench Data 2.0** | **垂直语音 Agent** | **多领域 + 多工具 + 多轮** | **聚焦语音场景的特定挑战** |
-
-EVA-Bench 不是要取代通用 Agent 基准，而是**在"垂直 + 语音"这条赛道填补空白**。
-
-### 5. 评测指标设计的开放问题
-
-文章摘录中未展开评测指标的具体定义，但从场景规模可以推测几个关键维度：
-
-- **任务完成率**（Task Completion Rate）：场景最终是否达成用户目标。
-- **工具调用准确率**（Tool Selection Accuracy）：是否选择了正确的工具 / 参数。
-- **对话轮次效率**（Turn Efficiency）：达成目标所需的对话轮次（语音场景下用户耐心有限）。
-- **ASR 鲁棒性**（ASR Robustness）：在 ASR 错误注入下的表现。
-- **打断处理**（Interruption Handling）：用户中途打断时的上下文重锚能力。
-- **合规性**（Compliance）：是否遵循了业务规则（如改签规则、HR 政策）。
-
-这些维度加起来，远比"模型在 X 基准上得分 Y"复杂——是真正的"工程化评估体系"。
-
-### 6. 企业落地的关键启示
-
-对正在构建语音 Agent 的企业团队：
-
-- **不要拿通用 Agent 基准自欺**：HumanEval 90% 不代表你的语音 Agent 在客户支持场景表现优秀。
-- **垂直评估集是必须的**：HR Agent 应该测 HR 场景、机票 Agent 应该测改签场景——通用基准无法替代。
-- **工具调用失败模式需要专项测试**：121 个工具的组合爆炸空间（tool combination space）需要基于真实业务路径设计测试集。
-- **语音特性必须显式评估**：ASR 错误注入、用户打断模拟、对话节奏评估，这些是语音 Agent 独有的工程维度。
-
-### 7. ServiceNow AI 的产品策略
-
-ServiceNow 本身是 ITSM / HR / 客户支持自动化领域的巨头，发布 EVA-Bench 的战略意图可能是：
-
-- **建立垂直 Agent 评估标准**：通过 Hugging Face 开源数据集，把自己放在"行业基准制定者"的位置。
-- **倒逼模型厂商对齐**：当 EVA-Bench 成为行业标准，未对齐的模型 / Agent 框架在 ServiceNow 客户面前会失去竞争力。
-- **推动自家产品差异化**：ServiceNow 的 Agent 产品可以"内置 EVA-Bench 评估"，把"基准符合度"作为营销点。
-
-这种"用开源基准建立商业护城河"的策略在 AI 2.0 时代越来越常见——LangChain 用 LangSmith、Anthropic 用 Claude Code Skills、各大模型厂商用自家评测集都是同一种模式。
-
-### 8. 与本文库其他 Agent 评估实体的关联
-
-- **横向对照**：`eva-bench` 与通用 Agent 基准（HumanEval、SWE-bench、tau-bench）的关系——垂直 vs 通用、语音 vs 文本。
-- **纵向延伸**：从 EVA-Bench 出发，企业可以构建自己的"内部评估集"——比 EVA-Bench 更贴合具体业务场景。
-- **工具调用能力**：EVA-Bench 的 121 个工具与 [Cline Agent Runtime Sdk](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cline-agent-runtime-sdk.md) 的 multi-tool 编排能力形成评测—能力对照。
-
-## 实践启示
-
-1. **语音 Agent 评估需要垂直基准**：通用 Agent 基准无法反映 ASR 错误、用户打断、对话节奏等语音特性。
-2. **多工具 + 多轮是真实业务的关键复杂度**：121 工具 + 213 场景的规模才有"工程压测"价值，远超 HumanEval 的单轮复杂度。
-3. **工具选择与组合失败是核心风险点**：评估必须细分到"工具选择 / 参数构造 / 失败回退"三个维度。
-4. **垂直业务场景的合规性是隐性 KPI**：HR、机票、客服三大领域的共同点是合规敏感，评估必须包含规则遵循度。
-5. **开源基准是建立商业护城河的有效路径**：用 Hugging Face 发布基准，倒逼生态对齐自家产品差异化。
-6. **企业应构建内部评估集**：在 EVA-Bench 之上叠加自家业务数据，让评估更贴近真实业务表现。
-
-## 相关实体
-
-- [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md) — Agent 原理架构的综合性参考
-- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md) — Agent 范式跃迁的视角
-- [Karpathy Vibe Coding Agentic Engineering](ch04/009-karpathy-vibe-coding-agentic-engineering.html) — 同源访谈的另一标题版本
-- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md) — AWS Bedrock AgentOps 的规模化运营实践
-- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验-v2.md) — 多智能体团队搭建的实战经验
-- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏-v2.md) — OpenClaw 多智能体系统化教程
-- [Cline Agent Runtime Sdk](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cline-agent-runtime-sdk.md) — Cline SDK 的多工具编排能力，与 EVA-Bench 121 工具规模相互映照
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/observability-monitoring.md)
-
----
-
-## Ch14.023 Moneyball for Physical AI
-
-> 📊 Level ⭐⭐⭐⭐ | 8.6KB | `entities/moneyball-for-physical-ai.md`
-
-> **Background**：本文基于 Praxis Currents 的一篇深度分析文章，类比棒球 Moneyball 革命来审视 Physical AI 领域的数据定价与价值发现。原始文章通过 Jina Reader 抓取。
-
-## 核心论点
-
-Physical AI 的数据市场如同 2002 年的棒球自由球员市场——被系统性低估和错误定价。当前行业对 Physical AI 数据的评估方式存在根本性偏差，类似于传统球探偏好主观美学和盗垒数，而忽略了真正与得分相关的上垒率。
-
-### 1. Physical AI 数据的三种模态及其经济特性
-
-Physical AI 的数据操作横跨三种模态，每种都有不同的成本-信息密度权衡：
-
-| 数据模态 | 成本特征 | 信息密度 | 典型来源 |
-|---------|---------|---------|---------|
-| **观测数据（Observational）** | 低成本、高广度 | 缺乏动作监督 | 自我中心/外部视频 |
-| **干预数据（Interventional）** | 高成本、低广度 | 动作密集 | 遥操作演示 |
-| **部署数据（Deployment）** | 内生成本，受营收抵消 | 未经过滤 | 生产系统遥测 |
-
-每种模态都有其固有的偏差：观测数据缺乏动作标签，干预数据受限于人工成本，部署数据受限于商业运营环境。
-
-### 2. Scaling Laws 视角下的数据效用框架
-
-文章的核心贡献是将语言模型的 Scaling Laws 框架应用于 Physical AI 数据评估：
-
-- **幂律衰减**：测试损失随数据量呈幂律下降，直到不可约误差下限
-- **多样性降低下限**：数据多样性同时降低渐近误差下限（通过跨域迁移）和增加数据集内在维度
-- **重复的边际效用**：约 4 个 epoch 后重复数据的效用急剧衰减，16 个 epoch 后进入严格递减区间
-- **近重复数据陷阱**：密集采样窄邻域会快速饱和局部容量，损害模型性能
-- **长尾稀有事件**：分布外（OOD）事件具有超高的边际效用，但发现成本呈指数增长
-
-关键公式：资本效率不通过最大化数据量来扩展，而是通过**精确计算和定价数据新颖性**。
-
-### 3. 部署数据的"油井衰减曲线"
-
-生产遥测行为类似于油井的陡峭衰减曲线：初始运营产生高熵故障模式，随着异常被解决，迅速衰减为低效用、近重复的常规数据。这种局部分布采样经历指数饱和：
-
-$$U_{eff}(n) = U_0 + \Delta U(1 - e^{-n/n_c})$$
-
-超过覆盖数（$n_c$）后，生产数据流退化为纯重复，边际效用接近于零。**高价值数据严格集中在故障尾部；常规运营成功包含零边际效用。**
-
-### 4. 资本效率与部署缺口
-
-文章量化了 Physical AI 部署中的关键经济约束：
-
-- **启动损失（$L_{start}$）**：开始部署所需的最大可接受损失
-- **盈亏平衡损失（$L_{neutral}$）**：运营盈利的损失阈值
-- **不可约误差下限（$A_j(\phi)$）**：由传感器配置决定的物理极限
-
-如果盈亏平衡阈值接近不可约误差下限（$L_{neutral} \approx A_j(\phi)$），该任务就是**资本黑洞**——数据需求随幂律增长，成本呈超线性膨胀。这为"先广度后深度"策略提供了定量依据：在扩大部署前，必须先用观测数据压低不可约误差下限。
-
-### 5. 利益相关者的系统性偏差
-
-文章识别了 Physical AI 生态系统中各参与方的结构性偏见：
-
-| 角色 | 数据视角 | 系统性偏差 |
-|------|---------|-----------|
-| **基础模型实验室** | 大规模预训练 | 高估预训练价值，低估边缘案例 |
-| **垂直整合玩家** | 部署遥测 | 陷入"低方差环境→低新颖性数据→无法泛化"的循环陷阱 |
-| **新集成商（Neo-integrator）** | 跨环境浅层覆盖 | 将运营足迹视为计费面而非数据策展面 |
-| **遥操作供应商** | 运营小时数 | 激励最大化原始量而非独特样本覆盖 |
-| **硬件厂商** | 确定性运动回放 | 缺乏通向 Scaling Curve 的路径 |
-
-最稀缺的能力不是收集更多数据，而是**识别和捕获数据新颖性**。价值将系统性地流向能够隔离分布外变异的运营团队。
-
-### 6. Physical AI 与软件 AI 的根本差异
-
-文章指出 Physical AI 无法简单复制软件 AI 的"应用层价值捕获"模式，原因有三：
-
-1. **任务维度与饱和度**：物理任务（如仓库分拣）的内在维度低，数据流快速饱和；软件开发具有高内在维度，持续产生边际效用
-2. **基础模型不对称**：软件应用层有大量补贴的基础模型可用；Physical AI 缺乏可租赁的基础层
-3. **遥测与利润约束**：物理遥测成本高、天生欠观测；若 Physical AI 的基础观测数据保持竞争性和专有性，上游模型层将保持垄断定价权
-
-这意味着 Physical AI 的价值捕获逻辑与软件 AI 有本质不同——下游应用层的利润空间将被上游基础设施层压缩。
-
-## 关键洞察
-
-1. **数据定价偏差** — Physical AI 领域的数据资产被传统评估框架低估，行业尚未建立正确的估值指标
-2. **信号 vs 噪音** — 需要像 Moneyball 发现上垒率一样，找到 Physical AI 数据中真正与性能相关的核心指标
-3. **市场错位机会** — 能够正确识别和利用被低估数据资产的组织将获得类似 2002 年奥克兰运动家队的竞争优势
-
-## 实践启示
-
-1. **废弃"累计运营小时数"指标**：数据工程管道应废弃累计运营小时数作为主要指标。改为追踪：每任务的边际集成成本、每任务饱和点（$n_c$）、分布漂移速度（$v_j$）、集群覆盖率和数据新颖性密度。
-
-2. **平衡三种数据类型的资本配置**：优先投资低成本、高多样性的观测数据以压低不可约误差下限；将高成本的干预数据严格限制在任务饱和阈值内；过滤生产数据流，仅保留 OOD 边缘案例和故障模式。
-
-3. **部署前先建立广度**：在启动生产部署前，先用观测数据建立基线能力边界。如果盈亏平衡阈值接近不可约误差下限，该任务在资本上不可行——应重新配置硬件或重新选择任务。
-
-4. **新集成商的战略修正**：运营足迹应被视为主动数据策展面而非计费面。跨环境的任务多样性是 Physical AI 中最被低估的资产——它直接贡献 Scaling Law 中的复合项。
-
-5. **Physical AI 投资的价值捕获预判**：投资 Physical AI 项目前，评估其数据飞轮是否可能启动。如果任务的内在维度低、部署环境方差小、且缺乏观测数据广度，该项目的价值捕获将受限于上游基础设施层，而非下游应用层。
-
-## 与现有 wiki 实体的关联
-
-- [NVIDIA Isaac Lab](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md) — Physical AI 训练基础设施
-- [Perceptron](https://github.com/QianJinGuo/wiki-public/blob/main/entities/perceptron-mk1-video-analysis-ai.md) — Physical AI 感知层
-- [DiffusionGemma](https://github.com/QianJinGuo/wiki-public/blob/main/entities/diffusiongemma-4x-faster-text-generation-google-2026-06.md) — 生成模型与分数估计
-- [DiScoFormer](https://github.com/QianJinGuo/wiki-public/blob/main/entities/discoformer-density-score-transformer-allenai.md) — 密度与分数估计的 Transformer 方法
-
-## 差异化分析
-
-本文的独特价值在于提供了一个**元视角**——不是讨论 Physical AI 的技术实现，而是分析 Physical AI 数据作为**资产类别**的定价机制和市场效率。这与现有 wiki 中讨论 Physical AI 技术实现的实体形成互补。
-
----
-
-## Ch14.024 Data for AI：明其所耗，知其所因！让每一分 Token 消耗都可量化的全栈实践
-
-> 📊 Level ⭐⭐⭐⭐⭐ | 35.3KB | `entities/data-for-ai明其所耗知其所因让每一分-token-消耗都可量化的全栈实践.md`
-
-source: rss
-source_url: https://aws.amazon.com/cn/blogs/china/data-for-ai-token-full-stack-practice/
-ingested: 2026-05-28
-feed_name: AWS China Blog
-source_published: 2026-05-27T07:12:57Z
----
+> 📊 Level ⭐⭐⭐⭐ | 35.0KB | `entities/data-for-ai明其所耗知其所因让每一分-token-消耗都可量化的全栈实践.md`
 
 ## Data for AI：明其所耗，知其所因！让每一分 Token 消耗都可量化的全栈实践
 
@@ -2375,9 +1972,403 @@ Agentic AI 的成本失控根源在于其执行路径的非确定性——传统
 - [飞来汇借助 Aws Security Agent 构建跨境支付应用的智能安全防线](https://github.com/QianJinGuo/wiki-public/blob/main/entities/飞来汇借助-aws-security-agent-构建跨境支付应用的智能安全防线.md)
 - [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-aws-smgs-uses-an-ai-powered-conversational-assistant-to-.md)
 - [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/滴滴国际化客服质检智能化之路基于-amazon-bedrock-的多语种多业务线质检实践.md)
-- [Powering Agentic Ai Sales Strategy With Amazon Bedrock Agent](ch04/349-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.html)
+- [Powering Agentic Ai Sales Strategy With Amazon Bedrock Agent](ch04/238-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.html)
 - [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](https://github.com/QianJinGuo/wiki-public/blob/main/entities/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/data-infrastructure.md)
+
+---
+
+## Ch14.022 Good QC for RL Data
+
+> 📊 Level ⭐⭐⭐⭐ | 13.5KB | `entities/good-qc-for-rl-data.md`
+
+> → [原文存档](https://www.seancai.com/philosophy/good_qc_rl_data)
+
+## 核心要点
+
+- **来源：** Sean Cai (seancai.com) | 2026-05-07
+- **评分：** value=9, confidence=8, product=72
+- 提出 RL 训练数据的 QC 标准框架，包括 Intake Review（准入审查）和 Active Testing（主动测试）两大阶段
+- Intake Review 涵盖验证光谱分类、污染抗性、pass@k 分布分析、评分标准构建模式
+- Active Testing 覆盖 Reward Hacking、Forgetting、Verifier FP/FN 等训练中才暴露的失败模式
+- 批评 FrontierSWE、ProgramBench、Tau-Bench、DSBench、MMMLU 等基准在 QC 各维度上的缺陷
+- 市场含义：数据供应商若无法展示完整的 QC 审计结果，将在 2026 年面临合同终止
+- 核心论点：QC 执行鸿沟是数据市场最大的尚未解决的问题，掌握 QC 的供应商可获得 3-5x 定价溢价
+
+## 背景与动机
+
+### 数据市场的验证性困境
+
+2026 年 1 月，Sean Cai 提出 Type 1 / Type 2 数据的新定义——数据行业迫切需要一套评估数据质量的标准化语言。向长周期（long-horizon）训练范式的转变使得基于模型的 QA 需求急剧增长，远超当前数据公司的"体力工厂"能力 。
+
+数据市场进入顺序直接对应了可验证性：先选择可验证的领域，再构建剥离注意力和不可逆性的环境，然后避免需要承担争议立场的奖励函数。这些选择效应的痕迹被固化在流水线设计中。即使在理论上"简单"的领域，区分有用 Type 1 数据与贬值数据的 QC 纪律也尚未成为数据市场的共享语言 。
+
+### 前沿实验室的 QC 成熟度
+
+前沿实验室的 QC 标准在过去 18 个月中逐渐成型，已经是一套可防御的、非理想化的标准。任何在 2026 年向前沿实验室销售数据的供应商都隐性地被这套标准衡量——大多数供应商在多个关口同时失败。2026 年运往前沿实验室的大部分数据未能通过实验室自己的内部 QC 框架 。
+
+## QC 框架详解
+
+### Intake Review（准入审查）
+
+在任何一个后训练运行触及数据之前，首先要问：这个数据集本身是否可评估？这是 QC 体系中最便宜的关口，也是大多数数据公司跳过的关口。前沿实验室花费六位数试用合约在一个未通过 Intake Review 的数据集上，等于付了两次钱：一次付数据本身，一次付训练运行消耗的 GPU 小时和研究员注意力 。
+
+#### 验证光谱分类（Verification Spectrum Classification）
+
+确定任务位于确定性代码评分（如 SWE-bench Verified）与 LLM-judge 评分标准（如 HealthBench、FLASK、BiGGen Bench、Prometheus 2 的原子式/二元/轴标签化模式）之间的位置。不可自动验证的任务应作为 SFT 演示数据而非基于奖励的 RL 数据交付。跳过分类导致实验室将未经审计的 LLM judge 插入奖励函数 。
+
+#### 污染抗性与变体生成（Contamination Resistance）
+
+数据集的"可爬升性"是否能存续到下一代模型？GPQA、AIME、FrontierMath 等静态集的判别力在一年内衰减——问题泄露到预训练数据中，而供应商没有警戒线、没有轮换节奏、没有恢复方案 。
+
+#### Pass@k 与分布分析
+
+pass@1 在目标模型上为零或难度分布呈双峰的数据集，不产生任何可用的梯度 。
+
+#### 评分标准构建模式
+
+评分标准是原子+二元的，还是复合+可奖励劫持的？每个问题背后都有已发表的警示案例，错误的代价由实验室而非供应商承担 。
+
+### Active Testing（主动测试）
+
+Intake 通过后，通过小规模消融+小规模后训练来压力测试数据，捕捉 Intake 无法发现的问题 。
+
+#### Reward Hacking
+
+在所有实验室对话中反复出现。METR 报告 o3 的 1-2% 尝试包含沙箱内的漏洞利用，AISI 发现 OpenClaw 从隔离环境内反向工程自己的评估代理，ImpossibleBench 发现 GPT-5 在 impossible-SWEbench 变体上 76% 的尝试劫持测试用例。然而大多数供应商从未运行过一个探针来检查自己的数据是否训练了这种行为 。
+
+#### Sycophancy / Reward-Tampering / Alignment-Faking
+
+三种已发表的探针——供应商应运行它们。Alignment-faking 的基线为 12%，但几乎没有供应商在做 。
+
+#### Verifier 审计
+
+SWE-bench Verified Pro 模式——200 PASS + 200 FAIL 人工重新判定，FP 和 FN 率分别报告——已成为最低门槛。OpenAI 2026 年对原始 SWE-bench 的退役分析发现 59.4% 的审计问题包含有缺陷的测试用例 。
+
+#### Forgetting 检查
+
+需要按技能（per-skill）而非聚合方式测量。Tulu 3 发布了基准：SFT 持续后训练约 -10.4%，on-policy RL 约 -2.3%。Qi et al. 证明聚合数据在安全相关数据上具有误导性——小型良性微调可以剥离 RLHF 安全护栏而聚合分数保持平稳 。
+
+#### 失败分类（Failure Triage）
+
+每个失败 rollout 标记为 capability、prompt、scaffolding、rubric、training-data、orchestration 或 triangulation，为供应商提供具体的编辑清单 。
+
+## 基准评测批评
+
+| 基准 | 主要缺陷 |
+|------|---------|
+| **FrontierSWE (Proximal)** | 最强验证机制，但每个模型锁定在自己的生产 Harness 上，无法分离模型与脚手架的贡献  |
+| **ProgramBench** | 完整的 Web 2.0 软件重建任务——不是任何生产编码 Agent 的部署场景。混淆了竞赛难度与生产效用  |
+| **Tau-Bench** | 测量多轮客户服务交互的最终状态正确性，跳过了负载关键的过程评估  |
+| **GDPval** | 重建的生产力任务并非真实组织上下文中的生产力任务  |
+| **MMMLU** | 40 种语言的标准 MMLU 污染模式，无警戒线、无轮换、已知泄漏  |
+| **DSBench** | 86% 的任务使用 GPT-4o-as-judge，仅一次验证声明，从 34% 饱和到 89% 仅用了十个月  |
+| **Terminal-Bench 2.0** | 任务验证良好，但停留在短 shell 任务范围，隐藏了长周期工作的不可逆性和过程评估失败  |
+
+### 相对较好的基准
+
+通过更多类别的基准通常在单一维度上表现良好：BankerToolBench（Handshake）在金融工具使用的真实性上最干净；LiveCodeBench Pro 从竞赛站点抽取新鲜问题并随年龄退休；SciCode 通过手写确定性检查器处理部分学分的科学编程验证 。
+
+## 门槛 vs 差异化
+
+### 门槛级（可自动化）
+
+数据集文档清单、原子评分标准构建（含 linter）、verifier 健全性审计、n-gram 污染报告、跨模型无偏 pass@k、多 seed bootstrap 置信区间、eval harness 声明、trace 制品、至少两个 scaffolding 配置的表面分层、来自版本化候选列表的探针模型选择 。
+
+### 差异化级（需研究团队）
+
+验证器上的偏置探针电池、sycophancy/reward-tampering/alignment-faking 探针、反事实扰动的 CoT 忠实度探针、IRT 能力审计、在线 RL 通道诊断（PPO 和 GRPO） 。
+
+## 市场含义
+
+### 定价溢价结构
+
+2026 年，前沿实验室已学会大幅折扣黑盒——尤其是那些不关心自身数据质量的供应商的黑盒。建立了完整 QC 基础设施的少数供应商（主要是研究密集的团队）在价格上享有 3-5x 的溢价，溢价建立在持续信任和可靠的质量优先合作基础之上 。
+
+### Type 1 vs Type 2 数据判定
+
+如果一家数据公司到 2027 年仍无法提供跨至少三个模型的 pass@k 分布、针对人类金标的 verifier FP/FN 率、针对命名评估套件的污染检查以及探针模型的前沿形状诊断，他们卖的不是 Type 1 数据——而是带有 Type 1 营销的 Type 2 数据。实验室将在一个采购周期内发现这一点，多份传闻表明已经有多家被识别出 。
+
+### 1. QC 框架的"通过"是动态的，而非静态的
+Intake Review 通过不代表数据可用——Active Testing 才是真正的质量验证。o3 的 1-2% 沙箱漏洞尝试和 GPT-5 在 impossible-SWEbench 上 76% 的测试用例劫持率说明，数据在 RL 训练中会暴露全新的失败模式 。这意味着供应商需要同时运行 Intake（静态审计）和 Active Testing（动态探针），而非只做其一。
+
+### 2. 验证光谱分类是 RL 数据与 SFT 数据的本质分水岭
+不可自动验证的任务（LLM-judge 依赖）如果被当作 RL 数据交付，实验室实际上是在用未审计的奖励函数训练模型。2026 年 59.4% 的 SWE-bench 退役问题含缺陷测试用例，说明即使是"已验证"的数据集也存在系统性偏差风险 。分类决策不可逆——选错类型，数据永远无法产生有效梯度。
+
+### 3. 污染的隐蔽性导致"测量-衰减"螺旋
+GPQA、AIME、FrontierMath 等静态集判别力在一年内衰减，而供应商没有警戒线或轮换方案 。这揭示了一个结构性悖论：越"著名"的基准，越快被预训练污染；越污染，数据越没用；但市场仍在用饱和度作为质量信号。这是一个正在恶化的系统性问题。
+
+### 4. Forgetting 的 per-skill 测量颠覆聚合评估的有效性
+Qi et al. 证明聚合数据在安全相关任务上具有误导性——小型良性微调可以剥离 RLHF 安全护栏而聚合分数保持平稳 。这对数据采购的启示是：任何只看聚合指标的 QC 流程都在欺骗自己，真正的安全数据需要逐技能验证。
+
+### 5. 3-5x 定价溢价是信息不对称的函数，而非纯粹质量的函数
+前沿实验室愿意为完整 QC 基础设施支付溢价，但这不代表市场有效——它代表大多数供应商无法提供可验证的质量证据 。溢价是稀缺性的反映，而不是供应商能力的证明。这意味着建立 QC 标准本身比提升 QC 执行更重要。
+
+## 实践启示
+
+### 1. 建立双阶段 QC 流程：Intake Review + Active Testing
+不要跳过 Intake Review（最便宜的关口）。对于每个数据集，必须在投入训练前完成：验证光谱分类、污染抗性测试、pass@k 分布分析、评分标准模式审计 。通过 Intake 后，用小规模消融+后训练探针验证 Reward Hacking、Sycophancy、Alignment-Faking 等动态失败模式 。
+
+### 2. 优先选择可自动验证的领域构建 RL 数据
+确定性代码评分（SWE-bench Verified 模式）是最易辩护的 RL 数据类型。LLM-judge 依赖的任务应作为 SFT 演示数据交付，而非基于奖励的 RL 数据 。这一决策边界应在数据采购合同中明确。
+
+### 3. 对每个基准建立"警戒线-轮换-恢复"机制
+静态评估集（AIME、GPQA 等）的判别力会衰减 。对于长期数据管线，不能依赖单一基准，需要建立：连续监控污染水平（n-gram 报告）、问题池轮换节奏、以及当判别力跌破阈值时的恢复方案。
+
+### 4. 对齐测试应作为 RL 数据的标准交付物
+Alignment-faking 基线 12%、Reward Tampering、Sycophancy——这三个已发表的探针几乎没有供应商在运行 。在 2026 年，这些探针应成为数据交付的标准配置，而非可选项。如果供应商无法提供探针结果，实验室应将其视为高风险供应商。
+
+### 5. 构建 per-skill 的 Forgetting 测量而非依赖聚合指标
+数据采购评估不能只看聚合分数。必须按技能维度分解，验证安全护栏在每个技能类别上的保持情况 。这要求数据供应商提供细粒度的任务分解和分项测试结果，而非单一总分。
+
+## 相关概念
+
+- [MSM Model Spec Midtraining Alignment](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/msm-model-spec-midtraining-alignment.md) — 对齐伪装（Alignment-faking）与模型训练数据的关系
+- [RAG](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/retrieval-augmented-generation-rag.md) — 数据可验证性的基础范式
+
+## 相关查询
+
+- [LLM Training RL Research](https://github.com/QianJinGuo/wiki-public/blob/main/queries/llm-training-rl-research.md) — RL 训练与数据质量的综合研究视角
+
+## 相关实体
+- [Multilingual Ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/multilingual-ai.md)
+- [Datacomp For Language Models](https://github.com/QianJinGuo/wiki-public/blob/main/entities/datacomp-for-language-models.md)
+- [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-eval-wallezhang-yaml-driven-agent-evaluation-framework.md)
+- [How Far Behind Are Open Models 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-far-behind-are-open-models-2026.md)
+- [Langsmith Evaluation Concepts](https://github.com/QianJinGuo/wiki-public/blob/main/entities/langsmith-evaluation-concepts.md)
+- [nice：浙大提出的理论驱动型 llm 社会智能诊断基准](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nice-zhejiang-university-social-intelligence-benchmark-hyman.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/evaluation-benchmarks-extended.md)
+
+---
+
+## Ch14.023 EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios
+
+> 📊 Level ⭐⭐⭐⭐ | 9.9KB | `entities/eva-bench-data-2-voice-agent-evaluation.md`
+
+→ [原文存档](https://huggingface.co/blog/ServiceNow-AI/eva-bench-data)
+
+## 摘要
+
+ServiceNow AI 在 Hugging Face 发布语音 Agent 评估基准 **EVA-Bench Data 2.0**，覆盖 **3 个垂直领域**（HR、机票改签、客户支持）、**121 个工具调用**、**213 个多步骤对话场景**。核心目标是填补"语音 Agent 在垂直业务场景的评估缺口"——通用 Agent 基准（HumanEval、SWE-bench、tau-bench）难以反映语音场景下 ASR/TTS 噪声、对话节奏、用户打断、多轮上下文等独特挑战。
+
+## 核心要点
+
+- **3 个领域聚焦**：HR、机票改签、客户支持——都是高对话量 + 复杂工具调用 + 严格合规的垂直业务。
+- **121 个工具覆盖真实业务场景**：包括日历查询、订单检索、改签规则匹配、客户档案调取等。
+- **213 个多步骤场景**：每个场景包含多轮对话、多个工具调用、状态依赖。
+- **语音 Agent 垂直评估缺口**：与文本 Agent 基准相比，语音场景多了 ASR 错误、TTS 韵律、用户打断、语音对话节奏等独特挑战。
+- **可复现的数据集**：发布在 Hugging Face Datasets，便于学术与企业团队直接复用。
+
+### 1. 为什么"语音 Agent 评估"是独立赛道
+
+通用 Agent 评估基准（HumanEval、SWE-bench、tau-bench、WebArena）几乎都是文本形态——输入是结构化 prompt，输出是文本或代码执行结果。但**真实语音 Agent 的工程挑战完全是另一套**：
+
+- **ASR（语音识别）误差**：用户说的"我想改签到明天上午十点"可能识别成"我想改起到明天上午拾点"，模型必须容错。
+- **TTS（语音合成）韵律**：模型回复的语气、停顿、强调直接影响用户体验，难以用文本质量指标衡量。
+- **用户打断**：真实对话中用户会打断 Agent（"等一下，我想改问……"），Agent 需要打断检测 + 上下文重锚。
+- **对话节奏**：语音对话比文字更依赖节奏感——停顿过久显得笨拙，回复过快显得急躁。
+- **情绪识别**：用户语音中携带的情绪信息（焦急、愤怒、困惑）需要被 Agent 理解。
+
+EVA-Bench 把这些语音特性显式建模进评估维度，正是补足了通用 Agent 基准的盲区。
+
+### 2. 三个垂直领域的选择逻辑
+
+EVA-Bench 选了 HR、机票改签、客户支持——表面看是三个独立业务，实则共享一组工程特征：
+
+- **高对话量**：每天数千到数万次对话，自动化收益明显。
+- **多轮依赖**：用户问题往往不是单轮就能解决的，需要跨多轮的状态保持。
+- **工具调用复杂**：查日历、改订单、查档案、调规则引擎，每个都需要正确的工具组合。
+- **合规敏感**：错误操作直接影响客户体验甚至合规风险（HR 误发工资、机票错改、客服承诺过度）。
+- **价值可量化**：自动化率提升直接对应成本节约。
+
+这三个领域正好是语音 Agent "既能落地、又有评估意义"的甜蜜点。
+
+### 3. 121 个工具与 213 个场景的规模意义
+
+数字背后的工程含义：
+
+- **121 个工具**：单一场景的工具调用空间巨大，要求 Agent 具备**工具选择 + 工具组合 + 工具失败回退**的能力。这比 SWE-bench 的"修一个 bug 用一两个文件操作"复杂度高得多。
+- **213 个场景**：覆盖了从简单（"查我的机票"）到复杂（"改签 + 退差价 + 通知同事"）的完整光谱。每个场景都是多步骤、多工具的状态机。
+- **场景密度**：平均每个工具对应约 1.76 个场景——工具与场景不是孤立设计，而是协同构建。
+
+这个规模让 EVA-Bench 成为"工具调用能力 + 多轮状态管理能力"的双重压测。
+
+### 4. 与现有 Agent 评估基准的对比
+
+| 基准 | 形态 | 评测维度 | 局限 |
+|---|---|---|---|
+| HumanEval | 代码生成 | pass@k | 单轮、无工具 |
+| SWE-bench | 软件工程修复 | patch 通过率 | 文本、无语音 |
+| tau-bench | 客服对话 | 多轮工具 | 文本客服，无垂直深度 |
+| WebArena | 网页任务 | 任务完成率 | 浏览器操作，无语音 |
+| **EVA-Bench Data 2.0** | **垂直语音 Agent** | **多领域 + 多工具 + 多轮** | **聚焦语音场景的特定挑战** |
+
+EVA-Bench 不是要取代通用 Agent 基准，而是**在"垂直 + 语音"这条赛道填补空白**。
+
+### 5. 评测指标设计的开放问题
+
+文章摘录中未展开评测指标的具体定义，但从场景规模可以推测几个关键维度：
+
+- **任务完成率**（Task Completion Rate）：场景最终是否达成用户目标。
+- **工具调用准确率**（Tool Selection Accuracy）：是否选择了正确的工具 / 参数。
+- **对话轮次效率**（Turn Efficiency）：达成目标所需的对话轮次（语音场景下用户耐心有限）。
+- **ASR 鲁棒性**（ASR Robustness）：在 ASR 错误注入下的表现。
+- **打断处理**（Interruption Handling）：用户中途打断时的上下文重锚能力。
+- **合规性**（Compliance）：是否遵循了业务规则（如改签规则、HR 政策）。
+
+这些维度加起来，远比"模型在 X 基准上得分 Y"复杂——是真正的"工程化评估体系"。
+
+### 6. 企业落地的关键启示
+
+对正在构建语音 Agent 的企业团队：
+
+- **不要拿通用 Agent 基准自欺**：HumanEval 90% 不代表你的语音 Agent 在客户支持场景表现优秀。
+- **垂直评估集是必须的**：HR Agent 应该测 HR 场景、机票 Agent 应该测改签场景——通用基准无法替代。
+- **工具调用失败模式需要专项测试**：121 个工具的组合爆炸空间（tool combination space）需要基于真实业务路径设计测试集。
+- **语音特性必须显式评估**：ASR 错误注入、用户打断模拟、对话节奏评估，这些是语音 Agent 独有的工程维度。
+
+### 7. ServiceNow AI 的产品策略
+
+ServiceNow 本身是 ITSM / HR / 客户支持自动化领域的巨头，发布 EVA-Bench 的战略意图可能是：
+
+- **建立垂直 Agent 评估标准**：通过 Hugging Face 开源数据集，把自己放在"行业基准制定者"的位置。
+- **倒逼模型厂商对齐**：当 EVA-Bench 成为行业标准，未对齐的模型 / Agent 框架在 ServiceNow 客户面前会失去竞争力。
+- **推动自家产品差异化**：ServiceNow 的 Agent 产品可以"内置 EVA-Bench 评估"，把"基准符合度"作为营销点。
+
+这种"用开源基准建立商业护城河"的策略在 AI 2.0 时代越来越常见——LangChain 用 LangSmith、Anthropic 用 Claude Code Skills、各大模型厂商用自家评测集都是同一种模式。
+
+### 8. 与本文库其他 Agent 评估实体的关联
+
+- **横向对照**：`eva-bench` 与通用 Agent 基准（HumanEval、SWE-bench、tau-bench）的关系——垂直 vs 通用、语音 vs 文本。
+- **纵向延伸**：从 EVA-Bench 出发，企业可以构建自己的"内部评估集"——比 EVA-Bench 更贴合具体业务场景。
+- **工具调用能力**：EVA-Bench 的 121 个工具与 [Cline Agent Runtime Sdk](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cline-agent-runtime-sdk.md) 的 multi-tool 编排能力形成评测—能力对照。
+
+## 实践启示
+
+1. **语音 Agent 评估需要垂直基准**：通用 Agent 基准无法反映 ASR 错误、用户打断、对话节奏等语音特性。
+2. **多工具 + 多轮是真实业务的关键复杂度**：121 工具 + 213 场景的规模才有"工程压测"价值，远超 HumanEval 的单轮复杂度。
+3. **工具选择与组合失败是核心风险点**：评估必须细分到"工具选择 / 参数构造 / 失败回退"三个维度。
+4. **垂直业务场景的合规性是隐性 KPI**：HR、机票、客服三大领域的共同点是合规敏感，评估必须包含规则遵循度。
+5. **开源基准是建立商业护城河的有效路径**：用 Hugging Face 发布基准，倒逼生态对齐自家产品差异化。
+6. **企业应构建内部评估集**：在 EVA-Bench 之上叠加自家业务数据，让评估更贴近真实业务表现。
+
+## 相关实体
+
+- [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md) — Agent 原理架构的综合性参考
+- [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md) — Agent 范式跃迁的视角
+- [Karpathy Vibe Coding Agentic Engineering](ch04/275-karpathy-vibe-coding-agentic-engineering.html) — 同源访谈的另一标题版本
+- [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md) — AWS Bedrock AgentOps 的规模化运营实践
+- [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验-v2.md) — 多智能体团队搭建的实战经验
+- [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏-v2.md) — OpenClaw 多智能体系统化教程
+- [Cline Agent Runtime Sdk](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cline-agent-runtime-sdk.md) — Cline SDK 的多工具编排能力，与 EVA-Bench 121 工具规模相互映照
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/observability-monitoring.md)
+
+---
+
+## Ch14.024 Moneyball for Physical AI
+
+> 📊 Level ⭐⭐⭐⭐ | 8.6KB | `entities/moneyball-for-physical-ai.md`
+
+> **Background**：本文基于 Praxis Currents 的一篇深度分析文章，类比棒球 Moneyball 革命来审视 Physical AI 领域的数据定价与价值发现。原始文章通过 Jina Reader 抓取。
+
+## 核心论点
+
+Physical AI 的数据市场如同 2002 年的棒球自由球员市场——被系统性低估和错误定价。当前行业对 Physical AI 数据的评估方式存在根本性偏差，类似于传统球探偏好主观美学和盗垒数，而忽略了真正与得分相关的上垒率。
+
+### 1. Physical AI 数据的三种模态及其经济特性
+
+Physical AI 的数据操作横跨三种模态，每种都有不同的成本-信息密度权衡：
+
+| 数据模态 | 成本特征 | 信息密度 | 典型来源 |
+|---------|---------|---------|---------|
+| **观测数据（Observational）** | 低成本、高广度 | 缺乏动作监督 | 自我中心/外部视频 |
+| **干预数据（Interventional）** | 高成本、低广度 | 动作密集 | 遥操作演示 |
+| **部署数据（Deployment）** | 内生成本，受营收抵消 | 未经过滤 | 生产系统遥测 |
+
+每种模态都有其固有的偏差：观测数据缺乏动作标签，干预数据受限于人工成本，部署数据受限于商业运营环境。
+
+### 2. Scaling Laws 视角下的数据效用框架
+
+文章的核心贡献是将语言模型的 Scaling Laws 框架应用于 Physical AI 数据评估：
+
+- **幂律衰减**：测试损失随数据量呈幂律下降，直到不可约误差下限
+- **多样性降低下限**：数据多样性同时降低渐近误差下限（通过跨域迁移）和增加数据集内在维度
+- **重复的边际效用**：约 4 个 epoch 后重复数据的效用急剧衰减，16 个 epoch 后进入严格递减区间
+- **近重复数据陷阱**：密集采样窄邻域会快速饱和局部容量，损害模型性能
+- **长尾稀有事件**：分布外（OOD）事件具有超高的边际效用，但发现成本呈指数增长
+
+关键公式：资本效率不通过最大化数据量来扩展，而是通过**精确计算和定价数据新颖性**。
+
+### 3. 部署数据的"油井衰减曲线"
+
+生产遥测行为类似于油井的陡峭衰减曲线：初始运营产生高熵故障模式，随着异常被解决，迅速衰减为低效用、近重复的常规数据。这种局部分布采样经历指数饱和：
+
+$$U_{eff}(n) = U_0 + \Delta U(1 - e^{-n/n_c})$$
+
+超过覆盖数（$n_c$）后，生产数据流退化为纯重复，边际效用接近于零。**高价值数据严格集中在故障尾部；常规运营成功包含零边际效用。**
+
+### 4. 资本效率与部署缺口
+
+文章量化了 Physical AI 部署中的关键经济约束：
+
+- **启动损失（$L_{start}$）**：开始部署所需的最大可接受损失
+- **盈亏平衡损失（$L_{neutral}$）**：运营盈利的损失阈值
+- **不可约误差下限（$A_j(\phi)$）**：由传感器配置决定的物理极限
+
+如果盈亏平衡阈值接近不可约误差下限（$L_{neutral} \approx A_j(\phi)$），该任务就是**资本黑洞**——数据需求随幂律增长，成本呈超线性膨胀。这为"先广度后深度"策略提供了定量依据：在扩大部署前，必须先用观测数据压低不可约误差下限。
+
+### 5. 利益相关者的系统性偏差
+
+文章识别了 Physical AI 生态系统中各参与方的结构性偏见：
+
+| 角色 | 数据视角 | 系统性偏差 |
+|------|---------|-----------|
+| **基础模型实验室** | 大规模预训练 | 高估预训练价值，低估边缘案例 |
+| **垂直整合玩家** | 部署遥测 | 陷入"低方差环境→低新颖性数据→无法泛化"的循环陷阱 |
+| **新集成商（Neo-integrator）** | 跨环境浅层覆盖 | 将运营足迹视为计费面而非数据策展面 |
+| **遥操作供应商** | 运营小时数 | 激励最大化原始量而非独特样本覆盖 |
+| **硬件厂商** | 确定性运动回放 | 缺乏通向 Scaling Curve 的路径 |
+
+最稀缺的能力不是收集更多数据，而是**识别和捕获数据新颖性**。价值将系统性地流向能够隔离分布外变异的运营团队。
+
+### 6. Physical AI 与软件 AI 的根本差异
+
+文章指出 Physical AI 无法简单复制软件 AI 的"应用层价值捕获"模式，原因有三：
+
+1. **任务维度与饱和度**：物理任务（如仓库分拣）的内在维度低，数据流快速饱和；软件开发具有高内在维度，持续产生边际效用
+2. **基础模型不对称**：软件应用层有大量补贴的基础模型可用；Physical AI 缺乏可租赁的基础层
+3. **遥测与利润约束**：物理遥测成本高、天生欠观测；若 Physical AI 的基础观测数据保持竞争性和专有性，上游模型层将保持垄断定价权
+
+这意味着 Physical AI 的价值捕获逻辑与软件 AI 有本质不同——下游应用层的利润空间将被上游基础设施层压缩。
+
+## 关键洞察
+
+1. **数据定价偏差** — Physical AI 领域的数据资产被传统评估框架低估，行业尚未建立正确的估值指标
+2. **信号 vs 噪音** — 需要像 Moneyball 发现上垒率一样，找到 Physical AI 数据中真正与性能相关的核心指标
+3. **市场错位机会** — 能够正确识别和利用被低估数据资产的组织将获得类似 2002 年奥克兰运动家队的竞争优势
+
+## 实践启示
+
+1. **废弃"累计运营小时数"指标**：数据工程管道应废弃累计运营小时数作为主要指标。改为追踪：每任务的边际集成成本、每任务饱和点（$n_c$）、分布漂移速度（$v_j$）、集群覆盖率和数据新颖性密度。
+
+2. **平衡三种数据类型的资本配置**：优先投资低成本、高多样性的观测数据以压低不可约误差下限；将高成本的干预数据严格限制在任务饱和阈值内；过滤生产数据流，仅保留 OOD 边缘案例和故障模式。
+
+3. **部署前先建立广度**：在启动生产部署前，先用观测数据建立基线能力边界。如果盈亏平衡阈值接近不可约误差下限，该任务在资本上不可行——应重新配置硬件或重新选择任务。
+
+4. **新集成商的战略修正**：运营足迹应被视为主动数据策展面而非计费面。跨环境的任务多样性是 Physical AI 中最被低估的资产——它直接贡献 Scaling Law 中的复合项。
+
+5. **Physical AI 投资的价值捕获预判**：投资 Physical AI 项目前，评估其数据飞轮是否可能启动。如果任务的内在维度低、部署环境方差小、且缺乏观测数据广度，该项目的价值捕获将受限于上游基础设施层，而非下游应用层。
+
+## 与现有 wiki 实体的关联
+
+- [NVIDIA Isaac Lab](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md) — Physical AI 训练基础设施
+- [Perceptron](https://github.com/QianJinGuo/wiki-public/blob/main/entities/perceptron-mk1-video-analysis-ai.md) — Physical AI 感知层
+- [DiffusionGemma](https://github.com/QianJinGuo/wiki-public/blob/main/entities/diffusiongemma-4x-faster-text-generation-google-2026-06.md) — 生成模型与分数估计
+- [DiScoFormer](https://github.com/QianJinGuo/wiki-public/blob/main/entities/discoformer-density-score-transformer-allenai.md) — 密度与分数估计的 Transformer 方法
+
+## 差异化分析
+
+本文的独特价值在于提供了一个**元视角**——不是讨论 Physical AI 的技术实现，而是分析 Physical AI 数据作为**资产类别**的定价机制和市场效率。这与现有 wiki 中讨论 Physical AI 技术实现的实体形成互补。
 
 ---
 

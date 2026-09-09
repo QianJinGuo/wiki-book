@@ -136,7 +136,7 @@ antirez 提出的推理引擎 + 专用 GGUF + coding agent 验证三者组合，
 
 - [ds4c-deepseek-v4-antirez](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ds4c-deepseek-v4-antirez.md) — 同一项目的另一篇报道
 - [Redis之父下场给DeepSeek V4单独造了一台推理引擎](https://github.com/QianJinGuo/wiki-public/blob/main/entities/redis之父下场给deepseek-v4单独造了一台推理引擎.md) — 量子位的另一篇相关报道
-- [DeepSeek-V4深度拆解](../ch01/426-deepseek-v4.html) — DeepSeek V4 论文深度解读
+- [DeepSeek-V4深度拆解](../ch01/053-deepseek-v4.html) — DeepSeek V4 论文深度解读
 - [DeepSeek V4 Pro vs Claude](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-v4-pro-vs-claude.md) — V4 Pro 和 Flash 对比测试
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/coding-agent-practice.md)
 

@@ -1,6 +1,6 @@
 # Hermes Agent v0.14.0 核心架构与快速上手
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 21.7KB | `entities/hermes-agent-v014-core-architecture-shugex.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 21.6KB | `entities/hermes-agent-v014-core-architecture-shugex.md`
 
 ## 核心定位
 Hermes Agent v0.14.0：一个**自进化 AI Agent 框架**。内置学习闭环，能从任务经验中提炼可复用的 skill，并在后续使用中自我修正。
@@ -52,11 +52,11 @@ while (api_call_count < self.max_iterations
 **核心工具集**：web（搜索/内容提取）、terminal（命令执行）、file（文件操作）、browser（浏览器自动化，13个工具）、code_execution（Python脚本执行）、delegation（子代理委派）、skills（技能管理）、memory（持久化记忆）、todo（任务规划）。
 
 ## 安装方式
-|| 方式 | 命令 | 适用场景 ||
-||------|------|---------|
-|| 一键安装 | `curl -fsSL .../install.sh \| bash` | 快速体验，Linux/macOS/WSL2/Termux ||
-|| pip | `pip install hermes-agent && hermes postinstall` | 已有 Python 环境 ||
-|| 贡献者路径 | `git clone + ./setup-hermes.sh` | 修改源码或阅读代码 ||
+| 方式 | 命令 | 适用场景 |
+|------|------|---------|
+| 一键安装 | `curl -fsSL .../install.sh \| bash` | 快速体验，Linux/macOS/WSL2/Termux |
+| pip | `pip install hermes-agent && hermes postinstall` | 已有 Python 环境 |
+| 贡献者路径 | `git clone + ./setup-hermes.sh` | 修改源码或阅读代码 |
 
 ## 源码目录结构
 ```

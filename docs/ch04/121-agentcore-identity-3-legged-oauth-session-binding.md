@@ -51,7 +51,7 @@ AgentCore Identity的Token Vault存储access token和refresh token（当OAuth pr
 *Source: 原文存档*
 
 ## 相关实体
-- [AgentCore质量优化飞轮：推荐-验证-部署闭环](../ch11/098-aws-bedrock-agentcore-quality-optimization-flywheel.html)
+- [AgentCore质量优化飞轮：推荐-验证-部署闭环](../ch11/099-aws-bedrock-agentcore-quality-optimization-flywheel.html)
 - [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-agentcore-os-level-actions-browser.md)
 - [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-agentcore-doris-mcp-server.md)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-serverless-async-inference-sqs-lambda.md)
@@ -76,7 +76,7 @@ AgentCore Identity的Token Vault存储access token和refresh token（当OAuth pr
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢](https://github.com/QianJinGuo/wiki-public/blob/main/entities/基于-prowler-与-genai-构建金融行业智能合规中枢.md)
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](https://github.com/QianJinGuo/wiki-public/blob/main/entities/zenjoy-aiops-agent-bedrock-eks-prometheus.md)
 - [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-一周综述amazon-bedrock-agentcore-付款适用于-aws-的-agent-工具套件等2026-年-5-月-11-日.md)
-- [CloudSectiDbits](../ch11/085-cloudsectidbits.html)
+- [CloudSectiDbits](../ch11/086-cloudsectidbits.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-privacy-landscape.md)
 
 ---

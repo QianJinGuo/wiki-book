@@ -40,7 +40,5 @@ DevOps Agent 原生支持同一分区内跨 Region 监控（Agent Space 在 us-e
 5. **数据合规敏感场景优先选择 MCP Server 部署在中国区**
    如果业务涉及监管数据（金融、医疗等），或内部安全政策明确禁止数据出境，应选择 MCP Server 部署在 aws-cn 分区（EC2/ECS Role 方案）。代价是需要自管域名证书（中国区 ACM Private CA 或 Digicert 等国内 CA），且证书续期需要纳入运维流程。对于非敏感场景（纯监控元数据、指标数据），Commercial 分区部署 + IAM Roles Anywhere 的快速验证路径更合适。
 
-## 关联阅读
-
 ---
 

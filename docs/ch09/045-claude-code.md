@@ -51,7 +51,7 @@ Claude 的自我评估不是"不够准确"，而是方向性的：它倾向于�
 - [Claude Code Session Management 1M Context](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-session-management-1m-context.md) — context rot 管理
 - [Agent Harness 12 组件](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-12-components-7-decisions.md) — 12 个 harness 设计模式
 - [Harness Engineering 可靠长程Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-reliable-long-term-agent.md) — 治理方法论
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/109-claude-code-harness-deep-understanding.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/111-claude-code-harness-deep-understanding.html)
 - [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-20000-char-source-analysis.md)
 - [AutoResearch：多 Agent 自动化软件开发](https://github.com/QianJinGuo/wiki-public/blob/main/entities/autoresearch-multi-agent-software.md)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-large-codebase-enterprise-deployment.md)

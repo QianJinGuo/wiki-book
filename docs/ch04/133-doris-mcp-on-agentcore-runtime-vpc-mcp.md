@@ -57,7 +57,7 @@ Quick Suite 通过 Client ID + Client Secret 向 Cognito 的 `/oauth2/token` 换
 → （架构图待生成: C4 架构图）
 
 ## 相关实体
-- [AgentCore质量优化飞轮：推荐-验证-部署闭环](../ch11/098-aws-bedrock-agentcore-quality-optimization-flywheel.html)
+- [AgentCore质量优化飞轮：推荐-验证-部署闭环](../ch11/099-aws-bedrock-agentcore-quality-optimization-flywheel.html)
 - [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-agentcore-identity-security.md)
 - [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-agentcore-os-level-actions-browser.md)
 - [AgentCore Runtime部署Apache Doris MCP Server](https://github.com/QianJinGuo/wiki-public/blob/main/entities/runtime-deploy-apache-doris-mcp-server-quick-suite-ai-analytics.md)
@@ -83,7 +83,7 @@ Quick Suite 通过 Client ID + Client Secret 向 Cognito 的 `/oauth2/token` 换
 - [Enable Safe Agentic Payments With Built In Guardrails Using ](https://github.com/QianJinGuo/wiki-public/blob/main/entities/enable-safe-agentic-payments-with-built-in-guardrails-using-.md)
 - [让 Amazon Quick 操作飞书构建远程 Mcp 服务的设计实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/让-amazon-quick-操作飞书构建远程-mcp-服务的设计实践.md)
 - [Bedrock Agentcore Secrets Manager Identity](https://github.com/QianJinGuo/wiki-public/blob/main/entities/bedrock-agentcore-secrets-manager-identity.md)
-- [Extending Mcp Support For Amazon Bedrock Agentcore Gateway](../ch11/107-extending-mcp-support-for-amazon-bedrock-agentcore-gateway.html)
+- [Extending Mcp Support For Amazon Bedrock Agentcore Gateway](../ch11/108-extending-mcp-support-for-amazon-bedrock-agentcore-gateway.html)
 - [Evaluate Your Amazon Nova Sonic Voice Agent At Scale No Micr](https://github.com/QianJinGuo/wiki-public/blob/main/entities/evaluate-your-amazon-nova-sonic-voice-agent-at-scale-no-micr.md)
 - [Its Safe To Close Your Laptop Now Hosting Coding Agents On A](https://github.com/QianJinGuo/wiki-public/blob/main/entities/its-safe-to-close-your-laptop-now-hosting-coding-agents-on-a.md)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
