@@ -81,7 +81,14 @@
     }
   }
 
-  function cacheSave() {
+  var lastSave = 0;
+
+  function cacheSave(force) {
+    // Persist incrementally: a full page can take minutes, and visitors
+    // toggle away mid-run — whatever is translated must survive.
+    var now = Date.now();
+    if (!force && now - lastSave < 3000) return;
+    lastSave = now;
     try {
       localStorage.setItem(LS_CACHE, JSON.stringify(cache));
     } catch (_) {
@@ -218,7 +225,7 @@
       var settledCount = done + failed;
       if (settledCount >= total) {
         running = false;
-        cacheSave();
+        cacheSave(true);
         showPill(failed ? 'Translated · ' + failed + ' blocks failed' : 'Translated', false);
         // Late-injected widgets (book cover caption, per-page tools) missed
         // the first walk; one bounded resweep catches them. Already-
@@ -247,6 +254,7 @@
           delete node._wbLive;
           done++;
         });
+        cacheSave(false);
       }).catch(function(error) {
         failed += current.items.length;
         if (error && error.status === 404) {
@@ -275,6 +283,10 @@
   }
 
   window.WBLiveTranslate = { toggle: toggle, langOn: langOn, start: start };
+
+  window.addEventListener('pagehide', function() {
+    if (cache.order.length) cacheSave(true);
+  });
 
   function init() {
     if (langOn()) start();
