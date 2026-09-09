@@ -1,0 +1,5 @@
+%% title: Zalando 客户端负载均衡——百万 RPS
+graph TD
+    PROBLEM["Skipper 与扇出问题<br/>共享基础设施的扇出放大"] ==> HASH["构建相同哈希环<br/>客户端负载均衡一致性挑战"]
+    HASH ==> BENEFIT["从共享命运到可观测性<br/>边缘与内部流量分层治理"]
+    BENEFIT ==> DESIGN["框架无关的 JVM 模块设计"]

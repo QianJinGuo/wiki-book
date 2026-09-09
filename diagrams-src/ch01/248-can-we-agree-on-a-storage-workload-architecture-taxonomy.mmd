@@ -1,0 +1,5 @@
+%% title: 存储 工作负载架构分类法——Jack Vanlightly
+graph TD
+    EVO["从 OLTP OLAP 到 HTAP LAP<br/>分类演化"] ==> TRADEOFF["Freshness by Composition<br/>vs Freshness by Catchup<br/>工程权衡"]
+    TRADEOFF ==> SHARED["共享分层作 LTAP 核心模式<br/>数据模型差异被忽视"]
+    SHARED ==> EDGE["分类法边界案例与未来扩展"]
