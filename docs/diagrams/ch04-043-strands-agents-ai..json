@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Strands Agents——云成本分析与优化 AI 助手",
+  "code": "graph TD\n    ARCH[\"系统架构: 聊天机器人到 FinOps<br/>智能助手的演进 · 中国区适配\"] ==> MCP[\"MCP 协议: 云成本管理自动化<br/>多账号加 SSO 企业级安全<br/>流式渲染平衡体验与工程\"]\n    MCP ==> P[\"从单工具起步逐步扩展<br/>持续迭代提示词 · 防滥用\"]",
+  "isSvg": false
+ }
+]

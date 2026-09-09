@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Dockerless——免环境补丁验证器",
+  "code": "graph TD\n    METHOD[\"两阶段: Issue 到验证问题<br/>到子Agent搜代码库 到综合判决<br/>免环境SFT与有Docker几乎持平\"] ==> INSIGHT[\"核心: 验证器才是后训练瓶颈<br/>企业代码无需搭测试环境\"]\n    INSIGHT ==> CMP[\"Docker AUC 81.0 vs DeepSWE 66.7\"]\n    INSIGHT ==> P[\"直接意义: 内部代码免Docker可训练\"]",
+  "isSvg": false
+ }
+]

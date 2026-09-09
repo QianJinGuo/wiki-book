@@ -1,7 +1,7 @@
 [
  {
-  "title": "龙虾之父教你省钱——开源 Skill 减肥工具",
-  "code": "graph TD\n    CORE[\"核心主张: Skill 是路标<br/>不是说明书\"] ==> TOOL[\"skill-cleaner 工具设计<br/>三步工作流\"]\n    TOOL ==> COST[\"Token 成本思维\"]\n    TOOL ==> INS[\"深度分析与实践启示\"]",
+  "title": "龙虾之父教你省钱——Skill 减肥工具",
+  "code": "graph TD\n    CORE[\"核心主张: Skill 是路标<br/>不是说明书\"] ==> TOOL[\"skill-cleaner 工具<br/>三步工作流\"]\n    TOOL ==> COST[\"Token 成本思维\"]\n    TOOL ==> INS[\"深度分析与实践启示\"]",
   "isSvg": false
  }
 ]

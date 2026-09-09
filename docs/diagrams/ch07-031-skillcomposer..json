@@ -1,0 +1,7 @@
+[
+ {
+  "title": "SkillComposer——生成式技能组合",
+  "code": "graph TD\n    FORMAL[\"技能选择建模: 任务条件变长<br/>技能索引序列预测<br/>3.9M 可训练参数\"] ==> RESULTS[\"Codex 加 23.1pp · Gemini 加 18.2pp<br/>接近金标上界<br/>Sparse 加 Dense 融合优于纯 dense\"]\n    RESULTS ==> LIMITS[\"196 skill 固定库<br/>技能依赖图靠元数据挖掘\"]",
+  "isSvg": false
+ }
+]

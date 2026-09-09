@@ -1,7 +1,7 @@
 [
  {
-  "title": "Claude Code Extended Thinking 输出不是 authentic 的",
-  "code": "graph TD\n    FIND[\"Thinking Block 结构分析<br/>文档缺口: 摘要不等于原始推理<br/>加密推理签名 vs 透明推理的取舍\"] ==> IMPLICATION[\"Agent 可观测性架构影响<br/>开源模型在推理透明度的<br/>结构性优势\"]\n    IMPLICATION ==> P[\"文档措辞的间接性<br/>值得 Agent 开发者警惕\"]",
+  "title": "Claude Code Extended Thinking 非 authentic",
+  "code": "graph TD\n    FIND[\"Thinking Block 结构与文档缺口<br/>摘要非原始推理 加密签名取舍\"] ==> IMPLICATION[\"Agent 可观测性影响<br/>开源模型推理透明度优势\"]\n    IMPLICATION ==> P[\"文档间接性值得警惕\"]",
   "isSvg": false
  }
 ]

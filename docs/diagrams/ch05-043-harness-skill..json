@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Harness 工程之道——Skill 原理与最佳实践",
+  "code": "graph TD\n    DEFINITION[\"Skill 定义: 渐进性披露<br/>三阶段模型\"] ==> STRUCT[\"目录结构规范<br/>SKILL.md frontmatter 元信息\"]\n    STRUCT ==> DIFF[\"System Prompt 与 Skill 的区别\"]",
+  "isSvg": false
+ }
+]

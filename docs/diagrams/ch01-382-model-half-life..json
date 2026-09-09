@@ -1,7 +1,7 @@
 [
  {
   "title": "Model Half-Life——模型半衰期",
-  "code": "graph TD\n    MYTH[\"半衰期叙事与数据错位<br/>发布确实加快但远没有<br/>每 6 个月减半的指数级加速\"] ==> METHOD[\"方法论: 按子系列统计非按厂商<br/>最近三次间隔中位数外推<br/>数据不足时预测很弱\"]\n    METHOD ==> TERM[\"术语本质: buzzword<br/>实际含义是模型发布更快了\"]",
+  "code": "graph TD\n    MYTH[\"半衰期叙事与数据错位<br/>发布加快但远没每 6 月减半\"] ==> METHOD[\"按子系列统计非按厂商<br/>中位数外推 · 样本不足预测弱\"]\n    METHOD ==> TERM[\"术语本质: buzzword<br/>含义是模型发布更快了\"]",
   "isSvg": false
  }
 ]
