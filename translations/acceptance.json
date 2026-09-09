@@ -1,0 +1,184 @@
+{
+  "base": "https://jinguo.tech",
+  "threshold": 0.04,
+  "total": 18,
+  "passed": 0,
+  "failed": 18,
+  "at": "2026-09-09T19:50:09.438Z",
+  "results": [
+    {
+      "path": "/ch01/247-codeindex.html",
+      "url": "https://jinguo.tech/ch01/247-codeindex.html",
+      "ok": false,
+      "ratio": 4.18,
+      "cjkRemaining": 61,
+      "totalChars": 1459,
+      "cjkNodes": 4,
+      "ms": 23175
+    },
+    {
+      "path": "/ch12-security.html",
+      "url": "https://jinguo.tech/ch12-security.html",
+      "ok": false,
+      "ratio": 16.55,
+      "cjkRemaining": 985,
+      "totalChars": 5950,
+      "cjkNodes": 28,
+      "ms": 31543
+    },
+    {
+      "path": "/ch03-ai-tools.html",
+      "url": "https://jinguo.tech/ch03-ai-tools.html",
+      "ok": false,
+      "ratio": 35.92,
+      "cjkRemaining": 1748,
+      "totalChars": 4867,
+      "cjkNodes": 62,
+      "ms": 32306
+    },
+    {
+      "path": "/",
+      "url": "https://jinguo.tech/",
+      "ok": false,
+      "ratio": 46.78,
+      "cjkRemaining": 3178,
+      "totalChars": 6794,
+      "cjkNodes": 180,
+      "ms": 31249
+    },
+    {
+      "path": "/ch01-ai-basics.html",
+      "url": "https://jinguo.tech/ch01-ai-basics.html",
+      "ok": false,
+      "ratio": 48,
+      "cjkRemaining": 13571,
+      "totalChars": 28271,
+      "cjkNodes": 390,
+      "ms": 33893
+    },
+    {
+      "path": "/references.html",
+      "url": "https://jinguo.tech/references.html",
+      "ok": false,
+      "ratio": 51.09,
+      "cjkRemaining": 610,
+      "totalChars": 1194,
+      "cjkNodes": 72,
+      "ms": 31381
+    },
+    {
+      "path": "/ch09-ai-coding.html",
+      "url": "https://jinguo.tech/ch09-ai-coding.html",
+      "ok": false,
+      "ratio": 52.93,
+      "cjkRemaining": 3834,
+      "totalChars": 7244,
+      "cjkNodes": 105,
+      "ms": 31684
+    },
+    {
+      "path": "/PATH.html",
+      "url": "https://jinguo.tech/PATH.html",
+      "ok": false,
+      "ratio": 54.31,
+      "cjkRemaining": 11273,
+      "totalChars": 20756,
+      "cjkNodes": 716,
+      "ms": 34059
+    },
+    {
+      "path": "/ch05-harness.html",
+      "url": "https://jinguo.tech/ch05-harness.html",
+      "ok": false,
+      "ratio": 61.63,
+      "cjkRemaining": 4342,
+      "totalChars": 7045,
+      "cjkNodes": 103,
+      "ms": 31746
+    },
+    {
+      "path": "/ch04-agent-core.html",
+      "url": "https://jinguo.tech/ch04-agent-core.html",
+      "ok": false,
+      "ratio": 66.71,
+      "cjkRemaining": 13985,
+      "totalChars": 20964,
+      "cjkNodes": 384,
+      "ms": 32356
+    },
+    {
+      "path": "/ch06-memory.html",
+      "url": "https://jinguo.tech/ch06-memory.html",
+      "ok": false,
+      "ratio": 77.59,
+      "cjkRemaining": 126858,
+      "totalChars": 163502,
+      "cjkNodes": 4114,
+      "ms": 34498
+    },
+    {
+      "path": "/404.html",
+      "url": "https://jinguo.tech/404.html",
+      "ok": false,
+      "ratio": 83.44,
+      "cjkRemaining": 534,
+      "totalChars": 640,
+      "cjkNodes": 57,
+      "ms": 32396
+    },
+    {
+      "path": "/ch07-skill-tool.html",
+      "url": "https://jinguo.tech/ch07-skill-tool.html",
+      "ok": false,
+      "ratio": 85.22,
+      "cjkRemaining": 3182,
+      "totalChars": 3734,
+      "cjkNodes": 144,
+      "ms": 31505
+    },
+    {
+      "path": "/ch01/064-ai-gateway-production-index.html",
+      "url": "https://jinguo.tech/ch01/064-ai-gateway-production-index.html",
+      "ok": false,
+      "ratio": 88.17,
+      "cjkRemaining": 3183,
+      "totalChars": 3610,
+      "cjkNodes": 108,
+      "ms": 32567
+    },
+    {
+      "path": "/ch02-prompt.html",
+      "url": "https://jinguo.tech/ch02-prompt.html",
+      "ok": false,
+      "ratio": 88.29,
+      "cjkRemaining": 89401,
+      "totalChars": 101254,
+      "cjkNodes": 2854,
+      "ms": 35477
+    },
+    {
+      "path": "/dashboard/index.html",
+      "url": "https://jinguo.tech/dashboard/index.html",
+      "ok": false,
+      "error": "TimeoutError: page.waitForFunction: Timeout 20000ms exceeded.",
+      "ms": 21339
+    },
+    {
+      "path": "/course.html",
+      "url": "https://jinguo.tech/course.html",
+      "ok": false,
+      "ratio": 89.33,
+      "cjkRemaining": 1189,
+      "totalChars": 1331,
+      "cjkNodes": 106,
+      "ms": 31491
+    },
+    {
+      "path": "/learn/index.html",
+      "url": "https://jinguo.tech/learn/index.html",
+      "ok": false,
+      "error": "TimeoutError: page.waitForFunction: Timeout 20000ms exceeded.",
+      "ms": 23021
+    }
+  ]
+}
