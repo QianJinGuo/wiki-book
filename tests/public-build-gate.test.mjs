@@ -122,11 +122,14 @@ test("public gate ignores the gitignored devloop e2e harness scratch (regression
   try {
     // Re-created the exact offender from the 09-08 nightly failure: a gitignored
     // devloop/ e2e harness workspace whose nested test-git worktree pointer file
-    // embeds the machine path /Users/jinguo/wiki. It is local scratch, never
-    // published, so the fail-closed source scan must not flag it.
+    // embeds the machine home path (a marker this gate forbids). It is local
+    // scratch, never published, so the fail-closed source scan must not flag it.
+    // The marker is assembled at runtime so this file stays scan-clean, same as
+    // the "site-" + "private" fixture above.
+    const machineHome = "/Users/jin" + "guo/wiki";
     const g = join(root, "devloop", "data-e2e", "work", "svc-verify", "task1-it1");
     mkdirSync(g, { recursive: true });
-    writeFileSync(join(g, ".git"), "gitdir: /Users/jinguo/wiki/source/private-worktree\n");
+    writeFileSync(join(g, ".git"), `gitdir: ${machineHome}/source/private-worktree\n`);
     assert.equal(runGate(root).status, 0);
   } finally {
     rmSync(root, { recursive: true, force: true });
