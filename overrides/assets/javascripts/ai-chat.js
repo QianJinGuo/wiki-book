@@ -30,6 +30,22 @@
     try { localStorage.setItem("ai-chat-config", JSON.stringify(cfg)); } catch(e) {}
   }
 
+  // ========== 动态机器人（codex 极简风 CSS 小机器人） ==========
+  function robotHtml() {
+    return '<span class="ai-bot" aria-hidden="true">' +
+      '<span class="ai-bot__antenna"></span>' +
+      '<span class="ai-bot__head"><span class="ai-bot__eye"></span><span class="ai-bot__eye"></span></span>' +
+      '</span>';
+  }
+
+  // 流式回答期间给触发按钮和面板加 thinking 态（机器人摇摆 + 眼睛扫描）
+  function setBotThinking(on) {
+    var trigger = document.querySelector(".ai-chat-trigger");
+    var panel = document.querySelector(".ai-chat-panel");
+    if (trigger) trigger.classList.toggle("thinking", !!on);
+    if (panel) panel.classList.toggle("thinking", !!on);
+  }
+
   // ========== 文章上下文 ==========
   function getArticleContext() {
     var article = document.querySelector("article.md-content__inner");
@@ -145,7 +161,7 @@
     // 触发按钮
     var trigger = document.createElement("button");
     trigger.className = "ai-chat-trigger";
-    trigger.innerHTML = "🤖";
+    trigger.innerHTML = robotHtml();
     trigger.title = "Talk to AI";
 
     // 面板
@@ -161,7 +177,7 @@
 
     panel.innerHTML =
       '<div class="ai-chat__header">' +
-        '<span class="ai-chat__title"><span class="ai-chat__title-icon">🤖</span> Talk to AI</span>' +
+        '<span class="ai-chat__title"><span class="ai-chat__title-icon"><span class="ai-bot-scale">' + robotHtml() + '</span></span> Talk to AI</span>' +
         '<div class="ai-chat__actions">' +
           '<button class="ai-chat__btn" data-action="settings" title="设置">⚙️</button>' +
           '<button class="ai-chat__btn" data-action="clear" title="清空">🗑</button>' +
@@ -603,6 +619,7 @@
       // 先获取 RAG 上下文
       var bubble = addMsg("assistant", "");
       isStreaming = true;
+      setBotThinking(true);
       if (bubble) bubble.innerHTML = '<div class="ai-chat__typing"><span></span><span></span><span></span></div>';
 
       // ========== RAG 搜索：客户端优先，服务器兜底 ==========
@@ -683,6 +700,7 @@
             },
             function(fullText) {
               isStreaming = false;
+              setBotThinking(false);
               conversationHistory.push({ role: "assistant", content: fullText });
               if (bubble) {
                 bubble.innerHTML = renderMd(fullText);
@@ -705,12 +723,14 @@
             },
             function(err) {
               isStreaming = false;
+              setBotThinking(false);
               if (bubble) bubble.innerHTML = '<span style="color:#e74c3c">' + friendlyError(err) + '</span>';
             }
           );
         })
         .catch(function(err) {
           isStreaming = false;
+          setBotThinking(false);
           if (bubble) bubble.innerHTML = '<span style="color:#e74c3c">RAG 查询失败: ' + err.message + '</span>';
         });
     }

@@ -501,3 +501,131 @@
     bottom: 1rem;
   }
 }
+
+/* ============================================
+   动态机器人（codex 极简风：天线 + 方圆头 + 眨眼）
+   颜色跟随 currentColor / 按钮底色，深浅色主题自适应
+   ============================================ */
+.ai-bot {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 26px;
+  color: #fff;
+  animation: ai-bot-float 3.2s ease-in-out infinite;
+}
+
+/* 天线：杆 + 呼吸灯 */
+.ai-bot__antenna {
+  position: relative;
+  width: 2px;
+  height: 5px;
+  background: currentColor;
+  border-radius: 1px;
+}
+.ai-bot__antenna::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  margin-left: -2.5px;
+  border-radius: 50%;
+  background: currentColor;
+  animation: ai-bot-beacon 2.4s ease-in-out infinite;
+}
+
+/* 头部 */
+.ai-bot__head {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 24px;
+  height: 17px;
+  margin-top: 2px;
+  background: currentColor;
+  border-radius: 8px 8px 6px 6px;
+}
+/* 嘴：镂空小横条 */
+.ai-bot__head::after {
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  width: 8px;
+  height: 2px;
+  margin-left: -4px;
+  border-radius: 1px;
+  background: var(--md-accent-fg-color);
+}
+
+/* 眼睛（镂空 = 按钮底色），周期性眨眼 */
+.ai-bot__eye {
+  width: 4px;
+  height: 6px;
+  border-radius: 2px;
+  background: var(--md-accent-fg-color);
+  animation: ai-bot-blink 4.2s infinite;
+}
+
+/* 思考中：机器人左右摇摆、眼睛扫描、天线灯加速闪烁 */
+.ai-chat-trigger.thinking .ai-bot {
+  animation: ai-bot-tilt 0.9s ease-in-out infinite;
+}
+.ai-chat-trigger.thinking .ai-bot__eye {
+  animation: ai-bot-scan 1.1s ease-in-out infinite;
+}
+.ai-chat-trigger.thinking .ai-bot__antenna::before {
+  animation-duration: 0.7s;
+}
+/* 面板标题里的小机器人同步思考态 */
+.ai-chat-panel.thinking .ai-chat__title-icon .ai-bot {
+  animation: ai-bot-tilt 0.9s ease-in-out infinite;
+}
+.ai-chat-panel.thinking .ai-chat__title-icon .ai-bot__eye {
+  animation: ai-bot-scan 1.1s ease-in-out infinite;
+}
+
+@keyframes ai-bot-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-2px); }
+}
+@keyframes ai-bot-beacon {
+  0%, 100% { opacity: 1; box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.65); }
+  50% { opacity: 0.35; box-shadow: none; }
+}
+@keyframes ai-bot-blink {
+  0%, 91%, 100% { transform: scaleY(1); }
+  94%, 96% { transform: scaleY(0.12); }
+}
+@keyframes ai-bot-tilt {
+  0%, 100% { transform: rotate(-4deg); }
+  50% { transform: rotate(4deg); }
+}
+@keyframes ai-bot-scan {
+  0%, 100% { transform: translateX(-1.5px); }
+  50% { transform: translateX(1.5px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ai-bot,
+  .ai-bot__antenna::before,
+  .ai-bot__eye,
+  .ai-chat-trigger.thinking .ai-bot,
+  .ai-chat-trigger.thinking .ai-bot__eye,
+  .ai-chat-panel.thinking .ai-chat__title-icon .ai-bot,
+  .ai-chat-panel.thinking .ai-chat__title-icon .ai-bot__eye {
+    animation: none;
+  }
+}
+
+/* 标题栏小机器人：外层缩放（不干扰 .ai-bot 自身的动画 transform） */
+.ai-bot-scale {
+  display: inline-flex;
+  transform: scale(0.72);
+  transform-origin: center;
+}
