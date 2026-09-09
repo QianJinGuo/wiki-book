@@ -1,0 +1,5 @@
+%% title: 扩展 AgentCore Gateway 的 MCP 支持
+graph TD
+    WHY["无集中网关: 每个 MCP server<br/>独立处理凭证策略连接日志"] ==> UNIFY["三大 MCP 原语统一<br/>tools 加 prompts 加 resources<br/>单一端点聚合全部能力"]
+    UNIFY ==> DYNAMIC["动态列表: Default 缓存模式<br/>与 Realtime 实时模式"]
+    DYNAMIC ==> SEC["OAuth OBO Token Exchange<br/>RBP 加 SCP 治理 · 安全架构"]

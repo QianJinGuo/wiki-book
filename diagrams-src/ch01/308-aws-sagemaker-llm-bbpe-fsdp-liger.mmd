@@ -1,0 +1,5 @@
+%% title: SageMaker 阿塞拜疆语 LLM——BBPE 加 FSDP 加 Liger
+graph TD
+    TOKENIZER["自定义 BBPE 分词器<br/>低资源语言的分词器困境"] ==> CPT["FSDP 加 Liger 分布式训练<br/>两阶段 CPT 配置"]
+    CPT ==> LORA["LoRA 参数高效微调"]
+    LORA ==> P["低资源语言优先投资数据<br/>文化适配难度勿低估"]

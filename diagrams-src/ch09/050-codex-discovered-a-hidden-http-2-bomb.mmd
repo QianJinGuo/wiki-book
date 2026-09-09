@@ -1,0 +1,5 @@
+%% title: Codex 发现隐藏的 HTTP/2 炸弹
+graph TD
+    SCOPE["五大主流服务器受影响<br/>Shodan 估测 88 万加站点<br/>单客户端 20 秒吃满 32GB"] ==> NOVEL["新型 bomb 本质: 放大率不来自解码量<br/>来自每索引引用的元数据 buffer<br/>压到 swap 不让 OOM 更阴险"]
+    NOVEL ==> PATCH["修复进度不一: nginx Apache 已修<br/>IIS 与 Pingora 未发布补丁"]
+    PATCH ==> PARADIGM["AI 安全研究范式分水岭<br/>fix commit 到 exploit 压缩到分钟级"]
