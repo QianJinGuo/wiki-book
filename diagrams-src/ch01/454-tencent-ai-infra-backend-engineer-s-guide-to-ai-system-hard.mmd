@@ -1,0 +1,6 @@
+%% title: 腾讯 AI Infra——后台工程师的 AI 系统软硬件指南
+graph TD
+    SHIFT["硬件范式: CPU 中心到 GPU 中心<br/>每 token 读全量参数<br/>带宽差数百倍"] ==> MAIN["AI 大型机回归<br/>硬件集中化换极致性能<br/>预言五年后去 NVIDIA 化重演去 IOE"]
+    MAIN ==> FW["框架: PyTorch 主导生态<br/>深度学习框架是 AI 核心基建"]
+    FW ==> T37["训练三挑战: 存得下 算得快 传得开"]
+    T37 ==> I4["推理四武器: 模型并行<br/>连续批处理 · KV Cache · CUDA Graph"]
