@@ -1,0 +1,6 @@
+%% title: Verizon Connect Agentic AI——10 万用户规模工程实践
+graph TD
+    ARCH["两层 Agentic 设计"] --> D1["异常检测: 专用代码 vs LLM<br/>分离数值分析与语义推理"]
+    D1 --> ENV["Agent 执行环境与工具集"]
+    ENV --> ROUTE["大模型演进与模型路由<br/>成本优化策略"]
+    ROUTE --> CONC["SQS 并发控制<br/>保护下游配额的工程艺术"]

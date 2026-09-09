@@ -1,0 +1,6 @@
+%% title: knowledge-work-plugins 拆解——4 组件 3 级加载 2 层记忆
+graph TD
+    REPO["Anthropic 官方岗位插件集<br/>19 官方加 5 伙伴插件"] --> C4["四种组件<br/>Skills 是核心 · Commands Legacy<br/>Agents · Hooks 带门控"]
+    C4 --> L3["渐进式披露三级加载<br/>元数据约 100 词常在<br/>正文触发加载 · references 按需"]
+    L3 --> MEM["两层记忆: 热缓存 CLAUDE.md<br/>加深记忆 memory 目录<br/>Promote 与 Demote 机制"]
+    MEM --> SEC["安全审查 4 维度加 CI 扫描<br/>占位符工具无关抽象"]
