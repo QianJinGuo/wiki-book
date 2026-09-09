@@ -197,15 +197,22 @@
 
     if (!total) { running = false; return Promise.resolve(); }
 
-    var settled = 0;
     function onProgress() {
-      settled++;
-      if (settled >= total) {
+      var settledCount = done + failed;
+      if (settledCount >= total) {
         running = false;
         cacheSave();
         showPill(failed ? 'Translated · ' + failed + ' blocks failed' : 'Translated', false);
+        // Late-injected widgets (book cover caption, per-page tools) missed
+        // the first walk; one bounded resweep catches them. Already-
+        // translated nodes contain no CJK, so they are skipped naturally.
+        window.setTimeout(function() {
+          if (!langOn()) return;
+          running = false;
+          start();
+        }, 3000);
       } else {
-        showPill('Translating… ' + settled + '/' + total, true);
+        showPill('Translating… ' + settledCount + '/' + total, true);
       }
     }
 
