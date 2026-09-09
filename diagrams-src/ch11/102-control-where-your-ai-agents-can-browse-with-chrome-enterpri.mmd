@@ -1,0 +1,5 @@
+%% title: Chrome 企业策略——控制 AI Agent 能浏览哪里
+graph TD
+    NEED["Agent 获浏览能力后<br/>安全边界变得模糊"] ==> L2["两层策略架构<br/>Managed Policies 不可覆盖<br/>Recommended 可作用户偏好"]
+    L2 ==> CA["自定义根 CA 解决私有 PKI<br/>S3 存策略 JSON 声明式配置"]
+    CA ==> VALUE["策略管理与 Agent 开发解耦<br/>安全团队与开发团队独立运作"]

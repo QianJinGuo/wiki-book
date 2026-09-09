@@ -1,0 +1,5 @@
+%% title: AWS 与 Cisco AI Defense——给 MCP A2A 加企业护栏
+graph TD
+    BLIND["企业部署三盲区<br/>工具蔓延可见性缺失<br/>供应链安全不可扩展 · 合规审计缺位"] ==> REGISTRY["AI Registry: 统一控制平面<br/>注册发现所有 MCP server 加 agent 加 skill"]
+    REGISTRY ==> L3["三层防护: 可见性 到 供应链安全扫描<br/>到 合规审计自动标签"]
+    L3 ==> SELF["自服务开通: 自动扫描加人工复核<br/>security-pending disabled 机制"]
