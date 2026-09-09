@@ -1,0 +1,13 @@
+%% title: QQ 音乐 Harness Engineering 实践——大仓多服务场景
+graph TD
+    F["核心公式<br/>代码产出 = AI 能力 × 上下文质量"] --> GAP["上下文五类缺口"]
+    GAP --> FR["四类约束编码成<br/>AI 可执行工程制品"]
+    FR --> GATE["五阶段四门禁<br/>错误代价递增锚点"]
+    subgraph K3["三层知识体系三仓联动"]
+        SM["dependencies.yaml 单一真相源"]
+        PH["占位符词典"]
+    end
+    FR --> K3
+    K3 --> TRIO["Skill / Agent / Command 三件套<br/>24 个 Agent · 35 个命令"]
+    TRIO --> SR["Self-Refinement<br/>错误沉淀经验闭环"]
+    SR -.复利.-> K3

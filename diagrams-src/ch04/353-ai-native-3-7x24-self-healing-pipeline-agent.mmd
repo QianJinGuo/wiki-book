@@ -1,0 +1,10 @@
+%% title: 高德 AI-Native 生产线——7x24 自愈流水线与 Agent 自进化
+graph TD
+    P1["范式转移: 从人在环到人在环上"] --> P2["AI 全托管自监控循环"]
+    P2 --> CI["Agent-aware CI/CD 流水线<br/>全局状态感知四层"]
+    CI --> SH["三层自修复 Self-Healing"]
+    SH --> Q["AI 质量门禁三层<br/>聚类分析与诊断"]
+    Q --> FW["质量效率双飞轮"]
+    FW --> EV["Agent 自进化<br/>经验沉淀与反馈闭环"]
+    EV -.Harness 进化.-> CI
+    BM["Benchmark 评测体系"] -.度量.-> FW

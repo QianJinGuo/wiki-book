@@ -1,0 +1,12 @@
+%% title: Loop Engineering——设计替你写提示词的循环
+graph TD
+    H["人类定义目标 /goal"] --> L["Loop 循环引擎<br/>定时心跳 · 自动化任务"]
+    L --> G["自动生成提示词"]
+    G --> A["主 Agent 执行<br/>worktree 工作树隔离"]
+    A --> W["子智能体并行干活"]
+    A --> V["独立验证者小模型<br/>干活与检查分离"]
+    V -->|"未通过"| G
+    V -->|"通过"| K["沉淀 SKILL.md 技能<br/>认知复利"]
+    K --> M["记忆与 AGENTS.md<br/>跨会话状态"]
+    M --> L
+    L -.基于.-> MCP["MCP 连接器与插件<br/>真实工具接入"]

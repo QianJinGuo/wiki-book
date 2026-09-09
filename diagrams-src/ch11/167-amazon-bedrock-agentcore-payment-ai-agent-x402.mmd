@@ -1,0 +1,10 @@
+%% title: Bedrock AgentCore Payment 构建自主支付 Agent——x402 协议
+graph TD
+    A["AI Agent 发起付费请求"] -->|"HTTP 402 挑战"| S["服务端返回支付要求"]
+    S --> G["AgentCore Gateway<br/>MCP 工具发现"]
+    G --> SIG["服务端签名<br/>EIP-3009 信任边界"]
+    SIG --> BUD["Payment Session 预算上限<br/>财务安全第一道防线"]
+    BUD --> SETTLE["链上结算<br/>指数退避重试"]
+    SETTLE --> DELIVER["内容交付给 Agent"]
+    WAL["EOA 收款钱包"] -.结算目标.-> SETTLE
+    L["Lambda 边缘本地校验"] -.前置.-> SIG

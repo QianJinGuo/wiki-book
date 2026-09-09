@@ -1,0 +1,9 @@
+%% title: 业务 Agent 增强层架构——复用通用基座
+graph TD
+    J["立项判断链<br/>跑裸基座 → 看真实能力 → 决定补什么"] --> L["6 层增强架构<br/>各层职责明确分工"]
+    L --> KB["知识库<br/>给 Agent 的判断材料<br/>带元数据"]
+    L --> TL["工具设计<br/>少猜参数少猜结果"]
+    KB --> MV["MVP 闭环<br/>6 问清单加 6 步协议<br/>Read-Plan-Act-Observe-Gate-Finish"]
+    TL --> MV
+    MV --> EV["增量评测加 baseline 保留<br/>上线门禁 6 项"]
+    EV -.按月推进.-> L

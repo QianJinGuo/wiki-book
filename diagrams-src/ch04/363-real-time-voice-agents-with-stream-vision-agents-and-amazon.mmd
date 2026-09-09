@@ -1,0 +1,8 @@
+%% title: Stream Vision Agents 加 Amazon Nova 2 Sonic 实时语音 Agent
+graph TD
+    U["用户语音流"] --> EDGE["Stream Edge 全球边缘网络<br/>sub-30ms 音频延迟"]
+    EDGE --> VA["Vision Agents 开源框架<br/>25 加集成插件"]
+    VA --> S2S["Nova 2 Sonic<br/>speech-to-speech 单次往返<br/>免 ASR-LLM-TTS 三段延迟"]
+    S2S -->|"低于 500ms"| R["实时语音响应"]
+    S2S --> FC["Function Calling<br/>查数据库 · 调 API · 触发工作流"]
+    R --> SC["场景: 无屏幕环境接口<br/>大规模 Inbound 电话支持"]

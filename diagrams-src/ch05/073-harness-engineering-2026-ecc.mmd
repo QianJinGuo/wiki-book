@@ -1,0 +1,14 @@
+%% title: Harness Engineering 2026 综合论述与 ECC 开源实现
+graph TD
+    D["与传统软件工程 4 区别<br/>概率性 · 工具设计 · Verifier 定上线<br/>上下文稀缺"] --> ARC["Harness 工程 4 层架构"]
+    ARC --> K["2026 落地四重点<br/>verifier 独立子系统<br/>context 稀缺资源管理<br/>可观测性 · 每月 review"]
+    K --> ECC["ECC 开源实现"]
+    subgraph ECC3["三层安装结构"]
+        P1["profiles"]
+        M1["modules"]
+        C1["components"]
+    end
+    ECC --> P1
+    P1 --> M1
+    M1 --> C1
+    PPH["6 大哲学原则<br/>Token 靠选择 · 记忆有边界 · 并行隔离"] -.指导.-> C1

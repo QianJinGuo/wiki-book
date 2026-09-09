@@ -1,0 +1,6 @@
+%% title: AI Agents 安全综述——攻击向量与分层防御
+graph TD
+    TH["威胁格局<br/>Agent 与传统软件安全差异"] --> AT["攻击向量<br/>Tool Poisoning 核心缺陷<br/>互联网暴露面 AIMap 评分"]
+    AT --> DF["分层防御体系<br/>方寸 Observer 看见动作<br/>Guard 8ms 审核基础设施<br/>Skill Ward 蜜罐检测"]
+    DF --> MCP["MCP 协议运行时验证<br/>三重机制 · 行为规约 · 分阶段 rollout"]
+    MCP --> LC["生命周期威胁缓解矩阵<br/>按阶段分类防御"]

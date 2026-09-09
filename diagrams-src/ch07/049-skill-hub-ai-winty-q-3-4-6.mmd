@@ -1,0 +1,12 @@
+%% title: Skill Hub——企业级 AI 经验资产化与治理
+graph TD
+    P["组织能力沉在个人脑子"] --> S["写成 SKILL.md"]
+    S --> G1["入 Hub 门禁<br/>结构合规 · 内容完整<br/>安全合规 · 基础测试"]
+    G1 -->|"拦截"| S
+    G1 --> G2["版本升级门禁<br/>patch / minor / major"]
+    G2 --> G3["生产发布状态机<br/>6 状态"]
+    G3 --> HUB["Skill Hub 组织资产库"]
+    HUB --> L6["生命周期 6 阶段治理"]
+    L6 -->|"成熟度衰减"| HUB
+    X1["终态一: Prompt 失控"] -.没有 Hub.-> P
+    X2["终态二: 能力孤岛"] -.没有 Hub.-> P

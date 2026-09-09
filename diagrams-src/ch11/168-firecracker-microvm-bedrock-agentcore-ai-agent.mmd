@@ -1,0 +1,14 @@
+%% title: Firecracker microVM 加 Bedrock AgentCore 多租户 Agent 平台
+graph TD
+    U["多租户请求"] --> ALB["Serverless 接入层<br/>按租户路由"]
+    ALB --> CP["无服务器控制面<br/>生命周期编排"]
+    CP --> POOL["OpenClaw Pool<br/>microVM 租户池"]
+    subgraph VM["单租户 Firecracker microVM"]
+        AG["OpenClaw Agent"]
+        TL["预装工具链 rootfs"]
+        MEM["独立记忆"]
+    end
+    POOL --> VM
+    SK["共享 Skills 库"] -.只读挂载.-> VM
+    HM["两级健康监控"] -.90 秒自愈.-> POOL
+    SC["多层超配与空闲回收<br/>成本降至 1/8"] -.调度.-> POOL

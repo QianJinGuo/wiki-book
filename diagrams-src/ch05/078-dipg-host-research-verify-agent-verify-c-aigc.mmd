@@ -1,0 +1,11 @@
+%% title: DIPG 蚂蚁保三 Agent 离线 verify 闭环——C 端 AIGC 范式
+graph TD
+    H["Host Agent 总编排<br/>精准修正"] --> R["Research Agent 从零生成<br/>强制前置溯源"]
+    H --> V["Verify Agent 只校验不改 HTML"]
+    R --> V
+    V --> C1["structural_check<br/>程序化结构校验<br/>拦孤儿标签类错误"]
+    V --> C2["llm_verify<br/>语义与事实校验<br/>拦幻觉类夸大宣传"]
+    C1 --> FB["错误回灌 prompt<br/>弱监督蒸馏更可靠"]
+    C2 --> FB
+    FB -.下一轮.-> R
+    H --> OUT["离线主路径产出<br/>实时链路仅兜底"]
