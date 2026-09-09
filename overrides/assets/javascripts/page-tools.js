@@ -1,17 +1,52 @@
 /**
  * Page tools — lightweight controls shared by the documentation pages.
  *
- * English opens the current page through Google Translate. Mermaid reuses
- * the existing diagram overlay when the current page contains diagrams.
+ * English opens the current Chinese page through the Google Translate proxy
+ * (translate.goog). It is hidden on pages that are already English and on
+ * local deployments where the proxy cannot resolve. Inside the proxy the
+ * same control becomes an escape hatch back to the real site instead of
+ * re-translating it, and the language switcher (alternate links, English
+ * tab) is routed to the real site as well.
+ *
+ * Mermaid reuses the existing diagram overlay; the control stays hidden
+ * until the overlay reports readiness so it never shows up dead.
  */
 (function() {
   'use strict';
 
   var TOOLS_ID = 'wiki-book-tools';
+  var REAL_ORIGINS = ['jinguo.tech', 'wiki.jinguo.tech'];
+
+  function inTranslateProxy() {
+    return /\.translate\.goog$/.test(window.location.hostname);
+  }
+
+  function isLocalHost() {
+    return /^(localhost|127\.0\.0\.1)$/.test(window.location.hostname);
+  }
+
+  function isEnglishPage() {
+    return /^\/(en\/|agent-book\/)/.test(window.location.pathname);
+  }
+
+  // translate.goog encodes the original host as a hyphenated subdomain
+  // (jinguo-tech.translate.goog -> jinguo.tech). Only escape to hosts we own.
+  function realOrigin() {
+    var m = window.location.hostname.match(/^(.+)\.translate\.goog$/);
+    if (m) {
+      var host = m[1].replace(/-/g, '.');
+      if (REAL_ORIGINS.indexOf(host) !== -1) return 'https://' + host;
+    }
+    return 'https://jinguo.tech';
+  }
 
   function translateUrl() {
-    return 'https://translate.google.com/translate?sl=auto&tl=en&u=' +
-      encodeURIComponent(window.location.href);
+    if (inTranslateProxy()) {
+      return realOrigin() + window.location.pathname + window.location.search;
+    }
+    return 'https://' + window.location.hostname.replace(/\./g, '-') + '.translate.goog' +
+      window.location.pathname + window.location.search +
+      '?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=' + encodeURIComponent(navigator.language || 'en-US');
   }
 
   function showToast(message) {
@@ -69,14 +104,57 @@
       });
     }
 
+    // Translate: only offered on Chinese pages of real deployments.
     var translate = tools.querySelector('.wiki-book-tool--translate');
-    translate.href = translateUrl();
+    var label = translate.querySelector('.wiki-book-tool__label');
+    if (isEnglishPage() || isLocalHost()) {
+      translate.style.display = 'none';
+    } else {
+      translate.style.display = '';
+      translate.href = translateUrl();
+      if (inTranslateProxy()) {
+        label.textContent = '原文';
+        translate.title = '退出翻译，回到原始站点';
+        translate.target = '_self';
+        translate.setAttribute('aria-label', '回到原始站点');
+      } else {
+        label.textContent = 'English';
+        translate.title = '用 Google 翻译打开英文版';
+        translate.target = '_blank';
+        translate.setAttribute('aria-label', '翻译为英文');
+      }
+    }
 
+    // Mermaid: hidden until the diagram overlay is actually ready, so the
+    // button never appears dead on pages without diagrams.
     var mermaid = tools.querySelector('.wiki-book-tool--mermaid');
     var ready = Boolean(hasMermaidOverlay());
-    mermaid.classList.toggle('is-disabled', !ready);
-    mermaid.setAttribute('aria-disabled', String(!ready));
-    mermaid.title = ready ? '打开本页 Mermaid 图表' : '本页暂无 Mermaid 图表';
+    mermaid.style.display = ready ? '' : 'none';
+    if (ready) {
+      mermaid.removeAttribute('aria-disabled');
+      mermaid.title = '打开本页 Mermaid 图表';
+    } else {
+      mermaid.setAttribute('aria-disabled', 'true');
+    }
+  }
+
+  // Inside the translate proxy, the language switcher (alternate links and
+  // the English tab) must reach the real site instead of re-translating it.
+  if (inTranslateProxy()) {
+    var origin = realOrigin();
+    document.addEventListener('click', function(e) {
+      var a = e.target && e.target.closest ? e.target.closest('a') : null;
+      if (!a) return;
+      var href = a.getAttribute('href') || '';
+      if (!a.hasAttribute('hreflang') && !/en\/index\.html$/.test(href)) return;
+      var target;
+      try {
+        target = new URL(href, window.location.href);
+      } catch (_) { return; }
+      e.preventDefault();
+      e.stopPropagation();
+      window.location.href = origin + target.pathname + target.search;
+    }, true);
   }
 
   function init() {

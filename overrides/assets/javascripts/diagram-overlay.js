@@ -63,7 +63,8 @@
       } else {
         // Not rendered yet — extract raw mermaid code for lazy rendering
         var codeEl = container.querySelector('code');
-        var code = codeEl ? codeEl.textContent.trim() : container.textContent.trim();
+        var code = codeEl ? codeEl.textContent.trim()
+          : (container.getAttribute('data-mermaid-src') || container.textContent.trim());
         if (code && code.length > 3) {
           blocks.push({
             title: title,
