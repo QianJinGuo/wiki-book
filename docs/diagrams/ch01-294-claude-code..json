@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Code 七大模块详解",
+  "code": "graph TD\n    M7[\"七大模块: 入口启动链路<br/>加 REPL UI 编排 加 Query Loop<br/>加 Tool Runtime 加 权限系统<br/>加 Task 多 Agent 加 扩展性\"] ==> DEEP[\"深度分析\"]\n    DEEP ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

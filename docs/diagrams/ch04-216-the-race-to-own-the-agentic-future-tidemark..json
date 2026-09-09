@@ -1,0 +1,7 @@
+[
+ {
+  "title": "The Race to Own the Agentic Future——Tidemark",
+  "code": "graph TD\n    FRAME[\"反驳 AI 杀 SaaS 的六点框架<br/>威胁从水平竞争到垂直夹击\"] ==> ACTION[\"四步行动框架内在逻辑\"]\n    ACTION ==> MOAT[\"Moats 重定义<br/>Sean Doherty 的 micro harness 框架\"]",
+  "isSvg": false
+ }
+]

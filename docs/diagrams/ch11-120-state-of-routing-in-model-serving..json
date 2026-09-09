@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Model Serving 中的路由状态",
+  "code": "graph TD\n    DIST[\"模型 Serving vs Inference<br/>自包含工作流而非单一评分函数\"] ==> SB[\"Switchboard: Objective 抽象<br/>100 万加 QPS 强制入口<br/>JS 规则配置 A/B 实验\"]\n    SB ==> LB[\"Lightbulb: 解耦式路由演进<br/>与 Envoy 生态整合\"]",
+  "isSvg": false
+ }
+]

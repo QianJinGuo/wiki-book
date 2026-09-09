@@ -1,0 +1,7 @@
+[
+ {
+  "title": "向量数据库选型——Chroma vs Qdrant",
+  "code": "graph TD\n    FRAME[\"核心框架与选型决策矩阵\"] ==> ARCH[\"架构本质与关键阈值\"]\n    ARCH ==> FILTER[\"过滤性能差异\"]\n    FILTER ==> P[\"实践原则与深度分析\"]",
+  "isSvg": false
+ }
+]

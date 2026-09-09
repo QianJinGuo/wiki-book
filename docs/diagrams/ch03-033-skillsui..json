@@ -1,0 +1,7 @@
+[
+ {
+  "title": "SkillsUI——三层架构的 Agent 中间层",
+  "code": "graph TD\n    GAP[\"核心问题: function calling 和 MCP<br/>解决不了的中间层\"] ==> L3[\"三层架构<br/>Agent 调度层 Planning 加 Skill 编排<br/>加 Skill 层原子能力 加 AIUI 卡片化\"]\n    L3 ==> DECISION[\"四大工程决策<br/>企业 AI 落地中间层赌注<br/>与 MCP 互补 · 跨端状态一致性是基建空白\"]",
+  "isSvg": false
+ }
+]

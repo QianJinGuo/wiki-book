@@ -1,0 +1,7 @@
+[
+ {
+  "title": "TeamPCP 出售 Mistral AI 仓库",
+  "code": "graph TD\n    CLAIM[\"TeamPCP 声称出售 5GB Mistral 内部代码<br/>450 仓库 标价 2.5 万美元\"] ==> CONFIRM[\"Mistral 确认: 供应链攻击致代码库被短暂攻破<br/>仅非核心仓库被访问\"]\n    CONFIRM ==> EVOLUTION[\"Mini Shai-Hulud: CI/CD 劫持<br/>加 OIDC 令牌滥发恶意包<br/>首例包生态到内部代码库货币化\"]",
+  "isSvg": false
+ }
+]

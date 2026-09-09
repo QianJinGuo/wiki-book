@@ -1,0 +1,7 @@
+[
+ {
+  "title": "NVIDIA Agentic AI——地下工程仿真",
+  "code": "graph TD\n    CORE[\"Agentic AI 用于地下工程仿真<br/>24/7 自主仿真循环\"] ==> CONVERGE[\"数字孪生与 Agentic AI 交汇<br/>Omniverse DRIVE 平台战略\"]\n    CONVERGE ==> P[\"对工业从业者 架构师<br/>NVIDIA 生态开发者的启示\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Greptile TREX——AI 代码审查执行引擎",
+  "code": "graph TD\n    EVOLVE[\"三阶段演进: 独立 Agent 失败<br/>到 合并单 Agent 上下文过载<br/>到 嵌套 Agent 架构\"] ==> NESTED[\"嵌套架构: 编排 Agent 识别问题<br/>加 TREX 子 Agent 并行执行<br/>继承上下文 加 独立窗口\"]\n    NESTED ==> EVIDENCE[\"Artifact 即证据: 截图 日志 trace<br/>模型无关 harness 加热切换\"]\n    EVIDENCE ==> PRIORITY[\"优先级: recall 大于 precision 大于 延迟\"]",
+  "isSvg": false
+ }
+]

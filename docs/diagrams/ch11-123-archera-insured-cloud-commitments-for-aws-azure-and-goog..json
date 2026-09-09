@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Archera——保险背书的云承诺",
+  "code": "graph TD\n    PRODUCT[\"Insured Commitments<br/>享受折扣无利用率不足风险\"] ==> COVER[\"覆盖 AWS Azure Google Cloud<br/>管理超 40 亿美元年云支出\"]\n    COVER ==> P[\"何时考虑 · 替代评估 · 实施建议\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Databricks Unity Catalog 加 SageMaker 微调 LLM",
+  "code": "graph TD\n    SOLUTION[\"Databricks Unity Catalog<br/>加 SageMaker AI 微调方案\"] ==> NOVA[\"使用 Nova Micro 微调\"]\n    NOVA ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

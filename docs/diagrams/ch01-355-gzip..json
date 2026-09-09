@@ -1,0 +1,7 @@
+[
+ {
+  "title": "gzip 作语言模型——压缩即预测",
+  "code": "graph TD\n    MATH[\"压缩预测等价性: 最优编码<br/>等于负 log2 p<br/>压缩好等于建模了概率分布\"] ==> DEFLATE[\"DEFLATE: 32KiB 滑窗 LZ77<br/>反向引用匹配好等于预测置信度高<br/>需要 Beam Search 非 greedy\"]\n    DEFLATE ==> TAIL[\"Tail 截断防退化循环<br/>信息论: Kolmogorov 复杂度<br/>加 Solomonoff 归纳 加 MDL\"]",
+  "isSvg": false
+ }
+]

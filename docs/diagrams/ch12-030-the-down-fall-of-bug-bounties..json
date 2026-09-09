@@ -1,0 +1,7 @@
+[
+ {
+  "title": "赏金计划的衰落",
+  "code": "graph TD\n    SLOP[\"AI slop 涌入: 信噪比恶化到信任危机\"] ==> PLATFORM[\"平台应对策略的局限<br/>技术对抗 vs 信任重建\"]\n    PLATFORM ==> MOTIVE[\"研究员动机退化: 经济激励到研究热情\"]\n    MOTIVE ==> GAME[\"安全研究自动化博弈<br/>防御方结构性劣势\"]",
+  "isSvg": false
+ }
+]

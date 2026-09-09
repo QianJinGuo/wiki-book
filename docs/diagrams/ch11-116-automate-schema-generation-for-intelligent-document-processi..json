@@ -1,0 +1,7 @@
+[
+ {
+  "title": "自动化 IDP Schema 生成",
+  "code": "graph TD\n    CORE[\"技术架构核心创新\"] ==> EVALM[\"Schema 生成评价机制<br/>关键技术决策权衡\"]\n    EVALM ==> IDP[\"与 IDP Accelerator 深度集成\"]\n    IDP ==> P[\"适用场景 · 部署要点 · 质量优化\"]",
+  "isSvg": false
+ }
+]

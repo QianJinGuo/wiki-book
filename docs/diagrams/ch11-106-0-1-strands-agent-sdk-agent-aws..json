@@ -1,0 +1,7 @@
+[
+ {
+  "title": "联想基于 Strands SDK 的资源智能巡检 Agent",
+  "code": "graph TD\n    WHY[\"技术选型: 为什么是 Strands SDK\"] ==> L3[\"三层架构设计亮点\"]\n    L3 ==> MULTI[\"多 Agent 协作模式的价值\"]\n    MULTI ==> INS[\"深度分析与实践启示\"]",
+  "isSvg": false
+ }
+]

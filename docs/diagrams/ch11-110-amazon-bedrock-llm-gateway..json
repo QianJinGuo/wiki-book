@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Bedrock 加 LLM Gateway——生产级推理弹性",
+  "code": "graph TD\n    F4[\"四维权衡: 可用性 · 响应时间<br/>成本 · 吞吐量\"] ==> P5[\"五种弹性模式渐进演进<br/>CRIS 跨区域 到 多账户分片<br/>到 模型回退 到 负载均衡<br/>到 多租户配额隔离\"]\n    P5 ==> GATEWAY[\"LLM Gateway 是关键基建<br/>路由 回退 限流 多租户隔离\"]",
+  "isSvg": false
+ }
+]

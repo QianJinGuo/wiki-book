@@ -1,0 +1,7 @@
+[
+ {
+  "title": "A Bitter Lesson for Data Filtering",
+  "code": "graph TD\n    FINDING[\"反直觉: 算力足够时<br/>不过滤就是最好的过滤<br/>大模型从差数据中获益\"] ==> BITTER[\"与 Sutton Bitter Lesson 呼应<br/>数据过滤是先验注入\"]\n    BITTER ==> BOUNDARY[\"边界: high compute data-scarce 有效<br/>data-rich compute-limited 仍有价值\"]",
+  "isSvg": false
+ }
+]

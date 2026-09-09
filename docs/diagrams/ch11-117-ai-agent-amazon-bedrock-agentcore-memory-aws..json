@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AgentCore Memory——Agent 学会忘记",
+  "code": "graph TD\n    PHILO[\"记忆哲学根本转变<br/>忘记是能力 双层架构设计优势\"] ==> STRATEGIES[\"四种内置策略差异化<br/>三层自定义体系工程意义\"]\n    STRATEGIES ==> P[\"策略选型决策树<br/>预算整合 · 会话连续性\"]",
+  "isSvg": false
+ }
+]

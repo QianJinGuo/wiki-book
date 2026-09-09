@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AWS API MCP 加 Quick Suite 加 AgentCore 集成",
+  "code": "graph TD\n    ARCH[\"技术架构与设计理念\"] ==> SEC[\"身份认证与安全模型\"]\n    SEC ==> MCP[\"MCP 协议的实践价值\"]\n    MCP ==> COST[\"成本考量与商业可行性\"]",
+  "isSvg": false
+ }
+]

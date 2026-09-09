@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claw Chain——OpenClaw 四个可链漏洞",
+  "code": "graph TD\n    CHAIN[\"四个可链漏洞: AI Agent<br/>作攻击放大器\"] ==> TECH[\"技术细节分解与攻击面分析\"]\n    TECH ==> P[\"对部署者 平台设计者<br/>安全研究社区的启示\"]",
+  "isSvg": false
+ }
+]

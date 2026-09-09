@@ -1,0 +1,7 @@
+[
+ {
+  "title": "CMU PACE——Agentic 能力评估的代理",
+  "code": "graph TD\n    EFF[\"成本降 100 倍: 完整评测数千美元<br/>PACE 不到 1% 获高度相关预测分<br/>自动选题: 19 基准选 100 题\"] ==> THEORY[\"能力维度可迁移性<br/>Local 监督加 Global 无监督互补<br/>Agent 基准能力指纹分析\"]\n    THEORY ==> LIMIT[\"代理评测与完整评测边界\"]",
+  "isSvg": false
+ }
+]

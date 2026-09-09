@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AI Voice Cloning——技术 谁在做 往哪走",
+  "code": "graph TD\n    TECH[\"三种克隆方法: 零样本 3-10 秒<br/>少样本 1-5 分钟 · 完全微调 1 小时加<br/>Speaker Embedding 核心作用\"] ==> RISK[\"技术民主化质变: DIY 工具<br/>零样本质量即将达到 parity<br/>实时化与多语言保真是下一前沿\"]\n    RISK ==> P[\"安全团队关注认证风险<br/>创作者新工具 · 企业品牌语音策略\"]",
+  "isSvg": false
+ }
+]

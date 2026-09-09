@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Inngest AI in Production 2026 基准报告",
+  "code": "graph TD\n    PARADOX[\"信心悖论: 自信与实际成熟度脱节\"] ==> GAP[\"可观测性缺口是最急迫痛点\"]\n    GAP ==> TAX[\"可靠性税的结构性成因\"]\n    TAX ==> L3[\"信心团队的三个基础设施层\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Harness 进化论文——M 星与 AutoHarness",
+  "code": "graph TD\n    PAPERS[\"微软 M 星记忆 Harness 进化<br/>加 谷歌 AutoHarness 动作约束\"] ==> INSIGHT[\"记忆 Harness 任务特异性: 跨任务迁移失败<br/>AutoHarness 三模式权衡<br/>小模型加 Harness 优于大模型\"]\n    INSIGHT ==> CONVERGE[\"两种 Harness 的趋同方向\"]",
+  "isSvg": false
+ }
+]

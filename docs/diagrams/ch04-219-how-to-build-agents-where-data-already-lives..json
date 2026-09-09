@@ -1,0 +1,7 @@
+[
+ {
+  "title": "在数据所在处构建 Agent",
+  "code": "graph TD\n    PRINCIPLE[\"数据驻留优先: 减搬运 降延迟<br/>合规友好 成本优化\"] ==> MODES[\"部署: 数据库旁 数据湖<br/>SaaS 内 边缘 用户终端\"]\n    MODES ==> ARCH[\"MCP 加 A2A 标准化连接<br/>权限: 行级列级非粗粒度\"]",
+  "isSvg": false
+ }
+]

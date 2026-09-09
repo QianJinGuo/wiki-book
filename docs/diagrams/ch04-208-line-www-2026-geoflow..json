@@ -1,0 +1,7 @@
+[
+ {
+  "title": "LINE 论文 WWW 2026 时间检验奖与 GeoFlow",
+  "code": "graph TD\n    AWARD[\"WWW 2026 时间检验奖<br/>图嵌入十年远征\"] ==> GEOFLOW[\"GeoFlow 三代进化<br/>V3 多步推理范式突破\"]\n    GEOFLOW ==> BIZ[\"AI 制药商业化拐点信号<br/>学术到产业的人才流动\"]",
+  "isSvg": false
+ }
+]

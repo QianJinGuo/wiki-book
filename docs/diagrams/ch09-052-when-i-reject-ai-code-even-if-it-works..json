@@ -1,0 +1,7 @@
+[
+ {
+  "title": "即使 AI 代码能跑我也会拒绝",
+  "code": "graph TD\n    OVERLOAD[\"认知过载: 实现速度升<br/>审查能力未同步增长\"] ==> R5[\"五条拒绝标准<br/>无法解释 · diff 大于问题<br/>过早抽象 · 增认知负担 · 盲信输出\"] ==> SECOND[\"二次尝试的价值: 第一次探索<br/>第二次开发者更懂问题\"]\n    SECOND ==> HARNESS[\"Harness Engineering 视角的代码审查\"]",
+  "isSvg": false
+ }
+]

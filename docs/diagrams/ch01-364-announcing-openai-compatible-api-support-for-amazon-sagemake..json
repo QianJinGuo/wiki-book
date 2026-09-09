@@ -1,0 +1,7 @@
+[
+ {
+  "title": "SageMaker AI Endpoints 支持 OpenAI 兼容 API",
+  "code": "graph TD\n    API[\"OpenAI 兼容 API<br/>直接迁移现有 LLM 应用\"] ==> AUTH[\"Bearer Token 认证机制\"]\n    AUTH ==> ARCH[\"多模型托管 Inference Components\"]\n    ARCH ==> P[\"迁移策略 · 安全实施<br/>成本优化 · 适用场景\"]",
+  "isSvg": false
+ }
+]
