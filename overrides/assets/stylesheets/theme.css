@@ -471,3 +471,9 @@
   .home-part, .chapter-card, .chapter-card__more .arrow { transition: none; }
   .home-part:hover, .chapter-card:hover { transform: none; }
 }
+
+/* ---- English pages: hide the Chinese navigation chrome ---- */
+/* The English surface (/en/) navigates on its own; the header language
+   switcher (translate icon) remains the way back to the Chinese site. */
+body.wiki-book-en .md-tabs { display: none; }
+body.wiki-book-en .md-sidebar--primary { display: none; }

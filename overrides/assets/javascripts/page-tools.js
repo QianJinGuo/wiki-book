@@ -61,6 +61,10 @@
   }
 
   function renderTools() {
+    // Mark English pages so theme.css can hide the Chinese navigation
+    // chrome; the header language switcher stays as the way back.
+    if (document.body) document.body.classList.toggle('wiki-book-en', isEnglishPage());
+
     var header = document.querySelector('.md-header__inner');
     if (!header) return;
 
