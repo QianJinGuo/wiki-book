@@ -1,4 +1,5 @@
-%% title: MapSatisfyBench——首个满意度感知地图 Agent 评测
+%% title: MapSatisfyBench——满意度感知地图 Agent 评测
 graph TD
-    SHIFT["从任务完成到满意度感知<br/>不标正确答案 标影响接受度的因素"] ==> METHOD["还原识别过滤三步法<br/>长期偏好乘即时调制<br/>五维真值 加 七维评估指标"]
-    METHOD ==> FIND["12 模型实测<br/>能完成任务但猜不准你<br/>缺主动获取证据 · 思考能补课不满分"]
+    SHIFT["从任务完成到满意度感知"] ==> METHOD["还原识别过滤三步法<br/>五维真值 加 七维指标"]
+    METHOD ==> FIND["12 模型实测发现"]
+    FIND ==> SYS["系统设计亮点"]
