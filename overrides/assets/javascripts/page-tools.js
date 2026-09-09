@@ -40,8 +40,7 @@
   }
 
   function showToast(message) {
-    var toast = document.getElementById('wiki-book-tool-toast');
-    if (!toast) {
+    var toast = document.getElementById('wiki-book-tool-toast');    if (!toast) {
       toast = document.createElement('div');
       toast.id = 'wiki-book-tool-toast';
       toast.className = 'wiki-book-tool-toast';
@@ -54,6 +53,7 @@
       toast.classList.remove('is-visible');
     }, 2600);
   }
+  window.showToast = showToast; // reused by live-translate.js
 
   function hasMermaidOverlay() {
     return typeof window.wikiBookOpenMermaid === 'function' &&
@@ -75,7 +75,7 @@
       tools.className = 'wiki-book-tools';
       tools.innerHTML =
         '<a class="wiki-book-tool wiki-book-tool--translate" ' +
-          'target="_blank" rel="noopener" aria-label="翻译为英文" title="翻译为英文">' +
+          'href="#" role="button" aria-label="切换英文模式" title="切换英文模式">' +
           '<span class="wiki-book-tool__icon" aria-hidden="true">🌐</span>' +
           '<span class="wiki-book-tool__label">English</span>' +
         '</a>' +
@@ -89,6 +89,14 @@
       if (source) header.insertBefore(tools, source);
       else header.appendChild(tools);
 
+      tools.querySelector('.wiki-book-tool--translate').addEventListener('click', function(e) {
+        e.preventDefault();
+        if (window.WBLiveTranslate) {
+          window.WBLiveTranslate.toggle();
+          renderTools();
+        }
+      });
+
       tools.querySelector('.wiki-book-tool--mermaid').addEventListener('click', function() {
         if (hasMermaidOverlay()) {
           window.wikiBookOpenMermaid();
@@ -98,26 +106,24 @@
       });
     }
 
-    // English: curated guide on Chinese pages; escape hatch inside the
-    // translate proxy; hidden where there is nothing English to reach.
+    // English: live site-wide translation toggle. Hidden on the static
+    // English surface only while the live mode is off — there is nothing
+    // to translate there, but the toggle must stay reachable to exit.
     var translate = tools.querySelector('.wiki-book-tool--translate');
     var label = translate.querySelector('.wiki-book-tool__label');
-    if (isEnglishPage() || isLocalHost()) {
-      translate.style.display = 'none';
-    } else if (inTranslateProxy()) {
+    var liveMode = Boolean(window.WBLiveTranslate && window.WBLiveTranslate.langOn());
+    if (liveMode) {
       translate.style.display = '';
-      translate.href = realOrigin() + '/en/';
-      translate.removeAttribute('target');
-      label.textContent = 'English';
-      translate.title = '打开英文版导览';
-      translate.setAttribute('aria-label', '打开英文版导览');
+      label.textContent = '中文';
+      translate.title = '切换回中文（重新加载页面）';
+      translate.setAttribute('aria-label', '切换回中文');
+    } else if (isEnglishPage()) {
+      translate.style.display = 'none';
     } else {
       translate.style.display = '';
-      translate.href = '/en/';
-      translate.removeAttribute('target');
       label.textContent = 'English';
-      translate.title = '英文版导览（含完整英文书入口）';
-      translate.setAttribute('aria-label', '打开英文版导览');
+      translate.title = '实时翻译整站为英文';
+      translate.setAttribute('aria-label', '实时翻译整站为英文');
     }
 
     // Mermaid: hidden until the diagram overlay is actually ready, so the

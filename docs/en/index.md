@@ -10,8 +10,11 @@ title: English
 
     - **Agent Engineering: Harness, Loop, Graph** — a complete 13-chapter book, fully in English. This is the deep dive; start here.
     - **This guide page.**
+    - **Site-wide machine translation** — turn it on below and every page you open is translated to English in your browser, on the fly. The original Chinese content is never modified.
 
-    Everything else — the 20-chapter main course, the knowledge dashboard and the 1,700+ curated entries — is written in **Chinese**. Use the translate icon in the header to switch back to the Chinese site at any time.
+    The curated 20-chapter course and the 1,700+ entries are written in **Chinese**; use the translate icon in the header (it becomes **中文** while the mode is on) to switch back.
+
+<p><a class="md-button md-button--primary" href="#" onclick="if(window.WBLiveTranslate){window.WBLiveTranslate.toggle();}return false;">🌐 Turn on site-wide English translation</a></p>
 
 ## Agent Engineering: Harness, Loop, Graph
 
