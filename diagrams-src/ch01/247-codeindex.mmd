@@ -1,4 +1,5 @@
 %% title: Codeindex——让大模型更好地理解你的代码
 graph TD
-    CAP3["三大核心能力<br/>增量语义化索引检索<br/>代码摘要生成 · 函数依赖图"] ==> TECH["Tree-sitter AST 解析<br/>KuzuDB 嵌入式 加 Postgres Age 线上<br/>增量索引文件哈希复用"]
+    CAP3["三大核心能力<br/>增量语义化索引检索<br/>代码摘要生成 · 函数依赖图"] ==> TECH["Tree-sitter AST 解析<br/>KuzuDB 嵌入式 加 Postgres Age 线上"]
+    TECH ==> SDK["SDK 与 OpenAPI 双接口<br/>增量索引文件哈希复用"]
     TECH ==> SCENES["场景: CodeWiz 检索<br/>AICR 审查 · CodeWiki 文档"]
