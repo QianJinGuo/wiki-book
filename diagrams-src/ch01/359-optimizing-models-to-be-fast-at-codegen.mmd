@@ -1,0 +1,4 @@
+%% title: Optimizing Models to Be Fast at Codegen
+graph TD
+    F3["三大发现: 增量上下文策略<br/>代码编辑结构特性 · 推理性能增益"] ==> DIFF["与通用推理优化的区别<br/>推测解码定制是核心竞争力<br/>前缀缓存命中率决定廉价 GPU 可行性"]
+    DIFF ==> INS["跨机器 TCP 前缀缓存突破 NVLink<br/>单一工作负载策略的工程启示"]
