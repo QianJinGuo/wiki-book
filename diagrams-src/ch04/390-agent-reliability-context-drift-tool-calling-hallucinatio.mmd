@@ -1,0 +1,4 @@
+%% title: Agent Reliability——上下文漂移与工具调用幻觉
+graph TD
+    DRIFT["上下文漂移: 注意力机制根因<br/>加 三种模式加 检测信号"] ==> COUPLED["两问题耦合放大"] ==> HALLUC["工具调用幻觉: 概率生成<br/>加 三种类型加 三段式校验"]
+    HALLUC ==> DEFENSE["防御: 锚点机制不依赖自判<br/>加 工具描述写边界非功能<br/>加 Harness 层职责整合"]

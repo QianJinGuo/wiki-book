@@ -1,0 +1,5 @@
+%% title: MLLM-as-Judge——多模态评估器
+graph TD
+    MOTIV["BLEU 加 ROUGE 与人类判断相关性低<br/>多模态评估器捕捉视觉语义差异"] ==> FOUR["四种评估器<br/>加 Strands Evals 框架"]
+    FOUR ==> DESIGN["推理后评分最重要单一变量<br/>加 mid-tier 模型性价比最佳<br/>加 Reference 选择逻辑"]
+    DESIGN ==> FUTURE["多模态评估是 LLM-as-Judge<br/>的自然延伸非颠覆"]

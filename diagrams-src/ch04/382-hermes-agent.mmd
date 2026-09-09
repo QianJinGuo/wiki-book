@@ -1,0 +1,7 @@
+%% title: 给 Hermes 装上显微镜——Agent 执行可观测
+graph TD
+    CORE["四个核心问题"] ==> OT["OpenTelemetry 链路追踪<br/>加 GenAI 语义约定"]
+    OT ==> T1["ReAct 结构化 Trace<br/>加 chat span 模型调用"]
+    OT ==> T2["execute_tool span 加 TTFT<br/>加 高危行为审计"]
+    T1 ==> SUM["Agent 级汇总"]
+    T2 ==> SUM

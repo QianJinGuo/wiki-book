@@ -1,0 +1,5 @@
+%% title: 严格 CSP 下的密码窃取——Chrome 自动填充攻击
+graph TD
+    A1["严格 CSP 下 HTML 注入<br/>加 无需 JavaScript"] ==> A2["Chrome 自动填充触发<br/>域名无关密码填充"]
+    A2 ==> A3["Referer 头外泄<br/>meta 重定向双重滥用"]
+    A3 ==> DEF["防御: Referrer-Policy 强制头<br/>加 上下文 HTML 编码 加 禁自动填充<br/>加 CSP frame-ancestors 严格配置"]

@@ -1,4 +1,4 @@
-%% title: 微调 Amazon Nova——精准邮件数据提取
+%% title: 微调 Amazon Nova——邮件数据提取
 graph TD
-    RESULT["微调 Nova Micro 94.77%<br/>超越更大的 Nova Lite<br/>准确率升 5.6-16.6pp 延迟降 32%<br/>成本降 50%"] ==> METHOD["PEFT LoRA 1300 样本起步<br/>Bedrock Conversation Schema 格式"]
-    METHOD ==> FLOW["端到端: 数据准备 到 S3<br/>到 SageMaker 微调 到 Bedrock 部署"]
+    RESULT["Nova Micro 94.77% 超越 Nova Lite<br/>加 准确率升 5.6-16.6pp<br/>加 延迟降 32% 加 成本降 50%"] ==> METHOD["PEFT LoRA 1300 样本起步<br/>加 Bedrock Conversation Schema"]
+    METHOD ==> FLOW["数据准备 到 S3 到 SageMaker<br/>到 Bedrock 部署 到 生产推理"]
