@@ -124,6 +124,9 @@
     var nodes = [];
     priority.forEach(function(r) { nodes = nodes.concat(collect(r)); });
     content.forEach(function(r) { nodes = nodes.concat(collect(r)); });
+    // Custom pages (dashboard, learn) don't use Material containers —
+    // fall back to the whole document so they get translated too.
+    if (!nodes.length) nodes = collect(document.body);
     return nodes;
   }
 
