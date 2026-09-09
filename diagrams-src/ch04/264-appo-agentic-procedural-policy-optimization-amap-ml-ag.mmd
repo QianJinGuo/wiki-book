@@ -1,0 +1,6 @@
+%% title: APPO——把 Agent RL 信用分配细化到每个决策点
+graph TD
+    PAIN["痛点: 奖励只给终点<br/>中间决策无人负责"] ==> CORE["核心: 把过程当作信用分配基本单位"]
+    CORE ==> BS["Branching Score<br/>熵加未来价值 过滤假高熵"]
+    BS ==> ADV["过程级 Advantage<br/>双组估计加未来感知缩放"]
+    ADV ==> EXP["13 项基准三类任务全覆盖<br/>深度搜索尤其亮眼<br/>与 ARPO 的本质差异"]

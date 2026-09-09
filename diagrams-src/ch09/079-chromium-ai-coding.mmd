@@ -1,0 +1,6 @@
+%% title: Chromium AI Coding 开发体系
+graph TD
+    POLICY["AI Policy 责任边界"] ==> PROMPTS["Prompts 四层分层组合<br/>8 步标准工作流 · Task 自定义命令"]
+    PROMPTS ==> SKILLS["Skills 按需激活专业模块"]
+    SKILLS ==> KB["Knowledge Base 三层 Agentic RAG<br/>静态路由表 加 本地文档检索 加 MCP 扩展"]
+    KB ==> EVAL["Eval: AI Agent 回归测试<br/>Projects 大规模代码改造"]

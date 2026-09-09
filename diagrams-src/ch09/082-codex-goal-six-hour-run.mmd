@@ -1,0 +1,6 @@
+%% title: Codex Goal 六小时连续运行实测
+graph TD
+    M1["持久化目标状态"] ==> M2["运行时续跑<br/>消除人工恢复的上下文断层"]
+    M2 ==> M3["目标生命周期工具"]
+    M3 ==> CASE["实测: 6 小时 44 分钟连续任务<br/>94% Cache Hit Rate<br/>上下文积累有长期价值"]
+    CASE ==> SHIFT["范式: 从 supervisor 到 architect<br/>质量责任前移<br/>适用边界清晰"]

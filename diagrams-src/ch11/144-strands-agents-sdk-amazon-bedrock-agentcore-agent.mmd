@@ -1,0 +1,6 @@
+%% title: Strands Agents SDK——商品广告图审查 Agent
+graph TD
+    PAT["Agents as Tools: 企业级微服务化<br/>manager 加专业 sub agent"] ==> A3["三个 Agent 分工<br/>manager 协调 · TextExtraction OCR<br/>Review 合规分析"]
+    A3 ==> MATRIX["模型分层选型: 被低估的实践<br/>按任务类型选最匹配模型"]
+    MATRIX ==> OCR["OCR 提示词负面清单工程<br/>合规严重程度分级"]
+    OCR ==> AWS["端到端架构: ECR 加 Runtime<br/>加 KB 加 Cognito 加 STS 加 CloudFront"]

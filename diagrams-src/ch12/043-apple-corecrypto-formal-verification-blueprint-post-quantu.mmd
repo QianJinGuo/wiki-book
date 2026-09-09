@@ -1,0 +1,6 @@
+%% title: Apple corecrypto 形式验证——后量子 ML-KEM 与 ML-DSA
+graph TD
+    STACK["形式化验证工程栈"] ==> SPEC["Spec extraction"]
+    SPEC ==> MONT["Montgomery 乘法证明"]
+    MONT ==> CT["Constant-time 证明"]
+    CT ==> EQ["Cross-implementation 等价性"]
