@@ -1,0 +1,9 @@
+%% title: 750B MoE PD 分离推理
+graph TD
+%% title: 750B MoE PD 分离推理
+graph TD
+    A["概述"] ==> B["测试配置（2P2D 分离推理）"]
+    B ==> C["Prefill 与 Decode 的通信模式差异"]
+    C ==> D["端到端性能对比（AWS EFA vs 客户自建 RoCE）"]
+    D ==> E["为什么 EFA 在 Mean 上慢 31%：UCCL-EP "]
+    E ==> SUM["总结与实践启示"]

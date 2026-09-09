@@ -1,0 +1,9 @@
+%% title: AWS SageMaker 阿塞拜疆语 LLM 训练
+graph TD
+%% title: AWS SageMaker 阿塞拜疆语 LLM 训练
+graph TD
+    A["自定义 BBPE 分词器设计"] ==> B["阶段二：FSDP + Liger 的 CPT 分布式训练"]
+    B ==> C["两阶段 CPT 配置"]
+    C ==> D["阶段三：LoRA 参数高效微调"]
+    D ==> E["关键数据/实践启示"]
+    E ==> SUM["总结与实践启示"]
