@@ -629,3 +629,7 @@
   transform: scale(0.72);
   transform-origin: center;
 }
+/* 标题栏是浅色面板背景：机器人改用正文墨色，眼睛/嘴保持品牌金镂空 */
+.ai-chat__title-icon .ai-bot {
+  color: var(--md-default-fg-color);
+}
