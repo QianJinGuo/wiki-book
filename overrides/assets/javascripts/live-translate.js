@@ -188,9 +188,42 @@
     });
   }
 
+  function pageKey() {
+    var p = window.location.pathname.replace(/^\//, '');
+    if (p.slice(-1) === '/') p += 'index.html';
+    p = p.replace(/\.html$/, '');
+    return p.replace(/\//g, '__') || 'index';
+  }
+
+  // Pre-translated page dictionary (scripts/translate-all.py, shipped via
+  // build). Seeding turns a fully covered page into an instant swap; any
+  // segment missing here still goes through the real-time path.
+  function seedFromDictionary() {
+    return fetch('/assets/tr/' + pageKey() + '.json')
+      .then(function(r) { return r.ok ? r.json() : null; })
+      .then(function(dict) {
+        if (!dict) return;
+        for (var key in dict) {
+          if (Object.prototype.hasOwnProperty.call(dict, key) &&
+              !Object.prototype.hasOwnProperty.call(cache.map, key)) {
+            cache.map[key] = dict[key];
+            cache.order.push(key);
+          }
+        }
+      })
+      .catch(function() { /* no dictionary for this page */ });
+  }
+
   // ── Translation pass ──
   function start() {
     if (running || !langOn()) return Promise.resolve();
+    return seedFromDictionary().then(function() {
+      if (running || !langOn()) return Promise.resolve();
+      return runPass();
+    });
+  }
+
+  function runPass() {
     var nodes = collectNodes();
     if (!nodes.length) return Promise.resolve();
 
