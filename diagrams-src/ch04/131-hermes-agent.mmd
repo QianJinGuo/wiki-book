@@ -1,4 +1,5 @@
 %% title: Hermes Agent 九模块架构解析
 graph TD
-    M9["九大模块<br/>Agent Loop · Prompt Assembly · Memory<br/>Skill Manager · Tool MCP · Nudge Engine<br/>Review Agent · Trajectory Store · SOUL.md"] ==> FLOW["一次任务全链路<br/>三线解耦: 执行与学习正交分离"]
-    FLOW ==> DESIGN["Nudge 阈值触发隐式经验捕获<br/>Skill 生命周期过程式知识显性化<br/>SOUL.md 人格层宪法保障"]
+    M9["九大模块<br/>Agent Loop · Prompt Assembly · Memory<br/>Skill Manager · Tool MCP · Nudge Engine<br/>Review Agent · Trajectory Store · SOUL.md"] ==> FLOW["一次任务全链路"]
+    FLOW ==> DECOUPLE["三线解耦: 执行与学习正交分离"]
+    DECOUPLE ==> DESIGN["Nudge 阈值触发经验捕获<br/>SOUL.md 人格层宪法保障"]

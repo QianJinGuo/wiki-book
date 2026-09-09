@@ -1,4 +1,5 @@
 %% title: Bedrock 多模态案例——汽车油表精确识别
 graph TD
-    FAILPATH["失败路径: VL 模型细粒度回归<br/>精度停滞 60-70% 结构性局限"] ==> TWOSTAGE["成功: 两阶段方案<br/>阶段 1 Rekognition 自定义标签定位<br/>阶段 2 视觉模型定量"]
-    TWOSTAGE ==> DESIGN["关键设计: 任务解耦<br/>各模块独立指标评估<br/>连续值场景选回归模型"]
+    FAILPATH["失败路径: VL 模型细粒度回归<br/>精度停滞 60-70% 结构性局限"] ==> STAGE1["阶段 1: Rekognition<br/>自定义标签定位油表"]
+    STAGE1 ==> STAGE2["阶段 2: 视觉模型定量"]
+    STAGE2 ==> DESIGN["任务解耦 · 各模块独立评估<br/>连续值场景选回归模型"]
