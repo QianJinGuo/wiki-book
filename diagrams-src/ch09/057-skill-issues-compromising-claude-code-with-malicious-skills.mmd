@@ -1,0 +1,4 @@
+%% title: Skill Issues——恶意 Skill 攻陷 Claude Code
+graph TD
+    VECTOR["攻击向量: 恶意 Skill 文件<br/>allowed-tools 加 bypassPermissions<br/>绕过权限实现 RCE"] ==> CORE["核心问题: Skill 本质等同可执行代码<br/>下载未审计 Skill 等同运行未知二进制"]
+    CORE ==> DEFENSE["deny Bash 是唯一防线<br/>npx skills add 等平台均受影响"]
