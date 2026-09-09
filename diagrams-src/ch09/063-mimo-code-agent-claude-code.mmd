@@ -1,0 +1,7 @@
+%% title: 小米 MiMo Code——长程编程 Agent 三大主线
+graph TD
+    M1["主线一 计算: 解决做对"] --> DW["Dynamic Workflow<br/>编排从 prompt 转为代码"]
+    M2["主线二 记忆: 逻辑会话无限延伸"] --> DW
+    M3["主线三 进化: 跨 session 经验沉淀"] --> DW
+    DW --> CMP["与 Claude Code 工程分化<br/>共同基础与关键分化"]
+    CMP --> LES["关键 bug 教训: 自动删除全局 npm 包<br/>高风险操作清单"]
