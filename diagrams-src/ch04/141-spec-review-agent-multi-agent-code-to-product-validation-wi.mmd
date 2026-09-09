@@ -1,0 +1,5 @@
+%% title: Spec Review Agent——多 Agent 代码到产品验证
+graph TD
+    GAP["代码审查的产品意图断层"] ==> PIPE["多阶段多 agent 流水线<br/>Code 加 Browser 双轨验证<br/>每需求独立 Subagent<br/>三源上下文: Spec 加 Code 加 Runtime"]
+    PIPE ==> MCP["MCP 标准化集成"]
+    MCP ==> RESULT["量化收益与规格质量基线"]

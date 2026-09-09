@@ -1,0 +1,4 @@
+%% title: Agent Skills 做知识库检索——比 RAG 更好吗
+graph TD
+    RAGPAIN["传统 RAG 结构性困境<br/>预索引刚性 · Chunk 边界难对齐<br/>固定 Chunk 加 Embedding 走到尽头"] ==> SKILLS["Skills 渐进披露检索<br/>启动只载描述 触发按需读取<br/>Agentic Retrieve 替代 Retrieve-then-Read"]
+    SKILLS ==> LIMIT["局限: PDF 首检低效<br/>多轮后忘调用 · Token 消耗大"]

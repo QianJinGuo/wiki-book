@@ -1,0 +1,5 @@
+%% title: AgentCore Runtime 部署 Claude Agent SDK
+graph TD
+    ISOLATION["microVM 隔离加 8 小时执行窗口"] ==> SDK["Claude Agent SDK 生产级能力<br/>框架无关性"]
+    SDK ==> GLOBAL["Bedrock 跨区域推理<br/>全球化部署策略"]
+    GLOBAL ==> MIGRATE["本地到生产无缝迁移<br/>最小改造成本 · Starter Toolkit"]
