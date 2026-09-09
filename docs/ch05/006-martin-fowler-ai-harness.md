@@ -16,7 +16,7 @@
 - [Coding Harness 工程本质：从 Pi 到 OpenClaw](https://github.com/QianJinGuo/wiki-public/blob/main/entities/pi-openclaw-coding-harness.md) — Harness八能力+五工程模式：Context像投影8441字rv9
 - [Context Window Management Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-window-management-comparison.md) — 四框架对比rv9
 - [Harness Engineering 综合论述：为什么 2026 年真正重要的是它（含 ECC 开源实现案例）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-paradigm-comprehensive-2026.md) — 综合论述17305字含ECC案例rv9
-- [Anthropic N-days: Frontier Agent Vulnerability Research](../ch04/313-anthropic-n-days-frontier-agent-vulnerability-research.html) — N-day研究
+- [Anthropic N-days: Frontier Agent Vulnerability Research](../ch04/314-anthropic-n-days-frontier-agent-vulnerability-research.html) — N-day研究
 - [Martin Fowler AI 研发提醒：Harness 承重层](https://github.com/QianJinGuo/wiki-public/blob/main/entities/martin-fowler-ai-rd-harness-nondeterminism-devnote.md) — Fowler：非确定性协作者+Harness承重层10228字rv9全版
 - [The Coming Loop](../ch01/475-the-coming-loop.html) — Ronacher两种循环区分
 - ['Harness 之后：状态边界与失败闭环（若飞续篇）'](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-之后-状态边界与失败闭环-ruofei.md) — 运行时契约/提交闸门/失败回写10308字全版

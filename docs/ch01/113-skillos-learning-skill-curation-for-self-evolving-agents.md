@@ -12,7 +12,7 @@
 - [Context Window Management Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-window-management-comparison.md) — 四框架对比rv9
 - [GLM-5.2: Built for Long-Horizon Tasks](https://github.com/QianJinGuo/wiki-public/blob/main/entities/z-glm-5.2.md) — GLM-5.2长程任务发布
 - [Optimizing Models to Be Fast at Codegen](https://github.com/QianJinGuo/wiki-public/blob/main/entities/morphllm-codegen-inference-optimization.md) — codegen locality复用+Chinchilla在投机解码失效
-- [Foundation Capital Agent Era Six Insights](../ch04/291-foundation-capital-agent-era-six-insights.html) — Agent时代六条投资洞察rv9框架
+- [Foundation Capital Agent Era Six Insights](../ch04/292-foundation-capital-agent-era-six-insights.html) — Agent时代六条投资洞察rv9框架
 - [Rethinking Search as Code Generation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/perplexity-search-as-code-generation.md) — Search as Code：查询变可执行代码对象7660字rv9
 - [DeepSeek Thinking with Visual Primitives 深度解读](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-visual-primitives-thinking.md) — 视觉原语10k主版
 - [MIRA + MPA：深度原理 AI Scientist 递归自训练打造材料基座模型，40 项实验全面 SOTA](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mira-mpa-deep-principle-ai4s-40-sota.md) — AI Scientist递归自训练，35/40胜前SOTA

@@ -13,7 +13,7 @@
 - [Cve 2026 20182 Unauthenticated Cisco Sd Wan Control Plane Compromise Via Vhub Au](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cve-2026-20182-unauthenticated-cisco-sd-wan-control-plane-compromise-via-vhub-au.md)
 - [Cve 2026 20182 Cisco Sd Wan Vhub Bypass](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cve-2026-20182-cisco-sd-wan-vhub-bypass.md)
 - [Google Workspace Updates Small Businesses Can Now Import Use](https://github.com/QianJinGuo/wiki-public/blob/main/entities/google-workspace-updates-small-businesses-can-now-import-use.md)
-- [Computer Use 45X More Expensive Than Structured Apis](../ch04/317-computer-use-45x-more-expensive-than-structured-apis.html)
+- [Computer Use 45X More Expensive Than Structured Apis](../ch04/318-computer-use-45x-more-expensive-than-structured-apis.html)
 - [Workspaceupdates Googleblog Com Google Workspace Updates](https://github.com/QianJinGuo/wiki-public/blob/main/entities/workspaceupdates-googleblog-com-google-workspace-updates.md)
 
 → [原文存档](https://www.testingcatalog.com/openai-will-let-codex-control-other-desktop-devices-via-computer-use/)

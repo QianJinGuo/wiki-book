@@ -32,13 +32,11 @@
 
 ## Ch14.001 使用 Amazon S3 Tables 优化数据湖：从Hudi 迁移到托管 Iceberg
 
-> 📊 Level ⭐ | 9.1KB | `entities/使用-amazon-s3-tables-优化数据湖从hudi-迁移到托管-iceberg.md`
-
-# 使用 Amazon S3 Tables 优化数据湖：从Hudi 迁移到托管 Iceberg
+> 📊 Level ⭐ | 9.2KB | `entities/使用-amazon-s3-tables-优化数据湖从hudi-迁移到托管-iceberg.md`
 
 → [原文存档](https://aws.amazon.com/cn/blogs/china/using-amazon-s3-tables-optimize-data-lake-hudi-migration-managed-iceberg)
 
-# 使用 Amazon S3 Tables 优化数据湖：从Hudi 迁移到托管 Iceberg
+## 使用 Amazon S3 Tables 优化数据湖：从Hudi 迁移到托管 Iceberg
 
 摘要：某零售品牌因 Hudi 0.12.x 版本老化、并发冲突和全量覆盖场景低效，迁移至 Amazon S3 Tables。团队采用混合策略：DW 层用 S3 Tables 实现增量 MERGE，DM 层全量覆盖表直接写 Parquet。通过新旧并行分批迁移，最终核心作业性能提升最高 8 倍，ETL 月度成本降低 72%。
 
@@ -153,7 +151,7 @@ Amazon S3 Tables 每次增量提交都会产生新数据文件。如果不加控
 
 3\. 定期 Compaction：配置每周调度合并小文件
 
-# Compaction 调度示例（每周日凌晨），优化后单文件平均大小从 9 MB 提升到 224 MB。
+## Compaction 调度示例（每周日凌晨），优化后单文件平均大小从 9 MB 提升到 224 MB。
 
 **4.4.2 write.distribution-mode 配置注意事项**
 
@@ -212,8 +210,6 @@ AI 生成 dashboard 的定位是消除 construction phase——当分析意图�
 ## Ch14.003 nOps FinOps Agent 架构：语义层驱动的数据分析 Agent 设计
 
 > 📊 Level ⭐ | 6.0KB | `entities/how-nops-shipped-finops-agents-75-faster-with-amazon-bedrock.md`
-
-# nOps FinOps Agent 架构：语义层驱动的数据分析 Agent 设计
 
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/how-nops-shipped-finops-agents-75-faster-with-amazon-bedrock-agentcore)
 
@@ -279,8 +275,6 @@ Vercel/Next.js BFF 与 AgentCore 之间有一层自定义 merge layer，一次�
 
 > 📊 Level ⭐ | 4.2KB | `entities/metric-semantic-layer-how-lyft-governs-and-scales-key-data-definitions.md`
 
-# Metric Semantic Layer: How Lyft Governs and Scales Key Data Definitions
-
 [![Image 1: Iraklikhorguani](https://miro.medium.com/v2/da:true/resize:fill:64:64/0*m85T5tMk8enr2P2-)](https://medium.com/@iraklikhorguani?source=post_page---byline--56bee3643c29---------------------------------------)
 
 ![Image 2](https://miro.medium.com/v2/resize:fit:700/1*9r1bGT0StHEZaLhFgNhI7A.png)
@@ -311,8 +305,6 @@ Taking the above principles into account, we **implemented the Metrics Semantic 
 ## Ch14.005 Write-Ahead Intent Log: a Foundation for Efficient CDC at Scale
 
 > 📊 Level ⭐ | 3.9KB | `entities/write-ahead-intent-log-a-foundation-for-efficient-cdc-at-scale.md`
-
-# Write-Ahead Intent Log: a Foundation for Efficient CDC at Scale
 
 [InfoQ Homepage](https://www.infoq.com/ "InfoQ Homepage")[Presentations](https://www.infoq.com/presentations "Presentations")Write-Ahead Intent Log: a Foundation for Efficient CDC at Scale
 
@@ -345,8 +337,6 @@ Software is changing the world. QCon San Francisco empowers software development
 
 > 📊 Level ⭐ | 3.8KB | `entities/the-data-operating-system-for-the-foundation-model-era-data-juicer.md`
 
-# The Data Operating System for the Foundation Model Era — Data Juicer
-
 [![Image 1: PyPI](https://img.shields.io/pypi/v/py-data-juicer?logo=pypi&color=026cad)](https://pypi.org/project/py-data-juicer)[![Image 2: Downloads](https://static.pepy.tech/personalized-badge/py-data-juicer?period=total&units=INTERNATIONAL_SYSTEM&left_color=grey&right_color=green&left_text=downloads)](https://pepy.tech/projects/py-data-juicer)[![Image 3: Docker](https://img.shields.io/docker/v/datajuicer/data-juicer?logo=docker&label=Docker&color=498bdf)](https://hub.docker.com/r/datajuicer/data-juicer)
 
 [![Image 4: Docs](https://img.shields.io/badge/%F0%9F%93%96_Docs-Website-026cad)](https://datajuicer.github.io/data-juicer/)[![Image 5: Operators](https://img.shields.io/badge/%F0%9F%A7%A9_Operators-200+-blue)](https://datajuicer.github.io/data-juicer/en/main/docs/Operators.html)[![Image 6: Recipes](https://img.shields.io/badge/%F0%9F%8D%B3_Recipes-50+-brightgreen)](https://github.com/datajuicer/data-juicer-hub)
@@ -375,8 +365,6 @@ Whether you’re deduplicating web-scale pre-training corpora, curating agent in
 ## Ch14.007 ClickHouse Ingestion at Scale: An Open-Source Zepto Engineering Story
 
 > 📊 Level ⭐ | 3.8KB | `entities/clickhouse-ingestion-at-scale-an-open-source-zepto-engineering-story.md`
-
-# ClickHouse Ingestion at Scale: An Open-Source Zepto Engineering Story
 
 [![Image 1: Zepto Tech](https://miro.medium.com/v2/da:true/resize:fill:64:64/0*Zdo4al9KE5LuqNxm)](https://medium.com/@tech.culture?source=post_page---byline--7f57309e2175---------------------------------------)
 
@@ -484,8 +472,6 @@ Wiki 与传统文档的本质区别在于四个维度：**结构可解析**（fr
 ## Ch14.009 GitHub Multilingual Repositories Dataset — 4000 万仓库多语言元数据
 
 > 📊 Level ⭐⭐ | 5.5KB | `entities/github-multilingual-repositories-dataset-cc0.md`
-
-# GitHub Multilingual Repositories Dataset — 4000 万仓库多语言元数据
 
 > Source: [原文存档](https://github.blog/ai-and-ml/llms/accelerating-researchers-and-developers-building-multilingual-ai-with-a-new-open-dataset/)
 
@@ -600,8 +586,6 @@ Wiki 与传统文档的本质区别在于四个维度：**结构可解析**（fr
 
 > 📊 Level ⭐⭐ | 2.6KB | `entities/amazon-quick-mcp-kdbx-time-series.md`
 
-# Amazon Quick integration with time-series databases for market intelligence using MCP
-
 ## 相关实体
 
 - [dynamically splitting wide partitions in cassandra for time](https://github.com/QianJinGuo/wiki-public/blob/main/entities/dynamically-splitting-wide-partitions-in-cassandra-for-time-.md)
@@ -625,7 +609,7 @@ Amazon Quick is a comprehensive, generative AI-powered business intelligence ser
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/105-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/276-karpathy-vibe-coding-agentic-engineering.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
 - [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/两万字详解claude-code源码核心机制.md)
 
@@ -634,8 +618,6 @@ Amazon Quick is a comprehensive, generative AI-powered business intelligence ser
 ## Ch14.011 ai 驱动的大数据工程 从平台驱动到 aidlc 的范式迁移
 
 > 📊 Level ⭐⭐⭐ | 14.6KB | `entities/ai-驱动的大数据工程-从平台驱动到-aidlc-的范式迁移.md`
-
-# ai 驱动的大数据工程 从平台驱动到 aidlc 的范式迁移
 
 <div style="line-height: 1.6;font-size: 16px">
 <p style="background-color: #fafafa;padding: 20px;border-radius: 8px;margin-bottom: 30px;font-size: 16px;color: #5f6368">摘要：本文阐述了数据工程正从"平台驱动"的数据中台范式向"AI 驱动"的 AIDLC 范式迁移，其核心在于控制面从平台功能转为知识资产、开发模式从过程式转为声明式、质量保障从后置扫描转为前置契约，并给出了落地成熟度模型与五步实施建议。</p>
@@ -871,8 +853,6 @@ https://mp.weixin.qq.com/s/XLYWhkjFHxrH2-jb5O1qCQ
 
 > 📊 Level ⭐⭐⭐ | 11.5KB | `entities/databricks-storage-ecosystem-opensharing-govern-everything-2026.md`
 
-# Databricks Storage Ecosystem & OpenSharing：企业数据治理从 Migrate Everything 到 Govern Everything 的范式转变
-
 > **Background**：本文基于 Databricks 官方博客 2026-06-10 发布稿，分析其 SDS (Software-Defined Storage) Ecosystem + 开源 OpenSharing 协议如何重塑企业级数据治理范式。涉及 8+ 头部存储厂商（MinIO、Everpure、Qumulo、VAST Data、DDN、NetApp、HPE、Dell 等）联合接入，标志 Hybrid Forever 从口号进入生产可落地阶段。
 
 ## 核心叙事
@@ -980,8 +960,6 @@ SDS 生态将 Databricks 的 Lakehouse 架构扩展到真正的混合环境—�
 ## Ch14.014 verify-data：一个端到端的数据验数 Agent Skill
 
 > 📊 Level ⭐⭐⭐ | 7.9KB | `entities/verify-data-agent-skill-data-validation.md`
-
-# verify-data：一个端到端的数据验数 Agent Skill
 
 → [原文存档](https://mp.weixin.qq.com/s/CX7H8LUm9PokC19NDDd_WQ)
 
@@ -1205,8 +1183,6 @@ LiveKit Agents 采用 Apache 2.0 协议，10k+ Stars。与托管平台相比的�
 
 > 📊 Level ⭐⭐⭐ | 7.2KB | `entities/varoa-ddosing-software-delivery-pipelines-2026.md`
 
-# DDoSing Software Delivery Pipelines
-
 > 原文存档：[原文存档](https://varoa.net/2026/06/13/ddosing-software-delivery-pipelines.html)
 
 ## 摘要
@@ -1342,8 +1318,6 @@ E2E 验证阶段是真正的瓶颈：必须在真实硬件上构造真实环境�
 
 > 📊 Level ⭐⭐⭐ | 6.7KB | `entities/agent-data-governance-crewai-credential-patterns.md`
 
-# Stop Giving Your Agents Database Credentials — Agent Data Governance Patterns
-
 > Agent 循环（推理、工具调用、Prompt 工程）只占 1% 的工作量，其余 99% 是构建、配置、部署、安全、评估和监控。本文聚焦数据治理层：Agent 不应直接持有数据库凭证。
 
 ## 核心论点
@@ -1469,8 +1443,6 @@ RG 实例已在全球广泛区域推出，涵盖亚太、北美、欧洲、中�
 ## Ch14.020 SQL NOT IN 与 NULL 的经典陷阱：De Morgan 定律到解析器行为
 
 > 📊 Level ⭐⭐⭐ | 6.0KB | `entities/sql-not-in-null-trap-demorgan-parser.md`
-
-# SQL NOT IN 与 NULL 的经典陷阱：De Morgan 定律到解析器行为
 
 深入剖析 SQL 中 `NOT IN` 子查询包含 NULL 值时返回空结果集的经典陷阱。从 SQL 标准的三值逻辑定义出发，经 De Morgan 定律推导，到 PostgreSQL 解析器的实际行为。
 
@@ -1705,8 +1677,6 @@ Alignment-faking 基线 12%、Reward Tampering、Sycophancy——这三个已发
 
 > 📊 Level ⭐⭐⭐⭐ | 9.9KB | `entities/eva-bench-data-2-voice-agent-evaluation.md`
 
-# EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios
-
 → [原文存档](https://huggingface.co/blog/ServiceNow-AI/eva-bench-data)
 
 ## 摘要
@@ -1820,7 +1790,7 @@ ServiceNow 本身是 ITSM / HR / 客户支持自动化领域的巨头，发布 E
 
 - [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md) — Agent 原理架构的综合性参考
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md) — Agent 范式跃迁的视角
-- [Karpathy Vibe Coding Agentic Engineering](ch04/105-karpathy-vibe-coding-agentic-engineering.html) — 同源访谈的另一标题版本
+- [Karpathy Vibe Coding Agentic Engineering](ch04/276-karpathy-vibe-coding-agentic-engineering.html) — 同源访谈的另一标题版本
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md) — AWS Bedrock AgentOps 的规模化运营实践
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验-v2.md) — 多智能体团队搭建的实战经验
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏-v2.md) — OpenClaw 多智能体系统化教程
@@ -1832,8 +1802,6 @@ ServiceNow 本身是 ITSM / HR / 客户支持自动化领域的巨头，发布 E
 ## Ch14.023 Moneyball for Physical AI
 
 > 📊 Level ⭐⭐⭐⭐ | 8.6KB | `entities/moneyball-for-physical-ai.md`
-
-# Moneyball for Physical AI
 
 > **Background**：本文基于 Praxis Currents 的一篇深度分析文章，类比棒球 Moneyball 革命来审视 Physical AI 领域的数据定价与价值发现。原始文章通过 Jina Reader 抓取。
 
@@ -1944,7 +1912,6 @@ $$U_{eff}(n) = U_0 + \Delta U(1 - e^{-n/n_c})$$
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 35.3KB | `entities/data-for-ai明其所耗知其所因让每一分-token-消耗都可量化的全栈实践.md`
 
-# Data for AI：明其所耗，知其所因！让每一分 Token 消耗都可量化的全栈实践
 source: rss
 source_url: https://aws.amazon.com/cn/blogs/china/data-for-ai-token-full-stack-practice/
 ingested: 2026-05-28
@@ -1952,7 +1919,7 @@ feed_name: AWS China Blog
 source_published: 2026-05-27T07:12:57Z
 ---
 
-# Data for AI：明其所耗，知其所因！让每一分 Token 消耗都可量化的全栈实践
+## Data for AI：明其所耗，知其所因！让每一分 Token 消耗都可量化的全栈实践
 
 摘要：本文是”解决 Agentic AI 应用 Token 爆炸问题”系列的第四篇，聚焦可观测性（Observability）。前三篇分别介绍了 Token 爆炸的根本原因、记忆管理优化和 Skill 检索优化。本篇从 OpenClaw 的成本可观测性现状出发，梳理社区主流方案，并结合亚马逊云科技全栈能力给出经过实测验证的落地路径。
 
@@ -2430,7 +2397,7 @@ Agentic AI 的成本失控根源在于其执行路径的非确定性——传统
 - [飞来汇借助 Aws Security Agent 构建跨境支付应用的智能安全防线](https://github.com/QianJinGuo/wiki-public/blob/main/entities/飞来汇借助-aws-security-agent-构建跨境支付应用的智能安全防线.md)
 - [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-aws-smgs-uses-an-ai-powered-conversational-assistant-to-.md)
 - [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/滴滴国际化客服质检智能化之路基于-amazon-bedrock-的多语种多业务线质检实践.md)
-- [Powering Agentic Ai Sales Strategy With Amazon Bedrock Agent](ch04/350-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.html)
+- [Powering Agentic Ai Sales Strategy With Amazon Bedrock Agent](ch04/351-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.html)
 - [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](https://github.com/QianJinGuo/wiki-public/blob/main/entities/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/data-infrastructure.md)
 
@@ -2439,8 +2406,6 @@ Agentic AI 的成本失控根源在于其执行路径的非确定性——传统
 ## Ch14.025 阿里云 Kafka × Iceberg 零 ETL 实时入湖：ApsaraMQ for Kafka × OSS Tables 架构减法
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 24.4KB | `entities/aliyun-kafka-iceberg-zero-etl-architecture-subtraction-2026-06-18.md`
-
-# 阿里云 Kafka × Iceberg 零 ETL 实时入湖：ApsaraMQ for Kafka × OSS Tables 架构减法
 
 ## 核心定位
 

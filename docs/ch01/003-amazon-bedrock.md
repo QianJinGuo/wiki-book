@@ -17,6 +17,8 @@ source_published: 2026-05-26T05:25:20Z
 
 ---
 
+## 滴滴国际化客服质检智能化之路：基于 Amazon Bedrock 的多语种多业务线质检实践
+
 ## [亚马逊AWS官方博客](https://aws.amazon.com/cn/blogs/china/)
 
 摘要：滴滴国际化事业部客户体验部门与 AWS 合作，基于 Amazon Bedrock 构建了一套覆盖西班牙语和葡萄牙语、横跨出行、外卖、金融三大业务线的智能客服质检系统，将客服质检能力从依赖第三方的黑盒方案迁移为透明可控的自研 AI 架构。系统包含三条核心管线——意图验证、合规评估和 VOC 聚合分析：进线原因验证准确率从 38% 大幅提升至 86%，合规评分准确率达 90% 以上，VOC 聚合分析则将原本耗费数小时的人工汇总工作缩短至数分钟完成。
@@ -116,7 +118,6 @@ VOC 管线采用三阶段 pipeline：并行提取 → 问题聚类 → 报告生
 —— Raphael Hua，数据分析团队，滴滴国际化事业部
 
 滴滴基于 [Amazon Bedrock](https://aws.amazon.com/cn/bedrock/) 构建的智能质检系统，通过意图验证、合规评估和 VOC 聚合三条管线，实现了从第三方黑盒到透明可控的转变：
-
 
 ## 相关实体
 - [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-aws-smgs-uses-an-ai-powered-conversational-assistant-to-.md)

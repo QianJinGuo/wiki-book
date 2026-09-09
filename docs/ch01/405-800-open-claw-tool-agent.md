@@ -1,6 +1,6 @@
 # 800行代码实现 Open Claw 的 Tool、消息总线、子Agent管理架构
 
-> 📊 Level ⭐⭐⭐⭐ | 40.2KB | `entities/800行代码实现-open-claw-的-tool消息总线子agent管理架构.md`
+> 📊 Level ⭐⭐⭐⭐ | 39.0KB | `entities/800行代码实现-open-claw-的-tool消息总线子agent管理架构.md`
 
 这篇文章记录对 Open Claw 中 Tool、消息总线和子 Agent 管理架构的研究学习，以及一个最小可运行实现。
 本文想说明的技术观点是对于 Tool 调用、消息分发、子 Agent 管理这三类 Agent 系统里的核心组件，优先采用薄抽象、显式控制流和贴近模型 API 的实现方式，往往比引入多层中间件更容易获得工程上的确定性。系统边界更清晰，运行路径更容易追踪，问题更容易定位，也更适合作为后续扩展 Memory、调度和持久化能力的基础。
@@ -9,7 +9,6 @@
 本文记录其中四个核心模块的实现：工具系统（Tool layer）、消息总线（MessageBus）、子 Agent 管理（SubagentManager）、REPL 主循环。不涉及上层 Bot 接入层、持久化、Context / Memory 系统。
 框架不依赖 LangChain 或其他 Agent 框架，直接基于 Anthropic SDK 构建。选择这条路的原因很简单：中间层越薄，调试越容易，对 API 行为的控制越精确。
 基础设施：Tool 抽象与 ToolRegistry
-
 
 #### Tool 抽象类
 一个工具由四个要素组成：  ` name  ` 、  ` description  ` 、  ` input_schema  ` 、  ` execute  ` 。

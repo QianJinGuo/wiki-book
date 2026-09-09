@@ -1,6 +1,6 @@
 # 800行代码实现 Open Claw 的 Tool、消息总线、子Agent管理架构
 
-> 📊 Level ⭐⭐⭐ | 15.5KB | `entities/open-claw-tool-bus-subagent-architecture.md`
+> 📊 Level ⭐⭐⭐ | 15.4KB | `entities/open-claw-tool-bus-subagent-architecture.md`
 
 这篇文章记录对 Open Claw 中 Tool、消息总线和子 Agent 管理架构的研究学习，以及一个最小可运行实现。
 本文想说明的技术观点是对于 Tool 调用、消息分发、子 Agent 管理这三类 Agent 系统里的核心组件，优先采用薄抽象、显式控制流和贴近模型 API 的实现方式，往往比引入多层中间件更容易获得工程上的确定性。系统边界更清晰，运行路径更容易追踪，问题更容易定位，也更适合作为后续扩展 Memory、调度和持久化能力的基础。
@@ -98,7 +98,7 @@ ExecTool 的三层防护说明了一个通用原则：安全设计不能依赖�
 
 ## 相关实体
 - [800行代码实现 Open Claw 的 Tool消息总线子Agent管理架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/800行代码实现-open-claw-的-tool消息总线子agent管理架构.md)
-- [Stripe Sessions 2026 Ai Agents](../ch04/188-stripe-sessions-2026-ai-agents.html)
+- [Stripe Sessions 2026 Ai Agents](../ch04/189-stripe-sessions-2026-ai-agents.html)
 - [Claude Code Prompt Source Analysis](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-prompt-source-analysis.md)
 - [Anthropic Claude Managed Agents Platform Launch](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-claude-managed-agents-platform-launch.md)
 - [Agent Memory Architecture Past Influence Future Ruofei](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture-past-influence-future-ruofei.md)

@@ -167,8 +167,6 @@ DeepSeek V4 Preview（2026-04-24）没有把 KV cache 当固定成本管理，�
 
 > 📊 Level ⭐⭐ | 8.3KB | `entities/huggingface-torch-mlp-fusion-profiling-2026.md`
 
-# Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP
-
 > **Background**: Hugging Face team profiling series part 2 (2026-06-11). Climbs from single nn.Linear to 3-layer MLP with ReLU activation, profiles GPU kernel launch overhead, and shows torch.compile Inductor fusion reducing 9+ launches to 3 fused triton kernels.
 
 ## Core problem
@@ -498,7 +496,6 @@ vLLM V0→V1 迁移中的 logprob 差异，本质上是 **推理引擎默认行�
 
 > 📊 Level ⭐⭐⭐ | 8.3KB | `entities/chroma-to-qdrant-1m-vector-migration.md`
 
-# 从 Chroma 换成 Qdrant，我踩了 100 万向量的坑
 > 原文：从 Chroma 换成 Qdrant，我踩了 100 万向量的坑
 > 来源：https://mp.weixin.qq.com/s/Aovqh95_LBYtVOj8_tTD_w
 
@@ -608,8 +605,6 @@ Chroma 的做法是"先搜再过滤"或"先过滤再搜"——无论哪种顺序
 ## Ch16.009 Apple Siri 私有推理（Private Inference）不私有：三个对抗者都不受加密学保护
 
 > 📊 Level ⭐⭐⭐⭐ | 16.6KB | `entities/apple-siri-private-inference-lethal-trifecta-matthew-green.md`
-
-# Apple Siri 私有推理（Private Inference）不私有：三个对抗者都不受加密学保护
 
 > **Source**：[原文存档（Matthew Green / Cryptography Engineering, 2026-06-09）](https://blog.cryptographyengineering.com/2026/06/09/apples-siri-ai-or-more-shouting-into-the-void-about-private-agents/)
 
@@ -1086,8 +1081,6 @@ bash examples/pretrain_language_model/launch.sh qwen3-30b-a3b
 
 > 📊 Level ⭐⭐⭐⭐ | 9.3KB | `entities/embodied-intelligence-sim-to-real-active-inference-behavior-tree-intrinsic-motivation-chenzhiyan-2026-06-17.md`
 
-# 具身智能 Sim-to-Real 迁移：主动推理、行为树与内在动机引擎的工程化方案
-
 ## 摘要
 
 数据派THU 陈之炎的系统性教程，拆解具身智能机器人 Sim-to-Real 迁移的三大核心技术：主动推理开源库（pymdp/spm）的 ROS2 集成、感控闭环的模块化行为树模板、内在动机引擎开发套件。每项技术均含环境安装、核心架构、代码模板、参数调优、工业避坑指南，面向工程化落地。
@@ -1474,8 +1467,6 @@ SageMaker AI 端点按实例运行时长计费 ：
 ## Ch16.014 The next generation of speculative decoding: DFlash and Spec V2 - LMSYS Blog
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 11.2KB | `entities/lmsys-dflash-speculative-decoding-2026-06.md`
-
-# The next generation of speculative decoding: DFlash and Spec V2 - LMSYS Blog
 
 > Source: [原文存档](https://www.lmsys.org/blog/2026-06-15-next-generation-speculative-decoding-dflash-v2/)
 

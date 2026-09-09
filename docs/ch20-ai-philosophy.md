@@ -35,8 +35,6 @@
 
 > 📊 Level ⭐ | 4.2KB | `entities/workday-ai-inference-guardrails.md`
 
-# Workday Inference Engine Built-in Guardrails - Enterprise AI Safety Infrastructure Path
-
 Workday CTO Gabe Monroy (former Google inference infrastructure lead) makes a core argument: **LLM Guardrails should be native components of the inference engine, not bolted-on safety layers**. This perspective comes from his experience building inference infrastructure for large AI labs at Google, and from practicing in Workday's zero-tolerance "people and money" scenarios.
 
 ## Core Argument: Guardrails Belong in the Inference Engine
@@ -281,8 +279,6 @@ This is fundamentally different from general AI applications (chatbots, content 
 ## Ch20.003 Dario Amodei: AI 指数发展与政策制定的时序鸿沟
 
 > 📊 Level ⭐⭐⭐ | 15.1KB | `entities/dario-amodei-policy-ai-exponential-time-mismatch.md`
-
-# Dario Amodei: AI 指数发展与政策制定的时序鸿沟
 
 2026 年 6 月，Anthropic 创始人 Dario Amodei 发布长文《Policy on the AI Exponential》，系统论述 AI 技术发展速度与政策制定速度之间日益扩大的「时序鸿沟」。 文章用一个《指环王》比喻开场——霍比特人试图叫醒缓慢的树人 Treebeard 抵抗砍伐者，但 Treebeard 的响应速度与危机速度完全不匹配。Amodei 借此比喻 AI 与政治制度的关系：**AI 在以指数速度发展（4 年内从「写一行连贯代码」到「写大多数主要 AI 公司的代码」），而政策制定需要数年**——这种错位是 2026 年代最关键的政策挑战。
 
@@ -547,8 +543,6 @@ Bill Staples 提供了一个独特的市场视角：去年开发者平台市场�
 
 > 📊 Level ⭐⭐⭐ | 11.3KB | `entities/nemotron-3-5-content-safety.md`
 
-# Nemotron 3.5 Content Safety
-
 > NVIDIA 2026-06-04 在 Hugging Face 发布的企业级多模态内容安全模型（Nemotron 3.5 系列）。本实体整合自 [原文存档](https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety)。
 
 ## 概述
@@ -631,9 +625,9 @@ Hugging Face + NVIDIA NIM 双渠道部署反映了当前企业 AI 落地的两�
 ## 相关实体
 - [Nvidia Nemotron 3 Agents Rag Voice Safety](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-nemotron-3-agents-rag-voice-safety.md)
 - [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-nemotron-3-ultra-sagemaker-jumpstart-moe-agentic.md)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/054-nvidia-secure-local-agent-nemoclaw-openclaw.html)
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/056-nvidia-secure-local-agent-nemoclaw-openclaw.html)
 - [Fine Tuning Cosmos](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tuning-cosmos.md)
-- [Tokenspeed Agentic Inference Engine](ch04/274-tokenspeed-agentic-inference-engine.html)
+- [Tokenspeed Agentic Inference Engine](ch04/275-tokenspeed-agentic-inference-engine.html)
 
 - [How To Automate Ai Model Documentation With The Nvidia Mcg T 806Efb](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-to-automate-ai-model-documentation-with-the-nvidia-mcg-t-806efb.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
@@ -708,8 +702,6 @@ Hugging Face + NVIDIA NIM 双渠道部署反映了当前企业 AI 落地的两�
 ## Ch20.007 AI 生产力悖论：你变快了，公司没有
 
 > 📊 Level ⭐⭐⭐ | 7.2KB | `entities/ai-productivity-paradox-cost-shifting-poischeme.md`
-
-# AI 生产力悖论：你变快了，公司没有
 
 ## 摘要
 
@@ -795,8 +787,6 @@ AI 工具打破了这一契约：
 ## Ch20.008 Dario Amodei 2026 Policy on the AI Exponential
 
 > 📊 Level ⭐⭐⭐⭐ | 18.1KB | `entities/dario-amodei-policy-ai-exponential-2026.md`
-
-# Dario Amodei 2026 Policy on the AI Exponential
 
 > **Tier-1 政策长文**: Anthropic CEO Dario Amodei 于 2026-06-10 在其个人博客发布的 5 章政策论文,共 7 个脚注、43KB 正文,系统化提出美国应对 AI 指数级发展的政策框架。核心隐喻 Treebeard 来自《指环王》——缓慢的制度无法跟上快速的技术。文末确认 Anthropic 同步发布"前沿模型测试立法提案"与"工作替代政策框架"并提供大额财政支持。
 
@@ -1219,7 +1209,6 @@ Steve Yegge 为游戏项目开 12 个订阅，按真实 token 价格折算每月
 
 > 📊 Level ⭐⭐⭐⭐ | 9.9KB | `entities/impeccable-vibe-design-philosophy-anomaly.md`
 
-# Vibe Design ≠ Vibe Coding —— 资深设计师对 AI 前端工作流的哲学批判
 > "Code is correct or not. Design is good or not. The same workflow can't serve both." —— Anomaly Innovations 创始人核心论点
 
 Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反驳 [Karpathy 提出的 vibe coding 概念](https://entities/karpathy-vibe-coding-to-agentic-engineering.md) 在前端的适用性：**代码能编译 ≠ 设计完成**。这条边界划清后，AI 工具在前端赛道会进一步分化。
@@ -1314,8 +1303,6 @@ Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反�
 
 > 📊 Level ⭐⭐⭐⭐ | 6.3KB | `entities/openai-beneficial-rl-broadly-persistently.md`
 
-# Reinforcement learning towards broadly and persistently beneficial models
-
 > **来源**: alignment.openai.com · Akshay V. Jagadeesh, Rahul K. Arora, Khaled Saab 等 · 2026-06-18
 
 ## 摘要
@@ -1408,8 +1395,6 @@ AI 系统在健康、科学、教育、编程等高风险场景中越来越自�
 ## Ch20.013 Data Agent 产品设计文档
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 30.0KB | `entities/data-agent-product-design.md`
-
-# Data Agent 产品设计文档
 
 本文档基于火山引擎 Data Agent 产品体系，设计一套可对标的**企业级数据智能体**产品。涵盖：智能问数 Agent（NL2SQL）、营销策略 Agent（CDP 集成）两大核心场景的完整功能拆解、技术架构、API 设计、数据模型。
 

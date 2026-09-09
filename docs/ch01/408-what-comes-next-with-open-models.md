@@ -4,6 +4,8 @@
 
 → [原文存档](https://www.interconnects.ai/p/the-next-phase-of-open-models)
 
+## What comes next with open models
+
 2025 was the year where a lot of companies started to take open models seriously as a path to influence in the extremely valuable AI ecosystem — the adoption of a strategy that was massively accelerated downstream of [DeepSeek R1’s](<https://www.interconnects.ai/p/deepseek-r1-recipe-for-o1>) breakout success. Most of this is being done as a mission of hope, principle, or generosity.
 
 Very few businesses have a real monetary reason to build open models. Well-cited reasons, such as [commoditizing one's complements](<https://gwern.net/complement>) for Meta's Llama, are hard to follow up on when the cost of participating well is billions of dollars. Still, AI is in such an early phase of technological development, mostly defined by large-scale industrialization and massive scale-out of infrastructure, that having any sort of influence at the cutting edge of AI is seen as a path to immense potential value.

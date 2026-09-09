@@ -4,6 +4,8 @@
 
 → [原文存档](https://aws.amazon.com/cn/blogs/china/aws-glue-3-0-version-practice-etl-platform-migration)
 
+## AWS Glue 3.0 到 5.0 版本升级实践：中国区大规模 ETL 平台的迁移方法论
+
 摘要：本文分享了在 AWS 中国区将近70个 AWS Glue ETL 作业从 3.0 版本升级至 5.0 版本的完整实践经验。文章涵盖升级范围评估、中国区特有的依赖管理策略、分批部署方法论、真实性能对比数据以及典型问题的排查与解决。升级后整体 DPU 消耗降低约30%，部分作业性能提升超过60%。
   
 **目录**

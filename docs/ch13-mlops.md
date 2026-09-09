@@ -32,8 +32,6 @@ MLOps 是 AI 系统从"Demo"到"产品"的分水岭。
 
 > 📊 Level ⭐⭐⭐ | 7.6KB | `entities/www.cio.com-ceos-top-priorities-for-it-leaders-today-2-html.md`
 
-# CEOs’ top priorities for IT leaders today
-
 ## 摘要
 2026 年 CEO 给 CIO 的第一优先任务仍是 AI 实施，但态度已发生根本转变：对实验和 POC 失去耐心，转而要求可量化的 ROI，并将"建立 AI 政策与 ROI 指标"列入 top 10 优先事项。与此同时，安全升格为第二优先，CIO 的角色正从技术执行者被推向业务变革的引领者——从"证明 AI 可行"转向"证明 AI 值钱"。
 
@@ -84,8 +82,6 @@ PwC 的 Leinwand 认为，CEO 期望 IT 通过连接数据、工作流与决策�
 ## Ch13.002 Discretizing Reward Models
 
 > 📊 Level ⭐⭐⭐ | 6.2KB | `entities/abs-2606-21795.md`
-
-# Discretizing Reward Models
 
 > **Source**: [arxiv.org/abs/2606.21795](https://arxiv.org/abs/2606.21795)
 
@@ -661,8 +657,6 @@ LoongSuite 的演进路径——内部验证后贡献社区——是大型企业
 
 > 📊 Level ⭐⭐⭐⭐ | 16.8KB | `entities/nice-zhejiang-university-social-intelligence-benchmark-hyman.md`
 
-# NICE：浙大提出的理论驱动型 LLM 社会智能诊断基准
-
 > 本实体整理自 [原文存档](https://mp.weixin.qq.com/s/Xr3t8vHZoer1eHSBsYN7ZA)，并参考浙大 arXiv 论文 *NICE: A Theory-Grounded Diagnostic Benchmark for Social Intelligence of LLMs*（https://arxiv.org/abs/2605.29685 ）。
 
 ## 一句话总结
@@ -858,8 +852,6 @@ NICE 真正的差异化定位是**「理论 + 内涵级 + 排序题」三位一�
 ## Ch13.007 循环工程 (Loop Engineering) — 清华 2026 框架
 
 > 📊 Level ⭐⭐⭐⭐ | 16.7KB | `entities/loop-engineering-tsinghua-2026.md`
-
-# 循环工程 (Loop Engineering) — 清华 2026 框架
 
 > **核心立论**：让 Agent 持续工作六小时，瓶颈不是它"会不会写"，而是它的**循环设计**是否合理。提示词本身没消失，只是被吸收进了六件套：技能 (Skill)、规格 (Spec)、工具 (Tool)、执行 (Act)、评估 (Eval)、停止 (Stop)。
 
@@ -1064,8 +1056,6 @@ Agent 时代研究焦点从单次生成转向持续运行，三个关键事实�
 ## Ch13.008 用 Amazon SageMaker AI 与 Qualcomm AI Hub 打通从云端训练到端侧 NPU 的交付闭环
 
 > 📊 Level ⭐⭐⭐⭐ | 13.9KB | `entities/amazon-sagemaker-qualcomm-ai-hub-edge-npu-deployment.md`
-
-# 用 Amazon SageMaker AI 与 Qualcomm AI Hub 打通从云端训练到端侧 NPU 的交付闭环
 
 > **Background**: AWS China 与 Qualcomm 合作，将云端 SageMaker 训练模型通过 Qualcomm AI Hub 编译为端侧 NPU 可执行格式，缩短边缘 AI 部署周期。
 

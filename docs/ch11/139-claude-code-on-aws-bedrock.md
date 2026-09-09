@@ -6,6 +6,8 @@
 
 ## Claude Code on AWS Bedrock 配置指南
 
+## Claude Code on AWS Bedrock 配置指南
+
 摘要：本文介绍了如何通过 AWS Bedrock 接入 AI 编程智能体 Claude Code。该方式通过 AWS 内部网络调用模型，计费与权限统一集成于 AWS 账号体系，适合企业团队使用。文章提供了一条“从零到跑通”的动手实践路径，涵盖模型开通、受限 IAM 用户创建及 Claude Code 后端配置，并附带可复制的 AWS CLI 命令与脚本
 
 **目录**

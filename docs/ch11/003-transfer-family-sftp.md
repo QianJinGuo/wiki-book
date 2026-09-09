@@ -4,6 +4,8 @@
 
 → [原文存档](https://aws.amazon.com/cn/blogs/china/how-to-security-using-transfer-family-sftp)
 
+## 如何轻量化的在亚马逊云科技中国区安全使用 Transfer Family SFTP
+
 摘要：在没有 Active Directory、没有自建 IDP，且中国区缺少 Cognito User Pool 的约束下，利用 AWS Transfer Family Custom Identity Provider、Secrets Manager 自动轮换密码和 IAM Roles Anywhere 证书认证，构建一套轻量化的且无长期凭据的安全 SFTP 文件传输方案。
 
 **目录**

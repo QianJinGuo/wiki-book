@@ -36,7 +36,7 @@
 
 → [原文存档](https://netflixtechblog.com/predicting-risk-in-content-launches-how-data-driven-insights-can-transform-launch-planning-587b1f2de928?source=rss----2615bd06b42e---4)
 
-# Predicting Risk in Content Launches: How Data-Driven Insights can Transform Launch Planning
+## Predicting Risk in Content Launches: How Data-Driven Insights can Transform Launch Planning
 
 by [Emily Gill](<https://www.linkedin.com/in/ecgill/>)
 
@@ -102,8 +102,6 @@ This isn’t unexpected — productions are dynamic, facing frequent changes, sc
 ## Ch15.003 不用人类手写训练框架了！AI自己写代码，训出1B端侧「小钢炮」
 
 > 📊 Level ⭐⭐ | 5.8KB | `entities/minicpm5-1b-forgetrain-machine-heart.md`
-
-# 不用人类手写训练框架了！AI自己写代码，训出1B端侧「小钢炮」
 
 > **来源**：机器之心（2026-05-26）| 原文存档：[原文存档](https://mp.weixin.qq.com/s/2tdHV01FL_YGUmZQ12DS2A)
 
@@ -182,7 +180,6 @@ MiniCPM5-1B 的特殊之处：
 
 > 📊 Level ⭐⭐ | 5.3KB | `entities/emo-pretraining-mixture-of-experts-for-emergent-modularity-ai2.md`
 
-# EMO: Pretraining mixture of experts for emergent modularity | Ai2
 [Skip to main content ->](https://allenai.org/blog/emo#main-content)
 [Ai2](https://www.allenai.org/)
 
@@ -223,7 +220,6 @@ EMO 的核心创新在于把"模块化"从一个人为先验变成了从数据�
 
 > 📊 Level ⭐⭐⭐ | 13.8KB | `entities/deepseek-v4-training-methodology.md`
 
-# DeepSeek V4 训练方法论深度解读
 > 花叔对 DeepSeek V4 58 页论文的深入解读，涵盖架构改动、训练稳定性、后训练范式变化、评测结果及未来方向。
 
 ## 核心结论
@@ -354,8 +350,6 @@ V4 的实现用激进前 8 步 + 温和后 2 步做精度平衡，这个工程�
 ## Ch15.006 NVIDIA Blackwell MLPerf Training 6.0 基准测试结果（2026-06）
 
 > 📊 Level ⭐⭐⭐ | 11.2KB | `entities/nvidia-blackwell-mlperf-training-6-0-benchmark-results-2026-06.md`
-
-# NVIDIA Blackwell MLPerf Training 6.0 基准测试结果（2026-06）
 
 ## 摘要
 
@@ -574,8 +568,6 @@ Dubois 提到的一个关键设计哲学是：能力（capability）和安全性
 
 > 📊 Level ⭐⭐⭐ | 9.3KB | `entities/aws-sagemaker-sft-dpo-tool-calling.md`
 
-# SFT+DPO 双阶段微调：Qwen3-1.7B Tool Calling 精度提升方案
-
 > 原文存档：[原文存档](https://aws.amazon.com/blogs/machine-learning/improve-your-agents-tool-calling-accuracy-with-sft-and-dpo-on-amazon-sagemaker-ai)
 
 > **Core insight**: 通过 NVIDIA When2Call 数据集进行 Spectrum SFT 后再进行 DPO 偏好优化，Qwen3-1.7B 的 tool calling 精度从 41.57% 提升至 71.06%，超越参数量为其 2 倍的 Llama 3.2 3B；SFT 建立基础能力，DPO 在偏好数据上进一步校准输出分布
@@ -749,8 +741,6 @@ TBA 把采样从训练闭环里解耦出来——这是 LLM RL 后训练数量�
 
 > 📊 Level ⭐⭐⭐ | 8.2KB | `entities/rl-single-layer-training-full-parameter.md`
 
-# Is One Layer Enough? 单层 RL 训练可超越全参数训练
-
 → [原文存档](https://mp.weixin.qq.com/s/u6-CbyiQ-uhXi6cwyNlomA)
 
 > 明尼苏达大学、北京大学和 Amazon 团队在 arxiv 2607.01232 中，通过系统性逐层研究揭示：RL 后训练的收益高度集中在 Transformer 中间层（深度 40–60%），训练单个层即可匹敌甚至超越全参数 RL 训练——这从根本上挑战了「能力提升需要整个网络协调适应」的隐含假设。
@@ -885,8 +875,6 @@ GRPO用相对排序替代PPO的Critic模型，节省30%~50%计算开销，但核
 
 > 📊 Level ⭐⭐⭐ | 7.4KB | `entities/what-ive-been-building-atom-report-post-training-course-fini.md`
 
-# What I've been building: ATOM Report, post-training course, finishing my book, and ongoing research
-
 → [原文存档](https://www.interconnects.ai/p/what-ive-been-building-atom-report)
 
 ## 摘要
@@ -945,7 +933,7 @@ Meta-RL with Self-Reflection 的核心洞察是：当前 LLM 的 RL 训练完全
 - RLHF
 - Post-training
 - Agent 记忆系统
-- [Karpathy: Agentic Engineering](ch04/105-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy: Agentic Engineering](ch04/276-karpathy-vibe-coding-agentic-engineering.html)
 - MOC: Evaluation Landscape
 
 ---
@@ -1094,8 +1082,6 @@ KV-Normality 问题是 Transformer 训练不稳定的重要来源之一（KL div
 ## Ch15.016 Heidi Health 临床 AI 微调：小模型通过偏好信号达前沿水平
 
 > 📊 Level ⭐⭐⭐ | 6.2KB | `entities/heidi-health-clinical-ai-model-fine-tuning-frontier-parity.md`
-
-# Heidi Health 临床 AI 微调：小模型通过偏好信号达前沿水平
 
 ## 摘要
 
@@ -1364,8 +1350,6 @@ OPD虽然解决了Mode-Covering问题，但引入了自己的隐患：Mode Colla
 
 > 📊 Level ⭐⭐⭐⭐ | 13.6KB | `entities/rl-beyond-the-verifiable-tanayj.md`
 
-# RL Beyond the Verifiable: 当奖励信号无法自动验证时
-
 > Dario Amodei 认为 90% 概率十年内出现"数据中心里的天才国家"，但最大的不确定性来自无法验证的任务——写小说、规划火星任务、基础科学发现。本文探讨 RLVR（可验证奖励强化学习）的边界与替代方案。
 
 ## 摘要
@@ -1587,8 +1571,6 @@ OpenRubrics 等工作现在专注于规模化生成这些评分标准。这是�
 
 > 📊 Level ⭐⭐⭐⭐ | 10.5KB | `entities/icml-2026-prism-parallel-residual-iterative-sequence-model.md`
 
-# ICML 2026 | PRISM: Parallel Residual Iterative Sequence Model
-
 > **核心洞察**：PRISM 揭示了 TTT-MLP 高表达力（"步长 × 残差 × 方向"多步迭代）与串行瓶颈是**同一根因的两面**，通过 anchor 代理消除 token 间串行 + 闭合式预计算消除 step 间串行，实现 TTT 级别质量 × GDN 级别速度。[原文存档](https://mp.weixin.qq.com/s/luHnepErnw3Ujfjcr5YIQg)
 
 ## 问题背景
@@ -1735,8 +1717,6 @@ PRISM 的"基础迭代 + low rank 旁路"结构与 LoRA 形式完全对应：冻
 ## Ch15.021 NVIDIA-ZPPO: Zone of Proximal Policy Optimization
 
 > 📊 Level ⭐⭐⭐⭐ | 6.9KB | `entities/nvidia-zppo-zone-proximal-policy-optimization.md`
-
-# NVIDIA-ZPPO: Zone of Proximal Policy Optimization
 
 > **来源**: byungkwanlee.github.io
 > **作者**: NVIDIA Research (Byungkwan Lee et al.)
@@ -2220,8 +2200,6 @@ Mode-hopping 在不同数据集上的普遍性如何？例如，在 Flipped Answ
 ## Ch15.023 Mind Lab LoRA 持续学习体系：δ-mem + MinT + LoRA Scaling Law + Macaron-A2UI
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 18.2KB | `entities/mind-lab-lora-continual-learning-system.md`
-
-# Mind Lab LoRA 持续学习体系：δ-mem + MinT + LoRA Scaling Law + Macaron-A2UI
 
 ## 概述
 
@@ -2824,8 +2802,6 @@ LoRA/DoRA 微调 Cosmos Predict 2.5 的本质不是让模型"重新学习物理"
 ## Ch15.025 SFT, RL, and On-Policy Distillation Through a Distributional Lens
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 15.7KB | `entities/untitled-v2.md`
-
-# SFT, RL, and On-Policy Distillation Through a Distributional Lens
 
 → [原文存档](https://nrehiew.github.io/blog/sft_rl_opd/)
 

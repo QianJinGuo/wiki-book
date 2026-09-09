@@ -36,7 +36,7 @@ Schluntz 提出每 7 个月 AI 编程任务时长翻倍的增长曲线，意味�
 - [Anthropic Coding Agents Social Science Survey 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-coding-agents-social-science-survey-2026.md)
 - [Vibe Coding Agentic Engineering Convergence Simon Willison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vibe-coding-agentic-engineering-convergence-simon-willison.md)
 - [从Vibe Coding到Agentic Engineering重构后台开发全流程](https://github.com/QianJinGuo/wiki-public/blob/main/entities/从vibe-coding到agentic-engineering重构后台开发全流程.md)
-- [Tencent Vibe Coding To Agentic Engineering Backend](../ch04/304-tencent-vibe-coding-to-agentic-engineering-backend.html)
+- [Tencent Vibe Coding To Agentic Engineering Backend](../ch04/305-tencent-vibe-coding-to-agentic-engineering-backend.html)
 - [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-官方生产级-agent-最佳实践12-个可复用的-mcp-设计模式-v2.md)
 
 → [原文存档](https://mp.weixin.qq.com/s/uajs9vOpVPqBzGFBw7zxtQ)

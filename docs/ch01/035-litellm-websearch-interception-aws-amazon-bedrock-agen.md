@@ -4,6 +4,8 @@
 
 → [原文存档](https://aws.amazon.com/cn/blogs/china/litellm-websearch-interception-integration-aws-managed-amazon)
 
+## 用 LiteLLM WebSearch Interception 集成 AWS 托管的 Amazon Bedrock AgentCore Web Search 能力
+
 摘要：在不修改客户端、不 fork LiteLLM 源码的前提下，将 LiteLLM 的 websearch interception 搜索后端 从自建 SearXNG 替换为 Amazon Bedrock AgentCore Web Search——一项 AWS 全托管、由 Amazon 自营 web 索引在 AWS 基础设施内服务搜索查询（查询不发往第三方搜索引擎）的 Web 搜索服务。文末给出 进阶用法：将其暴露为 MCP server，使没有 AWS 凭证的客户端 （如 OpenAI Codex）也能通过一个 LiteLLM virtual key 进行调用。
 
 **目录**

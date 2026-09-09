@@ -44,7 +44,7 @@ OpenClaw、Amazon Bedrock、Agentic AI、MCP、Amazon EKS、Kubernetes
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/build-multi-tenant-ai-agent-on-eks-graviton-openclaw-k8s-practice/)
 
 ## 相关实体
-- [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](../ch04/357-openclaw-multi-agent-team-practice-v2.html)
+- [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](../ch04/358-openclaw-multi-agent-team-practice-v2.html)
 - [OpenClaw 多智能体团队搭建实战经验](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-multi-agent-team-practice.md)
 - [Multi-Agent 架构在零售供应链运营中的实践：贯穿数据、洞察与行动 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/multi-agent-architecture-retail-practice.md)
 - [使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/using-kiro-cli-agent-client-protocol-build-ai-chat.md)

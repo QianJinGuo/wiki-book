@@ -34,8 +34,6 @@
 
 > 📊 Level ⭐ | 3.9KB | `entities/lean-scaling.md`
 
-# Lean Software Scaling Laws
-
 > **Source**: [gwern.net](https://gwern.net/lean-scaling)
 
 Novel research proposal with specific methodology (perplexity scaling over codebase size) and a concrete test case (Lean). High technical depth and originality, though lacks empirical data. Good source credibility (Gwern).
@@ -123,8 +121,6 @@ Cantrill 强调"someone at the helm"的角色——有效控制复杂性需要�
 ## Ch19.003 世界模型的DeepSeek时刻！魔芯Flash World Model降本70%，跑出50FPS实时交互
 
 > 📊 Level ⭐⭐⭐ | 10.4KB | `entities/世界模型的deepseek时刻魔芯flash-world-model降本70跑出50fps实时交互.md`
-
-# 世界模型的DeepSeek时刻！魔芯Flash World Model降本70%，跑出50FPS实时交互
 
 ## 摘要
 
@@ -214,8 +210,6 @@ MoWorld 不仅提升了模型能力，更重要的是提出了具体的产业落
 ## Ch19.004 Prompt Injection 的机制解释：基于角色感知的 LLM 安全分析
 
 > 📊 Level ⭐⭐⭐ | 8.8KB | `entities/mechanistic-explanation-prompt-injection-roles.md`
-
-# Prompt Injection 的机制解释：基于角色感知的 LLM 安全分析
 
 ## 核心框架
 
@@ -320,8 +314,6 @@ CoT Forgery 攻击将 prompt injection 从"指令覆盖"提升到"信任链劫�
 
 > 📊 Level ⭐⭐⭐ | 7.3KB | `entities/arxiv-2605-30846-count-anything-2026.md`
 
-# Count Anything - 文本引导的通用目标计数框架
-
 > Source: [Raw](https://arxiv.org/abs/2605.30846)
 
 ## 摘要
@@ -401,8 +393,6 @@ Count Anything 的点集输出天然规避了上述三个问题。
 ## Ch19.006 From AGI to ASI
 
 > 📊 Level ⭐⭐⭐ | 6.7KB | `entities/arxiv-2606-12683-from-agi-to-asi.md`
-
-# From AGI to ASI
 
 ## 摘要
 
@@ -742,7 +732,6 @@ FuXi-Alpha 的 Attention Map 可视化是理解推荐系统特征重要性的关
 
 > 📊 Level ⭐⭐⭐⭐ | 11.1KB | `entities/neurips-2026-pangram-controversy.md`
 
-# NeurIPS 2026 Pangram 事件：闭源 AI 检测器用于学术 desk-reject 的方法论争议
 > "如果一个较高的检测分数被用来判断作者的声明「不一致」，而这种「不一致」又被用来证明拒稿合理，那么检测器就不只是一个辅助工具了 —— 它实际上成了裁决过程中的决定性因素。"
 > —— Reddit `r/MachineLearning` 控诉帖
 
@@ -949,8 +938,6 @@ Einsia Navers Lab 的 AI4AI-Bench（arXiv:2608.20318）为"AI 能否设计更好
 ## Ch19.010 Qwen-AgentWorld: Language World Models for General Agents
 
 > 📊 Level ⭐⭐⭐⭐ | 7.4KB | `entities/qwen-agentworld-language-world-models.md`
-
-# Qwen-AgentWorld: Language World Models for General Agents
 
 ## 摘要
 
@@ -1552,7 +1539,7 @@ Ethan 指出了一个技术收敛点：**视频模型和 LLM 在长上下文管�
 - 与 [Claude Code 动态工作流多 Agent 编排](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-dynamic-workflows-multi-agent-orchestration.md) 互补：AI 编程的 Agent 化 → 视频生成的 Agent 化
 - 与 [Agent Harness Engineering Survey](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-engineering-survey-2026.md) 互补：Harness 在视频 Agent 时代的能力复用
 - 与 [画布 Agent 时代](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-canvas-agent-era-content-creation.md) + [AI 视频工具第三阶段](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-video-tools-third-stage-1779303117.md) 互补：第一手研究人员视角补全产品视角
-- 与 [Foundation Capital agent era 六洞察](ch04/291-foundation-capital-agent-era-six-insights.html) 互补：算力-人才飞轮的微观机制
+- 与 [Foundation Capital agent era 六洞察](ch04/292-foundation-capital-agent-era-six-insights.html) 互补：算力-人才飞轮的微观机制
 
 → [原文存档](https://mp.weixin.qq.com/s/dOKQToqmT5a-CrBLRDMQxA)
 

@@ -306,7 +306,7 @@ Claude Code 的很多工程决策都有源码注释支撑（"BQ 2026-03-10: 1,27
 - [Harness 状态边界与失败闭环](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-之后-状态边界与失败闭环-若飞.md)
 - [Factory Mission Multi-Agent 系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/multi-agent-mission-factory-luke-aiengineer.md)
 - [Claude Managed Agents 企业自托管](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-managed-agents-self-hosted-sandbox-enterprise.md)
-- [OpenClaw 多 Agent 团队实践](../ch04/357-openclaw-multi-agent-team-practice-v2.html)
+- [OpenClaw 多 Agent 团队实践](../ch04/358-openclaw-multi-agent-team-practice-v2.html)
 - [OpenClaw 完全指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
 - [OpenClaw 多智能体团队搭建经验](https://github.com/QianJinGuo/wiki-public/blob/main/entities/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验-v2.md)
 - [Headroom Context Compression](https://github.com/QianJinGuo/wiki-public/blob/main/entities/headroom-context-compression-agent-vibecoder.md)

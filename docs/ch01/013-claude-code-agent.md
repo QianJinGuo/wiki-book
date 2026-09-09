@@ -4,6 +4,8 @@
 
 → [原文存档](https://mp.weixin.qq.com/s/ub1ZOzpjImpVc8plcsMA4w)
 
+## 从 Claude Code 记忆系统看四层 Agent 记忆方案，一个比一个夯
+
 我先给 Claude Code 一条明确约束：
 
 > 这个项目只使用 PostgreSQL。后续涉及数据库选型、建表、部署或架构设计时，不要推荐 MySQL。

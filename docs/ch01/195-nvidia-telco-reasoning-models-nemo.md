@@ -8,8 +8,8 @@ Building Telco Reasoning Models for Autonomous Networks with NVIDIA NeMo | NVIDI
 ## 相关实体
 - [Nvidia Gemma 4 Edge Ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-gemma-4-edge-ai.md)
 - [Nvidia Multimodal Rag Knowledge Systems](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-multimodal-rag-knowledge-systems.md)
-- [Nvidia Agentic Ai Subsurface Engineering](../ch04/193-nvidia-agentic-ai-subsurface-engineering.html)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](../ch04/054-nvidia-secure-local-agent-nemoclaw-openclaw.html)
+- [Nvidia Agentic Ai Subsurface Engineering](../ch04/194-nvidia-agentic-ai-subsurface-engineering.html)
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](../ch04/056-nvidia-secure-local-agent-nemoclaw-openclaw.html)
 - [Nvidia Gpu Kernel Translation Cute Python Julia](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-gpu-kernel-translation-cute-python-julia.md)
 
 → [原文存档](https://developer.nvidia.com/blog/building-telco-reasoning-models-for-autonomous-networks-with-nvidia-nemo/)

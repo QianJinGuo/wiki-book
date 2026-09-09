@@ -34,8 +34,6 @@
 
 > 📊 Level ⭐ | 5.3KB | `entities/hermes-agent-self-evolving.md`
 
-# Hermes Agent 自进化机制源码解析
-
 > 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.75**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/hermes-agent-self-evolving.md`，一手来源仍见下方 sources。
 
@@ -72,8 +70,6 @@
 ## Ch02.002 Agent Skill 编写指南
 
 > 📊 Level ⭐ | 4.7KB | `entities/agent-skill-writing.md`
-
-# Agent Skill 编写指南
 
 > 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.85**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/agent-skill-writing.md`，一手来源仍见下方 sources。
@@ -115,8 +111,6 @@
 
 > 📊 Level ⭐ | 4.6KB | `entities/claude-code-prompt-context-harness.md`
 
-# Claude Code Prompt 与上下文 Harness 设计
-
 > 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.8**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/claude-code-prompt-context-harness.md`，一手来源仍见下方 sources。
 
@@ -124,7 +118,7 @@
 - [AgentScope Java Harness Framework 2.0 — 企业级 Agent 分布式场景的 Harness 实现 (Java 2.0 重大升级)](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentscope-java-harness-framework-enterprise-distributed.md) — AgentScope Java全版
 - [晓斌：从 People-Oriented 到 Agent-Oriented Infra —— 意图驱动 + 代码沉淀的进化体](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-oriented-infra-intent-driven-code-sedimentation.md) — Agent-Oriented Infra长文
 - [Coding Harness 工程本质：从 Pi 到 OpenClaw](https://github.com/QianJinGuo/wiki-public/blob/main/entities/pi-openclaw-coding-harness.md) — Harness八能力+五工程模式：Context像投影8441字rv9
-- [Anthropic N-days: Frontier Agent Vulnerability Research](ch04/313-anthropic-n-days-frontier-agent-vulnerability-research.html) — N-day研究
+- [Anthropic N-days: Frontier Agent Vulnerability Research](ch04/314-anthropic-n-days-frontier-agent-vulnerability-research.html) — N-day研究
 - [一篇看懂 Agent Harness 的结构！ — 12组件+7决策完整框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-12-components-7-decisions.md) — harness 12组件框架
 - [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-prompt-context-harness.md) — 三维度源码：23模块拼装+自适应分块+双层Memory
 - [GLM-5.2 is the step change for open agents](https://github.com/QianJinGuo/wiki-public/blob/main/entities/glm-52-is-the-step-change-for-open-agents.md) — Interconnects评GLM-5.2开放Agent跃迁
@@ -137,7 +131,7 @@
 - [Claude Code and What Comes Next](ch01/255-claude-code-and-what-comes-next.html) — 压缩/Skills/Subagents
 
 ## 工程实践
-- [Tencent Vibe Coding to Agentic Engineering Backend](ch04/304-tencent-vibe-coding-to-agentic-engineering-backend.html) — 全流程串终端会话实践
+- [Tencent Vibe Coding to Agentic Engineering Backend](ch04/305-tencent-vibe-coding-to-agentic-engineering-backend.html) — 全流程串终端会话实践
 - [高德广告工程 Harness/SDD 体系演进：从\](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gaode-sdd-harness-team-ai-coding-paradigm-ibjfu.md) — SDD+Harness团队级范式11119字
 - [Build a serverless image editing agent with Amazon Bedrock AgentCore harness](ch05/012-build-a-serverless-image-editing-agent-with-amazon-bedrock-a.html) — 图像编辑agent
 - [AWS Bedrock Agentcore Quality Optimization Flywheel](ch11/098-aws-bedrock-agentcore-quality-optimization-flywheel.html) — 质量飞轮
@@ -219,7 +213,7 @@ Anthropic 重新定义的不是"知识的格式"，是**"知识被调用的时�
 
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/enrich-your-datasets-with-business-context-migrating-from-legacy-topics-to-semantic-datasets-in-amazon-quick)
 
-# Enrich your datasets with business context: Migrating from legacy Topics to semantic datasets in Amazon Quick
+## Enrich your datasets with business context: Migrating from legacy Topics to semantic datasets in Amazon Quick
 
 If you’ve been managing [Amazon Quick](<https://aws.amazon.com/quick/>) legacy Topics alongside your datasets, you know the challenge: two assets that must stay perfectly synchronized, each with its own permissions, lineage, and versioning. Column synonyms drift. Calculated fields diverge. A rename in the dataset breaks the Legacy Topic silently. You can now use Amazon Quick to embed that business context directly into the dataset itself through **Dataset Enrichment** in the new data prep experience. Column descriptions, synonyms, calculated fields, custom instructions, and business rules all live alongside the data. Dataset Enrichment bakes business context directly into the dataset. Everything (permissions, semantics, AI context) travels with the data and is automatically inherited by anything built on top of it. One asset, one source of truth, one place to govern.
 
@@ -232,8 +226,6 @@ In this post, we walk through what Dataset Enrichment is, how it differs from le
 Legacy Topics provided the initial approach to adding business context to datasets in Amazon Quick Sight. It stored column synonyms, calculated fields, named entities, filters, and custom instructions in a separate object that sat on top of the dataset, linked but independently managed. Going forward, we classify existing Topics as legacy. The new version of Topics is being elevated to a _multi-dataset semantic layer_**.** A single-entry point for cross-dataset Q&A that lets business users and AI workflows query across multiple enriched datasets in one conversation. Dataset Enrichment is the foundation that makes this possible: each dataset must carry its own semantic context before Topics can unify them at a higher level.
 
 ### Key differences: Topics (legacy) vs. Dataset Enrichment (new data prep)
-
- 
 
 | **Legacy Topics** |
 
@@ -310,8 +302,6 @@ AI 的核心价值在于集成环节——需同时理解动画结构和业务 D
 ## Ch02.007 AINMM：存量生产级工程向 AI Native 演进的五级成熟度模型
 
 > 📊 Level ⭐⭐ | 5.9KB | `entities/ainmm-ai-native-maturity-model.md`
-
-# AINMM：存量生产级工程向 AI Native 演进的五级成熟度模型
 
 > 大淘宝技术（供给技术团队·木直）提出的 AI Native 能力成熟度模型，借鉴 CMMI 思想，定义了 5 个成熟度等级（ML1-ML5）和 5 大过程域，配套 AI Native Evolution Kit 工具，通过挽单系统实践验证。
 
@@ -1067,7 +1057,7 @@ before_tool_call阶段的参数校验不仅能防止错误，还能作为"AI行�
 ## 相关实体
 - [Openclaw Prompt Context Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-prompt-context-harness.md)
 - [From Prompt To Harness Claude Official](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-prompt-to-harness-claude-official.md)
-- [Agentcore Managed Harness](ch04/308-agentcore-managed-harness.html)
+- [Agentcore Managed Harness](ch04/309-agentcore-managed-harness.html)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 - [Hermes Agent Deep Dive Alibaba](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-deep-dive-alibaba.md)
 
@@ -1157,8 +1147,6 @@ System Prompt 与 Post-training 是两种截然不同的"行为约束注入方�
 ## Ch02.017 深度解析 Hermes Agent 如何实现自进化及其 Prompt / Context / Harness 的设计实践
 
 > 📊 Level ⭐⭐⭐ | 6.9KB | `entities/agent-tools-research.md`
-
-# 深度解析 Hermes Agent 如何实现自进化及其 Prompt / Context / Harness 的设计实践
 
 → [原文存档](https://mp.weixin.qq.com/s/2xFei8dMx99lc-iyrZZrww)
 
@@ -1262,7 +1250,7 @@ Hermes Agent 的 Skill 系统具有潜在的网络效应：
 ## 相关实体
 
 - Harness Engineering
-- [Karpathy: Vibe Coding 到 Agentic Engineering](ch04/105-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy: Vibe Coding 到 Agentic Engineering](ch04/276-karpathy-vibe-coding-agentic-engineering.html)
 - [Claude Code 源码中的 Agent Harness 构建之道](https://github.com/QianJinGuo/wiki-public/blob/main/entities/深入理解-claude-code-源码中的-agent-harness-构建之道.md)
 - [Claude Code 源码核心机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/两万字详解claude-code源码核心机制.md)
 - [Harness Engineering 概念解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md)
@@ -1274,8 +1262,6 @@ Hermes Agent 的 Skill 系统具有潜在的网络效应：
 ## Ch02.018 Codex 上下文工程 — Prompt Layout + Append-only + Latent Space Moat（LastWhisper 解读）
 
 > 📊 Level ⭐⭐⭐⭐ | 19.7KB | `entities/codex-context-engineering-lastwhisper-thinking-in-context.md`
-
-# Codex 上下文工程 — Prompt Layout + Append-only + Latent Space Moat（LastWhisper 解读）
 
 LastWhisper（北大计算机硕士）"Thinking in Context" 系列开篇，对 OpenAI 工程博客《Unrolling the Codex agent loop》的深度解读。聚焦**世界级 Coding Agent 中的前沿上下文工程实践**，提出两条核心观察：
 
@@ -1681,8 +1667,6 @@ Schema 语义没变，但 **bytes 稳定了**。
 ## Ch02.020 视觉 AI 的下一前沿是代码：a16z 关于视觉生成范式转移的论述
 
 > 📊 Level ⭐⭐⭐⭐ | 14.3KB | `entities/a16z-com-the-next-frontier-of-visual-ai-is-code.md`
-
-# 视觉 AI 的下一前沿是代码：a16z 关于视觉生成范式转移的论述
 
 → [原文存档](https://a16z.com/the-next-frontier-of-visual-ai-is-code/)
 
@@ -3009,8 +2993,8 @@ BashTool 的 prompt 已经复杂到像高风险工具专用操作 SOP（定义 g
 - [SkillClaw](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skillclaw.md)
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-skill-system-winty.md)
 - [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-prompt-context-harness.md)
-- [AI Agent 记忆系统架构](ch04/114-how-ai-agent-memory-works.html)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/304-tencent-vibe-coding-to-agentic-engineering-backend.html)
+- [AI Agent 记忆系统架构](ch04/115-how-ai-agent-memory-works.html)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](ch04/305-tencent-vibe-coding-to-agentic-engineering-backend.html)
 - [Agent Memory System Design](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-system-design.md)
 - [KAIROS — Claude Code 常驻协作范式](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/kairos-claude-code-paradigm.md)
 - [Thin Harness Fat Skills](https://github.com/QianJinGuo/wiki-public/blob/main/entities/thin-harness-fat-skills.md)

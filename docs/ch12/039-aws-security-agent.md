@@ -14,6 +14,8 @@ source_published: 2026-05-27T08:26:50Z
 
 ## 飞来汇借助 AWS Security Agent 构建跨境支付应用的智能安全防线
 
+## 飞来汇借助 AWS Security Agent 构建跨境支付应用的智能安全防线
+
 摘要：飞来汇（Flyway）是一家全栈式跨境服务数字科技平台，专注于跨境资金流痛点，为出海企业提供”收、付、融、兑”全链路解决方案。我们将整套支付与清结算服务部署在亚马逊云科技（AWS）全球基础设施之上，依托 AWS 先进的安全服务与合规认证，打造更快、更简单、更安全的跨境支付体验。
 作为 AWS Security Agent 的早期采用者，飞来汇将其无缝集成到 GitHub 代码仓库与 CI/CD 流程中，构建了一套”全量渗透测试 + 增量代码扫描”的双轮驱动应用安全方案，将原本以”周”为单位的渗透测试节奏压缩到”小时”级别，并在每一次代码提交后的几分钟内即可获得安全反馈。本文将分享飞来汇使用 AWS Security Agent 的真实实践与体感数据，希望为同样关注 AppSec 体系建设的金融科技与出海企业客户提供一些有价值的落地经验。
 
@@ -349,7 +351,7 @@ AWS Security Agent 的 Cross-Account VPC 能力解决了金融科技公司长期
 
 ## 相关实体
 - [Data For Ai明其所耗知其所因让每一分 Token 消耗都可量化的全栈实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/data-for-ai明其所耗知其所因让每一分-token-消耗都可量化的全栈实践.md)
-- [Powering Agentic Ai Sales Strategy With Amazon Bedrock Agent](../ch04/350-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.html)
+- [Powering Agentic Ai Sales Strategy With Amazon Bedrock Agent](../ch04/351-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.html)
 - [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-aws-smgs-uses-an-ai-powered-conversational-assistant-to-.md)
 - [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/滴滴国际化客服质检智能化之路基于-amazon-bedrock-的多语种多业务线质检实践.md)
 - [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](https://github.com/QianJinGuo/wiki-public/blob/main/entities/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md)

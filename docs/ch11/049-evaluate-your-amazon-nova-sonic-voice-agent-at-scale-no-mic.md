@@ -4,6 +4,8 @@
 
 > **Source archive**: [原文存档](https://aws.amazon.com/blogs/machine-learning/evaluate-your-amazon-nova-sonic-voice-agent-at-scale-no-microphone-required)
 
+## Evaluate your Amazon Nova Sonic voice agent at scale, no microphone required
+
 Voice agents are transforming how businesses interact with customers, handling appointment bookings, order inquiries, account management, and more through natural spoken conversation. But as these agents grow more capable, a fundamental challenge emerges: how do you test them?
 
 Unlike text-based chatbots where you can script inputs and assert outputs, voice agents operate in a fundamentally different paradigm. They stream audio bidirectionally, respond non-deterministically, maintain context across multi-turn conversations, and use tools in real time. The only way most teams test today is to have someone physically talk to the system and listen to what comes back. That’s slow, inconsistent, and doesn’t scale.

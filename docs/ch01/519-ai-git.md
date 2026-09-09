@@ -380,7 +380,7 @@ but branch -a feat/refresh-token feat/token-revocation
 - [Code As Agent Harness Survey](https://github.com/QianJinGuo/wiki-public/blob/main/entities/code-as-agent-harness-survey.md)
 - [我用 Skillmd 做了一个简历生成器](https://github.com/QianJinGuo/wiki-public/blob/main/entities/我用-skillmd-做了一个简历生成器.md)
 - [Cong 30 Fen Zhong Shou Gu Agent Dao Harness Cheng Wei Xin Hou Duan](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cong-30-fen-zhong-shou-gu-agent-dao-harness-cheng-wei-xin-hou-duan.md)
-- [Tencent Vibe Coding To Agentic Engineering Backend](../ch04/304-tencent-vibe-coding-to-agentic-engineering-backend.html)
+- [Tencent Vibe Coding To Agentic Engineering Backend](../ch04/305-tencent-vibe-coding-to-agentic-engineering-backend.html)
 
 → [原文存档](https://mp.weixin.qq.com/s/70hz6sYNwxErRkP7dkY8-Q)
 

@@ -8,6 +8,8 @@
 
 → [原文存档](https://netflixtechblog.com/scaling-camera-file-processing-at-netflix-6dab2b1e80be?source=rss----2615bd06b42e---4)
 
+## Scaling Camera File Processing at Netflix
+
 _Orchestrating Media Workflows Through Strategic Collaboration_
 
 Authors: [Eric Reinecke](https://www.linkedin.com/in/ericreinecke/), [Bhanu Srikanth](https://www.linkedin.com/in/bhanusrikanth/)

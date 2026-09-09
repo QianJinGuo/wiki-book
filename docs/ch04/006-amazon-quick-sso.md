@@ -4,6 +4,8 @@
 
 → [原文存档](https://aws.amazon.com/cn/blogs/china/amazon-quick-sso-integration-guide)
 
+## Amazon Quick 飞书SSO对接指南
+
 摘要：Amazon Quick 是 AWS 推出的 AI 工作助手，能够将问题转化为答案、将答案转化为行动。它连接企业内的应用、工具和数据，支持自然语言查询、工作流自动化、文档生成、数据可视化以及跨系统的智能代理任务。
   
 **目录**

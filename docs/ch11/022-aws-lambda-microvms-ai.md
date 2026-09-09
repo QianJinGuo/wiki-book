@@ -4,6 +4,8 @@
 
 → [原文存档](https://aws.amazon.com/cn/blogs/china/aws-launch-lambda-microvms-ai-serverless-security-environment)
 
+## AWS 正式发布 Lambda MicroVMs：面向 AI 时代的无服务器安全代码执行环境
+
 摘要：当用户和 AI 生成的代码越来越多，一个绕不开的问题摆在每个平台面前：这些不可信的代码，到底该在哪里安全地运行？2026 年 6 月 22 日，AWS 给出了新答案——Lambda MicroVMs。
   
 **目录**

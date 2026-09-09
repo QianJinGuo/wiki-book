@@ -36,8 +36,6 @@ RAG 不只是"检索 + 拼接"——它是知识管理的入口。
 
 > 📊 Level ⭐ | 4.8KB | `entities/skillcorpus-consolidating-open-skill-ecosystem.md`
 
-# SkillCorpus: 大规模社区 Skill 生态的筛选、评测与边界分析
-
 > 首个端到端框架：聚合开源 SKILL.md 生态，提纯为 96,401 标准化技能，在真实 Agent 任务上评测社区技能的实际价值并界定其边界。
 
 ## 概览
@@ -107,7 +105,6 @@ SkillCorpus 是由 EverMind、盛大集团与北京大学联合提出的框架�
 
 > 📊 Level ⭐⭐ | 7.7KB | `entities/实践教程真实ai客服落地全流程意图识别混合检索到数据飞轮.md`
 
-# 【实践教程】真实AI客服落地全流程：意图识别、混合检索到数据飞轮
 > AI训练营  ** 9期  ** ，  ** 今日  ** 开班，欢迎咨询
 书接上文： [ 《实践：AI客服实战方法论》 ](<https://mp.weixin.qq.com/s?__biz=Mzg2MzcyODQ5MQ==&mid=2247498987&idx=1&sn=5e3c5dc641b9eb94734ee27af0ad3381&scene=21#wechat_redirect>)
 之前我们详细介绍了  ** 空气小猪 AI 客服  ** 是如何一步步做出来的，但后续无论学员还是粉丝都依旧有很多的问题，所以最近几天我们在连续做 RAG 的课题。
@@ -191,9 +188,9 @@ NVIDIA Nemotron Nano 2 VL (12B) VLM 将视觉推理引入 RAG 管道，使系统
 
 ## 相关实体
 - [Nvidia Nemotron 3 Agents Rag Voice Safety](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-nemotron-3-agents-rag-voice-safety.md)
-- [Nvidia Extreme Co Design Agentic Systems](ch04/093-nvidia-extreme-co-design-agentic-systems.html)
-- [Nvidia Agentic Ai Subsurface Engineering](ch04/193-nvidia-agentic-ai-subsurface-engineering.html)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/054-nvidia-secure-local-agent-nemoclaw-openclaw.html)
+- [Nvidia Extreme Co Design Agentic Systems](ch04/094-nvidia-extreme-co-design-agentic-systems.html)
+- [Nvidia Agentic Ai Subsurface Engineering](ch04/194-nvidia-agentic-ai-subsurface-engineering.html)
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/056-nvidia-secure-local-agent-nemoclaw-openclaw.html)
 - [Nvidia Telco Reasoning Models Nemo](ch01/195-nvidia-telco-reasoning-models-nemo.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
 
@@ -397,15 +394,13 @@ Amazon Nova MME 的 `GENERIC_INDEX`（文档索引用）和 `GENERIC_RETRIEVAL`�
 - [RAG技术框架的演进方向](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag技术框架的演进方向.md) — Classic → Graph → Agentic RAG 演进路线，本文为其经典 RAG 打法提供实证对照
 - [AFAC2026 金融 AI Agent 竞赛](https://github.com/QianJinGuo/wiki-public/blob/main/entities/afac2026-financial-ai-agent-competition-harness.md) — 另一金融 AI 竞赛方案，可对比"RAG 问答"与"Agent 编排"两条路线
 - [RAG 分块-嵌入-重排全链路](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-chunk-embedding-rerank-pipeline.md) — 与本文混合检索+重排设计互补的管道细节
-- [Stripe 金融合规 AI Agent 实践](ch04/329-stripe-financial-compliance-ai-agent-production-lessons.html) — 同为金融合规场景，可从生产侧视角印证本文的可追溯、可审计原则
+- [Stripe 金融合规 AI Agent 实践](ch04/330-stripe-financial-compliance-ai-agent-production-lessons.html) — 同为金融合规场景，可从生产侧视角印证本文的可追溯、可审计原则
 
 ---
 
 ## Ch10.006 知识库构建方法论
 
 > 📊 Level ⭐⭐⭐ | 8.0KB | `entities/knowledge-base-construction.md`
-
-# 知识库构建方法论
 
 ## 摘要
 
@@ -950,7 +945,7 @@ RAG 系统的效果瓶颈不在模型，而在**入库质量**。同样的 Embed
 - [RAG 全链路技术详解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-full-pipeline-taobao.md)
 - [RAG 分块向量化召回重排流水线](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-chunk-embedding-rerank-pipeline.md)
 - [向量库 vs 知识图谱：RAG 的进阶路径](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-vector-knowledge-graph-ontology.md)
-- [AI Agent 记忆系统工作原理](ch04/114-how-ai-agent-memory-works.html)
+- [AI Agent 记忆系统工作原理](ch04/115-how-ai-agent-memory-works.html)
 
 ## 深度分析
 
@@ -1383,8 +1378,6 @@ V2 的评估方法论强调"围绕决策做"而非"功能全覆盖"。BM25、向
 
 > 📊 Level ⭐⭐⭐⭐ | 10.9KB | `entities/mragent-memory-reconstructed-not-retrieved-nus-icml2026.md`
 
-# MRAgent：记忆是重建的，不是检索的
-
 新加坡国立大学（NUS）在 ICML 2026 提出 MRAgent，核心主张：**记忆访问应该跟着推理一起走**——每发现一条新证据，就改一次下一步要查什么。在 LoCoMo 上整体得分相对最强基线提升 23%，LongMemEval 提升 32%，Token 消耗仅 A-Mem 的 1/5。
 
 → [原文存档](https://mp.weixin.qq.com/s/w6LbWyhlG9ZZxq4DCbDc7w)
@@ -1540,8 +1533,6 @@ Single-hop 涨幅温和（83→91），Multi-hop 跳幅巨大（75→90）。这
 ## Ch10.013 Instacart 广告检索架构演进：从 BERT 打分到生成式 token-by-token 检索
 
 > 📊 Level ⭐⭐⭐⭐ | 8.3KB | `entities/instacart-ads-retrieval-generative-token-by-token.md`
-
-# Instacart 广告检索架构演进：从 BERT 打分到生成式 token-by-token 检索
 
 ## 摘要
 

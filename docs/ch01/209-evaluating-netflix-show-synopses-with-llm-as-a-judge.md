@@ -17,6 +17,8 @@ source_published: 2026-04-10
 
 ---
 
+## Evaluating Netflix Show Synopses with LLM-as-a-Judge
+
 by [Gabriela Alessio](<https://www.linkedin.com/in/gabrielaalessio/>), [Cameron Taylor](<https://www.linkedin.com/in/cameronntaylor/>), and [Cameron R. Wolfe](<https://www.linkedin.com/in/cwolferesearch/>)
 
 ### Introduction

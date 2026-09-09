@@ -34,8 +34,6 @@ CPU 缓存的类比特别有启发性：L1（当前上下文）→ L2（会话�
 
 > 📊 Level ⭐ | 5.6KB | `entities/agent-memory-leaderboard-aml-2026.md`
 
-# AML（Agent Memory Leaderboard）：机制级 Agent 记忆评测榜单
-
 ## 核心定位
 
 **AML（Agent Memory Leaderboard，记忆之巅排行榜）2026-08-12 发布首期结果**，由清华、北大、人大、上海交大、浙大、复旦、中科大、南大、上海人工智能实验室、中科院自动化所等国内外数十所高校与研究机构联合主办，Datawhale 参与——是业内首个关注 Agent 记忆系统的**机制级榜单**。上线十天内 136 个团队注册参评，官方站点点击量突破 20 万次。
@@ -92,8 +90,6 @@ AML 首期榜单发布后 48 小时内，GitHub、Hugging Face 及 Twitter/X 等
 
 > 📊 Level ⭐ | 5.0KB | `entities/hermes-agent-memory-system.md`
 
-# Hermes Agent 记忆系统 vs OpenClaw 记忆观
-
 > 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.8**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/hermes-agent-memory-system.md`，一手来源仍见下方 sources。
 
@@ -118,7 +114,7 @@ AML 首期榜单发布后 48 小时内，GitHub、Hugging Face 及 Twitter/X 等
 - [Claude Code 源码深度解析（13 核心机制）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-source-deep-dive-warrior.md) — 13机制rv10
 - [Claude Code Openclaw Memory Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-openclaw-memory-comparison.md) — 记忆系统对比rv9
 - [MemOS Hermes 记忆插件](https://github.com/QianJinGuo/wiki-public/blob/main/entities/memos-hermes-plugin.md) — MemOS插件：智能去重+混合检索7225字
-- [Openclaw Multi Agent Team Practice V2](ch04/357-openclaw-multi-agent-team-practice-v2.html) — 七Agent花园团队：专精胜于全能12180字全版
+- [Openclaw Multi Agent Team Practice V2](ch04/358-openclaw-multi-agent-team-practice-v2.html) — 七Agent花园团队：专精胜于全能12180字全版
 - [MFS：zilliztech 的 Agent 统一上下文 harness，一套动词打通 20+ 数据源](https://github.com/QianJinGuo/wiki-public/blob/main/entities/zilliztech-mfs-open-tag-claude-tag-shuge-2026.md) — 统一动词文件树寻址
 - [Claude Code 从 Demo 到产线 · 企业 Harness 工程化的 8 道关卡（黄佳/咖哥 CSDN）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-demo-to-production-8-gates-huang-jia-csdn-2026.md) — 8道关卡清单
 - [阿里云 MSE AI 任务调度 + Agent Sandbox：动态休眠/唤醒 OpenClaw Agent 成本下降 90%+](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aliyun-mse-ai-task-scheduling-agent-sandbox-cost-90-percent.md) — 休眠唤醒短条borderline
@@ -133,8 +129,6 @@ AML 首期榜单发布后 48 小时内，GitHub、Hugging Face 及 Twitter/X 等
 ## Ch06.003 Claude Code Agent Memory Systems — L0~L3 四层记忆方案
 
 > 📊 Level ⭐ | 4.2KB | `entities/claude-code-agent-memory-four-levels-analysis.md`
-
-# Claude Code Agent Memory Systems — L0~L3 四层记忆方案
 
 > 文章 "从 Claude Code 记忆系统看四层 Agent 记忆方案" (2026-07-07) 的实体整理。以 Claude Code 记忆体系为起点，系统拆解 Agent 记忆的 4 层演化方案。
 
@@ -215,7 +209,7 @@ L3 Cognitive    → "Agent 自己管自己的记忆"
 
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/powering-scientific-discovery-byokg-and-graphrag-for-intelligent-pharmaceutical-research)
 
-# Powering scientific discovery: BYOKG and GraphRAG for intelligent pharmaceutical research
+## Powering scientific discovery: BYOKG and GraphRAG for intelligent pharmaceutical research
 
 In pharmaceutical research, scientists face a fundamental challenge: accessing and connecting the vast amount of scientific knowledge scattered across disparate systems. From published literature and internal lab notes to genomics databases, critical insights remain trapped in silos, making it difficult for researchers to form comprehensive connections and generate promising hypotheses. This fragmentation slows down the drug discovery process. It also risks valuable institutional knowledge being lost as researchers transition, ultimately affecting the industry’s ability to research and develop efficiently. The need for a solution that can intelligently bridge these knowledge gaps while maintaining scientific integrity has become increasingly important.
 
@@ -444,7 +438,7 @@ FTS5 的关键词搜索 + SQLite 的 session 聚合 + parent_session_id 的关�
 ## 相关实体
 
 - [Hermes Agent 三级 Memory 架构解析（One掌柜视角）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-three-layer-memory-one.md) — 同一作者的另一篇分析
-- [AI Agent 记忆系统架构](ch04/114-how-ai-agent-memory-works.html) — Agent 记忆系统的通识性框架
+- [AI Agent 记忆系统架构](ch04/115-how-ai-agent-memory-works.html) — Agent 记忆系统的通识性框架
 - [17种Agent架构演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/17-agent-architectures-evolution.md) — 记忆设计在 Agent 演化中的位置
 
 - [Hermes Agent Core Architecture Self Evolution](https://github.com/QianJinGuo/wiki-public/blob/main/queries/hermes-agent-core-architecture-self-evolution.md)
@@ -477,8 +471,6 @@ FTS5 的关键词搜索 + SQLite 的 session 聚合 + parent_session_id 的关�
 ## Ch06.007 AI 的形状：Jagged Frontier·Bottleneck·Reverse Salient（Mollick）
 
 > 📊 Level ⭐⭐⭐ | 12.2KB | `entities/jagged-ai-frontier-mollick.md`
-
-# AI 的形状：Jagged Frontier·Bottleneck·Reverse Salient（Mollick）
 
 > 2026-06-07 引用自 Ethan Mollick《The Shape of AI: Jaggedness, Bottlenecks and Salients》，One Useful Thing，2025-12-20。
 
@@ -819,8 +811,6 @@ OKF 不是要替代 Karpathy Wiki / Obsidian Wiki / GBrain，而是**给它们�
 
 > 📊 Level ⭐⭐⭐ | 10.6KB | `entities/how-we-built-cognitive-memory-for-agentic-systems.md`
 
-# CrewAI Cognitive Memory: 5 认知操作的工程化设计
-
 > 来源：[原文存档](https://blog.crewai.com/how-we-built-cognitive-memory-for-agentic-systems)
 
 CrewAI 2026-03 在 [Cognitive Memory for Agentic Systems](https://blog.crewai.com/how-we-built-cognitive-memory-for-agentic-systems) 公开的生产级 agentic memory 架构——基于对数十亿次 agentic 执行的观察，将 memory 重新建模为"认知过程"而非"存储 + 检索"，用 LanceDB 做底层存储，并嵌入到 Agent / Crew / Flow 三层 API 中。
@@ -914,7 +904,7 @@ CrewAI 的"不同 agent 访问同一 memory 但有不同 recall 权重"设计是
 
 ## 相关实体
 - [Memory Agent Systems Cobanov](https://github.com/QianJinGuo/wiki-public/blob/main/entities/memory-agent-systems-cobanov.md)
-- [Stripe Sessions 2026 Ai Agents](ch04/188-stripe-sessions-2026-ai-agents.html)
+- [Stripe Sessions 2026 Ai Agents](ch04/189-stripe-sessions-2026-ai-agents.html)
 - [Production Harness 12 Components Framework Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/production-harness-12-components-framework-comparison.md)
 - [Hermes Self Evolution Closed Loop Skill Reuse Winty](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-self-evolution-closed-loop-skill-reuse-winty.md)
 - [Agent Memory Architecture Past Influence Future Ruofei](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture-past-influence-future-ruofei.md)
@@ -1007,7 +997,7 @@ Embedding 擅长文本相似度，但无法处理：
 ## 相关实体
 - [AgentMemory — Coding Agent 本地记忆](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentmemory-coding-agent-local-memory.md) — Agent 记忆工程实践
 - [Hermes Agent 三层 Memory](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-three-layer-memory-one.md) — 工程实现视角
-- [AI Agent 记忆系统架构](ch04/114-how-ai-agent-memory-works.html)
+- [AI Agent 记忆系统架构](ch04/115-how-ai-agent-memory-works.html)
 - [上下文工程：三种 Agent Memory 方案对比实验](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-engineering-three-memory-paradigms.md)
 - [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/karpathy-llm-wiki-v2.md)
 - [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-wiki-obsidian-wiki-gbrain-self-organization-self-evolution.md)
@@ -1082,8 +1072,6 @@ Embedding 擅长文本相似度，但无法处理：
 ## Ch06.012 注意力塌缩与上下文管理
 
 > 📊 Level ⭐⭐⭐ | 8.3KB | `entities/attention-collapse-context-management.md`
-
-# 注意力塌缩与上下文管理
 
 ## 摘要
 
@@ -1253,8 +1241,6 @@ Context建设落在数据工程、AI产品、治理三个团队的交叉地带�
 
 > 📊 Level ⭐⭐⭐ | 7.9KB | `entities/llm-wiki-knowledge-management.md`
 
-# LLM Wiki 知识管理
-
 ## 摘要
 
 LLM Wiki 知识管理是以大语言模型为"维护者"的知识管理范式：由 LLM 承担内容提取、摘要生成、关系推断与矛盾检测等原本依赖人工的维护工作，使 Markdown 文件树成为可查询、可演进、Agent 可读的知识资产。与 RAG 相比，它把知识综合从"查询时"提前到"入库时"，让知识从无状态的碎片检索升级为有状态的持续沉淀。
@@ -1386,8 +1372,6 @@ Claude Code团队成员Thariq揭示了1M上下文时代最核心的工程挑战�
 ## Ch06.016 Skill 编排的 6 种依赖关系
 
 > 📊 Level ⭐⭐⭐ | 3.1KB | `entities/skill-orchestration-6-dependencies.md`
-
-# Skill 编排的 6 种依赖关系
 
 ## 摘要
 
@@ -2382,7 +2366,7 @@ Reflexion / ExpeL / ReMe 都在回答：经历如何不只是被保存，而是�
 ## 相关实体
 - [Context Engineering Three Memory Paradigms](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-engineering-three-memory-paradigms.md)
 - [Agent Memory Architecture Essence](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture-essence.md)
-- [How Ai Agent Memory Works](ch04/114-how-ai-agent-memory-works.html)
+- [How Ai Agent Memory Works](ch04/115-how-ai-agent-memory-works.html)
 - [Agent Memory Architecture Past Influence Future Ruofei](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture-past-influence-future-ruofei.md)
 - [Agent Memory Architecture Ruofei](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture-ruofei.md)
 
@@ -2391,8 +2375,6 @@ Reflexion / ExpeL / ReMe 都在回答：经历如何不只是被保存，而是�
 ## Ch06.021 Qoder 团队知识引擎
 
 > 📊 Level ⭐⭐⭐⭐ | 10.3KB | `entities/qoder-team-knowledge-engine.md`
-
-# Qoder 团队知识引擎
 
 > [!summary] 核心洞察
 > 真实团队的问题不是模型能力不够，而是组织记忆在流失。Qoder 的"编译式知识"架构将工程知识编译为两种产物：Knowledge Card（给 Agent，短密结构化）+ Repo Wiki（给人，连贯叙事），通过 commit/diff 驱动和 Memory Agent 双链路自迭代，让知识底座成为 Harness 自进化的关键组件。
@@ -2524,8 +2506,6 @@ Qoder 明确指出"团队规范混乱时，自动化会放大坏的习惯"。如
 ## Ch06.022 腾讯云Agent Memory：Mermaid无限画布×上下文卸载
 
 > 📊 Level ⭐⭐⭐⭐ | 8.0KB | `entities/tencentdb-agent-memory-context-offloading.md`
-
-# 腾讯云Agent Memory：Mermaid无限画布×上下文卸载
 
 腾讯云开源的 Agent 记忆管理方案，核心思路是"短期记忆压缩 = 上下文卸载 + Mermaid 无限画布"。通过将工具结果卸载到外部文件系统，仅在上下文保留 Mermaid 结构图作为导航入口，实现 Token 节省最高 61.38%、成功率提升最高 51.52%。GitHub: https://github.com/Tencent/TencentDB-Agent-Memory
 
@@ -2705,7 +2685,7 @@ D2L 的方向（将知识编码进模型权重）逻辑上可行，当前瓶颈�
 - **专有模型**：针对文档编码任务训练专用 encoder-decoder，直接输出权重而非通过 hypernetwork 映射
 
 ## 相关实体
-- [AI Agent 记忆系统架构](ch04/114-how-ai-agent-memory-works.html)
+- [AI Agent 记忆系统架构](ch04/115-how-ai-agent-memory-works.html)
 - [LLM Wiki 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-wiki-architecture.md)
 - [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-wiki-obsidian-wiki-gbrain-self-organization-self-evolution.md)
 - [hermes-agent-self-evolving-source-analysis](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-self-evolving-source-analysis.md)
@@ -3955,8 +3935,6 @@ Honcho 这类外部 provider 引入深层用户建模，但带来了额外的治
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 22.0KB | `entities/agentmemory-source-analysis-coding-agent-local-memory.md`
 
-# AgentMemory 源码分析：给 Coding Agent 装上本地长期记忆
-
 > 来源：AI贺贺，2026-05-19
 > GitHub：rohitg00/agentmemory
 > npm：@agentmemory/agentmemory@0.9.20
@@ -4582,8 +4560,6 @@ M3-Agent 的双重记忆设计（Episodic + Semantic）对视频/音频理解场
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 17.9KB | `entities/tencentdb-agent-memory-hierarchical.md`
 
-# TencentDB Agent Memory：符号化短期记忆+分层式长期记忆
-
 ## 摘要
 
 腾讯开源的 TencentDB Agent Memory，解决长程 Agent 的记忆管理问题。核心设计：短期记忆用压缩索引结构（非简单摘要）卸载工具日志，长期记忆用 L0-L3 语义金字塔（Conversation→Atom→Scenario→Persona）实现跨会话用户理解。WideSearch 成功率 +17pp，Token 降 61%。
@@ -4964,8 +4940,6 @@ Agent harness 正在朝同一个方向移动。目标不是向模型展示一切
 ## Ch06.031 Knowledge Base Layer Architecture: From RAG to Agent-native Knowledge Context Layer
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 15.5KB | `entities/pyramid-kb-knowledge-context-layer-banya.md`
-
-# Knowledge Base Layer Architecture: From RAG to Agent-native Knowledge Context Layer
 
 → [原文存档](https://mp.weixin.qq.com/s/_IlrlfGpPa42VhTaKNAj6A)
 

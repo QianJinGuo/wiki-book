@@ -33,8 +33,6 @@
 
 > 📊 Level ⭐ | 8.3KB | `entities/diffusiongemma-transparency-audit-lesswrong.md`
 
-# How transparent is DiffusionGemma (and why it matters)
-
 > 原文存档：[原文存档](https://www.lesswrong.com/posts/zoYXpdaMgFT43Wc24/how-transparent-is-diffusiongemma-and-why-it-matters)
 
 ## 核心内容
@@ -160,8 +158,6 @@ TimeLens2-4B 平均超过 Qwen3.5-397B-A17B 约 7.5 个 mIoU 点，在全部七�
 
 > 📊 Level ⭐ | 3.4KB | `entities/mistral-shieldstral-policy-adaptive-safety-classifier.md`
 
-# Mistral Shieldstral — Policy-Adaptive Multimodal Safety Classifier
-
 > **Background**：Mistral AI 发布 Shieldstral（3B open-weights 多模态安全分类器），核心创新是把内容审核从「固定有害类别 taxonomy」重构为「policy-adaptive question-answering」——模型在推理时接受自然语言策略（如"这段内容是否煽动针对受保护群体的暴力？"），返回校准安全分数，无需针对每个部署上下文重训。
 
 ## 核心创新：Policy-Adaptive QA 范式
@@ -260,8 +256,6 @@ SunFinance在OCR+Claude之后加入了ID号码格式化验证、日期标准化�
 ## Ch17.005 Pixelle-Video — 阿里国际 AIDC 开源的全自动视频生成 pipeline 装配工
 
 > 📊 Level ⭐⭐⭐ | 14.1KB | `entities/pixelle-video-aidc-ali-international-2026.md`
-
-# Pixelle-Video — 阿里国际 AIDC 开源的全自动视频生成 pipeline 装配工
 
 > [!quote] 一句话定义
 > **Pixelle-Video 不是一个视频生成模型,而是一个把 LLM + 图像/视频生成 + TTS + ffmpeg 串起来的 pipeline 编排框架**。输入一句话,吐出成品视频。Apache 2.0,GitHub 2.2万 Star,由阿里国际 AI 团队(AIDC-AI)开发。
@@ -621,7 +615,6 @@ VGGSound-Omni 基准引入的画外音（Off-screen）专属评测赛道，为�
 
 > 📊 Level ⭐⭐⭐ | 11.2KB | `entities/gemma-4-12b-google-multimodal-local.md`
 
-# Gemma 4 12B：Google 多模态本地模型 —— 扔掉编码器
 > "**把原本需要高端服务器才能跑的多模态智能，装进你的笔记本电脑里。**"
 >
 > "**这种统一、无编码器的架构，带来的直接好处是：延迟更低，内存更省。**"
@@ -794,8 +787,6 @@ VGGSound-Omni 基准引入的画外音（Off-screen）专属评测赛道，为�
 ## Ch17.009 ICRDrag：ECCV 2026 首个上下文区域拖拽图像编辑模型
 
 > 📊 Level ⭐⭐⭐ | 9.6KB | `entities/icrdrag-context-region-drag-eccv-2026-shanghai-jiaotong.md`
-
-# ICRDrag：ECCV 2026 首个上下文区域拖拽图像编辑模型
 
 ## 摘要
 
@@ -1103,8 +1094,6 @@ NEO-Unify 的成功验证了"原生统一"路线的可行性，为多模态大�
 
 > 📊 Level ⭐⭐⭐ | 8.5KB | `entities/netflix-controllable-ai-video-editing-vera-void.md`
 
-# Netflix 可控 AI 视频编辑：Vera 与 VOID 模型
-
 > **Background**：Netflix Tech Blog 发布的早期研究探索，介绍了两个针对专业视频后期制作场景的 AI 编辑模型——Vera（元素添加/替换）和 VOID（物体移除）。核心创新在于"只改该改的"（pixel-precise editing），避免现有方法"重新生成整个视频"导致的连带破坏。
 
 ## 核心问题：现有视频编辑方法的两大缺陷
@@ -1285,8 +1274,6 @@ MolmoMotion 建立在 Molmo 2 视觉语言模型之上，利用其跨模态理�
 
 > 📊 Level ⭐⭐⭐ | 6.6KB | `entities/flat-feedforward-latent-triangle-splatting.md`
 
-# FLAT: Feedforward Latent Triangle Splatting
-
 > **Background**: Google Research + Oxford VGG + TU Munich, 2026-06-24. FLAT 提出了一种全新方法：将视频扩散模型的压缩 latent 直接映射为表面三角形 splat，单次前向传播即可完成 3D 场景重建，无需多步优化。
 
 ## 摘要
@@ -1403,8 +1390,6 @@ FLAT 并非完全取代 3DGS，而是解决其特定弱点：
 
 > 📊 Level ⭐⭐⭐ | 6.1KB | `entities/multimodal-ai-searchable-aerial-imagery-aws.md`
 
-# Multimodal AI for Searchable Aerial Imagery at Scale
-
 > 将航空影像库转化为自然语言可搜索知识库的完整技术方案：多模态嵌入 + LLM 图像描述 + 向量检索。
 
 ## 核心问题
@@ -1487,8 +1472,6 @@ AWS GenAIIC 与 Vexcel 的合作模式值得借鉴：先建评估框架（基于
 ## Ch17.016 Moebius: 0.2B Lightweight Image Inpainting with 10B-Level Performance
 
 > 📊 Level ⭐⭐⭐ | 5.9KB | `entities/moebius.md`
-
-# Moebius: 0.2B Lightweight Image Inpainting with 10B-Level Performance
 
 → [原文存档](https://hustvl.github.io/Moebius/)
 

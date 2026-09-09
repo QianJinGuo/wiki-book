@@ -6,7 +6,7 @@
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/2026-llm-rl-algorithms-deeplog-imba-ppo-dpo-grpo-marl.md`，一手来源仍见下方 sources。
 
 ## 机制与论文
-- [The Bitter Lesson versus The Garbage Can](../ch04/176-the-bitter-lesson-versus-the-garbage-can.html) — 苦味教训对组织流程路径
+- [The Bitter Lesson versus The Garbage Can](../ch04/177-the-bitter-lesson-versus-the-garbage-can.html) — 苦味教训对组织流程路径
 - [Scenethesis（ICLR 2026）英伟达 & 普渡大学用 Agent 闭环实现文生 3D](https://github.com/QianJinGuo/wiki-public/blob/main/entities/iclr-2026-英伟达-普渡大学用agent闭环实现文生3d.md) — Scenethesis四阶段闭环，碰撞率6.1%→0.8%
 - [OPD 重新审视失败模式与简单修复](https://github.com/QianJinGuo/wiki-public/blob/main/entities/opd-revisiting-failure-modes-simple-fixes-storm.md) — OPD失败模式诊断+低成本稳定实现
 - [The distillation panic](216-the-distillation-panic.html) — 蒸馏术语政策分析
