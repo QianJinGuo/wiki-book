@@ -1,0 +1,6 @@
+%% title: Hermes-Agent 官方 Kanban 深度实测——商业 CLI 作 Orchestrator
+graph TD
+    ARCH["Kanban 架构<br/>数据库并发控制 · 任务状态机<br/>调度器 Dispatcher · Worker 启动"] --> BUGS["七条实测踩坑<br/>终端超时断层 · 断路器过激<br/>Worker 僵死 · 竞态条件等"]
+    BUGS --> GATE["为什么 Gateway 才是本体"]
+    GATE --> CMP["上层 Orchestrator 选型对比"]
+    CMP --> REC["推荐工程架构与实操建议"]

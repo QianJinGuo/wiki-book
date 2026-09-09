@@ -1,0 +1,6 @@
+%% title: AWS GRPO RLVR on SageMaker——数学推理强化学习
+graph TD
+    RLVR["RLVR 双奖励机制设计逻辑"] --> GRPO["GRPO 组内相对优化机制"]
+    GRPO --> QL["QLoRA 在 RLVR 训练中的角色"]
+    QL --> SHOT["8-shot 阈值的理论解释"]
+    SHOT --> PRAC["实践<br/>何时选 RLVR 而非 DPO/RM<br/>奖励函数设计 · 超参配置<br/>SageMaker 分布式训练"]

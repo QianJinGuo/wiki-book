@@ -1,0 +1,6 @@
+%% title: Bedrock AgentCore Web Search GA——托管式网页搜索
+graph TD
+    P["解决 Agent 知识冻结<br/>训练截止后无法获取实时信息"] --> L1["接入层<br/>Agent 到 Gateway 到 connector<br/>IAM 或 JWT 认证"]
+    L1 --> L2["索引层: Amazon 自建索引<br/>数百亿文档 · 分钟级刷新<br/>知识图谱 · 语义片段提取"]
+    L2 --> L3["安全层: 查询流量不出 AWS<br/>数据驻留合规"]
+    L3 --> CMP["对比自建与第三方<br/>与 Knowledge Bases 互补"]

@@ -1,0 +1,7 @@
+%% title: LiteLLM 生产级部署——ECS 与 EKS 双方案加控制面数据面分离
+graph TD
+    SEL["选型决策矩阵"] --> S1["方案一: ECS Fargate 部署"]
+    SEL --> S2["方案二: EKS 部署"]
+    S1 --> SEP["Control Plane 与 Data Plane 分离<br/>多区域高可用"]
+    S2 --> SEP
+    SEP --> SEC["安全最佳实践"]

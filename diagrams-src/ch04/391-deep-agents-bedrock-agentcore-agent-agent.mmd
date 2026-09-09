@@ -1,0 +1,7 @@
+%% title: Deep Agents 加 Bedrock AgentCore——多 Agent 编排研究实战
+graph TD
+    PAT["核心模式"] --> C5["五个核心组件"]
+    C5 --> WF["工作流 4 步"]
+    WF --> ISO["关键工程细节<br/>Browser MicroVM 隔离<br/>Code Interpreter 隔离 · Memory 配置"]
+    ISO --> OBS["三层可观测性"]
+    OBS --> DEP["模型无关 · 部署到 Runtime"]
