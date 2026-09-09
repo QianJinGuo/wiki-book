@@ -1,0 +1,7 @@
+%% title: AWS Network Firewall 审查 IDC-VPC 流量——VGW 架构与 BGP 实验
+graph TD
+    SC["场景: IDC 到 VPC 流量审查"] --> ARCH["核心架构<br/>VGW 加 NFW<br/>静态路由劫持流量"]
+    ARCH --> K1["BGP 路由传播<br/>跨网络互联统一基础"]
+    K1 --> K2["手工高优先级路由<br/>NFW 路由配置"]
+    K2 --> V["验证实验"]
+    V --> SEL["VGW vs TGW 选型判断<br/>双 AZ NFW 高可用是生产必要条件"]

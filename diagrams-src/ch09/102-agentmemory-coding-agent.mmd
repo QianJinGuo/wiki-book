@@ -1,0 +1,8 @@
+%% title: AgentMemory——Coding Agent 本地记忆系统
+graph TD
+    ARCH["核心架构"] --> DM["数据模型"]
+    DM --> RET["检索机制"]
+    RET --> API["对外接口"]
+    API --> CMP["竞品对比"]
+    CMP --> USE["适用场景"]
+    MX["第 2 来源: MemoraX Code<br/>长期记忆系统"] -.对照.-> CMP

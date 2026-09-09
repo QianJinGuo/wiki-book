@@ -1,0 +1,7 @@
+%% title: Agentic 事件分诊助手——Amazon Quick 加 New Relic 加 Asana
+graph TD
+    PAIN["SRE 分诊时间敏感<br/>多工具切换致延迟与知识流失"] --> ORCH["Quick Chat Agent 编排枢纽<br/>native MCP 三方集成"]
+    ORCH --> NR["New Relic 5 个推理工具<br/>按 prompt 内容 tool routing"]
+    NR --> RCA["RCA Brief 5 段固定格式<br/>Summary · Blast radius · Trigger<br/>Evidence · Next actions<br/>保证跨班次交接一致"]
+    RCA --> ASANA["Asana 创建跟进任务<br/>notes 只作交接摘要不导数据"]
+    ASANA --> SEC["安全治理三层<br/>最小权限 · 限定 OAuth 范围 · 禁 PII"]

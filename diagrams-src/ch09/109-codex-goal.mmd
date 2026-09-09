@@ -1,0 +1,7 @@
+%% title: Codex /goal 源码深度解析——状态表与续跑条件与预算账本
+graph TD
+    CORE["核心结论<br/>目标是数据库对象不是 prompt<br/>thread_goals 表"] --> TOOLS["三个 Goal 工具权限设计"]
+    TOOLS --> RESUME["自动续跑 7 个前提条件"]
+    RESUME --> BUDGET["Budget 账本<br/>边界记账时机"]
+    BUDGET --> SEC["untrusted_objective 安全防护<br/>objective 上限 4000 字符"]
+    SEC --> AUDIT["Completion Audit 真实含义<br/>Plan mode 忽略续跑"]

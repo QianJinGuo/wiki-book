@@ -1,0 +1,8 @@
+%% title: AI Infra 入门——大模型高效推理原理
+graph TD
+    B["批处理本质与 LLM 核心矛盾"] --> CB["Continuous Batching<br/>4 个硬性约束"]
+    CB --> PA["Paged Attention<br/>物理布局与权衡"]
+    PA --> FA["FlashAttention<br/>分块加 Online Softmax"]
+    FA --> PD["Prefill 与 Decode 本质差异<br/>FFN 融合优化 · LM Head"]
+    PD --> ATTN["Attention 无法跨请求均摊"]
+    ATTN --> SAMP["Sampling 4 个关键参数"]

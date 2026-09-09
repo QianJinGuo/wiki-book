@@ -1,0 +1,7 @@
+%% title: 一张图片如何攻破你的 Mac——ExifTool CVE-2026-3102
+graph TD
+    V["CVE-2026-3102 命令注入<br/>ExifTool 13.50 以下 · 需 -n 参数"] --> LOC["漏洞定位<br/>SetMacOSTags 中 system 调用"]
+    LOC --> VEC["攻击向量<br/>图像 EXIF 元数据日期字段"]
+    VEC --> CHAIN["攻击链分析"]
+    CHAIN --> ROOT["根源: 信任边界跨越<br/>不安全编程范式"]
+    ROOT --> FIX["修复版本 13.50<br/>架构级修复示范意义"]

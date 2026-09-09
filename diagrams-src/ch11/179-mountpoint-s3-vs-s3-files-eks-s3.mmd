@@ -1,0 +1,8 @@
+%% title: Mountpoint S3 对比 S3 Files——EKS 上 S3 数据接入两方案
+graph TD
+    Q["核心问题: EKS 上 S3 数据接入"] --> MP["Mountpoint S3<br/>2024-2025 主流<br/>吞吐量优先"]
+    Q --> SF["S3 Files<br/>2026-04 GA<br/>POSIX 完整性"]
+    MP --> DIFF["设计哲学根本分歧<br/>FUSE 用户态内在限制"]
+    SF --> DIFF
+    DIFF --> TREE["选型决策树<br/>混合部署是 EKS 最优解"]
+    TREE --> C["close-to-open 一致性<br/>对多客户端场景的意义"]

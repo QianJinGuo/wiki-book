@@ -1,0 +1,8 @@
+%% title: ProseMirror 文档 mention——知识库 Agent 输入框工程化
+graph TD
+    WHY["为什么不用 DOM 方案"] --> D1["决策 1: Schema 三件套"]
+    D1 --> D2["决策 2: 原子加不可变<br/>docref 安全边界"]
+    D2 --> D3["决策 3: 临时态用 Decoration<br/>不进 schema"]
+    D3 --> INT["交互三阶段<br/>事务边界内可控"]
+    INT --> SUG["Suggestion 插件中的插件"]
+    SUG --> LESSON["5 条工程教训<br/>主链路闭环优于经验修补"]
