@@ -1,0 +1,6 @@
+%% title: ThinkingAgent——准生产级 LLM Agent 完整架构
+graph TD
+    L5["五层垂直分离加 Pipeline 星形拓扑<br/>Pipeline 是唯一上帝视角<br/>ComponentAssembler 加 EventBus"] ==> REASON["推理框架: Plan-and-Execute<br/>加 ReAct 加 Self-Reflection 三段循环"]
+    REASON ==> CTX["上下文管理: 双缓冲 五步修复<br/>Token 角色分配制 · 混合压缩"]
+    CTX ==> RELY["可靠性: 六层异常矩阵<br/>LLM 网关四类恢复 · 熔断三态"]
+    RELY ==> EVAL["三层质量评估加 Benchmark<br/>200 次独立运行"]

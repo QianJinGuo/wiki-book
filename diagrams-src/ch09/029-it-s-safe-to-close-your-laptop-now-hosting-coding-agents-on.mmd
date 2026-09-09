@@ -1,0 +1,6 @@
+%% title: 现在可以合上笔记本了——AgentCore 托管 Coding Agent
+graph TD
+    LAPTOP["笔记本作宿主的结构性缺陷<br/>视为技术债而非物理约束"] ==> VALUE["AgentCore: 远端工作站即服务<br/>非容器 · Bring any agent · 模型无关"]
+    VALUE ==> CREDS["三种 Credential 模式<br/>Bot 与 On-behalf-of 与 Broker<br/>优先 OBO 保持审计链完整"]
+    CREDS ==> WS["持久化 mnt workspace<br/>重定义 Session 语义"]
+    WS ==> EVAL["并行 Agent 对比实验<br/>关注 Session 恢复与 VPC 成本"]
