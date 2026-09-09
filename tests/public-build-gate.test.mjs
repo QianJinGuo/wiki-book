@@ -116,3 +116,19 @@ test("public gate rejects credential-bearing source URLs and extra card fields",
     rmSync(root, { recursive: true, force: true });
   }
 });
+
+test("public gate ignores the gitignored devloop e2e harness scratch (regression 2026-09-09)", () => {
+  const root = makeFixture();
+  try {
+    // Re-created the exact offender from the 09-08 nightly failure: a gitignored
+    // devloop/ e2e harness workspace whose nested test-git worktree pointer file
+    // embeds the machine path /Users/jinguo/wiki. It is local scratch, never
+    // published, so the fail-closed source scan must not flag it.
+    const g = join(root, "devloop", "data-e2e", "work", "svc-verify", "task1-it1");
+    mkdirSync(g, { recursive: true });
+    writeFileSync(join(g, ".git"), "gitdir: /Users/jinguo/wiki/source/private-worktree\n");
+    assert.equal(runGate(root).status, 0);
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
