@@ -1,0 +1,7 @@
+[
+ {
+  "title": "CPU 缓存类比下的 Agent 上下文管理——L1 到 L3 与 execute_code",
+  "code": "graph TD\n    L1[\"L1 常驻内容<br/>80% 覆盖<br/>读区间三重压缩 · 写 diff 双重压缩\"] --> W[\"核心权衡<br/>信息压缩 vs 发现速度\"]\n    L2[\"L2 按需加载<br/>15% 覆盖<br/>规格文档 · 延迟工具\"] --> W\n    L3[\"L3 兜底路径<br/>5% 以上覆盖<br/>原始全集加检索技能文件\"] --> W\n    W --> EC[\"execute_code 单工具原则<br/>对比 Anthropic 5-10 个工具\"]\n    EC --> BUD[\"提示词预算分配\"]\n    BUD --> INS[\"层级会移动但不会消失<br/>摘要放缓存 · 细节按需取 · 原始兜底\"]",
+  "isSvg": false
+ }
+]

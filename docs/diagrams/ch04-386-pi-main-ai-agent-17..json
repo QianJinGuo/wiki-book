@@ -1,0 +1,7 @@
+[
+ {
+  "title": "pi-main 源码拆解——顶尖 AI Agent 工程设计 17 维度",
+  "code": "graph TD\n    P[\"核心原则: 轻核心重扩展\"] --> LOOP[\"双层 while 主循环<br/>分离会话终止与本轮终止\"]\n    LOOP --> ERR[\"isError 统一返回结构<br/>LLM 自己驱动纠错\"]\n    ERR --> TOOL[\"工具系统三件事<br/>Provider Function Calling 输出\"]\n    TOOL --> MEM[\"记忆: JSONL 事件流<br/>结构化压缩迭代省 50% Token\"]\n    MEM --> HUMAN[\"人机协同: 异步 steer<br/>模型热切换 · 多模态优雅降级\"]\n    HUMAN --> GAP[\"三缺口: 安全 · 可观测 · 评估<br/>沙盒兜底哲学\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Microsoft Build 2026——微软 AI 独立日 7 款 MAI 模型加 Scout",
+  "code": "graph TD\n    M1[\"MAI-Thinking-1<br/>首个高级推理模型 · 独立训练\"] --> FAM[\"MAI 模型家族<br/>多模态生态系统\"]\n    FAM --> SCOUT[\"Scout 智能体<br/>企业级 · 应对 OpenClaw 安全漏洞<br/>Copilot 商业化\"]\n    SCOUT --> SHIFT[\"战略转变<br/>AI 应用整合者 到 全栈 AI 基础设施\"]\n    SHIFT --> WIN[\"Windows 生态加 NVIDIA 合作<br/>OpenClaw 登陆 Windows · MXC 沙箱<br/>Copilot 独立桌面\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "alibabacloud-cms-manage Skill——CMS 2.0 可观测接入 Agent 化",
+  "code": "graph TD\n    U[\"自然语言提出可观测接入\"] --> SK[\"cms-manage Skill 解析意图\"]\n    SK --> CLI[\"映射 cms2 CLI 6 步接入流程\"]\n    CLI --> CONF[\"两阶段确认协议<br/>执行前二次确认\"]\n    CONF --> K8S[\"K8s 场景 ack-onepilot<br/>探针自动注入 8 步自动化\"]\n    K8S --> S5[\"5 大实战场景覆盖<br/>可控自动化原则\"]",
+  "isSvg": false
+ }
+]

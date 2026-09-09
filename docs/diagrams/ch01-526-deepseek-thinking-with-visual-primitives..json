@@ -1,0 +1,7 @@
+[
+ {
+  "title": "DeepSeek 视觉原语思考——Reference Gap 的范式突破",
+  "code": "graph TD\n    GAP[\"Reference Gap 指代鸿沟<br/>文字描述空间关系的损耗\"] --> VP[\"视觉原语思考<br/>从验证媒介到思考媒介\"]\n    VP --> COMP[\"压缩链路<br/>7056 倍压缩的工程意义\"]\n    COMP --> BENCH[\"Benchmark<br/>计数打平 · 空间推理 4/6 第一<br/>拓扑推理是真差距\"]\n    BENCH --> TRAIN[\"5 阶段训练管线<br/>预训练到专家化 SFT 与 RL<br/>统一 RFT 到同策略蒸馏\"]\n    TRAIN --> AC[\"Anti-cheat 数据设计<br/>揭示模型能力边界\"]",
+  "isSvg": false
+ }
+]

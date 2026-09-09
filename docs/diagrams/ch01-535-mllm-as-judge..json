@@ -1,0 +1,7 @@
+[
+ {
+  "title": "多模态评估器——MLLM-as-Judge 图文评估",
+  "code": "graph TD\n    MOT[\"动机: BLEU 与 ROUGE<br/>和人类判断相关性低\"] --> F4[\"四种评估器<br/>Strands Evals 框架\"]\n    F4 --> Q1[\"Judge 需要看到图像吗\"]\n    F4 --> Q2[\"选哪个 Bedrock 模型<br/>mid-tier 推理模型性价比最佳\"]\n    F4 --> Q3[\"先推理后评分<br/>提升 judge-to-human 一致性<br/>最重要单一变量\"]\n    Q3 --> REF[\"Reference-based 与 free 的选择逻辑\"]",
+  "isSvg": false
+ }
+]

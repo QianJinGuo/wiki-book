@@ -1,0 +1,7 @@
+[
+ {
+  "title": "从 People-Oriented 到 Agent-Oriented Infra——意图驱动与代码沉淀",
+  "code": "graph TD\n    I[\"人的意图\"] --> AG[\"Agent 执行\"]\n    AG --> TC[\"瞬态代码<br/>会话内生成\"]\n    AG --> PC[\"持久代码<br/>进入仓库沉淀\"]\n    PC -->|\"下一次执行加速\"| AG\n    subgraph V[\"三个关键变量\"]\n        V1[\"桥梁带宽: 从人到 agent\"]\n        V2[\"沉淀粒度: 持久与瞬态分化\"]\n        V3[\"循环频率: 从发布周期到运行时\"]\n    end\n    V -.决定自主程度.-> AG\n    AG --> INFRA[\"Agent-Oriented Infra<br/>四层递进设计\"]",
+  "isSvg": false
+ }
+]

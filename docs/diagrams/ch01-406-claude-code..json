@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Code 架构深度解析",
+  "code": "graph TD\n    CONC[\"工具并发机制<br/>批次执行 · 最大并发数\"] --> DEF[\"延迟加载<br/>shouldDefer 加 ToolSearch<br/>deferred_tools_delta 保 Prefix Cache\"]\n    DEF --> SIZE[\"工具结果大小控制与权限检查\"]\n    SIZE --> PLAN[\"Plan 模式: 权限层最干净约束\"]\n    PLAN --> CTX[\"Context 五层压缩 · Compact 边界\"]\n    CTX --> SUB[\"Sub-Agent 七种执行模式\"]\n    SUB --> HOOKM[\"Hooks 24 种事件 · CLAUDE.md 记忆<br/>会话恢复 · MCP · 预算管理\"]",
+  "isSvg": false
+ }
+]

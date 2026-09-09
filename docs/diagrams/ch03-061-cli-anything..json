@@ -1,0 +1,7 @@
+[
+ {
+  "title": "CLI-Anything——把软件变成 Agent 可调用的 CLI",
+  "code": "graph TD\n    HUB[\"CLI-Hub 元技能\"] --> SK[\"SKILL 格式详解\"]\n    SK --> HAR[\"Agent Harness\"]\n    HAR --> CASE[\"兼容性案例<br/>Blender 无人机建模<br/>FreeCAD 月球车 · Draw.io 握手图\"]\n    CASE --> L3[\"三层解耦技术架构\"]\n    L3 --> PHI[\"设计哲学: 软件 eating 软件<br/>Skill 市场是 Agent 生态 App Store\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Amazon Bedrock Serverless 异步架构——在线多模态高负载",
+  "code": "graph TD\n    C[\"核心挑战: 多模态推理耗时<br/>token 放大效应\"] --> PIPE[\"SQS 加 Lambda 异步管道三原则<br/>解耦与缓冲\"]\n    PIPE --> ESM[\"ESM 并发控制精细价值<br/>关键参数配置\"]\n    ESM --> TO[\"Timeout 链路级联设计<br/>宁可过量不可短缺\"]\n    TO --> TEST[\"压测验证<br/>300 并发突发 · 大规模测试\"]\n    TEST --> OPS[\"DLQ 监控告警盲区<br/>分层限流 · 容量规划\"]",
+  "isSvg": false
+ }
+]

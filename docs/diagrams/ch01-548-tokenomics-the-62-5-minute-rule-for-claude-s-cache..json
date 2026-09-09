@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Tokenomics——Claude 缓存的 62.5 分钟规则",
+  "code": "graph TD\n    MATH[\"定价结构的数学本质<br/>62.5 分钟规则\"] --> REF[\"缓存刷新的经济学含义<br/>实现缓存计时器\"]\n    REF --> SCALE[\"美元金额的规模敏感性<br/>按前缀规模选策略\"]\n    SCALE --> CMP[\"Compaction 成本收益分析<br/>触发条件\"]\n    CMP --> FG[\"三大缓存地雷 Footguns<br/>监控与仪表化\"]\n    FG -.交互式 vs 非交互式.-> DIFF[\"场景差异策略\"]",
+  "isSvg": false
+ }
+]

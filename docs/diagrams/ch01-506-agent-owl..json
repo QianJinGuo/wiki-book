@@ -1,0 +1,7 @@
+[
+ {
+  "title": "OWL 多 Agent 框架原理",
+  "code": "graph TD\n    U[\"用户任务\"] --> ORCH[\"OWL 编排者 Agent\"]\n    ORCH --> B1[\"System Prompt 双重锚定<br/>角色与任务上下文\"]\n    B1 --> W1[\"执行 Agent\"]\n    B1 --> W2[\"执行 Agent\"]\n    W1 --> B2[\"记忆管理<br/>短期会话加长期存储\"]\n    W2 --> B2\n    W1 --> B3[\"工具生态调用\"]\n    W2 --> B3\n    B2 --> R[\"层次化协作涌现<br/>复杂任务结果\"]\n    B3 --> R",
+  "isSvg": false
+ }
+]

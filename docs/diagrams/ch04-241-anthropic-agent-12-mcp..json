@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Anthropic 官方生产级 Agent 实践——12 个可复用 MCP 设计模式",
+  "code": "graph TD\n    G1[\"工具交互面<br/>三层决策 · 意图探测粒度\"] --> G2[\"交互语义<br/>Form Mode 不打断体验\"]\n    G2 --> G3[\"认证与凭证流<br/>凭证托管是生产门槛\"]\n    G3 --> G4[\"上下文经济<br/>工具描述兼顾人与机器\"]\n    G4 --> G5[\"打包与分发<br/>能力包视角<br/>Server-Distributed Skills\"]",
+  "isSvg": false
+ }
+]

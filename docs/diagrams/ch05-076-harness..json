@@ -1,0 +1,7 @@
+[
+ {
+  "title": "阿里工程师 Harness 工程化实践——双案例合并",
+  "code": "graph TD\n    subgraph FOUR[\"四根支柱\"]\n        C1[\"上下文架构\"]\n        C2[\"Agent 专业化\"]\n        C3[\"持久化记忆\"]\n        C4[\"结构化执行\"]\n    end\n    FOUR --> ROLES[\"三角色分离<br/>Planner / Generator / Evaluator\"]\n    ROLES --> RES[\"实战结果<br/>AI 代码率 24.86% 到 90.54%\"]\n    RES --> ENT[\"Entropy Garbage Collection<br/>熵的累积治理\"]\n    CASE2[\"案例二: 6 层架构 · 19 节点研发链路<br/>7 维评测 · G1-G8 门禁墙\"] -.prompt 是负债 harness 是资产.-> RES",
+  "isSvg": false
+ }
+]

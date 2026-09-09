@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Hermes Agent 满配 12 层配置——从裸装到 24h Agent 团队",
+  "code": "graph TD\n    C[\"核心定位: 满配不等于装满\"] --> L1[\"L1 安装基线<br/>Hermes 本体稳定\"]\n    L1 --> L2[\"L2 输入系统 6 层协议栈\"]\n    L2 --> S[\"SOUL.md 写工作协议<br/>不写玄学人格\"]\n    S --> UM[\"USER.md 与 MEMORY.md 区分<br/>访谈初始化记忆\"]\n    UM --> REST[\"其余 10 层逐层叠加\"]\n    REST --> R[\"4 阶段路线图<br/>到 24h Agent 团队\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "skill-creator 源码拆解——触发率测评与三 Agent 评审",
+  "code": "graph TD\n    E1[\"能力一: 触发率测评<br/>run_eval 单查询核心函数\"] --> E2[\"能力二: description 自动优化循环<br/>60/40 train/test 防过拟合\"]\n    E2 --> E3[\"能力三: 统计聚合<br/>Bessel 修正 · 跨 config 对比\"]\n    E3 --> E4[\"能力四: 三 Agent 评审<br/>Grader · Comparator · Analyzer\"]\n    E4 -.借鉴对照.-> SS[\"SkillSentry 分工\"]",
+  "isSvg": false
+ }
+]

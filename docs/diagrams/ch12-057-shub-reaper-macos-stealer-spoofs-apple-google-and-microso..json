@@ -1,0 +1,7 @@
+[
+ {
+  "title": "SHub Reaper——macOS 窃密木马的单一攻击链伪装",
+  "code": "graph TD\n    DL[\"投递: 假冒 WeChat 与 Miro 安装包<br/>地理封锁筛目标\"] --> S1[\"阶段伪装一: 微软域名托管载荷\"]\n    S1 --> S2[\"阶段伪装二: 苹果安全更新执行\"]\n    S2 --> S3[\"阶段伪装三: 谷歌更新目录持久化\"]\n    S3 --> STEAL[\"窃取: AMOS 风格文件模块<br/>凭证 · 钱包应用劫持<br/>分块上传\"]\n    STEAL --> C2[\"持久化后门<br/>60 秒心跳 · 远程代码执行\"]\n    C2 --> DET[\"检测: Sigma 与 YARA 规则<br/>MITRE ATT&CK 映射\"]",
+  "isSvg": false
+ }
+]

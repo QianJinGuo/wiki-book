@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Hermes Agent v0.14.0 核心架构与快速上手",
+  "code": "graph TD\n    SP[\"System Prompt 三层架构\"] --> LOOP[\"Agent Loop 思考-行动循环\"]\n    LOOP --> TOOLS[\"工具自动发现机制\"]\n    TOOLS --> CLI[\"CLI 核心命令<br/>AIAgent 核心接口\"]\n    CLI --> SOUL[\"SOUL.md 专题<br/>stable 层 14 部分<br/>加载链路 7 步\"]\n    SOUL --> P[\"14 内置 personality<br/>加 overlay 机制\"]\n    SOUL -.安全扫描.-> GUARD[\"_scan_context_content\"]\n    SOUL -.对比.-> AG[\"AGENTS.md<br/>判断准则分离\"]",
+  "isSvg": false
+ }
+]

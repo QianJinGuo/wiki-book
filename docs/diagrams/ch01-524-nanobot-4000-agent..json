@@ -1,0 +1,7 @@
+[
+ {
+  "title": "nanobot——4000 行极简 Agent 框架架构解析",
+  "code": "graph TD\n    MB[\"MessageBus 异步队列<br/>13 个聊天渠道\"] --> LOOP[\"AgentLoop 控制面集中化<br/>ReAct 循环仅 20 行\"]\n    LOOP --> SM[\"SessionManager 历史加载\"]\n    LOOP --> CB[\"ContextBuilder 组装\"]\n    LOOP --> TR[\"ToolRegistry<br/>exec / fs / web / spawn / mcp / cron\"]\n    TR --> SUB[\"SubagentMgr<br/>消息总线重注入\"]\n    LOOP --> SK[\"Skill 系统<br/>Markdown 即配置<br/>渐进式加载\"]\n    LOOP --> MEM[\"记忆: grep beats RAG<br/>错误恢复委托给 LLM\"]",
+  "isSvg": false
+ }
+]

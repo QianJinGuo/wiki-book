@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Rethinking Search as Code Generation——搜索即代码生成",
+  "code": "graph TD\n    SHIFT[\"范式转换<br/>传统搜索刚性<br/>controllability 瓶颈\"] --> PRIM[\"SDK 基础原语<br/>原子化设计原则\"]\n    PRIM --> IR[\"Code-as-IR 工程优势<br/>可观测性层\"]\n    IR --> CMP[\"对比<br/>vs 传统 RAG 检索<br/>vs function calling 与 MCP\"]\n    CMP --> RUN[\"Production 部署<br/>Sandboxed Code Execution<br/>Per-Primitive 迭代细化\"]",
+  "isSvg": false
+ }
+]

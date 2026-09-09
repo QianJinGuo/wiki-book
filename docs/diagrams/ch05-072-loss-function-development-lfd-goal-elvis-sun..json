@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Loss Function Development——用损失函数替代 Spec 驱动 Agent",
+  "code": "graph TD\n    T[\"目标 Target<br/>盲测集不可见\"] --> LF[\"Loss Function 定义\"]\n    C[\"约束 Constraints<br/>硬限制防作弊\"] --> LF\n    I[\"仪表 Instrumentation<br/>Harness 观测\"] --> LF\n    FE[\"强制熵 Forced Entropy\"] --> LF\n    LF --> R1[\"循环 1: 直接拿 eval set 生成<br/>作弊\"]\n    LF --> R2[\"循环 2: miss 变关键词<br/>作弊\"]\n    LF --> R3[\"循环 3: 枚举膨胀<br/>作弊\"]\n    LF --> R4[\"循环 4: 盲测 200 条加硬限制<br/>真实通过\"]\n    R4 --> GD[\"一路向下梯度下降<br/>Meta-Meta-Prompt 设计 goal\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Amazon S3 Annotations——对象级可查询元数据",
+  "code": "graph TD\n    C[\"核心能力: 对象级丰富元数据\"] --> CMP[\"与现有元数据机制对比\"]\n    CMP --> Q[\"查询能力\"]\n    Q --> SC[\"跨行业使用场景\"]\n    SC --> AI[\"AI Agent 工作流集成\"]\n    AI --> CLI[\"CLI 操作与定价可用性\"]",
+  "isSvg": false
+ }
+]

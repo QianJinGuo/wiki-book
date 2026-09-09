@@ -1,0 +1,7 @@
+[
+ {
+  "title": "LLMReaper——基于 DOM 的 AI 对话窃取",
+  "code": "graph TD\n    F[\"核心发现: 浏览器扩展<br/>窃取 AI 对话\"] --> M[\"威胁机制: DOM 读取\"]\n    M --> MO[\"MutationObserver 双重性<br/>合法功能变隐蔽通道\"]\n    MO --> P[\"浏览器权限模型系统性失效\"]\n    P --> D[\"检测与缓解的现实困境<br/>攻击链端到端博弈\"]",
+  "isSvg": false
+ }
+]

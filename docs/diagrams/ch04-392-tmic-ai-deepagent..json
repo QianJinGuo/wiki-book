@@ -1,0 +1,7 @@
+[
+ {
+  "title": "TMIC AI 小新 DeepAgent 架构演进",
+  "code": "graph TD\n    P[\"三大痛点及对应解法\"] --> CTX[\"加载上下文模块设计<br/>工具箱三层树状结构\"]\n    CTX --> C4[\"DeepAgent 四大核心组件<br/>Planning 职责 · ReAct 模式\"]\n    C4 --> TA[\"Tree Action 模式<br/>依赖关系驱动执行优化\"]\n    TA --> VS[\"与定制化 Workflow 的区别<br/>前置决策 vs 动态规划\"]\n    VS --> INS[\"上下文工程本质<br/>从交给 AI 到为 AI 准备<br/>压缩与卸载并行\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Code 源码中的 Agent Harness 构建之道",
+  "code": "graph TD\n    LOOP[\"核心循环 8 步<br/>输入 → 上下文组装 → API → 解析<br/>权限 → 执行 → 反馈 → 压缩检查\"] --> CTX[\"上下文组装缓存分层<br/>SYSTEM_PROMPT 动态边界<br/>MCP 是唯一非缓存段\"]\n    CTX --> CM[\"CLAUDE.md 四级加载<br/>系统到用户到项目到本地\"]\n    CM --> SK[\"技能 1% 预算<br/>按需 ToolSearch 调用\"]\n    SK --> PERM[\"4 层权限检查<br/>isConcurrencySafe 并发标记\"]\n    PERM --> COMP[\"三级压缩<br/>微压缩到反应式\"]\n    COMP --> PM[\"Plan Mode 行为引导<br/>8 种退出路径\"]",
+  "isSvg": false
+ }
+]

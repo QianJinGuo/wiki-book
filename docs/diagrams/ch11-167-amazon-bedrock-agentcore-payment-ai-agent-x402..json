@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Bedrock AgentCore Payment 构建自主支付 Agent——x402 协议",
+  "code": "graph TD\n    A[\"AI Agent 发起付费请求\"] -->|\"HTTP 402 挑战\"| S[\"服务端返回支付要求\"]\n    S --> G[\"AgentCore Gateway<br/>MCP 工具发现\"]\n    G --> SIG[\"服务端签名<br/>EIP-3009 信任边界\"]\n    SIG --> BUD[\"Payment Session 预算上限<br/>财务安全第一道防线\"]\n    BUD --> SETTLE[\"链上结算<br/>指数退避重试\"]\n    SETTLE --> DELIVER[\"内容交付给 Agent\"]\n    WAL[\"EOA 收款钱包\"] -.结算目标.-> SETTLE\n    L[\"Lambda 边缘本地校验\"] -.前置.-> SIG",
+  "isSvg": false
+ }
+]

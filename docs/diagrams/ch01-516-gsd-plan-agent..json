@@ -1,0 +1,7 @@
+[
+ {
+  "title": "GSD 上下文管理工具——用 Plan 约束 Agent 行为边界",
+  "code": "graph TD\n    R[\"第一层 ROADMAP 项目层\"] --> PH[\"第二层 Phase<br/>边界显式定义\"]\n    PH --> PL[\"第三层 Plan frontmatter<br/>机器可执行合约<br/>files_modified 关键约束\"]\n    PL --> SU[\"第四层 Summary<br/>provides 与 affects 引用网络\"]\n    SU --> CB[\"context-budget 4 档退化<br/>主动退化而非被动溢出\"]\n    CB --> SUB[\"Subagent 委派<br/>orchestrator 不读大文件\"]\n    SUB --> SIX[\"六步走完一个 phase<br/>讨论阶段回报率最高\"]",
+  "isSvg": false
+ }
+]

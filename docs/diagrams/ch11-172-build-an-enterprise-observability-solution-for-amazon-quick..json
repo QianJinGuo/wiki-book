@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Amazon Quick 企业级可观测方案部署",
+  "code": "graph TD\n    PRE[\"前置条件\"] --> VL[\"Set up vended logs<br/>日志投递\"]\n    VL --> DP[\"部署数据管道<br/>KMS 统一加密\"]\n    DP --> DC[\"数据目录<br/>Lake Formation 访问控制\"]\n    DC --> QS[\"QuickSight 仪表盘\"]\n    DC --> CA[\"自定义 Chat Agent<br/>双层消费模式\"]\n    QS --> GOV[\"数据保护与合规边界<br/>cleanup.py 纳入 IaC\"]\n    CA --> GOV",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Harness 设计——Generator-Evaluator 架构与 Context Reset",
+  "code": "graph TD\n    F1[\"失效一: Context Anxiety<br/>上下文焦虑\"] --> GE[\"Generator-Evaluator 架构<br/>GAN 启发双代理\"]\n    F2[\"失效二: 自我评估偏差\"] --> GE\n    GE --> Q[\"量化对照<br/>复古游戏制作器 · DAW\"]\n    Q --> SC[\"Sprint Contract<br/>协商具体到验证方式\"]\n    SC --> CR[\"Context Reset 优于压缩<br/>按焦虑行为判断触发\"]\n    CR --> DT[\"可删除性测试<br/>移除组件校准模型能力边界\"]\n    STAR[\"STAR 三智能体<br/>Reasoner-Verifier-Meta-Strategist\"] -.对照.-> GE",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Cline 开源 Agent Runtime SDK",
+  "code": "graph TD\n    LIC[\"Apache 2.0 开源<br/>双语言 TypeScript 加 Python\"] --> ARCH[\"技术架构分层<br/>llms 层模型无关抽象<br/>Anthropic · OpenAI · Bedrock\"]\n    ARCH --> SES[\"Session 持久性<br/>跨 UI 重启存活 · 跨 Surface 迁移\"]\n    SES --> FEAT[\"核心特性<br/>Agent Teams 与 Subagents<br/>插件系统 · Connector Channels\"]\n    FEAT --> BM[\"Terminal Bench 2.0 得 74.2%<br/>超越 Claude Code 69.4%\"]",
+  "isSvg": false
+ }
+]

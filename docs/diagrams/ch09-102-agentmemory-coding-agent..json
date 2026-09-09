@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AgentMemory——Coding Agent 本地记忆系统",
+  "code": "graph TD\n    ARCH[\"核心架构\"] --> DM[\"数据模型\"]\n    DM --> RET[\"检索机制\"]\n    RET --> API[\"对外接口\"]\n    API --> CMP[\"竞品对比\"]\n    CMP --> USE[\"适用场景\"]\n    MX[\"第 2 来源: MemoraX Code<br/>长期记忆系统\"] -.对照.-> CMP",
+  "isSvg": false
+ }
+]

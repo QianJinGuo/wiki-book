@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AI Native 公司 Dan Shipper——30 人做出 100 人产出",
+  "code": "graph TD\n    STORY[\"30 人等于 100 人产出<br/>Automation is a lie\"] --> FLIP[\"认知翻转: 把浏览器嵌入 AI<br/>公司级超级 Agent 替代人手一个\"]\n    FLIP --> WALL[\"三道墙: 安全政策 · 采购惯性<br/>管理层激励 · 墙在变薄\"]\n    WALL --> SAAS[\"SaaS 为什么还不死<br/>Agent 是新增用户非替代<br/>Token 经济学倒转<br/>SaaS 载昨天的能力\"]\n    SAAS --> D6[\"6 维能力框架<br/>双通道接口 · 共享视野 · 审批边界<br/>上下文协议 · 可观测 · 定价\"]\n    D6 --> LAY[\"层次化思维解 3 句矛盾断言<br/>人类交互层 价值层 产品层\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Code 源码分析——Skills 与 MCP 与 Rules 三机制",
+  "code": "graph TD\n    R[\"Rules 项目级行为规范<br/>被动注入 messages 非系统层\"] --> CMP[\"三者核心对比\"]\n    M[\"MCP 标准化工具协议<br/>真函数调用 RPC<br/>API 请求占两个位置\"] --> CMP\n    S[\"Skills 可复用提示词<br/>注入而非函数调用<br/>列表注入受 token 预算\"] --> CMP\n    S --> MODE[\"Inline 模式 vs Fork 模式\"]\n    CMP --> USE[\"使用建议<br/>MCP 不可替代场景辨析\"]",
+  "isSvg": false
+ }
+]

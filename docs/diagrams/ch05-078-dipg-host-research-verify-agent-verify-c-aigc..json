@@ -1,0 +1,7 @@
+[
+ {
+  "title": "DIPG 蚂蚁保三 Agent 离线 verify 闭环——C 端 AIGC 范式",
+  "code": "graph TD\n    H[\"Host Agent 总编排<br/>精准修正\"] --> R[\"Research Agent 从零生成<br/>强制前置溯源\"]\n    H --> V[\"Verify Agent 只校验不改 HTML\"]\n    R --> V\n    V --> C1[\"structural_check<br/>程序化结构校验<br/>拦孤儿标签类错误\"]\n    V --> C2[\"llm_verify<br/>语义与事实校验<br/>拦幻觉类夸大宣传\"]\n    C1 --> FB[\"错误回灌 prompt<br/>弱监督蒸馏更可靠\"]\n    C2 --> FB\n    FB -.下一轮.-> R\n    H --> OUT[\"离线主路径产出<br/>实时链路仅兜底\"]",
+  "isSvg": false
+ }
+]

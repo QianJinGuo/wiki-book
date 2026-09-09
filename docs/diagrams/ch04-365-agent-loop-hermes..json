@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Agent Loop 源码导读——一次 Hermes 任务的完整生命周期",
+  "code": "graph TD\n    subgraph MOD[\"4 个核心模块\"]\n        O[\"Loop Orchestrator 循环主控\"]\n        P[\"Prompt Builder 提示词组装\"]\n        X[\"执行层 LLM Adapter 加 Tool Runner\"]\n        T[\"Trajectory Recorder 轨迹记录\"]\n    end\n    O --> P --> X --> T\n    T -.每步实时落盘.-> O\n    X --> E1[\"退出 1: 任务自然完成 70%\"]\n    X --> E2[\"退出 2: 最大 turn 上限\"]\n    X --> E3[\"退出 3: 用户打断\"]\n    X --> E4[\"退出 4: 不可恢复错误\"]\n    O -.设计哲学: Loop 内不做业务判断<br/>刻意避免状态机.-> X",
+  "isSvg": false
+ }
+]

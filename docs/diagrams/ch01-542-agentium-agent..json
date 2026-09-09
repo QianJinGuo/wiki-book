@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Agentium——从零实现 Agent 系统的开源框架",
+  "code": "graph TD\n    R1[\"操作系统尺子\"] --> ARCH[\"分层架构与多平面设计\"]\n    R2[\"控制论尺子\"] --> ARCH\n    R3[\"容器思维尺子\"] --> ARCH\n    ARCH --> MOD[\"关键模块\"]\n    MOD --> PROD[\"与 demo 相比上线还缺什么<br/>相关框架对比\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "EC2 GPU 部署 NVIDIA NemoClaw——Bedrock 推理后端参考架构",
+  "code": "graph TD\n    ARCH[\"架构本质: 决策与代理分离<br/>EC2 GPU 加 Bedrock 混合推理\"] --> SEC[\"安全模型: 纵深防御<br/>Landlock · seccomp<br/>网络命名空间三层隔离\"]\n    SEC --> ROUTE[\"LLM Router Blueprint<br/>请求级智能路由<br/>意图分类到神经网络路由升级\"]\n    ROUTE --> GPU[\"GPU 选型工程权衡<br/>成本模型关键变量\"]\n    GPU --> DISP[\"dispatch 层可演进设计<br/>规则覆盖战术价值\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "LangSmith Engine——基于 Trace 的自改进 Agent",
+  "code": "graph TD\n    T[\"线上 trace 轨迹\"] --> SC[\"Screener 粗筛<br/>轨迹压缩成行为骨架<br/>便宜模型扩大覆盖\"]\n    SC --> INV[\"Investigator 调查<br/>强模型关键判断\"]\n    INV --> ISS[\"归类成 issue<br/>预设 9 类 taxonomy 防标签混乱\"]\n    ISS --> EV[\"生成 evaluator<br/>结构型加语义型<br/>已知失败 trace 验证后才用\"]\n    EV --> REG[\"沉淀 regression 样例<br/>回归测试\"]\n    REG --> FIX[\"推动修复 · 不自动改码\"]\n    FIX -.进入下一轮.-> T\n    OV[\"Agent Overview<br/>诊断 Agent 长期记忆\"] -.支撑.-> INV",
+  "isSvg": false
+ }
+]

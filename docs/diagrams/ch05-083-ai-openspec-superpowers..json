@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AI 生产开发工作流——OpenSpec 加 Superpowers 加 gstack 三件套",
+  "code": "graph TD\n    PAIN[\"三大痛点\"] --> OS[\"OpenSpec 需求层<br/>规范驱动开发\"]\n    OS --> SP[\"Superpowers 执行层<br/>强制流程约束 AI\"]\n    SP --> GS[\"gstack 验证层<br/>执行工具封装 7 步流程\"]\n    GS -.数据流分工.-> OS\n    OS --> USE[\"决策规则: 什么时候该用<br/>Vibe Coding 反例对照\"]\n    GS --> USE",
+  "isSvg": false
+ }
+]

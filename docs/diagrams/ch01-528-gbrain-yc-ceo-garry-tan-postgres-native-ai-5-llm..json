@@ -1,0 +1,7 @@
+[
+ {
+  "title": "GBrain——Postgres-native AI 第二大脑五大设计决策",
+  "code": "graph TD\n    P[\"Postgres-native<br/>零 LLM 知识图谱\"] --> K[\"Compiled Truth 加 Timeline<br/>知识模型\"]\n    K --> S[\"25 个 Skill 即插即用<br/>Thin Harness Fat Skill\"]\n    S --> R[\"混合搜索加实体自动升级<br/>8 阶段检索\"]\n    R --> CALL[\"能打电话的脑子\"]\n    BBS[\"Brain 垂直于 Source<br/>正交维度\"] -.设计哲学.-> K\n    SRC[\"术哥 v0.42 源码解析<br/>gbrain think 命令\"] -.补充.-> R",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "企业级 Skill 8 块最小骨架与 8 条 checklist",
+  "code": "graph TD\n    B1[\"frontmatter 元数据<br/>进治理体系\"] --> B2[\"When to use 触发条件\"]\n    B2 --> B3[\"Do not use when 边界\"]\n    B3 --> B4[\"Inputs 显式参数\"]\n    B4 --> B5[\"Steps 可执行可失败\"]\n    B5 --> B6[\"Verification 结果验证<br/>信任代理问题\"]\n    B6 --> B7[\"Failure handling 失败分支<br/>可治理性分水岭\"]\n    B7 --> B8[\"Pitfalls 与 Examples<br/>真实踩坑记录\"]\n    B8 --> CK[\"8 条 checklist<br/>评判可上线性\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Cassandra 时序宽分区动态拆分——Netflix 实践",
+  "code": "graph TD\n    W[\"Wide Partition 代价<br/>监控 p99 而非均值\"] --> B[\"基础策略<br/>Time Slices × Time Buckets × Event Buckets\"]\n    B --> S1[\"方案 1: Time Slice 重分区<br/>表级自动调整\"]\n    B --> S2[\"方案 2: 按 ID 动态分区<br/>核心创新\"]\n    S2 --> ST1[\"Stage 1: 读端检测<br/>反直觉: 不在写端\"]\n    ST1 --> ST2[\"Stage 2: 规划与拆分<br/>Checksum 加 Data Bridge 验证\"]\n    ST2 --> ST3[\"Stage 3: Bloom Filter 微秒级路由<br/>Partial Return 优先于超时\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AI 驱动跨云网络搭建——Claude Code 加 Kiro CLI 实现 IPSec VPN 双隧道",
+  "code": "graph TD\n    T[\"AI 工具分工: 各管一侧<br/>Claude Code 加 Kiro CLI\"] --> EV[\"三种架构方案演进\"]\n    EV --> DEC[\"六大关键技术决策点\"]\n    DEC --> PLAN[\"生产起点: 方案二目的路由<br/>多 VPC 选 CCN 型 VPN 网关\"]\n    PLAN --> QUA[\"效率提升量化分析<br/>AI 加速 tccli 学习但校验拼写\"]\n    PLAN -.前置.-> PRE[\"参数对照表必做\"]",
+  "isSvg": false
+ }
+]

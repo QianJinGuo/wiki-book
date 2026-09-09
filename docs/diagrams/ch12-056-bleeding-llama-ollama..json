@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Bleeding Llama——Ollama 未授权内存泄漏漏洞",
+  "code": "graph TD\n    V[\"未授权内存泄漏漏洞<br/>CVSS 高危\"] --> PATH[\"漏洞代码路径<br/>堆内存布局与泄漏机理\"]\n    PATH --> ATK[\"攻击者 3 步完整攻击链<br/>数据外传协议\"]\n    ATK --> DET[\"检测: Suricata 网络规则<br/>auditd 主机层 · 内存异常特征\"]\n    DET --> FIX[\"修复方案对比<br/>GGUF 量化类漏洞模式\"]\n    FIX --> DEF[\"防御清单<br/>长期安全架构建议<br/>企业助手 · IDE · 多租户 SaaS 场景\"]",
+  "isSvg": false
+ }
+]

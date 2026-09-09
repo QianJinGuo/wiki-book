@@ -1,0 +1,7 @@
+[
+ {
+  "title": "OpenSpec 规范驱动开发——四类文档意图锁定",
+  "code": "graph TD\n    P[\"proposal.md 提案<br/>强制填写不做什么\"] --> D[\"design.md 技术设计<br/>保留开放问题区\"]\n    D --> T[\"tasks.md 任务清单<br/>最小粒度原子操作\"]\n    T --> S[\"specs 规范增量<br/>ADDED / MODIFIED / REMOVED\"]\n    S -.归档更新基线.-> P\n    HIL[\"人在回路审阅<br/>强制性前提\"] -.步骤 2.-> T\n    ALL[\"四类文档构成意图锁定闭环<br/>缺一环即漂移\"] -.原则.-> P",
+  "isSvg": false
+ }
+]

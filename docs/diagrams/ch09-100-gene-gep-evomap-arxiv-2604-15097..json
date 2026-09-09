@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Gene 与 GEP——EvoMap 与清华的策略基因经验对象框架",
+  "code": "graph TD\n    G[\"Gene 策略基因<br/>约 230 token\"] --> TRIO[\"Gene / Capsule / Event 三件套\"]\n    TRIO --> GEP[\"GEP 六阶段循环<br/>Gene Evolution Protocol\"]\n    GEP --> EXP[\"受控实验: 对比 Skill<br/>输的是形态不是质量\"]\n    EXP --> AVOID[\"失败经验最优形态<br/>AVOID 警告\"]\n    AVOID -.反馈.-> GEP\n    GEP --> BENCH[\"CritPt benchmark<br/>端到端验证\"]\n    BENCH --> UP[\"协议层升格<br/>持久策略优化接口\"]",
+  "isSvg": false
+ }
+]

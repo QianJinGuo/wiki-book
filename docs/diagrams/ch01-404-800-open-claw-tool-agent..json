@@ -1,0 +1,7 @@
+[
+ {
+  "title": "800 行代码实现 OpenClaw 的 Tool 消息总线与子 Agent 管理",
+  "code": "graph TD\n    TR[\"ToolRegistry<br/>薄抽象层贴近模型 API<br/>exclude 控制子 Agent 能力边界\"] --> MB[\"MessageBus<br/>出站入站方向分离<br/>有无订阅者二分路由\"]\n    MB --> LOCK[\"互斥锁并发控制<br/>单进程妥协 为多用户预留\"]\n    LOCK --> EXEC[\"ExecTool 三层防护<br/>深度防御\"]\n    EXEC --> PHI[\"薄抽象层的工程价值\"]",
+  "isSvg": false
+ }
+]

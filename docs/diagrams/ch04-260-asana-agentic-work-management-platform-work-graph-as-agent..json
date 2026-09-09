@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Asana Agentic Work Management——Work Graph 即 Agentic OS",
+  "code": "graph TD\n    WHY[\"为什么做 Agentic Work Management<br/>SaaSpocalypse 背景\"] --> L1[\"第一层: 个人助理 Asana Dash\"]\n    L1 --> L2[\"第二层: 下一代 AI Teammates\"]\n    L2 --> L3[\"第三层: 垂直应用高价值场景\"]\n    L3 --> CMP[\"竞品差异化对照<br/>四个结构性优势待验证\"]\n    CMP --> OPEN[\"三个值得跟踪的开放问题\"]",
+  "isSvg": false
+ }
+]

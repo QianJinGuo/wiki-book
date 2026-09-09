@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AI Friendly 架构设计——面向无人值守开发时代",
+  "code": "graph TD\n    F3[\"三范式框架<br/>确定性到概率性<br/>结构化到语义化 · 静态到动态\"] --> BIG[\"架构大图<br/>基础依赖层加 AI Friendly 独有三层<br/>加质量稳定性\"]\n    BIG --> CASE[\"实战: 淘天秒杀业务<br/>AI 审核系统 · CogentAI 答疑\"]\n    CASE --> CTX[\"Context Engineering 实践<br/>审核场景与通用能力\"]\n    CTX --> API[\"AI Friendly API 设计<br/>评测与可观测体系\"]",
+  "isSvg": false
+ }
+]

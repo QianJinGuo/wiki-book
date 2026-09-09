@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Code 大型代码库实战——五扩展点套具配置",
+  "code": "graph TD\n    N[\"大型代码库导航<br/>Agent 式搜索优于 RAG\"] --> FIVE\n    subgraph FIVE[\"五扩展点套具\"]\n        E1[\"CLAUDE.md 记忆\"]\n        E2[\"Hooks\"]\n        E3[\"Skills\"]\n        E4[\"Plugins 与 MCP\"]\n        E5[\"LSP 集成与子 Agent\"]\n    end\n    FIVE --> M1[\"模式一: 可规模化导航\"]\n    FIVE --> M2[\"模式二: 主动维护 CLAUDE.md\"]\n    FIVE --> M3[\"模式三: 所有权分配\"]\n    M1 --> MOAT[\"核心洞察: 上下文即护城河\"]\n    M2 --> MOAT\n    M3 --> MOAT",
+  "isSvg": false
+ }
+]

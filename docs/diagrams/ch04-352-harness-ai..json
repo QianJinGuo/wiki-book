@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Harness 不是目的——知识才是护城河的知识沉淀实践",
+  "code": "graph TD\n    subgraph GEN[\"知识三通道沉淀\"]\n        W[\"工作流执行\"]\n        E1[\"经验教训\"]\n        E2[\"最佳实践\"]\n    end\n    W --> KB\n    E1 --> KB\n    E2 --> KB\n    KB[\"团队知识库<br/>独立 Git 仓库单一事实源\"] --> IX[\"三级渐进式索引<br/>查询预算\"]\n    IX --> USE[\"按需主动查询\"]\n    USE -.引用追踪闭环.-> KB\n    MAT[\"三级成熟度加自动衰减\"] -.新陈代谢.-> KB\n    LINT[\"Lint 治理知识膨胀\"] -.质量.-> KB",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Code Subagents 深度指南——上下文卫生实战",
+  "code": "graph TD\n    D[\"长会话为什么会变脏<br/>Subagent 本质是上下文垃圾填埋场\"] --> V[\"三层价值\"]\n    V --> BUILTIN[\"内置 Explore 和 Plan\"]\n    BUILTIN --> MODE[\"fresh vs fork 决策树<br/>fork 的 token 成本被低估\"]\n    MODE --> HOOK[\"context-timeline 钩子<br/>运维层必需\"]\n    HOOK --> C4[\"四类高频自定义 Subagent<br/>代码审查 · 影响面分析<br/>测试诊断 · 文档一致性\"]",
+  "isSvg": false
+ }
+]

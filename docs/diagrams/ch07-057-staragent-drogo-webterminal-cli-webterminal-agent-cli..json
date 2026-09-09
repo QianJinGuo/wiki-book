@@ -1,0 +1,7 @@
+[
+ {
+  "title": "StarAgent 与 Drogo WebTerminal CLI——把终端变成 Agent 手脚",
+  "code": "graph TD\n    L[\"4 层职责分离\"] --> SES[\"会话设计<br/>复用已登录浏览器上下文\"]\n    SES --> EXEC[\"命令执行动态闭环<br/>三份证据文件可查证\"]\n    EXEC --> FILE[\"文件传输协议化<br/>5 个文件 API 带校验\"]\n    FILE --> DBG[\"交互式调试<br/>HTTP 控制面像普通 shell<br/>状态保持\"]\n    DBG --> CASE[\"验收: Emacs + gdb + coredump<br/>GPU hang 现场\"]\n    CASE --> PAT[\"6 个可复用工程模式<br/>11 个 CLI 子命令<br/>CLI 是 Skill 的执行面\"]",
+  "isSvg": false
+ }
+]

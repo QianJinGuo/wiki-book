@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Qwen Code Skill 测试框架——录制回放与断言",
+  "code": "graph TD\n    MOT[\"背景与动机\"] --> ARCH[\"核心架构<br/>测试文件 Schema · 回归指标\"]\n    ARCH --> MVP[\"MVP 阶段\"]\n    MVP --> DIFF[\"与现有工具差异<br/>测试工具到回归框架跃迁<br/>执行与验证分离 · DSL 可编辑<br/>ASK User Question 建模\"]\n    DIFF -.vs Promptfoo.-> CMP[\"本质差异分析\"]",
+  "isSvg": false
+ }
+]

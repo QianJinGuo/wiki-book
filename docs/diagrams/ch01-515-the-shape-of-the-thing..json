@@ -1,0 +1,7 @@
+[
+ {
+  "title": "The Shape of the Thing——从 co-intelligence 到管理 AI",
+  "code": "graph TD\n    C[\"co-intelligence<br/>人和 AI 来回对话\"] --> M[\"managing AIs<br/>把数小时工作交给 Agent\"]\n    M --> OT[\"Otter Test 指数曲线<br/>图像到视频到 benchmark\"]\n    OT --> SF[\"四张指数曲线<br/>METR Long Tasks 等\"]\n    SF --> FAC[\"Software Factory<br/>激进组织实验<br/>rolling disruption\"]\n    FAC --> RSI[\"Recursive Self-Improvement<br/>不再是科幻\"]\n    RSI --> U[\"不确定性不是无能为力<br/>现实主义立场\"]",
+  "isSvg": false
+ }
+]

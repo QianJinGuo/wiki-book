@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Harness Engineering 从理论到实战——行为正确性与 Ashby 定律",
+  "code": "graph TD\n    T[\"Böckeler 理论框架三句话\"] --> GAP[\"行为正确性: 最大缺口<br/>自我指涉验证回路的结构性死结\"]\n    GAP --> ROT[\"上下文腐烂: 长任务隐形杀手<br/>Anthropic 两段式架构\"]\n    ROT --> NAV[\"可驾驭性: 被忽略的架构判决<br/>高可驾驭 vs 低可驾驭\"]\n    NAV --> ASH[\"Ashby 定律: 模型越强<br/>需要的纪律越多\"]\n    ASH --> B[\"边界: 对管理者的三件事\"]",
+  "isSvg": false
+ }
+]

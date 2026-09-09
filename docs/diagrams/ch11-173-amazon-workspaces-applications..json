@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Amazon WorkSpaces Applications 快速搭建企业培训环境",
+  "code": "graph TD\n    PAIN[\"痛点: 50 人 GPU 培训手动配置一整天\"] --> CFN[\"CloudFormation 基础设施部署\"]\n    CFN --> IMG[\"制作自定义镜像<br/>Image Builder 可入 CI/CD\"]\n    IMG --> FS[\"创建 Fleet 与 Stack\"]\n    FS --> WARM[\"培训前预热策略\"]\n    WARM --> URL[\"批量生成学员 URL<br/>Auto Scaling 弹性\"]\n    URL --> ZERO[\"培训结束资源归零<br/>ON_DEMAND 按需计费\"]",
+  "isSvg": false
+ }
+]

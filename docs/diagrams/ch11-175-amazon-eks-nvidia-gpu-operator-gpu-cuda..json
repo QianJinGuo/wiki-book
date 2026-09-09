@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Amazon EKS 上用 NVIDIA GPU Operator 管理驱动与 CUDA 负载",
+  "code": "graph TD\n    P[\"核心问题: 平台团队 GPU 运维边界不清\"] --> OP[\"GPU Operator 本质<br/>在 host 节点安装 driver\"]\n    OP --> PIT[\"关键踩坑<br/>driver 兼容不只是 CUDA 矩阵\"]\n    PIT --> NG[\"节点组架构<br/>managed vs self-managed<br/>taint 与 toleration 调度\"]\n    NG --> COMBO[\"生产推荐组合<br/>6 步实践路径\"]\n    COMBO --> AIOPS[\"Kiro 加 EKS MCP<br/>AI 运维闭环\"]",
+  "isSvg": false
+ }
+]

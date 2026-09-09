@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Rein——4 模块与 5 类型边界防止 agent.go 膨胀到 3000 行",
+  "code": "graph TD\n    M[\"4 模块分工\"] --> B[\"5 条类型边界<br/>数据契约\"]\n    B --> INV[\"7 个不变量<br/>核心循环的宪法\"]\n    INV --> P1[\"ToolSpec 与 Tool 分离<br/>安全边界\"]\n    INV --> P2[\"Provider 流式等价同步\"]\n    INV --> P3[\"投影式压缩<br/>Context 不改写历史\"]\n    P1 --> OE[\"Observation Envelope<br/>一切失败回传模型\"]\n    P3 --> OPT[\"18 个 Option 安全默认<br/>复检链改输入必重跑\"]",
+  "isSvg": false
+ }
+]

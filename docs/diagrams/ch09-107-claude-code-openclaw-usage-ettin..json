@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Code 与 OpenClaw 记忆检索升级——Ettin Reranker",
+  "code": "graph TD\n    CC[\"Claude Code 记忆检索现状<br/>Sonnet sideQuery\"] --> P[\"Retrieve-then-Rerank 范式<br/>Ettin Reranker 核心优势\"]\n    OC[\"OpenClaw 记忆检索现状\"] --> P\n    P --> I1[\"Claude Code 集成<br/>方案一替换 sideQuery<br/>方案二 LLM 路由加 Ettin 验证层\"]\n    P --> I2[\"OpenClaw 集成<br/>sqlite-vec 加 BM25 加 Ettin\"]\n    I1 --> K[\"关键考量<br/>延迟 vs 精度权衡<br/>部署复杂度 · 架构兼容\"]\n    I2 --> K",
+  "isSvg": false
+ }
+]

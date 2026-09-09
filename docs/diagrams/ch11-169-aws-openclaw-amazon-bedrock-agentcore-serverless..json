@@ -1,0 +1,7 @@
+[
+ {
+  "title": "OpenClaw 迁移 Bedrock AgentCore 多租户 Serverless 部署",
+  "code": "graph TD\n    P1[\"环境准备<br/>账号 · 依赖 · Docker · X-Ray 权限\"] --> P2[\"开通 Bedrock Claude 模型访问\"]\n    P2 --> P3[\"安装 CDK 与 AgentCore Starter Toolkit\"]\n    P3 --> P4[\"克隆项目 · 设置部署区域<br/>Python 虚拟环境\"]\n    P4 --> P5[\"CDK Bootstrap 初始化\"]\n    P5 --> P6[\"预览资源 · 应用部署补丁\"]\n    P6 --> D[\"多租户 Serverless 架构上线\"]",
+  "isSvg": false
+ }
+]

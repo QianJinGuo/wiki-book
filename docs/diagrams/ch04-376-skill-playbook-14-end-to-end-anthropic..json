@@ -1,0 +1,7 @@
+[
+ {
+  "title": "鹅厂 Skill 写作完整 Playbook——14 章节 end-to-end 实战",
+  "code": "graph TD\n    PAIN[\"5 大痛点\"] --> L3[\"渐进式加载 3 层<br/>Anthropic 设计\"]\n    L3 --> W[\"4 大写作原则<br/>开头说清三件事 · 祈使句加为什么<br/>Before/After 对比 · Few-Shot 3-5 示例\"]\n    W --> EVAL[\"5 大评估指标<br/>Skill Creator 3 阶段评估\"]\n    EVAL --> SEC[\"4 大安全风险与防御\"]\n    SEC --> DBG[\"调试排错链\"]\n    TH[\"理论补充: 技能是压缩的行动经验<br/>技能表示没有唯一答案\"] -.复旦视角.-> W",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "CLAUDE.md——Claude Code 8 步生命周期源码分析",
+  "code": "graph TD\n    S1[\"步骤 1: 上下文组装<br/>buildEffectiveSystemPrompt<br/>CLAUDE.md 四级加载与 include\"] --> S2[\"步骤 2: API 调用<br/>queryLoop 异步生成器\"]\n    S2 --> S3[\"步骤 3: 响应解析<br/>text 加 tool_use 块<br/>43 个内置工具\"]\n    S3 --> S4[\"步骤 4: 权限检查<br/>四层判断加分类器\"]\n    S4 --> S5[\"步骤 5: 工具执行<br/>统一接口 · 并发读写分离\"]\n    S5 -.循环至终止.-> S1\n    S5 --> IN[\"Harness 是真正工程壁垒<br/>技能预算约束\"]",
+  "isSvg": false
+ }
+]

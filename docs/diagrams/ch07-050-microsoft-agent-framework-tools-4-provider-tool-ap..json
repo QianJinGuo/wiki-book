@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Microsoft Agent Framework Tools——4 类工具与 Tool Approval",
+  "code": "graph TD\n    subgraph T4[\"4 类工具\"]\n        F[\"Function Tools<br/>应用代码\"]\n        H[\"Hosted Tools<br/>Provider 托管\"]\n        M[\"MCP Tools<br/>标准化协议\"]\n        FD[\"Foundry 扩展工具<br/>项目级连接\"]\n    end\n    T4 --> PM[\"Provider 能力矩阵<br/>运行时能力落差\"]\n    T4 --> AP[\"Tool Approval 框架级统一闸门<br/>默认 always_require 按风险分级\"]\n    AP --> AT[\"Agent as Tool<br/>组合式多智能体<br/>需独立性测试\"]",
+  "isSvg": false
+ }
+]
