@@ -1,0 +1,7 @@
+%% title: 在 AWS 上用 Data Mesh 构建 Agentic AI 应用
+graph TD
+    WHY["Agentic AI 需要新治理模型<br/>五步链路每步独立授权<br/>RAG 单点过滤失效"] --> L1["Agent 层<br/>AgentCore Runtime 加 LangGraph<br/>microVM 隔离"]
+    L1 --> L2["Gateway 层<br/>请求拦截 JWT 加 scope<br/>响应拦截过滤与脱敏"]
+    L2 --> L3["Tools 层 4 个 Lambda MCP 工具"]
+    L3 --> L4["数据层<br/>S3 Vectors 向量存储<br/>S3 Tables 加 Iceberg · Lake Formation"]
+    L4 --> GOV["五层查询治理<br/>Gateway 护栏 vs 推理层护栏"]

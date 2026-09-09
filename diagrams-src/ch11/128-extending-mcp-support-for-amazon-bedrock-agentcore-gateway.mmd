@@ -1,0 +1,7 @@
+%% title: 扩展 AgentCore Gateway 的 MCP 支持——企业工具统一网关
+graph TD
+    U["统一企业 MCP servers<br/>单一 Gateway 暴露原语"] --> DL["动态列举实现运行时灵活性"]
+    DL --> SSE["Streamable HTTP 流式<br/>Session 管理 · Elicitation"]
+    SSE --> OBO["OAuth 2.0 on-behalf-of<br/>token 交换"]
+    OBO --> UPD["MCP 2026-07 规范更新<br/>无状态化 · HTTP 标准化"]
+    UPD --> PRAC["实践: Agent 超 5 个引入工具网关<br/>Gateway 层实施安全策略<br/>评估锁定风险"]

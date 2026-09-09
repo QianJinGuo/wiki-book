@@ -1,0 +1,8 @@
+%% title: Hermes Agent 工具系统架构分析
+graph TD
+    A4["4 层架构"] --> TE["ToolEntry 数据结构<br/>字段信息密度"]
+    TE --> REG["自注册机制<br/>注册安全三层防护"]
+    REG --> DISP["工具调度流程"]
+    DISP --> CHK["check_fn 30 秒 TTL 缓存"]
+    CHK --> TS["Toolset 组合与动态 Schema 覆盖"]
+    TS --> BP["最佳实践<br/>is_async 异步标记<br/>错误处理规范 · MCP 集成"]

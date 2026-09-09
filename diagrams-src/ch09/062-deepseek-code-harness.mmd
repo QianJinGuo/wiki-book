@@ -1,0 +1,7 @@
+%% title: DeepSeek Code Harness——Model 加 Harness 等于 Agent
+graph TD
+    F["核心公式: Model 加 Harness 等于 Agent<br/>Harness 决定长时运行能力"] --> P1["v0.1 开源: 一切皆插件<br/>可替换范围覆盖整个运行时<br/>四种模式四套插件组合"]
+    P1 --> P2["append-only 统一事件流<br/>Model-visible 即 logged<br/>层级 Supervisor-Worker 混合"]
+    P2 --> P3["源码机制: Fiber 与 effect<br/>可逆副作用 · Proxy 解析<br/>worker_threads 隔离"]
+    P3 --> COST["成本实测<br/>13809 token 入场费<br/>PTC 不省在前省在后"]
+    COST --> OBS["生产可观测与事故复盘制度"]
