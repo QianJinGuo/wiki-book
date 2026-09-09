@@ -1,0 +1,8 @@
+%% title: DeepSeek V4 解读——1M 上下文与三项架构创新
+graph TD
+    SPEC["两档独立预训练 MoE<br/>Pro 1.6T 激活 49B<br/>Flash 284B 激活 13B<br/>默认 1M 上下文"] --> WHY["为什么 1M 是必须<br/>Agent 多轮 · 整仓库理解<br/>长文档推理"]
+    WHY --> T3["Transformer 1M 时代三瓶颈<br/>残差失稳 · O 平方复杂度 · 训练稳定"]
+    T3 --> IN1["mHC 多流约束残差<br/>双随机矩阵解梯度问题"]
+    T3 --> IN2["CSA 与 HCA 混合注意力<br/>KV 缓存压到工程可承受"]
+    T3 --> IN3["Muon 二阶优化器"]
+    IN2 --> BM["V4-Pro SWE 80.6<br/>MRCR 1M 83.5 开源最高"]

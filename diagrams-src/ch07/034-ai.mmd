@@ -1,0 +1,5 @@
+%% title: 网盘存量代码迁移——三层架构管住 AI 输出
+graph TD
+    L1["执行层 Skill<br/>Checklist 最有用的约束<br/>提取加校验加修复三层拆分"] --> L2["调度层 SubAgent<br/>上下文膨胀是必然问题<br/>Agent-Memory 跨步骤传递"]
+    L2 --> L3["协作层 Agent Team<br/>四路并行 · 专注度提升<br/>Mailbox 消息通道最小基建"]
+    L3 --> INS["从用 AI 做事<br/>到让 AI 稳定地做事"]

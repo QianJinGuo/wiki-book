@@ -1,0 +1,10 @@
+%% title: Model-Harness Fit——Agent 脚手架适配模型
+graph TD
+    F["核心论点: 模型与壳的适配性<br/>模型不是单独存在的"] --> S1["Codex: typed 异步协议"]
+    F --> S2["Claude Code: 直接类型化对话循环"]
+    F --> S3["Copilot CLI: supervisor 协议<br/>spawn 子进程走 stdio"]
+    S1 --> TOOLS["工具表是模型方言<br/>Skill 同格式不同契约"]
+    S2 --> TOOLS
+    S3 --> TOOLS
+    TOOLS --> MEM["记忆层是最密集碰撞面<br/>六字符决定记忆生死"]
+    MEM --> COST["换模型的三重同时崩溃<br/>Matched Pair 会漂移"]
