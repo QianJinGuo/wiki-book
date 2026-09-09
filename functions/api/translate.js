@@ -1,19 +1,22 @@
 // Cloudflare Pages Function: batched real-time translation for the live
 // English mode (overrides/assets/javascripts/live-translate.js).
 // Same guard pattern as ai-proxy.js: origin allowlist, per-IP rate limit,
-// body caps — then forward a chat-completions request to the upstream
-// Worker with the server-side SITE_TOKEN. Segments travel as numbered
-// lines instead of JSON so a weak model cannot break the protocol.
+// body caps. Calls SenseNova's OpenAI-compatible endpoint directly with
+// the server-side SENSENOVA_API_KEY secret (never exposed to the client).
+// Segments travel as numbered lines instead of JSON so a reasoning model
+// cannot break the protocol; finish_reason=length degrades to untranslated
+// source lines, never to broken output.
 
 import { corsHeaders, isAllowedOrigin } from '../_shared/user-auth.js';
 
-const WORKER_URL = "https://ai-chat-proxy.jinguo.workers.dev";
+const UPSTREAM_URL = "https://token.sensenova.cn/v1/chat/completions";
+const DEFAULT_MODEL = "deepseek-v4-flash";
 const MAX_BODY_BYTES = 64 * 1024;
 const MAX_TEXTS = 24;
 const MAX_TEXT_LENGTH = 2000;
 const MAX_TOTAL_CHARS = 12000;
-const MAX_TOKENS = 2048;
-const UPSTREAM_TIMEOUT_MS = 30000;
+const MAX_TOKENS = 4096;
+const UPSTREAM_TIMEOUT_MS = 45000;
 const TARGET = "en";
 
 const RATE_LIMIT_WINDOW_MS = 60000;
@@ -41,6 +44,15 @@ const SYSTEM_PROMPT = [
 ].join("\n");
 
 export async function onRequest(context) {
+  try {
+    return await handle(context);
+  } catch (error) {
+    console.error("translate unhandled:", String(error && error.stack || error).slice(0, 500));
+    return json({ error: "Internal error", detail: String(error && error.stack || error).slice(0, 300) }, 500, context.request);
+  }
+}
+
+async function handle(context) {
   const { request, env } = context;
 
   if (!request.headers.get('Origin') || !isAllowedOrigin(request)) {
@@ -79,7 +91,7 @@ export async function onRequest(context) {
   const validationError = validateRequest(body);
   if (validationError) return json({ error: validationError }, 400, request);
 
-  if (!env.SITE_TOKEN) {
+  if (!env.SENSENOVA_API_KEY) {
     return json({ error: "Translation proxy is not configured" }, 503, request);
   }
 
@@ -87,11 +99,11 @@ export async function onRequest(context) {
   try {
     texts = await translateTexts(body.texts, env);
   } catch (error) {
-    console.error("translate upstream error:", error);
+    console.error("translate upstream error:", String(error).slice(0, 300));
     return json({ error: "Upstream translation failed" }, 502, request);
   }
 
-  return json({ texts });
+  return json({ texts }, 200, request);
 }
 
 async function translateTexts(texts, env) {
@@ -101,14 +113,15 @@ async function translateTexts(texts, env) {
 
   let resp;
   try {
-    resp = await fetch(WORKER_URL, {
+    resp = await fetch(UPSTREAM_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "X-Site-Token": env.SITE_TOKEN,
+        "Authorization": `Bearer ${env.SENSENOVA_API_KEY}`,
       },
       signal: AbortSignal.timeout(UPSTREAM_TIMEOUT_MS),
       body: JSON.stringify({
+        model: env.SENSENOVA_MODEL || DEFAULT_MODEL,
         messages: [
           { role: "system", content: SYSTEM_PROMPT },
           { role: "user", content: numbered },
