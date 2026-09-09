@@ -1,0 +1,6 @@
+%% title: 生产级 Harness 的 12 大组件与框架对比
+graph TD
+    WHY["问题通常不在模型<br/>Harness 是产出行为的机械结构<br/>把它理解成操作系统"] ==> C12["12 个组件<br/>编排循环 工具 记忆 上下文<br/>Prompt 组装 输出解析 状态持久化<br/>错误恢复 权限 验证闭环<br/>Sub-agent 执行模型 终止条件"]
+    C12 ==> LOOP["一次完整循环七步<br/>文件系统纳入 Harness"]
+    LOOP ==> EVOLVE["好的 Harness 随模型增强而变薄<br/>模型与 Harness 共同进化"]
+    EVOLVE ==> PRACT["从单 Agent 开始不过度设计<br/>上下文窗口是核心约束"]

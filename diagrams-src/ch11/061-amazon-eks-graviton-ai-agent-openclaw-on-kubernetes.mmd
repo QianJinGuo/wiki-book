@@ -1,0 +1,6 @@
+%% title: EKS 加 Graviton 多租户 AI Agent 平台——OpenClaw on K8s
+graph TD
+    OPERATOR["Kubernetes Operator 模式<br/>声明式多租户生命周期管理"] ==> ISO["Namespace per User<br/>四层隔离架构安全价值"]
+    ISO ==> COST["Graviton 加 Karpenter 加 Spot<br/>成本优化组合"]
+    COST ==> AUTH["共享 IAM Role 加 Pod Identity<br/>O 1 授权 · 共享 ALB 路径路由"]
+    AUTH ==> RUNTIME["运行时选择: 默认 runc<br/>高安全用 Kata · EBS 与 EFS 选型"]
