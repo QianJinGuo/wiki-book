@@ -1,7 +1,0 @@
-%% title: Agent 可靠性工程解法——Skillify 持续改进机制
-graph TD
-    FAIL["两次失败: 传感器失效<br/>28 分钟事故 · 共同本质"] --> S10["Skillify 10 步法<br/>SKILL.md 契约 · 确定性脚本<br/>单测与集成测试 · LLM evals<br/>Resolver 路由与验证"]
-    S10 --> M1["机制 1: 自举循环<br/>智能造约束 约束限制智能"]
-    M1 --> M2["机制 2: structurally impossible<br/>优于 shouldn't happen"]
-    M2 --> M3["机制 3: 可验证性是改进前提"]
-    M3 --> W["三权衡: 灵活性 vs 确定性<br/>Skill 数量 vs 复杂度 · 生命周期"]

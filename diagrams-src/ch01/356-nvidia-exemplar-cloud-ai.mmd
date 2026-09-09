@@ -1,4 +1,0 @@
-%% title: NVIDIA Exemplar Cloud——AI 训练性能差距诊断
-graph TD
-    GAP["同 H100 集群吞吐差 8-12%<br/>kernel hypervisor BIOS NCCL 累积"] ==> CASES["4 个调试案例: SMMU 虚拟化<br/>C-state NUMA · NCCL QPS · 容器拓扑传播"]
-    CASES ==> METHOD["perf Nsight nccl-tests 定位<br/>到单层调优 到 workload 验证<br/>preflight 检查表先行"]

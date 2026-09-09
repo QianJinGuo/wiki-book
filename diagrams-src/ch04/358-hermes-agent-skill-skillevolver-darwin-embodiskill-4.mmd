@@ -1,8 +1,0 @@
-%% title: Hermes Skill 互优化——SkillEvolver 与 Darwin 与 EmbodiSkill 四轮闭环
-graph TD
-    S["初始 Skill"] --> D["Darwin-skill 质检员<br/>评估-修改角色分离"]
-    D --> E["SkillEvolver 进化器<br/>变异与重组"]
-    E --> EM["EmbodiSkill 裁判<br/>技能体与附录分离防膨胀"]
-    EM -->|"通过 棘轮机制锁住"| S
-    D -->|"4 轮迭代"| E
-    EM --> F["大发现: AI 不需要更强的模型<br/>需要更好的互优化闭环"]

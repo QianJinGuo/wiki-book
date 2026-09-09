@@ -1,6 +1,0 @@
-%% title: Claude Code Subagent 详解——把探索关进独立工作区
-graph TD
-    DIRTY["长会话为什么会变脏<br/>密度下降 · 压缩损失"] ==> CORE["Subagent 是独立工作区调用<br/>主代理只回收结论<br/>description 是路由契约"]
-    CORE ==> V3["三层价值: 隔离 加 压缩 加 并行"]
-    V3 ==> MODE["fresh vs fork 两种调用"]
-    MODE ==> BOUND["使用边界: 上下文切不干净的任务<br/>留在主循环 · Harness 大于 Model"]

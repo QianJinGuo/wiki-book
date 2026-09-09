@@ -1,5 +1,0 @@
-%% title: Prompt Injection 即角色混淆
-graph TD
-    WORLD["LLM 世界: 单一通道 token 流<br/>所有内容混在同一字符串<br/>编辑字符串就是编辑模型现实"] ==> ROLES["角色标签作类型系统<br/>system user think tool<br/>已过度负载多重职责"]
-    ROLES ==> INJECTION["注入等于角色边界失败<br/>低权限文本获高权限角色权威"]
-    INJECTION ==> DEF["两种防御方式<br/>角色探针测量角色感知"]

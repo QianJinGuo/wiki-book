@@ -1,7 +1,0 @@
-%% title: 严格 CSP 下的密码窃取——HTML 注入与 Chrome 自动填充
-graph TD
-    A1["严格 CSP 下的 HTML 注入<br/>无需 JavaScript"] --> A2["Chrome 自动填充触发<br/>域名无关的密码填充"]
-    A2 --> A3["Referer 头外泄<br/>meta 重定向双重滥用"]
-    A3 --> MEAS["浏览器特定测量<br/>Chrome 特权地位"]
-    MEAS --> DEF["防御<br/>Referrer-Policy 强制响应头<br/>上下文 HTML 编码<br/>登录页禁自动填充提示"]
-    DEF -.检测.-> SCAN["SAST/DAST 加<br/>表单 planting 检测"]

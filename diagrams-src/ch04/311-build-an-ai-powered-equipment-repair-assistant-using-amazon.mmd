@@ -1,6 +1,0 @@
-%% title: 用 Bedrock AgentCore 构建设备维修助手
-graph TD
-    L4["四层架构"] ==> AUTH["认证层: Cognito 加 Amplify<br/>Bearer Token 直调 Runtime"]
-    AUTH ==> RT["Runtime 层: 单端点架构<br/>path 字段路由 chat 与 issues"]
-    RT ==> AI["AI 层: Strands Agent 加 KB<br/>retrieve_and_generate 检索制造商文档"]
-    AI ==> DATA["数据层: DynamoDB 工单<br/>AgentCore Memory 短长期记忆"]

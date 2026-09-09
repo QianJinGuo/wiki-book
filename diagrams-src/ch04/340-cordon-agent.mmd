@@ -1,6 +1,0 @@
-%% title: Cordon——Agent 工具调用的语义事务安全边界
-graph TD
-    Q["问题: 逐个工具审批不够<br/>单次调用无害 组合起来有害"] ==> CORE["核心: Semantic Transaction<br/>三步协议 Prepare 到 Validate<br/>到 Commit 或 Abort"]
-    CORE ==> M3["三个关键机制"]
-    M3 ==> ARCH["Runtime: 在 Tool-Dispatch<br/>边界插入事务控制面"]
-    ARCH ==> RES["实验结果与边界声明"]

@@ -1,5 +1,0 @@
-%% title: 多 Agent 编排系统
-graph TD
-    ROOTCAUSE["控制面缺失是故障根源<br/>编排层三要素: 执行 状态 审批门"] ==> M4["四种编排模式<br/>Orchestrator Worker 分治<br/>P2P 自主 · Auction 择优 · 投票共识"]
-    M4 ==> TOOLS["Step Functions 确定性工作流<br/>Bedrock Agents 推理协调 · MWAA DAG"]
-    TOOLS ==> Q4["四大设计问题: 任务分解<br/>角色分配 通信协议 冲突消解"]

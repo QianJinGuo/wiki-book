@@ -1,9 +1,0 @@
-%% title: AI 时代的 Git 版本管理最佳实践
-graph TD
-    P1["痛点: diff 不记录意图与推理"] --> BP["Agent-Aware Commit 规范"]
-    P2["脏工作区噪声大"] --> CK["Checkpoint 小步提交<br/>Interactive Rebase 整理历史"]
-    P3["merge 只校验文本"] --> AC["Atomic Commit 原子粒度"]
-    P4["巨型提交审查失效"] --> FB["Feature Branch 强制<br/>worktree 隔离并发 Agent"]
-    CK --> PR["结构化 PR 模板<br/>设计决策与备选方案"]
-    PR --> AM["AGENT.md 团队规范手册<br/>Stacked PR 层叠拆解"]
-    AM --> VCS["新一代 VCS<br/>Jujutsu 以变更为中心<br/>GitButler 虚拟分支"]

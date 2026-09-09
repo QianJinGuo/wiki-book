@@ -1,6 +1,0 @@
-%% title: Hermes SOUL.md——3 层提示词与 14 个内置人格
-graph TD
-    L3["三层提示词架构 缓存友好<br/>stable 会话不变 · context 会话间变<br/>volatile 每轮不同"] ==> S14["stable 层 14 部分按序拼接<br/>SOUL.md 永远第一"]
-    S14 ==> LOAD["SOUL.md 加载流程<br/>安全扫描防注入第一道门"]
-    LOAD ==> P14["personality 命令<br/>14 内置人格加自定义"]
-    P14 ==> SEP["SOUL.md 与 AGENTS.md 职责分离<br/>特殊执行模式继承规则"]

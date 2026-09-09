@@ -1,8 +1,0 @@
-%% title: Subagents 详解——Claude Code 如何避免上下文污染
-graph TD
-    DIRTY["长会话为什么会变脏"] --> VAL["Subagent 价值不是多开一个 Agent<br/>而是把脏活挡在主窗口外"]
-    VAL --> FILE["一个 Subagent 文件长什么样"]
-    FILE --> B["内置 Explore 和 Plan"]
-    B --> FORK["Fork 很强但别当默认"]
-    FORK --> SEE["context-timeline 钩子看见上下文"]
-    SEE --> MINE["常用自定义 Subagents 与四个坑"]

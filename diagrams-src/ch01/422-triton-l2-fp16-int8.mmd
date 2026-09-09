@@ -1,6 +1,0 @@
-%% title: Triton L2 缓存命中优化矩阵乘法——fp16 与 int8
-graph TD
-    BASE["基础概念"] --> L2["分组计算利用 L2 Cache<br/>数据访问模式是本质"]
-    L2 --> I8["int8 精度下的 Matmul<br/>精度与性能的博弈"]
-    I8 --> PERF["性能测试结论"]
-    PERF --> FA["与 Flash Attention<br/>算子融合的联系"]

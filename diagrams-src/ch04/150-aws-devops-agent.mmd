@@ -1,5 +1,0 @@
-%% title: AWS DevOps Agent 实战——云网络故障自主调查
-graph TD
-    COMPLEX["混合云网络故障复杂性<br/>控制平面健康但数据平面黑洞<br/>gray failure 最危险"] ==> L3["Agent 三层能力递进<br/>数据关联假设排除 到 深度定位"]
-    L3 ==> PLAN["5 阶段 Mitigation Plan<br/>Timeline 加 Root cause 加 修复方案<br/>全只读操作不执行写"]
-    PLAN ==> PROBE["端到端主动探测是唯一解<br/>告警延迟 3.5-4 分钟"]

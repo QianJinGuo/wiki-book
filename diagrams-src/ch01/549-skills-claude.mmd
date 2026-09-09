@@ -1,6 +1,0 @@
-%% title: Skills——让 Claude 记住怎么做
-graph TD
-    DIFF["Skill vs Prompt 本质差异<br/>一次性指令 vs 可复用工作流<br/>跨项目持久 可链式调用"] --> FORK["context: fork<br/>隔离 Subagent 运行<br/>解决主 session 污染"]
-    FORK --> DIS["disable-model-invocation<br/>防副作用自动触发<br/>安全栏杆模式"]
-    DIS --> MIN["SKILL.md 最小结构<br/>name 加 description"]
-    MIN --> DEP["两种部署粒度<br/>沉淀团队反复工作流"]

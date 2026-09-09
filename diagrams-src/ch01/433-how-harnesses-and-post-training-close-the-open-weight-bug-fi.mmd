@@ -1,7 +1,0 @@
-%% title: Harness 与 Post-training 如何弥合开源权重漏洞发现差距
-graph TD
-    THESIS["核心论点: Post-training 是决定性轴<br/>而非模型架构"] --> F1["发现 1: post-training 主导<br/>GLM-5.1 匹配 Opus 是实证"]
-    THESIS --> F2["发现 2: Harness 脚手架 1.4-1.6 倍提升<br/>质量决定开源模型能否追平 SOTA"]
-    F1 --> FM["失败模式具诊断性<br/>C 语言推理系统性短板"]
-    F2 --> FM
-    FM --> POL["政策含义: API 层 KYC<br/>优于 GPU 出口管制"]

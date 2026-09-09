@@ -1,9 +1,0 @@
-%% title: Hermes Agent Eval Harness——可验证 Skill 进化 7 模块闭环
-graph TD
-    M7["7 模块最小闭环"] --> TS["TaskSet: 环境快照非 prompt 列表<br/>代码修改 · 文档 · Skill patch 任务"]
-    TS --> TJ["TrajectoryStore: 事实来源"]
-    TJ --> VF["Verifier: 6 类判定器"]
-    VF --> SG["Selection Gate: patch 不靠直觉合入"]
-    SG --> RG["Regression Gate 3 类<br/>safety regression 优先级最高"]
-    RG --> RB["Rejected Buffer: 失败 patch 是训练数据"]
-    RB -.6 阶段落地.-> M7

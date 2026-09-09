@@ -1,5 +1,0 @@
-%% title: LangSmith Trajectory Evaluations
-graph TD
-    EVAL["Trajectory Evals: 评估消息<br/>加 工具调用 加 决策路径"] ==> MODES["两种模式: trajectory match<br/>适合步骤明确工作流<br/>加 LLM judge 适合过程合理性"]
-    MODES ==> USECASE["适合 wiki-evolver 场景<br/>很多行为只在真实运行中暴露"]
-    MODES ==> REF["reference trajectory 可有可无"]

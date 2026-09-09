@@ -1,8 +1,0 @@
-%% title: AI Evals 评估方法论——三种方法与闭环
-graph TD
-    E1["人工评估<br/>永远从人工审阅开始"] --> MIX["三方法互补"]
-    E2["基于代码的评估<br/>确定性检查"] --> MIX
-    E3["LLM-as-a-Judge<br/>需校准"] --> MIX
-    MIX --> REF["参考答案库 vs 无参考答案<br/>生产监控"]
-    REF --> LOOP["AI Engineering Loop 闭环<br/>评估集成 CI/CD"]
-    TEG["腾讯 TEG 扩展<br/>五维评估 · Rubric 三要素<br/>Agent Skill 二维用例矩阵"] -.企业实践.-> LOOP

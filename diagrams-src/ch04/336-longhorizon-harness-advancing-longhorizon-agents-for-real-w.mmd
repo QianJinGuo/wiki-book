@@ -1,5 +1,0 @@
-%% title: LongHorizon-Harness——MEA 三职分离
-graph TD
-    MEA["MEA 三职分离互相制衡<br/>Manager 规划不碰环境<br/>Executor 唯一可改环境<br/>Auditor 只读取证"] ==> STATE["状态外置: 需求 工件 事实<br/>有清洁审计证据才标 completed"]
-    STATE ==> FRESH["新鲜上下文执行<br/>审计报告是唯一跨轮记忆<br/>审计隔离与证据信任根"]
-    FRESH ==> ADAPT["可互换后端 AgentAdapter<br/>增益来自框架而非模型<br/>三大失败源框定靶心"]

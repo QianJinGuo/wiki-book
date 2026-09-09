@@ -1,5 +1,0 @@
-%% title: 用 Bedrock 内置 Guardrails 启用安全的 Agentic 支付
-graph TD
-    R5["五类安全风险<br/>失控消费 · 缺用户授权委托<br/>开发者密钥钱包泄露<br/>支付工具暴露 · 缺审计"] ==> CTRL["AgentCore 服务与控制<br/>支付限额加 Cedar 策略<br/>用户控制与委托<br/>Identity 加 Secrets Manager 存凭证"]
-    CTRL ==> PCI["带外充值让 Agent 远离敏感数据<br/>PCI 合规范围极小化<br/>可观测性一等公民"]
-    PCI ==> PRACT["初始预算从严逐步放宽<br/>充值与授权操作独立"]

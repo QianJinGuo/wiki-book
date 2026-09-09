@@ -1,7 +1,0 @@
-%% title: 打造可靠的 AI 编程环境——Claude Code Hooks 完整指南
-graph TD
-    PROB["概率性问题<br/>模型输出不可靠"] --> SOL["Hooks: 事件驱动四步流程<br/>事件 → 匹配器 → Hook → 退出码"]
-    SOL --> T4["四种 Hook 类型<br/>Command · HTTP · Prompt · Agent"]
-    T4 --> EX["7 个生产级示例<br/>自动格式化 · 保护敏感文件<br/>自动测试 · 分支保护 · 审计日志"]
-    EX --> KEY["退出码 2 是拦截唯一正确方式<br/>SessionStart 要轻量"]
-    KEY --> CICD["Headless 模式与 CI/CD 集成<br/>Project 级配置是团队基础设施"]

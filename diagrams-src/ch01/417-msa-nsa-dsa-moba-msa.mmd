@@ -1,6 +1,0 @@
-%% title: MSA 稀疏注意力三国杀——NSA 与 DSA 与 MoBA 深度对比
-graph TD
-    WHY["为什么奔向稀疏<br/>长上下文从能做到用得起"] --> MSA["MSA 架构: 粗筛加精算<br/>索引分支训练 KL 对齐<br/>Outer Gather Q Kernel"]
-    MSA --> PERF["109B 模型 1M 上下文性能<br/>3T token 对照能力不掉"]
-    PERF --> AXES["三国杀三分歧轴<br/>颗粒度 token 级或块级<br/>压不压 KV · 要不要辅助分支"]
-    AXES --> HEAD["附录: head 涌现三种模式<br/>训练配方正在收敛"]

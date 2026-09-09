@@ -1,7 +1,0 @@
-%% title: Protecting against token theft——AI 推理盗用防护
-graph TD
-    ECO["经济学差异<br/>HTTP 便宜 推理昂贵<br/>旧防御失效"] --> SHAPE["暴露面三种形状<br/>Playground 最危险<br/>Support bot 中 · 窄场景低"]
-    SHAPE --> ARCH["滥用架构<br/>适配器是核心组件<br/>包装成 OpenAI 兼容端点"]
-    ARCH --> CASE["真实案例 Chipotlai Max<br/>住宅代理分散调用"]
-    CASE --> DEF["防御落在每一次调用<br/>验证码形态演化<br/>3 行代码落地"]
-    DEF -.范式切换.-> PAR["从防盗用到护推理<br/>摊销结构决定防御位置"]

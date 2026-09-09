@@ -1,5 +1,0 @@
-%% title: Agent 后端架构——从 BFF 到 B4A
-graph TD
-    B4A["BFF 到 B4A: 消费端范式逆转<br/>人读文档变模型读 Schema<br/>契约测试取代人肉评审"] ==> STATE["状态机化与可回放<br/>驯服非确定性<br/>幂等与重试语义"]
-    STATE ==> MCP["MCP 成工具调用事实标准<br/>工具服务器加 Gateway 治理"]
-    MCP ==> HARNESS["Harness 即后端: 边界正在消解"]

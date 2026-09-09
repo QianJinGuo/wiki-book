@@ -1,7 +1,0 @@
-%% title: Agentic Overlays——把遗留 REST 服务改造成 A2A Agent
-graph TD
-    D["REST vs A2A 范式差异<br/>确定性调用 vs 推理驱动协调"] --> P3["三条迁移路径<br/>双栈并行 ✕ · 共享逻辑重构 ✕<br/>Agentic Overlay 薄包装 ✓"]
-    P3 --> ZC["零代码变更<br/>HTTP 调用原始 REST API"]
-    ZC --> DUAL["同时暴露 A2A 加 MCP"]
-    DUAL --> TR["Request Translator 模式<br/>JSON-RPC 转 REST payload"]
-    TR --> VAL["单部署管线 · 企业级价值<br/>AgentCore 生态集成"]

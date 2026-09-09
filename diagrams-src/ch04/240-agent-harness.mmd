@@ -1,7 +1,0 @@
-%% title: Agent 架构关键变化——Harness 正在成为新后端
-graph TD
-    NOW["今天的 Agent 如何工作"] --> AB["抽象后端<br/>一切向下都是 Worker"]
-    AB --> PRIM["三原语: Worker · Trigger · Function"]
-    PRIM --> LIVE["活系统: 发现 · 扩展 · 可观测"]
-    LIVE --> RECUR["会创建 Worker 的 Agent<br/>递归性质"]
-    RECUR --> BET["赌注: Harness 与后端的二元分离是暂态<br/>类别坍缩"]

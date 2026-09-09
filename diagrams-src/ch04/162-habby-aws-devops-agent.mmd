@@ -1,5 +1,0 @@
-%% title: Habby 游戏借 DevOps Agent 实现智能运维
-graph TD
-    PAIN["游戏运维特殊性: 24 小时波浪负载<br/>多账户数十服务 · 数人 SRE 支撑全球"] ==> DUAL["双通道集成<br/>Grafana 到 SNS 到 Lambda 到 飞书告警加自动调查<br/>飞书 Bot 到 Chat API 对话"]
-    DUAL ==> RESULT["MTTR 2 小时降到 20 分钟<br/>降 80% · 告警疲劳显著降低"]
-    RESULT ==> PATH["从救火到防火 · 三阶段推进<br/>按游戏项目划分 Agent Space"]

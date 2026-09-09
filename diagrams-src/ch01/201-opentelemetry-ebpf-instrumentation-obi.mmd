@@ -1,6 +1,0 @@
-%% title: OpenTelemetry eBPF Instrumentation——零代码全栈可观测
-graph TD
-    WHY["为什么需要 eBPF 零代码可观测"] ==> P3["OBI 三大支柱"]
-    P3 ==> PROTO["协议识别: 三级瀑布式匹配<br/>防误判细节"]
-    PROTO ==> LANG["语言深度集成<br/>Go goroutine 内核血缘<br/>Python asyncio 4 uprobe 加 3 Map"]
-    LANG ==> PIPE["数据管线: DAG 加死锁探测加对象池<br/>CUDA GPU 追踪 · 云监控 2.0 落地"]
