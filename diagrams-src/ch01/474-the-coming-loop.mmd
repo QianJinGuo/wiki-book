@@ -1,0 +1,7 @@
+%% title: The Coming Loop——两种循环的区分
+graph TD
+    A["Agent Loop 内部循环<br/>模型调工具整合结果<br/>模型说完成即结束"] ==> DIST["两种循环的区分"]
+    H["Harness Loop 外部循环<br/>Harness 决定工作是否真完成<br/>任务在模型说完成后继续"] ==> DIST
+    DIST ==> EFF["循环有效的领域<br/>代码移植 · 性能探索<br/>安全扫描 · 研究<br/>不生成需长期存活的代码"]
+    EFF ==> WARN["持久代码的问题<br/>防御性代码被循环放大<br/>看起来更健壮实则更不可理解"]
+    WARN ==> META["软件作为有机体<br/>无法完全退出 · 新的依赖性"]

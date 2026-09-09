@@ -1,0 +1,6 @@
+%% title: AI Coding Agent Token 成本控制五层模型
+graph TD
+    L5["五层优化模型<br/>从优化信号到优化架构递进"] ==> CACHE["Prompt Cache 三推论<br/>线性会话成本变亚线性"]
+    CACHE ==> TOOLS["四个压缩工具对比<br/>无损与有损的信息保真度预算"]
+    TOOLS ==> GRAPH["代码图谱实测<br/>Orchestrator-Worker 分工即缓存"]
+    GRAPH ==> P["数据流转四原则 · 六大误区"]

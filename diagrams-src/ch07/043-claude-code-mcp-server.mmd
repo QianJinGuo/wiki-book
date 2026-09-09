@@ -1,0 +1,5 @@
+%% title: Claude Code MCP Server 实现机制
+graph TD
+    MECH["MCP 实现机制<br/>配置连接 · API 两个位置<br/>执行流程是真 RPC 调用"] ==> DEMYST["祛魅: 很多场景一条 Bash 就够"]
+    DEMYST ==> IRREPL["MCP 真正不可替代的场景"]
+    IRREPL ==> INSTR["instructions 字段的作用"]

@@ -1,0 +1,6 @@
+%% title: Claw-SWE-Bench——首个独立测量 Harness 影响的基准
+graph TD
+    C["核心贡献: 隔离 Harness 变量的基准"] ==> ADAPTER["适配器设计"]
+    ADAPTER ==> E1["固定 harness 换模型"]
+    E1 ==> E2["固定模型换 harness<br/>答案泄露修复"]
+    E2 ==> FIND["横扫实验关键发现"]

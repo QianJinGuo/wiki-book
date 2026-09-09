@@ -1,0 +1,6 @@
+%% title: AgentCore Runtime 深度解析——快时尚电商智能体实践
+graph TD
+    RT["运行时架构: Lambda 式 microVM"] ==> PROTO["三协议体系: HTTP 加 MCP 加 A2A<br/>协议选择决策矩阵"]
+    PROTO ==> SESS["会话隔离模型"]
+    SESS ==> ASYNC["异步处理与长时间运行任务"]
+    ASYNC ==> MEM["记忆架构: 短期加长期<br/>策略配置最佳实践"]
