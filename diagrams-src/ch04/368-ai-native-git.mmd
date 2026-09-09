@@ -1,0 +1,4 @@
+%% title: AI Native 项目管理——两个 Git 仓库干掉周报
+graph TD
+    DESIGN["关键原则: 定性定量分离双仓库<br/>加 Git 唯一 Source of Truth<br/>加 Skill 即 SOP 加 SQL 即度量"] ==> ARCH["业务跟踪仓库三层数据架构<br/>加 效能度量仓库 14 个 SQL 并行"]
+    ARCH ==> SKILL["问题挖掘与依赖协同 Skill<br/>没有测试治具的迭代等于生产实验"]

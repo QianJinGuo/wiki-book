@@ -1,0 +1,4 @@
+%% title: Agent Loop 源码——Hermes 任务完整生命周期
+graph TD
+    MODS["4 核心模块: Loop Orchestrator<br/>加 Prompt Builder 加 执行层 加 Trajectory Recorder"] ==> FLOW["一轮完整时序<br/>每步事件实时落盘<br/>Tool 调用默认串行 · 刻意避免状态机"]
+    FLOW ==> EXIT["4 种退出: 自然完成 70%<br/>加 turn 上限 加 用户打断 加 不可恢复错误"]

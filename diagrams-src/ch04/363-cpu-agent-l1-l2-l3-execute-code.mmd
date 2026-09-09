@@ -1,0 +1,4 @@
+%% title: CPU 缓存类比 Agent 上下文——L1 L2 L3 与 execute_code
+graph TD
+    LAYERS["三层: L1 常驻 80% 加 L2 按需 15%<br/>加 L3 兜底 5% 加 核心: 压缩 vs 发现速度"] ==> CODE["execute_code 单工具原则<br/>vs Anthropic 5-10 工具<br/>三个机制: 读区间压缩 写 diff压缩 问题分类"]
+    CODE ==> BUDGET["提示词预算分配<br/>层级会移动但不会消失"]

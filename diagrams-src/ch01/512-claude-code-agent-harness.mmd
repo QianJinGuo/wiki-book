@@ -1,0 +1,4 @@
+%% title: Claude Code 源码——Agent Harness 构建之道
+graph TD
+    LOOP8["核心循环 8 步: 输入 到 组装 到 API<br/>到 解析 到 权限 到 执行 到 反馈 到 压缩"] ==> CTX["上下文组装缓存分层<br/>CLAUDE.md 四级加载加 1% 技能预算<br/>完整上下文包: 消息只是冰山一角"]
+    CTX ==> PERM["4 层权限加 isConcurrencySafe<br/>加 三级压缩 加 Plan Mode<br/>加 8 种退出路径"]

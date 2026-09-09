@@ -1,0 +1,4 @@
+%% title: Agent Runtime 7 大职责与 3 框架对比
+graph TD
+    DUTY["7 大职责: 工具管理 加 上下文组装<br/>加 状态管理 加 终止判断 加 风险控制<br/>加 Trace 加 可观测性"] ==> ROUTER["扩展层 Router: 复杂度分水岭<br/>简单 Agent 用提示词路由"]
+    ROUTER ==> CMP["3 框架对比: LangGraph 加<br/>OpenAI Agents SDK 加 自研<br/>七职责是通用契约清单"]
