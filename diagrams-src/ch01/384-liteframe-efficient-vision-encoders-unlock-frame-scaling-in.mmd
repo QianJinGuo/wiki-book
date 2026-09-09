@@ -1,0 +1,4 @@
+%% title: LiteFrame——高效视觉编码器解锁视频 LLM 帧扩展
+graph TD
+    PROBLEM["两阶段瓶颈迁移: 压缩后瓶颈<br/>从 LLM 转到 ViT 并未消除"] ==> CTD["CTD 加 LMA: 大 teacher 蒸馏<br/>加 时空压缩监督 加 LM 适配<br/>8 倍更多帧数有限算力"]
+    CTD ==> ZEROSHOT["Zero-Shot 高分辨率扩展"]

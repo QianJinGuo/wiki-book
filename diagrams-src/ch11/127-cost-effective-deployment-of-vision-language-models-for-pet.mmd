@@ -1,0 +1,4 @@
+%% title: Inferentia2 部署 VLM——宠物行为检测降本 83%
+graph TD
+    MIGRATE["Furbo 从 GPU 迁移到 Inferentia2<br/>成本降 83% 保持高吞吐低延迟<br/>IoT 持续推理与 GPU 突发设计错配"] ==> METHOD["模块化编译: Wrapper 层适配<br/>加 独立编译各组件 加 组装部署<br/>保留预训练能力 代码改动最小"]
+    METHOD ==> SCALING["双层 Auto Scaling<br/>压测结果关键洞察"]
