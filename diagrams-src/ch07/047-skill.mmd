@@ -1,0 +1,5 @@
+%% title: Skill 版本管理五大原则——从越改越差到持续演进
+graph TD
+    WHY["为什么 Skill 比代码更危险"] ==> P5["五大原则<br/>改动必有版本号 · PR 含动机影响<br/>diff 可读 · 跨版本评估对比<br/>危险变更强制灰度"]
+    P5 ==> CASE["真实案例: incident-triage 演进轨迹"]
+    CASE ==> ANTI["反模式: 越改越差的典型<br/>采用 semver · 锁定版本"]

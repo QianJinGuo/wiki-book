@@ -1,0 +1,5 @@
+%% title: Netflix Kueue 迁移——百万级 Batch Job 到 K8s 原生调度
+graph TD
+    CMB["CMB 架构与局限<br/>Tenant 层级模型 · Fair Sharing<br/>仅在 admission 生效无抢占"] ==> WHY["为什么选 Kueue<br/>不替换 kube-scheduler<br/>CNCF 势头 · 多租户配额<br/>内建抢占与拓扑感知"]
+    WHY ==> SEM["CMB 到 Kueue 语义变化"]
+    SEM ==> MIG["迁移架构设计<br/>Fair Sharing 与 Preemption 实效"]
