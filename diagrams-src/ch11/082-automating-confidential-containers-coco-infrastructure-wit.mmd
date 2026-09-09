@@ -1,0 +1,5 @@
+%% title: Kyverno 自动化机密容器 CoCo 基础设施
+graph TD
+    NEED["CoCo 工作负载必备配置<br/>实际部署挑战"] ==> KYVERNO["Kyverno 解决方案<br/>信任悖论: Kyverno 处于不可信控制平面"]
+    KYVERNO ==> ROLES["三团队分工模型<br/>initdata 归 App Security Team"]
+    ROLES ==> FLOW["部署与证明流程<br/>条件密钥分发 · GitOps 审查"]
