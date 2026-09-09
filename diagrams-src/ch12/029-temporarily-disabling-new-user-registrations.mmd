@@ -1,4 +1,5 @@
-%% title: 暂停新用户注册——DDoS 与恶意注册组合攻击
+%% title: 暂停新用户注册——DDoS 加恶意注册组合攻击
 graph TD
-    ATTACK["组合攻击: DDoS 压制可用性<br/>加 批量注册 bot 投毒供应链<br/>三条战线同时展开"] ==> WINDOW["发现到下架的非零窗口<br/>窗口内恶意包仍可被安装执行"]
-    WINDOW ==> RESPONSE["响应: 500 加恶意包次日 yank<br/>Fastly WAF 加注册限流后重开<br/>精准隔离: 只暂停新注册"]
+    ATTACK["组合攻击: DDoS 加 批量注册<br/>加 恶意包投放 三线并发"] ==> WINDOW["发现到下架的非零窗口"]
+    WINDOW ==> RESPONSE["500 加恶意包次日 yank<br/>WAF 加限流后重开注册"]
+    RESPONSE ==> SCOPE["精准隔离: 只暂停新注册<br/>现有 gem install push 不受影响"]
