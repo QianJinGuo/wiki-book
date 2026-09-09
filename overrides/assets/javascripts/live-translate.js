@@ -21,6 +21,7 @@
   var MAX_BATCH_CHARS = 1200;
   var MAX_BATCH_ITEMS = 16;
   var CONCURRENCY = 2;
+  var RETRY_DELAYS_MS = [3000, 8000]; // throttled/failed batches get 2 retries
 
   var SKIP_SELECTOR = [
     'script', 'style', 'noscript', 'pre', 'code', 'kbd', 'samp', 'svg', 'math',
@@ -164,6 +165,22 @@
     });
   }
 
+  function delay(ms) {
+    return new Promise(function(resolve) { window.setTimeout(resolve, ms); });
+  }
+
+  function requestBatchWithRetry(texts, attempt) {
+    return requestBatch(texts).catch(function(error) {
+      var status = error && error.status;
+      if (attempt < RETRY_DELAYS_MS.length && (status === 429 || status >= 500 || status === undefined)) {
+        return delay(RETRY_DELAYS_MS[attempt]).then(function() {
+          return requestBatchWithRetry(texts, attempt + 1);
+        });
+      }
+      throw error;
+    });
+  }
+
   // ── Translation pass ──
   function start() {
     if (running || !langOn()) return Promise.resolve();
@@ -221,7 +238,7 @@
       if (cursor >= queue.length) return;
       var current = queue[cursor++];
       var texts = current.items.map(function(n) { return n._wbLive.src; });
-      requestBatch(texts).then(function(out) {
+      requestBatchWithRetry(texts, 0).then(function(out) {
         current.items.forEach(function(node, i) {
           var meta = node._wbLive;
           var text = (out[i] && typeof out[i] === 'string') ? out[i] : meta.src;
