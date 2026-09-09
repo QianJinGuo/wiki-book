@@ -1,0 +1,5 @@
+%% title: Gemma 4 QAT 模型——移动与边缘的量化感知训练
+graph TD
+    QAT["移动端特殊 QAT Schema<br/>精度保护机制"] ==> CMP["Q4 0 标准 vs 移动端 Schema<br/>性能对比"]
+    CMP ==> TOOLCHAIN["工具链支持与部署生态<br/>开箱即用的部署选项"]
+    TOOLCHAIN ==> P["边缘部署优先 QAT<br/>INT8 是安全起点 · 设计回退机制"]

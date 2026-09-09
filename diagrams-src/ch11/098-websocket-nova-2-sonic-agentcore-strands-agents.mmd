@@ -1,0 +1,5 @@
+%% title: WebSocket 语音系统——Nova 2 Sonic 加 AgentCore 企业架构
+graph TD
+    WS["WebSocket 全双工通信<br/>替代 HTTP 请求响应范式"] ==> L3["三层解耦<br/>Nova 2 Sonic 加 Strands Agents<br/>加 AgentCore Runtime"]
+    L3 ==> BARGEIN["Barge-in 实时中断<br/>自然对话体验"]
+    BARGEIN ==> TOOL["Tool Calling 打通语音与电商<br/>安全合规与治理框架"]
