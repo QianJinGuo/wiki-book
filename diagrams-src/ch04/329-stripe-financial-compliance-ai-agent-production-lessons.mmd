@@ -1,0 +1,5 @@
+%% title: Stripe 金融合规 AI Agent——生产经验
+graph TD
+    ARCH["核心架构: ReAct 加 DAG 任务分解<br/>DAG 优于单体 Agent"] ==> SVC["专用 Agent 服务<br/>与 ML 基础设施分离"]
+    SVC ==> PROXY["LLM Proxy 架构"]
+    PROXY ==> COST["成本优化: Prompt Caching<br/>作为 Agent 成本杠杆"]

@@ -1,0 +1,6 @@
+%% title: Agent Harness 实现对比 A3——7 框架 SubAgent Prompt
+graph TD
+    PURPOSE["SubAgent 三个核心目的<br/>范式优于古典 MultiAgent"] ==> CC["Claude Code 4 种互斥模式<br/>Codex 3 种模式"]
+    CC ==> SDKS["OpenAI Agents SDK: Agent As Tool<br/>加 Handoff · Kimi: 加 AgentSwarm"]
+    SDKS ==> OTHERS["OpenCode · OpenClaw<br/>Hermes: delegate_task 加 Kanban 加 MoA"]
+    OTHERS ==> TBL["框架对比总览"]
