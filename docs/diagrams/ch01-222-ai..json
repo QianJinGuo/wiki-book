@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AI 芯片架构——从逻辑门到矩阵乘法",
+  "code": "graph TD\n    MUL[\"乘法器: 从比特到面积的代价<br/>面积与位宽平方关系\"] ==> MOVE[\"数据搬运税: 被忽视的成本<br/>TPU 粗粒度 vs GPU 细粒度\"]\n    MOVE ==> SYSTOLIC[\"脉动阵列: 改变规则的升维<br/>时钟周期是芯片心跳\"]\n    SYSTOLIC ==> CHOICE[\"FPGA vs ASIC 选型<br/>Cache vs 暂存器<br/>GPU 就是一堆小 TPU\"]",
+  "isSvg": false
+ }
+]

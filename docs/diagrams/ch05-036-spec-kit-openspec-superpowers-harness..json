@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Spec Kit OpenSpec Superpowers——棕地三层 Harness",
+  "code": "graph TD\n    BROWNFIELD[\"棕地 vs 绿地结构性差异<br/>10 加万行代码无法重写<br/>框架必须适配项目\"] ==> L3[\"三层架构<br/>Harness 层 CLAUDE.md 可验证约束<br/>Skill 层 8 个硬门控 Skill<br/>Spec 层 Delta Spec 只写变化\"]\n    L3 ==> TABLE[\"组件分层对照表 L0 到 L3<br/>review 发现违规自动补入规范\"]\n    TABLE ==> GROW[\"规范累积: 4 个月 10 行到 40 行<br/>误用降 80% 在使用中生长\"]",
+  "isSvg": false
+ }
+]

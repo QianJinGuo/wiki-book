@@ -1,0 +1,7 @@
+[
+ {
+  "title": "企业规模数学优化——AWS 创新中心方法论",
+  "code": "graph TD\n    POSITION[\"Prescriptive vs Predictive AI<br/>数学优化是被低估的企业应用\"] ==> M4[\"四步方法论<br/>建模比求解更难 投资领域专家\"]\n    M4 ==> CASES[\"案例: BMW 机器人路径<br/>Delivery Hero 物流 · Amazon EU<br/>Red Cross 排班 量化收益\"]\n    CASES ==> HYBRID[\"AI 加优化混合方法论<br/>从一次性到持续优化\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Strands Agents 加 NIM 加 AgentCore——高性能生成式 AI",
+  "code": "graph TD\n    L4[\"四层架构: NIM 推理 加 Strands 编排<br/>加 AgentCore Runtime 加 Memory 可观测\"] ==> BENEFIT[\"分离式架构的性能收益<br/>状态管理范式演进\"]\n    BENEFIT ==> OBS[\"可观测性驱动运维转型\"]\n    BENEFIT ==> TRADEOFF[\"成本控制权权衡 · 并发一致性\"]",
+  "isSvg": false
+ }
+]

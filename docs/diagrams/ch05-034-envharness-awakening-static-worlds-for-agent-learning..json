@@ -1,0 +1,7 @@
+[
+ {
+  "title": "EnvHarness——唤醒静态世界供 Agent 学习",
+  "code": "graph TD\n    THESIS[\"核心命题: 环境的可塑性<br/>是新的学习杠杆\"] ==> COMPS[\"三大插件组件<br/>EnvRigger 自动化定制引擎\"]\n    COMPS ==> EXP[\"实验效果: 协同进化不触顶<br/>反直觉: 静态环境提取技能反而差\"]\n    EXP ==> LIMIT[\"局限: Harness 化对<br/>环境契约的隐含假设\"]",
+  "isSvg": false
+ }
+]

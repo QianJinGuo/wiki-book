@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Kiro CLI 加 OpenSearch MCP——人人成为专家",
+  "code": "graph TD\n    ADAPTER[\"MCP 协议作通用适配器<br/>的核心价值\"] ==> KIRO[\"Kiro CLI 多层次 Agentic 能力\"]\n    KIRO ==> SCENES[\"三大典型场景技术深度分析\"]\n    SCENES ==> STRATEGY[\"从工具到平台的战略意义<br/>立即可行到长期战略\"]",
+  "isSvg": false
+ }
+]

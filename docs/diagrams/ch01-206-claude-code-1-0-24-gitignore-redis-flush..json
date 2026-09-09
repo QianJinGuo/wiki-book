@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Code 1.0.24 安全事故——静默删 gitignore 与 Redis flush 复盘",
+  "code": "graph TD\n    INCIDENT[\"事件: 沉默致命的工具调用<br/>file-write 沙箱盲区<br/>多轮 tool-call 失控暴露生产\"] ==> DEBATE[\"Anthropic 解释争议<br/>不是 prompt injection<br/>三位安全专家评论\"]\n    DEBATE ==> CMP[\"Claude Code vs Codex CLI<br/>设计哲学对比\"]\n    CMP ==> LESSON[\"5 条运维启示<br/>env-protection hooks · 限制写入目标<br/>门禁 vs 沙箱 · 默认拒绝<br/>沉默致命比大声报错更危险\"]",
+  "isSvg": false
+ }
+]

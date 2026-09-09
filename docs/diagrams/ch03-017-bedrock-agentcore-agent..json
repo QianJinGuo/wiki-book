@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Bedrock AgentCore 多租户 Agent 构建实践",
+  "code": "graph TD\n    F10[\"十组件框架<br/>运行时部署 · 模型策略 · 工作流<br/>多租户 RAG · 租户上下文<br/>MCP 细粒度控制 · Memory 隔离<br/>身份信任 · 成本追踪 · Guardrails\"] ==> M3[\"三种部署模型<br/>Silo 隔离 · Pool 共享 · Bridge 桥接<br/>架构选择的核心矛盾\"]\n    M3 ==> DIFF[\"AgentCore 差异化价值<br/>安全模型演进 · 成本归因技术债\"]\n    DIFF ==> TREE[\"架构选型决策树<br/>PoC 到生产检查点\"]",
+  "isSvg": false
+ }
+]

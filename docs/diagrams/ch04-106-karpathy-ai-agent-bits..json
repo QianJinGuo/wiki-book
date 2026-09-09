@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Karpathy 看 Agent——程序员贡献的 bits 越来越少",
+  "code": "graph TD\n    BITS[\"bits 的精确含义<br/>程序员贡献单位被重新定义\"] ==> DOWN[\"价值下降技能<br/>样板代码 · 语法 API 记忆<br/>纯执行编码速度\"]\n    BITS ==> UP[\"价值上升四维<br/>问题定义 · 系统判断<br/>Agent 编排 · 评估验证\"]\n    UP ==> WARN[\"沟通是被低估的维度<br/>价值基础建立的时序问题\"]",
+  "isSvg": false
+ }
+]

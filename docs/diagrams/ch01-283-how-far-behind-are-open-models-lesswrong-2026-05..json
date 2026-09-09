@@ -1,0 +1,7 @@
+[
+ {
+  "title": "开源模型落后多少——LessWrong 分析",
+  "code": "graph TD\n    FIND[\"核心发现: 差距与趋势<br/>Provider degradation 或夸大差距\"] ==> METHOD[\"数据来源与方法论\"]\n    METHOD ==> RATIOS[\"Public vs Private 2 倍比率<br/>DeepSeek R1 时刻: 异常或反转\"]\n    RATIOS ==> INS[\"前瞻差距无法从回溯数据得出\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Embabel——Rod Johnson 的 Agent 框架",
+  "code": "graph TD\n    DESIGN[\"关键设计: 不用状态机<br/>用 GOAP 规划 A* 本质\"] ==> ADV5[\"5 大核心优势与框架对比\"]\n    ADV5 ==> R8[\"Rod Johnson 8 大观点<br/>语言之争结束 · Coding Agent 毁代码库<br/>Alien Stack 双向伤害 · 怀疑 MCP<br/>模型吃 harness 有限 · AI 擅批评不擅原创\"]\n    R8 ==> INS[\"对 agent 与 harness 团队的启示\"]",
+  "isSvg": false
+ }
+]

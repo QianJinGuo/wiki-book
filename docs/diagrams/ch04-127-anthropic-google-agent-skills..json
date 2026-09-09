@@ -1,0 +1,7 @@
+[
+ {
+  "title": "从 Anthropic 到 Google——Agent Skills 进入设计模式阶段",
+  "code": "graph TD\n    SHIFT[\"Agent Skills 进入设计模式阶段\"] ==> EVOLUTION[\"Anthropic 到 Google 的演进脉络\"]\n    EVOLUTION ==> PATTERNS[\"Skills 设计模式沉淀\"]\n    PATTERNS ==> INS[\"深度分析与实践启示\"]",
+  "isSvg": false
+ }
+]

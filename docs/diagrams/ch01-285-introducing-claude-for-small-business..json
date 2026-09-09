@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude for Small Business——填补 SMB AI 市场空白",
+  "code": "graph TD\n    GAP[\"SMB 贡献 44% GDP<br/>但 AI 采用停在聊天窗口<br/>现有工具面向技术团队\"] ==> PRODUCT[\"工作流优先非对话优先<br/>15 个即用 agentic workflows<br/>覆盖六大职能 · toggle install\"]\n    PRODUCT ==> ECO[\"7 大平台集成<br/>QuickBooks PayPal HubSpot 等<br/>从工具到社区纵向延伸\"]\n    ECO ==> CHALLENGE[\"潜在挑战与不确定性\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Mollick AI 实用指南——免费付费与模型选择",
+  "code": "graph TD\n    DECISION[\"免费 vs 付费分水岭<br/>是使用场景不是价格<br/>真实工作决策应升级付费\"] ==> MODELS[\"模型选择<br/>GPT-5 系列 · Claude · Gemini<br/>Agent Model 从对话到工作引擎\"]\n    MODELS ==> RESEARCH[\"Deep Research 是被低估的<br/>杀手级功能\"]\n    RESEARCH ==> TIPS[\"Prompt 工程退场<br/>Sycophancy 风险 · 每周做陌生事\"]",
+  "isSvg": false
+ }
+]

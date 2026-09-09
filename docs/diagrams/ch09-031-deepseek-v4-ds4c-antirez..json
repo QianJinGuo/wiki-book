@@ -1,0 +1,7 @@
+[
+ {
+  "title": "DeepSeek V4 DS4C——antirez 本地推理实践",
+  "code": "graph TD\n    EVENT[\"antirez 的专属高速公路<br/>本地跑 DeepSeek V4\"] ==> TECH[\"三件套关键技术<br/>非对称 MoE 量化<br/>KV Cache 磁盘化 · 双 API 兼容层\"]\n    TECH ==> PERF[\"性能实测与社区反响\"]\n    PERF ==> PHILO[\"设计哲学: 专用引擎 vs 通用引擎<br/>三件套全栈的复利效应\"]",
+  "isSvg": false
+ }
+]

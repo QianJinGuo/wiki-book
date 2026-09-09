@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Explicit vs Implicit——智能时代的显式与隐式",
+  "code": "graph TD\n    TOPIC[\"智能时代的显式与隐式\"] ==> CORE[\"核心论证展开\"]\n    CORE ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

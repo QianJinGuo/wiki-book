@@ -1,0 +1,7 @@
+[
+ {
+  "title": "大型代码库的 Claude Code 团队落地",
+  "code": "graph TD\n    ROOTCAUSE[\"失败根源是起点偏差<br/>五类典型问题对称结构\"] ==> M13[\"13 个模式三阶段<br/>导航 加 会话治理 加 团队规模化\"]\n    M13 ==> DETAIL[\"上下文级联 · 侦察子代理<br/>确定性检查从提醒升级为机制\"]\n    DETAIL ==> ESSENCE[\"Harness 本质是知识工程\"]",
+  "isSvg": false
+ }
+]

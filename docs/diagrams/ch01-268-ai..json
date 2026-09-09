@@ -1,0 +1,7 @@
+[
+ {
+  "title": "柚漫剧 AI 全流程提效拆解",
+  "code": "graph TD\n    RULES[\"隐性知识显性化<br/>Rules 是 AI Coding 落地核心基建\"] ==> ROLE[\"角色重定义: 人力驱动<br/>到 AI 驱动的范式跃迁\"]\n    ROLE ==> COLLAB[\"代码作为产研协作中间态<br/>AIQA 测试体系: Copilot 到 Agent\"]\n    COLLAB ==> C3[\"给实践者的三条核心经验\"]",
+  "isSvg": false
+ }
+]

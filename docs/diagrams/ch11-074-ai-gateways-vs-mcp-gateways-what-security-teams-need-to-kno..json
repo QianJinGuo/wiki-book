@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AI Gateway vs MCP Gateway——安全团队须知",
+  "code": "graph TD\n    DIFF[\"架构定位的本质差异<br/>可见不等于可控\"] ==> GAP[\"会话级行为上下文<br/>是真正的安全缺口<br/>规则引擎局限性被低估\"]\n    GAP ==> CONVERGE[\"市场正在 convergence<br/>但安全缺口不会消弭<br/>Hooks 模式或是新方向\"]\n    CONVERGE ==> TOKEN[\"Maker's Token 问题<br/>暴露身份治理深层复杂性\"]",
+  "isSvg": false
+ }
+]

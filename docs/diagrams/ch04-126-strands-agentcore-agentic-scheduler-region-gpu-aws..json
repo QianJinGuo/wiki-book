@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Agentic Scheduler——多 Region 自动编排推理 GPU 算力",
+  "code": "graph TD\n    PHILOSOPHY[\"Agentic Scheduler 设计哲学<br/>从规则引擎到 Agentic 演进\"] ==> ORCH[\"Orchestrator 状态机设计<br/>错误分类与自适应策略\"]\n    ORCH ==> HITL[\"Human-in-the-Loop 审批<br/>跨请求状态恢复\"]\n    HITL ==> MEM[\"Memory 分层架构<br/>Specs 驱动开发 · 跨区域成本\"]",
+  "isSvg": false
+ }
+]

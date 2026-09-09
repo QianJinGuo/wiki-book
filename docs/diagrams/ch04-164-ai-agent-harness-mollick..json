@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Mollick 选型指南——模型 应用 Harness",
+  "code": "graph TD\n    FRAME[\"Models Apps Harnesses 三层\"] ==> CMP[\"Harness 深度对比<br/>CC Codex Antigravity Cowork NotebookLM\"]\n    CMP ==> INSIGHT[\"三层解耦的架构意义<br/>同模型不同 harness 现象\"]\n    INSIGHT ==> P[\"优先选 harness 而非模型\"]",
+  "isSvg": false
+ }
+]

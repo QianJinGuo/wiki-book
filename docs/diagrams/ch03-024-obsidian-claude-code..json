@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Obsidian 加 Claude Code 集成——五种知识管理策略",
+  "code": "graph TD\n    ROUTES[\"本质两条路线<br/>同步语义 vs 访问语义\"] ==> S5[\"五种策略<br/>独立 Vault 符号链接 · Vault 即工作目录<br/>MCP 桥接 · 每仓库一 Vault · QMD 会话同步\"]\n    S5 ==> CLI12[\"Obsidian 1.12 CLI 结构性转折<br/>找孤立笔记 50 倍提升\"]\n    CLI12 ==> PRINCIPLE[\"社区原则: AI 负责读取 人负责书写<br/>Dataview 加 frontmatter 可查询\"]",
+  "isSvg": false
+ }
+]

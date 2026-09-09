@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AgentCore 增加质量评估与策略控制——可信 Agent 部署",
+  "code": "graph TD\n    BALANCE[\"核心矛盾: 自主性与安全性平衡\"] ==> CEDAR[\"Cedar 策略语言<br/>自然语言与形式化授权融合<br/>策略优先于开发\"]\n    CEDAR ==> EVAL[\"AgentCore Evaluations<br/>数据驱动的连续质量监控\"]\n    EVAL ==> MORE[\"情节性记忆: 事件到经验学习<br/>双向流式重定义对话范式\"]",
+  "isSvg": false
+ }
+]

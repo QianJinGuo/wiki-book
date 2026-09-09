@@ -1,0 +1,7 @@
+[
+ {
+  "title": "两万字详解 Claude Code 源码核心机制",
+  "code": "graph TD\n    SRC[\"两万字源码分析<br/>20000 字核心机制\"] ==> KEY[\"关键洞察\"]\n    KEY ==> DEEP[\"深度分析\"]\n    DEEP ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

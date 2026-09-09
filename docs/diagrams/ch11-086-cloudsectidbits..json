@@ -1,0 +1,7 @@
+[
+ {
+  "title": "CloudSecTidbits——Masso 漏洞与身份信任边界",
+  "code": "graph TD\n    VULN[\"Masso 漏洞机理: 多 SSO 改写<br/>身份信任边界 · 恶意 IdP 注入受控身份\"] ==> CHAIN[\"攻击链: 恶意 IdP 到身份接管<br/>ghost identity · IdP 路由劫持\"]\n    CHAIN ==> IMPACT[\"影响远超登录本身<br/>身份层系统性失守\"]\n    IMPACT ==> DEF[\"把安全门放回 trigger 编排<br/>对 Zero Trust 的冲击\"]",
+  "isSvg": false
+ }
+]

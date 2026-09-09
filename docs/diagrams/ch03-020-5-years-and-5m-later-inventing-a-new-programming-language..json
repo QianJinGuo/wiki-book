@@ -1,0 +1,7 @@
+[
+ {
+  "title": "5 年 500 万美元后——造新语言是个错误吗",
+  "code": "graph TD\n    FAIL[\"失败本质: 技术正确不等于市场正确<br/>看到 lang 就归错类<br/>三大客户异议反复出现\"] ==> STRAW[\"IDE 工具链是压垮稻草<br/>自研 language server 只达 80%\"]\n    STRAW ==> INSIGHT[\"最有价值认知: 以为是语言<br/>其实是规范 规范才是价值\"]\n    INSIGHT ==> TURN[\"TypeScript SDK 只换编译器前端<br/>AI 时代结构化框架价值反增\"]",
+  "isSvg": false
+ }
+]

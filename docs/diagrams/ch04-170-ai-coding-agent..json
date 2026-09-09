@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AI Coding Agent 记忆系统",
+  "code": "graph TD\n    ESSENCE[\"记忆的本质是分层成本管理\"] ==> HOT[\"热记忆设计优先于向量检索<br/>先定义热记忆边界再上向量库\"]\n    HOT ==> MIGRATE[\"压缩前的状态迁移是<br/>记忆可靠性的关键 · 会话史要有档案层\"]\n    MIGRATE ==> SKILLS[\"Skills 是程序性记忆不是日志<br/>流程经验成可维护资产 · 记忆可观测\"]",
+  "isSvg": false
+ }
+]

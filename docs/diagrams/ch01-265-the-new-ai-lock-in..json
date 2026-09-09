@@ -1,0 +1,7 @@
+[
+ {
+  "title": "The New AI Lock-in——锁定的层级迁移",
+  "code": "graph TD\n    SHIFT[\"锁定在迁移而非消失<br/>模型层到编排与实施层<br/>MCP 如 K8s 标准化一层锁定上移\"] ==> L3[\"三层锁定<br/>Orchestration 隐性粘性<br/>Workflow Surface 管理壁垒<br/>Services 层 know-how 最深\"]\n    L3 ==> FAIL95[\"95% 失败率的结构性根源<br/>部署工程失败非模型能力\"]\n    L3 ==> CONTROL[\"控制平面归属决定客户粘性\"]",
+  "isSvg": false
+ }
+]

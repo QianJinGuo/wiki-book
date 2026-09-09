@@ -1,0 +1,7 @@
+[
+ {
+  "title": "TiDB Cloud——Agent-native 数据库与 Kimi K2.6",
+  "code": "graph TD\n    LOGIC[\"Agent-native 时代<br/>数据 Infra 竞争逻辑转变\"] ==> VDB[\"架构核心: 虚拟数据库层<br/>Agent-native 数据库的核心突破\"]\n    VDB ==> D3[\"Kimi K2.6 三大战略决策<br/>最小化摩擦 · 统一技术栈 · 极致低成本\"]\n    D3 ==> CONVERGE[\"行业收敛: one agent one sandbox<br/>one storage one database<br/>上半场到下半场的竞争转移\"]",
+  "isSvg": false
+ }
+]

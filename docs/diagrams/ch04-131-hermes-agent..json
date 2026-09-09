@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Hermes Agent 九模块架构解析",
+  "code": "graph TD\n    M9[\"九大模块<br/>Agent Loop · Prompt Assembly · Memory<br/>Skill Manager · Tool MCP · Nudge Engine<br/>Review Agent · Trajectory Store · SOUL.md\"] ==> FLOW[\"一次任务全链路\"]\n    FLOW ==> DECOUPLE[\"三线解耦: 执行与学习正交分离\"]\n    DECOUPLE ==> DESIGN[\"Nudge 阈值触发经验捕获<br/>SOUL.md 人格层宪法保障\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AgentCore Payments 与代理商务创新",
+  "code": "graph TD\n    WALL[\"代理商务的支付墙<br/>传统支付无法支撑 AI 代理\"] ==> X402[\"x402 协议与多协议编排\"]\n    X402 ==> ATOMIC[\"原子性预算执行<br/>Reserve 到 Process 到 Commit 三阶段\"]\n    ATOMIC ==> ZERO[\"零摩擦: Identity 加嵌入式钱包<br/>服务级可观测三位一体\"]\n    ZERO ==> P[\"稳定币结算层 · 支付会话约束消费<br/>多代理分级预算拓扑\"]",
+  "isSvg": false
+ }
+]

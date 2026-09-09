@@ -1,0 +1,7 @@
+[
+ {
+  "title": "HiClaw v1.1.0——Kubernetes 部署与 Hermes Worker",
+  "code": "graph TD\n    K8S[\"Kubernetes 原生架构重大重构<br/>Controller-Reconciler 范式转移<br/>CRD 化资源管理 kubectl 原生操作\"] ==> WORKER[\"Hermes Worker 运行时<br/>自主编程 Agent 与协作运行时\"]\n    WORKER ==> HELM[\"企业级 Helm Chart 部署<br/>可插拔 Provider 加 Sidecar 模式\"]\n    HELM ==> FIX[\"18 个 Bug 修复的结构性启示\"]",
+  "isSvg": false
+ }
+]

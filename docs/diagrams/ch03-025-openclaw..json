@@ -1,0 +1,7 @@
+[
+ {
+  "title": "龙虾装上了——OpenClaw 多智能体团队搭建经验",
+  "code": "graph TD\n    EXPERIENCE[\"OpenClaw 多智能体团队搭建\"] ==> SETUP[\"配置与协作机制\"]\n    SETUP ==> LESSONS[\"实战经验与踩坑\"]\n    LESSONS ==> INS[\"深度分析与实践启示\"]",
+  "isSvg": false
+ }
+]

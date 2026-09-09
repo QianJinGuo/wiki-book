@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Netflix Switchboard 到 Lightbulb——百万 QPS 模型路由",
+  "code": "graph TD\n    SB[\"Switchboard: 集中式路由抽象<br/>及其挑战\"] ==> LB[\"Lightbulb: 解耦式路由<br/>请求复杂度实时评估<br/>加 Envoy 数据平面\"]\n    LB ==> ACC[\"路由准确性的业务影响<br/>与 OpenAI auto 模式对比\"]\n    ACC ==> INS[\"模型路由是 AI 基础设施新层<br/>降本增效的快速胜利\"]",
+  "isSvg": false
+ }
+]

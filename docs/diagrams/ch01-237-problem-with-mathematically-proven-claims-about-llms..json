@@ -1,0 +1,7 @@
+[
+ {
+  "title": "LLM 数学证明声明的问题",
+  "code": "graph TD\n    T3[\"三类被误用的数学证明<br/>AI 不能自我改进 KL-flow<br/>幻觉不可避免 定义过宽<br/>数学天花板 定理滥用\"] ==> PATTERN[\"共同论证模式\"]\n    PATTERN ==> RECURRENCE[\"为何这类论证持续出现\"]\n    RECURRENCE ==> LESSON[\"核心教训\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Amazon Cognito 多区域复制——跨区域认证韧性",
+  "code": "graph TD\n    NECESSITY[\"多区域认证的架构必要性<br/>认证是单点故障最高风险点\"] ==> WORKING[\"多区域复制工作原理<br/>配置三步流程 · 失效转移\"]\n    WORKING ==> CONSISTENCY[\"最终一致性容忍度<br/>写后读一致性验证设计<br/>KMS 跨区域复制的安全边界\"]\n    CONSISTENCY ==> TRADE[\"RTO RPO 权衡<br/>主动主动 vs 主动被动\"]",
+  "isSvg": false
+ }
+]

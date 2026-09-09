@@ -1,0 +1,7 @@
+[
+ {
+  "title": "复旦北大 AHE——Agentic Harness Engineering 瓶颈分析",
+  "code": "graph TD\n    GAP[\"被忽视的 Harness Engineering 瓶颈\"] ==> P3[\"三大可观测性支柱<br/>组件: 文件级解耦<br/>经验: 分层蒸馏轨迹证据<br/>决策: 可证伪编辑契约\"]\n    P3 ==> RES[\"实验: 超越人类与自动化基线<br/>自归因可靠性 · 组件非加性\"]\n    RES ==> P[\"可观测性基建优先 · 极简种子<br/>预测验证闭环 · 任务饱和感知\"]",
+  "isSvg": false
+ }
+]

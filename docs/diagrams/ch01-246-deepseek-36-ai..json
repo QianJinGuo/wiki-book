@@ -1,0 +1,7 @@
+[
+ {
+  "title": "36 小时中国 AI 行——Nathan Lambert 的观察",
+  "code": "graph TD\n    TRIP[\"36 小时跑 6 家实验室<br/>月暗 智谱 清华 美团 小米 零一\"] ==> FIND[\"核心发现<br/>生态是合作共赢非部落竞争<br/>所有实验室警惕字节<br/>DeepSeek 研究品味公认最好\"]\n    FIND ==> CULTURE[\"文化差异: 过强 Ego 妨碍做好模型<br/>学生是核心研发力量\"]\n    CULTURE ==> INDUSTRY[\"产业: 开源是实用主义非信仰<br/>云而非 SaaS · 自建 RL 环境普遍\"]",
+  "isSvg": false
+ }
+]

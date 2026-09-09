@@ -1,0 +1,7 @@
+[
+ {
+  "title": "IMClaw——通过微信飞书操控十余种 Coding Agent",
+  "code": "graph TD\n    ACP[\"ACP 协议: 多 Agent 集成标准化<br/>解耦 IM 交互层与 Agent 执行层<br/>N 乘 M 降为 N 加 M\"] ==> ARCH[\"网关架构的工程取舍<br/>本地 CLI 到 WebSocket 网关<br/>到 acpx 管理 Agent 子进程\"]\n    ARCH ==> BENEFIT[\"远程访问 · 会话持久化<br/>网关级更严权限\"]\n    BENEFIT ==> SEC[\"安全模型权衡 · 支持十余种 Agent\"]",
+  "isSvg": false
+ }
+]

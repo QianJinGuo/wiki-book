@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AI 驱动 Graviton 迁移评估——Kiro Power 实战",
+  "code": "graph TD\n    ECON[\"Graviton 迁移经济学<br/>从成本优化到战略选择\"] ==> SIMD[\"SIMD 架构差异本质<br/>指令集哲学根本分歧\"]\n    SIMD ==> ARCH[\"AI 驱动迁移架构<br/>MCP 协议与本地化推理平衡<br/>分阶段扫描规避上下文窗口陷阱\"]\n    ARCH ==> CICD[\"纳入 CI/CD 前置检查环节<br/>容器镜像检查前置识别依赖\"]",
+  "isSvg": false
+ }
+]

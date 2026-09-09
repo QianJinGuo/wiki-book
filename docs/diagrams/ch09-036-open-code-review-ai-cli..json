@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Open Code Review——阿里开源 AI 代码评审 CLI",
+  "code": "graph TD\n    PAIN[\"纯 Agent 三痛点: 覆盖不全<br/>位置漂移 · 效果不稳定\"] ==> DESIGN[\"确定性工程乘 Agent 混合驱动<br/>不需要理解的环节用工程代码<br/>LLM 只在语义理解处介入\"]\n    DESIGN ==> RESULTS[\"生产验证: 月活 2 万<br/>370 万次评审 · 采纳率超 30%<br/>F1 25.10% 领先 Claude Code 14.13%\"]\n    RESULTS ==> RULES[\"四层规则穿透 first-match-wins\"]",
+  "isSvg": false
+ }
+]

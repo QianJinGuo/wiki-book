@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Code 黑客松——技艺数字化六项目",
+  "code": "graph TD\n    P6[\"六项目: 虚拟诊室 · 电路板维修<br/>编程教学 · 木偶剧场<br/>木匠手艺 · 工厂维护知识\"] ==> COMMON[\"共同内核: 专家技艺数字化\"]\n    COMMON ==> INSIGHT[\"启示与深度分析\"]\n    INSIGHT ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

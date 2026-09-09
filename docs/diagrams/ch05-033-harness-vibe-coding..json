@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Harness 工程可视化——Vibe Coding 中重建可控性",
+  "code": "graph TD\n    SEE[\"重新看见多层反馈环\"] ==> WHOLE[\"分散治理对象<br/>组织成整体闭环\"]\n    WHOLE ==> INTERFACE[\"Harness 理念变成工程界面\"]\n    INTERFACE ==> SUMMARY[\"小结与深度分析\"]",
+  "isSvg": false
+ }
+]

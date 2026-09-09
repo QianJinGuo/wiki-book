@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Bedrock Ops Alert 三层监控架构",
+  "code": "graph TD\n    L3[\"三层监控互补与盲区覆盖\"] ==> DYN[\"动态阈值自动管理<br/>消除 GenAI 运维最大配置漂移源\"]\n    DYN ==> TICKET[\"支持工单决策树<br/>业务语义路由 · 用量验证\"]\n    TICKET ==> DEDUP[\"去重防止自动化自我放大<br/>从被动运维到自动驾驶运维\"]",
+  "isSvg": false
+ }
+]

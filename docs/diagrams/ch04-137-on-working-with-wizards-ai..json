@@ -1,0 +1,7 @@
+[
+ {
+  "title": "On Working with Wizards——AI 从协作到召唤",
+  "code": "graph TD\n    SHIFT[\"从共同工作者到巫师<br/>协作到召唤的范式转变\"] ==> POWER[\"Wizard 的力量<br/>GPT-5 Pro 与 Claude 4.1 Opus\"]\n    POWER ==> PROBLEM[\"Wizard 的问题\"]\n    PROBLEM ==> HOW[\"我们如何与巫师相处\"]",
+  "isSvg": false
+ }
+]

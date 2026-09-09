@@ -1,0 +1,7 @@
+[
+ {
+  "title": "如何实现真正的 Serverless GPU",
+  "code": "graph TD\n    GOAL[\"实现真正 Serverless GPU<br/>的技术路径\"] ==> CHALLENGE[\"核心挑战分析\"]\n    CHALLENGE ==> APPROACH[\"技术方案\"]\n    APPROACH ==> INS[\"深度分析与实践启示\"]",
+  "isSvg": false
+ }
+]

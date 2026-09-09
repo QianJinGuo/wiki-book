@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AWS 上构建 Outlook 邮件助手——AI Agent 办公自动化",
+  "code": "graph TD\n    L4[\"四层架构: Agent 运行时 加 模型层<br/>加 Skill 层 加 MCP 工具层\"] ==> DESIGN[\"Skill 作业务语言层<br/>MCP 作企业接入标准<br/>模型可替换适配合规\"]\n    DESIGN ==> GATE[\"草稿确认门作外发合规基线\"]\n    GATE ==> P[\"Skill 自动生成机制<br/>Git 版本控制 · 最小权限 MCP\"]",
+  "isSvg": false
+ }
+]

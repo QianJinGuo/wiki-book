@@ -1,0 +1,7 @@
+[
+ {
+  "title": "SageMaker 容量感知推理——实例池加优先级 Fallback",
+  "code": "graph TD\n    ARCH[\"从绑定单一实例到容量抽象层<br/>实例池加优先级 Fallback\"] ==> WINDOW[\"容量窗口机制<br/>VariantInstanceProvisionTimeout\"]\n    WINDOW ==> METRICS[\"混合 GPU 舰队加权利用率<br/>聚合指标会误导扩缩容决策\"]\n    METRICS ==> P[\"优先 Instance Pools · 同族优先跨族兜底<br/>异步推理冷启动 · 开 InstanceType 维度\"]",
+  "isSvg": false
+ }
+]

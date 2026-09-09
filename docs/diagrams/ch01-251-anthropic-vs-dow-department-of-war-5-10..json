@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Anthropic vs DoW——开源模型的 5-10 年权力均衡",
+  "code": "graph TD\n    THESIS[\"核心论点: 开源是 5-10 年<br/>稳定均衡\"] ==> EVIDENCE[\"关键论据<br/>供应链风险指定的信号意义<br/>开源商业模式困境<br/>全球主权 AI 需求\"]\n    EVIDENCE ==> MAINLINE[\"真正主线: not your weights<br/>not your brain 权重主权化\"]\n    MAINLINE ==> BREAKPOINT[\"商品化互补品的临界点<br/>万亿成本 vs 亿万收益的数学崩塌\"]",
+  "isSvg": false
+ }
+]
