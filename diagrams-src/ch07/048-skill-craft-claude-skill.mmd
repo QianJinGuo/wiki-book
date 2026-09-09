@@ -1,0 +1,6 @@
+%% title: Skill Craft——Claude Skill 质量工程框架
+graph TD
+    FAIL["7 类系统性失效模式<br/>根因: 上下文压缩与约束稀释<br/>并行孤岛 · 触发模糊"] ==> ARCH["四模式架构"]
+    ARCH ==> EVAL["三层评估体系<br/>audit 模式: 从单体到系统治理"]
+    EVAL ==> FIX["fix 模式四类关联检查<br/>修复后必须回归验证"]
+    FIX ==> RULES["验收要可计数 · 子 Agent 必配合并规则<br/>没有来源就不输出"]

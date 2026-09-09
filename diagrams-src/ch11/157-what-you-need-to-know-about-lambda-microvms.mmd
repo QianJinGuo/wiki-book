@@ -1,0 +1,5 @@
+%% title: Lambda MicroVMs 你需要知道的事
+graph TD
+    GAP["填补空白: VM 级隔离加秒级启动<br/>加有状态加 8 小时长时运行"] ==> DIFF["与传统 Lambda 根本区别<br/>会话模型非 request response<br/>HTTP2 gRPC WebSocket · 自动挂起恢复"]
+    DIFF ==> SHELL["Shell 访问一等公民<br/>Docker 支持"]
+    SHELL ==> CMP["与 AgentCore Runtime 对比<br/>Firecracker 战略价值<br/>定价模型的隐含信号"]
