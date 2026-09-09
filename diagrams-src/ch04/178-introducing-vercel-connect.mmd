@@ -1,0 +1,5 @@
+%% title: Introducing Vercel Connect
+graph TD
+    CONNECT["Register connector once<br/>跨项目与环境复用"] ==> TOKEN["Request scoped tokens at runtime"]
+    TOKEN ==> OIDC["App 用 OIDC 证明身份"]
+    OIDC ==> INS["深度分析与实践启示"]

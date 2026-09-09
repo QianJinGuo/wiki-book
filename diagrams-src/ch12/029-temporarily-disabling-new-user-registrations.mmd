@@ -1,0 +1,4 @@
+%% title: 暂停新用户注册——DDoS 与恶意注册组合攻击
+graph TD
+    ATTACK["组合攻击: DDoS 压制可用性<br/>加 批量注册 bot 投毒供应链<br/>三条战线同时展开"] ==> WINDOW["发现到下架的非零窗口<br/>窗口内恶意包仍可被安装执行"]
+    WINDOW ==> RESPONSE["响应: 500 加恶意包次日 yank<br/>Fastly WAF 加注册限流后重开<br/>精准隔离: 只暂停新注册"]

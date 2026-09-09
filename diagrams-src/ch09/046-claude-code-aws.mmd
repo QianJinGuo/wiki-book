@@ -1,0 +1,5 @@
+%% title: Claude Code 接入自建开源模型——企业私有化降本
+graph TD
+    DUAL["双轮驱动架构"] ==> GATEWAY["LiteLLM Proxy 作企业级模型网关<br/>任务分类驱动的动态路由"]
+    GATEWAY ==> STREAM["流式响应 Schema 对齐挑战"]
+    STREAM ==> COMPLIANCE["私有化程度与合规弹性<br/>SGLang 加 SageMaker 优化成本"]

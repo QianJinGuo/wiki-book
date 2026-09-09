@@ -1,0 +1,5 @@
+%% title: DevOps Agent 中国区接入——Partition 隔离与 Roles Anywhere
+graph TD
+    PARTITION["DevOps Agent 原生不支持 aws-cn<br/>需自建桥接"] ==> SINGLE["单账号 MCP 桥接架构<br/>端到端部署流程"]
+    SINGLE ==> MULTI["多账号扩展: Hub-Spoke 扇出"]
+    MULTI ==> AUTH["Roles Anywhere 认证"]

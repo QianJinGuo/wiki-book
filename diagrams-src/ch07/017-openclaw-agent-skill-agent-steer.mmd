@@ -1,0 +1,5 @@
+%% title: OpenClaw 深度架构——Agent 引擎与多源 Skill 与 Steer
+graph TD
+    ENGINE["Agent 执行引擎"] ==> SKILL["Skill 机制: 6 来源按优先级合并<br/>过滤资格 · 数量限制 · SkillSnapshot"]
+    SKILL ==> SUBAGENT["子 Agent: spawn 创建加注册表<br/>推送式结果返回<br/>Steer 重定向核心容错机制"]
+    SUBAGENT ==> FAULT["五层容错体系加工具权限策略"]
