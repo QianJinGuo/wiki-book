@@ -83,8 +83,6 @@ Part II 将介绍 query engine、impact analysis 算法、client libraries。
 
 → [原文存档](https://netflixtechblog.com/high-throughput-graph-abstraction-at-netflix-part-i-e88063e6f6d5)
 
-## 深度分析
-
 ### 层级化存储架构的工程哲学
 
 Netflix 的图抽象采用"build taller"的策略——在现有抽象上继续搭建，而非从零构建 KV 存储层。这种设计哲学在工程效率和风险控制之间取得了良好平衡。Key-Value Abstraction 提供持久化和实时索引，TimeSeries Abstraction 提供历史视图，EVCache 提供毫秒级延迟。这种分层架构使得 Graph Abstraction 可以专注于图语义层（schema validation、traversal planning、edge deduplication），而将数据面复杂度下沉到成熟组件中。对于大规模分布式系统的设计者来说，这是一个重要的提醒：在自研与复用之间，往往存在一个"垂直整合"的甜点区间，即在自己核心价值上深度自研，在通用能力上借力成熟组件。

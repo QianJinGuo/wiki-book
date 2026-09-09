@@ -11,7 +11,6 @@ Amazon Web Services (AWS)
 ## 来源
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/fast-fashion-ecommerce-agent-design-8-websocket-voice-system/)
 
-## 深度分析
 ### 1. WebSocket 全双工通信架构：替代 HTTP 请求-响应范式
 传统语音机器人基于 HTTP 的轮询或单向拉取机制，存在端到端延迟高、无法真正双向同时通信的根本性缺陷。本方案以 **WebSocket（SigV4 / Full-Duplex）** 作为语音数据面的核心通信机制，实现客户端麦克风到扬声器的端到端双向音频流：客户端采集 16kHz PCM 音频块通过 WebSocket 实时推送，模型响应以流式音频块返回，中途用户插话（barge-in）时客户端可立即发送新音频打断当前生成，无需等待本轮响应结束。
 

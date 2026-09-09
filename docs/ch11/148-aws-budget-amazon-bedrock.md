@@ -96,8 +96,6 @@
 
 → [原文存档](https://aws.amazon.com/cn/blogs/china/leveraging-aws-budget-implement-amazon-bedrock/)
 
-## 深度分析
-
 ### 1. 双 Policy 切换机制的架构本质
 
 该方案的核心创新在于用"Attach/Detach IAM Policy"替代传统的删除或修改策略。这种设计利用了 AWS IAM 的 additive 模型——新增一个 Deny Policy 永远不会破坏已有的 Allow 链，只会在叠加后由"Deny 优先"原则生效。相比直接修改用户权限，双 Policy 切换避免了误操作导致权限完全丢失的风险，调试时也只需控制 Deny Policy 的附加状态即可。在实现上，Budget Action 执行的是 `AttachUserPolicy` 而非删除操作，这保证了操作的幂等性和可逆性。

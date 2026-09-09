@@ -16,7 +16,6 @@ Docker 宣布 Custom Catalogs 与 MCP Profiles 正式 GA（General Availability�
 - **设计分工明确**：Catalogs 定义"组织推荐什么"（golden path 与 guardrails），Profiles 定义"个人如何工作"（自由组合与实验），整体追求 portable、composable、scalable 的系统特性。
 - **路线图**：governance and policy controls、可发现性与共享改进、Profile-scoped secrets 与配置（替代项目级 mcp.json）、与 agent skills 结合的 best practices。
 
-## 深度分析
 ### 企业 MCP 治理的结构性需求
 MCP 协议标准化了"如何接入工具"，却从未回答"哪些工具可信、由谁批准"。组织规模化采用 MCP 时反复听到同一个诉求：团队需要一份可信的 MCP 服务器清单，其中必须包含内部自建服务器。Custom Catalogs 正是对这一结构性缺口的回应——平台团队把审批过的服务器（官方 Catalog + 社区来源 + 自建）打包成一个可发布的 catalog 实体，开发者无需理解内部审批流程，即可在组织边界内集中发现可信工具；文章甚至点破：随着 MCP 采用增长，挑战不再是"能否访问工具"，而是"如何协调"。
 

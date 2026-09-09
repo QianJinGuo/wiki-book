@@ -43,8 +43,6 @@
 - **支持所有认证方法**：Social providers (Amazon/Google/Apple/Facebook)、SAML、OIDC、API 授权流程均支持
 - **Essentials/Plus 套餐可用**：$0.0045-$0.006/MAU/副本区域，M2M 额外 +30%
 
-## 深度分析
-
 ### 1. 多区域认证的架构必要性
 Cognito 多区域复制不是"更好的性能"而是"业务连续性"——如果单区域 Cognito 故障，所有依赖该用户池的应用都无法认证，等于全面停机。对全球服务来说，认证是单点故障的最高风险点之一。
 

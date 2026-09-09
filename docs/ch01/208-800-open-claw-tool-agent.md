@@ -31,7 +31,6 @@
     const occurrences = content.split(oldText).length - 1;if (occurrences === 0) {  return `Error: old_text not found in ${filePath}`;}if (occurrences > 1) {  return `Warning: old_text found ${occurrences} times in ${filePath}. Please provide a more unique text snippet. No changes made.`;}const updated = content.replace(oldText, newText
 ", "total_lines": 75
 
-## 深度分析
 ### 薄抽象层策略的工程价值
 Open Claw 选择直接基于 Anthropic SDK 构建，拒绝 LangChain 等中间层，这一决策背后有深刻的工程逻辑。
 当框架层变薄时，API 行为的控制精度直接提升。在调试场景中，开发者可以直接观察到 SDK 发出的原始请求和接收的原始响应，无需穿透多层框架抽象。以 Tool 调用为例：当 LLM 返回一个 function call 时，执行路径是确定的——`ToolRegistry.execute()` → `tool.execute()` → 返回值。没有任何隐式的中间件链、钩子或转换层打断这个路径。
@@ -98,7 +97,7 @@ ExecTool 的三层防护说明了一个通用原则：安全设计不能依赖�
 
 ## 相关实体
 - [800行代码实现 Open Claw 的 Tool消息总线子Agent管理架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/800行代码实现-open-claw-的-tool消息总线子agent管理架构.md)
-- [Stripe Sessions 2026 Ai Agents](../ch04/189-stripe-sessions-2026-ai-agents.html)
+- [Stripe Sessions 2026 Ai Agents](../ch04/187-stripe-sessions-2026-ai-agents.html)
 - [Claude Code Prompt Source Analysis](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-prompt-source-analysis.md)
 - [Anthropic Claude Managed Agents Platform Launch](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-claude-managed-agents-platform-launch.md)
 - [Agent Memory Architecture Past Influence Future Ruofei](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture-past-influence-future-ruofei.md)

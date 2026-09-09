@@ -1,6 +1,6 @@
 # Memento-Skills — 技能外部记忆让 Agent 自进化（arXiv 2603.18743）
 
-> 📊 Level ⭐⭐⭐⭐ | 14.2KB | `entities/memento-skills-let-agents-design-agents.md`
+> 📊 Level ⭐⭐⭐⭐ | 14.0KB | `entities/memento-skills-let-agents-design-agents.md`
 
 ## 背景问题：冻结大模型的成长困境
 
@@ -135,10 +135,6 @@ Biology/Humanities 提升最明显（可抽象程度高）。
 ---
 
 **补充阅读**：
-
--  — Agent 自改进六条路全景图
--  — 三种记忆范式量化对比
--  — Hermes Agent 的自进化机制
 
 ---
 

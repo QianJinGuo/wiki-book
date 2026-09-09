@@ -22,8 +22,6 @@ AWS 官方博客发布的一篇企业级 Agent 实战案例：使用 Strands Age
 - **审核输出协议**：manager 严格规定输出格式 `- text: suggestion`，每条广告词一行，例如 `- "来个不如球釜": 表述存在歧义，"不如" 可能被理解为贬低性表述...`
 - **OCR 提示词工程**：详细规定识别范围（中英文+数字+单位、艺术字/渐变/立体字）、排除项（条形码、价格、3C 认证标志）、精度要求（区分 0/O、1/l、6/G 等相似字符）
 
-## 深度分析
-
 ### Agents as Tools 是企业级 Agent 的「微服务化」
 
 manager agent 通过 `tools=[run_text_extraction, review_advertisement_text]` 把两个子 Agent 包装成可调用工具。从架构视角，这等价于把每个专业 Agent 部署成「单职责服务」，由协调者按需调度。这种设计的好处：
@@ -56,7 +54,7 @@ manager agent 通过 `tools=[run_text_extraction, review_advertisement_text]` �
 - 工具调用链的可观测性
 - 多租户隔离
 
-对企业用户来说，AgentCore 的价值是「不用自己搭 Agent 运行平台」，对应 [AgentCore Managed Harness](../ch04/309-agentcore-managed-harness.html) 的定位。但代价是供应商锁定——业务逻辑通过 `@tool` 装饰器和 AgentCore 抽象耦合，迁出 AWS 需要重写工具桥接层。
+对企业用户来说，AgentCore 的价值是「不用自己搭 Agent 运行平台」，对应 [AgentCore Managed Harness](../ch04/307-agentcore-managed-harness.html) 的定位。但代价是供应商锁定——业务逻辑通过 `@tool` 装饰器和 AgentCore 抽象耦合，迁出 AWS 需要重写工具桥接层。
 
 ### OCR 提示词的「负面清单」工程
 
@@ -86,7 +84,7 @@ vision Agent 的 system prompt 中最值得借鉴的是「**严格排除**」清
 ## 相关实体
 
 - [Agentcore Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentcore-harness.md) — AgentCore Harness 综述
-- [Agentcore Managed Harness](../ch04/309-agentcore-managed-harness.html) — Managed Harness 定位与权衡
+- [Agentcore Managed Harness](../ch04/307-agentcore-managed-harness.html) — Managed Harness 定位与权衡
 - [Amazon Bedrock Agentcore Runtime Deep Dive And Scenario Analysis](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-agentcore-runtime-deep-dive-and-scenario-analysis.md) — AgentCore Runtime 深度分析
 - [Agentcore Payments X402 Agentic Commerce](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentcore-payments-x402-agentic-commerce.md) — AgentCore 在支付场景的应用
 - [Agentic Scheduler With Strands Agentcore For Multi Region Gpu Inference](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentic-scheduler-with-strands-agentcore-for-multi-region-gpu-inference.md) — Strands + AgentCore 调度案例

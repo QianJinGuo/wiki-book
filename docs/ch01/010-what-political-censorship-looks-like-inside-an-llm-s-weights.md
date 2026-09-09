@@ -18,8 +18,6 @@
 - **中文中间表示因果惰性**：tap 24 裁决以中文 token"承诺"（Tiananmen≈100%、有害≈96%），后续层分布式译回英文；但置零所有中文 logit 不改输出——语言只是 lm_head 读出偏差，真实决策在上游信号。
 - **Brittleness——脆弱窄带**：Tiananmen 回避模板是唯一狭窄结构，大 |α| 的随机方向即可击碎它并落入 denial/不连贯；西式拒绝模板高度冗余、几乎撬不动。
 
-## 深度分析
-
 ### 从外部与内部：四个响应风格与三条轴
 
 从外部看，chat 模型按 prompt 类型产四套训练响应风格：Tiananmen→回避腔、其余 PRC→宣传腔、有害→西式拒绝、其余→事实。用 200 条人工 prompt 四类各 50（含结构匹配的非 PRC 政治对照：Kent State、Assange、Arab Spring、Kosovo、Saudi 等）确证每类落到预期 register，结论是 Qwen 是 **PRC 内容特异的过滤器**而非泛化"避免政治话题"。内部用 diff-of-means 提取三个方向：d_prc（tap14）、d_refuse（tap19）、d_style（tap19）；七个 PRC 子话题共享同一条轴（两两 cosine 0.91–0.98），其 3D 坐标干净分离四类（per-prompt AUC ≥ 0.99）。三轴互相不可约：d_style 单独翻转 Tiananmen→propaganda 转换 100%，d_prc 或 d_refuse 单独为 0%。

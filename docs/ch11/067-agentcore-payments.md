@@ -4,8 +4,6 @@
 
 > 深入解析 AgentCore Payments 技术架构与 x402 协议，探讨代理商务（agentic commerce）的支付创新方向。
 
-## 核心内容
-
 ## Technical deep dive: AgentCore payments and innovation in agentic commerce
  
 
@@ -16,8 +14,6 @@ This agentic world is already reshaping how content, APIs, and software as a ser
 Although AI agents can accomplish complex tasks through APIs, MCPs, and web browsing, they encounter a wall when accessing paid services and content. Accessing external services requires subscribing to and managing separate billing accounts with each provider, creating significant overhead. Compounding this, most API calls and content accesses are worth only cents, yet traditional payment methods like credit cards include a fixed per-transaction fee (for example, USD $0.30), making them economically unviable for high-frequency microtransactions. Wiring together third-party wallets, payment orchestration, agentic protocol support such as [x402](https://www.x402.org/) (one of the popular machine-to-machine payment protocols), edge case handling, and end-to-end observability can take months of work. Beyond integration complexity, developers must build governance and budget guardrails from scratch to help prevent runaway spending, and meet the strict security and regulatory compliance requirements that payment flows demand.
 
 [Amazon Bedrock AgentCore payments](https://aws.amazon.com/blogs/machine-learning/agents-that-transact-introducing-amazon-bedrock-agentcore-payments-built-with-coinbase-and-stripe/) is purpose-built to address this complexity. Now available in preview, it provides instant payments to paid external services with no manual billing setup per provider, stablecoin support for cost-effective microtransactions that make sub-cent transactions economically viable, and configurable spending guardrails that give you fine-grained control over agent budgets and transaction limits. In this post, we walk you through a technical deep dive of AgentCore payments.
-
-## 深度分析
 
 ### 代理商务的支付墙：为什么传统支付无法支撑 AI 代理
 

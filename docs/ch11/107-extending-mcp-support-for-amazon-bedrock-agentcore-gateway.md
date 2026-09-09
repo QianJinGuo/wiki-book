@@ -38,8 +38,6 @@ AgentCore Gateway 成为单一 MCP 端点，聚合组织内所有 MCP 服务器�
 
 Dynamic listing 保留服务端访问控制：权限感知服务器可以只为经理暴露 `approve_expense`，多租户服务器只为医疗客户展示 HIPAA 合规工具。两种模式都支持通过 AgentCore Policy 或 Lambda 响应拦截器集中执行策略。
 
-## 深度分析
-
 ### 流式传输、会话管理与 Elicitation
 
 这三个能力共同支撑有状态、实时、人在回路的交互：

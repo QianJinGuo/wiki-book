@@ -75,8 +75,6 @@ A sequence item isn’t just an ID; it’s a structured token combining three co
 *   **Item Embedding (128 d):** A dense SKU vector, initialised from pre-trained embeddings and fine tuned during training.
 *   **Action Embedding:** Differentiates interaction types. An _Add-to-Cart (ATC)_ carries heavier 
 
-## 深度分析
-
 ### 双序列架构解决"静态用户画像"的根本性缺陷
 
 Zepto 的双序列排序器（Dual Sequence Ranker）直接回应了推荐系统中的一个结构性问题：将用户历史压缩为单一静态向量是极度有损的操作。 双序列设计（长期历史 + 实时会话）通过独立编码器保持两个时间维度的信号完整性，避免短期意图被长期偏好淹没。这一架构灵感来自阿里巴巴的 DIN 和 BST，但 Zepto 将其应用于快商务场景（10 分钟配送），其中会话意图的时效性远比传统电商更强。

@@ -13,8 +13,6 @@
 - **架构答案是"构建时 AI、运行时代码"**：AI 一次性生成并验证规则引擎（瀑布、GP/LP 分配、catch-up 条款），运行时由确定性代码执行，无实时 LLM 调用触达基金计算。
 - **防篡改审计轨迹 + 版本化可回滚 + 平台级 maker/checker**：每条交易生成只读的输入/逻辑版本/审核人记录；邮件与 Slack 审批不通过 SOX 等效控制的测试。
 
-## 深度分析
-
 ### 审计标准从"功能正确"转向"证据与复现"
 在私人基金会计中，每一次 close 都是一次控制测试。当 AI 进入该流程后，问题不再是"算得对不对"，而是"算得可证明、可复现、并在与审计师对范围内其他系统相同的标准下被治理"。COSO 2026 与 PCAOB AS 2201 并不是提出全新的控制概念——它们只是把既有的变更管理与可复现性测试，正式延伸到了 AI 之上；真正新的认识是，**大多数内部构建的 AI 因其构造本身就无法通过这套标准**。审计的证明对象从"功能是否正确实现"转向"这个 AI 看过哪些数据、用什么逻辑处理、版本是否与上次一致"，这是一套全新的证明体系。
 
@@ -36,7 +34,7 @@
 
 ## 相关实体
 - [Agentic AI 在金融领域](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentic-ai-finance.md)
-- [Stripe 金融合规 AI 生产经验](../ch04/330-stripe-financial-compliance-ai-agent-production-lessons.html)
+- [Stripe 金融合规 AI 生产经验](../ch04/328-stripe-financial-compliance-ai-agent-production-lessons.html)
 - [Agent 审计风险与噪声](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-audit-risk-noise-aliyun-agentloop-2026.md)
 - AI 合规
 - [负责任 AI 治理](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/responsible-ai-governance.md)

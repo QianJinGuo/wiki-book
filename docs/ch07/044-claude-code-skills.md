@@ -68,8 +68,6 @@ Skills 与 Claude Code 的其他扩展机制形成了清晰的层级关系：
 
 这种层级化设计允许用户根据场景选择正确的抽象级别：固定规则放在 CLAUDE.md，变流程放在 Skill，自动化 hook 处理事件，复杂任务委派给 Subagent，整套能力打包成 Plugin。
 
-## 深度分析
-
 ### Skill 的 Token 经济学
 
 Skill 的核心设计选择——**只暴露 frontmatter 元数据，按需加载完整内容**——是一种 Token 经济学的优化方案。假设每个 Skill 平均 2KB 内容，100 个 Skill 的完整加载需要 200KB token（超过了绝大多数模型的上下文窗口）。而 frontmatter-only 模式下，即使是 100 个 Skill 也仅需约 30KB 元数据，且模型通常不需要同时参考所有 Skill。

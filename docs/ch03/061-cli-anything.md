@@ -81,7 +81,6 @@ cli-hub install <name>
 ```
 覆盖范围：Blender/GIMP/Krita/FreeCAD/QGIS/OBS Studio/Shotcut/UniMol Tools/Zotero/Obsidian/Stable Diffusion WebUI/ComfyUI/Ollama 等。
 
-## 深度分析
 ### 设计哲学：软件eating向的范式转换
 CLI-Anything 背后是一个根本性的范式判断：**未来软件的主要用户将是 AI Agent 而非人类**。HKUDS 实验室提出的口号 "Today's Software Serves Humans, Tomorrow's Users will be Agents" 精准地捕捉了这一趋势。CLI-Anything 的本质是将这一愿景落地为可操作的工程框架。
 

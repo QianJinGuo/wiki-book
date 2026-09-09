@@ -95,8 +95,6 @@ You can view the code and download the project on [GitHub - LLMReaper](https://g
 - [llmreaper - dom based ai conversation exfiltration via brows](https://github.com/QianJinGuo/wiki-public/blob/main/entities/blog-ai-chat-llmreaper.md)
 → [原文存档](https://thewhiteh4t.github.io/blog/ai-chat-llmreaper/)
 
-## 深度分析
-
 ### 攻击链的端到端博弈
 
 LLMReaper 展示了一条完整的攻击链，从心理学层面的社会工程到技术层面的数据窃取，形成了一个闭环的威胁模型 。攻击的起点不是技术漏洞，而是用户行为习惯——开发者天然倾向于向 AI 助手粘贴代码和配置以寻求调试帮助，这种行为模式使 LLM 对话成为情报金矿。与传统网络钓鱼需要用户主动点击恶意链接不同，浏览器扩展攻击是「安装即失血」：用户主动授予的 `host_permissions` 在扩展生命周期内持续有效，而用户对已安装扩展的警惕性随时间递减 。LLMReaper 的设计巧妙之处在于它利用了浏览器的正常权限架构，不需要任何特殊权限声明（content script 通过 DOM 访问即可工作），这使得攻击面从「恶意扩展利用漏洞」扩展到了「任何有 DOM 读取权限的合法扩展被劫持或供应链污染」。攻击者面对的防御方是用户本人，而用户的盲点在扩展权限提示弹出时已经达到峰值——这个时间窗口几乎无法被有效利用。

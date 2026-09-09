@@ -188,9 +188,9 @@ NVIDIA Nemotron Nano 2 VL (12B) VLM 将视觉推理引入 RAG 管道，使系统
 
 ## 相关实体
 - [Nvidia Nemotron 3 Agents Rag Voice Safety](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-nemotron-3-agents-rag-voice-safety.md)
-- [Nvidia Extreme Co Design Agentic Systems](ch04/094-nvidia-extreme-co-design-agentic-systems.html)
-- [Nvidia Agentic Ai Subsurface Engineering](ch04/194-nvidia-agentic-ai-subsurface-engineering.html)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/056-nvidia-secure-local-agent-nemoclaw-openclaw.html)
+- [Nvidia Extreme Co Design Agentic Systems](ch04/093-nvidia-extreme-co-design-agentic-systems.html)
+- [Nvidia Agentic Ai Subsurface Engineering](ch04/192-nvidia-agentic-ai-subsurface-engineering.html)
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/055-nvidia-secure-local-agent-nemoclaw-openclaw.html)
 - [Nvidia Telco Reasoning Models Nemo](ch01/195-nvidia-telco-reasoning-models-nemo.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
 
@@ -331,7 +331,7 @@ Amazon Nova MME 的 `GENERIC_INDEX`（文档索引用）和 `GENERIC_RETRIEVAL`�
 
 → [Amazon Nova Sonic 可扩展语音代理设计](https://github.com/QianJinGuo/wiki-public/blob/main/entities/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session.md)
 
-→ [Amazon Nova 2 内容审核提示工程](ch01/486-prompting-amazon-nova-2-for-content-moderation.html)
+→ [Amazon Nova 2 内容审核提示工程](ch01/485-prompting-amazon-nova-2-for-content-moderation.html)
 
 → [Amazon Bedrock AgentCore 运行时深度解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-agentcore-runtime-deep-dive-and-scenario-analysis.md)
 
@@ -361,8 +361,6 @@ Amazon Nova MME 的 `GENERIC_INDEX`（文档索引用）和 `GENERIC_RETRIEVAL`�
 - 推理期以 temperature=0.0 贪心解码、max_new_tokens=512、batch_size=1 强化稳定性。
 - 结果投票融合：选择题多数投票，问答题取语义相似度最高者。
 - 作者结论：RAG 没有标准答案，考验的是面对不同任务灵活变通、基于成熟脚手架快速改造并"发现问题解决问题"的能力。
-
-## 深度分析
 
 ### 金融监管约束下的 RAG：精确、可追溯、可审计
 
@@ -394,7 +392,7 @@ Amazon Nova MME 的 `GENERIC_INDEX`（文档索引用）和 `GENERIC_RETRIEVAL`�
 - [RAG技术框架的演进方向](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag技术框架的演进方向.md) — Classic → Graph → Agentic RAG 演进路线，本文为其经典 RAG 打法提供实证对照
 - [AFAC2026 金融 AI Agent 竞赛](https://github.com/QianJinGuo/wiki-public/blob/main/entities/afac2026-financial-ai-agent-competition-harness.md) — 另一金融 AI 竞赛方案，可对比"RAG 问答"与"Agent 编排"两条路线
 - [RAG 分块-嵌入-重排全链路](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-chunk-embedding-rerank-pipeline.md) — 与本文混合检索+重排设计互补的管道细节
-- [Stripe 金融合规 AI Agent 实践](ch04/330-stripe-financial-compliance-ai-agent-production-lessons.html) — 同为金融合规场景，可从生产侧视角印证本文的可追溯、可审计原则
+- [Stripe 金融合规 AI Agent 实践](ch04/328-stripe-financial-compliance-ai-agent-production-lessons.html) — 同为金融合规场景，可从生产侧视角印证本文的可追溯、可审计原则
 
 ---
 
@@ -416,8 +414,6 @@ Amazon Nova MME 的 `GENERIC_INDEX`（文档索引用）和 `GENERIC_RETRIEVAL`�
 - **自动化采集**：RSS、newsletter、微信公众号等管道自动入库，人工只保留 Gate 把关权
 - **分层优于平铺**：Pyramid KB 证明按抽象层次组织知识可显著降低粒度混乱，混合方案 Hit@3 达 89%
 - **健康度可度量**：orphan rate、覆盖率、链接密度等指标把维护从凭感觉变成看数据
-
-## 深度分析
 
 ### 一、入库评分与 Gate：质量在入口而非出口
 
@@ -741,7 +737,6 @@ PS：从这里也可以看出来，图谱的存在其实是为了解决工程维
 好了，文章很长了，希望对大家有用！
 ** 点击上方卡片关注叶小钗公众号  **
 
-## 深度分析
 ### 向量库的局限性本质
 向量库作为早期RAG的核心组件，其本质缺陷在于**将知识压缩为孤立的"语义点"**。这种处理方式存在三个根本性问题：
 1. **上下文割裂**：Chunking过程中对原始文档完整性的破坏，导致关键信息被分隔
@@ -812,7 +807,7 @@ PS：从这里也可以看出来，图谱的存在其实是为了解决工程维
 ## 关联阅读
 ## 相关实体
 - [Google Agentic Rag Sufficient Context Agent Framesqa](https://github.com/QianJinGuo/wiki-public/blob/main/entities/google-agentic-rag-sufficient-context-agent-framesqa.md)
-- [Architecture Data Foundations For Ai Powered Search](ch01/339-architecture-data-foundations-for-ai-powered-search.html)
+- [Architecture Data Foundations For Ai Powered Search](ch01/338-architecture-data-foundations-for-ai-powered-search.html)
 - [Rag技术框架的演进方向](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag技术框架的演进方向.md)
 - [Skill Rag Tsinghua Sra](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-rag-tsinghua-sra.md)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
@@ -945,7 +940,7 @@ RAG 系统的效果瓶颈不在模型，而在**入库质量**。同样的 Embed
 - [RAG 全链路技术详解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-full-pipeline-taobao.md)
 - [RAG 分块向量化召回重排流水线](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-chunk-embedding-rerank-pipeline.md)
 - [向量库 vs 知识图谱：RAG 的进阶路径](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-vector-knowledge-graph-ontology.md)
-- [AI Agent 记忆系统工作原理](ch04/115-how-ai-agent-memory-works.html)
+- [AI Agent 记忆系统工作原理](ch04/113-how-ai-agent-memory-works.html)
 
 ## 深度分析
 
@@ -1334,8 +1329,6 @@ mesh sync、shared/private knowledge、coordination boundary。
 2. **segmentation**：个人偏好/项目事实/团队决策/临时任务/研究材料分 schema，生命周期和权限不同
 3. **Agent context operating system**：session start 加载 → tool use 记录 → 任务结束沉淀 → 多 Agent 共享
 
-## 深度分析
-
 ### 从"编译一次"到"持续维护"的知识系统演进
 
 Karpathy 原版 LLM Wiki 的核心洞察是"RAG 每次重算，Wiki 会累积"——让 LLM 把原始材料编译成结构化 wiki，后续查询直接读 wiki 而非重走 RAG 管线。V2 的贡献在于识别出这个模式的长期衰减问题：知识会过期、链接会断裂、搜索会变慢、自动化会引入噪声。这不是推翻原版，而是为原版的"复利"承诺加上"防烂"机制。
@@ -1488,8 +1481,6 @@ MRAgent Token 消耗仅 118k——不到 A-Mem 的 1/5，不到 LangMem 的 1/27
 - 构建阶段的 LLM 蒸馏一旦抽错 Tag，下游会不会一路带偏？
 - LoCoMo 和 LongMemEval 上证据充分，生产环境对话分布更脏更乱
 
-## 深度分析
-
 ### 从"存储-检索"到"构建-重建"的范式跃迁
 
 MRAgent 的核心贡献不是又一个更好的检索算法，而是对记忆访问范式的重新定义。传统方案（无论向量检索还是图检索）都假设记忆是"存好的等你来取"，而 MRAgent 认为记忆是"根据当前推理状态临时拼装的"。这与认知神经科学的发现一致：人类回忆不是从硬盘读文件，而是根据线索一点点重建场景。
@@ -1569,8 +1560,6 @@ CR 模型依赖原子产品 ID 作为独立 token，这定义了模型能理解�
 - **多零售商**：用户跨多个零售商购物，每个零售商有独立的产品目录
 
 这些挑战要求模型超越历史购买记录，同时考虑活跃购物会话的实时动态。
-
-## 深度分析
 
 ### 从打分到生成：范式转换的本质
 
@@ -1665,8 +1654,6 @@ Fragnesia 由安全研究员 Hyunwoo Kim（DirtyFrag 原始发现者）披露，
 
 - **AppArmor 限制**：Ubuntu 等发行版默认对非特权用户命名空间启用 AppArmor 限制，需要额外绕过才能成功利用
 - **模块加载**：如果 `esp4`、`esp6`、`rxrpc` 模块未加载则不受影响
-
-## 深度分析
 
 ### DirtyFrag 修补反模式：过度特化导致新漏洞
 
@@ -2210,8 +2197,8 @@ ranked = reranker.rank(query, top_k_docs, top_k=5, return_documents=True)
 
 ## 相关实体
 - [Introducing The Ettin Reranker Family](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-the-ettin-reranker-family.md)
-- [Claude Code Openclaw Usage Ettin](ch09/105-claude-code-openclaw-usage-ettin.html)
-- [Gemma 4 Multi Token Prediction Drafters](ch01/528-gemma-4-multi-token-prediction-drafters.html)
+- [Claude Code Openclaw Usage Ettin](ch09/107-claude-code-openclaw-usage-ettin.html)
+- [Gemma 4 Multi Token Prediction Drafters](ch01/527-gemma-4-multi-token-prediction-drafters.html)
 - [Continuousasync](https://github.com/QianJinGuo/wiki-public/blob/main/entities/continuousasync.md)
 - [Continuous Async](https://github.com/QianJinGuo/wiki-public/blob/main/entities/continuous-async.md)
 

@@ -14,8 +14,6 @@ Open Code Review 是阿里集团内部孵化并开源的 AI 驱动代码评审 C
 4. **开源评测领先**：在 200 个真实 PR 基准集上，整体 F1 指标领先 Claude Code（25.10% vs 14.13%），准确率远超通用 Agent 方案
 5. **四层规则穿透**：CLI 参数 > 项目规则 > 用户规则 > 系统默认，first-match-wins 策略保证灵活性与可控性
 
-## 深度分析
-
 ### 确定性工程 × Agent 混合驱动的设计哲学
 
 Open Code Review 的设计起点是对纯语言驱动架构局限性的深刻认识。Claude Code 等通用 Agent + Skills 方案在代码评审场景中暴露出三个系统性问题：

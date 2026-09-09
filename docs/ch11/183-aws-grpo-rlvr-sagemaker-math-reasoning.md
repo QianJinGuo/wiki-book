@@ -9,8 +9,6 @@ In this post, you will learn how to implement reinforcement learning with verifi
 ## Technical overview
 Before diving into implementation, it's helpful to understand the RL concepts that underpin this approach. RL addresses challenges in model training by establishing a structured feedback system through reward signals. This paradigm enables models to learn through interaction, receiving feedback that guides them toward optimal behavior. RL provides a framework for models to iteratively improve their responses based on clearly defined signals about the quality of their outputs, making it highly effective for training models that interact with users and must adapt their behavior based on outcomes. Traditional RL has highlighted an important consideration: the quality of the reward signal matters significantly. When reward functions are imprecise or incomplete, models can engage in "reward hacking," finding unintended ways to maximize scores without achieving the desired behavior. Recognizing this limitation has led to the development of more rigorous approaches that focus on creating reliable, well-defined reward functions.
 
-## 深度分析
-
 ### RLVR双奖励机制的设计逻辑
 
 RLVR的核心创新在于通过**程序化奖励函数**消除人类评分的瓶颈。 双奖励系统（format 0.5 + correctness 1.0）体现了分层验证的思想：格式奖励引导模型学习正确的输出结构，而正确性奖励则确保数学运算的准确性。这种分离设计使得奖励信号更加透明——当模型获得低分时，可以明确判断是格式问题还是计算错误。
@@ -132,7 +130,7 @@ env["NCCL_IB_DISABLE"] = "1"  # 禁用IB，使用EFA
 
 ## 相关实体
 - [Aws Sagemaker Ai Agent Guided Workflows Finetuning](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
-- [Aws Sagemaker Capacity Aware Inference Fallback](../ch01/234-aws-sagemaker-capacity-aware-inference-fallback.html)
+- [Aws Sagemaker Capacity Aware Inference Fallback](../ch01/233-aws-sagemaker-capacity-aware-inference-fallback.html)
 - [Stochastic Parrot Thought Experiment](../ch01/179-stochastic-parrot-thought-experiment.html)
 - [Overcoming Reward Signal Challenges Verifiable Rewards Based Reinforcement Learn](https://github.com/QianJinGuo/wiki-public/blob/main/entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/llm-core-technology.md)

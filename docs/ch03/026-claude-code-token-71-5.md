@@ -1,6 +1,6 @@
 # Claude Code 实践：token 效率提高 71.5 倍的工作流
 
-> 📊 Level ⭐⭐⭐ | 9.5KB | `entities/claude-code-memory-setup-token-71x楠楠自瑜.md`
+> 📊 Level ⭐⭐⭐ | 9.3KB | `entities/claude-code-memory-setup-token-71x楠楠自瑜.md`
 
 **作者**：楠楠自瑜
 **平台**：微信
@@ -42,7 +42,6 @@
 - 对于限额用户：避免早早耗完配额
 - 保留决策历史：凌晨 2 点解决的 bug 不再消失在聊天历史中
 
-## 深度分析
 ### 两层记忆架构的设计哲学
 这个方案的核心价值在于将"记忆"分为两个正交维度：**声明性记忆**（Obsidian/Zettelkasten）和**结构性记忆**（Graphify/tree-sitter）。前者解决"昨天做了什么"，后者解决"代码是怎么组织的"。这种分离设计的洞见在于：上下文窗口应该只包含当前任务相关的上下文，而非整个代码库的原始内容。
 
@@ -107,11 +106,6 @@ CLAUDE.md 文件在此方案中承担双重角色：
 - [Claude Code Tool Design Evolution Anthropic](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-tool-design-evolution-anthropic.md)
 
 → [原文存档](https://mp.weixin.qq.com/s/UKDFPzcYv0coW9P0n_3jSg)
-
-## 相关实体
-- `官方Memory Setup` — 同一工作流的官方版本
-- `Hermes自我进化` — AI记忆系统的架构设计
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/memory-context-systems.md)
 
 ---
 

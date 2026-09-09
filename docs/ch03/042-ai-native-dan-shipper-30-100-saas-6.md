@@ -290,8 +290,6 @@ AI 系统引入了一个与人类在能力、速度、需求上**完全异质的
 
 ---
 
-## 深度分析
-
 ### 1. AI-native 的每一层思考
 Dan Shipper 的"every layered thinking"模型将 AI-native 分为多个层次：工具层（AI as tool）、流程层（AI as process）、组织层（AI as org）、范式层（AI as paradigm）——每层对 AI 的理解深度不同。
 
@@ -313,7 +311,7 @@ Dan Shipper 的"every layered thinking"模型将 AI-native 分为多个层次：
 到达范式层需要的不只是技术变革，还有组织文化变革——从"AI 辅助人"到"人辅助 AI"。
 
 ## 相关实体
-- [Running An Ai Native Engineering Org](../ch01/033-running-an-ai-native-engineering-org.html)
+- [Running An Ai Native Engineering Org](../ch01/031-running-an-ai-native-engineering-org.html)
 - [Agentic Engineering Leadership](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentic-engineering-leadership.md)
 
 → [原文存档](https://mp.weixin.qq.com/s/Ko_Tpq2UJEbyOBXq9x19ug)

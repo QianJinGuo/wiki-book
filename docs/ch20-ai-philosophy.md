@@ -375,8 +375,6 @@ Anthropic / OpenAI / Google / Microsoft 联合成立的 Frontier Model Forum 是
 
 Amodei 政策的第一个局限是「**政府技术能力跟不上**」——即使政府有意愿建立 AI 评估能力，培养足够专家需要 5-10 年，远超 AI 发展速度。**应对：国际合作 + 学术界 + 工业界联动**。 第二个反对意见是「**trigger-based regulation 过于僵化**」——预设的阈值可能不准确，过早触发会浪费资源，过晚触发会灾难。第三个现实问题：Amodei 承认**国际协调困难**——即使美国/欧盟通过了好政策，中国/其他国家的 AI 发展不一定会跟随，全球 AI 治理需要中美合作（当前几乎停滞）。
 
-## 深度分析
-
 ### 时序鸿沟作为制度性失效
 
 「时序鸿沟」的本质不是简单的政策滞后，而是一种**结构性制度失灵**。当 AI 能力以约每年翻倍的速度发展，而民主制度的立法周期以年为单位时，两者之间存在的不只是时间差，而是**认知框架的根本不匹配**。Treebeard 比喻的深层含义在于：树人并非不愿意行动，而是其生物时间尺度与危机时间尺度根本不兼容——政策制定者面对的困境与此完全一致。这意味着任何有效的 AI 治理方案，必须首先承认并针对这个时间尺度的错位进行设计，而非试图让 AI 发展迁就政策周期。"AI 安全治理"
@@ -429,12 +427,12 @@ Amodei 政策对 AI 从业者的启示：
 
 ## Ch20.004 GitLab employees are the latest to face layoffs limbo. Read the CEO's memo about restructuring 'openly.
 
-> 📊 Level ⭐⭐⭐ | 13.1KB | `entities/gitlab-layoffs-memo-2026-5.md`
+> 📊 Level ⭐⭐⭐ | 12.8KB | `entities/gitlab-layoffs-memo-2026-5.md`
 
 > -> [GitLab employees are the latest to face layoffs limbo. Read the CEO's memo about restructuring 'openly.'](https://www.businessinsider.com/gitlab-layoffs-memo-2026-5)
 ## 相关实体
 
-- [iii.dev](ch01/470-iii-dev.html)
+- [iii.dev](ch01/469-iii-dev.html)
 
 ## 核心要点
 - **裁员规模**：未公布具体人数，截至 2026 年 1 月公司有 2,580 名员工
@@ -469,7 +467,6 @@ Bill Staples 在备忘录中概述了四项主要运营变化：
 9. **灵活商业模式**：随着软件构建方式的变化，业务模式必须随之演进。Agentic AI 可以增强团队、执行真正工作，业务模式必须随工作成本和价值规模。GitLab 保持订阅的可预测性，已为 Agent 执行的工作添加消耗定价，将引入更多灵活性来混合两者。
 10. **卓越文化**：运营特性是关键差异化因素。现在最重要的是快速行动、拥有结果、为客户交付真正价值。Speed with Quality、Ownership Mindset 和 Customer Outcomes 是新的运营原则，建立在卓越文化之上。
 
-## 深度分析
 ### 1. 「公开重组」——裁员策略的范式转变
 GitLab 选择「公开进行」重组是一个值得注意的战略决策。传统裁员通常保密直到最后时刻，而 Bill Staples 选择从一开始就坦诚沟通，包括自愿分离窗口。
 这种做法可能有多重动机：
@@ -531,11 +528,6 @@ Bill Staples 提供了一个独特的市场视角：去年开发者平台市场�
 - [GitLab 官网](https://gitlab.com)
 - [GitLab Duo Agent Platform](https://about.gitlab.com/blog/2026/01/gitlab-duo-agent-platform)
 - [GitLab Transcend 2026（6 月 10 日）](https://about.gitlab.com/events/gitlab-transcend)
-## 相关实体
-- [Gitlab 14Pct Layoff Agent Platform Ai 2026Q1](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gitlab-14pct-layoff-agent-platform-ai-2026q1.md)
-- [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-phishing-attacks-are-on-the-rise-are-you-prepared-bitward.md)
-- [Ai Agents Inside Perimeter Hackernews](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agents-inside-perimeter-hackernews.md)
-- [Principals Ai Education](https://github.com/QianJinGuo/wiki-public/blob/main/entities/principals-ai-education.md)
 
 ---
 
@@ -560,8 +552,6 @@ Nemotron 3.5 Content Safety 是 NVIDIA 针对企业级部署场景发布的多�
 - **延迟**：企业级部署的 latency benchmarks（具体数值见原文）
 - **训练数据**：基于 NVIDIA 内部多模态安全数据集 + 公开 benchmark
 - **部署**：Hugging Face + NVIDIA NIM 双渠道
-
-## 深度分析
 
 ### 可定制策略的商业逻辑
 
@@ -625,9 +615,9 @@ Hugging Face + NVIDIA NIM 双渠道部署反映了当前企业 AI 落地的两�
 ## 相关实体
 - [Nvidia Nemotron 3 Agents Rag Voice Safety](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-nemotron-3-agents-rag-voice-safety.md)
 - [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-nemotron-3-ultra-sagemaker-jumpstart-moe-agentic.md)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/056-nvidia-secure-local-agent-nemoclaw-openclaw.html)
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/055-nvidia-secure-local-agent-nemoclaw-openclaw.html)
 - [Fine Tuning Cosmos](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tuning-cosmos.md)
-- [Tokenspeed Agentic Inference Engine](ch04/275-tokenspeed-agentic-inference-engine.html)
+- [Tokenspeed Agentic Inference Engine](ch04/273-tokenspeed-agentic-inference-engine.html)
 
 - [How To Automate Ai Model Documentation With The Nvidia Mcg T 806Efb](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-to-automate-ai-model-documentation-with-the-nvidia-mcg-t-806efb.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
@@ -659,7 +649,6 @@ Hugging Face + NVIDIA NIM 双渠道部署反映了当前企业 AI 落地的两�
 4. **人才缺口** — 数据工程和 MLops 人才短缺
 建议策略：先建立数据基础设施和治理框架，再投资 AI 能力
 
-## 深度分析
 ### 结构性错配：AI 投资热潮背后的数据债务
 97% vs 5% 这个数字背后不是技术问题，而是一个**组织决策的结构性错位**。CIO 们面临的压力是：董事会要求上 AI，竞对在宣传 AI 能力，但没有人愿意为"数据基础设施现代化"这种不性感的工作买单。这是一个典型的囚徒困境——每家单独看都知道应该先修数据，但没有人愿意先行动，因为数据投资回报周期长，而 AI 投资可以快速汇报。
 
@@ -714,8 +703,6 @@ AI 工具让每个团队成员"更高效"了——但公司整体并没有变快
 3. **信任坍缩**：AI 生成的文档中，每句话都可能是模型编造的——审查者无法区分作者验证过的声明和模型幻觉，被迫 treat all as unverified
 4. **文档即服务**：Pascal 名言的组织映射——"写短信"（压缩、编辑、fact-check）本身就是工作，AI 让"写长信"太容易了
 5. **庞氏骗局类比**：早期的"速度收益"靠透支后续环节的认知容量来维持，类似 Ponzi scheme 的结构
-
-## 深度分析
 
 ### 文档的认知经济学
 
@@ -893,8 +880,6 @@ FDA/EMA 当前药物管线 7-8 年,假设"药物可能无效或有严重安全�
   - [Glasswing Mythos](https://www.anthropic.com/glasswing) — 引用的标志性 AI 系统
 
 → [原文存档](https://darioamodei.com/post/policy-on-the-ai-exponential)
-
-## 深度分析
 
 ### 核心观点：AI 政策困境的本质是"制度响应时间 vs 技术进步时间"的错配
 
@@ -1138,7 +1123,6 @@ Token 成为新的社会资源（类似电力、带宽、公路），需要：
 - 合理分配的计价评估基础设施
 - 从个人咨询 → 组织业务闭环 → 社会算力资源调配的完整链条
 
-## 深度分析
 ### Token 经济学本质：用投入产出重新定义 AI 价值
 Token 经济学的核心命题是 AI 下半场的价值衡量标准转移：从"智力上限"转向"投入产出比"。当模型可用性不再稀缺，焦点从"能不能用"变为"用得值不值"。这与工业革命时期从"机器能不能工作"到"机器用起来贵不贵"的转变如出一辙。Token Efficiency = AI 时代的 ROI，每消耗一个 Token 创造多大的价值成为新的度量衡。
 ### 形式主义陷阱的制度根源
@@ -1270,7 +1254,7 @@ Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反�
 - [Karpathy Vibe Coding](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-to-agentic-engineering.md) —— Karpathy 原始概念出处
 - [Willison Vibe Coding Convergence](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vibe-coding-agentic-engineering-convergence-simon-willison.md) —— Willison 的同主题回应
 - [Agent Skill 编写指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing-guide.md) —— 通用 skill 格式
-- [Agentic Design System 演化](ch01/007-agentic-design-system-from-chatbot-to-orchestration.html)
+- [Agentic Design System 演化](ch01/006-agentic-design-system-from-chatbot-to-orchestration.html)
 - → [原文存档](https://mp.weixin.qq.com/s/4_9q9TrkVyE5a4jCfTrNgg)
 
 ## 深度分析
@@ -1317,8 +1301,6 @@ OpenAI 提出 Beneficial RL 框架：通过在少量「有益特质」数据上�
 2. **有益特质构成连贯概念**：诚实、认知谦逊、元认知透明、可纠错性、普遍公平、人类福祉关切——这些特质相互关联，强化一个可增强其他
 3. **对抗性持久性**：经过有益 RL 训练的模型更难被 adversarial prompt 或 fine-tuning 引向有害行为
 4. **逆向 emergent misalignment**：此前研究表明有害训练可泛化（emergent misalignment）；本文证明有益训练同样可泛化
-
-## 深度分析
 
 ### 研究问题与动机
 
@@ -2075,7 +2057,6 @@ Skill = 触发源 + 系统动作 + 规则边界 + 执行者(员工Agent)
 3. **数字资产变化：** 从"系统功能清单"变成"流程Skill库"和"岗位Agent体系"。
 4. **落地起点：** 从明天开始，盘点十个高频人工流程，每个流程问四个问题——触发源是什么，系统动作是什么，规则边界是什么，哪个员工的Agent来执行。能答清楚就能开始。
 
-## 深度分析
 ### 架构分层的本质是关注点分离
 三层架构的真正价值不在于分层本身，而在于每一层的**职责边界天然不同**：
 

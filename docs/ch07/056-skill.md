@@ -320,8 +320,6 @@ metadata:
 
 ---
 
-## 深度分析
-
 ### 1. Skill 的本质是「结构化指令文档」，而非代码
 
 Skill 的核心价值不在于代码本身，而在于对 AI Agent 的「触发条件、执行步骤、工具选择、输出规范」进行结构化描述。这与传统的「工具/插件」思维有本质区别——Skill 更接近 SOP（标准作业程序），是给 AI 看的操作手册。
@@ -370,7 +368,7 @@ Skill 采用渐进式加载策略，而非一次性将所有内容塞入上下�
 
 - [Anthropic 官方 14 种 Skill 设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-design-patterns-anthropic.md)
 - [Skill 设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-design-patterns.md)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/305-tencent-vibe-coding-to-agentic-engineering-backend.html)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/303-tencent-vibe-coding-to-agentic-engineering-backend.html)
 - [Skills 详解：拆一个技能，看 Anthropic 和 OpenAI 的思路差异](../ch01/157-skills-anthropic-openai-comparison-frontend-design.html)
 - [Claude Design 系统提示词 → web-design-engineer Skill](032-claude-design-skill.html)
 

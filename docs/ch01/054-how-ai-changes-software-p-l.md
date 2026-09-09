@@ -8,11 +8,9 @@
 （本页为 [原文存档](https://gptomics.com/blog/how_ai_changes_software_pnl.html) 的摘要合成页）
 GPTomics 文章揭示了一个关键洞察：AI 能力正在从根本上重构软件的成本结构。传统 SaaS 的边际成本递减模式（COGS 随用户增加而下降）将被打破——AI 个性化推理的成本与用户数成线性关系，导致 AI-heavy 产品的利润率趋近于消费品公司，而非传统软件公司。
 
-## 相关概念
 ## 相关实体
 - [AI 行业就业八大变化（腾讯研究院纵向对比）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-employment-eight-changes-tencent-research.md)
 
-## 深度分析
 ### 传统软件 vs AI 软件：两种 P&L 模式的根本分歧
 文章的核心框架是「GainZ vs AIBoost」对比：
 | 维度 | GainZ（传统 SaaS） | AIBoost（AI-native） |

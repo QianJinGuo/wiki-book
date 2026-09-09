@@ -16,12 +16,11 @@ source_url: https://mp.weixin.qq.com/s/9X0bcfUGZYxoXuQwt89zkQ
 - ##  One more thing
 
 ## 相关实体
-- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](427-deepseek-v4.html)
+- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](426-deepseek-v4.html)
 - [ds4c deepseek v4 antirez](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ds4c-deepseek-v4-antirez.md)
 - [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-v4-pro-vs-claude.md)
 - [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](https://github.com/QianJinGuo/wiki-public/blob/main/entities/wetesteddeepseekv4proandflashagainstclau.md)
 
-## 深度分析
 ### 1. 项目定位：专有推理引擎的回归
 ds4.c的出现，本质上是对"通用框架"路线的否定。antirez在README中直白地指出：通用引擎为了兼容所有模型，必须做抽象，而抽象意味着妥协。他的解法是**刻意走窄路**：一个模型、一个推理引擎、用官方logits做验证。这种思路在 llama.cpp 主导的开源社区中几乎是异类。
 从技术选型上看，ds4.c有三个关键设计决策：

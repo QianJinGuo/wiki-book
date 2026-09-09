@@ -224,8 +224,6 @@ OpenAI 把业务代码按固定分层组织（Types / Config / Repo / Service / 
 
 Anthropic 在补强上下文管理、执行编排、评估与观测；OpenAI 在补强上下文管理、工具系统、评估与观测、约束与恢复。
 
-## 深度分析
-
 ### 为什么同一个模型、不同 Harness 效果天差地别
 
 LangChain 的 Terminal Bench 2.0 案例最能说明问题：底层模型完全不变，仅通过改造 Harness，分数从 52.8 拔到 66.5。
@@ -289,7 +287,7 @@ OpenAI 那条铁律特别值得抄下来：「当出了问题，修复方案几�
 
 ## 相关实体
 
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/276-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/009-karpathy-vibe-coding-agentic-engineering.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)

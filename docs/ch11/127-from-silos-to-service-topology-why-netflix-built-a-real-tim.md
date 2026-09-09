@@ -230,8 +230,6 @@ In our next post, we'll pull back the curtain on the engineering challenges we f
 
 In future posts, we'll explore the lessons we learned that apply to any distributed system at scale, and where we're heading next with time travel capabilities and Automated root cause analysis.
 
-## 深度分析
-
 ### 多层图融合架构的核心洞察
 
 Netflix 的 Service Topology 采用了与众不同的多图并行架构，而非试图用单一数据源构建全视图。这一设计选择的深层逻辑在于：不同数据源的信息密度和覆盖范围存在本质矛盾。eBPF 网络流提供的是完整但浅层的信息——能捕获所有通信但缺乏应用语义；IPC 指标提供的是深层但局部的信息——有丰富的应用上下文但依赖服务自报；分布式追踪提供的是行为级但抽样的信息——反映真实调用路径但无法覆盖低频路径。三图物理分离后各自优化，查询时并行穿透再融合结果规避了单一图数据库在混合负载下的性能困境。这种"分离-并行-融合"模式对于面临多源异构数据的工程团队具有普遍的借鉴意义。
@@ -282,7 +280,7 @@ Service Topology 同时服务于人类工程师（UI 探索）和自动化系统
 ## 相关实体
 - [Serverless Langgraph Multi Agent Aws](https://github.com/QianJinGuo/wiki-public/blob/main/entities/serverless-langgraph-multi-agent-aws.md)
 - [Build Real Time Voice Streaming With Amazon Nova Sonic And Webrtc](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-real-time-voice-streaming-with-amazon-nova-sonic-and-webrtc.md)
-- [Why Internally Built Ai Fails Fund Accounting Audits](../ch01/378-why-internally-built-ai-fails-fund-accounting-audits.html)
+- [Why Internally Built Ai Fails Fund Accounting Audits](../ch01/044-why-internally-built-ai-fails-fund-accounting-audits.html)
 - [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](https://github.com/QianJinGuo/wiki-public/blob/main/entities/real-time-voice-agents-with-stream-vision-agents-and-amazon-nova-2-sonic.md)
 - [Netflix Metadata Service Model Lifecycle Graph](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-metadata-service-model-lifecycle-graph.md)
 

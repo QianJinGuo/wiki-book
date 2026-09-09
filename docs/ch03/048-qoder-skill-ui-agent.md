@@ -83,7 +83,6 @@ Skill UI 是 Skill 编写规范的自然延伸：
 - **Skill UI** 补上了 Skill 的 GUI 层（配置面板 + 结果 Dashboard）
 - 两者共同构成完整的 Skill 双形态单元
 
-## 深度分析
 ### "双形态"是软件界面的本质重构
 Qoder Skill UI 背后的核心判断是：软件正在被重构为双形态——给 Agent 用的 CLI 和给人用的 GUI。不是 GUI 替代 CLI，而是各归其位、各司其职。这个判断和 pi-main 的"Thin Harness, Fat Skills"以及 GBrain 的"Thin Harness, Fat Skills"在精神上一致：基础设施层保持简洁/薄，把复杂性放到能力层（Skills/UI）。Skill 作为 Agent 的能力单元，本身就应该是双形态的——CLI 层给 Agent 读，GUI 层给人用。
 

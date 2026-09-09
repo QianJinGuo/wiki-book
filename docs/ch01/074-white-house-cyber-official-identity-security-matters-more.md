@@ -9,14 +9,13 @@
 - AI Agent 自身可演化为内部威胁，绕过既有安全 guardrail
 - 联邦机构需将身份安全列为 AI 时代最高优先级，同时为 AI Agent 失效做容灾规划
 ## 相关实体
-- [From Doer To Director The Ai Mindset Shift](108-from-doer-to-director-the-ai-mindset-shift.html)
+- [From Doer To Director The Ai Mindset Shift](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-doer-to-director-the-ai-mindset-shift.md)
 - [Microsoft For Startups Microsoft](https://github.com/QianJinGuo/wiki-public/blob/main/entities/microsoft-for-startups-microsoft.md)
-- [Running An Ai Native Engineering Org](033-running-an-ai-native-engineering-org.html)
+- [Running An Ai Native Engineering Org](031-running-an-ai-native-engineering-org.html)
 - [How I Moved My Digital Stack To Europe](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-i-moved-my-digital-stack-to-europe.md)
 
 → [原文存档](https://cyberscoop.com/white-house-federal-identity-security-ai-risks/)
 
-## 深度分析
 ### 核心论点：身份安全仍是 AI 时代的底层逻辑
 白宫网络安全官员 Nick Polk（总统行政办公室联邦网络安全分支主管）在 Rubrik Public Sector Summit 上指出：AI 模型确实会给联邦网络带来独特威胁，但无论攻击手段如何进化，**攻击者首先必须进入网络**——这意味着身份认证与访问控制仍是防御的核心战场。
 这一判断挑战了部分"AI 将彻底改变网络安全游戏规则"的过度炒作。Polk 认为，安全团队应将资源集中在"谁有权访问什么"这一根本问题上，而不是追逐每一个新的 AI 威胁向量。

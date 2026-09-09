@@ -13,8 +13,6 @@ As the marginal cost of producing software trends toward zero and capable tools 
 - Competition is a **tug of war**: two firms with identical stacks and markets are separated only by the cumulative quality of many small decisions over time — the strong-and-smart puller beats both the strong-and-dumb and the weak-and-smart.
 - Even if AI does almost everything, value keeps migrating upward (hardware → OS → middleware → applications → judgment above the app), and as long as LLMs are the primary AI-driven OS, buyers will want a human in the loop for the near future.
 
-## 深度分析
-
 ### Decision quality as the new non-fungible asset
 The author extends classical economics — land, labor, capital, plus the twentieth century's technology/total-factor-productivity — with a twenty-first-century addition: decision quality at scale. The asymmetry is the point. Execution has become nearly free because of automation and now AI, but the cost of deciding *what* to execute has not fallen, because it is bounded by a clear understanding of a complex, uncertain, novel situation. You can automate the execution of a decision but not the judgment of which decision to make under imperfect information. History supports only "adequate" decisions; the *best* decision shifts constantly with dozens of small contextual differences. A company handing part of its business to another is therefore really betting on which team will make the most right calls most of the time — "companies that can see the future still have something valuable to sell."
 
@@ -41,8 +39,8 @@ The author pushes back on the "tech industry is dying" narrative as missing the 
 - [Primitive is the product](https://github.com/QianJinGuo/wiki-public/blob/main/entities/primitive-is-the-product-ai-native-product-philosophy.md)
 - [The minimum viable unit of saleable software](https://github.com/QianJinGuo/wiki-public/blob/main/entities/minimum-viable-unit-saleable-software-brandur.md)
 - [The token economy](https://github.com/QianJinGuo/wiki-public/blob/main/entities/the-token-economy.md)
-- [From doer to director](108-from-doer-to-director-the-ai-mindset-shift.html)
-- [Running an AI-native engineering org](033-running-an-ai-native-engineering-org.html)
+- [From doer to director](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-doer-to-director-the-ai-mindset-shift.md)
+- [Running an AI-native engineering org](031-running-an-ai-native-engineering-org.html)
 - [When growth slows — product vs. sales](https://github.com/QianJinGuo/wiki-public/blob/main/entities/when-growth-slows-is-it-sales-fault-or-the-products-fault-the-answer-has-changed.md)
 
 → [原文存档](https://mrmarket.bearblog.dev/products-are-out-brains-are-in-new/)

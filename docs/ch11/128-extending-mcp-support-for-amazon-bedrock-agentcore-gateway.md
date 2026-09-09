@@ -152,8 +152,6 @@ MCP 于 2026-07-28 发布了最大规模的协议修订，核心变化有三：�
 
 MCP 2026-07-28 对 Agent 系统架构的影响：无状态化使 MCP 服务器层的水平扩展从"需要基础设施支持"变为"天然支持"；HTTP 标准化使标准基础设施（ALB/API Gateway/CloudFront）可直接处理 MCP 流量，无需专门中间件；缓存元数据降低了 MCP 服务器的发现请求负载。AgentCore Gateway 一直是 MCP 协议的抽象层，新版协议使这一抽象更薄、更透明——gateway 的角色从"协议翻译"向"协议路由+策略执行"演进。
 
-## 深度分析
-
 ### 1. AgentCore Gateway：AWS 的 Agent 通信基础设施
 Amazon Bedrock AgentCore Gateway 是 AWS 为 AI agent 提供的统一通信层——解决的核心问题是"agent 如何安全、可靠地调用外部工具和数据源"。MCP（Model Context Protocol）扩展使 Gateway 成为 agent 的标准工具总线。
 
@@ -187,9 +185,9 @@ MCP 使工具一次集成、多 agent 复用——不要为每个 agent 单独�
 Gateway 是 agent 工具调用的单点——监控其延迟、错误率和可用性，确保不影响 agent 性能。
 
 ## 相关实体
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/154-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
+- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/152-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
 - [Mcp Serveramazon Bedrock Agentcorequick Suite](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mcp-serveramazon-bedrock-agentcorequick-suite.md)
-- [Building Ai Agents For Business Support Using Amazon Bedrock](../ch04/097-building-ai-agents-for-business-support-using-amazon-bedrock.html)
+- [Building Ai Agents For Business Support Using Amazon Bedrock](../ch04/096-building-ai-agents-for-business-support-using-amazon-bedrock.html)
 - [Amazon Quick Bedrock Agentcore Finops Chat](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-quick-bedrock-agentcore-finops-chat.md)
 - [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-os-level-actions-in-amazon-bedrock-agentcore-browser.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/tool-use-mcp-patterns.md)

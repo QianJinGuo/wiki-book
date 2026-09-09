@@ -22,8 +22,6 @@ olmo-eval 是 Allen AI (Ai2) 发布的开源 LLM 评估工作台，构建于此�
 
 6. **Agentic 评估一等公民** — 原生支持多轮对话和工具使用的评估场景。Scaffold（如 `openai_agents`）在 harness 层选择，而非硬编码在 task 定义中，使得同一 benchmark 可以在不同 agent 框架下运行。
 
-## 深度分析
-
 ### 评估工具的定位差异
 
 olmo-eval 与 AI Benchmark 生态中的其他工具有明确的定位差异。Harbor 面向的是"运行并发布 agent benchmark"的场景，强调可复现性和公开分享；lm-eval-harness 面向标准化的 benchmark 跑分。olmo-eval 则面向**模型开发者的日常工作流**——频繁地在不同 checkpoint 之间做 A/B 对比。

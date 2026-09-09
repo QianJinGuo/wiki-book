@@ -27,7 +27,6 @@ ESET researchers uncovered a multiplatform supply-chain attack by North Korea-al
 - [xz-utils backdoor 2 years on — maintainer trust hijack patte](https://github.com/QianJinGuo/wiki-public/blob/main/entities/xz-utils-backdoor-maintainer-trust-hijack-2-years-on.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-landscape.md)
-## 深度分析
 ### 攻击链解析
 ScarCruft（APT37/Reaper）此次行动展现了朝鲜国家黑客组织日益成熟的供应链攻击能力。攻击分为两条路径：
 **Android 路径**：攻击者直接篡改了 sqgame 平台上的两款游戏 APK（延边红十、新画图），通过修改 AndroidManifest.xml 注入 BirdCall 后门。受害者下载安装后，后门会收集联系人、短信、通话记录、文档、媒体文件和私钥，并具有截图和录音能力。

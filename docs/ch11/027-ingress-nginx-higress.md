@@ -5,7 +5,6 @@
 ## 事件概述
 近期，Higress已正式通过TOC投票表决，加入云原生计算基金会（CNCF）Sandbox项目，成为CNCF生态的一员。Higress是一款基于Envoy和Istio构建的AI原生、高性能API网关，将流量网关、微服务网关与AI网关统一于单一控制面。
 
-## 深度分析
 ### Gateway API 三层资源模型与阿里云 ACK 实战
 除了基础的 Ingress 替代能力外，Gateway API 还通过 **Gateway API Inference Extension（GIE）** 扩展支持 AI 推理场景的智能路由——网关可感知推理节点的请求队列深度、KV Cache 命中率等指标，实现智能调度和负载均衡。
 

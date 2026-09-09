@@ -68,8 +68,6 @@ Yan Cui 的类比精辟：**AgentCore Runtime 之于 Lambda MicroVMs，如同 Fa
 - **计费粒度**：按秒计费（非 Lambda 的毫秒级）
 - **无自动水平扩展**：需自行管理 VM fleet
 
-## 深度分析
-
 ### Agent Sandbox 的基础设施级解决方案
 
 Lambda MicroVMs 的出现标志着 agent sandbox 从"应用层方案"进化到"基础设施级方案"：

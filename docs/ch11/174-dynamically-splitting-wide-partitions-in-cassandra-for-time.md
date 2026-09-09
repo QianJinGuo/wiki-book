@@ -117,8 +117,6 @@ DynamicTimeSliceConfigWorker:
 | DynamicTimeSliceConfigWorker | Netflix 后台分区调整 worker |
 | Partial Return | 超 SLO 时返回部分数据的降级策略 |
 
-## 深度分析
-
 ### 1. 分层决策树的价值：从"一刀切"到精确匹配场景
 
 Netflix 方案最核心的价值不是任何一个单点技术，而是**决策树的完整性**。在 wide partition 问题上有四种不同性质的工具——Do Nothing、Partial Returns、Block IDs、Dynamic Split——每种工具对应不同的触发条件和副作用。

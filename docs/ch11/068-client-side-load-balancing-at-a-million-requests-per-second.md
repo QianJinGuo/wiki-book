@@ -44,8 +44,6 @@ This means that adding or removing an endpoint remaps only about 1/N of keys, mi
 
 We wrote it as a standalone, framework-free JVM module with the long-term intention of lifting it out of this service. Its only real dependency is a small zero-allocation hashing library, for the xxHash64 that matches Skipper; everything else, the ring, the occupancy accounting, the bounded-load
 
-## 深度分析
-
 ### 共享基础设施的"扇出放大"问题
 
 Zalando 的案例揭示了一个普遍性架构问题：当高扇出请求经过共享基础设施时，延迟不是由典型响应时间决定，而是由最慢的那个扇出请求决定。对于 PRAPI 的 batch-of-100 请求，单次 Skipper 跳转仅增加数百微秒延迟，但 100 个并行跳转的累积延迟由 P99 决定而非 P50。 这种"扇出放大效应"使得共享基础设施的尾部延迟问题在高扇出场景中被指数级放大。

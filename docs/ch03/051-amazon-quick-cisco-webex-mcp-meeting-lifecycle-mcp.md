@@ -17,8 +17,6 @@
 - **prep brief 5 段固定结构**：upcoming agenda + prior decisions/action items + related Vidcast updates + unresolved follow-ups + recommended Vidcast watch-next——确保 cross-shift handoff 一致性
 - **扩展面**：同一个 agent 可以叠加 100+ pre-built action connector（Slack / Outlook / Jira / ServiceNow / Salesforce）+ enterprise data source（S3 / Drive / SharePoint / Confluence），从 meeting 工具演变成 team productivity hub
 
-## 深度分析
-
 ### 与现有 Amazon Quick 实体的差异化
 
 Amazon Quick + MCP 集成模式已有多个 entity 覆盖不同 MCP server 家族：

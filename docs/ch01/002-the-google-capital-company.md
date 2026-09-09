@@ -70,8 +70,6 @@ That leaves equity being issued now, particularly the $10 billion to Berkshire H
 
 Google has to date funded its massive AI-related capital expenditures with free cash flow, and while the company does have around $81 billion in debt, that is more than balanced by $126 billion of cash. In other words, Google is issuing equity — diluting existing shareholders — not because it needs to, but because it wants to share the risk of AI infrastructure investment with Berkshire Hathaway.
 
-## 深度分析
-
 ### 1. Google Aggregator 模式：绝对价值优先于相对价值 
 
 Google 作为超级 Aggregator 的核心策略是系统性压低所有参与方的相对价值，同时提升整体绝对值。对内容供应方，Google 大幅增加访客数量但单个 Google 访客价值远低于直接访问；对广告主，一次点击抵消了千万次无效展示；对用户，Google 在信息过载中帮助发现目标。这种"以量换质"使 Google 成为历史上边际成本最低、利润率最高的商业系统之一。Buffett 作为广告主亲眼目睹"每次点击 $10-11 美元、无任何边际成本"后称之为"almost never seen a business like it"——这正是 Google 无需向投资者解释盈利模式的核心原因。
@@ -110,7 +108,7 @@ Stratechery 将 Google 描述为"most beautiful business model of all time"，�
 - [The Token Economy Pt2 The Intelligence Company Gets Built](001-the-token-economy-pt2-the-intelligence-company-gets-built.html)
 - [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](https://github.com/QianJinGuo/wiki-public/blob/main/entities/akamai-acquires-israeli-ai-browser-security-startup-layerx-for-205-million-in-ca.md)
 - [Clinereleasesopen Sourceagentruntimesdk](https://github.com/QianJinGuo/wiki-public/blob/main/entities/clinereleasesopen-sourceagentruntimesdk.md)
-- [Running An Ai Native Engineering Org](033-running-an-ai-native-engineering-org.html)
+- [Running An Ai Native Engineering Org](031-running-an-ai-native-engineering-org.html)
 - [Pytorch212Releaseblogpytorch](https://github.com/QianJinGuo/wiki-public/blob/main/entities/pytorch212releaseblogpytorch.md)
 
 → [原文存档](https://stratechery.com/2026/the-google-capital-company/)

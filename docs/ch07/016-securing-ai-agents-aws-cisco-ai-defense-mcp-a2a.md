@@ -19,8 +19,6 @@ AWS 和 Cisco AI Defense 在 2026 年 5 月发布合作方案，针对 MCP（Mod
 - **自服务开通**：自动化扫描配合人工复核，把"人工、慢速"流程变成"自动、内置护栏"流程
 - **业内引用**：Akshay Bhargava（Cisco AI Product VP）——「安全是企业 AI 采用的基础要求」
 
-## 深度分析
-
 ### 企业 AI Agent 部署的"三盲区"
 
 AWS/Cisco 把企业 AI 部署的核心痛点归纳为三个盲区，每个盲区都有具体的合规和运营后果：
@@ -104,7 +102,7 @@ AWS 在合作中开源的 **MCP Gateway Registry** 提供"agent 和 server 治�
 
 - [U Of T Ai Worm Cleverhans Research](https://github.com/QianJinGuo/wiki-public/blob/main/entities/u-of-t-ai-worm-cleverhans-research.md)
 - [Qy_Zacztcs1Ql3Bifmbmgg](https://github.com/QianJinGuo/wiki-public/blob/main/entities/qy_zacztcs1ql3bifmbmgg.md)
-- [Claude Code Harness Deep Understanding](../ch01/110-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Understanding](../ch01/109-claude-code-harness-deep-understanding.html)
 - [Harness Engineering Core Patterns Claude Code](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-core-patterns-claude-code.md)
 - [Ai Agent Engineer Learning Roadmap Backend 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-engineer-learning-roadmap-backend-2026.md)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)

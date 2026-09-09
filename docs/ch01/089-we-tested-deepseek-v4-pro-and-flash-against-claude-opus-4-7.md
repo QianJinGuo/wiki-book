@@ -14,7 +14,6 @@
 - [We Tested DeepSeek V4 Pro and Flash Against Claude Opus 4.7 and Kimi K2.6](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-v4-pro-vs-claude.md)
 - We Tested DeepSeek V4 Pro and Flash Against Claude
 
-## 深度分析
 ### 1. 复杂工作流测试揭示模型间真实差距
 FlowGraph spec 包含 20 个端点、持久状态、租约管理、重试和事件流，是一个比常规编程基准更重的基础设施测试。Claude Opus 4.7 在此类测试中得 91 分，DeepSeek V4 Pro 得 77 分，Kimi K2.6 得 68 分，DeepSeek V4 Flash 得 60 分。表面代码覆盖率的差距在缩小，但涉及时间、恢复或移动部件协调的硬代码路径中的正确性差距依然存在 。
 

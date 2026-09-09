@@ -36,8 +36,6 @@ Datawhale 编译自 Anthropic 官方博客。Anthropic 内部把 Claude Code Ski
 - [Perplexity 内部 Skill 设计指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/perplexity-internal-skill-design-guide.md) — 另一家的 Skill 工程方法论对比
 - [Hermes Agent](../ch03/060-hermes-agent.html) — Hermes 的 Skill 系统实现参考
 
-## 深度分析
-
 ### 9 类分类的底层逻辑：从「能力注入」到「工作流封装」
 
 Anthropic 的 9 类分类表面上是对已有 Skills 的盘点归类，但隐含了更深的能力分层逻辑。前 3 类（Library/Verification/Data）解决的是**模型能力缺口**——Claude 不懂公司内部 API 怎么用、不知道产出对不对、不知道数据在哪怎么查。中间 3 类（Process/Scaffolding/Review）解决的是**团队规范注入**——怎么写代码、怎么汇报、怎么 Review。后 3 类（CI/CD/Runbooks/Infra）已经超出「补知识」的范畴，进入了**生产环境代操作**——不仅是教 Claude 做事，而是让 Claude 直接做事。

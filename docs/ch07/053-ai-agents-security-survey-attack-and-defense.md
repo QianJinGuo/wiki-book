@@ -1,6 +1,6 @@
 # AI Agents Security Survey: Attack and Defense
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 24.3KB | `entities/ai-agents-security-survey-attack-defense.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 24.1KB | `entities/ai-agents-security-survey-attack-defense.md`
 
 ## 一、威胁格局概述
 
@@ -287,11 +287,6 @@ Bishop Fox 的 AIMap 提供了互联网规模的 AI Agent 安全测试能力：
 ---
 
 **补充阅读**：
-
--  — 威胁模型与攻击模式
--  — 安全架构与认证授权
--  — 全生命周期安全体系
--  — 威胁向量与缓解策略导航
 
 ## 相关实体
 

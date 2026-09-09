@@ -1,6 +1,6 @@
 # How we built an internal data analytics agent
 
-> 📊 Level ⭐ | 7.6KB | `entities/github-internal-data-analytics-agent-copilot.md`
+> 📊 Level ⭐ | 7.0KB | `entities/github-internal-data-analytics-agent-copilot.md`
 
 > 原文存档：[原文存档](https://github.blog/ai-and-ml/github-copilot/how-we-built-an-internal-data-analytics-agent/)
 
@@ -15,9 +15,6 @@ June 19, 2026
 6 minutes
 
 *    Share: 
-*   [](https://x.com/share?text=How%20we%20built%20an%20internal%20data%20analytics%20agent&url=https%3A%2F%2Fgithub.blog%2Fai-and-ml%2Fgithub-copilot%2Fhow-we-built-an-internal-data-analytics-agent%2F)
-*   [](https://www.facebook.com/sharer/sharer.php?t=How%20we%20built%20an%20internal%20data%20analytics%20agent&u=https%3A%2F%2Fgithub.blog%2Fai-and-ml%2Fgithub-copilot%2Fhow-we-built-an-internal-data-analytics-agent%2F)
-*   [](https://www.linkedin.com/shareArticle?title=How%20we%20built%20an%20internal%20data%20analytics%20agent&url=https%3A%2F%2Fgithub.blog%2Fai-and-ml%2Fgithub-copilot%2Fhow-we-built-an-internal-data-analytics-agent%2F)
 
 Large data and analytics organizations often struggle to make access to data and insights truly self-serve. The industry tried to solve this problem, quite unsuccessfully, for decades, but now AI is giving us a credible way to do just that.
 

@@ -4,8 +4,6 @@
 
 → [原文存档](https://mp.weixin.qq.com/s/MKfuVIwIsKg9QhRywbbxSw)
 
-## 深度分析
-
 ## 从工具调优到决策智能：AutoResearch在营销增长中的AI Native实践
 高德技术 | 信息业务中心 | 2026-06-09
 ### 本期导读

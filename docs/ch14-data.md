@@ -402,8 +402,6 @@ This is the story of how we overcame the **black box of managed cloud**, the hid
 
 **基于直播数据场景的LLM Wiki实践，从知识采集到应用的完整链路。**
 
-## 核心内容
-
 ### 背景挑战
 
 - 直播数据增长快、格式多样，传统知识管理方式难以应对
@@ -422,8 +420,6 @@ This is the story of how we overcame the **black box of managed cloud**, the hid
 - 直播内容推荐优化
 - 运营决策支持
 - 用户问题自助回复
-
-## 深度分析
 
 ### 1. 知识编译思维：从"写文档"到"编译知识"
 
@@ -609,7 +605,7 @@ Amazon Quick is a comprehensive, generative AI-powered business intelligence ser
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/276-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/009-karpathy-vibe-coding-agentic-engineering.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
 - [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/两万字详解claude-code源码核心机制.md)
 
@@ -626,7 +622,7 @@ Amazon Quick is a comprehensive, generative AI-powered business intelligence ser
 <div style="line-height: 1.8;margin: 0;padding: 0">
 
 ## 相关实体
-- [From System Of Record To System Of Intelligence](ch01/432-from-system-of-record-to-system-of-intelligence.html)
+- [From System Of Record To System Of Intelligence](ch01/431-from-system-of-record-to-system-of-intelligence.html)
 - [Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md)
 - [London Met Police Big Tech Data Requests](https://github.com/QianJinGuo/wiki-public/blob/main/entities/london-met-police-big-tech-data-requests.md)
 - [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-goal-runtime-architecture-state-persistence-judge-closed-loop.md)
@@ -639,7 +635,6 @@ Amazon Quick is a comprehensive, generative AI-powered business intelligence ser
 </div>
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/data-infrastructure.md)
-## 深度分析
 
 ### 一、范式迁移的历史必然性
 
@@ -915,8 +910,6 @@ https://mp.weixin.qq.com/s/XLYWhkjFHxrH2-jb5O1qCQ
 ### 合作伙伴认证框架
 **Partner Well-Architected Framework**（[开源蓝图](https://databrickslabs.github.io/partner-architecture/data-collaboration/software-defined-storage)）—— 涵盖架构、安全、认证标准，确保所有 SDS 伙伴实现一致性。
 
-## 深度分析
-
 ### 1. 范式转移：从「迁移优先」到「治理优先」
 
 「Migrate Everything」向「Govern Everything」的转变是本文最核心的战略叙事。这一转变承认了一个结构性现实：对于半导体、金融、医疗、制药、电信等受监管行业，数据根本无法全部上云——EB 级别数据的迁移成本、监管机构对数据驻留的硬性要求，以及网络延迟的物理限制，共同构成了云迁移的根本障碍。这不是 Databricks 的策略退步，而是对「数据重力（Data Gravity）」和「合规约束」双重现实的就范。「Hybrid Forever」不再是营销口号，而是一批 Tier-1 企业在 PB/EB 规模下验证过的现实选择。
@@ -1038,8 +1031,6 @@ Agent 根据用户输入自动识别验数场景：
 - **证据链**：7 节标准格式报告、三档结论判定（PASS/WARNING/FAIL）、完整可执行 SQL 附录、自动归档到协作文档
 - **资产沉淀**：每份报告自动归档，SQL 和报告成对保存，19 条踩坑记录沉淀在 Skill 定义中
 - **风险管控**：4 条不可逾越的红线从机制上防止 Agent 在边缘场景犯错
-
-## 深度分析
 
 ### Agent Skill 作为可复用 SOP 的设计模式
 
@@ -1195,8 +1186,6 @@ Varoa 在 2026 年 6 月发布的一篇工程复盘，讲述一个名为 "The Pr
 - **来源**: [https://varoa.net/2026/06/13/ddosing-software-delivery-pipelines.html](https://varoa.net/2026/06/13/ddosing-software-delivery-pipelines.html)
 - **评分**: v=7, c=8, v×c=56, stars=4
 
-## 深度分析
-
 ### 系统画像：The Provisioner 与唯一验证瓶颈
 
 作者描述的 "The Provisioner" 是一类典型的基础设施供应系统：接收物理硬件（GPU 服务器、高带宽网络 fabric），输出多租户虚拟化 IaaS 服务。系统覆盖从固件、VM 镜像、k3s 集群到上层服务的完整链路，组件异构、API 面广，每一层都"既独立复杂，又通过宽 API 互相作用"。
@@ -1244,7 +1233,7 @@ E2E 验证阶段是真正的瓶颈：必须在真实硬件上构造真实环境�
 
 - [特斯拉百万年薪招数据标注员，朝九晚五，无需ai经验](https://github.com/QianJinGuo/wiki-public/blob/main/entities/特斯拉百万年薪招数据标注员朝九晚五无需ai经验.md)
 - [system over model, tested: reproducing mythos's freebsd find](https://github.com/QianJinGuo/wiki-public/blob/main/entities/system-over-model-tested-reproducing-mythoss-freebsd-find-on-20260606.md)
-- [from doer to director: the ai mindset shift](ch01/108-from-doer-to-director-the-ai-mindset-shift.html)
+- [from doer to director: the ai mindset shift](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-doer-to-director-the-ai-mindset-shift.md)
 - [How my non-engineering team at Sentry learned to ship](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-my-non-engineering-team-at-sentry-learned-to-ship-20260606.md)
 - [Unexpected lessons from an AI-assisted prototyping experiment](https://github.com/QianJinGuo/wiki-public/blob/main/entities/adobe-design-unexpected-lessons-ai-prototyping-2026.md)
 
@@ -1337,8 +1326,6 @@ Data + AI Summit 上的共识：Agent 的"智能"部分（模型选择、推理�
 - 数据治理是 Agent 安全的"最后一公里"——即使 Agent 本身被精心设计，错误的数据访问模式仍会导致安全事件
 - CrewAI 的实践表明：MCP Server 模式在灵活性和安全性之间取得了最佳平衡
 
-## 深度分析
-
 ### "四种数据交互模式"框架是 Agent 数据治理的核心抽象
 
 CrewAI 将 Agent 与数据的交互归纳为四种模式：语义层查询、受控 SQL、注册业务逻辑调用、受控向量检索。每种模式对应独立的治理边界和权限模型。关键洞察：**当你给 Agent 一个数据库连接字符串时，你实际上把四种交互压缩成了一种——原始 SQL 访问**。Agent 用不理解的 schema 对不可审计的表生成查询，语义层、函数治理、检索优化全部失效。这等同于给新员工第一天就给生产数据库密码说"自己搞定"。
@@ -1407,7 +1394,6 @@ Data + AI Summit 的共识数据：Agent 循环（推理、工具调用、prompt
 → [原文存档](https://aws.amazon.com/cn/blogs/china/amazon-redshift-introduces-aws-graviton-based-rg-instances-with-an-integrated-data-lake-query-engine/)
 - [aws graviton5 m9g/m9gd 实例 ga 公告](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-graviton5-m9g-m9gd-launch-2026.md)
 
-## 深度分析
 ### 架构定位：Graviton 驱动的性价比跃升
 RG 实例是 Amazon Redshift 首次在数据仓库产品线中大规模采用 AWS Graviton 定制处理器。这一选择的底层逻辑与 AWS 近年来推动 Graviton 替代 Intel/AMD 实例的战略一脉相承——Graviton 基于 ARM 指令集，在并行批处理和内存密集型负载上实现了显著能耗比优势。官方标称数据仓库工作负载速度最高可达 RA3 实例的 2.2 倍，同时每个 vCPU 价格降低 30%，这一数字在性价比敏感的 analytical 场景中具有实际采购意义。
 
@@ -1619,8 +1605,6 @@ SWE-bench Verified Pro 模式——200 PASS + 200 FAIL 人工重新判定，FP �
 
 如果一家数据公司到 2027 年仍无法提供跨至少三个模型的 pass@k 分布、针对人类金标的 verifier FP/FN 率、针对命名评估套件的污染检查以及探针模型的前沿形状诊断，他们卖的不是 Type 1 数据——而是带有 Type 1 营销的 Type 2 数据。实验室将在一个采购周期内发现这一点，多份传闻表明已经有多家被识别出 。
 
-## 深度分析
-
 ### 1. QC 框架的"通过"是动态的，而非静态的
 Intake Review 通过不代表数据可用——Active Testing 才是真正的质量验证。o3 的 1-2% 沙箱漏洞尝试和 GPT-5 在 impossible-SWEbench 上 76% 的测试用例劫持率说明，数据在 RL 训练中会暴露全新的失败模式 。这意味着供应商需要同时运行 Intake（静态审计）和 Active Testing（动态探针），而非只做其一。
 
@@ -1690,8 +1674,6 @@ ServiceNow AI 在 Hugging Face 发布语音 Agent 评估基准 **EVA-Bench Data 
 - **213 个多步骤场景**：每个场景包含多轮对话、多个工具调用、状态依赖。
 - **语音 Agent 垂直评估缺口**：与文本 Agent 基准相比，语音场景多了 ASR 错误、TTS 韵律、用户打断、语音对话节奏等独特挑战。
 - **可复现的数据集**：发布在 Hugging Face Datasets，便于学术与企业团队直接复用。
-
-## 深度分析
 
 ### 1. 为什么"语音 Agent 评估"是独立赛道
 
@@ -1790,7 +1772,7 @@ ServiceNow 本身是 ITSM / HR / 客户支持自动化领域的巨头，发布 E
 
 - [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md) — Agent 原理架构的综合性参考
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md) — Agent 范式跃迁的视角
-- [Karpathy Vibe Coding Agentic Engineering](ch04/276-karpathy-vibe-coding-agentic-engineering.html) — 同源访谈的另一标题版本
+- [Karpathy Vibe Coding Agentic Engineering](ch04/009-karpathy-vibe-coding-agentic-engineering.html) — 同源访谈的另一标题版本
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md) — AWS Bedrock AgentOps 的规模化运营实践
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验-v2.md) — 多智能体团队搭建的实战经验
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏-v2.md) — OpenClaw 多智能体系统化教程
@@ -1808,8 +1790,6 @@ ServiceNow 本身是 ITSM / HR / 客户支持自动化领域的巨头，发布 E
 ## 核心论点
 
 Physical AI 的数据市场如同 2002 年的棒球自由球员市场——被系统性低估和错误定价。当前行业对 Physical AI 数据的评估方式存在根本性偏差，类似于传统球探偏好主观美学和盗垒数，而忽略了真正与得分相关的上垒率。
-
-## 深度分析
 
 ### 1. Physical AI 数据的三种模态及其经济特性
 
@@ -2317,8 +2297,6 @@ S3 + Athena + QS
 
 亚马逊云科技方案的核心价值不只是"托管省运维"，更在于 Amazon Q in QuickSight 的自然语言提问能力——这是纯开源方案无法复制的差异化功能，让"临时深挖"从写 SQL 变成说人话，让"每一分 Token 消耗都可量化"成为可落地的目标。
 
-## 深度分析
-
 ### 成本可观测性的本质是"非确定性系统的可量化挑战"
 
 Agentic AI 的成本失控根源在于其执行路径的非确定性——传统 Web 服务的调用图是静态的，而 Agent 的每次执行由大模型实时推理决定，这意味着同样的输入可能产生完全不同的工具调用序列，从而导致 Token 消耗产生数量级差异。
@@ -2397,7 +2375,7 @@ Agentic AI 的成本失控根源在于其执行路径的非确定性——传统
 - [飞来汇借助 Aws Security Agent 构建跨境支付应用的智能安全防线](https://github.com/QianJinGuo/wiki-public/blob/main/entities/飞来汇借助-aws-security-agent-构建跨境支付应用的智能安全防线.md)
 - [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-aws-smgs-uses-an-ai-powered-conversational-assistant-to-.md)
 - [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/滴滴国际化客服质检智能化之路基于-amazon-bedrock-的多语种多业务线质检实践.md)
-- [Powering Agentic Ai Sales Strategy With Amazon Bedrock Agent](ch04/351-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.html)
+- [Powering Agentic Ai Sales Strategy With Amazon Bedrock Agent](ch04/349-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.html)
 - [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](https://github.com/QianJinGuo/wiki-public/blob/main/entities/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/data-infrastructure.md)
 

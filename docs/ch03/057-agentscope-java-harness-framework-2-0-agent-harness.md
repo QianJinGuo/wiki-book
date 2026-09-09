@@ -455,8 +455,6 @@ AgentScope Java 1.1.0 的发布标志着 Java 生态首次拥有了成熟的 Har
 3. **多租户资源配额**：框架层面尚未支持资源配额和限流机制
 4. **组合场景描述不足**："多副本水平扩展 + 隔离沙箱执行"组合场景的文档缺失
 
-## 深度分析
-
 ### 架构定位：填补 Java 生态的 Harness 空白
 
 AgentScope Java 1.1.0 的核心价值在于填补了 Java 生态缺乏成熟 Agent 工程框架的空白 。在此之前，Harness 理念主要在 Python 生态（LangChain Agents）落地，Java 开发者缺乏统一框架。AgentScope 通过 Workspace、AbstractFilesystem、RuntimeContext、Memory 四大核心抽象，系统性地解决了企业级场景的工程化难题 。

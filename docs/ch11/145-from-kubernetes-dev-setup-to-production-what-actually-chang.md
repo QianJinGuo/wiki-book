@@ -23,7 +23,6 @@
 | 变更控制 | 运维人员知识和命令序列 | Git 作部署 API，PR review + CI + 策略 + 协调状态 |
 | 可观测性 | 内部组件可见性 | 仪表盘 + 告警 + 合成检查，回答操作问题 |
 
-## 深度分析
 ### 生产就绪的本质：能力的积累，而非配置的堆叠
 这篇文章最核心的认知贡献是：生产就绪不是一个状态（state），而是一个**能力的集合（capability set）**。作者总结了 8 种能力，按建设顺序排列：
 1. **可安装性（Installability）**——每个依赖（数据库、存储、身份、Ingress）都能以可重复的方式安装
@@ -85,8 +84,6 @@ GitOps 让你能更安全地加快变更速度，但需要显式工程优化才�
 - [Alibabacloud Cms Manage Skill Natural Language Observability](https://github.com/QianJinGuo/wiki-public/blob/main/entities/alibabacloud-cms-manage-skill-natural-language-observability.md)
 
 → [原文存档](https://georg-schwarz.com/blog/from-kubernetes-demo-to-production-platform/)
-
-## 相关实体
 
 ---
 

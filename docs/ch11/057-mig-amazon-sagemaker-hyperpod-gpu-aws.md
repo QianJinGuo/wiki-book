@@ -8,7 +8,6 @@
 ## 核心技术
 Amazon SageMaker、HyperPod、GPU
 
-## 深度分析
 ### 1. MIG技术的核心价值
 MIG（Multi-Instance GPU）技术代表了GPU虚拟化的根本性突破。与传统的软件虚拟化方案（如vGPU、GRID vGPU）不同，MIG直接在硬件层面实现GPU分区，每个实例获得**完全隔离的计算环境**，包括独立的SM（Streaming Multiprocessors）、专用显存分区、独立的Copy Engines和编解码器。这种硬件级隔离确保了可预测的性能表现——每个MIG实例的性能不会受到同GPU上其他实例负载变化的影响。
 

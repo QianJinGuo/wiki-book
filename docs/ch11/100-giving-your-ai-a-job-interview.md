@@ -52,8 +52,6 @@ Mollick 给多个 AI 一个"牛油果酱无人机配送"创业方案，让它们
 
 **关键洞察**：不同模型在模糊判断题上持续给出 3-4 分的差异，意味着在大规模部署中会持续地将决策引向不同方向。这不是精度问题，而是"态度"问题。
 
-## 深度分析
-
 ### 1. AI 评估的"效度危机"——我们在测什么？
 
 Mollick 对 MMLU-Pro 的质疑直击 AI 评估的根本问题：**效度（validity）**。一个测试如果无法回答"测到了什么能力"，它的分数就没有意义。直立人颅容量和 Cheap Trick 专辑的答对率，可能更多反映训练数据的覆盖面而非推理能力。这不是新问题——心理测量学中"结构效度"的概念完全适用——但 AI 社区对此的关注远不够。GDPval 的方法论之所以重要，正是因为它通过"真实专家+真实任务+盲评"三重锚定，建立了更可靠的效度链。
@@ -86,7 +84,7 @@ Mollick 的文章暗示了 AI 评估范式的转变：从单一维度的"有多�
 
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
 - [Ai Job Interview Model Evaluation Mollick](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-job-interview-model-evaluation-mollick.md)
-- [The Shape Of Ai Jaggedness Bottlenecks And Salients](../ch01/269-the-shape-of-ai-jaggedness-bottlenecks-and-salients.html)
+- [The Shape Of Ai Jaggedness Bottlenecks And Salients](../ch01/268-the-shape-of-ai-jaggedness-bottlenecks-and-salients.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
 - [Youre Building Agent Security In The Wrong Order](https://github.com/QianJinGuo/wiki-public/blob/main/entities/youre-building-agent-security-in-the-wrong-order.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/vision-multimodal.md)

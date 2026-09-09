@@ -4,8 +4,6 @@
 
 > 实战教程：使用 Bedrock AgentCore Payment 构建支持 x402 协议的自主支付 AI Agent，包含完整代码示例。
 
-## 核心内容
-
 ## 用 Amazon Bedrock AgentCore Payment 构建自主支付 AI Agent: x402 协议实战
 
 摘要：本文基于 AWS Agentcore和开源项目 sample-agentcore-cloudfront-x402-payments，完整记录了使用 Amazon Bedrock AgentCore 构建一个能自主发现付费服务、执行链上支付并获取内容的 AI Agent 的实践过程。文章以 AgentCore 的三大核心能力（Runtime、Gateway、Payments）为主线，结合 x402 协议的支付流程，展示 Agent 如何在不接触私钥的前提下完成"请求 → 402 挑战 → 链上支付 → 内容交付"的完整闭环。
@@ -685,8 +683,6 @@ API Lambda 必须打包 boto3 ≥ 1.43.0（运行时自带版本不支持 bedroc
 *   Payments 解决了"Agent 如何付费"——服务端签名、预算控制、审计追踪
 
 结合 x402 协议，AI Agent 可以像人类浏览付费网站一样，自主发现、评估、购买和消费付费内容——而开发者只需要关注业务逻辑，不需要自建支付基础设施。
-
-## 深度分析
 
 ### 1. 三层架构的解耦价值：为什么支付不能嵌入 Agent 逻辑
 

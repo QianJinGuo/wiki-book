@@ -97,8 +97,6 @@ Teammates 初始使用 lead 的 permission settings。如果 lead 用 `--dangero
 - 每个 worker 必须产出 artifact，不只是发消息
 - Message 只传 artifact pointer，避免 Mailbox 变成第二个 context 污染场所
 
-## 深度分析
-
 ### 1. Task List 的设计哲学：从"聊天协调"到"结构化协调"
 
 Claude Code Agent Teams 最核心的设计决策是把 **task list 而非 mailbox 当作协作主轴**。这是一个非常清醒的架构选择。

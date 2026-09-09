@@ -85,8 +85,6 @@ Trade-off：运营效率高，可能是有大量小租户时的唯一选项，�
 
 示例：SOC 分析场景中，Gateway 可设为 Silo 以处理邮件 API 交互和下游租户资源，而 Pool Agent Runtime 托管 Agent 执行推理——因为每次调查运行在独立隔离的 microVM 中。
 
-## 深度分析
-
 ### 架构选择的核心矛盾
 
 多租户 Agent 架构的本质矛盾在于**隔离强度与运营效率的零和博弈**。Silo 模式提供最强隔离但成本随租户数线性增长；Pool 模式最优成本效率但隔离边界模糊；Bridge 模式试图在中间找到平衡但增加架构复杂度。这与传统的多租户 SaaS 架构挑战一脉相承，但 AI Agent 的非确定性引入了一个新维度——Agent 可能在执行过程中自主决定调用哪些工具、以什么参数调用，这意味着隔离边界不仅要在请求层面划定，还需要在运行时决策层面建立防护。
@@ -129,7 +127,7 @@ Trade-off：运营效率高，可能是有大量小租户时的唯一选项，�
 随着 ANS v2 等 Agent Trust 标准成熟，多租户 Agent 架构将面临新的设计考量：当外部 Agent 可以跨组织边界发现和交互时，租户边界的定义将从"数据隔离"扩展到"身份和信任隔离"。AWS Agent Registry 目前解决了组织内部发现，但跨组织发现和信任建立仍是待解决问题。
 
 ## 相关实体
-- [Building Ai Agents For Business Support Using Amazon Bedrock](../ch04/097-building-ai-agents-for-business-support-using-amazon-bedrock.html)
+- [Building Ai Agents For Business Support Using Amazon Bedrock](../ch04/096-building-ai-agents-for-business-support-using-amazon-bedrock.html)
 - [Break The Context Window Barrier With Amazon Bedrock Agentcore](https://github.com/QianJinGuo/wiki-public/blob/main/entities/break-the-context-window-barrier-with-amazon-bedrock-agentcore.md)
 - [Secure Ai Agents Policy Lambda Interceptors Aws](https://github.com/QianJinGuo/wiki-public/blob/main/entities/secure-ai-agents-policy-lambda-interceptors-aws.md)
 - [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](https://github.com/QianJinGuo/wiki-public/blob/main/entities/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazo.md)

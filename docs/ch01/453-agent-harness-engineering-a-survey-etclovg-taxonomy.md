@@ -1,6 +1,6 @@
 # Agent Harness Engineering: A Survey — ETCLOVG Taxonomy
 
-> 📊 Level ⭐⭐⭐⭐ | 13.3KB | `entities/agent-harness-engineering-survey-etcvlovg-taxonomy.md`
+> 📊 Level ⭐⭐⭐⭐ | 13.2KB | `entities/agent-harness-engineering-survey-etcvlovg-taxonomy.md`
 
 ## Overview
 Academic survey (2026, preprint) proposing **agent harness engineering as an independent system layer**, not merely a wrapper around a model. Authors from 9 institutions (CMU, Yale, Johns Hopkins, etc.) with Amazon affiliation. ^[agent-harness-engineering-survey-2026.md]
@@ -56,12 +56,8 @@ The survey organizes the harness into **7 independent layers**:]"]
 - [GitHub / Awesome-Agent-Harness](https://github.com/picrew/awesome-agent-harness)
 
 ## See Also
--  — general harness architecture patterns
--  — academic papers on harness evolution
--  — long-running agent engineering
 - [Agent Harness Engineering Survey 2026](https://picrew.github.io/LLM-Harness/paper.pdf) — raw source
 
-## 深度分析
 ### 论文定位与领域意义
 本文是**首篇将 agent harness engineering 确立为独立系统学科**的学术综述。区别于此前将 harness 视为 "model wrapper" 的朴素观点，论文通过 ETCLOVG 七层 taxonomy 证明了：生产级 agent 可靠性由基础设施层决定，而非底层模型能力决定。]"]
 

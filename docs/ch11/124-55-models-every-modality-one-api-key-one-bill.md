@@ -35,7 +35,5 @@ DigitalOcean Serverless Inference 的核心定位是**简化 AI 推理的基础�
 5. **选型判断**：如果你的团队已经在使用 DigitalOcean 的其他服务（数据库、存储、网络），Serverless Inference 的集成摩擦最小。但如果需要极低延迟（<50ms）或超大规模（>100B 参数模型的持续高频调用），Dedicated Inference 配合自定义 GPU 集群可能更合适。
 6. **监控和可观测性集成**：在正式迁移到 DigitalOcean Inference 之前，确认 Inference Router 的 SLA 可视化面板是否与你的监控体系（Datadog、Grafana、自建）兼容。跨供应商的统一可观测性是避免"黑盒"风险的关键。
 
-## 相关实体
-
 ---
 

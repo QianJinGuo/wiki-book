@@ -76,8 +76,6 @@
 | vCPE | 第三方虚拟 CPE 软件，提供 Site-to-Site VPN |
 | BFD (Bidirectional Forwarding Detection) | 毫秒级链路故障检测协议 |
 
-## 深度分析
-
 ### 1. 双轨制冗余架构的设计哲学
 
 文章揭示了 AWS Direct Connect 迁移设计中一个深刻的工程哲学：**双轨制冗余**（Dual-Track Redundancy）。DX+VPN 与 DX+DX 两种场景代表了两种截然不同的风险偏好与成本平衡。DX+VPN 采用「专线为主、VPN 为辅」的模式，利用 VPN 的低成本和快速部署能力，在 DX 故障时承担秒级切换。这种设计在成本敏感型业务（如电商、大规模互联网出口）中具有普适性。

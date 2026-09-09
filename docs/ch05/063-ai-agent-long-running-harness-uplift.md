@@ -118,8 +118,6 @@ L1: 基础设施层 (数据平台、训练平台、Git 存档)
 
 "企业 LLM Agent 的下一个台阶不在模型能力，而在让模型与企业平台之间的接缝消失。"当 Critic 直接读数据库、状态日志直接绑训练任务 ID、浏览器 Agent 直接驾驶 UI——模型本身能不能 30%还是 36%拿金牌，已经不是瓶颈。
 
-## 深度分析
-
 ### 1. Uplift Model + Agent Harness 的结合
 高德将 uplift model（因果推断中的增量效应模型）与 agent harness 结合——harness 控制实验分配和效果度量，uplift model 评估干预的因果效应。
 

@@ -85,7 +85,6 @@ Annie Vella 研究：supervisory engineering work（监督式工程工作）
 
 - [腾讯 AI Team 知识沉淀体系（Harness Engineering 实践）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tencent-ai-team-knowledge-harness.md)
 
-## 深度分析
 ### 1. 非确定性建模的本质意义
 Fowler 将 AI 研发的核心挑战定性为"非确定性协作者进入研发链路"，这个建模的价值在于：它把纷繁的 AI 编程新概念统一到了一个一致的理论框架下，而不是堆砌一堆独立概念。Vibe Coding、Agentic Engineering、Harness Engineering 这些热词，本质上是在回答同一个底层问题的不同侧面——如何在一个引入非确定性变量的工程系统里维持可预测性和可控制性。^[martin-fowler-的-ai-研发提醒非确定性进了研发链路harness-才真正开始承重.md]
 

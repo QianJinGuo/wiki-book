@@ -11,7 +11,7 @@
 - [Code Review Graph](https://github.com/QianJinGuo/wiki-public/blob/main/entities/code-review-graph.md)
 - [Claude Code Self Repair Hooks Memory Config](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-self-repair-hooks-memory-config.md)
 - [Claude Code Hackathon Winners 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-hackathon-winners-2026.md)
-- [Claude Code Harness Deep Understanding](110-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Understanding](109-claude-code-harness-deep-understanding.html)
 - [Claude Code Agent View Huashu](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-agent-view-huashu.md)
 
 → [原文存档](https://mp.weixin.qq.com/s/D2WBfa_FDfgz2n6sndLIVg)

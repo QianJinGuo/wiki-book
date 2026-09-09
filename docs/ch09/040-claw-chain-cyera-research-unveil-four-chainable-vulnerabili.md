@@ -15,7 +15,6 @@ Attack Vector: Agent-mediated — prompt injection, malicious plugin, supply-cha
 Exposed Instances: ~65,000 (Shodan) · ~180,000 (Zoomeye) public-facing OpenClaw servers
 → [原文存档](https://www.cyera.com/blog/claw-chain-cyera-research-unveil-four-chainable-vulnerabilities-in-openclaw)
 
-## 深度分析
 ### 漏洞链条设计：AI Agent 作为攻击放大器
 Cyera 发现的四个漏洞并非孤立存在，而是构成一条完整的攻击链。核心洞察是：**攻击者不需要直接攻击 OpenClaw 服务器，而是让 AI Agent 自身成为攻击的执行者**。每个步骤在传统安全控制看来都是「正常 Agent 行为」，这使得检测和防御极度困难。
 关键利用路径：

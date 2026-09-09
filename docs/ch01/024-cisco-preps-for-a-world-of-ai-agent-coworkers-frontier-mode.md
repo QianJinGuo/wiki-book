@@ -1,10 +1,8 @@
 # Cisco Preps For A World Of AI Agent Coworkers, Frontier Model Threats
 
-> 📊 Level ⭐ | 8.6KB | `entities/cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-model-threats.md`
+> 📊 Level ⭐ | 8.7KB | `entities/cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-model-threats.md`
 
 URL: https://www.nextplatform.com/ai/2026/06/03/cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-model-threats/5250406
-
-## 深度分析
 
 ### 1. AI Agent 作为同事：企业基础设施的准备
 Cisco 预见 AI agent 成为"数字同事"——企业需要为 agent 准备身份管理、权限控制、审计日志等基础设施，就像为新员工准备工位一样。
@@ -27,7 +25,7 @@ Agent 流量的模式不同于人类——需要独立的异常检测和安全�
 追踪前沿模型的能力评估和安全测试——了解最新威胁模型以更新防护策略。
 
 ## 相关实体
-- [Running An Ai Native Engineering Org](033-running-an-ai-native-engineering-org.html)
+- [Running An Ai Native Engineering Org](031-running-an-ai-native-engineering-org.html)
 - [World Knowledge Agent Self Evolution Tencent Hkustgz](https://github.com/QianJinGuo/wiki-public/blob/main/entities/world-knowledge-agent-self-evolution-tencent-hkustgz.md)
 - [Introducing Aimap Security Testing For Ai Agent Bishop Fox](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-aimap-security-testing-for-ai-agent-bishop-fox.md)
 - [Alphaevolve Deepmind Discovery Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/alphaevolve-deepmind-discovery-agent.md)
@@ -58,7 +56,7 @@ NEXTPLATFORM AD
 
 A key to what Cisco wants to do lies in the understanding that as AI agents become more integrated into business operations, the operating model has to change and be simplified to create the conditions in which humans and agents can work together.
 
-“One of the big transformations that's happening is we're starting to see this evolution happen from chatbots to agents, and when we talk about agents, what we're starting to see is agents are sort of manifesting themselves as additional coworkers,” he said. “You're onboarding them, you're working with these agents and these agents are starting to become very intrinsically woven into how you're starting to think about your day-to-day work. It's no longer about humans clicking through dashboards, a multitude of dashboards, and trying to keep up with what the agents are doing. A true collaborative operating model starts
+“One of the big transformations that's happening is we're starting to see this evolution happen from chatbots to agents, and when we talk about agents, what we're starting to see is agents are sort of manifesting themselves as additional coworkers,” he said. “You're onboarding them, you're working with these agents and these agents are starting to become very intrinsically woven into how you're starting to think about your day-to-day work. It's no longer about humans clicking through dashboards, a multitude of dashboards, and trying to keep up with what the agents are doing. A true collaborative operating model starts when agents are doing the heavy lifting and humans are constantly staying in control of what matters.
 
 ---
 

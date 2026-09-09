@@ -11,7 +11,6 @@ Kiro CLI、Kiro IDE、Kiro MCP Skills、Amazon Bedrock
 ## 来源
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/blog-03-kiro-ai-cdk-development/)
 
-## 深度分析
 ### Kiro AI IDE 的核心能力
 Kiro 是 AWS 推出的 AI 辅助开发工具，通过自然语言理解帮助开发者完成云架构设计和 CDK 代码生成。其核心能力体现在：
 **Spec 文档驱动开发**：通过 `requirements.md`（部署需求）、`design.md`（架构设计）、`tasks.md`（任务分解）三层文档结构，将模糊需求转化为明确的实现计划。这种方式避免了直接写代码导致的返工，使需求变更有据可循。

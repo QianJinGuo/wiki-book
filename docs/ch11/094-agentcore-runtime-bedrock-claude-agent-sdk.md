@@ -19,7 +19,6 @@ Claude Code、Amazon Bedrock、Kiro CLI
 - [Claude Code Agent View](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-agent-view.md)
 - [基于Strands Agents SDK和Amazon Bedrock AgentCore构建商品详情图广告词审查Agent | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/product-ad-review-agent-with-strands-sdk-bedrock.md)
 
-## 深度分析
 ### 1. AgentCore Runtime 的 microVM 隔离架构与 8 小时执行窗口
 文章详细阐述了 AgentCore Runtime 采用基于 microVM 的隔离方式，这种设计选择具有深远意义 。与传统容器技术不同，microVM 提供了更细粒度的隔离级别，每次调用都拥有独立的执行环境，确保不同用户、任务和智能体之间完全隔离，没有共享状态、没有内存泄漏、没有相互干扰。
 最关键的是单次执行最长可达 **8 小时**，这一特性对于需要深度推理、多步骤分析和复杂工具调用的自主式智能体至关重要。在快时尚电商场景中，商品匹配、库存分析、多语言客服等任务往往需要较长的执行时间，传统 FaaS 平台的超时限制使得这类任务难以实现。AgentCore Runtime 的设计理念是将「长时间推理」作为一等公民来支持，而非事后补救。

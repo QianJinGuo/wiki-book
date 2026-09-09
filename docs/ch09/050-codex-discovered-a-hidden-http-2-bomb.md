@@ -16,8 +16,6 @@ Calif.io 2026-06-02 公开披露"HTTP/2 Bomb"——一种利用 HPACK 索引引�
 - **修复进度不一**：nginx 1.29.8 已修（commit `365694160a`，新增 `max_headers` 指令）；Apache 同日修（CVE-2026-49975）；IIS 与 Pingora **未发布补丁**，建议临时关闭 HTTP/2 或前置 header-count cap
 - **AI 驱动的安全研究范式转变**：从 fix commit 反推到 working exploit 的周期被 Codex 压缩到分钟级
 
-## 深度分析
-
 ### "放大率不来自解码量"是新型 bomb 的本质
 
 经典 HPACK Bomb（CVE-2016-6581、CVE-2025-53020）的防御是**限制解码后 header 总大小**——服务器学聪明后加了 decoded-size cap。但 Calif.io 这次发现的新变体**几乎不消耗解码量**：header 字段本身极小，每个只有几个字节，单纯看 decoded size 根本看不出异常。放大率来自服务器为**每个索引引用维护的元数据/中间 buffer**——例如 Envoy 在每个 cookie crumb 引用时 append 到 buffer、Apache 在每次 crumb 到达时重建合并字符串。**单一资源维度（decoded size）做不出防御，必须叠加字段计数、per-stream allocation 上限、HPACK 动态表大小限制**。

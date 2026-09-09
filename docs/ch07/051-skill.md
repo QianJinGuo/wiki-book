@@ -1,6 +1,6 @@
 # Skill 设计模式
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 25.6KB | `entities/skill-design-patterns.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 25.5KB | `entities/skill-design-patterns.md`
 
 ## Overview
 从 7 个顶级 Skill 仓库（OpenAI/anthropic/Google Labs/Dean Peters/Trail of Bits）中提炼出的 5 种核心设计模式 + 1 种特殊模式。为 Agent Skill 开发提供系统性框架选择指南，告别"怎么写都行"的随意性。
@@ -193,9 +193,7 @@
 | VoltAgent/awesome-agent-skills | github.com/VoltAgent/awesome-agent-skills | 500+ Skill 索引 |
 
 ## 子页面
--  — 5 大类 14 种模式详解与写作技巧
 
-## 深度分析
 ### 模式演进的内在逻辑
 从 7 个顶级仓库提炼出的 5+1 种模式，并非随机排列，而是沿着**控制粒度**和**时间跨度**两个维度呈阶梯式分布。
 **控制粒度**从「告诉 LLM 做什么」到「告诉 LLM 怎么想」：

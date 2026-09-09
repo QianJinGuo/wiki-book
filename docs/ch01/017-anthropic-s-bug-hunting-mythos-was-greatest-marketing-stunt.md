@@ -12,7 +12,6 @@
 - [Anthropic's bug-hunting Mythos was greatest marketing stunt ever, says cURL creator](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-mythos-bug-hunting-marketing.md)
 - [Japan's PM orders cybersecurity review to defend against Anthropic Mythos](https://github.com/QianJinGuo/wiki-public/blob/main/entities/japan-pm-cybersecurity-review-anthropic-mythos.md)
 
-## 深度分析
 ### 神话破灭：Mythos 的实际能力边界
 Daniel Stenberg 对 Mythos 的评估揭示了 AI 安全工具的一个核心真相：当前 AI 模型在漏洞发现上的表现受限于「已知的已知」（known knowns）。Stenberg 明确指出：「AI tools find the usual and established kind of errors we already know about. It just finds new instances of them. We have not seen any AI so far report a vulnerability that would somehow be of a novel kind or something totally new.」这一论断与 Anthropic 对 Mythos「过于危险不能发布」的描述形成尖锐矛盾——如果 Mythos 只能在已知漏洞类型内打转，它究竟危险在哪里？
 

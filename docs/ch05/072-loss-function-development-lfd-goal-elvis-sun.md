@@ -193,8 +193,6 @@ Elvis 写了一个 **skill 用来生成这类目标**，帮助跑一次好的 lo
 > ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 > **产品现在只是一个周末。去构建那个周末无法触碰的 eval。**
 
-## 深度分析
-
 ### 1. LFD vs Spec-Driven 的本质差异：开放 vs 闭合
 
 **Spec-driven** 是**闭合目标**：测试集有限，全绿就结束。**Loss-function driven** 是**开放目标**：1,000 case 的 eval 达到 95% 仍要继续。 ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]

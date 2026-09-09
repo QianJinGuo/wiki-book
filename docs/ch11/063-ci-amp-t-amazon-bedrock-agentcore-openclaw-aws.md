@@ -19,7 +19,6 @@ Amazon Bedrock AgentCore、Strands Agent SDK、OpenClaw、MCP Server、OpenClaw�
 - [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单机改造为多租户-serverless-架构-.md)
 - [基于Strands SDK 构建的企业智能问数解决方案实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/enterprise-intelligent-data-query-solution-practice-based-on-strands-sdk.md)
 
-## 深度分析
 ### Multi-Agent 协作架构的核心设计逻辑
 CI&T 的解决方案采用了典型的 Supervisor-MultiAgent 架构模式，这是一种经过验证的复杂任务分解方法。Supervisor Agent 承担全局任务编排职责，将复杂运维请求拆解为子任务并分发给专业的子 Agent，体现了"专业的事交给专业的人做"的设计哲学。
 

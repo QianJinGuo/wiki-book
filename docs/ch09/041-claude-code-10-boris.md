@@ -61,8 +61,6 @@ bq 命令行工具 + BigQuery Skill → 团队人人直接在 Claude Code 里跑
 - ASCII 架构图：快速理清新协议或代码库的逻辑
 - 间隔重复学习技能：Claude 追问填补知识盲区 + 记录学习结果
 
-## 深度分析
-
 ### 1. worktree 并行模式本质上是"上下文隔离工程"
 
 团队将 3–5 个 git worktree 与独立 Claude 会话配对，本质上是在解决 LLM 上下文窗口的污染问题。当多个任务共享一个会话时，历史 context 会稀释当前任务的推理质量。worktree 模式通过文件系统层面的隔离，确保每个会话只看到相关文件。amorriscode 专门在 Claude Desktop 应用里开发了 worktree 原生支持，说明这是团队长期验证过的核心工作流。

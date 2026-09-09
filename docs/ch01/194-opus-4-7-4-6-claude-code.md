@@ -134,7 +134,6 @@ _ 你还可以进一步阅读我们的  _ _ Opus 4.7 prompting guide  _ [3]  _ �
   3. Opus 4.7 prompting guide:  https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices
   4. context and session management:  https://claude.com/blog/using-claude-code-session-management-and-1m-context
 
-## 深度分析
 ### 1. Agent能力升级的战略意义
 Opus 4.7 的核心升级方向是**增强Agent自主性**，这反映了 Anthropic 在大模型竞争中的关键判断：2025-2026年的战场已经从"模型单轮能力"转向"Agent系统工程能力"。编程能力提升、视觉能力3倍增长、指令遵循更字面化，这三者共同构成了一条清晰的进化路径——让模型能够在没有人盯着的情况下完成复杂、长周期的软件工程任务。
 这与 Boris Cherny 强调的"告别权限弹窗"形成呼应：Anthropic 正在重新定义人机协作模式，从"人监控AI执行"转向"AI自主执行，人只在必要时介入"。

@@ -98,8 +98,6 @@ TOOLSETS = {
 
 → [原文存档](https://mp.weixin.qq.com/s/ItjK7a6EoyJSidSDTnJgww)
 
-## 深度分析
-
 ### 自注册模式的工程哲学
 
 Hermes Agent 的工具系统核心设计思路是**"约定大于配置"**——开发者只需要在工具文件末尾调用一次 `registry.register()`，剩余的发现、加载、调度全部由框架自动完成。与传统的配置表驱动（YAML/JSON 声明式）相比，import 即注册的模式有本质区别：

@@ -4,8 +4,6 @@
 
 > 原文存档：[原文存档](https://research.nvidia.com/labs/gear/enpire/)
 
-## 核心内容
-
 ## ENPIRE: Agentic Robot Policy Self-Improvement in the Real World
 
 , [Jia Xie](https://jia-xie.com/)2†, [Tonghe Zhang](https://tonghe-zhang.github.io/)2†, [Haotian Lin](https://darthutopian.github.io/)2†, [Letian "Max" Fu](https://max-fu.github.io/)3, [Haoru Xue](https://haoruxue.github.io/)3, Jalen Lu 2,

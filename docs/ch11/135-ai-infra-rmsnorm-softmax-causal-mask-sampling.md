@@ -6,8 +6,6 @@
 
 腾讯工程师 binnnliu 的 AI Infra 入门系列第二篇，从数学第一性原理出发，拆解大模型推理中四个核心操作（RMSNorm、Softmax、Causal Mask、Sampling）背后的数学本质与 Infra 优化逻辑。核心论点：Infra 优化的本质，是用数学等价变换或精度适度妥协，换取更高的硬件利用率和极致推理速度。文章涵盖方差→标准差→Z-score→LayerNorm→RMSNorm 的完整数学推导链、Softmax 的 Safe/Online/FlashAttention 演进、Gumbel-Max Trick 的采样统一，以及 FlashAttention v1→v4 的架构进化全景。
 
-## 深度分析
-
 ### 1. RMSNorm：从方差到归一化的数学推导链
 
 **为什么需要归一化**：Transformer 数十上百层的矩阵乘加操作导致数值分布剧烈变化，引发两个致命问题——梯度消失/爆炸（算法收敛困难）和 FP16/BF16 精度下的溢出与截断（硬件层面）。FP16 精度高但数值范围小（上限 65504），BF16 数值范围大但尾数仅 7 bit，容易"大数吃小数"。

@@ -55,8 +55,6 @@ Voice Mode 的 killer feature 不是自然对话，而是**共享屏幕/相机**
 
 → [原文存档](https://www.oneusefulthing.org/p/using-ai-right-now-a-quick-guide)
 
-## 深度分析
-
 ### 1. 从「选模型」到「选系统」的范式转移
 
 AI 选择核心从「哪个模型最强」转向「哪个系统生态最完整」。三系统功能集趋同，竞争维度从技术参数转向工作流集成度，选择实质上由用户已有生态偏好决定。

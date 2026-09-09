@@ -8,7 +8,6 @@
 ## 核心技术
 Strands Agent SDK、Amazon Bedrock、AgentCore、Amazon Nova、Nova Lite、Fine-tuning
 
-## 深度分析
 ### 技术选型：为什么是Strands Agent SDK
 Lenovo在技术选型时提出了三个核心需求：**上手快、复杂度低、功能完善**。Strands Agent SDK正好满足这三个要求。作为AWS开源的轻量级Agent开发框架，Strands采用**Agent Loop**设计理念——这一概念充分利用了LLM的原生推理、规划和工具选择能力，使得代码结构清晰易懂。对于需要快速迭代的企业级Agent项目，这种"模型能力驱动"的设计思路显著降低了开发门槛。
 值得注意的优势包括：

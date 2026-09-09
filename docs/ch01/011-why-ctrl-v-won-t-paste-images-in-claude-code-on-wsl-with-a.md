@@ -14,8 +14,6 @@
 - **Windows Terminal 的 Ctrl+V 拦截**：Ctrl+V 在 Windows Terminal 中被底层 ConHost 的 `windowio.cpp` 拦截，不会传递到 WSL 中的程序。
 - **完整的开源解决方案**：采用 clip-listener.exe + wsl-clip-bridge + Alt+V 快捷键的三组件架构，已在 GitHub 开源。
 
-## 深度分析
-
 ### 三层故障链的工程启示
 
 本文最精彩的部分不是解决方案本身，而是作者对"多层故障叠加"问题的系统化拆解：

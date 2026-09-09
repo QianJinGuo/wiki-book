@@ -11,7 +11,6 @@
 - 独立编排框架（LangChain/LangGraph）从 5.4% 跌至 1.4%，企业级包装能力不足 
 - MCP 协议层开放不等于运行时层开放；**运行时锁定风险依然存在** 
 
-## 深度分析
 ### 1. 从模型博弈到基础设施博弈的范式转移
 过去两年企业 AI 竞争被描述为"模型之战"，但本文揭示了一个更深刻的结构性转变：**竞争焦点正从模型能力层向 agent 运行环境层迁移**。这个迁移的背后逻辑并不复杂——当模型本身越来越同质化（Claude、GPT-4o、Gemini 在多数基准上差距缩小），企业开始意识到**真正的差异化在于 agent 如何被管理、监控和治理**。
 VB Pulse 数据印证了这一转移：安全与权限在 Q1 2026 连续两月成为编排平台选型首要标准，而"多模型多工具灵活性"则从 35.7% 跌至 25.7%。这说明市场正在从"可选性优先"向"治理优先"切换。一个可以 act 的 AI agent（发送邮件、修改文档、查询数据库、调用工作流）其"爆炸半径"远大于一个只生成文本的聊天机器人——企业的问题不再是"agent 够不够聪明"，而是"**谁来授权、触发了什么、能否回滚**"。
@@ -61,7 +60,7 @@ OpenAI 的 Assistants 和 Responses API 稳居第二（23.2% → 25.7%），这�
 
 ## 关联阅读
 - [原文存档](https://venturebeat.com/orchestration/claudes-next-enterprise-battle-is-not-models-its-the-agent-control-plane)
-- [Agent Orchestration](114-agent-orchestration.html)
+- [Agent Orchestration](113-agent-orchestration.html)
 
 ## 相关实体
 - [Anthropic最危险路线图曝光: 无限记忆、多智能体! 硅谷AI终局仅剩双雄决顶](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic最危险路线图曝光-无限记忆多智能体-硅谷ai终局仅剩双雄决顶.md)

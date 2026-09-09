@@ -11,7 +11,6 @@
 - [What Is Urban Density Design? A Clear Guide to How Cities Get Built Denser](https://github.com/QianJinGuo/wiki-public/blob/main/entities/what-is-urban-density-design-a-clear-guide.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/rag-knowledge-retrieval.md)
-## 深度分析
 ### 专用算子 vs 通用查询重写：性能差距的本质
 QuestDB WINDOW JOIN 展现出比 Timescale、DuckDB、ClickHouse 快 25 倍的性能，其根本原因在于**专用算子知道窗口结构而通用查询重写不知道** ^。
 基准测试揭示了一个重要洞察：即使其他引擎使用了正确的计划形状（ClickHouse 的 UNION ALL + 窗口函数），仍无法匹敌专用算子的数据级并行性加连续切片 SIMD ^。这是因为：

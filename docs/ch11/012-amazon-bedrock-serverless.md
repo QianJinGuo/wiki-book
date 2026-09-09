@@ -20,7 +20,7 @@
 - [AgentOps: Operationalize agentic AI at scale with Amazon Bedrock AgentCore](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md) — 四支柱解析版
 - [AWS 强化微调：LLM-as-Judge 训练范式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-reinforcement-fine-tuning-llm-as-judge.md) — RFT judge范式
 - [AWS Bedrock Agentcore Quality Optimization Flywheel](098-aws-bedrock-agentcore-quality-optimization-flywheel.html) — 质量飞轮
-- [AWS Sagemaker Capacity Aware Inference Fallback](../ch01/234-aws-sagemaker-capacity-aware-inference-fallback.html) — 容量仲裁
+- [AWS Sagemaker Capacity Aware Inference Fallback](../ch01/233-aws-sagemaker-capacity-aware-inference-fallback.html) — 容量仲裁
 - [基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-5.md) — 消息渠道验证篇
 - [Extending MCP support for Amazon Bedrock AgentCore Gateway](107-extending-mcp-support-for-amazon-bedrock-agentcore-gateway.html) — MCP三原语统一+OAuth委托网关机制
 - [让 Amazon Quick 操作飞书：构建远程 MCP 服务的设计实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/让-amazon-quick-操作飞书构建远程-mcp-服务的设计实践.md) — MetaTool分层注册设计

@@ -177,7 +177,6 @@ bash scripts/cleanup.sh <region> <cfn-stack-name> <fleet-suffix> [custom-image-n
 | `stream.standard.xlarge` | ~$0.30/hr | $0.025/hr | 办公、浏览器、轻量 IDE |
 | `stream.graphics.g4dn.xlarge` | ~$1.45/hr | $0.025/hr | AI 推理、图形软件 |
 
-## 深度分析
 ### 基础设施层的复用设计
 本方案将基础设施层（VPC、子网、NAT Gateway、S3、IAM）与应用服务层（Fleet、Stack）明确解耦，这一设计决策具有深远影响。
 **复用价值**：CloudFormation 基础设施只需部署一次，即可被多个培训项目共享。每个培训项目通过不同的 `fleet-suffix` 创建独立的 Fleet，彼此隔离且互不干扰。这意味着一家每月举办 4 场不同主题培训的企业，只需一套基础设施，而非四套。

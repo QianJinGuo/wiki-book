@@ -26,7 +26,6 @@ The leaked memory contains u...
 ## 相关实体
 > [AI 安全与对齐](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-agent-security-threat-vectors-mitigation.md) | > [Agent 记忆架构](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-memory-architecture-decision-points.md)
 
-## 深度分析
 ### 漏洞根因分析
 CVE-2026-7482 的核心问题在于 Ollama 使用 Go 语言编写，却在关键路径上动用了 `unsafe` 包来实现 GGUF 格式的解析和量化操作。Go 本身是内存安全的语言，但 `unsafe` 包绕过了所有安全检查机制，直接进行指针运算和内存操作。
 漏洞触发路径如下：

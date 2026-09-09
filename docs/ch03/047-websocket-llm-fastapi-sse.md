@@ -114,8 +114,6 @@ async def event_stream(user_id: str):
 - **实践**：FastAPI `StreamingResponse` + 异步生成器，核心要点：格式组装/心跳/断开检测/代理缓冲控制
 - **避坑**：代理缓冲/超时/客户端断开检测/多进程状态共享
 
-## 深度分析
-
 ### 1. SSE 的本质是 HTTP 分块传输的协议化
 
 SSE（Server-Sent Events）并非全新的协议，而是对 HTTP 分块传输编码（chunked transfer encoding）的规范化包装。`text/event-stream` MIME 类型告诉浏览器这是一个 SSE 流，`event:` 和 `data:` 字段提供了结构化的消息格式。这种设计使得 SSE 可以复用 HTTP/1.1 的全栈基础设施——代理、Nginx、负载均衡器都原生支持 HTTP 分块响应，无需像 WebSocket 那样需要升级到独立协议（ws/wss）。这解释了为什么 SSE 在企业内网环境中的穿透性远优于 WebSocket。

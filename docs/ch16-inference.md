@@ -437,7 +437,6 @@ GLM-5的Scaling Pain案例揭示了高并发Coding Agent场景下推理系统面
 <!-- - [servicenow vllm correctness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/servicenow-vllm-correctness.md) -->
 <!-- - [servicenow vllm correctness huggingface](https://github.com/QianJinGuo/wiki-public/blob/main/entities/servicenow-vllm-correctness-huggingface.md) -->
 
-## 深度分析
 ### 背景：为什么 V0→V1 迁移是个高风险操作
 vLLM 的 V1 引擎对 V0 做了大量底层重构，包括调度器架构、内存管理、KV cache 分配策略和 logprob 计算路径的重大变化。对于大多数推理场景，这些变化是透明的、性能正交的。但对于 **RL 训练**（尤其是需要精确 token-level logprob 的 PPO/GRPO/GSPO），这些变化直接影响了 `logprob` 的数值语义，进而影响 policy gradient 的计算精度。
 V0 的 logprob 输出经过完整的 `temperature → repetition_penalty → min_length/truncate` 后处理流水线。而 V1 为了降低延迟，默认返回 **raw model logits** 经过 log-softmax 后的值，跳过了这部分后处理。这导致即使模型权重完全相同，V0 和 V1 的 `logprob` 也会系统性偏差。
@@ -704,10 +703,8 @@ Willison 的 **lethal trifecta** 框架（被 Green 引用）是同一问题的�
 
 - [End To End Encrypted Ml Inference Sagemaker Fhe](https://github.com/QianJinGuo/wiki-public/blob/main/entities/end-to-end-encrypted-ml-inference-sagemaker-fhe.md)：互补（不同加密学原语，同一目标）
 - [Vibe Coding Agentic Engineering Convergence Simon Willison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vibe-coding-agentic-engineering-convergence-simon-willison.md)：lethal trifecta 概念同源
-- [Apple Silicon Costs More Than Openrouter](ch01/477-apple-silicon-costs-more-than-openrouter.html)：Apple 硬件成本视角
+- [Apple Silicon Costs More Than Openrouter](ch01/476-apple-silicon-costs-more-than-openrouter.html)：Apple 硬件成本视角
 - [Apple Corecrypto Formal Verification Blueprint](https://github.com/QianJinGuo/wiki-public/blob/main/entities/apple-corecrypto-formal-verification-blueprint.md)：Apple 加密学基础设施
-
-## 深度分析
 
 ### 核心观点：Private Inference ≠ Private Agent
 
@@ -871,7 +868,6 @@ Step 3（Fusion）：流式 softmax 融合
 - **C**：更强表达的 Draft + 路由专精（MoE / Routing Draft）
 - **D**：面向未来范式的可插拔框架
 
-## 深度分析
 ### EAGLE-3 的本质：训练-推理分布对齐
 EAGLE-3 之所以能在长序列 Agent 场景取得显著超越 MTP 的效果，核心在于其 TTT 机制彻底弥合了训练与推理之间的分布偏差。传统 SFT 以 ground truth 历史 token 为条件进行训练，但推理时模型实际面对的是自己生成的历史——这个"自生成历史"与"ground truth 历史"的分布差异在短序列场景下不显著，但在长序列高熵片段（工具调用、链式推理）中会被急剧放大，导致 Accept Len 骤降。
 TTT 的解决思路是"让训练过程模拟推理过程"：Draft 模型先生成一步预测，再用这个预测结果作为下一步输入，循环往复。通过这种方式，模型在训练阶段就习惯了"带误差历史"的输入环境，连锁误差得以在训练过程中提前暴露并被学习。
@@ -1084,8 +1080,6 @@ bash examples/pretrain_language_model/launch.sh qwen3-30b-a3b
 ## 摘要
 
 数据派THU 陈之炎的系统性教程，拆解具身智能机器人 Sim-to-Real 迁移的三大核心技术：主动推理开源库（pymdp/spm）的 ROS2 集成、感控闭环的模块化行为树模板、内在动机引擎开发套件。每项技术均含环境安装、核心架构、代码模板、参数调优、工业避坑指南，面向工程化落地。
-
-## 深度分析
 
 ### 1. 主动推理（Active Inference）的 ROS2 集成
 
@@ -1481,8 +1475,6 @@ LMSYS、Modal 与 Z Lab 在 2026 年 6 月联合发布的工程博文，介绍�
 3. **Spec V2 引擎** — SGLang 全新 speculative decoding 引擎，通过减少 host-device 同步点（overlap scheduling）把推理吞吐再提升 33%+（Qwen 3-8B 单 B200 并发 32 下从 11.4 ktok/s 到 15.3 ktok/s）。
 4. **消融实验清晰** — 把 DFlash 的两个组件（diffusion drafting + KV injection）单独消融，分别证明各自对 acceptance length 与端到端加速的贡献。
 5. **与现有方案的对比** — 相比 EAGLE-3 5-layer、native MTP（Gemma 4、DeepSeek-V4）在所有 benchmark setting 下吞吐都更高。
-
-## 深度分析
 
 ### 背景：为什么 speculative decoding 还值得继续做
 

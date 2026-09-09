@@ -113,8 +113,6 @@ AIAgent(
 )
 ```
 
-## 深度分析
-
 ### 简洁核心循环的设计哲学
 Agent Loop 在 `agent/conversation_loop.py`（约 3900 行），实际核心逻辑不到 10 行代码。这个设计刻意为之：循环保持极简，复杂能力通过外围工具系统/提示词组装/记忆管理实现组合扩展。这与许多 Agent 框架每轮重建完整 system prompt 的做法形成对比——后者导致缓存全部失效，而 Hermes 把 stable/volatile 分层，缓存命中率更高。
 

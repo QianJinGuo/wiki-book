@@ -315,8 +315,6 @@ AWS Security Agent 之所以在越权与业务逻辑漏洞场景上表现亮眼�
 
 ![](https://d2908q01vomqb2.cloudfront.net/472b07b9fcf2c2451e8781e944bf5f77cd8457c8/2026/05/14/2026_Summits_Commercial_Banner_1440x657.png)
 
-## 深度分析
-
 ### 多智能体协作在支付安全领域的结构性优势
 
 AWS Security Agent 采用的多智能体架构在支付安全场景中展现出独特的结构性优势。与传统单 Agent DAST/SAST 工具的"检测—报告"线性模式不同，多智能体协作模拟了人类安全工程师的思考链条：侦察 Agent 绘制攻击面、漏洞挖掘 Agent 分析业务逻辑、验证 Agent 构造可利用路径。这种分工机制使系统在面对跨境支付中常见的"多步骤复合漏洞"（如越权访问→资金流水查询→状态机滥用）时，能够实现跨 Agent 的信息传递与协同推理，而不是像传统工具那样只能识别孤立的单点漏洞。飞来汇的实践表明，这一架构在越权漏洞和业务逻辑漏洞检测上的效果远超传统扫描器 。
@@ -351,7 +349,7 @@ AWS Security Agent 的 Cross-Account VPC 能力解决了金融科技公司长期
 
 ## 相关实体
 - [Data For Ai明其所耗知其所因让每一分 Token 消耗都可量化的全栈实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/data-for-ai明其所耗知其所因让每一分-token-消耗都可量化的全栈实践.md)
-- [Powering Agentic Ai Sales Strategy With Amazon Bedrock Agent](../ch04/351-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.html)
+- [Powering Agentic Ai Sales Strategy With Amazon Bedrock Agent](../ch04/349-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.html)
 - [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-aws-smgs-uses-an-ai-powered-conversational-assistant-to-.md)
 - [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/滴滴国际化客服质检智能化之路基于-amazon-bedrock-的多语种多业务线质检实践.md)
 - [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](https://github.com/QianJinGuo/wiki-public/blob/main/entities/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md)

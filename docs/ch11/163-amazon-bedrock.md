@@ -15,8 +15,6 @@ IBS Software 使用 Amazon Bedrock 的托管知识蒸馏能力，将 Amazon Nova
 - **Token 级 KL 散度蒸馏**：使用 token_level_kl_divergence 作为损失函数，训练 4 个 epoch（70 步），损失从 0.05 降至 0.008，表明知识迁移效果显著。
 - **日语准确率存在差距**：学生模型在日语上的 F1-Score（93.635%）比英语（96.535%）低约 2.9 个百分点，主要源于复杂汉字组合、无空格文本的实体边界模糊和日语训练数据较少（150 vs 350 封邮件）。
 
-## 深度分析
-
 ### 知识蒸馏的技术实现
 
 IBS Software 的蒸馏方案采用 Amazon Bedrock 的托管蒸馏能力，核心配置如下：

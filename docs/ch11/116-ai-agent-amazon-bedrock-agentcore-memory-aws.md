@@ -19,7 +19,6 @@ Amazon Bedrock AgentCore、Strands Agent SDK、OpenClaw、MCP Server、AgentCore
 - [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-1.md)
 - [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-4.md)
 
-## 深度分析
 ### 记忆哲学的根本转变
 传统 AI 系统追求"记住更多"，但 AgentCore Memory 带来范式转变：从"存储导向"到"整合导向"。当用户第1天说"预算500美元"，第30天改为"800美元"，第60天用三种措辞表达"喜欢Python"时，没有整合能力的系统会产生信息矛盾和冗余。AgentCore Memory 的核心洞察是：**问题不是记住什么，而是记住什么、忘记什么、以及当新旧信息冲突时该相信谁**。
 

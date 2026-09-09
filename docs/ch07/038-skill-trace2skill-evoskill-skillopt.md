@@ -68,8 +68,6 @@ Skill 自进化是 Agent 系统从"人工调优"走向"自主优化"的关键技
 5. **慢更新 + 元更新：动量机制** — 四类样本归因（Improvements / Regressions / Persistent Failures / Stable Successes），受保护区域更新，Meta-Skill 仅对优化器可见
 6. **Harness 无关部署** — 可运行于 Chat / Codex CLI / Claude Code CLI 等多种 Harness，仅产出一个 best_skill.md 文件（300~2000 Tokens）
 
-## 深度分析
-
 ### 三条路线的哲学差异
 
 三条路线反映了三种不同的进化哲学：

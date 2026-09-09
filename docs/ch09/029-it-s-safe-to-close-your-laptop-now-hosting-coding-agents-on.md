@@ -4,8 +4,6 @@
 
 > **Source archive**: [原文存档](https://aws.amazon.com/blogs/machine-learning/its-safe-to-close-your-laptop-now-hosting-coding-agents-on-amazon-bedrock-agentcore)
 
-## 深度分析
-
 ### 1. 笔记本作为 Coding Agent 宿主的结构性缺陷
 
 文章指出笔记本并非 Coding Agent 的天然适配器，而是「最方便的机器」而非「正确的机器」——这一判断揭示了分布式 AI Agent 部署的结构性问题。 四个具体缺陷（受影响域重叠、密钥与代码同域、worktree 半隔离、笔记本合盖即 kill switch）指向同一个根本矛盾：在开发者本地环境运行 LLM 控制的生产级工具，存在信任边界的根本错位。企业安全策略通常不允许在开发者工作站上运行第三方 Agent，但笔记本合盖的物理约束反而迫使 Agent 必须「现场运行」，这是一个被长期忽视的系统性矛盾。

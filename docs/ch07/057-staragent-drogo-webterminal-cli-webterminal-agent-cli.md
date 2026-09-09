@@ -254,8 +254,6 @@ Program terminated with signal SIGSEGV, Segmentation fault.
 
 → [原文存档](https://mp.weixin.qq.com/s/5qwjuSZmENMovuEStczQEg)
 
-## 深度分析
-
 ### 1. 执行面抽象的分层价值
 
 本文展示了清晰的 **Layered Architecture**：WebTerminal 页面负责人类授权（合规链路的最后一步），`wt` CLI 负责稳定执行面（可编程的命令/文件/交互原语），Skill 负责操作规约（不绑定具体 IP 或案例），Agent 负责动态决策。这种分离的核心价值在于：授权链路不被穿透，但执行能力完整释放给 Agent。

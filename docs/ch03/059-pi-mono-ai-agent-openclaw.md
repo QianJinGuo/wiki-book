@@ -128,7 +128,6 @@ pi-mono 提供了 Agent 底层的 LLM 访问抽象、工具执行引擎和 Sessi
 - 都有 Session/会话管理
 - 但 Hermes 更侧重 Skill 系统和自我进化，pi-mono 更侧重 LLM 层面的抽象和开发者工具链
 
-## 深度分析
 ### 1. 事件流架构的工程价值
 pi-mono 选择**注册表 + 异步迭代器事件流**而非 LangChain 的抽象基类模式，体现了鲜明的工程立场。 异步迭代器天然适合流式输出场景，事件类型标准化（start/text_delta/toolcall_end/done）让上层 UI 和中间件可以统一订阅，无需理解提供商细节。pi-ai 的 stream/complete/streamSimple/completeSimple 四接口设计覆盖了从流式到一次性、从简单到复杂的所有调用模式 。
 

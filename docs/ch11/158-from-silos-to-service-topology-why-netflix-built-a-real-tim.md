@@ -48,8 +48,6 @@ Service Topology 的核心设计决策是使用三个独立数据源构建三个
 
 **gRPC API**：支持多跳遍历、按可用性层级和业务域过滤、大结果集分页、亚秒级查询响应。
 
-## 深度分析
-
 ### 实时性的工程权衡
 
 "Dependency maps that are hours old are useless in dynamic environments where services deploy multiple times per day."

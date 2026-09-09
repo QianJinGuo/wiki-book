@@ -90,7 +90,6 @@ OpenAI 百万行代码实践中提出：Agent 写代码时会模仿代码库中�
 | 代码量 | 10万+ 行 Java |
 | 技术栈 | Java 1.8 / Spring Boot / LiteFlow / HSF / Diamond |
 
-## 深度分析
 ### 1. 为什么 Context Architecture 是最难攻克的壁垒
 Alibaba 的案例揭示了一个关键真相：在企业级 Java 代码库中，隐性知识（Tacit Knowledge）的存在使得上下文管理成为系统工程问题，而非简单的 Prompt 优化。
 典型的企业级 Java 项目中存在大量**未编码的架构约定**——价格精度处理、链路高频变更区、全局配置类的近百处引用——这些信息存在于资深工程师的直觉中，却从未以机器可读的方式写入代码库。

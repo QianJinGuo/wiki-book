@@ -94,8 +94,6 @@ AWS Budgets 在账号级别设硬告警：
 | 安全纵深 | 4 层（IAM + Secrets + MFA + CloudTrail） | 仅 API Key | 1 层 |
 | 监控能力 | Prometheus + Grafana 全维度 | 简单日志 | CloudWatch |
 
-## 深度分析
-
 ### 核心观点：四层防护体系覆盖完整成本治理生命周期
 
 LiteLLM + Bedrock 成本治理方案的核心贡献是**四层防护体系的系统化设计**：第 1 层 Virtual Key 实时限额（事前）→ 第 2 层多维监控（事中）→ 第 3 层 AWS Budgets 兜底（平台级告警）→ 第 4 层 AWS 原生安全纵深（防 API Key 盗刷）。业界常见方案只有 1-2 层（Virtual Key 限额 或 简单日志监控），本文是首篇完整覆盖"AI 投入可预测 + AI 资产不被盗"两个企业痛点的端到端 recipe。

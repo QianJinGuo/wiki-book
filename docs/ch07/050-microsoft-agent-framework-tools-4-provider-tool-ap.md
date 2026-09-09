@@ -256,8 +256,6 @@ print(result.text)
 - "**外层每次 as_tool() 调用都会产生完整子 Agent run，注意延迟与 Token 成本**"
 - "**强顺序、强事务、必须 checkpoint 的流程应改用 Workflow**"
 
-## 深度分析
-
 ### 1. Provider 矩阵的实质：运行时能力 vs 代码可 import 性的落差
 
 Provider 能力矩阵揭示了一个核心矛盾：**框架 API 层面可 import 的模块与运行时实际支持的工具类型之间存在系统性落差** 。例如，`Code Interpreter` 和 `File Search` 在 Python import 路径上对所有 Client 类型开放，但在实际运行时只有 `Responses` 和 `Foundry` 支持。这不是文档缺陷，而是 Client 架构分层导致的：**Chat Completion 客户端复刻的是 OpenAI Chat Completion API 的工具子集，而非 Responses API 的完整工具面**。

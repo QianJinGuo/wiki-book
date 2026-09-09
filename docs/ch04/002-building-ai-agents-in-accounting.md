@@ -8,7 +8,6 @@
 - 人机协同模式：AI Agent 承担重复性操作，人工保留 Preparer 和 Reviewer 控制节点，符合会计内控要求 
 - 实践效果：预付账款对账从约 2 小时压缩至约 5 分钟，跨多个对账项目可节省整天的月末结账时间 
 
-## 深度分析
 ### 1. Skill-Config 分离架构的设计思想
 文章中最核心的工程洞察是 Skill 与 Config 的严格分离。Skill（技能）是一个自包含的工作流，包含系统提示词（System Prompt）定义"做什么"、MCP 连接器定义"能操作哪些系统"、触发机制和驱动行为的配置。一个 Skill 一旦编写完成，就可以永久运行，无需每次手动调用。
 而 Config（配置）则是 YAML 文件，其中存放的是具体业务参数：预付账款 GL 账户代码、供应商编码映射表、重要性水平阈值、期末部分月 convention、以及路由规则（谁在哪个频道被呼叫）。当业务规则变化时，只需编辑 Config 文件，而不需要触碰 Skill 本体。
@@ -48,7 +47,7 @@ Slack 是整个 Agent 的交互界面。用户通过slash command（`/prepaid Ap
 - [Www Networkworld Com Versa Takes Aim At Fragmented Enterprise Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/www-networkworld-com-versa-takes-aim-at-fragmented-enterprise-security.md)
 - [Create Custom Mcp Catalogs And Profiles](../ch07/001-create-custom-mcp-catalogs-and-profiles.html)
 - [Turn Repeated Instructions Into Reusable Skills In Lovable L](https://github.com/QianJinGuo/wiki-public/blob/main/entities/turn-repeated-instructions-into-reusable-skills-in-lovable-l.md)
-- [Skillos Learning Skill Curation For Self Evolving Agents](284-skillos-learning-skill-curation-for-self-evolving-agents.html)
+- [Skillos Learning Skill Curation For Self Evolving Agents](282-skillos-learning-skill-curation-for-self-evolving-agents.html)
 - [Automation Anywhere Collaborates With Cisco Nvidia Okta And Openai Launching Ent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/automation-anywhere-collaborates-with-cisco-nvidia-okta-and-openai-launching-ent.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/workflow-orchestration.md)
 

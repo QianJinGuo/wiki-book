@@ -42,8 +42,6 @@ OpenRouter 上 Gemma 4 31B 的价格约 $0.38-$0.50/百万 token。只有在极�
 
 OpenRouter 上的 Gemma 4 31B 可达 60-70 tokens/秒，而 M5 Max 本地仅 10-20 tokens/秒，差距 3-7 倍。对于时薪数百美元的工程师来说，等待本地推理的时间成本远超 token 费用差异。
 
-## 深度分析
-
 ### 成本结构解构
 
 本地推理成本由三个要素构成：**电力 + 硬件折旧 + 机会成本**。电力成本（$0.02/小时）在总成本中占比不到 20%，硬件折旧（$0.05-$0.16/小时）是绝对主导。这与直觉相反——许多人认为"本地推理电费便宜所以更划算"，但忽略了 $4,299 的设备投入。
@@ -80,8 +78,8 @@ OpenRouter 上的 Gemma 4 31B 可达 60-70 tokens/秒，而 M5 Max 本地仅 10-
 ## 相关实体
 
 - [Inference cost at scale with napkin math](https://github.com/QianJinGuo/wiki-public/blob/main/entities/napkin-inference-cost-injuly-2026.md)
-- [From Doer To Director The Ai Mindset Shift](108-from-doer-to-director-the-ai-mindset-shift.html)
-- [Running An Ai Native Engineering Org](033-running-an-ai-native-engineering-org.html)
+- [From Doer To Director The Ai Mindset Shift](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-doer-to-director-the-ai-mindset-shift.md)
+- [Running An Ai Native Engineering Org](031-running-an-ai-native-engineering-org.html)
 
 ---
 

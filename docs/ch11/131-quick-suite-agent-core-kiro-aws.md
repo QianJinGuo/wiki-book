@@ -132,7 +132,6 @@ Flows 的 step 需要根据实际情况一步步确认调整和测试验证，�
 | MCP (Model Context Protocol) | AI 模型与外部工具的标准化连接协议 |
 | excel-mcp-server | Excel 操作工具（基于 openpyxl） |
 
-## 深度分析
 ### 三产品协同架构的价值
 本案例展示了 AWS 三款产品在"AI 赋能业务"链路上的完整协同。从分工来看：
 

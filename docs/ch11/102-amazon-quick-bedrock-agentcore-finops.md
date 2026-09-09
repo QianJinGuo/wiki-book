@@ -74,7 +74,6 @@ AgentCore Runtime 用 Cognito Authorizer 校验 JWT
 → [原文存档](https://aws.amazon.com/cn/blogs/china/based-on-amazon-quick-amazon-bedrock-agentcore/)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/tool-use-mcp-patterns.md)
-## 深度分析
 
 ### MCP协议架构：解耦与组合的灵活性
 

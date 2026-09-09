@@ -18,8 +18,6 @@ UIUC 的 Dylan Zhang 在 ALFWorld、ScienceWorld、WebShop、AppWorld、Mind2Web
 - **本质是无锚点的迭代生成循环**：每次 consolidation 都是一次 LLM 采样，记忆向模型对"好 lesson"的先验漂移，而非向真实轨迹收敛。
 - **与认知科学预测一致**：将 episodic 与 schema 存储塌缩进单一强制重写循环，恰好触发了 Complementary Learning Systems 理论所警告的干扰灾难。
 
-## 深度分析
-
 ### 结构性缺陷：每次 consolidation 都是一次生成
 
 循环由三步构成：Read（读取当前记忆与新轨迹）→ Generate（LLM 前向采样"应有"的记忆条目）→ Write（把样本当作 ground-truth 写回）。堆叠 200 步后，第 k+1 步的上下文是第 k 步样本的条件采样，具体事实（哪个颜色、哪个容器、哪个 selector）作为最"意外"的 token 逐轮脱落，记忆漂移向 LLM 的先验而非轨迹的真实。ExpeL 中 99 票的 top 条目在 200 个 stage 内被替换过三次概念，最终变成适用于任何 benchmark 的 tautology——票数度量的是编辑量而非内容质量。
@@ -47,7 +45,7 @@ Complementary Learning Systems 理论要求快速 episodic 存储与慢速 schem
 
 ## 相关实体
 
-- [Build Live Translation Apps with gpt-realtime-translate](059-build-live-translation-apps-with-gpt-realtime-translate.html)
+- [Build Live Translation Apps with gpt-realtime-translate](057-build-live-translation-apps-with-gpt-realtime-translate.html)
 - [A recent experience with ChatGPT 5.5 Pro | Gowers's Weblog](https://github.com/QianJinGuo/wiki-public/blob/main/entities/a-recent-experience-with-chatgpt-55-pro-gowerss-weblog.md)
 - [GPT-5.4 is a big step for Codex](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gpt-54-is-a-big-step-for-codex.md)
 

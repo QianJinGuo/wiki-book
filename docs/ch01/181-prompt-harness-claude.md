@@ -8,7 +8,7 @@
 1. **指令子系统** — 告诉 Agent 项目是什么、技术栈、不可违反的规则
 
 ## 相关实体
-- [Claude Code Harness Deep Understanding](110-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Understanding](109-claude-code-harness-deep-understanding.html)
 - [Claude Code Harness Deep Dive Founder Park](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-harness-deep-dive-founder-park.md)
 - [Claude Opus 47](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-opus-47.md)
 - [Openclaw Prompt Context Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-prompt-context-harness.md)

@@ -49,8 +49,6 @@ Amazon Nova 2 Lite 是 AWS Bedrock 上的多模态基础模型，通过**自然�
 | 适用场景 | 快速 POC、动态目标类别 | 固定场景高准确率 |
 | 成本模式 | 按 token 计费 (~$0.0006/图) | 训练 $0.02 + 推理 |
 
-## 深度分析
-
 ### 零训练检测的实现机制
 
 Nova 2 Lite 的零样本能力源于其多模态预训练阶段积累的视觉-语言对齐。在传统计算机视觉流程中，每新增一类目标都需要重新标注数据、训练模型、验证调优；而 Nova 2 Lite 将"目标类别"作为自然语言输入，通过 prompt 中的 `elements` 变量注入，绕过了这一成本。 这一设计与 [Prompt Engineering 基础](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/prompt-engineering-fundamentals.md) 中强调的"任务描述即规格"范式一脉相承——模型依赖语言理解能力而非记忆特定类别的视觉特征。AWS 官方博客的 street scene 示例验证了这一点：仅凭 "vehicle" 和 "stop sign" 两个词，模型能检测小目标、远处目标和部分遮挡目标，且 bounding box 贴合紧密。

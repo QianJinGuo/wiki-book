@@ -13,7 +13,7 @@
 - [Bedrock AgentCore RLM：突破上下文窗口限制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/break-the-context-window-barrier-with-amazon-bedrock-agentcore.md) — RLM程序化环境
 - [Amazon Bedrock模型推理的Serverless异步架构 – 处理在线多模态高负载案例](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-serverless-async-inference-multimodal.md) — 异步推理rv9主版
 - [构建无服务器Kiro调度平台：用Kiro CLI + EventBridge + ECS Fargate实现定时AI任务](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kiro-job-scheduler-eventbridge-ecs-fargate.md) — 无服务器Kiro调度平台三层架构
-- [Amazon Bedrock AgentCore Web Search: 托管式网页搜索能力 GA](../ch04/398-amazon-bedrock-agentcore-web-search-ga.html) — 托管搜索GA
+- [Amazon Bedrock AgentCore Web Search: 托管式网页搜索能力 GA](../ch04/396-amazon-bedrock-agentcore-web-search-ga.html) — 托管搜索GA
 - [Bedrock AgentCore NLP 仪表盘自动化 Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-ai-powered-dashboard-automation-agents-with-nlp-on-amazon-bedrock-agentcor.md) — 仪表盘三代理
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-os-level-actions-in-amazon-bedrock-agentcore-browser.md) — OS层动作补全浏览器自动化盲区
 - [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-一周综述amazon-bedrock-agentcore-付款适用于-aws-的-agent-工具套件等2026-年-5-月-11-日.md) — 周综述有功能详析

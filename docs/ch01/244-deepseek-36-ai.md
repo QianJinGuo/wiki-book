@@ -1,6 +1,6 @@
 # 所有实验室都怕字节，所有人都在夸DeepSeek！美国研究员36小时中国AI行
 
-> 📊 Level ⭐⭐⭐ | 11.7KB | `entities/chinese-ai-lab-insights-nathan.md`
+> 📊 Level ⭐⭐⭐ | 11.6KB | `entities/chinese-ai-lab-insights-nathan.md`
 
 ## 核心要点
 - Nathan Lambert（Allen Institute for AI）36小时密集访问中国AI实验室：月之暗面、智谱、清华、美团、小米、零一万物
@@ -72,9 +72,6 @@ Nathan 反复追问为什么中国公司愿意开源好容易训练出来的模�
 如果你是 AI 领域招聘方，美国顶级公司关闭实习岗位的现状意味着有大量高质量学生无处可去，这是招募具有最新范式适应能力的年轻研究员的窗口期 。同时，如果你的公司愿意建立有效的实习生带教机制，可以以更低成本获取这类人才。
 **5. "地平线上的起重机"作为中国 AI 发展速度的隐喻，对技术路线图规划有参考价值**
 Nathan 的这句话  描绘了一个持续建设、永不停歇的图景。对于制定技术路线图的公司，这意味着需要预留足够的缓冲时间——当你的团队在规划某个技术方向 6 个月后的目标时，中国团队可能已经在同一方向推进了 3 个迭代。
-
-## 相关实体
-> [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/chinese-ai-ecosystem-silicon-valley-differences-agent-development-impact.md)
 
 ---
 

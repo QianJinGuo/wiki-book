@@ -42,7 +42,6 @@ IBM 将 FDU 的发布定位为更广泛行业转型的一部分：enterprise AI 
 > "The next phase of AI won't be defined by models alone; it will be defined by the ability to turn them into sustained business value."
 > — **Mohamad Ali**, Senior Vice President and Head of IBM Consulting
 
-## 深度分析
 ### 从"人力扩张"到"智能交付"的范式转变
 FDU 模式标志着 IBM 对企业 AI 交付本质的根本性重新思考。传统模式遵循线性人力扩张逻辑——项目规模扩大意味着需要投入更多顾问人力，交付质量高度依赖个人能力，存在明显的 scalability瓶颈。FDU 通过 small senior-level teams + AI agents 的组合，试图打破这一线性关系：六人团队完成传统数十人团队的工作，核心差异在于 AI 承担了 coding、evaluation、testing、documentation 等重复性执行工作，而人类专注于 judgment-heavy 的决策和客户对齐。
 这一转变的经济学含义值得深究：咨询行业的传统计费模型基于"人天"——价值创造 = 人力 × 时间 × 费率。FDU 试图将价值创造锚点转移到"平台智能 × 运营持续性"，这意味着计费逻辑和利润池分布都可能发生结构性变化。IBM 不再只是卖人的时间，而是卖端到端交付系统的能力。

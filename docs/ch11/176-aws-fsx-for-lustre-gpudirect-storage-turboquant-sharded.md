@@ -131,8 +131,6 @@ lfs setstripe -c 8 -S 1m /lustre/checkpoints/llama-405b/
 
 > "TurboQuant compresses KV cache ~6x with negligible accuracy loss, enabling single H200 to host 8+ 128K-context sessions vs. 1 session with FP8 KV."
 
-## 深度分析
-
 ### 1. CPU bounce buffer 是传统加载路径的不可压缩瓶颈
 
 传统 CPU-based 加载路径中，数据流经 "存储 → CPU 内存 → PCIe → GPU HBM" 四跳，其中 CPU bounce buffer 是最难消除的瓶颈——每次 GPU 读取数据都需要在 CPU 侧完成内存拷贝和反序列化。GDS 的核心价值不是跑满 94 GiB/s 吞吐，而是把这条路径压缩到 "存储 → GPU HBM" 两跳，彻底移除 CPU 的中间参与。对于 405B 模型而言，这意味着 8 个 GPU 可以真正同时从各自 shard 并行读，而不需要排队等 CPU 调度。

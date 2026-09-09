@@ -80,8 +80,6 @@ AgentCore Payments 把这些打包到托管服务：原本数月工程量 → �
 → [原文存档](https://aws.amazon.com/cn/blogs/china/ai-agent-based-on-amazon-bedrock-agentcore-x402-agentic-payment-solution/)
 - [aws waf ai traffic monetization — 内容所有者向 ai 收费的网络层基础设施](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-waf-ai-traffic-monetization-bot-content-access.md)
 
-## 深度分析
-
 ### 1. 支付协议与托管服务的职责边界
 
 x402 协议只解决"双方怎么谈"的问题，而 AgentCore Payments 解决"代理在组织内部怎么安全地把钱付出去"的问题。这两层的职责边界在架构上是正交的——协议层定义支付语法，托管服务层定义支付语义。缺乏中间这一层，代理即便能谈妥支付条款，也没有可信的执行环境；缺乏协议层，托管服务只能做本地钱包，无法与任意卖方互联。设计代理支付系统时，首先要在架构上明确这一分界线，而不是试图用其中一层去覆盖另一层。

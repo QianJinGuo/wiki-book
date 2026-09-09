@@ -29,7 +29,6 @@ Amazon Bedrock AgentCore 支持自定义代码评估器（Custom Code-Based Eval
 扫描会话中所有 Agent 响应是否泄露 PII。使用 Amazon Comprehend DetectPiiEntities API，高风险实体（SSN、银行卡、政府ID、凭证）直接 FAIL，低风险实体（姓名、邮箱、电话、地址）按阈值返回部分分数。
 > **备选方案**：对于无法依赖 Comprehend 的环境，提供了基于正则表达式的变体。
 
-## 深度分析
 ### 代码评估器的本质定位
 这篇文章揭示了 LLM-as-a-Judge 与代码评估器的根本分工：前者评估"听起来对不对"（helpfulness、correctness、tone），后者验证"是不是真的符合约束"（schema、数值精度、工作流顺序、PII 安全）。在金融、医疗、法律等强监管领域，"听起来对"是不够的——审计员和监管机构要求可证明的合规证据。代码评估器提供了这种确定性：同样的输入永远产生同样的结果，且结果可被完整重放和调试。
 

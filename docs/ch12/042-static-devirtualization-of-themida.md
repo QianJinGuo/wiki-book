@@ -103,8 +103,6 @@ lifting 从所有寄存器（除 RSP 外）和标志位均为符号值的状态�
 - **covirt**
 - **binprotect**
 
-## 深度分析
-
 ### 符号执行是去虚拟化的主引擎，而非 VM handler 模式匹配
 
 Back Engineering Labs 方法的核心洞察是：去虚拟化的主要工作量由**通用的编译器级优化 pass** 驱动，而非 VM-specific 的 handler 行为理解 。该方法刻意避免了对 VM handler 进行逆向和模式匹配的做法——作者明确指出自己曾经尝试过 handler 模式匹配，结论是"不scalable"（handler 布局、opcode 表或调度逻辑的小变化可能无声地破坏整个版本范围的工具）。这与许多学术和工程社区的早期路线形成鲜明对比：那些方案通常花费大量精力逆向 VM 架构，然后用启发式规则将 VM handler 反向映射回原生 x86 指令，结果是脆弱且难以维护。该方法的成功在于将"理解 VM"降为最小必要输入，把主要工作量交给 Constant Folding、DCE、Instruction Combination 等通用优化 pass 去完成 。

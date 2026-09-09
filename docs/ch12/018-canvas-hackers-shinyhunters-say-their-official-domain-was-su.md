@@ -16,8 +16,6 @@
 - **Onion 服务转移**：ShinyHunters 在 onion 站点上明确警告"未来所有公告与泄露活动将通过 onion 基础设施进行；任何声称代表我们的其他地方都是冒充"。
 - **未来复用风险**：ShinyHunters 警告该域名未来可能被未知方回收并用于恶意用途，提醒不要信任该域名。
 
-## 深度分析
-
 ### 攻击时间线与因果链条
 
 ShinyHunters 的活动在 2026 年上半年显著升级：
@@ -77,7 +75,7 @@ ShinyHunters 决定"完全放弃 clearnet 运营，仅依赖 onion 平台"具有
 - [Claude Code 源码机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/两万字详解claude-code源码核心机制.md) — AI 工具架构
 - [Karpathy Vibe Coding 访谈](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md) — Agentic Engineering 范式
 - [Harness Engineering 概念](https://github.com/QianJinGuo/wiki-public/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md)
-- [Karpathy Vibe Coding 完整版](../ch04/276-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding 完整版](../ch04/009-karpathy-vibe-coding-agentic-engineering.html)
 - [Agent 记忆系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
 - [Scale Robot RL with NVIDIA Isaac Lab](https://github.com/QianJinGuo/wiki-public/blob/main/entities/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md)
 - [LLMReaper Browser Extension Attack](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llmreaper-dom-based-ai-conversation-exfiltration-via-browser-5ee512.md) — 浏览器扩展攻击向量

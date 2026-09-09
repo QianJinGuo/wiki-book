@@ -10,7 +10,6 @@
 - [anthropic acquires stainless](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-acquires-stainless.md)
 → [原文存档](https://shubs.io/the-down-fall-of-bug-bounties)
 
-## 深度分析
 ### AI slop 涌入：从信号噪声比恶化到平台信任危机
 AI 模型的大规模普及正在从根本上瓦解 bug bounty 生态系统的信号质量。与 CTF 场景类似，AI 工具让任何拥有强大模型访问权限的人都能生成看似可信的安全报告，但这与真正的安全研究能力之间存在巨大鸿沟。
 核心矛盾在于：优秀的安全研究员借助 AI 提升了产出效率，而缺乏基础的报告者则借助 AI 大规模生产无人审查的低质量报告。这种两极分化导致 triage 队列被 AI slop 淹没，平台不得不消耗不成比例的人力资源去甄别无效报告。

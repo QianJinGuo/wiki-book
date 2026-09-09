@@ -45,8 +45,6 @@ MLOps 是 AI 系统从"Demo"到"产品"的分水岭。
 - **CIO 评价指标正在迁移**：IDC 数据显示一年内 revenue generation 从第六跃升至 CIO 成功指标第三位，CIO 开始按业务成果而非运营绩效被衡量
 - **前沿议题进入清单**：量子计算出现在银行、生命科学、物流等行业的 CEO 议程；优化与现代化被要求为新兴技术腾挪资金
 
-## 深度分析
-
 ### 从"AI 实验"到"AI 交付"：CEO 耐心耗尽的一年
 自 2022 年 11 月 ChatGPT 进入企业视野以来，AI 一直是高层目标；2026 年的新变化在于"交付有形 ROI"成为硬性要求，而非口头愿景。TCS 的 Viswanathan 观察到 CEO 的挫败感源于"在 AI 上的花费远远大于回报，虽然有些生产力收益，但相当碎片化"。IDC 的 C-Suite Tech Survey 显示全球超过半数 CIO/CTO 已将 AI 与自动化列为首要业务目标，CEO 施压 IT 用 AI 驱动收入增长而不只是提升效率。这一转向的战略含义是：CIO 的衡量语言必须从技术指标切换到业务成果，否则无法在 CEO 的 ROI 框架内证明自身价值。
 
@@ -126,8 +124,6 @@ Vijay Viswanathan 等人的研究论文，揭示了奖励模型（Reward Model�
 - 受控 RL 环境：离散化奖励 → 更少的 reward hacking
 - 自然 RL 环境：离散化奖励 → 更好的策略质量
 - 与原始连续奖励训练相比，离散化方案一致更优
-
-## 深度分析
 
 ### 为什么过敏感性是一个被忽视的问题
 
@@ -494,8 +490,6 @@ ChatAgent 时代：核心评测员对齐 → 外包对齐 → 机评对齐。长
 
 **评测结果反向驱动分发**：榜单（推荐/飙升/下载/最新四榜，长期霸榜 Skill 在推荐/飙升榜适度降权给新供给腾空间）+ 受控分层标签（12 个一级分类 + 1-3 二级类目 + 行业类目 + 系统标签，克制不任意扩张——对照竞品让 AI 自动打标的做法反而增加理解成本）+ **find skill**（面向 Agent 的中文 Skill 发现策略：意图抽取 → 同义词/上位词 2-4 组扩展 → 多接口召回按 slug 去重 → 契合度重排 → 只留 3-5 个结果并说明理由；无推广 3 天飙升榜第一、一周 8000+ 安装）。这构成「评测建立证据 → 榜单标签组织供给 → 搜索推荐分配注意力 → find skill 开放给 AI → 真实调用结果回流评测排序」的信任与分发闭环，是对本文「平台沉淀/回放/告警/归因」能力的完整产品化。
 
-## 深度分析
-
 ### 与学术/产品视角评测体系的关系
 
 本文与已有评测实体构成互补：IBM+Yale 综述（agent-evaluation-survey-ibm-yale-2026）是学术侧"三条新范式"框架，本文是工业侧"如何搭评测体系"的方法论（对齐机制 + 数据飞轮 + 桥梁指标），两者在"长程评测范式变化"上有共识但切入角度不同——学术综述回答"评测哪些范式在变"，本文回答"评测团队怎么建体系、怎么对齐标准、怎么规模化"。Langfuse 实体侧重可规模化性与成本取舍的产品视角，本文侧重评测体系本身的工程组织。
@@ -611,7 +605,6 @@ ExtendedTelemetryHandler 继承自 OTel 上游的 TelemetryHandler，并在此�
 GenAI Utils 为 LoongSuite GenAI SemConv 覆盖的每种 GenAI 操作提供了对应的 Invocation 数据类和 Context Manager 方法，形成了统一的"填数据 + 交给 Handler"编程模型 。开发者不需要手动创建 Span、设置 SpanKind、挂载 `gen_ai.agent.name` 属性、记录 Duration Metrics——这些全部由 ExtendedTelemetryHandler 在 Context Manager 的 `__enter__` 和 `__exit__` 中自动完成 。若调用过程中抛出异常，Handler 自动捕获并在 Span 上设置 `error.type` 属性和错误状态 。
 基于 GenAI Utils，LoongSuite Python Agent 已实现对国内外主流 GenAI 生态框架和模型服务的插桩覆盖，所有插桩库核心遥测逻辑复用 GenAI Utils 实现，当 LoongSuite GenAI SemConv 新增语义或调整规范时，只需升级 `opentelemetry-util-genai` 包，所有下游插桩库即可统一生效 。
 
-## 深度分析
 ### SemConv 的厂商增强路径
 LoongSuite GenAI SemConv 的演进路径体现了大型云厂商参与开源社区标准的务实策略 ：先在内部场景验证（2025 年），再开源发布厂商增强标准（2026 年），最后择机贡献至 OTel 上游 。这一路径的好处在于：内部场景足够丰富时可以快速迭代验证规范的实用性，同时避免在社区标准尚未成熟时过早引入碎片化 。
 
@@ -753,8 +746,6 @@ LLM 优势集中在：**社会感知、情绪运用、自我一致性、适应�
 
 这暴露了模型的"礼貌偏好"——能识别正确答案的"对"，但无法识别"过了"。"总分高"掩盖了这种边界敏感性。
 
-## 深度分析
-
 ### 排序题作为诊断信号的设计哲学
 
 NICE 的排序题本质上是在测试"边界敏感性"——模型能否识别"什么行为不该做"，而不仅"什么行为最该做"。这与 RLHF 的偏好对齐训练目标高度同构，但又有重要差异：
@@ -838,7 +829,7 @@ NICE 真正的差异化定位是**「理论 + 内涵级 + 排序题」三位一�
 - [AI 评估的三种方法](https://github.com/QianJinGuo/wiki-public/blob/main/entities/evals-three-methods-of-ai-evaluation.md)
 - [Agent Skill 写作评估](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing-evaluation.md)
 - [AI 工作面试与模型评估](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-job-interview-model-evaluation-mollick.md)
-- [Inngest 2026 AI 评测报告](ch01/322-inngest-ai-in-production-the-2026-benchmark-report.html)
+- [Inngest 2026 AI 评测报告](ch01/321-inngest-ai-in-production-the-2026-benchmark-report.html)
 - [Agent Harness 生产设计指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture-design-production-guide.md)
 - [Agent 工程原则](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-engineering-principles-architecture-practice.md)
 - [SkillClaw Hyman 阿里 Skill 框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skillclaw-hyman-nightly-evolution-alibaba.md)
@@ -1159,7 +1150,6 @@ SageMaker 训练 (PyTorch/TensorFlow)
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/sagemaker-qualcomm-ai-hub-edge-npu)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/mlops-training-inference.md)
-## 深度分析
 
 ### 云端训练与端侧编译的架构契合点
 
@@ -1596,7 +1586,6 @@ S/A 级目标 ≥ 85%。
 - Stddev < 0.05 的稳定性标准
 这些经验值基于「业务容错度、用户预期、历史数据」三因素制定，可根据实际业务调整。
 
-## 深度分析
 ### 1. 指标体系的层次化设计哲学
 AI Skill 测评指标体系的 9 层结构（触发→输出→规则→对话→容错→效率→设计→覆盖→维护）体现了**从外到内、从用户到工程**的分层验证思路。这一设计的核心哲学是：**不同阶段发现的问题，修复成本差异巨大**。
 越外层的指标（触发率、通过率）对应用户可直接感知的问题，修复成本相对低；越内层的指标（稳定性、覆盖率）涉及 Skill 架构层面的问题，修复成本极高。因此分层测试模式（quick/standard/full）允许团队在资源约束下优先保障外层质量。
@@ -2166,8 +2155,6 @@ iteration-1（初始测评）
 **需全量重跑的情况**：Skill 大范围重构 / 修复一条规则但担心引入回归 / 底层模型版本升级
 
 **只跑受影响的用例**：只修复了 1-2 条具体规则 / 修复的是边界情况不影响主流程
-
-## 深度分析
 
 ### 测评报告的决策逻辑本质
 

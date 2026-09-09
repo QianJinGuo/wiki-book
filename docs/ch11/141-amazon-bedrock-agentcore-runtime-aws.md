@@ -8,7 +8,6 @@
 ## 核心技术
 Amazon Bedrock AgentCore、Strands Agent SDK、OpenClaw、MCP Server
 
-## 深度分析
 ### 运行时架构：Lambda-like microVM 模型
 AgentCore Runtime 采用类 AWS Lambda 的 microVM 架构来托管 AI Agent。当客户端请求到达时，运行时动态配置轻量级 microVM，加载预建的 Docker 镜像，调用请求处理程序。microVM 在整个会话期间（用户与 Agent 之间的完整对话）保持活跃，允许高效执行和更快的后续调用。会话结束后资源自动释放。这种模型实现了：
 

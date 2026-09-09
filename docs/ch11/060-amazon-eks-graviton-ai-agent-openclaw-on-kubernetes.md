@@ -8,7 +8,6 @@
 ## 核心技术
 OpenClaw、Amazon Bedrock、Agentic AI、MCP、Amazon EKS、Kubernetes
 
-## 深度分析
 ### 1. Kubernetes Operator 模式实现声明式多租户生命周期管理
 本文的核心设计亮点在于使用 Kubernetes Operator 模式将每个用户的 AI Agent 抽象为 OpenClawInstance CRD（Custom Resource Definition）。Operator 持续监听 CRD 变化，自动 Reconcile 出 StatefulSet、Service、PVC、ConfigMap、Secret、NetworkPolicy 等 9+ 种 Kubernetes 资源 。这种声明式管理的优势在于：运维人员只需声明期望状态，Operator 自动处理中间的状态转换和错误恢复，极大降低了多租户环境下的运维复杂度。相比手动编写 YAML 或使用 Helm chart，CRD 模式天然支持 Self-Healing 和最终一致性，对于大规模部署（100+ 用户）尤为重要。
 
@@ -44,7 +43,7 @@ OpenClaw、Amazon Bedrock、Agentic AI、MCP、Amazon EKS、Kubernetes
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/build-multi-tenant-ai-agent-on-eks-graviton-openclaw-k8s-practice/)
 
 ## 相关实体
-- [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](../ch04/358-openclaw-multi-agent-team-practice-v2.html)
+- [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](../ch04/356-openclaw-multi-agent-team-practice-v2.html)
 - [OpenClaw 多智能体团队搭建实战经验](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-multi-agent-team-practice.md)
 - [Multi-Agent 架构在零售供应链运营中的实践：贯穿数据、洞察与行动 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/multi-agent-architecture-retail-practice.md)
 - [使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/using-kiro-cli-agent-client-protocol-build-ai-chat.md)

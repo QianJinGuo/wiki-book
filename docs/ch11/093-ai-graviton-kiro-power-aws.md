@@ -11,7 +11,6 @@ Kiro CLI、Kiro IDE、Kiro MCP Skills、Amazon Bedrock、AWS Graviton、ARM64
 ## 来源
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/ai-graviton-migration-kiro-power-guide/)
 
-## 深度分析
 ### 1. Graviton 迁移的经济学逻辑：从成本优化到战略选择
 AWS Graviton5（m9g 实例）相比 Graviton3 在视频编码（x264/x265）、数据库查询、流处理等场景实现约 55% 性能提升，同时视频转码场景下处理 100 万帧成本下降 25%。 这一数据揭示了 Graviton 迁移的本质不是简单的 CPU 换代，而是涉及能效比、性价比的整体计算经济重塑。对于日均处理数百万帧视频的流媒体平台或运行数十亿次查询的数据服务，25% 的成本节省叠加 55% 性能提升意味着单位算力成本的结构性下降。然而文章指出的"三大痛点"——代码兼容性、依赖库分析、容器适配——构成了迁移的实际摩擦成本，一个 10-50 万行代码的中等规模项目手工迁移需要 8-17 周 ，这解释了为何许多企业虽有迁移意愿却迟迟未动。
 

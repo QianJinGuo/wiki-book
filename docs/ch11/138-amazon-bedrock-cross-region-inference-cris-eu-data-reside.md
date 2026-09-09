@@ -105,8 +105,6 @@ response = bedrock_runtime.converse(
 )
 ```
 
-## 深度分析
-
 ### 1. Geo CRIS 的静态性与 GDPR 动态合规的内在张力
 
 Geographic CRIS 的 region 集合是**预定义的静态集合**，AWS 不会动态添加 region。当欧盟扩展边界（如新成员加入）或 AWS 上线新 EU region 时，AWS 必须发布新 profile ID 才能覆盖。 这意味着**合规状态不是一次评估永久有效**——企业需建立定期审查机制，核对 profile ID 与当时 EU 地理边界的对应关系，而非假设 profile 不变就永远合规。静态 profile + 动态监管环境的组合，要求法务/合规团队将 CRIS profile 纳入常规合规审查清单。

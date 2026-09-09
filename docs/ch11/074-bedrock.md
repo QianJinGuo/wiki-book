@@ -62,7 +62,6 @@
 → [原文存档](https://aws.amazon.com/cn/blogs/china/image-analytics-case-study-practice/)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/vision-multimodal.md)
-## 深度分析
 
 ### 两阶段管道的设计哲学：任务解耦
 

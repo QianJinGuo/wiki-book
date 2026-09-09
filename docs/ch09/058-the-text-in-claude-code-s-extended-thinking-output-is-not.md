@@ -26,8 +26,6 @@ Patrick McCanna investigated Claude Code's session logs and discovered that the 
 - Extended thinking may be a compliance artifact rather than genuine reasoning transparency
 - Important for anyone building on Claude Code's API and expecting traceable reasoning
 
-## 深度分析
-
 ### 加密推理签名 vs 透明推理：Anthropic 的设计取舍
 
 Claude Code 的 extended thinking 输出包含一个 600 字符的 `signature` 字段，但没有实际推理文本。Anthropic 将推理内容加密到签名中，密钥由 Anthropic 持有，用户机器无法解密。API 返回的是推理的 **摘要**（summary），而非原始推理链。这意味着：(1) 用户本地日志中的 thinking block 是不可读的；(2) 获取完整推理输出需要企业级协议；(3) 文档中的描述（"extended thinking returns a summary of Claude's full thinking process"）容易被误读为"返回完整推理"。

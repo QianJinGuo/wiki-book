@@ -61,8 +61,6 @@ We suggest you follow the [security best practices for Amazon S3](<https://docs.
 
 Find IAM policies for these roles, along with a worked example for the [MNIST corpus of handwritten digits,](https://www.kaggle.com/datasets/hojjatk/mnist-dataset) in the repository of [sample code.](https://github.com/aws-samples/sample-end-to-end-encrypted-ml-inference-with-amazon-sagemaker-ai-and-fhe/tree/main)
 
-## 深度分析
-
 ### 1. 数学安全与硬件安全的根本性差异
 FHE 的安全性建立在纯数学基础上，而非依赖硬件隔离。与 AWS Nitro Enclaves 等机密计算环境不同，FHE 下查询在整个推理过程中始终保持密文状态——即使 SageMaker AI 本身也无法访问明文数据。这意味着防御边界不涉及 CPU 或内存隔离，而是密码学本身。两者可互补使用，形成分层防护体系。
 

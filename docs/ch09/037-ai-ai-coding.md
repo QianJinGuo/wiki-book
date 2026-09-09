@@ -17,8 +17,6 @@
 - **诚实度量**：落地率（skill 启动 6h 内是否 commit）、绕过率（改了锚定路径但没启动 skill）、GAP（Edit/Write 是否落到 commit）——"模型输出 ≠ 实际落地，团队真正受益的代码量要从 commit 反推"；绕过率 8 条集中在 findDiscount/node/ 系列，GAP 显示 10 文件 agent 改过但 0 落 commit
 - **上游边界**：上游给"乐高零件"（模型/tool use/prompt cache/Skill/Hook 原语/IDE 集成，不维护）；团队组装"乐高城堡"（业务范式/Skill 内容/Hook 业务规则/观测分析/组织约定，必须自维护）——模型升级时范式+skill 是顺风车
 
-## 深度分析
-
 ### 1. Reducer/Event 写收敛：状态管理的可迁移范式
 
 老代码的问题不是"写得不好"，而是把三件本应分开的事糅在一起：前置条件校验、字段变更、并发冲突处理。业务侧每次写新组件都要重复实现 query→mutate→CAS→retry 模板且写法略有不同，并发冲突复杂时（多组件并发改同一行）CAS 失败 retry 策略易踩坑。

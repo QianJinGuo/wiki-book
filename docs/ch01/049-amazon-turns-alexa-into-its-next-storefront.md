@@ -14,7 +14,6 @@
 
 → [原文存档](https://www.pymnts.com/news/retail/2026/amazon-bets-on-voice-as-agentic-commerces-winning-ai-interface/)
 
-## 深度分析
 ### 从搜索框到语音：零售 AI 的范式转移
 过去几年，零售业对 AI 的想象集中在"让搜索更智能"——更好的推荐算法、更精准的个性化排序。但 Amazon 正在主动跳过这个阶段，直接押注语音作为下一代购物的操作系统。
 这一转变的核心不是界面形式的改变，而是用户行为模式的根本性重构：

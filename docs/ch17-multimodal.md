@@ -177,7 +177,7 @@ TimeLens2-4B 平均超过 Qwen3.5-397B-A17B 约 7.5 个 mIoU 点，在全部七�
 ## 对 LLM 安全工程的意义
 
 - **Guardrail 部署成本下降**：policy-adaptive 意味着一个模型服务所有部署场景，不再为每个产品/受众维护专用审核模型——与 [Bedrock Guardrails](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-guardrails-code-generation-six-patterns.md) 类平台方案形成互补（平台 vs open-weights 两种路线）
-- **审核即推理任务**：把 content moderation 从分类任务重构为 QA 任务，与 [Nova 2 prompting 审核](ch01/486-prompting-amazon-nova-2-for-content-moderation.html) 思路同源
+- **审核即推理任务**：把 content moderation 从分类任务重构为 QA 任务，与 [Nova 2 prompting 审核](ch01/485-prompting-amazon-nova-2-for-content-moderation.html) 思路同源
 - **多模态统一**：文本+图像一个接口、一个模型，规避多模态安全审核需多模型拼装的工程负担
 
 ## 相关主题
@@ -210,7 +210,6 @@ Textract负责基础OCR（文本提取），Claude负责语义理解（判断提
 - → OS-level Actions：未来Agent可替代人工完成整个ID验证流程
 - → LLM-as-Judge：Claude做ID判断本质上是做judge
 
-## 深度分析
 ### OCR+LLM混合架构的内在逻辑
 SunFinance案例验证了一个核心原则：专业化工具做擅长的事，LLM做理解判断。Amazon Textract负责可靠的字符级OCR提取，Claude负责语义层面的结构化理解。两者组合的关键在于——OCR做好结构化提取，LLM做最终判断——这比让LLM直接处理图像更有效，因为LLM的PII保护机制会阻碍直接从身份证件提取敏感信息 。
 
@@ -417,7 +416,6 @@ CVPR 2026 Highlight | 清华打破多模态音频生成的「通才困境」：O
 - [特斯拉百万年薪招数据标注员，朝九晚五，无需AI经验](https://github.com/QianJinGuo/wiki-public/blob/main/entities/特斯拉百万年薪招数据标注员朝九晚五无需ai经验.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/vision-multimodal.md)
-## 深度分析
 ### 「通才困境」的本质：多模态动态协同与博弈
 Omni2Sound 论文指出了一个被广泛低估的核心挑战：统一音频生成模型面临的核心问题，不是视觉与文本特征的简单线性叠加，而是**极具挑战的多模态动态协同与博弈过程**。
 这带来两个根本性难题：
@@ -827,8 +825,6 @@ ICRDrag（In-Context Region-based Drag）是上海交通大学牛力实验室提
 
 基于百万级视频数据集 OpenVid，打造了首个大规模区域拖拽数据集 PRD（Paired Region Dataset），含 28.7 万组训练配对样本。评测基准 PRDBench 含 1000 组人工校验高质量样本，可公平对比点拖拽、区域拖拽两类模型。
 
-## 深度分析
-
 ### 从单点拖拽到区域拖拽：图像编辑控制的范式转变
 
 传统拖拽图像编辑方法（如 DragGAN、DragDiffusion）基于单点控制——用户选择少量关键点对，模型通过优化过程将点推到目标位置。但点对信息高度模糊，AI 经常猜不透用户意图：物体拖拽后边缘断层、背景融合生硬、细节丢失是常见问题。ICRDrag 将控制单元从「稀疏点」升级为「稠密掩码」，从根本上解决了信息模糊性问题。
@@ -913,7 +909,6 @@ Perceptron Mk1 is a video analysis reasoning model priced at $0.15/$1.50 per mil
 - [Google's Gemini Omni video model surfaces ahead of I/O debut](https://github.com/QianJinGuo/wiki-public/blob/main/entities/googles-gemini-omni-video-model-surfaces-ahead-of-i-o-debut.md)
 - [Anthropic Computer Use 最佳实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-computer-use-best-practices.md)
 
-## 深度分析
 ### 「效率前沿」：新的竞争维度
 Perceptron 的核心市场定位是「Efficiency Frontier」——一个以「视频/embodied reasoning 平均分数」为 Y 轴、「每百万 token 混合成本」为 X 轴的象限图。
 这一定位揭示了一个关键趋势：**AI 模型的竞争正在从「单纯性能」向「性价比」迁移**。Frontier 模型（如 GPT-5、Gemini 3.1 Pro）在原始性能上仍然领先，但 Mk1 的策略是在「足够好」的推理质量上大幅压低价格。
@@ -1139,8 +1134,6 @@ VOID 解决物体移除中的物理连续性问题：
 | 素材保真度 | 可能改变非目标元素 | 严格保持非目标元素不变 |
 | 应用场景 | 通用视频编辑 | 专业后期制作（预告片、宣传素材） |
 
-## 深度分析
-
 ### 分层扩散（Layered Diffusion）是视频编辑的范式转移
 
 现有视频编辑模型的核心问题是"编辑一个元素就要重新生成整个视频"。Vera 的解决方案是将编辑操作分解为三个独立层：edit layer（创意编辑）、alpha matte layer（编辑区域掩码）、composite layer（原始素材）。通过 Mixture-of-Transformers（MoT）架构，三个 DiT 分支各自维护独立的 QKV 投影和 FFN 权重，但通过 joint self-attention 实现跨层交互。这种"只生成需要改变的部分"的范式，从根本上解决了 unintended edits 问题——原始素材的像素在编辑区域外保持完美不变。
@@ -1205,8 +1198,6 @@ MolmoMotion 是 Allen AI 推出的运动预测模型，核心能力是**给定�
 - **双变体架构**：自回归版（MolmoMotion-AR）逐步预测坐标，流匹配版（MolmoMotion-FM）在连续 3D 空间中变换噪声为轨迹
 - **大规模数据集**：MolmoMotion-1M 包含 116 万视频、736 种运动类型、5600 种不同物体的 3D 点轨迹
 - **下游应用验证**：机器人抓取任务成功率从 56.0% 提升至 76.3%；视频生成中在所有 5 项运动质量指标上超越基线
-
-## 深度分析
 
 ### 运动表示：为什么选择 3D 点集
 
@@ -1340,8 +1331,6 @@ FLAT 的独特优势在于同时实现了：
 
 这打破了之前"几何精度 vs 渲染速度"的权衡。
 
-## 深度分析
-
 ### 技术路线的意义
 
 FLAT 代表了 3D 场景生成领域的一个重要方向转变：
@@ -1416,8 +1405,6 @@ FLAT 并非完全取代 3DGS，而是解决其特定弱点：
 - 多模态嵌入允许零样本（zero-shot）查询新类型问题
 - 端到端 Pipeline 从影像采集到可搜索索引的自动化
 - 可扩展到 TB 级数据量的实际生产架构
-
-## 深度分析
 
 ### 多视图融合是航空影像搜索的核心瓶颈
 
@@ -1502,8 +1489,6 @@ Moebius 的第二大创新是自适应多粒度蒸馏策略（Adaptive Multi-Gra
 
 教师模型为同团队此前提出的 PixelHacker，通过映射架构-蒸馏协同前沿（synergy frontier），确保 0.22B 的 Moebius 学生模型最大限度吸收教师的语义推理能力，同时避免表示饱和。
 
-## 深度分析
-
 ### 任务特化 vs. 通用扩展的范式之争
 
 Moebius 的成功揭示了一个深层问题：在图像修复这一明确定义的任务上，盲目扩大通用模型是否是最优策略？答案是否定的。Moebius 证明了以下逻辑链：
@@ -1535,7 +1520,7 @@ Moebius 的工作与当前模型压缩领域的多个方向形成呼应：
 - **结构化剪枝**：LλMI 的设计思路类似对注意力机制的结构性重构
 - **稀疏化**：Moebius 证明了极端参数压缩（<2%）在任务特化场景下完全可行
 
-这与 [模型规模推演](ch01/496-model-size-scaling-in-2023-2031.html) 中关于 sparsity 作为参数放大器的讨论形成有趣对比——Moebius 走的是另一条路：不是增加总参数并稀疏化，而是直接在架构层面大幅压缩。
+这与 [模型规模推演](ch01/495-model-size-scaling-in-2023-2031.html) 中关于 sparsity 作为参数放大器的讨论形成有趣对比——Moebius 走的是另一条路：不是增加总参数并稀疏化，而是直接在架构层面大幅压缩。
 
 ## 实践启示
 
@@ -1546,7 +1531,7 @@ Moebius 的工作与当前模型压缩领域的多个方向形成呼应：
 
 ## 相关实体
 
-- [模型规模推演](ch01/496-model-size-scaling-in-2023-2031.html) — 模型大小与硬件约束的系统分析
+- [模型规模推演](ch01/495-model-size-scaling-in-2023-2031.html) — 模型大小与硬件约束的系统分析
 - [知识代理超越前沿模型](https://github.com/QianJinGuo/wiki-public/blob/main/entities/knowledge-agents-beat-frontier-models.md) — 小模型+领域知识超越大模型的另一范式
 - 蒸馏、剪枝、量化等模型压缩技术是 Moebius 的理论背景
 
@@ -1609,7 +1594,7 @@ Response Stage 和 Update Stage 的解耦设计值得借鉴：交互时专注生
 真正的个性化 = 持续演化的理解过程，而非静态标签。
 
 ## 相关页面
-- [ChatGPT Memory](ch01/467-chatgpt-memory.html) — OpenAI 的记忆实现对比
+- [ChatGPT Memory](ch01/466-chatgpt-memory.html) — OpenAI 的记忆实现对比
 - [原文存档](https://mp.weixin.qq.com/s/IUxhHJdXj4JoqLKgS18ubA)
 
 ## 相关实体
@@ -1814,8 +1799,6 @@ Response Stage 和 Update Stage 的解耦设计值得借鉴：交互时专注生
 | MiDashengLM 吞吐 | 同等显存下 **20x** | |
 | 轻量版本 | **0.6B** | CPU + WebAssembly |
 
-## 深度分析
-
 ### 1. "方向差异" vs "程度差异" 是预研决策的关键
 
 大多数团队倾向于在已有路径上做增量优化（"再加点数据" / "再调调超参"），因为**风险更小、可解释性更高**。 ^["[Xiaomi Dasheng：8卡起步的 AI 工程实践](https://mp.weixin.qq.com/s/uz2P_xLrj9eMMb7ulsxn_w)"]
@@ -1947,7 +1930,6 @@ NTM 的架构由两个关键组件构成：
 | NTM (本文) | ✅ | ✅ | ✅ |
 NTM 是首个同时满足这三个目标的统一框架。
 
-## 深度分析
 ### 对扩散模型范式的根本性贡献
 NTM 的重要性不仅在于性能提升，更在于它揭示了扩散模型少步采样失效的根本原因：现有的少步方法隐式地假设去噪过程可以被压缩，但这个假设与扩散模型的概率基础冲突。NTM 通过引入归一化流的表达能力，解决了这个根本矛盾。
 具体来说，标准扩散模型的反向过程被建模为：$p_\theta(x_{t-1}|x_t) = \mathcal{N}(\mu_\theta(x_t), \sigma_\theta(x_t))$。当步数很少时，这个高斯假设过于简化，无法捕捉数据分布的复杂结构。NTM 将每步反转替换为可逆变换 $f_\theta(x_{t-1}|x_t)$，保留了分布的表达能力。
@@ -2043,7 +2025,6 @@ NTM 的重要性不仅在于性能提升，更在于它揭示了扩散模型少�
 > **豆包不写 prompt 直接跑，效果只比剪辑软件好一点。prompt 上下文是必须做的功课，少了这一步全模态能力发挥不出来。**
 带上下文的 prompt token 更多，但模型不用瞎猜了，completion token 反而更少，总成本下降。
 
-## 深度分析
 ### 上下文音频识别的本质：降低熵而非提升模型能力
 豆包 Seed 2.0 Lite 的音频理解突破，本质不是模型「更聪明」，而是**人为降低了音频信号的熵**。普通 ASR 在同音术语上是均匀分布的猜測概率，而给模型提供上下文后，概率分布被压缩到正确选项附近。
 这意味着：对于已知专有名词列表的场景，音频理解效果取决于**上下文覆盖率**，而非模型本身的 ASR 精度。这是第一个把「用户给上下文」机制做成正式功能的商用模型。

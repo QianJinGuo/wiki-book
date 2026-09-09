@@ -72,7 +72,6 @@ if final_response.value:
 | Pydantic 类 | 模型实例 | 固定领域模型、强类型代码库 |
 | dict Schema | 解析后的 JSON | 动态 Schema、配置驱动 |
 
-## 深度分析
 ### 结构化输出是 Agent 进入业务系统的门槛
 Agent Framework 的 structured output 本质上是把 LLM 的自由文本输出**契约化**——让 Agent 的输出可直接进入业务系统（数据库写入、API 响应、流程触发），而不需要人工解析层。这是从"对话助手"到"自动化执行器"的关键一步 。
 

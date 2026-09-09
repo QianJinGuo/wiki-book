@@ -65,7 +65,5 @@ _De
 
 → [原文存档](https://novee.security/blog/pretalx-stored-xss-vulnerability-account-takeover/)
 
-## 相关主题
-
 ---
 

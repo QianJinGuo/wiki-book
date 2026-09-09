@@ -117,7 +117,6 @@ team-knowledge.git
 | 内容矛盾 | 写入 contributions/conflicts/，通知 maintainer 裁决 |
 | 成熟度冲突 | 保留较低成熟度 + 标记 contradiction |
 
-## 深度分析
 ### 要点 1：知识沉淀是 Harness Engineering 的隐藏主线
 原文描述了三支柱框架（上下文工程、架构约束、持续治理），但真正贯穿全文的核心洞察是：**知识管理本身就是 Harness Engineering 的核心能力，而非附属品**。这与 OpenAI/Anthropic 强调"记忆系统"的思路一脉相承，但本文更进一步——他们将知识从隐式能力显式化为五层存储架构，使知识管理成为可工程化的系统。
 

@@ -210,8 +210,6 @@ VILA 实验室（Mohamed bin Zayed AI University）发布论文（arxiv: 2604.14
 | **进化** | 手动维护 CLAUDE.md | **Dream（7d）+ Distill（30d）自动整理 + 模式沉淀** |
 | **完成验证** | 主 Agent 自评 + 系统条件 | **独立 verifier Agent 审查** |
 
-## 深度分析
-
 ### 1. "工程不是 AI" 的极端化体现
 
 VILA 的 1.6% / 98.4% 数据说明 Claude Code 真正的复杂度在**基础设施层**，而非 AI 决策层。MiMo Code 的 3 主线设计（Max Mode / Cycle / Dream-Distill）则是**对长程 Agent 难题的工程化拆解**： ^["[InfoQ: 5人2周肝出5.1k星！小米 MiMo Code开源](https://mp.weixin.qq.com/s/oBMmN6V15IozqNkcO6S20g)"]

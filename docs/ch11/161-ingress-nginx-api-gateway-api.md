@@ -31,8 +31,6 @@ Gateway API 是 K8s 官方推出的下一代 Ingress 标准，通过 **GatewayCl
   - **Gateway API Inference Extension (GIE)**：推理场景智能路由（感知请求队列深度/KV Cache 命中率）
 - **阿里云网关实战优势**：双模并行 + 注解兼容迁移 + 控制台可视化 + Higress 开源生态
 
-## 深度分析
-
 ### 角色分层是 Gateway API 相对 Ingress 的根本优势
 
 Ingress 把"我用什么网关、网关监听什么端口、应用如何被路由"全部塞到一个 `Ingress` 资源。这导致三个真实场景痛点：

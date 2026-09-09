@@ -28,8 +28,6 @@ AI 代理改变了这一模式。即使遵循了最佳实践——从 plan mode 
 
 文章中一个关键洞察是：作者经常在第一次 AI 会话后拒绝所有变更并重新开始。第二次会话的关键差异不在于 LLM 模型的改进，而在于**开发者本身对问题的理解加深了**。第一次会话是探索性的，帮助开发者建立上下文；第二次会话中，开发者能更好地引导 AI 代理，而不是被 AI 代理引导。
 
-## 深度分析
-
 ### 从 Harness Engineering 视角看代码审查
 
 这篇文章本质上是在讨论 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-7-layers-framework.md) 中的一个关键控制点：**人类审查回路**。在 Agent 系统中，harness 的作用是在 Agent 的自主性与系统可靠性之间建立边界。代码审查正是这个边界的具体体现——它是 Agent 输出进入生产系统的最后一道关卡。

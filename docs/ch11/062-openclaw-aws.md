@@ -91,7 +91,7 @@ memory-agentcore 的核心架构决策是**不占用 OpenClaw 独占 Slot**，�
 ## 相关实体
 - [企业级OpenClaw安全部署架构指南 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/enterprise-openclaw-security-deploy-architecture-guide.md)
 - [CI&amp;T基于 Amazon Bedrock AgentCore 与 OpenClaw 的企业级智能运维最佳实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ci-t-based-on-amazon-bedrock-agentcore-openclaw-enterprise-intelligent-operations-best-practices.md)
-- [Agentic Design System - From Chatbot to Orchestration](../ch01/007-agentic-design-system-from-chatbot-to-orchestration.html)
+- [Agentic Design System - From Chatbot to Orchestration](../ch01/006-agentic-design-system-from-chatbot-to-orchestration.html)
 - [快时尚电商行业智能体设计思路与应用实践（八）基于 WebSocket 的语音系统：Nova 2 Sonic, AgentCore, Strands Agents 企业级架构实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fast-fashion-ecommerce-agent-design-8-websocket-voice-system.md)
 - [把 OpenClaw 从个人助手变成客服：一次信任模型的翻转 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-from-personal-assistant-to-customer-service-a-trust-model-flip.md)
 - [深度拆解 Hermes Agent 记忆系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-memory-system-openclaw-comparison.md)

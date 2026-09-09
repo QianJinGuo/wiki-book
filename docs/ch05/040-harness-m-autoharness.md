@@ -1,6 +1,6 @@
 # Harness进化论文 — M⋆记忆程序进化与AutoHarness动作约束
 
-> 📊 Level ⭐⭐⭐ | 7.4KB | `entities/harness-evolution-papers.md`
+> 📊 Level ⭐⭐⭐ | 7.3KB | `entities/harness-evolution-papers.md`
 
 ## Harness进化论文
 > 微软M⋆（记忆Harness程序进化）和谷歌AutoHarness（代码Harness自动生成）两篇论文分析。
@@ -31,13 +31,6 @@
 | 方法 | Python程序进化 | Thompson采样树搜索 |
 | 核心发现 | 记忆结构任务特异性 | 小模型+Harness>大模型 |
 
-## 与本文相关
--  — Self-Evolution机制对照
--  — 模型自我进化实践对照
--  — OpenClaw的Harness设计
--  — 详细论文内容（raw）
-
-## 深度分析
 ### 记忆Harness的任务特异性：为何跨任务迁移失败
 M⋆的核心发现在于其t-SNE可视化揭示的**结构收敛现象**：不同任务在进化后并非趋同，而是收敛于截然不同的记忆结构聚类。这与传统的"通用记忆模块"假设直接矛盾。
 LoCoMo（对话）最终采用SQL+ChromaDB的混合设计，ALFWorld（具身智能）却选择了简单列表+LLM摘要的轻量方案。Legal检索任务偏好关系型数据库，而非常见的向量检索。这一现象的根本原因可能在于：**任务的认知复杂度决定了记忆表示的粒度需求**。对话任务需要追踪大量实体关系，检索粒度要求细；具身任务只需"状态-动作-结果"的三元组，用列表即可覆盖。

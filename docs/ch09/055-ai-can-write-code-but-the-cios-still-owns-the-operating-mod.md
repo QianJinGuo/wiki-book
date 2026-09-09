@@ -8,7 +8,7 @@
 
 ## 相关实体
 - [Ai Is Writing More Code Your Ci Pipeline](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-is-writing-more-code-your-ci-pipeline.md)
-- [From System Of Record To System Of Intelligence](../ch01/432-from-system-of-record-to-system-of-intelligence.html)
+- [From System Of Record To System Of Intelligence](../ch01/431-from-system-of-record-to-system-of-intelligence.html)
 - [Every Ai Subscription Is A Ticking Time Bomb For Enterprise](https://github.com/QianJinGuo/wiki-public/blob/main/entities/every-ai-subscription-is-a-ticking-time-bomb-for-enterprise.md)
 - [Www.Cio 4170978 Nearly Every Enterprise Is Investing In Ai But Only 5 Say Their ](https://github.com/QianJinGuo/wiki-public/blob/main/entities/www.cio-4170978-nearly-every-enterprise-is-investing-in-ai-but-only-5-say-their-.md)
 - [要实现一个工作流选择 Agent Skills 还是 Ai 表格](https://github.com/QianJinGuo/wiki-public/blob/main/entities/要实现一个工作流选择-agent-skills-还是-ai-表格.md)

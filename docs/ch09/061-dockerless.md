@@ -14,8 +14,6 @@ Dockerless 是上海交通大学与抖音集团提出的免环境（environment-
 4. **免环境 RL**：Dockerless 分数直接当 GRPO 奖励信号，与 oracle 测试奖励差距仅 0.4-1.3 点
 5. **核心洞察**：前沿模型在裸 Linux 环境（无 per-repo Docker）的解决率仅掉 3-14 个百分点，验证器而非 rollout 环境才是后训练瓶颈
 
-## 深度分析
-
 ### 验证器瓶颈的工程意义
 
 Coding Agent 的后训练（SFT + RL）长期依赖 per-repo Docker 环境来做补丁验证。Dockerless 的核心突破在于证明了「Agent 式代码库探索」可以替代「跑测试」作为验证手段，且精度逼近 oracle。这对工业级 Agent 训练有直接意义：企业内部代码无需搭建测试环境即可进行 SFT 数据筛选和 RL 奖励计算。

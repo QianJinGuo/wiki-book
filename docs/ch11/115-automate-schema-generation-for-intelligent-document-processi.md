@@ -21,7 +21,6 @@ Before you can extract information from documents using intelligent document pro
 ## 相关实体
 - [Build financial document processing with Pulse AI and Amazon Bedrock](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-financial-document-processing-with-pulse-ai-and-amazon-bedrock.md)
 
-## 深度分析
 ### 技术架构的核心创新
 该解决方案的核心在于**自举循环（bootstrap loop）困境**的打破：传统 IDP 流程要求先有 schema 才能提取文档，但建立 schema 又需要先了解文档类型，形成死锁。Multi-Document Discovery 通过三个阶段的管道化设计解开了这个结：
 1. **视觉Embedding生成** — 使用 Cohere Embed v4 将文档页面转为向量，只取首页。视觉embedding相比OCR文本embedding能捕捉布局、格式等结构化线索，对区分文档类型更有效。

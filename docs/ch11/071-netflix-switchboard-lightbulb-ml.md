@@ -48,8 +48,6 @@ Data plane 流程：1) Lightbulb 消费包含 use-case 信息的最小请求上�
 - **Lightbulb 将路由元数据从请求路径移除**：routingKey 进 header（轻量）、ObjectiveConfig 进请求 body（避免序列化开销），实际路由由 Envoy 执行
 - **1M req/s 规模**：Netflix ML serving 平台服务数百模型类型和版本，netting 1M 请求/秒
 
-## 深度分析
-
 ### 1. Switchboard：Netflix 的 LLM 路由层
 Netflix Switchboard 将"选择哪个模型回答这个请求"从人工决策转变为自动化路由——基于请求特征（复杂度、延迟要求、成本预算）动态选择最优模型。
 

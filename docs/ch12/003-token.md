@@ -1,6 +1,6 @@
 # Token 撤销触发设备擦除的安全漏洞
 
-> 📊 Level ⭐ | 10.7KB | `entities/cybersecurityreach-revoke-token-wipe-computer.md`
+> 📊 Level ⭐ | 10.5KB | `entities/cybersecurityreach-revoke-token-wipe-computer.md`
 
 > → [原文存档](https://cybersecurityreach.org/investigations/ifyourevokethistokenitwillwipethecomputeroftheowner-shai-hulud-2026)
 
@@ -13,7 +13,7 @@
 - [Postmortem Tanstack Npm Supply Chain Compromise Tanstack Blog](https://github.com/QianJinGuo/wiki-public/blob/main/entities/postmortem-tanstack-npm-supply-chain-compromise-tanstack-blog.md)
 - [Www Wiz Io Mini Shai Hulud Strikes Again Tanstack More Npm Packages Compromised](https://github.com/QianJinGuo/wiki-public/blob/main/entities/www-wiz-io-mini-shai-hulud-strikes-again-tanstack-more-npm-packages-compromised.md)
 - [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidias-jensen-huang-bets-on-this-british-startup-to-build-next-frontier-of-ai.md)
-- [From Doer To Director The Ai Mindset Shift](../ch01/108-from-doer-to-director-the-ai-mindset-shift.html)
+- [From Doer To Director The Ai Mindset Shift](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-doer-to-director-the-ai-mindset-shift.md)
 
 → [原文存档](https://cybersecurityreach.org/investigations/ifyourevokethistokenitwillwipethecomputeroftheowner-shai-hulud-2026)
 
@@ -46,7 +46,6 @@ GitHub 自身的搜索索引在这个过程中充当了去中心化公告板的�
 
 `gh-token-monitor` 死亡开关每 60 秒向 `https://api.github.com/user` 发起请求，若收到 4xx 响应（即令牌已被撤销）则执行 `eval "rm -rf ~/"` 。Cybersecurity Reach 团队通过逆向分析确认该命令经过自定义 PBKDF2 + Fisher-Yates 置换密码三层解密后，真实内容即为 `rm -rf ~/` 。这意味着：撤销令牌前若未先清除持久化单元，用户整个 home 目录将被完全摧毁 。
 
-## 深度分析
 ### 供应链攻击的范式跃迁
 Shai-Hulud 蠕虫已从"一次性 npm 包投毒"演进为具备自传播能力的去中心化蠕虫 。其最深刻的变革在于：GitHub 本身被同时充当数据外泄通道、点对点心令总线和令牌中继基础设施 。整个攻击基础设施完全寄生于受害者信任的平台，防御方无法通过封禁域名或 IP 来切断通信，只有在出口网关层阻断对 GitHub API 搜索功能的滥用流量 。
 
@@ -80,11 +79,6 @@ Shai-Hulud 蠕虫已从"一次性 npm 包投毒"演进为具备自传播能力�
 此次事件再次说明，npm 生态迫切需要在包发布流程层面引入更严格的变更管理机制 。维护者应启用 npm 令牌硬件化（hardware-backed tokens）、强制实施 OIDC 短期令牌而非持久性令牌，并对 CI/CD 流水线的 `pull_request_target` 使用实施最严格的安全审计 。
 
 → [原文存档](https://cybersecurityreach.org/investigations/ifyourevokethistokenitwillwipethecomputeroftheowner-shai-hulud-2026)
-
-## 相关实体
-
-→ [原文存档](https://back.engineering/blog/09/05/2026/)
-> [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/moc/cybersecurity-privacy.md)
 
 ---
 

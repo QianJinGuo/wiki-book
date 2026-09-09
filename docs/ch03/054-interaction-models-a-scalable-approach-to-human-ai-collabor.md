@@ -19,8 +19,6 @@ Thinking Machines Lab 发布了交互模型（Interaction Models）的研究预�
 - **视觉主动性**：模型可根据视觉变化主动发言（如数数、计时），这是现有商业 API 不具备的能力
 - **FD-bench V1.5 平均分 77.8**（GPT Realtime-2.0 为 46.8），轮次延迟 0.40s（GPT Realtime-2.0 为 1.18s）
 
-## 深度分析
-
 ### 当前 AI 交互的瓶颈：回合制限制
 
 现有商业 AI 模型（GPT Realtime、Gemini Live 等）采用回合制交互：用户说完之前模型等待，模型生成期间感知冻结。这创造了一个"窄通道"——人类的知识、意图和判断无法充分传递给模型，模型的工作也无法被人类实时理解。正如 Thinking Machines 引用的比喻："想象试图通过电子邮件解决一场关键分歧，而不是面对面交流。"
@@ -81,7 +79,7 @@ Thinking Machines 提出了现有基准无法覆盖的新能力维度：
 
 ## 相关实体
 
-- [Thinking Machines 交互模型](../ch04/149-thinking-machines-interaction-models.html)
+- [Thinking Machines 交互模型](../ch04/147-thinking-machines-interaction-models.html)
 - [Interaction Models: A Scalable Approach to Human-AI Collaboration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/interaction-models-human-ai.md)
 
 → [原文存档](https://thinkingmachines.ai/blog/interaction-models/)

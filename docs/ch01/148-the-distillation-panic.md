@@ -10,7 +10,6 @@
 - [Qwen Image Flash Beyond Objective Design](https://github.com/QianJinGuo/wiki-public/blob/main/entities/qwen-image-flash-beyond-objective-design.md)
 - [Interconnects What Ive Been Building Atom Report Post Training Course Finishing My Book And On](https://github.com/QianJinGuo/wiki-public/blob/main/entities/interconnects-what-ive-been-building-atom-report-post-training-course-finishing-my-book-and-on.md)
 - [Interconnects The Inevitable Need For An Open Model Consortium](https://github.com/QianJinGuo/wiki-public/blob/main/entities/interconnects-the-inevitable-need-for-an-open-model-consortium.md)
-## 深度分析
 
 ### 术语污名化的系统性风险
 

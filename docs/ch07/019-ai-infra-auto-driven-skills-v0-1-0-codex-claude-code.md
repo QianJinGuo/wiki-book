@@ -28,8 +28,6 @@ BBuf 在 GiantPandaLLM 发文介绍 AI-Infra-Auto-Driven-SKILLS v0.1.0——将�
 | sglang-prod-incident-triage | 线上 incident 先提取 replay 再 debug |
 | model-pr-optimization-history | 本地知识记录，复用历史 PR 思路 |
 
-## 深度分析
-
 ### 1. 工程纪律转化为可执行工作流
 
 BBuf 设计的 AI-Infra-Auto-Driven-SKILLS 核心洞察是：**推理框架性能优化是一个多阶段链条，而非单次修改**。传统的优化方式往往是从现象直接进入源码修改——工程师看到某个指标不达预期，就直接改 kernel 或改配置，但这种做法忽略了一个根本问题：链条中任何一步缺失，后续结论都不可靠。

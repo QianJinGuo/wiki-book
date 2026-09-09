@@ -19,7 +19,6 @@ Amazon Bedrock AgentCore、Strands Agent SDK、OpenClaw、MCP Server、Strands A
 - [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/building-enterprise-agentic-ai-with-kiro-on-aws.md)
 - [基于Strands Agents SDK和Amazon Bedrock AgentCore构建商品详情图广告词审查Agent | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/product-ad-review-agent-with-strands-sdk-bedrock.md)
 
-## 深度分析
 ### 架构解耦：多层抽象的工程价值
 本方案的核心架构遵循**前后端分离**原则，后端基于 Strands Agents 框架，部署在 AgentCore 中，通过 AgentCore Gateway 将小宿智能搜索 API 转为 MCP 工具，问答过程记录在 AgentCore Memory 中。这一设计将**业务逻辑层**（Strands Agent）、**基础设施层**（AgentCore Runtime/Memory/Gateway）、**数据层**（小宿搜索）三层解耦，每层均可独立演进。Strands Agent 只需关注提示词和工具列表定义，AgentCore 负责安全扩展和运行时管理，Gateway 负责协议转换，这种分工模式显著降低了企业级 AI 系统的维护复杂度。
 

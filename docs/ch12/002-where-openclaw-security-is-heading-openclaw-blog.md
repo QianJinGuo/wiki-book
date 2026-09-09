@@ -11,7 +11,6 @@
 - **SQLite 运行时状态重构**：sessions/transcripts/scheduler state 移入类型化数据库，消除文件系统访问，从根本上缩小攻击面
 → [原文存档](https://openclaw.ai/blog/where-openclaw-security-is-heading)
 
-## 深度分析
 ### 1. 从"验证"到"执行"：安全控制点的重新定位
 传统 Web 安全中，URL 验证发生在请求发出前。但在 Agent 运行时，"fetch this URL because someone asked for it" 本身就是正常产品行为——用户控制或模型影响的 URL 是常态而非异常。这意味着传统验证范式在 Agent 场景下存在根本性失效：DNS 验证时与实际请求时的解析结果可能不同，一个在验证时指向公网 IP 的域名可能在请求时已指向 metadata 端点。
 OpenClaw 的回答是将控制点从"验证"移到"egress"。Proxyline 作为 Node 进程级路由层捕获所有出站流量，强制其经过用户配置的代理——而策略 enforcement 发生在代理层，而非 OpenClaw 代码层。这是"路由即策略执行"（routing as enforcement）的设计思路，与传统防火墙在网络层做策略执行并无本质区别，只是搬到了进程内。这种转变的核心价值在于：策略执行不再依赖调用方记得调用验证逻辑，而是流量必然流经策略执行点。

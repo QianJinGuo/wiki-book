@@ -10,7 +10,6 @@
 ## 文章摘要
 混合云 BGP 故障的另一半证据往往在 on-premises 设备上。本文在真实 Direct Connect 环境上，通过 MCP Server 把 Cisco 路由器的只读命令暴露给 AWS DevOps Agent，用 Private Connection 把调用流量留在 AWS 骨干网，再用 EventBridge Scheduler + Lambda 把调查结论自动回推飞书群——完成"告警 → 自主调查 → 结论回到 Chat"的混合云 ChatOps 闭环。
 
-## 深度分析
 ### MCP 协议在 AI Agent 运维场景的结构性价值
 这篇文章揭示了一个在 AI Agent 落地过程中被普遍忽视的问题：Agent 的能力边界往往被锁定在它能"看见"的数据范围内。当 AWS DevOps Agent 被训练来调用 CloudWatch、CloudTrail、VPC API 时，它的推理能力自然延伸到 AWS 侧链路。但混合云的本质决定了故障的根因可能散落在整个链路上的任意节点——包括 on-premises 设备。MCP 协议在这里的价值不是简单的"工具扩展"，而是一种结构性的能力解锁：它让 Agent 能够用同样的推理逻辑、同样的自主决策流程，去处理来自完全不同技术栈的数据。
 

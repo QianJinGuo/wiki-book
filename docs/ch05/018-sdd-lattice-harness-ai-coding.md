@@ -34,8 +34,6 @@ Individual SDD（Spec-Driven Development）向团队级 Harness 演进的完整�
 ### Loop
 有边界、有裁判、有升级机制的状态机（执行→验证→判定→修复→验证）。Judging 环节必须独立。Learn Draft：失败记录 → promote → knowledge 沉淀。
 
-## 深度分析
-
 ### 1. Spec Coding 的天花板：0→80 之后还有 20 分
 
 本文的核心论点是：Spec-Driven Development 能解决 80% 的路径收敛问题——有了明确的 Spec，AI 不会从"一句话需求"直接跳到"随机代码"。但剩下的 20 分需要一套完整的工程体系来支撑：Context Engineering 确保关键业务规则进入决策过程，独立 Verification 解决"谁来判断做对了"的问题，Drift Check 防止 Spec 和代码逐渐腐化，Evidence 系统提供可审计的交付记录，Loop 机制让失败经验回流成组织知识。这 20 分才是从个人效能到团队级交付的核心跃迁。

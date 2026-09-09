@@ -13,8 +13,6 @@ Anthropic 联合创始人 Jack Clark 今天发了一篇重磅长文，声称： 
 
 → [原文存档](https://mp.weixin.qq.com/s/QldTWr5MFRYLagfBmzpWOQ)
 
-## 深度分析
-
 ### 1. 核心论证的结构与逻辑
 
 Jack Clark 的文章并非单纯的乐观预测，而是一套基于公开 benchmark 数据的系统性论证。他的方法论值得关注：**不依赖单一指标，而是拼凑多个独立测试的马赛克，从不同角度验证同一趋势**。这种做法有其合理性——每个 benchmark 都有缺陷（如 SWE-Bench 最初只有 2% 的基线、ImageNet 约 6% 的标注错误率），但当图表一路向右上方飞升时，噪音被稀释，信号被放大。

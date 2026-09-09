@@ -12,7 +12,6 @@ OpenClaw、Amazon Bedrock、Agentic AI、MCP
 ---
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/enterprise-openclaw-security-deploy-architecture-guide/)
 
-## 深度分析
 ### 1. AI Agent 安全的范式转移：从边界防御到行为约束
 传统安全模型假设威胁来自外部，防御重心在于建立边界——防火墙、VPN、零信任网络。但 OpenClaw 这类 Agentic AI 的出现颠覆了这一前提：威胁可能由**内部部署的智能系统主动触发**，攻击面从网络边界转移到 AI 行为决策本身。
 AI Agent 的核心特征是**自主任务规划**和**动态工具调用**——给定高层目标，Agent 自行分解步骤、调用 Skills、执行 Shell 命令、读写文件系统。这些能力使其成为具有高度自主性的行为主体，传统的"输入→处理→输出"确定性逻辑不再适用。

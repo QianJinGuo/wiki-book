@@ -23,8 +23,6 @@
 - [Nvidia Nemotron 3 Ultra Now Available On Amazon Sagemaker Ju](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-nemotron-3-ultra-now-available-on-amazon-sagemaker-ju.md)
 - [miro-amazon-bedrock-bug-routing](https://github.com/QianJinGuo/wiki-public/blob/main/entities/miro-amazon-bedrock-bug-routing.md)
 
-## 深度分析
-
 ### 1. 架构设计的本质：决策与代理的分离
 
 本文最核心的架构洞察不是"混合推理"，而是**决策与代理的清晰分层**。NVIDIA LLM Router v2 做了一个很有意思的设计选择：只做分类（返回模型名字符串），不实际转发请求。而 dispatch 层负责把 Router 的推荐翻译成实际 backend。这种"重决策 + 轻代理"的分层让 Router 算法可以很重（意图分类、CLIP embedding、神经网络训练），同时保持接入层简单可演进。

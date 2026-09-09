@@ -103,7 +103,6 @@ Skill 不是代码，是「给模型看的说明书」。模型读懂了才能�
 - **阶段六**：生成 HTML 报告，给出发布决策 ← AI 产出，人工决策
 橙色节点 = 需要人工介入的环节。
 
-## 深度分析
 ### 自判卷偏差的深层机制
 自判卷偏差的本质是**评审者与执行者共享同一套推理过程**，导致评审时无法真正独立验证。模型在执行 Skill 时已经生成了「这样做是对的」的内部信念，评审时这套信念会自动影响判断结果，形成确认偏误（confirmation bias）。这在心理学和认知科学中被称为「自我服务偏差」——个体倾向于收集支持自己观点的证据，忽略否定证据。
 在工程层面，这表现为两种具体形态：
@@ -175,7 +174,7 @@ Skill 规则只写「必须约束」的部分，不写「可以推断」的部�
 - [Skill Formal Theory Survey 10Papers](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-formal-theory-survey-10papers.md)
 - [Glm5 Scaling Pain Inference](https://github.com/QianJinGuo/wiki-public/blob/main/entities/glm5-scaling-pain-inference.md)
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/打造可靠的-ai-编程环境claude-code-hooks-完整开发者指南-v2.md)
-- [Gepa Optimize Anything](../ch01/451-gepa-optimize-anything.html)
+- [Gepa Optimize Anything](../ch01/450-gepa-optimize-anything.html)
 
 - [Auto Improving Agent Platform Ashpreetbedi Shensi](https://github.com/QianJinGuo/wiki-public/blob/main/entities/auto-improving-agent-platform-ashpreetbedi-shensi.md)
 - [Hermes Skills Llm Wiki Self Improving Knowledge System](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-skills-llm-wiki-self-improving-knowledge-system.md)

@@ -14,7 +14,6 @@ CloudSecTidbits 是 Doyensec 的云安全研究系列，专门呈现「Web 技�
 - **影响远超登录本身**：ghost identity 可用于强制密码重置以换取非 SSO 认证能力、冒充用户获取直接会话，是身份层的系统性失守而非单个端点 bug。
 - **可复现性**：Doyensec 提供 Terraform IaC lab（`doyensec/cloudsec-tidbits/tree/main/lab-masso`），配合 maSSO 即可完整复现攻击链。
 
-## 深度分析
 ### 1. Masso 漏洞机理：多 SSO 改写了身份信任边界
 多租户多 SSO 不是「多加几个 IdP」，而是系统性改变三个底层事实：哪些 trigger 会触发、应用把什么当作身份主键、有多少攻击者可控字符串被当作结构去解析。Cognito 对 federated user 的内部身份键是 `<ProviderName>_<sub>`（即 trigger 中的 `event.userName` 与 token 中的 `cognito:username`），ProviderName 是池内注册的 IdP 名称，sub 完全由 IdP 控制；且 ProviderName 正则禁止 `_`，sub 不受限，身份字符串中可以出现多个下划线。另一个不对称在 trigger 链条：首次 federated sign-in 与后续登录只在 TokenGeneration trigger 上重合，任何只放在一条链上的认证约束都可能被另一条链完整绕过；federated sign-in 也不会触发 custom auth challenge、migrate user、custom message 等 trigger，「所有登录都走同一套检查」是常见错误假设。
 

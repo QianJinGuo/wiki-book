@@ -107,8 +107,6 @@ AWS Innovation Center 的一致框架：
 - [Lifeblood 排班案例](https://aws.amazon.com/blogs/quantum-computing/australian-red-cross-lifeblood-collaborates-with-aws-to-optimize-rostering/)
 - [AWS Generative AI Innovation Center](https://aws.amazon.com/ai/generative-ai/innovation-center/)
 
-## 深度分析
-
 ### 1. 数学优化：被低估的企业 AI 应用
 数学优化（线性规划、混合整数规划）在企业中的实际价值远超"聊天型 AI"——供应链优化、生产排程、物流路径规划可以直接节省数百万美元。
 

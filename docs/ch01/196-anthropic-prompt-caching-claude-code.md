@@ -89,7 +89,6 @@ Anthropic 还提到，Compaction 功能已经直接内置到了 API 中，开发
 原文链接：https://claude.com/blog/lessons-from-building-claude-code-prompt-caching-is-everything
 Claude Code 文档：https://code.claude.com/docs/en/overview
 
-## 深度分析
 ### 缓存作为架构约束，而非事后优化
 这条博客最核心的洞见是将 Prompt Caching 从"优化手段"提升到"架构约束"层面。在传统的 LLM 应用开发中，缓存通常是功能实现后才考虑的东西——先跑起来，再想着省成本。但 Anthropic 的经验说明，对于 Claude Code 这类长对话 Agent，缓存命中率高不高，直接决定了产品能不能用。
 这背后的根本原因是：**Agent 的成本结构是会话级的**。一个用户可能在单个 session 里进行几十轮交互，每轮都要带上完整上下文。如果缓存命中率低，每次请求都要从头计算，成本和延迟都会线性增长，最终导致产品不可用。

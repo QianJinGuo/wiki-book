@@ -8,7 +8,7 @@
 ## 机制与论文
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md) — 13141字最全科普版
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](https://github.com/QianJinGuo/wiki-public/blob/main/entities/深入理解-claude-code-源码中的-agent-harness-构建之道.md) — 16095字源码8步循环
-- [Claude Code and What Comes Next](255-claude-code-and-what-comes-next.html) — 压缩/Skills/Subagents
+- [Claude Code and What Comes Next](254-claude-code-and-what-comes-next.html) — 压缩/Skills/Subagents
 - [Harness Engineering Deletable Worksite Ruofei](../ch05/039-harness-engineering-deletable-worksite-ruofei.html) — 可删工作现场：Vercel删80%工具成功率反升
 - [从零构建大语言模型 —— 读完这篇你就懂了](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-llm-from-scratch-7-chapters-zion.md) — LLM教程七章
 

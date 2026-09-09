@@ -4,8 +4,6 @@
 
 > 5 分钟部署、90 秒自愈、成本降至 1/8 的生产级多租户 AI Agent 方案，基于 Firecracker microVM 隔离 + Bedrock AgentCore。
 
-## 核心内容
-
 ## 5 分钟拉起、90 秒自愈、成本 1/8——基于 Firecracker microVM 与 Bedrock AgentCore 的生产级多租户 AI Agent 平台 OpenClaw Pool
 
 ## [亚马逊AWS官方博客](https://aws.amazon.com/cn/blogs/china/)
@@ -607,8 +605,6 @@ OpenClaw Pool 展示了 Firecracker microVM 如何在保持无服务器控制面
 ![](https://d2908q01vomqb2.cloudfront.net/472b07b9fcf2c2451e8781e944bf5f77cd8457c8/2026/05/14/2026_Summits_Commercial_Banner_1440x657.png)
 
 ## 参考来源
-
-## 深度分析
 
 ### 1. Firecracker microVM 在多租户隔离范式中的定位
 

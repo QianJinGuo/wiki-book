@@ -16,7 +16,6 @@ EntryPoint Hijacking（入口点劫持）是一种不依赖任何线程创建 AP
 - **有效检测**：组合完整性校验——对比 OriginalBase 与 DllBase、监控 EntryPoint 内存类型从 MEM_IMAGE 变为 MEM_PRIVATE、校验 OriginalBase 是否为堆指针。
 - **行为指标**：Sysmon Event ID 10 中 GrantedAccess 含 0x143A（PROCESS_VM_READ|WRITE|OPERATION）的句柄请求，关联对应进程的出站流量。
 
-## 深度分析
 ### 技术原理：把加载器的正常机制变成武器
 Windows 进程运行时动态加载多个 DLL，加载器（ntdll!Ldrp）维护每份已加载模块的记录（PEB 的 LDR_DATA_TABLE_ENTRY），其中包含 EntryPoint 地址；当进程或线程创建、终止事件发生时，loader 会依据该记录调用对应模块的 _DllMain()。攻击者的关键动作是覆写目标 DLL 的 EntryPoint，把执行流重定向到攻击者控制的代码——恶意代码因此搭上进程"合法创建新线程"的顺风车被执行，而不是由攻击者显式创建线程。
 

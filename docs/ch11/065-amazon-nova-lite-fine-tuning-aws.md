@@ -8,7 +8,6 @@ Amazon Nova Lite Fine-Tuning: 高性价比的视觉检测模型微调案例与�
 ## 核心技术
 Amazon Nova、Nova Lite、Fine-tuning
 
-## 深度分析
 ### 1. 微调策略的有效性验证
 两个案例研究系统性地证明了 Nova Lite 微调策略在专业视觉任务中的有效性：
 **案例一：航拍视角群组检测**

@@ -101,8 +101,6 @@ Anthropic 研究了大量 AI 在长任务中的失败案例，发现 3 个反复
 
 → [原文存档](https://mp.weixin.qq.com/s/C4uZPQi1yWpHBfmWYEb8Dw)
 
-## 深度分析
-
 ### 1. 三家案例揭示的"墙"本质上是风险管理
 
 Stripe、字节、蚂蚁三家做法各异，但核心机制都指向同一个底层逻辑：**把 AI 的不确定性边界做死**。Stripe 的重试上限、DeerFlow 的独立隔离空间、支小助的分工评审，都是在给 AI 的失控风险设置物理边界。这与传统的 [Generator + Evaluator 分离](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 原则一脉相承——让一个模块负责生产，另一个模块负责判断，而不是让同一个 AI 既生产又自评。

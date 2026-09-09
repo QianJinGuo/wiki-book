@@ -11,7 +11,6 @@ Amazon Bedrock AgentCore、Strands Agent SDK、OpenClaw、MCP Server、Cedar 策
 ## 来源
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/amazon-bedrock-agentcore-adds-quality-evaluations-and-policy-controls-for-deploying-trusted-ai-agents/)
 
-## 深度分析
 ### 1. 代理可信部署的核心矛盾：自主性与安全性的平衡
 文章揭示了企业在 AI 代理大规模部署时面临的核心挑战——代理的强大自主权与其安全可控运行之间的根本矛盾 。代理可能不当访问敏感数据、作出未经授权的决策或采取意想不到的行动，这使得开发团队必须在实现代理自主权的同时，确保其在可接受的边界内运作。这一矛盾的本质在于：传统软件的安全模型基于确定性规则，而 AI 代理的行为具有涌现性和不确定性，需要新的治理范式。
 AgentCore 的策略机制将代理视为"自主行为者"，其决策在获得工具、系统或数据之前需要进行验证——这是一种"外部化"的安全控制思路，与代理自身的推理循环解耦 。这种设计理念使安全边界定义与代理实现解耦，从而支持跨模型、跨架构的一致性治理。

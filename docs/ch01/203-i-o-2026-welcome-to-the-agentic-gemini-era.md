@@ -129,8 +129,6 @@ I/O 2026 的核心叙事可以归纳为以下几个技术方向：^[google-io-20
 4. **基础设施超规模投资**：180-190 亿美元年资本支出支撑千万级 TPU 集群
 5. **多模态泛化**：Gemini Omni 从任意输入生成任意模态输出
 
-## 深度分析
-
 ### 从"AI 辅助"到"AI 代理"的结构性转变
 
 I/O 2026 最具标志性的叙事并非某一款单点产品，而是 Sundar Pichai 正式宣告的"**agentic era**"。这一表述的重量级在于：它代表着 Google 对 AI 本质的重新定义——AI 不再是增强人类决策的工具，而是开始**自主执行多步骤、长周期任务**的代理实体。
@@ -192,7 +190,7 @@ SynthID 三年累计标记 1000 亿张图片/视频和约 6 万年音频，新�
 
 → [原文存档](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/)
 
-- [Introducing Gemini Omni](338-introducing-gemini-omni.html)
+- [Introducing Gemini Omni](337-introducing-gemini-omni.html)
 - [Google Pm 2026 Five Developer Skills Shubham](https://github.com/QianJinGuo/wiki-public/blob/main/entities/google-pm-2026-five-developer-skills-shubham.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/vision-multimodal.md)
 

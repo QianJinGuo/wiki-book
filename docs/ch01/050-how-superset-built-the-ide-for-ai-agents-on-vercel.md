@@ -13,7 +13,6 @@ Superset 是由三位前 YC CTO 联合创立的多 Agent 开发 IDE，旨在解�
 - ~30 秒平均构建时间 
 - 57–64% 周环比 DAU 增长 
 
-## 深度分析
 ### 1. 并行基础设施是 Agent 产品成败的关键
 Superset 案例揭示了一个核心矛盾：多 Agent 并行产品对底层基础设施的要求是"无感的并行"——即上层感知到的并行度不能被下层任何一层的瓶颈所侵蚀。
 
@@ -59,9 +58,8 @@ Hacker News "Show HN" 发布期间，用户数一夜间翻了三倍，Superset �
 - **Fluid Compute** 提供了无需重构即可吸收突发并发的Serverless形式，对 Agent 扇出场景天然适配。 
 - **预览部署 + 实时 URL** 的组合是隔离开发环境的最简方案，无需为每个分支单独配置 CI。 
 
-## 相关概念
 ## 相关实体
-- [Why Internally-Built AI Fails Fund Accounting Audits](378-why-internally-built-ai-fails-fund-accounting-audits.html)
+- [Why Internally-Built AI Fails Fund Accounting Audits](044-why-internally-built-ai-fails-fund-accounting-audits.html)
 - [Why Internally-Built AI Fails Fund Accounting Audits](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-fails-fund-accounting-audits.md)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](https://github.com/QianJinGuo/wiki-public/blob/main/entities/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazo.md)
 - [使用 Kiro AI IDE 开发 基于Amazon EMR 的Flink 智能监控系统实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/developing-flink-monitoring-system-on-amazon-emr-with-kiro-ai-ide.md)

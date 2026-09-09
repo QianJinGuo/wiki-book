@@ -93,8 +93,6 @@ Harness Engineering 的第一个局限是**复杂度爆炸**——设计一个�
 
 **Harness Engineering vs Agentic Engineering**：harness engineering 是 agentic engineering 的子集（聚焦 harness 设计），agentic engineering 是更广的范式（含 context / verifier 等）。两者的关系类似「Linux kernel」和「Operating System」——kernel 是 OS 的核心但不是全部。**Harness Engineering vs Prompt Engineering**：prompt 是「**输入层**」（怎么问），harness 是「**执行层**」（怎么跑）。prompt engineering 是 harness 的一部分但远不是全部。**Harness Engineering vs Software Engineering**：传统 SE 管「**确定性代码**」，harness engineering 管「**概率性 agent 系统**」——两者核心能力栈不互通。
 
-## 深度分析
-
 ### 洞察 1：Harness Engineering 从「一家之言」到「行业共识」的范式跃迁
 
 2026 年最值得关注的不是技术本身，而是 **Harness Engineering 完成了从 Anthropic 内部实践到全行业共识的关键一跃**。Rahul Patil 和 AI 技术立文的系统化论述把这个原本模糊的 concept 变成了可教授、可工程化、可产品化的完整范式。这种跃迁的本质是：harness 不再是「让 agent 跑起来的胶水代码」，而是「**决定 agent 能力边界的操作系统**」。AWS AgentCore、OpenAI Agents SDK、Anthropic Claude Managed Agents 三大玩家同时押注这个方向，不是巧合，而是 LLM 能力触达某个临界点后的必然选择。

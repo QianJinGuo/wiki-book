@@ -54,8 +54,6 @@ Bharat Sandhu leads AI/ML marketing for Amazon Web Services, covering silicon, m
 
 ---
 
-## 深度分析
-
 ### 1. 多云 AI 战略格局的重塑
 
 OpenAI 模型在 Amazon Bedrock 上 GA，标志着主流 IaaS 厂商与顶级模型供应商的深度整合进入新阶段 ^。此前企业若想在 AWS 上调用 GPT-5.5，必须通过 OpenAI 官方 API 或 Azure OpenAI Service（微软中间层）。此次 GA 意味着 OpenAI 绕过微软直接在 AWS Bedrock 提供推理服务，AWS-OpenAI 关系从"渠道分销"升级为"原生集成"。这使得"多云多模型"路径更简单——企业可在 Bedrock 上同时调用 Claude、Llama 和 GPT-5.5，通过统一的 AgentCore 框架编排，无需维护多供应商 API 集成，且数据不出 AWS 区域即可完成端到端推理 ^。
@@ -86,7 +84,7 @@ Codex 无座机、无按开发者收费的模式打破了 AI 编程工具的企�
 
 ### 4. 关注 Bedrock Managed Agents (Powered by OpenAI) 发布节奏
 
-即将推出的 Bedrock Managed Agents 基于 OpenAI agent harness 构建，提供更快执行和长任务可靠引导 ^。建议通过 [interest form](https://pages.awscloud.com/GLOBAL-ln-GC-openai-bedrock-interest.html) 提前登记，结合 [Agentcore Managed Harness](../ch04/309-agentcore-managed-harness.html) 和 [Agentic Workflow Patterns](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agentic-workflow-patterns.md) 评估与现有 AgentCore 工作流的集成方案。
+即将推出的 Bedrock Managed Agents 基于 OpenAI agent harness 构建，提供更快执行和长任务可靠引导 ^。建议通过 [interest form](https://pages.awscloud.com/GLOBAL-ln-GC-openai-bedrock-interest.html) 提前登记，结合 [Agentcore Managed Harness](../ch04/307-agentcore-managed-harness.html) 和 [Agentic Workflow Patterns](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agentic-workflow-patterns.md) 评估与现有 AgentCore 工作流的集成方案。
 
 ### 5. 追踪 Daybreak GA 并评估安全工程扩展路径
 

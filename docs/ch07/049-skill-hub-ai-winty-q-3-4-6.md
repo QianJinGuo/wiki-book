@@ -226,8 +226,6 @@ description: 前端发版前的标准检查
 - Hermes Agent Skills：https://hermes-agent.nousresearch.com/docs/user-guide/features/skills
 - Anthropic: Building Effective Agents（关于 Workflow vs Agent 与组织级能力沉淀的部分）
 
-## 深度分析
-
 ### 1. "隐形 AI Tax"的本质：组织学习机制的失效
 
 winty 提出的"隐形 AI Tax"并非指某一项具体的货币成本，而是指**企业 AI 投入中无法被组织级能力承接的那部分损耗**。从知识管理视角看，这反映了企业缺乏一套将个体经验转化为组织知识的机制——这与 [企业 AI 采用](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/enterprise-ai-adoption.md) 阶段模型中的"早期实验阶段"高度吻合：团队用上了 AI，但管理层缺乏对产出物的系统性保留。

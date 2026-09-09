@@ -8,7 +8,6 @@ Dify集成Amazon Bedrock AgentCore Browser 实现更强大的信息获取和分�
 ## 核心技术
 Amazon Bedrock AgentCore、Strands Agent SDK、OpenClaw、MCP Server
 
-## 深度分析
 ### 云端托管浏览器：AI Agent网页交互范式的根本转变
 传统的网页信息获取方案通常需要在本地运行浏览器实例，这带来了资源占用、安全隔离、资源清理等一系列运维负担。AgentCore Browser采用完全托管的云端浏览器设计，将浏览器执行环境从用户本地迁移到AWS托管的基础设施上 。这种设计的核心价值在于实现了**计算与控制的分离**：浏览器运行在安全隔离的云端环境中，而Dify等上层应用只需通过API进行远程控制。这种范式转变对于需要大规模、自动化网页交互的AI应用具有重要意义，因为它消除了本地资源管理的复杂性，同时提供了企业级的安全隔离保证。
 

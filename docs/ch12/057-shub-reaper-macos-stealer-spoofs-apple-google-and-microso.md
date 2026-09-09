@@ -18,8 +18,6 @@
 
 → [原文存档](https://www.sentinelone.com/blog/shub-reaper-macos-stealer-spoofs-apple-google-and-microsoft-in-a-single-attack-chain)
 
-## 深度分析
-
 ### 攻击链分层伪装机制
 
 SHub Reaper 展现出高度进化的社会工程学手法。其核心创新在于**多阶段品牌伪装**：攻击载荷托管在_typo-squatted_的 `mlcrosoft[.]co[.]com` 域名（假冒微软），执行时伪装成苹果 XProtectRemediator 安全更新，最终通过假冒谷歌软件更新机制实现持久化。这种"三可信品牌"叠加策略极大地增加了用户识别难度

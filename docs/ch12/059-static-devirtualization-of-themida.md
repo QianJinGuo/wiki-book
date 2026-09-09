@@ -78,8 +78,6 @@ Themida 的 VJCC handler 把条件结果先写入 VM context 的 `branch_taken_f
 - 用 MBA（Mixed Boolean-Arithmetic）表达式 + opaque values 编码——但近年已被 [LLVM-powered devirtualization 技术](https://blog.thalium.re/posts/llvm-powered-devirtualization/)与 Back Engineering 的方法常规化破解
 - 更强的反符号求值技术存在（CodeDefender 重型防护层实现），但具体细节不在此文范围
 
-## 深度分析
-
 ### 1. "通用优化打败 VM 特定知识"是去虚拟化范式的胜利
 
 本文最重要的论断是：**绝大部分去虚拟化工作由一组通用编译器优化完成，VM 特定知识只在控制流（虚拟分支与虚拟调用）处必需**。这与十年来逆向工程界的主流方法（基于 VM 架构精细分析）形成鲜明对比。

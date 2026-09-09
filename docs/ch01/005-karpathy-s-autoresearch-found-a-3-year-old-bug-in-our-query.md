@@ -34,8 +34,6 @@ The fix: rewrite comparison so the field side is bare and the constant carries t
 
 Future pipeline: ① fetch slow queries from `system.query_log` ② spin up sandbox per query ③ run pi-autoresearch ④ LLM dedup + spawn PostHog Code session ⑤ PR to Slack for human review .
 
-## 深度分析
-
 ### 1. Autoresearch 的领域迁移：从模型训练到查询性能优化 
 
 Karpathy 的 autoresearch 最初用于 nanochat 训练场景——给 AI agent 一个小型真实系统、benchmark 和预算，让它循环迭代优化提案。PostHog 的关键洞察是：这套范式可以完整迁移到 ClickHouse 查询性能领域。两者共享相同基础结构：目标系统（训练 loop vs. 查询引擎）、可量化指标（validation loss vs. 查询延迟）、允许快循环迭代的环境。差异在于：模型训练输出权重文件，查询引擎输出 SQL rewrite 或代码变更。这种迁移能成功的关键在于 autoresearch 框架的极简设计——Mario Zechner 的 pi terminal agent + davebcn87 的 pi-autoresearch 插件足够小到可以按领域需求重新构建。
@@ -81,7 +79,7 @@ PostHog 正在将 hackathon 手工喂入模式升级为全自动 pipeline：① 
 ## 相关实体
 - [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](https://github.com/QianJinGuo/wiki-public/blob/main/entities/akamai-acquires-israeli-ai-browser-security-startup-layerx-for-205-million-in-ca.md)
 - [Clinereleasesopen Sourceagentruntimesdk](https://github.com/QianJinGuo/wiki-public/blob/main/entities/clinereleasesopen-sourceagentruntimesdk.md)
-- [Running An Ai Native Engineering Org](033-running-an-ai-native-engineering-org.html)
+- [Running An Ai Native Engineering Org](031-running-an-ai-native-engineering-org.html)
 - [Pytorch212Releaseblogpytorch](https://github.com/QianJinGuo/wiki-public/blob/main/entities/pytorch212releaseblogpytorch.md)
 - [Igor Babuschkin Seeks Up To 1 Billion For River Ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/igor-babuschkin-seeks-up-to-1-billion-for-river-ai.md)
 

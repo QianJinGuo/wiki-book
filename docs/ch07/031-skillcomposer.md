@@ -14,8 +14,6 @@ SkillComposer 将 Agent 技能选择建模为闭集技能序列生成任务，�
 4. **结果**：Codex +23.1 pp，Gemini +18.2 pp 通过率提升，接近金标上界（51.1%/48.4%）
 5. **关键 insight**：Sparse (TF-IDF) + Dense (Embedding) 融合在短名称高辨析度技能库上优于纯 dense；小专用模型优于大模型全参 SFT
 
-## 深度分析
-
 ### 技能组合的「推荐系统时刻」
 
 论文将技能组合类比为推荐系统演进：早期 flat 相似度召回 → 后来发现「看几部+按什么顺序看」是联合决策。SkillComposer 把生成式检索（Generative Retrieval）思路搬到技能闭集上，输出空间就是库内 skill ID，每个 token 可执行、可检查、可复现。

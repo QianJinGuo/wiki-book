@@ -19,7 +19,6 @@ Kiro CLI、Kiro IDE、Kiro MCP Skills、Amazon Bedrock
 - [使用 Kiro 规范驱动开发加速数据质量建设 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/use-kiro-specification-driven-development-to-accelerate-data-quality-construction.md)
 - [用 Kiro CLI 自动搭建 FluentBit 日志采集方案：两种 EKS 埋点数据落地 S3 Parquet 的实战对比 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kiro-cli-fluentbit-logging-solution-eks-s3-parquet-comparison.md)
 
-## 深度分析
 ### 1. 技术架构的本质：MCP 协议作为"通用适配器"的核心价值
 文章揭示了一个关键技术洞察：**MCP 协议的本质是一个"通用适配器"**，它让 AI 模型能够以统一的方式连接外部数据源和工具，而非针对每个外部系统定制专有接口。
 这一设计的核心价值体现在：

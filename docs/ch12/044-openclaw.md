@@ -31,8 +31,6 @@ OpenClaw 是一款开源、自托管的 AI Agent 平台，通过 Telegram / What
 - **安全增强主线**：网络隔离（不放公网/VPN 访问）、凭证集中管理（Secrets Manager / IAM Role 替代硬编码）、输入过滤、配置版本控制、最小权限原则。
 - **功能增强主线**：Skill 扩展、定时任务、多模型切换、语音转写、搜索引擎插件替换。
 
-## 深度分析
-
 ### 一、自托管 AI Agent 的安全范式差异
 
 OpenClaw 这类自托管 AI Agent 与传统 Web 应用的安全模型有本质差异——这一点是文章的核心洞察：
@@ -120,7 +118,7 @@ OpenClaw 不是孤例——任何"本地优先、用户自治、跨消息通道"
 - [AI Tool Poisoning Exposes a Major Flaw in Enterprise Agent Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security-v2.md)
 - [Claude Code vs OpenClaw Memory 对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-openclaw-memory-comparison.md)
 - [Claude Code vs OpenClaw Memory 向量数据库之争](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-openclaw-memory-vector-db-doubt.md)
-- [Claude Code vs OpenClaw 使用 Ettin](../ch09/105-claude-code-openclaw-usage-ettin.html)
+- [Claude Code vs OpenClaw 使用 Ettin](../ch09/107-claude-code-openclaw-usage-ettin.html)
 - [Claude Managed Agents 自托管沙箱企业版](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-managed-agents-self-hosted-sandbox-enterprise.md)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 

@@ -2,7 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 9.8KB | `entities/microsoft-zero-days-researcher-disgruntled-theregister.md`
 
-## 深度分析
 ### 安全研究的"越界复仇"模式：一种新型威胁行为体
 Nightmare-Eclipse（又名 Chaotic Eclipse）的行为代表了一种新兴的安全研究威胁范式：合法的安全研究人员因对厂商的报复性不满，转向公开披露漏洞。这种"越界复仇"模式与传统的黑产攻击或国家支持的攻击者不同，但又比单纯的安全研究更危险——它结合了 deep knowledge of the target（深入了解目标）、emotional motivation（情绪化动机）、以及缺乏法律约束的特点。
 

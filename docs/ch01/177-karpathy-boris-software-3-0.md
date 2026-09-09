@@ -8,7 +8,7 @@
 - SHA256: b7f08a9221689ae53f18651567d97f1e5110931bc8978d41d50159b7513e3810
 
 ## 相关实体
-- [Claude Code Harness Deep Understanding](110-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Understanding](109-claude-code-harness-deep-understanding.html)
 - [Claude Code Search Architecture Tencent 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-search-architecture-tencent-2026.md)
 - [Ralph Loop 不够用长时间 Agent 还缺这 3 件事](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ralph-loop-不够用长时间-agent-还缺这-3-件事.md)
 - [Claude Code Harness Deep Dive Founder Park](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-harness-deep-dive-founder-park.md)

@@ -51,7 +51,6 @@ Controller 通过 Provider 接口委托网关（Higress）和存储（MinIO/OSS�
 ## 修复亮点
 18 个 Bug 修复覆盖：令牌轮转导致消息丢失、YOLO 模式传播中断、默认模型/运行时配置不生效、Hermes Worker 未加入 Matrix 房间、CR 迁移丢失运行时、镜像瘦身 1.7 GB 等关键问题。
 
-## 深度分析
 ### 1. Controller-Reconciler 架构：从单容器到 K8s 原生的范式转移
 HiClaw v1.1.0 最大的架构变化是放弃单容器模式，采用标准的 Controller-Reconciler 模式 ^。在 Embedded 模式下，Controller 内嵌轻量级 kube-apiserver + kine 存储 CRD 数据，无需外部 Kubernetes 集群即可运行。这意味着 HiClaw 在架构上已经与 Kubernetes 深度耦合——即使没有真实集群，Controller 本身就是一个"模拟 K8s 控制平面"的单节点集群 ^。通过 Helm Chart 部署到真实集群时，Controller 可以利用 Leader Election 实现多副本高可用，当故障发生时自动完成 Leader 切换 ^。这种设计让 HiClaw 从一个"可在 K8s 上运行的应用"变成了一个"本身就是 K8s 扩展机制的应用"——它的 Controller 是 Kubernetes API 的扩展，它的资源是 Kubernetes CRD。
 

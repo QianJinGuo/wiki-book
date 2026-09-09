@@ -21,8 +21,6 @@
 - **画布与代码库的双向同步**。从 Make 复制屏幕/页面/组件粘贴到 Figma 画布作为 layers，与团队协作编辑；Figma 检测到更改后会提示带回 Make，应用到代码。目标是「完全关闭循环」——画布和代码库在同一个地方。
 - **Beta 限制**：仅 Mac Beta 桌面应用，需要公司代码库访问权限（非技术用户已简化但仍需具备），不消耗 credits 但有限制名额。
 
-## 深度分析
-
 ### 1. 行业判断：代码工具停留在 2016 协作水平
 
 Figma 给出的行业判断是「尽管有这么多创新，我们用来处理代码的工具仍然非常早期。我们在协作方面仍停留在 2016 年」。 这是个有意识的对标——Figma 之所以能颠覆 Sketch/Photoshop，靠的就是把设计从「离线单人模式」变成「实时多人云协作」。把同样的范式套到代码上是 Figma 的目标：让设计-原型-代码的切换变成「在同一个平台里换工具」而不是「在 Figma、VS Code、GitHub、终端之间切换」。这个判断的逻辑是：当前 AI 写代码的能力跃迁正在发生，但协作工具没有跟上——这是 Figma 看到的市场窗口。给做产品架构师的启示是：当一项核心能力（这里是 LLM 写代码）发生跃迁时，**协作层往往是被低估的瓶颈**。Figma 的赌注是 10 年后代码工具会像今天的 Figma 一样实时多人协作。
@@ -64,7 +62,7 @@ Figma 在 Beta 期做了三个限制：① 仅 Mac 桌面应用；② 需要公�
 - [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/两万字详解claude-code源码核心机制.md)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](https://github.com/QianJinGuo/wiki-public/blob/main/entities/深入理解-claude-code-源码中的-agent-harness-构建之道.md)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/276-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/009-karpathy-vibe-coding-agentic-engineering.html)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
 

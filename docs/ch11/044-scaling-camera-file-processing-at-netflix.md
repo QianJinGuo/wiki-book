@@ -198,8 +198,6 @@ This project is the result of collaboration and iteration over many years. In ad
 
 [Scaling Camera File Processing at Netflix](https://netflixtechblog.com/scaling-camera-file-processing-at-netflix-6dab2b1e80be) was originally published in [Netflix TechBlog](https://netflixtechblog.com) on Medium, where people are continuing the conversation by highlighting and responding to this story.
 
-## 深度分析
-
 ### 战略合作而非盲目自建：Buy over Build 的工程哲学
 
 Netflix 在文书中明确指出"building a world-class image processing engine in-house is a significant, long-term commitment"，选择集成 FilmLight 而非自建。这一决策反映了一个重要的工程哲学：对于高度专业化的领域（电影图像处理、色彩科学），与其投入大量资源追赶行业专家几十年的积累，不如与行业领导者建立深度合作伙伴关系。

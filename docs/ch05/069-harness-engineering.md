@@ -55,8 +55,6 @@
 
 最终阶段，Harness Engineering 演化为治理工程——专注于 Agent 的意志注入、权限管理、边界划定和审计追溯。这些"该不该做"的问题成为核心工作，而"怎么做"的大部分已被模型内化。
 
-## 深度分析
-
 ### 与 Harness Engineering 概念体系的关系
 
 本文的"主权线"框架为 [Harness Engineering](061-harness-engineering.html) 概念提供了时间维度的演进视角。它回答了一个关键问题：当模型越来越强时，Harness Engineering 师的角色如何变化？

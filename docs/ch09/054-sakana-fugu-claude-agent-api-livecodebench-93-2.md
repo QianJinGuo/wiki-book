@@ -14,8 +14,6 @@ Sakana AI 在 Anthropic 因美国政府指令暂停 Claude Fable 5 和 Mythos 5 
 - **定价分层明确**：Fugu Ultra 起价 $5/百万输入 token、$30/百万输出 token；上下文超过 272K token 时升至 $10/$45。标准 Fugu 采用可变定价，按请求中最高 tier 模型计费。
 - **主权叙事 vs 黑盒现实**：Sakana CEO David Ha 将 Fugu 定位为"绕开供应商限制"的主权解决方案，但 Prime Intellect 研究员指出这是"闭源编排器之上的闭源模型"，用户既无法控制底层模型，也无法知晓具体使用情况。
 
-## 深度分析
-
 ### 技术架构：可交换 Agent 池与协调器模型
 
 Fugu 的核心创新在于其**可交换 Agent 池**架构。与传统的固定工作流编排不同，Fugu 使用一个协调器语言模型（Coordinator Model）来动态决定任务分配策略：

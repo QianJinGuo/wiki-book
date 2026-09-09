@@ -95,8 +95,6 @@ CloudFormation 一键部署 → IDC 模拟器发 HTTP 请求 → VPC 内 EC2 收
 | 多 VPC + DX（VPC Peering 不足） | **TGW**（中心辐射、统一路由） |
 | 多账号 + 多 VPC + 多 IDC | **TGW + TGW Peering + Resource Access Manager** |
 
-## 深度分析
-
 ### 1. VGW + NFW 架构：静态路由劫持流量的实现原理
 
 本方案的核心创新在于**不关闭 BGP 路由传播**，而是利用 VPC 路由表的优先级机制实现流量劫持。具体逻辑：

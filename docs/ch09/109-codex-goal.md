@@ -8,8 +8,6 @@
 
 阿里技术麦艮廷 2026-05-23 的源码深度解析。Codex `/goal` 不是 Todo、不是 prompt、不是一句"继续做到完成"，而是一套 **thread_goals 表 + 状态机 + 预算账本 + 自动续跑机制**。它把"目标"工程化为一个数据库对象，带四态状态机（active/paused/budget_limited/complete）、三权分立（get/create/update）、七项自动续跑前置条件、多边界 token 记账、以及 `<untrusted_objective>` 防 prompt injection 的边界标签。
 
-## 深度分析
-
 ### 1. 核心结论：目标是数据库对象，不是 prompt
 
 `/goal` 最反直觉的设计是把"目标"当作**第一类持久对象**，而不是对话上下文里的一个变量：
@@ -166,7 +164,7 @@ TUI 显示：
 - [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/276-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/009-karpathy-vibe-coding-agentic-engineering.html)
 - [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/两万字详解claude-code源码核心机制.md)
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验-v2.md)
 - [Agent Reliability Engineering Skillify Continuous Improvement](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-reliability-engineering-skillify-continuous-improvement.md)

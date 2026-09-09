@@ -47,8 +47,6 @@ Lightbulb 的核心思路是**将路由服务从直接请求路径中移除**：
 - Envoy 已用于 Netflix 所有应用间出站通信，天然具备集群路由能力
 - 保留了 Switchboard 的核心优势（单一集成点、模型 ID 抽象、上下文路由），同时解决了延迟和单点故障问题
 
-## 深度分析
-
 ### Objective 模式的设计智慧
 
 Objective 抽象是整个架构的核心设计决策。它将业务用例（如"继续观看排序"）与具体模型实现解耦，使得：
@@ -88,7 +86,7 @@ Netflix 利用 Envoy 已有的集群路由能力，仅需补充 Lightbulb 来处
 ## 相关实体
 
 - [Scale Robot Reinforcement Learning With Nvidia Isaac Lab On ](https://github.com/QianJinGuo/wiki-public/blob/main/entities/scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on-.md)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/276-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/009-karpathy-vibe-coding-agentic-engineering.html)
 
 → [原文存档](https://netflixtechblog.com/state-of-routing-in-model-serving-16e22fe18741?source=rss----2615bd06b42e---4)
 

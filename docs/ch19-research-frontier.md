@@ -72,7 +72,7 @@ But this does not follow: being a popular language with a lot of training data o
 
 ## Ch19.002 The Complexity of Simplicity | Jim Nielsen's Notes
 
-> 📊 Level ⭐⭐ | 6.1KB | `entities/2026-05-06-2201.md`
+> 📊 Level ⭐⭐ | 5.8KB | `entities/2026-05-06-2201.md`
 
 ["The Complexity of Simplicity | Jim Nielsen's Notes"](https://notes.jim-nielsen.com/n/2026-05-06-2201/)
 ---
@@ -110,11 +110,6 @@ Cantrill 强调"someone at the helm"的角色——有效控制复杂性需要�
 - [Gaode Ai Companion Agent Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gaode-ai-companion-agent-architecture.md)
 
 → [原文存档](https://notes.jim-nielsen.com/n/2026-05-06-2201/)
-
-## 相关实体
-- `架构设计误区` — 抽象层失控导致复杂性蔓延的典型案例
-- `Harness架构` — 守护复杂系统边界的工程实践
-- `阿里云CIO观点` — 非中美云厂商的主权困境
 
 ---
 
@@ -155,8 +150,6 @@ MoWorld 基于过去在 3D/4D 重建领域的成果，构建了可扩展的数�
 - **流水线层**：仅初始阶段完成一次条件编码，后续生成过程中复用已有结果
 - **并行层**：在多 NPU 部署上将解码与主干生成解耦，分散计算任务降低单设备压力
 - **算子层**：通过混合精度量化与高效注意力计算减少显存搬运与冗余计算
-
-## 深度分析
 
 ### 1. 世界模型的「DeepSeek 时刻」：关键转折点的构成要素
 
@@ -270,8 +263,6 @@ Prompt injection 攻击可以理解为**角色混淆攻击**——通过精心�
 | 防御思路 | 强化角色边界 | 输入净化/输出检查 |
 | 论文来源 | ICML 2026 (arxiv:2603.12277) | 多为 arxiv preprints |
 
-## 深度分析
-
 ### 角色感知的"不安全特征"问题
 
 本文最核心的发现是：LLM 通过**写作风格**（而非 role tags）来感知角色归属。实验表明，即使移除所有 `<think>` 标签，仅凭推理式写作风格（如"The user wants..."），模型内部的 CoTness 指标仍然保持高位。 更关键的是，当写作风格与实际标签冲突时（如将推理文本包裹在 `<user>` 标签中），写作风格会**覆盖**真实标签。 这意味着 role tags 作为安全边界的可靠性被根本性地削弱——攻击者只需模仿目标角色的写作风格即可突破边界。
@@ -327,8 +318,6 @@ arXiv 2605.30846 提出了 **Count Anything** —— 一个文本引导的通用
 3. **双粒度实例枚举**：抛弃主流的密度图（density-map）方法，采用离散实例点。一个 *Region-level Sparse Counter* 处理大而稀疏目标，一个 *Pixel-level Dense Counter* 处理小、密集、弱边界目标。
 4. **点中心监督策略**（point-centric supervision）：从异构标注中学习 —— 不同数据集的目标可能用点、框、mask 标注不同。
 5. **无参数融合**（Complementary Count Fusion）：把两个 Counter 的输出以无参数方式组合。
-
-## 深度分析
 
 ### 1. 形式化重新定义：把"计数"变成"指代表达"
 
@@ -434,8 +423,6 @@ DeepMind 团队（Tim Genewein、Shane Legg、Marcus Hutter 等 14 位作者）�
 - 跨 Agent 协作的 emergent behavior 可预测性
 - Alignment window（AGI 到 ASI 过渡期的监管窗口）设计
 - 能力评估的新 benchmark 需求
-
-## 深度分析
 
 ### Recursive Self-Improvement 的临界点
 
@@ -801,8 +788,6 @@ NeurIPS 2026 Position Paper Track 引入闭源 AI 检测器 **Pangram** 做 desk
 - [AI Detection and Response](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-detection-and-response-aidr-a-zero-impact-operating-model.md) —— 概念对照（云安全 vs 学术诚信，**底层方法论问题一致**）
 - 暂无直接对应 NeurIPS / 学术 AI 政策实体（**首次入库**）
 
-## 深度分析
-
 ### 1. 循环论证将检测器从辅助工具升级为裁决者
 Reddit 控诉帖揭示的核心逻辑链是：检测器输出分数 → 标记"声明与实际不一致" → 直接作为拒稿依据 。这条链条里没有任何独立 ground truth 来验证"声明不一致"的假设本身是否成立——检测器的概率输出被当作了事实陈述。更关键的是，当作者试图反驳时，面对的是黑箱输出的数字而非可解释的证据链。检测器在这个流程中不再是"参考"，而是实际上的"终审裁决者"。
 
@@ -990,8 +975,6 @@ Qwen-AgentWorld 的核心洞察是：大型语言模型可以作为智能体的*
 ### AgentWorldBench 评估基准
 
 团队提出了 AgentWorldBench，这是一个基于真实世界交互的综合评估基准，用于评估语言世界模型的准确性。该基准从 5 个前沿模型在 9 个已建立基准上的真实交互中构建，确保评估贴近实际使用场景。
-
-## 深度分析
 
 ### 两种互补范式
 
@@ -1289,8 +1272,6 @@ Qwen-AgentWorld 的创新在于将世界模型的载体从传统的状态空间�
 
 > "**块划分=显式注意力分配, 扫描划分=隐式注意力分配; 前者从全局到局部, 后者保留全局视角**" — 两种路径划分方式的本质区别。
 
-## 深度分析
-
 ### 1. 为什么 VLM 的并行推理比文本困难
 
 **文本并行的可行性**: 文本并行只需隔离"思路分支", 不存在"注意力稀释"问题 (因为文本 token 一直在线性序列中)。
@@ -1363,7 +1344,7 @@ Qwen-AgentWorld 的创新在于将世界模型的载体从传统的状态空间�
 
 ### 同范式生态
 - [ICML 2026 NPR 文本原生并行推理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/native-parallel-reasoner-icml2026.md) — **同源**: 都推动"推理宽度扩展", NPR 在文本领域开辟
-- [LASER ACL 2026 视觉推理](ch01/313-laser-acl2026-latent-superposition-visual-reasoning.html) — **互补**: 同样针对 VLM, 但用 latent superposition 路线
+- [LASER ACL 2026 视觉推理](ch01/312-laser-acl2026-latent-superposition-visual-reasoning.html) — **互补**: 同样针对 VLM, 但用 latent superposition 路线
 - [DeepSeek 视觉原语](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-visual-primitives-thinking.md) — **对比**: DeepSeek 用"视觉原语"做视觉推理的另一种思路
 
 ### 视觉/多模态相关
@@ -1377,7 +1358,7 @@ Qwen-AgentWorld 的创新在于将世界模型的载体从传统的状态空间�
 ## 相关实体
 
 - [Native Parallel Reasoner Icml2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/native-parallel-reasoner-icml2026.md)
-- [Laser Acl2026 Latent Superposition Visual Reasoning](ch01/313-laser-acl2026-latent-superposition-visual-reasoning.html)
+- [Laser Acl2026 Latent Superposition Visual Reasoning](ch01/312-laser-acl2026-latent-superposition-visual-reasoning.html)
 - [Llava Onevision 2 Full Frame Rate Vlm Glintlab](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llava-onevision-2-full-frame-rate-vlm-glintlab.md)
 - [Deepseek Visual Primitives Thinking](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-visual-primitives-thinking.md)
 - [Llm Language Thinking Mechanisms](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-language-thinking-mechanisms.md)- [count anything - 文本引导的通用目标计数框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/arxiv-2605-30846-count-anything-2026.md)
@@ -1491,8 +1472,6 @@ Ethan 自己的轨迹：图像识别 → 神经网络压缩 → 自监督学习 
 ### 与上下文工程
 [Agent Memory 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture.md) + [Agent Memory System Design](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-system-design.md) + [Context Management in Agent Systems](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/context-management-agent-systems.md)——Ethan 揭示 LLM **不知道自己的上下文长度还剩多少**（"上下文到达 80% 时自动压缩触发，但模型在工作时并不知道这件事"），并指出 **OpenClaw 已经让模型具备时间感知能力**——这与 [Context Management](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/context-management-agent-systems.md) 中"让模型具备上下文自我感知"是同一方向。
 
-## 深度分析
-
 ### 1. 视频 Agent 范式是 AI 编程范式的跨模态复刻
 
 Ethan 明确提出视频生成正在经历与 AI 编程相同的演化路径：从"一次性生成"到"多轮规划/调试/测试/发布的智能体系统"。这一判断的战略含义在于：**视频 Agent 的核心瓶颈不是扩散模型本身，而是工具编排层（扩散模型 + 传统剪辑工具 + 资产库 + 时间线）的 Harness 设计**——这正是 Agent Harness Engineering 在视频时代的自然延伸。换言之，谁能在 2026 H2-2027 H1 率先完成视频 Agent 的工具编排标准化，谁就占据了内容生产范式的下一个入口。
@@ -1539,7 +1518,7 @@ Ethan 指出了一个技术收敛点：**视频模型和 LLM 在长上下文管�
 - 与 [Claude Code 动态工作流多 Agent 编排](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-dynamic-workflows-multi-agent-orchestration.md) 互补：AI 编程的 Agent 化 → 视频生成的 Agent 化
 - 与 [Agent Harness Engineering Survey](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-engineering-survey-2026.md) 互补：Harness 在视频 Agent 时代的能力复用
 - 与 [画布 Agent 时代](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-canvas-agent-era-content-creation.md) + [AI 视频工具第三阶段](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-video-tools-third-stage-1779303117.md) 互补：第一手研究人员视角补全产品视角
-- 与 [Foundation Capital agent era 六洞察](ch04/292-foundation-capital-agent-era-six-insights.html) 互补：算力-人才飞轮的微观机制
+- 与 [Foundation Capital agent era 六洞察](ch04/290-foundation-capital-agent-era-six-insights.html) 互补：算力-人才飞轮的微观机制
 
 → [原文存档](https://mp.weixin.qq.com/s/dOKQToqmT5a-CrBLRDMQxA)
 

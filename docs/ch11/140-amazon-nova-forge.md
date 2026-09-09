@@ -70,8 +70,6 @@ RFT 仅在 baseline 准确率**适中的范围**内有效：
 2. **RFT 升级**：在 SFT baseline 上叠加 reward function
 3. **Full Rank 进阶**：当 LoRA 收益饱和、部署架构支持 Provisioned TPUT 时迁移
 
-## 深度分析
-
 ### 1. 稳定性-灵活性权衡是超参调优的核心矛盾
 
 Amazon Nova Forge 的超参挑战背后，本质是**稳定性-灵活性权衡 (stability-flexibility tradeoff)** 这一基础矛盾的具体实例化。模型需要足够的灵活性来吸收新领域知识，但过度的灵活性会破坏预训练已建立的通用能力（catastrophic forgetting）。数据混合和 checkpoint 选择是解决这一权衡的两大核心杠杆，而学习率则是控制这一权衡幅度的最敏感调控器。这条矛盾线贯穿 CPT/SFT/RFT 三个阶段——CPT 阶段灵活性最高但稳定性最低；RFT 阶段稳定性最高但灵活性最低（只能微调已有能力边界）。

@@ -71,8 +71,6 @@ Hunk 在交互式 review 场景下能力最全面，但在结构化 diff（AST �
 - **许可**：MIT
 - **构建基础**：OpenTUI + Pierre diffs
 
-## 深度分析
-
 ### 为什么 Agent 时代需要 Review-first Diff 工具？
 
 传统 diff 工具（`git diff`、delta、diff-so-fancy）面向人类逐行审查设计。但当 AI agent 生成大量代码变更时，review 的范式发生了根本变化：

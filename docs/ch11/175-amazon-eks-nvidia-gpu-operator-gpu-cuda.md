@@ -15,7 +15,6 @@
 → [原文存档](https://aws.amazon.com/cn/blogs/china/amazon-eks-using-nvidia-gpu-operator-management-gpu-cuda/)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/tool-use-mcp-patterns.md)
-## 深度分析
 
 ### 1. 核心问题：平台团队的 GPU 运维边界不清
 

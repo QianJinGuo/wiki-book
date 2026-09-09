@@ -29,8 +29,6 @@ Addy Osmani 提出 Loop Engineering——比 Agent Harness Engineering 再高一
 
 `/goal` 不是干活的模型自己判断完成——而是**独立小模型验证**。这是"干活和检查分开"直接套用到停止条件上。
 
-## 深度分析
-
 ### Loop vs Harness：层级关系而非替代
 
 Loop Engineering 不是 Harness 的替代品，而是 Harness 之上的编排层。Harness 解决单个 Agent 的环境约束（CLAUDE.md、hooks、权限）；Loop 解决多个 Agent + 自动化 + 状态追踪的**系统级编排**。映射到已有 wiki 概念：Harness = [单 Agent 约束系统](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)；Loop = 多 Agent + cron + 状态 + 自驱动。

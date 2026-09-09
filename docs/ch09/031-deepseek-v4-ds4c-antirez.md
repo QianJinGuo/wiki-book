@@ -78,8 +78,6 @@ Salvatore Sanfilippo（antirez），1977 年出生于西西里岛，2009 年创�
 
 其他作品：Kilo（<1000行C文本编辑器）、dump1090（ADS-B信号解码器）、linenoise（readline替代）、Flipper Zero 工具。2022 年出版科幻小说《WOHPE》：AI、气候变化、程序员、人类和技术的互动。
 
-## 深度分析
-
 ### 1. 专用引擎 vs 通用引擎的技术取舍
 
 ds4.c 代表了一种极致专用化的路线。llama.cpp、vLLM 等通用推理引擎通过抽象层支持多模型，代价是每次调用都有间接成本——矩阵运算通过通用调度层分发，内存布局服务于最广泛的兼容性，量化方案必须在精度损失可接受范围内照顾各种架构。
@@ -138,7 +136,7 @@ antirez 提出的推理引擎 + 专用 GGUF + coding agent 验证三者组合，
 
 - [ds4c-deepseek-v4-antirez](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ds4c-deepseek-v4-antirez.md) — 同一项目的另一篇报道
 - [Redis之父下场给DeepSeek V4单独造了一台推理引擎](https://github.com/QianJinGuo/wiki-public/blob/main/entities/redis之父下场给deepseek-v4单独造了一台推理引擎.md) — 量子位的另一篇相关报道
-- [DeepSeek-V4深度拆解](../ch01/427-deepseek-v4.html) — DeepSeek V4 论文深度解读
+- [DeepSeek-V4深度拆解](../ch01/426-deepseek-v4.html) — DeepSeek V4 论文深度解读
 - [DeepSeek V4 Pro vs Claude](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-v4-pro-vs-claude.md) — V4 Pro 和 Flash 对比测试
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/coding-agent-practice.md)
 
