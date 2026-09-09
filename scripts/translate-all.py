@@ -38,9 +38,9 @@ SITE = os.path.join(ROOT, "site")
 OUT = os.path.join(ROOT, "translations")
 UPSTREAM = "https://token.sensenova.cn/v1/chat/completions"
 MODEL = os.environ.get("SENSENOVA_MODEL", "deepseek-v4-flash")
-BATCH_CHARS = 1200
-BATCH_ITEMS = 16
-CONCURRENCY = 3
+BATCH_CHARS = 3200
+BATCH_ITEMS = 40
+CONCURRENCY = 4
 RETRY_DELAYS = [5, 15, 30]
 
 SKIP_TAGS = {"script", "style", "noscript", "pre", "code", "kbd", "samp",
@@ -173,7 +173,7 @@ def call_upstream(texts, api_key):
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": numbered},
         ],
-        "max_tokens": 4096,
+        "max_tokens": 8192,
         "temperature": 0.2,
         "stream": False,
     }).encode("utf-8")

@@ -8,7 +8,7 @@ export HTTPS_PROXY="http://127.0.0.1:7897" HTTP_PROXY="http://127.0.0.1:7897"
 
 echo "[finish-line] waiting for background batch translation to finish..."
 while pgrep -f "translate-all.py" > /dev/null; do sleep 300; done
-while ! grep -q "ALL DONE" /tmp/translate-priority.log 2>/dev/null; do sleep 300; done
+while ! grep -q "ALL DONE" /tmp/translate-v2.log 2>/dev/null; do sleep 300; done
 echo "[finish-line] background translation done at $(date)"
 
 echo "[finish-line] final heal pass over all dictionaries"
