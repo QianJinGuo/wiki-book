@@ -1,0 +1,7 @@
+[
+ {
+  "title": "SkillOpt——Skill 的四步训练循环",
+  "code": "graph TD\n    P[\"要解决什么: Skill 优化缺方法论\"] --> LOOP[\"四步 mini training loop\"]\n    LOOP --> RES[\"实验结果\"]\n    RES --> MIG[\"迁移性: 值得重视的工程能力\"]\n    MIG --> INS[\"工程意义: Agent 时代新型资产<br/>5 条局限 · 成本权衡\"]",
+  "isSvg": false
+ }
+]

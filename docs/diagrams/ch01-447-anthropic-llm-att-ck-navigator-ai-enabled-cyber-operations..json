@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Anthropic LLM ATT&CK Navigator——AI 赋能网络行动报告",
+  "code": "graph TD\n    ARIES[\"ARiES 风险评分方法\"] ==> F1[\"中高风险行为者半年翻 1.7 倍\"]\n    F1 ==> F2[\"技术复杂度不再是主要区分指标\"]\n    F2 ==> F3[\"Agentic Scaffolding 是新风险乘数\"]\n    F3 ==> GAP[\"ATT&CK 框架覆盖缺口<br/>高频被滥用技术清单<br/>配套产品变更\"]",
+  "isSvg": false
+ }
+]

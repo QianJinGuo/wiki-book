@@ -1,0 +1,7 @@
+[
+ {
+  "title": "HTTP/2 HPACK Bomb——Codex 发现的 AI 发现型 DoS",
+  "code": "graph TD\n    A1[\"组件一: HPACK 索引引用炸弹\"] --> COMBO[\"双元绑架攻击<br/>协议层 DoS 范式转移\"]\n    A2[\"组件二: HTTP/2 窗口停滞\"] --> COMBO\n    COMBO --> MISS[\"经典防御为何失灵\"]\n    MISS --> IMP[\"影响: 32GB DoS<br/>Just under OOM 弹性系统 kill 哲学\"]\n    IMP --> DISC[\"披露时间线与缓解措施\"]\n    IMP -.信号.-> AI[\"AI 驱动漏洞发现<br/>fix commits 成攻击预测信号\"]",
+  "isSvg": false
+ }
+]

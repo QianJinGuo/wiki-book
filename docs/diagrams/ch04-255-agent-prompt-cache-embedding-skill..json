@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Agent 记忆系统工程税——写入纪律与缓存冲突与迁移",
+  "code": "graph TD\n    TAX[\"记忆系统的工程税框架\"] --> P4[\"四条写入失效路径<br/>LLM 判官 Mem0 · 公式打分 Dreaming<br/>托管策略 AgentCore · 负载反馈学习\"]\n    P4 --> PC[\"记忆写入与 Prompt Cache 冲突<br/>最隐蔽的运行时陷阱<br/>三种处理思路\"]\n    PC --> EM[\"Embedding 迁移: 最大数据税<br/>四阶段方法论\"]\n    EM --> SK[\"Agent 自产程序性记忆治理<br/>2026 最显著新变量\"]\n    SK --> INFRA[\"S3 Vectors 与 S3 Files<br/>记忆新基建\"]",
+  "isSvg": false
+ }
+]

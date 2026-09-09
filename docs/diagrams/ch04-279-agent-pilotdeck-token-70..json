@@ -1,0 +1,7 @@
+[
+ {
+  "title": "PilotDeck——清华系 Agent 操作系统 Token 降 70%",
+  "code": "graph TD\n    OS[\"Agent 操作系统定位<br/>从模型调用到环境自治\"] --> B3[\"三个核心工程突破\"]\n    B3 --> ROUTE[\"子 Agent 路由<br/>跨越请求级路由思维陷阱\"]\n    B3 --> MEM[\"白盒记忆: AI 记忆可观测性\"]\n    MEM --> DATA[\"关键数据: Token 成本降 70%<br/>企业隐私与本地部署\"]",
+  "isSvg": false
+ }
+]

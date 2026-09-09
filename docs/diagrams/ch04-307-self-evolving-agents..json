@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Self-Evolving Agents 系统性综述",
+  "code": "graph TD\n    C[\"核心贡献与技术框架\"] ==> R3[\"三条进化路线<br/>内在逻辑与局限\"]\n    R3 => COEV[\"Co-Evolution 是未来关键方向\"]\n    COEV => SD[\"Static vs Dynamic<br/>经验进化的区分意义\"]",
+  "isSvg": false
+ }
+]

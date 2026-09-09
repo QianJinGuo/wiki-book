@@ -1,0 +1,7 @@
+[
+ {
+  "title": "YC CEO Garry Tan——200 美元重构 400 万美元项目",
+  "code": "graph TD\n    WF[\"核心工作流: Token Maxxing\"] --> ARCH[\"Thin Harness Fat Skills 架构\"]\n    ARCH --> DUAL[\"Claude 加 Codex 双 AI 协作\"]\n    DUAL --> GS[\"GStack: 并行 15 个 Agent 框架<br/>容忍 Agent 脆弱性\"]\n    GS --> T[\"测试覆盖率与代码质量保障\"]\n    T --> EFF[\"400 倍产出从何而来<br/>时间亿万富翁概念\"]",
+  "isSvg": false
+ }
+]

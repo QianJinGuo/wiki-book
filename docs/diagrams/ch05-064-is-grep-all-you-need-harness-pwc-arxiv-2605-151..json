@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Is Grep All You Need——检索 Harness 交付方式耦合三元组",
+  "code": "graph TD\n    F1[\"发现 1: Inline 交付时<br/>grep 10 比 10 赢 vector<br/>差距最高 23.3pp\"] ==> F2[\"发现 2: 交付到磁盘后<br/>vector 反超\"]\n    F2 => F3[\"发现 3: 同款 Opus<br/>换 harness 准确率差 16pp\"]\n    F3 => THESIS[\"核心主张: 三者耦合<br/>检索乘 Harness 乘交付方式<br/>消融实验是幻觉\"]\n    THESIS => SEL[\"选型决策树<br/>评估方法论必须升级\"]",
+  "isSvg": false
+ }
+]

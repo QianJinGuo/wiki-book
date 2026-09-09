@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Programbench——测程序而非测 Prompt 的 Agent 基准",
+  "code": "graph TD\n    IDEA[\"Benchmarking Programs Not Prompts<br/>无源码无反编译无网络\"] --> T[\"任务规模与覆盖\"]\n    T => EVAL[\"评估体系: 248K 加 行为测试<br/>mini-SWE-agent 框架\"]\n    EVAL => BEST[\"当前最佳: Claude Opus 4.7 仅 3%\"]\n    BEST --> ANTI[\"反作弊: 清洁室实现<br/>污染与记忆化检测\"]",
+  "isSvg": false
+ }
+]

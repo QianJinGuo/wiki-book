@@ -1,0 +1,7 @@
+[
+ {
+  "title": "wow-harness v3——AI 开发的治理协议",
+  "code": "graph TD\n    PHI[\"设计哲学: 套具比模型重要\"] --> Q5[\"5 大核心问题 v3 解法<br/>做过的事不丢 · 概念不漂移<br/>产出真做完 · 自运转组织<br/>负责人不退判断权\"]\n    Q5 --> V[\"ESAA 论文学术验证\"]\n    V --> CMP[\"v3 vs 现有工具<br/>Claude Code 是地基非竞争<br/>vs Superpowers · Hermes · OpenHands\"]\n    CMP --> P6[\"6 大设计原则 · 21 个模块\"]",
+  "isSvg": false
+ }
+]

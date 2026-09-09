@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Co-Existence vs Co-Intelligence——Mollick 的范式转变",
+  "code": "graph TD\n    SHIFT[\"从 Co-Intelligence<br/>到 Co-Existence 的范式跃迁\"] ==> PAGE[\"for-AI Page 模式<br/>AI-as-reader 内容策略革命<br/>为 AI 读者设计内容\"]\n    PAGE => REFUSE[\"拒绝 AI 帮助的合法性<br/>边界正在移动\"]\n    REFUSE => TRUST[\"Co-Existence 的信任瓶颈<br/>80% 与 8x 数据双源验证\"]",
+  "isSvg": false
+ }
+]

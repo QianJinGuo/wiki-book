@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Codex 三件套——6 职位插件加 Sites 加 Annotations",
+  "code": "graph TD\n    P6[\"6 个职位插件<br/>62 应用加 110 技能<br/>Skill 2.0 具象化\"] --> SITES[\"Sites: 生成可交互网站直接托管<br/>输出从文件升级为活产品\"]\n    SITES --> ANN[\"Annotations: 精准批注<br/>局部编辑范式解 AI 协作矛盾\"]\n    ANN --> PAR{\"范式判断<br/>开发工具到工作台<br/>会写代码到会组织工具\"}",
+  "isSvg": false
+ }
+]

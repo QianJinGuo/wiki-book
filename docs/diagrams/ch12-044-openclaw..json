@@ -1,0 +1,7 @@
+[
+ {
+  "title": "OpenClaw 安全和功能增强实践",
+  "code": "graph TD\n    PARA[\"自托管 Agent 安全范式差异<br/>保护能自主行动的实体而非接口\"] ==> C5[\"五大安全挑战<br/>自治权限继承 · 凭证散落<br/>Gateway 网络暴露 · 提示注入 · 配置脆弱\"]\n    C5 => D4[\"AWS 4 种部署<br/>单机 EC2 · AgentCore 多租户<br/>EKS Graviton · CI CD 集成\"]\n    D4 => SEC[\"安全主线: 网络隔离 · 凭证集中<br/>输入过滤 · 最小权限\"]",
+  "isSvg": false
+ }
+]

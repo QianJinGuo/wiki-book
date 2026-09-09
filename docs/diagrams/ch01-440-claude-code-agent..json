@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Code 源码拆解——从启动到多 Agent 扩展层",
+  "code": "graph TD\n    M8[\"八大模块\"] --> P1[\"复杂度必须安放在正确位置<br/>三条链路的分层价值\"]\n    P1 --> REPL[\"REPL 不是视图组件\"]\n    REPL --> SUB[\"子 Agent 先是任务对象<br/>才是智能体\"]\n    SUB --> BAD[\"坏路径的显式设计\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "墙比模型更重要——Stripe Minions 与 DeerFlow 2.0 与支小助",
+  "code": "graph TD\n    TH[\"三家公司独立得出同一结论<br/>墙比模型更重要\"] --> S1[\"Stripe Minions: 4 核心机制\"]\n    TH --> S2[\"字节 DeerFlow 2.0<br/>3 失败模式 3 工程化解法<br/>任务独立空间\"]\n    TH --> S3[\"蚂蚁支小助: 金融 4 AI 分工<br/>人类组织镜像到 AI 系统\"]\n    S1 --> WHY[\"为什么更强模型解决不了<br/>墙的本质是风险管理<br/>乘法效应重定价资源\"]\n    S2 --> WHY\n    S3 --> WHY",
+  "isSvg": false
+ }
+]

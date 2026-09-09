@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Code as Agent Harness 综述",
+  "code": "graph TD\n    F[\"核心框架<br/>代码作 Harness 的三个自然属性\"] ==> PEV[\"PEV 控制循环<br/>确定性验证的深层含义\"]\n    PEV ==> AHE[\"AHE Agentic Harness Engineering<br/>工程哲学\"]\n    AHE ==> MULTI[\"多 Agent 协作模式<br/>核心矛盾\"]\n    MULTI ==> SYS[\"代表系统与开放问题<br/>与 Software 2.0 的承继<br/>Harness 即认知架构\"]",
+  "isSvg": false
+ }
+]

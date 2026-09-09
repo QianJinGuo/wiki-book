@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Code vs Hermes——Session 工程师与 Goal Runtime",
+  "code": "graph TD\n    CC[\"Claude Code: 工程师不是员工<br/>Session 生命周期<br/>Routines 只扩展触发方式\"] --> CMP[\"6 维对比<br/>生命周期单元决定工具基因\"]\n    HM[\"Hermes: Runtime 不是助手<br/>goal 命令哲学差异最显著<br/>IM-native 是架构选择<br/>学习 loop 沉淀 skill\"] --> CMP\n    CMP --> MIS[\"错配思维两大坑<br/>用 CC 思维用 Hermes 反之亦然\"]\n    MIS --> ANS[\"先问生命周期再问工具<br/>流水线组合是最优解\"]",
+  "isSvg": false
+ }
+]

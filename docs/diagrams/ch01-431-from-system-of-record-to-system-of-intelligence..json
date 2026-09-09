@@ -1,0 +1,7 @@
+[
+ {
+  "title": "从 System of Record 到 System of Intelligence",
+  "code": "graph TD\n    CRM[\"CRM 历史逻辑: 数据积累护城河\"] --> SHIFT[\"层级迁移: CRM 降级为数据库<br/>Agent 只需低摩擦读写结构化数据\"]\n    SHIFT --> MOAT[\"护城河本质变化: 到编排层<br/>聚合 CRM 日历邮件电话录音多源推理\"]\n    MOAT --> GTM[\"AI 原生 GTM 初创<br/>高频窄工作流 · 创造新工作类别<br/>不削减人力而扩大总饼\"]\n    GTM --> PARADOX[\"反直觉: CRM 使用量不降反升<br/>Agent 写入比人工更丰富及时\"]",
+  "isSvg": false
+ }
+]

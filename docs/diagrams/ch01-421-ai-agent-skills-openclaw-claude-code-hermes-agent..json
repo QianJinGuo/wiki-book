@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AI Agent Skills 系统设计——OpenClaw 与 Claude Code 与 Hermes 对比",
+  "code": "graph TD\n    O[\"OpenClaw: 赌社区集体智慧<br/>ClawHub 是 Agent 界 npm<br/>代价: 供应链攻击\"] --> CMP[\"三种赌注三种取舍<br/>渐进式披露的工程意义<br/>安全模型的深层矛盾\"]\n    C[\"Claude Code: 赌个人经验沉淀<br/>经验越多成本越低<br/>Compaction 后持续\"] --> CMP\n    H[\"Hermes: 赌 Agent 自我进化<br/>经验不必人来写<br/>跨 Agent 经验传播\"] --> CMP\n    CMP --> DEC[\"框架选择决策树<br/>企业部署关键考量\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Tokenspeed Agentic 推理引擎",
+  "code": "graph TD\n    ARCH[\"核心架构<br/>编译器级 SPMD 并行建模<br/>C++ FSM 控制面加 Python 执行面\"] --> KERN[\"可插拔分层 Kernel 体系<br/>Fast MLA Kernel 已入 vLLM\"]\n    KERN --> PERF[\"性能基准\"]\n    PERF --> AGENT[\"Agentic 负载优化<br/>区别于传统推理场景<br/>PD 分离弹性扩展\"]",
+  "isSvg": false
+ }
+]

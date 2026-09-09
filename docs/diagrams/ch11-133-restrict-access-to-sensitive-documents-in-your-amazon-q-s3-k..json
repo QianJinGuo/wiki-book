@@ -1,0 +1,7 @@
+[
+ {
+  "title": "限制 Amazon Q S3 知识库敏感文档访问——ACL 机制",
+  "code": "graph TD\n    CORE[\"核心机制: ACL 查询时评估<br/>权限从配置时转到访问时\"] --> M2[\"两种配置<br/>Global ACL 文件 · Document 级 Metadata<br/>本质是变更频率与重索引开销权衡\"]\n    M2 --> IAM[\"IAM Policy Assignments 纵深<br/>与 Document ACL 互补非冗余\"]\n    IAM --> RISK[\"ACL 文件本身是最高价值攻击面<br/>写权限管控 · 同步延迟\"]\n    RISK --> BASE[\"Deny-by-default 是企业级<br/>RAG 的安全基线\"]",
+  "isSvg": false
+ }
+]

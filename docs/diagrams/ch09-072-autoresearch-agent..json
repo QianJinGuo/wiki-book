@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AutoResearch——多 Agent 自动化软件开发",
+  "code": "graph TD\n    TH[\"核心命题: 量化目标驱动的自主循环<br/>对比传统 Agentic Coding\"] --> IMP[\"三大改进<br/>多 Agent 交叉审核<br/>5 维加权评分 · 反馈驱动下一轮\"]\n    IMP --> ARCH[\"4 阶段系统架构\"]\n    ARCH --> CONST[\"program.md: Agent 宪法<br/>宪法级约束\"]\n    CONST --> RETRY[\"退火重试: 生产级可靠性<br/>评分趋势优于单轮分数\"]",
+  "isSvg": false
+ }
+]

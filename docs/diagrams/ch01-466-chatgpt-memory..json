@@ -1,0 +1,7 @@
+[
+ {
+  "title": "ChatGPT Memory 与知识功能",
+  "code": "graph TD\n    MEM[\"ChatGPT Memory 记忆机制<br/>工程局限\"] ==> FEAT[\"Key Features<br/>Custom GPTs 生态位<br/>Projects 定位模糊<br/>Canvas 产品逻辑\"]\n    FEAT => EDU[\"ChatGPT for Edu 战略意图<br/>Study 用途 · 与 NotebookLM 对比\"]\n    EDU => PRIC[\"Pricing 与 Strengths Weaknesses\"]",
+  "isSvg": false
+ }
+]

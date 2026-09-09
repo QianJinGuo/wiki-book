@@ -1,0 +1,7 @@
+[
+ {
+  "title": "ARA——Agent 原生研究工件 PDF 范式终结提案",
+  "code": "graph TD\n    TAX2[\"论文格式两笔隐形税<br/>叙事税 · 工程税<br/>PaperBench 8921 条复现标注\"] --> ARA[\"ARA 四层互锁研究包<br/>37 作者协作规模信号\"]\n    ARA --> M3[\"三个生态机制<br/>Live Research Manager<br/>ARA Compiler · native Review\"]\n    M3 --> RES[\"实验: 理解 加21.3pp<br/>复现 加7.0pp · 扩展 3/5 获胜<br/>反向发现的深层张力\"]",
+  "isSvg": false
+ }
+]

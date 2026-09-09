@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Obsidian 加 Claude Code 集成指南",
+  "code": "graph TD\n    PAIN[\"核心痛点\"] --> S5[\"五种集成策略<br/>独立 Vault 符号链接 · Vault 即工作目录<br/>MCP 桥接 · 每仓库一 Vault · QMD 会话同步\"]\n    S5 --> FIX[\"文件混乱解决路径\"]\n    FIX --> PLUG[\"必备插件生态\"]\n    PLUG --> CLI[\"Obsidian CLI 突破性进展<br/>AI 负责读取原则\"]",
+  "isSvg": false
+ }
+]

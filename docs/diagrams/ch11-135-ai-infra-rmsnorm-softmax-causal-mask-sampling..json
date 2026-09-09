@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AI Infra 入门——四大算子的数学与底层优化",
+  "code": "graph TD\n    O1[\"RMSNorm<br/>从方差到归一化的推导链\"] --> CMP[\"四算子对比总结\"]\n    O2[\"Softmax<br/>概率归一化的数学与工程\"] --> CMP\n    O3[\"Causal Mask 与 Online Softmax\"] --> CMP\n    O4[\"Sampling<br/>Multinomial 到 Gumbel-Max 统一\"] --> CMP",
+  "isSvg": false
+ }
+]

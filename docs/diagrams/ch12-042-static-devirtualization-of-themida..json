@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Themida 静态去虚拟化——引导式符号执行方法论",
+  "code": "graph TD\n    M[\"引导式符号执行<br/>去虚拟化主引擎非模式匹配\"] --> P[\"优化 Pass 系统协同收敛<br/>VM 脚手架坍缩的驱动机制\"]\n    P --> VJCC[\"Themida VJCC 特殊处理<br/>VM 知识的最后堡垒\"]\n    VJCC --> LOW[\"降级阶段<br/>寄存器压力是核心约束<br/>溢出代价是语义级误读\"]\n    LOW --> GEN[\"跨混淆器泛化<br/>自研 lifting 优于 LLVM<br/>因重新插入二进制约束\"]",
+  "isSvg": false
+ }
+]

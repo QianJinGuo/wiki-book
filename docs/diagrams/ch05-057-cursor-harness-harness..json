@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Cursor 复盘 Harness——模型决定上限 Harness 决定下限",
+  "code": "graph TD\n    CORE[\"模型决定能力上限<br/>Harness 决定生产下限\"] --> PROD[\"Harness 是持续运营的软件产品<br/>每次调整有假设有实验有回滚\"]\n    PROD --> CTX[\"上下文范式转移<br/>静态塞入到动态拉取<br/>模型变强后的护栏拆除\"]\n    CTX --> TOOL[\"工具错误的上下文污染<br/>工具数量与质量负相关\"]\n    TOOL --> EVAL[\"四层评估<br/>CursorBench 加线上 AB<br/>加 Keep Rate 加后续反应语义\"]\n    EVAL --> UNIT[\"发布单元: 模型加 Harness 组合\"]",
+  "isSvg": false
+ }
+]

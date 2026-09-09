@@ -1,0 +1,7 @@
+[
+ {
+  "title": "750B MoE PD 分离推理——EFA vs RoCE 通信架构对比",
+  "code": "graph TD\n    CFG[\"测试配置: 2P2D 分离推理\"] ==> PD[\"Prefill 与 Decode 通信模式差异<br/>Prefill 走 NVLink<br/>Decode 靠跨节点 All-to-All\"]\n    PD => EFA[\"为什么 EFA Mean 慢 31%<br/>UCCL-EP 的 CPU Proxy 中转<br/>对比 DeepEP IBGDA\"]\n    EFA => SRD[\"为什么 EFA Max ITL 低 73%<br/>SRD 多路径 spray\"]\n    SRD => EKS[\"EKS 软件栈分层<br/>内核态在 AMI 用户态在容器\"]",
+  "isSvg": false
+ }
+]

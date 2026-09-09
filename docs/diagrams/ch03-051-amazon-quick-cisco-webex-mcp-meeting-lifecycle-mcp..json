@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Amazon Quick 加 Webex MCP——会议全生命周期助手",
+  "code": "graph TD\n    PAIN[\"例会准备与跟进多工具切换<br/>是生产时间最大泄漏\"] ==> ORCH[\"Quick Chat Agent 编排层<br/>native MCP 单 prompt 触发全流程\"]\n    ORCH ==> S3[\"3 个 Webex MCP server<br/>Meetings · Vidcast · Messaging<br/>按 prep 与 follow-up 阶段路由工具\"]\n    S3 ==> OAUTH[\"OAuth scope 分层防御<br/>read 默认开 · write 需显式确认<br/>限定非生产 space\"]\n    OAUTH ==> BRIEF[\"prep brief 5 段固定结构<br/>meeting-lifecycle 4 阶段闭环\"]",
+  "isSvg": false
+ }
+]

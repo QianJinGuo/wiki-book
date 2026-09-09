@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Memento-Skills——技能外部记忆让 Agent 自进化",
+  "code": "graph TD\n    BG[\"冻结大模型的成长困境\"] --> L5[\"五步闭环\"]\n    L5 --> ROUTER[\"技能路由器<br/>行为对齐而非语义相似\"]\n    ROUTER --> EXP[\"实验: GAIA 异质任务<br/>HLE 同学科任务 · 技能库增长\"]\n    EXP --> INS[\"技能库是真正的成长通道\"]",
+  "isSvg": false
+ }
+]

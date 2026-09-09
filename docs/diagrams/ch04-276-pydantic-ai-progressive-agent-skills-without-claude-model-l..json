@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Pydantic AI——无模型锁定的渐进式 Agent Skills",
+  "code": "graph TD\n    LIM[\"Claude Skills 限制: 绑 SDK 成本高<br/>切模型需 litellm 多故障点\"] ==> INSIGHT[\"Building Effective Agents 洞察<br/>框架不重要 工具设计与<br/>上下文管理才是关键\"]\n    INSIGHT ==> PAI[\"Pydantic AI 四核心能力<br/>渐进加载是设计哲学非专利\"]\n    PAI ==> MIG[\"实战迁移: 6 Skills 到 5 Capabilities\"]\n    MIG ==> RESULT[\"一个月生产效果: 白盒控制<br/>比黑盒魔法更适合生产\"]",
+  "isSvg": false
+ }
+]

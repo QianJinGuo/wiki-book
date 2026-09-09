@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Direct Connect DX 迁移最佳实践",
+  "code": "graph TD\n    D[\"设计考虑: 先满足冗余弹性建议<br/>新连接测试后再切流量\"] --> S6[\"迁移 6 步<br/>订购新连接 · 配 VIF<br/>故障转移测试 · 切换 · 删旧\"]\n    S6 --> SC1[\"场景一: DX 加 VPN 备份<br/>成本敏感 · vCPE 静态路由<br/>BFD 秒级切换\"]\n    S6 --> SC2[\"场景二: DX 加 DX 备份<br/>高 QoS · 不同 PoP 多专线\"]\n    SC1 --> BGP[\"BGP 流量工程双向控制<br/>维护窗口纪律\"]\n    SC2 --> BGP",
+  "isSvg": false
+ }
+]

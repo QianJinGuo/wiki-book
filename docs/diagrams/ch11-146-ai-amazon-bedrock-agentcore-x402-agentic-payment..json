@@ -1,0 +1,7 @@
+[
+ {
+  "title": "让 AI 代理自己付钱——AgentCore 加 x402 支付",
+  "code": "graph TD\n    X402[\"x402 协议\"] ==> PAY[\"AgentCore Payments 解决什么<br/>支付协议与托管服务职责边界\"]\n    PAY ==> ARCH[\"架构组件<br/>最小权限身份模型<br/>服务端强制预算约束\"]\n    ARCH ==> RISK[\"风险与控制<br/>Payment Session 策略先行<br/>卖方 MCP 目录先于支付接入\"]\n    RISK ==> AUDIT[\"审计日志是支付能力的一部分\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Matt Pocock Skills——AI 编程技能集合",
+  "code": "graph TD\n    S1[\"grill-me 需求追问<br/>强制延迟满足\"] ==> S2[\"grill-with-docs 术语对齐\"]\n    S2 ==> S3[\"caveman 极简回复模式\"]\n    S3 ==> PHI[\"核心理念: 从约束 AI<br/>到约束人 · 三类 Skill 协同矩阵\"]\n    PHI ==> FLOW[\"完整工作流 6 步<br/>CONTEXT.md 维护 · ADR 触发条件\"]",
+  "isSvg": false
+ }
+]

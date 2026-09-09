@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Bedrock CRIS——EU 数据驻留与 GDPR 合规",
+  "code": "graph TD\n    C3[\"3 个关键概念<br/>两种 CRIS Scope\"] --> GDPR[\"GDPR 对齐与安全性设计<br/>Geo CRIS 静态性 vs 动态合规张力\"]\n    GDPR --> AUDIT[\"透明性审计性<br/>日志 source-region 中心化<br/>CloudTrail 加 MIL 双层\"]\n    AUDIT --> IAM[\"IAM 延伸为数据治理前置防线<br/>Profile 级粒度\"]\n    IAM --> CHOICE[\"Global vs EU CRIS<br/>是风险偏好的显式声明\"]",
+  "isSvg": false
+ }
+]

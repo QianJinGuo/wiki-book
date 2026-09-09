@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Agent-EvalKit——AWS 开源 CLI Agent 评测工具包",
+  "code": "graph TD\n    K[\"关键设计: CLI 形式<br/>AI 编码助手即评测引擎\"] --> P6[\"六阶段流水线<br/>覆盖完整评测生命周期\"]\n    P6 --> D3[\"三个评测维度<br/>Faithfulness 是隐藏致命失败模式<br/>优先于 Response Quality\"]\n    D3 --> OT[\"OTel 追踪: 行为诊断可操作<br/>LLM-as-judge 需第三方库补充\"]\n    OT --> CI[\"集成 CI/CD: 代码级修复建议闭环\"]",
+  "isSvg": false
+ }
+]

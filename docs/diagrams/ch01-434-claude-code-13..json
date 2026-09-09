@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Code 源码深度解析——13 核心机制",
+  "code": "graph TD\n    SP[\"System Prompt 动态组装\"] --> CONC[\"工具并发调度隐性约束<br/>声明并发安全性\"]\n    CONC --> DELTA[\"deferred_tools_delta<br/>Prefix Cache 与动态状态正交解法\"]\n    DELTA --> MC[\"microCompact 注意力屏蔽<br/>五层压缩层次设计\"]\n    MC --> PLAN[\"Plan 模式权限层约束<br/>渐进式权限升级防死循环\"]\n    PLAN --> HOOK[\"Hooks 平台化基础设施<br/>两阶段 AI 分类器工程经济学\"]\n    HOOK --> MEM[\"CLAUDE.md 跨会话记忆的局限<br/>Fork 模式长会话共享\"]",
+  "isSvg": false
+ }
+]

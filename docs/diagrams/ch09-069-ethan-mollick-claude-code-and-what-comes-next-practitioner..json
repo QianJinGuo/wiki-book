@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Ethan Mollick 实测 Claude Code——从业者视角",
+  "code": "graph TD\n    PHE[\"现象级实测<br/>能力突变两个关键\"] --> T4[\"四个 Magic Tricks<br/>Compaction: Memento 比喻<br/>Skills: Matrix 比喻<br/>Subagents · MCP\"]\n    T4 --> GUIDE[\"非程序员实战指南\"]\n    GUIDE --> CASE[\"案例: 历史世界模拟器\"]\n    CASE --> RISK[\"风险与警告<br/>三个独到洞察\"]",
+  "isSvg": false
+ }
+]

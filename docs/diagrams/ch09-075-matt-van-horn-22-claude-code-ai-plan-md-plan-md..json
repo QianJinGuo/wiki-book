@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Matt Van Horn 的 22 个 Claude Code 黑客技巧",
+  "code": "graph TD\n    PHI[\"核心反直觉<br/>80% 计划加 20% 执行<br/>让 AI 写 plan.md 但不读 plan.md<br/>委托代理最优分离\"] --> C6[\"22 个技巧六大类<br/>计划循环 · 输入并行 · 远程权限<br/>引擎分工 · 内容信号 · 工程基建\"]\n    C6 --> TOOLS[\"工具栈: cmux 6 标签页并行<br/>声音钩子 · Agent Cookie 登录真实世界\"]\n    TOOLS --> RISK[\"成瘾是真实风险非边缘警告\"]",
+  "isSvg": false
+ }
+]

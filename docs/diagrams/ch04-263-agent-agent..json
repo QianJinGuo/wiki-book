@@ -1,0 +1,7 @@
+[
+ {
+  "title": "高德伴行 Agent——空间智能高可用架构",
+  "code": "graph TD\n    SUP[\"Supervisor 驱动双内核<br/>可控自由度优先\"] --> REACT[\"ReAct 推理引擎四大首创优化<br/>推理轮次压缩就是用户体验\"]\n    SUP --> SKILL[\"Skill 动态注入三层筛选<br/>解全量注入三重困境\"]\n    SUP --> SPT[\"时空上下文统一状态层<br/>五层粒度乘四类记忆表征<br/>KV 加向量加置信度门控\"]\n    SPT --> PRISM[\"PRISM 多智能体增益分解\"]",
+  "isSvg": false
+ }
+]
