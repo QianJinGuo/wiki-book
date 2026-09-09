@@ -1,0 +1,8 @@
+%% title: Sub-Agent 与 Agent Team 选型指南
+graph TD
+    J["核心判断准则<br/>上下文边界才是架构维度"] --> SUB["Sub-Agent<br/>硬约束多 适用边界窄<br/>description 是架构合约"]
+    J --> TEAM["Agent Team<br/>协作开销指数级<br/>Task List 结构化协调"]
+    TRAP["最大的坑: 按岗位拆<br/>而非按上下文边界拆"] -.认知陷阱.-> J
+    SUB --> O["五种编排原语选择"]
+    TEAM --> O
+    O --> POS["核心立场<br/>从单 Agent 开始<br/>用证据而非预感判断拆分"]

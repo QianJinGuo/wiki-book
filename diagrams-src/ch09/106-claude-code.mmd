@@ -1,0 +1,7 @@
+%% title: Claude Code 性能基准评测
+graph TD
+    M["核心指标体系<br/>吞吐量 · 延迟 · Token 效率"] --> TOOL["工具系统性能<br/>并发模型 · 延迟加载<br/>结果大小控制"]
+    TOOL --> CACHE["缓存策略<br/>Prefix Cache 优化<br/>Prompt Caching 策略"]
+    CACHE --> CTX["上下文管理<br/>Compact 机制<br/>Subagent 上下文隔离"]
+    CTX --> OPT["优化实践<br/>环境变量 · Hooks 影响 · 任务分解"]
+    OPT --> BM["行业基准对比<br/>SWE-bench · 成本效率"]

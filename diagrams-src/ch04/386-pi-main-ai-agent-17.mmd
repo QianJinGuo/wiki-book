@@ -1,0 +1,8 @@
+%% title: pi-main 源码拆解——顶尖 AI Agent 工程设计 17 维度
+graph TD
+    P["核心原则: 轻核心重扩展"] --> LOOP["双层 while 主循环<br/>分离会话终止与本轮终止"]
+    LOOP --> ERR["isError 统一返回结构<br/>LLM 自己驱动纠错"]
+    ERR --> TOOL["工具系统三件事<br/>Provider Function Calling 输出"]
+    TOOL --> MEM["记忆: JSONL 事件流<br/>结构化压缩迭代省 50% Token"]
+    MEM --> HUMAN["人机协同: 异步 steer<br/>模型热切换 · 多模态优雅降级"]
+    HUMAN --> GAP["三缺口: 安全 · 可观测 · 评估<br/>沙盒兜底哲学"]

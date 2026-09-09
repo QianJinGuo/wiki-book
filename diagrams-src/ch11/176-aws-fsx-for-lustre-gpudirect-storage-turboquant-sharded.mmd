@@ -1,0 +1,7 @@
+%% title: FSx for Lustre 加 GPUDirect Storage 加 TurboQuant 分片模型加载
+graph TD
+    B["Blackwell 时代模型加载瓶颈<br/>CPU bounce buffer 不可压缩"] --> S["FSx for Lustre 加 GDS<br/>旁路 CPU 直达 GPU"]
+    S --> SH["Sharded Parallel Loading 4 阶段<br/>Pre-sharding 加预量化是核心杠杆"]
+    SH --> TQ["TurboQuant<br/>KV 缓存 6 倍压缩<br/>决定能跑多大上下文"]
+    TQ --> MON["GDS fallback 是静默的<br/>须建可用性告警"]
+    MON --> COST["成本: 7x24 高利用率选 FSx<br/>低频选 EBS 加 S3 预热"]

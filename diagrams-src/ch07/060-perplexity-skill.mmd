@@ -1,0 +1,6 @@
+%% title: Perplexity 内部 Skill 设计指南——四维体系与维护方法论
+graph TD
+    D4["Skill 四维体系<br/>是目录 hub-and-spoke · 是格式<br/>是可调用的 · 是渐进式三层 token"] --> WHEN["什么时候需要 Skill<br/>每个 Skill 都是一份税"]
+    WHEN --> B5["构建五步法<br/>Step 0 先写评测含负例<br/>Description 以 Load when 开头"]
+    B5 --> MAINT["维护: Gotchas 飞轮<br/>从小处随犯错丰富"]
+    MAINT --> WARN["警惕超距作用<br/>新 Skill 会破坏旧 Skill"]

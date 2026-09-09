@@ -1,0 +1,13 @@
+%% title: Claude Code Agent Teams 架构分析
+graph TD
+    B["三种多 Agent 形态边界"] --> sub4["四大架构组件"]
+    subgraph sub4["四大架构组件"]
+        TL["Team Lead"]
+        TM["Teammates"]
+        TK["Task List 协作核心<br/>结构化协调非聊天协调"]
+        MBX["Mailbox 精准定位"]
+    end
+    sub4 --> HK["Hooks 质量检查点<br/>从自评到他评"]
+    HK --> ISO["Context 隔离是最大价值"]
+    ISO --> PIT["权限继承的坑<br/>capability lease 模式<br/>Plan Approval 三级风险"]
+    PIT -.不适合生产.-> LB["设计借鉴: 混合架构"]

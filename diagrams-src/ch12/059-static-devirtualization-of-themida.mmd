@@ -1,0 +1,8 @@
+%% title: Themida 静态去虚拟化——引导符号求值
+graph TD
+    WHY["为什么不用模式匹配<br/>handler 微改即静默失效"] --> GSE["核心方法: Guided Symbolic Evaluation<br/>提升到 SSA IR"]
+    GSE --> RSP["RSP 保持具体初值<br/>未知分支逐步具体化"]
+    RSP --> PASS["优化 Pass 套件<br/>Constant Promotion 等<br/>Pass-feeding-pass 复利"]
+    PASS --> LOW["Lowering IR<br/>BLARE2 关键贡献"]
+    LOW --> VJCC["Themida VJCC 特殊处理<br/>virtual branching 与 VMEXIT"]
+    VJCC --> RES["跨版本通用结果<br/>通用优化打败 VM 特定知识"]
