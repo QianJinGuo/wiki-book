@@ -1,4 +1,5 @@
 %% title: Quick 加 AgentCore 打造对话式 FinOps 助手
 graph TD
-    C3["三大组件<br/>Quick Chat Agent MCP 客户端<br/>AgentCore Runtime · Cognito"] ==> CROSS["跨账号模式<br/>最小权限设计"]
-    CROSS ==> BOUND["OAuth 2LO 安全边界<br/>Serverless MCP 运维边界<br/>对话式 FinOps 局限"]
+    C3["三大组件: Quick Chat Agent<br/>加 AgentCore Runtime 加 Cognito"] ==> CROSS["跨账号模式与最小权限"]
+    CROSS ==> BOUND["OAuth 2LO 安全边界<br/>Serverless MCP 运维边界"]
+    BOUND ==> LIMIT["对话式 FinOps 的局限性"]
