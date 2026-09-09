@@ -1,0 +1,6 @@
+%% title: DeepSeek 成本迁移——从 KV Cache 到 Harness 的系统层
+graph TD
+    MAIN["技术主线: 成本从模型侧搬到系统层<br/>V2 到 V4 效率演进 · 成本分层"] --> KV["KV Cache 不是边角料<br/>Engram 信号 · TileLang 到 TileKernels"]
+    KV --> H["Harness 层: 成本入口<br/>ETCLOVG 七层<br/>Harness 承担的实际成本"]
+    H --> JUDGE["核心判断: 能否定义工作负载<br/>硬件分工重构 · Jevons Paradox"]
+    JUDGE --> P["实践: 重设上下文策略<br/>缓存思维看工作流<br/>Harness 成本入 TCO"]

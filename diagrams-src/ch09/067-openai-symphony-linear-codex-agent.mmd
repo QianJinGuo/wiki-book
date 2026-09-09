@@ -1,0 +1,8 @@
+%% title: OpenAI Symphony——Linear 即 Codex Agent 控制平面
+graph TD
+    TH["从 agent 写代码<br/>到管理一群 agent"] --> M1["Issue 与 Agent Workspace 一一映射"]
+    M1 --> M2["Ticket 抽象承载更大工作单元"]
+    M2 --> M3["Agent 也能创造新工作"]
+    M3 --> OUT["产出: 前三周 PR 增长 500%<br/>PM 与设计师直接参与"]
+    OUT --> TECH["技术底座: 极简仓库<br/>Codex App Server headless JSON-RPC"]
+    TECH -.教训.-> LES["不要把 agent 当状态机死板节点"]
