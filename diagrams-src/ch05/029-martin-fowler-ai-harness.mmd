@@ -1,4 +1,6 @@
 %% title: Martin Fowler AI 研发提醒——Harness 承重层
 graph TD
-    CORE["核心洞察: 非确定性进入研发链路<br/>最危险是系统相信 AI 没犯错"] ==> KEY["关键论点<br/>Vibe Coding 的边界<br/>测试重构不是旧包袱<br/>Harness 是非确定性适配层<br/>工程师进入中间循环"]
-    KEY ==> SIX["六件小事的系统解读<br/>立即落地 中期能力 长期方向"]
+    CORE["核心洞察: 非确定性进入研发链路<br/>最危险是系统相信 AI 没犯错"] ==> KEY["Harness 是非确定性适配层"]
+    KEY ==> LOOP["工程师进入中间循环<br/>工程角色重定义"]
+    KEY ==> SIX["六件小事的系统解读"]
+    SIX ==> PATH["立即落地 · 中期能力 · 长期方向"]

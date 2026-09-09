@@ -1,4 +1,7 @@
 %% title: Harness 是什么——OpenClaw Hermes 与 Claude Code 的演绎
 graph TD
-    CMP["三框架对比<br/>OpenClaw 先把 Agent 管住<br/>Hermes 先让 Agent 长本事<br/>Claude Code 第三条路"] ==> L7["Harness 七层模型<br/>角色规则 · 记忆 · 上下文加载<br/>稳定执行 · 有效循环<br/>评分可观测 · 中断恢复"]
-    L7 ==> INS["三种路线三种工程哲学<br/>一个核心矛盾 · 避坑指南"]
+    CMP["三框架对比<br/>OpenClaw 先把 Agent 管住<br/>Hermes 先让 Agent 长本事<br/>Claude Code 第三条路"] ==> L7["Harness 七层模型"]
+    L7 ==> L1["角色规则 · 记忆 · 上下文加载"]
+    L7 ==> L2["稳定执行 · 有效循环"]
+    L7 ==> L3["评分可观测 · 中断恢复"]
+    CMP ==> INS["三种哲学 · 核心矛盾 · 避坑指南"]
