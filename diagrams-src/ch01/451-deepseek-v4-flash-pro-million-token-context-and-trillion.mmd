@@ -1,5 +1,5 @@
 %% title: DeepSeek V4 Flash 与 Pro——百万上下文与万亿参数推理
 graph TD
-    DUAL["双版本策略<br/>Pro 1.6T 激活 49B 深度推理<br/>Flash 284B 激活 13B 高速响应"] => ATTN["混合注意力 CSA 加 HCA<br/>1M token FLOPs 仅 V3.2 的 27%<br/>KV 显存仅 10%"]
+    DUAL["双版本策略<br/>Pro 1.6T 激活 49B 深度推理<br/>Flash 284B 激活 13B 高速响应"] ==> ATTN["混合注意力 CSA 加 HCA<br/>1M token FLOPs 仅 V3.2 的 27%<br/>KV 显存仅 10%"]
     ATTN => STAB["mHC 流形约束超连接<br/>信号放大 3000x 降到 2x 内<br/>Muon 二阶优化器"]
     STAB => DEPLOY["部署工程真实成本<br/>Pro FP8 约 865GB<br/>INT4 量化降至 4x H200"]
