@@ -1,0 +1,5 @@
+%% title: Bedrock AgentCore RLM——突破上下文窗口限制
+graph TD
+    FLIP["RLM: 从上下文容器到程序化环境<br/>文档是可程序化探索的主动环境<br/>从记忆一切到按需查询"] ==> FLAWS["现有方案缺陷: Base 硬截断<br/>Long Context 成本爆炸加中间迷失<br/>硬性上限依然存在"]
+    FLAWS ==> INTERPRETER["Code Interpreter 关键角色<br/>沙盒 Python 加 持久会话状态<br/>加 沙盒内 API 调用"]
+    INTERPRETER ==> P["何时用 RLM · 子模型经济学<br/>混合路径: 向量检索加 RLM"]
