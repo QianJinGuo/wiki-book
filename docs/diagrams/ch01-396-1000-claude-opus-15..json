@@ -1,0 +1,7 @@
+[
+ {
+  "title": "微软 1000 行代码把 Claude Opus 提升 15 分",
+  "code": "graph TD\n    CASE[\"微软 1000 行代码<br/>Terminal as Harness 加 15 分\"] ==> PHILO[\"三大工程优势<br/>Minimalist Harness 实证意义\"]\n    PHILO ==> EXTEND[\"适用场景扩展\"]",
+  "isSvg": false
+ }
+]

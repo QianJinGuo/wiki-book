@@ -1,0 +1,7 @@
+[
+ {
+  "title": "清华自进化 Skill 双星",
+  "code": "graph TD\n    DIAG[\"EmbodiSkill 诊断层: 判断哪里出问题<br/>四种反思类型 加 执行反思更新螺旋\"] ==> GEN[\"SkillEvolver 生成层: 自动生成改进方案<br/>方案多样性 加 轨迹对比 加 机械检查\"]\n    GEN ==> SPLIT[\"诊断层与生成层分工<br/>为什么是技能而不是模型\"]",
+  "isSvg": false
+ }
+]

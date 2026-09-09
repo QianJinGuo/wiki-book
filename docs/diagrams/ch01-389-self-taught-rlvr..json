@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Self-Taught RLVR 综述",
+  "code": "graph TD\n    FRAME[\"三种 Self 框架: RLSD 加 NPO<br/>加 CoPD 协同进化蒸馏\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

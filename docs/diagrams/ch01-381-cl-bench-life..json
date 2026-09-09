@@ -1,0 +1,7 @@
+[
+ {
+  "title": "腾讯混元 CL-Bench Life——大模型读懂日常生活",
+  "code": "graph TD\n    BENCH[\"CL-Bench Life<br/>大模型日常生活理解评测\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

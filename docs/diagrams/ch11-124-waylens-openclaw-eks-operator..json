@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Waylens OpenClaw——EKS 加 Operator 改造案例",
+  "code": "graph TD\n    PAIN[\"痛点: Agent 平台运维<br/>吃掉业务时间\"] ==> L3[\"方案: EKS 加 CRD 加 Operator<br/>三层架构\"]\n    L3 ==> RESULT[\"改造成果与一键部署\"]\n    RESULT ==> INS[\"三个独有贡献\"]",
+  "isSvg": false
+ }
+]

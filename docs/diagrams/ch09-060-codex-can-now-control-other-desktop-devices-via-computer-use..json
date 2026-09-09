@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Codex 可控制其他桌面设备",
+  "code": "graph TD\n    REMOTE[\"Codex 远程控制: 手机控 Mac<br/>锁屏休眠也能工作\"] ==> LIMITS[\"瓶颈: Computer Use 需解锁唤醒<br/>探索连接其他桌面设备\"]\n    LIMITS ==> CMP[\"Anthropic 类似功能同受限\"]",
+  "isSvg": false
+ }
+]

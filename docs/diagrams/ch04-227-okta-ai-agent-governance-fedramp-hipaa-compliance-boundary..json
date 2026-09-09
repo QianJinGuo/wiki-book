@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Okta AI Agent Governance——FedRAMP HIPAA 合规边界",
+  "code": "graph TD\n    D3[\"三大治理: Where 运行边界<br/>加 What 资源访问 加 How 行为授权\"] ==> NHI[\"NHI 管理: Universal Directory 注册<br/>唯一身份加指定负责人加短生命周期令牌<br/>Agent 是增长最快最难见的 NHI 类别\"]\n    NHI ==> RISK[\"四大风险: 合规违规 复合泄露<br/>审计失败 AI 停滞<br/>Kill Switch 实时遏制机制\"]",
+  "isSvg": false
+ }
+]

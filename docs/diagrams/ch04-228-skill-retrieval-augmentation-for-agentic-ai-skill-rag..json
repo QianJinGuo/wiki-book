@@ -1,0 +1,7 @@
+[
+ {
+  "title": "清华 Skill-RAG——技能检索增强",
+  "code": "graph TD\n    CORE[\"Skill Retrieval Augmentation<br/>清华 Skill-RAG\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "数据中心 GPU 液冷 vs 风冷——FLOPs 可用率权衡",
+  "code": "graph TD\n    COOLING[\"液冷 vs 风冷: FLOPs 可用率<br/>与工程权衡\"] ==> DETAIL[\"技术细节\"]\n    DETAIL ==> CMP[\"冷却方案对比与适用性\"]\n    CMP ==> INS[\"深度分析与实践启示\"]",
+  "isSvg": false
+ }
+]

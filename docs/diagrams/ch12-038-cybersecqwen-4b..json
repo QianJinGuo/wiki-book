@@ -1,0 +1,7 @@
+[
+ {
+  "title": "CyberSecQwen-4B 安全专用小模型",
+  "code": "graph TD\n    MODEL[\"CyberSecQwen-4B 安全专用模型\"] ==> INSIGHT[\"小专项 vs 大通用: 参数效率<br/>AMD ROCm 生态实战验证\"]\n    INSIGHT ==> SEC[\"安全边界的清醒定位<br/>微调配方高度可迁移\"]",
+  "isSvg": false
+ }
+]
