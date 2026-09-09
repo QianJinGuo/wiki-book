@@ -1,3 +1,5 @@
 %% title: Self-Harness——上海 AI Lab Agent 自我改进
 graph TD
-    STAGES["三阶段闭环: Weakness Mining<br/>加 Harness Proposal 加 保守验证"] ==> RESULTS["MiniMax 42 到 54<br/>Qwen 20 到 37 · GLM 46 到 57<br/>分支搜索与合并"] ==> CASES["补丁改变真实执行轨迹<br/>探索型转工程型加有界探索<br/>加 Middleware 级干预"]
+    STAGES["三阶段: Weakness Mining<br/>加 Harness Proposal 加 保守验证"] ==> RESULTS["MiniMax 42 到 54<br/>Qwen 20 到 37 · GLM 46 到 57"]
+    RESULTS ==> CASES["补丁改变真实执行轨迹<br/>探索型转工程型"]
+    CASES ==> INS["深度分析与实践启示"]
