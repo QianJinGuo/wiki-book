@@ -1,0 +1,5 @@
+%% title: Agent 架构拆解二——Claude Code 工具系统
+graph TD
+    CONTRACT["AgentTool 统一契约<br/>defaultPermission 是工具自带属性<br/>权限绑定工具而非用户场景"] ==> GRADES["三档权限分级<br/>auto confirm block<br/>用户只能调松不能调紧"]
+    GRADES ==> DYNAMIC["运行时风险覆盖静态<br/>assessRisk 依输入改写权限<br/>ls 放行 rm 拦截"]
+    DYNAMIC ==> SUBAGENT["子 Agent 即普通工具<br/>递归不加架构复杂度<br/>两阶段分类器平衡安全效率"]
