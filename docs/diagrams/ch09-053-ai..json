@@ -1,0 +1,7 @@
+[
+ {
+  "title": "腾讯 AI 编码实践",
+  "code": "graph TD\n    PYRAMID[\"成本金字塔五层: 使用习惯 到 模型路由<br/>到 上下文工程 到 代码图谱 到 Agent 架构<br/>可降 70-90% 总成本\"] ==> REVIEW[\"Code Review 信任阶梯<br/>预审员 到 协作者 到 仲裁者<br/>AI 验证前保留人工决策权\"]\n    REVIEW ==> LOOP[\"企业级三重约束: 审计 适配 协作\"]\n    REVIEW ==> SELF[\"SELF Protocol 固化为协议层<br/>自省 经验沉淀 执行纪律\"]",
+  "isSvg": false
+ }
+]

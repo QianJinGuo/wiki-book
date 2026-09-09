@@ -1,0 +1,7 @@
+[
+ {
+  "title": "高德扫街榜 HermesAgent——VLM 加 Skill 架构",
+  "code": "graph TD\n    PHILO[\"确定性流程加 Agent 各司其职<br/>五层架构六段链路\"] ==> TECH[\"Agent 化精排 · 兜底质检<br/>多模态知识库 · 语言驱动生产\"]\n    TECH ==> P[\"工程实践与踩坑\"]\n    TECH ==> REUSE[\"跨场景可复用的核心原则\"]",
+  "isSvg": false
+ }
+]

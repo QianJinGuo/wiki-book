@@ -1,0 +1,7 @@
+[
+ {
+  "title": "SkillX——层次化技能知识库",
+  "code": "graph TD\n    M3[\"三层技能设计 Multi-Level Skills\"] ==> MODULES[\"三大核心模块<br/>层次化设计 · 迭代精炼 · 探索扩展\"]\n    MODULES ==> DATA[\"实验数据\"]\n    DATA ==> INS[\"核心洞察与深度分析\"]",
+  "isSvg": false
+ }
+]

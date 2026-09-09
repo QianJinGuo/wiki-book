@@ -1,0 +1,7 @@
+[
+ {
+  "title": "谁在赢得企业 AI——SaasStr分析",
+  "code": "graph TD\n    SHIFT[\"从模型最强到格局合理<br/>OpenAI 领先优势 41pp 收窄到 8pp<br/>Claude 翻倍 21% 到 48%\"] ==> CHANNEL[\"分发渠道胜过模型性能<br/>Gemini 靠存量合同自然分发<br/>我们已有合同是最快增长路径\"]\n    CHANNEL ==> CODE[\"编码助手是企业 AI 支出<br/>第一个规模化入口\"]\n    CODE ==> MULTI[\"多模型架构从可选优化<br/>变成采购义务\"]",
+  "isSvg": false
+ }
+]

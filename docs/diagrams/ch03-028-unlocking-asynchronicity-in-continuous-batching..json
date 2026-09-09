@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Unlocking Asynchronicity in Continuous Batching",
+  "code": "graph TD\n    INEFF[\"同步批处理的根本性低效\"] ==> CUDA[\"CUDA Streams 并发执行<br/>CUDA Events 跨 Stream 同步<br/>Double Buffering 消除竞争\"]\n    CUDA ==> CARRY[\"Carry-over 机制<br/>跨批次依赖的正确处理\"]\n    CARRY ==> PERF[\"实测性能提升验证<br/>长序列场景最大受益\"]",
+  "isSvg": false
+ }
+]

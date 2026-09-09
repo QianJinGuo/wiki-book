@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Zenjoy AIOps Agent——打通 Prometheus ES 与夜莺",
+  "code": "graph TD\n    DECOUPLE[\"算法与 LLM 职责解耦<br/>确定性计算与不确定性推理分离\"] ==> WINDOWS[\"多窗口分层分析<br/>1h 尖峰 24h 48h 趋势 7d 基线\"]\n    WINDOWS ==> TOKEN[\"Token 治理: 50KB 时序压缩为<br/>1KB 摘要 强制具体 Pod 名防幻觉\"]\n    TOKEN ==> P[\"周期检测演进: ACF FFT 到 STL<br/>到 7 天同时段 IQR 的工程降级\"]",
+  "isSvg": false
+ }
+]

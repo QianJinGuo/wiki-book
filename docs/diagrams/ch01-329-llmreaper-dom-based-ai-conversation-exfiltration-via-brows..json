@@ -1,0 +1,7 @@
+[
+ {
+  "title": "LLMReaper——基于 DOM 的 AI 对话窃取",
+  "code": "graph TD\n    ROOT[\"根本问题: 浏览器扩展权限模型<br/>read all data 权限合法又危险<br/>MutationObserver 标准API滥用\"] ==> TECH[\"Stop 按钮状态检测避免重复抓取<br/>Service Worker 绕过 Same Origin\"]\n    TECH ==> ATTACK[\"LLM 对话成新凭证泄露通道<br/>真实事件: Cyberhaven 260 万用户<br/>GitLab 16 扩展 320 万用户\"]\n    ATTACK ==> P[\"对个人 企业 平台厂商的防御建议\"]",
+  "isSvg": false
+ }
+]

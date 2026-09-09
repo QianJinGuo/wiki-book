@@ -1,0 +1,7 @@
+[
+ {
+  "title": "OpenClaw 瘦身——Nova MME 与 S3 Vector 的 Skill 按需召回",
+  "code": "graph TD\n    SLIM[\"给 OpenClaw 瘦身<br/>Nova MME 多模态嵌入\"] ==> S3V[\"S3 Vector 实现<br/>Skill 按需召回\"]\n    S3V ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

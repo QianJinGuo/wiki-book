@@ -1,0 +1,7 @@
+[
+ {
+  "title": "规格驱动开发与 Harness",
+  "code": "graph TD\n    SPEC[\"Spec 是可接受实现空间的<br/>最小 显式 可验证编码<br/>有损管道是结构性现实\"] ==> L3[\"Harness 三层拆分<br/>Orchestrator 控制面<br/>Knowledge 隐性知识显式化<br/>Delivery 独立于 Agent 的验证判据\"]\n    L3 ==> EVIDENCE[\"验证律: evidence before claims<br/>8 步闸门 任一步失败即停<br/>自修复上限 3 次超限人工\"]\n    L3 ==> METRICS[\"提速 13% 到 28%<br/>返工 34% 到 15%<br/>首轮 review 通过 41% 到 68%\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Code 实践——token 效率提高 71.5 倍",
+  "code": "graph TD\n    L2[\"两层记忆: Obsidian 声明性<br/>加 Graphify 结构性\"] ==> FLOW[\"工作流与记忆 vs 提示词\"]\n    FLOW ==> ZETTEL[\"Zettelkasten 方法的适用性\"]\n    FLOW ==> P[\"会话边界 · 图谱维护 · 与 CLAUDE.md 协同\"]",
+  "isSvg": false
+ }
+]

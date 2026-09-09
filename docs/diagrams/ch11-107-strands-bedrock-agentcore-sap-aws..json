@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Strands 加 AgentCore——SAP 智能采购助手",
+  "code": "graph TD\n    SOLUTION[\"SAP 智能采购助手方案\"] ==> ARCH[\"Strands 框架加 Bedrock AgentCore\"]\n    ARCH ==> FLOW[\"采购流程智能化\"]\n    ARCH ==> INS[\"深度分析与实践启示\"]",
+  "isSvg": false
+ }
+]

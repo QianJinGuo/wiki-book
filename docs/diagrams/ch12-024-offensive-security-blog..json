@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Offensive Security Blog——攻击性安全博客",
+  "code": "graph TD\n    HOT[\"热门文章: MCP Server 供应链风险<br/>Joro AI 安全工具 · Confused Deputy\"] ==> INS1[\"MCP 是 AI 工具链新盲点<br/>Confused Deputy 在 Agent 时代复现\"]\n    INS1 ==> INS2[\"渗透测试行业范式转变<br/>安全与业务的融合\"]\n    INS1 ==> P[\"对工程师 开发团队 管理者的建议\"]",
+  "isSvg": false
+ }
+]

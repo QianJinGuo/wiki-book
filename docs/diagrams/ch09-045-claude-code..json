@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Code 可控性——软规则无法变成硬约束",
+  "code": "graph TD\n    TRAP[\"软规则陷阱与 200k Ghost 指令退化\"] ==> HARNESS[\"Harness 治理对策<br/>Anthropic 的 Harness 设计\"]\n    HARNESS ==> EVALUATOR[\"评估者训练难点\"]\n    HARNESS ==> INS[\"深度分析与实践启示\"]",
+  "isSvg": false
+ }
+]

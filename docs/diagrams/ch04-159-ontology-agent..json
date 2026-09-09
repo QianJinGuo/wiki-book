@@ -1,0 +1,7 @@
+[
+ {
+  "title": "本体论——Agent 事实系统的语义控制面",
+  "code": "graph TD\n    PLANE[\"语义控制面: 是约束层非存储层<br/>四层: 证据 事实 语义控制 动作\"] ==> CLAIM[\"主张账本: claim 带状态有效期来源<br/>candidate 到 validated 到 published<br/>到 retracted\"]\n    CLAIM ==> TRIPLE[\"一条边不够: 三元组藏五个问题<br/>RDF 无时间 时间版本来源须显式\"]\n    TRIPLE ==> LLM[\"大模型提议而不裁断<br/>OWL 推理 SHACL 校验 不可互替\"]",
+  "isSvg": false
+ }
+]

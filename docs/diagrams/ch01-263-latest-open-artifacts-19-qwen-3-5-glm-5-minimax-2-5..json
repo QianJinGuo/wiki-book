@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Latest open artifacts #19——中国实验室前沿推进",
+  "code": "graph TD\n    WAVE[\"开放权重前沿的中国加速\"] ==> MODELS[\"Qwen3.5-397B 多模态推理<br/>GLM-5 744B · MiniMax-M2.5\"]\n    MODELS ==> AGENT[\"OpenThinker-Agent v1<br/>Agentic Reasoning 开放化\"]\n    AGENT ==> SPARSE[\"稀疏注意力与长上下文\"]",
+  "isSvg": false
+ }
+]

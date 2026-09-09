@@ -1,0 +1,7 @@
+[
+ {
+  "title": "EverMind Raven——自进化 Agent Harness",
+  "code": "graph TD\n    L4[\"四阶段: L1 角色化 到 L4 数字生命<br/>自我学习是分水岭\"] ==> EVEROS[\"EverOS 四层仿生记忆底座<br/>十分之一 Token 超越全量上下文\"]\n    EVEROS ==> MEM3[\"三维记忆: User 加 Agent 加 Knowledge\"]\n    MEM3 ==> IDLE[\"10 万预置 Skill 加闲时自修改<br/>EverBrain 动态微调下沉权重\"]",
+  "isSvg": false
+ }
+]

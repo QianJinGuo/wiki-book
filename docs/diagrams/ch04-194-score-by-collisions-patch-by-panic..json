@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Score by Collisions——碰撞计分与恐慌补丁",
+  "code": "graph TD\n    MODEL[\"严重性由碰撞计数驱动<br/>两人独立发现即上调<br/>加 exploit 为 Critical P0 立即修复\"] ==> LINUS[\"Linus 论断: AI 发现的 bug<br/>大概率已有人捷足先登<br/>cPanel 案例: 顶级团队仍晚两月\"]\n    LINUS ==> RESEARCHER[\"研究者应附补丁而非仅报告<br/>积累信任资本\"]\n    RESEARCHER ==> ENTERPRISE[\"补丁竞速结束 架构免疫开始<br/>临时架构 rootless 容器 特性开关\"]",
+  "isSvg": false
+ }
+]

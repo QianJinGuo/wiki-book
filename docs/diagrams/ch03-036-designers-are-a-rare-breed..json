@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Designers are a rare breed——设计师是稀缺物种",
+  "code": "graph TD\n    SCARCE[\"稀缺性是结构性的<br/>占劳动力 0.25% · 16% 企业有设计流程\"] ==> TOOLS[\"工具提升下限不扁平化天花板<br/>Claude Design 是设计普及非替代\"]\n    TOOLS ==> CRAFT[\"鉴赏力不等于手艺<br/>双重稀缺的内核\"]\n    CRAFT ==> LEVERAGE[\"AI 时代: 更多杠杆而非更少\"]",
+  "isSvg": false
+ }
+]

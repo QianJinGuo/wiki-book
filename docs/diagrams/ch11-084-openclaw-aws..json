@@ -1,0 +1,7 @@
+[
+ {
+  "title": "OpenClaw 从个人助手到客服——信任模型翻转",
+  "code": "graph TD\n    FLIP[\"信任模型根本性翻转<br/>个人助手到客服\"] ==> L4[\"四层隔离机制协同设计<br/>软约束与硬约束互补\"]\n    L4 ==> KNOWLEDGE[\"知识注入: 静态动态分离<br/>AWS 分层安全设计\"]\n    KNOWLEDGE ==> ROLES[\"对开发者 安全团队<br/>架构师 产品经理的启示\"]",
+  "isSvg": false
+ }
+]

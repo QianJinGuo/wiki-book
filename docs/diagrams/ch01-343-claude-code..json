@@ -1,0 +1,7 @@
+[
+ {
+  "title": "用 Claude Code 做需求调研——多了一个产品经理",
+  "code": "graph TD\n    USECASE[\"用 Claude Code 做需求调研\"] ==> PROCESS[\"调研流程与访谈设计\"]\n    PROCESS ==> OUTPUT[\"产出物与迭代\"]\n    OUTPUT ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

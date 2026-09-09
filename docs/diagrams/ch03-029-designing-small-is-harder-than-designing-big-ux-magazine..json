@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Designing Small Is Harder than Designing Big",
+  "code": "graph TD\n    TENSION[\"系统性思维与增量交付的张力\"] ==> TRAP[\"水平切片的陷阱\"]\n    TRAP ==> UNIT[\"最小可用价值单元的定义\"]\n    UNIT ==> ROLE[\"设计师角色的根本转变\"]",
+  "isSvg": false
+ }
+]

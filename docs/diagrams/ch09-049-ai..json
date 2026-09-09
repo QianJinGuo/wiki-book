@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AI 编码效率分析方法论",
+  "code": "graph TD\n    SHIFT[\"度量范式: 产出速度到价值流速<br/>DORA 四指标需改造非照搬\"] ==> TOKEN[\"Token 经济学: 统一度量与诊断信号<br/>每千 Token 有效产出按任务建基线<br/>消耗异常是腐化早期信号\"]\n    TOKEN ==> TRAP[\"度量陷阱: Goodhart 定律<br/>单一指标必然失真\"]\n    TRAP ==> LEVER[\"效率最终杠杆在工程结构<br/>规格执行验证闭环超过模型选择\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "长周期 Agent——从 Ralph Loop 到可接管 Harness",
+  "code": "graph TD\n    TOPIC[\"从 Ralph Loop 到可接管 Harness\"] ==> DRIFT[\"漂移问题与治理框架\"]\n    DRIFT ==> HANDOVER[\"可接管的工程标准\"]\n    HANDOVER ==> INS[\"深度分析与实践启示\"]",
+  "isSvg": false
+ }
+]

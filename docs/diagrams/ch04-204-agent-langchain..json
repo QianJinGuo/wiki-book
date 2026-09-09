@@ -1,0 +1,7 @@
+[
+ {
+  "title": "改进 Agent——数据挖掘视角与 LangChain",
+  "code": "graph TD\n    TRACE[\"Trace 是 Agent 改进的货币\"] ==> SANDWICH[\"Harness 微调 Harness 三明治策略<br/>评测集即训练数据\"]\n    SANDWICH ==> JUDGE[\"Trace Judge Model 小模型低成本<br/>Scaling Dreaming 规模化造梦\"]\n    JUDGE ==> P[\"LangChain 实践与核心公式\"]",
+  "isSvg": false
+ }
+]

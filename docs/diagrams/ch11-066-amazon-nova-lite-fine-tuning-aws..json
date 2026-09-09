@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Nova Lite 微调——高性价比视觉检测实践",
+  "code": "graph TD\n    VALID[\"微调策略有效性验证\"] ==> COST[\"成本效益核心优势\"]\n    COST ==> FINDS[\"技术实施关键发现<br/>局限性与注意事项\"]\n    FINDS ==> P[\"何时选微调而非提示词<br/>最佳实践与成本控制\"]",
+  "isSvg": false
+ }
+]

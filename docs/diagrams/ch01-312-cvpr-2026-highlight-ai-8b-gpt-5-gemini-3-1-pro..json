@@ -1,0 +1,7 @@
+[
+ {
+  "title": "CVPR 2026 Highlight——8B 小模型反超 GPT-5",
+  "code": "graph TD\n    PAPER[\"CVPR 2026 Highlight Top 3%<br/>CMU 加哈佛联合<br/>像电影人一样看视频\"] ==> RESULT[\"8B Qwen3-VL 后训练<br/>反超 GPT-5 与 Gemini 3.1 Pro\"]\n    RESULT ==> INS[\"深度分析\"]\n    RESULT ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

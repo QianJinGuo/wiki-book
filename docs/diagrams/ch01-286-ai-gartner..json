@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AI 驱动的裁员没有商业意义——Gartner",
+  "code": "graph TD\n    MYTH[\"裁员与 AI 投资回报没有联系<br/>裁员被误用为进展代理指标<br/>最高 ROI 企业在培训员工\"] ==> AUGMENT[\"automate-to-augment 优于替代<br/>自动化低风险任务释放人力<br/>投入更高价值服务\"]\n    AUGMENT ==> KNOWLEDGE[\"机构知识不可替代<br/>无法自动化已不再拥有的专业知识\"]\n    KNOWLEDGE ==> CASE[\"Block 裁 40% 争议案例<br/>决策桌上谁讨论人力成本\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Managed Agents——官方 Harness 平台指南",
+  "code": "graph TD\n    PARADIGM[\"从 API 调用到平台即服务<br/>四元组核心模型设计逻辑\"] ==> LIMITS[\"多智能体编排的当前限制<br/>定价双因素模型\"]\n    LIMITS ==> CMP[\"与竞品的分层对比<br/>Web 搜索与提示词缓存工程影响\"]\n    CMP ==> P[\"何时选 Managed Agents<br/>MCP 集成价值 · 成本优化\"]",
+  "isSvg": false
+ }
+]

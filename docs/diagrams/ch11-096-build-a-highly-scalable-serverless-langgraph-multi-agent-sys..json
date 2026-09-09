@@ -1,0 +1,7 @@
+[
+ {
+  "title": "高可扩展 Serverless LangGraph 多 Agent 系统",
+  "code": "graph TD\n    COMPAT[\"Serverless 与 LangGraph 架构互补\"] ==> L3[\"多 Agent 并行三层解耦<br/>显式图模型管理依赖\"]\n    L3 ==> PROD[\"Memory 加可观测性<br/>解决生产核心挑战<br/>DynamoDB Persona 跨会话持久化\"]\n    PROD ==> TRADEOFF[\"Docker 容器化权衡<br/>Campaign Review 编排场景\"]",
+  "isSvg": false
+ }
+]

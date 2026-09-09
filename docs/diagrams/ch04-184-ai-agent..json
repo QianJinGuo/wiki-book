@@ -1,0 +1,7 @@
+[
+ {
+  "title": "企业 AI 的非技术困境——本体驱动与知识治理",
+  "code": "graph TD\n    QUESTION[\"本体是技术问题还是管理问题<br/>技术已不成问题 管理才是瓶颈\"] ==> GOVERN[\"知识治理的落地路径\"]\n    GOVERN ==> DEBT[\"亮点工程背后的技术债陷阱<br/>两种错误动机\"]\n    DEBT ==> MIRROR[\"蒸汽机到电动机的历史镜鉴\"]\n    MIRROR ==> BABY[\"AI Native 组织的 baby 状态实验\"]",
+  "isSvg": false
+ }
+]

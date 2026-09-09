@@ -1,0 +1,7 @@
+[
+ {
+  "title": "深势科技携手阿里云 AgentRun——AI4S 科研 Agent",
+  "code": "graph TD\n    AI4S[\"AI4S 特殊性: 从辅助工具<br/>到原生范式\"] ==> C4[\"科研 Agent 四大工程挑战\"]\n    C4 ==> SOLUTION[\"AgentRun 技术解法<br/>Serverless 加安全沙箱标配\"]\n    SOLUTION ==> MCP[\"MCP 市场: 工具链标准化<br/>TCO 降低 60%\"]",
+  "isSvg": false
+ }
+]

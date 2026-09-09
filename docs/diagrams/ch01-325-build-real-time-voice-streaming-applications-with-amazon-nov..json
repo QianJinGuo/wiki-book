@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Nova Sonic 加 WebRTC——实时语音流应用",
+  "code": "graph TD\n    CORE[\"Nova Sonic 实时语音流应用\"] ==> WEBRTC[\"WebRTC 集成方案\"]\n    WEBRTC ==> INS[\"深度分析\"]\n    WEBRTC ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

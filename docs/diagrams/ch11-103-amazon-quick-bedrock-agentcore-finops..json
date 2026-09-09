@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Quick 加 AgentCore 打造对话式 FinOps 助手",
+  "code": "graph TD\n    C3[\"三大组件: Quick Chat Agent<br/>加 AgentCore Runtime 加 Cognito\"] ==> CROSS[\"跨账号模式与最小权限\"]\n    CROSS ==> BOUND[\"OAuth 2LO 安全边界<br/>Serverless MCP 运维边界\"]\n    BOUND ==> LIMIT[\"对话式 FinOps 的局限性\"]",
+  "isSvg": false
+ }
+]

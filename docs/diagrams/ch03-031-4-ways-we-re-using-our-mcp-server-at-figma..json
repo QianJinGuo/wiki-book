@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Figma 自己使用 MCP Server 的四种方式",
+  "code": "graph TD\n    OVERVIEW[\"Figma 内部 MCP Server 用法概览\"] ==> W1[\"方式 1: Slides 创建与刷新\"]\n    W1 ==> W23[\"其余三种用法\"]\n    W23 ==> INS[\"深度分析与实践启示\"]",
+  "isSvg": false
+ }
+]

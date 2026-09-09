@@ -1,0 +1,7 @@
+[
+ {
+  "title": "扣子 3.0——把 Codex 与 Claude Code 拉进一个项目",
+  "code": "graph TD\n    BRIDGE[\"coze-bridge: 云编排与本地执行的桥<br/>生成命令 到 本地执行 到 自动识别<br/>本地 Agent 是高权限入口\"] ==> PIPELINE[\"六 Agent 接力流水线<br/>调研 到 写稿 到 改平台 到 做 PPT<br/>项目即共享上下文 不切窗口\"]\n    PIPELINE ==> REMOTE[\"远程操控: Agent 走出办公桌<br/>手机模糊指令跨网操作 Mac\"]\n    REMOTE ==> PHILO[\"两条多 Agent 路线编排哲学之争<br/>待完善: 延迟与安全\"]",
+  "isSvg": false
+ }
+]

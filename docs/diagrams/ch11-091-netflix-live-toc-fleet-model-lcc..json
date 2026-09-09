@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Netflix Live 运营——TOC Fleet 与 LCC 分层指挥",
+  "code": "graph TD\n    BOC[\"BOC 广播运营中心<br/>信号冗余的航空级哲学\"] ==> FLEET[\"TOC Fleet Model<br/>大规模并发运营分工\"]\n    FLEET ==> LCC[\"Live Command Center<br/>38M events 可观测挑战\"]\n    LCC ==> LOL[\"LOL 四级预警与事件分级<br/>follow-the-sun 国际扩展\"]",
+  "isSvg": false
+ }
+]

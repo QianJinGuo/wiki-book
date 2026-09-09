@@ -1,0 +1,7 @@
+[
+ {
+  "title": "规模化更优决策——数学优化在直觉失效处",
+  "code": "graph TD\n    POSITION[\"规定性分析: 演绎 vs ML 归纳<br/>ML 预测 加 优化决策\"] ==> F4[\"四步框架: Discover 到 Model<br/>到 Solve 到 Architect\"]\n    F4 ==> CASES[\"BMW 加 10% · DH 省 24%<br/>Red Cross 省 7%\"]\n    CASES ==> REUSE[\"ROaDS 与 WISE 可复用框架\"]",
+  "isSvg": false
+ }
+]

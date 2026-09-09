@@ -1,0 +1,7 @@
+[
+ {
+  "title": "李继刚 Skills 系列四——表达写作类 Skill",
+  "code": "graph TD\n    SERIES[\"ljg Skills 系列四: 表达写作类\"] ==> LAYERS[\"表达的三个层次\"]\n    LAYERS ==> PHILOSOPHY[\"Skill 设计的方法论哲学<br/>在工作流中的应用\"]\n    PHILOSOPHY ==> ADVICE[\"三个递进建议与工具对比\"]",
+  "isSvg": false
+ }
+]

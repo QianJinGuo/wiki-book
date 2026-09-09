@@ -1,0 +1,7 @@
+[
+ {
+  "title": "CLI Agent 模式——MCP 与 Shell Agent",
+  "code": "graph TD\n    MCP[\"MCP 是工具调用通用语<br/>Resources 加 Tools 两层抽象\"] ==> SHELL[\"Shell 是 Agent 执行环境<br/>进程生命周期 并发 环境隔离\"]\n    SHELL ==> PIPE[\"管道组合是核心设计模式<br/>工具即过滤器 标准格式传递\"]\n    PIPE ==> RELY[\"可靠性是工程分水岭<br/>超时 重试 退出码 沙箱\"]",
+  "isSvg": false
+ }
+]

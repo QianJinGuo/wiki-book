@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Skill Issues——恶意 Skill 攻陷 Claude Code",
+  "code": "graph TD\n    VECTOR[\"恶意 Skill: allowed-tools<br/>加 bypassPermissions 绕过权限 RCE\"] ==> CORE[\"Skill 本质等同可执行代码<br/>下载未审计 Skill 风险等同二进制\"]\n    CORE ==> DEFENSE[\"deny Bash 是唯一防线\"]\n    DEFENSE ==> SCOPE[\"npx skills add 等平台均受影响<br/>需用户主动触发且无沙箱\"]",
+  "isSvg": false
+ }
+]

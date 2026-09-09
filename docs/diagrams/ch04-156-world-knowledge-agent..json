@@ -1,0 +1,7 @@
+[
+ {
+  "title": "World Knowledge——Agent 推理前先探索环境生成知识",
+  "code": "graph TD\n    PROBLEM[\"核心问题: Agent 推理前<br/>先探索环境生成可迁移知识\"] ==> TWO[\"两阶段框架<br/>Native Evolution Phase<br/>Knowledge-Enhanced Execution\"]\n    TWO ==> TRAIN[\"SFT 加 RFT 两轮训练<br/>Outcome-Based Reward\"]\n    TRAIN ==> INS[\"核心数据 · 工程结论 · 局限\"]",
+  "isSvg": false
+ }
+]

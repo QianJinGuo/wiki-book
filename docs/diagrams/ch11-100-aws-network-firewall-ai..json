@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Network Firewall 规则冲突 AI 实时检测",
+  "code": "graph TD\n    PRINCIPLE[\"核心原则: 代码负责发现冲突<br/>AI 负责解释冲突\"] ==> COVERAGE[\"多维冲突检测<br/>Suricata 加 IP ACL 加 Domain List<br/>STRICT_ORDER 语义显式教给 LLM\"]\n    COVERAGE ==> ARCH[\"CloudTrail 加 EventBridge 加 Lambda<br/>配置即审计 · 一键部署\"]\n    ARCH ==> SVG[\"SVG 可视化让冲突一目了然\"]",
+  "isSvg": false
+ }
+]

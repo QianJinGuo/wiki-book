@@ -1,0 +1,7 @@
+[
+ {
+  "title": "从提需求到部署发布——全 AI 自动化的效能跃升",
+  "code": "graph TD\n    FLOW[\"提需求到部署发布<br/>全 AI 全自动化\"] ==> EFFICIENCY[\"研发效能全面跃升\"]\n    EFFICIENCY ==> DEEP[\"深度分析\"]\n    EFFICIENCY ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

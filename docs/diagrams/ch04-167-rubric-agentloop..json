@@ -1,0 +1,7 @@
+[
+ {
+  "title": "评估从黄金指标到 Rubric——AgentLoop 数据飞轮",
+  "code": "graph TD\n    L2[\"两层评估结构<br/>评估器定义怎么评 可复用<br/>评估任务定义评什么何时评\"] ==> T2[\"评估器两种类型<br/>Code 评估便宜确定覆盖规则指标<br/>Agent 评估读轨迹理解语义\"]\n    T2 ==> RUBRIC[\"Rubric 把抽象好拆成可判定细则<br/>分档规则 权重 加权总分公式<br/>输入: input output trace\"]\n    RUBRIC ==> CLOSEDLOOP[\"低分条目带解释证据与 decision<br/>badcase 沉淀进数据集成回测弹药\"]",
+  "isSvg": false
+ }
+]

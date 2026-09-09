@@ -1,0 +1,7 @@
+[
+ {
+  "title": "百度 Unlimited OCR——R-SWA 常量 KV Cache",
+  "code": "graph TD\n    RSWA[\"R-SWA: 视觉参考 token 静态可见<br/>输出侧只留 128 滑动窗口<br/>输出侧 KV Cache 常量上界\"] ==> PERF[\"OmniDocBench 87 到 93 分<br/>40 加页文档不崩<br/>TPS 7847 优于 MHA 5822\"]\n    PERF ==> PRAGMATIC[\"务实设计: 建在 DeepSeek-OCR 上<br/>只训 LLM 参数 8 卡 A800 完成\"]\n    PRAGMATIC ==> POTENTIAL[\"超出 OCR 的通用潜力\"]",
+  "isSvg": false
+ }
+]

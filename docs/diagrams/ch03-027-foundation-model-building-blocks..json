@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Foundation Model Building Blocks",
+  "code": "graph TD\n    BLOCKS[\"基础模型构建块\"] ==> DETAIL[\"组件详解\"]\n    DETAIL ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

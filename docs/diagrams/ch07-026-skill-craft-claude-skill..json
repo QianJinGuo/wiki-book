@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Skill Craft——Claude Skill 质量工程工具",
+  "code": "graph TD\n    ROOTCAUSE[\"质量问题根因: 缺乏工程化治理<br/>7 类失效模式会连锁触发<br/>约束衰减是阿喀琉斯之踵\"] ==> MODES[\"四模式覆盖生命周期<br/>check 评估 fix 修复回归<br/>create 生成 · audit 系统审计\"]\n    MODELS[\"三层评估体系<br/>8 结构模块 加 7 反模式检测<br/>加 3 完整性原则\"] ==> MODES\n    MODES ==> FIXDETAIL[\"fix 回归验证与四类关联检查<br/>5 加 Skill 时启动 audit\"]",
+  "isSvg": false
+ }
+]

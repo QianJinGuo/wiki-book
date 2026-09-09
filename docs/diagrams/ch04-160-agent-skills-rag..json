@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Agent Skills 做知识库检索——比 RAG 更好吗",
+  "code": "graph TD\n    RAGPAIN[\"传统 RAG 结构性困境<br/>预索引刚性 · Chunk 边界难对齐\"] ==> SKILLS[\"Skills 渐进披露检索<br/>Agentic Retrieve 替代旧范式\"]\n    SKILLS ==> LIMIT[\"局限: PDF 首检低效<br/>多轮后忘调用 · Token 消耗大\"]\n    LIMIT ==> VERDICT[\"结论与适用边界\"]",
+  "isSvg": false
+ }
+]

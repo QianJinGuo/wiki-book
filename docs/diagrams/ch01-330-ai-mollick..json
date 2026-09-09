@@ -1,0 +1,7 @@
+[
+ {
+  "title": "给 AI 做工作面试——Mollick 评估方法论",
+  "code": "graph TD\n    FLAWS[\"Benchmark 的系统性缺陷\"] ==> VIBES[\"Vibes 测试: Otter Test<br/>GDPval 真实工作评估框架\"]\n    VIBES ==> ATTITUDE[\"AI 的系统性态度差异\"]\n    ATTITUDE ==> P[\"企业 AI 选型建议\"]",
+  "isSvg": false
+ }
+]

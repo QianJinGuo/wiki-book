@@ -1,0 +1,7 @@
+[
+ {
+  "title": "ECS Fargate 自建 Keycloak 作 IAM Identity Center 外部 IdP",
+  "code": "graph TD\n    OVERVIEW[\"概述: 为 Kiro 提供企业级 SSO\"] ==> ARCH[\"架构要点\"]\n    ARCH ==> VALUE[\"技术价值\"]\n    VALUE ==> INS[\"深度分析与实践启示\"]",
+  "isSvg": false
+ }
+]

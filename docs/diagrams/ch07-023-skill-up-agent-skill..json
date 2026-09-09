@@ -1,0 +1,7 @@
+[
+ {
+  "title": "skill-up——阿里开源 Agent Skill 评测框架",
+  "code": "graph TD\n    D4[\"四大设计: eval yaml 加 expect judge<br/>加 多引擎 加 结构化报告\"] ==> MULTI[\"多轮会话评测\"]\n    MULTI ==> E2E[\"重型端到端评测\"]\n    MULTI ==> MIGRATE[\"1200 行 Shell 到 80 行 YAML\"]",
+  "isSvg": false
+ }
+]

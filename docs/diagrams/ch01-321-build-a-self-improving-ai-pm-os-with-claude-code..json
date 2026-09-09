@@ -1,0 +1,7 @@
+[
+ {
+  "title": "用 Claude Code 构建自我改进的 AI PM OS",
+  "code": "graph TD\n    CHATDEAD[\"Chat 三大硬约束<br/>无连续性 无文件 无持久学习<br/>只配占 5% 时间\"] ==> L4[\"Claude 生态四层分工<br/>Chat 到 Cowork 到 Claude Code 到 Dispatch<br/>按场景而非按能力堆叠\"]\n    L4 ==> SELFIMPROVE[\"Self-improving 知识系统<br/>Rules 确认默认应用<br/>Hypotheses 阈值升级 · Rejected 防重测\"]\n    SELFIMPROVE ==> GITHUB[\"CLAUDE.md 只做路由<br/>GitHub 即操作系统<br/>技能迭代 5-6 轮覆盖 99%\"]",
+  "isSvg": false
+ }
+]

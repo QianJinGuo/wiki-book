@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Bedrock AgentCore 智能成本分析与告警",
+  "code": "graph TD\n    DESIGN[\"单 Agent 双模式设计\"] ==> TOOLS[\"核心 Tools 设计<br/>技术栈选型分析\"]\n    TOOLS ==> ALERT[\"定时监控与告警机制\"]\n    ALERT ==> INS[\"架构 开发 运维三层启示\"]",
+  "isSvg": false
+ }
+]

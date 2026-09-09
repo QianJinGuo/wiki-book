@@ -1,0 +1,7 @@
+[
+ {
+  "title": "GrowLoop——开放域对话真人感评测",
+  "code": "graph TD\n    MECHANISM[\"隐性知识外化: 启发式学习<br/>反思判断差异外化为评分锚点\"] ==> DIVERGENCE[\"分歧合法性: 一致率仅 51.1%<br/>界定合理区间非找正确答案\"]\n    DIVERGENCE ==> COEVOLVE[\"评分细则与测试题双循环协进化\"]\n    COEVOLVE ==> MIGRATE[\"跨领域迁移潜力分析\"]",
+  "isSvg": false
+ }
+]

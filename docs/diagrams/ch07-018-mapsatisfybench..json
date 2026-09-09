@@ -1,0 +1,7 @@
+[
+ {
+  "title": "MapSatisfyBench——满意度感知地图 Agent 评测",
+  "code": "graph TD\n    SHIFT[\"从任务完成到满意度感知\"] ==> METHOD[\"还原识别过滤三步法<br/>五维真值 加 七维指标\"]\n    METHOD ==> FIND[\"12 模型实测发现\"]\n    FIND ==> SYS[\"系统设计亮点\"]",
+  "isSvg": false
+ }
+]

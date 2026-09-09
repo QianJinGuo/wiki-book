@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AI 原生开发工作流",
+  "code": "graph TD\n    CHAIN[\"映射链即信息精化链<br/>Spec 到任务 到代码 到验证<br/>验证是信息守恒器\"] ==> LOOP[\"Agent Loop 从检验者变执行者<br/>人从操作员变监督者<br/>Spec 是契约不是文档\"]\n    LOOP ==> EVOLVE[\"智能外化演进: Vibe Coding<br/>到 Loop Engineering 到 Fleet Loop\"]\n    EVOLVE ==> OBS[\"Loop 可观察性是前提<br/>同类任务重复 5 次才值得投资\"]",
+  "isSvg": false
+ }
+]

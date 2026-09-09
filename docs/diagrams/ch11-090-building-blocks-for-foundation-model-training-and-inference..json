@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AWS 基础模型训练与推理构建块",
+  "code": "graph TD\n    LAWS[\"三重扩展定律的基础设施含义<br/>通信瓶颈的关键性\"] ==> ORCH[\"Slurm vs Kubernetes 架构取舍<br/>资源编排选型\"]\n    ORCH ==> INFER[\"推理框架的分化趋势<br/>分布式训练框架选择\"]\n    INFER ==> P[\"存储层次设计 · 可观测性建设\"]",
+  "isSvg": false
+ }
+]

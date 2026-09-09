@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Here Comes Forward Deployed Everybody",
+  "code": "graph TD\n    SHIFT[\"套装软件到原材料供应<br/>Salesforce Headless 360 核心理念<br/>FDE 概念全面扩散\"] ==> HISTORY[\"Piggly Wiggly 自助服务革命先例<br/>Clay Shirky 预言与新成本曲线\"]\n    HISTORY ==> PITCREW[\"Everybody 的分化: 聚合 vs 原子化<br/>Pit Crew 新职业类别\"]\n    PITCREW ==> MODELS[\"两种商业模式: 替代 vs 乘法\"]",
+  "isSvg": false
+ }
+]
