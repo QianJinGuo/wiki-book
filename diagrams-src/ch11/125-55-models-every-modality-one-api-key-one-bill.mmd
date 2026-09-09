@@ -1,0 +1,4 @@
+%% title: 55 加模型——每个模态一个 API key 一份账单
+graph TD
+    PLATFORM["DigitalOcean Serverless Inference<br/>55 加模型统一 API 兼容 OpenAI 格式<br/>按 token 计费 scale to zero"] ==> PERF["DeepSeek V3.2 230 tok/s<br/>评为第一 比 Bedrock 快 3.9 倍"]
+    PERF ==> MULTI["多模态: 图像 视频 语音 视觉语言<br/>VPC 加零数据保留加 guardrails"]
