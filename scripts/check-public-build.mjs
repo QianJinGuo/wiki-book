@@ -25,7 +25,7 @@ const forbiddenText = [
   "neighbor_graph.private.json",
   "rag-private-",
 ];
-const excludedDirs = new Set([".git", "node_modules", ".venv"]);
+const excludedDirs = new Set([".git", "node_modules", ".venv", "devloop"]);
 const forbiddenDirs = new Set(["site-private", ".build-private", "backups"]);
 const requiredCardFields = [
   "type",
