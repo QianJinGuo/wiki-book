@@ -1,0 +1,5 @@
+%% title: 不满研究员再放两个微软零日
+graph TD
+    YELLOWKEY["YellowKey: 按键序列加 USB 绕过 BitLocker<br/>需要物理接触 · 被盗笔记本变数据泄露"] ==> GREENPLASMA["GreenPlasma: 提权到 SYSTEM<br/>部分 PoC 已发布 · 默认配置触发 UAC"]
+    GREENPLASMA ==> REAL["PoC 迅速被真实攻击滥用<br/>报复性披露 · 声称有死人开关"]
+    REAL ==> DEF["BitLocker PIN 加 BIOS 锁缓解<br/>不依赖厂商响应的安全基线"]
