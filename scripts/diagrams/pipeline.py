@@ -34,7 +34,11 @@ DIAGRAM_TYPES = (
 
 def diagram_key(rel: str) -> str:
     """docs-relative md path -> frontend JSON key."""
-    return rel[:-3].replace('/', '-')
+    for ext in ('.md', '.mmd'):
+        if rel.endswith(ext):
+            rel = rel[:-len(ext)]
+            break
+    return rel.replace('/', '-')
 
 
 def scan_pages():
