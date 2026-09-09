@@ -251,7 +251,9 @@ def main():
         pairs = {}
         for seg in segments:
             pairs.setdefault(seg_key(seg), seg)
-        new_keys = [k for k in pairs if k not in existing]
+        # Heal passthroughs: an entry whose "translation" equals its source
+        # (upstream skipped a mixed-language line) is retried on rerun.
+        new_keys = [k for k in pairs if k not in existing or existing[k] == pairs[k]]
         total_pages += 1
         total_new += len(new_keys)
         char_count = sum(len(pairs[k]) for k in new_keys)
