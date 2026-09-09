@@ -95,6 +95,20 @@ def cmd_validate():
         if body.count('"') % 2 or body.count('[') != body.count(']'):
             bad.append((rel, 'unbalanced quotes/brackets'))
             continue
+        # unicode arrows are fine inside quoted labels, fatal as edge operators
+        import re as _re
+        for ln in body.splitlines():
+            outside = _re.sub(r'"[^"]*"', '', ln)
+            if any(c in outside for c in '→←⇒⇐⟶⟸'):
+                bad.append((rel, f'unicode arrow outside quotes: {ln.strip()[:44]!r}'))
+                break
+        # lines declaring two labels must carry a mermaid edge operator
+        if not bad or bad[-1][0] != rel:
+            for ln in body.splitlines():
+                t = ln.strip()
+                if t.count('["') >= 2 and not any(op in t for op in ('-->', '-.', '==>', '--', '~~~')):
+                    bad.append((rel, f'edge without operator: {t[:50]!r}'))
+                    break
         # anchor: some real words from the article title must appear
         md = DOCS / rel
         title = TITLE.search(md.read_text(encoding='utf-8')) if md.exists() else None
