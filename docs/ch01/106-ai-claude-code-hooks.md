@@ -33,7 +33,7 @@
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-source-architecture.md) — 八大模块三条链路
 - [Claude Code Prompt 提示词体系源码解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-prompt-source-analysis.md) — 六大prompt模块全版
 - [阿里工程师 Harness 工程化实践 (双案例合并)](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-alibaba-java-case-study.md) — 阿里Java双案例合并15565字全版
-- [Stripe Sessions 2026 AI Agents](../ch04/187-stripe-sessions-2026-ai-agents.html) — Sessions分析含Radar洞见
+- [Stripe Sessions 2026 AI Agents](../ch04/188-stripe-sessions-2026-ai-agents.html) — Sessions分析含Radar洞见
 
 ## 延伸导航
 - [第 3 层全库索引：Agent 工程](https://github.com/QianJinGuo/wiki-public/blob/main/moc/layer-3-agent-engineering.md)

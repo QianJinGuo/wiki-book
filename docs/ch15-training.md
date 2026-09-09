@@ -945,7 +945,7 @@ Meta-RL with Self-Reflection 的核心洞察是：当前 LLM 的 RL 训练完全
 - RLHF
 - Post-training
 - Agent 记忆系统
-- [Karpathy: Agentic Engineering](ch04/009-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy: Agentic Engineering](ch04/105-karpathy-vibe-coding-agentic-engineering.html)
 - MOC: Evaluation Landscape
 
 ---

@@ -170,7 +170,7 @@ Skill 不是一次性创建的静态资产，而是需要持续维护的演化�
 ## 相关实体
 - [Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering实践做了一个平台让ai一晚上自动评测和优化你的系统.md)
 
-- [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04/282-skillos-learning-skill-curation-for-self-evolving-agents.html)
+- [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04/283-skillos-learning-skill-curation-for-self-evolving-agents.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-agentic-engineering-v4.md)
 - [在 RDS PostgreSQL 中实现 RaBitQ 量化](https://github.com/QianJinGuo/wiki-public/blob/main/entities/在-rds-postgresql-中实现-rabitq-量化.md)
 - [Codeindex · 让大模型更好地理解你的代码](https://github.com/QianJinGuo/wiki-public/blob/main/entities/codeindex-让大模型更好地理解你的代码.md)

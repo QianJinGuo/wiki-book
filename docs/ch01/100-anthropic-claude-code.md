@@ -9,7 +9,7 @@
 
 ## 机制与论文
 - [晓斌：从 People-Oriented 到 Agent-Oriented Infra —— 意图驱动 + 代码沉淀的进化体](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-oriented-infra-intent-driven-code-sedimentation.md) — Agent-Oriented Infra长文
-- [Anthropic N-days: Frontier Agent Vulnerability Research](../ch04/312-anthropic-n-days-frontier-agent-vulnerability-research.html) — N-day研究
+- [Anthropic N-days: Frontier Agent Vulnerability Research](../ch04/313-anthropic-n-days-frontier-agent-vulnerability-research.html) — N-day研究
 - [王云鹤眼中的Harness：复杂优化问题，AGI灵魂争夺之战](https://github.com/QianJinGuo/wiki-public/blob/main/entities/wangyunhe-harness-optimization-agentsoul.md) — Agent=Models+Harness联合优化
 - [AgentMemory 源码分析：给 Coding Agent 装上本地长期记忆](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentmemory-source-analysis-coding-agent-local-memory.md) — 源码级解析互补
 - [Anthropic LLM ATT&CK Navigator: AI-Enabled Cyber Operations](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-llm-attck-navigator-cyber-operations.md) — ARiES风险评分

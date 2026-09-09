@@ -35,7 +35,7 @@ SDD（规范驱动开发）和 Harness Engineering 的关系值得深究：SDD �
 
 ## 相关实体
 - [Agent 开发范式演进：从环境工程出发，“简化”多源实时上下文](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-开发范式演进从环境工程出发简化多源实时上下文.md)
-- [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04/282-skillos-learning-skill-curation-for-self-evolving-agents.html)
+- [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04/283-skillos-learning-skill-curation-for-self-evolving-agents.html)
 - [深度拆解 Hermes Agent 记忆系统：它修正了 OpenClaw 的哪层误区？](https://github.com/QianJinGuo/wiki-public/blob/main/entities/深度拆解-hermes-agent-记忆系统它修正了-openclaw-的哪层误区.md)
 - [Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering实践做了一个平台让ai一晚上自动评测和优化你的系统.md)
 - [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cursor-复盘-harness模型决定能力上限harness-决定生产下限.md)

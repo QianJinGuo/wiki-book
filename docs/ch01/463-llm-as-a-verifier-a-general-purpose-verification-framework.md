@@ -89,7 +89,7 @@ LLM-as-a-Judge 试图对轨迹形成整体判断并输出决策，适用于需�
 - [LLM-as-a-Verifier: A General-Purpose Verification Framework](463-llm-as-a-verifier-a-general-purpose-verification-framework.html)
 - [LLM-as-a-Verifier: A General-Purpose Verification](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-as-a-verifier-a-general-purpose-verification.md)
 - [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-agent脚手架如何具备自进化能力以hermes-agent为例.md)
-- [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04/282-skillos-learning-skill-curation-for-self-evolving-agents.html)
+- [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04/283-skillos-learning-skill-curation-for-self-evolving-agents.html)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-agentic-engineering-v4.md)
 - [AI Skill 测评指标体系](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-skill-metrics-system.md)
 - [Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering实践做了一个平台让ai一晚上自动评测和优化你的系统.md)

@@ -52,7 +52,7 @@
 ## 相关实体
 - [Affirmmapsroadto100Bgmvwithcardaicommerc](https://github.com/QianJinGuo/wiki-public/blob/main/entities/affirmmapsroadto100bgmvwithcardaicommerc.md)
 - [Amazon Quick Research Agentic Multi Source Citation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-quick-research-agentic-multi-source-citation.md)
-- [Building Web Search Enabled Agents With Strands And Exa](../ch04/062-building-web-search-enabled-agents-with-strands-and-exa.html)
+- [Building Web Search Enabled Agents With Strands And Exa](../ch04/063-building-web-search-enabled-agents-with-strands-and-exa.html)
 - [Build Real Time Voice Streaming With Amazon Nova Sonic And Webrtc](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-real-time-voice-streaming-with-amazon-nova-sonic-and-webrtc.md)
 - [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagemaker.md)
 

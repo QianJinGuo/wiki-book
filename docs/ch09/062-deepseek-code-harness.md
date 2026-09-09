@@ -1,6 +1,6 @@
 # DeepSeek Code Harness
 
-> 📊 Level ⭐⭐⭐⭐ | 56.8KB | `entities/deepseek-code-harness.md`
+> 📊 Level ⭐⭐⭐⭐ | 59.4KB | `entities/deepseek-code-harness.md`
 
 ## Overview
 DeepSeek 正在组建团队，从零开始构建对标 Claude Code 的代码智能体产品。核心公式：**Model + Harness = Agent**。除模型本身以外的所有工作，都属于 Harness 的范畴。官网职位描述明确："他们正在把 DeepSeek 的前沿模型能力转化为领先的 Agent 产品。"
@@ -306,6 +306,16 @@ DSH 最值得注意的 @deepseek-ai/dsh-tool-cordis"自指的 Cordis 工具集"�
 **护栏 = 训练数据采集器**：审批的 asked/decided 审计对就是 RLHF/DPO 偏好信号（生产自然产生、无需标注）；沙箱越权记录是边界探测行为标注；审计与对话分离存储使行为克隆用对话流、偏好学习用审计对，**人类监督信号不泄漏进模型输入、避免标签污染**；每调用一个锚点事件使轨迹轮次边界天然干净。"你的安全机制越严格，你的数据资产越值钱"——护栏既是拦截器也是采集器。企业三个转变：发版驱动→生长驱动（能力闸 capability gate 校验工具真在运行）、日志即排查→日志即数据资产、纪律维持→结构保证。
 
 **自进化 POC 实机证据**（DSH 0.1.0-rc.5 + qwen3-max，竞技场中宿主持隐藏验收口径当裁判）：「进化」须过四道闸门（能力存在/正确/holdout 真实/增量可归因，不采信模型自述）；三组对照实验量化了进化路径断裂点——**接口设计决定泛化**（V18 缺地形成分输入 0/146 背图 vs 含地形 146/146 学会）、**契约的信息形态比契约有无更关键**（V19 文字契约 97 次全失败 vs 逐字模板 32 次 0 失败）、**反馈不等于能力**（V14 无结构任务 holdout 4/16 等于随机 vs V15 可归纳 4 轮 holdout 20/20）。映射到 RL：动作空间可被 Agent 自撑大、宿主裁判=可验证奖励、能力账本=稠密 credit assignment、策略是可读可回滚的 package 代码。边界声明：未做权重更新（仅 RL 基础设施可行性）、能力默认不跨会话、跨会话遗传是宿主侧自建非 DSH 能力。
+
+### 移动端客户端：DSH Mobile（腾讯技术工程，基于 Kuikly）
+
+作为 DSH 官方 Host 协议的外部消费方，腾讯技术工程用 Kuikly 框架构建了 **DSH Mobile**——一套 Kotlin 代码覆盖 Android/iOS/鸿蒙的原生 App，直接对接电脑上 DeepSeek Harness 的官方 Host 协议，解决「Agent 长任务中途等人审批/补充信息，人一离开电脑任务就卡住」的移动接入痛点。
+
+**协议接入方式——不引入中间业务层**：DSH Mobile 直接使用官方 Web 前端背后的 Host 协议，浏览器如何调用 DSH，App 就沿用同一套方法。DSH 是 Cordis 插件化 Agent 运行时，与移动端相关的可简化为三层：`core/session`+`agent-loop`+`tools` 负责会话/Agent 循环/工具执行并产生事件；`host/apiproxy` 把内部能力整理成 RPC 方法表 + 两条下行事件流；`client/connection` 接到本机 3080 端口，对外提供 `HTTP /api/*`、`WebSocket /api/events.mux` 与 `/api/events.host`。发消息就是一次 HTTP RPC（`dsh-v0.1.1-rc.2` 表中 52 个方法，发消息是 `POST /api/session.prompt`）。~1.3 万行 `commonMain` Kotlin 三端共享，Android/iOS/鸿蒙宿主各三四千行只接入系统能力。
+
+**两条 WebSocket 各管一类状态 + 断线补事件**：`session/queue` 与 `session/jobs` 推送完整快照（非增量），收到新快照直接覆盖本地状态；重连按「先补事件、再对历史」的顺序恢复，且**重连是恢复观察与控制、不是重新执行任务**（Agent 在断线期间仍运行，App 重连后重新订阅该轮任务而非重发 Prompt）。状态机位于共享层，三端补齐顺序与失效规则一致，平台代码只负责把底层连接事件交给共享层。
+
+**两种远程连接**：①SSH 模式建立本地端口转发（loopback→127.0.0.1:3080）；②扫码 Relay 模式（Host 插件主动连 Relay，手机 App 连同一 Relay，两端配对后流量经密封隧道转发，电脑无需把 DSH 开放到局域网/公网）。Kuikly 的跨端组件市场（KuiklyMarkdown 流式渲染、KuiklyWebview）+ AI 开发配套（KuiklyUI-AI 供 Agent 生成代码）是选型主因。该客户端不永久绑定 DSH，对多数 Agent Host 移动端基础能力相近，未来接其他 Agent 服务主要新增协议适配器。
 
 ## 相关实体
 

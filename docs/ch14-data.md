@@ -625,7 +625,7 @@ Amazon Quick is a comprehensive, generative AI-powered business intelligence ser
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
-- [Karpathy Vibe Coding Agentic Engineering](ch04/009-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](ch04/105-karpathy-vibe-coding-agentic-engineering.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
 - [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/两万字详解claude-code源码核心机制.md)
 
@@ -1820,7 +1820,7 @@ ServiceNow 本身是 ITSM / HR / 客户支持自动化领域的巨头，发布 E
 
 - [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md) — Agent 原理架构的综合性参考
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md) — Agent 范式跃迁的视角
-- [Karpathy Vibe Coding Agentic Engineering](ch04/009-karpathy-vibe-coding-agentic-engineering.html) — 同源访谈的另一标题版本
+- [Karpathy Vibe Coding Agentic Engineering](ch04/105-karpathy-vibe-coding-agentic-engineering.html) — 同源访谈的另一标题版本
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md) — AWS Bedrock AgentOps 的规模化运营实践
 - [龙虾装上了可以用来干啥分享下我的 Openclaw 多智能体团队搭建经验 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验-v2.md) — 多智能体团队搭建的实战经验
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏-v2.md) — OpenClaw 多智能体系统化教程
@@ -2430,7 +2430,7 @@ Agentic AI 的成本失控根源在于其执行路径的非确定性——传统
 - [飞来汇借助 Aws Security Agent 构建跨境支付应用的智能安全防线](https://github.com/QianJinGuo/wiki-public/blob/main/entities/飞来汇借助-aws-security-agent-构建跨境支付应用的智能安全防线.md)
 - [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-aws-smgs-uses-an-ai-powered-conversational-assistant-to-.md)
 - [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/滴滴国际化客服质检智能化之路基于-amazon-bedrock-的多语种多业务线质检实践.md)
-- [Powering Agentic Ai Sales Strategy With Amazon Bedrock Agent](ch04/349-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.html)
+- [Powering Agentic Ai Sales Strategy With Amazon Bedrock Agent](ch04/350-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.html)
 - [Automate Aml Alert Triage With Amazon Quick And Snowflake Co](https://github.com/QianJinGuo/wiki-public/blob/main/entities/automate-aml-alert-triage-with-amazon-quick-and-snowflake-co.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/data-infrastructure.md)
 

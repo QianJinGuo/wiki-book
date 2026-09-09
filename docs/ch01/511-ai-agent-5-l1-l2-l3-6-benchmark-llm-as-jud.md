@@ -324,7 +324,7 @@ Agent输出：{agent_output}
 | [Harness Engineered Business Agent Evaluation Aliyun Boyu](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineered-business-agent-evaluation-aliyun-boyu.md) | **业务 Agent 评测** | 阿里"伯禹"业务 Agent 评测实践 |
 | [Better Harness Eval Trace Harness Hill Climbing](https://github.com/QianJinGuo/wiki-public/blob/main/entities/better-harness-eval-trace-harness-hill-climbing.md) | **trace 评测** | trace 级 harness 爬坡的工程方法 |
 | [Claw Swe Bench Harness Evaluation Benchmark Tokenrhythm](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claw-swe-bench-harness-evaluation-benchmark-tokenrhythm.md) | **SWE-Bench 评测** | Claw-SWE-Bench：harness 对编程 Agent 影响的独立基准 |
-| [Anthropic Demystifying Evals For Ai Agents](../ch04/065-anthropic-demystifying-evals-for-ai-agents.html) | **Anthropic evals** | Anthropic Agent 评测揭秘 |
+| [Anthropic Demystifying Evals For Ai Agents](../ch04/066-anthropic-demystifying-evals-for-ai-agents.html) | **Anthropic evals** | Anthropic Agent 评测揭秘 |
 
 ## 十一、实践启示
 

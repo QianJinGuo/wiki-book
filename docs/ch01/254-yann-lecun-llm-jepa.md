@@ -95,7 +95,7 @@ CoT（Chain of Thought）之所以"低效"，是因为它要求 LLM 用"逐步�
 - [Nvidia Isaac Lab Sagemaker Robot Rl Humanoid](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md)
 - [Karpathy 从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
 - [OpenClaw 多 Agent 协同开发](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏-v2.md)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/009-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/105-karpathy-vibe-coding-agentic-engineering.html)
 
 - [stealing passwords via html injection under a strict csp](https://github.com/QianJinGuo/wiki-public/blob/main/entities/afine-csp-html-injection-password-exfiltration.md)
 - [better decisions at scale: how mathematical optimization del](https://github.com/QianJinGuo/wiki-public/blob/main/entities/better-decisions-at-scale-how-mathematical-optimization-deli.md)

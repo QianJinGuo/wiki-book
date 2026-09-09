@@ -12,12 +12,12 @@
 - [晓斌：从 People-Oriented 到 Agent-Oriented Infra —— 意图驱动 + 代码沉淀的进化体](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-oriented-infra-intent-driven-code-sedimentation.md) — Agent-Oriented Infra长文
 - [State of Memory in Agent Harness — mem0 视角的九大 harness 横评](https://github.com/QianJinGuo/wiki-public/blob/main/entities/state-of-memory-in-agent-harness-mem0-2026.md) — 九大harness记忆横评
 - [Context Window Management Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-window-management-comparison.md) — 四框架对比rv9
-- [Anthropic N-days: Frontier Agent Vulnerability Research](../ch04/312-anthropic-n-days-frontier-agent-vulnerability-research.html) — N-day研究
+- [Anthropic N-days: Frontier Agent Vulnerability Research](../ch04/313-anthropic-n-days-frontier-agent-vulnerability-research.html) — N-day研究
 - [Rethinking Search as Code Generation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/perplexity-search-as-code-generation.md) — Search as Code：查询变可执行代码对象7660字rv9
 - [一篇看懂 Agent Harness 的结构！ — 12组件+7决策完整框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-12-components-7-decisions.md) — harness 12组件框架
 - [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-prompt-context-harness.md) — 三维度源码：23模块拼装+自适应分块+双层Memory
 - [Code as Agent Harness 综述](https://github.com/QianJinGuo/wiki-public/blob/main/entities/code-as-agent-harness-survey.md) — 102页综述
-- [Programbench Agent Benchmark](../ch04/291-programbench-agent-benchmark.html) — 无提示清洁室设计：Opus 4.7仅3% almost-resolved
+- [Programbench Agent Benchmark](../ch04/292-programbench-agent-benchmark.html) — 无提示清洁室设计：Opus 4.7仅3% almost-resolved
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](https://github.com/QianJinGuo/wiki-public/blob/main/entities/深入理解-claude-code-源码中的-agent-harness-构建之道.md) — 16095字源码8步循环
 - [从 Prompt 到 Harness：Claude 官方学习资料](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-prompt-to-harness-claude-official.md) — Harness五子系统闭环解读
 - [原始文章存档](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-search-architecture-tencent-2026.md) — ripgrep五层过滤

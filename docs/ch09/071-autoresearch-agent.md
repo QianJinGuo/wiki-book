@@ -139,7 +139,7 @@ API 不稳定时的指数退避+随机抖动（最大 60 秒、最多 10 次重�
 - [factory mission multi agent architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/factory-mission-multi-agent-architecture.md)
 - [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [OpenClaw 多智能体团队搭建实战经验](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-multi-agent-team-practice.md)
-- [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](../ch04/356-openclaw-multi-agent-team-practice-v2.html)
+- [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](../ch04/357-openclaw-multi-agent-team-practice-v2.html)
 - [Claude Code 可控性：软规则无法变成硬约束](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-governance-soft-rules.md)
 - [claude-code-agent-view](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-agent-view.md)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/110-claude-code-harness-deep-understanding.html)

@@ -48,7 +48,7 @@ Ian Buck 逐家上门、在 OpenAI 现场用螺丝刀拆机讲解、在 OCI 与�
 - [Nvidia Nemotron 3 Agents Rag Voice Safety](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-nemotron-3-agents-rag-voice-safety.md) — NVIDIA Agent 产品线（RAG/语音/安全）
 - [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-nemotron-3-ultra-sagemaker-jumpstart-moe-agentic.md) — NVIDIA MoE Agentic 模型栈
 - [Nvidia Edge First Llms Av Robotics](198-nvidia-edge-first-llms-av-robotics.html) — NVIDIA 边缘 LLM 与机器人场景
-- [Anthropic Demystifying Evals For Ai Agents](../ch04/065-anthropic-demystifying-evals-for-ai-agents.html) — Anthropic 的 Agent 评估实践
+- [Anthropic Demystifying Evals For Ai Agents](../ch04/066-anthropic-demystifying-evals-for-ai-agents.html) — Anthropic 的 Agent 评估实践
 - [从 Cpu 到 Gpu 全链路可信百度智能云新一代 Ai 机密计算实例的探索与落地](https://github.com/QianJinGuo/wiki-public/blob/main/entities/从-cpu-到-gpu-全链路可信百度智能云新一代-ai-机密计算实例的探索与落地.md) — CPU/GPU 全链路算力视角对照
 
 → [原文存档](https://blogs.nvidia.com/blog/vera-cpu-delivery)

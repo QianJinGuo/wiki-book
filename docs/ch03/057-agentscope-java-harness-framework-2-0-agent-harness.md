@@ -1,6 +1,6 @@
 # AgentScope Java Harness Framework 2.0 — 企业级 Agent 分布式场景的 Harness 实现 (Java 2.0 重大升级)
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 45.9KB | `entities/agentscope-java-harness-framework-enterprise-distributed.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 53.3KB | `entities/agentscope-java-harness-framework-enterprise-distributed.md`
 
 ## 背景：个人助手型 Agent 与企业级 Agent 是两种工程形态
 
@@ -813,6 +813,53 @@ onAgent → onReasoning → onActing → onModelCall → onSystemPrompt
 - "**streamEvents() 让人工确认、人工介入和外部工具执行成为框架内生能力**"
 - "**权限系统 3 态决策：允许 / 用户审批 / 拒绝**"
 - "**5 阶段 Middleware：onAgent / onReasoning / onActing / onModelCall / onSystemPrompt**"
+
+## ⑩ 生产最佳实践与选型（AliExpress 生产作，2026-09 补充）
+
+> 本节补充自 AgentScope 开源贡献者在商品领域构建生产级智能体系统的一手踩坑经验，聚焦「能 demo」到「能上线」之间的生产细节。
+
+### 生态定位：产品 vs 框架 + 连续光谱
+
+**区分产品型与框架型 Agent 的核心维度是「封装层次」，而非「能做几个领域」**：产品型（Claude Code / Codex / Cursor）封装任务层「意图→结果」，Runtime 闭源不透明；框架型（AgentScope / DeerFlow / AutoGen）封装基础设施层的控制点（工具定义、技能组合、记忆存取、业务规则嵌入），Runtime 开源可插拔。 二者分层共生、不互相吞噬，共享同一个 Runtime Harness 层。
+
+文中提出 **「四层架构 + 连续光谱」解释模式**：DeepSeek-Harness 站在光谱正中央，是「研究参考实现 + 开放 Runtime + 准产品」混合体（可运行论文 / 白盒 Runtime / 刻意半成品 / 双重受众），其战略价值是让生态跑得更快更稳更透明，而非成为好产品。 对业务系统，「学产品 + 用框架 + 结合业务规则交付」落在中间偏左下。
+
+### 运行时「易误解的点」
+
+生产实践中几个容易踩坑的运行期语义：
+- 系统提示不进对话 context，只活在本次 `CallExecution.systemMsg`，每轮重建；
+- Skill「发现 ≠ 装载」：prompt 只有技能目录，正文必须由模型调 `load_skill_through_path` 才作为 TOOL 消息进入 context，避免一次性塞入全部 SKILL.md；
+- 压缩/上下文裁剪发生在 `onReasoning` 之前（必须在发给模型前改 messages），失败可降级、窗口溢出再强制裁剪；
+- 工具错误默认写成 TOOL 消息继续循环（默认自愈），不直接打崩 Agent；用户中断会先补齐 pending tool 错误结果再落盘。
+
+### 生产最佳实践清单
+
+**会话与并发**：每次调用显式传稳定 `userId/sessionId`（缺省会退化为 agent name、多用户串会）；同槽已串行；**跨副本共用 `AgentStateStore` 并理解 CAS / APPEND_MERGE 冲突策略**——单机 PoC 用本地 JsonFileAgentStateStore，多副本生产换 Redis 等共享实现；滚动发布依赖会话可恢复 + 优雅停机，系统 interrupt 不写「闲聊式恢复」。
+
+**Workspace**：Workspace 是权威定义，状态目录建议与其解耦（默认 `~/.agentscope/state/<agentId>/`）；不可信代码/shell/写文件走沙箱，注意 per-call acquire/release 与快照恢复成本；`@path` 展开和路径策略要在多租户下测隔离。
+
+**上下文与成本**：调好压缩阈值与 maxContextTokens（依赖模型上报的 context window，否则走 fallback）；监控 ExceedMaxIters、空回复 reminder、overflow 强制 compact 频率——它们是「模型不会停」或「上下文失控」的信号。 完整的压缩策略组合 = CompactionMiddleware（reasoning 前阈值判断 + LLM 摘要）+ flush/offload（外置日账与文件）+ Eviction（超大工具结果驱逐）+ overflow 强制压缩兜底。
+
+**权限与 HITL**：生产默认不要 BYPASS；写文件/shell/外发类工具配 Ask/Deny；客户端必须能消费 `RequireUserConfirmEvent` / `RequireExternalExecutionEvent` 并按协议回传确认或外部结果；Plan Mode 适合「先只读规划再执行」，计划文件落 `workspace/plans/`。 核心原则：**业务规则必须硬编码进决策环路**（任何框架型 + Middleware / Permission / Plan Mode）；需要 PLC / 遗留 IT / 多租户合规隔离时框架型必选，产品型 Agent 无法暴露足够控制点。
+
+**多 Agent 决策**：**能 Subagent 解决的千万不要上 Teams**（减少共享状态复杂度）；需要并行认领、成员互聊才用 Teams。Subagent 深度、工具白名单、workspace isolated/shared 要显式配置；多副本 Teams 优先控制面协调，本地 LocalTeamClient 仅单机闭环验证。
+
+**可观测与运维**：以 streamEvents + OTel middleware 建链路，关注 tool 超时、权限拒绝率、压缩前后 token；DistributedBackend 一处配置协调存储，会话状态与控制面协调通道分开理解；Skill 自进化开启 curator / 审批闸，避免未审计技能直接进生产目录。 推荐落地节奏：ReActAgent 固化工具与领域 prompt → HarnessAgent + Workspace 开压缩与记忆 → 敏感工具接权限与 HITL → 不可信执行进沙箱 → 先 Subagent 后 Teams → 多副本统一 AgentStateStore。
+
+### 选型指南
+
+- **Java 栈** PoC→多副本生产：LangGraph / AgentScope，在此基础上改造轻封装；
+- **Python 栈** 要开箱 SuperAgent：DeerFlow / LangGraph 生态；
+- 只需个人编程助手、不定制 Runtime：产品型（Claude Code / Codex / Cursor），不必自研框架；
+- 要 fork 白盒 Coding Agent 脚手架：DeepSeek-Harness，替换模型与压缩策略后投产。
+
+### Middleware VS Hook 对比
+
+Hook 是 1.x 遗留扩展点（`@Deprecated(forRemoval=true, since="2.0.0")`），经 `LegacyHookDispatcher` 桥接旧代码；新代码**只写 Middleware**。差异：Hook 粒度是 PreReasoning/PreActing 等事件回调，对 streamEvents 支持较弱；Middleware 是 onAgent/onReasoning/onActing/onModelCall 洋葱链（`next.apply(input)`）+ onSystemPrompt 管道，call() 与 streamEvents() 走同一套链。 典型业务示例：onActing 中实现订单审批 Middleware，`submit_payment` 金额 >1 万时 DENY 不调 next，否则 allowed 集合后 `next.apply(new ActingInput(allowed))`。
+
+### 未来收敛方向
+
+Harness 赛道会收敛到：上下文工程自动化、工具自进化与治理、异构多 Agent 协作、更强的执行隔离与企业可观测；差异化会落在业务方如何用 Middleware 编码策略，以及如何把 Workspace 当作「可版本管理的 Agent 资产」运营。
 
 ---
 

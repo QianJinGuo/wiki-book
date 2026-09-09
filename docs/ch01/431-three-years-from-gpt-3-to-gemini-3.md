@@ -188,7 +188,7 @@ Human-in-the-loop 的角色在演变，团队需要相应升级：
 - [Code As Agent Harness Survey](https://github.com/QianJinGuo/wiki-public/blob/main/entities/code-as-agent-harness-survey.md)
 - [GPT-5.4 Codex 进展](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gpt-54-is-a-big-step-for-codex.md)
 - [Karpathy Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
-- [Karpathy Agentic Engineering 综述](../ch04/009-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Agentic Engineering 综述](../ch04/105-karpathy-vibe-coding-agentic-engineering.html)
 - [AgentOps on Bedrock](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
 - [Yann Dubois OpenAI 后训练访谈](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yann-dubois-openai-post-training-matt-turck-interview.md)
 - [GPT-5.5 Copilot Session 设计](https://github.com/QianJinGuo/wiki-public/blob/main/entities/wiki-evolver-skill-system-design-gpt55-copilot-session.md)

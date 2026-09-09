@@ -11,7 +11,7 @@
 - [AgentScope Java Harness Framework 2.0 — 企业级 Agent 分布式场景的 Harness 实现 (Java 2.0 重大升级)](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentscope-java-harness-framework-enterprise-distributed.md) — AgentScope Java全版
 - [晓斌：从 People-Oriented 到 Agent-Oriented Infra —— 意图驱动 + 代码沉淀的进化体](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-oriented-infra-intent-driven-code-sedimentation.md) — Agent-Oriented Infra长文
 - [Context Window Management Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-window-management-comparison.md) — 四框架对比rv9
-- [Anthropic N-days: Frontier Agent Vulnerability Research](../ch04/312-anthropic-n-days-frontier-agent-vulnerability-research.html) — N-day研究
+- [Anthropic N-days: Frontier Agent Vulnerability Research](../ch04/313-anthropic-n-days-frontier-agent-vulnerability-research.html) — N-day研究
 - [Rethinking Search as Code Generation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/perplexity-search-as-code-generation.md) — Search as Code：查询变可执行代码对象7660字rv9
 - [DeepSeek Thinking with Visual Primitives 深度解读](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-visual-primitives-thinking.md) — 视觉原语10k主版
 - [一篇看懂 Agent Harness 的结构！ — 12组件+7决策完整框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-12-components-7-decisions.md) — harness 12组件框架
@@ -27,7 +27,7 @@
 - [CLAUDE.md](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-source-leak-lifecycle-analysis.md) — 8步生命周期10k
 - [Anthropic Claude Managed Agents 平台正式发布](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-claude-managed-agents-platform-2026.md) — 平台发布14k主版
 - [Claude Managed Agents 新更新\](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-managed-agents-self-hosted-sandbox-mcp-tunnels-enterprise.md) — brain/hands分离全版
-- [Anthropic Demystifying Evals for AI Agents](../ch04/065-anthropic-demystifying-evals-for-ai-agents.html) — eval概念框架
+- [Anthropic Demystifying Evals for AI Agents](../ch04/066-anthropic-demystifying-evals-for-ai-agents.html) — eval概念框架
 - [数据级 Harness：架构师 JiaGouX 解读 Anthropic 95% 数据分析与 5 个反直觉边界](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-95pct-data-analysis-jiagoux-data-level-harness-20260606.md) — 数据级harness解读
 - [vivo Agent 系统分析：大模型是大脑不是马，Harness 是 ICU 不是马鞍](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vivo-agent-brain-body-icu-harness-evolutionary-framework-2026.md) — 大脑身体ICU隐喻框架
 - [读完 Claude Code 和 OpenClaw 的 memory 源码，我对 Agent 记忆需要向量数据库产生怀疑](https://github.com/QianJinGuo/wiki-public/blob/main/entities/读完-claude-code-和-openclaw-的-memory-源码我对agent记忆需要向量数据库这件事产生了怀疑.md) — 6层markdown记忆设计

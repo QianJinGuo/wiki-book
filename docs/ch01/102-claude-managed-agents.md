@@ -9,7 +9,7 @@
 
 ## 机制与论文
 - [晓斌：从 People-Oriented 到 Agent-Oriented Infra —— 意图驱动 + 代码沉淀的进化体](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-oriented-infra-intent-driven-code-sedimentation.md) — Agent-Oriented Infra长文
-- [Anthropic N-days: Frontier Agent Vulnerability Research](../ch04/312-anthropic-n-days-frontier-agent-vulnerability-research.html) — N-day研究
+- [Anthropic N-days: Frontier Agent Vulnerability Research](../ch04/313-anthropic-n-days-frontier-agent-vulnerability-research.html) — N-day研究
 - [一篇看懂 Agent Harness 的结构！ — 12组件+7决策完整框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-12-components-7-decisions.md) — harness 12组件框架
 - ['Harness 之后：状态边界与失败闭环（若飞续篇）'](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-之后-状态边界与失败闭环-ruofei.md) — 运行时契约/提交闸门/失败回写10308字全版
 - [从 Prompt 到 Harness：Claude 官方学习资料](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-prompt-to-harness-claude-official.md) — Harness五子系统闭环解读
@@ -23,7 +23,7 @@
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-agentic-engineering-v4.md) — v4 8090字rv10：可验证性上限+MenuGen警示
 - [MAC（multi-agent-coding）：Skills + Hooks 两层 Harness —— 完全委托 0-20% 的解法](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mac-multi-agent-coding-skills-hooks-harness.md) — Skills概率层+Hooks确定性层两层Harness
 - [Anthropic Claude Managed Agents 平台正式发布](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-claude-managed-agents-platform-2026.md) — 平台发布14k主版
-- [Anthropic Demystifying Evals for AI Agents](../ch04/065-anthropic-demystifying-evals-for-ai-agents.html) — eval概念框架
+- [Anthropic Demystifying Evals for AI Agents](../ch04/066-anthropic-demystifying-evals-for-ai-agents.html) — eval概念框架
 - [Claude Code Routines：从工具到队友的主动 Agent 模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-routines-proactive-agent.md) — Routines三能力
 - [Anthropic 发布 Computer Use 最佳实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-computer-use-best-practices.md) — 坐标映射与梯度分配
 - [Claude Managed Agents 官方 Harness 平台指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-claude-managed-agents-guide.md) — 平台指南分析版

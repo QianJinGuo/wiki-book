@@ -126,7 +126,7 @@ Google DeepMind 联合 **Schmidt Sciences、Cooperative AI Foundation、ARIA**�
 - [Claude Code Agent Teams 实战：怎么拆任务、控权限、收证据](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-agent-teams-task-decomposition-ruofei.md) — 拆任务控权限
 - [Hermes Agent 满配 12 层配置完整指南（从裸装到 24h Agent 团队）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-12-layer-full-configuration-guide.md) — 12层满配指南11566字rv9
 - [OpenCLAW 完全指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-comprehensive-guide.md) — OpenClaw系统教程5760字
-- [Openclaw Multi Agent Team Practice V2](ch04/356-openclaw-multi-agent-team-practice-v2.html) — 七Agent花园团队：专精胜于全能12180字全版
+- [Openclaw Multi Agent Team Practice V2](ch04/357-openclaw-multi-agent-team-practice-v2.html) — 七Agent花园团队：专精胜于全能12180字全版
 - [扣子 3.0 协作系统：项目化 + Agent 编排 + 工具链打通](https://github.com/QianJinGuo/wiki-public/blob/main/entities/coze-3-0-collaboration-system.md) — 扣子协作系统
 - [扣子 3.0 多 Agent 协同实战：指挥所有 Agent 的 Agent + 5 人团队 6 步流水线](https://github.com/QianJinGuo/wiki-public/blob/main/entities/coze-3-multimagent-team-orchestration-wangheige.md) — 三案例实战报告
 - [Waylens OpenClaw 多智能体平台 EKS+Operator 改造案例](https://github.com/QianJinGuo/wiki-public/blob/main/entities/waylens-openclaw-multi-agent-eks-operator-case.md) — EKS+CRD+Operator平台自管理
@@ -566,7 +566,7 @@ AI 的最大价值可能不在通用场景而在你领域的特定痛点——�
 - [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](https://github.com/QianJinGuo/wiki-public/blob/main/entities/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session.md)
 - [Factory Mission Multi Agent Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/factory-mission-multi-agent-architecture.md)
-- [Openclaw Multi Agent Team Practice V2](ch04/356-openclaw-multi-agent-team-practice-v2.html)
+- [Openclaw Multi Agent Team Practice V2](ch04/357-openclaw-multi-agent-team-practice-v2.html)
 
 ## 原文链接
 
@@ -971,7 +971,7 @@ Nature 2026 同日发表 Google Co-Scientist（Gemini 2.0 多智能体）和 Fut
 
 ## Ch08.012 JiuwenSwarm — Coordination Engineering 多智能体协作框架（含 SwarmFlow 可控编排 + Jiuwen Symphony 技能编排与分发）
 
-> 📊 Level ⭐⭐⭐⭐ | 26.4KB | `entities/jiuwenswarm-coordination-engineering.md`
+> 📊 Level ⭐⭐⭐⭐ | 29.9KB | `entities/jiuwenswarm-coordination-engineering.md`
 
 ## 概述
 JiuwenSwarm 是 openJiuwen 社区发布的**多智能体蜂群协作框架**，代表从 Harness Engineering 向 **Coordination Engineering** 的范式跃迁。
@@ -1265,6 +1265,21 @@ Symphony 把 skill 当作"系统资产"来管理，而不只是提示词里附�
 
 → [ScienceDiscovery 原文存档](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651050586&idx=2&sn=005d605a168bfbea6afdb2136fe639fe)
 
+## 5th Source — WorkSwarm 永续会话 Persist Session（长程一致性，2026-09-08 增量）
+
+**Persist Session（永续会话）**是 openJiuwen 对 Agent「聊久必忘 / 长程漂移」问题的解法：一个会话经过几十上百轮对话之后，Agent 仍能接住前面的工作。它针对的是单纯把上下文窗口做大或在窗口撑满时压缩一次的不足——压缩后细节会漂移（早期的约定还在、边界却模糊了），工作越久漂移越重。
+
+**架构机制：Raw Work Log + Work Log + 阶段性摘要。**前台 Worker 只负责当前任务，不整理自己的历史；系统同步保存用户消息、Agent 回复、执行过程和文件变化（Raw Work Log），后台日志处理 Agent 再整理出项目事实、用户约定、人员职责、状态变化（可检索的 Work Log）。对话过长时把旧内容换成阶段性工作摘要，摘要替换有版本和证据可核对，整理期间产生的消息继续保留不被旧摘要覆盖。通过 openJiuwen **Rail** 插件机制接入，创建会话时发送首条 `/persist` 指令开启（开启后同会话内不可取消，保证记录完整）。
+
+- 互补角度 5 条：
+  1. **长程一致性实验数据（200 轮对照）**：200 个相互关联开发任务，开启组全部完成、5 个跨轮次冲突全处理、经历 54 次工作日志整理、全程不要求重讲背景；对照组只完成 154 个、5 个冲突任务全没处理完整、到第 156 轮因上下文压缩细节漂移而无法继续。
+  2. **多人群聊职责边界保持**：真实飞书群 5 人共用 1 个 Agent、189 轮协作，Agent 8 次识别出跨职责冲突并回溯到「哪条既有约定 + 真正有权确认的人」，不把「群里有人说可以」当项目决定——权限归属随工作延续，而非仅保留项目背景。
+  3. **Worker/日志处理分离**：前台 Worker 不背历史负担，后台专职日志 Agent 整理，是「职责分离 + 记忆托管」的工程模式，与 Symphony 的「检索归 LLM / 编排归图结构」一致。
+  4. **与 SwarmFlow / Symphony 的层次互补**：SwarmFlow 管团队配合、Symphony 管能力编排，永续会话管「时间维度上的连续一致」——三者构成 Coordination Engineering 的空间 + 能力 + 时间闭环。
+  5. **验证锚点**：长程任务中「后半段用户提出与早期约定相反的要求」，Agent 判断是否破坏旧约定 + 是否先确认，对应 Self-Harness 的「边界确认」思路，是记忆一致性与权限工程在真实工作中的落地证据。
+
+→ [WorkSwarm 永续会话原文存档（机器之心 2026-09-08）](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651055602&idx=2&sn=da7bb74bb874248ea6466b4ba920b2d7)
+
 ---
 
 ## Ch08.013 AI Agent Memory Systems
@@ -1290,7 +1305,7 @@ Language models forget the moment they finish replying. Memory is everything the
 > [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-model-research-latest-directions.md)
 
 - [memory agent systems cobanov](https://github.com/QianJinGuo/wiki-public/blob/main/entities/memory-agent-systems-cobanov.md)
-- [AI Agent 记忆系统架构](ch04/113-how-ai-agent-memory-works.html)
+- [AI Agent 记忆系统架构](ch04/114-how-ai-agent-memory-works.html)
 - [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学](https://github.com/QianJinGuo/wiki-public/blob/main/entities/when-ai-agents-learn-to-forget-amazon-bedrock-agentcore-memory-philosophy.md)
 - [Hermes Agent 记忆系统 vs OpenClaw 记忆观](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-memory-system.md)
 - [深度拆解 Hermes Agent 记忆系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-memory-system-openclaw-comparison.md)
@@ -1466,7 +1481,7 @@ Grab 的多 Agent 系统接入数据库和代码生成能力，存在真实风�
 ## 相关实体
 - [Baixing Ontoz Enterprise Ontology Multi Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/baixing-ontoz-enterprise-ontology-multi-agent.md)
 - [Dipg Ant Insurance Host Research Verify Offline Closed Loop](https://github.com/QianJinGuo/wiki-public/blob/main/entities/dipg-ant-insurance-host-research-verify-offline-closed-loop.md)
-- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/095-building-ai-agents-for-business-support-using-amazon-bedrock.html)
+- [Building Ai Agents For Business Support Using Amazon Bedrock](ch04/096-building-ai-agents-for-business-support-using-amazon-bedrock.html)
 - [Vercel Com How Superset Built The Ide For Ai Agents On Vercel](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vercel-com-how-superset-built-the-ide-for-ai-agents-on-vercel.md)
 - [Low Code Api Integration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/low-code-api-integration.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/multi-agent-coordination.md)
@@ -1652,11 +1667,11 @@ Warp 起家是「最好用的现代终端」，现在通过 Oz 把战线推到�
 - 终端是开发者每天都开的入口
 - 从终端 → 终端里集成 Agent → 多个 Agent 协作需要 orchestration → 自然演化到云端控制平面
 
-对比：Cursor 从编辑器切入，Replit 从云开发环境切入，[AgentCore](ch04/307-agentcore-managed-harness.html) 从云厂商基础设施切入——四条路径都在收敛到同一个目标（**企业级 Agent 控制平面**），但起点完全不同。Warp 的路径有「终端无关于 IDE」的优势，可以兼容 VS Code、Cursor、JetBrains 的用户。
+对比：Cursor 从编辑器切入，Replit 从云开发环境切入，[AgentCore](ch04/308-agentcore-managed-harness.html) 从云厂商基础设施切入——四条路径都在收敛到同一个目标（**企业级 Agent 控制平面**），但起点完全不同。Warp 的路径有「终端无关于 IDE」的优势，可以兼容 VS Code、Cursor、JetBrains 的用户。
 
 ### 与 AgentCore 的微妙差异
 
-Oz 和 AWS [AgentCore](ch04/307-agentcore-managed-harness.html) 在功能列表上有大量重叠，但定位有微妙不同：
+Oz 和 AWS [AgentCore](ch04/308-agentcore-managed-harness.html) 在功能列表上有大量重叠，但定位有微妙不同：
 
 | 维度 | Oz | AgentCore |
 |---|---|---|
@@ -1682,9 +1697,9 @@ Oz 和 AWS [AgentCore](ch04/307-agentcore-managed-harness.html) 在功能列表�
 ## 相关实体
 
 - [Agentcore Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentcore-harness.md) — AgentCore Harness 综述
-- [Agentcore Managed Harness](ch04/307-agentcore-managed-harness.html) — Managed Harness 定位
+- [Agentcore Managed Harness](ch04/308-agentcore-managed-harness.html) — Managed Harness 定位
 - [Agent Harness Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture.md) — Agent Harness 架构
-- [Agent Harnesses Are Dead Long Live Agent Harnesses](ch04/173-agent-harnesses-are-dead-long-live-agent-harnesses.html) — Harness 演进观察
+- [Agent Harnesses Are Dead Long Live Agent Harnesses](ch04/174-agent-harnesses-are-dead-long-live-agent-harnesses.html) — Harness 演进观察
 - [Agent Memory Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture.md) — Agent Memory 架构综述
 - [57U6Xekcgtvkqxnnqg9Djq](https://github.com/QianJinGuo/wiki-public/blob/main/entities/57u6xekcgtvkqxnnqg9djq.md) — Obsidian + Claude Code 集成（个人版的跨 harness 记忆）
 - [Agent Orchestration Patterns](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-orchestration-patterns.md) — Agent 编排模式

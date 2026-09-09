@@ -1,6 +1,6 @@
 # pi-mono — 模块化 AI Agent 构建平台（OpenClaw 执行引擎核心）
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 11.9KB | `entities/pi-mono.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 14.4KB | `entities/pi-mono.md`
 
 ## 项目信息
 | 维度 | 数值 |
@@ -159,6 +159,16 @@ pi-agent-core 的 `beforeToolCall` 和 `afterToolCall` Hook 是实现权限控�
 
 ### 5. 考虑基于 stream 的 UI 响应而非轮询
 pi-mono 的流式事件架构天然支持实时 UI 更新（如终端差分渲染工具调用进度）。如果你在构建 Agent 前端，应该利用 `toolcall_delta` 事件实现部分 JSON 的实时解析和 UI 更新，而不是等待完整响应后一次性渲染。
+
+## 运行时拆解：少做功能、更可控的 Harness（若飞源码级拆解，SUPP 2026-09-09）
+若飞对 Pi 仓库（最新提交 f4d802c3）的源码级拆解揭示了其"产品工作流与 Agent 基础运行分离"的设计哲学，与 Claude Code 的"成品化工作台"方向几乎相反。
+
+- **Monorepo 分层**：pi-ai（模型提供方接口）→ pi-agent-core（消息/工具/事件）→ pi-coding-agent（编码场景）→ pi-tui（终端界面），上层不污染底层契约，各包可独立使用。
+- **Loop 内外两层**：agent-loop.ts 内层围绕当前 Turn（请求→流式→执行工具→放回），外层处理 followUp 队列；steer（改方向）、followUp（做完继续）、nextRun（下次启动再处理）三个队列分离；停止条件明确（无工具调用自然结束/报错中止/工具或 Hook 请求终止/followUp 为空）；Ctrl+C 时已完成工具结果先写历史再统一中止。
+- **Session 是"发生过什么"的记录**：JSONL Entry（id/seq/parentId/时间戳 + 模型切换/思考等级/活动工具/压缩摘要/分支摘要/扩展数据）+ Operation（运行过程：起止/尝试次数/工具启动/队列/延迟写入/用量）；buildSessionContext 从当前分支投影工作集——/tree 回旧节点、/fork 不是复制文本，而是同一份历史上换路径。
+- **压缩切点规则**：预留 16384 token 给摘要，保留最近约 20000 token；toolResult 不能作切点（工具调用/结果会被拆开）；落在任务中间时识别本轮起点对前缀单独摘要；压缩新增 compaction Entry 而非删旧；分支摘要找旧叶与目标最近公共祖先。
+- **安全边界**：默认使用启动进程权限、无内置沙箱；beforeToolCall 只做确认/白名单/审计，不是进程隔离——不可信环境应交给 Gondolin/Docker/OpenShell。
+- **契约未全实现**：prompt/compact/navigateTree/resume/队列操作及部分 hooks/events 仍返回 HarnessNotImplemented——先定"谁保存、谁执行、谁能中断、失败后从哪恢复"的架构契约，再逐步填实现。
 
 ## 相关
 - [Openclaw Prompt Context Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-prompt-context-harness.md) — OpenClaw 架构，pi-mono 是它的 Agent 执行引擎

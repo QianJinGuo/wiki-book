@@ -102,7 +102,7 @@ ExecTool 的三层防护说明了一个通用原则：安全设计不能依赖�
 
 ## 相关实体
 - [800行代码实现 Open Claw 的 Tool消息总线子Agent管理架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/800行代码实现-open-claw-的-tool消息总线子agent管理架构.md)
-- [Stripe Sessions 2026 Ai Agents](../ch04/187-stripe-sessions-2026-ai-agents.html)
+- [Stripe Sessions 2026 Ai Agents](../ch04/188-stripe-sessions-2026-ai-agents.html)
 - [Claude Code Prompt Source Analysis](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-prompt-source-analysis.md)
 - [Anthropic Claude Managed Agents Platform Launch](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-claude-managed-agents-platform-launch.md)
 - [Agent Memory Architecture Past Influence Future Ruofei](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture-past-influence-future-ruofei.md)

@@ -191,9 +191,9 @@ NVIDIA Nemotron Nano 2 VL (12B) VLM 将视觉推理引入 RAG 管道，使系统
 
 ## 相关实体
 - [Nvidia Nemotron 3 Agents Rag Voice Safety](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-nemotron-3-agents-rag-voice-safety.md)
-- [Nvidia Extreme Co Design Agentic Systems](ch04/092-nvidia-extreme-co-design-agentic-systems.html)
-- [Nvidia Agentic Ai Subsurface Engineering](ch04/192-nvidia-agentic-ai-subsurface-engineering.html)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/053-nvidia-secure-local-agent-nemoclaw-openclaw.html)
+- [Nvidia Extreme Co Design Agentic Systems](ch04/093-nvidia-extreme-co-design-agentic-systems.html)
+- [Nvidia Agentic Ai Subsurface Engineering](ch04/193-nvidia-agentic-ai-subsurface-engineering.html)
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/054-nvidia-secure-local-agent-nemoclaw-openclaw.html)
 - [Nvidia Telco Reasoning Models Nemo](ch01/195-nvidia-telco-reasoning-models-nemo.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
 
@@ -397,7 +397,7 @@ Amazon Nova MME 的 `GENERIC_INDEX`（文档索引用）和 `GENERIC_RETRIEVAL`�
 - [RAG技术框架的演进方向](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag技术框架的演进方向.md) — Classic → Graph → Agentic RAG 演进路线，本文为其经典 RAG 打法提供实证对照
 - [AFAC2026 金融 AI Agent 竞赛](https://github.com/QianJinGuo/wiki-public/blob/main/entities/afac2026-financial-ai-agent-competition-harness.md) — 另一金融 AI 竞赛方案，可对比"RAG 问答"与"Agent 编排"两条路线
 - [RAG 分块-嵌入-重排全链路](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-chunk-embedding-rerank-pipeline.md) — 与本文混合检索+重排设计互补的管道细节
-- [Stripe 金融合规 AI Agent 实践](ch04/328-stripe-financial-compliance-ai-agent-production-lessons.html) — 同为金融合规场景，可从生产侧视角印证本文的可追溯、可审计原则
+- [Stripe 金融合规 AI Agent 实践](ch04/329-stripe-financial-compliance-ai-agent-production-lessons.html) — 同为金融合规场景，可从生产侧视角印证本文的可追溯、可审计原则
 
 ---
 
@@ -950,7 +950,7 @@ RAG 系统的效果瓶颈不在模型，而在**入库质量**。同样的 Embed
 - [RAG 全链路技术详解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-full-pipeline-taobao.md)
 - [RAG 分块向量化召回重排流水线](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-chunk-embedding-rerank-pipeline.md)
 - [向量库 vs 知识图谱：RAG 的进阶路径](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-vector-knowledge-graph-ontology.md)
-- [AI Agent 记忆系统工作原理](ch04/113-how-ai-agent-memory-works.html)
+- [AI Agent 记忆系统工作原理](ch04/114-how-ai-agent-memory-works.html)
 
 ## 深度分析
 

@@ -1552,7 +1552,7 @@ Ethan 指出了一个技术收敛点：**视频模型和 LLM 在长上下文管�
 - 与 [Claude Code 动态工作流多 Agent 编排](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-dynamic-workflows-multi-agent-orchestration.md) 互补：AI 编程的 Agent 化 → 视频生成的 Agent 化
 - 与 [Agent Harness Engineering Survey](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-engineering-survey-2026.md) 互补：Harness 在视频 Agent 时代的能力复用
 - 与 [画布 Agent 时代](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-canvas-agent-era-content-creation.md) + [AI 视频工具第三阶段](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-video-tools-third-stage-1779303117.md) 互补：第一手研究人员视角补全产品视角
-- 与 [Foundation Capital agent era 六洞察](ch04/290-foundation-capital-agent-era-six-insights.html) 互补：算力-人才飞轮的微观机制
+- 与 [Foundation Capital agent era 六洞察](ch04/291-foundation-capital-agent-era-six-insights.html) 互补：算力-人才飞轮的微观机制
 
 → [原文存档](https://mp.weixin.qq.com/s/dOKQToqmT5a-CrBLRDMQxA)
 

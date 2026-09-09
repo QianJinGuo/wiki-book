@@ -49,7 +49,7 @@
 ## 相关实体
 - [memory agent systems cobanov](https://github.com/QianJinGuo/wiki-public/blob/main/entities/memory-agent-systems-cobanov.md)
 - [Hermes Agent 记忆系统 vs OpenClaw 记忆观](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-memory-system.md)
-- [AI Agent 记忆系统架构](../ch04/113-how-ai-agent-memory-works.html)
+- [AI Agent 记忆系统架构](../ch04/114-how-ai-agent-memory-works.html)
 - [深度拆解 Hermes Agent 记忆系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-memory-system-openclaw-comparison.md)
 
 - [ai agent memory systems](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-memory-systems.md)

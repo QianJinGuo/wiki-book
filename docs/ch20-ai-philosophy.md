@@ -631,9 +631,9 @@ Hugging Face + NVIDIA NIM 双渠道部署反映了当前企业 AI 落地的两�
 ## 相关实体
 - [Nvidia Nemotron 3 Agents Rag Voice Safety](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-nemotron-3-agents-rag-voice-safety.md)
 - [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-nemotron-3-ultra-sagemaker-jumpstart-moe-agentic.md)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/053-nvidia-secure-local-agent-nemoclaw-openclaw.html)
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/054-nvidia-secure-local-agent-nemoclaw-openclaw.html)
 - [Fine Tuning Cosmos](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tuning-cosmos.md)
-- [Tokenspeed Agentic Inference Engine](ch04/273-tokenspeed-agentic-inference-engine.html)
+- [Tokenspeed Agentic Inference Engine](ch04/274-tokenspeed-agentic-inference-engine.html)
 
 - [How To Automate Ai Model Documentation With The Nvidia Mcg T 806Efb](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-to-automate-ai-model-documentation-with-the-nvidia-mcg-t-806efb.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
