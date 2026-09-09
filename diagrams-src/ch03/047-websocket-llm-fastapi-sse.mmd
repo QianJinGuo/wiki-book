@@ -1,5 +1,5 @@
 %% title: LLM 流式传输——FastAPI 加 SSE 优于 WebSocket
 graph TD
-    CMP["SSE vs WebSocket vs 长轮询<br/>SSE 本质是 HTTP 分块传输协议化"] => IMPL["FastAPI StreamingResponse<br/>加异步生成器"]
+    CMP["SSE vs WebSocket vs 长轮询<br/>SSE 本质是 HTTP 分块传输协议化"] ==> IMPL["FastAPI StreamingResponse<br/>加异步生成器"]
     IMPL --> P6["生产 6 大避坑<br/>代理缓冲 · 超时 · 断开检测<br/>多进程状态 · HTTP2 限制 · CORS"]
     P6 --> REDIS["Redis Pub/Sub 广播架构<br/>心跳机制是生死线"]

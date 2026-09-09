@@ -1,6 +1,6 @@
 %% title: SLIM——港中文动态技能生命周期管理
 graph TD
-    LOOP["三操作循环<br/>Retain 保留 · Retire 退休 · Expand 扩展"] => M["核心方法: Leave-One-Skill-Out 验证"]
+    LOOP["三操作循环<br/>Retain 保留 · Retire 退休 · Expand 扩展"] ==> M["核心方法: Leave-One-Skill-Out 验证"]
     M => EXP["实验 Qwen3-4B<br/>ALFWorld 长流程任务<br/>SearchQA 检索推理"]
     EXP => ABL["消融实验与技能分类检索"]
     ABL => CMP["四种 Agent 训练范式对比<br/>训练范式的范式跃迁"]
