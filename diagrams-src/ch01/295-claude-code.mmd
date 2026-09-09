@@ -1,4 +1,5 @@
 %% title: Claude Code 设计原则与对照分析
 graph TD
-    P5["五条系统设计原则<br/>先定边界再执行<br/>连续运行当状态机<br/>横切复杂度收敛到运行时<br/>多 Agent 设计成任务系统<br/>外部越动态内部越要稳定"] ==> MAP["与 Harness Engineering 对应<br/>CC OpenClaw Hermes 位置差异"]
-    MAP ==> INS["从函数调用到状态机的范式转移"]
+    P5["五条系统设计原则<br/>先定边界再执行 · 连续运行当状态机<br/>横切复杂度收敛到运行时层<br/>多 Agent 是任务系统 · 内稳外动"] ==> MAP["与 Harness Engineering 对应<br/>CC OpenClaw Hermes 位置差异"]
+    MAP ==> SHIFT["从函数调用到状态机的范式转移"]
+    SHIFT ==> INS["核心启示与实践启示"]
