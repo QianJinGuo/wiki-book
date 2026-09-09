@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 12.6KB | `entities/baidu-comate-coding-agent-feedback-loop-wanpeng.md`
 
-# Coding Agent在百度的落地实践：从反馈闭环到工程范式重构
-
 ## 核心结论
 
 - 框架必须动态适配模型变化，不存在静态框架

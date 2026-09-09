@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 23.7KB | `entities/promptqueue-async-task-queue-opengorilla-integration.md`
 
-# PromptQueue + OpenGorilla 集成 — AI-Native 异步任务引擎与自进化认知层
-
 ## 一句话
 
 > **PromptQueue = "BullMQ meets AI"** — 把消息队列的可靠性带入 LLM 调用；**OpenGorilla** = 认知记忆层 — 让每一次任务执行都成为自进化数据

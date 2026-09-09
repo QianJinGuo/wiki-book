@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐ | 6.5KB | `entities/anthropic-demystifying-evals-for-ai-agents.md`
 
-# Anthropic Demystifying Evals for AI Agents
-
 - task: 一个定义了输入与成功标准的测试用例
 - trial: 同一 task 的一次尝试；因为输出有随机性，应该多 trial
 - grader: 对 agent 某个方面打分的评分逻辑

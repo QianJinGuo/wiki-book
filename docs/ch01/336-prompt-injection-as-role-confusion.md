@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 7.6KB | `entities/role-confusion-github-io.md`
 
-# Prompt Injection as Role Confusion
-
 > **Background**：将 prompt injection 重新定义为**角色混淆（Role Confusion）**问题的研究论文配套博客。提供了形式化的理论框架来理解为什么 LLM 容易受到 prompt injection 攻击，并提出了基于角色感知的防御方向。
 
 ## 摘要

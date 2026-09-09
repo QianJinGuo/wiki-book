@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 25.0KB | `entities/three-tools-comet-openspec-superpowers-ai-coding-shuge-2026-06-17.md`
 
-# 三器合一（Comet + OpenSpec + Superpowers）：用文件系统给 AI 编程上工程纪律
+## 三器合一（Comet + OpenSpec + Superpowers）：用文件系统给 AI 编程上工程纪律
 
 > **来源说明**：本文基于术哥（ShugeX / 运维有术）2026-06-17 发布的深度源码分析整理（《AI 编程总失控？Comet + OpenSpec + Superpowers 用文件系统管住 AI》，术哥无界系列第 142 篇 / AI 编程最佳实战「2026」系列第 42 篇）。作者显式声明「源码分析基于本地仓库版本，尚未在生产环境中完成全场景验证」，按 web-content-reviewer `honest-second-hand-interpretation-scoring` 自觉的局限性披露提高 c 评分。
 

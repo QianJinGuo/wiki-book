@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 10.0KB | `entities/amazon-bedrock-agentcore-web-search-ga.md`
 
-# Amazon Bedrock AgentCore Web Search: 托管式网页搜索能力 GA
-
 > **来源**: AWS Machine Learning Blog · Veda Raman, Kalyan Garimella · 2026-06-19
 > 2nd Source: AWS 中国区博客 · 杨探, 王文巍, 裴秋利 · 2026-07-22
 

@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 8.0KB | `entities/anthropic_cache_tokenomics.md`
 
-# Tokenomics: the 62.5-minute rule for Claude's cache
-
 → [原文存档](https://skids.dev/blog/anthropic-cache-tokenomics/)
 
 ## 摘要

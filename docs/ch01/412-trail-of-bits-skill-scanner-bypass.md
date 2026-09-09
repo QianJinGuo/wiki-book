@@ -4,8 +4,6 @@
 
 > → [原文存档](https://blog.trailofbits.com/2026/06/03/the-sorry-state-of-skill-distribution/)
 
-# Trail of Bits: Skill Scanner Bypass 实证研究
-
 ## 一句话总结
 
 Trail of Bits 在 2026-06-03 公开实证：4 个公开的 agent skill scanner（ClawHub malicious skill detector、Cisco agent skill scanner、skills.sh 内置 3 个 scanner）**在不到 1 小时内被绕过**。攻击样本代码公开在 [trailofbits/overtly-malicious-skills](https://github.com/trailofbits/overtly-malicious-skills)，揭示 skill marketplace 的 supply chain 安全架构是 ship-first-secure-later 状态。

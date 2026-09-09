@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 13.1KB | `entities/routa-harness-engineering-visualization.md`
 
-# Harness 工程可视化：Vibe Coding 中重建工程可控性
-
 - URL: https://mp.weixin.qq.com/s/a3PXFruUYTyD3EhzU30ZhA
 - Author: Phodal
 - Date: 2026-05

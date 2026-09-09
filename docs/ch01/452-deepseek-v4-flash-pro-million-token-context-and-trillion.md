@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 13.6KB | `entities/deepseek-v4-flash-pro-通往百万级上下文与万亿参数推理的新纪元-v2.md`
 
-# DeepSeek V4 Flash & Pro: Million-Token Context and Trillion-Parameter Inference
-
 ## 相关实体
 
 - [pithtrain：陈天奇 + cmu flame center 推出的 agent-native moe 训练框架（1](https://github.com/QianJinGuo/wiki-public/blob/main/entities/pith-train-agent-native-moe-training-framework.md)

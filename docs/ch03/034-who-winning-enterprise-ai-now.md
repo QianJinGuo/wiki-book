@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 7.0KB | `entities/saastr-who-winning-enterprise-ai.md`
 
-# Who Winning Enterprise AI Now
-
 → [原文存档](https://www.saastr.com/whos-winning-enterprise-ai-now-claude-up-128-gemini-up-48-openai-down-8-grok-still-a-rounding-error/)
 
 ## 摘要

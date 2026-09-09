@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 14.6KB | `entities/netflix-metadata-service-model-lifecycle-graph.md`
 
-# Netflix Metadata Service and Model Lifecycle Graph
-
 > 原文存档：[原文存档](https://netflixtechblog.com/democratizing-machine-learning-at-netflix-building-the-model-lifecycle-graph-5cc6d5828bb1?source=rss----2615bd06b42e---4)
 
 > **Core insight**: Netflix 的 Metadata Service (MDS) 通过 AIP URI 统一寻址、Kafka 事件摄取、enrichment workers 和 Datomic+Elasticsearch 双存储，构建跨域 Model Lifecycle Graph，使"该模型被哪些 A/B 测试使用"这类跨系统查询从不可能变为单次 GraphQL 查询。

@@ -47,8 +47,6 @@ Karpathy 的四条规则并非随意组合，而是与 AI 编程中四种最常�
 将 CLAUDE.md 放入 home 目录作为全局配置，提交到版本控制供团队共享。这不仅能保证个人所有项目的 AI 行为一致性，更重要的是让团队在 AI 编程行为约束上达成显式共识，减少 code review 中的摩擦。
 ---
 
-# 最佳 Claude Code 配置：Andrej Karpathy 的 CLAUDE.md，134+k star了！
-
 > Andrej Karpathy（Andrej Karpathy（OpenAI 联合创始人）、Forrest Chang）2026 年 1 月发推分享 AI 编程经验，Forrest Chang 整理成 CLAUDE.md，GitHub 11 万星。核心理念：AI 编程 Agent 有四种结构性失败，四条行为准则可以对治。
 
 ## 背景与起源

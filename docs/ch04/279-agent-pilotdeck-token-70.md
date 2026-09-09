@@ -5,7 +5,7 @@
 > -> [第 1 原文存档 (新智元 ASI启示录)](https://mp.weixin.qq.com/s/TdfsW6iCBmy3esAQ78LkyQ)
 > -> [第 2 原文存档 (数据派THU 转发新智元)](https://mp.weixin.qq.com/s/MWj2lKQi8JdPu4qJDEFOYg)
 
-# PilotDeck：清华系 Agent 操作系统
+## PilotDeck：清华系 Agent 操作系统
 
 ## 一句话
 

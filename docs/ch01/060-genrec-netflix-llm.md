@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 7.1KB | `entities/genrec-towards-llm-native-recommendation-at-netflix.md`
 
-# GenRec: Netflix LLM 原生推荐排序器
-
 ## 概述
 
 GenRec 是 Netflix 构建的 LLM-backed 推荐排序器（ranker）：在内部 foundation LLM 之上做 Netflix 专属数据的 post-training，用自然语言"转写"（verbalize）用户历史、条目元数据与上下文，配合 catalog-aware 打分头对全目录条目打分排序。在大规模 A/B 测试中，GenRec 用远少于生产排序器的 Phase-2 标注数据和输入信号，就在短期与长期线上指标上取得统计显著提升，把推荐系统的工作重心从 feature engineering 转向 context engineering。

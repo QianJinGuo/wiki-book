@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 8.6KB | `entities/nginx-rift-achieving-nginx-rce-via-an-18-year-old-vulnerability.md`
 
-# NGINX Rift: Achieving NGINX Remote Code Execution via an 18-Year-Old Vulnerability | depthfirst
-
 **TLDR: We used depthfirst's system to analyze the NGINX source code, and it autonomously discovered 4 remote memory corruption issues, including a critical heap buffer overflow introduced in 2008. We further investigated the exploitability of the issues, and developed a working proof of concept demonstrating RCE with ASLR off. If you use _rewrite_ and _set_ directives in your NGINX configuration, you're at risk.**
 In mid-April, I was chatting with a colleague about the most vulnerable spot in our infrastructure. Since most of our services live entirely inside a private network, our app platform is the only exposed surface. He joked that achieving remote code execution on our web service would mean hacking into depthfirst completely. Hacking the web service itself is not my usual focus. However, the idea of hacking the underlying web server intrigued me, which directed my attention to NGINX.
 NGINX is the most popular web server today, powering nearly a third of all [websites globally](https://w3techs.com/technologies/overview/web_server%5D). Its high performance architecture makes it the undisputed leader for handling massive volumes of web traffic. From serving static content to acting as an essential reverse proxy, it sits at the critical edge of the modern internet. A single vulnerability in this core infrastructure can therefore expose countless backend systems to severe risks.

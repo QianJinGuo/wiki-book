@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 8.5KB | `entities/theburningmonk-com-2026-06-what-you-need-to-know-about-lambda-microvms.md`
 
-# What You Need to Know About Lambda MicroVMs
-
 ## 摘要
 
 AWS 于 2026 年 6 月推出 Lambda MicroVMs，解决了"如何安全运行 AI 生成或用户提供的代码"这一紧迫问题。它结合了 VM 级隔离（Firecracker）、快速启动（SnapStart 快照）和有状态会话（最长 8 小时），为 coding assistants、AI notebooks、agent sandboxes 等场景提供了理想的计算原语。与 AgentCore Runtime 的区别在于抽象层级：AgentCore 是托管 agent 平台，Lambda MicroVMs 是底层 VM 原语。

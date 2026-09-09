@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 8.1KB | `entities/aws-software-supply-chain-security-well-architected-best-practices.md`
 
-# AWS 软件供应链安全 Well-Architected 最佳实践
-
 ## 概述
 
 针对 2024-2025 年爆发的 **Shai-Hulud** (npm 供应链蠕虫)、**Chalk/Debug** (TJ Actions 恶意更新)、**axios** (钓鱼维护者接管) 等真实攻击事件，AWS 发布 Well-Architected Framework 下的软件供应链安全最佳实践。

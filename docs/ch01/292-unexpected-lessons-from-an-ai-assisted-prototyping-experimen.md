@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 8.9KB | `entities/adobe-design-unexpected-lessons-ai-prototyping-2026.md`
 
-# Unexpected lessons from an AI-assisted prototyping experiment
-
 > 原文存档：[原文存档](https://adobe.design/ideas/unexpected-lessons-from-an-ai-assisted-prototyping-experiment)
 
 ## 摘要

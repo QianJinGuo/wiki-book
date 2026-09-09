@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 20.2KB | `entities/harness-engineering-theory-to-practice-helen.md`
 
-# Harness Engineering 从理论到实战：行为正确性死结 + 上下文腐烂 + 可驾驭性 + Ashby 定律
-
 ## 概述
 
 张海云Helen（AI原生探索者）2026-06-02 Harness Engineering **系列第 4 篇**。**前 3 篇讲理论框架，本文专攻实战区**——理论没覆盖的更深层工程难题：行为正确性自我指涉死结（Anthropic 独立评估官/变异测试/OpenAI 人类不可省）、上下文腐烂与 Anthropic 两段式架构、可驾驭性 4 个架构判决、Ashby 必要多样性定律（模型越强需要纪律越多）。**Böckeler 5 月传感器实验首次公开数据** + Karpathy Sequoia AI Ascent 六行工作模式首次系统化对接 Harness。核心判断：**Harness Engineering 是一门关于"控制的边界在哪里"的工程学科**——知道什么不能控制和知道什么能控制同样重要。

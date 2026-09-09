@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 3.3KB | `entities/agentic-code-review-addyosmani.md`
 
-# Agentic Code Review
-
 > Source: [原文存档](https://addyosmani.com/blog/agentic-code-review/)
 
 ## 核心要点

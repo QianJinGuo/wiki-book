@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐⭐ | 8.3KB | `entities/against-brain-damage.md`
 
-# Against "Brain Damage"
+## Against "Brain Damage"
 
 > 原文存档：[原文存档](https://www.oneusefulthing.org/p/against-brain-damage)
 

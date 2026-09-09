@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 6.4KB | `entities/agentic-overlays-rest-to-a2a-enterprise.md`
 
-# Agentic Overlays -- Retrofit Legacy REST Services into A2A Agents
-
 ## 摘要
 
 AWS 与 Cisco 联合提出 **agentic overlay** 模式：通过薄包装层将遗留 REST 服务转换为 A2A（Agent-to-Agent）兼容的 agent，无需重写业务逻辑、无需复制代码、无需运行并行基础设施。核心洞察是"A2A 不是新的 API，而是现有 API 的新接口"。文章提供了两种实现模式：应用内 overlay（适合单服务 agent）和 AgentCore Gateway overlay（适合企业级多服务编排），并以 Flask 计算器为例展示了完整的端到端实现。

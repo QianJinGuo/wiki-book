@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 18.6KB | `entities/tdsql-harness-subtraction-l0-l3-tencent-2026-08-06.md`
 
-# Harness 减法工程——删掉 61% 之后什么该留
+## Harness 减法工程——删掉 61% 之后什么该留
 
 > **来源**：腾讯云开发者，作者魏依承，2026-08。腾讯 TDSQL 团队对自研 harness 框架 tdsql-harness 做了彻底 refactor：根指令删掉 61%，skills 砍掉 40%，agent 从 10 个减到 6 个。同期 Anthropic 公布为 Claude 5 系列删掉 Claude Code 系统提示词 80%+ 而评测无损失——两家头部厂商独立收敛到「减法」。
 

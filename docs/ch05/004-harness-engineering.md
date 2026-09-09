@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 5.4KB | `entities/harness-engineering-systematic-framework.md`
 
-# Harness Engineering 系统梳理
-
 > 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.75**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/harness-engineering-systematic-framework.md`，一手来源仍见下方 sources。
 

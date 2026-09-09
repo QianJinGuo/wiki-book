@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 4.4KB | `entities/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践-v2.md`
 
-# Opus 4.7 发布：相比 4.6 核心变化与 Claude Code 搭配最佳实践
-
 > 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.8**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/刚刚opus-47发布相比46核心变化与claude-code搭配最佳实践-v2.md`，一手来源仍见下方 sources。
 

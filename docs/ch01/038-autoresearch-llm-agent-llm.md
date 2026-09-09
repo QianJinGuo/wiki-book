@@ -2,11 +2,7 @@
 
 > 📊 Level ⭐ | 7.9KB | `entities/autoresearch-llm让-agent-接手-llm-训练优化.md`
 
-# AutoResearch-LLM：让 Agent 接手 LLM 训练优化
-
 → [原文存档](https://mp.weixin.qq.com/s/9qEgOV9FGk6u9_9zMLSI6A)
-
-# AutoResearch-LLM：让 Agent 接手 LLM 训练优化
 
 阿里妹导读
 

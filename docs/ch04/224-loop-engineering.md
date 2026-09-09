@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 6.2KB | `entities/aliyun-loop-engineering-log-scan-auto-fix-deploy.md`
 
-# 阿里云 Loop Engineering 实战：日志扫描到预发部署的全自主闭环
-
 > 文章 "Loop Engineering 实战：实现从日志扫描到预发部署的全自主闭环" (阿里云开发者, 2026-07-07) 的实体整理。阿里云 AI 云诊断系统的完整 Loop Engineering 实现。
 
 ## 核心数据

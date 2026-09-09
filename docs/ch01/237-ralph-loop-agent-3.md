@@ -87,23 +87,11 @@ Codex goals允许设置token预算来控制agent运行成本。实际项目中�
 - [Claude Delegator](https://github.com/jarrodwatts/claude-delegator/)
 - [Matt Pocock grill-me skill](https://www.aihero.dev/my-grill-me-skill-has-gone-viral)
 
-## ## 相关实体
 - [从 30 分钟手搓 Agent，到 Harness 成为"新后端"](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cong-30-fen-zhong-shou-gu-agent-dao-harness-cheng-wei-xin-hou-duan.md)
-
-## ## 相关实体
 - [gsd-get-shit-done-context-management-tool](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gsd-get-shit-done-context-management-tool.md)
-
-## ## 相关实体
 - [Hermes Agent /goal 长任务运行时架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-goal-runtime-architecture.md)
-
-## ## 相关实体
 - [LoongSuite GenAI 可观测语义规范](https://github.com/QianJinGuo/wiki-public/blob/main/entities/loongsuite-genai-semconv.md)
-
-## ## 相关实体
 - [低代码 Agent、框架 Agent、自研 Agent 决策框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/lowcode-framework-custom-agent-decision-framework-hello-agents.md)
-
-## ## 相关实体
 - [三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战](https://github.com/QianJinGuo/wiki-public/blob/main/entities/three-tools-in-one-gstack-superpowers-openspec-engineering-ai-coding.md)
 
 ---
-

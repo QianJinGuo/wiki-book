@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 7.9KB | `entities/kristoffit-blog-fix-your-asserts.md`
 
-# You Must Fix Your Asserts
-
 ## 摘要
 
 本文深入探讨了断言（assert）在软件工程中的正确使用方式，以 Zig 语言为切入点，挑战了"生产环境禁用断言"这一常见实践。作者 kristoff 提出了一个核心论点：断言不仅是运行时检查工具，更是编译器优化的信息源。文章详细分析了 Zig 语言中基于 `unreachable` 的断言机制、不同构建模式下断言的行为差异、以及禁用断言可能带来的"自我欺骗"风险。

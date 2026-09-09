@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 7.1KB | `entities/skill-system-design-taobao-technology-2026.md`
 
-# AI Agent Skill 系统设计：淘宝技术工程实践
-
 大淘宝技术（会员技术团队）系统阐述了 AI Agent Skill 系统的设计理念与工程实践。核心观点是将 Skill 视为**行为编程**而非文档，通过结构化设计（YAML+Markdown、DOT 流程图、检查表）和严格的约束机制（门控、合理化防御、说服原则）来规范 Agent 的行为。
 
 ## 核心洞察

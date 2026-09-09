@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 8.1KB | `entities/backend-for-agent.md`
 
-# Agent 后端架构
-
 ## 摘要
 
 Agent 后端架构（Backend for Agent）是面向 AI Agent 而非人类 UI 的后端系统设计范式，涵盖 API 优先的接口契约、结构化输出、状态机化的流程编排与可回放交互。它由传统 BFF（Backend for Frontend）演化而来：消费方从浏览器变为会自主决策、反复试错、非确定性的 Agent，因此自描述 Schema、幂等性、端到端可观测性与成本控制成为一等公民。这一层正与 Harness 融合，并以 MCP 为默认工具协议，逐步形成"Harness 即后端"的新形态。

@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐ | 10.6KB | `entities/what-political-censorship-looks-like-inside-an-llm-s-weights.md`
 
-# What political censorship looks like inside an LLM's weights
+## What political censorship looks like inside an LLM's weights
 
 ## 摘要
 

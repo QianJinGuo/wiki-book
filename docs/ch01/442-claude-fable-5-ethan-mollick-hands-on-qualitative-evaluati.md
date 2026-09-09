@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 14.8KB | `entities/claude-fable-5-mollick-patron-vs-wizard.md`
 
-# Claude Fable 5 — Ethan Mollick hands-on qualitative evaluation
-
 > **来源**：[Ethan Mollick, One Useful Thing, 2026-06-09](https://www.oneusefulthing.org/p/what-it-feels-like-to-work-with-mythos) 原文存档：[原文存档](https://www.oneusefulthing.org/p/what-it-feels-like-to-work-with-mythos)
 >
 > **Background**: 本文聚焦 Mollick 作为 AI 研究学者（Wharton 教授，One Useful Thing 作者）于 2026-06-09 在 Claude 5 Fable 公开发布前的 early access 评测。其独特贡献不在于安全分析（已有 Lambert/Interconnects 与 AWS 中文版覆盖），而在于 (1) 一手定性使用体验的具体案例（游戏、等时线地图、Concord 研究工具），(2) "patron vs wizard" 框架对人类-AI 关系转变的提炼，(3) Token 经济学的具体量化（Fable = 2× Opus 成本）。与现有 Fable 5 entity 互为补充。

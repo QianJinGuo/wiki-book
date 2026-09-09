@@ -2,11 +2,7 @@
 
 > 📊 Level ⭐ | 4.3KB | `entities/build-an-ai-powered-aws-support-companion-with-amazon-bedroc.md`
 
-# Build an AI-powered AWS support companion with Amazon Bedrock AgentCore
-
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/build-an-ai-powered-aws-support-companion-with-amazon-bedrock-agentcore)
-
-# Build an AI-powered AWS support companion with Amazon Bedrock AgentCore
 
 Managing AWS infrastructure often means switching between consoles, searching documentation, and manually creating support cases. For each incident, an engineer opens the AWS Management Console, checks [Amazon CloudWatch](<https://aws.amazon.com/cloudwatch/>), searches AWS documentation, reviews community posts, and files a support case. This context-switching adds up to 30–45 minutes per investigation before resolution work begins.
 

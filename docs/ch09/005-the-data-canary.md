@@ -2,11 +2,11 @@
 
 > 📊 Level ⭐ | 4.6KB | `entities/the-data-canary-how-netflix-validates-catalog-metadata.md`
 
-# The Data Canary: How Netflix Validates Catalog Metadata
+## The Data Canary: How Netflix Validates Catalog Metadata
 
 → [原文存档](https://netflixtechblog.com/the-data-canary-how-netflix-validates-catalog-metadata-18b699d58e36?source=rss----2615bd06b42e---4)
 
-# The Data Canary: How Netflix Validates Catalog Metadata
+## The Data Canary: How Netflix Validates Catalog Metadata
 
 By [Celina Amados](<https://www.linkedin.com/in/celina-amados/>)
 

@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐ | 6.3KB | `entities/wikiskill-persistent-knowledge-skill-evolution-google-2026.md`
 
-# WikiSkill：将 Agent 经验编译为持久知识以驱动技能进化
+## WikiSkill：将 Agent 经验编译为持久知识以驱动技能进化
 
 > **来源**：Google Research + Virginia Tech 论文《WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution》（arXiv:2608.27454，2026-08-27）。用户提供论文原文 PDF（第一手源）+ Hyman 的杂货铺 解读（2026-08-29）。
 > **核心命题**：技能自动进化的瓶颈不是「从经验提炼技能」本身，而是**提炼出的洞察散落在各轮优化历史里、无法跨迭代系统性复用**。WikiSkill 给 Agent 加一个持久知识库（wiki）层，让技能更新建立在其上，实现「经验 → 知识 → 技能」的复利式协同进化。

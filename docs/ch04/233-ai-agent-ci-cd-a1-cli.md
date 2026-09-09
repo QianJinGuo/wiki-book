@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 4.2KB | `entities/ali-cli-ai-cicd-practice-a1.md`
 
-# AI Agent 时代 CI/CD 生存指南 — 阿里 a1 CLI 生产级实践
-
 > 阿里 a1 CLI（数十万行 Go, 数百命令, 数万日活）的生产级 CI/CD 体系，专为 AI Agent 生成的代码设计。核心挑战：如何 **harness AI 的随机性**。[^1]
 
 ## 核心命题

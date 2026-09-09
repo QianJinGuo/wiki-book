@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 7.4KB | `entities/introducing-seer-agent-the-answer-is-already-in-sentry-now-you-can-ask-for-it.md`
 
-# Introducing Seer Agent: The answer is already in Sentry. Now you can ask for it.
-
 → [原文存档](https://blog.sentry.io/introducing-seer-agent/)
 
 ## 摘要

@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 9.1KB | `entities/how-far-behind-are-open-models-2026.md`
 
-# How far behind are open models? (LessWrong 2026-05)
-
 > **Background**: Håvard Tveit Ihle 用 17 个 benchmark (8 private + 9 public, ~110 数据点) 量化开源 vs 闭源模型能力差距。结论：private benchmark 上开源落后 8-10 个月，public benchmark 落后 4-6 个月，且差距在 DeepSeek R1 之后正在扩大。
 
 ## 核心发现

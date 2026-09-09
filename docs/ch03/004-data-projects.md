@@ -2,11 +2,11 @@
 
 > 📊 Level ⭐ | 4.0KB | `entities/data-projects-managing-data-assets-at-netflix-scale.md`
 
-# Data Projects: Managing Data Assets at Netflix Scale
+## Data Projects: Managing Data Assets at Netflix Scale
 
 → [原文存档](https://netflixtechblog.com/data-projects-managing-data-assets-at-netflix-scale-7ca25888591e?source=rss----2615bd06b42e---4)
 
-# Data Projects: Managing Data Assets at Netflix Scale
+## Data Projects: Managing Data Assets at Netflix Scale
 
 #### _By_[ _Amer Hesson_](<https://www.linkedin.com/in/amer-hesson-0886a5a5/>) _,_[_Marcelo Mayworm_](<https://www.linkedin.com/in/mayworm/>) _,_[_James Mulcahy_](<https://www.linkedin.com/in/james-mulcahy-10493518/>) _, and_[ _Brittany Truong_](<https://www.linkedin.com/in/brittany-truong-a35b54bb/>)
 

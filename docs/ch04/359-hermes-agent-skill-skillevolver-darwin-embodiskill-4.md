@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 25.3KB | `entities/hermes-agent-skill-crossover-optimization.md`
 
-# Hermes Agent Skill 互优化：SkillEvolver × Darwin × EmbodiSkill 4 轮闭环
-
 ## 一句话
 
 > "**AI 的能力提升，不一定需要更强的模型。有时候，只需要让 AI 学会自己改自己的'说明书'。**"

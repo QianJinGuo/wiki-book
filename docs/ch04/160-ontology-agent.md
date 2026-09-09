@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 9.3KB | `entities/ontology-semantic-control-plane-agent-facts-ruofei-2026-08-08.md`
 
-# 本体论（Ontology）：Agent 事实系统的语义控制面
-
 → [原文存档](https://mp.weixin.qq.com/s/d9C-0aR1fCIkKkFVtz7_jg)
 
 ## 摘要

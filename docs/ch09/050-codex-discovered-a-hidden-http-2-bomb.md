@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 7.7KB | `entities/califio-codex-http2-hpack-bomb-880k-servers.md`
 
-# Codex Discovered a Hidden HTTP/2 Bomb
-
 → [原文存档](https://blog.calif.io/p/codex-discovered-a-hidden-http2-bomb)
 
 ## 摘要

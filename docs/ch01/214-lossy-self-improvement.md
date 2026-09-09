@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 14.2KB | `entities/lossy-self-improvement.md`
 
-# Lossy self-improvement
-
 > 原文存档：[原文存档](https://www.interconnects.ai/p/lossy-self-improvement)
 
 > **Core insight**: Nathan Lambert 提出"有损自我改进"（Lossy Self-Improvement, LSI）框架，对抗 AI 社区对递归自我改进（RSI）的流行叙事。LSI 核心论点是：模型确实成为研发循环的核心，但 friction 会打破 RSI 的三大假设——闭环、自放大和效率不减，导致进步曲线更接近线性而非指数。复杂性刹车（Complexity Brake）是 LSI 的理论基础。

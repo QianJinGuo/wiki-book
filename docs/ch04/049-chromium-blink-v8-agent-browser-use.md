@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 8.3KB | `entities/browser-internals-chromium-blink-v8-architecture-guide-jiagoux-2026.md`
 
-# 现代浏览器内部机制：Chromium/Blink/V8 架构
+## 现代浏览器内部机制：Chromium/Blink/V8 架构
 
 > 本文是对「架构师 JiaGouX」发布的超长浏览器内部机制技术文的摘要整合。原文系对 Chrome Mariko Kosaka "Inside look at modern web browser" 系列等资源的中文深度编译。 **Agent 视角**：AI Agent 的 Browser Use（browser CLI、Playwright、Chrome MCP、Computer Use 等工具）依赖对浏览器底层机制的理解来调试、优化和扩展。
 

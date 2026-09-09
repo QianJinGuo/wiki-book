@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 14.2KB | `entities/anthropic-llm-attck-navigator-cyber-operations.md`
 
-# Anthropic LLM ATT&CK Navigator: AI-Enabled Cyber Operations
-
 > Source: [原文存档](https://red.anthropic.com/2026/attack-navigator/)
 > Authors: Kyla Guru, Alex Moix, Jacob Klein (Anthropic Red Team, 2026-06-03)
 

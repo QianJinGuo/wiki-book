@@ -4,8 +4,6 @@
 
 > -> [原文存档](https://mp.weixin.qq.com/s/JDqeh3N7JlrqJpkqRRzRTA)
 
-# OpenAI 的最强对手，离「AI Windows」又近了一步
-
 ## 核心论点
 
 Anthropic 通过 MCP（Model Context Protocol）协议和 Claude 桌面应用「精选」连接器，正在构建 AI 时代的「操作系统」——通过统一的标准接口，让 AI 模型能够安全、标准化地连接外部工具和数据，从而占据生态枢纽位置。

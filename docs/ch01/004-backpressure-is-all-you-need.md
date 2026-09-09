@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 16.0KB | `entities/lucasfcostacom-blog-backpressure-is-all-you-need.md`
 
-# Backpressure is all you need
-
 ## 核心要点
 
 Insightful and practical framework applying systems engineering backpressure to coding agent workflows, offering a compelling third path between full autonomy and constant oversight.

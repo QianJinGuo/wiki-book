@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 24.3KB | `entities/skill-design-spec-8-block-checklist-winty.md`
 
-# 企业级 Skill 8 块最小骨架 + 8 条 checklist 设计规范
-
 ## 概述
 
 winty（前端Q）2026-06-02 关于**企业级 Skill 设计规范**的完整论述（Hermes Agent 系列第 4 篇）。核心命题：**Skill 不是文档，是程序**——Agent 不会脑补，任何含糊都会导致执行偏离。系统提出 8 块最小骨架（frontmatter 元数据 / When to use / Do not use when / Inputs / Steps / Verification / Failure handling / Pitfalls & Examples）+ 8 条 checklist 评判标准 + 完整可复用 frontend-release-check 模板。

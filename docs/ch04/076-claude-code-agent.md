@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐ | 5.6KB | `entities/claude-code-agent-engineering.md`
 
-# Claude Code 的 Agent 工程
-
 > URL：https://mp.weixin.qq.com/s/vP4bfT93egfH3NTwkpwcDw
 > 发布时间：2026年4月1日 12:42
 > SHA-256：`417c5764404afba03c0584973d3606b637c048f1c5628330d40ecae966b64035`

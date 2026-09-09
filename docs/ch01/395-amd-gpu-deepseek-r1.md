@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 4.9KB | `entities/amd-free-gpu-deepseek-r1-private-deployment.md`
 
-# AMD 免费云 GPU 私有化部署 DeepSeek-R1
-
 ## 摘要
 
 AMD "AI 开发者计划"提供免费 200 小时的云 GPU 资源（Radeon PRO W7900, 48GB GDDR6, ROCm 7.2.1），本文提供从零开始的端到端部署指南：环境检查 → ROCm 配置 → ModelScope 下载模型 → vLLM 推理服务 → ngrok 公网隧道 → Cherry Studio/OpenCode 客户端接入。全过程零硬件成本，数据在私有 GPU 上运行，不上传任何第三方服务器。

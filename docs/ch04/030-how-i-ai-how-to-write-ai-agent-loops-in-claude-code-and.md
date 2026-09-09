@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 4.3KB | `entities/ai-agent-loops-claude-code-codex.md`
 
-# 🎙️ How I AI: How to write AI agent loops in Claude Code and Codex + How Claude Mythos found a 15-year-old bug in Mozilla Firefox | Brian Grinstead
-
 > **来源**: [🎙️ How I AI: How to write AI agent loops in Claude Code and Codex + How Claude Mythos found a 15-year-old bug in Mozilla Firefox | Brian Grinstead](https://www.lennysnewsletter.com/p/how-i-ai-how-to-write-ai-agent-loops)
 
 ## 概述

@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 14.3KB | `entities/codex-major-update-appshots-goal-xinzhiyuan.md`
 
-# Codex 重磅升级：Appshots / Goal 毕业 / 锁屏远程操控
-
 ## 相关实体
 
 - [agent资本市场：自主agent融资框架与批判](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-capital-markets-wright-shensiquan.md)

@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 7.7KB | `entities/lightseek-token-speed-inference.md`
 
-# TokenSpeed: A Speed-of-Light LLM Inference Engine for AI Agents
-
 ## 摘要
 
 **TokenSpeed** 是 LightSeek Foundation 开发的开源 LLM 推理引擎，专为 Agentic 工作负载（如 [Claude Code](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/ai-coding-agent-from-helloworld-to-production.md)、Codex、Cursor 等 Coding Agent）从第一性原理设计。其核心创新包括：编译器支持的并行建模机制、C++/Python 混合的高性能调度器、编译时 KV 缓存安全管理、可插拔分层内核系统，以及与 SMG 集成的低开销 CPU 请求入口。在 NVIDIA Blackwell 上，TokenSpeed 对标 TensorRT-LLM，在 Coding Agent 场景下 Pareto 前沿全面领先约 9-11%。

@@ -4,7 +4,6 @@
 
 [Karpathy Ai Agent 7 Bits Value Decline 2026 Allentan](https://mp.weixin.qq.com/s/-EAqvaCnjY-dox3P8d8D7w)
 
-# Karpathy 怎么看 AI Agent（七）：当程序员贡献的 bits 越来越少，什么技能还值钱
 **作者**：AllenTang
 **平台**：微信
 **原始链接**：https://mp.weixin.qq.com/s/-EAqvaCnjY-dox3P8d8D7w

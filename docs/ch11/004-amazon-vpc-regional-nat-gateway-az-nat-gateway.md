@@ -2,11 +2,7 @@
 
 > 📊 Level ⭐ | 7.9KB | `entities/amazon-vpc-regional-nat-gateway-与-az-nat-gateway-全面对比.md`
 
-# Amazon VPC Regional NAT Gateway 与 AZ NAT Gateway 全面对比
-
 → [原文存档](https://aws.amazon.com/cn/blogs/china/amazon-vpc-regional-nat-gateway-az-nat-gateway-comparison)
-
-# Amazon VPC Regional NAT Gateway 与 AZ NAT Gateway 全面对比
 
 摘要：本文系统对比了 AWS NAT 网关的两种可用性模式：传统的 AZ（可用区）NAT 网关与 2025 年新发布的 Regional（区域）NAT 网关。从架构原理、高可用性、运维复杂度、规格上限、计费模型等维度逐一分析，帮助读者根据实际场景选择最合适的 NAT 网关模式。
 

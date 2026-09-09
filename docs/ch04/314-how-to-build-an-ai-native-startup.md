@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 10.0KB | `entities/ai-native-startup-cyberfund-2026.md`
 
-# How to Build an AI-Native Startup
-
 ## 摘要
 
 本文来自 cyber.fund 创始人 Stepan Gershuni 的创始人指南，系统阐述了 AI 原生创业公司的核心操作系统：**Context · Agents · Evals · Skills**。文章的核心论点是：真正拉开差距的不是谁雇了更多人，而是谁的公司学得更快、迭代得更快。每天快一点，几周后差距开始拉开，几个月后只有一家会活下来。

@@ -2,7 +2,6 @@
 
 > 📊 Level ⭐⭐ | 7.9KB | `entities/alphaevolve-deepmind-discovery-agent.md`
 
-# AlphaEvolve: A coding agent for scientific and algorithmic discovery
 **论文：** AlphaEvolve: A coding agent for scientific and algorithmic discovery
 **作者：** Alexander Novikov 等（Google DeepMind）
 

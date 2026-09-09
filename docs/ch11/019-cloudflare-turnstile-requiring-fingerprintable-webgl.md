@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 3.5KB | `entities/hacktivisme-articles-cloudflare-turnstile-webgl-fingerprinting.md`
 
-# Cloudflare Turnstile requiring fingerprintable WebGL
-
 ## 核心要点
 
 Niche but well-documented analysis of Cloudflare Turnstile WebGL fingerprinting requirements that effectively bans privacy-focused browsers, with specific browser bug references and screenshots.

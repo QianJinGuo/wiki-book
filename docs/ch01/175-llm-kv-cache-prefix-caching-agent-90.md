@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 5.7KB | `entities/llm-prefix-caching-comprehensive-guide.md`
 
-# LLM 缓存原理与实践
+## LLM 缓存原理与实践
 
 > 原文归档：[原文归档](https://mp.weixin.qq.com/s/bsSBfvWyLUEdFHFZmFOckQ)
 

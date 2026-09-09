@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐ | 5.1KB | `entities/building-the-agentic-future-developer-highlights-from-io-2026.md`
 
-# Building the agentic future: Developer highlights from I/O 2026
+## Building the agentic future: Developer highlights from I/O 2026
 
 > 来源：[原文存档](https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/)
 

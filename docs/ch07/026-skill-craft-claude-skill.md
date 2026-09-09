@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 7.5KB | `entities/claude-skill-quality-tool-skill-craft.md`
 
-# Skill Craft：Claude Skill 质量工程工具
-
 → [原文存档](https://mp.weixin.qq.com/s/R2mdJlmrhwGp4CZvcQ7Tgg)
 
 ## 摘要

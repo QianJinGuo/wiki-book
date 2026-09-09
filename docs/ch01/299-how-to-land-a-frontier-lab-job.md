@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 8.8KB | `entities/how-to-land-frontier-lab-job-vlad-feinberg.md`
 
-# How to Land a Frontier Lab Job：如何拿到一份前沿实验室的工作
-
 ## 核心结论
 
 - 三项底层特质：Intent/Mathematical maturity/Grit

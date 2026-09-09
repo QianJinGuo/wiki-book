@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐⭐ | 9.6KB | `entities/spec-kit-openspec-superpowers-hybrid-harness.md`
 
-# Spec Kit / OpenSpec / Superpowers 融合：棕地项目的三层 Harness 架构
+## Spec Kit / OpenSpec / Superpowers 融合：棕地项目的三层 Harness 架构
 
 > 作者 CCC 在对比 Spec Kit、OpenSpec、Superpowers 三个框架后，选择各自取其精华，自建了一套更适合中大型团队棕地项目的三层 Harness 方案。核心思路：拿 OpenSpec 做底座骨架，补上 Superpowers 式的铁律纪律思维，再套一层自己的 Harness 约束层，形成「哈尼层 → Skill 层 → Spec 层」的分层架构。
 

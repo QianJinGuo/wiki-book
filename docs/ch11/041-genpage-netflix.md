@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐ | 5.0KB | `entities/genpage-netflix-generative-homepage-construction.md`
 
-# GenPage: Netflix 端到端生成式首页构建
-
 ## 核心洞察
 
 Netflix 用单一 decoder-only Transformer 模型替代传统的多阶段推荐流水线（候选生成 → 行级排序 → 实体级排序），将首页构建视为**自回归序列生成问题**：用户上下文作为 prompt，整页布局作为 response。

@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 29.3KB | `entities/qq-music-harness-engineering-monorepo-microservices.md`
 
-# QQ音乐 Harness Engineering 实践（大仓多服务场景）
-
 ## 概述
 
 QQ音乐商业化团队（黄欣欣，2026-05-21）落地在 Monorepo Microservices 场景的开源工程框架。核心命题：当 AI 让"写代码"变快，真正的瓶颈变成"看不完、想不清、管不住"。本文**提出"代码产出 = AI 能力 × 上下文质量"核心公式**（乘法 vs 加法），把 Harness Engineering 从概念推进到 50+ 微服务 / 业务仓 + IDL 契约仓 + Harness 规范仓三仓协同的可执行工程体系。

@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐ | 2.5KB | `entities/autoresearch-next-phase-async-multi-agent-ai寒武纪.md`
 
-# Autoresearch Next Phase Async Multi Agent Ai寒武纪
+## Autoresearch Next Phase Async Multi Agent Ai寒武纪
 
 → [原文存档](https://github.com/karpathy/autoresearch)
 

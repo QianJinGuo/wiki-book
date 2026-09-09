@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 15.5KB | `entities/ai-cambrian-google-agentic-rag-sufficient-context-cross-corpus-20260606.md`
 
-# Google Agentic RAG 跨语料库框架：充分上下文智能体 + 5 阶段管线
-
 > 原文链接：[原文链接](https://mp.weixin.qq.com/s/8PdVIubBGWKtMMyCb0pc3g)
 
 ## 摘要

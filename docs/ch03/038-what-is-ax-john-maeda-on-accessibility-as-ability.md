@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 6.6KB | `entities/2026-06-11-what-is-ax.md`
 
-# What is AX? John Maeda on Accessibility as Ability
-
 → [原文存档](https://maeda.pm/2026/06/11/what-is-ax/)
 
 ## 摘要

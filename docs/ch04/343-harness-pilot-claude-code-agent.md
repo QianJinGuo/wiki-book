@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 7.7KB | `entities/harness-pilot-claude-code-plugin-yangtong-2026-06-17.md`
 
-# Harness Pilot：Claude Code 插件的项目规范预验证与 Agent 协作框架
-
 ## 摘要
 
 杨桐开发的 Claude Code 插件 Harness Pilot，将项目规范显式化、版本化并集成到 Git 工作流。核心范式转变：从依赖 AI"自觉"的事后检查，转变为依靠自动化脚本在编码前进行强制预验证。包含两大 Skill（harness-analyze/harness-apply）、五类内置 Agent、分层模板系统、Ralph Wiggum Loop 自动质量循环、Handoff 跨会话机制。实测效果：项目健康分从 10/100 提升至 91/100。

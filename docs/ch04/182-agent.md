@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐⭐ | 8.4KB | `entities/claude-code-tool-system-architecture-deep-dive.md`
 
-# Claude Code 工具系统架构深度拆解
+## Claude Code 工具系统架构深度拆解
 
 > Claude Code 的工具系统不是简单的"函数注册表 + 调用分发器"，而是包含权限分级、运行时风险评估、子 Agent 递归和两阶段安全分类器的完整架构。
 

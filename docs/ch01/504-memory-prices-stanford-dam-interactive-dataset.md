@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 5.4KB | `entities/memory-prices-stanford.md`
 
-# Memory Prices - Stanford DAM Interactive Dataset
-
 ## 摘要
 
 Stanford Digital Art Museum (DAM) 维护的交互式数据集，追踪 1957 年至今的内存与存储价格历史。基于 John C. McCallum 经典内存价格数据集，由 David Shim 编译维护。提供交互式可视化（hover 查看详情、点击图例切换系列、拖拽或滑块缩放、导出图像）和可下载 CSV 原始数据。

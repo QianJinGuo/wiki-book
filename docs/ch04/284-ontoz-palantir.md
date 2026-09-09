@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 13.7KB | `entities/baixing-ontoz-enterprise-ontology-multi-agent.md`
 
-# 百型智能 OntoZ：企业本体论 + 群智能体协同体系
+## 百型智能 OntoZ：企业本体论 + 群智能体协同体系
 
 > 原文存档：[原文存档](https://mp.weixin.qq.com/s/IRvH150nyGbKAXdG5akpyQ)
 

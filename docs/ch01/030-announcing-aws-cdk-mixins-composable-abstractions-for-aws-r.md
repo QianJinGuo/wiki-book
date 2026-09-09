@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐ | 8.3KB | `entities/announcing-aws-cdk-mixins-composable-abstractions-for-aws-resources-amazon-web-s.md`
 
-# Announcing AWS CDK Mixins: Composable Abstractions for AWS Resources
+## Announcing AWS CDK Mixins: Composable Abstractions for AWS Resources
 
 → [原文存档](https://aws.amazon.com/blogs/devops/announcing-aws-cdk-mixins-composable-abstractions-for-aws-resources/)
 

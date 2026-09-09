@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 9.1KB | `entities/management-as-ai-superpower.md`
 
-# Management as AI superpower
-
 → [原文存档](https://www.oneusefulthing.org/p/management-as-ai-superpower)
 
 ## 摘要

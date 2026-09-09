@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 7.6KB | `entities/github-internal-data-analytics-agent-copilot.md`
 
-# How we built an internal data analytics agent
-
 > 原文存档：[原文存档](https://github.blog/ai-and-ml/github-copilot/how-we-built-an-internal-data-analytics-agent/)
 
 ## 核心内容

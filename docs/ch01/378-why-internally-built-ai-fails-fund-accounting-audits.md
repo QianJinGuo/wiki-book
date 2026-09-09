@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 5.9KB | `entities/ai-fails-fund-accounting-audits.md`
 
-# Why Internally-Built AI Fails Fund Accounting Audits
-
 → [原文存档](https://maybern.com/post/why-internally-built-ai-fails-fund-accounting-audits)
 
 ## 摘要

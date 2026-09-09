@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 8.7KB | `entities/vivo-bluecode-zero-code-2day-refactor.md`
 
-# BlueCode 0 行手写代码重构 2 万行 Vue：约束体系驱动 AI 大规模重构
-
 > 来源：vivo互联网技术（Liu Shudong）| 核心命题：AI 辅助开发的关键不在 AI 能力，而在人为 AI 建立的约束体系
 
 不手写一行代码，用自然语言指挥 BlueCode（vivo 内部 AI 编程助手，CLI 形态，类似 Claude Code），2 个工作日内完成一个 4 年历史、2 万行 Vue 项目的全面重构。**核心观点：AI 辅助开发的关键不在 AI 本身的能力，而在于人为 AI 建立的约束体系**——通过 Skills 技能包注入领域知识、AGENTS.md 沉淀项目规范、飞轮效应让错误只犯一次。

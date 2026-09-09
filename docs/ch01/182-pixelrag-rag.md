@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐ | 4.3KB | `entities/pixelrag-screen-shot-visual-rag-berkeley-2026.md`
 
-# PixelRAG：用截图替代文本解析的视觉 RAG 范式
-
 PixelRAG 是 UC Berkeley 的开源项目，提出一种**纯视觉原生的 RAG 方案**——完全抛弃 HTML 文本解析链路，直接用无头浏览器渲染截图 + 视觉大模型编码进行检索。配套论文《Web Screenshots Beat Text for Retrieval-Augmented Generation》。
 
 ## 核心流程

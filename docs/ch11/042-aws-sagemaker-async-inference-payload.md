@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐ | 4.2KB | `entities/aws-sagemaker-async-inference-inline-payloads.md`
 
-# AWS SageMaker Async Inference 内联 Payload 支持
-
 ## 核心变更
 
 `InvokeEndpointAsync` API 新增 `Body` 参数，允许在 API 请求体内直接传入推理 payload，无需先上传到 S3。

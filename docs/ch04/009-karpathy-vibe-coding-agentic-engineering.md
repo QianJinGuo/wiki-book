@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 5.6KB | `entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md`
 
-# Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering
-
 > 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.8**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md`，一手来源仍见下方 sources。
 

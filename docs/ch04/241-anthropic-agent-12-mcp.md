@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 29.0KB | `entities/anthropic-12-mcp-production-patterns.md`
 
-# Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式
-
 - URL: https://mp.weixin.qq.com/s/dd_yVuyLiO5avvivvFl5Zw
 - Author: 技术博客（整理自 Anthropic 官方文档 + Claude Code 源码）
 - Date: 2026-05

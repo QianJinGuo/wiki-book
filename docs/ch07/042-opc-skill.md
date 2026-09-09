@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 10.5KB | `entities/jd-health-opc-skill-full-process.md`
 
-# 京东健康 OPC 团队产品全流程 Skill 探索
-
 ## 摘要
 
 京东健康 OPC（One Person Company）团队在无专职产品角色的模式下，探索将产品全流程 Skill 化——从需求判断、方案设计到交付验证，构建完整的 Agent Skill 体系。基于 Anthropic 开源的 Product Management Skills，他们适配了 OPC 场景的 8 个核心 Skill，实现从问题发现到上线复盘的完整产品闭环。

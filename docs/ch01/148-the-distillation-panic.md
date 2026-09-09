@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐ | 7.1KB | `entities/interconnects-the-distillation-panic.md`
 
-# The distillation panic
-
 ## 相关实体
 - [05 11 The Great Memory Panic Of 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/05-11-the-great-memory-panic-of-2026.md)
 

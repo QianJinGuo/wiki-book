@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 4.3KB | `entities/dittos-loop-codex-product-pm-zhongshiliu-2026.md`
 
-# Loop 的产品视角——项目中心从人挪到 Agent 系统
-
 ## 核心论点
 
 钟十六（前阶跃 Agent 产品负责人）提出：**项目中心会从人变成 Agent 系统**。当 Loop 真正跑通后，发动机不再是人的每一步推动，而是 Agent 系统自行运转，人只在关键路口被请来拍板。

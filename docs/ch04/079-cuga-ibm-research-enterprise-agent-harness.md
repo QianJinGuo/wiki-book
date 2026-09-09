@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐ | 5.0KB | `entities/cuga-ibm-research-agent-harness-enterprise.md`
 
-# CUGA: IBM Research Enterprise Agent Harness
-
 > **Background**: Based on IBM Research's CUGA (Configurable Generalist Agent) technical blog published on HuggingFace, analyzing the framework's architecture, core components, and 24 practical examples.
 
 ## Core Positioning

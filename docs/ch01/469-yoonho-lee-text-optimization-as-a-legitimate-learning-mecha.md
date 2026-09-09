@@ -4,8 +4,6 @@
 
 > → [原文存档](https://yoonholee.com/blog/2026/we-should-take-text-optimization-more-seriously/)
 
-# Yoonho Lee: Text Optimization as a Legitimate Learning Mechanism
-
 ## 一句话总结
 
 Yoonho Lee (BAIR) 在 2026-06-08 发表立场论文，把 text optimization（prompts/memory/retrieval/harness 等 mutable text layer）作为与 weights optimization 等价但**独立且互补**的学习机制，三层论证 + 多个实验支持。

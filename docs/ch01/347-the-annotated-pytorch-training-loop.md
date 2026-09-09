@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 7.3KB | `entities/essays-pytorch-training-loop.md`
 
-# The annotated PyTorch training loop
-
 > **来源**: [The annotated PyTorch training loop](https://idlemachines.co.uk/essays/pytorch-training-loop)
 
 ![Image 1: A three-class spiral dataset. Shaded regions show the model's softmax confidence. The boundary sharpens as training progresses.](https://idlemachines.co.uk/essays/figs/training_loop_animation.webp)

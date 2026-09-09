@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 8.1KB | `entities/blog-himanshuanand-com-score-by-collisions-patch-by-panic.md`
 
-# score by collisions, patch by panic
-
 ## 摘要
 
 本文是 blog.himanshuanand.com 为前作《90 天披露政策已死》写下的落地提案：用"碰撞计数"（collision count）驱动漏洞严重性分级，用"附补丁的报告"取代空报告，用"假设 exploit 先于补丁到达"的架构设计取代补丁竞速。作者援引 Linus Torvalds 在 LKML 的表态与 Searchlight Cyber 的 cPanel 0day 案例，论证 AI 辅助漏洞挖掘已把安全生态推向"多人同发现"的竞争格局。

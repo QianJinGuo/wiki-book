@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 8.4KB | `entities/agent-harness-production.md`
 
-# Agent 生产级 Harness 工程实践
-
 ## 摘要
 
 生产级 Agent Harness 是弥合"Demo 能跑"与"生产能用"之间鸿沟的工程层：把模型外部的执行环境、工具、上下文、生命周期、可观测、验证与治理组织成一个状态清楚、证据可查、失败可恢复的运行时闭环。它必须直面长时运行、状态恢复、并发隔离、失败回滚等真实边界条件。Harness Engineering 之于 AI Agent，正如 DevOps 之于软件部署——模型是 CPU，Harness 是操作系统。

@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 4.9KB | `entities/25-the-unbearable-cheapness-of-open-weight-models.md`
 
-# The Unbearable Cheapness of Open Weight Models – James O'Claire
-
 > **来源**: [The Unbearable Cheapness of Open Weight Models – James O'Claire](https://jamesoclaire.com/2026/06/25/the-unbearable-cheapness-of-open-weight-models/)
 
 Today I was setting up Hermes to see how it does with web research. I chose DeepSeek V4 because I know it is cheap, but seeing it’s pricing next to Anthropic and OpenAI ‘frontier’ models is crazy. Nearly a 50x price increase based on tokens alone, let alone how much pondering any of their models might fall into (using more tokens for the same task).

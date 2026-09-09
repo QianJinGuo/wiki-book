@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 2.3KB | `entities/the-inevitable-need-for-an-open-model-consortium.md`
 
-# The inevitable need for an open model consortium
-
 → [原文存档](https://www.interconnects.ai/p/the-inevitable-need-for-an-open-model)
 
 ## 深度分析

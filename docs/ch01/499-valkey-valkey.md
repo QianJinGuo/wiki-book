@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 6.9KB | `entities/valkey-why-valkey-performance.md`
 
-# Valkey 为什么这么快？盘点 Valkey 中提升性能的黑科技
-
 → [原文存档](https://aws.amazon.com/cn/blogs/china/valkey-why-valkey-performance/)
 
 ## 摘要

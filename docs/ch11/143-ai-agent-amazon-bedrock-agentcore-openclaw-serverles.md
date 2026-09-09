@@ -2,13 +2,15 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 10.8KB | `entities/ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单机改造为多租户-serverless-架构-.md`
 
-# ai agent 的迁移与现代化 使用 amazon bedrock agentcore 将 openclaw 从单机改造为多租户 serverless 架构
-
 <div style="line-height: 1.6;font-size: 16px">
 <p style="background-color: #fafafa;padding: 20px;border-radius: 8px;margin-bottom: 30px;font-size: 16px;color: #5f6368">摘要：基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构。全系列 6 篇，涵盖 Replatform 与 Refactor 两种策略。本篇为第六篇：清理资源与总结展望，删除部署资源、迁移前后对比回顾，以及进一步探索方向。</p>
 <div style="background-color: #f0f7ff;border: 1px solid #d0e3f7;padding: 20px;border-radius: 8px">
 <p><strong style="font-size: 18px;color: #333">目录</strong></p>
 <div style="line-height: 1.8;margin: 0;padding: 0">
+
+</div>
+</div>
+</div>
 
 ## 相关实体
 - [Using Amazon Bedrock Agentcore Openclaw Multi 5](https://github.com/QianJinGuo/wiki-public/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-5.md)
@@ -96,7 +98,4 @@ KMS 密钥的 7-30 天删除等待期是一个容易被忽视的细节，在生�
 10. **多渠道消息路由**：项目预留了 Slack、Discord、WhatsApp 的接口，Router Lambda 已内置 Slack HMAC 签名验证。这表明架构设计时应考虑未来的扩展性，预留插件式扩展点。
 
 11. **多区域部署准备**：CDK 代码和部署脚本支持多区域，关键在于为每个区域创建独立工作目录和设置不同的 `TARGET_REGION`。如果业务有全球化需求，这个架构可以平滑扩展。
-</div>
-
 ---
-

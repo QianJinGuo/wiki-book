@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 5.0KB | `entities/glm-53-how-chinese-labs-keep-stride-with-the-frontier.md`
 
-# GLM-5.3: How Chinese labs keep stride with the frontier
-
 → [原文存档](https://www.interconnects.ai/p/glm-53-how-chinese-labs-keep-stride)
 
 ## 核心事实：GLM-5.3 发布

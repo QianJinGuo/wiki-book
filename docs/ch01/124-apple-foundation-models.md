@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 3.7KB | `entities/anthropic-apple-foundation-models-claude.md`
 
-# Apple Foundation Models
-
 > Source: [原文存档](https://platform.claude.com/docs/en/cli-sdks-libraries/libraries/apple-foundation-models)
 
 ## 核心要点

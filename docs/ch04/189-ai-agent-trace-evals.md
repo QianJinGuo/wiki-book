@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 8.2KB | `entities/ai-agent-trace-evals-stability-cost-evaluation-zhangyanfei.md`
 
-# AI Agent 落地：如何攻克稳定性、成本与评估难题？ — Trace即Evals
-
 ## 摘要
 
 张雁飞在 Databend Meetup 2026 北京站的演讲，提出"Trace 即 Evals"的核心主张 — AI Agent 的稳定性、成本归因和效果评估，必须建立在完整执行轨迹之上。文章用 Claude Code、Evot、Pi 等 Agent 对比案例，梳理了从 Prompt Engineering、Context Engineering 到 Harness Engineering 的演进。

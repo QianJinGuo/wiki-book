@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 10.9KB | `entities/claude-code-and-what-comes-next.md`
 
-# Claude Code and What Comes Next
-
 → [原文存档](https://www.oneusefulthing.org/p/claude-code-and-what-comes-next)
 
 ## 摘要

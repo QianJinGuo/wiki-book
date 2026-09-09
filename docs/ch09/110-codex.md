@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 9.5KB | `entities/codex-5-layer-architecture.md`
 
-# Codex 五层架构：记忆/知识/护栏/委派/分发
-
 ## 摘要
 
 Codex 团队开发环境配置的五层架构：`AGENTS.md`（记忆层）→ `skills/`（知识层）→ `hooks/`（护栏层）→ `subagents/`（委派层）→ `plugins/`（分发层），形成一个从规则对齐到安全管控到多 Agent 协作的完整工程体系。

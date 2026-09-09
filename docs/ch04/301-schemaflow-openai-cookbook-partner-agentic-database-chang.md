@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 11.5KB | `entities/schemaflow-openai-cookbook-staged-agentic-workflow.md`
 
-# SchemaFlow: OpenAI Cookbook Partner — Agentic Database Change Impact Analysis, SQL Generation, and Eval Guardrails
-
 > **背景**：本文基于 OpenAI 官方 Cookbook 合作伙伴 SchemaFlow 的实战案例整理，提取其 staged agentic workflow 设计模式、SQL 生成的工程化护栏与评估范式。
 
 ## SchemaFlow 是什么

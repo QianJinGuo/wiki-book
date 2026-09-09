@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 4.8KB | `entities/anthropic-prompt-caching-claude-code.md`
 
-# Prompt Caching 工程实践 — Anthropic Claude Code 经验总结
-
 > 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.8**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/anthropic-prompt-caching-claude-code.md`，一手来源仍见下方 sources。
 

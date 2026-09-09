@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 5.7KB | `entities/aws-waf-ai-traffic-monetization-bot-content-access.md`
 
-# AWS WAF AI Traffic Monetization — 内容所有者向 AI 收费的网络层基础设施
-
 > Source: [原文存档](https://aws.amazon.com/blogs/aws/aws-waf-adds-ai-traffic-monetization-capability-to-help-content-owners-charge-ai-bots-for-content-access/)
 
 ## 背景

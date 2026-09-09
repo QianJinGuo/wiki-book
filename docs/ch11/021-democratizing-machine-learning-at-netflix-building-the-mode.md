@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 2.3KB | `entities/democratizing-machine-learning-at-netflix-building-the-model.md`
 
-# Democratizing Machine Learning at Netflix: Building the Model Lifecycle Graph
-
 → [原文存档](https://netflixtechblog.com/democratizing-machine-learning-at-netflix-building-the-model-lifecycle-graph-5cc6d5828bb1?source=rss----2615bd06b42e---4)
 
 ## 深度分析

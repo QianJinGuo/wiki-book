@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐ | 8.8KB | `entities/appstore-activity-harness-engineering-tencent.md`
 
-# 应用宝活动平台 Harness 工程实践——从对话式 AI Coding 到工程化系统
-
 > 原文归档：原文归档
 
 腾讯应用宝活动平台（支撑应用宝内 app、pc、手助等产品所有日常/节假日活动）在生产环境中实践 Harness Engineering 的完整报告，详细记录了从对话式 AI Coding 走向工程化系统的路径、架构设计与实战经验。

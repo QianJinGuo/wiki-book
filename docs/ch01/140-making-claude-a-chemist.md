@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐ | 7.6KB | `entities/anthropic-com-research-making-claude-a-chemist.md`
 
-# Making Claude a chemist
-
 ## 深度分析
 
 ### 1. Claude 作为化学家：专业领域 AI 的里程碑

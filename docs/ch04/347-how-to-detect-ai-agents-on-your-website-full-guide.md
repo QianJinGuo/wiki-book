@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 6.3KB | `entities/detect-ai-agents-website.md`
 
-# How to Detect AI Agents on Your Website
+## How to Detect AI Agents on Your Website
 
 → [原文存档](https://cside.com/blog/guide-to-detect-ai-agent-traffic-on-your-website)
 

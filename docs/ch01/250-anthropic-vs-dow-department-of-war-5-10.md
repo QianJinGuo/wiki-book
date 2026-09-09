@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐⭐ | 11.3KB | `entities/anthropic-vs-dow-open-models-power-equilibrium-2026.md`
 
-# Anthropic vs DoW 与开源模型的 5-10 年权力均衡
+## Anthropic vs DoW 与开源模型的 5-10 年权力均衡
 
 > 原文存档：[原文存档](https://www.interconnects.ai/p/how-anthropic-vs-dow-impacts-open)
 

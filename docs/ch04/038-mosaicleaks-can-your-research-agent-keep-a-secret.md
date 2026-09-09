@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 3.7KB | `entities/mosaicleaks-privacy-risks-deep-research-agents-servicenow.md`
 
-# MosaicLeaks: Can your research agent keep a secret?
-
 ## 核心问题
 
 深度研究 Agent（Deep Research Agents）在执行多步查询时，会将用户的私密信息暴露在查询链路中。MosaicLeaks 研究首次系统量化了这一隐私风险。

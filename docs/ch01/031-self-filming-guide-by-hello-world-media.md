@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 8.2KB | `entities/self-filming-guide-by-hello-world-media-2f60dfa5e2e180cfa6efcef23c882e57.md`
 
-# Self-Filming Guide by Hello World Media
-
 ## 摘要
 Hello World Media 是一家端到端视频创意工作室（video creative studio & media company），面向科技公司与消费品牌制作电影级商业广告。其《Self-Filming Guide》教普通创作者用一台手机拍出接近专业水准的自拍视频。核心立场是：除了 **story**，决定观感最重要的两个因素只有**灯光（lighting）**与**音频（audio）**；画面质量已不是门槛——iPhone 与 Pixel 的消费级硬件配合 Log 格式录制，足以支撑专业后期调色。全文从相机设置、布光技法、收音与表演四方面给出了一份几乎零门槛、可复制的"傻瓜式"执行手册。
 

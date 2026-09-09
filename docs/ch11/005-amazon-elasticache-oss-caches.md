@@ -2,11 +2,7 @@
 
 > 📊 Level ⭐ | 7.8KB | `entities/构建-amazon-elasticache-oss-caches-慢查询监控方案.md`
 
-# 构建 Amazon ElastiCache OSS Caches 慢查询监控方案
-
 → [原文存档](https://aws.amazon.com/cn/blogs/china/build-amazon-elasticache-oss-caches-query-monitoring-solution)
-
-# 构建 Amazon ElastiCache OSS Caches 慢查询监控方案
 
 摘要：Redis 慢查询会阻塞单线程引擎引发故障，而 CloudWatch 缺少现成的慢查询计数指标。本方案借助 ElastiCache 慢日志的 JSON 结构化能力，用 CloudWatch Logs Metric Filter 直接生成自定义指标 RedisSlowQueryCount，零代码、纯托管、可批量部署，并经告警与 SNS 实现主动监控。
 

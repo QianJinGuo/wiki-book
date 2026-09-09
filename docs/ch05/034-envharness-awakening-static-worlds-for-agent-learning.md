@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 11.7KB | `entities/envharness-awakening-static-worlds-agent-learning-google-2026.md`
 
-# EnvHarness: Awakening Static Worlds for Agent Learning
-
 > 来源：Google Cloud AI Research + WashU（Chengsong Huang 等，arXiv:2608.19880，2026-08-20，41 页）第一方论文，用户提供原文 PDF。EnvHarness 是给静态训练环境包一层可编程插件层（Environment Harness），在 reset/step 标准接口上重塑环境行为而不改底层逻辑，配合 EnvRigger 自动定制，让同一底层环境衍生出无限定制化训练场景，且每个改造环境安全继承原始环境的可信验证器。
 
 ## 核心命题

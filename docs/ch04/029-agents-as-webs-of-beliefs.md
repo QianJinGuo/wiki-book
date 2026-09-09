@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 4.4KB | `entities/posts-m39z2cvyfaxzdaxr4-agents-as-webs-of-beliefs.md`
 
-# Agents as Webs of Beliefs
-
 > **Source**: [www.lesswrong.com](https://www.lesswrong.com/posts/M39Z2CvyfaxZdaxR4/agents-as-webs-of-beliefs)
 
 Synthesizes ideas from active inference, agent foundations, and ML into a 'belief webs' framework. Original synthesis but lacks empirical data or implementation details. Good conceptual depth for agent foundations, but confidence is moderate due to lack of verifiable benchmarks.

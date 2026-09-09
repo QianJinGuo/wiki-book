@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 5.1KB | `entities/claude-opus-47.md`
 
-# Claude Opus 4.7 并不是一次全面升级，甚至部分能力大幅衰退
-
 Claude Opus 4.7 并不是一次全面升级，甚至部分能力大幅衰退。
 昨晚 Opus 4.7 上线，全网又炸了。
 我仔细看了下官方博客 https://www.anthropic.com/news/claude-opus-4-7

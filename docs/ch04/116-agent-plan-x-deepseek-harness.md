@@ -2,7 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 12.9KB | `entities/agent-plan-x-deepseek-harness-dsh-practice-guide.md`
 
-# Agent Plan x DeepSeek Harness 实践指南
 最新的DeepSeek 智能体应用框架（DeepSeek Harness，简称DSH），**Model、Tool、Memory、Sandbox 和 Agent 都是可组合、可替换、可扩展的插件** 。Harness 本身退到最薄——它只做三件事：调度模型与工具、在高危操作前请你审批、维护一份任务计划。
 
 → [原文存档](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247521375&idx=1&sn=e11bc1ebfc05563e0d0ab2d5d47835b5)

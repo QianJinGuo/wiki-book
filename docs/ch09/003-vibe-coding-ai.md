@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 5.1KB | `entities/accessibility-designer-vibe-coding-internal-reflection-2026.md`
 
-# 无障碍设计师 vibe coding：当所有同事都在用 AI 写代码时
-
 > 原文存档：[原文存档](http://ericwbailey.website/published/the-case-for-an-accessibility-designer-vibe-coding-when-all-his-coworkers-are-also-vibe-coding/)
 
 ## 概述

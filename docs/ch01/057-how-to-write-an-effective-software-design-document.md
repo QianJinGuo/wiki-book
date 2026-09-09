@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 7.2KB | `entities/excerpts-write-an-effective-design-doc.md`
 
-# How to Write an Effective Software Design Document
-
 > **来源**: [How to Write an Effective Software Design Document](https://refactoringenglish.com/excerpts/write-an-effective-design-doc/)
 
 A good design doc can save you years of development time. Writing a design doc forces you to think through important decisions before you waste time on the wrong implementation or paint yourself into a corner. It’s also the best way to coordinate design decisions among teammates and partner teams.
@@ -67,7 +65,6 @@ Consider these questions:
 *   Will multiple people coordinate work to implement the design?
 *   Will the project take more than three months of full-time dev work?
 *   Will the implementation run in production for several years?
-*
 
 → [原文存档](https://refactoringenglish.com/excerpts/write-an-effective-design-doc/)
 

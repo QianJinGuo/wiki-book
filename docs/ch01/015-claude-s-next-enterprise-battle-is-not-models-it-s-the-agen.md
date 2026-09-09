@@ -63,18 +63,12 @@ OpenAI 的 Assistants 和 Responses API 稳居第二（23.2% → 25.7%），这�
 - [原文存档](https://venturebeat.com/orchestration/claudes-next-enterprise-battle-is-not-models-its-the-agent-control-plane)
 - [Agent Orchestration](114-agent-orchestration.html)
 
-## ## 相关实体
+## 相关实体
 - [Anthropic最危险路线图曝光: 无限记忆、多智能体! 硅谷AI终局仅剩双雄决顶](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic最危险路线图曝光-无限记忆多智能体-硅谷ai终局仅剩双雄决顶.md)
 
-## ## 相关实体
 - [AI 行业就业八大变化（腾讯研究院纵向对比）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-employment-eight-changes-tencent-research.md)
-
-## ## 相关实体
 - [Harness Engineering 三次范式跃迁与四根支柱](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-paradigm-shift.md)
-
-## ## 相关实体
 - [CDP Bridge MCP：真实浏览器直连 MCP 工具](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cdp-bridge-mcp-real-browser-agent.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/openai-developer-ecosystem.md)
 
 ---
-

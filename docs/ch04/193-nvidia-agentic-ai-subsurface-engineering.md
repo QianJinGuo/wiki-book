@@ -3,7 +3,7 @@
 > 📊 Level ⭐⭐⭐ | 8.1KB | `entities/nvidia-agentic-ai-subsurface-engineering.md`
 
 > -> [原文存档](https://developer.nvidia.com/blog/24-7-simulation-loops-how-agentic-ai-keeps-subsurface-engineering-moving/)
-# Agentic AI for Subsurface Engineering Simulation (NVIDIA)
+## Agentic AI for Subsurface Engineering Simulation (NVIDIA)
 ## 核心要点
 - 来源：NVIDIA Developer Blog
 - 评分：56（价值 × 置信度）

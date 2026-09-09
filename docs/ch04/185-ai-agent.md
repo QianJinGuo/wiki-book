@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 8.3KB | `entities/enterprise-ai-ontology-agent-knowledge-governance.md`
 
-# 企业 AI 的非技术困境：本体驱动 Agent 与知识治理
-
 ## 摘要
 
 DataFunTalk 圆桌讨论实录，围绕本体建模、知识治理、企业 AI 转型与组织变革等核心议题，探讨企业 AI 落地中"非技术"层面的挑战。三位嘉宾来自华为、平安和创业团队的不同背景，分享了从大型组织到初创团队的真实 AI 落地经验。

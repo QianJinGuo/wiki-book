@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 8.6KB | `entities/agentic-resource-discovery-specification-snowflake.md`
 
-# Agentic Resource Discovery (ARD) Specification
-
 ## 摘要
 
 **Agentic Resource Discovery (ARD)** 是 Snowflake 联合 Microsoft、GoDaddy 等推出的开放协议，标准化企业级 AI Agent 的目录化、搜索和发现机制。ARD 解决的核心问题是：企业内部已部署大量 AI Agent（MCP servers、A2A agents、Skills、传统 API tools），但 AI 客户端无法自动找到最佳能力来完成给定任务。ARD 作为**发现层**，与 MCP（工具调用）、A2A（Agent 间通信）互补，三者构成完整的 Agent 互操作栈。

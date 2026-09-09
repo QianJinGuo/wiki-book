@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 7.6KB | `entities/what-is-software-llms-replace-tomassetti-2026.md`
 
-# What Is Software, and Will LLMs Replace It?
-
 ## 摘要
 
 Federico Tomassetti（Software Language Consulting 创始人）对"LLM 是否会取代软件"这一命题的深度分析。核心论点：LLM 正在吞噬软件的**接口层**（UI、API 文档、配置逻辑），但软件的**确定性内核**（数据组织、一致性约束、流程引导）仍然不可替代。文章通过 CRM 这一"无聊但必要"的软件类型，论证了软件在 LLM 时代的持续价值。

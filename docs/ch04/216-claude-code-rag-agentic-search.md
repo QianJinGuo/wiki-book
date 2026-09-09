@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 6.9KB | `entities/claude-code开发负责人-为何放弃rag而选择agentic-search.md`
 
-# Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search
-
 → [原文存档](https://x.com/bcherny/status/2017824286489383315)
 
 ## 摘要

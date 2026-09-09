@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐ | 6.3KB | `entities/tomtunguz-com-software-after-ai.md`
 
-# Software After AI
-
 ## 深度分析
 
 URL Source: https://tomtunguz.com/harnessing-ai/

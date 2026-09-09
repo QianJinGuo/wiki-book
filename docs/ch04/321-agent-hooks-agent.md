@@ -2,7 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 9.7KB | `entities/agent-hooks-programmable-workflow.md`
 
-# Agent Hooks：把 Agent 工作流变成可编程的
 **URL:** https://mp.weixin.qq.com/s/O7oQ3Uc8PQ0Kh_WhOdYvnQ
 **GitHub:** https://github.com/dabit3/agent-hooks-in-depth/tree/main
 **标签:** #AgentHooks #工作流可编程 #生命周期 #ClaudeCode

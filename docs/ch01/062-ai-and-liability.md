@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 7.0KB | `entities/06-ai-and-liability-html.md`
 
-# AI and Liability
-
 > **来源**: [AI and Liability](https://schneier.com/blog/archives/2026/06/ai-and-liability.html)
 
 Earlier this month, a German court [ruled](https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/) that Google is liable for its AI search summaries. Rejecting defenses like “users can check for themselves,” and that they generally know “that information generated with AI should not be blindly trusted,” the court held that the AI’s summaries are reflections of the company and “above all an expression of Google’s business activities.”

@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 12.4KB | `entities/microsoft-fastcontext-coding-agent-explore-subagent-vibecoder.md`
 
-# FastContext（微软开源 Coding Agent 仓库探索子代理）
-
 ## 核心定位
 
 微软开源的 **Explore 子 Agent**，只做一件事：在仓库里找到跟任务相关的**文件和行号**，把证据（citation bundle）交回主 Agent。**不负责改代码、不跑测试**。

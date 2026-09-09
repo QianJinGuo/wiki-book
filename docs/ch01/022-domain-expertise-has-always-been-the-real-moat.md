@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 8.9KB | `entities/brethorstingcom-blog-2026-05-domain-expertise-has-always-been-the-.md`
 
-# Domain Expertise Has Always Been the Real Moat
-
 ## 摘要
 
 本文提出一个关于 AI 编码时代的关键洞察：软件开发的约束条件正在从"能否构建"转向"能否判断正确性"。随着 Agentic AI 工具将"将领域模型转化为代码"的能力变得廉价，真正的稀缺资源变成了对领域本身的深度理解——知道"正确的输出应该是什么样子"的能力。文章通过对比领域专家（无编程背景但有十年领域经验）与通用工程师（懂技术但不懂领域）在 AI 工具使用中的表现差异，论证了领域专业知识正在成为后 AI 编码时代最持久的护城河。

@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 11.0KB | `entities/on-working-with-wizards.md`
 
-# On Working with Wizards: AI 从协作到召唤的范式转变
-
 > 原文存档：[原文存档](https://www.oneusefulthing.org/p/on-working-with-wizards)
 
 > **Core insight**: Mollick 观察到 AI 使用范式的根本转变——从"co-intelligence"（与 AI 作为共同工作者，引导、纠正、合作）到"wizard"（召唤 AI 执行任务，输出惊艳但过程不透明）。这不仅是工具能力提升，而是人类与 AI 关系性质的改变。

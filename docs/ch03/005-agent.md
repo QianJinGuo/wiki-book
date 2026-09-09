@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐ | 12.6KB | `entities/agent-productivity-paradox-collaboration-bottleneck.md`
 
-# Agent 时代的生产力悖论：协作成为新瓶颈
-
 AI 编程助手进化为"AI 软件工程师"时，"Vibe Coding"生产力悖论正在浮现：Agent 生成代码的速度呈指数级增长，组织的整体研发效率却提升有限。问题不在于 AI 的能力，而在于我们仍用工业时代的协作模式来组织 AI 时代的研发。
 
 ## 核心论点

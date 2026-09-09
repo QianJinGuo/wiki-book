@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 7.9KB | `entities/model-size-scaling-in-2023-2031.md`
 
-# Model Size Scaling in 2023-2031
-
 → [原文存档](https://www.lesswrong.com/posts/yLHiQGCPdvzL9fBn3/model-size-scaling-in-2023-2031)
 
 ## 摘要

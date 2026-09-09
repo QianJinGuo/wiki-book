@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 5.2KB | `entities/llms-are-complicated-now-ianbarber.md`
 
-# LLMs are complicated now
-
 > 原文存档：[原文存档](https://ianbarber.blog/2026/06/19/llms-are-complicated-now/)
 
 ## 核心内容

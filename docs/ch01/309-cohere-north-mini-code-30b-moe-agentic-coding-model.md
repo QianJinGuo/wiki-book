@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐⭐ | 8.3KB | `entities/cohere-north-mini-code-agentic-coding-model.md`
 
-# Cohere North Mini Code —30B MoE Agentic Coding Model
+## Cohere North Mini Code —30B MoE Agentic Coding Model
 
 >原文存档：[原文存档](https://cohere.com/blog/north-mini-code)
 

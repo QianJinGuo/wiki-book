@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 5.9KB | `entities/hunk-diff-viewer.md`
 
-# Hunk - Review-first Terminal Diff Viewer
-
 ## 摘要
 
 Hunk 是 modem-dev 开源的终端 diff 查看器，专为 AI agent 生成的 changeset 设计。它不是传统的 diff 工具，而是一个 **review-first 的交互式 UI**，内置多文件导航、AI 注解、响应式布局和 watch 模式。基于 [OpenTUI](https://github.com/anomalyco/opentui) 构建，使用 [Pierre diffs](https://www.npmjs.com/package/@pierre/diffs) 作为 diff 引擎。2026-06-24 通过 TLDR newsletter 发现。

@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 5.9KB | `entities/mistral-ai-news-ocr-4.md`
 
-# Mistral OCR 4: SOTA OCR for Document Intelligence
-
 ## 摘要
 
 Mistral 于 2026 年 6 月发布 OCR 4 模型，在文档智能领域达到 SOTA 水平。该模型不仅提取文字，还返回 bounding boxes、block classification（标题/表格/公式/签名等）和逐词置信度分数。支持 170 种语言，可在单个容器中自托管部署。在 OlmOCRBench 上得分 85.20（第一），OmniDocBench 得分 93.07，独立标注者在 600+ 文档的人工偏好评估中普遍选择 OCR 4 而非竞品。

@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 6.9KB | `entities/eclecticlightco-2026-05-29-what-happens-in-the-log-when-an-app-cra.md`
 
-# What happens in the log when an app crashes as it starts up?
-
 ## 核心要点
 
 Practical and specific macOS debugging guide from a trusted source, with actionable techniques and concrete error codes for diagnosing startup crashes.

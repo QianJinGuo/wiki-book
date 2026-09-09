@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 6.3KB | `entities/a-bitter-lesson-for-data-filtering-e8807d.md`
 
-# A Bitter Lesson for Data Filtering
-
 ## 摘要
 
 本文（arXiv:2605.19407，作者 Christopher Mohri、John Duchi 与 Tatsunori Hashimoto）通过面向"高计算、数据稀缺"（high compute, data-scarce）区间的新 scaling studies，考察了大模型预训练中的数据过滤问题。核心发现反直觉且极具冲击力：当算力足够时，最好的数据过滤器就是不过滤数据——充分训练的大参数模型不仅能容忍低质量与干扰（distractor）数据，反而会从中受益。这一结论直接挑战了"预训练必须过滤出高质量数据"的主流信念，并与 Rich Sutton 的 "Bitter Lesson" 形成深刻呼应。

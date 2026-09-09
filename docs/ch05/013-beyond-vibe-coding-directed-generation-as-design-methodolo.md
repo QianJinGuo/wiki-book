@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 3.9KB | `entities/beyond-vibe-coding-directed-generation-design-uxmag.md`
 
-# Beyond Vibe Coding — Directed Generation as Design Methodology
-
 > **Background**: Based on UX Magazine 2026-06-25 article redefining AI-assisted design workflow from a designer's perspective, proposing "directed generation" as the precise term replacing "vibe coding".
 
 ## Core Thesis

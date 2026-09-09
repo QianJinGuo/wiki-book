@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 5.8KB | `entities/rubygems-temp-disable-registrations.md`
 
-# RubyGems 暂停新用户注册：DDoS + 恶意包供应链攻击事件
-
 > **来源**: status.rubygems.org · 2026-05-12 ~ 2026-05-13
 
 ## 摘要

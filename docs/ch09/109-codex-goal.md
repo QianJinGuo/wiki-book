@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 12.3KB | `entities/codex-goal-source-code-deep-dive.md`
 
-# Codex /goal 源码深度解析：状态表 + 续跑条件 + 预算账本
-
 → [原文存档](https://mp.weixin.qq.com/s/Zzju5ApPRePEmBBsIkpPHg)
 
 ## 摘要

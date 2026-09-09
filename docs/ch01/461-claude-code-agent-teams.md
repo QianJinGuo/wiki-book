@@ -4,8 +4,6 @@
 
 > -> [原文存档](https://mp.weixin.qq.com/s/9bDg-2Bq8sXuG-E-5FwmUQ)
 
-# Claude Code Agent Teams 实战：怎么拆任务、控权限、收证据
-
 ## 核心问题
 
 多开几个 Agent 并不会自动变成团队协作。它更可能变成五段上下文、五份半成品、五处文件冲突，以及一个人类最后回来收拾现场。

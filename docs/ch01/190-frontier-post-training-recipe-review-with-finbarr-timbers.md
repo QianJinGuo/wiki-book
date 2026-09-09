@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐ | 3.2KB | `entities/finbarr-timbers-frontier-post-training-recipe-review-2026.md`
 
-# Frontier post-training recipe review with Finbarr Timbers
-
 → [原文存档](https://www.interconnects.ai/p/frontier-post-training-recipe-review)
 
 ## 核心要点

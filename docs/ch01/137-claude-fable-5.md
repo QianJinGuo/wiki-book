@@ -2,11 +2,7 @@
 
 > 📊 Level ⭐⭐ | 9.9KB | `entities/全网最全的claude-fable-5-省钱攻略都在这了.md`
 
-# 全网最全的Claude Fable 5 省钱攻略都在这了
-
 → [原文存档](https://mp.weixin.qq.com/s/YirJ8-6_TZuFe9cLepFNSg)
-
-# 全网最全的Claude Fable 5 省钱攻略都在这了
 
 ---
 source: wechat
@@ -17,8 +13,6 @@ ingested: 2026-07-09
 source_published: 2026年7月8日 09:31
 
 ---
-
-# 全网最全的Claude Fable 5 省钱攻略都在这了
 
 天才程序员体验卡+5！
 

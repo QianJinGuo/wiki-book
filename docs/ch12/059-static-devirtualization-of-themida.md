@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 13.2KB | `entities/2026.md`
 
-# Static Devirtualization of Themida
-
 → [原文存档](https://back.engineering/blog/09/05/2026/)
 
 > **Note**: 实体 slug 为 `2026` 是源 URL 路径中日期生成的产物，内容实际是 Back Engineering Labs (IDontCode, naci) 发表的 Themida/CodeVirtualizer 静态去虚拟化技术深度分析。

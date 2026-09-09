@@ -2,7 +2,6 @@
 
 > 📊 Level ⭐⭐ | 6.8KB | `entities/skillsieve-agent-skill-security.md`
 
-# SkillSieve：Agent Skill 安全检测三层框架
 **论文：** SkillSieve: Agent Skill Safety Monitoring — A Layered Framework
 **arXiv：** 2604.06550
 **来源：** 模安局（微信公众号），2026-04-27 20:08 北京

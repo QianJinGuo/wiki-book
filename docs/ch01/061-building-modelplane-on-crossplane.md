@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 7.0KB | `entities/building-modelplane.md`
 
-# Building Modelplane on Crossplane
-
 > **来源**: [Building Modelplane on Crossplane](https://blog.crossplane.io/building-modelplane/)
 
 ![Image 1](https://blog.crossplane.io/content/images/2026/06/Modelplane---Crossplane-Blog-Hero.png)
@@ -50,6 +48,7 @@ metadata:
   name: qwen3-8b
   namespace: ml-team
 spec:
+```
 
 → [原文存档](https://blog.crossplane.io/building-modelplane/)
 
@@ -58,4 +57,3 @@ spec:
 - 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
-

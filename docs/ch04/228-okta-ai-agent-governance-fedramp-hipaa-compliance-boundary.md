@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 5.7KB | `entities/okta-ai-agents-fedramp.md`
 
-# Okta AI Agent Governance - FedRAMP/HIPAA Compliance Boundary Agent Lifecycle Management
-
 ## 摘要
 
 Okta 发布 AI Agents - Core 平台，成为首个在 FedRAMP 和 HIPAA 合规边界内提供完整 AI Agent 生命周期管理的独立身份平台。核心理念：将 AI Agent 从静态服务账户/API 密钥提升为与人类和机器身份并列的**一等公民身份**（first-class identity）。这一举措响应了美国联邦政府关于 AI 创新与安全的行政命令，该命令要求联邦机构部署 AI Agent 并确保其安全性。

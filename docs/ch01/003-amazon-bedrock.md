@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐ | 16.9KB | `entities/滴滴国际化客服质检智能化之路基于-amazon-bedrock-的多语种多业务线质检实践.md`
 
-# [亚马逊AWS官方博客](https://aws.amazon.com/cn/blogs/china/)
+## [亚马逊AWS官方博客](https://aws.amazon.com/cn/blogs/china/)
 
 ## 深度分析
 
@@ -16,8 +16,6 @@ feed_name: AWS China Blog
 source_published: 2026-05-26T05:25:20Z
 
 ---
-
-# 滴滴国际化客服质检智能化之路：基于 Amazon Bedrock 的多语种多业务线质检实践
 
 ## [亚马逊AWS官方博客](https://aws.amazon.com/cn/blogs/china/)
 
@@ -119,7 +117,6 @@ VOC 管线采用三阶段 pipeline：并行提取 → 问题聚类 → 报告生
 
 滴滴基于 [Amazon Bedrock](https://aws.amazon.com/cn/bedrock/) 构建的智能质检系统，通过意图验证、合规评估和 VOC 聚合三条管线，实现了从第三方黑盒到透明可控的转变：
 
-* 
 
 ## 相关实体
 - [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-aws-smgs-uses-an-ai-powered-conversational-assistant-to-.md)

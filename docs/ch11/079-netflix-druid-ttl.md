@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 10.2KB | `entities/netflix-druid-interval-aware-caching.md`
 
-# Netflix Druid 区间感知缓存：指数 TTL + 分桶查询去重
-
 > 原文存档：[原文存档](https://netflixtechblog.com/stop-answering-the-same-question-twice-interval-aware-caching-for-druid-at-netflix-scale-22fadc9b840e?source=rss----2615bd06b42e---4)
 
 > **Core insight**: 滚动窗口仪表板的每次刷新只变化最后几分钟数据，其余"历史"数据已凝固。区间感知缓存将查询结果按时间粒度分桶存储，用指数递增 TTL（最近 2 分钟仅 5s，最远可达 1h）使 Druid 仅需扫描最fresh的未缓存数据，实验中 Druid 查询量降低 33%、P90 延迟改善 66%

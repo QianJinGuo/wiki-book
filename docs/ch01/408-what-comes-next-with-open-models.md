@@ -2,11 +2,7 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 31.3KB | `entities/interconnects-what-comes-next-with-open-models.md`
 
-# What comes next with open models
-
 → [原文存档](https://www.interconnects.ai/p/the-next-phase-of-open-models)
-
-# What comes next with open models
 
 2025 was the year where a lot of companies started to take open models seriously as a path to influence in the extremely valuable AI ecosystem — the adoption of a strategy that was massively accelerated downstream of [DeepSeek R1’s](<https://www.interconnects.ai/p/deepseek-r1-recipe-for-o1>) breakout success. Most of this is being done as a mission of hope, principle, or generosity.
 

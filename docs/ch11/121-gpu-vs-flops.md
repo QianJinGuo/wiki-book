@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 6.8KB | `entities/gpu-liquid-cooling-vs-air-cooling-datacenter.md`
 
-# 数据中心 GPU 液冷 vs 风冷：FLOPs 可用率与工程权衡
-
 对数据中心 GPU 冷却方案的技术分析。核心论点：液冷不仅降低能耗，更重要的是提高 GPU 的实际可用 FLOPs——风冷方案因热节流（thermal throttling）导致标称性能打折。
 
 ## 关键工程洞察

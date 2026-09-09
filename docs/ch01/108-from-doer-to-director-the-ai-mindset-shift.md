@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 4.7KB | `entities/from-doer-to-director-the-ai-mindset-shift.md`
 
-# From Doer To Director: The AI Mindset Shift
-
 > 本页原内容在 2026-09-07 质量闭环中判定为 **thin-0.75**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/from-doer-to-director-the-ai-mindset-shift.md`，一手来源仍见下方 sources。
 

@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 7.5KB | `entities/line-www-test-of-time-award-jiantang-geoflow.md`
 
-# LINE 论文 WWW 2026 时间检验奖与 GeoFlow：图神经网络十年远征
-
 > **来源**：机器之心。唐建博士 2015 LINE 论文获 WWW 2026 Test of Time Award，其技术路径从网页图嵌入一路演进至 AI 蛋白质设计平台 GeoFlow。
 > → [原文存档](https://mp.weixin.qq.com/s/DIAgalyLiTmazn5SYkRwrw)
 

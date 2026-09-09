@@ -4,10 +4,8 @@
 
 [Detect Ai Agent Traffic](https://cside.com/blog/guide-to-detect-ai-agent-traffic-on-your-website)
 
-# "How to Detect AI Agents on Your Website"
-# How to Detect AI Agents on Your Website
-
-# How to Detect AI Agents on Your Website | Full Guide - cside Blog
+## "How to Detect AI Agents on Your Website"
+## How to Detect AI Agents on Your Website | Full Guide - cside Blog
 [Skip to main content](https://cside.com/blog/guide-to-detect-ai-agent-traffic-on-your-website#main-content)
 This site uses cookies and other technologies that let us and the companies we work with collect information about your device and usage of the site to enable functionality, analytics, and advertising. See our Cookie Notice for details.
 Find out more in our [privacy policy](https://cside.com/privacy-policy) and [cookie notice](https://cside.com/cookie-notice).
@@ -29,7 +27,7 @@ Open menu
 [Blog](https://cside.com/blog)
  Blog
 
-# How to Detect AI Agents on Your Website | Full Guide
+## How to Detect AI Agents on Your Website | Full Guide
 This guide covers AI agent detection through identity, network, browser, and behavioral signals. See free methods like server log analysis and specialized tools.
  May 13, 2026 •17 min read
 ![Image 1: Juan Combariza](https://cside.com/content/images/2025/08/juan-c-image.jpeg)

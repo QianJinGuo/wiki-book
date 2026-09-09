@@ -4,8 +4,6 @@
 
 [Skill Formal Theory Survey 10Papers](https://mp.weixin.qq.com/s/Z2fFNWXgRHq0VogIRD69Yg])
 
-# 10篇论文看懂AI Agent Skill：表示、执行、评估与进化
-
 - URL: https://mp.weixin.qq.com/s/Z2fFNWXgRHq0VogIRD69Yg
 - Author: 学术综述（arXiv风格，微信编译版）
 - Date: 2026-05

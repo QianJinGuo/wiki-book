@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 6.3KB | `entities/how-to-build-agents-where-data-already-lives.md`
 
-# How to build Agents Where Data Already Lives
-
 ## 摘要
 
 传统 Agent 架构倾向于将数据集中到一个中心化的位置再进行处理，但这种方式在实际企业场景中面临数据搬运成本高、延迟大、合规风险突出等问题。"Where Data Already Lives" 理念主张将 Agent 部署到数据所在的位置——无论是数据库、数据湖、SaaS 平台还是边缘设备——而非反向拉取数据到 Agent 运行时。这一范式正在成为企业级 Agent 架构的主流方向。^[inferred]

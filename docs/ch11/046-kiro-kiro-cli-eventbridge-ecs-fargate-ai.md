@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 17.0KB | `entities/kiro-job-scheduler-eventbridge-ecs-fargate.md`
 
-# 构建无服务器Kiro调度平台：用Kiro CLI + EventBridge + ECS Fargate实现定时AI任务
-
 > 原文存档：[原文存档](https://aws.amazon.com/cn/blogs/china/platform-kiro-cli-eventbridge-ecs-fargate-implement-ai-task)
 
 > **Core insight**: Kiro Job Scheduler 通过 EventBridge Scheduler 触发 Lambda 编排器，由 ECS Fargate 容器执行 Kiro CLI 非交互式任务，实现 AI 助手的 7×24 小时无人值守运行。核心创新在于将 Kiro 的 Steering 文件定义的 Agent 角色、MCP Server 工具扩展和 Skills 知识包组合成标准化 JSON 配置，通过容器化执行实现可复用的 AI 自动化工作流。

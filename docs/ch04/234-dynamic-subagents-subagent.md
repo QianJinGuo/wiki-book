@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 4.1KB | `entities/dynamic-subagents-code-driven-orchestration.md`
 
-# Dynamic Subagents: 代码驱动的 Subagent 编排
-
 ## 摘要
 
 LangChain Dynamic Subagents 让 Agent 通过编写 JavaScript 脚本（而非逐轮工具调用）来编排 subagent 执行。核心替换：Agent 用代码（循环、分支、并发）驱动协调逻辑，而非依赖模型每步推理做编排决策。提供六种编排模式（Classify and Act、Fanout and Synthesize、Adversarial Verification、Generate and Filter、Tournament、Loop Until Done），通过轻量级 QuickJS 解释器安全执行。

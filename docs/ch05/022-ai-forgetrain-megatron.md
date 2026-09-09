@@ -4,7 +4,7 @@
 
 > -> [原文存档](https://mp.weixin.qq.com/s/rl48C-c_1LQMdnJ7ZKDzJw)
 
-# ForgeTrain：AI 编写训练框架，超越 Megatron
+## ForgeTrain：AI 编写训练框架，超越 Megatron
 
 ## 一句话
 

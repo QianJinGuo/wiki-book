@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 8.3KB | `entities/aws-sagemaker-azerbaijani-lm.md`
 
-# AWS SageMaker 阿塞拜疆语 LLM 训练：BBPE 分词 + FSDP + Liger 三阶段方案
-
 > 原文存档：[原文存档](https://aws.amazon.com/blogs/machine-learning/training-azerbaijani-language-models-on-amazon-sagemaker-ai)
 
 > **Core insight**: 低资源、高形态复杂度语言（如阿塞拜疆语）的 LLM 训练需解决三个相互依赖的瓶颈：编码效率（BBPE 自定义分词器将 fertility 从 3.22 降至 1.59 tokens/word）、GPU 内存利用率（FSDP 将梯度/优化器状态分片，Liger Kernel 融合算子减少中间内存分配）和参数高效微调（两阶段 CPT + LoRA）。三阶段流水线 tokenizer→CPT→LoRA 可复用于任何低资源语言

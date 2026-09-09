@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 8.7KB | `entities/ai-dlc-zixun-ai-native-development-lifecycle.md`
 
-# AI-DLC：紫讯落地 AI 原生研发新范式的实践
-
 > **Background**：本文基于 AWS China Blog 2026-06-29 发布的案例，由紫讯科技架构师胡淮波与亚马逊云科技团队撰写。案例展示紫讯围绕 AI-DLC（AI-Driven Development Life Cycle）方法，建立从知识沉淀到经验回流的端到端研发闭环。
 
 ## 三个独有贡献（不应合并到现有 entity）

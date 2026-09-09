@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 7.9KB | `entities/blog-ai-chat-llmreaper.md`
 
-# LLMReaper - DOM Based AI Conversation Exfiltration via Browser Extensions
-
 → [原文存档](https://thewhiteh4t.github.io/blog/ai-chat-llmreaper/)
 
 ## 摘要

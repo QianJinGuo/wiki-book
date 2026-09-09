@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 17.0KB | `entities/netflix-cassandra-wide-partition-dynamic-splitting.md`
 
-# Dynamically Splitting Wide Partitions in Cassandra for Time Series Workloads
-
 > Netflix Tech Blog 2026-06-03 工程实践：解决 Apache Cassandra 4.x 在 PB 级时序数据上 wide partition 问题的完整方案。从 `nodetool tablehistograms` 的 percentile 检测 → DynamicTimeSliceConfigWorker 自动调整 time_bucket → **async 动态分区管道（Detection / Planning & Splitting / Serving Reads）** 在 TimeSeries ID 粒度上做细粒度拆分，附 Decision Tree（Partial Return / Block ID / Dynamic Split）。
 
 ## 背景：Wide Partition 的代价

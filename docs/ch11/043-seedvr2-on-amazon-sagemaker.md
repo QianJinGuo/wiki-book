@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐ | 3.8KB | `entities/seedvr2-amazon-sagemaker-video-upscaling.md`
 
-# SeedVR2 on Amazon SageMaker: 视频超分辨率部署实践
-
 ## 概述
 
 SeedVR2 是 ByteDance Seed 团队开发的开源视频修复/超分辨率模型，专注于将低分辨率视频帧逐帧提升到高清质量。本文档基于 AWS 中国 ML 博客的部署实践文章，总结了在 Amazon SageMaker AI 上端到端部署 SeedVR2 的架构方案和工程细节。

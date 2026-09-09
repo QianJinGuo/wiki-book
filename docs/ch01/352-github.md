@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 7.2KB | `entities/open-source-projects-leaving-github.md`
 
-# 明星开源项目，为什么开始离开 GitHub？
-
 ## 摘要
 
 2026 年 4 月，Mitchell Hashimoto（GitHub 用户 1299，2008 年加入，日均使用近 18 年）宣布其终端模拟器 Ghostty 项目将离开 GitHub，主因是平台持续性的基础设施故障已让 PR 审查、Actions 等核心开发工作几乎每天受阻。GitHub COO Kyle Daigle 公开致歉并承诺以实际改进挽回用户，而 Hashimoto 计划渐进移除依赖、保留只读镜像。这一事件将 GitHub 自 2018 年被微软收购后可靠性下滑的问题与开源社区的信任危机推至台前。

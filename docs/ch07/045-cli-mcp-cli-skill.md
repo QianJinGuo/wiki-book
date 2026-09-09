@@ -4,7 +4,7 @@
 
 > -> [原文存档](https://mp.weixin.qq.com/s/cijQOCOZQMcbldyAmQ8CZA)
 
-# CLI、MCP 和 CLI+Skill：企业Agent架构选择指南
+## CLI、MCP 和 CLI+Skill：企业Agent架构选择指南
 
 ## 三个东西不是一层
 

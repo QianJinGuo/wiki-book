@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 14.7KB | `entities/afine-csp-html-injection-password-exfiltration-attack.md`
 
-# 严格 CSP 下的密码窃取：HTML 注入 + Chrome 自动填充攻击
-
 ## 概述
 
 AFINE 安全研究团队发布原创攻击研究：在**严格 CSP (Content Security Policy)** 环境下，通过 HTML 注入 + Chrome 自动填充行为 + Referer 头，实现用户密码外泄。

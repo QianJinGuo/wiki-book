@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 9.4KB | `entities/reading-todays-open-closed-performance-gap.md`
 
-# Reading today's open-closed performance gap
-
 > 原文存档：[原文存档](https://www.interconnects.ai/p/reading-todays-open-closed-performance)
 
 > **Core insight**: 将开放-闭源性能差距视为单一"距离"数字掩盖了关键动态：benchmark 每 12-18 个月焦点转移、RLVR 训练 regimes 快速演化、以及评估复杂 LLM 工作流本身的挑战性。中国实验室在蒸馏杠杆上领先，但 RL 环境私有化趋势正在关闭这一路径。

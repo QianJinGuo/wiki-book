@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 7.1KB | `entities/gzip-lm-compression-as-language-model.md`
 
-# gzip 作为语言模型：压缩-预测等价性的信息论探索
-
 ## 摘要
 
 Nathan Barry 用 gzip（准确说是 zlib/DEFLATE）实现了语言模型——没有神经网络、没有学习参数，仅用操作系统自带的压缩器。通过将语料库放入 gzip 的滑动窗口，用 beam search 搜索压缩率最高的续写序列，在 tiny Shakespeare 上生成了明显"知道"原文特征的文本。这一实验直观验证了信息论的核心命题：**压缩即预测**，任何压缩算法内部都隐含着一个概率模型。

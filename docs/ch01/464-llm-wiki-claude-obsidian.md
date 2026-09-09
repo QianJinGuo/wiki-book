@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 12.2KB | `entities/karpathy-llm-wiki-second-brain-awkthole.md`
 
-# 卡帕西"LLM Wiki"，到底是什么？——用 Claude + Obsidian 给自己造一个第二大脑的完整拆解
+## 卡帕西"LLM Wiki"，到底是什么？——用 Claude + Obsidian 给自己造一个第二大脑的完整拆解
 
 ## 核心结论
 

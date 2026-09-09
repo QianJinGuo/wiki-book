@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 15.3KB | `entities/coze-3-multimagent-team-orchestration-wangheige.md`
 
-# 扣子 3.0 多 Agent 协同实战：指挥所有 Agent 的 Agent + 5 人团队 6 步流水线
-
 ## 概述
 
 网黑哥（网罗灯下黑）2026-06-02 扣子 3.0 实战内测报告。**核心定位：指挥所有 Agent 的 Agent**——把散落在各终端、各平台的 Agent（Claude Code / Codex CLI / OpenClaw）一键收拢，拉在同一个项目里协同干活。3 个实战案例：开发小队 3 Agent、品牌设计 4 风格、公众号自动化 5 人 6 步流水线。**与 Coze 2.5 云设备定位形成纵向对比**（任务 → 组织）。核心预言：**"AI 的下半场，拼的不是谁更聪明，而是谁先被组织起来"**。

@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 10.3KB | `entities/securing-ai-agents-how-aws-and-cisco-ai-defense-scale-mcp-and-a2a.md`
 
-# Securing AI Agents: AWS × Cisco AI Defense 给 MCP / A2A 加上企业级护栏
-
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/securing-ai-agents-how-aws-and-cisco-ai-defense-scale-mcp-and-a2a-deployments/)
 
 ## 摘要

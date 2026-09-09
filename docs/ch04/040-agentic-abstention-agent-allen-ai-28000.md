@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐ | 3.6KB | `entities/agentic-abstention-washington-allen-2026.md`
 
-# Agentic Abstention—Agent 能及时停止吗？
+## Agentic Abstention—Agent 能及时停止吗？
 
 ## 核心问题
 

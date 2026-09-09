@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 8.6KB | `entities/agent-harnesses-are-dead-long-live-agent-harnesses.md`
 
-# Agent Harnesses Are Dead. Long Live Agent Harnesses.
-
 ## 摘要
 
 Agent Harness 正经历从"硬编码框架"到"声明式配置驱动"再到"纠缠式软件（Entangled Software）"的范式转变。CrewAI 创始人 João Moura 在 2026 年 4 月的深度分析中指出：构建层正在快速商品化，Harness 作为独立层正在"死亡"，但 Harness 的核心价值——约束、验证、编排——并未消失，而是被吸收到更高层级的平台能力中。

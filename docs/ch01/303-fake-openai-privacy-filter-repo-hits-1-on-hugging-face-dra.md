@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐⭐ | 8.7KB | `entities/thehackernews-fake-openai-privacy-filter.md`
 
-# 伪装成 OpenAI 隐私过滤器的恶意仓库：AI 供应链攻击新形态
+## 伪装成 OpenAI 隐私过滤器的恶意仓库：AI 供应链攻击新形态
 
 ## 摘要
 2026 年 5 月，恶意 Hugging Face 仓库 `Open-OSS/privacy-filter` 伪装成 OpenAI 的 Privacy Filter 开源权重模型，上线 18 小时内冲上 Trending 榜首，累计约 244,000 次下载、667 个点赞，最终被证实是向 Windows 用户投递 Rust 信息窃取木马的供应链攻击。HiddenLayer 研究团队指出，该仓库 typosquatting 官方仓库名并近乎逐字复制 model card 以建立信任，其 `loader.py` 会拉取并执行窃密恶意软件；同一 C2 基础设施还曾服务于恶意 npm 包投递 ValleyRAT 的活动，暗示这是针对开源生态更大规模供应链行动的一环。

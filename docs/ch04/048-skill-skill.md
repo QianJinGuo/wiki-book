@@ -2,11 +2,7 @@
 
 > 📊 Level ⭐⭐ | 9.2KB | `entities/一份可信来源终结-skill-管理混乱skill-治理最佳实践.md`
 
-# 一份可信来源，终结 Skill 管理混乱：Skill 治理最佳实践
-
 → [原文存档](https://mp.weixin.qq.com/s/b88VRdAQ2u7IhQBqvNcnVg)
-
-# 一份可信来源，终结 Skill 管理混乱：Skill 治理最佳实践
 
 ---
 source: wechat
@@ -17,8 +13,6 @@ ingested: 2026-07-06
 source_published: 2026年7月6日 18:30
 
 ---
-
-# 一份可信来源，终结 Skill 管理混乱：Skill 治理最佳实践
 
 _**Skill 散在各处，缺乏可信来源**_
 

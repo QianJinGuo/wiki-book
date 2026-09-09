@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 7.7KB | `entities/a-guide-to-which-ai-to-use-in-the-agentic-era.md`
 
-# A Guide to Which AI to Use in the Agentic Era
-
 → [原文存档](https://www.oneusefulthing.org/p/a-guide-to-which-ai-to-use-in-the)
 
 ## 摘要

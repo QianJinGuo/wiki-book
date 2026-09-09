@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 10.8KB | `entities/building-reliable-agentic-ai-systems-martinfowler.md`
 
-# Building Reliable Agentic AI Systems
-
 ## 摘要
 
 Martin Fowler 和 Kent Beck 合作撰写的深度技术文章，以 Bayer 制药公司的 PRINCE（Preclinical Information Center）系统为案例，系统性地阐述了构建可靠 Agentic AI 系统的架构方法论。文章详细介绍了从 Search → Ask → Do 的三阶段演进、基于 LangGraph 的多 Agent 编排架构、三层反思机制（过程反思、数据反思、草稿反思）、以及生产级的错误处理和评估体系。这是 Harness Engineering 和 Context Engineering 在企业级 AI 系统中最完整的公开案例之一。

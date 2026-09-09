@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 9.0KB | `entities/nvidia-enpire-agentic-robot-policy-self-improvement.md`
 
-# Agentic Robot Policy Self-Improvement in the Real World
-
 > 原文存档：[原文存档](https://research.nvidia.com/labs/gear/enpire/)
 
 ## 核心内容
@@ -64,7 +62,7 @@ def reset(self):
 
 3
 
-# TODO: auto task reset
+## TODO: auto task reset
 
 4
 
@@ -86,7 +84,7 @@ def get_reward(self, obs, act):
 
 9
 
-# TODO: scalar reward
+## TODO: scalar reward
 
 10
 

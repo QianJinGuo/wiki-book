@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 5.2KB | `entities/cloudflare-kitesurf-agent-first-browser-workers-2026.md`
 
-# Cloudflare Kitesurf：运行在 Workers V8 isolate 上的 agent-first 浏览器
-
 Cloudflare 2026-08-06 发布的**专为 AI Agent 设计的浏览器**（Agents Week），完全运行在 Workers 之上，面向 agentic 任务（截图/HTML 提取）比 Chromium 省 3-7 倍 CPU/内存。核心洞察：**浏览器引擎为人类设计，不为 agent 设计**——agent 不关心标签页/主题/扩展/跨设备同步，只关心 token 数、上下文窗口、可扩展性、性能和成本。
 
 ## 设计决策

@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 5.3KB | `entities/两万字详解claude-code源码核心机制.md`
 
-# 两万字详解Claude Code源码核心机制
-
 > 本页原内容在 2026-09-07 质量闭环中判定为 **thin-0.78**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/两万字详解claude-code源码核心机制.md`，一手来源仍见下方 sources。
 

@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 7.9KB | `entities/p-build-the-agent-or-power-the-agent.md`
 
-# Build the Agent or Power the Agent?
-
 > **来源**: [Build the Agent or Power the Agent?](https://tanayj.com/p/build-the-agent-or-power-the-agent)
 
 _I’m Tanay Jaipuria, a partner at [Wing](https://www.wing.vc/) and this is a weekly newsletter about the business of the technology industry. To receive Tanay’s Newsletter in your inbox, subscribe here for free:_

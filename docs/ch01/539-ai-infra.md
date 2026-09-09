@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 13.0KB | `entities/ai-infra-llm-efficient-inference-vllm.md`
 
-# AI Infra 入门干货总结：大模型是如何高效推理的
-
 ## 摘要
 
 腾讯工程师 binnnliu 深入阅读 vLLM 源码后的总结文章，以 Llama 3 为例追踪推理过程中每步 Tensor 维度变化。文章拆解了 LLM 推理的 6 个阶段（Tokenize → Embedding → Transformer Block → FFN → LM Head → Sampling）和两大高性能推理支柱（Continuous Batching + Paged Attention），并解释了 FlashAttention / RoPE / GQA 等关键优化的物理实现。

@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 6.2KB | `entities/tokens-per-result.md`
 
-# Intelligence Per Dollar
-
 ## 概要
 
 [![Image 1: Screenshot 2026-06-02 at 9.22.43 PM](https://res.cloudinary.com/dzawgnnlr/image/upload/w_1512,h_806,c_fill,g_auto,q_auto,f_auto/fczixgwvrhqhqt5uxfto)](https://res.cloudinary.com/dzawgnnlr/image/upload/q_auto,f_auto/fczixgwvrhqhqt5uxfto)

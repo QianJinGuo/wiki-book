@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 22.5KB | `entities/mira-mpa-deep-principle-ai4s-40-sota.md`
 
-# MIRA + MPA：深度原理 AI Scientist 递归自训练打造材料基座模型，40 项实验全面 SOTA
-
 ## 概述
 
 深度原理团队（DeepPrinciple）发布 **Materials Property Axiom（MPA）材料基座模型**，由自研 **AI Scientist 平台 MIRA** 通过**递归自训练**产出。**40 项实验性质预测任务全面刷新 SOTA**：平均 MAE 降低 10%，最高 51.1%。**击败 Suiren-1.0（前 SOTA，1.8B 参数 + 7000 万量子化学数据 + 320 张 H800）正面对决赢下 35/40 端点**。分布外泛化（MPA 退化 25.7% vs Suiren 31.8%）。这是 \"**AI for AI**\" 概念迄今最具说服力的一次落地。

@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 16.5KB | `entities/harness-engineering-jk-launcher-baijiajie.md`
 
-# 万字干货！Harness Engineering如何工程化落地？
-
 ## 核心结论
 
 - Harness Engineering = Rule + Skill + Sub Agent + Workflow + Scripts + MCP 六层串联

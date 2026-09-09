@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 21.1KB | `entities/amazon-bedrock-agentic-payments-guardrails.md`
 
-# Enable safe agentic payments with built-in guardrails using Amazon Bedrock
-
 ## The challenge: Safety risks in agentic payments
 
 Several key risks shape how a payments capability for agents has to be designed.

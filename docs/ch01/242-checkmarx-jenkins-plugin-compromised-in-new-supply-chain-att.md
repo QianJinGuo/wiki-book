@@ -68,10 +68,10 @@ TeamPCP 并非首次对 Checkmarx 发起攻击——2026 年 3 月就曾入侵 c
 
 → [原文存档](https://www.techzine.eu/news/security/141212/checkmarx-jenkins-plugin-compromised-in-new-supply-chain-attack/)
 
-# "Checkmarx Jenkins plugin compromised in new supply chain attack"
+## "Checkmarx Jenkins plugin compromised in new supply chain attack"
 URL Source: https://www.techzine.eu/news/security/141212/checkmarx-jenkins-plugin-compromised-in-new-supply-chain-attack/
 
-# Checkmarx Jenkins plugin compromised in new supply chain attack - Techzine Global
+## Checkmarx Jenkins plugin compromised in new supply chain attack - Techzine Global
 [Skip to content](https://www.techzine.eu/news/security/141212/checkmarx-jenkins-plugin-compromised-in-new-supply-chain-attack/#main)
 [Techzine Global](https://www.techzine.eu/)
 
@@ -108,7 +108,6 @@ URL Source: https://www.techzine.eu/news/security/141212/checkmarx-jenkins-plugi
 *   [Techzine Netherlands](https://www.techzine.nl/)
 *   [Techzine Belgium](https://www.techzine.be/)
 *   [Techzine TV](https://www.techzine.tv/)
-*
 
 *   [ICTMagazine Netherlands](https://www.ictmagazine.nl/)
 *   [ICTMagazine Belgium](https://www.ictmagazine.nl/)

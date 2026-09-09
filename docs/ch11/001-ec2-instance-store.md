@@ -2,11 +2,7 @@
 
 > 📊 Level ⭐ | 10.4KB | `entities/如何保护-ec2-实例存储instance-store数据不丢失场景分析与自动化防护实践.md`
 
-# 如何保护 EC2 实例存储（Instance Store）数据不丢失：场景分析与自动化防护实践
-
 → [原文存档](https://aws.amazon.com/cn/blogs/china/how-to-ec2-instance-storage-instance-store)
-
-# 如何保护 EC2 实例存储（Instance Store）数据不丢失：场景分析与自动化防护实践
 
 摘要：Amazon EC2 实例存储（Instance Store）以其极致 I/O 性能被广泛用于分布式存储和缓存场景，但其”实例中断即数据丢失”的特性常被低估。本文系统梳理了 21 种导致 Instance Store 数据丢失的场景，并提供了一套从 Stop/Terminate Protection、SCP 策略到 EventBridge + Lambda 自动化巡检的纵深防御方案（Defense in Depth），附带可直接部署的开源代码。
 

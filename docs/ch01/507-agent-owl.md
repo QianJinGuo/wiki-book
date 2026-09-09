@@ -22,7 +22,6 @@ user agent和assistant交互过程中，critic model作为第三者，用来选�
     You are a {critic_role} who teams up with a {user_role} and a {assistant_role} to solve a task: {task}.Your job is to select an option from their proposals and provides your explanations. Your selection criteria are {criteria}.You always have to choose an option from the proposals.=============================================中文翻译分割线=============================================你是一位 {批评者角色}，与一位 {用户角色} 和一位 {助手角色} 合作来解决一项任务：{任务}。你的工作是从他们的提议中选择一个选项，并给出你的解释。你的选择标准是 {criteria（标准内容）}。你必须始终从这些提议中选择一个选项。
 ** User Agent和Assistant Agent之间的交互  **
 本小节笔者用一个例子来展示User Agent和Assistant Agent之间的交互细节，具体任务如下。由于任务比较简单，没涉及TaskSpecifyAgent和TaskPlannerAgent。
-*
     帮我查询一下作家王小波的3部作品
 首先看下user agent和assistant agent的system prompt，这是理解这两个agent需要干什么的核心，也同时给出了中文翻译方便读者阅读。
 ** user agent的system prompt：  **
@@ -64,7 +63,6 @@ user和assistant agent的system prompt开头都是"Never forget you are a {xxx} 
 ** user agent输入  ** ：round 2 assistant的输出，同时也有历史的交互记录。
     Solution: Based on knowledge available up to October 2023, Wang Xiaobo was a renowned Chinese writer whose works are recognized for their intellectual depth, humor, and reflections on society and human nature. Here are three of his notable works:\n\n1. 《黄金时代》 (The Golden Age)  \n   This novella is one of Wang Xiaobo's most iconic works. It explores themes of individual freedom, societal constraints, and existentialism, set against the backdrop of China's Cultural Revolution.\n\n2. 《白银时代》 (The Silver Age)  \n   This is part of the "Age Trilogy," which includes The Golden Age, The Silver Age, and The Bronze Age. The book continues to delve into philosophical questions about life, human desires, and the absurdity of existence.\n\n3. 《沉默的大多数》 (The Silent Majority)  \n   This collection of essays exemplifies Wang Xiaobo's sharp wit and critical thinking. The essays reflect on culture, politics, and the human condition in modern society.\n\nThese works highlight Wang Xiaobo's unique literary style and his influence on contemporary Chinese literature. Let me know if you need further details about these or other works. Next request=============================================中文翻译分割线=============================================解决方案：根据截至2023年10月的知识，王小波是一位著名的中国作家，他的作品以其知识深度、幽默以及对社会和人性的反思而闻名。以下是他的三部著名作品：\n\n1。《黄金年代》\n这部中篇小说是王小波最具代表性的作品之一。它以中国文化大革命为背景，探讨了个人自由、社会约束和存在主义的主题。\n\n2。《白银时代》（The Silver Age）\n这是"时代三部曲"的一部分，其中包括黄金时代、白银时代和青铜时代。这本书继续深入探讨关于生命、人类欲望和存在荒谬性的哲学问题。\n\n3。《沉默的大多数》这本散文集体现了王小波敏锐的智慧和批判性思维。这些散文反映了现代社会的文化、政治和人类状况。\这些作品凸显了王小波独特的文学风格及其对中国当代文学的影响。如果您需要有关这些或其他作品的更多详细信息，请告诉我。下一个请求
 ** user agent的输出  ** ：user agent判断问题已经被成功解答，输出<CAMEL_TASK_DONE>，交互跳出循环。
-*
     <CAMEL_TASK_DONE>
 ** OWL的agent及工具  **
 ** 1  **

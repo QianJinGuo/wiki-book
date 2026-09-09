@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 5.2KB | `entities/from-siloed-data-to-unified-insights-cross-account-athena-access-for-amazon-quic.md`
 
-# From siloed data to unified insights: Cross-account Athena Access for Amazon Quick
-
 > 本页原内容在 2026-09-07 质量闭环中判定为 **thin-0.78**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/from-siloed-data-to-unified-insights-cross-account-athena-access-for-amazon-quic.md`，一手来源仍见下方 sources。
 

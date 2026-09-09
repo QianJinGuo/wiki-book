@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 6.9KB | `entities/state-of-routing-in-model-serving.md`
 
-# State of Routing in Model Serving
-
 → [原文存档](https://netflixtechblog.com/state-of-routing-in-model-serving-16e22fe18741?source=rss----2615bd06b42e---4)
 
 ## 摘要

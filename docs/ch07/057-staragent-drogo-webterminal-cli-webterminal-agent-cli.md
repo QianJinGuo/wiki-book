@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 20.0KB | `entities/staragent-webterminal-cli-ali-infra-cli-as-agent-hands.md`
 
-# StarAgent/Drogo WebTerminal CLI：阿里基础设施把 WebTerminal 变成 Agent 手脚
+## StarAgent/Drogo WebTerminal CLI：阿里基础设施把 WebTerminal 变成 Agent 手脚
 
 ## Overview
 

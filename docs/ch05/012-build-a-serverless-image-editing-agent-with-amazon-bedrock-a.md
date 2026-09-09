@@ -2,11 +2,7 @@
 
 > 📊 Level ⭐ | 4.1KB | `entities/build-a-serverless-image-editing-agent-with-amazon-bedrock-a.md`
 
-# Build a serverless image editing agent with Amazon Bedrock AgentCore harness
-
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/build-a-serverless-image-editing-agent-with-amazon-bedrock-agentcore-harness)
-
-# Build a serverless image editing agent with Amazon Bedrock AgentCore harness
 
 Building an AI agent that edits images based on natural language requires an orchestration loop, tool routing, memory management, and a compute environment to run it all. [Amazon Bedrock AgentCore harness](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/harness.html>) handles that entire stack with configuration. You declare what the agent does, and the harness runs it in a stateful, isolated microVM with built-in memory, tool routing, and observability.
 

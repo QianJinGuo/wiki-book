@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 10.2KB | `entities/3citzkdleedm0olz9wudrg.md`
 
-# ICLR 2026 Scenethesis：英伟达 & 普渡大学用 Agent 闭环实现文生 3D
-
 ## 相关实体
 
 - [iclr 2026 | 英伟达×普渡大学：用agent闭环实现文生3d](https://github.com/QianJinGuo/wiki-public/blob/main/entities/iclr-agent-3d-generation.md)

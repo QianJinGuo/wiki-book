@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 19.9KB | `entities/agent-runtime-7-responsibilities-secondcurve-2026.md`
 
-# Agent 的骨架：Agent Runtime 7 大职责 + 3 主流框架对比
+## Agent 的骨架：Agent Runtime 7 大职责 + 3 主流框架对比
 
 > [!quote] 一句话定义
 > Runtime 是**驱动 Agent Loop 运转的执行框架**,负责把 LLM、工具、状态、权限和日志串成一个可运行的系统。**LLM 是引擎,Runtime 是底盘。没有底盘,引擎再好也上不了路。**

@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 7.3KB | `entities/technology-ouster-rev8-native-color-lidar.md`
 
-# World’s first native color LiDAR gives machines human-like vision
-
 → [原文存档](https://newatlas.com/technology/ouster-rev8-native-color-lidar/)
 
 ## 摘要

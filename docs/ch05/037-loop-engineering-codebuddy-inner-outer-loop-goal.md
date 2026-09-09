@@ -4,7 +4,7 @@
 
 > 原文存档：[原文存档](https://mp.weixin.qq.com/s/YqIyL7uW4EV2r5HLDW7wcA)
 
-# Loop Engineering 实践指南：CodeBuddy 中的自主循环系统
+## Loop Engineering 实践指南：CodeBuddy 中的自主循环系统
 
 腾讯工程师 eliqiao 发布的 Loop Engineering 实践指南，是**首个将 Loop Engineering 系统映射到具体产品（CodeBuddy）的完整实现文档**。核心贡献：**Inner/Outer Loop 概念模型**（ReAct = Inner Loop，Loop Engineering = Outer Loop）、**五阶段循环机制**（Discover → Plan → Execute → Verify → Iterate）、**六要素构建体系**、以及 CodeBuddy 三种循环驱动模式（/goal 条件驱动、/loop 时间驱动、Automations 跨会话）。
 

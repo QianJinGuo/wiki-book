@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 9.1KB | `entities/www.cio-4171054-ai-driven-layoffs-arent-making-business-sense.md`
 
-# AI 驱动的裁员没有商业意义 — Gartner 研究
-
 → [原文存档](https://www.cio.com/article/4171054/ai-driven-layoffs-arent-making-business-sense.html)
 
 ## 摘要

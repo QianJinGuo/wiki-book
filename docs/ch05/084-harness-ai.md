@@ -4,7 +4,6 @@
 
 [Tencent Knowledge Harness Practice](https://mp.weixin.qq.com/s/Xy8NwrHZRWv301eTZz4Dpw)
 
-# Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践
 原创 腾讯程序员 腾讯技术工程
 2026年4月27日 17:37 广东
 作者：stevenpxiao

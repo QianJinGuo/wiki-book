@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 8.9KB | `entities/how-llms-actually-work-0xkato.md`
 
-# How LLMs Actually Work: 0xkato Transformer Walkthrough
-
 > 原文存档：[原文存档](https://www.0xkato.xyz/how-llms-actually-work/)
 
 ## 概述

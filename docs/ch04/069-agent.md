@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐ | 6.4KB | `entities/agent-observability-5-layer-architecture.md`
 
-# Agent 可观测体系五层架构
-
 ## 摘要
 
 Agent 生产环境可观测性五层体系：遥测采集 → 数据处理 → 评测引擎 → 数据存储 → 可视化消费。核心挑战是评测基准漂移——LLM-as-a-Judge 随模型变化而不一致，单一指标优化可能伤害另一维度。

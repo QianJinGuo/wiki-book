@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 5.5KB | `entities/graphsignal-inference-profiler.md`
 
-# Graphsignal: LLM Inference Profiler
-
 ## 摘要
 
 Graphsignal 是一个生产级推理性能分析平台，专注于 LLM 推理栈的可观测性。与通用 APM 工具（如 Datadog、New Relic）不同，Graphsignal 针对 AI 推理场景做了深度定制，覆盖从 GPU 利用率到 token 吞吐量的全链路指标。它支持主流推理框架（vLLM、TGI、TensorRT-LLM 等），通过连续高分辨率 profiling 暴露推理工作负载中的性能瓶颈。

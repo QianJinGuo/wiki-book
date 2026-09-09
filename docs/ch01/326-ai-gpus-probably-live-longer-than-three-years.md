@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 8.0KB | `entities/seangoedecke-ai-gpus-live-longer-than-three-years-2026.md`
 
-# AI GPUs probably live longer than three years
-
 > 原文存档：[原文存档](https://www.seangoedecke.com/ai-gpus-live-longer-than-three-years/)
 
 ## 摘要

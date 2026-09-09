@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 15.3KB | `entities/autoresearch-taxonomy-chengzihong-chengzihong.md`
 
-# AutoResearch 分类法：四种 Agent 循环设计与四维分析框架
-
 → [原文存档](https://zhuanlan.zhihu.com/p/2037184827225527815)
 
 ## 摘要

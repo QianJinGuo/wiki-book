@@ -2,13 +2,11 @@
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 41.4KB | `entities/firecracker-bedrock-agentcore-multi-tenant.md`
 
-# 基于 Firecracker microVM 与 Bedrock AgentCore 的生产级多租户 AI Agent
-
 > 5 分钟部署、90 秒自愈、成本降至 1/8 的生产级多租户 AI Agent 方案，基于 Firecracker microVM 隔离 + Bedrock AgentCore。
 
 ## 核心内容
 
-# 5 分钟拉起、90 秒自愈、成本 1/8——基于 Firecracker microVM 与 Bedrock AgentCore 的生产级多租户 AI Agent 平台 OpenClaw Pool
+## 5 分钟拉起、90 秒自愈、成本 1/8——基于 Firecracker microVM 与 Bedrock AgentCore 的生产级多租户 AI Agent 平台 OpenClaw Pool
 
 ## [亚马逊AWS官方博客](https://aws.amazon.com/cn/blogs/china/)
 

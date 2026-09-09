@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 4.2KB | `entities/anthropic-economic-index-cadences-june-2026.md`
 
-# Anthropic Economic Index report: Cadences
-
 > **Background**：本文基于 Anthropic 2026 年 6 月发布的 Economic Index 报告。该报告是 Anthropic 持续追踪 AI 经济影响的系列研究，本版聚焦"Cadences"（节奏模式），首次引入小时级采样、会话产出分类器和 Economic Index Survey 三项方法论升级。
 
 ## 方法论升级

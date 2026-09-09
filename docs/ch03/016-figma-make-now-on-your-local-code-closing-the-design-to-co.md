@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 12.5KB | `entities/figma-make-now-on-your-local-code-3e6a33.md`
 
-# Figma Make, Now on Your Local Code: Closing the Design-to-Code Loop
-
 > Source: Figma Blog, "Figma Make, now on your local code", 2026-05-28. URL: https://www.figma.com/blog/figma-make-now-on-your-local-code/
 
 → [原文存档](https://www.figma.com/blog/figma-make-now-on-your-local-code/)

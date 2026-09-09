@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 9.4KB | `entities/object-detection-with-amazon-nova-2-lite.md`
 
-# Amazon Nova 2 Lite 视觉对象检测（自然语言驱动）
-
 ## 概述
 
 Amazon Nova 2 Lite 是 AWS Bedrock 上的多模态基础模型，通过**自然语言 prompt** 实现零训练目标检测 —— 无需数据标注、无需训练、无需基础设施管理。给定图像和目标列表（如 "vehicle"、"person"、"dent"），模型返回结构化 JSON 的精确 bounding box 坐标。

@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 4.4KB | `entities/edge-ai-networking-wifi-convergence-2026.md`
 
-# Edge AI Networking — Wi-Fi 7/8 Convergence Analysis
-
 > **Background**: This entity synthesizes the industry analysis from Semiconductor Engineering's June 2026 article on Wi-Fi 7/8 + edge AI convergence, with expert commentary from Synaptics, Infineon, and Keysight Technologies. The synthesis distills technical requirements, market dynamics, and emerging use cases into a reusable reference for edge AI infrastructure planning.
 
 ## 三个独有贡献

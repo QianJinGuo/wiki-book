@@ -4,7 +4,7 @@
 
 > -> [原文存档](https://mp.weixin.qq.com/s/b-At8Y93WsCmyO-eelEk2A)
 
-# Claude 代码能力的系统工程解析
+## Claude 代码能力的系统工程解析
 
 ## 一句话
 

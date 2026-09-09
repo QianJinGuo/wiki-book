@@ -81,7 +81,6 @@ xAI作为独立公司这件事，  2026年初  就开始走向终点。
 
 ** **
 ** 但Grok还没死
-**
 5月8日早晨，马斯克发推回应Grok死亡论。
 
 因为xAI被解散，所以社区开始流传马斯克放弃搞AI模型，直接「加入」Claude阵营。
@@ -93,7 +92,6 @@ xAI正在用Colossus 2同时训练多款新Grok模型，Grok Built harness开发
 为什么？
 ** **
 ** 两座Colossus的代差
-**
 回到5月7日。
 Anthropic和SpaceX联合宣布，Anthropic拿下Colossus 1全部算力，约22万GPU，300+兆瓦，Memphis数据中心。
 听起来份量很重。

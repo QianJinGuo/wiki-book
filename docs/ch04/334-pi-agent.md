@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 8.5KB | `entities/pi-agent-lightweight-base-rekota.md`
 
-# Pi：轻量级开源 Agent 底座
-
 ## 摘要
 
 Pi 是一个轻量级开源 Agent 项目，定位为个人开发者的 Agent 底座。核心架构 = LLM + 工具 + 循环，提供模型适配、工具调用、上下文管理、事件循环、安全执行等基础组件。生态中的 Gondolin 项目提供微虚拟机沙箱隔离。

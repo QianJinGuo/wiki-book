@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 11.1KB | `entities/yann-lecun-llm-not-intelligence-jepa.md`
 
-# Yann LeCun 谈 LLM 不是智能与世界模型 JEPA
-
 → [原文存档](https://mp.weixin.qq.com/s/blO6HIfh6Dc1O8fHWnQc8Q)
 
 ## 摘要

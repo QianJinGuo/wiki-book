@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐⭐ | 11.4KB | `entities/agent-memory-injection-5-dimensions-4-papers-agent-shouji-2026.md`
 
-# Agent 记忆注入实战：5 维框架 + 4 前沿论文
+## Agent 记忆注入实战：5 维框架 + 4 前沿论文
 
 > 原文存档：[原文存档](https://mp.weixin.qq.com/s/ohkdS_tPhbpK-Re3-jZeYw)
 

@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 8.9KB | `entities/claude-code-official-plugins-anthropic.md`
 
-# Claude Code 官方插件系统 (claude-plugins-official)
-
 Anthropic 官方 Claude Code 插件体系，发布于 2026 年 5 月，GitHub 仓库已获 20K+ Stars。
 
 ## 插件系统架构

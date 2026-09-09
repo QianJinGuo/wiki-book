@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 7.9KB | `entities/implementing-resilience-patterns-with-amazon-bedrock-and-llm.md`
 
-# Amazon Bedrock + LLM Gateway 实现生产级推理弹性模式
-
 > 原文存档：[原文存档](https://aws.amazon.com/blogs/machine-learning/implementing-resilience-patterns-with-amazon-bedrock-and-llm-gateway)
 
 ## 摘要

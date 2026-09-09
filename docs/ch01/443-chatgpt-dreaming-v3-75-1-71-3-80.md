@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 14.8KB | `entities/chatgpt-dreaming-v3-long-term-memory-architecture.md`
 
-# ChatGPT Dreaming V3：长期记忆架构级重构
+## ChatGPT Dreaming V3：长期记忆架构级重构
 
 > 原文存档：[原文存档](https://mp.weixin.qq.com/s/-k71aRS38kiZexsyFU3JGw)
 

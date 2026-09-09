@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 9.4KB | `entities/netflix-live-operations-human-infrastructure.md`
 
-# Netflix Live 运营体系：TOC Fleet Model 与 LCC 分层指挥架构
-
 > 原文存档：[原文存档](https://netflixtechblog.com/the-human-infrastructure-how-netflix-built-the-operations-layer-behind-live-at-scale-33e2a311c597?source=rss----2615bd06b42e---4)
 
 > **Core insight**: Netflix Live 运营经历了四代演进：从工程师值守（All-Hands）→ 专业工程团队（SOE+BOE）→ 飞机驾驶舱模式（1:1 双人操作）→ TOC Fleet Model（三专分工：TCO/SCO/BCO），配合 Live Command Center 的全链路可观测性与 LOL 四级预警机制，实现从月均 1 场到日均 70 场的运营规模化

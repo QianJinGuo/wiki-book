@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 5.1KB | `entities/harness-skill-engineering-alibaba-practice.md`
 
-# Harness 工程之道：Skill 原理与最佳实践
-
 > **Background**<br>
 > 本文来自阿里云开发者公众号，作者结合真实工程化项目 trade-ab-skill，系统性讲解了 Agent Skill 的结构规范、触发机制、作用域优先级以及最佳实践。Skill 格式已被 Claude Code、Cursor、GitHub Copilot、Gemini CLI 等 40+ 主流 Agent 产品采纳。
 

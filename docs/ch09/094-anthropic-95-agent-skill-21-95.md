@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 49.5KB | `entities/anthropic-95pct-data-analysis-skill-stack-architecture.md`
 
-# Anthropic 内部 95% 数据分析自动化
+## Anthropic 内部 95% 数据分析自动化
 
 ## 一句话总结
 

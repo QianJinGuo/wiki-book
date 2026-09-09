@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 23.6KB | `entities/cpu-cache-analogy-agent-context-management-liwen.md`
 
-# CPU 缓存类比下的 Agent 上下文管理：L1/L2/L3 层级架构与 execute_code 单工具设计
-
 > 本实体整理自 [原文存档](https://mp.weixin.qq.com/s/4MJ9_wqTx7ttGilKCHkX9w)。
 > 把 CPU 缓存的 L1/L2/L3 层级结构**直接迁移到 Agent 上下文管理**，配套"一个工具而不是三十个"的设计原则、读取区间的三重压缩、写入 diff 的分组采样 + 问题分类等具体工程模式。
 

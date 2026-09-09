@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 11.4KB | `entities/claude-code-skill-writing-guide.md`
 
-# Claude Code SKILL.md 写作指南
-
 ## 核心概念
 
 Skill 是一份可被 Agent 发现、按需加载的任务说明。把"老员工脑子里的规矩"写进 SKILL.md，再交给 Agent 在合适的任务里调用。

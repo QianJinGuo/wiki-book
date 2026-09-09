@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 10.4KB | `entities/opinionated-guide-ai-right-now-mollick.md`
 
-# Mollick 的 AI 实用指南：免费 vs 付费·模型选择·深度研究（2025-10）
-
 > 2026-06-07 引用自 Ethan Mollick《An Opinionated Guide to Using AI Right Now》，One Useful Thing，2025-10-19。
 
 ## 背景数据

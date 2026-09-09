@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 5.3KB | `entities/ctgan-llm-test-data-generation-ctrip.md`
 
-# CTGAN+LLM 组合拳：携程测试数据生成工程方案
-
 > 测试人员44%的时间耗在数据构造上。携程提出CTGAN+LLM的工程化方案，让二者各司其职：CTGAN负责高丰富度独立字段生成，LLM负责关联关系字段生成。
 
 ## 背景

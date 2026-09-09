@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 9.1KB | `entities/vivo-agent-transparent-collaborative-editing.md`
 
-# 协同文档下的 Agent 透明化编辑：可回滚、可对比的协作闭环
-
 > 来源：vivo互联网技术（Ding Junjie）AI 编辑器二期调研实践 | 主题全库零覆盖
 
 当 AI 以惊人速度编辑多人协同文档时，真正的难题不是"AI 能不能写得好"，而是如何确保 AI 与人类精细化编辑和谐共存、不破坏协同信任感。这不仅是模型问题，更是协同架构挑战：关键在于明确 Agent 在协同系统中的"身份"，并通过可回滚、可对比的机制把 AI 编辑纳入透明、可控的协作闭环。

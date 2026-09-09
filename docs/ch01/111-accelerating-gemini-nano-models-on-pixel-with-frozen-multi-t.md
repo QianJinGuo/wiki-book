@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 4.6KB | `entities/blog-accelerating-gemini-nano-models-on-pixel-with-frozen-multi-token-prediction.md`
 
-# Accelerating Gemini Nano models on Pixel with frozen Multi-Token Prediction
-
 > **Source**: [research.google](https://research.google/blog/accelerating-gemini-nano-models-on-pixel-with-frozen-multi-token-prediction/)
 
 Specific technique (frozen Multi-Token Prediction) with implementation details for mobile deployment. Includes architectural innovations, references to prior work, and real-world deployment (Pixel 9/10). High technical depth and verifiability.

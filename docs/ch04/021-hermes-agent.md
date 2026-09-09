@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 4.9KB | `entities/hermes-agent-memory-system-vs-openclaw.md`
 
-# Hermes Agent 记忆系统深度拆解
-
 > 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.8**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/hermes-agent-memory-system-vs-openclaw.md`，一手来源仍见下方 sources。
 

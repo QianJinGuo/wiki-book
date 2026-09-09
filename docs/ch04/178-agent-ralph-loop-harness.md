@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 8.5KB | `entities/长周期-agent-详解-从-ralph-loop-到可接管-harness.md`
 
-# 长周期-agent-详解-从-ralph-loop-到可接管-harness
-
 长周期 Agent 详解：从 Ralph Loop 到可接管 Harness
 这两周 Codex /goal 在群里被翻来覆去聊了好几轮。
 它的思路很直白：给 Agent 一个一直挂在那儿的目标，别每隔几分钟就停下来问一句"要不要继续"。

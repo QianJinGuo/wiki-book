@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 11.7KB | `entities/qwen-ai-native-chaos-engineering-agent-corps-2026-08-06.md`
 
-# AI Native 混沌工程——Agent 军团 + 共享黑板的韧性验证平台
-
 > **来源**：千问AI平台（阿里，2026-08）。专有云 IaaS 场景下把混沌工程从"专项演练"升级为"平台能力"的完整实践：9 层 Agent 军团协作 + Redis 共享黑板 + 三道安全闸门 + 双进化回路，实现故障注入全链路 AI 闭环。
 
 ## 摘要

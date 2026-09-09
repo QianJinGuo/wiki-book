@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 8.1KB | `entities/platformer-ai-job-loss-levie.md`
 
-# The best argument I’ve heard for why AI won't take your job
-
 ## 摘要
 
 Platformer 与 Box CEO Aaron Levie 的对谈系统反驳了「SaaSpocalypse」与大规模 AI 失业叙事：AI Agent 将「乘以」而非取代企业软件的使用者，专业工作真正创造价值的「最后 20%」远比舆论想象的耐用，seat 制 SaaS 之上将叠加 agent 消费层。Levie 由此预测软件工程师不会减少，但工程师会从「写应用」转向在制药、银行、制造等各行各业部署 AI。

@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 5.3KB | `entities/welcome-to-the-agi-era-of-ai-governance-interconnects.md`
 
-# 欢迎来到 AGI 时代的 AI 治理 — Nathan Lambert 论美国政府强制 Anthropic 限制 Fable/Mythos 访问
-
 > **Background**：本文基于 Nathan Lambert（Interconnects）2026-06-14 发布的深度分析文章。Lambert 从内部视角（刚离开 Ai2 的研究员）剖析了美国政府强制 Anthropic 暂停 Claude Fable/Mythos 对外国公民访问权限这一标志性事件，并提出了 6 点核心论点。这是第一篇从"AGI 时代治理范式转换"角度系统分析该事件的 wiki 实体。
 
 ## 事件背景

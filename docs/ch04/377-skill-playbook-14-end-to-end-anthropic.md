@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 16.5KB | `entities/tencent-skill-writing-complete-playbook-jackjchou.md`
 
-# 鹅厂 Skill 写作完整 Playbook：14 章节 end-to-end 实战 + 工程化评估
+## 鹅厂 Skill 写作完整 Playbook：14 章节 end-to-end 实战 + 工程化评估
 
 > 原文存档：[原文存档](https://mp.weixin.qq.com/s/SZv3pDXPrL9vwV3Ua_84Kg)
 

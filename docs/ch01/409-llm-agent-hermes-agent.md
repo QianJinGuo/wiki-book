@@ -4,19 +4,19 @@
 
 [Llm Agent脚手架如何具备自进化能力以Hermes Agent为例](https://mp.weixin.qq.com/s/OcCtw7lrAvXKwOoIH_Gxsg)
 
-#  前言 
+## 前言
 笔者之前讲解了claude code这一code agent脚手架(两万字详解Claude Code源码核心机制)，和cc相比，最近大火的 hermes agent 定位则是更加日常的、通用的agent脚手架，体现在system prompt内容（强调用来完成问答、代码、分析、创作、工具执行等全场景任务）、工具集设计（更加丰富的Web 与浏览器工具、文本&语音等多模态工具）、多平台使用（Telegram、Discord、微信等多平台发送消息、调用远端执行后段）等方面。hermes agent更加强调是其"自进化（self-improve）"机制，本文将会基于hermes agent，讲解如果想让agent脚手架具备自进化能力，需要配套构建哪些机制。
 首先需要澄清的是，虽然hermes agent提供了调用自家tinker-atropos训练平台的RL工具（rl_start_training、rl_get_results等），但是这里所说的self imporve并非是进行模型权重更新，而是一套显式的知识沉淀机制——模型通过工具主动记录经验，下次会话自动加载。
 self-improving机制主要基于更加完善的memory机制来记住用户偏好（比如用户倾向于用pandas库处理csv文件）以及用沉淀skill机制来保存复杂的操作流程（比如整理一份文件需要先清洗空值，再按日期分组，最后计算平均值）。Hermes能够做到self imporving 机制需要在system prompt、工具设计、memory等各个基础组建上做针对性的定制。
 
-#  System Prompt 的引导设计 
+## System Prompt 的引导设计
 self imporve机制需要利用skill来不断沉淀、优化操作流程，因此在system prompt里边进行了重点说明。
 1.首先是明确说明了如果遇到复杂操作，需要沉淀为skill，方便后续调用，提高自身能力，如果发现skill有问题，也要及时修复，具体prompt如下：
 完成复杂任务（调用工具 5 次及以上）、修复棘手报错，或是摸索出一套实用流程后，要用 skill_manage 将这套方法保存为技能，方便后续复用。 使用技能时如果发现内容过时、流程不全或存在错误，主动立即用 skill_manage(action='patch') 修补，不要等他人提醒。得不到维护的技能，终将变成累赘隐患。
 2.模型在回复前先查看skill，看看之前有没有沉淀下来有用的skills，避免绕弯路：
 回复前，请先通读下方所有技能。若某项技能与你的任务匹配，哪怕只是部分相关，你都必须用skill_view(name) 加载该技能，并严格遵循其指令执行。 宁可多加载无关技能，也绝不遗漏关键流程、潜在坑点和既定工作规范。技能中包含专属专业知识：API 接口地址、专属工具命令、经过验证的成熟工作流，效果远优于通用处理方式。 即便你认为只用网页搜索、终端等基础工具就能完成任务，也依然要加载对应技能。 技能同时固化了用户在代码审查、方案规划、测试等任务上的惯用处理方式、格式规范和质量标准。哪怕是你本来就会做的任务，也要加载技能 —— 因为技能规定了在此环境下必须按这套标准来做。 若加载的技能存在问题，使用 skill_manage(action='patch') 进行修复。完成复杂任务或多轮迭代任务后，主动询问是否将本次流程保存为新技能。如果你加载的技能存在步骤缺失、命令错误、未标注潜在风险等问题，请在任务结束前主动更新完善该技能。
 
-#  Self-Improve 相关工具设计 
+## Self-Improve 相关工具设计
 hermes agent的self improve非常依赖skills能力，因此还专门为skills设计了3种工具：
 工具  |  功能  |  在 Self-Improve 中的作用
 ---|---|---
@@ -69,7 +69,7 @@ remove_file  |  删除辅助文件  |  name, file_path  |  清理无用的辅助
 和self imporve功能相关的除了skill相关工具，也有`session_search` 工具，基于 SQLite FTS5 的跨会话文本检索工具，让 Agent 能回顾自己过去的完整思考轨迹。session search机制会在下文介绍。遇到如下情况时，会触发这个工具：
 主动在以下场景使用本规则：当用户说出「我们之前做过这个」「还记得当时」「上次」这类表述时……只要属于跨会话场景，就果断检索；检索成本低、速度快。宁可主动检索核实，也不要凭空猜测，或是让用户重复说明。
 
-#  更加完善的memory机制 
+## 更加完善的memory机制
 Hermes主要依赖于MEMORY和USER两种md文件用于记录用户的偏好。Hermes还专门为模型设计了"memory"工具让 Agent 把重要的用户信息写入持久化存储。记忆文件默认是加载到system prompt中的，但本次会话的 system prompt 并不会改变。记忆内容要等到下次会话启动时才作为新快照读入。这种设计是为了保护 prefix cache，如果每次写 memory 都更新 system prompt，长会话的成本会翻倍。
 memory机制主要依赖于如下两个文件：
     MEMORY.md：工作笔记——环境事实、项目约定、工具怪癖
@@ -95,7 +95,7 @@ memory机制主要依赖于如下两个文件：
     约定学习 — 项目特定的规范、工具怪癖、工作流程
     稳定事实 — 未来会话仍有用的信息
 
-#  Session Search：从原始对话中学习 
+## Session Search：从原始对话中学习
 Memory 存结论，Skill 存方法，但真正的学习往往发生在试错过程中，那些失败的尝试、错误的假设、突然的顿悟，不会自动变成 Memory 或 Skill，却包含着宝贵的经验。
     假设用户问："上次那个 bug 是怎么修的？"
     Memory 可能记着"用户用 Python 3.9"
@@ -109,7 +109,7 @@ Memory 存结论，Skill 存方法，但真正的学习往往发生在试错过�
   * • LLM 摘要：用便宜的模型（如 Gemini Flash）生成带元数据的摘要 
   * • 返回结果：不是返回原始对话的完整记录，而是 LLM 生成的摘要，包含「问题→尝试过程→最终解法」的完整脉络 
 
-#  总结 
+## 总结
 memory、skills和session都存储了过去的经验。Memory 是"被动回忆"——每次会话自动加载，Agent 不需要主动调用工具就能知道；Skill 是"主动加载+自主维护"——Agent 需要调用 skill_view 读取详情，还可以用 skill_manage 创建新技能或修复过时技能；Session Search 是"按需召回"——只在用户提及过去对话时才搜索，不常驻上下文。三者之间的对比如下表所示：
 机制  |  存储内容  |  使用方式  |  在 Self-Improving 中的角色
 ---|---|---|---
@@ -179,4 +179,3 @@ Skill 不是一次性创建的静态资产，而是需要持续维护的演化�
 - [AI Skill 测评指标体系](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-skill-metrics-system.md)
 
 ---
-

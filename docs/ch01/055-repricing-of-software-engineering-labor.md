@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 7.3KB | `entities/posts-repricing-of-software-engineering-labor.md`
 
-# Repricing of Software Engineering Labor
-
 > **来源**: [Repricing of Software Engineering Labor](https://blog.grandimam.com/posts/repricing-of-software-engineering-labor)
 
 I started my career in the late 2010s, and I have had a front-row seat to the growth of the industry that has given me everything: software engineering.

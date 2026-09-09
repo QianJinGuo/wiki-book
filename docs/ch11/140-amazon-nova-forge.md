@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 11.7KB | `entities/amazon-nova-forge-hyperparameter-tuning-art-science.md`
 
-# Amazon Nova Forge 域定制超参调优：艺术与科学
-
 ## 概述
 
 Amazon Nova Forge 是 AWS 提供的**自建前沿模型**定制服务，核心价值在于：从早期 checkpoint 起步、混合专有数据与 Amazon Nova 精选数据、在 AWS 上安全托管定制模型。**数据混合 (data mixing)** 能力是核心 — 让模型吸收领域知识同时保留通用推理与指令遵循能力，避免 catastrophic forgetting。

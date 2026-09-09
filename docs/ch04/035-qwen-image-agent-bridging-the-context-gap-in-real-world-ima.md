@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 3.9KB | `entities/abs-2606-26907.md`
 
-# Qwen-Image-Agent: Bridging the Context Gap in Real-World Image Generation
-
 > **Source**: [arxiv.org](https://arxiv.org/abs/2606.26907)
 
 Novel agentic framework (Qwen-Image-Agent) addressing a clearly defined problem (Context Gap). Full paper with architecture, methodology, and likely benchmarks. High originality and practical relevance for agent engineering.

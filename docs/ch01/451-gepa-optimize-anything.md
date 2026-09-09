@@ -4,7 +4,7 @@
 
 > -> [原文存档](https://gepa-ai.github.io/gepa/blog/2026/02/18/introducing-optimize-anything/)
 
-# GEPA optimize_anything — 通用文本优化 API
+## GEPA optimize_anything — 通用文本优化 API
 **来源：** GEPA 官方博客
 **发布时间：** 2026-02-18
 **代码：** https://github.com/gepa-ai/gepa

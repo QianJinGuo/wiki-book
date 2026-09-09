@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 16.5KB | `entities/agent-evalkit-aws-opensource-cli-agent-eval-toolkit.md`
 
-# Agent-EvalKit：AWS 开源 CLI Agent 评测工具包
-
 > 原文存档：[原文存档](https://aws.amazon.com/blogs/machine-learning/evaluate-ai-agents-systematically-with-agent-evalkit)
 
 AWS 2026-06-11 开源（Apache 2.0）的 Agent 评测工具包，定位是**"用 AI 编码助手本身做评测引擎"**——Claude Code / Kiro CLI / Kilo Code 通过 slash command (`/evalkit.*`) 直接驱动整个评测流程，无需独立评测平台。该工具包在 [GitHub awslabs/Agent-EvalKit](https://github.com/awslabs/Agent-EvalKit) 维护。

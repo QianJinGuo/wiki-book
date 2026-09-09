@@ -2,11 +2,7 @@
 
 > 📊 Level ⭐ | 4.3KB | `entities/building-and-connecting-a-production-ready-ecommerce-mcp-ser.md`
 
-# Building and connecting a production-ready ecommerce MCP server using Amazon Bedrock AgentCore and Mistral AI Studio
-
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/building-and-connecting-a-production-ready-ecommerce-mcp-server-using-amazon-bedrock-agentcore-and-mistral-ai-studio)
-
-# Building and connecting a production-ready ecommerce MCP server using Amazon Bedrock AgentCore and Mistral AI Studio
 
 When ecommerce teams need faster time-to-market for AI-powered customer experiences, they face weeks of custom integration work that delays launches and increases security risks. Building and connecting a production-ready AI assistant typically requires custom API code for each client, container infrastructure management, and complex authentication. Amazon Bedrock AgentCore and Mistral AI Studio streamline this process. A production-ready ecommerce Model Context Protocol (MCP) server on Amazon Bedrock AgentCore, connected to Mistral AI Studio, streamlines development. The MCP provides standardized integration protocols, AgentCore Runtime manages containers and validates tokens, and Amazon Cognito handles identity.
 

@@ -4,8 +4,6 @@
 
 > -> [原文存档](https://mp.weixin.qq.com/s/QieZJNBhQYQWoFAZvxBwAw)
 
-# Claude统治一切！吞下这颗红药丸，焊工也是顶尖程序员
-
 ## 什么是「Claude红丸化」
 
 「Claude红丸化」（Claude-pilled）源自电影《黑客帝国》中的红丸梗：一旦你体验过Claude的能力，就再也无法回到过去的工作方式。

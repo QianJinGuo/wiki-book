@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 8.0KB | `entities/knowledge-agents-beat-frontier-models.md`
 
-# Knowledge Agents: Beat Frontier Models with Better Structure
-
 → [原文存档](https://weightythoughts.com/p/knowledge-agents-beat-frontier-models)
 
 ## 摘要

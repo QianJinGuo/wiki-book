@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 4.5KB | `entities/the-new-bottleneck-theory-of-constraints-ai-coding-tools.md`
 
-# The New Bottleneck: Theory of Constraints in the Age of AI Coding
-
 Stack Overflow 文章，将制造业的约束理论（Theory of Constraints）应用于 AI 编程工具时代。核心论点：当代码生成不再是瓶颈时，组织流程中的其他环节成为新的约束。
 
 ## 核心框架：从代码生成到流程瓶颈

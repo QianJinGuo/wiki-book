@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 8.5KB | `entities/langfuse-agent-eval-tracing-cost-structure.md`
 
-# 做Agent评测的几个反直觉感悟
-
 ## 摘要
 
 从小红书博主"脆皮乌龙茶"关于用 Langfuse 做 Agent Evals 的实战经验出发，提出一个反直觉判断：**有些质量优化看似提升答案，实际是在破坏产品可规模化性。** 核心论点：Tracing 的价值不是优化单次回答质量，而是暴露 Agent 成本结构中的瓶颈环节——哪个 Observation 让成本失控，哪一步阻塞了用户等待。

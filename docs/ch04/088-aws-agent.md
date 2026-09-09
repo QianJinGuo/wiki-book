@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐ | 3.4KB | `entities/aws-cn-intelligent-device-assistant-consumer-agent-2026.md`
 
-# 基于 AWS 智能设备助手行业资产，构建社交渠道触达的消费级 Agent 交互应用
-
 ## 相关实体
 - [habby 游戏借助 aws devops agent 实现智能运维最佳实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/habby-game-aws-devops-agent.md)
 - [agent-evalkit：aws 开源 cli agent 评测工具包](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-evalkit-aws-opensource-cli-agent-eval-toolkit.md)

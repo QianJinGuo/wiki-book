@@ -2,11 +2,7 @@
 
 > 📊 Level ⭐ | 4.0KB | `entities/glm-52-is-the-step-change-for-open-agents.md`
 
-# GLM-5.2 is the step change for open agents
-
 → [原文存档](https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open)
-
-# GLM-5.2 is the step change for open agents
 
 ##### Housekeeping: Following my “[State of the blog](<https://www.interconnects.ai/p/state-of-the-blog-mid-2026>)” post last week, noting a slight increase in paid features, it’s a good time to remind folks that I offer [group subscriptions](<https://www.interconnects.ai/about#§group-paid-subscriptions>) with larger discounts proportional to the number of seats.   
 I also released a new paper today on open RL recipes for terminal agents, read more [here](<https://natolambert.substack.com/p/tmax-an-open-rl-recipe-for-terminal>).

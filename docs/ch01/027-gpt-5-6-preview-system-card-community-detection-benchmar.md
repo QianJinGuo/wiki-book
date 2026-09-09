@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐ | 8.4KB | `entities/gpt-5-6-preview.md`
 
-# GPT-5.6 Preview System Card - OpenAI Deployment Safety Hub
+## GPT-5.6 Preview System Card - OpenAI Deployment Safety Hub
 
 > **Source**: [deploymentsafety.openai.com](https://deploymentsafety.openai.com/gpt-5-6-preview)
 

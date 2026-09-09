@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 6.9KB | `entities/anthropic-claude-skill-9-categories-datawhale-2026.md`
 
-# Anthropic Claude Skill 9 类任务分类法
-
 Datawhale 编译自 Anthropic 官方博客。Anthropic 内部把 Claude Code Skills 分为 **9 类任务类型**，覆盖从知识补充到生产运维的完整软件工作流。本文整理了这 9 类分类、最佳实践和团队落地经验。
 
 ## 核心洞察

@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 13.6KB | `entities/multimodal-evaluators-mllm-as-judge-image-to-text.md`
 
-# Multimodal evaluators: MLLM-as-a-judge for image-to-text tasks in Strands Evals
+## Multimodal evaluators: MLLM-as-a-judge for image-to-text tasks in Strands Evals
 
 > 来源：[原文存档](https://aws.amazon.com/blogs/machine-learning/multimodal-evaluators-mllm-as-a-judge-for-image-to-text-tasks-in-strands-evals/)
 

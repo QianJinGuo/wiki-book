@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 5.5KB | `entities/code-is-cheap-harness-water-flow-wuyue-aliyun-2026.md`
 
-# Code is cheap: Harness 方法论——水流理论、最小混沌单元与反 slop
-
 ## 核心论点：代码正在变得非常廉价
 
 无岳（阿里云开发者）基于过去 20 天 70 万行代码、10 个并行项目的实践，提出核心判断：**代码本身，正在从稀缺资源变成可以快速生成、快速验证、快速丢弃的过程产物**。

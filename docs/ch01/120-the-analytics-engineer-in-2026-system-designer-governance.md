@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 4.3KB | `entities/the-analytics-engineer-in-2026-system-designer-governance-owner-ai-context-provi.md`
 
-# The analytics engineer in 2026: system designer, governance owner, AI context provider
-
 ## What analytics engineering looked like in 2023
 
 In 2023, the core of an analytics engineer's job was model development. You wrote SQL, organized it into dbt models, wrote tests, and built pipelines that turned raw data into something stakeholders could use. Documentation was a best practice you aspired to. [Column-level lineage](https://docs.getdbt.com/docs/explore/column-level-lineage "Column-level lineage") was a nice-to-have. The bottleneck was your capacity to write and review code.

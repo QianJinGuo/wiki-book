@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 8.0KB | `entities/cordon-semantic-transactions-tool-using-llm-agents-2026-06-17.md`
 
-# Cordon：Agent 工具调用的语义事务安全边界
-
 ## 摘要
 
 论文 Cordon: Semantic Transactions for Tool-Using LLM Agents 提出一种新的 Agent 安全范式：不再逐个审批工具调用，而是为整段 Agent 任务建立可验证、提交、回滚和审计的事务边界（semantic transaction）。核心洞察：很多风险不是单个工具调用明显危险，而是多个看似正常的步骤组合后才危险——真正需要判断的是整段任务执行流是否应该被提交。

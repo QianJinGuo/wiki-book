@@ -4,7 +4,6 @@
 
 > -> [原文存档](https://mp.weixin.qq.com/s/bMjXlD-OcnFW-wuN1yW8FA)
 
-# Claude Code 源码深度解析（13 核心机制）
 > 22,873 字源码深度拆解，每节均与 Codex/OpenCode/Gemini-CLI 横向对比
 
 ## 13 个核心模块

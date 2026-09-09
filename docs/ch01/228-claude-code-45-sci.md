@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 12.6KB | `entities/claude-code-academic-literature-review-sci.md`
 
-# Claude Code 学术文献综述：45 页 SCI 一区级产出
-
 > 使用 Claude Code 在科研场景中的实践案例：45 页结构化文献综述，质量达到 SCI 一区发表水平。
 
 → [原文存档](https://mp.weixin.qq.com/s/x5ronLRaXlD723tDE450eA)

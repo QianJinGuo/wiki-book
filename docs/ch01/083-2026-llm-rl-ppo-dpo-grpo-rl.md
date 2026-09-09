@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 5.4KB | `entities/2026-llm-rl-algorithms-deeplog-imba-ppo-dpo-grpo-marl.md`
 
-# 2026 年面向 LLM 的 RL 方法总结：从 PPO 到 DPO 到 GRPO，再到多智能体 RL
-
 > 本页原内容在 2026-09-07 质量闭环中判定为 **thin-0.75**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/2026-llm-rl-algorithms-deeplog-imba-ppo-dpo-grpo-marl.md`，一手来源仍见下方 sources。
 

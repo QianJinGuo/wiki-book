@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 6.1KB | `entities/offline-llm-energy-use-html.md`
 
-# Apple Silicon costs more than OpenRouter
-
 → [原文存档](https://www.williamangel.net/blog/2026/05/17/offline-llm-energy-use.html)
 
 ## 摘要

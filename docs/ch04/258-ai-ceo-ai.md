@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 17.6KB | `entities/ai-native-team-building-failures-ceo-digital-twin-case.md`
 
-# AI 原生团队的脏乱差：CEO 数字分身失败案例与 AI 销售线索分配的兴衰
-
 ## Overview
 
 一位 AI 咨询/创业教练（未具名）的实战总结。**作者三年前离开公司体系做 AI 创业，第一个产品《CEO 数字分身》亏了 100 多万**。现在做企业 AI 咨询 + AI 训练营。本文是他**从失败的 AI 创业 + 多年企业 AI 咨询**中提炼出的"AI 原生组织脏乱差"——**AI 原生本质是管理课题，不是 AI 课题**。

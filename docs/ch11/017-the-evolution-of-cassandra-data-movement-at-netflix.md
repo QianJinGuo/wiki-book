@@ -2,11 +2,7 @@
 
 > 📊 Level ⭐ | 4.0KB | `entities/the-evolution-of-cassandra-data-movement-at-netflix.md`
 
-# The Evolution of Cassandra Data Movement at Netflix
-
 → [原文存档](https://netflixtechblog.com/the-evolution-of-cassandra-data-movement-at-netflix-6e13329c80a1?source=rss----2615bd06b42e---4)
-
-# The Evolution of Cassandra Data Movement at Netflix
 
 By [Guil Pires](<https://www.linkedin.com/in/guilhermesmi/>), [Jennifer Prince](<https://www.linkedin.com/in/jenjprince/>), [Jose Camacho](<https://www.linkedin.com/in/josecamachof/>), [Ken Kurzweil](<https://www.linkedin.com/in/kenkurzweil/>), [Phanindra Chunduru](<https://www.linkedin.com/in/phanindra-chunduru/>)
 

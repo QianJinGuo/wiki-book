@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 5.3KB | `entities/tencent-wework-skill-requirement-development-pipeline.md`
 
-# 腾讯企业微信团队 Skill 流水线：AI代码生成率94%的需求开发全流程
-
 > **来源**：腾讯技术工程 - 企业微信团队 gomezlai，2026-07-20
 > **核心命题**：**AI 不是不会写代码，是不会"按工程规范"开发需求**。把需求开发流程化、原子化、可校验化，然后用一个 Skill 串起所有阶段。
 

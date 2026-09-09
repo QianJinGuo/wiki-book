@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 7.7KB | `entities/your-first-ai-agent-should-do-one-thing-badly.md`
 
-# Your First AI Agent Should Do One Thing Badly
-
 → [原文存档](https://blog.crewai.com/your-first-ai-agent-should-do-one-thing-badly)
 
 ## 摘要

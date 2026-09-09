@@ -4,7 +4,7 @@
 
 > -> [原文存档](https://mp.weixin.qq.com/s/oZnzy6QxriNclm-UTGh7VQ)
 
-# Gemini Embedding 2：全模态统一向量空间
+## Gemini Embedding 2：全模态统一向量空间
 
 ## 一句话
 

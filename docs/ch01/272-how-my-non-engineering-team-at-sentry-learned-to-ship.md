@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 9.7KB | `entities/how-my-non-engineering-team-at-sentry-learned-to-ship-20260606.md`
 
-# How my non-engineering team at Sentry learned to ship
-
 → [原文存档](http://read.technically.dev/p/how-matt-learned-to-ship)
 
 ## 摘要

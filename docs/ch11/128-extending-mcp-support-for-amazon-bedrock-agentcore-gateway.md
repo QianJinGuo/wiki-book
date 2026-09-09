@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 32.6KB | `entities/amazon-bedrock-agentcore-gateway-mcp-extension.md`
 
-# Extending MCP support for Amazon Bedrock AgentCore Gateway
-
 ## Unite MCP servers for enterprise through AgentCore Gateway
 
 Without a centralized gateway, every MCP server that your organization builds must independently handle credentials, policy enforcement, private connectivity, and logging. This means that your legal team’s contract review MCP server, your finance team’s data retrieval MCP server, and your operations team’s incident response MCP server each carry the same infrastructure burden. Security teams review each server individually, developers wait for approvals, and nobody has a unified view of how MCP infrastructure is being used across the organization.

@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 14.4KB | `entities/wall-not-model-harness-three-case-studies-stripe-deerflow-ant.md`
 
-# 墙比模型更重要：三家公司独立得出同一结论
+## 墙比模型更重要：三家公司独立得出同一结论
 
 ## Overview
 

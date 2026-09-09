@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 10.6KB | `entities/claude-code-seven-customization-methods-anthropic-official.md`
 
-# Claude Code 七种自定义方法：官方全景指南
-
 Anthropic 官方博客，系统阐述 Claude Code 的七种自定义方法及其对比。每种方法影响三件事：指令何时加载进上下文、压缩后是否持续生效、指令权重有多高。
 
 与 [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-skills-mcp-rules-source-analysis.md) 互补——源码分析侧重底层 API 注入位置，本文侧重官方使用指南和决策框架。

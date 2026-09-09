@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐ | 7.9KB | `entities/code-simulation-for-enterprise-engineering-playerz.md`
 
-# Code Simulation for Enterprise Engineering — PlayerZero
+## Code Simulation for Enterprise Engineering — PlayerZero
 
 ## 摘要
 本文以 FAQ 形式介绍 code simulation（代码模拟）这一介于静态代码审查与生产验证之间的新范式：它不回答"这段代码写得对不对"，而是回答"这个变更进入真实系统后到底会不会 work"。PlayerZero 的 Sim-1 引擎融合 code embeddings、dependency graphs 与 production telemetry，在无需编译、部署或 staging 环境的前提下预测跨服务变更的行为，已完成超过 75 万次生产模拟。文章重点澄清了 code simulation 与 code review、测试套件、可观测性工具"互补而非替代"的关系，并给出落地时间线与适用条件。

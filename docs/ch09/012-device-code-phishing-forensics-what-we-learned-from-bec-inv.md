@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 2.2KB | `entities/device-code-phishing-forensics-what-we-learned-from-bec-investigations-in-the-wi.md`
 
-# Device Code Phishing Forensics: What We Learned from BEC Investigations in the Wild
-
 → [原文存档](https://research.eye.security/device-code-phishing-forensics/)
 
 ## 深度分析

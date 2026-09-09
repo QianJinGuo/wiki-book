@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 17.5KB | `entities/nanobot-agent-framework-architecture-deep-dive.md`
 
-# nanobot：4000行极简 Agent 框架架构解析
-
 → [原文存档](https://mp.weixin.qq.com/s/6m2ezyi119r8NLMBjsARDQ)
 
 ## 摘要

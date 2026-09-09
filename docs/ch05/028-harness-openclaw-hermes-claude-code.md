@@ -2,7 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 22.7KB | `entities/harness-engineering-7-layers-openclaw-hermes-claude-code-p1anu.md`
 
-# Harness 到底是什么？看看 OpenClaw、Hermes、Claude Code 的演绎吧
 > Source: https://mp.weixin.qq.com/s/p1aNuDIXXnZPLvU2D6MwXQ
 > Author: 叶小钗 (AI训练营)
 > Date: 2026-05-07

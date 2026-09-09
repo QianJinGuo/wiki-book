@@ -123,7 +123,5 @@ Auditor + Optimizer 的双 workflow 设计值得借鉴：每日扫描 → 标记
 - [Improving token efficiency in GitHub Agentic Workflows](https://github.com/QianJinGuo/wiki-public/blob/main/entities/github-token-efficiency-agentic-workflows.md)
 
 - [Token Efficiency](https://github.com/QianJinGuo/wiki-public/blob/main/entities/github-agentic-token-efficiency.md)
-````
 
 ---
-

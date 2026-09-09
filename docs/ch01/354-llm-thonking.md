@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 7.2KB | `entities/llm-thonking-reasoning-effort-security-triage.md`
 
-# LLM Thonking：推理努力与安全分诊效果的实证研究
-
 ## 摘要
 
 Parsiya 延续 Semgrep 的 Mythos 实验，用 26 种 Claude 4.6/4.7/4.8 和 GPT-5.4/5.5 组合（不同上下文窗口 + 推理努力级别）测试安全漏洞分诊任务，总成本约 $9200。核心发现：**更高的推理努力（reasoning effort）不一定带来更好的安全分析结果**。四模型 LLM 委员会投票机制出人意料地有效（86.2% 一致率），函数级分析显著优于文件级分析。GPT-5.4 在 high/xhigh 推理努力下总体表现最佳。

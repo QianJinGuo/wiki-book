@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 6.1KB | `entities/agent-harness-skill-system-practical-guide.md`
 
-# Agent Harness Skill 系统实战指南 — Reference/Action 类型、动态注入与 frontmatter 全解
-
 > 数字理想「Harness 工程」系列第 6 课。聚焦 **Anthropic Agent Harness** 的 Skill 系统（区别于 Claude Code Skills），从概念到实操的完整教程。
 
 与 [Claude Code Skills 实战指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-skills-practical-guide-discovery-frontmatter.md) 互补——该实体聚焦 Claude Code 的 Skill 发现机制与安全限制，本实体聚焦 **Agent Harness** 框架的 Skill 系统（类型体系、frontmatter 字段、动态注入、Agent Teams、执行上下文控制）。

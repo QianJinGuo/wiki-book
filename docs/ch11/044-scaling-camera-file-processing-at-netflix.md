@@ -2,15 +2,11 @@
 
 > 📊 Level ⭐⭐⭐ | 25.1KB | `entities/netflix-scaling-camera-file-processing-at-netflix.md`
 
-# Scaling Camera File Processing at Netflix
-
 ## 相关实体
 - [Netflix Real Time Service Topology](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-real-time-service-topology.md)
 - [Netflix Nebula Archrules](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-nebula-archrules.md)
 
 → [原文存档](https://netflixtechblog.com/scaling-camera-file-processing-at-netflix-6dab2b1e80be?source=rss----2615bd06b42e---4)
-
-# Scaling Camera File Processing at Netflix
 
 _Orchestrating Media Workflows Through Strategic Collaboration_
 

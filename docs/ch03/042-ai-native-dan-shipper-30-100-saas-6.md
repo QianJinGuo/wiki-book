@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 23.1KB | `entities/ai-native-dan-shipper-every-layered-thinking-walkwalk.md`
 
-# AI Native 公司 Dan Shipper 30 人做出 100 人产出：层次化思维 + SaaS 6 维能力框架
-
 ## 概述
 
 WalkerYu（一起walkwalk）2026-05-27 **深度解读 Lenny's Newsletter Dan Shipper 访谈**。Dan Shipper 是 Every 公司创始人，**30 人靠 AI 员工（Codex + Claude Code 默认界面）做出 100 人产出**。核心论断：**「Automation is a lie」**——AI 倍增你已有的判断力；层次化思维 + SaaS 6 维 Agent 友好能力框架是核心方法论。原文链接 lennysnewsletter.com/p/the-ai-paradox-dan-shipper。

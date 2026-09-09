@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 6.0KB | `entities/deepmind-securing-future-ai-agents.md`
 
-# Securing the future of AI agents
-
 > **来源**: deepmind.google
 > **作者**: Rohin Shah, Four Flynn (DeepMind)
 > **发布日期**: 2026-06-18

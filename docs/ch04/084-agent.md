@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐ | 3.9KB | `entities/你不知道的-agent原理架构与工程实践-v2.md`
 
-# 你不知道的 Agent：原理、架构与工程实践
-
 → [原文存档](https://mp.weixin.qq.com/s/cIQYl9Wr1Eov4ma-_bYh-w)
 
 ## 深度分析
@@ -11,7 +9,6 @@
 0
 review_recommendation: strong
 review_stars: 4ingested: 2026-05-10
-# 你不知道的 Agent：原理、架构与工程实践
 文章内容基于作者个人技术实践与独立思考，旨在分享经验，仅代表个人观点。
 
 ### 核心观点

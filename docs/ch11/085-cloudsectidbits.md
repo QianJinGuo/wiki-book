@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 9.8KB | `entities/cloudsectidbits.md`
 
-# CloudSecTidbits：云安全研究摘要
-
 ## 摘要
 CloudSecTidbits 是 Doyensec 的云安全研究系列，专门呈现「Web 技术与云技术不安全组合」产生的漏洞，每期附赠可一键部署的 IaC 实验环境。本条目对应 Tidbit No. 4「The Danger of Multi-SSO User Pools」（2026-05-05，Francesco Lacerenza 与 Mohamed Ouad，曾于首届 DEFCON Singapore DemoLabs 展示）：在多租户 AWS Cognito User Pool 场景下，攻击者以恶意 IdP 身份接入，绕过平台依托 Lambda trigger 构建的全部身份约束，实现 ghost identity 注入、解析差异提权与 IdP 路由劫持——这正是「Masso」所代表的 Cognito SSO 认证绕过。
 

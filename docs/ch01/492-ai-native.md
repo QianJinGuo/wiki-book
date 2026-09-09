@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 8.8KB | `entities/amap-ai-native-end-to-end-infrastructure.md`
 
-# 高德工业级能力底座：AI-Native 的端云一体基建
-
 → 原文存档
 
 ## 摘要

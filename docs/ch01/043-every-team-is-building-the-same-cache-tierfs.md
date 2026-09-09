@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 7.6KB | `entities/blog-every-team-builds-the-same-cache-html.md`
 
-# Every Team is Building the Same Cache — TierFS
-
 > **来源**: [Every Team is Building the Same Cache — TierFS](https://tierfs.com/blog/every-team-builds-the-same-cache.html)
 
 Why infrastructure teams keep solving the same storage problem from scratch, and what would happen if they didn't have to.

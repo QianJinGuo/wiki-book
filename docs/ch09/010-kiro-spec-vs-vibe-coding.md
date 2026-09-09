@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 3.1KB | `entities/kiro-building-seismic-wave-processing-spec-vibe-coding.md`
 
-# 用 Kiro 构建行业专业软件：Spec vs Vibe Coding 的分层结论
-
 Kiro 是一个 AI 原生开发环境。在一项为期 5 天、实际编码约十余小时的行业垂直软件开发实践中（陆上地震勘探多次波压制处理系统），交付约 2,408 行代码与文档，涵盖预测反褶积、双曲 Radon 变换、SRME 三种经典算法，以及 CLI、桌面 GUI 与多炮并行流水线。
 
 ## 核心论点：Spec vs Vibe Coding 的分层适用边界

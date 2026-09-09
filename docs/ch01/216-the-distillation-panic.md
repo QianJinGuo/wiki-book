@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 14.1KB | `entities/the-distillation-panic.md`
 
-# The distillation panic
-
 → [原文存档](https://www.interconnects.ai/p/the-distillation-panic)
 
 ## 摘要

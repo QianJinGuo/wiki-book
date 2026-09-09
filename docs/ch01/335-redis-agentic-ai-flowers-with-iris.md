@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 7.7KB | `entities/www.blocksandfiles.com-5241795.md`
 
-# Redis agentic AI flowers with Iris
-
 ## 摘要
 Redis 推出 Iris Context Engine——一个构建在 Redis 之上的统一上下文与记忆层，让企业数据能够被 AI Agent 通过工具主动发现和获取，并同步发布了基于 SSD 的 Redis Flex 以解决 PB 级规模的存储成本问题。CEO Rowan Trollope 将这一转变概括为"上下文范式翻转"：LLM 变聪明之后，Agent 的工作方式从"预先填充上下文"转向"给 Agent 一组工具，让它自己决定需要什么"。文章同时预言企业 AI 将走向"每千名员工上千个 Agent"的密度，而 Oracle、Snowflake 等传统数据平台并非为此种规模而生。
 

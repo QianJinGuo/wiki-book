@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 8.4KB | `entities/introducing-vercel-connect.md`
 
-# Introducing Vercel Connect
-
 ## Overview
 
 Giving your agents access to your tools, data, and services is what makes them useful. As agents perform deeper work across systems, authenticating and authorizing that access becomes central to your application architecture.

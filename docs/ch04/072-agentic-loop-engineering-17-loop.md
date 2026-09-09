@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐ | 6.1KB | `entities/agentic-loop-engineering-handbook-empirical-framework.md`
 
-# Agentic Loop Engineering 工程手册：17 种 Loop 工程化技术的可复现实证框架
-
 > 原文存档：[原文存档](https://mp.weixin.qq.com/s/HZ8DD90RmVb953zlvq_4Hg)
 
 ## 一句话定位

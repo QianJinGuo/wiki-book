@@ -2,7 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 36.2KB | `entities/powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.md`
 
-# Powering agentic AI sales strategy with Amazon Bedrock AgentCore
 source: rss
 source_url: https://aws.amazon.com/blogs/machine-learning/powering-agentic-ai-sales-strategy-with-amazon-bedrock-agentcore/
 ingested: 2026-05-28
@@ -12,8 +11,6 @@ feed_name: AWS China ML
 source_published: 2026-05-27T18:00:07Z
 
 ---
-
-# Powering agentic AI sales strategy with Amazon Bedrock AgentCore
 
  
 

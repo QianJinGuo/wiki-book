@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 15.8KB | `entities/agent-formal-verification-ai-code.md`
 
-# Cheap code means formal verification is reasonable now — Antfly Blog
-
 [原文存档](https://antfly.io/blog/agent-formal-verification)
 
 It would be an understatement hardly worth uttering to say that coding agents are a big deal. But using them most effectively isn't exactly as simple as telling Claude to build you a SaaS product and make no mistakes. Collectively, as software engineers (or whatever you call this job these days), it's up to us to find ways to be most effective with them while minimizing harm to what we're building.

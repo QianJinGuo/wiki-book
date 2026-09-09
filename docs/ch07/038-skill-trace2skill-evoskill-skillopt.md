@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 12.7KB | `entities/skill-self-evolution-three-approaches.md`
 
-# Skill自进化三路线：Trace2Skill归纳法 / EvoSkill验证闭环 / SkillOpt训练范式
-
 ## 摘要
 
 Skill 自进化是 Agent 系统从"人工调优"走向"自主优化"的关键技术方向。本文深度解析三条代表性路线：阿里千问团队的 **Trace2Skill**（归纳法，从大量轨迹中聚合提炼 Skill）、Sentient Labs 的 **EvoSkill**（自然选择，构建→验证闭环）、微软联合上交/同济/复旦的 **SkillOpt**（将 Skill 文本类比为模型权重进行训练）。三条路线的核心差异在于：如何处理过拟合、如何利用失败信号、是否引入验证门控。

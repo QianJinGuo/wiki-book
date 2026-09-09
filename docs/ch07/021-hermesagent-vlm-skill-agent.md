@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 8.7KB | `entities/gaode-saojie-image-selection-hermesagent-vlm-production-2026.md`
 
-# 高德扫街榜 HermesAgent 配图系统：VLM + Skill + 语言驱动的生产级 Agent 架构
-
 高德扫街榜（Amap Street Food List）POI 配图系统重构案例。从手工作坊式 Workflow（50+ SQL/8 步骤/T+1 24 小时）重构为 "VLM 语义感知 + Skill 化生产 + HermesAgent 编排 + 语言驱动干预" 的生产级 Agent 系统。单榜单生产 **24h → 30min，提效 48 倍**。
 
 ## 架构设计哲学：确定性流程 + Agent 各司其职

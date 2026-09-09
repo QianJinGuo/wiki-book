@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 9.4KB | `entities/baidu-unlimited-ocr-sliding-window-attention.md`
 
-# 百度提出 Unlimited OCR：用 Reference Sliding Window Attention 实现长文档 OCR 常量 KV Cache
-
 ## 摘要
 
 百度提出的 Unlimited OCR 通过 **Reference Sliding Window Attention（R-SWA）** 替代 DeepSeek-OCR 解码器中的标准注意力机制，使长文档 OCR 的 KV cache 从随输出长度线性增长降为常量。R-SWA 的核心洞察是：OCR 是 reference-based parsing 任务，每个新 token 不需要回看完整的输出历史——参考源（视觉 token 和 prompt）需要全程可见，而已生成文本只需要保留最近一小段（默认窗口 128）。在 OmniDocBench v1.5 上，Unlimited OCR 以 93.23 总体分超越 DeepSeek-OCR 的 87.01，并可在 40+ 页文档上保持稳定推理。

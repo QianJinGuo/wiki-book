@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 31.2KB | `entities/harness-engineering-paradigm-comprehensive-2026.md`
 
-# Harness Engineering 综合论述：为什么 2026 年真正重要的是它
+## Harness Engineering 综合论述：为什么 2026 年真正重要的是它
 
 2026 年是 Harness Engineering 概念从「Claude Code 内部实践」走向「全行业共识」的关键一年。Rahul Patil（Google）和 AI 技术立文分别在 5-6 月发布了两篇系统化论述，把 Harness Engineering 从「Anthropic 一家之言」推到了「2026 必备工程范式」的位置。 本文综合两文，结合 [Agent Harness 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture.md) 给出 2026 视角下的 Harness Engineering 完整图景。
 
@@ -173,7 +173,7 @@ harness 不会「**一次到位**」——它在生产中会不断暴露问题�
 
 ---
 
-# 第 3 来源补充：ECC（affaan-m/everything-claude-code）— Harness 操作系统的开源实现案例
+## 第 3 来源补充：ECC（affaan-m/everything-claude-code）— Harness 操作系统的开源实现案例
 
 > VibeCoder / Vibe编码 2026-06-16 对 affaan-m/ECC 仓库的源码深度分析。如果说第 1/2 来源建立了"Harness = LLM 时代的操作系统"的概念框架，这一篇给出了**真实可用的开源实现案例**——一个完整的 Harness OS 怎么组织、怎么工作、怎么落地。
 

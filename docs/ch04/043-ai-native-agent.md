@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐ | 14.4KB | `entities/ai-native-team-collaboration-knowledge-base-agent-human-taobao-2026.md`
 
-# AI Native 团队协同：知识底座＋Agent＋人三层闭环
-
 ## 摘要
 
 天猫技术团队（书牧）从"单点提效遍地、全局增量不见"的困境出发，提出 AI 提效的真正瓶颈是**协同**而非单点产能，核心论断是：AI 时代生产侧的**串联者从人换成 Agent**——这是"AI Native"与"AI 辅助"的分水岭。在此基础上给出 AI Native 团队的理想形态：以完整业务单元为边界的"知识底座＋Agent＋人"三层闭环，并论证**软件是被固化的知识**（TBox/ABox 本体论视角），实现该形态的关键瓶颈不是协同工具（方向已清楚）而是**存量业务的知识底座**（构建方法难、知识在人脑、底座自治存活三坎）。

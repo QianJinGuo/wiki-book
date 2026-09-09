@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐ | 7.9KB | `entities/flow2spec-structured-knowledge-routing-ctrip-2026.md`
 
-# Flow2Spec：开发过程自然长出知识图谱的 Agent 工程框架
-
 携程（Lands）开源的 Flow2Spec 是一个让项目在开发过程中自然长出知识图谱的 Agent 工程框架。核心设计：知识库不是一个大文档而是一套路由协议，Agent 通过 manifest→matcher→topic→dependencies→docs 的渐进式路径获取精确上下文，每次开发产生的新知识通过 f2s-kb-distill/f2s-kb-sync 反哺回知识库，形成知识演进闭环。
 
 ## 核心洞察

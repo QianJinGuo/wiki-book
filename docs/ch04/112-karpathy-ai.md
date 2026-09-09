@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 13.4KB | `entities/karpathy-vibe-engineering-silicon-era-jiangtao.md`
 
-# 连Karpathy都开始恐慌：AI正在重新定义「程序员」｜硅基时间
-
 ## 核心结论
 
 - 分水岭：从「写代码」到「证明代码有效」——决定被AI放大还是替代

@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 5.8KB | `entities/steipete-skill-cleaner-liangzide.md`
 
-# 龙虾之父教你省钱：开源Skill给你的Skill减肥
-
 > **来源**：量子位（2026-05-26）| 原文存档：[原文存档](https://mp.weixin.qq.com/s/l-6ub0r8g0ppKXSv-VD4QQ)
 
 ## 深度分析

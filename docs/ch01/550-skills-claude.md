@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 8.9KB | `entities/claude-code-skills-workflow-encapsulation-costa-long.md`
 
-# Skills：让 Claude 记住「怎么做」，告别重复教学
-
 → [原文存档](https://mp.weixin.qq.com/s/pHMLeSJkm1wZrozM0HpuTQ)
 
 ## 摘要

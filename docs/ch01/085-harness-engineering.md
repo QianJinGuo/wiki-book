@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 5.4KB | `entities/harness-engineering-core-patterns-claude-code.md`
 
-# 深入浅出 Harness Engineering 之核心模式与理念
-
 > 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.85**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/harness-engineering-core-patterns-claude-code.md`，一手来源仍见下方 sources。
 

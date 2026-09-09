@@ -4,7 +4,7 @@
 
 > -> [原文存档](https://mp.weixin.qq.com/s/BdisI0FZqLqEwyWnIQhzuQ)
 
-# Laser — 隐式视觉推理（ACL 2026）
+## Laser — 隐式视觉推理（ACL 2026）
 **来源：** 新智元（微信）
 **论文：** Forest Before Trees: Latent Superposition for Efficient Visual Reasoning
 **机构：** MBZUAI + 复旦大学 + 中国人民大学 + 哈佛大学

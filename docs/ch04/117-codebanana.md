@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 12.5KB | `entities/super-individual-to-super-organization-tencent-research-2026.md`
 
-# 超级个体到超级组织：李志飞 CodeBanana 组织转型实践
-
 腾讯研究院「AI 跃迁者调研」第五期访谈出门问问创始人兼 CEO 李志飞。他从 2025 年端午节用 Cursor 三天写出近 20 万行代码（「AI 版飞书」原型）出发，经历「个人产能爆棚 → 组织完全跟不上」的痛苦，用近一年时间推动组织转型，自研 CodeBanana 作为组织操作系统。本文提炼了超级个体天花板、CodeBanana 架构、全栈转型铁律、系统设计师角色、延迟满足感等核心洞察。
 
 ## 核心洞察

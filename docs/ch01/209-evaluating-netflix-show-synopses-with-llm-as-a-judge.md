@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 14.8KB | `entities/evaluating-netflix-show-synopses-with-llm-as-a-judge.md`
 
-# Evaluating Netflix Show Synopses with LLM-as-a-Judge
-
 > **Source**: [原文存档](https://netflixtechblog.com/evaluating-netflix-show-synopses-with-llm-as-a-judge-6269251e6f28?source=rss----2615bd06b42e---4)
 
 ## 核心内容
@@ -18,8 +16,6 @@ feed_name: Netflix Tech Blog
 source_published: 2026-04-10
 
 ---
-
-# Evaluating Netflix Show Synopses with LLM-as-a-Judge
 
 by [Gabriela Alessio](<https://www.linkedin.com/in/gabrielaalessio/>), [Cameron Taylor](<https://www.linkedin.com/in/cameronntaylor/>), and [Cameron R. Wolfe](<https://www.linkedin.com/in/cwolferesearch/>)
 

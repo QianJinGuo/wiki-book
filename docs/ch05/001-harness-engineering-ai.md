@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐ | 7.1KB | `entities/kuaishou-harness-engineering-ecommerce-delivery-pipeline-2026.md`
 
-# Harness Engineering：快手电商用 AI 流水线重塑研发范式
+## Harness Engineering：快手电商用 AI 流水线重塑研发范式
 
 > **来源**：快手技术（快手电商商家和运营赋能中心技术团队），2026-09-03。
 > **核心命题**：AI 提效「冰火两重天」的结构性根因是**停留在工具使用而非流程重构**。快手电商 B&M 端系统（6+ 角色、20+ 业务域、小几百服务）用一条「需求全生命周期自动化交付流水线」+「open-door/close-door 对抗式设计」+「领域知识库」+「组织演进」，回答企业级复杂系统怎么让需求交付 7x24 自动跑起来。

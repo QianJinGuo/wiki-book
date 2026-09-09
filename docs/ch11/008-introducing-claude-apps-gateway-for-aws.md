@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 7.2KB | `entities/introducing-claude-apps-gateway-for-aws.md`
 
-# Introducing Claude apps gateway for AWS
-
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/introducing-claude-apps-gateway-for-aws)
 
 Enterprises deploying Claude Code and Claude Desktop across development teams need centralized control over access, cost, and policy. At scale, this is hard to manage: each developer needs an individual credential, settings must be distributed manually, and spend is difficult to track or cap. Without a centralized control point, governance is left to whatever tooling each team can implement independently.

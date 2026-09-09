@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 8.8KB | `entities/agentloop-eval-golden-metrics-rubric-mayunlei-aliyun-2026-09-01.md`
 
-# 评估：从黄金指标到 Rubric丨AgentLoop 数据飞轮实践（三）
-
 AgentLoop 数据飞轮实践系列 · 第 3 篇 / 共 5 篇。上一篇：数据飞轮的起点：四种方式把 Agent 连进 AgentLoop丨AgentLoop 数据飞轮实践（二）/ 下一篇：实验 —— 回测与离线实验平台
 
 → [原文存档](https://mp.weixin.qq.com/s/24kNuxyEd5X8CuqztYxtbw)

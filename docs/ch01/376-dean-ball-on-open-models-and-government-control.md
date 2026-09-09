@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 6.0KB | `entities/dean-ball-on-open-models-and-government-control.md`
 
-# Dean Ball on open models and government control
-
 ## 摘要
 
 Dean Ball 是 AI 治理领域的重要思想家，其博客 *Hyperdimensional* 长期关注前沿实验室作为新型制度的崛起、AI 作为治理技术的双重性，以及内部治理在未来 AI 政策中的核心地位。2026 年 7 月，Ball 宣布加入 OpenAI 担任新设立的 **Head of Strategic Futures** 职位，标志着外部政策观察者"进入内部"推动 AI 治理的标志性事件。

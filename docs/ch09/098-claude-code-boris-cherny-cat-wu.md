@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 26.5KB | `entities/claude-code-first-year-retrospective-boris-cat-2026.md`
 
-# Claude Code 一周年回顾：Boris Cherny + Cat Wu 的完整时间线
-
 ## 摘要
 
 2025 年 2 月，Claude Code 以 Claude 3.7 Sonnet 的附属 CLI 工具身份在 Slack 内部演示，只收到两个赞。2026 年 6 月一周年时，Claude Code 已经从一个终端对话工具演变为 AI 编程基础设施——PM 在写代码、工程师在手机上写代码、Agent 在自动修 bug。由 Boris Cherny（技术负责人）和 Cat Wu（产品负责人）共同录制的回顾视频，系统复盘了从 Research Preview 到 AI 编程平台的完整一年演进路径，涵盖 10 个核心章节：起点与验证机制的设计、Routines 和 Auto Mode 的工程哲学、Loop 和手机编程的认知跃迁、Context 极简主义的实践智慧，以及 2026 年 3 月源码泄露风波的完整内幕。这份回顾不仅是一份产品总结，更是一部关于 AI 原生产品开发的实战教科书。

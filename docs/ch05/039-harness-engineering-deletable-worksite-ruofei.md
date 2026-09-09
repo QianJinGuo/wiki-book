@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 7.8KB | `entities/harness-engineering-deletable-worksite-ruofei.md`
 
-# Harness Engineering Deletable Worksite Ruofei
-
 → [原文存档](https://mp.weixin.qq.com/s/y1pIKtBFr5BrN3f7VOypWw)
 
 ## 摘要

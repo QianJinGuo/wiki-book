@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 7.2KB | `entities/fine-tune-amazon-nova-models-for-accurate-email-data-extract.md`
 
-# 微调 Amazon Nova 模型实现精准邮件数据提取
-
 > 原文存档：[原文存档](https://aws.amazon.com/blogs/machine-learning/fine-tune-amazon-nova-models-for-accurate-email-data-extraction)
 
 ## 摘要

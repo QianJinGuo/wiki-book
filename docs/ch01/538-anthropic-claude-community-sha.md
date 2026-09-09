@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 13.2KB | `entities/repo-jacking-anthropics-claude-community-plugins.md`
 
-# Anthropic Claude Community 插件仓库劫持事件：SHA 校验如何避免供应链攻击
-
 > 原文存档：[原文存档](https://johnstawinski.com/2026/06/18/repo-jacking-anthropics-claude-community-plugins-and-the-shas-that-saved-them/)
 
 ## 摘要

@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 10.3KB | `entities/the-new-ai-lock-in.md`
 
-# The new AI lock-in
-
 → [原文存档](https://www.infoworld.com/article/4171983/the-new-ai-lock-in.html)
 
 ## 摘要

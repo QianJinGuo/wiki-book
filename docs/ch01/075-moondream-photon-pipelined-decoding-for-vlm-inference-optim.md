@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 5.7KB | `entities/moondream-photon-pipelined-decoding-gpu-bubble.md`
 
-# Moondream Photon: Pipelined Decoding for VLM Inference Optimization
-
 Moondream 的 Photon 推理引擎通过 **pipelined decoding** 技术消除 GPU bubble（GPU 空转），在 NVIDIA B200 上实现 VLM 推理约 33ms 延迟，decode 吞吐提升高达 35%。这项技术的核心洞察是：当 GPU 等待 CPU 完成 token 提交/规划/启动工作（housekeeping）时，GPU 处于空闲状态，这就是 GPU bubble。Photon 通过重叠 CPU 和 GPU 工作来消除这个气泡。
 
 ## GPU Bubble 的根因

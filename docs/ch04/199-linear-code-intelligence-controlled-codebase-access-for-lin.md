@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 7.9KB | `entities/2026-05-14-code-intelligence-1778979927.md`
 
-# Linear Code Intelligence: Controlled Codebase Access for Linear Agent
-
 → [原文存档](https://linear.app/changelog/2026-05-14-code-intelligence)
 
 ## 摘要

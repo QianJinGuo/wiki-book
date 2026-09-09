@@ -2,7 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 7.5KB | `entities/architecture-data-foundations-for-ai-powered-search.md`
 
-# Architecture & data foundations for AI-powered Search
 ## 摘要
 Algolia 这份技术白皮书勾勒了一套面向生产环境的 AI 驱动搜索完整架构蓝图。它覆盖了从数据摄取、丰富化、混合索引、检索、推荐到 RAG 接口的全栈流水线，并深入探讨了使这些系统在真实世界中可靠运行所需的治理、可观测性和成本控制机制。核心论点是：AI 搜索不是简单的"向量 + LLM"拼接，而是一个需要端到端数据工程支撑的复杂系统。
 ## 核心要点

@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 16.3KB | `entities/ai-infra-math-foundations-rmsnorm-softmax-causal-mask-sampling-binnnliu-2026-06-17.md`
 
-# AI Infra 入门：RMSNorm、Softmax、Causal Mask、Sampling 的数学与底层优化
-
 ## 摘要
 
 腾讯工程师 binnnliu 的 AI Infra 入门系列第二篇，从数学第一性原理出发，拆解大模型推理中四个核心操作（RMSNorm、Softmax、Causal Mask、Sampling）背后的数学本质与 Infra 优化逻辑。核心论点：Infra 优化的本质，是用数学等价变换或精度适度妥协，换取更高的硬件利用率和极致推理速度。文章涵盖方差→标准差→Z-score→LayerNorm→RMSNorm 的完整数学推导链、Softmax 的 Safe/Online/FlashAttention 演进、Gumbel-Max Trick 的采样统一，以及 FlashAttention v1→v4 的架构进化全景。

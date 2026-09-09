@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐ | 4.6KB | `entities/introducing-mdn-mcp-server-2026.md`
 
-# Introducing the MDN MCP server
-
 > Source: [MDN Blog 原文](https://developer.mozilla.org/en-US/blog/introducing-mdn-mcp-server/)
 
 ## 三个独有贡献（不应合并到现有 entity）

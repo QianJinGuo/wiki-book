@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 10.3KB | `entities/tmall-ai-assistant-scheduler-refactor-ai-coding-engineering-2026.md`
 
-# 天猫AI助手调度框架重构与AI Coding工程化
-
 → [原文存档](https://mp.weixin.qq.com/s/fhcbG2_IyDq-QuH_dBHT-g)
 
 ## 摘要

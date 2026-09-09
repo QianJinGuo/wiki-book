@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 4.6KB | `entities/skillos-learning-skill-curation-for-self-evolving-agents.md`
 
-# SkillOS: Learning Skill Curation for Self-Evolving Agents
-
 > 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.78**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/skillos-learning-skill-curation-for-self-evolving-agents.md`，一手来源仍见下方 sources。
 

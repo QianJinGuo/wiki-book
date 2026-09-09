@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 18.0KB | `entities/anthropic-claude-cowork-task-boundary-5-signals-6-stages.md`
 
-# Anthropic Claude Cowork 知识工作 Agent 任务边界
+## Anthropic Claude Cowork 知识工作 Agent 任务边界
 
 ## 核心定位：任务边界 > 模型能力
 

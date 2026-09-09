@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 18.5KB | `entities/750b-moe-pd-disaggregation-aws-efa-vs-roce.md`
 
-# 750B MoE PD 分离推理：AWS EFA vs 自建 RoCE 通信架构实战对比
-
 ## 概述
 
 AWS China Blog 2026-06-12 发布的工程实战案例：将 750B GLM-5.1-FP8（256 Expert, top-k=8）MoE 模型的 PD 分离推理（2 Prefill + 2 Decode 节点，每节点 8×H200 GPU）从客户自建 ConnectX+RoCE 集群迁移到 AWS P5en+EFA，**在相同模型/架构/负载下系统对比两种高性能网络的设计哲学与端到端性能差异**。

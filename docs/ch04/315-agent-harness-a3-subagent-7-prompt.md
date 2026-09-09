@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 10.0KB | `entities/agent-harness-comparison-a3-subagent-2026-06-10.md`
 
-# Agent Harness 实现对比 A3：SubAgent（7 框架 Prompt 双语对照）
-
 ## 摘要
 
 Agent Harness 实现对比系列第三篇，聚焦 SubAgent 功能。覆盖 Claude Code（4 种模式）、Codex（Collab/MultiAgentV2/Agent Jobs）、OpenAI Agents SDK（Agent As Tool + Handoff）、OpenCode、Kimi Code（Agent As Tool + AgentSwarm）、OpenClaw、Hermes Agent（delegate_task + Kanban + MoA）共 7 个框架。全篇采用 Prompt 双语对照 + 评论的方式，是 SubAgent 实现差异的系统性参考。

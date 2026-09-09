@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 8.5KB | `entities/latest-open-artifacts-22-zyphra-cohere-and-poolside-are-expa.md`
 
-# 开放模型生态快报 #22：Zyphra、Cohere、Poolside 扩张开放模型版图
-
 > 原文存档：[原文存档](https://www.interconnects.ai/p/artifacts-22-zyphra-cohere-and-poolside)
 
 ## 摘要

@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 7.5KB | `entities/how-dev-productivity.md`
 
-# How To Measure Development Productivity?
-
 > **来源**: [How To Measure Development Productivity?](https://itamargilad.com/how-dev-productivity/)
 
 Last week I published this cartoon on LinkedIn. It went instantly viral:

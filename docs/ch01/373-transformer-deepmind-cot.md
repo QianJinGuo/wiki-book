@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 6.3KB | `entities/topological-trouble-transformers-state-tracking-deepmind-2026-06-17.md`
 
-# Transformer 的拓扑麻烦：DeepMind 论证状态追踪是架构性缺陷，CoT 只是补丁
-
 ## 摘要
 
 DeepMind 论文《The Topological Trouble With Transformers》（arXiv:2604.17121）论证：Transformer 架构本身不擅长追踪状态，思维链（CoT）不过是在给这个结构性缺陷打补丁。第一作者 Michael C. Mozer 是 1991 年就研究 RNN 梯度消失的资深研究者。论文用猜数字游戏和 bank 歧义测试展示了 Gemini 3 的状态追踪失效，通过 Patchscopes 工具揭示根因：状态更新结果埋得太深，后续浅层处理无法访问。核心主张：将研究重心从"外显思维链"转向"隐式激活动态"，即用循环架构替代纯前馈结构。

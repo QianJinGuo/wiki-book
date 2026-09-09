@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐ | 4.2KB | `entities/moonbit-agent-oriented-language-formal-verification-wasm.md`
 
-# MoonBit：面向 Agent 协作的编程语言
+## MoonBit：面向 Agent 协作的编程语言
 
 > **来源**：机器之心 | [原文存档](https://mp.weixin.qq.com/s/FG_-DEwSw0_ubBE36tMeeA)
 > **语言**：由中国团队开发的编程语言，面向 Agent 协作、快速反馈和工程闭环设计

@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 13.4KB | `entities/openai-models-codex-amazon-bedrock-ga.md`
 
-# OpenAI models and Codex on Amazon Bedrock are now generally available
-
 ## Key takeaways
 
   * GPT-5.5, the most advanced frontier model from OpenAI, is generally available on Amazon Bedrock. Pricing matches OpenAI first-party rates.

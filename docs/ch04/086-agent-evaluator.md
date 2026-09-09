@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐ | 3.8KB | `entities/agent-self-evolution-evaluator-bottleneck.md`
 
-# Agent 自进化评估瓶颈 — 外置 evaluator 是自动自进化的前提条件
-
 > Theo 「Agent 自进化」系列第 4 篇。核心命题：自动自进化的边界不由"模型多聪明"决定，由"分数有多可信"决定。[^1]
 
 ## 核心命题

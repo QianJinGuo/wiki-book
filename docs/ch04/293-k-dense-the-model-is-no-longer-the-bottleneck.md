@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 12.6KB | `entities/k-dense-the-model-is-no-longer-the-bottleneck.md`
 
-# K-Dense — The Model Is No Longer the Bottleneck
-
 > **Source**: [K-Dense AI Blog](https://www.k-dense.ai/blog/the-model-is-no-longer-the-bottleneck) (2026-06, 9.7KB) by K-Dense team. 原始内容存于 `[K Dense The Model Is No Longer The Bottleneck](https://www.k-dense.ai/blog/the-model-is-no-longer-the-bottleneck)`。
 >
 > **核心论点**: 在 GPT-5 / Claude Opus 4.5 / Gemini 2.5 Pro 这代模型之后，**模型能力不再是科学 AI 应用的天花板**。真正的瓶颈是 **agentic workflow 设计** —— 如何让模型在多步推理中保持高质量上下文。

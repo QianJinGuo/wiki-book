@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 7.0KB | `entities/sakana-fugu-livecodebench-93-2.md`
 
-# Sakana Fugu 发布：Claude 禁令后的多 Agent 编排 API，LiveCodeBench 93.2
-
 > 原文存档：[原文存档](https://www.implicator.ai/sakana-fugu-launches-with-93-2-livecodebench-score-after-claude-ban/)
 
 ## 摘要

@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 12.1KB | `entities/nathan-lambert-open-models-bets-2026.md`
 
-# Nathan Lambert's Mid-2026 Open Models Bets
-
 > **Core insight**: 闭源模型的"能力差距"在 2025 下半年至今**没有按训练算力差距比例扩大** — 开放权重阵营在标准 benchmark 上保持紧密追赶。但 RL 主导训练 + 真实使用反馈 + 经济持续能力将决定下一阶段分化。
 
 ## Nathan Lambert 的 13 个可证伪预测（2026 春季）

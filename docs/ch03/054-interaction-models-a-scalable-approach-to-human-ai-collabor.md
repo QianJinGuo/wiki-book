@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 7.4KB | `entities/interaction-models.md`
 
-# Interaction Models: 从回合制到实时协作的人机交互范式转变
+## Interaction Models: 从回合制到实时协作的人机交互范式转变
 
 > -> [原文存档](https://thinkingmachines.ai/blog/interaction-models/)
 

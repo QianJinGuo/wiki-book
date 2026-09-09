@@ -4,7 +4,6 @@
 
 [Minimax Agent Team Mavis Owner Worker Verifier](https://mp.weixin.qq.com/s/TIL7o92f71DsPPLWT4_37A)
 
-# 一个 AI 还是不够的：MiniMax Agent Team（Mavis）
 **作者**：MiniMax 稀宇科技
 **平台**：微信
 **原始链接**：https://mp.weixin.qq.com/s/TIL7o92f71DsPPLWT4_37A

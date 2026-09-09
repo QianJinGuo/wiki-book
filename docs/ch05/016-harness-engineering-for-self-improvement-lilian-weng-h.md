@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 8.7KB | `entities/harness-engineering-self-improvement-survey-lilian-weng.md`
 
-# Harness Engineering for Self-Improvement — 翁荔系统梳理 Harness 自我提升研究全景
+## Harness Engineering for Self-Improvement — 翁荔系统梳理 Harness 自我提升研究全景
 
 > Lilian Weng (翁荔) 博客最新文章，系统梳理了 Harness 工程在递归式自我提升（RSI）方向的研究全景，从 ACE、MCE、Meta-Harness 到 Self-Harness、Darwin Gödel Machine、SIA，涵盖 35+ 篇论文参考文献。[^1]
 

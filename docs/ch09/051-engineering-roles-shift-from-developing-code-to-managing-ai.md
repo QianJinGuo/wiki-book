@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 7.6KB | `entities/820297.md`
 
-# Engineering roles shift from developing code to managing AI | CIO Dive
-
 ## 相关实体
 
 - [scaling archunit with nebula archrules](https://github.com/QianJinGuo/wiki-public/blob/main/entities/scaling-archunit-with-nebula-archrules.md)

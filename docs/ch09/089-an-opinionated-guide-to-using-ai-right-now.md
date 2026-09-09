@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 8.7KB | `entities/an-opinionated-guide-to-using-ai-right-now.md`
 
-# An Opinionated Guide to Using AI Right Now
-
 ## 摘要
 
 Ethan Mollick 基于 OpenAI 发布的实际使用数据，撰写了一份面向普通用户的 AI 使用指南。文章覆盖了模型选择、付费策略、模型类型区分、Deep Research、多模态输入、内容生成等关键维度，核心观点是：**约 10% 的人类每周使用 AI，但大多数人仍未找到正确的使用方式**。指南的核心建议是：选择一个你喜欢的系统，从真正重要的事情开始，然后通过实验建立直觉。

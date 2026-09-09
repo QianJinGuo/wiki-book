@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 11.7KB | `entities/rag-vs-agentic-retrieval-deep-dive-yunduojun-datastudio-2026-09-01.md`
 
-# 向量数据库已死，Claude Code、Cursor 为什么集体抛弃 RAG？
-
 2025 年 5 月，Anthropic 把向量搜索从 Claude Code 里整条拿掉，改用一个 grep 命令，结果全面胜出、优势大到连作者本人都意外。一年后，Cursor、Windsurf、Cline、Devin、Sourcegraph Amp 相继弃用向量、改走工具驱动检索，向量数据库从「默认选项」降级成了「备选项」。本文系统梳理了 RAG 与 agentic 检索在架构上的根本差异、各自何时胜出、五种实现变体，以及 2026 年生产团队的默认决策表。
 
 → [原文存档](https://mp.weixin.qq.com/s/kFtO6xsG09FX0-4pcm8XKg)

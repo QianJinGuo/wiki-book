@@ -4,8 +4,6 @@
 
 > -> [原文存档](https://mp.weixin.qq.com/s/iaNkbO9BfCqxaBk5b1kF-w)
 
-# AgentScope Builder 快速体验：用 Harness 框架快速构建企业自进化智能体
-
 ## 背景：Claw 的边界
 
 AgentScope Claw（MinQwenPaw）是 Harness 框架在「单人本机」场景的完整落地。但把它放到团队场景时，会遇到五个核心问题：

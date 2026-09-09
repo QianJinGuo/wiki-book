@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐ | 3.4KB | `entities/roman-linkedin-backdoor-supply-chain.md`
 
-# A backdoor in a LinkedIn job offer
-
 > Source: [原文存档](https://roman.pt/posts/linkedin-backdoor/)
 
 ## 核心要点

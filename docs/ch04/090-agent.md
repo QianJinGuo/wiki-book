@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 3.0KB | `entities/ai-xiaolaoliu-business-agent-augmentation-layer-general-base-20260606.md`
 
-# Ai Xiaolaoliu Business Agent Augmentation Layer General Base 20260606
+## Ai Xiaolaoliu Business Agent Augmentation Layer General Base 20260606
 
 → [原文存档](https://mp.weixin.qq.com/s/qysRL9BeSLt_Zpmu889xeA)
 

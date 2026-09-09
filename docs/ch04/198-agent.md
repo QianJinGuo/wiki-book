@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 7.9KB | `entities/agent-orchestration-multi-agent-systems.md`
 
-# 多 Agent 编排系统
-
 ## 摘要
 
 把多个专门 Agent 接入网络并不会自动带来可靠协作：缺少编排层的 Agent 网络会在可预测的方式下失败——步骤之间状态丢失、关键决策无人签核、单个 Agent 宕机引发静默级联故障，根因都是缺少管理执行、状态与审批门（approval gates）的控制面。AWS 的 Agent Orchestration Workshop 展示了用 Step Functions、Bedrock Agents、MWAA 与人工审批工作流构建这一控制面的技术路径。

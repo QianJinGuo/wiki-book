@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 9.0KB | `entities/latest-open-artifacts-21-open-model-bonanza-gemma-4-deepseek.md`
 
-# Latest open artifacts (#21): Open model bonanza! Gemma 4, DeepSeek V4, Kimi K2.6, MiMo 2.5, GLM-5.1 & others. On CAISI's V4 assessment.
-
 > 原文存档：[原文存档](https://www.interconnects.ai/p/latest-open-artifacts-21-open-model)
 
 > **Core insight**: CAISI V4 评估使用 IRT（Item Response Theory）方法论对开放模型进行 Elo 评分，但其结果受限于三个 benchmark 的异常值（CTF-Archive-Diamond、PortBench、ARC-AGI-2），且评估 harness（bash+for-loop）与模型实际训练环境（Claude Code/OpenCode）严重不匹配，导致能力对比系统性失真。Interconnects 两位作者对此持不同观点——Florian 认为开放前沿模型与闭源替代品的真实性能差距更小，Nathan 认为差距更大但基准测试同样不完美。

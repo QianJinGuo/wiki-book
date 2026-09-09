@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 8.1KB | `entities/cli-agent-patterns-mcp-shell-agents.md`
 
-# CLI Agent 模式：MCP 与 Shell Agent
-
 ## 摘要
 
 CLI Agent 是以命令行界面为交互载体的智能体形态，其核心在于三层能力栈：MCP 协议提供工具调用的标准化接口，Shell 级进程编排提供对真实计算环境的控制力，管道组合提供可预测、可测试的数据流抽象。Claude Code、Codex CLI 等实践表明，CLI Agent 已成为 Agent 时代人机协作与 Agent-工具协作的主流形态。
