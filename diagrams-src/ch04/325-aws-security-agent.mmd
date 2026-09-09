@@ -1,0 +1,5 @@
+%% title: AWS Security Agent——应用安全闭环
+graph TD
+    S3["三生命周期阶段<br/>设计评审 到 代码审计 到 渗透测试<br/>安全评审从上线后迁到设计时"] ==> SPACE["Agent Space 创建加 GitHub 集成<br/>安全即代码的基建模型"]
+    SPACE ==> DIFF["LLM 推理 vs 传统 SAST<br/>本质差异是上下文感知"]
+    DIFF ==> PATH["渐进式集成是 DevSecOps 最佳实践<br/>托管加自定义要求配置模型"]

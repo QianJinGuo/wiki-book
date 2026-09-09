@@ -1,0 +1,5 @@
+%% title: Genkit Middleware——三层拦截体系
+graph TD
+    ARCH["核心架构: 三层拦截体系"] ==> PRESET["预置中间件<br/>Retry 瞬态弹性 · Fallback 多模型<br/>Tool Approval 人在环<br/>Skills 注入 · Filesystem 沙箱"]
+    PRESET ==> SEMANTIC["组合顺序语义<br/>与传统 Web Middleware 范式对比<br/>跨语言一致性"]
+    SEMANTIC ==> P["生产堆栈建议 · 自定义设计原则<br/>调试可观测 · 安全与性能"]
