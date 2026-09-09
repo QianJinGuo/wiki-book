@@ -1,0 +1,4 @@
+%% title: Zenjoy AIOps Agent——打通 Prometheus ES 与夜莺
+graph TD
+    DECOUPLE["算法与 LLM 职责解耦<br/>确定性计算与不确定性推理分离<br/>算法确认异常后 LLM 才介入"] ==> WINDOWS["多窗口分层分析<br/>1h 尖峰 Z-Score<br/>24h 48h 趋势双确认 · 7d 基线 IQR"]
+    WINDOWS ==> TOKEN["Token 治理与幻觉防护<br/>50KB 时序压缩为 1KB 结构化摘要<br/>强制给出具体 Pod 名"]
