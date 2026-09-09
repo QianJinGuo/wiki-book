@@ -1,0 +1,1667 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="From probabilistic models to reliable systems: a field manual on agent engineering for senior engineers (English edition)">
+      
+      
+      
+      
+        <link rel="prev" href="../ch01-generation-to-delivery/">
+      
+      
+        <link rel="next" href="../ch03-agent-loop-anatomy/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Chapter 2 The Model's Boundary: Why Engineering Is Not Optional - Agent Engineering: Harness, Loop, Graph</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chapter-2-the-models-boundary-why-engineering-is-not-optional" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Agent Engineering: Harness, Loop, Graph" class="md-header__button md-logo" aria-label="Agent Engineering: Harness, Loop, Graph" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 2h6v2h8V2h6v6h-2v8h2v6h-6v-2H8v2H2v-6h2V8H2zm14 6V6H8v2H6v8h2v2h8v-2h2V8zM4 4v2h2V4zm14 0v2h2V4zM4 18v2h2v-2zm14 0v2h2v-2z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Agent Engineering: Harness, Loop, Graph
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Chapter 2 The Model's Boundary: Why Engineering Is Not Optional
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/QianJinGuo/wiki-book" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    QianJinGuo/wiki-book
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Agent Engineering: Harness, Loop, Graph" class="md-nav__button md-logo" aria-label="Agent Engineering: Harness, Loop, Graph" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 2h6v2h8V2h6v6h-2v8h2v6h-6v-2H8v2H2v-6h2V8H2zm14 6V6H8v2H6v8h2v2h8v-2h2V8zM4 4v2h2V4zm14 0v2h2V4zM4 18v2h2v-2zm14 0v2h2v-2z"/></svg>
+
+    </a>
+    Agent Engineering: Harness, Loop, Graph
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/QianJinGuo/wiki-book" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    QianJinGuo/wiki-book
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Preface
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part I · Foundations
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part I · Foundations
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch01-generation-to-delivery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 1 From Generation to Delivery: The Birth of Agent Engineering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 2 The Model's Boundary: Why Engineering Is Not Optional
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 2 The Model's Boundary: Why Engineering Is Not Optional
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#21-defect-one-context-rot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Defect one: context rot
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-defect-two-statelessness-and-forgetting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Defect two: statelessness and forgetting
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-defect-three-systematically-optimistic-self-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Defect three: systematically optimistic self-evaluation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-defect-four-the-illusion-of-competence-on-the-users-side" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 Defect four: the illusion of competence — on the user's side
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25-l1l6-what-can-be-delegated" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 L1–L6: what can be delegated
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#26-the-opposing-evidence-progress-erodes-the-harness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6 The opposing evidence: progress erodes the harness
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#27-the-verdict-layered-temporality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7 The verdict: layered temporality
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#28-anti-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.8 Anti-patterns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#29-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.9 Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#210-exercises" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.10 Exercises
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#211-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.11 References
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part II · Loop Engineering
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part II · Loop Engineering
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch03-agent-loop-anatomy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 3 Anatomy of the Agent Loop: The Minimal Cycle and Its Five Organs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch04-verifier-first/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 4 Verifier First: The Loop's Quality Ceiling Is Set by Its Checker
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch05-sustained-loops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 5 Sustained Loops: Outer Loops, Budgets, and the Orchestration Tax
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part III · Harness Engineering
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part III · Harness Engineering
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch06-harness-five-layers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 6 The Harness, surveyed: Five Layers and the Minimum Viable Harness
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch07-context-engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 7 Context Engineering: Designing the Supply Chain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch08-tools-permissions-guardrails/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 8 Tools, Permissions, and Guardrails: Enabling the Agent — and Preventing It
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch09-state-and-memory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 9 State and Memory: Building a System That Does Not Forget
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part IV · Graph Engineering
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part IV · Graph Engineering
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch10-loop-to-graph/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 10 From Loop to Graph: State Machines and Orchestration Engines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch11-multi-agent-orchestration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 11 Multi-Agent Orchestration: Topologies, Protocols, Isolation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part V · Production & Governance
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part V · Production & Governance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch12-evaluation-observability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 12 Evaluation and Observability: From Vibes to Evidence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch13-decay-sovereignty-future/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 13 Decay, Sovereignty, and the Engineer's Next Seat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendices
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Appendices
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../appendix-a-glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix A Glossary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../appendix-b-checklists/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix B Checklist Compendium
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../appendix-c-references/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix C References
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#21-defect-one-context-rot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Defect one: context rot
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-defect-two-statelessness-and-forgetting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Defect two: statelessness and forgetting
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-defect-three-systematically-optimistic-self-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Defect three: systematically optimistic self-evaluation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-defect-four-the-illusion-of-competence-on-the-users-side" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 Defect four: the illusion of competence — on the user's side
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25-l1l6-what-can-be-delegated" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 L1–L6: what can be delegated
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#26-the-opposing-evidence-progress-erodes-the-harness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6 The opposing evidence: progress erodes the harness
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#27-the-verdict-layered-temporality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7 The verdict: layered temporality
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#28-anti-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.8 Anti-patterns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#29-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.9 Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#210-exercises" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.10 Exercises
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#211-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.11 References
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="chapter-2-the-models-boundary-why-engineering-is-not-optional">Chapter 2 The Model's Boundary: Why Engineering Is Not Optional<a class="headerlink" href="#chapter-2-the-models-boundary-why-engineering-is-not-optional" title="Permanent link">&para;</a></h1>
+<div class="admonition abstract">
+<p class="admonition-title">Learning objectives</p>
+<ul>
+<li>Know the model's four systemic weaknesses and their engineering consequences: context rot, positional forgetting, optimistic self-evaluation, and the illusion of competence;</li>
+<li>Use the L1–L6 task ladder to decide what can be delegated;</li>
+<li>Face the opposing evidence honestly: model progress does erode some harness artifacts — and adopt the "layered temporality" verdict framework.</li>
+</ul>
+</div>
+<p>Engineering is not optional — but it must be scoped with evidence. This chapter clears the ground from both sides: first the model's systemic weaknesses (the demand side for harness), then the erosion caused by model progress (the boundary conditions for harness engineering). All evidence is from front-line practice and public research, not polemic.</p>
+<h2 id="21-defect-one-context-rot">2.1 Defect one: context rot<a class="headerlink" href="#21-defect-one-context-rot" title="Permanent link">&para;</a></h2>
+<p><strong>Fact</strong>: Production logs show agent decision quality degrading sharply once context-window fill passes roughly 40% — the so-called One-shot Syndrome (<code>queries/why-agent-poc-fails-production</code>, citing Anthropic's analysis of long-horizon agent failure modes). When irrelevant content dominates the window, decision quality drops systematically regardless of model strength: the signal is diluted. Not a capability problem — a signal-to-noise problem (<code>concepts/harness-engineering-framework</code> calls it Context Rot).</p>
+<p>The classic earlier evidence is Liu et al. 2023, <em>Lost in the Middle</em>: models perform best when key information sits at the beginning or end of a long context, and significantly worse in the middle. A bigger window does not make "the right things are in the window" equal to "the model will use the right things."</p>
+<p><strong>Engineering consequence</strong>: context is not a database; it is an expensive stage — only the roles needed for the current decision belong on it. That leads directly to Chapter 7's layered supply and on-demand loading. The corresponding production practice: cap the resident layer, persist progress to the filesystem rather than the context (Ch 9).</p>
+<h2 id="22-defect-two-statelessness-and-forgetting">2.2 Defect two: statelessness and forgetting<a class="headerlink" href="#22-defect-two-statelessness-and-forgetting" title="Permanent link">&para;</a></h2>
+<p><strong>Fact</strong>: LLMs are stateless; every session starts from zero. Everything outside the context window is gone (one of the three defects in <code>entities/harness-engineering</code>).</p>
+<p><strong>Engineering consequence</strong>: memory must live on disk, not in the context. The model forgets; the repository does not — Git history, progress files, and structured lists are the legitimate carriers of cross-session state (Ch 9). Chapter 4 shows the other face of this defect: an agent rereading its own code, concluding it "looks OK," and stopping (first plausible solution bias), because in-session self-confirmation is not verification.</p>
+<h2 id="23-defect-three-systematically-optimistic-self-evaluation">2.3 Defect three: systematically optimistic self-evaluation<a class="headerlink" href="#23-defect-three-systematically-optimistic-self-evaluation" title="Permanent link">&para;</a></h2>
+<p><strong>Fact</strong>: Anthropic's conclusion — "Agents are incapable of accurately evaluating their own work." Multiple in-vault notes (<code>entities/harness-engineering</code>, <code>concepts/harness-engineering-framework</code>) record the same judgment: models show a systematic positive bias in self-evaluation, defending their output, amplifying successes, minimizing failures. This is an inherent tendency of LLMs, not a quirk of one model.</p>
+<p><strong>Engineering consequence</strong>: generation and evaluation must be separated (Generator-Evaluator) — the core of Chapter 4. The old software engineering rule applies verbatim: whoever wrote the code should not be the one who tests it.</p>
+<h2 id="24-defect-four-the-illusion-of-competence-on-the-users-side">2.4 Defect four: the illusion of competence — on the user's side<a class="headerlink" href="#24-defect-four-the-illusion-of-competence-on-the-users-side" title="Permanent link">&para;</a></h2>
+<p>Model defects infect their users. Two findings worth memorizing:</p>
+<ul>
+<li><strong>METR's 2025 randomized controlled experiment</strong>: experienced open-source developers were ~19% <em>slower</em> with AI tools, while believing they were ~20% <em>faster</em> — a perception-reality gap of ~39 percentage points (<code>topics/agent-harness-deep-dive-qa</code>, citing METR).</li>
+<li><strong>"Muscle atrophy for programming"</strong>: Anthropic's RCT found learners using AI assistance understood a new library ~17% worse than the hand-written group, worst among the most AI-dependent (<code>drafts/karpathy-2026-vibe-to-agentic-engineering</code>). Offloading understanding and debugging means giving up the cognition built through friction.</li>
+</ul>
+<p><strong>Attribution</strong>: Karpathy distinguishes human intelligence from LLMs as <em>animals versus ghosts</em> — animal intelligence comes from continuous interaction with an environment and its consequences; "ghosts" are shaped by human documents, statistical patterns, and reward functions. The engineering value of the metaphor is calibrating collaboration: treat the agent as a motivated colleague and you will reach for the wrong management tools — you cannot urge, incentivize, or shame a ghost. What works is Chapters 6–9: design its environment, constraints, and verification.</p>
+<h2 id="25-l1l6-what-can-be-delegated">2.5 L1–L6: what can be delegated<a class="headerlink" href="#25-l1l6-what-can-be-delegated" title="Permanent link">&para;</a></h2>
+<p>Karpathy's task ladder (<code>drafts/karpathy-2026-vibe-to-agentic-engineering</code>), ordered by <strong>verifiability</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Task profile</th>
+<th>Autonomy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>L1</td>
+<td>Output statically checkable (format, constants, pure functions)</td>
+<td>Fully autonomous</td>
+</tr>
+<tr>
+<td>L2</td>
+<td>Compiles, has a real test suite</td>
+<td>Fully autonomous</td>
+</tr>
+<tr>
+<td>L3</td>
+<td>Verifiable but incompletely (needs spot checks)</td>
+<td>High autonomy + sampling</td>
+</tr>
+<tr>
+<td>L4</td>
+<td>Verification is expensive (cross-system, performance, security)</td>
+<td>Approval gates required</td>
+</tr>
+<tr>
+<td>L5</td>
+<td>Money and identity (payments, auth, deletion)</td>
+<td>Human-led, agent-assisted</td>
+</tr>
+<tr>
+<td>L6</td>
+<td>Legal and ethical accountability</td>
+<td>Human-led and accountable</td>
+</tr>
+</tbody>
+</table>
+<p>The criterion is not "does it look hard" but <strong>can errors be discovered quickly and cheaply</strong>. Well-tested code is L2; "changed payment logic, but the regression suite doesn't cover the FX boundary" is really L5. Chapter 8's permission design and Chapter 12's evaluation design both rest on this table.</p>
+<h2 id="26-the-opposing-evidence-progress-erodes-the-harness">2.6 The opposing evidence: progress erodes the harness<a class="headerlink" href="#26-the-opposing-evidence-progress-erodes-the-harness" title="Permanent link">&para;</a></h2>
+<p>If this chapter only listed defects, the book would be a harness advertisement. The vault's September 2026 adversarial analysis (<code>comparisons/model-capability-vs-harness-engineering</code>, <code>concepts/when-not-to-harness-engineering</code>) records the strongest counter-evidence:</p>
+<ul>
+<li><strong>Generational erosion</strong>: the Opus 4.5→4.6 update made the previous generation's sprint-decomposition machinery a 38% cost <em>saving</em> when removed — scaffolding the last model needed became friction (<code>entities/harness-engineering</code>).</li>
+<li><strong>Negative returns on strong models</strong>: in the Gene-GEP experiment, a stronger model with longer Skill interventions scored 60.1 → 50.7 (−9.4).</li>
+<li><strong>Cheaper deterministic alternatives</strong>: where the task fits, structured APIs are ~45× cheaper than computer-use-style agent stacks — bypass the entire agent layer when you can.</li>
+<li><strong>Artifact half-life</strong>: the vault tracks a "claim half-life"; model generations arrive roughly every ~59 days, so a defense built against today's weakness may be obsolete in two months.</li>
+</ul>
+<p><strong>The pro side is equally hard</strong>: the MirrorCode long-horizon benchmark shows a 14-hour agent run completing work that takes humans 2–17 weeks — but that is the compound of "model capability × execution scaffolding"; strip the scaffolding and current models' independent completion rates on long-horizon tasks collapse.</p>
+<h2 id="27-the-verdict-layered-temporality">2.7 The verdict: layered temporality<a class="headerlink" href="#27-the-verdict-layered-temporality" title="Permanent link">&para;</a></h2>
+<p>Put together, the evidence does not yield either-or. It yields <strong>layered temporality</strong> (the conclusion of <code>comparisons/model-capability-vs-harness-engineering</code>, adopted here in falsifiable form):</p>
+<blockquote>
+<p><strong>Model capability determines the necessary total amount of harness (shrinking per generation); harness engineering determines the usable floor for the current generation (rising per generation).</strong></p>
+</blockquote>
+<p>Two wrong postures: constraining this generation's model with last generation's harness (overfitting — the Gene-GEP case); and canceling this generation's harness in anticipation of next generation's model (free-soloing — the long-horizon collapse case). The vault registered three testable predictions; track them yourself:</p>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Supports "harness bears load long-term"</th>
+<th>Supports "models take over fast"</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gap between bare model and harness-agent on long-horizon tasks</td>
+<td>Persists ≥2 model generations</td>
+<td>Closes ≥50% within one generation</td>
+</tr>
+<tr>
+<td>Average lifespan of harness artifacts</td>
+<td>Lengthens with model upgrades</td>
+<td>Shortens</td>
+</tr>
+<tr>
+<td>Harness overhead share on a fixed task</td>
+<td>Share falls while absolute benefit rises</td>
+<td>Absolute benefit falls in step</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Practice</strong>: before building, ask the four questions (Ch 13 and Appendix B) — Does this weakness still exist in the <em>current</em> model? Is there a cheaper deterministic alternative? Does task frequency pay for the maintenance? Is the deletion condition written down?</p>
+<div class="admonition note">
+<p class="admonition-title">Fact / attribution / practice</p>
+<p>The 40% fill rate, METR's 19%/20%, Anthropic's 17%, Gene-GEP's −9.4, the 38% cost, and the 45× cost gap are <strong>facts</strong> as recorded by the cited notes (consult the original studies for final numbers); Context Rot and "muscle atrophy" explanations are <strong>attribution</strong>; L1–L6 is a <strong>practice framework</strong> (Karpathy's decision tool, not natural law).</p>
+</div>
+<h2 id="28-anti-patterns">2.8 Anti-patterns<a class="headerlink" href="#28-anti-patterns" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Arguing today's architecture from yesterday's defects.</strong> Before citing "models hallucinate" to justify triple-redundant checks, reproduce that hallucination on the current model — defect lists have half-lives too.</li>
+<li><strong>Planning today's launch around tomorrow's model.</strong> "Next generation will fix it" is not an engineering decision; the reliability floor can only be built on shipped models.</li>
+<li><strong>Packaging L5/L6 as L2.</strong> "The payment logic has tests" does not make payments autonomous — tests cover the boundaries you imagined; L5 is defined by consequences beyond your verification.</li>
+</ul>
+<h2 id="29-summary">2.9 Summary<a class="headerlink" href="#29-summary" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Four systemic weaknesses: context rot (degradation past ~40% fill), stateless forgetting, optimistic self-evaluation, and the user-side illusion of competence. They define the demand for every harness layer.</li>
+<li>L1–L6 ranks autonomy by <strong>verifiability</strong>, and is the foundation for permission and evaluation design.</li>
+<li>Progress does erode harness artifacts (38%, −9.4, 45×): the right conclusion is layered temporality — the necessary total shrinks per generation; the current floor rises per generation.</li>
+<li>Engineering posture: four questions before building; a deletion condition for every artifact.</li>
+</ul>
+<h2 id="210-exercises">2.10 Exercises<a class="headerlink" href="#210-exercises" title="Permanent link">&para;</a></h2>
+<p><strong>Hands-on</strong></p>
+<ol>
+<li>Label one agent task in your project L1–L6, then compare with the permissions and verification you actually give it. Most teams discover they run an L4 task as if it were L2.</li>
+<li>Reproduce <em>Lost in the Middle</em>: take an 8K-token document, place the key constraint at the beginning, middle, and end, ask the same question three times, and grade the answers.</li>
+</ol>
+<p><strong>Reflective</strong></p>
+<ol>
+<li>Which column of the 2.7 table do you bet on? Write down your reasons and a check date (say, two model generations out) — the "prediction ledger" habit this book wants you to build.</li>
+<li>What measurement reform does METR's "feels 20% faster, is 19% slower" demand in your team? (Ch 12 gives the answer: count review overhead into ROI.)</li>
+</ol>
+<h2 id="211-references">2.11 References<a class="headerlink" href="#211-references" title="Permanent link">&para;</a></h2>
+<ul>
+<li>In-vault: <code>queries/why-agent-poc-fails-production</code> (One-shot Syndrome, 40%); <code>concepts/harness-engineering-framework</code> (Context Rot, Generator-Evaluator, self-eval bias); <code>entities/harness-engineering</code> (three defects, 38%); <code>comparisons/model-capability-vs-harness-engineering</code> (adversarial page, layered temporality); <code>concepts/when-not-to-harness-engineering</code> (four boundary conditions, four questions, Gene-GEP, 45×); <code>drafts/karpathy-2026-vibe-to-agentic-engineering</code> (L1–L6, animals vs ghosts, METR/Anthropic citations); <code>topics/agent-harness-deep-dive-qa</code> (METR numbers).</li>
+<li>Public: Liu et al., <em>Lost in the Middle</em> (TACL 2024, arXiv:2307.03172); METR, <em>Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity</em> (2025); Karpathy interviews on task levels and animals/ghosts (2026, via in-vault notes).</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "navigation.sections", "navigation.top", "navigation.indexes"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -82,6 +82,13 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js
 
 extra:
+  alternate:
+    - name: 中文
+      link: /index.html
+      lang: zh
+    - name: English
+      link: /en/
+      lang: en
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/QianJinGuo/wiki-book
@@ -126,3 +133,4 @@ nav:
     - Ch20 AI 哲学、安全与未来: ch20-ai-philosophy.md
   - 学习路径: PATH.md
   - 参考文献: references.md
+  - English: en/index.md

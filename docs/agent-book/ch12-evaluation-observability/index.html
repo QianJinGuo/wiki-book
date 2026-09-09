@@ -1,0 +1,1659 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="From probabilistic models to reliable systems: a field manual on agent engineering for senior engineers (English edition)">
+      
+      
+      
+      
+        <link rel="prev" href="../ch11-multi-agent-orchestration/">
+      
+      
+        <link rel="next" href="../ch13-decay-sovereignty-future/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Chapter 12 Evaluation and Observability: From Vibes to Evidence - Agent Engineering: Harness, Loop, Graph</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chapter-12-evaluation-and-observability-from-vibes-to-evidence" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Agent Engineering: Harness, Loop, Graph" class="md-header__button md-logo" aria-label="Agent Engineering: Harness, Loop, Graph" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 2h6v2h8V2h6v6h-2v8h2v6h-6v-2H8v2H2v-6h2V8H2zm14 6V6H8v2H6v8h2v2h8v-2h2V8zM4 4v2h2V4zm14 0v2h2V4zM4 18v2h2v-2zm14 0v2h2v-2z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Agent Engineering: Harness, Loop, Graph
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Chapter 12 Evaluation and Observability: From Vibes to Evidence
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/QianJinGuo/wiki-book" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    QianJinGuo/wiki-book
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Agent Engineering: Harness, Loop, Graph" class="md-nav__button md-logo" aria-label="Agent Engineering: Harness, Loop, Graph" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 2h6v2h8V2h6v6h-2v8h2v6h-6v-2H8v2H2v-6h2V8H2zm14 6V6H8v2H6v8h2v2h8v-2h2V8zM4 4v2h2V4zm14 0v2h2V4zM4 18v2h2v-2zm14 0v2h2v-2z"/></svg>
+
+    </a>
+    Agent Engineering: Harness, Loop, Graph
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/QianJinGuo/wiki-book" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    QianJinGuo/wiki-book
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Preface
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part I · Foundations
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part I · Foundations
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch01-generation-to-delivery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 1 From Generation to Delivery: The Birth of Agent Engineering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch02-model-boundary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 2 The Model's Boundary: Why Engineering Is Not Optional
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part II · Loop Engineering
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part II · Loop Engineering
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch03-agent-loop-anatomy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 3 Anatomy of the Agent Loop: The Minimal Cycle and Its Five Organs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch04-verifier-first/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 4 Verifier First: The Loop's Quality Ceiling Is Set by Its Checker
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch05-sustained-loops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 5 Sustained Loops: Outer Loops, Budgets, and the Orchestration Tax
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part III · Harness Engineering
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part III · Harness Engineering
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch06-harness-five-layers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 6 The Harness, surveyed: Five Layers and the Minimum Viable Harness
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch07-context-engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 7 Context Engineering: Designing the Supply Chain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch08-tools-permissions-guardrails/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 8 Tools, Permissions, and Guardrails: Enabling the Agent — and Preventing It
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch09-state-and-memory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 9 State and Memory: Building a System That Does Not Forget
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part IV · Graph Engineering
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part IV · Graph Engineering
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch10-loop-to-graph/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 10 From Loop to Graph: State Machines and Orchestration Engines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch11-multi-agent-orchestration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 11 Multi-Agent Orchestration: Topologies, Protocols, Isolation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part V · Production & Governance
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part V · Production & Governance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 12 Evaluation and Observability: From Vibes to Evidence
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 12 Evaluation and Observability: From Vibes to Evidence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#121-evaluation-mismatch-the-invisible-review-tax" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.1 Evaluation mismatch: the invisible review tax
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#122-what-stands-between-poc-and-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.2 What stands between POC and production
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#123-the-grammar-of-evaluation-passk-and-passk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.3 The grammar of evaluation: Pass@k and Pass^k
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#124-shadow-validation-confidence-stronger-than-unit-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.4 Shadow validation: confidence stronger than unit tests
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#125-the-production-metric-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.5 The production metric stack
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#126-the-poc-production-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.6 The POC → production checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#127-anti-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.7 Anti-patterns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#128-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.8 Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#129-exercises" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.9 Exercises
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1210-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.10 References
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch13-decay-sovereignty-future/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 13 Decay, Sovereignty, and the Engineer's Next Seat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendices
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Appendices
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../appendix-a-glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix A Glossary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../appendix-b-checklists/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix B Checklist Compendium
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../appendix-c-references/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix C References
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#121-evaluation-mismatch-the-invisible-review-tax" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.1 Evaluation mismatch: the invisible review tax
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#122-what-stands-between-poc-and-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.2 What stands between POC and production
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#123-the-grammar-of-evaluation-passk-and-passk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.3 The grammar of evaluation: Pass@k and Pass^k
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#124-shadow-validation-confidence-stronger-than-unit-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.4 Shadow validation: confidence stronger than unit tests
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#125-the-production-metric-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.5 The production metric stack
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#126-the-poc-production-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.6 The POC → production checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#127-anti-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.7 Anti-patterns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#128-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.8 Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#129-exercises" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.9 Exercises
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1210-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.10 References
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="chapter-12-evaluation-and-observability-from-vibes-to-evidence">Chapter 12 Evaluation and Observability: From Vibes to Evidence<a class="headerlink" href="#chapter-12-evaluation-and-observability-from-vibes-to-evidence" title="Permanent link">&para;</a></h1>
+<div class="admonition abstract">
+<p class="admonition-title">Learning objectives</p>
+<ul>
+<li>Understand evaluation mismatch: why "it runs" is not a production metric, and why review overhead belongs in ROI;</li>
+<li>Master Pass@k vs Pass^k and the deterministic-scorer-first principle;</li>
+<li>Build the production metric stack: five categories plus three harness-core metrics;</li>
+<li>Run the POC → production checklist as the final pre-launch audit.</li>
+</ul>
+</div>
+<h2 id="121-evaluation-mismatch-the-invisible-review-tax">12.1 Evaluation mismatch: the invisible review tax<a class="headerlink" href="#121-evaluation-mismatch-the-invisible-review-tax" title="Permanent link">&para;</a></h2>
+<p>Harness-report data exposes a counter-intuitive fact (<code>queries/why-agent-poc-fails-production</code>): <strong>81%</strong> of engineering leaders say a meaningful share of the time saved by AI coding now goes to reviewing AI output; developers spend nearly <strong>a third of their day</strong> on this invisible work. Sharper still: LinearB counts AI-generated PRs rejected at 67.3%, versus 15.6% for human PRs.</p>
+<p><strong>Attribution</strong>: traditional productivity metrics (output volume, cycle time) see code delivery but not review overhead. Teams that raised AI-written share from 25% to 90% watched review costs balloon with it — <strong>the industry's decade-old measurement frameworks were not built for this new unit of work.</strong></p>
+<p>Three reforms: track "engineer time spent reviewing AI output" as a first-class metric; count review overhead in AI's true ROI; tier the automation — which stages may be fully trusted, which must be human-reviewed.</p>
+<h2 id="122-what-stands-between-poc-and-production">12.2 What stands between POC and production<a class="headerlink" href="#122-what-stands-between-poc-and-production" title="Permanent link">&para;</a></h2>
+<p>Chapter 1 named the pattern; here is the full failure map (<code>queries/why-agent-poc-fails-production</code>, six categories):</p>
+<ol>
+<li><strong>No harness system</strong>: the POC had a human watching every step; production is unattended — "any constraint that cannot be machine-verified is not a constraint in agent execution";</li>
+<li><strong>Evaluation mismatch</strong>: the POC measured "does it run," not quality or maintainability;</li>
+<li><strong>Context rot</strong>: the POC ran in one clean session; production is multi-session, long-horizon — degradation past ~40% fill;</li>
+<li><strong>Tool-chain fragility</strong>: the POC tested core interactions; production's RPC timeouts, fallbacks, and transaction boundaries all misbehave — and tacit knowledge ("that config has 85 references") was never written down;</li>
+<li><strong>Team capability gap</strong>: the POC leaned on a few strong individuals; production needs team-level harness maintenance;</li>
+<li><strong>Knowledge never externalized</strong>: the POC's toy scenarios hid the tacit business constraints the agent cannot know.</li>
+</ol>
+<p>The essence: <strong>a POC verifies the capability ceiling; production demands the reliability floor.</strong> Crossing the gap is the whole of Chapters 6–11; this chapter asks: how do you know you have crossed it?</p>
+<h2 id="123-the-grammar-of-evaluation-passk-and-passk">12.3 The grammar of evaluation: Pass@k and Pass^k<a class="headerlink" href="#123-the-grammar-of-evaluation-passk-and-passk" title="Permanent link">&para;</a></h2>
+<p>A pair from <code>topics/multi-agent-systems</code> that belongs in every team's evaluation spec:</p>
+<ul>
+<li><strong>Pass@k</strong>: at least one of k attempts succeeds → measures the <strong>exploration ceiling</strong> ("can it do it");</li>
+<li><strong>Pass^k</strong>: all k attempts succeed → measures the <strong>release-grade consistency</strong> ("does it do it every time").</li>
+</ul>
+<p>POC reports almost always quote Pass@k; production decisions should almost always read Pass^k. The distance between them is the numeric form of the gap in 12.2.</p>
+<p><strong>Scorer priority</strong>: deterministic scorers (tests, compilers, assertions) &gt; model scorers &gt; human scorers. Chapter 4's three evaluator forms become evaluation-infrastructure procurement principles here. A concrete quantified template: AutoResearch's five-dimension weighted score — functional correctness 35%, test sufficiency 25%, code quality 20%, security 10%, performance 10%; ≥ 9.0 to pass.</p>
+<h2 id="124-shadow-validation-confidence-stronger-than-unit-tests">12.4 Shadow validation: confidence stronger than unit tests<a class="headerlink" href="#124-shadow-validation-confidence-stronger-than-unit-tests" title="Permanent link">&para;</a></h2>
+<p>A two-month production system (<code>topics/agent-harness-deep-dive-qa</code>) offers a powerful practice: <strong>shadow validation</strong> — run old and new in parallel, compare 22,792 shadowed calls, observe 99.49% agreement. The source's own claim: this found real-boundary issues that 961 unit tests did not.</p>
+<p>Where it applies: the parallel period before an agent replaces an existing decision path (human process, legacy rules engine). It turns evaluation from sampling into full comparison, at double runtime cost — which makes it a <strong>transition instrument, not a permanent architecture</strong>.</p>
+<h2 id="125-the-production-metric-stack">12.5 The production metric stack<a class="headerlink" href="#125-the-production-metric-stack" title="Permanent link">&para;</a></h2>
+<p>Five categories (<code>topics/agent-harness-deep-dive-qa</code>), noting the last one's special status — <strong>the agent itself should be able to see these</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Example metrics</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Throughput</td>
+<td>time to first PR, time to merge, tasks completed per day</td>
+</tr>
+<tr>
+<td>Quality</td>
+<td>CI pass rate, defect escape rate, rollback frequency</td>
+</tr>
+<tr>
+<td>Human attention</td>
+<td>review minutes per PR, escalations</td>
+</tr>
+<tr>
+<td>Harness health</td>
+<td>documentation-freshness violations, architecture-boundary violations, test flake rate</td>
+</tr>
+<tr>
+<td>Security</td>
+<td>blocked outbound requests, permission denials, secret-scan hits</td>
+</tr>
+</tbody>
+</table>
+<p>At the harness level, three core metrics (<code>entities/harness-engineering</code>):</p>
+<ol>
+<li><strong>Task success rate</strong>: target &gt; 85%;</li>
+<li><strong>Error recurrence rate</strong>: rolling 7-day window, trending to 0 — the direct readout of whether "feed errors to the rule library" is actually running;</li>
+<li><strong>System entropy velocity</strong>: the trend of trace/state size — past a threshold, trigger human review before side effects compound.</li>
+</ol>
+<p><strong>Trace-driven iteration</strong> (LangChain practice): pull traces from LangSmith, run parallel error-analysis agents for attribution, and improve the way ML does boosting — the next round focuses on last round's failures. Evaluation is not a pre-launch exam; it is a standing organ wired into Chapter 6's operating cycle.</p>
+<p>Ruo Fei's four signals give daily monitoring its minimal set (<code>entities/harness-engineering</code> source 8): are tasks done right? is the process getting worse? are old failures returning? are high-risk boundaries being touched?</p>
+<h2 id="126-the-poc-production-checklist">12.6 The POC → production checklist<a class="headerlink" href="#126-the-poc-production-checklist" title="Permanent link">&para;</a></h2>
+<p>From <code>queries/why-agent-poc-fails-production</code>, ten items (condensed to eight here; full version in Appendix B):</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Check</th>
+<th>Pass criterion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Quality gates are programmatically checkable</td>
+<td>"CI passes" decomposed into a decidable boolean, not prose</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Maker and checker are separated</td>
+<td>The reviewer has caught issues the maker missed (proof the separation works)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Layered context loading in place</td>
+<td>Resident/triggered/on-demand layers live; fill ≤ ~40%</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Knowledge externalization started</td>
+<td>Tacit constraints (field types, timeout fallbacks, hot spots) written into specs</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Metrics updated</td>
+<td>Delivery rate and review overhead both tracked</td>
+</tr>
+<tr>
+<td>6</td>
+<td>External-call specs recorded</td>
+<td>RPC/cache/config timeouts, retries, fallbacks in skills</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Audit chain established</td>
+<td>Each requirement has a full change directory (summary/tasks/review)</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Team roles adjusted</td>
+<td>Someone owns harness maintenance</td>
+</tr>
+</tbody>
+</table>
+<h2 id="127-anti-patterns">12.7 Anti-patterns<a class="headerlink" href="#127-anti-patterns" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Reporting Pass@k for production decisions</strong>: exploration ceilings are not reliability floors.</li>
+<li><strong>Testing only happy paths</strong>: an eval set without failures is a self-congratulation ceremony; boosting-style iteration presupposes failures in the set.</li>
+<li><strong>Metrics only for the leadership deck</strong>: metrics the agent cannot see cannot feed its self-correction; route them into context (Ch 7's runtime layer).</li>
+<li><strong>Shadow mode as permanent architecture</strong>: double cost; dismantle when done — write the deletion condition now (Ch 13).</li>
+</ul>
+<h2 id="128-summary">12.8 Summary<a class="headerlink" href="#128-summary" title="Permanent link">&para;</a></h2>
+<ul>
+<li>The truth of evaluation mismatch: review overhead is an invisible tax that must hit the books; AI PR rejection at 67.3% says the quality gate lives outside generation.</li>
+<li>Pass@k for exploration, Pass^k for release; deterministic scorers first; the five-dimension weighted score is a workable template.</li>
+<li>Shadow validation (22,792 comparisons) buys production-grade confidence — as a transition instrument.</li>
+<li>Five metric categories + three core metrics (success &gt;85%, recurrence →0, entropy velocity) + four signals; trace-driven boosting iteration.</li>
+<li>Ten checklist items before launch — the POC proves the ceiling; the checklist proves the floor.</li>
+</ul>
+<h2 id="129-exercises">12.9 Exercises<a class="headerlink" href="#129-exercises" title="Permanent link">&para;</a></h2>
+<p><strong>Hands-on</strong></p>
+<ol>
+<li>Measure both Pass@k and Pass^k for one agent task: run it five times. The gap between the numbers is your system's variance — the levers that shrink it, in order: a better verifier, steadier state recovery, fewer tools.</li>
+<li>Add "error recurrence rate" to your traces: same error class twice within 7 days counts. Two flat weeks means your error→rule pipeline is broken.</li>
+</ol>
+<p><strong>Reflective</strong></p>
+<ol>
+<li>"The agent should see the metrics too" — which ones belong in its context, and doesn't that risk re-committing the too-much-context sin? (Hint: runtime layer + trigger conditions.)</li>
+<li>Does your team measure time spent reviewing AI output? If not, what's the first instrument you would bury in the workflow?</li>
+</ol>
+<h2 id="1210-references">12.10 References<a class="headerlink" href="#1210-references" title="Permanent link">&para;</a></h2>
+<ul>
+<li>In-vault: <code>queries/why-agent-poc-fails-production</code> (six failure categories, 81% and one-third data, ten-item list, LinearB data); <code>topics/multi-agent-systems</code> (Pass@k/Pass^k, scorer priority, AutoResearch five dimensions); <code>topics/agent-harness-deep-dive-qa</code> (five metric categories, shadow 22,792, four-step loop, trace-driven iteration); <code>entities/harness-engineering</code> (three core metrics, four signals).</li>
+<li>Public: LinearB annual engineering-efficiency report (rejection rates, via in-vault notes); the Harness Report (81%, same).</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "navigation.sections", "navigation.top", "navigation.indexes"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

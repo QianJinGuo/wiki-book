@@ -1,0 +1,1603 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="From probabilistic models to reliable systems: a field manual on agent engineering for senior engineers (English edition)">
+      
+      
+      
+      
+        <link rel="prev" href="../ch12-evaluation-observability/">
+      
+      
+        <link rel="next" href="../appendix-a-glossary/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Chapter 13 Decay, Sovereignty, and the Engineer's Next Seat - Agent Engineering: Harness, Loop, Graph</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chapter-13-decay-sovereignty-and-the-engineers-next-seat" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Agent Engineering: Harness, Loop, Graph" class="md-header__button md-logo" aria-label="Agent Engineering: Harness, Loop, Graph" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 2h6v2h8V2h6v6h-2v8h2v6h-6v-2H8v2H2v-6h2V8H2zm14 6V6H8v2H6v8h2v2h8v-2h2V8zM4 4v2h2V4zm14 0v2h2V4zM4 18v2h2v-2zm14 0v2h2v-2z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Agent Engineering: Harness, Loop, Graph
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Chapter 13 Decay, Sovereignty, and the Engineer's Next Seat
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/QianJinGuo/wiki-book" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    QianJinGuo/wiki-book
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Agent Engineering: Harness, Loop, Graph" class="md-nav__button md-logo" aria-label="Agent Engineering: Harness, Loop, Graph" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 2h6v2h8V2h6v6h-2v8h2v6h-6v-2H8v2H2v-6h2V8H2zm14 6V6H8v2H6v8h2v2h8v-2h2V8zM4 4v2h2V4zm14 0v2h2V4zM4 18v2h2v-2zm14 0v2h2v-2z"/></svg>
+
+    </a>
+    Agent Engineering: Harness, Loop, Graph
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/QianJinGuo/wiki-book" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    QianJinGuo/wiki-book
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Preface
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part I · Foundations
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part I · Foundations
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch01-generation-to-delivery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 1 From Generation to Delivery: The Birth of Agent Engineering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch02-model-boundary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 2 The Model's Boundary: Why Engineering Is Not Optional
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part II · Loop Engineering
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part II · Loop Engineering
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch03-agent-loop-anatomy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 3 Anatomy of the Agent Loop: The Minimal Cycle and Its Five Organs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch04-verifier-first/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 4 Verifier First: The Loop's Quality Ceiling Is Set by Its Checker
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch05-sustained-loops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 5 Sustained Loops: Outer Loops, Budgets, and the Orchestration Tax
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part III · Harness Engineering
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part III · Harness Engineering
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch06-harness-five-layers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 6 The Harness, surveyed: Five Layers and the Minimum Viable Harness
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch07-context-engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 7 Context Engineering: Designing the Supply Chain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch08-tools-permissions-guardrails/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 8 Tools, Permissions, and Guardrails: Enabling the Agent — and Preventing It
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch09-state-and-memory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 9 State and Memory: Building a System That Does Not Forget
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part IV · Graph Engineering
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part IV · Graph Engineering
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch10-loop-to-graph/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 10 From Loop to Graph: State Machines and Orchestration Engines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch11-multi-agent-orchestration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 11 Multi-Agent Orchestration: Topologies, Protocols, Isolation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part V · Production & Governance
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part V · Production & Governance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch12-evaluation-observability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 12 Evaluation and Observability: From Vibes to Evidence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 13 Decay, Sovereignty, and the Engineer's Next Seat
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 13 Decay, Sovereignty, and the Engineer's Next Seat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#131-decay-every-harness-component-has-a-shelf-life" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.1 Decay: every harness component has a shelf life
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#132-when-not-to-harness-four-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.2 When NOT to harness: four questions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#133-the-verdict-in-full" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.3 The verdict, in full
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#134-the-sovereignty-line-five-things-that-do-not-disappear" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.4 The sovereignty line: five things that do not disappear
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#135-open-problems-the-honest-edge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.5 Open problems: the honest edge
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#136-closing-design-the-verifier-not-the-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.6 Closing: design the verifier, not the prompt
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#137-exercises" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.7 Exercises
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#138-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.8 References
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendices
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Appendices
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../appendix-a-glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix A Glossary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../appendix-b-checklists/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix B Checklist Compendium
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../appendix-c-references/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix C References
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#131-decay-every-harness-component-has-a-shelf-life" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.1 Decay: every harness component has a shelf life
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#132-when-not-to-harness-four-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.2 When NOT to harness: four questions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#133-the-verdict-in-full" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.3 The verdict, in full
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#134-the-sovereignty-line-five-things-that-do-not-disappear" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.4 The sovereignty line: five things that do not disappear
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#135-open-problems-the-honest-edge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.5 Open problems: the honest edge
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#136-closing-design-the-verifier-not-the-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.6 Closing: design the verifier, not the prompt
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#137-exercises" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.7 Exercises
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#138-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.8 References
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="chapter-13-decay-sovereignty-and-the-engineers-next-seat">Chapter 13 Decay, Sovereignty, and the Engineer's Next Seat<a class="headerlink" href="#chapter-13-decay-sovereignty-and-the-engineers-next-seat" title="Permanent link">&para;</a></h1>
+<div class="admonition abstract">
+<p class="admonition-title">Learning objectives</p>
+<ul>
+<li>Face harness decay squarely: the evidence, the mechanism, and Build to Delete as a design principle;</li>
+<li>Keep the when-NOT-to-harness four questions and component shelf-life checks at hand;</li>
+<li>Understand the sovereignty line: five kinds of work that do not vanish with model progress;</li>
+<li>Form your own position on the engineer's value coordinates in the agent era.</li>
+</ul>
+</div>
+<h2 id="131-decay-every-harness-component-has-a-shelf-life">13.1 Decay: every harness component has a shelf life<a class="headerlink" href="#131-decay-every-harness-component-has-a-shelf-life" title="Permanent link">&para;</a></h2>
+<p>This book argued for the harness all the way through; the last chapter owes you the other side. <strong>A harness is not static configuration — after model upgrades, "old rules obstruct new capabilities."</strong> The vault calls this harness decay (<code>entities/harness-engineering</code>):</p>
+<ul>
+<li>The Opus 4.5 → 4.6 update made the previous generation's sprint-decomposition machinery a drag; removing it <strong>saved 38% in cost</strong>;</li>
+<li>Anthropic built a context-reset mechanism for Sonnet 4.5's "context anxiety"; a stronger model eliminated the behavior itself, and the mechanism became unnecessary — later, over 80% of Claude Code's system prompt was deleted for new models;</li>
+<li>Manus rewrote its harness 5 times in 6 months — in the direction of <em>simplicity</em>; LangChain adjusted 3 times a year; Vercel cut 80% of its tools and got better.</li>
+</ul>
+<p>Hence <strong>Build to Delete</strong> (Ruo Fei's principle, <code>entities/harness-engineering</code> source 4): do not build a harness and then optimize it — <strong>build a harness you can delete.</strong> Every component should be designed for removal from day one, with the system still working after removal. Forcibly removing one component at regular intervals and seeing whether quality holds is decay detection in its most direct form. The harness's true moat is not the complexity you accumulated but <strong>the judgment of what to delete</strong>.</p>
+<p>Component shelf-life checks (run at every model upgrade, <code>queries/harness-minimum-checklist</code>):</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>The assumption it encodes</th>
+<th>How to check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Context reset</td>
+<td>The model suffers long-context anxiety</td>
+<td>Run one round with it off vs on</td>
+</tr>
+<tr>
+<td>Sprint contracts</td>
+<td>The model cannot decompose tasks itself</td>
+<td>Remove; does the generator lose the thread?</td>
+</tr>
+<tr>
+<td>Aggressive compression</td>
+<td>The model is distracted by redundant context</td>
+<td>Loosen compression; does quality rise?</td>
+</tr>
+<tr>
+<td>Tool formatting</td>
+<td>The model cannot handle raw formats</td>
+<td>Raw vs formatted comparison</td>
+</tr>
+</tbody>
+</table>
+<p>Method: <strong>remove one component at a time</strong> and observe. The companion model-migration checklist (tool schema compatibility, citation formats, prompt structure, OOD transcripts, cache clearing, tokenizer changes) is in Appendix B.</p>
+<h2 id="132-when-not-to-harness-four-questions">13.2 When NOT to harness: four questions<a class="headerlink" href="#132-when-not-to-harness-four-questions" title="Permanent link">&para;</a></h2>
+<p><code>concepts/when-not-to-harness-engineering</code> organizes the opposing case into four boundary conditions (two were cited in Ch 2; here is the full set):</p>
+<ol>
+<li><strong>Generational updates actively erode harness value</strong> — artifacts built against today's weaknesses are debt that becomes friction at the next upgrade; without a deletion mechanism, do not start building;</li>
+<li><strong>Intervention can be negative on strong models</strong> — Gene-GEP (−9.4); the decision order: deterministic API → single call → thin loop → heavy harness. The harness is the last gear, not the first;</li>
+<li><strong>When the task isn't worth it, cost never pays back</strong> — one-off scripts and prototype exploration lose their speed to engineering constraints;</li>
+<li><strong>The safety boundary is not in the harness</strong> — sandboxes can be escaped (the NomShub chain); "we run a harness" is not a security conclusion.</li>
+</ol>
+<p>Distilled into the four questions before building (Appendix B):</p>
+<blockquote>
+<p>① Does this weakness still exist in the <strong>current</strong> model? ② Is there a cheaper deterministic alternative? ③ Does task recurrence pay for maintenance? ④ Is the deletion condition written?</p>
+</blockquote>
+<p>If you cannot answer any one of them, do not build yet.</p>
+<h2 id="133-the-verdict-in-full">13.3 The verdict, in full<a class="headerlink" href="#133-the-verdict-in-full" title="Permanent link">&para;</a></h2>
+<p>Chapter 2's "layered temporality" gains its time axis here. Beyond the three testable predictions (<code>comparisons/model-capability-vs-harness-engineering</code>), the industry-consensus arc (<code>entities/harness-engineering</code>, three-stage evolution) reads:</p>
+<ul>
+<li><strong>Short term (1–2 years)</strong>: hand-polished tool descriptions stop mattering; context management becomes declarative configuration — engineers move from implementation details to system design;</li>
+<li><strong>Medium term (3–5 years)</strong>: models start assembling parts of the harness themselves (Anthropic's prompt deletion is the early sign) — engineers shift from "building the harness" to "<strong>auditing and constraining auto-generated harnesses</strong>";</li>
+<li><strong>Long term</strong>: the non-dissolving core solidifies into an "agent constitution" — engineering becomes <strong>governance engineering</strong>.</li>
+</ul>
+<p>The trend line in one sentence (<code>entities/harness-engineering</code>, source 3): <strong>better models = simpler harnesses = cheaper runs = faster output</strong> — the most optimistic, and currently best-supported, harness economics. Model progress does not abolish the job; it keeps raising the workbench.</p>
+<h2 id="134-the-sovereignty-line-five-things-that-do-not-disappear">13.4 The sovereignty line: five things that do not disappear<a class="headerlink" href="#134-the-sovereignty-line-five-things-that-do-not-disappear" title="Permanent link">&para;</a></h2>
+<p>Model capability will take over more and more of the "how" — tool calls, format fitting, basic planning, basic self-verification, generic skill packaging. One class of work is exempt (<code>entities/harness-engineering</code>):</p>
+<ol>
+<li><strong>Will injection</strong>: whose goals does the agent serve? The objective function is defined by people;</li>
+<li><strong>Permission granting</strong>: permissions are conferred, not learned — GPT-10 will not issue itself write access;</li>
+<li><strong>Environment supply</strong>: the agent's ceiling is set by its toolset; no browser, no web;</li>
+<li><strong>Boundary drawing</strong>: the "meta-harness" — the rules that constrain evolution itself. An agent may self-improve, but where improvement must stop is drawn by people, the way constitutional amendment requires a higher consensus;</li>
+<li><strong>Governance and audit</strong>: evaluation frameworks evolve from "measuring capability" to "constraining behavior."</li>
+</ol>
+<p><strong>Sovereignty cannot self-generate</strong> — the source of power always lies outside the exerciser of power. Three analogies: employees do not set their own KPIs; autonomous driving needs a human ethical frame preset; a judge's legitimacy originates outside the judge.</p>
+<p>For the individual engineer, Karpathy's mapping (<code>drafts/karpathy-2026-vibe-to-agentic-engineering</code>): hand-written bits decouple from value; value migrates to <strong>problem definition, semantic modeling, boundary design, verification systems</strong>. "You can outsource thinking; you cannot outsource understanding" — understanding tensors, defining what a user identity is, designing permission models, building verification systems: these rise in value precisely because agents' errors cost most there.</p>
+<h2 id="135-open-problems-the-honest-edge">13.5 Open problems: the honest edge<a class="headerlink" href="#135-open-problems-the-honest-edge" title="Permanent link">&para;</a></h2>
+<p>A book about reliability ends by listing what remains unsolved (<code>topics/agent-harness-deep-dive-qa</code>):</p>
+<table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Behavioral verification</strong></td>
+<td>Structural quality largely solved; behavioral correctness unsolved — AI PRs rejected at 67.3% vs 15.6%</td>
+</tr>
+<tr>
+<td><strong>Confidence calibration</strong></td>
+<td>Agents cannot say "I'm unsure"; correct and hallucinated output carry equal confidence</td>
+</tr>
+<tr>
+<td><strong>Edit formats</strong></td>
+<td>No standard reliable way to apply code changes; one format variable moves 15 models by 5–14 points</td>
+</tr>
+<tr>
+<td><strong>Brownfield applicability</strong></td>
+<td>Success stories are mostly greenfield; a 10-year-old codebase is the harder exam</td>
+</tr>
+<tr>
+<td><strong>Perception gap</strong></td>
+<td>METR: 19% slower in fact, 20% faster in feeling</td>
+</tr>
+</tbody>
+</table>
+<p>These open problems mark where the next decade's engineering value sits: whoever turns "behavioral correctness" into a decidable proposition takes the next baton.</p>
+<h2 id="136-closing-design-the-verifier-not-the-prompt">13.6 Closing: design the verifier, not the prompt<a class="headerlink" href="#136-closing-design-the-verifier-not-the-prompt" title="Permanent link">&para;</a></h2>
+<p>The whole book, in one line:</p>
+<blockquote>
+<p><strong>Agent = Model + Harness; Loop ⊃ Harness ⊃ Context ⊃ Prompt. The model supplies possibility; you supply reliability.</strong></p>
+</blockquote>
+<p>One sentence per primitive:</p>
+<ul>
+<li><strong>Harness</strong>: don't teach the model how to behave — give it an environment where mistakes can't capsize the boat. Every rule is a healed scar; every component is deletable.</li>
+<li><strong>Loop</strong>: a prompt gives the agent an instruction; a loop gives it a job. Build the verifier first, the loop second, and always fit the circuit breaker.</li>
+<li><strong>Graph</strong>: control flow lives in deterministic code; the model produces actions; the graph decides when and what. Split by context boundary; agree on protocol before collaboration.</li>
+</ul>
+<p>And Samuel McDonnell's line, the best closure this book could ask for (<code>entities/loop-engineering-feedback-control-system</code>):</p>
+<blockquote>
+<p>"Management in the agent era is not hiring capable workers — the workers are capable and cheap. It is designing the constraints they run inside. Stop designing prompts. Start designing verifiers."</p>
+</blockquote>
+<p>And what you are doing right now — sedimenting engineering experience into executable knowledge, turning every failure into a rule, writing down every system's boundaries — <em>is</em> harness engineering. The next edition of this book should be continued by your team's incident reports.</p>
+<h2 id="137-exercises">13.7 Exercises<a class="headerlink" href="#137-exercises" title="Permanent link">&para;</a></h2>
+<p><strong>Hands-on</strong></p>
+<ol>
+<li>Run a "deletion drill" on your harness: work through the shelf-life table, actually remove one component, run a benchmark round, record the quality delta. For the component you cannot delete, write down why — that is where your system's real coupling lives.</li>
+<li>Draft a one-page "agent constitution" for your team: will (whom it serves), permissions (default-deny list), boundaries (the L5/L6 list), governance (evaluation and escalation paths). Five lines per column, no more.</li>
+</ol>
+<p><strong>Reflective</strong></p>
+<ol>
+<li>Of the five open problems, which will the next model generation dissolve naturally? Which will get <em>worse</em>? (Hint: the stronger and more productive the model, the tighter behavioral verification and review bandwidth become.)</li>
+<li>What does "sovereignty cannot self-generate" mean for your career plan? In five years, will your value be anchored in knowing <em>how</em>, or in deciding <em>whether</em>?</li>
+</ol>
+<h2 id="138-references">13.8 References<a class="headerlink" href="#138-references" title="Permanent link">&para;</a></h2>
+<ul>
+<li>In-vault: <code>entities/harness-engineering</code> (decay data, Build to Delete, the sovereignty five, three-stage evolution, trend line); <code>concepts/when-not-to-harness-engineering</code> (four boundary conditions, four questions, NomShub); <code>comparisons/model-capability-vs-harness-engineering</code> (adversary page, verdict, three predictions); <code>queries/harness-minimum-checklist</code> (shelf-life table, migration checklist); <code>topics/agent-harness-deep-dive-qa</code> (open problems, Factory/recursive self-improvement, risk-amplifier data); <code>drafts/karpathy-2026-vibe-to-agentic-engineering</code> (bits and value migration, "cannot outsource understanding"); <code>entities/loop-engineering-feedback-control-system</code> (Samuel's closing line).</li>
+<li>Public: Anthropic, <em>When AI builds itself</em> (2026-06); Mitchell Hashimoto, <em>My AI Adoption Journey</em> (2026-02) (both via in-vault notes).</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "navigation.sections", "navigation.top", "navigation.indexes"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

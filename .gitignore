@@ -37,6 +37,9 @@ deploy/cloudflare/*/worker.js
 # Personal learning notes
 wiki-notes/
 
+# Standalone subproject (separate git repo, never part of the public site)
+devloop/
+
 # Local agent-tool state
 .omx/
 

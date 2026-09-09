@@ -1,0 +1,1670 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="From probabilistic models to reliable systems: a field manual on agent engineering for senior engineers (English edition)">
+      
+      
+      
+      
+        <link rel="prev" href="../ch04-verifier-first/">
+      
+      
+        <link rel="next" href="../ch06-harness-five-layers/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Chapter 5 Sustained Loops: Outer Loops, Budgets, and the Orchestration Tax - Agent Engineering: Harness, Loop, Graph</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chapter-5-sustained-loops-outer-loops-budgets-and-the-orchestration-tax" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Agent Engineering: Harness, Loop, Graph" class="md-header__button md-logo" aria-label="Agent Engineering: Harness, Loop, Graph" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 2h6v2h8V2h6v6h-2v8h2v6h-6v-2H8v2H2v-6h2V8H2zm14 6V6H8v2H6v8h2v2h8v-2h2V8zM4 4v2h2V4zm14 0v2h2V4zM4 18v2h2v-2zm14 0v2h2v-2z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Agent Engineering: Harness, Loop, Graph
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Chapter 5 Sustained Loops: Outer Loops, Budgets, and the Orchestration Tax
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/QianJinGuo/wiki-book" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    QianJinGuo/wiki-book
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Agent Engineering: Harness, Loop, Graph" class="md-nav__button md-logo" aria-label="Agent Engineering: Harness, Loop, Graph" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 2h6v2h8V2h6v6h-2v8h2v6h-6v-2H8v2H2v-6h2V8H2zm14 6V6H8v2H6v8h2v2h8v-2h2V8zM4 4v2h2V4zm14 0v2h2V4zM4 18v2h2v-2zm14 0v2h2v-2z"/></svg>
+
+    </a>
+    Agent Engineering: Harness, Loop, Graph
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/QianJinGuo/wiki-book" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    QianJinGuo/wiki-book
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Preface
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part I · Foundations
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part I · Foundations
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch01-generation-to-delivery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 1 From Generation to Delivery: The Birth of Agent Engineering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch02-model-boundary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 2 The Model's Boundary: Why Engineering Is Not Optional
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part II · Loop Engineering
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part II · Loop Engineering
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch03-agent-loop-anatomy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 3 Anatomy of the Agent Loop: The Minimal Cycle and Its Five Organs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch04-verifier-first/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 4 Verifier First: The Loop's Quality Ceiling Is Set by Its Checker
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 5 Sustained Loops: Outer Loops, Budgets, and the Orchestration Tax
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 5 Sustained Loops: Outer Loops, Budgets, and the Orchestration Tax
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#51-six-components-of-a-sustained-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Six components of a sustained loop
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#52-state-memory-the-outer-loops-home" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 State memory: the outer loop's home
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#53-budgets-the-three-dimensional-fuse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Budgets: the three-dimensional fuse
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#54-the-orchestration-tax-review-bandwidth-caps-parallelism" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 The orchestration tax: review bandwidth caps parallelism
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#55-which-tasks-deserve-a-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 Which tasks deserve a loop
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#56-from-loops-to-factories-the-next-floor-preview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.6 From loops to factories: the next floor preview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#57-anti-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.7 Anti-patterns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#58-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.8 Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#59-exercises" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.9 Exercises
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#510-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.10 References
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part III · Harness Engineering
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part III · Harness Engineering
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch06-harness-five-layers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 6 The Harness, surveyed: Five Layers and the Minimum Viable Harness
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch07-context-engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 7 Context Engineering: Designing the Supply Chain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch08-tools-permissions-guardrails/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 8 Tools, Permissions, and Guardrails: Enabling the Agent — and Preventing It
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch09-state-and-memory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 9 State and Memory: Building a System That Does Not Forget
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part IV · Graph Engineering
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part IV · Graph Engineering
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch10-loop-to-graph/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 10 From Loop to Graph: State Machines and Orchestration Engines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch11-multi-agent-orchestration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 11 Multi-Agent Orchestration: Topologies, Protocols, Isolation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part V · Production & Governance
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part V · Production & Governance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch12-evaluation-observability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 12 Evaluation and Observability: From Vibes to Evidence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch13-decay-sovereignty-future/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 13 Decay, Sovereignty, and the Engineer's Next Seat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendices
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Appendices
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../appendix-a-glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix A Glossary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../appendix-b-checklists/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix B Checklist Compendium
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../appendix-c-references/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix C References
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#51-six-components-of-a-sustained-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Six components of a sustained loop
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#52-state-memory-the-outer-loops-home" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 State memory: the outer loop's home
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#53-budgets-the-three-dimensional-fuse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Budgets: the three-dimensional fuse
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#54-the-orchestration-tax-review-bandwidth-caps-parallelism" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 The orchestration tax: review bandwidth caps parallelism
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#55-which-tasks-deserve-a-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 Which tasks deserve a loop
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#56-from-loops-to-factories-the-next-floor-preview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.6 From loops to factories: the next floor preview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#57-anti-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.7 Anti-patterns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#58-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.8 Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#59-exercises" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.9 Exercises
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#510-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.10 References
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="chapter-5-sustained-loops-outer-loops-budgets-and-the-orchestration-tax">Chapter 5 Sustained Loops: Outer Loops, Budgets, and the Orchestration Tax<a class="headerlink" href="#chapter-5-sustained-loops-outer-loops-budgets-and-the-orchestration-tax" title="Permanent link">&para;</a></h1>
+<div class="admonition abstract">
+<p class="admonition-title">Learning objectives</p>
+<ul>
+<li>Master the six components and six primitives of sustained loops, and point to their counterparts in Claude Code / Codex;</li>
+<li>Make the admission decision for loopification: recurrence × failure cost;</li>
+<li>Understand why the outer loop (cross-session state memory) is the highest-value gap today;</li>
+<li>Face the orchestration tax: your review bandwidth is the real cap on parallelism.</li>
+</ul>
+</div>
+<p>Chapters 3–4 solved "how to run one task right." But an engineer's calendar is full of tasks that <strong>recur</strong>: CI goes red again, dependencies drift again, monitors fire again. The second half of Loop Engineering is keeping loops running unattended — safely and economically. Boris Cherny's "three altitudes" model gives the climb coordinates (<code>topics/agent-harness-deep-dive-qa</code>):</p>
+<table>
+<thead>
+<tr>
+<th>Altitude</th>
+<th>Mode</th>
+<th>Human role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Hand-writing code with autocomplete</td>
+<td>Still inside the loop</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Running multiple agent sessions in parallel</td>
+<td>Deciding and directing</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Writing loops that prompt agents for you</td>
+<td><strong>Intervening only when the loop jams</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Anthropic's June 2026 <em>When AI builds itself</em> put a scale on those rungs: code written by Claude exceeded 80% of what landed on its repos; engineers' daily merged output was 8× 2024 levels; open-ended task success rose from 26% to 76% in six months. Boris Cherny's own last-30-days contribution to the Claude Code repo — 259 PRs, all written by Claude Code. His job: design the loops that make Claude Code write code.</p>
+<h2 id="51-six-components-of-a-sustained-loop">5.1 Six components of a sustained loop<a class="headerlink" href="#51-six-components-of-a-sustained-loop" title="Permanent link">&para;</a></h2>
+<p>Ruo Fei's checklist from <em>Loop Engineering at the Worksite</em> is the most complete practice version (<code>entities/loop-engineering-feedback-control-system</code>):</p>
+<ol>
+<li><strong>Automatic trigger</strong> (cron, <code>/goal</code>, <code>/loop</code>) — the loop cannot depend on a human pressing Enter;</li>
+<li><strong>Isolated workspace</strong> (worktree, temp branch) — no concurrent clobbering; failures discard cleanly;</li>
+<li><strong>Process assets</strong> (skills, rules, templates) — no re-explaining context every round;</li>
+<li><strong>External connections</strong> (MCP, plugins, CLIs) — otherwise the loop sees only local files;</li>
+<li><strong>Independent verification</strong> (sub-agent / reviewer / tests) — no "authored-and-self-approved" feedback gap;</li>
+<li><strong>State memory</strong> (plan.md, issues, logs) — so round N+1 picks up where round N left off.</li>
+</ol>
+<p>This list maps one-to-one onto Addy Osmani's <strong>six loop primitives</strong>, which in turn map onto both Claude Code and Codex — evidence that these are the loop's own structure, not one vendor's design (<code>topics/agent-harness-deep-dive-qa</code>):</p>
+<table>
+<thead>
+<tr>
+<th>Primitive</th>
+<th>Role</th>
+<th>Claude Code</th>
+<th>Codex</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Automations</td>
+<td>Scheduled discovery &amp; triage (the loop's heartbeat)</td>
+<td><code>/loop</code> + hooks + GitHub Actions</td>
+<td>Automations + <code>/goal</code></td>
+</tr>
+<tr>
+<td>Worktrees</td>
+<td>Parallel isolation</td>
+<td>git worktree + isolation</td>
+<td>Built-in worktree per thread</td>
+</tr>
+<tr>
+<td>Skills</td>
+<td>Project knowledge, solidified</td>
+<td>SKILL.md, implicit matching</td>
+<td>SKILL.md, <code>$name</code> invocation</td>
+</tr>
+<tr>
+<td>Connectors</td>
+<td>Reaching external tools</td>
+<td>MCP servers + plugins</td>
+<td>MCP connectors + plugins</td>
+</tr>
+<tr>
+<td>Sub-agents</td>
+<td>Maker/checker separation</td>
+<td><code>.claude/agents/</code> + agent teams</td>
+<td><code>.codex/agents/</code> TOML</td>
+</tr>
+<tr>
+<td>State</td>
+<td>Cross-session memory</td>
+<td>AGENTS.md / progress files</td>
+<td>Markdown / Linear</td>
+</tr>
+</tbody>
+</table>
+<p><strong>A real loop's full shape</strong> (synthesized from front-line practice):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>1. Automation fires each morning → runs the $triage skill over issues/CI → writes progress.md (State)
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>2. Loop reads progress.md, picks the top-priority task
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>   → sub-agent A (implementer, fast model) works in an isolated worktree
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>   → on completion, sub-agent B (reviewer, strong model) checks it
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>   → pass → open PR + link the issue (Connector); fail → feedback written back, A retries
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>3. /goal decides: &quot;all P0 issues closed and CI green&quot; → met: stop and notify;
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>   over iteration cap: escalate
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>4. Budget: max 15 iterations / $5 / 300 seconds
+</code></pre></div>
+<h2 id="52-state-memory-the-outer-loops-home">5.2 State memory: the outer loop's home<a class="headerlink" href="#52-state-memory-the-outer-loops-home" title="Permanent link">&para;</a></h2>
+<p>Chapter 3 called the outer loop the value gap. Its mechanism is the combination of components 4 and 6: <strong>state memory must be externalized</strong> — written to disk (progress files, issues, Git history), dependent on no single session's context. Sessions end; contexts clear; the repository does not forget.</p>
+<p>Chapter 9 develops the full storage design (feature lists, startup sequences, checkpoints). One discipline matters here: <strong>each round begins by restoring state from files, not from the model's memory.</strong> Without state memory, a loop degenerates into memoryless repetition — re-committing the same mistakes each round.</p>
+<h2 id="53-budgets-the-three-dimensional-fuse">5.3 Budgets: the three-dimensional fuse<a class="headerlink" href="#53-budgets-the-three-dimensional-fuse" title="Permanent link">&para;</a></h2>
+<p>The first killer of sustained loops is cost. Reference magnitudes (<code>entities/loop-engineering-feedback-control-system</code>): single-agent loops ~50K–200K tokens per task; fleet loops ~0.5M–2M; a daily scheduled loop runs through millions of tokens a week. <strong>Every loop needs three-dimensional caps: tokens, wall-clock time, cumulative cost</strong> — a circuit without a fuse should not be energized.</p>
+<p>Three practical points:</p>
+<ul>
+<li><strong>Minimum of the three wins</strong>: any cap tripped stops the loop; do not wait for all three;</li>
+<li><strong>Tiered budgets</strong>: light configuration for low-risk reads/queries; the full verification chain only for high-risk writes/executions (<code>entities/harness-engineering</code>);</li>
+<li><strong>Monitor three metrics</strong>: success rate, regression rate, token efficiency. Review monthly; tune loop frequency and verifier strictness from data (<code>moc/loop-engineering</code>).</li>
+</ul>
+<p>YC's Garry Tan warned about the opposite failure: do not turn agents into "Foxconn factories" of repetitive labor — a loop should be an "intelligent loop with feedback," not mechanical repetition. The health check: is your verification gate getting sharper over time, or is it decorative?</p>
+<h2 id="54-the-orchestration-tax-review-bandwidth-caps-parallelism">5.4 The orchestration tax: review bandwidth caps parallelism<a class="headerlink" href="#54-the-orchestration-tax-review-bandwidth-caps-parallelism" title="Permanent link">&para;</a></h2>
+<p>The second killer is quieter: <strong>human review bandwidth.</strong> Five parallel agents open five PRs; you can seriously review one an hour — the other four queue up burning tokens. That is the orchestration tax (<code>topics/agent-harness-deep-dive-qa</code>).</p>
+<p>Three corollaries:</p>
+<ol>
+<li><strong>Parallelism = review bandwidth ÷ review cost per unit of output.</strong> To go parallel, first lower unit review cost (better verifiers, smaller PRs, higher automated pass rates), not more sessions.</li>
+<li><strong>Stripe's route: build the roads before the trucks.</strong> Its unattended Minions (1,300+ PRs a week) rest on years of human-developer infrastructure — 10-second devboxes, 3 million tests. <strong>The best preparation for agents is the engineering hygiene you should have had anyway.</strong></li>
+<li><strong>Waiting is expensive; correction is cheap</strong> (the attention economics from the same source): better to have the agent queue for review than the human wait on the agent; spend human attention on critical-decision pauses (drop tables, charge cards, email customers).</li>
+</ol>
+<h2 id="55-which-tasks-deserve-a-loop">5.5 Which tasks deserve a loop<a class="headerlink" href="#55-which-tasks-deserve-a-loop" title="Permanent link">&para;</a></h2>
+<p>Not every recurring task deserves a loop. One product decides admission (<code>entities/loop-engineering-feedback-control-system</code>):</p>
+<blockquote>
+<p><strong>recurrence frequency × failure cost &gt; threshold</strong> — then loopify.</p>
+</blockquote>
+<ul>
+<li>High recurrence, low failure cost (daily log cleanup) → cron suffices; skip the loop;</li>
+<li>High failure cost, one-off (cross-service migration) → loopify, run it as a project, then dismantle it;</li>
+<li>Both high (CI repair, dependency upgrades, monitor response) → the loop's home turf.</li>
+</ul>
+<p><strong>The full decision order</strong> (connecting Chapter 2's verdict): deterministic API → single call → thin loop → heavy harness. The loop is one gear in the toolbox, not the default.</p>
+<h2 id="56-from-loops-to-factories-the-next-floor-preview">5.6 From loops to factories: the next floor preview<a class="headerlink" href="#56-from-loops-to-factories-the-next-floor-preview" title="Permanent link">&para;</a></h2>
+<p>The top of the hierarchy is the Factory Model: multiple loops cooperating to produce software — requirements, implementation, review, and deployment loops each doing their job, with deterministic gates passing artifacts between them (<code>topics/agent-harness-deep-dive-qa</code>). Stripe's Minions and OpenAI's ~1M lines in ~5 months are early forms. Beyond that lies recursive self-improvement — Anthropic's numbers show Claude accelerating its own training-code optimization from 3× to 52×; "Claude is helping train the next Claude." That is the book's final stop (Ch 13), and a risk to fence in advance.</p>
+<h2 id="57-anti-patterns">5.7 Anti-patterns<a class="headerlink" href="#57-anti-patterns" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Fleet loops for prestige.</strong> Orchestration before a stable single loop multiplies every problem by N (full criteria in Ch 11).</li>
+<li><strong>Token-only budgets.</strong> Time and cost need caps too; the classic explosion is "cheap steps, unbounded total."</li>
+<li><strong>Conversation history as state memory.</strong> Cross-session recovery reads files; chat logs are low-quality memory that keeps "what was said" and loses "why."</li>
+<li><strong>Unattended above L4.</strong> A loop's autonomy must not exceed the task's verifiability level (Ch 2's L1–L6); money, identity, and outbound actions keep human gates.</li>
+</ul>
+<h2 id="58-summary">5.8 Summary<a class="headerlink" href="#58-summary" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Six components: trigger, isolation, process assets, connections, independent verification, state memory; six primitives with counterparts in Claude Code and Codex.</li>
+<li>Admission is a product: recurrence × failure cost; order: deterministic API → single call → thin loop → heavy harness.</li>
+<li>Budgets are three-dimensional fuses (tokens/time/cost) plus three metrics (success/regression/efficiency).</li>
+<li>The orchestration tax caps parallelism; build the roads (tests, gates, devboxes) before the trucks.</li>
+<li>The outer loop — externalized state memory — is today's highest-leverage layer.</li>
+</ul>
+<h2 id="59-exercises">5.9 Exercises<a class="headerlink" href="#59-exercises" title="Permanent link">&para;</a></h2>
+<p><strong>Hands-on</strong></p>
+<ol>
+<li>Pick a real task high on both recurrence and failure cost (recommend: dependency upgrades or CI repair). Build a minimal loop from the six-component list and run it for a week. Record: success rate, regression rate, tokens, your review time.</li>
+<li>Wire in three-dimensional budget caps and deliberately set them absurdly low to prove the breaker trips. A breaker you cannot test is a breaker you do not have.</li>
+</ol>
+<p><strong>Reflective</strong></p>
+<ol>
+<li>Self-assess against the three altitudes: where are you today? What is the binding constraint on the next level — the verifier, state memory, or review bandwidth?</li>
+<li>Read "the best preparation for agents is the hygiene you should have had anyway" backwards. (If your test suite is too rotten for an agent to use, whose debt gets fixed first?)</li>
+</ol>
+<h2 id="510-references">5.10 References<a class="headerlink" href="#510-references" title="Permanent link">&para;</a></h2>
+<ul>
+<li>In-vault: <code>topics/agent-harness-deep-dive-qa</code> (three altitudes, six-primitive table, real loop shape, <em>When AI builds itself</em> data, orchestration tax, Stripe Minions, Factory Model); <code>entities/loop-engineering-feedback-control-system</code> (six components, cost structure, three-dimensional budgets, admission product, Garry Tan); <code>moc/loop-engineering</code> (four-step practice path, monthly review); <code>entities/harness-engineering</code> (risk-tiered budgets).</li>
+<li>Public: Anthropic, <em>When AI builds itself</em> (2026-06); Addy Osmani's six-primitive framework; Stripe Engineering, <em>Minions</em> (2026-02) (all via in-vault notes).</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "navigation.sections", "navigation.top", "navigation.indexes"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

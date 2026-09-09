@@ -1,0 +1,1782 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="From probabilistic models to reliable systems: a field manual on agent engineering for senior engineers (English edition)">
+      
+      
+      
+      
+        <link rel="prev" href="../ch05-sustained-loops/">
+      
+      
+        <link rel="next" href="../ch07-context-engineering/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Chapter 6 The Harness, surveyed: Five Layers and the Minimum Viable Harness - Agent Engineering: Harness, Loop, Graph</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chapter-6-the-harness-surveyed-five-layers-and-the-minimum-viable-harness" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Agent Engineering: Harness, Loop, Graph" class="md-header__button md-logo" aria-label="Agent Engineering: Harness, Loop, Graph" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 2h6v2h8V2h6v6h-2v8h2v6h-6v-2H8v2H2v-6h2V8H2zm14 6V6H8v2H6v8h2v2h8v-2h2V8zM4 4v2h2V4zm14 0v2h2V4zM4 18v2h2v-2zm14 0v2h2v-2z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Agent Engineering: Harness, Loop, Graph
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Chapter 6 The Harness, surveyed: Five Layers and the Minimum Viable Harness
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/QianJinGuo/wiki-book" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    QianJinGuo/wiki-book
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Agent Engineering: Harness, Loop, Graph" class="md-nav__button md-logo" aria-label="Agent Engineering: Harness, Loop, Graph" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 2h6v2h8V2h6v6h-2v8h2v6h-6v-2H8v2H2v-6h2V8H2zm14 6V6H8v2H6v8h2v2h8v-2h2V8zM4 4v2h2V4zm14 0v2h2V4zM4 18v2h2v-2zm14 0v2h2v-2z"/></svg>
+
+    </a>
+    Agent Engineering: Harness, Loop, Graph
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/QianJinGuo/wiki-book" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    QianJinGuo/wiki-book
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Preface
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part I · Foundations
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part I · Foundations
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch01-generation-to-delivery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 1 From Generation to Delivery: The Birth of Agent Engineering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch02-model-boundary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 2 The Model's Boundary: Why Engineering Is Not Optional
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part II · Loop Engineering
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part II · Loop Engineering
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch03-agent-loop-anatomy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 3 Anatomy of the Agent Loop: The Minimal Cycle and Its Five Organs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch04-verifier-first/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 4 Verifier First: The Loop's Quality Ceiling Is Set by Its Checker
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch05-sustained-loops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 5 Sustained Loops: Outer Loops, Budgets, and the Orchestration Tax
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part III · Harness Engineering
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part III · Harness Engineering
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 6 The Harness, surveyed: Five Layers and the Minimum Viable Harness
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 6 The Harness, surveyed: Five Layers and the Minimum Viable Harness
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#61-three-generations-of-engineering-the-problem-changed-not-the-difficulty" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 Three generations of engineering: the problem changed, not the difficulty
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#62-the-five-layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 The five layers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#63-five-cross-camp-consensus-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 Five cross-camp consensus principles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#64-symptom-diagnosis-stop-treating-every-problem-as-a-prompt-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 Symptom diagnosis: stop treating every problem as a prompt problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#65-the-minimum-viable-harness-mvh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5 The Minimum Viable Harness (MVH)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#66-build-by-tier-which-layers-does-your-scenario-need" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.6 Build by tier: which layers does your scenario need
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#67-operating-philosophy-feed-errors-to-the-rule-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.7 Operating philosophy: feed errors to the rule library
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#68-anti-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.8 Anti-patterns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#69-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.9 Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#610-exercises" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.10 Exercises
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#611-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.11 References
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch07-context-engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 7 Context Engineering: Designing the Supply Chain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch08-tools-permissions-guardrails/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 8 Tools, Permissions, and Guardrails: Enabling the Agent — and Preventing It
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch09-state-and-memory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 9 State and Memory: Building a System That Does Not Forget
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part IV · Graph Engineering
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part IV · Graph Engineering
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch10-loop-to-graph/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 10 From Loop to Graph: State Machines and Orchestration Engines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch11-multi-agent-orchestration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 11 Multi-Agent Orchestration: Topologies, Protocols, Isolation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part V · Production & Governance
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part V · Production & Governance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch12-evaluation-observability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 12 Evaluation and Observability: From Vibes to Evidence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch13-decay-sovereignty-future/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 13 Decay, Sovereignty, and the Engineer's Next Seat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendices
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Appendices
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../appendix-a-glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix A Glossary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../appendix-b-checklists/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix B Checklist Compendium
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../appendix-c-references/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix C References
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#61-three-generations-of-engineering-the-problem-changed-not-the-difficulty" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 Three generations of engineering: the problem changed, not the difficulty
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#62-the-five-layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 The five layers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#63-five-cross-camp-consensus-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 Five cross-camp consensus principles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#64-symptom-diagnosis-stop-treating-every-problem-as-a-prompt-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 Symptom diagnosis: stop treating every problem as a prompt problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#65-the-minimum-viable-harness-mvh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5 The Minimum Viable Harness (MVH)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#66-build-by-tier-which-layers-does-your-scenario-need" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.6 Build by tier: which layers does your scenario need
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#67-operating-philosophy-feed-errors-to-the-rule-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.7 Operating philosophy: feed errors to the rule library
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#68-anti-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.8 Anti-patterns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#69-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.9 Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#610-exercises" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.10 Exercises
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#611-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.11 References
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="chapter-6-the-harness-surveyed-five-layers-and-the-minimum-viable-harness">Chapter 6 The Harness, surveyed: Five Layers and the Minimum Viable Harness<a class="headerlink" href="#chapter-6-the-harness-surveyed-five-layers-and-the-minimum-viable-harness" title="Permanent link">&para;</a></h1>
+<div class="admonition abstract">
+<p class="admonition-title">Learning objectives</p>
+<ul>
+<li>Build the layered mental model of the harness (L1–L5) and what question each layer answers;</li>
+<li>Remember the five cross-camp consensus principles and seven anti-patterns;</li>
+<li>Use the Context-vs-Harness diagnostic table so you stop treating every problem as a prompt problem;</li>
+<li>Assemble a Minimum Viable Harness (MVH) scaled to your risk level.</li>
+</ul>
+</div>
+<h2 id="61-three-generations-of-engineering-the-problem-changed-not-the-difficulty">6.1 Three generations of engineering: the problem changed, not the difficulty<a class="headerlink" href="#61-three-generations-of-engineering-the-problem-changed-not-the-difficulty" title="Permanent link">&para;</a></h2>
+<p>Another cut of Chapter 1's timeline — not a tool history but a <strong>history of the engineer's role</strong> (<code>entities/harness-engineering</code>):</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Prompt Engineering</th>
+<th>Context Engineering</th>
+<th>Harness Engineering</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Focus</td>
+<td>How to phrase instructions</td>
+<td>How to manage information</td>
+<td>How to build a control system</td>
+</tr>
+<tr>
+<td>Scope</td>
+<td>One prompt</td>
+<td>The context window</td>
+<td>The task's full lifecycle</td>
+</tr>
+<tr>
+<td>Engineer's role</td>
+<td>Prompt writer</td>
+<td>Information-pipeline designer</td>
+<td><strong>Control-system architect</strong></td>
+</tr>
+<tr>
+<td>Typical tools</td>
+<td>The chat box</td>
+<td>LangChain, LlamaIndex</td>
+<td>LangGraph, AutoGen, Claude Code</td>
+</tr>
+</tbody>
+</table>
+<p>The layers nest: <strong>Prompt ⊂ Context ⊂ Harness</strong>. The prompt is the "turn right" command; context is the map you hand the model; the harness is the whole car — steering, brakes, lane boundaries, maintenance schedule, warning lights (<code>topics/agent-harness-deep-dive-qa</code>).</p>
+<p>The harness has quantitative support; three of the most-cited numbers:</p>
+<ul>
+<li><strong>The Can.ac experiment</strong>: with model weights untouched, changing only harness tool formatting took Grok Code Fast 1 from 6.7% to 68.3% on coding, while cutting output tokens ~20% (<code>entities/harness-engineering</code>);</li>
+<li><strong>LangChain</strong>: same underlying model, harness-only changes, Terminal Bench 2.0 score 52.8 → 66.5 — rank ~30 to rank ~5;</li>
+<li><strong>OpenAI practice report</strong>: ~5 months from empty repo to ~1M lines, almost none hand-written — Codex agents plus merged PRs.</li>
+</ul>
+<p><strong>Attribution</strong>: model capability sets the ceiling; harness design determines whether the ceiling can be released stably.</p>
+<h2 id="62-the-five-layers">6.2 The five layers<a class="headerlink" href="#62-the-five-layers" title="Permanent link">&para;</a></h2>
+<p>Synthesizing Anthropic, OpenAI, Stripe, and one two-month production system (22,792 shadow calls, 54 cron jobs), a mature harness has five layers (<code>topics/agent-harness-deep-dive-qa</code>):</p>
+<pre class="mermaid"><code>flowchart TB
+    L5["L5 Human governance —— when do people step in; how is attention allocated"]
+    L4["L4 Observability &amp; feedback —— how do we know it's right; how do we improve"]
+    L3["L3 State &amp; memory —— how does nothing get lost across sessions"]
+    L2["L2 Orchestration &amp; verification —— what can the model use; what must it pass"]
+    L1["L1 Context supply —— what does the model see"]
+    L5 --&gt; L4 --&gt; L3 --&gt; L2 --&gt; L1 --&gt; M["LLM"]</code></pre>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Core question</th>
+<th>Representative mechanisms</th>
+<th>Chapter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>L1 Context supply</td>
+<td>What does the model see?</td>
+<td>Bootstrap injection, on-demand loading, progressive disclosure</td>
+<td>Ch 7</td>
+</tr>
+<tr>
+<td>L2 Orchestration &amp; verification</td>
+<td>What can it use; what must it pass?</td>
+<td>Tool orchestration, permission sandbox, generator-evaluator split</td>
+<td>Ch 8</td>
+</tr>
+<tr>
+<td>L3 State &amp; memory</td>
+<td>How to survive across sessions?</td>
+<td>External artifacts, checkpoints, startup sequences</td>
+<td>Ch 9</td>
+</tr>
+<tr>
+<td>L4 Observability &amp; feedback</td>
+<td>How do we know it's right?</td>
+<td>Traces, quality grading, feedback attribution</td>
+<td>Ch 12</td>
+</tr>
+<tr>
+<td>L5 Human governance</td>
+<td>When do humans step in?</td>
+<td>Takeover points, escalation paths, attention allocation</td>
+<td>Ch 12–13</td>
+</tr>
+</tbody>
+</table>
+<p>A widely shared alternative (the six-layer view in <code>concepts/harness-engineering-framework</code>: context management, tools, execution orchestration, state &amp; memory, evaluation &amp; observation, constraints &amp; failure recovery) is the same elephant cut differently — five layers cut by <em>question</em>, six by <em>component</em>. Either works; what matters is that <strong>every layer has an owner and a failure signal</strong>.</p>
+<h2 id="63-five-cross-camp-consensus-principles">6.3 Five cross-camp consensus principles<a class="headerlink" href="#63-five-cross-camp-consensus-principles" title="Permanent link">&para;</a></h2>
+<p>A 2026 survey distilled OpenAI, Anthropic, and ThoughtWorks practice into five consensus points (<code>entities/harness-engineering</code>). Three camps converging independently is itself evidence these survived contact with production:</p>
+<ol>
+<li><strong>Context beats instruction</strong> — rather than repeating requests, put the right information in the window. (ETH Zurich's measurement is brutal: human-written docs gained ~4% success; AI-auto-generated docs <em>lost</em> 3% while costing 20% more — documentation's marginal utility is near zero; hard constraints work.)</li>
+<li><strong>Planning and execution separate</strong> — negotiate "what does done mean" before implementing.</li>
+<li><strong>The feedback loop is non-negotiable</strong> — automation without a verifier is not automation; it's gambling.</li>
+<li><strong>One thing at a time</strong> — WIP=1 is the safest default.</li>
+<li><strong>The repository is the documentation</strong> — rules live in the repo (versioned, executable), not in chat logs.</li>
+</ol>
+<p>The companion set is seven anti-patterns (same source): layer confusion (harness logic written into prompts), tool hoarding (50+ tools), premature autonomy (skipping verification to chase full automation), ignoring verification (judging output by "looks right"), static rule libraries (rules never updated), stateless design (every conversation starts over), entropy neglect (unbounded side effects). Each appears weekly in real projects — chapters 7–9 give per-layer remedies.</p>
+<h2 id="64-symptom-diagnosis-stop-treating-every-problem-as-a-prompt-problem">6.4 Symptom diagnosis: stop treating every problem as a prompt problem<a class="headerlink" href="#64-symptom-diagnosis-stop-treating-every-problem-as-a-prompt-problem" title="Permanent link">&para;</a></h2>
+<p>The most common first move in practice — output wrong, tweak the prompt; still wrong, swap the model — skips the diagnosis. The right first step is <strong>layered diagnosis</strong> (<code>entities/harness-engineering</code>, Context-vs-Harness table):</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Context problem</th>
+<th>Harness problem</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Object of optimization</td>
+<td>Input quality of a single task</td>
+<td>Running quality of the whole system</td>
+</tr>
+<tr>
+<td>Core question</td>
+<td>What should the agent see?</td>
+<td>What should the system block, verify, correct?</td>
+</tr>
+<tr>
+<td>Typical symptoms</td>
+<td>Off-topic answers, missing information</td>
+<td>Multi-turn drift, rule decay, quality variance</td>
+</tr>
+<tr>
+<td>Common means</td>
+<td>Prompts, RAG, memory, doc organization</td>
+<td>Lint, CI, hooks, permissions, flow control</td>
+</tr>
+<tr>
+<td>Rate of change</td>
+<td>Dynamic per task</td>
+<td>Stable; infrastructure-like</td>
+</tr>
+</tbody>
+</table>
+<p>Plus the bottleneck trio (<code>queries/harness-minimum-checklist</code>): where is the current bottleneck?</p>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Bottleneck layer</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Misreads instructions</td>
+<td>Prompt</td>
+<td>Improve the system prompt</td>
+</tr>
+<tr>
+<td>Forgets key information</td>
+<td>Context</td>
+<td>Restructure context</td>
+</tr>
+<tr>
+<td>Wrong execution path</td>
+<td>Harness</td>
+<td>Add verification or constraints</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Do not treat every agent problem as a prompt/context problem</strong> — check whether the harness is good enough before swapping models.</p>
+<h2 id="65-the-minimum-viable-harness-mvh">6.5 The Minimum Viable Harness (MVH)<a class="headerlink" href="#65-the-minimum-viable-harness-mvh" title="Permanent link">&para;</a></h2>
+<p>Five layers do not mean building five layers on day one. Anthropic's minimal practical advice is five items (<code>queries/harness-minimum-checklist</code>):</p>
+<ol>
+<li><strong>Write AGENTS.md (or CLAUDE.md)</strong> — the project constitution: domain, stack, conventions, dangerous-operations list;</li>
+<li><strong>Write verification commands</strong> — turn "tests should run" into a pre-completion check of results;</li>
+<li><strong>Create feature_list.json</strong> — features with <code>pending</code>/<code>in_progress</code>/<code>completed</code> states;</li>
+<li><strong>Create a progress file</strong> — per-session progress, curing "where were we?";</li>
+<li><strong>Set a completion gate</strong> — merges/PRs only in a verified-green state.</li>
+</ol>
+<p>Two counter-intuitive defaults come with it: <strong>cut 80% of tools first</strong> (fewer tools are easier to choose; Ch 8) and <strong>start single-agent</strong> (multi-agent is not a default; it is the response when single-agent hits a clear boundary, Ch 11).</p>
+<p>WIP=1 is the safest default: one feature, one PR at a time.</p>
+<h2 id="66-build-by-tier-which-layers-does-your-scenario-need">6.6 Build by tier: which layers does your scenario need<a class="headerlink" href="#66-build-by-tier-which-layers-does-your-scenario-need" title="Permanent link">&para;</a></h2>
+<p><code>entities/harness-engineering</code>'s tiered table — <strong>not every scenario needs all five layers</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Must have</th>
+<th>Can defer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Internal knowledge Q&amp;A bot</td>
+<td>Knowledge delivery, output guardrails</td>
+<td>Tool sandbox</td>
+</tr>
+<tr>
+<td>Code-review agent</td>
+<td>Context, tools, guardrails, observability — all</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Ops-automation agent</td>
+<td>All five layers + human review node</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>Cost tiers likewise: no harness ≈1–2s responses, low reliability; minimal harness 2–4s, notably better; full harness 5–15s, production-grade. One A/B comparison is often quoted: no-harness ~$9/20min with core features broken vs full harness ~$200/6h with the feature complete. <strong>The 22× premium buys deliverability, not polish — whether it's worth it depends on what one failed release costs you.</strong></p>
+<h2 id="67-operating-philosophy-feed-errors-to-the-rule-library">6.7 Operating philosophy: feed errors to the rule library<a class="headerlink" href="#67-operating-philosophy-feed-errors-to-the-rule-library" title="Permanent link">&para;</a></h2>
+<p>A harness is not a one-time construction; it is a system with an operating rhythm. The core cycle (<code>entities/harness-engineering</code>):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>The AI errs → convert to a rule/test/constraint → update the rule library
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>→ the error class stops recurring → the system evolves
+</code></pre></div>
+<p>Ghostty's summary is the most vivid: every rule in the config file corresponds to a real mistake the agent once made — <strong>every rule is a scar that healed</strong>. Mitchell Hashimoto's version: every time the agent errs, engineer a fix so it never happens again.</p>
+<p>This makes harness and fine-tuning a stark contrast: fine-tuning changes model parameters (slow, expensive, hard to explain); the harness changes a rule library (fast, cheap, explainable, auditable). For most teams the rule library is the better lever.</p>
+<h2 id="68-anti-patterns">6.8 Anti-patterns<a class="headerlink" href="#68-anti-patterns" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>MVH as the end state.</strong> Minimal harness is a starting point; when risk tier rises and the harness doesn't, you're free-soloing — re-score against 6.6 periodically.</li>
+<li><strong>Rule libraries that only grow.</strong> Without an "error → rule" pipeline a harness dies of fat; without deletion mechanisms a rule library is debt (Ch 13).</li>
+<li><strong>Building all five layers at once.</strong> Open the minimal circuit first — context → verification → state — then add L4/L5; otherwise you debug five variables at once.</li>
+</ul>
+<h2 id="69-summary">6.9 Summary<a class="headerlink" href="#69-summary" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Three generations of engineering are a migration of the engineer's role: writer → pipeline designer → control-system architect; Prompt ⊂ Context ⊂ Harness.</li>
+<li>Three numbers (6.7%→68.3%, 52.8→66.5, 1M lines in 5 months) establish the harness as a capability lever independent of the model.</li>
+<li>Five layers, each answering one question; diagnose from symptoms, not from prompts.</li>
+<li>MVH is five items plus two defaults (cut tools, start single-agent); build by risk tier.</li>
+<li>Operating philosophy: feed errors to the rule library; every rule is a healed scar.</li>
+</ul>
+<h2 id="610-exercises">6.10 Exercises<a class="headerlink" href="#610-exercises" title="Permanent link">&para;</a></h2>
+<p><strong>Hands-on</strong></p>
+<ol>
+<li>Apply the five MVH items to one of your agent projects; run 10 similar tasks before and after; compare rework rate and context-related failures.</li>
+<li>Use the 6.4 tables on your most recent "the agent misbehaved" incident: which layer was it? Was your response (prompt/model/constraints) the right one?</li>
+</ol>
+<p><strong>Reflective</strong></p>
+<ol>
+<li>"Feed errors to the rule library" and "harness decay" are a tension: rules must accumulate <em>and</em> be deletable. Who runs your rule library's deletion review, and on what cadence?</li>
+<li>The $9 vs $200 A/B is often quoted as "full harness is worth it." Name two business scenarios where the conclusion inverts.</li>
+</ol>
+<h2 id="611-references">6.11 References<a class="headerlink" href="#611-references" title="Permanent link">&para;</a></h2>
+<ul>
+<li>In-vault: <code>entities/harness-engineering</code> (three generations, six-layer, seven anti-patterns, 5 artifacts/3 camps/5 principles, decay &amp; build-to-delete, sovereignty, Can.ac and $9/$200 data, error-fed rule library, tier table, cost model); <code>topics/agent-harness-deep-dive-qa</code> (five layers, tack/car metaphor, production system, MVH); <code>concepts/harness-engineering-framework</code> (six-layer view, context tiers, generator-evaluator, LangChain 52.8→66.5); <code>queries/harness-minimum-checklist</code> (MVH items, bottleneck trio, A/B cost); <code>drafts/agent-harness-engineering-2026</code>.</li>
+<li>Public: Anthropic, <em>Effective Harnesses for Long-Running Agents</em> (2025-11); OpenAI, <em>Harness engineering</em> (2026-02); Can.ac, <em>I Improved 15 LLMs at Coding in One Afternoon. Only the Harness Changed.</em> (2026-02); ETH Zurich documentation experiment; LangChain, <em>Improving Deep Agents with harness engineering</em> (2026-02) (all via in-vault notes).</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "navigation.sections", "navigation.top", "navigation.indexes"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
