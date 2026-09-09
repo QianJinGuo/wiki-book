@@ -1,4 +1,5 @@
 %% title: A2RD——Agentic 自回归扩散保长视频一致性
 graph TD
-    ARCH["核心架构<br/>Multimodal Video Memory 跨距追踪<br/>Adaptive Segment 自适应切换<br/>HITS 分层测试时自改进"] ==> FLOW["两阶段闭环工作流<br/>LVBench-C 基准"]
-    FLOW ==> PHILO["设计哲学: 解耦与闭环<br/>训练免费的代价与收益"]
+    ARCH["核心架构<br/>Multimodal Video Memory 跨距追踪<br/>Adaptive Segment 自适应切换<br/>HITS 分层测试时自改进"] ==> FLOW["两阶段闭环工作流"]
+    FLOW ==> BENCH["LVBench-C 基准<br/>非线性实体与环境转换"]
+    BENCH ==> PHILO["设计哲学: 解耦与闭环<br/>训练免费的代价与收益"]
