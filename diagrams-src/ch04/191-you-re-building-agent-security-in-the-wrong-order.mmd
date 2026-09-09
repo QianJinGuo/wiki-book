@@ -1,4 +1,5 @@
 %% title: 你在以错误的顺序构建 Agent 安全
 graph TD
-    ORDER["三步正确顺序<br/>先 Harness 值得保护的东西<br/>再 Governance 作为架构决策<br/>最后 Identity Auth 落在已知攻击面"] ==> ROOTCAUSE["顺序错位根源: 安全是采购入口<br/>Harness 问题没有截止日期<br/>厂商不是在犯错"]
-    ORDER ==> CREWAI["CrewAI Flows 的 Harness 实践<br/>先接好升级路径再给自主性"]
+    ORDER["三步正确顺序: 先 Harness<br/>再 Governance 最后 Identity Auth"] ==> ROOTCAUSE["错位根源: 安全是采购入口<br/>Harness 问题没有截止日期"]
+    ROOTCAUSE ==> ONTOLOGY["本体论前提: Agent 是否稳定可预测<br/>流沙地基装防盗门"]
+    ROOTCAUSE ==> CREWAI["CrewAI Flows: 先接升级路径再给自主性"]
