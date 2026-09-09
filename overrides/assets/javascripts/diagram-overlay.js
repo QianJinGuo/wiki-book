@@ -404,9 +404,9 @@
           '<span class="diagram-card-title">' + (i + 1) + '. ' + d.title + '</span>' +
           '<button class="diagram-card-zoom" title="放大查看">🔍</button>' +
         '</div>' +
-        d.isSvg 
+        (d.isSvg
         ? '<div class="diagram-card-body">' + d.svg + '</div>'
-        : '<div class="diagram-card-body"><pre class="mermaid" id="mermaid-d-' + i + '">' + d.code + '</pre></div>';
+        : '<div class="diagram-card-body"><pre class="mermaid" id="mermaid-d-' + i + '">' + d.code + '</pre></div>');
       grid.appendChild(card);
     }
     body.appendChild(grid);
