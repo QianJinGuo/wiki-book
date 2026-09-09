@@ -1,0 +1,7 @@
+%% title: pi-mono——模块化 AI Agent 构建平台与 OpenClaw 执行引擎
+graph TD
+    ARCH["核心包架构<br/>与 OpenClaw 分工"] --> PAI["pi-ai 模型抽象层<br/>20 加提供商 · 事件流架构<br/>跨提供商会话切换"]
+    ARCH --> CORE["pi-agent-core 运行时<br/>Agent 事件循环 · Hook 机制"]
+    PAI --> TB["TypeBox Schema 双重安全"]
+    CORE --> CMP["与同类框架对比<br/>与 Hermes 的关系"]
+    CMP --> INS["优先事件流而非回调<br/>低层包可独立使用<br/>stream UI 响应"]

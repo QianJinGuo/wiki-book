@@ -1,0 +1,7 @@
+%% title: NomShub——Cursor 远程隧道利用链与沙箱逃逸
+graph TD
+    E1["Shell Builtin 沙箱逃逸<br/>状态修改型 builtin 是过滤盲区"] --> E2["Dev Tunnels LOTL 武器化<br/>合法工具变攻击面"]
+    E2 --> E3["AI Agent 作攻击放大器<br/>知识门槛降到行为理解"]
+    E3 --> P[".zshenv 启动文件无条件执行<br/>本地持久化"]
+    P --> SEV["严重性评估<br/>Microsoft SDL Bug Bar"]
+    SEV --> DEF["防御: 跟踪安全上下文操作<br/>workspace 写权限限制<br/>隧道独立授权 · injection 检测"]

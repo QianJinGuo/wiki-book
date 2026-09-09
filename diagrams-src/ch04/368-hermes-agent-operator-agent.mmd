@@ -1,0 +1,9 @@
+%% title: Hermes Agent Operator——把一个 Agent 养成可运营系统
+graph TD
+    ARCH["核心架构<br/>控制面 vs 运行面分离"] --> CR["控制室 5 文件模板"]
+    CR --> COMP["Agent 三组件与沉淀顺序"]
+    COMP --> PATH["三条访问路径<br/>强顺序链路不宜硬拆容器"]
+    PATH --> GATE["四道门: 原型到生产"]
+    GATE --> SEC["安全: 延迟触发型 Prompt Injection<br/>防御三层次"]
+    SEC --> ROUTE["模型路由: 任务-能力匹配"]
+    ROUTE --> WK["7 天落地行动清单<br/>先止血再健身"]
