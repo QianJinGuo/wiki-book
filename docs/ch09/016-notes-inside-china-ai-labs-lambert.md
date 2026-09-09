@@ -10,7 +10,7 @@ Notes from inside China's AI labs - by Nathan Lambert Subscribe Sign in Notes fr
 - [Blog Himanshuanand Com Score By Collisions Patch By Panic](https://github.com/QianJinGuo/wiki-public/blob/main/entities/blog-himanshuanand-com-score-by-collisions-patch-by-panic.md)
 - [Searchengineland Com Google Adds Llms Txt Check To Chrome Lighthouse](https://github.com/QianJinGuo/wiki-public/blob/main/entities/searchengineland-com-google-adds-llms-txt-check-to-chrome-lighthouse.md)
 - [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-os-level-actions-in-amazon-bedrock-agentcore-browser.md)
-- [Agentcore Managed Harness](../ch04/308-agentcore-managed-harness.html)
+- [Agentcore Managed Harness](../ch04/310-agentcore-managed-harness.html)
 
 → [原文存档](https://www.interconnects.ai/p/notes-from-inside-chinas-ai-labs)
 

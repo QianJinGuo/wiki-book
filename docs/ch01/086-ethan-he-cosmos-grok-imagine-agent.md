@@ -7,7 +7,7 @@
 
 ## 机制与论文
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md) — 13141字最全科普版
-- [Claude Code and What Comes Next](256-claude-code-and-what-comes-next.html) — 压缩/Skills/Subagents
+- [Claude Code and What Comes Next](257-claude-code-and-what-comes-next.html) — 压缩/Skills/Subagents
 - [Harness Engineering Deletable Worksite Ruofei](../ch05/039-harness-engineering-deletable-worksite-ruofei.html) — 可删工作现场：Vercel删80%工具成功率反升
 - [港中文 SLIM：动态技能生命周期管理，arXiv 2605.10923](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cuhk-slim-skill-lifecycle-agentic-rl-arxiv-2605-10923.md) — 技能生命周期研究
 - [Scenethesis（ICLR 2026）英伟达 & 普渡大学用 Agent 闭环实现文生 3D](https://github.com/QianJinGuo/wiki-public/blob/main/entities/iclr-2026-英伟达-普渡大学用agent闭环实现文生3d.md) — Scenethesis四阶段闭环，碰撞率6.1%→0.8%

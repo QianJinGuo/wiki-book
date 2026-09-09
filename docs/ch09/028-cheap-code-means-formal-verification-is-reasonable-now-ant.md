@@ -54,7 +54,7 @@ Confidence in your codebase can't be automated away. It's ultimately your job as
 
 ## 相关实体
 - [Apple Corecrypto Formal Verification Blueprint](https://github.com/QianJinGuo/wiki-public/blob/main/entities/apple-corecrypto-formal-verification-blueprint.md)
-- [Is Software Losing Its Head](../ch01/347-is-software-losing-its-head.html)
+- [Is Software Losing Its Head](../ch01/348-is-software-losing-its-head.html)
 - [Npm Supply Chain Compromise Postmortem](https://github.com/QianJinGuo/wiki-public/blob/main/entities/npm-supply-chain-compromise-postmortem.md)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloudflare-glasswing-mythos-security.md)
 - [When Growth Slows Is It Sales Fault Or The Products Fault The Answer Has Changed](https://github.com/QianJinGuo/wiki-public/blob/main/entities/when-growth-slows-is-it-sales-fault-or-the-products-fault-the-answer-has-changed.md)

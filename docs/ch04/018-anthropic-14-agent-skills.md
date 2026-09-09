@@ -15,7 +15,7 @@
 - [Agent Skills 系统性综述：表示→获取→检索→进化](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skills-comprehensive-survey.md) — skill综述三元组
 - [Mythos for Offensive Security: XBOW's Evaluation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mythos_offensive_security_xbow_evaluatio.md) — XBOW评测6874字rv9全版：live-site悖论
 - [Skill自进化三路线：Trace2Skill归纳法 / EvoSkill验证闭环 / SkillOpt训练范式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-self-evolution-three-approaches.md) — 自进化三路线对比解析
-- [Anthropic N-days: Frontier Agent Vulnerability Research](313-anthropic-n-days-frontier-agent-vulnerability-research.html) — N-day研究
+- [Anthropic N-days: Frontier Agent Vulnerability Research](315-anthropic-n-days-frontier-agent-vulnerability-research.html) — N-day研究
 - [800行代码实现 Open Claw 的 Tool、消息总线、子Agent管理架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/open-claw-tool-bus-subagent-architecture.md) — 薄抽象显式控制流8802字rv9全版
 - [王云鹤眼中的Harness：复杂优化问题，AGI灵魂争夺之战](https://github.com/QianJinGuo/wiki-public/blob/main/entities/wangyunhe-harness-optimization-agentsoul.md) — Agent=Models+Harness联合优化
 - [Agent Skill 规范、构建与设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-spec-building-design-patterns.md) — skill规范与模式

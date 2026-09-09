@@ -59,7 +59,7 @@ Hacker News "Show HN" 发布期间，用户数一夜间翻了三倍，Superset �
 - **预览部署 + 实时 URL** 的组合是隔离开发环境的最简方案，无需为每个分支单独配置 CI。 
 
 ## 相关实体
-- [Why Internally-Built AI Fails Fund Accounting Audits](044-why-internally-built-ai-fails-fund-accounting-audits.html)
+- [Why Internally-Built AI Fails Fund Accounting Audits](378-why-internally-built-ai-fails-fund-accounting-audits.html)
 - [Why Internally-Built AI Fails Fund Accounting Audits](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-fails-fund-accounting-audits.md)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](https://github.com/QianJinGuo/wiki-public/blob/main/entities/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazo.md)
 - [使用 Kiro AI IDE 开发 基于Amazon EMR 的Flink 智能监控系统实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/developing-flink-monitoring-system-on-amazon-emr-with-kiro-ai-ide.md)

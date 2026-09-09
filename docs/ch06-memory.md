@@ -114,7 +114,7 @@ AML 首期榜单发布后 48 小时内，GitHub、Hugging Face 及 Twitter/X 等
 - [Claude Code 源码深度解析（13 核心机制）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-source-deep-dive-warrior.md) — 13机制rv10
 - [Claude Code Openclaw Memory Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-openclaw-memory-comparison.md) — 记忆系统对比rv9
 - [MemOS Hermes 记忆插件](https://github.com/QianJinGuo/wiki-public/blob/main/entities/memos-hermes-plugin.md) — MemOS插件：智能去重+混合检索7225字
-- [Openclaw Multi Agent Team Practice V2](ch04/356-openclaw-multi-agent-team-practice-v2.html) — 七Agent花园团队：专精胜于全能12180字全版
+- [Openclaw Multi Agent Team Practice V2](ch04/358-openclaw-multi-agent-team-practice-v2.html) — 七Agent花园团队：专精胜于全能12180字全版
 - [MFS：zilliztech 的 Agent 统一上下文 harness，一套动词打通 20+ 数据源](https://github.com/QianJinGuo/wiki-public/blob/main/entities/zilliztech-mfs-open-tag-claude-tag-shuge-2026.md) — 统一动词文件树寻址
 - [Claude Code 从 Demo 到产线 · 企业 Harness 工程化的 8 道关卡（黄佳/咖哥 CSDN）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-demo-to-production-8-gates-huang-jia-csdn-2026.md) — 8道关卡清单
 - [阿里云 MSE AI 任务调度 + Agent Sandbox：动态休眠/唤醒 OpenClaw Agent 成本下降 90%+](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aliyun-mse-ai-task-scheduling-agent-sandbox-cost-90-percent.md) — 休眠唤醒短条borderline
@@ -296,7 +296,7 @@ Open Tag 是 demo/reference implementation，不是生产安全边界——没�
 
 ## 关联
 
-- [Introducing Claude Tag](ch01/459-introducing-claude-tag.html) — Open Tag 复刻的 Anthropic 范式
+- [Introducing Claude Tag](ch01/460-introducing-claude-tag.html) — Open Tag 复刻的 Anthropic 范式
 - [Anthropic Knowledge Work Plugins 分析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/knowledge-work-plugins-anthropic-source-analysis.md) — Skills 的渐进式披露，MFS 用不同方式解决相同问题
 - [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — MFS 作为 Agent 上下文 harness 的基础设施层
 
@@ -438,7 +438,7 @@ FTS5 的关键词搜索 + SQLite 的 session 聚合 + parent_session_id 的关�
 ## 相关实体
 
 - [Hermes Agent 三级 Memory 架构解析（One掌柜视角）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-three-layer-memory-one.md) — 同一作者的另一篇分析
-- [AI Agent 记忆系统架构](ch04/113-how-ai-agent-memory-works.html) — Agent 记忆系统的通识性框架
+- [AI Agent 记忆系统架构](ch04/115-how-ai-agent-memory-works.html) — Agent 记忆系统的通识性框架
 - [17种Agent架构演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/17-agent-architectures-evolution.md) — 记忆设计在 Agent 演化中的位置
 
 - [Hermes Agent Core Architecture Self Evolution](https://github.com/QianJinGuo/wiki-public/blob/main/queries/hermes-agent-core-architecture-self-evolution.md)
@@ -900,7 +900,7 @@ CrewAI 的"不同 agent 访问同一 memory 但有不同 recall 权重"设计是
 
 ## 相关实体
 - [Memory Agent Systems Cobanov](https://github.com/QianJinGuo/wiki-public/blob/main/entities/memory-agent-systems-cobanov.md)
-- [Stripe Sessions 2026 Ai Agents](ch04/187-stripe-sessions-2026-ai-agents.html)
+- [Stripe Sessions 2026 Ai Agents](ch04/189-stripe-sessions-2026-ai-agents.html)
 - [Production Harness 12 Components Framework Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/production-harness-12-components-framework-comparison.md)
 - [Hermes Self Evolution Closed Loop Skill Reuse Winty](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-self-evolution-closed-loop-skill-reuse-winty.md)
 - [Agent Memory Architecture Past Influence Future Ruofei](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture-past-influence-future-ruofei.md)
@@ -993,7 +993,7 @@ Embedding 擅长文本相似度，但无法处理：
 ## 相关实体
 - [AgentMemory — Coding Agent 本地记忆](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentmemory-coding-agent-local-memory.md) — Agent 记忆工程实践
 - [Hermes Agent 三层 Memory](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-three-layer-memory-one.md) — 工程实现视角
-- [AI Agent 记忆系统架构](ch04/113-how-ai-agent-memory-works.html)
+- [AI Agent 记忆系统架构](ch04/115-how-ai-agent-memory-works.html)
 - [上下文工程：三种 Agent Memory 方案对比实验](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-engineering-three-memory-paradigms.md)
 - [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/karpathy-llm-wiki-v2.md)
 - [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-wiki-obsidian-wiki-gbrain-self-organization-self-evolution.md)
@@ -2353,7 +2353,7 @@ Reflexion / ExpeL / ReMe 都在回答：经历如何不只是被保存，而是�
 ## 相关实体
 - [Context Engineering Three Memory Paradigms](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-engineering-three-memory-paradigms.md)
 - [Agent Memory Architecture Essence](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture-essence.md)
-- [How Ai Agent Memory Works](ch04/113-how-ai-agent-memory-works.html)
+- [How Ai Agent Memory Works](ch04/115-how-ai-agent-memory-works.html)
 - [Agent Memory Architecture Past Influence Future Ruofei](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture-past-influence-future-ruofei.md)
 - [Agent Memory Architecture Ruofei](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture-ruofei.md)
 
@@ -2667,7 +2667,7 @@ D2L 的方向（将知识编码进模型权重）逻辑上可行，当前瓶颈�
 - **专有模型**：针对文档编码任务训练专用 encoder-decoder，直接输出权重而非通过 hypernetwork 映射
 
 ## 相关实体
-- [AI Agent 记忆系统架构](ch04/113-how-ai-agent-memory-works.html)
+- [AI Agent 记忆系统架构](ch04/115-how-ai-agent-memory-works.html)
 - [LLM Wiki 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-wiki-architecture.md)
 - [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-wiki-obsidian-wiki-gbrain-self-organization-self-evolution.md)
 - [hermes-agent-self-evolving-source-analysis](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-self-evolving-source-analysis.md)

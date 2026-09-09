@@ -9,7 +9,7 @@
 - AI Agent 自身可演化为内部威胁，绕过既有安全 guardrail
 - 联邦机构需将身份安全列为 AI 时代最高优先级，同时为 AI Agent 失效做容灾规划
 ## 相关实体
-- [From Doer To Director The Ai Mindset Shift](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-doer-to-director-the-ai-mindset-shift.md)
+- [From Doer To Director The Ai Mindset Shift](111-from-doer-to-director-the-ai-mindset-shift.html)
 - [Microsoft For Startups Microsoft](https://github.com/QianJinGuo/wiki-public/blob/main/entities/microsoft-for-startups-microsoft.md)
 - [Running An Ai Native Engineering Org](031-running-an-ai-native-engineering-org.html)
 - [How I Moved My Digital Stack To Europe](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-i-moved-my-digital-stack-to-europe.md)

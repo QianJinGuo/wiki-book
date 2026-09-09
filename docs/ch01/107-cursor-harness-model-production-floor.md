@@ -13,7 +13,7 @@
 - [Hugging Face AI Agent 术语表：Model / Agent / Scaffolding / Harness / Context Engineering / Policy / Tool / Skill / Sub-agent 完整区分](https://github.com/QianJinGuo/wiki-public/blob/main/entities/huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent.md) — HF术语表16399字：Scaffolding/Harness/Policy辨析
 - [State of Memory in Agent Harness — mem0 视角的九大 harness 横评](https://github.com/QianJinGuo/wiki-public/blob/main/entities/state-of-memory-in-agent-harness-mem0-2026.md) — 九大harness记忆横评
 - [Harness Engineering 综合论述：为什么 2026 年真正重要的是它（含 ECC 开源实现案例）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-paradigm-comprehensive-2026.md) — 综合论述17305字含ECC案例rv9
-- [Anthropic N-days: Frontier Agent Vulnerability Research](../ch04/313-anthropic-n-days-frontier-agent-vulnerability-research.html) — N-day研究
+- [Anthropic N-days: Frontier Agent Vulnerability Research](../ch04/315-anthropic-n-days-frontier-agent-vulnerability-research.html) — N-day研究
 - [Anthropic：生物学Agent的瓶颈不在模型，而在数据基础设施](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-biology-agent-data-infrastructure-virbench.md) — 数据基础设施瓶颈
 - [一篇看懂 Agent Harness 的结构！ — 12组件+7决策完整框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-12-components-7-decisions.md) — harness 12组件框架
 - ['Harness 之后：状态边界与失败闭环（若飞续篇）'](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-之后-状态边界与失败闭环-ruofei.md) — 运行时契约/提交闸门/失败回写10308字全版
@@ -28,8 +28,8 @@
 - [Codex /goal：长任务Agent的目标运行时](https://github.com/QianJinGuo/wiki-public/blob/main/entities/codex-goal-agent-runtime.md) — goal运行时rv9主版
 - [高德 AI-Native 生产线（第 3 期）：7x24 Self-Healing Pipeline + Agent 自进化](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gaode-ai-native-7x24-pipeline-self-healing.md) — 7×24自愈生产线15428字rv9全版
 - [Harness如何支撑Agent在生产环境稳定运行？](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-production-agent-engineering-deficit.md) — 工程赤字+Claude Code退化事故+四支柱审查
-- [Anthropic Demystifying Evals for AI Agents](../ch04/067-anthropic-demystifying-evals-for-ai-agents.html) — eval概念框架
-- [Stripe Financial Compliance AI Agent: Production Lessons](../ch04/329-stripe-financial-compliance-ai-agent-production-lessons.html) — ReAct+DAG生产经验
+- [Anthropic Demystifying Evals for AI Agents](../ch04/069-anthropic-demystifying-evals-for-ai-agents.html) — eval概念框架
+- [Stripe Financial Compliance AI Agent: Production Lessons](../ch04/331-stripe-financial-compliance-ai-agent-production-lessons.html) — ReAct+DAG生产经验
 - [SchemaFlow: OpenAI Cookbook Partner — Agentic Database Change Impact Analysis, SQL Generation, and Eval Guardrails](https://github.com/QianJinGuo/wiki-public/blob/main/entities/schemaflow-openai-cookbook-staged-agentic-workflow.md) — 五阶段staged workflow+Pydantic约束+Promptfoo护栏
 - [长周期-agent-详解-从-ralph-loop-到可接管-harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/长周期-agent-详解-从-ralph-loop-到可接管-harness.md) — Ralph loop到接管harness
 

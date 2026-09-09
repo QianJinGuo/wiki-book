@@ -1,0 +1,41 @@
+# Hermes Agent /goal 长任务运行时架构拆解：状态持久化、Judge 闭环与自主续航
+
+> 📊 Level ⭐ | 4.7KB | `entities/hermes-agent-goal-runtime-architecture-state-persistence-judge-closed-loop.md`
+
+> 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.8**，已按导航页（MOC）重建；
+> 原文备份见 `_archive/hub-rewrite-2026-09-07/hermes-agent-goal-runtime-architecture-state-persistence-judge-closed-loop.md`，一手来源仍见下方 sources。
+
+## 机制与论文
+- [Agent Harness 架构设计与实现：生产级 Agent 系统落地指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture-design-production-guide.md) — 七层金字塔生产指南
+- [17种Agent架构演进：控制流设计的完整演化史](https://github.com/QianJinGuo/wiki-public/blob/main/entities/17-agent-architectures-evolution.md) — 17架构系统拆解高价值
+- [AI Agent 架构设计（七）：Skills 系统设计（OpenClaw、Claude Code、Hermes Agent 对比）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-system-design-three-way-comparison.md) — 三框架skill系统设计对比
+- [Rein：4 模块 + 5 类型边界防止 agent.go 膨胀到 3000 行](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rein-go-agent-4-modules-5-type-boundaries.md) — 4模块+5类型边界+7不变量：数据契约防上帝文件
+- [Coding Harness 工程本质：从 Pi 到 OpenClaw](https://github.com/QianJinGuo/wiki-public/blob/main/entities/pi-openclaw-coding-harness.md) — Harness八能力+五工程模式：Context像投影8441字rv9
+- [Context Window Management Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-window-management-comparison.md) — 四框架对比rv9
+- [800行代码实现 Open Claw 的 Tool、消息总线、子Agent管理架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/open-claw-tool-bus-subagent-architecture.md) — 薄抽象显式控制流8802字rv9全版
+- [Hermes Agent 闭环学习机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-closed-learning-loop.md) — 闭环学习飞轮+Nudge触发+spawn_background_review
+- [MIRA + MPA：深度原理 AI Scientist 递归自训练打造材料基座模型，40 项实验全面 SOTA](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mira-mpa-deep-principle-ai4s-40-sota.md) — AI Scientist递归自训练，35/40胜前SOTA
+- [The Coming Loop](../ch01/475-the-coming-loop.html) — Ronacher两种循环区分
+- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-prompt-context-harness.md) — 三维度源码：23模块拼装+自适应分块+双层Memory
+- [Code as Agent Harness 综述](https://github.com/QianJinGuo/wiki-public/blob/main/entities/code-as-agent-harness-survey.md) — 102页综述
+
+## 工程实践
+- [Claude Code 源码核心机制详解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-core-internals.md) — 源码机制18k主版
+- [Claude Code 架构深度解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-deep-architecture-analysis.md) — 并发与延迟加载深析
+- [Claude Code Agent Teams 实战：怎么拆任务、控权限、收证据](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-agent-teams-task-decomposition-ruofei.md) — 拆任务控权限
+- [一点天下：Context Engineering 与 Agentic AI (QCon)](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yidian-tianxia-context-engineering-agentic-ai-qcon.md) — 7114字最全六层上下文版
+- [Impeccable：把 AI 前端设计变成可检查的工作流 — 33.4k Star 开源项目深度分析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/impeccable-frontend-design-skill-harness-vibecoder.md) — Impeccable四层架构9210字rv9全版
+- [Subagents 详解：Claude Code 如何避免上下文污染](https://github.com/QianJinGuo/wiki-public/blob/main/entities/subagents-详解claude-code-如何避免上下文污染.md) — 上下文卫生subagent详解
+- [淘天营销中后台生码工作流最佳实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tmall-marketing-ai-workflow-best-practices.md) — 10826字最全生码工作流
+- [Hermes-Agent 官方 Kanban 深度实测：让商业 CLI 工具当 Orchestrator](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-kanban-deep-test-by-wjjagi-2026.md) — Kanban深度实测+七条bug 7101字rv9全版
+- [精选 8 个 UI 设计师必备的 AI 智能体技能（Agent Skills）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/精选-8-个-ui-设计师必备的-ai-智能体技能agent-skills.md) — 三层技能架构persist设计
+- [Claude Code 架构解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-architecture.md) — 架构解析母篇
+- [Claude Code 源码拆解：从启动到多 Agent 扩展层](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-source-architecture.md) — 八大模块三条链路
+- [Claude Code Prompt 提示词体系源码解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-prompt-source-analysis.md) — 六大prompt模块全版
+
+## 延伸导航
+- [Agent Memory 架构选择的关键决策点是什么？](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-memory-architecture-decision-points.md)
+- [Agent 工程全景指南](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-engineering-guide.md)
+
+---
+

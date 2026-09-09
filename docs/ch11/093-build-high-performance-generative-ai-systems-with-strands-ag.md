@@ -109,7 +109,7 @@ GitHub: `aws-samples/sample-agentic-genai-agentcore/aws-genai-campaign-review-st
 - [Bedrock Agentcore Coding Agent Hosting](https://github.com/QianJinGuo/wiki-public/blob/main/entities/bedrock-agentcore-coding-agent-hosting.md)
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](https://github.com/QianJinGuo/wiki-public/blob/main/entities/building-multi-tenant-agents-with-amazon-bedrock-agentcore.md)
 - [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](https://github.com/QianJinGuo/wiki-public/blob/main/entities/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazo.md)
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/152-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
+- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/154-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
 - [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-一周综述amazon-bedrock-agentcore-付款适用于-aws-的-agent-工具套件等2026-年-5-月-11-日.md)
 
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/build-high-performance-generative-ai-systems-with-strands-agents-nvidia-nim-and-amazon-bedrock-agentcore/)

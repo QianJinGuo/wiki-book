@@ -6,10 +6,10 @@
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/2026-llm-rl-algorithms-deeplog-imba-ppo-dpo-grpo-marl.md`，一手来源仍见下方 sources。
 
 ## 机制与论文
-- [The Bitter Lesson versus The Garbage Can](../ch04/175-the-bitter-lesson-versus-the-garbage-can.html) — 苦味教训对组织流程路径
+- [The Bitter Lesson versus The Garbage Can](../ch04/177-the-bitter-lesson-versus-the-garbage-can.html) — 苦味教训对组织流程路径
 - [Scenethesis（ICLR 2026）英伟达 & 普渡大学用 Agent 闭环实现文生 3D](https://github.com/QianJinGuo/wiki-public/blob/main/entities/iclr-2026-英伟达-普渡大学用agent闭环实现文生3d.md) — Scenethesis四阶段闭环，碰撞率6.1%→0.8%
 - [OPD 重新审视失败模式与简单修复](https://github.com/QianJinGuo/wiki-public/blob/main/entities/opd-revisiting-failure-modes-simple-fixes-storm.md) — OPD失败模式诊断+低成本稳定实现
-- [The distillation panic](151-the-distillation-panic.html) — 蒸馏术语政策分析
+- [The distillation panic](152-the-distillation-panic.html) — 蒸馏术语政策分析
 - [Introducing 1-bit and Ternary Bonsai Image 4B: Image Generation for Local Devices](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-1-bit-and-ternary-bonsai-image-4b-image-generati-352fe9.md) — 1-bit/ternary量化图像生成规格
 - [Introducing 1-bit and Ternary Bonsai Image 4B: Image Generation for Local Devices](https://github.com/QianJinGuo/wiki-public/blob/main/entities/news-bonsai-image-4b.md) — Bonsai Image 4B量化帕累托外推3664字全版
 - [从零构建大语言模型 —— 读完这篇你就懂了](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-llm-from-scratch-7-chapters-zion.md) — LLM教程七章

@@ -72,7 +72,7 @@
 - [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](https://github.com/QianJinGuo/wiki-public/blob/main/entities/trace2skill-trajectory-distillation-agent-skills.md)
 - [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](https://github.com/QianJinGuo/wiki-public/blob/main/entities/qoder-skills-完全指南从零开始让-ai-按你的标准执行-v2.md)
 - [Thin Harness Fat Skills](https://github.com/QianJinGuo/wiki-public/blob/main/entities/thin-harness-fat-skills.md)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/304-tencent-vibe-coding-to-agentic-engineering-backend.html)
+- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/306-tencent-vibe-coding-to-agentic-engineering-backend.html)
 
 ---
 
