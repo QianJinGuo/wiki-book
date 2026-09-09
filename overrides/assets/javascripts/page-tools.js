@@ -1,12 +1,11 @@
 /**
  * Page tools — lightweight controls shared by the documentation pages.
  *
- * English opens the current Chinese page through the Google Translate proxy
- * (translate.goog). It is hidden on pages that are already English and on
- * local deployments where the proxy cannot resolve. Inside the proxy the
- * same control becomes an escape hatch back to the real site instead of
- * re-translating it, and the language switcher (alternate links, English
- * tab) is routed to the real site as well.
+ * English opens the curated English guide (/en/). Machine translation via
+ * translate.goog is not offered: Cloudflare bot protection challenges the
+ * Google Translate fetcher on the Pages deployment, so proxied pages 403
+ * and never load. Inside the translate.goog proxy (user arrived some other
+ * way) the control and the language switcher escape back to the real site.
  *
  * Mermaid reuses the existing diagram overlay; the control stays hidden
  * until the overlay reports readiness so it never shows up dead.
@@ -38,15 +37,6 @@
       if (REAL_ORIGINS.indexOf(host) !== -1) return 'https://' + host;
     }
     return 'https://jinguo.tech';
-  }
-
-  function translateUrl() {
-    if (inTranslateProxy()) {
-      return realOrigin() + window.location.pathname + window.location.search;
-    }
-    return 'https://' + window.location.hostname.replace(/\./g, '-') + '.translate.goog' +
-      window.location.pathname + window.location.search +
-      '?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=' + encodeURIComponent(navigator.language || 'en-US');
   }
 
   function showToast(message) {
@@ -104,25 +94,26 @@
       });
     }
 
-    // Translate: only offered on Chinese pages of real deployments.
+    // English: curated guide on Chinese pages; escape hatch inside the
+    // translate proxy; hidden where there is nothing English to reach.
     var translate = tools.querySelector('.wiki-book-tool--translate');
     var label = translate.querySelector('.wiki-book-tool__label');
     if (isEnglishPage() || isLocalHost()) {
       translate.style.display = 'none';
+    } else if (inTranslateProxy()) {
+      translate.style.display = '';
+      translate.href = realOrigin() + '/en/';
+      translate.removeAttribute('target');
+      label.textContent = 'English';
+      translate.title = '打开英文版导览';
+      translate.setAttribute('aria-label', '打开英文版导览');
     } else {
       translate.style.display = '';
-      translate.href = translateUrl();
-      if (inTranslateProxy()) {
-        label.textContent = '原文';
-        translate.title = '退出翻译，回到原始站点';
-        translate.target = '_self';
-        translate.setAttribute('aria-label', '回到原始站点');
-      } else {
-        label.textContent = 'English';
-        translate.title = '用 Google 翻译打开英文版';
-        translate.target = '_blank';
-        translate.setAttribute('aria-label', '翻译为英文');
-      }
+      translate.href = '/en/';
+      translate.removeAttribute('target');
+      label.textContent = 'English';
+      translate.title = '英文版导览（含完整英文书入口）';
+      translate.setAttribute('aria-label', '打开英文版导览');
     }
 
     // Mermaid: hidden until the diagram overlay is actually ready, so the
