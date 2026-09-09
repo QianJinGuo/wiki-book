@@ -1,0 +1,5 @@
+%% title: AgentCore Gateway——安全 Auth Code Flow
+graph TD
+    DUAL["Gateway 双角色<br/>OAuth 资源服务器加 MCP 代理"] ==> PKCE["PKCE 与无密钥客户端<br/>设计的安全意义"]
+    PKCE ==> VERIFY["令牌验证灵活性<br/>Gateway 的 IdP 中立性"]
+    VERIFY ==> REFRESH["刷新令牌生命周期管理<br/>MCP OAuth Proxy 桥接与实验性"]

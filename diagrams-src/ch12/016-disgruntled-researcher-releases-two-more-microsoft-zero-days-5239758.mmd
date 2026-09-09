@@ -1,0 +1,5 @@
+%% title: 不满研究员再放微软零日——BitLocker 旁路与提权
+graph TD
+    YELLOWKEY["YellowKey: 按键序列加 USB<br/>绕过 BitLocker 需物理接触"] ==> GREENPLASMA["GreenPlasma: 提权到 SYSTEM<br/>默认配置触发 UAC 提示"]
+    GREENPLASMA ==> REAL["PoC 迅速被真实攻击滥用<br/>报复性披露的产业代价"]
+    REAL ==> BASELINE["不依赖厂商响应的安全基线<br/>BitLocker PIN 加 BIOS 锁缓解"]

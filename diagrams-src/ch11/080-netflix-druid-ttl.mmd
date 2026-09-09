@@ -1,0 +1,5 @@
+%% title: Netflix Druid 区间感知缓存——指数 TTL 加分桶去重
+graph TD
+    PROBLEM["滚动窗口查询的隐式 DDoS<br/>标准缓存失效"] ==> PROXY["区间感知缓存拦截代理<br/>优于原生集成"]
+    PROXY ==> TTL["指数 TTL 的信息论直觉<br/>平衡新鲜度与缓存效率"]
+    TTL ==> NEG["负面缓存三态逻辑<br/>区分无数据与数据未到达"]
