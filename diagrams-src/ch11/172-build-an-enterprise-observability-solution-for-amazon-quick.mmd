@@ -1,0 +1,9 @@
+%% title: Amazon Quick 企业级可观测方案部署
+graph TD
+    PRE["前置条件"] --> VL["Set up vended logs<br/>日志投递"]
+    VL --> DP["部署数据管道<br/>KMS 统一加密"]
+    DP --> DC["数据目录<br/>Lake Formation 访问控制"]
+    DC --> QS["QuickSight 仪表盘"]
+    DC --> CA["自定义 Chat Agent<br/>双层消费模式"]
+    QS --> GOV["数据保护与合规边界<br/>cleanup.py 纳入 IaC"]
+    CA --> GOV

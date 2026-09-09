@@ -1,0 +1,7 @@
+%% title: AI Agent 内核是 250 行 while 循环——Python 加 Ollama 七阶段教程
+graph TD
+    ST12["Stage 1-2<br/>15 行 while True 骨架<br/>工具调用协议"] --> ST34["Stage 3-4<br/>Skill 动态加载<br/>斜杠命令"]
+    ST34 --> ST56["Stage 5-6<br/>JSON 持久化<br/>上下文自动压缩"]
+    ST56 --> ST7["Stage 7<br/>后台定时循环<br/>分片 sleep 独立消息列表"]
+    ST7 --> INS["核心经验<br/>description 是 LLM 决策唯一契约<br/>压缩须重注入 persona"]
+    INS --> GAP["与 Claude Code 生产版差距"]

@@ -1,0 +1,6 @@
+%% title: OpenClaw 迁移 Bedrock AgentCore——消息渠道与监控
+graph TD
+    D["多租户 Serverless 架构部署完成"] --> CH["配置消息渠道<br/>选项 A: Telegram<br/>选项 B: 飞书"]
+    CH --> SEND["发送消息验证连通"]
+    SEND --> MON["查看监控和日志<br/>X-Ray 追踪"]
+    MON -.运维闭环.-> CH

@@ -1,0 +1,8 @@
+%% title: Self-Harness——上海 AI Lab 的 Agent 自我改进 Harness 范式
+graph TD
+    WM["阶段一 弱点挖掘<br/>Weakness Mining"] --> HP["阶段二 Harness 提案<br/>生成补丁"]
+    HP --> PV["阶段三 提案验证<br/>接受门极其保守"]
+    PV -->|"接受"| H["Harness 进化<br/>MiniMax 42.2 到 53.9<br/>Qwen 20.3 到 36.7<br/>GLM 46.1 到 57.0"]
+    PV -->|"拒绝"| WM
+    H --> CASE["补丁改变真实执行轨迹<br/>探索型转工程型 · 有界探索<br/>Middleware 级干预"]
+    CASE -.分支搜索与合并.-> WM

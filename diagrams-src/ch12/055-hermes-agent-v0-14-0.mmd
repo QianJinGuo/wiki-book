@@ -1,0 +1,9 @@
+%% title: Hermes Agent v0.14.0 核心架构与快速上手
+graph TD
+    SP["System Prompt 三层架构"] --> LOOP["Agent Loop 思考-行动循环"]
+    LOOP --> TOOLS["工具自动发现机制"]
+    TOOLS --> CLI["CLI 核心命令<br/>AIAgent 核心接口"]
+    CLI --> SOUL["SOUL.md 专题<br/>stable 层 14 部分<br/>加载链路 7 步"]
+    SOUL --> P["14 内置 personality<br/>加 overlay 机制"]
+    SOUL -.安全扫描.-> GUARD["_scan_context_content"]
+    SOUL -.对比.-> AG["AGENTS.md<br/>判断准则分离"]

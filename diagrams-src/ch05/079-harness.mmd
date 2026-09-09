@@ -1,0 +1,8 @@
+%% title: Harness 之后——状态边界与失败闭环
+graph TD
+    SC["状态提交链路<br/>候选 → 已验证 → 已执行 → 已提交"] --> GATE["状态提交闸门<br/>跳级是事故本质模式"]
+    TR["Trace 回写<br/>前馈反馈 × 计算语义二维矩阵"] --> THREE["先做三件事<br/>运行时契约 · 提交闸门 · 失败回写"]
+    GATE --> THREE
+    THREE --> MB["记忆预算观<br/>替代记忆仓库思维"]
+    MB --> CONC["三条分歧: 模型 vs Harness 边界<br/>Harness 是放大器非银弹"]
+    CONC --> PR["落地: 先稳再自动化<br/>错误回写表持续改进"]

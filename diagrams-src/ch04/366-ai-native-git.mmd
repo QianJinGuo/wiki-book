@@ -1,0 +1,9 @@
+%% title: AI Native 项目管理——两个 Git 仓库替代周报与效能报表
+graph TD
+    P["核心命题: Git 是唯一 Source of Truth"] --> R1["业务跟踪仓库<br/>定性 · 三层数据架构<br/>merge.sh 核心规则"]
+    P --> R2["效能度量仓库<br/>定量 · 三层度量体系<br/>14 个 SQL 并行查询"]
+    R1 --> SK["Skill 即 SOP<br/>隐性知识编码成可执行代码"]
+    R2 --> SQL["SQL 即度量定义"]
+    SK --> MINE["问题挖掘与依赖协同 Skill"]
+    SQL --> MINE
+    MINE --> L3["AI 参与三个层次<br/>没有测试治具的迭代等于生产实验"]
