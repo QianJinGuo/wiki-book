@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Loop 的产品视角",
+  "code": "graph TD\n    CORE[\"Loop 的产品视角\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

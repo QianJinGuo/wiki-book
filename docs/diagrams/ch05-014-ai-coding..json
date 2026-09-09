@@ -1,0 +1,7 @@
+[
+ {
+  "title": "场景营销前端 AI Coding — 从问题到方案",
+  "code": "graph TD\n    CORE[\"场景营销前端 AI Coding — 从问题到方案\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

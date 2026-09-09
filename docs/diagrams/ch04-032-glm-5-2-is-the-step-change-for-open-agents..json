@@ -1,0 +1,7 @@
+[
+ {
+  "title": "GLM-5.2 is the step change for open agen",
+  "code": "graph TD\n    CORE[\"GLM-5.2 is the step change for open agen\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

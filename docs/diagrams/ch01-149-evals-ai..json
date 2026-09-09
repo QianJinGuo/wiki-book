@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Evals 到底在评什么——AI 评估三种方法",
+  "code": "graph TD\n    M3[\"三种评估方法\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

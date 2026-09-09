@@ -1,0 +1,7 @@
+[
+ {
+  "title": "NVIDIA XR AI",
+  "code": "graph TD\n    CORE[\"NVIDIA XR AI\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

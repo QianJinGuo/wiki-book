@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Agent orchestration",
+  "code": "graph TD\n    CORE[\"Agent orchestration\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

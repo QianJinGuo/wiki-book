@@ -1,0 +1,7 @@
+[
+ {
+  "title": "高德 AI 资产度量与评价体系",
+  "code": "graph TD\n    CORE[\"高德 AI 资产度量与评价体系\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

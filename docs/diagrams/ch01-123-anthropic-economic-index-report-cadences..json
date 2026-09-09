@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Anthropic Economic Index report: Cadence",
+  "code": "graph TD\n    CORE[\"Anthropic Economic Index report: Cadence\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

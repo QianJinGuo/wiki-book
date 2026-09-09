@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Jane Street — 形式化方法与编程的未来",
+  "code": "graph TD\n    CORE[\"Jane Street — 形式化方法与编程的未来\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

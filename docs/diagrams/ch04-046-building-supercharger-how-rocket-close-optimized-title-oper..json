@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Rocket Close 优化标题操作",
+  "code": "graph TD\n    CASE[\"Supercharger: Rocket Close<br/>优化标题操作实践\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

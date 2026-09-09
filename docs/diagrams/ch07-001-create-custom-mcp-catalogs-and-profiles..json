@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Create Custom MCP Catalogs and Profiles",
+  "code": "graph TD\n    CORE[\"Create Custom MCP Catalogs and Profiles\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

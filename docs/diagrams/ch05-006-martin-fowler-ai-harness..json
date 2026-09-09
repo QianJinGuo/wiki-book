@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Martin Fowler AI 研发 Harness",
+  "code": "graph TD\n    CORE[\"Martin Fowler AI 研发 Harness\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

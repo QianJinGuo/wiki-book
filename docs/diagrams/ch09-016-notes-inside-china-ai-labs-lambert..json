@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Nathan Lambert——中国 AI 实验室见闻",
+  "code": "graph TD\n    NOTES[\"Nathan Lambert<br/>中国 AI 实验室内部观察\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

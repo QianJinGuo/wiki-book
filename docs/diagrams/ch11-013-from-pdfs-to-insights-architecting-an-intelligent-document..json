@@ -1,0 +1,7 @@
+[
+ {
+  "title": "From PDFs to insights: Architecting an i",
+  "code": "graph TD\n    CORE[\"From PDFs to insights: Architecting an i\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

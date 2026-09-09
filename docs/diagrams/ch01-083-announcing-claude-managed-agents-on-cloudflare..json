@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Announcing Claude Managed Agents on Clou",
+  "code": "graph TD\n    CORE[\"Announcing Claude Managed Agents on Clou\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

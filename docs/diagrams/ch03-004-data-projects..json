@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Data Projects",
+  "code": "graph TD\n    CORE[\"Data Projects\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

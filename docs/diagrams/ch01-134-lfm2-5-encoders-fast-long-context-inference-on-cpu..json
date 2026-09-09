@@ -1,0 +1,7 @@
+[
+ {
+  "title": "LFM2.5-Encoders: Fast Long-Context Infer",
+  "code": "graph TD\n    CORE[\"LFM2.5-Encoders: Fast Long-Context Infer\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

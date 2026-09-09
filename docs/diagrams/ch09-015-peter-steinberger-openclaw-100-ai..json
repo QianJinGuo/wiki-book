@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Peter Steinberger OpenClaw 100% AI",
+  "code": "graph TD\n    STEIN[\"Peter Steinberger<br/>OpenClaw 100% AI 实践\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

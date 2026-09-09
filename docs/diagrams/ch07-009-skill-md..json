@@ -1,0 +1,7 @@
+[
+ {
+  "title": "用 SKILL.md 做简历生成器",
+  "code": "graph TD\n    RESUME[\"SKILL.md 做简历生成器\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

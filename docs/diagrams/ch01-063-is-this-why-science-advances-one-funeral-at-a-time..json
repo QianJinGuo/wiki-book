@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Is This Why Science Advances One Funeral",
+  "code": "graph TD\n    CORE[\"Is This Why Science Advances One Funeral\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

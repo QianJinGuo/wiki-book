@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Running an AI-native engineering org",
+  "code": "graph TD\n    CORE[\"Running an AI-native engineering org\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Intelligence Per Dollar",
+  "code": "graph TD\n    CORE[\"Intelligence Per Dollar\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

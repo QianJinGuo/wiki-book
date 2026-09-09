@@ -1,0 +1,7 @@
+[
+ {
+  "title": "🎙️ How I AI: How to write AI agent loops",
+  "code": "graph TD\n    CORE[\"🎙️ How I AI: How to write AI agent loops\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

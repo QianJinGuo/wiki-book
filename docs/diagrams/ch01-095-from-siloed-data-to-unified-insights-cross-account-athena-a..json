@@ -1,0 +1,7 @@
+[
+ {
+  "title": "From siloed data to unified insights: Cr",
+  "code": "graph TD\n    CORE[\"From siloed data to unified insights: Cr\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Flow2Spec——开发过程自然长出知识图谱",
+  "code": "graph TD\n    FLOW[\"Flow2Spec: 开发过程自然长出<br/>知识图谱的 Agent 工程框架\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

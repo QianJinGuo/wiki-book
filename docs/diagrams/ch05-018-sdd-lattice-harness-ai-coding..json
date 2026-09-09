@@ -1,0 +1,7 @@
+[
+ {
+  "title": "从渐进式 SDD 到 Lattice Harness",
+  "code": "graph TD\n    CORE[\"从渐进式 SDD 到 Lattice Harness\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

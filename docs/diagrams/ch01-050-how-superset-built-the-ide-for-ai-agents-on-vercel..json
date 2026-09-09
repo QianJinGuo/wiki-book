@@ -1,0 +1,7 @@
+[
+ {
+  "title": "How Superset built the IDE for AI agents",
+  "code": "graph TD\n    CORE[\"How Superset built the IDE for AI agents\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

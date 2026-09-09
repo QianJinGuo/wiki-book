@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Karpathy 最新访谈",
+  "code": "graph TD\n    CORE[\"Karpathy 最新访谈\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

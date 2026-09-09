@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Build agents, not pipelines",
+  "code": "graph TD\n    CORE[\"Build agents, not pipelines\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

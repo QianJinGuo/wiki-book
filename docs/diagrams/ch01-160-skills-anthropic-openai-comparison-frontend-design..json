@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Skills Anthropic Openai Comparison",
+  "code": "graph TD\n    CORE[\"Skills Anthropic Openai Comparison \"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

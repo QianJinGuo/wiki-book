@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AgentCore 加 Strands 构建企业 Agent",
+  "code": "graph TD\n    BUILD[\"AgentCore 加 Strands<br/>构建企业级 Agent\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "用 Strands Agents SDK 构建确定性数据分析",
+  "code": "graph TD\n    CORE[\"用 Strands Agents SDK 构建确定性数据分析\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

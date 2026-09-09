@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Vibe Coding in Production — Erik Schlunt",
+  "code": "graph TD\n    CORE[\"Vibe Coding in Production — Erik Schlunt\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

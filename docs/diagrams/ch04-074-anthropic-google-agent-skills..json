@@ -1,0 +1,7 @@
+[
+ {
+  "title": "从 Anthropic 到 Google",
+  "code": "graph TD\n    CORE[\"从 Anthropic 到 Google\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

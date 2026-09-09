@@ -1,0 +1,7 @@
+[
+ {
+  "title": "达尔文 Skill 2.0 开源——Skill 自我进化",
+  "code": "graph TD\n    EVOLVE[\"达尔文 Skill 2.0 开源<br/>Skill 自我进化能力\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

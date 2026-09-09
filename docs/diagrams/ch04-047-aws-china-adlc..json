@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AWS China 企业级智能体评估方法论 ADLC",
+  "code": "graph TD\n    ADLC[\"ADLC 评估方法论<br/>AWS China 企业级智能体\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

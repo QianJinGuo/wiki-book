@@ -1,0 +1,7 @@
+[
+ {
+  "title": "低代码框架自研 Agent 分别适合谁",
+  "code": "graph TD\n    T3[\"三种 Agent: 低代码 框架 自研<br/>分别适合不同团队和场景\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

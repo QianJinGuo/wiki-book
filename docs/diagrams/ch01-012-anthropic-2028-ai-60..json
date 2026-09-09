@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Anthropic 联创",
+  "code": "graph TD\n    CORE[\"Anthropic 联创\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

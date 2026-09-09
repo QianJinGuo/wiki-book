@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Edge AI Networking — Wi-Fi 7/8 Convergen",
+  "code": "graph TD\n    CORE[\"Edge AI Networking — Wi-Fi 7/8 Convergen\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

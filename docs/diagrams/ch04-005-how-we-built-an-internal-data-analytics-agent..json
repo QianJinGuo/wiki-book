@@ -1,0 +1,7 @@
+[
+ {
+  "title": "How we built an internal data analytics",
+  "code": "graph TD\n    CORE[\"How we built an internal data analytics \"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "打造可靠的 AI 编程环境",
+  "code": "graph TD\n    CORE[\"打造可靠的 AI 编程环境\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

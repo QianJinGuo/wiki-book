@@ -1,0 +1,7 @@
+[
+ {
+  "title": "快手 RCA Agent",
+  "code": "graph TD\n    CORE[\"快手 RCA Agent\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

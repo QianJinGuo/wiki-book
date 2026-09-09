@@ -1,0 +1,7 @@
+[
+ {
+  "title": "How To Measure Development Productivity?",
+  "code": "graph TD\n    CORE[\"How To Measure Development Productivity?\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

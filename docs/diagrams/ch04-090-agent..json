@@ -1,0 +1,7 @@
+[
+ {
+  "title": "小刘商业 Agent 增强层通用基座",
+  "code": "graph TD\n    CORE[\"小刘商业 Agent 增强层通用基座\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "企业做完 AI PoC 为什么上不了生产",
+  "code": "graph TD\n    GAP[\"AI PoC 到生产的鸿沟<br/>为什么还是上不了生产\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

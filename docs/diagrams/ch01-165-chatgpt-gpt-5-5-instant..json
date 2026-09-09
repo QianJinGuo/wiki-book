@@ -1,0 +1,7 @@
+[
+ {
+  "title": "ChatGPT默认模型大升级，GPT-5.5 Instant正式上线",
+  "code": "graph TD\n    CORE[\"ChatGPT默认模型大升级，GPT-5.5 Instant正式上线\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Toto 2.0: Time series forecasting enters",
+  "code": "graph TD\n    CORE[\"Toto 2.0: Time series forecasting enters\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

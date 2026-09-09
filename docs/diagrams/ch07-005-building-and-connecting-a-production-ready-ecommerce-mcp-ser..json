@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Building and connecting a production-rea",
+  "code": "graph TD\n    CORE[\"Building and connecting a production-rea\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

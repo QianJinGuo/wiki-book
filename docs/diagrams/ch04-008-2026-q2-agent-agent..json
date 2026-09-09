@@ -1,0 +1,7 @@
+[
+ {
+  "title": "腾讯研究院 2026 Q2 Agent 产业回顾",
+  "code": "graph TD\n    CORE[\"腾讯研究院 2026 Q2 Agent 产业回顾\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

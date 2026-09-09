@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Higress Qwen3Guard Wasm 插件",
+  "code": "graph TD\n    CORE[\"Higress Qwen3Guard Wasm 插件\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

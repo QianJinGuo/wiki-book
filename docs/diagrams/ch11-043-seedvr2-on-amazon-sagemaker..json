@@ -1,0 +1,7 @@
+[
+ {
+  "title": "SeedVR2 on Amazon SageMaker: 视频超分辨率部署实践",
+  "code": "graph TD\n    CORE[\"SeedVR2 on Amazon SageMaker: 视频超分辨率部署实践\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

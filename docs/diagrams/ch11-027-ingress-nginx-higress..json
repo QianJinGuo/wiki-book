@@ -1,0 +1,7 @@
+[
+ {
+  "title": "ingress-nginx已退役higress如何平滑替代",
+  "code": "graph TD\n    CORE[\"ingress-nginx已退役higress如何平滑替代\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "OpenSquilla launches open-source AI agen",
+  "code": "graph TD\n    CORE[\"OpenSquilla launches open-source AI agen\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
+  "isSvg": false
+ }
+]
