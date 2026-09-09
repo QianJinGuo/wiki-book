@@ -1,0 +1,5 @@
+%% title: 模型规模推演 2023-2031
+graph TD
+    HBM["物理约束: HBM 读取时间决定模型规模<br/>不是 FLOPs 是读取速度<br/>各代芯片读取时间表"] ==> PIPE["Pipeline 并行度推演<br/>80 tokens 每秒目标下的规模上限"]
+    PIPE ==> SCALE["从 10T 到 1.4 千万亿推演<br/>Sparsity 作参数放大器"]
+    SCALE ==> WALL["数据墙: 2027 年后的核心约束<br/>2024 是模型最受硬件约束的一年"]

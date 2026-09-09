@@ -1,0 +1,5 @@
+%% title: 告别 Ingress Nginx——Gateway API 使用指引
+graph TD
+    PAIN["Ingress 三痛点: 表达不足<br/>缺角色分层 · 注解不兼容"] ==> L3["三层资源模型根本优势<br/>GatewayClass 平台管<br/>Gateway 运维管 · HTTPRoute 开发者管"]
+    L3 ==> NATIVE["原生能力无需 annotation<br/>精确路由 · 流量切分 · 跨命名空间<br/>GIE 推理智能路由"]
+    NATIVE ==> MIGRATE["迁移: 双模并行加注解兼容<br/>ReferenceGrant 被低估的安全设计"]

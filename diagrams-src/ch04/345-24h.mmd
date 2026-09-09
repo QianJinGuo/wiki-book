@@ -1,0 +1,6 @@
+%% title: 24h 打工人
+graph TD
+    ARCH["核心架构与 SDD 目录结构<br/>SDD 本质是结构化记忆"] ==> SCHED["调度层职责与并发策略"]
+    SCHED ==> QUEUE["文件队列优先于消息队列"]
+    QUEUE ==> FAIL["工具失败自动切换的工程价值"]
+    QUEUE ==> BOOT["自举能力的有条件性"]
