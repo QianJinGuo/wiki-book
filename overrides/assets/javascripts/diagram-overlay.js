@@ -167,9 +167,13 @@
     const trigger = document.createElement('button');
     trigger.className = 'diagram-trigger';
     trigger.innerHTML = '📐';
+    trigger.setAttribute('aria-label', '打开 Mermaid 图表');
     trigger.title = '架构图（' + diagrams.length + ' 张）';
     document.body.appendChild(trigger);
     positionBesideChat(trigger);
+
+    // Expose the same action to the compact page-header tool.
+    window.wikiBookOpenMermaid = openOverlay;
 
     let clickStart = 0, clickPos = { x: 0, y: 0 };
     trigger.addEventListener('mousedown', function(e) {
@@ -257,6 +261,10 @@
     document.getElementById('diagram-lb-zoomin').onclick = function() { zoomLightbox(1); };
     document.getElementById('diagram-lb-zoomout').onclick = function() { zoomLightbox(-1); };
     document.getElementById('diagram-lb-reset').onclick = function() { resetZoom(); };
+
+    window.dispatchEvent(new CustomEvent('wiki-book:mermaid-ready', {
+      detail: { count: diagrams.length }
+    }));
   }
 
   function positionBesideChat(trigger) {
@@ -607,9 +615,11 @@
   // Init
   // ════════════════════════════════════════════════════
   async function init() {
-    if (!isArticlePage()) return;
+    // Article pages can have a generated JSON diagram set; chapter and utility
+    // pages can contain inline Mermaid blocks without the /chXX/ URL shape.
+    if (!isArticlePage() && !document.querySelector('pre.mermaid, .mermaid')) return;
     // Try loading from JSON first, then fall back to inline mermaid blocks
-    let data = await loadDiagrams();
+    let data = isArticlePage() ? await loadDiagrams() : null;
     if (!data || data.length === 0) {
       data = extractInlineMermaid();
     }

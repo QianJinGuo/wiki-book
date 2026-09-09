@@ -107,6 +107,70 @@
 .md-tabs__link { color: rgba(246, 240, 226, 0.7); font-weight: 500; }
 .md-tabs__link:hover, .md-tabs__link--active, .md-tabs__link:focus { color: #ffd76a; }
 
+/* ---- 页面工具：英文翻译 + Mermaid ---- */
+.wiki-book-tools {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-left: 0.35rem;
+  flex-shrink: 0;
+}
+.wiki-book-tool {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  min-height: 2rem;
+  padding: 0 0.55rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.45rem;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.68rem;
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.18s, border-color 0.18s, color 0.18s;
+}
+.wiki-book-tool:hover,
+.wiki-book-tool:focus-visible {
+  border-color: rgba(255, 215, 106, 0.75);
+  background: rgba(255, 215, 106, 0.15);
+  color: #fff3bf;
+}
+.wiki-book-tool__icon { font-size: 0.9rem; line-height: 1; }
+.wiki-book-tool.is-disabled {
+  opacity: 0.48;
+  cursor: not-allowed;
+}
+.wiki-book-tool.is-disabled:hover { border-color: rgba(255, 255, 255, 0.2); background: rgba(255, 255, 255, 0.08); color: rgba(255, 255, 255, 0.9); }
+.wiki-book-tool-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 1.4rem;
+  z-index: 10002;
+  max-width: min(90vw, 28rem);
+  padding: 0.65rem 0.9rem;
+  border: 1px solid rgba(255, 215, 106, 0.35);
+  border-radius: 0.6rem;
+  background: rgba(12, 21, 39, 0.94);
+  color: #fff3bf;
+  font-size: 0.78rem;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 0.5rem);
+  transition: opacity 0.18s, transform 0.18s;
+}
+.wiki-book-tool-toast.is-visible { opacity: 1; transform: translate(-50%, 0); }
+
+@media screen and (max-width: 60em) {
+  .wiki-book-tools { gap: 0.15rem; margin-left: 0.15rem; }
+  .wiki-book-tool { width: 2rem; padding: 0; }
+  .wiki-book-tool__label { display: none; }
+}
+
 /* ---- 标题层级 ---- */
 .md-typeset h1 { font-weight: 700; letter-spacing: 0.01em; }
 .md-typeset h1::after {

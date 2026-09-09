@@ -17,7 +17,7 @@
 | unknown | 15 |
 | developer.nvidia.com | 15 |
 | thehackernews.com | 13 |
-| www.anthropic.com | 11 |
+| www.anthropic.com | 12 |
 | www.cio.com | 9 |
 | blog.crewai.com | 9 |
 | deepmind.google | 9 |
