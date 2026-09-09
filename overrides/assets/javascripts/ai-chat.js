@@ -82,7 +82,7 @@
       return "站点内置 AI 额度暂时用完，请几分钟后再试；或在设置 ⚙️ 中填入自己的 API Key / 接口地址。";
     }
     if (/Failed to fetch|NetworkError|network/i.test(msg)) {
-      return "网络请求失败，请检查网络连接后重试。";
+      return "网络请求失败：若在设置 ⚙️ 里填了自定义接口，请确认地址以 /v1/chat/completions 结尾且允许浏览器跨域（CORS，多数官方接口不允许）；否则请清空自定义配置，直接使用站点内置通道。";
     }
     return "错误: " + msg;
   }
@@ -192,7 +192,7 @@
         '</div>' +
         '<div class="ai-chat__form-row">' +
           '<label>Endpoint</label>' +
-          '<input class="ai-chat__form-input" id="ai-cfg-endpoint" placeholder="https://api.example.com/v1/chat/completions" value="' + (cfg.endpoint || '') + '">' +
+          '<input class="ai-chat__form-input" id="ai-cfg-endpoint" placeholder="留空 = 站点内置（推荐）；自定义需以 /v1/chat/completions 结尾" value="' + (cfg.endpoint || '') + '">' +
         '</div>' +
         '<div class="ai-chat__form-row">' +
           '<label>API Key</label>' +
@@ -341,7 +341,8 @@
        if (p) {
          panel.querySelector("#ai-cfg-endpoint").value = p.endpoint;
          panel.querySelector("#ai-cfg-model").value = p.model;
-         if (p.apiKey) panel.querySelector("#ai-cfg-apikey").value = p.apiKey;
+         // 预设未内置 key 时清空输入框，避免残留旧配置走错通道
+         panel.querySelector("#ai-cfg-apikey").value = p.apiKey || "";
          // 保存 _provider 到 data 属性
          panel.dataset._provider = p._provider || "";
        }
