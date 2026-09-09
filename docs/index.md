@@ -617,6 +617,6 @@
 </div>
 </section>
 
-<footer class="home-map__foot">📊 全书收录 1,733 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-09-09</span></footer>
+<footer class="home-map__foot">📊 全书收录 1,733 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-09-10</span></footer>
 
 </div>
