@@ -1,0 +1,3 @@
+%% title: Dockerless——免环境补丁验证器
+graph TD
+    METHOD["两阶段流水线: Issue 到验证问题<br/>到 子 Agent 只读搜代码库 到 综合判决<br/>免环境 SFT 效果与有 Docker 几乎持平"] ==> INSIGHT["核心洞察: 验证器而非 rollout 环境<br/>才是后训练瓶颈<br/>企业代码无需搭测试环境即可训练"]

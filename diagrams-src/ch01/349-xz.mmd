@@ -1,5 +1,4 @@
-%% title: xz 后门两周年——扫描器仍然检测不到什么
+%% title: xz 后门两周年——扫描器检测不到
 graph TD
-    HIJACK["信任劫持是新主流威胁<br/>Jia Tan 两年建立信任后<br/>把后门植入构建系统非源码<br/>Git 干净但 tarball 有毒"] ==> BLIND["CVE 扫描器结构性盲区<br/>回答的是已知有问题<br/>而非是否安全"]
-    BLIND ==> DEF["三层现代防御: OSV 实时漏洞源<br/>postinstall 审查 · 维护者行为信号"]
-    DEF ==> P["锁定直接依赖 · 审查 lockfile diff<br/>订阅实时漏洞源"]
+    HIJACK["信任劫持: Jia Tan 两年<br/>后门在构建系统非源码"] ==> BLIND["CVE 扫描器盲区<br/>回答已知问题 非是否安全"]
+    BLIND ==> DEF["OSV 实时源加 postinstall 审查<br/>加 维护者行为信号"]

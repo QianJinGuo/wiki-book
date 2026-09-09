@@ -1,4 +1,4 @@
-%% title: TokenSpeed——光速 LLM 推理引擎
+%% title: TokenSpeed 光速推理引擎
 graph TD
-    WHY["Agentic 负载特殊性: 50K 加上下文<br/>数十轮对话 · 70-200 TPS 下限<br/>最大化每 GPU TPM"] ==> C4["四大核心组件<br/>局部 SPMD 编译建模层<br/>C 加加 控制面 FSM 加 Python 执行面<br/>可插拔分层内核 · KV 编译时验证"]
+    WHY["Agentic 负载: 50K 加上下文<br/>加 数十轮 加 70-200 TPS 下限"] ==> C4["四大组件: 局部 SPMD 加 C++ FSM<br/>加 Python 执行面 加 可插拔内核"]
     C4 ==> CMP["与 TensorRT-LLM 性能对比<br/>控制平面安全设计"]
