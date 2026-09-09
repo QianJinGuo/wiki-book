@@ -1,0 +1,5 @@
+%% title: Cola DLM——字节连续潜空间扩散语言模型
+graph TD
+    CLAIM["暴论: Token 不等于语义<br/>表征才是模型应学习的对象"] ==> ARCH["两段生成: Latent Prior 加 Decoder<br/>Text VAE · block-causal DiT 加 Flow Matching"]
+    ARCH ==> TRAIN["Encoder 冻结防污染<br/>mask loss 防 latent 坍塌<br/>三目标分解可单独诊断"]
+    TRAIN ==> SCALE["2B 参数 2000 EFLOPs 验证<br/>通往多模态的桥梁"]
