@@ -14,7 +14,7 @@
 | learn/index.html | 9 | ✔ | 后台 API |
 | PATH.html（学习路径） | 590 | ✔ | 后台 API |
 | ch01-ai-basics | 359 | ✔ | 后台 API |
-| ch02-prompt | 2,680 | 🔄 | 后台 API（87,722 字符） |
+| ch02-prompt | 2,333 | ✔ | 后台 API（87,722 字符） |
 | ch03-ai-tools | 90 | ✔ | 会话内人工 |
 | ch04-agent-core | 378 | ⬜ | 待翻（13,925 字符） |
 | ch05-harness | 167 | ⬜ | 待翻（5,271 字符） |
