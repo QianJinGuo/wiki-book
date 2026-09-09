@@ -30,12 +30,13 @@
     try { localStorage.setItem("ai-chat-config", JSON.stringify(cfg)); } catch(e) {}
   }
 
-  // ========== 动态机器人（codex 极简风 CSS 小机器人） ==========
-  function robotHtml() {
-    return '<span class="ai-bot" aria-hidden="true">' +
-      '<span class="ai-bot__antenna"></span>' +
-      '<span class="ai-bot__head"><span class="ai-bot__eye"></span><span class="ai-bot__eye"></span></span>' +
-      '</span>';
+  // ========== 站点助手形象（银月头像） ==========
+  // 从脚本自身 URL 推导 assets 目录，兼容根路径与子路径（GH Pages）部署
+  var _chatScript = document.querySelector('script[src*="ai-chat.js"]');
+  var ASSETS_BASE = _chatScript ? _chatScript.src.replace(/javascripts\/ai-chat\.js.*$/, "") : "assets/";
+
+  function avatarHtml(cls) {
+    return '<img class="ai-chat__avatar' + (cls ? " " + cls : "") + '" src="' + ASSETS_BASE + 'images/ai-avatar.webp" alt="银月 AI 助手" aria-hidden="true">';
   }
 
   // 流式回答期间给触发按钮和面板加 thinking 态（机器人摇摆 + 眼睛扫描）
@@ -161,8 +162,8 @@
     // 触发按钮
     var trigger = document.createElement("button");
     trigger.className = "ai-chat-trigger";
-    trigger.innerHTML = robotHtml();
-    trigger.title = "Talk to AI";
+    trigger.innerHTML = avatarHtml();
+    trigger.title = "银月 · Talk to AI";
 
     // 面板
     var panel = document.createElement("div");
@@ -177,7 +178,7 @@
 
     panel.innerHTML =
       '<div class="ai-chat__header">' +
-        '<span class="ai-chat__title"><span class="ai-chat__title-icon"><span class="ai-bot-scale">' + robotHtml() + '</span></span> Talk to AI</span>' +
+        '<span class="ai-chat__title"><span class="ai-chat__title-icon">' + avatarHtml("ai-chat__avatar--sm") + '</span> Talk to AI</span>' +
         '<div class="ai-chat__actions">' +
           '<button class="ai-chat__btn" data-action="settings" title="设置">⚙️</button>' +
           '<button class="ai-chat__btn" data-action="clear" title="清空">🗑</button>' +
@@ -221,7 +222,7 @@
         '</div>' +
       '</div>' +
       '<div class="ai-chat__messages">' +
-        '<div class="ai-chat__welcome"><span class="ai-chat__welcome-icon">💬</span><div>我是这篇文章的 AI 助手<br>可以回答关于「' + getArticleTitle().substring(0, 30) + '」的任何问题</div></div>' +
+        '<div class="ai-chat__welcome"><span class="ai-chat__welcome-icon">💬</span><div>我是银月，这篇文章的 AI 助手<br>可以回答关于「' + getArticleTitle().substring(0, 30) + '」的任何问题</div></div>' +
       '</div>' +
       '<div class="ai-chat__input-area">' +
         '<textarea class="ai-chat__input" rows="1" placeholder="问点什么..."></textarea>' +
