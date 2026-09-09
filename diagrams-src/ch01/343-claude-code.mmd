@@ -1,4 +1,6 @@
 %% title: 用 Claude Code 做需求调研——多了一个产品经理
 graph TD
-    USECASE["用 Claude Code 做需求调研"] ==> INS["深度分析"]
+    USECASE["用 Claude Code 做需求调研"] ==> PROCESS["调研流程与访谈设计"]
+    PROCESS ==> OUTPUT["产出物与迭代"]
+    OUTPUT ==> INS["深度分析"]
     INS ==> P["实践启示"]

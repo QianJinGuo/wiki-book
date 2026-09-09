@@ -1,4 +1,5 @@
-%% title: Knowledge Agents——用更好的结构击败前沿模型
+%% title: Knowledge Agents——更好的结构击败前沿模型
 graph TD
-    L4["四层知识结构: Source extractions<br/>加 Concepts 概念百科<br/>加 Theses 跨源论点 加 PRIMER 自更新导引<br/>语义级重构非简单 chunking"] ==> SEARCH["三轮多路搜索最优平衡<br/>简单查询智能短路<br/>BM25 加 Embedding 混合检索"]
-    SEARCH ==> RESULT["模型均衡化效应: 结构让<br/>普通模型逼近前沿模型水平"]
+    L4["四层知识结构: Sources 加 Concepts<br/>加 Theses 加 PRIMER 语义级重构"] ==> SEARCH["三轮多路搜索最优平衡<br/>BM25 加 Embedding 混合"]
+    SEARCH ==> RESULT["模型均衡化效应"]
+    RESULT ==> P["与传统 RAG 的区别"]
