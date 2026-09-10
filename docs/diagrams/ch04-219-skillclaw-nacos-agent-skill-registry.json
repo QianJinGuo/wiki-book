@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Skill 演化治理闭环",
+  "code": "graph TD\n    TWOP[\"产生共享两难\"] ==> SPLIT[\"生成治理分离\"]\n    SPLIT -->|\"draft到online\"| NACOS[\"注册版本回滚\"]\n    NACOS ==> SAFETY[\"运行时只读\"]\n    GROWN[\"skill长非写\"] -.-> SPLIT",
+  "isSvg": false
+ }
+]

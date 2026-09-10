@@ -1,0 +1,7 @@
+[
+ {
+  "title": "三框架世界观",
+  "code": "graph TD\n    DEER[\"并行拆任务\"] ==> PHILOSOPHY[\"三种世界观\"]\n    HERMES[\"自进化越用强\"] ==> PHILOSOPHY\n    OC[\"纯网关管接入\"] ==> PHILOSOPHY\n    PHILOSOPHY ==> COMBO[\"三层组合互补\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,6 @@
+%% title: Composer 训练创新
+graph TD
+    TEXTFB["定向RL文本反馈"] ==> HACK["reward猫鼠游戏"]
+    HACK -->|"25x合成数据"| DISTRI["分片优化器异构并行"]
+    DISTRI ==> CALIB["努力校准按难分配"]
+    SEGMENT["双档同智定价"] -.-> CALIB

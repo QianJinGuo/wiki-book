@@ -1,0 +1,7 @@
+[
+ {
+  "title": "ES 记忆层工程",
+  "code": "graph TD\n    TYPED[\"三索引分型必分\"] ==> HYBRID[\"双路混召回\"]\n    HYBRID -->|\"重排贡献大\"| SUPERS[\"软取代处理矛盾\"]\n    SUPERS ==> CONSOL[\"写后提炼\"]\n    DECAY[\"分型定衰减源\"] -.-> HYBRID",
+  "isSvg": false
+ }
+]

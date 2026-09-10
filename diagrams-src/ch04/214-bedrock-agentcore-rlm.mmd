@@ -1,0 +1,6 @@
+%% title: RLM 破上下文墙
+graph TD
+    FLIP["文档变可查环境"] ==> PROGRAM["程序化探索按需查"]
+    PROGRAM -->|"根模型分解关键"| COST["子模型用便宜档"]
+    COST ==> HYBRID["叠向量检索混合"]
+    LOSTM["长文中段迷失无解"] -.-> FLIP

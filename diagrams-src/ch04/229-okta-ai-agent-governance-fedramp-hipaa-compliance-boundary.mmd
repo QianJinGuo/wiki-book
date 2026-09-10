@@ -1,0 +1,6 @@
+%% title: Agent 身份治理
+graph TD
+    NHI["agent一等身份"] ==> THREEQ["在哪访什么做何事"]
+    THREEQ -->|"短令牌代密钥"| RISK["四风险kill switch"]
+    RISK ==> COMPLY["入联邦合规边界"]
+    GEN["agent生agent难见"] -.-> NHI

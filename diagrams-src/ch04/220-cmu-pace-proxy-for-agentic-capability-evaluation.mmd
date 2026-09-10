@@ -1,0 +1,6 @@
+%% title: PACE 代理评测
+graph TD
+    EXPENSIVE["全量评测贵且慢"] ==> PROXY["百题百分之一成本"]
+    PROXY -->|"能力可分解"| FINGER["基准能力指纹"]
+    FINGER ==> USE["先筛后全测"]
+    DRIFT["分布外有局限"] -.-> PROXY

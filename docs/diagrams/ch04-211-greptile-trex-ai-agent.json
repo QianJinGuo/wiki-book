@@ -1,0 +1,7 @@
+[
+ {
+  "title": "TREX 嵌套审查",
+  "code": "graph TD\n    EVOLVE[\"独立合并到嵌套演进\"] ==> NEST[\"编排派生子agent\"]\n    NEST -->|\"多模态artifact\"| VERIFY[\"证据可验防虚报\"]\n    VERIFY ==> PRIO[\"召回优先于延迟\"]\n    MODEL[\"模型无关可热切换\"] -.-> NEST",
+  "isSvg": false
+ }
+]

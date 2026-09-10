@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AI Control 三层防御",
+  "code": "graph TD\n    ASSUME[\"假设不对齐设计\"] ==> THREE[\"基础对齐控制三层\"]\n    THREE -->|\"检测响应矩阵\"| INSIDER[\"视作内部威胁\"]\n    MILLION[\"百万轨迹多非对抗\"] -.-> INSIDER",
+  "isSvg": false
+ }
+]

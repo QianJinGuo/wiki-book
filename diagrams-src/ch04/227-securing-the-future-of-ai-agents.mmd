@@ -1,0 +1,5 @@
+%% title: AI Control 三层防御
+graph TD
+    ASSUME["假设不对齐设计"] ==> THREE["基础对齐控制三层"]
+    THREE -->|"检测响应矩阵"| INSIDER["视作内部威胁"]
+    MILLION["百万轨迹多非对抗"] -.-> INSIDER

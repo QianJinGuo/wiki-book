@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Agent 身份治理",
+  "code": "graph TD\n    NHI[\"agent一等身份\"] ==> THREEQ[\"在哪访什么做何事\"]\n    THREEQ -->|\"短令牌代密钥\"| RISK[\"四风险kill switch\"]\n    RISK ==> COMPLY[\"入联邦合规边界\"]\n    GEN[\"agent生agent难见\"] -.-> NHI",
+  "isSvg": false
+ }
+]

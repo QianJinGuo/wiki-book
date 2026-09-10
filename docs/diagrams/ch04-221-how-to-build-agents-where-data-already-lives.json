@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Agent 驻数据旁",
+  "code": "graph TD\n    PULL[\"拉数据成本高\"] ==> PUSH[\"agent到数据旁\"]\n    PUSH -->|\"合规延迟双赢\"| PERM[\"权限继承IAM\"]\n    PERM ==> ABSTRACT[\"MCP统一抽象\"]\n    MIXED[\"推理远程数据本地\"] -.-> PUSH",
+  "isSvg": false
+ }
+]

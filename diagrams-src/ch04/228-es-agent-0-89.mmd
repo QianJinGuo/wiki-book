@@ -1,0 +1,6 @@
+%% title: ES 记忆层工程
+graph TD
+    TYPED["三索引分型必分"] ==> HYBRID["双路混召回"]
+    HYBRID -->|"重排贡献大"| SUPERS["软取代处理矛盾"]
+    SUPERS ==> CONSOL["写后提炼"]
+    DECAY["分型定衰减源"] -.-> HYBRID

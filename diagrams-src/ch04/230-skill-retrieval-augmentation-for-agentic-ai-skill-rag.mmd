@@ -1,0 +1,6 @@
+%% title: Skill 检索增强 SRA
+graph TD
+    EXPLODE["技能库爆上下文"] ==> UNAWARE["需求感知缺失"]
+    UNAWARE -->|"瞎加载无察觉"| HALLUC["加载幻觉监控"]
+    HALLUC ==> LAYER["分层加预判层"]
+    RETRIEVE["检索好非任务好"] -.-> HALLUC

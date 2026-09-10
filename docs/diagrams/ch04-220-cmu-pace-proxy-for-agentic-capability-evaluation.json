@@ -1,0 +1,7 @@
+[
+ {
+  "title": "PACE 代理评测",
+  "code": "graph TD\n    EXPENSIVE[\"全量评测贵且慢\"] ==> PROXY[\"百题百分之一成本\"]\n    PROXY -->|\"能力可分解\"| FINGER[\"基准能力指纹\"]\n    FINGER ==> USE[\"先筛后全测\"]\n    DRIFT[\"分布外有局限\"] -.-> PROXY",
+  "isSvg": false
+ }
+]

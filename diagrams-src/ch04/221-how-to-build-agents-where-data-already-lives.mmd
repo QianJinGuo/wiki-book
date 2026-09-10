@@ -1,0 +1,6 @@
+%% title: Agent 驻数据旁
+graph TD
+    PULL["拉数据成本高"] ==> PUSH["agent到数据旁"]
+    PUSH -->|"合规延迟双赢"| PERM["权限继承IAM"]
+    PERM ==> ABSTRACT["MCP统一抽象"]
+    MIXED["推理远程数据本地"] -.-> PUSH

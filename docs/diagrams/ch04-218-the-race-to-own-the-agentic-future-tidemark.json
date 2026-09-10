@@ -1,0 +1,7 @@
+[
+ {
+  "title": "垂直 SaaS 之战",
+  "code": "graph TD\n    NARRATIVE[\"杀SaaS叙事被挑战\"] ==> CP[\"控制点三要素\"]\n    CP -->|\"上下夹击\"| FOUR[\"四步行动框架\"]\n    FOUR ==> MICRO[\"表面即微harness\"]\n    SPEED[\"AI速度定生死\"] -.-> FOUR",
+  "isSvg": false
+ }
+]

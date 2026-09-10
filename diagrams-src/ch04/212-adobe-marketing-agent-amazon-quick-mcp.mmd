@@ -1,0 +1,6 @@
+%% title: 厂商间 MCP 集成
+graph TD
+    MCPQ["MCP企业集成协议"] ==> DISC["工具发现注册action"]
+    DISC -->|"读写分离审批"| GOV["全链路治理"]
+    GOV ==> DOMAIN["领域工具含专业知"]
+    FOCUS["聚焦优于通用"] -.-> GOV

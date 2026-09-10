@@ -1,0 +1,6 @@
+%% title: RAG 转 Agentic Search
+graph TD
+    DECIDE["检索时机主体之别"] ==> SIMP["agentic简无管道"]
+    SIMP -->|"复杂推理占优"| LIMITS["简单问答RAG快"]
+    LIMITS ==> HYBRID["检索作工具之一"]
+    MAINT["管道维护被低估"] -.-> SIMP

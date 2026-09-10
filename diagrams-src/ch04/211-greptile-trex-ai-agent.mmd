@@ -1,0 +1,6 @@
+%% title: TREX 嵌套审查
+graph TD
+    EVOLVE["独立合并到嵌套演进"] ==> NEST["编排派生子agent"]
+    NEST -->|"多模态artifact"| VERIFY["证据可验防虚报"]
+    VERIFY ==> PRIO["召回优先于延迟"]
+    MODEL["模型无关可热切换"] -.-> NEST

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "厂商间 MCP 集成",
+  "code": "graph TD\n    MCPQ[\"MCP企业集成协议\"] ==> DISC[\"工具发现注册action\"]\n    DISC -->|\"读写分离审批\"| GOV[\"全链路治理\"]\n    GOV ==> DOMAIN[\"领域工具含专业知\"]\n    FOCUS[\"聚焦优于通用\"] -.-> GOV",
+  "isSvg": false
+ }
+]

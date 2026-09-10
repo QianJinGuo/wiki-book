@@ -1,0 +1,6 @@
+%% title: Skill 演化治理闭环
+graph TD
+    TWOP["产生共享两难"] ==> SPLIT["生成治理分离"]
+    SPLIT -->|"draft到online"| NACOS["注册版本回滚"]
+    NACOS ==> SAFETY["运行时只读"]
+    GROWN["skill长非写"] -.-> SPLIT
