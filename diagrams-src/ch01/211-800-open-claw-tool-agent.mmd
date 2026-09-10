@@ -1,0 +1,8 @@
+%% title: 800 行实现 OpenClaw 架构
+graph TD
+    THIN["薄抽象直贴SDK"] ==> TOOL["Tool四要素Registry"]
+    TOOL -->|"exclude受限子集"| SUB["子Agent最小权限"]
+    BUS["消息总线双模消费"] ==> ROUTE["有订阅回调无则入队"]
+    MUTEX["布尔锁串行主循环"] -.-> BUS
+    NOFIRE["拒绝LangChain中间层"] -.-> THIN
+    CTRL["显式控制流易定位"] -.-> THIN

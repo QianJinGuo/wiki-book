@@ -1,0 +1,7 @@
+[
+ {
+  "title": "复现 FreeBSD 漏洞发现",
+  "code": "graph TD\n    ORIG[\"Mythos发现漏洞\"] ==> REPRO[\"nano百美元复现\"]\n    REPRO ==> QUESTION[\"成本下探仍成立吗\"]\n    QUESTION ==> OSS[\"开源跑50文件子系统\"]\n    OSS -->|\"开箱皆未命中\"| GAP[\"开源与前沿落差\"]\n    PIPE[\"管线公开可复现\"] -.-> REPRO",
+  "isSvg": false
+ }
+]

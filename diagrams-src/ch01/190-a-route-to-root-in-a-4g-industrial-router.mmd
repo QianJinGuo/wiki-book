@@ -1,0 +1,8 @@
+%% title: 4G 工业路由器提权之路
+graph TD
+    FIRM["固件与helper分析"] ==> CREDS["提取隐藏usr凭证"]
+    CREDS ==> ROOT["未文档化root后门"]
+    ROOT -->|"CVE-2024-42682"| EXP["接触即得root"]
+    OWN["二手市场被忽视"] -.-> EXP
+    FIX["管理口不暴露公网"] -.->|"防御"| ROOT
+    RESP["负责任披露"] -.-> FIRM

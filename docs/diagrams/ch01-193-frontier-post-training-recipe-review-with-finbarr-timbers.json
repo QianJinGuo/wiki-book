@@ -1,0 +1,7 @@
+[
+ {
+  "title": "前沿后训练配方拆解",
+  "code": "graph TD\n    SFT[\"SFT监督微调\"] ==> RM[\"偏好数据训奖励模型\"]\n    RM ==> PPO[\"RLHF加KL约束\"]\n    PPO -->|\"闭环速度是能力\"| MOAT[\"后训练成护城河\"]\n    DPO[\"DPO中小模型替代\"] -.->|\"13B下门槛低\"| PPO\n    MIX[\"数据配比课程学习\"] -.-> SFT\n    OPEN[\"开源差在数据迭代\"] -.-> MOAT",
+  "isSvg": false
+ }
+]

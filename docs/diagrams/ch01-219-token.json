@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Token 退化：词表分布失配",
+  "code": "graph TD\n    SFT[\"SFT覆盖不足词表\"] ==> SQUEEZE[\"高频token挤邻居\"]\n    SQUEEZE -->|\"lm_head向量漂移\"| RV[\"余弦低0.9即退化\"]\n    RV ==> LOSE[\"概率被邻居取代\"]\n    JP[\"日语退化29.7%\"] -.->|\"三脚本覆盖稀\"| LOSE\n    SEO[\"SEO垃圾词也退化\"] -.-> LOSE\n    FIX[\"全词表复读任务\"] ==>|\"混杂47%到1%\"| OK[\"cosine全升0.97\"]",
+  "isSvg": false
+ }
+]

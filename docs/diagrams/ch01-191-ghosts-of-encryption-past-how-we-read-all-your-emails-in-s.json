@@ -1,0 +1,7 @@
+[
+ {
+  "title": "加密遗魂：读你所有邮件",
+  "code": "graph TD\n    CLAIM[\"宣称加密即可信\"] ==> TLS[\"实为传输层加密\"]\n    TLS -.->|\"非内容加密\"| VENDOR[\"服务商仍能读\"]\n    Q1[\"能否访问内容\"] ==> EVAL[\"评估SaaS三连问\"]\n    Q2[\"密钥管理归谁\"] ==> EVAL\n    Q3[\"CMK下能否解密\"] ==> EVAL\n    REG[\"GDPR倒逼重审\"] -.-> EVAL",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,8 @@
+%% title: 电信 NOC 推理模型
+graph TD
+    NOC["告警驱动人肉分诊"] ==> SYN["合成事故加专家规程"]
+    SYN ==> TRACE["结构化推理轨迹"]
+    TRACE ==> FT["微调Qwen3-32B"]
+    FT ==> AGENT["闭环工具调用自愈"]
+    AGENT -->|"20%升到60%"| L4["迈向L4自治网络"]
+    SAFE["LLM裁判错误注入"] -.-> AGENT

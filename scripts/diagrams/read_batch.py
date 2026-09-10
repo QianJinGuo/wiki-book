@@ -2,7 +2,11 @@
 """Print content-rich excerpts for a slice of the regen queue."""
 import json, re, sys
 
-q = json.load(open('/tmp/regen-queue.json'))
+try:
+    q = json.load(open('/tmp/regen-queue.json'))
+except FileNotFoundError:
+    q = json.load(open('scripts/diagrams/REGEN-REMAINING.json'))
+    print('[using durable REGEN-REMAINING.json; index space restarts at 0]')
 start, n = int(sys.argv[1]), int(sys.argv[2])
 NOISE = re.compile(r'^(## 关联|---##|## 相关|## 延伸|\*最后更新|> \[!)\s*$')
 

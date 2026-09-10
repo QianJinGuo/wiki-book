@@ -1,0 +1,7 @@
+[
+ {
+  "title": "800 行实现 OpenClaw 架构",
+  "code": "graph TD\n    THIN[\"薄抽象直贴SDK\"] ==> TOOL[\"Tool四要素Registry\"]\n    TOOL -->|\"exclude受限子集\"| SUB[\"子Agent最小权限\"]\n    BUS[\"消息总线双模消费\"] ==> ROUTE[\"有订阅回调无则入队\"]\n    MUTEX[\"布尔锁串行主循环\"] -.-> BUS\n    NOFIRE[\"拒绝LangChain中间层\"] -.-> THIN\n    CTRL[\"显式控制流易定位\"] -.-> THIN",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "OPD 失败模式再审视",
+  "code": "graph TD\n    OPD[\"在线蒸馏成默认项\"] ==> Q[\"sampled-token为何不稳\"]\n    Q -->|\"局部合理整体差\"| DRIFT[\"推往隐性退化\"]\n    DRIFT ==> FIX[\"低成本稳实现\"]\n    WHAT[\"OPD在优化什么\"] -.-> Q\n    IMPL[\"常见实现差异\"] -.-> DRIFT\n    REPO[\"论文代码开源\"] -.-> FIX",
+  "isSvg": false
+ }
+]

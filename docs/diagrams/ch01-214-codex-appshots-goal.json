@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Codex 五大升级",
+  "code": "graph TD\n    APP[\"Appshots读屏外文本\"] ==> GOAL[\"goal毕业长周期\"]\n    GOAL ==> LOCK[\"锁屏远程操控\"]\n    LOCK -.->|\"乘法组合\"| AGENT[\"全天候AI队友\"]\n    HALF[\"半数用户不写码\"] ==> GEN[\"变General Agent\"]\n    QUOTA[\"涨周活重置限额\"] -.->|\"增长机制\"| GEN\n    PPT[\"ChatGPT进PPT\"] -.-> GEN",
+  "isSvg": false
+ }
+]

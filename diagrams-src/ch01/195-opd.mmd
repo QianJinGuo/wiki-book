@@ -1,0 +1,8 @@
+%% title: OPD 失败模式再审视
+graph TD
+    OPD["在线蒸馏成默认项"] ==> Q["sampled-token为何不稳"]
+    Q -->|"局部合理整体差"| DRIFT["推往隐性退化"]
+    DRIFT ==> FIX["低成本稳实现"]
+    WHAT["OPD在优化什么"] -.-> Q
+    IMPL["常见实现差异"] -.-> DRIFT
+    REPO["论文代码开源"] -.-> FIX

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Opus 4.7 核心变化",
+  "code": "graph TD\n    CODE[\"编程最强自验证\"] ==> VIS[\"视觉3倍读密截图\"]\n    VIS ==> LIT[\"指令字面化旧词失效\"]\n    LIT -.->|\"重调prompt与测试\"| XF[\"xhigh与任务预算\"]\n    AUTO[\"自动模式免弹窗\"] -.->|\"并行多实例\"| XF\n    TOK[\"分词器多耗35%\"] -.-> COST[\"重算ROI平衡\"]\n    MEM2[\"文件系统长程记忆\"] -.-> CODE",
+  "isSvg": false
+ }
+]

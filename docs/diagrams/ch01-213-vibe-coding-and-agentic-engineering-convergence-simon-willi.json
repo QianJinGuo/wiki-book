@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Vibe Coding 与 Agentic 融合",
+  "code": "graph TD\n    FUSION[\"Agent成半黑盒伙伴\"] ==> NORM[\"偏差正常化渐盲信\"]\n    NORM ==> LB[\"承重墙必亲审\"]\n    PROP[\"本体感觉丧失\"] -.->|\"能力基线下沉\"| LB\n    DATA[\"数据接口升值\"] ==> BUILD[\"Schema扎实UI可vibe\"]\n    SPIKE[\"并行Agent跑Spike\"] -.-> FUSION\n    RL[\"代码RL定分水岭\"] -.-> BUILD",
+  "isSvg": false
+ }
+]

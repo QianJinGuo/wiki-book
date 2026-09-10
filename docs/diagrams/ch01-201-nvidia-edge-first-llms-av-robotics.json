@@ -1,0 +1,7 @@
+[
+ {
+  "title": "边缘优先 LLM 物理智能",
+  "code": "graph TD\n    EDGE[\"Jetson与Thor平台\"] ==> MOE[\"边缘MoE小激活大智能\"]\n    MOE ==> HYBRID[\"Mamba混Transformer省KV\"]\n    HYBRID ==> REASON[\"Cosmos时空规划\"]\n    TTS[\"TTS与ASR流式语音\"] -.->|\"低延迟对话\"| REASON\n    ALPA[\"Alpamayo轨迹规划\"] -.-> REASON\n    POW[\"功耗时延包线内\"] -.-> MOE",
+  "isSvg": false
+ }
+]
