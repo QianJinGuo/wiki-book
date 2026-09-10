@@ -1,0 +1,32 @@
+# 主课程面验收报告（2026-09-10T20:08:15.454Z）
+
+- 阈值: 剩余中文占比 ≤ 4.0% · 范围: 26 个主页面 · **通过 24/26**
+- dashboard/index.html 与 learn/index.html 为 mkdocs 原样拷贝的**独立 HTML 应用**（不加载 Material 主题与实时翻译层），不在本验收范围；其英文化需改各自生成模板注入脚本，属独立需求。
+- 残留 1-4% 的中文为混排行专名与个别漏网段，持续自愈轮会收敛。
+
+- ✔ /course.html — 剩余 0%
+- ✔ /ch20-ai-philosophy.html — 剩余 0%
+- ✔ /PATH.html — 剩余 0.02%
+- ✔ /ch01-ai-basics.html — 剩余 0.02%
+- ✔ /ch18-robotics.html — 剩余 0.02%
+- ✔ /ch11-infra.html — 剩余 0.03%
+- ✔ /ch05-harness.html — 剩余 0.06%
+- ✔ /ch09-ai-coding.html — 剩余 0.06%
+- ✔ /ch12-security.html — 剩余 0.1%
+- ✔ /index.html — 剩余 0.19%
+- ✔ /ch06-memory.html — 剩余 0.31%
+- ✔ /ch08-multi-agent.html — 剩余 0.31%
+- ✔ /references.html — 剩余 0.36%
+- ✔ /ch17-multimodal.html — 剩余 0.42%
+- ✔ /ch15-training.html — 剩余 0.52%
+- ✔ /ch04-agent-core.html — 剩余 0.56%
+- ✔ /ch03-ai-tools.html — 剩余 0.57%
+- ✔ /ch07-skill-tool.html — 剩余 0.93%
+- ✔ /ch02-prompt.html — 剩余 1.92%
+- ✔ /ch13-mlops.html — 剩余 1.98%
+- ✔ /ch10-rag.html — 剩余 2.22%
+- ✔ /ch16-inference.html — 剩余 2.25%
+- ✔ /ch14-data.html — 剩余 2.3%
+- ✔ /ch19-research-frontier.html — 剩余 2.59%
+- ✘(范围外) /learn/index.html — 剩余 69.31%
+- ✘(范围外) /dashboard/index.html — 剩余 82.62%

@@ -1,0 +1,270 @@
+{
+  "base": "https://jinguo.tech",
+  "threshold": 0.04,
+  "total": 26,
+  "passed": 24,
+  "failed": 2,
+  "at": "2026-09-10T20:08:15.454Z",
+  "results": [
+    {
+      "path": "/course.html",
+      "url": "https://jinguo.tech/course.html",
+      "ok": true,
+      "ratio": 0,
+      "cjkRemaining": 0,
+      "totalChars": 3409,
+      "cjkNodes": 0,
+      "ms": 4709
+    },
+    {
+      "path": "/ch20-ai-philosophy.html",
+      "url": "https://jinguo.tech/ch20-ai-philosophy.html",
+      "ok": true,
+      "ratio": 0,
+      "cjkRemaining": 7,
+      "totalChars": 159185,
+      "cjkNodes": 1,
+      "ms": 43152
+    },
+    {
+      "path": "/PATH.html",
+      "url": "https://jinguo.tech/PATH.html",
+      "ok": true,
+      "ratio": 0.02,
+      "cjkRemaining": 7,
+      "totalChars": 37582,
+      "cjkNodes": 1,
+      "ms": 7820
+    },
+    {
+      "path": "/ch01-ai-basics.html",
+      "url": "https://jinguo.tech/ch01-ai-basics.html",
+      "ok": true,
+      "ratio": 0.02,
+      "cjkRemaining": 7,
+      "totalChars": 44276,
+      "cjkNodes": 1,
+      "ms": 9538
+    },
+    {
+      "path": "/ch18-robotics.html",
+      "url": "https://jinguo.tech/ch18-robotics.html",
+      "ok": true,
+      "ratio": 0.02,
+      "cjkRemaining": 7,
+      "totalChars": 28404,
+      "cjkNodes": 1,
+      "ms": 26057
+    },
+    {
+      "path": "/ch11-infra.html",
+      "url": "https://jinguo.tech/ch11-infra.html",
+      "ok": true,
+      "ratio": 0.03,
+      "cjkRemaining": 7,
+      "totalChars": 20977,
+      "cjkNodes": 1,
+      "ms": 10934
+    },
+    {
+      "path": "/ch05-harness.html",
+      "url": "https://jinguo.tech/ch05-harness.html",
+      "ok": true,
+      "ratio": 0.06,
+      "cjkRemaining": 7,
+      "totalChars": 11450,
+      "cjkNodes": 1,
+      "ms": 3480
+    },
+    {
+      "path": "/ch09-ai-coding.html",
+      "url": "https://jinguo.tech/ch09-ai-coding.html",
+      "ok": true,
+      "ratio": 0.06,
+      "cjkRemaining": 7,
+      "totalChars": 11313,
+      "cjkNodes": 1,
+      "ms": 4906
+    },
+    {
+      "path": "/ch12-security.html",
+      "url": "https://jinguo.tech/ch12-security.html",
+      "ok": true,
+      "ratio": 0.1,
+      "cjkRemaining": 7,
+      "totalChars": 6895,
+      "cjkNodes": 1,
+      "ms": 4947
+    },
+    {
+      "path": "/index.html",
+      "url": "https://jinguo.tech/index.html",
+      "ok": true,
+      "ratio": 0.19,
+      "cjkRemaining": 22,
+      "totalChars": 11578,
+      "cjkNodes": 2,
+      "ms": 12335
+    },
+    {
+      "path": "/ch06-memory.html",
+      "url": "https://jinguo.tech/ch06-memory.html",
+      "ok": true,
+      "ratio": 0.31,
+      "cjkRemaining": 1190,
+      "totalChars": 384002,
+      "cjkNodes": 20,
+      "ms": 16346
+    },
+    {
+      "path": "/ch08-multi-agent.html",
+      "url": "https://jinguo.tech/ch08-multi-agent.html",
+      "ok": true,
+      "ratio": 0.31,
+      "cjkRemaining": 793,
+      "totalChars": 256544,
+      "cjkNodes": 6,
+      "ms": 23703
+    },
+    {
+      "path": "/references.html",
+      "url": "https://jinguo.tech/references.html",
+      "ok": true,
+      "ratio": 0.36,
+      "cjkRemaining": 7,
+      "totalChars": 1968,
+      "cjkNodes": 1,
+      "ms": 4705
+    },
+    {
+      "path": "/ch17-multimodal.html",
+      "url": "https://jinguo.tech/ch17-multimodal.html",
+      "ok": true,
+      "ratio": 0.42,
+      "cjkRemaining": 683,
+      "totalChars": 162027,
+      "cjkNodes": 12,
+      "ms": 15913
+    },
+    {
+      "path": "/ch15-training.html",
+      "url": "https://jinguo.tech/ch15-training.html",
+      "ok": true,
+      "ratio": 0.52,
+      "cjkRemaining": 1174,
+      "totalChars": 225211,
+      "cjkNodes": 14,
+      "ms": 16071
+    },
+    {
+      "path": "/ch04-agent-core.html",
+      "url": "https://jinguo.tech/ch04-agent-core.html",
+      "ok": true,
+      "ratio": 0.56,
+      "cjkRemaining": 197,
+      "totalChars": 35047,
+      "cjkNodes": 2,
+      "ms": 15557
+    },
+    {
+      "path": "/ch03-ai-tools.html",
+      "url": "https://jinguo.tech/ch03-ai-tools.html",
+      "ok": true,
+      "ratio": 0.57,
+      "cjkRemaining": 38,
+      "totalChars": 6692,
+      "cjkNodes": 2,
+      "ms": 6412
+    },
+    {
+      "path": "/ch07-skill-tool.html",
+      "url": "https://jinguo.tech/ch07-skill-tool.html",
+      "ok": true,
+      "ratio": 0.93,
+      "cjkRemaining": 69,
+      "totalChars": 7404,
+      "cjkNodes": 3,
+      "ms": 15422
+    },
+    {
+      "path": "/ch02-prompt.html",
+      "url": "https://jinguo.tech/ch02-prompt.html",
+      "ok": true,
+      "ratio": 1.92,
+      "cjkRemaining": 4629,
+      "totalChars": 241356,
+      "cjkNodes": 91,
+      "ms": 43621
+    },
+    {
+      "path": "/ch13-mlops.html",
+      "url": "https://jinguo.tech/ch13-mlops.html",
+      "ok": true,
+      "ratio": 1.98,
+      "cjkRemaining": 3301,
+      "totalChars": 166392,
+      "cjkNodes": 57,
+      "ms": 32543
+    },
+    {
+      "path": "/ch10-rag.html",
+      "url": "https://jinguo.tech/ch10-rag.html",
+      "ok": true,
+      "ratio": 2.22,
+      "cjkRemaining": 4698,
+      "totalChars": 211221,
+      "cjkNodes": 46,
+      "ms": 15943
+    },
+    {
+      "path": "/ch16-inference.html",
+      "url": "https://jinguo.tech/ch16-inference.html",
+      "ok": true,
+      "ratio": 2.25,
+      "cjkRemaining": 2819,
+      "totalChars": 125086,
+      "cjkNodes": 50,
+      "ms": 15795
+    },
+    {
+      "path": "/ch14-data.html",
+      "url": "https://jinguo.tech/ch14-data.html",
+      "ok": true,
+      "ratio": 2.3,
+      "cjkRemaining": 4160,
+      "totalChars": 181088,
+      "cjkNodes": 81,
+      "ms": 16385
+    },
+    {
+      "path": "/ch19-research-frontier.html",
+      "url": "https://jinguo.tech/ch19-research-frontier.html",
+      "ok": true,
+      "ratio": 2.59,
+      "cjkRemaining": 3303,
+      "totalChars": 127326,
+      "cjkNodes": 48,
+      "ms": 14227
+    },
+    {
+      "path": "/learn/index.html",
+      "url": "https://jinguo.tech/learn/index.html",
+      "ok": false,
+      "ratio": 69.31,
+      "cjkRemaining": 1468,
+      "totalChars": 2118,
+      "cjkNodes": 96,
+      "ms": 3163
+    },
+    {
+      "path": "/dashboard/index.html",
+      "url": "https://jinguo.tech/dashboard/index.html",
+      "ok": false,
+      "ratio": 82.62,
+      "cjkRemaining": 3441,
+      "totalChars": 4165,
+      "cjkNodes": 274,
+      "ms": 3184
+    }
+  ]
+}
