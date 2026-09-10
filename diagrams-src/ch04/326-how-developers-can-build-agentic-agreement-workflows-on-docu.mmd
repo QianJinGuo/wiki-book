@@ -1,0 +1,6 @@
+%% title: 意图驱动协议流
+graph TD
+    EDP["事件驱动手写状态机"] ==> IDP["意图驱动编排"]
+    IDP -->|"MCP权限胶囊"| IDEMPOTENT["幂等键防重复"]
+    IDEMPOTENT ==> PIPELINE["协议数据语义资产"]
+    DUAL["REST与MCP双轨"] -.-> IDEMPOTENT

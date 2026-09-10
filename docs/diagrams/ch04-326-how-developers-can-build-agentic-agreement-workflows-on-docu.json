@@ -1,0 +1,7 @@
+[
+ {
+  "title": "意图驱动协议流",
+  "code": "graph TD\n    EDP[\"事件驱动手写状态机\"] ==> IDP[\"意图驱动编排\"]\n    IDP -->|\"MCP权限胶囊\"| IDEMPOTENT[\"幂等键防重复\"]\n    IDEMPOTENT ==> PIPELINE[\"协议数据语义资产\"]\n    DUAL[\"REST与MCP双轨\"] -.-> IDEMPOTENT",
+  "isSvg": false
+ }
+]

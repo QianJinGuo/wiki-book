@@ -1,0 +1,7 @@
+[
+ {
+  "title": "MEA 长时程循环",
+  "code": "graph TD\n    REFRAME[\"长时程即状态管理\"] ==> MEA[\"管理执行审计分离\"]\n    MEA -->|\"无手规划者\"| FRESH[\"每轮全新上下文\"]\n    FRESH ==> AUDIT[\"审计只认证据\"]\n    ADAPTER[\"换后端增益不变\"] -.-> MEA\n    RESULT[\"通过率升至80.7%\"] -.-> AUDIT",
+  "isSvg": false
+ }
+]

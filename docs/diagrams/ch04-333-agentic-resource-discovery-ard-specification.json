@@ -1,0 +1,7 @@
+[
+ {
+  "title": "ARD 发现层协议",
+  "code": "graph TD\n    GAP[\"agent多难发现\"] ==> ARD[\"描述策展搜索执行\"]\n    ARD -->|\"域锚定防单点\"| FED[\"联邦可组合\"]\n    STACK[\"MCP A2A ARD栈\"] -.-> FED\n    LOCAL[\"全局发现本地控\"] -.-> FED",
+  "isSvg": false
+ }
+]

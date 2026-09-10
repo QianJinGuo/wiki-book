@@ -1,0 +1,7 @@
+[
+ {
+  "title": "四种子代理模式",
+  "code": "graph TD\n    INLINE[\"内联工具为默认\"] ==> FANOUT[\"扇出启停分离\"]\n    FANOUT ==> POOL[\"池化跨轮持久\"]\n    POOL ==> TEAMS[\"团队直发消息\"]\n    TEAMS -->|\"可见性递减\"| DEBUG[\"调试难度陡增\"]\n    DEGRADE[\"API可降级好设计\"] -.-> FANOUT",
+  "isSvg": false
+ }
+]

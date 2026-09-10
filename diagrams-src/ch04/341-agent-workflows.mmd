@@ -1,0 +1,6 @@
+%% title: 工作流 token 优化
+graph TD
+    CHEAPEST["最贵是不调用"] ==> PRUNE["剪未用MCP工具"]
+    PRUNE -->|"CLI替MCP调用"| ET["有效token公式"]
+    ET ==> FLYWHEEL["审计优化飞轮"]
+    CONF["配置错致循环烧钱"] -.-> FLYWHEEL

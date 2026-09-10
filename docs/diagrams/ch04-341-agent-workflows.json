@@ -1,0 +1,7 @@
+[
+ {
+  "title": "工作流 token 优化",
+  "code": "graph TD\n    CHEAPEST[\"最贵是不调用\"] ==> PRUNE[\"剪未用MCP工具\"]\n    PRUNE -->|\"CLI替MCP调用\"| ET[\"有效token公式\"]\n    ET ==> FLYWHEEL[\"审计优化飞轮\"]\n    CONF[\"配置错致循环烧钱\"] -.-> FLYWHEEL",
+  "isSvg": false
+ }
+]

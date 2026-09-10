@@ -1,0 +1,7 @@
+%% title: Subagent 上下文卫生
+graph TD
+    DIRTY["长会话三退化"] ==> ISOLATE["探索进独立窗"]
+    ISOLATE ==> COMPRESS["50调用变3行"]
+    COMPRESS ==> PARALLEL["独立路径齐跑"]
+    DESC["描述即路由契约"] -.-> ISOLATE
+    BOUNDARY["切不开别硬拆"] -.-> PARALLEL

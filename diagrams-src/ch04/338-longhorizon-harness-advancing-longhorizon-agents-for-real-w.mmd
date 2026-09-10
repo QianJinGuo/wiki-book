@@ -1,0 +1,7 @@
+%% title: MEA 长时程循环
+graph TD
+    REFRAME["长时程即状态管理"] ==> MEA["管理执行审计分离"]
+    MEA -->|"无手规划者"| FRESH["每轮全新上下文"]
+    FRESH ==> AUDIT["审计只认证据"]
+    ADAPTER["换后端增益不变"] -.-> MEA
+    RESULT["通过率升至80.7%"] -.-> AUDIT

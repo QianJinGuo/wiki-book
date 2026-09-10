@@ -1,0 +1,7 @@
+[
+ {
+  "title": "渗透测试法律空白",
+  "code": "graph TD\n    SHIFTD[\"判断转coded规则\"] ==> FOURL[\"四新法律问题\"]\n    FOURL -->|\"授权边界模糊\"| IDENTITY[\"身份归属难证\"]\n    IDENTITY ==> REFORM[\"法律改革跟进\"]\n    INJECT[\"目标可注prompt\"] -.-> FOURL",
+  "isSvg": false
+ }
+]

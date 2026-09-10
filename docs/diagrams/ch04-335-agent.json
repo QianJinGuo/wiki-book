@@ -1,0 +1,7 @@
+[
+ {
+  "title": "评测反直觉再读",
+  "code": "graph TD\n    COUNTER[\"质量优化伤规模化\"] ==> OBS[\"observation成本原子\"]\n    OBS -->|\"转向可规模化\"| ORDER[\"成本延迟质量排序\"]\n    ORDER ==> PRODBOTH[\"产品工程共评\"]\n    BADCASE[\"badcase是特性边界\"] -.-> ORDER",
+  "isSvg": false
+ }
+]

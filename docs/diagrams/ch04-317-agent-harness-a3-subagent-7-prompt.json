@@ -1,0 +1,7 @@
+[
+ {
+  "title": "七框架 SubAgent 对比",
+  "code": "graph TD\n    PURPOSE[\"三目的长文旁观并行\"] ==> CC[\"CC四模式最全\"]\n    CC ==> CODEX[\"Codex递归批量\"]\n    CODEX ==> OTHERS[\"其余各取一二\"]\n    NORECURSE[\"多禁多层递归\"] -.-> OTHERS\n    RULE[\"不委托理解\"] -.-> CC",
+  "isSvg": false
+ }
+]

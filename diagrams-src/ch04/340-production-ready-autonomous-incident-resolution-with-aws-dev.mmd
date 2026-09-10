@@ -1,0 +1,6 @@
+%% title: 运维 Agent GA
+graph TD
+    GA["DevOps Agent转正"] ==> MCPD["Datadog MCP桥"]
+    MCPD -->|"自动关联双遥测"| RCA["分钟级根因"]
+    RCA ==> PROACTIVE["主动预防建议"]
+    READONLY2["只读人审批"] -.-> RCA

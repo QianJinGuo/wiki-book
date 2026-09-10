@@ -1,0 +1,6 @@
+%% title: 放射科智能编排
+graph TD
+    RULES["规则引擎三缺陷"] ==> ORCH["编排带六子agent"]
+    ORCH ==> MEM3["三级记忆含反思"]
+    MEM3 -->|"双向guardrails"| OBS["可观测第一天设计"]
+    PRIOR["影像AI触发重排"] -.-> ORCH

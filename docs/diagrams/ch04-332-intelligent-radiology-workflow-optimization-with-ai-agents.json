@@ -1,0 +1,7 @@
+[
+ {
+  "title": "放射科智能编排",
+  "code": "graph TD\n    RULES[\"规则引擎三缺陷\"] ==> ORCH[\"编排带六子agent\"]\n    ORCH ==> MEM3[\"三级记忆含反思\"]\n    MEM3 -->|\"双向guardrails\"| OBS[\"可观测第一天设计\"]\n    PRIOR[\"影像AI触发重排\"] -.-> ORCH",
+  "isSvg": false
+ }
+]

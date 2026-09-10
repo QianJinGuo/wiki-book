@@ -1,0 +1,6 @@
+%% title: ARD 发现层协议
+graph TD
+    GAP["agent多难发现"] ==> ARD["描述策展搜索执行"]
+    ARD -->|"域锚定防单点"| FED["联邦可组合"]
+    STACK["MCP A2A ARD栈"] -.-> FED
+    LOCAL["全局发现本地控"] -.-> FED

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "MDASH 多模型安全审计",
+  "code": "graph TD\n    PHILOSOPHY[\"管道是产品\"] ==> FIVE[\"五阶段到证明\"]\n    FIVE -->|\"辩论去重证明\"| PLUGINS[\"领域知识插件化\"]\n    PLUGINS ==> RESULT[\"21发现零误报\"]\n    ENSEMBLE[\"分歧即信号\"] -.-> FIVE",
+  "isSvg": false
+ }
+]

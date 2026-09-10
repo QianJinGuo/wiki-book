@@ -1,0 +1,6 @@
+%% title: 语音 Agent 端到端
+graph TD
+    PIPELINE["三段流水线延迟高"] ==> S2S["语音到语音直通"]
+    S2S -->|"首音1.39秒"| PROMPT["prompt迭代提升"]
+    PROMPT ==> PROD["无服务器事件驱动"]
+    EDGE["边缘场景暴露弱"] -.-> PROMPT

@@ -1,0 +1,7 @@
+%% title: 四种子代理模式
+graph TD
+    INLINE["内联工具为默认"] ==> FANOUT["扇出启停分离"]
+    FANOUT ==> POOL["池化跨轮持久"]
+    POOL ==> TEAMS["团队直发消息"]
+    TEAMS -->|"可见性递减"| DEBUG["调试难度陡增"]
+    DEGRADE["API可降级好设计"] -.-> FANOUT
