@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Software 3.0 深读",
+  "code": "graph TD\n    VIBE[\"vibe拉低下限\"] ==> AGENTIC[\"agentic管交付\"]\n    AGENTIC -->|\"可验证定上限\"| MATERIALS[\"四新设计材料\"]\n    MATERIALS ==> INFRA[\"agent基建缺位\"]\n    GHOST[\"幽灵隐喻定预期\"] -.-> AGENTIC",
+  "isSvg": false
+ }
+]

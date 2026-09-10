@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AI 原生操作系统",
+  "code": "graph TD\n    AUDIT[\"审计工作分级\"] ==> CTX[\"context操作记忆\"]\n    CTX -->|\"git管提炼层\"| LIGHT[\"选最轻工具\"]\n    LIGHT ==> SE[\"技能评估复利\"]\n    SE ==> MOATCTX[\"context即护城河\"]\n    FOUNDER[\"创始人先上\"] -.-> SE",
+  "isSvg": false
+ }
+]

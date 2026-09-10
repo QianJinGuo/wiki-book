@@ -1,0 +1,6 @@
+%% title: AgentOps 四支柱
+graph TD
+    FOURP["治理构建评估观测"] ==> CEDAR["确定性策略控工具"]
+    CEDAR -->|"四层评估体系"| OTEL["四层遥测标准"]
+    OTEL ==> LIFECYCLE["六阶段生命周期"]
+    MULTI["跨agent权限传播"] -.-> CEDAR

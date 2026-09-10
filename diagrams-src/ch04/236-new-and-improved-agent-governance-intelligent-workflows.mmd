@@ -1,0 +1,6 @@
+%% title: Agent 365 治理面
+graph TD
+    TENSION["自动化控制张力"] ==> VIEWER["只读分析分离"]
+    VIEWER ==> A365["Agent365控制面"]
+    A365 ==> A2A["多agent通信基建"]
+    COST["用量预估防超支"] -.-> A365

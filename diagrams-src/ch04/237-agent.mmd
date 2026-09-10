@@ -1,0 +1,6 @@
+%% title: 质量优化伤规模化
+graph TD
+    BADCASE["badcase四陷阱"] ==> TRADEOFF["质量成本取舍"]
+    TRADEOFF -->|"demo聪明线上贵"| TRACE["observation定位"]
+    TRACE ==> PRODUCT["取舍进产品评审"]
+    TOKENS["修case或更贵"] -.-> TRADEOFF

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "渐进加载去锁定",
+  "code": "graph TD\n    LOCK[\"Skills绑定锁定\"] ==> PYAI[\"模型自由框架\"]\n    PYAI -->|\"hooks搭渐进加载\"| WHITE[\"白盒胜黑盒\"]\n    WHITE ==> FALLBACK[\"故障自动切模型\"]\n    PHILOSOPHY[\"加载是哲学非专利\"] -.-> PYAI",
+  "isSvg": false
+ }
+]

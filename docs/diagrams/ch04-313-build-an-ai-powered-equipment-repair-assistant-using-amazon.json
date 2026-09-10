@@ -1,0 +1,7 @@
+[
+ {
+  "title": "维修助手架构",
+  "code": "graph TD\n    AUTH[\"认证托管前端\"] ==> RUNTIME[\"单端点Runtime\"]\n    RUNTIME -->|\"工具挂KB检索\"| MEM[\"双记忆分层\"]\n    MEM ==> GUARD[\"防护随能力收紧\"]\n    KBQ[\"知识工程先行\"] -.-> RUNTIME",
+  "isSvg": false
+ }
+]

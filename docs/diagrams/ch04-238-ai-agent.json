@@ -1,0 +1,7 @@
+[
+ {
+  "title": "老开发 Agent 探索路",
+  "code": "graph TD\n    BOTTLENECK[\"人是并发瓶颈\"] ==> LADDER[\"目标代码到agent\"]\n    LADDER -->|\"能下层不上层\"| CRASH[\"vibe翻车转SDD\"]\n    CRASH ==> SYS24[\"文件轮询24h系统\"]\n    SHIFT[\"task转goal驱动\"] -.-> SYS24",
+  "isSvg": false
+ }
+]

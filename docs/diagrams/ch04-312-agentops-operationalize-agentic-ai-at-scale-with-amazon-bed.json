@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AgentOps 四支柱",
+  "code": "graph TD\n    FOURP[\"治理构建评估观测\"] ==> CEDAR[\"确定性策略控工具\"]\n    CEDAR -->|\"四层评估体系\"| OTEL[\"四层遥测标准\"]\n    OTEL ==> LIFECYCLE[\"六阶段生命周期\"]\n    MULTI[\"跨agent权限传播\"] -.-> CEDAR",
+  "isSvg": false
+ }
+]

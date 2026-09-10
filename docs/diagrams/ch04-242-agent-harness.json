@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Harness 即新后端",
+  "code": "graph TD\n    SPLIT[\"harness后端暂分\"] ==> THREE[\"worker触发函数\"]\n    THREE -->|\"agent也是worker\"| COLLAPSE[\"类别坍缩统一\"]\n    COLLAPSE ==> PROPS[\"实时发现扩展涌现\"]\n    SPECTRUM[\"薄厚之争消解\"] -.-> COLLAPSE",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Agent 365 治理面",
+  "code": "graph TD\n    TENSION[\"自动化控制张力\"] ==> VIEWER[\"只读分析分离\"]\n    VIEWER ==> A365[\"Agent365控制面\"]\n    A365 ==> A2A[\"多agent通信基建\"]\n    COST[\"用量预估防超支\"] -.-> A365",
+  "isSvg": false
+ }
+]

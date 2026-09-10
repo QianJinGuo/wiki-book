@@ -1,0 +1,7 @@
+[
+ {
+  "title": "代码驱动子代理编排",
+  "code": "graph TD\n    SHIFT[\"推理编排转代码\"] ==> MODES[\"六模式编排谱系\"]\n    MODES -->|\"QuickJS安全执行\"| DET[\"循环分支确定\"]\n    DET ==> FLEX[\"运行时自选模式\"]\n    SCHEMA[\"结构化输出可聚合\"] -.-> DET\n    SAME[\"与RLM同源思想\"] -.-> SHIFT",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,6 @@
+%% title: Harness 即新后端
+graph TD
+    SPLIT["harness后端暂分"] ==> THREE["worker触发函数"]
+    THREE -->|"agent也是worker"| COLLAPSE["类别坍缩统一"]
+    COLLAPSE ==> PROPS["实时发现扩展涌现"]
+    SPECTRUM["薄厚之争消解"] -.-> COLLAPSE

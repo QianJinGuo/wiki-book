@@ -1,0 +1,7 @@
+[
+ {
+  "title": "ARA 研究载体革命",
+  "code": "graph TD\n    TAXES[\"叙事加工程两税\"] ==> FOURL[\"四层研究包\"]\n    FOURL -->|\"死路pivot保留\"| LIVE[\"轨迹自动长出\"]\n    LIVE ==> TENSION[\"留路亦枷锁\"]\n    COMPILE[\"存量PDF可编译\"] -.-> LIVE",
+  "isSvg": false
+ }
+]

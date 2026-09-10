@@ -1,0 +1,7 @@
+[
+ {
+  "title": "PRINCE 三层反思",
+  "code": "graph TD\n    SAD[\"检索问答到执行\"] ==> REFL[\"过程数据草稿反思\"]\n    REFL -->|\"各阶段各上下文\"| DISCIPLINE[\"上下文纪律\"]\n    DISCIPLINE ==> PIPELINE[\"混合检索加SQL\"]\n    PIPELINE ==> RECOVERY[\"持久化与回退\"]",
+  "isSvg": false
+ }
+]

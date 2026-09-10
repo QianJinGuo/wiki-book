@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Headless 界面何去",
+  "code": "graph TD\n    THREE[\"查找执行分析三分\"] ==> EXECUTE[\"执行层金矿难过\"]\n    EXECUTE -->|\"例外知识护城河\"| SAP[\"SAP逻辑难替代\"]\n    SAP ==> STICKY[\"粘性迁到协议\"]\n    DUAL[\"双接口为人机器\"] -.-> STICKY",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,6 @@
+%% title: 维修助手架构
+graph TD
+    AUTH["认证托管前端"] ==> RUNTIME["单端点Runtime"]
+    RUNTIME -->|"工具挂KB检索"| MEM["双记忆分层"]
+    MEM ==> GUARD["防护随能力收紧"]
+    KBQ["知识工程先行"] -.-> RUNTIME

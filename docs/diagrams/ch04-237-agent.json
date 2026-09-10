@@ -1,0 +1,7 @@
+[
+ {
+  "title": "质量优化伤规模化",
+  "code": "graph TD\n    BADCASE[\"badcase四陷阱\"] ==> TRADEOFF[\"质量成本取舍\"]\n    TRADEOFF -->|\"demo聪明线上贵\"| TRACE[\"observation定位\"]\n    TRACE ==> PRODUCT[\"取舍进产品评审\"]\n    TOKENS[\"修case或更贵\"] -.-> TRADEOFF",
+  "isSvg": false
+ }
+]
