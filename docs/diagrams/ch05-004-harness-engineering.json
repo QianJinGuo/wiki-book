@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Harness Engineering 系统梳理（导航）",
+  "code": "graph TD\n    SURVEY[\"Agent Harness Survey综述\"] ==> PYR[\"七层金字塔生产指南\"]\n    PYR -->|\"翁荔RSI全景\"| LOOP[\"17种Loop工程实证\"]\n    LOOP ==>|\"12组件+OS类比\"| SRC[\"Claude Code源码8步循环\"]\n    SRC -.->|\"HF术语表概念辨析\"| PRACT[\"工程实践层\"]\n    PRACT ==>|\"QQ音乐大仓实践\"| MINUS[\"减法工程L0-L3\"]",
+  "isSvg": false
+ }
+]

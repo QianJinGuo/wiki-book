@@ -1,0 +1,7 @@
+%% title: Skills、MCP、CLI 三层连接栈
+graph TD
+    THREE["顶级Agent三层全用"] ==>|"领域知识复杂上下文"| SKILL["Skill可移植指令"]
+    SKILL -->|"每响应约200token"| CLI["CLI预训练工具执行"]
+    CLI ==>|"44000-55000token开销"| MCP["MCP企业级治理连接"]
+    MCP -.->|"tool_search按需加载"| FIVE["渐进发现省5倍context"]
+    FIVE ==>|"V8沙盒写编排脚本"| CODE["代码模式一次编排多工具"]

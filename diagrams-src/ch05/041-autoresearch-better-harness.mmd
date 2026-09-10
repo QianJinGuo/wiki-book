@@ -1,0 +1,6 @@
+%% title: Better Harness：自动优化难在评价信号
+graph TD
+    EVAL["eval错则优化跑更快"] ==>|"拆优化集与留出集"| HOLD["留出集防刷熟悉题"]
+    HOLD ==>|"定位行动节奏问题"| TRACE["trace诊断搜索停不下"]
+    TRACE -.->|"失败trace即天然样例"| FLY["eval生产飞轮"]
+    FLY ==>|"使用量决定trace覆盖"| CORE["eval体系成核心资产"]

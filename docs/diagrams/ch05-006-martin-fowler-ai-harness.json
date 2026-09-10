@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Martin Fowler：AI 研发 Harness 承重层（导航）",
+  "code": "graph TD\n    FOWLER[\"非确定性协作者需承重层\"] ==> JAVA[\"AgentScope Java 2.0\"]\n    JAVA -->|\"九大harness记忆横评\"| MEM[\"State of Memory\"]\n    MEM ==>|\"The Coming Loop两循环\"| RALPH[\"Ralph Loop到接管Harness\"]\n    RALPH -.->|\"三类漂移+5张卡治理\"| GOAL[\"Codex /goal目标运行时\"]\n    GOAL ==>|\"7x24自愈生产线\"| INFRA[\"Agent-Oriented Infra\"]",
+  "isSvg": false
+ }
+]

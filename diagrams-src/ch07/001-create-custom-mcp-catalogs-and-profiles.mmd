@@ -1,0 +1,7 @@
+%% title: Docker MCP Catalogs 与 Profiles GA
+graph TD
+    TRUST["哪些工具可信谁批准"] ==>|"组织批准清单"| CAT["Custom Catalog OCI artifact"]
+    CAT ==>|"官方+社区+自建混合"| PROF["Profiles按场景命名分组"]
+    PROF -->|"coding/planning/research"| TOOL["tool级开关省context"]
+    TOOL -.->|"配置一次反复复用"| OCI["OCI push/pull团队共享"]
+    OCI ==>|"平台定路径个人自由组合"| SPLIT["治理不沦为管控"]

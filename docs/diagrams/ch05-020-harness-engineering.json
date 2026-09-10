@@ -1,0 +1,7 @@
+[
+ {
+  "title": "清华：驾驭工程 Harness 研究报告",
+  "code": "graph TD\n    LISTEN[\"从让AI听懂\"] ==>|\"79页治理框架\"| TRUST[\"可信可控可持续运行\"]\n    TRUST ==>|\"制度化机械可验证\"| CONTRACT[\"契约+状态恢复+审计\"]\n    CONTRACT -->|\"Allow/Deny/Ask\"| PERM[\"Permission Engine+沙箱\"]\n    PERM -.->|\"三级压缩策略显式化\"| CTX[\"上下文预算治理\"]\n    CTX ==>|\"三层递进协同\"| THREE[\"Prompt/Context/Harness\"]",
+  "isSvg": false
+ }
+]

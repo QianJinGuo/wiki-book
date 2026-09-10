@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Skill Factory：TDD 驱动的技能工厂",
+  "code": "graph TD\n    MANUAL[\"人工与对话式缺陷\"] ==>|\"无验证闭环\"| TDD[\"先测试用例后生成\"]\n    TDD ==>|\"自动回归验证\"| PARALLEL[\"三路并发择优\"]\n    PARALLEL -.->|\"管理生成不确定性\"| TRACE[\"Trace2Skill轨迹蒸馏\"]\n    TRACE -->|\"小模型提专家技能\"| SKILLRL[\"技能库与策略共进化\"]\n    SKILLRL ==>|\"不可执行技能\"| VIRT[\"虚拟环境回归\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Agentic Overlays：遗留 REST 服务转 A2A",
+  "code": "graph TD\n    REST[\"存量REST微服务\"] ==>|\"薄包装不改业务逻辑\"| OVER[\"Agentic Overlay\"]\n    OVER ==>|\"JSON-RPC翻译成REST\"| TRANS[\"Request Translator模式\"]\n    TRANS -->|\"REST响应包装回A2A\"| CARD[\"Agent Card自动发现\"]\n    CARD -.->|\"A2A+MCP双协议暴露\"| GW[\"AgentCore Gateway解耦\"]\n    GW ==>|\"单管线零重写\"| ENT[\"企业最低成本agent化\"]",
+  "isSvg": false
+ }
+]

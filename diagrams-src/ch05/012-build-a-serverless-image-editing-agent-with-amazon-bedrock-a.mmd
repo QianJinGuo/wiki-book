@@ -1,0 +1,7 @@
+%% title: AgentCore 无服务器图像编辑 Agent
+graph TD
+    PROMPT["自然语言改图指令"] ==>|"Claude Sonnet 4.6拆步骤"| AGENT["AgentCore harness编排"]
+    AGENT ==>|"路由Stability AI工具"| EDIT["Lambda工具经MCP暴露"]
+    EDIT -->|"microVM加水印零token"| MEM["30天会话记忆"]
+    MEM -.->|"Haiku聊天Sonnet编辑"| SWITCH["按调用切换模型"]
+    SWITCH ==>|"行业persona注入"| CDK["CDK一条命令全量部署"]

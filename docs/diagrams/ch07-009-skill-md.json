@@ -1,0 +1,7 @@
+[
+ {
+  "title": "SKILL.md 实战：简历生成器",
+  "code": "graph TD\n    META[\"前置元数据约100token\"] ==>|\"渐进式披露\"| BODY[\"正文约1350token\"]\n    BODY ==>|\"正负触发词清单\"| DESC[\"description精准路由\"]\n    DESC -.->|\"验证零错误才进下一步\"| LOOP[\"验证循环自解释错误\"]\n    LOOP -->|\"症状原因解决法\"| GOTCHA[\"Gotchas显式专家知识\"]\n    GOTCHA ==>|\"确定性任务交bash脚本\"| SPLIT[\"LLM判断脚本执行\"]",
+  "isSvg": false
+ }
+]

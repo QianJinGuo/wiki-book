@@ -1,0 +1,7 @@
+%% title: 电商 MCP Server：AgentCore + Mistral
+graph TD
+    INTEG["数周定制集成拖延"] ==>|"FastMCP+AgentCore Runtime"| MCP["生产级电商MCP server"]
+    MCP ==>|"两层JWT验证"| COG["Cognito OAuth 2.1身份"]
+    COG -->|"按客户隔离数据"| DB["DynamoDB存储"]
+    DB -.->|"CDK部署"| VIBE["Mistral Vibe多端接入"]
+    VIBE ==>|"MCP标准一次编写"| MULTI["任意MCP客户端可连"]

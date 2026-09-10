@@ -1,0 +1,8 @@
+%% title: 从零复刻 Claude Code：easy-agent
+graph TD
+    BUILD["Learning by Building复刻"] ==> INFRA["基础设施层LLM通信终端UI"]
+    INFRA ==> CORE["Agentic Loop+Tool接口"]
+    CORE ==>|"记忆压缩Token预算"| KNOW["认知增强层"]
+    KNOW -.->|"MCP Skills沙箱"| EXT["系统扩展层"]
+    EXT ==>|"30模块分阶段验收"| TUT["沉淀可复现教程"]
+    BUILD -.->|"教程喂给Coding Agent结对"| TUT
