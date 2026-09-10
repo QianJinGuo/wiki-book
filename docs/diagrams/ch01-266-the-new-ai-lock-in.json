@@ -1,0 +1,7 @@
+[
+ {
+  "title": "新 AI 锁定：层级上移",
+  "code": "graph TD\n    MODEL[\"模型层易换\"] ==> UP[\"锁定上移编排服务\"]\n    ORCH[\"框架积业务逻辑\"] ==> STICK[\"换框架即部分重写\"]\n    SURF[\"管理面成壁垒\"] -.-> STICK\n    SVC[\"顾问knowhow\"] -.->|\"最深锁定\"| STICK\n    K8S[\"MCP如K8s标准化一层\"] ==> LOCKUP[\"锁定转到数据重力\"]\n    CTRL[\"控制平面定粘性\"] -.-> STICK",
+  "isSvg": false
+ }
+]

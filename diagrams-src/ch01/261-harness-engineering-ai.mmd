@@ -1,0 +1,8 @@
+%% title: AI 全自动评测优化平台
+graph TD
+    AIFIRST["只许AI操作人靠边"] ==> GEN["AI自建评测与报告"]
+    GEN ==> RUB["Rubrics分级评质量"]
+    RUB ==> LOOP["评测建议优化循环"]
+    LOOP -->|"90.7升至99.1"| DIMIN["边际递减绝对值升"]
+    PREMISE["前提系统AI含量高"] -.-> LOOP
+    UI["UI不规范AI迷路"] -.-> PREMISE

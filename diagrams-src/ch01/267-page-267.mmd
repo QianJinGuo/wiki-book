@@ -1,0 +1,8 @@
+%% title: 多智能体上下文隔离
+graph TD
+    POLL["污染渐进难察觉"] ==> ISO["状态隔离强制边界"]
+    OWV["三角色OwnerWorkerVerify"] ==> ISO
+    OWV -->|"验证者不见执行推理"| ADV["对抗验证保客观"]
+    SUB["子代理按型分上下文"] -.-> ISO
+    NONLIN["越大质量非线性"] -.-> ISO
+    REFLECT["反射子代理管记忆"] -.-> SUB

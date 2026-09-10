@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Scenethesis 文生 3D 闭环",
+  "code": "graph TD\n    PLAN[\"LLM语义规划JSON\"] ==> VIS[\"视觉落地几何坐标\"]\n    VIS ==> SDF[\"SDF细粒度物理对齐\"]\n    SDF -->|\"碰撞降到0.8%\"| JUDGE[\"judge自检修复闭环\"]\n    JUDGE -->|\"首轮通过91%\"| EMB[\"具身智能仿真基座\"]\n    BBOX[\"包围盒太粗糙\"] -.-> SDF\n    OUT[\"户外场景亦泛化\"] -.-> EMB",
+  "isSvg": false
+ }
+]

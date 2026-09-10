@@ -1,0 +1,8 @@
+%% title: 柚漫剧 AI 全流程提效
+graph TD
+    RULES["25规则文件四类"] ==> BASE["Rules MCP Skills基建"]
+    BASE ==> ROLE["三角色重定义协作"]
+    ROLE ==> CODE["代码成产研中间态"]
+    AIQA["AIQA用例生成81%"] -.-> BASE
+    PAIN["被痛点倒逼补规则"] -.-> RULES
+    NEW["新项目宜存量拆模块"] -.-> CODE

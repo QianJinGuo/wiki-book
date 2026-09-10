@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Sentry 非工程团队上线",
+  "code": "graph TD\n    ASYM[\"CMS半站不可编程\"] ==> MIGRATE[\"迁Git两千五百页\"]\n    MIGRATE ==> ASTRO[\"换框架构建14到4分\"]\n    ASTRO ==> TPL[\"200页敛到3模板\"]\n    SKILL[\"页面Skills即新模板\"] -.-> TPL\n    BOOK[\"Cookbook结构化内容\"] -.-> SKILL\n    HONEST[\"设计保真最慢\"] -.-> MIGRATE",
+  "isSvg": false
+ }
+]

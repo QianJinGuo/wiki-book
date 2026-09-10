@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AI 全自动评测优化平台",
+  "code": "graph TD\n    AIFIRST[\"只许AI操作人靠边\"] ==> GEN[\"AI自建评测与报告\"]\n    GEN ==> RUB[\"Rubrics分级评质量\"]\n    RUB ==> LOOP[\"评测建议优化循环\"]\n    LOOP -->|\"90.7升至99.1\"| DIMIN[\"边际递减绝对值升\"]\n    PREMISE[\"前提系统AI含量高\"] -.-> LOOP\n    UI[\"UI不规范AI迷路\"] -.-> PREMISE",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Code 能力跃迁三机制",
+  "code": "graph TD\n    EXP[\"一句目标自主74分钟\"] ==> HARNESS[\"harness是放大器\"]\n    METR[\"可靠时长指数增长\"] -.-> HARNESS\n    HARNESS ==> COMP[\"压缩写笔记清空续接\"]\n    HARNESS ==> SKILL[\"Skills按需自加载\"]\n    HARNESS ==> SUB[\"Subagents贵脑便宜手\"]\n    MCP[\"MCP生态USB标准\"] -.-> SKILL\n    RISK[\"全文件权限谄媚风险\"] -.-> SUB",
+  "isSvg": false
+ }
+]

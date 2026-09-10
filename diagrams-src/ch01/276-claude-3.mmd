@@ -1,0 +1,8 @@
+%% title: Claude 官方承认三处退化
+graph TD
+    E1["推理努力高降中"] ==> STACK["三变更异期叠加成灾"]
+    E2["缓存bug致遗忘"] ==> STACK
+    E3["系统提示限冗长"] ==> STACK
+    STACK -->|"切片分散难归因"| LESSON["渐进rollout加评测"]
+    BT["Opus4.7回测揪bug"] -.->|"AI辅助调试"| LESSON
+    FIX["新版全修复"] -.-> STACK

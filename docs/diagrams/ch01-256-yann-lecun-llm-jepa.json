@@ -1,0 +1,7 @@
+[
+ {
+  "title": "LeCun：LLM 只是接口",
+  "code": "graph TD\n    KID[\"儿童视觉10^14字节\"] ==> ARG[\"同量级智能天差\"]\n    ARG -->|\"缺世界模型\"| LLM[\"LLM只产出token\"]\n    GEN[\"预测像素十年失败\"] ==> JEPA[\"预测抽象状态\"]\n    JEPA -->|\"去噪留规划相关\"| WM[\"世界模型成核心\"]\n    FLIP[\"LLM降级为接口\"] -.-> WM\n    ROBOT[\"机器人两道墙\"] -.-> WM",
+  "isSvg": false
+ }
+]

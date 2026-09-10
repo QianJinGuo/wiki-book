@@ -1,0 +1,8 @@
+%% title: 两套 Agent 记忆源码对比
+graph TD
+    CC["CC六层markdown"] ==> SIDE["LLM选文件免向量"]
+    OC["OpenClaw建向量库"] ==> DUAL["余弦加BM25融合"]
+    FLUSH["压缩前静默存盘"] ==> OC
+    DREAM["每24h梦境整理"] -.-> OC
+    BOTH["共识markdown为真相"] ==> GIT["git可diff可回滚"]
+    Q["上千文件sideQuery准吗"] -.-> SIDE

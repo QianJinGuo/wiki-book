@@ -1,0 +1,7 @@
+[
+ {
+  "title": "柚漫剧 AI 全流程提效",
+  "code": "graph TD\n    RULES[\"25规则文件四类\"] ==> BASE[\"Rules MCP Skills基建\"]\n    BASE ==> ROLE[\"三角色重定义协作\"]\n    ROLE ==> CODE[\"代码成产研中间态\"]\n    AIQA[\"AIQA用例生成81%\"] -.-> BASE\n    PAIN[\"被痛点倒逼补规则\"] -.-> RULES\n    NEW[\"新项目宜存量拆模块\"] -.-> CODE",
+  "isSvg": false
+ }
+]
