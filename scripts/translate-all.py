@@ -145,10 +145,10 @@ def extract(relpath):
     try:
         html = open(path, encoding="utf-8", errors="ignore").read()
     except FileNotFoundError:
-        # The daily loop renumbers/renames entity pages concurrently; a page
-        # that vanishes between the walk and the read is simply skipped.
+        # The daily loop renumbers/renames entity pages concurrently; signal
+        # the caller with None so the page can be retried after the sweep.
         print(f"    skipped (vanished): {relpath}", flush=True)
-        return []
+        return None
     parser.feed(html)
     return parser.segments
 
@@ -235,9 +235,27 @@ def main():
     api_key = None if args.dry_run else load_api_key()
     os.makedirs(OUT, exist_ok=True)
 
+    # Site health gate: the daily loop occasionally wipes site/ mid-rebuild;
+    # extracting from a gutted tree silently produces empty dictionaries and
+    # a false "done". Refuse to start until the tree looks whole again.
+    def site_page_count():
+        n = 0
+        for root, dirs, files in os.walk(SITE):
+            dirs[:] = [d for d in dirs if d not in ("assets", "search", "agent-book", "en")]
+            n += sum(1 for f in files if f.endswith(".html"))
+        return n
+
+    if not args.dry_run:
+        while site_page_count() < 800:
+            print(f"site/ looks gutted ({site_page_count()} html pages); waiting 120s for restore", flush=True)
+            time.sleep(120)
+
     total_pages = 0
     total_new = 0
-    for rel in relpaths:
+    vanished = []
+
+    def process_page(rel):
+        nonlocal total_pages, total_new
         key = page_key(rel)
         out_path = os.path.join(OUT, key + ".json")
         existing = {}
@@ -247,7 +265,11 @@ def main():
             except Exception:  # noqa: BLE001
                 existing = {}
 
-        segments = extract(rel)
+        raw_segments = extract(rel)
+        if raw_segments is None:
+            vanished.append(rel)
+            return
+        segments = raw_segments
         pairs = {}
         for seg in segments:
             pairs.setdefault(seg_key(seg), seg)
@@ -259,7 +281,7 @@ def main():
         char_count = sum(len(pairs[k]) for k in new_keys)
         print(f"[{key}] segments={len(pairs)} new={len(new_keys)} chars={char_count:,}", flush=True)
         if args.dry_run or not new_keys:
-            continue
+            return
 
         items = [(k, pairs[k]) for k in new_keys]
         batches = []
@@ -298,6 +320,19 @@ def main():
             json.dump(existing, fh, ensure_ascii=False, sort_keys=True)
         if lock_work["failed"]:
             print(f"    WARNING: {len(lock_work['failed'])} segments failed, rerun to retry", flush=True)
+
+    for rel in relpaths:
+        process_page(rel)
+
+    # Pages that vanished mid-run (the daily loop wiping site/) were skipped;
+    # once the tree is whole again, sweep them once instead of leaving holes.
+    if vanished and not args.dry_run:
+        print(f"\n{len(vanished)} pages vanished mid-run; retrying after site health check", flush=True)
+        while site_page_count() < 800:
+            print(f"site/ still gutted ({site_page_count()} html pages); waiting 120s", flush=True)
+            time.sleep(120)
+        for rel in vanished:
+            process_page(rel)
 
     print(f"\nDone: {total_pages} pages scanned, {total_new} new segments translated", flush=True)
 
