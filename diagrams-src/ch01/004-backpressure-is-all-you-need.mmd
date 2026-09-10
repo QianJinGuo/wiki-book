@@ -1,0 +1,8 @@
+%% title: Backpressure is all you need
+graph TD
+    LLM["LLM：超速生产者"] ==> BP["反压：传递消费者状态"]
+    BP ==> L1["类型检查：本地最便宜"]
+    L1 ==> L2["单元测试"] ==> L3["Benchmark 防性能退化"]
+    L3 ==> L4["Review Agent 多维审查"] ==> L5["人类只做最终决策"]
+    CLIP["人肉剪贴板反模式"] ==> FIX["Agent 间自动反压协议"]
+    TS["TypeScript：类型即反压"] -.-> L1

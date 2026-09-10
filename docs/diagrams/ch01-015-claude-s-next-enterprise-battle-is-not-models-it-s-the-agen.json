@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude 下一个战场：Agent 控制平面",
+  "code": "graph TD\n    MODEL[\"模型层趋于同质化\"] ==> CTRL[\"控制平面成新战场\"]\n    CTRL -->|\"VB Pulse 份额\"| MS[\"Microsoft 38.6% 靠分发\"]\n    CTRL ==> OA[\"OpenAI 25.7%\"]\n    CTRL ==> AN[\"Anthropic 5.7% 模型层渗透\"]\n    SEC[\"安全权限成选型首要\"] ==> CTRL\n    LOCK[\"运行时锁定：换基础设施\"] -.-> CTRL\n    MCP[\"MCP 开放不等于运行时开放\"] -.-> LOCK",
+  "isSvg": false
+ }
+]

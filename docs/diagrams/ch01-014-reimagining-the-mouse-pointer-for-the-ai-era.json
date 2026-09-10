@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AI Pointer：指针的语义化重构",
+  "code": "graph TD\n    OLD[\"Copy and Prompt 搬上下文\"] ==> NEW[\"Point and Ask AI 到现场\"]\n    P1[\"保持工作流连续\"] ==> NEW\n    P2[\"展示与讲述\"] ==> NEW\n    P3[\"这个那个的指代力\"] ==> NEW\n    P4[\"像素变可交互实体\"] ==> NEW\n    NEW ==> SHIP[\"Chrome 与 Googlebook 集成\"]\n    SHIP ==> DEV[\"应用须暴露语义化 UI\"]",
+  "isSvg": false
+ }
+]

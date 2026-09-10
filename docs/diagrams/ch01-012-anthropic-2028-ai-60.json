@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Anthropic 联创：2028 AI 自我构建",
+  "code": "graph TD\n    M[\"Benchmark 马赛克方法论\"] ==> SW[\"SWE-Bench 2%到93.9%\"]\n    M ==> CB[\"CORE-Bench 21.5%到95.5%\"]\n    M ==> METR[\"METR 自主时长30秒到100小时\"]\n    SW ==> CLAIM[\"2028 自我构建概率 60%\"]\n    CB ==> CLAIM\n    HUANG[\"黄仁勋：工程层批评\"] -.-> CLAIM\n    TAO[\"陶哲轩：资本叙事批评\"] -.-> CLAIM\n    DECAY[\"对齐衰减：五百代剩六成\"] -.-> CLAIM",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "20VC x SaaStr：AI 资本与组织重构",
+  "code": "graph TD\n    CAPEX[\"2026 五巨头资本支出 $700B\"] ==> CIRC[\"增长靠向 LLM 双雄卖算力\"]\n    CIRC -->|\"空头视角：循环收入\"| PAL[\"Palantir 唯一百亿级转型商\"]\n    PAL -->|\"RPO+134% Ro40=145%\"| COVID[\"采购压缩：CEO 强制上桌\"]\n    SAAS[\"SaaS 两级测试\"] -->|\"货币化存量加吸引新客户\"| ICE[\"不达标即慢冰块\"]\n    ARM[\"Armstrong 测试：经理须产出\"] -.-> ICE",
+  "isSvg": false
+ }
+]

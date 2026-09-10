@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Toto 2.0：时间序列进入缩放时代",
+  "code": "graph TD\n    FAM[\"4M 到 2.5B 五个规模\"] ==> SCAL[\"首个可靠缩放：越大越好\"]\n    SCAL ==> SOTA[\"三基准全 SOTA 零样本\"]\n    CPM[\"Contiguous Patch Masking\"] ==> ONE[\"单次传递替代十六步\"]\n    EFF[\"22M 匹配旧旗舰省7倍\"] -.-> CPM\n    LONG[\"超上下文即漂移崩溃\"] -.-> SCAL\n    BLK[\"块解码加KV缓存稳长程\"] -.-> LONG",
+  "isSvg": false
+ }
+]

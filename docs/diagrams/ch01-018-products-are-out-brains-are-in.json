@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Products are out, brains are in",
+  "code": "graph TD\n    ZMC[\"软件边际成本趋零\"] ==> BUY[\"购买动机：不想自己养\"]\n    BUY -->|\"强监管行业\"| TRUST[\"买信任：谁不惹麻烦\"]\n    TRUST ==> DQ[\"新生产要素：决策质量\"]\n    DQ -->|\"执行可自动化\"| JUDGE[\"最佳判断无法自动化\"]\n    TUG[\"竞争是拔河：小决策累积\"] -.-> JUDGE\n    FOUNDER[\"创始人内容：公开决策质量\"] -.-> DQ",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,8 @@
+%% title: WSL 图片粘贴三层故障链
+graph TD
+    L1["WSLg 只转发 BMP 格式"] ==> L2["sharp WASM 无 BMP 加载器"]
+    L2 ==> L3["终端拦截 Ctrl+V"]
+    RACE["WSLg 静默覆写竞态"] -.-> L1
+    C1["clip-listener 转 PNG"] ==> C2["延迟0.5秒重断言"]
+    C2 ==> C3["Alt+V 绕开快捷键"]
+    L1 -.->|"分层绕行逐层补偿"| C1

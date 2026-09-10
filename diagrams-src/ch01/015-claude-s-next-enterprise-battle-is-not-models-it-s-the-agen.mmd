@@ -1,0 +1,9 @@
+%% title: Claude 下一个战场：Agent 控制平面
+graph TD
+    MODEL["模型层趋于同质化"] ==> CTRL["控制平面成新战场"]
+    CTRL -->|"VB Pulse 份额"| MS["Microsoft 38.6% 靠分发"]
+    CTRL ==> OA["OpenAI 25.7%"]
+    CTRL ==> AN["Anthropic 5.7% 模型层渗透"]
+    SEC["安全权限成选型首要"] ==> CTRL
+    LOCK["运行时锁定：换基础设施"] -.-> CTRL
+    MCP["MCP 开放不等于运行时开放"] -.-> LOCK

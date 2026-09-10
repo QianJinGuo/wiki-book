@@ -1,0 +1,8 @@
+%% title: Karpathy Autoresearch 挖出三年旧 Bug
+graph TD
+    AGENT["过夜运行的 AI Agent"] ==> BUG["toTimeZone 包裹时间戳"]
+    BUG -->|"规划器看不穿"| LOSE["分区裁剪失效三年"]
+    LOSE -->|"MinMax 跳数索引兜底"| HID["不慢到报警无人察觉"]
+    FIX["字段裸露常量带时区"] ==> RES["粒元扫描减 62%"]
+    LOOP["提议跑基准留好弃差"] -.-> AGENT
+    NRW["范围收窄：30天到1天秒级迭代"] -.-> LOOP

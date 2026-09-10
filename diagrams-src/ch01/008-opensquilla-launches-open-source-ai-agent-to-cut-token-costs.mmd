@@ -1,0 +1,9 @@
+%% title: OpenSquilla 开源 Agent 运行时
+graph TD
+    REQ["每个请求"] ==> CLS["ML 分类器评复杂度"]
+    CLS ==> CHEAP["简单查询走便宜模型"]
+    CLS ==> DEEP["复杂推理才开深度思考"]
+    MEM["四层记忆：工作情景语义原始"] ==> CTX["缓存优先：八成输入命中"]
+    CTX ==> SAVE["Token 成本降 60-80%"]
+    SEC["syscall 级沙箱三层策略"] -.-> REQ
+    KERN["微内核：百行编排器"] -.-> MEM

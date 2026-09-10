@@ -1,0 +1,9 @@
+%% title: Agentic Design System
+graph TD
+    CHAT["Chatbot：被动问答"] ==> AG["Agent：读规则提变更"]
+    AG ==> ORCH["Orchestration 编排多智能体"]
+    CT["组件即契约：useFor/avoidFor"] ==> AG
+    TOK["语义 Token 携带意图"] ==> CT
+    MCP["Figma MCP 设计上下文桥"] -.-> AG
+    VAL["验证层：可信的前提"] ==> ORCH
+    ORCH ==> GOV["治理：审批审计回滚"]

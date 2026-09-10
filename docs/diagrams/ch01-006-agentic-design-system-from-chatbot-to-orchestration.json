@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Agentic Design System",
+  "code": "graph TD\n    CHAT[\"Chatbot：被动问答\"] ==> AG[\"Agent：读规则提变更\"]\n    AG ==> ORCH[\"Orchestration 编排多智能体\"]\n    CT[\"组件即契约：useFor/avoidFor\"] ==> AG\n    TOK[\"语义 Token 携带意图\"] ==> CT\n    MCP[\"Figma MCP 设计上下文桥\"] -.-> AG\n    VAL[\"验证层：可信的前提\"] ==> ORCH\n    ORCH ==> GOV[\"治理：审批审计回滚\"]",
+  "isSvg": false
+ }
+]

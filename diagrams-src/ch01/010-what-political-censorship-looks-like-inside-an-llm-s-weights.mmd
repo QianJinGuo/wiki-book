@@ -1,0 +1,9 @@
+%% title: Qwen3.5 权重内的审查电路
+graph TD
+    W["Writer 层 L11-20 算方向"] ==> D3["d_prc d_refuse d_style"]
+    D3 ==> R["Reader 层 L20-31 冗余渲染"]
+    BASE["Base 模型事实知识完好"] -.->|"行为覆盖非知识删除"| D3
+    GRID["不对称 topic×register 模板"] ==> D3
+    ST["Writer 加 α·d 可全翻转"] -.-> R
+    RST["Reader 层外科干预全无效"] -.-> R
+    STICK["话题粘性：港86%台9%"] -.-> RST
