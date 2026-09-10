@@ -276,9 +276,17 @@ def main():
         pairs = {}
         for seg in segments:
             pairs.setdefault(seg_key(seg), seg)
-        # Heal passthroughs: an entry whose "translation" equals its source
-        # (upstream skipped a mixed-language line) is retried on rerun.
-        new_keys = [k for k in pairs if k not in existing or existing[k] == pairs[k]]
+        # Heal rules — an existing entry is re-translated when:
+        # - it is missing entirely, or
+        # - its value equals the source (upstream passthrough skip), or
+        # - its value still contains CJK (malformed "original → translation"
+        #   combos from throttled batches).
+        new_keys = [
+            k for k in pairs
+            if k not in existing
+            or existing[k] == pairs[k]
+            or CJK.search(existing[k])
+        ]
         total_pages += 1
         total_new += len(new_keys)
         char_count = sum(len(pairs[k]) for k in new_keys)
