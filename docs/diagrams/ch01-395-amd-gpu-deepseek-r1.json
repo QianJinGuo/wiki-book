@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AMD 免费云部署 R1",
+  "code": "graph TD\n    FREE[\"两百小时免费卡\"] ==> ROCM[\"环境变量双置\"]\n    ROCM ==> VLLM[\"vLLM开工具调用\"]\n    VLLM ==> TUNNEL[\"ngrok隧道公网\"]\n    TUNNEL ==> CLIENT[\"双客户端接入\"]\n    MS[\"国内镜像加速下载\"] -.-> VLLM\n    CLEAN[\"用完删实例止损\"] -.-> FREE",
+  "isSvg": false
+ }
+]

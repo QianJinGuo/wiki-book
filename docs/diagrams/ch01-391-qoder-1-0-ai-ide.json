@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Qoder 1.0 Agent 工作台",
+  "code": "graph TD\n    QUEST[\"Quest独立视窗\"] ==> PARALLEL[\"跨项目并行任务\"]\n    PARALLEL ==> SUMMARY[\"完成自动出清单\"]\n    KNOW[\"团队级知识引擎\"] -.->|\"token省四成\"| EFF[\"知识复利提保留率\"]\n    HARNESS[\"任务运行时加知识\"] -.-> QUEST\n    SHIFT[\"人变监督定义者\"] -.-> QUEST",
+  "isSvg": false
+ }
+]

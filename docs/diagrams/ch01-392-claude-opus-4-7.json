@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Opus 4.7 有得有失",
+  "code": "graph TD\n    GAIN[\"编程视觉大涨\"] ==> TRADE[\"长文检索腰斩\"]\n    TRADE -->|\"1M掉了四成\"| ROUTE[\"按场景路由版本\"]\n    LIT[\"指令字面化重校\"] -.-> ROUTE\n    TOK[\"token涨三成五\"] -.-> ROUTE\n    EVAL[\"真实数据先测\"] -.-> ROUTE",
+  "isSvg": false
+ }
+]

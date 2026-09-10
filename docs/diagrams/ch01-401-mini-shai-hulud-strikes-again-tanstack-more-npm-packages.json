@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Mini Shai-Hulud 再袭",
+  "code": "graph TD\n    COORD[\"双生态协同攻击\"] ==> HIJACK[\"劫持CI与OIDC\"]\n    HIJACK -->|\"借合法发布\"| NAMES[\"三大命名空间中招\"]\n    NAMES ==> CREDS[\"搜凭据发毒包\"]\n    BUG[\"payload自身bug\"] -.->|\"侥幸失效\"| CREDS\n    LOCK[\"锁定镜像签名\"] -.-> NAMES",
+  "isSvg": false
+ }
+]

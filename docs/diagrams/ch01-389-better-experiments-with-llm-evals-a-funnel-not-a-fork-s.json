@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Evals 是漏斗非分叉",
+  "code": "graph TD\n    LOW[\"A/B胜率仅一成\"] ==> FUNNEL[\"evals上游过滤\"]\n    FUNNEL -->|\"省实验带宽\"| VERIFY[\"离线验质量在线验用户\"]\n    VERIFY ==> CAL[\"双层校准防漂移\"]\n    CAL ==> BLIND[\"回滚多来自未测维度\"]\n    GEN[\"judge意外生成假设\"] -.-> FUNNEL",
+  "isSvg": false
+ }
+]

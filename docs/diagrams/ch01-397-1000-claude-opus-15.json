@@ -1,0 +1,7 @@
+[
+ {
+  "title": "千行代码 Web Agent",
+  "code": "graph TD\n    TERMINAL[\"终端即harness\"] ==> CODE[\"模型写脚本非点击\"]\n    CODE -->|\"产出可重跑工具\"| WIN[\"反超Opus十五分\"]\n    WIN ==> MINIMAL[\"极简胜复杂编排\"]\n    DEBUG[\"标准报错可定位\"] -.-> MINIMAL\n    SMALL[\"小模型配架对齐\"] -.-> MINIMAL",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,8 @@
+%% title: FlowGraph 评测四模型
+graph TD
+    SPEC["基础设施级规范"] ==> LEASE["租约过期处理全错"]
+    LEASE -->|"完成时不查"| SCHED["调度上限逻辑早退"]
+    SCHED ==> BUILD["测试过构建失败"]
+    BUILD -->|"路由前缀挂错"| ENTRY["客户端入口缺失"]
+    ECON["低价可多次试错"] -.-> SPEC
+    OPUS["只有Opus近零bug"] -.-> LEASE

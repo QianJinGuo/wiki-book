@@ -1,0 +1,7 @@
+[
+ {
+  "title": "从 GPT-3 到 Gemini 3",
+  "code": "graph TD\n    CODE[\"会编码即会计算机\"] ==> GENERIC[\"Agent成通用工具\"]\n    GENERIC ==> INBOX[\"收件箱范式\"]\n    INBOX -->|\"异步分配与审批\"| COWORKER[\"管理数字同事\"]\n    COWORKER ==> PHD[\"博士级科研实测\"]\n    HUMAN[\"人从修错变指导\"] -.-> PHD\n    WEAK[\"也有博士生的弱点\"] -.-> PHD",
+  "isSvg": false
+ }
+]

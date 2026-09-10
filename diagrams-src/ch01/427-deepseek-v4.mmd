@@ -1,0 +1,7 @@
+%% title: DeepSeek V4 三创新
+graph TD
+    NEED["长上下文三刚需"] ==> MHC["双随机矩阵稳残差"]
+    MHC -->|"连乘封闭防爆炸"| ATT["混合注意力压KV"]
+    ATT -->|"压缩加稀疏索引"| KERNEL["二阶优化器加速"]
+    KERNEL ==> RESULT["四维全进第一梯队"]
+    KIMI["友商异曲同工"] -.-> MHC

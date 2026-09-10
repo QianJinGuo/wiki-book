@@ -1,0 +1,7 @@
+%% title: Evals 是漏斗非分叉
+graph TD
+    LOW["A/B胜率仅一成"] ==> FUNNEL["evals上游过滤"]
+    FUNNEL -->|"省实验带宽"| VERIFY["离线验质量在线验用户"]
+    VERIFY ==> CAL["双层校准防漂移"]
+    CAL ==> BLIND["回滚多来自未测维度"]
+    GEN["judge意外生成假设"] -.-> FUNNEL

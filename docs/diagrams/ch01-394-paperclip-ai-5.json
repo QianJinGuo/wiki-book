@@ -1,0 +1,7 @@
+[
+ {
+  "title": "模型是大脑Hermes工作台",
+  "code": "graph TD\n    FRAME[\"能力层加调度层\"] ==> FIT[\"先评适配再配置\"]\n    FIT -->|\"官方文档优先\"| GROUP[\"命令按场景分组学\"]\n    GROUP ==> SAFE[\"本地跑非必本地算\"]\n    DOCS[\"数据流经服务商\"] -.-> SAFE",
+  "isSvg": false
+ }
+]

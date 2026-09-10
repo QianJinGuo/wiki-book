@@ -1,0 +1,8 @@
+%% title: AMD 免费云部署 R1
+graph TD
+    FREE["两百小时免费卡"] ==> ROCM["环境变量双置"]
+    ROCM ==> VLLM["vLLM开工具调用"]
+    VLLM ==> TUNNEL["ngrok隧道公网"]
+    TUNNEL ==> CLIENT["双客户端接入"]
+    MS["国内镜像加速下载"] -.-> VLLM
+    CLEAN["用完删实例止损"] -.-> FREE

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "四 Agent 生活化配置",
+  "code": "graph TD\n    LOG[\"先记一周找摩擦\"] ==> FOUR[\"研究执行提醒健康\"]\n    FOUR -->|\"各配合适模型\"| COST[\"贵研究免费提醒\"]\n    COST ==> TG[\"TG承接输出\"]\n    TEACH[\"教我而非替我\"] -.-> FOUR\n    LIFE[\"小麻烦先落地\"] -.-> LOG",
+  "isSvg": false
+ }
+]
