@@ -2,7 +2,7 @@
 # Finish line: wait for the background batch translation to complete, heal
 # all dictionaries, deploy, then run Playwright acceptance over every page,
 # healing and re-testing failures until everything passes (max 5 rounds).
-cd /Users/jinguo/wiki-book
+cd "$(dirname "$0")/.."
 export PATH="$HOME/.volta/bin:$PATH"
 export HTTPS_PROXY="http://127.0.0.1:7897" HTTP_PROXY="http://127.0.0.1:7897"
 
