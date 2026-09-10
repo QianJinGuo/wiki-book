@@ -1,0 +1,8 @@
+%% title: SGLang 团队创 RadixArk
+graph TD
+    DAY0["新模型发布当天支持"] ==> SYS["系统级优化泛化"]
+    CHAIN["Miles RL加SGLang"] ==> FULL["训练到上线全链路"]
+    HW["五大芯片厂齐投"] -.->|"硬件解耦焦虑"| SYS
+    BASE["27K星40万GPU"] -.-> DAY0
+    RADIX["RadixAttention前缀缓存"] -.-> SYS
+    SEED["一亿美元种子轮"] -.-> FULL

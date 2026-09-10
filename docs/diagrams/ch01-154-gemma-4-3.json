@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Gemma 4 提速三倍的秘密",
+  "code": "graph TD\n    BAND[\"自回归瓶颈在带宽\"] ==> MTP[\"MTP草稿填空档\"]\n    MTP -->|\"批量验证草稿\"| KV[\"共享KV免重算\"]\n    KV ==> SPEED[\"三倍提速质量不变\"]\n    BS[\"batch4-8显MoE优势\"] -.-> SPEED\n    EMB[\"嵌入聚类解logit瓶颈\"] ==> E2B[\"边缘E2B专项优化\"]",
+  "isSvg": false
+ }
+]

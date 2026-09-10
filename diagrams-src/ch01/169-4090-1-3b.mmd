@@ -1,0 +1,7 @@
+%% title: 1.3B 小钢炮 MiniCPM-V
+graph TD
+    SMALL["1.3B胜0.8B竞品"] ==> COMP["视觉token早压缩"]
+    COMP -->|"4倍与16倍双档"| WIN["窗口注意力省55.8%"]
+    WIN ==> SPEED["首响75.7ms"]
+    FT["一张4090可微调"] -.-> SMALL
+    KS["快手25%请求承接"] -.->|"工业验证"| SPEED

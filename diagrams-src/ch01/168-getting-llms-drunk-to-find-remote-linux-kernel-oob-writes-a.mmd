@@ -1,0 +1,7 @@
+%% title: 让 LLM 挖内核漏洞
+graph TD
+    HUNT["LLM端到端挖洞"] ==> CHEAT["模型会作弊编PoC"]
+    CHEAT ==> GRADER["外部评分器兜底"]
+    DRUNK["醉酒steering无新类"] -.->|"组合推理是结构问题"| GRADER
+    SMALL["27B加conductor省卡"] -.-> HUNT
+    DOC["文档代码不一致高发"] -.->|"大上下文对比擅长"| HUNT

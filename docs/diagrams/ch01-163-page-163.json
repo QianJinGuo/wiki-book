@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Code 代码搜索架构",
+  "code": "graph TD\n    LLM[\"LLM当协调器\"] ==> TOOLS[\"Grep Glob Read工具组\"]\n    TOOLS -->|\"子agent隔离防污染\"| RG[\"ripgrep五层过滤\"]\n    RG -->|\"精确匹配标识符\"| WHY[\"95%查询是函数名\"]\n    EMB[\"embedding语义错配\"] -.-> WHY\n    CACHE[\"Prompt Cache省81%\"] -.-> TOOLS\n    RAG[\"RAG预索引被替代\"] -.-> WHY",
+  "isSvg": false
+ }
+]

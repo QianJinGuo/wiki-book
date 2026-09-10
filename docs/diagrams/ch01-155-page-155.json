@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AI Native 程序员评估",
+  "code": "graph TD\n    PROG[\"Prompt-first新范式\"] ==> RISK[\"看不懂码是结构风险\"]\n    RISK -->|\"调试安全受限\"| SPLIT[\"按风险分级用AI\"]\n    LOW[\"低风险AI-first\"] ==> SPLIT\n    MID[\"中风险人审兜底\"] ==> SPLIT\n    HIGH[\"高风险禁AI主导\"] ==> SPLIT\n    DOC[\"强制设计意图文档\"] -.-> RISK\n    POE[\"放PoC探索试错\"] -.-> PROG",
+  "isSvg": false
+ }
+]

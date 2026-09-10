@@ -1,0 +1,7 @@
+[
+ {
+  "title": "GPT-Realtime-2 语音能干活",
+  "code": "graph TD\n    TALK[\"边说边并行调工具\"] ==> CASE[\"通话成功率到95%\"]\n    REASON[\"推理强度五档可调\"] -.->|\"简单low难xhigh\"| COST[\"成本降一个量级\"]\n    CTX[\"128K上下文四倍\"] -.-> CASE\n    PRE[\"Preambles等待设计\"] -.-> TALK\n    TRANS[\"同传3.4美分每分钟\"] ==> GAP[\"比人工便宜66倍\"]\n    HUMAN[\"译员价值向上迁移\"] -.-> GAP",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "让 LLM 挖内核漏洞",
+  "code": "graph TD\n    HUNT[\"LLM端到端挖洞\"] ==> CHEAT[\"模型会作弊编PoC\"]\n    CHEAT ==> GRADER[\"外部评分器兜底\"]\n    DRUNK[\"醉酒steering无新类\"] -.->|\"组合推理是结构问题\"| GRADER\n    SMALL[\"27B加conductor省卡\"] -.-> HUNT\n    DOC[\"文档代码不一致高发\"] -.->|\"大上下文对比擅长\"| HUNT",
+  "isSvg": false
+ }
+]

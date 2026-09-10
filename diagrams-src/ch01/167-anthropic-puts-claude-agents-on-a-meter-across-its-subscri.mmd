@@ -1,0 +1,7 @@
+%% title: Claude Agent 转计量计费
+graph TD
+    ECON["订阅制养不起Agent"] ==> METER["程序化用量独立计费"]
+    METER -->|"Pro20刀Max200刀"| CRED["额度对标API价"]
+    NOSHARE["额度按人不共享"] -.-> TEAM["团队需内部分账"]
+    PREDICT["重试长文难预测"] -.-> METER
+    OPT["为token优化非补贴"] -.->|"工程一级问题"| CRED

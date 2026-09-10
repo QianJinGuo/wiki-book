@@ -1,0 +1,7 @@
+[
+ {
+  "title": "CogAlpha 因子代码化演化",
+  "code": "graph TD\n    CODE[\"Alpha从公式变代码\"] ==> SEMA[\"注释承载可验逻辑\"]\n    L7[\"7层21Agent分工\"] ==> EVO[\"LLM驱动代码演化\"]\n    SEL[\"65合格80精英两档\"] ==> EVO\n    REW[\"轻中重三档改写\"] -.->|\"防趋同保多样\"| SEL\n    FIND[\"闭源推理模型反而弱\"] -.->|\"工作流大于模型\"| L7\n    EVO ==> OUT[\"ACL 2026口头报告\"]",
+  "isSvg": false
+ }
+]

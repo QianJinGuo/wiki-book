@@ -1,0 +1,7 @@
+[
+ {
+  "title": "OpenClaw 源码拆解总纲",
+  "code": "graph TD\n    PHIL[\"集成不发明新抽象\"] ==> ARCH[\"Gateway单进程有状态\"]\n    ARCH -->|\"产品定位定架构\"| JSONL[\"JSONL持久化易恢复\"]\n    SOUL[\"人格外置Markdown\"] ==> AUDIT[\"可diff可审计\"]\n    MEM[\"记忆即文档非数据库\"] -.-> MIX[\"七成向量加关键词\"]\n    SEC[\"安全是假设失效\"] -.-> PIPE[\"六层策略管线补漏\"]\n    NOREC[\"拒绝嵌套Agent生成\"] -.-> PHIL",
+  "isSvg": false
+ }
+]

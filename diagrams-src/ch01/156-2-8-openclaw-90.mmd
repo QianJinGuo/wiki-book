@@ -1,0 +1,8 @@
+%% title: OpenClaw 源码拆解总纲
+graph TD
+    PHIL["集成不发明新抽象"] ==> ARCH["Gateway单进程有状态"]
+    ARCH -->|"产品定位定架构"| JSONL["JSONL持久化易恢复"]
+    SOUL["人格外置Markdown"] ==> AUDIT["可diff可审计"]
+    MEM["记忆即文档非数据库"] -.-> MIX["七成向量加关键词"]
+    SEC["安全是假设失效"] -.-> PIPE["六层策略管线补漏"]
+    NOREC["拒绝嵌套Agent生成"] -.-> PHIL

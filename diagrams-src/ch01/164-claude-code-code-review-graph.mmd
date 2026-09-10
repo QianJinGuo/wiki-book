@@ -1,0 +1,8 @@
+%% title: 本地代码知识图谱
+graph TD
+    AST["Tree-sitter解析成图"] ==> NODES["函数调用成节点边"]
+    NODES ==> BR["blast-radius影响半径"]
+    BR -->|"缩小评审范围"| REV["Review不再全量扫"]
+    SQL["本地SQLite加增量"] -.-> NODES
+    MCP["三工具经MCP接入"] -.-> BR
+    MONO["monorepo价值最大"] -.-> BR

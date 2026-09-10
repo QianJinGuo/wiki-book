@@ -1,0 +1,7 @@
+[
+ {
+  "title": "本地代码知识图谱",
+  "code": "graph TD\n    AST[\"Tree-sitter解析成图\"] ==> NODES[\"函数调用成节点边\"]\n    NODES ==> BR[\"blast-radius影响半径\"]\n    BR -->|\"缩小评审范围\"| REV[\"Review不再全量扫\"]\n    SQL[\"本地SQLite加增量\"] -.-> NODES\n    MCP[\"三工具经MCP接入\"] -.-> BR\n    MONO[\"monorepo价值最大\"] -.-> BR",
+  "isSvg": false
+ }
+]
