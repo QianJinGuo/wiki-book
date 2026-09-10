@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Code 做需求调研",
+  "code": "graph TD\n    OLD[\"词频答不了动机\"] ==> ASK[\"五问锚定用户情境\"]\n    ASK ==> LAYER[\"效用分层定优先\"]\n    LAYER ==> VALUE[\"价值公式算替换成本\"]\n    VALUE ==> CHAIN[\"情境到样品可溯\"]\n    CHECK[\"工具复核价格带\"] -.-> VALUE\n    TC[\"交易成本找差异\"] -.-> CHAIN",
+  "isSvg": false
+ }
+]

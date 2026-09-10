@@ -1,0 +1,8 @@
+%% title: AI 搜索全栈架构
+graph TD
+    INGEST["摄取多源异构"] ==> ENRICH["丰富化加标签"]
+    ENRICH ==> HYBRID["倒排加向量混合索引"]
+    HYBRID ==> RETRIEVE["检索加Rerank"]
+    RETRIEVE ==> RAG["RAG须可溯源"]
+    GOV["治理前置权限过期"] -.-> HYBRID
+    OBS["可观测防漂移"] -.-> RETRIEVE

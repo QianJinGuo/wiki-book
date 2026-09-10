@@ -1,0 +1,8 @@
+%% title: 原生彩色激光雷达
+graph TD
+    FUSION["两段拼接有标定误差"] ==> NATIVE["颜色几何源头同帧"]
+    NATIVE -->|"芯片内嵌色彩"| SPEC["256线500米48bit"]
+    SPEC ==> SEMANTIC["看懂灯语与刹车"]
+    HESAI["六维路线对照"] -.-> NATIVE
+    ACQ["收购视觉公司平台化"] -.-> SPEC
+    L5["先落辅助驾驶"] -.-> SEMANTIC

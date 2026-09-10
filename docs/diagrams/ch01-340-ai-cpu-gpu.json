@@ -1,0 +1,7 @@
+[
+ {
+  "title": "全链路机密计算",
+  "code": "graph TD\n    TDX[\"TDX内存私有\"] ==> VDPA[\"vDPA需共享冲突\"]\n    VDPA -->|\"固件标注共享区\"| PPCIE[\"PPCIe链路加密\"]\n    PPCIE ==> FULL[\"补全边界泄露\"]\n    DPU[\"DPU卸载全量售卖\"] -.-> VDPA\n    QEMU[\"修复进上游社区\"] -.-> VDPA",
+  "isSvg": false
+ }
+]

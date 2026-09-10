@@ -1,0 +1,7 @@
+[
+ {
+  "title": "稀疏自编码器 SAE",
+  "code": "graph TD\n    ACT[\"激活分解稀疏特征\"] ==> EXPLAIN[\"数万可解释概念\"]\n    EXPLAIN -->|\"重建稀疏权衡\"| ALIGN[\"特征级对齐干预\"]\n    NLA[\"NLA译特征成文字\"] -.-> EXPLAIN\n    LIMIT[\"单层分析非因果\"] -.-> ALIGN\n    TOOL[\"行为调试新视角\"] -.-> EXPLAIN",
+  "isSvg": false
+ }
+]

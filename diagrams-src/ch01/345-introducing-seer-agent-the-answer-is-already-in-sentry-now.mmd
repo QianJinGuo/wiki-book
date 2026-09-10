@@ -1,0 +1,8 @@
+%% title: Seer Agent 遥测即图
+graph TD
+    ASK["自然语言问症状"] ==> GRAPH["ingest时构trace图"]
+    GRAPH -->|"沿图遍历不猜"| NAV["导航内化省数跳"]
+    NAV ==> CASES["上游根因尾劣化"]
+    SLACK["Slack多人补上下文"] -.-> NAV
+    KB["线程沉淀知识库"] -.-> SLACK
+    AUTO["事故自动侦查路线"] -.-> CASES

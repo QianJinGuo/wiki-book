@@ -1,0 +1,7 @@
+[
+ {
+  "title": "xz 后门两周年启示",
+  "code": "graph TD\n    TRUST[\"两年骗成维护者\"] ==> BUILD[\"后门藏构建系统\"]\n    BUILD -->|\"git净tarball毒\"| BLIND[\"CVE扫描结构性盲区\"]\n    HUMAN[\"500ms人肉发现\"] -.->|\"自动化测异常弱\"| BLIND\n    THREE[\"实时源脚本行为信号\"] ==> DEFENSE[\"三层现代防御\"]\n    LOCK[\"锁直接依赖看diff\"] -.-> DEFENSE\n    REPRO[\"可复现建成必需\"] -.-> BUILD",
+  "isSvg": false
+ }
+]

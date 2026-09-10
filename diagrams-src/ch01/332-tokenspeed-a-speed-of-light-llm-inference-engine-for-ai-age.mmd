@@ -1,0 +1,7 @@
+%% title: TokenSpeed Agent 推理引擎
+graph TD
+    AGENT["Agent负载长上下文"] ==> SCHED["C++控制Python执行"]
+    SCHED -->|"KV安全编译时验证"| KERNEL["可插拔MLA内核"]
+    KERNEL ==> FAST["Pareto领先9到11%"]
+    SPMD["局部SPMD编译建模"] -.-> SCHED
+    VLLM["MLA并入vLLM主线"] -.-> KERNEL

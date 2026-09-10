@@ -1,0 +1,8 @@
+%% title: Agentic 时代选型指南
+graph TD
+    THREE["模型应用harness三分"] ==> SAME["前沿模型已趋同"]
+    SAME -->|"差异在harness"| PICK["手动选最强模型"]
+    PICK ==> HARNESS["Code与Cowork分场景"]
+    HARNESS -->|"按工作类型选"| SAFE["安全看隔离机制"]
+    COWORK["桌面Agent范式"] -.-> HARNESS
+    CLAW["全权限助手被警告"] -.-> SAFE

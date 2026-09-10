@@ -1,0 +1,7 @@
+%% title: 稀疏自编码器 SAE
+graph TD
+    ACT["激活分解稀疏特征"] ==> EXPLAIN["数万可解释概念"]
+    EXPLAIN -->|"重建稀疏权衡"| ALIGN["特征级对齐干预"]
+    NLA["NLA译特征成文字"] -.-> EXPLAIN
+    LIMIT["单层分析非因果"] -.-> ALIGN
+    TOOL["行为调试新视角"] -.-> EXPLAIN

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "原生彩色激光雷达",
+  "code": "graph TD\n    FUSION[\"两段拼接有标定误差\"] ==> NATIVE[\"颜色几何源头同帧\"]\n    NATIVE -->|\"芯片内嵌色彩\"| SPEC[\"256线500米48bit\"]\n    SPEC ==> SEMANTIC[\"看懂灯语与刹车\"]\n    HESAI[\"六维路线对照\"] -.-> NATIVE\n    ACQ[\"收购视觉公司平台化\"] -.-> SPEC\n    L5[\"先落辅助驾驶\"] -.-> SEMANTIC",
+  "isSvg": false
+ }
+]

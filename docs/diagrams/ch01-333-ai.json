@@ -1,0 +1,7 @@
+[
+ {
+  "title": "企微补齐 AI 最后一公里",
+  "code": "graph TD\n    DARK[\"四成决策无痕迹\"] ==> WEWORK[\"组织级入口接管\"]\n    WEWORK ==> MEET[\"面聊声纹转待办\"]\n    WEWORK ==> SHEET[\"智能表格AI字段\"]\n    MEET -->|\"待办闭环自动\"| SHEET\n    HW[\"个体AI硬件曾失败\"] -.->|\"入口错在个体\"| WEWORK\n    EMP[\"普通员工肯用才算成\"] -.-> SHEET",
+  "isSvg": false
+ }
+]

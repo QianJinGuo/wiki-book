@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AI 搜索全栈架构",
+  "code": "graph TD\n    INGEST[\"摄取多源异构\"] ==> ENRICH[\"丰富化加标签\"]\n    ENRICH ==> HYBRID[\"倒排加向量混合索引\"]\n    HYBRID ==> RETRIEVE[\"检索加Rerank\"]\n    RETRIEVE ==> RAG[\"RAG须可溯源\"]\n    GOV[\"治理前置权限过期\"] -.-> HYBRID\n    OBS[\"可观测防漂移\"] -.-> RETRIEVE",
+  "isSvg": false
+ }
+]

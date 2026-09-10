@@ -1,0 +1,7 @@
+%% title: Gemini Omni 多模态
+graph TD
+    ANY["任意模态输入"] ==> OMNI["原生多模态统一表征"]
+    OMNI -->|"对话式视频编辑"| CONSIST["角色一致物理守恒"]
+    CONSIST ==> WATERMARK["SynthID水印溯源"]
+    AVATAR["个人形象Avatar政策"] -.->|"合成监管"| WATERMARK
+    CANVAS["文生图深度集成"] -.-> OMNI

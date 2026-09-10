@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Redis Iris 上下文引擎",
+  "code": "graph TD\n    FLIP[\"预填翻转为工具自取\"] ==> IRIS[\"检索记忆集成三件\"]\n    IRIS ==> RDI[\"CDC保数据新鲜\"]\n    RDI -.->|\"MCP暴露工具面\"| AGENT[\"Agent按需探索\"]\n    FLEX[\"SSD降本一个量级\"] -.-> IRIS\n    MILLION[\"千人千Agent预言\"] -.-> FLEX",
+  "isSvg": false
+ }
+]

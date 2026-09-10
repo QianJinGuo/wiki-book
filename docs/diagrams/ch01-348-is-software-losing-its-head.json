@@ -1,0 +1,7 @@
+[
+ {
+  "title": "软件正在失去头吗",
+  "code": "graph TD\n    HEADLESS[\"前后端分离旧范式\"] ==> LLM[\"LLM成界面重画边界\"]\n    LLM -->|\"一肩挑三层\"| BLUR[\"关注点分离模糊\"]\n    BLUR ==> LATENCY[\"同步流式破隔离\"]\n    LATENCY ==> COST[\"token计费重构成本\"]\n    MIXED[\"选择性耦合混合架构\"] -.-> BLUR\n    DEGRADE[\"超时降级规则引擎\"] -.-> LATENCY",
+  "isSvg": false
+ }
+]

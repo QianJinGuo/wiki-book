@@ -1,0 +1,7 @@
+[
+ {
+  "title": "注入即角色混淆",
+  "code": "graph TD\n    STREAM[\"LLM只见单流token\"] ==> ROLES[\"角色标签当类型系统\"]\n    ROLES -->|\"低权限获高权\"| FAIL[\"角色感知失败即注入\"]\n    FAIL ==> PROBE[\"角色探针可量化\"]\n    MEM[\"攻记忆只防已知\"] -.->|\"人类红队近全破\"| FAIL\n    FIX[\"架构级角色隔离\"] -.-> PROBE\n    THINK[\"思考块成潜意识\"] -.-> FAIL",
+  "isSvg": false
+ }
+]
