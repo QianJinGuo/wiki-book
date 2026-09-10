@@ -1,0 +1,7 @@
+[
+ {
+  "title": "GTM Agent 落地样本",
+  "code": "graph TD\n    PAIN[\"从痛点长出来\"] ==> ARCH[\"主派子Agent干活\"]\n    ARCH -->|\"先找理由不发\"| SAFE[\"保守设计防误发\"]\n    SAFE ==> EVAL[\"先定好在写码\"]\n    EVAL ==> LEARN[\"人改稿自动学\"]\n    LEARN -.->|\"转化升2.5倍\"| MISTAKE[\"三误区对照国内\"]",
+  "isSvg": false
+ }
+]

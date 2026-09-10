@@ -1,0 +1,7 @@
+%% title: Valkey 五层性能优化
+graph TD
+    PHILOSOPHY["单线程执行多IO线程"] ==> ASYNC["异步IO真并发"]
+    ASYNC -->|"管道涨四成"| DATA["缓存行哈希优化"]
+    DATA ==> CLUSTER["哈希槽加Gossip"]
+    CLUSTER ==> SEARCH["内置向量搜索"]
+    GLIDE["统一Rust客户端"] -.-> CLUSTER

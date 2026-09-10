@@ -1,0 +1,7 @@
+[
+ {
+  "title": "深度导读生成器 Prompt",
+  "code": "graph TD\n    NOT[\"导读非摘要留论证\"] ==> XML[\"六段标签划清边界\"]\n    XML ==> MODES[\"三模式可切换\"]\n    MODES ==> MIND[\"末段提认知模型\"]\n    MIND ==> LIMIT[\"初学者反而不宜\"]\n    CONSTRAINT[\"不脑补保不确定\"] -.-> XML",
+  "isSvg": false
+ }
+]

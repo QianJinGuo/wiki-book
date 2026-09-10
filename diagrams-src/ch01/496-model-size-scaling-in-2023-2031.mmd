@@ -1,0 +1,7 @@
+%% title: 模型规模推演 2031
+graph TD
+    HBM["内存带宽定管线"] ==> SIZE["规模天花板推演"]
+    SIZE -->|"冲1.4千万亿"| WALL["2027数据墙先到"]
+    WALL ==> INFLATE["缺数据被迫膨胀"]
+    INFLATE ==> SPARSITY["稀疏度放大总参"]
+    RUBIN["新卡改变经济性"] -.-> SIZE

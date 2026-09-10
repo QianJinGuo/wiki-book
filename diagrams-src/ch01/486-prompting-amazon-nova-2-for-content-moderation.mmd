@@ -1,0 +1,7 @@
+%% title: Nova 2 内容审核
+graph TD
+    TAXO["十二类危害分类"] ==> STRUCT["结构化输出默认"]
+    STRUCT -->|"按类设阈值"| ROUTE["置信度三级路由"]
+    ROUTE ==> BAL["高危保召回低危精"]
+    BAL ==> IPC["图文同prompt扩展"]
+    SUBJECTIVE["模糊类目皆偏低"] -.-> TAXO

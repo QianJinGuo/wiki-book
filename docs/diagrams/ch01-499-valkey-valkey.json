@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Valkey 五层性能优化",
+  "code": "graph TD\n    PHILOSOPHY[\"单线程执行多IO线程\"] ==> ASYNC[\"异步IO真并发\"]\n    ASYNC -->|\"管道涨四成\"| DATA[\"缓存行哈希优化\"]\n    DATA ==> CLUSTER[\"哈希槽加Gossip\"]\n    CLUSTER ==> SEARCH[\"内置向量搜索\"]\n    GLIDE[\"统一Rust客户端\"] -.-> CLUSTER",
+  "isSvg": false
+ }
+]

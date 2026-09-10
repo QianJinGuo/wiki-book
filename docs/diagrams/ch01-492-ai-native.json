@@ -1,0 +1,7 @@
+[
+ {
+  "title": "高德 AI-Native 基建",
+  "code": "graph TD\n    PARA[\"越快越乱悖论\"] ==> FIVEP[\"五类结构问题\"]\n    FIVEP ==> LAYERS[\"代码知识Skill三层\"]\n    LAYERS -->|\"源码自动转译\"| FORGE[\"skillforge管道\"]\n    FORGE ==> DUAL[\"双语义双消费者\"]\n    ENTROPY[\"反熵增先于提速\"] -.-> LAYERS",
+  "isSvg": false
+ }
+]

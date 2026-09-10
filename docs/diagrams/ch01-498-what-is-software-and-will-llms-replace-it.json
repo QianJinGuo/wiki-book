@@ -1,0 +1,7 @@
+[
+ {
+  "title": "LLM 会取代软件吗",
+  "code": "graph TD\n    EAT[\"LLM吃掉接口层\"] ==> KEEP[\"四功能不可替代\"]\n    KEEP -->|\"数据约束流程\"| KERNEL[\"确定性内核仍在\"]\n    KERNEL ==> LAYERS[\"概率编排确定三层\"]\n    LAYERS ==> ROLE[\"工程师设计边界\"]\n    VIBE[\"对氛围编码回应\"] -.-> ROLE",
+  "isSvg": false
+ }
+]

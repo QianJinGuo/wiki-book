@@ -1,0 +1,7 @@
+[
+ {
+  "title": "模型规模推演 2031",
+  "code": "graph TD\n    HBM[\"内存带宽定管线\"] ==> SIZE[\"规模天花板推演\"]\n    SIZE -->|\"冲1.4千万亿\"| WALL[\"2027数据墙先到\"]\n    WALL ==> INFLATE[\"缺数据被迫膨胀\"]\n    INFLATE ==> SPARSITY[\"稀疏度放大总参\"]\n    RUBIN[\"新卡改变经济性\"] -.-> SIZE",
+  "isSvg": false
+ }
+]

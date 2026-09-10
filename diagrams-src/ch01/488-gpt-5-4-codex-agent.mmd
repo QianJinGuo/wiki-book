@@ -1,0 +1,7 @@
+%% title: Codex 四维评估跃迁
+graph TD
+    FOUR["正确易用速度成本"] ==> EDGE["硬棱角消失质变"]
+    EDGE -->|"更少token同分"| EFF["推理效率被低估"]
+    EFF ==> PHILOS["猜意图对字面执行"]
+    PHILOS ==> FUTURE["未来类Slack多agent"]
+    TODO["规划外多TODO易丢"] -.-> FUTURE

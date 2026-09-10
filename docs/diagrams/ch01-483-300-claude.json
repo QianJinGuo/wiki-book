@@ -1,0 +1,7 @@
+[
+ {
+  "title": "四十结构化提示词模板",
+  "code": "graph TD\n    WISH[\"wish非prompt是病根\"] ==> FIVE[\"五要素骨架\"]\n    FIVE ==> RULES[\"质量规则可验证\"]\n    RULES ==> CROSS[\"结构稳跨模型迁移\"]\n    CROSS ==> SPEC[\"先翻译成spec再用\"]\n    EXAMPLES[\"示例零成本消歧\"] -.-> FIVE",
+  "isSvg": false
+ }
+]

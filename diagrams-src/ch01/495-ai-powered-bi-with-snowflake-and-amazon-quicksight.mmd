@@ -1,0 +1,7 @@
+%% title: 语义层统一 BI
+graph TD
+    PAIN["多看板数字打架"] ==> SEMANTIC["语义视图沉数据层"]
+    SEMANTIC -->|"度量预定义"| NL["NL查询受约束"]
+    NL ==> VERIFIED["验证问答对兜底"]
+    VERIFIED ==> TRUST["跨工具数一致"]
+    OSI["开放语义交换"] -.-> SEMANTIC

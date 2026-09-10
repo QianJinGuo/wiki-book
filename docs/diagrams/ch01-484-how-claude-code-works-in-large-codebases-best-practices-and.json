@@ -1,0 +1,7 @@
+[
+ {
+  "title": "大代码库官方实践",
+  "code": "graph TD\n    RAG[\"RAG索引滞后失效\"] ==> AGENT[\"检索直连live代码\"]\n    AGENT -->|\"需导航起点\"| FIVEP[\"五扩展点做骨架\"]\n    FIVEP ==> HOOKS[\"Hook持续改进\"]\n    HOOKS ==> LSP[\"符号级精确检索\"]\n    LSP ==> OWN[\"指定DRI防配置债\"]\n    SUB[\"子代理隔离探索\"] -.-> AGENT",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "ChatGPT 搜索拆解",
+  "code": "graph TD\n    WEBRUN[\"查询广播多源\"] ==> SYNTH[\"综合成带引答案\"]\n    SYNTH -->|\"归因可能漂移\"| BOUND[\"实时与训练边界\"]\n    BOUND ==> SEO[\"被点击变被引用\"]\n    LOSS[\"揉合丢限定词\"] -.-> SYNTH\n    VERIFY[\"高风险点原源\"] -.-> BOUND",
+  "isSvg": false
+ }
+]
