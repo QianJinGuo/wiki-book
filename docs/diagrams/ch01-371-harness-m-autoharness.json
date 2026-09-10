@@ -1,0 +1,7 @@
+[
+ {
+  "title": "两篇 Harness 论文启示",
+  "code": "graph TD\n    MEM[\"记忆按任务进化\"] ==> SPECIFIC[\"通用记忆迁移有害\"]\n    AUTO[\"动作约束自动化\"] ==> ILLEGAL[\"多数败于非法动作\"]\n    SPECIFIC ==> SHIFT[\"研究转向Harness中心\"]\n    ILLEGAL ==> SHIFT\n    SMALL[\"小模型配架胜大模型\"] -.-> SHIFT\n    POLICY[\"Harness即策略零调用\"] -.-> SMALL",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "ExifTool 元数据注入",
+  "code": "graph TD\n    INJECT[\"日期值未转义拼命令\"] ==> CHAIN[\"标签复制污染传导\"]\n    CHAIN -->|\"n标志绕过校验\"| RCE[\"元数据触发任意命令\"]\n    RCE ==> SILENT[\"图片静默渗透机构\"]\n    FIX[\"改参数列表免转义\"] ==> PATCH[\"修复即范式转移\"]\n    NDAY[\"从旧CVE审邻接面\"] -.-> INJECT",
+  "isSvg": false
+ }
+]

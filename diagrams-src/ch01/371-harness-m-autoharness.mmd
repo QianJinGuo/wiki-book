@@ -1,0 +1,8 @@
+%% title: 两篇 Harness 论文启示
+graph TD
+    MEM["记忆按任务进化"] ==> SPECIFIC["通用记忆迁移有害"]
+    AUTO["动作约束自动化"] ==> ILLEGAL["多数败于非法动作"]
+    SPECIFIC ==> SHIFT["研究转向Harness中心"]
+    ILLEGAL ==> SHIFT
+    SMALL["小模型配架胜大模型"] -.-> SHIFT
+    POLICY["Harness即策略零调用"] -.-> SMALL

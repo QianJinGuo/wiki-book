@@ -1,0 +1,8 @@
+%% title: Mistral OCR 4 文档理解
+graph TD
+    OUT["结构化输出非纯文本"] ==> BOX["框选块类置信度"]
+    BOX -->|"语义分块"| RAG["RAG检索质量跃升"]
+    RAG ==> BENCH["双榜第一人工胜"]
+    FLAW["基准有已知缺陷"] -.-> BENCH
+    HOST["单容器自托管"] -.-> BENCH
+    LANG["170语言覆盖长尾"] -.-> HOST

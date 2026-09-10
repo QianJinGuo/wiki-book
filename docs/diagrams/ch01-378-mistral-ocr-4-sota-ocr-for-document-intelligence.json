@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Mistral OCR 4 文档理解",
+  "code": "graph TD\n    OUT[\"结构化输出非纯文本\"] ==> BOX[\"框选块类置信度\"]\n    BOX -->|\"语义分块\"| RAG[\"RAG检索质量跃升\"]\n    RAG ==> BENCH[\"双榜第一人工胜\"]\n    FLAW[\"基准有已知缺陷\"] -.-> BENCH\n    HOST[\"单容器自托管\"] -.-> BENCH\n    LANG[\"170语言覆盖长尾\"] -.-> HOST",
+  "isSvg": false
+ }
+]

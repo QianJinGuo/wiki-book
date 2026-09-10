@@ -1,0 +1,7 @@
+%% title: AI 代码冲击 CI
+graph TD
+    PR["AI使PR增六成"] ==> EXPLODE["测试运行爆炸"]
+    EXPLODE -->|"三成失败是flaky"| WASTE["年烧数十万美元"]
+    WASTE ==> ITS["智能测试按变更选"]
+    ITS -->|"回归时间降八成"| GAIN["发布频率翻倍"]
+    DESIGN["AI与CI须同规划"] -.-> ITS

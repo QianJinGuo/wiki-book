@@ -1,0 +1,7 @@
+%% title: 日常生活上下文评测
+graph TD
+    MESSY["日常context乱"] ==> NOISE["高噪声才是瓶颈"]
+    NOISE -->|"长度相关性弱"| MISUSE["context误用主错误"]
+    MISUSE ==> PARTIAL["部分正确可量化"]
+    CATS["三类社交碎片轨迹"] -.-> NOISE
+    RUBRIC["五千条原子评分"] -.-> PARTIAL

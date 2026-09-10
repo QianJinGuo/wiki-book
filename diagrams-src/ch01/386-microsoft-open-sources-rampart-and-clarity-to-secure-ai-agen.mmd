@@ -1,0 +1,7 @@
+%% title: 微软开源 Agent 安全件
+graph TD
+    RAMPART["pytest化红队"] ==> INJECT["跨提示注入测试"]
+    INJECT -->|"自动化进CI"| SHIFT["安全左移设计前"]
+    CLARITY["设计前思维伙伴"] ==> SHIFT
+    LIFE["三工具覆盖全周期"] -.-> SHIFT
+    LEARN["红队工程化可复现"] -.-> LIFE

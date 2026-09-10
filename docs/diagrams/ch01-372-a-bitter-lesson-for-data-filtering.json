@@ -1,0 +1,7 @@
+[
+ {
+  "title": "数据过滤的苦涩教训",
+  "code": "graph TD\n    FINDING[\"算力足时不过滤最好\"] ==> BIAS[\"过滤即注入偏置\"]\n    BIAS -->|\"误删长尾信息\"| NOISE[\"大模型自提信号\"]\n    NOISE ==> BOUNDARY[\"仅限高算力缺数据区\"]\n    BOUNDARY -->|\"算力少仍须滤\"| TEST[\"用缩放实验代直觉\"]",
+  "isSvg": false
+ }
+]

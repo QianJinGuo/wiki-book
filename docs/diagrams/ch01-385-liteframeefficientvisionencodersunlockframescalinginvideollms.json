@@ -1,0 +1,7 @@
+[
+ {
+  "title": "LiteFrame 视频编码蒸馏",
+  "code": "graph TD\n    SHIFT[\"瓶颈移到编码器\"] ==> CTD[\"大teacher蒸馏压缩\"]\n    CTD -->|\"小student编码器\"| LMA[\"轻对齐解锁长帧\"]\n    LMA ==> GAIN[\"8倍帧延迟降三成\"]\n    CONV[\"时序一维卷积\"] -.-> CTD\n    HIRES[\"零样本高分辨率\"] -.-> GAIN",
+  "isSvg": false
+ }
+]

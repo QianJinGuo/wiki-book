@@ -1,0 +1,7 @@
+%% title: Agent 感知计费范式
+graph TD
+    TOKEN["token计费价值错配"] ==> AWARE["按操作任务计费"]
+    AWARE -->|"复杂度入价"| SUBS["订阅分层可预测"]
+    SUBS ==> GOV["企业预算与治理"]
+    DIFF["代理能力差异化"] -.-> AWARE
+    STACK["中间层价值重分配"] -.-> SUBS

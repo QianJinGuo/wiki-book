@@ -1,0 +1,7 @@
+%% title: Transformer 拓扑麻烦
+graph TD
+    FLOOR["状态被推向深层"] ==> FAIL["状态追踪自相矛盾"]
+    FAIL -->|"消歧埋深浅层不见"| COT["CoT只是外显补丁"]
+    COT ==> LOOP["循环分深度与序列轴"]
+    LOOP -->|"序列循环传递状态"| REC["真正状态追踪"]
+    MIXED["分阶段训练务实路"] -.-> REC

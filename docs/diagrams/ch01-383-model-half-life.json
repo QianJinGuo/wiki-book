@@ -1,0 +1,7 @@
+[
+ {
+  "title": "模型半衰期证伪",
+  "code": "graph TD\n    CLAIM[\"半衰期减半论\"] ==> DATA[\"自建发布数据集\"]\n    DATA -->|\"按子系列拆口径\"| RESULT[\"加速温和非指数\"]\n    RESULT ==> BUZZ[\"术语是营销非规律\"]\n    MEDIAN[\"中位外推样本弱\"] -.-> DATA\n    VERIFY[\"AI汇编人工核验\"] -.-> DATA",
+  "isSvg": false
+ }
+]

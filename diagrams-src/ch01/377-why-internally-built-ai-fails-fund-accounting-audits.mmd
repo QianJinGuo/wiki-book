@@ -1,0 +1,7 @@
+%% title: 基金审计五层控制
+graph TD
+    TWOQ["两问所见与复现"] ==> FAIL["自建AI答不出"]
+    FAIL ==> ARCH["构建AI运行代码"]
+    ARCH ==> LAYERS["五层控制叠加"]
+    LAYERS -->|"轨迹确定性复核"| PLAT["平台即控制"]
+    OWN["合规在财务非IT"] -.-> ARCH

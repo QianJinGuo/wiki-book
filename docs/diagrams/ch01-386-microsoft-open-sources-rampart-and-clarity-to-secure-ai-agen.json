@@ -1,0 +1,7 @@
+[
+ {
+  "title": "微软开源 Agent 安全件",
+  "code": "graph TD\n    RAMPART[\"pytest化红队\"] ==> INJECT[\"跨提示注入测试\"]\n    INJECT -->|\"自动化进CI\"| SHIFT[\"安全左移设计前\"]\n    CLARITY[\"设计前思维伙伴\"] ==> SHIFT\n    LIFE[\"三工具覆盖全周期\"] -.-> SHIFT\n    LEARN[\"红队工程化可复现\"] -.-> LIFE",
+  "isSvg": false
+ }
+]
