@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Prompt 调试器 A B",
+  "code": "graph TD\n    FEEL[\"凭感觉调Prompt\"] ==> AB[\"同输入并排对比\"]\n    AB ==> TEMP[\"先校准Temperature\"]\n    TEMP -->|\"跨模型不可比\"| SCORE[\"AI初筛用户终审\"]\n    SCORE -->|\"双4分自动入库\"| LIB[\"模板库资产沉淀\"]\n    MINI[\"小模型初筛省30倍\"] -.-> SCORE\n    CAP[\"每日上限控预算\"] -.-> SCORE",
+  "isSvg": false
+ }
+]

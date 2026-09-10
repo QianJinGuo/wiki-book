@@ -1,0 +1,7 @@
+[
+ {
+  "title": "re Invent 2026 Agent 要点",
+  "code": "graph TD\n    CRE8[\"Claude打通创意软件\"] ==> MCP[\"MCP连接器与Design\"]\n    NEMO[\"Nemotron Nano Omni\"] ==> MIX[\"Mamba混MoE吞吐9倍\"]\n    MIX -.->|\"边缘适配\"| EDGE[\"效率提升4倍\"]\n    GT[\"Ghostty迁离GitHub\"] ==> FLOOD[\"AI自动化拖垮平台\"]\n    DS[\"DeepSeek识图灰测\"] -.->|\"会追问联想\"| REASON[\"深度推理识图\"]",
+  "isSvg": false
+ }
+]

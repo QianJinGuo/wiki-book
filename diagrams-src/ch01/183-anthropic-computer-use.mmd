@@ -1,0 +1,8 @@
+%% title: Computer Use 最佳实践
+graph TD
+    SHOT["截图先降采样"] ==> MAP["坐标映射回原分辨率"]
+    MAP -->|"macOS两倍DPI陷阱"| ORDER["先文字后截图"]
+    TIER["Opus指挥Sonnet执行"] -.-> ORDER
+    ZOOM["小目标开zoom"] -.-> MAP
+    DEF["三层注入纵深防御"] -.-> TIER
+    TEACH["示范优于指令"] -.-> DEF

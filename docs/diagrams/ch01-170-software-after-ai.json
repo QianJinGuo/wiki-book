@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Software After AI 驯服术",
+  "code": "graph TD\n    SAAS[\"SaaS固定流被超越\"] ==> HARNESS[\"驯服野马harness时代\"]\n    HARNESS ==> CTX[\"上下文与记忆定制\"]\n    CTX -->|\"配方本业务SOP\"| CDB[\"上下文数据库\"]\n    HARNESS ==> TOOLS[\"工具是手影响世界\"]\n    HARNESS ==> COST[\"第七课架构判断力\"]\n    COST -->|\"何处理性何处智能\"| RIDER[\"模型同质骑手定胜负\"]",
+  "isSvg": false
+ }
+]

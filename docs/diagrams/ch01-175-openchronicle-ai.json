@@ -1,0 +1,7 @@
+[
+ {
+  "title": "OpenChronicle 记忆主权",
+  "code": "graph TD\n    CC[\"Chronicle盯屏记忆\"] ==> OPEN[\"48小时后开源复刻\"]\n    OPEN -->|\"记忆归用户非平台\"| SOV[\"可读可改可迁移\"]\n    TASK[\"记住在做什么\"] ==> CTX[\"任务级上下文重建\"]\n    SHARE[\"多Agent共享上下文\"] -.-> CTX\n    LOCAL[\"本地优先任意模型\"] -.-> SOV\n    STORE[\"Markdown加SQLite\"] -.-> SOV",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,8 @@
+%% title: OpenChronicle 记忆主权
+graph TD
+    CC["Chronicle盯屏记忆"] ==> OPEN["48小时后开源复刻"]
+    OPEN -->|"记忆归用户非平台"| SOV["可读可改可迁移"]
+    TASK["记住在做什么"] ==> CTX["任务级上下文重建"]
+    SHARE["多Agent共享上下文"] -.-> CTX
+    LOCAL["本地优先任意模型"] -.-> SOV
+    STORE["Markdown加SQLite"] -.-> SOV

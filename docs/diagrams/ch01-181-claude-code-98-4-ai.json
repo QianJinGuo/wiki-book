@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Code 好用因工程",
+  "code": "graph TD\n    PAPER[\"51万行源码分析\"] ==> RATIO[\"98%工程1.6%智能\"]\n    RATIO -->|\"权限网关上下文路由\"| GATE[\"非智能工作撑体验\"]\n    OF[\"OpenAI百万行并发哲学\"] -.-> GATE\n    STRIPE[\"周1300PR人机混合\"] -.-> GATE\n    LANG[\"调harness加13分\"] -.-> RATIO\n    TK[\"CLAUDE.md加hooks\"] -.-> RATIO",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Benchmark 刷分的真相",
+  "code": "graph TD\n    PA[\"委托代理优化易测项\"] ==> BIAS[\"评测环境系统性偏差\"]\n    BIAS -->|\"硬件采样与切分\"| THREE[\"3倍机差带宽是分水岭\"]\n    THREE ==> ILLUS[\"几分或只是更大VM\"]\n    ILLUS ==> FIX[\"自建业务评测集\"]\n    FIX -.->|\"真机端到端实测\"| REAL[\"内部评测胜榜单\"]\n    DISC[\"公开测试环境配置\"] -.-> REAL",
+  "isSvg": false
+ }
+]

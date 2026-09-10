@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Computer Use 最佳实践",
+  "code": "graph TD\n    SHOT[\"截图先降采样\"] ==> MAP[\"坐标映射回原分辨率\"]\n    MAP -->|\"macOS两倍DPI陷阱\"| ORDER[\"先文字后截图\"]\n    TIER[\"Opus指挥Sonnet执行\"] -.-> ORDER\n    ZOOM[\"小目标开zoom\"] -.-> MAP\n    DEF[\"三层注入纵深防御\"] -.-> TIER\n    TEACH[\"示范优于指令\"] -.-> DEF",
+  "isSvg": false
+ }
+]

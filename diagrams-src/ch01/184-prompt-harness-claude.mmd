@@ -1,0 +1,8 @@
+%% title: 从 Prompt 到 Harness
+graph TD
+    FAIL["翻车是系统缺失"] ==> FIVE["五子系统指令工具环境"]
+    FIVE -->|"反馈最易缺"| FB["验证塑造实现方式"]
+    WIP["WIP=1防过度延伸"] -.-> FB
+    TERM["三层终止检查闸门"] -.-> FB
+    AM["AGENTS.md地图非百科"] -.-> FIVE
+    CLEAN["收尾清洁五件事"] -.-> WIP

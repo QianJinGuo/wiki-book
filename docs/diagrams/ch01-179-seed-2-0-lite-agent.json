@@ -1,0 +1,7 @@
+[
+ {
+  "title": "豆包 Seed 2.0 Lite 感官层",
+  "code": "graph TD\n    GAP[\"Coding Agent缺感官\"] ==> SEN[\"前置感官层接入\"]\n    SEN -->|\"音视频截图一等公民\"| FLOW[\"感知后接CC与Codex\"]\n    CTX[\"prompt多给背景\"] ==> SAVE[\"成本反降20%\"]\n    CTX -.-> FLOW\n    PRICE[\"比Flash便宜6倍\"] -.-> SEN\n    SUB[\"精准字幕与分镜\"] -.-> FLOW",
+  "isSvg": false
+ }
+]
