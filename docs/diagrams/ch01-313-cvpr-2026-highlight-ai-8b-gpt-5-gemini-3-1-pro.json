@@ -1,0 +1,7 @@
+[
+ {
+  "title": "CHAI 让 AI 懂镜头语言",
+  "code": "graph TD\n    SPEC[\"200视觉基元标注\"] ==> COCREATE[\"AI起草专家批改\"]\n    COCREATE -->|\"批改三属性\"| TRAIN[\"8B模型后训练\"]\n    TRAIN -->|\"反超GPT-5\"| GEN[\"微调Wan2.2懂长指令\"]\n    FAIL[\"旧数据混淆推轨变焦\"] -.-> SPEC\n    ITS[\"推理时扩展亦有效\"] -.-> TRAIN",
+  "isSvg": false
+ }
+]

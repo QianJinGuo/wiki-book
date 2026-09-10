@@ -1,0 +1,7 @@
+[
+ {
+  "title": "GrowLoop 真人感评测",
+  "code": "graph TD\n    SEED[\"种子加Rubrics\"] ==> META[\"反思外化隐性标准\"]\n    META ==> DUAL[\"细则题目双循环\"]\n    DUAL -->|\"收敛到85-90%\"| CONDIV[\"共识对齐分歧合理\"]\n    DIVERGE[\"标注一致仅51%\"] -.-> CONDIV\n    NEXT[\"蒸馏成奖励模型\"] -.-> DUAL\n    TEXT[\"限于文字可评域\"] -.-> META",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "LLMReaper 对话窃取",
+  "code": "graph TD\n    EXT[\"恶意扩展合法权限\"] ==> OBS[\"监听DOM变化\"]\n    OBS -->|\"停按钮判生成完\"| EXFIL[\"Worker跨域外传\"]\n    EXFIL ==> KEYS[\"正则捞API密钥\"]\n    CHAT[\"对话成明文通道\"] -.-> KEYS\n    HIST[\"扩展供应链前科\"] -.-> EXT\n    ISOLATE[\"浏览器隔离审计\"] -.-> EXT",
+  "isSvg": false
+ }
+]

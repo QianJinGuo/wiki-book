@@ -1,0 +1,7 @@
+%% title: Knowledge Agent 结构胜模型
+graph TD
+    FOUR["四层知识结构"] ==> SEARCH["三轮混合检索"]
+    SEARCH -->|"关键词加语义"| EQUAL["harness拉平差距"]
+    EQUAL ==> LOCAL["本地27B追平Opus"]
+    COST["月成本两千趋零"] -.-> LOCAL
+    SIMPLE["简单查询短路"] -.-> SEARCH

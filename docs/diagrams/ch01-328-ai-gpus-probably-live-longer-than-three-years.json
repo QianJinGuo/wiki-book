@@ -1,0 +1,7 @@
+[
+ {
+  "title": "GPU 寿命三年论溯源",
+  "code": "graph TD\n    RUMOR[\"三年论源匿名推文\"] ==> TRACE[\"付费访谈存疑\"]\n    TRACE ==> EVID[\"TPU八年集群六载\"]\n    EVID -->|\"三年存活超95%\"| CONCL[\"物理寿命远超三年\"]\n    ECON[\"经济寿命或更短\"] -.-> CONCL\n    WINTER[\"寒冬推理仍可负担\"] -.-> ECON\n    RHET[\"流行因有用非因对\"] -.-> RUMOR",
+  "isSvg": false
+ }
+]

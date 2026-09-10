@@ -1,0 +1,7 @@
+[
+ {
+  "title": "开放模型生态三类玩家",
+  "code": "graph TD\n    PURE[\"纯模型商冲前沿\"] ==> DIVERSE[\"生态从中国走向全球\"]\n    BIGTECH[\"大科技商业逻辑明确\"] ==> DIVERSE\n    PRODUCT[\"产品公司小而专\"] ==> DIVERSE\n    COHERE[\"CommandA+转Apache\"] -.->|\"主权AI信号\"| DIVERSE\n    AMD[\"Zyphra用AMD训练\"] -.-> DIVERSE\n    OPENMDW[\"OpenMDW权重许可\"] -.-> COHERE",
+  "isSvg": false
+ }
+]

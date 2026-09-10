@@ -1,0 +1,7 @@
+[
+ {
+  "title": "七章从零造 LLM",
+  "code": "graph TD\n    NEXT[\"核心是预测下一词\"] ==> S1[\"分词与注意力\"]\n    S1 ==> S2[\"组装GPT预训练\"]\n    S2 -->|\"loss剪刀差警讯\"| S3[\"双微调分类加指令\"]\n    MASK[\"掩码在softmax前\"] -.-> S2\n    HEAD[\"分类只看末token\"] -.-> S3\n    SCALE[\"机制对规模另算\"] -.-> S2",
+  "isSvg": false
+ }
+]

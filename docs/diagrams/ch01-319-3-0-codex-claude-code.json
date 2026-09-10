@@ -1,0 +1,7 @@
+[
+ {
+  "title": "扣子 3.0 云端本地合流",
+  "code": "graph TD\n    BRIDGE[\"coze bridge三步接入\"] ==> SIX[\"六Agent同项目接力\"]\n    SIX -->|\"点名交接不切窗\"| CTX[\"项目即共享上下文\"]\n    REMOTE[\"手机遥控家里Mac\"] -.-> BRIDGE\n    DEGRADE[\"降级HTTPS保通\"] -.-> REMOTE\n    RISK[\"本地Agent高权限\"] -.-> BRIDGE\n    VS[\"小队路线胜脚本编排\"] -.-> SIX",
+  "isSvg": false
+ }
+]

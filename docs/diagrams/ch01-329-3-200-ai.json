@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AI 客服三小时灾难",
+  "code": "graph TD\n    OUTAGE[\"云故障宕三小时\"] ==> LOSS[\"罚款损失200万\"]\n    LOSS -->|\"人力已被优化\"| ELASTIC[\"弹性随效率消失\"]\n    SOP[\"八成公司无SOP\"] -.-> ELASTIC\n    FIX[\"降级引擎应急人力\"] ==> RESIL[\"恢复能力设计\"]\n    MONITOR[\"五分钟告警止损\"] -.-> RESIL\n    CONTRACT[\"预期写入合同\"] -.-> RESIL",
+  "isSvg": false
+ }
+]

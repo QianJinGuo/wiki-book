@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AI 首破人类科研纪录",
+  "code": "graph TD\n    RACE[\"速通仅能动超参\"] ==> OPUS[\"Opus2930步破纪录\"]\n    OPUS -->|\"Codex2950步\"| HARNESS[\"四文档自主闭环\"]\n    OPUS2[\"优等生22小时等指令\"] -.-> HARNESS\n    CODEX[\"推土机卡死不反思\"] -.-> HARNESS\n    EVO[\"发现从因果转向演化\"] -.-> OPUS\n    OPEN[\"全开源可复现\"] -.-> EVO",
+  "isSvg": false
+ }
+]

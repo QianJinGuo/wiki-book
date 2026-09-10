@@ -1,0 +1,7 @@
+[
+ {
+  "title": "自我改进 PM 操作系统",
+  "code": "graph TD\n    RATIO[\"Chat仅5%派发为主\"] ==> KNOW[\"三态知识循环\"]\n    KNOW -->|\"规则假设否决\"| ROUTE[\"CLAUDE.md只做路由\"]\n    ROUTE ==> GITHUB[\"GitHub即操作系统\"]\n    ITER[\"技能迭代五六轮\"] -.-> ROUTE\n    N8N[\"生产自动化交n8n\"] -.-> GITHUB\n    LEARN[\"草稿模式从改学\"] -.-> KNOW",
+  "isSvg": false
+ }
+]

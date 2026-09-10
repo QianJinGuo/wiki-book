@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Nova Sonic 实时语音",
+  "code": "graph TD\n    S2S[\"统一语音到语音\"] ==> LOW[\"延迟三程压一程\"]\n    LOW ==> WEBRTC[\"自适应码率弱网\"]\n    WEBRTC -->|\"会话不中断\"| SCEN[\"车辆工厂机器人\"]\n    TOOL[\"工具接口接业务\"] -.-> SCEN\n    MANAGED[\"全托管免扩容险\"] -.-> WEBRTC",
+  "isSvg": false
+ }
+]

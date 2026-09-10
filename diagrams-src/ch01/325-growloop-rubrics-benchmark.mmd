@@ -1,0 +1,8 @@
+%% title: GrowLoop 真人感评测
+graph TD
+    SEED["种子加Rubrics"] ==> META["反思外化隐性标准"]
+    META ==> DUAL["细则题目双循环"]
+    DUAL -->|"收敛到85-90%"| CONDIV["共识对齐分歧合理"]
+    DIVERGE["标注一致仅51%"] -.-> CONDIV
+    NEXT["蒸馏成奖励模型"] -.-> DUAL
+    TEXT["限于文字可评域"] -.-> META

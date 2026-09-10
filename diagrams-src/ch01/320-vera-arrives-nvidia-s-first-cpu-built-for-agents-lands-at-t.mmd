@@ -1,0 +1,7 @@
+%% title: NVIDIA Vera Agent CPU
+graph TD
+    AGENT["Agent负载是CPU活"] ==> VERA["88核1.2TB带宽"]
+    VERA -->|"编排沙盒工具调用"| DELIVER["数周送四家头部"]
+    OCI["OCI订数十万颗"] -.-> DELIVER
+    RUBIN["NVLink配Rubin GPU"] -.-> VERA
+    CODESIGN["CPU GPU DPU协同"] -.-> RUBIN
