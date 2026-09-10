@@ -113,6 +113,28 @@ def cmd_validate():
                 if t.count('["') >= 2 and not any(op in t for op in ('-->', '-.', '==>', '--', '~~~')):
                     bad.append((rel, f'edge without operator: {t[:50]!r}'))
                     break
+        # nested quotes inside a label pass regex balance but kill mermaid.parse
+        # (found by render sweep 09-11); closing quote must precede ']' at label end
+        if not bad or bad[-1][0] != rel:
+            for ln in body.splitlines():
+                pos = 0
+                while True:
+                    j = ln.find('["', pos)
+                    if j == -1:
+                        break
+                    i = j + 2
+                    while i < len(ln):
+                        if ln[i] == '"' and ln[i+1:i+2] == ']':
+                            break
+                        if ln[i] == '"':
+                            bad.append((rel, f'nested quote in label: {ln.strip()[:44]!r}'))
+                            break
+                        i += 1
+                    if i >= len(ln):
+                        break
+                    pos = ln.find(']', i) + 1 or len(ln)
+                if bad and bad[-1][0] == rel and 'nested quote' in bad[-1][1]:
+                    break
         # anchor: some real words from the article title must appear
         md = DOCS / rel
         title = TITLE.search(md.read_text(encoding='utf-8')) if md.exists() else None
