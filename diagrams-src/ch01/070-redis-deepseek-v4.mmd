@@ -1,0 +1,8 @@
+%% title: ds4.c 专用推理引擎
+graph TD
+    NARROW["刻意走窄一模型一引擎"] ==> QUANT["非对称量化专家层低精"]
+    QUANT -->|"共享层保Q8"| QUAL["官方logits验证正确"]
+    KV["KV状态落盘SHA1寻址"] ==> AGENT["长prompt秒级续跑"]
+    METAL["Metal-only零抽象"] -.-> NARROW
+    FULL["引擎GGUF验证全栈"] -.-> NARROW
+    AI["GPT5.5辅助两周完成"] -.-> FULL

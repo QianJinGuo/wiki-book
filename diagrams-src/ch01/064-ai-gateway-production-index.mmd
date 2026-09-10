@@ -1,0 +1,7 @@
+%% title: AI Gateway 生产指数
+graph TD
+    SPEND["Anthropic占花费61%"] ==> RISK["错答代价定模型档次"]
+    VOL["Google占流量38%"] ==> RISK
+    AGENT["工具调用占token58.9%"] ==> DENS["token密度是chat2.6倍"]
+    ROUTE["平均35模型路由图"] ==> SWAP["换模型等于改配置"]
+    RESCUE["3.5%请求被兜底"] -.->|"贵的更易失败"| CWU["要看成本加权uptime"]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "科学随葬礼前进的机制",
+  "code": "graph TD\n    STUDY[\"千万科学家六十年数据\"] ==> DECOUP[\"创造力解耦两维度\"]\n    DECOUP ==> CONN[\"连接性novelty随龄升\"]\n    DECOUP ==> DIS[\"颠覆性随龄降\"]\n    PATH[\"认知路径依赖\"] ==> DIS\n    EIN[\"爱因斯坦变守门人\"] -.-> PATH\n    DIV[\"老整合少颠覆分工\"] -.-> DECOUP\n    AI[\"AI接管连接性工作\"] -.->|\"人类优势剩颠覆\"| DIS",
+  "isSvg": false
+ }
+]

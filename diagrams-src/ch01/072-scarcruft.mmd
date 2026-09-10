@@ -1,0 +1,9 @@
+%% title: ScarCruft 游戏平台供应链攻击
+graph TD
+    TARGET["延边朝鲜族人群"] ==> AND["路径一篡改游戏APK"]
+    AND ==> BIRD["BirdCall后门窃密录音"]
+    TARGET ==> WIN["路径二更新服mono.dll"]
+    WIN ==> ROK["多阶段加载RokRAT"]
+    ROK ==> BIRD
+    CC["云盘C2借合法服务"] -.-> BIRD
+    CLEAN["见虚拟机即自清理"] -.-> WIN

@@ -1,0 +1,8 @@
+%% title: LLM 持续重写记忆会腐坏
+graph TD
+    MEM["蒸馏记忆曾全对"] ==> REW["rewrite是LLM采样"]
+    REW -->|"具体事实逐轮脱落"| DRIFT["漂向模型先验非真实"]
+    DRIFT ==> DROP["准确率从百%跌54%"]
+    MIS["误组干扰与过拟合"] -.-> DRIFT
+    EPI["EpisodicOnly反而最强"] ==> FIX["抽象需门控分层存储"]
+    CLS["CLS理论早有预言"] -.-> FIX

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "ScarCruft 游戏平台供应链攻击",
+  "code": "graph TD\n    TARGET[\"延边朝鲜族人群\"] ==> AND[\"路径一篡改游戏APK\"]\n    AND ==> BIRD[\"BirdCall后门窃密录音\"]\n    TARGET ==> WIN[\"路径二更新服mono.dll\"]\n    WIN ==> ROK[\"多阶段加载RokRAT\"]\n    ROK ==> BIRD\n    CC[\"云盘C2借合法服务\"] -.-> BIRD\n    CLEAN[\"见虚拟机即自清理\"] -.-> WIN",
+  "isSvg": false
+ }
+]

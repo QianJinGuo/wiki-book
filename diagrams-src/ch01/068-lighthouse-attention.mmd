@@ -1,0 +1,8 @@
+%% title: Lighthouse 层级稀疏注意力
+graph TD
+    SYM["对称QKV池化金字塔"] ==> SEL["核外TopK选择"]
+    SEL -->|"聚成连续子序列"| FA["复用FlashAttention"]
+    NORM["范数评分零学习参数"] -.-> SEL
+    SPEED["前反向快17倍"] -.-> FA
+    STAGE2["SDPA恢复第二阶段"] ==> TRAIN["稀疏训练不毁密能力"]
+    CP["上下文并行百万token"] -.-> FA

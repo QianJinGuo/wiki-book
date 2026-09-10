@@ -1,0 +1,9 @@
+%% title: 实时语音翻译专用模型
+graph TD
+    IN["连续音频流无轮次"] ==> TR["专用口译模型只翻译"]
+    TR ==> OUT["200ms分块流式译文"]
+    VOICE["音色随源说话人"] -.-> OUT
+    P1["浏览器WebRTC接入"] ==> TR
+    P2["Twilio电话重采样"] ==> TR
+    P3["LiveKit按人sidecar"] ==> TR
+    SEC["短期secret不泄key"] -.-> P1

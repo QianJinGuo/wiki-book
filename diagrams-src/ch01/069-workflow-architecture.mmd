@@ -1,0 +1,8 @@
+%% title: SageMaker LLM 推理可观测
+graph TD
+    EP["推理组件一端点多模型"] ==> CW["CloudWatch集中指标"]
+    CW -->|"增强指标GPU与延迟"| QTY["数量维度基建健康"]
+    CW -->|"自定义指标"| QUA["质量维度漂移准确"]
+    STAGE["先运维后质量分阶段"] ==> ALERT["联合阈值与告警"]
+    GF["Grafana双维同览"] -.-> ALERT
+    TRADE["健康但劣质的陷阱"] -.-> QUA

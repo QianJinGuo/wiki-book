@@ -1,0 +1,9 @@
+%% title: AML 告警分诊自动化
+graph TD
+    ALERT["AML告警九成五是误报"] ==> FLOW["Quick Flows编排"]
+    FLOW -->|"MCP协议OAuth"| CORTEX["Snowflake Cortex Agent"]
+    CORTEX ==> ANL["Analyst查结构化交易"]
+    CORTEX ==> SRCH["Search查合规文档"]
+    ANL ==> OUT["调查90分缩到5分内"]
+    SRCH ==> OUT
+    REUSE["同范式复用于SRE"] -.-> FLOW

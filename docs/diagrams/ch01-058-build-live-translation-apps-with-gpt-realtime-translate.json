@@ -1,0 +1,7 @@
+[
+ {
+  "title": "实时语音翻译专用模型",
+  "code": "graph TD\n    IN[\"连续音频流无轮次\"] ==> TR[\"专用口译模型只翻译\"]\n    TR ==> OUT[\"200ms分块流式译文\"]\n    VOICE[\"音色随源说话人\"] -.-> OUT\n    P1[\"浏览器WebRTC接入\"] ==> TR\n    P2[\"Twilio电话重采样\"] ==> TR\n    P3[\"LiveKit按人sidecar\"] ==> TR\n    SEC[\"短期secret不泄key\"] -.-> P1",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Intelligence Per Dollar",
+  "code": "graph TD\n    MAI[\"三分之一token同分\"] ==> DUAL[\"基准进性能加成本二维\"]\n    SUB[\"补贴与tokenmaxxing终结\"] -.-> DUAL\n    BUDGET[\"Uber冻结Salesforce控支\"] -.-> DUAL\n    IDX[\"智能指数同为60分\"] ==> PRICE[\"GPT比Opus便宜40%\"]\n    PRICE ==> OUTCOME[\"应用层按结果定价\"]\n    TICKET[\"关一单工单值多少\"] -.-> OUTCOME",
+  "isSvg": false
+ }
+]
