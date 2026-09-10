@@ -1,0 +1,7 @@
+[
+ {
+  "title": "deepsec：代码库漏洞安全 Harness",
+  "code": "graph TD\n    SCAN[\"regex只定位敏感区\"] ==>|\"auth/数据访问/加密\"| INV[\"Investigate深查可疑区\"]\n    INV ==>|\"第二agent独立复核\"| REVAL[\"Revalidate去误报\"]\n    REVAL -.->|\"10-20%误报可接受\"| TICKET[\"真漏洞转工单\"]\n    TICKET ==>|\"1000+并发沙盒\"| FANOUT[\"Vercel Sandboxes并行\"]\n    FANOUT -.->|\"共性生成custom matcher\"| CUSTOM[\"自定义scanner护城河\"]",
+  "isSvg": false
+ }
+]

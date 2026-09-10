@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Code 企业级实践（导航）",
+  "code": "graph TD\n    LOOP[\"Loop Engineering19来源巨著\"] ==> BORIS[\"Boris：IDE变Agent控制台\"]\n    BORIS -->|\"源码18k机制\"| SRC[\"Claude Code源码详解\"]\n    SRC ==>|\"软规则难成硬约束\"| GHOST[\"200k Ghost治理\"]\n    GHOST -.->|\"Skills概率层+Hooks确定性层\"| MAC[\"MAC两层Harness\"]\n    MAC ==>|\"21%到95%准确率\"| DATA[\"Anthropic数据分析自动化\"]",
+  "isSvg": false
+ }
+]

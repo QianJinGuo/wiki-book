@@ -1,0 +1,6 @@
+%% title: 设备码钓鱼取证：BEC 调查实录
+graph TD
+    EVOLVE["从偷密码进化"] ==>|"绕过MFA"| PROXY["中间人代理窃会话"]
+    PROXY ==>|"滥用设备码流程"| DEVCODE["设备码钓鱼规模化"]
+    DEVCODE -.->|"同日多起报告"| FORENSICS["BEC事件取证调查"]
+    FORENSICS -->|"预防检测响应"| DEFEND["防守方处置框架"]

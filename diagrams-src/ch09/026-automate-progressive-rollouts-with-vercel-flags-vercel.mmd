@@ -1,0 +1,7 @@
+%% title: Vercel Flags 渐进式发布
+graph TD
+    WEIGHT["固定50/50加权拆分"] ==>|"时间基权重"| ROLLOUT["渐进式发布"]
+    ROLLOUT ==>|"5%到50%到100%"| SCHED["按预定义时间表"]
+    SCHED -.->|"缺陷只伤小流量"| RISK["降低回归风险"]
+    RISK ==>|"CLI进CI/CD管道"| AUTO["监控恶化自动回滚"]
+    ROLLOUT -.->|"时间控风险空间做实验"| AB["与A/B测试互补"]

@@ -1,0 +1,7 @@
+%% title: Cassandra 时序宽分区动态拆分
+graph TD
+    TS["TimeSeries海量事件"] ==>|"分区随时间累积"| WIDE["宽分区挑战"]
+    WIDE ==>|"Cassandra 4.x吞吐与成本"| MILLIONS["百万级低延迟读写"]
+    MILLIONS -->|"生产集群运维经验"| OPS["平台团队运维成熟度"]
+    OPS -.->|"拆分大分区"| SPLIT["动态拆分保时序性能"]
+    WIDE -.->|"组合时空数据"| SPLIT

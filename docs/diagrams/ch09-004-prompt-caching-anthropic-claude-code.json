@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Prompt Caching 工程实践（导航）",
+  "code": "graph TD\n    NINE[\"缓存九条原则\"] ==>|\"留纸条抠缓存\"| NOTE[\"多Agent源码拆解\"]\n    NOTE -->|\"L1L2L3缓存类比\"| CPU[\"execute_code单工具\"]\n    CPU ==>|\"Generator-Evaluator\"| RESET[\"Context Reset演进\"]\n    RESET -.->|\"13核心机制\"| MECH[\"源码深度解析\"]\n    MECH ==>|\"5个工具胜20个\"| TAX[\"工具数量陷阱\"]",
+  "isSvg": false
+ }
+]

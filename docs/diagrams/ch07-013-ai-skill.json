@@ -1,0 +1,7 @@
+[
+ {
+  "title": "把 AI 当算法用：Skill 工程化",
+  "code": "graph TD\n    DICE[\"LLM概率掷骰子\"] ==>|\"修渠不改河\"| CANAL[\"CLI修好确定性轨道\"]\n    CANAL ==>|\"意图归大脑执行归手脚\"| JSON[\"JSON参数结果协议\"]\n    JSON -->|\"只给当前步骤所需\"| CTX[\"最小上下文暴露\"]\n    CTX -.->|\"一轮完成即健康\"| TOKEN[\"多轮试错即架构失效\"]\n    DICE -.->|\"试错烧Token\"| TOKEN",
+  "isSvg": false
+ }
+]

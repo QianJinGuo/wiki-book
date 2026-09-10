@@ -1,0 +1,7 @@
+%% title: ACP Bridge：IM 触发异步 AI 编程
+graph TD
+    DISCORD["Discord消息触发"] ==>|"HTTP暴露CLI"| BRIDGE["ACP Bridge桥接"]
+    BRIDGE ==>|"stdio JSON-RPC"| PROC["每会话独立CLI子进程"]
+    PROC -.->|"job_id异步提交"| QUEUE["任务队列+webhook回推"]
+    QUEUE ==>|"结果推回IM"| SAFE["VPC隔离+白名单+Token"]
+    SAFE -->|"进程上限20 TTL24h"| DDB["DynamoDB持久化队列"]

@@ -1,0 +1,7 @@
+%% title: Vibe Coding in Production（Anthropic）
+graph TD
+    DOUBLE["每7个月任务时长翻倍"] ==>|"人成最慢环节"| ABSTRACT["找到能验证的抽象层"]
+    ABSTRACT ==>|"用户数据优先于审查"| LAYERS["体验测试代码三层验证"]
+    LAYERS -.->|"主干人工叶子全AI"| TRUNK["Trunk-and-Branch分层"]
+    TRUNK ==>|"22000行两周缩一天"| ALIGN["开工前15-20分钟对齐"]
+    ALIGN -->|"说清楚要什么"| ROLE["工程师转向验证结果"]

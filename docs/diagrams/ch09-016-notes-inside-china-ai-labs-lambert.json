@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Nathan Lambert：中国 AI 实验室见闻",
+  "code": "graph TD\n    FOLLOW[\"完美快速跟随者\"] ==>|\"文化对齐追赶任务\"| THREE[\"科学家数据算力三要素\"]\n    THREE ==>|\"短决策链高人才密度\"| ORG[\"组织效率压缩部署周期\"]\n    ORG -.->|\"何时跟随何时引领\"| PRAGMA[\"实用主义判断力\"]\n    PRAGMA ==>|\"谦逊开放的交流\"| GLOBAL[\"全球生态良性竞争\"]\n    FOLLOW -.->|\"非单纯模仿者\"| NARRATIVE[\"纠偏西方单一叙事\"]",
+  "isSvg": false
+ }
+]

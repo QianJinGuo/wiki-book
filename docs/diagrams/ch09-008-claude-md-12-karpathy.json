@@ -1,0 +1,7 @@
+[
+ {
+  "title": "CLAUDE.md 12 条规则（导航）",
+  "code": "graph TD\n    K4[\"Karpathy四条行为准则\"] ==>|\"扩展到12条\"| RULES[\"12规则模板\"]\n    RULES -->|\"四类失效原因\"| IGNORE[\"指令忽略五层规则框架\"]\n    IGNORE ==>|\"三个注入位置\"| SRC[\"Skills/MCP/Rules源码\"]\n    SRC -.->|\"六大prompt模块\"| PROMPT[\"提示词体系解析\"]\n    PROMPT ==>|\"配置腐烂治理\"| CHECKUP[\"checkup清理Skills与MCP\"]",
+  "isSvg": false
+ }
+]
