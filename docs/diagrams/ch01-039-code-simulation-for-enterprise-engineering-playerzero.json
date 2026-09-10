@@ -1,0 +1,7 @@
+[
+ {
+  "title": "PlayerZero 代码模拟",
+  "code": "graph TD\n    REV[\"review读地图局部自洽\"] ==> SIM[\"simulation跑生产行为\"]\n    EMB[\"代码嵌入\"] ==> ENG[\"Sim-1 三源融合引擎\"]\n    DEP[\"依赖图谱\"] ==> ENG\n    TEL[\"生产遥测\"] ==> ENG\n    ENG ==> PRED[\"免编译预测变更行为\"]\n    OBS[\"观测事后模拟事前\"] -.-> PRED\n    PROP[\"跨仓库传播建模\"] -.-> PRED\n    PRED ==> RES[\"Cayuse 事前拦截90%\"]",
+  "isSvg": false
+ }
+]

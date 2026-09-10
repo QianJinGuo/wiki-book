@@ -1,0 +1,9 @@
+%% title: Cloudflare 三层 Agent 栈
+graph TD
+    FW["Flue框架：约定与DX"] ==> H["Harness：agentic循环"]
+    H ==> RT["Agents SDK运行时原语"]
+    DECL["声明式：述知而非脚本"] ==> FW
+    CH["Channels：Slack与GitHub"] -.-> FW
+    DUR["持久执行与文件系统"] ==> RT
+    RESUME["中断后优雅续跑"] -.-> DUR
+    SANDBOX["不可信码安全沙箱"] -.-> RT

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "ChatGPT 5.5 Pro 两小时解数学",
+  "code": "graph TD\n    PROB[\"和集直径指数上界待收紧\"] ==> QUICK[\"h=2用Sidon集17分破\"]\n    QUICK ==> CORE[\"原创核心h方解离集\"]\n    CORE -->|\"有限域经典构造\"| POLY[\"指数改多项式上界\"]\n    POLY ==> PRE[\"两小时内出preprint\"]\n    VERIFY[\"人类认证加互查\"] -.-> PRE\n    SHIFT[\"温和问题起步法失效\"] -.-> PRE\n    ECON[\"想法经济稀缺变丰裕\"] -.-> SHIFT",
+  "isSvg": false
+ }
+]

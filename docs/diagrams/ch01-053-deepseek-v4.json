@@ -1,0 +1,7 @@
+[
+ {
+  "title": "DeepSeek-V4 一文五事",
+  "code": "graph TD\n    MOE[\"超大稀疏MoE追闭源\"] ==> ATT[\"CSA加HCA混合注意力\"]\n    ATT -->|\"HCA百二十八压一\"| KV[\"KV压缩降prefill瓶颈\"]\n    CSA[\"CSA稀疏索引精准召回\"] -.-> ATT\n    INST[\"mHC新算子训练不稳\"] -.-> MOE\n    HW[\"昇腾协同设计三五年\"] -.-> MOE\n    ECO[\"生态分工专注基建\"] -.-> MOE\n    SYN[\"32T过半合成数据\"] -.-> MOE",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Scaling Laws 谨慎 Scaling",
+  "code": "graph TD\n    OBS[\"损失随规模幂律下降\"] ==> FIT[\"小规模拟合外推大模型\"]\n    C6ND[\"计算约等于6ND\"] ==> FIT\n    AMARI[\"Amari四类学习曲线\"] -.->|\"理论先行\"| OBS\n    HES[\"Hestness：指数属数据域\"] ==> OBS\n    ARCH[\"架构移截距不改斜率\"] -.-> HES\n    PHASE[\"贫数据幂律不可约三段\"] -.-> FIT\n    ROSE[\"联合建模N与D\"] -.-> FIT",
+  "isSvg": false
+ }
+]

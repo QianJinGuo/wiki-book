@@ -1,0 +1,8 @@
+%% title: AutoResearch-LLM 训练优化闭环
+graph TD
+    LOOP["搜索闭环训练环最难自动化"] ==> FR["三阶段：诊断设计实验"]
+    FR ==> SKILL["SKILL.md 沉淀踩坑"]
+    SKILL ==> PIT["PyTorch版本与thinking坑"]
+    FR ==> TF["TuningFactory加星云API"]
+    CV["前作CV demo验证骨架"] -.->|"同骨架迁移"| FR
+    TAO["TAO四子Agent参考"] -.-> FR

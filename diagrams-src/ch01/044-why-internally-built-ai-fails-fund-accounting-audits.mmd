@@ -1,0 +1,8 @@
+%% title: 基金会计 AI 审计就绪
+graph TD
+    Q1["证明AI看到了什么"] ==> FAIL["内部AI构造上答不出"]
+    Q2["与上季同一系统"] ==> FAIL
+    FAIL ==> SIX["六类失败：可编辑漂移"]
+    ARCH["构建时AI运行时代码"] ==> FIX["确定性引擎执行规则"]
+    FIX ==> AUDIT["防篡改轨迹双人复核"]
+    AUDIT ==> PLAT["平台即控制agent可审计"]

@@ -1,0 +1,8 @@
+%% title: Velero 备份 EKS 集群
+graph TD
+    API["经K8s API发现资源"] ==> PID["Pod Identity免静态凭证"]
+    PID -->|"OIDC临时凭证"| RBAC["最小权限ClusterRole"]
+    RBAC ==> CSI["CSI快照EBS崩溃一致"]
+    NM["跨命名空间恢复映射"] -.-> CSI
+    SCH["Schedule每日ttl30天"] -.-> API
+    HELM["Helm安装配置版本化"] -.-> API

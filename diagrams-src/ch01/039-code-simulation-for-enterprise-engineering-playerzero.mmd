@@ -1,0 +1,10 @@
+%% title: PlayerZero 代码模拟
+graph TD
+    REV["review读地图局部自洽"] ==> SIM["simulation跑生产行为"]
+    EMB["代码嵌入"] ==> ENG["Sim-1 三源融合引擎"]
+    DEP["依赖图谱"] ==> ENG
+    TEL["生产遥测"] ==> ENG
+    ENG ==> PRED["免编译预测变更行为"]
+    OBS["观测事后模拟事前"] -.-> PRED
+    PROP["跨仓库传播建模"] -.-> PRED
+    PRED ==> RES["Cayuse 事前拦截90%"]

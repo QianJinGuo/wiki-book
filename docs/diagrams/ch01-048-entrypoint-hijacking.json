@@ -1,0 +1,7 @@
+[
+ {
+  "title": "EntryPoint 劫持注入",
+  "code": "graph TD\n    WRITE[\"恶意码写入目标进程\"] ==> HIJACK[\"篡改DLL入口点属性\"]\n    HIJACK -->|\"等合法新线程\"| EXEC[\"加载器自动触发恶意码\"]\n    RESTORE[\"用后即复原图匿形\"] ==> HIJACK\n    EPI[\"EPI线程池执行\"] -.-> HIJACK\n    LDS[\"LdrShuffle堆传参跨进程\"] -.-> HIJACK\n    EXEC ==> DET[\"三重完整性校验\"]\n    DET ==> SYSMON[\"Sysmon句柄关联流量\"]",
+  "isSvg": false
+ }
+]

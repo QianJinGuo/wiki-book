@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AutoResearch-LLM 训练优化闭环",
+  "code": "graph TD\n    LOOP[\"搜索闭环训练环最难自动化\"] ==> FR[\"三阶段：诊断设计实验\"]\n    FR ==> SKILL[\"SKILL.md 沉淀踩坑\"]\n    SKILL ==> PIT[\"PyTorch版本与thinking坑\"]\n    FR ==> TF[\"TuningFactory加星云API\"]\n    CV[\"前作CV demo验证骨架\"] -.->|\"同骨架迁移\"| FR\n    TAO[\"TAO四子Agent参考\"] -.-> FR",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AEO 与 GEO：被 AI 引用",
+  "code": "graph TD\n    SEO[\"AEO GEO是SEO的延伸\"] ==> BOT[\"分清索引与训练爬虫\"]\n    BOT ==> PERM[\"Google-Extended管Gemini\"]\n    PERM ==> TECH[\"渲染与snippet可访问\"]\n    TECH ==> CITE[\"不可合成才被引用\"]\n    CITE ==> CON[\"第一手数据案例实测\"]\n    COM[\"通用内容模型自能合成\"] -.->|\"永无引用\"| CITE\n    AG[\"agentic语义结构未来\"] -.-> CON",
+  "isSvg": false
+ }
+]

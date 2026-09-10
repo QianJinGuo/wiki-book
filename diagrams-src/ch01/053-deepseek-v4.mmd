@@ -1,0 +1,9 @@
+%% title: DeepSeek-V4 一文五事
+graph TD
+    MOE["超大稀疏MoE追闭源"] ==> ATT["CSA加HCA混合注意力"]
+    ATT -->|"HCA百二十八压一"| KV["KV压缩降prefill瓶颈"]
+    CSA["CSA稀疏索引精准召回"] -.-> ATT
+    INST["mHC新算子训练不稳"] -.-> MOE
+    HW["昇腾协同设计三五年"] -.-> MOE
+    ECO["生态分工专注基建"] -.-> MOE
+    SYN["32T过半合成数据"] -.-> MOE

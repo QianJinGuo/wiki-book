@@ -1,0 +1,8 @@
+%% title: Superset：Agent 并行 IDE
+graph TD
+    PARA["多Agent并行开发范式"] ==> ISO["每Agent独立隔离环境"]
+    ISO -->|"每分支独立URL"| PREV["预览部署即时创建"]
+    PREV ==> SPEED["30秒构建周千次部署"]
+    STACK["全栈Vercel无第二云"] -.-> PREV
+    FLUID["Fluid吸收扇出突发"] -.-> STACK
+    DOG["自吃狗粮12实例"] -.-> PARA

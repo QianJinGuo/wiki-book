@@ -1,0 +1,8 @@
+%% title: Amazon 把 Alexa 变成店面
+graph TD
+    SEARCH["搜索：用户主动表达"] ==> DELEG["语音委托AI代决策"]
+    DELEG ==> MEM["零售记忆图谱"]
+    MEM -->|"Alexa+对话翻倍"| BUY["Echo购买频次三倍"]
+    DATA["购买史Prime物流"] ==> MEM
+    WM["Walmart押运营效率"] -.->|"路线分野"| DELEG
+    SIG["语音泄露意图情绪"] -.-> MEM
