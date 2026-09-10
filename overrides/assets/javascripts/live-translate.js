@@ -105,10 +105,10 @@
   // ── DOM collection ──
   function hasCJK(text) { return CJK_RE.test(text); }
 
-  function collect(root) {
-    var out = [];
+  function collectInto(root, nodes, seen) {
     var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
       acceptNode: function(node) {
+        if (seen.has(node)) return NodeFilter.FILTER_REJECT;
         var value = node.nodeValue;
         if (!value || !value.trim()) return NodeFilter.FILTER_REJECT;
         var parent = node.parentElement;
@@ -117,19 +117,24 @@
         return NodeFilter.FILTER_ACCEPT;
       }
     });
-    while (walker.nextNode()) out.push(walker.currentNode);
-    return out;
+    while (walker.nextNode()) { nodes.push(walker.currentNode); seen.add(walker.currentNode); }
   }
 
   function collectNodes() {
-    var priority = document.querySelectorAll('.md-header, .md-tabs, .md-sidebar');
-    var content = document.querySelectorAll('.md-content, .md-footer, .md-content__inner');
     var nodes = [];
-    priority.forEach(function(r) { nodes = nodes.concat(collect(r)); });
-    content.forEach(function(r) { nodes = nodes.concat(collect(r)); });
-    // Custom pages (dashboard, learn) don't use Material containers —
-    // fall back to the whole document so they get translated too.
-    if (!nodes.length) nodes = collect(document.body);
+    var seen = new Set();
+    document.querySelectorAll('.md-header, .md-tabs, .md-sidebar').forEach(function(r) {
+      collectInto(r, nodes, seen);
+    });
+    // Custom pages (dashboard, learn) don't use Material content containers —
+    // walk the whole document for those instead of the standard roots.
+    if (document.querySelector('.md-content, .md-content__inner')) {
+      document.querySelectorAll('.md-content, .md-footer, .md-content__inner').forEach(function(r) {
+        collectInto(r, nodes, seen);
+      });
+    } else {
+      collectInto(document.body, nodes, seen);
+    }
     return nodes;
   }
 
