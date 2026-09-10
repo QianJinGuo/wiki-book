@@ -1,7 +1,7 @@
 [
  {
   "title": "Qoder Skill UI——Agent 与人类的协作界面层",
-  "code": "graph TD\n    P[\"问题: 低效介入<br/>选项不同时呈现\"] ==> SOL[\"解决: 结构化配置面板<br/>两种 Widget 模式<br/>双形态是软件界面的本质重构\"]\n    SOL => TECH[\"技术实现: HTML 沙箱路线<br/>安全架构分层设计\"]\n    TECH => CASE[\"实战: Frontend-design Skill<br/>乘 create-skill-ui · Dashboard 可解释\"]",
+  "code": "graph TD\n    P[\"问题: 低效介入<br/>选项不同时呈现\"] ==> SOL[\"解决: 结构化配置面板<br/>两种 Widget 模式<br/>双形态是软件界面的本质重构\"]\n    SOL ==> TECH[\"技术实现: HTML 沙箱路线<br/>安全架构分层设计\"]\n    TECH ==> CASE[\"实战: Frontend-design Skill<br/>乘 create-skill-ui · Dashboard 可解释\"]",
   "isSvg": false
  }
 ]

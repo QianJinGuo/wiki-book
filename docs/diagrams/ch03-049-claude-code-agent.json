@@ -1,7 +1,7 @@
 [
  {
   "title": "花叔的 Claude Code 多 Agent 用量画像——Agent View",
-  "code": "graph TD\n    WHAT[\"Agent View 是什么<br/>多 Agent 用量画像\"] ==> INSIGHT[\"解决的是人的问题<br/>不是 AI 的问题<br/>注意力经济视角的基建\"]\n    INSIGHT => PATH[\"诞生路径: 内部工具到产品化<br/>Sherlocking 双重意涵\"]\n    PATH => TECH[\"关键技术细节<br/>Git Worktree 隔离的工程权衡\"]",
+  "code": "graph TD\n    WHAT[\"Agent View 是什么<br/>多 Agent 用量画像\"] ==> INSIGHT[\"解决的是人的问题<br/>不是 AI 的问题<br/>注意力经济视角的基建\"]\n    INSIGHT ==> PATH[\"诞生路径: 内部工具到产品化<br/>Sherlocking 双重意涵\"]\n    PATH ==> TECH[\"关键技术细节<br/>Git Worktree 隔离的工程权衡\"]",
   "isSvg": false
  }
 ]

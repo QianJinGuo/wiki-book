@@ -1,7 +1,7 @@
 [
  {
   "title": "三器合一——gstack 加 Superpowers 加 OpenSpec 实战",
-  "code": "graph TD\n    P1[\"串联 1: OpenSpec 产物<br/>进 gstack 评审\"] ==> P2[\"串联 2: Superpowers HARD-GATE<br/>自动拦截\"]\n    P2 => P3[\"串联 3: TDD 提升 /review 质量\"]\n    P3 => P4[\"串联 4: gstack /ship<br/>接 OpenSpec 归档\"]\n    P4 => PIT[\"避坑: 门禁重叠<br/>发布流水线顺序陷阱\"]",
+  "code": "graph TD\n    P1[\"串联 1: OpenSpec 产物<br/>进 gstack 评审\"] ==> P2[\"串联 2: Superpowers HARD-GATE<br/>自动拦截\"]\n    P2 ==> P3[\"串联 3: TDD 提升 /review 质量\"]\n    P3 ==> P4[\"串联 4: gstack /ship<br/>接 OpenSpec 归档\"]\n    P4 ==> PIT[\"避坑: 门禁重叠<br/>发布流水线顺序陷阱\"]",
   "isSvg": false
  }
 ]

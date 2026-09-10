@@ -1,6 +1,6 @@
 %% title: Amazon Nova Forge 域定制超参调优
 graph TD
     S3["三大定制阶段"] ==> C3["三大超参挑战<br/>灾难性遗忘 · 学习率<br/>RFT Baseline 约束"]
-    C3 => TREE["战略决策树<br/>Checkpoint 选择最影响决策<br/>Training Mode 选择"]
-    TREE => NUM["关键数字锚点"]
-    NUM => WF["实战推荐工作流<br/>从服务默认值起步<br/>LoRA 验证 Pipeline · CPT 单 Epoch"]
+    C3 ==> TREE["战略决策树<br/>Checkpoint 选择最影响决策<br/>Training Mode 选择"]
+    TREE ==> NUM["关键数字锚点"]
+    NUM ==> WF["实战推荐工作流<br/>从服务默认值起步<br/>LoRA 验证 Pipeline · CPT 单 Epoch"]
