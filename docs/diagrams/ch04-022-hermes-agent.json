@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Hermes 记忆系统导览",
+  "code": "graph TD\n    HUB[\"记忆对比页\"] ==> MECH[\"机制论文区\"]\n    MECH -->|\"17种架构演进\"| EVOLVE[\"控制流演化史\"]\n    MECH -->|\"Memory对Skill之辨\"| DIST[\"本质区别辨析\"]\n    HUB ==> PRAC[\"工程实践区\"]\n    PRAC -->|\"MemOS插件\"| MEMOS[\"去重混合检索\"]\n    PRAC -->|\"休眠唤醒调度\"| OPS[\"成本优化\"]",
+  "isSvg": false
+ }
+]

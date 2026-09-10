@@ -1,0 +1,7 @@
+[
+ {
+  "title": "图像生成补上下文",
+  "code": "graph TD\n    GAP[\"用户语境不足\"] ==> AGENT[\"规划搜索记忆反馈\"]\n    AGENT -->|\"渐进补全语境\"| PLAN[\"先识别缺什么\"]\n    PLAN ==> BENCH[\"四能力新基准\"]\n    SOTA[\"三榜超基线\"] -.-> BENCH",
+  "isSvg": false
+ }
+]

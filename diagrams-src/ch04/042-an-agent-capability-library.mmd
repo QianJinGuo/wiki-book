@@ -1,0 +1,6 @@
+%% title: Agent 能力图书馆
+graph TD
+    INDEX["全局索引文件"] ==> LAZY["按需读能力文档"]
+    LAZY -->|"一次搭建复用"| GROW["能力库复利增长"]
+    GROW ==> ADD["三步加新能力"]
+    PROJECT["项目级引用同库"] -.-> GROW

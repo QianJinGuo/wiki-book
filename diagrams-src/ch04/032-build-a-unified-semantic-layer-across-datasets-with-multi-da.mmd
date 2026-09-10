@@ -1,0 +1,6 @@
+%% title: 多数据集语义层
+graph TD
+    OLD["单集打平成大表"] ==> NEW["一话题挂12集"]
+    NEW -->|"定义关系免自猜"| AGENT["聊天agent自动join"]
+    AGENT ==> KEEP["数据规范化治理集中"]
+    ANSWER["用户免懂schema"] -.-> AGENT

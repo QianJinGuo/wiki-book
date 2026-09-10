@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Agent 即信念之网",
+  "code": "graph TD\n    LOCAL[\"信念局部一致非全局\"] ==> FRAME[\"概率图与归纳容纳\"]\n    FRAME ==> CONCEPT[\"超边即概念雏形\"]\n    CONCEPT -->|\"两层结构太人工\"| HIER[\"层级生成模型更自然\"]\n    HIER ==> UNIFY[\"信念目标行动一体\"]",
+  "isSvg": false
+ }
+]

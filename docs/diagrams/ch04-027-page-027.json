@@ -1,0 +1,7 @@
+[
+ {
+  "title": "编排层上下文导览",
+  "code": "graph TD\n    HUB[\"上下文架构枢纽\"] ==> MECH[\"机制论文区\"]\n    MECH -->|\"五层运行时协议\"| RUNTIME[\"可靠性协议\"]\n    MECH -->|\"Code as Harness\"| SURVEY[\"百页综述\"]\n    HUB ==> PRAC[\"工程实践区\"]\n    PRAC -->|\"六层上下文演讲\"| TALK[\"深度沉淀\"]\n    PRAC -->|\"拆任务控权限\"| TEAMS[\"Agent Teams\"]",
+  "isSvg": false
+ }
+]

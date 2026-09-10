@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Agent 循环入门",
+  "code": "graph TD\n    SIMPLE[\"循环即自触prompt\"] ==> TYPES[\"心跳定时钩子目标\"]\n    TYPES ==> GOAL[\"目标循环最强最易错\"]\n    GOAL -->|\"完成即停非定时\"| EMPLOYEE[\"如给新员工写说明\"]\n    EMPLOYEE ==> SUBLOOP[\"agent自派子agent\"]",
+  "isSvg": false
+ }
+]

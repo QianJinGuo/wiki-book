@@ -1,0 +1,6 @@
+%% title: Agent 循环入门
+graph TD
+    SIMPLE["循环即自触prompt"] ==> TYPES["心跳定时钩子目标"]
+    TYPES ==> GOAL["目标循环最强最易错"]
+    GOAL -->|"完成即停非定时"| EMPLOYEE["如给新员工写说明"]
+    EMPLOYEE ==> SUBLOOP["agent自派子agent"]

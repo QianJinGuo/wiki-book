@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Agent 能力图书馆",
+  "code": "graph TD\n    INDEX[\"全局索引文件\"] ==> LAZY[\"按需读能力文档\"]\n    LAZY -->|\"一次搭建复用\"| GROW[\"能力库复利增长\"]\n    GROW ==> ADD[\"三步加新能力\"]\n    PROJECT[\"项目级引用同库\"] -.-> GROW",
+  "isSvg": false
+ }
+]

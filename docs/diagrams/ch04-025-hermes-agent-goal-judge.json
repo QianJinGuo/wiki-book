@@ -1,0 +1,7 @@
+[
+ {
+  "title": "goal 运行时导览",
+  "code": "graph TD\n    HUB[\"goal运行时枢纽\"] ==> MECH[\"机制论文区\"]\n    MECH -->|\"两循环区分\"| LOOP[\"循环理论\"]\n    MECH -->|\"17架构与12组件\"| FRAME[\"架构框架\"]\n    HUB ==> PRAC[\"工程实践区\"]\n    PRAC -->|\"Kanban编排实测\"| ORCH[\"编排实践\"]\n    PRAC -->|\"子代理防污染\"| SUB[\"上下文卫生\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Hermes Agent 导览",
+  "code": "graph TD\n    HUB[\"Hermes枢纽页\"] ==> MECH[\"机制论文区\"]\n    MECH -->|\"自进化双路径\"| EVOLVE[\"自进化机制\"]\n    MECH -->|\"GBrain与Flow2Spec\"| KB[\"知识基建\"]\n    HUB ==> PRAC[\"工程实践区\"]\n    PRAC -->|\"闭环学习飞轮\"| LOOP[\"Nudge触发回顾\"]\n    PRAC -->|\"MemOS记忆插件\"| MEM[\"记忆增强\"]",
+  "isSvg": false
+ }
+]

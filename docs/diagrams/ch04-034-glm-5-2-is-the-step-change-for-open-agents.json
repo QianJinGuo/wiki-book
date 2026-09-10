@@ -1,0 +1,7 @@
+[
+ {
+  "title": "GLM-5.2 开放跨步",
+  "code": "graph TD\n    TIMING[\"周六发布蹭叙事\"] ==> SMALL[\"小版本跨体验门槛\"]\n    SMALL -->|\"MIT权重三日后\"| ECOSYS[\"看生态反应验真\"]\n    ECOSYS ==> BENCH[\"基准半死体验为王\"]\n    MAX[\"建议开满思考档\"] -.-> BENCH",
+  "isSvg": false
+ }
+]

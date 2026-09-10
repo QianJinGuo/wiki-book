@@ -1,0 +1,7 @@
+[
+ {
+  "title": "造 Agent 非管道",
+  "code": "graph TD\n    ANALOGY[\"库对框架类比\"] ==> PREDICT[\"成本可预测是陷阱\"]\n    PREDICT -->|\"复杂时只能放弃\"| CTX[\"context前置是债\"]\n    CTX ==> FUTURE[\"agent更吃模型进步\"]\n    SAFE[\"注入面两者相同\"] -.-> ANALOGY",
+  "isSvg": false
+ }
+]

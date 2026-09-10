@@ -1,0 +1,6 @@
+%% title: 图像生成补上下文
+graph TD
+    GAP["用户语境不足"] ==> AGENT["规划搜索记忆反馈"]
+    AGENT -->|"渐进补全语境"| PLAN["先识别缺什么"]
+    PLAN ==> BENCH["四能力新基准"]
+    SOTA["三榜超基线"] -.-> BENCH
