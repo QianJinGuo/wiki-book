@@ -1,0 +1,8 @@
+%% title: Evals 三种评估方法
+graph TD
+    HUM["人工审阅永远是起点"] ==> GOLD["黄金集校准裁判"]
+    GOLD ==> JUDGE["LLM裁判管语义"]
+    CODE["代码检查管确定性"] -.->|"分层兜底"| JUDGE
+    JUDGE ==> REF["无参考评估器上生产"]
+    REF ==> LOOP["traces回流新失败"]
+    LOOP -.->|"飞轮"| HUM

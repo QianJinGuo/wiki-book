@@ -1,0 +1,9 @@
+%% title: AlphaEvolve 进化式发现引擎
+graph TD
+    LLM["LLM作变异算子"] ==> LOOP["生成评估保留重组"]
+    FULL["全文件演化超FunSearch"] ==> LOOP
+    EVAL["评估器是选择压"] ==> LOOP
+    MAP["MAP-Elites岛屿防近亲"] -.-> LOOP
+    MIX["Flash量产Pro突破"] -.-> LLM
+    VERIF["可执行可验证可比较"] -.->|"适用前提"| EVAL
+    COST["单候选数百计算时"] -.->|"适合离线优化"| LOOP

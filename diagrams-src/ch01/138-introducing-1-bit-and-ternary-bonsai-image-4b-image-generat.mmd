@@ -1,0 +1,7 @@
+%% title: Bonsai 图像模型本地生成
+graph TD
+    GOAL["4B图像生成本地化"] ==> ONE["1-bit版1.125有效位"]
+    GOAL ==> TER["三值版1.71有效位"]
+    ONE -->|"极压缩带宽受限场景"| FP["FP16分组缩放因子"]
+    TER -->|"质量压缩折中"| FP
+    FP ==> DEPLOY["内存footprint友好"]

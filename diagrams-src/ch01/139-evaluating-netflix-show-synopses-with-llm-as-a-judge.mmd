@@ -1,0 +1,8 @@
+%% title: Netflix 用 LLM 评审简介
+graph TD
+    SYN["简介质量规模化"] ==> CAL["八轮校准二分制"]
+    CAL -->|"写手一致性到80%"| GOLD["600条黄金集"]
+    GOLD ==> JUDGE["LLM与专家85%一致"]
+    TAKE["采纳率TakeFraction"] ==> FEED["成员隐式反馈维度"]
+    ABAN["弃剧率"] ==> FEED
+    FEED -.->|"与流媒体指标相关"| PRE["上线前数周发现问题"]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Evals 三种评估方法",
+  "code": "graph TD\n    HUM[\"人工审阅永远是起点\"] ==> GOLD[\"黄金集校准裁判\"]\n    GOLD ==> JUDGE[\"LLM裁判管语义\"]\n    CODE[\"代码检查管确定性\"] -.->|\"分层兜底\"| JUDGE\n    JUDGE ==> REF[\"无参考评估器上生产\"]\n    REF ==> LOOP[\"traces回流新失败\"]\n    LOOP -.->|\"飞轮\"| HUM",
+  "isSvg": false
+ }
+]

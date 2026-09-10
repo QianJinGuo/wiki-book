@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AI PoC 为何上不了生产",
+  "code": "graph TD\n    DEMO[\"Demo跑通即错觉落地\"] ==> G1[\"算力错位缺效率工程\"]\n    DEMO ==> G2[\"插件拼接进产线就脆\"]\n    DEMO ==> G3[\"评测安全协同缺体系\"]\n    DEMO ==> G4[\"端侧车IoT新战场\"]\n    CORE[\"分水岭是系统工程能力\"] -.-> G1\n    CORE -.-> G3",
+  "isSvg": false
+ }
+]

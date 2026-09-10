@@ -1,0 +1,8 @@
+%% title: 资深工程师看懂 LLM 内部
+graph TD
+    SERIES["五部曲系列"] ==> HW["一硬件晶体管与TPU"]
+    HW ==> ARCH["二架构Transformer"]
+    ARCH -->|"RNN长期记忆差"| ATT["注意力取代循环"]
+    ARCH ==> TRAIN["三训练与scaling"]
+    TRAIN ==> POST["四后训练与对齐"]
+    POST ==> SERVE["五推理服务与Agent"]

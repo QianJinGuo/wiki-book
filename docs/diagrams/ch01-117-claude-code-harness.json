@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Code Harness 深析导览",
+  "code": "graph TD\n    HUB[\"Harness深度分析\"] ==> MECH[\"机制论文区\"]\n    MECH -->|\"23模块拼装分块\"| OC[\"OpenClaw三维度\"]\n    MECH -->|\"102页综述\"| SURV[\"Code as Harness\"]\n    HUB ==> PRAC[\"工程实践区\"]\n    PRAC -->|\"上下文工程官方\"| CTX[\"Anthropic实践\"]\n    PRAC -->|\"IDE变Agent控制台\"| BORIS[\"Boris访谈\"]",
+  "isSvg": false
+ }
+]

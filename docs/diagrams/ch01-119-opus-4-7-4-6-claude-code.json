@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Opus 4.7 发布导览",
+  "code": "graph TD\n    HUB[\"Opus4.7发布分析\"] ==> MECH[\"机制论文区\"]\n    MECH -->|\"Model vs Effort\"| DUMB[\"变笨真相非模型\"]\n    MECH -->|\"七层记忆防御\"| MEM[\"金字塔架构\"]\n    HUB ==> PRAC[\"工程实践区\"]\n    PRAC -->|\"规则四到12条\"| KARP[\"CLAUDE.md演进\"]\n    PRAC -->|\"Goal毕业锁屏操控\"| CODEX[\"Codex五升级\"]",
+  "isSvg": false
+ }
+]

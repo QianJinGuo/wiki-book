@@ -1,0 +1,7 @@
+[
+ {
+  "title": "SkillOS 技能策展导览",
+  "code": "graph TD\n    HUB[\"技能策展自进化\"] ==> MECH[\"机制论文区\"]\n    MECH -->|\"skill综述三元组\"| EVOLVE[\"表示获取检索进化\"]\n    MECH -->|\"MIRA递归自训练\"| MIRA[\"35/40胜前SOTA\"]\n    HUB ==> PRAC[\"工程实践区\"]\n    PRAC -->|\"Hermes自进化机制\"| HERMES[\"万字最全版\"]\n    PRAC -->|\"六层架构反模式\"| HE[\"Harness分级决策\"]",
+  "isSvg": false
+ }
+]

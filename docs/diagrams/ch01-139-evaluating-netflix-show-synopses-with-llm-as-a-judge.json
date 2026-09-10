@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Netflix 用 LLM 评审简介",
+  "code": "graph TD\n    SYN[\"简介质量规模化\"] ==> CAL[\"八轮校准二分制\"]\n    CAL -->|\"写手一致性到80%\"| GOLD[\"600条黄金集\"]\n    GOLD ==> JUDGE[\"LLM与专家85%一致\"]\n    TAKE[\"采纳率TakeFraction\"] ==> FEED[\"成员隐式反馈维度\"]\n    ABAN[\"弃剧率\"] ==> FEED\n    FEED -.->|\"与流媒体指标相关\"| PRE[\"上线前数周发现问题\"]",
+  "isSvg": false
+ }
+]

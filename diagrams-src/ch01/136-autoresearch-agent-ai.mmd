@@ -1,0 +1,7 @@
+%% title: AutoResearch 异步多 Agent 新阶段
+graph TD
+    REPO["nanochat压到630行"] ==> LOOP["人写prompt AI改码"]
+    LOOP -->|"五分钟一训练一分支"| GIT["自主循环累积commit"]
+    GIT ==> NOW["当前单线同步推进"]
+    NOW ==> NEXT["下阶段异步社区"]
+    NEXT -->|"模拟博士生群体"| MULTI["多Agent并行探索"]
