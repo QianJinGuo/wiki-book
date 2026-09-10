@@ -1,0 +1,7 @@
+[
+ {
+  "title": "CISA CI Fortify 关键基础设施加固指南",
+  "code": "graph TD\n    VOLT[\"Volt Typhoon预置潜伏\"] ==>|\"国家级冲突威胁\"| FOUR[\"四大战略要素\"]\n    FOUR ==>|\"隔离是防御\"| OT[\"OT网络独立运营\"]\n    OT -.->|\"断网仍可运转\"| MANUAL[\"手动过渡演练\"]\n    MANUAL ==>|\"气隙备份\"| RECOVER[\"恢复是重建\"]\n    FOUR -.->|\"关键员工知识文档化\"| RECOVER",
+  "isSvg": false
+ }
+]

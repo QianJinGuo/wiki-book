@@ -1,0 +1,7 @@
+%% title: Grafana GitHub Token 泄露与勒索
+graph TD
+    TOKEN["GitHub访问token泄露"] ==>|"静默下载全库"| CARTEL["CoinbaseCartel纯数据勒索"]
+    CARTEL ==>|"170家受害者"| EXTORT["以公开威胁勒索"]
+    EXTORT -.->|"遵循FBI立场"| REFUSE["Grafana拒绝支付"]
+    REFUSE ==>|"作废凭证强化管控"| LESSON["token最小权限与轮换"]
+    TOKEN -.->|"源码可挖0day"| RISK["供应链投毒风险"]

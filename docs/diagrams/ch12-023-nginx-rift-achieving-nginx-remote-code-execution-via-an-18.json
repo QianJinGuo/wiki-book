@@ -1,0 +1,7 @@
+[
+ {
+  "title": "NGINX Rift：18 年老漏洞实现 RCE",
+  "code": "graph TD\n    TWOPASS[\"两次-pass状态不一致\"] ==>|\"is_args标志位\"| HEAP[\"堆溢出2008年引入\"]\n    HEAP ==>|\"URI加号精确控制溢出大小\"| FENG[\"worker堆布局确定\"]\n    FENG -.->|\"跨请求heap feng shui\"| CLEANUP[\"pool cleanup函数指针\"]\n    CLEANUP ==>|\"ASLR off下RCE\"| AI[\"depthfirst六小时自动发现\"]\n    HEAP -.->|\"rewrite含问号后接set\"| TRIG[\"配置组合触发条件\"]",
+  "isSvg": false
+ }
+]

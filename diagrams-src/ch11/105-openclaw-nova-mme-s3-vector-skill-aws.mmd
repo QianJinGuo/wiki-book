@@ -1,0 +1,7 @@
+%% title: OpenClaw Skill 按需召回瘦身
+graph TD
+    INJECT["全量注入System Prompt"] ==>|"技能越多Token越浪费"| ISS["ISS智能技能选择"]
+    ISS ==>|"Nova MME 1024维向量"| S3V["S3 Vector语义检索"]
+    S3V -.->|"仅召回相关少数技能"| SAVE["Token降约90%"]
+    SAVE ==>|"read按需加载全文"| LAZY["响应速度提升"]
+    INJECT -.->|"195+97每技能公式"| ISS

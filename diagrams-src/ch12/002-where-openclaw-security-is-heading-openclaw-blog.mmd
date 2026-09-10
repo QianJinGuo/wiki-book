@@ -1,0 +1,8 @@
+%% title: OpenClaw 安全演进方向
+graph TD
+    VERIFY["验证范式失效"] ==>|"DNS解析时可变"| EGRESS["egress路由即策略"]
+    EGRESS ==>|"Proxyline捕获出站"| FSSAFE["fs-safe root原语"]
+    FSSAFE -.->|"信任绑定到版本"| CLAWHUB["ClawHub四级信任"]
+    CLAWHUB ==>|"Tree-sitter穿bash -c"| AST["AST解析内层命令"]
+    AST -.->|"GHSA转回归规则"| GREP["148条OpenGrep规则"]
+    GREP ==>|"SQLite消除文件访问"| SURFACE["攻击面缩减"]

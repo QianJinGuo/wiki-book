@@ -1,0 +1,7 @@
+%% title: Semgrep 污点分析提速 75%
+graph TD
+    TAINT["污点分析占CPU三分之一"] ==>|"Pyro Caml性能剖析"| BOTTLE["定位重复计算瓶颈"]
+    BOTTLE ==>|"一次计算不重复"| OPT["引擎重构"]
+    OPT -.->|"intra到interfile跨文件"| FLOW["追踪跨文件数据流"]
+    FLOW ==>|"P95从10分到7分半"| P95["P99从45分到35分"]
+    P95 -.->|"超时扫描显著减少"| REL["全量扫描提速75%"]

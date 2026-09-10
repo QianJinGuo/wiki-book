@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Forward Predict 网络变更预验证",
+  "code": "graph TD\n    CADB[\"变更委员会仍出故障\"] ==>|\"生产网是唯一测试环境\"| TWIN[\"数字孪生+形式化验证\"]\n    TWIN ==>|\"覆盖多云所有数据包路径\"| FAIL[\"失败返回具体故障数据\"]\n    FAIL -.->|\"AI代理迭代到全验证\"| AUTO[\"提出验证部署自动化\"]\n    AUTO ==>|\"年化1420万美元收益\"| FUTURE[\"自主网络基础\"]\n    TWIN -.->|\"IG Group staged变更被捕获\"| FAIL",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "OpenAI 发布 Daybreak 对抗网络威胁",
+  "code": "graph TD\n    MYTHOS[\"Anthropic Mythos震动SaaS\"] ==>|\"回应\"| DAY[\"Daybreak公开可用\"]\n    DAY ==>|\"Gartner定性补充而非替代\"| THREE[\"三阶段工作流\"]\n    THREE -.->|\"AI推理排序高影响威胁\"| TEST[\"受限生成并测试风险\"]\n    TEST ==>|\"审计就绪证据输出\"| TOKEN[\"扩大企业token消费\"]\n    DAY -.->|\"Cloudflare/Cisco合作分发\"| THREE",
+  "isSvg": false
+ }
+]

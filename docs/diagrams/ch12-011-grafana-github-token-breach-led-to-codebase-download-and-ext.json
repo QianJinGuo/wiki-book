@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Grafana GitHub Token 泄露与勒索",
+  "code": "graph TD\n    TOKEN[\"GitHub访问token泄露\"] ==>|\"静默下载全库\"| CARTEL[\"CoinbaseCartel纯数据勒索\"]\n    CARTEL ==>|\"170家受害者\"| EXTORT[\"以公开威胁勒索\"]\n    EXTORT -.->|\"遵循FBI立场\"| REFUSE[\"Grafana拒绝支付\"]\n    REFUSE ==>|\"作废凭证强化管控\"| LESSON[\"token最小权限与轮换\"]\n    TOKEN -.->|\"源码可挖0day\"| RISK[\"供应链投毒风险\"]",
+  "isSvg": false
+ }
+]

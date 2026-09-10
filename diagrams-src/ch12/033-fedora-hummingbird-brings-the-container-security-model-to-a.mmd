@@ -1,0 +1,7 @@
+%% title: Fedora Hummingbird 容器安全模型下沉
+graph TD
+    DOWN["容器安全理念下沉主机OS"] ==>|"无包管理器无shell"| OCI["OS打包为OCI镜像"]
+    OCI ==>|"原子更新+内置回滚"| READONLY["根文件系统只读"]
+    READONLY -.->|"可写隔离var与etc"| CVE["Syft+Grype持续扫描"]
+    CVE ==>|"上游修复自动重建"| ZERO["零CVE目标"]
+    OCI -.->|"49基础镜像157变体"| BUILD["Konflux构建chunkah增量"]

@@ -1,0 +1,7 @@
+%% title: Slack EMR 管道从 SSH 到 REST
+graph TD
+    SSH["SSH直连EMR主节点"] ==>|"Pod重启作业变僵尸"| QUARRY["Quarry REST网关"]
+    QUARRY ==>|"YARN Distributed Shell"| SERVER["服务端管理作业生命周期"]
+    SERVER -.->|"vmem check暴露违规"| GAIN["资源限制正确执行"]
+    GAIN ==>|"审计日志自然收敛"| EVOLVE["解锁Spark on K8s"]
+    SSH -.->|"700作业分散8区域"| QUARRY
