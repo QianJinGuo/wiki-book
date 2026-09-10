@@ -1,0 +1,9 @@
+%% title: AWS CDK Mixins 可组合抽象
+graph TD
+    PAIN["旧痛点：L1新功能vs L2手感"] ==> MIX["Mixin：能力与构造解耦"]
+    MIX ==> SUP["supports 声明适用类型"]
+    SUP ==> APP["applyTo 原地修改"]
+    CROSS["跨服务一次配S3加DDB"] -.-> APP
+    LOG["日志投递一调用替三资源"] -.-> APP
+    ASP["Aspects 校验分层治理"] -.-> MIX
+    SEL["Selector 全构造树生效"] -.-> APP

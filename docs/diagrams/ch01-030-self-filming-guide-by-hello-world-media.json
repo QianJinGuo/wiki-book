@@ -1,0 +1,7 @@
+[
+ {
+  "title": "手机自拍专业指南",
+  "code": "graph TD\n    STORY[\"story 高于一切技术\"] ==> VIS[\"观感两变量：灯与音\"]\n    WIN[\"大窗自然光优先\"] ==> KEY[\"主光对齐自然光\"]\n    KEY ==> DIF[\"白薄布漫射4400-4600k\"]\n    DIF ==> SPLIT[\"进阶Split与Short布光\"]\n    LOG[\"只为调色才开Log\"] -.-> VIS\n    QUIET[\"噪声不可逆安静优先\"] ==> LAV[\"领夹麦百元内必备\"]\n    ENERGY[\"表演如提案注入能量\"] -.-> STORY",
+  "isSvg": false
+ }
+]

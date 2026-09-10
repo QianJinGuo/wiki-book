@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Akrites：守护关键开源软件",
+  "code": "graph TD\n    AI[\"前沿模型几分钟扫出漏洞\"] ==> RISK[\"攻击门槛骤降\"]\n    RISK ==> AK[\"Akrites 协调修复披露\"]\n    SIRT[\"共享SIRT单一可信入口\"] ==> AK\n    CVD[\"标准化CVD保密优先\"] ==> AK\n    DUP[\"旧况：重复报告冲突补丁\"] -.-> SIRT\n    LAST[\"无维护者时兜底维护\"] -.-> AK\n    GOV[\"联动政府公私同防\"] -.-> AK",
+  "isSvg": false
+ }
+]

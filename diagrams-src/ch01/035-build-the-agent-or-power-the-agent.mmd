@@ -1,0 +1,10 @@
+%% title: 造 Agent 还是给 Agent 供能
+graph TD
+    HORIZ["水平Agent成默认工作台"] ==> FORK["产品岔路"]
+    FORK ==> BUILD["造Agent：拥有界面用量"]
+    FORK ==> POWER["供能：进已有Agent"]
+    BUILD -->|"两个成立条件"| SOR["记录系统或领域即产品"]
+    POWER ==> DATA["数据上下文MCP暴露"]
+    POWER ==> CAP["能力动作扩工具集"]
+    INC["Salesforce：API即UI"] -.-> POWER
+    RISK["通用harness持续变强"] -.-> BUILD

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Teleport ITDR：身份行为与上下文",
+  "code": "graph TD\n    FRAG[\"碎片日志：不可见即无防\"] ==> CHAIN[\"统一身份链单一时间线\"]\n    CHAIN -->|\"IdP云代码到基础设施\"| SUM[\"AI摘要：调查小时变分钟\"]\n    AGENT[\"AI Agent 与 MCP 会话\"] ==>|\"一等身份录屏锁定\"| CHAIN\n    DET[\"50多跨平台检测目录\"] -.-> CHAIN\n    LOCK[\"一键锁定可限时回滚\"] -.-> CHAIN\n    CJ[\"Crown Jewels 聚焦要害\"] -.-> LOCK\n    SIEM[\"对SIEM是增强非替代\"] -.-> SUM",
+  "isSvg": false
+ }
+]

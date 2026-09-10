@@ -1,0 +1,9 @@
+%% title: QuestDB WINDOW JOIN 并行与向量化
+graph TD
+    OP["专用算子：知道窗口结构"] ==> PAR["数据级并行按帧分片"]
+    PAR ==> SIMD["连续切片喂 AVX2"]
+    NAN["NaN 编码 null"] -.-> SIMD
+    FUSE["融合求和与NaN计数"] -.-> SIMD
+    LC["低基数快路径per-key缓冲"] -.-> SIMD
+    AMH["Amdahl：23线程仅5倍"] -.-> SORT["Sort Limit 串行成瓶颈"]
+    SIMD ==> WIN["比通用重写快25倍"]

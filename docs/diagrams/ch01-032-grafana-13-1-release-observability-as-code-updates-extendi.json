@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Grafana 13.1 可观测性即代码",
+  "code": "graph TD\n    GS[\"Git Sync 仪表盘进Git\"] ==> IMP[\"导入直进provisioned目录\"]\n    IMP -->|\"路径唯一防覆盖\"| ROOT[\"根级同步免容器目录\"]\n    ROOT ==> README[\"README随目录内联\"]\n    README ==> SIGN[\"提交签名GPG与SSH\"]\n    ASSIST[\"Assistant扩更多数据源\"] -.-> GS\n    OAC[\"可观测即代码工作流\"] -.-> GS",
+  "isSvg": false
+ }
+]

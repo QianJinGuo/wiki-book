@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Domain Expertise 是真护城河",
+  "code": "graph TD\n    OLD[\"旧约束：能否写出代码\"] ==> NEW[\"新约束：能否判断正确\"]\n    AI[\"Agentic AI 翻译层归零\"] ==> NEW\n    DE[\"领域专家一眼识错\"] ==> NEW\n    GE[\"通用工程师失去神谕\"] ==> NEW\n    DE -->|\"AI补编码短板\"| BOTH[\"双层验证：技术加领域\"]\n    GE -.->|\"深耕一个领域\"| BOTH\n    LIM[\"AI 只转录不建领域模型\"] -.-> DE",
+  "isSvg": false
+ }
+]

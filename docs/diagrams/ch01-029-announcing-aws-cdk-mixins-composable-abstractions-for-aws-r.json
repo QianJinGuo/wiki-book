@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AWS CDK Mixins 可组合抽象",
+  "code": "graph TD\n    PAIN[\"旧痛点：L1新功能vs L2手感\"] ==> MIX[\"Mixin：能力与构造解耦\"]\n    MIX ==> SUP[\"supports 声明适用类型\"]\n    SUP ==> APP[\"applyTo 原地修改\"]\n    CROSS[\"跨服务一次配S3加DDB\"] -.-> APP\n    LOG[\"日志投递一调用替三资源\"] -.-> APP\n    ASP[\"Aspects 校验分层治理\"] -.-> MIX\n    SEL[\"Selector 全构造树生效\"] -.-> APP",
+  "isSvg": false
+ }
+]

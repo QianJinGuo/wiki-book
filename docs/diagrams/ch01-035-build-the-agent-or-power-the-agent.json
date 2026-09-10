@@ -1,0 +1,7 @@
+[
+ {
+  "title": "造 Agent 还是给 Agent 供能",
+  "code": "graph TD\n    HORIZ[\"水平Agent成默认工作台\"] ==> FORK[\"产品岔路\"]\n    FORK ==> BUILD[\"造Agent：拥有界面用量\"]\n    FORK ==> POWER[\"供能：进已有Agent\"]\n    BUILD -->|\"两个成立条件\"| SOR[\"记录系统或领域即产品\"]\n    POWER ==> DATA[\"数据上下文MCP暴露\"]\n    POWER ==> CAP[\"能力动作扩工具集\"]\n    INC[\"Salesforce：API即UI\"] -.-> POWER\n    RISK[\"通用harness持续变强\"] -.-> BUILD",
+  "isSvg": false
+ }
+]

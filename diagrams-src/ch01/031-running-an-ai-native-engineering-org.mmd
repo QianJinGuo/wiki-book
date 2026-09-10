@@ -1,0 +1,9 @@
+%% title: AI 原生工程组织
+graph TD
+    SHIFT["瓶颈从写码转验证审查"] ==> JIT["JIT规划：路线图按季失效"]
+    JIT ==> CTX["问 Claude 而非作者"]
+    CTX ==> REV["分层审查：信任但验证"]
+    REV -->|"AI管风格lint测试"| AUTO["AI 是第一道防线"]
+    REV -->|"人管法务安全架构"| HUM["专家守高风险边界"]
+    OBS["过时流程不会自行消失"] -.-> SHIFT
+    INFRA["投资审查基础设施"] -.-> REV

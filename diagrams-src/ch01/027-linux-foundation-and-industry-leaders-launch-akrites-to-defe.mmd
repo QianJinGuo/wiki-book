@@ -1,0 +1,9 @@
+%% title: Akrites：守护关键开源软件
+graph TD
+    AI["前沿模型几分钟扫出漏洞"] ==> RISK["攻击门槛骤降"]
+    RISK ==> AK["Akrites 协调修复披露"]
+    SIRT["共享SIRT单一可信入口"] ==> AK
+    CVD["标准化CVD保密优先"] ==> AK
+    DUP["旧况：重复报告冲突补丁"] -.-> SIRT
+    LAST["无维护者时兜底维护"] -.-> AK
+    GOV["联动政府公私同防"] -.-> AK

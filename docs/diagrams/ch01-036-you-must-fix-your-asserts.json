@@ -1,0 +1,7 @@
+[
+ {
+  "title": "You Must Fix Your Asserts",
+  "code": "graph TD\n    A[\"断言声明程序不变量\"] ==> OPT[\"unreachable即优化信号\"]\n    OPT ==> LESS[\"编译器消分支更精简\"]\n    FUZZ[\"配合模糊测试收益更大\"] ==> DET[\"一条断言抵千个测试\"]\n    DIS[\"生产禁用断言反模式\"] ==> GAS[\"带错运行对自我造假\"]\n    GAS ==> LOSE[\"调试信息丢失错位暴露\"]\n    ZIG[\"Zig函数非宏参数必求值\"] -.-> A",
+  "isSvg": false
+ }
+]
