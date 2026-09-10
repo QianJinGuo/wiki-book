@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Kiro 规范驱动开发加速数据质量",
+  "code": "graph TD\n    CRISIS[\"数据质量成业务危机\"] ==>|\"脏数据威胁AI项目\"| SHIFT[\"质量约束前移开发阶段\"]\n    SHIFT ==>|\"语义表达不一致\"| SPEC[\"规范库可执行编码标准\"]\n    SPEC -.->|\"Schema验证数据入口\"| GATE[\"源头减脏数据\"]\n    GATE ==>|\"规范封装MCP Skills\"| AUTO[\"AI即质量守护者\"]\n    SHIFT -.->|\"多维因素单点无效\"| SYSTEM[\"系统性治理方法论\"]",
+  "isSvg": false
+ }
+]

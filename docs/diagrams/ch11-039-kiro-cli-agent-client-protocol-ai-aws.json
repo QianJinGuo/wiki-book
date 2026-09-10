@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Kiro CLI + ACP 飞书聊天机器人",
+  "code": "graph TD\n    HARD[\"从零构建Agent太难\"] ==>|\"不到1000行Rust\"| LINK[\"acp-link桥接飞书\"]\n    LINK ==>|\"stdio交换JSON消息\"| CUSTOM[\"Custom Agent JSON配置\"]\n    CUSTOM -.->|\"tools三级权限控制\"| MCP[\"MCP工具外部化调用\"]\n    MCP ==>|\"省70%集成开发量\"| REUSE[\"组织级Agent资产\"]\n    LINK -.->|\"协议优先平台无关\"| REUSE",
+  "isSvg": false
+ }
+]

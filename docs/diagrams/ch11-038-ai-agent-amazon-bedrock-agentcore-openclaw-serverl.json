@@ -1,0 +1,7 @@
+[
+ {
+  "title": "OpenClaw 迁移 AgentCore（四）：Runtime 与业务层",
+  "code": "graph TD\n    P2[\"Phase 2核心\"] ==>|\"ARM64镜像入ECR\"| RUNTIME[\"创建AgentCore Runtime\"]\n    RUNTIME ==>|\"agentcore两条命令或手动\"| P3[\"Phase 3业务层\"]\n    P3 -.->|\"会话ID映射microVM\"| ROUTE[\"消息路由Lambda\"]\n    P3 -.->|\"每日报告定时触发\"| CRON[\"定时任务Lambda\"]\n    ROUTE ==>|\"CloudWatch追踪Token\"| MON[\"按用户成本分摊\"]",
+  "isSvg": false
+ }
+]

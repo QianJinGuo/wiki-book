@@ -1,0 +1,7 @@
+%% title: 语义层 + VQR 确定性数据分析
+graph TD
+    THREE["NL2SQL三挑战"] ==>|"概率性语义缺失无积累"| SEM["语义层术语映射SQL"]
+    SEM ==>|"毫秒确定性查表"| VQR["验证查询库缓存"]
+    VQR -.->|"零LLM调用"| FLY["反馈飞轮越用越准"]
+    FLY ==>|"未命中长尾走Agent"| LLM["能不用LLM就不用"]
+    THREE -.->|"temperature=0也不可复现"| SEM

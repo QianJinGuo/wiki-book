@@ -1,0 +1,7 @@
+[
+ {
+  "title": "文旅近似信息抽取自学习 Agents",
+  "code": "graph TD\n    NEAR[\"OTA酒店合同近似文本\"] ==>|\"Word/Excel/PDF数十页\"| PARSE[\"文档解析定天花板\"]\n    PARSE ==>|\"促销规则限制条款\"| LEARN[\"自学习循环\"]\n    LEARN -.->|\"记忆评价修正\"| GUARD[\"质量护栏优先\"]\n    GUARD ==>|\"无护栏自学习放大错误\"| KB[\"领域术语库冷启动\"]\n    NEAR -.->|\"人工校验是成本主源\"| LEARN",
+  "isSvg": false
+ }
+]

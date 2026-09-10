@@ -1,0 +1,7 @@
+%% title: OpenClaw 迁移 AgentCore（三）：基础设施
+graph TD
+    PHASE1["Phase 1基础设施"] ==>|"CDK一次性声明"| FIVE["五Stack模块化"]
+    FIVE ==>|"VPC与IAM基座"| SEC["Security与Guardrails分离"]
+    SEC -.->|"内容审核行为限制"| AGENTCORE["AgentCore+Observability"]
+    AGENTCORE ==>|"x86开发ARM64生产"| CB["CodeBuild云端原生构建"]
+    CB -.->|"先地基再业务"| OPS["Replatform托管替代运维"]

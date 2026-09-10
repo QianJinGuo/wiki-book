@@ -1,0 +1,7 @@
+%% title: Kiro CLI + ACP 飞书聊天机器人
+graph TD
+    HARD["从零构建Agent太难"] ==>|"不到1000行Rust"| LINK["acp-link桥接飞书"]
+    LINK ==>|"stdio交换JSON消息"| CUSTOM["Custom Agent JSON配置"]
+    CUSTOM -.->|"tools三级权限控制"| MCP["MCP工具外部化调用"]
+    MCP ==>|"省70%集成开发量"| REUSE["组织级Agent资产"]
+    LINK -.->|"协议优先平台无关"| REUSE

@@ -1,0 +1,7 @@
+%% title: ingress-nginx 退役 Higress 平滑替代
+graph TD
+    RETIRE["nginx Ingress 2026退役"] ==>|"配置注入有隐患"| HIGRESS["Higress入CNCF Sandbox"]
+    HIGRESS ==>|"xDS控制面+Wasm沙箱"| COMPAT["兼容主流Nginx注解"]
+    COMPAT -.->|"三层资源模型"| GWAPI["GatewayClass/Gateway/HTTPRoute"]
+    GWAPI ==>|"GIE感知KV Cache命中"| AI["AI原生网关"]
+    AI -.->|"Token限流多模型Fallback"| ENTRY["AI Agent流量标准入口"]

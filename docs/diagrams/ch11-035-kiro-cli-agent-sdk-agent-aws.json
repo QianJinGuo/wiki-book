@@ -1,0 +1,7 @@
+[
+ {
+  "title": "把 Kiro CLI 当作 Agent SDK",
+  "code": "graph TD\n    TRAD[\"选模型申请Key配SDK\"] ==>|\"一键订阅压缩\"| ACP[\"CLI经ACP变Agent后端\"]\n    ACP ==>|\"Bedrock预配置环境\"| APP[\"专注业务逻辑五步构建\"]\n    APP -.->|\"KiroNotebook示例\"| TRIO[\"CLI+IDE+MCP Skills\"]\n    TRIO ==>|\"脚本包装零成本暴露\"| REUSE[\"现有工具链复用\"]\n    ACP -.->|\"原型快生产自建\"| REUSE",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+%% title: CloudFront 多域名改造多租户
+graph TD
+    MULTI["多域名共享配置"] ==>|"缓存刷新影响全部"| SAAS["SaaS Manager三概念"]
+    SAAS ==>|"Tenant一对一域名"| WAF["独立WebACL与缓存刷新"]
+    WAF -.->|"Distribution配置模板"| SHARE["多租户共享复用"]
+    SHARE ==>|"Connection Group动态关联"| ZERO["零停机迁移Unicast到Anycast"]
+    MULTI -.->|"一域一Distribution线性膨胀"| SAAS

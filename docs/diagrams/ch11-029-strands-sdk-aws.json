@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Strands 智能问数 DecisionAI",
+  "code": "graph TD\n    BI[\"传统BI配置穷尽\"] ==>|\"问思判行全链路\"| FIVE[\"五Agent体系\"]\n    FIVE ==>|\"Master规划REACT\"| TOOL[\"Agent-as-Tool执行\"]\n    TOOL -.->|\"MCP调指标库SQL生成\"| VERIFY[\"Verifier自检结果\"]\n    VERIFY ==>|\"异常反馈重新规划\"| NARR[\"Narrator输出结论\"]\n    TOOL -->|\"人工SQL错误率40%\"| VERIFY",
+  "isSvg": false
+ }
+]

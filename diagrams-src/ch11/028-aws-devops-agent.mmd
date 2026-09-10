@@ -1,0 +1,7 @@
+%% title: AWS DevOps Agent 延伸到中国区
+graph TD
+    PARTITION["aws与aws-cn分区隔离"] ==>|"AssumeRole直接失败"| MCP["MCP Server桥接"]
+    MCP ==>|"call_aws单工具覆盖"| SAFE["只读模式+变更须确认"]
+    SAFE -.->|"凭证出境合规争议"| TWO["两种部署方案权衡"]
+    TWO -->|"敏感场景部署中国区"| CERT["自管域名证书"]
+    MCP -.->|"suggest_aws_commands补新服务"| TWO

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "EMR Serverless Storage 简化运维",
+  "code": "graph TD\n    SHUFFLE[\"Spark Shuffle临时存储\"] ==>|\"难评估且数据倾斜\"| DRA[\"无External Shuffle Service\"]\n    DRA ==>|\"释放Executor致Stage失败\"| PLATFORM[\"平台接管Shuffle管理\"]\n    PLATFORM -->|\"按需分配释放\"| BILL[\"按实际使用计费\"]\n    BILL -.->|\"免为闲置峰值付费\"| S3[\"配合S3数据湖\"]\n    SHUFFLE -.->|\"提交作业即跑\"| PLATFORM",
+  "isSvg": false
+ }
+]
