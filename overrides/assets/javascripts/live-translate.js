@@ -15,7 +15,7 @@
   'use strict';
 
   var LS_FLAG = 'wb-live-lang';
-  var LS_CACHE = 'wb-tr-cache-v1';
+  var LS_CACHE = 'wb-tr-cache-v2'; // v2: imul-based hash (v1 keys were precision-corrupted)
   var CACHE_MAX_ENTRIES = 2500;
   var ENDPOINT = '/api/translate';
   var MAX_BATCH_CHARS = 1200;
@@ -53,12 +53,15 @@
   })();
 
   function segKey(text) {
+    // FNV-1a over UTF-16 code units — must match translate-all.py exactly.
+    // Math.imul keeps the multiplication exact 32-bit; plain * loses low
+    // bits to double precision once h grows past 2^31.
     var h = 0x811c9dc5;
     for (var i = 0; i < text.length; i++) {
       h ^= text.charCodeAt(i);
-      h = (h * 0x01000193) >>> 0;
+      h = Math.imul(h, 0x01000193);
     }
-    return h.toString(36) + ':' + text.length;
+    return (h >>> 0).toString(36) + ":" + text.length;
   }
 
   function cacheGet(key) {
