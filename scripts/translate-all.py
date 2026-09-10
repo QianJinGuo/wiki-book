@@ -254,7 +254,7 @@ def main():
     total_new = 0
     vanished = []
 
-    def process_page(rel):
+    def process_page(rel, record=True):
         nonlocal total_pages, total_new
         key = page_key(rel)
         out_path = os.path.join(OUT, key + ".json")
@@ -267,7 +267,10 @@ def main():
 
         raw_segments = extract(rel)
         if raw_segments is None:
-            vanished.append(rel)
+            # Only the main pass records vanished pages; the resweep must not
+            # re-append while iterating the same list (infinite loop).
+            if record:
+                vanished.append(rel)
             return
         segments = raw_segments
         pairs = {}
@@ -325,14 +328,17 @@ def main():
         process_page(rel)
 
     # Pages that vanished mid-run (the daily loop wiping site/) were skipped;
-    # once the tree is whole again, sweep them once instead of leaving holes.
+    # once the tree is whole again, sweep them once from a snapshot instead of
+    # iterating a list that the sweep itself would grow.
     if vanished and not args.dry_run:
         print(f"\n{len(vanished)} pages vanished mid-run; retrying after site health check", flush=True)
         while site_page_count() < 800:
             print(f"site/ still gutted ({site_page_count()} html pages); waiting 120s", flush=True)
             time.sleep(120)
-        for rel in vanished:
-            process_page(rel)
+        pending = list(vanished)
+        vanished.clear()
+        for rel in pending:
+            process_page(rel, record=False)
 
     print(f"\nDone: {total_pages} pages scanned, {total_new} new segments translated", flush=True)
 
