@@ -1,0 +1,8 @@
+%% title: Data Mesh 上的治理型 Agentic AI
+graph TD
+    FIVE["Agent五步数据链路"] ==>|"每步需独立授权"| GW["Gateway确定性拦截器"]
+    GW ==>|"JWT scope+工具过滤"| MESH["治理型Data Mesh"]
+    MESH -->|"S3 Vectors省90%成本"| KB["20亿向量知识库"]
+    MESH -->|"S3 Tables TPS升10倍"| TABLES["Iceberg结构化存储"]
+    MESH -.->|"Lake Formation行/列/单元格"| ROW["行过滤器注入客户身份"]
+    GW -.->|"工具交互点实时评估"| GUARD["Guardrails拦prompt注入"]

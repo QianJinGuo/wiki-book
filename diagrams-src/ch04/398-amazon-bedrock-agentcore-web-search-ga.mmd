@@ -1,0 +1,8 @@
+%% title: AgentCore Web Search 托管网页搜索 GA
+graph TD
+    FROZEN["Agent知识冻结于训练日"] ==> GW["AgentCore Gateway托管接入"]
+    GW ==>|"查询不出AWS满足合规"| INDEX["Amazon自建数百亿索引"]
+    INDEX -->|"新内容分钟级可查"| KG["知识图谱高置信实体"]
+    INDEX -.->|"省context token"| SEM["语义片段提取"]
+    GW -->|"tools/list自动发现"| FRAME["Strands/LangChain即插即用"]
+    KG ==> PRICE["$7每千次查询"]

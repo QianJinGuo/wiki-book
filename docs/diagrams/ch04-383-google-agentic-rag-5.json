@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Google Agentic RAG 充分上下文框架",
+  "code": "graph TD\n    VANILLA[\"搜一次生成一次\"] ==>|\"范式升级\"| ORCH[\"编排器分发规划路径\"]\n    ORCH -->|\"问题拆成子查询\"| FAN[\"搜索扇出多库并发\"]\n    FAN ==> SC[\"充分上下文智能体审查\"]\n    SC -->|\"已找到缺失建议搜Z\"| REWRITE[\"查询改写器定向补检\"]\n    REWRITE -.->|\"再审查通过才停止\"| WIN[\"FramesQA跨库90.1%\"]\n    SC -.->|\"比Vanilla高34%延迟差3%\"| WIN",
+  "isSvg": false
+ }
+]

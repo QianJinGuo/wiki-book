@@ -1,0 +1,7 @@
+%% title: kipi：自主 Agent OSINT 调查平台
+graph TD
+    DOC["输入PDF截图与笔记"] ==>|"实体关系提取"| GRAPH["构建调查实体图谱"]
+    GRAPH ==>|"WHOIS/DNS/证书"| AGENT["自主Agent全网调查"]
+    AGENT -.->|"从发现自动pivot新线索"| PIVOT["图谱实时扩展"]
+    PIVOT -->|"证据分级A/B/C"| HUMAN["机器提议人类裁决"]
+    HUMAN ==>|"中心性社区发现路径"| BRIEF["生成溯源调查简报"]

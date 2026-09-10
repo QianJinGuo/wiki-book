@@ -1,0 +1,7 @@
+[
+ {
+  "title": "检测网站上的 AI Agent 流量",
+  "code": "graph TD\n    TRAD[\"传统bot检测\"] -.->|\"81%可绕过\"| FOUR[\"四层信号体系\"]\n    FOUR -->|\"身份/网络/浏览器/行为\"| BROWSER[\"浏览器层是主战场\"]\n    BROWSER ==>|\"住宅IP真实指纹难辨\"| INTENT[\"意图分类取代二元拦截\"]\n    INTENT -->|\"17张卡即枚举攻击\"| RESP[\"允许监控质询拦截\"]",
+  "isSvg": false
+ }
+]

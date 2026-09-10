@@ -1,0 +1,9 @@
+%% title: AI Agent 四大设计模式与选型决策树
+graph TD
+    Q1["步骤可提前明确?"] ==>|"是"| PE["Plan-and-Execute"]
+    Q1 -->|"否"| Q2["依赖实时反馈?"]
+    Q2 ==>|"是"| REACT["ReAct循环"]
+    Q2 -->|"否"| Q3["容错率低于5%?"]
+    Q3 ==>|"是"| REFL["Reflection自评迭代"]
+    Q3 -.->|"跨多领域"| MULTI["Multi-Agent星型拓扑"]
+    REFL -->|"延迟低于3秒则降级"| LIGHT["单代理+简单Prompt"]

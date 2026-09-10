@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Harness Pilot：项目规范预验证插件",
+  "code": "graph TD\n    BLIND[\"Agent隐性规则盲区\"] ==>|\"从教到验\"| GIT[\"Git规则版本化SSOT\"]\n    GIT ==> ANALYZE[\"harness-analyze三维评分\"]\n    ANALYZE -->|\"文档35架构35测试30\"| APPLY[\"harness-apply编码前预验证\"]\n    APPLY -.->|\"Ralph循环上限3轮\"| HANDOFF[\"Handoff跨会话持久化\"]\n    APPLY ==>|\"健康分10升至91\"| SCORE[\"零层级违规零循环依赖\"]",
+  "isSvg": false
+ }
+]

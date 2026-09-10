@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Chaplin：AI Agent 自助分析 AWS 健康事件",
+  "code": "graph TD\n    NOTIFY[\"50+账户健康通知\"] ==> EVENT[\"EventBridge触发Lambda采集\"]\n    EVENT -->|\"跨账户拉取\"| LAKE[\"S3数据湖+DynamoDB\"]\n    LAKE ==> RULE[\"规则引擎先分五大类\"]\n    RULE -.->|\"仅复杂事件上AI\"| AGENTS[\"三专家Agent分析\"]\n    AGENTS ==>|\"SQL查询+影响评估\"| MCP[\"MCP工具供Claude Code调用\"]",
+  "isSvg": false
+ }
+]

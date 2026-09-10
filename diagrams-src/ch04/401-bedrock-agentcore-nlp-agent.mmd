@@ -1,0 +1,7 @@
+%% title: Bedrock AgentCore NLP 仪表盘自动化
+graph TD
+    NL["自然语言改仪表盘"] ==>|"Nova解析结构化参数"| ORCH["编排器路由"]
+    ORCH ==>|"find/list类"| FIND["Find Dashboard Agent"]
+    ORCH -->|"add/remove类"| MODIFY["Modify Dashboard Agent"]
+    MODIFY ==>|"验证列存在且未在板"| SAFE["Validation-First防无效调用"]
+    SAFE -.->|"新建UUID后缀副本"| ROLL["原仪表板保留可回滚"]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AgentCore Web Search 托管网页搜索 GA",
+  "code": "graph TD\n    FROZEN[\"Agent知识冻结于训练日\"] ==> GW[\"AgentCore Gateway托管接入\"]\n    GW ==>|\"查询不出AWS满足合规\"| INDEX[\"Amazon自建数百亿索引\"]\n    INDEX -->|\"新内容分钟级可查\"| KG[\"知识图谱高置信实体\"]\n    INDEX -.->|\"省context token\"| SEM[\"语义片段提取\"]\n    GW -->|\"tools/list自动发现\"| FRAME[\"Strands/LangChain即插即用\"]\n    KG ==> PRICE[\"$7每千次查询\"]",
+  "isSvg": false
+ }
+]

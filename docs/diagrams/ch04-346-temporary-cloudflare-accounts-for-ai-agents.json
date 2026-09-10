@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Temporary Accounts：Agent 零配置部署",
+  "code": "graph TD\n    WALL[\"部署前的人类墙壁\"] ==>|\"OAuth与Token复制粘贴\"| TEMP[\"wrangler deploy --temporary\"]\n    TEMP ==>|\"60分钟存活窗口\"| LOOP[\"write-deploy-verify试错循环\"]\n    LOOP -.->|\"窗口内反复迭代\"| CLAIM[\"人类认领转永久账户\"]\n    CLAIM -->|\"Stripe与WorkOS合作\"| ZERO[\"零配置部署范式\"]",
+  "isSvg": false
+ }
+]

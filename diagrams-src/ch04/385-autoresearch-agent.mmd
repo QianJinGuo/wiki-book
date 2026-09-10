@@ -1,0 +1,7 @@
+%% title: AutoResearch：四种 Agent 循环设计
+graph TD
+    LOOP["基模固定循环定效率"] ==> LINEAR["线性Keep-or-Discard"]
+    LINEAR -->|"Karpathy五分钟预算"| TREE["树搜索AIDE三算子"]
+    TREE ==>|"Draft/Debug/Improve"| POOL["遗传池FunSearch进化"]
+    POOL -.->|"GEPA文本反馈驱动突变"| ASYNC["CORAL异步多Agent"]
+    ASYNC -->|"attempts/notes/skills共享记忆"| FRAME["四维框架解构新方法"]

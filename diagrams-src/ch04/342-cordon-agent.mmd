@@ -1,0 +1,7 @@
+%% title: Cordon：Agent 工具调用的语义事务
+graph TD
+    RISK["风险藏于步骤组合"] ==>|"日志密钥派生进Slack"| BOUND["语义事务边界"]
+    BOUND ==>|"Prepare暂存意图"| SHADOW["影子状态+副作用发件箱"]
+    SHADOW -->|"lineage溯源外发内容"| VALID["Validate整体校验"]
+    VALID ==>|"通过提交或回滚"| AUDIT["Commit/Abort留审计"]
+    AUDIT -.->|"45个风险流全拦截"| PERF["任务提速Token省约25%"]
