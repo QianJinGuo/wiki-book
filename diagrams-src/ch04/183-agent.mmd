@@ -1,0 +1,6 @@
+%% title: 工具风险内建
+graph TD
+    CONTRACT["权限是工具属性"] ==> THREE["三档可松不可紧"]
+    THREE -->|"运行时评估覆盖"| RISK["动态改写默认权限"]
+    RISK ==> SUBTOOL["子Agent即普通工具"]
+    TWOSTAGE["规则粗筛模型深判"] -.-> RISK

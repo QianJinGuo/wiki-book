@@ -1,0 +1,6 @@
+%% title: 记忆即分层成本
+graph TD
+    COST["核心是召回成本"] ==> HOT["热记忆小卡冻结"]
+    HOT -->|"flush先于压缩"| SKILL["Skills程序性记忆"]
+    SKILL ==> OBS["记忆必须可观测"]
+    CHARS["字符限跨模型有效"] -.-> HOT

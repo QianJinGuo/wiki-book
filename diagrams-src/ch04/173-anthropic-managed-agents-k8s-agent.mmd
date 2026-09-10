@@ -1,0 +1,6 @@
+%% title: 宠物到牛群解耦
+graph TD
+    PET["单体容器是宠物"] ==> DECOUPLE["三组件接口解耦"]
+    DECOUPLE -->|"脑手分离"| SEC["token不可达架构安全"]
+    SEC ==> CATTLE["独立故障独立扩缩"]
+    PV["持久日志类PV"] -.-> DECOUPLE

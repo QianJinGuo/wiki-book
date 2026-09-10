@@ -1,0 +1,7 @@
+%% title: 四种多 Agent 协作
+graph TD
+    DEATHS["单agent三死法"] ==> SUP["Supervisor可审计"]
+    SUP ==> SWARM["Swarm交接防循环"]
+    SWARM ==> PIPE["Pipeline防部分假象"]
+    PIPE ==> MESH["网状动态贵追踪"]
+    LIMITS["递归上限成本追踪"] -.-> SWARM

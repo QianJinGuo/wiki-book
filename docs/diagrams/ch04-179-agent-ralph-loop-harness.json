@@ -1,0 +1,7 @@
+[
+ {
+  "title": "长周期可接管性",
+  "code": "graph TD\n    GOAL[\"goal管持续非正确\"] ==> AMB[\"模糊性逐轮复利\"]\n    AMB -->|\"循环不解需锚点\"| SPEC[\"前置Spec剪分叉\"]\n    SPEC ==> HANDOVER[\"可接管是生产标准\"]\n    SUB[\"子代理新鲜审查\"] -.-> HANDOVER\n    FILES[\"工程继续靠证据文件\"] -.-> SPEC",
+  "isSvg": false
+ }
+]

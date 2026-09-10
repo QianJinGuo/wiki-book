@@ -1,0 +1,7 @@
+[
+ {
+  "title": "苦味教训企业版",
+  "code": "graph TD\n    GARBAGE[\"组织本是垃圾筒\"] ==> REDEF[\"定义好结果非流程\"]\n    REDEF -->|\"RL训结果非过程\"| MANUS[\"工艺派对结果训练\"]\n    MANUS ==> BET[\"算力加通用法胜出\"]\n    OPENQ[\"企业是否如棋局未解\"] -.-> BET",
+  "isSvg": false
+ }
+]

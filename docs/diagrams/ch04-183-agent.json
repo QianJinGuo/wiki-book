@@ -1,0 +1,7 @@
+[
+ {
+  "title": "工具风险内建",
+  "code": "graph TD\n    CONTRACT[\"权限是工具属性\"] ==> THREE[\"三档可松不可紧\"]\n    THREE -->|\"运行时评估覆盖\"| RISK[\"动态改写默认权限\"]\n    RISK ==> SUBTOOL[\"子Agent即普通工具\"]\n    TWOSTAGE[\"规则粗筛模型深判\"] -.-> RISK",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+%% title: 生产级 Harness 要点
+graph TD
+    EDGE["边界条件定架构"] ==> OBS["可观测三支柱先行"]
+    OBS -->|"trace回写回归"| STATE["状态分层checkpoint"]
+    STATE ==> SECURITY["安全分级系统强制"]
+    SECURITY ==> COSTC["预算硬顶失败回滚"]
+    DEVOPS["模型CPU harness是OS"] -.-> EDGE

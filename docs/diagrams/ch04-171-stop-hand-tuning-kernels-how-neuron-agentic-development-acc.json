@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Neuron 内核 Agent 化",
+  "code": "graph TD\n    SKILLS[\"五Skills编写到分析\"] ==> AGENTS[\"五Agent编排工作流\"]\n    AGENTS -->|\"profiling到代码行\"| CASE[\"Softmax内核实战\"]\n    CASE ==> GAP[\"诊断自动修复仍手动\"]\n    LAYERS[\"芯片知识编码成Skill\"] -.-> SKILLS",
+  "isSvg": false
+ }
+]

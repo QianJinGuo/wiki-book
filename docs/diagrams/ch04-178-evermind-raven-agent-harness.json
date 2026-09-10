@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Raven 自进化 Harness",
+  "code": "graph TD\n    EVEROS[\"四层记忆底座\"] ==> TRI[\"人己世界三维记忆\"]\n    TRI -->|\"十分之一token\"| LOOP[\"执行反思沉淀闭环\"]\n    LOOP ==> IDLE[\"闲时自改技能码\"]\n    L4[\"四阶段到数字生命\"] -.-> LOOP\n    WEIGHT[\"权重层动态微调\"] -.-> IDLE",
+  "isSvg": false
+ }
+]

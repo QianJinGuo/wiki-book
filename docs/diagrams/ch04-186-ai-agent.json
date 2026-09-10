@@ -1,0 +1,7 @@
+[
+ {
+  "title": "本体是管理问题",
+  "code": "graph TD\n    COG[\"同实体各说各话\"] ==> GOV[\"难在谁定谁护谁担责\"]\n    GOV -->|\"亮点工程技术债\"| STEAM[\"换引擎非真转型\"]\n    STEAM ==> BABY[\"baby状态建AI原生\"]\n    MD[\"文档MD化AI可读\"] -.-> BABY",
+  "isSvg": false
+ }
+]

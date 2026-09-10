@@ -1,0 +1,7 @@
+[
+ {
+  "title": "四种多 Agent 协作",
+  "code": "graph TD\n    DEATHS[\"单agent三死法\"] ==> SUP[\"Supervisor可审计\"]\n    SUP ==> SWARM[\"Swarm交接防循环\"]\n    SWARM ==> PIPE[\"Pipeline防部分假象\"]\n    PIPE ==> MESH[\"网状动态贵追踪\"]\n    LIMITS[\"递归上限成本追踪\"] -.-> SWARM",
+  "isSvg": false
+ }
+]

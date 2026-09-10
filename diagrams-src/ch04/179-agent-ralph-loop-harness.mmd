@@ -1,0 +1,7 @@
+%% title: 长周期可接管性
+graph TD
+    GOAL["goal管持续非正确"] ==> AMB["模糊性逐轮复利"]
+    AMB -->|"循环不解需锚点"| SPEC["前置Spec剪分叉"]
+    SPEC ==> HANDOVER["可接管是生产标准"]
+    SUB["子代理新鲜审查"] -.-> HANDOVER
+    FILES["工程继续靠证据文件"] -.-> SPEC

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Agent 工程五判断",
+  "code": "graph TD\n    J1[\"Harness胜模型选择\"] ==> J2[\"上下文五层防rot\"]\n    J2 ==> J3[\"工具三代进到ACI\"]\n    J3 ==> J4[\"协议隔离先于并行\"]\n    J4 ==> J5[\"先修评测再修agent\"]\n    OPENAI[\"百万行背后是harness\"] -.-> J1",
+  "isSvg": false
+ }
+]
