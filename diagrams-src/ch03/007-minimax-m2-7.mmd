@@ -1,0 +1,7 @@
+%% title: M2.7 模型自我进化
+graph TD
+    SELF["模型参与建Harness"] ==> LOOP["RL闭环自主百轮"]
+    LOOP -->|"分析改动评测取舍"| GAIN["内评三成提升"]
+    GAIN ==> TEAMS["多角色协作内化"]
+    TEAMS ==> FINANCE["金融端到端可用"]
+    BOUND["人引导模型构建"] -.-> LOOP

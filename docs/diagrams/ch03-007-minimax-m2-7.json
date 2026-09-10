@@ -1,0 +1,7 @@
+[
+ {
+  "title": "M2.7 模型自我进化",
+  "code": "graph TD\n    SELF[\"模型参与建Harness\"] ==> LOOP[\"RL闭环自主百轮\"]\n    LOOP -->|\"分析改动评测取舍\"| GAIN[\"内评三成提升\"]\n    GAIN ==> TEAMS[\"多角色协作内化\"]\n    TEAMS ==> FINANCE[\"金融端到端可用\"]\n    BOUND[\"人引导模型构建\"] -.-> LOOP",
+  "isSvg": false
+ }
+]

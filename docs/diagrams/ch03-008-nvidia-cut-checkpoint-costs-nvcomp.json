@@ -1,0 +1,7 @@
+[
+ {
+  "title": "检查点压缩省钱",
+  "code": "graph TD\n    COST[\"checkpoint月烧20万\"] ==> NVCOMP[\"GPU无损压缩近三成\"]\n    NVCOMP -->|\"按存储带宽选\"| ZSTD[\"网络盘用ZSTD\"]\n    ZSTD ==> GANS[\"高速盘用ANS快十倍\"]\n    GANS ==> OPT[\"优化器状态最大头\"]\n    LINES[\"30行Python集成\"] -.-> NVCOMP",
+  "isSvg": false
+ }
+]

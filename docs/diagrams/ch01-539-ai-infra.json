@@ -1,0 +1,7 @@
+[
+ {
+  "title": "vLLM 推理全链路",
+  "code": "graph TD\n    BATCH[\"连续批处理token级\"] ==> PAGED[\"分页注意力管KV\"]\n    PAGED -->|\"块表间接寻址\"| FLASH[\"分块在线softmax\"]\n    FLASH ==> SPLIT[\"prefill算密decode访存密\"]\n    SPLIT ==> LAST[\"prefill只算末token\"]\n    ROPE[\"位置编码预计算\"] -.-> FLASH\n    ATT[\"attention难均摊\"] -.-> SPLIT",
+  "isSvg": false
+ }
+]

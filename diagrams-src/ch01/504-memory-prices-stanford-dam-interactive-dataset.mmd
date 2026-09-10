@@ -1,0 +1,6 @@
+%% title: 七十年内存价格数据
+graph TD
+    DATA["近70年价格曲线"] ==> TREND["对数刻度线性降"]
+    TREND -->|"HBM溢价也在降"| ECON["定AI基建经济性"]
+    ECON ==> CAVEAT["零售滞后HBM是估计"]
+    KV["KV成本随内存走"] -.-> ECON

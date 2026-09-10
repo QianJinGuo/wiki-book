@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Gemini 原生 Computer Use",
+  "code": "graph TD\n    NATIVE[\"CU成模型原生能力\"] ==> SHARE[\"与函数调用共享推理\"]\n    SHARE -->|\"复合任务不失上下文\"| SAFE[\"三层纵深防御\"]\n    SAFE ==> LIMIT[\"高频场景或不如独立\"]\n    EVAL[\"纯自动化另选独模型\"] -.-> LIMIT",
+  "isSvg": false
+ }
+]

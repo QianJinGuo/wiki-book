@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Harness 提效 90% 导览",
+  "code": "graph TD\n    HUB[\"编码率90%实践\"] ==> MECH[\"机制论文区\"]\n    MECH -->|\"survey与四循环\"| THEORY[\"Harness理论谱系\"]\n    HUB ==> PRAC[\"工程实践区\"]\n    PRAC -->|\"CLAUDE.md上下文\"| CFG[\"配置工程沉淀\"]\n    PRAC -->|\"数据级全自动评测\"| PLAT[\"平台化实践\"]",
+  "isSvg": false
+ }
+]

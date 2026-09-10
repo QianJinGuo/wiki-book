@@ -1,0 +1,6 @@
+%% title: Skills 隔离与安全栏杆
+graph TD
+    SKILL["Skill是复用工作流"] ==> FORK["fork隔离防污染"]
+    FORK -->|"副作用操作"| DISABLE["禁自动触发需显式"]
+    DISABLE ==> LEVELS["项目全局两级部署"]
+    CHAIN["可链式组合流水线"] -.-> SKILL

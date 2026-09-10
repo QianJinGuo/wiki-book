@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Gray Swan 红队演进",
+  "code": "graph TD\n    SHADE[\"自动化红队胜人\"] ==> TRIFECTA[\"致命三角新威胁\"]\n    TRIFECTA -->|\"外泄加私有数据\"| AGENT[\"Agent攻击面指数扩\"]\n    AGENT ==> PARADIGM[\"从越狱到系统评估\"]\n    INDUSTRY[\"安全走向合规自动化\"] -.-> PARADIGM",
+  "isSvg": false
+ }
+]

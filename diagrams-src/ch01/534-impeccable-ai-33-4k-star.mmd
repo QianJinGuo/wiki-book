@@ -1,0 +1,6 @@
+%% title: Impeccable 设计工作流
+graph TD
+    GATE["init上下文门"] ==> CMDS["23命令全周期"]
+    CMDS ==> DETECT["41条反模式规则"]
+    DETECT -->|"CI友好退出码"| LIVE["浏览器选型回写码"]
+    COMPILE["一份源编译八端"] -.-> CMDS

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "RubyGems 复合攻击",
+  "code": "graph TD\n    DDOS[\"DDoS掩护注意力\"] ==> BOTS[\"机器人注册发毒包\"]\n    BOTS -->|\"数小时清五百包\"| RESP[\"快速响应遏制\"]\n    RESP ==> HARDEN[\"WAF加注册限流\"]\n    LOCK[\"lockfile锁依赖\"] -.->|\"开发者侧\"| HARDEN\n    MINIMAL[\"旧用户不受影响\"] -.-> RESP",
+  "isSvg": false
+ }
+]

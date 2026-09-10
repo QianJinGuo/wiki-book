@@ -1,0 +1,6 @@
+%% title: Lovable 技能三层模型
+graph TD
+    THREE["提示知识技能三层"] ==> DESC["描述决定触发"]
+    DESC -->|"小而聚可叠加"| STACK["多技能干净叠加"]
+    STACK ==> BOUND["明确边界防冲突"]
+    CONFUSE["冲突源于scope"] -.-> BOUND

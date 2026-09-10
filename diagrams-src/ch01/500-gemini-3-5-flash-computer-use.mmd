@@ -1,0 +1,6 @@
+%% title: Gemini 原生 Computer Use
+graph TD
+    NATIVE["CU成模型原生能力"] ==> SHARE["与函数调用共享推理"]
+    SHARE -->|"复合任务不失上下文"| SAFE["三层纵深防御"]
+    SAFE ==> LIMIT["高频场景或不如独立"]
+    EVAL["纯自动化另选独模型"] -.-> LIMIT

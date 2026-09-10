@@ -1,0 +1,6 @@
+%% title: LLM 推理剖析器
+graph TD
+    GAP["传统APM不见token"] ==> PROF["推理级连续剖析"]
+    PROF -->|"首token与吞吐分解"| GPU["延迟关联GPU内核"]
+    GPU ==> AGENT["多轮agent定位瓶颈"]
+    COMP["与应用层工具互补"] -.-> PROF

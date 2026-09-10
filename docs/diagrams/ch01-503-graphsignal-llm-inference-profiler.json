@@ -1,0 +1,7 @@
+[
+ {
+  "title": "LLM 推理剖析器",
+  "code": "graph TD\n    GAP[\"传统APM不见token\"] ==> PROF[\"推理级连续剖析\"]\n    PROF -->|\"首token与吞吐分解\"| GPU[\"延迟关联GPU内核\"]\n    GPU ==> AGENT[\"多轮agent定位瓶颈\"]\n    COMP[\"与应用层工具互补\"] -.-> PROF",
+  "isSvg": false
+ }
+]

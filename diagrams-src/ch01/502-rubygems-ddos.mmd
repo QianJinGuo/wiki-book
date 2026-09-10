@@ -1,0 +1,7 @@
+%% title: RubyGems 复合攻击
+graph TD
+    DDOS["DDoS掩护注意力"] ==> BOTS["机器人注册发毒包"]
+    BOTS -->|"数小时清五百包"| RESP["快速响应遏制"]
+    RESP ==> HARDEN["WAF加注册限流"]
+    LOCK["lockfile锁依赖"] -.->|"开发者侧"| HARDEN
+    MINIMAL["旧用户不受影响"] -.-> RESP

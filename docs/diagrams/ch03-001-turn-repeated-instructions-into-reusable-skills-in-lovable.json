@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Lovable 技能三层模型",
+  "code": "graph TD\n    THREE[\"提示知识技能三层\"] ==> DESC[\"描述决定触发\"]\n    DESC -->|\"小而聚可叠加\"| STACK[\"多技能干净叠加\"]\n    STACK ==> BOUND[\"明确边界防冲突\"]\n    CONFUSE[\"冲突源于scope\"] -.-> BOUND",
+  "isSvg": false
+ }
+]

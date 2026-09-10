@@ -1,0 +1,8 @@
+%% title: vLLM 推理全链路
+graph TD
+    BATCH["连续批处理token级"] ==> PAGED["分页注意力管KV"]
+    PAGED -->|"块表间接寻址"| FLASH["分块在线softmax"]
+    FLASH ==> SPLIT["prefill算密decode访存密"]
+    SPLIT ==> LAST["prefill只算末token"]
+    ROPE["位置编码预计算"] -.-> FLASH
+    ATT["attention难均摊"] -.-> SPLIT
