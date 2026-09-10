@@ -1,0 +1,8 @@
+%% title: Kimi K2.5 一层路由
+graph TD
+    ROUTE["路由仅残差出口"] ==> CLUSTER["384个聚类expert"]
+    CLUSTER -->|"物理稠密语义稀疏"| STABLE["稳定性换推理成本"]
+    HARNESS["agent轨迹入训练"] -.-> STABLE
+    KV["MLA加MQA压KV"] -.-> ROUTE
+    MERGE["视觉token合并"] -.-> KV
+    OPEN["权重数据全开源"] -.-> HARNESS

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "gzip 作为语言模型",
+  "code": "graph TD\n    THM[\"压缩即预测\"] ==> DEFLATE[\"滑窗反引匹配\"]\n    DEFLATE ==> SCORE[\"压缩长度当评分\"]\n    SCORE -->|\"字节量化噪声\"| BEAM[\"beam前瞻搜索\"]\n    BEAM ==> TAIL[\"tail截断防复制\"]\n    TAIL -.-> GEN[\"知结构不连贯\"]\n    MDL[\"MDL信息论谱系\"] -.-> THM",
+  "isSvg": false
+ }
+]

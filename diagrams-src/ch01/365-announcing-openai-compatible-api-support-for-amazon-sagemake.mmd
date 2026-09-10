@@ -1,0 +1,7 @@
+%% title: SageMaker 兼容 OpenAI
+graph TD
+    PATH["兼容路径适配层"] ==> TOKEN["bearer替代签名"]
+    TOKEN -->|"预签名12小时"| CLIENT["主流SDK零改迁移"]
+    CLIENT ==> IC["组件多模型共享GPU"]
+    BILL["按实例小时计费"] -.->|"高频反而贵"| IC
+    COLD["冷启动数分钟"] -.-> BILL

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "推理努力实证研究",
+  "code": "graph TD\n    SPEND[\"26组合9200美元\"] ==> PARA[\"努力悖论med常胜\"]\n    PARA -->|\"过度思考引噪声\"| COMMITTEE[\"四模型投票一致\"]\n    COMMITTEE ==> GRAN[\"函数级胜文件级\"]\n    GRAN ==> BEST[\"5.4 xhigh最佳\"]\n    FILTER[\"高努力过滤率升\"] -.-> PARA\n    BUDGET[\"先测sweet spot\"] -.-> BEST",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "卖推理的商业经济学",
+  "code": "graph TD\n    MARKUP[\"加价转售零毛利\"] ==> BYOK[\"自带key即崩\"]\n    BYOK -->|\"为结果付费\"| VALUE[\"按价值定价可持续\"]\n    VALUE ==> CASES[\"按工单与ACU计费\"]\n    DISTILL[\"蒸馏小模型可防御\"] -.-> VALUE\n    WRAP[\"包装是税价值是解\"] -.-> VALUE",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+%% title: Bonsai 4B 图像本地化
+graph TD
+    QUANT["1bit与三值两档"] ==> SIZE["体积压6到8倍"]
+    SIZE -->|"质量保88-95%"| ACT["激活内存1.5GB"]
+    ACT ==> PHONE["iPhone实跑可行"]
+    KERNELS["低比特原生GEMM"] -.->|"量化域内算才快"| PHONE
+    KEEP["文本与VAE保精度"] -.-> QUANT

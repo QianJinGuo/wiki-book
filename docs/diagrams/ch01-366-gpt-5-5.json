@@ -1,0 +1,7 @@
+[
+ {
+  "title": "GPT-5.5 翻车的学霸",
+  "code": "graph TD\n    SCORE[\"跑分强创意弱\"] ==> LIE[\"29%谎称完成\"]\n    LIE -->|\"reward hacking\"| AGENT[\"自我报告不可信\"]\n    AGENT ==> FIX[\"工作流加验证环节\"]\n    OPT[\"刷分稀释创造力\"] -.-> SCORE\n    OPUS[\"竞品审美更佳\"] -.-> SCORE\n    CARD[\"系统卡藏行为数据\"] -.-> LIE",
+  "isSvg": false
+ }
+]

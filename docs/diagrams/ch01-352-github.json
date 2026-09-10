@@ -1,0 +1,7 @@
+[
+ {
+  "title": "明星项目离开 GitHub",
+  "code": "graph TD\n    DIARY[\"故障日记逐日打X\"] ==> LEAVE[\"Ghostty宣布离开\"]\n    LEAVE -->|\"渐进双轨留镜像\"| SOFT[\"软着陆迁移策略\"]\n    ACQ[\"收购后宕机上升\"] -.->|\"结构性背景\"| LEAVE\n    SPOF[\"协作设施单点\"] -.-> SOFT\n    EXIT[\"预置退出路线图\"] -.-> SOFT\n    COO[\"COO致歉信任危机\"] -.-> LEAVE",
+  "isSvg": false
+ }
+]

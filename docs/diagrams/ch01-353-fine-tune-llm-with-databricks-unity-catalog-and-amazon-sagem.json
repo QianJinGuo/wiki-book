@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Unity Catalog 微调血缘",
+  "code": "graph TD\n    EDGAR[\"公开数据入UC\"] ==> EMR[\"预处理经REST鉴权\"]\n    EMR ==> TRAIN[\"云端微调3B模型\"]\n    TRAIN ==> BACK[\"artifact回写血缘\"]\n    BACK -->|\"源到模型可查\"| AUDIT[\"审计分钟级回答\"]\n    OAUTH[\"OAuth存Secrets短时效\"] -.-> TRAIN\n    S3[\"直读S3治理失效\"] -.->|\"反面警示\"| OAUTH",
+  "isSvg": false
+ }
+]

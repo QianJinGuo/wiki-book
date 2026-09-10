@@ -1,0 +1,8 @@
+%% title: N-Day 研究 AI 流水线
+graph TD
+    EXTRACT["提取补丁diff"] ==> AGENT["本地30B分析"]
+    AGENT -->|"RAG检索历史CVE"| QDRANT["向量知识库"]
+    QDRANT ==> REPORT["候选报告人复核"]
+    LIMIT["20k token裁剪"] -.-> AGENT
+    LOCAL["全链路免费自建"] -.-> AGENT
+    NOTFINAL["报告是起点非结论"] -.-> REPORT

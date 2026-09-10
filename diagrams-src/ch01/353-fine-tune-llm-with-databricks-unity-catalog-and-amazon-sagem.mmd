@@ -1,0 +1,8 @@
+%% title: Unity Catalog 微调血缘
+graph TD
+    EDGAR["公开数据入UC"] ==> EMR["预处理经REST鉴权"]
+    EMR ==> TRAIN["云端微调3B模型"]
+    TRAIN ==> BACK["artifact回写血缘"]
+    BACK -->|"源到模型可查"| AUDIT["审计分钟级回答"]
+    OAUTH["OAuth存Secrets短时效"] -.-> TRAIN
+    S3["直读S3治理失效"] -.->|"反面警示"| OAUTH

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Kimi K2.5 一层路由",
+  "code": "graph TD\n    ROUTE[\"路由仅残差出口\"] ==> CLUSTER[\"384个聚类expert\"]\n    CLUSTER -->|\"物理稠密语义稀疏\"| STABLE[\"稳定性换推理成本\"]\n    HARNESS[\"agent轨迹入训练\"] -.-> STABLE\n    KV[\"MLA加MQA压KV\"] -.-> ROUTE\n    MERGE[\"视觉token合并\"] -.-> KV\n    OPEN[\"权重数据全开源\"] -.-> HARNESS",
+  "isSvg": false
+ }
+]

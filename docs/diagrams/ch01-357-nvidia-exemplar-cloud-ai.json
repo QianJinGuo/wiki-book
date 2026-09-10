@@ -1,0 +1,7 @@
+[
+ {
+  "title": "训练集群性能诊断",
+  "code": "graph TD\n    GAP[\"同硬件差一成\"] ==> CUM[\"每层几个点累积\"]\n    CUM ==> C1[\"SMMU拖MoE\"]\n    CUM ==> C2[\"C-state饿turbo\"]\n    CUM ==> C3[\"NCCL参数看fabric\"]\n    CUM ==> C4[\"容器丢拓扑静默\"]\n    FIX[\"preflight逐层检查\"] ==> CUM\n    INSIDE[\"容器内验环境\"] -.-> C4",
+  "isSvg": false
+ }
+]

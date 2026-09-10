@@ -1,0 +1,8 @@
+%% title: gzip 作为语言模型
+graph TD
+    THM["压缩即预测"] ==> DEFLATE["滑窗反引匹配"]
+    DEFLATE ==> SCORE["压缩长度当评分"]
+    SCORE -->|"字节量化噪声"| BEAM["beam前瞻搜索"]
+    BEAM ==> TAIL["tail截断防复制"]
+    TAIL -.-> GEN["知结构不连贯"]
+    MDL["MDL信息论谱系"] -.-> THM

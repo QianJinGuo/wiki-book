@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AI 定价年涨三倍",
+  "code": "graph TD\n    INFLATE[\"定价年涨三倍\"] ==> CAPEX[\"基建支出挤压\"]\n    CAPEX -->|\"现金紧则涨\"| COND[\"定价二元条件\"]\n    GOOGLE[\"低成本压下限\"] -.-> COND\n    OPENAI[\"补贴转正常化\"] -.-> COND\n    ANTHROPIC[\"高端稳价\"] -.-> COND\n    APP[\"应用层改价值定价\"] -.-> COND",
+  "isSvg": false
+ }
+]

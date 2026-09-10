@@ -1,0 +1,7 @@
+[
+ {
+  "title": "N-Day 研究 AI 流水线",
+  "code": "graph TD\n    EXTRACT[\"提取补丁diff\"] ==> AGENT[\"本地30B分析\"]\n    AGENT -->|\"RAG检索历史CVE\"| QDRANT[\"向量知识库\"]\n    QDRANT ==> REPORT[\"候选报告人复核\"]\n    LIMIT[\"20k token裁剪\"] -.-> AGENT\n    LOCAL[\"全链路免费自建\"] -.-> AGENT\n    NOTFINAL[\"报告是起点非结论\"] -.-> REPORT",
+  "isSvg": false
+ }
+]

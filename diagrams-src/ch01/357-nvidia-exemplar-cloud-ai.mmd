@@ -1,0 +1,9 @@
+%% title: 训练集群性能诊断
+graph TD
+    GAP["同硬件差一成"] ==> CUM["每层几个点累积"]
+    CUM ==> C1["SMMU拖MoE"]
+    CUM ==> C2["C-state饿turbo"]
+    CUM ==> C3["NCCL参数看fabric"]
+    CUM ==> C4["容器丢拓扑静默"]
+    FIX["preflight逐层检查"] ==> CUM
+    INSIDE["容器内验环境"] -.-> C4
