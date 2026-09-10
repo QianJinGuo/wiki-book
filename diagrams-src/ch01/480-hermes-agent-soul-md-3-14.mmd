@@ -1,0 +1,7 @@
+%% title: SOUL.md 三层身份设计
+graph TD
+    LAYERS["三层提示词架构"] ==> CACHE["前缀缓存友好"]
+    CACHE ==> SCAN["注入扫描全拦截"]
+    SCAN ==> PERSONA["人格overlay非替换"]
+    PERSONA -->|"人归SOUL事归AGENTS"| SPLIT["职责分离准则"]
+    PROTECT["容器写保护防自改"] -.-> SPLIT

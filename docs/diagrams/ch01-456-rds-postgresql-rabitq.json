@@ -1,0 +1,7 @@
+[
+ {
+  "title": "RaBitQ 向量量化",
+  "code": "graph TD\n    COMPRESS[\"1bit32倍压缩\"] ==> BOUND[\"理论误差界可证\"]\n    BOUND -->|\"估计加精确重排\"| TWOSTAGE[\"两阶段搜索保召回\"]\n    TWOSTAGE ==> RESULT[\"索引16GB胜689GB\"]\n    ROT[\"随机旋转均摊信息\"] -.-> COMPRESS\n    SCENE[\"内存受限场景最优\"] -.-> RESULT",
+  "isSvg": false
+ }
+]

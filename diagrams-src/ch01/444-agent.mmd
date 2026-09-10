@@ -1,0 +1,7 @@
+%% title: 快手 KroWork 应用固化
+graph TD
+    FATIGUE["提示词疲劳四难题"] ==> SOLID["应用固化一次生成"]
+    SOLID -->|"本地零token"| DET["确定步骤由码保证"]
+    DET ==> SHARE["一键分享团队资产"]
+    PLAN["主动评估再执行"] -.-> SOLID
+    LOCAL["数据不出域沙箱"] -.-> DET

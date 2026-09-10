@@ -1,0 +1,7 @@
+[
+ {
+  "title": "开源模型三分类未来",
+  "code": "graph TD\n    THREE[\"闭源前沿开源前沿开源小\"] ==> SMALL[\"小模型分布式智能\"]\n    SMALL -->|\"LoRA多技能单基座\"| CHEAP[\"十倍快百倍便宜\"]\n    CHEAP ==> GAP[\"差距或扩大勿硬追\"]\n    VERT[\"闭源胜在垂直整合\"] -.-> GAP\n    GOOGLE[\"Google护城河教训\"] -.-> GAP\n    ECO[\"生态胜过静态模型\"] -.-> SMALL",
+  "isSvg": false
+ }
+]

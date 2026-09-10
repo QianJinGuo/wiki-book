@@ -1,0 +1,7 @@
+[
+ {
+  "title": "让 Agent 连跑几天",
+  "code": "graph TD\n    ROOTS[\"焦虑规划自评三败\"] ==> SDK[\"结构化SDK文件持久\"]\n    SDK ==> ADV[\"三角色对抗架构\"]\n    ADV -->|\"合同谈判定完成\"| CONTRACT[\"书面一致才开工\"]\n    CONTRACT ==> NIGHT[\"夜间六层控制环\"]\n    QUEUE[\"晨审队列新瓶颈\"] -.-> NIGHT\n    AESTH[\"审美量化评分表\"] -.-> ADV",
+  "isSvg": false
+ }
+]

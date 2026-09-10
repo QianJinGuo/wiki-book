@@ -1,0 +1,7 @@
+[
+ {
+  "title": "即将到来的循环",
+  "code": "graph TD\n    TWOLOOP[\"双层循环嵌套\"] ==> GOOD[\"移植安全已有效\"]\n    GOOD ==> RISK[\"持久码被放大\"]\n    RISK -->|\"防御性复杂堆积\"| ORGANISM[\"软件变有机体\"]\n    CANT[\"对手在循环躲不掉\"] -.-> ORGANISM\n    DEPEND[\"机器依赖型代码库\"] -.-> CANT\n    JUDGE[\"完成标准是难题\"] -.-> RISK",
+  "isSvg": false
+ }
+]

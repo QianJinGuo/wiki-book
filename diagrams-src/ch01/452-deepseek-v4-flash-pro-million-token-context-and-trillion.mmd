@@ -1,0 +1,7 @@
+%% title: V4 双版本百万上下文
+graph TD
+    TWO["Pro与Flash双版本"] ==> ATT["CSA加HCA双层压缩"]
+    ATT -->|"计算剩三成"| MHC["约束残差信号平稳"]
+    MHC ==> MUON["正交化优化器快收敛"]
+    MUON ==> BENCH["编码可肉搏闭源"]
+    DEPLOY["量化可四卡部署"] -.-> BENCH

@@ -1,0 +1,7 @@
+%% title: 岗位插件集拆解
+graph TD
+    COMP["四组件Skill核心"] ==> LOAD["三级加载省上下文"]
+    LOAD ==> MEM["两层记忆冷热晋升"]
+    MEM -->|"占位符解耦工具"| DUAL["独立增强双模"]
+    META["插件造插件元编程"] -.-> COMP
+    SEC["CI四维安全扫描"] -.-> COMP

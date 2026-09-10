@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AI 流量威胁报告",
+  "code": "graph TD\n    BOT[\"LLM拟人bot流量\"] ==> CRED[\"凭证填充精准化\"]\n    CRED ==> AD[\"广告欺诈全伪造\"]\n    AD ==> DEFENSE[\"防御同步AI化\"]\n    DEFENSE -->|\"模型对模型\"| RACE[\"军备竞赛循环\"]\n    MFA[\"MFA行为检测刚需\"] -.-> CRED",
+  "isSvg": false
+ }
+]

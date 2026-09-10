@@ -1,0 +1,8 @@
+%% title: 后端工程师转 AI Infra
+graph TD
+    SHIFT["CPU中心转GPU中心"] ==> TRAIN["训练三难存算传"]
+    TRAIN -->|"激活平方爆炸"| PARA["并行加通信重叠"]
+    PARA ==> INFER["推理四件套优化"]
+    INFER -->|"缓存批处理流式"| MAP["老方法映射新战场"]
+    MAINFRAME["AI大型机回归"] -.-> SHIFT
+    DENVIDIA["五年去N化预言"] -.-> MAP

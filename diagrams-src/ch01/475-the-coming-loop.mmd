@@ -1,0 +1,8 @@
+%% title: 即将到来的循环
+graph TD
+    TWOLOOP["双层循环嵌套"] ==> GOOD["移植安全已有效"]
+    GOOD ==> RISK["持久码被放大"]
+    RISK -->|"防御性复杂堆积"| ORGANISM["软件变有机体"]
+    CANT["对手在循环躲不掉"] -.-> ORGANISM
+    DEPEND["机器依赖型代码库"] -.-> CANT
+    JUDGE["完成标准是难题"] -.-> RISK

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "TamperedChef 集群追踪",
+  "code": "graph TD\n    AD[\"恶意广告假工具站\"] ==> TROJAN[\"木马化生产力软件\"]\n    TROJAN -->|\"潜伏数周激活\"| CERT[\"签名证书成线索\"]\n    CERT ==> CLUSTERS[\"三集群四千样本\"]\n    AI[\"AI站点非确定性\"] -.-> CLUSTERS\n    EULA[\"法律包装外衣\"] -.-> TROJAN",
+  "isSvg": false
+ }
+]

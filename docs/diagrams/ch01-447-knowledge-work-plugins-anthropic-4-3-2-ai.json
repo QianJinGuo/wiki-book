@@ -1,0 +1,7 @@
+[
+ {
+  "title": "岗位插件集拆解",
+  "code": "graph TD\n    COMP[\"四组件Skill核心\"] ==> LOAD[\"三级加载省上下文\"]\n    LOAD ==> MEM[\"两层记忆冷热晋升\"]\n    MEM -->|\"占位符解耦工具\"| DUAL[\"独立增强双模\"]\n    META[\"插件造插件元编程\"] -.-> COMP\n    SEC[\"CI四维安全扫描\"] -.-> COMP",
+  "isSvg": false
+ }
+]

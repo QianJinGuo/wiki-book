@@ -1,0 +1,7 @@
+[
+ {
+  "title": "后端工程师转 AI Infra",
+  "code": "graph TD\n    SHIFT[\"CPU中心转GPU中心\"] ==> TRAIN[\"训练三难存算传\"]\n    TRAIN -->|\"激活平方爆炸\"| PARA[\"并行加通信重叠\"]\n    PARA ==> INFER[\"推理四件套优化\"]\n    INFER -->|\"缓存批处理流式\"| MAP[\"老方法映射新战场\"]\n    MAINFRAME[\"AI大型机回归\"] -.-> SHIFT\n    DENVIDIA[\"五年去N化预言\"] -.-> MAP",
+  "isSvg": false
+ }
+]
