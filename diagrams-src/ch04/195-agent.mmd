@@ -1,0 +1,6 @@
+%% title: Agent 后端 B4A
+graph TD
+    BFF["BFF转B4A"] ==> CONTRACT["schema即机器契约"]
+    CONTRACT -->|"状态机加回放"| IDEM["幂等重试语义"]
+    IDEM ==> MERGE["harness与后端合流"]
+    GOV["工具治理网关限流"] -.-> MERGE

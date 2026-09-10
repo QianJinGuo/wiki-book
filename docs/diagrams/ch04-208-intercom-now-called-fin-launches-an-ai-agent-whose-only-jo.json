@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AI 管理 AI 首例",
+  "code": "graph TD\n    HIDDEN[\"幕后运维量爆炸\"] ==> OPERATOR[\"Agent管Agent\"]\n    OPERATOR -->|\"提案diff人审批\"| SEMI[\"半自动建信任\"]\n    SEMI ==> PRICING[\"计费转用量模式\"]\n    CLAUDE[\"任务不同模型不同\"] -.-> OPERATOR",
+  "isSvg": false
+ }
+]

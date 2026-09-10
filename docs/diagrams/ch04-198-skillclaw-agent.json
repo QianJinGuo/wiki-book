@@ -1,0 +1,7 @@
+[
+ {
+  "title": "SkillClaw 集体进化",
+  "code": "graph TD\n    STATIC[\"技能部署后静态\"] ==> EVOLVER[\"进化器三操作\"]\n    EVOLVER -->|\"成败会话联合析\"| NIGHT[\"夜间验证单调上线\"]\n    NIGHT ==> NACOS[\"注册治理与分发\"]\n    HETERO[\"提升按任务异质\"] -.-> NIGHT",
+  "isSvg": false
+ }
+]

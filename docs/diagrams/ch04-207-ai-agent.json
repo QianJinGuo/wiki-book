@@ -1,0 +1,7 @@
+[
+ {
+  "title": "三管道可观测体系",
+  "code": "graph TD\n    NONDET[\"非确定城墙不够\"] ==> THREEP[\"审计运行遥测三管道\"]\n    THREEP -->|\"发现定位证明\"| LINK[\"联动根因定位链\"]\n    LINK ==> EXPLICIT[\"安全策略显式化\"]\n    FORGET[\"压缩遗忘指令\"] -.-> EXPLICIT",
+  "isSvg": false
+ }
+]

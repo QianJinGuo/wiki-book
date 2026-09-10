@@ -1,0 +1,7 @@
+[
+ {
+  "title": "GitHub Agent 战略",
+  "code": "graph TD\n    GROWTH[\"提交量涨14倍\"] ==> BACKWARD[\"向后看综合流\"]\n    BACKWARD -->|\"微技能可重组\"| MICRO[\"微技能代大包\"]\n    MICRO ==> FLOOD[\"开源洪水新信任\"]\n    ACTIONS[\"Actions通用计算层\"] -.-> MICRO",
+  "isSvg": false
+ }
+]

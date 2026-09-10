@@ -1,0 +1,6 @@
+%% title: 分布式 Agent 运行时
+graph TD
+    NEED["agent非请求响应"] ==> FIVEC["五能力运行时"]
+    FIVEC -->|"checkpoint分支调试"| SUB["百万级调用 substrate"]
+    SUB ==> FEDERATED["联邦兼容多框架"]
+    OPEN["A2A开放防锁定"] -.-> FEDERATED

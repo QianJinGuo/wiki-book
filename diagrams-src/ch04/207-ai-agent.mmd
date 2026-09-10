@@ -1,0 +1,6 @@
+%% title: 三管道可观测体系
+graph TD
+    NONDET["非确定城墙不够"] ==> THREEP["审计运行遥测三管道"]
+    THREEP -->|"发现定位证明"| LINK["联动根因定位链"]
+    LINK ==> EXPLICIT["安全策略显式化"]
+    FORGET["压缩遗忘指令"] -.-> EXPLICIT

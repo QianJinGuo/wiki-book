@@ -1,0 +1,7 @@
+[
+ {
+  "title": "先做糟糕的 Agent",
+  "code": "graph TD\n    GRAVE[\"POC墓地过设计\"] ==> ONE[\"单点窄任务切入\"]\n    ONE -->|\"人审递减起步\"| LOUD[\"失败要响亮\"]\n    LOUD ==> EVIDENCE[\"凭数据加agent\"]\n    CRAWL[\"爬走跑迭代节奏\"] -.-> ONE",
+  "isSvg": false
+ }
+]

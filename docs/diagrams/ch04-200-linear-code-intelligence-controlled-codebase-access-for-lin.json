@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Linear 代码感知",
+  "code": "graph TD\n    CI[\"代码理解接入\"] ==> PERM[\"权限继承GitHub\"]\n    PERM -->|\"复用IAM免自建\"| ROLES[\"三角色各得利\"]\n    ROLES ==> PATH[\"agent从工具到队友\"]\n    VALID[\"未知参数报错不吞\"] -.-> PATH",
+  "isSvg": false
+ }
+]

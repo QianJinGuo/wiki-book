@@ -1,0 +1,7 @@
+[
+ {
+  "title": "安全建设正确顺序",
+  "code": "graph TD\n    WRONG[\"先安全后harness错序\"] ==> H1[\"一步harness先可靠\"]\n    H1 ==> G2[\"二步治理定边界\"]\n    G2 ==> I3[\"三步身份认证收口\"]\n    BORING[\"无聊但可靠是标准\"] -.-> H1\n    QUIET[\"安静失败最危险\"] -.-> WRONG",
+  "isSvg": false
+ }
+]

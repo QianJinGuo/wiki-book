@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Trace 即 Evals",
+  "code": "graph TD\n    THREEP[\"稳定成本评估三难\"] ==> TRACE[\"轨迹即评估数据\"]\n    TRACE -->|\"分叉点埋诊断\"| MATCH[\"Harness与模型匹配\"]\n    MATCH ==> STORE[\"JSON原生存trace\"]\n    STORE ==> RL[\"trace喂RL练模型\"]",
+  "isSvg": false
+ }
+]

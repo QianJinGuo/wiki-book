@@ -1,0 +1,7 @@
+[
+ {
+  "title": "CLI Agent 三层栈",
+  "code": "graph TD\n    MCP[\"MCP工具通用语\"] ==> SHELL[\"Shell进程编排\"]\n    SHELL -->|\"过滤器管道组合\"| RELY[\"可靠性五维定生产\"]\n    RELY ==> SANDBOX[\"沙箱与审计必备\"]\n    UNIX[\"Unix哲学复现\"] -.-> SHELL",
+  "isSvg": false
+ }
+]

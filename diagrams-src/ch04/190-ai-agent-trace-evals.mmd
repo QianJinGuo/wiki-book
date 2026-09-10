@@ -1,0 +1,6 @@
+%% title: Trace 即 Evals
+graph TD
+    THREEP["稳定成本评估三难"] ==> TRACE["轨迹即评估数据"]
+    TRACE -->|"分叉点埋诊断"| MATCH["Harness与模型匹配"]
+    MATCH ==> STORE["JSON原生存trace"]
+    STORE ==> RL["trace喂RL练模型"]

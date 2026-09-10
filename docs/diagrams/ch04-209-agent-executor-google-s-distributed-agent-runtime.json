@@ -1,0 +1,7 @@
+[
+ {
+  "title": "分布式 Agent 运行时",
+  "code": "graph TD\n    NEED[\"agent非请求响应\"] ==> FIVEC[\"五能力运行时\"]\n    FIVEC -->|\"checkpoint分支调试\"| SUB[\"百万级调用 substrate\"]\n    SUB ==> FEDERATED[\"联邦兼容多框架\"]\n    OPEN[\"A2A开放防锁定\"] -.-> FEDERATED",
+  "isSvg": false
+ }
+]

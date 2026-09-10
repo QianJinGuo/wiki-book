@@ -1,0 +1,7 @@
+[
+ {
+  "title": "编排控制面三要素",
+  "code": "graph TD\n    NOCTRL[\"无控制面可测死法\"] ==> THREEE[\"执行状态审批\"]\n    THREEE ==> MODES[\"四种编排模式\"]\n    MODES -->|\"一agent一窗口\"| GRAN[\"粒度以窗口为尺\"]\n    GRAN ==> GATE[\"关键决策挂审批门\"]",
+  "isSvg": false
+ }
+]

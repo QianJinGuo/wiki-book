@@ -1,0 +1,7 @@
+[
+ {
+  "title": "理赔 FNOL 自动化",
+  "code": "graph TD\n    NOVA[\"浏览器层管何时\"] ==> STRANDS[\"推理层管何意\"]\n    STRANDS -->|\"多模态证据标记\"| COMPLEXITY[\"复杂度分流\"]\n    COMPLEXITY ==> SIGNAL[\"标记成操作信号\"]\n    AUDIT[\"截图即合规证据\"] -.-> NOVA",
+  "isSvg": false
+ }
+]

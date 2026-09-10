@@ -1,0 +1,6 @@
+%% title: SkillClaw 集体进化
+graph TD
+    STATIC["技能部署后静态"] ==> EVOLVER["进化器三操作"]
+    EVOLVER -->|"成败会话联合析"| NIGHT["夜间验证单调上线"]
+    NIGHT ==> NACOS["注册治理与分发"]
+    HETERO["提升按任务异质"] -.-> NIGHT

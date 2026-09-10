@@ -1,0 +1,6 @@
+%% title: 编排控制面三要素
+graph TD
+    NOCTRL["无控制面可测死法"] ==> THREEE["执行状态审批"]
+    THREEE ==> MODES["四种编排模式"]
+    MODES -->|"一agent一窗口"| GRAN["粒度以窗口为尺"]
+    GRAN ==> GATE["关键决策挂审批门"]

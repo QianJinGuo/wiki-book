@@ -1,0 +1,6 @@
+%% title: Linear 代码感知
+graph TD
+    CI["代码理解接入"] ==> PERM["权限继承GitHub"]
+    PERM -->|"复用IAM免自建"| ROLES["三角色各得利"]
+    ROLES ==> PATH["agent从工具到队友"]
+    VALID["未知参数报错不吞"] -.-> PATH

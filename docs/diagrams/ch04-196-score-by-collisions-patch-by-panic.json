@@ -1,0 +1,7 @@
+[
+ {
+  "title": "碰撞计数新范式",
+  "code": "graph TD\n    LINUS[\"AI发现他人也发现\"] ==> COUNT[\"碰撞计数定严重级\"]\n    COUNT -->|\"假设已在野利用\"| PATCH[\"附补丁积信任\"]\n    PATCH ==> IMMUNE[\"架构免疫代竞速\"]\n    TEMP[\"临时架构抗持久化\"] -.-> IMMUNE",
+  "isSvg": false
+ }
+]
