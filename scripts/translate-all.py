@@ -40,7 +40,7 @@ UPSTREAM = "https://token.sensenova.cn/v1/chat/completions"
 MODEL = os.environ.get("SENSENOVA_MODEL", "deepseek-v4-flash")
 BATCH_CHARS = 3200
 BATCH_ITEMS = 40
-CONCURRENCY = 8
+CONCURRENCY = 4
 RETRY_DELAYS = [5, 15, 30]
 
 SKIP_TAGS = {"script", "style", "noscript", "pre", "code", "kbd", "samp",
