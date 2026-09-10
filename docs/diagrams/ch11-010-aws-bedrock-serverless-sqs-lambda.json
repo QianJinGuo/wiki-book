@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Bedrock Serverless 异步推理（导航）",
+  "code": "graph TD\n    MULTI[\"十组件多租户实践\"] ==> POOL[\"池模型多租户三级隔离\"]\n    POOL -->|\"RLM突破上下文窗口\"| ASYNC[\"异步推理避免空闲成本\"]\n    ASYNC ==>|\"MicroVM沙箱原语\"| MV[\"VM级隔离挂起恢复\"]\n    MV -.->|\"五种渐进弹性模式\"| GW[\"LLM Gateway推理弹性\"]\n    GW ==>|\"四种MCP架构渐进迁移\"| MCP[\"企业级MCP服务器\"]",
+  "isSvg": false
+ }
+]

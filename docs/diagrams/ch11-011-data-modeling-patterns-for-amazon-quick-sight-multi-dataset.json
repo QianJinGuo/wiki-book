@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Quick Sight 多数据集关系模式",
+  "code": "graph TD\n    FACT[\"SALES_FACT事实表\"] ==>|\"customer/product/time/store\"| STAR[\"星型模式单跳连接\"]\n    STAR ==>|\"inner join仅匹配行\"| RUNTIME[\"运行时按需连接\"]\n    RUNTIME -.->|\"每组含表结构用例与SQL\"| SEVEN[\"七种受支持模式\"]\n    SEVEN -.->|\"维度反规范化\"| GROUP[\"快速GROUP BY免额外join\"]\n    GROUP ==>|\"高级场景\"| WORK[\"额外建模变通方案\"]",
+  "isSvg": false
+ }
+]

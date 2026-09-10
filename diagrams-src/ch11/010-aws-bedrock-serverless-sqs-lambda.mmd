@@ -1,0 +1,7 @@
+%% title: Bedrock Serverless 异步推理（导航）
+graph TD
+    MULTI["十组件多租户实践"] ==> POOL["池模型多租户三级隔离"]
+    POOL -->|"RLM突破上下文窗口"| ASYNC["异步推理避免空闲成本"]
+    ASYNC ==>|"MicroVM沙箱原语"| MV["VM级隔离挂起恢复"]
+    MV -.->|"五种渐进弹性模式"| GW["LLM Gateway推理弹性"]
+    GW ==>|"四种MCP架构渐进迁移"| MCP["企业级MCP服务器"]

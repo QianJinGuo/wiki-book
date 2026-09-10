@@ -1,0 +1,6 @@
+%% title: OpenClaw 电商卖家助手实践
+graph TD
+    COMPILE["编译型需工程排期"] ==>|"解释型分钟级生效"| SKILL["运营写SKILL.md即上线"]
+    SKILL ==>|"per-tenant Pod隔离"| MULTI["EFS Access Point限千"]
+    MULTI -.->|"prompt cache省80-90%"| COST["$190优化到$45每商家"]
+    COST ==>|"高危操作业务API二次确认"| SAFE["AI层与业务层各司其职"]

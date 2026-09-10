@@ -1,0 +1,7 @@
+%% title: OpenClaw 迁移 AgentCore 多租户（一）
+graph TD
+    SINGLE["单机个人工具"] ==>|"7R策略"| RE["Replatform换运行时"]
+    RE ==>|"Refactor架构重构"| VM["Per-Session microVM隔离"]
+    VM ==>|"Cognito JWT+STS临时凭证"| SEC["用户间不横向越权"]
+    SEC -.->|"每5分钟同步S3"| SYNC["无状态容器工作区恢复"]
+    SYNC ==>|"ARM64 Graviton构建"| CDK["CDK三阶段部署"]

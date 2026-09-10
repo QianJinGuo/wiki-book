@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Netflix Cassandra 数据搬迁演进",
+  "code": "graph TD\n    BRIDGE[\"Data Bridge统一管理面\"] ==>|\"目录化连接器\"| CASS[\"Casspactor引擎\"]\n    CASS ==>|\"每日1200次搬迁3PB\"| BACKUP[\"复用备份基础设施\"]\n    BACKUP -->|\"sidecar上传SSTable\"| S3[\"S3中转+元数据定位\"]\n    S3 -.->|\"变异压缩后写入\"| ICE[\"目标Iceberg表\"]\n    CASS -.->|\"KeyValue时序图抽象涌现\"| GROW[\"更复杂数据搬迁需求\"]",
+  "isSvg": false
+ }
+]

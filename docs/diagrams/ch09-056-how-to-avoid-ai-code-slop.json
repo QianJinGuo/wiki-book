@@ -1,0 +1,7 @@
+[
+ {
+  "title": "如何避免 AI 代码 Slop",
+  "code": "graph TD\n    GAP[\"生成10倍快于审查\"] ==>|\"六种slop形态\"| SLOP[\"似是而非逻辑难辨\"]\n    SLOP ==>|\"通过视觉测试\"| SPEC[\"spec先行审意图\"]\n    SPEC ==>|\"14条验收标准65检查项\"| AGENT[\"第二agent6分钟验证\"]\n    AGENT -.->|\"spec抓设计代码抓约定\"| BOTH[\"两种审查互补\"]\n    BOTH -.->|\"每库建Slop Register\"| REG[\"失败模式回灌提示词\"]",
+  "isSvg": false
+ }
+]

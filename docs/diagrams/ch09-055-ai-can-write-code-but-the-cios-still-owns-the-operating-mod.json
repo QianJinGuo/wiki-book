@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AI 能写代码但 CIO 掌握运营模型",
+  "code": "graph TD\n    SHADOW[\"业务自下而上采纳\"] ==>|\"IT视角即ShadowIT\"| THREE[\"三问评估框架\"]\n    THREE ==>|\"访问什么数据执行什么操作\"| RISK[\"风险分级治理\"]\n    RISK -->|\"读取总结到动生产环境\"| TIER[\"四级门槛递增\"]\n    TIER -.->|\"关键决策不悄然自动化\"| HITL[\"human-in-the-loop兜底\"]\n    HITL ==>|\"快速推进而非说不\"| GOV[\"分级治理路径\"]",
+  "isSvg": false
+ }
+]

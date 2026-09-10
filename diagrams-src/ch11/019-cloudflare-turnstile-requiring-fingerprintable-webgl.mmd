@@ -1,0 +1,7 @@
+%% title: Cloudflare Turnstile 强制 WebGL 指纹
+graph TD
+    TURN["Turnstile人机验证"] ==>|"WebGL采集设备指纹"| LOOP["WebKitGTK无限循环"]
+    LOOP ==>|"越隐私越可疑"| LOGIC["循环论证辩护"]
+    LOGIC -.->|"WebKit屏蔽多年Safari例外"| DOUBLE["封禁隐私浏览器双标"]
+    DOUBLE -->|"Firefox泄露GPU特性"| LEAK["Bugzilla1916271"]
+    TURN -.->|"严格模式也未默认开启"| LEAK

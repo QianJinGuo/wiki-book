@@ -1,0 +1,7 @@
+%% title: Claude Code 全自动修 Bug 配置
+graph TD
+    NOMEM["跨会话无记忆"] ==>|"六层配置体系"| RULES["CLAUDE.md 12条200行"]
+    RULES ==>|"PostToolUse即时捕捉"| HOOK["格式化+类型检查"]
+    HOOK -.->|"Stop时验证stop_hook_active"| GATE["质量门禁防死循环"]
+    GATE -.->|"PreToolUse拦.env写入"| RETRY["失败重试上限3次"]
+    RETRY ==>|"错误固化成规则"| MEM["三层跨会话记忆"]

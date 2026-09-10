@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AgentCore+Strands 企业级智能搜索",
+  "code": "graph TD\n    STRANDS[\"Strands模型驱动Agent\"] ==>|\"部署在Runtime\"| GATEWAY[\"Gateway转MCP工具\"]\n    GATEWAY ==>|\"SmartSearch与全文搜索\"| MEM[\"AgentCore Memory双层\"]\n    MEM -.->|\"短期事件+长期偏好\"| PERSONA[\"千人千面个性化\"]\n    PERSONA ==>|\"框架无关兼容\"| ECO[\"CrewAI/LangGraph可换\"]\n    GATEWAY -.->|\"Serverless免运维\"| SCALE[\"快速冷启动会话隔离\"]",
+  "isSvg": false
+ }
+]

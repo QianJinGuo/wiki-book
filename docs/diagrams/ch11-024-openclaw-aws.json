@@ -1,0 +1,7 @@
+[
+ {
+  "title": "OpenClaw 电商卖家助手实践",
+  "code": "graph TD\n    COMPILE[\"编译型需工程排期\"] ==>|\"解释型分钟级生效\"| SKILL[\"运营写SKILL.md即上线\"]\n    SKILL ==>|\"per-tenant Pod隔离\"| MULTI[\"EFS Access Point限千\"]\n    MULTI -.->|\"prompt cache省80-90%\"| COST[\"$190优化到$45每商家\"]\n    COST ==>|\"高危操作业务API二次确认\"| SAFE[\"AI层与业务层各司其职\"]",
+  "isSvg": false
+ }
+]

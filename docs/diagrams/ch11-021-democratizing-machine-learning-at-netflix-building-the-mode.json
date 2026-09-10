@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Netflix 模型生命周期图谱",
+  "code": "graph TD\n    ONE[\"十年前专注个性化\"] ==>|\"ML成业务转型骨干\"| MANY[\"多领域模型爆发\"]\n    MANY ==>|\"模型成黑盒不可见\"| GRAPH[\"模型生命周期图谱\"]\n    GRAPH -.->|\"跨域模型数据交叉授粉\"| DEMO[\"ML平民化目标\"]\n    ONE -.->|\"Scala小团队时代\"| MANY",
+  "isSvg": false
+ }
+]

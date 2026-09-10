@@ -1,0 +1,7 @@
+%% title: Bedrock 模型推理 Serverless（导航）
+graph TD
+    MANTLE["Mantle引擎+LiteLLM网关"] ==>|"token theft防御"| ECON["推理盗用经济学"]
+    ECON -->|"池模型三级隔离"| MULTI["多租户架构"]
+    MULTI ==>|"Cedar策略+Lambda拦截器"| SECURE["Gateway双模式安全"]
+    SECURE -.->|"S2S单次往返"| SONIC["Nova 2 Sonic语音"]
+    SONIC ==>|"A2A网关三层"| A2A["发现路由访问控制"]
