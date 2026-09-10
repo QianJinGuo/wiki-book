@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Harness 核心模式导览",
+  "code": "graph TD\n    HE[\"Harness核心模式\"] ==> THEORY[\"机制区\"]\n    THEORY -->|\"万字科普\"| POP[\"全景科普版\"]\n    THEORY -->|\"源码八步循环\"| CC[\"Claude Code范本\"]\n    HE ==> PRAC[\"实践区\"]\n    PRAC -->|\"可删工作现场\"| DEL[\"删八成工具成功率升\"]\n    PRAC -->|\"13模式大库落地\"| TEAM[\"团队扩展策略\"]",
+  "isSvg": false
+ }
+]

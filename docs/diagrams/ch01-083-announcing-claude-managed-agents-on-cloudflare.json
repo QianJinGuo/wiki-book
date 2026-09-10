@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Managed Agents 上 Cloudflare",
+  "code": "graph TD\n    BRAIN[\"脑Anthropic推理循环\"] ==> HAND[\"手Cloudflare执行沙箱\"]\n    HAND -->|\"V8 isolate毫秒起\"| SCALE[\"单VM数千并发隔离\"]\n    PROXY[\"零信任出站代理\"] ==> HAND\n    PROXY -->|\"动态注入凭证\"| NOLEAK[\"防数据外泄\"]\n    TOOLS[\"内置浏览器邮件工具\"] -.-> HAND\n    ZOD[\"Zod自定义工具扩展\"] -.-> TOOLS",
+  "isSvg": false
+ }
+]

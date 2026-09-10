@@ -1,0 +1,7 @@
+[
+ {
+  "title": "OpenClaw 多智能体团队搭建",
+  "code": "graph TD\n    OC[\"OpenClaw多智能体团队\"] ==> MECH[\"机制层Harness理论\"]\n    MECH -->|\"源码八步循环\"| SRC[\"Claude Code范本\"]\n    OC ==> PRAC[\"实践层团队工程\"]\n    PRAC -->|\"记忆写入纪律\"| MEM[\"存之有序\"]\n    PRAC -->|\"调度与休眠唤醒\"| OPS[\"成本降九成\"]\n    NAV[\"延伸Agent全景地图\"] -.-> OC",
+  "isSvg": false
+ }
+]

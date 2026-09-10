@@ -1,0 +1,7 @@
+[
+ {
+  "title": "LLM 强化学习方法谱系",
+  "code": "graph TD\n    RL[\"PPO到GRPO到MARL\"] ==> PAPER[\"机制与论文区\"]\n    PAPER -->|\"OPD失败模式\"| OPD[\"简单修复低成本稳训\"]\n    PAPER -->|\"蒸馏恐慌分析\"| DIST[\"术语政策之争\"]\n    RL ==> PRAC[\"工程实践区\"]\n    PRAC -->|\"数据级Harness\"| DATA[\"分析自动化范式\"]\n    PRAC -->|\"记忆写入纪律\"| MEM[\"工程沉淀\"]",
+  "isSvg": false
+ }
+]

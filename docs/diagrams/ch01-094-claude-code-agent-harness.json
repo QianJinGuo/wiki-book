@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Agent Harness 构建之道导览",
+  "code": "graph TD\n    H[\"Harness构建之道\"] ==> PAPER[\"机制论文区\"]\n    PAPER -->|\"模型加Harness联合\"| JOINT[\"联合优化观\"]\n    PAPER -->|\"RLM双抽象\"| RLM[\"自改进编码Harness\"]\n    H ==> PRAC[\"工程实践区\"]\n    PRAC -->|\"留纸条抠上下文缓存\"| MULTI[\"多Agent协作技巧\"]\n    PRAC -->|\"5个清楚胜20个模糊\"| TOOLTAX[\"工具税边界设计\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Code 源码机制导览",
+  "code": "graph TD\n    CC[\"两万字源码核心机制\"] ==> LOOP[\"机制区八步循环\"]\n    LOOP -->|\"压缩Skills子代理\"| NEXT[\"Claude Code演进\"]\n    LOOP -->|\"记忆系统对比\"| MEM[\"OpenClaw对照\"]\n    CC ==> PRAC[\"实践区\"]\n    PRAC -->|\"可控性硬约束\"| CTRL[\"软规则治理边界\"]\n    PRAC -->|\"Routines主动模式\"| ROUT[\"从工具到队友\"]",
+  "isSvg": false
+ }
+]

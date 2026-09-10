@@ -1,0 +1,8 @@
+%% title: LLM 强化学习方法谱系
+graph TD
+    RL["PPO到GRPO到MARL"] ==> PAPER["机制与论文区"]
+    PAPER -->|"OPD失败模式"| OPD["简单修复低成本稳训"]
+    PAPER -->|"蒸馏恐慌分析"| DIST["术语政策之争"]
+    RL ==> PRAC["工程实践区"]
+    PRAC -->|"数据级Harness"| DATA["分析自动化范式"]
+    PRAC -->|"记忆写入纪律"| MEM["工程沉淀"]

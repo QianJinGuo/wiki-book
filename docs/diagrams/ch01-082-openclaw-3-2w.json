@@ -1,0 +1,7 @@
+[
+ {
+  "title": "OpenClaw 指南结构导览",
+  "code": "graph TD\n    HUB[\"OpenClaw指南枢纽\"] ==> MECH[\"机制区Harness与JEPA\"]\n    MECH -->|\"八步循环源码\"| CC[\"Claude Code范本\"]\n    HUB ==> PRAC[\"实践区安全与调度\"]\n    PRAC -->|\"Cedar策略拦截器\"| SEC[\"Agent安全双模式\"]\n    PRAC -->|\"休眠唤醒调度\"| COST[\"动态成本优化\"]\n    NAV[\"MOC延伸导航\"] -.-> HUB",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "olmo-eval 评估工作台",
+  "code": "graph TD\n    DEV[\"为开发循环非排行榜\"] ==> MDE[\"标准误差加逐题对比\"]\n    TASK[\"Task定义评什么\"] ==> SUITE[\"Suite组合标准集\"]\n    SUITE ==> HAR[\"Harness控制怎么跑\"]\n    HAR -->|\"scaffold可切换\"| AGENT[\"agentic评估一等公民\"]\n    LIGHT[\"轻量直跑沙箱按需\"] -.-> HAR\n    OLMES[\"OLMES标准化延伸\"] -.-> TASK",
+  "isSvg": false
+ }
+]

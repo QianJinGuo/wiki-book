@@ -1,0 +1,8 @@
+%% title: Claude Managed Agents 上 Cloudflare
+graph TD
+    BRAIN["脑Anthropic推理循环"] ==> HAND["手Cloudflare执行沙箱"]
+    HAND -->|"V8 isolate毫秒起"| SCALE["单VM数千并发隔离"]
+    PROXY["零信任出站代理"] ==> HAND
+    PROXY -->|"动态注入凭证"| NOLEAK["防数据外泄"]
+    TOOLS["内置浏览器邮件工具"] -.-> HAND
+    ZOD["Zod自定义工具扩展"] -.-> TOOLS

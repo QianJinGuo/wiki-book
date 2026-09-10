@@ -1,0 +1,8 @@
+%% title: DeepSeek V4 对测 Claude Opus
+graph TD
+    SPEC["FlowGraph二十端点租约"] ==> SCORE["Opus91 Pro77 Flash60"]
+    BUG["租约过期仍能完成"] -.->|"全系共性弱点"| SCORE
+    ROUTE["Flash路由挂错404"] ==> GAP["测试过实际不可用"]
+    GAP -.->|"审查查真实路径"| SCORE
+    TOOL["Flash工具调用稳健"] ==> COST["2美分一次尝试"]
+    COST -->|"比Kimi便宜30倍"| ITER["便宜到可多轮试错"]
