@@ -1,0 +1,7 @@
+%% title: 黄金指标到 Rubric
+graph TD
+    GOLDEN["黄金指标定好坏"] ==> RUBRIC["拆分档权重公式"]
+    RUBRIC -->|"规则确定语义用模型"| TASK["评估器任务两层"]
+    TASK ==> EVIDENCE["输出带证据可解释"]
+    EVIDENCE ==> FLYWHEEL["badcase喂回测"]
+    VERSION["rubric留版本号"] -.-> RUBRIC

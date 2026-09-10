@@ -1,0 +1,7 @@
+%% title: 多智能体交易系统
+graph TD
+    ANALYSTS["四分析师并行收集"] ==> DEBATE["多空对抗辩论"]
+    DEBATE -->|"主管综合策略"| RISK["三视角风控辩论"]
+    RISK ==> PM["组合经理终审"]
+    MEM["各角色独立记忆库"] -.-> ANALYSTS
+    SIGNAL["决策提机器可读"] -.-> PM

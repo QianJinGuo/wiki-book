@@ -1,0 +1,7 @@
+[
+ {
+  "title": "多区域 GPU 调度",
+  "code": "graph TD\n    PAIN[\"扩容不可测\"] ==> LOOP[\"计划执行观察再计划\"]\n    LOOP -->|\"错误分类定策略\"| STATE[\"状态机单调推进\"]\n    STATE ==> HITL[\"三级阈值触发人审\"]\n    HITL ==> MEM[\"调度经验入长记忆\"]\n    RULE[\"规则引擎陷泥潭\"] -.-> LOOP",
+  "isSvg": false
+ }
+]

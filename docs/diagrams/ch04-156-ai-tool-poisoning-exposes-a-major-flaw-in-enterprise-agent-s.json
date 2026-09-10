@@ -1,0 +1,7 @@
+[
+ {
+  "title": "工具投毒行为完整性",
+  "code": "graph TD\n    COLLAPSE[\"元数据指令边界崩\"] ==> FOUR[\"四类攻击向量\"]\n    FOUR -->|\"签名验不了行为\"| INTEGRITY[\"工件完整非行为完整\"]\n    INTEGRITY ==> PROXY[\"验证代理三层校验\"]\n    LAYERED[\"分层按风险部署\"] -.-> PROXY",
+  "isSvg": false
+ }
+]

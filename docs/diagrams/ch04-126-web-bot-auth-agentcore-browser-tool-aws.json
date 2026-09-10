@@ -1,0 +1,7 @@
+[
+ {
+  "title": "可信机器人身份",
+  "code": "graph TD\n    PAIN[\"越智能越被误判\"] ==> WBA[\"公钥目录加签名\"]\n    WBA -->|\"加密证明身份\"| COOP[\"从绕过转向合作\"]\n    COOP ==> ECO[\"WAF与框架跟进\"]\n    GRAY[\"防绕过方案脆弱\"] -.-> WBA",
+  "isSvg": false
+ }
+]

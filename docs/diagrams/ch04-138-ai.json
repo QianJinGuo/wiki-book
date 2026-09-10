@@ -1,0 +1,7 @@
+[
+ {
+  "title": "从检索到上下文操作",
+  "code": "graph TD\n    SHIFT[\"上下文权归agent\"] ==> ANCHOR[\"代码符号高精锚点\"]\n    ANCHOR -->|\"工作集非聊天记录\"| SUB[\"子代理隔离低密度\"]\n    SUB ==> LAYERS[\"上下文四层分层\"]\n    LAYERS ==> BOUNDARY[\"架构师定四边界\"]\n    HARNESS8[\"Harness八层缺一不可\"] -.-> BOUNDARY",
+  "isSvg": false
+ }
+]

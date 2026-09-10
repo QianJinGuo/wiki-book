@@ -1,0 +1,7 @@
+%% title: AI 流量四层检测
+graph TD
+    ID["身份层可伪造"] ==> NET["网络层指纹交叉验"]
+    NET ==> BROWSER["浏览器层环境一致"]
+    BROWSER ==> BEHAVIOR["行为层叠加画像"]
+    BEHAVIOR -->|"意图分类非二元"| INTENT["风险评分代封禁"]
+    CONSUMER["消费级agent涨15倍"] -.-> INTENT

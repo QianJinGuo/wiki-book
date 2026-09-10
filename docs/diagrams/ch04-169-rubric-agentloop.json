@@ -1,0 +1,7 @@
+[
+ {
+  "title": "黄金指标到 Rubric",
+  "code": "graph TD\n    GOLDEN[\"黄金指标定好坏\"] ==> RUBRIC[\"拆分档权重公式\"]\n    RUBRIC -->|\"规则确定语义用模型\"| TASK[\"评估器任务两层\"]\n    TASK ==> EVIDENCE[\"输出带证据可解释\"]\n    EVIDENCE ==> FLYWHEEL[\"badcase喂回测\"]\n    VERSION[\"rubric留版本号\"] -.-> RUBRIC",
+  "isSvg": false
+ }
+]

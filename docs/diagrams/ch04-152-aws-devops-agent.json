@@ -1,0 +1,7 @@
+[
+ {
+  "title": "网络故障自主调查",
+  "code": "graph TD\n    WEBHOOK[\"告警webhook触发\"] ==> EVIDENCE[\"并行多源收证据\"]\n    EVIDENCE ==> RCA[\"时间线根因修复三件\"]\n    RCA -->|\"控制面好数据面黑\"| PROBE[\"端到端探测必配\"]\n    READONLY[\"只读调查不执行\"] -.-> RCA\n    CUSTOM[\"自建分钟级指标\"] -.-> EVIDENCE",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "游戏运维 Agent",
+  "code": "graph TD\n    CHALLENGE[\"波浪负载小团队\"] ==> DUAL[\"告警与对话双通道\"]\n    DUAL -->|\"告警自动调查\"| RCA[\"修复时间降八成\"]\n    RCA ==> GITHUB[\"关联变更找根因\"]\n    GITHUB ==> PREVENT[\"每周主动防护建议\"]\n    LARK[\"飞书长连接免公网\"] -.-> DUAL",
+  "isSvg": false
+ }
+]

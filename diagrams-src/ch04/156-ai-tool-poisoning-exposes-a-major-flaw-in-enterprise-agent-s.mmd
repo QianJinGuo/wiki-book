@@ -1,0 +1,6 @@
+%% title: 工具投毒行为完整性
+graph TD
+    COLLAPSE["元数据指令边界崩"] ==> FOUR["四类攻击向量"]
+    FOUR -->|"签名验不了行为"| INTEGRITY["工件完整非行为完整"]
+    INTEGRITY ==> PROXY["验证代理三层校验"]
+    LAYERED["分层按风险部署"] -.-> PROXY

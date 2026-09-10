@@ -1,0 +1,7 @@
+%% title: 多区域 GPU 调度
+graph TD
+    PAIN["扩容不可测"] ==> LOOP["计划执行观察再计划"]
+    LOOP -->|"错误分类定策略"| STATE["状态机单调推进"]
+    STATE ==> HITL["三级阈值触发人审"]
+    HITL ==> MEM["调度经验入长记忆"]
+    RULE["规则引擎陷泥潭"] -.-> LOOP

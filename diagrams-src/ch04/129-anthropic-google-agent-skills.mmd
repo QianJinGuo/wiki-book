@@ -1,0 +1,8 @@
+%% title: 五种 Skill 模式详解
+graph TD
+    WRAP["包装知识按需载"] ==> GEN["生成模板稳输出"]
+    GEN ==> REV["审查流程清单分离"]
+    REV ==> INV["反转先采访后生成"]
+    INV ==> PIPE["管线检查点防跳步"]
+    ASSET["Skill是过程资产"] -.-> WRAP
+    TRUST["分级信任社区存疑"] -.-> PIPE

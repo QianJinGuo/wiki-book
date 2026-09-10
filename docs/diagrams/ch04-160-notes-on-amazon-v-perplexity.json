@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Amazon 诉 Perplexity",
+  "code": "graph TD\n    SUIT[\"未授权访问指控\"] ==> INJECT[\"注入是根本挑战\"]\n    INJECT -->|\"共享上下文双刃\"| UA[\"UA伪装有史语境\"]\n    UA ==> TENSION[\"用户代理对站控制\"]\n    TENSION ==> OPENWEB[\"判决波及开放网\"]",
+  "isSvg": false
+ }
+]

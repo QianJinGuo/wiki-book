@@ -1,0 +1,7 @@
+[
+ {
+  "title": "多智能体交易系统",
+  "code": "graph TD\n    ANALYSTS[\"四分析师并行收集\"] ==> DEBATE[\"多空对抗辩论\"]\n    DEBATE -->|\"主管综合策略\"| RISK[\"三视角风控辩论\"]\n    RISK ==> PM[\"组合经理终审\"]\n    MEM[\"各角色独立记忆库\"] -.-> ANALYSTS\n    SIGNAL[\"决策提机器可读\"] -.-> PM",
+  "isSvg": false
+ }
+]

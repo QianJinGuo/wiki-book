@@ -1,0 +1,7 @@
+[
+ {
+  "title": "本体论语义控制面",
+  "code": "graph TD\n    FOURL[\"证据事实语义动作\"] ==> CLAIM[\"主张账本带状态源\"]\n    CLAIM -->|\"候选到发布到撤回\"| REASON[\"推理校验授权三分\"]\n    REASON ==> MODELPOS[\"模型提议不裁断\"]\n    OPENW[\"缺失当未知非错\"] -.-> REASON\n    SPLIT[\"五动作拆五接口\"] -.-> CLAIM",
+  "isSvg": false
+ }
+]

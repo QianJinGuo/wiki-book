@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Skills 式知识检索",
+  "code": "graph TD\n    RIGID[\"预索引分块刚性\"] ==> AGENTR[\"渐进披露式检索\"]\n    AGENTR -->|\"领域文件再段落\"| DIFF[\"按格式差异化策略\"]\n    DIFF ==> LIMITS[\"PDF慢token耗大\"]\n    DIRS[\"按领域分目录\"] -.-> AGENTR",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+%% title: 游戏运维 Agent
+graph TD
+    CHALLENGE["波浪负载小团队"] ==> DUAL["告警与对话双通道"]
+    DUAL -->|"告警自动调查"| RCA["修复时间降八成"]
+    RCA ==> GITHUB["关联变更找根因"]
+    GITHUB ==> PREVENT["每周主动防护建议"]
+    LARK["飞书长连接免公网"] -.-> DUAL
