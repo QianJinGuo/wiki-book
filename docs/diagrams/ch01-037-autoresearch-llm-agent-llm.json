@@ -1,7 +1,0 @@
-[
- {
-  "title": "AutoResearch-LLM",
-  "code": "graph TD\n    CORE[\"AutoResearch-LLM\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
-  "isSvg": false
- }
-]

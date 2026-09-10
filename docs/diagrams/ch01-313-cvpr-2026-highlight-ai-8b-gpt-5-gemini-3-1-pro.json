@@ -1,7 +1,0 @@
-[
- {
-  "title": "CVPR 2026 Highlight｜让AI像电影人一样「看」视频，",
-  "code": "graph TD\n    A[\"核心要点\"] ==> B[\"相关实体\"]\n    B ==> C[\"深度分析\"]\n    C ==> D[\"实践启示\"]\n    D ==> SUM[\"总结与实践启示\"]",
-  "isSvg": false
- }
-]

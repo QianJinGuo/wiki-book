@@ -1,7 +1,0 @@
-[
- {
-  "title": "Guide to Security Operations at Mac",
-  "code": "graph TD\n    A[\"核心要点\"] ==> B[\"深度分析\"]\n    B ==> C[\"实践启示\"]\n    C ==> D[\"相关实体\"]\n    D ==> SUM[\"总结与实践启示\"]",
-  "isSvg": false
- }
-]

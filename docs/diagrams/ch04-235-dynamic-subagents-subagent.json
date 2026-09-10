@@ -1,7 +1,0 @@
-[
- {
-  "title": "Dynamic Subagents: 代码驱动的 Subagent 编",
-  "code": "graph TD\n    A[\"摘要\"] ==> B[\"核心要点\"]\n    B ==> C[\"实践启示\"]\n    C ==> D[\"相关实体\"]\n    D ==> SUM[\"总结与实践启示\"]",
-  "isSvg": false
- }
-]

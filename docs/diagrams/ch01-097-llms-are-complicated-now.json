@@ -1,7 +1,0 @@
-[
- {
-  "title": "LLMs are complicated now",
-  "code": "graph TD\n    CORE[\"LLMs are complicated now\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
-  "isSvg": false
- }
-]

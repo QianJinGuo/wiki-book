@@ -1,7 +1,0 @@
-[
- {
-  "title": "小刘商业 Agent 增强层通用基座",
-  "code": "graph TD\n    A[\"Ai Xiaolaoliu Business Agent A\"] ==> B[\"深度分析\"]\n    B ==> C[\"相关实体\"]\n    C ==> SUM[\"总结与实践启示\"]",
-  "isSvg": false
- }
-]

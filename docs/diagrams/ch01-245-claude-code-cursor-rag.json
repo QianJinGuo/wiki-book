@@ -1,7 +1,0 @@
-[
- {
-  "title": "向量数据库已死，Claude Code、Cursor 为什么集体抛弃",
-  "code": "graph TD\n    A[\"摘要\"] ==> B[\"核心要点\"]\n    B ==> C[\"实践启示\"]\n    C ==> D[\"相关实体\"]\n    D ==> SUM[\"总结与实践启示\"]",
-  "isSvg": false
- }
-]

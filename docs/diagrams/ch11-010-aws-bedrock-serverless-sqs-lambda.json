@@ -1,7 +1,0 @@
-[
- {
-  "title": "AWS Bedrock Serverless 异步推理",
-  "code": "graph TD\n    CORE[\"AWS Bedrock Serverless 异步推理\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
-  "isSvg": false
- }
-]

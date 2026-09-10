@@ -1,7 +1,0 @@
-[
- {
-  "title": "AI Skill 测评指标体系",
-  "code": "graph TD\n    CORE[\"AI Skill 测评指标体系\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
-  "isSvg": false
- }
-]

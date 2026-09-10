@@ -1,7 +1,0 @@
-[
- {
-  "title": "System Over Model, Tested: Reproduc",
-  "code": "graph TD\n    CORE[\"System Over Model, Tested: Reproduc\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
-  "isSvg": false
- }
-]

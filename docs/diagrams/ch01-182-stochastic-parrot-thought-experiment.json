@@ -1,7 +1,0 @@
-[
- {
-  "title": "Stochastic Parrot Thought Experimen",
-  "code": "graph TD\n    A[\"A Thought Experiment\"] ==> B[\"相关实体\"]\n    B ==> C[\"深度分析\"]\n    C ==> D[\"实践启示\"]\n    D ==> SUM[\"总结与实践启示\"]",
-  "isSvg": false
- }
-]

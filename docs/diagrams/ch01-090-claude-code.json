@@ -1,7 +1,0 @@
-[
- {
-  "title": "两万字详解Claude Code源码核心机制",
-  "code": "graph TD\n    A[\"机制与论文\"] ==> B[\"工程实践\"]\n    B ==> C[\"延伸导航\"]\n    C ==> SUM[\"总结与实践启示\"]",
-  "isSvg": false
- }
-]

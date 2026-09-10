@@ -1,7 +1,0 @@
-[
- {
-  "title": "两篇Harness论文",
-  "code": "graph TD\n    A[\"一、M⋆：每个任务都值得拥有专属的记忆Harness\"] ==> B[\"相关实体\"]\n    B ==> C[\"深度分析\"]\n    C ==> D[\"实践启示\"]\n    D ==> SUM[\"总结与实践启示\"]",
-  "isSvg": false
- }
-]

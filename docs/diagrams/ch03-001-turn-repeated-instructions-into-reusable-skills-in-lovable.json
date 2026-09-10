@@ -1,7 +1,0 @@
-[
- {
-  "title": "Turn repeated instructions into reu",
-  "code": "graph TD\n    A[\"核心要点\"] ==> B[\"实践启示\"]\n    B ==> C[\"典型 Skill 示例解析\"]\n    C ==> D[\"相关实体\"]\n    D ==> SUM[\"总结与实践启示\"]",
-  "isSvg": false
- }
-]

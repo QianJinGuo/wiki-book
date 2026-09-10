@@ -1,7 +1,0 @@
-[
- {
-  "title": "Linux Foundation and Industry Leade",
-  "code": "graph TD\n    CORE[\"Linux Foundation and Industry Leade\"] ==> INS[\"深度分析\"]\n    INS ==> P[\"实践启示\"]",
-  "isSvg": false
- }
-]

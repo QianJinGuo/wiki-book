@@ -1,7 +1,0 @@
-[
- {
-  "title": "OpenSquilla launches open-source AI",
-  "code": "graph TD\n    A[\"核心要点\"] ==> B[\"相关实体\"]\n    B ==> C[\"实践启示\"]\n    C ==> SUM[\"总结与实践启示\"]",
-  "isSvg": false
- }
-]
