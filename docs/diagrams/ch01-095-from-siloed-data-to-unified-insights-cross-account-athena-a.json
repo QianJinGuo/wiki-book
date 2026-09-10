@@ -1,0 +1,7 @@
+[
+ {
+  "title": "数据洞察枢纽导览",
+  "code": "graph TD\n    HUB[\"数据洞察枢纽页\"] ==> PRAC[\"工程实践区\"]\n    PRAC -->|\"AgentCore多租户\"| MULTI[\"十组件多租户实践\"]\n    PRAC -->|\"滴滴客服质检\"| QC[\"三管线38%到86%\"]\n    PRAC -->|\"Ops三层监控\"| MON[\"Bedrock监控体系\"]\n    HUB ==> EXT[\"延伸导航\"]\n    EXT -->|\"AML分诊\"| AML[\"Quick加Snowflake\"]",
+  "isSvg": false
+ }
+]

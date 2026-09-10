@@ -1,0 +1,7 @@
+[
+ {
+  "title": "大型代码库实践导览",
+  "code": "graph TD\n    HUB[\"大代码库最佳实践\"] ==> MECH[\"机制论文区\"]\n    MECH -->|\"Model vs Effort\"| DUMB[\"变笨真相非模型\"]\n    MECH -->|\"MCP工具设计六策略\"| MCP[\"V1到V6谱系\"]\n    HUB ==> PRAC[\"工程实践区\"]\n    PRAC -->|\"Skills注入三位置\"| SKILL[\"MCP与Rules源码\"]\n    PRAC -->|\"宠物到牛群\"| K8S[\"Agent组件虚拟化\"]",
+  "isSvg": false
+ }
+]

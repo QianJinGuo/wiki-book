@@ -1,0 +1,7 @@
+[
+ {
+  "title": "LLM 架构正在变复杂",
+  "code": "graph TD\n    CLEAN[\"昔日干净Transformer堆\"] ==> MESS[\"变体路由多模态混入\"]\n    MESS -->|\"注意力变体加MoE\"| RECS[\"重演推荐系统复杂化\"]\n    RECS -->|\"性能从优化变必需\"| BASE[\"需固定基线验正确\"]\n    AGENT[\"Agent生成融合内核\"] -.-> BASE\n    FLEX[\"FlexAttention可组合\"] -.->|\" upfront可组合是出路\"| RECS\n    KARP[\"Karpathy本质化组合观\"] -.-> FLEX",
+  "isSvg": false
+ }
+]

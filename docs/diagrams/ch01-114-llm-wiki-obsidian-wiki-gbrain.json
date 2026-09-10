@@ -1,0 +1,7 @@
+[
+ {
+  "title": "知识库自组织自进化导览",
+  "code": "graph TD\n    HUB[\"知识库自组织进化\"] ==> MECH[\"机制论文区\"]\n    MECH -->|\"三维度设计哲学\"| OC[\"OpenClaw源码\"]\n    MECH -->|\"12组件框架\"| FRAME[\"harness结构\"]\n    HUB ==> PRAC[\"工程实践区\"]\n    PRAC -->|\"CLAUDE.md四规则\"| BEST[\"Karpathy配置\"]\n    PRAC -->|\"Skills记住怎么做\"| SKILL[\"context fork隔离\"]",
+  "isSvg": false
+ }
+]

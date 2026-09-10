@@ -1,0 +1,7 @@
+[
+ {
+  "title": "开源项目的死法分类",
+  "code": "graph TD\n    PEOPLE[\"人走项目死五种\"] ==> ZOMBIE[\"活着但已死三种\"]\n    ZOMBIE -->|\"倦怠僵尸毒性把关\"| METRIC[\"提交图测不出健康\"]\n    XZ[\"xz两年社工植入\"] ==> TRUST[\"注册表不验人变更\"]\n    PIPE[\"发布管道断裂三式\"] -.->|\"码活用户拿不到\"| METRIC\n    TRANS[\"传递性依赖继承死亡\"] -.-> TRUST\n    FIX[\"继任机制加依赖审计\"] -.-> PEOPLE",
+  "isSvg": false
+ }
+]

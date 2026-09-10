@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Managed Agents 指南导览",
+  "code": "graph TD\n    HUB[\"Managed Agents指南\"] ==> MECH[\"机制论文区\"]\n    MECH -->|\"三框架七层模型\"| FRAMES[\"OpenClaw演绎\"]\n    MECH -->|\"survey与12组件\"| SURV[\"harness结构框架\"]\n    HUB ==> PRAC[\"工程实践区\"]\n    PRAC -->|\"Generator-Evaluator\"| GE[\"生成评审架构\"]\n    PRAC -->|\"知识五层存储\"| KM[\"知识即护城河\"]",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude Code Harness 深解导览",
+  "code": "graph TD\n    HUB[\"Harness深理解枢纽\"] ==> MECH[\"机制论文区\"]\n    MECH -->|\"12组件7决策\"| FRAME[\"harness结构框架\"]\n    MECH -->|\"102页综述\"| SURV[\"Code as Harness\"]\n    HUB ==> PRAC[\"工程实践区\"]\n    PRAC -->|\"大脑身体ICU隐喻\"| META[\"Harness是ICU\"]\n    PRAC -->|\"6层markdown记忆\"| MEM[\"对向量库的怀疑\"]",
+  "isSvg": false
+ }
+]

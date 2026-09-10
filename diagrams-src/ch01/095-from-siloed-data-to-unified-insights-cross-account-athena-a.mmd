@@ -1,0 +1,8 @@
+%% title: 数据洞察枢纽导览
+graph TD
+    HUB["数据洞察枢纽页"] ==> PRAC["工程实践区"]
+    PRAC -->|"AgentCore多租户"| MULTI["十组件多租户实践"]
+    PRAC -->|"滴滴客服质检"| QC["三管线38%到86%"]
+    PRAC -->|"Ops三层监控"| MON["Bedrock监控体系"]
+    HUB ==> EXT["延伸导航"]
+    EXT -->|"AML分诊"| AML["Quick加Snowflake"]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Gemini 3.5 Flash 涨价与平台化",
+  "code": "graph TD\n    PUB[\"跳过预览直接可用\"] ==> PRICE[\"价格翻三到六倍\"]\n    PRICE -->|\"输入1.5输出9每M\"| INFL[\"三实验室同步涨价\"]\n    ALLIN[\"全系产品线集成\"] -.->|\"免费品也承担\"| STRAT[\"模型成平台基建\"]\n    REAL[\"基准实测超3.1 Pro\"] -.-> INFL\n    INTER[\"Interactions API有状态\"] -.-> STRAT\n    CTX[\"1M输入65K输出\"] -.-> INTER",
+  "isSvg": false
+ }
+]

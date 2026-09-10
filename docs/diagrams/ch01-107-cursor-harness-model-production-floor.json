@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Cursor 复盘 Harness 导览",
+  "code": "graph TD\n    HUB[\"模型上限生产下限\"] ==> MECH[\"机制论文区\"]\n    MECH -->|\"HF术语表辨析\"| TERM[\"Scaffolding与Harness\"]\n    MECH -->|\"七层金字塔\"| PYRA[\"生产级架构指南\"]\n    HUB ==> PRAC[\"工程实践区\"]\n    PRAC -->|\"9大harness记忆横评\"| MEM[\"mem0视角\"]\n    PRAC -->|\"Stripe ReAct加DAG\"| STRIPE[\"金融生产经验\"]",
+  "isSvg": false
+ }
+]

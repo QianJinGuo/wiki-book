@@ -1,0 +1,7 @@
+[
+ {
+  "title": "从执行者到指挥者导览",
+  "code": "graph TD\n    SHIFT[\"从动手者到指挥者\"] ==> MECH[\"机制论文区\"]\n    MECH -->|\"专用算子25倍提速\"| WIN[\"WINDOW JOIN精读\"]\n    MECH -->|\"62.5分钟缓存法则\"| CACHE[\"token经济学\"]\n    SHIFT ==> PRAC[\"工程实践区\"]\n    PRAC -->|\"三层审查模型\"| ORG[\"AI原生组织\"]\n    PRAC -->|\"领域知识护城河\"| MOAT[\"判断力转向\"]",
+  "isSvg": false
+ }
+]
