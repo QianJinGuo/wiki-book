@@ -1,7 +1,7 @@
 [
  {
   "title": "Building effective human-agent team",
-  "code": "graph TD\ngraph TD\n    A[\"核心转变：从单人到团队\"] ==> B[\"通信架构\"]\n    B ==> C[\"信任机制\"]\n    C ==> D[\"冲突解决\"]\n    D ==> E[\"三个独有贡献（不应合并到现有 entity）\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心转变：从单人到团队\"] ==> B[\"通信架构\"]\n    B ==> C[\"信任机制\"]\n    C ==> D[\"冲突解决\"]\n    D ==> E[\"三个独有贡献（不应合并到现有 entity）\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

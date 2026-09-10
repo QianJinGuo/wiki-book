@@ -1,7 +1,7 @@
 [
  {
   "title": "Build a serverless image editing ag",
-  "code": "graph TD\ngraph TD\n    A[\"Build a serverless image editi\"] ==> B[\"Image editing application\"]\n    B ==> C[\"关联\"]\n    C ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Build a serverless image editi\"] ==> B[\"Image editing application\"]\n    B ==> C[\"关联\"]\n    C ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

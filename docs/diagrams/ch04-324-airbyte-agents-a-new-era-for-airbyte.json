@@ -1,7 +1,7 @@
 [
  {
   "title": "Airbyte Agents: A New Era for Airby",
-  "code": "graph TD\ngraph TD\n    A[\"核心定位\"] ==> B[\"为什么 Agents 会失败\"]\n    B ==> C[\"核心产品：Context Store\"]\n    C ==> D[\"性能收益\"]\n    D ==> E[\"三种接入方式\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心定位\"] ==> B[\"为什么 Agents 会失败\"]\n    B ==> C[\"核心产品：Context Store\"]\n    C ==> D[\"性能收益\"]\n    D ==> E[\"三种接入方式\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

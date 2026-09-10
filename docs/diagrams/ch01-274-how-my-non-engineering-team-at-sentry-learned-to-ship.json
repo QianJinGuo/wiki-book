@@ -1,7 +1,7 @@
 [
  {
   "title": "How my non-engineering team at Sent",
-  "code": "graph TD\ngraph TD\n    A[\"摘要\"] ==> B[\"实践启示\"]\n    B ==> C[\"原文链接\"]\n    C ==> D[\"相关实体\"]\n    D ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"摘要\"] ==> B[\"实践启示\"]\n    B ==> C[\"原文链接\"]\n    C ==> D[\"相关实体\"]\n    D ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

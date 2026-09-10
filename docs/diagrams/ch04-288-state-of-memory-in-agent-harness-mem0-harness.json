@@ -1,7 +1,7 @@
 [
  {
   "title": "State of Memory in Agent Harness —",
-  "code": "graph TD\ngraph TD\n    A[\"TL;DR\"] ==> B[\"Memory 三层分类法\"]\n    B ==> C[\"九大 Harness 横评\"]\n    C ==> D[\"Benchmark 批判\"]\n    D ==> E[\"共同短板与 harness boundary 论点\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"TL;DR\"] ==> B[\"Memory 三层分类法\"]\n    B ==> C[\"九大 Harness 横评\"]\n    C ==> D[\"Benchmark 批判\"]\n    D ==> E[\"共同短板与 harness boundary 论点\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

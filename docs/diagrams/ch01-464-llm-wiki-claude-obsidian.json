@@ -1,7 +1,7 @@
 [
  {
   "title": "卡帕西\\\"LLM Wiki\\\"，到底是什么？",
-  "code": "graph TD\ngraph TD\n    A[\"卡帕西LLM Wiki，到底是什么？加用 Claude\"] ==> B[\"核心结论\"]\n    B ==> C[\"Karpathy三判断\"]\n    C ==> D[\"Context Window工程分析\"]\n    D ==> E[\"Markdown Token经济学\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"卡帕西LLM Wiki，到底是什么？加用 Claude\"] ==> B[\"核心结论\"]\n    B ==> C[\"Karpathy三判断\"]\n    C ==> D[\"Context Window工程分析\"]\n    D ==> E[\"Markdown Token经济学\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

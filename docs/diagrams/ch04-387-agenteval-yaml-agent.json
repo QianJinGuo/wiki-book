@@ -1,7 +1,7 @@
 [
  {
   "title": "AgentEval",
-  "code": "graph TD\ngraph TD\n    A[\"核心问题\"] ==> B[\"关键指标：pass@k vs pass^k\"]\n    B ==> C[\"评分器体系\"]\n    C ==> D[\"CI/CD 集成\"]\n    D ==> E[\"缓存机制\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心问题\"] ==> B[\"关键指标：pass@k vs pass^k\"]\n    B ==> C[\"评分器体系\"]\n    C ==> D[\"CI/CD 集成\"]\n    D ==> E[\"缓存机制\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

@@ -1,7 +1,7 @@
 [
  {
   "title": "Beyond Vibe Coding — Directed Gener",
-  "code": "graph TD\ngraph TD\n    A[\"Core Thesis\"] ==> B[\"Directed Generation: Three Pha\"]\n    B ==> C[\"Design Pattern Paradigm Shift\"]\n    C ==> D[\"Language Precision Matters\"]\n    D ==> E[\"Connection to Harness Engineer\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Core Thesis\"] ==> B[\"Directed Generation: Three Pha\"]\n    B ==> C[\"Design Pattern Paradigm Shift\"]\n    C ==> D[\"Language Precision Matters\"]\n    D ==> E[\"Connection to Harness Engineer\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

@@ -1,7 +1,7 @@
 [
  {
   "title": "Microsoft MXC — 跨 OS 代理代码执行容器",
-  "code": "graph TD\ngraph TD\n    A[\"Microsoft MXC — 跨 OS 代理代码执行容器\"] ==> B[\"一句话总结\"]\n    B ==> C[\"10 个 Containment Backend 速查表\"]\n    C ==> D[\"三个独有贡献（不应合并到现有 entity）\"]\n    D ==> E[\"三个与其他 agent 安全实体的差异化对比\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Microsoft MXC — 跨 OS 代理代码执行容器\"] ==> B[\"一句话总结\"]\n    B ==> C[\"10 个 Containment Backend 速查表\"]\n    C ==> D[\"三个独有贡献（不应合并到现有 entity）\"]\n    D ==> E[\"三个与其他 agent 安全实体的差异化对比\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

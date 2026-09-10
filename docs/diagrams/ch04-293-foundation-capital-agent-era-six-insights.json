@@ -1,7 +1,7 @@
 [
  {
   "title": "Foundation Capital Agent Era Six In",
-  "code": "graph TD\ngraph TD\n    A[\"核心定位\"] ==> B[\"三大拐点框架\"]\n    B ==> C[\"六条洞察\"]\n    C ==> D[\"核心量化数据\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心定位\"] ==> B[\"三大拐点框架\"]\n    B ==> C[\"六条洞察\"]\n    C ==> D[\"核心量化数据\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

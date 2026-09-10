@@ -1,7 +1,7 @@
 [
  {
   "title": "Lossy self-improvement",
-  "code": "graph TD\ngraph TD\n    A[\"RSI 的三大假设与 LSI 的提出\"] ==> B[\"复杂性刹车（Complexity Brake）\"]\n    B ==> C[\"三大核心摩擦\"]\n    C ==> D[\"LSI 时代：不是指数爆炸，而是线性爬坡\"]\n    D ==> E[\"关键数据/实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"RSI 的三大假设与 LSI 的提出\"] ==> B[\"复杂性刹车（Complexity Brake）\"]\n    B ==> C[\"三大核心摩擦\"]\n    C ==> D[\"LSI 时代：不是指数爆炸，而是线性爬坡\"]\n    D ==> E[\"关键数据/实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

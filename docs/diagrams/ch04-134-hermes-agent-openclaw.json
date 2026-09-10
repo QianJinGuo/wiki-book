@@ -1,7 +1,7 @@
 [
  {
   "title": "Hermes Agent 为什么火了？和 OpenClaw 龙虾比一比",
-  "code": "graph TD\ngraph TD\n    A[\"一句话格局定位\"] ==> B[\"名字先赢一半：爱马仕 vs 龙虾\"]\n    B ==> C[\"定位差异：通用助手 vs 自成长框架\"]\n    C ==> D[\"Hermes 在中国社区特别火的原因\"]\n    D ==> E[\"Hermes 的核心能力（五个层面）\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"一句话格局定位\"] ==> B[\"名字先赢一半：爱马仕 vs 龙虾\"]\n    B ==> C[\"定位差异：通用助手 vs 自成长框架\"]\n    C ==> D[\"Hermes 在中国社区特别火的原因\"]\n    D ==> E[\"Hermes 的核心能力（五个层面）\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

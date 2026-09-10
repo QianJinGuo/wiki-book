@@ -1,7 +1,7 @@
 [
  {
   "title": "Shannon & Epiplexity: Finite Comput",
-  "code": "graph TD\ngraph TD\n    A[\"Shannon 没有想到的事加当信息论遇上有限算力\"] ==> B[\"相关实体\"]\n    B ==> C[\"深度分析\"]\n    C ==> D[\"实践启示\"]\n    D ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Shannon 没有想到的事加当信息论遇上有限算力\"] ==> B[\"相关实体\"]\n    B ==> C[\"深度分析\"]\n    C ==> D[\"实践启示\"]\n    D ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

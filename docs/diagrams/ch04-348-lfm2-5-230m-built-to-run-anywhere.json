@@ -1,7 +1,7 @@
 [
  {
   "title": "LFM2.5-230M: Built to Run Anywhere",
-  "code": "graph TD\ngraph TD\n    A[\"摘要\"] ==> B[\"核心指标\"]\n    B ==> C[\"训练与微调\"]\n    C ==> D[\"Benchmark 表现\"]\n    D ==> E[\"推理性能\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"摘要\"] ==> B[\"核心指标\"]\n    B ==> C[\"训练与微调\"]\n    C ==> D[\"Benchmark 表现\"]\n    D ==> E[\"推理性能\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

@@ -1,7 +1,7 @@
 [
  {
   "title": "GPT-5.6 Preview System Card — Commu",
-  "code": "graph TD\ngraph TD\n    A[\"GPT-5.6 Preview System Card - \"] ==> B[\"Content Summary\"]\n    B ==> C[\"1. Introduction\"]\n    C ==> D[\"第 2 来源 — 夕小瑶科技说：GPT-5.6 偷偷灰度，用\"]\n    D ==> E[\"第 3 来源 — AGI Hunt：GPT-5.6 正式发布\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"GPT-5.6 Preview System Card - \"] ==> B[\"Content Summary\"]\n    B ==> C[\"1. Introduction\"]\n    C ==> D[\"第 2 来源 — 夕小瑶科技说：GPT-5.6 偷偷灰度，用\"]\n    D ==> E[\"第 3 来源 — AGI Hunt：GPT-5.6 正式发布\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

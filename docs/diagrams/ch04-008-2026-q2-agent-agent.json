@@ -1,7 +1,7 @@
 [
  {
   "title": "腾讯研究院 2026 Q2 Agent 产业回顾",
-  "code": "graph TD\ngraph TD\n    A[\"一、Agent 成为通用入口\"] ==> B[\"二、垂直行业批量装配\"]\n    B ==> C[\"三、Tokenmaxxing 运动的教训\"]\n    C ==> D[\"四、组织瓶颈取代技术瓶颈\"]\n    D ==> E[\"五、技能严重重复\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"一、Agent 成为通用入口\"] ==> B[\"二、垂直行业批量装配\"]\n    B ==> C[\"三、Tokenmaxxing 运动的教训\"]\n    C ==> D[\"四、组织瓶颈取代技术瓶颈\"]\n    D ==> E[\"五、技能严重重复\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

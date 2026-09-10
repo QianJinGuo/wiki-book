@@ -1,7 +1,7 @@
 [
  {
   "title": "From idea to AI app: creating intel",
-  "code": "graph TD\ngraph TD\n    A[\"From idea to AI app: Creating \"] ==> B[\"Why choose Strands Agents: Sim\"]\n    B ==> C[\"实践启示\"]\n    C ==> D[\"参考来源\"]\n    D ==> E[\"相关实体\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"From idea to AI app: Creating \"] ==> B[\"Why choose Strands Agents: Sim\"]\n    B ==> C[\"实践启示\"]\n    C ==> D[\"参考来源\"]\n    D ==> E[\"相关实体\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

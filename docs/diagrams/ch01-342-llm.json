@@ -1,7 +1,7 @@
 [
  {
   "title": "LLM 工作机制与可解释性",
-  "code": "graph TD\ngraph TD\n    A[\"核心观点（李航等，2026）\"] ==> B[\"特征叠加（Superposition）\"]\n    B ==> C[\"SAE（稀疏自编码器）\"]\n    C ==> D[\"功能词元假说（Function Token Hypothes\"]\n    D ==> E[\"CLT（跨层转码器）\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心观点（李航等，2026）\"] ==> B[\"特征叠加（Superposition）\"]\n    B ==> C[\"SAE（稀疏自编码器）\"]\n    C ==> D[\"功能词元假说（Function Token Hypothes\"]\n    D ==> E[\"CLT（跨层转码器）\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

@@ -1,7 +1,7 @@
 [
  {
   "title": "Claude Code vs Codex 上下文架构",
-  "code": "graph TD\ngraph TD\n    A[\"核心命题\"] ==> B[\"Claude Code：上下文窗口是一切的边界\"]\n    B ==> C[\"Claude Code 五层压缩管道\"]\n    C ==> D[\"Codex Cloud Agent：文件系统即上下文\"]\n    D ==> E[\"两种策略关键差异\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心命题\"] ==> B[\"Claude Code：上下文窗口是一切的边界\"]\n    B ==> C[\"Claude Code 五层压缩管道\"]\n    C ==> D[\"Codex Cloud Agent：文件系统即上下文\"]\n    D ==> E[\"两种策略关键差异\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

@@ -1,7 +1,7 @@
 [
  {
   "title": "达尔文.skill 2.0正式开源发布！让你的所有skill左脚踩右脚",
-  "code": "graph TD\ngraph TD\n    A[\"达尔文.skill 2.0：Skill 自我进化优化器\"] ==> B[\"一句话\"]\n    B ==> C[\"核心升级\"]\n    C ==> D[\"关键数字\"]\n    D ==> E[\"一句话\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"达尔文.skill 2.0：Skill 自我进化优化器\"] ==> B[\"一句话\"]\n    B ==> C[\"核心升级\"]\n    C ==> D[\"关键数字\"]\n    D ==> E[\"一句话\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

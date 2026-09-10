@@ -1,7 +1,7 @@
 [
  {
   "title": "Agivar 录屏教学桌面 Agent",
-  "code": "graph TD\ngraph TD\n    A[\"Agivar 录屏教学桌面 Agent\"] ==> B[\"一句话定位\"]\n    B ==> C[\"序：AI 学着操作电脑\"]\n    C ==> D[\"FDE (Forward Deployment Engine\"]\n    D ==> E[\"Agivar 核心能力：录屏教学\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Agivar 录屏教学桌面 Agent\"] ==> B[\"一句话定位\"]\n    B ==> C[\"序：AI 学着操作电脑\"]\n    C ==> D[\"FDE 加Forward Deployment Engine\"]\n    D ==> E[\"Agivar 核心能力：录屏教学\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

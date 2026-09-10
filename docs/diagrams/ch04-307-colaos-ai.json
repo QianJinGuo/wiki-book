@@ -1,7 +1,7 @@
 [
  {
   "title": "ColaOS 与 AI 原生组织",
-  "code": "graph TD\ngraph TD\n    A[\"三个重写\"] ==> B[\"产品：从工具到关系\"]\n    B ==> C[\"路线：one-person company 的 10x 产出\"]\n    C ==> D[\"组织：AI 的速度必须穿过组织\"]\n    D ==> E[\"两大陷阱\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"三个重写\"] ==> B[\"产品：从工具到关系\"]\n    B ==> C[\"路线：one-person company 的 10x 产出\"]\n    C ==> D[\"组织：AI 的速度必须穿过组织\"]\n    D ==> E[\"两大陷阱\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

@@ -1,7 +1,7 @@
 [
  {
   "title": "Agent/Skills/Teams 架构演进过程及技术选型之道",
-  "code": "graph TD\ngraph TD\n    A[\"核心命题\"] ==> B[\"关键洞察\"]\n    B ==> C[\"与 Wiki 已有内容的关系\"]\n    C ==> D[\"来源\"]\n    D ==> E[\"元信息\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心命题\"] ==> B[\"关键洞察\"]\n    B ==> C[\"与 Wiki 已有内容的关系\"]\n    C ==> D[\"来源\"]\n    D ==> E[\"元信息\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

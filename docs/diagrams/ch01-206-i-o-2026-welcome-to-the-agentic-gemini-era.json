@@ -1,7 +1,7 @@
 [
  {
   "title": "I/O 2026: Welcome to the agentic Ge",
-  "code": "graph TD\ngraph TD\n    A[\"概述\"] ==> B[\"规模数据\"]\n    B ==> C[\"AI 全栈概览\"]\n    C ==> D[\"Agentic 产品矩阵\"]\n    D ==> E[\"Antigravity 2.0\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"概述\"] ==> B[\"规模数据\"]\n    B ==> C[\"AI 全栈概览\"]\n    C ==> D[\"Agentic 产品矩阵\"]\n    D ==> E[\"Antigravity 2.0\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

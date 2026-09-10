@@ -1,7 +1,7 @@
 [
  {
   "title": "Amazon Quick 飞书SSO对接指南",
-  "code": "graph TD\ngraph TD\n    A[\"Amazon Quick 飞书SSO对接指南\"] ==> B[\"**一、使用飞书 SSO 登录 Amazon Quick**\"]\n    B ==> C[\"**一、Quick Web 接入飞书（概述）**\"]\n    C ==> D[\"**二、Quick Desktop 接入飞书 SSO**\"]\n    D ==> E[\"关联\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Amazon Quick 飞书SSO对接指南\"] ==> B[\"**一、使用飞书 SSO 登录 Amazon Quick**\"]\n    B ==> C[\"**一、Quick Web 接入飞书（概述）**\"]\n    C ==> D[\"**二、Quick Desktop 接入飞书 SSO**\"]\n    D ==> E[\"关联\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

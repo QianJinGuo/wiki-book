@@ -1,7 +1,7 @@
 [
  {
   "title": "Fable 5 的信号:Agent 开始拼 Runtime — 架构师",
-  "code": "graph TD\ngraph TD\n    A[\"Fable 5 的信号：Agent 开始拼 Runtime \"] ==> B[\"核心概念 1:Runtime ≠ 模型背后的基础设施\"]\n    B ==> C[\"核心概念 2:Runtime Contract 而非 Pro\"]\n    C ==> D[\"核心概念 3:Task Brief 9 字段模板\"]\n    D ==> E[\"核心概念 4:能力路由 8 维度\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Fable 5 的信号：Agent 开始拼 Runtime \"] ==> B[\"核心概念 1:Runtime ≠ 模型背后的基础设施\"]\n    B ==> C[\"核心概念 2:Runtime Contract 而非 Pro\"]\n    C ==> D[\"核心概念 3:Task Brief 9 字段模板\"]\n    D ==> E[\"核心概念 4:能力路由 8 维度\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

@@ -1,7 +1,7 @@
 [
  {
   "title": "Hermes Agent 保姆级教程",
-  "code": "graph TD\ngraph TD\n    A[\"你能做到什么\"] ==> B[\"阶段一：装好 Hermes\"]\n    B ==> C[\"阶段二：用 /goal 让 agent 自己跑\"]\n    C ==> D[\"阶段三：用 Kanban 组多 agent 团队\"]\n    D ==> E[\"阶段四：进阶玩法\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"你能做到什么\"] ==> B[\"阶段一：装好 Hermes\"]\n    B ==> C[\"阶段二：用 /goal 让 agent 自己跑\"]\n    C ==> D[\"阶段三：用 Kanban 组多 agent 团队\"]\n    D ==> E[\"阶段四：进阶玩法\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

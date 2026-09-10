@@ -1,7 +1,7 @@
 [
  {
   "title": "Hermes Agent /goal 长任务运行时架构",
-  "code": "graph TD\ngraph TD\n    A[\"元信息\"] ==> B[\"核心洞察\"]\n    B ==> C[\"四大运行时部件\"]\n    C ==> D[\"GoalState 设计要点\"]\n    D ==> E[\"Judge 判定策略：保守优先\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"元信息\"] ==> B[\"核心洞察\"]\n    B ==> C[\"四大运行时部件\"]\n    C ==> D[\"GoalState 设计要点\"]\n    D ==> E[\"Judge 判定策略：保守优先\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

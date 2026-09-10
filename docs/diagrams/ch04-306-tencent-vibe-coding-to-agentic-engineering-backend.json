@@ -1,7 +1,7 @@
 [
  {
   "title": "Tencent Vibe Coding to Agentic Engi",
-  "code": "graph TD\ngraph TD\n    A[\"从Vibe Coding到Agentic Engineeri\"] ==> B[\"Vibe Coding的问题\"]\n    B ==> C[\"Agentic Engineering的核心思路\"]\n    C ==> D[\"实践方案\"]\n    D ==> E[\"全流程概览\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"从Vibe Coding到Agentic Engineeri\"] ==> B[\"Vibe Coding的问题\"]\n    B ==> C[\"Agentic Engineering的核心思路\"]\n    C ==> D[\"实践方案\"]\n    D ==> E[\"全流程概览\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

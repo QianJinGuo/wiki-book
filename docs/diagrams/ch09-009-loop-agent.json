@@ -1,7 +1,7 @@
 [
  {
   "title": "Loop 的产品视角",
-  "code": "graph TD\ngraph TD\n    A[\"核心论点\"] ==> B[\"Loop 的两层价值\"]\n    B ==> C[\"实证案例：定制刻字项链小生意的 Discord 运营\"]\n    C ==> D[\"关键产品洞察\"]\n    D ==> E[\"Dittos Loop For Codex\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心论点\"] ==> B[\"Loop 的两层价值\"]\n    B ==> C[\"实证案例：定制刻字项链小生意的 Discord 运营\"]\n    C ==> D[\"关键产品洞察\"]\n    D ==> E[\"Dittos Loop For Codex\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

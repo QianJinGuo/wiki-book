@@ -1,7 +1,7 @@
 [
  {
   "title": "Detecting Misuse with the Claude Co",
-  "code": "graph TD\ngraph TD\n    A[\"Core Findings\"] ==> B[\"Implications for Agent/Harness\"]\n    B ==> C[\"实践启示\"]\n    C ==> D[\"Related\"]\n    D ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Core Findings\"] ==> B[\"Implications for Agent/Harness\"]\n    B ==> C[\"实践启示\"]\n    C ==> D[\"Related\"]\n    D ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

@@ -1,7 +1,7 @@
 [
  {
   "title": "Multi-tenant LLM Analytics 三层安全架构",
-  "code": "graph TD\ngraph TD\n    A[\"核心问题：为什么不能依赖 LLM 做行级安全\"] ==> B[\"三层架构\"]\n    B ==> C[\"生产验证\"]\n    C ==> D[\"三个独有贡献\"]\n    D ==> E[\"差异化对比\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心问题：为什么不能依赖 LLM 做行级安全\"] ==> B[\"三层架构\"]\n    B ==> C[\"生产验证\"]\n    C ==> D[\"三个独有贡献\"]\n    D ==> E[\"差异化对比\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

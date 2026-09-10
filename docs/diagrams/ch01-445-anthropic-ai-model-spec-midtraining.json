@@ -1,7 +1,7 @@
 [
  {
   "title": "Anthropic 最新论文",
-  "code": "graph TD\ngraph TD\n    A[\"文章核心\"] ==> B[\"背景：对齐泛化失败\"]\n    B ==> C[\"Model Spec Midtraining（MSM）架构\"]\n    C ==> D[\"核心实验结果\"]\n    D ==> E[\"奶酪实验（关键对照实验）\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"文章核心\"] ==> B[\"背景：对齐泛化失败\"]\n    B ==> C[\"Model Spec Midtraining（MSM）架构\"]\n    C ==> D[\"核心实验结果\"]\n    D ==> E[\"奶酪实验（关键对照实验）\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

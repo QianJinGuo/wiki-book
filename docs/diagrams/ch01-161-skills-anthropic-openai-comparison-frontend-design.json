@@ -1,7 +1,7 @@
 [
  {
   "title": "Skills Anthropic Openai Comparison",
-  "code": "graph TD\ngraph TD\n    A[\"Skills 详解：拆一个技能，看 Anthropic 和 \"] ==> B[\"先快速回顾：Skill 解决什么问题\"]\n    B ==> C[\"相关实体\"]\n    C ==> D[\"深度分析\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Skills 详解：拆一个技能，看 Anthropic 和 \"] ==> B[\"先快速回顾：Skill 解决什么问题\"]\n    B ==> C[\"相关实体\"]\n    C ==> D[\"深度分析\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

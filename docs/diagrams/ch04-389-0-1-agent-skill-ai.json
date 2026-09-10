@@ -1,7 +1,7 @@
 [
  {
   "title": "从 0 到 1 教你写 Agent Skill，让 AI 懂你的\"潜规",
-  "code": "graph TD\ngraph TD\n    A[\"核心价值\"] ==> B[\"Skill 目录结构\"]\n    B ==> C[\"核心设计哲学：渐进式披露\"]\n    C ==> D[\"SKILL.md 格式\"]\n    D ==> E[\"高质量 Skill 编写规范\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心价值\"] ==> B[\"Skill 目录结构\"]\n    B ==> C[\"核心设计哲学：渐进式披露\"]\n    C ==> D[\"SKILL.md 格式\"]\n    D ==> E[\"高质量 Skill 编写规范\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

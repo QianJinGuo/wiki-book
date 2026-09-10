@@ -1,7 +1,7 @@
 [
  {
   "title": "GPT-5",
-  "code": "graph TD\ngraph TD\n    A[\"核心原语：It Just Does Stuff\"] ==> B[\"两大常见 AI 使用问题的解决\"]\n    B ==> C[\"案例：Vibecoding 的极致体验\"]\n    C ==> D[\"GPT-5 Thinking vs autoGPT-5\"]\n    D ==> E[\"主动式 AI 的意义\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心原语：It Just Does Stuff\"] ==> B[\"两大常见 AI 使用问题的解决\"]\n    B ==> C[\"案例：Vibecoding 的极致体验\"]\n    C ==> D[\"GPT-5 Thinking vs autoGPT-5\"]\n    D ==> E[\"主动式 AI 的意义\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

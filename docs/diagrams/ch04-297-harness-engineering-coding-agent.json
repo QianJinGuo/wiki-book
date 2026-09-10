@@ -1,7 +1,7 @@
 [
  {
   "title": "Harness Engineering",
-  "code": "graph TD\ngraph TD\n    A[\"核心定义\"] ==> B[\"三大困难点\"]\n    B ==> C[\"关键技巧\"]\n    C ==> D[\"真实落地案例\"]\n    D ==> E[\"Meta-Skill：Skill for Skill\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心定义\"] ==> B[\"三大困难点\"]\n    B ==> C[\"关键技巧\"]\n    C ==> D[\"真实落地案例\"]\n    D ==> E[\"Meta-Skill：Skill for Skill\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

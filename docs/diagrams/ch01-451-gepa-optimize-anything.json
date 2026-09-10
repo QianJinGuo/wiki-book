@@ -1,7 +1,7 @@
 [
  {
   "title": "Gepa Optimize Anything",
-  "code": "graph TD\ngraph TD\n    A[\"GEPA optimize_anything — 通用文本优\"] ==> B[\"一句话总结\"]\n    B ==> C[\"核心问题\"]\n    C ==> D[\"核心方案\"]\n    D ==> E[\"实验结果\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"GEPA optimize_anything — 通用文本优\"] ==> B[\"一句话总结\"]\n    B ==> C[\"核心问题\"]\n    C ==> D[\"核心方案\"]\n    D ==> E[\"实验结果\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

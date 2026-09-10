@@ -1,7 +1,7 @@
 [
  {
   "title": "Evaluating Netflix Show Synopses wi",
-  "code": "graph TD\ngraph TD\n    A[\"Evaluating Netflix Show Synops\"] ==> B[\"评分理由\"]\n    B ==> C[\"相关实体\"]\n    C ==> D[\"实践启示\"]\n    D ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Evaluating Netflix Show Synops\"] ==> B[\"评分理由\"]\n    B ==> C[\"相关实体\"]\n    C ==> D[\"实践启示\"]\n    D ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

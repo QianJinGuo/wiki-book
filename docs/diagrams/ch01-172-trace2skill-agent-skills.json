@@ -1,7 +1,7 @@
 [
  {
   "title": "Trace2Skill 把\\\"轨迹里的局部经验\\\"蒸馏成可迁移的 Ag",
-  "code": "graph TD\ngraph TD\n    A[\"Trace2Skill 把轨迹里的局部经验蒸馏成可迁移的\"] ==> B[\"相关实体\"]\n    B ==> C[\"深度分析\"]\n    C ==> D[\"实践启示\"]\n    D ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Trace2Skill 把轨迹里的局部经验蒸馏成可迁移的\"] ==> B[\"相关实体\"]\n    B ==> C[\"深度分析\"]\n    C ==> D[\"实践启示\"]\n    D ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

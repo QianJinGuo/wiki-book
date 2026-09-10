@@ -1,7 +1,7 @@
 [
  {
   "title": "Introducing Vercel Connect",
-  "code": "graph TD\ngraph TD\n    A[\"Overview\"] ==> B[\"[Link to heading](http://verce\"]\n    B ==> C[\"[Link to heading](http://verce\"]\n    C ==> D[\"[Link to heading](http://verce\"]\n    D ==> E[\"深度分析\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Overview\"] ==> B[\"[Link to heading]加http://verce\"]\n    B ==> C[\"[Link to heading]加http://verce\"]\n    C ==> D[\"[Link to heading]加http://verce\"]\n    D ==> E[\"深度分析\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

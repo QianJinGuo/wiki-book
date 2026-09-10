@@ -1,7 +1,7 @@
 [
  {
   "title": "PixelRAG",
-  "code": "graph TD\ngraph TD\n    A[\"核心流程\"] ==> B[\"技术架构\"]\n    B ==> C[\"关键数据\"]\n    C ==> D[\"核心优势\"]\n    D ==> E[\"与经典 RAG 的对比\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心流程\"] ==> B[\"技术架构\"]\n    B ==> C[\"关键数据\"]\n    C ==> D[\"核心优势\"]\n    D ==> E[\"与经典 RAG 的对比\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

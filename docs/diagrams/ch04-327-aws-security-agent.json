@@ -1,7 +1,7 @@
 [
  {
   "title": "使用 AWS Security Agent 构建应用安全闭环",
-  "code": "graph TD\ngraph TD\n    A[\"概览\"] ==> B[\"三个生命周期阶段\"]\n    B ==> C[\"Agent Space 创建 + GitHub 集成\"]\n    C ==> D[\"AWS Security Agent 能力对比表\"]\n    D ==> E[\"限制与陷阱\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"概览\"] ==> B[\"三个生命周期阶段\"]\n    B ==> C[\"Agent Space 创建 + GitHub 集成\"]\n    C ==> D[\"AWS Security Agent 能力对比表\"]\n    D ==> E[\"限制与陷阱\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

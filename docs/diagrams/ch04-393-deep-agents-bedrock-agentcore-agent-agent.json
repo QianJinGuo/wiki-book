@@ -1,7 +1,7 @@
 [
  {
   "title": "Deep Agents + Bedrock AgentCore",
-  "code": "graph TD\ngraph TD\n    A[\"核心模式\"] ==> B[\"实战架构\"]\n    B ==> C[\"关键工程细节\"]\n    C ==> D[\"三层可观测性\"]\n    D ==> E[\"部署到 Runtime\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心模式\"] ==> B[\"实战架构\"]\n    B ==> C[\"关键工程细节\"]\n    C ==> D[\"三层可观测性\"]\n    D ==> E[\"部署到 Runtime\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

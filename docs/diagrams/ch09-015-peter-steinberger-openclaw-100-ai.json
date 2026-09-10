@@ -1,7 +1,7 @@
 [
  {
   "title": "Peter Steinberger / OpenClaw — 100个",
-  "code": "graph TD\ngraph TD\n    A[\"概述\"] ==> B[\"关键数据\"]\n    B ==> C[\"AI代理承担的工作\"]\n    C ==> D[\"CodexBar\"]\n    D ==> E[\"思考\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"概述\"] ==> B[\"关键数据\"]\n    B ==> C[\"AI代理承担的工作\"]\n    C ==> D[\"CodexBar\"]\n    D ==> E[\"思考\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

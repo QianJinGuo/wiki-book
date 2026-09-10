@@ -1,7 +1,7 @@
 [
  {
   "title": "Matt Pocock Skills vs Superpowers",
-  "code": "graph TD\ngraph TD\n    A[\"核心哲学对比\"] ==> B[\"工程流水线\"]\n    B ==> C[\"三个精巧设计\"]\n    C ==> D[\"量化对比\"]\n    D ==> E[\"四大支柱框架（源码深度解析）\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心哲学对比\"] ==> B[\"工程流水线\"]\n    B ==> C[\"三个精巧设计\"]\n    C ==> D[\"量化对比\"]\n    D ==> E[\"四大支柱框架（源码深度解析）\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

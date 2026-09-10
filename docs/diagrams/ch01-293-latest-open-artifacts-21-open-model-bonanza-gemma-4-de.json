@@ -1,7 +1,7 @@
 [
  {
   "title": "Latest open artifacts (#21): Open m",
-  "code": "graph TD\ngraph TD\n    A[\"CAISI V4 IRT 评估的方法论缺陷\"] ==> B[\"Harness 选择扭曲能力评估\"]\n    B ==> C[\"开放模型生态的关键进展\"]\n    C ==> D[\"关键数据/实践启示\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"CAISI V4 IRT 评估的方法论缺陷\"] ==> B[\"Harness 选择扭曲能力评估\"]\n    B ==> C[\"开放模型生态的关键进展\"]\n    C ==> D[\"关键数据/实践启示\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

@@ -1,7 +1,7 @@
 [
  {
   "title": "Bitter Lesson vs Garbage Can",
-  "code": "graph TD\ngraph TD\n    A[\"两个理论框架\"] ==> B[\"Agents 的两种路线\"]\n    B ==> C[\"在 Garbage Can 中的 Agents\"]\n    C ==> D[\"实践启示\"]\n    D ==> E[\"相关实体\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"两个理论框架\"] ==> B[\"Agents 的两种路线\"]\n    B ==> C[\"在 Garbage Can 中的 Agents\"]\n    C ==> D[\"实践启示\"]\n    D ==> E[\"相关实体\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

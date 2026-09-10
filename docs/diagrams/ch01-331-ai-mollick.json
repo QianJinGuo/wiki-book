@@ -1,7 +1,7 @@
 [
  {
   "title": "给 AI 做工作面试",
-  "code": "graph TD\ngraph TD\n    A[\"Benchmark 的系统性缺陷\"] ==> B[\"Vibes 测试：Mollick 的 Otter Test\"]\n    B ==> C[\"GDPval：真实工作评估框架\"]\n    C ==> D[\"AI 的系统性态度差异\"]\n    D ==> E[\"企业 AI 选型建议\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Benchmark 的系统性缺陷\"] ==> B[\"Vibes 测试：Mollick 的 Otter Test\"]\n    B ==> C[\"GDPval：真实工作评估框架\"]\n    C ==> D[\"AI 的系统性态度差异\"]\n    D ==> E[\"企业 AI 选型建议\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

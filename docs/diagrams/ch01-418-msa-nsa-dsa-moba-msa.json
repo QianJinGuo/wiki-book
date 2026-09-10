@@ -1,7 +1,7 @@
 [
  {
   "title": "MSA 稀疏注意力三国杀",
-  "code": "graph TD\ngraph TD\n    A[\"一句话总结\"] ==> B[\"为什么大家都奔向稀疏\"]\n    B ==> C[\"MSA 架构：粗筛 + 精算\"]\n    C ==> D[\"索引分支训练：KL 对齐\"]\n    D ==> E[\"Kernel 创新：Outer Gather Q\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"一句话总结\"] ==> B[\"为什么大家都奔向稀疏\"]\n    B ==> C[\"MSA 架构：粗筛 + 精算\"]\n    C ==> D[\"索引分支训练：KL 对齐\"]\n    D ==> E[\"Kernel 创新：Outer Gather Q\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

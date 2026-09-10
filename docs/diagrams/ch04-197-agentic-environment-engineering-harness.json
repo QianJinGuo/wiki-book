@@ -1,7 +1,7 @@
 [
  {
   "title": "Agentic Environment Engineering",
-  "code": "graph TD\ngraph TD\n    A[\"核心命题\"] ==> B[\"工程链路分层\"]\n    B ==> C[\"中科院自动化所框架\"]\n    C ==> D[\"环境的五个基本问题\"]\n    D ==> E[\"环境评估四维度\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心命题\"] ==> B[\"工程链路分层\"]\n    B ==> C[\"中科院自动化所框架\"]\n    C ==> D[\"环境的五个基本问题\"]\n    D ==> E[\"环境评估四维度\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

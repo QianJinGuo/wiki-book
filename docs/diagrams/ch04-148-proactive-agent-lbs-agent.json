@@ -1,7 +1,7 @@
 [
  {
   "title": "高德Proactive Agent — LBS场景时空思考型主动服务A",
-  "code": "graph TD\ngraph TD\n    A[\"核心定位\"] ==> B[\"范式跃迁：RecSys → Proactive Agent\"]\n    B ==> C[\"Proactive Agent 三大核心能力\"]\n    C ==> D[\"用户体验三转变\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心定位\"] ==> B[\"范式跃迁：RecSys → Proactive Agent\"]\n    B ==> C[\"Proactive Agent 三大核心能力\"]\n    C ==> D[\"用户体验三转变\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

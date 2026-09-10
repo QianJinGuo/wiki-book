@@ -1,7 +1,7 @@
 [
  {
   "title": "Harness Engineering for Self-Improv",
-  "code": "graph TD\ngraph TD\n    A[\"Harness Engineering for Self-I\"] ==> B[\"核心命题\"]\n    B ==> C[\"与已有实体的关系\"]\n    C ==> D[\"Harness 设计模式\"]\n    D ==> E[\"Harness 优化演进路径\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Harness Engineering for Self-I\"] ==> B[\"核心命题\"]\n    B ==> C[\"与已有实体的关系\"]\n    C ==> D[\"Harness 设计模式\"]\n    D ==> E[\"Harness 优化演进路径\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

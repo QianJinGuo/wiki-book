@@ -1,7 +1,7 @@
 [
  {
   "title": "Claude Opus 5 on Vending-Bench: Bes",
-  "code": "graph TD\ngraph TD\n    A[\"系列脉络\"] ==> B[\"核心发现\"]\n    B ==> C[\"与既有分析的关系\"]\n    C ==> D[\"相关概念\"]\n    D ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"系列脉络\"] ==> B[\"核心发现\"]\n    B ==> C[\"与既有分析的关系\"]\n    C ==> D[\"相关概念\"]\n    D ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

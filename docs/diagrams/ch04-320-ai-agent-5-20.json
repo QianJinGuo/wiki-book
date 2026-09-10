@@ -1,7 +1,7 @@
 [
  {
   "title": "AI Agent工具数量陷阱",
-  "code": "graph TD\ngraph TD\n    A[\"AI Agent工具数量陷阱\"] ==> B[\"核心观点\"]\n    B ==> C[\"关键数据：134,000 Token工具税\"]\n    C ==> D[\"工具太多让Agent变笨的三个机制\"]\n    D ==> E[\"Anthropic答案：5-10个工具是上限\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"AI Agent工具数量陷阱\"] ==> B[\"核心观点\"]\n    B ==> C[\"关键数据：134,000 Token工具税\"]\n    C ==> D[\"工具太多让Agent变笨的三个机制\"]\n    D ==> E[\"Anthropic答案：5-10个工具是上限\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

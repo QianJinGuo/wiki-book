@@ -1,7 +1,7 @@
 [
  {
   "title": "GitHub + AWS 多云转折",
-  "code": "graph TD\ngraph TD\n    A[\"概述\"] ==> B[\"关键数据\"]\n    B ==> C[\"关键贡献\"]\n    C ==> D[\"含义\"]\n    D ==> E[\"相关主题\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"概述\"] ==> B[\"关键数据\"]\n    B ==> C[\"关键贡献\"]\n    C ==> D[\"含义\"]\n    D ==> E[\"相关主题\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

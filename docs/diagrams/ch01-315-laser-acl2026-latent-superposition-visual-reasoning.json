@@ -1,7 +1,7 @@
 [
  {
   "title": "Laser Acl2026 Latent Superposition",
-  "code": "graph TD\ngraph TD\n    A[\"Laser — 隐式视觉推理（ACL 2026）\"] ==> B[\"一句话总结\"]\n    B ==> C[\"核心问题\"]\n    C ==> D[\"解决方案：Laser\"]\n    D ==> E[\"实验结果\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Laser — 隐式视觉推理（ACL 2026）\"] ==> B[\"一句话总结\"]\n    B ==> C[\"核心问题\"]\n    C ==> D[\"解决方案：Laser\"]\n    D ==> E[\"实验结果\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

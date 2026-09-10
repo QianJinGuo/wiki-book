@@ -1,7 +1,7 @@
 [
  {
   "title": "AI 原生团队的脏乱差",
-  "code": "graph TD\ngraph TD\n    A[\"Overview\"] ==> B[\"3 个核心问题\"]\n    B ==> C[\"CEO 数字分身失败复盘（AI 1.0 时代）\"]\n    C ==> D[\"AI 原生团队搭建案例（电销企业）\"]\n    D ==> E[\"AI 销售线索分配系统（最具体 case）\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Overview\"] ==> B[\"3 个核心问题\"]\n    B ==> C[\"CEO 数字分身失败复盘（AI 1.0 时代）\"]\n    C ==> D[\"AI 原生团队搭建案例（电销企业）\"]\n    D ==> E[\"AI 销售线索分配系统（最具体 case）\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

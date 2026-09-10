@@ -1,7 +1,7 @@
 [
  {
   "title": "Nathan Lambert's Mid-2026 Open Mode",
-  "code": "graph TD\ngraph TD\n    A[\"Nathan Lambert 的 13 个可证伪预测（202\"] ==> B[\"关键论点：经济 > 能力\"]\n    B ==> C[\"三个独到洞察\"]\n    C ==> D[\"关联与延伸\"]\n    D ==> E[\"上线状态与发布信息\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Nathan Lambert 的 13 个可证伪预测（202\"] ==> B[\"关键论点：经济 > 能力\"]\n    B ==> C[\"三个独到洞察\"]\n    C ==> D[\"关联与延伸\"]\n    D ==> E[\"上线状态与发布信息\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

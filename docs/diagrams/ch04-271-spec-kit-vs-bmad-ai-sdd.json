@@ -1,7 +1,7 @@
 [
  {
   "title": "Spec-Kit vs BMAD",
-  "code": "graph TD\ngraph TD\n    A[\"AI 原生的本质：协作流程重塑\"] ==> B[\"SDD 工具谱系：Spec-Kit / OpenSpec /\"]\n    B ==> C[\"Spec-Kit 实战：秩序感很强\"]\n    C ==> D[\"BMAD 实战：AI 团队围着项目追问\"]\n    D ==> E[\"一句话差异：Spec-Kit vs BMAD\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"AI 原生的本质：协作流程重塑\"] ==> B[\"SDD 工具谱系：Spec-Kit / OpenSpec /\"]\n    B ==> C[\"Spec-Kit 实战：秩序感很强\"]\n    C ==> D[\"BMAD 实战：AI 团队围着项目追问\"]\n    D ==> E[\"一句话差异：Spec-Kit vs BMAD\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

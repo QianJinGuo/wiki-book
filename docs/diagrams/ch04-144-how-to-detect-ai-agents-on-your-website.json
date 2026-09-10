@@ -1,7 +1,7 @@
 [
  {
   "title": "How to Detect AI Agents on Your Web",
-  "code": "graph TD\ngraph TD\n    A[\"How to Detect AI Agents on Yo\"] ==> B[\"How to Detect AI Agents on You\"]\n    B ==> C[\"How to Detect AI Agents on You\"]\n    C ==> D[\"How to Detect AI Agents on You\"]\n    D ==> E[\"TL;DR\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"How to Detect AI Agents on Yo\"] ==> B[\"How to Detect AI Agents on You\"]\n    B ==> C[\"How to Detect AI Agents on You\"]\n    C ==> D[\"How to Detect AI Agents on You\"]\n    D ==> E[\"TL;DR\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

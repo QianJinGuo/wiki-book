@@ -1,7 +1,7 @@
 [
  {
   "title": "Rethinking Search as Code Generatio",
-  "code": "graph TD\ngraph TD\n    A[\"核心范式转换\"] ==> B[\"SDK 基础原语 (Primitives)\"]\n    B ==> C[\"三个独有贡献（不应合并到现有 entity）\"]\n    C ==> D[\"与现有 agentic-search 实体的差异化\"]\n    D ==> E[\"技术细节深度分析\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心范式转换\"] ==> B[\"SDK 基础原语 加Primitives\"]\n    B ==> C[\"三个独有贡献（不应合并到现有 entity）\"]\n    C ==> D[\"与现有 agentic-search 实体的差异化\"]\n    D ==> E[\"技术细节深度分析\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

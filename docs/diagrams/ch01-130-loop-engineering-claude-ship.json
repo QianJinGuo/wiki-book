@@ -1,7 +1,7 @@
 [
  {
   "title": "Loop Engineering 半年实战拆解",
-  "code": "graph TD\ngraph TD\n    A[\"核心概述\"] ==> B[\"七 Agent 流水线\"]\n    B ==> C[\"进化循环 vs 代码循环\"]\n    C ==> D[\"诚实缺陷\"]\n    D ==> E[\"快速开始\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心概述\"] ==> B[\"七 Agent 流水线\"]\n    B ==> C[\"进化循环 vs 代码循环\"]\n    C ==> D[\"诚实缺陷\"]\n    D ==> E[\"快速开始\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

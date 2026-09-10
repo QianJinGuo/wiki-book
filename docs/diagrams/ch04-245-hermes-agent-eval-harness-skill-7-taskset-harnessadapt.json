@@ -1,7 +1,7 @@
 [
  {
   "title": "Hermes Agent Eval Harness",
-  "code": "graph TD\ngraph TD\n    A[\"Hermes Agent Eval Harness：可验证 \"] ==> B[\"一、定位：从 SkillOpt 学术到 Eval Harne\"]\n    B ==> C[\"二、为什么 Agent 不能只看这次成功了\"]\n    C ==> D[\"三、Eval Harness 最小闭环：7 模块\"]\n    D ==> E[\"四、任务集不是 prompt 列表，而是环境快照\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Hermes Agent Eval Harness：可验证 \"] ==> B[\"一、定位：从 SkillOpt 学术到 Eval Harne\"]\n    B ==> C[\"二、为什么 Agent 不能只看这次成功了\"]\n    C ==> D[\"三、Eval Harness 最小闭环：7 模块\"]\n    D ==> E[\"四、任务集不是 prompt 列表，而是环境快照\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

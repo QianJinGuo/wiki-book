@@ -1,7 +1,7 @@
 [
  {
   "title": "Stripe Sessions 2026 AI Agents",
-  "code": "graph TD\ngraph TD\n    A[\"摘要\"] ==> B[\"原文存档\"]\n    B ==> C[\"相关资源\"]\n    C ==> D[\"深度分析\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"摘要\"] ==> B[\"原文存档\"]\n    B ==> C[\"相关资源\"]\n    C ==> D[\"深度分析\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

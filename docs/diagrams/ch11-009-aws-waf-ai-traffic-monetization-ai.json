@@ -1,7 +1,7 @@
 [
  {
   "title": "AWS WAF AI Traffic Monetization — 内",
-  "code": "graph TD\ngraph TD\n    A[\"背景\"] ==> B[\"行业背景\"]\n    B ==> C[\"核心能力\"]\n    C ==> D[\"关键概念\"]\n    D ==> E[\"实施流程\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"背景\"] ==> B[\"行业背景\"]\n    B ==> C[\"核心能力\"]\n    C ==> D[\"关键概念\"]\n    D ==> E[\"实施流程\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

@@ -1,7 +1,7 @@
 [
  {
   "title": "AgentScope Builder 快速体验",
-  "code": "graph TD\ngraph TD\n    A[\"背景：Claw 的边界\"] ==> B[\"AgentScope Builder 是什么\"]\n    B ==> C[\"核心设计：workspace 是 Agent 的资产\"]\n    C ==> D[\"零代码 + 自我进化\"]\n    D ==> E[\"核心机制：CompositeFilesystem\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"背景：Claw 的边界\"] ==> B[\"AgentScope Builder 是什么\"]\n    B ==> C[\"核心设计：workspace 是 Agent 的资产\"]\n    C ==> D[\"零代码 + 自我进化\"]\n    D ==> E[\"核心机制：CompositeFilesystem\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

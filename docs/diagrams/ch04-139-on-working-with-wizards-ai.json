@@ -1,7 +1,7 @@
 [
  {
   "title": "On Working with Wizards: AI 从协作到召唤的",
-  "code": "graph TD\ngraph TD\n    A[\"从共同工作者到巫师\"] ==> B[\"Wizard 的力量：GPT-5 Pro 和 Claude \"]\n    B ==> C[\"Wizard 的问题\"]\n    C ==> D[\"我们如何与巫师相处\"]\n    D ==> E[\"深度分析\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"从共同工作者到巫师\"] ==> B[\"Wizard 的力量：GPT-5 Pro 和 Claude \"]\n    B ==> C[\"Wizard 的问题\"]\n    C ==> D[\"我们如何与巫师相处\"]\n    D ==> E[\"深度分析\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

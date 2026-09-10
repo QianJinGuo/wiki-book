@@ -1,7 +1,7 @@
 [
  {
   "title": "Claude 代码能力的系统工程解析",
-  "code": "graph TD\ngraph TD\n    A[\"Claude 代码能力的系统工程解析\"] ==> B[\"一句话\"]\n    B ==> C[\"核心论点\"]\n    C ==> D[\"第一层引擎：代码是 RL 的完美训练场\"]\n    D ==> E[\"第二层引擎：Constitutional AI 为 RL 装\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Claude 代码能力的系统工程解析\"] ==> B[\"一句话\"]\n    B ==> C[\"核心论点\"]\n    C ==> D[\"第一层引擎：代码是 RL 的完美训练场\"]\n    D ==> E[\"第二层引擎：Constitutional AI 为 RL 装\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

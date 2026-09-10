@@ -1,7 +1,7 @@
 [
  {
   "title": "CUGA: IBM Research Enterprise Agent",
-  "code": "graph TD\ngraph TD\n    A[\"Core Positioning\"] ==> B[\"Architecture\"]\n    B ==> C[\"24 Working Examples\"]\n    C ==> D[\"Differentiation from Existing \"]\n    D ==> E[\"Unique Value\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Core Positioning\"] ==> B[\"Architecture\"]\n    B ==> C[\"24 Working Examples\"]\n    C ==> D[\"Differentiation from Existing \"]\n    D ==> E[\"Unique Value\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

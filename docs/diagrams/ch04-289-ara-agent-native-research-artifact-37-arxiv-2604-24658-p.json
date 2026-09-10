@@ -1,7 +1,7 @@
 [
  {
   "title": "ARA — Agent-Native Research Artifac",
-  "code": "graph TD\ngraph TD\n    A[\"ARA — Agent-Native Research Ar\"] ==> B[\"论文与作者\"]\n    B ==> C[\"实践启示\"]\n    C ==> D[\"相关实体\"]\n    D ==> E[\"核心问题\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"ARA — Agent-Native Research Ar\"] ==> B[\"论文与作者\"]\n    B ==> C[\"实践启示\"]\n    C ==> D[\"相关实体\"]\n    D ==> E[\"核心问题\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

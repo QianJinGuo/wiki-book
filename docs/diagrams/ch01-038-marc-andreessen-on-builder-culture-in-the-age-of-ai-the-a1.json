@@ -1,7 +1,7 @@
 [
  {
   "title": "Marc Andreessen on Builder Culture",
-  "code": "graph TD\ngraph TD\n    A[\"Marc Andreessen on Builder Cul\"] ==> B[\"Summary\"]\n    B ==> C[\"Key Points\"]\n    C ==> D[\"Deep Analysis\"]\n    D ==> E[\"Practical Takeaways\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Marc Andreessen on Builder Cul\"] ==> B[\"Summary\"]\n    B ==> C[\"Key Points\"]\n    C ==> D[\"Deep Analysis\"]\n    D ==> E[\"Practical Takeaways\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

@@ -1,7 +1,7 @@
 [
  {
   "title": "Agent Loop 架构三层模型",
-  "code": "graph TD\ngraph TD\n    A[\"核心命题\"] ==> B[\"三层架构\"]\n    B ==> C[\"耐久执行六要素\"]\n    C ==> D[\"自建 Skill 的 Agent\"]\n    D ==> E[\"step 级 checkpoint 的双重价值\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心命题\"] ==> B[\"三层架构\"]\n    B ==> C[\"耐久执行六要素\"]\n    C ==> D[\"自建 Skill 的 Agent\"]\n    D ==> E[\"step 级 checkpoint 的双重价值\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

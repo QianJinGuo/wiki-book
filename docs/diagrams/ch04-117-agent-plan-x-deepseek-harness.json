@@ -1,7 +1,7 @@
 [
  {
   "title": "Agent Plan x DeepSeek Harness 实践指南",
-  "code": "graph TD\ngraph TD\n    A[\"摘要\"] ==> B[\"核心要点\"]\n    B ==> C[\"实践启示\"]\n    C ==> D[\"会话实现：事件是事实，消息是派生物（术哥源码级拆解，SUPP\"]\n    D ==> E[\"相关实体\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"摘要\"] ==> B[\"核心要点\"]\n    B ==> C[\"实践启示\"]\n    C ==> D[\"会话实现：事件是事实，消息是派生物（术哥源码级拆解，SUPP\"]\n    D ==> E[\"相关实体\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

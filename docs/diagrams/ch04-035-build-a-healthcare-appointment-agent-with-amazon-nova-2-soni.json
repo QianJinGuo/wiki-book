@@ -1,7 +1,7 @@
 [
  {
   "title": "Build a Healthcare Appointment Agen",
-  "code": "graph TD\ngraph TD\n    A[\"核心洞察\"] ==> B[\"架构设计\"]\n    B ==> C[\"7 个医疗工具（Strands @tool 装饰器）\"]\n    C ==> D[\"对话流程（4 阶段）\"]\n    D ==> E[\"关键设计决策\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心洞察\"] ==> B[\"架构设计\"]\n    B ==> C[\"7 个医疗工具（Strands @tool 装饰器）\"]\n    C ==> D[\"对话流程（4 阶段）\"]\n    D ==> E[\"关键设计决策\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

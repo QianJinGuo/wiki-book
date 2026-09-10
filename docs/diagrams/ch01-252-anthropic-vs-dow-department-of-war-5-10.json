@@ -1,7 +1,7 @@
 [
  {
   "title": "Anthropic vs DoW (Department of War",
-  "code": "graph TD\ngraph TD\n    A[\"Anthropic vs DoW 与开源模型的 5-10 年\"] ==> B[\"背景\"]\n    B ==> C[\"核心论点：开源是 5-10 年稳定均衡\"]\n    C ==> D[\"关键论据\"]\n    D ==> E[\"与现有实体的差异化\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Anthropic vs DoW 与开源模型的 5-10 年\"] ==> B[\"背景\"]\n    B ==> C[\"核心论点：开源是 5-10 年稳定均衡\"]\n    C ==> D[\"关键论据\"]\n    D ==> E[\"与现有实体的差异化\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

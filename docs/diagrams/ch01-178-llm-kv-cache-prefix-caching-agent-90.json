@@ -1,7 +1,7 @@
 [
  {
   "title": "LLM 缓存原理与实践",
-  "code": "graph TD\ngraph TD\n    A[\"LLM 缓存原理与实践\"] ==> B[\"一句话\"]\n    B ==> C[\"本实体与现有 wiki 的关系\"]\n    C ==> D[\"标签\"]\n    D ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"LLM 缓存原理与实践\"] ==> B[\"一句话\"]\n    B ==> C[\"本实体与现有 wiki 的关系\"]\n    C ==> D[\"标签\"]\n    D ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

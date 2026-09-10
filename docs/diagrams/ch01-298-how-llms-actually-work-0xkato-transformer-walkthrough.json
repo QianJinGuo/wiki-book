@@ -1,7 +1,7 @@
 [
  {
   "title": "How LLMs Actually Work: 0xkato Tran",
-  "code": "graph TD\ngraph TD\n    A[\"概述\"] ==> B[\"关键内容精要\"]\n    B ==> C[\"实践价值\"]\n    C ==> D[\"与现有 LLM 架构实体的差异化\"]\n    D ==> E[\"上线状态\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"概述\"] ==> B[\"关键内容精要\"]\n    B ==> C[\"实践价值\"]\n    C ==> D[\"与现有 LLM 架构实体的差异化\"]\n    D ==> E[\"上线状态\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

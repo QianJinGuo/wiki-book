@@ -1,7 +1,7 @@
 [
  {
   "title": "Anthropic 首次揭秘下一代 Claude 怎么造",
-  "code": "graph TD\ngraph TD\n    A[\"核心信号\"] ==> B[\"深度分析\"]\n    B ==> C[\"详细解读\"]\n    C ==> D[\"实践启示\"]\n    D ==> E[\"相关实体\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心信号\"] ==> B[\"深度分析\"]\n    B ==> C[\"详细解读\"]\n    C ==> D[\"实践启示\"]\n    D ==> E[\"相关实体\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

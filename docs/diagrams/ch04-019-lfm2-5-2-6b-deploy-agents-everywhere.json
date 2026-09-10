@@ -1,7 +1,7 @@
 [
  {
   "title": "LFM2.5-2.6B: Deploy Agents Everywhe",
-  "code": "graph TD\ngraph TD\n    A[\"核心定位：端侧 Agent 的经济学转变\"] ==> B[\"模型规格\"]\n    B ==> C[\"四阶段后训练管线\"]\n    C ==> D[\"与同系列模型的关系\"]\n    D ==> E[\"工程含义\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心定位：端侧 Agent 的经济学转变\"] ==> B[\"模型规格\"]\n    B ==> C[\"四阶段后训练管线\"]\n    C ==> D[\"与同系列模型的关系\"]\n    D ==> E[\"工程含义\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

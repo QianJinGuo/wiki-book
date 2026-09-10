@@ -1,7 +1,7 @@
 [
  {
   "title": "Some ideas for what comes next, May",
-  "code": "graph TD\ngraph TD\n    A[\"关键论断\"] ==> B[\"启示\"]\n    B ==> C[\"相关概念\"]\n    C ==> D[\"来源\"]\n    D ==> E[\"相关实体\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"关键论断\"] ==> B[\"启示\"]\n    B ==> C[\"相关概念\"]\n    C ==> D[\"来源\"]\n    D ==> E[\"相关实体\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

@@ -1,7 +1,7 @@
 [
  {
   "title": "Claude Code 之父最新访谈",
-  "code": "graph TD\ngraph TD\n    A[\"核心要点\"] ==> B[\"相关资源\"]\n    B ==> C[\"关于 Boris Cherny\"]\n    C ==> D[\"Claude Code 的诞生\"]\n    D ==> E[\"编程已经解决了\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心要点\"] ==> B[\"相关资源\"]\n    B ==> C[\"关于 Boris Cherny\"]\n    C ==> D[\"Claude Code 的诞生\"]\n    D ==> E[\"编程已经解决了\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

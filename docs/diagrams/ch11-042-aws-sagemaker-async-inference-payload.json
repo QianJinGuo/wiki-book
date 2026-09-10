@@ -1,7 +1,7 @@
 [
  {
   "title": "AWS SageMaker Async Inference 内联 Pa",
-  "code": "graph TD\ngraph TD\n    A[\"核心变更\"] ==> B[\"Before / After 对比\"]\n    B ==> C[\"适用场景\"]\n    C ==> D[\"Before 模式额外要求\"]\n    D ==> E[\"可用区域\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心变更\"] ==> B[\"Before / After 对比\"]\n    B ==> C[\"适用场景\"]\n    C ==> D[\"Before 模式额外要求\"]\n    D ==> E[\"可用区域\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

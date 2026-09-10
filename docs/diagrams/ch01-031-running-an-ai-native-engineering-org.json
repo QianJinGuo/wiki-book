@@ -1,7 +1,7 @@
 [
  {
   "title": "Running an AI-native engineering or",
-  "code": "graph TD\ngraph TD\n    A[\"实践启示\"] ==> B[\"相关实体\"]\n    B ==> C[\"摘要\"]\n    C ==> D[\"The processes that quietly sto\"]\n    D ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"实践启示\"] ==> B[\"相关实体\"]\n    B ==> C[\"摘要\"]\n    C ==> D[\"The processes that quietly sto\"]\n    D ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

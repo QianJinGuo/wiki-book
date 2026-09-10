@@ -1,7 +1,7 @@
 [
  {
   "title": "HSCodeComp",
-  "code": "graph TD\ngraph TD\n    A[\"核心贡献\"] ==> B[\"分层规则应用（Hierarchical Rule Appli\"]\n    B ==> C[\"与现有 Agent 评测体系的关系\"]\n    C ==> D[\"链接\"]\n    D ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心贡献\"] ==> B[\"分层规则应用（Hierarchical Rule Appli\"]\n    B ==> C[\"与现有 Agent 评测体系的关系\"]\n    C ==> D[\"链接\"]\n    D ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

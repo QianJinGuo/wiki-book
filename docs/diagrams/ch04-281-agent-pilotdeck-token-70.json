@@ -1,7 +1,7 @@
 [
  {
   "title": "小龙虾彻底凉了？清华团队连夜开源Agent神器PilotDeck，To",
-  "code": "graph TD\ngraph TD\n    A[\"PilotDeck：清华系 Agent 操作系统\"] ==> B[\"一句话\"]\n    B ==> C[\"三个核心工程突破\"]\n    C ==> D[\"关键数据\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"PilotDeck：清华系 Agent 操作系统\"] ==> B[\"一句话\"]\n    B ==> C[\"三个核心工程突破\"]\n    C ==> D[\"关键数据\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

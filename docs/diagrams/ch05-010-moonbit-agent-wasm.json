@@ -1,7 +1,7 @@
 [
  {
   "title": "MoonBit",
-  "code": "graph TD\ngraph TD\n    A[\"MoonBit：面向 Agent 协作的编程语言\"] ==> B[\"核心架构：语言即工具链\"]\n    B ==> C[\"AI 原生部署：Wasm 沙箱\"]\n    C ==> D[\"AI 友好性：低资源语言优势\"]\n    D ==> E[\"启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"MoonBit：面向 Agent 协作的编程语言\"] ==> B[\"核心架构：语言即工具链\"]\n    B ==> C[\"AI 原生部署：Wasm 沙箱\"]\n    C ==> D[\"AI 友好性：低资源语言优势\"]\n    D ==> E[\"启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

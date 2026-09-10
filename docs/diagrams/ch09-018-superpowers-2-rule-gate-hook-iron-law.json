@@ -1,7 +1,7 @@
 [
  {
   "title": "Superpowers 深度解读（2）",
-  "code": "graph TD\ngraph TD\n    A[\"一句话\"] ==> B[\"互补角度（vs 百度Geek说版）\"]\n    B ==> C[\"Rule vs Gate vs Hook\"]\n    C ==> D[\"1% Rule\"]\n    D ==> E[\"Iron Law（TDD）\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"一句话\"] ==> B[\"互补角度（vs 百度Geek说版）\"]\n    B ==> C[\"Rule vs Gate vs Hook\"]\n    C ==> D[\"1% Rule\"]\n    D ==> E[\"Iron Law（TDD）\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

@@ -1,7 +1,7 @@
 [
  {
   "title": "browser-use v0.13 Browser Harness",
-  "code": "graph TD\ngraph TD\n    A[\"核心洞察：薄抽象胜过厚封装\"] ==> B[\"Browser Harness 架构（~600 行）\"]\n    B ==> C[\"关键设计特性\"]\n    C ==> D[\"Benchmark 数据\"]\n    D ==> E[\"适用性\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心洞察：薄抽象胜过厚封装\"] ==> B[\"Browser Harness 架构（~600 行）\"]\n    B ==> C[\"关键设计特性\"]\n    C ==> D[\"Benchmark 数据\"]\n    D ==> E[\"适用性\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

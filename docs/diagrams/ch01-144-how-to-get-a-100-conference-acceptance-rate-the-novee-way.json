@@ -1,7 +1,7 @@
 [
  {
   "title": "How to Get a 100% Conference Accept",
-  "code": "graph TD\ngraph TD\n    A[\"深度分析\"] ==> B[\"What you need to know\"]\n    B ==> C[\"The Setup\"]\n    C ==> D[\"Inside the Vulnerability\"]\n    D ==> E[\"相关实体\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"深度分析\"] ==> B[\"What you need to know\"]\n    B ==> C[\"The Setup\"]\n    C ==> D[\"Inside the Vulnerability\"]\n    D ==> E[\"相关实体\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

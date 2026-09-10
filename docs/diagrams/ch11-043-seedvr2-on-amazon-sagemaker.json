@@ -1,7 +1,7 @@
 [
  {
   "title": "SeedVR2 on Amazon SageMaker: 视频超分辨率",
-  "code": "graph TD\ngraph TD\n    A[\"概述\"] ==> B[\"核心技术\"]\n    B ==> C[\"AWS 三层架构\"]\n    C ==> D[\"部署要点\"]\n    D ==> E[\"应用场景\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"概述\"] ==> B[\"核心技术\"]\n    B ==> C[\"AWS 三层架构\"]\n    C ==> D[\"部署要点\"]\n    D ==> E[\"应用场景\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

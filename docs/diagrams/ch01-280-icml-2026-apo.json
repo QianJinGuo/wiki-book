@@ -1,7 +1,7 @@
 [
  {
   "title": "ICML 2026 | APO",
-  "code": "graph TD\ngraph TD\n    A[\"基本信息\"] ==> B[\"研究背景：多教师蒸馏的问题\"]\n    B ==> C[\"APO 框架\"]\n    C ==> D[\"数据集：CXR-MAX\"]\n    D ==> E[\"实验结果\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"基本信息\"] ==> B[\"研究背景：多教师蒸馏的问题\"]\n    B ==> C[\"APO 框架\"]\n    C ==> D[\"数据集：CXR-MAX\"]\n    D ==> E[\"实验结果\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

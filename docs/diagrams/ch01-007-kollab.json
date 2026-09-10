@@ -1,7 +1,7 @@
 [
  {
   "title": "**一、关于 Kollab**",
-  "code": "graph TD\ngraph TD\n    A[\"对抗 Agent 遗忘：Kollab 基于Amazon Be\"] ==> B[\"**一、关于 Kollab**\"]\n    B ==> C[\"**二、架构设计：Agent产品的稳定性**\"]\n    C ==> D[\"**三、架构设计：真值源**\"]\n    D ==> E[\"**四．真实工作流**\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"对抗 Agent 遗忘：Kollab 基于Amazon Be\"] ==> B[\"**一、关于 Kollab**\"]\n    B ==> C[\"**二、架构设计：Agent产品的稳定性**\"]\n    C ==> D[\"**三、架构设计：真值源**\"]\n    D ==> E[\"**四．真实工作流**\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

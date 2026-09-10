@@ -1,7 +1,7 @@
 [
  {
   "title": "Nvidia Agentic AI Subsurface Engine",
-  "code": "graph TD\ngraph TD\n    A[\"Agentic AI for Subsurface Engi\"] ==> B[\"核心要点\"]\n    B ==> C[\"知识关联\"]\n    C ==> D[\"来源\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Agentic AI for Subsurface Engi\"] ==> B[\"核心要点\"]\n    B ==> C[\"知识关联\"]\n    C ==> D[\"来源\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

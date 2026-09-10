@@ -1,7 +1,7 @@
 [
  {
   "title": "Agent 可靠性的工程解法",
-  "code": "graph TD\ngraph TD\n    A[\"概述\"] ==> B[\"两次失败的核心机制\"]\n    B ==> C[\"Skillify 10 步法\"]\n    C ==> D[\"三个关键机制\"]\n    D ==> E[\"三个关键权衡\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"概述\"] ==> B[\"两次失败的核心机制\"]\n    B ==> C[\"Skillify 10 步法\"]\n    C ==> D[\"三个关键机制\"]\n    D ==> E[\"三个关键权衡\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

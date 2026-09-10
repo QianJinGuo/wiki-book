@@ -1,7 +1,7 @@
 [
  {
   "title": "应用宝活动平台 Harness 工程实践",
-  "code": "graph TD\ngraph TD\n    A[\"一句话\"] ==> B[\"从对话式 AI Coding 到 Harness 工程化\"]\n    B ==> C[\"独特贡献\"]\n    C ==> D[\"七条核心原则\"]\n    D ==> E[\"开放性思考\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"一句话\"] ==> B[\"从对话式 AI Coding 到 Harness 工程化\"]\n    B ==> C[\"独特贡献\"]\n    C ==> D[\"七条核心原则\"]\n    D ==> E[\"开放性思考\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

@@ -1,7 +1,7 @@
 [
  {
   "title": "Enterprise Software Moats in the Ag",
-  "code": "graph TD\ngraph TD\n    A[\"核心问题\"] ==> B[\"旧世界护城河：五维评估框架\"]\n    B ==> C[\"Agent 时代的护城河重塑\"]\n    C ==> D[\"新护城河：三条路\"]\n    D ==> E[\"新数据护城河逻辑\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心问题\"] ==> B[\"旧世界护城河：五维评估框架\"]\n    B ==> C[\"Agent 时代的护城河重塑\"]\n    C ==> D[\"新护城河：三条路\"]\n    D ==> E[\"新数据护城河逻辑\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

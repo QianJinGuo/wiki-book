@@ -1,7 +1,7 @@
 [
  {
   "title": "Claude Managed Agents 新更新\\\"专属云\\\"模式",
-  "code": "graph TD\ngraph TD\n    A[\"架构边界：brain 与 hands 的分离\"] ==> B[\"Self-Hosted Sandboxes 的机制与价值\"]\n    B ==> C[\"MCP Tunnels：私有工具的网络可达性\"]\n    C ==> D[\"与 5 月 6 日更新的互补关系\"]\n    D ==> E[\"社区质疑的回应进度\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"架构边界：brain 与 hands 的分离\"] ==> B[\"Self-Hosted Sandboxes 的机制与价值\"]\n    B ==> C[\"MCP Tunnels：私有工具的网络可达性\"]\n    C ==> D[\"与 5 月 6 日更新的互补关系\"]\n    D ==> E[\"社区质疑的回应进度\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

@@ -1,7 +1,7 @@
 [
  {
   "title": "Langsmith Trajectory Evals",
-  "code": "graph TD\ngraph TD\n    A[\"LangSmith Trajectory Evaluatio\"] ==> B[\"核心要点\"]\n    B ==> C[\"评估模式\"]\n    C ==> D[\"为什么适合 wiki-evolver\"]\n    D ==> E[\"深度分析\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"LangSmith Trajectory Evaluatio\"] ==> B[\"核心要点\"]\n    B ==> C[\"评估模式\"]\n    C ==> D[\"为什么适合 wiki-evolver\"]\n    D ==> E[\"深度分析\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

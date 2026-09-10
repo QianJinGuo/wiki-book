@@ -1,7 +1,7 @@
 [
  {
   "title": "Every Team is Building the Same Cac",
-  "code": "graph TD\ngraph TD\n    A[\"The shape of the problem\"] ==> B[\"Why does it keep happening\"]\n    B ==> C[\"What were working on\"]\n    C ==> D[\"关联\"]\n    D ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"The shape of the problem\"] ==> B[\"Why does it keep happening\"]\n    B ==> C[\"What were working on\"]\n    C ==> D[\"关联\"]\n    D ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

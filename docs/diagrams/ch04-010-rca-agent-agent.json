@@ -1,7 +1,7 @@
 [
  {
   "title": "快手 RCA Agent",
-  "code": "graph TD\ngraph TD\n    A[\"一句话\"] ==> B[\"核心洞察\"]\n    B ==> C[\"四大挑战与解法\"]\n    C ==> D[\"Multi-Agent 架构\"]\n    D ==> E[\"分层架构\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"一句话\"] ==> B[\"核心洞察\"]\n    B ==> C[\"四大挑战与解法\"]\n    C ==> D[\"Multi-Agent 架构\"]\n    D ==> E[\"分层架构\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

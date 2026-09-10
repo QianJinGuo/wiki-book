@@ -1,7 +1,7 @@
 [
  {
   "title": "Markdown 不会过时",
-  "code": "graph TD\ngraph TD\n    A[\"Thariq 的 HTML 主张 vs Markdown\"] ==> B[\"为什么 Markdown 最适合 AI\"]\n    B ==> C[\"相关实体\"]\n    C ==> D[\"深度分析\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Thariq 的 HTML 主张 vs Markdown\"] ==> B[\"为什么 Markdown 最适合 AI\"]\n    B ==> C[\"相关实体\"]\n    C ==> D[\"深度分析\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

@@ -1,7 +1,7 @@
 [
  {
   "title": "精选 8 个 UI 设计师必备的 AI 智能体技能（Agent Ski",
-  "code": "graph TD\ngraph TD\n    A[\"深度分析\"] ==> B[\"实践启示\"]\n    B ==> C[\"为什么要关注安装顺序\"]\n    C ==> D[\"1\\. ui-ux-pro-max — 你的设计智能系统\"]\n    D ==> E[\"2\\. frontend-design — 官方设计模式\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"深度分析\"] ==> B[\"实践启示\"]\n    B ==> C[\"为什么要关注安装顺序\"]\n    C ==> D[\"1\\. ui-ux-pro-max — 你的设计智能系统\"]\n    D ==> E[\"2\\. frontend-design — 官方设计模式\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

@@ -1,7 +1,7 @@
 [
  {
   "title": "Agentic Robot Policy Self-Improveme",
-  "code": "graph TD\ngraph TD\n    A[\"ENPIRE: Agentic Robot Policy S\"] ==> B[\"Abstract\"]\n    B ==> C[\"Learned Manipulation Policy\"]\n    C ==> D[\"ENPIRE System\"]\n    D ==> E[\"TODO: auto task reset\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"ENPIRE: Agentic Robot Policy S\"] ==> B[\"Abstract\"]\n    B ==> C[\"Learned Manipulation Policy\"]\n    C ==> D[\"ENPIRE System\"]\n    D ==> E[\"TODO: auto task reset\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

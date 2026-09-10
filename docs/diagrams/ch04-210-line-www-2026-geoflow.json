@@ -1,7 +1,7 @@
 [
  {
   "title": "LINE 论文 WWW 2026 时间检验奖与 GeoFlow",
-  "code": "graph TD\ngraph TD\n    A[\"核心人物\"] ==> B[\"技术演化路径\"]\n    B ==> C[\"GeoFlow 三代进化\"]\n    C ==> D[\"商业落地\"]\n    D ==> E[\"背景\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心人物\"] ==> B[\"技术演化路径\"]\n    B ==> C[\"GeoFlow 三代进化\"]\n    C ==> D[\"商业落地\"]\n    D ==> E[\"背景\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

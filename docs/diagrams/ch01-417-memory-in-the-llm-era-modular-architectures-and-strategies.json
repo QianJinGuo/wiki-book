@@ -1,7 +1,7 @@
 [
  {
   "title": "Memory in the LLM Era: Modular Arch",
-  "code": "graph TD\ngraph TD\n    A[\"概述\"] ==> B[\"背景问题\"]\n    B ==> C[\"核心贡献：四组件统一框架\"]\n    C ==> D[\"实验设计与评估\"]\n    D ==> E[\"关键发现\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"概述\"] ==> B[\"背景问题\"]\n    B ==> C[\"核心贡献：四组件统一框架\"]\n    C ==> D[\"实验设计与评估\"]\n    D ==> E[\"关键发现\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

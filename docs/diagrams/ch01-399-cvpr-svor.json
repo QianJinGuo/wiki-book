@@ -1,7 +1,7 @@
 [
  {
   "title": "CVPR冠军代码开源",
-  "code": "graph TD\ngraph TD\n    A[\"Summary\"] ==> B[\"Key Points\"]\n    B ==> C[\"相关实体\"]\n    C ==> D[\"实践启示\"]\n    D ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Summary\"] ==> B[\"Key Points\"]\n    B ==> C[\"相关实体\"]\n    C ==> D[\"实践启示\"]\n    D ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

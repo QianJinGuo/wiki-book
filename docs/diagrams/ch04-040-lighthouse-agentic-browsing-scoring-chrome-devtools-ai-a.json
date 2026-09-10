@@ -1,7 +1,7 @@
 [
  {
   "title": "Lighthouse Agentic Browsing Scoring",
-  "code": "graph TD\ngraph TD\n    A[\"Lighthouse Agentic Browsing Sc\"] ==> B[\"核心评估维度\"]\n    B ==> C[\"评分机制（非传统模式）\"]\n    C ==> D[\"开发者改进路径\"]\n    D ==> E[\"战略意义\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Lighthouse Agentic Browsing Sc\"] ==> B[\"核心评估维度\"]\n    B ==> C[\"评分机制（非传统模式）\"]\n    C ==> D[\"开发者改进路径\"]\n    D ==> E[\"战略意义\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

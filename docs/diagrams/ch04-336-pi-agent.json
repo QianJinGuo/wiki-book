@@ -1,7 +1,7 @@
 [
  {
   "title": "Pi",
-  "code": "graph TD\ngraph TD\n    A[\"摘要\"] ==> B[\"架构特点\"]\n    B ==> C[\"Gondolin 沙箱\"]\n    C ==> D[\"与其他框架的对比\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"摘要\"] ==> B[\"架构特点\"]\n    B ==> C[\"Gondolin 沙箱\"]\n    C ==> D[\"与其他框架的对比\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

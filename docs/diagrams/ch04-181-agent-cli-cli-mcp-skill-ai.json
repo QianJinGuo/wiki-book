@@ -1,7 +1,7 @@
 [
  {
   "title": "为什么 Agent 时代大家都在做 CLI",
-  "code": "graph TD\ngraph TD\n    A[\"核心框架：CLI / MCP / SKILL 三层模型\"] ==> B[\"Agent + CLI 五大结构性优势\"]\n    B ==> C[\"AI 友好产品设计四原则\"]\n    C ==> D[\"人机协作可观测性\"]\n    D ==> E[\"Agent First 设计范式（类比 Mobile Fir\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心框架：CLI / MCP / SKILL 三层模型\"] ==> B[\"Agent + CLI 五大结构性优势\"]\n    B ==> C[\"AI 友好产品设计四原则\"]\n    C ==> D[\"人机协作可观测性\"]\n    D ==> E[\"Agent First 设计范式（类比 Mobile Fir\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

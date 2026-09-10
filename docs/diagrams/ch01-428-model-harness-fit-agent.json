@@ -1,7 +1,7 @@
 [
  {
   "title": "Model-Harness Fit",
-  "code": "graph TD\ngraph TD\n    A[\"Model-Harness-Fit：模型与壳的适配性\"] ==> B[\"核心论点：Model-Harness-Fit\"]\n    B ==> C[\"让人不舒服的榜单\"]\n    C ==> D[\"为什么模型不是单独存在的\"]\n    D ==> E[\"三种壳，三种完全不同的协议\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Model-Harness-Fit：模型与壳的适配性\"] ==> B[\"核心论点：Model-Harness-Fit\"]\n    B ==> C[\"让人不舒服的榜单\"]\n    C ==> D[\"为什么模型不是单独存在的\"]\n    D ==> E[\"三种壳，三种完全不同的协议\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

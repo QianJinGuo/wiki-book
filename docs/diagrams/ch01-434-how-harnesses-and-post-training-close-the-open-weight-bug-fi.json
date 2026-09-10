@@ -1,7 +1,7 @@
 [
  {
   "title": "How harnesses and post-training clo",
-  "code": "graph TD\ngraph TD\n    A[\"Core thesis\"] ==> B[\"Empirical setup\"]\n    B ==> C[\"Key findings\"]\n    C ==> D[\"Implications for the wiki\"]\n    D ==> E[\"Methodology strengths\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Core thesis\"] ==> B[\"Empirical setup\"]\n    B ==> C[\"Key findings\"]\n    C ==> D[\"Implications for the wiki\"]\n    D ==> E[\"Methodology strengths\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

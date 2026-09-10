@@ -1,7 +1,7 @@
 [
  {
   "title": "要实现一个工作流选择-agent-skills-还是-ai-表格",
-  "code": "graph TD\ngraph TD\n    A[\"核心要点\"] ==> B[\"工作流 AI 的定义与市场现状\"]\n    B ==> C[\"企业场景选型：为什么 Agent 平台难落地\"]\n    C ==> D[\"AI 表格为什么成为主流承载体\"]\n    D ==> E[\"AI Office 场景的角逐\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心要点\"] ==> B[\"工作流 AI 的定义与市场现状\"]\n    B ==> C[\"企业场景选型：为什么 Agent 平台难落地\"]\n    C ==> D[\"AI 表格为什么成为主流承载体\"]\n    D ==> E[\"AI Office 场景的角逐\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

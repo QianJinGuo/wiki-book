@@ -1,7 +1,7 @@
 [
  {
   "title": "Getting more from each token: How C",
-  "code": "graph TD\ngraph TD\n    A[\"Increased prompt caching and d\"] ==> B[\"Where GitHub Copilot auto mode\"]\n    B ==> C[\"How Auto selects the right mod\"]\n    C ==> D[\"关联\"]\n    D ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Increased prompt caching and d\"] ==> B[\"Where GitHub Copilot auto mode\"]\n    B ==> C[\"How Auto selects the right mod\"]\n    C ==> D[\"关联\"]\n    D ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

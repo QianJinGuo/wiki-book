@@ -1,7 +1,7 @@
 [
  {
   "title": "OpenAI buys AI consultancy to sell",
-  "code": "graph TD\ngraph TD\n    A[\"Summary\"] ==> B[\"Notes\"]\n    B ==> C[\"相关实体\"]\n    C ==> D[\"深度分析\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Summary\"] ==> B[\"Notes\"]\n    B ==> C[\"相关实体\"]\n    C ==> D[\"深度分析\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

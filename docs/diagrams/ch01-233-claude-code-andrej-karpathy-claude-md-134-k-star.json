@@ -1,7 +1,7 @@
 [
  {
   "title": "最佳 Claude Code 配置",
-  "code": "graph TD\ngraph TD\n    A[\"实践启示\"] ==> B[\"背景与起源\"]\n    B ==> C[\"CLAUDE.md 完整内容（四条规则）\"]\n    C ==> D[\"1. Think Before Coding\"]\n    D ==> E[\"2. Simplicity First\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"实践启示\"] ==> B[\"背景与起源\"]\n    B ==> C[\"CLAUDE.md 完整内容（四条规则）\"]\n    C ==> D[\"1. Think Before Coding\"]\n    D ==> E[\"2. Simplicity First\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

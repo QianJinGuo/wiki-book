@@ -1,7 +1,7 @@
 [
  {
   "title": "清华自进化Skill双星",
-  "code": "graph TD\ngraph TD\n    A[\"核心问题\"] ==> B[\"EmbodiSkill：诊断层——先判断\"哪里\"出了问题\"]\n    B ==> C[\"SkillEvolver：生成层加自动生成技能改进方案\"]\n    C ==> D[\"实践启示\"]\n    D ==> E[\"参考链接\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心问题\"] ==> B[\"EmbodiSkill：诊断层——先判断\"哪里\"出了问题\"]\n    B ==> C[\"SkillEvolver：生成层加自动生成技能改进方案\"]\n    C ==> D[\"实践启示\"]\n    D ==> E[\"参考链接\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

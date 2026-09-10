@@ -1,7 +1,7 @@
 [
  {
   "title": "Explicit vs. Implicit in the Age of",
-  "code": "graph TD\ngraph TD\n    A[\"Explicit vs. Implicit in the A\"] ==> B[\"相关实体\"]\n    B ==> C[\"深度分析\"]\n    C ==> D[\"实践启示\"]\n    D ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Explicit vs. Implicit in the A\"] ==> B[\"相关实体\"]\n    B ==> C[\"深度分析\"]\n    C ==> D[\"实践启示\"]\n    D ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

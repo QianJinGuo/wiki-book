@@ -1,7 +1,7 @@
 [
  {
   "title": "Anthropic 官方生产级 Agent 最佳实践",
-  "code": "graph TD\ngraph TD\n    A[\"微信正文\"] ==> B[\"背景：MCP 的定位\"]\n    B ==> C[\"五组12模式\"]\n    C ==> D[\"结语\"]\n    D ==> E[\"参考资源\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"微信正文\"] ==> B[\"背景：MCP 的定位\"]\n    B ==> C[\"五组12模式\"]\n    C ==> D[\"结语\"]\n    D ==> E[\"参考资源\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

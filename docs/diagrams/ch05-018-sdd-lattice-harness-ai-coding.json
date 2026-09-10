@@ -1,7 +1,7 @@
 [
  {
   "title": "从渐进式 SDD 到 Lattice Harness",
-  "code": "graph TD\ngraph TD\n    A[\"核心概述\"] ==> B[\"五大工程缺口\"]\n    B ==> C[\"Lattice 架构\"]\n    C ==> D[\"实践启示\"]\n    D ==> E[\"相关实体\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心概述\"] ==> B[\"五大工程缺口\"]\n    B ==> C[\"Lattice 架构\"]\n    C ==> D[\"实践启示\"]\n    D ==> E[\"相关实体\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

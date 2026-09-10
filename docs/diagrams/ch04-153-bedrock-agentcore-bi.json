@@ -1,7 +1,7 @@
 [
  {
   "title": "Bedrock AgentCore 构建 BI 智能体",
-  "code": "graph TD\ngraph TD\n    A[\"核心要点\"] ==> B[\"相关实体\"]\n    B ==> C[\"案例概述\"]\n    C ==> D[\"技术架构\"]\n    D ==> E[\"三大 AI Agent 详解\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心要点\"] ==> B[\"相关实体\"]\n    B ==> C[\"案例概述\"]\n    C ==> D[\"技术架构\"]\n    D ==> E[\"三大 AI Agent 详解\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

@@ -1,7 +1,7 @@
 [
  {
   "title": "打造可靠的 AI 编程环境",
-  "code": "graph TD\ngraph TD\n    A[\"Claude Code Hooks 是什么？\"] ==> B[\"Hooks 工作原理：事件驱动的四步流程\"]\n    B ==> C[\"Hooks 事件类型：快速参考表\"]\n    C ==> D[\"四种 Hook 类型详解\"]\n    D ==> E[\"7 个生产级 Hook 示例（开箱即用）\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Claude Code Hooks 是什么？\"] ==> B[\"Hooks 工作原理：事件驱动的四步流程\"]\n    B ==> C[\"Hooks 事件类型：快速参考表\"]\n    C ==> D[\"四种 Hook 类型详解\"]\n    D ==> E[\"7 个生产级 Hook 示例（开箱即用）\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

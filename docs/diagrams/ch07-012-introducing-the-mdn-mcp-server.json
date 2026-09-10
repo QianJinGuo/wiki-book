@@ -1,7 +1,7 @@
 [
  {
   "title": "Introducing the MDN MCP server",
-  "code": "graph TD\ngraph TD\n    A[\"三个独有贡献（不应合并到现有 entity）\"] ==> B[\"MDN MCP server 的核心能力\"]\n    B ==> C[\"与现有 MCP 实体的差异化\"]\n    C ==> D[\"实践启示\"]\n    D ==> E[\"相关主题\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"三个独有贡献（不应合并到现有 entity）\"] ==> B[\"MDN MCP server 的核心能力\"]\n    B ==> C[\"与现有 MCP 实体的差异化\"]\n    C ==> D[\"实践启示\"]\n    D ==> E[\"相关主题\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

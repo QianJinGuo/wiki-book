@@ -1,7 +1,7 @@
 [
  {
   "title": "Hermes Agent 自进化源码分析",
-  "code": "graph TD\ngraph TD\n    A[\"深度分析\"] ==> B[\"实践启示\"]\n    B ==> C[\"相关实体\"]\n    C ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"深度分析\"] ==> B[\"实践启示\"]\n    B ==> C[\"相关实体\"]\n    C ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

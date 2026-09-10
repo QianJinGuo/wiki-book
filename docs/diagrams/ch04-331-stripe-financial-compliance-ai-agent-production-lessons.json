@@ -1,7 +1,7 @@
 [
  {
   "title": "Stripe Financial Compliance AI Agen",
-  "code": "graph TD\ngraph TD\n    A[\"核心架构：ReAct + DAG 任务分解\"] ==> B[\"LLM Proxy 架构\"]\n    B ==> C[\"成本优化：Prompt Caching\"]\n    C ==> D[\"生产结果\"]\n    D ==> E[\"关键经验（可复用模式）\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心架构：ReAct + DAG 任务分解\"] ==> B[\"LLM Proxy 架构\"]\n    B ==> C[\"成本优化：Prompt Caching\"]\n    C ==> D[\"生产结果\"]\n    D ==> E[\"关键经验（可复用模式）\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

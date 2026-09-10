@@ -1,7 +1,7 @@
 [
  {
   "title": "全网最全的Claude Fable 5 省钱攻略都在这了",
-  "code": "graph TD\ngraph TD\n    A[\"全网最全的Claude Fable 5 省钱攻略都在这了\"] ==> B[\"全网最全的Claude Fable 5 省钱攻略都在这了\"]\n    B ==> C[\"◈第一个：把Fable 5 蒸馏成skill\"]\n    C ==> D[\"◈第二个：文字转图片，最高省70%\"]\n    D ==> E[\"◈第三种：Fable 只当包工头，搬砖交给便宜模型\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"全网最全的Claude Fable 5 省钱攻略都在这了\"] ==> B[\"全网最全的Claude Fable 5 省钱攻略都在这了\"]\n    B ==> C[\"◈第一个：把Fable 5 蒸馏成skill\"]\n    C ==> D[\"◈第二个：文字转图片，最高省70%\"]\n    D ==> E[\"◈第三种：Fable 只当包工头，搬砖交给便宜模型\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

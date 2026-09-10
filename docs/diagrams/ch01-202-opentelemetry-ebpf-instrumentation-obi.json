@@ -1,7 +1,7 @@
 [
  {
   "title": "OpenTelemetry eBPF Instrumentation",
-  "code": "graph TD\ngraph TD\n    A[\"一、为什么需要 eBPF 零代码可观测性\"] ==> B[\"二、OBI 三大支柱\"]\n    B ==> C[\"三、协议识别：三级瀑布式匹配\"]\n    C ==> D[\"四、语言深度集成：不止于网络层\"]\n    D ==> E[\"五、数据管线：DAG + 死锁探测 + 对象池\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"一、为什么需要 eBPF 零代码可观测性\"] ==> B[\"二、OBI 三大支柱\"]\n    B ==> C[\"三、协议识别：三级瀑布式匹配\"]\n    C ==> D[\"四、语言深度集成：不止于网络层\"]\n    D ==> E[\"五、数据管线：DAG + 死锁探测 + 对象池\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

@@ -1,7 +1,7 @@
 [
  {
   "title": "Subagents 详解",
-  "code": "graph TD\ngraph TD\n    A[\"太长不看\"] ==> B[\"同一条线索\"]\n    B ==> C[\"长会话为什么会变脏\"]\n    C ==> D[\"Subagent 的价值不是「多开一个 Agent」\"]\n    D ==> E[\"一个 Subagent 文件长什么样\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"太长不看\"] ==> B[\"同一条线索\"]\n    B ==> C[\"长会话为什么会变脏\"]\n    C ==> D[\"Subagent 的价值不是「多开一个 Agent」\"]\n    D ==> E[\"一个 Subagent 文件长什么样\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

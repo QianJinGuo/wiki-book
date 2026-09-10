@@ -1,7 +1,7 @@
 [
  {
   "title": "Codex /goal",
-  "code": "graph TD\ngraph TD\n    A[\"核心论点\"] ==> B[\"三层设计\"]\n    B ==> C[\"Goal vs Loop：根本差别\"]\n    C ==> D[\"工作现场六组件\"]\n    D ==> E[\"三条可搬回实践\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心论点\"] ==> B[\"三层设计\"]\n    B ==> C[\"Goal vs Loop：根本差别\"]\n    C ==> D[\"工作现场六组件\"]\n    D ==> E[\"三条可搬回实践\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

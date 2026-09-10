@@ -1,7 +1,7 @@
 [
  {
   "title": "欢迎来到 AGI 时代的 AI 治理 — Nathan Lambert",
-  "code": "graph TD\ngraph TD\n    A[\"事件背景\"] ==> B[\"Lambert 的 6 点核心论点\"]\n    B ==> C[\"AGI 时代的治理范式转换\"]\n    C ==> D[\"与现有实体的关系\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"事件背景\"] ==> B[\"Lambert 的 6 点核心论点\"]\n    B ==> C[\"AGI 时代的治理范式转换\"]\n    C ==> D[\"与现有实体的关系\"]\n    D ==> E[\"实践启示\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

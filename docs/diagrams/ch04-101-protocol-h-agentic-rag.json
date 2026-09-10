@@ -1,7 +1,7 @@
 [
  {
   "title": "Protocol H",
-  "code": "graph TD\ngraph TD\n    A[\"protocol-h-hierarchical-agenti\"] ==> B[\"模态鸿沟问题：传统RAG为什么无能为力\"]\n    B ==> C[\"分层Agentic解决方案：Protocol-H架构总览\"]\n    C ==> D[\"组件详解\"]\n    D ==> E[\"Reflective Retry机制：自主错误恢复\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"protocol-h-hierarchical-agenti\"] ==> B[\"模态鸿沟问题：传统RAG为什么无能为力\"]\n    B ==> C[\"分层Agentic解决方案：Protocol-H架构总览\"]\n    C ==> D[\"组件详解\"]\n    D ==> E[\"Reflective Retry机制：自主错误恢复\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

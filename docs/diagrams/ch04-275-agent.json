@@ -1,7 +1,7 @@
 [
  {
   "title": "Agent演化",
-  "code": "graph TD\ngraph TD\n    A[\"核心框架\"] ==> B[\"三层体系的架构映射\"]\n    B ==> C[\"短期分化原因\"]\n    C ==> D[\"长期必融合的原因\"]\n    D ==> E[\"受治理Agent Runtime\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心框架\"] ==> B[\"三层体系的架构映射\"]\n    B ==> C[\"短期分化原因\"]\n    C ==> D[\"长期必融合的原因\"]\n    D ==> E[\"受治理Agent Runtime\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

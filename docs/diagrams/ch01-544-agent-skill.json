@@ -1,7 +1,7 @@
 [
  {
   "title": "Agent Skill 进阶模式与治理",
-  "code": "graph TD\ngraph TD\n    A[\"五种进阶模式（Anthropic 官方实践经验）\"] ==> B[\"安装与团队治理\"]\n    B ==> C[\"YAML Frontmatter 完整规范\"]\n    C ==> D[\"实战调试案例：从需求到可用 Skill\"]\n    D ==> E[\"相关实体\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"五种进阶模式（Anthropic 官方实践经验）\"] ==> B[\"安装与团队治理\"]\n    B ==> C[\"YAML Frontmatter 完整规范\"]\n    C ==> D[\"实战调试案例：从需求到可用 Skill\"]\n    D ==> E[\"相关实体\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

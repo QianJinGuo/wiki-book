@@ -1,7 +1,7 @@
 [
  {
   "title": "Karpathy's Autoresearch found a 3-y",
-  "code": "graph TD\ngraph TD\n    A[\"概述\"] ==> B[\"正文要点\"]\n    B ==> C[\"实践启示\"]\n    C ==> D[\"相关实体\"]\n    D ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"概述\"] ==> B[\"正文要点\"]\n    B ==> C[\"实践启示\"]\n    C ==> D[\"相关实体\"]\n    D ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

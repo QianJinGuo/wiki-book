@@ -1,7 +1,7 @@
 [
  {
   "title": "Co-Existence vs Co-Intelligence: Mo",
-  "code": "graph TD\ngraph TD\n    A[\"核心论点：从 Co-Intelligence 到 Co-Ex\"] ==> B[\"三个独有贡献（不应合并到现有 entity）\"]\n    B ==> C[\"「for-AI Page」模式（web 设计新兴模式）\"]\n    C ==> D[\"「拒绝 AI 帮助」的合法性\"]\n    D ==> E[\"与现有 entity 的差异化\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心论点：从 Co-Intelligence 到 Co-Ex\"] ==> B[\"三个独有贡献（不应合并到现有 entity）\"]\n    B ==> C[\"「for-AI Page」模式（web 设计新兴模式）\"]\n    C ==> D[\"「拒绝 AI 帮助」的合法性\"]\n    D ==> E[\"与现有 entity 的差异化\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

@@ -1,7 +1,7 @@
 [
  {
   "title": "GenRec: Netflix LLM 原生推荐排序器",
-  "code": "graph TD\ngraph TD\n    A[\"概述\"] ==> B[\"两阶段训练框架\"]\n    B ==> C[\"训练数据即对话\"]\n    C ==> D[\"转写与 Context Engineering\"]\n    D ==> E[\"多目标损失\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"概述\"] ==> B[\"两阶段训练框架\"]\n    B ==> C[\"训练数据即对话\"]\n    C ==> D[\"转写与 Context Engineering\"]\n    D ==> E[\"多目标损失\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

@@ -1,7 +1,7 @@
 [
  {
   "title": "Higress Qwen3Guard Wasm 插件",
-  "code": "graph TD\ngraph TD\n    A[\"概述\"] ==> B[\"双路审核：请求侧 + 响应侧\"]\n    B ==> C[\"SSE 流式审核：双状态缓冲 + 分段送检\"]\n    C ==> D[\"执行阶段与优先级：和 ai-proxy 的排序\"]\n    D ==> E[\"服务发现与部署\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"概述\"] ==> B[\"双路审核：请求侧 + 响应侧\"]\n    B ==> C[\"SSE 流式审核：双状态缓冲 + 分段送检\"]\n    C ==> D[\"执行阶段与优先级：和 ai-proxy 的排序\"]\n    D ==> E[\"服务发现与部署\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

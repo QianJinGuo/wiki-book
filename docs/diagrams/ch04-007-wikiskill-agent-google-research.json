@@ -1,7 +1,7 @@
 [
  {
   "title": "WikiSkill",
-  "code": "graph TD\ngraph TD\n    A[\"WikiSkill：将 Agent 经验编译为持久知识以驱动\"] ==> B[\"三层架构 + 四步循环\"]\n    B ==> C[\"关键结果：技能进化与模型规模互补、技能可跨模型迁移\"]\n    C ==> D[\"消融：持久知识库值多少分\"]\n    D ==> E[\"案例：ALFWorld 知识复利（Qwen-27B）\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"WikiSkill：将 Agent 经验编译为持久知识以驱动\"] ==> B[\"三层架构 + 四步循环\"]\n    B ==> C[\"关键结果：技能进化与模型规模互补、技能可跨模型迁移\"]\n    C ==> D[\"消融：持久知识库值多少分\"]\n    D ==> E[\"案例：ALFWorld 知识复利（Qwen-27B）\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

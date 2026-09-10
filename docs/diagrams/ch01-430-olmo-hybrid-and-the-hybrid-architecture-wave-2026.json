@@ -1,7 +1,7 @@
 [
  {
   "title": "Olmo Hybrid and the Hybrid Architec",
-  "code": "graph TD\ngraph TD\n    A[\"Hybrid 架构浪潮的 2026 春季清单\"] ==> B[\"历史脉络：从 Mamba 到 Hybrid\"]\n    B ==> C[\"Olmo Hybrid 模型规格\"]\n    C ==> D[\"关键理论：Hybrid > Transformer\"]\n    D ==> E[\"Post-training 的挑战\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Hybrid 架构浪潮的 2026 春季清单\"] ==> B[\"历史脉络：从 Mamba 到 Hybrid\"]\n    B ==> C[\"Olmo Hybrid 模型规格\"]\n    C ==> D[\"关键理论：Hybrid > Transformer\"]\n    D ==> E[\"Post-training 的挑战\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

@@ -1,7 +1,7 @@
 [
  {
   "title": "Agent 时间性策略（Temporal Policies）",
-  "code": "graph TD\ngraph TD\n    A[\"Stateless 授权的三个失效场景\"] ==> B[\"Temporal Policy 的机制\"]\n    B ==> C[\"常见 Temporal Policy 用例分类学\"]\n    C ==> D[\"Dogwood：为 agent 与工具设计的新开源治理语言\"]\n    D ==> E[\"与其他实体关系\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Stateless 授权的三个失效场景\"] ==> B[\"Temporal Policy 的机制\"]\n    B ==> C[\"常见 Temporal Policy 用例分类学\"]\n    C ==> D[\"Dogwood：为 agent 与工具设计的新开源治理语言\"]\n    D ==> E[\"与其他实体关系\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

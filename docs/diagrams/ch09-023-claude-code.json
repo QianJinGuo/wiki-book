@@ -1,7 +1,7 @@
 [
  {
   "title": "Claude Code 为什么会忽略指令",
-  "code": "graph TD\ngraph TD\n    A[\"核心概述\"] ==> B[\"指令失效的四类原因\"]\n    B ==> C[\"五层规则框架\"]\n    C ==> D[\"CLAUDE.md 的定位：入口卡而非总控台\"]\n    D ==> E[\"实操：变胖的 CLAUDE.md 怎么收\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心概述\"] ==> B[\"指令失效的四类原因\"]\n    B ==> C[\"五层规则框架\"]\n    C ==> D[\"CLAUDE.md 的定位：入口卡而非总控台\"]\n    D ==> E[\"实操：变胖的 CLAUDE.md 怎么收\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

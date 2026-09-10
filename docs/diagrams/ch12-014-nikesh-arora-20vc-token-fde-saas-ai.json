@@ -1,7 +1,7 @@
 [
  {
   "title": "Nikesh Arora 20VC 访谈",
-  "code": "graph TD\ngraph TD\n    A[\"摘要\"] ==> B[\"核心观点\"]\n    B ==> C[\"关键引用\"]\n    C ==> D[\"与现有知识的关系\"]\n    D ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"摘要\"] ==> B[\"核心观点\"]\n    B ==> C[\"关键引用\"]\n    C ==> D[\"与现有知识的关系\"]\n    D ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

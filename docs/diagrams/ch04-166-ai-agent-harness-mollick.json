@@ -1,7 +1,7 @@
 [
  {
   "title": "AI Agent 时代选型指南",
-  "code": "graph TD\ngraph TD\n    A[\"核心框架：Models · Apps · Harnesses\"] ==> B[\"模型选型（2026 年初现状）\"]\n    B ==> C[\"Harness 深度对比\"]\n    C ==> D[\"AI 使用建议（Mollick）\"]\n    D ==> E[\"关键引用\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心框架：Models · Apps · Harnesses\"] ==> B[\"模型选型（2026 年初现状）\"]\n    B ==> C[\"Harness 深度对比\"]\n    C ==> D[\"AI 使用建议（Mollick）\"]\n    D ==> E[\"关键引用\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

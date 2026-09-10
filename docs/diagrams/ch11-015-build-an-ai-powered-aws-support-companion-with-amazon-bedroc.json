@@ -1,7 +1,7 @@
 [
  {
   "title": "Build an AI-powered AWS support com",
-  "code": "graph TD\ngraph TD\n    A[\"Build an AI-powered AWS suppor\"] ==> B[\"The incident investigation bot\"]\n    B ==> C[\"Solution overview\"]\n    C ==> D[\"关联\"]\n    D ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Build an AI-powered AWS suppor\"] ==> B[\"The incident investigation bot\"]\n    B ==> C[\"Solution overview\"]\n    C ==> D[\"关联\"]\n    D ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

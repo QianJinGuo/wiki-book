@@ -1,7 +1,7 @@
 [
  {
   "title": "Reinforcing Recursive Language Mode",
-  "code": "graph TD\ngraph TD\n    A[\"Summary\"] ==> B[\"Notes\"]\n    B ==> C[\"深度分析\"]\n    C ==> D[\"实践启示\"]\n    D ==> E[\"相关实体\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"Summary\"] ==> B[\"Notes\"]\n    B ==> C[\"深度分析\"]\n    C ==> D[\"实践启示\"]\n    D ==> E[\"相关实体\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]

@@ -1,7 +1,7 @@
 [
  {
   "title": "高德路线规划双路线",
-  "code": "graph TD\ngraph TD\n    A[\"核心命题\"] ==> B[\"双路线战略\"]\n    B ==> C[\"第一路线：MobilityBench（Agent 路线规划基\"]\n    C ==> D[\"第二路线：TransitLM（端到端 RLLM）\"]\n    D ==> E[\"双路线辩证：两条都会赢，只是节奏不同\"]\n    E ==> SUM[\"总结与实践启示\"]",
+  "code": "graph TD\n    A[\"核心命题\"] ==> B[\"双路线战略\"]\n    B ==> C[\"第一路线：MobilityBench（Agent 路线规划基\"]\n    C ==> D[\"第二路线：TransitLM（端到端 RLLM）\"]\n    D ==> E[\"双路线辩证：两条都会赢，只是节奏不同\"]\n    E ==> SUM[\"总结与实践启示\"]",
   "isSvg": false
  }
 ]
