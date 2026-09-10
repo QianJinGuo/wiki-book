@@ -1,0 +1,7 @@
+[
+ {
+  "title": "通用基座加增强层",
+  "code": "graph TD\n    TRAP[\"自研陷基建泥潭\"] ==> BASE[\"通用Agent作基座\"]\n    BASE -->|\"推理工具多轮外包\"| AUG[\"补知识工具评测\"]\n    AUG ==> OBS[\"观测与权限边界\"]\n    VERIFY[\"增强层可验证\"] -.-> AUG",
+  "isSvg": false
+ }
+]

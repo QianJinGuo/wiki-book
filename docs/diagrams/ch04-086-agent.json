@@ -1,0 +1,7 @@
+[
+ {
+  "title": "循环二十行本质",
+  "code": "graph TD\n    LOOP[\"核心循环不足20行\"] ==> COMPLEXITY[\"复杂全在周边工程\"]\n    COMPLEXITY -->|\"控制流上下文工具\"| HARNESS[\"约束定成功率\"]\n    HARNESS ==> DEBUG[\"调试先查工具定义\"]\n    INCREMENTAL[\"从ReAct渐进起步\"] -.-> LOOP",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Hy3 实用主义模型",
+  "code": "graph TD\n    PRINCIPLE[\"三原则反刷榜\"] ==> ARCH[\"快慢思考MoE\"]\n    ARCH -->|\"RL规模拉升\"| AGENT[\"代码搜索agent大升\"]\n    AGENT ==> PROD[\"495步工作流稳跑\"]\n    COOP[\"与产品深度协同\"] -.-> PROD",
+  "isSvg": false
+ }
+]

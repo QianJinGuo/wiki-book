@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Hassabis 访谈要点",
+  "code": "graph TD\n    AGI[\"AGI预期2030\"] ==> LIMITS[\"学习推理记忆三局限\"]\n    LIMITS -->|\"锯齿状智能\"| SEARCH[\"搜索思想回归\"]\n    SEARCH ==> AGENTS[\"Agent一年内成工具\"]\n    AGENTS ==> TEST[\"爱因斯坦测试\"]\n    DISTILL[\"蒸馏十分之一价\"] -.-> AGENTS",
+  "isSvg": false
+ }
+]

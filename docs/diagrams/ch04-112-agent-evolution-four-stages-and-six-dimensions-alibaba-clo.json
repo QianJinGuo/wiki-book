@@ -1,0 +1,7 @@
+[
+ {
+  "title": "四阶段六维演进",
+  "code": "graph TD\n    FOUR[\"四阶段范式并存\"] ==> SIX[\"六维同时演进\"]\n    SIX -->|\"prompt到environment\"| PHILOSOPHY[\"确定性载不确定性\"]\n    PHILOSOPHY ==> MIXED[\"Skill主workflow兜底\"]\n    NOTE[\"勿混用时期概念\"] -.-> FOUR",
+  "isSvg": false
+ }
+]

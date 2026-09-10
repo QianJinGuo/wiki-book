@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Hermes 自进化机制",
+  "code": "graph TD\n    PROMPT[\"提示引导沉淀\"] ==> TOOLS[\"skill三工具六action\"]\n    TOOLS -->|\"会话中不改提示\"| MEMFILE[\"双记忆文件\"]\n    MEMFILE ==> SCAN[\"注入威胁扫描\"]\n    SCAN ==> SEARCH[\"跨会话回溯检索\"]\n    PATCH[\"过时立即修补\"] -.-> TOOLS",
+  "isSvg": false
+ }
+]

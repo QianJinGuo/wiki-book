@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Nemotron 3 家族",
+  "code": "graph TD\n    SUPER[\"混合Mamba MoE\"] ==> THINK[\"思考预算可控\"]\n    THINK -->|\"1M上下文低精度\"| FAM[\"安全语音多模态\"]\n    FAM ==> TOOLS[\"评测与工具链\"]\n    CTXEXP[\"多agent上下文爆炸\"] -.-> SUPER",
+  "isSvg": false
+ }
+]

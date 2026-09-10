@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Agent 工程原理要点",
+  "code": "graph TD\n    HARNESS[\"Harness更定成败\"] ==> CTX5[\"上下文五层防稀释\"]\n    CTX5 ==> ACI[\"工具面向目标非API\"]\n    ACI ==> MEM[\"四级记忆混合检索\"]\n    MEM ==> EVALS[\"评测坏更难察觉\"]\n    RIGHTUP[\"目标明确可验证区\"] -.-> HARNESS",
+  "isSvg": false
+ }
+]

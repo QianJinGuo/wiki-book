@@ -1,0 +1,7 @@
+%% title: Agent 算力协同设计
+graph TD
+    CHAIN["Agent令牌高熵"] ==> CACHE["缓存与压缩救经济"]
+    CACHE -->|"百万上下文"| CHIP["多芯片协同平台"]
+    CHIP ==> SOFTWARE["运行时与低精度优化"]
+    SOFTWARE ==> GOAL["万亿MoE可负担"]
+    SUBAGENT["子agent派生变量"] -.-> CHAIN

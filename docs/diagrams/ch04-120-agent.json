@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AI 原生创业七步",
+  "code": "graph TD\n    MAP[\"工作按自主度分级\"] ==> CTX[\"context进git溯源\"]\n    CTX ==> MIXED[\"混合工具栈\"]\n    MIXED ==> HARNESS6[\"六阶段护栏\"]\n    HARNESS6 ==> SE[\"技能加评估复利\"]\n    SE ==> FOUNDER[\"创始人先上\"]\n    RATE[\"接受率七成门槛\"] -.-> SE",
+  "isSvg": false
+ }
+]

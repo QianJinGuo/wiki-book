@@ -1,0 +1,6 @@
+%% title: 循环二十行本质
+graph TD
+    LOOP["核心循环不足20行"] ==> COMPLEXITY["复杂全在周边工程"]
+    COMPLEXITY -->|"控制流上下文工具"| HARNESS["约束定成功率"]
+    HARNESS ==> DEBUG["调试先查工具定义"]
+    INCREMENTAL["从ReAct渐进起步"] -.-> LOOP

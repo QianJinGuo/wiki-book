@@ -1,0 +1,7 @@
+[
+ {
+  "title": "ETCLOVG 七层分类",
+  "code": "graph TD\n    CLAIM[\"Harness独立系统层\"] ==> CORE[\"四支柱结构件\"]\n    CORE ==> CTRL[\"控制面三层\"]\n    CTRL ==> PHASES[\"三阶段范式迁移\"]\n    MAP[\"生态映射找空白\"] -.-> PHASES",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "薄插槽厚插件",
+  "code": "graph TD\n    THIN[\"框架只做调度审批计划\"] ==> SLOTS[\"五类能力全插件化\"]\n    SLOTS -->|\"平台出组件\"| PLAN[\"优选插件包\"]\n    PLAN ==> CASE[\"投研助手长成案例\"]\n    CASE ==> ASSET[\"产出沉淀长期资产\"]\n    EVENT[\"事件日志唯一真源\"] -.-> CASE",
+  "isSvg": false
+ }
+]

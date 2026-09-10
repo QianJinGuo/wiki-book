@@ -1,0 +1,7 @@
+[
+ {
+  "title": "消费级社交 Agent",
+  "code": "graph TD\n    ASSET[\"IoT行业资产作工具\"] ==> ORCH[\"多智能体编排\"]\n    ORCH -->|\"三平台差异大\"| ADAPTER[\"社交渠道适配层\"]\n    ADAPTER ==> DIFF[\"消费与客服模型不同\"]",
+  "isSvg": false
+ }
+]
