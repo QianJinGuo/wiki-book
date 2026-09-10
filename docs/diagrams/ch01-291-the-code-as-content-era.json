@@ -1,0 +1,7 @@
+[
+ {
+  "title": "代码即内容时代",
+  "code": "graph TD\n    ZERO[\"造app摩擦趋零\"] ==> MEME[\"软件像模因生产\"]\n    MEME -->|\"同构memecoin三步\"| GIZMO[\"Gizmo被收购分水岭\"]\n    GIZMO ==> ORG[\"围绕drops与品味组织\"]\n    ORG -.-> FEED[\"feed分发胜商店\"]\n    EXPRESS[\"软件即自我表达\"] -.-> MEME\n    BASE[\"关键基建仍需传统工程\"] -.-> ORG",
+  "isSvg": false
+ }
+]

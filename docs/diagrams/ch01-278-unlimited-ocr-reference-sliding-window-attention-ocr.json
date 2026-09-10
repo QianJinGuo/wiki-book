@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Unlimited OCR 常量缓存",
+  "code": "graph TD\n    REF[\"参考视觉token常驻\"] ==> SWA[\"输出滑窗128\"]\n    SWA -->|\"KV线性降常量\"| FAST[\"越长吞吐优势越大\"]\n    ENC[\"编码器16倍压缩\"] -.->|\"协同\"| FAST\n    SCORE[\"评测升到93.23\"] -.-> FAST\n    CHEAP[\"8卡4千步可升级\"] -.-> SCORE\n    LIMIT[\"输入侧prefill是天花板\"] -.-> ENC",
+  "isSvg": false
+ }
+]

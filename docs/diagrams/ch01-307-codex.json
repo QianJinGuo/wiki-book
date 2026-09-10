@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Codex 自主商业闭环",
+  "code": "graph TD\n    GOAL[\"提示帮我赚5美元\"] ==> LOOP[\"找活干活沟通收款\"]\n    LOOP -->|\"22小时十余任务\"| ECON[\"2200万token换16美元\"]\n    ECON -.->|\"验证可行性\"| FLYWHEEL[\"赏金平台飞轮设想\"]\n    FLAG[\"账户两次被标记\"] -.-> LOOP\n    HUMAN[\"关键节点留人审批\"] -.-> FLYWHEEL",
+  "isSvg": false
+ }
+]

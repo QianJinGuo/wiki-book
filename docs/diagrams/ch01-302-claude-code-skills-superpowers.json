@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Skills 与 Superpowers 实践",
+  "code": "graph TD\n    SKILL[\"SKILL封装程序知识\"] ==> INTERVIEW[\"先采访后执行\"]\n    INTERVIEW ==> PLAN[\"计划拆2-5分小任务\"]\n    PLAN ==> SUBDEV[\"子Agent并行加检查点\"]\n    ROI[\"重复三次才封装\"] -.-> SKILL\n    TDD[\"小粒度使审查可行\"] -.-> PLAN",
+  "isSvg": false
+ }
+]

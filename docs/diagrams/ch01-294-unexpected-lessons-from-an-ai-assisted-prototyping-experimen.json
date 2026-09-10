@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Adobe 原型邻近性实验",
+  "code": "graph TD\n    PROX[\"想法与实现趋零\"] ==> FEED[\"设计意图直进产品\"]\n    FEED ==> EARLY[\"约束浮现当下解决\"]\n    EARLY ==> OVERLAP[\"协作从交接变重叠\"]\n    FIGMA[\"Figma退为对齐工具\"] -.-> PROX\n    EIGHT[\"8天两功能进生产\"] -.-> PROX\n    CRAFT[\"品味与共情不变\"] -.-> OVERLAP",
+  "isSvg": false
+ }
+]

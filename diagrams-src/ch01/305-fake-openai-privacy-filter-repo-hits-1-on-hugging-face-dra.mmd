@@ -1,0 +1,8 @@
+%% title: 假 OpenAI 仓库投毒
+graph TD
+    TYPO["仿冒官方仓库名"] ==> TRUST["model卡复制骗信任"]
+    TRUST -->|"榜首系刷量"| LOADER["loader拉窃密木马"]
+    LOADER ==> STEAL["窃钱包浏览器凭证"]
+    DROPS["粘贴服务做死投"] -.-> LOADER
+    SHARED["C2与ValleyRAT共享"] -.-> STEAL
+    VERIFY["验归属勿信排名"] -.-> TYPO

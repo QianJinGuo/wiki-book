@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Claude for Small Business",
+  "code": "graph TD\n    GAP[\"小企业停在聊天窗\"] ==> WF[\"15个即用工作流\"]\n    WF -->|\"发薪催款端到端\"| INT[\"七平台深度集成\"]\n    INT ==> TRUST[\"审批前置不训数据\"]\n    ECO[\"课程巡展加社区\"] -.->|\"公益配套\"| TRUST\n    NICHE[\"避开大厂正面竞争\"] -.-> INT",
+  "isSvg": false
+ }
+]

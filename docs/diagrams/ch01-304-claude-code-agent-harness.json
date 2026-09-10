@@ -1,0 +1,7 @@
+[
+ {
+  "title": "大代码库落地 13 模式",
+  "code": "graph TD\n    BIAS[\"失误源于起点偏差\"] ==> NAV[\"导航：级联地图滤噪\"]\n    NAV ==> GOV[\"治理：窄skill侦察\"]\n    GOV ==> SCALE[\"规模化：打包首日\"]\n    HOOK[\"提醒升级为机制\"] -.-> GOV\n    FOUR[\"试点固化扩展治理\"] -.-> SCALE\n    AMP[\"CC放大既有质量\"] -.-> BIAS",
+  "isSvg": false
+ }
+]

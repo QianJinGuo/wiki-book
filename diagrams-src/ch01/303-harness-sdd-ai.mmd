@@ -1,0 +1,8 @@
+%% title: 告别氛围编程 Harness SDD
+graph TD
+    VIBE["氛围编程模糊边界"] ==> RISK["存量系统高风险"]
+    RISK ==> SDD["SDD需求转规范"]
+    SDD ==> HARNESS["Harness规范到代码"]
+    HARNESS -->|"确定性承重层"| FORBID["AI禁改区加门禁"]
+    KB["知识库AI可消费格式"] -.-> SDD
+    LEGACY["隐性规则超显代码"] -.-> RISK

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "智能体时代显式与隐式",
+  "code": "graph TD\n    IMPL[\"隐式靠共享前提\"] ==> BROKE[\"Agent不继承默契\"]\n    BROKE -->|\"框架魔法成盲区\"| EXPL[\"结构契约须显式\"]\n    AUDIT[\"审查可Agent理解性\"] -.-> EXPL\n    CONSTITUTION[\"配置文件成库宪法\"] -.-> EXPL\n    NOTE[\"隐式仍是人类加速器\"] -.->|\"分层判断谁要懂\"| AUDIT",
+  "isSvg": false
+ }
+]

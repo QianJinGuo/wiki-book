@@ -1,0 +1,7 @@
+[
+ {
+  "title": "AI 裁员没有商业意义",
+  "code": "graph TD\n    DATA[\"裁员与ROI无关\"] ==> TRAP[\"裁员是代理指标\"]\n    TRAP -->|\"裁掉AI需要的知识\"| KNOW[\"无法自动化没有的专业\"]\n    AUGMENT[\"培训加新角色增强\"] ==> ROI[\"高ROI真正来源\"]\n    AUGMENT -.->|\"对照\"| TRAP\n    BLOCK[\"Block裁四成争议\"] -.-> TRAP",
+  "isSvg": false
+ }
+]

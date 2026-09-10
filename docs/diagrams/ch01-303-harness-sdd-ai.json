@@ -1,0 +1,7 @@
+[
+ {
+  "title": "告别氛围编程 Harness SDD",
+  "code": "graph TD\n    VIBE[\"氛围编程模糊边界\"] ==> RISK[\"存量系统高风险\"]\n    RISK ==> SDD[\"SDD需求转规范\"]\n    SDD ==> HARNESS[\"Harness规范到代码\"]\n    HARNESS -->|\"确定性承重层\"| FORBID[\"AI禁改区加门禁\"]\n    KB[\"知识库AI可消费格式\"] -.-> SDD\n    LEGACY[\"隐性规则超显代码\"] -.-> RISK",
+  "isSvg": false
+ }
+]
