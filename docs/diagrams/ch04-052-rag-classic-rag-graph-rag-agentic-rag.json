@@ -1,0 +1,7 @@
+[
+ {
+  "title": "三种 RAG 架构对比",
+  "code": "graph TD\n    CLASSIC[\"Classic答案在哪\"] ==> GRAPH[\"Graph答案怎么连\"]\n    GRAPH ==> AGENT[\"Agentic下一步查啥\"]\n    AGENT -->|\"多步调查成本高\"| ROUTE[\"路由层按题型分发\"]\n    MAINTAIN[\"图谱质量定效果\"] -.-> GRAPH",
+  "isSvg": false
+ }
+]

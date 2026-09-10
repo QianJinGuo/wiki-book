@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Agent 三条路线选型",
+  "code": "graph TD\n    LC[\"低代码验价值\"] ==> FRAME[\"框架建骨架\"]\n    FRAME ==> CUSTOM[\"自研控资产\"]\n    CUSTOM -->|\"八项成本须自评\"| EXIT[\"预设退出指标\"]\n    TRAP4[\"框架四大代价\"] -.-> FRAME\n    DEGRADE[\"路线可降级非单程\"] -.-> CUSTOM",
+  "isSvg": false
+ }
+]

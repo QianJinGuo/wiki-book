@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Skill 安全三层检测",
+  "code": "graph TD\n    DUAL[\"代码说明双模风险\"] ==> STATIC[\"静态分诊滤八成六\"]\n    STATIC ==> SSD[\"四维语义分解\"]\n    SSD -->|\"局部正常拼起来坏\"| JURY[\"多模型陪审升人审\"]\n    OVERFIT[\"ML易学作者画像\"] -.-> JURY",
+  "isSvg": false
+ }
+]

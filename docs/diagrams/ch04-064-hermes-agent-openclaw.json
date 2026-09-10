@@ -1,0 +1,7 @@
+[
+ {
+  "title": "记忆四层拆解",
+  "code": "graph TD\n    HOT[\"热记忆冻快照\"] ==> STABLE[\"稳定性是护城河\"]\n    STABLE ==> ARCHIVE[\"档案检索事件驱动\"]\n    ARCHIVE ==> FLUSH[\"压缩前主动flush\"]\n    META[\"Skills是元层独立\"] -.-> FLUSH\n    POLLUTE[\"热记忆怕低频污染\"] -.-> HOT",
+  "isSvg": false
+ }
+]

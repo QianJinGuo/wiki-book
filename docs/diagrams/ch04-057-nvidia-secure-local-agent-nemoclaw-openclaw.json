@@ -1,0 +1,7 @@
+[
+ {
+  "title": "安全本地 Agent 栈",
+  "code": "graph TD\n    TENSION[\"自主与隔离张力\"] ==> SHELL[\"沙箱默认拒按需批\"]\n    SHELL -->|\"策略审批留痕\"| LOCAL[\"全本地推理不出域\"]\n    LOCAL ==> TG[\"消息平台三步接入\"]\n    BALANCE[\"够用优先选中等模型\"] -.-> LOCAL\n    REF[\"参考栈加二次开发\"] -.-> TG",
+  "isSvg": false
+ }
+]

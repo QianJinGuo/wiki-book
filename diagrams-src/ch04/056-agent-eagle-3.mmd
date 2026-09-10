@@ -1,0 +1,7 @@
+%% title: EAGLE-3 投机解码
+graph TD
+    ACCEL["Agent延迟复合放大"] ==> STABLE["接受长度稳比峰值重"]
+    STABLE -->|"训练模拟带噪历史"| MEM["瓶颈在激活非参数"]
+    MEM ==> USP["统一序列并行训练"]
+    USP ==> RESULT["长文加速超两倍"]
+    OOD["分布漂移致衰减"] -.-> STABLE

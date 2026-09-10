@@ -1,0 +1,7 @@
+%% title: Agent 三条路线选型
+graph TD
+    LC["低代码验价值"] ==> FRAME["框架建骨架"]
+    FRAME ==> CUSTOM["自研控资产"]
+    CUSTOM -->|"八项成本须自评"| EXIT["预设退出指标"]
+    TRAP4["框架四大代价"] -.-> FRAME
+    DEGRADE["路线可降级非单程"] -.-> CUSTOM

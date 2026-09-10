@@ -1,0 +1,7 @@
+%% title: Skills 设计模式五型
+graph TD
+    FIVE["五型对应五失败"] ==> ASSET["Skill是过程资产"]
+    ASSET -->|"与harness互表里"| MODULE["可加载过程模块"]
+    MODULE ==> GATE["描述是路由契约"]
+    GATE ==> HOOKS["硬约束下沉Hook"]
+    SPLIT["知识模板脚本分目录"] -.-> GATE

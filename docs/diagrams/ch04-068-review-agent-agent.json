@@ -1,0 +1,7 @@
+[
+ {
+  "title": "独立复盘 Agent",
+  "code": "graph TD\n    SPLIT[\"执行评价物理隔离\"] ==> RULERS[\"独有重复通用三尺\"]\n    RULERS ==> RATE[\"写入率15%健康\"]\n    RATE -->|\"失败密度三倍\"| PATCH[\"patch优先新建\"]\n    LEARNBAD[\"复盘也会学歪\"] -.-> RULERS\n    FEEDBACK[\"人工抽检反馈\"] -.-> PATCH",
+  "isSvg": false
+ }
+]

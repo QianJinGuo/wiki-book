@@ -1,0 +1,7 @@
+[
+ {
+  "title": "CC 五大工程设计",
+  "code": "graph TD\n    TOMB[\"墓碑消息保流完整\"] ==> SINGLE[\"单线程循环纪律工具\"]\n    SINGLE ==> REVERSIBLE[\"压缩可逆可审计\"]\n    REVERSIBLE ==> MEMMD[\"Markdown作记忆\"]\n    MEMMD ==> HOOKS[\"AI审查AI可否决\"]\n    PARALLEL[\"读并行写排队\"] -.-> SINGLE",
+  "isSvg": false
+ }
+]

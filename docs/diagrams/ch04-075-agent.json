@@ -1,0 +1,7 @@
+[
+ {
+  "title": "全生命周期安全",
+  "code": "graph TD\n    BLIND[\"声明监控是表演\"] ==> OBSERVER[\"OS层行为感知\"]\n    OBSERVER ==> GUARD[\"8ms四道审核\"]\n    GUARD ==> WARD[\"蜜罐抓漏三成\"]\n    WARD ==> AUDIT[\"本地审计自进化\"]\n    MULTI[\"多agent恶意转嫁\"] -.-> OBSERVER",
+  "isSvg": false
+ }
+]

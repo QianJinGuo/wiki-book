@@ -1,0 +1,7 @@
+[
+ {
+  "title": "架构师半衰期清单",
+  "code": "graph TD\n    FILTER[\"筛选比feed重要\"] ==> DURABLE[\"协议状态评估耐用\"]\n    DURABLE ==> CTX[\"上下文是工作集\"]\n    CTX ==> TOOLS[\"五到十个清楚工具\"]\n    TOOLS ==> EVALS[\"评估从trace长出\"]\n    CLEANUP[\"升级须清理harness\"] -.-> DURABLE",
+  "isSvg": false
+ }
+]

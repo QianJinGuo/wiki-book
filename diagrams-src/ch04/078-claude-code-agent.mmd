@@ -1,0 +1,7 @@
+%% title: CC 五大工程设计
+graph TD
+    TOMB["墓碑消息保流完整"] ==> SINGLE["单线程循环纪律工具"]
+    SINGLE ==> REVERSIBLE["压缩可逆可审计"]
+    REVERSIBLE ==> MEMMD["Markdown作记忆"]
+    MEMMD ==> HOOKS["AI审查AI可否决"]
+    PARALLEL["读并行写排队"] -.-> SINGLE

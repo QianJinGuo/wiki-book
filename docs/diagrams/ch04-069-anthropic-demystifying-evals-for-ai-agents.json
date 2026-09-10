@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Agent 评估四概念",
+  "code": "graph TD\n    TASK[\"task定输入成功\"] ==> TRIAL[\"trial多次才显著\"]\n    TRIAL ==> GRADER[\"grader分层评\"]\n    GRADER ==> REFLUX[\"失败案例回流\"]\n    LAYERS[\"四层评估器协同\"] -.-> GRADER\n    SEPARATE[\"评执行架分离\"] -.-> LAYERS",
+  "isSvg": false
+ }
+]

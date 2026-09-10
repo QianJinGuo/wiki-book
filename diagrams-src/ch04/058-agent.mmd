@@ -1,0 +1,7 @@
+%% title: 架构师半衰期清单
+graph TD
+    FILTER["筛选比feed重要"] ==> DURABLE["协议状态评估耐用"]
+    DURABLE ==> CTX["上下文是工作集"]
+    CTX ==> TOOLS["五到十个清楚工具"]
+    TOOLS ==> EVALS["评估从trace长出"]
+    CLEANUP["升级须清理harness"] -.-> DURABLE
