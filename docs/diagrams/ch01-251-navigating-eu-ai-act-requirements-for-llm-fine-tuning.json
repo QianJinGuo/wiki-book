@@ -1,0 +1,7 @@
+[
+ {
+  "title": "EU AI Act 微调合规",
+  "code": "graph TD\n    LAW[\"按FLOPs定身份\"] ==> T3[\"三档阈值判路径\"]\n    T3 ==> METER[\"FLOPs Meter计量\"]\n    METER -->|\"分析式加硬件式\"| LORA[\"LoRA降计算1-2量级\"]\n    AUDIT[\"json落S3成审计链\"] -.-> METER\n    SCALE[\"3B仅阈值0.02%\"] -.-> OK[\"中小模型远低于线\"]\n    PACK[\"预建合规包模板\"] -.-> T3",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,9 @@
+%% title: LLM Wiki V2 知识编译
+graph TD
+    RAG["RAG每次临时翻书"] ==> WIKI["把知识编译成Wiki"]
+    LAY["三层：原件知识规则"] ==> WIKI
+    MEM["四层记忆对标人脑"] -.-> WIKI
+    EXP["置信度过期自动衰减"] ==> MEM
+    REL["带类型语义关系"] -.-> WIKI
+    MED["矛盾主动调解"] -.-> WIKI
+    MEMEX["Memex等了八十年"] -.-> WIKI

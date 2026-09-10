@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Jenkins 插件供应链失陷",
+  "code": "graph TD\n    TAMPER[\"GitHub仓库被篡改\"] ==> BACK[\"插件带毒发布\"]\n    BACK -->|\"CVSS 9.4\"| CREDS[\"窃云凭据与SSH\"]\n    DUNE[\"Dune主题成指纹\"] -.->|\"威胁狩猎\"| BACK\n    MULTI[\"多触角多目标齐攻\"] -.-> CREDS\n    FIX[\"立即降级轮换密钥\"] -.->|\"止损\"| CREDS",
+  "isSvg": false
+ }
+]

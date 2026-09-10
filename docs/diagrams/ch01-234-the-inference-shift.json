@@ -1,0 +1,7 @@
+[
+ {
+  "title": "推理转移：答案到智能体",
+  "code": "graph TD\n    GPU[\"GPU优势属训练时代\"] ==> DECODE[\"decode串行带宽受限\"]\n    ANS[\"答案推理延迟敏感\"] ==> GPU\n    AGI[\"agentic无人等待\"] ==> MEM[\"内存容量成瓶颈\"]\n    MEM -.->|\"便宜慢芯片也行\"| CHINA[\"够用硬件即优势\"]\n    CER[\"晶圆级快但容量小\"] -.-> ANS\n    DISAGG[\"Nvidia解耦内存\"] -.-> MEM",
+  "isSvg": false
+ }
+]

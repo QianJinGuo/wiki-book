@@ -1,0 +1,8 @@
+%% title: 存储工作负载分类法
+graph TD
+    OLTP["OLTP行存"] ==> HTAP["HTAP一系统双负载"]
+    OLAP["OLAP列存"] ==> HTAP
+    HTAP -->|"组成或追赶新鲜"| LTAP["LTAP双系统双负载"]
+    TIER["分层热转冷一份拷贝"] -.-> LTAP
+    MAT["物化两系统两拷贝"] -.-> LTAP
+    DUR["缓存不算持久拷贝"] -.-> MAT

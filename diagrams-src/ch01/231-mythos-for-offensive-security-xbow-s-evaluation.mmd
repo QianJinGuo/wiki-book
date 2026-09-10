@@ -1,0 +1,8 @@
+%% title: Mythos 攻防能力评估
+graph TD
+    FIND["漏洞候选发现强"] ==> READ["读代码胜写代码"]
+    READ -->|"假阴性降42到55%"| LIVE["live site更重要"]
+    LIVE ==> LOOP["分析探测构造闭环"]
+    LIT["判断精确但字面"] -.->|"需明确威胁模型"| LOOP
+    NATIVE["原生码逆向最强"] -.-> READ
+    COST["定价五倍于Opus"] -.-> LOOP

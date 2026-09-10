@@ -1,0 +1,8 @@
+%% title: IMClaw 用 IM 操控 Agent
+graph TD
+    IM["微信飞书发指令"] ==> GW["网关WebSocket中转"]
+    GW -->|"ACP协议N加M"| ACPX["acpx管Agent子进程"]
+    KEYS["密钥托管在网关"] -.-> GW
+    MODES["三档权限模式"] -.-> GW
+    SWARM["Agent互控成蜂群"] -.-> ACPX
+    MCP["ACP管会话MCP管工具"] -.-> ACPX

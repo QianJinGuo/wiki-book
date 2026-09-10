@@ -1,0 +1,7 @@
+[
+ {
+  "title": "IMClaw 用 IM 操控 Agent",
+  "code": "graph TD\n    IM[\"微信飞书发指令\"] ==> GW[\"网关WebSocket中转\"]\n    GW -->|\"ACP协议N加M\"| ACPX[\"acpx管Agent子进程\"]\n    KEYS[\"密钥托管在网关\"] -.-> GW\n    MODES[\"三档权限模式\"] -.-> GW\n    SWARM[\"Agent互控成蜂群\"] -.-> ACPX\n    MCP[\"ACP管会话MCP管工具\"] -.-> ACPX",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "RAG 与 Agentic 检索",
+  "code": "graph TD\n    GONE[\"弃向量改用grep\"] ==> FAIL[\"语义相似非相关\"]\n    FAIL -->|\"结构被压平\"| JIT[\"JIT加载用时才取\"]\n    JIT ==> PROOF[\"关键词忠实度94.5%\"]\n    MULTI[\"多agent检索加90%\"] -.->|\"代价15倍token\"| PROOF\n    R1[\"Search R1训检索策略\"] -.-> PROOF\n    MIX[\"向量仍是稳定语料备选\"] -.-> JIT",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,8 @@
+%% title: 上下文是工作空间非记录
+graph TD
+    CTX["上下文是工作空间"] ==> PRUNE["剪枝按贡献非时序"]
+    CONV["四harness独立趋同"] ==> BUDGET["工具结果独立预算"]
+    BUDGET -->|"超限落盘留摘要"| PAGEOUT["页面换出式卸载"]
+    COMP["压缩策略各家不同"] ==> PAIR["调用与结果不拆散"]
+    CTRL["harness到模型自主谱系"] -.-> COMP
+    SAFE["孤立result致幻觉"] -.-> PAIR

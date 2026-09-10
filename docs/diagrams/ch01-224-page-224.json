@@ -1,0 +1,7 @@
+[
+ {
+  "title": "上下文是工作空间非记录",
+  "code": "graph TD\n    CTX[\"上下文是工作空间\"] ==> PRUNE[\"剪枝按贡献非时序\"]\n    CONV[\"四harness独立趋同\"] ==> BUDGET[\"工具结果独立预算\"]\n    BUDGET -->|\"超限落盘留摘要\"| PAGEOUT[\"页面换出式卸载\"]\n    COMP[\"压缩策略各家不同\"] ==> PAIR[\"调用与结果不拆散\"]\n    CTRL[\"harness到模型自主谱系\"] -.-> COMP\n    SAFE[\"孤立result致幻觉\"] -.-> PAIR",
+  "isSvg": false
+ }
+]

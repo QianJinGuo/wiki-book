@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Mythos 攻防能力评估",
+  "code": "graph TD\n    FIND[\"漏洞候选发现强\"] ==> READ[\"读代码胜写代码\"]\n    READ -->|\"假阴性降42到55%\"| LIVE[\"live site更重要\"]\n    LIVE ==> LOOP[\"分析探测构造闭环\"]\n    LIT[\"判断精确但字面\"] -.->|\"需明确威胁模型\"| LOOP\n    NATIVE[\"原生码逆向最强\"] -.-> READ\n    COST[\"定价五倍于Opus\"] -.-> LOOP",
+  "isSvg": false
+ }
+]

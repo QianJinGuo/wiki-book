@@ -1,0 +1,7 @@
+[
+ {
+  "title": "LLM Wiki V2 知识编译",
+  "code": "graph TD\n    RAG[\"RAG每次临时翻书\"] ==> WIKI[\"把知识编译成Wiki\"]\n    LAY[\"三层：原件知识规则\"] ==> WIKI\n    MEM[\"四层记忆对标人脑\"] -.-> WIKI\n    EXP[\"置信度过期自动衰减\"] ==> MEM\n    REL[\"带类型语义关系\"] -.-> WIKI\n    MED[\"矛盾主动调解\"] -.-> WIKI\n    MEMEX[\"Memex等了八十年\"] -.-> WIKI",
+  "isSvg": false
+ }
+]

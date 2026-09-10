@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Cola DLM 连续潜空间语言模型",
+  "code": "graph TD\n    CLAIM[\"Token非语义表征才主\"] ==> VAE[\"Text VAE压文本成潜向量\"]\n    VAE ==> PRIOR[\"block因果DiT流匹配\"]\n    PRIOR -->|\"局部并行整体因果\"| DEC[\"Decoder译语义为文字\"]\n    FROZEN[\"编码器冻结防污染\"] -.-> PRIOR\n    TRI[\"三目标独立诊断\"] -.-> STABLE[\"2B规模scaling更稳\"]\n    ELF[\"与ELF同连续路线\"] -.-> STABLE",
+  "isSvg": false
+ }
+]

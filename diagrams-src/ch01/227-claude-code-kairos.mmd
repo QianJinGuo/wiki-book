@@ -1,0 +1,8 @@
+%% title: KAIROS 常驻代理范式
+graph TD
+    SYNC["同步问答有上限"] ==> RES["KAIROS常驻异步"]
+    BRIDGE["Bridge恢复持续会话"] ==> RES
+    MEM["daily log先记后蒸馏"] -.-> RES
+    BRIEF["Brief输出压缩层"] -.-> RES
+    STUCK["gate与发现是stub"] -.->|"核心闭环未通"| MAT["外层先行半成品"]
+    COST["tick加sleep更贵"] -.-> RES
