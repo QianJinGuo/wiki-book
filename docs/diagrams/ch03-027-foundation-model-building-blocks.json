@@ -1,0 +1,7 @@
+[
+ {
+  "title": "基础模型基建积木",
+  "code": "graph TD\n    THREE[\"三层scaling收敛\"] ==> GPU[\"选卡先看HBM\"]\n    GPU ==> EFA[\"网络每代升一成八\"]\n    EFA ==> STACK[\"五层栈内核是瓶颈\"]\n    STACK ==> SCHED[\"K8s需gang调度补丁\"]\n    SCHED ==> HEALTH[\"ECC错误领先指标\"]\n    ULTRA[\"UltraServer扩NVLink\"] -.-> GPU",
+  "isSvg": false
+ }
+]

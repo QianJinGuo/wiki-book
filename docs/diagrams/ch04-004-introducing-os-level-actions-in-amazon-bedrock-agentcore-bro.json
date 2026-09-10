@@ -1,0 +1,7 @@
+[
+ {
+  "title": "OS 级动作补盲区",
+  "code": "graph TD\n    EVOLVE[\"DOM视觉到OS三层\"] ==> BLIND[\"原生对话框曾盲区\"]\n    BLIND -->|\"现有API延伸\"| LOOP[\"动作截图反应闭环\"]\n    LOOP ==> SINGLE[\"单动作降复杂度\"]\n    CLOUD[\"云托管替代RPA\"] -.-> LOOP",
+  "isSvg": false
+ }
+]

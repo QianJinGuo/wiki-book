@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Figma 组件十大错误",
+  "code": "graph TD\n    VARIANT[\"变体是最贵属性\"] ==> MEMORY[\"count变体撑爆内存\"]\n    MEMORY -->|\"语义交互混淆\"| STATE[\"state混装多性质\"]\n    STATE ==> BOOL[\"布尔API破对称\"]\n    BOOL ==> GOV[\"命名与Frame纪律\"]\n    SLOT[\"Slot组合胜继承\"] -.-> MEMORY",
+  "isSvg": false
+ }
+]

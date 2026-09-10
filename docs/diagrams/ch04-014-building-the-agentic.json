@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Google I O Agent 全家桶",
+  "code": "graph TD\n    FLASH[\"3.5 Flash快四倍\"] ==> ANTI[\"Antigravity三形态\"]\n    ANTI -->|\"一次调用起Agent\"| MANAGED[\"Managed Agents API\"]\n    MANAGED ==> STUDIO[\"移动端vibe编码\"]\n    PRIZE[\"两百万美元黑客松\"] -.-> STUDIO",
+  "isSvg": false
+ }
+]

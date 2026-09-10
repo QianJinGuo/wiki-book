@@ -1,0 +1,7 @@
+[
+ {
+  "title": "长程任务 Harness 导览",
+  "code": "graph TD\n    HUB[\"Coding Agent长程\"] ==> MECH[\"机制论文区\"]\n    MECH -->|\"七层与术语表\"| THEORY[\"架构理论锚点\"]\n    HUB ==> PRAC[\"工程实践区\"]\n    PRAC -->|\"Ralph与goal运行时\"| LONG[\"长周期治理\"]\n    PRAC -->|\"自愈生产线\"| SELFHEAL[\"7x24自进化\"]",
+  "isSvg": false
+ }
+]

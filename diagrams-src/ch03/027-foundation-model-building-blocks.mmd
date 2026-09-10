@@ -1,0 +1,8 @@
+%% title: 基础模型基建积木
+graph TD
+    THREE["三层scaling收敛"] ==> GPU["选卡先看HBM"]
+    GPU ==> EFA["网络每代升一成八"]
+    EFA ==> STACK["五层栈内核是瓶颈"]
+    STACK ==> SCHED["K8s需gang调度补丁"]
+    SCHED ==> HEALTH["ECC错误领先指标"]
+    ULTRA["UltraServer扩NVLink"] -.-> GPU

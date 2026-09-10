@@ -1,0 +1,7 @@
+%% title: 会计 Agent 落地
+graph TD
+    SEP["Skill与Config分离"] ==> MCP["MCP打通三系统"]
+    MCP -->|"系统内直接读写"| HUMAN["保留双人复核节点"]
+    HUMAN ==> LOOP["人工修复回流规则"]
+    RESULT["对账2小时变5分"] -.-> LOOP
+    SMALL["高频重复先切入"] -.-> SEP

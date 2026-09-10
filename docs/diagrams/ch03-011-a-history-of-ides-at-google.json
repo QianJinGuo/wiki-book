@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Google IDE 演进史",
+  "code": "graph TD\n    DEAN[\"反对强制统一\"] ==> CIDER[\"Cider云端索引\"]\n    CIDER -->|\"规模下本地崩\"| VSCODE[\"拥抱VSCode前端\"]\n    VSCODE ==> COMPOUND[\"八成采用生复利\"]\n    COMPOUND ==> AI[\"统一平台快接AI\"]\n    ORGANIC[\"有机演化胜强制\"] -.-> COMPOUND",
+  "isSvg": false
+ }
+]

@@ -1,0 +1,7 @@
+[
+ {
+  "title": "活动导向设计",
+  "code": "graph TD\n    MODEL[\"目标活动任务三层\"] ==> STEPS[\"任务分析四步法\"]\n    STEPS -->|\"粒度要适中\"| NEW[\"新品界面无关描述\"]\n    NEW ==> OPT[\"旧品具体元素描述\"]\n    OPT ==> FIND[\"找出可删的步骤\"]\n    LIMIT[\"不覆盖情绪维度\"] -.-> MODEL",
+  "isSvg": false
+ }
+]

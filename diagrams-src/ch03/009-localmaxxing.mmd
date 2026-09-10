@@ -1,0 +1,7 @@
+%% title: 本地模型任务分流
+graph TD
+    HALF["五成任务可本地"] ==> LATENCY["延迟是唯一真优势"]
+    LATENCY -->|"省一半等待"| ROUTE["按任务类型分流"]
+    ROUTE ==> SIMPLE["格式固定容错高本地"]
+    ROUTE ==> COMPLEX["多源合成走云端"]
+    MIXED["工程任务一半一半"] -.-> ROUTE

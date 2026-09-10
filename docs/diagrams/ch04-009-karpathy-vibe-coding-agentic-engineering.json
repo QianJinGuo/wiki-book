@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Vibe 到 Agentic 导览",
+  "code": "graph TD\n    HUB[\"范式转移导航页\"] ==> MECH[\"机制论文区\"]\n    MECH -->|\"源码八步循环\"| CC[\"Claude Code范式\"]\n    HUB ==> PRAC[\"工程实践区\"]\n    PRAC -->|\"数据级与前端\"| DEEP[\"深度实践沉淀\"]\n    PRAC -->|\"调度与休眠唤醒\"| OPS[\"运行时优化\"]\n    NAV[\"延伸三入口\"] -.-> HUB",
+  "isSvg": false
+ }
+]

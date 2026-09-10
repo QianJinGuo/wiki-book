@@ -1,0 +1,7 @@
+[
+ {
+  "title": "Skill 测试用例八型",
+  "code": "graph TD\n    PYRAMID[\"测试金字塔分层\"] ==> TYPES[\"八种用例型谱系\"]\n    TYPES ==> NEG[\"负向测试防误触\"]\n    NEG ==> ASSERT[\"断言三级存在最弱\"]\n    ASSERT ==> CHECK[\"反问无Skill能过吗\"]\n    COUNT[\"数量是结果非目标\"] -.-> TYPES",
+  "isSvg": false
+ }
+]
