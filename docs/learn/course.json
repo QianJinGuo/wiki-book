@@ -116,7 +116,7 @@
      "chapter": "ch01",
      "chapterName": "AI 与 LLM 基础",
      "essence": "Subagents机制揭示了当前AI编程工具的一个核心工程挑战：上下文污染问题。当Claude Code运行超过半小时后，主窗口可能积累80k token的噪音——搜索结果、日志、目录列表等一次性信息填满了窗口，而真正重要的项目事实和决策依据反而被稀释。这种\"变脏\"的过程不是简单的上下文溢出，而是信息密度的恶化。；Subagent的核心价值在于主动的信息过滤和压缩。它不是简单地把任务分派给多个Agent，而是建立了一种上下文工作区的边界管理机制：探索性工作在独立窗口完成，主窗口只接收高密度的结论。Kaxil Naik的那句\"Harness matters more than the model\"点出了本质——模型能力固然重要，但长任务能否稳定运行更多取决于外围的工程结构",
-     "words": 19299,
+     "words": 19298,
      "level": 3
     },
     {
@@ -127,7 +127,7 @@
      "chapter": "ch01",
      "chapterName": "AI 与 LLM 基础",
      "essence": "Amazon Nova 2 内容审核实战指南；Prompt engineering 在内容审核中的应用。",
-     "words": 5233,
+     "words": 5232,
      "level": 3
     },
     {
@@ -138,7 +138,7 @@
      "chapter": "ch01",
      "chapterName": "AI 与 LLM 基础",
      "essence": "原文发表于 AI 研究者 @engkhairallah1 的 Twitter/X 帖子，核心主张是：当前大多数\"提示词合集\"过于泛化（\"帮我写博客\"\"总结这段文字\"），它们是 wish（愿望） 而非 prompt（提示词）。真正的工程化提示词包含五个要素——角色设定、上下文约束、输出格式、质量标准、具体示例——并且在 Claude、ChatGPT、Gemini 三大模型上都做过交叉验证。；覆盖六大场景：写作与内容（10）、分析与策略（10）、技术开发（10）、生产力（5）、数据解读（5）、沟通（5），共 40 个模板",
-     "words": 4914,
+     "words": 4805,
      "level": 3
     }
    ],
@@ -180,7 +180,7 @@
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "Harness 模式正在成为 Agent 架构的\"操作系统层\"。传统的 Agent 实现将工具调用、知识检索、输出验证都耦合在 prompt 和代码中；Harness 模式将这些能力抽象为可配置组件，Agent 本身变成声明式描述而非过程式代码。这一转变使得 Agent 的能力升级可以从\"重写 Agent\"变为\"更新 Harness 配置\"，大幅提升迭代效率。；Multi-Agent 协作模式从\"固定流水线\"演进到\"动态组织\"。2025 年的 Multi-Agent 主要是固定角色（研究员、写作、审核）的顺序 pipeline；2026 年的新模式允许 Agent 根据任务动态决定角色数量、协作拓扑和消息协议。这带来更高的灵活性的同时，也引入了协调复杂性和通信开销的新挑战",
-     "words": 7271,
+     "words": 7269,
      "level": 3
     },
     {
@@ -190,8 +190,8 @@
      "url": "/ch04/239-agentloop-4-loongsuite-84-trace2dataset-90.html",
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
-     "essence": "阿里云 AgentLoop：企业级智能体自进化飞轮（4 环闭环 + LoongSuite 84% 字段覆盖 + Trace2Dataset 90% 节省 + Agent-as-a-Judge 90% 一致 + 记忆库/经验库）；📊 Level ⭐⭐⭐⭐ | 38.0KB | entities/aliyun-agentloop-enterprise-agent-self-evolution-flywheel.md。",
-     "words": 17834,
+     "essence": "阿里云 AgentLoop：企业级智能体自进化飞轮（4 环闭环 + LoongSuite 84% 字段覆盖 + Trace2Dataset 90% 节省 + Agent-as-a-Judge 90% 一致 + 记忆库/经验库）；📊 Level ⭐⭐⭐ | 38.0KB | entities/aliyun-agentloop-enterprise-agent-self-evolution-flywheel.md。",
+     "words": 17833,
      "level": 3
     },
     {
@@ -202,7 +202,7 @@
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "Insight 1: Agent Loop 的 5 阶段抽象揭示了当前主流框架的共同范式；不同框架（Hermes、LangGraph、Cursor、Claude Code）命名不同，但本质都是这 5 个阶段：接收输入、拼装 Prompt、调用模型、执行工具、检查退出。这种一致性说明当前的 Agent 设计已经形成了相对稳定的设计模式",
-     "words": 12649,
+     "words": 12647,
      "level": 3
     }
    ],
@@ -249,8 +249,8 @@
      "url": "/ch04/379-browser-use-agent-runtime-harness.html",
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
-     "essence": "Browser Use：为 Agent 构建 Runtime Harness；📊 Level ⭐⭐⭐⭐⭐ | 15.8KB | entities/browser-use-runtime-harness.md。",
-     "words": 6676,
+     "essence": "Browser Use：为 Agent 构建 Runtime Harness；📊 Level ⭐⭐⭐ | 15.8KB | entities/browser-use-runtime-harness.md。",
+     "words": 6674,
      "level": 3
     },
     {
@@ -260,8 +260,8 @@
      "url": "/ch04/269-codex-goal-agent.html",
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
-     "essence": "📊 Level ⭐⭐⭐⭐ | 16.1KB | entities/codex-goal-agent-runtime.md；/goal 把一个长期目标放进了 Codex 的运行时里：目标有状态，过程有记账，完成要审计，预算到了要收束",
-     "words": 7260,
+     "essence": "📊 Level ⭐⭐⭐ | 16.1KB | entities/codex-goal-agent-runtime.md；/goal 把一个长期目标放进了 Codex 的运行时里：目标有状态，过程有记账，完成要审计，预算到了要收束",
+     "words": 7259,
      "level": 3
     },
     {
@@ -271,8 +271,8 @@
      "url": "/ch04/369-agent-agent-runtime-7-3-langgraph-openai-agents-s.html",
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
-     "essence": "Agent 的骨架:Agent Runtime 7 大职责 + 3 主流框架对比 (LangGraph / OpenAI Agents SDK / 自研)；📊 Level ⭐⭐⭐⭐⭐ | 19.9KB | entities/agent-runtime-7-responsibilities-secondcurve-2026.md。",
-     "words": 11592,
+     "essence": "Agent 的骨架:Agent Runtime 7 大职责 + 3 主流框架对比 (LangGraph / OpenAI Agents SDK / 自研)；📊 Level ⭐⭐⭐ | 19.9KB | entities/agent-runtime-7-responsibilities-secondcurve-2026.md。",
+     "words": 11590,
      "level": 3
     }
    ],
@@ -320,7 +320,7 @@
      "chapter": "ch07",
      "chapterName": "技能、工具与 MCP",
      "essence": "\"注入位置\"是理解 Rules/MCP/Skills 本质差异的第一性原理；源码分析揭示的底层逻辑远比表面功能描述更清晰：Rules、MCP、Skills 的核心区别不在于\"能做什么\"（功能层面），而在于\"信息在 API 请求中占据什么位置\"（架构层面）。Rules 通过 prependUserContext() 注入 messages（被动，每次 API 调用自动携带）；MCP 同时占据 tools[] 和 system 两个位置（主动调用，Server 级指南在 system 动态区）；Skills 通过 tooluse 触发后在 Inline 模式下注入 messages（主动调用但执行是提示词注入）。这三个位置（messages、tools[]、system）的组合差异，导致了完全不同的工程特性：Rul。",
-     "words": 10512,
+     "words": 10510,
      "level": 3
     },
     {
@@ -331,7 +331,7 @@
      "chapter": "ch07",
      "chapterName": "技能、工具与 MCP",
      "essence": "CLI、MCP 和 Skill 代表了三个不同层次的抽象：；CLI 是执行原语，负责在特定运行环境里完成具体操作。",
-     "words": 4318,
+     "words": 4317,
      "level": 3
     },
     {
@@ -341,8 +341,8 @@
      "url": "/ch04/302-browser-use-playwright-chrome-devtools-mcp-agent-bro.html",
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
-     "essence": "五款浏览器自动化工具横向对比：browser-use / Playwright / chrome-devtools-mcp / agent-browser / BrowserAct；📊 Level ⭐⭐⭐⭐ | 11.6KB | entities/four-browser-automation-tools-comparison.md。",
-     "words": 6233,
+     "essence": "五款浏览器自动化工具横向对比：browser-use / Playwright / chrome-devtools-mcp / agent-browser / BrowserAct；📊 Level ⭐⭐⭐ | 11.6KB | entities/four-browser-automation-tools-comparison.md。",
+     "words": 6148,
      "level": 3
     }
    ],
@@ -390,7 +390,7 @@
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "一、harness boundary 是 memory 系统的根本限制。九大 harness 共同面临的五个短板（bounded local 存储、keyword 式检索、memory 不跨 harness、staleness 处理弱、isolation 不够），本质上都来自\"数据不出 harness\"这个边界约束。这不是任何一家公司工程能力不足的问题，而是单 harness 架构的固有局限。跨 harness 的 memory layer 之所以难，不是因为技术复杂，而是因为行业没有动力去标准化。；二、现有 memory benchmark 偏重 recall 而非 decision quality，是系统性偏差。LoCoMo 只有 10 段对话、很多题不需要 memory；LongMemEval 覆盖 ex。",
-     "words": 7334,
+     "words": 7333,
      "level": 3
     },
     {
@@ -400,8 +400,8 @@
      "url": "/ch04/363-cpu-agent-l1-l2-l3-execute-code.html",
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
-     "essence": "CPU 缓存类比下的 Agent 上下文管理：L1/L2/L3 层级架构与 executecode 单工具设计；📊 Level ⭐⭐⭐⭐⭐ | 23.6KB | entities/cpu-cache-analogy-agent-context-management-liwen.md。",
-     "words": 9971,
+     "essence": "CPU 缓存类比下的 Agent 上下文管理：L1/L2/L3 层级架构与 executecode 单工具设计；📊 Level ⭐⭐⭐ | 23.6KB | entities/cpu-cache-analogy-agent-context-management-liwen.md。",
+     "words": 9969,
      "level": 3
     },
     {
@@ -411,8 +411,8 @@
      "url": "/ch04/390-agent-reliability-context-drift-tool-calling-hallucinatio.html",
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
-     "essence": "Agent Reliability: Context Drift & Tool Calling Hallucination；📊 Level ⭐⭐⭐⭐⭐ | 12.4KB | entities/agent-reliability-context-drift-tool-hallucination.md。",
-     "words": 7557,
+     "essence": "Agent Reliability: Context Drift & Tool Calling Hallucination；📊 Level ⭐⭐⭐ | 12.4KB | entities/agent-reliability-context-drift-tool-hallucination.md。",
+     "words": 7555,
      "level": 3
     }
    ],
@@ -471,7 +471,7 @@
      "chapter": "ch01",
      "chapterName": "AI 与 LLM 基础",
      "essence": "架构决策：双向注意力是关键。 生成式 Gemini 模型使用单向注意力，而 embedding 任务需要双向上下文来完整理解输入。Gemini Embedding 2 通过双向 Transformer 结构解决这一问题，配合 Mean Pooling + 线性投影输出 3072 维向量，并通过 Matryoshka Representation Learning 支持 768/1536/3072 维自适应压缩，兼顾精度与效率。；两阶段训练：先拉方向，再精修。 PFT 阶段用大 batch 把模型从「偏生成」往「偏编码」拉；FT 阶段带 hard negative 精修真正的多模态统一空间。NCE 风格对比学习 + batch 内负例的设计使跨模态对齐更紧密。Model Soup 权重平均多任务结果，有效对冲多任。",
-     "words": 3202,
+     "words": 3194,
      "level": 2
     },
     {
@@ -535,8 +535,8 @@
      "url": "/ch04/369-agent-agent-runtime-7-3-langgraph-openai-agents-s.html",
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
-     "essence": "Agent 的骨架:Agent Runtime 7 大职责 + 3 主流框架对比 (LangGraph / OpenAI Agents SDK / 自研)；📊 Level ⭐⭐⭐⭐⭐ | 19.9KB | entities/agent-runtime-7-responsibilities-secondcurve-2026.md。",
-     "words": 11592,
+     "essence": "Agent 的骨架:Agent Runtime 7 大职责 + 3 主流框架对比 (LangGraph / OpenAI Agents SDK / 自研)；📊 Level ⭐⭐⭐ | 19.9KB | entities/agent-runtime-7-responsibilities-secondcurve-2026.md。",
+     "words": 11590,
      "level": 3
     },
     {
@@ -546,8 +546,8 @@
      "url": "/ch04/253-fable-5-agent-runtime-runtime-contract.html",
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
-     "essence": "Fable 5 的信号:Agent 开始拼 Runtime — 架构师若飞的 Runtime Contract 工程化拆解；📊 Level ⭐⭐⭐⭐ | 21.3KB | entities/claude-fable-5-agent-runtime-contract-ruofei-2026.md。",
-     "words": 11802,
+     "essence": "Fable 5 的信号:Agent 开始拼 Runtime — 架构师若飞的 Runtime Contract 工程化拆解；📊 Level ⭐⭐⭐ | 21.3KB | entities/claude-fable-5-agent-runtime-contract-ruofei-2026.md。",
+     "words": 11801,
      "level": 3
     },
     {
@@ -557,8 +557,8 @@
      "url": "/ch07/050-microsoft-agent-framework-tools-4-provider-tool-ap.html",
      "chapter": "ch07",
      "chapterName": "技能、工具与 MCP",
-     "essence": "Microsoft Agent Framework Tools 总览：4 类工具 + Provider 矩阵 + Tool Approval；📊 Level ⭐⭐⭐⭐⭐ | 26.7KB | entities/microsoft-agent-framework-tools-overview-provider-matrix.md。",
-     "words": 14415,
+     "essence": "Microsoft Agent Framework Tools 总览：4 类工具 + Provider 矩阵 + Tool Approval；📊 Level ⭐⭐⭐ | 26.7KB | entities/microsoft-agent-framework-tools-overview-provider-matrix.md。",
+     "words": 13635,
      "level": 3
     }
    ],
@@ -622,8 +622,8 @@
      "url": "/ch05/052-harness-6-subagent-17-versus-git-submodule-agent.html",
      "chapter": "ch05",
      "chapterName": "Harness 工程",
-     "essence": "Harness 模式 6-SubAgent 实战 — 17哥 versus 大模型评测平台（Git Submodule + Agent Handoff + Chrome DevTools MCP）；📊 Level ⭐⭐⭐⭐ | 17.2KB | entities/harness-engineering-practical-17ge-versus-6-subagent.md。",
-     "words": 8843,
+     "essence": "Harness 模式 6-SubAgent 实战 — 17哥 versus 大模型评测平台（Git Submodule + Agent Handoff + Chrome DevTools MCP）；📊 Level ⭐⭐⭐ | 17.2KB | entities/harness-engineering-practical-17ge-versus-6-subagent.md。",
+     "words": 8711,
      "level": 3
     },
     {
@@ -634,7 +634,7 @@
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "OpenClaw（龙虾）的价值不在于\"它能做什么\"，而在于\"你需要它为你做什么\"。 从单一 Agent 上线到搭建六专精智能体加一主管的七人团队，作者实现了从 AI 日报生成、股票分析、图片创作到代码开发的日常任务自动化、零人工干预。；从单体 Agent 到多智能体团队的设计范式转变。本文最核心的洞见在于揭示了\"专精胜于全能\"的多智能体架构哲学。当单一 Agent 尝试承担所有功能时，会同时遭遇上下文污染（注意力分散于异质任务）、技能冲突（最小权限原则被破坏）和人设冲突（截然不同的行为模式难以共存）。这三条挑战分别从认知、权限和个性三个维度证伪了单体 Agent 的可行性，而多智能体团队通过 Workspace 隔离从根本上规避了这些问题",
-     "words": 9944,
+     "words": 9942,
      "level": 3
     }
    ],
@@ -688,7 +688,7 @@
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "张雁飞在 Databend Meetup 2026 北京站的演讲，提出\"Trace 即 Evals\"的核心主张 — AI Agent 的稳定性、成本归因和效果评估，必须建立在完整执行轨迹之上。文章用 Claude Code、Evot、Pi 等 Agent 对比案例，梳理了从 Prompt Engineering、Context Engineering 到 Harness Engineering 的演进。；AI Agent 落地的三大难题：稳定性（相同输入不同输出）、成本归因（无法追踪 Token 去向）、效果评估（缺乏可复现的基准）。",
-     "words": 3558,
+     "words": 3412,
      "level": 3
     },
     {
@@ -699,7 +699,7 @@
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "成本降低 100 倍：单模型完整 Agent 评测需数千美元和数天时间，PACE 仅需不到 1% 的成本即可获得高度相关的预测分数；自动选题：从 19 个非 Agent 基准（覆盖 11 类能力）中自动选出最具预测力的 100 道题，无需人工设计。",
-     "words": 3161,
+     "words": 3154,
      "level": 3
     },
     {
@@ -709,8 +709,8 @@
      "url": "/ch04/088-agent-evaluator.html",
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
-     "essence": "Agent 自进化评估瓶颈 — 外置 evaluator 是自动自进化的前提条件；📊 Level ⭐⭐ | 3.8KB | entities/agent-self-evolution-evaluator-bottleneck.md。",
-     "words": 1983,
+     "essence": "Agent 自进化评估瓶颈 — 外置 evaluator 是自动自进化的前提条件；📊 Level ⭐⭐⭐ | 3.8KB | entities/agent-self-evolution-evaluator-bottleneck.md。",
+     "words": 1977,
      "level": 2
     }
    ],
@@ -763,8 +763,8 @@
      "url": "/ch09/063-mimo-code-agent-claude-code.html",
      "chapter": "ch09",
      "chapterName": "AI 编程",
-     "essence": "小米 MiMo Code — 长程编程 Agent 三大主线（计算/记忆/进化）+ 与 Claude Code 工程分化；📊 Level ⭐⭐⭐⭐ | 29.3KB | entities/mimo-code-xiaomi-coding-harness-2026.md。",
-     "words": 15150,
+     "essence": "小米 MiMo Code — 长程编程 Agent 三大主线（计算/记忆/进化）+ 与 Claude Code 工程分化；📊 Level ⭐⭐⭐ | 29.3KB | entities/mimo-code-xiaomi-coding-harness-2026.md。",
+     "words": 15149,
      "level": 3
     },
     {
@@ -775,7 +775,7 @@
      "chapter": "ch09",
      "chapterName": "AI 编程",
      "essence": "Codex 5.21 把 Appshots（Mac 窗口截图直传）、/goal 目标模式、浏览器标注增强、锁屏后继续工作四块拼图连成完整链路。AI 编程助手的角色从\"代码生成器\"切换到\"电脑工作代理\"——人从\"逐步指挥\"变成\"设目标和把关\"，AI 负责执行、试错、长任务推进。；Appshots 把\"看见现场\"成本降到几乎为零：Mac 当前窗口截图 + 可读取文本一键发给 Codex，省去\"截图-复制-文字解释\"三步。",
-     "words": 3949,
+     "words": 3948,
      "level": 3
     },
     {
@@ -785,8 +785,8 @@
      "url": "/ch09/020-kiro-claude-code-im-acp-bridge-ai-aws.html",
      "chapter": "ch09",
      "chapterName": "AI 编程",
-     "essence": "让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客；📊 Level ⭐⭐ | 6.0KB | entities/enable-kiro-and-claude-code-for-im-with-acp-bridge-async-ai-workflow.md。",
-     "words": 3187,
+     "essence": "让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客；📊 Level ⭐⭐⭐ | 6.0KB | entities/enable-kiro-and-claude-code-for-im-with-acp-bridge-async-ai-workflow.md。",
+     "words": 3188,
      "level": 2
     }
    ],
@@ -840,7 +840,7 @@
      "chapter": "ch11",
      "chapterName": "云基础设施",
      "essence": "NL2SQL 的三大生产环境挑战是这篇实践的核心洞察：；概率性输出：即使 temperature=0，LLM 的输出也是\"大概率相同\"而非\"确定相同\"。在需要审计的财务报表场景，这不可接受",
-     "words": 2929,
+     "words": 2930,
      "level": 2
     },
     {
@@ -851,7 +851,7 @@
      "chapter": "ch11",
      "chapterName": "云基础设施",
      "essence": "TiDB Cloud — Agent-native 数据库与 Kimi K2.6 合作；📊 Level ⭐⭐⭐ | 13.0KB | entities/tidb-cloud-agent-database.md。",
-     "words": 4841,
+     "words": 4710,
      "level": 3
     },
     {
@@ -862,7 +862,7 @@
      "chapter": "ch11",
      "chapterName": "云基础设施",
      "essence": "为什么 Chroma 的 100 万向量阈值如此关键：Chroma 的 Python HTTP 客户端封包瓶颈和合并层（bitmap merge layer）设计在数据量超过 100 万时开始暴露结构性缺陷。20ms → 200ms 的延迟不稳定性不是配置问题，而是架构上限。这意味着 Chroma 本质上是一套\"嵌入式原型数据库\"，而非生产级向量存储。 ^[\"从 Chroma 换成 Qdrant，我踩了 100 万向量的坑 (云朵君, 数据STUDIO, 2026-05-20)\"]；Qdrant 的 Segment 设计哲学值得深入理解：Segment 分段（可追加 vs 不可追加）+ WAL（预写日志）+ 后台合段，这三者的组合解决了向量数据库中最难的问题——在线索引重建时不阻塞查询。这是 Chroma 完全。",
-     "words": 3585,
+     "words": 3454,
      "level": 3
     }
    ],
@@ -938,7 +938,7 @@
      "chapter": "ch12",
      "chapterName": "安全与治理",
      "essence": "地缘政治驱动：CISA 发布 CI Fortify 指南的核心背景是担忧中国可能在美国介入台海冲突时，对西方关键基础设施发动网络 sabotage；Volt Typhoon 预警：中国的 Volt Typhoon 黑客行动已被确认在西方关键基础设施中部署了持久化访问，为潜在 disruption 做准备。",
-     "words": 4411,
+     "words": 4413,
      "level": 1
     }
    ],
@@ -998,7 +998,7 @@
      "chapter": "ch01",
      "chapterName": "AI 与 LLM 基础",
      "essence": "RLAIF 本质上是用一个 LLM 裁判替代手工设计的奖励函数，但其核心价值在于引入了多维度推理评估能力。传统 RLVR 依赖精确的规则匹配（如 substring matching），只能捕捉表面特征；而 LLM-as-a-judge 能够跨越正确性、语气、安全性、相关性等多个维度进行上下文感知评分。AWS 的实验证明，当奖励信号模糊、难以手工定义时（如法律合同审查中\"评论是否有价值\"这类主观判断），基于规则的奖励函数很快失效，而 LLM 法官却能通过系统化的评分维度（TargetDocumentGrounding、ReferenceConsistency、Actionability）给出可靠的相对评估^。；复合奖励架构是生产级 RFT 系统的关键设计决策。AWS 建议永远不要单独依赖 LLM judge，而。",
-     "words": 5270,
+     "words": 5227,
      "level": 3
     },
     {
@@ -1019,8 +1019,8 @@
      "url": "/ch01/509-llm-rl-part-2.html",
      "chapter": "ch01",
      "chapterName": "AI 与 LLM 基础",
-     "essence": "📊 Level ⭐⭐⭐⭐⭐ | 33.6KB | entities/llm-rl中的熵-part-2-熵对训练的调控.md；LLM 的 RL 训练面临一个根本张力：足够的熵让模型保持探索能力（避免过早收敛到次优策略），但太高的熵又会让模型难以学到有意义的模式",
-     "words": 12652,
+     "essence": "📊 Level ⭐⭐⭐ | 33.6KB | entities/llm-rl中的熵-part-2-熵对训练的调控.md；LLM 的 RL 训练面临一个根本张力：足够的熵让模型保持探索能力（避免过早收敛到次优策略），但太高的熵又会让模型难以学到有意义的模式",
+     "words": 12650,
      "level": 3
     }
    ],
@@ -1074,7 +1074,7 @@
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "Amazon Bedrock AgentCore Web Search 以全托管 MCP 兼容方式为 AI Agent 提供实时网页搜索能力。底层是 Amazon 自建的数百亿文档索引，持续分钟级刷新，查询流量不离开 AWS。定价 $7/1,000 次查询。；→ 原文存档 (GA 公告) | → 原文存档 (中国区实战教程)。",
-     "words": 5592,
+     "words": 5590,
      "level": 3
     },
     {
@@ -1084,8 +1084,8 @@
      "url": "/ch04/302-browser-use-playwright-chrome-devtools-mcp-agent-bro.html",
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
-     "essence": "五款浏览器自动化工具横向对比：browser-use / Playwright / chrome-devtools-mcp / agent-browser / BrowserAct；📊 Level ⭐⭐⭐⭐ | 11.6KB | entities/four-browser-automation-tools-comparison.md。",
-     "words": 6233,
+     "essence": "五款浏览器自动化工具横向对比：browser-use / Playwright / chrome-devtools-mcp / agent-browser / BrowserAct；📊 Level ⭐⭐⭐ | 11.6KB | entities/four-browser-automation-tools-comparison.md。",
+     "words": 6148,
      "level": 3
     },
     {
@@ -1096,7 +1096,7 @@
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "Browser Harness（browser-use/browser-harness，~8.9K Stars）是一个基于 Chrome DevTools Protocol (CDP) 直连的自愈型浏览器 Agent 框架，核心理念是去框架化：薄 CDP 桥接 + mid-task 自愈机制 + domain-skills 自动沉淀。；与 AgentBrowser、Playwright/Selenium 等方案不同，Browser Harness 不构建厚重抽象层，而是让 Agent 直接通过 CDP WebSocket 与浏览器原生状态交互",
-     "words": 3947,
+     "words": 3946,
      "level": 3
     }
    ],
@@ -1202,8 +1202,8 @@
      "url": "/ch04/007-wikiskill-agent-google-research.html",
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
-     "essence": "WikiSkill：将 Agent 经验编译为持久知识以驱动技能进化（Google Research）；📊 Level ⭐ | 6.3KB | entities/wikiskill-persistent-knowledge-skill-evolution-google-2026.md。",
-     "words": 3037,
+     "essence": "WikiSkill：将 Agent 经验编译为持久知识以驱动技能进化（Google Research）；📊 Level ⭐⭐⭐ | 6.3KB | entities/wikiskill-persistent-knowledge-skill-evolution-google-2026.md。",
+     "words": 3039,
      "level": 1
     },
     {
@@ -1214,7 +1214,7 @@
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "双层编排的架构价值：框架层（Deep Agents）和基础设施层（AgentCore）的职责分离是本文的核心设计模式\"多 Agent 协作编排\"。框架层负责 subagent 的生命周期管理、生成和消息路由，基础设施层提供隔离的 MicroVM 执行环境。这种分层使编排逻辑与执行环境可以独立演进——框架可以在不同后端 runtime 间迁移，而不必重写编排策略。；Subagent 并发压缩时间的本质：三个 research subagent 并行执行将端到端耗时从串行的 12-18 分钟压缩至 4-6 分钟（3x 提升）。这一收益的来源不是并发本身，而是 coordinator 只接收结构化摘要而非原始网页内容，从而保持 context window 高效利用Harness Context Window Man。",
-     "words": 6701,
+     "words": 6699,
      "level": 3
     }
    ],
@@ -1231,7 +1231,7 @@
   }
  ],
  "stats": {
-  "scannedArticles": 1514,
+  "scannedArticles": 1461,
   "moduleCount": 16,
   "lessonsPerModule": 3
  }
