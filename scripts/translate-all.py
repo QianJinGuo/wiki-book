@@ -48,7 +48,7 @@ SKIP_TAGS = {"script", "style", "noscript", "pre", "code", "kbd", "samp",
 SKIP_CLASS_TOKENS = ("mermaid", "diagram-", "wiki-book-tool", "wb-live-pill")
 CJK = re.compile(r"[\u3400-\u4dbf\u4e00-\u9fff]")
 
-SYSTEM_PROMPT = "\n".join([
+MAIN_SYSTEM_PROMPT = "\n".join([
     "You are a translation engine for a technical AI-engineering documentation site.",
     "Translate each numbered line from Chinese to natural, concise English.",
     "Rules:",
@@ -60,6 +60,15 @@ SYSTEM_PROMPT = "\n".join([
     "  fragment, starts with punctuation, or looks like a table cell.",
     "- Only lines with no Chinese at all may be copied unchanged.",
     "Output ONLY the numbered translated lines. No commentary, no code fences.",
+])
+
+# For lines the main pass returned unchanged: short batches, explicit framing.
+FRAG_SYSTEM_PROMPT = "\n".join([
+    "These numbered lines are sentence fragments cut out of a Chinese technical",
+    "document (they may start or end mid-sentence, or begin with punctuation).",
+    "Translate the Chinese content of EVERY line into English.",
+    "A line that still contains Chinese afterwards is a failure.",
+    "Keep the numbering; output ONLY the numbered translated lines.",
 ])
 
 
@@ -168,12 +177,12 @@ def load_api_key():
     sys.exit("ERROR: SENSENOVA_API_KEY not set (env or .dev.vars)")
 
 
-def call_upstream(texts, api_key):
+def call_upstream(texts, api_key, system_prompt=None):
     numbered = "\n".join(f"{i + 1}. {t.replace(chr(10), ' ')}" for i, t in enumerate(texts))
     body = json.dumps({
         "model": MODEL,
         "messages": [
-            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "system", "content": system_prompt or MAIN_SYSTEM_PROMPT},
             {"role": "user", "content": numbered},
         ],
         "max_tokens": 8192,
@@ -329,6 +338,33 @@ def main():
                     existing[k] = translation
                 done += len(result)
                 print(f"    {done}/{len(items)}", flush=True)
+
+        # Stubborn-fragment retry: lines the model returned unchanged get up
+        # to two more passes in small batches with a fragment-specific prompt.
+        for retry_round in range(2):
+            stubborn = [(k, pairs[k]) for k in new_keys
+                        if existing.get(k) == pairs[k] and CJK.search(pairs[k])]
+            if len(stubborn) < 2:
+                break
+            small = [stubborn[i:i + 8] for i in range(0, len(stubborn), 8)]
+            fixed = 0
+
+            def run_small(batch):
+                keys = [k for k, _ in batch]
+                texts = [s for _, s in batch]
+                try:
+                    translated = call_upstream(texts, api_key, system_prompt=FRAG_SYSTEM_PROMPT)
+                    return list(zip(keys, translated))
+                except RuntimeError:
+                    return []
+
+            with concurrent.futures.ThreadPoolExecutor(max_workers=CONCURRENCY) as pool:
+                for result in pool.map(run_small, small):
+                    for k, translation in result:
+                        if translation != pairs[k]:
+                            existing[k] = translation
+                            fixed += 1
+            print(f"    fragment retry {retry_round + 1}: {fixed}/{len(stubborn)} fixed", flush=True)
 
         with open(out_path, "w", encoding="utf-8") as fh:
             json.dump(existing, fh, ensure_ascii=False, sort_keys=True)
