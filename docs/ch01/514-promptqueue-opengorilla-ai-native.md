@@ -8,8 +8,6 @@
 
 由 **jinguo** 独立设计开发，**2 天 38 commits 完成 7,760 行 TypeScript**，Monorepo 4 包架构（Hono API + Worker + Next.js 15 Dashboard + CLI），测试覆盖率 ~33%。OpenGorilla 集成让系统"越用越聪明"。
 
-## 架构图
-
 ## 相关实体
 - [Schemaflow Openai Cookbook Staged Agentic Workflow](https://github.com/QianJinGuo/wiki-public/blob/main/entities/schemaflow-openai-cookbook-staged-agentic-workflow.md)
 - [Prompt Context Harness Three Evolutions](https://github.com/QianJinGuo/wiki-public/blob/main/entities/prompt-context-harness-three-evolutions.md)

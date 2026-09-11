@@ -68,7 +68,6 @@ Unlimited OCR 还没有真正摆脱上下文长度。DeepEncoder 压缩率虽高
 - [LLM 可解释性](https://github.com/QianJinGuo/wiki-public/blob/main/entities/条条电路通罗马大模型可解释性的唯一机制可能从一开始就不存在.md) — 探讨注意力机制的可解释性，为理解 R-SWA 的窗口设计提供理论背景
 - [组件过期模式](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-component-expiry-evidence.md) — 探讨 AI 系统的缓存策略与状态管理，与 R-SWA 的 KV cache 管理有共通之处
 
-
 → [原文存档](https://mp.weixin.qq.com/s/0iBP0zGJlHFhyiObsdXDVQ)
 
 ---

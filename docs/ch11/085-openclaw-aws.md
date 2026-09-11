@@ -48,8 +48,6 @@ AgentCore Runtime 的核心价值在于为每个任务提供独立隔离执行�
 ### 5. 持续运营：12 项安全控制清单优先级落地
 文章提供了清晰的优先级框架：P0（立即执行）包括最小化暴露面、漏洞扫描与补丁管理、隔离执行环境、IAM 最小权限、密钥生命周期管理；P1（1 个月内）包括 Skills 安全审查、持续配置审计、安全身份委托、运行时行为监控；P2（3 个月内）包括资产清点、安全治理体系集成、多租户隔离。  安全团队应按此优先级逐步推进，而非试图一次性完成所有控制。
 
-## 架构图
-
 ## 相关实体
 - [Amazon CloudFront部署小指南（二十四）：将CloudFront “多域名”改造为”多租户”架构 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-cloudfront-deploy-guide-cloudfront-domain-multi-tenant-architecture.md)
 - [Versa takes aim at fragmented enterprise security with CSPM, orchestration update, and AI agent controls](https://github.com/QianJinGuo/wiki-public/blob/main/entities/www-networkworld-com-versa-takes-aim-at-fragmented-enterprise-security.md)

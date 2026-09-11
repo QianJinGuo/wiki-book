@@ -949,7 +949,6 @@ Superpowers 的微测方法论最大的贡献不是某一条具体结论，而�
 - [Agent Loop 设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-boris-cherny-agent-loop-design-patterns.md) — 探讨 Agent 运行循环的设计模式，为理解 dispatch prompt 的上下文机制提供参考
 - [Harness Engineering](ch05/061-harness-engineering.html) — Agent 工程化的广义框架，Superpowers 的微测方法是 prompt engineering 层面对 Harness Engineering 的一次实践验证
 
-
 → [原文存档](https://mp.weixin.qq.com/s/4XTsfY8SzcjusCU6sUg7yg)
 
 ---
@@ -1640,8 +1639,6 @@ Schema 语义没变，但 **bytes 稳定了**。
 - **给 LLM 配 retrieval 工具来支持"概率无损"压缩**：如果自己做上下文压缩，配合 `<<ref:HASH>>` marker + retrieval 工具，让模型在需要细节时主动取回。**关键是 prompt 设计要让模型知道"可以取"**——这比"压缩后什么都不做"更安全，比"完全不压缩"更省 token。
 
 - **Agent 工具链加入"压缩代理层"作为可插拔中间件**：Headroom 的 proxy / wrapper / MCP server 模式让它**对应用层透明**——现有 Agent 不用改代码就能获得压缩 + 缓存稳定化收益。如果你在构建 Agent 平台或 IDE 集成层，**优先考虑 Headroom-style 透明代理**而非侵入 SDK 修改。
-
-## 架构图
 
 ---
 

@@ -1335,8 +1335,6 @@ Qwen-AgentWorld 的创新在于将世界模型的载体从传统的状态空间�
 
 6. **对国产 VLM 团队 (小米/快手/StepFun/美团) 的意义**: 浙江大学+小米 MiLMPlus 在该方向发论文, 表明国产团队已与国际同步。K2.5/Step3-VL/LongCat-Flash-Thinking 形成中国"宽度扩展"生态。
 
-## 相关链接
-
 ### 同范式生态
 - [ICML 2026 NPR 文本原生并行推理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/native-parallel-reasoner-icml2026.md) — **同源**: 都推动"推理宽度扩展", NPR 在文本领域开辟
 - [LASER ACL 2026 视觉推理](ch01/315-laser-acl2026-latent-superposition-visual-reasoning.html) — **互补**: 同样针对 VLM, 但用 latent superposition 路线

@@ -85,7 +85,6 @@ Cohere 使用三种不同的评测 harness（SWE-agent、ReAct 单工具、Termi
 - **本地部署门槛**：1× H100 @ FP8 的最低配置意味着 80GB H100 是 baseline；3B active 推理对消费级 GPU（4090/RTX6000 Ada）不友好。
 - **vendor 多样化**：Apache2.0 + 三家可访问渠道（Hugging Face / Cohere API / OpenRouter）让 North Mini Code 成为 "anti-vendor-lock-in"工具链中的可选项，与 Mistral Devstral、Qwen3-Coder 形成开源三足。
 
-
 → [原文存档](https://cohere.com/blog/north-mini-code)
 
 **外部参考**：

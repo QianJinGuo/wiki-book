@@ -85,8 +85,6 @@ memory-agentcore 的核心架构决策是**不占用 OpenClaw 独占 Slot**，�
 ## 来源
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/openclaw-service-enterprise-share-system-design/)
 
-## 架构图
-
 ## 相关实体
 - [企业级OpenClaw安全部署架构指南 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/enterprise-openclaw-security-deploy-architecture-guide.md)
 - [CI&amp;T基于 Amazon Bedrock AgentCore 与 OpenClaw 的企业级智能运维最佳实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ci-t-based-on-amazon-bedrock-agentcore-openclaw-enterprise-intelligent-operations-best-practices.md)

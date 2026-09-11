@@ -100,8 +100,6 @@ AllenTang 对 Claude Code 多 Agent 模块的源码级拆解，核心命题：**
 4. **多 Agent 的核心是任务抽象**：不是 prompt 分工，而是能否把分出去的任务执行结果统一收回并协调。
 5. **扩展性需要内部收敛来保障**：外部插件再多，内部模块边界必须清晰；否则系统随复杂度增长必然腐化。
 
-## 架构图
-
 ## 相关实体
 - [claude-code-7-layer-memory-architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-7-layer-memory-architecture.md)
 

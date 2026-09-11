@@ -40,7 +40,6 @@
 - **Atomic Skills** = Agent 的"肌肉记忆"（底层工具操作模式）
 与 [Agent Skill 编写指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing.md) 的实践视角互补： SkillX 从学习角度建立技能体系，Agent Skill 指南从编写规范角度约束技能格式。
 
-## 相关页面
 ## 深度分析
 SkillX的三层技能体系（Planning / Functional / Atomic）揭示了Agent经验复用的核心矛盾：原始轨迹中包含太多细节噪声，压缩成高层抽象又会丢失关键上下文。SkillX的答案是用层次化结构同时解决泛化性和保真度问题。
 **1. 三层抽象的认知基础来自于对Agent轨迹中不同类型知识的本质区分。** L3 Planning Skills对应"面对新任务时选择什么策略"——这是高阶推理，与具体工具无关；L2 Functional Skills对应"完成某个子目标时调用哪些工具以及按什么顺序"——这是过程性知识；L1 Atomic Skills对应"某个工具的具体使用参数和模式"——这是最低层的肌肉记忆。三个层次的信息密度和时间稳定性完全不同：L1最具体但变化最快，L3最抽象但最难提取。

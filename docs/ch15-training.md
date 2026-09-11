@@ -92,7 +92,6 @@ This isn’t unexpected — productions are dynamic, facing frequent changes, sc
 
 → [原文存档](https://arxiv.org/abs/2608.05000)
 
-
 ---
 
 ## Ch15.003 不用人类手写训练框架了！AI自己写代码，训出1B端侧「小钢炮」

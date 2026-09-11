@@ -179,8 +179,6 @@ EAGLE-3 相对 MTP 在 Mean TPOT 上有 59% 改善，但文章更强调 P95/P95 
 
 → [原文存档](https://mp.weixin.qq.com/s/PZMX-55W_gqJKtHIYXJVyA)
 
-→
-
 → [Transformer 架构](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/transformer-architecture.md)
 
 → [Attention 机制](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/attention-mechanism.md)

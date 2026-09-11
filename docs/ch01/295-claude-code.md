@@ -33,7 +33,6 @@ REPL 消费的是**带语义的事件流**，归并成用户能理解的会话�
 
 ### 7. Extensibility
 **外部可以动态多变，内部必须尽量收敛**。MCP tool → 本地 Tool，MCP prompt → Command。Skill 是轻量能力声明对象。
-→
 
 ## 深度分析
 Claude Code 的七大模块设计，本质上是在回答一个问题：**当 Agent 系统从 Demo 走向生产，复杂度从哪里来，如何控制？**

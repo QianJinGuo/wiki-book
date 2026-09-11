@@ -73,7 +73,6 @@ Mollick 提出了三个应对策略。首先，发展新的 literacy：学习何
 - [Sign Of The Future Gpt 55 Mollick](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sign-of-the-future-gpt-55-mollick.md)
 - [Three Years Gpt3 Gemini3 Mollick](https://github.com/QianJinGuo/wiki-public/blob/main/entities/three-years-gpt3-gemini3-mollick.md)
 
-
 → [原文存档](https://www.oneusefulthing.org/p/on-working-with-wizards)
 
 ---

@@ -85,7 +85,6 @@ Claude Code 里 agent 的自动化触发有五种形态：/loop（时间表）�
 - [Claude Code Loop Engineering 完整攻略](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-loop-engineering-guide.md) — 兔兔AGI 第三方教程，侧重实战技法；本实体是官方分类法，侧重模式选择决策
 - [阿里云 Loop 实战」— 同为 Loop 实践，但本实体聚焦 Claude Code 的 CLI 命令级 loop 原语
 
-
 → [raw/articles/claude-code-loop-types-official-taxonomy-four-modes|原文存档 1](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aliyun-loop-engineering-log-scan-auto-fix-deploy.md)
 → [raw/articles/fyjE5EhnV1jKzE8NnscZDQ|原文存档 2 (AI寒武纪)]
 → [raw/articles/anthropic-loop-four-types-practical-guide-jiagoux-2026-07-15|原文存档 3 (架构师)]

@@ -2,7 +2,6 @@
 
 > 📊 Level ⭐⭐⭐ | 9.0KB | `entities/1password-securing-ai-agents-machine-identities.md`
 
-
 ### 架构图（Excalidraw / 推荐使用 ✨）
 
 Shareable link: https://excalidraw.com/#json=OUQMTvqOC0O-tqvY2kjvR,0k90NsmJUHkicR8wSny03A

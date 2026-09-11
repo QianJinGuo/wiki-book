@@ -18,7 +18,6 @@ Hermes Agent 成为 HiClaw Worker 的**一等公民运行时**：
 - 安装器支持交互式运行时选择，Worker 可原地切换：`hiclaw update worker --runtime hermes`
 - 支持多 Agent 协作：Hermes Worker 可与 agent 和 QwenPaw Worker 参与团队项目，跨运行时 `m.mentions` 消息投递
 → [Hermes Agent Skill](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/hermes-agent-skill.md)
-→
 
 ### 企业级 Helm Chart 部署
 生产级 Helm Chart 将 Tuwunel（Matrix）、MinIO（对象存储）、Element Web（IM 客户端）和 hiclaw-controller 部署为独立 Deployment/StatefulSet：

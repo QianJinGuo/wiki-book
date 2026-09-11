@@ -104,6 +104,5 @@ AGENTS.md 中写的规则，如果没有自动化检查，AI 和人都会违反 
 
 → [第 2 来源原文](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651052471&idx=2&sn=e243403e1ae25a94cb0822e80332c0fc)
 
-
 ---
 

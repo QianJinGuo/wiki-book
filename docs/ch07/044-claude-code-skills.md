@@ -107,7 +107,6 @@ MCP 来源的 Skill 跳过内嵌 shell 执行是一个合理的安全设计，�
 - [Hermes Skill System](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-skill-system.md)
 - [Claude Code 系统工程指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-top-1-guide-system-engineering.md)
 
-
 → [原文存档](https://mp.weixin.qq.com/s/EChuGeLSUlZdPI0GrapqVg)
 
 ---

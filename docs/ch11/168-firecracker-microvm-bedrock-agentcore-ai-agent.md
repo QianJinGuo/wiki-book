@@ -604,7 +604,6 @@ OpenClaw Pool 展示了 Firecracker microVM 如何在保持无服务器控制面
 
 ![](https://d2908q01vomqb2.cloudfront.net/472b07b9fcf2c2451e8781e944bf5f77cd8457c8/2026/05/14/2026_Summits_Commercial_Banner_1440x657.png)
 
-
 ### 1. Firecracker microVM 在多租户隔离范式中的定位
 
 Firecracker 处于容器与传统 VM 之间的独特生态位：它保留了独立内核这一 VM 核心安全属性，同时将 VMM 内存开销压缩至 <5 MB（比 QEMU/KVM 低约 100 倍），使得在单台 EC2 宿主机上运行数十个租户成为经济上可行的选择 。这一组合在 AWS Lambda 和 Fargate 的生产环境中得到验证，理论上可支撑每主机密度远高于传统 VM 方案的多租户部署。关键在于理解其隔离模型：内核级隔离意味着一个租户内核中的 CVE 无法直接穿透到其他租户或宿主机，这与命名空间级隔离（有共同内核的容器）有本质区别。对安全敏感的多租户 AI Agent 场景，这是核心差异化价值。

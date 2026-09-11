@@ -125,7 +125,5 @@ autoscaling:
 - [LiteLLM + QuickSight 可视化](https://github.com/QianJinGuo/wiki-public/blob/main/entities/litellm-amazon-quicksight-visualization-configuration.md) — 姐妹篇（运维监控）
 - [AWS NFW AI 冲突检测](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-network-firewall-ai-conflict-detection-bedrock.md) — NFW 与 ECS/EKS 部署组合使用
 
-## 架构图
-
 ---
 

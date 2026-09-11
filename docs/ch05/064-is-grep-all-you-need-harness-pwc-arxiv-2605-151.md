@@ -163,7 +163,6 @@ Q3: 长记忆对话还是一次性任务？
 
 - **将交付方式纳人架构评审**：在设计 Agent 系统时，应该像对待模型选型和检索器选型一样，将工具结果的交付方式（inline vs file-read）纳人正式的架构评审决策点，而不是作为实现细节事后补充 。
 
-
 - `Agent Harness Context Management Working Set` — Harness 上下文管理 Working Set 模式，与本文交付方式决策呼应
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — Harness 工程框架，提供了 triplet 之外的工程化视角
 - `Protocol H Hierarchical Agentic Rag Enterprise` — Agentic RAG 企业级协议，与检索器选型直接相关

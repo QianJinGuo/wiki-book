@@ -2596,8 +2596,6 @@ partition_by: "bucket(device_id, 50), day(timestamp)"
 
 5. **CDC Upsert 是 DB 变更捕获场景的必备能力**：对于数据库变更同步到数据湖的场景，没有 Upsert 支持的零 ETL 方案是不完整的。确认方案支持 Debezium 格式的 CDC 事件，并能正确处理 DELETE + UPDATE 操作。
 
-## 架构图
-
 ## 相关实体
 
 → [原文存档](https://mp.weixin.qq.com/s/7wg1gUZZg08OoozBMebcHg)

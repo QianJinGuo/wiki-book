@@ -114,8 +114,6 @@ GitNexus 的本地化架构（代码不离开机器）是其企业推广的关�
 ### 5. 将"代码离开本机"作为安全红线，纳入团队 AI 编码规范
 在使用任何 AI 编码工具前，先确认项目索引是否在本地存储。在 Web UI 模式下使用时，避免处理涉及认证密钥、商业敏感代码等高风险内容。GitNexus 的本地优先设计应该成为团队 AI 编码安全策略的基准。
 
-## 关联阅读
-→
 ## 相关实体
 - [Tmall Ai Coding Practice Team Knowledge Base](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tmall-ai-coding-practice-team-knowledge-base.md)
 - [Introducing Claude Platform On Aws Anthropics Native Platfor](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-claude-platform-on-aws-anthropics-native-platfor.md)

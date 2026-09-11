@@ -1005,7 +1005,6 @@ Karpathy 的核心解法: 把**"什么时候停、凭什么算成功"这件事,�
 
 ## 第 19 来源 — 若飞：吴恩达三层 Loop — Agent 越快，人越要管慢反馈
 
-
 ### 内容概要
 
 若飞对 Andrew Ng《Three Key Loops for Building Great Software》的架构师视角解读。将三层 Loop 重新组织为工程团队熟悉的语言，核心贡献在于**把抽象的产品开发框架具象化为可操作的交接物和团队落地建议**。

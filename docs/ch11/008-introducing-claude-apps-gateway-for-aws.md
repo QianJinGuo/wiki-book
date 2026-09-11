@@ -55,6 +55,5 @@ The gateway handles five core responsibilities:
 
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/deploying-anthropic-claude-apps-gateway-for-aws-for-enterprise-workloads)
 
-
 ---
 

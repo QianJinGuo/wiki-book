@@ -84,7 +84,6 @@ Langfuse 的 tracing 数据揭示了一个关键的成本分析粒度：**Observ
 
 5. **建立产品-工程共同决策的 tracing 评审机制**：将 trace 数据引入产品评审流程，让产品经理和工程师共同基于数据讨论质量-成本-延迟的权衡。Tracing 的价值不仅是工程工具，更是产品决策的基础设施。
 
-
 → [原文存档](https://www.xiaohongshu.com/explore/6a14f1040000000008025eea)
 
 ---

@@ -53,8 +53,6 @@ Quick Suite 通过 Client ID + Client Secret 向 Cognito 的 `/oauth2/token` 换
 ---
 *Source: 原文存档*
 
-## 架构图
-
 ## 相关实体
 - [AgentCore质量优化飞轮：推荐-验证-部署闭环](../ch11/099-aws-bedrock-agentcore-quality-optimization-flywheel.html)
 - [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-agentcore-identity-security.md)

@@ -52,7 +52,6 @@ Google DeepMind 论文（arXiv 2605.27295）：一个原生多模态 embedding �
 
 **5. 工程落地还剩的工作。** 模型是底座，上层还有：索引更新策略（新增/删除 doc 的增量更新）、长视频切片粒度、超长文档分页、权限隔离。这部分 Google 论文没解决，做产品的需要自己设计。
 
-
 - [原文存档](https://mp.weixin.qq.com/s/oZnzy6QxriNclm-UTGh7VQ) — Hyman的杂货铺原文
 
 ## 一句话

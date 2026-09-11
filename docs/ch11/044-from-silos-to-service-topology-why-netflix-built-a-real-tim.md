@@ -265,8 +265,6 @@ Netflix 从数千个工程师支持请求中提炼出的三个核心问题（依
 
 Service Topology 同时服务于人类工程师（UI 探索）和自动化系统（程序化调用），这种双重受众设计值得借鉴。UI 层需要的是快速迭代和丰富交互；API 层需要的是稳定契约和高效批量查询。工程团队在设计可观测性基础设施时，应当为 API 层预留独立的演进路径，避免 UI 需求污染 API 契约。同时，API 层应当支持过滤（availability tier、business domain）、分页和图遍历等核心原语，使自动化系统可以在上层构建复杂的依赖分析逻辑。
 
-## 架构图
-
 ## 相关实体
 - [Serverless Langgraph Multi Agent Aws](https://github.com/QianJinGuo/wiki-public/blob/main/entities/serverless-langgraph-multi-agent-aws.md)
 - [Build Real Time Voice Streaming With Amazon Nova Sonic And Webrtc](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-real-time-voice-streaming-with-amazon-nova-sonic-and-webrtc.md)

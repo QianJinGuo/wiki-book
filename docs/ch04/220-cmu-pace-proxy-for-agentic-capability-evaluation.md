@@ -65,7 +65,6 @@ PACE 的最实际价值在于改变了 Agent 开发的迭代节奏：
 
 5. **与 RoadmapBench 等长周期基准互补使用**：PACE 擅长快速排序，[RoadmapBench](https://github.com/QianJinGuo/wiki-public/blob/main/entities/roadmapbench-long-horizon-agentic-software-development-benchmark.md) 等长周期基准测试深度能力——两者结合使用可在成本和评估深度之间取得平衡。
 
-
 - 论文: PACE: A Proxy for Agentic Capability Evaluation — arXiv:2607.02032
 - GitHub: https://github.com/neulab/pace
 - 数据集: https://huggingface.co/datasets/neulab/pace-bench

@@ -107,8 +107,6 @@ Multiagent Sessions、Outcomes、Dreams 目前均处于研究预览阶段，需�
 - [Anthropic PM 的 Agentic 工作流](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-pm-agentic-workflow.md) — 同一时期 Jess Yan 的 PM 视角，同一产品不同维度
 → [原文存档](https://mp.weixin.qq.com/s/B-Usu9rACZG-JJDN_z-Ydw)
 
-## 架构图
-
 ## 相关实体
 - [Claude Managed Agents 官方 Harness 平台指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-claude-managed-agents-guide.md)
 - [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-官方-agent-harness-平台claude-managed-agents-完整指南.md)

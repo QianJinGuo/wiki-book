@@ -132,7 +132,6 @@ Codex 的五层架构可以映射到人类组织的治理层级：
 - [Agent Harness 上下文管理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-context-management-working-set.md)
 - [Skill 驱动开发](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-to-encode-experience-into-skills.md)
 
-
 → [原文存档](https://www.xiaohongshu.com/explore/6a0c142b000000000702719d)
 
 ---

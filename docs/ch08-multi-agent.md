@@ -1822,7 +1822,6 @@ Oz 和 AWS [AgentCore](ch04/310-agentcore-managed-harness.html) 在功能列表�
 ### 5. 设计跨端任务延续机制
 手机远程调用电脑桌面文件是多端协作的典型场景。实际工作中，可以设计类似的跨端任务延续：用户在外可以通过手机查看/操控项目进展，回到电脑后直接继续处理桌面端文件，无需手动同步材料。这让 AI 任务不再被某一台设备绑定。
 
-
 - [扣子 3.0 多 Agent 协同实战](https://github.com/QianJinGuo/wiki-public/blob/main/entities/coze-3-multimagent-team-orchestration-wangheige.md) —— 同样是 Coze 3.0 多 Agent 协作主题，网黑哥从实战角度提供了开发小队/品牌设计/公众号流水线的完整案例，与本文的官方升级视角互为补充。
 - [字节 Trae Harness 工程指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/bytedance-trae-harness-engineering-guide.md) —— 字节另一款 AI 产品 Trae 的工程化指南，可与 Coze 3.0 的本地 Agent 接入思路对照，理解字节在 AI 协作产品上的不同布局方向。
 

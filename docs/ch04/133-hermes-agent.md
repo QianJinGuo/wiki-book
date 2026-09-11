@@ -112,8 +112,6 @@ SOUL.md 作为人格层，解决的不是"Agent 说什么"的问题，而是"Age
 
 将行为约束（SOUL.md）与动态内容（Memory、Skill）分层管理，确保价值观底线不受任务上下文影响。SOUL.md 应该定义 Agent 的"宪法级"约束——什么绝对不能做、什么必须坚持——这些约束在每次任务中都生效，不因为具体任务的 prompt 拼装而被覆盖。这是一种比在 system prompt 里塞约束更可靠的分层治理策略。
 
-## 架构图
-
 ## 相关实体
 - [Claude Code Search Architecture Tencent 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-search-architecture-tencent-2026.md)
 - [Openclaw Prompt Context Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-prompt-context-harness.md)

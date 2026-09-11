@@ -55,7 +55,6 @@
 
 > **最终边界**：有可信外部信号的更新可以自动；没有可信外部信号的更新必须留人或禁止上线。[^1]
 
-
 → [raw/articles/tzxbqmBhPlQOarakeeMQaQ|原文存档]
 
 [^1]: raw/articles/tzxbqmBhPlQOarakeeMQaQ

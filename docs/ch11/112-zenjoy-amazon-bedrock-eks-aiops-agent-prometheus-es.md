@@ -41,7 +41,6 @@ AgentCore Runtime 的使用表明，Serverless Agent 托管正在成为 AI 原�
 
 ## 相关实体
 
-
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-serverless-async-inference-sqs-lambda.md)
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/based-on-prowler-genai-build-fintech-intelligent-compliance-2.md)
 - [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-claude-prompt-cache-strategy.md)

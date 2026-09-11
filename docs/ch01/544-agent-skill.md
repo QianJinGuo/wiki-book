@@ -100,7 +100,6 @@ SaaS 产品经理每周评估 1-10 家客户定制需求工作量，认真做完
 
 ### 核心洞见
 > Skills 不是替你"发明"工作经验，而是帮你把已有经验稳定地复用出来。Skill 的价值 = 你讲清楚多少判断标准和方法论，而非给出多长的提示词。
-→
 
 ## 相关实体
 - [Agent Skill 高质量编写规范](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing-practices.md)

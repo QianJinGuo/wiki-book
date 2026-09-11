@@ -3864,8 +3864,6 @@ Honcho 这类外部 provider 引入深层用户建模，但带来了额外的治
 
 至少要能回答：哪些条目进了 prompt，哪些内容来自历史检索，哪些 skill 被触发，压缩前写了什么，外部 provider 返回了什么。如果记忆系统不可观测，最后很容易变成一团没人敢删的旧状态——这比没有记忆更麻烦。
 
-## 架构图
-
 ## 相关实体
 
 - [Hermes Agent 记忆系统 vs OpenClaw 记忆观](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-memory-system.md)
@@ -4669,7 +4667,6 @@ Hermes 接入场景中，Gateway 把 capture、search、recall 暴露为 HTTP �
 - [注意力塌陷与上下文管理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/attention-collapse-context-management.md)
 - [TencentDB Agent Memory 长期记忆金字塔](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tencentdb-agent-memory-long-term-pyramid.md)
 - [Agent Harness 上下文管理工作集](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-context-management-working-set.md)
-
 
 → [原文存档](https://www.xiaohongshu.com/explore/6a058276000000003503b5b8)
 → [若飞拆解 2026-08](https://mp.weixin.qq.com/s/mQK2N3D-6As5cWis5yh1mQ)

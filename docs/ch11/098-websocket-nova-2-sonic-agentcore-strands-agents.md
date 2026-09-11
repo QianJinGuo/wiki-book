@@ -38,8 +38,6 @@ Strands Agents 的 Tool Calling 将语音 Agent 从"回答问题"升级为"直�
 4. **利用 AgentCore 的会话持久化实现跨连接记忆**：用户可能在对话中断后重新连接（如网络波动），AgentCore 内置的长短期记忆功能确保 AI 能"记得"刚才聊了什么，无需用户重复描述背景。建议充分利用这一能力提升快时尚客服的连续性体验。
 5. **在大促前验证弹性伸缩和并发上限**：快时尚行业的黑五、圣诞等促销期咨询量呈指数级增长，AgentCore Runtime 的 Serverless 自动伸缩能力需要提前进行压测验证，确保 Nova Sonic 配额、WebSocket 连接数和 Strands Agent 实例数在高并发下不成为瓶颈。
 
-## 架构图
-
 ## 相关实体
 - [你缺的不是更好的 AI，而是一个"装自己"的系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vayne-lw-personal-agent-system.md)
 - [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)

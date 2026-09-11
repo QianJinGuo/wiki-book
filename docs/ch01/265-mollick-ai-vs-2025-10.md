@@ -120,7 +120,5 @@ Mollick 建议通过「玩」来理解 AI 边界：让视频模型制作卡通�
 
 An opinionated guide to which AI to use to do things
 
-> → 原文存档
-
 ---
 

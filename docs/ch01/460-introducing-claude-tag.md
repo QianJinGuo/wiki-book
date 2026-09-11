@@ -131,7 +131,6 @@ Claude Tag 的特性对 Agent 基础设施提出了新的要求：
 - [Context Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/context-engineering.md) — 上下文工程的理论与实践
 - [Agent Harness Context Management](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-context-management-working-set.md) — Agent 上下文管理
 
-
 → [原文存档](https://www.anthropic.com/news/introducing-claude-tag)
 
 ## 第 2 来源 — 新智元报道：Claude Tag 的独立身份与频道权限架构

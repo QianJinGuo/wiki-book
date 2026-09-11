@@ -136,7 +136,6 @@ Lambert 是**模型能力 + 开源生态**专家（Interconnects 主理人），
 - [Claude Fable 5 与 AI 安全寓言](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-fable-5-and-new-ai-safety-fables.md) — Anthropic 政策方向
 - [2026 年中开源模型下注](https://github.com/QianJinGuo/wiki-public/blob/main/entities/my-bets-on-open-models-mid-2026.md) — Lambert 同期评估
 
-
 → [原文存档](https://www.interconnects.ai/p/how-anthropic-vs-dow-impacts-open)
 
 ---

@@ -64,7 +64,6 @@ Loop Engineering 的核心不在于自动化"写代码"，而在于设计出能�
 - [Claude Code Loop Engineering 完整攻略](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-loop-engineering-guide.md) — 同为 Loop Engineering 方法论，但本实体是阿里云真实生产环境的实战数据
 - [Loop Engineering 半年实战（claude-ship）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/loop-engineering-6-month-practice-claude-ship-peakstone.md) — 同为实战案例，但本实体聚焦于日志监控→自动修复这一垂直场景
 
-
 → [raw/articles/loop-engineering-实战实现从日志扫描到预发部署的全自主闭环|原文存档]
 
 ---

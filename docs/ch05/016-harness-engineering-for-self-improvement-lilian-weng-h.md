@@ -113,7 +113,6 @@ Karpathy's autoresearch: 规划 → 执行 → 观察/测试 → 改进 的目�
 | MLE-bench | Kaggle 竞赛(75竞赛) | o1-preview+AIDE 16.9%铜牌 |
 | KernelBench | GPU 内核正确性与速度(250任务) | — |
 
-
 → [raw/articles/kZrryL8_fxfq2pSFw6LSqg|原文存档]
 → [Lilian Weng 原博客](https://lilianweng.github.io/posts/2026-07-04-harness/)
 

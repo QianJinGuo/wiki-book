@@ -179,7 +179,6 @@ Ronacher 的"软件作为有机体"隐喻捕捉了软件工程正在经历的范
 - [AI Agent Hype Meets Reality](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-hype-reality-churn.md) — Agent 产品的市场现实
 - [Hidden Technical Debt in Agent Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hidden-technical-debt-agent-harness.md) — Agent 系统的技术债务
 
-
 → [原文存档](https://lucumr.pocoo.org/2026/6/23/the-coming-loop)
 → [Harness Engineering 框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 

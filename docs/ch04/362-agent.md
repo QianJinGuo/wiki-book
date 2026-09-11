@@ -5,7 +5,6 @@
 ## 概述
 J0hn/AGI Hunt 梳理 Agent 不重新训练就能变强的六种机制：输出自审、持久记忆、进化搜索、对抗训练、自我修改、编排自优化。核心命题：AI 学习正从训练阶段溢出到部署阶段——权重冻结下通过外部状态层积累知识是毕业后的自学能力。
 
-
 ### 架构图（Excalidraw / 推荐使用 ✨）
 
 **打开方式**：将 `agent-self-improvement-six-mechanisms.excalidraw` 拖到 [excalidraw.com](https://excalidraw.com) 即可在浏览器中编辑，或在 Obsidian 中直接渲染（需安装 Excalidraw 插件）。
