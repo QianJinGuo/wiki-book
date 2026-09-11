@@ -1,6 +1,6 @@
 # LFM2.5-230M: Built to Run Anywhere
 
-> 📊 Level ⭐⭐⭐⭐ | 6.9KB | `entities/liquid-ai-lfm2-5-230m.md`
+> 📊 Level ⭐⭐⭐ | 6.9KB | `entities/liquid-ai-lfm2-5-230m.md`
 
 > **Background**：Liquid AI 发布其最小模型 LFM2.5-230M，专为边缘设备和 Agent 工作流设计。基于 LFM2 架构，在 Galaxy S25 Ultra 上达到 213 tok/s 解码速度，是当前同参数量级中推理速度最快的模型之一。
 

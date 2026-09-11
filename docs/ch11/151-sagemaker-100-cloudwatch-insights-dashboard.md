@@ -1,6 +1,6 @@
 # SageMaker 推理可观测性：100+ 详细指标 + CloudWatch Insights Dashboard
 
-> 📊 Level ⭐⭐⭐⭐ | 9.5KB | `entities/sagemaker-inference-observability-cloudwatch-insights.md`
+> 📊 Level ⭐⭐⭐ | 9.5KB | `entities/sagemaker-inference-observability-cloudwatch-insights.md`
 
 > **Background**：本文基于 AWS 官方博客文章，系统梳理 SageMaker AI 推理端点的详细可观测性能力——涵盖 100+ OpenTelemetry 指标、内置 Insights Dashboard（Performance/Capacity/Reliability 三视图）、PromQL 对接 Grafana 等完整方案。
 

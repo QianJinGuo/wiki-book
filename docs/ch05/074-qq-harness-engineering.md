@@ -1,6 +1,6 @@
 # QQ音乐 Harness Engineering 实践（大仓多服务场景）
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 29.3KB | `entities/qq-music-harness-engineering-monorepo-microservices.md`
+> 📊 Level ⭐⭐⭐ | 29.3KB | `entities/qq-music-harness-engineering-monorepo-microservices.md`
 
 ## 概述
 

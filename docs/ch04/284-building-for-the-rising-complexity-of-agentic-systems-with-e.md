@@ -1,6 +1,6 @@
 # Building for the Rising Complexity of Agentic Systems with Extreme Co-Design
 
-> 📊 Level ⭐⭐⭐⭐ | 13.9KB | `entities/nvidia-agentic-systems-extreme-co-design.md`
+> 📊 Level ⭐⭐⭐ | 13.9KB | `entities/nvidia-agentic-systems-extreme-co-design.md`
 
 ## 概述
 

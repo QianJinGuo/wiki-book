@@ -97,7 +97,7 @@ Open Code Review 的关键创新是**反思模型（Reflection Model）**：利�
 
 ## 第 2 来源 — 连续五天登上 GitHub Trending 首页的思考（阿里技术 2026-08-11）
 
-> v×c=48, stars=4（独特洞察），70%+ 主题重叠 → MERGE。该项目已从 5k star 增长到 20k star，本文是开源策略 + AI Coding 方法论复盘。
+>该项目已从 5k star 增长到 20k star，本文是开源策略 + AI Coding 方法论复盘。
 
 **互补角度 5 条：**
 - 开源策略：从真实业务生长、先想清楚核心竞争力和定位再开源，而不是为开源而开源

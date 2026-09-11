@@ -1,6 +1,6 @@
 # MobileGym：中科院开源浏览器内安卓仿真平台，Mobile Agent 训练与评测基础设施
 
-> 📊 Level ⭐⭐⭐⭐ | 22.5KB | `entities/mobilegym-cas-mobile-agent-benchmark.md`
+> 📊 Level ⭐⭐⭐ | 22.5KB | `entities/mobilegym-cas-mobile-agent-benchmark.md`
 
 ## 概述
 

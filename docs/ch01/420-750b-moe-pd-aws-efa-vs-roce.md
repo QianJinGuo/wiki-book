@@ -1,6 +1,6 @@
 # 750B MoE PD 分离推理：AWS EFA vs 自建 RoCE 通信架构实战对比
 
-> 📊 Level ⭐⭐⭐⭐ | 18.5KB | `entities/750b-moe-pd-disaggregation-aws-efa-vs-roce.md`
+> 📊 Level ⭐⭐⭐ | 18.5KB | `entities/750b-moe-pd-disaggregation-aws-efa-vs-roce.md`
 
 ## 概述
 

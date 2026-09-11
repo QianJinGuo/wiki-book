@@ -1,6 +1,6 @@
 # GLM-5.2 is the step change for open agents
 
-> 📊 Level ⭐ | 4.0KB | `entities/glm-52-is-the-step-change-for-open-agents.md`
+> 📊 Level ⭐⭐⭐ | 4.0KB | `entities/glm-52-is-the-step-change-for-open-agents.md`
 
 → [原文存档](https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open)
 

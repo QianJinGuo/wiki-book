@@ -1,6 +1,6 @@
 # Spec-Kit vs BMAD：AI 原生 SDD 双框架实战对比（叶小钗重构迁移案例）
 
-> 📊 Level ⭐⭐⭐⭐ | 16.0KB | `entities/spec-kit-bmad-sdd-practice-yexiaocha.md`
+> 📊 Level ⭐⭐⭐ | 16.0KB | `entities/spec-kit-bmad-sdd-practice-yexiaocha.md`
 
 > 原文存档：[原文存档](https://mp.weixin.qq.com/s/Lpsl52F_oiFwMBDV7dL8RQ)
 

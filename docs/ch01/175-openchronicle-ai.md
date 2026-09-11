@@ -1,6 +1,6 @@
 # OpenChronicle：把AI记忆变成可复用的基础设施
 
-> 📊 Level ⭐⭐ | 5.9KB | `entities/openchronicle-opensource-memory-layer.md`
+> 📊 Level ⭐⭐⭐ | 5.9KB | `entities/openchronicle-opensource-memory-layer.md`
 
 4月20日，OpenAI发布Chronicle——AI可以直接"看见屏幕"并持续记忆上下文，仅对ChatGPT Pro用户开放（$100/月）。
 48小时后，00后开发者团队Vida发布OpenChronicle开源项目，将"看屏幕+持续记忆"这件事从付费墙中拆解出来。

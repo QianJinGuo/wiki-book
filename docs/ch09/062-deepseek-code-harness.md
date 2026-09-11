@@ -1,6 +1,6 @@
 # DeepSeek Code Harness
 
-> 📊 Level ⭐⭐⭐⭐ | 59.4KB | `entities/deepseek-code-harness.md`
+> 📊 Level ⭐⭐⭐ | 59.4KB | `entities/deepseek-code-harness.md`
 
 ## Overview
 DeepSeek 正在组建团队，从零开始构建对标 Claude Code 的代码智能体产品。核心公式：**Model + Harness = Agent**。除模型本身以外的所有工作，都属于 Harness 的范畴。官网职位描述明确："他们正在把 DeepSeek 的前沿模型能力转化为领先的 Agent 产品。"
@@ -250,7 +250,7 @@ DSH 用 node:worker_threads 跑模型写的编排代码：node:vm 同进程沙�
 4. **AgentLoop 接入链路** — LoongSuite Pilot 非侵入注入 `$DSH_HOME/cordis.patch.yml`（Cordis 微内核插件机制直接应用），Session Log 事件流投影为 OpenTelemetry GenAI trace；评测器以 AGENT+Skill 形态挂载，评分与轨迹同源可审计
 5. **评测学理补充** — 评测结论度量"Harness+模型"组合能力（模型无关性）、Session Log 事件溯源保证过程性评估证据基础、极简模式提供受控可复现能力面
 
-## 第 10 来源 — DSH 生产可观测（腾讯云 Agent 可观测，2026-08-24 SUPP，v×c=56）
+## 第 10 来源 — DSH 生产可观测（腾讯云 Agent 可观测，2026-08-24 SUPP）
 
 > 来源：腾讯技术工程/腾讯云日志服务（trumphuang，v=7 c=8）。为 DSH 实体补充库内零覆盖的**可观测维度**（跨会话/跨机器汇聚、成本/耗时/失败回溯）。
 
@@ -263,7 +263,7 @@ DSH 用 node:worker_threads 跑模型写的编排代码：node:vm 同进程沙�
 
 ## 第 12 来源 — Agent Plan x DeepSeek Harness 实践指南（火山方舟，2026-08-19）
 
-v×c=56, stars=4. 火山方舟（字节跳动技术团队）发布 Agent Plan 与 DSH 的集成实践指南。
+火山方舟（字节跳动技术团队）发布 Agent Plan 与 DSH 的集成实践指南。
 
 **互补角度 5 条：**
 1. **Agent Plan 作为 Plugin 工具箱** — DSH 提供插槽，Agent Plan 提供"量大管饱"的组件包：模型、搜索、专业数据集、Agent 记忆、Agent 进化、AI Native 开发底座。
@@ -292,7 +292,7 @@ Cordis 五个概念：插件、上下文、注入、事件、可逆副作用。 
 
 DSH 最值得注意的 @deepseek-ai/dsh-tool-cordis"自指的 Cordis 工具集"：cordis_inspect（只读巡检进程）、cordis_define（现场定义插件包）、cordis_run（宿主半 node:vm 沙箱执行+浏览器半推送每个网页）、cordis_stop/cordis_undefine——Agent 可检查自己运行的框架、现场编写运行动态插件、用完即卸，全程不动 cordis.yml/不装包/不重启 = **可进化 Agent 雏形**（论文结论把"自进化 Agent 运行时"列为该理论未来验证方向）。 插件扩展点不是 API 列表而是一张服务注册表（capability-seams：执行/模型/智能/数据/环境/治理/编排/自指/前端九类槽位，每类可替换提供方）；"一切皆插件"在字面意义成立——浏览器里也运行独立 Cordis 客户端运行时（双半插件 RPC）。生态：Koishi 4000+ 插件（@koishijs 155 包、koishi-plugin-* 3951 包、cordis npm 近一年 51 万下载）、@cordisjs 独立通用生态 101 包、awesome-dsh-plugin 收录 174 个插件。论文与 8 类系统对比（传统 DI/React/OSGi/VS Code/微服务/monadic effect/代数效应/HMR），收束出"针对 Agent 运行时"的需求表。
 
-**与既有 chino 拆解的关系**：chino（deepseek-harness-cordis-runtime-mechanics，v×c=56）讲 Cordis fiber/effect/Loop/Preset/Code Mode 的**机制与工程对比**；本文以其**配套论文的形式化证明 + 自指工具集 + 插件槽位**为不可替代增量，两者同补到本实体，构成 DSH 运行时"机制×理论"两翼。这也解释了为何一篇 88 页论文以 Cordis 为研究对象——"安全地动态装卸组件"是自进化软件唯一靠得住的地基。
+**与既有 chino 拆解的关系**：chino（deepseek-harness-cordis-runtime-mechanics）讲 Cordis fiber/effect/Loop/Preset/Code Mode 的**机制与工程对比**；本文以其**配套论文的形式化证明 + 自指工具集 + 插件槽位**为不可替代增量，两者同补到本实体，构成 DSH 运行时"机制×理论"两翼。这也解释了为何一篇 88 页论文以 Cordis 为研究对象——"安全地动态装卸组件"是自进化软件唯一靠得住的地基。
 
 ### 后训练视角：DSH 作为安全试验场与企业进化闭环（基于阿里云 POC）
 

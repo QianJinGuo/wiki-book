@@ -1,6 +1,6 @@
 # 从 Prompt 到 Harness：Claude 官方学习资料
 
-> 📊 Level ⭐⭐ | 4.8KB | `entities/from-prompt-to-harness-claude-official.md`
+> 📊 Level ⭐⭐⭐ | 4.8KB | `entities/from-prompt-to-harness-claude-official.md`
 
 > 作者：张嘎（公众号「有戏圈」），2026-05-07。
 > 对 Learn Harness Engineering 课程 + OpenAI/Anthropic 官方资料的实践者解读。

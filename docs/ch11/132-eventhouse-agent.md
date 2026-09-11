@@ -1,6 +1,6 @@
 # 阿里云 EventHouse 企业级 Agent 上下文构建五维框架
 
-> 📊 Level ⭐⭐⭐⭐ | 19.2KB | `entities/alibaba-eventhouse-enterprise-agent-context.md`
+> 📊 Level ⭐⭐⭐ | 19.2KB | `entities/alibaba-eventhouse-enterprise-agent-context.md`
 
 ## 为什么 AI Coding 先跑通，行业 Agent 落地难
 

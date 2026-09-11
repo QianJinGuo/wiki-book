@@ -1,6 +1,6 @@
 # Lighthouse Attention
 
-> 📊 Level ⭐ | 6.5KB | `entities/lighthouse_attention.md`
+> 📊 Level ⭐⭐⭐ | 6.5KB | `entities/lighthouse_attention.md`
 
 ## 核心要点
 - 选择性层级注意力（Selection-based Hierarchical Attention），通过对称 Q/K/V 池化在多分辨率金字塔中稀疏化注意力 

@@ -1,13 +1,12 @@
 # GSD 上下文管理工具：用 Plan 约束 Agent 行为边界
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 22.4KB | `entities/gsd-get-shit-done-context-management-tool.md`
+> 📊 Level ⭐⭐⭐ | 22.4KB | `entities/gsd-get-shit-done-context-management-tool.md`
 
 [原文存档](https://mp.weixin.qq.com/s/LA3ZBVMUEUJMhek_LeHhjA)
 
 ## gsd-get-shit-done-context-management-tool
 > 原文: https://mp.weixin.qq.com/s/LA3ZBVMUEUJMhek_LeHhjA
 > Author: 袋鼠帝 (kangarooking)
-> Score: value=7, confidence=8, product=56 ≥ 49 → PASS
 > SHA256: a347934c625460b0b1c1f73d6ade51f57c6c4b07ffa9f1b525abfe44af28e1be
 > 长度: 7236 字符
 > 摘要: GSD (Get Shit Done) Claude Code 增强工具，四层上下文结构(ROADMAP→Phase→Plan frontmatter→Summary provides/affects)+context-budget 4档退化+6步phase流程，零工平台15天/638 commits/7 phase落地

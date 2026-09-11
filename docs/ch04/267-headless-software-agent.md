@@ -1,6 +1,6 @@
 # Headless Software：Agent 时代软件界面何去何从
 
-> 📊 Level ⭐⭐⭐⭐ | 16.2KB | `entities/headless-software-agent-no-ui-podcast.md`
+> 📊 Level ⭐⭐⭐ | 16.2KB | `entities/headless-software-agent-no-ui-podcast.md`
 
 > a16z 播客讨论 headless 软件在 Agent 时代的本质：如果软件的"用户"从人变成 agent，界面（head）可能成为累赘，真正值钱的是底层的数据结构和业务逻辑。
 

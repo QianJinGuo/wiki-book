@@ -1,6 +1,6 @@
 # Kipi: Open-source OSINT Investigation Platform with Autonomous Agent
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 9.3KB | `entities/kipi-osint-autonomous-agent-investigation.md`
+> 📊 Level ⭐⭐⭐ | 9.3KB | `entities/kipi-osint-autonomous-agent-investigation.md`
 
 ## 摘要
 

@@ -1,6 +1,6 @@
 # Interaction Models: A Scalable Approach to Human-AI Collaboration
 
-> 📊 Level ⭐⭐⭐⭐ | 7.4KB | `entities/interaction-models.md`
+> 📊 Level ⭐⭐⭐ | 7.4KB | `entities/interaction-models.md`
 
 ## Interaction Models: 从回合制到实时协作的人机交互范式转变
 

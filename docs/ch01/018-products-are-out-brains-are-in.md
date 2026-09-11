@@ -1,6 +1,6 @@
 # Products are out, brains are in
 
-> 📊 Level ⭐ | 9.5KB | `entities/products-are-out-brains-are-in.md`
+> 📊 Level ⭐⭐⭐ | 9.5KB | `entities/products-are-out-brains-are-in.md`
 
 ## 摘要
 As the marginal cost of producing software trends toward zero and capable tools multiply within every category, software's price may fall — but, the author argues, it will not death-spiral. What changes instead is *why* people buy software: not because they can't build it, but because they choose not to, and the deciding factor collapses to one thing — the judgment of the people running the software. Value migrates from the packaged product to the quality of thinking that sits above it, so the durable moat shifts from "what you ship" to "how well your team thinks."

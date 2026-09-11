@@ -1,6 +1,6 @@
 # 如何构建生产准备的AI代理：MCP、CLI与技能——适合合适的工作的工具
 
-> 📊 Level ⭐⭐ | 5.2KB | `entities/production-ai-agents-mcp-cli-skills-stack-ayi.md`
+> 📊 Level ⭐⭐⭐ | 5.2KB | `entities/production-ai-agents-mcp-cli-skills-stack-ayi.md`
 
 > **来源**：啊镒opc实验基地（2026-05-26）| 原文存档：[原文存档](https://mp.weixin.qq.com/s/lW51nHefm7pEmhjKxEWOFw)
 

@@ -1,6 +1,6 @@
 # 鹅厂 Skill 写作完整 Playbook：14 章节 end-to-end 实战 + 工程化评估（腾讯一线踩坑 + Anthropic 官方做法整合）
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 16.5KB | `entities/tencent-skill-writing-complete-playbook-jackjchou.md`
+> 📊 Level ⭐⭐⭐ | 16.5KB | `entities/tencent-skill-writing-complete-playbook-jackjchou.md`
 
 ## 鹅厂 Skill 写作完整 Playbook：14 章节 end-to-end 实战 + 工程化评估
 

@@ -1,6 +1,6 @@
 # Spec-Driven AI 编程半年实战 — 有损管道、三工具比较与三大认知陷阱
 
-> 📊 Level ⭐⭐ | 4.1KB | `entities/spec-driven-development-cognitive-framework.md`
+> 📊 Level ⭐⭐⭐ | 4.1KB | `entities/spec-driven-development-cognitive-framework.md`
 
 > 百人级互联网前后端团队半年 SDD 实践。核心洞察：**"有损管道"** 框架 + 三大工具的 **结构性代价** 对比 + **认知陷阱**。[^1]
 

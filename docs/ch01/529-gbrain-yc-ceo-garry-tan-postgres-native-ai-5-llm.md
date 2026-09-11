@@ -1,6 +1,6 @@
 # GBrain — YC CEO Garry Tan 的 Postgres-native AI 第二大脑：5 大设计决策 + 零 LLM 知识图谱 + 8 阶段检索 + Brain⊥Source 正交维度
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 16.5KB | `entities/gbrain.md`
+> 📊 Level ⭐⭐⭐ | 16.5KB | `entities/gbrain.md`
 
 ## 概述
 GBrain 于 2026 年 4 月初开源，十几天内斩获 9K+ Star。其核心解决的是 AI Agent 的"金鱼脑"问题——每次开聊都从零开始，昨天告诉它的事今天就当没发生过。

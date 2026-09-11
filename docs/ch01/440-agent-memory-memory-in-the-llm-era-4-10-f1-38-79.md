@@ -1,6 +1,6 @@
 # Agent Memory 模块化框架与评测：Memory in the LLM Era 4 模块 + 10 方案对比 + 新方法 F1 38.79 + 4 条工程原则
 
-> 📊 Level ⭐⭐⭐⭐ | 15.1KB | `entities/agent-memory-modular-framework.md`
+> 📊 Level ⭐⭐⭐ | 15.1KB | `entities/agent-memory-modular-framework.md`
 
 ## 核心命题
 *Memory in the LLM Era: Modular Architectures and Strategies in a Unified Framework*（ICLR 2026 投稿，arXiv:2604.01707）提出：Agent Memory 的核心问题不是容量，而是**治理**——系统能否在正确时间取回正确信息。上下文窗口扩展解决的是带宽问题，不是建模问题。

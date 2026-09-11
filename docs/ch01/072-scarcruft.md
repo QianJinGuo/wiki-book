@@ -1,6 +1,6 @@
 # ScarCruft 游戏平台供应链攻击分析
 
-> 📊 Level ⭐ | 6.2KB | `entities/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack.md`
+> 📊 Level ⭐⭐⭐ | 6.2KB | `entities/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack.md`
 
 > -> [原文存档](https://www.welivesecurity.com/en/eset-research/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack/)
 
@@ -12,7 +12,6 @@ ESET researchers uncovered a multiplatform supply-chain attack by North Korea-al
 ## 关键要点
 - 技术领域：AI / Newsletter
 - 来源：Newsletter
-- 评分：value=7, confidence=9, product=63
 
 ## 链接
 - [原文](https://www.welivesecurity.com/en/eset-research/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack/)

@@ -1,6 +1,6 @@
 # Thought-Aligner：智能体行为安全新范式——可插拔思维校正层（ICML 2026）
 
-> 📊 Level ⭐⭐⭐⭐ | 15.6KB | `entities/thought-aligner-shanghai-fudan-icml-2026.md`
+> 📊 Level ⭐⭐⭐ | 15.6KB | `entities/thought-aligner-shanghai-fudan-icml-2026.md`
 
 ## Thought-Aligner：智能体行为安全新范式——可插拔思维校正层
 

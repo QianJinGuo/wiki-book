@@ -1,6 +1,6 @@
 # Build a Healthcare Appointment Agent with Amazon Nova 2 Sonic
 
-> 📊 Level ⭐ | 3.9KB | `entities/build-a-healthcare-appointment-agent-with-amazon-nova-2-soni.md`
+> 📊 Level ⭐⭐⭐ | 3.9KB | `entities/build-a-healthcare-appointment-agent-with-amazon-nova-2-soni.md`
 
 ## 核心洞察
 

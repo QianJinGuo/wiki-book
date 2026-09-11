@@ -1,6 +1,6 @@
 # Memento-Skills — 技能外部记忆让 Agent 自进化（arXiv 2603.18743）
 
-> 📊 Level ⭐⭐⭐⭐ | 14.0KB | `entities/memento-skills-let-agents-design-agents.md`
+> 📊 Level ⭐⭐⭐ | 14.0KB | `entities/memento-skills-let-agents-design-agents.md`
 
 ## 背景问题：冻结大模型的成长困境
 

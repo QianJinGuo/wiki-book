@@ -1,6 +1,6 @@
 # AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环
 
-> 📊 Level ⭐⭐⭐⭐ | 12.6KB | `entities/aws-bedrock-agentcore-os-level-actions-browser.md`
+> 📊 Level ⭐⭐⭐ | 12.6KB | `entities/aws-bedrock-agentcore-os-level-actions-browser.md`
 
 ## 核心内容
 Amazon Bedrock AgentCore引入OS-level Actions，允许Agent直接操控GUI界面——通过Action-Screenshot-Reaction闭环实现浏览器自动化。8个原子操作覆盖鼠标、键盘、截图等OS层交互，Agent通过视觉反馈（截图）感知环境状态并决定下一步操作。

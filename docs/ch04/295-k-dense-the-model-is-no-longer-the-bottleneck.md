@@ -1,6 +1,6 @@
 # K-Dense — The Model Is No Longer the Bottleneck
 
-> 📊 Level ⭐⭐⭐⭐ | 12.6KB | `entities/k-dense-the-model-is-no-longer-the-bottleneck.md`
+> 📊 Level ⭐⭐⭐ | 12.6KB | `entities/k-dense-the-model-is-no-longer-the-bottleneck.md`
 
 > **Source**: [K-Dense AI Blog](https://www.k-dense.ai/blog/the-model-is-no-longer-the-bottleneck) (2026-06, 9.7KB) by K-Dense team. 原始内容存于 `[K Dense The Model Is No Longer The Bottleneck](https://www.k-dense.ai/blog/the-model-is-no-longer-the-bottleneck)`。
 >
@@ -85,7 +85,7 @@
 
 ---
 
-**Score**: v=7, c=8, v×c=56, stars=4 — 文章不长（9.7KB）但 4 个 case 数据扎实，论点清晰（"model is no longer the bottleneck" 假说），与现有 harness engineering 体系高度契合。
+文章不长（9.7KB）但 4 个 case 数据扎实，论点清晰（"model is no longer the bottleneck" 假说），与现有 harness engineering 体系高度契合。
 
 **Tags**: harness, agentic, context-engineering, scientific-ai, k-dense, bottleneck, multi-agent, feedback-loop
 

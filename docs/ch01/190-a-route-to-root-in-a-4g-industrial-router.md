@@ -1,6 +1,6 @@
 # A Route to Root in a 4G Industrial Router
 
-> 📊 Level ⭐⭐ | 3.7KB | `entities/tantosec-com-blog-2026-04-route-to-root-in-4g-industrial-router.md`
+> 📊 Level ⭐⭐⭐ | 3.7KB | `entities/tantosec-com-blog-2026-04-route-to-root-in-4g-industrial-router.md`
 
 ## 深度分析
 这篇安全研究揭示了一个典型的**嵌入式设备后门账户**问题。CVE-2024-42682 描述的核心漏洞是：PUSR USR-G806AU 4G LTE 工业路由器存在一个未文档化的 root 账户（usr），其凭证可以从设备自带的 helper utility 中恢复。这意味着任何能访问该设备的人都可以获得完全的远程 root 访问权限。

@@ -1,6 +1,6 @@
 # Memory Prices - Stanford DAM Interactive Dataset
 
-> 📊 Level ⭐⭐⭐⭐ | 5.4KB | `entities/memory-prices-stanford.md`
+> 📊 Level ⭐⭐⭐ | 5.4KB | `entities/memory-prices-stanford.md`
 
 ## 摘要
 

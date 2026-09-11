@@ -1,6 +1,6 @@
 # Chromium AI Coding 开发体系
 
-> 📊 Level ⭐⭐⭐⭐ | 11.9KB | `entities/chromium-ai-coding-development-system.md`
+> 📊 Level ⭐⭐⭐ | 11.9KB | `entities/chromium-ai-coding-development-system.md`
 
 > [!summary] 核心洞察
 > Chromium（3500 万行 C++ 代码）在源码仓库中构建了完整的 AI Agent 基础设施：AI Policy（人类全责）+ 四层 Prompt 分层组合 + 18+ Skills 按需激活 + 三层 Agentic RAG（静态路由表+动态搜索+MCP）+ Eval 回归测试 + Projects 大规模自动化。跨工具复用（Gemini CLI、Claude Code、GitHub Copilot）。

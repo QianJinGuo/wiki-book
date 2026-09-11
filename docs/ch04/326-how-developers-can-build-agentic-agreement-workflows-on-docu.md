@@ -1,6 +1,6 @@
 # How Developers Can Build Agentic Agreement Workflows on Docusign IAM
 
-> 📊 Level ⭐⭐⭐⭐ | 9.1KB | `entities/how-developers-can-build-agentic-agreement-workflows-on-docu.md`
+> 📊 Level ⭐⭐⭐ | 9.1KB | `entities/how-developers-can-build-agentic-agreement-workflows-on-docu.md`
 
 ## 核心要点
 

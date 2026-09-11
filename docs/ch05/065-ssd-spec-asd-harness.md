@@ -1,6 +1,6 @@
 # SSD Spec 驱动开发实战：从四条约束到 ASD Harness 的工程落地
 
-> 📊 Level ⭐⭐⭐⭐ | 11.1KB | `entities/ssd-spec-driven-development-harness-asd-shuge-2026-06-17.md`
+> 📊 Level ⭐⭐⭐ | 11.1KB | `entities/ssd-spec-driven-development-harness-asd-shuge-2026-06-17.md`
 
 ## 摘要
 

@@ -1,6 +1,6 @@
 # Loop Engineering:不再写提示词,而是设计替你写提示词的循环——先写刹车再写循环（19 来源深度合并：Addy Osmani / Boris Cherny+Peter Steinberger / 教科书 / 若飞 工程现场 / TechFarrari 批判 / 若飞 实用指南 / 爱范儿 科普批判 / AllenTang Karpathy 尺子 / winty 7架构中文主流视角 / AutoResearch 5 决策 / 三层结构 + 三款产品对比 + Ralph Loop + 准备度总表 / Shubham Saboo PM 视角 / 若飞 吴恩达三层Loop）
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 134.5KB | `entities/loop-engineering-addy-osmani-challengehub.md`
+> 📊 Level ⭐⭐⭐ | 134.5KB | `entities/loop-engineering-addy-osmani-challengehub.md`
 
 > 原文存档：[原文存档](https://mp.weixin.qq.com/s/vmGx9IELbWgKZqHm-M3G5w)
 
@@ -815,13 +815,13 @@ Karpathy 的核心解法: 把**"什么时候停、凭什么算成功"这件事,�
 
 ---
 
-## 第 13 来源：AI技术立文「给产品经理的loop engineering」（2026-06-24，v×c=42 临界，PM 视角）
+## 第 13 来源：AI技术立文「给产品经理的loop engineering」(2026-06-24，PM 视角)
 
 > Source: [第13原文存档](https://mp.weixin.qq.com/s/N26pnOoBwnWsglqaobPcRA)
 > Author: Shubham Saboo (Google PM), 译/改编: AI技术立文
 > Date: 2026-06-24
 
-本来源是 Loop Engineering 主题的**第 13 来源** — 唯一从**产品经理视角**系统阐述 Loop Engineering 的文章。前 12 来源均面向工程师/架构师，本文将循环工程的方法论移植到 PM 工作流（PRD 评审、客户研究、产品信号、发布检查清单）。v×c=42（临界），但 PM 视角在前 12 来源中零覆盖，且同作者 Shubham Saboo 已有 `[Google Pm 2026 Five Developer Skills Shubham](https://github.com/QianJinGuo/wiki-public/blob/main/entities/google-pm-2026-five-developer-skills-shubham.md)` 实体，形成跨实体交叉。
+本来源是 Loop Engineering 主题的**第 13 来源** — 唯一从**产品经理视角**系统阐述 Loop Engineering 的文章。前 12 来源均面向工程师/架构师，本文将循环工程的方法论移植到 PM 工作流（PRD 评审、客户研究、产品信号、发布检查清单）。但 PM 视角在前 12 来源中零覆盖，且同作者 Shubham Saboo 已有 `[Google Pm 2026 Five Developer Skills Shubham](https://github.com/QianJinGuo/wiki-public/blob/main/entities/google-pm-2026-five-developer-skills-shubham.md)` 实体，形成跨实体交叉。
 
 ### 核心贡献
 
@@ -871,7 +871,7 @@ Karpathy 的核心解法: 把**"什么时候停、凭什么算成功"这件事,�
 > Source: [第14原文存档](https://mp.weixin.qq.com/s/RF2DVQCl-lSf-huPZRY57w)
 > Author: 若飞（架构师 JiaGouX 主笔）
 
-本来源是 Loop Engineering 主题的**第 14 来源** — 若飞从**架构师视角**系统阐述 Loop Engineering，是同作者 Loop 系列的第 2 篇（第 4 来源是工程现场篇）。v×c=72，5 个独到角度在前 13 来源中零覆盖或仅有片段覆盖。
+本来源是 Loop Engineering 主题的**第 14 来源** — 若飞从**架构师视角**系统阐述 Loop Engineering，是同作者 Loop 系列的第 2 篇（第 4 来源是工程现场篇）。5 个独到角度在前 13 来源中零覆盖或仅有片段覆盖。
 
 ### 若飞独家贡献
 
@@ -1005,7 +1005,6 @@ Karpathy 的核心解法: 把**"什么时候停、凭什么算成功"这件事,�
 
 ## 第 19 来源 — 若飞：吴恩达三层 Loop — Agent 越快，人越要管慢反馈
 
-v×c=72, 2026-07-03, 架构师(若飞)
 
 ### 内容概要
 

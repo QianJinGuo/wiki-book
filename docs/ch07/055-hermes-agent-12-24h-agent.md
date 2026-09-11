@@ -1,6 +1,6 @@
 # Hermes Agent 满配 12 层配置完整指南（从裸装到 24h Agent 团队）
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 21.5KB | `entities/hermes-agent-12-layer-full-configuration-guide.md`
+> 📊 Level ⭐⭐⭐ | 21.5KB | `entities/hermes-agent-12-layer-full-configuration-guide.md`
 
 ## Hermes Agent 满配 12 层配置完整指南
 

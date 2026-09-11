@@ -1,6 +1,6 @@
 # Harness 工程搭建式业务 Agent 评测方案：Claude Code 作 Harness 搭建者
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 17.4KB | `entities/harness-engineered-business-agent-evaluation-aliyun-boyu.md`
+> 📊 Level ⭐⭐⭐ | 17.4KB | `entities/harness-engineered-business-agent-evaluation-aliyun-boyu.md`
 
 > 原文存档：[原文存档](https://mp.weixin.qq.com/s/n9zkbKTi3Q1j-L2vgmO1Vw)
 

@@ -1,6 +1,6 @@
 # 20VC x SaaStr: The Most Aggressive Quarter in American Capitalism, Palantir's Ru
 
-> 📊 Level ⭐ | 11.5KB | `entities/saastr-20vc-most-aggressive-quarter-american-capitalism-palantir.md`
+> 📊 Level ⭐⭐⭐ | 11.5KB | `entities/saastr-20vc-most-aggressive-quarter-american-capitalism-palantir.md`
 
 ## 核心要点
 - 20VC x SaaStr 对话，关于美国资本主义的投资动态

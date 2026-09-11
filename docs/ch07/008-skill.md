@@ -1,6 +1,6 @@
 # 你写的 Skill，及格了吗？
 
-> 📊 Level ⭐⭐ | 7.2KB | `entities/ni-xie-de-skill-ji-ge-liao-ma.md`
+> 📊 Level ⭐⭐⭐ | 7.2KB | `entities/ni-xie-de-skill-ji-ge-liao-ma.md`
 
 ## 核心概念
 本文提出了一套 **8 维度 Skill 量化评估框架**，通过元数据质量、执行引导清晰度、领域知识密度等指标对 Skill 进行打分评级（S/A/B/C/D 五档），解决 Skill 质量难以客观衡量的问题。

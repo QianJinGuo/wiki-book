@@ -33,7 +33,7 @@
 
 ## Ch20.001 Workday Inference Engine Built-in Guardrails - Enterprise AI Safety Infrastructure Path
 
-> 📊 Level ⭐ | 4.2KB | `entities/workday-ai-inference-guardrails.md`
+> 📊 Level ⭐⭐⭐ | 4.2KB | `entities/workday-ai-inference-guardrails.md`
 
 Workday CTO Gabe Monroy (former Google inference infrastructure lead) makes a core argument: **LLM Guardrails should be native components of the inference engine, not bolted-on safety layers**. This perspective comes from his experience building inference infrastructure for large AI labs at Google, and from practicing in Workday's zero-tolerance "people and money" scenarios.
 
@@ -773,7 +773,7 @@ AI 工具打破了这一契约：
 
 ## Ch20.008 Dario Amodei 2026 Policy on the AI Exponential
 
-> 📊 Level ⭐⭐⭐⭐ | 18.1KB | `entities/dario-amodei-policy-ai-exponential-2026.md`
+> 📊 Level ⭐⭐⭐ | 18.1KB | `entities/dario-amodei-policy-ai-exponential-2026.md`
 
 > **Tier-1 政策长文**: Anthropic CEO Dario Amodei 于 2026-06-10 在其个人博客发布的 5 章政策论文,共 7 个脚注、43KB 正文,系统化提出美国应对 AI 指数级发展的政策框架。核心隐喻 Treebeard 来自《指环王》——缓慢的制度无法跟上快速的技术。文末确认 Anthropic 同步发布"前沿模型测试立法提案"与"工作替代政策框架"并提供大额财政支持。
 
@@ -941,7 +941,7 @@ Amodei 的"a country of 100M geniuses"类比将 AI 地缘竞争框架从"技术�
 
 ## Ch20.009 Multilingual AI
 
-> 📊 Level ⭐⭐⭐⭐ | 12.9KB | `entities/multilingual-ai.md`
+> 📊 Level ⭐⭐⭐ | 12.9KB | `entities/multilingual-ai.md`
 
 ## 核心问题：Benchmark 与生产环境的语言鸿沟
 
@@ -1058,7 +1058,7 @@ Evaluator Gap 的核心洞察是"流利不等于胜任"——这对企业级 AI 
 
 ## Ch20.010 Token 经济学与 AI 效率
 
-> 📊 Level ⭐⭐⭐⭐ | 11.8KB | `entities/token-economics-ai-efficiency.md`
+> 📊 Level ⭐⭐⭐ | 11.8KB | `entities/token-economics-ai-efficiency.md`
 
 ## 核心命题
 AI 上半场卷"能不能用"，下半场卷"用得值不值"。当模型可用性不再稀缺，焦点从智力上限转向 Token 效率（Token Efficiency = AI 时代的投入产出比）。Token 经济学的核心问题：每消耗一个 Token 能创造多大的价值？
@@ -1159,7 +1159,7 @@ Token 效率工程体系的瓶颈不在技术层，而在人的认知层。模�
 3. **关注使用者 AI 素养的同步提升**：再好的路由机制也需要用户具备基本的模型能力认知作为前提。
 
 ## 新增维度（2026-08-24 SUPP：Token 市场黑箱 / 缓存锁定 / 订阅经济学）
-> 来源：InfoQ 编译 Pi 核心贡献者 Armin Ronacher 与 Ben Vinegar 播客对谈（v=6 c=7 v×c=42）。补充 token 经济学中「效率/定价」之外的「市场结构与锁定」维度。
+> 来源：InfoQ 编译 Pi 核心贡献者 Armin Ronacher 与 Ben Vinegar 播客对谈。补充 token 经济学中「效率/定价」之外的「市场结构与锁定」维度。
 
 ### Token 市场透明度黑箱
 购买 token 时模型的量化程度（可能是 1.5 bit 的 DeepSeek 冒充 Flash）、实际版本、是否掺了别的模型用于训练、计费方式全都不透明——「买 token 像买毒品，不知道拿到的是什么」。
@@ -1191,7 +1191,7 @@ Steve Yegge 为游戏项目开 12 个订阅，按真实 token 价格折算每月
 
 ## Ch20.011 Vibe Design ≠ Vibe Coding —— 资深设计师对 AI 前端工作流的哲学批判
 
-> 📊 Level ⭐⭐⭐⭐ | 9.9KB | `entities/impeccable-vibe-design-philosophy-anomaly.md`
+> 📊 Level ⭐⭐⭐ | 9.9KB | `entities/impeccable-vibe-design-philosophy-anomaly.md`
 
 > "Code is correct or not. Design is good or not. The same workflow can't serve both." —— Anomaly Innovations 创始人核心论点
 
@@ -1285,7 +1285,7 @@ Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反�
 
 ## Ch20.012 Reinforcement learning towards broadly and persistently beneficial models
 
-> 📊 Level ⭐⭐⭐⭐ | 6.3KB | `entities/openai-beneficial-rl-broadly-persistently.md`
+> 📊 Level ⭐⭐⭐ | 6.3KB | `entities/openai-beneficial-rl-broadly-persistently.md`
 
 > **来源**: alignment.openai.com · Akshay V. Jagadeesh, Rahul K. Arora, Khaled Saab 等 · 2026-06-18
 
@@ -1376,7 +1376,7 @@ AI 系统在健康、科学、教育、编程等高风险场景中越来越自�
 
 ## Ch20.013 Data Agent 产品设计文档
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 30.0KB | `entities/data-agent-product-design.md`
+> 📊 Level ⭐⭐⭐ | 30.0KB | `entities/data-agent-product-design.md`
 
 本文档基于火山引擎 Data Agent 产品体系，设计一套可对标的**企业级数据智能体**产品。涵盖：智能问数 Agent（NL2SQL）、营销策略 Agent（CDP 集成）两大核心场景的完整功能拆解、技术架构、API 设计、数据模型。
 
@@ -1973,7 +1973,7 @@ POST   /api/v1/datasets/{id}/sync    # 触发数据同步
 
 ## Ch20.014 下一代企业数字化架构：系统CLI化、流程Skill化、员工Agent化
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 15.8KB | `entities/enterprise-next-gen-architecture-zhan.md`
+> 📊 Level ⭐⭐⭐ | 15.8KB | `entities/enterprise-next-gen-architecture-zhan.md`
 
 ## 核心洞察
 **旧范式已死：** "Skill能力化、Agent智能化"是同义反复，没有新增信息。企业真正需要回答的问题是：一封合同进来，谁下载附件？谁上传系统？谁发起审批？谁盯流程？谁回邮件？

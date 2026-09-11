@@ -1,6 +1,6 @@
 # Anthropic 博客：Claude Code 大型代码库最佳实践
 
-> 📊 Level ⭐ | 4.9KB | `entities/anthropic-claude-code-large-codebase-best-practices-50002a089323.md`
+> 📊 Level ⭐⭐⭐ | 4.9KB | `entities/anthropic-claude-code-large-codebase-best-practices-50002a089323.md`
 
 > 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.8**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/anthropic-claude-code-large-codebase-best-practices-50002a089323.md`，一手来源仍见下方 sources。

@@ -1,6 +1,6 @@
 # 一篇看懂 Agent Harness 的结构！ — 12组件+7决策完整框架
 
-> 📊 Level ⭐⭐⭐⭐ | 20.5KB | `entities/agent-harness-12-components-7-decisions.md`
+> 📊 Level ⭐⭐⭐ | 20.5KB | `entities/agent-harness-12-components-7-decisions.md`
 
 > 本文是对 https://mp.weixin.qq.com/s/BEuV7aCCZgWcX7MRLVC86w 的存档
 > 作者：石榴爸爸 AI 实战，2026-04-20
@@ -149,7 +149,6 @@ Manus 6 个月重写 5 次删复杂度，这个案例说明 Harness 不是一次
 > 原始来源：DAIR.AI Academy 讲座 `[1]` + Claude Code 官方文档 (`/goal` `[2]` + `/loop` `[3]`)
 > 本文由 Codex + Claude Code 协作完成
 > URL: https://mp.weixin.qq.com/s/b2pvXBGA6BkY6gJbLerZ1g
-> v=7, c=7, v×c=49（boundary ingest，与 1st source 主题 overlap 70%）
 
 ### 核心叙事差异：1st source 是「12 组件 + 7 决策」工程图谱，2nd source 是「控制系统 7 要素」心智模型
 

@@ -1,11 +1,10 @@
 # Microsoft is quietly shopping for an OpenAI replacement
 
-> 📊 Level ⭐ | 8.8KB | `entities/microsoft-is-quietly-shopping-for-an-openai-replac.md`
+> 📊 Level ⭐⭐⭐ | 8.8KB | `entities/microsoft-is-quietly-shopping-for-an-openai-replac.md`
 
 ## 核心要点
 - 来源：https://thenextweb.com/news/microsoft-startup-deals-life-after-openai
-- 评分：v=8 × c=7 = 56
-- 关键事件：Microsoft 秘密接触 AI 初创公司，评估 OpenAI 替代方案
+- - 关键事件：Microsoft 秘密接触 AI 初创公司，评估 OpenAI 替代方案
 - 核心人物：Mustafa Suleyman（MAI Superintelligence 负责人）
 - 涉及公司：Cursor、Inception、GitHub Copilot→ [原文存档](https://thenextweb.com/news/microsoft-startup-deals-life-after-openai)
 

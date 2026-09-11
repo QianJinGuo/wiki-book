@@ -1,6 +1,6 @@
 # Harness 之后：状态边界与失败闭环（若飞续篇）
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 22.0KB | `entities/harness-之后-状态边界与失败闭环-ruofei.md`
+> 📊 Level ⭐⭐⭐ | 22.0KB | `entities/harness-之后-状态边界与失败闭环-ruofei.md`
 
 ## 摘要
 

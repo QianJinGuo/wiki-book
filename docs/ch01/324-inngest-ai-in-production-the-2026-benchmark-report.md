@@ -3,8 +3,7 @@
 > 📊 Level ⭐⭐⭐ | 8.0KB | `entities/inngest-ai-in-production-the-2026-benchmark-report.md`
 
 ## 核心要点
-- 评分：v=7 × c=9 = 63
-- 来源：inngest
+- - 来源：inngest
 
 ## 关键发现
 ### 1. 信心悖论（The Confidence Paradox）

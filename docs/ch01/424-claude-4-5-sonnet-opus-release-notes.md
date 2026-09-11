@@ -1,6 +1,6 @@
 # Claude 4/5 Sonnet & Opus Release Notes
 
-> 📊 Level ⭐⭐⭐⭐ | 17.6KB | `entities/claude-4-5-sonnet-opus-release-notes.md`
+> 📊 Level ⭐⭐⭐ | 17.6KB | `entities/claude-4-5-sonnet-opus-release-notes.md`
 
 ## 发布时间线
 

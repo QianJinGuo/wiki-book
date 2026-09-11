@@ -1,6 +1,6 @@
 # Build an AI-Powered Equipment Repair Assistant Using Amazon Bedrock AgentCore
 
-> 📊 Level ⭐⭐⭐⭐ | 10.7KB | `entities/build-an-ai-powered-equipment-repair-assistant-using-amazon-.md`
+> 📊 Level ⭐⭐⭐ | 10.7KB | `entities/build-an-ai-powered-equipment-repair-assistant-using-amazon-.md`
 
 > 原文存档：[原文存档](https://aws.amazon.com/blogs/machine-learning/build-an-ai-powered-equipment-repair-assistant-using-amazon-bedrock-agentcore)
 

@@ -1,6 +1,6 @@
 # Claude 代码能力的系统工程解析：Constitutional AI + 可验证奖励 RL + 产品飞轮
 
-> 📊 Level ⭐⭐⭐⭐ | 8.6KB | `entities/claude-code-capability-systems-engineering-anthropic.md`
+> 📊 Level ⭐⭐⭐ | 8.6KB | `entities/claude-code-capability-systems-engineering-anthropic.md`
 
 > -> [原文存档](https://mp.weixin.qq.com/s/b-At8Y93WsCmyO-eelEk2A)
 

@@ -1,6 +1,6 @@
 # Anthropic puts Claude agents on a meter across its subscriptions
 
-> 📊 Level ⭐⭐ | 6.5KB | `entities/www.infoworld-4171274-anthropic-puts-claude-agents-on-a-meter-across-its-subscri.md`
+> 📊 Level ⭐⭐⭐ | 6.5KB | `entities/www.infoworld-4171274-anthropic-puts-claude-agents-on-a-meter-across-its-subscri.md`
 
 > -> [Anthropic puts Claude agents on a meter across its subscriptions](https://www.infoworld.com/article/4171274/anthropic-puts-claude-agents-on-a-meter-across-its-subscriptions.html)
 

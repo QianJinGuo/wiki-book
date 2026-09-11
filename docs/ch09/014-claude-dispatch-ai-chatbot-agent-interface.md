@@ -1,6 +1,6 @@
 # Claude Dispatch + 接口力量：AI 从 Chatbot 到 Agent Interface 的转变
 
-> 📊 Level ⭐⭐ | 7.5KB | `entities/claude-dispatch-interfaces-mollick.md`
+> 📊 Level ⭐⭐⭐ | 7.5KB | `entities/claude-dispatch-interfaces-mollick.md`
 
 > 2026-06-07 引用自 Ethan Mollick《Claude Dispatch and the Power of Interfaces》，One Useful Thing，2026-03-31。
 

@@ -1,6 +1,6 @@
 # Claude Harness 设计：Generator-Evaluator 架构与 Context Reset 演进
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 19.2KB | `entities/harness-generator-evaluator-anthropic.md`
+> 📊 Level ⭐⭐⭐ | 19.2KB | `entities/harness-generator-evaluator-anthropic.md`
 
 ## 概述
 Anthropic 工程师 Prithvi Rajasekaran 系统阐述**长时间运行 Agent 应用**中的 Harness 设计方法论。核心贡献：①受 GAN 启发的 Generator-Evaluator 双代理结构解决自我评估偏差；②三代理架构（Planner/Generator/Evaluator）+ sprint contract 实现全栈自主开发；③context reset vs compaction 的取舍决策框架；④Opus 4.5→4.6 演进中 scaffold 简化规律。附 20 分钟/$9（单代理）vs 6 小时/$200（完整 harness）的对照数据。

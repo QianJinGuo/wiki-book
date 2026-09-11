@@ -1,6 +1,6 @@
 # Hermes Agent v0.14.0 核心架构与快速上手
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 21.6KB | `entities/hermes-agent-v014-core-architecture-shugex.md`
+> 📊 Level ⭐⭐⭐ | 21.6KB | `entities/hermes-agent-v014-core-architecture-shugex.md`
 
 ## 核心定位
 Hermes Agent v0.14.0：一个**自进化 AI Agent 框架**。内置学习闭环，能从任务经验中提炼可复用的 skill，并在后续使用中自我修正。

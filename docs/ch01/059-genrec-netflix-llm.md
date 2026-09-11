@@ -1,6 +1,6 @@
 # GenRec: Netflix LLM 原生推荐排序器
 
-> 📊 Level ⭐ | 7.1KB | `entities/genrec-towards-llm-native-recommendation-at-netflix.md`
+> 📊 Level ⭐⭐⭐ | 7.1KB | `entities/genrec-towards-llm-native-recommendation-at-netflix.md`
 
 ## 概述
 

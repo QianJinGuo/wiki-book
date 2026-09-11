@@ -1,6 +1,6 @@
 # GPT-5.6 Preview System Card — Community Detection & Benchmarks
 
-> 📊 Level ⭐ | 8.4KB | `entities/gpt-5-6-preview.md`
+> 📊 Level ⭐⭐⭐ | 8.4KB | `entities/gpt-5-6-preview.md`
 
 ## GPT-5.6 Preview System Card - OpenAI Deployment Safety Hub
 

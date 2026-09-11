@@ -1,6 +1,6 @@
 # Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限
 
-> 📊 Level ⭐⭐⭐⭐ | 15.4KB | `entities/cursor-复盘-harness模型决定能力上限harness-决定生产下限.md`
+> 📊 Level ⭐⭐⭐ | 15.4KB | `entities/cursor-复盘-harness模型决定能力上限harness-决定生产下限.md`
 
 > 来源：[原文存档](https://mp.weixi)
 

@@ -1,6 +1,6 @@
 # Code as Agent Harness 综述
 
-> 📊 Level ⭐⭐⭐⭐ | 11.8KB | `entities/code-as-agent-harness-survey.md`
+> 📊 Level ⭐⭐⭐ | 11.8KB | `entities/code-as-agent-harness-survey.md`
 
 ## 核心框架
 论文（102页，UIUC+Meta+斯坦福）提出三层结构：

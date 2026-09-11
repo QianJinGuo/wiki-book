@@ -1,6 +1,6 @@
 # 科大讯飞星火Token Factory：企业AI模型路由与成本管理统一中间层
 
-> 📊 Level ⭐⭐ | 8.5KB | `entities/xunfei-spark-token-factory-model-routing-cost.md`
+> 📊 Level ⭐⭐⭐ | 8.5KB | `entities/xunfei-spark-token-factory-model-routing-cost.md`
 
 > WAIC 2026 上，科大讯飞星火企业军团发布了「星火Token Factory」——横在企业业务与大模型之间的统一中间层，涵盖智能模型路由、语义缓存、Prompt压缩、上下文裁剪、推理引擎优化（特别面向国产昇腾芯片）以及全链路可观测运营。
 

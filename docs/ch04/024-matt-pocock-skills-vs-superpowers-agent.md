@@ -1,6 +1,6 @@
 # Matt Pocock Skills vs Superpowers：Agent 技能工程的两条路线
 
-> 📊 Level ⭐ | 4.7KB | `entities/matt-pocock-skills-vs-superpowers-comparison.md`
+> 📊 Level ⭐⭐⭐ | 4.7KB | `entities/matt-pocock-skills-vs-superpowers-comparison.md`
 
 > Matt Pocock 的 skills 仓库（15.4 万 star）代表了与 Superpowers（24.7 万 star）截然相反的 Agent 技能工程哲学：**最小锚点 vs 强制流程**。
 

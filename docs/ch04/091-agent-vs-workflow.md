@@ -1,6 +1,6 @@
 # Agent vs Workflow：控制权连续谱与生产级选型框架
 
-> 📊 Level ⭐⭐ | 3.3KB | `entities/agent-vs-workflow-control-continuum-framework.md`
+> 📊 Level ⭐⭐⭐ | 3.3KB | `entities/agent-vs-workflow-control-continuum-framework.md`
 
 > Agent 和 Workflow 的核心分水岭不是"用没用 LLM"，而是**谁掌握流程控制权**。Workflow 追求可预测性，Agent 解决不可预测性。
 

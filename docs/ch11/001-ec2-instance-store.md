@@ -1,6 +1,6 @@
 # 如何保护 EC2 实例存储（Instance Store）数据不丢失：场景分析与自动化防护实践
 
-> 📊 Level ⭐ | 10.4KB | `entities/如何保护-ec2-实例存储instance-store数据不丢失场景分析与自动化防护实践.md`
+> 📊 Level ⭐⭐⭐ | 10.4KB | `entities/如何保护-ec2-实例存储instance-store数据不丢失场景分析与自动化防护实践.md`
 
 → [原文存档](https://aws.amazon.com/cn/blogs/china/how-to-ec2-instance-storage-instance-store)
 

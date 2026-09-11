@@ -1,6 +1,6 @@
 # From Kubernetes Dev Setup to Production: What Actually Changes
 
-> 📊 Level ⭐⭐⭐⭐ | 10.4KB | `entities/from-kubernetes-dev-setup-to-production-what-actually-change.md`
+> 📊 Level ⭐⭐⭐ | 10.4KB | `entities/from-kubernetes-dev-setup-to-production-what-actually-change.md`
 
 ## 核心要点
 - **在 Kubernetes 上运行 ≠ 生产就绪**：开发风格部署（local minikube、自签名证书、bundled 依赖、手动 Helm 序列）和生产平台的差距是系统性的，不是加几个配置项就能弥合

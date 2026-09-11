@@ -118,7 +118,7 @@ Mollick 建议通过「玩」来理解 AI 边界：让视频模型制作卡通�
 
 ## 第 1 来源 — An opinionated guide to which AI to use to do thin...
 
-v×c=64。An opinionated guide to which AI to use to do things
+An opinionated guide to which AI to use to do things
 
 > → 原文存档
 

@@ -1,6 +1,6 @@
 # GitHub Secret Scanning: AI/ML 驱动的大规模误报降低
 
-> 📊 Level ⭐⭐⭐⭐ | 5.8KB | `entities/github-secret-scanning-ai-ml-false-positive-reduction.md`
+> 📊 Level ⭐⭐⭐ | 5.8KB | `entities/github-secret-scanning-ai-ml-false-positive-reduction.md`
 
 > -> [原文存档](https://github.blog/security/making-secret-scanning-more-trustworthy-reducing-false-positives-at-scale/)
 

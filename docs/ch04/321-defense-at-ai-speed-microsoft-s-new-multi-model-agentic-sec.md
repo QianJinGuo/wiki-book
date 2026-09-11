@@ -1,6 +1,6 @@
 # Defense at AI speed: Microsoft's new multi-model agentic security system
 
-> 📊 Level ⭐⭐⭐⭐ | 9.7KB | `entities/defense_at_ai_speed_microsofts_new_multi.md`
+> 📊 Level ⭐⭐⭐ | 9.7KB | `entities/defense_at_ai_speed_microsofts_new_multi.md`
 
 ## 核心要点
 - Microsoft 发布 **MDASH**（Microsoft Security multi-model agentic scanning harness），一个编排 100+ specialized AI agents 的多模型漏洞发现系统 

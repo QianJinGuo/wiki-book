@@ -1,6 +1,6 @@
 # Create Custom MCP Catalogs and Profiles
 
-> 📊 Level ⭐ | 8.0KB | `entities/create-custom-mcp-catalogs-and-profiles.md`
+> 📊 Level ⭐⭐⭐ | 8.0KB | `entities/create-custom-mcp-catalogs-and-profiles.md`
 
 → [原文存档](https://www.docker.com/blog/create-custom-mcp-catalogs-and-profiles/)
 

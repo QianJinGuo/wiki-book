@@ -1,6 +1,6 @@
 # AgentENV：面向大规模 Agentic RL 的智能体执行环境
 
-> 📊 Level ⭐⭐ | 4.8KB | `entities/agentenv-agentic-rl-execution-environment.md`
+> 📊 Level ⭐⭐⭐ | 4.8KB | `entities/agentenv-agentic-rl-execution-environment.md`
 
 > 清华大学 MADSys 实验室联合月之暗面等团队开源的 Agent 执行环境基础设施平台。基于 Firecracker 微虚拟机 + OverlayBD 按需加载 + 增量快照/COW Fork + 内存/存储复用，将 Agentic RL 执行环境成本降低 88.6%–96.8%，已支撑 Kimi K3 等先进模型的强化学习训练。
 

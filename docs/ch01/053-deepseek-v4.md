@@ -1,6 +1,6 @@
 # DeepSeek-V4深度拆解：一篇论文同时做了五件大事
 
-> 📊 Level ⭐ | 7.4KB | `entities/deepseek-v4.md`
+> 📊 Level ⭐⭐⭐ | 7.4KB | `entities/deepseek-v4.md`
 
 > -> [原文存档](https://mp.weixin.qq.com/s/BELLFDV6hlmmFoAcJy1RZg)
 
@@ -23,7 +23,6 @@ DeepSeek-V4的论文试图同时完成多件事，而且这些事之间的联系
 ## 关键要点
 - 技术领域：AI / WeChat
 - 来源：微信公众号
-- 评分：value=7, confidence=8, product=56
 
 ## 链接
 - [原文](https://mp.weixin.qq.com/s/jcqQS4W4QW61PaIzJuUxeg)

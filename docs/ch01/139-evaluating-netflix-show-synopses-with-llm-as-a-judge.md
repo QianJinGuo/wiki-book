@@ -1,6 +1,6 @@
 # Evaluating Netflix Show Synopses with LLM-as-a-Judge
 
-> 📊 Level ⭐⭐ | 14.3KB | `entities/evaluating-netflix-show-synopses-with-llm-as-a-judge.md`
+> 📊 Level ⭐⭐⭐ | 14.3KB | `entities/evaluating-netflix-show-synopses-with-llm-as-a-judge.md`
 
 > **Source**: [原文存档](https://netflixtechblog.com/evaluating-netflix-show-synopses-with-llm-as-a-judge-6269251e6f28?source=rss----2615bd06b42e---4)
 

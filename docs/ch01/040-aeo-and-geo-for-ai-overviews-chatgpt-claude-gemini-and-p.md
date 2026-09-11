@@ -1,6 +1,6 @@
 # AEO and GEO for AI Overviews, ChatGPT, Claude, Gemini, and Perplexity
 
-> 📊 Level ⭐ | 7.8KB | `entities/aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-perplexity.md`
+> 📊 Level ⭐⭐⭐ | 7.8KB | `entities/aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-perplexity.md`
 
 ## 核心要点
 - AEO（Answer Engine Optimization）和 GEO（Generative Engine Optimization）本质上是 SEO 的延伸，而非独立学科 

@@ -1,6 +1,6 @@
 # Qwen-Image-Agent: Bridging the Context Gap in Real-World Image Generation
 
-> 📊 Level ⭐ | 3.9KB | `entities/abs-2606-26907.md`
+> 📊 Level ⭐⭐⭐ | 3.9KB | `entities/abs-2606-26907.md`
 
 > **Source**: [arxiv.org](https://arxiv.org/abs/2606.26907)
 

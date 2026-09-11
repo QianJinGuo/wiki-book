@@ -9,7 +9,6 @@
 - 相同 H100/GB200/GB300 系统构建的两台集群，训练吞吐可差 8%-12%——差距来自 kernel/hypervisor/BIOS/NCCL 设置的累积，各自只占几个百分点
 - 4 个真实调试案例：SMMU 虚拟化（Grace CPU）、C-state + NUMA（x86 CPU）、NCCL QPS（fabric）、container topology 传播（运行时）
 - 核心方法论：perf/Nsight/nccl-tests 定位信号 → 单层调优 → workload 验证；preflight 检查表先行
-- 技术深度：v=8, c=8, stars=4
 → [原文存档](https://developer.nvidia.com/blog/nvidia-exemplar-cloud-lessons-for-unlocking-full-performance-on-ai-infrastructure/)
 
 ## 相关实体

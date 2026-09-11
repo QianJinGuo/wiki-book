@@ -1,6 +1,6 @@
 # Introducing the MDN MCP server
 
-> 📊 Level ⭐⭐ | 4.6KB | `entities/introducing-mdn-mcp-server-2026.md`
+> 📊 Level ⭐⭐⭐ | 4.6KB | `entities/introducing-mdn-mcp-server-2026.md`
 
 > Source: [MDN Blog 原文](https://developer.mozilla.org/en-US/blog/introducing-mdn-mcp-server/)
 

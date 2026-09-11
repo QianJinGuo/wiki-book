@@ -4,8 +4,7 @@
 
 ## 核心要点
 - 来源：eng-leadership
-- 评分：v=7 × c=8
-## 相关实体
+- ## 相关实体
 - [Ai Coding Agent Quality Defense Five Control Mechanisms](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-coding-agent-quality-defense-five-control-mechanisms.md)
 - [How Claude Code Works In Large Codebases Best Practices And Where To Start](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start.md)
 - [Low Code Api Integration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/low-code-api-integration.md)

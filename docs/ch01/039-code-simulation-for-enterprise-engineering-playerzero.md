@@ -1,6 +1,6 @@
 # Code Simulation for Enterprise Engineering | PlayerZero
 
-> 📊 Level ⭐ | 7.9KB | `entities/code-simulation-for-enterprise-engineering-playerz.md`
+> 📊 Level ⭐⭐⭐ | 7.9KB | `entities/code-simulation-for-enterprise-engineering-playerz.md`
 
 ## Code Simulation for Enterprise Engineering — PlayerZero
 

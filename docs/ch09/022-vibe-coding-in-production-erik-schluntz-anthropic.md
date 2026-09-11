@@ -1,6 +1,6 @@
 # Vibe Coding in Production — Erik Schluntz / Anthropic
 
-> 📊 Level ⭐⭐ | 5.7KB | `entities/erik-schluntz-vibe-coding-in-production.md`
+> 📊 Level ⭐⭐⭐ | 5.7KB | `entities/erik-schluntz-vibe-coding-in-production.md`
 
 > 作者：整理自 Anthropic 研究员 Erik Schluntz 演讲《Vibe Coding in Production》
 > 原文：https://mp.weixin.qq.com/s/uajs9vOpVPqBzGFBw7zxtQ

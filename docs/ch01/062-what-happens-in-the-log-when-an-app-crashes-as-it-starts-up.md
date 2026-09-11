@@ -1,6 +1,6 @@
 # What happens in the log when an app crashes as it starts up?
 
-> 📊 Level ⭐ | 6.9KB | `entities/eclecticlightco-2026-05-29-what-happens-in-the-log-when-an-app-cra.md`
+> 📊 Level ⭐⭐⭐ | 6.9KB | `entities/eclecticlightco-2026-05-29-what-happens-in-the-log-when-an-app-cra.md`
 
 ## 核心要点
 
@@ -10,7 +10,7 @@ Practical and specific macOS debugging guide from a trusted source, with actiona
 
 > 来源：[原文存档](https://eclecticlight.co/2026/05/29/what-happens-in-the-log-when-an-app-crashes-as-it-starts-up/)
 
-本篇来自 TLDR AI Newsletter 推荐。技术深度评分：v=7, c=8, stars=4。
+本篇来自 TLDR AI Newsletter 推荐。
 
 ## 扩展内容
 

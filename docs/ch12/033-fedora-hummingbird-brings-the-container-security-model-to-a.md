@@ -5,7 +5,6 @@
 > -> [原文存档](https://www.helpnetsecurity.com/2026/05/13/fedora-hummingbird-linux/)
 
 ## 核心要点
-- value=8, confidence=7, product=56
 - Thorough Fedora Hummingbird technical overview
 ## 相关实体
 - "fedora hummingbird brings the container security model to a linux host os"

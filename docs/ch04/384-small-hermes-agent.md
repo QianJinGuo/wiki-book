@@ -1,6 +1,6 @@
 # Small Hermes 自我进化 Agent 架构
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 15.4KB | `entities/small-hermes-self-evolving-agent-architecture.md`
+> 📊 Level ⭐⭐⭐ | 15.4KB | `entities/small-hermes-self-evolving-agent-architecture.md`
 
 ## 核心洞察
 

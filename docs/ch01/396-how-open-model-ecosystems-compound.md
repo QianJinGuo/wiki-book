@@ -13,7 +13,6 @@ Most of the compute to build a leading frontier model comes from R&D costs, rath
 ## 关键要点
 - 技术领域：AI / Open Source Models / Ecosystem
 - 来源：Interconnects
-- 评分：value=7, confidence=7, product=49
 
 ## 链接
 - [原文](https://www.interconnects.ai/p/how-open-model-ecosystems-compound)

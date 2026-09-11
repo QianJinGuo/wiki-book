@@ -31,7 +31,7 @@
 
 ## Ch17.001 How transparent is DiffusionGemma (and why it matters)
 
-> 📊 Level ⭐ | 8.3KB | `entities/diffusiongemma-transparency-audit-lesswrong.md`
+> 📊 Level ⭐⭐⭐ | 8.3KB | `entities/diffusiongemma-transparency-audit-lesswrong.md`
 
 > 原文存档：[原文存档](https://www.lesswrong.com/posts/zoYXpdaMgFT43Wc24/how-transparent-is-diffusiongemma-and-why-it-matters)
 
@@ -100,7 +100,7 @@ Monitorability, a key downstream application of transparency, is similar between
 
 ## Ch17.002 TimeLens2: Generalist Video Temporal Grounding with Multimodal LLMs
 
-> 📊 Level ⭐ | 4.4KB | `entities/timelens2.md`
+> 📊 Level ⭐⭐⭐ | 4.4KB | `entities/timelens2.md`
 
 # TimeLens2: Generalist Video Temporal Grounding
 
@@ -156,7 +156,7 @@ TimeLens2-4B 平均超过 Qwen3.5-397B-A17B 约 7.5 个 mIoU 点，在全部七�
 
 ## Ch17.003 Mistral Shieldstral — Policy-Adaptive Multimodal Safety Classifier
 
-> 📊 Level ⭐ | 3.4KB | `entities/mistral-shieldstral-policy-adaptive-safety-classifier.md`
+> 📊 Level ⭐⭐⭐ | 3.4KB | `entities/mistral-shieldstral-policy-adaptive-safety-classifier.md`
 
 > **Background**：Mistral AI 发布 Shieldstral（3B open-weights 多模态安全分类器），核心创新是把内容审核从「固定有害类别 taxonomy」重构为「policy-adaptive question-answering」——模型在推理时接受自然语言策略（如"这段内容是否煽动针对受保护群体的暴力？"），返回校准安全分数，无需针对每个部署上下文重训。
 
@@ -191,7 +191,7 @@ TimeLens2-4B 平均超过 Qwen3.5-397B-A17B 约 7.5 个 mIoU 点，在全部七�
 
 ## Ch17.004 SunFinance: Textract+Claude准确率90.8%的ID提取方案
 
-> 📊 Level ⭐⭐ | 8.0KB | `entities/aws-sun-finance-ai-id-extraction-fraud-detection.md`
+> 📊 Level ⭐⭐⭐ | 8.0KB | `entities/aws-sun-finance-ai-id-extraction-fraud-detection.md`
 
 ## 核心内容
 SunFinance将AWS Textract（文档 OCR）+ Claude（智能理解）结合，ID提取准确率从79.7%提升至90.8%，成本降低91%。系统每月处理330万次ID验证，支撑信贷审批全流程。
@@ -1605,7 +1605,7 @@ Response Stage 和 Update Stage 的解耦设计值得借鉴：交互时专注生
 
 ## Ch17.018 Xiaomi Dasheng — 通用声音基座模型 5 阶段工程实践
 
-> 📊 Level ⭐⭐⭐⭐ | 17.3KB | `entities/xiaomi-dasheng-audio-foundation-model-2026.md`
+> 📊 Level ⭐⭐⭐ | 17.3KB | `entities/xiaomi-dasheng-audio-foundation-model-2026.md`
 
 ## 概述
 
@@ -1885,7 +1885,7 @@ DashengTokenizer 通过**冻结语义特征 + 仅注入声学信息**，证明**
 
 ## Ch17.019 Normalizing Trajectory Models
 
-> 📊 Level ⭐⭐⭐⭐ | 10.1KB | `entities/ntm-normalizing-trajectory-models.md`
+> 📊 Level ⭐⭐⭐ | 10.1KB | `entities/ntm-normalizing-trajectory-models.md`
 
 > -> [原文存档](https://arxiv.org/abs/2605.08078)
 
@@ -1971,7 +1971,7 @@ NTM 的重要性不仅在于性能提升，更在于它揭示了扩散模型少�
 
 ## Ch17.020 豆包 Seed 2.0 Lite — Agent 前置多模态感官层
 
-> 📊 Level ⭐⭐⭐⭐ | 8.3KB | `entities/doubao-seed-2-lite.md`
+> 📊 Level ⭐⭐⭐ | 8.3KB | `entities/doubao-seed-2-lite.md`
 
 ## 核心定位
 ```

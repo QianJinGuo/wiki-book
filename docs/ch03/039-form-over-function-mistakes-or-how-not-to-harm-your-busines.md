@@ -3,7 +3,6 @@
 > 📊 Level ⭐⭐⭐ | 6.3KB | `entities/blog.tubikstudio.com-form-over-function-mistakes.md`
 
 ## 核心要点
-- 评分：v=8, c=8
 - 核心论点：形式服务于功能，而不是替代功能
 - 三大案例：Windows 8（功能缺失）、Apple AI Summaries（幻觉输出）、Twitter/X（品牌认知断裂）
 - 设计三步骤：先问题、后功能、再 UI

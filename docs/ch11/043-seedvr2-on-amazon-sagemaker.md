@@ -1,6 +1,6 @@
 # SeedVR2 on Amazon SageMaker: 视频超分辨率部署实践
 
-> 📊 Level ⭐⭐ | 3.8KB | `entities/seedvr2-amazon-sagemaker-video-upscaling.md`
+> 📊 Level ⭐⭐⭐ | 3.8KB | `entities/seedvr2-amazon-sagemaker-video-upscaling.md`
 
 ## 概述
 

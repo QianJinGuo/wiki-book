@@ -25,6 +25,18 @@ const forbiddenText = [
   "neighbor_graph.private.json",
   "rag-private-",
 ];
+
+// QC scoring metadata must never reach public pages (K-leak family, 2026-09
+// review: 49+ instances of review-gate scores leaking into article bodies).
+const forbiddenPatterns = [
+  /v×c\s*=\s*\d+/,
+  /\bv\s*=\s*\d+\s*[×x*]\s*c\s*=\s*\d+/,
+  /\bvalue\s*=\s*\d+,\s*confidence\s*=\s*\d+/,
+  /\b\d+\s*×\s*\d+\s*=\s*\d+\s*-\s*Article ingested from newsletter candidate pipeline\b/,
+  /Article ingested from newsletter candidate pipeline/,
+  /评分：\s*v\s*=\s*\d+/,
+  /\bIngest score\b.*v\s*=\s*\d+/,
+];
 const excludedDirs = new Set([".git", "node_modules", ".venv", "devloop"]);
 const forbiddenDirs = new Set(["site-private", ".build-private", "backups"]);
 const requiredCardFields = [
@@ -131,6 +143,10 @@ function checkText(root, label, skip = () => false, respectIgnore = false) {
       if (text === null) return;
       for (const marker of forbiddenText) {
         if (text.includes(marker)) errors.push(`${label}/${relative(root, path)} contains forbidden marker ${marker}`);
+      }
+      for (const pattern of forbiddenPatterns) {
+        const m = text.match(pattern);
+        if (m) errors.push(`${label}/${relative(root, path)} contains forbidden QC score pattern /${m[0]}/`);
       }
     },
     respectIgnore,

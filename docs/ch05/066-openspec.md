@@ -1,6 +1,6 @@
 # OpenSpec 四步法深度复盘：流程完整 ≠ 代码正确
 
-> 📊 Level ⭐⭐⭐⭐ | 10.8KB | `entities/openspec-四步法深度复盘-流程完整不等于代码正确.md`
+> 📊 Level ⭐⭐⭐ | 10.8KB | `entities/openspec-四步法深度复盘-流程完整不等于代码正确.md`
 
 ## 核心洞察
 **流程完整 ≠ 代码正确。** OpenSpec 四步法（propose → apply → verify → archive）保证了需求对齐的文档链路，但无法保证 AI 实际输出的代码质量。

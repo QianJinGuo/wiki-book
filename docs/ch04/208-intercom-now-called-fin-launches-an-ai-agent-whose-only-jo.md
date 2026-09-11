@@ -3,8 +3,7 @@
 > 📊 Level ⭐⭐⭐ | 7.6KB | `entities/intercom-now-called-fin-launches-an-ai-agent-whose-only-job-is-managing-another-.md`
 
 ## 核心要点
-- 评分：v=7 × c=9 = 63
-- 来源：venturebeat
+- - 来源：venturebeat
 ## 相关实体
 - [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](../ch01/008-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.html)
 - [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-seer-agent-the-answer-is-already-in-sentry-now-you-can-ask-for-it.md)

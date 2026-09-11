@@ -1,6 +1,6 @@
 # Building the agentic
 
-> 📊 Level ⭐ | 5.1KB | `entities/building-the-agentic-future-developer-highlights-from-io-2026.md`
+> 📊 Level ⭐⭐⭐ | 5.1KB | `entities/building-the-agentic-future-developer-highlights-from-io-2026.md`
 
 ## Building the agentic future: Developer highlights from I/O 2026
 

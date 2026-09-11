@@ -1,6 +1,6 @@
 # Claude Code 源码拆解：从启动到多 Agent 扩展层
 
-> 📊 Level ⭐⭐⭐⭐ | 15.0KB | `entities/claude-code-source-architecture.md`
+> 📊 Level ⭐⭐⭐ | 15.0KB | `entities/claude-code-source-architecture.md`
 
 ## 八大模块
 1. **入口三段式**：分流→进程初始化→会话准备，进程/交互状态分离

@@ -1,6 +1,6 @@
 # Matt Pocock Skills — AI编程技能集合
 
-> 📊 Level ⭐⭐⭐⭐ | 11.8KB | `entities/mattpocock-skills-grill-me-grill-with-docs-caveman.md`
+> 📊 Level ⭐⭐⭐ | 11.8KB | `entities/mattpocock-skills-grill-me-grill-with-docs-caveman.md`
 
 ## 概述
 Matt Pocock（TypeScript 类型系统专家，Total TypeScript 作者）整理的 AI 编程 Skill 集合。14 个 Skill 全部为纯 Markdown 文件，零依赖，零安装。

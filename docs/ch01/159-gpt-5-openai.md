@@ -1,6 +1,6 @@
 # GPT-5级推理能力塞进语音模型，OpenAI把同传翻译成本砍穿地板价
 
-> 📊 Level ⭐⭐ | 6.8KB | `entities/gpt-5级推理能力塞进语音模型openai把同传翻译成本砍穿地板价.md`
+> 📊 Level ⭐⭐⭐ | 6.8KB | `entities/gpt-5级推理能力塞进语音模型openai把同传翻译成本砍穿地板价.md`
 
 ## 相关实体
 - [Openai Gpt Realtime Voice Models Qbitai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openai-gpt-realtime-voice-models-qbitai.md)

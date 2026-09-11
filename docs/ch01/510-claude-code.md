@@ -1,6 +1,6 @@
 # Claude Code 源码核心机制详解
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 31.6KB | `entities/claude-code-core-internals.md`
+> 📊 Level ⭐⭐⭐ | 31.6KB | `entities/claude-code-core-internals.md`
 
 ## 核心设计亮点
 1. **动态 System Prompt** — 运行时由 `buildEffectiveSystemPrompt` 函数动态组装，包含6层优先级：基础行为契约 → 工具描述（每个工具独立 prompt() 方法） → MCP 指令 → Skill 索引 → 环境信息 → ToolSearch 提示。禁用某个工具后其描述自动从 prompt 消失。动态 System Prompt 组装

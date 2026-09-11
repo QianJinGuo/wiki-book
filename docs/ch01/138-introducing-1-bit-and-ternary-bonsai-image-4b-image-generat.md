@@ -1,6 +1,6 @@
 # Introducing 1-bit and Ternary Bonsai Image 4B: Image Generation for Local Devices
 
-> 📊 Level ⭐ | 2.3KB | `entities/introducing-1-bit-and-ternary-bonsai-image-4b-image-generati-352fe9.md`
+> 📊 Level ⭐⭐⭐ | 2.3KB | `entities/introducing-1-bit-and-ternary-bonsai-image-4b-image-generati-352fe9.md`
 
 → [原文存档](https://prismml.com/news/bonsai-image-4b)
 

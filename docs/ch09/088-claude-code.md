@@ -1,6 +1,6 @@
 # Claude Code 集成其他工具指南
 
-> 📊 Level ⭐⭐⭐⭐ | 9.4KB | `entities/claude-code-integration-other-tools.md`
+> 📊 Level ⭐⭐⭐ | 9.4KB | `entities/claude-code-integration-other-tools.md`
 
 ## 概述
 本文系统性整理 Claude Code 与 **Obsidian 以外**的各种工具集成方案，涵盖 MCP 协议扩展、IM 平台操控、IDE 协同、企业级部署集成等多个维度。核心价值在于帮助开发者了解 Claude Code 的生态广度，根据自身场景选择最适合的集成路径。

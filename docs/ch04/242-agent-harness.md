@@ -1,6 +1,6 @@
 # Agent架构关键变化：Harness正在成为新后端
 
-> 📊 Level ⭐⭐⭐⭐ | 32.5KB | `entities/agent-architecture-harness-new-backend.md`
+> 📊 Level ⭐⭐⭐ | 32.5KB | `entities/agent-architecture-harness-new-backend.md`
 
 本文讨论 AI 基础设施的核心问题：智能体 harness 与传统后端分离导致的复杂性，强调当前架构难以处理随机性强的 agent 系统。
 作者提出用"worker、trigger、function"三个原语重新定义后端，让 agent 成为与服务、队列等同等的 worker，实现实时发现、可扩展性和统一可观测性，消除 harness 与后端的界限。

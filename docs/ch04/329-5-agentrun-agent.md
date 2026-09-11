@@ -1,6 +1,6 @@
 # 5 分钟上手 AgentRun：从注册到第一个 Agent 运行
 
-> 📊 Level ⭐⭐⭐⭐ | 9.0KB | `entities/aliyun-agentrun-5min-quickstart.md`
+> 📊 Level ⭐⭐⭐ | 9.0KB | `entities/aliyun-agentrun-5min-quickstart.md`
 
 ## 核心定位
 阿里云 AgentRun 的定位本质是**平台与用户职责重新分工**：平台承担容器、扩缩容、网络、监控、灰度、合规等基础设施负担，用户只需聚焦模型、提示词、工具三大核心要素。

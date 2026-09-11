@@ -1,6 +1,6 @@
 # LLM-as-a-Verifier: A General-Purpose Verification Framework
 
-> 📊 Level ⭐⭐⭐⭐ | 12.3KB | `entities/llm-as-a-verifierageneral-purposeverific.md`
+> 📊 Level ⭐⭐⭐ | 12.3KB | `entities/llm-as-a-verifierageneral-purposeverific.md`
 
 ## 核心要点
 - 提出 LLM-as-a-Verifier 框架，通过三大维度提升验证精度：评分粒度扩展（G）、重复验证（K）、标准分解（C）

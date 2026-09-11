@@ -1,6 +1,6 @@
 # Kimi Work：通用 Agent 战场从云端迁移到本地
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 39.3KB | `entities/kimi-work-codex-vibe-working-paradigm-shift.md`
+> 📊 Level ⭐⭐⭐ | 39.3KB | `entities/kimi-work-codex-vibe-working-paradigm-shift.md`
 
 > "Vibe Coding 之后，下一个词是 Vibe Working。" —— 机器之心编辑部
 

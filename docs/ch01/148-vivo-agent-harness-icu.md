@@ -1,6 +1,6 @@
 # vivo Agent 系统分析：大模型是大脑不是马，Harness 是 ICU 不是马鞍
 
-> 📊 Level ⭐⭐ | 7.2KB | `entities/vivo-agent-brain-body-icu-harness-evolutionary-framework-2026.md`
+> 📊 Level ⭐⭐⭐ | 7.2KB | `entities/vivo-agent-brain-body-icu-harness-evolutionary-framework-2026.md`
 
 vivo 互联网项目团队 Jiang Zuohan 提出以 **"大模型是大脑，Agent 是身体"** 替代流行的"大模型是马，Harness 是马鞍"比喻。核心论点：当前 AI 系统的问题不在模型能力，而在于 Agent 作为"身体"的不成熟——这是一个大脑超前成熟、但身体处于早产儿阶段的阶段。
 

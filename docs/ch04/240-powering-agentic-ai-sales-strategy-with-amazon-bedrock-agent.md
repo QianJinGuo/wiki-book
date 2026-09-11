@@ -1,6 +1,6 @@
 # Powering agentic AI sales strategy with Amazon Bedrock AgentCore
 
-> 📊 Level ⭐⭐⭐⭐ | 35.6KB | `entities/powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.md`
+> 📊 Level ⭐⭐⭐ | 35.6KB | `entities/powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent.md`
 
 ## Powering agentic AI sales strategy with Amazon Bedrock AgentCore
 

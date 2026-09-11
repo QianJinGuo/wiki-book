@@ -1,6 +1,6 @@
 # Agentic Design System - From Chatbot to Orchestration
 
-> 📊 Level ⭐ | 12.6KB | `entities/agentic-design-system-from-chatbot-to-orchestration.md`
+> 📊 Level ⭐⭐⭐ | 12.6KB | `entities/agentic-design-system-from-chatbot-to-orchestration.md`
 
 > -> [原文存档](https://learn.thedesignsystem.guide/p/agentic-design-system-from-chatbot)
 

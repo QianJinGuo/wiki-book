@@ -1,6 +1,6 @@
 # Hermes新顶流Agent Skills闭环系统深度解析
 
-> 📊 Level ⭐⭐ | 7.2KB | `entities/hermes-skill-system-deep-dive.md`
+> 📊 Level ⭐⭐⭐ | 7.2KB | `entities/hermes-skill-system-deep-dive.md`
 
 Hermes Agent 的 Skills 闭环系统实现了"经验提取→知识存储→智能检索→上下文注入→执行验证→自动改进"的完整闭环，是唯一一个内置闭环自学习机制的开源 Agent 框架。
 1. **创建触发** — Agent 自主决定何时创建 Skill

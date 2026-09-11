@@ -1,6 +1,6 @@
 # Agent Reliability: Context Drift & Tool Calling Hallucination
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 12.4KB | `entities/agent-reliability-context-drift-tool-hallucination.md`
+> 📊 Level ⭐⭐⭐ | 12.4KB | `entities/agent-reliability-context-drift-tool-hallucination.md`
 
 ## 核心问题
 Agent 运行多轮后可靠性的两个核心问题：

@@ -3,8 +3,7 @@
 > 📊 Level ⭐⭐⭐ | 3.9KB | `entities/deepseek-v4-flash-means-llm-steering-is-interesting-again.md`
 
 ## 核心要点
-- 评分：v=7 × c=8 = 56
-- Well-structured technical article explaining steering vectors with good clarity and logical flow. Demonstrates solid understanding of both naive and sophisticated steering approaches, referencing rele
+- - Well-structured technical article explaining steering vectors with good clarity and logical flow. Demonstrates solid understanding of both naive and sophisticated steering approaches, referencing rele
 ## 相关实体
 - [Llm Steering Behavior Guidance](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-steering-behavior-guidance.md)
 - [Wetesteddeepseekv4Proandflashagainstclau](https://github.com/QianJinGuo/wiki-public/blob/main/entities/wetesteddeepseekv4proandflashagainstclau.md)

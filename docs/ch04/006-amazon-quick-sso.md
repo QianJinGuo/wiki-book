@@ -1,6 +1,6 @@
 # Amazon Quick 飞书SSO对接指南
 
-> 📊 Level ⭐ | 6.7KB | `entities/amazon-quick-飞书sso对接指南.md`
+> 📊 Level ⭐⭐⭐ | 6.7KB | `entities/amazon-quick-飞书sso对接指南.md`
 
 → [原文存档](https://aws.amazon.com/cn/blogs/china/amazon-quick-sso-integration-guide)
 

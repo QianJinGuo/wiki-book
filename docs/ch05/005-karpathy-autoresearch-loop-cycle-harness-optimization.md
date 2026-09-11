@@ -1,6 +1,6 @@
 # Karpathy AutoResearch Loop Cycle & Harness Optimization
 
-> 📊 Level ⭐ | 4.9KB | `entities/karpathy-autoresearch-loop-cycle-harness-optimization.md`
+> 📊 Level ⭐⭐⭐ | 4.9KB | `entities/karpathy-autoresearch-loop-cycle-harness-optimization.md`
 
 > 文章 "76%的性能提升与模型无关？Karpathy 700次 Loop 实验揭开 Agent 最大误区" (四月, 2026-07-07) 的实体整理。综合了 Hugging Face Joel Niklaus 的 Harness 优化实验、Karpathy AutoResearch 项目 (Loop Cycle)、以及 Codila 的 Loop Engineering 方法论。
 

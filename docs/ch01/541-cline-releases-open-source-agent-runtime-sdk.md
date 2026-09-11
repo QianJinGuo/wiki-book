@@ -1,6 +1,6 @@
 # Cline releases open-source agent runtime SDK
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 12.3KB | `entities/cline-open-source-agent-runtime-sdk.md`
+> 📊 Level ⭐⭐⭐ | 12.3KB | `entities/cline-open-source-agent-runtime-sdk.md`
 
 > [!abstract]
 > Cline 发布开源 Agent 运行时 SDK（`@cline/sdk`），采用分层 TypeScript 架构，解耦 Provider、Agent Loop 和 Core Runtime。支持 Agent Teams、插件系统、原生 MCP 连接器。Terminal Bench 2.0 测试中优于 Claude Code。

@@ -32,7 +32,7 @@
 
 ## Ch02.001 Hermes Agent 自进化机制源码解析
 
-> 📊 Level ⭐ | 5.3KB | `entities/hermes-agent-self-evolving.md`
+> 📊 Level ⭐⭐⭐ | 5.3KB | `entities/hermes-agent-self-evolving.md`
 
 > 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.75**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/hermes-agent-self-evolving.md`，一手来源仍见下方 sources。
@@ -69,7 +69,7 @@
 
 ## Ch02.002 Agent Skill 编写指南
 
-> 📊 Level ⭐ | 4.7KB | `entities/agent-skill-writing.md`
+> 📊 Level ⭐⭐⭐ | 4.7KB | `entities/agent-skill-writing.md`
 
 > 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.85**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/agent-skill-writing.md`，一手来源仍见下方 sources。
@@ -109,7 +109,7 @@
 
 ## Ch02.003 Claude Code Prompt 与上下文 Harness 设计
 
-> 📊 Level ⭐ | 4.6KB | `entities/claude-code-prompt-context-harness.md`
+> 📊 Level ⭐⭐⭐ | 4.6KB | `entities/claude-code-prompt-context-harness.md`
 
 > 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.8**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/claude-code-prompt-context-harness.md`，一手来源仍见下方 sources。
@@ -149,7 +149,7 @@
 
 ## Ch02.004 Skills 重新定义 Agent 喂知识：从'提前给'到'按需取'的范式反转
 
-> 📊 Level ⭐ | 4.5KB | `entities/skills-redefine-agent-knowledge-allen-tang-2026.md`
+> 📊 Level ⭐⭐⭐ | 4.5KB | `entities/skills-redefine-agent-knowledge-allen-tang-2026.md`
 
 ## 核心概述
 
@@ -207,7 +207,7 @@ Anthropic 重新定义的不是"知识的格式"，是**"知识被调用的时�
 
 ## Ch02.005 Enrich your datasets with business context
 
-> 📊 Level ⭐ | 4.0KB | `entities/enrich-your-datasets-with-business-context-migrating-from-le.md`
+> 📊 Level ⭐⭐⭐ | 4.0KB | `entities/enrich-your-datasets-with-business-context-migrating-from-le.md`
 
 # Enrich your datasets with business context: Migrating from legacy Topics to semantic datasets in Amazon Quick
 
@@ -237,7 +237,7 @@ Legacy Topics provided the initial approach to adding business context to datase
 
 ## Ch02.006 AE 到可运行代码：大淘宝 AI 动画全链路方案（实践篇）
 
-> 📊 Level ⭐ | 3.7KB | `entities/taobao-ae-to-code-animation-practice-2026.md`
+> 📊 Level ⭐⭐⭐ | 3.7KB | `entities/taobao-ae-to-code-animation-practice-2026.md`
 
 ## 核心概述
 
@@ -301,7 +301,7 @@ AI 的核心价值在于集成环节——需同时理解动画结构和业务 D
 
 ## Ch02.007 AINMM：存量生产级工程向 AI Native 演进的五级成熟度模型
 
-> 📊 Level ⭐⭐ | 5.9KB | `entities/ainmm-ai-native-maturity-model.md`
+> 📊 Level ⭐⭐⭐ | 5.9KB | `entities/ainmm-ai-native-maturity-model.md`
 
 > 大淘宝技术（供给技术团队·木直）提出的 AI Native 能力成熟度模型，借鉴 CMMI 思想，定义了 5 个成熟度等级（ML1-ML5）和 5 大过程域，配套 AI Native Evolution Kit 工具，通过挽单系统实践验证。
 
@@ -378,7 +378,7 @@ AINMM 继承 CMMI 的"逐级递进、每级是下一级基础"原则——ML1 �
 
 ## Ch02.008 新程Alpha认知模型：4B参数端侧部署，群体智能以小搏大比肩GPT-5.4
 
-> 📊 Level ⭐⭐ | 5.5KB | `entities/nextie-alpha-cognitive-model-4b-on-device.md`
+> 📊 Level ⭐⭐⭐ | 5.5KB | `entities/nextie-alpha-cognitive-model-4b-on-device.md`
 
 > 原文存档：[原文存档](https://mp.weixin.qq.com/s/ypRly7nJcT3sKkvEI46OLw)
 
@@ -439,7 +439,7 @@ Proactive Agent长期受限于推理成本——7×24运行千亿参数模型的
 
 ## Ch02.009 AI 导购在 vivo 官网的落地实践
 
-> 📊 Level ⭐⭐ | 5.2KB | `entities/vivo-ai-sales-guide-ecommerce-agent.md`
+> 📊 Level ⭐⭐⭐ | 5.2KB | `entities/vivo-ai-sales-guide-ecommerce-agent.md`
 
 > -> [原文存档](https://mp.weixin.qq.com/s/ureOXhYFIJrUlZdL9JvEFQ)
 
@@ -696,7 +696,7 @@ Markdown 在 AI 输出场景中的根本局限在于它是「被动消费」型�
 
 ## 第 3 来源 — Claude Code 工程师 @Thariq：为何选择 HTML 替代 Markdown
 
-- v×c=56, Thariq (Claude Code 工程师) 从开发者体验角度论证 HTML 优于 Markdown 作为 AI 文档载体
+- Thariq (Claude Code 工程师) 从开发者体验角度论证 HTML 优于 Markdown 作为 AI 文档载体
 - **互补角度**:
   1. **信息密度**: HTML 可承载表格、CSS、SVG、JavaScript、交互组件，Markdown 难以自然表达
   2. **视觉清晰度**: 长文档（>100行 Markdown）可读性差，HTML 支持标签页、插图、响应式布局
@@ -725,7 +725,6 @@ Markdown 在 AI 输出场景中的根本局限在于它是「被动消费」型�
 - 环境配置支持 build secrets、layer caching（缓存命中构建速度快 70%）、版本历史和审计日志
 - Egress 和 secrets 可按环境级别隔离，不同环境之间无法互相访问彼此的 secrets
 - 未来方向：环境配置将随代码库演变而自主演化，而非静态快照
-- 技术深度：v=8, c=7
 → [原文存档](https://cursor.com/blog/cloud-agent-development-environments)
 
 ## 相关实体
@@ -784,7 +783,7 @@ Secrets scoped per environment 是一个关键的安全设计：即使某一环�
 
 ## 第 2 来源 — How we set up our cloud agent environment (2026-07-30)
 
-> 来源：[原文存档](https://cursor.com/blog/cloud-agent-environment) — Cursor 工程团队 7 个月实践复盘（Mathew Hogan & Arvind Saripalli, 7 min read）。v×c=49（v=7, c=7, stars=3），与第 1 来源同 publisher 同 artifact family 的 evolution MERGE。
+> 来源：[原文存档](https://cursor.com/blog/cloud-agent-environment) — Cursor 工程团队 7 个月实践复盘（Mathew Hogan & Arvind Saripalli, 7 min read）。
 
 **互补角度 5 条**：
 1. **量化采纳曲线**：2025-12 cloud agents 撰写 Cursor monorepo 约 1/10 合并 PR → 2026-07 超过一半（7-day rolling >50%），且内部 cloud agent 已 "author a majority of the code we ship"。这是第 1 来源（产品功能公告）缺少的生产实证。
@@ -1251,7 +1250,7 @@ Hermes Agent 的 Skill 系统具有潜在的网络效应：
 
 ## Ch02.018 Codex 上下文工程 — Prompt Layout + Append-only + Latent Space Moat（LastWhisper 解读）
 
-> 📊 Level ⭐⭐⭐⭐ | 19.7KB | `entities/codex-context-engineering-lastwhisper-thinking-in-context.md`
+> 📊 Level ⭐⭐⭐ | 19.7KB | `entities/codex-context-engineering-lastwhisper-thinking-in-context.md`
 
 LastWhisper（北大计算机硕士）"Thinking in Context" 系列开篇，对 OpenAI 工程博客《Unrolling the Codex agent loop》的深度解读。聚焦**世界级 Coding Agent 中的前沿上下文工程实践**，提出两条核心观察：
 
@@ -1455,7 +1454,7 @@ Codex 实验性 context management 将常被统称为「记忆」的内容拆成
 
 ## Ch02.019 Headroom：上下文压缩与缓存稳定化框架（live zone + CCR + RawValue 字节级 patch）
 
-> 📊 Level ⭐⭐⭐⭐ | 16.1KB | `entities/headroom-context-compression-cache-stabilization.md`
+> 📊 Level ⭐⭐⭐ | 16.1KB | `entities/headroom-context-compression-cache-stabilization.md`
 
 # Headroom：上下文压缩与缓存稳定化框架
 
@@ -1654,7 +1653,7 @@ Schema 语义没变，但 **bytes 稳定了**。
 
 ## Ch02.020 视觉 AI 的下一前沿是代码：a16z 关于视觉生成范式转移的论述
 
-> 📊 Level ⭐⭐⭐⭐ | 14.3KB | `entities/a16z-com-the-next-frontier-of-visual-ai-is-code.md`
+> 📊 Level ⭐⭐⭐ | 14.3KB | `entities/a16z-com-the-next-frontier-of-visual-ai-is-code.md`
 
 → [原文存档](https://a16z.com/the-next-frontier-of-visual-ai-is-code/)
 
@@ -1779,7 +1778,7 @@ VIGA 与 Articraft3D 是这一方向的代表项目：
 
 ## Ch02.021 LLM Wiki 架构
 
-> 📊 Level ⭐⭐⭐⭐ | 8.6KB | `entities/llm-wiki-architecture.md`
+> 📊 Level ⭐⭐⭐ | 8.6KB | `entities/llm-wiki-architecture.md`
 
 ## 核心定位
 **RAG vs LLM Wiki 区分：**   ^["LLM Wiki 架构解析：Karpathy 的 Markdown 知识库模式 (2026-05-20)"]
@@ -1883,7 +1882,7 @@ LLM Wiki 体现了一种范式转移：从"检索已有知识"到"构建可演�
 
 ## Ch02.022 OneReason：快手将推理注入推荐基模的系统性尝试
 
-> 📊 Level ⭐⭐⭐⭐ | 7.5KB | `entities/onereason-kuaishou-reasoning-recommender-system.md`
+> 📊 Level ⭐⭐⭐ | 7.5KB | `entities/onereason-kuaishou-reasoning-recommender-system.md`
 
 > 原文归档：[原文归档](https://mp.weixin.qq.com/s/-qZ_Z8RMm67tv0ciFbpSSA)
 
@@ -2006,7 +2005,7 @@ OneReason 把推荐基模的 Reasoning 补上了关键一步。下一步是打�
 
 ## Ch02.023 Hugging Face AI Agent 术语表：Model / Agent / Scaffolding / Harness / Context Engineering / Policy / Tool / Skill / Sub-agent 完整区分
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 27.9KB | `entities/huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent.md`
+> 📊 Level ⭐⭐⭐ | 27.9KB | `entities/huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent.md`
 
 # Hugging Face AI Agent 术语表
 
@@ -2359,7 +2358,7 @@ Environment/Rollout/Reward/Trainer 这四个概念，直接对应强化学习（
 
 ## Ch02.024 反向审计 Prompt 范式 — 从 VB 50 行 Codex 自我蒸馏到 5 行核心
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 25.6KB | `entities/reverse-audit-prompt-paradigm-codex-5-line-version.md`
+> 📊 Level ⭐⭐⭐ | 25.6KB | `entities/reverse-audit-prompt-paradigm-codex-5-line-version.md`
 
 ## 概述
 
@@ -2625,7 +2624,7 @@ worker 边界、skill description 触发词、producer 链路回执——这三�
 
 ## Ch02.025 Hermes Agent 深度解析（阿里云/飞樰）
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 14.7KB | `entities/hermes-agent-deep-dive.md`
+> 📊 Level ⭐⭐⭐ | 14.7KB | `entities/hermes-agent-deep-dive.md`
 
 ## Overview
 飞樰（阿里云开发者）对 Hermes Agent 的深度源码解析文章，从 Self-Evolving / Prompt Engineering / Context Engineering / Harness Engineering 四个维度展开，附 Agent 演进三阶段框架。
@@ -2802,7 +2801,7 @@ OpenClaw 用绝对 Token 数（18K）触发压缩，在上下文窗口较小的�
 
 ## Ch02.026 Claude Code Prompt 提示词体系源码解析
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 14.0KB | `entities/claude-code-prompt-source-analysis.md`
+> 📊 Level ⭐⭐⭐ | 14.0KB | `entities/claude-code-prompt-source-analysis.md`
 
 ## 概述
 FanOne 从源码角度解析 Claude Code 的 Prompt 提示词模块六大分层体系：Core System（静态/动态分离 + 优先级策略树）、Tool（自然语言行为协议）、Skill（渐进式加载 + Reading Guide）、Agent（强角色边界 SOP）、Context Management、Memory（四类分级存储）。与 [Claude Code 架构解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-architecture.md) 构成完整源码解读系列。

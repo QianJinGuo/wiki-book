@@ -1,6 +1,6 @@
 # SkillOpt-Lite：一行Vibe指令加速Agent技能自进化
 
-> 📊 Level ⭐⭐ | 3.8KB | `entities/skillopt-lite-zero-order-agent-skill-optimization.md`
+> 📊 Level ⭐⭐⭐ | 3.8KB | `entities/skillopt-lite-zero-order-agent-skill-optimization.md`
 
 > **论文**：SkillOpt-Lite: Better and Faster Agent Self-evolution via One Line of Vibe (arXiv:2607.03451)
 > **来源**：Hyman的杂货铺 | [原文存档](https://mp.weixin.qq.com/s/XAz5KdMMKCVqGTLtw9Nv0w)

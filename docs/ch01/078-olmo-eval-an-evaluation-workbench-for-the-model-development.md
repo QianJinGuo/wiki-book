@@ -1,6 +1,6 @@
 # olmo-eval: An evaluation workbench for the model development
 
-> 📊 Level ⭐ | 5.7KB | `entities/olmo-eval.md`
+> 📊 Level ⭐⭐⭐ | 5.7KB | `entities/olmo-eval.md`
 
 → [原文存档](https://huggingface.co/blog/allenai/olmo-eval)
 

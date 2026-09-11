@@ -1,6 +1,6 @@
 # Software After AI
 
-> 📊 Level ⭐⭐ | 6.3KB | `entities/tomtunguz-com-software-after-ai.md`
+> 📊 Level ⭐⭐⭐ | 6.3KB | `entities/tomtunguz-com-software-after-ai.md`
 
 ## 深度分析
 

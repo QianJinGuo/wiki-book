@@ -1,6 +1,6 @@
 # Karpathy × Boris 访谈：Software 3.0 时代编程完整地图
 
-> 📊 Level ⭐⭐ | 5.5KB | `entities/karpathy-boris-software3-llm-era-programming-2026.md`
+> 📊 Level ⭐⭐⭐ | 5.5KB | `entities/karpathy-boris-software3-llm-era-programming-2026.md`
 
 - URL: https://mp.weixin.qq.com/s/e1vrUYcGE6RToVkl_HcXZQ
 - Author: 微信编译版，原型为 Boris (Claude Code创始人) + Karpathy (前Tesla AI) YouTube访谈

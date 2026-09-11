@@ -1,6 +1,6 @@
 # Spec as AIOS：AI-Native 全栈交付的抗熵架构（高德技术系列第二期）
 
-> 📊 Level ⭐⭐⭐⭐ | 23.2KB | `entities/spec-as-aios-anti-entropy-architecture-gaode-ai-native-series-2.md`
+> 📊 Level ⭐⭐⭐ | 23.2KB | `entities/spec-as-aios-anti-entropy-architecture-gaode-ai-native-series-2.md`
 
 ## Spec as AIOS：AI-Native 全栈交付的抗熵架构
 
@@ -166,7 +166,7 @@
 - **SDD 三层递进**（需求/方案/验收）—— 规范 = 唯一真实来源
 - **端云一体**——本地仓库 + 云端 Skills 协同
 - **知识图谱导航**——规范从平铺文本升级为可遍历结构
-- **v×c=81**：完整的"AIOS 抗熵架构"框架 + 三道鸿沟诊断 + 三级分层工程化方案 + 端云协同设计 + 知识图谱导航；引用经典 AI 友好框架论断
+- 完整的"AIOS 抗熵架构"框架 + 三道鸿沟诊断 + 三级分层工程化方案 + 端云协同设计 + 知识图谱导航；引用经典 AI 友好框架论断
 
 ### 1. AIOS 范式跃迁：从"文档驱动"到"可执行操作系统"
 

@@ -1,6 +1,6 @@
 # 让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客
 
-> 📊 Level ⭐⭐ | 6.0KB | `entities/enable-kiro-and-claude-code-for-im-with-acp-bridge-async-ai-workflow.md`
+> 📊 Level ⭐⭐⭐ | 6.0KB | `entities/enable-kiro-and-claude-code-for-im-with-acp-bridge-async-ai-workflow.md`
 
 ## 概述
 让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 by awschina on 17 3月 2026 in How-To Permalink Share 摘要：AI 编程助手如 Kiro CLI、Claude Code 能力日益强大，但使用场景局限于本地终端，难以满足移动办公和团队协作需求。本文介绍 ACP Bridge——一个将本地 CLI 编程助手通过 ACP 协议暴露为 HTTP 服务的桥接工具，结合 OpenClaw Gateway 和 AWS 基础设施，实现从 Discord 消息触发异步 AI 编程任务的完整闭环。 目录 01 一、背景 02 二、挑战：本地 CLI 工具的协作困境 03 三、技术背景： ACP 协议与 OpenClaw 04 四、整体架构 05 五、安全注意事项 06 六、核心模块解析 07 七、

@@ -1,6 +1,6 @@
 # Hidden Technical Debt of AI Systems: Agent Harness
 
-> 📊 Level ⭐ | 3.8KB | `entities/hidden-technical-debt-agent-harness.md`
+> 📊 Level ⭐⭐⭐ | 3.8KB | `entities/hidden-technical-debt-agent-harness.md`
 
 > **Background**：本文基于 leehanchung 2026-05-08 发表的深度技术分析，系统梳理了 AI Agent 系统中"Harness 层"的技术债务问题。文章以 Google 经典论文《Hidden Technical Debt in Machine Learning Systems》为类比，指出 Agent 系统中真正的工程复杂度不在模型本身，而在围绕模型的 Harness 层——system prompts、tool wrappers、planner-executor loops、retry policies、context compaction 策略等。
 

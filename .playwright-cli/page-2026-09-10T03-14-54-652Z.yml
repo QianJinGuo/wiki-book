@@ -1,0 +1,285 @@
+- generic [active] [ref=f8e1]:
+  - link "跳转至" [ref=f8e2] [cursor=pointer]:
+    - /url: "#introducing-os-level-actions-in-amazon-bedrock-agentcore-browser"
+  - banner [ref=f8e3]:
+    - navigation "页眉" [ref=f8e4]:
+      - link "AI 工程" [ref=f8e5] [cursor=pointer]:
+        - /url: ../index.html
+      - generic [ref=f8e9]:
+        - generic [ref=f8e10]: AI 工程
+        - generic:
+          - generic "Introducing OS Level Actions in Amazon Bedrock AgentCore Browser"
+      - generic [ref=f8e12]:
+        - radio "切换到暗色模式"
+        - generic "切换到暗色模式" [ref=f8e13] [cursor=pointer]
+        - radio "切换到亮色模式"
+      - generic [ref=f8e17]:
+        - button "选择当前语言" [ref=f8e18] [cursor=pointer]
+        - generic:
+          - list:
+            - listitem [ref=f8e21]:
+              - link "中文" [ref=f8e22] [cursor=pointer]:
+                - /url: /index.html
+            - listitem [ref=f8e23]:
+              - link "English" [ref=f8e24] [cursor=pointer]:
+                - /url: /en/
+      - dialog [ref=f8e25]:
+        - search [ref=f8e26]:
+          - generic [ref=f8e27]:
+            - textbox "搜索" [ref=f8e28]
+            - navigation "查找":
+              - button "清空当前内容"
+          - generic: 正在初始化搜索引擎
+      - button "实时翻译整站为英文" [ref=f8e33] [cursor=pointer]:
+        - generic [aria-hidden] [ref=f8e34]: 🌐
+        - generic [ref=f8e35]: English
+      - link [ref=f8e37] [cursor=pointer]:
+        - /url: https://github.com/QianJinGuo/wiki-book
+        - generic [ref=f8e41]:
+          - text: QianJinGuo/wiki-book
+          - list [ref=f8e42]:
+            - listitem [ref=f8e43]: v1.3.8
+            - listitem [ref=f8e44]: "4"
+            - listitem [ref=f8e45]: "2"
+    - navigation "标签" [ref=f8e46]:
+      - list [ref=f8e48]:
+        - listitem [ref=f8e49]:
+          - link "首页" [ref=f8e50] [cursor=pointer]:
+            - /url: ../index.html
+        - listitem [ref=f8e51]:
+          - link "AI 工程主课程" [ref=f8e52] [cursor=pointer]:
+            - /url: ../course.html
+        - listitem [ref=f8e53]:
+          - link "第一篇 · 入门篇" [ref=f8e54] [cursor=pointer]:
+            - /url: ../ch01-ai-basics.html
+        - listitem [ref=f8e55]:
+          - link "第二篇 · 工程师篇" [ref=f8e56] [cursor=pointer]:
+            - /url: ../ch04-agent-core.html
+        - listitem [ref=f8e57]:
+          - link "第三篇 · 专家篇" [ref=f8e58] [cursor=pointer]:
+            - /url: ../ch11-infra.html
+        - listitem [ref=f8e59]:
+          - link "第四篇 · 科学家篇" [ref=f8e60] [cursor=pointer]:
+            - /url: ../ch15-training.html
+        - listitem [ref=f8e61]:
+          - link "第五篇 · 大师篇" [ref=f8e62] [cursor=pointer]:
+            - /url: ../ch19-research-frontier.html
+        - listitem [ref=f8e63]:
+          - link "学习路径" [ref=f8e64] [cursor=pointer]:
+            - /url: ../PATH.html
+        - listitem [ref=f8e65]:
+          - link "参考文献" [ref=f8e66] [cursor=pointer]:
+            - /url: ../references.html
+        - listitem [ref=f8e67]:
+          - link "English" [ref=f8e68] [cursor=pointer]:
+            - /url: ../en/index.html
+  - generic [ref=f8e69]:
+    - main [ref=f8e70]:
+      - generic [ref=f8e71]:
+        - navigation "导航栏" [ref=f8e75]:
+          - list [ref=f8e76]
+        - navigation "目录" [ref=f8e80]:
+          - list [ref=f8e82]:
+            - listitem [ref=f8e83]:
+              - link "摘要" [ref=f8e84] [cursor=pointer]:
+                - /url: "#_1"
+            - listitem [ref=f8e86]:
+              - link "深度分析" [ref=f8e87] [cursor=pointer]:
+                - /url: "#_2"
+            - listitem [ref=f8e89]:
+              - link "实践启示" [ref=f8e90] [cursor=pointer]:
+                - /url: "#_3"
+            - listitem [ref=f8e92]:
+              - link "相关实体" [ref=f8e93] [cursor=pointer]:
+                - /url: "#_4"
+        - article [ref=f8e96]:
+          - heading [level=1] [ref=f8e97]:
+            - text: Introducing OS Level Actions in Amazon Bedrock AgentCore Browser
+            - link "¶" [ref=f8e98] [cursor=pointer]:
+              - /url: "#introducing-os-level-actions-in-amazon-bedrock-agentcore-browser"
+          - blockquote [ref=f8e99]:
+            - paragraph [ref=f8e100]:
+              - text: 📊 Level ⭐ | 7.7KB |
+              - code [ref=f8e101]: entities/introducing-os-level-actions-in-amazon-bedrock-agentcore-browser.md
+            - paragraph [ref=f8e102]:
+              - text: "->"
+              - link "原文存档" [ref=f8e103] [cursor=pointer]:
+                - /url: https://aws.amazon.com/blogs/machine-learning/introducing-os-level-actions-in-amazon-bedrock-agentcore-browser/
+          - heading [level=2] [ref=f8e104]:
+            - text: 摘要
+            - link "¶" [ref=f8e105] [cursor=pointer]:
+              - /url: "#_1"
+          - paragraph [ref=f8e106]: "AI agents that automate web workflows operate within the browser’s web layer, the DOM that Playwright and the Chrome DevTools Protocol (CDP) expose. AgentCore Browser provides a secure, isolated browser environment for this, and it works well for the vast majority of automation: navigating pages,..."
+          - heading [level=2] [ref=f8e107]:
+            - text: 深度分析
+            - link "¶" [ref=f8e108] [cursor=pointer]:
+              - /url: "#_2"
+          - paragraph [ref=f8e109]:
+            - text: OS Level Actions 的发布标志着
+            - strong [ref=f8e110]: 浏览器自动化能力的最后一次关键补全
+            - text: 。在 AgentCore Browser 之前，浏览器自动化经历了三个阶段：DOM 操作（Playwright/CDP）→ 视觉理解（Vision Model）→ OS 层交互（现在）。
+            - strong [ref=f8e111]: 核心突破
+            - text: ：原生操作系统 UI（对话框、安全提示、证书选择器、右键菜单）是 DOM 层无法触及的"盲区"。OS Level Actions 通过
+            - code [ref=f8e112]: InvokeBrowser
+            - text: API 将控制力延伸到这个盲区，形成了
+            - strong [ref=f8e113]: 完整的 Action-Screenshot-Reaction 闭环
+            - text: 。
+            - strong [ref=f8e114]: 架构设计的关键选择
+            - text: ： 1.
+            - strong [ref=f8e115]: 无额外设置
+            - text: ：所有操作通过现有的
+            - code [ref=f8e116]: InvokeBrowser
+            - text: API 暴露，这意味着已有 AgentCore Browser 集成的系统可以零成本获得 OS 层能力。 2.
+            - strong [ref=f8e117]: 全桌面截图
+            - text: ：与 DOM 截图不同，OS 截图捕获整个屏幕，包括原生 UI 元素。这是 Vision Model 能够"看见"对话框的前提。 3.
+            - strong [ref=f8e118]: 单 Action 模式
+            - text: ：每次调用只执行一个 Action（click/move/type），这符合 Agent 的决策-执行循环设计原则，降低了状态复杂度。
+            - strong [ref=f8e119]: 竞争格局
+            - text: ：传统 RPA（UiPath、Automation Anywhere）依赖本地安装的 Agent，需要处理复杂的兼容性问题。AgentCore Browser 的云托管 + OS Actions 组合提供了一个纯云端的替代方案。
+          - heading [level=2] [ref=f8e120]:
+            - text: 实践启示
+            - link "¶" [ref=f8e121] [cursor=pointer]:
+              - /url: "#_3"
+          - list [ref=f8e122]:
+            - listitem [ref=f8e123]:
+              - strong [ref=f8e124]: 处理生产环境中的边缘场景
+              - text: ：当你的 Agent 遇到
+              - code [ref=f8e125]: window.print()
+              - text: 触发的系统打印对话框、
+              - code [ref=f8e126]: window.showModalDialog()
+              - text: 、或 macOS 隐私对话框时，OS Level Actions 是唯一可靠的自动化手段。
+            - listitem [ref=f8e127]:
+              - strong [ref=f8e128]: 右击上下文菜单的自动化
+              - text: ：需要通过右键菜单执行操作时，使用
+              - code [ref=f8e129]: mouseClick
+              - text: +
+              - code [ref=f8e130]: "button: \"RIGHT\""
+              - text: 组合。
+            - listitem [ref=f8e131]:
+              - strong [ref=f8e132]: 快捷键编排
+              - text: ：对于需要
+              - code [ref=f8e133]: Ctrl+A
+              - text: （全选）、
+              - code [ref=f8e134]: Ctrl+C
+              - text: （复制）等组合键的操作，
+              - code [ref=f8e135]: keyShortcut
+              - text: action 支持最多 5 个键的组合。
+            - listitem [ref=f8e136]:
+              - strong [ref=f8e137]: 截图观察循环
+              - text: ：每次 OS Action 后都要截图确认状态变化。这不是"可选的调试步骤"，而是 Agent 决策循环的必要组成部分。
+            - listitem [ref=f8e138]:
+              - strong [ref=f8e139]: 坐标系统的理解
+              - text: ：所有坐标基于 session 的
+              - code [ref=f8e140]: viewPort
+              - text: 设置。如果 viewport 是 1920×1080，x 有效范围是 0-1919，y 是 0-1079。超出范围的坐标会触发
+              - code [ref=f8e141]: ValidationException
+              - text: 。
+          - heading [level=2] [ref=f8e142]:
+            - text: 相关实体
+            - link "¶" [ref=f8e143] [cursor=pointer]:
+              - /url: "#_4"
+          - list [ref=f8e144]:
+            - listitem [ref=f8e145]:
+              - link "AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环" [ref=f8e146] [cursor=pointer]:
+                - /url: https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-agentcore-os-level-actions-browser.md
+            - listitem [ref=f8e147]:
+              - link "Dify集成Amazon Bedrock AgentCore Browser 实现更强大的信息获取和分析能力 | 亚马逊AWS官方博客" [ref=f8e148] [cursor=pointer]:
+                - /url: https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-agentcore-browser-information-retrieval-and-analysis-capabilities.md
+            - listitem [ref=f8e149]:
+              - link "基于Bedrock AgentCore+Strands构建企业级智能搜索平台实践 | 亚马逊AWS官方博客" [ref=f8e150] [cursor=pointer]:
+                - /url: https://github.com/QianJinGuo/wiki-public/blob/main/entities/building-enterprise-level-with-bedrock-agentcore-and-strands.md
+            - listitem [ref=f8e151]:
+              - link "当 AI Agent 学会\"忘记\"：Amazon Bedrock AgentCore Memory 的记忆哲学\" | 亚马逊AWS官方博客" [ref=f8e152] [cursor=pointer]:
+                - /url: https://github.com/QianJinGuo/wiki-public/blob/main/entities/when-ai-agents-learn-to-forget-amazon-bedrock-agentcore-memory-philosophy.md
+            - listitem [ref=f8e153]:
+              - link "AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客" [ref=f8e154] [cursor=pointer]:
+                - /url: https://github.com/QianJinGuo/wiki-public/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-1.md
+            - listitem [ref=f8e155]:
+              - link "AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客" [ref=f8e156] [cursor=pointer]:
+                - /url: https://github.com/QianJinGuo/wiki-public/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-4.md
+            - listitem [ref=f8e157]:
+              - 'link "Doris MCP on AgentCore Runtime: VPC原生MCP部署模式" [ref=f8e158] [cursor=pointer]':
+                - /url: https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-agentcore-doris-mcp-server.md
+            - listitem [ref=f8e159]:
+              - 'link "OpenClaw多租户迁移: Phase 2&3部署" [ref=f8e160] [cursor=pointer]':
+                - /url: https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-multi-4.md
+            - listitem [ref=f8e161]:
+              - link "AgentCore Runtime部署Apache Doris MCP Server" [ref=f8e162] [cursor=pointer]:
+                - /url: https://github.com/QianJinGuo/wiki-public/blob/main/entities/runtime-deploy-apache-doris-mcp-server-quick-suite-ai-analytics.md
+            - listitem [ref=f8e163]:
+              - 'link "AgentCore Identity: 3-legged OAuth+Session Binding的安全架构" [ref=f8e164] [cursor=pointer]':
+                - /url: https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-agentcore-identity-security.md
+            - listitem [ref=f8e165]:
+              - 'link "OpenClaw多租户迁移: 背景与架构概览" [ref=f8e166] [cursor=pointer]':
+                - /url: https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-multi-1.md
+            - listitem [ref=f8e167]:
+              - 'link "OpenClaw多租户迁移: Phase 1 基础设施部署" [ref=f8e168] [cursor=pointer]':
+                - /url: https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-multi-3.md
+            - listitem [ref=f8e169]:
+              - link "Amazon Bedrock模型推理的Serverless异步架构" [ref=f8e170] [cursor=pointer]:
+                - /url: https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-model-inference-serverless-architecture-case-study.md
+            - listitem [ref=f8e171]:
+              - link "自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南" [ref=f8e172] [cursor=pointer]:
+                - /url: https://github.com/QianJinGuo/wiki-public/blob/main/entities/mcp-serveramazon-bedrock-agentcorequick-suite.md
+            - listitem [ref=f8e173]:
+              - link "Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic" [ref=f8e174] [cursor=pointer]:
+                - /url: https://github.com/QianJinGuo/wiki-public/blob/main/entities/real-time-voice-agents-with-stream-vision-agents-and-amazon-nova-2-sonic.md
+            - listitem [ref=f8e175]:
+              - link "Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore" [ref=f8e176] [cursor=pointer]:
+                - /url: https://github.com/QianJinGuo/wiki-public/blob/main/entities/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazo.md
+            - listitem [ref=f8e177]:
+              - link "Improve bot accuracy with Amazon Lex Assisted NLU" [ref=f8e178] [cursor=pointer]:
+                - /url: https://github.com/QianJinGuo/wiki-public/blob/main/entities/improve-bot-accuracy-with-amazon-lex-assisted-nlu.md
+            - listitem [ref=f8e179]:
+              - link "航班变更信息智能识别解决方案 | Amazon Web Services" [ref=f8e180] [cursor=pointer]:
+                - /url: https://github.com/QianJinGuo/wiki-public/blob/main/entities/航班变更信息智能识别解决方案.md
+            - listitem [ref=f8e181]:
+              - link "Amazon Nova Multimodal Embeddings 制造业智能应用" [ref=f8e182] [cursor=pointer]:
+                - /url: https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-nova-manufacturing-intelligence.md
+            - listitem [ref=f8e183]:
+              - 'link "From siloed data to unified insights: Cross-account Athena Access for Amazon Quick" [ref=f8e184] [cursor=pointer]':
+                - /url: https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-siloed-data-to-unified-insights-cross-account-athena-access-for-amazon-quic.md
+            - listitem [ref=f8e185]:
+              - link "Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战" [ref=f8e186] [cursor=pointer]:
+                - /url: https://github.com/QianJinGuo/wiki-public/blob/main/entities/zenjoy-aiops-agent-bedrock-eks-prometheus.md
+            - listitem [ref=f8e187]:
+              - link "Habby 游戏借助 AWS DevOps Agent 实现智能运维最佳实践" [ref=f8e188] [cursor=pointer]:
+                - /url: https://github.com/QianJinGuo/wiki-public/blob/main/entities/habby-game-aws-devops-agent.md
+            - listitem [ref=f8e189]:
+              - link "AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）" [ref=f8e190] [cursor=pointer]:
+                - /url: https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-一周综述amazon-bedrock-agentcore-付款适用于-aws-的-agent-工具套件等2026-年-5-月-11-日.md
+            - listitem [ref=f8e191]:
+              - link "Agent orchestration" [ref=f8e192] [cursor=pointer]:
+                - /url: https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-agent-orchestration-workshop.md
+            - listitem [ref=f8e193]:
+              - link "AWS Reinvent Game Demo 2024-25" [ref=f8e194] [cursor=pointer]:
+                - /url: https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-reinvent-game-demo-2024-25.md
+            - listitem [ref=f8e195]:
+              - link "AgentCore Managed Harness" [ref=f8e196] [cursor=pointer]:
+                - /url: https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentcore-harness.md
+            - listitem [ref=f8e197]:
+              - link "SQS+Lambda异步管道：2000并发0%限流的工程细节" [ref=f8e198] [cursor=pointer]:
+                - /url: https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-serverless-async-inference-sqs-lambda.md
+            - listitem [ref=f8e199]:
+              - link "基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）" [ref=f8e200] [cursor=pointer]:
+                - /url: https://github.com/QianJinGuo/wiki-public/blob/main/entities/based-on-prowler-genai-build-fintech-intelligent-compliance-2.md
+            - listitem [ref=f8e201]:
+              - link "在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略" [ref=f8e202] [cursor=pointer]:
+                - /url: https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-claude-prompt-cache-strategy.md
+          - paragraph [ref=f8e203]:
+            - text: →
+            - link "原文存档" [ref=f8e204] [cursor=pointer]:
+              - /url: https://aws.amazon.com/blogs/machine-learning/build/custom/code/based/evaluators/in/amazon/bedrock/agentco.html
+          - list [ref=f8e205]:
+            - listitem [ref=f8e206]:
+              - link "build-custom-code-based-evaluators-in-amazon-bedrock-agentco" [ref=f8e207] [cursor=pointer]:
+                - /url: https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-custom-code-based-evaluators-in-amazon-bedrock-agentco.md
+            - listitem [ref=f8e208]:
+              - link "MOC" [ref=f8e209] [cursor=pointer]:
+                - /url: https://github.com/QianJinGuo/wiki-public/blob/main/moc/aws-cloud-ai-infrastructure.md
+          - separator [ref=f8e210]
+      - button "回到页面顶部"
+    - contentinfo [ref=f8e211]:
+      - link "github.com" [ref=f8e215] [cursor=pointer]:
+        - /url: https://github.com/QianJinGuo/wiki-book
+  - button "银月 · Talk to AI" [ref=f8e218] [cursor=pointer]

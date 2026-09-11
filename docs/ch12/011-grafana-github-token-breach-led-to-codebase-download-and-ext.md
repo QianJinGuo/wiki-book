@@ -1,6 +1,6 @@
 # Grafana GitHub Token Breach Led to Codebase Download and Extortion Attempt
 
-> 📊 Level ⭐⭐ | 7.3KB | `entities/grafana-github-token-breach-led-to-codebase-download-and-extortion-attempt.md`
+> 📊 Level ⭐⭐⭐ | 7.3KB | `entities/grafana-github-token-breach-led-to-codebase-download-and-extortion-attempt.md`
 
 ## 事件概要
 Grafana 于 2026 年 5 月披露，公司遭 unauthorized party 获取了可访问其 GitHub 环境的 token，并下载了代码库。调查显示无客户数据或个人信息的访问痕迹，Grafana 随即启动取证分析、定位泄露源头、作废凭证并强化安全管控。攻击者随后试图勒索 Grafana，要求支付赎金以阻止被盗数据库公开，Grafana 拒绝支付并遵循 FBI 一贯立场——不与勒索者谈判。

@@ -1,6 +1,6 @@
 # MSA 稀疏注意力三国杀：NSA / DSA / MoBA / MSA 四方案深度对比
 
-> 📊 Level ⭐⭐⭐⭐ | 21.1KB | `entities/msa-sparse-attention-three-kingdoms-huashu.md`
+> 📊 Level ⭐⭐⭐ | 21.1KB | `entities/msa-sparse-attention-three-kingdoms-huashu.md`
 
 > 本实体整理自 [原文存档](https://mp.weixin.qq.com/s/4ij1qsval_7k2GwehW1Tzg)，并参考 MiniMax M3 论文 *MiniMax Sparse Attention*（https://github.com/MiniMax-AI/MSA/blob/main/docs/MiniMaxSparseAttention.pdf ）。
 > 这是一份把 2026 年稀疏注意力赛道 4 份方案 (NSA / DSA / MoBA / MSA) 摆到一张桌上的完整对比。

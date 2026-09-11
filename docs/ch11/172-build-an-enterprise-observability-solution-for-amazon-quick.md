@@ -1,6 +1,6 @@
 # Build an enterprise observability solution for Amazon Quick
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 22.0KB | `entities/build-an-enterprise-observability-solution-for-amazon-quick.md`
+> 📊 Level ⭐⭐⭐ | 22.0KB | `entities/build-an-enterprise-observability-solution-for-amazon-quick.md`
 
 > **Summary**: 使用Amazon Bedrock AgentCore构建企业级可观测性解决方案，监控Amazon Quick服务的最佳实践
 

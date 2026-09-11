@@ -1,6 +1,6 @@
 # Agent Harness 解析：智能体架构深度拆解
 
-> 📊 Level ⭐⭐⭐⭐ | 11.7KB | `entities/agent-harness-architecture-deep-dive-aksahy.md`
+> 📊 Level ⭐⭐⭐ | 11.7KB | `entities/agent-harness-architecture-deep-dive-aksahy.md`
 
 ## 核心定义
 **Agent Harness** = 包裹 LLM 的完整软件基础设施：编排循环、工具、记忆、上下文管理、状态持久化、错误处理、安全护栏。

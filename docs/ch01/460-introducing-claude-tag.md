@@ -1,6 +1,6 @@
 # Introducing Claude Tag
 
-> 📊 Level ⭐⭐⭐⭐ | 12.6KB | `entities/introducing-claude-tag.md`
+> 📊 Level ⭐⭐⭐ | 12.6KB | `entities/introducing-claude-tag.md`
 
 > **Background**：Anthropic 官方 2026-06-24 发布的产品公告，介绍 Claude Tag——一种在 Slack 中以团队成员身份工作的 Agent 协作机制。Anthropic 内部 65% 的产品代码由 Claude Tag 创建，展示了 Agent 在企业协作场景中的实际采用程度。
 

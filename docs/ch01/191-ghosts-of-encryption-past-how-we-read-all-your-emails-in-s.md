@@ -1,6 +1,6 @@
 # Ghosts of Encryption Past – How we Read All Your Emails in Salesforce Marketing Cloud › Searchlight Cyber
 
-> 📊 Level ⭐⭐ | 3.6KB | `entities/slcyber-io-research-center-ghosts-of-encryption-past-salesforce-exacttarget.md`
+> 📊 Level ⭐⭐⭐ | 3.6KB | `entities/slcyber-io-research-center-ghosts-of-encryption-past-salesforce-exacttarget.md`
 
 ## 深度分析
 Searchlight Cyber 的这篇研究披露了 Salesforce Marketing Cloud（ExactTarget）在邮件加密实现上的历史遗留漏洞。研究的核心发现是：尽管企业付费使用 Salesforce 的营销云服务发送Transactional 和 Marketing 邮件，但 Salesforce 自身保留了解密这些邮件的能力——这意味着"加密"在服务提供商的架构层面并非真正的端到端加密。

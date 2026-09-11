@@ -1,6 +1,6 @@
 # How an image could compromise your
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 14.1KB | `entities/howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve-2026-310.md`
+> 📊 Level ⭐⭐⭐ | 14.1KB | `entities/howanimagecouldcompromiseyourmacunderstandinganexiftoolvulnerabilitycve-2026-310.md`
 
 ## 核心要点
 

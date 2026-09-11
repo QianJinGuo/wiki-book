@@ -1,6 +1,6 @@
 # Stripe Agent 经济基础设施 5 套图谱：MPP + Link + Projects + Metronome/Tempo + Radar
 
-> 📊 Level ⭐⭐⭐⭐ | 15.5KB | `entities/stripe-agent-economic-infrastructure-5-products.md`
+> 📊 Level ⭐⭐⭐ | 15.5KB | `entities/stripe-agent-economic-infrastructure-5-products.md`
 
 ## Stripe Agent 经济基础设施 5 套图谱
 

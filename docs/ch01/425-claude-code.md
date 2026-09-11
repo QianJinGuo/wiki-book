@@ -1,6 +1,6 @@
 # Claude Code 七层记忆架构
 
-> 📊 Level ⭐⭐⭐⭐ | 17.4KB | `entities/claude-code-7-layer-memory-architecture.md`
+> 📊 Level ⭐⭐⭐ | 17.4KB | `entities/claude-code-7-layer-memory-architecture.md`
 
 ## 文章概要
 troyhua（卡内基梅隆大学博士）对 Claude Code 源码的深度分析，聚焦其 7 层渐进式记忆管理系统。该架构借鉴人脑记忆分层原理，从毫秒级轻量清理到"做梦机制"巩固长期记忆，层层递进，成本递增，能力递增。

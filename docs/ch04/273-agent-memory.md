@@ -1,6 +1,6 @@
 # Agent Memory 架构解析
 
-> 📊 Level ⭐⭐⭐⭐ | 15.3KB | `entities/agent-memory-architecture-ruofei.md`
+> 📊 Level ⭐⭐⭐ | 15.3KB | `entities/agent-memory-architecture-ruofei.md`
 
 ## 核心论点
 Memory 不只是存储，而是 Harness 里的一层控制面——解决"哪些过去可以继续进入未来"这个工程问题。

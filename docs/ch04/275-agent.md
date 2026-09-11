@@ -1,6 +1,6 @@
 # Agent演化：三条路线汇聚框架
 
-> 📊 Level ⭐⭐⭐⭐ | 15.3KB | `entities/acker-agent-evolution-three-routes-convergence.md`
+> 📊 Level ⭐⭐⭐ | 15.3KB | `entities/acker-agent-evolution-three-routes-convergence.md`
 
 ## 核心框架
 

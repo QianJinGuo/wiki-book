@@ -1,6 +1,6 @@
 # Claude Code 安全审查的隐性盲点：Model Anchoring Bias 实证分析
 
-> 📊 Level ⭐⭐⭐⭐ | 10.5KB | `entities/claude-code-security-review-bias-brainoverflow-2026-06.md`
+> 📊 Level ⭐⭐⭐ | 10.5KB | `entities/claude-code-security-review-bias-brainoverflow-2026-06.md`
 
 > 原文存档：[原文存档](https://brainoverflow.blog/posts/claude-code-security-review-bias/)
 

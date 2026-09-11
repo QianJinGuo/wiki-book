@@ -1,6 +1,6 @@
 # Build an AI-powered AWS support companion with Amazon Bedrock AgentCore
 
-> 📊 Level ⭐ | 4.3KB | `entities/build-an-ai-powered-aws-support-companion-with-amazon-bedroc.md`
+> 📊 Level ⭐⭐⭐ | 4.3KB | `entities/build-an-ai-powered-aws-support-companion-with-amazon-bedroc.md`
 
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/build-an-ai-powered-aws-support-companion-with-amazon-bedrock-agentcore)
 

@@ -1,6 +1,6 @@
 # 达尔文.skill 2.0正式开源发布！让你的所有skill左脚踩右脚实现自我进化
 
-> 📊 Level ⭐⭐ | 7.9KB | `entities/darwin-skill-2-huashu.md`
+> 📊 Level ⭐⭐⭐ | 7.9KB | `entities/darwin-skill-2-huashu.md`
 
 > -> [原文存档](https://mp.weixin.qq.com/s/54pkSBImnc9mhEdOPf7EZw)
 

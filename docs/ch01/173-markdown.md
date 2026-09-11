@@ -1,6 +1,6 @@
 # Markdown 不会过时
 
-> 📊 Level ⭐⭐ | 6.0KB | `entities/markdown-ai-era-ifanr-20260513.md`
+> 📊 Level ⭐⭐⭐ | 6.0KB | `entities/markdown-ai-era-ifanr-20260513.md`
 
 ## Thariq 的 HTML 主张 vs Markdown
 Claude Code 工程师 Thariq 提出新观点：不用 Markdown，HTML 才是未来。观点在 X 上获得千万次浏览，Karpathy 转发并评论。

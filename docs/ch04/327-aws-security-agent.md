@@ -1,6 +1,6 @@
 # 使用 AWS Security Agent 构建应用安全闭环：从代码提交到漏洞修复的自动化之路
 
-> 📊 Level ⭐⭐⭐⭐ | 9.0KB | `entities/使用-aws-security-agent-构建应用安全闭环从代码提交到漏洞修复的自动化之路.md`
+> 📊 Level ⭐⭐⭐ | 9.0KB | `entities/使用-aws-security-agent-构建应用安全闭环从代码提交到漏洞修复的自动化之路.md`
 
 ## 概览
 

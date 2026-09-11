@@ -1,0 +1,35 @@
+- generic [active] [ref=f3e1]:
+  - link "Skip to main content" [ref=f3e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f3e804]:
+    - generic [ref=f3e805]:
+      - link [ref=f3e807] [cursor=pointer]:
+        - /url: /
+        - img "Logo" [ref=f3e808]
+      - generic [ref=f3e809]:
+        - button "Search" [ref=f3e810] [cursor=pointer]
+        - generic [ref=f3e814]:
+          - button "Change language" [ref=f3e815] [cursor=pointer]
+          - button "Switch Theme" [ref=f3e820] [cursor=pointer]
+          - link "Sign In" [ref=f3e828] [cursor=pointer]:
+            - /url: /en/signin
+  - main [ref=f3e830]:
+    - navigation "Curated" [ref=f3e831]:
+      - generic [ref=f3e832]:
+        - link "Daily Brief" [ref=f3e833] [cursor=pointer]:
+          - /url: /en/explore/brief
+        - link "Weekly Picks" [ref=f3e834] [cursor=pointer]:
+          - /url: /en/explore/newsletter
+        - link "Topics" [ref=f3e835] [cursor=pointer]:
+          - /url: /en/explore/topics
+  - navigation "Mobile navigation" [ref=f3e844]:
+    - generic [ref=f3e845]:
+      - link "Home" [ref=f3e846] [cursor=pointer]:
+        - /url: /en
+      - link "Discover" [ref=f3e851] [cursor=pointer]:
+        - /url: /en/explore
+      - link "Settings" [ref=f3e856] [cursor=pointer]:
+        - /url: /en/signin
+  - region "Notifications (F8)":
+    - list
+  - alert [ref=f3e362]: Daily Brief - BestBlogs | Today's High-Quality Content Picks

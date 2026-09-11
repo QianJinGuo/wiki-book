@@ -1,6 +1,6 @@
 # Codex /goal：长任务Agent的目标运行时
 
-> 📊 Level ⭐⭐⭐⭐ | 16.1KB | `entities/codex-goal-agent-runtime.md`
+> 📊 Level ⭐⭐⭐ | 16.1KB | `entities/codex-goal-agent-runtime.md`
 
 ## 核心论点
 `/goal` 把一个长期目标放进了 Codex 的**运行时里**：目标有状态，过程有记账，完成要审计，预算到了要收束。

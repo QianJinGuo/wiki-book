@@ -1,6 +1,6 @@
 # Microsoft Agent Framework Tools 总览：4 类工具 + Provider 矩阵 + Tool Approval
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 26.7KB | `entities/microsoft-agent-framework-tools-overview-provider-matrix.md`
+> 📊 Level ⭐⭐⭐ | 26.7KB | `entities/microsoft-agent-framework-tools-overview-provider-matrix.md`
 
 ## Microsoft Agent Framework Tools 总览
 

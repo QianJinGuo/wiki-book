@@ -1,6 +1,6 @@
 # 阿里工程师 Harness 工程化实践 (双案例合并)
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 26.5KB | `entities/harness-engineering-alibaba-java-case-study.md`
+> 📊 Level ⭐⭐⭐ | 26.5KB | `entities/harness-engineering-alibaba-java-case-study.md`
 
 ## 文章概要
 阿里工程师在企业级 Java 应用（10万+行代码）上从零构建 Harness 体系，AI 代码率从 **24.86% 提升至 90.54%**。文章系统梳理三次范式跃迁（Prompt→Context→Harness）、四根支柱、四类失败模式，以及真实项目的完整实践路径。

@@ -12,7 +12,6 @@ Adobe Design 的 Veronica Peitong Chen 在 2026 年 6 月复盘了一个在 Adob
 
 - **作者**: Veronica Peitong Chen (Adobe Design)
 - **来源**: [https://adobe.design/ideas/unexpected-lessons-from-an-ai-assisted-prototyping-experiment](https://adobe.design/ideas/unexpected-lessons-from-an-ai-assisted-prototyping-experiment)
-- **评分**: v=7, c=7, v×c=49, stars=4
 
 ### 出发点：传统设计流程的"翻译损耗"
 

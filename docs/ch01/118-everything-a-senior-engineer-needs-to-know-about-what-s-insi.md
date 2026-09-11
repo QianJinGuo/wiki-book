@@ -1,6 +1,6 @@
 # Everything a Senior Engineer Needs to Know About What's Inside an LLM
 
-> 📊 Level ⭐ | 4.5KB | `entities/senior-engineer-guide-inside-llm.md`
+> 📊 Level ⭐⭐⭐ | 4.5KB | `entities/senior-engineer-guide-inside-llm.md`
 
 > **来源**: [Everything a Senior Engineer Needs to Know About What's Inside an LLM](https://www.pathtostaff.com/p/everything-a-senior-engineer-needs)
 

@@ -1,6 +1,6 @@
 # 深入理解 Claude Code 源码中的 Agent Harness 构建之道
 
-> 📊 Level ⭐ | 5.2KB | `entities/深入理解-claude-code-源码中的-agent-harness-构建之道-v2.md`
+> 📊 Level ⭐⭐⭐ | 5.2KB | `entities/深入理解-claude-code-源码中的-agent-harness-构建之道-v2.md`
 
 > 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.8**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/深入理解-claude-code-源码中的-agent-harness-构建之道-v2.md`，一手来源仍见下方 sources。

@@ -1,6 +1,6 @@
 # 10篇论文看懂AI Agent Skill：表示、执行、评估与进化
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 26.9KB | `entities/skill-formal-theory-survey-10papers.md`
+> 📊 Level ⭐⭐⭐ | 26.9KB | `entities/skill-formal-theory-survey-10papers.md`
 
 [Skill Formal Theory Survey 10Papers](https://mp.weixin.qq.com/s/Z2fFNWXgRHq0VogIRD69Yg])
 

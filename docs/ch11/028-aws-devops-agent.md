@@ -1,6 +1,6 @@
 # 将 AWS DevOps Agent 智能运维能力延伸到中国区
 
-> 📊 Level ⭐⭐ | 7.4KB | `entities/将-aws-devops-agent-智能运维能力延伸到中国区.md`
+> 📊 Level ⭐⭐⭐ | 7.4KB | `entities/将-aws-devops-agent-智能运维能力延伸到中国区.md`
 
 > -> 原文存档
 

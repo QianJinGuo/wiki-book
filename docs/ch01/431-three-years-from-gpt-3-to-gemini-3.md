@@ -1,6 +1,6 @@
 # Three Years from GPT-3 to Gemini 3
 
-> 📊 Level ⭐⭐⭐⭐ | 16.5KB | `entities/three-years-from-gpt-3-to-gemini-3.md`
+> 📊 Level ⭐⭐⭐ | 16.5KB | `entities/three-years-from-gpt-3-to-gemini-3.md`
 
 > Source: One Useful Thing (Ethan Mollick, Substack), 2025-11-18
 > URL: https://www.oneusefulthing.org/p/three-years-from-gpt-3-to-gemini

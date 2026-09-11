@@ -1,6 +1,6 @@
 # 打造可靠的 AI 编程环境：Claude Code Hooks 完整开发者指南
 
-> 📊 Level ⭐ | 4.8KB | `entities/打造可靠的-ai-编程环境claude-code-hooks-完整开发者指南-v2.md`
+> 📊 Level ⭐⭐⭐ | 4.8KB | `entities/打造可靠的-ai-编程环境claude-code-hooks-完整开发者指南-v2.md`
 
 > 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.8**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/打造可靠的-ai-编程环境claude-code-hooks-完整开发者指南-v2.md`，一手来源仍见下方 sources。

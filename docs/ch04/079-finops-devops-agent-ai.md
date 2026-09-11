@@ -1,6 +1,6 @@
 # FinOps + DevOps 双Agent 协作：AI驱动的云成本优化实战
 
-> 📊 Level ⭐⭐ | 5.2KB | `entities/finops-devops-dual-agent-cost-optimization.md`
+> 📊 Level ⭐⭐⭐ | 5.2KB | `entities/finops-devops-dual-agent-cost-optimization.md`
 
 > **Background**：本文基于 AWS China Blog 2026-06-29 发布的实战案例，由亚马逊云科技客户解决方案经理倪晓峻和李刚撰写。案例展示 FinOps Agent（Preview）与 DevOps Agent（GA）通过结构化交接协议实现端到端云成本优化。
 

@@ -1,6 +1,6 @@
 # EC2 NAT 实例选型与部署实践（AWS 中国宁夏区域）
 
-> 📊 Level ⭐⭐⭐⭐ | 9.9KB | `entities/ec2-nat-instance-deploy-practice-aws-china-2026.md`
+> 📊 Level ⭐⭐⭐ | 9.9KB | `entities/ec2-nat-instance-deploy-practice-aws-china-2026.md`
 
 > 原文存档：[原文存档](https://aws.amazon.com/cn/blogs/china/ec2-nat-instance-deploy-practice/)
 

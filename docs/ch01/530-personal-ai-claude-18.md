@@ -1,6 +1,6 @@
 # Personal AI 工作台：Claude 18 动作框架
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 16.4KB | `entities/ruofei-personal-ai-workbench-18-actions.md`
+> 📊 Level ⭐⭐⭐ | 16.4KB | `entities/ruofei-personal-ai-workbench-18-actions.md`
 
 ## 核心立场
 > Claude 用得好不好，越来越像一个**环境工程问题**，而非提示词技巧问题。

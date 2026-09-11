@@ -1,6 +1,6 @@
 # Qwen Code Skill Testing Framework: Recording, Playback, and Assertions
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 13.6KB | `entities/qwen-code-skill-testing-framework-issue-2447.md`
+> 📊 Level ⭐⭐⭐ | 13.6KB | `entities/qwen-code-skill-testing-framework-issue-2447.md`
 
 ## 背景与动机
 qwen-code 代码库管理数百个 Skill，缺少自动化测试机制。PR 提交时无法验证：回归/Token 消耗/对话轮次/ASK User Question 异常。

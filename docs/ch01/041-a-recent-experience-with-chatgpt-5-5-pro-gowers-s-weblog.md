@@ -1,6 +1,6 @@
 # A recent experience with ChatGPT 5.5 Pro | Gowers's Weblog
 
-> 📊 Level ⭐ | 7.7KB | `entities/a-recent-experience-with-chatgpt-55-pro-gowerss-weblog.md`
+> 📊 Level ⭐⭐⭐ | 7.7KB | `entities/a-recent-experience-with-chatgpt-55-pro-gowerss-weblog.md`
 
 > -> [原文存档](https://gowers.wordpress.com/2026/05/08/a-recent-experience-with-chatgpt-5-5-pro/)
 

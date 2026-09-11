@@ -1,6 +1,6 @@
 # Codex Goal Six Hour Run
 
-> 📊 Level ⭐⭐⭐⭐ | 11.1KB | `entities/codex-goal-six-hour-run.md`
+> 📊 Level ⭐⭐⭐ | 11.1KB | `entities/codex-goal-six-hour-run.md`
 
 ## 概述
 

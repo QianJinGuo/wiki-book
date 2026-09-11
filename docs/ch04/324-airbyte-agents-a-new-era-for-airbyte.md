@@ -1,6 +1,6 @@
 # Airbyte Agents: A New Era for Airbyte
 
-> 📊 Level ⭐⭐⭐⭐ | 9.5KB | `entities/airbyte-agents-a-new-era-for-airbyte-airbyte.md`
+> 📊 Level ⭐⭐⭐ | 9.5KB | `entities/airbyte-agents-a-new-era-for-airbyte-airbyte.md`
 
 ## 核心定位
 

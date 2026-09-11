@@ -1,6 +1,6 @@
 # Amazon Bedrock Cross-Region Inference (CRIS): EU Data Residency and GDPR Compliance
 
-> 📊 Level ⭐⭐⭐⭐ | 13.3KB | `entities/amazon-bedrock-cross-region-inference-cris-eu-gdpr.md`
+> 📊 Level ⭐⭐⭐ | 13.3KB | `entities/amazon-bedrock-cross-region-inference-cris-eu-gdpr.md`
 
 > 本文综合提炼自 AWS 关于 Amazon Bedrock 跨区域推理（CRIS）的欧洲合规指南。核心：**Inference Profile** 抽象 region 路由，**Global CRIS** 跨所有商业 region（最高吞吐/折扣价）vs **EU Geo CRIS** 严格约束在 EU region 内（满足 GDPR 数据驻留）。**安全性**：AWS backbone 加密传输、IAM 显式选择 CRIS profile、CloudTrail + Model Invocation Logging 审计。
 

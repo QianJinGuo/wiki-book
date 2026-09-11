@@ -1,6 +1,6 @@
 # 现代浏览器内部机制：Chromium/Blink/V8 架构（Agent Browser Use 向）
 
-> 📊 Level ⭐⭐ | 8.3KB | `entities/browser-internals-chromium-blink-v8-architecture-guide-jiagoux-2026.md`
+> 📊 Level ⭐⭐⭐ | 8.3KB | `entities/browser-internals-chromium-blink-v8-architecture-guide-jiagoux-2026.md`
 
 ## 现代浏览器内部机制：Chromium/Blink/V8 架构
 

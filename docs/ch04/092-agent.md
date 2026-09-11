@@ -1,6 +1,6 @@
 # 小刘商业 Agent 增强层通用基座
 
-> 📊 Level ⭐⭐ | 3.0KB | `entities/ai-xiaolaoliu-business-agent-augmentation-layer-general-base-20260606.md`
+> 📊 Level ⭐⭐⭐ | 3.0KB | `entities/ai-xiaolaoliu-business-agent-augmentation-layer-general-base-20260606.md`
 
 ## Ai Xiaolaoliu Business Agent Augmentation Layer General Base 20260606
 

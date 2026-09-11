@@ -1,6 +1,6 @@
 # DeepSeek 成本迁移：从 KV Cache 到 Harness 的系统层
 
-> 📊 Level ⭐⭐⭐⭐ | 15.7KB | `entities/deepseek-cost-migration-system-layer-kv-cache-harness.md`
+> 📊 Level ⭐⭐⭐ | 15.7KB | `entities/deepseek-cost-migration-system-layer-kv-cache-harness.md`
 
 ## 核心论点
 

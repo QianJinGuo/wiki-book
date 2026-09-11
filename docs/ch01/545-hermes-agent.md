@@ -1,6 +1,6 @@
 # Hermes Agent 闭环学习机制
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 11.4KB | `entities/hermes-agent-closed-learning-loop.md`
+> 📊 Level ⭐⭐⭐ | 11.4KB | `entities/hermes-agent-closed-learning-loop.md`
 
 [Hermes Agent Closed Learning Loop](https://mp.weixin.qq.com/s/4Gfu2WmSKep0uCQXXFuoww)
 

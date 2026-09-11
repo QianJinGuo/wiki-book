@@ -1,13 +1,12 @@
 # What Job Interviews Taught Me About Kubernetes
 
-> 📊 Level ⭐ | 3.4KB | `entities/notnotp-k8s-interviews-non-technical.md`
+> 📊 Level ⭐⭐⭐ | 3.4KB | `entities/notnotp-k8s-interviews-non-technical.md`
 
 > Source: [原文存档](https://notnotp.com/notes/what-job-interviews-taught-me-about-kubernetes/)
 
 ## 核心要点
 
 - **来源**: https://notnotp.com/notes/what-job-interviews-taught-me-about-kubernetes/
-- **评分**: v=7, c=8, v×c=56, stars=4
 - **评估理由**: Well-structured opinion piece drawing on real interview experience to discuss the non-technical (organizational) reasons companies adopt Kubernetes. Offers practical advice on when K8s makes sense (the 'second engineer' threshold is a useful heuristic) and when it doesn't. Honest about limitations a
 
 ## 内容提炼

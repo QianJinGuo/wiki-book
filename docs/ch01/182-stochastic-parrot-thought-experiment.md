@@ -1,6 +1,6 @@
 # Stochastic Parrot Thought Experiment
 
-> 📊 Level ⭐⭐ | 5.0KB | `entities/stochastic-parrot-thought-experiment.md`
+> 📊 Level ⭐⭐⭐ | 5.0KB | `entities/stochastic-parrot-thought-experiment.md`
 
 ## A Thought Experiment
 [](<https://substackcdn.com/image/fetch/$s_!cI5K!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F40faa5d6-9564-44cd-a472-55d7d22c040a_1024x1024.png>)

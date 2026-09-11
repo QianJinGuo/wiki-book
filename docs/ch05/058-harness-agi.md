@@ -1,6 +1,6 @@
 # 王云鹤眼中的Harness：复杂优化问题，AGI灵魂争夺之战
 
-> 📊 Level ⭐⭐⭐⭐ | 14.9KB | `entities/wangyunhe-harness-optimization-agentsoul.md`
+> 📊 Level ⭐⭐⭐ | 14.9KB | `entities/wangyunhe-harness-optimization-agentsoul.md`
 
 ## 核心命题：Agent = Models + Harness
 

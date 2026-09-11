@@ -1,6 +1,6 @@
 # Introducing deepsec: The security harness for finding vulnerabilities in your codebase
 
-> 📊 Level ⭐⭐ | 4.6KB | `entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md`
+> 📊 Level ⭐⭐⭐ | 4.6KB | `entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md`
 
 > -> [Introducing deepsec: The security harness for finding vulnerabilities in your codebase](https://vercel.com/blog/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base)
 

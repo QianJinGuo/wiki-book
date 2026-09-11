@@ -1,6 +1,6 @@
 # Agent Harness Engineering: A Survey — ETCLOVG Taxonomy
 
-> 📊 Level ⭐⭐⭐⭐ | 13.2KB | `entities/agent-harness-engineering-survey-etcvlovg-taxonomy.md`
+> 📊 Level ⭐⭐⭐ | 13.2KB | `entities/agent-harness-engineering-survey-etcvlovg-taxonomy.md`
 
 ## Overview
 Academic survey (2026, preprint) proposing **agent harness engineering as an independent system layer**, not merely a wrapper around a model. Authors from 9 institutions (CMU, Yale, Johns Hopkins, etc.) with Amazon affiliation. ^[agent-harness-engineering-survey-2026.md]

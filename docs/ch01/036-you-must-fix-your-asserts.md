@@ -1,6 +1,6 @@
 # You Must Fix Your Asserts
 
-> 📊 Level ⭐ | 7.9KB | `entities/kristoffit-blog-fix-your-asserts.md`
+> 📊 Level ⭐⭐⭐ | 7.9KB | `entities/kristoffit-blog-fix-your-asserts.md`
 
 ## 摘要
 

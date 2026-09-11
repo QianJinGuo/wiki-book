@@ -1,6 +1,6 @@
 # Jane Street — 形式化方法与编程的未来
 
-> 📊 Level ⭐ | 3.9KB | `entities/jane-street-formal-methods-future-programming.md`
+> 📊 Level ⭐⭐⭐ | 3.9KB | `entities/jane-street-formal-methods-future-programming.md`
 
 > Source: [原文存档](https://blog.janestreet.com/formal-methods-at-jane-street-index/)
 
@@ -8,7 +8,7 @@
 
 Jane Street 工程师在 2026-06 发表的一篇立场文章，**核心论点是 Agent 编码时代改变了形式化方法（formal methods）的成本/收益结构**：随着 LLM 编写代码越来越快、Agent 自动执行 build/test loop，人工写的代码量增加 vs 验证时间预算未变 → 形式化验证从"奢侈品"重新成为"必要安全网"。
 
-## 核心论点（v=7, c=7, v×c=49）
+## 核心论点
 
 **关键 framing**: 文章提出"形式化验证的双重作用"——
 1. **验证 Agent 生成的代码**: 防止 LLM 在无人监督下输出有 bug 的代码

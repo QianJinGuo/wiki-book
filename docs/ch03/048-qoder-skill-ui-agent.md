@@ -1,6 +1,6 @@
 # Qoder Skill UI — Agent 与人类的协作界面层
 
-> 📊 Level ⭐⭐⭐⭐ | 13.1KB | `entities/qoder-skill-ui.md`
+> 📊 Level ⭐⭐⭐ | 13.1KB | `entities/qoder-skill-ui.md`
 
 ## Overview
 Qoder Quest 给 Agent Skill 补上了 GUI 层：Skill 不再只有 SKILL.md 文本指令，还包含**配置面板（输入端）**和**结果 Dashboard（输出端）**，使人机协作形成完整闭环。

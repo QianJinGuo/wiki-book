@@ -4,7 +4,6 @@
 
 ## 核心要点
 - AWS 技术实践，覆盖 2026 年 5 月 5 日至 11 日这一周的重要发布
-- 评分：v=8, c=9, 推荐级别 worth-reading，4 星
 - 重点内容：AgentCore 支付功能预览、MCP 服务器 GA、Agent Toolkit for AWS、EC2 M8idn/R8idn 新实例
 → [原文存档](https://aws.amazon.com/cn/blogs/china/aws-weekly-roundup-amazon-bedrock-agentcore-payments-agent-toolkit-for-aws-and-more-may-11-2026/)
 

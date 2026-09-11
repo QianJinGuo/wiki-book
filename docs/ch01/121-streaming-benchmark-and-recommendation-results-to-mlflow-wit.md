@@ -1,6 +1,6 @@
 # Streaming benchmark and recommendation results to MLflow with Amazon SageMaker AI
 
-> 📊 Level ⭐ | 4.4KB | `entities/streaming-benchmark-and-recommendation-results-to-mlflow-wit.md`
+> 📊 Level ⭐⭐⭐ | 4.4KB | `entities/streaming-benchmark-and-recommendation-results-to-mlflow-wit.md`
 
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/streaming-benchmark-and-recommendation-results-to-mlflow-with-amazon-sagemaker-ai)
 

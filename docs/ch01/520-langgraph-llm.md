@@ -1,6 +1,6 @@
 # LangGraph 底层原理：它是怎么把 LLM 变成一台状态机的
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 20.0KB | `entities/langgraph-state-machine-under-the-hood.md`
+> 📊 Level ⭐⭐⭐ | 20.0KB | `entities/langgraph-state-machine-under-the-hood.md`
 
 [Langgraph State Machine Under The Hood](https://mp.weixin.qq.com/s/J8IgrW3LgRROLUC8Q5gvZg)
 

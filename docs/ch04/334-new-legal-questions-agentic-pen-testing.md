@@ -1,6 +1,6 @@
 # New legal questions: agentic pen testing
 
-> 📊 Level ⭐⭐⭐⭐ | 8.6KB | `entities/agentic-penetration-testing-legal-questions.md`
+> 📊 Level ⭐⭐⭐ | 8.6KB | `entities/agentic-penetration-testing-legal-questions.md`
 
 > **来源**: bcs.org (British Computer Society)
 > **作者**: Richard Hanstock FBCS (Barrister, Deeptech Legal 创始人)

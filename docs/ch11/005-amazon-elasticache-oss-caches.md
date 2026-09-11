@@ -1,6 +1,6 @@
 # 构建 Amazon ElastiCache OSS Caches 慢查询监控方案
 
-> 📊 Level ⭐ | 7.8KB | `entities/构建-amazon-elasticache-oss-caches-慢查询监控方案.md`
+> 📊 Level ⭐⭐⭐ | 7.8KB | `entities/构建-amazon-elasticache-oss-caches-慢查询监控方案.md`
 
 → [原文存档](https://aws.amazon.com/cn/blogs/china/build-amazon-elasticache-oss-caches-query-monitoring-solution)
 

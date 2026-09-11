@@ -1,6 +1,6 @@
 # 快手 RCA Agent：复杂业务场景下排障 Agent 的探索实践
 
-> 📊 Level ⭐ | 5.4KB | `entities/rca-agent-kuaishou-guo-yongliang-qcon-2026.md`
+> 📊 Level ⭐⭐⭐ | 5.4KB | `entities/rca-agent-kuaishou-guo-yongliang-qcon-2026.md`
 
 > 原文归档：[原文归档](https://mp.weixin.qq.com/s/tYGC7iPIEgc4TmRegpOgzw)
 

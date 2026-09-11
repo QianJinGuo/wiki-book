@@ -1,6 +1,6 @@
 # Amazon Bedrock 构建货运物流双语命名实体识别系统
 
-> 📊 Level ⭐⭐⭐⭐ | 7.7KB | `entities/building-bilingual-ner-for-cargo-logistics-with-amazon-bedro.md`
+> 📊 Level ⭐⭐⭐ | 7.7KB | `entities/building-bilingual-ner-for-cargo-logistics-with-amazon-bedro.md`
 
 > 原文存档：[原文存档](https://aws.amazon.com/blogs/machine-learning/building-bilingual-ner-for-cargo-logistics-with-amazon-bedrock)
 

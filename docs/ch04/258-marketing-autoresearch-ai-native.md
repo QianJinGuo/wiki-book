@@ -1,6 +1,6 @@
 # 高德 Marketing AutoResearch：营销增长 AI Native 经营托管框架
 
-> 📊 Level ⭐⭐⭐⭐ | 18.0KB | `entities/gaode-marketing-autoresearch-ai-native-practice.md`
+> 📊 Level ⭐⭐⭐ | 18.0KB | `entities/gaode-marketing-autoresearch-ai-native-practice.md`
 
 > -> [原文存档](https://mp.weixin.qq.com/s/MKfuVIwIsKg9QhRywbbxSw)
 

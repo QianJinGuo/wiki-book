@@ -1,6 +1,6 @@
 # Backpressure is all you need
 
-> 📊 Level ⭐ | 16.0KB | `entities/lucasfcostacom-blog-backpressure-is-all-you-need.md`
+> 📊 Level ⭐⭐⭐ | 16.0KB | `entities/lucasfcostacom-blog-backpressure-is-all-you-need.md`
 
 ## 核心要点
 
@@ -8,7 +8,7 @@ Insightful and practical framework applying systems engineering backpressure to 
 
 ## 深入分析
 
-本篇来自 TLDR AI Newsletter 推荐。技术深度评分：v=8, c=7, stars=4。
+本篇来自 TLDR AI Newsletter 推荐。
 
 **反压机制将人类从「昂贵的人肉检查器」解放为真正的决策者。** 在传统软件开发中，我们早已习惯 CI/CD 中的多层次门禁——lint、测试、类型检查、代码审查——每一层都在阻止不合格的代码继续流动。当 LLM 作为生产者时，生成速度远超人类消费速度，但没有自动化反压，人类便成为唯一的瓶颈，必须逐行审查每一个 token。
 

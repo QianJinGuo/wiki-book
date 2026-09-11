@@ -1,6 +1,6 @@
 # Design Patterns for AI Agents 2026：4 大执行模式 + 5 步选型决策树 + Reflection 完整 Demo
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 17.5KB | `entities/design-patterns-for-ai-agents-2026.md`
+> 📊 Level ⭐⭐⭐ | 17.5KB | `entities/design-patterns-for-ai-agents-2026.md`
 
 → （无原始来源）
 

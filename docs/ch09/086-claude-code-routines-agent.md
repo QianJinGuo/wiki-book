@@ -1,6 +1,6 @@
 # Claude Code Routines：从工具到队友的主动 Agent 模式
 
-> 📊 Level ⭐⭐⭐⭐ | 9.9KB | `entities/claude-code-routines-proactive-agent.md`
+> 📊 Level ⭐⭐⭐ | 9.9KB | `entities/claude-code-routines-proactive-agent.md`
 
 ## 背景案例：Sarah 的文档困境
 Claude Code 团队每周合并 PR 增长 200%，但负责两个产品文档的工程师 Sarah 工作量也跟着涨——每次代码更新，她需要手动对比变更并逐条补文档。Routines 上线后，她搭了两个 routine：

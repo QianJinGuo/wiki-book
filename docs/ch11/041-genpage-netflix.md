@@ -1,6 +1,6 @@
 # GenPage: Netflix 端到端生成式首页构建
 
-> 📊 Level ⭐⭐ | 5.0KB | `entities/genpage-netflix-generative-homepage-construction.md`
+> 📊 Level ⭐⭐⭐ | 5.0KB | `entities/genpage-netflix-generative-homepage-construction.md`
 
 ## 核心洞察
 

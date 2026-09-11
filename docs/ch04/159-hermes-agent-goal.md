@@ -5,7 +5,7 @@
 ## 元信息
 - **作者**：AI 小老六（微信公众号）
 - **日期**：2026-05-19
-- **评分**：v×c = 9×9 = 81（strong，4星）
+
 - **参考**：Hermes Agent v0.13.0 Release Notes、Claude Code /goal、Codex /goal
 
 ## 核心洞察

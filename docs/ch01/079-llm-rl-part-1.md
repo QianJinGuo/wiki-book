@@ -1,6 +1,6 @@
 # LLM RL中的熵 part 1: 熵的调控
 
-> 📊 Level ⭐ | 5.6KB | `entities/llm-rl中的熵-part-1-熵的调控.md`
+> 📊 Level ⭐⭐⭐ | 5.6KB | `entities/llm-rl中的熵-part-1-熵的调控.md`
 
 > -> [原文存档](https://mp.weixin.qq.com/s/r5HroqOAfiqH7_LNOGgGeg)
 

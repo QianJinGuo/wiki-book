@@ -1,6 +1,6 @@
 # Openclaw Multi Agent Team Practice V2
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 26.8KB | `entities/openclaw-multi-agent-team-practice-v2.md`
+> 📊 Level ⭐⭐⭐ | 26.8KB | `entities/openclaw-multi-agent-team-practice-v2.md`
 
 ## 核心观点
 

@@ -1,6 +1,6 @@
 # Agent 长程任务断点续传：框架层 Checkpoint + 上层调度跨进程恢复
 
-> 📊 Level ⭐ | 5.3KB | `entities/agent-long-task-intentional-resume-taobao-live-2026-09.md`
+> 📊 Level ⭐⭐⭐ | 5.3KB | `entities/agent-long-task-intentional-resume-taobao-live-2026-09.md`
 
 淘天集团-直播技术团队（绍清）基于 Spring AI Alibaba（SAA 1.1.2.0）的长程任务断点续传完整实践。方案采用"框架层 Checkpoint + 上层任务调度"两层架构，**不改框架源码**（公共依赖，改源码=维护私有 fork 升级成本极高），通过扩展 InterruptableAction + Hook 注入自定义逻辑实现进程内状态保存恢复，上层调度通过 MQ 摘流 + 任务表协调跨进程恢复。
 

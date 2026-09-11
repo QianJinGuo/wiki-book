@@ -1,6 +1,6 @@
 # 细思极恐！Agent暗藏风险，清华团队打出组合拳，全链路一网打尽
 
-> 📊 Level ⭐⭐ | 6.0KB | `entities/tsinghua-agent-security-fangcun.md`
+> 📊 Level ⭐⭐⭐ | 6.0KB | `entities/tsinghua-agent-security-fangcun.md`
 
 > **URL**: https://mp.weixin.qq.com/s/BKZLh5x1QyLsQISedMBr1Q
 > **SHA256**: ec62655e1642b8058f8882e5e92f2062d4c5fb2ef1ac38f9820ed1d40d8eba2e

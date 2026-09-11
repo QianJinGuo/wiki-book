@@ -1,6 +1,6 @@
 # Loss Function Development (LFD) — 损失函数开发与 /goal 循环（Elvis Sun）
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 31.3KB | `entities/loss-function-development-elvis-sun-goal-loop-2026.md`
+> 📊 Level ⭐⭐⭐ | 31.3KB | `entities/loss-function-development-elvis-sun-goal-loop-2026.md`
 
 ## 概述
 

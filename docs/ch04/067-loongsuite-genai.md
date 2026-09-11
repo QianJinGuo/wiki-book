@@ -1,6 +1,6 @@
 # LoongSuite GenAI 可观测语义规范
 
-> 📊 Level ⭐⭐ | 6.6KB | `entities/loongsuite-genai-semconv.md`
+> 📊 Level ⭐⭐⭐ | 6.6KB | `entities/loongsuite-genai-semconv.md`
 
 ## 核心贡献
 ### Entry/Step Span 架构

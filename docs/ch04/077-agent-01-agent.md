@@ -1,6 +1,6 @@
 # 《从零实现 Agent 系统》连载 01｜Agent 系统是什么：问题空间与架构切片
 
-> 📊 Level ⭐⭐ | 5.8KB | `entities/agent-system-zero-to-one-01-architecture-slices-2026.md`
+> 📊 Level ⭐⭐⭐ | 5.8KB | `entities/agent-system-zero-to-one-01-architecture-slices-2026.md`
 
 ## 先分清一件事：你在接模型，还是在做一套能跑的「系统」
 接一次大模型，本质是换一段上下文、拿回一段文字。它不管上一秒会话里承诺过什么，也不管这次要不要写库、能不能调外部接口、出了问题谁来背锅。业务一旦变成多步、带副作用、多人多租户、还要事后追责，你就得按**长期在线的程序**来设计——靠在同一 HTTP 里多打几次推理，补不齐这些窟窿。

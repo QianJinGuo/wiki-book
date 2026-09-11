@@ -1,6 +1,6 @@
 # Enterprise Software Moats in the Agent Era — 系统性护城河分析框架
 
-> 📊 Level ⭐⭐⭐⭐ | 11.5KB | `entities/enterprise-software-moats-agent-era.md`
+> 📊 Level ⭐⭐⭐ | 11.5KB | `entities/enterprise-software-moats-agent-era.md`
 
 ## 核心问题
 当软件去掉界面，剩下的是什么？和 PostgreSQL + API 本质区别是什么？SaaS 时代让软件"难以被替换"的东西，在 Agent 时代还成立吗？

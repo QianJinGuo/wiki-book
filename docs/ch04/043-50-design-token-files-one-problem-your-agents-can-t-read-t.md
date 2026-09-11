@@ -1,6 +1,6 @@
 # 50 design token files, one problem: your agents can't read the meaning
 
-> 📊 Level ⭐ | 3.2KB | `entities/design-token-agent-readability-50-systems.md`
+> 📊 Level ⭐⭐⭐ | 3.2KB | `entities/design-token-agent-readability-50-systems.md`
 
 > **Background**: Based on learn.thedesignsystem.guide analysis of 50 real design system token files, exploring how AI Agents consume structured design data.
 

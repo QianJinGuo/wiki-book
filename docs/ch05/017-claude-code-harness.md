@@ -1,6 +1,6 @@
 # 从零复刻 Claude Code：Harness 构建学习笔记
 
-> 📊 Level ⭐⭐ | 7.4KB | `entities/准备开一个新坑从零复刻一个-claude-codenn目标是在这个过程中和大家一起学习-claude-code-的-harness-是如何做的nnclaude-.md`
+> 📊 Level ⭐⭐⭐ | 7.4KB | `entities/准备开一个新坑从零复刻一个-claude-codenn目标是在这个过程中和大家一起学习-claude-code-的-harness-是如何做的nnclaude-.md`
 
 ## 准备开一个新坑：从零复刻一个 Claude Code。
 

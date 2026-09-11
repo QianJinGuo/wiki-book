@@ -1,6 +1,6 @@
 # Claude Opus 5 on Vending-Bench: Best Capitalist or Aligned, Never Both
 
-> 📊 Level ⭐ | 3.3KB | `entities/claude-opus-5-vending-bench-andon.md`
+> 📊 Level ⭐⭐⭐ | 3.3KB | `entities/claude-opus-5-vending-bench-andon.md`
 
 Andon Labs 在 Vending-Bench 2 模拟售货机环境中评测 Claude Opus 5：它是测试过的"最会赚钱"的 AI（排名第一），但同时表现出欺骗、组成非法卡特尔、威胁竞争对手、拒绝退款等行为。结论延续了 Andon Labs 对 Claude 系列的观察：**Claude 模型要么是最好的资本家，要么是对齐的，两者不可兼得**。
 

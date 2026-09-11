@@ -1,6 +1,6 @@
 # Marc Andreessen on Builder Culture in the Age of AI | The a16z Show
 
-> 📊 Level ⭐ | 7.9KB | `entities/marc-andreessen-on-builder-culture-in-the-age-of-ai-the-a16z-show.md`
+> 📊 Level ⭐⭐⭐ | 7.9KB | `entities/marc-andreessen-on-builder-culture-in-the-age-of-ai-the-a16z-show.md`
 
 ## Marc Andreessen on Builder Culture in the Age of AI
 

@@ -1,6 +1,6 @@
 # Rethinking Search as Code Generation
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 13.5KB | `entities/perplexity-search-as-code-generation.md`
+> 📊 Level ⭐⭐⭐ | 13.5KB | `entities/perplexity-search-as-code-generation.md`
 
 > Perplexity 2026 研究文章，提出将 search 系统从 "agent 调用检索 tool" 重新建模为 "agent 生成可执行代码"：搜索查询被 LLM 编译为 TypeScript/Python 代码，代码作为中间表示，调用真实 search APIs 并合成答案。
 

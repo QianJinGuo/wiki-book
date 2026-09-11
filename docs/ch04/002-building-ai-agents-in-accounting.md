@@ -1,6 +1,6 @@
 # Building AI Agents in Accounting
 
-> 📊 Level ⭐ | 9.2KB | `entities/building-ai-agents-in-accounting.md`
+> 📊 Level ⭐⭐⭐ | 9.2KB | `entities/building-ai-agents-in-accounting.md`
 
 ## 核心要点
 - Skill 与 Config 分离：Skill 是可复用的工作流定义，Config 是业务参数配置，两者分离使系统易于维护和跨场景复用 

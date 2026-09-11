@@ -1,12 +1,10 @@
 # LLMReaper - DOM Based AI Conversation Exfiltration via Browser Extensions
 
-> 📊 Level ⭐⭐⭐⭐ | 18.7KB | `entities/llmreaper-dom-based-ai-conversation-exfiltration-via-browser.md`
+> 📊 Level ⭐⭐⭐ | 18.7KB | `entities/llmreaper-dom-based-ai-conversation-exfiltration-via-browser.md`
 
 > **来源**: [原文链接](https://thewhiteh4t.github.io/blog/ai-chat-llmreaper/)
 
 ## 核心发现
-
- Published Time: 2026-05-27T00:00:00.000Z Markdown Content: Every time someone pastes their code or config files into LLMs to debug something, or to review code, they assume the conversation stays between them and the AI. But it doesn't. Any extension installed in your browser can read that conversation. All of it and In real time without you knowing. *   In December 2024 , a supply chain attack on the [Cyberhaven Chrome extension](https://www.darktrace.com/blog/cyberhaven-supply-chain-attack-ex...) by a threat actor who injected a malicious update that was distributed to all users.*   In February 2025, [GitLab's threat intelligence](https://gitlab-com.gitlab.io/gl-security/security-tech-notes/threat-intelligence-tech-notes/malicious-browser-extensions-feb-2025/) team identified 16 malicious Chrome extensions impacting at least 3.2 million users*   In April 2026, a coordinated campaign of over 100 malicious Chrome extensions was [found stealing Google OAuth2](https://www.rescana.com/post/over-100-malicious-chrome-extensions-in-chrome-web-store-steal-google-and-telegram-data-create-pers) Bearer tokens and Telegram sessions
 
 ## 技术分析
 

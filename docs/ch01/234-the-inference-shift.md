@@ -5,7 +5,6 @@
 > -> [原文存档](https://stratechery.com/2026/the-inference-shift/)
 
 ## Summary
-> Score: 8×7=56
 
 ## 相关实体
 > [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/queries/ai-model-research-latest-directions.md)

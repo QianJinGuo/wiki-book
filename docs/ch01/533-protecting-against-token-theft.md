@@ -1,6 +1,6 @@
 # Protecting against token theft
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 13.9KB | `entities/vercel-com-blog-protecting-against-token-theft.md`
+> 📊 Level ⭐⭐⭐ | 13.9KB | `entities/vercel-com-blog-protecting-against-token-theft.md`
 
 → [原文存档](https://vercel.com/blog/protecting-against-token-theft)
 

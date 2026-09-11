@@ -1,9 +1,8 @@
 # 腾讯研究院 2026 Q2 Agent 产业回顾——Agent 跌跌撞撞进入世界
 
-> 📊 Level ⭐ | 5.6KB | `entities/tencent-research-agent-q2-2026-industry-review.md`
+> 📊 Level ⭐⭐⭐ | 5.6KB | `entities/tencent-research-agent-q2-2026-industry-review.md`
 
 > **来源**：腾讯研究院/腾讯科技，作者博阳，2026-07-22
-> **评分**：v=8, c=8, v×c=64
 > **概述**：从技术、经济、组织三维度回顾 2026 Q2 Agent 产业发展，覆盖入口争夺、垂直行业入侵、Tokenmaxxing 失败、多 Agent 合作瓶颈、自进化 AI 和 CPU 重归算力中心等八大趋势。
 
 ## 一、Agent 成为通用入口

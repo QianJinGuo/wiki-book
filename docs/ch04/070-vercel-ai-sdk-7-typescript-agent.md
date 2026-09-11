@@ -1,6 +1,6 @@
 # Vercel AI SDK 7 — TypeScript Agent 开发框架全面升级
 
-> 📊 Level ⭐⭐ | 6.5KB | `entities/vercel-ai-sdk-7-typescript-agent-framework.md`
+> 📊 Level ⭐⭐⭐ | 6.5KB | `entities/vercel-ai-sdk-7-typescript-agent-framework.md`
 
 > **Background**：Vercel AI SDK 是 TypeScript 生态中最流行的 AI 应用开发 SDK（周下载量 1600 万+），AI SDK 7 是其重大版本更新，聚焦 Agent 开发的生产化能力。
 

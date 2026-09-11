@@ -1,6 +1,6 @@
 # Regression Tax: 技能包导致 Agent 性能退化的系统性分析
 
-> 📊 Level ⭐ | 4.5KB | `entities/regression-tax-skills-hurt-llm-agents.md`
+> 📊 Level ⭐⭐⭐ | 4.5KB | `entities/regression-tax-skills-hurt-llm-agents.md`
 
 ## 核心概念
 

@@ -1,6 +1,6 @@
 # From "System of Record" to "System of Intelligence
 
-> 📊 Level ⭐⭐⭐⭐ | 16.5KB | `entities/from-system-of-record-to-system-of-intelligence.md`
+> 📊 Level ⭐⭐⭐ | 16.5KB | `entities/from-system-of-record-to-system-of-intelligence.md`
 
 ## 核心要点
 - CRM（系统 of Record）不会消失，但正在降级为"数据底层"，价值正在向之上的 System of Intelligence 层迁移

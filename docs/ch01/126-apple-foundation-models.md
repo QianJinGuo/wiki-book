@@ -1,13 +1,12 @@
 # Apple Foundation Models
 
-> 📊 Level ⭐ | 3.7KB | `entities/anthropic-apple-foundation-models-claude.md`
+> 📊 Level ⭐⭐⭐ | 3.7KB | `entities/anthropic-apple-foundation-models-claude.md`
 
 > Source: [原文存档](https://platform.claude.com/docs/en/cli-sdks-libraries/libraries/apple-foundation-models)
 
 ## 核心要点
 
 - **来源**: https://platform.claude.com/docs/en/cli-sdks-libraries/libraries/apple-foundation-models
-- **评分**: v=7, c=7, v×c=49, stars=4
 - **评估理由**: Solid technical documentation for integrating Claude with Apple's Foundation Models framework via a Swift package. Well-structured with clear sections on installation, quick start, model selection, effort levels, and authentication (dev vs production). Authoritative source from Anthropic. Notable do
 
 ## 内容提炼

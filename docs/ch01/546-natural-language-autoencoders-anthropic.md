@@ -1,6 +1,6 @@
 # Natural Language Autoencoders — Anthropic 激活→文字可解释性方法
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 11.1KB | `entities/natural-language-autoencoders.md`
+> 📊 Level ⭐⭐⭐ | 11.1KB | `entities/natural-language-autoencoders.md`
 
 > -> [原文存档](https://mp.weixin.qq.com/s/dREO2K8A8u2Pu28Th3iEqw)
 

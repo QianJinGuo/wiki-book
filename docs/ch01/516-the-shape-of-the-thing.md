@@ -1,6 +1,6 @@
 # The Shape of the Thing
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 22.7KB | `entities/the-shape-of-the-thing.md`
+> 📊 Level ⭐⭐⭐ | 22.7KB | `entities/the-shape-of-the-thing.md`
 
 → [原文存档](https://www.oneusefulthing.org/p/the-shape-of-the-thing)
 

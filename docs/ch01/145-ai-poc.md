@@ -1,6 +1,6 @@
 # 很多企业做完 AI PoC，为什么还是上不了生产
 
-> 📊 Level ⭐⭐ | 7.5KB | `entities/ai-poc-why-fail-to-production.md`
+> 📊 Level ⭐⭐⭐ | 7.5KB | `entities/ai-poc-why-fail-to-production.md`
 
 > -> [原文存档](https://mp.weixin.qq.com/s/w9SWYuM7d_rI1GBYdXJyeA)
 
@@ -21,7 +21,6 @@ AI 项目最常见的误判，是把 Demo 跑通，当成落地已经开始。
 ## 关键要点
 - 技术领域：AI / WeChat
 - 来源：微信公众号
-- 评分：value=7, confidence=7, product=49
 
 ## 链接
 - [原文存档](https://mp.weixin.qq.com/s/w9SWYuM7d_rI1GBYdXJyeA)

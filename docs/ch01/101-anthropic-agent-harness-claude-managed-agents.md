@@ -1,6 +1,6 @@
 # Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南
 
-> 📊 Level ⭐ | 5.0KB | `entities/anthropic-官方-agent-harness-平台claude-managed-agents-完整指南.md`
+> 📊 Level ⭐⭐⭐ | 5.0KB | `entities/anthropic-官方-agent-harness-平台claude-managed-agents-完整指南.md`
 
 > 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.8**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/anthropic-官方-agent-harness-平台claude-managed-agents-完整指南.md`，一手来源仍见下方 sources。

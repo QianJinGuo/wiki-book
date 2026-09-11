@@ -1,6 +1,6 @@
 # Codex 5.21 更新：AI 编程助手开始变成电脑工作代理
 
-> 📊 Level ⭐⭐⭐⭐ | 8.4KB | `entities/openai-codex-521-update-appshots-goal-computer-use.md`
+> 📊 Level ⭐⭐⭐ | 8.4KB | `entities/openai-codex-521-update-appshots-goal-computer-use.md`
 
 → [原文存档](https://mp.weixin.qq.com/s/7zVSmiL8gmLfhbKVRhe5iQ)
 

@@ -1,6 +1,6 @@
 # Tracking TamperedChef Clusters via Certificate and Code Reuse
 
-> 📊 Level ⭐⭐⭐⭐ | 11.0KB | `entities/trackingtamperedchefclustersviacertificateandcodereuse.md`
+> 📊 Level ⭐⭐⭐ | 11.0KB | `entities/trackingtamperedchefclustersviacertificateandcodereuse.md`
 
 ## 核心要点
 

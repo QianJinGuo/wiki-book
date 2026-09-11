@@ -1,6 +1,6 @@
 # Agent Harness 实现对比 A3：SubAgent（7 框架 Prompt 双语对照）
 
-> 📊 Level ⭐⭐⭐⭐ | 10.0KB | `entities/agent-harness-comparison-a3-subagent-2026-06-10.md`
+> 📊 Level ⭐⭐⭐ | 10.0KB | `entities/agent-harness-comparison-a3-subagent-2026-06-10.md`
 
 ## 摘要
 

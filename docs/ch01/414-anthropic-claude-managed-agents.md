@@ -1,6 +1,6 @@
 # Anthropic Claude Managed Agents 平台正式发布
 
-> 📊 Level ⭐⭐⭐⭐ | 23.2KB | `entities/anthropic-claude-managed-agents-platform-2026.md`
+> 📊 Level ⭐⭐⭐ | 23.2KB | `entities/anthropic-claude-managed-agents-platform-2026.md`
 
 ## 概述
 本文介绍 Anthropic 正式开放 Claude Managed Agents 平台，系统性拆解其四大新功能模块：Managed Agents（四核心抽象）、Multiagent Sessions（多 Agent 协作）、Outcomes Loop（结果驱动自我评估）、Webhooks（异步通知）、Dreams（记忆整理）。Anthropic 的战略意图是将 Claude 从"调用模型"转变为"能代你把事情做完的系统"。

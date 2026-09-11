@@ -1,6 +1,6 @@
 # 全网最全的Claude Fable 5 省钱攻略都在这了
 
-> 📊 Level ⭐⭐ | 9.5KB | `entities/全网最全的claude-fable-5-省钱攻略都在这了.md`
+> 📊 Level ⭐⭐⭐ | 9.5KB | `entities/全网最全的claude-fable-5-省钱攻略都在这了.md`
 
 → [原文存档](https://mp.weixin.qq.com/s/YirJ8-6_TZuFe9cLepFNSg)
 

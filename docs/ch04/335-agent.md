@@ -1,6 +1,6 @@
 # 做Agent评测的几个反直觉感悟
 
-> 📊 Level ⭐⭐⭐⭐ | 8.5KB | `entities/langfuse-agent-eval-tracing-cost-structure.md`
+> 📊 Level ⭐⭐⭐ | 8.5KB | `entities/langfuse-agent-eval-tracing-cost-structure.md`
 
 ## 摘要
 

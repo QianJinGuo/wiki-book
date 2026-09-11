@@ -1,6 +1,6 @@
 # Superpowers 深度解读（2）：Rule/Gate/Hook 与 Iron Law 方法论
 
-> 📊 Level ⭐⭐ | 6.8KB | `entities/superpowers-deep-dive-kaiyuandakashuo.md`
+> 📊 Level ⭐⭐⭐ | 6.8KB | `entities/superpowers-deep-dive-kaiyuandakashuo.md`
 
 > 原文归档：[原文归档](https://mp.weixin.qq.com/s/tUstpkIRaD71YYfanBSANA)
 

@@ -1,6 +1,6 @@
 # OpenAI Symphony：Linear 即 Codex Agent 控制平面
 
-> 📊 Level ⭐⭐⭐⭐ | 18.0KB | `entities/openai-symphony-codex-orchestration-linear-control-plane.md`
+> 📊 Level ⭐⭐⭐ | 18.0KB | `entities/openai-symphony-codex-orchestration-linear-control-plane.md`
 
 ## 核心论点
 

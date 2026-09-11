@@ -1,6 +1,6 @@
 # Pi：轻量级开源 Agent 底座
 
-> 📊 Level ⭐⭐⭐⭐ | 8.5KB | `entities/pi-agent-lightweight-base-rekota.md`
+> 📊 Level ⭐⭐⭐ | 8.5KB | `entities/pi-agent-lightweight-base-rekota.md`
 
 ## 摘要
 

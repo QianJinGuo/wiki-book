@@ -1,6 +1,6 @@
 # Bleeding Llama：Ollama 未授权内存泄漏漏洞
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 20.5KB | `entities/bleeding-llama-critical-unauthenticated-memory-leak-in-ollama.md`
+> 📊 Level ⭐⭐⭐ | 20.5KB | `entities/bleeding-llama-critical-unauthenticated-memory-leak-in-ollama.md`
 
 > -> [原文存档](https://www.cyera.com/research/bleeding-llama-critical-unauthenticated-memory-leak-in-ollama)
 
@@ -15,7 +15,6 @@ The leaked memory contains u...
 ## 关键要点
 - 技术领域：AI / Newsletter
 - 来源：Newsletter
-- 评分：value=9, confidence=9, product=81
 - CVE： CVE-2026-7482
 - CVSS： 9.1 (Critical)
 - 影响范围： 全球约 300,000 台暴露在互联网上的 Ollama 服务器

@@ -1,6 +1,6 @@
 # Claude Code Skills 实战指南 — 发现机制、编写与安全
 
-> 📊 Level ⭐⭐⭐⭐ | 10.5KB | `entities/claude-code-skills-practical-guide-discovery-frontmatter.md`
+> 📊 Level ⭐⭐⭐ | 10.5KB | `entities/claude-code-skills-practical-guide-discovery-frontmatter.md`
 
 > 小 G (JavaGuide) 对 Claude Code Skills 的深度技术解析。与 [Claude Code Skills/MCP/Rules 源码分析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-skills-mcp-rules-source-analysis.md) 互补——该实体聚焦源码层实现，本实体聚焦用户层的发现机制、SKILL.md 编写、执行流程与安全限制。
 

@@ -1,6 +1,6 @@
 # Build agents, not pipelines
 
-> 📊 Level ⭐ | 4.1KB | `entities/seangoedeckecom-build-agents-not-pipelines.md`
+> 📊 Level ⭐⭐⭐ | 4.1KB | `entities/seangoedeckecom-build-agents-not-pipelines.md`
 
 ## 核心要点
 
@@ -10,7 +10,7 @@
 
 > 来源：[原文存档](https://www.seangoedecke.com/build-agents-not-pipelines/)
 
-本篇来自 TLDR AI Newsletter 推荐。技术深度评分：v=7, c=7, stars=4。
+本篇来自 TLDR AI Newsletter 推荐。
 
 ### Pipeline与Agent的本质区别
 

@@ -1,9 +1,9 @@
 # 五款浏览器自动化工具横向对比：browser-use / Playwright / chrome-devtools-mcp / agent-browser / BrowserAct
 
-> 📊 Level ⭐⭐⭐⭐ | 11.6KB | `entities/four-browser-automation-tools-comparison.md`
+> 📊 Level ⭐⭐⭐ | 11.6KB | `entities/four-browser-automation-tools-comparison.md`
 
 > 来源：[行小招 - 科技充电站](https://mp.weixin.qq.com/s/2aqrTvswa6FtqI-GK-EmvQ)，2026-05-19
-> 评分：v=6, c=7, v×c=42 → 作为 [OpenCLI](https://github.com/QianJinGuo/wiki-public/blob/main/entities/opencli.md) entity 的补充
+> 作为 [OpenCLI](https://github.com/QianJinGuo/wiki-public/blob/main/entities/opencli.md) entity 的补充
 | 维度 | chrome-devtools-mcp | Playwright | agent-browser | browser-use | BrowserAct |
 |------|--------------------|-----------|---------------|-------------|------------|
 | 语言/运行时 | Node.js | Node.js，多语言绑定 | Rust，原生二进制 | Python | Node.js + Rust 内核 |
@@ -82,7 +82,6 @@ CDP 级别控制适合网络抓包、性能分析、JS 调试等专项任务，�
 ## 第五款候选：BrowserAct（待第三方验证）
 
 **来源**：[原文存档（reject-as-supplementary）](https://mp.weixin.qq.com/s/2CJS3LNKLAR1rQE4zxoFcg)
-**评分**：v=5, c=5, v×c=25（reject-as-supplementary，不创建独立 entity）
 
 **作者**：丛林（极客之家），2026-06-18，**wiki 无历史**
 

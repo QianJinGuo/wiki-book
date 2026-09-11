@@ -1,6 +1,6 @@
 # Ethan Mollick: Claude Code and What Comes Next (Practitioner View)
 
-> 📊 Level ⭐⭐⭐⭐ | 17.3KB | `entities/oneusefulthing-claude-code-what-comes-next.md`
+> 📊 Level ⭐⭐⭐ | 17.3KB | `entities/oneusefulthing-claude-code-what-comes-next.md`
 
 > **Core insight**: Ethan Mollick（One Useful Thing）2026-01 对 Claude Code 的端到端实测：单条 prompt "Develop a startup that makes $1000/month" 触发 **1 小时 14 分钟自主工作**，创建数百文件 + 部署真实可售卖网站。背后是 **compaction / Skills / subagents / MCP 四个 magic trick** 的组合。
 

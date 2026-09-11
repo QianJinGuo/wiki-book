@@ -5,7 +5,6 @@
 > → [原文存档](https://www.alphaxiv.org/blog/reinforcement-learning-for-rlms)
 
 ## Summary
-7×8=56 - Article ingested from newsletter candidate pipeline.
 
 ## Notes
 → [原文存档](https://www.alphaxiv.org/blog/reinforcement-learning-for-rlms)

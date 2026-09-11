@@ -1,6 +1,6 @@
 # Skill自进化三路线：Trace2Skill归纳法 / EvoSkill验证闭环 / SkillOpt训练范式
 
-> 📊 Level ⭐⭐⭐⭐ | 12.7KB | `entities/skill-self-evolution-three-approaches.md`
+> 📊 Level ⭐⭐⭐ | 12.7KB | `entities/skill-self-evolution-three-approaches.md`
 
 ## 摘要
 

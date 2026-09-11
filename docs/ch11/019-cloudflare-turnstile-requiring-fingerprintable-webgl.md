@@ -1,6 +1,6 @@
 # Cloudflare Turnstile requiring fingerprintable WebGL
 
-> 📊 Level ⭐ | 3.5KB | `entities/hacktivisme-articles-cloudflare-turnstile-webgl-fingerprinting.md`
+> 📊 Level ⭐⭐⭐ | 3.5KB | `entities/hacktivisme-articles-cloudflare-turnstile-webgl-fingerprinting.md`
 
 ## 核心要点
 
@@ -10,7 +10,7 @@ Niche but well-documented analysis of Cloudflare Turnstile WebGL fingerprinting 
 
 > 来源：[原文存档](https://hacktivis.me/articles/cloudflare-turnstile-webgl-fingerprinting)
 
-本篇来自 TLDR AI Newsletter 推荐。技术深度评分：v=7, c=8, stars=4。
+本篇来自 TLDR AI Newsletter 推荐。
 
 Cloudflare Turnstile 是 Cloudflare 提供的"验证您是人类"人机验证系统，自约一周前开始，在基于 WebKitGTK 的浏览器（如 BadWolf）中出现无限循环，导致无法访问众多网站。问题的根源在于 Cloudflare 通过 WebGL 获取设备指纹，而这种指纹采集的唯一目的就是追踪用户行为 ^。
 

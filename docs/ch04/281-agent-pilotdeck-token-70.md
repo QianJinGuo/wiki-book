@@ -1,6 +1,6 @@
 # 小龙虾彻底凉了？清华团队连夜开源Agent神器PilotDeck，Token成本狂降70%！
 
-> 📊 Level ⭐⭐⭐⭐ | 14.3KB | `entities/pilotdeck-agent-os-openbmb-tsinghua.md`
+> 📊 Level ⭐⭐⭐ | 14.3KB | `entities/pilotdeck-agent-os-openbmb-tsinghua.md`
 
 > -> [第 1 原文存档 (新智元 ASI启示录)](https://mp.weixin.qq.com/s/TdfsW6iCBmy3esAQ78LkyQ)
 > -> [第 2 原文存档 (数据派THU 转发新智元)](https://mp.weixin.qq.com/s/MWj2lKQi8JdPu4qJDEFOYg)

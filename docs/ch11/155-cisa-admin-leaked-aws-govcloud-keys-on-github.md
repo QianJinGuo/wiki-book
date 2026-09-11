@@ -1,6 +1,6 @@
 # CISA Admin Leaked AWS GovCloud Keys on Github
 
-> 📊 Level ⭐⭐⭐⭐ | 8.8KB | `entities/cisa-admin-leaked-aws-govcloud-keys-on-github.md`
+> 📊 Level ⭐⭐⭐ | 8.8KB | `entities/cisa-admin-leaked-aws-govcloud-keys-on-github.md`
 
 ## 事件概述
 

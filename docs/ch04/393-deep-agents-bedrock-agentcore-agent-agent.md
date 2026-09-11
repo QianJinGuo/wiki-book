@@ -1,6 +1,6 @@
 # Deep Agents + Bedrock AgentCore：多 Agent 编排 + 隔离基础设施的端到端研究 Agent 实战
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 10.9KB | `entities/deep-agents-bedrock-agentcore-subagent-orchestration-aws.md`
+> 📊 Level ⭐⭐⭐ | 10.9KB | `entities/deep-agents-bedrock-agentcore-subagent-orchestration-aws.md`
 
 > **Background**: 本文合成自 AWS ML Blog 2026-06-15 文章，作者 Sundar Raghavan（Sr Solutions Architect, Agentic AI Foundations）和 Saurav Das（AgentCore PM）。聚焦 LangChain Deep Agents 框架 + Amazon Bedrock AgentCore 基础设施的端到端集成，是"框架级 + 基础设施级"双层编排的最新官方参考实现。
 

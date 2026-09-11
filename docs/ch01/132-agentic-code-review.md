@@ -1,13 +1,12 @@
 # Agentic Code Review
 
-> 📊 Level ⭐ | 3.3KB | `entities/agentic-code-review-addyosmani.md`
+> 📊 Level ⭐⭐⭐ | 3.3KB | `entities/agentic-code-review-addyosmani.md`
 
 > Source: [原文存档](https://addyosmani.com/blog/agentic-code-review/)
 
 ## 核心要点
 
 - **来源**: https://addyosmani.com/blog/agentic-code-review/
-- **评分**: v=7, c=7, v×c=49, stars=4
 - **评估理由**: Strong thesis on AI-driven code review becoming the highest-leverage engineering activity, supported by specific metrics from Faros AI (22k devs, 861% churn up), CodeRabbit (1.7x more issues in AI PRs), and GitClear (4x output, ~12% real productivity gain). Writing is engaging, well-structured, and 
 
 ## 内容提炼

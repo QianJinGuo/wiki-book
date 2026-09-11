@@ -1,10 +1,9 @@
 # Intelligent radiology workflow optimization with AI agents
 
-> 📊 Level ⭐⭐⭐⭐ | 8.7KB | `entities/intelligent-radiology-workflow-optimization-with-ai-agents.md`
+> 📊 Level ⭐⭐⭐ | 8.7KB | `entities/intelligent-radiology-workflow-optimization-with-ai-agents.md`
 
 ## 核心要点
 
-- v×c = 7×8 = 56，stars = 4
 
 ## 相关实体
 - [Google Deepmind Accelerator Asia Pacific](https://github.com/QianJinGuo/wiki-public/blob/main/entities/google-deepmind-accelerator-asia-pacific.md)

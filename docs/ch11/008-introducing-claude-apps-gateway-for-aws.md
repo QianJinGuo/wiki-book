@@ -1,6 +1,6 @@
 # Introducing Claude apps gateway for AWS
 
-> 📊 Level ⭐ | 7.2KB | `entities/introducing-claude-apps-gateway-for-aws.md`
+> 📊 Level ⭐⭐⭐ | 7.2KB | `entities/introducing-claude-apps-gateway-for-aws.md`
 
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/introducing-claude-apps-gateway-for-aws)
 

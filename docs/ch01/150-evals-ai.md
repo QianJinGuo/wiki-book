@@ -1,6 +1,6 @@
 # Evals 到底在评什么？一文拆解 AI 评估的三种方法
 
-> 📊 Level ⭐⭐ | 7.2KB | `entities/evals-three-methods-of-ai-evaluation.md`
+> 📊 Level ⭐⭐⭐ | 7.2KB | `entities/evals-three-methods-of-ai-evaluation.md`
 
 > 原文：Evals 到底在评什么？一文拆解 AI 评估的三种方法
 > 作者：Lotte Verheyden（Langfuse Product Marketing Engineer & Developer Relations）

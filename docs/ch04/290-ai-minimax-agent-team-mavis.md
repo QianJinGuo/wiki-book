@@ -1,6 +1,6 @@
 # 一个 AI 还是不够的：MiniMax Agent Team（Mavis）
 
-> 📊 Level ⭐⭐⭐⭐ | 13.4KB | `entities/minimax-agent-team-mavis-owner-worker-verifier.md`
+> 📊 Level ⭐⭐⭐ | 13.4KB | `entities/minimax-agent-team-mavis-owner-worker-verifier.md`
 
 [Minimax Agent Team Mavis Owner Worker Verifier](https://mp.weixin.qq.com/s/TIL7o92f71DsPPLWT4_37A)
 

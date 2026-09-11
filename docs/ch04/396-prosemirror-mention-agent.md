@@ -1,6 +1,6 @@
 # ProseMirror @文档 mention：知识库 Agent 输入框的工程化实现
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 10.3KB | `entities/prosemirror-knowledge-base-mention.md`
+> 📊 Level ⭐⭐⭐ | 10.3KB | `entities/prosemirror-knowledge-base-mention.md`
 
 > "对于知识库 agent 来说，@ 能力就好似厨师的调味盘 —— 允许用户在和 AI 协作时自由组织意图和上下文" —— vivo 互联网项目团队 Ding Junjie
 

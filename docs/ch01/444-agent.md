@@ -1,6 +1,6 @@
 # 快手首个打工人Agent
 
-> 📊 Level ⭐⭐⭐⭐ | 14.7KB | `entities/kuaishou-worker-agent-desktop-software.md`
+> 📊 Level ⭐⭐⭐ | 14.7KB | `entities/kuaishou-worker-agent-desktop-software.md`
 
 > -> [原文存档](https://mp.weixin.qq.com/s/lIj91GGx1SuLVeFOLHPKtw)
 

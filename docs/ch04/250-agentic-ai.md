@@ -1,6 +1,6 @@
 # 当 Agentic AI 重塑生产关系：智能体浪潮下的企业战略与行动框架
 
-> 📊 Level ⭐⭐⭐⭐ | 22.5KB | `entities/当-agentic-ai-重塑生产关系-智能体浪潮下的企业战略与行动框架.md`
+> 📊 Level ⭐⭐⭐ | 22.5KB | `entities/当-agentic-ai-重塑生产关系-智能体浪潮下的企业战略与行动框架.md`
 
 > 原文存档：[原文存档](https://aws.amazon.com/cn/blogs/china/agentic-ai-intelligent-enterprise-framework)
 

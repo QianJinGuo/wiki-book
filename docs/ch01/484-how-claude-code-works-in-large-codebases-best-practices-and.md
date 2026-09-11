@@ -1,10 +1,9 @@
 # How Claude Code works in large codebases: Best practices and where to start
 
-> 📊 Level ⭐⭐⭐⭐ | 9.5KB | `entities/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start.md`
+> 📊 Level ⭐⭐⭐ | 9.5KB | `entities/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start.md`
 
 ## 核心要点
-- 评分：v=7 × c=8 = 56
-- The article is a well-structured, informative piece on deploying Claude Code at scale. It provides practical patterns, clear explanations of technical concepts (harness, extension points, LSP integrat
+- - The article is a well-structured, informative piece on deploying Claude Code at scale. It provides practical patterns, clear explanations of technical concepts (harness, extension points, LSP integrat
 ## 相关实体
 - [How_Claude_Code_Works_In_Large_Codebases](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how_claude_code_works_in_large_codebases.md)
 - [Claude Code Self Repair Hooks Memory Config](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-self-repair-hooks-memory-config.md)

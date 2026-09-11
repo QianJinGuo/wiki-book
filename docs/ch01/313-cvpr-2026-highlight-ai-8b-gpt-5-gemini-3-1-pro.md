@@ -3,7 +3,6 @@
 > 📊 Level ⭐⭐⭐ | 8.2KB | `entities/CVPR-2026-Highlight-让AI像电影人一样-看-视频-8B小模型反超GPT-5与Gemini-3-1-Pro.md`
 
 ## 核心要点
-- 文章评分：value=8, confidence=7（56 ≥ 49 ✓）
 - 来源：微信公众号
 - CVPR 2026 Highlight 论文（Top 3%）
 - CMU + 哈佛大学联合研究

@@ -1,6 +1,6 @@
 # LLM-Driven Feature Discovery
 
-> 📊 Level ⭐ | 4.2KB | `entities/llm-driven-feature-discovery.md`
+> 📊 Level ⭐⭐⭐ | 4.2KB | `entities/llm-driven-feature-discovery.md`
 
 > **来源**: [LLM-Driven Feature Discovery](https://www.alignmentforum.org/posts/WAZWA6FPQvH8okouJ/llm-driven-feature-discovery)
 

@@ -1,6 +1,6 @@
 # AutoResearch：多 Agent 自动化软件开发
 
-> 📊 Level ⭐⭐⭐⭐ | 14.7KB | `entities/autoresearch-multi-agent-software.md`
+> 📊 Level ⭐⭐⭐ | 14.7KB | `entities/autoresearch-multi-agent-software.md`
 
 ## 核心命题
 Karpathy AutoResearch 把 ML 研究变成"写 train.py → 跑 5 分钟实验 → val loss 改善才保留"的自动循环。本项目将此方法迁移到软件开发：GitHub Issue → 多 Agent 交叉审核 → 5 维度量化评分达标 → 自动 PR + 合并。约 10 分钟完成中等复杂度 Issue，全程零人工干预。
@@ -66,7 +66,6 @@ Phase 4: 记录归档
 **已入库旧文（2026-04）：**
 
 - source_url: https://mp.weixin.qq.com/s/JFvYo9RCn9Xm8ilx1Chd6g（鸟窝/高可用架构）
-- 评分 value=8, confidence=8 → 56分（strong）
 **合并判断：** 新文相比旧文增加了大量工程细节（权限边界、退火重试、Issue选择策略、opencode扩展），是已有的质量提升而非重复。合并入库，两文均为同一作者（鸟窝）的同一主题深度覆盖。
 
 ## 新增洞察：2026-05-23 AutoResearch 方法论全景

@@ -1,6 +1,6 @@
 # Claude Code 为什么会忽略指令：四类失效原因 + 五层规则框架
 
-> 📊 Level ⭐⭐ | 4.8KB | `entities/claude-code-why-instructions-ignored-jia-gou-x-2026.md`
+> 📊 Level ⭐⭐⭐ | 4.8KB | `entities/claude-code-why-instructions-ignored-jia-gou-x-2026.md`
 
 ## 核心概述
 

@@ -1,0 +1,184 @@
+- generic [active] [ref=f7e1]:
+  - link "跳转至" [ref=f7e2] [cursor=pointer]:
+    - /url: "#ai"
+  - banner [ref=f7e3]:
+    - navigation "页眉" [ref=f7e4]:
+      - link "AI 工程" [ref=f7e5] [cursor=pointer]:
+        - /url: index.html
+      - generic [ref=f7e9]:
+        - generic [ref=f7e10]: AI 工程
+        - generic: AI 工程主课程
+      - generic [ref=f7e12]:
+        - radio "切换到暗色模式"
+        - generic "切换到暗色模式" [ref=f7e13] [cursor=pointer]
+        - radio "切换到亮色模式"
+      - generic [ref=f7e17]:
+        - button "选择当前语言" [ref=f7e18] [cursor=pointer]
+        - generic:
+          - list:
+            - listitem [ref=f7e21]:
+              - link "中文" [ref=f7e22] [cursor=pointer]:
+                - /url: /index.html
+            - listitem [ref=f7e23]:
+              - link "English" [ref=f7e24] [cursor=pointer]:
+                - /url: /en/
+      - dialog [ref=f7e25]:
+        - search [ref=f7e26]:
+          - generic [ref=f7e27]:
+            - textbox "搜索" [ref=f7e28]
+            - navigation "查找":
+              - button "清空当前内容"
+          - generic: 键入以开始搜索
+      - button "实时翻译整站为英文" [ref=f7e33] [cursor=pointer]:
+        - generic [aria-hidden] [ref=f7e34]: 🌐
+        - generic [ref=f7e35]: English
+      - link [ref=f7e37] [cursor=pointer]:
+        - /url: https://github.com/QianJinGuo/wiki-book
+        - generic [ref=f7e41]:
+          - text: QianJinGuo/wiki-book
+          - list [ref=f7e42]:
+            - listitem [ref=f7e43]: v1.3.8
+            - listitem [ref=f7e44]: "4"
+            - listitem [ref=f7e45]: "2"
+    - navigation "标签" [ref=f7e46]:
+      - list [ref=f7e48]:
+        - listitem [ref=f7e49]:
+          - link "首页" [ref=f7e50] [cursor=pointer]:
+            - /url: index.html
+        - listitem [ref=f7e51]:
+          - link "AI 工程主课程" [ref=f7e52] [cursor=pointer]:
+            - /url: course.html
+        - listitem [ref=f7e53]:
+          - link "第一篇 · 入门篇" [ref=f7e54] [cursor=pointer]:
+            - /url: ch01-ai-basics.html
+        - listitem [ref=f7e55]:
+          - link "第二篇 · 工程师篇" [ref=f7e56] [cursor=pointer]:
+            - /url: ch04-agent-core.html
+        - listitem [ref=f7e57]:
+          - link "第三篇 · 专家篇" [ref=f7e58] [cursor=pointer]:
+            - /url: ch11-infra.html
+        - listitem [ref=f7e59]:
+          - link "第四篇 · 科学家篇" [ref=f7e60] [cursor=pointer]:
+            - /url: ch15-training.html
+        - listitem [ref=f7e61]:
+          - link "第五篇 · 大师篇" [ref=f7e62] [cursor=pointer]:
+            - /url: ch19-research-frontier.html
+        - listitem [ref=f7e63]:
+          - link "学习路径" [ref=f7e64] [cursor=pointer]:
+            - /url: PATH.html
+        - listitem [ref=f7e65]:
+          - link "参考文献" [ref=f7e66] [cursor=pointer]:
+            - /url: references.html
+        - listitem [ref=f7e67]:
+          - link "English" [ref=f7e68] [cursor=pointer]:
+            - /url: en/index.html
+  - generic [ref=f7e69]:
+    - main [ref=f7e70]:
+      - generic [ref=f7e71]:
+        - navigation "导航栏" [ref=f7e75]:
+          - list [ref=f7e76]:
+            - listitem [ref=f7e77]:
+              - link "AI 工程主课程":
+                - /url: course.html
+        - navigation "目录" [ref=f7e81]:
+          - list [ref=f7e83]:
+            - listitem [ref=f7e84]:
+              - link "学习方式" [ref=f7e85] [cursor=pointer]:
+                - /url: "#_1"
+            - listitem [ref=f7e87]:
+              - link "16 个模块" [ref=f7e88] [cursor=pointer]:
+                - /url: "#16"
+            - listitem [ref=f7e90]:
+              - link "推荐节奏" [ref=f7e91] [cursor=pointer]:
+                - /url: "#_2"
+        - article [ref=f7e94]:
+          - heading [level=1] [ref=f7e95]:
+            - text: AI 工程主课程
+            - link "¶" [ref=f7e96] [cursor=pointer]:
+              - /url: "#ai"
+          - paragraph [ref=f7e97]: 从 LLM 到生产级 Agent，不按文章总量推进，而按能力闭环推进。
+          - heading [level=2] [ref=f7e98]:
+            - text: 学习方式
+            - link "¶" [ref=f7e99] [cursor=pointer]:
+              - /url: "#_1"
+          - paragraph [ref=f7e100]: 本课程从 wiki 的 5,000+ 篇当前文章中，为每个模块挑选 3 篇入口材料：
+          - list [ref=f7e101]:
+            - listitem [ref=f7e102]: 核心原理：建立概念模型。
+            - listitem [ref=f7e103]: 工程案例：观察真实系统如何取舍。
+            - listitem [ref=f7e104]: 延伸阅读：把概念放进更大的技术谱系。
+          - paragraph [ref=f7e105]:
+            - text: 每个模块都有一个动手任务和验收标准。16 个模块共用一个毕业项目：
+            - strong [ref=f7e106]: Wiki Research Agent
+            - text: 。它会逐步获得检索、工具调用、记忆、评测、引用和部署能力。
+          - heading [level=2] [ref=f7e107]:
+            - text: 16 个模块
+            - link "¶" [ref=f7e108] [cursor=pointer]:
+              - /url: "#16"
+          - table [ref=f7e111]:
+            - rowgroup [ref=f7e112]:
+              - row [ref=f7e113]:
+                - columnheader "阶段" [ref=f7e114]
+                - columnheader "模块" [ref=f7e115]
+                - columnheader "结果" [ref=f7e116]
+            - rowgroup [ref=f7e117]:
+              - row [ref=f7e118]:
+                - cell "基础认知" [ref=f7e119]
+                - cell "M01–M02" [ref=f7e120]
+                - cell "能解释 LLM，并稳定设计上下文" [ref=f7e121]
+              - row [ref=f7e122]:
+                - cell "Agent 原理" [ref=f7e123]
+                - cell "M03–M07" [ref=f7e124]
+                - cell "能构建带工具、记忆和 RAG 的 Agent" [ref=f7e125]
+              - row [ref=f7e126]:
+                - cell "工程实现" [ref=f7e127]
+                - cell "M08–M12" [ref=f7e128]
+                - cell "能设计框架、协作、评测和 Data Agent" [ref=f7e129]
+              - row [ref=f7e130]:
+                - cell "生产落地" [ref=f7e131]
+                - cell "M13" [ref=f7e132]
+                - cell "能处理安全、部署、成本与降级" [ref=f7e133]
+              - row [ref=f7e134]:
+                - cell "进阶视野" [ref=f7e135]
+                - cell "M14" [ref=f7e136]
+                - cell "能判断问题应该由模型还是系统解决" [ref=f7e137]
+              - row [ref=f7e138]:
+                - cell "综合案例" [ref=f7e139]
+                - cell "M15–M16" [ref=f7e140]
+                - cell "能交付 Deep Research Agent 与毕业项目" [ref=f7e141]
+          - paragraph [ref=f7e142]:
+            - text: 独立学习网站会根据你的文章阅读、动手任务和验收记录计算模块进度；完整提炼结果由构建脚本生成到
+            - code [ref=f7e143]: learn/course.json
+            - text: 。
+          - heading [level=2] [ref=f7e144]:
+            - text: 推荐节奏
+            - link "¶" [ref=f7e145] [cursor=pointer]:
+              - /url: "#_2"
+          - list [ref=f7e146]:
+            - listitem [ref=f7e147]: 每周完成 1 个模块，不追求一天刷完几十篇文章。
+            - listitem [ref=f7e148]: 入口文章只做建模；遇到项目中的具体问题，再回到资料库深挖。
+            - listitem [ref=f7e149]: 每篇入口文章读完后，至少留下一个判断、一个反例或一段代码。
+            - listitem [ref=f7e150]: 进入下一个模块前，先完成当前模块的动手任务和验收标准。
+          - paragraph [ref=f7e151]:
+            - text: 完整的精选文章、精华摘要和进度记录，请从独立的
+            - link "AI 工程学习网站" [ref=f7e152] [cursor=pointer]:
+              - /url: learn/index.html
+            - text: 开始。原有
+            - link "知识 dashboard" [ref=f7e153] [cursor=pointer]:
+              - /url: dashboard/index.html
+            - text: 保持不变，继续用于资料库检索和个人知识管理。
+      - button "回到页面顶部"
+    - contentinfo [ref=f7e154]:
+      - navigation "页脚" [ref=f7e155]:
+        - 'link "上一页: 首页" [ref=f7e156] [cursor=pointer]':
+          - /url: index.html
+          - generic [ref=f7e160]:
+            - text: 上一页
+            - generic [ref=f7e161]: 首页
+        - 'link "下一页: Ch01 AI 与 LLM 基础" [ref=f7e162] [cursor=pointer]':
+          - /url: ch01-ai-basics.html
+          - generic [ref=f7e163]:
+            - text: 下一页
+            - generic [ref=f7e164]: Ch01 AI 与 LLM 基础
+      - link "github.com" [ref=f7e171] [cursor=pointer]:
+        - /url: https://github.com/QianJinGuo/wiki-book
+  - button "银月 · Talk to AI" [ref=f7e174] [cursor=pointer]

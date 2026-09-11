@@ -1,6 +1,6 @@
 # Claude Code Loop Types — 官方四种循环模式分类法
 
-> 📊 Level ⭐⭐ | 8.6KB | `entities/claude-code-loop-types-official-taxonomy-four-modes.md`
+> 📊 Level ⭐⭐⭐ | 8.6KB | `entities/claude-code-loop-types-official-taxonomy-four-modes.md`
 
 > Claude Code 团队 (Delba de Oliveira & Michael Segner) 官方定义的四种 Loop 类型。与第三方教程不同，这是官方分类法。
 

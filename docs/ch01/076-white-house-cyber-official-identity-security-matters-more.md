@@ -1,6 +1,6 @@
 # White House cyber official: identity security matters more
 
-> 📊 Level ⭐ | 5.9KB | `entities/white-house-federal-identity-security-ai.md`
+> 📊 Level ⭐⭐⭐ | 5.9KB | `entities/white-house-federal-identity-security-ai.md`
 
 ## 核心要点
 - AI 攻击工具花样翻新，但突破口仍是薄弱的身份认证与凭证管理

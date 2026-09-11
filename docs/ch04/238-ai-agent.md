@@ -1,6 +1,6 @@
 # 十年老技术开发的 AI Agent 探索之路
 
-> 📊 Level ⭐⭐⭐⭐ | 51.1KB | `entities/十年老技术开发的-ai-agent-探索之路.md`
+> 📊 Level ⭐⭐⭐ | 51.1KB | `entities/十年老技术开发的-ai-agent-探索之路.md`
 
 [十年老技术开发的 Ai Agent 探索之路](https://mp.weixin.qq.com/s/r__2l_u6oXwzWHyD3wu_ZQ)
 

@@ -1,6 +1,6 @@
 # Trail of Bits: Skill Scanner Bypass 实证研究
 
-> 📊 Level ⭐⭐⭐⭐ | 25.2KB | `entities/trail-of-bits-skill-scanner-bypass-distribution.md`
+> 📊 Level ⭐⭐⭐ | 25.2KB | `entities/trail-of-bits-skill-scanner-bypass-distribution.md`
 
 > → [原文存档](https://blog.trailofbits.com/2026/06/03/the-sorry-state-of-skill-distribution/)
 

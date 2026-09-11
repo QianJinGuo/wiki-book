@@ -1,6 +1,6 @@
 # Hermes Agent /goal 长任务运行时架构拆解：状态持久化、Judge 闭环与自主续航
 
-> 📊 Level ⭐ | 4.7KB | `entities/hermes-agent-goal-runtime-architecture-state-persistence-judge-closed-loop.md`
+> 📊 Level ⭐⭐⭐ | 4.7KB | `entities/hermes-agent-goal-runtime-architecture-state-persistence-judge-closed-loop.md`
 
 > 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.8**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/hermes-agent-goal-runtime-architecture-state-persistence-judge-closed-loop.md`，一手来源仍见下方 sources。

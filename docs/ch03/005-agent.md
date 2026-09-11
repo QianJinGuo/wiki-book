@@ -1,6 +1,6 @@
 # Agent 时代的生产力悖论：协作成为新瓶颈
 
-> 📊 Level ⭐⭐ | 12.6KB | `entities/agent-productivity-paradox-collaboration-bottleneck.md`
+> 📊 Level ⭐⭐⭐ | 12.6KB | `entities/agent-productivity-paradox-collaboration-bottleneck.md`
 
 AI 编程助手进化为"AI 软件工程师"时，"Vibe Coding"生产力悖论正在浮现：Agent 生成代码的速度呈指数级增长，组织的整体研发效率却提升有限。问题不在于 AI 的能力，而在于我们仍用工业时代的协作模式来组织 AI 时代的研发。
 
@@ -103,7 +103,7 @@ AI 可以直接理解自然语言描述的需求并生成实现，不再需要�
 
 ## 第 4 来源 — 大淘宝技术：从 Spec 驱动转向环境与验证驱动（2026-08-24 SUPP）
 
-> 来源：大淘宝技术（永霸，淘天集团-交易业务技术团队，v=7 c=8 v×c=56）。第一方概念性框架文章，为「AI Coding 效率悖论」提供「瓶颈在环境与验证 + 投资方向」的完整分析框架。
+> 来源：大淘宝技术（永霸，淘天集团-交易业务技术团队）。第一方概念性框架文章，为「AI Coding 效率悖论」提供「瓶颈在环境与验证 + 投资方向」的完整分析框架。
 
 ### 阿姆达尔定律量化瓶颈转移
 Coding 环节已被 SOTA 模型解决（SWE-bench Pro / Terminal-Bench 2.1 冲到 80% 上下），但研发整体效率未同步上涨——团队内部统计生码只占研发链路 20%~30%。按阿姆达尔定律，把占三成的环节压缩到接近零，整条链路提升上限也只有三成：瓶颈不在 Coding，而在 Coding 之外的环境与验证环节。

@@ -1,6 +1,6 @@
 # 晓斌：从 People-Oriented 到 Agent-Oriented Infra —— 意图驱动 + 代码沉淀的进化体
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 30.2KB | `entities/agent-oriented-infra-intent-driven-code-sedimentation.md`
+> 📊 Level ⭐⭐⭐ | 30.2KB | `entities/agent-oriented-infra-intent-driven-code-sedimentation.md`
 
 ## 晓斌：从 People-Oriented 到 Agent-Oriented Infra
 > "Agent 的自主程度是 infra 安全能力的函数。" —— 晓斌（阿里巴巴研发基础设施负责人）

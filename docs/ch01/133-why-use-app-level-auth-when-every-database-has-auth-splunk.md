@@ -1,6 +1,6 @@
 # Why Use App-Level Auth When Every Database Has Auth? (Splunk CVE-2026-20253)
 
-> 📊 Level ⭐ | 3.2KB | `entities/why-use-app-level-auth-when-every-database-has-auth-splunk-e.md`
+> 📊 Level ⭐⭐⭐ | 3.2KB | `entities/why-use-app-level-auth-when-every-database-has-auth-splunk-e.md`
 
 ## 相关实体
 - [microsoft is quietly shopping for an openai replacement](https://github.com/QianJinGuo/wiki-public/blob/main/entities/microsoft-is-quietly-shopping-for-an-openai-replac.md)
@@ -27,7 +27,6 @@
 - **原文链接**: https://labs.watchtowr.com/why-use-app-level-auth-when-every-database-has-auth-splunk-enterprise-cve-2026-20253-pre-auth-rce/
 - **作者/平台**: newsletter
 - **类型**: newsletter / 行业分析
-- **评分**: v=7, c=7, v×c=49, stars=4
 
 ---
 

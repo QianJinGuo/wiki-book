@@ -1,6 +1,6 @@
 # 阿里巴巴 Aone Agentic 研发模式变革
 
-> 📊 Level ⭐⭐⭐⭐ | 24.1KB | `entities/alibaba-aone-agentic-rd-mode-xiangbangyu.md`
+> 📊 Level ⭐⭐⭐ | 24.1KB | `entities/alibaba-aone-agentic-rd-mode-xiangbangyu.md`
 
 ## 一、在 Agent 时代，传统的"协作"和"分工"是效率的阻碍
 2025 年，AI 编程助手已进化为"AI 软件工程师"，但"Vibe Coding"生产力悖论正在浮现：Agent 生成代码的速度呈指数级增长，组织的整体研发效率却提升有限。问题不在于 AI 的能力，而在于我们仍用工业时代的协作模式来组织 AI 时代的研发。

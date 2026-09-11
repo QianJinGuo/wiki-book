@@ -1,6 +1,6 @@
 # Agent-EvalKit：AWS 开源 CLI Agent 评测工具包
 
-> 📊 Level ⭐⭐⭐⭐ | 16.5KB | `entities/agent-evalkit-aws-opensource-cli-agent-eval-toolkit.md`
+> 📊 Level ⭐⭐⭐ | 16.5KB | `entities/agent-evalkit-aws-opensource-cli-agent-eval-toolkit.md`
 
 > 原文存档：[原文存档](https://aws.amazon.com/blogs/machine-learning/evaluate-ai-agents-systematically-with-agent-evalkit)
 

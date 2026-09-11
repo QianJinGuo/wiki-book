@@ -1,6 +1,6 @@
 # Harness Engineering 综合性指南（ConardLi 系列 · 含 Beautiful Article 实证 + Reacticle 协议）
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 26.5KB | `entities/harness-engineering-comprehensive-guide-conardli.md`
+> 📊 Level ⭐⭐⭐ | 26.5KB | `entities/harness-engineering-comprehensive-guide-conardli.md`
 
 ## 核心定义
 

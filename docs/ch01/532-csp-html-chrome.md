@@ -1,6 +1,6 @@
 # 严格 CSP 下的密码窃取：HTML 注入 + Chrome 自动填充攻击
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 14.7KB | `entities/afine-csp-html-injection-password-exfiltration-attack.md`
+> 📊 Level ⭐⭐⭐ | 14.7KB | `entities/afine-csp-html-injection-password-exfiltration-attack.md`
 
 ## 概述
 

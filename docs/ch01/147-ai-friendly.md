@@ -1,6 +1,6 @@
 # 后端架构 AI Friendly 的标准与路径：面向无人值守开发时代的系统重构
 
-> 📊 Level ⭐⭐ | 7.2KB | `entities/backend-ai-friendly-standards-path-alitech.md`
+> 📊 Level ⭐⭐⭐ | 7.2KB | `entities/backend-ai-friendly-standards-path-alitech.md`
 
 > 原文归档：原文归档
 

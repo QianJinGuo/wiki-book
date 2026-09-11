@@ -74,12 +74,6 @@ v1.1.0 一口气修复了 18 个 Bug，其中令牌轮转导致消息丢失、YO
 5. **迁移前务必备份 `workers-registry.json`**：从 v1.0.9 升级时自动迁移 `workers-registry.json` → CRD 的机制虽然方便，但迁移过程存在 bug（如团队 Worker 丢失运行时信息）^。建议在执行升级前手动备份原始文件，以便在迁移异常时进行人工修复。
 
 ## 关联概念
--
--
--
--
-
--
 ## 相关实体
 
 - [企业级多-agent-规模化落地怎么做群虾智能-ai-沙龙-ppt-限时领取](https://github.com/QianJinGuo/wiki-public/blob/main/entities/企业级多-agent-规模化落地怎么做群虾智能-ai-沙龙-ppt-限时领取.md)

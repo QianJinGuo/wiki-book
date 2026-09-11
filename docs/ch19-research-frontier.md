@@ -32,7 +32,7 @@
 
 ## Ch19.001 Lean Software Scaling Laws
 
-> 📊 Level ⭐ | 3.9KB | `entities/lean-scaling.md`
+> 📊 Level ⭐⭐⭐ | 3.9KB | `entities/lean-scaling.md`
 
 > **Source**: [gwern.net](https://gwern.net/lean-scaling)
 
@@ -72,7 +72,7 @@ But this does not follow: being a popular language with a lot of training data o
 
 ## Ch19.002 The Complexity of Simplicity | Jim Nielsen's Notes
 
-> 📊 Level ⭐⭐ | 5.8KB | `entities/2026-05-06-2201.md`
+> 📊 Level ⭐⭐⭐ | 5.8KB | `entities/2026-05-06-2201.md`
 
 ["The Complexity of Simplicity | Jim Nielsen's Notes"](https://notes.jim-nielsen.com/n/2026-05-06-2201/)
 ---
@@ -460,7 +460,7 @@ Multi-agent collective 路径在现有 ASI 讨论中较少被关注。报告认�
 
 ## Ch19.007 推荐系统进入大模型时刻：昇腾 NPU 如何支撑千亿级生成式推荐落地
 
-> 📊 Level ⭐⭐⭐⭐ | 23.9KB | `entities/huawei-fuxi-recommendation-system-ascend-npu-scaling-law.md`
+> 📊 Level ⭐⭐⭐ | 23.9KB | `entities/huawei-fuxi-recommendation-system-ascend-npu-scaling-law.md`
 
 ## 概述
 
@@ -717,7 +717,7 @@ FuXi-Alpha 的 Attention Map 可视化是理解推荐系统特征重要性的关
 
 ## Ch19.008 NeurIPS 2026 Pangram 事件：闭源 AI 检测器用于学术 desk-reject 的方法论争议
 
-> 📊 Level ⭐⭐⭐⭐ | 11.1KB | `entities/neurips-2026-pangram-controversy.md`
+> 📊 Level ⭐⭐⭐ | 11.1KB | `entities/neurips-2026-pangram-controversy.md`
 
 > "如果一个较高的检测分数被用来判断作者的声明「不一致」，而这种「不一致」又被用来证明拒稿合理，那么检测器就不只是一个辅助工具了 —— 它实际上成了裁决过程中的决定性因素。"
 > —— Reddit `r/MachineLearning` 控诉帖
@@ -828,7 +828,7 @@ AI 语法润色、翻译辅助、以及认知辅助技术对非母语作者和�
 
 ## Ch19.009 Recursive First Steps Toward Automated AI Research：SOTA 三基准自动化研究系统
 
-> 📊 Level ⭐⭐⭐⭐ | 10.9KB | `entities/recursive-automated-ai-research-first-steps-2026.md`
+> 📊 Level ⭐⭐⭐ | 10.9KB | `entities/recursive-automated-ai-research-first-steps-2026.md`
 
 > **Background**：本文档基于 Recursive 团队 2026-06-11 发布的工程报告 *First Steps Toward Automated AI Research* 整理。Recursive 团队（与 [AlphaEvolve](entities/alphaevolve-impact-deepmind.md) 同生态但不同公司）开发了一套自动化研究循环系统，瞄准三大 AI 进步杠杆：**训练算法 / 训练速度 / 硬件利用**。他们在三个 SOTA benchmark 上同时取得突破并开源 artifacts。
 
@@ -922,7 +922,7 @@ Einsia Navers Lab 的 AI4AI-Bench（arXiv:2608.20318）为"AI 能否设计更好
 
 ## Ch19.010 Qwen-AgentWorld: Language World Models for General Agents
 
-> 📊 Level ⭐⭐⭐⭐ | 7.4KB | `entities/qwen-agentworld-language-world-models.md`
+> 📊 Level ⭐⭐⭐ | 7.4KB | `entities/qwen-agentworld-language-world-models.md`
 
 ## 摘要
 
@@ -1043,7 +1043,7 @@ Qwen-AgentWorld 的创新在于将世界模型的载体从传统的状态空间�
 
 ## Ch19.011 Visual Para-Thinker: 视觉并行思考框架 (arxiv 2602.13310)
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 22.9KB | `entities/visual-para-thinker-vlm-parallel-reasoning-xuhaoran.md`
+> 📊 Level ⭐⭐⭐ | 22.9KB | `entities/visual-para-thinker-vlm-parallel-reasoning-xuhaoran.md`
 
 # Visual Para-Thinker: 大规模 VLM 首个并行思考框架
 
@@ -1368,7 +1368,7 @@ Qwen-AgentWorld 的创新在于将世界模型的载体从传统的状态空间�
 
 ## Ch19.012 Video Agent 范式迁移与算力-人才飞轮：Ethan He 从 Cosmos 到 Grok Imagine 的第一手洞见
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 18.2KB | `entities/video-agent-paradigm-compute-talent-flywheel-ethan-he-20260606.md`
+> 📊 Level ⭐⭐⭐ | 18.2KB | `entities/video-agent-paradigm-compute-talent-flywheel-ethan-he-20260606.md`
 
 ## 概述
 

@@ -1,6 +1,6 @@
 # Anthropic 发布 Computer Use 最佳实践
 
-> 📊 Level ⭐⭐ | 4.9KB | `entities/anthropic-computer-use-best-practices.md`
+> 📊 Level ⭐⭐⭐ | 4.9KB | `entities/anthropic-computer-use-best-practices.md`
 
 > 作者：AGI Hunt | 来源：AGI Hunt（转发 Anthropic 官方） | 2026-05-14
 > 原文：https://claude.com/blog/best-practices-for-computer-and-browser-use-with-claude

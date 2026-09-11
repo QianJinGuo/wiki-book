@@ -1,6 +1,6 @@
 # Improving Token Efficiency in GitHub Agentic Workflows — GitHub 内部 Agent 工作流 Token 优化实践
 
-> 📊 Level ⭐⭐⭐⭐ | 12.1KB | `entities/github-agentic-token-efficiency.md`
+> 📊 Level ⭐⭐⭐ | 12.1KB | `entities/github-agentic-token-efficiency.md`
 
 ## 概述
 

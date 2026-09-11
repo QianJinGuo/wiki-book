@@ -1,6 +1,6 @@
 # The 2026 State of AI Traffic & Cyberthreat Benchmark Report - HUMAN Security
 
-> 📊 Level ⭐⭐⭐⭐ | 12.8KB | `entities/ai-traffic-cyberthreat-benchmark-2026.md`
+> 📊 Level ⭐⭐⭐ | 12.8KB | `entities/ai-traffic-cyberthreat-benchmark-2026.md`
 
 ## 摘要
 

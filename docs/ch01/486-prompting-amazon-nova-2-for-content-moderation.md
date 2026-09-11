@@ -1,6 +1,6 @@
 # Prompting Amazon Nova 2 for content moderation
 
-> 📊 Level ⭐⭐⭐⭐ | 9.5KB | `entities/prompting-amazon-nova-2-for-content-moderation.md`
+> 📊 Level ⭐⭐⭐ | 9.5KB | `entities/prompting-amazon-nova-2-for-content-moderation.md`
 
 ## 核心要点
 - Amazon Nova 2 内容审核实战指南

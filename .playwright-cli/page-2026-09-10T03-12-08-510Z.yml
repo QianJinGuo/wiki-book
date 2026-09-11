@@ -1,0 +1,281 @@
+- generic [active] [ref=f4e1]:
+  - link "Skip to main content" [ref=f4e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f4e3]:
+    - generic [ref=f4e4]:
+      - generic [ref=f4e5]:
+        - link [ref=f4e6] [cursor=pointer]:
+          - /url: /
+          - img "Logo" [ref=f4e7]
+        - button "Menu" [ref=f4e8] [cursor=pointer]
+      - generic [ref=f4e10]:
+        - button "Change language" [ref=f4e11] [cursor=pointer]
+        - button "Switch Theme" [ref=f4e16] [cursor=pointer]
+  - main [ref=f4e24]:
+    - generic [ref=f4e25]:
+      - region [ref=f4e26]:
+        - generic [ref=f4e28]:
+          - generic [ref=f4e29]:
+            - paragraph [ref=f4e30]: AI-powered personal reading assistant
+            - heading "Discover high-quality content that truly fits you" [level=1] [ref=f4e31]
+            - paragraph [ref=f4e32]: BestBlogs curates content from quality sources every day, then layers in your follows, interests, and reading behavior to surface what's actually worth your time.
+            - list [ref=f4e33]:
+              - listitem [ref=f4e34]:
+                - generic [ref=f4e39]: Read a little less
+              - listitem [ref=f4e40]:
+                - generic [ref=f4e45]: Judge with more clarity
+              - listitem [ref=f4e46]:
+                - generic [ref=f4e50]: Understand a little faster
+            - generic [ref=f4e51]:
+              - link "Try My Brief" [ref=f4e52] [cursor=pointer]:
+                - /url: /en/signup?source=landing_hero_primary
+              - link "Browse featured newsletters" [ref=f4e55] [cursor=pointer]:
+                - /url: /en/explore/newsletter
+            - paragraph [ref=f4e56]: 7-day Pro trial · No credit card needed · Early bird $4.9/mo
+          - link "Today's Brief · 2026-09-10 · EP171 · AI economic scenarios, mathematical credit, long-context reasoning · 09-10 Daily" [ref=f4e61] [cursor=pointer]:
+            - /url: /en/explore/brief/2026-09-10?utm_source=landing_hero&utm_medium=web&utm_campaign=2026-09-10
+            - generic [ref=f4e62]: Today's Brief · 2026-09-10
+            - heading "EP171 · AI economic scenarios, mathematical credit, long-context reasoning · 09-10 Daily" [level=3] [ref=f4e64]
+            - paragraph [ref=f4e65]: 3 headlines · 7 picks · 20 reads in the pool
+            - paragraph [ref=f4e67]: Use economic scenarios, math credit, and RLM design to separate AI claims from durable practice.
+            - generic [ref=f4e68]: Read today's brief →
+      - region [ref=f4e69]:
+        - generic [ref=f4e70]:
+          - generic [ref=f4e71]:
+            - heading "Start reading, then decide if you want to upgrade" [level=2] [ref=f4e72]
+            - paragraph [ref=f4e73]: Free gets you access to quality content. Pro makes it truly yours.
+          - generic [ref=f4e74]:
+            - paragraph [ref=f4e75]: Pro adds 3 My Space capabilities (My Brief / Daily Review / Custom Views) and lifts 5 quotas to 10x (Copilot / Sources / Private sources / OpenAPI / Immersive Translate).
+            - generic [ref=f4e77]:
+              - generic [ref=f4e78]:
+                - generic [ref=f4e79]:
+                  - heading "Free" [level=3] [ref=f4e81]
+                  - generic [ref=f4e82]:
+                    - generic [ref=f4e83]: $0
+                    - generic [ref=f4e84]: free forever
+                - list [ref=f4e85]:
+                  - listitem [ref=f4e86]:
+                    - generic [ref=f4e89]: All public content free to read
+                  - listitem [ref=f4e90]:
+                    - generic [ref=f4e93]: Public Daily Brief
+                  - listitem [ref=f4e94]:
+                    - generic [ref=f4e97]: Weekly curated newsletter
+                  - listitem [ref=f4e98]:
+                    - generic [ref=f4e102]: Personalized Daily Brief (text/email)
+                  - listitem [ref=f4e103]:
+                    - generic [ref=f4e107]: Daily Review (Pro exclusive)
+                  - listitem [ref=f4e108]:
+                    - generic [ref=f4e112]: Custom Views (up to 10)
+                  - listitem [ref=f4e113]:
+                    - generic [ref=f4e116]: AI Reading Copilot (3/day)
+                  - listitem [ref=f4e117]:
+                    - generic [ref=f4e120]: Subscription Sources (up to 500)
+                  - listitem [ref=f4e121]:
+                    - generic [ref=f4e124]: Private Sources (up to 20)
+                  - listitem [ref=f4e125]:
+                    - generic [ref=f4e128]: OpenAPI Access (50 calls/day)
+                  - listitem [ref=f4e129]:
+                    - generic [ref=f4e132]: Immersive Translate (3/day)
+              - generic [ref=f4e133]:
+                - generic [ref=f4e134]:
+                  - generic [ref=f4e135]:
+                    - heading "Pro" [level=3] [ref=f4e139]
+                    - generic [ref=f4e140]: Early Bird
+                  - generic [ref=f4e141]:
+                    - generic [ref=f4e142]: $4.9
+                    - generic [ref=f4e143]: / mo (Early Bird)
+                    - generic [ref=f4e144]: $9.9/ mo (Regular)
+                - list [ref=f4e145]:
+                  - listitem [ref=f4e146]:
+                    - generic [ref=f4e149]: All public content free to read
+                  - listitem [ref=f4e150]:
+                    - generic [ref=f4e153]: Public Daily Brief
+                  - listitem [ref=f4e154]:
+                    - generic [ref=f4e157]: Weekly curated newsletter
+                  - listitem [ref=f4e158]:
+                    - generic [ref=f4e161]: Personalized Daily Brief (text/email)
+                  - listitem [ref=f4e162]:
+                    - generic [ref=f4e165]: Daily Review (Pro exclusive)
+                  - listitem [ref=f4e166]:
+                    - generic [ref=f4e169]: Custom Views (up to 10)
+                  - listitem [ref=f4e170]:
+                    - generic [ref=f4e173]: AI Reading Copilot (30/day)
+                  - listitem [ref=f4e174]:
+                    - generic [ref=f4e177]: Subscription Sources (up to 5,000)
+                  - listitem [ref=f4e178]:
+                    - generic [ref=f4e181]: Private Sources (up to 5,000) + OPML Import
+                  - listitem [ref=f4e182]:
+                    - generic [ref=f4e185]: OpenAPI Access (500 calls/day)
+                  - listitem [ref=f4e186]:
+                    - generic [ref=f4e189]: Immersive Translate (30/day)
+            - generic [ref=f4e190]:
+              - link "Get Started Free" [ref=f4e191] [cursor=pointer]:
+                - /url: /en/signin?source=landing_free_plan
+              - link "Subscribe to Pro" [ref=f4e194] [cursor=pointer]:
+                - /url: /en/pro?source=landing_pro_plan&action=checkout
+            - paragraph [ref=f4e197]: Early bird pricing ends December 31, 2026 — then regular price (20% off first month).
+      - region [ref=f4e198]:
+        - generic [ref=f4e199]:
+          - generic [ref=f4e200]:
+            - paragraph [ref=f4e201]: Not more content, but content that fits you
+            - heading "BestBlogs has already picked today's best reads" [level=2] [ref=f4e202]
+            - paragraph [ref=f4e203]: Every day, AI scoring filters articles, podcasts, videos, and tweets — then editors calibrate the picks.
+          - generic [ref=f4e204]:
+            - article [ref=f4e205] [cursor=pointer]:
+              - generic [ref=f4e206]:
+                - generic [ref=f4e207]:
+                  - generic [ref=f4e208]: Article
+                  - generic [ref=f4e212]: Featured
+                - heading "Scenarios for our Economic Future" [level=3] [ref=f4e213]
+                - paragraph [ref=f4e214]: Anthropic's Economics team modeled three future scenarios for the US economy by 2030, revealing that while AI will boost GDP growth, extreme automation could severely displace knowledge workers, depress their wages, and shift wealth heavily from labor to capital.
+                - generic [ref=f4e215]:
+                  - generic [ref=f4e216]: Hacker News
+                  - generic [ref=f4e217]: ·
+                  - generic [ref=f4e218]: Yesterday
+            - generic [ref=f4e219]:
+              - article [ref=f4e220] [cursor=pointer]:
+                - generic [ref=f4e221]:
+                  - generic [ref=f4e222]:
+                    - generic [ref=f4e223]: Tweet
+                    - generic [ref=f4e226]: Featured
+                  - heading "GPT-6 Astra Launch with Benchmark Results and Safety Commitment" [level=3] [ref=f4e227]
+                  - paragraph [ref=f4e228]: Sam Altman announces the GPT-6 Astra model launch, highlighting its industry-leading benchmark performance and explaining the deliberate delay for safety and alignment compliance.
+                  - generic [ref=f4e229]:
+                    - generic [ref=f4e230]: Sam Altman(@sama)
+                    - generic [ref=f4e231]: ·
+                    - generic [ref=f4e232]: 09-04
+              - article [ref=f4e233] [cursor=pointer]:
+                - generic [ref=f4e234]:
+                  - generic [ref=f4e235]:
+                    - generic [ref=f4e236]: Video
+                    - generic [ref=f4e240]: Featured
+                  - heading "How Anthropic Builds And How Engineering Will Change Soon | Thariq Shihipar" [level=3] [ref=f4e241]
+                  - paragraph [ref=f4e242]: Anthropic engineer Thariq Shihipar explains how teams can treat frontier models as thought partners and build verification-heavy harnesses, workflows, skills, and artifacts around them to expand software engineering work.
+                  - generic [ref=f4e243]:
+                    - generic [ref=f4e244]: Ryan Peterman
+                    - generic [ref=f4e245]: ·
+                    - generic [ref=f4e246]: 09-07
+          - paragraph [ref=f4e247]: First-hand picks curated from RSS, X, YouTube, and podcasts
+          - generic [ref=f4e248]:
+            - link "Daily Brief" [ref=f4e249] [cursor=pointer]:
+              - /url: /en/explore/brief
+            - link "Featured Weekly" [ref=f4e250] [cursor=pointer]:
+              - /url: /en/explore/newsletter
+            - link "Topic Briefs" [ref=f4e251] [cursor=pointer]:
+              - /url: /en/explore/topics
+          - link "Browse all picks" [ref=f4e253] [cursor=pointer]:
+            - /url: /en/articles?time=1d&qualified=true
+      - region [ref=f4e256]:
+        - generic [ref=f4e257]:
+          - generic [ref=f4e258]:
+            - heading "A personal reading assistant you can actually trust" [level=2] [ref=f4e259]
+            - paragraph [ref=f4e260]: Begin with great content, then shape a reading rhythm that's genuinely yours.
+          - generic [ref=f4e261]:
+            - generic [ref=f4e262]:
+              - generic [ref=f4e263]: "01"
+              - heading "Follow sources you trust" [level=3] [ref=f4e268]
+              - paragraph [ref=f4e269]: Add RSS feeds, X accounts, YouTube channels, and podcasts — set your own information boundaries.
+            - generic [ref=f4e270]:
+              - generic [ref=f4e271]: "02"
+              - heading "Tell BestBlogs what you care about" [level=3] [ref=f4e277]
+              - paragraph [ref=f4e278]: Interest tags, reading history, bookmarks, highlights, and feedback gradually shape your preferences.
+            - generic [ref=f4e279]:
+              - generic [ref=f4e280]: "03"
+              - heading "Get content that fits you each day" [level=3] [ref=f4e285]
+              - paragraph [ref=f4e286]: BestBlogs builds your daily brief and personal reading flow based on your follows and behavior. The more you read, the better it fits.
+          - paragraph [ref=f4e287]: AI amplifies your judgment — it doesn't replace it. What you read, trust, and conclude is always yours to decide.
+          - generic [ref=f4e288]:
+            - link "Try My Brief" [ref=f4e289] [cursor=pointer]:
+              - /url: /en/signup?source=landing_howitworks_primary
+            - link "Browse featured newsletters" [ref=f4e292] [cursor=pointer]:
+              - /url: /en/explore/newsletter
+      - generic [ref=f4e294]:
+        - generic [ref=f4e295]:
+          - group [ref=f4e296]:
+            - generic [ref=f4e297] [cursor=pointer]:
+              - heading "Start Reading" [level=3] [ref=f4e298]
+              - generic [aria-hidden] [ref=f4e299]: ▼
+            - list [ref=f4e300]:
+              - listitem [ref=f4e301]:
+                - link "Daily Brief" [ref=f4e302] [cursor=pointer]:
+                  - /url: /en/explore/brief
+              - listitem [ref=f4e303]:
+                - link "Weekly Picks" [ref=f4e304] [cursor=pointer]:
+                  - /url: /en/explore/newsletter
+              - listitem [ref=f4e305]:
+                - link "Topics" [ref=f4e306] [cursor=pointer]:
+                  - /url: /en/explore/topics
+          - group [ref=f4e307]:
+            - generic [ref=f4e308] [cursor=pointer]:
+              - heading "My Space" [level=3] [ref=f4e309]
+              - generic [aria-hidden] [ref=f4e310]: ▼
+            - list [ref=f4e311]:
+              - listitem [ref=f4e312]:
+                - link "My Brief" [ref=f4e313] [cursor=pointer]:
+                  - /url: /en/reading/brief
+              - listitem [ref=f4e314]:
+                - link "My Follows" [ref=f4e315] [cursor=pointer]:
+                  - /url: /en/reading/follow
+              - listitem [ref=f4e316]:
+                - link "My Reading" [ref=f4e317] [cursor=pointer]:
+                  - /url: /en/library/reading
+              - listitem [ref=f4e318]:
+                - link "Daily Review" [ref=f4e319] [cursor=pointer]:
+                  - /url: /en/library/review
+          - group [ref=f4e320]:
+            - generic [ref=f4e321] [cursor=pointer]:
+              - heading "About BestBlogs" [level=3] [ref=f4e322]
+              - generic [aria-hidden] [ref=f4e323]: ▼
+            - list [ref=f4e324]:
+              - listitem [ref=f4e325]:
+                - link "About" [ref=f4e326] [cursor=pointer]:
+                  - /url: /en/about
+              - listitem [ref=f4e327]:
+                - link "Changelog" [ref=f4e328] [cursor=pointer]:
+                  - /url: /en/changelog
+              - listitem [ref=f4e329]:
+                - link "How It Works" [ref=f4e330] [cursor=pointer]:
+                  - /url: /en/docs/how-it-works
+              - listitem [ref=f4e331]:
+                - link "Author Blog" [ref=f4e332] [cursor=pointer]:
+                  - /url: https://www.ginonotes.com
+          - group [ref=f4e333]:
+            - generic [ref=f4e334] [cursor=pointer]:
+              - heading "Help Center" [level=3] [ref=f4e335]
+              - generic [aria-hidden] [ref=f4e336]: ▼
+            - list [ref=f4e337]:
+              - listitem [ref=f4e338]:
+                - link "Docs Home" [ref=f4e339] [cursor=pointer]:
+                  - /url: /en/docs
+              - listitem [ref=f4e340]:
+                - link "Getting Started" [ref=f4e341] [cursor=pointer]:
+                  - /url: /en/docs/getting-started
+              - listitem [ref=f4e342]:
+                - link "Features" [ref=f4e343] [cursor=pointer]:
+                  - /url: /en/docs/features
+              - listitem [ref=f4e344]:
+                - link "FAQ" [ref=f4e345] [cursor=pointer]:
+                  - /url: /en/docs/faq
+          - group [ref=f4e346]:
+            - generic [ref=f4e347] [cursor=pointer]:
+              - heading "Resources" [level=3] [ref=f4e348]
+              - generic [aria-hidden] [ref=f4e349]: ▼
+            - list [ref=f4e350]:
+              - listitem [ref=f4e351]:
+                - link "GitHub Project" [ref=f4e352] [cursor=pointer]:
+                  - /url: https://github.com/ginobefun/bestblogs
+              - listitem [ref=f4e353]:
+                - link "Service Status" [ref=f4e354] [cursor=pointer]:
+                  - /url: https://status.bestblogs.dev/status/bestblogs
+              - listitem [ref=f4e355]:
+                - link "Privacy Policy" [ref=f4e356] [cursor=pointer]:
+                  - /url: /en/privacy
+              - listitem [ref=f4e357]:
+                - link "Terms of Service" [ref=f4e358] [cursor=pointer]:
+                  - /url: /en/terms
+        - generic [ref=f4e359]:
+          - paragraph [ref=f4e360]: BestBlogs · Discover high-quality content that truly fits you
+          - paragraph [ref=f4e361]: © 2024–2026 BestBlogs.dev. All rights reserved.
+  - region "Notifications (F8)":
+    - list
+  - alert [ref=f4e362]

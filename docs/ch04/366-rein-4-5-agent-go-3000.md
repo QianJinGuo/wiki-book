@@ -1,6 +1,6 @@
 # Rein：4 模块 + 5 类型边界防止 agent.go 膨胀到 3000 行
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 22.7KB | `entities/rein-go-agent-4-modules-5-type-boundaries.md`
+> 📊 Level ⭐⭐⭐ | 22.7KB | `entities/rein-go-agent-4-modules-5-type-boundaries.md`
 
 > "根子在哪？不是架构图不够漂亮。是模块之间的数据契约没定义清楚。" —— Rein 项目
 

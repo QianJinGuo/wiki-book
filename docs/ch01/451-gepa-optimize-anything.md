@@ -1,6 +1,6 @@
 # Gepa Optimize Anything
 
-> 📊 Level ⭐⭐⭐⭐ | 13.7KB | `entities/gepa-optimize-anything.md`
+> 📊 Level ⭐⭐⭐ | 13.7KB | `entities/gepa-optimize-anything.md`
 
 > -> [原文存档](https://gepa-ai.github.io/gepa/blog/2026/02/18/introducing-optimize-anything/)
 

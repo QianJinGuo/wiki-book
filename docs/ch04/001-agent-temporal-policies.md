@@ -1,6 +1,6 @@
 # Agent 时间性策略（Temporal Policies）：基于轨迹的有状态授权架构
 
-> 📊 Level ⭐ | 11.0KB | `entities/securing-ai-agents-temporal-policies-agentcore.md`
+> 📊 Level ⭐⭐⭐ | 11.0KB | `entities/securing-ai-agents-temporal-policies-agentcore.md`
 
 > **核心论点**：传统 stateless 授权（每个请求独立判定）对 AI Agent 根本不够——Agent 在运行时决定调用哪些工具、以什么参数、什么顺序，单看一个工具调用是安全的，放在轨迹上下文里可能是灾难。Temporal Policy 在网关外围（gateway perimeter）基于 agent 轨迹（trajectory）做有状态授权，agent 自身代码无法拦截或篡改策略。
 

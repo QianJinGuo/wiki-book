@@ -1,6 +1,6 @@
 # AI Native 团队搭建：七层模型与六步演进路线
 
-> 📊 Level ⭐⭐⭐⭐ | 11.4KB | `entities/ai-native-team-building-yexiaochai.md`
+> 📊 Level ⭐⭐⭐ | 11.4KB | `entities/ai-native-team-building-yexiaochai.md`
 
 ## 相关实体
 - [Ai Native Team Building Failures Ceo Digital Twin Case](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-native-team-building-failures-ceo-digital-twin-case.md)

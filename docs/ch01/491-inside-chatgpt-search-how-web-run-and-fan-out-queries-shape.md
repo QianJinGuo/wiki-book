@@ -1,6 +1,6 @@
 # Inside ChatGPT Search: how web.run and fan-out queries shape results
 
-> 📊 Level ⭐⭐⭐⭐ | 8.8KB | `entities/chatgpt-search-web-run-fanout-searchengineland.md`
+> 📊 Level ⭐⭐⭐ | 8.8KB | `entities/chatgpt-search-web-run-fanout-searchengineland.md`
 
 ## 核心要点
 - **web.run 查询广播** — ChatGPT Search 不搜索单一来源，而是将查询同时广播到多个来源

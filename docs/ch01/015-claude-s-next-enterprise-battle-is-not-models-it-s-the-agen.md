@@ -1,6 +1,6 @@
 # Claude's next enterprise battle is not models: it's the agent control plane
 
-> 📊 Level ⭐ | 10.0KB | `entities/claudes_next_enterprise_battle_is_not_mo.md`
+> 📊 Level ⭐⭐⭐ | 10.0KB | `entities/claudes_next_enterprise_battle_is_not_mo.md`
 
 ## 核心要点
 - 模型竞争已不再是企业 AI 的唯一焦点；**agent 控制平面**正成为新的战略高地 

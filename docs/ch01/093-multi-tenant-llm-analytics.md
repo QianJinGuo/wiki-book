@@ -1,6 +1,6 @@
 # Multi-tenant LLM Analytics 三层安全架构
 
-> 📊 Level ⭐ | 5.2KB | `entities/multi-tenant-llm-analytics-row-level-security-aws.md`
+> 📊 Level ⭐⭐⭐ | 5.2KB | `entities/multi-tenant-llm-analytics-row-level-security-aws.md`
 
 PAR Technology 为餐饮行业 300+ 企业构建生产级多租户 Text-to-SQL Agent。核心挑战：同一数据库、同一问题、不同租户必须返回不同数据（加盟商看 $84K，品牌经理看 $9.2M）。文章提出三层独立确定性安全架构，使 LLM 在安全边界内运行而非充当安全执行者。
 

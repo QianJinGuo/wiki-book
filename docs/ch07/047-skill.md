@@ -1,6 +1,6 @@
 # Skill 版本管理五大原则：从越改越差到持续演进
 
-> 📊 Level ⭐⭐⭐⭐ | 8.2KB | `entities/skill-version-management-semantic-versioning-practices-winty.md`
+> 📊 Level ⭐⭐⭐ | 8.2KB | `entities/skill-version-management-semantic-versioning-practices-winty.md`
 
 > 原文归档：[原文归档](https://mp.weixin.qq.com/s/weA8CMZBI9B295tNft10WQ)
 

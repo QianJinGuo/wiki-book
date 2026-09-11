@@ -1,6 +1,6 @@
 # An Opinionated Guide to Using AI Right Now
 
-> 📊 Level ⭐⭐⭐⭐ | 8.7KB | `entities/an-opinionated-guide-to-using-ai-right-now.md`
+> 📊 Level ⭐⭐⭐ | 8.7KB | `entities/an-opinionated-guide-to-using-ai-right-now.md`
 
 ## 摘要
 

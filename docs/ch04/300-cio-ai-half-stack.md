@@ -1,6 +1,6 @@
 # 阿里云CIO：AI产研效能规模化提升实践（抛弃生码率、重构Half-Stack）
 
-> 📊 Level ⭐⭐⭐⭐ | 11.9KB | `entities/aliyun-cio-ai-rd-efficiency.md`
+> 📊 Level ⭐⭐⭐ | 11.9KB | `entities/aliyun-cio-ai-rd-efficiency.md`
 
 ## 相关实体
 - [Yumanju Ai Full Flow Efficiency](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yumanju-ai-full-flow-efficiency.md)

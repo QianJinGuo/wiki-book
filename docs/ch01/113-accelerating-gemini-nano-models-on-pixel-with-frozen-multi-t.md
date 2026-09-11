@@ -1,6 +1,6 @@
 # Accelerating Gemini Nano models on Pixel with frozen Multi-Token Prediction
 
-> 📊 Level ⭐ | 4.6KB | `entities/blog-accelerating-gemini-nano-models-on-pixel-with-frozen-multi-token-prediction.md`
+> 📊 Level ⭐⭐⭐ | 4.6KB | `entities/blog-accelerating-gemini-nano-models-on-pixel-with-frozen-multi-token-prediction.md`
 
 > **Source**: [research.google](https://research.google/blog/accelerating-gemini-nano-models-on-pixel-with-frozen-multi-token-prediction/)
 

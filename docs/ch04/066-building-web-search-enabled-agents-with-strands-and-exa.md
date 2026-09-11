@@ -1,6 +1,6 @@
 # Building web search-enabled agents with Strands and Exa
 
-> 📊 Level ⭐⭐ | 6.7KB | `entities/building-web-search-enabled-agents-with-strands-and-exa.md`
+> 📊 Level ⭐⭐⭐ | 6.7KB | `entities/building-web-search-enabled-agents-with-strands-and-exa.md`
 
 > -> [原文存档](https://aws.amazon.com/blogs/machine-learning/building-web-search-enabled-agents-with-strands-and-exa/)
 
@@ -26,9 +26,6 @@ See [source article](https://aws.amazon.com/blogs/machine-learning/building-web-
 5. **将 tracing 纳入开发流程而非生产调试专属** — AgentCore Observability 的 span 数据不只用于 production debugging，dev 阶段就应该打开查看 agent 是否按预期调用工具（是否用了正确的 category/date range/maxCharacters）。早期发现参数配置错误比等到生产事故才定位问题要高效得多。
 
 ## 关联实体
--
--
-
 - [Agentic Scheduler with Strands AgentCore for Multi-Region GPU Inference](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentic-scheduler-with-strands-agentcore-for-multi-region-gpu-inference.md)
 - [Product Ad Review Agent with Strands SDK and Bedrock](https://github.com/QianJinGuo/wiki-public/blob/main/entities/product-ad-review-agent-with-strands-sdk-bedrock.md)
 - [基于 Strands SDK 的企业级智能数据查询解决方案实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/enterprise-intelligent-data-query-solution-practice-based-on-strands-sdk.md)

@@ -1,6 +1,6 @@
 # What comes next with open models
 
-> 📊 Level ⭐⭐⭐⭐ | 31.3KB | `entities/interconnects-what-comes-next-with-open-models.md`
+> 📊 Level ⭐⭐⭐ | 31.3KB | `entities/interconnects-what-comes-next-with-open-models.md`
 
 → [原文存档](https://www.interconnects.ai/p/the-next-phase-of-open-models)
 

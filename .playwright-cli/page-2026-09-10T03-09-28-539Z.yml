@@ -1,0 +1,545 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation "页眉" [ref=e3]:
+      - link "AI 工程" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+      - generic [ref=e8]:
+        - generic [ref=e9]: AI 工程
+        - generic: 首页
+      - generic [ref=e11]:
+        - radio "切换到暗色模式"
+        - generic "切换到暗色模式" [ref=e12] [cursor=pointer]
+        - radio "切换到亮色模式"
+      - generic [ref=e16]:
+        - button "选择当前语言" [ref=e17] [cursor=pointer]
+        - generic:
+          - list:
+            - listitem [ref=e20]:
+              - link "中文" [ref=e21] [cursor=pointer]:
+                - /url: /index.html
+            - listitem [ref=e22]:
+              - link "English" [ref=e23] [cursor=pointer]:
+                - /url: /en/
+      - dialog [ref=e24]:
+        - search [ref=e25]:
+          - generic [ref=e26]:
+            - textbox "搜索" [ref=e27]
+            - navigation "查找":
+              - button "清空当前内容"
+          - generic: 键入以开始搜索
+      - button "实时翻译整站为英文" [ref=e32] [cursor=pointer]:
+        - generic [aria-hidden] [ref=e33]: 🌐
+        - generic [ref=e34]: English
+      - link [ref=e36] [cursor=pointer]:
+        - /url: https://github.com/QianJinGuo/wiki-book
+        - generic [ref=e40]:
+          - text: QianJinGuo/wiki-book
+          - list [ref=e41]:
+            - listitem [ref=e42]: v1.3.8
+            - listitem [ref=e43]: "4"
+            - listitem [ref=e44]: "2"
+    - navigation "标签" [ref=e45]:
+      - list [ref=e47]:
+        - listitem [ref=e48]:
+          - link "首页" [ref=e49] [cursor=pointer]:
+            - /url: index.html
+        - listitem [ref=e50]:
+          - link "AI 工程主课程" [ref=e51] [cursor=pointer]:
+            - /url: course.html
+        - listitem [ref=e52]:
+          - link "第一篇 · 入门篇" [ref=e53] [cursor=pointer]:
+            - /url: ch01-ai-basics.html
+        - listitem [ref=e54]:
+          - link "第二篇 · 工程师篇" [ref=e55] [cursor=pointer]:
+            - /url: ch04-agent-core.html
+        - listitem [ref=e56]:
+          - link "第三篇 · 专家篇" [ref=e57] [cursor=pointer]:
+            - /url: ch11-infra.html
+        - listitem [ref=e58]:
+          - link "第四篇 · 科学家篇" [ref=e59] [cursor=pointer]:
+            - /url: ch15-training.html
+        - listitem [ref=e60]:
+          - link "第五篇 · 大师篇" [ref=e61] [cursor=pointer]:
+            - /url: ch19-research-frontier.html
+        - listitem [ref=e62]:
+          - link "学习路径" [ref=e63] [cursor=pointer]:
+            - /url: PATH.html
+        - listitem [ref=e64]:
+          - link "参考文献" [ref=e65] [cursor=pointer]:
+            - /url: references.html
+        - listitem [ref=e66]:
+          - link "English" [ref=e67] [cursor=pointer]:
+            - /url: en/index.html
+  - main [ref=e69]:
+    - generic [ref=e70]:
+      - navigation "导航栏" [ref=e74]:
+        - list [ref=e75]:
+          - listitem [ref=e76]:
+            - link "首页":
+              - /url: index.html
+      - article [ref=e78]:
+        - generic [ref=e80]:
+          - generic [ref=e81]:
+            - paragraph [ref=e82]: 开源 · CC BY-SA 4.0 · 每日更新 · AI 辅助编撰
+            - heading "《AI 工程》" [level=1] [ref=e83]
+            - paragraph [ref=e84]: 从 LLM 原理到生产级 Agent —— 基于 4,000+ 篇一手文章系统编撰的开源读物
+            - paragraph [ref=e85]: 覆盖 LLM、Agent、Harness、MCP、RAG、安全、训练与推理全栈；每个条目均溯源一手原文并标注难度，可按学习路径循序渐进。
+            - generic [ref=e86]:
+              - link "🚀 开始阅读主课程" [ref=e87] [cursor=pointer]:
+                - /url: course.html
+              - link "学习路径" [ref=e88] [cursor=pointer]:
+                - /url: PATH.html
+              - link "GitHub" [ref=e89] [cursor=pointer]:
+                - /url: https://github.com/QianJinGuo/wiki-book
+            - generic [ref=e90]:
+              - generic [ref=e91]:
+                - generic [ref=e92]: 1,737
+                - generic [ref=e93]: 编撰条目
+              - generic [ref=e94]:
+                - generic [ref=e95]: 20 章 · 5 篇
+                - generic [ref=e96]: 全书结构
+              - generic [ref=e97]:
+                - generic [ref=e98]: 4,217
+                - generic [ref=e99]: 一手原文
+              - generic [ref=e100]:
+                - generic [ref=e101]: ★ × 5
+                - generic [ref=e102]: 难度分级
+            - paragraph [ref=e103]: 🔥 “老东西，终于肯把《AI 工程·焚诀》交出来了！”
+            - paragraph [ref=e104]:
+              - text: 这是一部会
+              - strong [ref=e105]: 自进化
+              - text: 的功法秘卷：每日自动收录新文、炼去糟粕，按四阶递进 ——
+              - strong [ref=e106]: 黄阶
+              - text: · 入门筑基 →
+              - strong [ref=e107]: 玄阶
+              - text: · 构建应用 →
+              - strong [ref=e108]: 地阶
+              - text: · 参透架构 →
+              - strong [ref=e109]: 天阶
+              - text: · 问道前沿；炼至大成，即可亲手炼制生产级 Agent。
+          - figure [ref=e110]:
+            - img "《AI 工程》电子书封面：从 LLM 原理到生产级 Agent" [ref=e111]
+            - generic [ref=e112]:
+              - text: 《AI 工程》· v1.3.8 ·
+              - link "查看竖版出版稿" [ref=e113] [cursor=pointer]:
+                - /url: https://jinguo.tech/assets/images/ai-engineering-cover-1600x2400.png
+        - generic [ref=e114]:
+          - navigation "全书五篇导览" [ref=e115]:
+            - link "第一篇 入门篇 从零理解 AI 637 篇 · 3 章" [ref=e116] [cursor=pointer]:
+              - /url: "#part-1"
+              - generic [ref=e117]: 第一篇
+              - generic [ref=e118]: 入门篇
+              - generic [ref=e119]: 从零理解 AI
+              - generic [ref=e120]: 637 篇 · 3 章
+            - link "第二篇 工程师篇 构建 AI 应用 730 篇 · 7 章" [ref=e121] [cursor=pointer]:
+              - /url: "#part-2"
+              - generic [ref=e122]: 第二篇
+              - generic [ref=e123]: 工程师篇
+              - generic [ref=e124]: 构建 AI 应用
+              - generic [ref=e125]: 730 篇 · 7 章
+            - link "第三篇 专家篇 深入系统架构 281 篇 · 4 章" [ref=e126] [cursor=pointer]:
+              - /url: "#part-3"
+              - generic [ref=e127]: 第三篇
+              - generic [ref=e128]: 专家篇
+              - generic [ref=e129]: 深入系统架构
+              - generic [ref=e130]: 281 篇 · 4 章
+            - link "第四篇 科学家篇 研究与创新 63 篇 · 4 章" [ref=e131] [cursor=pointer]:
+              - /url: "#part-4"
+              - generic [ref=e132]: 第四篇
+              - generic [ref=e133]: 科学家篇
+              - generic [ref=e134]: 研究与创新
+              - generic [ref=e135]: 63 篇 · 4 章
+            - link "第五篇 大师篇 哲学、安全与未来 26 篇 · 2 章" [ref=e136] [cursor=pointer]:
+              - /url: "#part-5"
+              - generic [ref=e137]: 第五篇
+              - generic [ref=e138]: 大师篇
+              - generic [ref=e139]: 哲学、安全与未来
+              - generic [ref=e140]: 26 篇 · 2 章
+          - generic [ref=e142]:
+            - generic [ref=e143]: 第一篇
+            - generic [ref=e144]:
+              - heading "入门篇从零理解 AI" [level=2] [ref=e145]
+              - paragraph [ref=e146]: 任何人
+        - generic [ref=e147]:
+          - article [ref=e148]:
+            - generic [ref=e149]:
+              - generic [ref=e150]: Ch01
+              - generic [ref=e151]: 550 篇
+            - heading [level=3] [ref=e152]:
+              - link "AI 与 LLM 基础" [ref=e153] [cursor=pointer]:
+                - /url: ch01-ai-basics.html
+            - paragraph [ref=e154]: 理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理
+            - generic [ref=e161]: ⭐ 138 · ⭐⭐ 58 · ⭐⭐⭐ 206 · ⭐⭐⭐⭐ 102 · ⭐⭐⭐⭐⭐ 46
+            - list [ref=e162]:
+              - listitem [ref=e163]: "⭐🧠 The Token Economy pt2: The Intelligence Company Gets Built"
+              - listitem [ref=e164]: ⭐The Google Capital Company
+              - listitem [ref=e165]: ⭐滴滴国际化客服质检智能化之路：基于 Amazon Bedrock 的多语种多业务线质检实践
+            - link "进入章节 · 共 550 篇" [ref=e166] [cursor=pointer]:
+              - /url: ch01-ai-basics.html
+              - text: 进入章节 · 共 550 篇
+              - generic [aria-hidden] [ref=e167]: →
+          - article [ref=e168]:
+            - generic [ref=e169]:
+              - generic [ref=e170]: Ch02
+              - generic [ref=e171]: 26 篇
+            - heading [level=3] [ref=e172]:
+              - link "提示词工程与上下文工程" [ref=e173] [cursor=pointer]:
+                - /url: ch02-prompt.html
+            - paragraph [ref=e174]: 与 AI 高效对话的科学与艺术：Prompt、CoT、Context Engineering
+            - generic [ref=e181]: ⭐ 6 · ⭐⭐ 3 · ⭐⭐⭐ 8 · ⭐⭐⭐⭐ 5 · ⭐⭐⭐⭐⭐ 4
+            - list [ref=e182]:
+              - listitem [ref=e183]: ⭐Hermes Agent 自进化机制源码解析
+              - listitem [ref=e184]: ⭐Agent Skill 编写指南
+              - listitem [ref=e185]: ⭐Claude Code Prompt 与上下文 Harness 设计
+            - link "进入章节 · 共 26 篇" [ref=e186] [cursor=pointer]:
+              - /url: ch02-prompt.html
+              - text: 进入章节 · 共 26 篇
+              - generic [aria-hidden] [ref=e187]: →
+          - article [ref=e188]:
+            - generic [ref=e189]:
+              - generic [ref=e190]: Ch03
+              - generic [ref=e191]: 61 篇
+            - heading [level=3] [ref=e192]:
+              - link "AI 工具与产品全景" [ref=e193] [cursor=pointer]:
+                - /url: ch03-ai-tools.html
+            - paragraph [ref=e194]: 2024-2026 AI 工具生态：从 IDE 到 Agent 平台
+            - generic [ref=e201]: ⭐ 4 · ⭐⭐ 8 · ⭐⭐⭐ 29 · ⭐⭐⭐⭐ 15 · ⭐⭐⭐⭐⭐ 5
+            - list [ref=e202]:
+              - listitem [ref=e203]: ⭐Turn repeated instructions into reusable skills in Lovable | Lovable
+              - listitem [ref=e204]: ⭐Harness Engineering 详解：如何将 AI Coding 率提升至 90%
+              - listitem [ref=e205]: ⭐Edge AI Networking — Wi-Fi 7/8 Convergence Analysis
+            - link "进入章节 · 共 61 篇" [ref=e206] [cursor=pointer]:
+              - /url: ch03-ai-tools.html
+              - text: 进入章节 · 共 61 篇
+              - generic [aria-hidden] [ref=e207]: →
+        - generic [ref=e208]:
+          - generic [ref=e209]:
+            - generic [ref=e210]: 第二篇
+            - generic [ref=e211]:
+              - heading "工程师篇构建 AI 应用" [level=2] [ref=e212]
+              - paragraph [ref=e213]: 有编程基础
+          - generic [ref=e214]:
+            - article [ref=e215]:
+              - generic [ref=e216]:
+                - generic [ref=e217]: Ch04
+                - generic [ref=e218]: 404 篇
+              - heading [level=3] [ref=e219]:
+                - link "Agent 核心架构" [ref=e220] [cursor=pointer]:
+                  - /url: ch04-agent-core.html
+              - paragraph [ref=e221]: 什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁
+              - generic [ref=e228]: ⭐ 43 · ⭐⭐ 49 · ⭐⭐⭐ 145 · ⭐⭐⭐⭐ 113 · ⭐⭐⭐⭐⭐ 54
+              - list [ref=e229]:
+                - listitem [ref=e230]: ⭐Agent 时间性策略（Temporal Policies）：基于轨迹的有状态授权架构
+                - listitem [ref=e231]: ⭐Building AI Agents in Accounting
+                - listitem [ref=e232]: ⭐Agentic Robot Policy Self-Improvement in the Real World
+              - link "进入章节 · 共 404 篇" [ref=e233] [cursor=pointer]:
+                - /url: ch04-agent-core.html
+                - text: 进入章节 · 共 404 篇
+                - generic [aria-hidden] [ref=e234]: →
+            - article [ref=e235]:
+              - generic [ref=e236]:
+                - generic [ref=e237]: Ch05
+                - generic [ref=e238]: 85 篇
+              - heading [level=3] [ref=e239]:
+                - link "Harness 工程" [ref=e240] [cursor=pointer]:
+                  - /url: ch05-harness.html
+              - paragraph [ref=e241]: 给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration
+              - generic [ref=e248]: ⭐ 14 · ⭐⭐ 11 · ⭐⭐⭐ 18 · ⭐⭐⭐⭐ 26 · ⭐⭐⭐⭐⭐ 16
+              - list [ref=e249]:
+                - listitem [ref=e250]: ⭐Harness Engineering：快手电商用 AI 流水线重塑研发范式（需求全生命周期自动化交付）
+                - listitem [ref=e251]: ⭐Cloud Use 框架：Agent 作为云上受治理主体的四层模型
+                - listitem [ref=e252]: "⭐Code is cheap: Harness 方法论——水流理论、最小混沌单元与反 slop"
+              - link "进入章节 · 共 85 篇" [ref=e253] [cursor=pointer]:
+                - /url: ch05-harness.html
+                - text: 进入章节 · 共 85 篇
+                - generic [aria-hidden] [ref=e254]: →
+            - article [ref=e255]:
+              - generic [ref=e256]:
+                - generic [ref=e257]: Ch06
+                - generic [ref=e258]: 32 篇
+              - heading [level=3] [ref=e259]:
+                - link "记忆与上下文管理" [ref=e260] [cursor=pointer]:
+                  - /url: ch06-memory.html
+              - paragraph [ref=e261]: Agent 的大脑：短期/长期/工作记忆的分层架构
+              - generic [ref=e268]: ⭐ 4 · ⭐⭐ 1 · ⭐⭐⭐ 11 · ⭐⭐⭐⭐ 7 · ⭐⭐⭐⭐⭐ 9
+              - list [ref=e269]:
+                - listitem [ref=e270]: ⭐AML（Agent Memory Leaderboard）：机制级 Agent 记忆评测榜单
+                - listitem [ref=e271]: ⭐Hermes Agent 记忆系统 vs OpenClaw 记忆观
+                - listitem [ref=e272]: ⭐Claude Code Agent Memory Systems — L0~L3 四层记忆方案
+              - link "进入章节 · 共 32 篇" [ref=e273] [cursor=pointer]:
+                - /url: ch06-memory.html
+                - text: 进入章节 · 共 32 篇
+                - generic [aria-hidden] [ref=e274]: →
+            - article [ref=e275]:
+              - generic [ref=e276]:
+                - generic [ref=e277]: Ch07
+                - generic [ref=e278]: 61 篇
+              - heading [level=3] [ref=e279]:
+                - link "技能、工具与 MCP" [ref=e280] [cursor=pointer]:
+                  - /url: ch07-skill-tool.html
+              - paragraph [ref=e281]: Agent 的手脚：Skill 系统、MCP 协议、Tool Use
+              - generic [ref=e288]: ⭐ 5 · ⭐⭐ 8 · ⭐⭐⭐ 18 · ⭐⭐⭐⭐ 17 · ⭐⭐⭐⭐⭐ 13
+              - list [ref=e289]:
+                - listitem [ref=e290]: ⭐Create Custom MCP Catalogs and Profiles
+                - listitem [ref=e291]: ⭐高德交易 VOC 自动排查：基于 Hermes 的多 Agent 架构实践
+                - listitem [ref=e292]: ⭐腾讯企业微信团队 Skill 流水线：AI代码生成率94%的需求开发全流程
+              - link "进入章节 · 共 61 篇" [ref=e293] [cursor=pointer]:
+                - /url: ch07-skill-tool.html
+                - text: 进入章节 · 共 61 篇
+                - generic [aria-hidden] [ref=e294]: →
+            - article [ref=e295]:
+              - generic [ref=e296]:
+                - generic [ref=e297]: Ch08
+                - generic [ref=e298]: 22 篇
+              - heading [level=3] [ref=e299]:
+                - link "多 Agent 协作" [ref=e300] [cursor=pointer]:
+                  - /url: ch08-multi-agent.html
+              - paragraph [ref=e301]: 从单兵到团队：编排、通信、治理
+              - generic [ref=e308]: ⭐ 2 · ⭐⭐ 2 · ⭐⭐⭐ 7 · ⭐⭐⭐⭐ 9 · ⭐⭐⭐⭐⭐ 2
+              - list [ref=e309]:
+                - listitem [ref=e310]: ⭐Multi-Agent AI Safety Research Funding Call（DeepMind 主导，1000 万美元，四大方向）
+                - listitem [ref=e311]: ⭐OpenClaw 多智能体团队搭建实战经验
+                - listitem [ref=e312]: ⭐⭐Graph Engineering：从单循环到多节点编排
+              - link "进入章节 · 共 22 篇" [ref=e313] [cursor=pointer]:
+                - /url: ch08-multi-agent.html
+                - text: 进入章节 · 共 22 篇
+                - generic [aria-hidden] [ref=e314]: →
+            - article [ref=e315]:
+              - generic [ref=e316]:
+                - generic [ref=e317]: Ch09
+                - generic [ref=e318]: 110 篇
+              - heading [level=3] [ref=e319]:
+                - link "AI 编程与代码生成" [ref=e320] [cursor=pointer]:
+                  - /url: ch09-ai-coding.html
+              - paragraph [ref=e321]: 最成熟的 Agent 品类：Claude Code、OpenClaw、Codex 深度拆解
+              - generic [ref=e328]: ⭐ 12 · ⭐⭐ 14 · ⭐⭐⭐ 35 · ⭐⭐⭐⭐ 33 · ⭐⭐⭐⭐⭐ 16
+              - list [ref=e329]:
+                - listitem [ref=e330]: ⭐AI Coding 的底层框架：一切优化都是在对抗熵增——信息论视角
+                - listitem [ref=e331]: ⭐Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南
+                - listitem [ref=e332]: ⭐无障碍设计师 vibe coding：当所有同事都在用 AI 写代码时
+              - link "进入章节 · 共 110 篇" [ref=e333] [cursor=pointer]:
+                - /url: ch09-ai-coding.html
+                - text: 进入章节 · 共 110 篇
+                - generic [aria-hidden] [ref=e334]: →
+            - article [ref=e335]:
+              - generic [ref=e336]:
+                - generic [ref=e337]: Ch10
+                - generic [ref=e338]: 16 篇
+              - heading [level=3] [ref=e339]:
+                - link "RAG 与知识检索" [ref=e340] [cursor=pointer]:
+                  - /url: ch10-rag.html
+              - paragraph [ref=e341]: 让 Agent 拥有外部知识：从向量检索到知识图谱
+              - generic [ref=e348]: ⭐ 1 · ⭐⭐ 1 · ⭐⭐⭐ 4 · ⭐⭐⭐⭐ 8 · ⭐⭐⭐⭐⭐ 2
+              - list [ref=e349]:
+                - listitem [ref=e350]: "⭐SkillCorpus: 大规模社区 Skill 生态的筛选、评测与边界分析"
+                - listitem [ref=e351]: ⭐⭐【实践教程】真实AI客服落地全流程：意图识别、混合检索到数据飞轮
+                - listitem [ref=e352]: ⭐⭐⭐Nvidia Multimodal RAG Knowledge Systems
+              - link "进入章节 · 共 16 篇" [ref=e353] [cursor=pointer]:
+                - /url: ch10-rag.html
+                - text: 进入章节 · 共 16 篇
+                - generic [aria-hidden] [ref=e354]: →
+        - generic [ref=e355]:
+          - generic [ref=e356]:
+            - generic [ref=e357]: 第三篇
+            - generic [ref=e358]:
+              - heading "专家篇深入系统架构" [level=2] [ref=e359]
+              - paragraph [ref=e360]: 有ML基础
+          - generic [ref=e361]:
+            - article [ref=e362]:
+              - generic [ref=e363]:
+                - generic [ref=e364]: Ch11
+                - generic [ref=e365]: 183 篇
+              - heading [level=3] [ref=e366]:
+                - link "云基础设施与部署" [ref=e367] [cursor=pointer]:
+                  - /url: ch11-infra.html
+              - paragraph [ref=e368]: Agent 上生产：Bedrock AgentCore、沙箱、多租户
+              - generic [ref=e375]: ⭐ 21 · ⭐⭐ 22 · ⭐⭐⭐ 84 · ⭐⭐⭐⭐ 39 · ⭐⭐⭐⭐⭐ 17
+              - list [ref=e376]:
+                - listitem [ref=e377]: ⭐如何保护 EC2 实例存储（Instance Store）数据不丢失：场景分析与自动化防护实践
+                - listitem [ref=e378]: ⭐AWS Glue 3.0 到 5.0 版本升级实践：中国区大规模 ETL 平台的迁移方法论
+                - listitem [ref=e379]: ⭐如何轻量化的在亚马逊云科技中国区安全使用 Transfer Family SFTP
+              - link "进入章节 · 共 183 篇" [ref=e380] [cursor=pointer]:
+                - /url: ch11-infra.html
+                - text: 进入章节 · 共 183 篇
+                - generic [aria-hidden] [ref=e381]: →
+            - article [ref=e382]:
+              - generic [ref=e383]:
+                - generic [ref=e384]: Ch12
+                - generic [ref=e385]: 60 篇
+              - heading [level=3] [ref=e386]:
+                - link "安全与治理" [ref=e387] [cursor=pointer]:
+                  - /url: ch12-security.html
+              - paragraph [ref=e388]: Agent 权限越大，安全责任越重：凭据、审计、合规
+              - generic [ref=e395]: ⭐ 9 · ⭐⭐ 5 · ⭐⭐⭐ 24 · ⭐⭐⭐⭐ 16 · ⭐⭐⭐⭐⭐ 6
+              - list [ref=e396]:
+                - listitem [ref=e397]: ⭐CISA urges critical infrastructure firms to 'fortify' before it's too
+                - listitem [ref=e398]: ⭐Where OpenClaw Security Is Heading — OpenClaw Blog
+                - listitem [ref=e399]: ⭐Token 撤销触发设备擦除的安全漏洞
+              - link "进入章节 · 共 60 篇" [ref=e400] [cursor=pointer]:
+                - /url: ch12-security.html
+                - text: 进入章节 · 共 60 篇
+                - generic [aria-hidden] [ref=e401]: →
+            - article [ref=e402]:
+              - generic [ref=e403]:
+                - generic [ref=e404]: Ch13
+                - generic [ref=e405]: 13 篇
+              - heading [level=3] [ref=e406]:
+                - link "MLOps 与评估" [ref=e407] [cursor=pointer]:
+                  - /url: ch13-mlops.html
+              - paragraph [ref=e408]: 不能观测就不能改进：评估体系、基准测试、实验追踪
+              - generic [ref=e413]: ⭐⭐⭐ 2 · ⭐⭐⭐⭐ 8 · ⭐⭐⭐⭐⭐ 3
+              - list [ref=e414]:
+                - listitem [ref=e415]: ⭐⭐⭐CEOs’ top priorities for IT leaders today
+                - listitem [ref=e416]: ⭐⭐⭐Discretizing Reward Models
+                - listitem [ref=e417]: ⭐⭐⭐⭐美团海报生成 AIGC 技术体系：PosterCraft/PosterOmni/PosterReward（ICLR/CVPR 2026 三连
+              - link "进入章节 · 共 13 篇" [ref=e418] [cursor=pointer]:
+                - /url: ch13-mlops.html
+                - text: 进入章节 · 共 13 篇
+                - generic [aria-hidden] [ref=e419]: →
+            - article [ref=e420]:
+              - generic [ref=e421]:
+                - generic [ref=e422]: Ch14
+                - generic [ref=e423]: 25 篇
+              - heading [level=3] [ref=e424]:
+                - link "数据工程" [ref=e425] [cursor=pointer]:
+                  - /url: ch14-data.html
+              - paragraph [ref=e426]: AI 的燃料：实时入湖、流处理、数据质量
+              - generic [ref=e433]: ⭐ 7 · ⭐⭐ 3 · ⭐⭐⭐ 10 · ⭐⭐⭐⭐ 4 · ⭐⭐⭐⭐⭐ 1
+              - list [ref=e434]:
+                - listitem [ref=e435]: ⭐使用 Amazon S3 Tables 优化数据湖：从Hudi 迁移到托管 Iceberg
+                - listitem [ref=e436]: "⭐Amazon Quick: Accelerating the path from enterprise data to AI-powered"
+                - listitem [ref=e437]: ⭐nOps FinOps Agent 架构：语义层驱动的数据分析 Agent 设计
+              - link "进入章节 · 共 25 篇" [ref=e438] [cursor=pointer]:
+                - /url: ch14-data.html
+                - text: 进入章节 · 共 25 篇
+                - generic [aria-hidden] [ref=e439]: →
+        - generic [ref=e440]:
+          - generic [ref=e441]:
+            - generic [ref=e442]: 第四篇
+            - generic [ref=e443]:
+              - heading "科学家篇研究与创新" [level=2] [ref=e444]
+              - paragraph [ref=e445]: 研究者
+          - generic [ref=e446]:
+            - article [ref=e447]:
+              - generic [ref=e448]:
+                - generic [ref=e449]: Ch15
+                - generic [ref=e450]: 25 篇
+              - heading [level=3] [ref=e451]:
+                - link "训练与微调" [ref=e452] [cursor=pointer]:
+                  - /url: ch15-training.html
+              - paragraph [ref=e453]: 打造专属模型：PPO → DPO → GRPO，合成数据，课程学习
+              - generic [ref=e460]: ⭐ 2 · ⭐⭐ 2 · ⭐⭐⭐ 13 · ⭐⭐⭐⭐ 4 · ⭐⭐⭐⭐⭐ 4
+              - list [ref=e461]:
+                - listitem [ref=e462]: ⭐Predicting Risk in Content Launches
+                - listitem [ref=e463]: ⭐多模态预训练物理：知识流、模态协同、早期统一与高效配方（arXiv 2608.05000）
+                - listitem [ref=e464]: ⭐⭐不用人类手写训练框架了！AI自己写代码，训出1B端侧「小钢炮」
+              - link "进入章节 · 共 25 篇" [ref=e465] [cursor=pointer]:
+                - /url: ch15-training.html
+                - text: 进入章节 · 共 25 篇
+                - generic [aria-hidden] [ref=e466]: →
+            - article [ref=e467]:
+              - generic [ref=e468]:
+                - generic [ref=e469]: Ch16
+                - generic [ref=e470]: 14 篇
+              - heading [level=3] [ref=e471]:
+                - link "推理优化与架构" [ref=e472] [cursor=pointer]:
+                  - /url: ch16-inference.html
+              - paragraph [ref=e473]: 让模型跑得更快：投机解码、MoE、PD 分离、量化
+              - generic [ref=e479]: ⭐⭐ 4 · ⭐⭐⭐ 4 · ⭐⭐⭐⭐ 4 · ⭐⭐⭐⭐⭐ 2
+              - list [ref=e480]:
+                - listitem [ref=e481]: ⭐⭐LLM 推理流水线完整解析：Prefill-Decode 双阶段模型
+                - listitem [ref=e482]: "⭐⭐Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP"
+                - listitem [ref=e483]: ⭐⭐Pytorch in Kernel Recsys Optimization
+              - link "进入章节 · 共 14 篇" [ref=e484] [cursor=pointer]:
+                - /url: ch16-inference.html
+                - text: 进入章节 · 共 14 篇
+                - generic [aria-hidden] [ref=e485]: →
+            - article [ref=e486]:
+              - generic [ref=e487]:
+                - generic [ref=e488]: Ch17
+                - generic [ref=e489]: 20 篇
+              - heading [level=3] [ref=e490]:
+                - link "多模态与生成" [ref=e491] [cursor=pointer]:
+                  - /url: ch17-multimodal.html
+              - paragraph [ref=e492]: Agent 的眼睛和耳朵：视觉、语音、视频理解与生成
+              - generic [ref=e498]: ⭐ 3 · ⭐⭐ 1 · ⭐⭐⭐ 13 · ⭐⭐⭐⭐ 3
+              - list [ref=e499]:
+                - listitem [ref=e500]: ⭐How transparent is DiffusionGemma (and why it matters)
+                - listitem [ref=e501]: "⭐TimeLens2: Generalist Video Temporal Grounding with Multimodal LLMs"
+                - listitem [ref=e502]: ⭐Mistral Shieldstral — Policy-Adaptive Multimodal Safety Classifier
+              - link "进入章节 · 共 20 篇" [ref=e503] [cursor=pointer]:
+                - /url: ch17-multimodal.html
+                - text: 进入章节 · 共 20 篇
+                - generic [aria-hidden] [ref=e504]: →
+            - article [ref=e505]:
+              - generic [ref=e506]:
+                - generic [ref=e507]: Ch18
+                - generic [ref=e508]: 4 篇
+              - heading [level=3] [ref=e509]:
+                - link "机器人与具身智能" [ref=e510] [cursor=pointer]:
+                  - /url: ch18-robotics.html
+              - paragraph [ref=e511]: 从数字到物理：强化学习、仿真、人形机器人
+              - generic [ref=e516]: ⭐ 1 · ⭐⭐⭐ 2 · ⭐⭐⭐⭐ 1
+              - list [ref=e517]:
+                - listitem [ref=e518]: ⭐NVIDIA Isaac Lab + Amazon SageMaker AI：机器人强化学习训练基础设施（Humanoid RL Scale
+                - listitem [ref=e519]: "⭐⭐⭐Unitree's IPO Filing: The State of the Robotics Market"
+                - listitem [ref=e520]: ⭐⭐⭐蔚蓝BabyAlpha A3消费级机器狗
+              - link "进入章节 · 共 4 篇" [ref=e521] [cursor=pointer]:
+                - /url: ch18-robotics.html
+                - text: 进入章节 · 共 4 篇
+                - generic [aria-hidden] [ref=e522]: →
+        - generic [ref=e523]:
+          - generic [ref=e524]:
+            - generic [ref=e525]: 第五篇
+            - generic [ref=e526]:
+              - heading "大师篇哲学、安全与未来" [level=2] [ref=e527]
+              - paragraph [ref=e528]: 思考者
+          - generic [ref=e529]:
+            - article [ref=e530]:
+              - generic [ref=e531]:
+                - generic [ref=e532]: Ch19
+                - generic [ref=e533]: 12 篇
+              - heading [level=3] [ref=e534]:
+                - link "前沿研究与理论" [ref=e535] [cursor=pointer]:
+                  - /url: ch19-research-frontier.html
+              - paragraph [ref=e536]: Scaling Law、涌现能力、世界模型、自我博弈
+              - generic [ref=e543]: ⭐ 1 · ⭐⭐ 1 · ⭐⭐⭐ 4 · ⭐⭐⭐⭐ 4 · ⭐⭐⭐⭐⭐ 2
+              - list [ref=e544]:
+                - listitem [ref=e545]: ⭐Lean Software Scaling Laws
+                - listitem [ref=e546]: ⭐⭐The Complexity of Simplicity | Jim Nielsen's Notes
+                - listitem [ref=e547]: ⭐⭐⭐世界模型的DeepSeek时刻！魔芯Flash World Model降本70%，跑出50FPS实时交互
+              - link "进入章节 · 共 12 篇" [ref=e548] [cursor=pointer]:
+                - /url: ch19-research-frontier.html
+                - text: 进入章节 · 共 12 篇
+                - generic [aria-hidden] [ref=e549]: →
+            - article [ref=e550]:
+              - generic [ref=e551]:
+                - generic [ref=e552]: Ch20
+                - generic [ref=e553]: 14 篇
+              - heading [level=3] [ref=e554]:
+                - link "AI 哲学、安全与未来" [ref=e555] [cursor=pointer]:
+                  - /url: ch20-ai-philosophy.html
+              - paragraph [ref=e556]: 超级智能、存在风险、AI 治理、人类命运
+              - generic [ref=e562]: ⭐ 1 · ⭐⭐⭐ 6 · ⭐⭐⭐⭐ 5 · ⭐⭐⭐⭐⭐ 2
+              - list [ref=e563]:
+                - listitem [ref=e564]: ⭐Workday Inference Engine Built-in Guardrails - Enterprise AI Safety In
+                - listitem [ref=e565]: ⭐⭐⭐James Cowling AI 时代工程哲学访谈（Dropbox 前首席工程师 / Convex CTO）
+                - listitem [ref=e566]: "⭐⭐⭐Dario Amodei: AI 指数发展与政策制定的时序鸿沟"
+              - link "进入章节 · 共 14 篇" [ref=e567] [cursor=pointer]:
+                - /url: ch20-ai-philosophy.html
+                - text: 进入章节 · 共 14 篇
+                - generic [aria-hidden] [ref=e568]: →
+        - generic [ref=e569]:
+          - text: 📊 全书收录 1,737 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新
+          - generic [ref=e570]: 最近同步：2026-09-10
+  - button "回到页面顶部"
+  - contentinfo [ref=e571]:
+    - navigation "页脚" [ref=e572]:
+      - 'link "下一页: AI 工程主课程" [ref=e573] [cursor=pointer]':
+        - /url: course.html
+        - generic [ref=e574]:
+          - text: 下一页
+          - generic [ref=e575]: AI 工程主课程
+    - link "github.com" [ref=e582] [cursor=pointer]:
+      - /url: https://github.com/QianJinGuo/wiki-book
+  - button "银月 · Talk to AI" [ref=e585] [cursor=pointer]

@@ -1,6 +1,6 @@
 # Harness Engineering：让 Coding Agent 可靠完成长程任务
 
-> 📊 Level ⭐⭐⭐⭐ | 12.5KB | `entities/harness-engineering-long-term-agent-tasks.md`
+> 📊 Level ⭐⭐⭐ | 12.5KB | `entities/harness-engineering-long-term-agent-tasks.md`
 
 ## 核心定义
 **Harness Engineering**：为 AI Coding Agent 构建「缰绳」，使其在安全边界内被稳定地约束、引导和复用。核心目标是让 Agent 能够可靠完成涉及成百上千文件、跨越多个会话、消耗数千万 Token 量级的**长程任务**。

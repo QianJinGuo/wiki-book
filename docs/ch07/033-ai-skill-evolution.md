@@ -1,6 +1,6 @@
 # ai-skill-evolution底层逻辑
 
-> 📊 Level ⭐⭐⭐⭐ | 20.2KB | `entities/ai-skill-evolution底层逻辑.md`
+> 📊 Level ⭐⭐⭐ | 20.2KB | `entities/ai-skill-evolution底层逻辑.md`
 
 [Ai Skill Evolution底层逻辑](https://juejin.cn/post/7620226704209018920)
 

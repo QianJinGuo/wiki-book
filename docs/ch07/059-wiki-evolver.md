@@ -1,6 +1,6 @@
 # Wiki Evolver
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 14.7KB | `entities/wiki-evolver.md`
+> 📊 Level ⭐⭐⭐ | 14.7KB | `entities/wiki-evolver.md`
 
 ## 相关查询
 

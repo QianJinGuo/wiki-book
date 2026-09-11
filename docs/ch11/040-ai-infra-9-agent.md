@@ -1,6 +1,6 @@
 # AI Infra 全景图：9 层 Agent 生产架构
 
-> 📊 Level ⭐⭐ | 5.2KB | `entities/ai-infra-panorama-9-layer-agent-production.md`
+> 📊 Level ⭐⭐⭐ | 5.2KB | `entities/ai-infra-panorama-9-layer-agent-production.md`
 
 > 从 L0 到 L8 逐层拆解 AI Agent 生产级基础设施，9 层纵向架构 + 4 个横切能力，工具选型与最佳实践。
 

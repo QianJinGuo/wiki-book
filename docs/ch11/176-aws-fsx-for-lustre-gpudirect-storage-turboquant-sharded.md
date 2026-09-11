@@ -1,6 +1,6 @@
 # AWS FSx for Lustre + GPUDirect Storage + TurboQuant: Sharded LLM Model Loading
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 15.1KB | `entities/aws-fsx-lustre-gpudirect-sharded-llm-loading.md`
+> 📊 Level ⭐⭐⭐ | 15.1KB | `entities/aws-fsx-lustre-gpudirect-sharded-llm-loading.md`
 
 > **Core insight**: 把 GPU 加载模型权重的瓶颈从 CPU 旁路（GPUDirect Storage 直传 HBM），配合 TurboQuant KV 压缩，把 LLM 冷启动 TTFT 从 **10-20 分钟降到秒级**。这是 2026 年超大规模 LLM 部署的工程必读。
 

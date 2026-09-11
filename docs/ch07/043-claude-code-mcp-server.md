@@ -1,6 +1,6 @@
 # Claude Code MCP Server
 
-> 📊 Level ⭐⭐⭐⭐ | 10.5KB | `entities/claude-code-mcp-server.md`
+> 📊 Level ⭐⭐⭐ | 10.5KB | `entities/claude-code-mcp-server.md`
 
 ## 核心洞察
 **MCP（Model Context Protocol）是 Anthropic 提出的开放协议，让 Claude Code 能调用外部服务提供的工具。它是 `tool_use` 最直接的应用——模型触发后，客户端向外部 MCP Server 进程发起 RPC 调用，拿到真实结果。**

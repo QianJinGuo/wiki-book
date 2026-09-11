@@ -30,7 +30,7 @@ AI 最终要从屏幕走进物理世界。
 
 ## Ch18.001 NVIDIA Isaac Lab + Amazon SageMaker AI：机器人强化学习训练基础设施（Humanoid RL Scale-up）
 
-> 📊 Level ⭐ | 5.9KB | `entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md`
+> 📊 Level ⭐⭐⭐ | 5.9KB | `entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md`
 
 > 本页原内容在 2026-09-07 质量闭环中判定为 **thin-0.78**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md`，一手来源仍见下方 sources。
@@ -229,7 +229,7 @@ Unitree 计划将 IPO 融资款约 3 亿美元（每年约 1 亿美元）用于 
 
 ## Ch18.004 蚂蚁灵波 LingBot-Vision — 空间原生视觉基础模型 & LingBot-Depth 2.0
 
-> 📊 Level ⭐⭐⭐⭐ | 8.0KB | `entities/lingbot-vision-spatial-native-vision-foundation-model-ant.md`
+> 📊 Level ⭐⭐⭐ | 8.0KB | `entities/lingbot-vision-spatial-native-vision-foundation-model-ant.md`
 
 > 机器之心报道 (2026-07-07) 的实体整理。蚂蚁灵波开源空间原生视觉基础模型 LingBot-Vision 及深度估计模型 LingBot-Depth 2.0。
 

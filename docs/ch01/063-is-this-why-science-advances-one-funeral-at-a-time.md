@@ -1,6 +1,6 @@
 # Is This Why Science Advances One Funeral at a Time?
 
-> 📊 Level ⭐ | 6.8KB | `entities/is-this-why-science-advances-one-funeral-at.md`
+> 📊 Level ⭐⭐⭐ | 6.8KB | `entities/is-this-why-science-advances-one-funeral-at.md`
 
 > → [原文存档](https://nautil.us/is-this-why-science-advances-one-funeral-at-a-time-1280650)
 

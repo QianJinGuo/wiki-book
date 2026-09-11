@@ -1,6 +1,6 @@
 # Skill 产品哲学：歸藏做了爆款 Skill 后的产品反思
 
-> 📊 Level ⭐⭐⭐⭐ | 16.7KB | `entities/skill-product-philosophy-guicang-爆款经验-2026-06-12.md`
+> 📊 Level ⭐⭐⭐ | 16.7KB | `entities/skill-product-philosophy-guicang-爆款经验-2026-06-12.md`
 
 → [原文存档](https://mp.weixin.qq.com/s/sZXl5kHA9LErEwnegpvgXg)
 

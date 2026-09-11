@@ -1,6 +1,6 @@
 # Claw-SWE-Bench：首个独立测量Harness对编程Agent影响的基准
 
-> 📊 Level ⭐⭐⭐⭐ | 11.5KB | `entities/claw-swe-bench-harness-evaluation-benchmark-tokenrhythm.md`
+> 📊 Level ⭐⭐⭐ | 11.5KB | `entities/claw-swe-bench-harness-evaluation-benchmark-tokenrhythm.md`
 
 ## 核心贡献
 

@@ -1,6 +1,6 @@
 # An agent capability library
 
-> 📊 Level ⭐ | 3.5KB | `entities/agent-capability-library.md`
+> 📊 Level ⭐⭐⭐ | 3.5KB | `entities/agent-capability-library.md`
 
 > **来源**: [An agent capability library](https://samihonkonen.com/posts/an-agent-capability-library/)
 

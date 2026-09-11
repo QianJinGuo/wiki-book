@@ -1,6 +1,6 @@
 # Making Claude a chemist
 
-> 📊 Level ⭐⭐ | 7.8KB | `entities/anthropic-com-research-making-claude-a-chemist.md`
+> 📊 Level ⭐⭐⭐ | 7.8KB | `entities/anthropic-com-research-making-claude-a-chemist.md`
 
 ### 1. Claude 作为化学家：专业领域 AI 的里程碑
 Anthropic 的研究让 Claude 在化学领域达到专家水平——不是通用 AI 的泛化能力，而是通过专业训练和评估实现的领域专精。
@@ -31,7 +31,7 @@ Anthropic 的研究让 Claude 在化学领域达到专家水平——不是通�
 
 → [原文存档](https://www.anthropic.com/research/making-claude-a-chemist)
 
-> *Score: v=7 × c=7 = 49 | stars=4 | Anthropic官方研究博客，介绍Claude在化学领域（特别是NMR谱图分析）的应用，提供了AI+化学领域的数据挑战背景和具体用例，但核心技术细节（Claude vs ChemDraw对比）在外链PDF中，文章本体偏概述。*
+> *Anthropic官方研究博客，介绍Claude在化学领域（特别是NMR谱图分析）的应用，提供了AI+化学领域的数据挑战背景和具体用例，但核心技术细节（Claude vs ChemDraw对比）在外链PDF中，文章本体偏概述。*
 
 _Summary: We’re working with world-class synthetic, computational, and analytical chemists to make Claude better at chemistry. In this post, we share our first work as part of this effort, in which Anthropic chemist, David Kamber, examines how Claude performs on a chemist’s most common analytical input, an NMR spectrum._ When working with molecules, chemists move between hand-drawn structures on a whiteboard, instrument readouts, database query strings, and the technical notations of patents and publications. Each of these representations encodes the same underlying chemistry, but each demands a different kind of fluency. A sketch of caffeine, for example, allows a chemist to spot its resemblance to adenosine, the body’s drowsiness signal, and predict that it keeps us alert by blocking the receptor. However, that same sketch cannot help a chemist tell it apart from other near-identical looking molecules.
 

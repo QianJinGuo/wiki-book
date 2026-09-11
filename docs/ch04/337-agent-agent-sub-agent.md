@@ -1,6 +1,6 @@
 # Agent 如何管理其他 Agent：四种 Sub Agent 模式
 
-> 📊 Level ⭐⭐⭐⭐ | 8.4KB | `entities/four-sub-agent-patterns.md`
+> 📊 Level ⭐⭐⭐ | 8.4KB | `entities/four-sub-agent-patterns.md`
 
 → [原文存档](https://mp.weixin.qq.com/s/OmdV7cucIVqwOVo7ZO_h1g)
 

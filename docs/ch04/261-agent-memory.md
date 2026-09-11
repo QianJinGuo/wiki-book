@@ -1,6 +1,6 @@
 # Agent Memory 架构本质
 
-> 📊 Level ⭐⭐⭐⭐ | 17.5KB | `entities/agent-memory-architecture-essence.md`
+> 📊 Level ⭐⭐⭐ | 17.5KB | `entities/agent-memory-architecture-essence.md`
 
 ## 瓶颈在持续理解
 今天的大模型在单次会话里已经足够聪明。问题不在于它一时想不出来，而在于它没法把昨天学到的东西，以一种可靠、可更新、可追责的方式带到今天。

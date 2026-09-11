@@ -1,13 +1,12 @@
 # A backdoor in a LinkedIn job offer
 
-> 📊 Level ⭐ | 3.4KB | `entities/roman-linkedin-backdoor-supply-chain.md`
+> 📊 Level ⭐⭐⭐ | 3.4KB | `entities/roman-linkedin-backdoor-supply-chain.md`
 
 > Source: [原文存档](https://roman.pt/posts/linkedin-backdoor/)
 
 ## 核心要点
 
 - **来源**: https://roman.pt/posts/linkedin-backdoor/
-- **评分**: v=8, c=8, v×c=64, stars=4
 - **评估理由**: Well-written first-person security case study of a real social engineering / supply chain attack via LinkedIn. Clearly structured narrative (setup, backdoor, trigger mechanism, impersonation, takeaways) with concrete technical details: npm `prepare` lifecycle script auto-executing after `npm install
 
 ## 内容提炼

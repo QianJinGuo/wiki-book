@@ -1,6 +1,6 @@
 # Agent 观测与优化开发者摸底：Close the Loop 方法论与 700+ 调研基线
 
-> 📊 Level ⭐ | 4.7KB | `entities/agent-observability-optimization-survey-aliyun-2026-09.md`
+> 📊 Level ⭐⭐⭐ | 4.7KB | `entities/agent-observability-optimization-survey-aliyun-2026-09.md`
 
 阿里云云原生 2026 年 8-9 月在北京、上海、深圳三城发起「Agent 评估与优化 · Close the Loop」系列开发者沙龙，基于 700+ 报名问卷数据给出企业 Agent 落地现状画像，并沉淀出闭环优化方法论。核心结论：**需求强烈、基建薄弱、认知体系化不够**——六成受访者已进入 POC/生产，但观测、评估、优化闭环的工程化程度极低。
 

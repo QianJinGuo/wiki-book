@@ -1,11 +1,10 @@
 # Agentic search models
 
-> 📊 Level ⭐⭐ | 6.2KB | `entities/agentic-search-models-softwaredoug.md`
+> 📊 Level ⭐⭐⭐ | 6.2KB | `entities/agentic-search-models-softwaredoug.md`
 
 > -> [原文存档](https://softwaredoug.com/blog/2026/05/11/the-new-agentic-search-models.html)
 
 ## Summary
-7×8=56 - Article ingested from newsletter candidate pipeline.
 
 ## Notes
 → [原文存档](https://softwaredoug.com/blog/2026/05/11/the-new-agentic-search-models.html)

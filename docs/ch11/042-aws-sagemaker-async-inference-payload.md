@@ -1,6 +1,6 @@
 # AWS SageMaker Async Inference 内联 Payload 支持
 
-> 📊 Level ⭐⭐ | 4.2KB | `entities/aws-sagemaker-async-inference-inline-payloads.md`
+> 📊 Level ⭐⭐⭐ | 4.2KB | `entities/aws-sagemaker-async-inference-inline-payloads.md`
 
 ## 核心变更
 

@@ -1,6 +1,6 @@
 # Trace2Skill 把\"轨迹里的局部经验\"蒸馏成可迁移的 Agent Skills
 
-> 📊 Level ⭐⭐ | 6.1KB | `entities/trace2skill-trajectory-distillation-agent-skills.md`
+> 📊 Level ⭐⭐⭐ | 6.1KB | `entities/trace2skill-trajectory-distillation-agent-skills.md`
 
 ## Trace2Skill 把"轨迹里的局部经验"蒸馏成可迁移的 Agent Skills
 今天越来越多的 LLM Agent 都在依赖 skills。这里的 skill 是一类结构化、可复用的任务指导文档，包含：什么时候该用某种方法、步骤怎么走、哪些坑最容易踩、哪些脚本/参考资料/辅助文件值得配套。

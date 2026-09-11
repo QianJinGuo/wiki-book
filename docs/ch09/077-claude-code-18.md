@@ -1,6 +1,6 @@
 # Claude Code 18个隐藏设置
 
-> 📊 Level ⭐⭐⭐⭐ | 13.0KB | `entities/claude-code-hidden-settings-18.md`
+> 📊 Level ⭐⭐⭐ | 13.0KB | `entities/claude-code-hidden-settings-18.md`
 
 原文：Mnimiy (@Mnilax)，2026-05-23。18个设置分为三组：Claude.ai(8个)、Claude Code(7个)、API/Console(3个)。
 

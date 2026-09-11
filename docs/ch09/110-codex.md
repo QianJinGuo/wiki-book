@@ -1,6 +1,6 @@
 # Codex 五层架构：记忆/知识/护栏/委派/分发
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 9.5KB | `entities/codex-5-layer-architecture.md`
+> 📊 Level ⭐⭐⭐ | 9.5KB | `entities/codex-5-layer-architecture.md`
 
 ## 摘要
 

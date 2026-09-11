@@ -1,6 +1,6 @@
 # Anthropic 实战分享：如何让 AI Agent 持续工作几天？
 
-> 📊 Level ⭐⭐⭐⭐ | 10.6KB | `entities/anthropic-long-running-agent-architecture-6h-retroforge.md`
+> 📊 Level ⭐⭐⭐ | 10.6KB | `entities/anthropic-long-running-agent-architecture-6h-retroforge.md`
 
 → [原文存档](https://mp.weixin.qq.com/s/NNbzBdc4SkxoWIuUdqPcFA)
 

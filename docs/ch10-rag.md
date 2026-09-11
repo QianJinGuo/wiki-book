@@ -34,7 +34,7 @@ RAG 不只是"检索 + 拼接"——它是知识管理的入口。
 
 ## Ch10.001 SkillCorpus: 大规模社区 Skill 生态的筛选、评测与边界分析
 
-> 📊 Level ⭐ | 4.8KB | `entities/skillcorpus-consolidating-open-skill-ecosystem.md`
+> 📊 Level ⭐⭐⭐ | 4.8KB | `entities/skillcorpus-consolidating-open-skill-ecosystem.md`
 
 > 首个端到端框架：聚合开源 SKILL.md 生态，提纯为 96,401 标准化技能，在真实 Agent 任务上评测社区技能的实际价值并界定其边界。
 
@@ -103,7 +103,7 @@ SkillCorpus 是由 EverMind、盛大集团与北京大学联合提出的框架�
 
 ## Ch10.002 【实践教程】真实AI客服落地全流程：意图识别、混合检索到数据飞轮
 
-> 📊 Level ⭐⭐ | 7.7KB | `entities/实践教程真实ai客服落地全流程意图识别混合检索到数据飞轮.md`
+> 📊 Level ⭐⭐⭐ | 7.7KB | `entities/实践教程真实ai客服落地全流程意图识别混合检索到数据飞轮.md`
 
 > AI训练营  ** 9期  ** ，  ** 今日  ** 开班，欢迎咨询
 书接上文： [ 《实践：AI客服实战方法论》 ](<https://mp.weixin.qq.com/s?__biz=Mzg2MzcyODQ5MQ==&mid=2247498987&idx=1&sn=5e3c5dc641b9eb94734ee27af0ad3381&scene=21#wechat_redirect>)
@@ -456,7 +456,7 @@ RAG 的优势是构建成本低、时效性高（灌一篇搜一篇），结构�
 
 ## Ch10.007 向量库是RAG的前菜，知识图谱是答案，本体论是灵魂
 
-> 📊 Level ⭐⭐⭐⭐ | 50.1KB | `entities/向量库是rag的前菜知识图谱是答案本体论是灵魂.md`
+> 📊 Level ⭐⭐⭐ | 50.1KB | `entities/向量库是rag的前菜知识图谱是答案本体论是灵魂.md`
 
 [向量库是Rag的前菜知识图谱是答案本体论是灵魂](https://mp.weixin.qq.com/s/2pk4Mhr4nLMapJrTqpYX6Q)
 
@@ -817,7 +817,7 @@ PS：从这里也可以看出来，图谱的存在其实是为了解决工程维
 
 ## Ch10.008 RAG 分块优化 2025：策略选择与工程实践
 
-> 📊 Level ⭐⭐⭐⭐ | 18.0KB | `entities/rag-chunking-optimization-2025.md`
+> 📊 Level ⭐⭐⭐ | 18.0KB | `entities/rag-chunking-optimization-2025.md`
 
 ## 相关实体
 
@@ -968,17 +968,11 @@ RAG 系统的效果瓶颈不在模型，而在**入库质量**。同样的 Embed
 ---
 
 **补充阅读**：
--
--
--
--
--
-
 ---
 
 ## Ch10.009 RAG Chunk Embedding Rerank Pipeline
 
-> 📊 Level ⭐⭐⭐⭐ | 13.8KB | `entities/rag-chunk-embedding-rerank-pipeline.md`
+> 📊 Level ⭐⭐⭐ | 13.8KB | `entities/rag-chunk-embedding-rerank-pipeline.md`
 
 # RAG 分块·向量化·召回·重排流水线
 
@@ -1119,7 +1113,7 @@ RAG 项目需要**可观测性和飞轮系统**：回答需要有依据、可追
 
 ## Ch10.010 RAG 全链路技术详解：从文档加载到 Ragas 评估
 
-> 📊 Level ⭐⭐⭐⭐ | 12.8KB | `entities/rag-full-pipeline-taobao.md`
+> 📊 Level ⭐⭐⭐ | 12.8KB | `entities/rag-full-pipeline-taobao.md`
 
 → [原文存档](https://mp.weixin.qq.com/s/aA2PFaabKNlDq96jhAdDkQ)
 
@@ -1213,7 +1207,7 @@ Graph RAG 常常被误解为"知识图谱 + 向量检索"的简单组合。它�
 
 ## Ch10.011 Karpathy LLM Wiki V2：记忆生命周期 + 知识图谱 + 混合检索 + 落地路线图
 
-> 📊 Level ⭐⭐⭐⭐ | 11.5KB | `entities/karpathy-llm-wiki-v2-deep-analysis-rohit-ghumare.md`
+> 📊 Level ⭐⭐⭐ | 11.5KB | `entities/karpathy-llm-wiki-v2-deep-analysis-rohit-ghumare.md`
 
 # Karpathy LLM Wiki V2：从复利启动到复利防烂
 
@@ -1368,7 +1362,7 @@ V2 的评估方法论强调"围绕决策做"而非"功能全覆盖"。BM25、向
 
 ## Ch10.012 MRAgent：记忆是重建的，不是检索的
 
-> 📊 Level ⭐⭐⭐⭐ | 10.9KB | `entities/mragent-memory-reconstructed-not-retrieved-nus-icml2026.md`
+> 📊 Level ⭐⭐⭐ | 10.9KB | `entities/mragent-memory-reconstructed-not-retrieved-nus-icml2026.md`
 
 新加坡国立大学（NUS）在 ICML 2026 提出 MRAgent，核心主张：**记忆访问应该跟着推理一起走**——每发现一条新证据，就改一次下一步要查什么。在 LoCoMo 上整体得分相对最强基线提升 23%，LongMemEval 提升 32%，Token 消耗仅 A-Mem 的 1/5。
 
@@ -1522,7 +1516,7 @@ Single-hop 涨幅温和（83→91），Multi-hop 跳幅巨大（75→90）。这
 
 ## Ch10.013 Instacart 广告检索架构演进：从 BERT 打分到生成式 token-by-token 检索
 
-> 📊 Level ⭐⭐⭐⭐ | 8.3KB | `entities/instacart-ads-retrieval-generative-token-by-token.md`
+> 📊 Level ⭐⭐⭐ | 8.3KB | `entities/instacart-ads-retrieval-generative-token-by-token.md`
 
 ## 摘要
 
@@ -1616,7 +1610,7 @@ CR 模型依赖原子产品 ID 作为独立 token，这定义了模型能理解�
 
 ## Ch10.014 Fragnesia: Linux Kernel Local Privilege Escalation via ESP-in-TCP
 
-> 📊 Level ⭐⭐⭐⭐ | 8.0KB | `entities/fragnesia-linux-kernel-local-privilege-escalation-via-esp-in-tcp.md`
+> 📊 Level ⭐⭐⭐ | 8.0KB | `entities/fragnesia-linux-kernel-local-privilege-escalation-via-esp-in-tcp.md`
 
 ## 漏洞概述
 
@@ -1709,7 +1703,7 @@ Fragnesia 利用链的第一步依赖 user namespace 隔离来获取 `CAP_NET_AD
 
 ## Ch10.015 RAG → 知识图谱 → 本体论：三层知识架构
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 28.8KB | `entities/rag-vector-knowledge-graph-ontology.md`
+> 📊 Level ⭐⭐⭐ | 28.8KB | `entities/rag-vector-knowledge-graph-ontology.md`
 
 # rag-vector-knowledge-graph-ontology
 
@@ -1991,7 +1985,7 @@ LLM 识别关键实体
 
 ## 第 4 来源 — AWS HippoRAG Implementation (Amazon Bedrock + Neptune + Titan, 2026-07-01)
 
-v×c=7×8=56, stars=4。AWS 官方博客提供的 HippoRAG 部署指南，使用 Bedrock (LLM)、Neptune (图数据库)、Neptune Analytics (Personalized PageRank)、Titan Embeddings (向量化) 全套 AWS 原生服务实现多跳 RAG。
+AWS 官方博客提供的 HippoRAG 部署指南，使用 Bedrock (LLM)、Neptune (图数据库)、Neptune Analytics (Personalized PageRank)、Titan Embeddings (向量化) 全套 AWS 原生服务实现多跳 RAG。
 
 ### 互补角度 (vs 第 1-3 来源的 SAG 侧重点)
 
@@ -2019,7 +2013,7 @@ HippoRAG on AWS 提供了一个**经典的 GraphRAG 生产实现模板**，与 S
 
 ## Ch10.016 Ettin Reranker Family
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 15.2KB | `entities/ettin-reranker-family.md`
+> 📊 Level ⭐⭐⭐ | 15.2KB | `entities/ettin-reranker-family.md`
 
 ## 模型概览
 

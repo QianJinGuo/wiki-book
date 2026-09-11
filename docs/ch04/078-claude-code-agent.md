@@ -1,6 +1,6 @@
 # Claude Code 的 Agent 工程
 
-> 📊 Level ⭐⭐ | 5.6KB | `entities/claude-code-agent-engineering.md`
+> 📊 Level ⭐⭐⭐ | 5.6KB | `entities/claude-code-agent-engineering.md`
 
 > URL：https://mp.weixin.qq.com/s/vP4bfT93egfH3NTwkpwcDw
 > 发布时间：2026年4月1日 12:42

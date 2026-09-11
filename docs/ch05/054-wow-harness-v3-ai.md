@@ -1,6 +1,6 @@
 # wow-harness v3：AI 开发的治理协议
 
-> 📊 Level ⭐⭐⭐⭐ | 16.3KB | `entities/wow-harness-v3-governance-protocol.md`
+> 📊 Level ⭐⭐⭐ | 16.3KB | `entities/wow-harness-v3-governance-protocol.md`
 
 > "协议比能力重要，治理比智能重要，长期连贯性比单次质量重要。" —— 张晨曦（Nature），通向惊喜科技创始人
 

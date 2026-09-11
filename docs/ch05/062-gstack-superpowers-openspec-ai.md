@@ -1,12 +1,12 @@
 # 三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战
 
-> 📊 Level ⭐⭐⭐⭐ | 11.5KB | `entities/three-tools-in-one-gstack-superpowers-openspec-engineering-ai-coding.md`
+> 📊 Level ⭐⭐⭐ | 11.5KB | `entities/three-tools-in-one-gstack-superpowers-openspec-engineering-ai-coding.md`
 
 ## 元信息
 - **作者**：AgentBuff
 - **日期**：2026-05-12
 - **平台**：微信公众号
-- **评分**：v×c = 8×8 = 64（strong，4星）
+
 - **关联工具**：OpenSpec、Superpowers、gstack
 
 ## 核心概念

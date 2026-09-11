@@ -1,6 +1,6 @@
 # How harnesses and post-training close the open-weight bug-finding gap
 
-> 📊 Level ⭐⭐⭐⭐ | 15.5KB | `entities/how-harnesses-and-post-training-close-the-open-weight-bug-finding-gap-20260606.md`
+> 📊 Level ⭐⭐⭐ | 15.5KB | `entities/how-harnesses-and-post-training-close-the-open-weight-bug-finding-gap-20260606.md`
 
 > **Background**: Vincenzo Iozzo (security researcher) ran a controlled study with 5 open-weight LLMs against a single known bug to measure how much base-model architecture vs post-training (RLHF/instruction-tuning) drives vulnerability-finding capability. Result: post-training dominates — even small open models with good harness scaffolding match or beat larger base models.
 
@@ -160,7 +160,6 @@ Tigress-obfuscated binary 要求 harness 能处理控制流图简化、间接跳
 | Aspect | Value |
 |--------|-------|
 | **Type** | new entity (vincenzo OSS vuln research, no existing coverage) |
-| **Ingest score** | v=9 c=9 v×c=81 stars=5 |
 | **Confidence** | 9/10 (controlled setup, single-bug reproducible) |
 | **Uniqueness** | distinct from existing harness-architecture entities — empirical measurement vs pattern design |
 | **Action** | create new entity + raw article + index entry + log entry |

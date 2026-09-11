@@ -1,6 +1,6 @@
 # Karpathy's Autoresearch found a 3-year-old bug in our query engine (and improved performance by 11%) - PostHog
 
-> 📊 Level ⭐ | 14.3KB | `entities/https-posthog-com-blog-karpathy-autoresearch-query-engine-bug.md`
+> 📊 Level ⭐⭐⭐ | 14.3KB | `entities/https-posthog-com-blog-karpathy-autoresearch-query-engine-bug.md`
 
 ## 概述
 

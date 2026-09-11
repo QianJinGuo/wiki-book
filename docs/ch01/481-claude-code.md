@@ -1,6 +1,6 @@
 # Claude Code 架构解析
 
-> 📊 Level ⭐⭐⭐⭐ | 9.6KB | `entities/claude-code-architecture.md`
+> 📊 Level ⭐⭐⭐ | 9.6KB | `entities/claude-code-architecture.md`
 
 ## Overview
 Claude Code 源码拆解（by 无岳，阿里云开发者，2026-04-15）。核心论点：**真正决定 Agent 能不能长期活下去的，不是模型，而是围着模型搭起来的运行时。**

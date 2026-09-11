@@ -1,6 +1,6 @@
 # MCP-based Interactive PDF Text Extraction from Amazon S3
 
-> 📊 Level ⭐⭐⭐⭐ | 12.0KB | `entities/mcp-pdf-text-extraction-s3-interactive-aws.md`
+> 📊 Level ⭐⭐⭐ | 12.0KB | `entities/mcp-pdf-text-extraction-s3-interactive-aws.md`
 
 AWS 推出的基于 Model Context Protocol (MCP) 的交互式 PDF 文本提取方案，让 AI Agent 能够实时从 Amazon S3 存储的 PDF 文档中提取文本内容，无需等待批量处理管道。
 

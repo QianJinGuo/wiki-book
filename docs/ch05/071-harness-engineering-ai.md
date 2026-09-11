@@ -1,6 +1,6 @@
 # Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 37.1KB | `entities/harness-engineering.md`
+> 📊 Level ⭐⭐⭐ | 37.1KB | `entities/harness-engineering.md`
 
 ## 核心命题
 **AI 不缺能力，缺的是一套让它不翻车的系统。**

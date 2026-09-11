@@ -13,7 +13,6 @@ The EU AI Act requires organizations fine-tuning large language models (LLMs) to
 ## 关键要点
 - 技术领域：AI / Regulatory / EU AI Act / Amazon SageMaker
 - 来源：AWS Machine Learning Blog
-- 评分：value=8, confidence=9, product=72
 
 ## 链接
 - [原文](https://aws.amazon.com/blogs/machine-learning/navigating-eu-ai-act-requirements-for-llm-fine-tuning-on-amazon-sagemaker-ai/)

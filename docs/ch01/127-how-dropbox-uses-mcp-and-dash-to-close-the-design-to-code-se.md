@@ -1,13 +1,12 @@
 # How Dropbox uses MCP and Dash to close the design-to-code security gap
 
-> 📊 Level ⭐ | 3.7KB | `entities/dropbox-mcp-dash-design-code-security.md`
+> 📊 Level ⭐⭐⭐ | 3.7KB | `entities/dropbox-mcp-dash-design-code-security.md`
 
 > Source: [原文存档](https://dropbox.tech/security/dropbox-mcp-dash-design-code-security)
 
 ## 核心要点
 
 - **来源**: https://dropbox.tech/security/dropbox-mcp-dash-design-code-security
-- **评分**: v=7, c=6, v×c=42, stars=4
 - **评估理由**: Solid technical case study from Dropbox addressing a real problem (design-to-code security gap) with concrete data (12% link-back rate, 54% delay >1 month). Provides actionable insights on using MCP and Dash to bridge threat models and code review. However, the article appears truncated mid-sentence
 
 ## 内容提炼

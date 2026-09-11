@@ -1,6 +1,6 @@
 # 长时间运行应用的 Harness 设计
 
-> 📊 Level ⭐⭐⭐⭐ | 19.8KB | `entities/harness-design-long-running-apps.md`
+> 📊 Level ⭐⭐⭐ | 19.8KB | `entities/harness-design-long-running-apps.md`
 
 ## 正文
 在过去几个月里，我一直在同时处理两个彼此关联的问题：如何让 Claude 产出高质量的前端设计，以及如何让它在无人干预的情况下构建完整应用。这项工作起源于我们更早之前在 frontend design skill 和 long-running coding agent harness 上的探索。当时，我和同事们已经通过提示工程与 harness 设计，让 Claude 的表现明显超越了 baseline，但这两条路线最终都碰到了天花板。

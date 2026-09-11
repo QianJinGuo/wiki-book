@@ -1,6 +1,6 @@
 # Agent生产级Harness工程指南
 
-> 📊 Level ⭐⭐⭐⭐ | 14.6KB | `entities/agent-production-harness-engineering.md`
+> 📊 Level ⭐⭐⭐ | 14.6KB | `entities/agent-production-harness-engineering.md`
 
 ## 核心定位
 **工程赤字（Engineering Deficit）**：大多数 Agent 项目失败，不是因为模型能力不够，而是模型周围的工程（Harness）不够扎实。

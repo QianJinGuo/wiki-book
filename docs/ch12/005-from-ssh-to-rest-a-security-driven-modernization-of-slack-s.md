@@ -1,6 +1,6 @@
 # From SSH to REST: A Security-Driven Modernization of Slack's EMR Data Pipelines
 
-> 📊 Level ⭐ | 8.9KB | `entities/from-ssh-to-rest-a-security-driven-modernization-of-slacks-e.md`
+> 📊 Level ⭐⭐⭐ | 8.9KB | `entities/from-ssh-to-rest-a-security-driven-modernization-of-slacks-e.md`
 
 ### 问题本质：SSH 作为临时方案的长期技术债
 Slack 数据平台建于 2017 年，彼时 Airflow 通过 SSHOperator 直接连接 EMR 主节点执行命令是 最直接 的路径。这种模式在规模小、团队少时完全合理，但随着 700+ 生产作业分散到 8 个独立数据区域，SSH 从便利工具演变成基础设施现代化的 阻塞点。

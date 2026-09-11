@@ -1,6 +1,6 @@
 # 老代码克星：36k Star的 AI 神器，跑一条命令就把项目结构整明白了！
 
-> 📊 Level ⭐⭐⭐⭐ | 9.0KB | `entities/understand-anything-code-knowledge-graph-lum-jike.md`
+> 📊 Level ⭐⭐⭐ | 9.0KB | `entities/understand-anything-code-knowledge-graph-lum-jike.md`
 
 > -> [原文存档](https://mp.weixin.qq.com/s/I75todL-x4myILGGbtZc4g)
 

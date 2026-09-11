@@ -1,6 +1,6 @@
 # 深度拆解 Hermes Agent 记忆系统：它修正了 OpenClaw 的哪层误区？
 
-> 📊 Level ⭐⭐ | 6.8KB | `entities/深度拆解-hermes-agent-记忆系统它修正了-openclaw-的哪层误区.md`
+> 📊 Level ⭐⭐⭐ | 6.8KB | `entities/深度拆解-hermes-agent-记忆系统它修正了-openclaw-的哪层误区.md`
 
 架构师（JiaGouX）  我们都是架构师！
 

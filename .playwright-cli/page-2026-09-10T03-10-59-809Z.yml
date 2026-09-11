@@ -1,0 +1,15 @@
+- generic [active] [ref=f3e1]:
+  - link "Skip to main content" [ref=f3e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f3e377]:
+    - generic [ref=f3e378]:
+      - link [ref=f3e380] [cursor=pointer]:
+        - /url: /
+        - img "Logo" [ref=f3e381]
+      - generic [ref=f3e383]:
+        - button "Change language" [ref=f3e384] [cursor=pointer]
+        - button "Switch Theme" [ref=f3e389] [cursor=pointer]
+  - main [ref=f3e24]
+  - region "Notifications (F8)":
+    - list
+  - alert [ref=f3e362]: Welcome to BestBlogs - BestBlogs.dev

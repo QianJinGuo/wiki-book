@@ -1,6 +1,6 @@
 # AI Infra 入门干货总结：大模型是如何高效推理的
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 13.0KB | `entities/ai-infra-llm-efficient-inference-vllm.md`
+> 📊 Level ⭐⭐⭐ | 13.0KB | `entities/ai-infra-llm-efficient-inference-vllm.md`
 
 ## 摘要
 

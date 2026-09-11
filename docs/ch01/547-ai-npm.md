@@ -1,6 +1,6 @@
 # 天猫 AI 编程实践：团队知识库 + NPM
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 11.0KB | `entities/tmall-ai-coding-practice-team-knowledge-base-npm.md`
+> 📊 Level ⭐⭐⭐ | 11.0KB | `entities/tmall-ai-coding-practice-team-knowledge-base-npm.md`
 
 ## "tmall ai coding practice team knowledge base npm"
 ## 天猫新品团队 AI 编码实战指南（下）

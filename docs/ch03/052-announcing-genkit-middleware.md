@@ -1,6 +1,6 @@
 # Announcing Genkit Middleware
 
-> 📊 Level ⭐⭐⭐⭐ | 9.6KB | `entities/developers.googleblog-announcing-genkit-middleware-intercept-extend-and-harden-y.md`
+> 📊 Level ⭐⭐⭐ | 9.6KB | `entities/developers.googleblog-announcing-genkit-middleware-intercept-extend-and-harden-y.md`
 
 ## 核心架构：三层拦截体系
 Genkit 的 tool loop 每次迭代经历：模型生成输出 → 工具执行 → 结果反馈新模型调用 → 循环直到模型结束。Middleware 在此循环的三层注入钩子：

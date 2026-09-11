@@ -1,6 +1,6 @@
 # Claude Code 源码深度解析（13 核心机制）
 
-> 📊 Level ⭐⭐⭐⭐ | 15.5KB | `entities/claude-code-source-deep-dive-warrior.md`
+> 📊 Level ⭐⭐⭐ | 15.5KB | `entities/claude-code-source-deep-dive-warrior.md`
 
 > -> [原文存档](https://mp.weixin.qq.com/s/bMjXlD-OcnFW-wuN1yW8FA)
 

@@ -5,7 +5,6 @@
 > -> [原文存档](https://blog.kilo.ai/p/we-tested-deepseek-v4-pro-and-flash)
 
 ## 核心要点
-- value=8, confidence=9, product=72
 - Well-structured technical benchmarking
 → [原文存档](https://blog.kilo.ai/p/we-tested-deepseek-v4-pro-and-flash)
 

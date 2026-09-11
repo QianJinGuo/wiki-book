@@ -1,6 +1,6 @@
 # 清华大学：驾驭工程 (Harness Engineering) 研究报告
 
-> 📊 Level ⭐⭐ | 6.5KB | `entities/tsinghua-harness-engineering-report.md`
+> 📊 Level ⭐⭐⭐ | 6.5KB | `entities/tsinghua-harness-engineering-report.md`
 
 > 清华大学发布的 Harness Engineering 研究报告（79页完整PDF）
 > 原始 PDF 保存在 assets/ 目录：tsinghua-harness-engineering-report.pdf

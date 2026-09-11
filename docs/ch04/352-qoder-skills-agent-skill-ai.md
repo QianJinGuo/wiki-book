@@ -1,6 +1,6 @@
 # Qoder Skills 完全指南 + Agent Skill 迭代式编写 — AI 按你的标准执行
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 35.1KB | `entities/qoder-skills-完全指南从零开始让-ai-按你的标准执行-v2.md`
+> 📊 Level ⭐⭐⭐ | 35.1KB | `entities/qoder-skills-完全指南从零开始让-ai-按你的标准执行-v2.md`
 
 ## 核心概念
 Qoder Skills 是 AI 工作流定制的基础设施，它解决了一个根本性问题：**如何让 AI 按你的标准稳定执行，而非每次凭"直觉"自由发挥**。

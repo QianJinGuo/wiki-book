@@ -13,7 +13,6 @@ Before you can extract information from documents using intelligent document pro
 ## 关键要点
 - 技术领域：Machine Learning / Document Processing
 - 来源：AWS Machine Learning Blog
-- 评分：value=8, confidence=9, product=72
 
 ## 链接
 - [原文](https://aws.amazon.com/blogs/machine-learning/automate-schema-generation-for-intelligent-document-processing/)

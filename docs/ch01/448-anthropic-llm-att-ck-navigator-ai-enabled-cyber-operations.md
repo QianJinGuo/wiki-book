@@ -1,6 +1,6 @@
 # Anthropic LLM ATT&CK Navigator: AI-Enabled Cyber Operations
 
-> 📊 Level ⭐⭐⭐⭐ | 14.2KB | `entities/anthropic-llm-attck-navigator-cyber-operations.md`
+> 📊 Level ⭐⭐⭐ | 14.2KB | `entities/anthropic-llm-attck-navigator-cyber-operations.md`
 
 > Source: [原文存档](https://red.anthropic.com/2026/attack-navigator/)
 > Authors: Kyla Guru, Alex Moix, Jacob Klein (Anthropic Red Team, 2026-06-03)
@@ -113,7 +113,6 @@ ARiES 采**加性评分**（0-100），三个维度：
 
 ## Cross-links
 
--
 ## 相关实体
 
 - [hackers accessed bwh hotels reservation system for months](https://github.com/QianJinGuo/wiki-public/blob/main/entities/securityaffairs-bwh-hotels-breach.md)

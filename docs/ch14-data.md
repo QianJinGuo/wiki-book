@@ -32,7 +32,7 @@
 
 ## Ch14.001 使用 Amazon S3 Tables 优化数据湖：从Hudi 迁移到托管 Iceberg
 
-> 📊 Level ⭐ | 9.2KB | `entities/使用-amazon-s3-tables-优化数据湖从hudi-迁移到托管-iceberg.md`
+> 📊 Level ⭐⭐⭐ | 9.2KB | `entities/使用-amazon-s3-tables-优化数据湖从hudi-迁移到托管-iceberg.md`
 
 → [原文存档](https://aws.amazon.com/cn/blogs/china/using-amazon-s3-tables-optimize-data-lake-hudi-migration-managed-iceberg)
 
@@ -165,7 +165,7 @@ Amazon S3 Tables 每次增量提交都会产生新数据文件。如果不加控
 
 ## Ch14.002 Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions
 
-> 📊 Level ⭐ | 8.0KB | `entities/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md`
+> 📊 Level ⭐⭐⭐ | 8.0KB | `entities/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md`
 
 > -> [原文存档](https://aws.amazon.com/blogs/machine-learning/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions/)
 
@@ -209,7 +209,7 @@ AI 生成 dashboard 的定位是消除 construction phase——当分析意图�
 
 ## Ch14.003 nOps FinOps Agent 架构：语义层驱动的数据分析 Agent 设计
 
-> 📊 Level ⭐ | 6.0KB | `entities/how-nops-shipped-finops-agents-75-faster-with-amazon-bedrock.md`
+> 📊 Level ⭐⭐⭐ | 6.0KB | `entities/how-nops-shipped-finops-agents-75-faster-with-amazon-bedrock.md`
 
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/how-nops-shipped-finops-agents-75-faster-with-amazon-bedrock-agentcore)
 
@@ -273,7 +273,7 @@ Vercel/Next.js BFF 与 AgentCore 之间有一层自定义 merge layer，一次�
 
 ## Ch14.004 Metric Semantic Layer: How Lyft Governs and Scales Key Data Definitions
 
-> 📊 Level ⭐ | 4.2KB | `entities/metric-semantic-layer-how-lyft-governs-and-scales-key-data-definitions.md`
+> 📊 Level ⭐⭐⭐ | 4.2KB | `entities/metric-semantic-layer-how-lyft-governs-and-scales-key-data-definitions.md`
 
 [![Image 1: Iraklikhorguani](https://miro.medium.com/v2/da:true/resize:fill:64:64/0*m85T5tMk8enr2P2-)](https://medium.com/@iraklikhorguani?source=post_page---byline--56bee3643c29---------------------------------------)
 
@@ -304,7 +304,7 @@ Taking the above principles into account, we **implemented the Metrics Semantic 
 
 ## Ch14.005 Write-Ahead Intent Log: a Foundation for Efficient CDC at Scale
 
-> 📊 Level ⭐ | 3.9KB | `entities/write-ahead-intent-log-a-foundation-for-efficient-cdc-at-scale.md`
+> 📊 Level ⭐⭐⭐ | 3.9KB | `entities/write-ahead-intent-log-a-foundation-for-efficient-cdc-at-scale.md`
 
 [InfoQ Homepage](https://www.infoq.com/ "InfoQ Homepage")[Presentations](https://www.infoq.com/presentations "Presentations")Write-Ahead Intent Log: a Foundation for Efficient CDC at Scale
 
@@ -335,7 +335,7 @@ Software is changing the world. QCon San Francisco empowers software development
 
 ## Ch14.006 The Data Operating System for the Foundation Model Era — Data Juicer
 
-> 📊 Level ⭐ | 3.8KB | `entities/the-data-operating-system-for-the-foundation-model-era-data-juicer.md`
+> 📊 Level ⭐⭐⭐ | 3.8KB | `entities/the-data-operating-system-for-the-foundation-model-era-data-juicer.md`
 
 [![Image 1: PyPI](https://img.shields.io/pypi/v/py-data-juicer?logo=pypi&color=026cad)](https://pypi.org/project/py-data-juicer)[![Image 2: Downloads](https://static.pepy.tech/personalized-badge/py-data-juicer?period=total&units=INTERNATIONAL_SYSTEM&left_color=grey&right_color=green&left_text=downloads)](https://pepy.tech/projects/py-data-juicer)[![Image 3: Docker](https://img.shields.io/docker/v/datajuicer/data-juicer?logo=docker&label=Docker&color=498bdf)](https://hub.docker.com/r/datajuicer/data-juicer)
 
@@ -364,7 +364,7 @@ Whether you’re deduplicating web-scale pre-training corpora, curating agent in
 
 ## Ch14.007 ClickHouse Ingestion at Scale: An Open-Source Zepto Engineering Story
 
-> 📊 Level ⭐ | 3.8KB | `entities/clickhouse-ingestion-at-scale-an-open-source-zepto-engineering-story.md`
+> 📊 Level ⭐⭐⭐ | 3.8KB | `entities/clickhouse-ingestion-at-scale-an-open-source-zepto-engineering-story.md`
 
 [![Image 1: Zepto Tech](https://miro.medium.com/v2/da:true/resize:fill:64:64/0*Zdo4al9KE5LuqNxm)](https://medium.com/@tech.culture?source=post_page---byline--7f57309e2175---------------------------------------)
 
@@ -392,7 +392,7 @@ This is the story of how we overcame the **black box of managed cloud**, the hid
 
 ## Ch14.008 构建 AI 时代的知识底座：直播数据 LLM Wiki 实践
 
-> 📊 Level ⭐⭐ | 7.0KB | `entities/ai-knowledge-base-llm-wiki-practice-alicloud.md`
+> 📊 Level ⭐⭐⭐ | 7.0KB | `entities/ai-knowledge-base-llm-wiki-practice-alicloud.md`
 
 > 原文归档：原文归档
 
@@ -467,7 +467,7 @@ Wiki 与传统文档的本质区别在于四个维度：**结构可解析**（fr
 
 ## Ch14.009 GitHub Multilingual Repositories Dataset — 4000 万仓库多语言元数据
 
-> 📊 Level ⭐⭐ | 5.5KB | `entities/github-multilingual-repositories-dataset-cc0.md`
+> 📊 Level ⭐⭐⭐ | 5.5KB | `entities/github-multilingual-repositories-dataset-cc0.md`
 
 > Source: [原文存档](https://github.blog/ai-and-ml/llms/accelerating-researchers-and-developers-building-multilingual-ai-with-a-new-open-dataset/)
 
@@ -578,7 +578,7 @@ Wiki 与传统文档的本质区别在于四个维度：**结构可解析**（fr
 
 ## Ch14.010 Amazon Quick integration with time-series databases for market intelligence using MCP
 
-> 📊 Level ⭐⭐ | 2.6KB | `entities/amazon-quick-mcp-kdbx-time-series.md`
+> 📊 Level ⭐⭐⭐ | 2.6KB | `entities/amazon-quick-mcp-kdbx-time-series.md`
 
 ## 相关实体
 
@@ -1182,7 +1182,6 @@ Varoa 在 2026 年 6 月发布的一篇工程复盘，讲述一个名为 "The Pr
 
 - **作者**: Varoa
 - **来源**: [https://varoa.net/2026/06/13/ddosing-software-delivery-pipelines.html](https://varoa.net/2026/06/13/ddosing-software-delivery-pipelines.html)
-- **评分**: v=7, c=8, v×c=56, stars=4
 
 ### 系统画像：The Provisioner 与唯一验证瓶颈
 
@@ -1494,7 +1493,7 @@ SELECT id FROM A EXCEPT SELECT id FROM B;
 
 ## Ch14.021 Data for AI：明其所耗，知其所因！让每一分 Token 消耗都可量化的全栈实践
 
-> 📊 Level ⭐⭐⭐⭐ | 35.0KB | `entities/data-for-ai明其所耗知其所因让每一分-token-消耗都可量化的全栈实践.md`
+> 📊 Level ⭐⭐⭐ | 35.0KB | `entities/data-for-ai明其所耗知其所因让每一分-token-消耗都可量化的全栈实践.md`
 
 ## Data for AI：明其所耗，知其所因！让每一分 Token 消耗都可量化的全栈实践
 
@@ -1980,14 +1979,13 @@ Agentic AI 的成本失控根源在于其执行路径的非确定性——传统
 
 ## Ch14.022 Good QC for RL Data
 
-> 📊 Level ⭐⭐⭐⭐ | 13.5KB | `entities/good-qc-for-rl-data.md`
+> 📊 Level ⭐⭐⭐ | 13.5KB | `entities/good-qc-for-rl-data.md`
 
 > → [原文存档](https://www.seancai.com/philosophy/good_qc_rl_data)
 
 ## 核心要点
 
 - **来源：** Sean Cai (seancai.com) | 2026-05-07
-- **评分：** value=9, confidence=8, product=72
 - 提出 RL 训练数据的 QC 标准框架，包括 Intake Review（准入审查）和 Active Testing（主动测试）两大阶段
 - Intake Review 涵盖验证光谱分类、污染抗性、pass@k 分布分析、评分标准构建模式
 - Active Testing 覆盖 Reward Hacking、Forgetting、Verifier FP/FN 等训练中才暴露的失败模式
@@ -2143,7 +2141,7 @@ Alignment-faking 基线 12%、Reward Tampering、Sycophancy——这三个已发
 
 ## Ch14.023 EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios
 
-> 📊 Level ⭐⭐⭐⭐ | 9.9KB | `entities/eva-bench-data-2-voice-agent-evaluation.md`
+> 📊 Level ⭐⭐⭐ | 9.9KB | `entities/eva-bench-data-2-voice-agent-evaluation.md`
 
 → [原文存档](https://huggingface.co/blog/ServiceNow-AI/eva-bench-data)
 
@@ -2267,7 +2265,7 @@ ServiceNow 本身是 ITSM / HR / 客户支持自动化领域的巨头，发布 E
 
 ## Ch14.024 Moneyball for Physical AI
 
-> 📊 Level ⭐⭐⭐⭐ | 8.6KB | `entities/moneyball-for-physical-ai.md`
+> 📊 Level ⭐⭐⭐ | 8.6KB | `entities/moneyball-for-physical-ai.md`
 
 > **Background**：本文基于 Praxis Currents 的一篇深度分析文章，类比棒球 Moneyball 革命来审视 Physical AI 领域的数据定价与价值发现。原始文章通过 Jina Reader 抓取。
 
@@ -2374,7 +2372,7 @@ $$U_{eff}(n) = U_0 + \Delta U(1 - e^{-n/n_c})$$
 
 ## Ch14.025 阿里云 Kafka × Iceberg 零 ETL 实时入湖：ApsaraMQ for Kafka × OSS Tables 架构减法
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 24.4KB | `entities/aliyun-kafka-iceberg-zero-etl-architecture-subtraction-2026-06-18.md`
+> 📊 Level ⭐⭐⭐ | 24.4KB | `entities/aliyun-kafka-iceberg-zero-etl-architecture-subtraction-2026-06-18.md`
 
 ## 核心定位
 

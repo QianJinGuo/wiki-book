@@ -1,6 +1,6 @@
 # Nature | Anthropic：蒸馏过程潜意识传递行为偏好
 
-> 📊 Level ⭐⭐ | 5.8KB | `entities/anthopic-distillation-behavioural-traits-nature.md`
+> 📊 Level ⭐⭐⭐ | 5.8KB | `entities/anthopic-distillation-behavioural-traits-nature.md`
 
 > CNS导读 | 2026-04-16 | Nature 652, 615–621 (2026)
 > doi: 10.1038/s41586-026-10319-8

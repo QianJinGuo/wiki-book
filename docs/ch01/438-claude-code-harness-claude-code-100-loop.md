@@ -1,6 +1,6 @@
 # Claude Code 之父最新访谈：编程已经结束、harness 将消失、Claude Code 将只有 100 行代码、loop 才是未来
 
-> 📊 Level ⭐⭐⭐⭐ | 15.2KB | `entities/claude-code-之父最新访谈编程已经结束harness-将消失claude-code-将只有-100-行代码loop-才是未来.md`
+> 📊 Level ⭐⭐⭐ | 15.2KB | `entities/claude-code-之父最新访谈编程已经结束harness-将消失claude-code-将只有-100-行代码loop-才是未来.md`
 
 ## 核心要点
 - **Boris Cherny** 是 Claude Code 的创造者，2024 年 9 月加入 Anthropic Labs 孵化团队

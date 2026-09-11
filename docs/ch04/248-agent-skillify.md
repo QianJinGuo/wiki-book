@@ -1,6 +1,6 @@
 # Agent 可靠性的工程解法：从 Skillify 看持续改进机制
 
-> 📊 Level ⭐⭐⭐⭐ | 23.0KB | `entities/agent-reliability-engineering-skillify-continuous-improvement.md`
+> 📊 Level ⭐⭐⭐ | 23.0KB | `entities/agent-reliability-engineering-skillify-continuous-improvement.md`
 
 ## 概述
 YC 总裁 Garry Tan 的 OpenClaw 一周内两次失败：日历查询和时区计算。两次都是 Agent 有现成工具却选择自己推理——该用脚本的地方用了模型。Garry Tan 的解法是 skillify：一套 10 步检查清单，将每次失败固化为确定性测试，让同样的错误结构上不可能再发生。

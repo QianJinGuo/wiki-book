@@ -1,6 +1,6 @@
 # Agent 工程原理、架构与实践
 
-> 📊 Level ⭐⭐ | 5.0KB | `entities/agent-engineering-principles-architecture-practice.md`
+> 📊 Level ⭐⭐⭐ | 5.0KB | `entities/agent-engineering-principles-architecture-practice.md`
 
 ## agent-engineering-principles-architecture-practice
 

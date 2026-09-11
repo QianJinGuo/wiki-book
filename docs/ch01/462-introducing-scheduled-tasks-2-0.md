@@ -1,6 +1,6 @@
 # Introducing Scheduled Tasks 2.0
 
-> 📊 Level ⭐⭐⭐⭐ | 12.5KB | `entities/introducing-scheduled-tasks-2-0.md`
+> 📊 Level ⭐⭐⭐ | 12.5KB | `entities/introducing-scheduled-tasks-2-0.md`
 
 ## 核心要点
 

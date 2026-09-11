@@ -1,6 +1,6 @@
 # Agent 自我改进的六条路
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 24.1KB | `entities/agent-self-improvement-six-mechanisms.md`
+> 📊 Level ⭐⭐⭐ | 24.1KB | `entities/agent-self-improvement-six-mechanisms.md`
 
 ## 概述
 J0hn/AGI Hunt 梳理 Agent 不重新训练就能变强的六种机制：输出自审、持久记忆、进化搜索、对抗训练、自我修改、编排自优化。核心命题：AI 学习正从训练阶段溢出到部署阶段——权重冻结下通过外部状态层积累知识是毕业后的自学能力。

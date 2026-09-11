@@ -1,6 +1,6 @@
 # LiteLLM 驱动的 Amazon Bedrock 成本治理：四层防护体系
 
-> 📊 Level ⭐⭐⭐⭐ | 13.6KB | `entities/litellm-amazon-bedrock-cost-control-four-layer.md`
+> 📊 Level ⭐⭐⭐ | 13.6KB | `entities/litellm-amazon-bedrock-cost-control-four-layer.md`
 
 > [!abstract]
 > AWS China Blog 2026-06-12 教程：通过 LiteLLM AI Gateway 在 Amazon Bedrock 前面构建"事前限额 → 事中监控 → 事后兜底 → 安全纵深"四层成本治理体系。核心是用 **LiteLLM Virtual Key** 做 team/user/项目三层实时限额（token/dollar），**AWS Budgets** 做平台级兜底告警，**AWS 原生安全服务**（IAM + Secrets Manager + MFA）防 API Key 盗刷。覆盖"AI 投入可预测 + AI 资产不被盗"两个企业痛点。

@@ -1,6 +1,6 @@
 # 来自字节跳动TRAE的Harness Engineering指南
 
-> 📊 Level ⭐⭐ | 7.2KB | `entities/bytedance-trae-harness-engineering-guide.md`
+> 📊 Level ⭐⭐⭐ | 7.2KB | `entities/bytedance-trae-harness-engineering-guide.md`
 
 ## 1. 什么是 Harness Engineering？
 2026 年，软件工程迎来了一个新的支柱：Harness Engineering（驾驭工程）。继提示词工程和上下文工程之后，这个名字由 HashiCorp 联合创始人 Mitchell Hashimoto 提出，并在一份关键的 OpenAI 报告之后被广泛讨论。
@@ -67,7 +67,7 @@ AI 智能体 = SOTA 模型（野马）+ Harness（控制系统）= 卓越执行�
 
 ## 第 1 来源 — 我们实测TRAE Work的这份攻略，被官方收进知识库了...
 
-v×c=49。我们实测TRAE Work的这份攻略，被官方收进知识库了
+我们实测TRAE Work的这份攻略，被官方收进知识库了
 
 > → 原文存档
 

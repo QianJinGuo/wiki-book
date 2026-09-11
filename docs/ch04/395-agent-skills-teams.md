@@ -1,6 +1,6 @@
 # Agent/Skills/Teams 架构演进过程及技术选型之道
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 10.5KB | `entities/agent-skills-teams-architecture-evolution-selection-guide.md`
+> 📊 Level ⭐⭐⭐ | 10.5KB | `entities/agent-skills-teams-architecture-evolution-selection-guide.md`
 
 ## 核心命题
 **Agent 架构的演化史是对大模型底层能力缺失的补偿机制。** 领域知识注入和长周期记忆管理是两大核心挑战，在此之前，RAG、Multi-Agent、Workflow、Skills 等架构模式百花齐放。选型的核心原则：奥卡姆剃刀，复杂度匹配问题复杂度。

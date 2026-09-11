@@ -1,11 +1,10 @@
 # Model-Harness Fit：Agent 脚手架适配模型
 
-> 📊 Level ⭐⭐⭐⭐ | 16.8KB | `entities/model-harness-fit-agent-harness.md`
+> 📊 Level ⭐⭐⭐ | 16.8KB | `entities/model-harness-fit-agent-harness.md`
 
 ## Model-Harness-Fit：模型与壳的适配性
 > 原文: https://mp.weixin.qq.com/s/TTe7IY_pjAuv4zA9krlYrQ
 > Author: Nicolas Bustamante (Cursor/前OpenAI)，编译自其博客
-> Score: value=7, confidence=7, product=49 ≥ 49 → PASS
 
 ## 核心论点：Model-Harness-Fit
 > "模型不是只针对API做post-training的，它是针对壳做的。"

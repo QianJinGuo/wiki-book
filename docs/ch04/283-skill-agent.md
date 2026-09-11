@@ -1,6 +1,6 @@
 # Skill 系统：Agent 如何把经验沉淀成可复用能力
 
-> 📊 Level ⭐⭐⭐⭐ | 14.3KB | `entities/hermes-skill-system-winty.md`
+> 📊 Level ⭐⭐⭐ | 14.3KB | `entities/hermes-skill-system-winty.md`
 
 ## "Skill 系统：Agent 如何把经验沉淀成可复用能力"
 ## 核心命题

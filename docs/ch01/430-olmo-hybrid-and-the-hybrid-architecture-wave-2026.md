@@ -1,6 +1,6 @@
 # Olmo Hybrid and the Hybrid Architecture Wave (2026)
 
-> 📊 Level ⭐⭐⭐⭐ | 16.6KB | `entities/olmo-hybrid-gdn-wave-2026.md`
+> 📊 Level ⭐⭐⭐ | 16.6KB | `entities/olmo-hybrid-gdn-wave-2026.md`
 
 > **Core insight**: 2026 春季 Qwen 3.5 / Kimi Linear / Nemotron 3 Nano / IBM Granite 4 / Olmo Hybrid 集体采用 Transformer + RNN 混合架构 — Allen AI 的 Olmo Hybrid 7B 用 Gated DeltaNet (GDN) 3:1 层比实现**预训练效率 2x 提升**，并提供**严格理论证明 hybrid > transformer**。
 

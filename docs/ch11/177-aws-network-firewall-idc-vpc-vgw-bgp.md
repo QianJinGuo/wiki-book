@@ -1,6 +1,6 @@
 # AWS Network Firewall 审查 IDC-VPC 流量：VGW 架构 + BGP 路由传播实验
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 14.9KB | `entities/aws-network-firewall-vgw-bgp-traffic-inspection.md`
+> 📊 Level ⭐⭐⭐ | 14.9KB | `entities/aws-network-firewall-vgw-bgp-traffic-inspection.md`
 
 > [!abstract]
 > AWS China Blog 2026-06-12 实验笔记：用 CloudFormation 搭建 VPC + 模拟 IDC 环境，开启 BGP 路由传播 + 手工配置高优先级路由条目，验证 IDC ↔ 云之间流量经 AWS Network Firewall 审查的完整方案。

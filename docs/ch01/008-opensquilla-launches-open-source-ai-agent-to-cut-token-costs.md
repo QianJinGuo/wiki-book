@@ -1,6 +1,6 @@
 # OpenSquilla launches open-source AI agent to cut token costs
 
-> 📊 Level ⭐ | 11.5KB | `entities/opensquilla-launches-open-source-ai-agent-to-cut-token-costs.md`
+> 📊 Level ⭐⭐⭐ | 11.5KB | `entities/opensquilla-launches-open-source-ai-agent-to-cut-token-costs.md`
 
 ## 核心要点
 - OpenSquilla 发布首个公开版本 v0.1.0，Apache-2.0 许可，可自托管

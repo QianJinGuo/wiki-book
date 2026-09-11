@@ -1,6 +1,6 @@
 # 一文带你弄懂 AI 圈爆火的新概念：Harness Engineering
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 28.0KB | `entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md`
+> 📊 Level ⭐⭐⭐ | 28.0KB | `entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md`
 
 → [原文存档](https://mp.weixi)
 

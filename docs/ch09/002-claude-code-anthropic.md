@@ -1,6 +1,6 @@
 # Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南
 
-> 📊 Level ⭐ | 5.2KB | `entities/claude-code-large-codebase-enterprise-deployment.md`
+> 📊 Level ⭐⭐⭐ | 5.2KB | `entities/claude-code-large-codebase-enterprise-deployment.md`
 
 > 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.8**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/claude-code-large-codebase-enterprise-deployment.md`，一手来源仍见下方 sources。

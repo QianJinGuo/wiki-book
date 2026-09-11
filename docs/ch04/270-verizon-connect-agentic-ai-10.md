@@ -1,6 +1,6 @@
 # Verizon Connect Agentic AI: 10万用户规模的工程实践
 
-> 📊 Level ⭐⭐⭐⭐ | 16.0KB | `entities/verizon-connect-agentic-ai-100k-users.md`
+> 📊 Level ⭐⭐⭐ | 16.0KB | `entities/verizon-connect-agentic-ai-100k-users.md`
 
 > **背景**：本文档基于 AWS Machine Learning Blog 的 Verizon Connect 案例编写，探讨如何在生产环境中大规模部署 Agentic AI 系统。 
 

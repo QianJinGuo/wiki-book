@@ -1,6 +1,6 @@
 # AI Native 时代研发组织何去何从
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 19.8KB | `entities/ai-native-rd-org-design.md`
+> 📊 Level ⭐⭐⭐ | 19.8KB | `entities/ai-native-rd-org-design.md`
 
 ## 核心洞察
 **内部访谈数据**（4位深度使用AI的工程师）：

@@ -1,6 +1,6 @@
 # A Framework for AI Threat Readiness
 
-> 📊 Level ⭐ | 10.4KB | `entities/ai_threat_readiness_framework.md`
+> 📊 Level ⭐⭐⭐ | 10.4KB | `entities/ai_threat_readiness_framework.md`
 
 ## 核心要点
 - AI 正在加速漏洞发现与利用的整个生命周期，前沿模型已能自主发现零日漏洞、生成可用的利用代码、并链接多个弱点形成攻击链
