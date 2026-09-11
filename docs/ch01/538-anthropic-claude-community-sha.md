@@ -190,8 +190,6 @@ AI 工具加剧了供应链问题。过去是人类可能在机器上安装随�
 → [原文存档](https://johnstawinski.com/2026/06/18/repo-jacking-anthropics-claude-community-plugins-and-the-shas-that-saved-them/)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

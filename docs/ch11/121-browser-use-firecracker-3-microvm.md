@@ -50,8 +50,6 @@ browser-use 团队通过 Firecracker microVM 在 EC2 上运行云端浏览器隔
 现有 `browser-use-runtime-harness` 关注 Browser Use 作为 Agent Harness 的架构设计；本文关注**底层基础设施层**——如何用 Firecracker 降低云端浏览器的运行成本。现有 `firecracker-bedrock-agentcore-multi-tenant` 关注 AgentCore 的多租户安全隔离；本文关注**浏览器工作负载**的特定优化。
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

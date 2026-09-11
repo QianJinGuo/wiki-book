@@ -84,7 +84,6 @@ beta 构建时记录 commit SHA + 版本号 + 发布时刻为 artifact。打 tag
 
 > **核心思想**：不要试图让 AI 100% 正确，而是要构建一个「即使 AI 犯错也不会造成灾难」的系统。[^1]
 
-## 参考
 
 → [raw/articles/0NuS75Bcys0xNCp9wNl8aw|原文存档]
 

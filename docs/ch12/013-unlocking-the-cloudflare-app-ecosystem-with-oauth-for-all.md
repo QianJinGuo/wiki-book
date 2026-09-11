@@ -84,8 +84,6 @@ OAuth 标准化对 AI Agent 生态具有深远影响：
 → [原文存档](https://blog.cloudflare.com/oauth-for-all/)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

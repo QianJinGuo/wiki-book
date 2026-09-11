@@ -34,9 +34,6 @@ In this hands-on tutorial, Claire explains the difference between heartbeats, cr
 → [原文存档](https://www.lennysnewsletter.com/p/how-i-ai-how-to-write-ai-agent-loops)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

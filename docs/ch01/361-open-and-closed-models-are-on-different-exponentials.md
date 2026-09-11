@@ -92,8 +92,6 @@ coding agent 是当前唯一明确展示"用户愿意为更好智能支付大幅
 - 开源 AI
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

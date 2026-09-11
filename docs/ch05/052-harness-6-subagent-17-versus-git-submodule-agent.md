@@ -265,8 +265,6 @@ next-step-prompt-e2e: "启动服务(后端8901/前端3001)并执行需求 {REQ-I
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/multi-agent-coordination.md)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

@@ -100,7 +100,6 @@ ammaraskar 在 2026 年 6 月 2 日下午公开披露漏洞，GitHub 安全团�
 
 对于 VSCode 扩展开发者：(a) 所有 `postMessage` 监听器必须验证 `event.origin` 或使用 `event.source === expectedWindow`；(b) 敏感命令（如 `workbench.extensions.installExtension`）应要求明确用户交互确认，不接受纯自动化触发的安装请求；(c) 对 webview 中收到的键盘事件进行来源校验，拒绝来自非预期 iframe 的 `did-keydown` 等消息。微软的临时修复也已表明方向：禁止通过命令跳过受信任发布者检查 。
 
-## 关联阅读
 
 → [Checkmarx Jenkins Plugin Compromised In New Supply Chain Attack](https://github.com/QianJinGuo/wiki-public/blob/main/entities/checkmarx-jenkins-plugin-compromised-in-new-supply-chain-attack.md) — Jenkins 插件供应链投毒事件，攻击路径与本漏洞相似：均通过依赖链的信任假设进行初始代码执行，代表了近两年最活跃的 supply chain 攻击向量之一。
 

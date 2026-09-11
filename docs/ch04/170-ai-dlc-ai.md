@@ -121,9 +121,6 @@ AI-DLC 不依赖单次提问的"聪明"，而是通过流程规则、质量检�
 → [原文存档](https://aws.amazon.com/cn/blogs/china/ai-dlc-ai-driven-development-life-cycle-2025-development)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

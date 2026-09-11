@@ -100,8 +100,6 @@ Cursor 明确表示不将标准 SWE-bench Pro 分数作为 Composer 的可靠 be
 → [原文存档](https://cursor.com/blog/reward-hacking-coding-benchmarks)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

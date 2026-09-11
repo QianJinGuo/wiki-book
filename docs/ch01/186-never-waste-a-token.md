@@ -59,9 +59,6 @@ when a request comes in, the buffer does three things in order. it resets its st
 - [原文存档](https://sunilpai.dev/posts/never-waste-a-token/)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

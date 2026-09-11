@@ -141,9 +141,6 @@ rm、dd、sudo、ssh、curl、wget 视为高风险命令 。但简单禁止联�
 → [原文存档](https://mp.weixin.qq.com/s/qn4zcUg_Qd5Hy370NlHu1g)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

@@ -63,8 +63,6 @@ Fine-tuning 和 RL 成本已低到 B 轮公司就能运行这个循环。
 3. **纠正即数据（Corrections as Scorecard）** — 用户修正既是训练信号也是测试集，这个双功能洞察在现有实体中未出现
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

@@ -139,17 +139,6 @@ Q3: 长记忆对话还是一次性任务？
 
 ## 核心金句
 
-- "**Grep 搜索竟然比 RAG 还好用？**"
-- "**Vector 一定更高级吗？不一定**"
-- "**Inline 交付时 grep 10/10 赢 vector，差距最高 23.3pp**"
-- "**索引完全没动，只改交付方式，5/10 组合结论反转**"
-- "**Harness 的撬动力，可与换检索器、换模型相提并论**"
-- "**检索 × harness × delivery 是一个耦合三元组**"
-- "**它们之间存在非线性相互作用**"
-- "**任何'消融实验'得到的单变量结论都很难外推到生产**"
-- "**别再问'该用 grep 还是 vector'，先决定 harness 把结果交给模型的方式**"
-- "**决策顺序翻转：先交付方式，再检索器**"
-
 ## 深度分析
 
 - **耦合效应颠覆单变量评估范式**：论文最核心的方法论贡献在于揭示了 retrieval × harness × delivery 三者的非线性相互作用。传统 Agent 系统评估往往先固定 harness 和 delivery 方式，再单独比较检索器——这种单变量消融得到的结论无法外推到生产环境，因为三个变量之间存在显著的交互效应 。
@@ -174,7 +163,6 @@ Q3: 长记忆对话还是一次性任务？
 
 - **将交付方式纳人架构评审**：在设计 Agent 系统时，应该像对待模型选型和检索器选型一样，将工具结果的交付方式（inline vs file-read）纳人正式的架构评审决策点，而不是作为实现细节事后补充 。
 
-## 关联阅读
 
 - `Agent Harness Context Management Working Set` — Harness 上下文管理 Working Set 模式，与本文交付方式决策呼应
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — Harness 工程框架，提供了 triplet 之外的工程化视角

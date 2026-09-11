@@ -59,8 +59,6 @@ Figure 1. At an asset-level we generally see that scheduled date accuracy and co
 This isn’t unexpected — productions are dynamic, facing frequent changes, scheduling conflicts, and unforeseen obstacles that can shift timelines without warning. As a result, there’s a clear opportunity to leverage the wealth of production data we collect to predict the risk of schedule slips. By developing a predictive model, we aim to both fill in ETA gaps (providing asset delivery estimates when
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -94,8 +92,6 @@ This isn’t unexpected — productions are dynamic, facing frequent changes, sc
 
 → [原文存档](https://arxiv.org/abs/2608.05000)
 
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -923,9 +919,6 @@ Meta-RL with Self-Reflection 的核心洞察是：当前 LLM 的 RL 训练完全
 - MOC: Evaluation Landscape
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

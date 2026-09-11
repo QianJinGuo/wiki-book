@@ -301,7 +301,6 @@ LingBot-Vision 的"空间原生"定位与 具身智能 的需求高度契合。�
 
 5. **具身智能需要重新定义"视觉"的任务目标**：传统视觉（分类、检测、分割）以语义理解为核心目标，而具身智能需要的是空间理解。LingBot-Vision 的"空间原生"范式可能预示着视觉基础模型的下一个演进方向——从"what is this"到"where is this and how is it structured"。
 
-## 参考
 
 - 技术报告: arXiv:2607.05247
 - GitHub: https://github.com/robbyant/lingbot-vision
@@ -310,7 +309,5 @@ LingBot-Vision 的"空间原生"定位与 具身智能 的需求高度契合。�
 → [原文存档](https://mp.weixin.qq.com/s/3C6ndYsu5T3h6l6hfiZHsA)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---

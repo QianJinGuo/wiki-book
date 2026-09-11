@@ -48,15 +48,11 @@ Agent 系统的 Harness 层（系统提示词、工具包装器、规划-执行�
 3. **模型升级时应评估 Harness 兼容性**，而非只关注模型本身的 benchmark
 4. **可观测性是 Harness 工程的基础**——没有 trace 和 log，调试 harness 问题如同大海捞针
 
-## 参考
 
 → [原文存档](https://leehanchung.github.io/blogs/2026/05/08/hidden-technical-debt-agent-harness)
 → [Harness Engineering 框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

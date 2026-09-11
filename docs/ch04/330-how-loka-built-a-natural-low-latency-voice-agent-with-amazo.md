@@ -142,7 +142,6 @@ Loka 的架构设计考虑了大规模部署的需求：
 - [Agent Harness Context Management](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-context-management-working-set.md) — Agent 上下文管理
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — Harness 工程框架
 
-## 参考
 
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/how-loka-built-a-natural-low-latency-voice-agent-with-amazon-nova-2-sonic/)
 

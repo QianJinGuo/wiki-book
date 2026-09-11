@@ -56,8 +56,6 @@ ALB + ECS 认证中间层 + 私有子网 Gateway 的分层设计体现了云原�
 - [当 OpenClaw 学会"团队记忆"：一个面向多客户服务的企业级共享记忆系统设计 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-service-enterprise-share-system-design.md)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

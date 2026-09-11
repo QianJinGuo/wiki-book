@@ -45,8 +45,6 @@ Chromium 胜在墙钟（JIT 已见该页），Kitesurf 胜在 CPU/内存（决�
 
 → [原文存档](https://blog.cloudflare.com/kitesurf/)
 
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

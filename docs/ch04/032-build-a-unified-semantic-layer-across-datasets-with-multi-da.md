@@ -21,9 +21,6 @@ With multi-dataset Topics, this semantic layer now spans multiple datasets conne
 _Figure 1: Multi-dataset Topics architecture flow
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

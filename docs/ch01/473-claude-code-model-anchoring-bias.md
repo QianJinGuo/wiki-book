@@ -87,8 +87,6 @@ brainoverflow 2026-06-01 对 Anthropic 2026-05 发布的 Claude Code Security Gu
 - **完全自主化代码审查无法替代人类判断**：AI 安全工具扩展了审查范围，但最有效的使用方式是"理解工具能看见什么 + 主动寻找工具看不见的"。Trust and verify。
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

@@ -55,9 +55,6 @@ CDK v2 一键部署，包含 Cognito + DynamoDB + SNS + AgentCore Runtime。
 3. **端到端部署**：CDK 一键部署到 AWS，含认证+持久化+通知
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

@@ -131,7 +131,6 @@ ADLC 的独特贡献是**将评估定义为 Agent 开发生命周期的一等公
 - **客服智能体（意图检测评估）**：匿名化历史交互构造 ground truth + **LLM Simulator 虚拟客户 persona** 扩覆盖面；指标 Intent Correctness/Task Completion/Topic Adherence
 - **卖家助手（多智能体协作评估）**：Planner-Specialist 模式（Planner & Task Orchestrator 拆解分配 → 专精子智能体自主执行 → 回报/升级 → 编排器聚合）；指标规划评分/通信效率/协作成功率；**自动指标抓不住涌现行为，多智能体场景 HITL 是必选项**（四职责：协调失败识别/专精划分合理性/矛盾建议冲突解决/集体逻辑一致性）
 
-## 来源
 
 - → [Part 1: 为什么评估是起点](https://aws.amazon.com/cn/blogs/china/part-1-enterprise-intelligent-why-evaluation/)
 - → [Part 2: 从原型验证到生产就绪](https://aws.amazon.com/cn/blogs/china/part-2-enterprise-intelligent-validation/)
@@ -139,9 +138,6 @@ ADLC 的独特贡献是**将评估定义为 Agent 开发生命周期的一等公
 - → [完整四篇指南原文 PDF](https://aws.amazon.com/cn/blogs/china/)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

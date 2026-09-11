@@ -112,8 +112,6 @@ Agent 时代的计算单位从用户/会话变为 Agent 自己——带任务/�
 - [Kimi K2.6 Agent Database：Agent-native 数据 Infra](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kimi-k2-6-tidb-agent-database.md)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

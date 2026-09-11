@@ -61,8 +61,6 @@
 5. **上线前必做生产规模验证**：用实际 embedding 维度和查询模式做压力测试，不要相信供应商的基准数字 ^["从 Chroma 换成 Qdrant，我踩了 100 万向量的坑 (云朵君, 数据STUDIO, 2026-05-20)"]
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

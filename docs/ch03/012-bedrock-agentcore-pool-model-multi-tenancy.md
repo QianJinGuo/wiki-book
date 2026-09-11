@@ -74,9 +74,6 @@ User (终端用户: 医生 / 护士)
 - Healthcare AI — 医疗 AI 应用场景
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

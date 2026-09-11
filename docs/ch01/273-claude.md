@@ -83,7 +83,6 @@
 4. **建立「审核者」思维**——从「自己写代码」转向「审核AI生成的代码」，这是AI时代工程师的核心能力转型
 5. **技术决策的重要性上升**——当实现变得廉价，方向选择变得昂贵；技术团队需要更多精力投入需求分析和架构设计
 
-## 关联阅读
 
 - [Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-to-agentic-engineering.md)——了解「氛围编程」如何重塑开发流程
 - [Claude Code 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-architecture.md)——Anthropic推出的AI编程代理，深入理解其设计哲学和能力边界

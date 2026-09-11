@@ -175,9 +175,6 @@ agentcanvas 通过 Logfire 的 **Query API**（SQL + 读取 Token）把这些 sp
 → [第 1 篇原文存档](https://mp.weixin.qq.com/s/jg6lW3ObZooBsrWTGwIcRg) · [第 2 篇原文存档](https://mp.weixin.qq.com/s/yx3xrqonDLNG_ZESt4FGlQ)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

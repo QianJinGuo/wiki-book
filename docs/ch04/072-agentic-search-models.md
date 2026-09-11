@@ -46,9 +46,6 @@ SID 以 [SID-1 模型](https://www.sid.ai/research/sid-1) 率先入场，随后 
 SID-1、Waldo、Charcoal 等产品仍处于早期阶段，但方向已经明确。对于有自研搜索系统能力的团队，可以开始做 PoC；对于没有自研能力的团队，可以关注这些产品的企业级落地进展。
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

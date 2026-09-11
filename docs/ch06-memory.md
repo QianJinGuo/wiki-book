@@ -195,7 +195,6 @@ L3 Cognitive    → "Agent 自己管自己的记忆"
 
 - [Agent 记忆架构](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-architecture.md)
 - [Agent 记忆系统设计](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-system-design.md)
-## 参考
 
 → [原文存档](https://mp.weixin.qq.com/s/ub1ZOzpjImpVc8plcsMA4w)
 
@@ -226,8 +225,6 @@ Challenges in early-stage drug discovery:
 These challenges collectively create a significant bottleneck in the drug discovery pipeline, leading to inefficiencies, missed opportunities, and potential delays in developing life-saving treatments. Our solution addresses these bottlenecks by moving beyond traditional methods: graph-powered AI supports pharmaceutical research by creating an interconnected knowledge environment. Using [Amazon Neptune Analytics](<https://docs.aws.amazon.com/neptune-analytics/latest/userguide/what-is-neptune-analytics.html>), researchers can now ask complex questions in natural language and receive instant, evidence-backed insights drawn from a unified knowledge graph that connects everything from compound interactions to gene expressions and clinical studies. This approach doesn’t only provide answers. It reveals the complete reasoning behind each result by showing detailed citation paths and graph traversal steps. By exp
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -1392,8 +1389,6 @@ context 的追加式增长是所有 skill 编排方案的基础假设，但它�
 4. 文件名版本号是简单但有效的版本管理——保留历史才有回滚能力
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -1446,8 +1441,6 @@ context 的追加式增长是所有 skill 编排方案的基础假设，但它�
 - **搜得越多，更可能给出正确答案**
 
 ### ⑤ Loop 跳出后强制总结
-- "**用户做 deep research 时候总归是要一个答案，瞎猜一个总比不输出强**"
-
 ## 2. 工具调用：XML 协议 vs 原生 Function Call
 
 ### 原生 Function Call 的本质
@@ -1502,8 +1495,6 @@ context 的追加式增长是所有 skill 编排方案的基础假设，但它�
 - **优先用 jina reader API** 把网页转成 markdown（**过滤广告 + 图片识别**）
 - jina 不可用 → 降级 Serper scraping 或 requests.get
 - 都失败 → **重试机制**
-- "**一般 agent 脚手架带的 web fetch 工具都没有这么强的能力**"
-
 **search_archived_webpage**（**Claude Code 没有的功能**）：
 - 找某个 URL 某个时间的**网页快照**（依托 Wayback Machine）
 - 例：X 公司 2018 Q3 财报数字 → 今天的官网已下架 → 必须找历史快照
@@ -1626,18 +1617,9 @@ context 的追加式增长是所有 skill 编排方案的基础假设，但它�
 
 ## 8. 核心金句
 
-- "**code 任务和 deep research 任务在认知模式、错误成本、信息来源、上下文需求上有很大区别，这必然导致脚手架在工具集、context 管理、错误恢复、answer 提取等环节都做出截然不同的取舍。**"
-- "**本质上，所有工具调用都是 prompt-based**。"
-- "**模型训练和 agent 脚手架的设计是一个 co-design 系统**。"
-- "**deep research 适合'少而重'的工具集，关键在于工具调用的边际成本。**"
 - "**理解题"和"解题"两个能力解耦**"
-- "**题面误读是 deep research 任务里最廉价、最致命的失败模式**——在开头用强模型做一次最大幅度的误读防御，是非常划算的"
 - "**计划"会随着搜到新信息不断重写，预先定计划反而是束缚；但"题面里的陷阱"是不变量，越早提醒越好**"
-- "**尽量给 main agent loop model 减负，能剥离出去的任务就单独剥离出去**"
-- "**用户做 deep research 时候总归是要一个答案，瞎猜一个总比不输出强**"
-- "**Anthropic / OpenAI 的 messages API 强校验 tool_use 和 tool_result 必须配对**——只能动 content、不能删消息"
 - "**main agent 的 context 增长是按"子任务数"线性的，而不是按"工具调用数"线性的**"
-- "**deep research 任务能被干净地切成一个个自包含的子任务**——这种'可拆性'正是 sub agent 架构能成立的前提"
 - "**答案没法做到百分百确定**"——置信度是 deep research 的内在要求
 
 ## 9. 与已有 wiki 实体的关系
@@ -3883,7 +3865,6 @@ Honcho 这类外部 provider 引入深层用户建模，但带来了额外的治
 至少要能回答：哪些条目进了 prompt，哪些内容来自历史检索，哪些 skill 被触发，压缩前写了什么，外部 provider 返回了什么。如果记忆系统不可观测，最后很容易变成一团没人敢删的旧状态——这比没有记忆更麻烦。
 
 ## 架构图
-→ （架构图待生成: C4 架构图）
 
 ## 相关实体
 
@@ -4689,7 +4670,6 @@ Hermes 接入场景中，Gateway 把 capture、search、recall 暴露为 HTTP �
 - [TencentDB Agent Memory 长期记忆金字塔](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tencentdb-agent-memory-long-term-pyramid.md)
 - [Agent Harness 上下文管理工作集](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-context-management-working-set.md)
 
-## 来源
 
 → [原文存档](https://www.xiaohongshu.com/explore/6a058276000000003503b5b8)
 → [若飞拆解 2026-08](https://mp.weixin.qq.com/s/mQK2N3D-6As5cWis5yh1mQ)
@@ -4895,9 +4875,6 @@ Agent harness 正在朝同一个方向移动。目标不是向模型展示一切
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-memory-architecture-decision-points.md)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

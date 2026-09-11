@@ -64,9 +64,6 @@ How far behind?
 But this does not follow: being a popular language with a lot of training data only means that LLMs _start off by default_ performing well. (Because it’s hard to disentangle a programming language f
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 
@@ -296,8 +293,6 @@ CoT Forgery 攻击将 prompt injection 从"指令覆盖"提升到"信任链劫�
 - [Agent Harness Context Management Working Set](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-context-management-working-set.md) — Agent 上下文管理与角色隔离
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

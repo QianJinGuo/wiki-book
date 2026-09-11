@@ -170,8 +170,6 @@ Vijay Viswanathan 等人的研究论文，揭示了奖励模型（Reward Model�
 → [原文存档](https://arxiv.org/abs/2606.21795)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -1040,8 +1038,6 @@ Agent 时代研究焦点从单次生成转向持续运行，三个关键事实�
 
 ## 相关实体
 - [清华 ai 自进化组织研究报告：ai 业务资产化与公司形态重构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tsinghua-ai-self-evolving-organization-corp-paradigm.md)
-→ 原文存档
-
 ---
 
 ## Ch13.008 用 Amazon SageMaker AI 与 Qualcomm AI Hub 打通从云端训练到端侧 NPU 的交付闭环
@@ -1310,8 +1306,6 @@ pass@3 相比 pass@1 整体提升约 8pp，Sonnet 4.6 多模态任务提升 18.2
 → [原文存档](https://mp.weixin.qq.com/s/KzPHgTF7j3XzWDZSh_jJPw)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -2199,7 +2193,6 @@ AI Skill 测评报告是一套**分层置信机制**：用颜色横幅给出确�
 
 遇到 Δ < 0 时，用「规则模块二分法」定位根因：逐条禁用 SKILL.md 中的规则模块，每次禁用后重跑，观察 Δ 变化。禁用某模块后 Δ 转正，说明该模块是根因。常见修复方式是将「必须」改为「优先」，给模型保留兜底能力。修复后必须重跑确认 Δ 转正才能上线。
 
-## 关联阅读
 
 → [AI Skill 测评体系进阶指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-skill-测评体系进阶指南.md) — 同系列其他章节
 

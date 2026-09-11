@@ -205,8 +205,6 @@ OpenAI 提出的"Entropy Garbage Collection"是一个极具工程价值的概念
 **理论支撑 (arxiv 2605.29682)**:
 - 原始 token 消耗 + 工具调用解释 agent 成功率方差 **R²=0.33~0.42**
 - **验证反馈质量 (Effective Feedback Compute) 达到 R²=0.94~0.99**
-- "**决定 AI 干活靠不靠谱的并非给它多少预算, 而是检查做得多好**"
-
 ### G1-G8 门禁墙 (eval 式硬校验)
 
 每个门禁是**确定性 Python 函数**, 检查产物存不存在、编译过不过、单测通没通。verifier agent 跑完后写 `phases/verification.json`, 任一 gate FAIL 则流程退回 DEVELOPING——**不是"建议", 是"阻断"**。

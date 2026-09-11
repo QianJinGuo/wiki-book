@@ -59,14 +59,10 @@ Cortex Sense 从 Snowflake 已有数据和活动中构建信号，自动增强 A
 - **Galaxy S26 发布时** SIA 不只是检索数据，而是在数据之上**推理和行动**：比较发布表现 / 规划步骤 / 调和信号 / 给出综合答案
 - 过去数小时的分析工作 → 现在**几秒内完成**
 - **全球约 1,000 名高管、销售和营销人员**正在使用 SIA — 他们不是数据科学家，而是负责区域目标、促销策略、产品路线图的**业务领导**
-- "数据团队不再是唯一入口，每位业务领导都可以在自己的工作流中获得分析能力"
-
 ### Thomson Reuters CoCounsel
 
 - **每天 1,000,000+ 专业人士**使用
 - 财务和业务部门**15,000+ 内部用户**每天使用语义智能做最关键的财务决策
-- "**我们已经从试点走向生产环境**，每一个 AI 能力在进入市场之前，都会经过负责任 AI 的流程"
-
 ## AI 时代没有"慢数据" — Datastream
 
 **Snowflake 亲自下场做流**（过去流处理不是强项，企业要额外部署 Kafka）： ^["[InfoQ 奇遇旧金山: Snowflake 迈向 Agentic Enterprise 的关键一跃](https://mp.weixin.qq.com/s/wBWSwI4_RDd_XE5KT-i53w)"]
@@ -106,10 +102,6 @@ Cortex Sense 从 Snowflake 已有数据和活动中构建信号，自动增强 A
 ### Snowflake 对 Agent 治理边界的重新定义
 
 未来企业数据平台不仅要回答"谁能访问什么数据"，还要回答： ^["[InfoQ 奇遇旧金山: Snowflake 迈向 Agentic Enterprise 的关键一跃](https://mp.weixin.qq.com/s/wBWSwI4_RDd_XE5KT-i53w)"]
-
-- "**智能体在什么情况下可以做什么操作**"
-- "**AI 的行为如何被审计和回溯**"
-- "**当智能体犯错时，责任边界在哪里**"
 
 ## 语义上下文（Horizon Context）
 

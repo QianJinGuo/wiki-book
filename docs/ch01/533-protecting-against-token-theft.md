@@ -168,7 +168,5 @@ Vercel 选择在「请求级」部署 BotID，本质上是把攻击者的破解�
 - [Inference Optimization](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/inference-optimization.md)
 - [Ai Infra Llm Efficient Inference Vllm](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-infra-llm-efficient-inference-vllm.md)
 - [Agentic Scheduler With Strands Agentcore For Multi Region Gpu Inference](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentic-scheduler-with-strands-agentcore-for-multi-region-gpu-inference.md)
-- "推理引擎对比"
-
 ---
 

@@ -138,8 +138,6 @@ Lambda MicroVMs 的定价更接近 Fargate 而非 Lambda，这传递了一个重
 → [原文存档](https://theburningmonk.com/2026/06/what-you-need-to-know-about-lambda-microvms/)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

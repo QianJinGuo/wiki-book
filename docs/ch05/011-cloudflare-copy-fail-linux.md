@@ -79,8 +79,6 @@ CVE-2026-31431（代号 "Copy Fail"）是一个 Linux 内核本地提权漏洞�
 - BPF-LSM 策略引擎
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

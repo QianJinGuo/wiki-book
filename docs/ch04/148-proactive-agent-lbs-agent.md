@@ -68,8 +68,6 @@ GenUI（Generated UI）是一个常被忽视但至关重要的设计理念。传
 → [原文存档](https://mp.weixin.qq.com/s/hfFsDBBEmiWsXpa61a5ygw)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

@@ -91,7 +91,6 @@ Open Code Review 的关键创新是**反思模型（Reflection Model）**：利�
 - [复杂任务规范（gufabiancheng）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gufabiancheng-spec-for-complex-tasks-cc-codex.md) — 探讨 Agent 在复杂任务中的规范执行
 - [Harness Engineering](../ch05/061-harness-engineering.html) — Agent 工程化的核心理念，与确定性工程 × Agent 混合驱动设计相关
 
-## 参考来源
 
 → [原文存档](https://mp.weixin.qq.com/s/WSicyyMEIXnNVDoWuz0jrw)
 

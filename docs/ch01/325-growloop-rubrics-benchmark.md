@@ -52,9 +52,6 @@ GrowLoop 解决的根本问题是："当一个评判系统的标准本身是被�
 → [原文存档](https://mp.weixin.qq.com/s/KYePPNNaOX0CfL7qdrvmIQ)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

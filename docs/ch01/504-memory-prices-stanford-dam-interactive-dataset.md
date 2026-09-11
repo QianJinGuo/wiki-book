@@ -74,8 +74,6 @@ DRAM 和 NAND $/GB 从 Keepa **月度刷新**；HBM 季度更新（Epoch AI）�
 → [原文存档](https://dam.stanford.edu/memory-prices.html)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

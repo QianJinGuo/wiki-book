@@ -182,9 +182,6 @@ RoadmapBench 超越简单的 pass/fail，提供多维度质量评估：
 → [原文存档](http://arxiv.org/abs/2605.15846)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

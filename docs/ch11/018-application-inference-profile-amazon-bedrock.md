@@ -38,8 +38,6 @@ Bedrock 支持在原始基础模型基础上封装一层 Application Inference P
 → [原文存档](https://aws.amazon.com/cn/blogs/china/blog-bedrock-per-bu-cost-alarms)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

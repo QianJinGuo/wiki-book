@@ -107,8 +107,6 @@ Wire up a PyTorch DataLoader: batching, shuffling, and iterating.
 → [原文存档](https://idlemachines.co.uk/essays/pytorch-training-loop)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

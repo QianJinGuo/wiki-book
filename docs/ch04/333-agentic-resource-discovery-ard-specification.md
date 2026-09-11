@@ -89,9 +89,6 @@ AWS 侧对同一 ARD 开放规范的补充视角，聚焦 **AWS Agent Registry**
 → [原文存档](https://www.snowflake.com/en/blog/agentic-resource-discovery-specification/)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

@@ -87,8 +87,6 @@ Parcel Perform 的生产部署采用了 SageMaker AI Training → Amazon Bedrock
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/fine-tune-amazon-nova-models-for-accurate-email-data-extraction)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

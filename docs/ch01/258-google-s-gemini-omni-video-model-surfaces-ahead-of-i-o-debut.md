@@ -53,8 +53,6 @@ Nano Banana 1 发布时并非最强图像模型，但通过迭代升级最终成
 - [Google's Gemini Omni video model surfaces ahead of I/O debut](https://github.com/QianJinGuo/wiki-public/blob/main/entities/googles-gemini-omni-video-model-surfaces-ahead-of-io-debut.md)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

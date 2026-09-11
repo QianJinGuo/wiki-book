@@ -52,8 +52,6 @@ Strands 的 @tool decorator 机制展示了工具增强型代理（Tool-Augmente
 
 5. **生产部署前必做安全检查清单** — 添加输入长度限制和不可打印字符过滤、启用 Bedrock Guardrails 过滤恶意内容、开启 CloudTrail 日志记录模型调用、设置按需配额告警和 per-session 查询上限、对话历史中的敏感数据分类和脱敏处理 
 
-## 参考来源
-
 ## 相关实体
 - [Claude Code Aws Bedrock Guide](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-aws-bedrock-guide.md)
 - [Bedrock Agentcore Payment X402 Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/bedrock-agentcore-payment-x402-agent.md)

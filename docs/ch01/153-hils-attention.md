@@ -74,8 +74,6 @@ HiLS 提供了两条训练路径：轻量改造（<1% 参数）和全参数继�
 5. **稀疏注意力不是万能方案**：尽管 HiLS 在长上下文场景表现优异，但仍存在多模态验证不足、chunk 超参数需手动调整等边界条件。在引入稀疏注意力时，应明确应用场景是否真正需要无限上下文，而非盲目追求"越长越好"。
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

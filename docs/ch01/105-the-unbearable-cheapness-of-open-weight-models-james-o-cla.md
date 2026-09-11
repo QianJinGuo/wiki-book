@@ -54,8 +54,6 @@ You can navigate to SDKs to view even more detailed breakdowns of specific parts
 → [原文存档](https://jamesoclaire.com/2026/06/25/the-unbearable-cheapness-of-open-weight-models/)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

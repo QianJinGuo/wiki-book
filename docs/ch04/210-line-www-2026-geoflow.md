@@ -76,9 +76,6 @@ WWW 2026 Test of Time Award 颁给 LINE 论文（2015）的意义超越了奖项
 5. **AI 制药的基础设施化趋势**：当 OpenAI、Anthropic、DeepMind 同时布局 AI 生命科学时，这个领域正在从"小众探索"变为"基础设施竞争"。关注 GeoFlow 在抗体设计、疫苗、合成生物学三条线的进展，可以作为判断 AI 制药实际落地进展的参考指标之一。
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

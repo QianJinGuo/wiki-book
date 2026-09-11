@@ -85,8 +85,6 @@ TECH_SPEC.md 作为跨会话知识传承的外部文件，比依赖模型的内�
 → [原文存档](https://mp.weixin.qq.com/s/mGGIbFyF4U1PrBJVdfgcvg)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

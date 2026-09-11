@@ -57,8 +57,6 @@ PixelRAG：页面/PDF → 无头浏览器渲染截图切片 → 视觉大模型�
 → [原文存档](https://mp.weixin.qq.com/s/Igx2Srav3EKVPaQSX3cgFA)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

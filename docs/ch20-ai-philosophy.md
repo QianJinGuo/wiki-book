@@ -89,9 +89,6 @@ This is fundamentally different from general AI applications (chatbots, content 
 -> [original archive](https://thenewstack.io/workday-ai-inference-guardrails/)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 
@@ -226,29 +223,6 @@ This is fundamentally different from general AI applications (chatbots, content 
 7. 如何指导资深工程师
 
 ## 核心金句汇总
-
-- "**不要听信任何人告诉你，知识储备少是一种优势**"
-- "**编码（Coding）和工程（Engineering），其实是截然不同的两件事**"
-- "**编码更像是一种表达方式，而工程的精髓在于如何将复杂的问题概念化**"
-- "**如果因为有了 AI 就停止练习，这种思维肌肉就会萎缩**"
-- "**真正的挑战在于利用工具去解决那些真正重要的问题**"
-- "**智慧是将事实付诸实践，并最终进行综合处理的结果**"
-- "**如果只是被动地接收 AI 给出的答案，而没有经过独立思考和挣扎的过程，智慧就很难建立**"
-- "**如果拿起重物后却让机器人替自己举起来，人本身是不会变强的**"
-- "**证明过程本身不是为了结果，而是为了提升思维能力**"
-- "**简单系统才是软件设计的终极目标**"
-- "**设计一个简单的系统比构建一个复杂的系统要难得多**"
-- "**目标应该是解决问题，而不是为了证明复杂度**"
-- "**如果一个团队的名称和使命都围绕着某一个特定系统展开，那么这个团队最终会倾向于保护这个系统**"
-- "**团队的方向应当永远面向需要解决的问题，而不是某个具体的工具**"
-- "**以现有系统命名的团队，往往会为了维护自己的存在意义而反对正确的决策**"
-- "**这种行为更像是'极客圈的娱乐新闻'，对真正的技术成长帮助有限**"
-- "**使用 Claude 或是其他 AI 工具并不是一项很难的硬技能**"
-- "**不需要强迫自己跟上每一个新模型的发布，那些大多是杂音**"
-- "**真正的成长来自于每天解决实际问题，尝试用最简单的方法去处理复杂的挑战**"
-- "**职业生涯是一场长跑**"
-- "**AI 并不意味着创新已经走到尽头。相反，这是一个非常酷的时代，大家拥有了更强的杠杆去构建以前做不到的东西**"
-- "**忽略 X 上的喧嚣，每天找机会让大脑承受思考的压力，去解决真正重要的问题**"
 
 ## 深度分析
 
@@ -1369,8 +1343,6 @@ AI 系统在健康、科学、教育、编程等高风险场景中越来越自�
 - [强化学习 (RL)](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/reinforcement-fine-tuning-rft.md)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

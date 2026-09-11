@@ -62,9 +62,6 @@ This system card is a detailed report of the work we did to understand and mitig
 → [原文存档](https://mp.weixin.qq.com/s/MwKr0GnvXgeAmSWbin_--A)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

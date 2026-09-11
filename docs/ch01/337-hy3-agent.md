@@ -80,9 +80,6 @@ Hy3 的评测指标体系值得关注：不只是单一的 benchmark 分数，�
 5. **preview 模式更适合大模型迭代**：2 月底重建基础设施 → 4 月 preview → 7 月正式版的节奏提供了参考。将大版本拆为"infra 就绪 → preview 验证 → full release 规模化"三个阶段，可以在每个阶段获得明确的信息反馈并修正方向。
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

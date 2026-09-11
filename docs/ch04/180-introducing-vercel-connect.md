@@ -67,9 +67,6 @@ Tokens are short-lived, with a lifetime that depends on the provider. The SDK re
 → [原文存档](https://vercel.com/blog/introducing-vercel-connect)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

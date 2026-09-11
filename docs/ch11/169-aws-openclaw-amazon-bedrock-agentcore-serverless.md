@@ -306,13 +306,7 @@ X-Ray 配置步骤应在环境准备阶段优先完成，因为：
 
 ## 相关实体
 - [OpenClaw多租户迁移: Phase 2&3部署](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-multi-4.md)
-- [Amazon Nova Multimodal Embeddings 制造业智能应用](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-nova-manufacturing-intelligence.md)
-- [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](https://github.com/QianJinGuo/wiki-public/blob/main/entities/real-time-voice-agents-with-stream-vision-agents-and-amazon-nova-2-sonic.md)
-- [Improve bot accuracy with Amazon Lex Assisted NLU](https://github.com/QianJinGuo/wiki-public/blob/main/entities/improve-bot-accuracy-with-amazon-lex-assisted-nlu.md)
 - [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-一周综述amazon-bedrock-agentcore-付款适用于-aws-的-agent-工具套件等2026-年-5-月-11-日.md)
-- [航班变更信息智能识别解决方案 | Amazon Web Services](https://github.com/QianJinGuo/wiki-public/blob/main/entities/航班变更信息智能识别解决方案.md)
-- [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](https://github.com/QianJinGuo/wiki-public/blob/main/entities/zenjoy-aiops-agent-bedrock-eks-prometheus.md)
-- [From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-siloed-data-to-unified-insights-cross-account-athena-access-for-amazon-quic.md)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](https://github.com/QianJinGuo/wiki-public/blob/main/entities/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazo.md)
 
 - [AgentCore Runtime部署Apache Doris MCP Server](https://github.com/QianJinGuo/wiki-public/blob/main/entities/runtime-deploy-apache-doris-mcp-server-quick-suite-ai-analytics.md)

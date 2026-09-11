@@ -108,8 +108,6 @@ Hunk 聚焦于 **review 环节**，与 [Harness Engineering](https://github.com/
 → [原文存档](https://github.com/modem-dev/hunk)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

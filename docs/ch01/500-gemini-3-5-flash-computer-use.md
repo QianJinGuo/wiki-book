@@ -91,8 +91,6 @@ Google 的三层防护（对抗训练 + 用户确认 + 自动中断）是目前�
 → [原文存档](https://deepmind.google/blog/introducing-computer-use-in-gemini-3-5-flash/)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

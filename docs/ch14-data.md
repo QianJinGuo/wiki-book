@@ -158,8 +158,6 @@ Amazon S3 Tables 每次增量提交都会产生新数据文件。如果不加控
 在 S3 Tables 中使用 createOrReplace 方式写入
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -296,9 +294,6 @@ Taking the above principles into account, we **implemented the Metrics Semantic 
 → [原文存档](https://eng.lyft.com/metric-semantic-layer-how-lyft-governs-and-scales-key-data-definitions-56bee3643c29)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 
@@ -327,9 +322,6 @@ Software is changing the world. QCon San Francisco empowers software development
 → [原文存档](https://www.infoq.com/presentations/write-ahead-intent-log/)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 
@@ -356,9 +348,6 @@ Whether you’re deduplicating web-scale pre-training corpora, curating agent in
 → [原文存档](https://datajuicer.github.io/data-juicer/en/main/)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 
@@ -385,8 +374,6 @@ This is the story of how we overcame the **black box of managed cloud**, the hid
 → [原文存档](https://blog.zepto.com/clickhouse-ingestion-at-scale-an-open-source-zepto-engineering-story-7f57309e2175)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -836,9 +823,6 @@ Kimi 和 TiDB 的合作是模型厂商通过好的基础设施服务、快速高
 https://mp.weixin.qq.com/s/XLYWhkjFHxrH2-jb5O1qCQ
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 
@@ -1368,9 +1352,6 @@ Data + AI Summit 的共识数据：Agent 循环（推理、工具调用、prompt
 **来源**: → [原文存档](https://blog.crewai.com/stop-giving-your-agents-database-credentials/)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 
@@ -1486,8 +1467,6 @@ SELECT id FROM A EXCEPT SELECT id FROM B;
 5. **三值逻辑的系统性影响**：NULL 的三值行为不仅影响 `NOT IN`，还影响 `NOT EXISTS`、`EXCEPT`、`GROUP BY`、`DISTINCT` 等多个 SQL 操作。理解这一底层逻辑是成为高级 SQL 用户的必经之路。
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -2618,7 +2597,6 @@ partition_by: "bucket(device_id, 50), day(timestamp)"
 5. **CDC Upsert 是 DB 变更捕获场景的必备能力**：对于数据库变更同步到数据湖的场景，没有 Upsert 支持的零 ETL 方案是不完整的。确认方案支持 Debezium 格式的 CDC 事件，并能正确处理 DELETE + UPDATE 操作。
 
 ## 架构图
-→ （架构图待生成: C4 架构图）
 
 ## 相关实体
 

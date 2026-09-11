@@ -90,8 +90,6 @@ Google DeepMind 联合 **Schmidt Sciences、Cooperative AI Foundation、ARIA**�
 **"单模型安全 → 种群级安全"**的研究范式转变 + 首个主要 AI 实验室联合公益机构的 $10M 多 Agent 安全研究资助计划
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -1824,7 +1822,6 @@ Oz 和 AWS [AgentCore](ch04/310-agentcore-managed-harness.html) 在功能列表�
 ### 5. 设计跨端任务延续机制
 手机远程调用电脑桌面文件是多端协作的典型场景。实际工作中，可以设计类似的跨端任务延续：用户在外可以通过手机查看/操控项目进展，回到电脑后直接继续处理桌面端文件，无需手动同步材料。这让 AI 任务不再被某一台设备绑定。
 
-## 关联阅读
 
 - [扣子 3.0 多 Agent 协同实战](https://github.com/QianJinGuo/wiki-public/blob/main/entities/coze-3-multimagent-team-orchestration-wangheige.md) —— 同样是 Coze 3.0 多 Agent 协作主题，网黑哥从实战角度提供了开发小队/品牌设计/公众号流水线的完整案例，与本文的官方升级视角互为补充。
 - [字节 Trae Harness 工程指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/bytedance-trae-harness-engineering-guide.md) —— 字节另一款 AI 产品 Trae 的工程化指南，可与 Coze 3.0 的本地 Agent 接入思路对照，理解字节在 AI 协作产品上的不同布局方向。
@@ -2687,24 +2684,6 @@ CLAUDE.md 里写了但常被漏的规则 → 创建 workflow，每条规则对�
 - **两个生态互相喂养**：开源创新 → 闭源产品化 → 反哺开源
 
 **核心金句（行小招版）**：
-
-- "**Anthropic 又开始抄袭了，把这套抄进了 claude code，改名为 dynamic workflow**"
-- "**Hermes 的 DAG 动态图，效果非常显著**"
-- "**纯粹的 Opus 4.8 在 xhigh/max 级别上其实比不上 GPT-5.5，但加上 dynamic workflow 之后直接反超**"
-- "**当下企业级智能体的终局就是这个了，不是那比较虚的 Agent team's，那玩意不稳定**"
-- "**多部分任务中尚未真正完成就提前收工，并在只取得部分进展后宣布任务完成**"
-- "**Claude 更倾向于认可自己的结果或发现，尤其是在你要求它按照评分标准去验证或评判这些结果时**"
-- "**每一次摘要都会损失信息，像边缘条件要求，或者'不要做 X'之类的约束，都可能在过程中丢失**"
-- "**综合步骤相当于一道屏障，它会等待所有扇出的智能体完成，再把它们的结构化输出合并成一个结果**"
-- "**相对判断通常比绝对打分更可靠。每次比较都由自己的智能体完成**"
-- "**可以让不同智能体分别查看日志、文件和数据。随后，每个假设都要接受一组验证者和反驳者的审视**"
-- "**读取不可信公开内容的智能体不能执行高权限操作，高权限操作改由负责行动的智能体完成**"
-- "**当评审智能体认为某个方案已经达到标准时，任务就完成了**"
-- "**大多数传统编程任务并不需要 5 个审查者组成的评审团**"
-- "**为动态工作流编写提示词时，越具体越好**"
-- "**也可以提示模型使用'快速工作流'**"
-- "**当工作流适合重复运行时，比如分诊、研究或验证，可以和 /loop 搭配**"
-- "**为了提高灵活性，你可能会希望提示 Claude，把技能里的工作流视为模板，而不是必须逐字照跑的脚本**"
 
 **整合视角（8 译本全栈）**：
 - **8 译本叙事中，行小招译本的最不可替代新增** = **3 大中文社区视角**：

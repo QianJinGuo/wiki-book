@@ -65,8 +65,6 @@ KAIROS 的四维成熟度框架可复用：产品意图是否清晰一致？框�
 KAIROS 展示了大量外围能力，但主入口和核心状态闭环仍有明显缺口。这种状态容易产生「产品已经就绪」的幻觉，因为演示时可以用外围能力唬人。识别这种幻觉的方法：检查 stub 标识（isKairosEnabled() 返回 false）、检查主模块入口是否还是占位、确认 session discovery 是否返回空数组。这些断点比功能演示更能说明系统真实状态。
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

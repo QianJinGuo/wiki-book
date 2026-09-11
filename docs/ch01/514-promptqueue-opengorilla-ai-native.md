@@ -9,7 +9,6 @@
 由 **jinguo** 独立设计开发，**2 天 38 commits 完成 7,760 行 TypeScript**，Monorepo 4 包架构（Hono API + Worker + Next.js 15 Dashboard + CLI），测试覆盖率 ~33%。OpenGorilla 集成让系统"越用越聪明"。
 
 ## 架构图
-→ （架构图待生成: C4 架构图）
 
 ## 相关实体
 - [Schemaflow Openai Cookbook Staged Agentic Workflow](https://github.com/QianJinGuo/wiki-public/blob/main/entities/schemaflow-openai-cookbook-staged-agentic-workflow.md)
@@ -17,8 +16,6 @@
 - [From Prompt To Harness Claude Official](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-prompt-to-harness-claude-official.md)
 - [Claude Code Large Codebase Harness Configuration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-large-codebase-harness-configuration.md)
 - [Openai Skills Shell Compaction Agent Primitives](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openai-skills-shell-compaction-agent-primitives.md)
-
-→ 原文存档
 
 ## 一、立项背景（Purpose）
 
@@ -271,15 +268,6 @@ LangChain 在 Agent 框架内执行 Tool → 黑盒。PromptQueue 把治理权�
 ---
 
 ## 十、核心金句
-
-- "**不是给 LLM API 套壳，而是把队列工程的成熟模式引入 LLM**"
-- "**Worker 是 Tool 的治理者 (Governor)**"
-- "**HITL 不是 feature，是 Agent 能跑生产环境的必要条件**"
-- "**每一次任务执行都是一次学习**"
-- "**传统 LLM 调用每次都是冷启动**"
-- "**简单 = 可靠 + 易部署 + 低维护**"
-- "**不是又一个 LLM API 封装库，不是又一个 Agent 框架，是面向 AI-Native 时代的异步任务基础设施**"
-- "**PromptQueue 是 AI-Native 应用的异步执行引擎**"
 
 ---
 

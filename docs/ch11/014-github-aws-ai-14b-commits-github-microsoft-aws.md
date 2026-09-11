@@ -46,8 +46,6 @@
 **AI 编码激增 → 14× commits → 30× 容量需求 → 微软被迫向 AWS 买容量** —— 2026 年最具体的"agentic AI 改变基础设施"案例
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

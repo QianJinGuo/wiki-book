@@ -26,8 +26,6 @@ ds4.c 采用了非对称混合量化策略，专门针对 MoE（Mixture of Exper
 
 - 只量化 MoE 专家层（up/gate 用 IQ2_XXS，down 用 Q2_K）
 - 共享专家层、投影层、路由层保留 Q8 精度
-- "2-bit 量化不是开玩笑，在 coding agent 下表现良好，能可靠地调用工具"
-
 这种量化策略的原理是：共享层和路由层的错误会产生全局性影响（影响所有 expert 的输入/输出），而 expert 内部的错误只会影响该 expert 的局部输出。从信息量角度，共享层的 quantization error 代价更高，所以给更高精度。
 
 ### 2. KV Cache 磁盘化
@@ -139,8 +137,6 @@ antirez 提出的推理引擎 + 专用 GGUF + coding agent 验证三者组合，
 - [DeepSeek-V4深度拆解](../ch01/053-deepseek-v4.html) — DeepSeek V4 论文深度解读
 - [DeepSeek V4 Pro vs Claude](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-v4-pro-vs-claude.md) — V4 Pro 和 Flash 对比测试
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/coding-agent-practice.md)
-
-→ 原文存档
 
 ---
 

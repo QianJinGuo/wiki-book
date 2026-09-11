@@ -107,9 +107,6 @@ AWS 在合作中开源的 **MCP Gateway Registry** 提供"agent 和 server 治�
 - [Ai Agent Engineer Learning Roadmap Backend 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-engineer-learning-roadmap-backend-2026.md)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
 - [Agent Security Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-security-architecture.md)
-- "MCP 协议生态"
-- "LLM 安全与红队测试"
-
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/securing-ai-agents-how-aws-and-cisco-ai-defense-scale-mcp-and-a2a-deployments/)
 - [电商 ai 操作系统崛起：从「工具人」到「all in one」+ 行业 knowhow skill 化 + 5 巨头](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ecommerce-ai-os-all-in-one-storeclaw-geek-park-2026.md)
 

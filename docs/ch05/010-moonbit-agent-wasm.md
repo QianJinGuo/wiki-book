@@ -42,8 +42,6 @@ Mooncakes 包管理网站库数量过万，累计下载超 400 万次。
 AI 不会去掉工程门槛。生态成熟度、工业验证、开发者心智和长期维护能力仍然是编程语言成功的关键问题。新语言必须同时回答：模型能不能高效学会，生态能不能快速长起来，开发者愿不愿意在真实项目中采用。
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

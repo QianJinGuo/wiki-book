@@ -60,9 +60,6 @@ Google 明确指出网站需为 AI 代理做好视觉 UI 优化（而非 API-onl
 > [!contradiction] 另参见 [Anthropic](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic.md) 持相反观点 — Anthropic 主张 Model Context Protocol (MCP) 将成为 AI 代理与网站交互的主流范式，浏览器层检测的必要性将被 API 层替代
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

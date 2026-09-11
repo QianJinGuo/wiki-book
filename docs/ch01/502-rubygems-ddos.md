@@ -109,8 +109,6 @@ RubyGems 的响应体现了**纵深防御**理念：
 - [软件安全](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-security-architecture.md)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

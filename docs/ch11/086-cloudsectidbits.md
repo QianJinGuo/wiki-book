@@ -42,7 +42,5 @@ CloudSecTidbits 是 Doyensec 的云安全研究系列，专门呈现「Web 技�
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢](https://github.com/QianJinGuo/wiki-public/blob/main/entities/based-on-prowler-genai-build-fintech-intelligent-compliance-2.md)
 - [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-api-security-guide.md)
 
-→ 原文存档
-
 ---
 

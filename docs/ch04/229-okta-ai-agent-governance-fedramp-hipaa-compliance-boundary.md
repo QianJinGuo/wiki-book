@@ -96,9 +96,6 @@ Okta 将此视为现有身份治理的自然扩展，而非新基础设施：
 → [原文存档](https://thenewstack.io/okta-ai-agents-fedramp/)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

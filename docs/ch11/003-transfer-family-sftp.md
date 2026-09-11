@@ -149,8 +149,6 @@ S3 桶（SFTP 后端存储）：
       BlockPublicAcls=true,IgnorePublicAcls=true,Block
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

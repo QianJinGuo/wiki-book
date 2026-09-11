@@ -120,8 +120,6 @@ aws s3api delete-object-annotation \
 5. **为 MCP Server 集成预留注释 schema**：如果你在构建 Agent 工作流，提前定义 Annotations 的 schema（哪些字段是 Agent 需要读取的、哪些是 Agent 需要写入的），避免后期 schema 演进的痛苦。
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

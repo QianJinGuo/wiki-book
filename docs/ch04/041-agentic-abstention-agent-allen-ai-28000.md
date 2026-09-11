@@ -42,9 +42,6 @@
 → [原文存档](https://mp.weixin.qq.com/s/NKN8GmtO4lc5f9TIG-Komg)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

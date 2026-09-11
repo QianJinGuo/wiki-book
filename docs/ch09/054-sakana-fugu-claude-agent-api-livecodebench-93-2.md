@@ -75,8 +75,6 @@ Fugu 的发布时机非常精准——Anthropic 在 2026 年 6 月 12 日宣布�
 → [原文存档](https://www.implicator.ai/sakana-fugu-launches-with-93-2-livecodebench-score-after-claude-ban/)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

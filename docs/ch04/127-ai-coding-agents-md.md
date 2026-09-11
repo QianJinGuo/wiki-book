@@ -104,9 +104,6 @@ AGENTS.md 中写的规则，如果没有自动化检查，AI 和人都会违反 
 
 → [第 2 来源原文](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651052471&idx=2&sn=e243403e1ae25a94cb0822e80332c0fc)
 
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

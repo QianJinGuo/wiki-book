@@ -1160,8 +1160,6 @@ bash examples/pretrain_language_model/launch.sh qwen3-30b-a3b
 - [原文存档](https://mp.weixin.qq.com/s/bB9ncEOvj3pTKtWpyGHkpQ)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

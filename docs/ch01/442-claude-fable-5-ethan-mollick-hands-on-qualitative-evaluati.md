@@ -61,8 +61,6 @@ Mollick 自己说："a piece of software that researchers have needed for years 
 - 不再"操控"过程，而"委托"任务
 - 看不见 AI 内部决策（数百个小选择）
 - 评判的角色依然保留，但操作的角色消失
-- "A patron commissions a single artist. Fable is closer to a whole studio, where I am the client who signs off on the final work without ever setting foot on the floor."
-
 ### 未来方向判断
 
 Mollick 给出两种可能：
@@ -133,7 +131,6 @@ Wizard 阶段 steering 和 doing 混在一起（人类施咒即执行），Patro
 - **安全护栏过敏感**仍是 Fable 当前的实际部署问题——任何"安全相关"问题立即降级到 Opus 4.8
 - **"Black box 即能力代价"**——若接受 black box，可获得前所未有的执行力；若要求透明过程，需要等更好的接口层
 
-## 来源
 
 - → [原文存档](https://www.oneusefulthing.org/p/what-it-feels-like-to-work-with-mythos)
 - 相关 entity: [Claude Fable 5 And New Ai Safety Fables](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-fable-5-and-new-ai-safety-fables.md)（Lambert/Interconnects 安全分析视角）

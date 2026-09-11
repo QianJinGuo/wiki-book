@@ -77,8 +77,6 @@ Cordon 不要求重写整个 Agent，而是在 tool-dispatch boundary 插入 tra
 - [原文存档](https://mp.weixin.qq.com/s/PjGt3-DoO2n60fgVfMcFFA)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

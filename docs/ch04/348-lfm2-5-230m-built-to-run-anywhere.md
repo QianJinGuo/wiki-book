@@ -108,9 +108,6 @@ LFM2.5-230M 的成功验证了几个重要趋势：
 → [原文存档](https://www.liquid.ai/blog/lfm2-5-230m)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

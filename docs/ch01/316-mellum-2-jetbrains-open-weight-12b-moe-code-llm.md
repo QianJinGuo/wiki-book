@@ -65,15 +65,11 @@
 
 5. **开源代码模型差异化竞争聚焦"部署成本+许可证+IDE 集成"三角** — Mellum 2 选择 Apache 2.0 + JetBrains IDE 集成生态位，而非在 benchmark 上硬刚。中小团队如果无法在性能上超越头部，可以借鉴此思路，通过许可证友好、工具链集成、或特定场景优化建立自己的 niche。
 
-## 来源
 
 - [arXiv:2605.31268](https://arxiv.org/abs/2605.31268) — 原始技术报告
 - → [原文存档](https://arxiv.org/abs/2605.31268)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

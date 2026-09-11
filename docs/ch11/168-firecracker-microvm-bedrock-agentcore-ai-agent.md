@@ -604,7 +604,6 @@ OpenClaw Pool 展示了 Firecracker microVM 如何在保持无服务器控制面
 
 ![](https://d2908q01vomqb2.cloudfront.net/472b07b9fcf2c2451e8781e944bf5f77cd8457c8/2026/05/14/2026_Summits_Commercial_Banner_1440x657.png)
 
-## 参考来源
 
 ### 1. Firecracker microVM 在多租户隔离范式中的定位
 

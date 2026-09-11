@@ -40,18 +40,7 @@ AgentCore Runtime 的使用表明，Serverless Agent 托管正在成为 AI 原�
 → [原文存档](https://aws.amazon.com/cn/blogs/china/zenjoy-based-on-strands-amazon-bedrock-agentcore-build-eks)
 
 ## 相关实体
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-os-level-actions-in-amazon-bedrock-agentcore-browser.md)
-- [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-agentcore-doris-mcp-server.md)
-- [自己的工具自己控：MCP Server、Amazon Bedrock AgentCore、Quick Suite集成指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mcp-serveramazon-bedrock-agentcorequick-suite.md)
-- [OpenClaw多租户迁移: Phase 2&3部署](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-multi-4.md)
-- [AgentCore Runtime部署Apache Doris MCP Server](https://github.com/QianJinGuo/wiki-public/blob/main/entities/runtime-deploy-apache-doris-mcp-server-quick-suite-ai-analytics.md)
-- [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-agentcore-identity-security.md)
-- [OpenClaw多租户迁移: 背景与架构概览](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-multi-1.md)
-- [别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-api-security-guide.md)
-- [OpenClaw多租户迁移: Phase 1 基础设施部署](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-multi-3.md)
-- [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-agentcore-os-level-actions-browser.md)
-- [Amazon Bedrock模型推理的Serverless异步架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-model-inference-serverless-architecture-case-study.md)
-- [基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-2.md)
+
 
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-serverless-async-inference-sqs-lambda.md)
 - [基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/based-on-prowler-genai-build-fintech-intelligent-compliance-2.md)

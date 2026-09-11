@@ -62,11 +62,7 @@ Prowler 输出 OCSF（Open Cybersecurity Schema Framework）标准格式的 JSON
 值得注意的是，该方案明确指出根据 Amazon Bedrock 的数据隐私合规标准，客户的提示词、安全扫描结果以及生成的报告都不会被用于训练底层的基座模型，确保金融级的数据隔离与隐私安全。 对于金融行业客户，这是一个关键的合规考量点——在使用云端 GenAI 服务时，需要确认服务提供商的数据处理政策，特别是涉及安全扫描结果等敏感信息时。
 
 ## 相关实体
-- [Amazon Nova Multimodal Embeddings 制造业智能应用](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-nova-manufacturing-intelligence.md)
-- [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-os-level-actions-in-amazon-bedrock-agentcore-browser.md)
-- [SQS+Lambda异步管道：2000并发0%限流的工程细节](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-serverless-async-inference-sqs-lambda.md)
-- [在 Amazon Bedrock 上为 Claude 应用设计稳健的 Prompt Cache 策略](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-claude-prompt-cache-strategy.md)
-- [build-custom-code-based-evaluators-in-amazon-bedrock-agentco](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-custom-code-based-evaluators-in-amazon-bedrock-agentco.md)
+
 
 - [Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic](https://github.com/QianJinGuo/wiki-public/blob/main/entities/real-time-voice-agents-with-stream-vision-agents-and-amazon-nova-2-sonic.md)
 - [Improve bot accuracy with Amazon Lex Assisted NLU](https://github.com/QianJinGuo/wiki-public/blob/main/entities/improve-bot-accuracy-with-amazon-lex-assisted-nlu.md)

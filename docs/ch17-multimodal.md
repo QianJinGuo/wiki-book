@@ -93,8 +93,6 @@ Monitorability, a key downstream application of transparency, is similar between
 本文从**透明度/可解释性**角度分析 DiffusionGemma，与现有 [DiffusionGemma 技术架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/diffusiongemma-4x-faster-text-generation-google-2026-06.md) 实体（侧重模型架构、MoE 设计、推理加速）形成互补。
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -708,11 +706,6 @@ VGGSound-Omni 基准引入的画外音（Off-screen）专属评测赛道，为�
 
 ## 7. 核心金句
 
-- "**把原本需要高端服务器才能跑的多模态智能，装进你的笔记本电脑里。**"
-- "**多模态理解加上 Agent 能力，直接在本地跑，不用联网，不依赖云端。**"
-- "**以后就算断网，本地也有真正的多模态模型了，没有任何 token 焦虑**"
-- "**这种统一、无编码器的架构，带来的直接好处是：延迟更低，内存更省。**"
-
 ## 8. 与已有 wiki 实体的关系
 
 ### vs PilotDeck / Kimi Work / 高德 / Rein
@@ -1080,8 +1073,6 @@ NEO-Unify 的成功验证了"原生统一"路线的可行性，为多模态大�
 → [原文存档](https://mp.weixin.qq.com/s/60m6GzLGlRAfWYWWkIDCOA)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -1173,8 +1164,6 @@ Vera 团队面临的核心挑战是：**没有公开数据集提供高质量的�
 → [原文存档](https://netflixtechblog.com/toward-more-controllable-ai-video-editing-an-early-research-exploration-at-netflix-eb8160ed60a2?source=rss----2615bd06b42e---4)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -1370,8 +1359,6 @@ FLAT 并非完全取代 3DGS，而是解决其特定弱点：
 → [原文存档](https://flat-splat.github.io)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -1451,8 +1438,6 @@ AWS GenAIIC 与 Vexcel 的合作模式值得借鉴：先建评估框架（基于
 **来源**: → [原文存档](https://aws.amazon.com/blogs/machine-learning/embed-the-world-multimodal-ai-for-searchable-aerial-imagery-at-scale/)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

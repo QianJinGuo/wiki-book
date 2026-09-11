@@ -99,9 +99,6 @@ GitNexus 的 16 个 MCP 工具存在清晰的分工逻辑：单仓库工具（`c
 **5. 在团队内部建立代码库索引更新 SOP，确保索引 freshness 符合要求。** 建议在 CI/CD 流程中嵌入增量索引步骤，或者对超过一定时间未更新的代码库强制全量重建。可通过 `detect_changes` 工具验证索引与代码库的同步状态。
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

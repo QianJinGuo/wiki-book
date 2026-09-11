@@ -108,7 +108,6 @@ Multiagent Sessions、Outcomes、Dreams 目前均处于研究预览阶段，需�
 → [原文存档](https://mp.weixin.qq.com/s/B-Usu9rACZG-JJDN_z-Ydw)
 
 ## 架构图
-→ （架构图待生成: C4 架构图）
 
 ## 相关实体
 - [Claude Managed Agents 官方 Harness 平台指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-claude-managed-agents-guide.md)

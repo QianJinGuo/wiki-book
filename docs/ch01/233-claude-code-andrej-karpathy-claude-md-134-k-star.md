@@ -149,7 +149,6 @@ Karpathy 做的事情是用准确的语言把这些挫败感说了出来，并�
 
 **换文件名在 Cursor 里同样适用**（仓库里两个版本都提供了）。
 
-## 来源
 
 - GitHub：https://github.com/forrestchang/andrej-karpathy-skills（65 行，MIT 协议）
 - Karpathy 原推：2026-01-26

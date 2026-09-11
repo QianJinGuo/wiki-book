@@ -111,7 +111,5 @@ VOC 管线采用三阶段 pipeline：并行提取 → 问题聚类 → 报告生
 - [Comprehensive Observability For Amazon Sagemaker Ai Llm Infe](https://github.com/QianJinGuo/wiki-public/blob/main/entities/comprehensive-observability-for-amazon-sagemaker-ai-llm-infe.md)
 - [Process Financial Documents Using Amazon Bedrock Data Automa](https://github.com/QianJinGuo/wiki-public/blob/main/entities/process-financial-documents-using-amazon-bedrock-data-automa.md)
 
-→ 原文存档
-
 ---
 

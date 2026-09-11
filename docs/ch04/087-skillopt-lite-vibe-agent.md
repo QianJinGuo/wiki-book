@@ -55,9 +55,6 @@ SkillOpt-Lite 将 Agent 技能优化重构为**零阶优化 + 文件系统调试
 - **一行命令部署**：`/skillopt-loop rounds=10 batchsize=40 target=gpt5.4-nano` 的低门槛入口降低了 Agent 自进化的使用成本
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

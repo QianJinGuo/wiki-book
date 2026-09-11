@@ -240,22 +240,6 @@ print(result.text)
 
 ## 核心金句
 
-- "**工具不是'插件列表'，而是 Agent 对外的能力契约**"
-- "**一次 tool_call 对应一次结构化入参、一次可观测的副作用、可被中间件拦截的执行路径**"
-- "**Function Tools 可移植性最好、最适合接业务逻辑与细粒度权限**"
-- "**入参由模型根据 JSON Schema 生成，必须按不可信输入校验**"
-- "**Hosted Tools 计费、配额、数据驻留都跟随 Provider**"
-- "**Chat Completion 客户端往往不支持完整 Hosted 能力集**"
-- "**MCP 适合把已有工具生态以标准协议接到 Agent，不必每个集成写一个薄封装函数**"
-- "**FoundryAgent（远端已定义的智能体）与 FoundryChatClient（本地 client 组工具）能力边界不同**"
-- "**许多工具只能在 FoundryChatClient 路径下由框架动态挂载**"
-- "**先定 Client 类型，再选工具清单**"
-- "**Tool Approval 不是某个云厂商的独占能力，而是 function-invoking chat client 上的横切能力**"
-- "**生产环境对副作用类工具应默认 always_require，而非 sample 里的 never_require**"
-- "**Agent → Function Tool 桥接 = 分层委派（与 Workflow 的确定性图编排不同，更偏模型自主路由）**"
-- "**外层每次 as_tool() 调用都会产生完整子 Agent run，注意延迟与 Token 成本**"
-- "**强顺序、强事务、必须 checkpoint 的流程应改用 Workflow**"
-
 ### 1. Provider 矩阵的实质：运行时能力 vs 代码可 import 性的落差
 
 Provider 能力矩阵揭示了一个核心矛盾：**框架 API 层面可 import 的模块与运行时实际支持的工具类型之间存在系统性落差** 。例如，`Code Interpreter` 和 `File Search` 在 Python import 路径上对所有 Client 类型开放，但在实际运行时只有 `Responses` 和 `Foundry` 支持。这不是文档缺陷，而是 Client 架构分层导致的：**Chat Completion 客户端复刻的是 OpenAI Chat Completion API 的工具子集，而非 Responses API 的完整工具面**。

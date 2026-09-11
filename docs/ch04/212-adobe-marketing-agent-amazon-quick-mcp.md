@@ -99,9 +99,6 @@ Adobe Marketing Agent 通过 MCP (Model Context Protocol) 协议与 Amazon Quick
 - [Amazon Bedrock AgentCore Web Search](398-amazon-bedrock-agentcore-web-search-ga.html)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

@@ -131,7 +131,6 @@ OPLOG 强调的"仅为实际执行付费"模式，结合 Serverless 自动扩缩
 
 ---
 
-## 关联阅读
 
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/build-ai-agents-for-business-intelligence-with-amazon-bedrock-agentcore/)
 

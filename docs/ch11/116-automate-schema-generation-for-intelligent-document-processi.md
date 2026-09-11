@@ -84,8 +84,6 @@ Before you can extract information from documents using intelligent document pro
 这一技术栈组合代表了AWS平台上典型的无服务器AI管道架构，其设计模式可复用于其他需要批量文档处理的项目。
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

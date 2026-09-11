@@ -99,8 +99,6 @@ IBS Software 投入 9 名研究人员和工程师，历时约 4 个月完成项�
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/building-bilingual-ner-for-cargo-logistics-with-amazon-bedrock)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

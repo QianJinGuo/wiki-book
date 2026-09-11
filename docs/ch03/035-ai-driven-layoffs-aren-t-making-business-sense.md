@@ -53,8 +53,6 @@ AI 驱动的快速裁员还破坏了组织的学习能力。真正有效的 AI �
 - [Nearly every enterprise is investing in AI, but only 5% say their data is ready](https://github.com/QianJinGuo/wiki-public/blob/main/entities/enterprise-ai-investment-data-readiness-cio.md)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

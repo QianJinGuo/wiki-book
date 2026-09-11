@@ -30,8 +30,6 @@ Karpathy 把它称为"从 Vibe Coding 到 Agentic Engineering"：不是让 AI �
 
 ---
 
-
-
 ---
 
 ## 本章内容

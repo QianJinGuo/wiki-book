@@ -141,9 +141,6 @@ SaC 范式要求生成的代码在 sandboxed environment 中执行，这是生�
 4. **企业知识管理**：用 search-as-code 模式构建内部知识库，让 LLM agent 生成查询代码而非固定 query templates
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

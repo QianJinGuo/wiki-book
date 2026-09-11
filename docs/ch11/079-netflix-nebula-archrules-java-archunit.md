@@ -82,7 +82,6 @@ Netflix 的 ArchRules 是针对自身微服务生态设计的，但规则模式�
 - [Netflix Druid Interval Aware Caching](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-druid-interval-aware-caching.md)
 - [High Throughput Graph Abstraction At Netflix](https://github.com/QianJinGuo/wiki-public/blob/main/entities/high-throughput-graph-abstraction-at-netflix.md)
 
-## 相关引用
 
 → [原文存档](https://netflixtechblog.com/scaling-archunit-with-nebula-archrules-b4642c464c5a?source=rss----2615bd06b42e---4)
 

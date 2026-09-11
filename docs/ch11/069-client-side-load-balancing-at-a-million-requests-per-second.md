@@ -75,8 +75,6 @@ Zalando 将 CSLB 实现为独立的、无框架依赖的 JVM 模块，唯一依�
 → [原文存档](https://img01.ztat.net/engineering-blog/posts/2026/06/images/cslb-consistent-hash-load-balancing-after.png?imwidth=1320#previewimage)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

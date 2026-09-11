@@ -57,8 +57,6 @@ x402 已成为代理商务支付协议的事实标准，新项目在评估付费
 
 单个代理的支付模式相对简单，但多代理系统需要层次化的预算架构：每个子代理拥有独立会话和预算上限，父代理通过 AgentCore Runtime 在基础设施层面强制执行 `ProcessPaymentRole`。 建议在架构设计阶段就用支付边界来定义代理边界：负责财务数据分析的子代理不应与负责网页浏览的子代理共享同一支付会话，即使它们隶属于同一个父代理任务。这样可以实现细粒度的成本核算和故障隔离。
 
-## 参考来源
-
 ## 相关实体
 - [Bedrock Agentcore Payment X402 Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/bedrock-agentcore-payment-x402-agent.md)
 - [Firecracker Bedrock Agentcore Multi Tenant](https://github.com/QianJinGuo/wiki-public/blob/main/entities/firecracker-bedrock-agentcore-multi-tenant.md)

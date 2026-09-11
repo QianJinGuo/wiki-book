@@ -52,9 +52,6 @@ Databend 对此的应对方案具有很强的工程参考价值：基于对象�
 → [原文存档](https://mp.weixin.qq.com/s/YXAzdvgpGwJBz-0EwW9Vkw)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

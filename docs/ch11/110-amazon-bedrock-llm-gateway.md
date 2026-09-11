@@ -69,9 +69,6 @@ AWS 官方推荐两种 Gateway 方案：轻量级开源方案 **LiteLLM**（适�
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/implementing-resilience-patterns-with-amazon-bedrock-and-llm-gateway)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

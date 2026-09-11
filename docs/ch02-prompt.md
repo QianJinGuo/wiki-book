@@ -230,8 +230,6 @@ Legacy Topics provided the initial approach to adding business context to datase
 | **Legacy Topics** |
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -294,8 +292,6 @@ AI 的核心价值在于集成环节——需同时理解动画结构和业务 D
 - [淘宝动效解决方案分享](https://github.com/QianJinGuo/wiki-public/blob/main/entities/淘宝动效解决方案分享.md) — 同团队早期平台级方案（Lottie → Anime.js、MCP 协议、跨端 Player），本篇是实践落地篇
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -953,7 +949,6 @@ Superpowers 的微测方法论最大的贡献不是某一条具体结论，而�
 - [Agent Loop 设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-boris-cherny-agent-loop-design-patterns.md) — 探讨 Agent 运行循环的设计模式，为理解 dispatch prompt 的上下文机制提供参考
 - [Harness Engineering](ch05/061-harness-engineering.html) — Agent 工程化的广义框架，Superpowers 的微测方法是 prompt engineering 层面对 Harness Engineering 的一次实践验证
 
-## 参考来源
 
 → [原文存档](https://mp.weixin.qq.com/s/4XTsfY8SzcjusCU6sUg7yg)
 
@@ -1647,7 +1642,6 @@ Schema 语义没变，但 **bytes 稳定了**。
 - **Agent 工具链加入"压缩代理层"作为可插拔中间件**：Headroom 的 proxy / wrapper / MCP server 模式让它**对应用层透明**——现有 Agent 不用改代码就能获得压缩 + 缓存稳定化收益。如果你在构建 Agent 平台或 IDE 集成层，**优先考虑 Headroom-style 透明代理**而非侵入 SDK 修改。
 
 ## 架构图
-→ （架构图待生成: C4 架构图）
 
 ---
 
@@ -2244,23 +2238,6 @@ Tool（最基础）= 一个具体动作
 **本术语表 = 这一系列实体的"统一语言层"**。
 
 ## 核心金句
-
-- "**AI Agent 是一个以大模型为核心、能够调用工具、接收反馈并持续完成任务的系统**"
-- "**最关键的词，不是'生成文本'，而是'持续完成任务'**"
-- "**Model 是 Agent 的核心，但不是 Agent 的全部**"
-- "**Model 本质是'文本进，文本出'。更重要的是，它本身没有跨调用记忆，也没有执行循环**"
-- "**Scaffolding 管'怎么想'，Harness 管'怎么跑'**"
-- "**如果说 Prompt Engineering 关心的是'提示词怎么写'，那么 Context Engineering 更关心的是：在 Agent 执行的每一步里，模型到底应该看到什么信息**"
-- "**Context Engineering 不是一次性的设置**"
-- "**训练时塞错了，模型学到的东西可能会偏掉；推理时塞错了，通常还能通过改提示词或重配上下文再来一次**"
-- "**Policy 不等于 Agent 本身。Agent 是那个在环境里真正采取行动的完整系统，Policy 则是它表现出来的行为方式**"
-- "**Tool 更像 Agent 的'手'**"
-- "**Skill 更像 Agent 的'套路'**"
-- "**Sub-agent 则更进一步。它不是一个被动工具，也不只是一套方法，而是另一个可以自己思考、自己调用工具、独立处理子任务的 Agent**"
-- "**到了训练阶段，Agent 讨论的就不只是'会不会用工具'，而是'能不能在环境里不断变强'**"
-- "**AI Agent 不是一个单独的新模型名词。它更像是一整套围绕模型搭起来的系统**"
-- "**模型负责理解和决策，工具负责行动，执行系统负责把任务一轮轮推进下去**"
-- "**把这些概念分清之后，再去看各种 Agent 产品、Agent 框架和 Agent 论文，就不会那么容易混乱了**"
 
 ### 1. 为什么术语分歧会成为 Agent 落地的核心障碍
 

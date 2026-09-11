@@ -100,9 +100,6 @@ GLM5（~5% 检出率）需要强规则、细约束来补足检测能力，GPT5.5
 5. **检测规则前置到 Spec 阶段**：AICR 不应只在代码提交后发挥作用。将质量规则前置到需求/Spec 阶段，让 AI 在"写代码前"就介入，可以显著降低后置修复成本。这是一个值得探索但需要组织流程调整的方向。
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

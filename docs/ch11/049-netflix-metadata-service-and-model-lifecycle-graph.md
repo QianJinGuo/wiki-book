@@ -101,7 +101,6 @@ Model Lifecycle Graph 通过 AIP Portal 向 practitioners 展示，这是一个�
 
 - [Netflix Scaling Camera File Processing At Netflix](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-scaling-camera-file-processing-at-netflix.md)
 - [Netflix Cassandra Wide Partition Dynamic Splitting](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-cassandra-wide-partition-dynamic-splitting.md)
-## 相关引用
 
 → [原文存档](https://netflixtechblog.com/democratizing-machine-learning-at-netflix-building-the-model-lifecycle-graph-5cc6d5828bb1?source=rss----2615bd06b42e---4)
 

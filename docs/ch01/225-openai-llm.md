@@ -114,9 +114,6 @@ MRC带来三个关键优势：
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/llm-research-frontiers.md)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

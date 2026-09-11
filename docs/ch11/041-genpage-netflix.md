@@ -79,8 +79,6 @@ Netflix 用单一 decoder-only Transformer 模型替代传统的多阶段推荐�
 4. **约束解码是生产必需**：业务规则不能只靠训练信号保证，必须在推理时硬约束
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

@@ -60,8 +60,6 @@ AI 个性化推理则完全不同——每个用户的推理都是 context-speci
 3. **向消费品学习**：PM 和战略团队应该开始研究消费品公司的成本控制和利润率管理策略——他们面临的结构性挑战与 AI-native 软件公司越来越相似。
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

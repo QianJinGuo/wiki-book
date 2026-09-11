@@ -48,8 +48,6 @@ OpenAI Codex 被三名不同研究人员以三种不同技术成功攻破，表�
 DEVCORE 的成功展示了系统性研究方法的价值——持续、高质量、跨多个类别的研究输出是赢得比赛的关键。碰撞问题提醒研究人员需要在研究独创性和时机之间取得平衡。同时，奖金增长（20%）和目标多样化（新增 AI 基础设施类别）表明漏洞研究的职业前景持续向好。
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

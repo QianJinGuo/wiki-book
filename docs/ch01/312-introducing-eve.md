@@ -89,9 +89,6 @@ eve is that shape made into a framework. Every generation of software earns its 
 → [原文存档](https://vercel.com/blog/introducing-eve)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

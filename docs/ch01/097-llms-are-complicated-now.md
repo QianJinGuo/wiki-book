@@ -28,8 +28,6 @@ Andrej Karpathy recently joined Anthropic, in part to develop richer auto-resear
 1.   And many smaller ones, shout outs to all my Content Understanding and integri
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

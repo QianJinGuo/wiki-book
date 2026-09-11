@@ -58,9 +58,6 @@ GPU 继续推理，CPU 维持并发环境/任务队列/工具调用，KV 和内�
 → [原文存档](https://mp.weixin.qq.com/s/ObcMGtaQX7I8vfi6QLQOuA)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

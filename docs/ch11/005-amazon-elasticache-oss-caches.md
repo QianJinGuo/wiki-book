@@ -103,8 +103,6 @@ ElastiCache 在 [Amazon CloudWatch](<https://aws.amazon.com/cn/cloudwatch/>) 中
 理解数据如何从
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

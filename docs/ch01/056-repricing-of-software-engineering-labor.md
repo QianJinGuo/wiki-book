@@ -61,8 +61,6 @@ _AI was used to assist with grammar and editing._
 → [原文存档](https://blog.grandimam.com/posts/repricing-of-software-engineering-labor)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

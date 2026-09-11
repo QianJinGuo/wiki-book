@@ -119,8 +119,6 @@ Scheduled Tasks 2.0 添加了更清晰的方式来审查日程、即将到来的
 > [!contradiction] 另见：[Karpathy: Vibe Coding](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-agentic-engineering-v2.md) — 对于 AI 辅助编程中的"上下文保留"问题持不同视角，认为过度依赖上下文累积可能导致"锁定效应"
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

@@ -174,7 +174,6 @@ Content-Security-Policy:
 ## 相关实体
 - [Crypto Funds Six Week Inflow Streak 4 9 Billion Coinshares](https://github.com/QianJinGuo/wiki-public/blob/main/entities/crypto-funds-six-week-inflow-streak-4-9-billion-coinshares.md)
 - [Ico Fines South Staffordshire 2022 Breach](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ico-fines-south-staffordshire-2022-breach.md)
-- "Thread by @ZeusRWA on Thread Reader App"
 - [Interaction Models](https://github.com/QianJinGuo/wiki-public/blob/main/entities/interaction-models.md)
 - [Weve Been Here Before Decompilers Fuzzers And Now Ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/weve-been-here-before-decompilers-fuzzers-and-now-ai.md)
 - [Automate Progressive Rollouts With Vercel Flags Vercel](../ch09/026-automate-progressive-rollouts-with-vercel-flags-vercel.html)

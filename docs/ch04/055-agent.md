@@ -72,7 +72,6 @@ Agent 不是普通服务，每一次推理、工具调用、检索、子 Agent �
 - 固定若干**黄金评测集**（内容永不变化）
 - 每次评测同时跑黄金集 + 生产采样，通过比较看**相对退化**而非绝对分数
 
-## 来源
 
 → [原文存档](https://www.xiaohongshu.com/explore/6a044cb40000000036033a76)
 
@@ -98,9 +97,6 @@ Agent 不是普通服务，每一次推理、工具调用、检索、子 Agent �
 
 **敏感内容治理**：TLS_TRACE_CAPTURE_CONTENT 开关控制是否采集 Input/Output/工具参数/工具结果；关闭后模型/Token/耗时/状态观测信息仍保留——生产环境结合业务数据治理要求配置采集范围，避免密码/AK/SK/API Key 进 Trace。
 
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 - 相关: [阿里 LoongSuite 可观测审计](https://github.com/QianJinGuo/wiki-public/blob/main/entities/alibaba-agent-observability-audit-loongsuite-pilot-coding-agent-blackbox-to-transparent.md)
 - 相关: [LLM 可观测四层模型](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/llm-observability-4-layer-model.md)
 

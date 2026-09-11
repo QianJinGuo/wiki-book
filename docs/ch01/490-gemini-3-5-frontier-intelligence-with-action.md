@@ -150,9 +150,6 @@ Gemini 3.5 的开发遵循 Google 的 **Frontier Safety Framework**（前沿安�
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/vision-multimodal.md)
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
-- 相关: Agent 架构
 
 ---
 

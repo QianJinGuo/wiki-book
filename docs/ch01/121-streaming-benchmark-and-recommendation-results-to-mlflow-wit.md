@@ -33,8 +33,6 @@ Some of the benefits of this implementation are:
 **Eliminate manual data consolidation:** With native MLflow integration, benchmark and recommendation results from multiple jobs are consolidated under the same experiment name automatically. This removes the need to manually collect m
 
 ---
-## 关联
-- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

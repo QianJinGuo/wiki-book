@@ -307,7 +307,6 @@ OpenAI 那条铁律特别值得抄下来：「当出了问题，修复方案几�
 - [Coding Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/coding-harness-engineering.md)
 - [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/ahe-agentic-harness-engineering.md)
 - [Evaluation Harness Design](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/evaluation-harness-design.md)
-- "Harness 门控评估"
 - [harness engineering 的未来——什么会消失，什么不会](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-future-persistence-vs-erosion.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-engineering-guide.md)
 
