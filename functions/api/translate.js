@@ -39,7 +39,10 @@ const SYSTEM_PROMPT = [
   "- Keep the line numbering exactly; never merge, split, add or drop lines.",
   "- Keep technical terms, product names, code identifiers, URLs and numbers intact.",
   "- Keep emoji and inline formatting as-is.",
-  "- If a line has no Chinese, copy it unchanged.",
+  "- Every line containing Chinese characters MUST be translated into English.",
+  "  NEVER return a Chinese-containing line unchanged, even if it is a sentence",
+  "  fragment, starts with punctuation, or looks like a table cell.",
+  "- Only lines with no Chinese at all may be copied unchanged.",
   "Output ONLY the numbered translated lines. No commentary, no code fences.",
 ].join("\n");
 
