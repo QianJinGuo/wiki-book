@@ -144,8 +144,14 @@ function checkText(root, label, skip = () => false, respectIgnore = false) {
     for (const marker of forbiddenText) {
         if (text.includes(marker)) errors.push(`${label}/${relative(root, path)} contains forbidden marker ${marker}`);
       }
-      // Skip QC detection scripts — their regex patterns match by design
-      if (path.includes("post-sync-qc.py") || path.includes("check-public-build")) return;
+      // Skip QC detection scripts and the internal QC improvements doc —
+      // they quote the patterns by design when describing the gate itself
+      if (
+        path.includes("post-sync-qc.py") ||
+        path.includes("check-public-build") ||
+        path === join(sourceRoot, "QUALITY-IMPROVEMENTS.md")
+      )
+        return;
       for (const pattern of forbiddenPatterns) {
         const m = text.match(pattern);
         if (m) errors.push(`${label}/${relative(root, path)} contains forbidden QC score pattern /${m[0]}/`);
