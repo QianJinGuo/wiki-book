@@ -66,7 +66,7 @@ Phase 4: 记录归档
 **已入库旧文（2026-04）：**
 
 - source_url: https://mp.weixin.qq.com/s/JFvYo9RCn9Xm8ilx1Chd6g（鸟窝/高可用架构）
-- 评分 → 56分（strong）
+- 评分  → 56分（strong）
 **合并判断：** 新文相比旧文增加了大量工程细节（权限边界、退火重试、Issue选择策略、opencode扩展），是已有的质量提升而非重复。合并入库，两文均为同一作者（鸟窝）的同一主题深度覆盖。
 
 ## 新增洞察：2026-05-23 AutoResearch 方法论全景

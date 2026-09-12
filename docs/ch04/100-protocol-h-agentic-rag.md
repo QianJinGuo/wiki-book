@@ -5,7 +5,7 @@
 ## protocol-h-hierarchical-agentic-rag-enterprise
 > 原文: https://mp.weixin.qq.com/s/P-MnmnREgtiOq-DbHfDuVA
 > Author: Abhijit Ubale (InfoQ)
-> Score: ≥ 49 → PASS
+> Score:  ≥ 49 → PASS
 > SHA256: 3cb45e70ac153ee42ea99139f6e631693271fb0c40b46c28eeebc188d5d38203
 > 长度: 19103 字符
 > 摘要: Protocol-H 分层supervisor-worker架构，解决企业RAG模态鸿沟(SQL+向量)+Reflective Retry幻觉率↓60%(28.5%→7.1%)+EntQA基准84.5%准确率+LangGraph StateGraph确定性编排+Adapter模式云中立数据库抽象

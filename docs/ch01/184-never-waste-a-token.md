@@ -2,7 +2,7 @@
 
 > 📊 Level ⭐⭐ | 4.2KB | `entities/sunilpai.md`
 
-> **背景**：从 newsletter candidates 提取，2026-06-18 stars=4 通过评分门槛。
+> **背景**：从 newsletter candidates 提取，2026-06-18  stars=4 通过评分门槛。
 > URL: https://sunilpai.dev/posts/never-waste-a-token/
 
 ## 核心要点

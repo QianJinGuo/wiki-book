@@ -700,7 +700,7 @@ Markdown 在 AI 输出场景中的根本局限在于它是「被动消费」型�
 
 ## 第 3 来源 — Claude Code 工程师 @Thariq：为何选择 HTML 替代 Markdown
 
--, Thariq (Claude Code 工程师) 从开发者体验角度论证 HTML 优于 Markdown 作为 AI 文档载体
+- Thariq (Claude Code 工程师) 从开发者体验角度论证 HTML 优于 Markdown 作为 AI 文档载体
 - **互补角度**:
   1. **信息密度**: HTML 可承载表格、CSS、SVG、JavaScript、交互组件，Markdown 难以自然表达
   2. **视觉清晰度**: 长文档（>100行 Markdown）可读性差，HTML 支持标签页、插图、响应式布局

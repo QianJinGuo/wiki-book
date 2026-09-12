@@ -1989,7 +1989,9 @@ LLM 识别关键实体
 
 → [第3原文存档](https://mp.weixin.qq.com/s/gB9MpJaHA1nK7pNUBJ0luw)
 
-## 第 4 来源 — AWS HippoRAG Implementation (Amazon Bedrock + Neptune + Titan, 2026-07-01)×8=56。AWS 官方博客提供的 HippoRAG 部署指南，使用 Bedrock (LLM)、Neptune (图数据库)、Neptune Analytics (Personalized PageRank)、Titan Embeddings (向量化) 全套 AWS 原生服务实现多跳 RAG。
+## 第 4 来源 — AWS HippoRAG Implementation (Amazon Bedrock + Neptune + Titan, 2026-07-01)
+
+AWS 官方博客提供的 HippoRAG 部署指南，使用 Bedrock (LLM)、Neptune (图数据库)、Neptune Analytics (Personalized PageRank)、Titan Embeddings (向量化) 全套 AWS 原生服务实现多跳 RAG。
 
 ### 互补角度 (vs 第 1-3 来源的 SAG 侧重点)
 

@@ -85,7 +85,7 @@
 
 ---
 
-**Score**: , — 文章不长（9.7KB）但 4 个 case 数据扎实，论点清晰（"model is no longer the bottleneck" 假说），与现有 harness engineering 体系高度契合。
+**Score**:  — 文章不长（9.7KB）但 4 个 case 数据扎实，论点清晰（"model is no longer the bottleneck" 假说），与现有 harness engineering 体系高度契合。
 
 **Tags**: harness, agentic, context-engineering, scientific-ai, k-dense, bottleneck, multi-agent, feedback-loop
 

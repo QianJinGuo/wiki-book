@@ -116,7 +116,9 @@ Mollick 指出的 Sycophancy 问题（AI 变得更 engaging，更倾向于同意
 
 Mollick 建议通过「玩」来理解 AI 边界：让视频模型制作卡通，让 AI 将报告转化为游戏，做一个自己兴奋话题的深度研究。 这种探索比任何教程更能建立对 AI 能力边界的直觉——而这种直觉将是未来最有价值的认知资产。
 
-## 第 1 来源 — An opinionated guide to which AI to use to do thin...。An opinionated guide to which AI to use to do things
+## 第 1 来源 — An opinionated guide to which AI to use to do thin...
+
+An opinionated guide to which AI to use to do things
 
 > → 原文存档
 

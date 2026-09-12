@@ -149,6 +149,7 @@ Manus 6 个月重写 5 次删复杂度，这个案例说明 Harness 不是一次
 > 原始来源：DAIR.AI Academy 讲座 `[1]` + Claude Code 官方文档 (`/goal` `[2]` + `/loop` `[3]`)
 > 本文由 Codex + Claude Code 协作完成
 > URL: https://mp.weixin.qq.com/s/b2pvXBGA6BkY6gJbLerZ1g
+> （boundary ingest，与 1st source 主题 overlap 70%）
 
 ### 核心叙事差异：1st source 是「12 组件 + 7 决策」工程图谱，2nd source 是「控制系统 7 要素」心智模型
 

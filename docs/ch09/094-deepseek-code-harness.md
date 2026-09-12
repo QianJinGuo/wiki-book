@@ -261,7 +261,9 @@ DSH 用 node:worker_threads 跑模型写的编排代码：node:vm 同进程沙�
 4. **接入链路** — tencentcloud-agentobs-sdk-dsh 插件（已发正式版、被 DSH 社区插件市场收录，支持 DSH >=0.1.0-rc.6 <0.2.0、Node.js >=22.19.0）以原生插件形态挂载在 DSH 能力插件层，对接运行时事件总线与流式管道；dsh plugin --profile web/headless/harness add。
 5. **规模化关注点** — 规模上来后三件事：耗时花在模型推理还是工具执行、Token 消耗集中在哪些会话/模型、失败中断发生在哪一步能否回溯；配合链路检索、聚合分析、告警仪表盘构成全景方案。
 
-## 第 12 来源 — Agent Plan x DeepSeek Harness 实践指南（火山方舟，2026-08-19）. 火山方舟（字节跳动技术团队）发布 Agent Plan 与 DSH 的集成实践指南。
+## 第 12 来源 — Agent Plan x DeepSeek Harness 实践指南（火山方舟，2026-08-19）
+
+. 火山方舟（字节跳动技术团队）发布 Agent Plan 与 DSH 的集成实践指南。
 
 **互补角度 5 条：**
 1. **Agent Plan 作为 Plugin 工具箱** — DSH 提供插槽，Agent Plan 提供"量大管饱"的组件包：模型、搜索、专业数据集、Agent 记忆、Agent 进化、AI Native 开发底座。

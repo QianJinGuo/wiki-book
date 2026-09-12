@@ -4643,7 +4643,7 @@ TencentDB 的 Benchmark 结果启示了一个 Agent 记忆系统的三层评估�
 
 ## 治理框架：三路径、四对象与晋升边界（若飞拆解 2026-08）
 
-若飞对 TencentDB Agent Memory 的架构级拆解，提供了 Datawhale 实测文未覆盖的**独立治理框架**（/ SUPP）：
+若飞对 TencentDB Agent Memory 的架构级拆解，提供了 Datawhale 实测文未覆盖的**独立治理框架**（SUPP）：
 
 ### 三条路径速度分离
 
