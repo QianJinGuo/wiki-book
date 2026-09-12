@@ -79,19 +79,6 @@ Trail of Bits 报告称攻击使用的不是高级技术，而是"标准技巧 +
 - **平均绕过时间：< 1 小时**（含 prompt injection 需试错的也 < 4 小时）
 - **攻击代码全部公开**：github.com/trailofbits/overtly-malicious-skills（research-by-publishing-poc 模式）
 
-## 实践启示（对 skill marketplace 建设者）
-
-1. **scanner 是必要不充分的** — 不能依赖单一 scanner 当防线
-2. **静态规则对抗动态攻击弱** — 必须有 runtime monitoring / sandbox
-3. **out-of-band 分发需要专门审计** — ZIP 上传 + 手动安装是最大攻击面
-4. **prompt injection 检测 ≠ 恶意代码扫描** — 需要双载体检测
-5. **scanner 开源 ≠ 攻击者不能利用** — 反而暴露检测规则给攻击者
-
-1. **避免从不明 marketplace 安装 skill** — 即使有 scanner
-2. **手动 review SKILL.md 的 prompt 段** — 检查自然语言部分是否有可疑指令
-3. **运行时 sandbox 不可省略** — 假设任何 skill 都可能 malicious
-4. **企业内自建 skill hub + 代码审计** — 比公共 marketplace 安全
-
 ## 引用要点
 
 - "Software supply chains have long been the soft underbelly of computer security" — Trail of Bits
