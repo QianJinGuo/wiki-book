@@ -294,9 +294,9 @@ LangGraph 之前，业界尝试用 Prompt Engineering 让 LLM 自己决定下一
 **5. 多 Agent 协作时，用 Fan-out 而非在一个节点里串行调用**
 新手实现「同时查天气、查新闻、查股价」的做法是在一个 LLM 节点里 `await Promise.all([weather(), news(), stock()])`——这破坏了图的可见性：外部无法观测到有三个子任务在执行，也不知道哪个先完成。正确做法：用 Fan-out 图结构，三个节点并行执行，一个 merge 节点汇总结果。这样 `stream()` 输出里每个 chunk 都能看到具体是哪个子节点完成了，前端可以精确渲染每个数据源的加载状态。
 ## 相关实体
-- [Gepa Optimize Anything](432-gepa-optimize-anything.html)
+- [Gepa Optimize Anything](431-gepa-optimize-anything.html)
 - [Ai Phishing Attacks Are On The Rise Are You Prepared Bitward](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-phishing-attacks-are-on-the-rise-are-you-prepared-bitward.md)
-- [How Open Model Ecosystems Compound](379-how-open-model-ecosystems-compound.html)
+- [How Open Model Ecosystems Compound](378-how-open-model-ecosystems-compound.html)
 - [读完这篇你就搞懂 Deepseek V4 了 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/读完这篇你就搞懂-deepseek-v4-了-v2.md)
 - [Context Window Management Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-window-management-comparison.md)
 

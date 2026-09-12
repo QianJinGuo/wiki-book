@@ -7,7 +7,7 @@
 
 ## 机制与论文
 - [Context Window Management Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-window-management-comparison.md) — 四框架对比rv9
-- [Claude 4/5 Sonnet & Opus Release Notes](406-claude-4-5-sonnet-opus-release-notes.html) — 发布时间线与能力
+- [Claude 4/5 Sonnet & Opus Release Notes](405-claude-4-5-sonnet-opus-release-notes.html) — 发布时间线与能力
 - [Code as Agent Harness 综述](https://github.com/QianJinGuo/wiki-public/blob/main/entities/code-as-agent-harness-survey.md) — 102页综述
 - [Anthropic LLM ATT&CK Navigator: AI-Enabled Cyber Operations](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-llm-attck-navigator-cyber-operations.md) — ARiES风险评分
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](https://github.com/QianJinGuo/wiki-public/blob/main/entities/深入理解-claude-code-源码中的-agent-harness-构建之道.md) — 16095字源码8步循环

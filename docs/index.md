@@ -20,7 +20,7 @@
 
   <div class="home-stats">
 
-    <div class="home-stats__item"><span class="home-stats__num">1,694</span><span class="home-stats__label">编撰条目</span></div>
+    <div class="home-stats__item"><span class="home-stats__num">1,693</span><span class="home-stats__label">编撰条目</span></div>
 
     <div class="home-stats__item"><span class="home-stats__num">20 章 · 5 篇</span><span class="home-stats__label">全书结构</span></div>
 
@@ -40,7 +40,7 @@
 
 <nav class="home-parts" aria-label="全书五篇导览">
 
-<a class="home-part" href="#part-1"><span class="home-part__no">第一篇</span><span class="home-part__name">入门篇</span><span class="home-part__pos">从零理解 AI</span><span class="home-part__count">616 篇 · 3 章</span></a>
+<a class="home-part" href="#part-1"><span class="home-part__no">第一篇</span><span class="home-part__name">入门篇</span><span class="home-part__pos">从零理解 AI</span><span class="home-part__count">615 篇 · 3 章</span></a>
 
 <a class="home-part" href="#part-2"><span class="home-part__no">第二篇</span><span class="home-part__name">工程师篇</span><span class="home-part__pos">构建 AI 应用</span><span class="home-part__count">714 篇 · 7 章</span></a>
 
@@ -60,15 +60,15 @@
 
 <article class="chapter-card">
 
-<div class="chapter-card__head"><span class="chapter-card__no">Ch01</span><span class="chapter-card__count">530 篇</span></div>
+<div class="chapter-card__head"><span class="chapter-card__no">Ch01</span><span class="chapter-card__count">529 篇</span></div>
 
 <h3 class="chapter-card__title"><a href="ch01-ai-basics.html">AI 与 LLM 基础</a></h3>
 
 <p class="chapter-card__desc">理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:24.91%" title="⭐ 入门 · 132 篇"></i><i class="lv2" style="width:10.38%" title="⭐⭐ 工程师 · 55 篇"></i><i class="lv3" style="width:37.36%" title="⭐⭐⭐ 专家 · 198 篇"></i><i class="lv4" style="width:18.68%" title="⭐⭐⭐⭐ 科学家 · 99 篇"></i><i class="lv5" style="width:8.68%" title="⭐⭐⭐⭐⭐ 大师 · 46 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:24.95%" title="⭐ 入门 · 132 篇"></i><i class="lv2" style="width:10.40%" title="⭐⭐ 工程师 · 55 篇"></i><i class="lv3" style="width:37.24%" title="⭐⭐⭐ 专家 · 197 篇"></i><i class="lv4" style="width:18.71%" title="⭐⭐⭐⭐ 科学家 · 99 篇"></i><i class="lv5" style="width:8.70%" title="⭐⭐⭐⭐⭐ 大师 · 46 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 132 · ⭐⭐ 55 · ⭐⭐⭐ 198 · ⭐⭐⭐⭐ 99 · ⭐⭐⭐⭐⭐ 46</div>
+<div class="chapter-card__legend">⭐ 132 · ⭐⭐ 55 · ⭐⭐⭐ 197 · ⭐⭐⭐⭐ 99 · ⭐⭐⭐⭐⭐ 46</div>
 
 <ul class="chapter-card__samples">
 
@@ -80,7 +80,7 @@
 
 </ul>
 
-<a class="chapter-card__more" href="ch01-ai-basics.html">进入章节 · 共 530 篇<span class="arrow" aria-hidden="true"> →</span></a>
+<a class="chapter-card__more" href="ch01-ai-basics.html">进入章节 · 共 529 篇<span class="arrow" aria-hidden="true"> →</span></a>
 
 </article>
 
@@ -617,6 +617,6 @@
 </div>
 </section>
 
-<footer class="home-map__foot">📊 全书收录 1,694 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-09-12</span></footer>
+<footer class="home-map__foot">📊 全书收录 1,693 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-09-12</span></footer>
 
 </div>

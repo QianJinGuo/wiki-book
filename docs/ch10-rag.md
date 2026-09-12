@@ -331,7 +331,7 @@ Amazon Nova MME 的 `GENERIC_INDEX`（文档索引用）和 `GENERIC_RETRIEVAL`�
 
 → [Amazon Nova Sonic 可扩展语音代理设计](https://github.com/QianJinGuo/wiki-public/blob/main/entities/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session.md)
 
-→ [Amazon Nova 2 内容审核提示工程](ch01/467-prompting-amazon-nova-2-for-content-moderation.html)
+→ [Amazon Nova 2 内容审核提示工程](ch01/466-prompting-amazon-nova-2-for-content-moderation.html)
 
 → [Amazon Bedrock AgentCore 运行时深度解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-agentcore-runtime-deep-dive-and-scenario-analysis.md)
 
@@ -2197,7 +2197,7 @@ ranked = reranker.rank(query, top_k_docs, top_k=5, return_documents=True)
 ## 相关实体
 - [Introducing The Ettin Reranker Family](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-the-ettin-reranker-family.md)
 - [Claude Code Openclaw Usage Ettin](ch09/104-claude-code-openclaw-usage-ettin.html)
-- [Gemma 4 Multi Token Prediction Drafters](ch01/508-gemma-4-multi-token-prediction-drafters.html)
+- [Gemma 4 Multi Token Prediction Drafters](ch01/507-gemma-4-multi-token-prediction-drafters.html)
 - [Continuousasync](https://github.com/QianJinGuo/wiki-public/blob/main/entities/continuousasync.md)
 - [Continuous Async](https://github.com/QianJinGuo/wiki-public/blob/main/entities/continuous-async.md)
 

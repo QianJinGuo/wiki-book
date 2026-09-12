@@ -86,7 +86,7 @@ LLM-as-a-Judge 试图对轨迹形成整体判断并输出决策，适用于需�
 > [主题导航](https://github.com/QianJinGuo/wiki-public/blob/main/moc/cybersecurity-privacy.md)
 
 - [LLM-as-a-Verifier: A General-Purpose Verification Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-as-a-verifier-framework.md)
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](444-llm-as-a-verifier-a-general-purpose-verification-framework.html)
+- [LLM-as-a-Verifier: A General-Purpose Verification Framework](443-llm-as-a-verifier-a-general-purpose-verification-framework.html)
 - [LLM-as-a-Verifier: A General-Purpose Verification](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-as-a-verifier-a-general-purpose-verification.md)
 - [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-agent脚手架如何具备自进化能力以hermes-agent为例.md)
 - [SkillOS: Learning Skill Curation for Self-Evolving Agents](../ch04/278-skillos-learning-skill-curation-for-self-evolving-agents.html)

@@ -264,7 +264,7 @@ OWL适合以下场景：
 - [Agent Framework Owl Principles](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-framework-owl-principles.md)
 - [Karpathy Ai Agent 7 Bits Value Decline](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-ai-agent-7-bits-value-decline.md)
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/打造可靠的-ai-编程环境claude-code-hooks-完整开发者指南-v2.md)
-- [Gepa Optimize Anything](432-gepa-optimize-anything.html)
+- [Gepa Optimize Anything](431-gepa-optimize-anything.html)
 - [Tmall Marketing Ai Workflow Best Practices](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tmall-marketing-ai-workflow-best-practices.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/evaluation-benchmarks-extended.md)
 

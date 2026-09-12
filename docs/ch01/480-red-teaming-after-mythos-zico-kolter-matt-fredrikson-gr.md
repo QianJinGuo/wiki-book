@@ -102,7 +102,7 @@ AI 安全赛道正在从"学术研究"转向"商业产品"。Gray Swan 的 Serie
 - [Role Confusion](https://github.com/QianJinGuo/wiki-public/blob/main/entities/role-confusion-github-io.md) — Prompt injection 的理论框架
 - [AFine CSP Injection](https://github.com/QianJinGuo/wiki-public/blob/main/entities/afine-csp-html-injection-password-exfiltration.md) — 具体的注入攻击案例
 - [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — Agent 架构工程
-- [Claude Tag](441-introducing-claude-tag.html) — Anthropic 的 agent 安全实践
+- [Claude Tag](440-introducing-claude-tag.html) — Anthropic 的 agent 安全实践
 - [OpenClaw](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-boris-cherny-agent-loop-design-patterns.md) — 计算机使用 agent 的安全挑战
 
 → [原文存档](https://www.latent.space/p/gray-swan)

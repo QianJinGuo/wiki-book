@@ -61,11 +61,11 @@ Lambert 指出"依赖单一私人公司来评估国际关键基础设施的安�
 ## 相关实体
 - [Nathan Lambert Open Models Bets 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nathan-lambert-open-models-bets-2026.md)
 - [Chinese Ai Lab Insights Nathan](https://github.com/QianJinGuo/wiki-public/blob/main/entities/chinese-ai-lab-insights-nathan.md)
-- [How Open Model Ecosystems Compound](379-how-open-model-ecosystems-compound.html)
+- [How Open Model Ecosystems Compound](378-how-open-model-ecosystems-compound.html)
 - [Deepseek V4 Flash Pro 通往百万级上下文与万亿参数推理的新纪元 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-v4-flash-pro-通往百万级上下文与万亿参数推理的新纪元-v2.md)
 - [Multilingual Ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/multilingual-ai.md)
 
-- [dean ball on open models and government control](361-dean-ball-on-open-models-and-government-control.html)
+- [dean ball on open models and government control](360-dean-ball-on-open-models-and-government-control.html)
 
 ## 相关引用
 → [原文存档](https://www.interconnects.ai/p/claude-mythos-and-misguided-open)

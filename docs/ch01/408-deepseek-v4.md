@@ -152,7 +152,7 @@ DeepSeek V4 不仅是技术里程碑，也是中国 LLM 团队在**架构创新*
 - [DeepSeek V4 Flash/Pro: 百万级上下文与万亿参数推理新纪元](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-v4-flash-pro-通往百万级上下文与万亿参数推理的新纪元.md) 关注产品侧
 - [DeepSeek V4 Flash/Pro v2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-v4-flash-pro-通往百万级上下文与万亿参数推理的新纪元-v2.md) 是上一条的更新版
 - [DeepSeek V4 Pro vs Claude](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-v4-pro-vs-claude.md) 关注对比评测
-- [DeepSeek V4 Flash Means LLM Steering is Interesting Again](383-deepseek-v4-flash-means-llm-steering-is-interesting-again.html) 关注 V4 Flash 的"可控生成"能力
+- [DeepSeek V4 Flash Means LLM Steering is Interesting Again](382-deepseek-v4-flash-means-llm-steering-is-interesting-again.html) 关注 V4 Flash 的"可控生成"能力
 - [DeepSeek V4 DS4C / Antirez 本地推理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-v4-ds4c-antirez-local-inference-qbitai.md) 关注本地部署
 - [DeepSeek V4 Training 58-page Paper Deep Dive](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-v4-training-58-page-paper-deep-dive.md) 关注训练侧
 - [DeepSeek Code Harness](../ch09/091-deepseek-code-harness.html) 关注 V4 在 Agent / Harness 场景的工程实践
@@ -173,7 +173,7 @@ DeepSeek V4 不仅是技术里程碑，也是中国 LLM 团队在**架构创新*
 - [DeepSeek V4 Flash/Pro: 百万级上下文与万亿参数推理新纪元](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-v4-flash-pro-通往百万级上下文与万亿参数推理的新纪元.md)
 - [DeepSeek V4 Flash/Pro v2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-v4-flash-pro-通往百万级上下文与万亿参数推理的新纪元-v2.md)
 - [DeepSeek V4 Pro vs Claude](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-v4-pro-vs-claude.md)
-- [DeepSeek V4 Flash Means LLM Steering is Interesting Again](383-deepseek-v4-flash-means-llm-steering-is-interesting-again.html)
+- [DeepSeek V4 Flash Means LLM Steering is Interesting Again](382-deepseek-v4-flash-means-llm-steering-is-interesting-again.html)
 - [DeepSeek V4 DS4C / Antirez 本地推理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-v4-ds4c-antirez-local-inference-qbitai.md)
 - [DeepSeek V4 Training 58-page Paper Deep Dive](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-v4-training-58-page-paper-deep-dive.md)
 - [DeepSeek MoE 并行策略](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-moe-parallel-strategy.md)

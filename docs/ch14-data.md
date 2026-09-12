@@ -620,7 +620,7 @@ Amazon Quick is a comprehensive, generative AI-powered business intelligence ser
 <div style="line-height: 1.8;margin: 0;padding: 0">
 
 ## 相关实体
-- [From System Of Record To System Of Intelligence](ch01/414-from-system-of-record-to-system-of-intelligence.html)
+- [From System Of Record To System Of Intelligence](ch01/413-from-system-of-record-to-system-of-intelligence.html)
 - [Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md)
 - [London Met Police Big Tech Data Requests](https://github.com/QianJinGuo/wiki-public/blob/main/entities/london-met-police-big-tech-data-requests.md)
 - [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-goal-runtime-architecture-state-persistence-judge-closed-loop.md)

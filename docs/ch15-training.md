@@ -850,7 +850,7 @@ GRPO用相对排序替代PPO的Critic模型，节省30%~50%计算开销，但核
 → [原文存档](https://mp.weixin.qq.com/s/jabnGpTJ8sCc7kBj11pm8A)
 
 - [Token 退化问题：分词器与后训练数据分布失配](https://github.com/QianJinGuo/wiki-public/blob/main/entities/minimax-token-degradation-jiqia.md)
-- [Self Taught Rlvr](ch01/374-self-taught-rlvr.html)
+- [Self Taught Rlvr](ch01/373-self-taught-rlvr.html)
 - [Llm Rl Algorithms Ppo Dpo Grpo Marl Evolution 2026](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026.md)
 - [Slim Cuhk Skill Lifecycle Agentic Rl](https://github.com/QianJinGuo/wiki-public/blob/main/entities/slim-cuhk-skill-lifecycle-agentic-rl.md)
 - [frontier post-training recipe review with finbarr timbers](https://github.com/QianJinGuo/wiki-public/blob/main/entities/finbarr-timbers-frontier-post-training-recipe-review-2026.md)
@@ -1536,7 +1536,7 @@ OpenRubrics 等工作现在专注于规模化生成这些评分标准。这是�
 
 ## 相关实体
 
-- [Self-Taught RLVR](ch01/374-self-taught-rlvr.html) — 自监督 RLVR 训练方法
+- [Self-Taught RLVR](ch01/373-self-taught-rlvr.html) — 自监督 RLVR 训练方法
 - [AWS GRPO RLVR](ch11/181-aws-grpo-rlvr-sagemaker-math-reasoning.html) — AWS 在 SageMaker 上实现的 RLVR
 - [Verifiable Rewards RL](https://github.com/QianJinGuo/wiki-public/blob/main/entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md) — 可验证奖励 RL 的技术细节
 

@@ -108,7 +108,7 @@ QAT 模型消除了用户自行量化的技术门槛——直接下载即部署�
 
 ## 相关实体
 - [Alphaevolve Deepmind Discovery Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/alphaevolve-deepmind-discovery-agent.md)
-- [Gemma 4 Multi Token Prediction Drafters](508-gemma-4-multi-token-prediction-drafters.html)
+- [Gemma 4 Multi Token Prediction Drafters](507-gemma-4-multi-token-prediction-drafters.html)
 - [Google Ai Vulnerability Exploitation Threat Intel](https://github.com/QianJinGuo/wiki-public/blob/main/entities/google-ai-vulnerability-exploitation-threat-intel.md)
 - [Bonsai Image 4B 1 Bit Ternary](https://github.com/QianJinGuo/wiki-public/blob/main/entities/bonsai-image-4b-1-bit-ternary.md)
 - [Stochastic Parrot Language Models And Meaning](https://github.com/QianJinGuo/wiki-public/blob/main/entities/stochastic-parrot-language-models-and-meaning.md)

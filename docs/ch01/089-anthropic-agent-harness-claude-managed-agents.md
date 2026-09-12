@@ -14,7 +14,7 @@
 - [Anthropic N-days: Frontier Agent Vulnerability Research](../ch04/308-anthropic-n-days-frontier-agent-vulnerability-research.html) — N-day研究
 - [Claude Opus 4.8 系统卡片深度分析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-opus-48-system-card-analysis.md) — RSP放松批判
 - [王云鹤眼中的Harness：复杂优化问题，AGI灵魂争夺之战](https://github.com/QianJinGuo/wiki-public/blob/main/entities/wangyunhe-harness-optimization-agentsoul.md) — Agent=Models+Harness联合优化
-- [Claude 4/5 Sonnet & Opus Release Notes](406-claude-4-5-sonnet-opus-release-notes.html) — 发布时间线与能力
+- [Claude 4/5 Sonnet & Opus Release Notes](405-claude-4-5-sonnet-opus-release-notes.html) — 发布时间线与能力
 - [LLM 自我提升系统综述 — Yang 等 113 页四阶段闭环框架（Zesearch NLP Lab）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-self-improvement-system-survey-zesearch-nlp-2026.md) — 113页自提升综述：四阶段闭环+评估控制层
 
 ## 工程实践

@@ -12,7 +12,7 @@
 - [800行代码实现 Open Claw 的 Tool、消息总线、子Agent管理架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/open-claw-tool-bus-subagent-architecture.md) — 薄抽象显式控制流8802字rv9全版
 - [MIRA + MPA：深度原理 AI Scientist 递归自训练打造材料基座模型，40 项实验全面 SOTA](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mira-mpa-deep-principle-ai4s-40-sota.md) — AI Scientist递归自训练，35/40胜前SOTA
 - [10篇论文看懂AI Agent Skill：表示、执行、评估与进化](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-formal-theory-survey-10papers.md) — 技能六元组形式化综述
-- [Gepa Optimize Anything](432-gepa-optimize-anything.html) — ASI+Pareto前沿，声明式通用文本优化API
+- [Gepa Optimize Anything](431-gepa-optimize-anything.html) — ASI+Pareto前沿，声明式通用文本优化API
 
 ## 工程实践
 - [Claude Code 源码核心机制详解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-core-internals.md) — 源码机制18k主版

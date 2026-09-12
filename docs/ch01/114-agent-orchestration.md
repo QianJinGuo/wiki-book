@@ -28,7 +28,7 @@
 - [Announcing AWS CDK Mixins: Composable Abstractions for AWS Resources | Amazon Web Services](https://github.com/QianJinGuo/wiki-public/blob/main/entities/announcing-aws-cdk-mixins-composable-abstractions-for-aws-resources-amazon-web-s.md) — CDK特性borderline
 - [How Superset built the IDE for AI agents on Vercel](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vercel-com-how-superset-built-the-ide-for-ai-agents-on-vercel.md) — 并行agent基础设施需求
 - [Running an AI-native engineering org](031-running-an-ai-native-engineering-org.html) — AI原生组织：三层审查模型+审查基础设施投资
-- [Why Internally-Built AI Fails Fund Accounting Audits](043-why-internally-built-ai-fails-fund-accounting-audits.html) — 审计就绪是架构决策
+- [Why Internally-Built AI Fails Fund Accounting Audits](362-why-internally-built-ai-fails-fund-accounting-audits.html) — 审计就绪是架构决策
 - [Build agents, not pipelines](https://github.com/QianJinGuo/wiki-public/blob/main/entities/seangoedeckecom-build-agents-not-pipelines.md) — pipeline库vs agent框架类比+context-gathering隐形债务
 - [Apple Silicon costs more than OpenRouter](https://github.com/QianJinGuo/wiki-public/blob/main/entities/offline-llm-energy-use-html.md) — 本地推理成本解构：硬件折旧主导3x于云端
 - [Domain Expertise Has Always Been the Real Moat](https://github.com/QianJinGuo/wiki-public/blob/main/entities/brethorstingcom-blog-2026-05-domain-expertise-has-always-been-the-.md) — 领域知识护城河

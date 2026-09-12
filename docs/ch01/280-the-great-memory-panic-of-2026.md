@@ -53,7 +53,7 @@ Every semiconductor boom has been followed by a bust — without exception. The 
 ## 相关实体
 
 - [Semis Memo: Supply Chain Inheritance](https://github.com/QianJinGuo/wiki-public/blob/main/entities/semis-memo-supply-chain-inheritance.md)
-- [Apple Silicon costs more than OpenRouter](457-apple-silicon-costs-more-than-openrouter.html)
+- [Apple Silicon costs more than OpenRouter](456-apple-silicon-costs-more-than-openrouter.html)
 - [Google正在研发新的服务器AI芯片](https://github.com/QianJinGuo/wiki-public/blob/main/entities/google-frozen-v2-server-ai-chip-gemini-hardware.md)
 - [AI Chip Architecture First Principles](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-chip-architecture-first-principles.md)
 - [Nvidia: $40B+ AI Investments](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-embraces-ai-investor-topping-40-billion-in-equity-bets-2026.md)

@@ -199,7 +199,7 @@ Benchmark70 任务全量复现：https://github.com/EvoMap/critpt-openclaw-repro
 
 1. **strategy 层是 Gene 的不可省略内核**：渐进式构造实验（keywords + summary → 无指导基线）证明，同等 token 预算下，组织成"摘要"毫无作用，组织成"策略"才能把表现拔起来。**AVOID 警告单独使用时甚至强于策略本体**——这揭示了经验对象的核心价值不是"告诉模型怎么做"，而是"告诉模型什么不能做"。
 
-2. **结构宽容 + 语义挑剔的鲁棒性边界**：stale_paradigm（过时算法范式）比 clean Gene 更高（56.6% vs 54.0%），但换错领域/换错算法立刻掉分。这说明 Gene 的有效条件是"**保留任务相关的控制框架**"，而非"写最新的方法"。过期框架只要结构对仍然有效；新方法如果框架错则直接拖累——这对 [GEPA 通用文本优化](../ch01/432-gepa-optimize-anything.html) 的"内容质量优先"前提是一个直接挑战。
+2. **结构宽容 + 语义挑剔的鲁棒性边界**：stale_paradigm（过时算法范式）比 clean Gene 更高（56.6% vs 54.0%），但换错领域/换错算法立刻掉分。这说明 Gene 的有效条件是"**保留任务相关的控制框架**"，而非"写最新的方法"。过期框架只要结构对仍然有效；新方法如果框架错则直接拖累——这对 [GEPA 通用文本优化](../ch01/431-gepa-optimize-anything.html) 的"内容质量优先"前提是一个直接挑战。
 
 3. **GEP 协议是经验对象从"Prompt 片段"到"持久策略接口"的升格层**：没有协议，Gene 只是另一段 prompt——边界不稳、字段无法比较、不能累积。协议化后 Gene 变成可匹配、可替换、可修订、可组合的对象——这为 [OpenClaw Agent Loop 设计范式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-agent-loop-design-patterns.md) 中多 Agent 之间的经验交换提供了标准化的接口规范。
 
@@ -245,7 +245,7 @@ Benchmark70 任务全量复现：https://github.com/EvoMap/critpt-openclaw-repro
 - [Hermes Agent Skill Crossover Optimization](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-skill-crossover-optimization.md) — Hermes Agent Skill 互优化（达尔文闭环）
 - [Openclaw Agent Loop Design Patterns](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-agent-loop-design-patterns.md) — OpenClaw Agent Loop 设计范式
 - [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-7-layers-openclaw-hermes-claude-code-p1anu.md) — Harness 7 层 (OpenClaw/Hermes/Claude Code)
-- [Gepa Optimize Anything](../ch01/432-gepa-optimize-anything.html) — GEPA 通用文本优化（与 Gene 不同的优化路径）
+- [Gepa Optimize Anything](../ch01/431-gepa-optimize-anything.html) — GEPA 通用文本优化（与 Gene 不同的优化路径）
 
 → [原文存档](https://mp.weixin.qq.com/s/7oAp2krFqj8z3ElzJM6n6Q)
 

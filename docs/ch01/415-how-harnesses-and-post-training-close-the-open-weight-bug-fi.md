@@ -169,7 +169,7 @@ Tigress-obfuscated binary 要求 harness 能处理控制流图简化、间接跳
 - [The It And Security Field Guide To Ai Adoption Tines](https://github.com/QianJinGuo/wiki-public/blob/main/entities/the-it-and-security-field-guide-to-ai-adoption-tines.md)
 - [Mellum 2 Jetbrains Open 12B Moe Code Model](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mellum-2-jetbrains-open-12b-moe-code-model.md)
 - [Cloudflare Glasswing Mythos Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloudflare-glasswing-mythos-security.md)
-- [How Open Model Ecosystems Compound](379-how-open-model-ecosystems-compound.html)
+- [How Open Model Ecosystems Compound](378-how-open-model-ecosystems-compound.html)
 
 ---
 
