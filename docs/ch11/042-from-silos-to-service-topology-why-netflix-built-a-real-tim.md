@@ -45,11 +45,11 @@ And these challenges were growing. New initiatives like our Live programming and
 
 We analyzed thousands of support requests from our engineers over a four-year period. The patterns were consistent:
 
-  * "What are my upstream and downstream dependencies?"
-  * "Is this failure in my service, or is something I depend on broken?"
-  * "Which services will be impacted if I take this down for maintenance?"
-  * "Why is this service showing as 'Unknown' in my metrics?"
-  * "What changed in my call path recently that could explain this behavior?"
+  * What are my upstream and downstream dependencies?
+  * Is this failure in my service, or is something I depend on broken?
+  * Which services will be impacted if I take this down for maintenance?
+  * Why is this service showing as 'Unknown' in my metrics?
+  * What changed in my call path recently that could explain this behavior?
 
 Engineers were asking dependency questions constantly. We needed to provide answers — quickly, accurately, and in real-time.
 

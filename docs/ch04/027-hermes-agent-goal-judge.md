@@ -15,7 +15,7 @@
 - [800行代码实现 Open Claw 的 Tool、消息总线、子Agent管理架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/open-claw-tool-bus-subagent-architecture.md) — 薄抽象显式控制流8802字rv9全版
 - [Hermes Agent 闭环学习机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-closed-learning-loop.md) — 闭环学习飞轮+Nudge触发+spawn_background_review
 - [MIRA + MPA：深度原理 AI Scientist 递归自训练打造材料基座模型，40 项实验全面 SOTA](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mira-mpa-deep-principle-ai4s-40-sota.md) — AI Scientist递归自训练，35/40胜前SOTA
-- [The Coming Loop](../ch01/479-the-coming-loop.html) — Ronacher两种循环区分
+- [The Coming Loop](../ch01/460-the-coming-loop.html) — Ronacher两种循环区分
 - [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-prompt-context-harness.md) — 三维度源码：23模块拼装+自适应分块+双层Memory
 - [Code as Agent Harness 综述](https://github.com/QianJinGuo/wiki-public/blob/main/entities/code-as-agent-harness-survey.md) — 102页综述
 

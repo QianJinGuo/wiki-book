@@ -287,7 +287,7 @@ OpenAI 那条铁律特别值得抄下来：「当出了问题，修复方案几�
 
 ## 相关实体
 
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/105-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/270-karpathy-vibe-coding-agentic-engineering.html)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
@@ -307,7 +307,7 @@ OpenAI 那条铁律特别值得抄下来：「当出了问题，修复方案几�
 - [Coding Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/coding-harness-engineering.md)
 - [Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/ahe-agentic-harness-engineering.md)
 - [Evaluation Harness Design](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/evaluation-harness-design.md)
-- "Harness 门控评估"
+- Harness 门控评估
 - [harness engineering 的未来——什么会消失，什么不会](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-future-persistence-vs-erosion.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-engineering-guide.md)
 

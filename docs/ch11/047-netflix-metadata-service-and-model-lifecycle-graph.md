@@ -96,7 +96,7 @@ Model Lifecycle Graph 通过 AIP Portal 向 practitioners 展示，这是一个�
 - [Netflix Live Operations Human Infrastructure](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-live-operations-human-infrastructure.md)
 - [High Throughput Graph Abstraction At Netflix](https://github.com/QianJinGuo/wiki-public/blob/main/entities/high-throughput-graph-abstraction-at-netflix.md)
 - [Netflix Switchboard Lightbulb Model Routing](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-switchboard-lightbulb-model-routing.md)
-- [High Throughput Graph Abstraction At Netflix Part I](086-high-throughput-graph-abstraction-at-netflix-part-i.html)
+- [High Throughput Graph Abstraction At Netflix Part I](085-high-throughput-graph-abstraction-at-netflix-part-i.html)
 - [Building Blocks For Foundation Model Training And Inference On Aws](https://github.com/QianJinGuo/wiki-public/blob/main/entities/building-blocks-for-foundation-model-training-and-inference-on-aws.md)
 
 - [Netflix Scaling Camera File Processing At Netflix](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-scaling-camera-file-processing-at-netflix.md)

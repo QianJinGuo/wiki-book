@@ -1,6 +1,6 @@
 # ICO 对 South Staffordshire 处以 96.3 万英镑罚款：2022 年 Cl0p 勒索软件攻击暴露的安全失败
 
-> 📊 Level ⭐⭐⭐ | 8.7KB | `entities/5237875.md`
+> 📊 Level ⭐⭐⭐ | 8.7KB | `entities/ico-south-staffordshire-cl0p-ransomware-fine.md`
 
 → [原文存档](https://www.theregister.com/cyber-crime/2026/05/11/ico-fines-south-staffordshire-963k-over-2022-breach/5237875)
 

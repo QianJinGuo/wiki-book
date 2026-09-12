@@ -177,7 +177,7 @@ TimeLens2-4B 平均超过 Qwen3.5-397B-A17B 约 7.5 个 mIoU 点，在全部七�
 ## 对 LLM 安全工程的意义
 
 - **Guardrail 部署成本下降**：policy-adaptive 意味着一个模型服务所有部署场景，不再为每个产品/受众维护专用审核模型——与 [Bedrock Guardrails](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-guardrails-code-generation-six-patterns.md) 类平台方案形成互补（平台 vs open-weights 两种路线）
-- **审核即推理任务**：把 content moderation 从分类任务重构为 QA 任务，与 [Nova 2 prompting 审核](ch01/491-prompting-amazon-nova-2-for-content-moderation.html) 思路同源
+- **审核即推理任务**：把 content moderation 从分类任务重构为 QA 任务，与 [Nova 2 prompting 审核](ch01/472-prompting-amazon-nova-2-for-content-moderation.html) 思路同源
 - **多模态统一**：文本+图像一个接口、一个模型，规避多模态安全审核需多模型拼装的工程负担
 
 ## 相关主题
@@ -708,10 +708,10 @@ VGGSound-Omni 基准引入的画外音（Off-screen）专属评测赛道，为�
 
 ## 7. 核心金句
 
-- "**把原本需要高端服务器才能跑的多模态智能，装进你的笔记本电脑里。**"
-- "**多模态理解加上 Agent 能力，直接在本地跑，不用联网，不依赖云端。**"
-- "**以后就算断网，本地也有真正的多模态模型了，没有任何 token 焦虑**"
-- "**这种统一、无编码器的架构，带来的直接好处是：延迟更低，内存更省。**"
+- **把原本需要高端服务器才能跑的多模态智能，装进你的笔记本电脑里。**
+- **多模态理解加上 Agent 能力，直接在本地跑，不用联网，不依赖云端。**
+- **以后就算断网，本地也有真正的多模态模型了，没有任何 token 焦虑**
+- **这种统一、无编码器的架构，带来的直接好处是：延迟更低，内存更省。**
 
 ## 8. 与已有 wiki 实体的关系
 
@@ -856,7 +856,7 @@ ICRDrag 两阶段课程式训练中，第二阶段用稀疏不完整掩码训练
 
 ## 实践启示
 
-1. **从单点控制到区域控制是 AI 交互的普遍趋势**。图像编辑如此，[Agent 系统](ch03/060-hermes-agent.html) 的任务控制亦然——提供精确的约束（掩码）比模糊的指示（点对）更容易获得预期的结果。在设计 Agent 交互界面时，应优先考虑「约束性输入」而非「自由文本提示」。
+1. **从单点控制到区域控制是 AI 交互的普遍趋势**。图像编辑如此，[Agent 系统](ch03/059-hermes-agent.html) 的任务控制亦然——提供精确的约束（掩码）比模糊的指示（点对）更容易获得预期的结果。在设计 Agent 交互界面时，应优先考虑「约束性输入」而非「自由文本提示」。
 
 2. **双向注意力约束比单向更适合空间一致性任务**。ICRDrag 的源-目标双向对应约束确保了编辑前后的一致性。在 [多 Agent 系统](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/multi-agent-systems.md) 中，双向通信比单向指令能更有效地维持系统状态的一致性。
 
@@ -878,7 +878,7 @@ ICRDrag 两阶段课程式训练中，第二阶段用稀疏不完整掩码训练
 - DragDiffusion（基于扩散模型的拖拽编辑方法） — 基于扩散模型的拖拽编辑
 - 扩散模型 — 图像生成与编辑的基础框架
 - [注意力机制](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/attention-mechanism.md) — Transformer 中的核心组件
-- [Hermes Agent](ch03/060-hermes-agent.html) — Agent 系统中的交互控制设计
+- [Hermes Agent](ch03/059-hermes-agent.html) — Agent 系统中的交互控制设计
 
 → [原文存档](http://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651042656&idx=3&sn=8609a7dcae8fb73c7e3aa1d8feea3180&chksm=84e6771eb391fe086132cc6c70341612c864b35fb324661218a9738f88067150f469ee82e78e#rd)
 
@@ -1520,7 +1520,7 @@ Moebius 的工作与当前模型压缩领域的多个方向形成呼应：
 - **结构化剪枝**：LλMI 的设计思路类似对注意力机制的结构性重构
 - **稀疏化**：Moebius 证明了极端参数压缩（<2%）在任务特化场景下完全可行
 
-这与 [模型规模推演](ch01/500-model-size-scaling-in-2023-2031.html) 中关于 sparsity 作为参数放大器的讨论形成有趣对比——Moebius 走的是另一条路：不是增加总参数并稀疏化，而是直接在架构层面大幅压缩。
+这与 [模型规模推演](ch01/481-model-size-scaling-in-2023-2031.html) 中关于 sparsity 作为参数放大器的讨论形成有趣对比——Moebius 走的是另一条路：不是增加总参数并稀疏化，而是直接在架构层面大幅压缩。
 
 ## 实践启示
 
@@ -1531,7 +1531,7 @@ Moebius 的工作与当前模型压缩领域的多个方向形成呼应：
 
 ## 相关实体
 
-- [模型规模推演](ch01/500-model-size-scaling-in-2023-2031.html) — 模型大小与硬件约束的系统分析
+- [模型规模推演](ch01/481-model-size-scaling-in-2023-2031.html) — 模型大小与硬件约束的系统分析
 - [知识代理超越前沿模型](https://github.com/QianJinGuo/wiki-public/blob/main/entities/knowledge-agents-beat-frontier-models.md) — 小模型+领域知识超越大模型的另一范式
 - 蒸馏、剪枝、量化等模型压缩技术是 Moebius 的理论背景
 
@@ -1594,7 +1594,7 @@ Response Stage 和 Update Stage 的解耦设计值得借鉴：交互时专注生
 真正的个性化 = 持续演化的理解过程，而非静态标签。
 
 ## 相关页面
-- [ChatGPT Memory](ch01/471-chatgpt-memory.html) — OpenAI 的记忆实现对比
+- [ChatGPT Memory](ch01/452-chatgpt-memory.html) — OpenAI 的记忆实现对比
 - [原文存档](https://mp.weixin.qq.com/s/IUxhHJdXj4JoqLKgS18ubA)
 
 ## 相关实体

@@ -51,7 +51,7 @@ AgentCore 支持任何开源框架（CrewAI、LangGraph、LlamaIndex、Strands A
 - [当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/when-ai-agents-learn-to-forget-amazon-bedrock-agentcore-memory-philosophy.md)
 - [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单机改造为多租户-serverless-架构-.md)
 - [Build financial document processing with Pulse AI and Amazon Bedrock](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-financial-document-processing-with-pulse-ai-and-amazon-bedrock.md)
-- [AgentCore质量优化飞轮：推荐-验证-部署闭环](097-aws-bedrock-agentcore-quality-optimization-flywheel.html)
+- [AgentCore质量优化飞轮：推荐-验证-部署闭环](096-aws-bedrock-agentcore-quality-optimization-flywheel.html)
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-os-level-actions-in-amazon-bedrock-agentcore-browser.md)
 - [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-1.md)
 

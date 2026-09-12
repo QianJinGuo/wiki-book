@@ -98,7 +98,7 @@ CloudWatch 指标和 CloudTrail 日志构成了监控的两条腿。CloudWatch �
 - [Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战](https://github.com/QianJinGuo/wiki-public/blob/main/entities/zenjoy-aiops-agent-bedrock-eks-prometheus.md)
 - [LLM raiders and how to repel them](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-raiders-private-ai-server.md)
 - [AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-一周综述amazon-bedrock-agentcore-付款适用于-aws-的-agent-工具套件等2026-年-5-月-11-日.md)
-- [CloudSectiDbits](../ch11/084-cloudsectidbits.html)
+- [CloudSectiDbits](../ch11/083-cloudsectidbits.html)
 - [Schemata Dod Contractor Api Flaw Military Data Exposure](https://github.com/QianJinGuo/wiki-public/blob/main/entities/schemata-dod-contractor-api-flaw-military-data-exposure.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-privacy-landscape.md)
 

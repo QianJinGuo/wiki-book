@@ -60,7 +60,7 @@ AI 最终要从屏幕走进物理世界。
 - [阿里云 MSE AI 任务调度 + Agent Sandbox：动态休眠/唤醒 OpenClaw Agent 成本下降 90%+](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aliyun-mse-ai-task-scheduling-agent-sandbox-cost-90-percent.md) — 休眠唤醒短条borderline
 - [腾讯云Agent Memory：Mermaid无限画布×上下文卸载](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tencentdb-agent-memory-context-offloading.md) — Mermaid画布上下文卸载
 - [小刘商业 Agent 增强层通用基座](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-xiaolaoliu-business-agent-augmentation-layer-general-base-20260606.md) — 基座+增强层论点短条
-- [Giving your AI a Job Interview](ch11/099-giving-your-ai-a-job-interview.html) — Mollick评估三重困境+三种路径
+- [Giving your AI a Job Interview](ch11/098-giving-your-ai-a-job-interview.html) — Mollick评估三重困境+三种路径
 - [我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-autoresearch-software-development-niaowo.md) — AutoResearch迁移软开+交叉审核
 
 ## 延伸导航
@@ -185,7 +185,7 @@ Unitree 计划将 IPO 融资款约 3 亿美元（每年约 1 亿美元）用于 
 ## 与现有知识的链接
 - → [原文存档](https://mp.weixin.qq.com/s/YfZ-bvXAmMBO3LFQ6eUPKA)
 - → [Yann LeCun JEPA世界模型](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yann-lecun-jepa-world-model.md) — AMI Labs具身智能方向
-- → [NVIDIA边缘端LLM for机器人](ch01/199-nvidia-edge-first-llms-av-robotics.html) — 英伟达边缘AI方案对比
+- → [NVIDIA边缘端LLM for机器人](ch01/194-nvidia-edge-first-llms-av-robotics.html) — 英伟达边缘AI方案对比
 
 ### 异构计算vs单芯片：架构选择的工程哲学
 蔚蓝选择6颗专用芯片而非1颗通用大芯片，背后是** task-specific 优化**的工程哲学。

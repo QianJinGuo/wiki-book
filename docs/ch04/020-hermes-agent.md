@@ -27,7 +27,7 @@
 - [企业级 Skill 8 块最小骨架 + 8 条 checklist 设计规范](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-design-spec-8-block-checklist-winty.md) — 8块骨架checklist设计规范
 - [Skill Hub：企业级 AI 经验资产化的关键（组织能力视角）— winty 前端Q 3 篇合集：组织资产 + 质量门禁 4 关 + 生命周期 6 阶段治理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-hub-organization-asset-winty.md) — Skill组织资产化治理五件事
 - [Impeccable：把 AI 前端设计变成可检查的工作流 — 33.4k Star 开源项目深度分析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/impeccable-frontend-design-skill-harness-vibecoder.md) — Impeccable四层架构9210字rv9全版
-- [Wiki Evolver](../ch07/059-wiki-evolver.html) — 知识库涌现层元系统
+- [Wiki Evolver](../ch07/058-wiki-evolver.html) — 知识库涌现层元系统
 - [高德扫街榜 HermesAgent 配图系统：VLM + Skill + 语言驱动的生产级 Agent 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gaode-saojie-image-selection-hermesagent-vlm-production-2026.md) — 确定性流水线+Agent巧活，提效48倍rv9
 - [我把 Claude Design 做成了 Skill，人人都能成为顶级网站设计师](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-design-skill-web-design-engineer.md) — Claude Design拆解全版
 - [MemOS Hermes 记忆插件](https://github.com/QianJinGuo/wiki-public/blob/main/entities/memos-hermes-plugin.md) — MemOS插件：智能去重+混合检索7225字

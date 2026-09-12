@@ -79,7 +79,7 @@ Prowler 输出 OCSF（Open Cybersecurity Schema Framework）标准格式的 JSON
 
 → [原文存档](https://aws.amazon.com/cn/blogs/china/flight-change-information-intelligent/)
 
-- [CloudSectiDbits](084-cloudsectidbits.html)
+- [CloudSectiDbits](083-cloudsectidbits.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-privacy-landscape.md)
 
 ---

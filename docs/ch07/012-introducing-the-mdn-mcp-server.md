@@ -47,7 +47,7 @@
 
 - [Anthropic MCP 协议回顾](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-mcp-revisited.md) — MCP 协议本身的设计
 - [AWS Bedrock AgentCore MCP](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-agentcore-doris-mcp-server.md) — 商业 MCP server
-- [Claude Code MCP server](043-claude-code-mcp-server.html) — Claude Code 工具系统
+- [Claude Code MCP server](042-claude-code-mcp-server.html) — Claude Code 工具系统
 - [Hermes Agent 工具系统架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-tool-system-architecture.md) — agent 工具调用一般化框架
 
 ## References

@@ -19,7 +19,7 @@
 - [Claude Code Skills / MCP / Rules 源码分析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-skills-mcp-rules-source-analysis.md) — 三个注入位置
 - [Claude Code Prompt 提示词体系源码解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-prompt-source-analysis.md) — 六大prompt模块全版
 - [Harness 工程搭建式业务 Agent 评测方案：Claude Code 作 Harness 搭建者](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineered-business-agent-evaluation-aliyun-boyu.md) — CC搭评测Harness，1.5周→1-2天
-- [DeepSeek Code Harness](094-deepseek-code-harness.html) — DSH 28k主版
+- [DeepSeek Code Harness](092-deepseek-code-harness.html) — DSH 28k主版
 - [鹅厂 Skill 写作完整 Playbook：14 章节 end-to-end 实战 + 工程化评估（腾讯一线踩坑 + Anthropic 官方做法整合）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tencent-skill-writing-complete-playbook-jackjchou.md) — 14章节skill写作playbook
 - [Claude Code SKILL.md 写作指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-skill-writing-guide.md) — SKILL.md写作
 - [李继刚 23 个 Skills 深度拆解——认知工序流水线](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ljg-skills-deep-dive-datastudio-2026.md) — 李继刚23 Skills认知工序流水线拆解

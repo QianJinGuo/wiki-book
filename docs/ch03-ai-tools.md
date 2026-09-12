@@ -2,7 +2,7 @@
 
 > 2024-2026 AI 工具生态：从 IDE 到 Agent 平台
 
-> 本章收录 **61 篇**实体，按深度递增排列。
+> 本章收录 **60 篇**实体，按深度递增排列。
 
 ---
 
@@ -13,7 +13,7 @@
 | ⭐ 入门 | 零基础可读 | 4 |
 | ⭐⭐ 工程师 | 需编程基础 | 8 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 29 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 15 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 14 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 5 |
 
 ---
@@ -89,11 +89,10 @@ AI 工具正在重新定义"开发者工具"的边界。
 - [051. Amazon Quick + Cisco Webex MCP 会议准备与跟进助手：meeting-lifecycle MCP 编排实战](ch03/051-amazon-quick-cisco-webex-mcp-meeting-lifecycle-mcp)
 - [052. Announcing Genkit Middleware](ch03/052-announcing-genkit-middleware)
 - [053. What Figma Made Visible: Component Model Bridging Design and Engineering](ch03/053-what-figma-made-visible-component-model-bridging-design-and)
-- [054. Interaction Models: A Scalable Approach to Human-AI Collaboration](ch03/054-interaction-models-a-scalable-approach-to-human-ai-collabor)
-- [055. Hunk - Review-first Terminal Diff Viewer](ch03/055-hunk-review-first-terminal-diff-viewer)
-- [056. Microsoft Agent Framework 结构化输出：response_format 与 response.value](ch03/056-microsoft-agent-framework-response-format-response-value)
-- [057. AgentScope Java Harness Framework 2.0 — 企业级 Agent 分布式场景的 Harness 实现 (Java 2.0 重大升级)](ch03/057-agentscope-java-harness-framework-2-0-agent-harness)
-- [058. Hermes-Wiki 实战 — Obsidian + Hermes Agent 自动生长知识网络的 9 步搭建法](ch03/058-hermes-wiki-obsidian-hermes-agent-9)
-- [059. pi-mono — 模块化 AI Agent 构建平台（OpenClaw 执行引擎核心）](ch03/059-pi-mono-ai-agent-openclaw)
-- [060. Hermes Agent 工具系统架构分析](ch03/060-hermes-agent)
-- [061. CLI-Anything](ch03/061-cli-anything)
+- [054. Hunk - Review-first Terminal Diff Viewer](ch03/054-hunk-review-first-terminal-diff-viewer)
+- [055. Microsoft Agent Framework 结构化输出：response_format 与 response.value](ch03/055-microsoft-agent-framework-response-format-response-value)
+- [056. AgentScope Java Harness Framework 2.0 — 企业级 Agent 分布式场景的 Harness 实现 (Java 2.0 重大升级)](ch03/056-agentscope-java-harness-framework-2-0-agent-harness)
+- [057. Hermes-Wiki 实战 — Obsidian + Hermes Agent 自动生长知识网络的 9 步搭建法](ch03/057-hermes-wiki-obsidian-hermes-agent-9)
+- [058. pi-mono — 模块化 AI Agent 构建平台（OpenClaw 执行引擎核心）](ch03/058-pi-mono-ai-agent-openclaw)
+- [059. Hermes Agent 工具系统架构分析](ch03/059-hermes-agent)
+- [060. CLI-Anything](ch03/060-cli-anything)

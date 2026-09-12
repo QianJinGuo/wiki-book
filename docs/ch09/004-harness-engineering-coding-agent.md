@@ -19,7 +19,7 @@
 ## 工程实践
 - ['Harness Engineering：AI 从](../ch05/061-harness-engineering.html) — 六层架构+七大反模式+分级决策树19712字rv9
 - [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cursor-复盘-harness模型决定能力上限harness-决定生产下限.md) — Cursor复盘主版
-- [DeepSeek Code Harness](094-deepseek-code-harness.html) — DSH 28k主版
+- [DeepSeek Code Harness](092-deepseek-code-harness.html) — DSH 28k主版
 - [vivo Agent 系统分析：大模型是大脑不是马，Harness 是 ICU 不是马鞍](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vivo-agent-brain-body-icu-harness-evolutionary-framework-2026.md) — 大脑身体ICU隐喻框架
 - [AI-DLC：紫讯落地 AI 原生研发新范式的实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-dlc-zixun-ai-native-development-lifecycle.md) — AI-DLC四件套
 - [FastContext（微软开源 Coding Agent 仓库探索子代理）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/microsoft-fastcontext-coding-agent-explore-subagent-vibecoder.md) — Explore子Agent只读三工具，证据bundle

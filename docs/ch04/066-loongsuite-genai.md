@@ -49,7 +49,7 @@ LoongSuite 当前支持 8+ 框架的 Invocation 统一抽象值得参考——�
 ## 相关实体
 - [Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering实践做了一个平台让ai一晚上自动评测和优化你的系统.md)
 - [Claude Code Agent 工程设计](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-agent-engineering.md)
-- [你不知道的 Agent 原理架构与工程实践](187-agent-principle-architecture-engineering-practice.html)
+- [你不知道的 Agent 原理架构与工程实践](180-agent-principle-architecture-engineering-practice.html)
 - [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/coding-harness-engineering.md)
 - [Ralph Loop 不够用：长时间 Agent 还缺这 3 件事](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ralph-loop-不够用长时间-agent-还缺这-3-件事.md)
 

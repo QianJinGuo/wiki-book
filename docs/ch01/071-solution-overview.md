@@ -31,7 +31,7 @@ The solution uses Amazon Quick Flows as the orchestration layer, with a connecti
 - [Comprehensive Observability For Amazon Sagemaker Ai Llm Infe](https://github.com/QianJinGuo/wiki-public/blob/main/entities/comprehensive-observability-for-amazon-sagemaker-ai-llm-infe.md)
 - [对抗 Agent 遗忘Kollab 基于Amazon Bedrock Agentcore 的团队Ai工作空间实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/对抗-agent-遗忘kollab-基于amazon-bedrock-agentcore-的团队ai工作空间实践.md)
 
-- [Gemini 3 5 Frontier Intelligence With Action](494-gemini-3-5-frontier-intelligence-with-action.html)
+- [Gemini 3 5 Frontier Intelligence With Action](475-gemini-3-5-frontier-intelligence-with-action.html)
 
 ---
 

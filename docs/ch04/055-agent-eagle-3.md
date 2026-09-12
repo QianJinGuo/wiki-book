@@ -11,7 +11,7 @@
 - [Ai Skill Skill Creator 源码拆解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-skill-skill-creator-源码拆解.md)
 - [Harness Engineering Systematic Explainer](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-systematic-explainer.md)
 - [Didi Eagle 3 Speculative Decoding Agents](https://github.com/QianJinGuo/wiki-public/blob/main/entities/didi-eagle-3-speculative-decoding-agents.md)
-- [Langsmith Trajectory Evals](../ch01/373-langsmith-trajectory-evals.html)
+- [Langsmith Trajectory Evals](../ch01/359-langsmith-trajectory-evals.html)
 - [Ai Skill Metrics System](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-skill-metrics-system.md)
 
 → [原文存档](http://mmbiz.qpic.cn/mmbiz_png/1wBZCGiaYqBHxH4cCwCOochEJ8ekFkaFCpZPtJBXXibYk1vt31HhZ7McAeVAryqYqUickFl10bkD5Q7922uSgGEhg/0?wx_fmt=png)

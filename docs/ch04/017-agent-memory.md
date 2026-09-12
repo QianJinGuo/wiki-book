@@ -24,7 +24,7 @@
 - [Harness Engineering 综合性指南（ConardLi 系列 · 含 Beautiful Article 实证 + Reacticle 协议）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-comprehensive-guide-conardli.md) — ConardLi六层架构14634字rv9
 - [CPU 缓存类比下的 Agent 上下文管理：L1/L2/L3 层级架构与 execute_code 单工具设计](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cpu-cache-analogy-agent-context-management-liwen.md) — L1/L2/L3缓存类比
 - [Fable 5 的信号:Agent 开始拼 Runtime — 架构师若飞的 Runtime Contract 工程化拆解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-fable-5-agent-runtime-contract-ruofei-2026.md) — Runtime Contract拆解
-- [Claude Code Openclaw Usage Ettin](../ch09/107-claude-code-openclaw-usage-ettin.html) — Ettin rerank集成
+- [Claude Code Openclaw Usage Ettin](../ch09/105-claude-code-openclaw-usage-ettin.html) — Ettin rerank集成
 - [Personal AI 工作台：Claude 18 动作框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ruofei-personal-ai-workbench-18-actions.md) — Personal Harness六层工作台：环境工程>提示词技巧
 - [场景营销前端 AI Coding — 从问题到方案](https://github.com/QianJinGuo/wiki-public/blob/main/entities/frontend-ai-coding-problem-to-solution-taobao.md) — 注意力坍塌+外置DeepResearch分离
 - [Harness Engineering 系统性解读](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-systematic-explainer.md) — 李宏毅课程解读7933字最全版
