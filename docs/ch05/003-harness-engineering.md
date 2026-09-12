@@ -22,7 +22,7 @@
 - [刚刚，翁荔博客又上新：通过Harness工程实现AI自我提升](https://github.com/QianJinGuo/wiki-public/blob/main/entities/刚刚翁荔博客又上新通过harness工程实现ai自我提升.md) — RSI路径与七挑战
 
 ## 工程实践
-- ['Harness Engineering：AI 从](061-harness-engineering.html) — 六层架构+七大反模式+分级决策树19712字rv9
+- ['Harness Engineering：AI 从](019-harness-engineering.html) — 六层架构+七大反模式+分级决策树19712字rv9
 - [Claude Harness 设计：Generator-Evaluator 架构与 Context Reset 演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-generator-evaluator-anthropic.md) — Generator-Evaluator+context reset 10329字rv9全版
 - [深度拆解 Claude Code：12 个可复用的 Agentic Harness 设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-agentic-harness-design-patterns.md) — 12个harness模式
 - [Harness Engineering 综合性指南（ConardLi 系列 · 含 Beautiful Article 实证 + Reacticle 协议）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-comprehensive-guide-conardli.md) — ConardLi六层架构14634字rv9

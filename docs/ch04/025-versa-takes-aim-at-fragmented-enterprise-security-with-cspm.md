@@ -21,7 +21,7 @@
 - [ai-黑客真的来了hugging-face-遭遇-agent-自主攻击靠自建glm-52反击成功](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-黑客真的来了hugging-face-遭遇-agent-自主攻击靠自建glm-52反击成功-xixiaoyao.md) — HF攻击事件复盘
 
 ## 工程实践
-- ['Harness Engineering：AI 从](../ch05/061-harness-engineering.html) — 六层架构+七大反模式+分级决策树19712字rv9
+- ['Harness Engineering：AI 从](../ch05/019-harness-engineering.html) — 六层架构+七大反模式+分级决策树19712字rv9
 - [Building AI Agents in Accounting](002-building-ai-agents-in-accounting.html) — Skill-Config分离
 - [A Framework for AI Threat Readiness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai_threat_readiness_framework.md) — 威胁准备框架
 - [Where OpenClaw Security Is Heading — OpenClaw Blog](https://github.com/QianJinGuo/wiki-public/blob/main/entities/where-openclaw-security-is-heading-openclaw-blog.md) — egress路由fs-safe信任体系

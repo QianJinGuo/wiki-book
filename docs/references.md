@@ -5,13 +5,13 @@
 ## 主要来源
 | 来源 | 文章数 |
 |---|---|
-| mp.weixin.qq.com | 1642 |
+| mp.weixin.qq.com | 1647 |
 | aws.amazon.com | 381 |
 | huggingface.co | 35 |
 | www.interconnects.ai | 35 |
 | www.xiaohongshu.com | 25 |
+| arxiv.org | 23 |
 | www.oneusefulthing.org | 23 |
-| arxiv.org | 22 |
 | netflixtechblog.com | 21 |
 | www.theregister.com | 20 |
 | unknown | 15 |

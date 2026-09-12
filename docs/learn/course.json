@@ -110,17 +110,6 @@
    "lessons": [
     {
      "role": "核心原理",
-     "title": "多智能体上下文隔离机制",
-     "file": "ch01/257-page-257.md",
-     "url": "/ch01/257-page-257.html",
-     "chapter": "ch01",
-     "chapterName": "AI 与 LLM 基础",
-     "essence": "上下文隔离是 Agent 系统可靠性设计中最为核心的架构模式之一。在长程任务、多角色协作、或高并发请求处理的场景下，上下文污染和状态混淆是最常见的故障根因。；为每个任务显式创建独立上下文空间：不要依赖 LLM 自动区分任务，使用系统设计强制隔离——例如通过 session id + 独立 vector store 组合、或为每个任务启动独立的 Agent 实例",
-     "words": 4192,
-     "level": 3
-    },
-    {
-     "role": "工程案例",
      "title": "Subagents 详解：Claude Code 如何避免上下文污染",
      "file": "ch01/386-subagents-claude-code.md",
      "url": "/ch01/386-subagents-claude-code.html",
@@ -128,17 +117,28 @@
      "chapterName": "AI 与 LLM 基础",
      "essence": "Subagents机制揭示了当前AI编程工具的一个核心工程挑战：上下文污染问题。当Claude Code运行超过半小时后，主窗口可能积累80k token的噪音——搜索结果、日志、目录列表等一次性信息填满了窗口，而真正重要的项目事实和决策依据反而被稀释。这种\"变脏\"的过程不是简单的上下文溢出，而是信息密度的恶化。；Subagent的核心价值在于主动的信息过滤和压缩。它不是简单地把任务分派给多个Agent，而是建立了一种上下文工作区的边界管理机制：探索性工作在独立窗口完成，主窗口只接收高密度的结论。Kaxil Naik的那句\"Harness matters more than the model\"点出了本质——模型能力固然重要，但长任务能否稳定运行更多取决于外围的工程结构",
      "words": 19496,
-     "level": 1
+     "level": 3
+    },
+    {
+     "role": "工程案例",
+     "title": "Prompting Amazon Nova 2 for content moderation",
+     "file": "ch01/466-prompting-amazon-nova-2-for-content-moderation.md",
+     "url": "/ch01/466-prompting-amazon-nova-2-for-content-moderation.html",
+     "chapter": "ch01",
+     "chapterName": "AI 与 LLM 基础",
+     "essence": "Amazon Nova 2 内容审核实战指南；Prompt engineering 在内容审核中的应用。",
+     "words": 5293,
+     "level": 3
     },
     {
      "role": "延伸阅读",
-     "title": "Nvidia Telco Reasoning Models Nemo",
-     "file": "ch01/189-nvidia-telco-reasoning-models-nemo.md",
-     "url": "/ch01/189-nvidia-telco-reasoning-models-nemo.html",
+     "title": "300万人在存的Claude提示词",
+     "file": "ch01/462-300-claude.md",
+     "url": "/ch01/462-300-claude.html",
      "chapter": "ch01",
      "chapterName": "AI 与 LLM 基础",
-     "essence": "NOC自动化从规则引擎向推理模型的范式转移；传统NOC自动化依赖规则脚本和开环触发机制，面对噪声信号、跨域依赖和动态变化的网络行为时束手无策。这正是当前50%运营商虽将自主网络列为最高ROI用例却难以落地的核心障碍。推理模型通过理解incident上下文和NOC信号来驱动多工具、多轮对话式的闭环工作流，将MTTR从小时级压缩到秒级，同时实现self-healing",
-     "words": 21974,
+     "essence": "原文发表于 AI 研究者 @engkhairallah1 的 Twitter/X 帖子，核心主张是：当前大多数\"提示词合集\"过于泛化（\"帮我写博客\"\"总结这段文字\"），它们是 wish（愿望） 而非 prompt（提示词）。真正的工程化提示词包含五个要素——角色设定、上下文约束、输出格式、质量标准、具体示例——并且在 Claude、ChatGPT、Gemini 三大模型上都做过交叉验证。；覆盖六大场景：写作与内容（10）、分析与策略（10）、技术开发（10）、生产力（5）、数据解读（5）、沟通（5），共 40 个模板",
+     "words": 4933,
      "level": 3
     }
    ],
@@ -185,17 +185,6 @@
     },
     {
      "role": "工程案例",
-     "title": "阿里云 AgentLoop：企业级智能体自进化飞轮（4 环闭环 + LoongSuite 84% 字段覆盖 + Trace2Dataset 90% 节省 + Agent-as-a-Judge 90% 一致 + 记忆库/经验库）",
-     "file": "ch04/231-agentloop-4-loongsuite-84-trace2dataset-90.md",
-     "url": "/ch04/231-agentloop-4-loongsuite-84-trace2dataset-90.html",
-     "chapter": "ch04",
-     "chapterName": "Agent 核心架构",
-     "essence": "阿里云 AgentLoop：企业级智能体自进化飞轮（4 环闭环 + LoongSuite 84% 字段覆盖 + Trace2Dataset 90% 节省 + Agent-as-a-Judge 90% 一致 + 记忆库/经验库）；📊 Level ⭐⭐⭐⭐ | 38.0KB | entities/aliyun-agentloop-enterprise-agent-self-evolution-flywheel.md。",
-     "words": 17960,
-     "level": 3
-    },
-    {
-     "role": "延伸阅读",
      "title": "Agent Loop 源码导读：一次 Hermes 任务的完整生命周期",
      "file": "ch04/357-agent-loop-hermes.md",
      "url": "/ch04/357-agent-loop-hermes.html",
@@ -204,6 +193,17 @@
      "essence": "Insight 1: Agent Loop 的 5 阶段抽象揭示了当前主流框架的共同范式；不同框架（Hermes、LangGraph、Cursor、Claude Code）命名不同，但本质都是这 5 个阶段：接收输入、拼装 Prompt、调用模型、执行工具、检查退出。这种一致性说明当前的 Agent 设计已经形成了相对稳定的设计模式",
      "words": 12698,
      "level": 3
+    },
+    {
+     "role": "延伸阅读",
+     "title": "阿里云 AgentLoop：企业级智能体自进化飞轮（4 环闭环 + LoongSuite 84% 字段覆盖 + Trace2Dataset 90% 节省 + Agent-as-a-Judge 90% 一致 + 记忆库/经验库）",
+     "file": "ch04/229-agentloop-4-loongsuite-84-trace2dataset-90.md",
+     "url": "/ch04/229-agentloop-4-loongsuite-84-trace2dataset-90.html",
+     "chapter": "ch04",
+     "chapterName": "Agent 核心架构",
+     "essence": "阿里云 AgentLoop：企业级智能体自进化飞轮（4 环闭环 + LoongSuite 84% 字段覆盖 + Trace2Dataset 90% 节省 + Agent-as-a-Judge 90% 一致 + 记忆库/经验库）；📊 Level ⭐⭐⭐⭐ | 38.0KB | entities/aliyun-agentloop-enterprise-agent-self-evolution-flywheel.md。",
+     "words": 17960,
+     "level": 1
     }
    ],
    "lab": {
@@ -255,17 +255,6 @@
     },
     {
      "role": "工程案例",
-     "title": "Codex /goal：长任务Agent的目标运行时",
-     "file": "ch04/262-codex-goal-agent.md",
-     "url": "/ch04/262-codex-goal-agent.html",
-     "chapter": "ch04",
-     "chapterName": "Agent 核心架构",
-     "essence": "📊 Level ⭐⭐⭐⭐ | 16.1KB | entities/codex-goal-agent-runtime.md；/goal 把一个长期目标放进了 Codex 的运行时里：目标有状态，过程有记账，完成要审计，预算到了要收束",
-     "words": 7300,
-     "level": 3
-    },
-    {
-     "role": "延伸阅读",
      "title": "Agent 的骨架:Agent Runtime 7 大职责 + 3 主流框架对比 (LangGraph / OpenAI Agents SDK / 自研)",
      "file": "ch04/359-agent-agent-runtime-7-3-langgraph-openai-agents-s.md",
      "url": "/ch04/359-agent-agent-runtime-7-3-langgraph-openai-agents-s.html",
@@ -273,6 +262,17 @@
      "chapterName": "Agent 核心架构",
      "essence": "Agent 的骨架:Agent Runtime 7 大职责 + 3 主流框架对比 (LangGraph / OpenAI Agents SDK / 自研)；📊 Level ⭐⭐⭐⭐⭐ | 19.9KB | entities/agent-runtime-7-responsibilities-secondcurve-2026.md。",
      "words": 11682,
+     "level": 3
+    },
+    {
+     "role": "延伸阅读",
+     "title": "深度拆解：AI 智能体 Harness 的构造（译）",
+     "file": "ch04/362-ai-harness.md",
+     "url": "/ch04/362-ai-harness.html",
+     "chapter": "ch04",
+     "chapterName": "Agent 核心架构",
+     "essence": "📊 Level ⭐⭐⭐⭐⭐ | 19.0KB | entities/ai-agent-harness-construction-akshay.md；LangChain 仅通过改变包裹 LLM 的底层架构，让 TerminalBench 2.0 排名从第 30 名飙升至第 5——模型没变，参数没变",
+     "words": 7354,
      "level": 3
     }
    ],
@@ -336,13 +336,13 @@
     },
     {
      "role": "延伸阅读",
-     "title": "五款浏览器自动化工具横向对比：browser-use / Playwright / chrome-devtools-mcp / agent-browser / BrowserAct",
-     "file": "ch04/295-browser-use-playwright-chrome-devtools-mcp-agent-bro.md",
-     "url": "/ch04/295-browser-use-playwright-chrome-devtools-mcp-agent-bro.html",
-     "chapter": "ch04",
-     "chapterName": "Agent 核心架构",
-     "essence": "五款浏览器自动化工具横向对比：browser-use / Playwright / chrome-devtools-mcp / agent-browser / BrowserAct；📊 Level ⭐⭐⭐⭐ | 11.6KB | entities/four-browser-automation-tools-comparison.md。",
-     "words": 6259,
+     "title": "Microsoft Agent Framework Tools 总览：4 类工具 + Provider 矩阵 + Tool Approval",
+     "file": "ch07/048-microsoft-agent-framework-tools-4-provider-tool-ap.md",
+     "url": "/ch07/048-microsoft-agent-framework-tools-4-provider-tool-ap.html",
+     "chapter": "ch07",
+     "chapterName": "技能、工具与 MCP",
+     "essence": "Microsoft Agent Framework Tools 总览：4 类工具 + Provider 矩阵 + Tool Approval；📊 Level ⭐⭐⭐⭐⭐ | 26.7KB | entities/microsoft-agent-framework-tools-overview-provider-matrix.md。",
+     "words": 14468,
      "level": 3
     }
    ],
@@ -385,13 +385,13 @@
     {
      "role": "核心原理",
      "title": "State of Memory in Agent Harness — mem0 视角的九大 harness 横评",
-     "file": "ch04/281-state-of-memory-in-agent-harness-mem0-harness.md",
-     "url": "/ch04/281-state-of-memory-in-agent-harness-mem0-harness.html",
+     "file": "ch04/279-state-of-memory-in-agent-harness-mem0-harness.md",
+     "url": "/ch04/279-state-of-memory-in-agent-harness-mem0-harness.html",
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "一、harness boundary 是 memory 系统的根本限制。九大 harness 共同面临的五个短板（bounded local 存储、keyword 式检索、memory 不跨 harness、staleness 处理弱、isolation 不够），本质上都来自\"数据不出 harness\"这个边界约束。这不是任何一家公司工程能力不足的问题，而是单 harness 架构的固有局限。跨 harness 的 memory layer 之所以难，不是因为技术复杂，而是因为行业没有动力去标准化。；二、现有 memory benchmark 偏重 recall 而非 decision quality，是系统性偏差。LoCoMo 只有 10 段对话、很多题不需要 memory；LongMemEval 覆盖 ex。",
      "words": 7404,
-     "level": 3
+     "level": 1
     },
     {
      "role": "工程案例",
@@ -454,17 +454,6 @@
    "lessons": [
     {
      "role": "核心原理",
-     "title": "使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？",
-     "file": "ch04/157-agent-skills-rag.md",
-     "url": "/ch04/157-agent-skills-rag.html",
-     "chapter": "ch04",
-     "chapterName": "Agent 核心架构",
-     "essence": "Skills 是 Anthropic 推出的 Agent 领域行业标准，本质是一个文件夹，内含使用说明（SKILL.md）、参考文档（reference）、可执行脚本（script）；渐进式加载策略：启动时仅加载 Skill 基本描述，触发时才按需读取详细文档，避免无谓的 Token 消耗。",
-     "words": 4475,
-     "level": 3
-    },
-    {
-     "role": "工程案例",
      "title": "Google出手统一全模态检索：Gemini Embedding 2把文本、图片、音频和视频压进同一向量空间",
      "file": "ch01/150-google-gemini-embedding-2.md",
      "url": "/ch01/150-google-gemini-embedding-2.html",
@@ -473,6 +462,17 @@
      "essence": "架构决策：双向注意力是关键。 生成式 Gemini 模型使用单向注意力，而 embedding 任务需要双向上下文来完整理解输入。Gemini Embedding 2 通过双向 Transformer 结构解决这一问题，配合 Mean Pooling + 线性投影输出 3072 维向量，并通过 Matryoshka Representation Learning 支持 768/1536/3072 维自适应压缩，兼顾精度与效率。；两阶段训练：先拉方向，再精修。 PFT 阶段用大 batch 把模型从「偏生成」往「偏编码」拉；FT 阶段带 hard negative 精修真正的多模态统一空间。NCE 风格对比学习 + batch 内负例的设计使跨模态对齐更紧密。Model Soup 权重平均多任务结果，有效对冲多任。",
      "words": 3269,
      "level": 2
+    },
+    {
+     "role": "工程案例",
+     "title": "使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？",
+     "file": "ch04/155-agent-skills-rag.md",
+     "url": "/ch04/155-agent-skills-rag.html",
+     "chapter": "ch04",
+     "chapterName": "Agent 核心架构",
+     "essence": "Skills 是 Anthropic 推出的 Agent 领域行业标准，本质是一个文件夹，内含使用说明（SKILL.md）、参考文档（reference）、可执行脚本（script）；渐进式加载策略：启动时仅加载 Skill 基本描述，触发时才按需读取详细文档，避免无谓的 Token 消耗。",
+     "words": 4475,
+     "level": 1
     },
     {
      "role": "延伸阅读",
@@ -542,13 +542,13 @@
     {
      "role": "工程案例",
      "title": "Fable 5 的信号:Agent 开始拼 Runtime — 架构师若飞的 Runtime Contract 工程化拆解",
-     "file": "ch04/245-fable-5-agent-runtime-runtime-contract.md",
-     "url": "/ch04/245-fable-5-agent-runtime-runtime-contract.html",
+     "file": "ch04/243-fable-5-agent-runtime-runtime-contract.md",
+     "url": "/ch04/243-fable-5-agent-runtime-runtime-contract.html",
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "Fable 5 的信号:Agent 开始拼 Runtime — 架构师若飞的 Runtime Contract 工程化拆解；📊 Level ⭐⭐⭐⭐ | 21.3KB | entities/claude-fable-5-agent-runtime-contract-ruofei-2026.md。",
      "words": 11876,
-     "level": 3
+     "level": 1
     },
     {
      "role": "延伸阅读",
@@ -607,13 +607,13 @@
     {
      "role": "核心原理",
      "title": "Multi-Agent 的四种协作模式：Supervisor、Swarm、网状、流水线，怎么选？",
-     "file": "ch04/179-multi-agent-supervisor-swarm.md",
-     "url": "/ch04/179-multi-agent-supervisor-swarm.html",
+     "file": "ch04/177-multi-agent-supervisor-swarm.md",
+     "url": "/ch04/177-multi-agent-supervisor-swarm.html",
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "单 Agent 的结构性瓶颈是系统性问题，而非 Prompt 技巧问题。 James 在文章开头用三个「死法」精准地描述了单 Agent 在复杂任务下的崩溃路径：上下文窗口污染导致关键信息被稀释、角色指令相互抢占优先级导致行为混乱、故障无隔离导致错误传播污染全链路。这三种死法并非可以通过优化 Prompt 措辞来解决的表层问题，而是单个 Agent 架构在处理多角色、多步骤任务时必然遭遇的结构性矛盾 。这意味着在设计阶段就应当选择 Multi-Agent 架构，而非在上线后遇到瓶颈再寻求 Prompt 层面的补救。；Supervisor 模式的核心价值在于路由逻辑的可审计性与故障定位的便捷性。 这种模式将所有调度决策集中于中央 Supervisor Agent，所有 Worker 之间的信息流都经由 Super。",
      "words": 3746,
-     "level": 3
+     "level": 1
     },
     {
      "role": "工程案例",
@@ -683,35 +683,35 @@
     {
      "role": "核心原理",
      "title": "AI Agent 落地：如何攻克稳定性、成本与评估难题？ — Trace即Evals",
-     "file": "ch04/255-ai-agent-trace-evals.md",
-     "url": "/ch04/255-ai-agent-trace-evals.html",
+     "file": "ch04/253-ai-agent-trace-evals.md",
+     "url": "/ch04/253-ai-agent-trace-evals.html",
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "张雁飞在 Databend Meetup 2026 北京站的演讲，提出\"Trace 即 Evals\"的核心主张 — AI Agent 的稳定性、成本归因和效果评估，必须建立在完整执行轨迹之上。文章用 Claude Code、Evot、Pi 等 Agent 对比案例，梳理了从 Prompt Engineering、Context Engineering 到 Harness Engineering 的演进。；AI Agent 落地的三大难题：稳定性（相同输入不同输出）、成本归因（无法追踪 Token 去向）、效果评估（缺乏可复现的基准）。",
      "words": 7356,
-     "level": 3
+     "level": 1
     },
     {
      "role": "工程案例",
      "title": "CMU PACE — Proxy for Agentic Capability Evaluation",
-     "file": "ch04/212-cmu-pace-proxy-for-agentic-capability-evaluation.md",
-     "url": "/ch04/212-cmu-pace-proxy-for-agentic-capability-evaluation.html",
+     "file": "ch04/210-cmu-pace-proxy-for-agentic-capability-evaluation.md",
+     "url": "/ch04/210-cmu-pace-proxy-for-agentic-capability-evaluation.html",
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "成本降低 100 倍：单模型完整 Agent 评测需数千美元和数天时间，PACE 仅需不到 1% 的成本即可获得高度相关的预测分数；自动选题：从 19 个非 Agent 基准（覆盖 11 类能力）中自动选出最具预测力的 100 道题，无需人工设计。",
      "words": 3225,
-     "level": 3
+     "level": 1
     },
     {
      "role": "延伸阅读",
      "title": "Agent 自进化评估瓶颈 — 外置 evaluator 是自动自进化的前提条件",
-     "file": "ch04/084-agent-evaluator.md",
-     "url": "/ch04/084-agent-evaluator.html",
+     "file": "ch04/316-agent-evaluator.md",
+     "url": "/ch04/316-agent-evaluator.html",
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
-     "essence": "Agent 自进化评估瓶颈 — 外置 evaluator 是自动自进化的前提条件；📊 Level ⭐⭐ | 3.8KB | entities/agent-self-evolution-evaluator-bottleneck.md。",
-     "words": 2037,
-     "level": 2
+     "essence": "主分必须来自被优化对象之外的系统。 任何 agent 能写、能改、能影响的信号（自评、自生成测试、可编辑日志/环境）都不是主分。列出 agent 全部写权限，凡能间接改变自己分数的要么移除、要么纳入审计。；evaluator 需要独立的变更审计。 打分逻辑、测试用例、评测数据集与阈值要像生产代码一样版本化 + 留痕 + 双人复核，修改权限不得落入被优化的 agent 或优化团队",
+     "words": 4710,
+     "level": 1
     }
    ],
    "lab": {
@@ -1010,7 +1010,7 @@
      "chapterName": "AI 与 LLM 基础",
      "essence": "本文档从微信平台抓取，原始URL: https://mp.weixin.qq.com/s/b8FCa0JtRJu8PbnTVkAPxg；格式探索是RL无需奖励模型的核心能力：实验表明，模型在强化学习过程中能自动发现有利于答案提取的输出格式——Qwen原始模型使用COT prompt时输出冗长不利于答案提取，但仅50步训练后就学会输出短答案，CEVAL分数从35跃升至66。这说明在可验证任务中，奖励信号本身就隐含在答案格式的可行性里，不需要单独训练奖励模型",
      "words": 2799,
-     "level": 1
+     "level": 3
     },
     {
      "role": "延伸阅读",
@@ -1021,7 +1021,7 @@
      "chapterName": "AI 与 LLM 基础",
      "essence": "📊 Level ⭐⭐⭐⭐⭐ | 33.6KB | entities/llm-rl中的熵-part-2-熵对训练的调控.md；LLM 的 RL 训练面临一个根本张力：足够的熵让模型保持探索能力（避免过早收敛到次优策略），但太高的熵又会让模型难以学到有意义的模式",
      "words": 12691,
-     "level": 1
+     "level": 3
     }
    ],
    "lab": {
@@ -1079,17 +1079,6 @@
     },
     {
      "role": "工程案例",
-     "title": "五款浏览器自动化工具横向对比：browser-use / Playwright / chrome-devtools-mcp / agent-browser / BrowserAct",
-     "file": "ch04/295-browser-use-playwright-chrome-devtools-mcp-agent-bro.md",
-     "url": "/ch04/295-browser-use-playwright-chrome-devtools-mcp-agent-bro.html",
-     "chapter": "ch04",
-     "chapterName": "Agent 核心架构",
-     "essence": "五款浏览器自动化工具横向对比：browser-use / Playwright / chrome-devtools-mcp / agent-browser / BrowserAct；📊 Level ⭐⭐⭐⭐ | 11.6KB | entities/four-browser-automation-tools-comparison.md。",
-     "words": 6259,
-     "level": 3
-    },
-    {
-     "role": "延伸阅读",
      "title": "Browser Harness — 自愈型浏览器 Agent 框架",
      "file": "ch04/334-browser-harness-agent.md",
      "url": "/ch04/334-browser-harness-agent.html",
@@ -1098,6 +1087,17 @@
      "essence": "Browser Harness（browser-use/browser-harness，~8.9K Stars）是一个基于 Chrome DevTools Protocol (CDP) 直连的自愈型浏览器 Agent 框架，核心理念是去框架化：薄 CDP 桥接 + mid-task 自愈机制 + domain-skills 自动沉淀。；与 AgentBrowser、Playwright/Selenium 等方案不同，Browser Harness 不构建厚重抽象层，而是让 Agent 直接通过 CDP WebSocket 与浏览器原生状态交互",
      "words": 3994,
      "level": 3
+    },
+    {
+     "role": "延伸阅读",
+     "title": "Building web search-enabled agents with Strands and Exa",
+     "file": "ch04/065-building-web-search-enabled-agents-with-strands-and-exa.md",
+     "url": "/ch04/065-building-web-search-enabled-agents-with-strands-and-exa.html",
+     "chapter": "ch04",
+     "chapterName": "Agent 核心架构",
+     "essence": "See source article for full content.；工具调用模式从硬编码流程转向模型驱动决策 — Strands Agents 的核心理念是让 LLM 决定何时调用哪些工具，而非预设执行顺序。agent loop 通过积累对话历史（每一步 tool call 及其结果）形成上下文，使得多步骤研究任务可以在单一调用内完成多轮 search→extract→synthesize。这种模式与传统 if-this-then-that 的工作流引擎有本质区别，模型成为 runtime 的调度者而非脚本的奴隶",
+     "words": 3882,
+     "level": 2
     }
    ],
    "lab": {
@@ -1187,13 +1187,13 @@
     {
      "role": "核心原理",
      "title": "使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？",
-     "file": "ch04/157-agent-skills-rag.md",
-     "url": "/ch04/157-agent-skills-rag.html",
+     "file": "ch04/155-agent-skills-rag.md",
+     "url": "/ch04/155-agent-skills-rag.html",
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
      "essence": "Skills 是 Anthropic 推出的 Agent 领域行业标准，本质是一个文件夹，内含使用说明（SKILL.md）、参考文档（reference）、可执行脚本（script）；渐进式加载策略：启动时仅加载 Skill 基本描述，触发时才按需读取详细文档，避免无谓的 Token 消耗。",
      "words": 4475,
-     "level": 3
+     "level": 1
     },
     {
      "role": "工程案例",

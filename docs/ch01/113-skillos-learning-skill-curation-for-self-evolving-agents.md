@@ -12,7 +12,7 @@
 - [Context Window Management Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-window-management-comparison.md) — 四框架对比rv9
 - [GLM-5.2: Built for Long-Horizon Tasks](https://github.com/QianJinGuo/wiki-public/blob/main/entities/z-glm-5.2.md) — GLM-5.2长程任务发布
 - [Optimizing Models to Be Fast at Codegen](https://github.com/QianJinGuo/wiki-public/blob/main/entities/morphllm-codegen-inference-optimization.md) — codegen locality复用+Chinchilla在投机解码失效
-- [Foundation Capital Agent Era Six Insights](../ch04/286-foundation-capital-agent-era-six-insights.html) — Agent时代六条投资洞察rv9框架
+- [Foundation Capital Agent Era Six Insights](../ch04/284-foundation-capital-agent-era-six-insights.html) — Agent时代六条投资洞察rv9框架
 - [Rethinking Search as Code Generation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/perplexity-search-as-code-generation.md) — Search as Code：查询变可执行代码对象7660字rv9
 - [DeepSeek Thinking with Visual Primitives 深度解读](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-visual-primitives-thinking.md) — 视觉原语10k主版
 - [MIRA + MPA：深度原理 AI Scientist 递归自训练打造材料基座模型，40 项实验全面 SOTA](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mira-mpa-deep-principle-ai4s-40-sota.md) — AI Scientist递归自训练，35/40胜前SOTA
@@ -20,7 +20,7 @@
 
 ## 工程实践
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-agentic-engineering-v4.md) — v4 8090字rv10：可验证性上限+MenuGen警示
-- ['Harness Engineering：AI 从](../ch05/061-harness-engineering.html) — 六层架构+七大反模式+分级决策树19712字rv9
+- ['Harness Engineering：AI 从](../ch05/019-harness-engineering.html) — 六层架构+七大反模式+分级决策树19712字rv9
 - [Bedrock AgentCore 多租户 Agent 构建实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/building-multi-tenant-agents-with-amazon-bedrock-agentcore.md) — 十组件多租户
 - [Bedrock AgentCore 构建 BI 智能体](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-ai-agents-for-business-intelligence-with-amazon-bedrock-agentcore.md) — BI三agent案例
 - [最佳 Claude Code 配置：Andrej Karpathy 的 CLAUDE.md，134+k star了！](https://github.com/QianJinGuo/wiki-public/blob/main/entities/andrej-karpathy-claude-md-134k-stars-2026.md) — CLAUDE.md四规则解析

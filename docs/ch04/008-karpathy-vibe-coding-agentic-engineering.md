@@ -40,7 +40,7 @@
 
 ## 关联
 
-- 同题异语种孪生页：[Karpathy Vibe Coding Agentic Engineering](270-karpathy-vibe-coding-agentic-engineering.html)（归并候选，提案卡 #11 批1）
+- 同题异语种孪生页：[Karpathy Vibe Coding Agentic Engineering](268-karpathy-vibe-coding-agentic-engineering.html)（归并候选，提案卡 #11 批1）
 
 ---
 

@@ -70,7 +70,7 @@ Skills、AGENTS.md、飞轮三者其实在解决同一个问题：让 AI 的上�
 - [2 小时 0 行手写代码 VSCode 插件](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-vscode-plugin-zero-code.md)（同主题不同框架）
 - [古法程序员复杂任务 Spec 写作](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gufabiancheng-spec-for-complex-tasks-cc-codex.md)（spec 方法论）
 - [Agent Skill Spec 构建设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-spec-building-design-patterns.md)
-- [Harness Engineering](../ch05/061-harness-engineering.html)
+- [Harness Engineering](../ch05/019-harness-engineering.html)
 
 ---
 

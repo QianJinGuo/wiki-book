@@ -615,7 +615,7 @@ class RecoveryManager:
 → [ETCLOVG Survey (CMU 2026)](https://picrew.github.io/LLM-Harness/paper.pdf)
 
 - [Versa Takes Aim At Fragmented Enterprise Security With Cspm Orchestration Updat](https://github.com/QianJinGuo/wiki-public/blob/main/entities/versa-takes-aim-at-fragmented-enterprise-security-with-cspm-orchestration-updat.md)
-- [k-dense — the model is no longer the bottleneck](288-k-dense-the-model-is-no-longer-the-bottleneck.html)
+- [k-dense — the model is no longer the bottleneck](286-k-dense-the-model-is-no-longer-the-bottleneck.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-privacy-landscape.md)
 
 ---

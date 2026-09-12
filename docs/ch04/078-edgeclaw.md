@@ -11,7 +11,7 @@ GitHub: https://github.com/Openbmb/edgeclaw
 ## 相关实体
 - [我用 Skillmd 做了一个简历生成器](https://github.com/QianJinGuo/wiki-public/blob/main/entities/我用-skillmd-做了一个简历生成器.md)
 - [Aliyun Agentrun 2Line Integration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aliyun-agentrun-2line-integration.md)
-- [Computer Use 45X More Expensive Than Structured Apis](311-computer-use-45x-more-expensive-than-structured-apis.html)
+- [Computer Use 45X More Expensive Than Structured Apis](309-computer-use-45x-more-expensive-than-structured-apis.html)
 - [2 Year 25 Ai Projects Summary](https://github.com/QianJinGuo/wiki-public/blob/main/entities/2-year-25-ai-projects-summary.md)
 - [Agent 从能用到管好中间差了什么](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-从能用到管好中间差了什么.md)
 

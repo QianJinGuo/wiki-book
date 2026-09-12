@@ -49,7 +49,7 @@
 
 ## 相关实体
 
-- [Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式](../ch05/061-harness-engineering.html) — 互补概念：Harness 关注如何构建可靠 AI 系统，AI Infra 关注需要哪些基础设施组件
+- [Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式](../ch05/019-harness-engineering.html) — 互补概念：Harness 关注如何构建可靠 AI 系统，AI Infra 关注需要哪些基础设施组件
 - [Loop Engineering：反馈控制系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/loop-engineering-feedback-control-system.md) — Agent 运行时的闭环控制
 - [腾讯研究院 AI 速递](https://github.com/QianJinGuo/wiki-public/blob/main/entities/腾讯研究院ai速递-20260429.md) — 行业动态
 - [Agentic AI System Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentic-ai-system-architecture-harness-skill-mcp.md) — 分层 Agent 系统架构（5 层：Orchestrator → Harness → Skill → MCP → Model）

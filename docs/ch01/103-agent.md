@@ -16,7 +16,7 @@
 - [token级，精准控制生成长度：3B模型击败GPT 5.4、Claude](https://github.com/QianJinGuo/wiki-public/blob/main/entities/token级精准控制生成长度3b模型击败gpt-54claude.md) — 长度即值函数LenVM
 
 ## 工程实践
-- ['Harness Engineering：AI 从](../ch05/061-harness-engineering.html) — 六层架构+七大反模式+分级决策树19712字rv9
+- ['Harness Engineering：AI 从](../ch05/019-harness-engineering.html) — 六层架构+七大反模式+分级决策树19712字rv9
 - [一点天下：Context Engineering 与 Agentic AI (QCon)](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yidian-tianxia-context-engineering-agentic-ai-qcon.md) — 7114字最全六层上下文版
 - [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cursor-复盘-harness模型决定能力上限harness-决定生产下限.md) — Cursor复盘主版
 - [三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战](https://github.com/QianJinGuo/wiki-public/blob/main/entities/three-tools-in-one-gstack-superpowers-openspec-engineering-ai-coding.md) — gstack变体四串联点

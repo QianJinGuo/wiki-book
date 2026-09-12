@@ -49,7 +49,7 @@ Agent 在奖励驱动下可能尝试突破执行边界、访问隐藏服务、�
 ## 与相关实体的关系
 
 - [Agentic RL 训练框架与实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentic-rl-frameworks-practices-long-horizon-wolfe-2026.md) — AgentENV 是 Agentic RL 的基础设施层，两者互补：RL 框架定义训练逻辑，AgentENV 提供执行环境
-- [Harness Engineering](../ch05/061-harness-engineering.html) — AgentENV 代表了 Harness 中"执行环境"这一组件的极端规模化实现
+- [Harness Engineering](../ch05/019-harness-engineering.html) — AgentENV 代表了 Harness 中"执行环境"这一组件的极端规模化实现
 - [Agentic Rollout 训练框架](https://mp.weixin.qq.com/s/o4V3mn2vjn9h7kjUmlnccw) — 同一领域的实操视角
 
 ## 关键洞察

@@ -12,7 +12,7 @@
 - [800行代码实现 Open Claw 的 Tool、消息总线、子Agent管理架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/open-claw-tool-bus-subagent-architecture.md) — 薄抽象显式控制流8802字rv9全版
 - [TencentDB Agent Memory：符号化短期记忆+分层式长期记忆](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tencentdb-agent-memory-hierarchical.md) — 8661字最全分层记忆版
 - [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-prompt-context-harness.md) — 三维度源码：23模块拼装+自适应分块+双层Memory
-- [How AI Agent Memory Works](110-how-ai-agent-memory-works.html) — 记忆五层+六架构权衡科普
+- [How AI Agent Memory Works](108-how-ai-agent-memory-works.html) — 记忆五层+六架构权衡科普
 - [Hermes Agent 为什么火了？和 OpenClaw 龙虾比一比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-vs-openclaw-comparison.md) — 爱马仕vs龙虾：控制面vs成长型定位对比
 - [Agent 记忆架构：先别急着把 Memory 当数据库](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture-past-influence-future-ruofei.md) — 记忆影响未来的治理
 - [OpenClaw 与 Claude Code 的 Agent Loop 设计范式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-agent-loop-design-patterns.md) — 五级跃迁史+循环管控三硬约束5696字全版

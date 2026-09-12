@@ -257,7 +257,7 @@ harness 不是简单的"工具包装器"，而是 AI agent 的"操作系统"—�
 harness 是 AI 的"操作系统"——每个组件都应有单元测试和集成测试，确保可靠性。
 
 ## 相关实体
-- [Harness Engineering](061-harness-engineering.html)
+- [Harness Engineering](019-harness-engineering.html)
 - [Fudan Peking Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fudan-peking-ahe-agentic-harness-engineering.md)
 - [Fudan Agentic Harness Engineering Ahe Gpt54 7Points](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fudan-agentic-harness-engineering-ahe-gpt54-7points.md)
 - [Harness Engineering Alibaba Java Case Study](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-alibaba-java-case-study.md)

@@ -181,7 +181,7 @@ Appshots（屏幕感知） + /goal（长周期自主） + Locked Use（物理边
 - [Nanobot Agent Framework Architecture Deep Dive](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nanobot-agent-framework-architecture-deep-dive.md) — subagent / 长周期任务的极简框架样本
 - [腾讯研究院Ai速递 20260429](https://github.com/QianJinGuo/wiki-public/blob/main/entities/腾讯研究院ai速递-20260429.md) — 同期 AI 行业全景，含"工具型 App 消亡"判断
 - [天猫新品营销技术团队Ai编码实战指南上](https://github.com/QianJinGuo/wiki-public/blob/main/entities/天猫新品营销技术团队ai编码实战指南上.md) — AI 编码全流程工程化方法论
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/270-karpathy-vibe-coding-agentic-engineering.html) — vibe coding 到 agentic engineering 的演进
+- [Karpathy Vibe Coding Agentic Engineering](../ch04/268-karpathy-vibe-coding-agentic-engineering.html) — vibe coding 到 agentic engineering 的演进
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md) — 锯齿智能与 Codex 能力组合
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — Agent harness 的工程框架
 - [Agent Harness Context Management Working Set](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-context-management-working-set.md) — Appshots 引发的 working set 管理新挑战

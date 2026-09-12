@@ -24,7 +24,7 @@
 
     <div class="home-stats__item"><span class="home-stats__num">20 章 · 5 篇</span><span class="home-stats__label">全书结构</span></div>
 
-    <div class="home-stats__item"><span class="home-stats__num">4,256</span><span class="home-stats__label">一手原文</span></div>
+    <div class="home-stats__item"><span class="home-stats__num">4,266</span><span class="home-stats__label">一手原文</span></div>
 
     <div class="home-stats__item"><span class="home-stats__num">★ × 5</span><span class="home-stats__label">难度分级</span></div>
 
@@ -153,9 +153,9 @@
 
 <p class="chapter-card__desc">什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:10.91%" title="⭐ 入门 · 43 篇"></i><i class="lv2" style="width:11.17%" title="⭐⭐ 工程师 · 44 篇"></i><i class="lv3" style="width:36.04%" title="⭐⭐⭐ 专家 · 142 篇"></i><i class="lv4" style="width:28.17%" title="⭐⭐⭐⭐ 科学家 · 111 篇"></i><i class="lv5" style="width:13.71%" title="⭐⭐⭐⭐⭐ 大师 · 54 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:10.66%" title="⭐ 入门 · 42 篇"></i><i class="lv2" style="width:10.91%" title="⭐⭐ 工程师 · 43 篇"></i><i class="lv3" style="width:36.04%" title="⭐⭐⭐ 专家 · 142 篇"></i><i class="lv4" style="width:28.68%" title="⭐⭐⭐⭐ 科学家 · 113 篇"></i><i class="lv5" style="width:13.71%" title="⭐⭐⭐⭐⭐ 大师 · 54 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 43 · ⭐⭐ 44 · ⭐⭐⭐ 142 · ⭐⭐⭐⭐ 111 · ⭐⭐⭐⭐⭐ 54</div>
+<div class="chapter-card__legend">⭐ 42 · ⭐⭐ 43 · ⭐⭐⭐ 142 · ⭐⭐⭐⭐ 113 · ⭐⭐⭐⭐⭐ 54</div>
 
 <ul class="chapter-card__samples">
 
@@ -179,9 +179,9 @@
 
 <p class="chapter-card__desc">给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:16.47%" title="⭐ 入门 · 14 篇"></i><i class="lv2" style="width:12.94%" title="⭐⭐ 工程师 · 11 篇"></i><i class="lv3" style="width:21.18%" title="⭐⭐⭐ 专家 · 18 篇"></i><i class="lv4" style="width:30.59%" title="⭐⭐⭐⭐ 科学家 · 26 篇"></i><i class="lv5" style="width:18.82%" title="⭐⭐⭐⭐⭐ 大师 · 16 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:15.29%" title="⭐ 入门 · 13 篇"></i><i class="lv2" style="width:12.94%" title="⭐⭐ 工程师 · 11 篇"></i><i class="lv3" style="width:22.35%" title="⭐⭐⭐ 专家 · 19 篇"></i><i class="lv4" style="width:30.59%" title="⭐⭐⭐⭐ 科学家 · 26 篇"></i><i class="lv5" style="width:18.82%" title="⭐⭐⭐⭐⭐ 大师 · 16 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 14 · ⭐⭐ 11 · ⭐⭐⭐ 18 · ⭐⭐⭐⭐ 26 · ⭐⭐⭐⭐⭐ 16</div>
+<div class="chapter-card__legend">⭐ 13 · ⭐⭐ 11 · ⭐⭐⭐ 19 · ⭐⭐⭐⭐ 26 · ⭐⭐⭐⭐⭐ 16</div>
 
 <ul class="chapter-card__samples">
 
@@ -309,17 +309,17 @@
 
 <p class="chapter-card__desc">让 Agent 拥有外部知识：从向量检索到知识图谱</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:6.25%" title="⭐ 入门 · 1 篇"></i><i class="lv2" style="width:6.25%" title="⭐⭐ 工程师 · 1 篇"></i><i class="lv3" style="width:25.00%" title="⭐⭐⭐ 专家 · 4 篇"></i><i class="lv4" style="width:50.00%" title="⭐⭐⭐⭐ 科学家 · 8 篇"></i><i class="lv5" style="width:12.50%" title="⭐⭐⭐⭐⭐ 大师 · 2 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:0.00%" title="⭐ 入门 · 0 篇"></i><i class="lv2" style="width:6.25%" title="⭐⭐ 工程师 · 1 篇"></i><i class="lv3" style="width:31.25%" title="⭐⭐⭐ 专家 · 5 篇"></i><i class="lv4" style="width:50.00%" title="⭐⭐⭐⭐ 科学家 · 8 篇"></i><i class="lv5" style="width:12.50%" title="⭐⭐⭐⭐⭐ 大师 · 2 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 1 · ⭐⭐ 1 · ⭐⭐⭐ 4 · ⭐⭐⭐⭐ 8 · ⭐⭐⭐⭐⭐ 2</div>
+<div class="chapter-card__legend">⭐⭐ 1 · ⭐⭐⭐ 5 · ⭐⭐⭐⭐ 8 · ⭐⭐⭐⭐⭐ 2</div>
 
 <ul class="chapter-card__samples">
-
-<li><span class="stars">⭐</span>SkillCorpus: 大规模社区 Skill 生态的筛选、评测与边界分析</li>
 
 <li><span class="stars">⭐⭐</span>【实践教程】真实AI客服落地全流程：意图识别、混合检索到数据飞轮</li>
 
 <li><span class="stars">⭐⭐⭐</span>Nvidia Multimodal RAG Knowledge Systems</li>
+
+<li><span class="stars">⭐⭐⭐</span>Manufacturing Intelligence with Amazon Nova Multimodal Embeddings</li>
 
 </ul>
 
@@ -617,6 +617,6 @@
 </div>
 </section>
 
-<footer class="home-map__foot">📊 全书收录 1,693 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-09-12</span></footer>
+<footer class="home-map__foot">📊 全书收录 1,693 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-09-13</span></footer>
 
 </div>

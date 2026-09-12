@@ -10,9 +10,9 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 14 |
+| ⭐ 入门 | 零基础可读 | 13 |
 | ⭐⭐ 工程师 | 需编程基础 | 11 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 18 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 19 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 26 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 16 |
 
@@ -49,28 +49,28 @@ Harness Engineering 是 2026 年冒出来的最重要工程概念之一：它回
 - [011. Cloudflare Copy Fail Linux 内核漏洞应急响应](ch05/011-cloudflare-copy-fail-linux)
 - [012. Build a serverless image editing agent with Amazon Bedrock AgentCore harness](ch05/012-build-a-serverless-image-editing-agent-with-amazon-bedrock-a)
 - [013. Beyond Vibe Coding — Directed Generation as Design Methodology](ch05/013-beyond-vibe-coding-directed-generation-as-design-methodolo)
-- [014. 场景营销前端 AI Coding — 从问题到方案](ch05/014-ai-coding)
-- [015. Harness Engineering for Self-Improvement — 翁荔 Lilian Weng 系统梳理 Harness 自我提升研究全景](ch05/015-harness-engineering-for-self-improvement-lilian-weng-h)
-- [016. 应用宝活动平台 Harness 工程实践——从对话式 AI Coding 到工程化系统](ch05/016-harness-ai-coding)
-- [017. 从零复刻 Claude Code：Harness 构建学习笔记](ch05/017-claude-code-harness)
-- [018. 从渐进式 SDD 到 Lattice Harness：AI Coding 团队级闭环实践](ch05/018-sdd-lattice-harness-ai-coding)
-- [019. GSD 完胜 OpenSpec 和 Superpowers？源码拆完发现：三者防的是 context rot 的三道防线](ch05/019-gsd-openspec-superpowers-context-rot)
-- [020. 清华大学：驾驭工程 (Harness Engineering) 研究报告](ch05/020-harness-engineering)
-- [021. Superpowers 6.0 反作弊重写：reviewer 只读怀疑论者 + 上下文经济学 + progress ledger + model 纪律 —— 术哥源码级拆解 158 commits](ch05/021-superpowers-6-0-reviewer-progress-ledger-model)
-- [022. 全球首个完全AI编写的训练框架：面壁ForgeTrain速度反超英伟达Megatron，年底要把国产算力软件重写一遍](ch05/022-ai-forgetrain-megatron)
-- [023. Thin Harness, Fat Skills：AI工程架构的本质](ch05/023-thin-harness-fat-skills-ai)
-- [024. Skill Factory：三天手搓面向Harness设计的技能工厂](ch05/024-skill-factory-harness)
-- [025. browser-use v0.13 Browser Harness：薄抽象层设计哲学](ch05/025-browser-use-v0-13-browser-harness)
-- [026. 缝合怪识别与减法决策论：OpenSpec + Superpowers 融合方案下线记（2 周 3 次实测 + 3 个测试 + 加法传播学 + Plan Mode + Superpowers + ASD 最终方案）](ch05/026-openspec-superpowers-2-3-3-plan-mode-s)
-- [027. Harness 工程实践复盘：100% Cache 命中的 Agent 怎么设计？](ch05/027-harness-100-cache-agent)
-- [028. Harness 到底是什么？看看 OpenClaw、Hermes、Claude Code 的演绎吧](ch05/028-harness-openclaw-hermes-claude-code)
-- [029. Martin Fowler AI 研发提醒：Harness 承重层](ch05/029-martin-fowler-ai-harness)
-- [030. MAC（multi-agent-coding）：Skills + Hooks 两层 Harness —— 完全委托 0-20% 的解法](ch05/030-mac-multi-agent-coding-skills-hooks-harness-0-20)
-- [031. 生产级 Harness 的 12 大组件以及主流框架对比](ch05/031-harness-12)
-- [032. 基于 Harness + SDD + 多仓管理模式的 AI 全栈开发实践｜得物技术](ch05/032-harness-sdd-ai)
-- [033. Harness 工程可视化：Vibe Coding 中重建工程可控性](ch05/033-harness-vibe-coding)
-- [034. EnvHarness: Awakening Static Worlds for Agent Learning](ch05/034-envharness-awakening-static-worlds-for-agent-learning)
-- [035. Harness Engineering：AI 能在真正\"出事会炸\"的后端系统里写代码吗？](ch05/035-harness-engineering-ai)
+- [014. Harness Engineering for Self-Improvement — 翁荔 Lilian Weng 系统梳理 Harness 自我提升研究全景](ch05/014-harness-engineering-for-self-improvement-lilian-weng-h)
+- [015. 应用宝活动平台 Harness 工程实践——从对话式 AI Coding 到工程化系统](ch05/015-harness-ai-coding)
+- [016. 从零复刻 Claude Code：Harness 构建学习笔记](ch05/016-claude-code-harness)
+- [017. 从渐进式 SDD 到 Lattice Harness：AI Coding 团队级闭环实践](ch05/017-sdd-lattice-harness-ai-coding)
+- [018. GSD 完胜 OpenSpec 和 Superpowers？源码拆完发现：三者防的是 context rot 的三道防线](ch05/018-gsd-openspec-superpowers-context-rot)
+- [019. 清华大学：驾驭工程 (Harness Engineering) 研究报告](ch05/019-harness-engineering)
+- [020. Superpowers 6.0 反作弊重写：reviewer 只读怀疑论者 + 上下文经济学 + progress ledger + model 纪律 —— 术哥源码级拆解 158 commits](ch05/020-superpowers-6-0-reviewer-progress-ledger-model)
+- [021. 全球首个完全AI编写的训练框架：面壁ForgeTrain速度反超英伟达Megatron，年底要把国产算力软件重写一遍](ch05/021-ai-forgetrain-megatron)
+- [022. Thin Harness, Fat Skills：AI工程架构的本质](ch05/022-thin-harness-fat-skills-ai)
+- [023. Skill Factory：三天手搓面向Harness设计的技能工厂](ch05/023-skill-factory-harness)
+- [024. browser-use v0.13 Browser Harness：薄抽象层设计哲学](ch05/024-browser-use-v0-13-browser-harness)
+- [025. 缝合怪识别与减法决策论：OpenSpec + Superpowers 融合方案下线记（2 周 3 次实测 + 3 个测试 + 加法传播学 + Plan Mode + Superpowers + ASD 最终方案）](ch05/025-openspec-superpowers-2-3-3-plan-mode-s)
+- [026. Harness 工程实践复盘：100% Cache 命中的 Agent 怎么设计？](ch05/026-harness-100-cache-agent)
+- [027. Harness 到底是什么？看看 OpenClaw、Hermes、Claude Code 的演绎吧](ch05/027-harness-openclaw-hermes-claude-code)
+- [028. Martin Fowler AI 研发提醒：Harness 承重层](ch05/028-martin-fowler-ai-harness)
+- [029. MAC（multi-agent-coding）：Skills + Hooks 两层 Harness —— 完全委托 0-20% 的解法](ch05/029-mac-multi-agent-coding-skills-hooks-harness-0-20)
+- [030. 生产级 Harness 的 12 大组件以及主流框架对比](ch05/030-harness-12)
+- [031. 基于 Harness + SDD + 多仓管理模式的 AI 全栈开发实践｜得物技术](ch05/031-harness-sdd-ai)
+- [032. Harness 工程可视化：Vibe Coding 中重建工程可控性](ch05/032-harness-vibe-coding)
+- [033. EnvHarness: Awakening Static Worlds for Agent Learning](ch05/033-envharness-awakening-static-worlds-for-agent-learning)
+- [034. Harness Engineering：AI 能在真正\"出事会炸\"的后端系统里写代码吗？](ch05/034-harness-engineering-ai)
+- [035. 场景营销前端 AI Coding — 从问题到方案](ch05/035-ai-coding)
 - [036. Spec Kit / OpenSpec / Superpowers 融合：棕地项目的三层Harness架构](ch05/036-spec-kit-openspec-superpowers-harness)
 - [037. Loop Engineering 实践指南：CodeBuddy 中的自主循环系统 — Inner/Outer Loop + /goal + /loop + Team 对抗验证 + 状态外置](ch05/037-loop-engineering-codebuddy-inner-outer-loop-goal)
 - [038. 规格驱动开发与 Harness](ch05/038-harness)

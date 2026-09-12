@@ -17,7 +17,7 @@
 - [SemaPLC：验证门控的 PLC 代码生成 Agent Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/semaplc-verification-gated-agent-harness-plc-codegen-2026-08-26.md) — 验证门控PLC代码生成harness
 
 ## 工程实践
-- ['Harness Engineering：AI 从](../ch05/061-harness-engineering.html) — 六层架构+七大反模式+分级决策树19712字rv9
+- ['Harness Engineering：AI 从](../ch05/019-harness-engineering.html) — 六层架构+七大反模式+分级决策树19712字rv9
 - [Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cursor-复盘-harness模型决定能力上限harness-决定生产下限.md) — Cursor复盘主版
 - [DeepSeek Code Harness](091-deepseek-code-harness.html) — DSH 28k主版
 - [vivo Agent 系统分析：大模型是大脑不是马，Harness 是 ICU 不是马鞍](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vivo-agent-brain-body-icu-harness-evolutionary-framework-2026.md) — 大脑身体ICU隐喻框架

@@ -10,9 +10,8 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 1 |
 | ⭐⭐ 工程师 | 需编程基础 | 1 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 4 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 5 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 8 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 2 |
 
@@ -32,76 +31,7 @@ RAG 不只是"检索 + 拼接"——它是知识管理的入口。
 
 ---
 
-## Ch10.001 SkillCorpus: 大规模社区 Skill 生态的筛选、评测与边界分析
-
-> 📊 Level ⭐ | 4.8KB | `entities/skillcorpus-consolidating-open-skill-ecosystem.md`
-
-> 首个端到端框架：聚合开源 SKILL.md 生态，提纯为 96,401 标准化技能，在真实 Agent 任务上评测社区技能的实际价值并界定其边界。
-
-## 概览
-
-SkillCorpus 是由 EverMind、盛大集团与北京大学联合提出的框架，将松散的开源 SKILL.md 生态（~821,000 原始文件）经多层流水线提纯为 96,401 份合规、高质量、可商用的标准化技能，并配套微调检索排序堆栈，在真实 Agent 任务上评测了社区技能的实际增益与边界条件。
-
-## 六阶段提纯流水线
-
-1. **结构/格式检查**：标准 SKILL.md 格式 + 合理长度过滤
-2. **两阶去重**：精确指纹去重（169,465 合并）+ 语义嵌入去重（cosine 0.90 阈值，LLM 裁决 66,751 边界对）→ 合计去除 64%
-3. **三维质量打分**：LLM-as-judge 从 Utility（实用性）、Robustness（鲁棒性）、Safety（安全性）三维度输出 0-10 分
-   - 综合分 = 0.85·content_q + 0.15·prior_src（安全薄弱时衰减）
-4. **安全硬门禁 + 许可证过滤**：5 条硬规则（prompt_injection/cmd_injection/unsafe_exec/auth_bypass/csam_risk）→ 分数归零；仅保留 OSI 兼容许可证（去除 3,795 条）
-5. **归类入库**：16 类分类法（Dev 22.4%, Data 14.1%, Writing 8.2%, DevOps-Infra 7.8%...），1024 维检索嵌入
-
-## 三级检索排序堆栈
-
-- **粗召**：Qwen3-Emb-0.6B（在去重后语料上微调），3000 字符检索字段
-- **精排**：Qwen3-Rank-0.6B 微调排序模型
-- **LLM 选择门**：阅读完整 Skill 正文，返回 0-2 条注入
-- **可选查询改写**：领域术语规范化
-
-## 评测结果
-
-### 主实验（407 任务，24 配置 × 3 轮 = 74 次端到端运行）
-
-| 框架 × 模型 | SkillsBench | GDPVal | QwenClawBench | 均值 |
-|---|---|---|---|---|
-| OpenClaw × Qwen-27B | +4.2 | +1.9 | +1.5 | +2.5 |
-| OpenClaw × Qwen-397B | +5.8 | +1.8 | +1.3 | +3.0 |
-| Raven × Qwen-27B | +6.5 | +1.2 | +3.9 | +3.9 |
-| Raven × Qwen-397B | **+13.4** | +1.2 | +4.4 | **+6.3** |
-| Claude Opus 4.7 | +8.0 | — | — | — |
-
-全部配置正向增益，无净负均值（no-harm attachment）。最强单元（Raven × Q-397B）在 SkillsBench 上从失败中救回 19 个任务、损害 2 个（McNemar 检验 p<0.001）。
-
-### 两个边界条件
-
-**Harness 边界**：Raven 执行完整「推理→运行脚本→校验→修正」闭环，提升远超 OpenClaw（写代码后即终止、不校验）。Harness 执行逻辑直接影响 Skill 的落地效果。
-
-**覆盖度边界**：高检索匹配 → 平均 +25.1%；中匹配 → +6.2%；低匹配 → +2.2%。Skill 库覆盖度直接调节增益幅度。
-
-### 关键洞察
-
-- **流程适配度 > 质量分数**：单任务成败取决于 Skill 流程与任务结构的匹配度，而非综合质量分
-- **Skill 可能帮倒忙**：PPT 内嵌 Excel 修改任务中，通用 Skill（"打开 .xlsx"）无法处理 OLE 内嵌对象，反而比无 Skill 基线更差
-- **高基线任务天花板**：写作等任务模型本身能力强，Skill 提升空间有限（GDPVal 仅 +1.2-1.9pp）
-- **上下文隔离 > 并行**：规划器-执行者拆分的主要扩展优势来自上下文隔离，而非并行执行
-
-## 局限与未来方向
-
-- 质量评分依赖 LLM 文本判断，无沙箱执行验证
-- 仅英文评测，中文场景尚未覆盖
-- 静态快照（2026 Q2），无动态更新机制
-- 高基线任务受限天花板效应
-
-## 相关实体
-
-- [SkillOS: Learning Skill Curation for Self-Evolving Agents](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-os-learning-skill-curation-self-evolving-agents.md)
-- [SkillComposer: 生成式技能组合](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skillcomposer-generative-skill-composition-agent.md)
-
-→ [论文原文](https://arxiv.org/abs/2607.15557) | [中文解读](https://mp.weixin.qq.com/s/xZrMucZ4O5nMbGcc66H18g) | [PDF](assets/skillcorpus-arxiv-2607-15557.pdf)
-
----
-
-## Ch10.002 【实践教程】真实AI客服落地全流程：意图识别、混合检索到数据飞轮
+## Ch10.001 【实践教程】真实AI客服落地全流程：意图识别、混合检索到数据飞轮
 
 > 📊 Level ⭐⭐ | 7.7KB | `entities/实践教程真实ai客服落地全流程意图识别混合检索到数据飞轮.md`
 
@@ -145,7 +75,7 @@ SkillCorpus 是由 EverMind、盛大集团与北京大学联合提出的框架�
 
 ---
 
-## Ch10.003 Nvidia Multimodal RAG Knowledge Systems
+## Ch10.002 Nvidia Multimodal RAG Knowledge Systems
 
 > 📊 Level ⭐⭐⭐ | 22.1KB | `entities/nvidia-multimodal-rag-knowledge-systems.md`
 
@@ -188,8 +118,8 @@ NVIDIA Nemotron Nano 2 VL (12B) VLM 将视觉推理引入 RAG 管道，使系统
 
 ## 相关实体
 - [Nvidia Nemotron 3 Agents Rag Voice Safety](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-nemotron-3-agents-rag-voice-safety.md)
-- [Nvidia Extreme Co Design Agentic Systems](ch04/090-nvidia-extreme-co-design-agentic-systems.html)
-- [Nvidia Agentic Ai Subsurface Engineering](ch04/185-nvidia-agentic-ai-subsurface-engineering.html)
+- [Nvidia Extreme Co Design Agentic Systems](ch04/088-nvidia-extreme-co-design-agentic-systems.html)
+- [Nvidia Agentic Ai Subsurface Engineering](ch04/183-nvidia-agentic-ai-subsurface-engineering.html)
 - [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/056-nvidia-secure-local-agent-nemoclaw-openclaw.html)
 - [Nvidia Telco Reasoning Models Nemo](ch01/189-nvidia-telco-reasoning-models-nemo.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
@@ -198,7 +128,7 @@ NVIDIA Nemotron Nano 2 VL (12B) VLM 将视觉推理引入 RAG 管道，使系统
 
 ---
 
-## Ch10.004 Manufacturing Intelligence with Amazon Nova Multimodal Embeddings
+## Ch10.003 Manufacturing Intelligence with Amazon Nova Multimodal Embeddings
 
 > 📊 Level ⭐⭐⭐ | 17.0KB | `entities/amazon-nova-manufacturing-intelligence.md`
 
@@ -338,6 +268,108 @@ Amazon Nova MME 的 `GENERIC_INDEX`（文档索引用）和 `GENERIC_RETRIEVAL`�
 ## 相关实体
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/amazon-aws-ai.md)
+
+---
+
+## Ch10.004 SkillCorpus: 大规模社区 Skill 生态的筛选、评测与边界分析
+
+> 📊 Level ⭐⭐⭐ | 9.6KB | `entities/skillcorpus-consolidating-open-skill-ecosystem.md`
+
+> 首个端到端框架：聚合开源 SKILL.md 生态，提纯为 96,401 标准化技能，在真实 Agent 任务上评测社区技能的实际价值并界定其边界。
+
+## 概览
+
+SkillCorpus 是由 EverMind、盛大集团与北京大学联合提出的框架，将松散的开源 SKILL.md 生态（~821,000 原始文件）经多层流水线提纯为 96,401 份合规、高质量、可商用的标准化技能，并配套微调检索排序堆栈，在真实 Agent 任务上评测了社区技能的实际增益与边界条件。
+
+## 六阶段提纯流水线
+
+1. **结构/格式检查**：标准 SKILL.md 格式 + 合理长度过滤
+2. **两阶去重**：精确指纹去重（169,465 合并）+ 语义嵌入去重（cosine 0.90 阈值，LLM 裁决 66,751 边界对）→ 合计去除 64%
+3. **三维质量打分**：LLM-as-judge 从 Utility（实用性）、Robustness（鲁棒性）、Safety（安全性）三维度输出 0-10 分
+   - 综合分 = 0.85·content_q + 0.15·prior_src（安全薄弱时衰减）
+4. **安全硬门禁 + 许可证过滤**：5 条硬规则（prompt_injection/cmd_injection/unsafe_exec/auth_bypass/csam_risk）→ 分数归零；仅保留 OSI 兼容许可证（去除 3,795 条）
+5. **归类入库**：16 类分类法（Dev 22.4%, Data 14.1%, Writing 8.2%, DevOps-Infra 7.8%...），1024 维检索嵌入
+
+## 三级检索排序堆栈
+
+- **粗召**：Qwen3-Emb-0.6B（在去重后语料上微调），3000 字符检索字段
+- **精排**：Qwen3-Rank-0.6B 微调排序模型
+- **LLM 选择门**：阅读完整 Skill 正文，返回 0-2 条注入
+- **可选查询改写**：领域术语规范化
+
+## 评测结果
+
+### 主实验（407 任务，24 配置 × 3 轮 = 74 次端到端运行）
+
+| 框架 × 模型 | SkillsBench | GDPVal | QwenClawBench | 均值 |
+|---|---|---|---|---|
+| OpenClaw × Qwen-27B | +4.2 | +1.9 | +1.5 | +2.5 |
+| OpenClaw × Qwen-397B | +5.8 | +1.8 | +1.3 | +3.0 |
+| Raven × Qwen-27B | +6.5 | +1.2 | +3.9 | +3.9 |
+| Raven × Qwen-397B | **+13.4** | +1.2 | +4.4 | **+6.3** |
+| Claude Opus 4.7 | +8.0 | — | — | — |
+
+全部配置正向增益，无净负均值（no-harm attachment）。最强单元（Raven × Q-397B）在 SkillsBench 上从失败中救回 19 个任务、损害 2 个（McNemar 检验 p<0.001）。
+
+### 两个边界条件
+
+**Harness 边界**：Raven 执行完整「推理→运行脚本→校验→修正」闭环，提升远超 OpenClaw（写代码后即终止、不校验）。Harness 执行逻辑直接影响 Skill 的落地效果。
+
+**覆盖度边界**：高检索匹配 → 平均 +25.1%；中匹配 → +6.2%；低匹配 → +2.2%。Skill 库覆盖度直接调节增益幅度。
+
+### 关键洞察
+
+- **流程适配度 > 质量分数**：单任务成败取决于 Skill 流程与任务结构的匹配度，而非综合质量分
+- **Skill 可能帮倒忙**：PPT 内嵌 Excel 修改任务中，通用 Skill（"打开 .xlsx"）无法处理 OLE 内嵌对象，反而比无 Skill 基线更差
+- **高基线任务天花板**：写作等任务模型本身能力强，Skill 提升空间有限（GDPVal 仅 +1.2-1.9pp）
+- **上下文隔离 > 并行**：规划器-执行者拆分的主要扩展优势来自上下文隔离，而非并行执行
+
+### 「流程适配度 > 质量分数」：技能市场排序目标的错位
+
+最反直觉的发现是：单任务成败不由 LLM-as-judge 的 0-10 综合质量分决定，而取决于技能执行流程与任务结构是否同构。质量分刻画「文档写得好不好」，任务需要的是「这套步骤能不能接上当前执行链条」，两者在大量场景里并不同向——一份叙述完整、鲁棒性标注很高的通用技能，落到结构不匹配的具体任务上仍会给出错误的动作序列。
+
+其锋利之处在于它直接质疑排序目标本身。当前多数技能市场默认「按质量分从高到低」即合理排序，但若真实增益由流程适配度驱动，质量分就更适合当准入门槛（筛掉垃圾与不安全项），而非主排序信号；排序层需要的是任务结构 ↔ 技能流程的匹配度估计，而不是与任务无关的文档打分。这也是三级检索堆栈最后那道 LLM 选择门必须读完整正文的原因——它做的是适配判断，而非质量复核。
+
+### Harness 边界与覆盖度边界的耦合：同一技能库为何收益相差数倍
+
+两个边界的解释力在于乘积而非各自。Harness 边界描述执行闭环（Raven 走完「推理→运行脚本→校验→修正」，OpenClaw 写完即止），覆盖度边界描述检索匹配度（高 +25.1%、中 +6.2%、低 +2.2%）。前者是后验修复能力，后者是先验命中概率；只有两者同时满足收益才被放大——Raven × Qwen-397B 在 SkillsBench 上 +13.4，而 OpenClaw × Q-397B 只有 +5.8，同一技能库、同一模型，差距全在 harness 的闭环能力。
+
+机制上，高覆盖度保证命中正确技能，闭环校验则把低覆盖度带来的错误步骤就地纠正；弱 harness 即使拿到正确技能也留不住收益。因此诊断顺序应是：先问覆盖度是否命中，再问 harness 能否校验，最后才怀疑技能内容质量。
+
+### 提纯流水线的经济学：砍掉 64% 却几乎不损失可用性
+
+约 82.1 万份原始文件经两阶去重（精确指纹 + cosine 0.90 语义去重，66,751 个边界对交 LLM 裁决）与安全/许可过滤后只剩 96,401 份，去除约 64%，但 24 配置 × 3 轮评测仍保持无净负均值（no-harm attachment）——被砍掉的主要是冗余副本、格式不合规与含风险条目，而非能力本身。
+
+经济学含义是：规模指标极具欺骗性。82 万与 9.6 万在可用技能上并不等价放大，却在检索与选择成本上相差约 8.5 倍。规模不是护城河，信噪比才是——而提纯正是下游检索器与选择门能否正常工作的前提。
+
+### 局限的深层含义：质量分仍是文本信号而非行为证据
+
+三条局限并不独立：无沙箱执行验证意味着分数从未被真正「跑过」；仅英文意味着跨语言流程适配性未经验证；静态快照意味着技能会随依赖漂移失效而库毫不知情。三者叠加指向同一个未解决问题——技能库的「质量」是文本层推断，而非行为层证据。
+
+这正与 [Regression Tax](https://github.com/QianJinGuo/wiki-public/blob/main/entities/regression-tax-skills-hurt-llm-agents.md) 一类实证发现（技能有时反而拖累 agent）互为印证：既然质量分来自文本判断，它与真实表现的偏离就系统性存在，且方向可正可负。要闭合它，靠的不是更高的打分精度，而是把执行结果（是否被校验、是否被修正、最终是否成功）回灌为排序与门禁依据，即从「文档质量分」转向「行为置信度」——这也呼应了 [Harness Engineering](ch05/019-harness-engineering.html) 把执行闭环当作一等公民的思路。
+
+## 实践启示
+
+1. **按流程结构适配排序，而非按综合质量分排序。** 质量分当准入门槛，任务结构 ↔ 技能流程的匹配度当主排序信号；排序层要能读正文，而不是只看摘要分。
+2. **把执行闭环当作技能生效的前置条件。** 同一技能库在闭环与「写完即止」的 harness 上收益可差数倍，先补齐「运行→校验→修正」，再谈扩库。
+3. **用覆盖度而非数量作为技能库健康指标。** 看目标任务的命中分布（高/中/低匹配占比），而不是库内条数；82 万提纯到 9.6 万仍不失可用性。
+4. **技能描述与正文分治，控制常驻上下文成本。** 摘要承担召回、正文只在选择门按需读取，避免把全部正文塞进常驻 system prompt。
+5. **把安全硬门禁放在提纯早期。** prompt_injection、cmd_injection、unsafe_exec 类风险一旦入库就可能在检索后被注入执行，硬规则归零加许可过滤远比运行期防护便宜。
+6. **不要指望技能能救高基线任务。** 写作等任务受天花板效应压制，技能预算应优先投向流程复杂、模型基线薄弱的任务。
+
+## 局限与未来方向
+
+- 质量评分依赖 LLM 文本判断，无沙箱执行验证
+- 仅英文评测，中文场景尚未覆盖
+- 静态快照（2026 Q2），无动态更新机制
+- 高基线任务受限天花板效应
+
+## 相关实体
+
+- [SkillOS: Learning Skill Curation for Self-Evolving Agents](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-os-learning-skill-curation-self-evolving-agents.md)
+- [SkillComposer: 生成式技能组合](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skillcomposer-generative-skill-composition-agent.md)
+
+→ [论文原文](https://arxiv.org/abs/2607.15557) | [中文解读](https://mp.weixin.qq.com/s/xZrMucZ4O5nMbGcc66H18g) | [PDF](assets/skillcorpus-arxiv-2607-15557.pdf)
 
 ---
 
@@ -939,7 +971,7 @@ RAG 系统的效果瓶颈不在模型，而在**入库质量**。同样的 Embed
 - [RAG 全链路技术详解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-full-pipeline-taobao.md)
 - [RAG 分块向量化召回重排流水线](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-chunk-embedding-rerank-pipeline.md)
 - [向量库 vs 知识图谱：RAG 的进阶路径](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag-vector-knowledge-graph-ontology.md)
-- [AI Agent 记忆系统工作原理](ch04/110-how-ai-agent-memory-works.html)
+- [AI Agent 记忆系统工作原理](ch04/108-how-ai-agent-memory-works.html)
 
 ## 深度分析
 

@@ -166,7 +166,7 @@ ESAA 出现是"好消息"——意味着这个方向不是孤立判断，是领�
 - [Agent Harness 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture.md) —— 7 层 harness 模型
 - [Claude Code 20000 字符源码分析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-20000-char-source-analysis.md) —— 98.4% 基础设施论据
 - [Agent Harness 上下文管理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-context-management-working-set.md) —— 工作集视角 + subagent 隔离
-- [Harness Engineering](061-harness-engineering.html) —— 系统性 harness 实践
+- [Harness Engineering](019-harness-engineering.html) —— 系统性 harness 实践
 - [Agent Self-Improvement Six Mechanisms](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-self-improvement-six-mechanisms.md) —— 长期连贯性相关
 - [From Agent Protocol to Harness Skill](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-agent-protocol-to-harness-skill.md) —— 协议 → skill 演化
 

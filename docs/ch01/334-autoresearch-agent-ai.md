@@ -33,7 +33,7 @@ Karpathy 的轻量原型绕开合并、复用 GitHub 已有原语：Discussion �
 
 ### 真正的瓶颈是协调，不是模型能力
 
-「AI 寒武纪」类比的要害在此：寒武纪大爆发的标志不是单个生物变聪明，而是涌现出新的身体结构与全新的合作/竞争形态。文章的判断是——当智能、注意力和执行力不再稀缺，压力会整体转移到协作抽象层。这与 [Anthropic 多 Agent 研究系统](../ch04/225-anthropic-multi-agent-research-system.html) 的工程结论印证：多 agent 系统的失败模式多来自协调开销与上下文传递损耗，而非单 agent 能力不足。正因如此，Karpathy 说这是「比仓库本身更大的想法」——问题已从「agent 能不能做研究」变成「成千上万 agent 如何协作」。
+「AI 寒武纪」类比的要害在此：寒武纪大爆发的标志不是单个生物变聪明，而是涌现出新的身体结构与全新的合作/竞争形态。文章的判断是——当智能、注意力和执行力不再稀缺，压力会整体转移到协作抽象层。这与 [Anthropic 多 Agent 研究系统](../ch04/223-anthropic-multi-agent-research-system.html) 的工程结论印证：多 agent 系统的失败模式多来自协调开销与上下文传递损耗，而非单 agent 能力不足。正因如此，Karpathy 说这是「比仓库本身更大的想法」——问题已从「agent 能不能做研究」变成「成千上万 agent 如何协作」。
 
 ### 附带的两个构想：AGI 赌约与暴力搜索种子
 
@@ -52,7 +52,7 @@ Karpathy 的轻量原型绕开合并、复用 GitHub 已有原语：Discussion �
 
 - [AutoResearch：多 Agent 自动化软件开发](https://github.com/QianJinGuo/wiki-public/blob/main/entities/autoresearch-multi-agent-software.md)
 - [Karpathy AutoResearch：循环与 harness 优化](../ch05/005-karpathy-autoresearch-loop-cycle-harness-optimization.html)
-- [Anthropic：多 Agent 研究系统](../ch04/225-anthropic-multi-agent-research-system.html)
+- [Anthropic：多 Agent 研究系统](../ch04/223-anthropic-multi-agent-research-system.html)
 - [Agent 编排模式](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-orchestration-patterns.md)
 - [Agent 自改进循环](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-self-improvement-loops.md)
 - [MOC：多 Agent 协作](https://github.com/QianJinGuo/wiki-public/blob/main/moc/multi-agent-coordination.md)

@@ -26,7 +26,7 @@ coze-bridge 是扣子 3.0 这次更新的机制核心：在用户本地跑一个
 
 ### 六 Agent 接力流水线：项目即共享上下文
 
-"AI4S 研究"项目的演示说明多 Agent 协作的关键不在于模型数量，而在于共享的项目级上下文。6 个 Agent（模板 Agent、挂自动化写作技能的阿链、本地 codex）在同一项目内被 @ 点名接力：研究包、写作风格规范、历史文章、选题方案、初稿与自审结论全部沉淀在项目上下文里，一次没切窗口。对照 [多模型协作交接](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-做方案codex-写代码多模型协作怎么交接才稳.md) 那类"人肉搬运上下文"的模式，coze-bridge 把交接损耗从"人当 API"降为"项目即共享记忆"，与 [Harness 工程](../ch05/061-harness-engineering.html) 的工作现场沉淀方向一致。另一个细节是 codex 做 PPT 时内置 image-gen 调用 gpt-image-2 批量生成配图且不消耗用户 API 额度——本地 Agent 的既有工具能力被云侧任务直接复用，是桥接机制的隐性收益。
+"AI4S 研究"项目的演示说明多 Agent 协作的关键不在于模型数量，而在于共享的项目级上下文。6 个 Agent（模板 Agent、挂自动化写作技能的阿链、本地 codex）在同一项目内被 @ 点名接力：研究包、写作风格规范、历史文章、选题方案、初稿与自审结论全部沉淀在项目上下文里，一次没切窗口。对照 [多模型协作交接](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-做方案codex-写代码多模型协作怎么交接才稳.md) 那类"人肉搬运上下文"的模式，coze-bridge 把交接损耗从"人当 API"降为"项目即共享记忆"，与 [Harness 工程](../ch05/019-harness-engineering.html) 的工作现场沉淀方向一致。另一个细节是 codex 做 PPT 时内置 image-gen 调用 gpt-image-2 批量生成配图且不消耗用户 API 额度——本地 Agent 的既有工具能力被云侧任务直接复用，是桥接机制的隐性收益。
 
 ### 远程操控：Agent 走出浏览器与办公桌
 
@@ -53,7 +53,7 @@ coze-bridge 是扣子 3.0 这次更新的机制核心：在用户本地跑一个
 - [Strands 多智能体框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/strands-agents.md)
 - [OpenClaw 多智能体团队搭建](https://github.com/QianJinGuo/wiki-public/blob/main/entities/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验-v2.md)
 - [Claude Code 源码核心机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/两万字详解claude-code源码核心机制.md)
-- [Harness 工程](../ch05/061-harness-engineering.html)
+- [Harness 工程](../ch05/019-harness-engineering.html)
 - [Claude Code 大型代码库团队部署](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-large-codebase-team-deployment-agent-harness.md)
 - [Karpathy × Boris：Software 3.0 编程地图](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-boris-software3-llm-era-programming-2026.md)
 - [MOC：工作流编排](https://github.com/QianJinGuo/wiki-public/blob/main/moc/workflow-orchestration.md)

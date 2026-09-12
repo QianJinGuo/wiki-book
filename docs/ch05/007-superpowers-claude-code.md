@@ -60,7 +60,7 @@
 
 ## 相关实体
 
-- [Harness Engineering](061-harness-engineering.html)
+- [Harness Engineering](019-harness-engineering.html)
 - [Claude Code Skills Superpowers 实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-skills-superpowers-practice.md)
 - [AI Coding Agent Token 成本控制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/token-cost-control-coding-agent-devinyzeng-tencent.md)
 - [Skill 版本对比五大原则](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-version-comparison-five-principles-winty.md)
