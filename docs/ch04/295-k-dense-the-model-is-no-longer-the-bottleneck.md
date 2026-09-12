@@ -116,8 +116,6 @@
    - 技术要点：这是"模型在环"（model-in-the-loop）的具体实现——不是一次性生成，而是生成→评分→反馈→再生成的迭代循环。
    - 实践价值：对 [Harness Loop Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-loop-architecture.md) 提供了wet-lab 实验数据闭环的案例。
 
-## 实践启示
-
 1. **评估科学 AI 项目时，首先问"模型周围的系统"而非"用哪个模型"** — 在 GPT-5/Opus 4.5 时代，模型选择差异<5%，真正的价值上限由 harness 决定。优先评估数据接入、代码执行、验证机制、审计输出的完整性。
 
 2. **科学 AI harness 设计应包含四层：数据→分析→验证→审计** — 缺少任何一层都会导致"chatbot answer"而非"research result"。特别是验证层（检查候选答案而非直接输出）被普遍忽视。

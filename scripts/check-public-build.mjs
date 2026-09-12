@@ -141,9 +141,11 @@ function checkText(root, label, skip = () => false, respectIgnore = false) {
       if (skip(path)) return;
       const text = textOf(path);
       if (text === null) return;
-      for (const marker of forbiddenText) {
+    for (const marker of forbiddenText) {
         if (text.includes(marker)) errors.push(`${label}/${relative(root, path)} contains forbidden marker ${marker}`);
       }
+      // Skip QC detection scripts — their regex patterns match by design
+      if (path.includes("post-sync-qc.py") || path.includes("check-public-build")) return;
       for (const pattern of forbiddenPatterns) {
         const m = text.match(pattern);
         if (m) errors.push(`${label}/${relative(root, path)} contains forbidden QC score pattern /${m[0]}/`);

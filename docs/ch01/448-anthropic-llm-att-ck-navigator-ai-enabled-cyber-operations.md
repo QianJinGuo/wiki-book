@@ -132,8 +132,6 @@ ARiES 采**加性评分**（0-100），三个维度：
 - **可重复性**：中（数据集已匿名化以保护 actor；评估方法可复用）
 - **配套工具**：[LLM ATT&CK Navigator 交互界面](http://red.anthropic.com/2026/attack-navigator/navigator.html)
 
-## 实践启示
-
 1. **重新设计威胁评估框架**：从"技术数量和复杂度"转向"scaffolding 编排自主性"和"AI 使用模式"——关注行为者如何组织 AI，而非仅看技术栈
 2. **部署加性风险评分**：将 ARiES 方法论引入内部检测系统，确保 partial-enablement 模式（高能力 + 高后果但意图不清）不被乘法模型归零
 3. **推动 MITRE ATT&CK 扩展**：主动向 MITRE 提交"自主编排行为"的分类提案，参与定义下一代框架以捕获 AI-native 攻击模式

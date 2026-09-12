@@ -87,8 +87,6 @@ Trail of Bits 报告称攻击使用的不是高级技术，而是"标准技巧 +
 4. **prompt injection 检测 ≠ 恶意代码扫描** — 需要双载体检测
 5. **scanner 开源 ≠ 攻击者不能利用** — 反而暴露检测规则给攻击者
 
-## 实践启示（对 skill 开发者）
-
 1. **避免从不明 marketplace 安装 skill** — 即使有 scanner
 2. **手动 review SKILL.md 的 prompt 段** — 检查自然语言部分是否有可疑指令
 3. **运行时 sandbox 不可省略** — 假设任何 skill 都可能 malicious
@@ -138,8 +136,6 @@ Trail of Bits 明确指出 skill 攻击是 software supply chain 攻击的进化
 ### 深层矛盾：LLM-based scanner 的内生困境
 
 Cisco scanner 使用了相对强的模型（Sonnet 4.6），但依然被 prompt injection 欺骗。这揭示了一个深层矛盾：**LLM-based scanner 的判断能力受限于其自身的 agentic capability**——它无法像真实攻击者那样质疑 SKILL.md 中声明的前提（"这是企业内部网络"），而是被语言的表层合理性所说服。这与 [Prompt Injection Defense](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/prompt-injection-defense.md) 中描述的"LLM 无法自主识别被注入的指令"问题本质相同。
-
-## 实践启示
 
 ### 对 Skill Marketplace 建设者
 

@@ -269,8 +269,6 @@ Source: [raw archive](https://huggingface.co/blog/torch-mlp-fusion)
 
 **RecSys 推理优化的独特挑战来自 user-candidate 不对称性：** 与传统 DNN 不同，RecSys 的 user embeddings 对所有 candidate 都相同，但 candidate 数量（10-10,000+）远大于 user 数量，导致 broadcast 复制开销随 candidate 数量线性增长。这个问题在 CV/NLP 任务中不存在，因为它们的 batch 维度天然对称。理解这个**领域特有的不对称性**，是设计高效 RecSys 系统的前提。
 
-## 实践启示
-
 - **遇到性能瓶颈时，先判断是 IO-bound 还是 compute-bound**：如果 kernel 已经是 compute-bound，继续优化算法或数据布局才有意义；如果是 IO-bound，优化方向应该是减少内存访问或提高内存访问效率，而非增加计算量。
 
 - **Kernel 优化采用渐进式策略**：先实现功能正确的版本，再逐步优化——从基础 matmul 到 decomposition，再到 memory alignment，最后做 fusion。一次性写出最优 kernel 既不现实也不高效。

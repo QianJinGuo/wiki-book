@@ -131,8 +131,6 @@ Agentic 场景引入了新的模型选型维度：推理延迟（agent 需要多
 ### 5. NVIDIA 在 AI 价值链的纵向整合
 NVIDIA 正在从 GPU 供应商向"GPU + 模型 + 平台"供应商转变——Nemotron 模型 + NIM 推理引擎 + SageMaker 集成，形成纵向整合栈。
 
-## 实践启示
-
 ### 1. Agentic 场景：评估推理延迟而非只看 benchmark
 Agentic 工作负载的瓶颈是推理延迟而非一次性准确率。评估模型时加入"每秒推理调用数"指标。
 

@@ -103,8 +103,6 @@ Text layer 作为"staging ground"：先用它测试和提炼行为假设，再�
 - yoonho text-optimization = 理论立场（text 作为合法学习目标）
 - 共存：理论 → 实践，跨层 cross-link
 
-## 实践启示
-
 1. **建立信息路由意识**：不是所有信息都应写入 weights — volatile/local/auditable 信息（用户偏好、临时 context、正在测试的假设）应留在 text layer，只有 stable/generalizable 的知识才值得 amortization 成本
 2. **在小样本场景优先 text optimization**：当训练数据稀缺或获取成本高时（如垂类 Agent、冷启动），先通过 text layer eliciting 已有能力，而非立即尝试 fine-tuning
 3. **设计可检视的 text artifact**：text layer 的核心优势是 auditable — 确保 text update 可被检查、roll back 和 composition，这是 weights update 无法提供的透明度

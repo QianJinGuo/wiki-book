@@ -383,8 +383,6 @@ Nova Sonic 通过 AgentCore Gateway 直接调用 MCP 服务器上的工具，无
 - **MCP（Model Context Protocol）**：连接 agent 到工具的协议。AgentCore Gateway 托管 MCP 服务器作为托管端点，语音模型通过 Gateway ARNs 访问工具。
 - **A2A（Agent-to-Agent）**：连接 agent 到其他 agent 的协议。在 AgentCore Runtime 上，不同框架构建的智能体可以共享上下文和推理，使用共同格式通信。
 两者是正交的关系：MCP 解决「agent 如何调用外部功能」，A2A 解决「agent 如何与其他 agent 协作」。
-
-## 实践启示
 ### 对语音 AI 产品经理
 1. **选择正确的集成模式**：
 

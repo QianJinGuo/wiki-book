@@ -153,8 +153,6 @@ Vijay Viswanathan 等人的研究论文，揭示了奖励模型（Reward Model�
 - CAI（Constitutional AI）中的奖励模型同样受过敏感性影响
 - **Process Reward Models (PRM)**：PRM 对逐步推理的评分更易受过敏感性影响，离散化可能特别有价值
 
-## 实践启示
-
 - **奖励模型开发者**：在评估指标中加入特异性（specificity），不仅看准确度
 - **RLHF 工程师**：在 PPO 训练前对奖励模型输出进行离散化，可作为标准预处理步骤
 - **Agent 训练**：基于 RL 的 Agent 训练中，离散化奖励有助于减少策略振荡

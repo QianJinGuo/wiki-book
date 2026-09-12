@@ -105,7 +105,6 @@ Rocket Close（底特律，Rocket Companies 子公司的 title agency + appraisa
 - [Agentops Operationalize Agentic Ai Amazon Bedrock](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-amazon-bedrock.md) — Bedrock 上 agent 的 production 化路径，包含监控 / 审计 / 部署最佳实践
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/tool-use-mcp-patterns.md)
-## 实践启示
 
 1. **金融 AI 落地标准路径**：从"信息查询"场景切入（减少重复性咨询）→ 验证后扩展到"流程引导"（各州 title exam checklist）→ 最后才是"辅助决策"（风险评估）
 2. **MCP 工具设计原则**：工具名用动词 + 名词（如 `get_order_status`），docstring 用自然语言描述"何时调用、返回什么"，避免技术实现细节暴露给 Agent
