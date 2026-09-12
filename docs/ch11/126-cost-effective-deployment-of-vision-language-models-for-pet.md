@@ -52,8 +52,6 @@ Furbo 的系统架构采用双层设计：
 - [Reinforcing Recursive Language Models | alphaXiv](../ch01/391-reinforcing-recursive-language-models-alphaxiv.html)
 - [Language Models and Meaning](https://github.com/QianJinGuo/wiki-public/blob/main/entities/stochastic-parrot-language-models-and-meaning.md)
 
-→ 原文存档
-
 - [llava-onevision-2：全帧率视频理解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llava-onevision-2-full-frame-rate-vlm.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/aws-cloud-ai-infrastructure.md)
 

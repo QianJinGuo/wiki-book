@@ -16,8 +16,6 @@ Reinforcement Fine-Tuning can use any reward signal, straightforward hand‑craf
 - [Aws Sagemaker Ai Agent Guided Workflows Finetuning](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
 - [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagemaker.md)
 
-→ 原文存档
-
 - [stop hand-tuning kernels: how neuron agentic development acc](https://github.com/QianJinGuo/wiki-public/blob/main/entities/stop-hand-tuning-kernels-how-neuron-agentic-development-acce.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/llm-core-technology.md)

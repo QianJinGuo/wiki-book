@@ -135,6 +135,4 @@ env["NCCL_IB_DISABLE"] = "1"  # 禁用IB，使用EFA
 - [Overcoming Reward Signal Challenges Verifiable Rewards Based Reinforcement Learn](https://github.com/QianJinGuo/wiki-public/blob/main/entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/llm-core-technology.md)
 
-→ 原文存档
-
 ---

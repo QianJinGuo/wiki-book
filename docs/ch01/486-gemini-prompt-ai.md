@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 9.6KB | `entities/gemini-deep-guide-prompt.md`
 
-→ 原文存档
-
 ## 摘要
 
 作者一帆（微信公众号"山川和森林的回忆"，2026-01-19）从"V1 摘要"（脑过无痕）升级到"V2 深度导读"，给出一份针对 Gemini 优化的导读生成器 Prompt。核心约束是**永远不要高度浓缩**——保留论证过程，不替换为结论。Prompt 用 `<identity>` / `<core_principles>` / `<input_contract>` / `<thinking_or_output_modes>` / `<output_structure>` / `<constraints>` 六个 XML 标签组织，把"导读"与"摘要"在行为上彻底区分开。
@@ -127,8 +125,6 @@ Prompt 提供了三种输出模式：
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
 - "Prompt 工程模式"
 - [Prompt Engineering Fundamentals](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/prompt-engineering-fundamentals.md)
-
-→ 原文存档
 
 ---
 

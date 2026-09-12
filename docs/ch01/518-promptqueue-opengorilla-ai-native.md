@@ -18,8 +18,6 @@
 - [Claude Code Large Codebase Harness Configuration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-large-codebase-harness-configuration.md)
 - [Openai Skills Shell Compaction Agent Primitives](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openai-skills-shell-compaction-agent-primitives.md)
 
-→ 原文存档
-
 ## 一、立项背景（Purpose）
 
 ### 1.1 解决的 3 个核心痛点

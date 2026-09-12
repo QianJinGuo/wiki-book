@@ -14,8 +14,6 @@
 - [Better Harness Eval Trace Methodology](https://github.com/QianJinGuo/wiki-public/blob/main/entities/better-harness-eval-trace-methodology.md)
 - [Wow Harness V3 Governance Protocol](https://github.com/QianJinGuo/wiki-public/blob/main/entities/wow-harness-v3-governance-protocol.md)
 
-→ 原文存档
-
 ## 深度分析
 
 Karpathy 的 Autoresearch 证明自动优化「能跑起来」，但 Better-Harness 揭示了更艰难的一半：当评价信号（eval）错了，系统会沿着错误方向「跑得更快」。这个核心矛盾的根源在于 eval 与 prompt/工具/工作流之间的关系本质上不同于测试答案与程序的关系——eval 是方向信号，而方向一旦偏离，优化过程会在错误的方向上积累错误的进步。传统 ML 中梯度反向传播可以即时修正方向错误，但 harness 优化依赖离散的行为信号，无法提供类似的即时修正机制 。

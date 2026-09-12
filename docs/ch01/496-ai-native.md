@@ -2,8 +2,6 @@
 
 > 📊 Level ⭐⭐⭐⭐ | 8.8KB | `entities/amap-ai-native-end-to-end-infrastructure.md`
 
-→ 原文存档
-
 ## 摘要
 
 高德技术 2026 年提出的 AI-Native 端云一体基建：在超级应用场景（数亿用户、数百万行代码、数十团队协同）下，通过代码+知识规范+Skills 三层结构和服务端 skillforge Pipeline，把每一个后端服务从源码自动转译为 Agent 可消费、可验证、可持续演进的标准 Skill，破解"AI 越写越快，系统却越来越乱"的悖论。

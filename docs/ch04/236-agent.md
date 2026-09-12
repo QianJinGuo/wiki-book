@@ -52,8 +52,6 @@ Tracing 让成本-质量取舍不再停留在架构师脑中，而变成产品�
 3. **在产品评审中引入 Tracing 数据**：让非技术人员也能理解成本-质量取舍
 4. **警惕"demo 聪明，线上昂贵"的陷阱**：8 次检索 + 3 次 rerank + 5 次模型调用可能是过度优化
 
-→ 原文存档
-
 ---
 ## 关联
 - 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)

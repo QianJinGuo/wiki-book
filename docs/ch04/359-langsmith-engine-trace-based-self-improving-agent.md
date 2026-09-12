@@ -3,7 +3,6 @@
 > 📊 Level ⭐⭐⭐⭐⭐ | 26.8KB | `entities/langsmith-engine-self-improving-agent-trace-based.md`
 
 > 来源：分析 LangChain LangSmith Engine 的工程化自改进路径——从线上 trace 自动发现问题并转化为 issue / evaluator / 回归测试
-→ 原文存档
 
 ## 摘要
 

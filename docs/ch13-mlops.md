@@ -1062,7 +1062,6 @@ Agent 时代研究焦点从单次生成转向持续运行，三个关键事实�
 
 ## 相关实体
 - [清华 ai 自进化组织研究报告：ai 业务资产化与公司形态重构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tsinghua-ai-self-evolving-organization-corp-paradigm.md)
-→ 原文存档
 
 ---
 
