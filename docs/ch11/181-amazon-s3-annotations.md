@@ -1,6 +1,6 @@
 # Amazon S3 Annotations：对象级丰富可查询元数据
 
-> 📊 Level ⭐⭐⭐ | 10.6KB | `entities/amazon-s3-annotations-queryable-context.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 10.6KB | `entities/amazon-s3-annotations-queryable-context.md`
 
 Amazon S3 推出 Annotations 功能，允许直接在对象上附加大量结构化元数据，无需维护独立的元数据库。该功能面向 AI Agent 工作流设计——Agent 需要在无人干预的情况下发现、理解和处理数据。
 
@@ -120,6 +120,8 @@ aws s3api delete-object-annotation \
 5. **为 MCP Server 集成预留注释 schema**：如果你在构建 Agent 工作流，提前定义 Annotations 的 schema（哪些字段是 Agent 需要读取的、哪些是 Agent 需要写入的），避免后期 schema 演进的痛苦。
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

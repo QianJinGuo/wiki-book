@@ -1,6 +1,6 @@
 # AgentCore Managed Harness
 
-> 📊 Level ⭐⭐⭐ | 10.9KB | `entities/agentcore-harness.md`
+> 📊 Level ⭐⭐⭐⭐ | 10.9KB | `entities/agentcore-harness.md`
 
 ## Overview
 亚马逊云科技 2026 年 4 月 24 日正式发布的托管 Harness 平台。核心理念：**你告诉 Agent 做什么，平台托管其余一切**。

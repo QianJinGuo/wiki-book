@@ -1,6 +1,6 @@
 # Enterprise Software Moats in the Agent Era — 系统性护城河分析框架
 
-> 📊 Level ⭐⭐⭐ | 11.5KB | `entities/enterprise-software-moats-agent-era.md`
+> 📊 Level ⭐⭐⭐⭐ | 11.5KB | `entities/enterprise-software-moats-agent-era.md`
 
 ## 核心问题
 当软件去掉界面，剩下的是什么？和 PostgreSQL + API 本质区别是什么？SaaS 时代让软件"难以被替换"的东西，在 Agent 时代还成立吗？
@@ -102,7 +102,7 @@ SaaS 时代记录系统几乎没有飞轮效应，因为软件是单向记录工
 - [foundation capital agent era six insights](293-foundation-capital-agent-era-six-insights.html)
 - [Agent 时代架构师技能指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-era-architect-skills-guide.md)
 - [快手首个打工人Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kuaishou-worker-agent-desktop-software.md)
-- [from](../ch01/432-from-system-of-record-to-system-of-intelligence.html)
+- [from](../ch01/436-from-system-of-record-to-system-of-intelligence.html)
 - [meet customers where they are: agentforce contact center now](https://github.com/QianJinGuo/wiki-public/blob/main/entities/meet-customers-where-they-are-agentforce-contact-center-now-offers-whatsapp-voice.md)
 
 ---

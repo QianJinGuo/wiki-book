@@ -1,6 +1,6 @@
 # Data modeling patterns for Amazon Quick Sight multi-dataset relationships
 
-> 📊 Level ⭐⭐⭐ | 5.1KB | `entities/data-modeling-patterns-for-amazon-quick-sight-multi-dataset-.md`
+> 📊 Level ⭐ | 5.1KB | `entities/data-modeling-patterns-for-amazon-quick-sight-multi-dataset-.md`
 
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/data-modeling-patterns-for-amazon-quick-sight-multi-dataset-relationships)
 
@@ -65,6 +65,8 @@ Total sales by customer segment and region:
         SUM
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

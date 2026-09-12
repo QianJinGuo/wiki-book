@@ -77,7 +77,6 @@ Annie Vella 研究：supervisory engineering work（监督式工程工作）
 ## 元数据
 - **来源**: WeChat（架构师/JiaGouX）
 - **原始发布**: 2026-05-07
-- **评分**: review_value=8, review_confidence=8, score=64
 
 ## 相关实体
 

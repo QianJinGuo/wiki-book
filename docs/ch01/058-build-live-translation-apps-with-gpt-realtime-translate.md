@@ -1,6 +1,6 @@
 # Build Live Translation Apps with gpt-realtime-translate
 
-> 📊 Level ⭐⭐⭐ | 7.1KB | `entities/build-live-translation-apps-with-gpt-realtime-translate.md`
+> 📊 Level ⭐ | 7.1KB | `entities/build-live-translation-apps-with-gpt-realtime-translate.md`
 
 > -> [原文存档](https://developers.openai.com/cookbook/examples/voice_solutions/realtime_translation_guide)
 

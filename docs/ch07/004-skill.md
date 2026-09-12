@@ -1,6 +1,6 @@
 # 重新定义Skill开发：保姆级教程&一站式开发助手发布
 
-> 📊 Level ⭐⭐⭐ | 5.0KB | `entities/skill-development-guide-aliyun-2026.md`
+> 📊 Level ⭐ | 5.0KB | `entities/skill-development-guide-aliyun-2026.md`
 
 > 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.8**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/skill-development-guide-aliyun-2026.md`，一手来源仍见下方 sources。

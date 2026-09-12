@@ -1,6 +1,6 @@
 # Agentic Robot Policy Self-Improvement in the Real World
 
-> 📊 Level ⭐⭐⭐ | 9.0KB | `entities/nvidia-enpire-agentic-robot-policy-self-improvement.md`
+> 📊 Level ⭐ | 9.0KB | `entities/nvidia-enpire-agentic-robot-policy-self-improvement.md`
 
 > 原文存档：[原文存档](https://research.nvidia.com/labs/gear/enpire/)
 
@@ -171,6 +171,8 @@ Zip tie cutting
 Real-world t
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

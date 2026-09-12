@@ -55,7 +55,7 @@ Multica 的核心创新在于将"管理层"从框架层抽离出来，成为独�
 - [Anthropic Claude Managed Agents 平台正式发布](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-claude-managed-agents-platform-2026.md)
 - [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-官方-agent-harness-平台claude-managed-agents-完整指南.md)
 - [Claude Managed Agents 官方 Harness 平台指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-claude-managed-agents-guide.md)
-- [claude managed agents](../ch01/104-claude-managed-agents.html)
+- [claude managed agents](../ch01/096-claude-managed-agents.html)
 - [claude managed agents official](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-managed-agents-official.md)
 
 ---

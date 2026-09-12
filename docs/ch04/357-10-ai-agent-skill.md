@@ -1,6 +1,6 @@
 # 10篇论文看懂AI Agent Skill：表示、执行、评估与进化
 
-> 📊 Level ⭐⭐⭐ | 26.9KB | `entities/skill-formal-theory-survey-10papers.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 26.9KB | `entities/skill-formal-theory-survey-10papers.md`
 
 [Skill Formal Theory Survey 10Papers](https://mp.weixin.qq.com/s/Z2fFNWXgRHq0VogIRD69Yg])
 
@@ -160,6 +160,8 @@ P_i = (action, resource, condition, effect)
 对相似但参数不同的候选序列进行聚类，泛化为参数化技能模板。
 示例：
 
+- "打开`user.controller.ts` → 添加`POST /users`路由 → 打开`user.service.ts` → 添加`createUser`方法"
+- "打开`product.controller.ts` → 添加`POST /products`路由 → 打开`product.service.ts` → 添加`createProduct`方法"
 → 聚类为技能模板"添加CRUD端点"，参数化为实体名称。
 **阶段3：质量过滤**
 

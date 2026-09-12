@@ -1,6 +1,6 @@
 # Hidden Technical Debt of AI Systems: Agent Harness
 
-> 📊 Level ⭐⭐⭐ | 3.8KB | `entities/hidden-technical-debt-agent-harness.md`
+> 📊 Level ⭐ | 3.8KB | `entities/hidden-technical-debt-agent-harness.md`
 
 > **Background**：本文基于 leehanchung 2026-05-08 发表的深度技术分析，系统梳理了 AI Agent 系统中"Harness 层"的技术债务问题。文章以 Google 经典论文《Hidden Technical Debt in Machine Learning Systems》为类比，指出 Agent 系统中真正的工程复杂度不在模型本身，而在围绕模型的 Harness 层——system prompts、tool wrappers、planner-executor loops、retry policies、context compaction 策略等。
 
@@ -48,10 +48,15 @@ Agent 系统的 Harness 层（系统提示词、工具包装器、规划-执行�
 3. **模型升级时应评估 Harness 兼容性**，而非只关注模型本身的 benchmark
 4. **可观测性是 Harness 工程的基础**——没有 trace 和 log，调试 harness 问题如同大海捞针
 
+## 参考
+
 → [原文存档](https://leehanchung.github.io/blogs/2026/05/08/hidden-technical-debt-agent-harness)
 → [Harness Engineering 框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- 相关: Agent 架构
 
 ---
 

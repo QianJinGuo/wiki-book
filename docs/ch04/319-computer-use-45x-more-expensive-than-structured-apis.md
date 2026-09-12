@@ -1,6 +1,6 @@
 # Computer Use 45x More Expensive Than Structured APIs
 
-> 📊 Level ⭐⭐⭐ | 9.8KB | `entities/computer-use-45x-more-expensive-than-structured-apis.md`
+> 📊 Level ⭐⭐⭐⭐ | 9.8KB | `entities/computer-use-45x-more-expensive-than-structured-apis.md`
 
 ## 核心要点
 

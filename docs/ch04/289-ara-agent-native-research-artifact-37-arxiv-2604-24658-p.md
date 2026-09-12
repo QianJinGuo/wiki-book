@@ -1,6 +1,6 @@
 # ARA — Agent-Native Research Artifact（37 作者，arXiv 2604.24658，PDF 范式终结提案）
 
-> 📊 Level ⭐⭐⭐ | 13.6KB | `entities/ara-agent-native-research-artifact-37authors.md`
+> 📊 Level ⭐⭐⭐⭐ | 13.6KB | `entities/ara-agent-native-research-artifact-37authors.md`
 
 ## ARA — Agent-Native Research Artifact
 
@@ -46,7 +46,7 @@ ARA 类工作推动的是整个研究工具链的演进——从文献搜索到�
 ## 相关实体
 - [Kimi K2 6 Tidb Agent Database](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kimi-k2-6-tidb-agent-database.md)
 - [Kimi K2 Tidb Agent Database Huangdongxu 20260513](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kimi-k2-tidb-agent-database-huangdongxu-20260513.md)
-- [Anthropic Multi Agent Research System](233-anthropic-multi-agent-research-system.html)
+- [Anthropic Multi Agent Research System](232-anthropic-multi-agent-research-system.html)
 - [Gaode Ai Native 7X24 Pipeline Self Healing](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gaode-ai-native-7x24-pipeline-self-healing.md)
 - [Deeppotential Alibabacloud Agentrun Scientific Ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deeppotential-alibabacloud-agentrun-scientific-ai.md)
 
@@ -167,6 +167,18 @@ ARA 本身是结构化的 — "超参数有没有报告""这个 claim 有没有 
 - **ARA 区别**：解决的是**科学知识的承载格式**，不是科学发现流程本身
 
 ## 核心金句
+
+- "**我们今天以 PDF 写论文的方式，已经持续了三百多年**"
+- "**真实研究是一棵分叉的树；PDF 只汇报最后跑通的那条主干**"
+- "**对 agent 来说，pivot/dead_end/负面结果对下一个 AI 等于从未存在过**"
+- "**'足以说服' 与 '足以执行' 之间的鸿沟**"
+- "**AI agent 复现一篇论文所需的信息，有一半以上根本不在 PDF 里**"
+- "**把论文从 compiled view 变回持续演化、有结构的研究知识**"
+- "**整个 artifact 在后台自己长出来**"
+- "**人类审稿人则把精力留给只有人才能判断的事：重要性、新颖性、品味**"
+- "**任务越难，ARA 优势越大**"
+- "**保留多少是站在巨人肩膀上，保留多少是替巨人套上枷锁**"
+- "**对最强 agent 需要一套更精细的'忘记机制'**"
 
 ## 第 2 来源 — PaperWeekly：AI for Science 下半场
 

@@ -1,6 +1,6 @@
 # Anthropic 最新博客：MCP 没死，它又来了
 
-> 📊 Level ⭐⭐⭐ | 14.2KB | `entities/anthropic-mcp-revisited-tool-search-code-orchestration.md`
+> 📊 Level ⭐⭐⭐⭐ | 14.2KB | `entities/anthropic-mcp-revisited-tool-search-code-orchestration.md`
 
 [Anthropic Mcp Revisited Tool Search Code Orchestration](https://mp.weixin.qq.com/s/Sz2hzXiNCyf1YNzPbeUo5Q)
 

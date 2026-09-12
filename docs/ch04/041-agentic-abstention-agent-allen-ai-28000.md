@@ -1,6 +1,6 @@
 # Agentic Abstention—Agent 能及时停止吗？华盛顿大学/Allen AI 28000+ 任务基准评测
 
-> 📊 Level ⭐⭐⭐ | 3.6KB | `entities/agentic-abstention-washington-allen-2026.md`
+> 📊 Level ⭐ | 3.6KB | `entities/agentic-abstention-washington-allen-2026.md`
 
 ## Agentic Abstention—Agent 能及时停止吗？
 
@@ -42,6 +42,9 @@
 → [原文存档](https://mp.weixin.qq.com/s/NKN8GmtO4lc5f9TIG-Komg)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- 相关: Agent 架构
 
 ---
 

@@ -1,6 +1,6 @@
 # AutoResearch 分类法：四种 Agent 循环设计与四维分析框架
 
-> 📊 Level ⭐⭐⭐ | 15.3KB | `entities/autoresearch-taxonomy-chengzihong-chengzihong.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 15.3KB | `entities/autoresearch-taxonomy-chengzihong-chengzihong.md`
 
 → [原文存档](https://zhuanlan.zhihu.com/p/2037184827225527815)
 
@@ -145,7 +145,7 @@
 ## 相关实体
 
 - [Yann Dubois Openai Post Training Matt Turck Interview](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yann-dubois-openai-post-training-matt-turck-interview.md)
-- [What Comes Next With Open Models](../ch01/408-what-comes-next-with-open-models.html)
+- [What Comes Next With Open Models](../ch01/412-what-comes-next-with-open-models.html)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 - Multi-Agent Orchestration
 - **Monte Carlo Tree Search**

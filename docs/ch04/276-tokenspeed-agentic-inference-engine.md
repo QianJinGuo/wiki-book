@@ -1,6 +1,6 @@
 # Tokenspeed Agentic Inference Engine
 
-> 📊 Level ⭐⭐⭐ | 15.3KB | `entities/tokenspeed-agentic-inference-engine.md`
+> 📊 Level ⭐⭐⭐⭐ | 15.3KB | `entities/tokenspeed-agentic-inference-engine.md`
 
 ## Overview
 

@@ -1,6 +1,6 @@
 # Beyond Vibe Coding — Directed Generation as Design Methodology
 
-> 📊 Level ⭐⭐⭐ | 3.9KB | `entities/beyond-vibe-coding-directed-generation-design-uxmag.md`
+> 📊 Level ⭐ | 3.9KB | `entities/beyond-vibe-coding-directed-generation-design-uxmag.md`
 
 > **Background**: Based on UX Magazine 2026-06-25 article redefining AI-assisted design workflow from a designer's perspective, proposing "directed generation" as the precise term replacing "vibe coding".
 
@@ -41,6 +41,8 @@ This article is fundamentally about **how humans direct AI generation** — dire
 → [source archive](https://uxmag.com/articles/beyond-vibe-coding-a-designers-case-for-directed-generation)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

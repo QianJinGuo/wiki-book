@@ -1,6 +1,6 @@
 # 给 Hermes 装上显微镜：Agent 执行全知道
 
-> 📊 Level ⭐⭐⭐ | 15.7KB | `entities/hermes-observability-aliyun.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 15.7KB | `entities/hermes-observability-aliyun.md`
 
 [原文存档](https://mp.weixin.qq.com/s/XQqbHr7EjH906vQhX8b6Cw)
 

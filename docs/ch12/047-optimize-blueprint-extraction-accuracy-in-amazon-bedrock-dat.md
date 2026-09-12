@@ -1,6 +1,6 @@
 # Optimize blueprint extraction accuracy in Amazon Bedrock Data Automation
 
-> 📊 Level ⭐⭐⭐ | 10.0KB | `entities/optimize-blueprint-extraction-accuracy-in-amazon-bedrock-dat.md`
+> 📊 Level ⭐⭐⭐⭐ | 10.0KB | `entities/optimize-blueprint-extraction-accuracy-in-amazon-bedrock-dat.md`
 
 Amazon Bedrock Data Automation (BDA) 的 **Blueprint Instruction Optimization** 是一个 2026-06 推出的特性，自动 refine blueprint extraction instructions 来提升 IDP 流水线的精度。开发者只需要提供 3-10 个 example 文档 + ground truth，BDA 在数分钟内完成 instruction 优化（无需 model fine-tuning）。
 
@@ -79,6 +79,9 @@ Amazon Bedrock Data Automation (BDA) 的 **Blueprint Instruction Optimization** 
 - [automate-schema-generation-for-intelligent-document-processing](https://github.com/QianJinGuo/wiki-public/blob/main/entities/automate-schema-generation-for-intelligent-document-processing.md) — schema 自动生成（与 blueprint 优化互补：先生成 schema，再优化 instruction）
 - [amazon-bedrock-agentcore-runtime-deep-dive-and-scenario-analysis](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-agentcore-runtime-deep-dive-and-scenario-analysis.md) — Bedrock AgentCore 平台深度（非 BDA，但同 Bedrock 体系）
 
+## 原文链接
+
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/optimize-blueprint-extraction-accuracy-in-amazon-bedrock-data-automation)
 
 ## 深度分析
 

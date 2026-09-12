@@ -1,6 +1,6 @@
 # Useful Memories Become Faulty When Continuously Updated by LLMs
 
-> 📊 Level ⭐⭐⭐ | 7.4KB | `entities/useful-memories-become-faulty-when-continuously-updated-by-llms.md`
+> 📊 Level ⭐ | 7.4KB | `entities/useful-memories-become-faulty-when-continuously-updated-by-llms.md`
 
 → [原文存档](https://dylanzsz.github.io/faulty-memory/)
 

@@ -1,10 +1,10 @@
 # The Google Capital Company
 
-> 📊 Level ⭐⭐⭐ | 18.2KB | `entities/https-stratechery-com-2026-the-google-capital-company.md`
+> 📊 Level ⭐ | 18.2KB | `entities/https-stratechery-com-2026-the-google-capital-company.md`
 
 ## 概述
 
-Newsletter 评分 7×7=49，stars=4，来源 URL: https://stratechery.com/2026/the-google-capital-company/
+Newsletter 评分 7×7=49，来源 URL: https://stratechery.com/2026/the-google-capital-company/
 
 ## 正文要点
 

@@ -1,10 +1,9 @@
 # Amazon Turns Alexa Into Its Next Storefront
 
-> 📊 Level ⭐⭐⭐ | 7.4KB | `entities/amazon-turns-alexa-into-its-next-storefront.md`
+> 📊 Level ⭐ | 7.4KB | `entities/amazon-turns-alexa-into-its-next-storefront.md`
 
 ## 核心要点
 - 来源：https://www.pymnts.com/news/retail/2026/amazon-bets-on-voice-as-agentic-commerces-winning-ai-interface/
-
 ## 相关实体
 - [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](https://github.com/QianJinGuo/wiki-public/blob/main/entities/akamai-acquires-israeli-ai-browser-security-startup-layerx-for-205-million-in-ca.md)
 - [Igor Babuschkin Seeks Up To 1 Billion For River Ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/igor-babuschkin-seeks-up-to-1-billion-for-river-ai.md)

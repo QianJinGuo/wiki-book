@@ -3,7 +3,7 @@
 > 📊 Level ⭐⭐⭐ | 5.2KB | `entities/codex-can-now-control-other-desktop-devices-via-computer-use.md`
 
 ## 核心要点
-- - OpenAI 正在开发 Codex 远程控制功能，即使笔记本锁屏或休眠状态也能工作 
+- OpenAI 正在开发 Codex 远程控制功能，即使笔记本锁屏或休眠状态也能工作 
 - ChatGPT 移动端已于 2026 年 5 月 14 日上线远程控制功能，支持 iPhone 和 Android 用户控制 Mac 上的 Codex 桌面应用 
 - 当前瓶颈在于 Computer Use 本身——需要设备处于解锁且唤醒状态才能查看屏幕、移动光标和输入内容 
 - OpenAI 还在探索连接和控制运行 Codex 应用的其他桌面设备，如在 Mac Mini 上安装并从主设备直接操作 

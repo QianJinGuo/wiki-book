@@ -1,6 +1,6 @@
 # How to Build an AI-Native Startup
 
-> 📊 Level ⭐⭐⭐ | 10.0KB | `entities/ai-native-startup-cyberfund-2026.md`
+> 📊 Level ⭐⭐⭐⭐ | 10.0KB | `entities/ai-native-startup-cyberfund-2026.md`
 
 ## 摘要
 
@@ -99,7 +99,7 @@ Gershuni 的核心洞察是：模型是锅，context 是你和你业务之间的
 
 - [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
-- [Karpathy Vibe Coding Agentic Engineering](009-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy Vibe Coding Agentic Engineering](105-karpathy-vibe-coding-agentic-engineering.html)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
 - [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/两万字详解claude-code源码核心机制.md)

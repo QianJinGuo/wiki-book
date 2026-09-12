@@ -1,6 +1,6 @@
 # Introducing Claude apps gateway for AWS
 
-> 📊 Level ⭐⭐⭐ | 7.2KB | `entities/introducing-claude-apps-gateway-for-aws.md`
+> 📊 Level ⭐ | 7.2KB | `entities/introducing-claude-apps-gateway-for-aws.md`
 
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/introducing-claude-apps-gateway-for-aws)
 
@@ -54,6 +54,10 @@ The gateway handles five core responsibilities:
 - 集中 vs 直连 tradeoff：集中 = 统一治理但共享基础设施、无原生 Bedrock 特性；直连 = 独立 quota + 全特性但丢失 per-developer 治理
 
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/deploying-anthropic-claude-apps-gateway-for-aws-for-enterprise-workloads)
+
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- 相关: [AI Gateways vs MCP Gateways](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-gateways-vs-mcp-gateways-what-security-teams-need-to-know.md)
 
 ---
 

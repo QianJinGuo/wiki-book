@@ -1,6 +1,6 @@
 # Codex /goal：长任务Agent的目标运行时
 
-> 📊 Level ⭐⭐⭐ | 16.1KB | `entities/codex-goal-agent-runtime.md`
+> 📊 Level ⭐⭐⭐⭐ | 16.1KB | `entities/codex-goal-agent-runtime.md`
 
 ## 核心论点
 `/goal` 把一个长期目标放进了 Codex 的**运行时里**：目标有状态，过程有记账，完成要审计，预算到了要收束。
@@ -84,8 +84,8 @@ budget_limit 模板：到点了，别开新工作，把进展、剩下的事、�
 - [原文存档：Codex /goal 实现拆解](https://mp.weixin.qq.com/s/7vqPgUmfrpIHtf__Z4M_KA)
 
 ## 相关实体
-- [Codex /goal: The Six-Hour Run That Survived a Five-Hour Pause](../ch09/082-codex-goal-six-hour-run.html)
-- [Cline releases open-source agent runtime SDK](../ch01/541-cline-releases-open-source-agent-runtime-sdk.html)
+- [Codex /goal: The Six-Hour Run That Survived a Five-Hour Pause](../ch09/081-codex-goal-six-hour-run.html)
+- [Cline releases open-source agent runtime SDK](../ch01/545-cline-releases-open-source-agent-runtime-sdk.html)
 - [Cline releases open-source agent runtime SDK](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cline-open-source-agent-runtime-sdk.md)
 
 - [Openai Symphony Codex Orchestration Linear Control Plane](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openai-symphony-codex-orchestration-linear-control-plane.md)

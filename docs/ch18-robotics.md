@@ -30,7 +30,7 @@ AI 最终要从屏幕走进物理世界。
 
 ## Ch18.001 NVIDIA Isaac Lab + Amazon SageMaker AI：机器人强化学习训练基础设施（Humanoid RL Scale-up）
 
-> 📊 Level ⭐⭐⭐ | 5.9KB | `entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md`
+> 📊 Level ⭐ | 5.9KB | `entities/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md`
 
 > 本页原内容在 2026-09-07 质量闭环中判定为 **thin-0.78**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/nvidia-isaac-lab-sagemaker-robot-rl-humanoid.md`，一手来源仍见下方 sources。
@@ -60,7 +60,7 @@ AI 最终要从屏幕走进物理世界。
 - [阿里云 MSE AI 任务调度 + Agent Sandbox：动态休眠/唤醒 OpenClaw Agent 成本下降 90%+](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aliyun-mse-ai-task-scheduling-agent-sandbox-cost-90-percent.md) — 休眠唤醒短条borderline
 - [腾讯云Agent Memory：Mermaid无限画布×上下文卸载](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tencentdb-agent-memory-context-offloading.md) — Mermaid画布上下文卸载
 - [小刘商业 Agent 增强层通用基座](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-xiaolaoliu-business-agent-augmentation-layer-general-base-20260606.md) — 基座+增强层论点短条
-- [Giving your AI a Job Interview](ch11/101-giving-your-ai-a-job-interview.html) — Mollick评估三重困境+三种路径
+- [Giving your AI a Job Interview](ch11/099-giving-your-ai-a-job-interview.html) — Mollick评估三重困境+三种路径
 - [我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-autoresearch-software-development-niaowo.md) — AutoResearch迁移软开+交叉审核
 
 ## 延伸导航
@@ -185,7 +185,7 @@ Unitree 计划将 IPO 融资款约 3 亿美元（每年约 1 亿美元）用于 
 ## 与现有知识的链接
 - → [原文存档](https://mp.weixin.qq.com/s/YfZ-bvXAmMBO3LFQ6eUPKA)
 - → [Yann LeCun JEPA世界模型](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yann-lecun-jepa-world-model.md) — AMI Labs具身智能方向
-- → [NVIDIA边缘端LLM for机器人](ch01/201-nvidia-edge-first-llms-av-robotics.html) — 英伟达边缘AI方案对比
+- → [NVIDIA边缘端LLM for机器人](ch01/199-nvidia-edge-first-llms-av-robotics.html) — 英伟达边缘AI方案对比
 
 ### 异构计算vs单芯片：架构选择的工程哲学
 蔚蓝选择6颗专用芯片而非1颗通用大芯片，背后是** task-specific 优化**的工程哲学。
@@ -207,6 +207,8 @@ Unitree 计划将 IPO 融资款约 3 亿美元（每年约 1 亿美元）用于 
 2. **隐私敏感场景**（家庭环境）数据不离设备
 3. **成本临界点**达到——300余美金物料 vs 英伟达1/10
 这三个条件同时满足，消费级具身智能才真正进入"可用"阶段。
+
+## 实践启示
 ### 对具身智能从业者
 - **架构选择**：不必迷信单芯片通用方案。异构计算在特定任务上可以用1/10成本达到同等性能。
 - **数据护城河**：先跑量再跑智能。产品-数据飞轮比单纯的技术领先更难追赶。
@@ -227,7 +229,7 @@ Unitree 计划将 IPO 融资款约 3 亿美元（每年约 1 亿美元）用于 
 
 ## Ch18.004 蚂蚁灵波 LingBot-Vision — 空间原生视觉基础模型 & LingBot-Depth 2.0
 
-> 📊 Level ⭐⭐⭐ | 8.0KB | `entities/lingbot-vision-spatial-native-vision-foundation-model-ant.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.0KB | `entities/lingbot-vision-spatial-native-vision-foundation-model-ant.md`
 
 > 机器之心报道 (2026-07-07) 的实体整理。蚂蚁灵波开源空间原生视觉基础模型 LingBot-Vision 及深度估计模型 LingBot-Depth 2.0。
 
@@ -299,6 +301,8 @@ LingBot-Vision 的"空间原生"定位与 具身智能 的需求高度契合。�
 
 5. **具身智能需要重新定义"视觉"的任务目标**：传统视觉（分类、检测、分割）以语义理解为核心目标，而具身智能需要的是空间理解。LingBot-Vision 的"空间原生"范式可能预示着视觉基础模型的下一个演进方向——从"what is this"到"where is this and how is it structured"。
 
+## 参考
+
 - 技术报告: arXiv:2607.05247
 - GitHub: https://github.com/robbyant/lingbot-vision
 - 项目页: https://technology.robbyant.com/lingbot-vision
@@ -306,5 +310,7 @@ LingBot-Vision 的"空间原生"定位与 具身智能 的需求高度契合。�
 → [原文存档](https://mp.weixin.qq.com/s/3C6ndYsu5T3h6l6hfiZHsA)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---

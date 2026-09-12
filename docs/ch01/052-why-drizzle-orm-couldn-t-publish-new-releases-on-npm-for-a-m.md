@@ -1,6 +1,6 @@
 # Why Drizzle ORM couldn't publish new releases on NPM for a month | vlt /vōlt/
 
-> 📊 Level ⭐⭐⭐ | 7.4KB | `entities/blog-packument-size-limits.md`
+> 📊 Level ⭐ | 7.4KB | `entities/blog-packument-size-limits.md`
 
 > **来源**: [Why Drizzle ORM couldn't publish new releases on NPM for a month | vlt /vōlt/](https://vlt.io/blog/packument-size-limits)
 
@@ -83,6 +83,8 @@ So, running that same curl command on our mirror only has Drizzle at **1.7 MiB**
 → [原文存档](https://vlt.io/blog/packument-size-limits)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

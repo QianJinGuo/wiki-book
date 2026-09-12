@@ -31,7 +31,7 @@
 
 ## Ch16.001 LLM 推理流水线完整解析：Prefill-Decode 双阶段模型
 
-> 📊 Level ⭐⭐⭐ | 8.7KB | `entities/llm-inference-pipeline-internals.md`
+> 📊 Level ⭐⭐ | 8.7KB | `entities/llm-inference-pipeline-internals.md`
 
 > -> [原文存档](https://mp.weixin.qq.com/s/1zZ0UXCNUA1UJ39gJNDQjg)
 
@@ -165,7 +165,7 @@ DeepSeek V4 Preview（2026-04-24）没有把 KV cache 当固定成本管理，�
 
 ## Ch16.002 Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP
 
-> 📊 Level ⭐⭐⭐ | 8.3KB | `entities/huggingface-torch-mlp-fusion-profiling-2026.md`
+> 📊 Level ⭐⭐ | 8.3KB | `entities/huggingface-torch-mlp-fusion-profiling-2026.md`
 
 > **Background**: Hugging Face team profiling series part 2 (2026-06-11). Climbs from single nn.Linear to 3-layer MLP with ReLU activation, profiles GPU kernel launch overhead, and shows torch.compile Inductor fusion reducing 9+ launches to 3 fused triton kernels.
 
@@ -255,7 +255,7 @@ Source: [raw archive](https://huggingface.co/blog/torch-mlp-fusion)
 
 ## Ch16.003 Pytorch in Kernel Recsys Optimization
 
-> 📊 Level ⭐⭐⭐ | 4.6KB | `entities/pytorch-in-kernel-recsys-optimization.md`
+> 📊 Level ⭐⭐ | 4.6KB | `entities/pytorch-in-kernel-recsys-optimization.md`
 
 ## 深度分析
 
@@ -268,6 +268,8 @@ Source: [raw archive](https://huggingface.co/blog/torch-mlp-fusion)
 **IO-bound 到 compute-bound 的转变是性能优化的分水岭：** IKBO 将 Flash Attention kernel 从 IO-bound 推向 compute-bound，峰值达到 621 BF16 TFLOPs（H100 SXM5）。在 GPU 编程中，IO-bound 意味着 kernel 性能受限于内存带宽，而非算力——此时增加更多计算单元也无法提升性能。**转变为 compute-bound 是优化的关键里程碑**，意味着 kernel 已经充分利用了硬件的算力潜能，继续优化需要从算法或数据布局入手。
 
 **RecSys 推理优化的独特挑战来自 user-candidate 不对称性：** 与传统 DNN 不同，RecSys 的 user embeddings 对所有 candidate 都相同，但 candidate 数量（10-10,000+）远大于 user 数量，导致 broadcast 复制开销随 candidate 数量线性增长。这个问题在 CV/NLP 任务中不存在，因为它们的 batch 维度天然对称。理解这个**领域特有的不对称性**，是设计高效 RecSys 系统的前提。
+
+## 实践启示
 
 - **遇到性能瓶颈时，先判断是 IO-bound 还是 compute-bound**：如果 kernel 已经是 compute-bound，继续优化算法或数据布局才有意义；如果是 IO-bound，优化方向应该是减少内存访问或提高内存访问效率，而非增加计算量。
 
@@ -288,7 +290,7 @@ Source: [raw archive](https://huggingface.co/blog/torch-mlp-fusion)
 
 ## Ch16.004 SGLang
 
-> 📊 Level ⭐⭐⭐ | 4.5KB | `entities/sglang.md`
+> 📊 Level ⭐⭐ | 4.5KB | `entities/sglang.md`
 
 ## 概述
 SGLang 是一个开源的大语言模型推理服务框架，由 UC Berkeley、CMU、 Stability AI 等机构联合开发（LMSYS 团队主导）。本次 GLM-5 的 BugFix #2（HiCache 加载时序修复）已通过 Pull Request #22811 提交至 SGLang 社区。
@@ -601,7 +603,7 @@ Chroma 的做法是"先搜再过滤"或"先过滤再搜"——无论哪种顺序
 
 ## Ch16.009 Apple Siri 私有推理（Private Inference）不私有：三个对抗者都不受加密学保护
 
-> 📊 Level ⭐⭐⭐ | 16.6KB | `entities/apple-siri-private-inference-lethal-trifecta-matthew-green.md`
+> 📊 Level ⭐⭐⭐⭐ | 16.6KB | `entities/apple-siri-private-inference-lethal-trifecta-matthew-green.md`
 
 > **Source**：[原文存档（Matthew Green / Cryptography Engineering, 2026-06-09）](https://blog.cryptographyengineering.com/2026/06/09/apples-siri-ai-or-more-shouting-into-the-void-about-private-agents/)
 
@@ -701,7 +703,7 @@ Willison 的 **lethal trifecta** 框架（被 Green 引用）是同一问题的�
 
 - [End To End Encrypted Ml Inference Sagemaker Fhe](https://github.com/QianJinGuo/wiki-public/blob/main/entities/end-to-end-encrypted-ml-inference-sagemaker-fhe.md)：互补（不同加密学原语，同一目标）
 - [Vibe Coding Agentic Engineering Convergence Simon Willison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vibe-coding-agentic-engineering-convergence-simon-willison.md)：lethal trifecta 概念同源
-- [Apple Silicon Costs More Than Openrouter](ch01/477-apple-silicon-costs-more-than-openrouter.html)：Apple 硬件成本视角
+- [Apple Silicon Costs More Than Openrouter](ch01/481-apple-silicon-costs-more-than-openrouter.html)：Apple 硬件成本视角
 - [Apple Corecrypto Formal Verification Blueprint](https://github.com/QianJinGuo/wiki-public/blob/main/entities/apple-corecrypto-formal-verification-blueprint.md)：Apple 加密学基础设施
 
 ### 核心观点：Private Inference ≠ Private Agent
@@ -757,7 +759,7 @@ Green 的结论是：隐私保护（如果存在）活在法律、政策和商�
 
 ## Ch16.010 EAGLE-3 投机解码与 USP 长序列训练优化
 
-> 📊 Level ⭐⭐⭐ | 14.2KB | `entities/eagle-3-speculative-decoding-optimization.md`
+> 📊 Level ⭐⭐⭐⭐ | 14.2KB | `entities/eagle-3-speculative-decoding-optimization.md`
 
 ## 核心问题：为什么 Agent 场景需要 EAGLE-3
 Agent 场景（自动化代码工程、长文档分析、多轮工具调用）带来了与大模型传统推理场景截然不同的挑战：
@@ -932,7 +934,7 @@ USP 的"主干 ring + 分支本卡 + 流式融合"设计不只适用于 EAGLE-3�
 
 ## Ch16.011 PithTrain：陈天奇 + CMU Flame Center 推出的 agent-native MoE 训练框架（11K Python / 双重效率）
 
-> 📊 Level ⭐⭐⭐ | 12.2KB | `entities/pith-train-agent-native-moe-training-framework.md`
+> 📊 Level ⭐⭐⭐⭐ | 12.2KB | `entities/pith-train-agent-native-moe-training-framework.md`
 
 ## 摘要
 
@@ -1073,7 +1075,7 @@ bash examples/pretrain_language_model/launch.sh qwen3-30b-a3b
 
 ## Ch16.012 具身智能 Sim-to-Real 迁移：主动推理、行为树与内在动机引擎的工程化方案
 
-> 📊 Level ⭐⭐⭐ | 9.3KB | `entities/embodied-intelligence-sim-to-real-active-inference-behavior-tree-intrinsic-motivation-chenzhiyan-2026-06-17.md`
+> 📊 Level ⭐⭐⭐⭐ | 9.3KB | `entities/embodied-intelligence-sim-to-real-active-inference-behavior-tree-intrinsic-motivation-chenzhiyan-2026-06-17.md`
 
 ## 摘要
 
@@ -1158,12 +1160,14 @@ bash examples/pretrain_language_model/launch.sh qwen3-30b-a3b
 - [原文存档](https://mp.weixin.qq.com/s/bB9ncEOvj3pTKtWpyGHkpQ)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
 ## Ch16.013 Build real-time voice applications with Amazon SageMaker AI and vLLM
 
-> 📊 Level ⭐⭐⭐ | 21.2KB | `entities/build-real-time-voice-applications-with-amazon-sagemaker-ai.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 21.2KB | `entities/build-real-time-voice-applications-with-amazon-sagemaker-ai.md`
 
 ## 核心要点
 
@@ -1456,7 +1460,7 @@ SageMaker AI 端点按实例运行时长计费 ：
 
 ## Ch16.014 The next generation of speculative decoding: DFlash and Spec V2 - LMSYS Blog
 
-> 📊 Level ⭐⭐⭐ | 11.2KB | `entities/lmsys-dflash-speculative-decoding-2026-06.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 11.2KB | `entities/lmsys-dflash-speculative-decoding-2026-06.md`
 
 > Source: [原文存档](https://www.lmsys.org/blog/2026-06-15-next-generation-speculative-decoding-dflash-v2/)
 

@@ -1,6 +1,6 @@
 # 场景营销前端 AI Coding — AI Native 的视觉稿还原
 
-> 📊 Level ⭐⭐⭐ | 6.4KB | `entities/frontend-ai-native-visual-reduction-taobao.md`
+> 📊 Level ⭐⭐ | 6.4KB | `entities/frontend-ai-native-visual-reduction-taobao.md`
 
 > 原文归档：原文归档
 

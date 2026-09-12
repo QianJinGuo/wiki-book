@@ -1,6 +1,6 @@
 # Claude Code Loop Types — 官方四种循环模式分类法
 
-> 📊 Level ⭐⭐⭐ | 8.6KB | `entities/claude-code-loop-types-official-taxonomy-four-modes.md`
+> 📊 Level ⭐⭐ | 8.8KB | `entities/claude-code-loop-types-official-taxonomy-four-modes.md`
 
 > Claude Code 团队 (Delba de Oliveira & Michael Segner) 官方定义的四种 Loop 类型。与第三方教程不同，这是官方分类法。
 
@@ -85,10 +85,16 @@ Claude Code 里 agent 的自动化触发有五种形态：/loop（时间表）�
 - [Claude Code Loop Engineering 完整攻略](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-loop-engineering-guide.md) — 兔兔AGI 第三方教程，侧重实战技法；本实体是官方分类法，侧重模式选择决策
 - [阿里云 Loop 实战」— 同为 Loop 实践，但本实体聚焦 Claude Code 的 CLI 命令级 loop 原语
 
+## 参考
+
 → [raw/articles/claude-code-loop-types-official-taxonomy-four-modes|原文存档 1](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aliyun-loop-engineering-log-scan-auto-fix-deploy.md)
 → [raw/articles/fyjE5EhnV1jKzE8NnscZDQ|原文存档 2 (AI寒武纪)]
 → [raw/articles/anthropic-loop-four-types-practical-guide-jiagoux-2026-07-15|原文存档 3 (架构师)]
 → [raw/articles/claude-code-loop-practical-cron-prompt-datathu-2026-08-06|原文存档 4 (数据派THU)]
+
+## 关联
+
+- 同题异语种孪生页：[Claude官方教你用 Loop如何让Claude Code上夜班的四个交接点](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude官方教你用-loop如何让claude-code上夜班的四个交接点.md)（归并候选，提案卡 #11 批1）
 
 ---
 

@@ -1,6 +1,6 @@
 # Building for the Rising Complexity of Agentic Systems with Extreme Co-Design
 
-> 📊 Level ⭐⭐⭐ | 13.9KB | `entities/nvidia-agentic-systems-extreme-co-design.md`
+> 📊 Level ⭐⭐⭐⭐ | 13.9KB | `entities/nvidia-agentic-systems-extreme-co-design.md`
 
 ## 概述
 
@@ -160,7 +160,7 @@ NVIDIA 的 Extreme Co-Design 强调 Vera CPU 承担「长上下文检索操作�
 - [Agent Memory System Design](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-system-design.md) — 记忆系统与上下文压缩机制
 
 ## 相关实体
-- [Nvidia Extreme Co Design Agentic Systems](095-nvidia-extreme-co-design-agentic-systems.html)
+- [Nvidia Extreme Co Design Agentic Systems](094-nvidia-extreme-co-design-agentic-systems.html)
 - [Lightseek Tokenspeed](https://github.com/QianJinGuo/wiki-public/blob/main/entities/lightseek-tokenspeed.md)
 - [Subagents 详解Claude Code 如何避免上下文污染 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/subagents-详解claude-code-如何避免上下文污染-v2.md)
 - [Amazon Bedrock Agentic Payments Guardrails](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-agentic-payments-guardrails.md)

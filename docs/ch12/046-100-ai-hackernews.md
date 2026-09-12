@@ -1,12 +1,13 @@
 # 100万+AI服务暴露在公网——HackerNews扫描报告
 
-> 📊 Level ⭐⭐⭐ | 10.4KB | `entities/1-million-exposed-ai-services-hackernews.md`
+> 📊 Level ⭐⭐⭐⭐ | 10.4KB | `entities/1-million-exposed-ai-services-hackernews.md`
 
 > -> [原文存档](https://thehackernews.com/2026/05/we-scanned-1-million-exposed-ai.html)
 
 ## We Scanned 1 Million Exposed AI Services. Here's How Bad the Security Situation Is
 **Source:** https://thehackernews.com/2026/05/we-scanned-1-million-exposed-ai.html
 **Summary:** (from LLM review)
+> Score: 8×8=64 | strong
 → [原文存档](https://thehackernews.com/2026/05/we-scanned-1-million-exposed-ai.html)
 
 ## 相关实体

@@ -1,6 +1,6 @@
 # From SSH to REST: A Security-Driven Modernization of Slack's EMR Data Pipelines
 
-> 📊 Level ⭐⭐⭐ | 8.9KB | `entities/from-ssh-to-rest-a-security-driven-modernization-of-slacks-e.md`
+> 📊 Level ⭐ | 8.9KB | `entities/from-ssh-to-rest-a-security-driven-modernization-of-slacks-e.md`
 
 ### 问题本质：SSH 作为临时方案的长期技术债
 Slack 数据平台建于 2017 年，彼时 Airflow 通过 SSHOperator 直接连接 EMR 主节点执行命令是 最直接 的路径。这种模式在规模小、团队少时完全合理，但随着 700+ 生产作业分散到 8 个独立数据区域，SSH 从便利工具演变成基础设施现代化的 阻塞点。
@@ -65,7 +65,23 @@ REST 架构不只解决当前问题，更解锁了未来三条关键路径：
 - **平台可演进性**：Airflow 与 EMR 基础设施细节解耦，集群替换对 DAG 无感
 > 来源：[原文存档](https://slack.engineering/from-ssh-to-rest-a-security-driven-modernization-of-slacks-emr-data-pipeli)
 ## 相关实体
-- [Automating Confidential Containers Coco Infrastructure With Kyverno](https://github.com/QianJinguo/wiki-public/blob/main/entities/automating-confidential-containers-coco-infrastructure-with-kyverno.md) — 同为基础设施安全加固实践
+- [Wetesteddeepseekv4Proandflashagainstclau](https://github.com/QianJinGuo/wiki-public/blob/main/entities/wetesteddeepseekv4proandflashagainstclau.md)
+- [Entrypointhijacking](https://github.com/QianJinGuo/wiki-public/blob/main/entities/entrypointhijacking.md)
+- [Affirmmapsroadto100Bgmvwithcardaicommerc](https://github.com/QianJinGuo/wiki-public/blob/main/entities/affirmmapsroadto100bgmvwithcardaicommerc.md)
+- [Why Internally Built Ai Fails Fund Accounting Audits](../ch01/044-why-internally-built-ai-fails-fund-accounting-audits.html)
+- Senatorsquerycreditbureausonbnpl
+
+- [Cpanel Whm Patch 3 New Vulnerabilities](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cpanel-whm-patch-3-new-vulnerabilities.md)
+- [Tenorshare Ai Diagrimo   Free Ai Diagram Generator Online](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tenorshare-ai-diagrimo---free-ai-diagram-generator-online.md)
+- [Automating Confidential Containers Coco Infrastructure With Kyverno](https://github.com/QianJinGuo/wiki-public/blob/main/entities/automating-confidential-containers-coco-infrastructure-with-kyverno.md)
+- [Gptomics Com How Ai Changes Software P L](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gptomics-com-how-ai-changes-software-p-l.md)
+- [Romanian Man 30 Years Us Prison Vishing](https://github.com/QianJinGuo/wiki-public/blob/main/entities/romanian-man-30-years-us-prison-vishing.md)
+- [Youcom Download The Guide Why Api Latency Is A Misleading Metric](https://github.com/QianJinGuo/wiki-public/blob/main/entities/youcom-download-the-guide-why-api-latency-is-a-misleading-metric.md)
+- [818662](https://github.com/QianJinGuo/wiki-public/blob/main/entities/818662.md)
+- [2026 04 15](https://github.com/QianJinGuo/wiki-public/blob/main/entities/2026-04-15.md)
+- [What My Privacy And Security Stack Actually Looks Like](https://github.com/QianJinGuo/wiki-public/blob/main/entities/what-my-privacy-and-security-stack-actually-looks-like.md)
+- [Ai Traffic Cyberthreat Benchmark 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-traffic-cyberthreat-benchmark-2026.md)
+- [Device Code Phishing Forensics What We Learned From Bec Investigations In The Wi](https://github.com/QianJinGuo/wiki-public/blob/main/entities/device-code-phishing-forensics-what-we-learned-from-bec-investigations-in-the-wi.md)
 
 ---
 

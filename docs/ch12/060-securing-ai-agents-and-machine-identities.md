@@ -1,6 +1,8 @@
 # Securing AI Agents and Machine Identities
 
-> 📊 Level ⭐⭐⭐ | 9.0KB | `entities/1password-securing-ai-agents-machine-identities.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 9.0KB | `entities/1password-securing-ai-agents-machine-identities.md`
+
+## 可视化
 
 ### 架构图（Excalidraw / 推荐使用 ✨）
 

@@ -37,6 +37,7 @@ MCP、Skill、Plugin 都可能持续变化，但进入主系统后，必须尽�
 - 复杂度不会消失，只会从 prompt 层外溢到 runtime 层
 - 真正稳定的 Agent，不靠"模型一次答对"，而靠"运行时允许它长期执行、犯错、恢复、继续前进"
 - 多 Agent 的关键不是 prompt 分工设计得多聪明，而是任务系统能不能把执行分出去、跟回来、在失败时重新接住
+→
 
 ## 深度分析
 Claude Code 的设计选择揭示了 Agent 系统从 demo 走向生产的关键转折点：**[!summary]当工具数量增长、交互模式复杂化后，模型能力不再是瓶颈，运行时架构成为决定性因素。**
@@ -71,7 +72,7 @@ MCP、Skill、Plugin 这些外部扩展机制可能在持续变化，但 Claude 
 - [Claude Code 架构深度分析](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/claude-code-deep-architecture-analysis.md)
 - [AI Native 时代 —— 研发组织何去何从](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-native-时代-研发组织何去何从.md)
 - [Hermes-Agent Kanban 实测 — 商业 CLI 作为上层 Orchestrator](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-kanban-deep-test.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](112-claude-code-harness-deep-understanding.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](110-claude-code-harness-deep-understanding.html)
 - [AutoResearch：多 Agent 自动化软件开发](https://github.com/QianJinGuo/wiki-public/blob/main/entities/autoresearch-multi-agent-software.md)
 - [Agent Harness 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture.md)
 - [Claude Code 源码核心机制详解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-core-internals.md)

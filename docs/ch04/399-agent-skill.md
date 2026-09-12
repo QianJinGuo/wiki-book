@@ -1,6 +1,6 @@
 # Agent Skill 高质量编写规范
 
-> 📊 Level ⭐⭐⭐ | 9.8KB | `entities/agent-skill-writing-practices.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 9.8KB | `entities/agent-skill-writing-practices.md`
 
 ### 1. 从真实经验提炼
 - 和AI协作完成任务后提炼成功步骤/修正/输入输出格式

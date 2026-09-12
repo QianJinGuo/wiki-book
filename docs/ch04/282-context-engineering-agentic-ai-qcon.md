@@ -1,6 +1,6 @@
 # 一点天下：Context Engineering 与 Agentic AI (QCon)
 
-> 📊 Level ⭐⭐⭐ | 14.3KB | `entities/yidian-tianxia-context-engineering-agentic-ai-qcon.md`
+> 📊 Level ⭐⭐⭐⭐ | 14.3KB | `entities/yidian-tianxia-context-engineering-agentic-ai-qcon.md`
 
 ## "yidian tianxia context engineering agentic ai qcon"
 ## 易点天下 Agentic AI 工程化实践：上下文工程 + 五道防线

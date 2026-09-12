@@ -89,6 +89,8 @@
 - 知识工作两极化
 - Mythos 模型（Anthropic）
 
+## 来源
+
 Nathan Lambert 在 Interconnects 发表的 2026-05 月度洞察。
 
 ## 相关实体

@@ -1,6 +1,6 @@
 # ai-skill-evolution底层逻辑
 
-> 📊 Level ⭐⭐⭐ | 20.2KB | `entities/ai-skill-evolution底层逻辑.md`
+> 📊 Level ⭐⭐⭐⭐ | 20.2KB | `entities/ai-skill-evolution底层逻辑.md`
 
 [Ai Skill Evolution底层逻辑](https://juejin.cn/post/7620226704209018920)
 
@@ -174,7 +174,7 @@ Skill 规则只写「必须约束」的部分，不写「可以推断」的部�
 - [Skill Formal Theory Survey 10Papers](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-formal-theory-survey-10papers.md)
 - [Glm5 Scaling Pain Inference](https://github.com/QianJinGuo/wiki-public/blob/main/entities/glm5-scaling-pain-inference.md)
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/打造可靠的-ai-编程环境claude-code-hooks-完整开发者指南-v2.md)
-- [Gepa Optimize Anything](../ch01/451-gepa-optimize-anything.html)
+- [Gepa Optimize Anything](../ch01/455-gepa-optimize-anything.html)
 
 - [Auto Improving Agent Platform Ashpreetbedi Shensi](https://github.com/QianJinGuo/wiki-public/blob/main/entities/auto-improving-agent-platform-ashpreetbedi-shensi.md)
 - [Hermes Skills Llm Wiki Self Improving Knowledge System](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-skills-llm-wiki-self-improving-knowledge-system.md)

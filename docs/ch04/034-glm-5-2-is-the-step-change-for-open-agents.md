@@ -1,6 +1,6 @@
 # GLM-5.2 is the step change for open agents
 
-> 📊 Level ⭐⭐⭐ | 4.0KB | `entities/glm-52-is-the-step-change-for-open-agents.md`
+> 📊 Level ⭐ | 4.0KB | `entities/glm-52-is-the-step-change-for-open-agents.md`
 
 → [原文存档](https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open)
 
@@ -18,6 +18,9 @@ GLM-5.2, in a common naming convention across the industry, looked potentially l
 What has followed is a slow, groundswell of hype for GLM-5.2. The official, MIT-licensed [model weights](<https://huggingface.co/zai-org/GLM-5.2>) and [release blog](<https://z.ai/blog/glm-5.2>) dropped three days after the initial rollout, on June 16th. One could ramble many technical details, such as the strong benchmark scores, the very popular RL framework that Z.ai uses ([SLIME](<https://github.com/THUDM/slime>)), the recommendation of always using the model on Max thinking effort, and so on, but the initial release blogs usually aren’t the thing to focus on. You can wait and read the ecosystem reaction to know if it’s the real deal. [Benchmarks are half dead these days](<https://www.interconnects.ai/p/opus-46-vs-codex-53
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- 相关: Agent 架构
 
 ---
 

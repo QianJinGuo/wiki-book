@@ -1,6 +1,6 @@
 # How Loka Built a Natural, Low-Latency Voice Agent with Amazon Nova 2 Sonic
 
-> 📊 Level ⭐⭐⭐ | 8.9KB | `entities/how-loka-built-a-natural-low-latency-voice-agent-with-amazon.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.9KB | `entities/how-loka-built-a-natural-low-latency-voice-agent-with-amazon.md`
 
 > **Background**：AWS 官方博客 2026-06-24 发布的案例研究，详细介绍了 Loka 如何使用 Amazon Nova 2 Sonic 构建低延迟、自然对话的语音 Agent。文章包含具体的性能基准测试数据（Big Bench Audio 87.0 分）、架构设计细节和 Prompt 工程迭代过程。
 
@@ -141,6 +141,8 @@ Loka 的架构设计考虑了大规模部署的需求：
 - Voice Agent Architecture — 语音 Agent 架构设计
 - [Agent Harness Context Management](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-context-management-working-set.md) — Agent 上下文管理
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — Harness 工程框架
+
+## 参考
 
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/how-loka-built-a-natural-low-latency-voice-agent-with-amazon-nova-2-sonic/)
 

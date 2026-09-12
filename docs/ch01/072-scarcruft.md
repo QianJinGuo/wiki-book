@@ -1,6 +1,6 @@
 # ScarCruft 游戏平台供应链攻击分析
 
-> 📊 Level ⭐⭐⭐ | 6.2KB | `entities/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack.md`
+> 📊 Level ⭐ | 6.2KB | `entities/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack.md`
 
 > -> [原文存档](https://www.welivesecurity.com/en/eset-research/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack/)
 

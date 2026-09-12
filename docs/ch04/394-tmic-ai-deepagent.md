@@ -1,6 +1,6 @@
 # TMIC AI小新 DeepAgent架构演进
 
-> 📊 Level ⭐⭐⭐ | 10.7KB | `entities/tmic-ai-xiaoxin-deepagent-architecture-evolution.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 10.7KB | `entities/tmic-ai-xiaoxin-deepagent-architecture-evolution.md`
 
 ## 核心洞察
 

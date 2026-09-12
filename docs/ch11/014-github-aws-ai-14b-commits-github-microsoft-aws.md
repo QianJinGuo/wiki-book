@@ -1,6 +1,6 @@
 # GitHub + AWS 多云转折：AI 编码激增 14B commits 压垮 GitHub，Microsoft 跨云买 AWS 容量
 
-> 📊 Level ⭐⭐⭐ | 4.4KB | `entities/microsoft-github-aws-ai-capacity-crunch-2026-06.md`
+> 📊 Level ⭐ | 4.4KB | `entities/microsoft-github-aws-ai-capacity-crunch-2026-06.md`
 
 > 原文存档：[原文存档](http://runtimewire.com/article/microsoft-github-aws-ai-capacity-crunch)
 
@@ -46,6 +46,8 @@
 **AI 编码激增 → 14× commits → 30× 容量需求 → 微软被迫向 AWS 买容量** —— 2026 年最具体的"agentic AI 改变基础设施"案例
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

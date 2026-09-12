@@ -1,6 +1,6 @@
 # A Missing Layer in Agentic Systems?
 
-> 📊 Level ⭐⭐⭐ | 8.2KB | `entities/a-missing-layer-in-agentic-systems.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.2KB | `entities/a-missing-layer-in-agentic-systems.md`
 
 > 原文存档：[原文存档](https://blog.crewai.com/a-missing-layer-in-agentic-systems)
 

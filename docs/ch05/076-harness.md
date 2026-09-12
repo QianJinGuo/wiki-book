@@ -1,6 +1,6 @@
 # 阿里工程师 Harness 工程化实践 (双案例合并)
 
-> 📊 Level ⭐⭐⭐ | 26.5KB | `entities/harness-engineering-alibaba-java-case-study.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 26.5KB | `entities/harness-engineering-alibaba-java-case-study.md`
 
 ## 文章概要
 阿里工程师在企业级 Java 应用（10万+行代码）上从零构建 Harness 体系，AI 代码率从 **24.86% 提升至 90.54%**。文章系统梳理三次范式跃迁（Prompt→Context→Harness）、四根支柱、四类失败模式，以及真实项目的完整实践路径。
@@ -205,6 +205,8 @@ OpenAI 提出的"Entropy Garbage Collection"是一个极具工程价值的概念
 **理论支撑 (arxiv 2605.29682)**:
 - 原始 token 消耗 + 工具调用解释 agent 成功率方差 **R²=0.33~0.42**
 - **验证反馈质量 (Effective Feedback Compute) 达到 R²=0.94~0.99**
+- "**决定 AI 干活靠不靠谱的并非给它多少预算, 而是检查做得多好**"
+
 ### G1-G8 门禁墙 (eval 式硬校验)
 
 每个门禁是**确定性 Python 函数**, 检查产物存不存在、编译过不过、单测通没通。verifier agent 跑完后写 `phases/verification.json`, 任一 gate FAIL 则流程退回 DEVELOPING——**不是"建议", 是"阻断"**。

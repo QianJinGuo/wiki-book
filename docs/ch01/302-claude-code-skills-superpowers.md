@@ -15,7 +15,7 @@ Claude Code的Skills实践及利器推荐：工欲善其事，必先利其器
 - [Claude Code Self Repair Hooks Memory Config](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-self-repair-hooks-memory-config.md)
 - [Code Review Graph](https://github.com/QianJinGuo/wiki-public/blob/main/entities/code-review-graph.md)
 - [Claude Code Hackathon Winners 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-hackathon-winners-2026.md)
-- [Claude Code Harness Deep Understanding](112-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Understanding](110-claude-code-harness-deep-understanding.html)
 
 → [原文存档](https://mp.weixin.qq.com/s/Bkr-tw68m0y5zKXGAPIkMA)
 

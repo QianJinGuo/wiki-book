@@ -1,6 +1,6 @@
 # Spec-Driven AI 编程半年实战 — 有损管道、三工具比较与三大认知陷阱
 
-> 📊 Level ⭐⭐⭐ | 4.1KB | `entities/spec-driven-development-cognitive-framework.md`
+> 📊 Level ⭐⭐ | 4.1KB | `entities/spec-driven-development-cognitive-framework.md`
 
 > 百人级互联网前后端团队半年 SDD 实践。核心洞察：**"有损管道"** 框架 + 三大工具的 **结构性代价** 对比 + **认知陷阱**。[^1]
 
@@ -61,6 +61,8 @@ Prompt 是一次性指令，Spec 是可审计的责任链。[^1]
 - **变稀疏**：模型越强，L2(设计细节)消失，人只需写 L1(意图+边界)
 - **变可执行**：从自然语言 → property check / invariant assertion / 验收 oracle
 - **成本下降**：AI 辅助写/维护 spec → 更多场景过盈亏线
+
+## 参考
 
 → [raw/articles/d4MCEB91ppMVrNO4JQaI7Q|原文存档]
 

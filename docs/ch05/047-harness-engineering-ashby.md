@@ -1,6 +1,6 @@
 # Harness Engineering 从理论到实战：行为正确性死结 + 上下文腐烂 + 可驾驭性 + Ashby 定律
 
-> 📊 Level ⭐⭐⭐ | 20.2KB | `entities/harness-engineering-theory-to-practice-helen.md`
+> 📊 Level ⭐⭐⭐⭐ | 20.2KB | `entities/harness-engineering-theory-to-practice-helen.md`
 
 ## 概述
 

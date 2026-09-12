@@ -1,6 +1,6 @@
 # 🧠 The Token Economy pt2: The Intelligence Company Gets Built
 
-> 📊 Level ⭐⭐⭐ | 23.0KB | `entities/the-token-economy-pt2-the-intelligence-company-gets-built.md`
+> 📊 Level ⭐ | 23.0KB | `entities/the-token-economy-pt2-the-intelligence-company-gets-built.md`
 
 ## 核心要点
 - **核心公式**：Outcome = Tokens × Intelligent Operating Model（有效运营模型 = 可观测性 × 自主性 × 部署速度 × 问责制）

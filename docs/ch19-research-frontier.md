@@ -32,7 +32,7 @@
 
 ## Ch19.001 Lean Software Scaling Laws
 
-> 📊 Level ⭐⭐⭐ | 3.9KB | `entities/lean-scaling.md`
+> 📊 Level ⭐ | 3.9KB | `entities/lean-scaling.md`
 
 > **Source**: [gwern.net](https://gwern.net/lean-scaling)
 
@@ -64,12 +64,15 @@ How far behind?
 But this does not follow: being a popular language with a lot of training data only means that LLMs _start off by default_ performing well. (Because it’s hard to disentangle a programming language f
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- 相关: Agent 架构
 
 ---
 
 ## Ch19.002 The Complexity of Simplicity | Jim Nielsen's Notes
 
-> 📊 Level ⭐⭐⭐ | 5.8KB | `entities/2026-05-06-2201.md`
+> 📊 Level ⭐⭐ | 5.8KB | `entities/2026-05-06-2201.md`
 
 ["The Complexity of Simplicity | Jim Nielsen's Notes"](https://notes.jim-nielsen.com/n/2026-05-06-2201/)
 ---
@@ -172,6 +175,8 @@ MoWorld 在华为昇腾 NPU 上的全栈打通具有超越单产品的战略意�
 ### 5. 产业落地路径：「相机—剧情联合控制」的范式创新
 
 MoWorld 不仅提升了模型能力，更重要的是提出了具体的产业落地路径。在影视制作场景中，「相机—剧情联合控制」允许创作者先生成具备稳定相机路径的场景视频，重建 3DGS 场景，再将渲染结果作为参考输入下游视频模型，使创作者聚焦于角色动作和叙事本身。这种从「端到端生成」到「可控组件化生产」的转变，代表着世界模型从技术演示走向商业化内容生产的关键一步。
+
+## 实践启示
 
 1. **系统性优化优于单一指标提升**：MoWorld 的成功不是单一技术的突破，而是数据引擎→预训练→蒸馏→推理的全栈协同优化。在部署世界模型时，应从全链路角度识别瓶颈，而非仅仅关注模型架构本身。
 
@@ -291,6 +296,8 @@ CoT Forgery 攻击将 prompt injection 从"指令覆盖"提升到"信任链劫�
 - [Agent Harness Context Management Working Set](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-context-management-working-set.md) — Agent 上下文管理与角色隔离
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -453,7 +460,7 @@ Multi-agent collective 路径在现有 ASI 讨论中较少被关注。报告认�
 
 ## Ch19.007 推荐系统进入大模型时刻：昇腾 NPU 如何支撑千亿级生成式推荐落地
 
-> 📊 Level ⭐⭐⭐ | 23.9KB | `entities/huawei-fuxi-recommendation-system-ascend-npu-scaling-law.md`
+> 📊 Level ⭐⭐⭐⭐ | 23.9KB | `entities/huawei-fuxi-recommendation-system-ascend-npu-scaling-law.md`
 
 ## 概述
 
@@ -710,7 +717,7 @@ FuXi-Alpha 的 Attention Map 可视化是理解推荐系统特征重要性的关
 
 ## Ch19.008 NeurIPS 2026 Pangram 事件：闭源 AI 检测器用于学术 desk-reject 的方法论争议
 
-> 📊 Level ⭐⭐⭐ | 11.1KB | `entities/neurips-2026-pangram-controversy.md`
+> 📊 Level ⭐⭐⭐⭐ | 11.1KB | `entities/neurips-2026-pangram-controversy.md`
 
 > "如果一个较高的检测分数被用来判断作者的声明「不一致」，而这种「不一致」又被用来证明拒稿合理，那么检测器就不只是一个辅助工具了 —— 它实际上成了裁决过程中的决定性因素。"
 > —— Reddit `r/MachineLearning` 控诉帖
@@ -821,7 +828,7 @@ AI 语法润色、翻译辅助、以及认知辅助技术对非母语作者和�
 
 ## Ch19.009 Recursive First Steps Toward Automated AI Research：SOTA 三基准自动化研究系统
 
-> 📊 Level ⭐⭐⭐ | 10.9KB | `entities/recursive-automated-ai-research-first-steps-2026.md`
+> 📊 Level ⭐⭐⭐⭐ | 10.9KB | `entities/recursive-automated-ai-research-first-steps-2026.md`
 
 > **Background**：本文档基于 Recursive 团队 2026-06-11 发布的工程报告 *First Steps Toward Automated AI Research* 整理。Recursive 团队（与 [AlphaEvolve](entities/alphaevolve-impact-deepmind.md) 同生态但不同公司）开发了一套自动化研究循环系统，瞄准三大 AI 进步杠杆：**训练算法 / 训练速度 / 硬件利用**。他们在三个 SOTA benchmark 上同时取得突破并开源 artifacts。
 
@@ -915,7 +922,7 @@ Einsia Navers Lab 的 AI4AI-Bench（arXiv:2608.20318）为"AI 能否设计更好
 
 ## Ch19.010 Qwen-AgentWorld: Language World Models for General Agents
 
-> 📊 Level ⭐⭐⭐ | 7.4KB | `entities/qwen-agentworld-language-world-models.md`
+> 📊 Level ⭐⭐⭐⭐ | 7.4KB | `entities/qwen-agentworld-language-world-models.md`
 
 ## 摘要
 
@@ -1036,7 +1043,7 @@ Qwen-AgentWorld 的创新在于将世界模型的载体从传统的状态空间�
 
 ## Ch19.011 Visual Para-Thinker: 视觉并行思考框架 (arxiv 2602.13310)
 
-> 📊 Level ⭐⭐⭐ | 22.9KB | `entities/visual-para-thinker-vlm-parallel-reasoning-xuhaoran.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 22.9KB | `entities/visual-para-thinker-vlm-parallel-reasoning-xuhaoran.md`
 
 # Visual Para-Thinker: 大规模 VLM 首个并行思考框架
 
@@ -1333,9 +1340,11 @@ Qwen-AgentWorld 的创新在于将世界模型的载体从传统的状态空间�
 
 6. **对国产 VLM 团队 (小米/快手/StepFun/美团) 的意义**: 浙江大学+小米 MiLMPlus 在该方向发论文, 表明国产团队已与国际同步。K2.5/Step3-VL/LongCat-Flash-Thinking 形成中国"宽度扩展"生态。
 
+## 相关链接
+
 ### 同范式生态
 - [ICML 2026 NPR 文本原生并行推理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/native-parallel-reasoner-icml2026.md) — **同源**: 都推动"推理宽度扩展", NPR 在文本领域开辟
-- [LASER ACL 2026 视觉推理](ch01/315-laser-acl2026-latent-superposition-visual-reasoning.html) — **互补**: 同样针对 VLM, 但用 latent superposition 路线
+- [LASER ACL 2026 视觉推理](ch01/318-laser-acl2026-latent-superposition-visual-reasoning.html) — **互补**: 同样针对 VLM, 但用 latent superposition 路线
 - [DeepSeek 视觉原语](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-visual-primitives-thinking.md) — **对比**: DeepSeek 用"视觉原语"做视觉推理的另一种思路
 
 ### 视觉/多模态相关
@@ -1349,7 +1358,7 @@ Qwen-AgentWorld 的创新在于将世界模型的载体从传统的状态空间�
 ## 相关实体
 
 - [Native Parallel Reasoner Icml2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/native-parallel-reasoner-icml2026.md)
-- [Laser Acl2026 Latent Superposition Visual Reasoning](ch01/315-laser-acl2026-latent-superposition-visual-reasoning.html)
+- [Laser Acl2026 Latent Superposition Visual Reasoning](ch01/318-laser-acl2026-latent-superposition-visual-reasoning.html)
 - [Llava Onevision 2 Full Frame Rate Vlm Glintlab](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llava-onevision-2-full-frame-rate-vlm-glintlab.md)
 - [Deepseek Visual Primitives Thinking](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-visual-primitives-thinking.md)
 - [Llm Language Thinking Mechanisms](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-language-thinking-mechanisms.md)- [count anything - 文本引导的通用目标计数框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/arxiv-2605-30846-count-anything-2026.md)
@@ -1359,7 +1368,7 @@ Qwen-AgentWorld 的创新在于将世界模型的载体从传统的状态空间�
 
 ## Ch19.012 Video Agent 范式迁移与算力-人才飞轮：Ethan He 从 Cosmos 到 Grok Imagine 的第一手洞见
 
-> 📊 Level ⭐⭐⭐ | 18.2KB | `entities/video-agent-paradigm-compute-talent-flywheel-ethan-he-20260606.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 18.2KB | `entities/video-agent-paradigm-compute-talent-flywheel-ethan-he-20260606.md`
 
 ## 概述
 

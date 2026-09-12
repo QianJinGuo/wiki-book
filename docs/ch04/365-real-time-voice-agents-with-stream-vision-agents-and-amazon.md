@@ -1,6 +1,6 @@
 # Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic
 
-> 📊 Level ⭐⭐⭐ | 23.3KB | `entities/real-time-voice-agents-with-stream-vision-agents-and-amazon-nova-2-sonic.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 23.3KB | `entities/real-time-voice-agents-with-stream-vision-agents-and-amazon-nova-2-sonic.md`
 
 > -> [原文存档](https://aws.amazon.com/blogs/machine-learning/real-time-voice-agents-with-stream-vision-agents-and-amazon-nova-2-sonic/)
 

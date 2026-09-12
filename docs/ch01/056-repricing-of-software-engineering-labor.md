@@ -1,6 +1,6 @@
 # Repricing of Software Engineering Labor
 
-> 📊 Level ⭐⭐⭐ | 7.3KB | `entities/posts-repricing-of-software-engineering-labor.md`
+> 📊 Level ⭐ | 7.3KB | `entities/posts-repricing-of-software-engineering-labor.md`
 
 > **来源**: [Repricing of Software Engineering Labor](https://blog.grandimam.com/posts/repricing-of-software-engineering-labor)
 
@@ -61,6 +61,8 @@ _AI was used to assist with grammar and editing._
 → [原文存档](https://blog.grandimam.com/posts/repricing-of-software-engineering-labor)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

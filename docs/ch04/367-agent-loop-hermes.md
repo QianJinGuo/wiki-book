@@ -1,6 +1,6 @@
 # Agent Loop 源码导读：一次 Hermes 任务的完整生命周期
 
-> 📊 Level ⭐⭐⭐ | 22.1KB | `entities/hermes-agent-loop-source-code-anatomy.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 22.1KB | `entities/hermes-agent-loop-source-code-anatomy.md`
 
 ## 核心发现
 

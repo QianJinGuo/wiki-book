@@ -1,6 +1,6 @@
 # MiniMax M2.7：开启模型的自我进化
 
-> 📊 Level ⭐⭐⭐ | 6.4KB | `entities/minimax-m2-7-self-evolution.md`
+> 📊 Level ⭐⭐ | 6.4KB | `entities/minimax-m2-7-self-evolution.md`
 
 M2.7是MiniMax第一个模型深度参与迭代自己的版本。模型能够自行构建复杂Agent Harness，并基于Agent Teams、复杂Skills、Tool Search tool等能力，完成高度复杂的生产力任务，同时驱动模型自身的强化学习训练迭代。
 Agent Harness覆盖：数据流水线、训练环境、评测基础设施、跨团队协作、持久化记忆。研究员在每一层引导方向，模型在每一层负责构建。

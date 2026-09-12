@@ -1,6 +1,6 @@
 # Cisco Preps For A World Of AI Agent Coworkers, Frontier Model Threats
 
-> 📊 Level ⭐⭐⭐ | 8.7KB | `entities/cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-model-threats.md`
+> 📊 Level ⭐ | 8.7KB | `entities/cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-model-threats.md`
 
 URL: https://www.nextplatform.com/ai/2026/06/03/cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-model-threats/5250406
 

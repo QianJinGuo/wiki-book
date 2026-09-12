@@ -1,6 +1,6 @@
 # Harness Engineering 综合论述：为什么 2026 年真正重要的是它（含 ECC 开源实现案例）
 
-> 📊 Level ⭐⭐⭐ | 31.2KB | `entities/harness-engineering-paradigm-comprehensive-2026.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 31.2KB | `entities/harness-engineering-paradigm-comprehensive-2026.md`
 
 ## Harness Engineering 综合论述：为什么 2026 年真正重要的是它
 
@@ -343,7 +343,7 @@ iterative-retrieval
 - [Hermes Agent Eval Harness：可验证 Skill 进化的 7 模块闭环](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sota-ai-hermes-agent-eval-harness-skillopt-implementation.md)
 → [第 1 篇原文存档](https://mp.weixin.qq.com/s/RwWfknFIFvJPIdsJMgeNiQ) · [第 2 篇原文存档](https://mp.weixin.qq.com/s/lc_iBYAu0kMZNP4cy1P6NA) · [第 3 篇原文存档](https://mp.weixin.qq.com/s/cjLxKLOBx8vUotAC0oeeZQ) · [第 4 篇原文存档](https://mp.weixin.qq.com/s/0w_xMwto4sLx6J_85OhWQw)​
 
-## 第 4 来源：钉钉悟空 AI 招聘 Agent 实战
+## 第 4 来源：钉钉悟空 AI 招聘 Agent 实战（）
 
 **来源**：阿里云开发者（公众号），作者团队钉钉企业级 Agent「悟空」落地实践
 

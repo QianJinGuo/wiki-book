@@ -1,6 +1,6 @@
 # 打造可靠的 AI 编程环境：Claude Code Hooks 完整开发者指南
 
-> 📊 Level ⭐⭐⭐ | 4.8KB | `entities/打造可靠的-ai-编程环境claude-code-hooks-完整开发者指南-v2.md`
+> 📊 Level ⭐ | 4.8KB | `entities/打造可靠的-ai-编程环境claude-code-hooks-完整开发者指南-v2.md`
 
 > 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.8**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/打造可靠的-ai-编程环境claude-code-hooks-完整开发者指南-v2.md`，一手来源仍见下方 sources。
@@ -12,7 +12,7 @@
 - [800行代码实现 Open Claw 的 Tool、消息总线、子Agent管理架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/open-claw-tool-bus-subagent-architecture.md) — 薄抽象显式控制流8802字rv9全版
 - [MIRA + MPA：深度原理 AI Scientist 递归自训练打造材料基座模型，40 项实验全面 SOTA](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mira-mpa-deep-principle-ai4s-40-sota.md) — AI Scientist递归自训练，35/40胜前SOTA
 - [10篇论文看懂AI Agent Skill：表示、执行、评估与进化](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-formal-theory-survey-10papers.md) — 技能六元组形式化综述
-- [Gepa Optimize Anything](451-gepa-optimize-anything.html) — ASI+Pareto前沿，声明式通用文本优化API
+- [Gepa Optimize Anything](455-gepa-optimize-anything.html) — ASI+Pareto前沿，声明式通用文本优化API
 
 ## 工程实践
 - [Claude Code 源码核心机制详解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-core-internals.md) — 源码机制18k主版
@@ -31,7 +31,7 @@
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-source-architecture.md) — 八大模块三条链路
 - [Claude Code Prompt 提示词体系源码解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-prompt-source-analysis.md) — 六大prompt模块全版
 - [阿里工程师 Harness 工程化实践 (双案例合并)](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-alibaba-java-case-study.md) — 阿里Java双案例合并15565字全版
-- [Stripe Sessions 2026 AI Agents](../ch04/189-stripe-sessions-2026-ai-agents.html) — Sessions分析含Radar洞见
+- [Stripe Sessions 2026 AI Agents](../ch04/188-stripe-sessions-2026-ai-agents.html) — Sessions分析含Radar洞见
 
 ## 延伸导航
 - [第 3 层全库索引：Agent 工程](https://github.com/QianJinGuo/wiki-public/blob/main/moc/layer-3-agent-engineering.md)

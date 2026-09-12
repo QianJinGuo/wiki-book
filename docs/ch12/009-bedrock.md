@@ -1,6 +1,6 @@
 # 中国用户安全高性能访问海外 Bedrock
 
-> 📊 Level ⭐⭐⭐ | 3.8KB | `entities/user-security-high-performance-bedrock-aws-china.md`
+> 📊 Level ⭐ | 3.8KB | `entities/user-security-high-performance-bedrock-aws-china.md`
 
 > **Background**：基于 AWS China Blog 原创技术文章（2026-06-26），系统梳理中国用户访问海外 Amazon Bedrock 的三类场景与端到端私有化接入架构。
 
@@ -59,6 +59,8 @@
 - Amazon Bedrock — 海外 LLM 推理服务
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

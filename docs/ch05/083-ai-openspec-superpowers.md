@@ -1,6 +1,6 @@
 # AI 生产开发工作流：OpenSpec 规范驱动 + Superpowers 工具链
 
-> 📊 Level ⭐⭐⭐ | 19.1KB | `entities/ai-production-development-workflow-openspec-superpowers-gstack.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 19.1KB | `entities/ai-production-development-workflow-openspec-superpowers-gstack.md`
 
 ## 三大痛点
 

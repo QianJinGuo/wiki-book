@@ -1,6 +1,6 @@
 # Harness Engineering：AI 能在真正"出事会炸"的后端系统里写代码吗？
 
-> 📊 Level ⭐⭐⭐ | 62.4KB | `entities/harness-engineeringai-能在真正出事会炸的后端系统里写代码吗.md`
+> 📊 Level ⭐⭐⭐⭐ | 62.5KB | `entities/harness-engineeringai-能在真正出事会炸的后端系统里写代码吗.md`
 
 [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗](https://mp.weixin.qq.com/s/VJgVPeJ5GZhVwbRtneEk_Q)
 
@@ -380,6 +380,10 @@ AI Coding 不是"让 AI 替你写代码"，而是重新  定义  人与 AI 协�
 - [Harness Engineering Jk Launcher Baijiajie](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-jk-launcher-baijiajie.md)
 - [Agent Harness Engineering Survey 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-engineering-survey-2026.md)
 - [Ai Coding 入门指南 如何更好地让Ai真正帮你干活](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-coding-入门指南-如何更好地让ai真正帮你干活.md)
+
+## 关联
+
+- 同题异语种孪生页：[Tencent Cdn Lego Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tencent-cdn-lego-harness-engineering.md)（归并候选，提案卡 #11 批1）
 
 ---
 

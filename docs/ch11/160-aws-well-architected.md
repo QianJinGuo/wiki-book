@@ -1,6 +1,6 @@
 # AWS 软件供应链安全 Well-Architected 最佳实践
 
-> 📊 Level ⭐⭐⭐ | 8.1KB | `entities/aws-software-supply-chain-security-well-architected-best-practices.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.1KB | `entities/aws-software-supply-chain-security-well-architected-best-practices.md`
 
 ## 概述
 
@@ -95,6 +95,8 @@
 4. **SBOM 生成进入 CI/CD gate**：每个 build 必须输出 SPDX/CycloneDX SBOM 并存入版本控制对应的 artifact 存储。当供应链事件发生时，SBOM 是快速定位受影响应用、控制 blast radius 的唯一可信数据源。
 
 5. **CloudTrail 告警规则覆盖 credential 异常模式**：在 EventBridge 中配置针对 `sts:AssumeRole` 异常 IP、`secretsmanager:GetSecretValue` 陌生来源、`ecr:PushImage` 绕过 CI 等场景的自动响应，在 incident 发生时将 forensic 分析时间从小时级压缩到分钟级。
+
+## 关联阅读
 
 当前 wiki 中暂无与 AWS 软件供应链安全直接关联的实体或概念页面。相关概念如 Sigstore、SLSA、SBOM 的独立页面尚未建立，建议后续按需创建。
 

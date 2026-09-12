@@ -1,6 +1,6 @@
 # Inference cost at scale with napkin math
 
-> 📊 Level ⭐⭐⭐ | 9.1KB | `entities/napkin-inference-cost-injuly-2026.md`
+> 📊 Level ⭐ | 9.1KB | `entities/napkin-inference-cost-injuly-2026.md`
 
 → [原文存档](https://injuly.in/blog/napkin-inference-cost/index.html)
 

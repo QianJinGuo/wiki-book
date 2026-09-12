@@ -1,6 +1,6 @@
 # CLI-Anything
 
-> 📊 Level ⭐⭐⭐ | 8.0KB | `entities/cli-anything.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 8.0KB | `entities/cli-anything.md`
 
 ## Overview
 CLI-Anything 是由 HKUDS 实验室（香港大学数据科学实验室）开源的 Agent 工具扩展框架，Stars 32.4k（GitHub），核心目标是将**任意软件**转化为 AI Agent 可调用的标准化 CLI 工具。

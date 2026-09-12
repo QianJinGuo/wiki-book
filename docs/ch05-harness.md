@@ -30,26 +30,28 @@ Harness Engineering 是 2026 年冒出来的最重要工程概念之一：它回
 
 ---
 
+
+
 ---
 
 ## 本章内容
 
 - [001. Harness Engineering：快手电商用 AI 流水线重塑研发范式（需求全生命周期自动化交付）](ch05/001-harness-engineering-ai)
 - [002. Cloud Use 框架：Agent 作为云上受治理主体的四层模型](ch05/002-cloud-use-agent)
-- [003. Code is cheap: Harness 方法论——水流理论、最小混沌单元与反 slop](ch05/003-code-is-cheap-harness-slop)
-- [004. Harness Engineering 系统梳理](ch05/004-harness-engineering)
+- [003. Harness Engineering 系统梳理](ch05/003-harness-engineering)
+- [004. Code is cheap: Harness 方法论——水流理论、最小混沌单元与反 slop](ch05/004-code-is-cheap-harness-slop)
 - [005. Karpathy AutoResearch Loop Cycle & Harness Optimization](ch05/005-karpathy-autoresearch-loop-cycle-harness-optimization)
 - [006. Martin Fowler AI 研发 Harness：非确定性承重层](ch05/006-martin-fowler-ai-harness)
 - [007. Superpowers 深度解析：给 Claude Code 装上工程大脑](ch05/007-superpowers-claude-code)
-- [008. 去哪儿网 AI Coding 研发平台实践：L0-L5 自动化分级 + Harness 四把锁 + QunarDevCenter + 天弦 QDO](ch05/008-ai-coding-l0-l5-harness-qunardevcenter-qdo)
-- [009. HSCodeComp：阿里 ACL 2026 最佳资源论文——层级规则应用 Agent 基准](ch05/009-hscodecomp-acl-2026-agent)
+- [008. HSCodeComp：阿里 ACL 2026 最佳资源论文——层级规则应用 Agent 基准](ch05/008-hscodecomp-acl-2026-agent)
+- [009. 去哪儿网 AI Coding 研发平台实践：L0-L5 自动化分级 + Harness 四把锁 + QunarDevCenter + 天弦 QDO](ch05/009-ai-coding-l0-l5-harness-qunardevcenter-qdo)
 - [010. MoonBit：面向 Agent 协作的编程语言（语言即工具链 + 形式化验证 + Wasm 沙箱）](ch05/010-moonbit-agent-wasm)
 - [011. Cloudflare Copy Fail Linux 内核漏洞应急响应](ch05/011-cloudflare-copy-fail-linux)
 - [012. Build a serverless image editing agent with Amazon Bedrock AgentCore harness](ch05/012-build-a-serverless-image-editing-agent-with-amazon-bedrock-a)
 - [013. Beyond Vibe Coding — Directed Generation as Design Methodology](ch05/013-beyond-vibe-coding-directed-generation-as-design-methodolo)
 - [014. 场景营销前端 AI Coding — 从问题到方案](ch05/014-ai-coding)
-- [015. 应用宝活动平台 Harness 工程实践——从对话式 AI Coding 到工程化系统](ch05/015-harness-ai-coding)
-- [016. Harness Engineering for Self-Improvement — 翁荔 Lilian Weng 系统梳理 Harness 自我提升研究全景](ch05/016-harness-engineering-for-self-improvement-lilian-weng-h)
+- [015. Harness Engineering for Self-Improvement — 翁荔 Lilian Weng 系统梳理 Harness 自我提升研究全景](ch05/015-harness-engineering-for-self-improvement-lilian-weng-h)
+- [016. 应用宝活动平台 Harness 工程实践——从对话式 AI Coding 到工程化系统](ch05/016-harness-ai-coding)
 - [017. 从零复刻 Claude Code：Harness 构建学习笔记](ch05/017-claude-code-harness)
 - [018. 从渐进式 SDD 到 Lattice Harness：AI Coding 团队级闭环实践](ch05/018-sdd-lattice-harness-ai-coding)
 - [019. GSD 完胜 OpenSpec 和 Superpowers？源码拆完发现：三者防的是 context rot 的三道防线](ch05/019-gsd-openspec-superpowers-context-rot)

@@ -1,6 +1,6 @@
 # Design Patterns for AI Agents 2026：4 大执行模式 + 5 步选型决策树 + Reflection 完整 Demo
 
-> 📊 Level ⭐⭐⭐ | 17.5KB | `entities/design-patterns-for-ai-agents-2026.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 17.5KB | `entities/design-patterns-for-ai-agents-2026.md`
 
 → （无原始来源）
 
@@ -65,7 +65,7 @@ Thought → Action → Observation 循环，仍是大多数单步任务的基础
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki-public/blob/main/queries/harness-peer-review-framework.md)
 
 - [Thin Harness Fat Skills](https://github.com/QianJinGuo/wiki-public/blob/main/entities/thin-harness-fat-skills.md)
-- [你不知道的 Agent 原理架构与工程实践](188-agent-principle-architecture-engineering-practice.html)
+- [你不知道的 Agent 原理架构与工程实践](187-agent-principle-architecture-engineering-practice.html)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 - [AI Agent 工程师能力地图](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-engineer-capability-map.md)
 

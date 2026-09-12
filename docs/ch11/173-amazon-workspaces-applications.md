@@ -1,6 +1,6 @@
 # 基于 Amazon WorkSpaces Applications 快速搭建企业级应用培训环境
 
-> 📊 Level ⭐⭐⭐ | 18.9KB | `entities/amazon-workspaces-applications-quick-build.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 18.9KB | `entities/amazon-workspaces-applications-quick-build.md`
 
 ## 核心要点
 - **痛点**：50 人规模 GPU 培训手动配置需一整天，涉及 VPC、NAT Gateway、Image Builder、Fleet、Stack 等多个 AWS 服务协调
@@ -196,7 +196,7 @@ GPU Fleet（g4dn/g5/g6）与 Standard Fleet 使用不同的物理实例类型，
 
 ### 预热策略的工程逻辑
 文章建议"培训前 10-15 分钟预热，数量设为预期学员人数的 1.1 倍"，这背后有具体的工程逻辑。
-WorkSpaces Applications 的 Auto Scaling 机制基于等待时间（waiting time）调整：当用户请求集中涌入时，Fleet 会触发扩容流程，但扩容速度受限于实例启动时间（约 1-2 分钟）。在培训开场的前 5 分钟内，如果 50 名学员同时点击链接，而 Fleet 初始容量为 0，系统需要在 1-2 分钟内快速创建并预热实例，这可能导致前几名学员遇到排队。
+WorkSpaces Applications 的 Auto Scaling 机制基于 대기时间（waiting time）调整：当用户请求集中涌入时，Fleet 会触发扩容流程，但扩容速度受限于实例启动时间（约 1-2 分钟）。在培训开场的前 5 分钟内，如果 50 名学员同时点击链接，而 Fleet 初始容量为 0，系统需要在 1-2 分钟内快速创建并预热实例，这可能导致前几名学员遇到排队。
 预热到 55（1.1 倍）的策略确保了培训开场时有充足的缓冲容量，Auto Scaling 在后台继续扩容，学员不会遇到明显的等待。
 
 ## 实践启示

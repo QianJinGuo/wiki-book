@@ -1,6 +1,6 @@
 # 高德交易 VOC 自动排查：基于 Hermes 的多 Agent 架构实践
 
-> 📊 Level ⭐⭐⭐ | 7.1KB | `entities/gaode-voc-hermes-multi-agent-auto-triage-2026.md`
+> 📊 Level ⭐ | 7.1KB | `entities/gaode-voc-hermes-multi-agent-auto-triage-2026.md`
 
 高德技术使用 Hermes Agent 构建多 Agent 架构实现交易 VOC（Voice of Customer）自动排查系统。系统由主调度 Agent（首席调度官）+ 多个领域专家 Agent 构成，实现"零后端编排代码"的纯 Agent 生产级系统，诊断准确率 **86%**，排查效率从小时/天级→分钟级。
 

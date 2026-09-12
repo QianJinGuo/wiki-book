@@ -113,6 +113,9 @@ Agent 生态系统正处于类似阶段：
 → [原文存档](https://n8n.io/reports/2026-ai-agent-development-tools/)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- 相关: Agent 架构
 
 ---
 

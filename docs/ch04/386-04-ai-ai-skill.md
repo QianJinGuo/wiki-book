@@ -1,6 +1,6 @@
 # 04—为什么不能让 AI 自己评审自己？AI Skill 四层验证体系完整解析
 
-> 📊 Level ⭐⭐⭐ | 14.7KB | `entities/ai-skill-四层验证体系.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 14.7KB | `entities/ai-skill-四层验证体系.md`
 
 ## 问题：为什么不能让模型自己评审自己
 

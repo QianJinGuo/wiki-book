@@ -31,7 +31,7 @@
 
 ## Ch17.001 How transparent is DiffusionGemma (and why it matters)
 
-> 📊 Level ⭐⭐⭐ | 8.3KB | `entities/diffusiongemma-transparency-audit-lesswrong.md`
+> 📊 Level ⭐ | 8.3KB | `entities/diffusiongemma-transparency-audit-lesswrong.md`
 
 > 原文存档：[原文存档](https://www.lesswrong.com/posts/zoYXpdaMgFT43Wc24/how-transparent-is-diffusiongemma-and-why-it-matters)
 
@@ -93,12 +93,14 @@ Monitorability, a key downstream application of transparency, is similar between
 本文从**透明度/可解释性**角度分析 DiffusionGemma，与现有 [DiffusionGemma 技术架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/diffusiongemma-4x-faster-text-generation-google-2026-06.md) 实体（侧重模型架构、MoE 设计、推理加速）形成互补。
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
 ## Ch17.002 TimeLens2: Generalist Video Temporal Grounding with Multimodal LLMs
 
-> 📊 Level ⭐⭐⭐ | 4.4KB | `entities/timelens2.md`
+> 📊 Level ⭐ | 4.4KB | `entities/timelens2.md`
 
 # TimeLens2: Generalist Video Temporal Grounding
 
@@ -154,7 +156,7 @@ TimeLens2-4B 平均超过 Qwen3.5-397B-A17B 约 7.5 个 mIoU 点，在全部七�
 
 ## Ch17.003 Mistral Shieldstral — Policy-Adaptive Multimodal Safety Classifier
 
-> 📊 Level ⭐⭐⭐ | 3.4KB | `entities/mistral-shieldstral-policy-adaptive-safety-classifier.md`
+> 📊 Level ⭐ | 3.4KB | `entities/mistral-shieldstral-policy-adaptive-safety-classifier.md`
 
 > **Background**：Mistral AI 发布 Shieldstral（3B open-weights 多模态安全分类器），核心创新是把内容审核从「固定有害类别 taxonomy」重构为「policy-adaptive question-answering」——模型在推理时接受自然语言策略（如"这段内容是否煽动针对受保护群体的暴力？"），返回校准安全分数，无需针对每个部署上下文重训。
 
@@ -175,7 +177,7 @@ TimeLens2-4B 平均超过 Qwen3.5-397B-A17B 约 7.5 个 mIoU 点，在全部七�
 ## 对 LLM 安全工程的意义
 
 - **Guardrail 部署成本下降**：policy-adaptive 意味着一个模型服务所有部署场景，不再为每个产品/受众维护专用审核模型——与 [Bedrock Guardrails](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-guardrails-code-generation-six-patterns.md) 类平台方案形成互补（平台 vs open-weights 两种路线）
-- **审核即推理任务**：把 content moderation 从分类任务重构为 QA 任务，与 [Nova 2 prompting 审核](ch01/486-prompting-amazon-nova-2-for-content-moderation.html) 思路同源
+- **审核即推理任务**：把 content moderation 从分类任务重构为 QA 任务，与 [Nova 2 prompting 审核](ch01/491-prompting-amazon-nova-2-for-content-moderation.html) 思路同源
 - **多模态统一**：文本+图像一个接口、一个模型，规避多模态安全审核需多模型拼装的工程负担
 
 ## 相关主题
@@ -189,7 +191,7 @@ TimeLens2-4B 平均超过 Qwen3.5-397B-A17B 约 7.5 个 mIoU 点，在全部七�
 
 ## Ch17.004 SunFinance: Textract+Claude准确率90.8%的ID提取方案
 
-> 📊 Level ⭐⭐⭐ | 8.0KB | `entities/aws-sun-finance-ai-id-extraction-fraud-detection.md`
+> 📊 Level ⭐⭐ | 8.0KB | `entities/aws-sun-finance-ai-id-extraction-fraud-detection.md`
 
 ## 核心内容
 SunFinance将AWS Textract（文档 OCR）+ Claude（智能理解）结合，ID提取准确率从79.7%提升至90.8%，成本降低91%。系统每月处理330万次ID验证，支撑信贷审批全流程。
@@ -369,6 +371,8 @@ AIDC-AI 团队(阿里国际 AI 部)选择开源而非内部封闭开发,战略�
 **5. 出海 AI 商业化的新范式:垂直场景驱动开源,开源驱动生态**
 
 Pixelle-Video 不同于纯研究型开源项目(如 Stability AI 的各种模型),它有极其明确的商业场景(跨境电商视频),有具体的业务归属(阿里国际团队),有可量化的成功指标(Star 数、部署案例)。这代表了一种新的出海 AI 商业化路径:不是先建平台再找场景,而是从垂直业务需求出发,把解决方案开源出去,借助社区力量完善工具,同时为自身业务生态引流。
+
+## 实践启示(5 条)
 
 - **优先做装配工,再做生成器**: 如果你正在做 AI 视频/图像/语音工具,Pixelle-Video 验证了"编排层的工程价值可能比单点生成模型更持久"
 - **模板前缀语义化编码**: `static_/image_/video_` 前缀比配置文件更易发现/扩展 — 这是值得借鉴的小设计
@@ -703,6 +707,11 @@ VGGSound-Omni 基准引入的画外音（Off-screen）专属评测赛道，为�
 **官方 Gemma 技能库（Skills Repository）**——专门为开发者用 Gemma 模型构建智能体工作流提供支持
 
 ## 7. 核心金句
+
+- "**把原本需要高端服务器才能跑的多模态智能，装进你的笔记本电脑里。**"
+- "**多模态理解加上 Agent 能力，直接在本地跑，不用联网，不依赖云端。**"
+- "**以后就算断网，本地也有真正的多模态模型了，没有任何 token 焦虑**"
+- "**这种统一、无编码器的架构，带来的直接好处是：延迟更低，内存更省。**"
 
 ## 8. 与已有 wiki 实体的关系
 
@@ -1071,6 +1080,8 @@ NEO-Unify 的成功验证了"原生统一"路线的可行性，为多模态大�
 → [原文存档](https://mp.weixin.qq.com/s/60m6GzLGlRAfWYWWkIDCOA)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -1162,6 +1173,8 @@ Vera 团队面临的核心挑战是：**没有公开数据集提供高质量的�
 → [原文存档](https://netflixtechblog.com/toward-more-controllable-ai-video-editing-an-early-research-exploration-at-netflix-eb8160ed60a2?source=rss----2615bd06b42e---4)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -1357,6 +1370,8 @@ FLAT 并非完全取代 3DGS，而是解决其特定弱点：
 → [原文存档](https://flat-splat.github.io)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -1436,6 +1451,8 @@ AWS GenAIIC 与 Vexcel 的合作模式值得借鉴：先建评估框架（基于
 **来源**: → [原文存档](https://aws.amazon.com/blogs/machine-learning/embed-the-world-multimodal-ai-for-searchable-aerial-imagery-at-scale/)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
@@ -1503,7 +1520,7 @@ Moebius 的工作与当前模型压缩领域的多个方向形成呼应：
 - **结构化剪枝**：LλMI 的设计思路类似对注意力机制的结构性重构
 - **稀疏化**：Moebius 证明了极端参数压缩（<2%）在任务特化场景下完全可行
 
-这与 [模型规模推演](ch01/496-model-size-scaling-in-2023-2031.html) 中关于 sparsity 作为参数放大器的讨论形成有趣对比——Moebius 走的是另一条路：不是增加总参数并稀疏化，而是直接在架构层面大幅压缩。
+这与 [模型规模推演](ch01/500-model-size-scaling-in-2023-2031.html) 中关于 sparsity 作为参数放大器的讨论形成有趣对比——Moebius 走的是另一条路：不是增加总参数并稀疏化，而是直接在架构层面大幅压缩。
 
 ## 实践启示
 
@@ -1514,7 +1531,7 @@ Moebius 的工作与当前模型压缩领域的多个方向形成呼应：
 
 ## 相关实体
 
-- [模型规模推演](ch01/496-model-size-scaling-in-2023-2031.html) — 模型大小与硬件约束的系统分析
+- [模型规模推演](ch01/500-model-size-scaling-in-2023-2031.html) — 模型大小与硬件约束的系统分析
 - [知识代理超越前沿模型](https://github.com/QianJinGuo/wiki-public/blob/main/entities/knowledge-agents-beat-frontier-models.md) — 小模型+领域知识超越大模型的另一范式
 - 蒸馏、剪枝、量化等模型压缩技术是 Moebius 的理论背景
 
@@ -1577,7 +1594,7 @@ Response Stage 和 Update Stage 的解耦设计值得借鉴：交互时专注生
 真正的个性化 = 持续演化的理解过程，而非静态标签。
 
 ## 相关页面
-- [ChatGPT Memory](ch01/467-chatgpt-memory.html) — OpenAI 的记忆实现对比
+- [ChatGPT Memory](ch01/471-chatgpt-memory.html) — OpenAI 的记忆实现对比
 - [原文存档](https://mp.weixin.qq.com/s/IUxhHJdXj4JoqLKgS18ubA)
 
 ## 相关实体
@@ -1588,7 +1605,7 @@ Response Stage 和 Update Stage 的解耦设计值得借鉴：交互时专注生
 
 ## Ch17.018 Xiaomi Dasheng — 通用声音基座模型 5 阶段工程实践
 
-> 📊 Level ⭐⭐⭐ | 17.3KB | `entities/xiaomi-dasheng-audio-foundation-model-2026.md`
+> 📊 Level ⭐⭐⭐⭐ | 17.3KB | `entities/xiaomi-dasheng-audio-foundation-model-2026.md`
 
 ## 概述
 
@@ -1868,7 +1885,7 @@ DashengTokenizer 通过**冻结语义特征 + 仅注入声学信息**，证明**
 
 ## Ch17.019 Normalizing Trajectory Models
 
-> 📊 Level ⭐⭐⭐ | 10.1KB | `entities/ntm-normalizing-trajectory-models.md`
+> 📊 Level ⭐⭐⭐⭐ | 10.1KB | `entities/ntm-normalizing-trajectory-models.md`
 
 > -> [原文存档](https://arxiv.org/abs/2605.08078)
 
@@ -1954,7 +1971,7 @@ NTM 的重要性不仅在于性能提升，更在于它揭示了扩散模型少�
 
 ## Ch17.020 豆包 Seed 2.0 Lite — Agent 前置多模态感官层
 
-> 📊 Level ⭐⭐⭐ | 8.3KB | `entities/doubao-seed-2-lite.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.3KB | `entities/doubao-seed-2-lite.md`
 
 ## 核心定位
 ```

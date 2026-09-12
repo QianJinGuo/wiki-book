@@ -33,7 +33,7 @@
 
 ## Ch20.001 Workday Inference Engine Built-in Guardrails - Enterprise AI Safety Infrastructure Path
 
-> 📊 Level ⭐⭐⭐ | 4.2KB | `entities/workday-ai-inference-guardrails.md`
+> 📊 Level ⭐ | 4.2KB | `entities/workday-ai-inference-guardrails.md`
 
 Workday CTO Gabe Monroy (former Google inference infrastructure lead) makes a core argument: **LLM Guardrails should be native components of the inference engine, not bolted-on safety layers**. This perspective comes from his experience building inference infrastructure for large AI labs at Google, and from practicing in Workday's zero-tolerance "people and money" scenarios.
 
@@ -89,6 +89,9 @@ This is fundamentally different from general AI applications (chatbots, content 
 -> [original archive](https://thenewstack.io/workday-ai-inference-guardrails/)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- 相关: Agent 架构
 
 ---
 
@@ -223,6 +226,29 @@ This is fundamentally different from general AI applications (chatbots, content 
 7. 如何指导资深工程师
 
 ## 核心金句汇总
+
+- "**不要听信任何人告诉你，知识储备少是一种优势**"
+- "**编码（Coding）和工程（Engineering），其实是截然不同的两件事**"
+- "**编码更像是一种表达方式，而工程的精髓在于如何将复杂的问题概念化**"
+- "**如果因为有了 AI 就停止练习，这种思维肌肉就会萎缩**"
+- "**真正的挑战在于利用工具去解决那些真正重要的问题**"
+- "**智慧是将事实付诸实践，并最终进行综合处理的结果**"
+- "**如果只是被动地接收 AI 给出的答案，而没有经过独立思考和挣扎的过程，智慧就很难建立**"
+- "**如果拿起重物后却让机器人替自己举起来，人本身是不会变强的**"
+- "**证明过程本身不是为了结果，而是为了提升思维能力**"
+- "**简单系统才是软件设计的终极目标**"
+- "**设计一个简单的系统比构建一个复杂的系统要难得多**"
+- "**目标应该是解决问题，而不是为了证明复杂度**"
+- "**如果一个团队的名称和使命都围绕着某一个特定系统展开，那么这个团队最终会倾向于保护这个系统**"
+- "**团队的方向应当永远面向需要解决的问题，而不是某个具体的工具**"
+- "**以现有系统命名的团队，往往会为了维护自己的存在意义而反对正确的决策**"
+- "**这种行为更像是'极客圈的娱乐新闻'，对真正的技术成长帮助有限**"
+- "**使用 Claude 或是其他 AI 工具并不是一项很难的硬技能**"
+- "**不需要强迫自己跟上每一个新模型的发布，那些大多是杂音**"
+- "**真正的成长来自于每天解决实际问题，尝试用最简单的方法去处理复杂的挑战**"
+- "**职业生涯是一场长跑**"
+- "**AI 并不意味着创新已经走到尽头。相反，这是一个非常酷的时代，大家拥有了更强的杠杆去构建以前做不到的东西**"
+- "**忽略 X 上的喧嚣，每天找机会让大脑承受思考的压力，去解决真正重要的问题**"
 
 ## 深度分析
 
@@ -369,6 +395,8 @@ Anthropic 在文中的立场不同寻常：一家正在训练最强 AI 的公司
 
 Amodei 提出的「Powerful AI」——「数据中心中的天才国家」——如果在未来 1-2 年出现，将使时序鸿沟从「挑战」升级为「危机」。当前的政策框架（EU AI Act、US EO 14110）都是在 AI 能力尚未达到该水平时设计的，它们面对 Powerful AI 时将面临根本性的覆盖不足。治理窗口的真正含义是：在 Powerful AI 出现之前，建立「触发式」「预授权式」的治理机制，使政策可以在能力突破的瞬间自动生效，而非等到灾难发生后再立法应对。这个窗口正在关闭。
 
+## 实践启示
+
 Amodei 政策对 AI 从业者的启示：
 
 **1. 主动建立企业级 RSP**——即使法律不要求，公司也应该有「**触发机制 + 红队能力 + 透明度报告**」的内部政策。Anthropic 的 RSP 是模板，其他公司可参考。
@@ -404,7 +432,7 @@ Amodei 政策对 AI 从业者的启示：
 > -> [GitLab employees are the latest to face layoffs limbo. Read the CEO's memo about restructuring 'openly.'](https://www.businessinsider.com/gitlab-layoffs-memo-2026-5)
 ## 相关实体
 
-- [iii.dev](ch01/470-iii-dev.html)
+- [iii.dev](ch01/474-iii-dev.html)
 
 ## 核心要点
 - **裁员规模**：未公布具体人数，截至 2026 年 1 月公司有 2,580 名员工
@@ -587,7 +615,7 @@ Hugging Face + NVIDIA NIM 双渠道部署反映了当前企业 AI 落地的两�
 ## 相关实体
 - [Nvidia Nemotron 3 Agents Rag Voice Safety](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-nemotron-3-agents-rag-voice-safety.md)
 - [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-nemotron-3-ultra-sagemaker-jumpstart-moe-agentic.md)
-- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/057-nvidia-secure-local-agent-nemoclaw-openclaw.html)
+- [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/056-nvidia-secure-local-agent-nemoclaw-openclaw.html)
 - [Fine Tuning Cosmos](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tuning-cosmos.md)
 - [Tokenspeed Agentic Inference Engine](ch04/276-tokenspeed-agentic-inference-engine.html)
 
@@ -745,7 +773,7 @@ AI 工具打破了这一契约：
 
 ## Ch20.008 Dario Amodei 2026 Policy on the AI Exponential
 
-> 📊 Level ⭐⭐⭐ | 18.1KB | `entities/dario-amodei-policy-ai-exponential-2026.md`
+> 📊 Level ⭐⭐⭐⭐ | 18.1KB | `entities/dario-amodei-policy-ai-exponential-2026.md`
 
 > **Tier-1 政策长文**: Anthropic CEO Dario Amodei 于 2026-06-10 在其个人博客发布的 5 章政策论文,共 7 个脚注、43KB 正文,系统化提出美国应对 AI 指数级发展的政策框架。核心隐喻 Treebeard 来自《指环王》——缓慢的制度无法跟上快速的技术。文末确认 Anthropic 同步发布"前沿模型测试立法提案"与"工作替代政策框架"并提供大额财政支持。
 
@@ -913,7 +941,7 @@ Amodei 的"a country of 100M geniuses"类比将 AI 地缘竞争框架从"技术�
 
 ## Ch20.009 Multilingual AI
 
-> 📊 Level ⭐⭐⭐ | 12.9KB | `entities/multilingual-ai.md`
+> 📊 Level ⭐⭐⭐⭐ | 12.9KB | `entities/multilingual-ai.md`
 
 ## 核心问题：Benchmark 与生产环境的语言鸿沟
 
@@ -1030,7 +1058,7 @@ Evaluator Gap 的核心洞察是"流利不等于胜任"——这对企业级 AI 
 
 ## Ch20.010 Token 经济学与 AI 效率
 
-> 📊 Level ⭐⭐⭐ | 11.8KB | `entities/token-economics-ai-efficiency.md`
+> 📊 Level ⭐⭐⭐⭐ | 11.8KB | `entities/token-economics-ai-efficiency.md`
 
 ## 核心命题
 AI 上半场卷"能不能用"，下半场卷"用得值不值"。当模型可用性不再稀缺，焦点从智力上限转向 Token 效率（Token Efficiency = AI 时代的投入产出比）。Token 经济学的核心问题：每消耗一个 Token 能创造多大的价值？
@@ -1131,7 +1159,7 @@ Token 效率工程体系的瓶颈不在技术层，而在人的认知层。模�
 3. **关注使用者 AI 素养的同步提升**：再好的路由机制也需要用户具备基本的模型能力认知作为前提。
 
 ## 新增维度（2026-08-24 SUPP：Token 市场黑箱 / 缓存锁定 / 订阅经济学）
-> 来源：InfoQ 编译 Pi 核心贡献者 Armin Ronacher 与 Ben Vinegar 播客对谈。补充 token 经济学中「效率/定价」之外的「市场结构与锁定」维度。
+> 来源：InfoQ 编译 Pi 核心贡献者 Armin Ronacher 与 Ben Vinegar 播客对谈（v=6 c=7）。补充 token 经济学中「效率/定价」之外的「市场结构与锁定」维度。
 
 ### Token 市场透明度黑箱
 购买 token 时模型的量化程度（可能是 1.5 bit 的 DeepSeek 冒充 Flash）、实际版本、是否掺了别的模型用于训练、计费方式全都不透明——「买 token 像买毒品，不知道拿到的是什么」。
@@ -1163,7 +1191,7 @@ Steve Yegge 为游戏项目开 12 个订阅，按真实 token 价格折算每月
 
 ## Ch20.011 Vibe Design ≠ Vibe Coding —— 资深设计师对 AI 前端工作流的哲学批判
 
-> 📊 Level ⭐⭐⭐ | 9.9KB | `entities/impeccable-vibe-design-philosophy-anomaly.md`
+> 📊 Level ⭐⭐⭐⭐ | 9.9KB | `entities/impeccable-vibe-design-philosophy-anomaly.md`
 
 > "Code is correct or not. Design is good or not. The same workflow can't serve both." —— Anomaly Innovations 创始人核心论点
 
@@ -1257,7 +1285,7 @@ Anomaly Innovations 创始人（37 年设计 × AI 经验，公开撰文）反�
 
 ## Ch20.012 Reinforcement learning towards broadly and persistently beneficial models
 
-> 📊 Level ⭐⭐⭐ | 6.3KB | `entities/openai-beneficial-rl-broadly-persistently.md`
+> 📊 Level ⭐⭐⭐⭐ | 6.3KB | `entities/openai-beneficial-rl-broadly-persistently.md`
 
 > **来源**: alignment.openai.com · Akshay V. Jagadeesh, Rahul K. Arora, Khaled Saab 等 · 2026-06-18
 
@@ -1341,12 +1369,14 @@ AI 系统在健康、科学、教育、编程等高风险场景中越来越自�
 - [强化学习 (RL)](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/reinforcement-fine-tuning-rft.md)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
 ## Ch20.013 Data Agent 产品设计文档
 
-> 📊 Level ⭐⭐⭐ | 30.0KB | `entities/data-agent-product-design.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 30.0KB | `entities/data-agent-product-design.md`
 
 本文档基于火山引擎 Data Agent 产品体系，设计一套可对标的**企业级数据智能体**产品。涵盖：智能问数 Agent（NL2SQL）、营销策略 Agent（CDP 集成）两大核心场景的完整功能拆解、技术架构、API 设计、数据模型。
 
@@ -1943,7 +1973,7 @@ POST   /api/v1/datasets/{id}/sync    # 触发数据同步
 
 ## Ch20.014 下一代企业数字化架构：系统CLI化、流程Skill化、员工Agent化
 
-> 📊 Level ⭐⭐⭐ | 15.8KB | `entities/enterprise-next-gen-architecture-zhan.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 15.8KB | `entities/enterprise-next-gen-architecture-zhan.md`
 
 ## 核心洞察
 **旧范式已死：** "Skill能力化、Agent智能化"是同义反复，没有新增信息。企业真正需要回答的问题是：一封合同进来，谁下载附件？谁上传系统？谁发起审批？谁盯流程？谁回邮件？

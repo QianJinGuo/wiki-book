@@ -1,6 +1,6 @@
 # Higress Qwen3Guard Wasm 插件：把 AI 内容安全做进网关数据面
 
-> 📊 Level ⭐⭐⭐ | 7.4KB | `entities/higress-qwen3guard-wasm-plugin-ai-gateway-content-safety.md`
+> 📊 Level ⭐ | 7.4KB | `entities/higress-qwen3guard-wasm-plugin-ai-gateway-content-safety.md`
 
 ## 概述
 

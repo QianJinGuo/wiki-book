@@ -112,6 +112,8 @@ code-reviewer/
 - [Harness Engineering](061-harness-engineering.html) — 上位框架：Skill 是 Harness Engineering 六层架构中"工具与技能体系"层的具体实现
 - [Claude Code Skill Writing 指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-skill-writing-guide.md) — 互补：前者侧重编写方法，本实体侧重执行原理
 
+## 参考
+
 → [raw/articles/gaLEAjOz8xLAi8ABnG855g|原文存档]
 
 [^1]: raw/articles/gaLEAjOz8xLAi8ABnG855g

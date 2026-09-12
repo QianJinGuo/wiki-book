@@ -1,6 +1,6 @@
 # LLM-Driven Feature Discovery
 
-> 📊 Level ⭐⭐⭐ | 4.2KB | `entities/llm-driven-feature-discovery.md`
+> 📊 Level ⭐ | 4.2KB | `entities/llm-driven-feature-discovery.md`
 
 > **来源**: [LLM-Driven Feature Discovery](https://www.alignmentforum.org/posts/WAZWA6FPQvH8okouJ/llm-driven-feature-discovery)
 
@@ -39,6 +39,9 @@ We find that:
 → [原文存档](https://www.alignmentforum.org/posts/WAZWA6FPQvH8okouJ/llm-driven-feature-discovery)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- 相关: Agent 架构
 
 ---
 

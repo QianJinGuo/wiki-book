@@ -5,8 +5,10 @@
 > -> [原文存档](https://www.helpnetsecurity.com/2026/05/13/fedora-hummingbird-linux/)
 
 ## 核心要点
+
 - Thorough Fedora Hummingbird technical overview
 ## 相关实体
+- "fedora hummingbird brings the container security model to a linux host os"
 - [Sysdig Headless Cloud Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sysdig-headless-cloud-security.md)
 - [The It And Security Field Guide To Ai Adoption Tines](https://github.com/QianJinGuo/wiki-public/blob/main/entities/the-it-and-security-field-guide-to-ai-adoption-tines.md)
 - [Introducing Deepsec Find And Fix Vulnerabilities In Your Code Base](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base.md)

@@ -1,6 +1,6 @@
 # Open Code Review：阿里开源的 AI 代码评审 CLI 工具
 
-> 📊 Level ⭐⭐⭐ | 10.9KB | `entities/ali-open-code-review-cli-tool.md`
+> 📊 Level ⭐⭐⭐ | 11.1KB | `entities/ali-open-code-review-cli-tool.md`
 
 ## 摘要
 
@@ -91,11 +91,13 @@ Open Code Review 的关键创新是**反思模型（Reflection Model）**：利�
 - [复杂任务规范（gufabiancheng）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gufabiancheng-spec-for-complex-tasks-cc-codex.md) — 探讨 Agent 在复杂任务中的规范执行
 - [Harness Engineering](../ch05/061-harness-engineering.html) — Agent 工程化的核心理念，与确定性工程 × Agent 混合驱动设计相关
 
+## 参考来源
+
 → [原文存档](https://mp.weixin.qq.com/s/WSicyyMEIXnNVDoWuz0jrw)
 
 ## 第 2 来源 — 连续五天登上 GitHub Trending 首页的思考（阿里技术 2026-08-11）
 
->该项目已从 5k star 增长到 20k star，本文是开源策略 + AI Coding 方法论复盘。
+>（独特洞察），70%+ 主题重叠 → MERGE。该项目已从 5k star 增长到 20k star，本文是开源策略 + AI Coding 方法论复盘。
 
 **互补角度 5 条：**
 - 开源策略：从真实业务生长、先想清楚核心竞争力和定位再开源，而不是为开源而开源
@@ -103,6 +105,10 @@ Open Code Review 的关键创新是**反思模型（Reflection Model）**：利�
 - 极致 AI Coding：100% AI 生成代码、100% AI 评审代码、采纳率 30%+、误报率不到 5%、有效建议近 8 成来自 AI
 - 组织实践：AI 代码评审从个人工具升级为团队规范，外部贡献者协作模式
 - 可迁移方法论：把开源复盘提炼为可复用的方法论给想做开源的开发者
+
+## 关联
+
+- 同题异语种孪生页：[阿里开源 Open Code Review一周揽下 5K Star更专业的代码评审 Cli](https://github.com/QianJinGuo/wiki-public/blob/main/entities/阿里开源-open-code-review一周揽下-5k-star更专业的代码评审-cli.md)（归并候选，提案卡 #11 批1）
 
 ---
 

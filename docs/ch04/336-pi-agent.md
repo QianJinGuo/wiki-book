@@ -1,6 +1,6 @@
 # Pi：轻量级开源 Agent 底座
 
-> 📊 Level ⭐⭐⭐ | 8.5KB | `entities/pi-agent-lightweight-base-rekota.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.5KB | `entities/pi-agent-lightweight-base-rekota.md`
 
 ## 摘要
 
@@ -79,9 +79,14 @@ Pi 的设计趋势反映了 Agent 框架领域的一个更广泛的转向：从�
 
 5. **理解 Agent 框架的权衡谱系**：没有"最好"的 Agent 框架，只有"最合适"的。在选择框架时，需要理解从轻量底座（Pi）到全栈框架（LangChain、CrewAI）的权衡谱系。对于个人项目和学习，轻量底座更合适；对于企业级生产系统，全栈框架可能更高效。Pi 的价值在于让开发者理解这个谱系中"轻量"一端的可能性。
 
+## 来源
+
 → [原文存档](https://www.xiaohongshu.com/explore/6a12a463000000003502ff9e)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- 相关: Agent 架构
 
 ---
 

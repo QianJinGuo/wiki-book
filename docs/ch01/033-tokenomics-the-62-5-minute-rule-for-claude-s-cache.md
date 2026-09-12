@@ -1,6 +1,6 @@
 # Tokenomics: the 62.5-minute rule for Claude's cache
 
-> 📊 Level ⭐⭐⭐ | 8.0KB | `entities/anthropic_cache_tokenomics.md`
+> 📊 Level ⭐ | 8.0KB | `entities/anthropic_cache_tokenomics.md`
 
 → [原文存档](https://skids.dev/blog/anthropic-cache-tokenomics/)
 
@@ -48,7 +48,7 @@ The 62.5-minute rule presumes you will actually make another request against tha
 ## 相关实体
 
 - [同源姊妹篇：62.5 分钟规则](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tokenomics-the-625-minute-rule-for-claudes-cache.md)
-- [Claude Code 提示缓存实战](199-anthropic-prompt-caching-claude-code.html)
+- [Claude Code 提示缓存实战](197-anthropic-prompt-caching-claude-code.html)
 - [Amazon Bedrock 提示缓存策略](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-claude-prompt-cache-strategy.md)
 - [编码代理的提示缓存](https://github.com/QianJinGuo/wiki-public/blob/main/entities/earendil-prompt-caching-coding-agents.md)
 - [Harness 提示缓存](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclacky-harness-prompt-cache.md)

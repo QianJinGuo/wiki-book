@@ -1,6 +1,6 @@
 # 🎙️ How I AI: How to write AI agent loops in Claude Code and Codex + How Claude Mythos found a 15-year-old bug in Mozilla Firefox | Brian Grinstead
 
-> 📊 Level ⭐⭐⭐ | 4.3KB | `entities/ai-agent-loops-claude-code-codex.md`
+> 📊 Level ⭐ | 4.3KB | `entities/ai-agent-loops-claude-code-codex.md`
 
 > **来源**: [🎙️ How I AI: How to write AI agent loops in Claude Code and Codex + How Claude Mythos found a 15-year-old bug in Mozilla Firefox | Brian Grinstead](https://www.lennysnewsletter.com/p/how-i-ai-how-to-write-ai-agent-loops)
 
@@ -34,6 +34,9 @@ In this hands-on tutorial, Claire explains the difference between heartbeats, cr
 → [原文存档](https://www.lennysnewsletter.com/p/how-i-ai-how-to-write-ai-agent-loops)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- 相关: Agent 架构
 
 ---
 

@@ -114,6 +114,8 @@ runSubagentAnnounceFlow()：逐个推送。先完成的先处理→发现答案�
 → [原文存档](https://mp.weixin.qq.com/s/7RWpW-wZuDmKuexf8smGGQ)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

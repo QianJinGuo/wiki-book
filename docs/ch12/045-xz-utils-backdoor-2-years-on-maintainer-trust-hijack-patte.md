@@ -1,14 +1,14 @@
 # xz-utils Backdoor 2 Years On — Maintainer Trust Hijack Pattern Beyond CVE Scanners
 
-> 📊 Level ⭐⭐⭐ | 11.4KB | `entities/xz-utils-backdoor-maintainer-trust-hijack-2-years-on.md`
+> 📊 Level ⭐⭐⭐⭐ | 11.4KB | `entities/xz-utils-backdoor-maintainer-trust-hijack-2-years-on.md`
 
 > **核心论点**：CVE-2024-3094（xz-utils 后门）不是被 CVE scanner 发现的，是被 Andres Freund（PostgreSQL maintainer）注意到 SSH login 慢了 500ms 后追溯出来的。**整个攻击链是"maintainer 信任劫持"而非"代码漏洞"**——这意味着 CVE-driven scanner 结构性无法在攻击发生时检测，只能在 CVE 出现后告警。
 
 ## 三条独有贡献
 
-1. **Maintainer Trust Hijack Pattern 完整复盘** — Jia Tan 用 2 年（2021-2024）做"信任积累"路径：合理 patches + 响应 issue tracker + 友好协作 → 现有 maintainer 倦怠 → 被加为 co-maintainer → 提交带后门的 release。这套 social engineering 在 AI coding agent 时代被放大（agent 可批量生成"合理 patches"快速建立 commit history）
-2. **CVE Scanner 根本盲区** — 在 2024-03-29 CVE 公布前一天跑任何 CVE scanner，xz-utils 5.6.0 都返回 clean。Package 没有 known vulnerability，maintainer reputation 干净，release notes 平淡无奇。**Lockfile scanning 是 quarterly fresh，threat landscape 是 daily fresh**
-3. **Build System Attack Vector** — 后门没放在 source code，放在 autotools m4 macros（生成 release tarball 的构建脚本）。git source tree 干净，tarball 在 link-time 注入恶意 object file。**Normal code review path 必然漏检**——必须 byte-by-byte 对比 tarball vs git tree
+1. **Maintainer Trust Hijack Pattern 完整复盘** — Jia Tan 用 2 年（2021-2024）做"信任积累"路径：合理 patches + 响应 issue tracker + 友好协作 → 现有 maintainer 倦怠 → 被加为 co-maintainer → 提交带后门的 release。这套 social engineering 在 AI coding agent 时代被放大（agent 可批量生成"合理 patches"快速建立 commit history）]"]
+2. **CVE Scanner 根本盲区** — 在 2024-03-29 CVE 公布前一天跑任何 CVE scanner，xz-utils 5.6.0 都返回 clean。Package 没有 known vulnerability，maintainer reputation 干净，release notes 平淡无奇。**Lockfile scanning 是 quarterly fresh，threat landscape 是 daily fresh**]"]
+3. **Build System Attack Vector** — 后门没放在 source code，放在 autotools m4 macros（生成 release tarball 的构建脚本）。git source tree 干净，tarball 在 link-time 注入恶意 object file。**Normal code review path 必然漏检**——必须 byte-by-byte 对比 tarball vs git tree]"]
 
 ## 攻击时间线（Jia Tan）
 
@@ -22,7 +22,7 @@
 | Phase 6 | 2024-03-28 | xz-utils 5.6.0 / liblzma 5.4.1 发布 | 后门随 stable distro 推送 |
 | Phase 7 | 2024-03-29 | Andres Freund 发现 500ms SSH slowdown → 追溯 → oss-security 报告 | 攻击被拦截 |
 
-**关键事实**：如果 Andres 没注意到那 500ms（绝大多数人会忽略），后门会随 Debian / Fedora stable 进入生产环境，攻击者获得**互联网上大型比例的 Linux 主机的 RCE as root**。Distro release schedule + 偶然观察是仅有的拦截因素。
+**关键事实**：如果 Andres 没注意到那 500ms（绝大多数人会忽略），后门会随 Debian / Fedora stable 进入生产环境，攻击者获得**互联网上大型比例的 Linux 主机的 RCE as root**。Distro release schedule + 偶然观察是仅有的拦截因素。]"]
 
 ## CVE-Driven Scanner 的结构性盲区
 
@@ -32,15 +32,15 @@
 | CVE database | 已被披露 + 分配 CVE ID | 0-day 攻击、maintainer 信任劫持 |
 | SBOM analyzer | 包依赖图 | 依赖本身的 maintainer 行为 |
 
-**核心矛盾**：CVE-driven scanning answers "is this version known to be bad." It does not answer "is this version safe." 历史大部分时间这两个问题同义，**但 maintainer 信任劫持让两者开始分歧**。
+**核心矛盾**：CVE-driven scanning answers "is this version known to be bad." It does not answer "is this version safe." 历史大部分时间这两个问题同义，**但 maintainer 信任劫持让两者开始分歧**。]"]
 
 ## 三个 Practical Moves
 
-1. **Pin direct dependencies** — 不让 transitive deps 自动 resolve。xz-utils 是 openssh 的 transitive dep（through systemd → libsystemd → liblzma），pin 直接 dep 无法拦截但**至少能锁定版本号不变**
-2. **Review every lockfile diff** — 不只看 direct deps，看 transitive deps 的 hash 变化。CVE scanner 不会告诉你 maintainer 变了，但 lockfile diff 会
-3. **Subscribe to real-time feeds (OSV) for shipped languages** — 替代 quarterly CVE database。OSV 在 package publish/update 时实时 stream 漏洞数据，CVE database 滞后数天到数周
+1. **Pin direct dependencies** — 不让 transitive deps 自动 resolve。xz-utils 是 openssh 的 transitive dep（through systemd → libsystemd → liblzma），pin 直接 dep 无法拦截但**至少能锁定版本号不变**]"]
+2. **Review every lockfile diff** — 不只看 direct deps，看 transitive deps 的 hash 变化。CVE scanner 不会告诉你 maintainer 变了，但 lockfile diff 会]"]
+3. **Subscribe to real-time feeds (OSV) for shipped languages** — 替代 quarterly CVE database。OSV 在 package publish/update 时实时 stream 漏洞数据，CVE database 滞后数天到数周]"]
 
-**额外防御层**：
+**额外防御层**：]"]
 
 - **Postinstall-script scrutiny** — 攻击常发生在 npm install 的 postinstall hook。xz 走的是 m4 macro 但本质相同
 - **Maintainer-shift signals** — 监控 package maintainer 变化。Jia Tan 加为 co-maintainer 是一个 critical signal
@@ -56,17 +56,17 @@
 | `rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack` | 单一事件 | **Gaming-specific** |
 | **本文 (xz 2 years on)** | **单个 attack pattern 完整复盘** | **Maintainer trust hijack + scanner 盲区 + 防御架构** |
 
-**关键差异**：本文不是 incident report，是 2 年后对 attack pattern 的 retro-analysis，给出**为什么 CVE scanner 必然漏检**的根本性解释，超越了"如何应对具体事件"的层面。
+**关键差异**：本文不是 incident report，是 2 年后对 attack pattern 的 retro-analysis，给出**为什么 CVE scanner 必然漏检**的根本性解释，超越了"如何应对具体事件"的层面。]"]
 
 ## AI Agent 时代的放大效应
 
-Jia Tan 用 2 年手工建立的"合理 patch history"在 AI agent 时代被指数级放大：
+Jia Tan 用 2 年手工建立的"合理 patch history"在 AI agent 时代被指数级放大：]"]
 
 - Agent 可批量生成"看起来合理"的 patches，伪装成"积极贡献者"
 - 攻击者 fork 主流 package，让 agent 自动维护一个看起来"持续活跃"的镜像仓库
 - Maintainer 信任信号（commit count、issue response rate、PR merge rate）变得可被 AI 伪造
 
-**结论**：CVE scanner + maintainer reputation signals 在 AI agent 时代都变得不可靠。**postinstall-script scrutiny + OSV real-time feed + maintainer-shift monitoring 是 2026 年以后 supply chain 安全的新基线**。
+**结论**：CVE scanner + maintainer reputation signals 在 AI agent 时代都变得不可靠。**postinstall-script scrutiny + OSV real-time feed + maintainer-shift monitoring 是 2026 年以后 supply chain 安全的新基线**。]"]
 
 ## 引用
 
@@ -102,7 +102,7 @@ xz、OpenSSL 等关键基础设施项目长期缺乏资源。组织应系统性�
 ### 5. 建立依赖变更的监控和告警
 当关键依赖出现异常变更（新增维护者、大规模重构、构建系统变更）时自动告警——这些是后门植入的常见前兆。
 
-→ [原文存档](https://arcis-website.pages.dev/blog/posts/xz-utils-and-the-trust-shift)
+→ [原文存档](https://arcis-website.pages.dev/blog/posts/xz-utils-and-the-trust-shift)]"]
 
 ## 相关实体
 

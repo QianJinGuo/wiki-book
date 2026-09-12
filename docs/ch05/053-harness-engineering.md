@@ -1,6 +1,6 @@
 # 万字干货！Harness Engineering如何工程化落地？
 
-> 📊 Level ⭐⭐⭐ | 16.5KB | `entities/harness-engineering-jk-launcher-baijiajie.md`
+> 📊 Level ⭐⭐⭐⭐ | 16.5KB | `entities/harness-engineering-jk-launcher-baijiajie.md`
 
 ## 核心结论
 

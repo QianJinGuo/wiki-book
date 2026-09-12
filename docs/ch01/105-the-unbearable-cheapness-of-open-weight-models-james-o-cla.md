@@ -1,6 +1,6 @@
 # The Unbearable Cheapness of Open Weight Models – James O'Claire
 
-> 📊 Level ⭐⭐⭐ | 4.9KB | `entities/25-the-unbearable-cheapness-of-open-weight-models.md`
+> 📊 Level ⭐ | 4.9KB | `entities/25-the-unbearable-cheapness-of-open-weight-models.md`
 
 > **来源**: [The Unbearable Cheapness of Open Weight Models – James O'Claire](https://jamesoclaire.com/2026/06/25/the-unbearable-cheapness-of-open-weight-models/)
 
@@ -54,6 +54,8 @@ You can navigate to SDKs to view even more detailed breakdowns of specific parts
 → [原文存档](https://jamesoclaire.com/2026/06/25/the-unbearable-cheapness-of-open-weight-models/)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

@@ -1,6 +1,6 @@
 # Claude Code Openclaw Usage Ettin
 
-> 📊 Level ⭐⭐⭐ | 14.6KB | `entities/claude-code-openclaw-usage-ettin.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 14.6KB | `entities/claude-code-openclaw-usage-ettin.md`
 
 ## 概述
 

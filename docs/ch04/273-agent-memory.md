@@ -1,6 +1,6 @@
 # Agent Memory 架构解析
 
-> 📊 Level ⭐⭐⭐ | 15.3KB | `entities/agent-memory-architecture-ruofei.md`
+> 📊 Level ⭐⭐⭐⭐ | 15.3KB | `entities/agent-memory-architecture-ruofei.md`
 
 ## 核心论点
 Memory 不只是存储，而是 Harness 里的一层控制面——解决"哪些过去可以继续进入未来"这个工程问题。
@@ -145,10 +145,10 @@ Memory 出错时，工程师要能查、能追溯、能回滚。这意味着：
 - [Agent Memory 架构本质](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture.md)
 - [memory agent systems cobanov](https://github.com/QianJinGuo/wiki-public/blob/main/entities/memory-agent-systems-cobanov.md)
 
-- [AI Agent 记忆系统架构](115-how-ai-agent-memory-works.html)
+- [AI Agent 记忆系统架构](114-how-ai-agent-memory-works.html)
 - [深度拆解 Hermes Agent 记忆系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-memory-system-openclaw-comparison.md)
 - [ai agent memory systems](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-memory-systems.md)
-- [你不知道的 Agent 原理架构与工程实践](188-agent-principle-architecture-engineering-practice.html)
+- [你不知道的 Agent 原理架构与工程实践](187-agent-principle-architecture-engineering-practice.html)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki-public/blob/main/queries/agent-memory-system-design.md)
 - [Agent Harness 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture.md)
 - [Agent 自我改进的六条路](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-self-improvement-six-mechanisms.md)

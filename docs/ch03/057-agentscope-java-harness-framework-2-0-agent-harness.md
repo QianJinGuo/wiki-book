@@ -1,6 +1,6 @@
 # AgentScope Java Harness Framework 2.0 — 企业级 Agent 分布式场景的 Harness 实现 (Java 2.0 重大升级)
 
-> 📊 Level ⭐⭐⭐ | 53.3KB | `entities/agentscope-java-harness-framework-enterprise-distributed.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 53.3KB | `entities/agentscope-java-harness-framework-enterprise-distributed.md`
 
 ## 背景：个人助手型 Agent 与企业级 Agent 是两种工程形态
 
@@ -797,6 +797,20 @@ onAgent → onReasoning → onActing → onModelCall → onSystemPrompt
 | Java 特有 | — | **sealed class + record 强类型** + Spring Boot 集成 + Kubernetes 友好 |
 
 ## 2.0 来源核心金句
+
+- "**让一个智能体跑通一次通常不是问题，难的是让它长期稳定地运行**"
+- "**多租户隔离被推给系统强制约束，而不是依赖业务代码自觉**"
+- "**同一份业务代码，按需切换到分布式形态，任意副本都能恢复任意用户的完整上下文**"
+- "**装配阶段会校验配置的一致性 —— 启动时就会直接报错，避免上线后才发现状态丢失**"
+- "**Harness 对应的不是某项新模型能力，而是真实生产场景里那些'上线前看不到、上线后绕不开'的工程问题**"
+- "**改文件即升级智能体，不需要重启服务、更不需要改一行业务代码**"
+- "**'逻辑视图 / 物理载体'的两层切分，让开发 → 测试 → 生产三段路径不再需要改代码**"
+- "**上下文管理从'压缩历史'升级为'支撑长期任务执行的系统策略'**"
+- "**FallbackModel —— 主模型不可用、限流或过载时框架自动透明切换**"
+- "**非法的 role × content 组合在构造期就被拦下，而不是跑起来才报错**"
+- "**streamEvents() 让人工确认、人工介入和外部工具执行成为框架内生能力**"
+- "**权限系统 3 态决策：允许 / 用户审批 / 拒绝**"
+- "**5 阶段 Middleware：onAgent / onReasoning / onActing / onModelCall / onSystemPrompt**"
 
 ## ⑩ 生产最佳实践与选型（AliExpress 生产作，2026-09 补充）
 

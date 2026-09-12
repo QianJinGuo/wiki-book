@@ -1,6 +1,6 @@
 # 高德伴行Agent：空间智能高可用Agent架构
 
-> 📊 Level ⭐⭐⭐ | 16.8KB | `entities/gaode-ai-companion-agent.md`
+> 📊 Level ⭐⭐⭐⭐ | 16.8KB | `entities/gaode-ai-companion-agent.md`
 
 > -> [原文存档](https://mp.weixin.qq.com/s/GKdhHtPDwHMFKQrB5hptZw)
 

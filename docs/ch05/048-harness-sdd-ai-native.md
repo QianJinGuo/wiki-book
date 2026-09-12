@@ -1,6 +1,6 @@
 # 高德广告工程 Harness/SDD 体系演进：从\"氛围编程\"治理到 AI Native 全流程闭环
 
-> 📊 Level ⭐⭐⭐ | 20.0KB | `entities/gaode-sdd-harness-team-ai-coding-paradigm-ibjfu.md`
+> 📊 Level ⭐⭐⭐⭐ | 20.0KB | `entities/gaode-sdd-harness-team-ai-coding-paradigm-ibjfu.md`
 
 ## 告别"氛围编程"：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践
 > Source: https://mp.weixin.qq.com/s/-_IBJFuXpvoqMJxL9oaEJQ

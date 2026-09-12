@@ -1,6 +1,6 @@
 # AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具
 
-> 📊 Level ⭐⭐⭐ | 9.7KB | `entities/ai-agent-tool-count-trap.md`
+> 📊 Level ⭐⭐⭐⭐ | 9.7KB | `entities/ai-agent-tool-count-trap.md`
 
 ## AI Agent工具数量陷阱
 > "5个边界清楚的工具胜过20个模糊工具"

@@ -1,6 +1,6 @@
 # LFM2.5-2.6B: Deploy Agents Everywhere
 
-> 📊 Level ⭐⭐⭐ | 5.0KB | `entities/liquid-ai-lfm2-5-2-6b-agentic-on-device.md`
+> 📊 Level ⭐ | 5.0KB | `entities/liquid-ai-lfm2-5-2-6b-agentic-on-device.md`
 
 > **Background**：Liquid AI 于 2026-08-04 发布 LFM2.5-2.6B，定位端侧（on-device）Agentic 模型：小到可跑在手机上、CPU 上保持响应、能力足以支撑 Agentic 工作流（规划、工具调用、多步任务）。与同系列 [LFM2.5-230M](https://github.com/QianJinGuo/wiki-public/blob/main/entities/liquid-ai-lfm2-5-230m.md)（边缘小模型）和 [LFM2.5 Encoders](https://github.com/QianJinGuo/wiki-public/blob/main/entities/liquid-ai-lfm2-5-encoders-fast-long-context-cpu.md)（长上下文编码器）形成互补。
 

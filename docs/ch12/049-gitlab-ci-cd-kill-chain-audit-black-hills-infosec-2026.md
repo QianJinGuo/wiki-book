@@ -1,6 +1,6 @@
 # GitLab CI/CD Kill Chain Audit — Black Hills InfoSec 2026 大规模审计研究
 
-> 📊 Level ⭐⭐⭐ | 9.7KB | `entities/auditing-gitlab-cicd-kill-chain-black-hills-2026.md`
+> 📊 Level ⭐⭐⭐⭐ | 9.7KB | `entities/auditing-gitlab-cicd-kill-chain-black-hills-2026.md`
 
 > **背景**：本文基于 Black Hills Info Security 在 2026-06-03 发布的大规模 GitLab CI/CD 审计研究整理。3,757 个开源项目、1,580 个 HIGH 级别漏洞、kill chain 框架系统化分类。补充现有 [Jenkins 供应链攻击](https://github.com/QianJinGuo/wiki-public/blob/main/entities/checkmarx-jenkins-plugin-compromised-in-new-supply-chain-attack.md) 等的 CI/CD 攻击面覆盖。
 
@@ -56,7 +56,7 @@ Black Hills Info Security 在 2026-06-03 发布的审计研究是 GitLab 生态*
 
 **结论**：3 个实体形成 **CI/CD 攻击面 + 浏览器 AI 攻击面** 的双维度覆盖。本文填补 **GitLab 第三方规模化审计** 这一空白。
 
-## 实践启示
+## 实践启示（Actionable）
 
 1. **CI/CD 是 2026 主要攻击面**：从 web app 转移到 CI/CD 流水线，必须用 kill chain 框架审计
 2. **CI_JOB_TOKEN 最小权限**：默认 scope 过大，需 explicit 限定
@@ -88,6 +88,8 @@ Black Hills Info Security 在 2026-06-03 发布的审计研究是 GitLab 生态*
 4. **CI 镜像供应链是规模化攻击的最优路径**：xz utils 和 event-stream 模式已证明开源依赖供应链可被植入后门。Black Hills 研究进一步揭示，CI 镜像作为 CI/CD 流水线的核心交付物，其信任链跨越了构建系统、测试环境与生产部署——一旦镜像被污染，kill chain 的 Initial Access 与 Privilege Escalation 阶段可以无缝衔接
 
 5. **Protected branch race condition 暴露了 CI/CD 时序安全性盲区**：旧版 GitLab < 16.8 的 protected branch race condition 说明，CI/CD 系统中的分支保护机制不仅是配置问题，更是并发时序安全性问题。这类漏洞的存在表明，流水线控制面的安全性需要与应用代码安全性同等的重视程度
+
+## 实践启示
 
 1. **强制 CI/CD 安全 Linting 进入 CI 流水线自身**：Black Hills 的审计方法论本身就是防御武器——将 `.gitlab-ci.yml` 的安全规则检查（CI linter）集成到 pre-commit 或 pre-merge 阶段，可在攻击者提交恶意 PR 之前拦截危险的配置模式
 

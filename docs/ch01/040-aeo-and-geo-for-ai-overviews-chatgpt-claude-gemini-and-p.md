@@ -1,6 +1,6 @@
 # AEO and GEO for AI Overviews, ChatGPT, Claude, Gemini, and Perplexity
 
-> 📊 Level ⭐⭐⭐ | 7.8KB | `entities/aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-perplexity.md`
+> 📊 Level ⭐ | 7.8KB | `entities/aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-perplexity.md`
 
 ## 核心要点
 - AEO（Answer Engine Optimization）和 GEO（Generative Engine Optimization）本质上是 SEO 的延伸，而非独立学科 
@@ -11,7 +11,7 @@
 - [Gemini 35 Flash More Expensive But Google Plan To Use It For Everything](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gemini-35-flash-more-expensive-but-google-plan-to-use-it-for-everything.md)
 - [Tether Launches Developer Grants Program For Local First Ai ](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tether-launches-developer-grants-program-for-local-first-ai-.md)
 - [Anthropic_Cache_Tokenomics](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic_cache_tokenomics.md)
-- [Introducing Claude For Small Business](286-introducing-claude-for-small-business.html)
+- [Introducing Claude For Small Business](285-introducing-claude-for-small-business.html)
 - [Wetesteddeepseekv4Proandflashagainstclau](https://github.com/QianJinGuo/wiki-public/blob/main/entities/wetesteddeepseekv4proandflashagainstclau.md)
 
 → [原文存档](https://www.trevorlasn.com/blog/aeo-geo-vs-seo-google-ai-optimization)

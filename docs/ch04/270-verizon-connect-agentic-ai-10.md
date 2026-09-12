@@ -1,6 +1,6 @@
 # Verizon Connect Agentic AI: 10万用户规模的工程实践
 
-> 📊 Level ⭐⭐⭐ | 16.0KB | `entities/verizon-connect-agentic-ai-100k-users.md`
+> 📊 Level ⭐⭐⭐⭐ | 16.0KB | `entities/verizon-connect-agentic-ai-100k-users.md`
 
 > **背景**：本文档基于 AWS Machine Learning Blog 的 Verizon Connect 案例编写，探讨如何在生产环境中大规模部署 Agentic AI 系统。 
 
@@ -153,6 +153,7 @@ Verizon Connect 的模型演进路径（Claude 4.5 Sonnet → Claude 4.5 Haiku �
 5. **分阶段部署验证**：建议从小型试点开始验证用例和成本效率，再逐步扩展到全企业级部署。这与 AWS 官方倡导的三阶段方法论（试点 → 扩展 → 全企业部署）一致。
 
 ## 相关实体
+- "AWS Bedrock 多智能体协作指南"
 - [Spec Review Agent Baz Bedrock Agentcore Multi Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/spec-review-agent-baz-bedrock-agentcore-multi-agent.md)
 - [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-os-level-actions-in-amazon-bedrock-agentcore-browser.md)
 - [Aws Bedrock Agentcore Identity Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-agentcore-identity-security.md)

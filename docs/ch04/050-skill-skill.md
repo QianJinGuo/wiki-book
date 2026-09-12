@@ -1,6 +1,6 @@
 # 一份可信来源，终结 Skill 管理混乱：Skill 治理最佳实践
 
-> 📊 Level ⭐⭐⭐ | 8.8KB | `entities/一份可信来源终结-skill-管理混乱skill-治理最佳实践.md`
+> 📊 Level ⭐⭐ | 8.8KB | `entities/一份可信来源终结-skill-管理混乱skill-治理最佳实践.md`
 
 → [原文存档](https://mp.weixin.qq.com/s/b88VRdAQ2u7IhQBqvNcnVg)
 
@@ -79,6 +79,9 @@ owner 负责维护内容和发布节奏，协作者参与修改后，新版本�
 通过 label 管理使用范围。文档格式 Skill 使用 stable 标签，团队生成文档时用同一套规则；项目接入 Skill 保留 dev 标签，用来验证新流程；排障 Skill
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- 相关: Agent 架构
 
 ---
 

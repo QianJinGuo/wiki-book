@@ -1,6 +1,6 @@
 # Build a unified semantic layer across datasets with multi-dataset Topics in Amazon Quick
 
-> 📊 Level ⭐⭐⭐ | 4.2KB | `entities/build-a-unified-semantic-layer-across-datasets-with-multi-da.md`
+> 📊 Level ⭐ | 4.2KB | `entities/build-a-unified-semantic-layer-across-datasets-with-multi-da.md`
 
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/build-a-unified-semantic-layer-across-datasets-with-multi-dataset-topics-in-amazon-quick)
 
@@ -21,6 +21,9 @@ With multi-dataset Topics, this semantic layer now spans multiple datasets conne
 _Figure 1: Multi-dataset Topics architecture flow
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- 相关: Agent 架构
 
 ---
 

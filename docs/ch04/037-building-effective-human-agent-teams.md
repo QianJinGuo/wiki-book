@@ -1,6 +1,6 @@
 # Building effective human-agent teams
 
-> 📊 Level ⭐⭐⭐ | 3.8KB | `entities/anthropic-building-effective-human-agent-teams.md`
+> 📊 Level ⭐ | 3.8KB | `entities/anthropic-building-effective-human-agent-teams.md`
 
 > **Background**：Anthropic 官方博客，探讨从"单人单 Agent"到"多人多 Agent 团队"的范式转变。文章基于 Claude 在实际生产环境中的使用数据和模式观察。
 
@@ -58,7 +58,7 @@ Agent 团队协作的关键是**信任校准**：
 ## 相关主题
 - [Claude Code Agent Teams Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-agent-teams-architecture.md)
 - [Sub Agent Vs Agent Team Selection Guide](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sub-agent-vs-agent-team-selection-guide.md)
-- [Claude Managed Agents](../ch01/104-claude-managed-agents.html)
+- [Claude Managed Agents](../ch01/096-claude-managed-agents.html)
 
 → [原文存档](https://claude.com/blog/building-effective-human-agent-teams)
 

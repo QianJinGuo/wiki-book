@@ -1,6 +1,6 @@
 # Qwen-Image-Agent: Bridging the Context Gap in Real-World Image Generation
 
-> 📊 Level ⭐⭐⭐ | 3.9KB | `entities/abs-2606-26907.md`
+> 📊 Level ⭐ | 3.9KB | `entities/abs-2606-26907.md`
 
 > **Source**: [arxiv.org](https://arxiv.org/abs/2606.26907)
 
@@ -18,6 +18,9 @@ Subjects:Computer Vision and Pattern Recognition (cs.CV)
 Cite as:[arXiv:2606.26907](https://arxiv.org/abs/2606.2690
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- 相关: Agent 架构
 
 ---
 

@@ -1,6 +1,6 @@
 # 在 Amazon EKS 上使用 NVIDIA GPU Operator 管理自定义 GPU 驱动与 CUDA 工作负载
 
-> 📊 Level ⭐⭐⭐ | 15.7KB | `entities/eks-gpu-operator-custom-driver-cuda-workload.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 15.8KB | `entities/eks-gpu-operator-custom-driver-cuda-workload.md`
 
 ## 三个独有贡献（不应合并到现有 entity）
 
@@ -191,6 +191,10 @@ CUDA workload image nvidia/cuda:12.2.2-runtime-ubuntu22.04
 - [Gpu Virtualization Using Mig Technology On Amazon Sagemaker Hyperpod](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gpu-virtualization-using-mig-technology-on-amazon-sagemaker-hyperpod.md)
 - [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-multi-tenant-ai-agent-on-eks-graviton-openclaw-k8s-practice.md)
 - [Openclaw Amazon Bedrock Eks Printer Qc](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-amazon-bedrock-eks-printer-qc.md)
+
+## 关联
+
+- 同题异语种孪生页：[在 Amazon Eks 上使用 Nvidia Gpu Operator 管理自定义 Gpu 驱动与 Cuda 工作负载](https://github.com/QianJinGuo/wiki-public/blob/main/entities/在-amazon-eks-上使用-nvidia-gpu-operator-管理自定义-gpu-驱动与-cuda-工作负载.md)（归并候选，提案卡 #11 批1）
 
 ---
 

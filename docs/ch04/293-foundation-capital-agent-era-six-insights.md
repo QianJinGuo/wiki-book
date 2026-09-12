@@ -1,6 +1,6 @@
 # Foundation Capital Agent Era Six Insights
 
-> 📊 Level ⭐⭐⭐ | 12.8KB | `entities/foundation-capital-agent-era-six-insights.md`
+> 📊 Level ⭐⭐⭐⭐ | 12.8KB | `entities/foundation-capital-agent-era-six-insights.md`
 
 > -> [原文存档](https://mp.weixin.qq.com/s/35FkS3AIhm336Fl2Chfc1w)
 

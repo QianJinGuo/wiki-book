@@ -1,6 +1,6 @@
 # Hermes Agent Skill 互优化：SkillEvolver × Darwin × EmbodiSkill 4 轮闭环
 
-> 📊 Level ⭐⭐⭐ | 25.3KB | `entities/hermes-agent-skill-crossover-optimization.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 25.3KB | `entities/hermes-agent-skill-crossover-optimization.md`
 
 ## 一句话
 
@@ -122,6 +122,21 @@ EmbodiSkill = 失败归因 (WHY it failed) + 技能体/附录分离
 
 ## 核心金句
 
+- "**AI 的能力提升，不一定需要更强的模型**"
+- "**让 AI 学会自己改自己的'说明书'**"
+- "**棘轮机制 — 分数只能涨不能跌**"
+- "**AI 给自己打分的准确率只有 46.4%，跟抛硬币差不多**"
+- "**角色分离，闭环进化**"
+- "**信息不对称，让 skill 里的缺陷在执行中自然暴露**"
+- "**只做补丁式修订，不整体重写**"
+- "**审计官看不到作者的修改理由，只看 skill 本身**"
+- "**技能缺陷要改 skill，执行失误只记附录不改 skill**"
+- "**如果一个说明书是对的，但执行的人手抖了，你把说明书改了，下次岂不是更糟？**"
+- "**变异（策略多样化）、选择（对比式更新）、遗传（棘轮锁定）**"
+- "**AI 智能体的能力提升，可以通过外部技能的自进化实现，无需重新训练大模型**"
+- "**模型能力只是上限的一半，另一半是 skills 的质量**"
+- "**Hermes Agent 可以用今天的自己，改进明天的自己**"
+
 ## 与已有实体的关系
 
 - `Darwin Skill 2 Huashu` — Darwin 2.0 自身迭代到 2.0 版本
@@ -151,7 +166,7 @@ EmbodiSkill = 失败归因 (WHY it failed) + 技能体/附录分离
 
 ## 与 GEPA optimize_anything 的关联
 
-**[GEPA optimize_anything](../ch01/451-gepa-optimize-anything.html)**（GEPA 官方，2026-02-18，**通用文本优化 API**）与本实验在 4 个关键维度高度互补：
+**[GEPA optimize_anything](../ch01/455-gepa-optimize-anything.html)**（GEPA 官方，2026-02-18，**通用文本优化 API**）与本实验在 4 个关键维度高度互补：
 
 | 维度 | GEPA optimize_anything | 本互优化实验 |
 |---|---|---|

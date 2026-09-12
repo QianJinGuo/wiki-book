@@ -1,7 +1,8 @@
 # GLM-5.2: Built for Long-Horizon Tasks
 
-> 📊 Level ⭐⭐⭐ | 6.6KB | `entities/z-glm-5.2.md`
+> 📊 Level ⭐ | 6.6KB | `entities/z-glm-5.2.md`
 
+> **背景**：从 newsletter candidates 提取，2026-06-18 stars=4 通过评分门槛。
 > URL: https://z.ai/blog/glm-5.2
 
 ## 核心要点
@@ -72,6 +73,9 @@ Nathan Lambert 认为 GLM-5.2 代表了开源 agent 模型的质变：
 → [原文存档](https://z.ai/blog/glm-5.2)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- 相关: Agent 架构
 
 ---
 

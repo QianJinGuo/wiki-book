@@ -1,6 +1,6 @@
 # State of Memory in Agent Harness — mem0 视角的九大 harness 横评
 
-> 📊 Level ⭐⭐⭐ | 13.6KB | `entities/state-of-memory-in-agent-harness-mem0-2026.md`
+> 📊 Level ⭐⭐⭐⭐ | 13.6KB | `entities/state-of-memory-in-agent-harness-mem0-2026.md`
 
 > 出处: [原文存档](https://mp.weixin.qq.com/s/2c2MV0b1biv71WdX2gCt_A) · 作者 mem0 · 2026-06-11
 > 原帖: x.com/mem0ai/status/2061822612398014782

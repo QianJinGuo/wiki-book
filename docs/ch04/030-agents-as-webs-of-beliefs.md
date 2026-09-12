@@ -1,6 +1,6 @@
 # Agents as Webs of Beliefs
 
-> 📊 Level ⭐⭐⭐ | 4.4KB | `entities/posts-m39z2cvyfaxzdaxr4-agents-as-webs-of-beliefs.md`
+> 📊 Level ⭐ | 4.4KB | `entities/posts-m39z2cvyfaxzdaxr4-agents-as-webs-of-beliefs.md`
 
 > **Source**: [www.lesswrong.com](https://www.lesswrong.com/posts/M39Z2CvyfaxZdaxR4/agents-as-webs-of-beliefs)
 
@@ -23,6 +23,9 @@ However, having exactly two layers of structure seems rather artificial. In acti
 So you can think of the term “belief webs” as a (still vague) pointer towards a framework which is
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- 相关: Agent 架构
 
 ---
 

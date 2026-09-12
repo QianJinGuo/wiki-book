@@ -1,6 +1,6 @@
 # Hermes自进化完整闭环：Skill创建复用修补链路
 
-> 📊 Level ⭐⭐⭐ | 13.4KB | `entities/hermes-self-evolution-closed-loop-skill-reuse-winty.md`
+> 📊 Level ⭐⭐⭐⭐ | 13.4KB | `entities/hermes-self-evolution-closed-loop-skill-reuse-winty.md`
 
 ## 6阶段完整闭环
 | 阶段 | 零件 | 核心内容 |

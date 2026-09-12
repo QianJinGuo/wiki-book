@@ -1,6 +1,6 @@
 # Cursor Harness Model Production Floor
 
-> 📊 Level ⭐⭐⭐ | 4.9KB | `entities/cursor-harness-model-production-floor.md`
+> 📊 Level ⭐ | 4.9KB | `entities/cursor-harness-model-production-floor.md`
 
 > 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.8**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/cursor-harness-model-production-floor.md`，一手来源仍见下方 sources。
@@ -28,7 +28,7 @@
 - [Codex /goal：长任务Agent的目标运行时](https://github.com/QianJinGuo/wiki-public/blob/main/entities/codex-goal-agent-runtime.md) — goal运行时rv9主版
 - [高德 AI-Native 生产线（第 3 期）：7x24 Self-Healing Pipeline + Agent 自进化](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gaode-ai-native-7x24-pipeline-self-healing.md) — 7×24自愈生产线15428字rv9全版
 - [Harness如何支撑Agent在生产环境稳定运行？](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-production-agent-engineering-deficit.md) — 工程赤字+Claude Code退化事故+四支柱审查
-- [Anthropic Demystifying Evals for AI Agents](../ch04/069-anthropic-demystifying-evals-for-ai-agents.html) — eval概念框架
+- [Anthropic Demystifying Evals for AI Agents](../ch04/068-anthropic-demystifying-evals-for-ai-agents.html) — eval概念框架
 - [Stripe Financial Compliance AI Agent: Production Lessons](../ch04/331-stripe-financial-compliance-ai-agent-production-lessons.html) — ReAct+DAG生产经验
 - [SchemaFlow: OpenAI Cookbook Partner — Agentic Database Change Impact Analysis, SQL Generation, and Eval Guardrails](https://github.com/QianJinGuo/wiki-public/blob/main/entities/schemaflow-openai-cookbook-staged-agentic-workflow.md) — 五阶段staged workflow+Pydantic约束+Promptfoo护栏
 - [长周期-agent-详解-从-ralph-loop-到可接管-harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/长周期-agent-详解-从-ralph-loop-到可接管-harness.md) — Ralph loop到接管harness

@@ -1,6 +1,6 @@
 # 基于 Application Inference Profile 为 Amazon Bedrock 构建分业务单元的近实时成本告警
 
-> 📊 Level ⭐⭐⭐ | 3.8KB | `entities/amazon-bedrock-application-inference-profile-per-bu-cost-alert.md`
+> 📊 Level ⭐ | 3.8KB | `entities/amazon-bedrock-application-inference-profile-per-bu-cost-alert.md`
 
 > **Background**：本文基于 AWS China Blog 2026-06-22 的技术教程，介绍一种轻量、旁路、近实时的 Bedrock 成本告警方案：调用方直连 Bedrock（无代理），利用 Application Inference Profile 做分 BU 的用量归因，直接在 CloudWatch metric math 告警里把 token 数换算成估算成本，再通过通知 Lambda 转发到协作工具。
 
@@ -38,6 +38,8 @@ Bedrock 支持在原始基础模型基础上封装一层 Application Inference P
 → [原文存档](https://aws.amazon.com/cn/blogs/china/blog-bedrock-per-bu-cost-alarms)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

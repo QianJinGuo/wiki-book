@@ -1,6 +1,6 @@
 # 我把 Claude Design 做成了 Skill，人人都能成为顶级网站设计师
 
-> 📊 Level ⭐⭐⭐ | 20.8KB | `entities/claude-design-skill-web-design-engineer.md`
+> 📊 Level ⭐⭐⭐⭐ | 20.8KB | `entities/claude-design-skill-web-design-engineer.md`
 
 [Claude Design Skill Web Design Engineer](https://mp.weixin.qq.com/s/sffWcLKPkXob2STrhkYBYg)
 

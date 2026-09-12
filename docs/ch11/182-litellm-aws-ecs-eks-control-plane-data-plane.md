@@ -1,6 +1,6 @@
 # LiteLLM 生产级部署：AWS ECS/EKS 双方案 + Control Plane / Data Plane 分离多区域
 
-> 📊 Level ⭐⭐⭐ | 10.4KB | `entities/litellm-aws-ecs-eks-ai-gateway-architecture.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 10.4KB | `entities/litellm-aws-ecs-eks-ai-gateway-architecture.md`
 
 > [!abstract]
 > AWS China Blog 2026-06-12 架构指南：在 AWS 上以生产级标准部署 LiteLLM AI Gateway。两条路径：ECS Fargate（零运维、Serverless）与 EKS（K8s 原生、灵活），并结合 Control Plane / Data Plane 分离实现多区域高可用。
@@ -124,6 +124,9 @@ autoscaling:
 - [LiteLLM Bedrock 成本治理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/litellm-amazon-bedrock-cost-control-four-layer.md) — 姐妹篇（运行时限额 + 审计）
 - [LiteLLM + QuickSight 可视化](https://github.com/QianJinGuo/wiki-public/blob/main/entities/litellm-amazon-quicksight-visualization-configuration.md) — 姐妹篇（运维监控）
 - [AWS NFW AI 冲突检测](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-network-firewall-ai-conflict-detection-bedrock.md) — NFW 与 ECS/EKS 部署组合使用
+
+## 架构图
+→ （架构图待生成: C4 架构图）
 
 ---
 

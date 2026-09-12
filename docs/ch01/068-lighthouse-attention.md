@@ -1,6 +1,6 @@
 # Lighthouse Attention
 
-> 📊 Level ⭐⭐⭐ | 6.5KB | `entities/lighthouse_attention.md`
+> 📊 Level ⭐ | 6.5KB | `entities/lighthouse_attention.md`
 
 ## 核心要点
 - 选择性层级注意力（Selection-based Hierarchical Attention），通过对称 Q/K/V 池化在多分辨率金字塔中稀疏化注意力 
@@ -44,7 +44,7 @@ Lighthouse 选择了**对称池化**：Q、K、V 在金字塔每一层按相同�
 
 ## 相关实体
 - [Nvidias Jensen Huang Bets On This British Startup To Build Next Frontier Of Ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidias-jensen-huang-bets-on-this-british-startup-to-build-next-frontier-of-ai.md)
-- [From Doer To Director The Ai Mindset Shift](111-from-doer-to-director-the-ai-mindset-shift.html)
+- [From Doer To Director The Ai Mindset Shift](113-from-doer-to-director-the-ai-mindset-shift.html)
 - [Anthropic Puts Claude Agents On A Meter Across Its](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-puts-claude-agents-on-a-meter-across-its.md)
 - [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](https://github.com/QianJinGuo/wiki-public/blob/main/entities/akamai-acquires-israeli-ai-browser-security-startup-layerx-for-205-million-in-ca.md)
 

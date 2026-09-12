@@ -1,6 +1,6 @@
 # Where OpenClaw Security Is Heading — OpenClaw Blog
 
-> 📊 Level ⭐⭐⭐ | 10.9KB | `entities/where-openclaw-security-is-heading-openclaw-blog.md`
+> 📊 Level ⭐ | 10.9KB | `entities/where-openclaw-security-is-heading-openclaw-blog.md`
 
 ## 核心要点
 - **范式转变**：从"验证后获取"到" egress 路由 + 代理策略执行"，Proxyline 负责路由，代理负责策略 enforcement

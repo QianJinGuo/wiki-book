@@ -1,6 +1,6 @@
 # TRAE SOLO Work 模式 + 飞书多维表格：5 步搭建全自动作品采集系统（3400+ 帖子稳定运行）
 
-> 📊 Level ⭐⭐⭐ | 19.5KB | `entities/trae-solo-work-feishu-bitable-pipeline-tutorial.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 19.5KB | `entities/trae-solo-work-feishu-bitable-pipeline-tutorial.md`
 
 ## TRAE SOLO Work 模式 + 飞书多维表格：5 步搭建全自动作品采集系统
 
@@ -216,9 +216,14 @@ forum-crawler/
 
 ## 核心金句
 
+- "**与 SOLO 对话时，需求越具体越好**"
 - "**config.py = 通用配置；.env = 敏感信息**"（可移植性 + 安全性分离）
 - "**逐行更新需要半小时，清空一次性写入只要 1 分钟**"（工程 trade-off）
+- "**Prompt 中要明确指定分类选项**"
+- "**MD5 指纹 + 增量同步 = 解决全量处理效率问题**"
 - "**指数退避 1s→2s→4s→8s**"（限流应对标准模式）
+- "**Work 模式展现的意图理解能力和规划能力超强**"
+
 ### 1. AI Agent 工作流的核心矛盾：指令式交互 vs 项目级代码生成
 
 TRAE SOLO 的 Work 模式和 Code 模式代表两种截然不同的 AI 协作哲学。Work 模式本质上是**任务分解 + 执行一体化**——用户不需要理解"怎么实现"，只需要说"做什么"，AI 自动完成从规划到代码的全流程。这与传统的"AI 辅助编程"工具（Copilot、Codex）形成鲜明对比：那些工具假设用户已经知道代码结构，只是需要补全或生成片段；而 Work 模式假设用户完全不懂代码，但 AI 依然能端到端完成任务。**这个转变是 AI Agent 从"辅助工具"进化为"自主代理"的关键标志**。

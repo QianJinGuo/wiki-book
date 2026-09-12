@@ -1,6 +1,6 @@
 # DeepSeek-V4深度拆解：一篇论文同时做了五件大事
 
-> 📊 Level ⭐⭐⭐ | 7.4KB | `entities/deepseek-v4.md`
+> 📊 Level ⭐ | 7.4KB | `entities/deepseek-v4.md`
 
 > -> [原文存档](https://mp.weixin.qq.com/s/BELLFDV6hlmmFoAcJy1RZg)
 

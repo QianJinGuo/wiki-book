@@ -1,6 +1,6 @@
 # Agentic Code Review
 
-> 📊 Level ⭐⭐⭐ | 3.3KB | `entities/agentic-code-review-addyosmani.md`
+> 📊 Level ⭐ | 3.3KB | `entities/agentic-code-review-addyosmani.md`
 
 > Source: [原文存档](https://addyosmani.com/blog/agentic-code-review/)
 
@@ -34,8 +34,8 @@ Code review used to work because of a happy accident of relative speed. A senior
 - 与现有实体的差异化角度：本文来自 addyosmani.com 视角
 - 引用源：[Agentic Code Review Addyosmani](https://addyosmani.com/blog/agentic-code-review/)
 ## 相关实体
-- [from doer to director: the ai mindset shift](111-from-doer-to-director-the-ai-mindset-shift.html)
-- [why internally-built ai fails fund accounting audits](378-why-internally-built-ai-fails-fund-accounting-audits.html)
+- [from doer to director: the ai mindset shift](113-from-doer-to-director-the-ai-mindset-shift.html)
+- [why internally-built ai fails fund accounting audits](044-why-internally-built-ai-fails-fund-accounting-audits.html)
 - [back up and restore your amazon eks cluster resources using](https://github.com/QianJinGuo/wiki-public/blob/main/entities/back-up-and-restore-your-amazon-eks-cluster-resources-using-velero-amazon-web-se.md)
 
 ---

@@ -1,6 +1,6 @@
 # Unlocking the Cloudflare app ecosystem with OAuth for all
 
-> 📊 Level ⭐⭐⭐ | 6.1KB | `entities/cloudflare-oauth-for-all.md`
+> 📊 Level ⭐⭐ | 6.1KB | `entities/cloudflare-oauth-for-all.md`
 
 > **Background**：Cloudflare 官方博客，宣布为所有开发者提供 OAuth 授权能力，使第三方应用能安全地访问 Cloudflare 平台资源。这是 Cloudflare 开发者平台战略的关键一步，尤其对 Agentic 工具的委托访问具有重要意义。
 
@@ -84,6 +84,8 @@ OAuth 标准化对 AI Agent 生态具有深远影响：
 → [原文存档](https://blog.cloudflare.com/oauth-for-all/)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

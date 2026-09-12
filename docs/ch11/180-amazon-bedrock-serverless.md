@@ -1,6 +1,6 @@
 # Amazon Bedrock模型推理的Serverless异步架构 – 处理在线多模态高负载案例
 
-> 📊 Level ⭐⭐⭐ | 11.3KB | `entities/aws-bedrock-serverless-async-inference-multimodal.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 11.3KB | `entities/aws-bedrock-serverless-async-inference-multimodal.md`
 
 ["Amazon Bedrock模型推理的Serverless异步架构 – 处理在线多模态高负载案例"](https://aws.amazon.com/cn/blogs/china/amazon-bedrock-model-inference-serverless-architecture-case-study/)
 

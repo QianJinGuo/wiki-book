@@ -1,18 +1,18 @@
 # 参考文献
-> 本书基于 **1737** 篇编撰实体，覆盖 **364** 个来源站点。
+> 本书基于 **1741** 篇编撰实体，覆盖 **368** 个来源站点。
 
 ---
 ## 主要来源
 | 来源 | 文章数 |
 |---|---|
-| mp.weixin.qq.com | 1641 |
-| aws.amazon.com | 379 |
+| mp.weixin.qq.com | 1642 |
+| aws.amazon.com | 381 |
 | huggingface.co | 35 |
 | www.interconnects.ai | 35 |
 | www.xiaohongshu.com | 25 |
 | www.oneusefulthing.org | 23 |
+| arxiv.org | 22 |
 | netflixtechblog.com | 21 |
-| arxiv.org | 21 |
 | www.theregister.com | 20 |
 | unknown | 15 |
 | developer.nvidia.com | 15 |
@@ -37,4 +37,4 @@
 | blog.google | 5 |
 
 ---
-> 共 364 个来源，1737 篇编撰实体。
+> 共 368 个来源，1741 篇编撰实体。

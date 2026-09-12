@@ -1,6 +1,6 @@
 # Hermes Agent 保姆级教程：一句话组建你的 AI 打工团队
 
-> 📊 Level ⭐⭐⭐ | 8.6KB | `entities/hermes-agent-getting-started-guide-2026.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 8.6KB | `entities/hermes-agent-getting-started-guide-2026.md`
 
 ## 你能做到什么
 - 用一句话设定目标，让 Hermes 自己跑到完成

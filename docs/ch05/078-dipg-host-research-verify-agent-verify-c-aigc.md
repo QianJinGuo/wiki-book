@@ -1,6 +1,6 @@
 # DIPG 蚂蚁保 Host-Research-Verify 三 Agent 离线 verify 闭环：C 端 AIGC 工程化范式
 
-> 📊 Level ⭐⭐⭐ | 24.0KB | `entities/dipg-ant-insurance-host-research-verify-offline-closed-loop.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 24.0KB | `entities/dipg-ant-insurance-host-research-verify-offline-closed-loop.md`
 
 ## DIPG 蚂蚁保 Host-Research-Verify 三 Agent 离线 verify 闭环
 
@@ -227,7 +227,7 @@ DIPG 的独特贡献是：**把"verify 闭环"工程化到具体代码级别**�
 ## 相关实体
 - [Wall Not Model Harness Three Case Studies Stripe Deerflow Ant](https://github.com/QianJinGuo/wiki-public/blob/main/entities/wall-not-model-harness-three-case-studies-stripe-deerflow-ant.md)
 - [Nvidia Gamma World Multi Agent World Model](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-gamma-world-multi-agent-world-model.md)
-- [Anthropic Multi Agent Research System](../ch04/233-anthropic-multi-agent-research-system.html)
+- [Anthropic Multi Agent Research System](../ch04/232-anthropic-multi-agent-research-system.html)
 - [Openclacky Harness Engineering 100 Percent Cache Hit](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclacky-harness-engineering-100-percent-cache-hit.md)
 - [Factory Mission Multi Agent Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/factory-mission-multi-agent-architecture.md)
 

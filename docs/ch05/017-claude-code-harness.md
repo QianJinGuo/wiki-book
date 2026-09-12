@@ -1,6 +1,6 @@
 # 从零复刻 Claude Code：Harness 构建学习笔记
 
-> 📊 Level ⭐⭐⭐ | 7.4KB | `entities/准备开一个新坑从零复刻一个-claude-codenn目标是在这个过程中和大家一起学习-claude-code-的-harness-是如何做的nnclaude-.md`
+> 📊 Level ⭐⭐ | 7.5KB | `entities/准备开一个新坑从零复刻一个-claude-codenn目标是在这个过程中和大家一起学习-claude-code-的-harness-是如何做的nnclaude-.md`
 
 ## 准备开一个新坑：从零复刻一个 Claude Code。
 
@@ -78,13 +78,17 @@ Claude Code 源码泄漏后本来想根据它的代码直接出一个分析解�
 5. **分阶段验收，循序渐进**：作者列出的 30 个功能点并非随意排列，而是遵循从基础到高级的递进关系。建议学习者也按此顺序分阶段验收自己的实现成果，每完成一个阶段就进行测试和总结，确保基础稳固后再进入复杂功能。
 
 ## 相关实体
-- [Claude Code Harness Deep Understanding](../ch01/112-claude-code-harness-deep-understanding.html)
+- [Claude Code Harness Deep Understanding](../ch01/110-claude-code-harness-deep-understanding.html)
 - [Claude Code Harness Deep Dive Founder Park](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-harness-deep-dive-founder-park.md)
 - [Claude Code Founder Harness 100 Lines](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-founder-harness-100-lines.md)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-claude-code-large-codebase-best-practices-50002a089323.md)
 - [From Prompt To Harness Claude Official](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-prompt-to-harness-claude-official.md)
 
 → [原文存档](https://mp.weixin.qq.com/s/l2HTDuqFJXI7F2Yz8eOLyQ)
+
+## 关联
+
+- 同题异语种孪生页：[Claude Code Large Codebase Team Deployment Agent Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-large-codebase-team-deployment-agent-harness.md)（归并候选，提案卡 #11 批1）
 
 ---
 

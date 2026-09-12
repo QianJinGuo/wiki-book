@@ -1,6 +1,6 @@
 # Hermes-Wiki 实战 — Obsidian + Hermes Agent 自动生长知识网络的 9 步搭建法
 
-> 📊 Level ⭐⭐⭐ | 19.1KB | `entities/hermes-wiki-9-step-auto-growing-knowledge-network.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 19.1KB | `entities/hermes-wiki-9-step-auto-growing-knowledge-network.md`
 
 ## 概述
 

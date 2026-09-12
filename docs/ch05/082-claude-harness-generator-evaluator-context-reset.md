@@ -1,6 +1,6 @@
 # Claude Harness 设计：Generator-Evaluator 架构与 Context Reset 演进
 
-> 📊 Level ⭐⭐⭐ | 19.2KB | `entities/harness-generator-evaluator-anthropic.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 19.2KB | `entities/harness-generator-evaluator-anthropic.md`
 
 ## 概述
 Anthropic 工程师 Prithvi Rajasekaran 系统阐述**长时间运行 Agent 应用**中的 Harness 设计方法论。核心贡献：①受 GAN 启发的 Generator-Evaluator 双代理结构解决自我评估偏差；②三代理架构（Planner/Generator/Evaluator）+ sprint contract 实现全栈自主开发；③context reset vs compaction 的取舍决策框架；④Opus 4.5→4.6 演进中 scaffold 简化规律。附 20 分钟/$9（单代理）vs 6 小时/$200（完整 harness）的对照数据。
@@ -168,7 +168,7 @@ Generator 提出构建计划时，evaluator 要审查的是「这个功能怎么
 - [Anthropic 官方 Agent Harness 平台：Claude Managed Agents 完整指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-官方-agent-harness-平台claude-managed-agents-完整指南.md)
 - [Ai Agent Harness Construction Akshay Baoyu](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-harness-construction-akshay-baoyu.md)
 - [Code As Agent Harness Survey](https://github.com/QianJinGuo/wiki-public/blob/main/entities/code-as-agent-harness-survey.md)
-- [Agent Harnesses Are Dead Long Live Agent Harnesses](../ch04/175-agent-harnesses-are-dead-long-live-agent-harnesses.html)
+- [Agent Harnesses Are Dead Long Live Agent Harnesses](../ch04/174-agent-harnesses-are-dead-long-live-agent-harnesses.html)
 - [Harness 之后 状态边界与失败闭环 若飞](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-之后-状态边界与失败闭环-若飞.md)
 - [Agentscope Java 2.0 Enterprise Distributed Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentscope-java-2.0-enterprise-distributed-harness.md)
 - [Gaode Uplift Model Iteration Agent Long Running Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gaode-uplift-model-iteration-agent-long-running-harness.md)

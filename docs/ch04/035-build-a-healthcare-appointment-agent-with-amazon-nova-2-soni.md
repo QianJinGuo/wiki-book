@@ -1,6 +1,6 @@
 # Build a Healthcare Appointment Agent with Amazon Nova 2 Sonic
 
-> 📊 Level ⭐⭐⭐ | 3.9KB | `entities/build-a-healthcare-appointment-agent-with-amazon-nova-2-soni.md`
+> 📊 Level ⭐ | 3.9KB | `entities/build-a-healthcare-appointment-agent-with-amazon-nova-2-soni.md`
 
 ## 核心洞察
 
@@ -55,6 +55,9 @@ CDK v2 一键部署，包含 Cognito + DynamoDB + SNS + AgentCore Runtime。
 3. **端到端部署**：CDK 一键部署到 AWS，含认证+持久化+通知
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- 相关: Agent 架构
 
 ---
 

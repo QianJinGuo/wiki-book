@@ -1,6 +1,6 @@
 # 京东健康 OPC 团队产品全流程 Skill 探索
 
-> 📊 Level ⭐⭐⭐ | 10.5KB | `entities/jd-health-opc-skill-full-process.md`
+> 📊 Level ⭐⭐⭐⭐ | 10.6KB | `entities/jd-health-opc-skill-full-process.md`
 
 ## 摘要
 
@@ -102,7 +102,13 @@ OPC（One Person Company）模式的核心理念是让小型团队拥有端到�
 - [面向 Agent 的后端设计](https://github.com/QianJinGuo/wiki-public/blob/main/entities/backend-for-agent.md)
 - [企业 Agent 编排](https://github.com/QianJinGuo/wiki-public/blob/main/entities/enterprise-agent-orchestration.md)
 
+## 来源
+
 → [原文存档](http://mp.weixin.qq.com/s?__biz=MzU1MzE2NzIzMg==&mid=2247502365&idx=1&sn=939804524a4d29f68e4170beb134dd89&chksm=fbf47af2cc83f3e4b82aea476c7d386da1261f42e9c8f944947fe716b4592a976357454f6b5f#rd)
+
+## 关联
+
+- 同题异语种孪生页：[京东健康Opc团队的产品全流程Skill探索](https://github.com/QianJinGuo/wiki-public/blob/main/entities/京东健康opc团队的产品全流程skill探索.md)（归并候选，提案卡 #11 批1）
 
 ---
 

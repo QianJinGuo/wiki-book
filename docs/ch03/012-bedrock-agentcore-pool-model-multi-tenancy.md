@@ -1,6 +1,6 @@
 # Bedrock AgentCore Pool Model Multi-Tenancy
 
-> 📊 Level ⭐⭐⭐ | 4.2KB | `entities/shared-infrastructure-isolated-tenants-pool-model-multi-tenancy-with-amazon-bedrock-agentcore.md`
+> 📊 Level ⭐⭐ | 4.2KB | `entities/shared-infrastructure-isolated-tenants-pool-model-multi-tenancy-with-amazon-bedrock-agentcore.md`
 
 > **Background**：基于 AWS 官方技术博客（2026-06-23），介绍 Amazon Bedrock AgentCore 的多租户架构模式。以医疗 AI 助手为示例，展示 Tier → Tenant → User 三级隔离体系，但模式通用适用于各类 SaaS 多租户 Agent 系统。
 
@@ -74,6 +74,9 @@ User (终端用户: 医生 / 护士)
 - Healthcare AI — 医疗 AI 应用场景
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- 相关: Agent 架构
 
 ---
 

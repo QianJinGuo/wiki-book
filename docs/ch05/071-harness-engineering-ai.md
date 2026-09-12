@@ -1,6 +1,6 @@
 # Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式
 
-> 📊 Level ⭐⭐⭐ | 37.1KB | `entities/harness-engineering.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 37.1KB | `entities/harness-engineering.md`
 
 ## 核心命题
 **AI 不缺能力，缺的是一套让它不翻车的系统。**
@@ -147,7 +147,7 @@ Harness Engineering 是 AI Skill 测评体系的**上位工程框架**：
 - [Harness Component Expiry Evidence](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-component-expiry-evidence.md)
 - [Harness Component Expiry Build To Delete](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-component-expiry-build-to-delete.md)
 - [Harness Engineering Theory To Practice Helen](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-theory-to-practice-helen.md)
-- [Evaluating Netflix Show Synopses With Llm As A Judge](../ch01/139-evaluating-netflix-show-synopses-with-llm-as-a-judge.html)
+- [Evaluating Netflix Show Synopses With Llm As A Judge](../ch01/138-evaluating-netflix-show-synopses-with-llm-as-a-judge.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/llm-core-technology.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-engineering-guide.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/loop-engineering.md)

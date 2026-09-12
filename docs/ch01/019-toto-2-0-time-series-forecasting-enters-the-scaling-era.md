@@ -1,6 +1,6 @@
 # Toto 2.0: Time series forecasting enters the scaling era
 
-> 📊 Level ⭐⭐⭐ | 9.4KB | `entities/toto-2.md`
+> 📊 Level ⭐ | 9.4KB | `entities/toto-2.md`
 
 ## 核心要点
 - Datadog 开源的时间序列预测基础模型家族，4M 到 2.5B 参数

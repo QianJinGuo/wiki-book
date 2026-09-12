@@ -1,6 +1,6 @@
 # alibabacloud-cms-manage Skill：阿里云 CMS 2.0 可观测接入的 AI Agent Skill 化（CLI 6 步 + K8s ack-onepilot 自动注入 + 两阶段确认 + 5 大实战场景）
 
-> 📊 Level ⭐⭐⭐ | 23.8KB | `entities/alibabacloud-cms-manage-skill-natural-language-observability.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 23.8KB | `entities/alibabacloud-cms-manage-skill-natural-language-observability.md`
 
 ## alibabacloud-cms-manage Skill：阿里云 CMS 2.0 可观测接入的 AI Agent Skill 化
 
@@ -216,7 +216,7 @@ https://skills.aliyun.com/skills/alibabacloud-cms-manage
 
 ## 第 2 来源 — 陈廷彬颍川 2026-06-14 续篇: 5 大实战场景 + 完整 CLI 命令树 + "可控自动化" 设计原则
 
-**作者**: 陈廷彬(颍川) | **发布**: 2026-06-14 | **类型**: 同源不同作者续篇
+**作者**: 陈廷彬(颍川) | **发布**: 2026-06-14 | **** | **类型**: 同源不同作者续篇
 **原文**: [mp.weixin.qq.com/s/57VtC2cq2sTEWHGRPEqDGA](https://mp.weixin.qq.com/s/57VtC2cq2sTEWHGRPEqDGA)
 **与第 1 来源关系**: 同一公众号「阿里云云原生」+ 同一产品 (`aliyun cms2` + `alibabacloud-cms-manage Skill`) + 不同作者(铖朴/珂帆 vs 陈廷彬) + 7 天后续篇
 **互补角度 6 条**(第 1 来源 APM 接入 vs 第 2 来源场景全景):

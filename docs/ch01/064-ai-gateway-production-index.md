@@ -1,6 +1,6 @@
 # AI Gateway production index
 
-> 📊 Level ⭐⭐⭐ | 6.7KB | `entities/aigatewayproductionindex.md`
+> 📊 Level ⭐ | 6.7KB | `entities/aigatewayproductionindex.md`
 
 ## 核心要点
 - AI/ML 技术文章

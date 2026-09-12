@@ -1,6 +1,6 @@
 # Backpressure is all you need
 
-> 📊 Level ⭐⭐⭐ | 16.0KB | `entities/lucasfcostacom-blog-backpressure-is-all-you-need.md`
+> 📊 Level ⭐ | 16.0KB | `entities/lucasfcostacom-blog-backpressure-is-all-you-need.md`
 
 ## 核心要点
 

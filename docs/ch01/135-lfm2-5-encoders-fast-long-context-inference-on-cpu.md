@@ -1,6 +1,6 @@
 # LFM2.5-Encoders: Fast Long-Context Inference on CPU
 
-> 📊 Level ⭐⭐⭐ | 3.1KB | `entities/liquid-ai-lfm2-5-encoders-fast-long-context-cpu.md`
+> 📊 Level ⭐ | 3.1KB | `entities/liquid-ai-lfm2-5-encoders-fast-long-context-cpu.md`
 
 Liquid AI 发布 LFM2.5-Encoders 系列（230M / 350M 双向编码器），从 LFM2 decoder backbone 初始化并转为双向架构，主打 CPU 上的长上下文推理与低延迟。
 

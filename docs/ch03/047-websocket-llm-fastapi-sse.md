@@ -1,6 +1,6 @@
 # 还在用WebSocket做LLM流式传输？FastAPI + SSE让你少踩一半坑
 
-> 📊 Level ⭐⭐⭐ | 13.4KB | `entities/fastapi-sse-llm-streaming-vs-websocket-5e4a458abf18.md`
+> 📊 Level ⭐⭐⭐⭐ | 13.4KB | `entities/fastapi-sse-llm-streaming-vs-websocket-5e4a458abf18.md`
 
 ## 核心结论
 
@@ -157,6 +157,8 @@ HTTP/1.1 的 6 个并发连接限制是 SSE 在高并发场景的主要瓶颈。
 7. **在 Kubernetes 环境中部署 SSE 服务时，注意 `readinessProbe` 和 `livenessProbe` 的配置**：SSE 是长连接，如果使用 HTTP GET 做健康检查，会占用连接池。推荐使用独立的 `/health` 端点返回 `200 OK` + 空响应，或者使用 TCP Socket 检查。
 
 8. **使用 Prometheus 监控 SSE 连接数和断开率**：关键指标包括 `sse_connections_active`（当前连接数）、`sse_disconnections_total`（总断开数）、`sse_tokens_sent_total`（已发送 token 数）。断开率突然升高通常是客户端网络问题或 LLM 服务不稳定的信号。
+
+## 关联阅读
 
 - [FastAPI SSE LLM 流式传输实战](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fastapi-sse-llm-streaming.md) — 同一主题的补充实践案例
 - [FastAPI 认证限流零停机部署](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fastapi-auth-rate-limit-zero-downtime.md) — FastAPI 生产部署的最佳实践

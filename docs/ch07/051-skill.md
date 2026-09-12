@@ -1,6 +1,6 @@
 # Skill 设计模式
 
-> 📊 Level ⭐⭐⭐ | 25.5KB | `entities/skill-design-patterns.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 25.5KB | `entities/skill-design-patterns.md`
 
 ## Overview
 从 7 个顶级 Skill 仓库（OpenAI/anthropic/Google Labs/Dean Peters/Trail of Bits）中提炼出的 5 种核心设计模式 + 1 种特殊模式。为 Agent Skill 开发提供系统性框架选择指南，告别"怎么写都行"的随意性。

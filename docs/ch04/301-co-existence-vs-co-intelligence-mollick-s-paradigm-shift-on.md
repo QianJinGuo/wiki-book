@@ -1,6 +1,6 @@
 # Co-Existence vs Co-Intelligence: Mollick's Paradigm Shift on AI Autonomy
 
-> 📊 Level ⭐⭐⭐ | 11.8KB | `entities/co-existence-paradigm-shift-agentic-ai-mollick-2026.md`
+> 📊 Level ⭐⭐⭐⭐ | 11.8KB | `entities/co-existence-paradigm-shift-agentic-ai-mollick-2026.md`
 
 > 2026-06-05 引用自 Ethan Mollick 《Co-Existence and the End of Co-Intelligence》, One Useful Thing, 2026-06-04. 原文为 Mollick 新书《Co-Existence》pre-order 配套文章。
 
@@ -20,6 +20,7 @@ Ethan Mollick（沃顿商学院教授、One Useful Thing 作者）2024 年出版
 
 **关键触发证据（2025 末 - 2026 初）**：
 - **Anthropic 报告**：AI 写 80% 自家代码，单个开发者产出 8x（与 SSRN 论文 17x 增量相互佐证）
+- "Software development is changing, and what is happening in coding is going to be happening in many fields"
 - 这种"自主编码 agent" 2025 末才被实际看到——之前"感觉遥远"
 
 ## 三个独有贡献（不应合并到现有 entity）

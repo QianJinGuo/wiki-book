@@ -1,6 +1,6 @@
 # CISA urges critical infrastructure firms to 'fortify' before it's too late | Cybersecurity Dive
 
-> 📊 Level ⭐⭐⭐ | 12.0KB | `entities/cisa-urges-critical-infrastructure-firms-to-fortify-before-i.md`
+> 📊 Level ⭐ | 12.0KB | `entities/cisa-urges-critical-infrastructure-firms-to-fortify-before-i.md`
 
 ## 核心要点
 - **地缘政治驱动**：CISA 发布 CI Fortify 指南的核心背景是担忧中国可能在美国介入台海冲突时，对西方关键基础设施发动网络 sabotage

@@ -1,6 +1,6 @@
 # 腾讯企业微信团队 Skill 流水线：AI代码生成率94%的需求开发全流程
 
-> 📊 Level ⭐⭐⭐ | 5.3KB | `entities/tencent-wework-skill-requirement-development-pipeline.md`
+> 📊 Level ⭐ | 5.3KB | `entities/tencent-wework-skill-requirement-development-pipeline.md`
 
 > **来源**：腾讯技术工程 - 企业微信团队 gomezlai，2026-07-20
 > **核心命题**：**AI 不是不会写代码，是不会"按工程规范"开发需求**。把需求开发流程化、原子化、可校验化，然后用一个 Skill 串起所有阶段。
@@ -85,6 +85,8 @@ TECH_SPEC.md 作为跨会话知识传承的外部文件，比依赖模型的内�
 → [原文存档](https://mp.weixin.qq.com/s/mGGIbFyF4U1PrBJVdfgcvg)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

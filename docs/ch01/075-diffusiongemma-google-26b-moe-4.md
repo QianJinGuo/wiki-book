@@ -1,6 +1,6 @@
 # DiffusionGemma：扩散式文本生成模型（Google 26B MoE，4× 推理加速）
 
-> 📊 Level ⭐⭐⭐ | 6.1KB | `entities/diffusiongemma-4x-faster-text-generation-google-2026-06.md`
+> 📊 Level ⭐ | 6.1KB | `entities/diffusiongemma-4x-faster-text-generation-google-2026-06.md`
 
 > 原文存档：[原文存档](https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/)
 
@@ -57,6 +57,8 @@ Google 2026-06-10 发布的实验性开放模型，Apache 2.0 协议，基于 Ge
 - MoE 架构 (pending concept)（待建）
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ## 第 3 来源 — DiffusionGemma Technical Report (arXiv 2608.00146)
 

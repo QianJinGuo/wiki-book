@@ -1,6 +1,6 @@
 # K-Dense — The Model Is No Longer the Bottleneck
 
-> 📊 Level ⭐⭐⭐ | 12.6KB | `entities/k-dense-the-model-is-no-longer-the-bottleneck.md`
+> 📊 Level ⭐⭐⭐⭐ | 12.6KB | `entities/k-dense-the-model-is-no-longer-the-bottleneck.md`
 
 > **Source**: [K-Dense AI Blog](https://www.k-dense.ai/blog/the-model-is-no-longer-the-bottleneck) (2026-06, 9.7KB) by K-Dense team. 原始内容存于 `[K Dense The Model Is No Longer The Bottleneck](https://www.k-dense.ai/blog/the-model-is-no-longer-the-bottleneck)`。
 >
@@ -85,7 +85,7 @@
 
 ---
 
-文章不长（9.7KB）但 4 个 case 数据扎实，论点清晰（"model is no longer the bottleneck" 假说），与现有 harness engineering 体系高度契合。
+**Score**: , — 文章不长（9.7KB）但 4 个 case 数据扎实，论点清晰（"model is no longer the bottleneck" 假说），与现有 harness engineering 体系高度契合。
 
 **Tags**: harness, agentic, context-engineering, scientific-ai, k-dense, bottleneck, multi-agent, feedback-loop
 
@@ -115,6 +115,8 @@
    - 核心观点：蛋白质设计 case 中，4 轮迭代后 binder 亲和力提升 12×，而单次生成仅 1×。关键在于 harness 包含数据回流机制，让模型在每一轮 dry-lab 评分后接收 wet-lab 实验反馈。
    - 技术要点：这是"模型在环"（model-in-the-loop）的具体实现——不是一次性生成，而是生成→评分→反馈→再生成的迭代循环。
    - 实践价值：对 [Harness Loop Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-loop-architecture.md) 提供了wet-lab 实验数据闭环的案例。
+
+## 实践启示
 
 1. **评估科学 AI 项目时，首先问"模型周围的系统"而非"用哪个模型"** — 在 GPT-5/Opus 4.5 时代，模型选择差异<5%，真正的价值上限由 harness 决定。优先评估数据接入、代码执行、验证机制、审计输出的完整性。
 

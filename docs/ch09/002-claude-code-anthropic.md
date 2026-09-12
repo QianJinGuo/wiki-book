@@ -1,6 +1,6 @@
 # Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南
 
-> 📊 Level ⭐⭐⭐ | 5.2KB | `entities/claude-code-large-codebase-enterprise-deployment.md`
+> 📊 Level ⭐ | 5.4KB | `entities/claude-code-large-codebase-enterprise-deployment.md`
 
 > 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.8**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/claude-code-large-codebase-enterprise-deployment.md`，一手来源仍见下方 sources。
@@ -36,6 +36,10 @@
 ## 延伸导航
 - [Claude Code 生态完全指南](https://github.com/QianJinGuo/wiki-public/blob/main/moc/claude-code-complete-guide.md)
 - [Loop Engineering 主题地图 (MOC)](https://github.com/QianJinGuo/wiki-public/blob/main/moc/loop-engineering.md)
+
+## 关联
+
+- 同题异语种孪生页：[两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/两万字详解claude-code源码核心机制.md)（归并候选，提案卡 #11 批1）
 
 ---
 

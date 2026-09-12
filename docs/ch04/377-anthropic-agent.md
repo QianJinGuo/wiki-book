@@ -1,6 +1,6 @@
 # Anthropic：生物学Agent的瓶颈不在模型，而在数据基础设施
 
-> 📊 Level ⭐⭐⭐ | 16.6KB | `entities/anthropic-biology-agent-data-infrastructure-virbench.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 16.6KB | `entities/anthropic-biology-agent-data-infrastructure-virbench.md`
 
 ## 摘要
 

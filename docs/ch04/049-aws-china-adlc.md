@@ -1,6 +1,6 @@
 # AWS China 企业级智能体评估方法论 ADLC 系列
 
-> 📊 Level ⭐⭐⭐ | 11.3KB | `entities/aws-china-enterprise-agent-evaluation-adlc.md`
+> 📊 Level ⭐⭐ | 11.3KB | `entities/aws-china-enterprise-agent-evaluation-adlc.md`
 
 > **Background**：本文基于 AWS China Blog 2026 年 6 月发布的三篇系列文章综合提炼。系列主题是企业级 AI Agent 从原型到生产的评估方法论，核心框架为 ADLC（Agent Development Lifecycle）。三篇分别覆盖：为什么评估是起点（Part 1）、评估维度与方法论（Part 2）、工程化落地与工具支持（Part 3）。
 
@@ -99,7 +99,7 @@ ADLC 的独特贡献是**将评估定义为 Agent 开发生命周期的一等公
 
 ## 完整四篇指南补充：三误区、两支柱细节与三案例（原文 PDF 2026-08）
 
-用户提供的亚马逊《企业生产级智能体开发部署指南》完整四篇原文 PDF（56 页扫描版 OCR)补强本实体，以下维度在库内 raw 全部零覆盖：
+用户提供的亚马逊《企业生产级智能体开发部署指南》完整四篇原文 PDF（56 页扫描版 OCR，/ SUPP）补强本实体，以下维度在库内 raw 全部零覆盖：
 
 ### 三个评估误区
 
@@ -131,12 +131,17 @@ ADLC 的独特贡献是**将评估定义为 Agent 开发生命周期的一等公
 - **客服智能体（意图检测评估）**：匿名化历史交互构造 ground truth + **LLM Simulator 虚拟客户 persona** 扩覆盖面；指标 Intent Correctness/Task Completion/Topic Adherence
 - **卖家助手（多智能体协作评估）**：Planner-Specialist 模式（Planner & Task Orchestrator 拆解分配 → 专精子智能体自主执行 → 回报/升级 → 编排器聚合）；指标规划评分/通信效率/协作成功率；**自动指标抓不住涌现行为，多智能体场景 HITL 是必选项**（四职责：协调失败识别/专精划分合理性/矛盾建议冲突解决/集体逻辑一致性）
 
+## 来源
+
 - → [Part 1: 为什么评估是起点](https://aws.amazon.com/cn/blogs/china/part-1-enterprise-intelligent-why-evaluation/)
 - → [Part 2: 从原型验证到生产就绪](https://aws.amazon.com/cn/blogs/china/part-2-enterprise-intelligent-validation/)
 - → [Part 3: 如何构建企业级智能体](https://aws.amazon.com/cn/blogs/china/part-3-how-to-build-enterprise-intelligent/)
 - → [完整四篇指南原文 PDF](https://aws.amazon.com/cn/blogs/china/)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- 相关: Agent 架构
 
 ---
 

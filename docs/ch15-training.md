@@ -30,7 +30,7 @@
 
 ## Ch15.001 Predicting Risk in Content Launches
 
-> 📊 Level ⭐⭐⭐ | 4.4KB | `entities/predicting-risk-in-content-launches-how-data-driven-insights.md`
+> 📊 Level ⭐ | 4.4KB | `entities/predicting-risk-in-content-launches-how-data-driven-insights.md`
 
 # Predicting Risk in Content Launches: How Data-Driven Insights can Transform Launch Planning
 
@@ -59,12 +59,14 @@ Figure 1. At an asset-level we generally see that scheduled date accuracy and co
 This isn’t unexpected — productions are dynamic, facing frequent changes, scheduling conflicts, and unforeseen obstacles that can shift timelines without warning. As a result, there’s a clear opportunity to leverage the wealth of production data we collect to predict the risk of schedule slips. By developing a predictive model, we aim to both fill in ETA gaps (providing asset delivery estimates when
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 
 ## Ch15.002 多模态预训练物理：知识流、模态协同、早期统一与高效配方（arXiv 2608.05000）
 
-> 📊 Level ⭐⭐⭐ | 3.3KB | `entities/multimodal-pretraining-physics-knowledge-flow-arxiv-2608-05000.md`
+> 📊 Level ⭐ | 3.3KB | `entities/multimodal-pretraining-physics-knowledge-flow-arxiv-2608-05000.md`
 
 # 多模态预训练物理：知识流、模态协同、早期统一与高效配方
 
@@ -92,11 +94,14 @@ This isn’t unexpected — productions are dynamic, facing frequent changes, sc
 
 → [原文存档](https://arxiv.org/abs/2608.05000)
 
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+
 ---
 
 ## Ch15.003 不用人类手写训练框架了！AI自己写代码，训出1B端侧「小钢炮」
 
-> 📊 Level ⭐⭐⭐ | 5.8KB | `entities/minicpm5-1b-forgetrain-machine-heart.md`
+> 📊 Level ⭐⭐ | 5.8KB | `entities/minicpm5-1b-forgetrain-machine-heart.md`
 
 > **来源**：机器之心（2026-05-26）| 原文存档：[原文存档](https://mp.weixin.qq.com/s/2tdHV01FL_YGUmZQ12DS2A)
 
@@ -173,13 +178,13 @@ MiniCPM5-1B 的特殊之处：
 
 ## Ch15.004 EMO: Pretraining mixture of experts for emergent modularity | Ai2
 
-> 📊 Level ⭐⭐⭐ | 5.3KB | `entities/emo-pretraining-mixture-of-experts-for-emergent-modularity-ai2.md`
+> 📊 Level ⭐⭐ | 5.3KB | `entities/emo-pretraining-mixture-of-experts-for-emergent-modularity-ai2.md`
 
 [Skip to main content ->](https://allenai.org/blog/emo#main-content)
 [Ai2](https://www.allenai.org/)
 
 ## 相关实体
-- [Stochastic Parrot Thought Experiment](ch01/182-stochastic-parrot-thought-experiment.html)
+- [Stochastic Parrot Thought Experiment](ch01/180-stochastic-parrot-thought-experiment.html)
 - [While Breathless In Stodgy Viridian](https://github.com/QianJinGuo/wiki-public/blob/main/entities/while-breathless-in-stodgy-viridian.md)
 - [Aws Grpo Rlvr Sagemaker Math Reasoning](ch11/183-aws-grpo-rlvr-sagemaker-math-reasoning.html)
 - [Ai True Moat Not Llm But Organization](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-true-moat-not-llm-but-organization.md)
@@ -196,6 +201,8 @@ EMO 的核心创新在于把"模块化"从一个人为先验变成了从数据�
 文档池大小的随机采样是 EMO 防止过拟合到单一池大小的关键设计。固定池大小会让模型只适应一种专家子集规模，削弱推理时的灵活性。随机采样则让模型在训练时就见过各种规模的专家子集，从而在推理时可以自由选择任意规模的专家子集而不性能崩溃。这个设计让 EMO 支持灵活的"精度-内存权衡"：只需要 12.5% 的专家就能保留接近全模型性能 。
 
 专家选择成本的极低是 EMO 最有实践价值的发现之一。用单个 few-shot 示例就能识别出与完整验证集选择的专家子集相当的模块。这意味着在部署时，可以极低成本地为新任务构建专用专家子集，而不需要大规模的验证数据。结合 Easy-EP 等专家剪枝方法还能进一步提升性能 。
+
+## 实践启示
 
 1. **在训练 MoE 时，如果希望专家按语义领域组织，用文档边界作为监督信号比人工定义领域标签更有效**。文档级专家池约束让专家自己发现语义聚合，不需要预先标注领域数据，同时避免了预定义领域带来的过强人类偏见 。
 
@@ -715,7 +722,7 @@ TBA 把采样从训练闭环里解耦出来——这是 LLM RL 后训练数量�
 ## 相关实体
 - [On Policy Distillation Vs Offline Distillation Loster](https://github.com/QianJinGuo/wiki-public/blob/main/entities/on-policy-distillation-vs-offline-distillation-loster.md)
 - [Overcoming Reward Signal Challenges Verifiable Rewards Based Reinforcement Learn](https://github.com/QianJinGuo/wiki-public/blob/main/entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md)
-- [Reinforcing Recursive Language Models Alphaxiv](ch01/387-reinforcing-recursive-language-models-alphaxiv.html)
+- [Reinforcing Recursive Language Models Alphaxiv](ch01/391-reinforcing-recursive-language-models-alphaxiv.html)
 - [Skillos](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skillos.md)
 - [Yann Dubois Openai Post Training Interview](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yann-dubois-openai-post-training-interview.md)
 
@@ -843,7 +850,7 @@ GRPO用相对排序替代PPO的Critic模型，节省30%~50%计算开销，但核
 → [原文存档](https://mp.weixin.qq.com/s/jabnGpTJ8sCc7kBj11pm8A)
 
 - [Token 退化问题：分词器与后训练数据分布失配](https://github.com/QianJinGuo/wiki-public/blob/main/entities/minimax-token-degradation-jiqia.md)
-- [Self Taught Rlvr](ch01/390-self-taught-rlvr.html)
+- [Self Taught Rlvr](ch01/394-self-taught-rlvr.html)
 - [Llm Rl Algorithms Ppo Dpo Grpo Marl Evolution 2026](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/llm-rl-algorithms-ppo-dpo-grpo-marl-evolution-2026.md)
 - [Slim Cuhk Skill Lifecycle Agentic Rl](https://github.com/QianJinGuo/wiki-public/blob/main/entities/slim-cuhk-skill-lifecycle-agentic-rl.md)
 - [frontier post-training recipe review with finbarr timbers](https://github.com/QianJinGuo/wiki-public/blob/main/entities/finbarr-timbers-frontier-post-training-recipe-review-2026.md)
@@ -912,10 +919,13 @@ Meta-RL with Self-Reflection 的核心洞察是：当前 LLM 的 RL 训练完全
 - RLHF
 - Post-training
 - Agent 记忆系统
-- [Karpathy: Agentic Engineering](ch04/009-karpathy-vibe-coding-agentic-engineering.html)
+- [Karpathy: Agentic Engineering](ch04/105-karpathy-vibe-coding-agentic-engineering.html)
 - MOC: Evaluation Landscape
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- 相关: Agent 架构
 
 ---
 
@@ -1107,7 +1117,7 @@ Evidence 是 Heidi 微调过的最难模型，也是第一个 agentic 模型。�
 
 - [LLM RL 算法综述](https://github.com/QianJinGuo/wiki-public/blob/main/entities/2026-llm-rl-algorithms-deeplog-imba-ppo-dpo-grpo-marl.md) — DPO 作为本文核心训练方法的算法背景
 - [Amazon Nova Lite 微调](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-nova-lite-fine-tuning-cost-effective-vision-detection-model-tuning-case-and-practice.md) — 另一个垂直领域微调的工程实践
-- [递归强化语言模型](ch01/387-reinforcing-recursive-language-models-alphaxiv.html) — 奖励模型与偏好学习的理论框架
+- [递归强化语言模型](ch01/391-reinforcing-recursive-language-models-alphaxiv.html) — 奖励模型与偏好学习的理论框架
 - [腾讯 Token 经济学](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tencent-token-economics-ai-productivity.md) — AI 模型的成本-质量权衡分析
 
 → [原文存档](https://www.heidihealth.com/blog/clinical-ai-model-fine-tuning)
@@ -1119,7 +1129,7 @@ Evidence 是 Heidi 微调过的最难模型，也是第一个 agentic 模型。�
 > 📊 Level ⭐⭐⭐ | 5.8KB | `entities/notes-on-pretraining-parallelisms-and-failed-training-runs.md`
 
 ## 核心要点
-- - 来源：dwarkesh
+- 来源：dwarkesh
 ## 相关实体
 - [Building Blocks For Foundation Model Training And Inference On Aws](https://github.com/QianJinGuo/wiki-public/blob/main/entities/building-blocks-for-foundation-model-training-and-inference-on-aws.md)
 - [Gemma 4 Qat Models Optimizing Compression](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gemma-4-qat-models-optimizing-compression.md)
@@ -1162,7 +1172,7 @@ GPT-4 训练初期的一个致命 Bug 正是源于此：FP16 的尾数位在数�
 
 ## Ch15.018 在线蒸馏OPD vs 离线蒸馏SFT：数学原理与实战优势
 
-> 📊 Level ⭐⭐⭐ | 14.8KB | `entities/on-policy-distillation-vs-offline-distillation-loster.md`
+> 📊 Level ⭐⭐⭐⭐ | 14.8KB | `entities/on-policy-distillation-vs-offline-distillation-loster.md`
 
 ## 核心定义
 **离线蒸馏（SFT/Off-Policy）**：Teacher生成固定数据，Student通过SFT模仿。暴露偏差+复合误差+Mode-Covering导致小模型学到"平均值"幻觉。
@@ -1317,7 +1327,7 @@ OPD虽然解决了Mode-Covering问题，但引入了自己的隐患：Mode Colla
 
 ## Ch15.019 RL Beyond the Verifiable: 当奖励信号无法自动验证时
 
-> 📊 Level ⭐⭐⭐ | 13.6KB | `entities/rl-beyond-the-verifiable-tanayj.md`
+> 📊 Level ⭐⭐⭐⭐ | 13.6KB | `entities/rl-beyond-the-verifiable-tanayj.md`
 
 > Dario Amodei 认为 90% 概率十年内出现"数据中心里的天才国家"，但最大的不确定性来自无法验证的任务——写小说、规划火星任务、基础科学发现。本文探讨 RLVR（可验证奖励强化学习）的边界与替代方案。
 
@@ -1526,7 +1536,7 @@ OpenRubrics 等工作现在专注于规模化生成这些评分标准。这是�
 
 ## 相关实体
 
-- [Self-Taught RLVR](ch01/390-self-taught-rlvr.html) — 自监督 RLVR 训练方法
+- [Self-Taught RLVR](ch01/394-self-taught-rlvr.html) — 自监督 RLVR 训练方法
 - [AWS GRPO RLVR](ch11/183-aws-grpo-rlvr-sagemaker-math-reasoning.html) — AWS 在 SageMaker 上实现的 RLVR
 - [Verifiable Rewards RL](https://github.com/QianJinGuo/wiki-public/blob/main/entities/overcoming-reward-signal-challenges-verifiable-rewards-based-reinforcement-learn.md) — 可验证奖励 RL 的技术细节
 
@@ -1536,7 +1546,7 @@ OpenRubrics 等工作现在专注于规模化生成这些评分标准。这是�
 
 ## Ch15.020 ICML 2026 | PRISM: Parallel Residual Iterative Sequence Model
 
-> 📊 Level ⭐⭐⭐ | 10.5KB | `entities/icml-2026-prism-parallel-residual-iterative-sequence-model.md`
+> 📊 Level ⭐⭐⭐⭐ | 10.5KB | `entities/icml-2026-prism-parallel-residual-iterative-sequence-model.md`
 
 > **核心洞察**：PRISM 揭示了 TTT-MLP 高表达力（"步长 × 残差 × 方向"多步迭代）与串行瓶颈是**同一根因的两面**，通过 anchor 代理消除 token 间串行 + 闭合式预计算消除 step 间串行，实现 TTT 级别质量 × GDN 级别速度。[原文存档](https://mp.weixin.qq.com/s/luHnepErnw3Ujfjcr5YIQg)
 
@@ -1683,7 +1693,7 @@ PRISM 的"基础迭代 + low rank 旁路"结构与 LoRA 形式完全对应：冻
 
 ## Ch15.021 NVIDIA-ZPPO: Zone of Proximal Policy Optimization
 
-> 📊 Level ⭐⭐⭐ | 6.9KB | `entities/nvidia-zppo-zone-proximal-policy-optimization.md`
+> 📊 Level ⭐⭐⭐⭐ | 6.9KB | `entities/nvidia-zppo-zone-proximal-policy-optimization.md`
 
 > **来源**: byungkwanlee.github.io
 > **作者**: NVIDIA Research (Byungkwan Lee et al.)
@@ -1784,7 +1794,7 @@ ZPPO 的实验结果进一步证实了一个趋势：naive knowledge distillatio
 
 ## Ch15.022 Generalization Dynamics of LM Pre-training — Jiaxin Wen
 
-> 📊 Level ⭐⭐⭐ | 27.9KB | `entities/generalization-dynamics-lm-pretraining.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 27.9KB | `entities/generalization-dynamics-lm-pretraining.md`
 
 ## 核心要点
 
@@ -2162,7 +2172,7 @@ Mode-hopping 在不同数据集上的普遍性如何？例如，在 Flipped Answ
 
 ## Ch15.023 Mind Lab LoRA 持续学习体系：δ-mem + MinT + LoRA Scaling Law + Macaron-A2UI
 
-> 📊 Level ⭐⭐⭐ | 18.2KB | `entities/mind-lab-lora-continual-learning-system.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 18.2KB | `entities/mind-lab-lora-continual-learning-system.md`
 
 ## 概述
 
@@ -2399,7 +2409,7 @@ Macaron-A2UI 表面上是应用层的成果，但实则是对整个体系理论�
 
 ## Ch15.024 Fine-Tuning Cosmos
 
-> 📊 Level ⭐⭐⭐ | 16.9KB | `entities/fine-tuning-cosmos.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 16.9KB | `entities/fine-tuning-cosmos.md`
 
 ## 核心要点
 
@@ -2760,7 +2770,7 @@ LoRA/DoRA 微调 Cosmos Predict 2.5 的本质不是让模型"重新学习物理"
 
 ## Ch15.025 SFT, RL, and On-Policy Distillation Through a Distributional Lens
 
-> 📊 Level ⭐⭐⭐ | 15.7KB | `entities/untitled-v2.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 15.7KB | `entities/untitled-v2.md`
 
 → [原文存档](https://nrehiew.github.io/blog/sft_rl_opd/)
 

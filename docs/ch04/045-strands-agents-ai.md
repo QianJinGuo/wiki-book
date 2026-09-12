@@ -1,6 +1,6 @@
 # 基于 Strands Agents 构建亚马逊云科技云成本分析与优化 AI 助手
 
-> 📊 Level ⭐⭐⭐ | 14.4KB | `entities/strands-agents-cloud-cost-optimizer.md`
+> 📊 Level ⭐⭐ | 14.4KB | `entities/strands-agents-cloud-cost-optimizer.md`
 
 > 使用 Strands Agents 构建云成本分析与优化 AI 助手的实战教程，包含成本监控、自动化优化建议。
 
@@ -148,6 +148,8 @@ S3 会话持久化是另一个关键的企业级特性。传统的对话助手�
 ### 5. 评估中国区 MaaS 平台与自建推理端点的总体拥有成本
 
 方案提到支持亚马逊云科技中国区 Marketplace 上的 MaaS 平台模型或自建 OpenAI 兼容端点。企业在选择时不应仅比较模型单价，还需综合评估：MaaS 平台的合规成本与数据主权保障、自建端点的运维人力投入、模型切换的灵活性和切换后的效果稳定性。建议通过 A/B 测试对比不同模型在成本术语理解、数值精度、响应稳定性等维度的表现，再做长期选型决策。
+
+## 参考来源
 
 ## 相关实体
 - [Mcp Serveramazon Bedrock Agentcorequick Suite](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mcp-serveramazon-bedrock-agentcorequick-suite.md)

@@ -1,6 +1,6 @@
 # 花叔的 Claude Code 多 Agent 用量画像
 
-> 📊 Level ⭐⭐⭐ | 12.4KB | `entities/claude-code-agent-view-huashu.md`
+> 📊 Level ⭐⭐⭐⭐ | 12.4KB | `entities/claude-code-agent-view-huashu.md`
 
 > 花叔：AI 编程进入多 Agent 阶段后，真正稀缺的不是执行力，而是人类的注意力、判断力和调度力。
 [原文存档](https://mp.weixin.qq.com/s/panfFxjQOFdV-RM0KAtUsw) · 作者花叔（huashu）是 AI 编程领域的资深实践者，2024-2025 年在 Twitter/微信社区以深度技术写作著称。

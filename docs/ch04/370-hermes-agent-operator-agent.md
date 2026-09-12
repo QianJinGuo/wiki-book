@@ -1,6 +1,6 @@
 # Hermes Agent Operator 上手：把一个 Agent 养成可运营系统
 
-> 📊 Level ⭐⭐⭐ | 19.8KB | `entities/hermes-agent-operator上手-把一个-agent-养成可运营系统-若飞.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 19.8KB | `entities/hermes-agent-operator上手-把一个-agent-养成可运营系统-若飞.md`
 
 ## 一句话总结
 

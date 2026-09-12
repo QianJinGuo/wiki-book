@@ -1,6 +1,6 @@
 # Hunk - Review-first Terminal Diff Viewer
 
-> 📊 Level ⭐⭐⭐ | 5.9KB | `entities/hunk-diff-viewer.md`
+> 📊 Level ⭐⭐⭐⭐ | 5.9KB | `entities/hunk-diff-viewer.md`
 
 ## 摘要
 
@@ -108,6 +108,8 @@ Hunk 聚焦于 **review 环节**，与 [Harness Engineering](https://github.com/
 → [原文存档](https://github.com/modem-dev/hunk)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

@@ -1,6 +1,6 @@
 # Claude Code Skills / MCP / Rules 源码分析
 
-> 📊 Level ⭐⭐⭐ | 23.5KB | `entities/claude-code-skills-mcp-rules-source-analysis.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 23.5KB | `entities/claude-code-skills-mcp-rules-source-analysis.md`
 
 ## 核心命题
 

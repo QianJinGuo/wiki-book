@@ -1,6 +1,6 @@
 # From Silos to Service Topology: Why Netflix Built a Real-Time Service Map
 
-> 📊 Level ⭐⭐⭐ | 8.4KB | `entities/from-silos-to-service-topology-why-netflix-built-a-real-time.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.4KB | `entities/from-silos-to-service-topology-why-netflix-built-a-real-time.md`
 
 > **Background**: Netflix 构建了 Service Topology——一个实时更新的服务依赖拓扑图，整合三种互补数据源（eBPF 网络流、IPC 指标、分布式追踪），为数千微服务提供统一的依赖可视化和故障排查能力。
 
@@ -107,6 +107,8 @@ Service Topology 提供的知识图谱基础使这种智能自动化成为可能
 → [原文存档](https://netflixtechblog.com/from-silos-to-service-topology-why-netflix-built-a-real-time-service-map-0165ba13a7bc?source=rss----2615bd06b42e---4)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

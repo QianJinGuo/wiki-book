@@ -1,6 +1,6 @@
 # Cloud Use 框架：Agent 作为云上受治理主体的四层模型
 
-> 📊 Level ⭐⭐⭐ | 6.4KB | `entities/cloud-use-framework-agent-cloud-workload.md`
+> 📊 Level ⭐ | 6.4KB | `entities/cloud-use-framework-agent-cloud-workload.md`
 
 Cloud Use 是阿里技术提出的原创框架，系统性定义了 AI Agent 如何成为云上受治理、可审计的工作负载。与仅关注"模型如何调用工具"的 Tool Use 不同，Cloud Use 解决的是"云如何接纳 Agent 成为受治理的使用主体"的问题。
 

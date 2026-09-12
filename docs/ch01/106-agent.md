@@ -1,6 +1,6 @@
 # 你不知道的 Agent：原理、架构与工程实践
 
-> 📊 Level ⭐⭐⭐ | 4.9KB | `entities/你不知道的-agent原理架构与工程实践.md`
+> 📊 Level ⭐ | 4.9KB | `entities/你不知道的-agent原理架构与工程实践.md`
 
 > 本页原内容在 2026-09-07 质量闭环中判定为 **thin-0.78**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/你不知道的-agent原理架构与工程实践.md`，一手来源仍见下方 sources。

@@ -1,6 +1,6 @@
 # Identity Behavior & Context: ITDR Solution | Teleport
 
-> 📊 Level ⭐⭐⭐ | 8.4KB | `entities/identity-behavior-context-itdr-solution-teleport.md`
+> 📊 Level ⭐ | 8.4KB | `entities/identity-behavior-context-itdr-solution-teleport.md`
 
 → [原文存档](https://fandf.co/3QIKkEA)
 

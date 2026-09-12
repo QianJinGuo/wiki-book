@@ -1,6 +1,6 @@
 # The new AI lock-in
 
-> 📊 Level ⭐⭐⭐ | 9.5KB | `entities/new-ai-lock-in.md`
+> 📊 Level ⭐⭐⭐⭐ | 9.5KB | `entities/new-ai-lock-in.md`
 
 ## 核心要点
 - **Published Time**: 2026-05-16T22:36:49-06:00

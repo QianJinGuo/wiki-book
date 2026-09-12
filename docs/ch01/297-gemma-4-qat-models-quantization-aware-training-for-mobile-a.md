@@ -89,6 +89,8 @@ Gemma 4 QAT 模型是 Google 在"开源模型可用性"层面的战略投入—�
 ### 5. QAT 模型作为"开箱即用"的部署选项
 QAT 模型消除了用户自行量化的技术门槛——直接下载即部署，无需量化调参和精度验证。
 
+## 实践启示
+
 ### 1. 边缘部署：优先选择 QAT 模型而非自行量化
 如果 Google 已提供 QAT 版本，直接使用——自行量化需要大量调参和验证工作，ROI 通常不高。
 
@@ -106,7 +108,7 @@ QAT 模型消除了用户自行量化的技术门槛——直接下载即部署�
 
 ## 相关实体
 - [Alphaevolve Deepmind Discovery Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/alphaevolve-deepmind-discovery-agent.md)
-- [Gemma 4 Multi Token Prediction Drafters](528-gemma-4-multi-token-prediction-drafters.html)
+- [Gemma 4 Multi Token Prediction Drafters](532-gemma-4-multi-token-prediction-drafters.html)
 - [Google Ai Vulnerability Exploitation Threat Intel](https://github.com/QianJinGuo/wiki-public/blob/main/entities/google-ai-vulnerability-exploitation-threat-intel.md)
 - [Bonsai Image 4B 1 Bit Ternary](https://github.com/QianJinGuo/wiki-public/blob/main/entities/bonsai-image-4b-1-bit-ternary.md)
 - [Stochastic Parrot Language Models And Meaning](https://github.com/QianJinGuo/wiki-public/blob/main/entities/stochastic-parrot-language-models-and-meaning.md)
@@ -114,6 +116,9 @@ QAT 模型消除了用户自行量化的技术门槛——直接下载即部署�
 - [新程alpha认知模型：4b参数端侧部署，群体智能以小搏大比肩gpt-5.4](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nextie-alpha-cognitive-model-4b-on-device.md)
 - [notes on pretraining parallelisms and failed training runs.](https://github.com/QianJinGuo/wiki-public/blob/main/entities/notes-on-pretraining-parallelisms-and-failed-training-runs.md)
 
+## 原文链接
+
+→ [原文存档](https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/)
 
 ---
 

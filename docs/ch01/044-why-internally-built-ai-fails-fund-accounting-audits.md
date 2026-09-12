@@ -1,6 +1,6 @@
 # Why Internally-Built AI Fails Fund Accounting Audits
 
-> 📊 Level ⭐⭐⭐ | 7.6KB | `entities/why-internally-built-ai-fails-fund-accounting-audits.md`
+> 📊 Level ⭐ | 7.6KB | `entities/why-internally-built-ai-fails-fund-accounting-audits.md`
 
 ## 摘要
 2026 年 2 月 COSO 发布生成式 AI 内控指引（*Achieving Effective Internal Control Over Generative AI*），与 PCAOB AS 2201 共同把基金会计中 AI 的审计门槛抬到两个必须回答的问题：能否证明 AI「看到了什么」，以及能否证明「它和上季度跑的是同一个系统」。文章的核心论点是：大多数内部构建的 AI（通用聊天工具包裹在基金结账流程上）从构造上就无法回答这两个问题，而审计就绪的 AI 在基金会计中是**架构决策而非功能特性**——构建时用 AI 生成并验证逻辑、运行时用确定性代码执行，配合防篡改审计轨迹与平台级 maker/checker。

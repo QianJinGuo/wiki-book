@@ -1,6 +1,6 @@
 # Everything a Senior Engineer Needs to Know About What's Inside an LLM
 
-> 📊 Level ⭐⭐⭐ | 4.5KB | `entities/senior-engineer-guide-inside-llm.md`
+> 📊 Level ⭐ | 4.5KB | `entities/senior-engineer-guide-inside-llm.md`
 
 > **来源**: [Everything a Senior Engineer Needs to Know About What's Inside an LLM](https://www.pathtostaff.com/p/everything-a-senior-engineer-needs)
 
@@ -37,6 +37,9 @@ Recurrent neural networks take this one step further, with a built-in memory loo
 → [原文存档](https://www.pathtostaff.com/p/everything-a-senior-engineer-needs)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- 相关: Agent 架构
 
 ---
 

@@ -1,6 +1,6 @@
 # Dynamically Splitting Wide Partitions in Cassandra for Time Series Workloads
 
-> 📊 Level ⭐⭐⭐ | 17.0KB | `entities/netflix-cassandra-wide-partition-dynamic-splitting.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 17.0KB | `entities/netflix-cassandra-wide-partition-dynamic-splitting.md`
 
 > Netflix Tech Blog 2026-06-03 工程实践：解决 Apache Cassandra 4.x 在 PB 级时序数据上 wide partition 问题的完整方案。从 `nodetool tablehistograms` 的 percentile 检测 → DynamicTimeSliceConfigWorker 自动调整 time_bucket → **async 动态分区管道（Detection / Planning & Splitting / Serving Reads）** 在 TimeSeries ID 粒度上做细粒度拆分，附 Decision Tree（Partial Return / Block ID / Dynamic Split）。
 
@@ -198,6 +198,8 @@ Shadow Mode 下新旧路径**同时运行**，对比两者的 bytes served 是�
 Netflix 的 fallback 设计中有一条重要规则：**原始 wide partition 永远不删除**。这在 split 过程中出现 partial failure 或 eventual consistency 边界情况时，允许调用方回退到原始路径读取完整数据。代价是多占用一些存储空间，但换来了**运营上的安全保障**。
 
 这个权衡值得记住：当需要同时保证**数据可用性和正确性**时，保留冗余路径是值得的。删除原始数据的"清理"诱惑可能在分布式系统的一致性边界上造成难以排查的问题。
+
+## 来源
 
 ## 相关实体
 - [Vietnam To Develop Domestic Cloud So It Can Ditch Risky Overseas Operators For G](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-overseas-operators-for-g.md)

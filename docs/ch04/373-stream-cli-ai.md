@@ -1,6 +1,6 @@
 # 钉钉 Stream + CLI 代理双引擎 AI 助手架构
 
-> 📊 Level ⭐⭐⭐ | 18.1KB | `entities/dingtalk-stream-cli-dual-engine-ai-assistant.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 18.1KB | `entities/dingtalk-stream-cli-dual-engine-ai-assistant.md`
 
 闪购搜索团队（阿里云开发者 久梦）把企业级 AI 助手落地到钉钉群的完整方案。核心是用 **钉钉 Stream（WebSocket）+ CLI 代理** 替代传统 Webhook 方案，避开内网公网回调限制；引擎侧 Qoder CLI 与 Claude Code 并行部署，通过 ProcessBuilder 子进程调用；上下文与权限走 LinkedHashMap LRU + 管理员/只读双模式；外部工具通过 MCP 协议 + 静态 Token 跳过 OAuth 浏览器授权。
 

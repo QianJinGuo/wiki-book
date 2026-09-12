@@ -1,6 +1,6 @@
 # Pydantic AI: Progressive Agent Skills without Claude Model Lock-in
 
-> 📊 Level ⭐⭐⭐ | 15.2KB | `entities/pydantic-ai-progressive-agent-skills-automatorrunner.md`
+> 📊 Level ⭐⭐⭐⭐ | 15.2KB | `entities/pydantic-ai-progressive-agent-skills-automatorrunner.md`
 
 > → [原文存档](https://mp.weixin.qq.com/s/osc5beCKJGDAvHeY2Ji4_w)
 

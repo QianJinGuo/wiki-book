@@ -1,6 +1,6 @@
 # Harness Engineering：让 Coding Agent 可靠完成长程任务
 
-> 📊 Level ⭐⭐⭐ | 12.5KB | `entities/harness-engineering-long-term-agent-tasks.md`
+> 📊 Level ⭐⭐⭐⭐ | 12.5KB | `entities/harness-engineering-long-term-agent-tasks.md`
 
 ## 核心定义
 **Harness Engineering**：为 AI Coding Agent 构建「缰绳」，使其在安全边界内被稳定地约束、引导和复用。核心目标是让 Agent 能够可靠完成涉及成百上千文件、跨越多个会话、消耗数千万 Token 量级的**长程任务**。
@@ -112,9 +112,9 @@ Agent 在执行过程中被中断时，状态会停留在 IN_PROGRESS，但实�
 - [Agent Harness 组件解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/langchain-anatomy-agent-harness.md)
 
 ## 相关实体
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/112-claude-code-harness-deep-understanding.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/110-claude-code-harness-deep-understanding.html)
 - [AI Coding Agent 记忆系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-coding-agent-memory-system.md)
-- [你不知道的 Agent 原理架构与工程实践](188-agent-principle-architecture-engineering-practice.html)
+- [你不知道的 Agent 原理架构与工程实践](187-agent-principle-architecture-engineering-practice.html)
 - [柚漫剧 AI 全流程提效拆解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yumanju-ai-full-flow-efficiency.md)
 - [Agent Skill 设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/从-anthropic-到-googleagent-skills-正在进入设计模式阶段.md)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)

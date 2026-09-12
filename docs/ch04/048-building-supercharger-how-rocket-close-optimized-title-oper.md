@@ -1,6 +1,6 @@
 # Building Supercharger: How Rocket Close optimized title operations with agentic AI
 
-> 📊 Level ⭐⭐⭐ | 11.5KB | `entities/building-supercharger-how-rocket-close-optimized-title-opera.md`
+> 📊 Level ⭐⭐ | 11.5KB | `entities/building-supercharger-how-rocket-close-optimized-title-opera.md`
 
 Rocket Close（底特律，Rocket Companies 子公司的 title agency + appraisal management 公司）与 AWS 合作构建了 **Supercharger** —— 一个 agentic AI 解决方案，用 Strands Agents + Amazon Bedrock + MCP 优化 title operations（产权检查、按揭贷款前置流程）。这是一个真实的 production case study，覆盖了 6 大互联能力 + 完整技术栈 + 业务影响。
 
@@ -54,6 +54,9 @@ Rocket Close（底特律，Rocket Companies 子公司的 title agency + appraisa
 - [agentic-payment-x402-bedrock-agentcore](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentic-payment-x402-bedrock-agentcore.md) — 金融场景 agent 应用
 - [agentops-operationalize-agentic-ai-amazon-bedrock](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-amazon-bedrock.md) — Bedrock 上 agent 的 production 化
 
+## 原文链接
+
+→ [原文存档](https://aws.amazon.com/blogs/machine-learning/building-supercharger-how-rocket-close-optimized-title-operations-with-agentic-ai)
 
 ## 核心观点
 
@@ -102,6 +105,7 @@ Rocket Close（底特律，Rocket Companies 子公司的 title agency + appraisa
 - [Agentops Operationalize Agentic Ai Amazon Bedrock](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-amazon-bedrock.md) — Bedrock 上 agent 的 production 化路径，包含监控 / 审计 / 部署最佳实践
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/tool-use-mcp-patterns.md)
+## 实践启示
 
 1. **金融 AI 落地标准路径**：从"信息查询"场景切入（减少重复性咨询）→ 验证后扩展到"流程引导"（各州 title exam checklist）→ 最后才是"辅助决策"（风险评估）
 2. **MCP 工具设计原则**：工具名用动词 + 名词（如 `get_order_status`），docstring 用自然语言描述"何时调用、返回什么"，避免技术实现细节暴露给 Agent

@@ -1,6 +1,6 @@
 # Products are out, brains are in
 
-> 📊 Level ⭐⭐⭐ | 9.5KB | `entities/products-are-out-brains-are-in.md`
+> 📊 Level ⭐ | 9.5KB | `entities/products-are-out-brains-are-in.md`
 
 ## 摘要
 As the marginal cost of producing software trends toward zero and capable tools multiply within every category, software's price may fall — but, the author argues, it will not death-spiral. What changes instead is *why* people buy software: not because they can't build it, but because they choose not to, and the deciding factor collapses to one thing — the judgment of the people running the software. Value migrates from the packaged product to the quality of thinking that sits above it, so the durable moat shifts from "what you ship" to "how well your team thinks."
@@ -39,7 +39,7 @@ The author pushes back on the "tech industry is dying" narrative as missing the 
 - [Primitive is the product](https://github.com/QianJinGuo/wiki-public/blob/main/entities/primitive-is-the-product-ai-native-product-philosophy.md)
 - [The minimum viable unit of saleable software](https://github.com/QianJinGuo/wiki-public/blob/main/entities/minimum-viable-unit-saleable-software-brandur.md)
 - [The token economy](https://github.com/QianJinGuo/wiki-public/blob/main/entities/the-token-economy.md)
-- [From doer to director](111-from-doer-to-director-the-ai-mindset-shift.html)
+- [From doer to director](113-from-doer-to-director-the-ai-mindset-shift.html)
 - [Running an AI-native engineering org](031-running-an-ai-native-engineering-org.html)
 - [When growth slows — product vs. sales](https://github.com/QianJinGuo/wiki-public/blob/main/entities/when-growth-slows-is-it-sales-fault-or-the-products-fault-the-answer-has-changed.md)
 

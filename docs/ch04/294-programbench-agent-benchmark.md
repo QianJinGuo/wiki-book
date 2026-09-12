@@ -1,6 +1,6 @@
 # Programbench Agent Benchmark
 
-> 📊 Level ⭐⭐⭐ | 12.7KB | `entities/programbench-agent-benchmark.md`
+> 📊 Level ⭐⭐⭐⭐ | 12.7KB | `entities/programbench-agent-benchmark.md`
 
 ## ProgramBench: Benchmarking Programs, Not Prompts
 

@@ -1,6 +1,6 @@
 # 基于 Firecracker microVM 与 Bedrock AgentCore 的生产级多租户 AI Agent
 
-> 📊 Level ⭐⭐⭐ | 41.4KB | `entities/firecracker-bedrock-agentcore-multi-tenant.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 41.4KB | `entities/firecracker-bedrock-agentcore-multi-tenant.md`
 
 > 5 分钟部署、90 秒自愈、成本降至 1/8 的生产级多租户 AI Agent 方案，基于 Firecracker microVM 隔离 + Bedrock AgentCore。
 
@@ -603,6 +603,8 @@ OpenClaw Pool 展示了 Firecracker microVM 如何在保持无服务器控制面
 [![](https://d2908q01vomqb2.cloudfront.net/472b07b9fcf2c2451e8781e944bf5f77cd8457c8/2026/05/25/yuyuecanhui.png)](https://aws.amazon.com/cn/events/summits/shanghai/?ectrk=jyLXNovBYB51qgzUEipIpZcxlfE5%2Bs7NfDTnZwR7hFYtQmPUSToTuN%2FZO5doh20ZJ%2FloW6Rom0l3P4LLcoyUPA%3D%3D&sc_icampaign=glb-summit-blog-p2&sc_ichannel=ha&sc_iplace=blog&trk=ab30be54-aedd-480a-9364-ab0bf98e982d)
 
 ![](https://d2908q01vomqb2.cloudfront.net/472b07b9fcf2c2451e8781e944bf5f77cd8457c8/2026/05/14/2026_Summits_Commercial_Banner_1440x657.png)
+
+## 参考来源
 
 ### 1. Firecracker microVM 在多租户隔离范式中的定位
 

@@ -1,6 +1,6 @@
 # Static Devirtualization of Themida
 
-> 📊 Level ⭐⭐⭐ | 13.2KB | `entities/static-devirtualization-of-themida.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 13.2KB | `entities/2026.md`
 
 → [原文存档](https://back.engineering/blog/09/05/2026/)
 

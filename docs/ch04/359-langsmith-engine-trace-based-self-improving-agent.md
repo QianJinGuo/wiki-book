@@ -1,8 +1,10 @@
 # LangSmith Engine: Trace-Based Self-Improving Agent
 
-> 📊 Level ⭐⭐⭐ | 26.8KB | `entities/langsmith-engine-self-improving-agent-trace-based.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 26.8KB | `entities/langsmith-engine-self-improving-agent-trace-based.md`
 
 > 来源：分析 LangChain LangSmith Engine 的工程化自改进路径——从线上 trace 自动发现问题并转化为 issue / evaluator / 回归测试
+→ 原文存档
+
 ## 摘要
 
 文章指出 Agent 工程化的关键问题：**上线后的持续改进机制**。区别于"让模型自己进化"的传统思路（Hermes Agent 的定时任务总结经验），LangSmith Engine 提供更工程化的路径——**让系统从线上失败中持续学习**。核心流程：失败 trace → trajectory 压缩 → Screener 粗筛 → Investigator 调查 → 归类成 issue → 生成 evaluator + regression assertions → 沉淀为长期记忆。核心产出不是 trace 而是 issue。

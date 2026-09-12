@@ -1,6 +1,6 @@
 # Amazon Quick 飞书SSO对接指南
 
-> 📊 Level ⭐⭐⭐ | 6.7KB | `entities/amazon-quick-飞书sso对接指南.md`
+> 📊 Level ⭐ | 6.7KB | `entities/amazon-quick-飞书sso对接指南.md`
 
 → [原文存档](https://aws.amazon.com/cn/blogs/china/amazon-quick-sso-integration-guide)
 
@@ -114,6 +114,9 @@ Quick Desktop 使用 OIDC 协议，具体要求：
   * email claim
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- 相关: Agent 架构
 
 ---
 

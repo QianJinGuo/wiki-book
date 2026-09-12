@@ -1,6 +1,6 @@
 # Build an enterprise observability solution for Amazon Quick
 
-> 📊 Level ⭐⭐⭐ | 22.0KB | `entities/build-an-enterprise-observability-solution-for-amazon-quick.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 22.0KB | `entities/build-an-enterprise-observability-solution-for-amazon-quick.md`
 
 > **Summary**: 使用Amazon Bedrock AgentCore构建企业级可观测性解决方案，监控Amazon Quick服务的最佳实践
 
@@ -194,7 +194,7 @@ Quick Sight Dashboard 和自定义 Chat Agent 分别服务于不同使用场景�
 ## 相关实体
 - [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-ai-agents-for-business-intelligence-with-amazon-bedrock-agentcore.md)
 - [Mcp Serveramazon Bedrock Agentcorequick Suite](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mcp-serveramazon-bedrock-agentcorequick-suite.md)
-- [Building Ai Agents For Business Support Using Amazon Bedrock](../ch04/098-building-ai-agents-for-business-support-using-amazon-bedrock.html)
+- [Building Ai Agents For Business Support Using Amazon Bedrock](../ch04/097-building-ai-agents-for-business-support-using-amazon-bedrock.html)
 - [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-siloed-data-to-unified-insights-cross-account-athena-access-for-amazon-quic.md)
 - [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](https://github.com/QianJinGuo/wiki-public/blob/main/entities/integrating-aws-api-mcp-server-with-amazon-quick-suite-using-amazon-bedrock-agen.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/observability-monitoring.md)

@@ -1,6 +1,6 @@
 # Agent Harness 架构设计与实现：生产级 Agent 系统落地指南
 
-> 📊 Level ⭐⭐⭐ | 39.3KB | `entities/agent-harness-architecture-design-production-guide.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 39.3KB | `entities/agent-harness-architecture-design-production-guide.md`
 
 ## 1. 核心定义与演进脉络
 
@@ -598,6 +598,9 @@ class RecoveryManager:
 ### 20.3 长期战略
 
 5. **自适应简化机制**：随着模型改进，某些干预措施仍是必需的，而另一些变成成本、延迟或运营开销。未来 Harness 需要在联合质量、延迟、成本和风险约束下进行自我优化和简化
+
+## 架构图
+→ （架构图待生成: C4 架构图）
 
 ## 相关实体
 - [Code As Agent Harness Survey](https://github.com/QianJinGuo/wiki-public/blob/main/entities/code-as-agent-harness-survey.md)

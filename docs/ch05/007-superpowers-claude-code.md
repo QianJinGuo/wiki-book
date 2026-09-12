@@ -1,6 +1,6 @@
 # Superpowers 深度解析：给 Claude Code 装上工程大脑
 
-> 📊 Level ⭐⭐⭐ | 4.8KB | `entities/superpowers-claude-code-engineering-brain-baidu-geek.md`
+> 📊 Level ⭐ | 4.8KB | `entities/superpowers-claude-code-engineering-brain-baidu-geek.md`
 
 > 原文归档：[原文归档](https://mp.weixin.qq.com/s/6Zr-ysk7F2UyaJzJ2YKjeQ)
 

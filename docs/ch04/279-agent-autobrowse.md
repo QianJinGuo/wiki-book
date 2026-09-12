@@ -1,6 +1,6 @@
 # 浏览器 Agent 的失忆问题：Autobrowse 如何让每次探索变成永久技能
 
-> 📊 Level ⭐⭐⭐ | 15.2KB | `entities/autobrowse-browserbase-persistent-skill-files.md`
+> 📊 Level ⭐⭐⭐⭐ | 15.2KB | `entities/autobrowse-browserbase-persistent-skill-files.md`
 
 ## 背景：探索税（Discovery Tax）
 浏览器 Agent 的核心缺陷：**没有记忆**——每次会话结束，它学到的一切都跟着蒸发。

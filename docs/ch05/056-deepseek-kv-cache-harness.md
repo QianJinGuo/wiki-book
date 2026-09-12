@@ -1,6 +1,6 @@
 # DeepSeek 成本迁移：从 KV Cache 到 Harness 的系统层
 
-> 📊 Level ⭐⭐⭐ | 15.7KB | `entities/deepseek-cost-migration-system-layer-kv-cache-harness.md`
+> 📊 Level ⭐⭐⭐⭐ | 15.7KB | `entities/deepseek-cost-migration-system-layer-kv-cache-harness.md`
 
 ## 核心论点
 
@@ -142,8 +142,11 @@ DeepSeek 想要"定义工作负载"，一个关键信号是硬件厂商和云厂
 
 这个清单的价值在于：它能够帮助团队识别出当前部署中尚未被充分利用的优化空间，也能够为未来的技术选型提供依据。
 
+## 架构图
+→ （架构图待生成: C4 架构图）
+
 ## 相关实体
-- [Deepseek Code Harness](../ch09/062-deepseek-code-harness.html)
+- [Deepseek Code Harness](../ch09/094-deepseek-code-harness.html)
 - [Openclacky Harness Prompt Cache](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclacky-harness-prompt-cache.md)
 - [Deepseek V4 Ds4C Antirez Local Inference Qbitai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-v4-ds4c-antirez-local-inference-qbitai.md)
 - [Deepseek Moe Parallel Strategy](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-moe-parallel-strategy.md)

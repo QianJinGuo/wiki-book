@@ -5,6 +5,7 @@
 > -> [原文存档](https://www.clearseclabs.com/blog/weve-been-here-before-ai-vulnerability-research/)
 
 ## Summary
+> Score: 8×8=64
 本文来自 ClearSec Labs 的 Matt Handley，从历史视角审视 AI 给漏洞研究领域带来的冲击。作者通过 decompiler（反编译器）、fuzzer（模糊测试器）、static analysis（静态分析）三次类似技术变革的历史经验，指出"easy work goes away, harder work becomes more valuable"的规律，并给出在 AI 时代保持竞争力的实践建议。
 
 ## 核心论点：历史重演的规律
@@ -129,6 +130,9 @@ ISACA 调查支持这一观点：87% 的网络安全专业人士认为 AI 将增
 - [weve-been-here-before-ai-vulnerability-research](https://github.com/QianJinGuo/wiki-public/blob/main/entities/weve-been-here-before-ai-vulnerability-research.md)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- 相关: Agent 架构
 
 ---
 

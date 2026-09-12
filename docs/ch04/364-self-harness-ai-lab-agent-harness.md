@@ -1,6 +1,6 @@
 # Self-Harness：上海AI Lab 提出的 Agent 自我改进 Harness 范式
 
-> 📊 Level ⭐⭐⭐ | 23.4KB | `entities/self-harness-shanghai-ai-lab-agent-improves-harness.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 23.4KB | `entities/self-harness-shanghai-ai-lab-agent-improves-harness.md`
 
 > 本实体整理自 [原文存档](https://mp.weixin.qq.com/s/sgP8m1nnW7JhsDT7Ki7nVw)，并参考 Shanghai AI Lab 论文 *Self-Harness: Harnesses That Improve Themselves*（https://arxiv.org/abs/2606.09498 ）。
 

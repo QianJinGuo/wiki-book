@@ -1,6 +1,6 @@
 # Browser Harness — 自愈型浏览器 Agent 框架
 
-> 📊 Level ⭐⭐⭐ | 7.9KB | `entities/browser-harness.md`
+> 📊 Level ⭐⭐⭐⭐ | 7.9KB | `entities/browser-harness.md`
 
 ## Overview
 Browser Harness（browser-use/browser-harness，~8.9K Stars）是一个基于 Chrome DevTools Protocol (CDP) 直连的自愈型浏览器 Agent 框架，核心理念是**去框架化**：薄 CDP 桥接 + mid-task 自愈机制 + domain-skills 自动沉淀。

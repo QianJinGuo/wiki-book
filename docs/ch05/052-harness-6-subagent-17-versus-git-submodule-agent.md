@@ -1,6 +1,6 @@
 # Harness 模式 6-SubAgent 实战 — 17哥 versus 大模型评测平台（Git Submodule + Agent Handoff + Chrome DevTools MCP）
 
-> 📊 Level ⭐⭐⭐ | 17.2KB | `entities/harness-engineering-practical-17ge-versus-6-subagent.md`
+> 📊 Level ⭐⭐⭐⭐ | 17.2KB | `entities/harness-engineering-practical-17ge-versus-6-subagent.md`
 
 ## Harness 模式 6-SubAgent 实战 — 17哥 versus 大模型评测平台
 
@@ -265,6 +265,8 @@ next-step-prompt-e2e: "启动服务(后端8901/前端3001)并执行需求 {REQ-I
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/multi-agent-coordination.md)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 ---
 

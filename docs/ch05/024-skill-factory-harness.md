@@ -1,6 +1,6 @@
 # Skill Factory：三天手搓面向Harness设计的技能工厂
 
-> 📊 Level ⭐⭐⭐ | 5.5KB | `entities/skill-factory-yueheng.md`
+> 📊 Level ⭐⭐ | 5.5KB | `entities/skill-factory-yueheng.md`
 
 ## 背景：三种 Skill 创建方式对比
 | 模式 | 核心逻辑 | 生产效率 | 代码质量 | 测试验证 | 多方案探索 | 核心缺陷 |

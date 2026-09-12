@@ -37,7 +37,7 @@ Doocs 微信号整理：https://mp.weixin.qq.com/s/Uirhm4KubbKmhF0CQGteVQ
 - [Ai Production Development Workflow Openspec Superpowers Gstack](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-production-development-workflow-openspec-superpowers-gstack.md)
 - [Ai Era Git Version Control Agentic Coding Practices](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-era-git-version-control-agentic-coding-practices.md)
 - [Alphaevolve Deepmind Discovery Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/alphaevolve-deepmind-discovery-agent.md)
-- [Ai Coding Guide Tmall Deep Dive](065-ai-coding-guide-tmall-deep-dive.html)
+- [Ai Coding Guide Tmall Deep Dive](064-ai-coding-guide-tmall-deep-dive.html)
 
 → [原文存档](https://mp.weixin.qq.com/s/Uirhm4KubbKmhF0CQGteVQ)
 

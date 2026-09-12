@@ -1,6 +1,6 @@
 # Martin Fowler AI 研发 Harness：非确定性承重层
 
-> 📊 Level ⭐⭐⭐ | 4.9KB | `entities/martin-fowler-ai-rd-harness-nondeterminism.md`
+> 📊 Level ⭐ | 4.9KB | `entities/martin-fowler-ai-rd-harness-nondeterminism.md`
 
 > 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.8**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/martin-fowler-ai-rd-harness-nondeterminism.md`，一手来源仍见下方 sources。
@@ -18,7 +18,7 @@
 - [Harness Engineering 综合论述：为什么 2026 年真正重要的是它（含 ECC 开源实现案例）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-paradigm-comprehensive-2026.md) — 综合论述17305字含ECC案例rv9
 - [Anthropic N-days: Frontier Agent Vulnerability Research](../ch04/315-anthropic-n-days-frontier-agent-vulnerability-research.html) — N-day研究
 - [Martin Fowler AI 研发提醒：Harness 承重层](https://github.com/QianJinGuo/wiki-public/blob/main/entities/martin-fowler-ai-rd-harness-nondeterminism-devnote.md) — Fowler：非确定性协作者+Harness承重层10228字rv9全版
-- [The Coming Loop](../ch01/475-the-coming-loop.html) — Ronacher两种循环区分
+- [The Coming Loop](../ch01/479-the-coming-loop.html) — Ronacher两种循环区分
 - ['Harness 之后：状态边界与失败闭环（若飞续篇）'](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-之后-状态边界与失败闭环-ruofei.md) — 运行时契约/提交闸门/失败回写10308字全版
 
 ## 工程实践

@@ -74,6 +74,8 @@ ljg 的 Skill 设计呈现出几个鲜明的哲学特征：
 - [Codex 五层架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/codex-5-layer-architecture.md)
 - [Claude Code 顶层指导](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-top-1-guide-system-engineering.md)
 
+## 来源
+
 → [原文存档](https://www.xiaohongshu.com/explore/6a3ba6990000000015026f4d)
 
 ---

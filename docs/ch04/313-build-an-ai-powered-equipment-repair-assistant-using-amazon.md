@@ -1,6 +1,6 @@
 # Build an AI-Powered Equipment Repair Assistant Using Amazon Bedrock AgentCore
 
-> 📊 Level ⭐⭐⭐ | 10.7KB | `entities/build-an-ai-powered-equipment-repair-assistant-using-amazon-.md`
+> 📊 Level ⭐⭐⭐⭐ | 10.7KB | `entities/build-an-ai-powered-equipment-repair-assistant-using-amazon-.md`
 
 > 原文存档：[原文存档](https://aws.amazon.com/blogs/machine-learning/build-an-ai-powered-equipment-repair-assistant-using-amazon-bedrock-agentcore)
 
@@ -81,10 +81,10 @@ Strands Agent 的 `@tool` 装饰器模式使得能力扩展无需基础设施变
 
 ## 相关实体
 
-- [Building Web Search Enabled Agents With Strands And Exa](066-building-web-search-enabled-agents-with-strands-and-exa.html) — Strands SDK 构建搜索 Agent 的实践
+- [Building Web Search Enabled Agents With Strands And Exa](065-building-web-search-enabled-agents-with-strands-and-exa.html) — Strands SDK 构建搜索 Agent 的实践
 - [Enterprise Intelligent Data Query Solution Practice Based On Strands Sdk](https://github.com/QianJinGuo/wiki-public/blob/main/entities/enterprise-intelligent-data-query-solution-practice-based-on-strands-sdk.md) — Strands SDK 企业级数据查询方案
 - [Agentcore Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentcore-harness.md) — AgentCore 工程化实践
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](154-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html) — AgentCore 安全认证流程
+- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](153-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html) — AgentCore 安全认证流程
 - [Aws Bedrock Agentcore Doris Mcp Server](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-agentcore-doris-mcp-server.md) — AgentCore + MCP Server 集成
 - "RAG 进阶技术" — RAG 高级模式
 - "Agent 部署策略" — Agent 部署策略

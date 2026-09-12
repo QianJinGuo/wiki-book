@@ -41,6 +41,9 @@ After we launched the [Figma agent ### The Figma design agent is here Starting t
 → [原文存档](https://www.figma.com/blog/4-ways-were-using-our-mcp-server-at-figma/)
 
 ---
+## 关联
+- 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
+- 相关: Agent 架构
 
 ---
 
