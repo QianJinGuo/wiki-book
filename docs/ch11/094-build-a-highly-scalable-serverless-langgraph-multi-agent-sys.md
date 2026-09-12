@@ -60,8 +60,6 @@ LangGraph orchestrator 和 specialized agents 被打包为 Docker 容器，这�
 
 Docker 容器化提供了移植性但引入了冷启动问题。在选择部署架构时，如果 Agent 工作负载具有明显的波峰波谷特性，纯 serverless（Lambda）可能是更好的选择；如果需要更精细的运行时控制或长时运行任务，容器化则更合适。也可以考虑混合策略——核心编排使用容器，工具执行层使用 Lambda。
 
-## 参考来源
-
 ## 相关实体
 - [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [Anthropic Multi Agent Research System](../ch04/232-anthropic-multi-agent-research-system.html)

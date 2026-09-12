@@ -80,10 +80,6 @@ The survey organizes the harness into **7 independent layers**:]"]
 ### 跨层合成的三个悖论
 **Cost–quality–speed trilemma**：这一 triad 是所有生产系统面临的根本性约束。不同于传统软件系统可以在三者间找平衡点，LLM agent 的特性使得每一项的提升都可能非线性地影响另外两项（例如更严格的 sandbox 会同时降低 speed 并提升 cost）。]"]
 **Capability–control tradeoff**：这实际上将安全和功能统一在同一个设计轴上——工具越多、能力越强，blast radius 越大。]"]
-**Harness coupling problem**：Local optimization 导致 global degradation，这在 agent 系统中尤为突出，因为 agent 的各层之间通过 context 和 state 存在隐式耦合。]"]
-
-### 生态映射的深层洞察
-论文对 138 个开源项目的编码揭示了一个非均匀分布：]"]
 
 - **E/T/L/V 高密度** → 这些是 "冷启动" 必需品，做 coding/web/terminal agent 必须首先解决执行、工具、控制流和评测
 - **C 低密度** → Context/memory 多被嵌入框架内部而非独立输出，说明该层标准化程度低

@@ -75,8 +75,6 @@ aws iam create-access-key --user-name claude-code-bedrock
 
 下面是一份覆盖 Claude Code 实际调用需求的最小
 
-## 参考来源
-
 ## 相关实体
 - [From Code To Molecules An Ai Driven Egfr Inhibitor Discovery Journey](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-code-to-molecules-an-ai-driven-egfr-inhibitor-discovery-journey.md)
 - [Bedrock Agentcore Payment X402 Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/bedrock-agentcore-payment-x402-agent.md)

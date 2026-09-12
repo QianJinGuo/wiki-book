@@ -116,7 +116,7 @@ Agent-EvalKit 的 Plan → Data → Trace → Run → Eval → Report 六阶段�
 
 Eval 阶段使用 LLM-as-judge + DeepEval + Strands Evals SDK 的组合，说明**单一 LLM-as-judge 不足以覆盖所有评测维度**。DeepEval 等第三方库提供针对特定失败模式的专项检测（如 hallucination、tool call accuracy），而 LLM-as-judge 擅长评估开放式 response quality。两者配合才能实现完整的多维度评测覆盖。
 
-## 实践启示
+## 实践启示（续）
 
 ### 1. 从小范围开始，优先评测 Faithfulness 而非 Response Quality
 

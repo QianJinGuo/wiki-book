@@ -208,7 +208,7 @@ User interviews：
 | 数据 | 综合多源文献 | 105 天生产数据 + 8 域样本 |
 | 输出 | harness 设计原则 | agent 行为 / 经济量化 |
 
-## 实践启示
+## 实践启示（续）
 
 1. **评估 agent 真实价值**：不要看 productivity 倍数，要看 autonomy x efficiency x scope 三维。Computer 48x 自主执行 + 87% 时间缩减 + 50% Create-level 三者一起才能证明 agent 价值。
 2. **跨职业 delegate 是 agent 真正的 leverage**：59% 跨主职业簇 + 51% >=3 knowledge domains — agent 解放的是 specialist boundary，不是简单提速。

@@ -726,7 +726,7 @@ Simon Willison 的 lethal trifecta（私人数据访问 + 不可信输入解析 
 
 当 search operator 同时设计 prompting + 训练 model + 提供 search LLM 时，用户搜索事实成为广告定向的原材料。Generative AI 让"知道用户私密信息"变得 *wildly more lucrative*。这意味着**数据货币化的激励结构本身就是隐私威胁的源头**——即使 PCC 技术完美，只要 agent 需要调用外部 search LLM，数据就会流向有商业动机货币化它的对手。
 
-## 实践启示
+## 实践启示（续）
 
 ### 1. 评估 agent 隐私风险必须追踪完整数据流
 

@@ -148,8 +148,6 @@ BFD（Bidirectional Forwarding Detection）在其中的作用是将故障检测�
 
 建议的实践做法是：建立「迁移后检查表」，在确认新连接稳定运行 48-72 小时后，执行删除旧连接的标准操作。删除前应在监控平台上确认旧连接上已无业务流量；删除后应确认账单中不再出现旧连接的费用项。
 
-## 来源
-
 ## 相关实体
 - [Aws Devops Agent 实战云网络故障自主调查与修复建议](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-devops-agent-实战云网络故障自主调查与修复建议.md)
 - [Habby Game Aws Devops Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/habby-game-aws-devops-agent.md)

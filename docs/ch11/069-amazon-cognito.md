@@ -75,8 +75,6 @@ Bedrock 跨区域推理和 Cognito 多区域复制是同一架构模式的不同
 ### 5. 主动-主动 vs 主动-被动：算业务损失后决定
 用"认证不可用的每分钟业务损失 × 预期故障时长"算出风险成本，再与多区域运营成本比较，数据驱动决策。
 
-## 相关引用
-
 ## 相关实体
 - [Aws Software Supply Chain Security Well Architected](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-software-supply-chain-security-well-architected.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-privacy-landscape.md)

@@ -103,8 +103,6 @@ Caturegli 分析认为，该仓库的使用模式显示个人将其作为工作�
 - **Nightwing**：位于弗吉尼亚州杜勒斯的政府承包商，涉事员工所属公司
 - **CISA**：网络安全与基础设施安全局，美国联邦政府网络安全主要机构
 
-## 外部参考
-
 ## 相关实体
 - [Github Copilot Individual Plans Flex Allotments](https://github.com/QianJinGuo/wiki-public/blob/main/entities/github-copilot-individual-plans-flex-allotments.md)
 - [Vscode Github Token Stealing 1 Click Pwn Ammaraskar 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vscode-github-token-stealing-1-click-pwn-ammaraskar-2026.md)

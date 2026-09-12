@@ -108,8 +108,6 @@ AWS 的多流流量规则（Multi-flow traffic rules）规定 vCPUs ≥ 32 的�
 - 单 AZ 部署模式，**未覆盖跨 AZ 高可用**（ASG 多 AZ 部署可解决但成本上升）
 - 数据基于 2026-06-15 文章发表时，**AWS 后续可能调整实例类型定价或新增类型**
 
-## 原始引用
-
 ## 相关实体
 - [aws 一周综述：amazon bedrock agentcore 付款、适用于 aws 的 agent 工具套件等（2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-一周综述amazon-bedrock-agentcore-付款适用于-aws-的-agent-工具套件等2026-年-5-月-11-日.md)
 - [基于 strands agents 构建亚马逊云科技云成本分析与优化 ai 助手](https://github.com/QianJinGuo/wiki-public/blob/main/entities/strands-agents-cloud-cost-optimizer.md)

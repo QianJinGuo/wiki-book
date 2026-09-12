@@ -79,8 +79,6 @@ Review Trigger 的设计哲学体现了从"依赖人的判断"到"系统化控�
 - 关键指标：反馈环路覆盖率（已可视化阶段/总阶段）、治理规则触发率（实际触发次数/定义次数）、反馈回流率（被下游消费的比例）
 - 反模式：规则数量持续增长但触发率持续下降；反馈日志膨胀但无人查阅
 
-## 关联阅读
-
 ---
 ## 关联
 - 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)

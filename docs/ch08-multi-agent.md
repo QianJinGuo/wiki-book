@@ -964,9 +964,9 @@ Nature 2026 同日发表 Google Co-Scientist（Gemini 2.0 多智能体）和 Fut
 
 ## 概述
 JiuwenSwarm 是 openJiuwen 社区发布的**多智能体蜂群协作框架**，代表从 Harness Engineering 向 **Coordination Engineering** 的范式跃迁。
-**背景演进路径：** ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+**背景演进路径：** ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm
 
-- Prompt Engineering → Context Engineering → Harness Engineering → **Coordination Engineering**
+- Prompt Engineering → Context Engineering → Harness Engineering → **Coordination Engineering**(https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)]
 
 ## 核心架构：四组件全栈体系
 | 组件 | 解决的问题 |
@@ -978,7 +978,7 @@ JiuwenSwarm 是 openJiuwen 社区发布的**多智能体蜂群协作框架**，�
 
 ### Agent Swarm
 多智能体团队协同机制内核。支持**成员对不同模型的路由**，针对不同角色提供合适能力的模型，减少负载压力，提升整体效果。
-核心能力：**自主分工 + 动态协商 + 高效协作**，从"单兵作战"到"精锐团队"。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+核心能力：**自主分工 + 动态协商 + 高效协作**，从"单兵作战"到"精锐团队"。 ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
 
 ### Swarm Skills
 把团队协作中的最佳实践、SOP、角色搭配、调度策略**标准化封装成"团队级技能"**——让优秀的 Agent 团队变成一套即插即用的作战能力。
@@ -988,7 +988,7 @@ JiuwenSwarm 是 openJiuwen 社区发布的**多智能体蜂群协作框架**，�
 
 ### Swarm Skills 自演进
 演进引擎观察完整轨迹（任务拆解、角色调度、消息往来），**自动从轨迹反推出可复用的 Swarm Skill**，提交用户审批即可入库。
-两层同时演进： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+两层同时演进： ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
 
 - **团队层**：自动增减角色、补充约束规则、优化协作流程
 - **成员层**：沉淀工具报错、接口超时、调用技巧等实战经验
@@ -1018,7 +1018,7 @@ JiuwenSwarm 的出现映射了 AI Agent 工程领域的核心矛盾：当任务�
 传统单 Agent 框架（如 LangChain Agent、AutoGPT）在面对跨领域调研、软件交付，多角色决策等真实复杂任务时，暴露出明显的协作盲区。JiuwenSwarm 的**Coordination Engineering**范式，将多 Agent 协作从"多个单 Agent 堆叠"提升为"原生团队协同"——这不是工具升级，而是工程思维的根本转变。
 
 ### 2. 四组件体系的递进逻辑
-四组件构成了一套完整的递进体系： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+四组件构成了一套完整的递进体系： ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
 
 - **Agent Swarm** 是协作内核，解决"能协同"的基础问题
 - **Swarm Skills** 解决"协同经验可复用"的知识沉淀问题
@@ -1044,12 +1044,12 @@ PinchBench 94.2% SOTA 配合 token 消耗降低 34.8%，说明多 Agent 协作�
 - 项目需要**长期演进能力**，而非一次性解决方案
 
 ### 如何从 Harness Engineering 过渡到 Coordination Engineering
-对于已有 Harness Engineering 基础的团队，过渡路径可以是： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+对于已有 Harness Engineering 基础的团队，过渡路径可以是： ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
 
-1. **先单 Agent 跑通**：确保每个角色 Agent 在 Harness 层面已经过优化 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-2. **识别协作瓶颈**：哪些任务因为"单 Agent 能力边界"而受限 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-3. **引入 Agent Swarm**：从两个角色开始尝试协作，观察通信和协商机制 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-4. **沉淀 Swarm Skills**：将成功的协作模式标准化为可复用技能 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+1. **先单 Agent 跑通**：确保每个角色 Agent 在 Harness 层面已经过优化 ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
+2. **识别协作瓶颈**：哪些任务因为"单 Agent 能力边界"而受限 ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
+3. **引入 Agent Swarm**：从两个角色开始尝试协作，观察通信和协商机制 ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
+4. **沉淀 Swarm Skills**：将成功的协作模式标准化为可复用技能 ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
 
 ### 使用 Swarm Skills Hub 的策略
 - **从社区共享技能开始**：不要重复造轮子，先在 Hub 中寻找场景匹配的技能
@@ -1058,32 +1058,32 @@ PinchBench 94.2% SOTA 配合 token 消耗降低 34.8%，说明多 Agent 协作�
 
 ## SwarmFlow — 从"能协作"到"稳稳地干完"（2026-06 增量）
 
-openJiuwen 在 2026-06 开源 **SwarmFlow** —— 面向多智能体团队的**可控工作流编排方案**，把"团队怎么配合"从 Leader 临场判断升级为**系统稳定执行 + 自动追踪 + 可被复用**。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+openJiuwen 在 2026-06 开源 **SwarmFlow** —— 面向多智能体团队的**可控工作流编排方案**，把"团队怎么配合"从 Leader 临场判断升级为**系统稳定执行 + 自动追踪 + 可被复用**。 ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
 
-**核心思路一句话：编排归系统，智能归 Agent。** SwarmFlow 增加的不是 Agent 数量，而是**协作的确定性**。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+**核心思路一句话：编排归系统，智能归 Agent。** SwarmFlow 增加的不是 Agent 数量，而是**协作的确定性**。 ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
 
 ### 三个绕不开的问题（复杂任务带来的考验）
 
-主流多 Agent 协作模式（Leader Agent 临场调度）在面对长链路、多分支任务时： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+主流多 Agent 协作模式（Leader Agent 临场调度）在面对长链路、多分支任务时： ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
 
-1. **Leader 变成瓶颈**：每份中间结果都回 Leader，上下文被过程信息淹没 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-2. **过程不稳定**：同一任务跑两次可能走出两条不同路径 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-3. **执行不可靠**：谁先做、谁并行、什么时候汇总、失败怎么处理，即便提前写清楚仍依赖 Leader 临场发挥 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+1. **Leader 变成瓶颈**：每份中间结果都回 Leader，上下文被过程信息淹没 ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
+2. **过程不稳定**：同一任务跑两次可能走出两条不同路径 ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
+3. **执行不可靠**：谁先做、谁并行、什么时候汇总、失败怎么处理，即便提前写清楚仍依赖 Leader 临场发挥 ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
 
 ### Swarm Skill 的两种形态
 
-**判定标准只有一个：编排能不能提前确定？** ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+**判定标准只有一个：编排能不能提前确定？** ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
 
 | 形态 | 适用场景 | 协作方式 | workflow.py |
 |------|---------|---------|-------------|
 | **形态一**：不带脚本 | 多专家圆桌、方案评审、战略讨论 | 议程确定，但观点如何流动得在协作中自然发生 | 无 |
 | **形态二**：带脚本 | 论文分析、办公自动化、批量 PPT 生成 | 角色 + 阶段 + 交接都提前定好 | 固化编排 |
 
-**形态选择哲学**：编排是动态的用形态一保留开放协作；编排能提前确定的用形态二承接可执行编排。**确定性与开放性在同一套体系里各得其所。** ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+**形态选择哲学**：编排是动态的用形态一保留开放协作；编排能提前确定的用形态二承接可执行编排。**确定性与开放性在同一套体系里各得其所。** ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
 
 ### 算子积木（Operator Library）
 
-SwarmFlow 提供一组算子作为积木，每个算子只管一件事，拼起来就能描述出复杂协作： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+SwarmFlow 提供一组算子作为积木，每个算子只管一件事，拼起来就能描述出复杂协作： ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
 
 | 算子 | 作用 | 备注 |
 |------|------|------|
@@ -1093,11 +1093,11 @@ SwarmFlow 提供一组算子作为积木，每个算子只管一件事，拼起�
 | **human** | 在关键环节插入人机节点 | 向人类要一条输入或一次审批 |
 | **budget** | 约束资源与额度消耗 | 把"会不会跑超"也纳入可控范围 |
 
-**一个动作一块积木，复杂协作由简单积木拼出来，无需从零设计编排逻辑。** ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+**一个动作一块积木，复杂协作由简单积木拼出来，无需从零设计编排逻辑。** ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
 
 ### 可视化：JiuwenSwarm TUI
 
-通过 `/swarmflows` 命令打开**实时交互式树状图**： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+通过 `/swarmflows` 命令打开**实时交互式树状图**： ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
 
 - 上方展示**阶段进度**
 - 下方联动展示选中阶段里的 **Agent 状态**
@@ -1113,31 +1113,31 @@ SwarmFlow 提供一组算子作为积木，每个算子只管一件事，拼起�
 
 ### SwarmSkill Creator（生成端）
 
-JiuwenSwarm 内置 SwarmSkill Creator，根据自然语言需求**自动判断该生成哪种形态**： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+JiuwenSwarm 内置 SwarmSkill Creator，根据自然语言需求**自动判断该生成哪种形态**： ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
 
 - 默认生成不带脚本的 Swarm Skill（角色、协作规则、流程说明、约束）
 - 判断用户要工作流 → 生成仅含脚本的版本（最小 Skill.md + workflow.py）
 - 两者都要时支持生成完整协作规范 + 脚本的版本
 
-**用户不必先理解文件结构，也不必手写编排脚本，只要把目标说清楚。** ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+**用户不必先理解文件结构，也不必手写编排脚本，只要把目标说清楚。** ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
 
 ### Team 模式自动调用（调用端）
 
-用户不用分辨任务属于哪种形态，在 Team 模式下一句需求自动进入。系统判断任务形态： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+用户不用分辨任务属于哪种形态，在 Team 模式下一句需求自动进入。系统判断任务形态： ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
 
 - 适合固定编排 → 进入 SwarmFlow
 - 更适合开放协作 → 用不带脚本的 Swarm Skill
 - 单个 Agent 够用 → 不额外启动多 Agent
 
-**这是 openJiuwen 想定义的可控协同工程新范式——让复杂协作在系统内部变得可控，让用户侧保持自然和简单。** ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+**这是 openJiuwen 想定义的可控协同工程新范式——让复杂协作在系统内部变得可控，让用户侧保持自然和简单。** ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
 
 ### 与自演进的衔接
 
-从生成工作流（可控）到自演进（越用越强），**沉淀、编排、演进三者环环相扣**，构成 Coordination Engineering 的完整闭环。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+从生成工作流（可控）到自演进（越用越强），**沉淀、编排、演进三者环环相扣**，构成 Coordination Engineering 的完整闭环。 ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
 
 ## Jiuwen Symphony — 海量技能的"精准发现 + 稳定协同"（2026-06-17 增量）
 
-如果说 SwarmFlow 解决的是**多 Agent 团队怎么稳定配合**，那么 Jiuwen Symphony 解决的是更底层的问题：**单个 Agent 面对海量技能时怎么选得对、串得稳**。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+如果说 SwarmFlow 解决的是**多 Agent 团队怎么稳定配合**，那么 Jiuwen Symphony 解决的是更底层的问题：**单个 Agent 面对海量技能时怎么选得对、串得稳**。 ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
 
 > 当一个 Agent 能调用的 Skill 从 5 个膨胀到 50 个，会发生什么？答案是：任务执行效果出现"断崖式下滑"——技能越多，Agent 反而越选不准。
 
@@ -1153,13 +1153,13 @@ JiuwenSwarm 内置 SwarmSkill Creator，根据自然语言需求**自动判断�
 | **技能检索** | 层次化技能树 | 选不准 | LLM 在树上按任务需求**逐步导航**，而非一次性读完全部技能 |
 | **技能编排** | 技能依赖图 | 用不好 | 基于能力指纹 + 双向搜索（向后扩展"下一步"+ 反向回溯"谁能补上"） |
 
-**技能检索设计要点**： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+**技能检索设计要点**： ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
 
 - 把平铺的技能列表预先组织成层次化技能树，变成可逐层浏览的技能目录；
 - 检索机制被设计为面向 Agent 的**专用工具集**（递归能力树构建 / 分支探索 / 轻量预览 / 候选技能读取），而非执行前的一次性预处理；
 - 关键判断："**技能选择被真正融入了 Agent loop，而非检索与执行相互独立**"。
 
-**技能编排设计要点**： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+**技能编排设计要点**： ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
 
 - **离线能力指纹**：覆盖技能的基础信息、输入输出产物、能力质量评估；
 - **动态词表归一**：把命名不一的同义字段（如 body / content / 正文）归一到规范词；
@@ -1178,13 +1178,13 @@ Symphony 在 Top-5 选择上取得最佳效果，且把平均最大上下文从�
 
 ### 三个实战场景（独立可接力）
 
-**场景一：视频处理（仅使用技能检索）**——技能库膨胀到数千时，Agent 通过技能目录逐步探索"视频/音频处理"主分支 + "文本整理 / 报告生成"辅助分支，最终覆盖：视频读取与处理 / 音频转写 / 口头禅检测 / 停顿分析 / 关键片段整理 / 报告生成 / 备选兜底处理。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+**场景一：视频处理（仅使用技能检索）**——技能库膨胀到数千时，Agent 通过技能目录逐步探索"视频/音频处理"主分支 + "文本整理 / 报告生成"辅助分支，最终覆盖：视频读取与处理 / 音频转写 / 口头禅检测 / 停顿分析 / 关键片段整理 / 报告生成 / 备选兜底处理。 ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
 
-**场景二：办公写作（仅使用技能编排）**——任务："英文博客截图翻译后整理成公众号文案并发邮件"。没有编排时 Agent 输出仍是图片无法串联；有编排后规划稳定路径：**图片翻译 → 文字识别（图片→可编辑文本）→ 文案撰写 → 邮件发送**，每步输出必须能喂入下一步。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+**场景二：办公写作（仅使用技能编排）**——任务："英文博客截图翻译后整理成公众号文案并发邮件"。没有编排时 Agent 输出仍是图片无法串联；有编排后规划稳定路径：**图片翻译 → 文字识别（图片→可编辑文本）→ 文案撰写 → 邮件发送**，每步输出必须能喂入下一步。 ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
 
 **场景三：出行规划（先检索后编排）**——两个核心组件联动的典型用例。
 
-启用方式：在 JiuwenSwarm 页面"配置信息-其他配置"打开"**技能交响乐**"开关。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+启用方式：在 JiuwenSwarm 页面"配置信息-其他配置"打开"**技能交响乐**"开关。 ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
 
 ### Symphony 与 SwarmFlow 的层次关系
 
@@ -1199,7 +1199,7 @@ Symphony 在 Top-5 选择上取得最佳效果，且把平均最大上下文从�
 
 ### 与"动态能力分发"行业趋势的对照
 
-openJiuwen 的判断与行业共识一致：**模型能力在增强，但系统能力没有同步增长**： ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+openJiuwen 的判断与行业共识一致：**模型能力在增强，但系统能力没有同步增长**： ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
 
 - 模型可以理解复杂需求，却常常无法稳定调用外部能力；
 - 工具越来越多，却难以被高质量地检索和复用；
@@ -1209,20 +1209,20 @@ Symphony 把 skill 当作"系统资产"来管理，而不只是提示词里附�
 
 ### 5 条独到判断
 
-1. **"选不准 + 用不好"是技能规模化的两大死结**，分开解决都不彻底——必须"检索 + 编排"双核心同时设计。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-2. **检索要融入 Agent loop，而不是执行前一次性预处理**。否则多意图 / 隐式意图这种需要推理的选择问题永远解不掉。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-3. **依赖图作为"结构化资产"沉淀**比每次临场推理更有价值——图可以"反复读取、复用、演进"，符合"长期资产 > 一次性推理"的工程哲学。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-4. **能力指纹 + 动态词表归一**是图能起作用的前提，否则"同名不同义 / 同义不同名"会让依赖关系失真。这是从 RAG / Schema 工程借来的关键技巧。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-5. **失败可局部修复**——沿图结构定位失败节点，就近替换或修补，不必整条链路推倒重跑。这把"局部性"思想从系统架构层（cache locality）推到了 Agent 编排层。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+1. **"选不准 + 用不好"是技能规模化的两大死结**，分开解决都不彻底——必须"检索 + 编排"双核心同时设计。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm
+2. **检索要融入 Agent loop，而不是执行前一次性预处理**。否则多意图 / 隐式意图这种需要推理的选择问题永远解不掉。 ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
+3. **依赖图作为"结构化资产"沉淀**比每次临场推理更有价值——图可以"反复读取、复用、演进"，符合"长期资产 > 一次性推理"的工程哲学。 ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
+4. **能力指纹 + 动态词表归一**是图能起作用的前提，否则"同名不同义 / 同义不同名"会让依赖关系失真。这是从 RAG / Schema 工程借来的关键技巧。 ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
+5. **失败可局部修复**——沿图结构定位失败节点，就近替换或修补，不必整条链路推倒重跑。这把"局部性"思想从系统架构层（cache locality）推到了 Agent 编排层。 ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
 
 ### 3 条实践启示
 
-1. **技能数量超过 10-20 个就该考虑检索机制**，而非等"出问题再修"。Embedding 检索是过渡方案，**树检索 + Agent loop 集成**才是规模化终态。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-2. **依赖关系图应该离线构建 + 在线查询**，避免每次编排都做语义匹配——性能与稳定性双赢。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
-3. **组合可靠 / 协同可解释 / 失败可局部修复**是判断"编排系统是否成熟"的三个硬指标，比"功能丰富"更重要。 ^["[InfoQ: 蜂群Agent来了！JiuwenSwarm](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)"]
+1. **技能数量超过 10-20 个就该考虑检索机制**，而非等"出问题再修"。Embedding 检索是过渡方案，**树检索 + Agent loop 集成**才是规模化终态。 ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
+2. **依赖关系图应该离线构建 + 在线查询**，避免每次编排都做语义匹配——性能与稳定性双赢。 ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
+3. **组合可靠 / 协同可解释 / 失败可局部修复**是判断"编排系统是否成熟"的三个硬指标，比"功能丰富"更重要。 ^["[[raw/articles/jiuwenswarm-coordination-engineering|InfoQ: 蜂群Agent来了！JiuwenSwarm
 
 ## 相关实体
-- [Agent Development Crawl Walk Run Crewai Iterative](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-development-crawl-walk-run-crewai-iterative.md)
+- [[entities/agent-development-crawl-walk-run-crewai-iterative](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)
 - [Agent Orchestration](ch01/117-agent-orchestration.html)（AWS — 多 Agent 编排对照）
 - [Meta Skill Skill Orchestration Opensquilla Jay](https://github.com/QianJinGuo/wiki-public/blob/main/entities/meta-skill-skill-orchestration-opensquilla-jay.md)（笨小葱 — 单 Skill 编排对照）
 - [Ai Agent Tool Count Trap](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-tool-count-trap.md)（execute_code 算子的极简设计同源思想）

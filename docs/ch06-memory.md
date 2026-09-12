@@ -875,7 +875,7 @@ CrewAI 的核心论点——memory 是认知过程而非存储问题——与认
 ### 5. Full inception 模式的工程风险与价值
 用 CrewAI Flows 实现 memory 自身（"an agentic system on itself"）是优雅的自引用设计，但也引入了工程风险：memory 操作的可靠性取决于底层 agent 的可靠性，如果 encode/consolidate 的 agent 本身 hallucinate，则错误会被固化到记忆中。缓解策略可能包括：对 memory 操作使用更可靠的模型、限制 self-reference 的递归深度、对 consolidate 结果做人类审核。
 
-## 实践启示
+## 实践启示（续）
 
 ### 1. Agent 开发者：用 5 操作 API 替代 vector store + similarity search
 如果你的 agent 在跨 run 场景下使用 memory，不要只做 vector store + similarity search。至少实现 encode（带重要性评分）+ recall（带置信度评估）+ forget（带半衰期）。Consolidate 和 extract 可在规模增长后加入。

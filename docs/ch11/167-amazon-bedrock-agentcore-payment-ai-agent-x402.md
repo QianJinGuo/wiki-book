@@ -760,7 +760,7 @@ x402 协议经历了从 v1 到 v2 的重大变化，核心差异在于支付要�
 
 ## 第 2 来源 — Solv Labs 可验证可审计的 Agent 支付（2026-08-13 MERGE）
 
-> （v=8 c=8 s=4），30-70% overlap + 6 互补角度 → MERGE。原文：Pay with confidence: How Solv Labs built verifiable, auditable agent payments on Amazon Bedrock AgentCore payments。
+> （v=8 c=8 s=4），30-70% overlap + 6 互补角度
 
 ### 互补角度 6 条
 

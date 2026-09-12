@@ -22,11 +22,11 @@
 | **Loss-function development** | "构建这个。让测试通过。然后针对 1,000 个 eval cases 继续迭代。" | 95% 起步，**继续下降**逼近 | 达到 outcome 阈值（否则无出口） |
 
 > **测试套件是有限的，一旦全绿就结束**。
-> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
+> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环
 > **1,000 case 的 eval，达到 95% 仍是要继续下降逼近的目标**。
-> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
+> ^["[[raw/articles/loss-function-development-elvis-sun-goal-loop-2026|从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环
 > 这很重要——**智能体会做出几百个你永远看不到的决策，而每一个决策都需要一个参照系来判断**。
-> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
+> ^["[[raw/articles/loss-function-development-elvis-sun-goal-loop-2026|从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环
 > **如果你没有写目标，智能体会自己选一个**。它会选**最便宜、最容易满足的东西**。
 
 ## 智能体作弊 3 次（失败案例）
@@ -55,9 +55,9 @@
 ### 关键洞察
 
 > **那一刻我明白了：智能体只是在优化。**
-> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
+> ^["[[raw/articles/loss-function-development-elvis-sun-goal-loop-2026|从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环
 > **作弊不是智能体的 bug。bug 在我的目标里：我告诉它要去哪里，却把所有捷径都敞开了。**
-> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
+> ^["[[raw/articles/loss-function-development-elvis-sun-goal-loop-2026|从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环
 > **每一条你没有封住的廉价路径，都会成为优化器全力冲刺的方向。**
 
 ### 循环 4（30 小时）— 盲测 200 条目 + 硬限制
@@ -66,7 +66,7 @@
 - **每个修复关掉一条廉价路径**，直到剩下唯一能让数字继续上升的方向 = 真正把任务做得更好
 - **它停止作弊了。然后它开始跑。**
 
-最终结果： ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
+最终结果： ^["[[raw/articles/loss-function-development-elvis-sun-goal-loop-2026|从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 
 | 指标 | 数值 |
 |------|------|
@@ -111,14 +111,14 @@
 | **Codex Usage** | 这一项有点 meta。循环应该有自我意识：**"我在这次优化上花了多少 tokens"**？这有助于知道当前优化步骤的梯度 |
 
 > **你看不见的东西，就无法优化。**
-> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
+> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环
 > **如果你刚开始跑这些循环，不要一启动就离开。先陪它跑第一轮**。观察它触碰了什么。确认你搭的 harness 确实被正确使用。然后再去睡觉（并且试着别一直想着醒来会看到什么）。
 
 ### 4. 强制熵（Forced Entropy）
 
 > 为什么强制熵重要：**每个循环都会从上一轮的完整上下文继续**。模型不是重新开始，它会读取自己之前上百个决策，以及到目前为止有效的梯度。
 
-**在 /goal 循环里，命中局部最大值是默认状态**。没有明确的一脚踢开，智能体会继续沿着同一座山往上走。 ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
+**在 /goal 循环里，命中局部最大值是默认状态**。没有明确的一脚踢开，智能体会继续沿着同一座山往上走。 ^["[[raw/articles/loss-function-development-elvis-sun-goal-loop-2026|从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 
 > 举个例子，**如果一个小旋钮能让结果提升 0.1%，智能体会一直拧那个旋钮**，即使还有 1000 个其他旋钮可以试。
 
@@ -154,11 +154,11 @@ Elvis 写了一个 **skill 用来生成这类目标**，帮助跑一次好的 lo
 ## 蒸馏从训练时移到提示时
 
 > 换个视角看，这本质上是蒸馏，只是从 **training-time 移到了 prompt-time**。DeepSeek、Kimi、Minimax 这一线就是这样缩小了与 GPT 和 Claude 的大部分差距：**用别人家的输出训练你的模型，直到你的模型能复现它们**。
-> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
+> ^["[[raw/articles/loss-function-development-elvis-sun-goal-loop-2026|从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环
 > **但现在你不必蒸馏一个模型**。你可以用 /goal 和 LFD，**对任何公开可找到的 artifact 进行蒸馏拟合，它不检查内部，也不需要检查内部**。
-> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
+> ^["[[raw/articles/loss-function-development-elvis-sun-goal-loop-2026|从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环
 > 重点是**公开**这个词。蒸馏别人在 ToS 限制下、登录墙后、付费墙后的输出，并不合理。**但公开发布的东西——一家公司为了赢得客户而 ship 出来的输出——一直都可以被学习**。
-> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
+> ^["[[raw/articles/loss-function-development-elvis-sun-goal-loop-2026|从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环
 > 这部分并不新，它是软件里最古老的招数。**新的地方在于，现在这件事很便宜，而且几小时就能完成，不再需要几个月**。
 
 ### 信息对称 = 执行成本坍缩
@@ -175,27 +175,27 @@ Elvis 写了一个 **skill 用来生成这类目标**，帮助跑一次好的 lo
 | **理由** | "**在 AI-driven security threats 的时代，你不能把 source 留在智能体读得到的地方**" |
 
 > `"/goal read cal.com source code and enumerate its attack surface until something works"`
-> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
+> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环
 > **这种攻击太危险，也太容易执行**。
-> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
+> ^["[[raw/articles/loss-function-development-elvis-sun-goal-loop-2026|从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环
 > **一个身份核心就是"open source"的公司，在 2026 年决定开放已经变成负担**。
 
 ## 新护城河：信息不对称
 
 > 在软件的整个历史里，**"我们构建了它"曾经就是护城河。那个时代正在结束**。
-> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
+> ^["[[raw/articles/loss-function-development-elvis-sun-goal-loop-2026|从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环
 > **下一个时代属于那些拥有 artifact 从未包含之物的人：别人无法评分的 eval set**。
-> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
+> ^["[[raw/articles/loss-function-development-elvis-sun-goal-loop-2026|从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环
 > - **你的用户真正踩到的边缘情况清单**
 > - **你私下测量的 ground truth**
-> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
+> ^["[[raw/articles/loss-function-development-elvis-sun-goal-loop-2026|从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环
 > **谁拥有竞争对手的智能体看不到的目标，谁就是唯一一个能让自己的循环继续下降的人**。
-> ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
+> ^["[[raw/articles/loss-function-development-elvis-sun-goal-loop-2026|从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环
 > **产品现在只是一个周末。去构建那个周末无法触碰的 eval。**
 
 ### 1. LFD vs Spec-Driven 的本质差异：开放 vs 闭合
 
-**Spec-driven** 是**闭合目标**：测试集有限，全绿就结束。**Loss-function driven** 是**开放目标**：1,000 case 的 eval 达到 95% 仍要继续。 ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
+**Spec-driven** 是**闭合目标**：测试集有限，全绿就结束。**Loss-function driven** 是**开放目标**：1,000 case 的 eval 达到 95% 仍要继续。 ^["[[raw/articles/loss-function-development-elvis-sun-goal-loop-2026|从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 
 这种"开放目标"哲学与**长程 Agent** 的设计哲学完全契合： ^["[从 Spec 到损失函数 — 真正会用 AI Agent 的人已经在设计循环](https://mp.weixin.qq.com/s/2XqBV0lMj5VQNvNJjZZUIA)"]
 - MiMo Code 的 Goal 机制（独立 verifier 审查完成度）

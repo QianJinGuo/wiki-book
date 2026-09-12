@@ -143,8 +143,6 @@ POC 可用 Long-term API Key 快速验证，但生产环境必须切换到 IRSA 
 
 `CRITICAL JUDGMENT RULE: 不要猜测为"有"` 是减少幻觉最有效的手段 ^。制造业质检场景 **误报（无报为有）比漏报危害更大**，会导致合格品被误判触发返工 ^。Skill 报告应区分"已确认"、"疑似"、"需人工复核"三类状态 ^，高风险决策转人类复核。
 
-## 参考来源
-
 ## 相关实体
 - [Bedrock Agentcore Payment X402 Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/bedrock-agentcore-payment-x402-agent.md)
 - [Ci T Based On Amazon Bedrock Agentcore Openclaw Enterprise Intelligent Operations Best Practices](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ci-t-based-on-amazon-bedrock-agentcore-openclaw-enterprise-intelligent-operations-best-practices.md)

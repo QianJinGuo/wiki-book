@@ -8,7 +8,6 @@
 ## 核心技术
 OpenClaw、Amazon Bedrock、Agentic AI、MCP
 
-## 来源
 ---
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/enterprise-openclaw-security-deploy-architecture-guide/)
 

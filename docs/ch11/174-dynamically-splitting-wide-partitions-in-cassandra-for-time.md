@@ -199,8 +199,6 @@ Netflix 的 fallback 设计中有一条重要规则：**原始 wide partition �
 
 这个权衡值得记住：当需要同时保证**数据可用性和正确性**时，保留冗余路径是值得的。删除原始数据的"清理"诱惑可能在分布式系统的一致性边界上造成难以排查的问题。
 
-## 来源
-
 ## 相关实体
 - [Vietnam To Develop Domestic Cloud So It Can Ditch Risky Overseas Operators For G](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vietnam-to-develop-domestic-cloud-so-it-can-ditch-risky-overseas-operators-for-g.md)
 - [Vietnam Domestic Cloud](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vietnam-domestic-cloud.md)

@@ -81,7 +81,7 @@ AWS 侧对同一 ARD 开放规范的补充视角，聚焦 **AWS Agent Registry**
 - **4. 跨环境挑战**——多云/本地/SaaS 各用自有元数据格式时需 bespoke 连接器；共享规范（ARD）让"发布一次、处处发现"，是第 1 来源"联邦可组合"的具体落地机制
 - **5. ARD 开放标准属性**——Apache 2.0 许可、agenticresourcediscovery.org + GitHub ards-project，AWS 贡献反馈；"federate without migrating / discover globally, control locally" 原则
 
-**判据**：同 ARD 规范、知识可迁移（注册表/策展/联邦发现模式不绑定 AWS），非平台教程，与第 1 来源互为补充 → MERGE 为第 2 来源。
+**判据**：同 ARD 规范、知识可迁移（注册表/策展/联邦发现模式不绑定 AWS），非平台教程，与第 1 来源互为补充
 
 ## 相关实体
 
