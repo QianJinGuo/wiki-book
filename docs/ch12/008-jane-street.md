@@ -40,9 +40,6 @@ Jane Street 工程师在 2026-06 发表的一篇立场文章，**核心论点是
 - [AI Friendly 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-friendly-architecture-design.md) — 形式化 spec 是 AI-friendly 的一种表达
 - [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — spec 即 harness 的一种特殊形式
 
-## 原文链接
-
-→ [原文存档](https://blog.janestreet.com/formal-methods-at-jane-street-index/)
 
 ---
 

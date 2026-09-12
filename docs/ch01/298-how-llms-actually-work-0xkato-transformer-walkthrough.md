@@ -127,9 +127,6 @@ Attention 权重的可视化是理解"模型在看什么"的最佳工具——�
 - [Code As Agent Harness Survey](https://github.com/QianJinGuo/wiki-public/blob/main/entities/code-as-agent-harness-survey.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/llm-research-frontiers.md)
-## 原文链接
-
-→ [原文存档](https://www.0xkato.xyz/how-llms-actually-work/)
 
 ---
 

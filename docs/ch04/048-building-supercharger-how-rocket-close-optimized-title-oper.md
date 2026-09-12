@@ -54,9 +54,6 @@ Rocket Close（底特律，Rocket Companies 子公司的 title agency + appraisa
 - [agentic-payment-x402-bedrock-agentcore](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentic-payment-x402-bedrock-agentcore.md) — 金融场景 agent 应用
 - [agentops-operationalize-agentic-ai-amazon-bedrock](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-amazon-bedrock.md) — Bedrock 上 agent 的 production 化
 
-## 原文链接
-
-→ [原文存档](https://aws.amazon.com/blogs/machine-learning/building-supercharger-how-rocket-close-optimized-title-operations-with-agentic-ai)
 
 ## 核心观点
 

@@ -144,9 +144,6 @@ AWS China Blog（2026-06-12）从**经济学经典命题"生产力决定生产�
 - Strands Agent SDK：https://strandsagents.com/
 - 关联 Amazon Bedrock：https://aws.amazon.com/cn/bedrock/
 
-## 原文链接
-
-→ [原文存档](https://aws.amazon.com/cn/blogs/china/agentic-ai-intelligent-enterprise-framework)
 
 ### 核心观点："生产力决定生产关系"是 Agentic AI 落地的经济学解释框架
 

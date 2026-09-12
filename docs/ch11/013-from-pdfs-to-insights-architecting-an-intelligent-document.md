@@ -51,9 +51,6 @@ AWS 在 2026-06 发布的一篇 IDP（智能文档处理）架构深度文章，
 - [process-financial-documents-using-amazon-bedrock-data-automa](https://github.com/QianJinGuo/wiki-public/blob/main/entities/process-financial-documents-using-amazon-bedrock-data-automa.md) — 金融文档 BDA 案例
 - [automate-schema-generation-for-intelligent-document-processing](https://github.com/QianJinGuo/wiki-public/blob/main/entities/automate-schema-generation-for-intelligent-document-processing.md) — schema 自动生成（与 BDA blueprint 互补）
 
-## 原文链接
-
-→ [原文存档](https://aws.amazon.com/blogs/machine-learning/from-pdfs-to-insights-architecting-an-intelligent-document-processing-pipeline-with-aws-generative-ai-services)
 
 ---
 

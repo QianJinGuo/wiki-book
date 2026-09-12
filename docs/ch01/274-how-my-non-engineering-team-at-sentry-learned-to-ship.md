@@ -79,15 +79,6 @@ Sentry 给每种页面类型写了 Skills（AI 指令文件）：landing pages�
 5. **设计保真度 ≠ 功能代码** — 1:1 复刻既有设计是当前 coding agent 的明显短板，迁移项目要在排期上为它预留足够时间。
 6. **风险护栏** — 让 agent 触 production 的最大风险是 review 阶段的疲劳；引入 AI code review 是下一步关键投资。
 
-## 原文链接
-
-- [http://read.technically.dev/p/how-matt-learned-to-ship](http://read.technically.dev/p/how-matt-learned-to-ship)
-
-→ [原文存档](http://read.technically.dev/p/how-matt-learned-to-ship)
-
-## 相关实体
-
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/vision-multimodal.md)
 
 ---
 

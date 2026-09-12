@@ -1,6 +1,6 @@
 # Engineering roles shift from developing code to managing AI | CIO Dive
 
-> 📊 Level ⭐⭐⭐ | 7.6KB | `entities/820297.md`
+> 📊 Level ⭐⭐⭐ | 7.6KB | `entities/engineering-roles-shift-managing-ai.md`
 
 > → [原文存档](https://www.ciodive.com/news/engineering-roles-shift-managing-AI/820297/)
 

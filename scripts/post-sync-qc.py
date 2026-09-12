@@ -209,14 +209,19 @@ def main():
             else:
                 all_issues.append(iss)
 
-    # Cross-file archive URL dedup (M-duplicate detection)
+    # Cross-file archive URL dedup (M-duplicate detection).
+    # Only article pages (under chapter dirs) participate: docs/-root MOC files
+    # legitimately cite the archive URL of every source they aggregate.
+    # Dedupe file lists first: a URL repeated inside one file (multi-source
+    # section) is not a cross-file duplicate.
     if not args.skip_archive_dedup:
         for url, files in sorted(archive_map.items()):
-            if len(files) > 1:
+            unique_files = sorted({f for f in files if "/" in f})
+            if len(unique_files) > 1:
                 all_issues.append({
-                    "file": ", ".join(files),
+                    "file": ", ".join(unique_files),
                     "category": "M-duplicate",
-                    "detail": f"Same archive URL in {len(files)} files: {url}",
+                    "detail": f"Same archive URL in {len(unique_files)} files: {url}",
                     "line": 0,
                 })
 

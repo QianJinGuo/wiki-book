@@ -114,9 +114,6 @@ QAT 模型消除了用户自行量化的技术门槛——直接下载即部署�
 - [新程alpha认知模型：4b参数端侧部署，群体智能以小搏大比肩gpt-5.4](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nextie-alpha-cognitive-model-4b-on-device.md)
 - [notes on pretraining parallelisms and failed training runs.](https://github.com/QianJinGuo/wiki-public/blob/main/entities/notes-on-pretraining-parallelisms-and-failed-training-runs.md)
 
-## 原文链接
-
-→ [原文存档](https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/)
 
 ---
 
