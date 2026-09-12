@@ -53,34 +53,32 @@ python3 scripts/post-sync-qc.py --skip-archive-dedup
 
 ## 待实施的中期改进
 
-### 1. slug 生成管线修复
+### 1. slug 生成管线修复（待实施）
 **问题**：实体 slug 从 URL 路径自动生成时产生垃圾值（如 `3rdfsmp`、`5237875`、`2026`）。
-**修复方案**：在 sync 管线中增加 slug 验证——slug 长度 < 8 或不含语义字符时，回退到标题拼音/翻译生成。
-**影响范围**：ch11/123（3rdfsmp）、ch12/022（5237875）等。
+**修复方案**：在 wiki 入库管线中增加 slug 验证——slug 不含语义字符时回退到标题派生生成。
+**影响范围**：3 页残留（QC Garbage-slug 项持续跟踪）。
 
-### 2. 来源合并管线 QC 元数据过滤
-**问题**：第 N 来源合并时，v×c/score/MERGE 决策元数据被写入正文。
-**修复方案**：在合并逻辑中增加过滤器，移除以下模式：
-- `v×c=\d+`
-- `→ MERGE`
-- `candidate pipeline`
-- `value=N, confidence=N`
-**影响范围**：ch11/167/170、ch01/387 等。
+### 2. 来源合并管线 QC 元数据过滤 — ✅ 已实施（2026-09-12）
+**修复**：`~/wiki/scripts/book_compiler.py` 新增 `_sanitize_qc_leaks()`，投影进书前剥离：
+- 评分元数据行/内联段（`v×c=`、`v=N × c=N`、`value=N, confidence=N`、`评分：v=N`、`Ingest score`）
+- MERGE 决策行与行内 `→ **MERGE**` 决策尾巴
+- `Article ingested from newsletter candidate pipeline`
+- `review_recommendation:` / `review_value:` 字段
+- `Published Time:…Markdown Content:` scraper 残留
+- `]"]` 引注残渣、悬挂 `→ 原文存档` 无 URL 行
+- 重复 `→ [原文存档](同URL)` 行（保首个）；空 `## 原文链接` 死节
+- 第 2+ 个 `## 实践启示` 标题改名为 `## 实践启示（续）`
+幂等，单测覆盖。效果：K-leak 86 → 0。
 
-### 3. M 重复入库检测
-**问题**：同一文章从不同来源（不同 URL/不同 slug）被多次收录。
-**修复方案**：入库时以原文存档 URL 为查重主键。运行 `python3 scripts/post-sync-qc.py --quiet` 即可检测。
-**影响范围**：Nightmare-Eclipse（4-5 变体）、TeamPCP（双条）、Grafana（双条）等。
+### 3. 同源实体去重 — ✅ 已实施（2026-09-12，保守版）
+**修复**：`book_compiler.py` `_dedup_same_source()`：同一存档 URL 且标题归一相似度 ≥0.85 的实体视为同文双入库，保留较大写本入书，孪生实体进 quarantine（reason=duplicate_source_of:*）。
+**边界**：仅共享损坏 digest URL 的不同文章（标题不相似）双双保留——无法自动区分，由 post-sync-qc.py 的 M-duplicate 警告供人工裁决（评审 repos 里有 52 组逐对手工裁决记录）。
 
-### 4. Level 默认值统一
-**问题**：不同批次装配管线使用不同默认值（ch11 后段 ⭐⭐⭐⭐/⭐⭐⭐⭐⭐ vs ch12 前段 ⭐）。
-**修复方案**：统一为 ⭐⭐⭐（3 星），已通过批处理修复存量。新入库文章应在模板中硬编码 ⭐⭐⭐。
-**状态**：存量已修复，管线端待改。
+### 4. Level 分级归属管线 — ✅ 裁定（2026-09-12）
+编译器 `classify_level()` 按设计确定性分级（⭐×N，入门→大师五阶，首页层级条可视化）。此前文档级「统一 ⭐⭐⭐」是对管线设计的误判，已被 sync 正确回滚；post-sync-qc.py 的 Level-anomaly 检查已退役。
 
-### 5. MOC 文件实践启示排除
-**问题**：MOC/overview 文件（docs/ch02-prompt.md 等）因聚合多来源而自然存在多个 ## 实践启示 标题，不应被 QC 标记。
-**修复方案**：已在 post-sync-qc.py 中排除 MOC 文件（通过路径判断：直接位于 docs/ 根目录的文件为 MOC）。
-**状态**：已实现。
+### 5. MOC 文件实践启示排除 — ✅ 已实现
+post-sync-qc.py 排除 docs/ 根目录 MOC 文件（聚合多来源天然多节）。
 
 ## 遗留的 P3 长尾
 

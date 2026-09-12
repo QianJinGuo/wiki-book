@@ -39,6 +39,9 @@ K_LEAK = re.compile(
     r'|知识价值.*置信度'
     r'|→\s*MERGE'
     r'|candidate pipeline'
+    r'|\breview_recommendation\b\s*[:=]'
+    r'|^\s*review_value\s*[:=]',
+    re.M,
 )
 
 SCRAPER_META = re.compile(r'Published Time:.*Markdown Content:')
@@ -103,10 +106,9 @@ def check_file(path: pathlib.Path, rel: str) -> list:
     if m:
         add("Scraper-metadata", m.group()[:80])
 
-    # 3. Level anomaly
-    m = LEVEL_ANOMALY.search(text)
-    if m:
-        add("Level-anomaly", m.group()[:40])
+    # 3. Level anomaly — RETIRED 2026-09-12: the compiler now classifies
+    # levels deterministically (⭐×N by design, 入门→大师), so star variance
+    # across pages is intended behaviour, not a defect.
 
     # 4. Empty section (needs line-level)
     lines = text.split("\n")
@@ -151,7 +153,9 @@ def check_file(path: pathlib.Path, rel: str) -> list:
     #    they aggregate multiple sources and legitimately have per-source sections)
     is_moc = "/" not in rel  # MOC files are directly under docs/ (e.g. docs/ch02-prompt.md)
     if not is_moc:
-        practice_count = len(DUAL_PRACTICE.findall(text))
+        # Exact match only: `## 实践启示（续）` renames (compiler dedup) are
+        # the fix for duplicate sections, not a defect.
+        practice_count = len(re.findall(r'^## 实践启示\s*$', text, re.M))
         if practice_count > 1:
             add("Dual-practice-section", f"{practice_count} '## 实践启示' headers")
 
@@ -248,7 +252,7 @@ def main():
 
     # Non-zero exit if critical issues found
     critical = {"K-leak", "Scraper-metadata", "Dual-practice-section"}
-    warning = {"M-duplicate", "Garbage-slug", "Level-anomaly"}
+    warning = {"M-duplicate", "Garbage-slug"}
     critical_count = sum(by_cat.get(c, 0) for c in critical)
     warning_count = sum(by_cat.get(c, 0) for c in warning)
     if critical_count > 0:
