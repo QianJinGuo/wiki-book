@@ -39,7 +39,7 @@ Strands Agents 的 Tool Calling 将语音 Agent 从"回答问题"升级为"直�
 5. **在大促前验证弹性伸缩和并发上限**：快时尚行业的黑五、圣诞等促销期咨询量呈指数级增长，AgentCore Runtime 的 Serverless 自动伸缩能力需要提前进行压测验证，确保 Nova Sonic 配额、WebSocket 连接数和 Strands Agent 实例数在高并发下不成为瓶颈。
 
 ## 架构图
-→ （架构图待生成: C4 架构图）
+→ C4 架构图
 
 ## 相关实体
 - [你缺的不是更好的 AI，而是一个"装自己"的系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vayne-lw-personal-agent-system.md)

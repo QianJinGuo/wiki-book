@@ -176,7 +176,7 @@
 - 每个开发者同时跑最多 **12 个 coding agent**
 - 三人团队每天产生约 **600 个 preview deployment**，平均构建时间约 30 秒
 - 关键洞察：**当开发者同时运行多个 agent 时，底层 infra 的任何一层如果变慢，上层的并行性就会崩塌**——十二个工作流压缩成一个队列
-- "**Agent 数量对 infra 的压力是乘法关系**：1 个开发者 → 12 个 agent → 12 套隔离环境 → 12 条并行 pipeline → 12 个即时部署"
+- **Agent 数量对 infra 的压力是乘法关系**：1 个开发者 → 12 个 agent → 12 套隔离环境 → 12 条并行 pipeline → 12 个即时部署
 
 **② Human DX 和 Agent DX 是正交的** —— Google Workspace CLI (gws) [2]
 - 作者提出精确的区分：**Human DX 优化的是可发现性（discoverability），Agent DX 优化的是可预测性（predictability）**
@@ -192,7 +192,7 @@
 - 核心判断：agent 需要凭证来访问外部服务，但 **agent 本身不能被信任持有这些凭证**——因为 prompt injection 可能导致凭证泄露
 - 解法：**credential broker（代理层）** —— agent 发出请求时携带**占位符**（如 `__github_token__`）而非真实凭证；broker 认证 agent 身份后将占位符替换为真实凭证转发请求；**agent 全程未见到真实凭证**
 - 行业趋同：Anthropic（Managed Agent Infrastructure）/ Vercel（Sandbox 凭证注入）/ Cloudflare（Outbound Workers）/ LangChain（Sandbox Auth Proxy）各自在不同层实现同一范式
-- "**多家公司独立趋同到同一范式，说明这是 agent 安全模型的必然走向**"
+- **多家公司独立趋同到同一范式，说明这是 agent 安全模型的必然走向**
 
 ### 4 大高杠杆行动方向
 
@@ -208,7 +208,7 @@
 **③ Dry-run 基础设施** —— 在基础设施层提供**统一的"变更预览"能力**
 - **资源归属治理**（这个配置属于哪个应用 / 哪个团队 / 哪个环境）是 dry-run 的前提
 - Dry-run 的输出应该标准化：**diff + 影响范围 + 影响规模 + 风险等级 + 是否可回滚**
-- "**'有 dry-run 就放心'——应该被泛化为一种 infra 能力，覆盖所有生产环境资源变更**"
+- **'有 dry-run 就放心'——应该被泛化为一种 infra 能力，覆盖所有生产环境资源变更**
 
 **④ 验证体系的演进** —— 传统软件测试和 agent 评测**正在从两端走向融合**
 - 断言方式从**精确匹配**（output == expected）演进到**约束满足**（输出满足一组约束——类型正确 / 不违反安全策略 / 业务逻辑自洽）
@@ -218,7 +218,7 @@
 > "**一个判断：验证基础设施的投资优先级应该高于生成能力。**生成能力的提升是模型厂商在推的事，验证能力的提升是 infra 团队该做的事——而验证的可靠性直接决定了 agent 的自主空间。"
 
 **⑤ Agent 行为驱动的 Infra 质量度量** —— 通过 agent 的行为模式（重试频率 / 错误类型 / 绕路路径）来**度量 infra 的 agent 友好程度**
-- "**Agent 成为 infra 设计的持续压测者。用得越多，暴露的设计缺陷越多，改进方向越清晰**"
+- **Agent 成为 infra 设计的持续压测者。用得越多，暴露的设计缺陷越多，改进方向越清晰**
 
 > "**Infra 的能力边界，就是 agent 的自主边界。**"
 

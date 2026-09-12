@@ -1651,7 +1651,7 @@ Schema 语义没变，但 **bytes 稳定了**。
 - **Agent 工具链加入"压缩代理层"作为可插拔中间件**：Headroom 的 proxy / wrapper / MCP server 模式让它**对应用层透明**——现有 Agent 不用改代码就能获得压缩 + 缓存稳定化收益。如果你在构建 Agent 平台或 IDE 集成层，**优先考虑 Headroom-style 透明代理**而非侵入 SDK 修改。
 
 ## 架构图
-→ （架构图待生成: C4 架构图）
+→ C4 架构图
 
 ---
 

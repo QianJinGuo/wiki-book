@@ -92,7 +92,7 @@ Kiro CLI 的非交互模式意味着结果完全由输出内容决定。建议�
 虽然典型场景的月成本不到 $5，但在生产环境中仍需建立成本监控机制。建议为 SNS 通知添加成本相关的 Lambda 订阅者，当单个账户的日均调度次数或容器运行时长异常增加时触发告警。同时，EventBridge Scheduler 的内置重试机制虽然提高了可靠性，但也可能导致单个失败任务触发多次容器启动——应通过 Dispatcher Lambda 的幂等性设计确保重试不会产生重复成本。
 
 ## 架构图
-→ （架构图待生成: C4 架构图）
+→ C4 架构图
 
 ## 相关实体
 - [基于 Amazon Ecs Fargate 自建 Keycloak 作为 Aws Iam Identity Center](https://github.com/QianJinGuo/wiki-public/blob/main/entities/基于-amazon-ecs-fargate-自建-keycloak-作为-aws-iam-identity-center.md)
