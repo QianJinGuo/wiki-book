@@ -39,7 +39,7 @@ The author pushes back on the "tech industry is dying" narrative as missing the 
 - [Primitive is the product](https://github.com/QianJinGuo/wiki-public/blob/main/entities/primitive-is-the-product-ai-native-product-philosophy.md)
 - [The minimum viable unit of saleable software](https://github.com/QianJinGuo/wiki-public/blob/main/entities/minimum-viable-unit-saleable-software-brandur.md)
 - [The token economy](https://github.com/QianJinGuo/wiki-public/blob/main/entities/the-token-economy.md)
-- [From doer to director](112-from-doer-to-director-the-ai-mindset-shift.html)
+- [From doer to director](110-from-doer-to-director-the-ai-mindset-shift.html)
 - [Running an AI-native engineering org](031-running-an-ai-native-engineering-org.html)
 - [When growth slows — product vs. sales](https://github.com/QianJinGuo/wiki-public/blob/main/entities/when-growth-slows-is-it-sales-fault-or-the-products-fault-the-answer-has-changed.md)
 

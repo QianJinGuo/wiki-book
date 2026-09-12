@@ -1273,7 +1273,7 @@ Codex 的 Prompt Layout 设计揭示了一个反直觉但普适的工程真理�
 
 ### 实践价值：压缩能力的不对称是结构性的，应用层应聚焦可控部分
 
-应用层压缩（Semantic Compression）与基础设施层压缩之间存在结构性信息不对称：厂商可访问注意力分布、海量真实对话数据、专用 Fine-tuned 压缩模型，应用层无法复制这一优势。理解这一点后，[Anthropic Prompt Caching Claude Code](ch01/192-anthropic-prompt-caching-claude-code.html) 等应用层实践的价值在于：放弃追求"更好的压缩"，转而聚焦**缓存友好的 Prompt Layout + 显式的 Compress/Select 策略**，这是应用层真正能控制的部分。context-kit 开源工具正是这一哲学的教学实现。
+应用层压缩（Semantic Compression）与基础设施层压缩之间存在结构性信息不对称：厂商可访问注意力分布、海量真实对话数据、专用 Fine-tuned 压缩模型，应用层无法复制这一优势。理解这一点后，[Anthropic Prompt Caching Claude Code](ch01/190-anthropic-prompt-caching-claude-code.html) 等应用层实践的价值在于：放弃追求"更好的压缩"，转而聚焦**缓存友好的 Prompt Layout + 显式的 Compress/Select 策略**，这是应用层真正能控制的部分。context-kit 开源工具正是这一哲学的教学实现。
 
 ### 深层博弈：Append-only 需要模型专门适配
 
@@ -2031,7 +2031,7 @@ OneReason 把推荐基模的 Reasoning 补上了关键一步。下一步是打�
 
 ## 相关实体
 - [Harness Engineering 第三代工程范式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-第三代工程范式.md)
-- [Cursor Harness Model Production Floor](ch01/106-cursor-harness-model-production-floor.html)
+- [Cursor Harness Model Production Floor](ch01/104-cursor-harness-model-production-floor.html)
 - [Fudan Peking Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fudan-peking-ahe-agentic-harness-engineering.md)
 - [From Agent Protocol To Harness Skill](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-agent-protocol-to-harness-skill.md)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
@@ -2610,7 +2610,7 @@ worker 边界、skill description 触发词、producer 链路回执——这三�
   - [Anthropic+Google Agent Skills 设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-google-agent-skills-design-patterns.md)
 - **同 Codex / OpenAI**：
   - [Codex Goal 代理运行时](https://github.com/QianJinGuo/wiki-public/blob/main/entities/codex-goal-agent-runtime.md)
-  - [Codex Goal 六小时运行](ch09/079-codex-goal-six-hour-run.html)
+  - [Codex Goal 六小时运行](ch09/078-codex-goal-six-hour-run.html)
   - [Codex 上下文工程](https://github.com/QianJinGuo/wiki-public/blob/main/entities/codex-context-engineering-lastwhisper-thinking-in-context.md)
   - [OpenAI Codex JasonLiu maxxing 攻略](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openai-codex-jasonliu-maxxing-playbook.md)
   - [GPT-5.4 Codex Interconnects](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gpt54-codex-interconnects.md)
@@ -2618,7 +2618,7 @@ worker 边界、skill description 触发词、producer 链路回执——这三�
   - [Agent 可靠性工程与持续改进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-reliability-engineering-skillify-continuous-improvement.md)
   - [Skill 工程化设计：把 Agent 当算法用](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-engineering-ai-as-algorithm.md)
 - **同 prompt 工程 / 范式**：
-  - [Claude Managed Agents](ch01/095-claude-managed-agents.html)（prompt 工程的边界探索）
+  - [Claude Managed Agents](ch01/093-claude-managed-agents.html)（prompt 工程的边界探索）
   - [AI 蜜罐：对抗 AI 智能体](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-powered-honeypots-turning-the-tables-on-malicious-ai-agents.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/wiki-pending-concepts-roadmap.md)
 

@@ -185,7 +185,7 @@ Unitree 计划将 IPO 融资款约 3 亿美元（每年约 1 亿美元）用于 
 ## 与现有知识的链接
 - → [原文存档](https://mp.weixin.qq.com/s/YfZ-bvXAmMBO3LFQ6eUPKA)
 - → [Yann LeCun JEPA世界模型](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yann-lecun-jepa-world-model.md) — AMI Labs具身智能方向
-- → [NVIDIA边缘端LLM for机器人](ch01/194-nvidia-edge-first-llms-av-robotics.html) — 英伟达边缘AI方案对比
+- → [NVIDIA边缘端LLM for机器人](ch01/192-nvidia-edge-first-llms-av-robotics.html) — 英伟达边缘AI方案对比
 
 ### 异构计算vs单芯片：架构选择的工程哲学
 蔚蓝选择6颗专用芯片而非1颗通用大芯片，背后是** task-specific 优化**的工程哲学。

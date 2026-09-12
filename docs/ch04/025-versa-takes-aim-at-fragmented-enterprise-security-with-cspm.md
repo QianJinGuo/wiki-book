@@ -24,7 +24,7 @@
 - ['Harness Engineering：AI 从](../ch05/061-harness-engineering.html) — 六层架构+七大反模式+分级决策树19712字rv9
 - [Building AI Agents in Accounting](002-building-ai-agents-in-accounting.html) — Skill-Config分离
 - [A Framework for AI Threat Readiness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai_threat_readiness_framework.md) — 威胁准备框架
-- [Where OpenClaw Security Is Heading — OpenClaw Blog](../ch12/002-where-openclaw-security-is-heading-openclaw-blog.html) — egress路由fs-safe信任体系
+- [Where OpenClaw Security Is Heading — OpenClaw Blog](https://github.com/QianJinGuo/wiki-public/blob/main/entities/where-openclaw-security-is-heading-openclaw-blog.md) — egress路由fs-safe信任体系
 - [Build agents, not pipelines](https://github.com/QianJinGuo/wiki-public/blob/main/entities/seangoedeckecom-build-agents-not-pipelines.md) — pipeline库vs agent框架类比+context-gathering隐形债务
 - [Domain Expertise Has Always Been the Real Moat](https://github.com/QianJinGuo/wiki-public/blob/main/entities/brethorstingcom-blog-2026-05-domain-expertise-has-always-been-the-.md) — 领域知识护城河
 - [From SSH to REST: A Security-Driven Modernization of Slack's EMR Data Pipelines](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-ssh-to-rest-a-security-driven-modernization-of-slacks-e.md) — Slack SSH去化，不自研选型方法论

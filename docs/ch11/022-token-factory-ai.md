@@ -105,7 +105,7 @@
 - [AI Coding Agent Token 成本控制五层模型](https://github.com/QianJinGuo/wiki-public/blob/main/entities/token-cost-control-coding-agent-devinyzeng-tencent.md) — Token成本工程化的五层优化模型，侧重AI Coding场景
 - [AI Gateways vs MCP Gateways](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-gateways-vs-mcp-gateways-what-security-teams-need-to-know.md) — AI网关在推理路由与成本控制中的定位分析
 - [LLM 缓存原理与实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-prefix-caching-comprehensive-guide.md) — 语义缓存/Prefix Caching的技术原理深化
-- [State of Routing in Model Serving](118-state-of-routing-in-model-serving.html) — Netflix模型服务路由架构演进
+- [State of Routing in Model Serving](117-state-of-routing-in-model-serving.html) — Netflix模型服务路由架构演进
 
 ---
 

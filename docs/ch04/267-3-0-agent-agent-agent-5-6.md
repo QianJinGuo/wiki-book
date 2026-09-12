@@ -196,7 +196,7 @@ Coze 3.0 提供的解决思路是**云端托管 + 统一消息总线**。本地 
 - [Coze 3 0 Collaboration System](https://github.com/QianJinGuo/wiki-public/blob/main/entities/coze-3-0-collaboration-system.md)
 - [Coze 3 0 Local Agent Project Orchestration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/coze-3-0-local-agent-project-orchestration.md)
 - [Oz Multi Harness Cloud Agent Orchestration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/oz-multi-harness-cloud-agent-orchestration.md)
-- [Agent Orchestration](../ch01/116-agent-orchestration.html)
+- [Agent Orchestration](../ch01/114-agent-orchestration.html)
 - [Baidu Netdisk Three Layer Agent Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/baidu-netdisk-three-layer-agent-architecture.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/openai-developer-ecosystem.md)
 

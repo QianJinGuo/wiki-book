@@ -166,7 +166,7 @@ AWS China Blog（2026-06-12）从**经济学经典命题"生产力决定生产�
 
 ### 技术判断：框架无关 + 模型无关是战略灵活性而非技术偏好
 
-文章强调"框架无关，模型无关"，这不是营销话术，而是面对 Agent 技术快速迭代的战略选择。专用压缩模型（[Anthropic Prompt Caching Claude Code](../ch01/192-anthropic-prompt-caching-claude-code.html)）与通用基础设施的对比在这里有直接意义：锁定单一模型/框架意味着将组织的技术演进路线绑定到供应商的发布周期。分层标准化（接口/身份/可观测性） + 保持灵活性（模型/框架/Prompt）是兼顾控制力和演进速度的最优解，参考 [Agent Harness Architecture Design Production Guide](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture-design-production-guide.md) 中的生产级设计原则。
+文章强调"框架无关，模型无关"，这不是营销话术，而是面对 Agent 技术快速迭代的战略选择。专用压缩模型（[Anthropic Prompt Caching Claude Code](../ch01/190-anthropic-prompt-caching-claude-code.html)）与通用基础设施的对比在这里有直接意义：锁定单一模型/框架意味着将组织的技术演进路线绑定到供应商的发布周期。分层标准化（接口/身份/可观测性） + 保持灵活性（模型/框架/Prompt）是兼顾控制力和演进速度的最优解，参考 [Agent Harness Architecture Design Production Guide](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture-design-production-guide.md) 中的生产级设计原则。
 
 ## 实践启示（续）
 

@@ -149,7 +149,7 @@ graph TB
 - [hermes-agent-self-evolving-source-analysis](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-self-evolving-source-analysis.md)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki-public/blob/main/queries/harness-peer-review-framework.md)
 - [Agent Memory 架构解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture-ruofei.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/109-claude-code-harness-deep-understanding.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/107-claude-code-harness-deep-understanding.html)
 - [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-20000-char-source-analysis.md)
 - [Agent Harness 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture.md)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-agentic-engineering-v4.md)

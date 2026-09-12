@@ -2,7 +2,7 @@
 
 > Agent 的大脑：短期/长期/工作记忆的分层架构
 
-> 本章收录 **32 篇**实体，按深度递增排列。
+> 本章收录 **31 篇**实体，按深度递增排列。
 
 ---
 
@@ -12,7 +12,7 @@
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 4 |
 | ⭐⭐ 工程师 | 需编程基础 | 1 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 11 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 10 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 7 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 9 |
 
@@ -296,7 +296,7 @@ Open Tag 是 demo/reference implementation，不是生产安全边界——没�
 
 ## 关联
 
-- [Introducing Claude Tag](ch01/446-introducing-claude-tag.html) — Open Tag 复刻的 Anthropic 范式
+- [Introducing Claude Tag](ch01/441-introducing-claude-tag.html) — Open Tag 复刻的 Anthropic 范式
 - [Anthropic Knowledge Work Plugins 分析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/knowledge-work-plugins-anthropic-source-analysis.md) — Skills 的渐进式披露，MFS 用不同方式解决相同问题
 - [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — MFS 作为 Agent 上下文 harness 的基础设施层
 
@@ -1287,80 +1287,7 @@ Schema 设计是 LLM Wiki 的质量上限，也是最大的风险点：Schema �
 
 ---
 
-## Ch06.015 Claude Code Session 管理与 1M 上下文最佳实践
-
-> 📊 Level ⭐⭐⭐ | 7.4KB | `entities/claude-code-session-management-1m-context.md`
-
-## 核心洞察：每轮对话都是一个分叉决策点
-每次 Claude 完成一轮对话，用户在发送下一条消息前，有五个选项构成上下文管理的核心工具集：
-| 操作 | 本质 | 适用场景 |
-|------|------|----------|
-| **继续（Continue）** | 自然延伸 | 同一任务连续性工作时 |
-| **回退（/rewind / 双击 Esc）** | 回到分支点重新发指令 | 方向错误时，比修正更优 |
-| **清除（/clear）** | 手动写简报开新会话 | 需要完全控制上下文转移时 |
-| **压缩（/compact）** | 让模型总结会话后继续 | 会话变长但仍有信息需要保留时 |
-| **子智能体（Subagents）** | 独立干净上下文执行子任务 | 中间输出大量的独立子任务 |
-
-## 核心策略
-### 1. 开启新任务的时机
-**经验法则：当你开始一项新任务时，就应该开启一个新会话。** 1M 上下文让长任务更可靠（如从零构建全栈应用），但关联任务（如给刚实现的功能写文档）可能需要保留部分上下文。
-
-### 2. 回退优于修正
-这是最重要的上下文管理习惯。当 Claude 尝试某方法失败时：
-
-- ❌ **本能反应**："那没用，试试方法 X" — 失败的步骤仍留在上下文中继续污染注意力
-- ✅ **正确做法**：回退到读取文件之后的那一刻，重新发指令，结合刚学到的教训
-还可以使用"从此处总结（summarize from here）"让 Claude 生成交接消息。
-
-### 3. 压缩 vs 清除
-- **Compact（压缩）**：有损操作，信任 Claude 决定哪些信息重要。可通过指令引导（如 `/compact 重点关注 auth 重构，丢掉测试调试的部分`）
-- **Clear（清除）**：手动提炼重点后重新开始，更费力但完全可控
-
-### 4. 糟糕的压缩
-当模型无法预测用户工作方向时，常发生糟糕的压缩。例如：漫长的调试后自动压缩总结了排查过程，但用户下一条消息是修复另一个警告，而该警告已在摘要中被丢弃。
-**对策**：1M 上下文给了更充裕的时间，可以根据接下来的计划主动运行带描述的 `/compact`。
-
-### 5. 子智能体作为上下文隔离工具
-子智能体拥有独立的、干净的上下文窗口，适合以下场景：
-
-- 验证工作成果（基于 spec 文件）
-- 研究其他代码库的实现方式
-- 为 git 改动编写文档
-**心理测试标准：以后还需要这些工具的原始输出吗？还是只需要结论？**
-
-## 与相关概念的关联
-- [Claude Code 架构深度分析](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/claude-code-deep-architecture-analysis.md) — 架构上下文压缩机制的源码级实现
-- [Agent Harness 上下文管理：工作集视角](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-context-management-working-set.md) — 上下文≠聊天记录，工作集视角下的四框架对比
-- [Hermes Agent](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/hermes-agent.md) — 开源 Agent 的上下文管理策略对比
-
-## 参考
-- [原文存档](https://mp.weixin.qq.com/s/IOSlKDkKVB1djBO0RpOSgA)
-
-## 相关实体
-- [Claude Code Subagent 上下文卫生](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-subagent-context-hygiene.md)
-- [深度解析 Claude Code 在 Prompt / Context / Harness 的设计与实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-prompt-context-harness.md)
-- [Agent 上下文窗口管理对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-window-management.md)
-- [Agent 上下文管理工程模式收敛 — 多框架代码级横向对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-context-management-architecture-patterns.md)
-
-- [Claude Code vs OpenClaw Agent 记忆系统对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-openclaw-memory-comparison.md)
-
-## 深度分析
-Claude Code团队成员Thariq揭示了1M上下文时代最核心的工程挑战——**Context Rot（上下文腐化）**：随着上下文增长，模型性能下降，因为注意力被分散到过多token上，陈旧无关内容干扰当前任务。
-**五个操作的工程本质**：Continue是上下文延续、/rewind是状态回滚、/clear是上下文重置、/compact是有损压缩、Subagent是上下文隔离——每一种操作都是对上下文状态的不同干预方式，共同构成完整的状态机。
-**Rewind优于修正的深层逻辑**：当模型失败时本能反应是"告诉它哪个方法不行"——但这会让失败路径继续占用注意力。Rewind的本质是"时光倒流到决策点，重新做选择"——失败的路径被完全移除，而非添加新的否定指令。这比"修正"更符合LLM的注意力机制。
-**Compaction的不可预测性**：当模型处于能力最低点时（长期调试后的autocompact），它的总结往往带有偏差——倾向于保留调试过程的细节而丢失其他上下文。这是1M上下文设计者需要正视的系统性缺陷。
-**Subagent的心理测试标准**：判断一个任务是否适合Subagent，关键是问"我以后需要这些中间输出吗"——如果只需要结论，就适合Subagent；如果需要保留中间过程（调试、多次迭代），则不适合。
-
-## 实践启示
-1. **在每个回复后强制进行分叉决策**：不要默认点"继续"，而是主动评估是否需要rewind/clear/compact/subagent——这是区别普通用户和高级用户的关键习惯
-2. **建立"交接消息"机制**：使用"summarize from here"生成交接文档，让未来的自己或新的会话能够快速接续当前上下文
-3. **主动Compaction优于被动**：根据接下来的计划主动运行带描述的compaction，而非等待autocompact触发——这需要培养对任务走向的预判能力
-4. **新任务开新会话是老生常谈但仍被低估**：关联任务可以通过spec文件桥接，而非依赖长上下文保持——这是架构思维而非省事思维
-5. **Subagent使用反向训练**：不要等到会话变脏才想起Subagent，而是从任务规划阶段就判断是否需要隔离——这需要建立"任务拆分的上下文边界思维"
-
----
-
-## Ch06.016 Skill 编排的 6 种依赖关系
+## Ch06.015 Skill 编排的 6 种依赖关系
 
 > 📊 Level ⭐⭐⭐ | 3.1KB | `entities/skill-orchestration-6-dependencies.md`
 
@@ -1397,7 +1324,7 @@ context 的追加式增长是所有 skill 编排方案的基础假设，但它�
 
 ---
 
-## Ch06.017 MiroFlow：Deep Research Agent 脚手架 —— 与 Code Agent 的 6 大工程差异
+## Ch06.016 MiroFlow：Deep Research Agent 脚手架 —— 与 Code Agent 的 6 大工程差异
 
 > 📊 Level ⭐⭐⭐⭐ | 29.8KB | `entities/miroflow-deep-research-agent-harness-mirothinker.md`
 
@@ -1728,7 +1655,7 @@ context 的追加式增长是所有 skill 编排方案的基础假设，但它�
 
 ---
 
-## Ch06.018 Agent Harness 上下文管理：工作集视角
+## Ch06.017 Agent Harness 上下文管理：工作集视角
 
 > 📊 Level ⭐⭐⭐⭐ | 24.6KB | `entities/agent-harness-context-management-working-set.md`
 
@@ -1974,7 +1901,7 @@ CE = PE 的超集。**未来讨论 LLM 工程时，"CE" 可能会取代"PE"成�
 
 ---
 
-## Ch06.019 Claude Code Openclaw Memory Comparison
+## Ch06.018 Claude Code Openclaw Memory Comparison
 
 > 📊 Level ⭐⭐⭐⭐ | 19.2KB | `entities/claude-code-openclaw-memory-comparison.md`
 
@@ -2143,7 +2070,7 @@ Claude Code 的 Auto Dream"梦境整理"隐喻尤为优雅：Agent 白天干活�
 
 ## 相关实体
 - [Claude Code Openclaw Memory Vector Db Doubt](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-openclaw-memory-vector-db-doubt.md)
-- [Claude Code Openclaw Usage Ettin](ch09/105-claude-code-openclaw-usage-ettin.html)
+- [Claude Code Openclaw Usage Ettin](ch09/104-claude-code-openclaw-usage-ettin.html)
 - [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-7-layers-openclaw-hermes-claude-code-p1anu.md)
 - [读完 Claude Code 和 Openclaw 的 Memory 源码我对Agent记忆需要向量数据库这件事产生了怀疑](https://github.com/QianJinGuo/wiki-public/blob/main/entities/读完-claude-code-和-openclaw-的-memory-源码我对agent记忆需要向量数据库这件事产生了怀疑.md)
 - [Skill System Design Three Way Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-system-design-three-way-comparison.md)
@@ -2193,7 +2120,7 @@ Claude Code 的 Auto Dream"梦境整理"隐喻尤为优雅：Agent 白天干活�
 
 ---
 
-## Ch06.020 Memory 不是 RAG：Agent 记忆的系统性框架
+## Ch06.019 Memory 不是 RAG：Agent 记忆的系统性框架
 
 > 📊 Level ⭐⭐⭐⭐ | 14.2KB | `entities/memory-vs-rag-agent-memory-systematic-framework.md`
 
@@ -2359,7 +2286,7 @@ Reflexion / ExpeL / ReMe 都在回答：经历如何不只是被保存，而是�
 
 ---
 
-## Ch06.021 Qoder 团队知识引擎
+## Ch06.020 Qoder 团队知识引擎
 
 > 📊 Level ⭐⭐⭐⭐ | 10.3KB | `entities/qoder-team-knowledge-engine.md`
 
@@ -2488,7 +2415,7 @@ Qoder 明确指出"团队规范混乱时，自动化会放大坏的习惯"。如
 
 ---
 
-## Ch06.022 腾讯云Agent Memory：Mermaid无限画布×上下文卸载
+## Ch06.021 腾讯云Agent Memory：Mermaid无限画布×上下文卸载
 
 > 📊 Level ⭐⭐⭐⭐ | 8.0KB | `entities/tencentdb-agent-memory-context-offloading.md`
 
@@ -2582,7 +2509,7 @@ AWS AgentCore Memory 的核心抽象是"actor + namespace + strategy"——按�
 
 ---
 
-## Ch06.023 上下文工程：三种 Agent Memory 方案对比实验
+## Ch06.022 上下文工程：三种 Agent Memory 方案对比实验
 
 > 📊 Level ⭐⭐⭐⭐ | 7.6KB | `entities/context-engineering-three-memory-paradigms.md`
 
@@ -2682,7 +2609,7 @@ D2L 的方向（将知识编码进模型权重）逻辑上可行，当前瓶颈�
 
 ---
 
-## Ch06.024 AI Memory Architecture: Deep Dive
+## Ch06.023 AI Memory Architecture: Deep Dive
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 36.7KB | `entities/ai-memory-architecture-deep-dive.md`
 
@@ -3262,7 +3189,7 @@ Forget（遗忘）和 Delete（删除）是根本不同的操作：删除移除�
 
 ---
 
-## Ch06.025 Agent 记忆架构：先别急着把 Memory 当数据库
+## Ch06.024 Agent 记忆架构：先别急着把 Memory 当数据库
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 31.5KB | `entities/agent-memory-architecture-past-influence-future-ruofei.md`
 
@@ -3545,7 +3472,7 @@ Plain markdown、git history、versioned memory store 这类朴素设计不一�
 
 ---
 
-## Ch06.026 深度拆解 Hermes Agent 记忆系统
+## Ch06.025 深度拆解 Hermes Agent 记忆系统
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 29.5KB | `entities/hermes-agent-memory-system-openclaw-comparison.md`
 
@@ -3908,7 +3835,7 @@ Honcho 这类外部 provider 引入深层用户建模，但带来了额外的治
 
 ---
 
-## Ch06.027 AgentMemory 源码分析：给 Coding Agent 装上本地长期记忆
+## Ch06.026 AgentMemory 源码分析：给 Coding Agent 装上本地长期记忆
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 22.0KB | `entities/agentmemory-source-analysis-coding-agent-local-memory.md`
 
@@ -4294,7 +4221,7 @@ if (!health.ok) {
 
 ---
 
-## Ch06.028 Agent-Memory 评测全景：基准、评估与记忆系统
+## Ch06.027 Agent-Memory 评测全景：基准、评估与记忆系统
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 20.2KB | `entities/agent-memory-evaluation-landscape-taobao-survey.md`
 
@@ -4529,7 +4456,7 @@ M3-Agent 的双重记忆设计（Episodic + Semantic）对视频/音频理解场
 
 ---
 
-## Ch06.029 TencentDB Agent Memory：符号化短期记忆+分层式长期记忆
+## Ch06.028 TencentDB Agent Memory：符号化短期记忆+分层式长期记忆
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 18.0KB | `entities/tencentdb-agent-memory-hierarchical.md`
 
@@ -4706,7 +4633,7 @@ Hermes 接入场景中，Gateway 把 capture、search、recall 暴露为 HTTP �
 
 ---
 
-## Ch06.030 Context Window Management Comparison
+## Ch06.029 Context Window Management Comparison
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 15.9KB | `entities/context-window-management-comparison.md`
 
@@ -4910,7 +4837,7 @@ Agent harness 正在朝同一个方向移动。目标不是向模型展示一切
 
 ---
 
-## Ch06.031 Knowledge Base Layer Architecture: From RAG to Agent-native Knowledge Context Layer
+## Ch06.030 Knowledge Base Layer Architecture: From RAG to Agent-native Knowledge Context Layer
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 15.5KB | `entities/pyramid-kb-knowledge-context-layer-banya.md`
 
@@ -5073,7 +5000,7 @@ Karpathy 提出的知识库模式。三层架构：**Raw Sources**（人类策�
 
 ---
 
-## Ch06.032 MemOS Hermes 记忆插件
+## Ch06.031 MemOS Hermes 记忆插件
 
 > 📊 Level ⭐⭐⭐⭐⭐ | 12.1KB | `entities/memos-hermes-plugin.md`
 

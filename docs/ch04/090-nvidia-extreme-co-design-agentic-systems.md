@@ -10,7 +10,7 @@ Building for the Rising Complexity of Agentic Systems with Extreme Co&#x2d;Desig
 - [Nvidia Multimodal Rag Knowledge Systems](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-multimodal-rag-knowledge-systems.md)
 - [Nvidia Agentic Ai Subsurface Engineering](185-nvidia-agentic-ai-subsurface-engineering.html)
 - [Nvidia Secure Local Agent Nemoclaw Openclaw](056-nvidia-secure-local-agent-nemoclaw-openclaw.html)
-- [Nvidia Telco Reasoning Models Nemo](../ch01/191-nvidia-telco-reasoning-models-nemo.html)
+- [Nvidia Telco Reasoning Models Nemo](../ch01/189-nvidia-telco-reasoning-models-nemo.html)
 
 → [原文存档](https://developer.nvidia.com/blog/building-for-the-rising-complexity-of-agentic-systems-with-extreme-co-design/)
 

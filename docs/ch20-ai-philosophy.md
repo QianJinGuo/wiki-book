@@ -432,7 +432,7 @@ Amodei 政策对 AI 从业者的启示：
 > -> [GitLab employees are the latest to face layoffs limbo. Read the CEO's memo about restructuring 'openly.'](https://www.businessinsider.com/gitlab-layoffs-memo-2026-5)
 ## 相关实体
 
-- [iii.dev](ch01/455-iii-dev.html)
+- [iii.dev](ch01/450-iii-dev.html)
 
 ## 核心要点
 - **裁员规模**：未公布具体人数，截至 2026 年 1 月公司有 2,580 名员工

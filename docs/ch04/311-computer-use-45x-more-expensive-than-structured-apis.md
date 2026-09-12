@@ -114,7 +114,7 @@ Computer Use 的高成本并非没有场景价值 ：
 ## 相关实体
 
 - [Anthropic 发布 Computer Use 最佳实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-computer-use-best-practices.md) — Anthropic 官方的 Computer Use 优化建议，包括截图降采样等技巧
-- [Codex 支持通过 Computer Use 控制桌面设备](../ch09/058-codex-can-now-control-other-desktop-devices-via-computer-use.html) — Codex 的 Computer Use 扩展应用
+- [Codex 支持通过 Computer Use 控制桌面设备](../ch09/057-codex-can-now-control-other-desktop-devices-via-computer-use.html) — Codex 的 Computer Use 扩展应用
 - [Claude Code Tool Design 演化](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-tool-design-evolution-anthropic.md) — Anthropic 在 Agent 工具设计上的持续演进
 - [Ettin Reranker Family](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-the-ettin-reranker-family.md) — 高效的排序模型，可用于优化 Agent 任务路由
 

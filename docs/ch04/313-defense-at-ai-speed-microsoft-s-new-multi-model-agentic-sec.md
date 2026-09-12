@@ -65,7 +65,7 @@ MDASH 的设计哲学是**管道是产品，模型是输入之一**。整个系�
 **多模型 ensemble 作为防御姿态**：单一模型 harness 存在系统性盲区（跨文件推理、非平凡控制流、长生命周期依赖）；ensemble 架构通过 disagreement-as-signal 的方式实际上内置了交叉验证机制 。
 ## 相关实体
 - [Microsoft Open Sources Rampart Clarity](https://github.com/QianJinGuo/wiki-public/blob/main/entities/microsoft-open-sources-rampart-clarity.md)
-- [Where Openclaw Security Is Heading Openclaw Blog](../ch12/002-where-openclaw-security-is-heading-openclaw-blog.html)
+- [Where Openclaw Security Is Heading Openclaw Blog](https://github.com/QianJinGuo/wiki-public/blob/main/entities/where-openclaw-security-is-heading-openclaw-blog.md)
 - [Disgruntled Researcher Microsoft Zero Days](https://github.com/QianJinGuo/wiki-public/blob/main/entities/disgruntled-researcher-microsoft-zero-days.md)
 - [Microsoft Zero Days Researcher Disgruntled](https://github.com/QianJinGuo/wiki-public/blob/main/entities/microsoft-zero-days-researcher-disgruntled.md)
 - [Sysdig Headless Cloud Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sysdig-headless-cloud-security.md)

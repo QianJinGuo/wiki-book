@@ -88,7 +88,7 @@ Wright用1970s MBS→1980s高收益债→2000s Shopify Capital来论证"Agent资
 - [Agent Evolution Four Stages Six Dimensions Aliyun](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-evolution-four-stages-six-dimensions-aliyun.md)
 - [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [Claude Code Openclaw Memory Vector Db Doubt](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-openclaw-memory-vector-db-doubt.md)
-- [Codex Goal Six Hour Run](../ch09/079-codex-goal-six-hour-run.html)
+- [Codex Goal Six Hour Run](../ch09/078-codex-goal-six-hour-run.html)
 
 → [原文存档](https://mp.weixin.qq.com/s/GK1r3ucE2_TJfkOHiqveRQ)
 

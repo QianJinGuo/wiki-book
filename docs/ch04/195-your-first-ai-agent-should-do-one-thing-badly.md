@@ -47,7 +47,7 @@ CrewAI 强调的"crawl, walk, run"迭代哲学与 Karpathy 提出的 vibe coding
 ### 与相邻观点的张力
 
 - 与 [苦味教训](https://github.com/QianJinGuo/wiki-public/blob/main/entities/the-bitter-lesson-versus-the-garbage-can.md)的张力：Sutton 派认为不要为人类理解编码；本文认为不要为未知架构编码——但前者鼓励**算力与训练**取代精心设计，后者鼓励**迭代与证据**取代预先架构。
-- 与 [管理即超能力](../ch01/275-management-as-ai-superpower.html)互补：Mollick 强调"管理能力"是新关键技能；本文强调"管理复杂度"是关键约束——少 agent、少功能、少优化。
+- 与 [管理即超能力](../ch01/272-management-as-ai-superpower.html)互补：Mollick 强调"管理能力"是新关键技能；本文强调"管理复杂度"是关键约束——少 agent、少功能、少优化。
 - 与 [Your First Ai Agent Should Do One Thing Badly](195-your-first-ai-agent-should-do-one-thing-badly.html) 的"crawl, walk, run"与 [Claude Code 现状评估](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-and-what-comes-next.md) 的"一小时跑完"形成节奏对比——前者周迭代，后者小时级自治。
 
 ## 实践启示
@@ -64,7 +64,7 @@ CrewAI 强调的"crawl, walk, run"迭代哲学与 Karpathy 提出的 vibe coding
 - [Karpathy Vibe Coding Agentic Engineering](270-karpathy-vibe-coding-agentic-engineering.html)
 - [The Bitter Lesson Versus The Garbage Can](https://github.com/QianJinGuo/wiki-public/blob/main/entities/the-bitter-lesson-versus-the-garbage-can.md)
 - [Claude Code And What Comes Next](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-and-what-comes-next.md)
-- [Management As Ai Superpower](../ch01/275-management-as-ai-superpower.html)
+- [Management As Ai Superpower](../ch01/272-management-as-ai-superpower.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)

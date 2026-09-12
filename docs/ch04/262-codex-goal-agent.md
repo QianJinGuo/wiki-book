@@ -84,8 +84,8 @@ budget_limit 模板：到点了，别开新工作，把进展、剩下的事、�
 - [原文存档：Codex /goal 实现拆解](https://mp.weixin.qq.com/s/7vqPgUmfrpIHtf__Z4M_KA)
 
 ## 相关实体
-- [Codex /goal: The Six-Hour Run That Survived a Five-Hour Pause](../ch09/079-codex-goal-six-hour-run.html)
-- [Cline releases open-source agent runtime SDK](../ch01/526-cline-releases-open-source-agent-runtime-sdk.html)
+- [Codex /goal: The Six-Hour Run That Survived a Five-Hour Pause](../ch09/078-codex-goal-six-hour-run.html)
+- [Cline releases open-source agent runtime SDK](../ch01/521-cline-releases-open-source-agent-runtime-sdk.html)
 - [Cline releases open-source agent runtime SDK](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cline-open-source-agent-runtime-sdk.md)
 
 - [Openai Symphony Codex Orchestration Linear Control Plane](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openai-symphony-codex-orchestration-linear-control-plane.md)

@@ -85,7 +85,7 @@ MCP Server 可以通过 `initialize` 响应的 `instructions` 字段，向模型
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/299-tencent-vibe-coding-to-agentic-engineering-backend.html)
 - [Boris Cherny — 从 IDE 到 Agent 控制台](https://github.com/QianJinGuo/wiki-public/blob/main/entities/boris-cherny-ide-to-agent-console.md)
 - [AI Agent 探索之路：从 Task-Driven 到 Goal-Driven](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/ai-agent-exploration-path.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/109-claude-code-harness-deep-understanding.html)
+- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/107-claude-code-harness-deep-understanding.html)
 - [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-官方生产级-agent-最佳实践12-个可复用的-mcp-设计模式-v2.md)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](https://github.com/QianJinGuo/wiki-public/blob/main/entities/imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群.md)
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-官方技能最佳实践14-个可复用的-agent-skills-设计模式.md)

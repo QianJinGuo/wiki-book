@@ -17,7 +17,7 @@
 - [Claude Opus 4.7 并不是一次全面升级，甚至部分能力大幅衰退](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-opus-47.md) — 4.7衰退面分析
 - [复旦北大 AHE：Agentic Harness Engineering 瓶颈分析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fudan-peking-ahe-agentic-harness-engineering.md) — AHE三支柱可观测性5622字深析版
 - [Prompt Context Harness 三次演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/prompt-context-harness-three-evolutions.md) — Harness衰变定律：模型越强harness越简3681字
-- [Three Years from GPT-3 to Gemini 3](../ch01/418-three-years-from-gpt-3-to-gemini-3.html) — 9699字最全三年演进版
+- [Three Years from GPT-3 to Gemini 3](../ch01/413-three-years-from-gpt-3-to-gemini-3.html) — 9699字最全三年演进版
 - [Grok Bot 0.18 运行时重建：Agent 的五层运行时与可靠性协议](https://github.com/QianJinGuo/wiki-public/blob/main/entities/grok-bot-agent-runtime-five-layer-vibecoder-2026.md) — 145万行bundle重建五层运行时+可靠性协议
 
 ## 工程实践

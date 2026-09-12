@@ -17,7 +17,7 @@
 - [How AI Agent Memory Works](110-how-ai-agent-memory-works.html) — 记忆五层+六架构权衡科普
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-skill-system-winty.md) — Memory vs Skill本质区别7749字最全版
 - [Hermes Agent 为什么火了？和 OpenClaw 龙虾比一比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-vs-openclaw-comparison.md) — 爱马仕vs龙虾：控制面vs成长型定位对比
-- [Gepa Optimize Anything](../ch01/437-gepa-optimize-anything.html) — ASI+Pareto前沿，声明式通用文本优化API
+- [Gepa Optimize Anything](../ch01/432-gepa-optimize-anything.html) — ASI+Pareto前沿，声明式通用文本优化API
 - [Hermes自进化完整闭环：Skill创建复用修补链路](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-self-evolution-closed-loop-skill-reuse-winty.md) — 6阶段闭环+npm案例12→9→6步
 - [AI Agent Gateway 架构设计 — OpenClaw/Claude Code/Hermes 三框架对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gateway-architecture-openclaw-claude-hermes-comparison.md) — 三框架Gateway哲学横向对比，源码级细节
 - [nanobot：4000行极简 Agent 框架架构解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nanobot-agent-framework-architecture-deep-dive.md) — 3935行vs LangChain 43万行的极简哲学

@@ -102,7 +102,7 @@ SaaS 时代记录系统几乎没有飞轮效应，因为软件是单向记录工
 - [foundation capital agent era six insights](286-foundation-capital-agent-era-six-insights.html)
 - [Agent 时代架构师技能指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-era-architect-skills-guide.md)
 - [快手首个打工人Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kuaishou-worker-agent-desktop-software.md)
-- [from](../ch01/419-from-system-of-record-to-system-of-intelligence.html)
+- [from](../ch01/414-from-system-of-record-to-system-of-intelligence.html)
 - [meet customers where they are: agentforce contact center now](https://github.com/QianJinGuo/wiki-public/blob/main/entities/meet-customers-where-they-are-agentforce-contact-center-now-offers-whatsapp-voice.md)
 
 ---

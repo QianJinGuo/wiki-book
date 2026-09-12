@@ -569,7 +569,7 @@ Wiki 与传统文档的本质区别在于四个维度：**结构可解析**（fr
 
 ## 相关实体
 - [明星开源项目，为什么开始离开 github？](https://github.com/QianJinGuo/wiki-public/blob/main/entities/open-source-projects-leaving-github.md)
-- [cisa admin leaked aws govcloud keys on github](ch11/153-cisa-admin-leaked-aws-govcloud-keys-on-github.html)
+- [cisa admin leaked aws govcloud keys on github](ch11/152-cisa-admin-leaked-aws-govcloud-keys-on-github.html)
 - [1-click github token stealing via a vscode bug — ammaraskar](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vscode-github-token-stealing-1-click-pwn-ammaraskar-2026.md)
 
 → [原文存档](https://github.blog/ai-and-ml/llms/accelerating-researchers-and-developers-building-multilingual-ai-with-a-new-open-dataset/)
@@ -620,7 +620,7 @@ Amazon Quick is a comprehensive, generative AI-powered business intelligence ser
 <div style="line-height: 1.8;margin: 0;padding: 0">
 
 ## 相关实体
-- [From System Of Record To System Of Intelligence](ch01/419-from-system-of-record-to-system-of-intelligence.html)
+- [From System Of Record To System Of Intelligence](ch01/414-from-system-of-record-to-system-of-intelligence.html)
 - [Amazon Quick Accelerating The Path From Enterprise Data To Ai Powered Decisions](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions.md)
 - [London Met Police Big Tech Data Requests](https://github.com/QianJinGuo/wiki-public/blob/main/entities/london-met-police-big-tech-data-requests.md)
 - [Hermes Agent Goal Runtime Architecture State Persistence Judge Closed Loop](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-goal-runtime-architecture-state-persistence-judge-closed-loop.md)
@@ -1230,7 +1230,7 @@ E2E 验证阶段是真正的瓶颈：必须在真实硬件上构造真实环境�
 
 - [特斯拉百万年薪招数据标注员，朝九晚五，无需ai经验](https://github.com/QianJinGuo/wiki-public/blob/main/entities/特斯拉百万年薪招数据标注员朝九晚五无需ai经验.md)
 - [system over model, tested: reproducing mythos's freebsd find](https://github.com/QianJinGuo/wiki-public/blob/main/entities/system-over-model-tested-reproducing-mythoss-freebsd-find-on-20260606.md)
-- [from doer to director: the ai mindset shift](ch01/112-from-doer-to-director-the-ai-mindset-shift.html)
+- [from doer to director: the ai mindset shift](ch01/110-from-doer-to-director-the-ai-mindset-shift.html)
 - [How my non-engineering team at Sentry learned to ship](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-my-non-engineering-team-at-sentry-learned-to-ship-20260606.md)
 - [Unexpected lessons from an AI-assisted prototyping experiment](https://github.com/QianJinGuo/wiki-public/blob/main/entities/adobe-design-unexpected-lessons-ai-prototyping-2026.md)
 
@@ -1383,7 +1383,7 @@ Data + AI Summit 的共识数据：Agent 循环（推理、工具调用、prompt
 - Amazon Redshift 推出带有集成数据湖查询引擎的
 ## 相关实体
 - [Build Multi Tenant Ai Agent On Eks Graviton Openclaw K8S Practice](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-multi-tenant-ai-agent-on-eks-graviton-openclaw-k8s-practice.md)
-- [How Amazon Finance Streamlines Regulatory Inquiries By Using](ch11/127-how-amazon-finance-streamlines-regulatory-inquiries-by-using.html)
+- [How Amazon Finance Streamlines Regulatory Inquiries By Using](ch11/126-how-amazon-finance-streamlines-regulatory-inquiries-by-using.html)
 - [Using Amazon Bedrock Agentcore Openclaw Multi 2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-2.md)
 - [Introducing Claude Platform On Aws](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-claude-platform-on-aws.md)
 - [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-一周综述amazon-bedrock-agentcore-付款适用于-aws-的-agent-工具套件等2026-年-5-月-11-日.md)

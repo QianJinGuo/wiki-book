@@ -41,13 +41,13 @@ Stripe Treasury 年底前将在 US、UK 支持 15 种货币存储，并扩展至
 ## 相关实体
 - [stripe sessions 2026 ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/stripe-sessions-2026-ai.md)
 - [Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore](https://github.com/QianJinGuo/wiki-public/blob/main/entities/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazo.md)
-- [Inngest - AI in Production: The 2026 Benchmark Report](../ch01/315-inngest-ai-in-production-the-2026-benchmark-report.html)
+- [Inngest - AI in Production: The 2026 Benchmark Report](../ch01/312-inngest-ai-in-production-the-2026-benchmark-report.html)
 - [How Superset built the IDE for AI agents on Vercel](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vercel-com-how-superset-built-the-ide-for-ai-agents-on-vercel.md)
 - [How to Detect AI Agents on Your Website | Full Guide](https://github.com/QianJinGuo/wiki-public/blob/main/entities/detect-ai-agents-website.md)
 - [AI-powered honeypots: Turning the tables on malicious AI agents](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-powered-honeypots-turning-the-tables-on-malicious-ai-agents.md)
 - [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [十年老技术开发的 ai agent 探索之路](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-exploration-legacy-developer.md)
-- [entrypoint hijacking](../ch01/048-entrypoint-hijacking.html)
+- [entrypoint hijacking](../ch01/047-entrypoint-hijacking.html)
 
 ---
 

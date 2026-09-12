@@ -1223,7 +1223,7 @@ Symphony 把 skill 当作"系统资产"来管理，而不只是提示词里附�
 
 ## 相关实体
 - [[entities/agent-development-crawl-walk-run-crewai-iterative](https://mp.weixin.qq.com/s/-nnf0dnC_9VmEn_qLD05Qw)
-- [Agent Orchestration](ch01/116-agent-orchestration.html)（AWS — 多 Agent 编排对照）
+- [Agent Orchestration](ch01/114-agent-orchestration.html)（AWS — 多 Agent 编排对照）
 - [Meta Skill Skill Orchestration Opensquilla Jay](https://github.com/QianJinGuo/wiki-public/blob/main/entities/meta-skill-skill-orchestration-opensquilla-jay.md)（笨小葱 — 单 Skill 编排对照）
 - [Ai Agent Tool Count Trap](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-tool-count-trap.md)（execute_code 算子的极简设计同源思想）
 - [Agentic Design System From Chatbot To Orchestration](ch01/006-agentic-design-system-from-chatbot-to-orchestration.html)
@@ -2370,7 +2370,7 @@ CLAUDE.md 里写了但常被漏的规则 → 创建 workflow，每条规则对�
 
 ## 相关实体
 
-- [Agent Orchestration](ch01/116-agent-orchestration.html) — 多 Agent 编排的控制平面、状态管理、human-in-the-loop 审批
+- [Agent Orchestration](ch01/114-agent-orchestration.html) — 多 Agent 编排的控制平面、状态管理、human-in-the-loop 审批
 - [四种 Sub Agent 模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/four-sub-agent-patterns.md) — 内联工具/Fan-Out/Agent Pool/Teams 的控制粒度与状态保留对比
 - [Sub-Agent vs Agent Team 选型](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sub-agent-vs-agent-team-selection.md) — 上下文边界设计准则与五种编排原语
 - [Claude Code 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-architecture.md) — Claude Code 整体架构设计

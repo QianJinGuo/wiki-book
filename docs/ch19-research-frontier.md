@@ -1342,7 +1342,7 @@ Qwen-AgentWorld 的创新在于将世界模型的载体从传统的状态空间�
 
 ### 同范式生态
 - [ICML 2026 NPR 文本原生并行推理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/native-parallel-reasoner-icml2026.md) — **同源**: 都推动"推理宽度扩展", NPR 在文本领域开辟
-- [LASER ACL 2026 视觉推理](ch01/308-laser-acl2026-latent-superposition-visual-reasoning.html) — **互补**: 同样针对 VLM, 但用 latent superposition 路线
+- [LASER ACL 2026 视觉推理](ch01/305-laser-acl2026-latent-superposition-visual-reasoning.html) — **互补**: 同样针对 VLM, 但用 latent superposition 路线
 - [DeepSeek 视觉原语](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-visual-primitives-thinking.md) — **对比**: DeepSeek 用"视觉原语"做视觉推理的另一种思路
 
 ### 视觉/多模态相关
@@ -1356,7 +1356,7 @@ Qwen-AgentWorld 的创新在于将世界模型的载体从传统的状态空间�
 ## 相关实体
 
 - [Native Parallel Reasoner Icml2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/native-parallel-reasoner-icml2026.md)
-- [Laser Acl2026 Latent Superposition Visual Reasoning](ch01/308-laser-acl2026-latent-superposition-visual-reasoning.html)
+- [Laser Acl2026 Latent Superposition Visual Reasoning](ch01/305-laser-acl2026-latent-superposition-visual-reasoning.html)
 - [Llava Onevision 2 Full Frame Rate Vlm Glintlab](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llava-onevision-2-full-frame-rate-vlm-glintlab.md)
 - [Deepseek Visual Primitives Thinking](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-visual-primitives-thinking.md)
 - [Llm Language Thinking Mechanisms](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-language-thinking-mechanisms.md)- [count anything - 文本引导的通用目标计数框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/arxiv-2605-30846-count-anything-2026.md)

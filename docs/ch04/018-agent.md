@@ -27,7 +27,7 @@
 - [Claude Code Prompt 提示词体系源码解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-prompt-source-analysis.md) — 六大prompt模块全版
 - [MemOS Hermes 记忆插件](https://github.com/QianJinGuo/wiki-public/blob/main/entities/memos-hermes-plugin.md) — MemOS插件：智能去重+混合检索7225字
 - [扣子 3.0 多 Agent 协同实战：指挥所有 Agent 的 Agent + 5 人团队 6 步流水线](https://github.com/QianJinGuo/wiki-public/blob/main/entities/coze-3-multimagent-team-orchestration-wangheige.md) — 三案例实战报告
-- [Claude Code Openclaw Usage Ettin](../ch09/105-claude-code-openclaw-usage-ettin.html) — Ettin rerank集成
+- [Claude Code Openclaw Usage Ettin](../ch09/104-claude-code-openclaw-usage-ettin.html) — Ettin rerank集成
 - [Claude Code Agent Memory Systems — L0~L3 四层记忆方案](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-agent-memory-four-levels-analysis.md) — L0-L3演化
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](https://github.com/QianJinGuo/wiki-public/blob/main/entities/imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群.md) — ACP协议N+M解耦+网关架构6224字全版
 - [阿里云 MSE AI 任务调度 + Agent Sandbox：动态休眠/唤醒 OpenClaw Agent 成本下降 90%+](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aliyun-mse-ai-task-scheduling-agent-sandbox-cost-90-percent.md) — 休眠唤醒短条borderline

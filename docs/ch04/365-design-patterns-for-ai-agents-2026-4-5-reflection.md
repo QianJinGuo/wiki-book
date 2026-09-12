@@ -58,7 +58,7 @@ Thought → Action → Observation 循环，仍是大多数单步任务的基础
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/long-running-agent-ralph-loop-handover-harness-ruofei.md)
 - [Agent Reliability: Context Drift & Tool Calling Hallucination](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-reliability-context-drift-tool-hallucination.md)
 - [从多智能体编排到AI自主决策：资损防控体系的架构演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/从多智能体编排到ai自主决策资损防控体系的架构演进.md)
-- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](../ch01/053-deepseek-v4.html)
+- [DeepSeek-V4深度拆解：一篇论文同时做了五件大事](../ch01/052-deepseek-v4.html)
 - [Harness Engineering：让 Coding Agent 可靠完成长程任务](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-long-term-agent-tasks.md)
 - [Transformer Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/transformer-architecture.md)
 - [Agent 与后端统一架构](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-backend-unification.md)

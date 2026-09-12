@@ -191,7 +191,7 @@ NVIDIA Nemotron Nano 2 VL (12B) VLM 将视觉推理引入 RAG 管道，使系统
 - [Nvidia Extreme Co Design Agentic Systems](ch04/090-nvidia-extreme-co-design-agentic-systems.html)
 - [Nvidia Agentic Ai Subsurface Engineering](ch04/185-nvidia-agentic-ai-subsurface-engineering.html)
 - [Nvidia Secure Local Agent Nemoclaw Openclaw](ch04/056-nvidia-secure-local-agent-nemoclaw-openclaw.html)
-- [Nvidia Telco Reasoning Models Nemo](ch01/191-nvidia-telco-reasoning-models-nemo.html)
+- [Nvidia Telco Reasoning Models Nemo](ch01/189-nvidia-telco-reasoning-models-nemo.html)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
 
 → [原文存档](https://developer.nvidia.com/blog/build-ai-ready-knowledge-systems-using-5-essential-multimodal-rag-capabilities/)
@@ -331,7 +331,7 @@ Amazon Nova MME 的 `GENERIC_INDEX`（文档索引用）和 `GENERIC_RETRIEVAL`�
 
 → [Amazon Nova Sonic 可扩展语音代理设计](https://github.com/QianJinGuo/wiki-public/blob/main/entities/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session.md)
 
-→ [Amazon Nova 2 内容审核提示工程](ch01/472-prompting-amazon-nova-2-for-content-moderation.html)
+→ [Amazon Nova 2 内容审核提示工程](ch01/467-prompting-amazon-nova-2-for-content-moderation.html)
 
 → [Amazon Bedrock AgentCore 运行时深度解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-agentcore-runtime-deep-dive-and-scenario-analysis.md)
 
@@ -806,7 +806,7 @@ PS：从这里也可以看出来，图谱的存在其实是为了解决工程维
 
 ## 相关实体
 - [Google Agentic Rag Sufficient Context Agent Framesqa](https://github.com/QianJinGuo/wiki-public/blob/main/entities/google-agentic-rag-sufficient-context-agent-framesqa.md)
-- [Architecture Data Foundations For Ai Powered Search](ch01/329-architecture-data-foundations-for-ai-powered-search.html)
+- [Architecture Data Foundations For Ai Powered Search](ch01/326-architecture-data-foundations-for-ai-powered-search.html)
 - [Rag技术框架的演进方向](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag技术框架的演进方向.md)
 - [Skill Rag Tsinghua Sra](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-rag-tsinghua-sra.md)
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
@@ -2196,8 +2196,8 @@ ranked = reranker.rank(query, top_k_docs, top_k=5, return_documents=True)
 
 ## 相关实体
 - [Introducing The Ettin Reranker Family](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-the-ettin-reranker-family.md)
-- [Claude Code Openclaw Usage Ettin](ch09/105-claude-code-openclaw-usage-ettin.html)
-- [Gemma 4 Multi Token Prediction Drafters](ch01/513-gemma-4-multi-token-prediction-drafters.html)
+- [Claude Code Openclaw Usage Ettin](ch09/104-claude-code-openclaw-usage-ettin.html)
+- [Gemma 4 Multi Token Prediction Drafters](ch01/508-gemma-4-multi-token-prediction-drafters.html)
 - [Continuousasync](https://github.com/QianJinGuo/wiki-public/blob/main/entities/continuousasync.md)
 - [Continuous Async](https://github.com/QianJinGuo/wiki-public/blob/main/entities/continuous-async.md)
 
