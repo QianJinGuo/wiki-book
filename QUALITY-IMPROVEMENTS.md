@@ -80,6 +80,13 @@ python3 scripts/post-sync-qc.py --skip-archive-dedup
 ### 5. MOC 文件实践启示排除 — ✅ 已实现
 post-sync-qc.py 排除 docs/ 根目录 MOC 文件（聚合多来源天然多节）。
 
+### 6. 遗留项清理轮 — ✅ 已实施（2026-09-12 第三轮，444 → 22）
+- **裸引号 bullet（364 → 0）**：`- "整句"` 强调式引语是访谈实录文体包装，非坏实体链接。编译器净化器整行去引号（容忍行尾 `^[raw/articles/…]` 溯源脚注——脚注由下游剥离，行尾锚定正则在编译期会失配，此坑实测两次）。
+- **架构图占位符（18 → 0）**：占位符不是编译期注入，而是 `fix-docs-links.py` 把死 `assets/c4/*.html` 链接降级成 `（架构图待生成: …）`。改为降级成纯文本标签。
+- **垃圾 slug（3 → 0）**：wiki 侧重命名 `820297.md`/`5237875.md`/`2026.md` 为语义 slug，更新 MOC/index 全部入链（含 2 个 500B 空壳孪生删除）。
+- **M 重复（59 → 22）**：`_entity_archive_url()` 三处修复后同源去重真正生效——wikilink 形态 `[[raw/articles/slug.md|…]]` 需读 raw frontmatter 取 URL、全文读取（链接可在长文深处）、剥离 `.md` 尾缀与 `?source=rss` 查询串。另将 20 个人工裁决的低标题相似真重复 slug 写入 `book_duplicate_slugs.py` 排除清单（保大进书、孪生进 quarantine）。
+- **剩余 22 条 M 重复警告**：全部为「不同文章共享损坏 digest URL」假阳性（back.engineering 聚合页、微信短链家族），自动信号无法区分，有意保留待 wiki 入库侧修复 digest URL 后自然消解。
+
 ## 遗留的 P3 长尾
 
 以下问题已逐页记录在 reviews/ 目录的评审文件中，适合在日常维护中逐步处理：
