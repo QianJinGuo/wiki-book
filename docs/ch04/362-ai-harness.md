@@ -1,6 +1,6 @@
 # 深度拆解：AI 智能体 Harness 的构造（译）
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 19.0KB | `entities/ai-agent-harness-construction-akshay.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 19.0KB
 
 > 原文：Akshay Pachaar @x.com
 > 编译：宝玉AI
@@ -96,6 +96,7 @@ OpenAI：Agent as Tool（专家处理子任务）、移交（Handoff，专家接
 **协同进化原则**：Harness 设计得好 → 模型升级时不需要增加复杂度，性能自动提升。
 **Harness 即产品**：同样模型不同 Harness，TerminalBench 排名可差 20 多位。Harness 是硬核工程能力：上下文稀缺资源管理、验证循环防错误累积、不产生幻觉的记忆系统。
 
+## 深度分析
 ### 1. Harness 作为"操作系统"的类比深化
 Beren Millidge 的类比将 LLM 比为"无内存、无硬盘、无 I/O 的 CPU"，而 Harness 作为操作系统，这一视角揭示了几个关键层面：
 **类比的深层含义**：

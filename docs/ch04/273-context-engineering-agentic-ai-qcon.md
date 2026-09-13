@@ -1,6 +1,6 @@
 # 一点天下：Context Engineering 与 Agentic AI (QCon)
 
-> 📊 Level ⭐⭐⭐⭐ | 14.3KB | `entities/yidian-tianxia-context-engineering-agentic-ai-qcon.md`
+> 📊 Level ⭐⭐⭐⭐ | 14.3KB
 
 ## "yidian tianxia context engineering agentic ai qcon"
 ## 易点天下 Agentic AI 工程化实践：上下文工程 + 五道防线
@@ -113,6 +113,7 @@
 
 ---
 
+## 深度分析
 ### 技术架构层面的核心取舍
 **Context Engineering vs Prompt Engineering 的范式转移**：这是本次分享最核心的信息。传统 AI 应用开发将精力花在措辞优化上，而易点天下的实践表明，企业级 Agent 的关键在于信息供给策略——在对的时机给对的信息。这不是微调层面的改进，而是架构设计层面的范式转移。L1–L6 的分层体系本质上是将"记忆"解构为不同衰减周期的信息源，每一层都有明确的技术实现和召回逻辑。
 **确定性系统与概率性智能的融合路径**：V1 低代码 Workflow 失败的根本原因在于试图用确定性逻辑驾驭概率性 AI——分类器的 15% 错误率不是模型问题，而是架构问题。V2 的 Agent Loop 允许 15 轮调用循环，本质上是承认 AI 的概率性并为其设计容错机制，通过多道安全防线将不确定性框定在可控范围内。

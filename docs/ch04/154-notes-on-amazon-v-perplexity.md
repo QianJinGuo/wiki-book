@@ -1,6 +1,6 @@
 # Notes on Amazon v. Perplexity
 
-> 📊 Level ⭐⭐⭐ | 9.5KB | `entities/amazon-v-perplexity-agentic-browsing-open-web.md`
+> 📊 Level ⭐⭐⭐ | 9.5KB
 
 > **Background**: Amazon.com Services LLC v. Perplexity AI, Inc. 是首例大型电商平台起诉 AI agentic browser 厂商的案件，核心争议在于：AI agent 以用户身份自主浏览和操作网站是否构成 CFAA 下的"未授权访问"，以及网站 ToS 能否约束用户的浏览器选择。
 
@@ -30,6 +30,8 @@ Agentic browser 在传统浏览器基础上增加了 agent harness 层，通过 
 - **共享浏览上下文**：密码、cookies、IndexedDB 等秘密信息可在 agent 与用户常规浏览间共享
 
 关键设计决策在于是否共享 browsing context。若不共享，agent 仅是另一个 web client；若完全共享（如 Comet），agent 本质上等同于用户本人，能执行交易、访问账户——这也是安全风险的根源。
+
+## 深度分析
 
 ### Prompt Injection：Agentic Browsing 的根本安全挑战
 

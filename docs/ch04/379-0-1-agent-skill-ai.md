@@ -1,6 +1,6 @@
 # 从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 12.4KB | `entities/agent-skill-writing-guide.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 12.4KB
 
 [Agent Skill Writing Guide](https://mp.weixin.qq.com/s/six9MKhvBgyZyUvyAIujTA)
 
@@ -118,6 +118,7 @@ Ruby：`bundler/inline`
 - **有意义的退出码**——不同失败类型用不同退出码
 - **可预测的输出大小**——限制输出或支持 `--output` 写到文件
 
+## 深度分析
 ### 1. "渐进式披露"是工程上对注意力经济的妥协
 原文将 Skill 加载类比外卖骑手三阶段（发现→激活→执行），这个比喻揭示了一个核心矛盾：大模型上下文窗口虽大，但注意力会随token增加而衰减。渐进式披露不是优化技巧，而是**在有限注意力下务实地分配信息密度**的系统设计。发现阶段仅加载 name + description，本质上是用轻量索引替代重型加载，与检索增强生成（RAG）的分块策略同构。
 
@@ -159,7 +160,7 @@ Ruby：`bundler/inline`
 ## 相关实体
 - [9个Agent技能模块化SageMaker微调生命周期](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
 - [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](https://github.com/QianJinGuo/wiki-public/blob/main/entities/qoder-skills-完全指南从零开始让-ai-按你的标准执行-v2.md)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](297-tencent-vibe-coding-to-agentic-engineering-backend.html)
+- 从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程
 - [Thin Harness Fat Skills](https://github.com/QianJinGuo/wiki-public/blob/main/entities/thin-harness-fat-skills.md)
 
 - [Anthropic 14 个 Agent Skills 设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-agent-skills-design-patterns-14.md)

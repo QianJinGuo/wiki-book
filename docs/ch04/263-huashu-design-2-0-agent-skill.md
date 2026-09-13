@@ -1,6 +1,6 @@
 # Huashu-Design 2.0 — Agent Skill 反收敛三套逻辑
 
-> 📊 Level ⭐⭐⭐⭐ | 15.8KB | `entities/huashu-design-2-0-flower-uncle-3-patterns.md`
+> 📊 Level ⭐⭐⭐⭐ | 15.8KB
 
 > **核心**: 花叔 (alchaincyf) 在 2 个月 16k+ star 之后, 把 Huashu-Design v1 推翻重写为 2.0. 关键问题不是模型能力, 而是 **"AI 自动收敛到安全极简 (Anthropic 官网味儿)"**. 2.0 用 3 套并行逻辑 (撞/借/请) + 图片前置 + 事实验证第 0 原则, 系统性解决 3 个真实坑.
 
@@ -145,6 +145,8 @@
 - [Harness 模式 6-SubAgent 实战 — 17哥 vs 评测平台](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-practical-17ge-versus-6-subagent.md) — 互补 (决策者 vs 动手者)
 
 → [原文存档](https://mp.weixin.qq.com/s/ofFpyU61fn3zpHS0uM_gGw)
+
+## 深度分析
 
 ### 核心观点：Skill 的"反收敛"问题是 AI 能力提升后的普遍矛盾
 

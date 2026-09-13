@@ -1,6 +1,6 @@
 # Build a highly scalable serverless LangGraph multi-agent system
 
-> 📊 Level ⭐⭐⭐ | 8.9KB | `entities/serverless-langgraph-multi-agent-aws.md`
+> 📊 Level ⭐⭐⭐ | 8.9KB
 
 ## Build highly scalable serverless LangGraph multi-agent systems in AWS with Amazon Bedrock AgentCore
 
@@ -17,6 +17,8 @@ AgentCore Observability extends these capabilities by providing detailed visibil
 ## Solution overview
 
 Our serverless LangGraph and AgentCore based multi-agent orchestration system solution is a generative AI-powered multi-agent campaign review system that orchestrates human reviews using diverse personas that enable marketing campaigns to resonate authentically with target audiences while maintaining legal alignment and brand s
+
+## 深度分析
 
 ### 1. Serverless 与 LangGraph 的架构互补性
 
@@ -62,7 +64,7 @@ Docker 容器化提供了移植性但引入了冷启动问题。在选择部署�
 
 ## 相关实体
 - [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
-- [Anthropic Multi Agent Research System](../ch04/223-anthropic-multi-agent-research-system.html)
+- Anthropic Multi Agent Research System
 - [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](https://github.com/QianJinGuo/wiki-public/blob/main/entities/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session.md)
 - [Netflix Real Time Service Topology](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-real-time-service-topology.md)
 

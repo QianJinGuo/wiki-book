@@ -1,6 +1,6 @@
 # Agentic search models
 
-> 📊 Level ⭐⭐ | 6.2KB | `entities/agentic-search-models-softwaredoug.md`
+> 📊 Level ⭐⭐ | 6.2KB
 
 > -> [原文存档](https://softwaredoug.com/blog/2026/05/11/the-new-agentic-search-models.html)
 

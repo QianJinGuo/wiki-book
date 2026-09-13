@@ -1,6 +1,6 @@
 # 从 pi-main 源码拆解：顶尖 AI Agent 的工程设计（17 维度全解）
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 12.4KB | `entities/pi-main-agent-engineering-17-dimensions.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 12.4KB
 
 [Pi Main Agent Engineering 17 Dimensions](https://mp.weixin.qq.com/s/h8HZyoyOOX2Aodfngq25FA)
 
@@ -94,6 +94,7 @@ SubAgent 模式通过这两个钩子封装成普通工具，不是核心内置�
 | 可观测性 | Token 费用追踪缺失 | ★★☆☆☆ |
 | 评估体系 | 无 Golden Set | ★★☆☆☆ |
 
+## 深度分析
 ### 双层 while 架构：分离"会话终止"与"本轮终止"
 pi 的双层 while 解决了一个容易被混为一谈的问题：外层解决"这个对话是否还要继续"（followUp 消息决定），内层解决"这一轮 ReAct 循环是否完成"（terminate 信号决定）。这两个退出条件如果不分离，代码逻辑会变得纠缠：会在本应结束的地方继续等 tool call，在应该等待外部输入的时候直接退出。最容易被忽视的是 `terminate=true` 这个工具主动喊停机制——它比依赖 LLM 自己输出"done"要可靠得多，原因在于 LLM 的自然语言输出有随机性，而结构化的终止信号没有歧义。
 

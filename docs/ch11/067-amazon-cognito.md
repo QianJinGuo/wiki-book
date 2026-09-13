@@ -1,6 +1,6 @@
 # Amazon Cognito 多区域复制：跨区域用户认证韧性方案
 
-> 📊 Level ⭐⭐⭐ | 11.0KB | `entities/aws-cognito-multi-region-replication.md`
+> 📊 Level ⭐⭐⭐ | 11.0KB
 
 > 原文存档：[原文存档](https://aws.amazon.com/cn/blogs/china/improve-your-application-resilience-with-amazon-cognito-multi-region-replication)
 
@@ -42,6 +42,8 @@
 - **现有会话不受影响**：两个区域都能识别对方签发的访问令牌，失效转移时现有用户无需重新登录
 - **支持所有认证方法**：Social providers (Amazon/Google/Apple/Facebook)、SAML、OIDC、API 授权流程均支持
 - **Essentials/Plus 套餐可用**：$0.0045-$0.006/MAU/副本区域，M2M 额外 +30%
+
+## 深度分析
 
 ### 1. 多区域认证的架构必要性
 Cognito 多区域复制不是"更好的性能"而是"业务连续性"——如果单区域 Cognito 故障，所有依赖该用户池的应用都无法认证，等于全面停机。对全球服务来说，认证是单点故障的最高风险点之一。

@@ -1,6 +1,6 @@
 # 基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）
 
-> 📊 Level ⭐⭐⭐ | 14.4KB | `entities/based-on-prowler-genai-build-fintech-intelligent-compliance-2.md`
+> 📊 Level ⭐⭐⭐ | 14.4KB
 
 > -> [原文存档](https://aws.amazon.com/cn/blogs/china/based-on-prowler-genai-build-fintech-intelligent-compliance/)
 
@@ -15,6 +15,7 @@
 - OCSF 标准输出无缝集成 AWS Security Hub，与 GuardDuty（威胁）、Inspector（漏洞）、Config（配置变更）各司其职 
 - Bedrock 数据隐私政策确认：客户提示词、扫描结果、生成的报告均不用于模型训练 
 
+## 深度分析
 ### 1. "规模化合规难题"的本质：框架重复与术语壁垒
 跨境金融机构面临的合规挑战并非单一框架的复杂性，而是多重框架叠加后产生的"规模化"问题。以一家跨境支付公司为例，其业务覆盖新加坡、欧盟和中国，同时需要满足 PCI DSS v4.0、MAS TRM-G、DORA、等保 2.0 三级和 GDPR 五套框架。 问题的核心在于：不同框架对同一技术要求使用不同术语和条款编号。PCI DSS v4.0 Requirement 8.3、MAS TRM-G 第 9.1.2 条和 DORA Article 9 实际上都在描述同一件事——多因素认证（MFA）的启用。但传统审计流程将它们视为三个独立的检查项，导致重复评估、重复证据准备和重复报告。 这种结构性重复使得合规成本随框架数量线性增长，而非收敛。
 
@@ -79,7 +80,7 @@ Prowler 输出 OCSF（Open Cybersecurity Schema Framework）标准格式的 JSON
 
 → [原文存档](https://aws.amazon.com/cn/blogs/china/flight-change-information-intelligent/)
 
-- [CloudSectiDbits](082-cloudsectidbits.html)
+- CloudSectiDbits
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-privacy-landscape.md)
 
 ---

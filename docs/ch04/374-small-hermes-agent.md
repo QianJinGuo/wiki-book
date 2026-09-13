@@ -1,6 +1,6 @@
 # Small Hermes 自我进化 Agent 架构
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 15.4KB | `entities/small-hermes-self-evolving-agent-architecture.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 15.4KB
 
 ## 核心洞察
 
@@ -74,6 +74,8 @@ fn should_micro_reflect(turns_since_last, messages) -> bool {
 | L4 | 自主进化（在LLM架构下安全实现存疑）|
 
 **反直觉真相**：自我进化的关键不是"进化得多快"，而是"退化得多慢"。安全围栏、人工审批、冲突检测这些"减速带"是进化的保障。
+
+## 深度分析
 
 ### 七重困境的相互纠缠性
 

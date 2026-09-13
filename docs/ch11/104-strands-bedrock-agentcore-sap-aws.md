@@ -1,6 +1,6 @@
 # 基于Strands框架和Bedrock AgentCore的SAP智能采购助手方案 | 亚马逊AWS官方博客
 
-> 📊 Level ⭐⭐⭐ | 8.0KB | `entities/sap-intelligent-procurement-assistant-solution.md`
+> 📊 Level ⭐⭐⭐ | 8.0KB
 
 ## 深度分析
 
@@ -28,7 +28,7 @@
 
 ## 相关实体
 - [Using Amazon Bedrock Agentcore Openclaw Multi 5](https://github.com/QianJinGuo/wiki-public/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-5.md)
-- [Aws Bedrock Agentcore Quality Optimization Flywheel](095-aws-bedrock-agentcore-quality-optimization-flywheel.html)
+- Aws Bedrock Agentcore Quality Optimization Flywheel
 - [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-os-level-actions-in-amazon-bedrock-agentcore-browser.md)
 - [Ai Agent 的迁移与现代化 使用 Amazon Bedrock Agentcore 将 Openclaw 从单机改造为多租户 Serverless 架构 ](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-的迁移与现代化-使用-amazon-bedrock-agentcore-将-openclaw-从单机改造为多租户-serverless-架构-.md)
 - AWS Bedrock 多智能体协作指南

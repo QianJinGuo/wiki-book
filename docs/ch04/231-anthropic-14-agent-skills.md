@@ -1,6 +1,6 @@
 # Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式
 
-> 📊 Level ⭐⭐⭐⭐ | 35.0KB | `entities/anthropic-14-skill-patterns-best-practices.md`
+> 📊 Level ⭐⭐⭐⭐ | 35.0KB
 
 **作者：** 兔兔AGI / 技术极简主义
 **来源：** 微信公众号
@@ -266,6 +266,7 @@ description 决定技能会不会被用到；渐进式披露决定它会占多�
 - Skill Authoring Patterns from Anthropic's Best Practices: https://generativeprogrammer.com/p/skill-authoring-patterns-from-anthropics
 ---
 
+## 深度分析
 ### 模式分类的认知架构
 14 个模式并非散乱分布，而是围绕技能生命周期的三个核心问题组织：技能如何被选中（发现与选择）→ 技能如何传递信息（上下文经济）→ 技能如何指导行动（指令校准）→ 行动如何被控制（工作流控制）→ 行动如何执行（可执行代码）。这是一个从「入口」到「出口」的完整链路，每一类模式解决的其实是不同阶段的信息损耗问题。
 

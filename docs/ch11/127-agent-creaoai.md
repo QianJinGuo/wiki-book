@@ -1,6 +1,6 @@
 # 云端 Agent 基础设施两条硬经验：CreaoAI 联合创始人的状态/代码解耦 + 凭据隔离
 
-> 📊 Level ⭐⭐⭐⭐ | 26.8KB | `entities/cloud-agent-infrastructure-creaoai-state-code-credential-isolation-20260606.md`
+> 📊 Level ⭐⭐⭐⭐ | 26.8KB
 
 ## 概述
 
@@ -188,6 +188,8 @@
 
 > **这就是让下一个触发面能快速、安全上线的根本。**
 
+## 深度分析
+
 ### 1. 所有权边界是云端 Agent 基础设施的设计原语，而不是实现细节
 
 文章的核心判断标准是"**谁控制变更节奏**"——这个设问方式本身就是一种设计原语，而非技术选型建议。在桌面环境里，所有权边界是模糊的（用户 = 机器 = 进程），所以不需要思考这个问题。云端多租户环境下，平台和用户对同一个制品有**方向相反的更新需求**，这个问题就被强制暴露出来了。
@@ -256,7 +258,7 @@ IP 白名单解决的问题是：**网络层拒绝所有非内网来源的请求
 
 ### 与 Cloud Agent 基础设施
 - [Development environments for your cloud agents](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloud-agent-development-environments.md) = Cursor 视角：dev environment 配置工具 + 多 repo 环境——**关注 dev tooling**，本文关注 **production runtime 隔离与凭据**
-- [Cloudflare + Claude Managed Agents](../ch01/084-announcing-claude-managed-agents-on-cloudflare.html) = "脑手分离"架构：推理在 Anthropic 平台 + 代码执行在 Cloudflare Sandboxes——**关注架构分工**，本文关注 **平台自身的 hot-swap + 凭据隔离**
+- Cloudflare + Claude Managed Agents = "脑手分离"架构：推理在 Anthropic 平台 + 代码执行在 Cloudflare Sandboxes——**关注架构分工**，本文关注 **平台自身的 hot-swap + 凭据隔离**
 - [Claude Managed Agents 企业边界更新](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-managed-agents-self-hosted-sandbox-enterprise.md) = 同一系列，**关注企业 hybrid control plane**（self-hosted + Anthropic 推理）
 
 ### 与多租户 / Serverless Agent

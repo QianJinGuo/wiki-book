@@ -1,6 +1,6 @@
 # LoongSuite GenAI 可观测语义规范
 
-> 📊 Level ⭐⭐ | 6.6KB | `entities/loongsuite-genai-semconv.md`
+> 📊 Level ⭐⭐ | 6.6KB
 
 ## 核心贡献
 ### Entry/Step Span 架构
@@ -15,6 +15,7 @@ gen_ai.skill.* 属性（name/id/description/version）附着在 execute_tool Spa
 ### GenAI Utils
 统一 Invocation + Context Manager 编程模型，插桩库只需数据提取，规范升级只改一处。支持 DashScope、Dify、AgentScope、Mem0、MCP、Agno、Google ADK、LangChain。
 
+## 深度分析
 ### 为什么现有 OTel SemConv 不足以支撑 AI Agent 可观测
 传统 OTel HTTP Span 模型无法映射 AI Agent 的长程任务。一轮 ReAct 循环可能跨越数百个内部调用——模型推理、工具选择、记忆回溯——全部压缩在一条扁平 Trace 里，排查问题时无从下手。LoongSuite 引入 Entry/Step 分层：Entry Span 站在 Agent 入口锚定用户意图，Step Span 按 ReAct 阶段展开父子关系，让 trace 从"一团乱麻"变成"可折叠的目录树"。
 
@@ -49,7 +50,7 @@ LoongSuite 当前支持 8+ 框架的 Invocation 统一抽象值得参考——�
 ## 相关实体
 - [Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering实践做了一个平台让ai一晚上自动评测和优化你的系统.md)
 - [Claude Code Agent 工程设计](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-agent-engineering.md)
-- [你不知道的 Agent 原理架构与工程实践](179-agent-principle-architecture-engineering-practice.html)
+- 你不知道的 Agent 原理架构与工程实践
 - [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/coding-harness-engineering.md)
 - [Ralph Loop 不够用：长时间 Agent 还缺这 3 件事](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ralph-loop-不够用长时间-agent-还缺这-3-件事.md)
 

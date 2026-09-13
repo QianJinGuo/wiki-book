@@ -1,6 +1,6 @@
 # Building the agentic
 
-> 📊 Level ⭐ | 5.1KB | `entities/building-the-agentic-future-developer-highlights-from-io-2026.md`
+> 📊 Level ⭐ | 5.1KB
 
 ## Building the agentic future: Developer highlights from I/O 2026
 
@@ -13,6 +13,8 @@
 - Gemini API 新增 Managed Agents，可通过单次 API 调用启动具备推理、工具调用和代码执行能力的智能体
 - Google AI Studio 新增移动端和原生 Android 支持，实现" vibe coding"式开发体验
 - 2 百万美元的 Build with Gemini XPRIZE Hackathon 正式启动 
+
+## 深度分析
 
 ### 1. Gemini 3.5 Flash：面向 Agentic 工作流的速度优化
 

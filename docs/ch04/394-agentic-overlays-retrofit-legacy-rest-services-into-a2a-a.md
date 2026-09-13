@@ -1,6 +1,6 @@
 # Agentic Overlays -- Retrofit Legacy REST Services into A2A Agents
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 6.4KB | `entities/agentic-overlays-rest-to-a2a-enterprise.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 6.4KB
 
 ## 摘要
 
@@ -33,6 +33,8 @@ AWS 与 Cisco 联合提出 **agentic overlay** 模式：通过薄包装层将遗
 - **同时支持 A2A + MCP**：一个 overlay 同时暴露为 A2A agent 和 MCP tool
 - **消除 agent 膨胀**：复用现有服务作为 agent，无需新基础设施
 - **单部署管线**：build、test、release、rollback 只需一套管线
+
+## 深度分析
 
 ### 消息转换设计模式
 
@@ -131,6 +133,6 @@ AgentCore 提供了完整的 agent 基础设施：
 
 - [Agentic AI Data Mesh](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentic-ai-data-mesh-aws-s3-vectors-mcp.md) — 另一种 agent 化路径：data mesh 的 MCP 暴露
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — Agent 约束与验证框架
-- [Agent Harnesses Are Dead](168-agent-harnesses-are-dead-long-live-agent-harnesses.html) — Agent Harness 架构演进讨论
+- Agent Harnesses Are Dead — Agent Harness 架构演进讨论
 
 ---

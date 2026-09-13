@@ -1,6 +1,6 @@
 # Hermes Agent /goal 长任务运行时架构
 
-> 📊 Level ⭐⭐⭐ | 9.5KB | `entities/hermes-agent-goal-runtime-architecture.md`
+> 📊 Level ⭐⭐⭐ | 9.5KB
 
 ## 元信息
 - **作者**：AI 小老六（微信公众号）
@@ -86,7 +86,7 @@ subgoals 让用户在执行过程中补充约束，不必推翻原目标重来�
 - [使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？](https://github.com/QianJinGuo/wiki-public/blob/main/entities/使用-agent-skills-做知识库检索能比传统-rag-效果更好吗.md)
 - [Claude Code 之父最新访谈：编程已经结束、harness 将消失、Claude Code 将只有 100 行代码、loop 才是未来](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-之父最新访谈编程已经结束harness-将消失claude-code-将只有-100-行代码loop-才是未来.md)
 - [Claude Code Agent 工程设计](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-agent-engineering.md)
-- [你不知道的 Agent 原理架构与工程实践](179-agent-principle-architecture-engineering-practice.html)
+- 你不知道的 Agent 原理架构与工程实践
 - [Ralph Loop 不够用：长时间 Agent 还缺这 3 件事](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ralph-loop-不够用长时间-agent-还缺这-3-件事.md)
 
 → [原文存档](https://mp.weixin.qq.com/s/m2rYnwSzjJl2mLl3ia6hWA)

@@ -1,8 +1,10 @@
 # It’s safe to close your laptop now: Hosting coding agents on Amazon Bedrock AgentCore
 
-> 📊 Level ⭐⭐⭐ | 15.1KB | `entities/bedrock-agentcore-coding-agent-hosting.md`
+> 📊 Level ⭐⭐⭐ | 15.1KB
 
 > **Source archive**: [原文存档](https://aws.amazon.com/blogs/machine-learning/its-safe-to-close-your-laptop-now-hosting-coding-agents-on-amazon-bedrock-agentcore)
+
+## 深度分析
 
 ### 1. 笔记本作为 Coding Agent 宿主的结构性缺陷
 
@@ -48,11 +50,11 @@ AgentCore 支持 Claude Code、Codex、Kiro、Cursor CLI、OpenCode、Gemini CLI
 
 ## It’s safe to close your laptop now: Hosting coding agents on Amazon Bedrock AgentCore
 
-There’s a habit going around. Walking from one meeting to the next with the laptop cradled half-open. Sitting through a 1:1 with the lid propped just enough to keep the screen alive. Riding home while holding your laptop because it must stay running. Anywhere except closed on a desk, because closed on a desk is what kills the coding agent running inside (Claude Code, Codex, Kiro, OpenCode, Gemini CLI, Cursor CLI, or whatever harness the developer pulled together). [Business Insider has a piece on it](<https://www.businessinsider.com/coders-keep-laptops-open-in-public-ai-agent-2026-5>).
+There’s a habit going around. Walking from one meeting to the next with the laptop cradled half-open. Sitting through a 1:1 with the lid propped just enough to keep the screen alive. Riding home while holding your laptop because it must stay running. Anywhere except closed on a desk, because closed on a desk is what kills the coding agent running inside (Claude Code, Codex, Kiro, OpenCode, Gemini CLI, Cursor CLI, or whatever harness the developer pulled together). Business Insider has a piece on it.
 
 Strip any of these agents down and they all need the same five things: a shell, a filesystem, the project checked out, its dependencies installed, and the right permissions (to act on the filesystem, plus credentials for the network and the outside world). Your laptop has all five. Nothing about the list says laptop, though. The laptop won the job by being the nearest machine, not the right one.
 
-The rest of this post is about reaching for a different one. [Amazon Bedrock AgentCore Runtime](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agents-tools-runtime.html>) gives every session a dedicated environment: an isolated Linux microVM with a persistent workspace, a real shell, and deterministic command execution. Most sandbox products do something similar. What’s harder to assemble, and what [AgentCore](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html>) ships out of the box, is the surrounding system: an [Identity](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identity.html>) layer so the agent acts as the user who triggered it, a [Gateway](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway.html>) that gives Claude Code, Codex, Kiro, and the rest the same set of tools (GitHub, Jira, Slack, your own services) through one Model Context Protocol (MCP) endpoint with the real tokens held outside the agent, and [Observability](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability.html>) so every step the agent takes lands in the Amazon CloudWatch your team already uses. And then the lid can close.
+The rest of this post is about reaching for a different one. Amazon Bedrock AgentCore Runtime gives every session a dedicated environment: an isolated Linux microVM with a persistent workspace, a real shell, and deterministic command execution. Most sandbox products do something similar. What’s harder to assemble, and what AgentCore ships out of the box, is the surrounding system: an Identity layer so the agent acts as the user who triggered it, a Gateway that gives Claude Code, Codex, Kiro, and the rest the same set of tools (GitHub, Jira, Slack, your own services) through one Model Context Protocol (MCP) endpoint with the real tokens held outside the agent, and Observability so every step the agent takes lands in the Amazon CloudWatch your team already uses. And then the lid can close.
 
 By the end of this post, we’ll hand the same GitHub issue to Claude Code, Codex, Kiro, and Cursor at the same time, each in its own environment, and grade them on the things that actually matter: latency, dollar cost, and whether the tests pass on the first try.
 
@@ -75,7 +77,7 @@ Let’s see how AgentCore gets you both.
 
 ## Bring any agent. Pick any model. Run them in parallel.
 
-**Any agent.** You can host Claude Code, Codex, Kiro, OpenCode, Cursor CLI, Gemini CLI, your own harness, and you can package anything into a container or a .zip. Push the container to Amazon Elastic Container Registry (Amazon ECR) or zip-deploy a [Python](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-get-started-toolkit.html>) or [Node.js](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-get-started-code-deploy-node.html>) project directly. You can bring your own dependencies in the image: language runtimes, build tools, git, system package
+**Any agent.** You can host Claude Code, Codex, Kiro, OpenCode, Cursor CLI, Gemini CLI, your own harness, and you can package anything into a container or a .zip. Push the container to Amazon Elastic Container Registry (Amazon ECR) or zip-deploy a Python or Node.js project directly. You can bring your own dependencies in the image: language runtimes, build tools, git, system package
 
 ## 相关实体
 - [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](https://github.com/QianJinGuo/wiki-public/blob/main/entities/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazo.md)
@@ -84,7 +86,7 @@ Let’s see how AgentCore gets you both.
 - [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-一周综述amazon-bedrock-agentcore-付款适用于-aws-的-agent-工具套件等2026-年-5-月-11-日.md)
 - [Amazon Quick Bedrock Agentcore Finops Chat](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-quick-bedrock-agentcore-finops-chat.md)
 - [deep agents + bedrock agentcore：多 agent 编排 + 隔离基础设施的端到端研究 ag](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deep-agents-bedrock-agentcore-subagent-orchestration-aws.md)
-- [development environments for your cloud agents](https://github.com/QianJinGuo/wiki-public/blob/main/entities/development-environments-for-your-cloud-agents.md)
+- development environments for your cloud agents
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/coding-agent-practice.md)
 
 ---

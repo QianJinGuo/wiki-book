@@ -1,6 +1,6 @@
 # Anthropic Coding Agent 社会科学家采用调查
 
-> 📊 Level ⭐⭐⭐⭐ | 13.5KB | `entities/anthropic-coding-agents-social-science-survey-2026.md`
+> 📊 Level ⭐⭐⭐⭐ | 13.5KB
 
 ## 背景与方法
 
@@ -107,6 +107,8 @@ Anthropic 2026年2-3月调查覆盖 **1260位量化社会科学家**，发现 **
 2. **转化漏斗中段是关键战场**：接触 → 试用容易，但试用 → 日常使用才是真正的 product-market fit 考验
 3. **信任建立需要时间**：仅 1/3 用户让 AI 起草正文，说明高风险任务（涉及最终产出）的信任建立极慢
 4. **学术工作流的下游瓶颈被低估**：AI 加速上游但无法加速同行评审，这是系统性限制而非产品缺陷
+
+## 深度分析
 
 ### adoption gap 本质：技能栈兼容性决定转化率
 

@@ -1,6 +1,6 @@
 # 让 Coding Agent 从黑盒到透明：阿里云 Agent 观测审计数据采集实践（LoongSuite Pilot 端侧平台 + 3 类 Agent 形态 + 4 大观测审计能力）
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 32.7KB | `entities/alibaba-agent-observability-audit-loongsuite-pilot-coding-agent-blackbox-to-transparent.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 32.7KB
 
 ## 让 Coding Agent 从黑盒到透明：阿里云 Agent 观测审计数据采集实践
 
@@ -200,6 +200,8 @@ agent = LoongSuiteAgent()
 - **GenAI Utils 统一收口遥测输出**——所有 Span 创建、属性挂载、Metrics 记录、Event 发送、Context 管理均由 `ExtendedTelemetryHandler` 内部完成
 
 **价值**：插桩库与规范升级**解耦**。
+
+## 深度分析
 
 ### 1. OTel SemConv 扩展路径：从社区标准到阿里云自定义规范
 

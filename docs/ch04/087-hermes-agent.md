@@ -1,6 +1,6 @@
 # Hermes Agent 自进化源码分析
 
-> 📊 Level ⭐⭐⭐ | 26.5KB | `entities/hermes-agent-self-evolving-source-analysis.md`
+> 📊 Level ⭐⭐⭐ | 26.5KB
 
 前言笔者之前讲解了claude code这一code agent脚手架(两万字详解Claude Code源码核心机制)，和cc相比，最近大火的 hermes agent 定位则是更加日常的、通用的agent脚手架，体现在system prompt内容（强调用来完成问答、代码、分析、创作、工具执行等全场景任务）、工具集设计（更加丰富的Web 与浏览器工具、文本&语音等多模态工具）、多平台使用（Telegram、Discord、微信等多平台发送消息、调用远端执行后段）等方面。hermes agent更加强调是其"自进化（self-improve）"机制，本文将会基于hermes agent，讲解如果想让agent脚手架具备自进化能力，需要配套构建哪些机制。
 首先需要澄清的是，虽然hermes agent提供了调用自家tinker-atropos训练平台的RL工具（rl_start_training、rl_get_results等），但是这里所说的self imporve并非是进行模型权重更新，而是一套显式的知识沉淀机制——模型通过工具主动记录经验，下次会话自动加载。
@@ -86,7 +86,7 @@ Hermes选择"写入memory时不更新当前会话的system prompt，而是等到
 ## 相关实体
 - [企业级AI记忆基质三层架构：事实/交互/行动记忆](https://github.com/QianJinGuo/wiki-public/blob/main/entities/enterprise-ai-memory-substrate-three-layer-architecture.md)
 - [AI Coding Agent 记忆系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-coding-agent-memory-system.md)
-- [AI Agent 记忆系统架构](108-how-ai-agent-memory-works.html)
+- AI Agent 记忆系统架构
 - [Self-Evolving Agents 系统性综述](https://github.com/QianJinGuo/wiki-public/blob/main/entities/self-evolving-agents-survey.md)
 - [Hermes Agent 记忆系统深度拆解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-memory-system-vs-openclaw.md)
 - [Agent Memory System Design](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-system-design.md)

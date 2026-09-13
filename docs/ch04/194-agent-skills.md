@@ -1,6 +1,6 @@
 # Agent Skills 系统性综述：表示→获取→检索→进化
 
-> 📊 Level ⭐⭐⭐ | 7.7KB | `entities/agent-skills-comprehensive-survey.md`
+> 📊 Level ⭐⭐⭐ | 7.7KB
 
 ## 核心问题
 你让 AI Agent 帮你写一段代码，它做得很好。第二天你让它做一件几乎一样的事，它又从头推理一遍——卡住、报错、重试。就好像它完全没做过上一次。**这不是模型不够聪明。而是它缺了一种人类天然具备的能力：把重复经验变成可复用的肌肉记忆。**
@@ -10,7 +10,7 @@
 
 - **M**（Main instruction）：主指令文档，告诉 Agent 怎么做
 - **R**（Resources）：辅助资源（模板、脚本、参考资料等）
-- **C**（Condition）：触发条件，什么时候该用这个技能 See also [Harness Engineering](../ch05/019-harness-engineering.html)
+- **C**（Condition）：触发条件，什么时候该用这个技能 See also Harness Engineering
 
 ### 三种技能类型
 | 类型 | 特点 | 代表 |
@@ -79,6 +79,7 @@
 
 技能正在成为独立的基础设施层，而非附属在某个 Agent 产品里的次要功能。
 
+## 深度分析
 ### 模型是大脑，技能是肌肉记忆
 这篇综述的核心观点 ：Agent 的下一个关键竞争力不是模型更强，而是**技能管理能力**更强。大脑再聪明，没有肌肉记忆也快不起来。
 

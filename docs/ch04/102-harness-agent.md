@@ -1,6 +1,6 @@
 # Harness如何支撑Agent在生产环境稳定运行？
 
-> 📊 Level ⭐⭐⭐ | 14.3KB | `entities/harness-production-agent-engineering-deficit.md`
+> 📊 Level ⭐⭐⭐ | 14.3KB
 
 ## 核心概念：工程赤字（Engineering Deficit）
 > "很多智能体能做出演示，却很难变成可靠产品。"
@@ -63,6 +63,7 @@ Anthropic 承认三个运行时改动削弱了 Claude Code 表现：
 - 不要把 DSPy 当通用智能体框架（DSPy 适合 prompt program optimization，不是通用运行框架）
 - 新智能体产品不要按 seat 定价（市场已转向按结果和用量付费）
 
+## 深度分析
 ### 工程赤字的结构性根源
 "Demo 型 vs 生产型"的差距本质上是**工程投入的不对称**：模型能力在短时间窗口内可以被快速评估，而周围的工程系统——工具契约、状态隔离、运行框架、编排层——需要随着智能体能力的扩展而持续迭代。这个迭代速度往往落后于模型能力的提升速度，导致"模型强、管道弱"的工程赤字现象普遍存在。MIT 2025年报告的 95% 失败率对应的正是这类问题。
 
@@ -126,7 +127,7 @@ AgentLeak benchmark 显示多智能体系统暴露面（68.9%）显著高于单�
 - [Claude Code 源码核心机制详解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-core-internals.md)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-source-architecture.md)
 - [Agent架构关键变化：Harness正在成为新后端](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-architecture-harness-new-backend.md)
-- [Claude Code MCP Server](../ch07/043-claude-code-mcp-server.html)
+- Claude Code MCP Server
 
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-让-coding-agent-可靠完成长程任务-v2.md)
 - [Boris Cherny — 从 IDE 到 Agent 控制台](https://github.com/QianJinGuo/wiki-public/blob/main/entities/boris-cherny-ide-to-agent-console.md)

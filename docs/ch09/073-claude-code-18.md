@@ -1,6 +1,6 @@
 # Claude Code 18个隐藏设置
 
-> 📊 Level ⭐⭐⭐⭐ | 13.0KB | `entities/claude-code-hidden-settings-18.md`
+> 📊 Level ⭐⭐⭐⭐ | 13.0KB
 
 原文：Mnimiy (@Mnilax)，2026-05-23。18个设置分为三组：Claude.ai(8个)、Claude Code(7个)、API/Console(3个)。
 
@@ -134,6 +134,8 @@ jq '.cleanupPeriodDays // 30' ~/.claude/settings.json
 - Adaptive Reasoning 开关：默认已最优，手动覆盖无显著效果
 - Skill 自动激活：渐进式披露已调教很好，保持开启
 - Workspace max_tokens：会毁掉代码生成场景
+
+## 深度分析
 
 ### 成本控制的层级思维
 

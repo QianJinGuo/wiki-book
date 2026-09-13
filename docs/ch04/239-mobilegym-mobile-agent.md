@@ -1,6 +1,6 @@
 # MobileGym：中科院开源浏览器内安卓仿真平台，Mobile Agent 训练与评测基础设施
 
-> 📊 Level ⭐⭐⭐⭐ | 22.5KB | `entities/mobilegym-cas-mobile-agent-benchmark.md`
+> 📊 Level ⭐⭐⭐⭐ | 22.5KB
 
 ## 概述
 
@@ -214,6 +214,8 @@
 1. **交互保真**（interaction fidelity）—— 不复刻内核只复刻反应的仿真哲学
 2. **JSON 结构化状态**—— 一份 JSON 同时解决可读/可写/可复制/零后果 + 考练一体
 3. **USE 指标**—— 通过全状态对比首次捕获 Agent"顺手作恶"，对齐研究新工具
+
+## 深度分析
 
 ### 1. 仿真哲学：从"像素级复刻"到"交互保真"的范式转移 
 

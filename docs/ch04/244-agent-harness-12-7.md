@@ -1,6 +1,6 @@
 # 一篇看懂 Agent Harness 的结构！ — 12组件+7决策完整框架
 
-> 📊 Level ⭐⭐⭐⭐ | 20.5KB | `entities/agent-harness-12-components-7-decisions.md`
+> 📊 Level ⭐⭐⭐⭐ | 20.5KB
 
 > 本文是对 https://mp.weixin.qq.com/s/BEuV7aCCZgWcX7MRLVC86w 的存档
 > 作者：石榴爸爸 AI 实战，2026-04-20

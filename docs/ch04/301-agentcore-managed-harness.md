@@ -1,6 +1,6 @@
 # AgentCore Managed Harness
 
-> 📊 Level ⭐⭐⭐⭐ | 10.9KB | `entities/agentcore-harness.md`
+> 📊 Level ⭐⭐⭐⭐ | 10.9KB
 
 ## Overview
 亚马逊云科技 2026 年 4 月 24 日正式发布的托管 Harness 平台。核心理念：**你告诉 Agent 做什么，平台托管其余一切**。
@@ -89,6 +89,7 @@ npm i -g @aws/agentcore@preview   # 安装CLI
 - AgentCore 是云厂商对"每个团队都在重复造轮子"这一痛点的**平台化回应**
 - 两篇文章共同揭示：**Agent 的护城河不在模型，在 Harness**
 
+## 深度分析
 ### 1. 为什么 Harness Engineering 在 2026 年爆发
 2025 年之前，大多数团队将 Agent 框架（LangChain、AutoGen、 CrewAI）当作 Harness 本身。但随着模型能力（如 o3、 Gemini 2.5）跨越「能思考」的阈值，瓶颈从「模型能不能想清楚」转移到「想了之后能不能做到」。这催生了独立记录相同模式的行业现象——每个团队都在自建配套系统，每个团队都觉得自己在重复造轮子。
 AgentCore 的出现代表云厂商正式承认：**Harness 是值得托管的基础设施层**，而不是每个客户自己造的东西。
@@ -146,7 +147,7 @@ AgentCore 基于 Strands Agents 开源框架构建，这一选择创造了两条
 - [柚漫剧 AI 全流程提效拆解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yumanju-ai-full-flow-efficiency.md)
 - [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-agentcore-os-level-actions-browser.md)
 - [Amazon Bedrock模型推理的Serverless异步架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-model-inference-serverless-architecture-case-study.md)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-prompt-context-harness.md)
+- 深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践
 - [Code as Agent Harness 综述](https://github.com/QianJinGuo/wiki-public/blob/main/entities/code-as-agent-harness-survey.md)
 - [harness-engineering-systematic-explainer](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-systematic-explainer.md)
 - [AI Agent 工程师能力地图](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-engineer-capability-map.md)

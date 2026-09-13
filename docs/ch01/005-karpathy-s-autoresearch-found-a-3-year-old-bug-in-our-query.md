@@ -1,6 +1,6 @@
 # Karpathy's Autoresearch found a 3-year-old bug in our query engine (and improved performance by 11%) - PostHog
 
-> 📊 Level ⭐ | 14.3KB | `entities/https-posthog-com-blog-karpathy-autoresearch-query-engine-bug.md`
+> 📊 Level ⭐ | 14.3KB
 
 ## 概述
 
@@ -33,6 +33,8 @@ Why it hid for 3 years: ClickHouse MinMax skip index on `timestamp` provided a w
 The fix: rewrite comparison so the field side is bare and the constant carries the timezone — semantics identical because `toTimeZone()` only changes display metadata, underlying epoch unchanged. Result on 7-day funnel: 37% trimmed mean improvement, 62% granule reduction .
 
 Future pipeline: ① fetch slow queries from `system.query_log` ② spin up sandbox per query ③ run pi-autoresearch ④ LLM dedup + spawn PostHog Code session ⑤ PR to Slack for human review .
+
+## 深度分析
 
 ### 1. Autoresearch 的领域迁移：从模型训练到查询性能优化 
 
@@ -79,7 +81,7 @@ PostHog 正在将 hackathon 手工喂入模式升级为全自动 pipeline：① 
 ## 相关实体
 - [Akamai Acquires Israeli Ai Browser Security Startup Layerx For 205 Million In Ca](https://github.com/QianJinGuo/wiki-public/blob/main/entities/akamai-acquires-israeli-ai-browser-security-startup-layerx-for-205-million-in-ca.md)
 - [Clinereleasesopen Sourceagentruntimesdk](https://github.com/QianJinGuo/wiki-public/blob/main/entities/clinereleasesopen-sourceagentruntimesdk.md)
-- [Running An Ai Native Engineering Org](031-running-an-ai-native-engineering-org.html)
+- Running An Ai Native Engineering Org
 - [Pytorch212Releaseblogpytorch](https://github.com/QianJinGuo/wiki-public/blob/main/entities/pytorch212releaseblogpytorch.md)
 - [Igor Babuschkin Seeks Up To 1 Billion For River Ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/igor-babuschkin-seeks-up-to-1-billion-for-river-ai.md)
 

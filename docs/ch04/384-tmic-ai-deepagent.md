@@ -1,6 +1,6 @@
 # TMIC AI小新 DeepAgent架构演进
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 10.7KB | `entities/tmic-ai-xiaoxin-deepagent-architecture-evolution.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 10.7KB
 
 ## 核心洞察
 
@@ -99,6 +99,8 @@ Thought → Action → Observation
 | 参数识别 | 前置识别，依赖预设逻辑 | 动态识别，AI在执行中决定 |
 | 上下文范围 | 各子Agent独立，最终汇总 | 完整执行历史+中间上下文 |
 | 业务模块 | 单一选择 | 多模块识别+跨模块协作 |
+
+## 深度分析
 
 ### 1. 上下文工程的本质：从"交给AI"到"为AI准备"
 

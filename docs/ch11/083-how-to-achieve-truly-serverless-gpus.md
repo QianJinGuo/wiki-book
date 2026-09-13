@@ -1,6 +1,6 @@
 # How to achieve truly serverless GPUs
 
-> 📊 Level ⭐⭐⭐ | 9.8KB | `entities/modal-truly-serverless-gpus.md`
+> 📊 Level ⭐⭐⭐ | 9.8KB
 
 > -> [原文存档](https://modal.com/blog/truly-serverless-gpus)
 

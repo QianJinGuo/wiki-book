@@ -1,6 +1,6 @@
 # New legal questions: agentic pen testing
 
-> 📊 Level ⭐⭐⭐⭐ | 8.6KB | `entities/agentic-penetration-testing-legal-questions.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.6KB
 
 > **来源**: bcs.org (British Computer Society)
 > **作者**: Richard Hanstock FBCS (Barrister, Deeptech Legal 创始人)
@@ -61,6 +61,8 @@ Palo Alto Unit 42 (2025-11) 披露的 **agent session smuggling** 攻击利用�
 - **Automated Vehicles Act 2024** Sections 47-49: 当自动驾驶功能启用时，人类 user-in-charge 免于 driving offences，liability 转向 authorized entity——可类比用于 autonomous security services
 - **2025-12 英国政府**: 承诺在 Computer Misuse Act 中为 cybersecurity research 建立 statutory defence
 - 行业正在 engagement letters 和 terms of service 中书写自己的"第一版判例法"
+
+## 深度分析
 
 ### 1990 年法律框架 vs 2026 年技术现实
 

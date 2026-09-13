@@ -1,6 +1,6 @@
 # 你的 AI Agent 真的在受控运行吗？
 
-> 📊 Level ⭐⭐⭐ | 7.6KB | `entities/openclaw-agent-observability-session-logs-otel-sls.md`
+> 📊 Level ⭐⭐⭐ | 7.6KB
 
 ## 深度分析
 
@@ -65,7 +65,7 @@ Meta 超级智能实验室 AI 对齐总监 Summer Yue 向 OpenClaw 下达「未�
 
 **4. 将上下文压缩风险纳入安全威胁模型**
 
-参考 [Agent 记忆系统对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-openclaw-memory-comparison.md) 的分析，窗口压缩导致的「遗忘」问题需要在架构层解决。安全关键指令应存储在独立策略引擎中，而非依赖模型上下文保持能力。
+参考 Agent 记忆系统对比 的分析，窗口压缩导致的「遗忘」问题需要在架构层解决。安全关键指令应存储在独立策略引擎中，而非依赖模型上下文保持能力。
 
 **5. 设计「Metrics → App Logs → Session Logs」联动告警**
 

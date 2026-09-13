@@ -1,6 +1,6 @@
 # AI Agent Skill 系统设计：淘宝技术工程实践
 
-> 📊 Level ⭐⭐⭐ | 7.1KB | `entities/skill-system-design-taobao-technology-2026.md`
+> 📊 Level ⭐⭐⭐ | 7.1KB
 
 大淘宝技术（会员技术团队）系统阐述了 AI Agent Skill 系统的设计理念与工程实践。核心观点是将 Skill 视为**行为编程**而非文档，通过结构化设计（YAML+Markdown、DOT 流程图、检查表）和严格的约束机制（门控、合理化防御、说服原则）来规范 Agent 的行为。
 
@@ -36,6 +36,8 @@ flowchart LR
 - [Anthropic 14 个 Agent Skills 设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-agent-skills-design-patterns-14.md) — **互补**：Anthropic 14 模式讲 Skill 怎么写（渐进披露/上下文预算/排除条款等），本文补充了前向测试/门控/自由度分级等工程保障
 - [Anthropic Claude Skill 9 类任务分类法](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-claude-skill-9-categories-datawhale-2026.md) — **互补**：9 类分类告诉你做什么类型的 Skill，本文告诉你怎么做和怎么验证
 - [Perplexity 内部 Skill 设计指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/perplexity-internal-skill-design-guide.md) — Perplexity 的四维评价体系与本文的验证方法论可对照
+
+## 深度分析
 
 ### 行为编程 vs 文档写作：Skill 工程的范式转换
 

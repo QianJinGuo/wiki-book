@@ -1,6 +1,6 @@
 # Better decisions at scale: How mathematical optimization delivers where intuition fails
 
-> 📊 Level ⭐⭐⭐ | 7.8KB | `entities/better-decisions-at-scale-how-mathematical-optimization-deli.md`
+> 📊 Level ⭐⭐⭐ | 7.8KB
 
 ## 数学优化：在直觉失效的复杂决策中寻找确定性最优解
 
@@ -17,6 +17,8 @@ AWS Generative AI Innovation Center 介绍了数学优化（Mathematical Optimiz
 - **四步框架**：Discover（发现机会）→ Model（建模）→ Solve（求解）→ Architect（架构化部署）
 - **关键案例**：BMW 机器人路径优化 10% 改进、Delivery Hero 24% 成本节省、Amazon EU 物流 +20-50bp 覆盖率提升、澳大利亚红交叉排班 7% 成本降低
 - **可复用解决方案**：ROaDS（路线优化）和 WISE（排班引擎）已从客户项目中抽象为通用框架
+
+## 深度分析
 
 ### 数学优化 vs 机器学习：演绎 vs 归纳
 

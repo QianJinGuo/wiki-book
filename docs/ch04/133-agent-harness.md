@@ -1,6 +1,6 @@
 # Agent Harness 架构
 
-> 📊 Level ⭐⭐⭐ | 10.9KB | `entities/agent-harness-architecture.md`
+> 📊 Level ⭐⭐⭐ | 10.9KB
 
 ## 7 层架构
 | 层级 | 核心职责 | 关键设计 |
@@ -52,7 +52,7 @@ L6 多 Agent 层最难的不是任务分配，而是冲突解决。建议在初�
 
 ## 参见
 - [原文存档](https://mp.weixin.qq.com/s/a10NnBuBDmaStoDZjOhzjA)
-- [Harness Engineering](../ch05/019-harness-engineering.html)（Harness 工程方法论）
+- Harness Engineering（Harness 工程方法论）
 
 ## 相关实体
 - [Agent架构关键变化：Harness正在成为新后端](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent架构关键变化harness正在成为新后端.md)
@@ -62,7 +62,7 @@ L6 多 Agent 层最难的不是任务分配，而是冲突解决。建议在初�
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](https://github.com/QianJinGuo/wiki-public/blob/main/entities/深入理解-claude-code-源码中的-agent-harness-构建之道-v2.md)
 - [Agent Harness 12 组件与 7 个关键决策](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-12-components-7-decisions.md)
 - [Agent架构关键变化：Harness正在成为新后端](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-architecture-harness-new-backend.md)
-- [你不知道的 Agent 原理架构与工程实践](179-agent-principle-architecture-engineering-practice.html)
+- 你不知道的 Agent 原理架构与工程实践
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 - [Thin Harness Fat Skills](https://github.com/QianJinGuo/wiki-public/blob/main/entities/thin-harness-fat-skills.md)
 - [Design Patterns for AI Agents 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/design-patterns-for-ai-agents-2026.md)
@@ -82,7 +82,7 @@ L6 多 Agent 层最难的不是任务分配，而是冲突解决。建议在初�
 - [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-20000-char-source-analysis.md)
 - [Agent 自我改进的六条路](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-self-improvement-six-mechanisms.md)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-agentic-engineering-v4.md)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-prompt-context-harness.md)
+- 深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践
 - [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [Claude Code 设计原则与对照分析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-architecture-analysis.md)
 - [Claude Code 源码核心机制详解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-core-internals.md)

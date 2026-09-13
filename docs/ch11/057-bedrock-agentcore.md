@@ -1,6 +1,6 @@
 # Bedrock AgentCore 自定义代码评估器
 
-> 📊 Level ⭐⭐⭐ | 12.9KB | `entities/build-custom-code-based-evaluators-in-amazon-bedrock-agentco.md`
+> 📊 Level ⭐⭐⭐ | 12.9KB
 
 ## 摘要
 Amazon Bedrock AgentCore 支持自定义代码评估器（Custom Code-Based Evaluators），通过将 AWS Lambda 函数作为评估引擎，对 Agent 应用进行确定性质量检查。适用于金融、医疗等强合规领域，弥补 LLM-as-a-Judge 在结构化约束（JSON Schema、数值精度、工作流顺序、PII 合规）上的不足。评估可在 On-Demand（开发迭代、CI/CD 回归测试）和 Online（生产流量持续监控）两种模式下运行。
@@ -29,6 +29,7 @@ Amazon Bedrock AgentCore 支持自定义代码评估器（Custom Code-Based Eval
 扫描会话中所有 Agent 响应是否泄露 PII。使用 Amazon Comprehend DetectPiiEntities API，高风险实体（SSN、银行卡、政府ID、凭证）直接 FAIL，低风险实体（姓名、邮箱、电话、地址）按阈值返回部分分数。
 > **备选方案**：对于无法依赖 Comprehend 的环境，提供了基于正则表达式的变体。
 
+## 深度分析
 ### 代码评估器的本质定位
 这篇文章揭示了 LLM-as-a-Judge 与代码评估器的根本分工：前者评估"听起来对不对"（helpfulness、correctness、tone），后者验证"是不是真的符合约束"（schema、数值精度、工作流顺序、PII 安全）。在金融、医疗、法律等强监管领域，"听起来对"是不够的——审计员和监管机构要求可证明的合规证据。代码评估器提供了这种确定性：同样的输入永远产生同样的结果，且结果可被完整重放和调试。
 

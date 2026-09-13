@@ -1,6 +1,6 @@
 # Enable safe agentic payments with built-in guardrails using Amazon Bedrock
 
-> 📊 Level ⭐⭐⭐ | 21.1KB | `entities/amazon-bedrock-agentic-payments-guardrails.md`
+> 📊 Level ⭐⭐⭐ | 21.1KB
 
 ## The challenge: Safety risks in agentic payments
 
@@ -44,8 +44,8 @@ The check is deterministic and runs at the infrastructure layer. Prompt injectio
 
 For tool-level authorization, we recommend exposing paid endpoints through Amazon Bedrock AgentCore Gateway. Every call through AgentCore Gateway is intercepted by Policy in AgentCore, a Cedar-based engine that evaluates the request, including the agent’s identity, the tool name, and the parameters, and decides whether to allow it. The two controls cover different decisions. Policy decides who can call which paid tool and with what parameters. AgentCore payments decides how much that call can spend and for how long. Together, they give developers orthogonal levers for tool access and spend amount.
 
-  * For a walkthrough of creating a payment session with budget and TTL configuration, see [Creating a payment session](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/payments-create-session.html>) in the Amazon Bedrock AgentCore developer guide.
-  * For examples of Cedar policies that scope tool access by agent role and user group, see [Policy in AgentCore](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy.html>) in the developer guide.
+  * For a walkthrough of creating a payment session with budget and TTL configuration, see Creating a payment session in the Amazon Bedrock AgentCore developer guide.
+  * For examples of Cedar policies that scope tool access by agent role and user group, see Policy in AgentCore in the developer guide.
 
 ### User control, funding, and delegation
 
@@ -109,7 +109,7 @@ With AgentCore payments:
 
 With these guardrails in place, agentic payments become a managed capability that is bounded, auditable, and production-ready.
 
-To learn more, visit the [Amazon Bedrock AgentCore product page](<https://aws.amazon.com/bedrock/agentcore/>) and read the [launch announcement](<https://aws.amazon.com/blogs/machine-learning/agents-that-transact-introducing-amazon-bedrock-agentcore-payments-built-with-coinbase-and-stripe/>). For a technical deep dive into agentic commerce patterns, see [Technical deep dive: AgentCore Payments and innovation in agentic commerce](<https://aws.amazon.com/blogs/machine-learning/technical-deep-dive-agentcore-payments-and-innovation-in-agentic-commerce/>).
+To learn more, visit the Amazon Bedrock AgentCore product page and read the launch announcement. For a technical deep dive into agentic commerce patterns, see Technical deep dive: AgentCore Payments and innovation in agentic commerce.
 
 * * *
 
@@ -122,6 +122,8 @@ Joshua is a Senior Solutions Architect at AWS working with FinTech customers. He
 ### Guy Bachar
 
 Guy is a Senior Solutions Architect at AWS, partnering with financial services companies to design secure, scalable cloud solutions. He specializes in AI-driven innovation, customer experience transformation, and identity and security architecture for enterprise-scale deployments.
+
+## 深度分析
 
 ### 1. 基础设施层强制执行：比模型层更可靠的安全范式
 
@@ -169,8 +171,8 @@ AgentCore Observability 暴露了所有 ProcessPayment 调用的结果（成功�
 - [Secure Ai Agents Policy Lambda Interceptors Aws](https://github.com/QianJinGuo/wiki-public/blob/main/entities/secure-ai-agents-policy-lambda-interceptors-aws.md)
 - [Agentops Operationalize Agentic Ai Amazon Bedrock](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-amazon-bedrock.md)
 - [Break The Context Window Barrier With Amazon Bedrock Agentcore](https://github.com/QianJinGuo/wiki-public/blob/main/entities/break-the-context-window-barrier-with-amazon-bedrock-agentcore.md)
-- [Building Ai Agents For Business Support Using Amazon Bedrock](091-building-ai-agents-for-business-support-using-amazon-bedrock.html)
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](148-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
+- Building Ai Agents For Business Support Using Amazon Bedrock
+- Building A Secure Auth Code Flow Setup Using Agentcore Gatew
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-privacy-landscape.md)
 
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/enable-safe-agentic-payments-with-built-in-guardrails-using-amazon-bedrock-agentcore-payments/)

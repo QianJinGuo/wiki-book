@@ -1,6 +1,6 @@
 # 给 Hermes 装上显微镜：Agent 执行全知道
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 15.7KB | `entities/hermes-observability-aliyun.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 15.7KB
 
 [原文存档](https://mp.weixin.qq.com/s/XQqbHr7EjH906vQhX8b6Cw)
 
@@ -116,6 +116,7 @@ loongsuite-site-bootstrap: started successfully (OpenTelemetry auto-instrumentat
 | 治理面 | 加强内容采集控制、更细粒度的数据治理能力、统一脱敏和安全策略建设 |
 **目标：** 从"可用的 runtime 可观测基础设施"演进为"更完整、更细致、更适合真实生产环境的 Agent 可观测体系"。
 
+## 深度分析
 ### 1. Agent 可观测性的本质挑战
 传统的微服务可观测性（Logging、Metrics、Tracing）解决的是"发生了什么"，但 Agent 运行的核心困境在于**意图链路的不确定性**。一次 Hermes 运行可能包含：
 

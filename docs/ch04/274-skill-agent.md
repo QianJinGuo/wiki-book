@@ -1,6 +1,6 @@
 # Skill 系统：Agent 如何把经验沉淀成可复用能力
 
-> 📊 Level ⭐⭐⭐⭐ | 14.3KB | `entities/hermes-skill-system-winty.md`
+> 📊 Level ⭐⭐⭐⭐ | 14.3KB
 
 ## "Skill 系统：Agent 如何把经验沉淀成可复用能力"
 ## 核心命题
@@ -137,7 +137,7 @@ Trigger 关键字粗筛 + 语义打分 tie-breaker 的两层检索机制，本�
 - [Demis Hassabis YC 专访：AGI / 记忆 / Agent / 创造性观点集](https://github.com/QianJinGuo/wiki-public/blob/main/entities/demis-hassabis-yc-interview-2026.md)
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-development-guide-aliyun-2026.md)
 - [SkillX — 层次化技能知识库](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skillx-hierarchical-skill-library.md)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-prompt-context-harness.md)
+- 深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践
 - [Anthropic 14 个 Agent Skills 设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-agent-skills-design-patterns-14.md)
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki-public/blob/main/queries/agent-memory-system-design.md)
 - [OpenHuman: AI Agent 持久记忆框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openhuman-ai-agent-memory-tree-tokenjuice.md)
@@ -146,7 +146,7 @@ Trigger 关键字粗筛 + 语义打分 tie-breaker 的两层检索机制，本�
 
 - [你写的 Skill，及格了吗？](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ni-xie-de-skill-ji-ge-liao-ma.md)
 - [深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-wiki-obsidian-wiki-gbrain-self-organization-self-evolution.md)
-- [Hermes Agent](../ch03/059-hermes-agent.html)
+- Hermes Agent
 - [Qoder Skills 完全指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/qoder-skills-complete-guide.md)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/hermes-agent-skill.md)
 - [Karpathy LLM Wiki V2](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/karpathy-llm-wiki-v2.md)

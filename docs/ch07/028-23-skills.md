@@ -1,8 +1,10 @@
 # 李继刚 23 个 Skills 深度拆解——认知工序流水线
 
-> 📊 Level ⭐⭐⭐ | 5.9KB | `entities/ljg-skills-deep-dive-datastudio-2026.md`
+> 📊 Level ⭐⭐⭐ | 5.9KB
 
 李继刚（lijigang）的 23 个纯 Markdown prompt Skill，零代码，6k+ stars。核心设计不是工具堆叠，而是**认知工序流水线**：
+
+## 深度分析
 
 ### 流水线范式：制造业逻辑迁移到认知系统
 

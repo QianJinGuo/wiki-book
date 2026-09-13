@@ -1,6 +1,6 @@
 # 高德伴行Agent：空间智能高可用Agent架构
 
-> 📊 Level ⭐⭐⭐⭐ | 16.8KB | `entities/gaode-ai-companion-agent.md`
+> 📊 Level ⭐⭐⭐⭐ | 16.8KB
 
 > -> [原文存档](https://mp.weixin.qq.com/s/GKdhHtPDwHMFKQrB5hptZw)
 
@@ -82,6 +82,7 @@
 | L3 场景壁垒 | 事实一致性、空间约束满足、近场行动智能显著优势 |
 **本质链路**：统一时空状态感知"人在哪" → 工具化事实源锚定"可不可达" → ReAct推理编排"怎么做最优"
 
+## 深度分析
 ### 双内核架构的本质：可控自由度优先，而非最大自由度
 伴行Agent的架构选择揭示了一个在垂直场景Agent设计中容易被忽视的原则：**强通用能力不等于垂直场景好**。Claude-Opus-4.7在通用基准上顶级，但在空间领域的实际推理质量反而最低——因为它拥有过于强势的内置工具调用风格，在遵循垂直场景专属调用规范时表现较差。这告诉我们：在构建垂直Agent时，通用大模型的基准能力只是一个参考，不是决定因素。真正的评测维度是**场景专用的任务完成率**而非通用 benchmark 分数。
 
@@ -167,7 +168,7 @@ L3层（必要时）：确定性规则只在确实存在强绑定场景时才引
 ## 相关页面
 - [原文存档：高德伴行Agent技术解析](https://mp.weixin.qq.com/s/GKdhHtPDwHMFKQrB5hptZw)
 - [AI Skill进化框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-skill-evolution-framework.md)（Skill沉淀相关）
-- [Hermes Agent](../ch03/059-hermes-agent.html)（被本文分析对比）
+- Hermes Agent（被本文分析对比）
 
 ## 相关实体
 - [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-aimap-security-testing-for-ai-agent-bishop-fox.md)
@@ -175,7 +176,7 @@ L3层（必要时）：确定性规则只在确实存在强绑定场景时才引
 
 - [十年老技术开发的 AI Agent 探索之路](https://github.com/QianJinGuo/wiki-public/blob/main/entities/十年老技术开发的-ai-agent-探索之路-v2.md)
 - [要实现一个工作流选择-agent-skills-还是-ai-表格](https://github.com/QianJinGuo/wiki-public/blob/main/entities/要实现一个工作流选择-agent-skills-还是-ai-表格.md)
-- [ai agent memory systems](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-memory-systems.md)
+- ai agent memory systems
 
 ---
 

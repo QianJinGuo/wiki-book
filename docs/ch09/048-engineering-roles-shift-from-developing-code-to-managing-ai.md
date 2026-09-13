@@ -1,6 +1,6 @@
 # Engineering roles shift from developing code to managing AI | CIO Dive
 
-> 📊 Level ⭐⭐⭐ | 7.6KB | `entities/engineering-roles-shift-managing-ai.md`
+> 📊 Level ⭐⭐⭐ | 7.6KB
 
 ## 相关实体
 
@@ -20,6 +20,8 @@ CIO Dive 2026-05-14 报道 Harness 公司发布的《State of Engineering Excell
 - **测量框架过时**：Harness SVP Trevor Stuart 指出，行业仍依赖过去十年为瀑布式开发设计的 dashboards，无法衡量 AI 时代的工作单元。
 - **责任范围扩大**：工程岗现在需要承担代码质量与安全审查、下游结果问责、AI 信任判断等多重责任。
 - **可执行建议**：审计现有 framework 实际捕捉了什么 vs AI 实际产生了什么；加强 governance & security 评审；与开发者共建 measurement guardrails。
+
+## 深度分析
 
 ### 1. "看不见的工作"为什么让生产力指标失真
 
@@ -79,7 +81,7 @@ Harness 报告给出的建议可以归纳为四个层面：
 ## 关联实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md) — Karpathy 关于 AI 时代工程师角色转变的访谈
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/268-karpathy-vibe-coding-agentic-engineering.html) — Vibe Coding 到 Agentic Engineering 范式转变
+- Karpathy Vibe Coding Agentic Engineering — Vibe Coding 到 Agentic Engineering 范式转变
 - [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/两万字详解claude-code源码核心机制.md) — Claude Code 源码机制详解
 - [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md) — Agent 原理架构与工程实践
 - [构建基于多智能体架构的深度思考交易系统 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统-v2.md) — 多智能体交易系统架构

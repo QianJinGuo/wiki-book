@@ -1,6 +1,6 @@
 # Restrict Access to Sensitive Documents in Your Amazon Q S3 Knowledge Bases
 
-> 📊 Level ⭐⭐⭐⭐ | 18.8KB | `entities/restrict-access-to-sensitive-documents-in-your-amazon-q-s3-knowledge-bases.md`
+> 📊 Level ⭐⭐⭐⭐ | 18.8KB
 
 ## 概述
 
@@ -153,6 +153,8 @@ QuickSight **不实时监控 ACL 文件变更**。权限更新在下一次知识
 2. 启用 S3 versioning 保留变更历史
 3. 记录所有 ACL 变更到审计日志
 4. 定期（建议每季度）审查 ACL 配置的合理性
+
+## 深度分析
 
 ### 查询时评估将权限控制从"配置时"转化为"访问时"
 

@@ -1,6 +1,6 @@
 # Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 34.6KB | `entities/harness不是目的知识才是护城河-一个ai工程交付团队的知识沉淀实践.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 34.6KB
 
 ## 核心论点
 本文的核心论断是：**Harness Engineering 的最终目的不是工作流本身，而是团队知识的沉淀**。工作流是管道，知识是流过管道的活水。模型会迭代，工具链会更新，工作流会重构，但团队在特定业务领域积累的领域模型、架构决策、最佳实践、已知陷阱、业务流程——这些知识是永恒的护城河。
@@ -200,6 +200,7 @@ Agent 查询知识后，在输出产物中记录 `knowledgeReferences`。ARCHIVE
 ### 9.4 从"文件即状态"到"知识即资产"
 AI Team 的设计哲学：**文件系统即状态机**。所有状态、产物、知识都以文件形式存在，没有数据库、没有独立平台。这是刻意选择：可见性（Markdown 文件人可直接阅读）、可版本化（Git 管理）、可迁移性（不依赖特定平台）、IDE 原生（`.codebuddy/` 目录驱动）。
 
+## 深度分析
 ### 知识工程与 Harness Engineering 的互补关系
 从这篇文章可以清晰看到，**知识沉淀不是 Harness Engineering 的副产品，而是其核心目标之一**。文章揭示了一个重要事实：当前业界对 Harness Engineering 的关注过度集中在"工作流怎么编排"和"Agent 怎么协同"这些显性的工程话题上，而忽略了底层的知识基础设施。这种偏向导致许多团队搭建了复杂的 Agent 工作流，却没有形成知识闭环，最终每次都是从零开始。
 文章提出的"工作流是管道，知识是活水"这个比喻极具启发性。它提醒我们：Harness 工作流的设计不应该以工作流本身为目的，而应该以知识沉淀为目标。一个好的 Harness 系统，应该让每次工作流的执行都自动产生知识积累，让下一个工作流能够站在前人的肩上。
@@ -287,7 +288,7 @@ AI Team 的设计哲学：**文件系统即状态机**。所有状态、产物�
 - [你不知道的 Agent：原理、架构与工程实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/你不知道的-agent原理架构与工程实践.md)
 - [看 AgentRun 如何玩转记忆存储，最佳实践来了！](https://github.com/QianJinGuo/wiki-public/blob/main/entities/看-agentrun-如何玩转记忆存储最佳实践来了.md)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-to-agentic-engineering.md)
-- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/019-harness-engineering.html)
+- 一文带你弄懂 AI 圈爆火的新概念：Harness Engineering
 - [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](https://github.com/QianJinGuo/wiki-public/blob/main/entities/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验.md)
 - [Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering耗时一周我是如何将应用的ai-coding率提升至90的.md)
 - [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tencent-ai-team-knowledge-mgmt-harness-moat.md)- [Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tencent-knowledge-harness-practice.md)

@@ -1,6 +1,6 @@
 # AgentMemory：Coding Agent 本地记忆系统
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 17.0KB | `entities/agentmemory-coding-agent-local-memory.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 17.0KB
 
 ## 概述
 AgentMemory（rohitg00/agentmemory，npm: @agentmemory/agentmemory@0.9.20）不是又一个向量数据库包装器，而是一个**本地 Agent 记忆运行时**：把 hook 捕获、隐私过滤、观察记录、压缩、索引、检索、上下文注入、MCP 工具、REST API、viewer、审计和多 Agent 协作都放进了一个可启动的本地服务里。
@@ -106,7 +106,7 @@ combinedScore = bm25Weight*(1/(RRF_K+bm25Rank)) + vectorWeight*(1/(RRF_K+vectorR
 - 分析文章：AI贺贺（2026-05-19）
 
 ## Related
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/297-tencent-vibe-coding-to-agentic-engineering-backend.html)
+- 从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程
 
 - [Claude Code 源码核心机制详解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-core-internals.md)
 

@@ -1,6 +1,6 @@
 # Temporary Cloudflare Accounts for AI agents
 
-> 📊 Level ⭐⭐⭐⭐ | 7.6KB | `entities/cloudflare-temporary-accounts-ai-agents.md`
+> 📊 Level ⭐⭐⭐⭐ | 7.6KB
 
 ## 摘要
 
@@ -30,6 +30,8 @@ Cloudflare 在 Agent 部署领域的布局不止于临时账户：
 - **与 Stripe 合作** — 共同设计了一种协议，让 Agent 可以代表用户完成 Cloudflare 账户创建、订阅启动、域名注册和 API Token 获取，全程无需复制粘贴 Token 或输入信用卡信息
 - **与 WorkOS 合作 auth.md** — 基于现有 OAuth 标准，让 Agent 使用成熟的身份验证协议创建新账户
 - **isitagentready.com** — Cloudflare 推出的工具，帮助开发者评估自己的应用对 Agent 的友好程度
+
+## 深度分析
 
 ### Agent 基础设施的「零配置」范式
 

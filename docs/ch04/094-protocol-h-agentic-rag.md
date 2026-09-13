@@ -1,6 +1,6 @@
 # Protocol H：分层 Agentic RAG 企业架构
 
-> 📊 Level ⭐⭐⭐ | 17.6KB | `entities/protocol-h-hierarchical-agentic-rag-enterprise.md`
+> 📊 Level ⭐⭐⭐ | 17.6KB
 
 ## protocol-h-hierarchical-agentic-rag-enterprise
 > 原文: https://mp.weixin.qq.com/s/P-MnmnREgtiOq-DbHfDuVA

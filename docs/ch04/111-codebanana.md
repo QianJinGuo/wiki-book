@@ -1,6 +1,6 @@
 # 超级个体到超级组织：李志飞 CodeBanana 组织转型实践
 
-> 📊 Level ⭐⭐⭐ | 12.5KB | `entities/super-individual-to-super-organization-tencent-research-2026.md`
+> 📊 Level ⭐⭐⭐ | 12.5KB
 
 腾讯研究院「AI 跃迁者调研」第五期访谈出门问问创始人兼 CEO 李志飞。他从 2025 年端午节用 Cursor 三天写出近 20 万行代码（「AI 版飞书」原型）出发，经历「个人产能爆棚 → 组织完全跟不上」的痛苦，用近一年时间推动组织转型，自研 CodeBanana 作为组织操作系统。本文提炼了超级个体天花板、CodeBanana 架构、全栈转型铁律、系统设计师角色、延迟满足感等核心洞察。
 
@@ -26,8 +26,10 @@ CodeBanana 是李志飞自研的组织操作系统，核心理念：**沟通在�
 
 - [Harness Engineering 范式 — 综合性概念解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-paradigm-comprehensive-2026.md) — CodeBanana 是组织级 Harness 系统的一个具体实现案例
 - [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](https://github.com/QianJinGuo/wiki-public/blob/main/entities/从-anthropic-到-googleagent-skills-正在进入设计模式阶段.md) — CodeBanana 的 Skill 商店是 Agent Skill 生态在组织场景的应用实例
-- [Hermes Agent](../ch03/059-hermes-agent.html) — CodeBanana 的 Skill 系统和 Agent 管理具象化了 Hermes 之类 Agent 系统的组织级部署
+- Hermes Agent — CodeBanana 的 Skill 系统和 Agent 管理具象化了 Hermes 之类 Agent 系统的组织级部署
 - [Claude Code 一周年回顾](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-first-year-retrospective-boris-cat-2026.md) — 李志飞的「不允许手写代码」转型与 Claude Code/Agent 编码实践的呼应
+
+## 深度分析
 
 ### 从「超级个体」到「超级组织」的认知陷阱
 

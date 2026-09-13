@@ -1,6 +1,6 @@
 # Qoder Skills 完全指南 + Agent Skill 迭代式编写 — AI 按你的标准执行
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 35.1KB | `entities/qoder-skills-完全指南从零开始让-ai-按你的标准执行-v2.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 35.1KB
 
 ## 核心概念
 Qoder Skills 是 AI 工作流定制的基础设施，它解决了一个根本性问题：**如何让 AI 按你的标准稳定执行，而非每次凭"直觉"自由发挥**。
@@ -174,6 +174,7 @@ git push  # 团队成员 git pull 后立即生效
 ```
 ---
 
+## 深度分析
 ### Skill 作为人机协作的"契约层"
 Qoder Skills 的本质价值在于它建立了一个人机协作的**契约层（Contract Layer）**。在传统 Prompt Engineering 范式中，每次对话都是一次独立的"谈判"——AI 凭上下文理解执行，结果依赖随机性。而 Skill 将协作标准外部化、持久化，变成可版本控制、可复用的资产。
 这个契约层有三个关键属性：
@@ -363,8 +364,8 @@ skills.sh 提供了配套的 skill 管理工具。多人协作时，可在 code 
 - [十年老技术开发的 AI Agent 探索之路](https://github.com/QianJinGuo/wiki-public/blob/main/entities/十年老技术开发的-ai-agent-探索之路-v2.md)
 - [从 Anthropic 到 Google：Agent Skills 进入设计模式阶段](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-google-agent-skills-design-patterns.md)
 - [Garry Tan](https://github.com/QianJinGuo/wiki-public/blob/main/entities/garry-tan-yc-ceo.md)
-- [Agent Workflows](332-agent-workflows.html)
-- [Hermes Agent](../ch03/059-hermes-agent.html)
+- Agent Workflows
+- Hermes Agent
 - [Hermes Agent 新手上手指南](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/hermes-agent-onboarding.md)
 - [Mythos for Offensive Security: XBOW's Evaluation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mythos_offensive_security_xbow_evaluatio.md)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/hermes-agent-skill.md)

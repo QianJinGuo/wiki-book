@@ -1,6 +1,6 @@
 # Build an AI-Powered Equipment Repair Assistant Using Amazon Bedrock AgentCore
 
-> 📊 Level ⭐⭐⭐⭐ | 10.7KB | `entities/build-an-ai-powered-equipment-repair-assistant-using-amazon-.md`
+> 📊 Level ⭐⭐⭐⭐ | 10.7KB
 
 > 原文存档：[原文存档](https://aws.amazon.com/blogs/machine-learning/build-an-ai-powered-equipment-repair-assistant-using-amazon-bedrock-agentcore)
 
@@ -51,6 +51,8 @@ def search_equipment_knowledge(query: str) -> str:
 7. 模型综合诊断响应，包含维修流程和零件建议
 8. 响应返回给技术人员，附带源归属信息以供验证
 
+## 深度分析
+
 ### AgentCore Runtime 的单端点架构价值
 
 传统的 Agent 部署通常需要 API Gateway + Lambda + Bedrock Agent 等多个服务的组合，而 AgentCore Runtime 将这些能力收敛为单一端点。这不仅简化了部署流程，还降低了运维复杂度——一个 Runtime 端点同时处理 AI 查询和 CRUD 操作，内置会话管理和健康检查。对于像设备维修这类需要同时操作知识检索和工单管理的场景，这种统一入口设计显著减少了服务间的协调开销。
@@ -81,10 +83,10 @@ Strands Agent 的 `@tool` 装饰器模式使得能力扩展无需基础设施变
 
 ## 相关实体
 
-- [Building Web Search Enabled Agents With Strands And Exa](065-building-web-search-enabled-agents-with-strands-and-exa.html) — Strands SDK 构建搜索 Agent 的实践
+- Building Web Search Enabled Agents With Strands And Exa — Strands SDK 构建搜索 Agent 的实践
 - [Enterprise Intelligent Data Query Solution Practice Based On Strands Sdk](https://github.com/QianJinGuo/wiki-public/blob/main/entities/enterprise-intelligent-data-query-solution-practice-based-on-strands-sdk.md) — Strands SDK 企业级数据查询方案
 - [Agentcore Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentcore-harness.md) — AgentCore 工程化实践
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](148-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html) — AgentCore 安全认证流程
+- Building A Secure Auth Code Flow Setup Using Agentcore Gatew — AgentCore 安全认证流程
 - [Aws Bedrock Agentcore Doris Mcp Server](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-agentcore-doris-mcp-server.md) — AgentCore + MCP Server 集成
 - "RAG 进阶技术" — RAG 高级模式
 - "Agent 部署策略" — Agent 部署策略

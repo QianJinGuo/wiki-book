@@ -1,6 +1,6 @@
 # CMU PACE — Proxy for Agentic Capability Evaluation
 
-> 📊 Level ⭐⭐⭐ | 6.7KB | `entities/cmu-pace-proxy-agent-evaluation-cheap.md`
+> 📊 Level ⭐⭐⭐ | 6.7KB
 
 > PACE 从 19 个便宜原子评测里自动挑出 100 道题，花不到完整 Agent 评测 **1% 的成本**，就能预测 GAIA、SWE-Bench 等四项基准的模型得分。留一交叉验证平均误差 3.80%，两两排序准确率约 84%。
 
@@ -11,6 +11,8 @@
 3. **双目标任务**：同时预测绝对分数（回归）和模型排序（分类），满足不同评估需求
 4. **能力指纹揭示**：选出的题目揭示了各 Agent 基准的能力需求分布，如 GAIA 偏好指令遵循，SWE-Bench 需要规划+代码生成+验证
 5. **开源可用**：论文、代码和数据集均在 GitHub 和 HuggingFace 公开发布
+
+## 深度分析
 
 ### 代理评测的底层逻辑：能力维度的可迁移性
 

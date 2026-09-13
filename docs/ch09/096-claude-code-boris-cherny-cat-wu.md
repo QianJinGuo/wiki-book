@@ -1,6 +1,6 @@
 # Claude Code 一周年回顾：Boris Cherny + Cat Wu 的完整时间线
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 26.5KB | `entities/claude-code-first-year-retrospective-boris-cat-2026.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 26.5KB
 
 ## 摘要
 
@@ -13,6 +13,8 @@
 3. **Routines 让 Claude 从同步工具变成异步基础设施**：当 Claude 可以监听 GitHub issues 并自动提交修复 PR 时，工程师的角色从「执行者」变成「编排者」
 4. **Auto Mode 反直觉的安全性论证**：把安全审查委托给 Sonnet 4.6 模型而非让用户逐条点同意，实际上更安全——「人的本性就是这样，当你 99% 的请求都点同意时，眼睛就走神了」
 5. **一年后的使用方式肯定跟现在完全不同**：Agent 运行时间越来越长，越来越自主，同时运行成百上千个 Agent 早就不稀奇，Claude Code 的形态一年后必然面目全非
+
+## 深度分析
 
 ### 01 两个赞的起点：起点低不是坏事
 

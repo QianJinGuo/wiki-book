@@ -1,12 +1,13 @@
 # Form-Over-Function Mistakes, or How Not to Harm Your Business With a Pretty Interface.
 
-> 📊 Level ⭐⭐⭐ | 6.3KB | `entities/blog.tubikstudio.com-form-over-function-mistakes.md`
+> 📊 Level ⭐⭐⭐ | 6.3KB
 
 ## 核心要点
 - 核心论点：形式服务于功能，而不是替代功能
 - 三大案例：Windows 8（功能缺失）、Apple AI Summaries（幻觉输出）、Twitter/X（品牌认知断裂）
 - 设计三步骤：先问题、后功能、再 UI
 
+## 深度分析
 ### 1. "UI 快餐"模式的系统性风险
 文章提出的"UI 快餐"（UI fast food）概念精准描述了一种组织病理：**短期满足感驱动长期技术债务**。当团队"先做漂亮界面，功能以后再说"时，实际上是在做以下决策：
 
@@ -69,7 +70,7 @@ Information Architecture（信息架构）和用户旅程是设计阶段中 ROI 
 文章提出一个被低估的观点：设计师的真正职责是保护客户不犯他们自己不知道会犯的错误。这要求设计师有勇气在关键时刻说"不"，而不是追求短期的 stakeholder approval。
 ## 相关实体
 - [Icon Pack Websites Designers Should Bookmark](https://github.com/QianJinGuo/wiki-public/blob/main/entities/icon-pack-websites-designers-should-bookmark.md)
-- [Designing Small Is Harder Than Designing Big Ux Magazine](029-designing-small-is-harder-than-designing-big-ux-magazine.html)
+- Designing Small Is Harder Than Designing Big Ux Magazine
 - [Spotify Llm Evals Funnel Not Fork](https://github.com/QianJinGuo/wiki-public/blob/main/entities/spotify-llm-evals-funnel-not-fork.md)
 - [Build Ai Agents For Business Intelligence With Amazon Bedrock Agentcore](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-ai-agents-for-business-intelligence-with-amazon-bedrock-agentcore.md)
 - [Nvidia Mcg Toolkit Model Documentation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-mcg-toolkit-model-documentation.md)

@@ -1,6 +1,6 @@
 # Evaluate your Amazon Nova Sonic voice agent at scale, no microphone required
 
-> 📊 Level ⭐⭐⭐ | 14.6KB | `entities/evaluate-amazon-nova-sonic-voice-agent-scale-no-mic.md`
+> 📊 Level ⭐⭐⭐ | 14.6KB
 
 > **Source archive**: [原文存档](https://aws.amazon.com/blogs/machine-learning/evaluate-your-amazon-nova-sonic-voice-agent-at-scale-no-microphone-required)
 
@@ -17,7 +17,7 @@ This testing gap creates two critical problems for teams building voice applicat
 
 If you have 50 conversation scenarios across 3 user personas, you’re looking at 150 manual tests, each taking several minutes of real-time interaction. Run that after every prompt change and you will burn days on QA.
 
-In this post, we walk you through the [Nova Sonic Test Harness](<https://github.com/aws-samples/sample-amazon-nova-sonic-eval-harness>), an open source framework that we built to solve both problems. It serves as a rapid iteration tool for tuning system prompts and tool configurations (run a conversation, see results, adjust, repeat) and as a comprehensive evaluation framework for validating voice agent quality at scale. It runs complete multi-turn conversations with [Amazon Nova Sonic](<https://docs.aws.amazon.com/nova/latest/userguide/speech.html>) automatically, evaluates them using LLM-as-judge techniques, and can even detect cases where the model’s audio output doesn’t match its text output (audio hallucinations). No microphone required.
+In this post, we walk you through the Nova Sonic Test Harness, an open source framework that we built to solve both problems. It serves as a rapid iteration tool for tuning system prompts and tool configurations (run a conversation, see results, adjust, repeat) and as a comprehensive evaluation framework for validating voice agent quality at scale. It runs complete multi-turn conversations with Amazon Nova Sonic automatically, evaluates them using LLM-as-judge techniques, and can even detect cases where the model’s audio output doesn’t match its text output (audio hallucinations). No microphone required.
 
 ## Why speech-to-speech testing is different
 

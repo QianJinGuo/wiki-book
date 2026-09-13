@@ -1,6 +1,6 @@
 # Codex 5.21 更新：AI 编程助手开始变成电脑工作代理
 
-> 📊 Level ⭐⭐⭐⭐ | 8.4KB | `entities/openai-codex-521-update-appshots-goal-computer-use.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.4KB
 
 → [原文存档](https://mp.weixin.qq.com/s/7zVSmiL8gmLfhbKVRhe5iQ)
 
@@ -14,6 +14,8 @@ Codex 5.21 把 Appshots（Mac 窗口截图直传）、`/goal` 目标模式、浏
 - **`/goal` 模式把 AI 从"问答机器人"切换到"目标执行者"**：定义目标 + 范围 + 验收 + 边界，让 Codex 围绕目标持续推进而非"聊散"
 - **锁屏后继续工作补齐"远程执行"最后一公里**：可信任务在受控授权窗口内不因锁屏中断，手机端可查看进度
 - **真正信号**：人从"逐步指挥"变成"设目标和把关"，AI 编程助手从代码生成器演化为电脑工作代理
+
+## 深度分析
 
 ### 四块拼图不是简单功能叠加，而是"端到端代理闭环"成型
 
@@ -80,7 +82,7 @@ Codex 5.21 让 Agentic Engineering 真正可行——之前所有"AI 代理"工�
 - [Kimi Work Codex Vibe Working Paradigm Shift](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kimi-work-codex-vibe-working-paradigm-shift.md)
 - [Andrej Karpathy Claude Md 134K Stars 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/andrej-karpathy-claude-md-134k-stars-2026.md)
 - [Agent Self Improvement Six Mechanisms](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-self-improvement-six-mechanisms.md)
-- [Codex Goal Six Hour Run](078-codex-goal-six-hour-run.html)
+- Codex Goal Six Hour Run
 - [Four Sub Agent Patterns](https://github.com/QianJinGuo/wiki-public/blob/main/entities/four-sub-agent-patterns.md)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md)
 

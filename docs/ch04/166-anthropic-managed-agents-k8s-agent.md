@@ -1,6 +1,6 @@
 # Anthropic Managed Agents：用 K8s 思路虚拟化 Agent 组件
 
-> 📊 Level ⭐⭐⭐ | 8.6KB | `entities/anthropic-managed-agents-scaling.md`
+> 📊 Level ⭐⭐⭐ | 8.6KB
 
 ## anthropic-managed-agents-scaling
 
@@ -16,11 +16,12 @@
 - [Anthropic Claude Managed Agents Platform 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-claude-managed-agents-platform-2026.md)
 - [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-managed-agents-self-hosted-sandbox-mcp-tunnels-enterprise.md)
 - [From Prompt To Harness Claude Official](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-prompt-to-harness-claude-official.md)
-- [Anthropic Demystifying Evals For Ai Agents](068-anthropic-demystifying-evals-for-ai-agents.html)
+- Anthropic Demystifying Evals For Ai Agents
 
 → [原文存档](https://mp.weixin.qq.com/s/gkTsLXiGOHmracA0JpKPEQ)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/prompt-engineering-guide.md)
+## 深度分析
 
 ### 从宠物到牛群：Agent 架构范式转移
 

@@ -1,6 +1,6 @@
 # MUSE-Autoskill：字节 ByteBrain 自进化 Agent 五阶段技能生命周期，arXiv 2605.27366
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 24.7KB | `entities/muse-autoskill-bytebrain-self-evolving-agent-arxiv-2605-27366.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 24.7KB
 
 ## 概述
 
@@ -253,6 +253,8 @@
 
 - [language models need sleep: arxiv 2606.03979 持续学习 2 阶段范式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/arxiv-2606-03979-language-models-need-sleep.md)
 - [skill 产品哲学：歸藏做了爆款 skill 后的产品反思](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-product-philosophy-guicang-爆款经验-2026-06-12.md)
+
+## 深度分析
 
 ### 技能生命周期作为 Agent 系统工程的最小可行单元
 

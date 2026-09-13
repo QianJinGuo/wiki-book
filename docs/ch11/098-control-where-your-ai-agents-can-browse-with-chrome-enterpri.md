@@ -1,6 +1,6 @@
 # Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore
 
-> 📊 Level ⭐⭐⭐ | 8.6KB | `entities/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazo.md`
+> 📊 Level ⭐⭐⭐ | 8.6KB
 
 > 来源：[原文存档](https://aws.amazon.com/blogs/machine-learning/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazon-bedrock-agentcore/)
 
@@ -10,6 +10,7 @@
 - 支持自定义根 CA 证书，解决内部服务使用私有 PKI 的连接问题
 - 架构通过 S3 存储策略 JSON + Secrets Manager 管理证书，实现声明式配置
 
+## 深度分析
 ### AI Agent 浏览器控制的必要性
 AI Agent 获得 web 浏览能力后，安全边界变得模糊。传统网络安全边界无法覆盖 AI Agent 的动态行为——Agent 可能根据 prompt 导航到未授权域名、在浏览器中存储凭据、或下载恶意文件。Chrome Enterprise Policies 提供了一种独立于 Agent 逻辑的防御层。
 

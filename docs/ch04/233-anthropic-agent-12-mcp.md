@@ -1,6 +1,6 @@
 # Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式
 
-> 📊 Level ⭐⭐⭐⭐ | 29.0KB | `entities/anthropic-12-mcp-production-patterns.md`
+> 📊 Level ⭐⭐⭐⭐ | 29.0KB
 
 - URL: https://mp.weixin.qq.com/s/dd_yVuyLiO5avvivvFl5Zw
 - Author: 技术博客（整理自 Anthropic 官方文档 + Claude Code 源码）
@@ -176,6 +176,7 @@ Anthropic 原文提到：Canva、Notion、Sentry 等已经在 Claude 中把 Skil
 - [9] 12 MCP Patterns Behind Production Agents: https://generativeprogrammer.com/p/12-mcp-patterns-behind-production
 - [10] Writing tools for agents: https://www.anthropic.com/engineering/writing-tools-for-agents
 
+## 深度分析
 ### 一、模式结构的全局视角
 这12个模式并非孤立存在，它们构成了一条完整的 Agent-to-System 连接链。**第一组（工具交互面）**解决的是「连接形态」问题——Server 跑在哪、工具怎么封装、API 面多大；**第二组（交互语义）**解决的是「用户体验」问题——结果怎么呈现、输入怎么获取、敏感流程怎么交接；**第三组（认证与凭证）**解决的是「安全边界」问题；**第四组（上下文经济）**解决的是「成本效率」问题；**第五组（打包分发）**解决的是「交付形态」问题。这五组形成一个从底层基础设施到顶层产品交付的完整分层架构。
 理解这个分层架构的价值在于：团队在设计 MCP 集成时，不会把所有模式一股脑套用上去。例如一个内部 B2B SaaS 工具（API 面不大但任务固定），重点应该在第一组和第三组；第二组的高成本 UX 设计反而是累赘。反之，对外 SaaS 产品（用户类型多样、任务不固定），第二组和第五组就成了核心投入。

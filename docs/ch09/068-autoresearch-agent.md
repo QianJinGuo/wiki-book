@@ -1,6 +1,6 @@
 # AutoResearch：多 Agent 自动化软件开发
 
-> 📊 Level ⭐⭐⭐⭐ | 14.7KB | `entities/autoresearch-multi-agent-software.md`
+> 📊 Level ⭐⭐⭐⭐ | 14.7KB
 
 ## 核心命题
 Karpathy AutoResearch 把 ML 研究变成"写 train.py → 跑 5 分钟实验 → val loss 改善才保留"的自动循环。本项目将此方法迁移到软件开发：GitHub Issue → 多 Agent 交叉审核 → 5 维度量化评分达标 → 自动 PR + 合并。约 10 分钟完成中等复杂度 Issue，全程零人工干预。
@@ -86,6 +86,7 @@ Phase 4: 记录归档
 - **AIDE 三算子**：Draft（从零生成全新方案）、Debug（修复 bug 节点）、Improve（对已运行节点做 atomic improvement）
 **合并判断：** 现有 entity 专注软件工程实现，本篇补充 ML/AI 研究前沿的 AutoResearch 方法论全景，两者互补。merge 后完整覆盖"软件工程实现 + ML研究方法论"两个维度。
 
+## 深度分析
 ### 1. AutoResearch 本质：量化目标驱动的自主循环
 Karpathy AutoResearch 的核心是把"什么是改进"量化成 val loss，只有改善才保留，否则 git revert。迁移到软件开发后，本项目用 5 维度加权评分（≥ 9.0/10）替代单一 metric，本质上做的是同一件事——**把质量判断从主观变成可计算的数字**。
 
@@ -137,10 +138,10 @@ API 不稳定时的指数退避+随机抖动（最大 60 秒、最多 10 次重�
 - [factory mission multi agent architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/factory-mission-multi-agent-architecture.md)
 - [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [OpenClaw 多智能体团队搭建实战经验](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-multi-agent-team-practice.md)
-- [龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验](../ch04/348-openclaw-multi-agent-team-practice-v2.html)
+- 龙虾装上了可以用来干啥 - OpenCLAW 多智能体团队搭建经验
 - [Claude Code 可控性：软规则无法变成硬约束](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-governance-soft-rules.md)
 - [claude-code-agent-view](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-agent-view.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/107-claude-code-harness-deep-understanding.html)
+- 深入理解 Claude Code 源码中的 Agent Harness 构建之道
 - [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-20000-char-source-analysis.md)
 - [Claude Code 设计原则与对照分析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-architecture-analysis.md)
 - [Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-large-codebase-enterprise-deployment.md)

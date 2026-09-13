@@ -1,6 +1,6 @@
 # Doris MCP on AgentCore Runtime: VPC原生MCP部署模式
 
-> 📊 Level ⭐⭐⭐ | 11.1KB | `entities/aws-bedrock-agentcore-doris-mcp-server.md`
+> 📊 Level ⭐⭐⭐ | 11.1KB
 
 ## 核心内容
 Apache Doris通过MCP协议部署在Amazon Bedrock AgentCore Runtime上，实现VPC内原生运行、Cognito OAuth认证、按需付费（$0.3/天）。Agent可直接通过MCP调用Doris执行SQL分析，无需数据迁移。
@@ -20,6 +20,7 @@ Doris MCP server运行在客户VPC内，数据不出VPC，满足数据主权要�
 - → OS-level Actions：Doris MCP是数据层操作，OS-level Actions是界面层操作，共同构成Agent的全栈能力
 ---
 
+## 深度分析
 ### 1. 懒初始化的"无服务器+有状态"架构哲学
 MCP Server 在 AgentCore Runtime 启动时采用懒初始化（Lazy Initialization）：模块加载阶段只注册 25 个工具的函数签名（名字、参数、描述），不建立任何数据库连接——这一步在毫秒级完成，轻松通过健康检查；首次工具调用时才真正初始化 `DorisToolsManager`、建立 aiomysql 连接池。如果启动阶段就连 Doris，一旦网络抖动或 Doris 临时不可用，Runtime 会误判为部署失败触发回滚。"启动即连库"是此类场景的反模式。
 
@@ -57,7 +58,7 @@ Quick Suite 通过 Client ID + Client Secret 向 Cognito 的 `/oauth2/token` 换
 → C4 架构图
 
 ## 相关实体
-- [AgentCore质量优化飞轮：推荐-验证-部署闭环](../ch11/095-aws-bedrock-agentcore-quality-optimization-flywheel.html)
+- AgentCore质量优化飞轮：推荐-验证-部署闭环
 - [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-agentcore-identity-security.md)
 - [AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-agentcore-os-level-actions-browser.md)
 - [AgentCore Runtime部署Apache Doris MCP Server](https://github.com/QianJinGuo/wiki-public/blob/main/entities/runtime-deploy-apache-doris-mcp-server-quick-suite-ai-analytics.md)
@@ -83,7 +84,7 @@ Quick Suite 通过 Client ID + Client Secret 向 Cognito 的 `/oauth2/token` 换
 - [Enable Safe Agentic Payments With Built In Guardrails Using ](https://github.com/QianJinGuo/wiki-public/blob/main/entities/enable-safe-agentic-payments-with-built-in-guardrails-using-.md)
 - [让 Amazon Quick 操作飞书构建远程 Mcp 服务的设计实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/让-amazon-quick-操作飞书构建远程-mcp-服务的设计实践.md)
 - [Bedrock Agentcore Secrets Manager Identity](https://github.com/QianJinGuo/wiki-public/blob/main/entities/bedrock-agentcore-secrets-manager-identity.md)
-- [Extending Mcp Support For Amazon Bedrock Agentcore Gateway](../ch11/125-extending-mcp-support-for-amazon-bedrock-agentcore-gateway.html)
+- Extending Mcp Support For Amazon Bedrock Agentcore Gateway
 - [Evaluate Your Amazon Nova Sonic Voice Agent At Scale No Micr](https://github.com/QianJinGuo/wiki-public/blob/main/entities/evaluate-your-amazon-nova-sonic-voice-agent-at-scale-no-micr.md)
 - [Its Safe To Close Your Laptop Now Hosting Coding Agents On A](https://github.com/QianJinGuo/wiki-public/blob/main/entities/its-safe-to-close-your-laptop-now-hosting-coding-agents-on-a.md)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)

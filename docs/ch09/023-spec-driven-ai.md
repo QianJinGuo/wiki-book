@@ -1,6 +1,6 @@
 # Spec-Driven AI 编程半年实战 — 有损管道、三工具比较与三大认知陷阱
 
-> 📊 Level ⭐⭐ | 4.1KB | `entities/spec-driven-development-cognitive-framework.md`
+> 📊 Level ⭐⭐ | 4.1KB
 
 > 百人级互联网前后端团队半年 SDD 实践。核心洞察：**"有损管道"** 框架 + 三大工具的 **结构性代价** 对比 + **认知陷阱**。[^1]
 
@@ -18,7 +18,7 @@ AI 时代软件开发的核心矛盾变了：不是写不出代码，是**没人
 | Vibe Coding | 无 | 损耗裸奔 |
 | **SDD** | **spec** | **显式定位 + 人审** |
 
-与 [Harness Engineering](../ch05/019-harness-engineering.html) 互补——该实体是 Harness 工程框架，本实体是 **Spec 层的认知与选型理论**。
+与 Harness Engineering 互补——该实体是 Harness 工程框架，本实体是 **Spec 层的认知与选型理论**。
 
 ## Spec 的定义
 

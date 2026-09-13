@@ -1,6 +1,6 @@
 # Regression Tax: 技能包导致 Agent 性能退化的系统性分析
 
-> 📊 Level ⭐⭐ | 9.5KB | `entities/regression-tax-skills-hurt-llm-agents.md`
+> 📊 Level ⭐⭐ | 9.5KB
 
 ## 核心概念
 
@@ -29,6 +29,8 @@ Osmosis 具有双向性：在低调用率的栈上，未调用的技能带来更
 
 - OfficeQA-Pro：持续失败的任务根源集中于输入环节（读了错误数据源）
 - SpreadsheetBench：34% 失败任务的公式逻辑正确，失败原因在于验证环节存在问题
+
+## 深度分析
 
 ### 三种机制的因果层次并不在同一平面上
 

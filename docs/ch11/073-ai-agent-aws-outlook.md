@@ -1,6 +1,6 @@
 # 用 AI Agent 自动化日常办公工作流 — 在 AWS 上构建 Outlook 邮件助手
 
-> 📊 Level ⭐⭐⭐ | 10.3KB | `entities/outlook-ai-agent-aws-fargate-claude-agent-sdk.md`
+> 📊 Level ⭐⭐⭐ | 10.3KB
 
 > **Background**: 中国区企业的 AI Agent 办公自动化方案。Agent 运行时基于 Claude Agent SDK 部署在 AWS Fargate，Skill 文件描述业务流程，MCP 封装外部系统，模型层通过硅基流动 SiliconFlow 接入（Bedrock 在中国区尚未提供）。
 
@@ -71,9 +71,11 @@
 
 → [原文存档](https://aws.amazon.com/cn/blogs/china/ai-agent-automation-workflow-aws-build-outlook-assistant/)
 
+## 深度分析
+
 ### 1. Skill 文件作为业务语言层的架构意图
 
-Skill 层用 Markdown 描述业务流程，其核心设计意图是在工程层与业务层之间建立一个可直接沟通的中间层。这一层使非技术背景的业务同事能够独立调整自动化流程，而无需触及代码或重新部署服务。从工程角度看，这是一种职责分离（separation of concerns）实践：底层 API 调用相对稳定，而业务流程变化频繁。将流程定义从代码层抽离到 Markdown 文件，既降低了流程变更的操作成本，也使得同一份 Skill 可以在不同模型之间移植时保持行为基本一致。这种设计思路与 [Harness Engineering](../ch05/019-harness-engineering.html) 框架中"慢知识"（静态版本化知识）的概念相呼应 — Skill 文件本质上是结构化的业务知识载体，而非运行时逻辑。
+Skill 层用 Markdown 描述业务流程，其核心设计意图是在工程层与业务层之间建立一个可直接沟通的中间层。这一层使非技术背景的业务同事能够独立调整自动化流程，而无需触及代码或重新部署服务。从工程角度看，这是一种职责分离（separation of concerns）实践：底层 API 调用相对稳定，而业务流程变化频繁。将流程定义从代码层抽离到 Markdown 文件，既降低了流程变更的操作成本，也使得同一份 Skill 可以在不同模型之间移植时保持行为基本一致。这种设计思路与 Harness Engineering 框架中"慢知识"（静态版本化知识）的概念相呼应 — Skill 文件本质上是结构化的业务知识载体，而非运行时逻辑。
 
 ### 2. MCP 协议作为企业级异构系统接入标准的价值
 

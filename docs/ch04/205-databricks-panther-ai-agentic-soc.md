@@ -1,6 +1,6 @@
 # Databricks 收购 Panther：AI 驱动的 Agentic SOC 安全运营
 
-> 📊 Level ⭐⭐⭐ | 7.2KB | `entities/databricks-panther-ai-threat-detection.md`
+> 📊 Level ⭐⭐⭐ | 7.2KB
 
 > **Background**：本文基于 TechMonitor 2026-06-17 报道，综合 Databricks Lakewatch 安全湖仓架构 + Panther agentic SOC 平台的收购整合细节。
 

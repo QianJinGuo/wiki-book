@@ -1,6 +1,6 @@
 # Adobe Marketing Agent 与 Amazon Quick MCP 集成实战
 
-> 📊 Level ⭐⭐⭐ | 7.4KB | `entities/adobe-marketing-agent-amazon-quick-mcp-integration.md`
+> 📊 Level ⭐⭐⭐ | 7.4KB
 
 > **来源**: AWS Machine Learning Blog · Ebbey Thomas, Siddhartha Srivastava, Ranjith Raman, Eugene Thomas · 2026-06-19
 
@@ -17,6 +17,8 @@ Adobe Marketing Agent 通过 MCP (Model Context Protocol) 协议与 Amazon Quick
 3. **端到端治理控制**：最小权限、租户隔离、审计日志、Schema 版本控制、人工审核——贯穿请求全链路
 4. **45-60 分钟快速接入**：配置 MCP 集成 → 认证 → 工具发现 → 创建 chat agent → 验证
 5. **读写分离的权限模型**：Read Operations 可自动执行，Write Operations 默认需人工批准
+
+## 深度分析
 
 ### 架构设计
 
@@ -96,7 +98,7 @@ Adobe Marketing Agent 通过 MCP (Model Context Protocol) 协议与 Amazon Quick
 
 ## 相关实体
 
-- [Amazon Bedrock AgentCore Web Search](388-amazon-bedrock-agentcore-web-search-ga.html)
+- Amazon Bedrock AgentCore Web Search
 
 ---
 ## 关联

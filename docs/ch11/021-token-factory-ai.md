@@ -1,6 +1,6 @@
 # 科大讯飞星火Token Factory：企业AI模型路由与成本管理统一中间层
 
-> 📊 Level ⭐⭐ | 8.5KB | `entities/xunfei-spark-token-factory-model-routing-cost.md`
+> 📊 Level ⭐⭐ | 8.5KB
 
 > WAIC 2026 上，科大讯飞星火企业军团发布了「星火Token Factory」——横在企业业务与大模型之间的统一中间层，涵盖智能模型路由、语义缓存、Prompt压缩、上下文裁剪、推理引擎优化（特别面向国产昇腾芯片）以及全链路可观测运营。
 
@@ -105,7 +105,7 @@
 - [AI Coding Agent Token 成本控制五层模型](https://github.com/QianJinGuo/wiki-public/blob/main/entities/token-cost-control-coding-agent-devinyzeng-tencent.md) — Token成本工程化的五层优化模型，侧重AI Coding场景
 - [AI Gateways vs MCP Gateways](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-gateways-vs-mcp-gateways-what-security-teams-need-to-know.md) — AI网关在推理路由与成本控制中的定位分析
 - [LLM 缓存原理与实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-prefix-caching-comprehensive-guide.md) — 语义缓存/Prefix Caching的技术原理深化
-- [State of Routing in Model Serving](117-state-of-routing-in-model-serving.html) — Netflix模型服务路由架构演进
+- State of Routing in Model Serving — Netflix模型服务路由架构演进
 
 ---
 

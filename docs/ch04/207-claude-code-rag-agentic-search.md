@@ -1,6 +1,6 @@
 # Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search
 
-> 📊 Level ⭐⭐⭐ | 6.9KB | `entities/claude-code开发负责人-为何放弃rag而选择agentic-search.md`
+> 📊 Level ⭐⭐⭐ | 6.9KB
 
 → [原文存档](https://x.com/bcherny/status/2017824286489383315)
 
@@ -19,6 +19,8 @@ Boris Cherny（Claude Code 开发负责人）在 X 上分享了 Anthropic 在 Cl
 4. **Agentic Search 的局限性** — 在简单问题上比 RAG 更慢、更消耗 Token。对于"已知答案在某个文档中"的简单查找场景，RAG 的效率优势仍然明显。
 
 5. **Agentic RAG 混合方案** — 将不同领域的 RAG 检索作为 Tools，让 Agent 决定何时检索、是否需要多轮检索。这种方案结合了 RAG 的效率和 Agentic Search 的推理能力，是务实的工程选择。
+
+## 深度分析
 
 ### RAG vs Agentic Search 的本质差异
 
@@ -70,7 +72,7 @@ Claude Code 本身就是一个高度 Agent Harness 化的系统——它给模�
 - Agent Harness
 - Agent 记忆系统
 - [Claude Code 源码分析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/两万字详解claude-code源码核心机制.md)
-- [Karpathy: Agentic Engineering](268-karpathy-vibe-coding-agentic-engineering.html)
+- Karpathy: Agentic Engineering
 
 ---
 

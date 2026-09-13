@@ -1,6 +1,6 @@
 # Cat Wu: Anthropic Claude Code/Cowork 产品负责人访谈
 
-> 📊 Level ⭐⭐⭐ | 12.2KB | `entities/cat-wu-anthropic-pm-interview.md`
+> 📊 Level ⭐⭐⭐ | 12.2KB
 
 ## 核心洞察
 ### 速度来源 = 流程 + 使命，不只是 Mythos
@@ -116,6 +116,7 @@ Cat 常用策略：问模型"你为什么这么做？"
 5. 找到重复性工作，交给 AI，迭代到 100%
 6. 接受发布有 Bug 的功能，快速获取反馈迭代
 
+## 深度分析
 ### 流程作为竞争优势
 Anthropic 的高发布速度并非源于 Mythos 模型的神秘力量，而是源于**流程精简**——移除一切发布障碍，让每个团队成员能在一天内把想法变成生产就绪的产品。这意味着他们建立了**信任架构**：相信员工会做正确的事，同时建立防护栏防止灾难。这种文化允许快速实验和快速失败。
 
@@ -166,7 +167,7 @@ Anthropic 的使命是"为全人类带来安全 AGI"。这个使命不仅是宣�
 - [Claude Code Large Codebase Enterprise Deployment](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-large-codebase-enterprise-deployment.md)
 - [Claude Code Openclaw Memory Vector Db Doubt](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-openclaw-memory-vector-db-doubt.md)
 - [Anthropic Claude Code Large Codebase Best Practices 50002A089323](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-claude-code-large-codebase-best-practices-50002a089323.md)
-- [Claude Code Openclaw Memory Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-openclaw-memory-comparison.md)
+- Claude Code Openclaw Memory Comparison
 
 ---
 

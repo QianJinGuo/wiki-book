@@ -1,6 +1,6 @@
 # 高德 Marketing AutoResearch：营销增长 AI Native 经营托管框架
 
-> 📊 Level ⭐⭐⭐⭐ | 18.0KB | `entities/gaode-marketing-autoresearch-ai-native-practice.md`
+> 📊 Level ⭐⭐⭐⭐ | 18.0KB
 
 > -> [原文存档](https://mp.weixin.qq.com/s/MKfuVIwIsKg9QhRywbbxSw)
 
@@ -127,6 +127,8 @@
 ### Case 5: 多区域并行学习
 
 (节选可见) —— 系统支持多区域并行实验，每区域独立判断 + 全局经验沉淀。
+
+## 深度分析
 
 ### 与现有 AutoResearch 实体的差异化定位
 

@@ -1,6 +1,6 @@
 # Self-Evolving Agents 系统性综述
 
-> 📊 Level ⭐⭐⭐⭐ | 11.0KB | `entities/self-evolving-agents-survey.md`
+> 📊 Level ⭐⭐⭐⭐ | 11.0KB
 
 ## 核心贡献
 **统一 taxonomy**：将 Self-Evolving Agents 划分为三大范式——
@@ -34,6 +34,7 @@
 - [Agent Memory Modular Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-modular-framework.md) — Memory 模块化框架，与 Environment-Centric Modular Architecture Evolution 相关
 → [原文存档](https://mp.weixin.qq.com/s/35R4E6at4bjAjeMvJaHk_A)
 
+## 深度分析
 ### 三条进化路线的内在逻辑与局限性
 论文提出的三条 Self-Evolving Agents 路线，不是并列的三个方向，而是一个**从内到外的能力扩展层次**：
 **Model-Centric（模型内部）**：假设模型潜力没有被充分激发，通过推理时计算（Inference-Based）或训练时更新（Training-Based）来激活潜力。局限性在于：推理时计算不改变模型参数、能力不会真正内化；训练时进化依赖高质量合成数据或在线反馈信号，在真实环境中获取成本高。
@@ -70,7 +71,7 @@ Model-Environment Co-Evolution 的两个方向：
 3. **Co-Evolution 环境的技术要求**：如果目标是构建支持 Model-Environment Co-Evolution 的平台，需要满足：a）环境能生成多样化的任务（task generation）；b）环境能提供可验证的 reward signal；c）环境能按 Agent 能力调整难度（curriculum）。这是比简单模拟器复杂得多的工程系统。
 
 ## 相关实体
-- [SkillOS: Learning Skill Curation for Self-Evolving Agents](276-skillos-learning-skill-curation-for-self-evolving-agents.html)
+- SkillOS: Learning Skill Curation for Self-Evolving Agents
 - [SkillOS: Learning Skill Curation for Self-Evolving Agents](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-os-learning-skill-curation-self-evolving-agents.md)
 
 - [Hermes Agent 自进化机制源码解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-self-evolving.md)

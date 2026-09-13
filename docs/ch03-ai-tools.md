@@ -36,10 +36,15 @@ AI 工具正在重新定义"开发者工具"的边界。
 
 ## 本章内容
 
+### ⭐ 入门（4 篇）
+
 - [001. Turn repeated instructions into reusable skills in Lovable | Lovable](ch03/001-turn-repeated-instructions-into-reusable-skills-in-lovable)
 - [002. Harness Engineering 详解：如何将 AI Coding 率提升至 90%](ch03/002-harness-engineering-ai-coding-90)
 - [003. Edge AI Networking — Wi-Fi 7/8 Convergence Analysis](ch03/003-edge-ai-networking-wi-fi-7-8-convergence-analysis)
 - [004. Data Projects](ch03/004-data-projects)
+
+### ⭐⭐ 工程师（8 篇）
+
 - [005. Agent 时代的生产力悖论：协作成为新瓶颈](ch03/005-agent)
 - [006. 别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](ch03/006-page-006)
 - [007. MiniMax M2.7：开启模型的自我进化](ch03/007-minimax-m2-7)
@@ -48,6 +53,9 @@ AI 工具正在重新定义"开发者工具"的边界。
 - [010. 03—AI Skill 测试用例设计完整指南：8 种类型 + 断言自检，覆盖率从 40% 到 90%](ch03/010-03-ai-skill-8-40-90)
 - [011. A History of IDEs at Google](ch03/011-a-history-of-ides-at-google)
 - [012. Bedrock AgentCore Pool Model Multi-Tenancy](ch03/012-bedrock-agentcore-pool-model-multi-tenancy)
+
+### ⭐⭐⭐ 专家（29 篇）
+
 - [013. NVIDIA GPU Kernel 翻译：Cute / Python / Julia](ch03/013-nvidia-gpu-kernel-cute-python-julia)
 - [014. The Interface Is No Longer the Product](ch03/014-the-interface-is-no-longer-the-product)
 - [015. How a Mid-tier Enterprise SaaS Provider Automates Cloud Support](ch03/015-how-a-mid-tier-enterprise-saas-provider-automates-cloud-supp)
@@ -77,6 +85,9 @@ AI 工具正在重新定义"开发者工具"的边界。
 - [039. Form-Over-Function Mistakes, or How Not to Harm Your Business With a Pretty Interface.](ch03/039-form-over-function-mistakes-or-how-not-to-harm-your-busines)
 - [040. Enterprise AI Agent Development Tools (n8n Report 2026)](ch03/040-enterprise-ai-agent-development-tools-n8n-report-2026)
 - [041. Activity-Focused Design](ch03/041-activity-focused-design)
+
+### ⭐⭐⭐⭐ 科学家（14 篇）
+
 - [042. AI Native 公司 Dan Shipper 30 人做出 100 人产出：层次化思维 + SaaS 6 维能力框架](ch03/042-ai-native-dan-shipper-30-100-saas-6)
 - [043. YC CEO Garry Tan：200美元重构400万美元项目，AI Agent协作开发实践](ch03/043-yc-ceo-garry-tan-200-400-ai-agent)
 - [044. Stripe Agent 经济基础设施 5 套图谱：MPP + Link + Projects + Metronome/Tempo + Radar](ch03/044-stripe-agent-5-mpp-link-projects-metronome-tempo)
@@ -91,8 +102,20 @@ AI 工具正在重新定义"开发者工具"的边界。
 - [053. What Figma Made Visible: Component Model Bridging Design and Engineering](ch03/053-what-figma-made-visible-component-model-bridging-design-and)
 - [054. Hunk - Review-first Terminal Diff Viewer](ch03/054-hunk-review-first-terminal-diff-viewer)
 - [055. Microsoft Agent Framework 结构化输出：response_format 与 response.value](ch03/055-microsoft-agent-framework-response-format-response-value)
+
+### ⭐⭐⭐⭐⭐ 大师（5 篇）
+
 - [056. AgentScope Java Harness Framework 2.0 — 企业级 Agent 分布式场景的 Harness 实现 (Java 2.0 重大升级)](ch03/056-agentscope-java-harness-framework-2-0-agent-harness)
 - [057. Hermes-Wiki 实战 — Obsidian + Hermes Agent 自动生长知识网络的 9 步搭建法](ch03/057-hermes-wiki-obsidian-hermes-agent-9)
 - [058. pi-mono — 模块化 AI Agent 构建平台（OpenClaw 执行引擎核心）](ch03/058-pi-mono-ai-agent-openclaw)
 - [059. Hermes Agent 工具系统架构分析](ch03/059-hermes-agent)
 - [060. CLI-Anything](ch03/060-cli-anything)
+
+
+---
+
+## 本章收束
+
+工具会过时，设计判断不会。本章每一件产品的分野都不在功能清单上，而在它对同一个问题的回答里：用户该为 AI 的不确定性付出多少确认成本？把这个问题带在身上，你评价任何新一代工具时都有标尺——也能预判它接下去会往哪走。
+
+---

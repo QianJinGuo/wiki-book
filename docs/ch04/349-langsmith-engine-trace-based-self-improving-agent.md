@@ -1,6 +1,6 @@
 # LangSmith Engine: Trace-Based Self-Improving Agent
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 26.8KB | `entities/langsmith-engine-self-improving-agent-trace-based.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 26.8KB
 
 > 来源：分析 LangChain LangSmith Engine 的工程化自改进路径——从线上 trace 自动发现问题并转化为 issue / evaluator / 回归测试
 
@@ -25,6 +25,8 @@
 - **长期记忆：Agent Overview**：诊断 Agent 的 AGENTS.md，含 Agent Purpose / Expected Tools / Known Failure Modes / User Preferences
 - **MVP 路径**：失败 trace → trajectory → recurring issue → regression assertions，第一版不自动修复也不自动创建 evaluator
 - **飞轮断言**：bad case → issue → evaluator → regression test，谁让这个飞轮转得更快，谁的系统就能更快成熟
+
+## 深度分析
 
 ### 一、Agent 上线后的问题形态变化
 

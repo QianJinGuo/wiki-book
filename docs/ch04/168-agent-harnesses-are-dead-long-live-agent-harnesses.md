@@ -1,6 +1,6 @@
 # Agent Harnesses Are Dead. Long Live Agent Harnesses.
 
-> 📊 Level ⭐⭐⭐ | 8.6KB | `entities/agent-harnesses-are-dead-long-live-agent-harnesses.md`
+> 📊 Level ⭐⭐⭐ | 8.6KB
 
 ## 摘要
 
@@ -19,6 +19,8 @@ Agent Harness 正经历从"硬编码框架"到"声明式配置驱动"再到"纠�
 ### Garry Tan 的"Harness 即管道"视角
 
 Garry Tan 精准指出：Harness 应该是薄的。Harness 是管道（plumbing）。管道很重要，但没有人能在管道上建立令人兴奋的、有防御力的产品。这暗示了价值正在从基础设施层向上迁移到数据和分发层。
+
+## 深度分析
 
 ### 1. 构建成本坍塌对 SaaS 的冲击
 

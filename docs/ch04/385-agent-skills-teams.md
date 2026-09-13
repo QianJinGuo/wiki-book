@@ -1,6 +1,6 @@
 # Agent/Skills/Teams 架构演进过程及技术选型之道
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 10.5KB | `entities/agent-skills-teams-architecture-evolution-selection-guide.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 10.5KB
 
 ## 核心命题
 **Agent 架构的演化史是对大模型底层能力缺失的补偿机制。** 领域知识注入和长周期记忆管理是两大核心挑战，在此之前，RAG、Multi-Agent、Workflow、Skills 等架构模式百花齐放。选型的核心原则：奥卡姆剃刀，复杂度匹配问题复杂度。
@@ -78,6 +78,7 @@ Agent Teams（并行 + 共享 Context）
 - [Multi Agent Collaboration 2025 Top 10 Challenges](https://github.com/QianJinGuo/wiki-public/blob/main/queries/multi-agent-collaboration-2025-top-10-challenges.md)
 - [Autoresearch Next Phase Async Multi Agent Ai寒武纪](https://github.com/QianJinGuo/wiki-public/blob/main/entities/autoresearch-next-phase-async-multi-agent-ai寒武纪.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/multi-agent-coordination.md)
+## 深度分析
 ### 从技术演进视角重新理解四种架构范式
 四种架构并非线性替代关系，而是针对不同问题域的正交解：
 | 架构 | 核心问题域 | 本质 |

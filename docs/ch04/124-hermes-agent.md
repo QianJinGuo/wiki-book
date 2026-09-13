@@ -1,6 +1,6 @@
 # Hermes Agent 自我改进机制概述
 
-> 📊 Level ⭐⭐⭐ | 11.7KB | `entities/hermes-self-improving-overview-winty.md`
+> 📊 Level ⭐⭐⭐ | 11.7KB
 
 [Hermes Self Improving Overview Winty](https://mp.weixin.qq.com/s/KJwNgGFBXGUzjwCi2jMLwg)
 

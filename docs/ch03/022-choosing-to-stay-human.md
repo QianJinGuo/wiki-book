@@ -1,6 +1,6 @@
 # Choosing to Stay Human
 
-> 📊 Level ⭐⭐⭐ | 10.8KB | `entities/choosing-to-stay-human.md`
+> 📊 Level ⭐⭐⭐ | 10.8KB
 
 > 原文存档：[原文存档](https://www.oneusefulthing.org/p/choosing-to-stay-human)
 
@@ -33,6 +33,8 @@ Mollick 注意到 AI 写作的同质性问题：社交媒体帖子、学术论�
 问题很大程度上取决于我们自己。Mollick 对大量认知投降并无异议——不再记电话号码因为手机帮他记了；很高兴孩子们不需要学草书；对计算器做日常数学和电脑帮他安排课程感到满意。这些曾经是有用的技能，但我们可能正确地放弃了它们。
 
 AI 的不同之处在于这项技术足够通用，几乎任何认知任务都可以在一定程度上外包给它。polished email draft 不一定必须来自人类大脑，就像一列算术不一定必须由人完成一样。但我们不想放弃一切，对于任何特定任务，我们仍然不知道什么是重要的、什么不是。决定什么保留给人类——而不是 reflexively avoiding AI 或 reflexively using AI——是未来几年需要应对的挑战。
+
+## 深度分析
 
 ### 认知投降：设计学陷阱而非懒惰
 Mollick 的"认知投降"并非简单的认知懒惰。BCG 顾问实验中，758 名精英顾问在使用 AI 大幅超越同行的同时，面对特定失败点时反而更不可能发现问题——"AI 已解决"的心智模式抑制了批判性审视。
@@ -77,7 +79,7 @@ ChatGPT 的 /learn、Gemini 的 Guided Learning、Claude 的 learning style sele
 - **AI ≠ 代理**：主动选择使用 AI 而非被设计默认推向 frictionless use
 
 ## 相关实体
-- [Against Brain Damage](030-against-brain-damage.html)
+- Against Brain Damage
 - [Frontier Code Cognition Mergeability Benchmark](https://github.com/QianJinGuo/wiki-public/blob/main/entities/frontier-code-cognition-mergeability-benchmark.md)
 - [语音输入喊了这么多年千问电脑版一出手就把键盘卷没了](https://github.com/QianJinGuo/wiki-public/blob/main/entities/语音输入喊了这么多年千问电脑版一出手就把键盘卷没了.md)
 - [Yc Ceo Garry Tan 200 Dollar Vs 4 Million](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yc-ceo-garry-tan-200-dollar-vs-4-million.md)

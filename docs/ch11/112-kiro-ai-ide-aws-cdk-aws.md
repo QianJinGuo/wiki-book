@@ -1,6 +1,6 @@
 # 使用 Kiro AI IDE 开发 AWS CDK 部署架构：从模糊需求到三层堆栈的协作实战 | 亚马逊AWS官方博客
 
-> 📊 Level ⭐⭐⭐ | 7.6KB | `entities/blog-03-kiro-ai-cdk-development.md`
+> 📊 Level ⭐⭐⭐ | 7.6KB
 
 ## 概述
 使用 Kiro AI IDE 开发 AWS CDK 部署架构：从模糊需求到三层堆栈的协作实战 by awschina on 17 12月 2025 in AWS Big Data Permalink Share 概述 本文记录了一次真实的 AI 辅助开发过程：如何使用 Kiro AI IDE 从一个模糊的部署需求开始，通过人机协作，逐步设计出三层堆栈架构，并完成基于Amazon EMR Flink 智能监控系统的AWS CDK 部署代码。 开发成果 ： – 开发时间：从 10 小时缩短到 1.5 小时（效率提升 6-7 倍） – 代码质量：自动应用 AWS 最佳实践 – 架构演进：从单堆栈到三层堆栈的优化过程 项目地址 ： https://github.com/yangguangfu007/emr-flink-monitoring-agent 背景：什么是 AWS CDK 和 Kiro？
@@ -11,6 +11,7 @@ Kiro CLI、Kiro IDE、Kiro MCP Skills、Amazon Bedrock
 ## 来源
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/blog-03-kiro-ai-cdk-development/)
 
+## 深度分析
 ### Kiro AI IDE 的核心能力
 Kiro 是 AWS 推出的 AI 辅助开发工具，通过自然语言理解帮助开发者完成云架构设计和 CDK 代码生成。其核心能力体现在：
 **Spec 文档驱动开发**：通过 `requirements.md`（部署需求）、`design.md`（架构设计）、`tasks.md`（任务分解）三层文档结构，将模糊需求转化为明确的实现计划。这种方式避免了直接写代码导致的返工，使需求变更有据可循。

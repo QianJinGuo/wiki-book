@@ -1,6 +1,6 @@
 # How to Detect AI Agents on Your Website
 
-> 📊 Level ⭐⭐⭐ | 10.5KB | `entities/detect-ai-agent-traffic.md`
+> 📊 Level ⭐⭐⭐ | 10.5KB
 
 [Detect Ai Agent Traffic](https://cside.com/blog/guide-to-detect-ai-agent-traffic-on-your-website)
 

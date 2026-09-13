@@ -1,6 +1,6 @@
 # Google Agentic RAG 跨语料库框架：充分上下文智能体 + 5 阶段管线
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 15.5KB | `entities/ai-cambrian-google-agentic-rag-sufficient-context-cross-corpus-20260606.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 15.5KB
 
 > 原文链接：[原文链接](https://mp.weixin.qq.com/s/8PdVIubBGWKtMMyCb0pc3g)
 
@@ -93,6 +93,8 @@ FramesQA 基于 FRAMES 论文，专门测试多跳推理能力。
 - 跨语料库设置下，系统在四个数据库中正确路由并回答了 **90.1%** 的问题
 - 单库和跨库两个版本的延迟相差不超过 3%
 - 比 Vanilla RAG 准确率提升最高达 **34%**
+
+## 深度分析
 
 ### 1. "充分上下文"是 RAG 的范式转移
 

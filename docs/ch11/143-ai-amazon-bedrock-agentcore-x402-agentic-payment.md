@@ -1,6 +1,6 @@
 # 让 AI 代理自己付钱：基于 Amazon Bedrock AgentCore 与 x402 的 Agentic Payment
 
-> 📊 Level ⭐⭐⭐⭐ | 10.3KB | `entities/agentic-payment-x402-bedrock-agentcore.md`
+> 📊 Level ⭐⭐⭐⭐ | 10.3KB
 
 > **Background**: 当 AI 代理需要消费付费 API、付费 MCP 服务器或付费内容时，传统人工审批和包月订阅模式跟不上代理按调用、按内容结算的节奏。本文结合 Bedrock AgentCore Payments (Preview) 与 x402 协议，设计端到端 agentic 支付方案。
 
@@ -79,6 +79,8 @@ AgentCore Payments 把这些打包到托管服务：原本数月工程量 → �
 
 → [原文存档](https://aws.amazon.com/cn/blogs/china/ai-agent-based-on-amazon-bedrock-agentcore-x402-agentic-payment-solution/)
 - [aws waf ai traffic monetization — 内容所有者向 ai 收费的网络层基础设施](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-waf-ai-traffic-monetization-bot-content-access.md)
+
+## 深度分析
 
 ### 1. 支付协议与托管服务的职责边界
 

@@ -1,6 +1,6 @@
 # The Data Canary
 
-> 📊 Level ⭐ | 4.6KB | `entities/the-data-canary-how-netflix-validates-catalog-metadata.md`
+> 📊 Level ⭐ | 4.6KB
 
 ## The Data Canary: How Netflix Validates Catalog Metadata
 
@@ -8,7 +8,7 @@
 
 ## The Data Canary: How Netflix Validates Catalog Metadata
 
-By [Celina Amados](<https://www.linkedin.com/in/celina-amados/>)
+By Celina Amados
 
 _At Netflix, our catalog metadata is crucial to our member experience, and a single corrupted data state can impact millions of viewers immediately. To protect streaming reliability, we built an automated data canary system that validates data transformations using production traffic. This canary detects issues in under 10 minutes, and blocks bad data from reaching our members._
 

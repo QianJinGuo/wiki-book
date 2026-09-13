@@ -1,9 +1,11 @@
 # Agent 自我改进的六条路
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 24.1KB | `entities/agent-self-improvement-six-mechanisms.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 24.1KB
 
 ## 概述
 J0hn/AGI Hunt 梳理 Agent 不重新训练就能变强的六种机制：输出自审、持久记忆、进化搜索、对抗训练、自我修改、编排自优化。核心命题：AI 学习正从训练阶段溢出到部署阶段——权重冻结下通过外部状态层积累知识是毕业后的自学能力。
+
+## 可视化
 
 ### 架构图（Excalidraw / 推荐使用 ✨）
 
@@ -74,7 +76,7 @@ graph TB
 
 ### 封面图（AI 生成 / 装饰参考，仅供参考）
 
-![Agent Self-Improvement 6 Layers](../assets/entities/agent-self-improvement-six-mechanisms.png)
+!Agent Self-Improvement 6 Layers
 
 > Agnes image-2.0-flash 生成的 1536×1024 封面。文字可能有拼写错误（典型的 AI 图像模型问题），**仅作视觉参考，请以上方 Excalidraw / Mermaid 图为准**。
 
@@ -135,7 +137,7 @@ graph TB
 训练 = 上学，这些机制 = 毕业后的**自学能力**。
 
 ## 相关实体
-- [foundation capital agent era six insights](284-foundation-capital-agent-era-six-insights.html)
+- foundation capital agent era six insights
 - [Hermes Agent 自进化机制源码解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-self-evolving.md)
 - [Memento-Skills — 技能外部记忆让 Agent 自进化（arXiv 2603.18743）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/memento-skills-agent-self-evolving.md)
 - [AI Coding Agent 记忆系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-coding-agent-memory-system.md)
@@ -149,11 +151,11 @@ graph TB
 - [hermes-agent-self-evolving-source-analysis](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-self-evolving-source-analysis.md)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki-public/blob/main/queries/harness-peer-review-framework.md)
 - [Agent Memory 架构解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture-ruofei.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/107-claude-code-harness-deep-understanding.html)
+- 深入理解 Claude Code 源码中的 Agent Harness 构建之道
 - [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-20000-char-source-analysis.md)
 - [Agent Harness 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture.md)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-agentic-engineering-v4.md)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-prompt-context-harness.md)
+- 深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki-public/blob/main/queries/agent-memory-system-design.md)
 - [企业级AI记忆基质三层架构：事实/交互/行动记忆](https://github.com/QianJinGuo/wiki-public/blob/main/entities/enterprise-ai-memory-substrate-three-layer-architecture.md)
 - [GBrain](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gbrain.md)
@@ -172,6 +174,7 @@ graph TB
 - [recursive first steps toward automated ai research：sota 三基准自](https://github.com/QianJinGuo/wiki-public/blob/main/entities/recursive-automated-ai-research-first-steps-2026.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-engineering-guide.md)
+## 深度分析
 ### 六条路的层次结构
 六种机制并非在同一平面竞争，而是在**认知层次**上层层递进：
 
@@ -245,7 +248,7 @@ Meta-Harness 提出的 Big Model / Big Harness 框架有直接的工程含义：
 Tax AI 的全部知识产权归 **Thrive Holdings**（Joshua Kushner 创办，OpenAI 最大投资方之一），OpenAI 派了 6 个月工程师、给模型、给深度集成，**最后连 IP 都没留**——在硅谷大厂 AI 合作里极其罕见。
 - **OpenAI 图的不是报税产品 IP，而是「可复制的自我改进方法论」**——一个生产验证的飞轮范式
 - Thrive Holdings 已经在把同样闭环复制到 **记账、审计、IT 运维**
-- 这与 [Foundation Capital agent era](284-foundation-capital-agent-era-six-insights.html) 中"infra 厂商抢应用层 IP"的趋势一致，**但 OpenAI 反向操作：放弃应用层 IP 换生产方法论**——是更上游的卡位
+- 这与 Foundation Capital agent era 中"infra 厂商抢应用层 IP"的趋势一致，**但 OpenAI 反向操作：放弃应用层 IP 换生产方法论**——是更上游的卡位
 
 ### 与现有六条框架的对应与扩展
 | OpenAI 元素 | 对应六条框架 | 本文新增洞见 |

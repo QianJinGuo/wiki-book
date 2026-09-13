@@ -1,6 +1,6 @@
 # Agent架构关键变化：Harness正在成为新后端
 
-> 📊 Level ⭐⭐⭐⭐ | 32.5KB | `entities/agent-architecture-harness-new-backend.md`
+> 📊 Level ⭐⭐⭐⭐ | 32.5KB
 
 本文讨论 AI 基础设施的核心问题：智能体 harness 与传统后端分离导致的复杂性，强调当前架构难以处理随机性强的 agent 系统。
 作者提出用"worker、trigger、function"三个原语重新定义后端，让 agent 成为与服务、队列等同等的 worker，实现实时发现、可扩展性和统一可观测性，消除 harness 与后端的界限。
@@ -100,6 +100,7 @@ iii [2] 是开源项目。可以通过我们的 quickstart [3] 开始使用。
 3. quickstart: https://iii.dev/docs/quickstart
 ---
 
+## 深度分析
 ### 1. 核心论点：Harness 与后端的二元分离是暂时状态
 本文最核心的洞察是：行业普遍接受了一个未被审视的假设——harness（智能体编排层）和后端（执行基础设施）是两个独立的层。这个假设导致agent系统面临调试复杂性的根本挑战：harness重试逻辑、队列重试机制、HTTP层超时控制各自为政，trace无法跨越这些边界串联。当系统从1个agent扩展到4个agent，调试路径从5条激增至80条，概率空间的膨胀使得传统确定性调试方法完全失效。
 作者认为这不是设计缺陷而是阶段性的——随着agent技术主流化，harness终将被接纳为"后端"的一部分。就像早期Web服务需要独立的应用服务器而现在已是基础设施标配，agent harness也将经历同样的整合过程。
@@ -154,14 +155,14 @@ iii模型中agent可以运行时启动新的sandbox worker，这意味着架构�
 
 ## 相关实体
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-让-coding-agent-可靠完成长程任务-v2.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/107-claude-code-harness-deep-understanding.html)
+- 深入理解 Claude Code 源码中的 Agent Harness 构建之道
 - [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-20000-char-source-analysis.md)
 - [Agent 自我改进的六条路](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-self-improvement-six-mechanisms.md)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-agentic-engineering-v4.md)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](https://github.com/QianJinGuo/wiki-public/blob/main/entities/boris-cherny-新访谈开发工具正在从-ide-变成-agent-控制台-v2.md)
 - [Claude Code 设计原则与对照分析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-architecture-analysis.md)
 - [Harness如何支撑Agent在生产环境稳定运行？](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-production-agent-engineering-deficit.md)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-prompt-context-harness.md)
+- 深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践
 - [Code as Agent Harness 综述](https://github.com/QianJinGuo/wiki-public/blob/main/entities/code-as-agent-harness-survey.md)
 - [Claude Code 源码核心机制详解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-core-internals.md)
 - [基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)

@@ -1,6 +1,6 @@
 # Browser Use：为 Agent 构建 Runtime Harness
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 15.8KB | `entities/browser-use-runtime-harness.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 15.8KB
 
 **Browser Use** 是百度工程师开源的运行时验证框架，旨在解决 Agent 生成前端代码后的「最后一公里」验证问题。核心洞察是：**代码正确 ≠ 界面正确**——前端最终结果是组件代码、CSS cascade、运行时数据、容器尺寸、异步状态等因素共同作用的组合结果，只有渲染出来才能确认是否正确。
 
@@ -141,6 +141,8 @@ Browser Use 的实现代码开源托管于 GitHub：
 - **仓库**：https://github.com/hixuanxuan/browser-automation
 - **安装方式**：`npx skills add hixuanxuan/browser-automation --skill visual-verify`
 - **核心功能**：面向日常前端开发验收，Agent 主动打开真实浏览器检查六维，输出带截图和断言结果的验收记录
+
+## 深度分析
 
 ### 本质：把「人类视觉反馈」转化为「机器可解析的信号」
 

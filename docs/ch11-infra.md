@@ -36,6 +36,8 @@ Agent 在笔记本上跑得好不代表能在生产环境中跑得好。
 
 ## 本章内容
 
+### ⭐ 入门（19 篇）
+
 - [001. 如何保护 EC2 实例存储（Instance Store）数据不丢失：场景分析与自动化防护实践](ch11/001-ec2-instance-store)
 - [002. AWS Glue 3.0 到 5.0 版本升级实践：中国区大规模 ETL 平台的迁移方法论](ch11/002-aws-glue-3-0-5-0-etl)
 - [003. 如何轻量化的在亚马逊云科技中国区安全使用 Transfer Family SFTP](ch11/003-transfer-family-sftp)
@@ -55,6 +57,9 @@ Agent 在笔记本上跑得好不代表能在生产环境中跑得好。
 - [017. The Evolution of Cassandra Data Movement at Netflix](ch11/017-the-evolution-of-cassandra-data-movement-at-netflix)
 - [018. Cloudflare Turnstile requiring fingerprintable WebGL](ch11/018-cloudflare-turnstile-requiring-fingerprintable-webgl)
 - [019. Reference your own AWS Secrets Manager secrets in Amazon Bedrock AgentCore Identity](ch11/019-reference-your-own-aws-secrets-manager-secrets-in-amazon-bed)
+
+### ⭐⭐ 工程师（21 篇）
+
 - [020. AWS 正式发布 Lambda MicroVMs：面向 AI 时代的无服务器安全代码执行环境](ch11/020-aws-lambda-microvms-ai)
 - [021. 科大讯飞星火Token Factory：企业AI模型路由与成本管理统一中间层](ch11/021-token-factory-ai)
 - [022. OpenClaw 在电商平台的应用场景探索 | 亚马逊AWS官方博客](ch11/022-openclaw-aws)
@@ -76,6 +81,9 @@ Agent 在笔记本上跑得好不代表能在生产环境中跑得好。
 - [038. AI Infra 全景图：9 层 Agent 生产架构](ch11/038-ai-infra-9-agent)
 - [039. GenPage: Netflix 端到端生成式首页构建](ch11/039-genpage-netflix)
 - [040. AWS SageMaker Async Inference 内联 Payload 支持](ch11/040-aws-sagemaker-async-inference-payload)
+
+### ⭐⭐⭐ 专家（84 篇）
+
 - [041. From silos to service topology: why Netflix built a real-time architecture](ch11/041-from-silos-to-service-topology-why-netflix-built-a-real-tim)
 - [042. Scaling Camera File Processing at Netflix](ch11/042-scaling-camera-file-processing-at-netflix)
 - [043. Dify集成Amazon Bedrock AgentCore Browser  实现更强大的信息获取和分析能力 | 亚马逊AWS官方博客](ch11/043-dify-amazon-bedrock-agentcore-browser-aws)
@@ -160,6 +168,9 @@ Agent 在笔记本上跑得好不代表能在生产环境中跑得好。
 - [122. 55+ models, every modality. One API key, one bill.](ch11/122-55-models-every-modality-one-api-key-one-bill)
 - [123. 向量数据库选型：Chroma vs Qdrant](ch11/123-chroma-vs-qdrant)
 - [124. Cost effective deployment of vision-language models for pet behavior detection on AWS Inferentia2](ch11/124-cost-effective-deployment-of-vision-language-models-for-pet)
+
+### ⭐⭐⭐⭐ 科学家（40 篇）
+
 - [125. Extending MCP support for Amazon Bedrock AgentCore Gateway](ch11/125-extending-mcp-support-for-amazon-bedrock-agentcore-gateway)
 - [126. How Amazon Finance streamlines regulatory inquiries by using generative AI on AWS](ch11/126-how-amazon-finance-streamlines-regulatory-inquiries-by-using)
 - [127. 云端 Agent 基础设施两条硬经验：CreaoAI 联合创始人的状态/代码解耦 + 凭据隔离](ch11/127-agent-creaoai)
@@ -200,6 +211,9 @@ Agent 在笔记本上跑得好不代表能在生产环境中跑得好。
 - [162. VMAF v1: Netflix 视频质量度量的全面升级](ch11/162-vmaf-v1-netflix)
 - [163. Netflix Kueue 迁移：百万级 Batch Job 从 CMB 到 Kubernetes 原生调度](ch11/163-netflix-kueue-batch-job-cmb-kubernetes)
 - [164. Zapocalypse: The Attack Chain That Could Have Hijacked Zapier](ch11/164-zapocalypse-the-attack-chain-that-could-have-hijacked-zapie)
+
+### ⭐⭐⭐⭐⭐ 大师（17 篇）
+
 - [165. 用 Amazon Bedrock AgentCore Payment 构建自主支付 AI Agent：x402 协议实战](ch11/165-amazon-bedrock-agentcore-payment-ai-agent-x402)
 - [166. 基于 Firecracker microVM 与 Bedrock AgentCore 的生产级多租户 AI Agent](ch11/166-firecracker-microvm-bedrock-agentcore-ai-agent)
 - [167. 基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](ch11/167-aws-openclaw-amazon-bedrock-agentcore-serverless)
@@ -217,3 +231,12 @@ Agent 在笔记本上跑得好不代表能在生产环境中跑得好。
 - [179. Amazon S3 Annotations：对象级丰富可查询元数据](ch11/179-amazon-s3-annotations)
 - [180. LiteLLM 生产级部署：AWS ECS/EKS 双方案 + Control Plane / Data Plane 分离多区域](ch11/180-litellm-aws-ecs-eks-control-plane-data-plane)
 - [181. AWS GRPO RLVR Sagemaker Math Reasoning](ch11/181-aws-grpo-rlvr-sagemaker-math-reasoning)
+
+
+---
+
+## 本章收束
+
+模型再好，部署不了就是零。这一章把 Agent 从笔记本推向生产：多租户、沙箱隔离、成本治理、可观测——每一项都在回答"凭什么敢让它碰真实的生产系统"。基础设施是 Agent 的最后一公里，也是信任的起点。
+
+---

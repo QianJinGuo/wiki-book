@@ -1,6 +1,6 @@
 # 高德交易 VOC 自动排查：基于 Hermes 的多 Agent 架构实践
 
-> 📊 Level ⭐ | 7.1KB | `entities/gaode-voc-hermes-multi-agent-auto-triage-2026.md`
+> 📊 Level ⭐ | 7.1KB
 
 高德技术使用 Hermes Agent 构建多 Agent 架构实现交易 VOC（Voice of Customer）自动排查系统。系统由主调度 Agent（首席调度官）+ 多个领域专家 Agent 构成，实现"零后端编排代码"的纯 Agent 生产级系统，诊断准确率 **86%**，排查效率从小时/天级→分钟级。
 
@@ -66,7 +66,7 @@ Hermes slash 命令访问控制：管理员白名单 vs 普通用户白名单。
 ## 与其他实体的关系
 
 - **Hermes 生产案例系列**：继 [高德扫街榜 HermesAgent 配图系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gaode-saojie-image-selection-hermesagent-vlm-production-2026.md) 后第二个来自高德技术的 Hermes 生产案例。前者聚焦 VLM + Skill 化配图，本文聚焦多 Agent 协作 + 自进化 VOC 排查。两篇互补：前者展示混合架构（确定性 Pipeline + Agent），本文展示纯 Agent 多实例协作
-- **多 Agent 通信模式**：主 Agent 通过 OpenAI 兼容 HTTP 调用专家 Agent，与 [Hermes Agent](../ch03/059-hermes-agent.html) 的 API Server 能力直接对应——每个 Hermes 实例既是对话机器人也可作为 HTTP 服务
+- **多 Agent 通信模式**：主 Agent 通过 OpenAI 兼容 HTTP 调用专家 Agent，与 Hermes Agent 的 API Server 能力直接对应——每个 Hermes 实例既是对话机器人也可作为 HTTP 服务
 - **自进化闭环**：Memory+Curator 机制与 [Hermes Memory 系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-memory-system.md) 一致——管理员纠正→写入 Memory→Curator 整理→下次更新
 - **Hook 扩展**：无侵入定制策略与 [Hermes SOUL.md 人设系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-soul-md-personality-shugex.md) 互补——SOUL 定义行为，Hook 定义自定义逻辑
 - **路由精细化**：主调度 Agent 的模糊描述→精确领域映射，与 [Flow2Spec 结构化知识路由](https://github.com/QianJinGuo/wiki-public/blob/main/entities/flow2spec-structured-knowledge-routing-ctrip-2026.md) 的路由思想一脉相承

@@ -1,6 +1,6 @@
 # Agent Reliability: Context Drift & Tool Calling Hallucination
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 12.4KB | `entities/agent-reliability-context-drift-tool-hallucination.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 12.4KB
 
 ## 核心问题
 Agent 运行多轮后可靠性的两个核心问题：
@@ -85,14 +85,14 @@ Agent 运行多轮后可靠性的两个核心问题：
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-让-coding-agent-可靠完成长程任务-v2.md)
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/long-running-agent-ralph-loop-handover-harness-ruofei.md)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki-public/blob/main/queries/harness-peer-review-framework.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/107-claude-code-harness-deep-understanding.html)
+- 深入理解 Claude Code 源码中的 Agent Harness 构建之道
 - [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-20000-char-source-analysis.md)
 - [Agent 自我改进的六条路](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-self-improvement-six-mechanisms.md)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-agentic-engineering-v4.md)
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](https://github.com/QianJinGuo/wiki-public/blob/main/entities/boris-cherny-新访谈开发工具正在从-ide-变成-agent-控制台-v2.md)
 - [Harness如何支撑Agent在生产环境稳定运行？](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-production-agent-engineering-deficit.md)
 - [Agent架构关键变化：Harness正在成为新后端](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-architecture-harness-new-backend.md)
-- [你不知道的 Agent 原理架构与工程实践](179-agent-principle-architecture-engineering-practice.html)
+- 你不知道的 Agent 原理架构与工程实践
 - [AI Coding Agent 记忆系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-coding-agent-memory-system.md)
 - [柚漫剧 AI 全流程提效拆解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yumanju-ai-full-flow-efficiency.md)
 - [Agent Skill 设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/从-anthropic-到-googleagent-skills-正在进入设计模式阶段.md)
@@ -101,6 +101,7 @@ Agent 运行多轮后可靠性的两个核心问题：
 - [Thin Harness Fat Skills](https://github.com/QianJinGuo/wiki-public/blob/main/entities/thin-harness-fat-skills.md)
 - [Design Patterns for AI Agents 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/design-patterns-for-ai-agents-2026.md)
 
+## 深度分析
 ### 上下文漂移的注意力机制深层根因
 上下文漂移的根本原因在于 Transformer 的 Self-Attention 机制设计特性。
 **近因效应的量化表现**：当上下文长度超过 512 token 时，初始指令的注意力权重可降至 0.1 以下。这意味着 Agent 在第 10 轮对话时，几乎"看不见"最初的指令。

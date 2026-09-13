@@ -1,6 +1,6 @@
 # Codex Discovered a Hidden HTTP/2 Bomb
 
-> 📊 Level ⭐⭐⭐ | 7.7KB | `entities/califio-codex-http2-hpack-bomb-880k-servers.md`
+> 📊 Level ⭐⭐⭐ | 7.7KB
 
 → [原文存档](https://blog.calif.io/p/codex-discovered-a-hidden-http2-bomb)
 
@@ -15,6 +15,8 @@ Calif.io 2026-06-02 公开披露"HTTP/2 Bomb"——一种利用 HPACK 索引引�
 - **攻击规模**：100Mbps 家用带宽可在数秒内击垮目标；针对 Apache/Envoy 单一客户端可在约 20 秒内吃满 32GB 服务器内存
 - **修复进度不一**：nginx 1.29.8 已修（commit `365694160a`，新增 `max_headers` 指令）；Apache 同日修（CVE-2026-49975）；IIS 与 Pingora **未发布补丁**，建议临时关闭 HTTP/2 或前置 header-count cap
 - **AI 驱动的安全研究范式转变**：从 fix commit 反推到 working exploit 的周期被 Codex 压缩到分钟级
+
+## 深度分析
 
 ### "放大率不来自解码量"是新型 bomb 的本质
 

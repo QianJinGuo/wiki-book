@@ -1,6 +1,6 @@
 # Agent演化：三条路线汇聚框架
 
-> 📊 Level ⭐⭐⭐⭐ | 15.3KB | `entities/acker-agent-evolution-three-routes-convergence.md`
+> 📊 Level ⭐⭐⭐⭐ | 15.3KB
 
 ## 核心框架
 
@@ -113,6 +113,7 @@ ROI可见性 + 风险控制 + 信任积累 = Agent商业化的三重门。
 - [fanling company as agent ai org reflection v2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fanling-company-as-agent-ai-org-reflection-v2.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/memory-context-systems.md)
+## 深度分析
 
 ### 三路线汇聚的深层逻辑
 

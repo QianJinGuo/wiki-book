@@ -1,6 +1,6 @@
 # Agent 自进化评估瓶颈 — 外置 evaluator 是自动自进化的前提条件
 
-> 📊 Level ⭐⭐⭐⭐ | 9.4KB | `entities/agent-self-evolution-evaluator-bottleneck.md`
+> 📊 Level ⭐⭐⭐⭐ | 9.4KB
 
 > Theo 「Agent 自进化」系列第 4 篇。核心命题：自动自进化的边界不由"模型多聪明"决定，由"分数有多可信"决定。[^1]
 
@@ -12,7 +12,7 @@
 
 - [Harness Self-Improvement 全景](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-self-improvement-survey-lilian-weng.md) — 互补：该实体是研究全景综述，本实体聚焦 **evaluator 这一唯一瓶颈维度**
 - [Self-Harness 论文分析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/self-harness-shanghai-ai-lab-agent-improves-harness.md) — 互补：Self-Harness 的 held-in/held-out 双重门控验证是本实体论点的工程实例
-- [Harness Engineering](../ch05/019-harness-engineering.html) — 上位框架：evaluator 是 Harness 反馈层的核心组件
+- Harness Engineering — 上位框架：evaluator 是 Harness 反馈层的核心组件
 
 ## 正例：深层自改进只在可验证区间成立
 
@@ -54,6 +54,8 @@
 多数"自进化"只自动化了**提议**（写记忆、写技能、改流程）。真正困难的是**判定**。
 
 > **最终边界**：有可信外部信号的更新可以自动；没有可信外部信号的更新必须留人或禁止上线。[^1]
+
+## 深度分析
 
 ### 一、可验证奖励是充分条件，模型自省不是
 

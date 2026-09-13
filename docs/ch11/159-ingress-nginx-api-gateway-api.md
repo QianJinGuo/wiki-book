@@ -1,6 +1,6 @@
 # 告别 Ingress Nginx：云原生 API 网关 Gateway API 使用指引
 
-> 📊 Level ⭐⭐⭐⭐ | 8.1KB | `entities/aliyun-cloud-native-api-gateway-gateway-api-guide.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.1KB
 
 → [原文存档](https://mp.weixin.qq.com/s/t1lZeXhRCbZ-3JJXP30w6g)
 
@@ -30,6 +30,8 @@ Gateway API 是 K8s 官方推出的下一代 Ingress 标准，通过 **GatewayCl
   - 跨命名空间路由 + ReferenceGrant 安全保证
   - **Gateway API Inference Extension (GIE)**：推理场景智能路由（感知请求队列深度/KV Cache 命中率）
 - **阿里云网关实战优势**：双模并行 + 注解兼容迁移 + 控制台可视化 + Higress 开源生态
+
+## 深度分析
 
 ### 角色分层是 Gateway API 相对 Ingress 的根本优势
 

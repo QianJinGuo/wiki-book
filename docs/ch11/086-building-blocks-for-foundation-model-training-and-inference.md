@@ -1,6 +1,6 @@
 # Building Blocks for Foundation Model Training and Inference on AWS
 
-> 📊 Level ⭐⭐⭐ | 9.5KB | `entities/building-blocks-for-foundation-model-training-and-inference-on-aws.md`
+> 📊 Level ⭐⭐⭐ | 9.5KB
 
 > -> [原文存档](https://huggingface.co/blog/amazon/foundation-model-building-blocks)
 
@@ -10,6 +10,7 @@ AWS 提供从 P5 (H100/H200) 到 P6 (B200/B300) 的 GPU 实例家族，配合 EF
 
 ML 软件栈从内核驱动 → CUDA → NCCL( aws-ofi-nccl ) → PyTorch → 分布式训练框架（Transformers/Megatron/veRL）和推理框架（vLLM/SGLang），每一层都需正确配置才能高效运行。
 
+## 深度分析
 ### 三重扩展定律的基础设施含义
 文章指出 scaling 已从单一预训练曲线演化为三重扩展 regimes：预训练、后训练（RLHF/SFT）、测试时计算（long-thinking、search）。这三个 regimes 共同强化而非分化基础设施需求——都要求紧耦合加速计算、高带宽低延迟网络和可扩展分布式存储。
 
@@ -55,16 +56,16 @@ DCGM-Exporter 暴露 GPU 指标中，SM activity (DCGM_FI_PROF_SM_ACTIVE) 比基
 生产环境推荐 AMP (Managed Prometheus) + AMG (Managed Grafana) 组合消除运维负担，同时保持与现有 Prometheus exporters 和 Grafana dashboards 的兼容性。
 
 ## 相关实体
-- [Foundation Model Building Blocks](../ch03/027-foundation-model-building-blocks.html)
+- Foundation Model Building Blocks
 - [AWS Model Agility: 6步LLM跨代际迁移框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-generative-ai-model-agility-framework.md)
 - [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/building-enterprise-agentic-ai-with-kiro-on-aws.md)
 - [SQS+Lambda异步管道：2000并发0%限流的工程细节](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-serverless-async-inference-sqs-lambda.md)
 - [EC2 Capacity Blocks：GPU短期容量决策指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-ec2-capacity-blocks-gpu-ml.md)
-- [SageMaker容量感知推理：实例池+优先级Fallback](../ch01/226-aws-sagemaker-capacity-aware-inference-fallback.html)
+- SageMaker容量感知推理：实例池+优先级Fallback
 - [AI Infra 系统性拆解：传统后台工程师视角](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tencent-ai-infra-backend-engineer-huangrunpeng.md)
 - [基于 Amazon WorkSpaces Applications 快速搭建企业级应用培训环境](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-workspaces-applications-quick-build.md)
-- [End To End Encrypted Ml Inference With Amazon Sagemaker Ai A](050-end-to-end-encrypted-ml-inference-with-amazon-sagemaker-ai-a.html)
-- [notes on pretraining parallelisms and failed training runs.](https://github.com/QianJinGuo/wiki-public/blob/main/entities/notes-on-pretraining-parallelisms-and-failed-training-runs.md)
+- End To End Encrypted Ml Inference With Amazon Sagemaker Ai A
+- notes on pretraining parallelisms and failed training runs.
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/llm-core-technology.md)
 
 ---

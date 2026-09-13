@@ -1,6 +1,6 @@
 # Figma Make, Now on Your Local Code: Closing the Design-to-Code Loop
 
-> 📊 Level ⭐⭐⭐ | 12.5KB | `entities/figma-make-now-on-your-local-code-3e6a33.md`
+> 📊 Level ⭐⭐⭐ | 12.5KB
 
 > Source: Figma Blog, "Figma Make, now on your local code", 2026-05-28. URL: https://www.figma.com/blog/figma-make-now-on-your-local-code/
 
@@ -20,6 +20,8 @@
 - **跨工具协作：把 Make 改动发成文件/分支**。让 Make 编辑本地代码库的更改可以作为文件分享，发送链接后队友 checkout 分支查看并继续构建。
 - **画布与代码库的双向同步**。从 Make 复制屏幕/页面/组件粘贴到 Figma 画布作为 layers，与团队协作编辑；Figma 检测到更改后会提示带回 Make，应用到代码。目标是「完全关闭循环」——画布和代码库在同一个地方。
 - **Beta 限制**：仅 Mac Beta 桌面应用，需要公司代码库访问权限（非技术用户已简化但仍需具备），不消耗 credits 但有限制名额。
+
+## 深度分析
 
 ### 1. 行业判断：代码工具停留在 2016 协作水平
 
@@ -62,7 +64,7 @@ Figma 在 Beta 期做了三个限制：① 仅 Mac 桌面应用；② 需要公�
 - [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/两万字详解claude-code源码核心机制.md)
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](https://github.com/QianJinGuo/wiki-public/blob/main/entities/深入理解-claude-code-源码中的-agent-harness-构建之道.md)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md)
-- [Karpathy Vibe Coding Agentic Engineering](../ch04/268-karpathy-vibe-coding-agentic-engineering.html)
+- Karpathy Vibe Coding Agentic Engineering
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
 - [Openclaw 完全指南这可能是全网最新最全的系统化教程了32W字建议收藏](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-完全指南这可能是全网最新最全的系统化教程了32w字建议收藏.md)
 

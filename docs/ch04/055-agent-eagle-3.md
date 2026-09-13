@@ -1,6 +1,6 @@
 # 多轮 Agent 场景下，滴滴的 EAGLE-3 训推加速实践
 
-> 📊 Level ⭐⭐ | 7.6KB | `entities/taobao-smart-shopping-guide-agent-evaluation-pzmx.md`
+> 📊 Level ⭐⭐ | 7.6KB
 
 过去两年，大语言模型（LLM）的应用形态从 ChatBot 快速演进为 AI Agent。在自动化代码工程、长文档分析、多轮工具调用等复杂工作流中，上下文长度已从千级 token 扩展至数十万级；与此同时，LLM 的自回归生成具有强串行特性，导致延迟和吞吐成为制约用户体验与成本的核心瓶颈。
 围绕这一问题，本文基于开源投机采样框架——SpecForge，介绍滴滴在多轮 Agent 场景中对 EAGLE-3 训练与推理的实践。在训练侧，针对 EAGLE-3 在长序列场景中的显存与通信瓶颈，引入统一序列并行（USP），使得在大规模集群上训练 128K 乃至更长上下文成为可能，现已将相关能力贡献至 SpecForge 开源社区；推理侧，相较 MTP 方法，EAGLE-3 在长序列场景中可实现超过 2 倍 的 TPOT（Mean/P95）收益。上述训练与推理优化，已在实际业务场景中得到验证。
@@ -11,7 +11,7 @@
 - [Ai Skill Skill Creator 源码拆解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-skill-skill-creator-源码拆解.md)
 - [Harness Engineering Systematic Explainer](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-systematic-explainer.md)
 - [Didi Eagle 3 Speculative Decoding Agents](https://github.com/QianJinGuo/wiki-public/blob/main/entities/didi-eagle-3-speculative-decoding-agents.md)
-- [Langsmith Trajectory Evals](../ch01/357-langsmith-trajectory-evals.html)
+- Langsmith Trajectory Evals
 - [Ai Skill Metrics System](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-skill-metrics-system.md)
 
 → [原文存档](http://mmbiz.qpic.cn/mmbiz_png/1wBZCGiaYqBHxH4cCwCOochEJ8ekFkaFCpZPtJBXXibYk1vt31HhZ7McAeVAryqYqUickFl10bkD5Q7922uSgGEhg/0?wx_fmt=png)

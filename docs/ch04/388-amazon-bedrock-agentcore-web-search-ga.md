@@ -1,6 +1,6 @@
 # Amazon Bedrock AgentCore Web Search: 托管式网页搜索能力 GA
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 10.0KB | `entities/amazon-bedrock-agentcore-web-search-ga.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 10.0KB
 
 > **来源**: AWS Machine Learning Blog · Veda Raman, Kalyan Garimella · 2026-06-19
 > 2nd Source: AWS 中国区博客 · 杨探, 王文巍, 裴秋利 · 2026-07-22
@@ -18,6 +18,8 @@ Amazon Bedrock AgentCore Web Search 以全托管 MCP 兼容方式为 AI Agent �
 3. **Amazon 自建搜索索引**：非第三方搜索 API wrapper，覆盖数百亿文档，持续分钟级刷新
 4. **隐私保证**：查询流量不离开 AWS 基础设施，满足数据驻留和第三方出口合规要求
 5. **知识图谱 + 语义片段提取**：内置知识图谱提供高置信度事实答案；语义片段提取针对 LLM context window 优化
+
+## 深度分析
 
 ### 技术架构
 

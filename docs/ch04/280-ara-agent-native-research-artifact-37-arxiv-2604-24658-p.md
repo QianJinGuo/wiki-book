@@ -1,6 +1,6 @@
 # ARA — Agent-Native Research Artifact（37 作者，arXiv 2604.24658，PDF 范式终结提案）
 
-> 📊 Level ⭐⭐⭐⭐ | 13.6KB | `entities/ara-agent-native-research-artifact-37authors.md`
+> 📊 Level ⭐⭐⭐⭐ | 13.6KB
 
 ## ARA — Agent-Native Research Artifact
 
@@ -10,6 +10,8 @@
 **一作 Jiachen Liu (Amber Liu)** — 密歇根大学 CS 博士（师从 Mosharaf Chowdhury），前 Meta 超级智能实验室研究科学家，本科上海交大。研究方向 = AI for Science + 机器学习系统（LLM 预训练/后训练），2023 年入选 MLSys Rising Stars，曾在 Apple / MIT CSAIL 从事研究。
 
 **作者团队 37 人**，含 MIT Alex Pentland、CMU Beidi Chen、Michigan Mosharaf Chowdhury、Stanford Chenglei Si（AI co-scientist 方向活跃）。一上 arXiv 就在 X 和小红书引发争论。
+
+## 深度分析
 
 ### 1. 37 作者的协作规模信号
 ARA（Agent-native Research Artifact）论文的 37 位作者规模反映了 AI agent 研究的跨团队协作特性——agent 研究需要 AI、HCI、安全、工程等多个领域的专业知识。这种大规模协作可能成为 AI agent 论文的常态。
@@ -46,7 +48,7 @@ ARA 类工作推动的是整个研究工具链的演进——从文献搜索到�
 ## 相关实体
 - [Kimi K2 6 Tidb Agent Database](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kimi-k2-6-tidb-agent-database.md)
 - [Kimi K2 Tidb Agent Database Huangdongxu 20260513](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kimi-k2-tidb-agent-database-huangdongxu-20260513.md)
-- [Anthropic Multi Agent Research System](223-anthropic-multi-agent-research-system.html)
+- Anthropic Multi Agent Research System
 - [Gaode Ai Native 7X24 Pipeline Self Healing](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gaode-ai-native-7x24-pipeline-self-healing.md)
 - [Deeppotential Alibabacloud Agentrun Scientific Ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deeppotential-alibabacloud-agentrun-scientific-ai.md)
 

@@ -1,6 +1,6 @@
 # 一份可信来源，终结 Skill 管理混乱：Skill 治理最佳实践
 
-> 📊 Level ⭐⭐ | 8.8KB | `entities/一份可信来源终结-skill-管理混乱skill-治理最佳实践.md`
+> 📊 Level ⭐⭐ | 8.8KB
 
 → [原文存档](https://mp.weixin.qq.com/s/b88VRdAQ2u7IhQBqvNcnVg)
 
@@ -42,7 +42,7 @@ AI Agent 正在进入日常工作。写代码、做评审、整理文档、排�
 
 ### ▍**第一步：先本机统一，再进入 Registry**
 
-Nacos Skill Sync 的 Local mode 负责本机统一。它在本机建立中心仓库，通过软链接或复制方式关联 Codex、Claude Code、Cursor、Qoder 等 Agent 目录。同一份 Skill 只维护一份，后续修改也会同步到本机多个 Agent，减少手动复制和同名副本冲突。Local mode 的使用细节，见《[别再手动复制 Skill 了：多 Agent 时代的 Skill 管理方案](<https://mp.weixin.qq.com/s?__biz=MzUzNzYxNjAzMg==&mid=2247584672&idx=1&sn=7de3c7881865a36bf716cbc2f832b614&scene=21#wechat_redirect>)》。
+Nacos Skill Sync 的 Local mode 负责本机统一。它在本机建立中心仓库，通过软链接或复制方式关联 Codex、Claude Code、Cursor、Qoder 等 Agent 目录。同一份 Skill 只维护一份，后续修改也会同步到本机多个 Agent，减少手动复制和同名副本冲突。Local mode 的使用细节，见《别再手动复制 Skill 了：多 Agent 时代的 Skill 管理方案》。
 
 Local mode 的边界在于本机。只要涉及跨设备、团队共享、安全审核、版本发布和回滚，就需要一个远端统一入口来承接 Skill 的来源、状态和分发，这就是 Nacos AI Registry 要解决的问题。
 

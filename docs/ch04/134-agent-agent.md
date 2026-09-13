@@ -1,6 +1,6 @@
 # Agent资本市场：自主Agent融资框架与批判
 
-> 📊 Level ⭐⭐⭐ | 10.9KB | `entities/agent-capital-markets-wright-shensiquan.md`
+> 📊 Level ⭐⭐⭐ | 10.9KB
 
 ## 核心数据
 - **推理成本**：每年降40倍，自GPT-4已压缩300-600倍
@@ -43,6 +43,7 @@ Wright判断：正处于第二→第三阶段之间。
 2. **人类经济位置未答**：Agent公司最终不需要人类股东，人类在链上的经济位置是初始设计者？股东？租屋？还是完全displaced？
 3. **"会发生"≠"发生了是好的"**：两个命题之间的空白未被填上
 
+## 深度分析
 ### 框架核心：Aaron Wright论证了什么
 Wright构建了一个"Agent可以成为独立融资主体"的完整论证链，其核心假设是：当法律主体地位（Wyoming无成员LLC）和可验证的现金流（代码执行结果+链上记录）同时成立，传统的"机构做决策需要一个人类交易对手"的风投逻辑将被信用分析逻辑取代。
 **关键论证节点：**
@@ -88,7 +89,7 @@ Wright用1970s MBS→1980s高收益债→2000s Shopify Capital来论证"Agent资
 - [Agent Evolution Four Stages Six Dimensions Aliyun](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-evolution-four-stages-six-dimensions-aliyun.md)
 - [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [Claude Code Openclaw Memory Vector Db Doubt](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-openclaw-memory-vector-db-doubt.md)
-- [Codex Goal Six Hour Run](../ch09/078-codex-goal-six-hour-run.html)
+- Codex Goal Six Hour Run
 
 → [原文存档](https://mp.weixin.qq.com/s/GK1r3ucE2_TJfkOHiqveRQ)
 

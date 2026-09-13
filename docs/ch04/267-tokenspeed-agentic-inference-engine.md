@@ -1,6 +1,6 @@
 # Tokenspeed Agentic Inference Engine
 
-> 📊 Level ⭐⭐⭐⭐ | 15.3KB | `entities/tokenspeed-agentic-inference-engine.md`
+> 📊 Level ⭐⭐⭐⭐ | 15.3KB
 
 ## Overview
 
@@ -95,6 +95,8 @@ TokenSpeed 并非要取代现有推理引擎，而是针对特定场景提供更
 | Continuous Batching | ✅ |
 | PD 分离 | ✅ |
 | Prefix Caching | ✅ |
+
+## 深度分析
 
 ### 1. Agentic 推理场景与传统推理场景的本质差异
 

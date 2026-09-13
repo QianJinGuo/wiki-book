@@ -1,6 +1,6 @@
 # The Race to Own the Agentic Future | Tidemark
 
-> 📊 Level ⭐⭐⭐ | 6.8KB | `entities/the-race-to-own-the-agentic-future-tidemark.md`
+> 📊 Level ⭐⭐⭐ | 6.8KB
 
 ## 深度分析
 Tidemark 这篇文章的核心命题是：**AI 不会杀死垂直 SaaS，恰恰相反，垂直 SaaS 的 Control Point 有机会成为 Agentic Future 的 System of Action**。这个结论挑战了 2024-2025 年公开市场的主流叙事——后者普遍认为 AI 将对垂直 SaaS 造成毁灭性打击，并将相关股票估值压低 40%。
@@ -30,7 +30,7 @@ Step 2 的论述尤为深刻：**全 Agent 开发已经可行**，公司间差�
 
 ### 4. Moats 重新定义：Sean Doherty 的「micro harness」框架
 GovDash CEO Sean Doherty 的引言值得单独拆解："Customers will be consuming tokens; I want them to consume on GovDash. We need to ensure that customers get the highest output per token on GovDash... every product surface must be the best micro harness to do that job."
-这揭示了一个关键的护城河逻辑转变：**在 Agent 时代，护城河不再是功能多少，而是每个产品表面作为特定任务 micro harness 的效率**。用户关心的不是「你的软件有多少功能」，而是「用你的软件完成任务，每 token 产出的质量」。这个框架与 [Harness Engineering](../ch05/019-harness-engineering.html) 实体高度互补。
+这揭示了一个关键的护城河逻辑转变：**在 Agent 时代，护城河不再是功能多少，而是每个产品表面作为特定任务 micro harness 的效率**。用户关心的不是「你的软件有多少功能」，而是「用你的软件完成任务，每 token 产出的质量」。这个框架与 Harness Engineering 实体高度互补。
 
 ## 实践启示
 1. **立即行动而非等待清晰**：文章明确说"如果你不感到害怕，你已经落后了"。对于 Vertical SaaS 公司，这意味着现在就必须把 Agent 集成到产品路线图的核心位置，而不是放在实验层。

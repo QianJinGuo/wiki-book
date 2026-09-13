@@ -1,6 +1,6 @@
 # Thought-Aligner：智能体行为安全新范式——可插拔思维校正层（ICML 2026）
 
-> 📊 Level ⭐⭐⭐⭐ | 15.6KB | `entities/thought-aligner-shanghai-fudan-icml-2026.md`
+> 📊 Level ⭐⭐⭐⭐ | 15.6KB
 
 ## Thought-Aligner：智能体行为安全新范式——可插拔思维校正层
 
@@ -159,6 +159,8 @@ Thought-Aligner 的独特贡献：
 - **团队**：上海创智学院 × 复旦大学
 
 → [原文存档](https://mp.weixin.qq.com/s/TMccM7M3LaoFMpPbG33drw)
+
+## 深度分析
 
 ### 1. 从"规则拦截"到"思维校正"的范式意义
 

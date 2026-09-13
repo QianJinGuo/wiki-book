@@ -1,6 +1,6 @@
 # AgentOps: Operationalize agentic AI at scale with Amazon Bedrock AgentCore
 
-> 📊 Level ⭐⭐⭐⭐ | 10.8KB | `entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md`
+> 📊 Level ⭐⭐⭐⭐ | 10.8KB
 
 AWS 发布的 AgentOps 参考架构，将 Agent 运维拆解为四大支柱（治理与安全、构建与运维、评估、可观测性），并以 Amazon Bedrock AgentCore 为平台实现端到端落地。这是目前公有云厂商对 Agentic AI 生产化最系统的工程实践方案。
 
@@ -47,6 +47,8 @@ AWS 将 AgentDevOps 映射到传统 DevOps 的六个阶段：Plan → Develop �
 | 系统级 | 生产就绪度 | 端到端延迟、TTFT、吞吐量、循环检测、单任务成本 |
 
 **关键洞察**：正确的单轮回复不保证成功的会话结果——这解释了为什么仅靠单元测试/基准测试无法保证 Agent 质量。
+
+## 深度分析
 
 ### 1. AgentOps 是 GenAIOps 的范式升级，而非简单延伸
 

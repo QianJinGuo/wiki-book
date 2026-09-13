@@ -1,6 +1,6 @@
 # EC2 NAT 实例选型与部署实践（AWS 中国宁夏区域）
 
-> 📊 Level ⭐⭐⭐⭐ | 9.9KB | `entities/ec2-nat-instance-deploy-practice-aws-china-2026.md`
+> 📊 Level ⭐⭐⭐⭐ | 9.9KB
 
 > 原文存档：[原文存档](https://aws.amazon.com/cn/blogs/china/ec2-nat-instance-deploy-practice/)
 
@@ -62,6 +62,8 @@ NAT 实例流量经过互联网网关（IGW）时，受**多流流量规则**限
 - 恢复时间：分钟级（相比 NAT 网关的秒级切换）
 
 **CloudFormation 一键部署**：文章提供完整 CFN 模板，参数化输入（VPC ID、私有子网列表、AMI ID、实例类型）即可创建整个 NAT 部署栈。
+
+## 深度分析
 
 ### 1. NAT 网关 vs NAT 实例：费用结构决定分水岭
 

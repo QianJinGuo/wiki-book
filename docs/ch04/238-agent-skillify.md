@@ -1,6 +1,6 @@
 # Agent 可靠性的工程解法：从 Skillify 看持续改进机制
 
-> 📊 Level ⭐⭐⭐⭐ | 23.0KB | `entities/agent-reliability-engineering-skillify-continuous-improvement.md`
+> 📊 Level ⭐⭐⭐⭐ | 23.0KB
 
 ## 概述
 YC 总裁 Garry Tan 的 OpenClaw 一周内两次失败：日历查询和时区计算。两次都是 Agent 有现成工具却选择自己推理——该用脚本的地方用了模型。Garry Tan 的解法是 skillify：一套 10 步检查清单，将每次失败固化为确定性测试，让同样的错误结构上不可能再发生。
@@ -108,6 +108,7 @@ OpenAI 的"garbage collection"思路值得借鉴：后台定期运行清理 Agen
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](https://github.com/QianJinGuo/wiki-public/blob/main/entities/imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群.md)
 - [Harness Engineering 七层框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-7-layers-framework.md)
 
+## 深度分析
 ### 自举循环的本质：智能制造约束，约束反过来限制智能
 Skillify 最深刻的机制藏在 Step 2 和 Step 1 的循环里：Agent 在 latent space 里用判断构建了确定性脚本（calendar-recall.mjs），然后同一个 Agent 被 skill 强制运行那个脚本——而不是再做一次判断。这是 Bootstrap Loop 的完整形态：**模型的智能创造了约束，约束反过来限制模型在不该用智能的地方犯错**。
 这个循环之所以有效，因为它解决了一个根本矛盾：Agent 的推理能力既是可靠性问题的来源，又是可靠性问题的解决方案。如果单纯让 Agent 凭" vibes"工作，它会在需要确定性的地方自己推理（犯第一类错误）；如果过度约束 Agent，它就失去了利用判断处理新问题的能力。Skillify 的自举循环让模型自己决定"哪里需要确定性"，然后把这个决定固化为结构性约束。

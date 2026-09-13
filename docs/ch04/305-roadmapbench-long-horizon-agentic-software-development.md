@@ -1,6 +1,6 @@
 # RoadmapBench: Long-Horizon Agentic Software Development 基准评估
 
-> 📊 Level ⭐⭐⭐⭐ | 10.3KB | `entities/roadmapbench-long-horizon-agentic-software-development.md`
+> 📊 Level ⭐⭐⭐⭐ | 10.3KB
 
 > RoadmapBench 是一个面向长期、多目标软件开发的编码 Agent 评估基准，包含 115 个基于真实开源版本升级的长期任务，覆盖 17 个仓库和 5 种编程语言。最强模型 Claude-Opus-4.7 仅解决 39.1% 的任务，揭示长期软件开发仍是未解决难题。
 
@@ -93,6 +93,8 @@ RoadmapBench 超越简单的 pass/fail，提供多维度质量评估：
    - **长期规划**：理解和执行跨多步骤的复杂路线图
    - **跨文件协调**：在数十个文件间保持一致性和正确性
    - **架构一致性**：理解并遵循现有代码库的架构模式
+
+## 深度分析
 
 ### 为什么长期开发如此困难？
 

@@ -1,6 +1,6 @@
 # Multi-Agent 的四种协作模式：Supervisor、Swarm、网状、流水线，怎么选？
 
-> 📊 Level ⭐⭐⭐ | 8.3KB | `entities/james-multi-agent-collaboration-modes.md`
+> 📊 Level ⭐⭐⭐ | 8.3KB
 
 上一篇我们把 RAG、Memory、MCP 拼进了同一个 LangGraph，搭出了一个生产级 AI 助手的完整骨架。很多人看完留言说「能跑起来，但一旦任务复杂起来，这一个 Agent 就有点撑不住了」——没错，这正是今天要解决的问题。
 你搭了一个 Agent，起初跑得挺好。后来需求升级了，调研+写作+事实核查全压在一个 Agent 上。结果上线后发现：系统提示词膨胀到 800 字，工具列表里有 15 个工具，Agent 开始选错工具、忘记自己设定的规则，偶尔一步出错后面全错。你在想，是不是我的 Prompt 写得不够好？
@@ -10,7 +10,7 @@
 ## 相关实体
 - [构建基于多智能体架构的深度思考交易系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建基于多智能体架构的深度思考交易系统.md)
 - [Factory Mission Multi Agent Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/factory-mission-multi-agent-architecture.md)
-- [Anthropic Multi Agent Research System](223-anthropic-multi-agent-research-system.html)
+- Anthropic Multi Agent Research System
 - [Multi Agent Mission Factory Luke Aiengineer](https://github.com/QianJinGuo/wiki-public/blob/main/entities/multi-agent-mission-factory-luke-aiengineer.md)
 
 → [原文存档](http://mmbiz.qpic.cn/sz_mmbiz_png/Ac2icjMiaJEpn1NqpicTpGY7DYicxgHCmTKz5312PnRExnLQD59pr1hMFicEKQicgA51CSe5RDERyv303M1w8obLUEZQ/0?wx_fmt=png)

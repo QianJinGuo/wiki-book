@@ -1,6 +1,6 @@
 # 上下文漂移与工具调用幻觉：Agent 长对话可靠性两大核心问题
 
-> 📊 Level ⭐⭐⭐⭐ | 17.9KB | `entities/kamacoder-agent-context-drift-tool-hallucination.md`
+> 📊 Level ⭐⭐⭐⭐ | 17.9KB
 
 ## 概述
 
@@ -140,6 +140,8 @@ Transformer 的 Self-Attention 机制导致两个直接后果，直接引发上�
 > 这两个问题的共同点是：都是概率生成模型的固有特性，需要在工程层面做约束和兜底。"
 
 ---
+
+## 深度分析
 
 ### 两大问题的本质是同一个：概率生成模型缺乏显式任务约束机制
 

@@ -1,6 +1,6 @@
 # AI Agent 时代 CI/CD 生存指南 — 阿里 a1 CLI 生产级实践
 
-> 📊 Level ⭐⭐⭐ | 4.2KB | `entities/ali-cli-ai-cicd-practice-a1.md`
+> 📊 Level ⭐⭐⭐ | 4.2KB
 
 > 阿里 a1 CLI（数十万行 Go, 数百命令, 数万日活）的生产级 CI/CD 体系，专为 AI Agent 生成的代码设计。核心挑战：如何 **harness AI 的随机性**。[^1]
 
@@ -12,7 +12,7 @@
 
 - [阿里 Devix Harness Ops Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/alibaba-devix-harness-ops-agent-7x24.md) — 互补：Devix 聚焦运维 Agent 7x24，本实体聚焦 **AI 代码的 CI/CD 发布工程**
 - [腾讯 TAB Harness 全链路实战](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tencent-tab-harness-production-practice.md) — 互补：TAB 覆盖从需求到交付的 Harness 流程，本实体聚焦 **CI/CD 门禁与发布工程**维度
-- [Harness Engineering](../ch05/019-harness-engineering.html) — 上位框架：本实体是 Harness 工程在 **CI/CD 发布场景**的具体实现
+- Harness Engineering — 上位框架：本实体是 Harness 工程在 **CI/CD 发布场景**的具体实现
 
 ## 四层准入门禁
 

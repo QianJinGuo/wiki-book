@@ -1,6 +1,6 @@
 # Against \"Brain Damage\
 
-> 📊 Level ⭐⭐⭐ | 8.3KB | `entities/against-brain-damage.md`
+> 📊 Level ⭐⭐⭐ | 8.3KB
 
 ## Against "Brain Damage"
 
@@ -38,6 +38,8 @@ AI 还通过对社会过程的影响来影响我们的思维。团队工作本�
 - **锚定效应**：一旦看到 AI 的想法，就很难突破那些边界思考
 - **三步原则**：think first, write first, meet first —— AI 作为推动力而非替代品
 
+## 深度分析
+
 ### 1. "必要难度"原理与学习心理
 
 MIT 研究 -17% 成绩背后是认知科学中的"必要难度"原理：学习需要心理努力，而 AI 默认提供即时答案绕过了这个过程。 学生获得的是流畅感知的错觉而非真实心智建构，"感觉学到了"和"真正学到了"之间存在巨大鸿沟。
@@ -65,7 +67,7 @@ AI 虽是单一智能复制，其"多样性"输出被训练数据模式限制。
 在看到 AI 摘要前先以文字记录自己的观点，建立思维锚点后再让 AI 作为推动力。
 
 ## 相关实体
-- [Choosing To Stay Human](022-choosing-to-stay-human.html)
+- Choosing To Stay Human
 - [Lightfield Introducing Skills](https://github.com/QianJinGuo/wiki-public/blob/main/entities/lightfield-introducing-skills.md)
 - [Claude Code Team 10 Tips Boris](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-team-10-tips-boris.md)
 - [Learning Path To Senior](https://github.com/QianJinGuo/wiki-public/blob/main/entities/learning-path-to-senior.md)

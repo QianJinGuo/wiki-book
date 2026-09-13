@@ -1,6 +1,6 @@
 # Codex Goal Six Hour Run
 
-> 📊 Level ⭐⭐⭐⭐ | 11.1KB | `entities/codex-goal-six-hour-run.md`
+> 📊 Level ⭐⭐⭐⭐ | 11.1KB
 
 ## 概述
 
@@ -69,6 +69,8 @@ Ralph Wiggum Loop 是 Claude Code 生态中通过外部脚本和 Git history 实
 | **适用模型** | Claude Code | Codex (gpt-5.5) |
 | **最佳场景** | 需要"每轮新鲜眼睛"的任务 | 长时间跨度、上下文演进关键的任务 |
 
+## 深度分析
+
 ### 1. 持久化目标状态改变了 AI 运行的可用性边界
 
 `/goal` 将目标状态从进程内存迁移到 app-server 状态存储，突破了传统会话模型的核心限制：进程终止 ≠ 任务终止。 这意味着 5.5 小时的暂停不会导致任务失败，笔记本休眠不会丢失上下文。对于需要数小时运行的代码重构、测试套件执行或文档生成任务，这种可靠性改变了对 AI 运行可行性的判断标准。
@@ -125,7 +127,7 @@ Old 范式下，工程师是 supervisor——监控 AI 运行，随时准备干�
 ## 相关实体
 
 - [Codex /goal：长任务Agent的目标运行时](https://github.com/QianJinGuo/wiki-public/blob/main/entities/codex-goal-agent-runtime.md) — 若飞源码级拆解，目标状态机 + completion audit 协议 + budget_limit 收束模板
-- [Claude Code / OpenClaw Memory 对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-openclaw-memory-comparison.md) — 记忆架构与 Codex 的对比参考
+- Claude Code / OpenClaw Memory 对比 — 记忆架构与 Codex 的对比参考
 - [Anthropic Claude Code 大型代码库最佳实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-claude-code-large-codebase-best-practices-50002a089323.md) — Claude Code 在大规模代码库中的实践
 - [Claude Code Session 管理 1M Context](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-session-management-1m-context.md) — 长上下文会话管理
 

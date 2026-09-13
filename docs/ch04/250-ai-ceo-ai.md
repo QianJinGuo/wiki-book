@@ -1,6 +1,6 @@
 # AI 原生团队的脏乱差：CEO 数字分身失败案例与 AI 销售线索分配的兴衰
 
-> 📊 Level ⭐⭐⭐⭐ | 17.6KB | `entities/ai-native-team-building-failures-ceo-digital-twin-case.md`
+> 📊 Level ⭐⭐⭐⭐ | 17.6KB
 
 ## Overview
 
@@ -198,6 +198,8 @@
 > 说真的，**这真的挺不 AI、也挺不酷的**。
 
 → [原文存档](https://mp.weixin.qq.com/s/yPTIXREZZQ75pA4YY5MKoA)
+
+## 深度分析
 
 ### 1. AI 原生失败的技术外衣与管理内核
 

@@ -1,6 +1,6 @@
 # Dockerless: 免环境补丁验证器
 
-> 📊 Level ⭐⭐⭐ | 4.9KB | `entities/dockerless-environment-free-verifier-coding-agent.md`
+> 📊 Level ⭐⭐⭐ | 4.9KB
 
 ## 摘要
 
@@ -13,6 +13,8 @@ Dockerless 是上海交通大学与抖音集团提出的免环境（environment-
 3. **免环境 SFT**：16K 免环境轨迹中 Dockerless 打分 top 25% 做 SFT，效果与有 Docker 环境采集几乎持平 (60.6 vs 60.0 Verified)
 4. **免环境 RL**：Dockerless 分数直接当 GRPO 奖励信号，与 oracle 测试奖励差距仅 0.4-1.3 点
 5. **核心洞察**：前沿模型在裸 Linux 环境（无 per-repo Docker）的解决率仅掉 3-14 个百分点，验证器而非 rollout 环境才是后训练瓶颈
+
+## 深度分析
 
 ### 验证器瓶颈的工程意义
 

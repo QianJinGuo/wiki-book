@@ -1,6 +1,6 @@
 # Cost effective deployment of vision-language models for pet behavior detection on AWS Inferentia2
 
-> 📊 Level ⭐⭐⭐ | 6.1KB | `entities/cost-effective-deployment-of-vision-language-models-for-pet-behavior-detection-o.md`
+> 📊 Level ⭐⭐⭐ | 6.1KB
 
 > 来源：[原文存档](https://aws.amazon.com/blogs/machine-learning/cost-effective-deployment-of-vision-language-models-for-pet-behavior-detection-on-aws-inferentia2/)
 
@@ -10,6 +10,7 @@
 - 通过 Neuron SDK 编译 PyTorch 模型，保留原有架构，仅添加轻量 wrapper
 - 成本降低 83%，同时维持高吞吐量和低延迟
 
+## 深度分析
 ### 从 GPU 到专用 AI 芯片的迁移动机
 Furbo 的业务场景具有典型 IoT 特征：数十万台设备持续产生视频流，需要 7x24 小时实时推理。这种"始终在线"的推理模式与 GPU 的设计初衷（高吞吐量突发处理）存在错配——GPU 按需付费模式在持续低负载下成本效益极低。
 Inferentia2 作为 AWS 专用 AI 芯片，专为推理场景优化，提供更具预测性的 pricing model。对比 GPU on-demand 实例，Inferentia2 的成本结构更适合 Furbo 这类规模的持续推理工作负载。
@@ -49,7 +50,7 @@ Furbo 的系统架构采用双层设计：
 
 ## 相关实体
 - [Amazon Nova Lite Fine-Tuning: 高性价比的视觉检测模型微调案例与实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-nova-lite-fine-tuning-cost-effective-vision-detection-model-tuning-case-and-practice.md)
-- [Reinforcing Recursive Language Models | alphaXiv](https://github.com/QianJinGuo/wiki-public/blob/main/entities/reinforcing-recursive-language-models-alphaxiv.md)
+- Reinforcing Recursive Language Models | alphaXiv
 - [Language Models and Meaning](https://github.com/QianJinGuo/wiki-public/blob/main/entities/stochastic-parrot-language-models-and-meaning.md)
 
 - [llava-onevision-2：全帧率视频理解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llava-onevision-2-full-frame-rate-vlm.md)

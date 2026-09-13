@@ -1,6 +1,6 @@
 # Agentic Incident Triage Assistant with Amazon Quick, New Relic MCP Server, and Asana
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 10.2KB | `entities/agentic-incident-triage-assistant-amazon-quick-new-relic-asana.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 10.2KB
 
 > AWS 官方博客实战教程（Ebbey Thomas / Muthuvelan Swaminathan），2026-06-09 发布。展示 Amazon Quick chat agent 如何通过 native MCP 集成编排 New Relic 推理工具 + Asana 任务系统，从单次 prompt 端到端完成 incident triage + RCA brief + handoff task 自动化。
 
@@ -20,6 +20,8 @@
 - **5 个 New Relic 推理工具的 tool routing 模式**：agent 根据 prompt 内容决定调用哪些 tool，展示了 agentic tool selection 在生产环境的实现
 - **RCA brief 标准格式**：Summary / Blast radius / Likely trigger / Key evidence / Recommended next actions 5 段固定结构，确保 cross-shift handoff 一致性
 - **安全治理三层防御**：least-privilege New Relic service account、scoped Asana OAuth（tasks:write 等）、Asana task notes 当 handoff 摘要而非数据导出——明确列出禁止写入 PII / 凭据 / 拓扑细节
+
+## 深度分析
 
 ### 1. Agentic 编排架构：Chat Agent 作为三方集成枢纽
 

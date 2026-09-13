@@ -36,6 +36,8 @@ AI 编程是 Agent 最早成熟的品类，也是理解 Agent 工程的最佳窗
 
 ## 本章内容
 
+### ⭐ 入门（11 篇）
+
 - [001. AI Coding 的底层框架：一切优化都是在对抗熵增——信息论视角](ch09/001-ai-coding)
 - [002. Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](ch09/002-claude-code-anthropic)
 - [003. 无障碍设计师 vibe coding：当所有同事都在用 AI 写代码时](ch09/003-vibe-coding-ai)
@@ -47,6 +49,9 @@ AI 编程是 Agent 最早成熟的品类，也是理解 Agent 工程的最佳窗
 - [009. Loop 的产品视角——项目中心从人挪到 Agent 系统](ch09/009-loop-agent)
 - [010. 用 Kiro 构建行业专业软件：Spec vs Vibe Coding 的分层结论](ch09/010-kiro-spec-vs-vibe-coding)
 - [011. Device Code Phishing Forensics: What We Learned from BEC Investigations in the Wild](ch09/011-device-code-phishing-forensics-what-we-learned-from-bec-inv)
+
+### ⭐⭐ 工程师（13 篇）
+
 - [012. Claude Code Loop Types — 官方四种循环模式分类法](ch09/012-claude-code-loop-types)
 - [013. Claude Dispatch + 接口力量：AI 从 Chatbot 到 Agent Interface 的转变](ch09/013-claude-dispatch-ai-chatbot-agent-interface)
 - [014. Notes Inside China AI Labs Lambert](ch09/014-notes-inside-china-ai-labs-lambert)
@@ -60,6 +65,9 @@ AI 编程是 Agent 最早成熟的品类，也是理解 Agent 工程的最佳窗
 - [022. Introducing deepsec: The security harness for finding vulnerabilities in your codebase](ch09/022-introducing-deepsec-the-security-harness-for-finding-vulner)
 - [023. Spec-Driven AI 编程半年实战 — 有损管道、三工具比较与三大认知陷阱](ch09/023-spec-driven-ai)
 - [024. Automate progressive rollouts with Vercel Flags - Vercel](ch09/024-automate-progressive-rollouts-with-vercel-flags-vercel)
+
+### ⭐⭐⭐ 专家（34 篇）
+
 - [025. 使用Claude Code：session管理与1M上下文](ch09/025-claude-code-session-1m)
 - [026. Cheap code means formal verification is reasonable now — Antfly Blog](ch09/026-cheap-code-means-formal-verification-is-reasonable-now-ant)
 - [027. It’s safe to close your laptop now: Hosting coding agents on Amazon Bedrock AgentCore](ch09/027-it-s-safe-to-close-your-laptop-now-hosting-coding-agents-on)
@@ -94,6 +102,9 @@ AI 编程是 Agent 最早成熟的品类，也是理解 Agent 工程的最佳窗
 - [056. 复制这套神仙配置，让Claude Code全自动修Bug！告别每天重复教AI写代码](ch09/056-claude-code-bug-ai)
 - [057. Codex can now control other desktop devices via Computer Use](ch09/057-codex-can-now-control-other-desktop-devices-via-computer-use)
 - [058. Dockerless: 免环境补丁验证器](ch09/058-dockerless)
+
+### ⭐⭐⭐⭐ 科学家（32 篇）
+
 - [059. 小米 MiMo Code — 长程编程 Agent 三大主线（计算/记忆/进化）+ 与 Claude Code 工程分化](ch09/059-mimo-code-agent-claude-code)
 - [060. AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](ch09/060-ai-claude-code-kiro-cli-aws-ipsec-vpn-aws)
 - [061. AI Coding Guide Tmall Deep Dive](ch09/061-ai-coding-guide-tmall-deep-dive)
@@ -126,6 +137,9 @@ AI 编程是 Agent 最早成熟的品类，也是理解 Agent 工程的最佳窗
 - [088. Claude Code Dynamic Workflows 实战模式与构建技巧](ch09/088-claude-code-dynamic-workflows)
 - [089. 百度网盘主端 FE AICR：AI Code Review 准入实践](ch09/089-fe-aicr-ai-code-review)
 - [090. Reward hacking is swamping model intelligence gains](ch09/090-reward-hacking-is-swamping-model-intelligence-gains)
+
+### ⭐⭐⭐⭐⭐ 大师（17 篇）
+
 - [091. DeepSeek Code Harness](ch09/091-deepseek-code-harness)
 - [092. Anthropic 内部 95% 数据分析自动化：分析 Agent 技术栈 + Skill 框架（21%→95% 准确率）](ch09/092-anthropic-95-agent-skill-21-95)
 - [093. 让 Coding Agent 从黑盒到透明：阿里云 Agent 观测审计数据采集实践（LoongSuite Pilot 端侧平台 + 3 类 Agent 形态 + 4 大观测审计能力）](ch09/093-coding-agent-agent-loongsuite-pilot-3-agent)
@@ -143,3 +157,12 @@ AI 编程是 Agent 最早成熟的品类，也是理解 Agent 工程的最佳窗
 - [105. Claude Code Agent Teams 架构分析](ch09/105-claude-code-agent-teams)
 - [106. Codex /goal 源码深度解析：状态表 + 续跑条件 + 预算账本](ch09/106-codex-goal)
 - [107. Codex 五层架构：记忆/知识/护栏/委派/分发](ch09/107-codex)
+
+
+---
+
+## 本章收束
+
+AI 编程是理解 Agent 工程的最佳窗口，因为代码有最强的验证器：编译器、测试、review。这一章的深度拆解反复指向同一件事——Coding Agent 的生产力差距不在模型，在质量门禁：谁先建好测试与回归防线，谁就敢让 Agent 跑得更快。这也是全书的工程哲学在编程场景的完整预演。
+
+---

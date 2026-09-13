@@ -1,6 +1,6 @@
 # AWS Network Firewall 审查 IDC-VPC 流量：VGW 架构 + BGP 路由传播实验
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 14.9KB | `entities/aws-network-firewall-vgw-bgp-traffic-inspection.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 14.9KB
 
 > [!abstract]
 > AWS China Blog 2026-06-12 实验笔记：用 CloudFormation 搭建 VPC + 模拟 IDC 环境，开启 BGP 路由传播 + 手工配置高优先级路由条目，验证 IDC ↔ 云之间流量经 AWS Network Firewall 审查的完整方案。
@@ -94,6 +94,8 @@ CloudFormation 一键部署 → IDC 模拟器发 HTTP 请求 → VPC 内 EC2 收
 | 单 VPC + DX | **VGW**（简单、便宜） |
 | 多 VPC + DX（VPC Peering 不足） | **TGW**（中心辐射、统一路由） |
 | 多账号 + 多 VPC + 多 IDC | **TGW + TGW Peering + Resource Access Manager** |
+
+## 深度分析
 
 ### 1. VGW + NFW 架构：静态路由劫持流量的实现原理
 

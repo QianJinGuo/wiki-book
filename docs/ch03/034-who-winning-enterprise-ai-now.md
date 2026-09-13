@@ -1,6 +1,6 @@
 # Who Winning Enterprise AI Now
 
-> 📊 Level ⭐⭐⭐ | 7.0KB | `entities/saastr-who-winning-enterprise-ai.md`
+> 📊 Level ⭐⭐⭐ | 7.0KB
 
 → [原文存档](https://www.saastr.com/whos-winning-enterprise-ai-now-claude-up-128-gemini-up-48-openai-down-8-grok-still-a-rounding-error/)
 
@@ -17,6 +17,8 @@
 - **编码助手是收入引擎**：代码生成是高 token 消耗、高频、ROI 可量化的工作负载，被 ETR 认定为当前拉动各大实验室企业收入增长最快的细分市场
 - **多模型成为新默认**：四家可信供应商（OpenAI、Anthropic、Google、xGroq 系）并存且排名清晰，单模型架构被视为采购风险（procurement liability）
 - **第二名是一门真实生意**：Anthropic 在企业市场份额增速超过所有对手，证明"可信替代者"的经济价值强于市场早期预期
+
+## 深度分析
 
 ### 1. 从"模型最强"到"格局合理"：领先优势压缩的信号意义
 

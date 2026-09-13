@@ -1,6 +1,6 @@
 # High-Throughput Graph Abstraction at Netflix: Part I
 
-> 📊 Level ⭐⭐⭐ | 9.8KB | `entities/high-throughput-graph-abstraction-at-netflix.md`
+> 📊 Level ⭐⭐⭐ | 9.8KB
 
 > **Background**: Netflix 内部维护一个跨服务的"图"用于描述服务依赖、客户连接、用户体验路径。Part I 介绍 10M ops/sec 规模、跨 650TB 数据量的生产级图抽象挑战与设计取舍。
 
@@ -68,7 +68,7 @@ Netflix 内部 1,500+ 微服务每日产生海量 ops 事件（service → servi
 Part II 将介绍 query engine、impact analysis 算法、client libraries。
 
 ## 相关实体
-- [High Throughput Graph Abstraction At Netflix Part I](084-high-throughput-graph-abstraction-at-netflix-part-i.html)
+- High Throughput Graph Abstraction At Netflix Part I
 - [Netflix Druid Interval Aware Caching](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-druid-interval-aware-caching.md)
 - [Netflix Metadata Service Model Lifecycle Graph](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-metadata-service-model-lifecycle-graph.md)
 - [Netflix Live Operations Human Infrastructure](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-live-operations-human-infrastructure.md)
@@ -82,6 +82,8 @@ Part II 将介绍 query engine、impact analysis 算法、client libraries。
 - Netflix Tech Blog 系列 (其他内容)
 
 → [原文存档](https://netflixtechblog.com/high-throughput-graph-abstraction-at-netflix-part-i-e88063e6f6d5)
+
+## 深度分析
 
 ### 层级化存储架构的工程哲学
 

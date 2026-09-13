@@ -1,6 +1,6 @@
 # Claw-SWE-Bench：首个独立测量Harness对编程Agent影响的基准
 
-> 📊 Level ⭐⭐⭐⭐ | 11.5KB | `entities/claw-swe-bench-harness-evaluation-benchmark-tokenrhythm.md`
+> 📊 Level ⭐⭐⭐⭐ | 11.5KB
 
 ## 核心贡献
 
@@ -117,7 +117,7 @@ Git 历史泄露问题在被发现前存在于 SWE-bench-Multilingual 的生产�
 
 ## 相关实体
 
-- [Harness Engineering](../ch05/019-harness-engineering.html)
+- Harness Engineering
 - [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki-public/blob/main/entities/pi-openclaw-coding-harness.md)
 - [复旦北大 AHE Agentic Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fudan-peking-ahe-agentic-harness-engineering.md)
 - [OpenClaw Agent Loop Design Patterns](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-agent-loop-design-patterns.md)

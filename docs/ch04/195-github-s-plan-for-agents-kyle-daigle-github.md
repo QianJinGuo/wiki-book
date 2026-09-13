@@ -1,6 +1,6 @@
 # GitHub's plan for Agents — Kyle Daigle, GitHub
 
-> 📊 Level ⭐⭐⭐ | 7.7KB | `entities/www-latent-space-p-github.md`
+> 📊 Level ⭐⭐⭐ | 7.7KB
 
 > Latent Space 播客对 GitHub COO Kyle Daigle 的深度访谈，讨论 GitHub 在 AI Agent 时代的战略方向、内部 AI 工作流、开源生态面临的挑战，以及 Copilot 从代码补全到云 Agent 的演进路径。
 
@@ -52,6 +52,8 @@ Copilot 正从代码补全工具演进为完整的开发平台：
 ### 5. Actions 作为通用计算层
 
 GitHub Actions 已从 CI/CD 工具演变为**通用安全 Agent 计算层**。Kyle 强调了 Actions 的任意代码执行能力和安全隔离特性，使其成为 Agent 运行时的天然选择。这与 webhooks、API 的历史一脉相承——GitHub 始终在构建「让外部系统安全执行代码」的能力。
+
+## 深度分析
 
 ### Former Developers in Leadership 的 AI 时代优势
 

@@ -1,6 +1,6 @@
 # Your First AI Agent Should Do One Thing Badly
 
-> 📊 Level ⭐⭐⭐ | 7.7KB | `entities/your-first-ai-agent-should-do-one-thing-badly.md`
+> 📊 Level ⭐⭐⭐ | 7.7KB
 
 → [原文存档](https://blog.crewai.com/your-first-ai-agent-should-do-one-thing-badly)
 
@@ -15,6 +15,8 @@ CrewAI 团队的核心论断：最有效的 agentic 系统都起步于"丢人的
 - **Human-in-the-loop 是特性不是限制**：从 100% 人工审核开始，逐步降到 80% → 50% → 完全自主。审核者会告诉你**实际**哪里出错，而不是你**想象**会出错的地方。
 - **失败要令人满意地明显**：开发阶段不要做花哨的错误恢复，要做"响亮的失败"——能看到失败、理解失败、修复根本原因。这与传统软件"优雅降级"原则相反。
 - **凭证据而非直觉添加 agent**："我觉得我们需要一个验证器"是猜测；能说出"47% 错误是格式问题，验证器能抓"才是有依据的决策。多 agent 架构会**倍增调试面**。
+
+## 深度分析
 
 ### 1. 为什么 Agentic 系统不能"先设计再实现"
 
@@ -47,8 +49,8 @@ CrewAI 强调的"crawl, walk, run"迭代哲学与 Karpathy 提出的 vibe coding
 ### 与相邻观点的张力
 
 - 与 [苦味教训](https://github.com/QianJinGuo/wiki-public/blob/main/entities/the-bitter-lesson-versus-the-garbage-can.md)的张力：Sutton 派认为不要为人类理解编码；本文认为不要为未知架构编码——但前者鼓励**算力与训练**取代精心设计，后者鼓励**迭代与证据**取代预先架构。
-- 与 [管理即超能力](../ch01/272-management-as-ai-superpower.html)互补：Mollick 强调"管理能力"是新关键技能；本文强调"管理复杂度"是关键约束——少 agent、少功能、少优化。
-- 与 [Your First Ai Agent Should Do One Thing Badly](193-your-first-ai-agent-should-do-one-thing-badly.html) 的"crawl, walk, run"与 [Claude Code 现状评估](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-and-what-comes-next.md) 的"一小时跑完"形成节奏对比——前者周迭代，后者小时级自治。
+- 与 管理即超能力互补：Mollick 强调"管理能力"是新关键技能；本文强调"管理复杂度"是关键约束——少 agent、少功能、少优化。
+- 与 Your First Ai Agent Should Do One Thing Badly 的"crawl, walk, run"与 [Claude Code 现状评估](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-and-what-comes-next.md) 的"一小时跑完"形成节奏对比——前者周迭代，后者小时级自治。
 
 ## 实践启示
 
@@ -61,10 +63,10 @@ CrewAI 强调的"crawl, walk, run"迭代哲学与 Karpathy 提出的 vibe coding
 ## 相关实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
-- [Karpathy Vibe Coding Agentic Engineering](268-karpathy-vibe-coding-agentic-engineering.html)
+- Karpathy Vibe Coding Agentic Engineering
 - [The Bitter Lesson Versus The Garbage Can](https://github.com/QianJinGuo/wiki-public/blob/main/entities/the-bitter-lesson-versus-the-garbage-can.md)
 - [Claude Code And What Comes Next](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-and-what-comes-next.md)
-- [Management As Ai Superpower](../ch01/272-management-as-ai-superpower.html)
+- Management As Ai Superpower
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
 - [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)

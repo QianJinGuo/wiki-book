@@ -1,6 +1,6 @@
 # 基于 Strands Agents SDK 和 Amazon Bedrock AgentCore 的商品广告图审查 Agent
 
-> 📊 Level ⭐⭐⭐⭐ | 10.6KB | `entities/product-ad-review-agent-with-strands-sdk-bedrock.md`
+> 📊 Level ⭐⭐⭐⭐ | 10.6KB
 
 AWS 官方博客发布的一篇企业级 Agent 实战案例：使用 Strands Agents SDK 的 **Agents as Tools** 模式 + Amazon Bedrock AgentCore 部署运行时，构建一个三 Agent 协作的「商品详情图广告词合规审查」系统。manager agent 负责协调，text extraction agent 负责图像 OCR，review agent 负责依据广告法知识库给出违规判定与修改建议。文章给出完整代码骨架、模型选型矩阵、以及端到端 AWS 部署架构（ECR + AgentCore Runtime + Bedrock KB + Cognito JWT + S3 + CloudFront + STS）。
 
@@ -21,6 +21,8 @@ AWS 官方博客发布的一篇企业级 Agent 实战案例：使用 Strands Age
 - **端到端 AWS 架构**：ECR（容器镜像） + Bedrock AgentCore Runtime（运行时） + Bedrock（基础模型） + OpenSearch / S3 Vector（KB 存储） + Cognito（用户管理 + JWT 鉴权） + STS（直传 S3 临时凭证） + S3 + CloudFront（图片存储与分发） + ALB（负载均衡）
 - **审核输出协议**：manager 严格规定输出格式 `- text: suggestion`，每条广告词一行，例如 `- "来个不如球釜": 表述存在歧义，"不如" 可能被理解为贬低性表述...`
 - **OCR 提示词工程**：详细规定识别范围（中英文+数字+单位、艺术字/渐变/立体字）、排除项（条形码、价格、3C 认证标志）、精度要求（区分 0/O、1/l、6/G 等相似字符）
+
+## 深度分析
 
 ### Agents as Tools 是企业级 Agent 的「微服务化」
 
@@ -54,7 +56,7 @@ manager agent 通过 `tools=[run_text_extraction, review_advertisement_text]` �
 - 工具调用链的可观测性
 - 多租户隔离
 
-对企业用户来说，AgentCore 的价值是「不用自己搭 Agent 运行平台」，对应 [AgentCore Managed Harness](../ch04/301-agentcore-managed-harness.html) 的定位。但代价是供应商锁定——业务逻辑通过 `@tool` 装饰器和 AgentCore 抽象耦合，迁出 AWS 需要重写工具桥接层。
+对企业用户来说，AgentCore 的价值是「不用自己搭 Agent 运行平台」，对应 AgentCore Managed Harness 的定位。但代价是供应商锁定——业务逻辑通过 `@tool` 装饰器和 AgentCore 抽象耦合，迁出 AWS 需要重写工具桥接层。
 
 ### OCR 提示词的「负面清单」工程
 
@@ -84,7 +86,7 @@ vision Agent 的 system prompt 中最值得借鉴的是「**严格排除**」清
 ## 相关实体
 
 - [Agentcore Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentcore-harness.md) — AgentCore Harness 综述
-- [Agentcore Managed Harness](../ch04/301-agentcore-managed-harness.html) — Managed Harness 定位与权衡
+- Agentcore Managed Harness — Managed Harness 定位与权衡
 - [Amazon Bedrock Agentcore Runtime Deep Dive And Scenario Analysis](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-agentcore-runtime-deep-dive-and-scenario-analysis.md) — AgentCore Runtime 深度分析
 - [Agentcore Payments X402 Agentic Commerce](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentcore-payments-x402-agentic-commerce.md) — AgentCore 在支付场景的应用
 - [Agentic Scheduler With Strands Agentcore For Multi Region Gpu Inference](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentic-scheduler-with-strands-agentcore-for-multi-region-gpu-inference.md) — Strands + AgentCore 调度案例

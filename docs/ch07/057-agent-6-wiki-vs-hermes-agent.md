@@ -1,6 +1,6 @@
 # Agent 记忆存储方案深度洞察：6 大流派分歧、Wiki 编译 vs 原始数据之争、Hermes Agent 启示
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 18.2KB | `entities/agent-memory-storage-six-schools-wiki-compile-vs-raw-data-debate.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 18.2KB
 
 ## Agent 记忆存储方案深度洞察：6 大流派分歧与 Hermes 启示
 
@@ -146,6 +146,7 @@ Hermes 当前已经实现了**原始数据派的核心能力**：
 - [hermes-wiki 实战 — obsidian + hermes agent 自动生长知识网络的 9 步搭建法](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-wiki-9-step-auto-growing-knowledge-network.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/tool-use-mcp-patterns.md)
+## 深度分析
 
 ### 1. 流派之争的本质：人本设计 vs 系统本设计
 

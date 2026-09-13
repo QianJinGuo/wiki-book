@@ -1,6 +1,6 @@
 # How Developers Can Build Agentic Agreement Workflows on Docusign IAM
 
-> 📊 Level ⭐⭐⭐⭐ | 9.1KB | `entities/how-developers-can-build-agentic-agreement-workflows-on-docu.md`
+> 📊 Level ⭐⭐⭐⭐ | 9.1KB
 
 ## 核心要点
 
@@ -44,6 +44,8 @@ DocuSign Connect 服务支持自定义 Webhook URL，重要事件包括：
 - **Idempotency Key**：创建信封时使用 options/id 字段确保幂等性
 
 ---
+
+## 深度分析
 
 ### 架构范式转变：从事件驱动到意图驱动
 

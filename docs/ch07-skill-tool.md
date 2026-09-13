@@ -36,11 +36,16 @@ Agent 能不能"动手做事"，取决于它有什么工具。
 
 ## 本章内容
 
+### ⭐ 入门（5 篇）
+
 - [001. Create Custom MCP Catalogs and Profiles](ch07/001-create-custom-mcp-catalogs-and-profiles)
 - [002. 高德交易 VOC 自动排查：基于 Hermes 的多 Agent 架构实践](ch07/002-voc-hermes-agent)
 - [003. 腾讯企业微信团队 Skill 流水线：AI代码生成率94%的需求开发全流程](ch07/003-skill-ai-94)
 - [004. 重新定义Skill开发：保姆级教程&一站式开发助手发布](ch07/004-skill)
 - [005. Building and connecting a production-ready ecommerce MCP server using Amazon Bedrock AgentCore and Mistral AI Studio](ch07/005-building-and-connecting-a-production-ready-ecommerce-mcp-ser)
+
+### ⭐⭐ 工程师（8 篇）
+
 - [006. 电商 AI 操作系统崛起：从「工具人」到「All in One」+ 行业 KnowHow Skill 化 + 5 巨头 Headless 布局](ch07/006-ai-all-in-one-knowhow-skill-5-headless)
 - [007. Agent Loop 架构三层模型：Loop + Skill + Orchestrator](ch07/007-agent-loop-loop-skill-orchestrator)
 - [008. 你写的 Skill，及格了吗？](ch07/008-skill)
@@ -49,6 +54,9 @@ Agent 能不能"动手做事"，取决于它有什么工具。
 - [011. 如何构建生产准备的AI代理：MCP、CLI与技能——适合合适的工作的工具](ch07/011-ai-mcp-cli)
 - [012. Introducing the MDN MCP server](ch07/012-introducing-the-mdn-mcp-server)
 - [013. 当我把AI变成一个\"算法\"：Skill工程化设计的心路历程](ch07/013-ai-skill)
+
+### ⭐⭐⭐ 专家（18 篇）
+
 - [014. Embabel](ch07/014-embabel)
 - [015. 微信读书官方skill与huashu-weread增强版](ch07/015-skill-huashu-weread)
 - [016. Securing AI Agents: AWS × Cisco AI Defense 给 MCP / A2A 加上企业级护栏](ch07/016-securing-ai-agents-aws-cisco-ai-defense-mcp-a2a)
@@ -67,6 +75,9 @@ Agent 能不能"动手做事"，取决于它有什么工具。
 - [029. Multica — 开源 Managed Agents 平台](ch07/029-multica-managed-agents)
 - [030. 龙虾之父教你省钱：开源Skill给你的Skill减肥](ch07/030-skill-skill)
 - [031. SkillComposer: 生成式技能组合](ch07/031-skillcomposer)
+
+### ⭐⭐⭐⭐ 科学家（16 篇）
+
 - [032. 我把 Claude Design 做成了 Skill，人人都能成为顶级网站设计师](ch07/032-claude-design-skill)
 - [033. ai-skill-evolution底层逻辑](ch07/033-ai-skill-evolution)
 - [034. 网盘存量代码迁移实战：我们如何用三层架构管住 AI 的输出](ch07/034-ai)
@@ -83,6 +94,9 @@ Agent 能不能"动手做事"，取决于它有什么工具。
 - [045. CLI、MCP 和 CLI+Skill，应该如何选？](ch07/045-cli-mcp-cli-skill)
 - [046. Skill 版本管理五大原则：从越改越差到持续演进](ch07/046-skill)
 - [047. Skill Craft — Claude Skill 质量工程框架](ch07/047-skill-craft-claude-skill)
+
+### ⭐⭐⭐⭐⭐ 大师（13 篇）
+
 - [048. Skill Hub：企业级 AI 经验资产化的关键（组织能力视角）— winty 前端Q 3 篇合集：组织资产 + 质量门禁 4 关 + 生命周期 6 阶段治理](ch07/048-skill-hub-ai-winty-q-3-4-6)
 - [049. Microsoft Agent Framework Tools 总览：4 类工具 + Provider 矩阵 + Tool Approval](ch07/049-microsoft-agent-framework-tools-4-provider-tool-ap)
 - [050. Skill 设计模式](ch07/050-skill)
@@ -96,3 +110,12 @@ Agent 能不能"动手做事"，取决于它有什么工具。
 - [058. Wiki Evolver](ch07/058-wiki-evolver)
 - [059. Perplexity 内部 Skill 设计指南：四维体系与维护方法论](ch07/059-perplexity-skill)
 - [060. Claude Code SKILL.md 写作指南](ch07/060-claude-code-skill-md)
+
+
+---
+
+## 本章收束
+
+工具在精不在多：设计得当的三个工具胜过粗糙的三十个。这一章更深的一层是 Skill——把团队反复验证过的做法封装成可复用的程序性资产，让新 Agent（和新同事）直接继承经验而不是重新踩坑。MCP 解决工具怎么接，Skill 解决经验怎么传，两者合起来才是 Agent 的动手能力。
+
+---

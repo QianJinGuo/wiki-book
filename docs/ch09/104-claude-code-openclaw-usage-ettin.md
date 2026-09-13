@@ -1,6 +1,6 @@
 # Claude Code Openclaw Usage Ettin
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 14.6KB | `entities/claude-code-openclaw-usage-ettin.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 14.6KB
 
 ## 概述
 
@@ -173,7 +173,7 @@ Ettin Reranker Family 的 **六档参数量 + SoTA 性能 + 长上下文 + Flash
 
 ## 相关实体
 - [Claude Code Openclaw Memory Vector Db Doubt](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-openclaw-memory-vector-db-doubt.md)
-- [Claude Code Openclaw Memory Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-openclaw-memory-comparison.md)
+- Claude Code Openclaw Memory Comparison
 - [Harness Engineering 7 Layers Openclaw Hermes Claude Code P1Anu](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-7-layers-openclaw-hermes-claude-code-p1anu.md)
 - [Skill System Design Three Way Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-system-design-three-way-comparison.md)
 - [Openclaw Agent Loop Design Patterns](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-agent-loop-design-patterns.md)

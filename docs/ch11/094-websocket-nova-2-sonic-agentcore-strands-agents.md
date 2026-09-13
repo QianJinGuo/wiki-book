@@ -1,6 +1,6 @@
 # 快时尚电商行业智能体设计思路与应用实践（八）基于 WebSocket 的语音系统：Nova 2 Sonic, AgentCore, Strands Agents 企业级架构实践 | 亚马逊AWS官方博客
 
-> 📊 Level ⭐⭐⭐ | 8.7KB | `entities/fast-fashion-ecommerce-agent-design-8-websocket-voice-system.md`
+> 📊 Level ⭐⭐⭐ | 8.7KB
 
 ## 概述
 快时尚电商行业智能体设计思路与应用实践（八）基于 WebSocket 的语音系统：Nova 2 Sonic, AgentCore, Strands Agents 企业级架构实践 by awschina on 04 1月 2026 in Artificial Intelligence Permalink Share 序言 在快时尚跨境电商行业，客服体验直接影响转化率、复购率与品牌口碑。随着业务全球化、SKU 爆炸式增长以及促销活动高频化（如黑五、圣诞、季中大促），传统人工客服与 基于 HTTP 的单向语音或文本机器人 已难以满足" 低延迟、可打断、强交互 "的实时服务需求。 本文以 快时尚电商实时语音智能客服 为背景，系统介绍一种基于 WebSocket 实时双向通信 的云原生语音 Agent 架构。该架构以 Amazon Bedrock Nova 2 Sonic 提供底层双向流式语音能力，以 Strands Agents（BidiAgent） 负责编排对话与中断逻辑，并运行在 AgentCore Runtime 提供的生产级托管与安全隔离环境之上。
@@ -11,6 +11,7 @@ Amazon Web Services (AWS)
 ## 来源
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/fast-fashion-ecommerce-agent-design-8-websocket-voice-system/)
 
+## 深度分析
 ### 1. WebSocket 全双工通信架构：替代 HTTP 请求-响应范式
 传统语音机器人基于 HTTP 的轮询或单向拉取机制，存在端到端延迟高、无法真正双向同时通信的根本性缺陷。本方案以 **WebSocket（SigV4 / Full-Duplex）** 作为语音数据面的核心通信机制，实现客户端麦克风到扬声器的端到端双向音频流：客户端采集 16kHz PCM 音频块通过 WebSocket 实时推送，模型响应以流式音频块返回，中途用户插话（barge-in）时客户端可立即发送新音频打断当前生成，无需等待本轮响应结束。
 

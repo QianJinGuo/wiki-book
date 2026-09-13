@@ -1,6 +1,6 @@
 # Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering
 
-> 📊 Level ⭐⭐⭐ | 14.5KB | `entities/karpathy-vibe-coding-to-agentic-engineering.md`
+> 📊 Level ⭐⭐⭐ | 14.5KB
 
 ## 核心论点
 Karpathy 在 2026 年红杉 AI Ascent 访谈中提出 Agent 时代的关键转变：
@@ -20,6 +20,7 @@ Karpathy 在 2026 年红杉 AI Ascent 访谈中提出 Agent 时代的关键转�
 - Linus Torvalds 认为 AI 像编译器，但关键系统使用需谨慎
 → [原文存档](https://mp.weixin.qq.com/s/Ru3Z7wUVOlUwXUZUO5xw2A)
 
+## 深度分析
 ### 1. Vibe Coding 与 Agentic Engineering 的本质区别
 Karpathy 的核心区分不在于工具选型，而在于**工程纪律的适用程度**。Vibe Coding 本质上是一种放松约束的个人开发者体验——人放弃对代码的直接控制，顺着模型输出往前走，结果的可信度由"感觉"而非"验证"来判断。这在 side project 和原型阶段完全合理，因为它降低了创作门槛。
 但 Agentic Engineering 面对的是专业交付场景：代码要安全、行为要可审计、责任要归属。Karpathy 指出了一个关键陷阱——当 Agent 生成代码越来越快时，团队可能不自觉地跳过了工程纪律，结果得到的是"能跑但不可靠"的系统。这个中间层（验证、权限、审计、回滚）恰恰是区分业余和专业的分水岭。
@@ -78,12 +79,12 @@ Karpathy 引用的那句话是本次访谈最值得反复咀嚼的命题：
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-to-agentic-engineering.md)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-agentic-engineering-v2.md)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-agentic-engineering-v3.md)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](297-tencent-vibe-coding-to-agentic-engineering-backend.html)
+- 从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程](https://github.com/QianJinGuo/wiki-public/blob/main/entities/从vibe-coding到agentic-engineering重构后台开发全流程.md)
 - [Alibaba Agent Observability Audit Loongsuite Pilot Coding Agent Blackbox Transparent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/alibaba-agent-observability-audit-loongsuite-pilot-coding-agent-blackbox-transparent.md)
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
 - [Ai Coding Agent Quality Defense Five Control Mechanisms Tutu Agi](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-coding-agent-quality-defense-five-control-mechanisms-tutu-agi.md)
-- [Karpathy Vibe Coding Agentic Engineering](268-karpathy-vibe-coding-agentic-engineering.html)
+- Karpathy Vibe Coding Agentic Engineering
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/coding-agent-practice.md)
 
 ---

@@ -1,6 +1,6 @@
 # Amazon VPC Regional NAT Gateway 与 AZ NAT Gateway 全面对比
 
-> 📊 Level ⭐ | 7.9KB | `entities/amazon-vpc-regional-nat-gateway-与-az-nat-gateway-全面对比.md`
+> 📊 Level ⭐ | 7.9KB
 
 → [原文存档](https://aws.amazon.com/cn/blogs/china/amazon-vpc-regional-nat-gateway-az-nat-gateway-comparison)
 
@@ -34,9 +34,9 @@
 
 ## **一．背景：为什么要重新认识 NAT 网关**
 
-NAT 网关（NAT Gateway）是 [Amazon VPC](<https://aws.amazon.com/cn/vpc/>) 中最常用的托管组件之一，它让私有子网中的实例可以主动访问互联网（下载补丁、调用外部 API 等），同时不允许互联网主动发起到这些实例的连接。长期以来，AWS 的 NAT 网关都是一种「可用区（Availability Zone，AZ）级」资源——每个 NAT 网关只存在于单个可用区中。
+NAT 网关（NAT Gateway）是 Amazon VPC 中最常用的托管组件之一，它让私有子网中的实例可以主动访问互联网（下载补丁、调用外部 API 等），同时不允许互联网主动发起到这些实例的连接。长期以来，AWS 的 NAT 网关都是一种「可用区（Availability Zone，AZ）级」资源——每个 NAT 网关只存在于单个可用区中。
 
-2025 年 11 月，AWS 正式发布了 NAT 网关的全新「区域可用性模式」，即本文要讨论的 Regional NAT Gateway（区域 NAT 网关，简称 RNAT）。它不再绑定到单个子网或单个可用区，而是与整个 VPC 关联，并能根据工作负载自动跨可用区扩展，从而内建高可用能力。具体可以参考 [AWS What’s New 公告](<https://aws.amazon.com/about-aws/whats-new/2025/11/aws-nat-gateway-regional-availability/>) 与 [官方发布博客](<https://aws.amazon.com/blogs/networking-and-content-delivery/introducing-amazon-vpc-regional-nat-gateway/>)。
+2025 年 11 月，AWS 正式发布了 NAT 网关的全新「区域可用性模式」，即本文要讨论的 Regional NAT Gateway（区域 NAT 网关，简称 RNAT）。它不再绑定到单个子网或单个可用区，而是与整个 VPC 关联，并能根据工作负载自动跨可用区扩展，从而内建高可用能力。具体可以参考 AWS What’s New 公告 与 官方发布博客。
 
 需要澄清的一点是：Regional NAT Gateway 并不是一个全新的独立产品，而是现有 NAT 网关服务新增的一种可用性模式（Availability mode）。创建网关时可以选择 `zonal`（可用区模式，即传统形态）或 `regional`（区域模式）。本文将传统形态称为「AZ NAT 网关」，新形态称为「Regional NAT 网关」，对两者的架构、优缺点和适用场景做一次系统对比。
 
@@ -52,7 +52,7 @@ AZ NAT 网关是创建在某个指定可用区内的资源。官方文档的原�
   * 将私有子网的默认路由 `0.0.0.0/0` 指向该 NAT 网关（`nat-gateway-id`）；
   * 将 NAT 网关所在公有子网的 `0.0.0.0/0` 指向互联网网关（Internet Gateway）。
 
-关键点在于：为了实现高可用，AWS 推荐在每个可用区各部署一个 NAT 网关，并让每个子网的路由指向「本可用区内」的 NAT 网关。否则，一旦承载共享 NAT 网关的那个可用区发生故障，其它可用区中、把流量绕到该网关的资源都会失去互联网访问；而把跨可用区流量绕来绕去还会产生额外的跨区数据传输费用。详见 [NAT 网关基础文档](<https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateway-basics.html>)。
+关键点在于：为了实现高可用，AWS 推荐在每个可用区各部署一个 NAT 网关，并让每个子网的路由指向「本可用区内」的 NAT 网关。否则，一旦承载共享 NAT 网关的那个可用区发生故障，其它可用区中、把流量绕到该网关的资源都会失去互联网访问；而把跨可用区流量绕来绕去还会产生额外的跨区数据传输费用。详见 NAT 网关基础文档。
 
 [](<https://d2908q01vomqb2.cloudfront.net/472b07b9fcf2c2451e8781e944bf5f77cd8457c8/2026/06/26/amazon-vpc-regional-nat-gateway-az-nat-gateway-comparison-1.png>) [图 1：AZ（可用区）NAT 网关架构——每个可用区各部署一个网关并维护各自的路由表]
 ---  

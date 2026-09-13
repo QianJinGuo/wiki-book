@@ -1,6 +1,6 @@
 # Introducing the MDN MCP server
 
-> 📊 Level ⭐⭐ | 4.6KB | `entities/introducing-mdn-mcp-server-2026.md`
+> 📊 Level ⭐⭐ | 4.6KB
 
 > Source: [MDN Blog 原文](https://developer.mozilla.org/en-US/blog/introducing-mdn-mcp-server/)
 
@@ -47,7 +47,7 @@
 
 - [Anthropic MCP 协议回顾](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-mcp-revisited.md) — MCP 协议本身的设计
 - [AWS Bedrock AgentCore MCP](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-agentcore-doris-mcp-server.md) — 商业 MCP server
-- [Claude Code MCP server](043-claude-code-mcp-server.html) — Claude Code 工具系统
+- Claude Code MCP server — Claude Code 工具系统
 - [Hermes Agent 工具系统架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-tool-system-architecture.md) — agent 工具调用一般化框架
 
 ## References

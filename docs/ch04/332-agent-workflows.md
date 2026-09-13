@@ -1,6 +1,6 @@
 # Agent Workflows
 
-> 📊 Level ⭐⭐⭐⭐ | 8.2KB | `entities/agent-workflows.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.2KB
 
 ## 核心要点
 - GitHub Agentic Workflows 运行在每个 PR 上，成本会悄然累积
@@ -9,6 +9,7 @@
 - GitHub 内部用"工作流优化工作流"：每日 Token 使用审计师 + 每日 Token 优化器
 - Effective Tokens (ET) 指标：考虑模型成本差异，输出 token 加 4 倍权重
 
+## 深度分析
 ### token 效率问题的本质
 Agentic workflows 的 token 效率问题不是简单的"用少一点"，而是结构性问题。GitHub 的经验表明，最大效率来源是**消除不必要的 LLM 调用**，而不是减少单次调用的 token 消耗。最便宜的 LLM 调用是根本不做的调用。
 

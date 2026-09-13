@@ -1,6 +1,6 @@
 # 阿里云 Loop Engineering 实战：日志扫描到预发部署的全自主闭环
 
-> 📊 Level ⭐⭐⭐ | 6.2KB | `entities/aliyun-loop-engineering-log-scan-auto-fix-deploy.md`
+> 📊 Level ⭐⭐⭐ | 6.2KB
 
 > 文章 "Loop Engineering 实战：实现从日志扫描到预发部署的全自主闭环" (阿里云开发者, 2026-07-07) 的实体整理。阿里云 AI 云诊断系统的完整 Loop Engineering 实现。
 
@@ -34,6 +34,8 @@
 1. **发现速度**：ERROR 识别从人工轮巡到自动实时，下降 96%
 2. **修复效率**：同类问题修复从 48min 到 15min
 3. **人工成本**：预发前零人工介入
+
+## 深度分析
 
 ### Loop Engineering 的本质：生成器接上验证器
 

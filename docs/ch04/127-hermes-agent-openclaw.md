@@ -1,6 +1,6 @@
 # Hermes Agent 为什么火了？和 OpenClaw 龙虾比一比
 
-> 📊 Level ⭐⭐⭐ | 11.4KB | `entities/hermes-agent-vs-openclaw-comparison.md`
+> 📊 Level ⭐⭐⭐ | 11.4KB
 
 ## 一句话格局定位
 
@@ -69,6 +69,8 @@ OpenClaw 的口号是 **"Any OS, Any Platform"**——跨平台、通用型个�
 | **记忆能力** | 基础会话记忆 | 长期记忆+模式学习 |
 | **社区生态** | 官方主导 | 社区二创活跃 |
 | **适合谁** | 想要全能助手的用户 | 想要能进化的 Agent 的开发者 |
+
+## 深度分析
 
 ### 1. 命名策略影响了社区传播和用户心理锚点
 

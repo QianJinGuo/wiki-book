@@ -1,6 +1,6 @@
 # Snowflake Agentic Enterprise — 迈向可信的 Agent 平台
 
-> 📊 Level ⭐⭐⭐⭐ | 21.6KB | `entities/snowflake-agentic-enterprise-summit-2026.md`
+> 📊 Level ⭐⭐⭐⭐ | 21.6KB
 
 ## 概述
 
@@ -167,6 +167,8 @@ Cortex Sense 从 Snowflake 已有数据和活动中构建信号，自动增强 A
 | Thomson Reuters CoCounsel 外部用户 | **1,000,000+** 专业人士/天 | Caitlin Halferty |
 | Thomson Reuters CoCounsel 内部用户 | **15,000+** 财务/业务 | 同上 |
 | Natoma 连接器数 | **100+** 业务系统 | Snowflake |
+
+## 深度分析
 
 ### 1. "Can we → Shall we" 是企业 AI 的临界点叙事
 

@@ -1,6 +1,6 @@
 # OpenClaw + Amazon Bedrock + Amazon EKS 联动实践：打印机包装质检助手实战
 
-> 📊 Level ⭐⭐⭐ | 13.0KB | `entities/openclaw-amazon-bedrock-eks-printer-qc.md`
+> 📊 Level ⭐⭐⭐ | 13.0KB
 
 > 使用 OpenClaw + Amazon Bedrock + Amazon EKS 构建打印机包装质检 AI Agent 的实战教程，包含完整的代码示例和架构设计。
 
@@ -10,19 +10,19 @@
 
 **目录**
 
-01 [前言](#section1)
+01 前言
 
-02 [业务背景与客户痛点](#section2)
+02 业务背景与客户痛点
 
-03 [系统架构详细设计](#section3)
+03 系统架构详细设计
 
-04 [经验总结](#section4)
+04 经验总结
 
-05 [成本分析](#section5)
+05 成本分析
 
-06 [结论](#section6)
+06 结论
 
-07 [参考文档](#section7)
+07 参考文档
 
 * * *
 
@@ -100,6 +100,8 @@ OpenClaw 需要长驻 gateway 进程（Channel 接入、TUI、Session 管理）�
 系统整体架构如下图所示：
 
 [![](https://d2908q01vomqb2.cloudfront.net/472b07b9fcf2c2451e8781e944bf5f77cd8457c8/2026/05/26/amazon-eks-practice-assistant-1.jpg)](https://d2908q01vomqb2.cloudfront.net/472b07b9fcf2c2451e8781e944bf5f77cd8457c8/2026/05/26/amazon-eks-practice-assistant-1.jpg)
+
+## 深度分析
 
 ### 3.1 Skill vs RAG vs Fine-tune：方法论边界
 

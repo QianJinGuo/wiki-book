@@ -1,6 +1,6 @@
 # Review Agent：后台复盘 Agent 如何判断什么值得保存
 
-> 📊 Level ⭐⭐ | 6.6KB | `entities/review-agent-how-it-decides-what-to-save-winty.md`
+> 📊 Level ⭐⭐ | 6.6KB
 
 如果说 Nudge Engine 是 Hermes 的"开关"，那 Review Agent 就是它的"心智"。
 我读 Hermes 源码时最佩服的一处设计就是这一块。它没有让"执行任务的那个 Agent"自己复盘自己，而是单独跑了一个专门负责反思的 Agent，在后台默默工作。
@@ -9,9 +9,9 @@ Review Agent 解决的就是这个问题。它换了个角色、换了个 prompt
 
 ## 相关实体
 - [Skills Registry 公测开启为企业打造私有的 Skill 管理中心](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skills-registry-公测开启为企业打造私有的-skill-管理中心.md)
-- [Tencent Vibe Coding To Agentic Engineering Backend](297-tencent-vibe-coding-to-agentic-engineering-backend.html)
+- Tencent Vibe Coding To Agentic Engineering Backend
 - [Claude Code Search Architecture Tencent 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-search-architecture-tencent-2026.md)
-- [Openclaw Prompt Context Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-prompt-context-harness.md)
+- Openclaw Prompt Context Harness
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 → [原文存档](https://mp.weixin.qq.com/s/WdbZVxbpXT6W-oguTef_Iw)

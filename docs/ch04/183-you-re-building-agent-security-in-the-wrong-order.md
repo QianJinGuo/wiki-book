@@ -1,6 +1,6 @@
 # You're building agent security in the wrong order
 
-> 📊 Level ⭐⭐⭐ | 8.1KB | `entities/youre-building-agent-security-in-the-wrong-order.md`
+> 📊 Level ⭐⭐⭐ | 8.1KB
 
 CrewAI 创始人提出的 Agent 安全建设顺序论：企业普遍先建安全层（IAM/授权/监控），再补 Harness（记忆/工具/状态管理），顺序反了。正确顺序是 Harness → Governance → Identity & Auth。
 
@@ -27,6 +27,8 @@ CrewAI 创始人提出的 Agent 安全建设顺序论：企业普遍先建安全
 ### CrewAI Flows 的 Harness 实践
 
 CrewAI 的 Flows 架构通过确定性路由、可观测执行和升级路径来解决 Harness 问题。关键设计：在赋予工作流不同层级的自主性之前，先把升级路径接好。不是出于偏执，而是因为看到了跳过这步的后果。
+
+## 深度分析
 
 ### 1. "值得安全保护的东西"——Agent 安全的本体论前提
 
@@ -63,7 +65,7 @@ CrewAI 的 Flows 架构通过确定性路由、可观测执行和升级路径来
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md)
 - [Tencentdb Agent Memory Context Offloading](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tencentdb-agent-memory-context-offloading.md)
-- [how developers can build agentic agreement workflows on docu](317-how-developers-can-build-agentic-agreement-workflows-on-docu.html)
+- how developers can build agentic agreement workflows on docu
 
 ---
 

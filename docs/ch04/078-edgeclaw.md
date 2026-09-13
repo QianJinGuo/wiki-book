@@ -1,6 +1,6 @@
 # EdgeClaw：端云两栖龙虾框架
 
-> 📊 Level ⭐⭐ | 5.1KB | `entities/edgeclaw-bemit-lobster.md`
+> 📊 Level ⭐⭐ | 5.1KB
 
 面壁智能联合清华大学、OpenBMB社区开源的Agent框架，主打"端云两栖"——兼顾云端模型智商与本地模型忠诚。配套发布EdgeClaw Box硬件产品。
 GitHub: https://github.com/Openbmb/edgeclaw
@@ -11,7 +11,7 @@ GitHub: https://github.com/Openbmb/edgeclaw
 ## 相关实体
 - [我用 Skillmd 做了一个简历生成器](https://github.com/QianJinGuo/wiki-public/blob/main/entities/我用-skillmd-做了一个简历生成器.md)
 - [Aliyun Agentrun 2Line Integration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aliyun-agentrun-2line-integration.md)
-- [Computer Use 45X More Expensive Than Structured Apis](309-computer-use-45x-more-expensive-than-structured-apis.html)
+- Computer Use 45X More Expensive Than Structured Apis
 - [2 Year 25 Ai Projects Summary](https://github.com/QianJinGuo/wiki-public/blob/main/entities/2-year-25-ai-projects-summary.md)
 - [Agent 从能用到管好中间差了什么](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-从能用到管好中间差了什么.md)
 

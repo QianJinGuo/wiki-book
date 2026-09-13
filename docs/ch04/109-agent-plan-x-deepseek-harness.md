@@ -1,6 +1,6 @@
 # Agent Plan x DeepSeek Harness 实践指南
 
-> 📊 Level ⭐⭐⭐ | 13.1KB | `entities/agent-plan-x-deepseek-harness-dsh-practice-guide.md`
+> 📊 Level ⭐⭐⭐ | 13.1KB
 
 最新的DeepSeek 智能体应用框架（DeepSeek Harness，简称DSH），**Model、Tool、Memory、Sandbox 和 Agent 都是可组合、可替换、可扩展的插件** 。Harness 本身退到最薄——它只做三件事：调度模型与工具、在高危操作前请你审批、维护一份任务计划。
 
@@ -18,6 +18,8 @@
 - **"DSH 提供插槽，Agent Plan 提供插件"**：组件并非随意堆砌，而是方舟沉淀的产品能力加上广大开发者反复验证过的 Harness 优选组合——搜索用哪个、数据信哪个、记忆怎么接、进化怎么做，都已挑过一遍。
 - **五大 Harness 组件各司其职**：豆包搜索让 agent 能上网、专业数据集给 agent 硬核结构化数据、Agent 记忆跨会话记住用户、Agent 进化让 agent 越用越聪明、AI Native 开发底座让 agent 直接把手头任务做成真实产品。
 - **实战闭环完整可复现**：从自然语言任务到"查数据→搜新闻→出简报→沉淀页面→记忆习惯→学会方法"，一整套投资研究助手的生长过程全被记录。
+
+## 深度分析
 
 ### DeepSeek Harness 插件化架构：Model / Tool / Memory / Sandbox / Agent
 DSH 最值得注意的设计是**把智能体的五类能力全部插件化**。模型负责推理生成、工具负责检索执行、记忆负责跨会话沉淀、沙箱负责隔离安全执行、Agent 本体负责编排决策——每一类都定义成"可替换的插槽"，而不是写死在框架里的点。这让 DSH 与把一切逻辑揉进单一循环的早期 agent 框架形成鲜明对照：换模型、换检索源、换记忆后端，都不需要改框架本身。

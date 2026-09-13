@@ -1,6 +1,6 @@
 # 李继刚 ljg Skills 系列（四）：表达写作类 Skill
 
-> 📊 Level ⭐⭐⭐ | 7.9KB | `entities/ljg-skills-series-4-writing-expression.md`
+> 📊 Level ⭐⭐⭐ | 7.9KB
 
 ## 摘要
 
@@ -17,6 +17,8 @@
 | 思考 | 第三篇 | 如何深入分析问题 |
 | **输出** | **第四篇（本篇）** | **如何有效表达** |
 | 视觉 | 第五篇（预告） | 如何视觉化交付 |
+
+## 深度分析
 
 ### 表达的三个层次
 

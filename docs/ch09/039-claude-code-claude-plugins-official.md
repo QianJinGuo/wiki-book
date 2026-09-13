@@ -1,6 +1,6 @@
 # Claude Code 官方插件系统 (claude-plugins-official)
 
-> 📊 Level ⭐⭐⭐ | 8.9KB | `entities/claude-code-official-plugins-anthropic.md`
+> 📊 Level ⭐⭐⭐ | 8.9KB
 
 Anthropic 官方 Claude Code 插件体系，发布于 2026 年 5 月，GitHub 仓库已获 20K+ Stars。
 
@@ -63,6 +63,8 @@ Claude Code 插件可以包含：
 - Hooks（自动格式化、lint、敏感文件保护）
 - Subagents（安全审查、性能优化、无障碍检测）
 - Slash Commands（/test、/pr-review）
+
+## 深度分析
 
 ### 1. 多智能体并行架构的意义
 

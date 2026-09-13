@@ -1,6 +1,6 @@
 # AI Native 混沌工程——Agent 军团 + 共享黑板的韧性验证平台
 
-> 📊 Level ⭐⭐⭐ | 11.7KB | `entities/qwen-ai-native-chaos-engineering-agent-corps-2026-08-06.md`
+> 📊 Level ⭐⭐⭐ | 11.7KB
 
 > **来源**：千问AI平台（阿里，2026-08）。专有云 IaaS 场景下把混沌工程从"专项演练"升级为"平台能力"的完整实践：9 层 Agent 军团协作 + Redis 共享黑板 + 三道安全闸门 + 双进化回路，实现故障注入全链路 AI 闭环。
 
@@ -46,6 +46,8 @@ AI Native 三大硬性标准：①全链路 AI 驱动（任何环节不能有人
 ## 核心框架四：标准化接入（新产品像插 USB）
 
 产品接入方聚焦 A2A 能力实现：AgentCard JSON 能力声明（名称/描述/所有 capability 含输入输出 Schema、安全等级、超时配置）+ 三个 HTTP 端点（能力描述 GET /agent_card、JSON-RPC 2.0 调用 POST /api/{capability_id}、健康检查 GET /health）+ 心跳保活。平台方聚焦接入支撑：Registry 注册 + Redis ACL 配置 + 路由白名单 dispatch 规则 + 监控适配。核心原则：A2A 协议 + 共享黑板解耦协作，产品方聚焦能力实现、平台方聚焦接入支撑。
+
+## 深度分析
 
 ### 与算力风洞的关系
 

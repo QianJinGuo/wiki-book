@@ -1,6 +1,6 @@
 # Foundation Model Building Blocks
 
-> 📊 Level ⭐⭐⭐ | 9.1KB | `entities/foundation-model-building-blocks.md`
+> 📊 Level ⭐⭐⭐ | 9.1KB
 
 > -> [原文存档](https://huggingface.co/blog/amazon/foundation-model-building-blocks)
 

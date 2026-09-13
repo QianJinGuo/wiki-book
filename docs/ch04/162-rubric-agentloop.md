@@ -1,6 +1,6 @@
 # 评估：从黄金指标到 Rubric丨AgentLoop 数据飞轮实践（三）
 
-> 📊 Level ⭐⭐⭐ | 8.8KB | `entities/agentloop-eval-golden-metrics-rubric-mayunlei-aliyun-2026-09-01.md`
+> 📊 Level ⭐⭐⭐ | 8.8KB
 
 AgentLoop 数据飞轮实践系列 · 第 3 篇 / 共 5 篇。上一篇：数据飞轮的起点：四种方式把 Agent 连进 AgentLoop丨AgentLoop 数据飞轮实践（二）/ 下一篇：实验 —— 回测与离线实验平台
 
@@ -21,6 +21,8 @@ Agent 输出是开放式的，同一个问题可有无数种"还行"的答案，
 - **评估器输入变量有三**：input、output、运行轨迹（trace.agent），既能评结果也能评过程；输出为 score 到 rubric version 等结构化字段。
 - **低分条目可处理**：评估器不只打分，还输出解释、summary、decision、证据字段，让"哪步错了、依据是什么、怎么调"写在结果里。
 - **badcase 闭环**：在线评估抓出的坏案例沉淀进数据集，成为实验回测的弹药；分数低处即下一轮调优方向。
+
+## 深度分析
 
 ### 黄金指标 → Rubric 的设计
 

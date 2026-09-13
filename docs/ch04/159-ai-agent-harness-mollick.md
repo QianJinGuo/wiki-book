@@ -1,6 +1,6 @@
 # AI Agent 时代选型指南：模型·应用· Harness（Mollick）
 
-> 📊 Level ⭐⭐⭐ | 9.1KB | `entities/guide-ai-agents-models-apps-harnesses-mollick.md`
+> 📊 Level ⭐⭐⭐ | 9.1KB
 
 > 2026-06-07 引用自 Ethan Mollick《A Guide to Which AI to Use in the Agentic Era》，One Useful Thing，2026-02-18。
 
@@ -51,6 +51,8 @@ Google 的知识管理工具：上传论文/视频/网站，构建可查询知�
 > "The shift from chatbot to agent is the most important change in how people use AI since ChatGPT launched. An AI that does things is fundamentally more useful than an AI that says things."
 
 > "The exact same model, Claude Opus 4.6, asked the exact same question in three different harnesses. With no harness the information is out of date; on Claude.ai I get updated information and verifiable sources; using Claude Cowork, I get a sophisticated analysis and well-formatted head-to-head comparisons."
+
+## 深度分析
 
 ### 1. Models-Apps-Harnesses 三层解耦的架构意义
 Mollick 的框架虽然面向普通用户，但精准映射了 AI 系统的架构分层：Models 对应推理层（参数权重+推理引擎），Apps 对应交互层（UI/UX + 会话管理），Harnesses 对应工具层（工具调用+多步编排+环境隔离）。这一分层与 `Co Existence Paradigm Shift Agentic Ai Mollick 2026` 中 Mollick 后续提出的"AI 从说事到做事"范式转换一致：价值的重心正在从 Models 层向 Harnesses 层迁移——当三大模型能力趋近时，harness 的差异化成为选型决定因素。

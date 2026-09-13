@@ -1,6 +1,6 @@
 # 百度网盘主端 FE AICR：AI Code Review 准入实践
 
-> 📊 Level ⭐⭐⭐⭐ | 8.2KB | `entities/baidu-aicr-ai-code-review-ci-cd.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.2KB
 
 > **来源**：百度Geek说（鸽子王）。百度网盘主端 FE 团队在 CI/CD 流水线中嵌入 AICR（AI Code Review）强制检测链路的实战经验，覆盖架构设计、模型选型、误报治理、耗时优化、全流程规划。
 > → [原文存档](https://mp.weixin.qq.com/s/jWUkenllw4yPEXbOmEvJHA)
@@ -66,6 +66,8 @@ Pre-commit（20% 完成度）：本地自检，轻量快速 → 个人级前置
 ## 与已有 wiki 实体关系
 
 - 关联 [阿里 Open Code Review](https://github.com/QianJinGuo/wiki-public/blob/main/entities/阿里开源-open-code-review一周揽下-5k-star更专业的代码评审-cli.md)、harness-engineering、multi-agent 等标签
+
+## 深度分析
 
 ### 多角色审查架构的设计原理与制衡机制
 

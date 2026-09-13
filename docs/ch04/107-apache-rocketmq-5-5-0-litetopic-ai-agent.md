@@ -1,6 +1,6 @@
 # Apache RocketMQ 5.5.0 LiteTopic：AI Agent 异步通信消息模型
 
-> 📊 Level ⭐⭐⭐ | 13.3KB | `entities/rocket-mq-5-litetopic-ai-agent-async-cloudnative.md`
+> 📊 Level ⭐⭐⭐ | 13.3KB
 
 ## 背景：Agent 异步通信成为行业共识
 
@@ -27,6 +27,8 @@ LiteTopic 将消费位点以「内存快照 + 增量持久化」方式存储在 
 ## 技术定位
 
 LiteTopic 解决的是 AI Agent 通信基础设施层的问题——将 Google ADK DatabaseSessionService 的能力下沉到消息队列层。与 MCP Protocol 的传输层扩展性需求高度相关，是 Agent 异步通信协议栈的底层支撑。
+
+## 深度分析
 
 ### LiteTopic vs 传统 Topic + Consumer Group 的本质差异
 

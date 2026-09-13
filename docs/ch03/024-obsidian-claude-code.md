@@ -1,6 +1,6 @@
 # Obsidian + Claude Code 完整集成指南：五种知识管理策略
 
-> 📊 Level ⭐⭐⭐ | 10.6KB | `entities/57u6xekcgtvkqxnnqg9djq.md`
+> 📊 Level ⭐⭐⭐ | 10.6KB
 
 ## Obsidian + Claude Code 完整集成指南
 
@@ -22,6 +22,8 @@ Claude Code 生成的知识资产分散在多个位置：`~/.claude/CLAUDE.md`�
 - **策略 5（QMD + 会话同步）**：Shopify CEO Tobi Lutke 的 QMD 做语义检索 + `sync-claude-sessions` 导出对话 + `/recall` 技能拉回上下文，让每次会话沉淀为可搜索笔记
 - **Obsidian 1.12 CLI 突破**：在 4000+ 文件、16GB 仓库上找孤立笔记从十几秒降到不到 1 秒（约 50× 提升），让 AI 不必再 grep
 - **社区共识原则**：「AI 负责读取，人负责书写」——Vault 沉淀人类思考，Claude 的产物放在 `~/.claude/` 不污染主 Vault
+
+## 深度分析
 
 ### 五种策略的本质：「同步语义」vs「访问语义」的两条路线
 

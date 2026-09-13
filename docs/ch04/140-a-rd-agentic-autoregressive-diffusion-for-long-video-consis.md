@@ -1,6 +1,6 @@
 # A²RD: Agentic Autoregressive Diffusion for Long Video Consistency
 
-> 📊 Level ⭐⭐⭐ | 10.3KB | `entities/ard-agentic-autoregressive-diffusion-for-long-video-consistency.md`
+> 📊 Level ⭐⭐⭐ | 10.3KB
 
 > -> [原文存档](https://dxlong2000.github.io/AARD/)
 
@@ -44,6 +44,7 @@ LVBench-C 是专门针对长视频一致性设计的挑战性基准，其核心�
 | **Extrapolation** | 仅从起始帧合成向前推进的视频片段 |
 | **Interpolation** | 合成无缝连接固定起始帧和结束帧的视频片段 |
 
+## 深度分析
 ### A²RD 的设计哲学：解耦与闭环
 A²RD 的核心洞察是将"创意合成"与"一致性 enforcement"解耦。传统端到端模型试图在单一前向过程中同时完成内容生成和一致性维护，这导致了训练目标的不一致——模型需要在"生成有趣内容"和"保持与前序一致"之间寻找平衡，往往两者都不能最优。
 A²RD 通过引入 Agent 化流程和 Memory 机制，将这个矛盾分解为两个相对独立的子问题：生成器负责"创造"，Agent + Memory 负责"回忆和规划"。这种解耦在工程上更易实现，因为可以分别为生成器和一致性模块优化。

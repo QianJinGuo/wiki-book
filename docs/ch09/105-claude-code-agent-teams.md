@@ -1,6 +1,6 @@
 # Claude Code Agent Teams 架构分析
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 13.3KB | `entities/claude-code-agent-teams-architecture.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 13.3KB
 
 ## 核心结论
 
@@ -96,6 +96,8 @@ Teammates 初始使用 lead 的 permission settings。如果 lead 用 `--dangero
 - 固定流程阶段（TechPlan、CodeReview）按需拉 team
 - 每个 worker 必须产出 artifact，不只是发消息
 - Message 只传 artifact pointer，避免 Mailbox 变成第二个 context 污染场所
+
+## 深度分析
 
 ### 1. Task List 的设计哲学：从"聊天协调"到"结构化协调"
 

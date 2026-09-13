@@ -1,6 +1,6 @@
 # AI Gateways vs MCP Gateways: What Security Teams Need to Know
 
-> 📊 Level ⭐⭐⭐ | 10.6KB | `entities/ai-gateways-vs-mcp-gateways-what-security-teams-need-to-know.md`
+> 📊 Level ⭐⭐⭐ | 10.6KB
 
 > -> [原文存档](https://noma.security/blog/ai-gateways-vs-mcp-gateways-what-security-teams-need-to-know/)
 
@@ -11,6 +11,7 @@ AI 网关（AI Gateway）与 MCP 网关（MCP Gateway）是两个被频繁混淆
 - **技术领域**：AI 安全 / 网关架构
 - **来源**：Noma Security 技术博客
 
+## 深度分析
 ### 一、架构定位的本质差异
 AI 网关与 MCP 网关的核心区别在于它们所管理的流量类型和在请求路径中的位置。AI 网关处理的是**代理与模型之间的对话流**——提示词、模型响应、以及作为文本嵌入在提示中的工具调用结果。而 MCP 网关处理的是**代理与工具之间的交互流**——工具调用的请求、参数和响应。
 这种架构差异带来了一个根本性的不对等：AI 网关拥有用户意图的完整上下文（提示词），但对工具执行的结果只有被动可见性；MCP 网关拥有工具调用的精确记录，但缺乏用户的原始意图和模型的推理过程。这种信息不对称意味着**两个网关都无法独立重建完整的攻击链**。

@@ -1,6 +1,6 @@
 # 业务 Agent 增强层架构：复用通用 Agent 基座，把业务能力做成可验证增强层
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 27.1KB | `entities/business-agent-augmentation-layer-practitioner-methodology-20260606.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 27.1KB
 
 ## 概述
 
@@ -261,6 +261,8 @@ business_agent_profile:
 
 ### 与"Agent = Model + Harness"公式
 [Agent Harness 12 组件 7 决策](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-12-components-7-decisions.md) 提出 **Agent = Model + Harness**——本文是这公式在企业落地时的工程展开：**通用 Agent（Model + 基础 Harness）+ 业务增强层（业务能力）**。
+
+## 深度分析
 
 ### 1. "增强层"范式的本质：是工程分工而非模型创新
 

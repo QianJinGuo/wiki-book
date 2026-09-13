@@ -1,6 +1,6 @@
 # Amazon Bedrock + LLM Gateway 实现生产级推理弹性模式
 
-> 📊 Level ⭐⭐⭐ | 7.9KB | `entities/implementing-resilience-patterns-with-amazon-bedrock-and-llm.md`
+> 📊 Level ⭐⭐⭐ | 7.9KB
 
 > 原文存档：[原文存档](https://aws.amazon.com/blogs/machine-learning/implementing-resilience-patterns-with-amazon-bedrock-and-llm-gateway)
 
@@ -14,6 +14,8 @@
 - **渐进式成熟度模型**：弹性模式可按 Crawl → Walk → Run 的渐进路径实施，从原生 Bedrock 特性（CRIS）到多账户分片，再到 LLM Gateway 全功能编排。
 - **Gateway 是关键基础设施**：LLM Gateway（如 LiteLLM、AWS 多供应商生成式 AI Gateway）提供路由、回退、限流、多租户隔离等能力，是生产级推理不可或缺的组件。
 - **多租户隔离是 SaaS 刚需**：独立速率限制桶机制可有效防止"噪声邻居"问题，确保多租户环境中各消费者的服务质量一致性。
+
+## 深度分析
 
 ### 弹性模式的渐进式演进路径
 

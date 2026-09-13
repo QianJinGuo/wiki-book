@@ -1,6 +1,6 @@
 # Perplexity 内部 Skill 设计指南：四维体系与维护方法论
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 13.2KB | `entities/perplexity-internal-skill-design-guide.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 13.2KB
 
 ## 核心框架：Skill 的四个维度
 ### 1. Skill 是目录（hub-and-spoke）
@@ -144,7 +144,7 @@ Perplexity 的 Skill 设计体系折射出 LLM 应用工程的根本性范式转
 - [Agent Skill Writing Evaluation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing-evaluation.md) — Skill 评测相关
 
 ## 相关实体
-- [LBS-IntentBench — 首个真实出行隐式意图评测基准](../ch04/312-lbs-intentbench.html)
+- LBS-IntentBench — 首个真实出行隐式意图评测基准
 - [9个Agent技能模块化SageMaker微调生命周期](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
 - [重新定义Skill开发：保姆级教程&一站式开发助手发布](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-development-guide-aliyun-2026.md)
 - [SkillX — 层次化技能知识库](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skillx-hierarchical-skill-library.md)
@@ -155,7 +155,7 @@ Perplexity 的 Skill 设计体系折射出 LLM 应用工程的根本性范式转
 - [Skills赏析：使用skills-refiner提升skill质量](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skills-refiner-design-quality-evaluation-framework.md)
 - [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](https://github.com/QianJinGuo/wiki-public/blob/main/entities/trace2skill-trajectory-distillation-agent-skills.md)
 
-- [Hermes Agent](../ch03/059-hermes-agent.html)
+- Hermes Agent
 - [Qoder Skills 完全指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/qoder-skills-complete-guide.md)
 - [AgentEval：YAML驱动的Agent评测框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-eval-wallezhang-yaml-driven-agent-evaluation-framework.md)
 - [你写的 Skill，及格了吗？](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ni-xie-de-skill-ji-ge-liao-ma.md)

@@ -1,8 +1,10 @@
 # Perplexity Computer Empirical Study: How AI Agents Reshape Knowledge Work
 
-> 📊 Level ⭐⭐⭐⭐ | 17.3KB | `entities/perplexity-computer-knowledge-work-empirical-study.md`
+> 📊 Level ⭐⭐⭐⭐ | 17.3KB
 
 > 2026-06-08 Perplexity AI Research 与 Harvard Business School 联合发布的第一份全面 Perplexity Computer 真实部署实证研究。arXiv 技术报告 2606.07489。在 Computer 上线后仅约 105 天内 (2026-02-25 → 2026-06-08) 即拿出 HBS 学术严格度的生产数据。
+
+## 深度分析
 
 ### 1. 知识工作的实证研究
 Perplexity 的实证研究提供了 AI 对知识工作影响的量化数据——不只是"AI 有用"的定性断言，而是具体的效率提升、质量变化和使用模式数据。

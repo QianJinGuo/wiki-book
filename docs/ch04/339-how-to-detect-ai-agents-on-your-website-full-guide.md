@@ -1,6 +1,6 @@
 # How to Detect AI Agents on Your Website | Full Guide
 
-> 📊 Level ⭐⭐⭐⭐ | 6.3KB | `entities/detect-ai-agents-website.md`
+> 📊 Level ⭐⭐⭐⭐ | 6.3KB
 
 ## How to Detect AI Agents on Your Website
 
@@ -37,6 +37,8 @@
 | **服务器日志分析** | 自声明爬虫（GPTBot 等） | 无法识别伪装 UA 的 Agent | 免费 |
 | **传统 bot 检测**（Cloudflare/Akamai） | 已知恶意 IP、脚本 bot | 81% 绕过率，对隐身浏览器无效 | 免费-企业级 |
 | **专用 AI Agent 检测**（cside） | 隐身浏览器、本地 Agent、欺诈自动化 | 非 100% 覆盖但当前最强 | 免费-企业级 |
+
+## 深度分析
 
 ### 从"bot or not"到意图分类的范式转变
 

@@ -1,6 +1,6 @@
 # 鹅厂 Skill 写作完整 Playbook：14 章节 end-to-end 实战 + 工程化评估（腾讯一线踩坑 + Anthropic 官方做法整合）
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 16.5KB | `entities/tencent-skill-writing-complete-playbook-jackjchou.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 16.5KB
 
 ## 鹅厂 Skill 写作完整 Playbook：14 章节 end-to-end 实战 + 工程化评估
 
@@ -210,7 +210,7 @@ Skill 没触发
 ## 相关主题
 
 - Skill 系统综述 — [Agent Skills Comprehensive Survey](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skills-comprehensive-survey.md)
-- Skill 元技能 — [Meta Skill](../ch07/041-meta-skill.html)
+- Skill 元技能 — Meta Skill
 - Skill vs Coze/Dify/n8n — [Agent Skills Vs Coze Dify N8N Lowcode Yexiaocha](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skills-vs-coze-dify-n8n-lowcode-yexiaocha.md)
 - Skill 质量优化 — [Skills Refiner Design Quality Evaluation Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skills-refiner-design-quality-evaluation-framework.md)
 - Anthropic 95% 数据分析 Skill 栈 — [Anthropic 95Pct Data Analysis Skill Stack Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-95pct-data-analysis-skill-stack-architecture.md)

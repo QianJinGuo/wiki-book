@@ -1,6 +1,6 @@
 # An Opinionated Guide to Using AI Right Now
 
-> 📊 Level ⭐⭐⭐⭐ | 8.7KB | `entities/an-opinionated-guide-to-using-ai-right-now.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.7KB
 
 ## 摘要
 
@@ -73,6 +73,8 @@ Deep Research 模式让 AI 在回答前进行 10-15 分钟的广泛网络研究�
 **谄媚**：所有 AI 聊天机器人都变得更讨人喜欢了，但这也创造了风险——人们可能与 AI 形成过强的依附。需要真正反馈时，明确告诉 AI 扮演批评者角色。
 
 **提示词技巧**：最新研究表明，思维链等传统提示词技巧已不再有显著帮助（沃顿商学院研究），威胁或讨好 AI 也平均没有效果。模型越来越善于理解你的意图。
+
+## 深度分析
 
 ### 使用模式的结构性洞察
 

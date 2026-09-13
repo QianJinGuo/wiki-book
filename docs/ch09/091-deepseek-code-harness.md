@@ -1,6 +1,6 @@
 # DeepSeek Code Harness
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 71.8KB | `entities/deepseek-code-harness.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 71.8KB
 
 ## Overview
 DeepSeek 正在组建团队，从零开始构建对标 Claude Code 的代码智能体产品。核心公式：**Model + Harness = Agent**。除模型本身以外的所有工作，都属于 Harness 的范畴。官网职位描述明确："他们正在把 DeepSeek 的前沿模型能力转化为领先的 Agent 产品。"
@@ -12,7 +12,7 @@ Claude Code 的市场表现：
 - GitHub 公开提交量的 4%
 - 首次采购 AI 服务的企业中，Anthropic 面对 OpenAI 正面竞争赢下约 70% 订单
 - 不到一年跑出数十亿美元的年化收入
-- 约 27% 的任务是开发者没有这个工具时原本不会尝试的（任务边界扩大） See also [Harness Engineering](../ch05/019-harness-engineering.html)
+- 约 27% 的任务是开发者没有这个工具时原本不会尝试的（任务边界扩大） See also Harness Engineering
 
 ## DeepSeek 招聘详情
 **核心团队成员：**
@@ -78,6 +78,7 @@ DeepSeek 对 Harness 的定位：除模型本身以外的所有工作，都属�
 - **OpenAI**：Agents SDK 开源，不额外收第一方运行时费用，只对模型和工具调用收费
 > "Model + Harness = Agent，正在成为行业共识。控制层不再只是模型的附属品，而是一个独立的产品维度。"
 
+## 深度分析
 ### 1. 为什么 2026 年 Harness 站到台前
 AI 行业关注点的迁移路径：
 

@@ -1,12 +1,14 @@
 # 浏览器自动化：从 GUI 到 OpenCLI — Agent 时代的可调用性竞争
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 12.3KB | `entities/opencli-browser-automation-jingxing.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 12.3KB
 
 → [原文存档](https://mp.weixin.qq.com/s/hp8yj2_qc2MmCi1jYpfx5g)
 
 ## 摘要
 
 大淘宝技术明径 2026-05-22 文章。文章提出放弃不稳定的前端 UI 自动化操作，转而解析并复现底层 API 请求。配套开源 `@jackwener/opencli` 提供了 5 级认证策略（public/cookie/header/store-action/ui）和 6 步 Agent 探索工作流（打开 → 观察 → 抓包 → 模拟交互 → 二次抓包 → 验证 API）。核心观点：未来的软件竞争维度不只是界面好不好看，更是谁更容易被 Agent 理解、调用、验证，再接进工作流。
+
+## 深度分析
 
 ### 1. 为什么 Agent 操控浏览器路不好走
 
@@ -123,7 +125,7 @@ opencli cascade https://api.example.com/hot
 ## 相关实体
 
 - [Karpathy 最新访谈从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md)
-- [Karpathy Vibe Coding Agentic Engineering](268-karpathy-vibe-coding-agentic-engineering.html)
+- Karpathy Vibe Coding Agentic Engineering
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
 - [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/两万字详解claude-code源码核心机制.md)
 - [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md)
@@ -134,7 +136,7 @@ opencli cascade https://api.example.com/hot
 - [Impeccable Frontend Design Skill Harness Vibecoder](https://github.com/QianJinGuo/wiki-public/blob/main/entities/impeccable-frontend-design-skill-harness-vibecoder.md)
 
 → [原文存档](https://mp.weixin.qq.com/s/hp8yj2_qc2MmCi1jYpfx5g)
-- [how developers can build agentic agreement workflows on docu](317-how-developers-can-build-agentic-agreement-workflows-on-docu.html)
+- how developers can build agentic agreement workflows on docu
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/reinforcement-learning-rlhf.md)
 
 ---

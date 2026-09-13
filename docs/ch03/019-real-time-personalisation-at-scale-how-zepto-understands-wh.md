@@ -1,6 +1,6 @@
 # Real-Time Personalisation at Scale: How Zepto Understands What You Want, Right Now
 
-> 📊 Level ⭐⭐⭐ | 11.8KB | `entities/zepto-real-time-personalisation-dual-sequence-ranker.md`
+> 📊 Level ⭐⭐⭐ | 11.8KB
 
 Zepto 的实时个性化系统：双序列排序器（Dual Sequence Ranker）在高并发场景下的工程实践，涵盖特征工程、模型服务和实时推理链路。
 
@@ -74,6 +74,8 @@ A sequence item isn’t just an ID; it’s a structured token combining three co
 
 *   **Item Embedding (128 d):** A dense SKU vector, initialised from pre-trained embeddings and fine tuned during training.
 *   **Action Embedding:** Differentiates interaction types. An _Add-to-Cart (ATC)_ carries heavier 
+
+## 深度分析
 
 ### 双序列架构解决"静态用户画像"的根本性缺陷
 

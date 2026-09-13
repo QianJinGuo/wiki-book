@@ -1,6 +1,6 @@
 # OpenSquilla launches open-source AI agent to cut token costs
 
-> 📊 Level ⭐ | 11.5KB | `entities/opensquilla-launches-open-source-ai-agent-to-cut-token-costs.md`
+> 📊 Level ⭐ | 11.5KB
 
 ## 核心要点
 - OpenSquilla 发布首个公开版本 v0.1.0，Apache-2.0 许可，可自托管
@@ -20,6 +20,7 @@
 
 - [intercom, now called fin, launches an ai agent whose only jo](https://github.com/QianJinGuo/wiki-public/blob/main/entities/intercom-now-called-fin-launches-an-ai-agent-whose-only-job-is-managing-another-.md)
 
+## 深度分析
 ### 核心问题诊断：为什么大多数 Agent 部署在浪费 Token？
 OpenSquilla 的出发点非常明确：大多数 Agent 部署花的是它们不需要花的 Token，而运行这些 Agent 的框架没有提供真正的控制机制来阻止这种浪费。
 这是一个关键的行业洞察。在实际生产环境中，Agent 的 Token 消耗往往远高于必要水平，原因包括：

@@ -1,6 +1,6 @@
 # What You Need to Know About Lambda MicroVMs
 
-> 📊 Level ⭐⭐⭐⭐ | 8.5KB | `entities/theburningmonk-com-2026-06-what-you-need-to-know-about-lambda-microvms.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.5KB
 
 ## 摘要
 
@@ -67,6 +67,8 @@ Yan Cui 的类比精辟：**AgentCore Runtime 之于 Lambda MicroVMs，如同 Fa
 - **定价**：vCPU-秒 + 内存 GB-秒 + 快照读写费（更接近 Fargate 而非 Lambda）
 - **计费粒度**：按秒计费（非 Lambda 的毫秒级）
 - **无自动水平扩展**：需自行管理 VM fleet
+
+## 深度分析
 
 ### Agent Sandbox 的基础设施级解决方案
 

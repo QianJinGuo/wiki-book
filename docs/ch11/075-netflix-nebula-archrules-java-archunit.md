@@ -1,6 +1,6 @@
 # Netflix Nebula ArchRules: 跨越数千个 Java 仓库的 ArchUnit 规模化实践
 
-> 📊 Level ⭐⭐⭐ | 10.3KB | `entities/netflix-nebula-archrules.md`
+> 📊 Level ⭐⭐⭐ | 10.3KB
 
 > 原文存档：[原文存档](https://netflixtechblog.com/scaling-archunit-with-nebula-archrules-b4642c464c5a?source=rss----2615bd06b42e---4)
 
@@ -42,6 +42,8 @@ ArchUnit 提供非常具体和详细的失败信息，是自动修复工具的�
 - **ServiceLoader 自动发现**：Library plugin 自动生成 service loader registration entry，runner 通过 ServiceLoader 发现规则，无需手动注册
 - **5000+ 仓库 / 358 条规则 / 近百万问题检测**：规则规模化后使技术债务可见、可量化、可优先处理
 - **自动修复的未来方向**：ArchUnit 的详细失败信息 + OpenRewrite/LLM 自动修复是下一个前沿
+
+## 深度分析
 
 ### 1. ArchRules：架构决策的代码化执行
 Netflix Nebula ArchRules 将架构约束从"文档规范"转化为"可执行规则"——系统自动检测架构违规（如服务间非法依赖、循环引用、API 版本不兼容），而非依赖人工审查。这与"infrastructure as code"的理念一致：架构规则也应是代码，可版本化、可测试、可自动执行。

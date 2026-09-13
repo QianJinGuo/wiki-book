@@ -1,6 +1,6 @@
 # 如何轻量化的在亚马逊云科技中国区安全使用 Transfer Family SFTP
 
-> 📊 Level ⭐ | 9.3KB | `entities/如何轻量化的在亚马逊云科技中国区安全使用-transfer-family-sftp.md`
+> 📊 Level ⭐ | 9.3KB
 
 → [原文存档](https://aws.amazon.com/cn/blogs/china/how-to-security-using-transfer-family-sftp)
 
@@ -34,7 +34,7 @@
 
 ## **一、背景与挑战**
 
-SFTP（SSH File Transfer Protocol）是企业间文件交换的常用协议。许多组织需要通过 SFTP 与合作伙伴、供应商进行安全的数据传输。[AWS Transfer Family](<https://www.amazonaws.cn/transfer-family/>) 提供了全托管的 SFTP 服务器，但在实际落地过程中，我们经常会遇到一些约束：
+SFTP（SSH File Transfer Protocol）是企业间文件交换的常用协议。许多组织需要通过 SFTP 与合作伙伴、供应商进行安全的数据传输。AWS Transfer Family 提供了全托管的 SFTP 服务器，但在实际落地过程中，我们经常会遇到一些约束：
 
 1. 没有 Active Directory：没有 AD 或 AD不由自己掌控，并且觉得单独为SFTP构建AD过重，排除了 Transfer Family 原生的 AD 集成方案。
   2. 没有自建 IDP：企业也没有 Okta、Entra ID 等第三方身份提供者。

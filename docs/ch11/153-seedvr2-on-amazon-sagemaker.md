@@ -1,6 +1,6 @@
 # SeedVR2 on Amazon SageMaker: 视频超分辨率部署实践
 
-> 📊 Level ⭐⭐⭐⭐ | 8.7KB | `entities/seedvr2-amazon-sagemaker-video-upscaling.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.7KB
 
 ## 概述
 
@@ -61,6 +61,8 @@ SeedVR2 专注于**修复/超分辨率**（输入低清 → 输出高清），�
 
 - GitHub: [sample-sagemaker-video-upscaler](https://github.com/aws-samples/sample-sagemaker-video-upscaler)
 - 模型: [SeedVR2 for ComfyUI](https://github.com/numz/ComfyUI-SeedVR2_VideoUpscaler)
+
+## 深度分析
 
 ### 视频超分为什么是重量级推理负载
 

@@ -1,6 +1,6 @@
 # BlueCode 0 行手写代码重构 2 万行 Vue：约束体系驱动 AI 大规模重构
 
-> 📊 Level ⭐⭐⭐ | 8.7KB | `entities/vivo-bluecode-zero-code-2day-refactor.md`
+> 📊 Level ⭐⭐⭐ | 8.7KB
 
 > 来源：vivo互联网技术（Liu Shudong）| 核心命题：AI 辅助开发的关键不在 AI 能力，而在人为 AI 建立的约束体系
 
@@ -34,6 +34,8 @@
 ## 与现有零代码实体差异
 
 对比 [2 小时 0 行手写代码 VSCode 插件](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-vscode-plugin-zero-code.md)：后者是个人号小规模插件开发（8 文件/1000+ 行，侧重人机协作判断力），本文是 vivo 第一方 2 万行级**生产项目大规模重构** + 完整**约束体系方法论**（Skills/AGENTS.md/飞轮）+ 量化数据。两者同属"0 行手写代码"主题但框架不同（判断力 vs 约束体系），互补互链。
+
+## 深度分析
 
 ### 决定性变量不是模型能力，而是约束体系
 
@@ -70,7 +72,7 @@ Skills、AGENTS.md、飞轮三者其实在解决同一个问题：让 AI 的上�
 - [2 小时 0 行手写代码 VSCode 插件](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-vscode-plugin-zero-code.md)（同主题不同框架）
 - [古法程序员复杂任务 Spec 写作](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gufabiancheng-spec-for-complex-tasks-cc-codex.md)（spec 方法论）
 - [Agent Skill Spec 构建设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-spec-building-design-patterns.md)
-- [Harness Engineering](../ch05/019-harness-engineering.html)
+- Harness Engineering
 
 ---
 

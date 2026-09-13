@@ -1,6 +1,6 @@
 # 达尔文.skill 2.0正式开源发布！让你的所有skill左脚踩右脚实现自我进化
 
-> 📊 Level ⭐⭐ | 7.9KB | `entities/darwin-skill-2-huashu.md`
+> 📊 Level ⭐⭐ | 7.9KB
 
 > -> [原文存档](https://mp.weixin.qq.com/s/54pkSBImnc9mhEdOPf7EZw)
 
@@ -34,6 +34,8 @@
 ## 一句话
 
 SkillOpt 把 skill 当外部可训练状态，SkillLens 把评委准确率从 46% 提到 74%，达尔文 2.0 把两者结合并加上 human-in-the-loop——「让独立评委审你」，这是核心杠杆。
+
+## 深度分析
 
 ### 微软双论文的互补性
 
@@ -76,7 +78,7 @@ SkillLens 的三个药方（失败模式编码、可执行具体性、高风险�
 ## 相关概念
 
 - [LLM Artifact Optimization](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/llm-artifact-optimization.md) — 文本/制品进化优化专题
-- [GEPA optimize_anything](../ch01/432-gepa-optimize-anything.html) — 通用文本优化 API（ASI + Pareto 搜索）
+- GEPA optimize_anything — 通用文本优化 API（ASI + Pareto 搜索）
 - [Hermes Agent Skill 互优化](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-skill-crossover-optimization.md) — KK大叔：Darwin × SkillEvolver 4 轮互优化闭环，验证清华论文核心结论**AI 不需要更强模型**
 
 ---

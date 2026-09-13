@@ -1,6 +1,6 @@
 # VMAF v1: Netflix 视频质量度量的全面升级
 
-> 📊 Level ⭐⭐⭐⭐ | 7.7KB | `entities/netflix-vmaf-v1-video-quality-metric-upgrade.md`
+> 📊 Level ⭐⭐⭐⭐ | 7.7KB
 
 ## 摘要
 
@@ -24,6 +24,8 @@ VMAF 结合多个基础质量感知特征，通过支持向量回归器（SVR）
 | Chroma 伪影 | 仅提取 luma 特征，忽略色彩失真 | SpEED-QA 应用于 chroma 通道 |
 | NEG 模式 | 需要单独模型才能使用 | 默认启用，无需单独模型 |
 | 运动特征 | 无上界（高运动场景高估）+ 仅连续帧差分（高帧率低估） | 硬阈值 + 更大时间窗口选项 |
+
+## 深度分析
 
 ### CSF 调制：统一多设备模型的突破
 

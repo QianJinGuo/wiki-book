@@ -1,6 +1,6 @@
 # Designing Small Is Harder than Designing Big - UX Magazine
 
-> 📊 Level ⭐⭐⭐ | 8.5KB | `entities/designing-small-is-harder-than-designing-big-ux-magazine.md`
+> 📊 Level ⭐⭐⭐ | 8.5KB
 
 ## Summary
 ## 相关实体
@@ -12,10 +12,11 @@
 
 → [原文存档](https://uxmag.com/articles/designing-small-is-harder-than-designing-big)
 
-- [Activity Focused Design](041-activity-focused-design.html)
+- Activity Focused Design
 ## Notes
 - Value: 7/10, Confidence: 8/10
 
+## 深度分析
 ### 系统性思维与增量交付的张力
 文章指出，设计师长期接受的训练是系统性思维——从全局视角理解问题，设计完整的体验生态。这种思维模式在传统瀑布式开发中有重要价值，能防止碎片化体验并预见产品长期演进方向。然而在敏捷环境中，这种思维模式反而成为阻力。敏捷不要求设计完整系统，而是要求从系统的一个"切片"开始，这个切片必须能独立交付价值。
 这种张力源于两种工作模式的根本差异：系统性设计追求完整性和长期架构合理性，而敏捷交付追求短期可部署和快速验证。设计师需要在这两种模式之间找到平衡——既保持对整体愿景的理解，又能在具体迭代中做出取舍。

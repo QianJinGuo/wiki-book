@@ -1,6 +1,6 @@
 # Enterprise AI Agent Development Tools (n8n Report 2026)
 
-> 📊 Level ⭐⭐⭐ | 6.2KB | `entities/n8n-io-reports-2026-ai-agent-development-tools.md`
+> 📊 Level ⭐⭐⭐ | 6.2KB
 
 ## 摘要
 
@@ -63,6 +63,8 @@ n8n 发布的 2026 年企业 AI Agent 开发工具报告（第二版），由独
 - Rate Limits
 
 排除了非 AI 产品特性（如工具托管、表单因素、通用工作流的监控和错误处理）。
+
+## 深度分析
 
 ### 企业 Agent 安全的真实差距
 

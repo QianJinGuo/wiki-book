@@ -1,6 +1,6 @@
 # Enterprise Software Moats in the Agent Era — 系统性护城河分析框架
 
-> 📊 Level ⭐⭐⭐⭐ | 11.5KB | `entities/enterprise-software-moats-agent-era.md`
+> 📊 Level ⭐⭐⭐⭐ | 11.5KB
 
 ## 核心问题
 当软件去掉界面，剩下的是什么？和 PostgreSQL + API 本质区别是什么？SaaS 时代让软件"难以被替换"的东西，在 Agent 时代还成立吗？
@@ -59,6 +59,7 @@ Agent 时代，当软件成为多方协作的协调基础设施（买家/卖家�
 现有 Schema（Opportunities/Tickets/Candidates）是为**人**设计的。 Agent 需要的新对象：**Tasks、Intents、Threads、Policies、Outcomes**。
 新权限模型：原来管"哪个人可以做什么"，现在管"哪个 Agent，代表哪个人，在什么策略下，经过什么审批，带什么审计轨迹，出问题如何回滚"。
 
+## 深度分析
 ### 护城河消长的本质逻辑
 旧世界护城河的核心机制是**人的局限性的商品化**——肌肉记忆、习惯、培训成本都是人的局限。软件通过强迫人适应固定流程来锁住用户。 Agent 打破了这一层：它不需要习惯，不受限于肌肉记忆，可编程切换时机。这意味着依赖"人适应软件"的护城河都将失效。
 真正留下来的是**流程本身的价值**，而非承载流程的界面。
@@ -99,10 +100,10 @@ SaaS 时代记录系统几乎没有飞轮效应，因为软件是单向记录工
 ## 相关实体
 - [AI tool poisoning exposes a major flaw in enterprise agent security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security-v2.md)
 - [阿里云 EventHouse 企业级 Agent 上下文供给体系](https://github.com/QianJinGuo/wiki-public/blob/main/entities/alibaba-eventhouse-enterprise-agent-context.md)
-- [foundation capital agent era six insights](284-foundation-capital-agent-era-six-insights.html)
+- foundation capital agent era six insights
 - [Agent 时代架构师技能指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-era-architect-skills-guide.md)
 - [快手首个打工人Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kuaishou-worker-agent-desktop-software.md)
-- [from](../ch01/414-from-system-of-record-to-system-of-intelligence.html)
+- from
 - [meet customers where they are: agentforce contact center now](https://github.com/QianJinGuo/wiki-public/blob/main/entities/meet-customers-where-they-are-agentforce-contact-center-now-offers-whatsapp-voice.md)
 
 ---

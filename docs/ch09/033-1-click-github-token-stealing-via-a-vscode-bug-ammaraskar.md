@@ -1,6 +1,6 @@
 # 1-Click GitHub Token Stealing via a VSCode Bug — ammaraskar 2026
 
-> 📊 Level ⭐⭐⭐ | 11.6KB | `entities/vscode-github-token-stealing-1-click-pwn-ammaraskar-2026.md`
+> 📊 Level ⭐⭐⭐ | 11.6KB
 
 ## 1-Click GitHub Token Stealing via a VSCode Bug
 

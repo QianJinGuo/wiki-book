@@ -1,6 +1,6 @@
 # Hermes Agent Skill 互优化：SkillEvolver × Darwin × EmbodiSkill 4 轮闭环
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 25.3KB | `entities/hermes-agent-skill-crossover-optimization.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 25.3KB
 
 ## 一句话
 
@@ -166,7 +166,7 @@ EmbodiSkill = 失败归因 (WHY it failed) + 技能体/附录分离
 
 ## 与 GEPA optimize_anything 的关联
 
-**[GEPA optimize_anything](../ch01/432-gepa-optimize-anything.html)**（GEPA 官方，2026-02-18，**通用文本优化 API**）与本实验在 4 个关键维度高度互补：
+**GEPA optimize_anything**（GEPA 官方，2026-02-18，**通用文本优化 API**）与本实验在 4 个关键维度高度互补：
 
 | 维度 | GEPA optimize_anything | 本互优化实验 |
 |---|---|---|
@@ -194,6 +194,8 @@ EmbodiSkill = 失败归因 (WHY it failed) + 技能体/附录分离
 **结合路径建议**：
 
 > "**如果把 GEPA 的 Pareto 反思 + ASI 机制注入到 SkillEvolver 的 3 阶段流程中，把'独立审计'升级为 GEPA 风格的'oa.log() 结构化诊断 + Pareto reflection'，用棘轮防退化，用 Multi-Task 让 skill 在任务间互相增强——这就是工业级 Skill 自进化的完整方案。**"
+
+## 深度分析
 
 ### 1. 棘轮机制的热力学本质：反熵增的信息设计
 

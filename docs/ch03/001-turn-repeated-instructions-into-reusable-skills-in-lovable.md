@@ -1,6 +1,6 @@
 # Turn repeated instructions into reusable skills in Lovable | Lovable
 
-> 📊 Level ⭐ | 8.1KB | `entities/turn-repeated-instructions-into-reusable-skills-in-lovable-l.md`
+> 📊 Level ⭐ | 8.1KB
 
 ## 核心要点
 - **AI agent 的记忆缺失问题**：当前 AI agents 都是通才（generalists），每次打开 Lovable 都不记得用户的工作方式、 conventions 和风格，需要反复解释相同内容
@@ -10,6 +10,7 @@
 - **Skills 按需加载，可叠加**：多个 skills 可同时触发同一任务（focused skills stack cleanly），支持手动调用（/skill-name）或自动匹配
 - **Skills 只是指令，不是脚本**：Skill 不执行操作、不扫描网站、不运行检查——只是 Lovable 读取并遵循的指南
 
+## 深度分析
 ### 1. Skills 的本质价值：消除重复摩擦
 文章指出了 AI agents 当前的核心矛盾：通用性与个性化的张力。当前 agent 没有记忆，每次对话都是全新的上下文。用户被迫反复解释自己的 conventions、风格偏好和已有工作方式。这种"小摩擦累积"是 agent 采用率提升的主要障碍之一。
 Skills 的解决方案本质上是将"隐性知识显性化"——把用户头脑中对"这件事应该怎么做"的认知提取成文档，让 AI 可读取。这与传统的 prompt library 不同，Skills 是任务触发的可组合单元，而非静态的指令集合。
@@ -23,7 +24,7 @@ Skills 的解决方案本质上是将"隐性知识显性化"——把用户头�
 这与 software design 中的单一职责原则（SRP）高度一致：技能应该做一件事并做好。当技能边界模糊时（两个 skill 都可能触发同一任务），问题通常出在 description 描述不够精准，而非需要更多规则。
 
 ### 4. 渐进式细节加载架构
-Skill 文件结构支持主文件和支撑文件的分离：主 SKILL.md 保持精简（快速加载），支撑文件通过 markdown link 按需引入（[View palette](./colors.md)）。这种架构让 skill 可包含深度细节而不影响触发性能。
+Skill 文件结构支持主文件和支撑文件的分离：主 SKILL.md 保持精简（快速加载），支撑文件通过 markdown link 按需引入（View palette）。这种架构让 skill 可包含深度细节而不影响触发性能。
 这是一种典型的"懒加载"设计：只在实际需要时才加载更深层的上下文，避免一次性加载所有知识造成的 token 浪费和干扰。
 
 ### 5. 与 Knowledge 的互补关系

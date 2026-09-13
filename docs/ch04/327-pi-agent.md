@@ -1,6 +1,6 @@
 # Pi：轻量级开源 Agent 底座
 
-> 📊 Level ⭐⭐⭐⭐ | 8.5KB | `entities/pi-agent-lightweight-base-rekota.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.5KB
 
 ## 摘要
 
@@ -36,6 +36,8 @@ Pi 生态中的 Gondolin 项目提供微虚拟机（micro-VM）执行环境隔�
 | 工具数量 | 默认 4 个 | 通常 20+ |
 | 安全机制 | Gondolin 微 VM | 各框架实现不同 |
 | 二次开发 | 方便 | 受框架约束大 |
+
+## 深度分析
 
 ### 1. 工具克制的设计哲学：少即是多的 Agent 架构原则
 

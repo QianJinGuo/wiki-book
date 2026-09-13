@@ -1,6 +1,6 @@
 # Skill Craft — Claude Skill 质量工程框架
 
-> 📊 Level ⭐⭐⭐⭐ | 7.8KB | `entities/skill-craft.md`
+> 📊 Level ⭐⭐⭐⭐ | 7.8KB
 
 ## 7 类系统性失效模式
 | # | 模式 | 描述 |
@@ -40,6 +40,7 @@
 - 消费方有没有同步
 - 同层结构有没有类似问题
 
+## 深度分析
 ### 从\"有功能\"到\"有质量\"的范式转移
 Skill Craft 的核心贡献在于重新定义了 Skill 的质量问题。大多数人关注 Skill \"能不能用\"——功能是否完整、指令是否清晰。但 Skill Craft 指出真正的问题：**Skill 能否在生产环境中持续可靠地运行**。这个问题不是写好 instructions 能解决的，需要结构性的防御机制。
 
@@ -89,7 +90,7 @@ Skill Craft 的 fix 回归验证逻辑与 Harness 的 Generator/Evaluator 循环
 - [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-issues-compromising-claude-code-with-malicious-skills-agents-part-1.md)
 - [Claude Design Skill Web Design Engineer](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-design-skill-web-design-engineer.md)
 - [Claude Code Skill Writing Guide](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-skill-writing-guide.md)
-- [Claude Design Skill](032-claude-design-skill.html)
+- Claude Design Skill
 - [Skill Issues Compromising Claude Code With Malicious Skills Agents](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-issues-compromising-claude-code-with-malicious-skills-agents.md)
 
 → [原文存档](https://mp.weixin.qq.com/s/R2mdJlmrhwGp4CZvcQ7Tgg)

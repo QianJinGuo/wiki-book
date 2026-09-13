@@ -1,6 +1,6 @@
 # Mathematical Optimization at Enterprise Scale: AWS Innovation Center Methodology and Case Studies
 
-> 📊 Level ⭐⭐⭐ | 11.6KB | `entities/mathematical-optimization-aws-innovation-center-enterprise.md`
+> 📊 Level ⭐⭐⭐ | 11.6KB
 
 > 本文综合提炼自 AWS Generative AI Innovation Center 的企业级数学优化实践。AWS 团队将数学优化定位为 **prescriptive analytics（处方式分析）** —— 不同于 ML 的概率预测，数学优化给出"在约束条件下数学最优的决策"。3 个客户案例展示了 10%-46% 的具体业务收益，方法论 4 步框架可复用。
 
@@ -107,6 +107,8 @@ AWS Innovation Center 的一致框架：
 - [Lifeblood 排班案例](https://aws.amazon.com/blogs/quantum-computing/australian-red-cross-lifeblood-collaborates-with-aws-to-optimize-rostering/)
 - [AWS Generative AI Innovation Center](https://aws.amazon.com/ai/generative-ai/innovation-center/)
 
+## 深度分析
+
 ### 1. 数学优化：被低估的企业 AI 应用
 数学优化（线性规划、混合整数规划）在企业中的实际价值远超"聊天型 AI"——供应链优化、生产排程、物流路径规划可以直接节省数百万美元。
 
@@ -142,7 +144,7 @@ LLM 可以将自然语言业务描述翻译为初步的数学模型，但人类�
 ## 相关实体
 - [Securing Ai Agents How Aws And Cisco Ai Defense Scale Mcp And A2A](https://github.com/QianJinGuo/wiki-public/blob/main/entities/securing-ai-agents-how-aws-and-cisco-ai-defense-scale-mcp-and-a2a.md)
 - [Aws Quicksight Dataset Qa Tara Case](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-quicksight-dataset-qa-tara-case.md)
-- [Aws Bedrock Agentcore Quality Optimization Flywheel](095-aws-bedrock-agentcore-quality-optimization-flywheel.html)
+- Aws Bedrock Agentcore Quality Optimization Flywheel
 - [3Rdfsmp](https://github.com/QianJinGuo/wiki-public/blob/main/entities/3rdfsmp.md)
 - [基于 Amazon Ecs Fargate 自建 Keycloak 作为 Aws Iam Identity Center](https://github.com/QianJinGuo/wiki-public/blob/main/entities/基于-amazon-ecs-fargate-自建-keycloak-作为-aws-iam-identity-center.md)
 

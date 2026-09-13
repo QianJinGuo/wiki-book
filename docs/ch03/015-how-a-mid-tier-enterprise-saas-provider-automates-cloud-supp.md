@@ -1,6 +1,6 @@
 # How a Mid-tier Enterprise SaaS Provider Automates Cloud Support
 
-> 📊 Level ⭐⭐⭐ | 14.4KB | `entities/how-a-mid-tier-enterprise-saas-provider-automates-cloud-supp.md`
+> 📊 Level ⭐⭐⭐ | 14.4KB
 
 > **Summary**: 中型企业SaaS提供商使用Amazon Bedrock实现云端支持自动化的实践案例
 
@@ -62,6 +62,8 @@ guardrails.
 - 来源: AWS Machine Learning Blog
 - 技术栈: Amazon Bedrock, Amazon Quick
 - 应用场景: 企业可观测性、业务支持自动化、云端支持
+
+## 深度分析
 
 ### 1. 五智能体工作流的设计逻辑与[多智能体协作模式](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/multi-agent-collaboration-patterns.md)的对应关系
 

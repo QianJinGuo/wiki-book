@@ -1,6 +1,6 @@
 # 本体论（Ontology）：Agent 事实系统的语义控制面
 
-> 📊 Level ⭐⭐⭐ | 9.3KB | `entities/ontology-semantic-control-plane-agent-facts-ruofei-2026-08-08.md`
+> 📊 Level ⭐⭐⭐ | 9.3KB
 
 → [原文存档](https://mp.weixin.qq.com/s/d9C-0aR1fCIkKkFVtz7_jg)
 
@@ -17,6 +17,8 @@
 - **主张账本**：生产事实带状态、有效期和来源存成 claim（含 claim_id, valid_from, valid_to, source_ref, status, schema_version），status 走 candidate → validated → published → retracted。
 - **四层分工**：RAG 服务证据层；图谱/关系表服务事实层；本体在语义控制面；动作层独立存在——即使已有发布的收款关系，付款仍要查额度、账户状态、审批、幂等与权限。
 - **推理 ≠ 校验**：OWL 2 用开放世界假设，缺失事实只说明"还不知道"，不推出是假的；OWL 做推理、SHACL 做校验、策略系统决定谁执行，三者不可替代。
+
+## 深度分析
 
 ### 语义控制面：不是一层存储，而是一层约束
 

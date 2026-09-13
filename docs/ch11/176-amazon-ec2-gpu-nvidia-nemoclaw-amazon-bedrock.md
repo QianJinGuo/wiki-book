@@ -1,6 +1,6 @@
 # 在 Amazon EC2 GPU 实例上部署 NVIDIA NemoClaw — 以 Amazon Bedrock 作为推理后端的生产级参考架构
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 13.3KB | `entities/在-amazon-ec2-gpu-实例上部署-nvidia-nemoclaw-以-amazon-bedrock-作为推理.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 13.3KB
 
 ## 核心要点
 
@@ -22,6 +22,8 @@
 - [在 Amazon Eks 上使用 Nvidia Gpu Operator 管理自定义 Gpu 驱动与 Cuda 工作负载](https://github.com/QianJinGuo/wiki-public/blob/main/entities/在-amazon-eks-上使用-nvidia-gpu-operator-管理自定义-gpu-驱动与-cuda-工作负载.md)
 - [Nvidia Nemotron 3 Ultra Now Available On Amazon Sagemaker Ju](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-nemotron-3-ultra-now-available-on-amazon-sagemaker-ju.md)
 - [miro-amazon-bedrock-bug-routing](https://github.com/QianJinGuo/wiki-public/blob/main/entities/miro-amazon-bedrock-bug-routing.md)
+
+## 深度分析
 
 ### 1. 架构设计的本质：决策与代理的分离
 

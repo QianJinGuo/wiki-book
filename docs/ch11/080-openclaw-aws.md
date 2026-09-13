@@ -1,6 +1,6 @@
 # 把 OpenClaw 从个人助手变成客服：一次信任模型的翻转 | 亚马逊AWS官方博客
 
-> 📊 Level ⭐⭐⭐ | 10.0KB | `entities/openclaw-from-personal-assistant-to-customer-service-a-trust-model-flip.md`
+> 📊 Level ⭐⭐⭐ | 10.0KB
 
 ## 概述
 把 OpenClaw 从个人助手变成客服：一次信任模型的翻转 by awschina on 17 4月 2026 in Artificial Intelligence Permalink Share 摘要：本文探讨如何将 OpenClaw 从个人 AI 助手转型为面向客户的服务Agent。围绕五个核心问题展开：会话隔离（dmScope 配置实现多客户 session 独立）、多渠道接入（Web Widget 与消息平台的身份关联）、安全模型（tools.deny 硬约束 + Bedrock Guardrails 内容过滤的双层防护）、知识库注入（Bootstrap 文件 + Amazon Bedrock Knowledge Bases 的 RAG 检索）、以及客户记忆的局限与演进方向。部署架构基于 AWS，采用 ALB + ECS 认证中间层 + 私有子网 Gateway 的分层设计，通过
@@ -12,6 +12,7 @@ OpenClaw、Amazon Bedrock、Agentic AI、MCP
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/openclaw-from-personal-assistant-to-customer-service-a-trust-model-flip/)
 → [原文存档](https://aws.amazon.com/cn/blogs/china/openclaw-from-personal-assistant-to-customer-service-a-trust-model-flip/)
 
+## 深度分析
 ### 信任模型的根本性翻转
 从"助手模式"到"服务模式"的核心差异在于信任假设的翻转。个人助手模式下，Gateway 实例等于一个信任边界，所有通过认证的调用者被视为可信；而服务模式下，客户虽是合法用户，却不应被视为"主人"。这一翻转揭示了 AI Agent 部署中最关键的安全设计原则：权限必须基于最小权限原则（Principle of Least Privilege），而非基于身份的全面信任。当客户可以享受快速个性化的服务却不能下指令要求 Agent 重启时，工具层的安全控制（tools.deny）就成为必要。
 

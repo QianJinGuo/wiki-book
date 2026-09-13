@@ -1,6 +1,6 @@
 # AWS 正式发布 Lambda MicroVMs：面向 AI 时代的无服务器安全代码执行环境
 
-> 📊 Level ⭐⭐ | 10.5KB | `entities/aws-正式发布-lambda-microvms面向-ai-时代的无服务器安全代码执行环境.md`
+> 📊 Level ⭐⭐ | 10.5KB
 
 → [原文存档](https://aws.amazon.com/cn/blogs/china/aws-launch-lambda-microvms-ai-serverless-security-environment)
 
@@ -32,7 +32,7 @@
 
 ## **一句话理解**
 
-Lambda MicroVMs 是 [AWS Lambda](<https://aws.amazon.com/cn/lambda/>) 中一种全新的无服务器计算原语：为每个用户或会话提供一台专属的、有状态的、虚拟机级隔离的轻量执行环境——启动近乎瞬时，空闲自动挂起，完全无需管理基础设施。
+Lambda MicroVMs 是 AWS Lambda 中一种全新的无服务器计算原语：为每个用户或会话提供一台专属的、有状态的、虚拟机级隔离的轻量执行环境——启动近乎瞬时，空闲自动挂起，完全无需管理基础设施。
 
 ## **一、痛点：不可能三角**
 

@@ -1,6 +1,6 @@
 # Pydantic AI: Progressive Agent Skills without Claude Model Lock-in
 
-> 📊 Level ⭐⭐⭐⭐ | 15.2KB | `entities/pydantic-ai-progressive-agent-skills-automatorrunner.md`
+> 📊 Level ⭐⭐⭐⭐ | 15.2KB
 
 > → [原文存档](https://mp.weixin.qq.com/s/osc5beCKJGDAvHeY2Ji4_w)
 
@@ -16,6 +16,8 @@ AutomatorRunner 在 WeChat 发表的技术文章，记录了从 Claude Skills �
 - Pydantic AI 提供了一种不依赖特定模型的 Agent Skills 渐进式加载方案
 - 关键权衡：Claude Skills 体验好但成本高，通用方案灵活但集成复杂度增加
 - 迁移后意外发现：白盒控制比 Claude Skills 黑盒魔法更适合生产环境
+
+## 深度分析
 
 ### Claude Skills 的商业价值与技术限制
 

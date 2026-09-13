@@ -1,6 +1,6 @@
 # Self-Service AWS Health Analytics with AI Agents
 
-> 📊 Level ⭐⭐⭐⭐ | 7.7KB | `entities/aws-health-analytics-ai-agents-mcp.md`
+> 📊 Level ⭐⭐⭐⭐ | 7.7KB
 
 ## 摘要
 
@@ -53,6 +53,8 @@ Chaplin 暴露三类 MCP 工具：
 | Summary 工具 | 按服务、状态、类别、区域统计 | 直接查询 DynamoDB，即时返回 |
 | Detail 工具 | 深入特定事件类别/类型 | 支持筛选和过滤 |
 | AI Analysis 工具 | 自然语言查询 → 上下文化洞察 | 通过 Strands Agents + Bedrock 处理 |
+
+## 深度分析
 
 ### 多 Agent 架构的设计哲学
 

@@ -1,6 +1,6 @@
 # 小米 MiMo Code — 长程编程 Agent 三大主线（计算/记忆/进化）+ 与 Claude Code 工程分化
 
-> 📊 Level ⭐⭐⭐⭐ | 29.3KB | `entities/mimo-code-xiaomi-coding-harness-2026.md`
+> 📊 Level ⭐⭐⭐⭐ | 29.3KB
 
 ## 概述
 
@@ -209,6 +209,8 @@ VILA 实验室（Mohamed bin Zayed AI University）发布论文（arxiv: 2604.14
 | **记忆** | CLAUDE.md / auto memory / JSONL / sidechain | **Cycle + Rebuild + 4 层 (Session/Project/Global/History)** |
 | **进化** | 手动维护 CLAUDE.md | **Dream（7d）+ Distill（30d）自动整理 + 模式沉淀** |
 | **完成验证** | 主 Agent 自评 + 系统条件 | **独立 verifier Agent 审查** |
+
+## 深度分析
 
 ### 1. "工程不是 AI" 的极端化体现
 

@@ -1,6 +1,6 @@
 # Agent 如何管理其他 Agent：四种 Sub Agent 模式
 
-> 📊 Level ⭐⭐⭐⭐ | 8.4KB | `entities/four-sub-agent-patterns.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.4KB
 
 → [原文存档](https://mp.weixin.qq.com/s/OmdV7cucIVqwOVo7ZO_h1g)
 
@@ -22,6 +22,8 @@
 - **结果收集机制随模式升级而变**：模式 1 结果内联在工具返回值；模式 2 通过 `wait_agent` 批量收集；模式 3 逐消息增量到达；模式 4 只有 Agent 主动汇报才能被主 Agent 看到
 - **适用任务规模与模型能力正相关**：模式 1-2 小模型即可；模式 3 需跨轮次追踪状态；模式 4 每个 Agent 都需前沿级别
 - **Teams 模式引入新的工程难题**：死锁检测、冲突解决（两 Agent 同改一文件）、关闭协调、消息链 Debug
+
+## 深度分析
 
 ### "由低到高"的本质是控制粒度，而非能力升级
 
@@ -82,7 +84,7 @@ Teams 模式下 Agent 间直接 `send_message`，主 Agent 退到监督位。这
 ## 相关实体
 
 - [Openai Codex 521 Update Appshots Goal Computer Use](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openai-codex-521-update-appshots-goal-computer-use.md)
-- [Codex Goal Six Hour Run](../ch09/078-codex-goal-six-hour-run.html)
+- Codex Goal Six Hour Run
 - [Agent Self Improvement Six Mechanisms](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-self-improvement-six-mechanisms.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
 - [Kimi Work Codex Vibe Working Paradigm Shift](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kimi-work-codex-vibe-working-paradigm-shift.md)

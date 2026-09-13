@@ -1,6 +1,6 @@
 # EverMind Raven：自进化 Agent Harness 与数字生命框架
 
-> 📊 Level ⭐⭐⭐ | 8.5KB | `entities/evermind-raven-self-evolving-agent-harness.md`
+> 📊 Level ⭐⭐⭐ | 8.5KB
 
 > EverMind 推出的 Raven 是一个基于自研记忆系统 EverOS 的自进化 Agent Harness，核心主张：主动（Proactive）、进化（Improving）、个性化（Personalized）。
 
@@ -17,6 +17,8 @@ Raven 是 EverMind 以自进化（self-evolving）为轴心打造的 Agent Harne
 - **三维记忆范畴**：User Memory（定义人）、Agent Memory（定义 Agent 自身）、Knowledge Wiki（定义世界知识）。
 - **技能库自修改**：内置 100,000 项经深度评测的预置 Skills，且 Agent 能实时进化技能、闲时改写自身逻辑与策略代码。
 - **模型可被动态微调**：通过 EverBrain 用户侧记忆模型对权重动态微调，把进化下沉到权重层。
+
+## 深度分析
 
 ### 反射与学习闭环：自进化的「操作回路」
 

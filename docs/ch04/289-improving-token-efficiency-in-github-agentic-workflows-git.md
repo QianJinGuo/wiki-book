@@ -1,6 +1,6 @@
 # Improving Token Efficiency in GitHub Agentic Workflows — GitHub 内部 Agent 工作流 Token 优化实践
 
-> 📊 Level ⭐⭐⭐⭐ | 12.1KB | `entities/github-agentic-token-efficiency.md`
+> 📊 Level ⭐⭐⭐⭐ | 12.1KB
 
 ## 概述
 
@@ -80,10 +80,11 @@ ET = m × (1.0 × I + 0.1 × C + 4.0 × O)
 - → ：本文是 Token 经济学的生产级落地案例
 - → ：MCP 工具注册优化的不同路径（Tool Search vs 裁剪）
 - → ：Subagent 模式的上下文隔离与本文的 CLI subagent 策略互补
-- → [Prompt Caching 工程实践](../ch01/190-anthropic-prompt-caching-claude-code.html)：缓存策略是 token 优化的另一维度
+- → Prompt Caching 工程实践：缓存策略是 token 优化的另一维度
 - → [Agent Harness 12 组件与 7 个关键决策](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-12-components-7-decisions.md)：工具选择决策树与本文的 MCP vs CLI 选型呼应
 - → [Agentic Systems Extreme Co-Design（NVIDIA）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-agentic-systems-extreme-co-design.md)：从硬件/推理引擎角度审视 token 效率，与本文的 workflow 层优化形成互补
 
+## 深度分析
 ### 1. API Proxy 架构是 token 可观测性的基础设施
 GitHub 内部能在多框架（Claude CLI、Copilot CLI、Codex CLI）异构环境下统一收集 token 数据，核心依赖于 Agentic Workflows 的安全架构——所有 agent 必须经过 API proxy 访问认证凭据。这一设计本意是安全隔离，却顺便提供了全链路 token instrumentation 的锚点。这揭示了一个工程规律：**可观测性往往在安全约束处自然生长**，而非事后打补丁。
 

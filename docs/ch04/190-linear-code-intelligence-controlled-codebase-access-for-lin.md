@@ -1,6 +1,6 @@
 # Linear Code Intelligence: Controlled Codebase Access for Linear Agent
 
-> 📊 Level ⭐⭐⭐ | 7.9KB | `entities/2026-05-14-code-intelligence-1778979927.md`
+> 📊 Level ⭐⭐⭐ | 7.9KB
 
 → [原文存档](https://linear.app/changelog/2026-05-14-code-intelligence)
 
@@ -15,6 +15,8 @@ Linear 在 2026-05-14 发布 Code Intelligence 功能，给 Linear Agent 提供�
 - 设置流程：安装 GitHub 集成并启用 code access → AI Settings 中打开 Code Intelligence → 选择包含的仓库 + 访问权限范围
 - 权限控制粒度：可以限制为只有 GitHub 权限的成员访问，或对整个 workspace 开放
 - 此 changelog 同时包含约 30 个其他 bug 修复与功能改进（Agent、Issues、Projects、Releases、Slack 等多个模块）
+
+## 深度分析
 
 ### 从 Issue Tracking 到 Code-Aware Agent
 

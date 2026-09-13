@@ -1,6 +1,6 @@
 # Reference your own AWS Secrets Manager secrets in Amazon Bedrock AgentCore Identity
 
-> 📊 Level ⭐ | 2.3KB | `entities/bedrock-agentcore-secrets-manager-identity.md`
+> 📊 Level ⭐ | 2.3KB
 
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/reference-your-own-aws-secrets-manager-secrets-in-amazon-bedrock-agentcore-identity/)
 

@@ -1,6 +1,6 @@
 # Claude Code Dynamic Workflows 实战模式与构建技巧
 
-> 📊 Level ⭐⭐⭐⭐ | 8.3KB | `entities/claude-code-dynamic-workflows-thariq-practical-patterns.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.3KB
 
 > **Background**: Anthropic Claude Code 团队的 Thariq Shihipar 和 Sid Bidasaria 分享了 Dynamic Workflows 的实战经验——让 Claude 为每个任务临时编写专属 harness 的 JavaScript 协调机制。模型够强（Claude Opus 4.8）后，不再需要为每个用例写静态 harness，直接让 Claude 现场生成。
 
@@ -51,6 +51,8 @@ Claude Code Dynamic Workflows 是一种让模型为每个任务动态生成执�
 | **评测** | worktree 拆 N subagent + 比较 subagent 对照标准打分 |
 | **模型路由** | 分类 subagent 判断 → 决定每个任务用哪个模型 |
 | **什么时候不用** | 常规编程任务大多不需要 |
+
+## 深度分析
 
 ### 静态 vs 动态 Harness 的范式转变
 
@@ -118,9 +120,9 @@ Dynamic Workflows 消耗更多 token——多个 subagent 各有独立上下文�
 ## 相关实体
 
 - [Claude Code Dynamic Workflows（已有合并实体）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-dynamic-workflows-multi-agent-orchestration.md)
-- [Embabel](../ch07/014-embabel.html)
+- Embabel
 - [扣子 3.0](https://github.com/QianJinGuo/wiki-public/blob/main/entities/coze-3-0-collaboration-system.md)
-- [Meta Skill](../ch07/041-meta-skill.html)
+- Meta Skill
 - [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 
 → [原文存档](https://mp.weixin.qq.com/s/1eSGt71P-PeaGszs2cikTw)

@@ -1,6 +1,6 @@
 # score by collisions, patch by panic
 
-> 📊 Level ⭐⭐⭐ | 8.1KB | `entities/blog-himanshuanand-com-score-by-collisions-patch-by-panic.md`
+> 📊 Level ⭐⭐⭐ | 8.1KB
 
 ## 摘要
 
@@ -15,6 +15,8 @@
 - **AI 吃掉金字塔底部**：Pwn2Own 上 Orange Tsai 的纯逻辑漏洞利用链证明，需要数月上下文与系统直觉的高端研究仍属人类
 - **企业基础防御**：停用 `npm update` 自动模式、纵深防御、镜像生产的验证部署、持续运行时校验、预构建虚拟补丁与零日剧本
 - **企业进阶防御**：默认封锁出口流量、12-24 小时回收的临时架构、rootless 容器与 seccomp 过滤、以特性开关作为安全断路器
+
+## 深度分析
 
 ### 碰撞计数：从定性判断到情报驱动的概率分级
 

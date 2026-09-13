@@ -1,6 +1,6 @@
 # 你写的 Skill，及格了吗？
 
-> 📊 Level ⭐⭐ | 7.2KB | `entities/ni-xie-de-skill-ji-ge-liao-ma.md`
+> 📊 Level ⭐⭐ | 7.2KB
 
 ## 核心概念
 本文提出了一套 **8 维度 Skill 量化评估框架**，通过元数据质量、执行引导清晰度、领域知识密度等指标对 Skill 进行打分评级（S/A/B/C/D 五档），解决 Skill 质量难以客观衡量的问题。
@@ -59,7 +59,7 @@
 ## 相关实体
 - [Skill.md 简历生成器 Resume Forge](https://github.com/QianJinGuo/wiki-public/blob/main/entities/我用-skillmd-做了一个简历生成器.md)
 - [从 0 到 1 教你写 Agent Skill，让 AI 懂你的"潜规则"](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing-guide.md)
-- [Hermes Agent](../ch03/059-hermes-agent.html)
+- Hermes Agent
 - [Qoder Skills 完全指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/qoder-skills-complete-guide.md)
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/hermes-agent-skill.md)
 - [9个Agent技能模块化SageMaker微调生命周期](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-sagemaker-ai-agent-guided-workflows-finetuning.md)
@@ -72,7 +72,7 @@
 - [Trace2Skill: 轨迹经验蒸馏为可迁移 Agent Skills](https://github.com/QianJinGuo/wiki-public/blob/main/entities/trace2skill-trajectory-distillation-agent-skills.md)
 - [Qoder Skills 完全指南：从零开始，让 AI 按你的标准执行](https://github.com/QianJinGuo/wiki-public/blob/main/entities/qoder-skills-完全指南从零开始让-ai-按你的标准执行-v2.md)
 - [Thin Harness Fat Skills](https://github.com/QianJinGuo/wiki-public/blob/main/entities/thin-harness-fat-skills.md)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/297-tencent-vibe-coding-to-agentic-engineering-backend.html)
+- 从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程
 
 ---
 

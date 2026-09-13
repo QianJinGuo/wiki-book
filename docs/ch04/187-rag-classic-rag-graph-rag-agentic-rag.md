@@ -1,6 +1,6 @@
 # 一文看懂三种 RAG 架构：Classic RAG、Graph RAG 与 Agentic RAG
 
-> 📊 Level ⭐⭐⭐ | 8.1KB | `entities/three-rag-architectures-classic-graph-agentic.md`
+> 📊 Level ⭐⭐⭐ | 8.1KB
 
 > 来源：兔兔AGI（技术极简主义），2026-05-16
 > 架构 | 核心动作 | 解决的问题类型 |

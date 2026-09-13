@@ -1,6 +1,6 @@
 # Karpathy 怎么看 AI Agent（七）：当程序员贡献的 bits 越来越少，什么技能还值钱
 
-> 📊 Level ⭐⭐⭐ | 14.3KB | `entities/karpathy-ai-agent-7-bits-value-decline-2026-allentan.md`
+> 📊 Level ⭐⭐⭐ | 14.3KB
 
 [Karpathy Ai Agent 7 Bits Value Decline 2026 Allentan](https://mp.weixin.qq.com/s/-EAqvaCnjY-dox3P8d8D7w)
 
@@ -86,6 +86,7 @@ Agent 大量生成代码和内容之后，谁来评估这些输出是否正确�
 
 这个警告不只适用于初级工程师，也适用于资深工程师——如果你的资深体现在"比别人更快更准地实现需求"，而不是"比别人更深地理解问题和系统"，这个资深在 Agent 时代同样面临压力。
 
+## 深度分析
 ### "bits" 的本质：程序员的贡献单位正在被重新定义
 Karpathy 所说的"bits"，本质上是一个信息熵压缩的概念——程序员把高层意图压缩成可执行的低层比特位。这个压缩过程，在过去五十年里，被视为程序员的核心价值输出。然而，Agent 的出现证明了这个压缩过程可以被大幅外包。
 这意味着衡量程序员贡献的坐标系正在发生根本位移：从"压缩能力"转向"判断能力"。
@@ -125,7 +126,7 @@ Karpathy 隐含的警告最容易被忽略的部分是时序：问题定义能�
 ## 相关实体
 - [Karpathy Ai Agent 7 Bits Value Decline](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-ai-agent-7-bits-value-decline.md)
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/打造可靠的-ai-编程环境claude-code-hooks-完整开发者指南-v2.md)
-- [Gepa Optimize Anything](../ch01/432-gepa-optimize-anything.html)
+- Gepa Optimize Anything
 - [Github Investigating Teampcp Claimed 17Cc77](https://github.com/QianJinGuo/wiki-public/blob/main/entities/github-investigating-teampcp-claimed-17cc77.md)
 - [Subagents 详解Claude Code 如何避免上下文污染 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/subagents-详解claude-code-如何避免上下文污染-v2.md)
 

@@ -1,6 +1,6 @@
 # Harness Engineering：让 Coding Agent 可靠完成长程任务
 
-> 📊 Level ⭐⭐⭐⭐ | 12.5KB | `entities/harness-engineering-long-term-agent-tasks.md`
+> 📊 Level ⭐⭐⭐⭐ | 12.5KB
 
 ## 核心定义
 **Harness Engineering**：为 AI Coding Agent 构建「缰绳」，使其在安全边界内被稳定地约束、引导和复用。核心目标是让 Agent 能够可靠完成涉及成百上千文件、跨越多个会话、消耗数千万 Token 量级的**长程任务**。
@@ -84,6 +84,7 @@ IN_PROGRESS 残留处理：检查产出物完整性，而非状态本身。
 - **Harness 是动态边界**：随着模型能力提升，曾经需要脚本控制的环节可能被自主处理，但「确定哪些该交给模型、哪些留在框架里」的判断本身不会消失
 → [原文存档](https://mp.weixin.qq.com/s/tpUKOGBouUmRYEnSu1PaDQ)
 
+## 深度分析
 ### 1. 3000 行经验上限的精确推导：Token 消耗的量化拆解
 文章给出了一个经验公式：3000 行代码是 Claude Sonnet 200K 窗口下单子任务的 Token 上限。这个数字背后有完整的量化推导：Prompt 模板约 1K Token；源码内容约 30K-60K Token（每行 10-20 Token）；Agent 多轮读写、推理、修复的过程约 60K-180K Token。三项相加约 90K-240K Token，给 2-3x 工作集留有余量。这一推导过程本身就是一个可迁移的方法论：任何长程任务规划前，都应先对 Token 消耗做分项估算，而非凭感觉定粒度。
 
@@ -112,9 +113,9 @@ Agent 在执行过程中被中断时，状态会停留在 IN_PROGRESS，但实�
 - [Agent Harness 组件解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/langchain-anatomy-agent-harness.md)
 
 ## 相关实体
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/107-claude-code-harness-deep-understanding.html)
+- 深入理解 Claude Code 源码中的 Agent Harness 构建之道
 - [AI Coding Agent 记忆系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-coding-agent-memory-system.md)
-- [你不知道的 Agent 原理架构与工程实践](179-agent-principle-architecture-engineering-practice.html)
+- 你不知道的 Agent 原理架构与工程实践
 - [柚漫剧 AI 全流程提效拆解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yumanju-ai-full-flow-efficiency.md)
 - [Agent Skill 设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/从-anthropic-到-googleagent-skills-正在进入设计模式阶段.md)
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)

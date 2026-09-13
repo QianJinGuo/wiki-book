@@ -1,6 +1,6 @@
 # Client-Side Load Balancing at a Million Requests Per Second
 
-> 📊 Level ⭐⭐⭐ | 11.2KB | `entities/zalando-client-side-load-balancing-million-rps.md`
+> 📊 Level ⭐⭐⭐ | 11.2KB
 
 Zalando 在百万 RPS 级别的客户端负载均衡工程实践，从服务发现到连接管理的完整技术栈。
 
@@ -43,6 +43,8 @@ We implemented the same algorithm Skipper uses: [xxHash64](https://github.com/za
 This means that adding or removing an endpoint remaps only about 1/N of keys, minimising cache churn. And because both Skipper and our library use the same hash function and the same number of virtual nodes, they produce identical rings for the same set of pods. A bank of unit tests pins this down: they assert our ring places the same keys on the same endpoints as Skipper's algorithm for any pod set, and run on every build, so a later change cannot silently drift from Skipper. We confirmed it held in production too, during the canary: cache hit ratios stayed identical on both paths.
 
 We wrote it as a standalone, framework-free JVM module with the long-term intention of lifting it out of this service. Its only real dependency is a small zero-allocation hashing library, for the xxHash64 that matches Skipper; everything else, the ring, the occupancy accounting, the bounded-load
+
+## 深度分析
 
 ### 共享基础设施的"扇出放大"问题
 

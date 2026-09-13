@@ -1,6 +1,6 @@
 # Tencent Vibe Coding to Agentic Engineering Backend
 
-> 📊 Level ⭐⭐⭐⭐ | 11.3KB | `entities/tencent-vibe-coding-to-agentic-engineering-backend.md`
+> 📊 Level ⭐⭐⭐⭐ | 11.3KB
 
 ## 从Vibe Coding到Agentic Engineering：重构后台开发全流程
 
@@ -73,6 +73,8 @@
 - **AI 负责**：在结构化流程中自主执行——代码生成、commit 格式化、MR 描述整理、评审意见定位、日志分析……这些重复性高、规则明确的工作
 
 这和 Vibe Coding 的本质区别在于：Vibe Coding 依赖运气，Agentic Engineering 依赖流程。每个关键节点都有人工审核，AI 是高效的执行者，不是不受控的自动机。
+
+## 深度分析
 
 ### 1. Vibe Coding 的本质缺陷是"过程不可控"
 

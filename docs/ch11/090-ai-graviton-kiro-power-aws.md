@@ -1,6 +1,6 @@
 # AI 驱动的 Graviton 迁移评估：Kiro Power 实战指南 | 亚马逊AWS官方博客
 
-> 📊 Level ⭐⭐⭐ | 9.1KB | `entities/ai-graviton-migration-kiro-power-guide.md`
+> 📊 Level ⭐⭐⭐ | 9.1KB
 
 ## 概述
 AI 驱动的 Graviton 迁移评估：Kiro Power 实战指南 by awschina on 25 3月 2026 in Business Productivity Permalink Share 摘要：本文将深入探讨如何利用 Kiro Power 加速 Graviton 迁移，从代码分析、依赖检查、容器适配的完整流程。 目录 01 1. 引言 02 2. Graviton 迁移的核心挑战 03 3. Kiro Graviton Migration Power：AI 驱动的解决方案 04 4. 准备 Kiro Powers 环境 05 5. 演示一：将基于 Java 语言开发的 Chatbot 应用迁移到 Graviton 06 6. 演示二：评估 Portry 管理的 Python 应用的依赖包 07 7. 其他使用说明 08 8. 结语 1. 引言 在云计算成本优化的浪潮中，
@@ -11,6 +11,7 @@ Kiro CLI、Kiro IDE、Kiro MCP Skills、Amazon Bedrock、AWS Graviton、ARM64
 ## 来源
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/ai-graviton-migration-kiro-power-guide/)
 
+## 深度分析
 ### 1. Graviton 迁移的经济学逻辑：从成本优化到战略选择
 AWS Graviton5（m9g 实例）相比 Graviton3 在视频编码（x264/x265）、数据库查询、流处理等场景实现约 55% 性能提升，同时视频转码场景下处理 100 万帧成本下降 25%。 这一数据揭示了 Graviton 迁移的本质不是简单的 CPU 换代，而是涉及能效比、性价比的整体计算经济重塑。对于日均处理数百万帧视频的流媒体平台或运行数十亿次查询的数据服务，25% 的成本节省叠加 55% 性能提升意味着单位算力成本的结构性下降。然而文章指出的"三大痛点"——代码兼容性、依赖库分析、容器适配——构成了迁移的实际摩擦成本，一个 10-50 万行代码的中等规模项目手工迁移需要 8-17 周 ，这解释了为何许多企业虽有迁移意愿却迟迟未动。
 

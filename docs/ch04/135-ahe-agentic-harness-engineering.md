@@ -1,6 +1,6 @@
 # 复旦北大 AHE：Agentic Harness Engineering 瓶颈分析
 
-> 📊 Level ⭐⭐⭐ | 10.7KB | `entities/fudan-peking-ahe-agentic-harness-engineering.md`
+> 📊 Level ⭐⭐⭐ | 10.7KB
 
 ## 1. 被忽视的「Harness Engineering」瓶颈
 
@@ -78,6 +78,8 @@ AHE 将 Harness 显式解耦为 7 种正交组件类型：System Prompt、Tool D
 
 进化 Agent 能可靠地知道自己要修什么，但预见不到自己的改动会搞坏什么。这是 AHE 当前最大的局限。
 
+## 深度分析
+
 ### 可观测性驱动的范式转移
 
 传统观点认为 Coding Agent 的进化瓶颈在于模型能力不足，但 AHE 揭示了一个更深层的结构性缺陷：进化循环缺乏足够的信号来指导编辑决策。当进化 Agent 无法准确判断「哪个组件导致了失败」时，它只能进行盲目搜索或依赖人类干预。这与机器学习中「没有观测就没有优化」的核心原则完全对应——在缺乏可观测性的情况下，进化搜索退化为随机扰动。
@@ -128,7 +130,7 @@ AHE 的架构选择（Tool Description、Middleware、Skill 作为独立可编�
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 - [Harness Engineering 第三代工程范式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-第三代工程范式.md)
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent.md)
-- [Tencent Vibe Coding To Agentic Engineering Backend](297-tencent-vibe-coding-to-agentic-engineering-backend.html)
+- Tencent Vibe Coding To Agentic Engineering Backend
 - [Agentic Ai System Architecture Harness Skill Mcp](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentic-ai-system-architecture-harness-skill-mcp.md)
 
 → [原文存档](https://mp.weixin.qq.com/s/QKZb2kzZI2K7OEa96X0Flw)

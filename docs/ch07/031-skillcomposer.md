@@ -1,6 +1,6 @@
 # SkillComposer: 生成式技能组合
 
-> 📊 Level ⭐⭐⭐ | 4.3KB | `entities/skillcomposer-generative-skill-composition-agent.md`
+> 📊 Level ⭐⭐⭐ | 4.3KB
 
 ## 摘要
 
@@ -13,6 +13,8 @@ SkillComposer 将 Agent 技能选择建模为闭集技能序列生成任务，�
 3. **数据**：9,872 条训练数据（65 真人 + 9,807 合成），覆盖 196 个技能，依赖边+工作流边保证顺序合理性
 4. **结果**：Codex +23.1 pp，Gemini +18.2 pp 通过率提升，接近金标上界（51.1%/48.4%）
 5. **关键 insight**：Sparse (TF-IDF) + Dense (Embedding) 融合在短名称高辨析度技能库上优于纯 dense；小专用模型优于大模型全参 SFT
+
+## 深度分析
 
 ### 技能组合的「推荐系统时刻」
 

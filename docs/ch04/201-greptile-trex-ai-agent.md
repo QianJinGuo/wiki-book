@@ -1,6 +1,6 @@
 # Greptile TREX：AI 代码审查的执行引擎与 Agent 嵌套架构
 
-> 📊 Level ⭐⭐⭐ | 7.5KB | `entities/greptile-trex-code-execution-artifact-generation.md`
+> 📊 Level ⭐⭐⭐ | 7.5KB
 
 ## 摘要
 
@@ -13,6 +13,8 @@ Greptile 构建了 TREX（Test, Run, Execute）——一个嵌入代码审查流
 3. **多模态 Artifact 证据**：每个 TREX 发现附带截图、日志、API trace、执行脚本、视频——像"展示解题步骤"一样让下游 Agent 或人类可以验证
 4. **模型无关性**：设计了模型无关的 harness，支持热切换不同供应商的模型，主编排 Agent 和子 Agent 可使用不同模型
 5. **评测优先级**：recall（找到真实 bug）> precision（跨运行一致性）> 延迟——开发者宁愿多等一会儿也要准确的结果
+
+## 深度分析
 
 ### 从独立 Agent 到嵌套架构的演进
 

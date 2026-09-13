@@ -1,6 +1,6 @@
 # AgentScope Builder 快速体验：用 Harness 框架快速构建企业自进化智能体
 
-> 📊 Level ⭐⭐⭐ | 10.1KB | `entities/agentscope-builder-enterprise-self-evolving-agent-harness.md`
+> 📊 Level ⭐⭐⭐ | 10.1KB
 
 > -> [原文存档](https://mp.weixin.qq.com/s/iaNkbO9BfCqxaBk5b1kF-w)
 
@@ -55,6 +55,8 @@ Builder 把每一个 Agent 都跑在 **HarnessAgent + CompositeFilesystem** 之�
 2. **Layer 2：存储后端** —— 本机磁盘 / Docker 容器 / 远端 KV 三选一
 
 关键点：**Agent 代码完全不知道这两层的存在**。隔离是在 CompositeFilesystem 这一层实现的，不是靠业务代码「小心避开别人的目录」实现的。
+
+## 深度分析
 
 ### 1. 从「单人本机」到「多租户分布式」的架构跨越
 

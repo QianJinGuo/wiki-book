@@ -1,6 +1,6 @@
 # OpenClaw、WorkBuddy、Loop 工程：谁在火，谁有用，谁还在 Demo
 
-> 📊 Level ⭐⭐⭐ | 5.0KB | `entities/openclaw-workbuddy-loop-engineering-who-is-hot-useful-demo.md`
+> 📊 Level ⭐⭐⭐ | 5.0KB
 
 ## 摘要
 
@@ -24,7 +24,7 @@
 
 文章也巧妙回应了"为什么跑出来的是 Coding Agent 和 AI 客服"这个问题：因为它们天然存在于高度结构化的数字环境，且容易做到可观测性。这与 [Agent Evolution Four Stages Six Dimensions Aliyun](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-evolution-four-stages-six-dimensions-aliyun.md) 中论述的 Agent 演进阶段互为印证，也与 [Vivo Agent Brain Body Icu Harness Evolutionary Framework 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vivo-agent-brain-body-icu-harness-evolutionary-framework-2026.md) 中的 Harness 工程框架一脉相承。
 
-文章中提到的"Token 换架构"观点——Agent 用更高的计算、效率和稳定性成本换取更强的场景泛化能力——是对 Harness 工程核心权衡的精准表述，与 [Harness Engineering](../ch05/019-harness-engineering.html) 中描述的工程框架形成互补。
+文章中提到的"Token 换架构"观点——Agent 用更高的计算、效率和稳定性成本换取更强的场景泛化能力——是对 Harness 工程核心权衡的精准表述，与 Harness Engineering 中描述的工程框架形成互补。
 
 ## 实践启示
 
@@ -41,7 +41,7 @@
 - [Loop Engineering Langchain Four Layer Loopcraft](https://github.com/QianJinGuo/wiki-public/blob/main/entities/loop-engineering-langchain-four-layer-loopcraft.md)
 - [Loop Engineering Deep Dive Mengzhaosixi 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/loop-engineering-deep-dive-mengzhaosixi-2026.md)
 - [Agent Evolution Four Stages Six Dimensions Aliyun](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-evolution-four-stages-six-dimensions-aliyun.md)
-- [Harness Engineering](../ch05/019-harness-engineering.html)
+- Harness Engineering
 - [Vivo Agent Brain Body Icu Harness Evolutionary Framework 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vivo-agent-brain-body-icu-harness-evolutionary-framework-2026.md)
 - [Gateway Architecture Openclaw Claude Hermes Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gateway-architecture-openclaw-claude-hermes-comparison.md)
 

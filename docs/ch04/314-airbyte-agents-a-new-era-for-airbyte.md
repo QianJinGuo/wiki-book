@@ -1,6 +1,6 @@
 # Airbyte Agents: A New Era for Airbyte
 
-> 📊 Level ⭐⭐⭐⭐ | 9.5KB | `entities/airbyte-agents-a-new-era-for-airbyte-airbyte.md`
+> 📊 Level ⭐⭐⭐⭐ | 9.5KB
 
 ## 核心定位
 
@@ -67,6 +67,8 @@ Airbyte Agents 的核心是 **Context Store**：一个专为 Agent 搜索优化�
 
 Airbyte Agents 与 Airbyte Data Replication **共用同一账号体系**，但目前两个产品有独立 Dashboard。
 
+## 深度分析
+
 ### 1. Agent 瓶颈的范式转移：从模型到数据
 
 Airbyte Agents 背后的核心论点是：Agent 失败的原因已经从"模型不够强"转移到了"数据架构不支持"。这个判断有深刻的实践基础——Frontier models 已经足够好，但传统数据管道（ETL dashboards 导向、API 碎片化、MCP 薄包装）是为人类设计的，不是为自主 Agent 设计的。Context Store 的出现，是在承认模型瓶颈已缓解之后，对数据基础设施发出的根本性质疑。
@@ -111,8 +113,8 @@ Airbyte 的数据表明，当 Agent 能先在 Context Store 中完成实体发�
 
 ## 相关实体
 - [Airbyte Agents](https://github.com/QianJinGuo/wiki-public/blob/main/entities/airbyte-agents.md)
-- [Skillos Learning Skill Curation For Self Evolving Agents](276-skillos-learning-skill-curation-for-self-evolving-agents.html)
-- [Building Ai Agents For Business Support Using Amazon Bedrock](091-building-ai-agents-for-business-support-using-amazon-bedrock.html)
+- Skillos Learning Skill Curation For Self Evolving Agents
+- Building Ai Agents For Business Support Using Amazon Bedrock
 - [Oz Multi Harness Cloud Agent Orchestration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/oz-multi-harness-cloud-agent-orchestration.md)
 - [Skill Os Learning Skill Curation Self Evolving Agents](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-os-learning-skill-curation-self-evolving-agents.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/tool-use-mcp-patterns.md)

@@ -1,6 +1,6 @@
 # Netflix 分层通知系统：Thinking Fast & Slow 的 Slow-Fast RL 架构
 
-> 📊 Level ⭐⭐⭐⭐ | 7.8KB | `entities/netflix-notification-slow-fast-hierarchical-rl.md`
+> 📊 Level ⭐⭐⭐⭐ | 7.8KB
 
 ## 摘要
 
@@ -53,6 +53,8 @@ Netflix 将 Daniel Kahneman 的"快慢思维"理论应用于通知系统设计�
 
 - **Uniform Random**：将频率目标转为每次机会的发送概率，加权抛硬币决策。期望发送率匹配目标，产生自然随机化模式
 - **非均匀扩展**：支持星期几模式、用户活跃度条件、发布对齐突发等更丰富的时间分布
+
+## 深度分析
 
 ### 与 Kahneman 理论的对应关系
 

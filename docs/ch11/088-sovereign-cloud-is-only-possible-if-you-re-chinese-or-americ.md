@@ -1,6 +1,6 @@
 # Sovereign cloud is only possible if you're Chinese or American: Gartner
 
-> 📊 Level ⭐⭐⭐ | 9.2KB | `entities/5237660-sovereign-cloud-gartner.md`
+> 📊 Level ⭐⭐⭐ | 9.2KB
 
 > -> **5237660.md**
 
@@ -16,6 +16,8 @@
 - Wong 列举了云用户的十大错误，包括：不为云退出策略做规划、首先使用关键任务和复杂应用（如 ERP）上云、假设云适合所有应用、期望每个应用都获得云的全部好处
 - Wong 警告：「在少于两年的时间框架内退出需要重大规划和投资。退出策略和计划在很大程度上被扫到地毯下」
 - Wong 关键判断：假设多云会改善可用性是愚蠢的——除非用户先解决让应用可移植的更复杂和更昂贵的任务。多云应作为访问每个云的特定功能，而非提升韧性
+
+## 深度分析
 
 ### Toombs 的核心论点：主权云的「不可能三角」
 

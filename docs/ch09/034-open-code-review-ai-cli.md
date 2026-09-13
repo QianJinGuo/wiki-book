@@ -1,6 +1,6 @@
 # Open Code Review：阿里开源的 AI 代码评审 CLI 工具
 
-> 📊 Level ⭐⭐⭐ | 11.1KB | `entities/ali-open-code-review-cli-tool.md`
+> 📊 Level ⭐⭐⭐ | 11.1KB
 
 ## 摘要
 
@@ -13,6 +13,8 @@ Open Code Review 是阿里集团内部孵化并开源的 AI 驱动代码评审 C
 3. **生产级验证**：内部月活 2 万用户、累计 370 万次评审、用户采纳率超 30%、有效 AI 评论占比近 80%
 4. **开源评测领先**：在 200 个真实 PR 基准集上，整体 F1 指标领先 Claude Code（25.10% vs 14.13%），准确率远超通用 Agent 方案
 5. **四层规则穿透**：CLI 参数 > 项目规则 > 用户规则 > 系统默认，first-match-wins 策略保证灵活性与可控性
+
+## 深度分析
 
 ### 确定性工程 × Agent 混合驱动的设计哲学
 
@@ -89,7 +91,7 @@ Open Code Review 的关键创新是**反思模型（Reflection Model）**：利�
 - [Claude Code 深度架构分析](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/claude-code-deep-architecture-analysis.md) — 对比 Open Code Review 与通用 Agent 在代码评审场景的架构差异
 - [Claude Code 治理软规则](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-governance-soft-rules.md) — 探讨 Agent 行为治理模式，与 Open Code Review 的确定性约束形成对比
 - [复杂任务规范（gufabiancheng）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gufabiancheng-spec-for-complex-tasks-cc-codex.md) — 探讨 Agent 在复杂任务中的规范执行
-- [Harness Engineering](../ch05/019-harness-engineering.html) — Agent 工程化的核心理念，与确定性工程 × Agent 混合驱动设计相关
+- Harness Engineering — Agent 工程化的核心理念，与确定性工程 × Agent 混合驱动设计相关
 
 ## 参考来源
 

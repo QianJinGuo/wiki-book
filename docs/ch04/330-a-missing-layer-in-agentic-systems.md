@@ -1,6 +1,6 @@
 # A Missing Layer in Agentic Systems?
 
-> 📊 Level ⭐⭐⭐⭐ | 8.2KB | `entities/a-missing-layer-in-agentic-systems.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.2KB
 
 > 原文存档：[原文存档](https://blog.crewai.com/a-missing-layer-in-agentic-systems)
 
@@ -65,6 +65,8 @@ def review_content(self, content):
 - 自动响应回退：无人响应时的预配置行为
 - Webhook：推送到 Slack、Jira、ServiceNow
 - 完整审计轨迹：每个请求、响应、决策带时间戳
+
+## 深度分析
 
 ### 90/10 法则的架构意义
 

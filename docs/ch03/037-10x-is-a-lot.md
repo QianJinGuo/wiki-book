@@ -1,6 +1,6 @@
 # 10x Is a Lot
 
-> 📊 Level ⭐⭐⭐ | 6.8KB | `entities/10x-is-a-lot.md`
+> 📊 Level ⭐⭐⭐ | 6.8KB
 
 ## 10x Is a Lot — Quarter Mile
 ## [Home](https://www.quarter--mile.com/) • [Subscribe](https://www.quarter--mile.com/subscribe) • [Contact](https://www.quarter--mile.com/contact) • [Writing Club](http://writingclub.world/) • [Questions](https://www.quarter--mile.com/Questions)
@@ -37,6 +37,8 @@ Here are a few examples of what things would look like if they were 10x faster/b
 | 能源成本 | 占比 GDP 5-10% | 接近免费 |
 | 住房成本 | 主要支出 | 危机消失 |
 | 美国领土占比 | 50 州 | 覆盖地球 53% 陆地 |
+
+## 深度分析
 
 ### 1. 10x 不是 10%——量级差异颠覆直觉判断
    文章通过 16 组具体类比揭示：10x 改进意味着将事物推向完全不同的量级——马拉松跑进 12 分钟、iPhone 充电 5 分钟续命两周、美国平均薪资 $600k。这些数字远超日常经验的线性外推，容易让人在未察觉的情况下被"10x"话术忽悠。

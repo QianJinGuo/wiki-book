@@ -1,6 +1,6 @@
 # 用 Amazon Quick + Bedrock AgentCore 打造对话式 FinOps 助手
 
-> 📊 Level ⭐⭐⭐ | 8.5KB | `entities/amazon-quick-bedrock-agentcore-finops-chat.md`
+> 📊 Level ⭐⭐⭐ | 8.5KB
 
 > **Background**: AWS China 团队将开源的 Billing and Cost Management MCP Server 改造适配后，部署到 Amazon Bedrock AgentCore Runtime，通过 Cognito OAuth 2.0 保护，最终接入 Amazon Quick Chat Agent 让业务用户用中文对话式查询多账号 AWS 成本。
 
@@ -74,6 +74,7 @@ AgentCore Runtime 用 Cognito Authorizer 校验 JWT
 → [原文存档](https://aws.amazon.com/cn/blogs/china/based-on-amazon-quick-amazon-bedrock-agentcore/)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/tool-use-mcp-patterns.md)
+## 深度分析
 
 ### MCP协议架构：解耦与组合的灵活性
 

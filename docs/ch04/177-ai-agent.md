@@ -1,6 +1,6 @@
 # 企业 AI 的非技术困境：本体驱动 Agent 与知识治理
 
-> 📊 Level ⭐⭐⭐ | 8.3KB | `entities/enterprise-ai-ontology-agent-knowledge-governance.md`
+> 📊 Level ⭐⭐⭐ | 8.3KB
 
 ## 摘要
 
@@ -25,6 +25,8 @@ DataFunTalk 圆桌讨论实录，围绕本体建模、知识治理、企业 AI �
 - 本体作为 Agent 的知识底座
 - 治理→可用→智能的渐进路线
 - 组织不变，换什么引擎都没用——蒸汽机到电动机的历史类比
+
+## 深度分析
 
 ### 1. "本体"的认知对齐困境
 

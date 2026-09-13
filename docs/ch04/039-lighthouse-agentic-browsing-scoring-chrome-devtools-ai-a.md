@@ -1,6 +1,6 @@
 # Lighthouse Agentic Browsing Scoring — Chrome DevTools 为 AI Agent 交互评估网站
 
-> 📊 Level ⭐ | 3.6KB | `entities/lighthouse-agentic-browsing-scoring.md`
+> 📊 Level ⭐ | 3.6KB
 
 ## Lighthouse Agentic Browsing Scoring
 
@@ -55,7 +55,7 @@ Agent 依赖无障碍树（accessibility tree）作为其主要数据模型。Li
 
 ## 相关主题
 - [Aeo And Geo For Ai Overviews Chatgpt Claude Gemini And Perplexity](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aeo-and-geo-for-ai-overviews-chatgpt-claude-gemini-and-perplexity.md) — AI 搜索引擎优化
-- [Agentic Design System From Chatbot To Orchestration](../ch01/006-agentic-design-system-from-chatbot-to-orchestration.html) — Agent 设计系统
+- Agentic Design System From Chatbot To Orchestration — Agent 设计系统
 
 ---
 

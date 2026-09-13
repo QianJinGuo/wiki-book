@@ -1,6 +1,6 @@
 # Netflix Kueue 迁移：百万级 Batch Job 从 CMB 到 Kubernetes 原生调度
 
-> 📊 Level ⭐⭐⭐⭐ | 6.7KB | `entities/netflix-kueue-batch-compute-migration.md`
+> 📊 Level ⭐⭐⭐⭐ | 6.7KB
 
 ## 摘要
 
@@ -40,6 +40,8 @@ Netflix 评估了多个方案后选择 Kueue，关键决策因素：
 | 资源维度 | 单维度 | 多维度（CPU/Memory/GPU/自定义） |
 | 生态 | 自研封闭 | Kubernetes 原生，CNCF |
 | 容量借用 | 不支持 | 未使用 reserved capacity 可借给其他租户 |
+
+## 深度分析
 
 ### 迁移架构设计
 

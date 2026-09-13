@@ -1,6 +1,6 @@
 # From Silos to Service Topology: Why Netflix Built a Real-Time Service Map
 
-> 📊 Level ⭐⭐⭐⭐ | 8.4KB | `entities/from-silos-to-service-topology-why-netflix-built-a-real-time.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.4KB
 
 > **Background**: Netflix 构建了 Service Topology——一个实时更新的服务依赖拓扑图，整合三种互补数据源（eBPF 网络流、IPC 指标、分布式追踪），为数千微服务提供统一的依赖可视化和故障排查能力。
 
@@ -47,6 +47,8 @@ Service Topology 的核心设计决策是使用三个独立数据源构建三个
 **图存储**：Netflix 自研图数据库（构建在分布式 KV 存储之上的抽象层），专为高吞吐图操作设计，支持快速多跳遍历。
 
 **gRPC API**：支持多跳遍历、按可用性层级和业务域过滤、大结果集分页、亚秒级查询响应。
+
+## 深度分析
 
 ### 实时性的工程权衡
 

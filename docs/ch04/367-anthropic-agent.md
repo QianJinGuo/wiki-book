@@ -1,6 +1,6 @@
 # Anthropic：生物学Agent的瓶颈不在模型，而在数据基础设施
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 16.6KB | `entities/anthropic-biology-agent-data-infrastructure-virbench.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 16.6KB
 
 ## 摘要
 
@@ -13,6 +13,8 @@ Anthropic 于 2026 年 6 月发表科学博客《为生物学智能体铺平道�
 3. **gget virus 将检索准确率提升至 99.7%**：通过确定性工具层屏蔽底层数据源的复杂性，让模型专注推理而非数据访问
 4. **Karpathy 的「浏览器点击税」问题在生物学领域更严重**：Web 开发中的痛点在生物数据领域被放大数倍
 5. **科学 Agent 需要「无聊但可靠」的底座**：创造力和推理留给模型层，稳定性和确定性留给数据访问层
+
+## 深度分析
 
 ### 1. 生物学 Agent 为什么落后于 Coding Agent
 
@@ -126,7 +128,7 @@ Laura Luebbert 在博客结尾提出的原则值得所有科学 Agent 建设者�
 ## 相关实体
 
 - [Anthropic Mcp Revisited Tool Search Code Orchestration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-mcp-revisited-tool-search-code-orchestration.md) — Anthropic 的工具调用架构
-- [Harness Engineering](../ch05/019-harness-engineering.html) — Harness 工程与 Agent 可靠性的关系
+- Harness Engineering — Harness 工程与 Agent 可靠性的关系
 - [Agent Harness Context Management Working Set](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-context-management-working-set.md) — 上下文管理在 Agent 执行中的作用
 - [Kimi Work Beta Foundation Model Company Advantage](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kimi-work-beta-foundation-model-company-advantage.md) — 模型公司做 Agent 的路线对比
 - [Claude Code First Year Retrospective Boris Cat 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-first-year-retrospective-boris-cat-2026.md) — Claude Code 验证了「工具层可靠性」的重要性

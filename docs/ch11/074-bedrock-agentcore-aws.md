@@ -1,6 +1,6 @@
 # 基于Bedrock Agentcore 实现智能成本分析与告警系统 | 亚马逊AWS官方博客
 
-> 📊 Level ⭐⭐⭐ | 10.3KB | `entities/intelligent-cost-analysis-and-alerting-system-powered-by-bedrock-agentcore.md`
+> 📊 Level ⭐⭐⭐ | 10.3KB
 
 ## 概述
 基于Bedrock Agentcore 实现智能成本分析与告警系统 by awschina on 04 3月 2026 in Artificial Intelligence Permalink Share 摘要：在云原生时代，企业数字化转型的步伐不断加快，云基础设施已成为业务发展的核心支撑。云成本的有效监控与管理，已不再是可选项，而是企业数字化战略成功的关键要素。本文设计并实现了一套智能云成本监控与告警系统，使用者通过自然语言与智能体交互，获取与云成本相关的分析建议和优化方案，同时实现异常告警。 目录 01 1、引言 02 2、方案概述 03 3、核心功能实现 04 4、附录 05 5、结语 1、引言 在云原生时代，企业数字化转型的步伐不断加快，云基础设施已成为业务发展的核心支撑。然而，伴随着云服务使用规模的快速增长，云成本管理正成为企业面临的重大挑战。云成本的有效监控与管理，已不再是可选
@@ -8,6 +8,7 @@
 ## 核心技术
 Amazon Bedrock AgentCore、Strands Agent SDK、OpenClaw、MCP Server
 
+## 深度分析
 ### 架构创新：单Agent双模式设计
 本文提出的智能成本监控与告警系统采用了**单Agent双模式**架构，这一设计选择具有重要的工程意义。传统方案通常需要多个Agent分别处理交互式咨询和自动化监控，这带来了Agent间协调的复杂性和延迟问题。本文通过让同一个Agent同时承担两种职责，简化了系统架构，同时利用Bedrock AgentCore Runtime的托管能力实现了定时触发和实时响应两种运行模式。
 在**交互式咨询模式**下，Agent作为成本专家顾问，通过自然语言理解用户的查询意图，智能选择合适的分析工具，将复杂的成本数据转化为易懂的业务洞察。在**自动化监控模式**下，同一个Agent通过EventBridge定时触发，主动执行成本异常检测，发现问题时自动通过SNS发送结构化告警。这种设计实现了"一个Agent，多种职责"的高效模式。
@@ -67,7 +68,7 @@ Amazon Bedrock AgentCore、Strands Agent SDK、OpenClaw、MCP Server
 
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/build/custom/code/based/evaluators/in/amazon/bedrock/agentco.html)
 
-- [AgentCore质量优化飞轮：推荐-验证-部署闭环](095-aws-bedrock-agentcore-quality-optimization-flywheel.html)
+- AgentCore质量优化飞轮：推荐-验证-部署闭环
 
 ---
 

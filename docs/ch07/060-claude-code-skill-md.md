@@ -1,6 +1,6 @@
 # Claude Code SKILL.md 写作指南
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 11.4KB | `entities/claude-code-skill-writing-guide.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 11.4KB
 
 ## 核心概念
 
@@ -111,6 +111,8 @@ Write simplest code to pass the test. Don't add features.
 4. **术语来回换**：同一个概念只用一个名字
 5. **让 LLM 做确定性工作**：格式转换/精确计算交给脚本；LLM 做判断
 
+## 深度分析
+
 ### 为什么 SKILL.md 不是长 Prompt
 
 传统的 Long Prompt 模式把所有指令堆在一起，Agent 从头读到尾，上下文膨胀严重，且难以复用。而 SKILL.md 的设计初衷是**按需加载**：Agent 在任务开始时只知道这个 Skill 存在（通过 name 和 description 的广告层），只有在确定需要使用时才读取完整指令，最后在执行阶段按需引用 references 和 scripts。
@@ -196,7 +198,7 @@ Skill 写完后，不要直接投入生产使用。验证方式：
 ## 相关实体
 - [Skill Issues Compromising Claude Code With Malicious Skills Agents Part 1](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-issues-compromising-claude-code-with-malicious-skills-agents-part-1.md)
 - [Claude Design Skill Web Design Engineer](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-design-skill-web-design-engineer.md)
-- [Claude Design Skill](032-claude-design-skill.html)
+- Claude Design Skill
 - [Claude Code Prompt Source Analysis](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-prompt-source-analysis.md)
 - [打造可靠的 Ai 编程环境Claude Code Hooks 完整开发者指南 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/打造可靠的-ai-编程环境claude-code-hooks-完整开发者指南-v2.md)
 - [using claude](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-html-artifacts.md)

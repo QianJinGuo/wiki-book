@@ -1,6 +1,6 @@
 # From idea to AI app: creating intelligent research assistants
 
-> 📊 Level ⭐⭐⭐ | 8.6KB | `entities/ai-research-assistant-from-idea-to-app.md`
+> 📊 Level ⭐⭐⭐ | 8.6KB
 
 ## From idea to AI app: Creating intelligent research assistants with Strands
 
@@ -19,6 +19,8 @@ Strands Agents addresses the core challenges you face when building AI applicati
 The framework's flexible architecture supports everything from single agents to multi-agent networks and hierarchical systems, making it suitable for projects of various scale. You can integrate external functions and APIs through the @tool decorator, while the model-agnostic design works with various LLM providers including Amazon Bedrock, Anthropic, and OpenAI.
 
 For AWS environments, Strands integrates naturally with services like Amazon Bedrock and AWS Lambda, and it's already production-ready. AWS teams use it in services like Amazon Q and AWS Glue. The open source framework is Apache-2.0 licensed with active community contributions, and the same code runs smoothly in both local development and production environments. Real-time streaming responses make it a good fit for interactive applications that need immediate feedback.
+
+## 深度分析
 
 ### 模型驱动架构的核心价值
 

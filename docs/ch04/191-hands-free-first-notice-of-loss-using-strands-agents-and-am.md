@@ -1,6 +1,6 @@
 # Hands-free first notice of loss: Using Strands Agents and Amazon Bedrock AgentCore Browser Tool for intelligent claims intake
 
-> 📊 Level ⭐⭐⭐ | 7.8KB | `entities/hands-free-first-notice-of-loss-using-strands-agents-and-ama.md`
+> 📊 Level ⭐⭐⭐ | 7.8KB
 
 > 原文存档：[原文存档](https://aws.amazon.com/blogs/machine-learning/hands-free-first-notice-of-loss-using-strands-agents-and-amazon-bedrock-agentcore-browser-tool-for-intelligent-claims-intake)
 
@@ -40,6 +40,8 @@ AWS 展示的保险理赔 FNOL（First Notice of Loss）自动化方案，将 St
 - **Simple** 理赔：自动解决
 - **Complex** 理赔：路由到"需审查"状态，自动生成结构化说明解释为何被标记
 
+## 深度分析
+
 ### 浏览器推理 vs 传统 RPA 的范式差异
 
 传统 RPA 基于选择器和预录脚本——当 UI 变更时脚本失效。Nova Act 的浏览器推理基于当前 UI 状态做出决策，"看到什么就推理什么"，而非"按照脚本点击什么"。这意味着：队列布局变化、列顺序调整、行数变化都不需要修改自动化逻辑。这在保险门户频繁迭代的现实中具有巨大价值——维护成本从"每次 UI 变更都需更新脚本"降为"Agent 自适应"。
@@ -75,7 +77,7 @@ AWS 展示的保险理赔 FNOL（First Notice of Loss）自动化方案，将 St
 ## 相关实体
 
 - [Build An Ai Powered Equipment Repair Assistant Using Amazon ](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-an-ai-powered-equipment-repair-assistant-using-amazon-.md) — AgentCore + Knowledge Base 的维修助手
-- [Building Web Search Enabled Agents With Strands And Exa](065-building-web-search-enabled-agents-with-strands-and-exa.html) — Strands SDK 搜索 Agent
+- Building Web Search Enabled Agents With Strands And Exa — Strands SDK 搜索 Agent
 - [Enterprise Intelligent Data Query Solution Practice Based On Strands Sdk](https://github.com/QianJinGuo/wiki-public/blob/main/entities/enterprise-intelligent-data-query-solution-practice-based-on-strands-sdk.md) — Strands SDK 企业级方案
 - [Agentcore Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentcore-harness.md) — AgentCore 工程化
 - [Aws Bedrock Agentcore Doris Mcp Server](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-agentcore-doris-mcp-server.md) — AgentCore + MCP Server

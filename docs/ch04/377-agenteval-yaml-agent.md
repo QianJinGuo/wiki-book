@@ -1,6 +1,6 @@
 # AgentEval：YAML驱动的Agent评测框架
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 13.3KB | `entities/agent-eval-wallezhang-yaml-driven-agent-evaluation-framework.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 13.3KB
 
 ## 核心问题
 传统测试金字塔（单元测试 → 集成测试 → E2E 测试）覆盖不了 Agent 的核心质量问题：
@@ -73,6 +73,7 @@ type Grader interface {
 - **缓存透明**：Agent 被 CachedAgent 包裹，缓存命中时 metadata 加 `cache_hit: true` 标记
 - **Hook 失败非致命**：生命周期 Hook 执行失败只打 warning 日志，不终止评测
 
+## 深度分析
 ### pass@k 与 pass^k 的双指标哲学
 大多数测试框架只看 pass@k 来衡量"能力上限"，但 AgentEval 同时追踪 pass^k 来衡量"可靠性"。这两个指标的关系类似于大模型评估中的 precision 与 recall——单独看任何一个都会产生误导。
 当 pass@k 很高但 pass^k 很低时，说明 Agent 有一定概率做对，但不稳定。这种情况下单纯提高 pass@k 阈值没有意义，因为问题根源在于 agent 的随机性，而非能力上限。
@@ -117,7 +118,7 @@ Agent 和 Grader 两个接口的极简设计（各两个方法）降低了插件
 - [Anthropic Generator-Evaluator Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-generator-evaluator-anthropic.md) — 另一种评测闭环思路
 - [Superpowers](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-skills-superpowers-practice.md) — Agent 工作流规范
 - [Skill Writing Patterns](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-writing-patterns-best-practices.md) — Skill 质量评估相关
-- [LBS-IntentBench — 首个真实出行隐式意图评测基准](312-lbs-intentbench.html)
+- LBS-IntentBench — 首个真实出行隐式意图评测基准
 - [AI Skill 测评指标体系](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-skill-metrics-system.md)
 - [Perplexity 内部 Skill 设计指南：四维体系与维护方法论](https://github.com/QianJinGuo/wiki-public/blob/main/entities/perplexity-internal-skill-design-guide.md)
 - [Skills赏析：使用skills-refiner提升skill质量](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skills-refiner-design-quality-evaluation-framework.md)

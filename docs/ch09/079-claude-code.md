@@ -1,6 +1,6 @@
 # Claude Code 七种自定义方法：官方全景指南
 
-> 📊 Level ⭐⭐⭐⭐ | 10.6KB | `entities/claude-code-seven-customization-methods-anthropic-official.md`
+> 📊 Level ⭐⭐⭐⭐ | 10.6KB
 
 Anthropic 官方博客，系统阐述 Claude Code 的七种自定义方法及其对比。每种方法影响三件事：指令何时加载进上下文、压缩后是否持续生效、指令权重有多高。
 
@@ -84,6 +84,8 @@ All API handlers must validate input with Zod before processing.
 | 个人偏好写进项目级 CLAUDE.md | 用户级本地文件 |
 
 核心原则：**CLAUDE.md 保存事实（构建命令、布局、约定），不保存流程和护栏。**
+
+## 深度分析
 
 ### 上下文成本是自定义方法选择的核心约束
 

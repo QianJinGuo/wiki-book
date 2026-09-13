@@ -1,6 +1,6 @@
 # 从 OpenClaw 到 OpenHuman：私人 AI Runtime 的雏形
 
-> 📊 Level ⭐⭐⭐ | 14.5KB | `entities/openhuman-private-ai-runtime-from-openclaw.md`
+> 📊 Level ⭐⭐⭐ | 14.5KB
 
 ## 它到底是什么？不是助手，是运行层
 

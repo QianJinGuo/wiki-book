@@ -1,6 +1,6 @@
 # 🧠 The Token Economy pt2: The Intelligence Company Gets Built
 
-> 📊 Level ⭐ | 23.0KB | `entities/the-token-economy-pt2-the-intelligence-company-gets-built.md`
+> 📊 Level ⭐ | 23.0KB
 
 ## 核心要点
 - **核心公式**：Outcome = Tokens × Intelligent Operating Model（有效运营模型 = 可观测性 × 自主性 × 部署速度 × 问责制）
@@ -132,6 +132,7 @@ Fintech 不行动 = 死亡 。
 - CLARIFY Act 价值：稳定币/GENIUS 之于手机，如同市场结构/CLARIFY 之于手机信号塔——必须有网络层/基础层保护才能让技术真正普及
 - **真正目标是可编程资本市场**：如果通过，crypto 不再是平行赌场，而成为证券、抵押品、结算和流动性的合法升级路径
 
+## 深度分析
 ### 一、运营模型所有权：谁重建，谁拥有
 本文最核心的洞察是「如果你的运营模型就是产品，那么谁重建你的运营模型，谁就拥有你护城河的一块」。这意味着 AI 转型不再是单纯的技术升级，而是一场关于运营模型所有权的博弈。三条路径（DIY、Lab/FDE 合作、PE 强制执行）本质上是三种不同的产权安排：DIY 意味着自建自用，Lab/FDE 合作意味着与实验室共享控制权，PE 强制执行意味着将控制权拱手让给外部股东。这个洞察对于评估任何 AI 转型合作的长期战略影响至关重要——每一次引入外部 FDE，都是在特定模型家族上押下战略赌注，而这个赌注的时间边界往往比 CIO 预期的更短。
 

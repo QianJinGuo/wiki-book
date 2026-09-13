@@ -1,6 +1,6 @@
 # Netflix Metadata Service and Model Lifecycle Graph
 
-> 📊 Level ⭐⭐⭐ | 14.6KB | `entities/netflix-metadata-service-model-lifecycle-graph.md`
+> 📊 Level ⭐⭐⭐ | 14.6KB
 
 > 原文存档：[原文存档](https://netflixtechblog.com/democratizing-machine-learning-at-netflix-building-the-model-lifecycle-graph-5cc6d5828bb1?source=rss----2615bd06b42e---4)
 
@@ -96,7 +96,7 @@ Model Lifecycle Graph 通过 AIP Portal 向 practitioners 展示，这是一个�
 - [Netflix Live Operations Human Infrastructure](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-live-operations-human-infrastructure.md)
 - [High Throughput Graph Abstraction At Netflix](https://github.com/QianJinGuo/wiki-public/blob/main/entities/high-throughput-graph-abstraction-at-netflix.md)
 - [Netflix Switchboard Lightbulb Model Routing](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-switchboard-lightbulb-model-routing.md)
-- [High Throughput Graph Abstraction At Netflix Part I](084-high-throughput-graph-abstraction-at-netflix-part-i.html)
+- High Throughput Graph Abstraction At Netflix Part I
 - [Building Blocks For Foundation Model Training And Inference On Aws](https://github.com/QianJinGuo/wiki-public/blob/main/entities/building-blocks-for-foundation-model-training-and-inference-on-aws.md)
 
 - [Netflix Scaling Camera File Processing At Netflix](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-scaling-camera-file-processing-at-netflix.md)

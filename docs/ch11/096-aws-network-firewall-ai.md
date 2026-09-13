@@ -1,10 +1,12 @@
 # AWS Network Firewall 规则冲突 AI 实时检测方案（部署小指南六）
 
-> 📊 Level ⭐⭐⭐ | 8.6KB | `entities/aws-network-firewall-ai-conflict-detection-bedrock.md`
+> 📊 Level ⭐⭐⭐ | 8.6KB
 
 ## 概述
 
 本文来自 AWS 中国博客，是 Network Firewall 部署小指南系列的第六篇。核心贡献是**为 AWS Network Firewall 这一无原生冲突检测能力的托管服务，构建了一套基于 CloudTrail + EventBridge + Lambda + Bedrock (Nova Pro) 的实时规则冲突检测与 AI 智能分析系统**。当用户编辑 Rule Group 保存时，系统会在 1-2 分钟内自动检测潜在的 CIDR 重叠、IP/端口冲突、域名策略冲突，并通过邮件通知管理员，同时附上 AI 生成的意图判断、风险评估和修复建议。
+
+## 深度分析
 
 ### 1. "代码负责发现冲突，AI 负责解释冲突" 是核心设计原则
 
@@ -50,7 +52,7 @@ AI 生成的文本分析应配合 SVG/HTML 可视化图，并通过邮件/IM 主
 
 ## 相关实体
 - [Amazon Bedrock Api Security Guide](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-api-security-guide.md)
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/148-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
+- Building A Secure Auth Code Flow Setup Using Agentcore Gatew
 - [Based On Prowler Genai Build Fintech Intelligent Compliance 2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/based-on-prowler-genai-build-fintech-intelligent-compliance-2.md)
 - [Aws Bedrock Serverless Async Inference Multimodal](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-serverless-async-inference-multimodal.md)
 - [Aws Bedrock Agentcore Identity Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-agentcore-identity-security.md)

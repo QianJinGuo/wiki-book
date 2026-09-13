@@ -1,6 +1,6 @@
 # 让 AI 理解你的组件库：新一代智能 D2C架构 — 基于 AWS Kiro MCP Skills 的智能转换实践 | 亚马逊AWS官方博客
 
-> 📊 Level ⭐⭐⭐⭐ | 11.0KB | `entities/ai-understanding-component-library-intelligent-d2c-architecture-aws-kiro-mcp-skills.md`
+> 📊 Level ⭐⭐⭐⭐ | 11.0KB
 
 ## 概述
 让 AI 理解你的组件库：新一代智能 D2C架构 — 基于 AWS Kiro MCP Skills 的智能转换实践 by awschina on 08 12月 2025 in Case Study Permalink Share 摘要 随着企业级前端开发的复杂度不断提升，设计到代码（Design-to-Code, D2C）工具虽然能够自动生成代码，但往往无法理解和利用企业内部的组件库。本文探讨了如何利用 AWS Kiro IDE、Model Context Protocol (MCP) 和 Skills 构建新一代智能 D2C 平台。核心创新在于通过 Skills 将组件知识封装为可调用工具 ，结合 Steering 策略引导，使 AI 能够自动发现、理解并正确使用企业组件库。我们成功将组件库利用率从接近 0% 提升到 80% 以上，开发时间从数小时缩短到数分钟。 背景 传统 D2C 工具
@@ -8,6 +8,7 @@
 ## 核心技术
 Kiro CLI、Kiro IDE、Kiro MCP Skills、Amazon Bedrock
 
+## 深度分析
 ### 1. 知识工具化：从"喂文档"到"调接口"的范式转变
 本文揭示了 AI 应用开发的核心范式转变：传统 RAG 方式将文档作为静态知识喂给 AI，而本文提出的 Skills 方案将知识封装为具有标准化接口的可调用工具。
 具体而言，每个组件被封装为独立 Skill，通过 MCP 协议的 `tools/list` 机制实现动态发现。AI 不再需要在启动时加载完整组件列表（消耗 10000+ tokens），而是在实际需要时才通过 `tools/call` 获取具体 Skill 内容（仅消耗 500 tokens/请求）。这种**按需加载 + 渐进式披露**的架构，将 Token 成本降低了一个数量级，同时保证了知识的实时性——组件库更新后，AI 无需重新训练或手动同步文档即可获取最新 API。

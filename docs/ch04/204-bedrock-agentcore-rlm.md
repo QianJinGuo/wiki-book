@@ -1,12 +1,14 @@
 # Bedrock AgentCore RLM：突破上下文窗口限制
 
-> 📊 Level ⭐⭐⭐ | 7.2KB | `entities/break-the-context-window-barrier-with-amazon-bedrock-agentcore.md`
+> 📊 Level ⭐⭐⭐ | 7.2KB
 
 ## 核心要点
 
 - 技术主题：Bedrock Agentic AI 应用实践
 - 平台：AWS Bedrock
 - 来源：AWS Machine Learning Blog
+
+## 深度分析
 
 ### RLM 的核心创新：从上下文容器到程序化环境
 

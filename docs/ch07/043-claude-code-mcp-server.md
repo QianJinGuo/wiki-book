@@ -1,6 +1,6 @@
 # Claude Code MCP Server
 
-> 📊 Level ⭐⭐⭐⭐ | 10.5KB | `entities/claude-code-mcp-server.md`
+> 📊 Level ⭐⭐⭐⭐ | 10.5KB
 
 ## 核心洞察
 **MCP（Model Context Protocol）是 Anthropic 提出的开放协议，让 Claude Code 能调用外部服务提供的工具。它是 `tool_use` 最直接的应用——模型触发后，客户端向外部 MCP Server 进程发起 RPC 调用，拿到真实结果。**
@@ -47,6 +47,7 @@ function getMcpInstructions(mcpClients) {
 ```
 **MCP 是名副其实的"远程过程调用"**。`tool_result` 里装的是**外部世界的真实数据**。
 
+## 深度分析
 ### MCP 祛魅：很多场景下一条 Bash 就够了
 理解源码实现后，一个自然的问题浮现：模型已经有 Bash 工具了，为什么还需要 MCP？
 对模型来说，调 `mcp__github__list_issues` 和执行 `gh issue list` 拿到的结果没有本质区别——都是 `tool_result` 里的一段文本。但 MCP 多了一个 Server 进程、一层 JSON-RPC 通信、一套配置和维护成本。
@@ -82,10 +83,10 @@ MCP Server 可以通过 `initialize` 响应的 `instructions` 字段，向模型
 - [Claude Code 源码深度解析（13 核心机制）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-source-deep-dive-warrior.md)
 - [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-12-mcp-production-patterns.md)
 - [AgentCore Runtime 部署 Apache Doris MCP Server](https://github.com/QianJinGuo/wiki-public/blob/main/entities/runtime-deploy-apache-doris-mcp-server-quick-suite-ai-analytics.md)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](../ch04/297-tencent-vibe-coding-to-agentic-engineering-backend.html)
+- 从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程
 - [Boris Cherny — 从 IDE 到 Agent 控制台](https://github.com/QianJinGuo/wiki-public/blob/main/entities/boris-cherny-ide-to-agent-console.md)
 - [AI Agent 探索之路：从 Task-Driven 到 Goal-Driven](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/ai-agent-exploration-path.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/107-claude-code-harness-deep-understanding.html)
+- 深入理解 Claude Code 源码中的 Agent Harness 构建之道
 - [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-官方生产级-agent-最佳实践12-个可复用的-mcp-设计模式-v2.md)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](https://github.com/QianJinGuo/wiki-public/blob/main/entities/imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群.md)
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-官方技能最佳实践14-个可复用的-agent-skills-设计模式.md)

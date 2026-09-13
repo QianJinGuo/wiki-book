@@ -1,6 +1,6 @@
 # 企业级OpenClaw安全部署架构指南 | 亚马逊AWS官方博客
 
-> 📊 Level ⭐⭐⭐ | 10.0KB | `entities/enterprise-openclaw-security-deploy-architecture-guide.md`
+> 📊 Level ⭐⭐⭐ | 10.0KB
 
 ## 概述
 企业级OpenClaw安全部署架构指南 by awschina on 23 4月 2026 in Security, Identity, Compliance Permalink Share 摘要：本博客提供企业在亚马逊云科技上部署类OpenClaw智能体的综合安全方案指南，包括架构设计、缓解注入攻击、企业内部系统集中访问和细粒度授权等。 目录 01 引言 02 AI Agent 安全：一个全新的问题域 03 威胁全景：了解你的对手 04 安全架构总览：纵深防御七层模型 05 核心安全能力：Amazon Bedrock AgentCore 06 关键安全场景与解决方案 07 安全运营：12 项安全控制清单 08 参考资源 09 相关链接 1. 引言 在过去十年中，企业安全架构的演进经历了从边界防御到零信任的深刻转型。然而， Agent 的出现正在带来又一次范式级的挑战——这一次，威胁不再单
@@ -11,6 +11,7 @@ OpenClaw、Amazon Bedrock、Agentic AI、MCP
 ---
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/enterprise-openclaw-security-deploy-architecture-guide/)
 
+## 深度分析
 ### 1. AI Agent 安全的范式转移：从边界防御到行为约束
 传统安全模型假设威胁来自外部，防御重心在于建立边界——防火墙、VPN、零信任网络。但 OpenClaw 这类 Agentic AI 的出现颠覆了这一前提：威胁可能由**内部部署的智能系统主动触发**，攻击面从网络边界转移到 AI 行为决策本身。
 AI Agent 的核心特征是**自主任务规划**和**动态工具调用**——给定高层目标，Agent 自行分解步骤、调用 Skills、执行 Shell 命令、读写文件系统。这些能力使其成为具有高度自主性的行为主体，传统的"输入→处理→输出"确定性逻辑不再适用。

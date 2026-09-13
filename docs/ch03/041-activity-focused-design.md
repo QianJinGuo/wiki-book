@@ -1,6 +1,6 @@
 # Activity-Focused Design
 
-> 📊 Level ⭐⭐⭐ | 5.2KB | `entities/activity-focused-design.md`
+> 📊 Level ⭐⭐⭐ | 5.2KB
 
 ## 核心要点
 
@@ -64,7 +64,7 @@ Activity-Focused Design 的核心价值在于将设计视角从"用户是谁"转
 ## 相关实体
 - [Icon Pack Websites Designers Should Bookmark](https://github.com/QianJinGuo/wiki-public/blob/main/entities/icon-pack-websites-designers-should-bookmark.md)
 - [Blog.Tubikstudio.Com Form Over Function Mistakes](https://github.com/QianJinGuo/wiki-public/blob/main/entities/blog.tubikstudio.com-form-over-function-mistakes.md)
-- [Designing Small Is Harder Than Designing Big Ux Magazine](029-designing-small-is-harder-than-designing-big-ux-magazine.html)
+- Designing Small Is Harder Than Designing Big Ux Magazine
 - [Deepmind Ai Pointer](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepmind-ai-pointer.md)
 - [Qoder Skill Ui](https://github.com/QianJinGuo/wiki-public/blob/main/entities/qoder-skill-ui.md)
 

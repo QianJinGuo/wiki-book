@@ -1,6 +1,6 @@
 # 场景营销前端 AI Coding — AI Native 的视觉稿还原
 
-> 📊 Level ⭐⭐ | 6.4KB | `entities/frontend-ai-native-visual-reduction-taobao.md`
+> 📊 Level ⭐⭐ | 6.4KB
 
 > 原文归档：原文归档
 
@@ -9,6 +9,8 @@
 ## 一句话
 
 **大淘宝的AI Native视觉稿还原实践，让AI理解设计并高保真还原为前端代码。**
+
+## 核心内容
 
 ### 视觉稿还原挑战
 
@@ -27,6 +29,8 @@
 - 设计到开发的效率提升
 - 设计一致性保障
 - 迭代周期缩短
+
+## 深度分析
 
 ### Agent-Native 设计的范式突破
 

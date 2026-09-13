@@ -1,6 +1,6 @@
 # AI Agent 落地：如何攻克稳定性、成本与评估难题？ — Trace即Evals
 
-> 📊 Level ⭐⭐⭐⭐ | 17.3KB | `entities/ai-agent-trace-evals-stability-cost-evaluation-zhangyanfei.md`
+> 📊 Level ⭐⭐⭐⭐ | 17.3KB
 
 ## 摘要
 
@@ -12,6 +12,8 @@
 2. "Trace 即 Evals" — Agent 的每次执行都应产生完整执行轨迹，轨迹本身就是评估数据
 3. Prompt Engineering → Context Engineering → Harness Engineering 的演进路径
 4. 用 Claude Code、Evot、Pi 等案例对比论证了 Trace 在稳定性保障和成本归因中的核心地位
+
+## 深度分析
 
 ### "Trace 即 Evals"的方法论基础
 

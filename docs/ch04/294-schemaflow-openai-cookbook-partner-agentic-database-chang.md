@@ -1,6 +1,6 @@
 # SchemaFlow: OpenAI Cookbook Partner — Agentic Database Change Impact Analysis, SQL Generation, and Eval Guardrails
 
-> 📊 Level ⭐⭐⭐⭐ | 11.5KB | `entities/schemaflow-openai-cookbook-staged-agentic-workflow.md`
+> 📊 Level ⭐⭐⭐⭐ | 11.5KB
 
 > **背景**：本文基于 OpenAI 官方 Cookbook 合作伙伴 SchemaFlow 的实战案例整理，提取其 staged agentic workflow 设计模式、SQL 生成的工程化护栏与评估范式。
 
@@ -95,6 +95,8 @@ rules:
 4. **Eval guardrails 不是可选**：LLM 输出不能直接进生产，必须有 Promptfoo 之类的 gate
 5. **Stage-level 监控**：5 stage pipeline 需要每 stage 独立 metrics，便于定位瓶颈
 
+## 深度分析
+
 ### 1. Staged workflow 的可观测性价值
 
 5 stage 流水线的核心价值不在于"拆分任务"，而在于**错误局部化 + 失败可溯源**。单 prompt 架构中，SQL 生成失败时无法判断是 schema 理解错误、语法生成错误还是上下文不足导致的——错误会级联传播，最终输出"坏 SQL"但不知问题在哪。
@@ -143,7 +145,7 @@ Stage-level 监控（token 上限 2000、P95 < 5s、重试 > 2 次告警）揭�
 - [Amazon Bedrock Agentic Payments Guardrails](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-agentic-payments-guardrails.md)
 - [Ai Native Startup Cyberfund Guide](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-native-startup-cyberfund-guide.md)
 - [From Prompt To Harness Claude Official](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-prompt-to-harness-claude-official.md)
-- [Cursor Harness Model Production Floor](../ch01/104-cursor-harness-model-production-floor.html)
+- Cursor Harness Model Production Floor
 - [Agent Harness Architecture Deep Dive Aksahy](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture-deep-dive-aksahy.md)
 
 → [原文存档](https://developers.openai.com/cookbook/examples/partners/schemaflow_design_guide/schemaflow_cookbook)

@@ -1,6 +1,6 @@
 # Building a secure auth code flow setup using AgentCore Gateway with MCP clients
 
-> 📊 Level ⭐⭐⭐ | 9.6KB | `entities/building-a-secure-auth-code-flow-setup-using-agentcore-gatew.md`
+> 📊 Level ⭐⭐⭐ | 9.6KB
 
 > **Background**: 本文基于 AWS Machine Learning Blog 官方教程，详细介绍 OAuth 2.0 Authorization Code Flow 在 Bedrock AgentCore Gateway 与 MCP 客户端集成中的实施配置。内容涵盖架构概述、组件说明、IdP 配置步骤、以及 Kiro IDE 集成。
 
@@ -19,6 +19,8 @@
 2. **AgentCore Gateway**：Bedrock AgentCore 的集中入口点，负责路由和保护 Agent 到工具的通信
 3. **MCP (Model Context Protocol)**：AI 助手与远程工具/服务交互的协议
 4. **身份提供商**：支持 Okta、Microsoft Entra ID、Amazon Cognito 等主流 IdP
+
+## 深度分析
 
 ### 1. AgentCore Gateway 的双角色：OAuth 资源服务器与 MCP 代理
 

@@ -1,6 +1,6 @@
 # Hermes Agent Operator 上手：把一个 Agent 养成可运营系统
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 19.8KB | `entities/hermes-agent-operator上手-把一个-agent-养成可运营系统-若飞.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 19.8KB
 
 ## 一句话总结
 
@@ -98,6 +98,8 @@ Shann 的 21 步 SEO Agent（research → production → distribution）三组 s
 | Day 4-5 | 真实任务跑三次，每次留 `task-result.md`（输入/动作/产物/人工改动/不可靠判断/修正计划） |
 | Day 6 | 回头看要不要写 Skill（只有稳定形状才沉淀，含触发条件/输入/步骤/完成标准/失败处理/下线条件） |
 | Day 7 | 决定要不要升级（稳定 + 需独立凭据/记忆/职责 → 拆专职 Agent；多个专职 Agent 需路由/合并 → 编排层；恢复/日志/审批/owner 齐全 → cron） |].md]
+
+## 深度分析
 
 ### 从"玩具"到"系统"的本质跃迁
 

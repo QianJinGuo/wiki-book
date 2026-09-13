@@ -1,12 +1,12 @@
 # AI Coding Agent 记忆系统
 
-> 📊 Level ⭐⭐⭐ | 8.6KB | `entities/ai-coding-agent-memory-system.md`
+> 📊 Level ⭐⭐⭐ | 8.6KB
 
 ## 相关实体
 - [Hermes Agent 记忆系统 vs OpenClaw 记忆观](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-memory-system-openclaw-comparison.md)
 - [Agent 记忆架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture.md)
 - [Agent 记忆模块化框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-modular-framework.md)
-- [AI Agent 记忆系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-memory-systems.md)
+- AI Agent 记忆系统
 - [上下文窗口管理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-window-management.md)
 - [Agent Harness 上下文管理：工作集模型](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-context-management-working-set.md)
 - [Agent 自我改进的六条路](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-self-improvement-six-mechanisms.md)
@@ -28,6 +28,7 @@
 - [全球首个完全ai编写的训练框架：面壁forgetrain速度反超英伟达megatron，年底要把国产算力软件重写一遍](https://github.com/QianJinGuo/wiki-public/blob/main/entities/forgetrain-ai-written-training-framework-bidian-infoq.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/memory-context-systems.md)
+## 深度分析
 ### 1. 记忆的本质是分层成本管理
 AI Coding Agent 记忆系统的核心问题不是"记什么"，而是"以什么成本、在哪一层被召回"。这个思路把记忆从存储容量问题转化为召回路径设计问题。
 四层机制各有不同的延迟和成本特征：热记忆（MEMORY.md/USER.md）在每次会话开始时作为 frozen snapshot 注入系统提示词，延迟为零但持续占用 prompt token 预算；session_search 通过 FTS5 全文搜索走数据库查询，成本可控但依赖摘要质量；skills 是按需加载的索引，真正执行时才展开；外部用户模型走异步预取，不阻塞当前轮次。

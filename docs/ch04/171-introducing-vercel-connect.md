@@ -1,6 +1,6 @@
 # Introducing Vercel Connect
 
-> 📊 Level ⭐⭐⭐ | 8.4KB | `entities/introducing-vercel-connect.md`
+> 📊 Level ⭐⭐⭐ | 8.4KB
 
 ## Overview
 

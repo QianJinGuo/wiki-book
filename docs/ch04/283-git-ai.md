@@ -1,6 +1,6 @@
 # Git仓库 + AI 编码助手做项目管理
 
-> 📊 Level ⭐⭐⭐⭐ | 13.3KB | `entities/git-repo-based-pm-automation.md`
+> 📊 Level ⭐⭐⭐⭐ | 13.3KB
 
 > **Background**：本文档基于微信公众号文章《用两个 Git 仓库 + AI 编码助手做项目管理（2026版）》提取。该文来自匿名团队实践分享，介绍了他们如何用 Git 仓库 + AI 编码助手 + Shell 脚本替代传统项目管理的 80% 人肉操作。
 
@@ -134,6 +134,8 @@ Skill 文件本身也在 Git 里版本管理。看 diff 就知道规则变了什
 
 真正的门槛不在技术，在思路转变——你得相信项目管理本质上是一个信息工程问题，而不是一个流程管理问题。
 
+## 深度分析
+
 ### 信息工程范式的本质
 
 这套方法论之所以有效，根本原因在于它重新定义了项目管理的本质——**信息工程问题，而非流程管理问题**。传统项目管理工具（Jira、Asana、Linear）解决的是"流程可见性"，而这套 Git + AI 方案解决的是"信息流动性"。两者看似相似，本质不同：流程管理假设人的行为可以被预定义的有限状态机描述；信息工程承认人的行为是高度非结构化的，但信息本身可以被提取、结构化和分析。
@@ -179,7 +181,7 @@ Git 作为 Source of Truth 的选择看似朴素，实则精妙。Git 的内容�
 - [P Ai Pms Guide To Claude](https://github.com/QianJinGuo/wiki-public/blob/main/entities/p-ai-pms-guide-to-claude.md)
 - [Harness不是目的知识才是护城河 一个Ai工程交付团队的知识沉淀实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness不是目的知识才是护城河-一个ai工程交付团队的知识沉淀实践.md)
 - [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent.md)
-- [Building Ai Agents In Accounting](002-building-ai-agents-in-accounting.html)
+- Building Ai Agents In Accounting
 
 → [原文存档](https://mp.weixin.qq.com/s/n4iqEWPfrok91b692nFTJw)
 

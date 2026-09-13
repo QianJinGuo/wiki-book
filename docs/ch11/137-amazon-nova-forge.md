@@ -1,6 +1,6 @@
 # Amazon Nova Forge 域定制超参调优：艺术与科学
 
-> 📊 Level ⭐⭐⭐⭐ | 11.7KB | `entities/amazon-nova-forge-hyperparameter-tuning-art-science.md`
+> 📊 Level ⭐⭐⭐⭐ | 11.7KB
 
 ## 概述
 
@@ -69,6 +69,8 @@ RFT 仅在 baseline 准确率**适中的范围**内有效：
 1. **SFT 起步**：用 LoRA + post-trained checkpoint 教目标行为
 2. **RFT 升级**：在 SFT baseline 上叠加 reward function
 3. **Full Rank 进阶**：当 LoRA 收益饱和、部署架构支持 Provisioned TPUT 时迁移
+
+## 深度分析
 
 ### 1. 稳定性-灵活性权衡是超参调优的核心矛盾
 

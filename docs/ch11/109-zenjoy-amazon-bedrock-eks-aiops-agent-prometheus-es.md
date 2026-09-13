@@ -1,12 +1,13 @@
 # Zenjoy 基于 Amazon Bedrock 和 EKS 构建 AIOps Agent：打通 Prometheus、ES 与夜莺的智能化告警实战
 
-> 📊 Level ⭐⭐⭐ | 7.7KB | `entities/zenjoy-aiops-agent-bedrock-eks-prometheus.md`
+> 📊 Level ⭐⭐⭐ | 7.7KB
 
 ## 核心要点
 - 基于 Amazon Bedrock + EKS 构建 AIOps Agent，整合 Prometheus、ElasticSearch、夜莺监控数据
 - 多窗口分析算法：Z-Score、IQR、线性回归
 - 解决企业级 AIOps 落地的工程化挑战
 
+## 深度分析
 ### 1. 算法与 LLM 的职责解耦架构
 该方案最核心的设计哲学是**确定性计算与不确定性推理的分离**。数学算法（Z-Score、IQR、线性回归）负责全量数据的确定性分析，LLM 仅在算法确认异常后才介入生成报告。这种架构在工程上有两个关键价值：其一，避免了 LLM 直接处理海量时序数据带来的 Token 成本失控和幻觉风险；其二，算法部分的可解释性和可靠性远高于纯 LLM 方案，符合运维场景对确定性输出的要求。
 

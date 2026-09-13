@@ -1,6 +1,6 @@
 # 10篇论文看懂AI Agent Skill：表示、执行、评估与进化
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 26.9KB | `entities/skill-formal-theory-survey-10papers.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 26.9KB
 
 [Skill Formal Theory Survey 10Papers](https://mp.weixin.qq.com/s/Z2fFNWXgRHq0VogIRD69Yg])
 
@@ -174,6 +174,7 @@ P_i = (action, resource, condition, effect)
 > "**模型能力正在趋同，而组织对有效行动路径的编码化程度，将成为智能体时代真正的性能分水岭。**"
 技能工程化的终极目标：构建AI智能体的"操作系统"——由社区贡献、经过形式验证、可组合定制的知识执行层。
 
+## 深度分析
 ### 1. 六元组设计的工程必然性
 技能采用 `(ID, I, O, P, Pre, Eff)` 六元组表示，并非学术炫技，而是工程实践中的现实需求驱动的。
 **输入输出的模式化**解决了LLM调用技能时的参数类型混乱问题。在传统工具调用中，LLM需要自行推断参数格式，而显式 schema 将这一意图匹配成本转移到了设计阶段，使得运行时调用精度大幅提升。ID元数据字段携带版本和适用范围信息，这是技能可复用性的基础——没有版本化的技能在生产环境中会迅速演变为技术债务。

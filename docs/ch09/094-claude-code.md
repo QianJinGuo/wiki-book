@@ -1,6 +1,6 @@
 # Claude Code 在大型代码库中的实战经验：从哪里入手？怎么做对？
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 31.0KB | `entities/claude-code-large-codebase-harness-configuration.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 31.0KB
 
 ## Claude Code 大型代码库套具配置
 
@@ -132,6 +132,8 @@ Claude 在被限定到实际与任务相关的代码库部分时工作得最好�
 
 **受监管行业的治理问题**：明确已批准 Skills 集合、必要代码审查流程和有限的初始访问范围，随着信心建立再逐步扩展。跨职能工作组早期建立（汇集工程、信息安全 和治理代表）定义需求并构建推广路线图，这被证明是最顺畅的部署。
 
+## 深度分析
+
 ### 核心洞察：上下文即护城河
 
 本文最根本的洞见在于揭示了**Agent式搜索的本质是上下文工程**。与RAG依赖过去时态的代码库快照不同，Agent式搜索要求主动构建将来时态的上下文——这不是一个技术差异，而是哲学差异。RAG试图用相关性算法弥补上下文缺口，而Agent式搜索则通过harness设计来消除这个缺口。CLAUDE.md分层、Skills按需加载、Hooks自我改进，这三者共同构成了一个**自适应上下文供给系统**，使得Claude在任何时刻都拥有恰到好处的上下文。
@@ -244,7 +246,7 @@ AHE 是通用的 Harness 工程方法论；本文是 Claude Code 的具体场景
 - [Stripe Agent Economic Infrastructure Emily Sands](https://github.com/QianJinGuo/wiki-public/blob/main/entities/stripe-agent-economic-infrastructure-emily-sands.md)
 - [Pilotdeck Data派Thu 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/pilotdeck-data派thu-2026.md)
 - [Four Sub Agent Patterns](https://github.com/QianJinGuo/wiki-public/blob/main/entities/four-sub-agent-patterns.md)
-- [A Guide To Which Ai To Use In The Agentic Era](../ch01/323-a-guide-to-which-ai-to-use-in-the-agentic-era.html)
+- A Guide To Which Ai To Use In The Agentic Era
 - [Ai Xiaolaoliu Business Agent Augmentation Layer General Base 20260606](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-xiaolaoliu-business-agent-augmentation-layer-general-base-20260606.md)
 - [Cloud Agent Development Environments](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloud-agent-development-environments.md)
 - [Volcengine Data Agent Product Overview](https://github.com/QianJinGuo/wiki-public/blob/main/entities/volcengine-data-agent-product-overview.md)
@@ -262,8 +264,8 @@ AHE 是通用的 Harness 工程方法论；本文是 Claude Code 的具体场景
 - [Ai Techliwen Creaoai Cloud Agent Infrastructure Two Lessons 20260606](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-techliwen-creaoai-cloud-agent-infrastructure-two-lessons-20260606.md)
 - [你不知道的 Agent原理架构与工程实践 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/你不知道的-agent原理架构与工程实践-v2.md)
 - [Kimi Work 300 Agent Cluster Yin John Agi Hunt](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kimi-work-300-agent-cluster-yin-john-agi-hunt.md)
-- [Your First Ai Agent Should Do One Thing Badly](../ch04/193-your-first-ai-agent-should-do-one-thing-badly.html)
-- [A Missing Layer In Agentic Systems](../ch04/330-a-missing-layer-in-agentic-systems.html)
+- Your First Ai Agent Should Do One Thing Badly
+- A Missing Layer In Agentic Systems
 - [Announcing Genkit Middleware Intercept Extend And Harden Your Agentic Apps](https://github.com/QianJinGuo/wiki-public/blob/main/entities/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps.md)
 - [Hermes Agent Soul Md Personality Shugex](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-soul-md-personality-shugex.md)
 - [Lessons From 2 Billion Agentic Workflows](https://github.com/QianJinGuo/wiki-public/blob/main/entities/lessons-from-2-billion-agentic-workflows.md)
@@ -274,7 +276,7 @@ AHE 是通用的 Harness 工程方法论；本文是 Claude Code 的具体场景
 - [Real Ai Agents And Real Work](https://github.com/QianJinGuo/wiki-public/blob/main/entities/real-ai-agents-and-real-work.md)
 - [Volcengine Data Agent Intelligent Query Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/volcengine-data-agent-intelligent-query-agent.md)
 - [Hermes Agent Tool System Analysis](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-tool-system-analysis.md)
-- [How To Build Agents Where Data Already Lives](../ch04/211-how-to-build-agents-where-data-already-lives.html)
+- How To Build Agents Where Data Already Lives
 - [Rocketmq 5 5 0 Litetopics Ai Agent Messaging](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rocketmq-5-5-0-litetopics-ai-agent-messaging.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/claude-code-complete-guide.md)
 

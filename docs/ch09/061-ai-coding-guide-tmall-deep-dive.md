@@ -1,6 +1,6 @@
 # AI Coding Guide Tmall Deep Dive
 
-> 📊 Level ⭐⭐⭐⭐ | 22.2KB | `entities/ai-coding-guide-tmall-deep-dive.md`
+> 📊 Level ⭐⭐⭐⭐ | 22.2KB
 
 ## 天猫新品营销技术团队AI编码实战指南
 
@@ -252,6 +252,8 @@ AI编码过程中，有个比较重要的关注点是在保证迭代成功率的
 | 有语料的三方包 | 80% | 低 |
 | 私有包+调用规范 | 95% | 低 |
 
+## 深度分析
+
 ### 本质洞察：AI编码的核心矛盾
 
 天猫团队的实践经验揭示了AI编码的**本质矛盾**：AI擅长模仿与快速生成，但弱于理解与精准修改。
@@ -378,7 +380,7 @@ AI编码过程中，有个比较重要的关注点是在保证迭代成功率的
 
 ## 相关实体
 - [Karpathy Claude Md Rules](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-claude-md-rules.md)
-- [Ai Memory Architecture Deep Dive](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-memory-architecture-deep-dive.md)
+- Ai Memory Architecture Deep Dive
 - [Tmall Ai Coding Practice Team Knowledge Base](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tmall-ai-coding-practice-team-knowledge-base.md)
 - [Tmall Ai Coding Practice Team Knowledge Base Npm](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tmall-ai-coding-practice-team-knowledge-base-npm.md)
 - [Pi Openclaw Coding Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/pi-openclaw-coding-harness.md)

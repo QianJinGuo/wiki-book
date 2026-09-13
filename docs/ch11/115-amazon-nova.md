@@ -1,6 +1,6 @@
 # 微调 Amazon Nova 模型实现精准邮件数据提取
 
-> 📊 Level ⭐⭐⭐ | 7.2KB | `entities/fine-tune-amazon-nova-models-for-accurate-email-data-extract.md`
+> 📊 Level ⭐⭐⭐ | 7.2KB
 
 > 原文存档：[原文存档](https://aws.amazon.com/blogs/machine-learning/fine-tune-amazon-nova-models-for-accurate-email-data-extraction)
 
@@ -14,6 +14,8 @@
 - **小模型逆袭大模型**：微调后的 Nova Micro（较小模型）以 94.77% 的准确率超越 Nova Lite（较大模型），证明任务特定优化可以弥补基础模型规模的差异。
 - **端到端工作流**：数据准备（Bedrock Conversation 格式）→ S3 上传 → SageMaker 微调作业 → Bedrock 按需推理部署 → 生产推理。
 - **三指标同步优化**：准确率提升 5.6-16.6pp、延迟降低约 32%、成本降低约 50%，三个关键指标同时改善。
+
+## 深度分析
 
 ### 微调策略的技术细节
 

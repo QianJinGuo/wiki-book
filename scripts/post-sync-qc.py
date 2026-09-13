@@ -16,6 +16,9 @@ Detects all defect families found in the 2026-09 full-corpus review:
   8. Citation artifact: ]"] broken citation remnants
   9. Dangling archive: → 原文存档 with no URL
   10. Double 实践启示: duplicate section headers
+  11. Broken-internal-link: internal page link resolves to no doc in docs/
+      (added 2026-09-14 — the check that catches PATH.md-style link rot)
+  12. Broken-anchor: literal #sectionN / #fnref in-page anchors (non-critical)
 
 Usage:
   python3 scripts/post-sync-qc.py [--docs-dir docs/] [--quiet]
@@ -122,7 +125,10 @@ def check_file(path: pathlib.Path, rel: str) -> list:
             j = i + 1
             while j < len(lines) and lines[j].strip() == "":
                 j += 1
-            if j >= len(lines) or lines[j].startswith("#") or lines[j].startswith("---"):
+            # 只有同级或更高级标题紧随才算空节；`## 可视化` + `### 架构图`
+            # 是带子节的实节，不算缺陷（与编译器侧 2026-09-14 修复同源）。
+            if j >= len(lines) or re.match(r'^#{1,2}\s', lines[j]) \
+                    or lines[j].startswith("---"):
                 issues.append({
                     "file": rel, "category": "Empty-section",
                     "detail": f"line {i+1}: {ln.strip()}", "line": i + 1,
@@ -185,6 +191,40 @@ def check_file(path: pathlib.Path, rel: str) -> list:
             "detail": url, "line": 0,
         })
 
+    # 12. Internal page links (resolved cross-file in main(); the docs-tree
+    #     existence check that would have caught the PATH.md 55-link rot).
+    if not rel.startswith("raw/"):
+        seen_targets = set()
+        for m in re.finditer(r'\]\(([^)\s]+)\)', text):
+            target = m.group(1)
+            if target.startswith('<') and target.endswith('>'):
+                target = target[1:-1]       # angle-wrapped autolink form
+            path = target.split('#', 1)[0]
+            if not path or path.startswith(('#', 'http://', 'https://',
+                                            'mailto:', 'data:')):
+                continue
+            # Only page-shaped targets; assets (png/json/css/...) are not pages.
+            if not (path.endswith(('.html', '.htm', '.md', '/'))
+                    or '.' not in path.rsplit('/', 1)[-1]):
+                continue
+            last = path.rsplit('/', 1)[-1]
+            if len(path) < 2 or not re.search(r'[a-z]', last.lower()):
+                continue
+            if path not in seen_targets:
+                seen_targets.add(path)
+                issues.append({
+                    "file": rel, "category": "_page_link",
+                    "detail": path, "line": 0,
+                })
+
+        # 13. Known-broken literal in-page anchors (Section1..N / footnote refs
+        #     that no mkdocs slugger can produce). Non-critical.
+        for m in re.finditer(r'\]\(#(?:section\d+|fnref)\)', text):
+            issues.append({
+                "file": rel, "category": "Broken-anchor",
+                "detail": m.group(), "line": 0,
+            })
+
     return issues
 
 
@@ -203,6 +243,7 @@ def main():
 
     all_issues = []
     archive_map = collections.defaultdict(list)  # url -> [files]
+    page_links = []                              # (src_rel, target) pairs
 
     for md in sorted(docs.rglob("*.md")):
         rel = str(md.relative_to(docs))
@@ -210,8 +251,37 @@ def main():
         for iss in issues:
             if iss["category"] == "_archive_url":
                 archive_map[iss["detail"]].append(rel)
+            elif iss["category"] == "_page_link":
+                page_links.append((rel, iss["detail"]))
             else:
                 all_issues.append(iss)
+
+    # Resolve internal page links against the docs tree (use_directory_urls:
+    # false — every .md renders as sibling .html, so a link target must exist
+    # as a doc, its rendered .html, or a dir index).
+    import posixpath
+    docs_md = {str(p.relative_to(docs))[:-3] for p in docs.rglob("*.md")}
+    docs_all = {str(p.relative_to(docs)) for p in docs.rglob("*")}
+    broken_links = set()
+    for src_rel, target in page_links:
+        if target.startswith('/'):
+            t = target.lstrip('/')          # site-root absolute
+        else:
+            t = posixpath.normpath(posixpath.join(posixpath.dirname(src_rel), target))
+        if t.endswith('/'):
+            ok = (t + "index") in docs_md
+        elif t.endswith('.md'):
+            ok = t[:-3] in docs_md
+        else:
+            base = t[:-5] if t.endswith(('.html', '.htm')) else t
+            ok = base in docs_md or t in docs_all
+        if not ok:
+            broken_links.add((src_rel, target))
+    for src_rel, target in sorted(broken_links):
+        all_issues.append({
+            "file": src_rel, "category": "Broken-internal-link",
+            "detail": f"unresolved target: {target}", "line": 0,
+        })
 
     # Cross-file archive URL dedup (M-duplicate detection).
     # Only article pages (under chapter dirs) participate: docs/-root MOC files
@@ -251,7 +321,8 @@ def main():
         print("  ✅ Clean — no issues detected")
 
     # Non-zero exit if critical issues found
-    critical = {"K-leak", "Scraper-metadata", "Dual-practice-section"}
+    critical = {"K-leak", "Scraper-metadata", "Dual-practice-section",
+                "Broken-internal-link"}
     warning = {"M-duplicate", "Garbage-slug"}
     critical_count = sum(by_cat.get(c, 0) for c in critical)
     warning_count = sum(by_cat.get(c, 0) for c in warning)

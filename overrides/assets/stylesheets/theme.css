@@ -496,3 +496,9 @@ body.wiki-book-en .md-sidebar--primary { display: none; }
   transition: opacity 0.25s;
 }
 .wb-live-pill.is-visible { opacity: 1; }
+
+/* Homepage sample titles carry full text from the compiler since 2026-09-14
+   (no more hard truncation); the li clips display-side with ellipsis. Keep a
+   defensive clip on the child too so upstream layout changes never reintroduce
+   hard overflow. */
+.chapter-card__samples .sample-title { overflow: hidden; text-overflow: ellipsis; }

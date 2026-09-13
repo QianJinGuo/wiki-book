@@ -1,6 +1,6 @@
 # Claude Code团队10个使用技巧（Boris二刷）
 
-> 📊 Level ⭐⭐⭐ | 8.9KB | `entities/claude-code-team-10-tips-boris.md`
+> 📊 Level ⭐⭐⭐ | 8.9KB
 
 ## 核心命题
 
@@ -60,6 +60,8 @@ bq 命令行工具 + BigQuery Skill → 团队人人直接在 Claude Code 里跑
 - HTML 演示文稿：生成解释陌生代码的可视化幻灯片
 - ASCII 架构图：快速理清新协议或代码库的逻辑
 - 间隔重复学习技能：Claude 追问填补知识盲区 + 记录学习结果
+
+## 深度分析
 
 ### 1. worktree 并行模式本质上是"上下文隔离工程"
 

@@ -1,6 +1,6 @@
 # The New Era of Cloud AI Mobile Testing: Amazon Device Farm MCP Server Practical Guide | 亚马逊AWS官方博客
 
-> 📊 Level ⭐⭐⭐⭐ | 8.7KB | `entities/cloud-ai-mobile-testing-new-era-amazon-device-farm-mcp-server-practical-guide-en.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.7KB
 
 ## 概述
 The New Era of Cloud AI Mobile Testing: Amazon Device Farm MCP Server Practical Guide by awschina on 19 12月 2025 in Developer Tools Permalink Share English version | 中文版本 Introduction: The Mobile Automation Wave in the AI Era The Rise of AI Mobile Automation In today’s rapidly evolving artificial intelligence landscape, mobile automation testing is undergoing significant technological transformati
@@ -8,6 +8,7 @@ The New Era of Cloud AI Mobile Testing: Amazon Device Farm MCP Server Practical 
 ## 核心技术
 Amazon Web Services (AWS)
 
+## 深度分析
 ### AI-SDLC 闭环中的移动测试断点
 当前 AI-SDLC（AI 软件开发生命周期）在需求分析、代码生成、代码审查等阶段已相当成熟，但**移动测试验证**仍是整个自动化流程中最大的技术缺口**。本文揭示了这一断点的具体表现：
 

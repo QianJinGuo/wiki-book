@@ -1,6 +1,6 @@
 # Co-Existence vs Co-Intelligence: Mollick's Paradigm Shift on AI Autonomy
 
-> 📊 Level ⭐⭐⭐⭐ | 11.8KB | `entities/co-existence-paradigm-shift-agentic-ai-mollick-2026.md`
+> 📊 Level ⭐⭐⭐⭐ | 11.8KB
 
 > 2026-06-05 引用自 Ethan Mollick 《Co-Existence and the End of Co-Intelligence》, One Useful Thing, 2026-06-04. 原文为 Mollick 新书《Co-Existence》pre-order 配套文章。
 
@@ -71,6 +71,8 @@ Mollick 提出**在 AI 时代仍存在的核心问题**：
 > "This is where Co-Existence stopped being about AIs making me happy and instead became about me making AIs happy."
 
 > "When should you refuse AI's help, even when it is offering? When should you hand over the keys entirely?"
+
+## 深度分析
 
 ### 1. 范式命名的学术价值
 Mollick 将 AI 协作模式从"Co-Intelligence"重命名为"Co-Existence"，这不仅仅是品牌更新——它为 AI 人机关系研究提供了可引用的概念锚点。Co-Intelligence 隐含"智能共享"（人类和 AI 共同思考），Co-Existence 隐含"共存共事"（AI 独立执行、人类偶尔审核）。这一命名差异对政策讨论有实际影响：如果人类是"gatekeeper"而非"driver"，监管框架需要从"人类监督 AI"转向"AI 自主运行 + 人类否决权"。

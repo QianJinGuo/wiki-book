@@ -1,6 +1,6 @@
 # Agent Executor, Google's distributed Agent Runtime
 
-> 📊 Level ⭐⭐⭐ | 7.5KB | `entities/agent-executor-googles-distributed-agent-runtime-da1bb4.md`
+> 📊 Level ⭐⭐⭐ | 7.5KB
 
 ## 核心要点
 
@@ -9,6 +9,8 @@ Detailed technical overview of Google's Agent Executor runtime with substantial 
 ## 标签
 
 ai, agent, runtime
+
+## 深度分析
 
 ### 为什么 Agent 需要专用 Runtime
 

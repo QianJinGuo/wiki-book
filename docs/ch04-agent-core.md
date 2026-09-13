@@ -36,6 +36,8 @@ Karpathy 把它称为"从 Vibe Coding 到 Agentic Engineering"：不是让 AI �
 
 ## 本章内容
 
+### ⭐ 入门（42 篇）
+
 - [001. Agent 时间性策略（Temporal Policies）：基于轨迹的有状态授权架构](ch04/001-agent-temporal-policies)
 - [002. Building AI Agents in Accounting](ch04/002-building-ai-agents-in-accounting)
 - [003. Agentic Robot Policy Self-Improvement in the Real World](ch04/003-agentic-robot-policy-self-improvement-in-the-real-world)
@@ -78,6 +80,9 @@ Karpathy 把它称为"从 Vibe Coding 到 Agentic Engineering"：不是让 AI �
 - [040. Agentic Abstention—Agent 能及时停止吗？华盛顿大学/Allen AI 28000+ 任务基准评测](ch04/040-agentic-abstention-agent-allen-ai-28000)
 - [041. An agent capability library](ch04/041-an-agent-capability-library)
 - [042. 50 design token files, one problem: your agents can't read the meaning](ch04/042-50-design-token-files-one-problem-your-agents-can-t-read-t)
+
+### ⭐⭐ 工程师（43 篇）
+
 - [043. AI Native 团队协同：知识底座＋Agent＋人三层闭环](ch04/043-ai-native-agent)
 - [044. 基于 Strands Agents 构建亚马逊云科技云成本分析与优化 AI 助手](ch04/044-strands-agents-ai)
 - [045. Agent Loop 工程手册 8 个未解问题 + SELF Protocol 治理薄壳：腾讯陈进的二手解读与单 Agent 实验](ch04/045-agent-loop-8-self-protocol-agent)
@@ -121,6 +126,9 @@ Karpathy 把它称为"从 Vibe Coding 到 Agentic Engineering"：不是让 AI �
 - [083. SkillOpt-Lite：一行Vibe指令加速Agent技能自进化](ch04/083-skillopt-lite-vibe-agent)
 - [084. NVIDIA XR AI：AR 眼镜与 XR 设备的 AI Agent 基础设施](ch04/084-nvidia-xr-ai-ar-xr-ai-agent)
 - [085. 基于 AWS 智能设备助手行业资产，构建社交渠道触达的消费级 Agent 交互应用](ch04/085-aws-agent)
+
+### ⭐⭐⭐ 专家（142 篇）
+
 - [086. 阿里云端到端业务需求专家 Agent：Multica 平台 + superai-* 技能集群 + TDD/pre-push 质量门禁](ch04/086-agent-multica-superai-tdd-pre-push)
 - [087. Hermes Agent 自进化源码分析](ch04/087-hermes-agent)
 - [088. Nvidia Extreme Co Design Agentic Systems](ch04/088-nvidia-extreme-co-design-agentic-systems)
@@ -263,6 +271,9 @@ Karpathy 把它称为"从 Vibe Coding 到 Agentic Engineering"：不是让 AI �
 - [225. Dynamic Subagents: 代码驱动的 Subagent 编排](ch04/225-dynamic-subagents-subagent)
 - [226. New and improved Agent governance intelligent workflows](ch04/226-new-and-improved-agent-governance-intelligent-workflows)
 - [227. Agent评测的反直觉感悟：质量优化与可规模化性的取舍](ch04/227-agent)
+
+### ⭐⭐⭐⭐ 科学家（113 篇）
+
 - [228. 十年老技术开发的 AI Agent 探索之路](ch04/228-ai-agent)
 - [229. 阿里云 AgentLoop：企业级智能体自进化飞轮（4 环闭环 + LoongSuite 84% 字段覆盖 + Trace2Dataset 90% 节省 + Agent-as-a-Judge 90% 一致 + 记忆库/经验库）](ch04/229-agentloop-4-loongsuite-84-trace2dataset-90)
 - [230. Powering agentic AI sales strategy with Amazon Bedrock AgentCore](ch04/230-powering-agentic-ai-sales-strategy-with-amazon-bedrock-agent)
@@ -376,6 +387,9 @@ Karpathy 把它称为"从 Vibe Coding 到 Agentic Engineering"：不是让 AI �
 - [338. LFM2.5-230M: Built to Run Anywhere](ch04/338-lfm2-5-230m-built-to-run-anywhere)
 - [339. How to Detect AI Agents on Your Website | Full Guide](ch04/339-how-to-detect-ai-agents-on-your-website-full-guide)
 - [340. Autodata: An Agentic Data Scientist for High-Quality Synthetic Data](ch04/340-autodata-an-agentic-data-scientist-for-high-quality-synthet)
+
+### ⭐⭐⭐⭐⭐ 大师（54 篇）
+
 - [341. Agent Harness 架构设计与实现：生产级 Agent 系统落地指南](ch04/341-agent-harness-agent)
 - [342. Qoder Skills 完全指南 + Agent Skill 迭代式编写 — AI 按你的标准执行](ch04/342-qoder-skills-agent-skill-ai)
 - [343. 17种Agent架构演进：控制流设计的完整演化史](ch04/343-17-agent)
@@ -430,3 +444,12 @@ Karpathy 把它称为"从 Vibe Coding 到 Agentic Engineering"：不是让 AI �
 - [392. Hermes Agent 保姆级教程：一句话组建你的 AI 打工团队](ch04/392-hermes-agent-ai)
 - [393. Building Agentic AI Applications with Data Mesh on AWS](ch04/393-building-agentic-ai-applications-with-data-mesh-on-aws)
 - [394. Agentic Overlays -- Retrofit Legacy REST Services into A2A Agents](ch04/394-agentic-overlays-retrofit-legacy-rest-services-into-a2a-a)
+
+
+---
+
+## 本章收束
+
+这一章回答了全书的第一个根本问题：Agent 不是"会调用工具的聊天机器人"，而是一个系统——模型只是它的推理引擎，真正决定成败的是规划、记忆、工具、校验这些模型之外的骨架。记住那个公式：Agent = Model + Harness；模型决定能力的上限，Harness 决定生产的下限。后面六章讲的都是这个 Harness。
+
+---

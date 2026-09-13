@@ -1,6 +1,6 @@
 # Agent 后端架构
 
-> 📊 Level ⭐⭐⭐ | 8.1KB | `entities/backend-for-agent.md`
+> 📊 Level ⭐⭐⭐ | 8.1KB
 
 ## 摘要
 
@@ -15,6 +15,8 @@ Agent 后端架构（Backend for Agent）是面向 AI Agent 而非人类 UI 的�
 - **幂等与重试语义**：Agent 重试是常态而非异常，后端必须提供幂等键、安全重试与结构化错误码。
 - **MCP 成为工具调用事实标准**：后端从"给 UI 提供 API"转向"给 Agent 提供工具"，工具服务器 + Gateway 治理成为新形态。
 - **可观测性与流量治理**：一条 trace 贯通模型调用与工具执行；Agent 流量突发且昂贵，需 rate limiting、预算控制与认证。
+
+## 深度分析
 
 ### 1. 从 BFF 到 B4A：消费端范式的逆转
 

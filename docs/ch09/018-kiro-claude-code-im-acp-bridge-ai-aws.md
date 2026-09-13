@@ -1,6 +1,6 @@
 # 让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客
 
-> 📊 Level ⭐⭐ | 6.0KB | `entities/enable-kiro-and-claude-code-for-im-with-acp-bridge-async-ai-workflow.md`
+> 📊 Level ⭐⭐ | 6.0KB
 
 ## 概述
 让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 by awschina on 17 3月 2026 in How-To Permalink Share 摘要：AI 编程助手如 Kiro CLI、Claude Code 能力日益强大，但使用场景局限于本地终端，难以满足移动办公和团队协作需求。本文介绍 ACP Bridge——一个将本地 CLI 编程助手通过 ACP 协议暴露为 HTTP 服务的桥接工具，结合 OpenClaw Gateway 和 AWS 基础设施，实现从 Discord 消息触发异步 AI 编程任务的完整闭环。 目录 01 一、背景 02 二、挑战：本地 CLI 工具的协作困境 03 三、技术背景： ACP 协议与 OpenClaw 04 四、整体架构 05 五、安全注意事项 06 六、核心模块解析 07 七、
@@ -19,6 +19,7 @@ Kiro CLI、Kiro IDE、Kiro MCP Skills、Amazon Bedrock、Claude Code、Amazon Be
 - [用 Kiro构建 AI：基于 AWS 基础设施快速构建企业级 Agentic AI 平台 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/building-enterprise-agentic-ai-with-kiro-on-aws.md)
 - [使用 Kiro AI IDE 开发 AWS CDK 部署架构：从模糊需求到三层堆栈的协作实战 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/blog-03-kiro-ai-cdk-development.md)
 
+## 深度分析
 ### 1. ACP 协议：CLI AI Agent 的标准化桥梁
 ACP（Agent Client Protocol）基于 stdio JSON-RPC 实现双向通信，支持结构化事件流（thinking/tool_call/text/status），是连接本地 CLI 工具与外部系统的关键协议层
 

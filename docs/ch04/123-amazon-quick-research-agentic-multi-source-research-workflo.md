@@ -1,6 +1,6 @@
 # Amazon Quick Research: Agentic Multi-Source Research Workflow with Citation Provenance and Versioned Revisions
 
-> 📊 Level ⭐⭐⭐ | 11.8KB | `entities/amazon-quick-research-agentic-multi-source-citation.md`
+> 📊 Level ⭐⭐⭐ | 11.8KB
 
 > 本文综合提炼自 AWS 的 **Amazon Quick Research** 在 rare cancer research（罕见癌症研究）的应用案例。核心是 agentic research workflow：**自然语言目标 → 拆解子主题 → 多源数据采集（web/PubMed/ClinicalTrials.gov/file uploads/Spaces）→ LLM 合成 → 带 inline 引用 + 可追溯 evidence chain 的报告 → 版本化修订**。
 
@@ -101,6 +101,8 @@
 4. 用 statement-level revision 局部迭代 —— 不要全文重写
 5. 注意：Amazon Quick 是付费服务，跑完需清理资源
 
+## 深度分析
+
 ### 1. Agentic Workflow 将"研究"从批次处理升级为可演进的知识系统
 
 Amazon Quick Research 的核心设计不是一次性检索，而是将**研究目标建模为可迭代的 agentic 任务**。自然语言目标 → 拆解子主题 → 并行多源采集 → LLM 合成 → 带引用的报告，这一流程本身并不新颖，但其将**版本化修订**作为一等公民的设计值得深思：每次修订不是覆盖，而是保留历史、递增版本。这意味着整个系统是面向**知识积累**而非一次性输出。
@@ -131,7 +133,7 @@ Amazon Quick Research 的核心设计不是一次性检索，而是将**研究�
 - [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](https://github.com/QianJinGuo/wiki-public/blob/main/entities/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session.md)
 - [Aws Bedrock Halliburton Seismic Workflow Genai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-halliburton-seismic-workflow-genai.md)
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](https://github.com/QianJinGuo/wiki-public/blob/main/entities/building-multi-tenant-agents-with-amazon-bedrock-agentcore.md)
-- [Build An Enterprise Observability Solution For Amazon Quick](../ch11/170-build-an-enterprise-observability-solution-for-amazon-quick.html)
+- Build An Enterprise Observability Solution For Amazon Quick
 - [Aderant Transforms Cloud Operations With Amazon Quick](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aderant-transforms-cloud-operations-with-amazon-quick.md)
 
 ---

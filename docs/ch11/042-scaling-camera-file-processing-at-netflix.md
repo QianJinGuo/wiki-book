@@ -1,6 +1,6 @@
 # Scaling Camera File Processing at Netflix
 
-> 📊 Level ⭐⭐⭐ | 25.1KB | `entities/netflix-scaling-camera-file-processing-at-netflix.md`
+> 📊 Level ⭐⭐⭐ | 25.1KB
 
 ## 相关实体
 - [Netflix Real Time Service Topology](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-real-time-service-topology.md)
@@ -197,6 +197,8 @@ This project is the result of collaboration and iteration over many years. In ad
 * * *
 
 [Scaling Camera File Processing at Netflix](https://netflixtechblog.com/scaling-camera-file-processing-at-netflix-6dab2b1e80be) was originally published in [Netflix TechBlog](https://netflixtechblog.com) on Medium, where people are continuing the conversation by highlighting and responding to this story.
+
+## 深度分析
 
 ### 战略合作而非盲目自建：Buy over Build 的工程哲学
 

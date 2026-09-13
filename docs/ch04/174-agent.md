@@ -1,6 +1,6 @@
 # 万字长文拆解 Agent 架构设计（二）：工具系统设计
 
-> 📊 Level ⭐⭐⭐ | 8.4KB | `entities/claude-code-tool-system-architecture-deep-dive.md`
+> 📊 Level ⭐⭐⭐ | 8.4KB
 
 ## Claude Code 工具系统架构深度拆解
 
@@ -22,6 +22,8 @@ Claude Code 的工具系统设计围绕一个核心洞察展开：**工具的风
 - **子 Agent 即普通工具**：与 ReadFile 同处一个工具列表、经 tool_use 调用，其 `execute()` 内是另一个完整 Agent 循环，递归不增加架构复杂度。
 - **两阶段安全分类器**：先轻量规则快速拦截明显有害命令，再交 LLM 分析意图二分类输出 SAFE/UNSAFE，兼顾安全与效率。
 - **默认安全原则**：block 级工具不可被绕过，只能由用户显式授权，把最终风险决策交给人。
+
+## 深度分析
 
 ### 为什么权限必须绑定工具而非用户或场景
 

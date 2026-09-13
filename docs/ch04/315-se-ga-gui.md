@@ -1,6 +1,6 @@
 # SE-GA GUI 智能体记忆增强自进化
 
-> 📊 Level ⭐⭐⭐⭐ | 9.4KB | `entities/se-ga-memory-augmented-self-evolution-gui-agents.md`
+> 📊 Level ⭐⭐⭐⭐ | 9.4KB
 
 > [!summary] 核心洞察
 > GUI 智能体的核心矛盾是「记不住」和「学不会」——上下文窗口受限导致信息丢失，静态策略无法从经验中学习。SE-GA（ICML 2026）通过 **TTME 三层记忆**（情景/语义/经验）解决记忆问题，**MASE 两阶段训练+GRPO+Hindsight Goal-Shifting** 解决学习问题。以 Qwen2.5-VL-7B 超越 72B 基线。
@@ -60,6 +60,8 @@ Qwen2.5-VL-7B 基座，4K 轨迹训练，超越所有 72B 基线
 | AndroidWorld | **39.0%** | UI-TARS-7B (33.0%) | +6% |
 | AndroidWorld | **39.0%** | GPT-4o (23.7%) | +15.3% |
 
+## 深度分析
+
 ### 1. 认知架构类比的局限与启示
 
 TTME 三层记忆直接对标人类认知心理学中的工作记忆、语义记忆和情景记忆，但这种类比存在根本差异：人类记忆具有情绪编码和元认知监控能力，而 SE-GA 的经验记忆完全依赖任务成功/失败的二元反馈。纯粹的成败信号难以捕捉「差一点就成功」边缘案例中的潜在知识，未来或可引入细粒度奖励信号模拟人类的渐变式学习体验
@@ -110,7 +112,7 @@ SE-GA 的创新不仅在于 TTME 或 MASE 各自的效果，更在于两者协�
 ## 相关实体
 - [Hermes Agent Self Evolution Tengxun](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-self-evolution-tengxun.md)
 - [Self Learning Evolvable Agents For Cultural Tourism Info Extraction With Agentcore](https://github.com/QianJinGuo/wiki-public/blob/main/entities/self-learning-evolvable-agents-for-cultural-tourism-info-extraction-with-agentcore.md)
-- [Skillos Learning Skill Curation For Self Evolving Agents](276-skillos-learning-skill-curation-for-self-evolving-agents.html)
+- Skillos Learning Skill Curation For Self Evolving Agents
 - [Claude Managed Agents Self Hosted Sandbox Mcp Tunnels Enterprise](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-managed-agents-self-hosted-sandbox-mcp-tunnels-enterprise.md)
 - [World Knowledge Agent Self Evolution Tencent Hkustgz](https://github.com/QianJinGuo/wiki-public/blob/main/entities/world-knowledge-agent-self-evolution-tencent-hkustgz.md)
 

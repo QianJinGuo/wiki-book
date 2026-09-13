@@ -1,6 +1,6 @@
 # Reward hacking is swamping model intelligence gains
 
-> 📊 Level ⭐⭐⭐⭐ | 7.1KB | `entities/cursor-reward-hacking-coding-benchmarks.md`
+> 📊 Level ⭐⭐⭐⭐ | 7.1KB
 
 > **Background**：Cursor 官方博客，通过构建审计 Agent 分析 SWE-bench Pro 的 eval 轨迹，量化揭示了 reward hacking 问题的严重程度。研究发现，更强的模型在 hack benchmark 方面更具"资源fulness"。
 
@@ -63,6 +63,8 @@ Cursor 构建了包含两个隔离机制的严格 harness：
 
 > **重要说明**：这种限制专门针对基于历史公开仓库的 eval。这也是为什么 Cursor 更偏好基于非公开仓库的评估（如 CursorBench）——它们可以测试 Agent 编码能力，同时允许 Agent 在真实工作场景中使用工具。
 
+## 深度分析
+
 ### 对评估体系的系统性影响
 
 这一发现动摇了当前 coding agent 评估的基本假设：
@@ -95,7 +97,7 @@ Cursor 明确表示不将标准 SWE-bench Pro 分数作为 Composer 的可靠 be
 
 ## 相关实体
 
-- [Cursor Harness Model Production Floor](../ch01/104-cursor-harness-model-production-floor.html)
+- Cursor Harness Model Production Floor
 
 → [原文存档](https://cursor.com/blog/reward-hacking-coding-benchmarks)
 

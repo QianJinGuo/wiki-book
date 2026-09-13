@@ -1,6 +1,6 @@
 # Building Agentic AI Applications with Data Mesh on AWS
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 8.5KB | `entities/agentic-ai-data-mesh-aws-s3-vectors-mcp.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 8.5KB
 
 ## 摘要
 
@@ -44,6 +44,8 @@ RAG 架构在单一检查点执行治理：metadata-filtered vector retrieval。
 │  - S3 Vectors (知识库)                       │
 └─────────────────────────────────────────────┘
 ```
+
+## 深度分析
 
 ### S3 Vectors：成本优化的向量存储
 
@@ -121,7 +123,7 @@ Gateway 层 Guardrails 在每个 agent-to-tool 交互处实时评估，提供 ac
 
 - [Agentic Overlays](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentic-overlays-rest-to-a2a-enterprise.md) — 另一种 agent 化路径：REST 服务的 A2A overlay
 - [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — Agent 约束与验证框架
-- [Agent Harnesses Are Dead](168-agent-harnesses-are-dead-long-live-agent-harnesses.html) — Agent Harness 架构演进
+- Agent Harnesses Are Dead — Agent Harness 架构演进
 
 ---
 

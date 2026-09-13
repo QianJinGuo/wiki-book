@@ -1,6 +1,6 @@
 # 利用 AWS Budget 实现 Amazon Bedrock 用量监控、超预算告警与自动中断方案
 
-> 📊 Level ⭐⭐⭐⭐ | 9.9KB | `entities/aws-budget-bedrock-cost-governance.md`
+> 📊 Level ⭐⭐⭐⭐ | 9.9KB
 
 > **Background**: 纯 AWS 原生方案，无任何额外组件。利用 IAM Principal-Based Cost Allocation 追踪、Budgets 告警、Budget Actions 自动附加 Deny Policy 阻断超预算调用，每月自动重置。
 
@@ -95,6 +95,8 @@
 - [Agentops Operationalize Agentic Ai Amazon Bedrock](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-amazon-bedrock.md)
 
 → [原文存档](https://aws.amazon.com/cn/blogs/china/leveraging-aws-budget-implement-amazon-bedrock/)
+
+## 深度分析
 
 ### 1. 双 Policy 切换机制的架构本质
 

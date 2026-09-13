@@ -1,6 +1,6 @@
 # Okta AI Agent Governance - FedRAMP/HIPAA Compliance Boundary Agent Lifecycle Management
 
-> 📊 Level ⭐⭐⭐ | 5.7KB | `entities/okta-ai-agents-fedramp.md`
+> 📊 Level ⭐⭐⭐ | 5.7KB
 
 ## 摘要
 
@@ -47,6 +47,8 @@ Johanek 定义了未治理 Agent 面临的四类风险矩阵：
 - 权限审查（Entitlement reviews）
 - 时间绑定权限（Time-bound permissions）
 - 完整审计日志流，可推送到 SIEM 平台以满足美国政府问责办公室（GAO）报告要求
+
+## 深度分析
 
 ### 战略定位：身份治理的自然延伸
 

@@ -1,6 +1,6 @@
 # 协同文档下的 Agent 透明化编辑：可回滚、可对比的协作闭环
 
-> 📊 Level ⭐⭐⭐ | 9.1KB | `entities/vivo-agent-transparent-collaborative-editing.md`
+> 📊 Level ⭐⭐⭐ | 9.1KB
 
 > 来源：vivo互联网技术（Ding Junjie）AI 编辑器二期调研实践 | 主题全库零覆盖
 
@@ -29,6 +29,8 @@ Agent 修改大刀阔斧、跨结构重写。方案是可观测对比、一键�
 单人编辑器撤销是时间栈，但多人协同 + Agent 编辑场景不适用——时间上最后发生的操作不一定想撤销。典型场景：用户 A 触发 AI 改 2-3 段，同时人类用户在 4 段补一句话，用户 A 点"撤回 AI 修改"，若全局撤回会误伤人类补充内容。
 
 **撤回语义拆为两类**（按身份边界区分 AI 与人类编辑），撤回边界必须与差异对比边界一致。实现上，AI 编辑入口先把事务从普通编辑历史"摘出来"写入边界信息；事务进入 Yjs 侧后 UndoManager 利用同一组元数据过滤。
+
+## 深度分析
 
 ### 身份三模式的本质是「信任坐标系」而非技术选型
 
@@ -59,7 +61,7 @@ Agent 修改大刀阔斧、跨结构重写。方案是可观测对比、一键�
 
 - [知识库问答 @文档：从 DOM 方案到 ProseMirror 落地](https://github.com/QianJinGuo/wiki-public/blob/main/entities/prosemirror-knowledge-base-mention-vivo.md)（vivo 同系列，编辑器底层）
 - [2 小时 0 行手写代码 VSCode 插件](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-vscode-plugin-zero-code.md)（AI 产出可审计资产）
-- [Harness Engineering](../ch05/019-harness-engineering.html)
+- Harness Engineering
 
 ---
 

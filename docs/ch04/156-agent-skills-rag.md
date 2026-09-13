@@ -1,6 +1,6 @@
 # 使用 Agent Skills 做知识库检索，能比传统 RAG 效果更好吗？
 
-> 📊 Level ⭐⭐⭐ | 9.3KB | `entities/使用-agent-skills-做知识库检索能比传统-rag-效果更好吗.md`
+> 📊 Level ⭐⭐⭐ | 9.3KB
 
 ## 核心要点
 - Skills 是 Anthropic 推出的 Agent 领域行业标准，本质是一个文件夹，内含使用说明（SKILL.md）、参考文档（reference）、可执行脚本（script）
@@ -10,6 +10,7 @@
 - 缺陷：首次检索 PDF 等特殊格式效率低；多轮检索后 AI 可能忘记调用 Skill；Token 消耗较大
 - 可通过 Skill Creator 自动分析已有文档站并生成定制检索 Skill 
 
+## 深度分析
 ### 传统 RAG 的结构性困境
 传统 Chunk + Embedding RAG 模式的核心缺陷在于"预索引"的刚性。作者在文中坦承自己对这套方案的偏见源于真实的调优痛苦——调优过程极其折腾，最终效果仍难保证。这并非个别现象，而是向量检索范式本身的结构性局限：分块大小固定、语义边界难以对齐、Embedding 模型对领域术语的理解有限、检索结果依赖向量相似度而非真实语义匹配 。
 LlamaIndex 创始人 Jerry Liu 的判断佐证了这一判断：RAG 本身没死，但固定 Chunk + Embedding 那套模式已走到尽头。如果 Agent 能动态扩展文件周围的上下文，过度考虑数据块大小就失去了意义 。这一转变的本质是从"检索后总结"（Retrieve-then-Read）到"自主式检索+理解"（Agentic Retrieve）的范式跃迁。
@@ -54,7 +55,7 @@ Anthropic Skills 的渐进式加载策略在此场景中展现了独特的优势
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-to-agentic-engineering.md)
 - [RAG深度解析：分块、向量化、召回、重排，才是"蒸馏同事skill"的关键](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag深度解析分块向量化召回重排才是蒸馏同事skill的关键.md)
 - [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki-public/blob/main/entities/别再把上下文当聊天记录.md)
-- [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](../ch05/019-harness-engineering.html)
+- 一文带你弄懂 AI 圈爆火的新概念：Harness Engineering
 - [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](https://github.com/QianJinGuo/wiki-public/blob/main/entities/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验.md)
 
 - [Hermes Agent /goal 长任务运行时架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-goal-runtime-architecture.md)

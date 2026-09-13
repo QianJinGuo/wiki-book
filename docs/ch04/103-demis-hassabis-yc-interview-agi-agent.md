@@ -1,6 +1,6 @@
 # Demis Hassabis YC Interview: AGI 时间线、记忆机制、Agent 未来
 
-> 📊 Level ⭐⭐⭐ | 14.0KB | `entities/demis-hassabis-yc-interview-jiedaotixi.md`
+> 📊 Level ⭐⭐⭐ | 14.0KB
 
 → [原文存档](https://www.youtube.com/watch?v=JNyuX1zoOgU)
 
@@ -20,6 +20,8 @@ Google DeepMind CEO Demis Hassabis 与 YC 总裁 Garry Tan 的深度访谈，涵
 - 创造力新标准：AI 是否能"发明围棋本身"——需要类比推理能力突破
 - AlphaFold 突破三要素：组合搜索空间 + 清晰目标函数 + 足够数据/合成数据模拟器
 - "爱因斯坦测试"：训练截止到 1901 年的知识，看 AI 能否独立推出狭义相对论
+
+## 深度分析
 
 ### AGI 时间线：2030 年与深科技创业的张力
 

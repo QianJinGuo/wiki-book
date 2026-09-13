@@ -1,6 +1,6 @@
 # Flow2Spec：开发过程自然长出知识图谱的 Agent 工程框架
 
-> 📊 Level ⭐⭐ | 7.9KB | `entities/flow2spec-structured-knowledge-routing-ctrip-2026.md`
+> 📊 Level ⭐⭐ | 7.9KB
 
 携程（Lands）开源的 Flow2Spec 是一个让项目在开发过程中自然长出知识图谱的 Agent 工程框架。核心设计：知识库不是一个大文档而是一套路由协议，Agent 通过 manifest→matcher→topic→dependencies→docs 的渐进式路径获取精确上下文，每次开发产生的新知识通过 f2s-kb-distill/f2s-kb-sync 反哺回知识库，形成知识演进闭环。
 
@@ -39,11 +39,13 @@ Flow2Spec 不要求先做大规模文档工程。知识在使用过程中自然�
 
 ## 与现有知识库的关联
 
-- [Hermes Agent](../ch03/059-hermes-agent.html) — Flow2Spec 的 .Knowledge/ 路由协议与 Hermes 的 Skill 系统形成互补：Hermes 管理 Agent 能力单元（Skills），Flow2Spec 管理项目层面的知识路由和开发流程
+- Hermes Agent — Flow2Spec 的 .Knowledge/ 路由协议与 Hermes 的 Skill 系统形成互补：Hermes 管理 Agent 能力单元（Skills），Flow2Spec 管理项目层面的知识路由和开发流程
 - [Skill 设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-design-patterns.md) — Flow2Spec 的 f2s-* 命令本质上是预定义的 Skill，但其知识路由协议是比 Skill 更高一层的组织抽象
 - [AI Agent Skill 系统设计：淘宝技术工程实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-system-design-taobao-technology-2026.md) — Flow2Spec 的 HARD-GATE 等价物是五层约束，前向测试等价于 verify 步骤
 - [Loop Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/loop-engineering-addy-osmani-challengehub.md) — Flow2Spec 的开发闭环（req→clarify→tech→kb→code→sync→commit）是 Loop Engineering 在产品工程场景的具体实现
 - [Memory in the LLM Era](https://github.com/QianJinGuo/wiki-public/blob/main/entities/memory-in-the-llm-era-iclr2026.md) — Flow2Spec 的 f2s-kb-distill 和 memory 系统中的抽取模块本质上是同一件事的不同抽象层级
+
+## 深度分析
 
 ### 从「文件索引」到「知识路由」的范式转换
 

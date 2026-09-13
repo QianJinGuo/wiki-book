@@ -1,6 +1,6 @@
 # Foundation Capital Agent Era Six Insights
 
-> 📊 Level ⭐⭐⭐⭐ | 12.8KB | `entities/foundation-capital-agent-era-six-insights.md`
+> 📊 Level ⭐⭐⭐⭐ | 12.8KB
 
 > -> [原文存档](https://mp.weixin.qq.com/s/35FkS3AIhm336Fl2Chfc1w)
 
@@ -67,6 +67,7 @@ Foundation Capital 合伙人 Ashu Garg（2026-05-07）基于 Turing CEO Jonathan
 | Claude Code GitHub 提交占比 | **4%**（发布仅一年多） |
 | OpenClaw 超过 Linux 星标里程碑 | **3个月**（Linux 15年） |
 
+## 深度分析
 ### 从"工具"到"用户"的范式转移
 Foundation Capital 洞察中最具颠覆性的命题不是某个具体技术判断，而是**谁才是软件的主用户**这一根本问题的重新定性。当 Turing 将"Agent 优先"从口号落地为日常运营原则，它意味着：
 1. **API First 设计取代 UI First**：产品的可编程性成为核心竞争力，交互丰富度退居次席

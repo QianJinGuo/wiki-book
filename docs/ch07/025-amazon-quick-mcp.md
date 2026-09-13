@@ -1,6 +1,6 @@
 # 让 Amazon Quick 操作飞书：构建远程 MCP 服务的设计实践
 
-> 📊 Level ⭐⭐⭐ | 7.6KB | `entities/让-amazon-quick-操作飞书构建远程-mcp-服务的设计实践.md`
+> 📊 Level ⭐⭐⭐ | 7.6KB
 
 → [原文存档](https://aws.amazon.com/cn/blogs/china/amazon-quick-build-mcp-service-design-practice/)
 
@@ -17,6 +17,8 @@ Amazon Quick 没有内置飞书集成，但远程 MCP Connector 允许团队自�
 - Tier1 入选判据：调用频率、作为多步操作「积木」的编排必要性、无需 discover 即可理解用途的独立性。
 - 安全为五层：OAuth 2.0 PKCE、根密钥 HKDF 派生的 3 个 HMAC 签名密钥域分离、Secrets Manager 加密存储 + SigV4 内网传输、Write-Probe 预检保护一次性 refresh_token、日志脱敏。
 - 选 Bedrock AgentCore 的决定性理由是 Scale-to-Zero：空闲零成本、免容器编排、秒级就绪，且与 Quick 同生态免协议适配；10/100/500 人月成本 <$10/$50/$250。
+
+## 深度分析
 
 ### 200+ 工具的上下文预算困局与 Meta Tool 的按需编排
 

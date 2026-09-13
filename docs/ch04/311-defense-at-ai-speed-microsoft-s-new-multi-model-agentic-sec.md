@@ -1,6 +1,6 @@
 # Defense at AI speed: Microsoft's new multi-model agentic security system
 
-> 📊 Level ⭐⭐⭐⭐ | 9.7KB | `entities/defense_at_ai_speed_microsofts_new_multi.md`
+> 📊 Level ⭐⭐⭐⭐ | 9.7KB
 
 ## 核心要点
 - Microsoft 发布 **MDASH**（Microsoft Security multi-model agentic scanning harness），一个编排 100+ specialized AI agents 的多模型漏洞发现系统 
@@ -9,6 +9,7 @@
 - 2026 年 5 月 Patch Tuesday 披露的 16 个新 CVE 中，有 4 个 Critical 远程代码执行漏洞由 MDASH 发现 
 - 核心结论：**系统的工程价值在模型本身，而非任何一个模型** 
 
+## 深度分析
 ### 背景：从 DARPA AI Cyber Challenge 到微软内部规模化
 MDASH 背后的团队（Autonomous Code Security，ACS）部分成员来自 Team Atlanta——后者在 DARPA AI Cyber Challenge 中赢得 2,950 万美元奖金，展示了可自主发现并修复复杂开源项目中真实漏洞的 AI 系统。MDASH 代表这一技术路线从研究演示向微软生产环境的工程化迁移 。
 微软自身代码库的安全审计面临三个独特挑战 ：
@@ -65,7 +66,7 @@ MDASH 的设计哲学是**管道是产品，模型是输入之一**。整个系�
 **多模型 ensemble 作为防御姿态**：单一模型 harness 存在系统性盲区（跨文件推理、非平凡控制流、长生命周期依赖）；ensemble 架构通过 disagreement-as-signal 的方式实际上内置了交叉验证机制 。
 ## 相关实体
 - [Microsoft Open Sources Rampart Clarity](https://github.com/QianJinGuo/wiki-public/blob/main/entities/microsoft-open-sources-rampart-clarity.md)
-- [Where Openclaw Security Is Heading Openclaw Blog](https://github.com/QianJinGuo/wiki-public/blob/main/entities/where-openclaw-security-is-heading-openclaw-blog.md)
+- Where Openclaw Security Is Heading Openclaw Blog
 - [Disgruntled Researcher Microsoft Zero Days](https://github.com/QianJinGuo/wiki-public/blob/main/entities/disgruntled-researcher-microsoft-zero-days.md)
 - [Microsoft Zero Days Researcher Disgruntled](https://github.com/QianJinGuo/wiki-public/blob/main/entities/microsoft-zero-days-researcher-disgruntled.md)
 - [Sysdig Headless Cloud Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sysdig-headless-cloud-security.md)

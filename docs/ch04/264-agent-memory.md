@@ -1,6 +1,6 @@
 # Agent Memory 架构解析
 
-> 📊 Level ⭐⭐⭐⭐ | 15.3KB | `entities/agent-memory-architecture-ruofei.md`
+> 📊 Level ⭐⭐⭐⭐ | 15.3KB
 
 ## 核心论点
 Memory 不只是存储，而是 Harness 里的一层控制面——解决"哪些过去可以继续进入未来"这个工程问题。
@@ -70,6 +70,7 @@ Memory 不只是存储，而是 Harness 里的一层控制面——解决"哪些
 - [Harness Engineering 框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) — 工程化控制面
 → [原文存档](https://mp.weixin.qq.com/s/tVUVRCWUVj31Pjobjol2bA)
 
+## 深度分析
 ### Memory 作为控制面，而非存储层
 若飞的核心洞察是把 Memory 从"存储"重新定义为"控制面"。这意味着 Memory 不只回答"数据存在哪"，而是要回答一串治理问题：什么值得写入、以什么身份写入、在什么范围内有效、什么时候降低权重、冲突时听谁的、被污染后怎么回滚。
 这个视角回答了为什么很多团队按数据库思路做 Memory 很快碰壁——因为数据库只能管存储，管不了治理。
@@ -145,15 +146,15 @@ Memory 出错时，工程师要能查、能追溯、能回滚。这意味着：
 - [Agent Memory 架构本质](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture.md)
 - [memory agent systems cobanov](https://github.com/QianJinGuo/wiki-public/blob/main/entities/memory-agent-systems-cobanov.md)
 
-- [AI Agent 记忆系统架构](108-how-ai-agent-memory-works.html)
+- AI Agent 记忆系统架构
 - [深度拆解 Hermes Agent 记忆系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-memory-system-openclaw-comparison.md)
-- [ai agent memory systems](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-memory-systems.md)
-- [你不知道的 Agent 原理架构与工程实践](179-agent-principle-architecture-engineering-practice.html)
+- ai agent memory systems
+- 你不知道的 Agent 原理架构与工程实践
 - [Agent Memory System 设计指南](https://github.com/QianJinGuo/wiki-public/blob/main/queries/agent-memory-system-design.md)
 - [Agent Harness 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture.md)
 - [Agent 自我改进的六条路](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-self-improvement-six-mechanisms.md)
 - [Agent架构关键变化：Harness正在成为新后端](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-architecture-harness-new-backend.md)
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-prompt-context-harness.md)
+- 深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践
 - [AI Coding Agent 记忆系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-coding-agent-memory-system.md)
 - [Agent Memory System Design](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-system-design.md)
 - [Coding Harness 工程本质](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/coding-harness-engineering.md)

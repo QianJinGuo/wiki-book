@@ -1,6 +1,6 @@
 # 五款浏览器自动化工具横向对比：browser-use / Playwright / chrome-devtools-mcp / agent-browser / BrowserAct
 
-> 📊 Level ⭐⭐⭐⭐ | 11.6KB | `entities/four-browser-automation-tools-comparison.md`
+> 📊 Level ⭐⭐⭐⭐ | 11.6KB
 
 > 来源：[行小招 - 科技充电站](https://mp.weixin.qq.com/s/2aqrTvswa6FtqI-GK-EmvQ)，2026-05-19
 > 评分： → 作为 [OpenCLI](https://github.com/QianJinGuo/wiki-public/blob/main/entities/opencli.md) entity 的补充
@@ -44,6 +44,8 @@
 | **Cloudflare/challenge 绕过 + 竞品监控 + 多账号运营**（**⚠️ 待第三方验证**） | **BrowserAct**（备用：tinyfish-web-agent skill） |
 
 > 固定流程看成本，模糊任务看完成度，AI 即时验证看调用摩擦，**反检测场景看清单外约束**。
+
+## 深度分析
 
 ### 技术栈选择的根本分歧
 

@@ -1,6 +1,6 @@
 # Data Projects
 
-> 📊 Level ⭐ | 4.0KB | `entities/data-projects-managing-data-assets-at-netflix-scale.md`
+> 📊 Level ⭐ | 4.0KB
 
 ## Data Projects: Managing Data Assets at Netflix Scale
 
@@ -8,7 +8,7 @@
 
 ## Data Projects: Managing Data Assets at Netflix Scale
 
-#### _By_[ _Amer Hesson_](<https://www.linkedin.com/in/amer-hesson-0886a5a5/>) _,_[_Marcelo Mayworm_](<https://www.linkedin.com/in/mayworm/>) _,_[_James Mulcahy_](<https://www.linkedin.com/in/james-mulcahy-10493518/>) _, and_[ _Brittany Truong_](<https://www.linkedin.com/in/brittany-truong-a35b54bb/>)
+#### _By_ _Amer Hesson_ _,__Marcelo Mayworm_ _,__James Mulcahy_ _, and_ _Brittany Truong_
 
 ### The Problem: Managing Assets at Netflix Scale
 
@@ -25,7 +25,7 @@ Imagine you’re on a team that owns a few hundred tables. Your org restructures
 
 ### Problem 2: Workloads tied to human identities
 
-Scheduled and asynchronous workloads — [Maestro](<https://netflixtechblog.com/maestro-netflixs-workflow-orchestrator-ee13a06f9c78>) workflows, data movement jobs, Spark pipelines — need an identity to run as. Historically, that was a _human_ : whoever authored the workflow.
+Scheduled and asynchronous workloads — Maestro workflows, data movement jobs, Spark pipelines — need an identity to run as. Historically, that was a _human_ : whoever authored the workflow.
 
 Human identities are not durable. People change teams, get new responsibilities, and leave the company. When they do, their permissions change, and the workflows running under their identity start to fail. The only fix was to swap in a colleague’s identity, which inevitably had _different_ permissions, kicking off a “permissions whack-a-mole” as each fix surfaced the next missing grant. And then, eventually,
 

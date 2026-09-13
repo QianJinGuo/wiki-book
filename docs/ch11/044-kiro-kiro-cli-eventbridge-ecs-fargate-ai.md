@@ -1,6 +1,6 @@
 # 构建无服务器Kiro调度平台：用Kiro CLI + EventBridge + ECS Fargate实现定时AI任务
 
-> 📊 Level ⭐⭐⭐ | 17.0KB | `entities/kiro-job-scheduler-eventbridge-ecs-fargate.md`
+> 📊 Level ⭐⭐⭐ | 17.0KB
 
 > 原文存档：[原文存档](https://aws.amazon.com/cn/blogs/china/platform-kiro-cli-eventbridge-ecs-fargate-implement-ai-task)
 
@@ -38,6 +38,8 @@ Kiro Job Scheduler 采用完全无服务器的三层架构，按需付费无需�
 - **Secrets Manager 集成**：Kiro API Key 运行时从 Secrets Manager 注入，容器内不明文存储
 - **典型月成本 < $5**：每天 5 任务 × 3 分钟运行的低成本估算
 - **部署方式**：Terraform 和 CDK 双部署方式，一键部署脚本
+
+## 深度分析
 
 ### 架构分层解耦的无服务器设计哲学
 

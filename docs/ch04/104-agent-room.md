@@ -1,6 +1,6 @@
 # 协作涌现：Agent Room 的多智能体决策框架
 
-> 📊 Level ⭐⭐⭐ | 13.7KB | `entities/agent-room-emergent-collaboration-multi-agent-decision.md`
+> 📊 Level ⭐⭐⭐ | 13.7KB
 
 ## 两层涌现
 

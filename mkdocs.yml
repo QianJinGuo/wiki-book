@@ -105,6 +105,7 @@ extra:
 
 nav:
   - 首页: index.md
+  - 序言: preface.md
   - AI 工程主课程: course.md
   - 第一篇 · 入门篇:
     - Ch01 AI 与 LLM 基础: ch01-ai-basics.md

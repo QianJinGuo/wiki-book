@@ -1,6 +1,6 @@
 # The text in Claude Code’s “Extended Thinking” output is not authentic. – blog
 
-> 📊 Level ⭐⭐⭐ | 6.5KB | `entities/claude-code-extended-thinking-not-authentic.md`
+> 📊 Level ⭐⭐⭐ | 6.5KB
 
 Patrick McCanna investigated Claude Code's session logs and discovered that the "thinking blocks" in extended thinking output contain a 600-character signature but no actual reasoning text. This raises questions about the authenticity and transparency of LLM reasoning traces.
 
@@ -25,6 +25,8 @@ Patrick McCanna investigated Claude Code's session logs and discovered that the 
 - Agent builders relying on thinking blocks for observability should verify actual content
 - Extended thinking may be a compliance artifact rather than genuine reasoning transparency
 - Important for anyone building on Claude Code's API and expecting traceable reasoning
+
+## 深度分析
 
 ### 加密推理签名 vs 透明推理：Anthropic 的设计取舍
 

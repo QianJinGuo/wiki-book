@@ -1,17 +1,19 @@
 # Anthropic 联创：2028 年实现 AI 自我构建的概率超过 60%
 
-> 📊 Level ⭐ | 10.6KB | `entities/anthropic-联创2028-年实现-ai-自我构建的概率超过-60.md`
+> 📊 Level ⭐ | 10.6KB
 
 Anthropic 联合创始人 Jack Clark 今天发了一篇重磅长文，声称：  ** AI 系统自己迭代改造自己，可能就在两年后。  **
 
 ## 相关实体
-- [The Token Economy Pt2 The Intelligence Company Gets Built](001-the-token-economy-pt2-the-intelligence-company-gets-built.html)
+- The Token Economy Pt2 The Intelligence Company Gets Built
 - [Anthropic To Share Mythos Cyber Flaw Findings With Global Finance Watchdog](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-to-share-mythos-cyber-flaw-findings-with-global-finance-watchdog.md)
 - [2028 Two Scenarios For Global Ai Leadership](https://github.com/QianJinGuo/wiki-public/blob/main/entities/2028-two-scenarios-for-global-ai-leadership.md)
 - [Claudes_Next_Enterprise_Battle_Is_Not_Mo](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claudes_next_enterprise_battle_is_not_mo.md)
 - [Anthropic联创2028 Ai自我构建概率超60](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic联创2028-ai自我构建概率超60.md)
 
 → [原文存档](https://mp.weixin.qq.com/s/QldTWr5MFRYLagfBmzpWOQ)
+
+## 深度分析
 
 ### 1. 核心论证的结构与逻辑
 

@@ -1,6 +1,6 @@
 # 扣子 3.0 多 Agent 协同实战：指挥所有 Agent 的 Agent + 5 人团队 6 步流水线
 
-> 📊 Level ⭐⭐⭐⭐ | 15.3KB | `entities/coze-3-multimagent-team-orchestration-wangheige.md`
+> 📊 Level ⭐⭐⭐⭐ | 15.3KB
 
 ## 概述
 
@@ -138,6 +138,8 @@
 
 > **AI 的下半场，拼的不是谁更聪明，而是谁先被组织起来。这事，扣子先动手了。**
 
+## 深度分析
+
 ### 1. 从单点工具到组织架构的范式转移
 
 Coze 3.0 的核心创新不在于某一单一能力的突破，而在于**重新定义了 AI 系统的组织层次**。此前无论是 Coze 2.5 的云设备，还是各类单点 Agent 工具，本质上都是"任务执行器"——接收指令、完成交付、宣告结束。这种模式的前提是：**有一个"人"在指挥**。
@@ -196,7 +198,7 @@ Coze 3.0 提供的解决思路是**云端托管 + 统一消息总线**。本地 
 - [Coze 3 0 Collaboration System](https://github.com/QianJinGuo/wiki-public/blob/main/entities/coze-3-0-collaboration-system.md)
 - [Coze 3 0 Local Agent Project Orchestration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/coze-3-0-local-agent-project-orchestration.md)
 - [Oz Multi Harness Cloud Agent Orchestration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/oz-multi-harness-cloud-agent-orchestration.md)
-- [Agent Orchestration](../ch01/114-agent-orchestration.html)
+- Agent Orchestration
 - [Baidu Netdisk Three Layer Agent Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/baidu-netdisk-three-layer-agent-architecture.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/openai-developer-ecosystem.md)
 

@@ -1,6 +1,6 @@
 # Qoder Skill UI — Agent 与人类的协作界面层
 
-> 📊 Level ⭐⭐⭐⭐ | 13.1KB | `entities/qoder-skill-ui.md`
+> 📊 Level ⭐⭐⭐⭐ | 13.1KB
 
 ## Overview
 Qoder Quest 给 Agent Skill 补上了 GUI 层：Skill 不再只有 SKILL.md 文本指令，还包含**配置面板（输入端）**和**结果 Dashboard（输出端）**，使人机协作形成完整闭环。
@@ -83,6 +83,7 @@ Skill UI 是 Skill 编写规范的自然延伸：
 - **Skill UI** 补上了 Skill 的 GUI 层（配置面板 + 结果 Dashboard）
 - 两者共同构成完整的 Skill 双形态单元
 
+## 深度分析
 ### "双形态"是软件界面的本质重构
 Qoder Skill UI 背后的核心判断是：软件正在被重构为双形态——给 Agent 用的 CLI 和给人用的 GUI。不是 GUI 替代 CLI，而是各归其位、各司其职。这个判断和 pi-main 的"Thin Harness, Fat Skills"以及 GBrain 的"Thin Harness, Fat Skills"在精神上一致：基础设施层保持简洁/薄，把复杂性放到能力层（Skills/UI）。Skill 作为 Agent 的能力单元，本身就应该是双形态的——CLI 层给 Agent 读，GUI 层给人用。
 
@@ -148,7 +149,7 @@ Skill UI 的案例中，设计方向面板经过了三轮增强（初版→加�
 → [原文存档](https://mp.weixin.qq.com/s/_jPzZKh9kSbVwOj1khMKLg)
 
 ## 相关主题
-- [Claude Design Skill](../ch07/032-claude-design-skill.html) — 设计领域 Skill 的实战案例（420行系统提示词 → Skill）
+- Claude Design Skill — 设计领域 Skill 的实战案例（420行系统提示词 → Skill）
 - [Hermes Agent Skill](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/hermes-agent-skill.md) — Hermes Agent 的 Skill 格式
 - [原文存档](https://mp.weixin.qq.com/s/_jPzZKh9kSbVwOj1khMKLg)
 

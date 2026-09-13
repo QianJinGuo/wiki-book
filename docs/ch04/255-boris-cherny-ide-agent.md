@@ -1,6 +1,6 @@
 # Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台
 
-> 📊 Level ⭐⭐⭐⭐ | 17.1KB | `entities/boris-cherny-新访谈开发工具正在从-ide-变成-agent-控制台.md`
+> 📊 Level ⭐⭐⭐⭐ | 17.1KB
 
 ## Boris Cherny 新访谈：IDE → Agent 控制台
 ## 核心观点
@@ -17,6 +17,7 @@ Claude Code 的爆发不像传统 SaaS 逐步验证 PMF，而是先赌模型能�
 | Opus 4 之后曲线突然起飞 | 能力临界点突破 |
 | 现在：从手机管理几百个 Agent | 规模化运营 |
 
+## 深度分析
 ### 从输入预测到自主代理的根本转变
 传统 AI 编程工具范式中，模型是"跟着光标走的补全器"——人在 IDE 里停下，模型补下一行。这是输入预测（input prediction）模式，人是中心，模型是加速器。
 Claude Code 的定位是 agentic coding system——可以读取代码库、跨文件修改、运行测试、在修改文件或执行命令前请求明确权限。这使得模型成为一个自主的工作空间参与者，而非预测下一个 token 的工具。
@@ -88,7 +89,7 @@ Boris 提到"最值钱的不是知道某个 API 怎么写，而是知道这套�
 - [Mythos for Offensive Security: XBOW's Evaluation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mythos_offensive_security_xbow_evaluatio.md)
 - [AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-tool-count-trap.md)
 - [claude-code-agent-view](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-agent-view.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/107-claude-code-harness-deep-understanding.html)
+- 深入理解 Claude Code 源码中的 Agent Harness 构建之道
 - [Anthropic 官方生产级 Agent 最佳实践：12 个可复用的 MCP 设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-官方生产级-agent-最佳实践12-个可复用的-mcp-设计模式-v2.md)
 - [Anthropic发布「AI原生创业公司」手册：涵盖全流程四大核心阶段，一人公司法典来了](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-ai-native-startup-handbook.md)
 - [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-20000-char-source-analysis.md)
@@ -99,7 +100,7 @@ Boris 提到"最值钱的不是知道某个 API 怎么写，而是知道这套�
 - [Claude Code 源码解析：Skills/MCP/Rules 底层机制对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-skills-mcp-rules-source-analysis.md)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](https://github.com/QianJinGuo/wiki-public/blob/main/entities/imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群.md)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-source-architecture.md)
-- [Claude Code MCP Server](../ch07/043-claude-code-mcp-server.html)
+- Claude Code MCP Server
 - [Anthropic 14 个 Agent Skills 设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-agent-skills-design-patterns-14.md)
 - [Anthropic Computer Use 最佳实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-computer-use-best-practices.md)
 - [Claude Code 开发负责人：为何放弃 RAG 而选择 Agentic Search](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code开发负责人-为何放弃rag而选择agentic-search.md)

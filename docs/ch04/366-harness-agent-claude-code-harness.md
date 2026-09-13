@@ -1,6 +1,6 @@
 # Harness 工程搭建式业务 Agent 评测方案：Claude Code 作 Harness 搭建者
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 17.4KB | `entities/harness-engineered-business-agent-evaluation-aliyun-boyu.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 17.4KB
 
 > 原文存档：[原文存档](https://mp.weixin.qq.com/s/n9zkbKTi3Q1j-L2vgmO1Vw)
 
@@ -108,6 +108,8 @@
 
 **局限**：LLM-as-Judge 本身有偏差（对关键决策用人工抽检兜底）；评测集规模受限（人工 GT）；依赖评测平台稳定性（token 截断、API 超时需容错）；首次搭建有学习成本（第二个 Agent 起复用率很高）。
 
+## 深度分析
+
 ### 1. 范式转变：从"评测代码"到"评测即 Prompt"
 
 传统评测工程将评测逻辑编码为 Python 脚本（test_runner.py / report_generator.py），本质上是一套固化、编译执行的规则体系。Harness 式评测将评测逻辑本身编码为自然语言提示词，由一个 LLM 实例（评测 Agent）读取并执行。这一转变的深远意义在于：**评测逻辑从"代码态"升级为"文本态"，带来了迭代粒度的根本变化**——改一行 prompt 等价于改一段代码并重新部署，但无需经历编译、CI、上线的完整流程。
@@ -157,7 +159,7 @@
 - [Harness Engineering实践做了一个平台让Ai一晚上自动评测和优化你的系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering实践做了一个平台让ai一晚上自动评测和优化你的系统.md) — 关注"AI 全自动做评测 + 系统级自动优化循环"（产品/平台视角，AI 自主从入口到分析）。本实体是"评测方案设计"的方法论层，那个是"评测平台产品"的实现层；两者形成"方法论 ↔ 平台实现"互补。
 - [Ai Evals Methodology](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-evals-methodology.md) — Langfuse 出品的通用 AI Evals 三种方法（人工 / 自动 / LLM-as-Judge）。本实体是"业务 Agent 评测"的具体工程方案；那个是评估方法论的科普。
 - [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-eval-wallezhang-yaml-driven-agent-evaluation-framework.md) — Go 语言 YAML 驱动的 AgentEval 框架（pass@k + pass^k + SQLite + CI/CD）。本实体是"Prompt 即评测逻辑"路线（评测逻辑编码为自然语言）；那个是"YAML 配置驱动"路线（评测逻辑仍是代码）。两条互补路径。
-- [Cursor Harness Model Production Floor](../ch01/104-cursor-harness-model-production-floor.html) — Cursor 复盘"模型 + Harness 组合发布" + 三层评估（离线/线上/代理）。本实体是"Harness 评测自身"的方法论；那个是"被评测的 Harness"如何运营。
+- Cursor Harness Model Production Floor — Cursor 复盘"模型 + Harness 组合发布" + 三层评估（离线/线上/代理）。本实体是"Harness 评测自身"的方法论；那个是"被评测的 Harness"如何运营。
 - [Better Harness Eval Trace Harness Hill Climbing](https://github.com/QianJinGuo/wiki-public/blob/main/entities/better-harness-eval-trace-harness-hill-climbing.md) — Trace-driven 评测 + Harness hill-climbing 自优化循环。本实体是"评测方案设计"的人工智能辅助；那个是"评测驱动的 Harness 优化"反馈环。
 
 ## 相关实体

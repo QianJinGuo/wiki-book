@@ -1,6 +1,6 @@
 # WikiSkill：将 Agent 经验编译为持久知识以驱动技能进化（Google Research）
 
-> 📊 Level ⭐ | 6.3KB | `entities/wikiskill-persistent-knowledge-skill-evolution-google-2026.md`
+> 📊 Level ⭐ | 6.3KB
 
 ## WikiSkill：将 Agent 经验编译为持久知识以驱动技能进化
 
@@ -17,7 +17,7 @@ WikiSkill 把 Agent 工作区分成三层：
 
 每轮循环四组件：① **Inference Agent** 用当前技能跑回放（执行阶段禁止读 wiki——消融证实执行时读 wiki 反而降性能）；② **Wiki Maintainer** 采样 ≤8 条轨迹（≤5 失败找根因 + 3 成功提策略）做根因分析、增量补 pattern/diff；③ **Skill Proposer** ReAct 主动只读相关 wiki 页与轨迹，产出单个聚焦提案（新建或增量 patch）；④ **Gating and Rollback** 验证集评估，仅当 R > Rbest 接受，否则回滚技能集但保留 wiki。
 
-> [!contradiction] 与 [Skill 自进化三路线](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-self-evolution-three-approaches.md) 视角互补：既有框架（EvoSkill/Trace2Skill/SkillOpt）同走「回放→分析→提案→门控」循环，但**不维护独立的、持续演进的技能表示**；WikiSkill 新增的持久 wiki 层正是这三条路线共同缺失的维度。链接见 [SkillOpt](../ch05/055-skillopt.html)。
+> [!contradiction] 与 [Skill 自进化三路线](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-self-evolution-three-approaches.md) 视角互补：既有框架（EvoSkill/Trace2Skill/SkillOpt）同走「回放→分析→提案→门控」循环，但**不维护独立的、持续演进的技能表示**；WikiSkill 新增的持久 wiki 层正是这三条路线共同缺失的维度。链接见 SkillOpt。
 
 ## 关键结果：技能进化与模型规模互补、技能可跨模型迁移
 

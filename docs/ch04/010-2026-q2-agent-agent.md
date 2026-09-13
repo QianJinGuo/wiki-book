@@ -1,6 +1,6 @@
 # 腾讯研究院 2026 Q2 Agent 产业回顾——Agent 跌跌撞撞进入世界
 
-> 📊 Level ⭐ | 5.6KB | `entities/tencent-research-agent-q2-2026-industry-review.md`
+> 📊 Level ⭐ | 5.6KB
 
 > **来源**：腾讯研究院/腾讯科技，作者博阳，2026-07-22
 > **评分**：

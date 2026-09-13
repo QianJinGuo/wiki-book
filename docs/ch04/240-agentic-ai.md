@@ -1,6 +1,6 @@
 # 当 Agentic AI 重塑生产关系：智能体浪潮下的企业战略与行动框架
 
-> 📊 Level ⭐⭐⭐⭐ | 22.5KB | `entities/当-agentic-ai-重塑生产关系-智能体浪潮下的企业战略与行动框架.md`
+> 📊 Level ⭐⭐⭐⭐ | 22.5KB
 
 > 原文存档：[原文存档](https://aws.amazon.com/cn/blogs/china/agentic-ai-intelligent-enterprise-framework)
 
@@ -148,6 +148,8 @@ AWS China Blog（2026-06-12）从**经济学经典命题"生产力决定生产�
 
 → [原文存档](https://aws.amazon.com/cn/blogs/china/agentic-ai-intelligent-enterprise-framework)
 
+## 深度分析
+
 ### 核心观点："生产力决定生产关系"是 Agentic AI 落地的经济学解释框架
 
 文章用马克思政治经济学经典命题重新框架化 Agentic AI 企业落地问题，这不是修辞手法，而是有实证支撑的分析框架。2788 家中国制造企业纵向研究显示 AI 成为"非人格化监管者"（系数 -0.0290, p<0.01），算法决策架空管理层裁量权——这正是生产关系未能适配新生产力的典型症状。[Ai Native Rd Org Design Xiaobin](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-native-rd-org-design-xiaobin.md) 从组织变革角度描述同一现象（管理层被绕过），本文的贡献在于给出了**更根本的经济学解释**：当执行层被 AI 接管，如果治理结构不变，信息垄断被瓦解，管理层权威被架空是必然结果。
@@ -166,7 +168,7 @@ AWS China Blog（2026-06-12）从**经济学经典命题"生产力决定生产�
 
 ### 技术判断：框架无关 + 模型无关是战略灵活性而非技术偏好
 
-文章强调"框架无关，模型无关"，这不是营销话术，而是面对 Agent 技术快速迭代的战略选择。专用压缩模型（[Anthropic Prompt Caching Claude Code](../ch01/190-anthropic-prompt-caching-claude-code.html)）与通用基础设施的对比在这里有直接意义：锁定单一模型/框架意味着将组织的技术演进路线绑定到供应商的发布周期。分层标准化（接口/身份/可观测性） + 保持灵活性（模型/框架/Prompt）是兼顾控制力和演进速度的最优解，参考 [Agent Harness Architecture Design Production Guide](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture-design-production-guide.md) 中的生产级设计原则。
+文章强调"框架无关，模型无关"，这不是营销话术，而是面对 Agent 技术快速迭代的战略选择。专用压缩模型（Anthropic Prompt Caching Claude Code）与通用基础设施的对比在这里有直接意义：锁定单一模型/框架意味着将组织的技术演进路线绑定到供应商的发布周期。分层标准化（接口/身份/可观测性） + 保持灵活性（模型/框架/Prompt）是兼顾控制力和演进速度的最优解，参考 [Agent Harness Architecture Design Production Guide](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture-design-production-guide.md) 中的生产级设计原则。
 
 ## 实践启示（续）
 

@@ -1,6 +1,6 @@
 # Chromium AI Coding 开发体系
 
-> 📊 Level ⭐⭐⭐⭐ | 11.9KB | `entities/chromium-ai-coding-development-system.md`
+> 📊 Level ⭐⭐⭐⭐ | 11.9KB
 
 > [!summary] 核心洞察
 > Chromium（3500 万行 C++ 代码）在源码仓库中构建了完整的 AI Agent 基础设施：AI Policy（人类全责）+ 四层 Prompt 分层组合 + 18+ Skills 按需激活 + 三层 Agentic RAG（静态路由表+动态搜索+MCP）+ Eval 回归测试 + Projects 大规模自动化。跨工具复用（Gemini CLI、Claude Code、GitHub Copilot）。
@@ -162,6 +162,8 @@ Projects vs Skills：Skills 粒度为单个任务，Projects 面向长期工程�
 ## 历史积淀
 
 Chromium 的文档从 2015 年开始积累，跨越 11 年，总计 6445 次提交。agents/ 目录于 2025 年 7 月 10 日创建，chromium-docs 核心 Skill 则是 2026 年 1 月由一位微软工程师提交的。
+
+## 深度分析
 
 ### 1. Chromium 集成 AI 编码：浏览器作为开发环境
 Chromium 的 AI 编码开发系统代表了一个趋势：浏览器从内容消费工具转变为开发环境——AI 编码助手直接嵌入浏览器，无需 IDE。

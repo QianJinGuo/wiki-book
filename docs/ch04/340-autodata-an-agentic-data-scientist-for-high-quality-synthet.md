@@ -1,6 +1,6 @@
 # Autodata: An Agentic Data Scientist for High-Quality Synthetic Data
 
-> 📊 Level ⭐⭐⭐⭐ | 5.5KB | `entities/arxiv-2606.25996.md`
+> 📊 Level ⭐⭐⭐⭐ | 5.5KB
 
 > **Background**：arxiv 论文 2606.25996（2026-06-24 首发，25 日 v2 修订），提出 Autodata——一种通用方法，使 AI Agent 充当数据科学家来构建高质量训练和评估数据。作者团队来自 Meta（Jason Weston、Sainbayar Sukhbaatar 等），属于 cs.AI / cs.CL / cs.LG 交叉领域。
 
@@ -34,6 +34,8 @@ Autodata 的核心思想是将数据科学家的全部工作流程——数据�
 
 在所有领域，Autodata 均超越了经典合成数据方法，且 meta-optimization 阶段带来了额外的性能增益。
 
+## 深度分析
+
 ### 为什么 Agentic 数据创建重要
 
 当前 AI 训练面临的核心瓶颈之一是高质量数据的稀缺。Autodata 提供了一条将 **inference compute 转化为 training data quality** 的路径——通过投入更多推理算力让 Agent 创建更好的数据，而非简单地扩大数据规模。这与 Scaling Laws 的传统路径形成互补。
@@ -60,7 +62,7 @@ Autodata 代表了一种新兴范式：**用 Agent 系统生成 Agent 训练数�
 
 ## 相关实体
 
-- [Good Qc For Rl Data](https://github.com/QianJinGuo/wiki-public/blob/main/entities/good-qc-for-rl-data.md)
+- Good Qc For Rl Data
 - [Goodfire Predictive Data Debugging Post Training Anatomy 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/goodfire-predictive-data-debugging-post-training-anatomy-2026.md)
 
 → [原文存档](https://arxiv.org/abs/2606.25996)

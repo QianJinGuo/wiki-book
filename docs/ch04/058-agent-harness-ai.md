@@ -1,6 +1,6 @@
 # 给野马套上缰绳：Agent Harness 工程实践 — 从范式理论到钉钉AI招聘的真实落地
 
-> 📊 Level ⭐⭐ | 7.4KB | `entities/agent-harness-dingtalk-recruitment.md`
+> 📊 Level ⭐⭐ | 7.4KB
 
 > 原文归档：原文归档
 
@@ -9,6 +9,8 @@
 ## 一句话
 
 **钉钉AI招聘的Agent Harness实践案例，从理论到生产的完整落地路径。**
+
+## 核心内容
 
 ### 业务背景
 
@@ -38,6 +40,8 @@
 - **渐进式落地** — 从单一环节开始，逐步扩展
 - **边界情况处理** — 明确定义Agent无法处理的场景
 - **持续优化** — 基于使用反馈不断改进 Harness
+
+## 深度分析
 
 ### 1. Agent = Model + Harness：范式跃迁的核心公式
 

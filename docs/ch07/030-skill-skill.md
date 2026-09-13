@@ -1,6 +1,6 @@
 # 龙虾之父教你省钱：开源Skill给你的Skill减肥
 
-> 📊 Level ⭐⭐⭐ | 5.8KB | `entities/steipete-skill-cleaner-liangzide.md`
+> 📊 Level ⭐⭐⭐ | 5.8KB
 
 > **来源**：量子位（2026-05-26）| 原文存档：[原文存档](https://mp.weixin.qq.com/s/l-6ub0r8g0ppKXSv-VD4QQ)
 
@@ -67,7 +67,7 @@ user happy
 5. **用标准化短词组精简描述**：调试类→debug/inspect/fix；部署类→deploy/release/verify；检索类→search/sync/summarize。
 
 ## 相关实体
-- [Openclaw Prompt Context Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-prompt-context-harness.md)
+- Openclaw Prompt Context Harness
 - [Skill System Design Three Way Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-system-design-three-way-comparison.md)
 - [Openclaw Agent Loop Design Patterns](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-agent-loop-design-patterns.md)
 - [Tencent Skill Writing Complete Playbook Jackjchou](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tencent-skill-writing-complete-playbook-jackjchou.md)

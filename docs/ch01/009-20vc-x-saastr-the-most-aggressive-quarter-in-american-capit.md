@@ -1,6 +1,6 @@
 # 20VC x SaaStr: The Most Aggressive Quarter in American Capitalism, Palantir's Ru
 
-> 📊 Level ⭐ | 11.5KB | `entities/saastr-20vc-most-aggressive-quarter-american-capitalism-palantir.md`
+> 📊 Level ⭐ | 11.5KB
 
 ## 核心要点
 - 20VC x SaaStr 对话，关于美国资本主义的投资动态
@@ -11,6 +11,7 @@
 - Brian Armstrong 宣布 Coinbase 不再需要无法亲自执行的管理者
 → [原文存档](https://www.saastr.com/20vc-x-saastr-the-most-aggressive-quarter-in-american-capitalism-palantirs-rule-of-145-and-why-brian-armstrong-just-killed-the-manager-of-managers/)
 
+## 深度分析
 ### 超大规模资本支出的结构性逻辑
 本文揭示了当前 AI 时代的资本支出逻辑发生了根本性转变。五大科技公司（Google、Microsoft、Amazon、Meta、Apple）在同一周报告财报，合计季度收入 $540B，2026 年 AI 资本支出 $700B。正常情况下，应该是初创公司激进、巨头防御；但这一次，六家最大市值的公司同时宣布"我们也要押注"。这说明 AI 转型已经进入"必须参与"阶段——不是选择问题，而是生存问题。
 

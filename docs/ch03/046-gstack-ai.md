@@ -1,6 +1,6 @@
 # gstack — AI协作开发工作流 & 复杂度棘轮
 
-> 📊 Level ⭐⭐⭐⭐ | 14.2KB | `entities/gstack-ai-workflow.md`
+> 📊 Level ⭐⭐⭐⭐ | 14.2KB
 
 ## gstack
 > YC总裁Garry Tan开源的AI协作开发工作流工具，把Claude Code变成可管理的虚拟工程团队。
@@ -90,6 +90,7 @@ Garry Tan 2026年5月发表的新机制，核心是**让AI写出的代码只进�
 - [让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/enable-kiro-and-claude-code-for-im-with-acp-bridge-async-ai-workflow.md)
 - [Obsidian + Claude Code 集成指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/obsidian-claude-code-integration.md)
 
+## 深度分析
 ### 1. 棘轮机制的本质：从"努力"到"系统"
 Garry Tan提出的Complexity Ratchet回答了一个核心问题：为什么有的团队用AI编程持续产出高质量代码，而有的团队反而被AI引入技术债？
 传统软件工程依赖"人力努力"来维持质量——Code Review、检查清单、设计评审。但这些机制对AI Agent完全不适用：Agent不会因为"已经加班三小时"就停止犯低级错误，也不会因为"这段代码很复杂"就主动请求帮助。

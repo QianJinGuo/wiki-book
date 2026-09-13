@@ -1,6 +1,6 @@
 # StarAgent/Drogo WebTerminal CLI：阿里基础设施把 WebTerminal 变成 Agent 手脚（CLI 才是 Skill 的执行面）
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 20.0KB | `entities/staragent-webterminal-cli-ali-infra-cli-as-agent-hands.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 20.0KB
 
 ## StarAgent/Drogo WebTerminal CLI：阿里基础设施把 WebTerminal 变成 Agent 手脚
 
@@ -253,6 +253,8 @@ Program terminated with signal SIGSEGV, Segmentation fault.
 阿里基础设施团队招 AI 推理 + 高性能计算方向（LLM 推理系统工程、GPU/异构计算、性能研发、多模态推理引擎）。
 
 → [原文存档](https://mp.weixin.qq.com/s/5qwjuSZmENMovuEStczQEg)
+
+## 深度分析
 
 ### 1. 执行面抽象的分层价值
 

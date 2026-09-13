@@ -1,6 +1,6 @@
 # 企业级 Skill 8 块最小骨架 + 8 条 checklist 设计规范
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 24.3KB | `entities/skill-design-spec-8-block-checklist-winty.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 24.3KB
 
 ## 概述
 
@@ -363,6 +363,8 @@ Use when ALL conditions are met:
 | 3 | Skill Hub：组织资产化 | 企业组织视角 |
 | **4** | **Skill 8 块骨架 + 8 条 checklist** | **设计规范/工程化** |
 | 5（下一篇） | Skill 版本管理 | v1 → v2 怎么避免越改越差 |
+
+## 深度分析
 
 ### 3.1 触发条件设计决定 Skill 可用性上限
 

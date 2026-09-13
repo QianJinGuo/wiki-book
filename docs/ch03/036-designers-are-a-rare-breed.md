@@ -1,6 +1,6 @@
 # Designers are a rare breed
 
-> 📊 Level ⭐⭐⭐ | 7.0KB | `entities/designers-are-a-rare-breed.md`
+> 📊 Level ⭐⭐⭐ | 7.0KB
 
 ## 摘要
 设计师在美国劳动力中的占比仅约 0.25%（约每 400 名工作者中有 1 人），而只有 16% 的美国企业把设计作为结构化流程来实践。文章以 Claude Design 等 AI 设计工具的发布为契机，论证 AI 提升的是设计质量的「地板」而非「天花板」：它让从未雇得起设计师的大多数企业首次获得基础设计能力，却无法复制专业设计师经年累月积累的鉴赏力与执行力。对设计师而言，面对新工具的正确反应不是恐惧，而是自信、好奇心与持续进化。
@@ -14,6 +14,7 @@
 - 工具抬高行业地板（floor）但不扁平化天花板（ceiling），最优秀的设计师反而从新工具中获得最多的杠杆、覆盖与影响力
 - 对设计师的忠告：你击败了极小概率才走到今天，保持初学者心态，工具会变，底层能力不会过时
 
+## 深度分析
 ### 稀缺性是结构性的，不是市场失灵
 设计师占比 0.25%、仅 16% 企业结构化实践设计，这两个数字分别来自 BLS（美国劳工统计局）与 NSF/NCES 数据，说明设计稀缺不是短期供需失衡，而是工作本质决定的：设计需要特定知识的长期积累和大量实践次数（reps），无法靠短期培训批量复制。作者在网络安全行业的经历印证了这一点——在技术驱动、设计投入有限的行业里，设计人才始终稀缺，多数团队长期「凑合够用」。
 
@@ -34,7 +35,7 @@ Claude Design 引发的行业焦虑，源于把「设计普及」误读为「设
 5. 保护专业内核：品味、判断力、对用户需求的理解是任何工具无法复制的资产，持续投资它们，其余技术细节可以外包给工具；面对每一代新工具，保持初学者心态重新学习
 
 ## 相关实体
-- [Claude Design Skill](../ch07/032-claude-design-skill.html) —— 将 Claude Design 封装为 Skill 的实践，是「设计普及」工具链的具体形态
+- Claude Design Skill —— 将 Claude Design 封装为 Skill 的实践，是「设计普及」工具链的具体形态
 - [Penpot 与 Claude Design](https://github.com/QianJinGuo/wiki-public/blob/main/entities/penpot-claude-design-not-future-enterprise.md) —— 关于 Claude Design 是否代表企业级设计未来的相反观点，可对照阅读
 - [自由设计师 vs AI 订阅](https://github.com/QianJinGuo/wiki-public/blob/main/entities/freelance-designers-cant-compete-ai-subscription.md) —— AI 订阅制冲击自由设计师市场的另一视角
 - AI UX 设计模式 —— AI 时代交互设计范式的方法论集合

@@ -1,6 +1,6 @@
 # MCP · Skill · Agent · LLM · Harness — 一张图讲清：Agentic AI 系统如何真正落地
 
-> 📊 Level ⭐⭐⭐ | 11.1KB | `entities/agentic-ai-system-architecture-harness-skill-mcp.md`
+> 📊 Level ⭐⭐⭐ | 11.1KB
 
 > 作者：霍旭东（ThinkingInDev），2026-04-29
 
@@ -83,6 +83,8 @@ Skill = 可复用的业务能力封装 = Tool + 语义 + 流程 + 组合能力
 - "从Demo到生产"的分水岭不在模型，而在架构设计
 - LLM负责思考，Agent负责执行，Skill提供能力，MCP连接世界，Harness让一切变得可控
 - 不是一次调用，而是循环收敛
+
+## 深度分析
 
 ### 1. 分层架构是 Agentic AI 系统从 Demo 走向生产的核心约束
 

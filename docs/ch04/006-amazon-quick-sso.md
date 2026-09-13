@@ -1,6 +1,6 @@
 # Amazon Quick 飞书SSO对接指南
 
-> 📊 Level ⭐ | 6.7KB | `entities/amazon-quick-飞书sso对接指南.md`
+> 📊 Level ⭐ | 6.7KB
 
 → [原文存档](https://aws.amazon.com/cn/blogs/china/amazon-quick-sso-integration-guide)
 
@@ -77,7 +77,7 @@ Quick 有两种主要访问形式：
 
 IAM Identity Center 支持通过 SCIM 协议与外部 IdP 自动同步用户和组，但飞书目前不支持 SCIM 协议，无法直接完成自动同步。
 
-针对这一问题，可通过一个 Lambda 函数定期调用飞书开放 API 获取用户和组信息，再调用 IAM Identity Center 的 SCIM 接口完成创建和更新，实现类似原生 SCIM 同步的效果。该方案的具体实现已上传至 [GitHub](<https://github.com/hhhsummer6967/feishu-idp-sync-to-aws>)，供参考。
+针对这一问题，可通过一个 Lambda 函数定期调用飞书开放 API 获取用户和组信息，再调用 IAM Identity Center 的 SCIM 接口完成创建和更新，实现类似原生 SCIM 同步的效果。该方案的具体实现已上传至 GitHub，供参考。
 
 如果只是将 IAM Identity Center作为Quick的用户来源，不希望同步所有企业内用户到 IAM Identity Center，也可以手动在 IAM Identity Center创建用户，只要确保使用企业邮件作为 IAM Identity Center的用户即可。
 
@@ -88,7 +88,7 @@ Quick Web 使用 IAM Identity Center 原生集成方式，与飞书的对接分�
 **第一步：在 IAM Identity Center 中配置飞书为外部 IdP**
 
   * 在飞书开放平台创建企业自建应用，配置为 SAML 应用，下载飞书的 IdP metadata XML
-  * 打开 [IAM Identity Center 控制台](<https://console.aws.amazon.com/singlesignon>) → Settings → Identity source → Actions → Change identity source
+  * 打开 IAM Identity Center 控制台 → Settings → Identity source → Actions → Change identity source
   * 选择 External identity provider，点击 Next
   * 在 Service provider metadata 下，下载 IAM Identity Center 的 SAML metadata 文件，上传到飞书 SAML 应用（配置 ACS URL 和 Entity ID）
   * 在 Identity provider metadata 下，上传飞书的 IdP metadata XML

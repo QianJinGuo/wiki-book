@@ -1,6 +1,6 @@
 # AI Coding Agent Token 成本控制五层模型
 
-> 📊 Level ⭐⭐⭐⭐ | 10.4KB | `entities/token-cost-control-coding-agent-devinyzeng-tencent.md`
+> 📊 Level ⭐⭐⭐⭐ | 10.4KB
 
 > 原文归档：[原文归档](https://mp.weixin.qq.com/s/x8ssQ-trmIqHMPlvQSE9SA)
 
@@ -70,6 +70,8 @@ AI Coding Agent Token 成本优化的完整五层模型：使用习惯→模型�
 
 更低成本 = 更少重复上下文 + 更合理模型路由 + 更精准代码检索 + 更清晰 Agent 分工
 
+## 深度分析
+
 ### 1. 五层模型的本质：从「优化信号」到「优化架构」的递进
 
 五层不是并列清单，而是一条 ROI 与固定投入都逐层抬高的优化阶梯。使用习惯层改的是行为，几乎零基建成本、立竿见影；模型路由层需要一套 routing/预算基础设施；Context 工程层要引入压缩工具链；代码图谱层要搭图数据库与索引；Agent 架构层则要重构整个任务编排方式。每一层恰好命中一种不同的成本来源——习惯治「无意义历史与废 Token」，路由治「贵模型干便宜活」，Context 工程治「同样前缀重复发送」，代码图谱治「每次从零找代码」，Agent 架构治「所有任务塞同一大上下文」。
@@ -105,7 +107,7 @@ RTK / Caveman / headroom / context-mode 站在数据流的不同位置，取舍�
 
 ## 相关实体
 
-- [Harness Engineering](../ch05/019-harness-engineering.html)
+- Harness Engineering
 - [Claw-SWE-Bench](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claw-swe-bench-harness-evaluation-benchmark-tokenrhythm.md) — Pareto 成本分析
 - [快手 RCA Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rca-agent-kuaishou-guo-yongliang-qcon-2026.md) — Workflow 快思考+Agent 慢思考
 - [Skill 版本对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-version-comparison-five-principles-winty.md) — Token/时延门禁

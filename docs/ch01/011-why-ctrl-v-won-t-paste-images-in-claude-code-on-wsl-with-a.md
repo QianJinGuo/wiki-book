@@ -1,6 +1,6 @@
 # Why Ctrl+V won't paste images in Claude Code on WSL, with a fix
 
-> 📊 Level ⭐ | 10.6KB | `entities/rajveerbachkaniwalacom-blog-2026-05-24-on-the-difficulty-of-pasting-a-pic.md`
+> 📊 Level ⭐ | 10.6KB
 
 ## 摘要
 
@@ -13,6 +13,8 @@
 - **静默覆写问题**：手动将 PNG 推送到 Linux 剪贴板后，WSLg 的同步机制会将 Windows 侧的上一次 BMP 覆盖回来，使修复短暂生效后失效。
 - **Windows Terminal 的 Ctrl+V 拦截**：Ctrl+V 在 Windows Terminal 中被底层 ConHost 的 `windowio.cpp` 拦截，不会传递到 WSL 中的程序。
 - **完整的开源解决方案**：采用 clip-listener.exe + wsl-clip-bridge + Alt+V 快捷键的三组件架构，已在 GitHub 开源。
+
+## 深度分析
 
 ### 三层故障链的工程启示
 

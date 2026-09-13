@@ -1,6 +1,6 @@
 # How Claude Code works in large codebases: Best practices and where to start
 
-> 📊 Level ⭐⭐⭐⭐ | 21.0KB | `entities/how_claude_code_works_in_large_codebases.md`
+> 📊 Level ⭐⭐⭐⭐ | 21.0KB
 
 ## 核心要点
 - Claude Code 采用**主动搜索（agentic search）**而非 RAG，在本地运行，直接读取实时代码库，无集中式索引延迟
@@ -80,6 +80,7 @@ Claude 在大型代码库中提供帮助的能力受限于其找到正确上下�
 自下而上的 adoption 产生热情但没有集中化就会碎片化。您需要一个人或一个团队来汇编和推广正确的 Claude Code 约定（如标准化的 CLAUDE.md 层次结构或精选的 skills 和 plugins 集）。没有这项工作，知识将保持部落化，adoption 将停滞。
 在大型组织中，尤其是在受监管行业，治理问题很早就出现，例如：谁控制哪些 skills 和 plugins 可用，如何防止数千名工程师独立重建相同的东西，如何确保 AI 生成的代码经过与人类生成的代码相同的审查流程？为了尽早解决这些问题，我们建议从一组定义的批准 skills、所需的代码审查流程和有限的初始访问开始，随着信心建立而扩展。
 
+## 深度分析
 ### Agentic Search 的本质优势与结构性代价
 Claude Code 采用的 agentic search 路径，本质上是将代码库导航问题转化为了一个**本地化的上下文填充问题**。这与 RAG 范式有根本区别：RAG 在索引侧投入大量计算构建"知识图谱"，在查询侧依赖检索质量；而 agentic search 放弃索引构建的初始投入，选择在每次会话时实时遍历。两种路径的选择实际上反映了不同的工程哲学——RAG 赌的是"索引投资能换来一致的检索质量"，agentic search 赌的是"本地计算足够便宜且代码库结构足够可导航"。
 但这个选择的结构性代价是：**上下文窗口成为硬性瓶颈**。当代码库规模超过一定阈值（文中暗示是"数十亿行"级别），单次搜索的上下文消耗会超过可用窗口。在超大规模代码库中，这不是配置能解决的问题，而是架构层面的约束。文中提到的 edge case——"数十万文件夹和数百万文件"——正是这个代价的体现。这暗示 Claude Code 的设计边界可能比官方宣传的更早到来。

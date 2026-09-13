@@ -1,6 +1,6 @@
 # Claude Code 集成其他工具指南
 
-> 📊 Level ⭐⭐⭐⭐ | 9.4KB | `entities/claude-code-integration-other-tools.md`
+> 📊 Level ⭐⭐⭐⭐ | 9.4KB
 
 ## 概述
 本文系统性整理 Claude Code 与 **Obsidian 以外**的各种工具集成方案，涵盖 MCP 协议扩展、IM 平台操控、IDE 协同、企业级部署集成等多个维度。核心价值在于帮助开发者了解 Claude Code 的生态广度，根据自身场景选择最适合的集成路径。
@@ -92,6 +92,7 @@ Skills 适合封装复杂的工作流经验，如：    ^[entities/obsidian-clau
 | 封装团队经验 | Skills | 版本化、可评审 | 
 | 简单 CLI 操作 | 直接用 Bash | 不要过度工程 | 
 
+## 深度分析
 ### MCP 与 Skills 的哲学差异
 MCP 是"连接协议"，解决的是"如何让 Claude Code talk to X"的问题。Skills 是"经验封装"，解决的是"如何让 Claude Code 更好地做 Y"的问题。
 一个好的 MCP Server 应该是无状态的、幂等的、安全的。一个好的 Skill 应该是包含上下文、示例、错误处理的完整工作单元。
@@ -114,7 +115,7 @@ MCP 是"连接协议"，解决的是"如何让 Claude Code talk to X"的问题�
 
 ## 相关实体
 - [Obsidian + Claude Code 集成指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/obsidian-claude-code-integration.md) — 知识管理工具集成
-- [Claude Code MCP Server](../ch07/043-claude-code-mcp-server.html) — MCP 协议集成
+- Claude Code MCP Server — MCP 协议集成
 - [IMClaw](https://github.com/QianJinGuo/wiki-public/blob/main/entities/imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群.md) — IM 平台操控
 - [OpenClaw 安全增强](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-security-and-feature-enhancement-practices.md) — 自托管 Agent 平台
 - [Kiro + Claude Code](https://github.com/QianJinGuo/wiki-public/blob/main/entities/developing-flink-monitoring-system-on-amazon-emr-with-kiro-ai-ide.md) — AI IDE 协同

@@ -1,6 +1,6 @@
 # 快手 RCA Agent：复杂业务场景下排障 Agent 的探索实践
 
-> 📊 Level ⭐ | 5.4KB | `entities/rca-agent-kuaishou-guo-yongliang-qcon-2026.md`
+> 📊 Level ⭐ | 5.4KB
 
 > 原文归档：[原文归档](https://mp.weixin.qq.com/s/tYGC7iPIEgc4TmRegpOgzw)
 
@@ -88,7 +88,7 @@
 
 ## 相关实体
 
-- [Harness Engineering](../ch05/019-harness-engineering.html)
+- Harness Engineering
 - [Claw-SWE-Bench](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claw-swe-bench-harness-evaluation-benchmark-tokenrhythm.md) — harness 独立评测基准
 - [Skill 版本对比五大原则](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-version-comparison-five-principles-winty.md) — 评估方法论
 - [OpenClaw Agent Loop 设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-agent-loop-design-patterns.md)

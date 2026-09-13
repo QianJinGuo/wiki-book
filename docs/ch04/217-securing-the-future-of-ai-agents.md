@@ -1,6 +1,6 @@
 # Securing the future of AI agents
 
-> 📊 Level ⭐⭐⭐ | 6.0KB | `entities/deepmind-securing-future-ai-agents.md`
+> 📊 Level ⭐⭐⭐ | 6.0KB
 
 > **来源**: deepmind.google
 > **作者**: Rohin Shah, Four Flynn (DeepMind)
@@ -46,6 +46,8 @@ DeepMind 已分析 100 万条 coding agent 任务轨迹，关键发现：
 1. 单个 Agent 级别的安全
 2. 多 Agent 系统的安全
 3. 赋能网络防御者、构建生态韧性
+
+## 深度分析
 
 ### "假设 misalignment" 的安全哲学
 

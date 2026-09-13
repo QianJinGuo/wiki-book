@@ -1,6 +1,6 @@
 # 当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" | 亚马逊AWS官方博客
 
-> 📊 Level ⭐⭐⭐ | 7.4KB | `entities/when-ai-agents-learn-to-forget-amazon-bedrock-agentcore-memory-philosophy.md`
+> 📊 Level ⭐⭐⭐ | 7.4KB
 
 ## 概述
 当 AI Agent 学会"忘记"：Amazon Bedrock AgentCore Memory 的记忆哲学" by awschina on 04 3月 2026 in Case Study Permalink Share 摘要：AI Agent 的记忆管理面临"全记则爆、简删则丢"的困境。Amazon Bedrock AgentCore Memory 通过双层架构（短期事件 + 长期记忆）与 Intelligent Consolidation 机制，实现智能记忆、语义去重和冲突更新。本文解析其四种内置策略（Semantic、User Preference、Summary、Episodic）的工作原理，并通过实战场景验证记忆的智能合并能力。 目录 01 一、引言 02 二、双层架构：素材与知识的分离 03 三、长期记忆内置策略体系 04 四、实战：三个场景验证记忆智能 05 五、进阶能力
@@ -19,6 +19,7 @@ Amazon Bedrock AgentCore、Strands Agent SDK、OpenClaw、MCP Server、AgentCore
 - [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-1.md)
 - [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-4.md)
 
+## 深度分析
 ### 记忆哲学的根本转变
 传统 AI 系统追求"记住更多"，但 AgentCore Memory 带来范式转变：从"存储导向"到"整合导向"。当用户第1天说"预算500美元"，第30天改为"800美元"，第60天用三种措辞表达"喜欢Python"时，没有整合能力的系统会产生信息矛盾和冗余。AgentCore Memory 的核心洞察是：**问题不是记住什么，而是记住什么、忘记什么、以及当新旧信息冲突时该相信谁**。
 

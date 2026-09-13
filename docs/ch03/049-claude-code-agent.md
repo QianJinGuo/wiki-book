@@ -1,6 +1,6 @@
 # 花叔的 Claude Code 多 Agent 用量画像
 
-> 📊 Level ⭐⭐⭐⭐ | 12.4KB | `entities/claude-code-agent-view-huashu.md`
+> 📊 Level ⭐⭐⭐⭐ | 12.4KB
 
 > 花叔：AI 编程进入多 Agent 阶段后，真正稀缺的不是执行力，而是人类的注意力、判断力和调度力。
 [原文存档](https://mp.weixin.qq.com/s/panfFxjQOFdV-RM0KAtUsw) · 作者花叔（huashu）是 AI 编程领域的资深实践者，2024-2025 年在 Twitter/微信社区以深度技术写作著称。
@@ -64,6 +64,7 @@ Agent View 每行状态摘要（如「fix login bug · 3 files changed · awaiti
 | 第三方工具用户 | Agent View 只管 Claude Code；如果单一 vendor 可迁移则价值较高，混用场景下第三方工具仍有存在必要 |
 > **核心警示：别因为派活变简单，就一次派 8 件。AI 派任务的边际成本是 0，你 review 任务的边际成本不是。** 
 
+## 深度分析
 ### 注意力经济视角下的 Agent 基础设施
 花叔的核心论断——「AI 编程进入多 Agent 阶段后，真正稀缺的是人类的注意力、判断力和调度力」——指向了一个尚未被充分讨论的基础设施瓶颈：AI 执行力早已突破人类管理幅度，但人类与 AI 协作的界面层（interface layer）几乎仍是空白。Agent View 是 Anthropic 首次以官方产品形态填补这一缺口的尝试。
 这一判断与 Addy Osmani 的认知并行极限理论形成呼应。Osmani 指出人类操作者在并行 agent 任务中的认知负载存在硬上限——超越 3-4 个并行会话后，错误率急剧上升。花叔的日均 7 个 session、峰值单日 6388 条消息，已经是将人类调度能力压榨到极限的极端样本。这个量级的管理者需要的不是更聪明的 AI，而是一张能够压缩信息密度的仪表盘。Agent View 的三层状态分类（等输入 / 运行中 / 已完成）正是这种信息压缩的实现形式。

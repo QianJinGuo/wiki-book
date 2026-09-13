@@ -1,6 +1,6 @@
 # Production-Ready Autonomous Incident Resolution with AWS DevOps Agent (now GA) and Datadog MCP Server
 
-> 📊 Level ⭐⭐⭐⭐ | 8.2KB | `entities/aws-devops-agent-autonomous-incident-resolution-datadog.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.2KB
 
 ## AWS DevOps Agent × Datadog MCP Server: 生产级自主事件解决
 
@@ -46,6 +46,8 @@ GA 版本引入了预防性分析功能：
 - 在 Improvements 页面运行分析，生成个性化的事件预防建议
 - 分析在后台异步运行，适合具有较长事件历史的生产环境
 - 目标是降低 MTTD（平均检测时间）和 MTTR（平均恢复时间）
+
+## 深度分析
 
 ### MCP 协议在生产监控中的实际应用
 

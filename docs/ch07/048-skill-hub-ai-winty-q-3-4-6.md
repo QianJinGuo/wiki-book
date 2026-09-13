@@ -1,6 +1,6 @@
 # Skill Hub：企业级 AI 经验资产化的关键（组织能力视角）— winty 前端Q 3 篇合集：组织资产 + 质量门禁 4 关 + 生命周期 6 阶段治理
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 41.9KB | `entities/skill-hub-organization-asset-winty.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 41.9KB
 
 ## Skill Hub：企业级 AI 经验资产化的关键（组织能力视角）
 
@@ -225,6 +225,8 @@ description: 前端发版前的标准检查
 - Hermes Agent 官方文档：https://hermes-agent.nousresearch.com/docs/
 - Hermes Agent Skills：https://hermes-agent.nousresearch.com/docs/user-guide/features/skills
 - Anthropic: Building Effective Agents（关于 Workflow vs Agent 与组织级能力沉淀的部分）
+
+## 深度分析
 
 ### 1. "隐形 AI Tax"的本质：组织学习机制的失效
 

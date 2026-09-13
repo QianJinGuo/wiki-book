@@ -1,10 +1,10 @@
 # 从 30 分钟手搓 Agent，到 Harness 成为\"新后端
 
-> 📊 Level ⭐⭐⭐ | 10.2KB | `entities/cong-30-fen-zhong-shou-gu-agent-dao-harness-cheng-wei-xin-hou-duan.md`
+> 📊 Level ⭐⭐⭐ | 10.2KB
 
 ## 从 30 分钟手搓 Agent，到 Harness 成为"新后端"
 架构师（JiaGouX）  我们都是架构师！
-前段时间我们整理过一个demo：《 [ 30分钟手搓 Agent：LLM + Tools + Loop + Memory 跑通最小闭环 ](<https://mp.weixin.qq.com/s?__biz=MzAwNjQwNzU2NQ==&mid=2650409091&idx=1&sn=3c40343aefdf11fdb208588a44033e14&scene=21#wechat_redirect>) 》，我把 Agent 简化成一个很小的循环：
+前段时间我们整理过一个demo：《  30分钟手搓 Agent：LLM + Tools + Loop + Memory 跑通最小闭环  》，我把 Agent 简化成一个很小的循环：
 模型看任务，选择工具，程序执行工具，把结果写回上下文，再进入下一轮。
 
 几十行代码就能跑起来。Demo 通了以后，确实挺有成就感。
@@ -19,6 +19,8 @@
 → [原文存档](https://mp.weixin.qq.com/s/6bKuYLV1E5LGqUEKV0tbtA)
 
 - [yoonho lee: text optimization as a legitimate learning mecha](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yoonho-lee-text-optimization-as-legitimate-learning-mechanism.md)
+
+## 深度分析
 
 ### 三层架构演进：从最小循环到新后端
 

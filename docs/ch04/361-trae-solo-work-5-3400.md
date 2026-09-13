@@ -1,6 +1,6 @@
 # TRAE SOLO Work 模式 + 飞书多维表格：5 步搭建全自动作品采集系统（3400+ 帖子稳定运行）
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 19.5KB | `entities/trae-solo-work-feishu-bitable-pipeline-tutorial.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 19.5KB
 
 ## TRAE SOLO Work 模式 + 飞书多维表格：5 步搭建全自动作品采集系统
 
@@ -223,6 +223,8 @@ forum-crawler/
 - **MD5 指纹 + 增量同步 = 解决全量处理效率问题**
 - "**指数退避 1s→2s→4s→8s**"（限流应对标准模式）
 - **Work 模式展现的意图理解能力和规划能力超强**
+
+## 深度分析
 
 ### 1. AI Agent 工作流的核心矛盾：指令式交互 vs 项目级代码生成
 

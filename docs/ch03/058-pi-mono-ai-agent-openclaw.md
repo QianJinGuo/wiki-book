@@ -1,6 +1,6 @@
 # pi-mono — 模块化 AI Agent 构建平台（OpenClaw 执行引擎核心）
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 14.4KB | `entities/pi-mono.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 14.4KB
 
 ## 项目信息
 | 维度 | 数值 |
@@ -128,6 +128,7 @@ pi-mono 提供了 Agent 底层的 LLM 访问抽象、工具执行引擎和 Sessi
 - 都有 Session/会话管理
 - 但 Hermes 更侧重 Skill 系统和自我进化，pi-mono 更侧重 LLM 层面的抽象和开发者工具链
 
+## 深度分析
 ### 1. 事件流架构的工程价值
 pi-mono 选择**注册表 + 异步迭代器事件流**而非 LangChain 的抽象基类模式，体现了鲜明的工程立场。 异步迭代器天然适合流式输出场景，事件类型标准化（start/text_delta/toolcall_end/done）让上层 UI 和中间件可以统一订阅，无需理解提供商细节。pi-ai 的 stream/complete/streamSimple/completeSimple 四接口设计覆盖了从流式到一次性、从简单到复杂的所有调用模式 。
 
@@ -170,7 +171,7 @@ pi-mono 的流式事件架构天然支持实时 UI 更新（如终端差分渲�
 - **契约未全实现**：prompt/compact/navigateTree/resume/队列操作及部分 hooks/events 仍返回 HarnessNotImplemented——先定"谁保存、谁执行、谁能中断、失败后从哪恢复"的架构契约，再逐步填实现。
 
 ## 相关
-- [Openclaw Prompt Context Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-prompt-context-harness.md) — OpenClaw 架构，pi-mono 是它的 Agent 执行引擎
+- Openclaw Prompt Context Harness — OpenClaw 架构，pi-mono 是它的 Agent 执行引擎
 - [Harness Engineering Systematic Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-systematic-framework.md) — Harness Engineering 框架
 
 ## 相关实体

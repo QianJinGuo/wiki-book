@@ -1,6 +1,6 @@
 # Netflix Live 运营体系：TOC Fleet Model 与 LCC 分层指挥架构
 
-> 📊 Level ⭐⭐⭐ | 9.4KB | `entities/netflix-live-operations-human-infrastructure.md`
+> 📊 Level ⭐⭐⭐ | 9.4KB
 
 > 原文存档：[原文存档](https://netflixtechblog.com/the-human-infrastructure-how-netflix-built-the-operations-layer-behind-live-at-scale-33e2a311c597?source=rss----2615bd06b42e---4)
 
@@ -26,6 +26,8 @@ Netflix 根据事件的预期观众规模和特殊功能将直播分为低中高
 - LOL 四级：Red/Orange/Yellow/Grey，确保资源与风险匹配
 - Big Bet 事件：NFL 圣诞赛等超重要赛事启用专属 BOC，配备高级仪器和专职现场工程师
 - 国际扩展：2026 年 EMEA 运营中心从伦敦启动，实现 24/7 follow-the-sun
+
+## 深度分析
 
 ### 1. 四代演进的核心驱动力：规模 vs 人力效率
 Netflix 直播运营的四代演进（All-Hands→SOE+BOE→1:1 驾驶舱→TOC Fleet）不是技术驱动而是规模驱动的——月均 1 场时工程师值守可行，日均 70 场时必须专职化。TOC Fleet Model 的关键创新是"并发管理"：TCO/SCO 单人 5 并发意味着 10 场同时直播只需 2 TCO + 2 SCO + 10 BCO（1:1），而非 20 个独立操作团队。这与人机协作中的"监督者模式"异曲同工——operator 不做执行细节，只做异常检测和决策。
@@ -63,7 +65,7 @@ LOL 分级的核心价值不是"更快响应"，而是"避免倦怠"——如果
 - [Netflix Metadata Service Model Lifecycle Graph](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-metadata-service-model-lifecycle-graph.md)
 - [Netflix Druid Interval Aware Caching](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-druid-interval-aware-caching.md)
 - [High Throughput Graph Abstraction At Netflix](https://github.com/QianJinGuo/wiki-public/blob/main/entities/high-throughput-graph-abstraction-at-netflix.md)
-- [High Throughput Graph Abstraction At Netflix Part I](084-high-throughput-graph-abstraction-at-netflix-part-i.html)
+- High Throughput Graph Abstraction At Netflix Part I
 - [Netflix Nebula Archrules](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-nebula-archrules.md)
 
 ## 相关引用

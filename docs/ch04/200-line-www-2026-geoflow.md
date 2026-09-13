@@ -1,6 +1,6 @@
 # LINE 论文 WWW 2026 时间检验奖与 GeoFlow：图神经网络十年远征
 
-> 📊 Level ⭐⭐⭐ | 7.5KB | `entities/line-www-test-of-time-award-jiantang-geoflow.md`
+> 📊 Level ⭐⭐⭐ | 7.5KB
 
 > **来源**：机器之心。唐建博士 2015 LINE 论文获 WWW 2026 Test of Time Award，其技术路径从网页图嵌入一路演进至 AI 蛋白质设计平台 GeoFlow。
 > → [原文存档](https://mp.weixin.qq.com/s/DIAgalyLiTmazn5SYkRwrw)
@@ -42,6 +42,8 @@ LINE（2015，图嵌入，7300+ 引用） → RotatE（知识图谱推理） →
 OpenAI GPT-Rosalind、Anthropic 自建湿实验室、DeepMind Isomorphic Labs（$27B 融资）——全球顶尖 AI 实验室向生命科学汇聚。
 
 百奥 Geometry 完成新一轮数亿元战略融资。
+
+## 深度分析
 
 ### 从图嵌入到蛋白质设计的统一理论线索
 

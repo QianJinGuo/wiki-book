@@ -1,6 +1,6 @@
 # Claude Code Routines：从工具到队友的主动 Agent 模式
 
-> 📊 Level ⭐⭐⭐⭐ | 9.9KB | `entities/claude-code-routines-proactive-agent.md`
+> 📊 Level ⭐⭐⭐⭐ | 9.9KB
 
 ## 背景案例：Sarah 的文档困境
 Claude Code 团队每周合并 PR 增长 200%，但负责两个产品文档的工程师 Sarah 工作量也跟着涨——每次代码更新，她需要手动对比变更并逐条补文档。Routines 上线后，她搭了两个 routine：
@@ -67,6 +67,8 @@ Claude 需要访问哪些信息？要连哪些仓库？要不要接 Google Drive
 演示中 Maya 创建了一个 issue，新的 session 立刻跑起来——但发现已有另一个 PR 在处理同样问题。她直接在 session 里告诉 Claude 停下来——Claude 停了。
 
 **核心洞察**：不是不得不盯着它，而是随时可以去管它。这才是 Routines 作为 teammate 而非 tool 的本质区别。
+
+## 深度分析
 
 ### 从工具到队友的范式转变
 Routines 的本质不是功能叠加，而是人机协作模式的根本转变。传统 CLI 工具是"你问它答"的同步交互，Agent 是"你设定目标它执行"的异步委托，而 Routines 则更进一步——**它在你没有主动发起对话时就能感知环境变化并自主行动**。这意味着人类从"任务发起者"变成了"任务的最终审核者"，而非过程中的参与者。

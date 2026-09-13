@@ -1,6 +1,6 @@
 # Zapocalypse: The Attack Chain That Could Have Hijacked Zapier
 
-> 📊 Level ⭐⭐⭐⭐ | 4.0KB | `entities/zapocalypse-the-attack-chain-that-could-have-hijacked-zapier-20260606.md`
+> 📊 Level ⭐⭐⭐⭐ | 4.0KB
 
 → [原文存档](http://www.token.security/blog/zapocalypse-the-attack-chain-that-could-have-hijacked-zapier)
 

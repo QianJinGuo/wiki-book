@@ -1,6 +1,6 @@
 # OpenClaw 与 Claude Code 的 Agent Loop 设计范式
 
-> 📊 Level ⭐⭐⭐ | 10.1KB | `entities/openclaw-agent-loop-design-patterns.md`
+> 📊 Level ⭐⭐⭐ | 10.1KB
 
 > 原文归档：[原文归档](https://mp.weixin.qq.com/s/5Hy4ctKOq8Iq7m2bqy45zQ)
 
@@ -90,6 +90,8 @@ Matt Van Horn 总结了这次研究发现的重要模式：
 1. **一个循环其实相当于 Cron 加上一个决策机制**：每个时间点上，都是模型来决定下一步该执行什么操作，而不是通过硬编码的方式来指定。
 2. **最昂贵的资源从 Token 转移到了循环管理上**：需要限制迭代次数、检测无进展情况，并设定预算上限。
 3. **循环中的可复用单元是技能**，而不是提示词。循环调用明确命名的技能会产生复合效益；而重新生成一切的只是燃烧金钱。
+
+## 深度分析
 
 ### 1. Agent Loop：AI agent 的核心执行模式
 OpenClaw 的 agent loop 设计模式总结了 AI agent 执行任务的核心循环：感知→推理→行动→观察。不同 loop 模式（单步、多步、递归、并行）适用于不同场景。

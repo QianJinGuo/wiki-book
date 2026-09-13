@@ -1,6 +1,6 @@
 # AI-Infra-Auto-Driven-SKILLS v0.1.0：给 Codex / Claude Code 的推理框架工作流
 
-> 📊 Level ⭐⭐⭐ | 9.0KB | `entities/ai-infra-auto-driven-skills-v0-bbuf-giantpanda.md`
+> 📊 Level ⭐⭐⭐ | 9.0KB
 
 > -> [原文存档](https://mp.weixin.qq.com/s/DSMMP9sA5ngHh0nRoBwfIg)
 
@@ -27,6 +27,8 @@ BBuf 在 GiantPandaLLM 发文介绍 AI-Infra-Auto-Driven-SKILLS v0.1.0——将�
 | sglang/vllm-sota-humanize-loop | 固定 workload 下追 SOTA 性能 |
 | sglang-prod-incident-triage | 线上 incident 先提取 replay 再 debug |
 | model-pr-optimization-history | 本地知识记录，复用历史 PR 思路 |
+
+## 深度分析
 
 ### 1. 工程纪律转化为可执行工作流
 

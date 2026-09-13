@@ -1,9 +1,10 @@
 # AI tool poisoning exposes a major flaw in enterprise agent security
 
-> 📊 Level ⭐⭐⭐ | 9.5KB | `entities/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security-v2.md`
+> 📊 Level ⭐⭐⭐ | 9.5KB
 
 > -> [原文存档](https://venturebeat.com/security/ai-tool-poisoning-exposes-a-major-flaw-in-enterprise-agent-security)
 
+## 深度分析
 ### 根本性缺陷：元数据与指令边界的崩塌
 文章揭示了一个企业 AI Agent 架构中的根本性设计漏洞：Agent 的工具选择引擎（tool selection reasoning engine）将注册表中的自然语言描述直接作为语义输入处理。这意味着工具发布者提供的描述文本，实际上会成为影响 Agent 决策的指令。
 这是一个**元数据（metadata）与指令（instruction）的边界崩塌**问题。传统软件安全中，代码签名、SLSA、SBOM 等护栏保护的是 artifact 本身的完整性——即"这个 artifact 是否与其描述相符"。但这些机制完全无法验证"这个 artifact 的行为是否与其描述相符"。

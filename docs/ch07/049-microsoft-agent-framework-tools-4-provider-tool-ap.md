@@ -1,6 +1,6 @@
 # Microsoft Agent Framework Tools 总览：4 类工具 + Provider 矩阵 + Tool Approval
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 26.7KB | `entities/microsoft-agent-framework-tools-overview-provider-matrix.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 26.7KB
 
 ## Microsoft Agent Framework Tools 总览
 
@@ -255,6 +255,8 @@ print(result.text)
 - **Agent → Function Tool 桥接 = 分层委派（与 Workflow 的确定性图编排不同，更偏模型自主路由）**
 - **外层每次 as_tool() 调用都会产生完整子 Agent run，注意延迟与 Token 成本**
 - **强顺序、强事务、必须 checkpoint 的流程应改用 Workflow**
+
+## 深度分析
 
 ### 1. Provider 矩阵的实质：运行时能力 vs 代码可 import 性的落差
 

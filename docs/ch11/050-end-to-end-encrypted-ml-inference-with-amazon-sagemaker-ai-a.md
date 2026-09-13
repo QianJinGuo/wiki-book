@@ -1,12 +1,12 @@
 # End-to-end encrypted ML inference with Amazon SageMaker AI and FHE
 
-> 📊 Level ⭐⭐⭐ | 13.5KB | `entities/end-to-end-encrypted-ml-inference-sagemaker-fhe.md`
+> 📊 Level ⭐⭐⭐ | 13.5KB
 
 > **Source archive**: [原文存档](https://aws.amazon.com/blogs/machine-learning/end-to-end-encrypted-ml-inference-with-amazon-sagemaker-ai-and-fhe)
 
 ## End-to-end encrypted ML inference with Amazon SageMaker AI and FHE
 
-Machine learning (ML) inference often requires processing sensitive data—medical records, proprietary business information, or personal communications. What if you could run ML inference in the cloud while hiding your data from the cloud itself? More specifically, what if you could enforce that your data stayed encrypted throughout the entire ML inference process? This post will show you how to use [Amazon SageMaker AI](<https://aws.amazon.com/sagemaker/ai/>) with fully homomorphic encryption (FHE) to perform ML inference. Using FHE, we present an approach to ML inference that’s designed to keep queries, responses, and intermediate values encrypted and unreadable by observers—including SageMaker AI itself.
+Machine learning (ML) inference often requires processing sensitive data—medical records, proprietary business information, or personal communications. What if you could run ML inference in the cloud while hiding your data from the cloud itself? More specifically, what if you could enforce that your data stayed encrypted throughout the entire ML inference process? This post will show you how to use Amazon SageMaker AI with fully homomorphic encryption (FHE) to perform ML inference. Using FHE, we present an approach to ML inference that’s designed to keep queries, responses, and intermediate values encrypted and unreadable by observers—including SageMaker AI itself.
 
 FHE is a form of encryption that allows encrypted data to be processed in encrypted form without decryption. In the ML inference setting, you can use it to apply a model to an encrypted query without decryption, producing an encrypted prediction. Consider these scenarios where such a capability would provide value:
 
@@ -14,7 +14,7 @@ FHE is a form of encryption that allows encrypted data to be processed in encryp
   * **Energy sector** : An oil and gas corporation uses ML to evaluate satellite photos of potential drill sites and select photos for further expert evaluation. They want to host the model in the cloud for cost savings but can’t expose photographs of politically sensitive locations to third parties.
   * **Telecommunications** : A telecom operator wants to process customer emails to detect spam and phishing. They need cloud-based ML for scalability, but data protection regulations require that customer messages remain encrypted at third parties.
 
-This blog has previously discussed FHE for ML inference in the post [Enable fully homomorphic encryption with Amazon SageMaker endpoints for secure, real-time inferencing](<https://aws.amazon.com/blogs/machine-learning/enable-fully-homomorphic-encryption-with-amazon-sagemaker-endpoints-for-secure-real-time-inferencing/>), but this post goes a little further. That previous post showed how to implement FHE-based inference ‘from scratch’ by hand-crafting a linear-regression algorithm using a low-level library called [SEAL](<https://www.microsoft.com/en-us/research/project/microsoft-seal/>). Instead, this post shows a much more flexible and higher-level approach based on [concrete-ml](<https://docs.zama.org/concrete-ml>), a high-level library built specifically for FHE-based inference. It supports several common types of models ‘out of the box’ and is even API compatible with the well-known ML library scikit-learn.
+This blog has previously discussed FHE for ML inference in the post Enable fully homomorphic encryption with Amazon SageMaker endpoints for secure, real-time inferencing, but this post goes a little further. That previous post showed how to implement FHE-based inference ‘from scratch’ by hand-crafting a linear-regression algorithm using a low-level library called SEAL. Instead, this post shows a much more flexible and higher-level approach based on concrete-ml, a high-level library built specifically for FHE-based inference. It supports several common types of models ‘out of the box’ and is even API compatible with the well-known ML library scikit-learn.
 
 In this post, you will learn how to:
 
@@ -37,21 +37,21 @@ Using concrete-ml in SageMaker AI works as follows:
   6. The model transforms the encrypted query into an encrypted prediction without decrypting values during the FHE computation.
   7. The model returns the encrypted response to the client, who decrypts it to retrieve the prediction.
 
-This differs from, and complements, confidential computing environments like those provided by the Amazon Web Services (AWS) [Nitro System](<https://aws.amazon.com/ec2/nitro/>) in [Amazon Elastic Compute Cloud (Amazon EC2)](<https://aws.amazon.com/ec2/>). With AWS Nitro Enclaves, queries are decrypted and processed in plaintext within hardened, isolated environments that provide CPU and memory isolation. With FHE, queries remain encrypted throughout; security relies on mathematics rather than hardware or software.
+This differs from, and complements, confidential computing environments like those provided by the Amazon Web Services (AWS) Nitro System in Amazon Elastic Compute Cloud (Amazon EC2). With AWS Nitro Enclaves, queries are decrypted and processed in plaintext within hardened, isolated environments that provide CPU and memory isolation. With FHE, queries remain encrypted throughout; security relies on mathematics rather than hardware or software.
 
 ## Prerequisites
 
 To implement this solution, you need:
 
-  * A local development environment with [Python](<https://www.python.org/>) 3.12 installed, the ability to install packages using [pip](<https://pip.pypa.io/en/stable/>), and [Docker](<https://www.docker.com/>) or other container-building software installed locally. In addition, these instructions will recommend that you work in [virtual environments](<https://virtualenv.pypa.io/en/latest/>), but this isn’t strictly necessary.
+  * A local development environment with Python 3.12 installed, the ability to install packages using pip, and Docker or other container-building software installed locally. In addition, these instructions will recommend that you work in virtual environments, but this isn’t strictly necessary.
   * An AWS account, containing: 
-    * Repositories in [Amazon Elastic Container Registry (Amazon ECR)](<https://aws.amazon.com/ecr/>) to hold the images for training and inference containers,
-    * Locations in [Amazon Simple Storage Service (Amazon S3)](<https://aws.amazon.com/s3/>) to hold: 
+    * Repositories in Amazon Elastic Container Registry (Amazon ECR) to hold the images for training and inference containers,
+    * Locations in Amazon Simple Storage Service (Amazon S3) to hold: 
       * The model
       * The training code (if you wish it to be stored in a separate bucket from the model)
       * Keys and ciphertexts
 
-We suggest you follow the [security best practices for Amazon S3](<https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-best-practices.html>).
+We suggest you follow the security best practices for Amazon S3.
 
   * Roles in AWS Identity and Access Management (IAM) for 
     * The model creator
@@ -60,6 +60,8 @@ We suggest you follow the [security best practices for Amazon S3](<https://docs.
     * The clients
 
 Find IAM policies for these roles, along with a worked example for the [MNIST corpus of handwritten digits,](https://www.kaggle.com/datasets/hojjatk/mnist-dataset) in the repository of [sample code.](https://github.com/aws-samples/sample-end-to-end-encrypted-ml-inference-with-amazon-sagemaker-ai-and-fhe/tree/main)
+
+## 深度分析
 
 ### 1. 数学安全与硬件安全的根本性差异
 FHE 的安全性建立在纯数学基础上，而非依赖硬件隔离。与 AWS Nitro Enclaves 等机密计算环境不同，FHE 下查询在整个推理过程中始终保持密文状态——即使 SageMaker AI 本身也无法访问明文数据。这意味着防御边界不涉及 CPU 或内存隔离，而是密码学本身。两者可互补使用，形成分层防护体系。
@@ -96,7 +98,7 @@ Concrete-Ml 在训练阶段仍使用 plaintext 数据，训练流程与标准 sk
 文章指出 Concrete-ML 对原型验证和非商业用途免费，但商业部署需要商业许可。企业用户在评估成本时，应将 Zama 商业许可费用纳入 TCO 计算，并与合规团队确认数据处理 jurisdiction 是否对加密方案有特定要求。
 
 ## 相关实体
-- [Build Real Time Voice Applications With Amazon Sagemaker Ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-real-time-voice-applications-with-amazon-sagemaker-ai.md)
+- Build Real Time Voice Applications With Amazon Sagemaker Ai
 - [Fine Tune Llm With Databricks Unity Catalog And Amazon Sagemaker](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fine-tune-llm-with-databricks-unity-catalog-and-amazon-sagemaker.md)
 - [Real Time Voice Agents With Stream Vision Agents And Amazon Nova 2 Sonic](https://github.com/QianJinGuo/wiki-public/blob/main/entities/real-time-voice-agents-with-stream-vision-agents-and-amazon-nova-2-sonic.md)
 - [Amazon Bedrock Cross Region Inference Cris Eu Gdpr](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-cross-region-inference-cris-eu-gdpr.md)

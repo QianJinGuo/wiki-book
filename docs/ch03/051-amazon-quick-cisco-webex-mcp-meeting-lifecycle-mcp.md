@@ -1,6 +1,6 @@
 # Amazon Quick + Cisco Webex MCP 会议准备与跟进助手：meeting-lifecycle MCP 编排实战
 
-> 📊 Level ⭐⭐⭐⭐ | 10.3KB | `entities/amazon-quick-cisco-webex-mcp-meeting-prep-followup-assistant.md`
+> 📊 Level ⭐⭐⭐⭐ | 10.3KB
 
 ## Amazon Quick + Cisco Webex MCP 会议准备与跟进助手
 
@@ -16,6 +16,8 @@
 - **OAuth scope 分层防御**：read-only scopes (`meeting:schedules_read`, `spark:messages_read`) 默认开启；write scopes (`meeting:schedules_write`, `spark:messages_write`) 必须 **opt-in + 显式 user confirmation + 限定 non-production space**——agent 不会自动 post message 到 Webex space
 - **prep brief 5 段固定结构**：upcoming agenda + prior decisions/action items + related Vidcast updates + unresolved follow-ups + recommended Vidcast watch-next——确保 cross-shift handoff 一致性
 - **扩展面**：同一个 agent 可以叠加 100+ pre-built action connector（Slack / Outlook / Jira / ServiceNow / Salesforce）+ enterprise data source（S3 / Drive / SharePoint / Confluence），从 meeting 工具演变成 team productivity hub
+
+## 深度分析
 
 ### 与现有 Amazon Quick 实体的差异化
 

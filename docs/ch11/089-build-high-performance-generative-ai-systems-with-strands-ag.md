@@ -1,6 +1,6 @@
 # Build high-performance generative AI systems with Strands Agents + NVIDIA NIM + Bedrock AgentCore
 
-> 📊 Level ⭐⭐⭐ | 9.1KB | `entities/strands-agents-high-performance-genai-systems.md`
+> 📊 Level ⭐⭐⭐ | 9.1KB
 
 > **Background**: AWS 官方博客展示如何用 NVIDIA NIM (GPU 加速推理) + Strands Agents (多 Agent 编排) + Bedrock AgentCore (托管 runtime / 共享 memory / 可观测性) 构建生产级多 Agent 内容审核系统。
 
@@ -109,12 +109,14 @@ GitHub: `aws-samples/sample-agentic-genai-agentcore/aws-genai-campaign-review-st
 - [Bedrock Agentcore Coding Agent Hosting](https://github.com/QianJinGuo/wiki-public/blob/main/entities/bedrock-agentcore-coding-agent-hosting.md)
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](https://github.com/QianJinGuo/wiki-public/blob/main/entities/building-multi-tenant-agents-with-amazon-bedrock-agentcore.md)
 - [Control Where Your Ai Agents Can Browse With Chrome Enterprise Policies On Amazo](https://github.com/QianJinGuo/wiki-public/blob/main/entities/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazo.md)
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/148-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
+- Building A Secure Auth Code Flow Setup Using Agentcore Gatew
 - [Aws 一周综述Amazon Bedrock Agentcore 付款适用于 Aws 的 Agent 工具套件等2026 年 5 月 11 日](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-一周综述amazon-bedrock-agentcore-付款适用于-aws-的-agent-工具套件等2026-年-5-月-11-日.md)
 
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/build-high-performance-generative-ai-systems-with-strands-agents-nvidia-nim-and-amazon-bedrock-agentcore/)
 
 - [aws bedrock agentcore 多账户对话式运维助手：基于 strands agents + devops](https://github.com/QianJinGuo/wiki-public/blob/main/entities/基于-amazon-bedrock-agentcore-与-aws-devops-agent-打造对话式多账户运维助手.md)
+
+## 深度分析
 
 ### 分离式架构的性能收益
 

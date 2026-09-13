@@ -1,6 +1,6 @@
 # Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering
 
-> 📊 Level ⭐ | 5.7KB | `entities/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md`
+> 📊 Level ⭐ | 5.7KB
 
 > 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.8**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/karpathy-最新访谈从-vibe-coding-到-agentic-engineering.md`，一手来源仍见下方 sources。
@@ -8,7 +8,7 @@
 ## 机制与论文
 - [一文带你弄懂 AI 圈爆火的新概念：Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md) — 13141字最全科普版
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](https://github.com/QianJinGuo/wiki-public/blob/main/entities/深入理解-claude-code-源码中的-agent-harness-构建之道.md) — 16095字源码8步循环
-- [Harness Engineering Deletable Worksite Ruofei](../ch05/039-harness-engineering-deletable-worksite-ruofei.html) — 可删工作现场：Vercel删80%工具成功率反升
+- Harness Engineering Deletable Worksite Ruofei — 可删工作现场：Vercel删80%工具成功率反升
 - [从零构建大语言模型 —— 读完这篇你就懂了](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-llm-from-scratch-7-chapters-zion.md) — LLM教程七章
 - [Google Agentic RAG 跨语料库框架：充分上下文智能体 + 5 阶段管线](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-cambrian-google-agentic-rag-sufficient-context-cross-corpus-20260606.md) — 充分上下文RAG框架
 - [Introducing 1-bit and Ternary Bonsai Image 4B: Image Generation for Local Devices](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-1-bit-and-ternary-bonsai-image-4b-image-generati-352fe9.md) — 1-bit/ternary量化图像生成规格
@@ -40,7 +40,7 @@
 
 ## 关联
 
-- 同题异语种孪生页：[Karpathy Vibe Coding Agentic Engineering](268-karpathy-vibe-coding-agentic-engineering.html)（归并候选，提案卡 #11 批1）
+- 同题异语种孪生页：Karpathy Vibe Coding Agentic Engineering（归并候选，提案卡 #11 批1）
 
 ---
 

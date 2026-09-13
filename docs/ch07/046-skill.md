@@ -1,6 +1,6 @@
 # Skill 版本管理五大原则：从越改越差到持续演进
 
-> 📊 Level ⭐⭐⭐⭐ | 8.2KB | `entities/skill-version-management-semantic-versioning-practices-winty.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.2KB
 
 > 原文归档：[原文归档](https://mp.weixin.qq.com/s/weA8CMZBI9B295tNft10WQ)
 
@@ -108,6 +108,8 @@ Skill 版本管理最关键的不是工具，而是组织里有没有"把 Skill 
 共识立起来后，工程化都不难：语义化版本是现成的，diff 工具可以基于结构化解析做，评估测试集可以从调用日志里采样，灰度策略可以基于 feature flag。
 
 如果共识没立起来，工程做得再好也没用。
+
+## 深度分析
 
 ### 1. Skill 语义化版本管理
 Skill 版本管理引入语义化版本（semver）——major（不兼容变更）、minor（向后兼容的新功能）、patch（bug 修复）。这使 skill 的依赖关系可管理、可追踪。

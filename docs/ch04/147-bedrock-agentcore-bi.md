@@ -1,6 +1,6 @@
 # Bedrock AgentCore 构建 BI 智能体
 
-> 📊 Level ⭐⭐⭐ | 9.8KB | `entities/build-ai-agents-for-business-intelligence-with-amazon-bedrock-agentcore.md`
+> 📊 Level ⭐⭐⭐ | 9.8KB
 
 ## 核心要点
 
@@ -9,7 +9,7 @@
 - 来源：AWS Machine Learning Blog
 
 ## 相关实体
-- [Building Ai Agents For Business Support Using Amazon Bedrock](091-building-ai-agents-for-business-support-using-amazon-bedrock.html)
+- Building Ai Agents For Business Support Using Amazon Bedrock
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](https://github.com/QianJinGuo/wiki-public/blob/main/entities/building-multi-tenant-agents-with-amazon-bedrock-agentcore.md)
 - [Build Ai Powered Dashboard Automation Agents With Nlp On Amazon Bedrock Agentcor](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-ai-powered-dashboard-automation-agents-with-nlp-on-amazon-bedrock-agentcor.md)
 - [Integrating Aws Api Mcp Server With Amazon Quick Suite Using Amazon Bedrock Agen](https://github.com/QianJinGuo/wiki-public/blob/main/entities/integrating-aws-api-mcp-server-with-amazon-quick-suite-using-amazon-bedrock-agen.md)
@@ -74,6 +74,8 @@ AgentCore Runtime 支持零到数千会话的自动扩缩，OPLOG 仅为实际�
 **创新技术**：使用 AgentCore Browser 进行社交媒体发现，自动处理 Web 导航、JavaScript 渲染和内容提取，无需自建爬虫基础设施 。
 
 **分析维度**：覆盖六个社交媒体环境（Instagram、LinkedIn、Facebook、YouTube、Twitter、TikTok），应用 ICP（理想客户画像）资质方法论评估线索匹配度 。
+
+## 深度分析
 
 ### 为什么此案例具有行业代表性
 

@@ -1,6 +1,6 @@
 # CISA Admin Leaked AWS GovCloud Keys on Github
 
-> 📊 Level ⭐⭐⭐⭐ | 8.8KB | `entities/cisa-admin-leaked-aws-govcloud-keys-on-github.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.8KB
 
 ## 事件概述
 
@@ -18,6 +18,8 @@ CISA 发言人表示已获悉该事件并持续调查，同时声称"目前没�
 - 仓库由 Nightwing 公司员工创建，CISA 在人员削减背景下发生此事件（损失近三分之一员工）
 - GitHub 默认启用的 secrets 检测功能被管理员主动禁用
 - 仓库下架后，AWS 密钥仍持续有效 48 小时
+
+## 深度分析
 
 ### 1. 人为失误与制度失效的叠加效应
 

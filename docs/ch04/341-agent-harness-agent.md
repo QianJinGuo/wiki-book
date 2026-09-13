@@ -1,6 +1,6 @@
 # Agent Harness 架构设计与实现：生产级 Agent 系统落地指南
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 39.3KB | `entities/agent-harness-architecture-design-production-guide.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 39.3KB
 
 ## 1. 核心定义与演进脉络
 
@@ -298,6 +298,8 @@ Claude Code 源码泄露揭示了 12 个可复用的设计模式 ，分为四类
 - **分支-合并并行** 就是 MapReduce 的思路
 
 Agent 架构本质上是在用新的载体解决计算科学已经解决过的问题。
+
+## 深度分析
 
 ### 1. Harness Engineering 是 AI 工程化的第三次范式跃迁
 
@@ -615,7 +617,7 @@ class RecoveryManager:
 → [ETCLOVG Survey (CMU 2026)](https://picrew.github.io/LLM-Harness/paper.pdf)
 
 - [Versa Takes Aim At Fragmented Enterprise Security With Cspm Orchestration Updat](https://github.com/QianJinGuo/wiki-public/blob/main/entities/versa-takes-aim-at-fragmented-enterprise-security-with-cspm-orchestration-updat.md)
-- [k-dense — the model is no longer the bottleneck](286-k-dense-the-model-is-no-longer-the-bottleneck.html)
+- k-dense — the model is no longer the bottleneck
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/security-privacy-landscape.md)
 
 ---

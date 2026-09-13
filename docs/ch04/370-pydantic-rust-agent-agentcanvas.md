@@ -1,6 +1,6 @@
 # Pydantic 早就不只是校验了——Rust 引擎 + 可观测 + Agent 类型约束（含 agentcanvas 可视化补充）
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 15.8KB | `entities/pydantic-three-piece-suite-yunduo.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 15.8KB
 
 > -> **Pydantic早就不只是校验了——Rust引擎 + 可观测 + Agent 类型约束**
 
@@ -12,6 +12,8 @@
 - Logfire 基于 OpenTelemetry 标准，一行代码拿到 Agent 全链路 span 树，支持 SQL 查询 trace，可做漂移检测与成本监控
 - Pydantic AI 把类型系统从「事后校验器」变成「事前约束器」——类型直接约束 Agent 的 tool 行为空间与输出格式
 - 三件套按场景按需添加：只校验 → 加 strict + forbid；排障慢 → 加 Logfire；多 tool Agent → 用 Pydantic AI
+
+## 深度分析
 
 ### 校验对象的范式转移：从「稳定」到「漂移」
 

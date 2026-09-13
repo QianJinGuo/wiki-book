@@ -1,6 +1,6 @@
 # Agentic Resource Discovery (ARD) Specification
 
-> 📊 Level ⭐⭐⭐⭐ | 8.6KB | `entities/agentic-resource-discovery-specification-snowflake.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.6KB
 
 ## 摘要
 
@@ -50,6 +50,8 @@
 ```
 
 三者互补而非竞争——ARD 解决 "找谁"，A2A 解决 "怎么对话"，MCP 解决 "怎么调工具"。
+
+## 深度分析
 
 ### 企业 AI 的 "最后一公里"
 

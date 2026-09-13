@@ -1,6 +1,6 @@
 # Stripe Financial Compliance AI Agent: Production Lessons
 
-> 📊 Level ⭐⭐⭐⭐ | 8.8KB | `entities/stripe-financial-compliance-ai-agent-production-lessons.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.8KB
 
 Stripe 在 AWS Bedrock 上构建生产级合规审查 Agent 系统，处理年 $1.4 万亿支付量的合规审查需求。核心成果：审查处理时间减少 26%，帮助率超 96%，人类审查者保持最终决策权。
 
@@ -80,6 +80,8 @@ Amazon Bedrock 的 prompt caching 通过复用跨 Agent 轮次的公共 prompt �
 1. **ReAct 闭环控制**的生产实现细节（Thought→Tool→Observation 注入模式）
 2. **Agent vs 传统 ML 基础设施分离**的决策论证（网络密集 vs 计算密集）
 3. **LLM Proxy 模式**的噪声隔离 + 模型降级设计
+
+## 深度分析
 
 ### DAG 任务分解 vs 单体 Agent 的架构权衡
 

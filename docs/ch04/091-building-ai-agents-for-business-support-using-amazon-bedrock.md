@@ -1,6 +1,6 @@
 # Building AI agents for business support using Amazon Bedrock
 
-> 📊 Level ⭐⭐⭐ | 19.9KB | `entities/building-ai-agents-for-business-support-using-amazon-bedrock.md`
+> 📊 Level ⭐⭐⭐ | 19.9KB
 
 > **Summary**: 使用Amazon Bedrock构建企业业务支持AI Agent的架构与实现指南
 
@@ -77,6 +77,8 @@ Through these improvements, we optimized costs while successfully handling more 
 - 应用场景: 企业可观测性、业务支持自动化、云端支持
 
 ---
+
+## 深度分析
 
 ### 1. LangGraph 到 Strands Agents 的迁移动因与多智能体架构演进
 

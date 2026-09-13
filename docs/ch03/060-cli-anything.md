@@ -1,6 +1,6 @@
 # CLI-Anything
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 8.0KB | `entities/cli-anything.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 8.0KB
 
 ## Overview
 CLI-Anything 是由 HKUDS 实验室（香港大学数据科学实验室）开源的 Agent 工具扩展框架，Stars 32.4k（GitHub），核心目标是将**任意软件**转化为 AI Agent 可调用的标准化 CLI 工具。
@@ -81,6 +81,7 @@ cli-hub install <name>
 ```
 覆盖范围：Blender/GIMP/Krita/FreeCAD/QGIS/OBS Studio/Shotcut/UniMol Tools/Zotero/Obsidian/Stable Diffusion WebUI/ComfyUI/Ollama 等。
 
+## 深度分析
 ### 设计哲学：软件eating向的范式转换
 CLI-Anything 背后是一个根本性的范式判断：**未来软件的主要用户将是 AI Agent 而非人类**。HKUDS 实验室提出的口号 "Today's Software Serves Humans, Tomorrow's Users will be Agents" 精准地捕捉了这一趋势。CLI-Anything 的本质是将这一愿景落地为可操作的工程框架。
 
@@ -118,7 +119,7 @@ HKUDS 通过 CLI-Anything 建立了在 Agent Tools 领域的技术影响力，St
 ### 4. 多 Agent 协作中的工具标准化
 在  和 CLI-Anything 的生态中，多个 Agent 协同时面临的挑战是工具的一致性问题。标准化是解决协作复杂度的关键——当所有 Agent 都通过统一的 SKILL 接口调用工具时，工具的提供方无需感知调用者是哪个 Agent。
 
-## 与 [Hermes-Agent](059-hermes-agent.html) 的关系
+## 与 Hermes-Agent 的关系
  支持通过 Skill 机制调用外部 CLI 工具，CLI-Anything 正是此类工具的重要来源之一。
 
 ## Related

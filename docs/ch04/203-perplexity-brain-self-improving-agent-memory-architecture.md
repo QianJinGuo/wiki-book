@@ -1,6 +1,6 @@
 # Perplexity Brain: Self-improving Agent Memory Architecture
 
-> 📊 Level ⭐⭐⭐ | 7.4KB | `entities/perplexity-brain-self-improving-memory.md`
+> 📊 Level ⭐⭐⭐ | 7.4KB
 
 Perplexity Brain（2026年6月发布）是一个自改进 agent 记忆系统，核心创新在于将记忆从"用户画像"转向"工作记忆"，并通过递归自改进循环持续提升 agent 表现。
 
@@ -40,6 +40,8 @@ Brain 的自改进机制：
 | 更新方式 | 异步反思（过夜） | 实时写入 | 训练时更新 |
 | 自改进 | ✅ 递归循环 | ❌ 静态 | ⚠️ 需重训练 |
 | 跨会话 | ✅ 持久图 | ✅ 向量库 | ✅ 参数持久 |
+
+## 深度分析
 
 ### "工作记忆"vs"用户记忆"是 Agent 记忆范式的根本分野
 

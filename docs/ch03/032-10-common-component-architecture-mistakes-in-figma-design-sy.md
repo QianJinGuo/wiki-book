@@ -1,6 +1,6 @@
 # 10 Common Component Architecture Mistakes in Figma Design Systems
 
-> 📊 Level ⭐⭐⭐ | 7.6KB | `entities/10-common-component-architecture-mistakes-in-figma-design-systems.md`
+> 📊 Level ⭐⭐⭐ | 7.6KB
 
 ## 核心要点
 - Newsletter article, source: https://zeroheight.com/blog/10-common-component-architecture-mistakes-in-figma-design-systems/

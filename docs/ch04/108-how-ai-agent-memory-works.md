@@ -1,6 +1,6 @@
 # How AI Agent Memory Works
 
-> 📊 Level ⭐⭐⭐ | 13.1KB | `entities/how-ai-agent-memory-works.md`
+> 📊 Level ⭐⭐⭐ | 13.1KB
 
 ## 记忆的类型
 

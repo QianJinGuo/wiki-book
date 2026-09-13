@@ -1,6 +1,6 @@
 # Hermes Agent Eval Harness：可验证 Skill 进化的 7 模块闭环（TaskSet/HarnessAdapter/TrajectoryStore/Verifier/Selection Gate/Regression Gate/Report & Replay + 6 类 Verifier + 3 类 Regression + 6 阶段落地路径）
 
-> 📊 Level ⭐⭐⭐⭐ | 27.0KB | `entities/sota-ai-hermes-agent-eval-harness-skillopt-implementation.md`
+> 📊 Level ⭐⭐⭐⭐ | 27.0KB
 
 ## Hermes Agent Eval Harness：可验证 Skill 进化的 7 模块闭环
 
@@ -10,7 +10,7 @@
 
 ## 一、定位：从 SkillOpt 学术到 Eval Harness 工程
 
-[Skillopt](../ch05/055-skillopt.html)（Microsoft + SJTU SkillOpt 论文 arxiv 2605.23904）提出了"把 SKILL.md 当成冻结模型之外的可训练状态"——通过 rollout、bounded edits 和 held-out validation gate 优化 agent skills。但 SkillOpt 学术框架在生产环境落地需要完整的工程实施：
+Skillopt（Microsoft + SJTU SkillOpt 论文 arxiv 2605.23904）提出了"把 SKILL.md 当成冻结模型之外的可训练状态"——通过 rollout、bounded edits 和 held-out validation gate 优化 agent skills。但 SkillOpt 学术框架在生产环境落地需要完整的工程实施：
 
 1. **轨迹采集**：没有完整执行轨迹，reflection 只能看结果，无法诊断失败
 2. **可比较分数**：不同任务需要不同 verifier（精确/产物/执行/轨迹/策略/Judge）
@@ -245,7 +245,7 @@ regression_failures | rejection_reason | review_notes
 
 | 实体 | 关系 | 互补角度 |
 |---|---|---|
-| [Skillopt](../ch05/055-skillopt.html) | **SkillOpt 学术理论** | Microsoft + SJTU SkillOpt 训练范式（121 行）：把 SKILL.md 当可训练状态、bounded edits、held-out validation gate；本文是其在 Hermes Agent 的工程实施蓝图 |
+| Skillopt | **SkillOpt 学术理论** | Microsoft + SJTU SkillOpt 训练范式（121 行）：把 SKILL.md 当可训练状态、bounded edits、held-out validation gate；本文是其在 Hermes Agent 的工程实施蓝图 |
 | [Skillopt Microsoft Train Skill Like Neural Network](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skillopt-microsoft-train-skill-like-neural-network.md) | **SkillOpt 产品视角** | 别再手写 Skill！像神经网络一样训练（58 行）：SkillOpt 产品介绍 |
 | [Skillopt Microsoft Train Skill Hyman'S Blog](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skillopt-microsoft-train-skill-hyman's-blog.md) | **SkillOpt Hyman 视角** | 微软等 SkillOpt 解读（64 行） |
 | [Hermes Agent Skill Crossover Optimization](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-skill-crossover-optimization.md) | **Hermes Skill 互优化** | SkillEvolver × Darwin × EmbodiSkill 4 轮闭环（277 行）— Skill 之间的相互优化 |
@@ -253,7 +253,7 @@ regression_failures | rejection_reason | review_notes
 | [Agent Self Improvement Six Mechanisms](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-self-improvement-six-mechanisms.md) | **6 大自改进机制** | Agent 自改进的 6 大机制 |
 | [Ai Recursive Self Improvement Nanogpt Prime Intellect](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-recursive-self-improvement-nanogpt-prime-intellect.md) | **递归自改进** | nanogpt + Prime Intellect |
 | [Darwin Skill 2 Huashu](https://github.com/QianJinGuo/wiki-public/blob/main/entities/darwin-skill-2-huashu.md) | **Darwin Skill 2** | Darwin Skill 进化 |
-| [Embabel](../ch07/014-embabel.html) | **Embabel** | Embabel 自进化框架 |
+| Embabel | **Embabel** | Embabel 自进化框架 |
 | [Pith Train Agent Native Moe Training Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/pith-train-agent-native-moe-training-framework.md) | **Pith 训练框架** | Agent 原生 MoE 训练 |
 | [Hermes Agent 12 Layer Full Configuration Guide](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-12-layer-full-configuration-guide.md) | **Hermes 12 层配置** | Hermes Agent 12 层完整配置 |
 | [Hermes 9 Module Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-9-module-architecture.md) | **Hermes 9 模块** | Hermes 9 模块架构 |

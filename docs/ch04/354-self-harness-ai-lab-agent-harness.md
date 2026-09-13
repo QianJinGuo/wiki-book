@@ -1,6 +1,6 @@
 # Self-Harness：上海AI Lab 提出的 Agent 自我改进 Harness 范式
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 23.4KB | `entities/self-harness-shanghai-ai-lab-agent-improves-harness.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 23.4KB
 
 > 本实体整理自 [原文存档](https://mp.weixin.qq.com/s/sgP8m1nnW7JhsDT7Ki7nVw)，并参考 Shanghai AI Lab 论文 *Self-Harness: Harnesses That Improve Themselves*（https://arxiv.org/abs/2606.09498 ）。
 
@@ -175,6 +175,8 @@ Self-Harness 真实运行更像**分支搜索**，会有平台期和回撤。绿
 - **编辑后 Harness**：增加 tool-error 触发的系统 Prompt，把 Agent 拽回"补产物"主线
 - **结果**：重建 extractor、修正解析逻辑、校验 JSON、确保文件在位——**这是 Middleware 级干预，比堆叠礼貌用语管用得多**
 
+## 深度分析
+
 ### 1. Self-Harness 与 L6 Meta-Harness 的关系
 
 [L6 Meta-Harness 编排自优化](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-self-improvement-six-mechanisms.md) 是 [Agent 自我改进六层模型](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-self-improvement-loops.md) 的最顶层，强调"Big Harness > Big Model"。Stanford 的 Meta-Harness 用 **Claude Code + Opus 4.6** 迭代优化 Harness（强模型改弱模型），7 轮迭代把文本分类推到比 ACE 高 7.7 个百分点。
@@ -274,7 +276,7 @@ Self-Harness 把自己定位在**"可控、可审计"**的一端：每次 Harnes
 - [AI 自我改进自举](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/ai-self-improvement-bootstrapping.md)
 - [Evaluation Harness Design](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/evaluation-harness-design.md)
 - [Verifier-Driven Development](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/verifier-driven-development.md)
-- [SGLang](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sglang.md) — Qwen3.5 部署用到的推理引擎
+- SGLang — Qwen3.5 部署用到的推理引擎
 - [DeepAgent 架构演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tmic-ai-xiaoxin-deepagent-architecture-evolution.md) — 初始 Harness 基于 DeepAgent SDK
 - [ByteDance TRAE Harness Engineering Guide](https://github.com/QianJinGuo/wiki-public/blob/main/entities/bytedance-trae-harness-engineering-guide.md)
 - [复旦 AHE Agentic Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fudan-agentic-harness-engineering-ahe-gpt54-7points.md)

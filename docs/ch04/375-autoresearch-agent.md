@@ -1,6 +1,6 @@
 # AutoResearch 分类法：四种 Agent 循环设计与四维分析框架
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 15.3KB | `entities/autoresearch-taxonomy-chengzihong-chengzihong.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 15.3KB
 
 → [原文存档](https://zhuanlan.zhihu.com/p/2037184827225527815)
 
@@ -20,6 +20,8 @@
 - **UCB 平衡利用与探索**：在树搜索中，UCB(node) = 平均收益 + C × sqrt(ln(总访问次数) / 该节点访问次数) 解决"贪婪策略导致其他子树被饿死"的问题。
 - **GEPA 的关键创新**：用文本反馈取代标量奖励驱动突变——LLM 阅读完整执行轨迹后归因原因、提出针对性修改。
 - **CORAL 的去中心化**：通过文件系统实现共享记忆（attempts/、notes/、skills/），无显式通信协议——Agent 通过符号链接按需读取避免上下文过载。
+
+## 深度分析
 
 ### 一、为什么"Agent Loop 设计"是研究效率竞争的本质
 
@@ -145,7 +147,7 @@
 ## 相关实体
 
 - [Yann Dubois Openai Post Training Matt Turck Interview](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yann-dubois-openai-post-training-matt-turck-interview.md)
-- [What Comes Next With Open Models](../ch01/390-what-comes-next-with-open-models.html)
+- What Comes Next With Open Models
 - [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 - Multi-Agent Orchestration
 - **Monte Carlo Tree Search**

@@ -1,6 +1,6 @@
 # MiniMax M3 开源 Frontier 模型
 
-> 📊 Level ⭐⭐⭐⭐ | 10.0KB | `entities/minimax-m3-frontier-open-source-model.md`
+> 📊 Level ⭐⭐⭐⭐ | 10.0KB
 
 > [!summary] 核心洞察
 > MiniMax M3 是国内首个同时具备 Coding Frontier + 1M 上下文 + 原生多模态的开源模型。三大技术主线：MSA 稀疏注意力解决百万 token 可用化、原生多模态统一 token 空间、交互式用户模拟器实现从单轮代码生成到长期协作的训练范式变化。
@@ -87,6 +87,8 @@
 
 官方坦诚：与 Opus 4.7、GPT-5.5 仍存在差距。
 
+## 深度分析
+
 ### 1. MSA 工程化突破的意义
 
 MSA 的核心创新不是"稀疏"这个算法概念本身，而是把稀疏之后的两个工程难题同时摆上台面：稀疏之后能不能找准，以及找准之后能不能高效算。 这两个问题分别由 KV 分块和 KV 外层聚合解决。
@@ -127,8 +129,8 @@ MiniMax M3 的三件套不是功能堆砌，而是一个系统能力的三个接
 - [Claude Code Open Source Model Enterprise Practice](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-open-source-model-enterprise-practice.md)
 - [Tencent Hunyuan Hy3 Preview Open Source Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tencent-hunyuan-hy3-preview-open-source-agent.md)
 - [Cline Open Source Agent Runtime Sdk](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cline-open-source-agent-runtime-sdk.md)
-- [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](../ch01/008-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.html)
-- [How Open Model Ecosystems Compound](../ch01/379-how-open-model-ecosystems-compound.html)
+- Opensquilla Launches Open Source Ai Agent To Cut Token Costs
+- How Open Model Ecosystems Compound
 
 - [minimax token调用第一后：agentos现实与模型厂商的系统适配挑战](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentos-minimax-forge-model-adaptation-yaoge.md)
 

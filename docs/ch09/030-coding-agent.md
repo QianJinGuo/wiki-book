@@ -1,6 +1,6 @@
 # Coding Agent在百度的落地实践：从反馈闭环到工程范式重构
 
-> 📊 Level ⭐⭐⭐ | 12.6KB | `entities/baidu-comate-coding-agent-feedback-loop-wanpeng.md`
+> 📊 Level ⭐⭐⭐ | 12.6KB
 
 ## 核心结论
 
@@ -41,6 +41,8 @@
 - DeepSeek XML→FC案例：框架在旧体系自洽，新模型下不可用
 - Spec Driven已过时（模型解析力太强）
 - GPT喜欢用命令行（Sed/Cat）→不要压制，看异常发现它真正喜欢什么
+
+## 深度分析
 
 ### 双层Loop的工程本质
 

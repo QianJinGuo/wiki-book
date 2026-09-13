@@ -1,6 +1,6 @@
 # Bitter Lesson vs Garbage Can：组织理论视角下的 AI 采用
 
-> 📊 Level ⭐⭐⭐ | 9.1KB | `entities/bitter-lesson-garbage-can-mollick.md`
+> 📊 Level ⭐⭐⭐ | 9.1KB
 
 > 2026-06-07 引用自 Ethan Mollick《The Bitter Lesson versus The Garbage Can》，One Useful Thing，2025-07-28。
 
@@ -44,6 +44,8 @@ OpenAI 用强化学习训练 AI**直接评价最终结果质量**，而非教 AI
 **Bitter Lesson 路线**：跳过理解过程，直接定义好结果（什么是好的销售报告/客户互动），然后训练 AI 产出它。AI 会找到穿过组织混乱的自己的路径，可能比人类演化的半正式路径更高效但更不透明。
 
 如果 Bitter Lesson 成立，Garbage Can 依然存在，但竞争基础变了——定义质量的能力比梳理流程更重要。
+
+## 深度分析
 
 ### 1. 组织理论与 AI 采用的根本冲突
 Garbage Can Model 揭示了组织内在的混乱本质：未成文规则、定制化知识、复杂且无文档的流程是关键瓶颈。传统自动化要求明确的规则和定义的流程，而这恰恰是 Garbage Can 组织所缺乏的。但 Bitter Lesson 提供了一个根本性的重构思路：与其试图理解混乱，不如直接定义输出质量，让 AI 自己找到穿越组织迷宫的路径。这意味着从"流程理解"转向"结果定义"的能力竞赛。

@@ -1,6 +1,6 @@
 # Agent-EvalKit：AWS 开源 CLI Agent 评测工具包
 
-> 📊 Level ⭐⭐⭐⭐ | 16.5KB | `entities/agent-evalkit-aws-opensource-cli-agent-eval-toolkit.md`
+> 📊 Level ⭐⭐⭐⭐ | 16.5KB
 
 > 原文存档：[原文存档](https://aws.amazon.com/blogs/machine-learning/evaluate-ai-agents-systematically-with-agent-evalkit)
 
@@ -95,6 +95,7 @@ Agent-EvalKit 团队在 Strands Agents SDK + Bedrock 旅行研究 agent 上跑 1
 - [基于浏览器请求录制与ai代码生成的e2e接口自动化测试实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/browser-request-recording-ai-code-generation-e2e-api-testing.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/evaluation-and-benchmarks.md)
+## 深度分析
 
 ### 核心观点：AI 编码助手作为评测引擎是新范式
 

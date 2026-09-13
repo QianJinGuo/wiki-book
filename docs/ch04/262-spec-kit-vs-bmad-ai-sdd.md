@@ -1,6 +1,6 @@
 # Spec-Kit vs BMAD：AI 原生 SDD 双框架实战对比（叶小钗重构迁移案例）
 
-> 📊 Level ⭐⭐⭐⭐ | 16.0KB | `entities/spec-kit-bmad-sdd-practice-yexiaocha.md`
+> 📊 Level ⭐⭐⭐⭐ | 16.0KB
 
 > 原文存档：[原文存档](https://mp.weixin.qq.com/s/Lpsl52F_oiFwMBDV7dL8RQ)
 
@@ -119,6 +119,8 @@ Spec-Kit 基础流程在多仓项目里不够用——主仓沉淀需求，前�
 - [Ai Native Team Building Failures Ceo Digital Twin Case](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-native-team-building-failures-ceo-digital-twin-case.md) — 叶小钗 16.8KB 旧文，深度讲 AI 原生团队组织建设的"脏乱差"（CEO 数字分身失败案例 / AI 销售线索分配兴衰）。本实体是"**SDD 双框架在重构迁移项目**的实战"，那个是"**AI 原生团队组织建设**的失败教训"；同作者同主题不同场景。
 - [Spec As Aios Anti Entropy Architecture Gaode Ai Native Series 2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/spec-as-aios-anti-entropy-architecture-gaode-ai-native-series-2.md) — 高德 AI 原生系列第 2 篇：Spec 作为 AIOS 抗熵增架构。本实体是 SDD 流程工具对比，那个是 Spec 作为架构概念的延伸。
 
+## 深度分析
+
 ### 1. SDD 双框架互补公式的深层含义
 
 叶小钗总结出「Spec-Kit 拉上限 / BMAD 拉下限」互补公式，本质上揭示了 AI 原生研发的两种不同路线：**能力放大** vs **风险兜底**。Spec-Kit 要求团队自身具备完善基建和规范，适合已经处于高成熟度状态的团队；BMAD 通过内置多角色 Agent 补足团队缺失，适合刚起步或角色缺失严重的小团队。这个公式对团队选型具有重要指导意义：不要盲目追求「最强工具」，而要判断「我的团队当前最缺什么」。
@@ -164,7 +166,7 @@ Spec-Kit 的顺序流程（specify → plan → tasks → implement）在多仓�
 ## 相关主题
 
 - AI 原生团队 — [Agent Evolution Four Stages Six Dimensions Aliyun](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-evolution-four-stages-six-dimensions-aliyun.md) / [Agent Skills Teams Architecture Evolution Selection Guide](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skills-teams-architecture-evolution-selection-guide.md)
-- 多 Agent 圆桌协作 — [Openclaw Multi Agent Team Practice V2](348-openclaw-multi-agent-team-practice-v2.html)
+- 多 Agent 圆桌协作 — Openclaw Multi Agent Team Practice V2
 - 规格驱动开发概念 — [Ai Agent Exploration Path Legacy Tech](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-exploration-path-legacy-tech.md)
 - AI Coding Agent 评测 — [Harness Engineered Business Agent Evaluation Aliyun Boyu](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineered-business-agent-evaluation-aliyun-boyu.md)
 

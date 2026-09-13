@@ -1,6 +1,6 @@
 # Hermes Agent 记忆系统深度拆解
 
-> 📊 Level ⭐ | 4.9KB | `entities/hermes-agent-memory-system-vs-openclaw.md`
+> 📊 Level ⭐ | 4.9KB
 
 > 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.8**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/hermes-agent-memory-system-vs-openclaw.md`，一手来源仍见下方 sources。
@@ -10,14 +10,14 @@
 - [17种Agent架构演进：控制流设计的完整演化史](https://github.com/QianJinGuo/wiki-public/blob/main/entities/17-agent-architectures-evolution.md) — 17架构系统拆解高价值
 - [AI Agent 架构设计（七）：Skills 系统设计（OpenClaw、Claude Code、Hermes Agent 对比）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-system-design-three-way-comparison.md) — 三框架skill系统设计对比
 - [Coding Harness 工程本质：从 Pi 到 OpenClaw](https://github.com/QianJinGuo/wiki-public/blob/main/entities/pi-openclaw-coding-harness.md) — Harness八能力+五工程模式：Context像投影8441字rv9
-- [Context Window Management Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-window-management-comparison.md) — 四框架对比rv9
+- Context Window Management Comparison — 四框架对比rv9
 - [800行代码实现 Open Claw 的 Tool、消息总线、子Agent管理架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/open-claw-tool-bus-subagent-architecture.md) — 薄抽象显式控制流8802字rv9全版
 - [Hermes Agent 闭环学习机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-closed-learning-loop.md) — 闭环学习飞轮+Nudge触发+spawn_background_review
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-prompt-context-harness.md) — 三维度源码：23模块拼装+自适应分块+双层Memory
-- [How AI Agent Memory Works](108-how-ai-agent-memory-works.html) — 记忆五层+六架构权衡科普
+- 深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践 — 三维度源码：23模块拼装+自适应分块+双层Memory
+- How AI Agent Memory Works — 记忆五层+六架构权衡科普
 - [Skill 系统：Agent 如何把经验沉淀成可复用能力](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-skill-system-winty.md) — Memory vs Skill本质区别7749字最全版
 - [Hermes Agent 为什么火了？和 OpenClaw 龙虾比一比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-vs-openclaw-comparison.md) — 爱马仕vs龙虾：控制面vs成长型定位对比
-- [Gepa Optimize Anything](../ch01/432-gepa-optimize-anything.html) — ASI+Pareto前沿，声明式通用文本优化API
+- Gepa Optimize Anything — ASI+Pareto前沿，声明式通用文本优化API
 - [Hermes自进化完整闭环：Skill创建复用修补链路](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-self-evolution-closed-loop-skill-reuse-winty.md) — 6阶段闭环+npm案例12→9→6步
 - [AI Agent Gateway 架构设计 — OpenClaw/Claude Code/Hermes 三框架对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gateway-architecture-openclaw-claude-hermes-comparison.md) — 三框架Gateway哲学横向对比，源码级细节
 - [nanobot：4000行极简 Agent 框架架构解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nanobot-agent-framework-architecture-deep-dive.md) — 3935行vs LangChain 43万行的极简哲学

@@ -1,6 +1,6 @@
 # Nvidia Agentic AI Subsurface Engineering
 
-> 📊 Level ⭐⭐⭐ | 8.1KB | `entities/nvidia-agentic-ai-subsurface-engineering.md`
+> 📊 Level ⭐⭐⭐ | 8.1KB
 
 > -> [原文存档](https://developer.nvidia.com/blog/24-7-simulation-loops-how-agentic-ai-keeps-subsurface-engineering-moving/)
 ## Agentic AI for Subsurface Engineering Simulation (NVIDIA)
@@ -12,6 +12,7 @@
 ## 来源
 [原文存档（NVIDIA Developer Blog）](https://developer.nvidia.com/blog/24-7-simulation-loops-how-agentic-ai-keeps-subsurface-engineering-moving/)
 ---
+## 深度分析
 ### Agentic AI 在工业仿真的范式意义
 这篇 NVIDIA 博客代表了 Agentic AI 从"对话式助手"向"工业级自主控制系统"的实质性延伸。在油气地下工程（subsurface engineering）场景中，传统的工作流是**专家驱动、手动执行、间歇性运行**的：工程师手动聚合数据、手动启动仿真、手动分析结果，仿真任务完成后还需等待工程师处理——这在 off-hours 期间形成了显著的dead time（停机等待时间）。
 Agentic AI 的介入将这一范式转变为：**持续运转、传感器驱动、自动纠正**的闭环系统。工程师从"执行者"转变为"战略监督者"（strategic supervisory role），只在高层方向上进行介入，而 Agent 负责全部执行。这与软件工程领域的 Agentic Coding 演进路径高度一致——都是人从"操作者"变为"审核者"。
@@ -43,7 +44,7 @@ NVIDIA 将 subsurface 仿真整合到 Omniverse（工业数字化平台）和 DR
 2. **DRIVE 生态的类比扩展路径**：DRIVE 是自动驾驶的仿真平台，Omniverse 是通用工业仿真平台。两者在 Agentic AI 方向的演进路径可能相互借鉴——例如 DRIVE 中的场景感知 → Omniverse 中的物理场感知
 ---
 ## 相关实体
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](297-tencent-vibe-coding-to-agentic-engineering-backend.html)
+- 从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程
 - [AI 时代 Git 版本管理 — Agentic Coding 最佳实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-era-git-version-control-agentic-coding-practices.md)
 - Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-agentic-engineering-v3.md)

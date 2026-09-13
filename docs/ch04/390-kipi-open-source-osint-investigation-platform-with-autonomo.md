@@ -1,6 +1,6 @@
 # Kipi: Open-source OSINT Investigation Platform with Autonomous Agent
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 9.3KB | `entities/kipi-osint-autonomous-agent-investigation.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 9.3KB
 
 ## 摘要
 
@@ -72,6 +72,8 @@ kipi 的核心理念："The machine proposes. You decide."
 - Agent 自主完成重复性调查工作（DNS 查询、WHOIS 查找、证书检查）
 - 分析师保持最终权威：确认、修正或拒绝每个发现
 - 人机分工：机器做广度（穷举关联），人类做深度（判断意义）
+
+## 深度分析
 
 ### Agent 架构在情报分析中的应用
 

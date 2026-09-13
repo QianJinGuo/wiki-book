@@ -1,6 +1,6 @@
 # 阿里巴巴 Aone Agentic 研发模式变革
 
-> 📊 Level ⭐⭐⭐⭐ | 24.1KB | `entities/alibaba-aone-agentic-rd-mode-xiangbangyu.md`
+> 📊 Level ⭐⭐⭐⭐ | 24.1KB
 
 ## 一、在 Agent 时代，传统的"协作"和"分工"是效率的阻碍
 2025 年，AI 编程助手已进化为"AI 软件工程师"，但"Vibe Coding"生产力悖论正在浮现：Agent 生成代码的速度呈指数级增长，组织的整体研发效率却提升有限。问题不在于 AI 的能力，而在于我们仍用工业时代的协作模式来组织 AI 时代的研发。
@@ -156,7 +156,7 @@ ChangeSet 是一个存在于git版本库中的，把每次变更的过程都记�
 **作者介绍**：向邦宇，在阿里工作超过10年，负责了阿里巴巴代码平台，在阿里内部建设了多个 AI Coding 工具，这些产品在阿里内部被广泛使用，同时也面向业界主导开发了一站式的，小白用户也能用 AI Development产品"搭叩"。
 
 ## 相关实体
-- [Tencent Vibe Coding To Agentic Engineering Backend](297-tencent-vibe-coding-to-agentic-engineering-backend.html)
+- Tencent Vibe Coding To Agentic Engineering Backend
 - [Ai 编程的下一场架构迁移从代码检索到上下文操作](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-编程的下一场架构迁移从代码检索到上下文操作.md)
 - [Ai Era Git Version Control Agentic Coding Practices](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-era-git-version-control-agentic-coding-practices.md)
 - [Agentmemory Source Analysis Coding Agent Local Memory](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentmemory-source-analysis-coding-agent-local-memory.md)

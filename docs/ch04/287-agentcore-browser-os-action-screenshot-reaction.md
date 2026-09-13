@@ -1,6 +1,6 @@
 # AgentCore Browser OS级操作：Action-Screenshot-Reaction闭环
 
-> 📊 Level ⭐⭐⭐⭐ | 12.6KB | `entities/aws-bedrock-agentcore-os-level-actions-browser.md`
+> 📊 Level ⭐⭐⭐⭐ | 12.6KB
 
 ## 核心内容
 Amazon Bedrock AgentCore引入OS-level Actions，允许Agent直接操控GUI界面——通过Action-Screenshot-Reaction闭环实现浏览器自动化。8个原子操作覆盖鼠标、键盘、截图等OS层交互，Agent通过视觉反馈（截图）感知环境状态并决定下一步操作。
@@ -15,6 +15,7 @@ Amazon Bedrock AgentCore引入OS-level Actions，允许Agent直接操控GUI界�
 ### 3. Browser作为Agent的感知-执行界面
 浏览器是Agent最常用的"物理世界代理"——可访问任何web应用。结合OS-level Actions，Agent获得了与人类等价的浏览器操作能力，但速度和规模远超人类。
 
+## 深度分析
 ### OS层与Web层的能力边界
 AgentCore Browser早期基于Playwright和CDP（Chrome DevTools Protocol）构建，擅长操作DOM元素——页面导航、表单填写、元素点击、内容提取均属此类。但Web层存在硬边界：任何操作系统渲染的UI（原生对话框、安全提示、证书选择器、右键菜单、浏览器设置页）均位于DOM之外，CDP无法触及，Playwright无法交互。
 OS Level Actions通过`InvokeBrowser` API突破这一边界，将鼠标/键盘控制能力延伸至操作系统层，结合全桌面截图实现真正的"感知-决策-执行"闭环。
@@ -86,7 +87,7 @@ r = invoke(endpoint, sid, {"mouseClick": {"x": 410, "y": 535, "button": "LEFT"}}
 
 ## 相关实体
 - [Introducing OS Level Actions in Amazon Bedrock AgentCore Browser](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-os-level-actions-in-amazon-bedrock-agentcore-browser.md)
-- [AgentCore质量优化飞轮：推荐-验证-部署闭环](../ch11/095-aws-bedrock-agentcore-quality-optimization-flywheel.html)
+- AgentCore质量优化飞轮：推荐-验证-部署闭环
 - [AgentCore Identity: 3-legged OAuth+Session Binding的安全架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-agentcore-identity-security.md)
 - [Doris MCP on AgentCore Runtime: VPC原生MCP部署模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-agentcore-doris-mcp-server.md)
 - [基于Bedrock AgentCore+Strands构建企业级智能搜索平台实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/building-enterprise-level-with-bedrock-agentcore-and-strands.md)

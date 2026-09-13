@@ -1,6 +1,6 @@
 # AI Agent工具数量陷阱——5个边界清楚的工具胜过20个模糊工具
 
-> 📊 Level ⭐⭐⭐⭐ | 9.7KB | `entities/ai-agent-tool-count-trap.md`
+> 📊 Level ⭐⭐⭐⭐ | 9.7KB
 
 ## AI Agent工具数量陷阱
 > "5个边界清楚的工具胜过20个模糊工具"
@@ -67,6 +67,7 @@
 > "工具的价值不在数量，在于：模型在需要它的时候能准确找到它，在不需要它的时候不会误用它。"
 这个认知边界，目前约5-10个。
 
+## 深度分析
 ### 1. 工具数量上限的本质是认知带宽限制
 Anthropic的5-10个工具建议并非随意设定，而是基于模型注意力机制的硬约束。当工具描述超过这个数量，模型在选择工具时会产生显著的决策噪声。这解释了为什么在演示环境中表现良好的99工具配置，在真实部署中反而导致准确率下降——不是模型能力问题，是上下文负载超出了模型的认知处理能力。
 
@@ -109,7 +110,7 @@ Anthropic案例中，模型无故在搜索查询加"2025"，根本原因是工�
 ## 相关实体
 - [Cat Wu — Anthropic Claude Code/Cowork产品负责人](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cat-wu-claude-code-pm.md)
 - [claude-code-agent-view](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-agent-view.md)
-- [Claude Code vs OpenClaw Agent 记忆系统对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-openclaw-memory-comparison.md)
+- Claude Code vs OpenClaw Agent 记忆系统对比
 - [Claude Opus 4.7 发布分析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-opus-4-7-launch.md)
 - [IMClaw：通过微信/飞书操控ClaudeCode/Codex/GeminiCLI/Pi Agent蜂群](https://github.com/QianJinGuo/wiki-public/blob/main/entities/imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群.md)
 - [Anthropic 官方技能最佳实践：14 个可复用的 Agent Skills 设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-官方技能最佳实践14-个可复用的-agent-skills-设计模式.md)

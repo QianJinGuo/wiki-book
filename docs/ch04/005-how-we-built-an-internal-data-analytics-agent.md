@@ -1,6 +1,6 @@
 # How we built an internal data analytics agent
 
-> 📊 Level ⭐ | 7.0KB | `entities/github-internal-data-analytics-agent-copilot.md`
+> 📊 Level ⭐ | 7.0KB
 
 > 原文存档：[原文存档](https://github.blog/ai-and-ml/github-copilot/how-we-built-an-internal-data-analytics-agent/)
 

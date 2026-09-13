@@ -1,6 +1,6 @@
 # CLI Agent 模式：MCP 与 Shell Agent
 
-> 📊 Level ⭐⭐⭐ | 8.1KB | `entities/cli-agent-patterns-mcp-shell-agents.md`
+> 📊 Level ⭐⭐⭐ | 8.1KB
 
 ## 摘要
 
@@ -14,6 +14,8 @@ CLI Agent 是以命令行界面为交互载体的智能体形态，其核心在�
 - **CLI 天然适合 Agent**：无头、可脚本化、输出结构化、支持管道与退出码，比 GUI 更容易被程序化驱动，也更便于评测与回放。
 - **代表实践**：Claude Code、Codex CLI 等将 MCP 工具调用与 Shell 编排结合，形成"读代码→改代码→跑测试→看结果"的闭环。
 - **可靠性是工程分水岭**：超时、重试、退出码语义、沙箱隔离决定了 CLI Agent 能否从 demo 走向生产环境。
+
+## 深度分析
 
 ### MCP 协议：工具调用的标准化接口
 

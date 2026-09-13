@@ -1,6 +1,6 @@
 # Claude Code 从 Demo 到产线 · 企业 Harness 工程化的 8 道关卡（黄佳/咖哥 CSDN）
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 18.8KB | `entities/claude-code-demo-to-production-8-gates-huang-jia-csdn-2026.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 18.8KB
 
 ## 核心定位
 
@@ -180,6 +180,7 @@ Haiku (60%) → Sonnet (30%) → Opus (10%)
 → [原文存档](https://mp.weixin.qq.com/s/K4c-lFJFjF5ouTXKxw5Shg)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/memory-context-systems.md)
+## 深度分析
 
 ### 核心洞察：Harness 是比模型更大的变量
 

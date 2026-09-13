@@ -1,6 +1,6 @@
 # Agent Harness Engineering: A Survey
 
-> 📊 Level ⭐⭐⭐ | 19.0KB | `entities/agent-harness-engineering-survey-2026.md`
+> 📊 Level ⭐⭐⭐ | 19.0KB
 
 Agent Harness Engineering: A Survey
 Junjie Li, Xi Xiao, Yunbei Zhang, Chen Liu, Lin Zhao, Xiaoyying Liao, Yingrui Ji, Janet Wang, Jianyang Gu, Yingqiang Ge, Weijie Xu, Xi Fang, Xiang Xu, Tianchen Zhao, Youngeun Kim, Tianyang Wang, Jihun Hamm, Smita Krishnaswamy, Jun Huan, Chandan K. Reddy

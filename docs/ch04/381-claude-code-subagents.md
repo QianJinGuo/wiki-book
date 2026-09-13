@@ -1,6 +1,6 @@
 # Claude Code Subagents 深度指南：上下文卫生实战
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 12.3KB | `entities/claude-code-subagents-context-hygiene.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 12.3KB
 
 ## "Claude Code Subagents 深度指南：上下文卫生实战"
 ## Claude Code Subagents 深度指南：上下文卫生实战
@@ -111,6 +111,7 @@ Subagent 正好挡住了其中一类污染：那些必须做、但做完之后�
 - Kaxil Naik，I Haven't Written a Line of Code in 4 Months，2026-03-27
 - Metabase，How we built ten custom subagents to tame a 500K-line Clojure codebase，2026-04-16
 
+## 深度分析
 ### Subagent 的本质是"上下文垃圾填埋场"
 从工程角度看，Subagent 解决的不是"并行化"问题，而是**上下文新陈代谢**问题。Claude Code 文章揭示了一个关键洞察：长会话变脏的根本原因是探索阶段的低密度内容（搜索结果、日志、目录列表）和高密度决策事实在 compaction 时被混在一起压缩，导致关键信息被噪音稀释。
 Subagent 的价值在于它充当了一个**有损压缩前的预处理层**：把"脏活"隔离在外，主窗口只接收已被子代理提炼过的结论。这比在主会话内部做 compaction 更干净，因为 compaction 本质上是在噪音里找信号，而 Subagent 是在噪音产生之前就把它扔掉了。

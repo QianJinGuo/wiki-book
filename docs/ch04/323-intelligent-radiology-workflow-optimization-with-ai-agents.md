@@ -1,6 +1,6 @@
 # Intelligent radiology workflow optimization with AI agents
 
-> 📊 Level ⭐⭐⭐⭐ | 8.7KB | `entities/intelligent-radiology-workflow-optimization-with-ai-agents.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.7KB
 
 ## 核心要点
 
@@ -12,6 +12,8 @@
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](https://github.com/QianJinGuo/wiki-public/blob/main/entities/building-multi-tenant-agents-with-amazon-bedrock-agentcore.md)
 
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/intelligent-radiology-workflow-optimization-with-ai-agents-2)
+
+## 深度分析
 
 ### 核心问题：传统放射科工作流调度为什么失效
 

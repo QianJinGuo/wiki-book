@@ -1,6 +1,6 @@
 # 当 OpenClaw 学会”团队记忆”：一个面向多客户服务的企业级共享记忆系统设计 | 亚马逊AWS官方博客
 
-> 📊 Level ⭐⭐⭐ | 11.6KB | `entities/openclaw-service-enterprise-share-system-design.md`
+> 📊 Level ⭐⭐⭐ | 11.6KB
 
 ## 概述
 当 OpenClaw 学会”团队记忆”：一个面向多客户服务的企业级共享记忆系统设计 by awschina on 17 4月 2026 in Artificial Intelligence Permalink Share 摘要：本文围绕 AI Agent 在多客户、多 Agent 协作场景下的”记忆困境”，介绍基于 Amazon AgentCore Memory 的 OpenClaw 企业级共享记忆插件 memory-agentcore，逐一拆解记忆系统的五个核心问题：记什么（Amazon AgentCore 4 策略自动提取 + 本地三层噪音预过滤）、怎么存（Event → Memory Record 的全托管数据路径）、怎么找（auto-recall 自动召回 + 肘点算法分数间隙过滤）、谁能看（层级命名空间 + actorId 驱动的最小权限隔离）、怎么管（8 个 Agent 工具
@@ -91,7 +91,7 @@ memory-agentcore 的核心架构决策是**不占用 OpenClaw 独占 Slot**，�
 ## 相关实体
 - [企业级OpenClaw安全部署架构指南 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/enterprise-openclaw-security-deploy-architecture-guide.md)
 - [CI&amp;T基于 Amazon Bedrock AgentCore 与 OpenClaw 的企业级智能运维最佳实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ci-t-based-on-amazon-bedrock-agentcore-openclaw-enterprise-intelligent-operations-best-practices.md)
-- [Agentic Design System - From Chatbot to Orchestration](../ch01/006-agentic-design-system-from-chatbot-to-orchestration.html)
+- Agentic Design System - From Chatbot to Orchestration
 - [快时尚电商行业智能体设计思路与应用实践（八）基于 WebSocket 的语音系统：Nova 2 Sonic, AgentCore, Strands Agents 企业级架构实践 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fast-fashion-ecommerce-agent-design-8-websocket-voice-system.md)
 - [把 OpenClaw 从个人助手变成客服：一次信任模型的翻转 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-from-personal-assistant-to-customer-service-a-trust-model-flip.md)
 - [深度拆解 Hermes Agent 记忆系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-memory-system-openclaw-comparison.md)

@@ -1,6 +1,6 @@
 # LongHorizon-Harness: Advancing LongHorizon Agents for Real-World Tasks
 
-> 📊 Level ⭐⭐⭐⭐ | 8.3KB | `entities/longhorizon-harness-mea-alibaba-dreamx-arxiv-2026-09-01.md`
+> 📊 Level ⭐⭐⭐⭐ | 8.3KB
 
 → [原文存档](https://arxiv.org/abs/2608.01964)
 
@@ -20,6 +20,8 @@ WeaveBench 上 Qwen 3.7-Plus 的 PassRate 从 51.8% 跃至 **80.7%**，约为官
 - **审计隔离与证据信任根**：Auditor 结论源于直接环境证据而非 Executor 自述；检测到工作区变更按 clean/suspect/violation 记完整性违规。
 - **可互换后端（AgentAdapter）**：轻量适配层使同一框架支持 Claude Opus、GPT、Qwen 及 Codex CLI、Claude Code、OpenClaw、Hermes Agent——增益来自框架而非特定模型。
 - **三大失败源**：复合错误与目标漂移、上下文腐烂（利用率超临界后性能骤降）、任务状态丢失——框定全篇靶心。
+
+## 深度分析
 
 ### LongHorizon-Harness architecture
 

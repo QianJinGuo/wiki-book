@@ -1,6 +1,6 @@
 # K-Dense — The Model Is No Longer the Bottleneck
 
-> 📊 Level ⭐⭐⭐⭐ | 12.6KB | `entities/k-dense-the-model-is-no-longer-the-bottleneck.md`
+> 📊 Level ⭐⭐⭐⭐ | 12.6KB
 
 > **Source**: [K-Dense AI Blog](https://www.k-dense.ai/blog/the-model-is-no-longer-the-bottleneck) (2026-06, 9.7KB) by K-Dense team. 原始内容存于 `[K Dense The Model Is No Longer The Bottleneck](https://www.k-dense.ai/blog/the-model-is-no-longer-the-bottleneck)`。
 >

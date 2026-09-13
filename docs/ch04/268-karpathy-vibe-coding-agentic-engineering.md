@@ -1,6 +1,6 @@
 # Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering
 
-> 📊 Level ⭐⭐⭐⭐ | 15.2KB | `entities/karpathy-vibe-coding-agentic-engineering-v4.md`
+> 📊 Level ⭐⭐⭐⭐ | 15.2KB
 
 > -> [原文存档](https://mp.weixin.qq.com/s/HTFcXBzYUVHvwShu3Zp-EA)
 
@@ -19,6 +19,7 @@ Karpathy 在红杉 AI Ascent 2026 访谈中提出 Software 3.0 概念，认为 V
 ## 来源
 → [原文存档](https://mp.weixin.qq.com/s/HTFcXBzYUVHvwShu3Zp-EA)
 
+## 深度分析
 ### Vibe Coding 与 Agentic Engineering 的本质分野
 Karpathy 在访谈中区分了两个概念，但这个区分背后有更深的工程含义。Vibe Coding 本质上是一种**生成范式**的民主化——它把"创造"这件事的门槛降到最低，让需求表达变成唯一必要的技能。而 Agentic Engineering 解决的问题不是生成，而是**可靠性交付**。两者面向的价值维度完全不同：Vibe Coding 提升的是创意到原型的转化效率，Agentic Engineering 解决的是原型到生产系统的最后一公里。
 
@@ -75,7 +76,7 @@ Karpathy 给出了他未来 6-12 个月关注的三个信号，可作为行业�
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-to-agentic-engineering.md)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-agentic-engineering-v2.md)
 - [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-agentic-engineering-v3.md)
-- [从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程](297-tencent-vibe-coding-to-agentic-engineering-backend.html)
+- 从Vibe Coding到Agentic Engineering：重构后台开发全流程 — 腾讯技术工程
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程](https://github.com/QianJinGuo/wiki-public/blob/main/entities/从vibe-coding到agentic-engineering重构后台开发全流程.md)
 - [Design Patterns for AI Agents 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/design-patterns-for-ai-agents-2026.md)
 - [Martin Fowler AI 研发 Harness：非确定性承重层](https://github.com/QianJinGuo/wiki-public/blob/main/entities/martin-fowler-ai-rd-harness-nondeterminism.md)
@@ -87,7 +88,7 @@ Karpathy 给出了他未来 6-12 个月关注的三个信号，可作为行业�
 - [长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/long-running-agent-ralph-loop-handover-harness-ruofei.md)
 - [Harness Design Peer Review Framework](https://github.com/QianJinGuo/wiki-public/blob/main/queries/harness-peer-review-framework.md)
 - [从 30 分钟手搓 Agent，到 Harness 成为"新后端"](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cong-30-fen-zhong-shou-gu-agent-dao-harness-cheng-wei-xin-hou-duan.md)
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](../ch01/107-claude-code-harness-deep-understanding.html)
+- 深入理解 Claude Code 源码中的 Agent Harness 构建之道
 - [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-20000-char-source-analysis.md)
 - [Agent Harness 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-architecture.md)
 - [Agent 自我改进的六条路](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-self-improvement-six-mechanisms.md)

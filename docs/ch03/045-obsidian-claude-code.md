@@ -1,6 +1,6 @@
 # Obsidian + Claude Code 集成指南
 
-> 📊 Level ⭐⭐⭐⭐ | 14.9KB | `entities/obsidian-claude-code-integration.md`
+> 📊 Level ⭐⭐⭐⭐ | 14.9KB
 
 ## 概述
 系统性整理 Claude Code 与 Obsidian 集成的五种策略及配套插件工具链，来源为中文社区实战经验的汇总文章。核心价值在于帮助开发者根据自身场景（多项目 vs 单项目 vs 个人知识管理）选择最适合的集成路径。
@@ -79,6 +79,7 @@ Obsidian 1.12 CLI（2025 年）让 Claude Code/Codex/Gemini CLI 直接「使用�
 Vault 应记录人自己的思考；Claude 输出（计划/会话/记忆）放在 `~/.claude/`；vault 本身只保留真正有价值的知识。
 **自定义命令示例**：`/my-world`（加载全 vault 上下文）、`/today`（每日规划）、`/close`（日总结）、`/trace`（想法追溯）、`/ghost`（用你的语气回答）
 
+## 深度分析
 ### 五种策略背后的哲学分歧
 这五种策略并非只是技术方案的差异，它们折射出对「知识工作流应以何为中心」这一根本问题的不同回答。
 **策略 1 和策略 4** 本质上是将代码仓库放在主体地位——Obsidian 作为附加的阅读层，通过过滤和链接尽量减少对原仓库的侵入。这是一种保守、渐进的方式，适合已有成熟代码工作流的团队。
@@ -155,7 +156,7 @@ last-session: 2026-05-10
 - [obsidian claude code integration guide](https://github.com/QianJinGuo/wiki-public/blob/main/entities/obsidian-claude-code-integration-guide.md)
 - [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南-v2.md)
 - [Claude Code Memory Setup (Obsidian + Graphify)](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-memory-setup-obsidian-graphify.md)
-- [Claude Code vs OpenClaw Agent 记忆系统对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-openclaw-memory-comparison.md)
+- Claude Code vs OpenClaw Agent 记忆系统对比
 - [CLAUDE.md 12 条规则：Karpathy 扩展模板](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-12-rules-karpathy-extension.md)
 - [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-20000-char-source-analysis.md)
 - [gstack — AI协作开发工作流 & 复杂度棘轮](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gstack-ai-workflow.md)

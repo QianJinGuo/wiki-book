@@ -1,6 +1,6 @@
 # Claude Code 黑客松：技艺数字化六项目
 
-> 📊 Level ⭐⭐⭐ | 11.9KB | `entities/claude-code-hackathon-expertise-digitization.md`
+> 📊 Level ⭐⭐⭐ | 11.9KB
 
 ## 概述
 Anthropic + Cerebral Valley 黑客松六组获奖项目（Opus 4.7 + Claude Code，一周时间）。六个项目覆盖医疗/维修/教育/创意/建筑/工业六个领域，共同内核：**把锁在少数人脑子里的专业知识，变成更多人能触及的工具**。
@@ -109,7 +109,7 @@ Anthropic + Cerebral Valley 黑客松六组获奖项目（Opus 4.7 + Claude Code
 - [Agent Memory 模块化框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-modular-framework.md)
 
 ## 相关实体
-- [Claude Code vs OpenClaw Agent 记忆系统对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-openclaw-memory-comparison.md)
+- Claude Code vs OpenClaw Agent 记忆系统对比
 - [开源 AI 知识管理搭档 Obsidian + Claude Code 完整集成指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/开源-ai-知识管理搭档-obsidian-claude-code-完整集成指南-v2.md)
 - [CLAUDE.md 12 条规则：Karpathy 扩展模板](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-12-rules-karpathy-extension.md)
 - [两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-20000-char-source-analysis.md)

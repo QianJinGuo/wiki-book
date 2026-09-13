@@ -1,6 +1,6 @@
 # Headless Software：Agent 时代软件界面何去何从
 
-> 📊 Level ⭐⭐⭐⭐ | 16.2KB | `entities/headless-software-agent-no-ui-podcast.md`
+> 📊 Level ⭐⭐⭐⭐ | 16.2KB
 
 > a16z 播客讨论 headless 软件在 Agent 时代的本质：如果软件的"用户"从人变成 agent，界面（head）可能成为累赘，真正值钱的是底层的数据结构和业务逻辑。
 
@@ -48,6 +48,8 @@ Salesforce 推出的 Headless 360 将 headless 概念推向大众。Notion 也�
 这些案例共同指向一个趋势：传统软件公司正在主动"去掉界面"，不是因为界面没有价值，而是因为 agent 作为新的用户群体，对 access pattern 的需求与人完全不同。未来软件可能需要维护两套接口——一套为人（GUI），一套为机器（API/API Agent Interface）。
 
 这与 [Salesforce Headless Software Losing Head A16Z](https://github.com/QianJinGuo/wiki-public/blob/main/entities/salesforce-headless-software-losing-head-a16z.md) 讨论的"护城河从界面层迁移到数据层"的趋势一致。[Enterprise Software Moats Agent Era](https://github.com/QianJinGuo/wiki-public/blob/main/entities/enterprise-software-moats-agent-era.md) 进一步分析了五维迁移评估框架。[The Ui Is Dead Long Live The Agent Servicenow Goes Headless And Opens Its Platform](https://github.com/QianJinGuo/wiki-public/blob/main/entities/the-ui-is-dead-long-live-the-agent-servicenow-goes-headless-and-opens-its-platform.md) 则展示了 ServiceNow 在 ITSM 领域的 headless 实践。
+
+## 深度分析
 
 ### 1. 从"为人设计"到"为机器设计"的范式转换
 

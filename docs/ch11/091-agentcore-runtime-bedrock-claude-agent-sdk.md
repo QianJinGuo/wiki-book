@@ -1,6 +1,6 @@
 # 快时尚电商行业智能体设计思路与应用实践（五）借助 AgentCore Runtime 与 Bedrock 模型平台，轻松实现 Claude Agent SDK 的生产级部署 | 亚马逊AWS官方博客
 
-> 📊 Level ⭐⭐⭐ | 9.0KB | `entities/easy-deployment-of-claude-agent-sdk-in-production.md`
+> 📊 Level ⭐⭐⭐ | 9.0KB
 
 ## 概述
 快时尚电商行业智能体设计思路与应用实践（五）借助 AgentCore Runtime 与 Bedrock 模型平台，轻松实现 Claude Agent SDK 的生产级部署 by awschina on 10 12月 2025 in Artificial Intelligence Permalink Share 序言 在智能体的开发实践中，一个常见现象是，在本地运行流畅的智能体，部署到生产环境后却频繁暴露出工程层面的不确定性问题，如执行时长不足、会话状态不稳定、算力资源分配困难、模型访问方式不统一，以及可观测性体系欠缺等。这类问题往往并非源于智能体自身的逻辑缺陷，而是由运行环境与模型平台之间的差异所引发。 随着快时尚电商企业对于自主式智能体的研发需求与日俱增，Claude Agent SDK 逐渐成为了智能体工具箱的重要组成部分，为构建具备多步推理与工具调用能力的自主式智能体提供了良好的开
@@ -19,6 +19,7 @@ Claude Code、Amazon Bedrock、Kiro CLI
 - [Claude Code Agent View](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-agent-view.md)
 - [基于Strands Agents SDK和Amazon Bedrock AgentCore构建商品详情图广告词审查Agent | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/product-ad-review-agent-with-strands-sdk-bedrock.md)
 
+## 深度分析
 ### 1. AgentCore Runtime 的 microVM 隔离架构与 8 小时执行窗口
 文章详细阐述了 AgentCore Runtime 采用基于 microVM 的隔离方式，这种设计选择具有深远意义 。与传统容器技术不同，microVM 提供了更细粒度的隔离级别，每次调用都拥有独立的执行环境，确保不同用户、任务和智能体之间完全隔离，没有共享状态、没有内存泄漏、没有相互干扰。
 最关键的是单次执行最长可达 **8 小时**，这一特性对于需要深度推理、多步骤分析和复杂工具调用的自主式智能体至关重要。在快时尚电商场景中，商品匹配、库存分析、多语言客服等任务往往需要较长的执行时间，传统 FaaS 平台的超时限制使得这类任务难以实现。AgentCore Runtime 的设计理念是将「长时间推理」作为一等公民来支持，而非事后补救。

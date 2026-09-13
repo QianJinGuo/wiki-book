@@ -1,6 +1,6 @@
 # 改进 Agent：数据挖掘视角与 LangChain 实践
 
-> 📊 Level ⭐⭐⭐ | 7.7KB | `entities/agent-improvement-data-mining-trace-framework.md`
+> 📊 Level ⭐⭐⭐ | 7.7KB
 
 > LangChain Labs 研究员 Viv 提出：持续学习、Harness 工程、后训练本质上都归结为同一件事——大规模地整理数据，用于运行实验、改进 Agent。
 
@@ -42,6 +42,8 @@ Agent 的行为比传统代码更不透明。我们用确定性换取了自主�
 
 - **Scaling Dreaming（规模化造梦）**：在大规模数据、长时间跨度上，将 Agent 数据整合回 Agent 本身
 - **稠密反馈信号**：Trace 让反馈信号比简单标量奖励更丰富
+
+## 深度分析
 
 ### 1. Trace 作为 Agent 改进的「货币」——重新定义观测性
 

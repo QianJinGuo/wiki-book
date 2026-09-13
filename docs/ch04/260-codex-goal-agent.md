@@ -1,6 +1,6 @@
 # Codex /goal：长任务Agent的目标运行时
 
-> 📊 Level ⭐⭐⭐⭐ | 16.1KB | `entities/codex-goal-agent-runtime.md`
+> 📊 Level ⭐⭐⭐⭐ | 16.1KB
 
 ## 核心论点
 `/goal` 把一个长期目标放进了 Codex 的**运行时里**：目标有状态，过程有记账，完成要审计，预算到了要收束。
@@ -77,19 +77,20 @@ budget_limit 模板：到点了，别开新工作，把进展、剩下的事、�
 本文与以下页面形成呼应：
 
 - [高德伴行Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gaode-ai-companion-agent.md)（工作现场六组件）
-- [Hermes Agent](../ch03/059-hermes-agent.html)（Karpathy 观点被多次引用）
+- Hermes Agent（Karpathy 观点被多次引用）
 - [Agent Memory Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture.md)（状态为什么得落在模型外面）
 
 ## 相关页面
 - [原文存档：Codex /goal 实现拆解](https://mp.weixin.qq.com/s/7vqPgUmfrpIHtf__Z4M_KA)
 
 ## 相关实体
-- [Codex /goal: The Six-Hour Run That Survived a Five-Hour Pause](../ch09/078-codex-goal-six-hour-run.html)
-- [Cline releases open-source agent runtime SDK](../ch01/521-cline-releases-open-source-agent-runtime-sdk.html)
+- Codex /goal: The Six-Hour Run That Survived a Five-Hour Pause
+- Cline releases open-source agent runtime SDK
 - [Cline releases open-source agent runtime SDK](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cline-open-source-agent-runtime-sdk.md)
 
 - [Openai Symphony Codex Orchestration Linear Control Plane](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openai-symphony-codex-orchestration-linear-control-plane.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/workflow-orchestration.md)
+## 深度分析
 ### 目标状态机的本质：把"意图"变成"运行时对象"
 `/goal` 的核心设计不是让模型多跑几轮，而是把目标从 prompt 里的文字提升为运行时里具备生命周期状态的对象。普通 loop 里，目标活在聊天上下文、脚本或临时文件里——上下文一压缩，目标就变薄；模型自我修改目标时，没有机制可以拦截。`/goal` 的 state-db 把这件事倒了过来：目标有自己的状态字段（active/paused/complete/budget_limited），有 token 和 wall clock 记账，有外部可mutation接口，运行时在每个边界事件上检查目标状态。
 

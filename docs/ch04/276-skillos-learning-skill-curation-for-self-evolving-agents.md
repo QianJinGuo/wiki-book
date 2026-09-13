@@ -1,6 +1,6 @@
 # SkillOS: Learning Skill Curation for Self-Evolving Agents
 
-> 📊 Level ⭐⭐⭐⭐ | 13.8KB | `entities/skill-os-learning-skill-curation-self-evolving-agents.md`
+> 📊 Level ⭐⭐⭐⭐ | 13.8KB
 
 > -> [原文存档](https://arxiv.org/abs/2605.06614)
 
@@ -55,6 +55,7 @@ SkillOS 在所有基准上持续超越无记忆和强记忆基线，且收益随
 2. **效率提升与效果提升同时实现**：ALFWorld 上步数从基线 21.1 降至 18.9，不仅效果更好，交互成本也更低
 3. **跨执行器泛化**：训练好的策展人迁移到不同规模的执行器（Qwen3-32B、Gemini-2.5-Pro）仍有提升
 
+## 深度分析
 ### 技能策展为何是自我进化的关键瓶颈
 当前 agent 研究中，记忆/技能管理存在三条路线：（1）人工策展（如 Anthropic Skills），需要大量人类专家参与，无法规模化；（2）启发式方法，依赖固定规则，缺乏下游性能反馈；（3）短程 RL 适应，只关注即时任务内的技能操作，无法处理技能更新和删除等复杂管理操作。SkillOS 填补的是第三条路线的空白——它通过任务分组和复合奖励，让策展人学会在长期时间跨度上做技能管理决策。
 
@@ -110,7 +111,7 @@ SkillRepo 作为外部 Markdown 文件存在，带来了传统记忆系统不具
 论文的实验设计提供了一个可借鉴的渐进路径：先用 SkillOS-base（初始策展人，不做 RL 训练）建立 baseline，验证技能格式和工作流设计，再引入 GRPO 训练提升策展质量。训练配置建议从以下超参数开始：学习率 1×10⁻⁶，batch size 32，group size 8，在 16×H100 GPU 上训练约 3 天（ALFWorld）。实践中，团队应先用小规模数据验证训练流程，再扩展到完整数据集，同时监控 r_fc（函数调用奖励）确保策展操作格式正确，再关注 r_task（任务结果奖励）的提升。
 
 ## 相关实体
-- [SkillOS: Learning Skill Curation for Self-Evolving Agents](276-skillos-learning-skill-curation-for-self-evolving-agents.html)
+- SkillOS: Learning Skill Curation for Self-Evolving Agents
 - [Self-Evolving Agents 系统性综述](https://github.com/QianJinGuo/wiki-public/blob/main/entities/self-evolving-agents-survey.md)
 - [Memento-Skills — 技能外部记忆让 Agent 自进化](https://github.com/QianJinGuo/wiki-public/blob/main/entities/memento-skills-agent-self-evolving.md)
 - [Hermes Agent 自进化机制源码解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-self-evolving.md)

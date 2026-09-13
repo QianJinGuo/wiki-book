@@ -1,6 +1,6 @@
 # Vera Arrives: NVIDIA's First CPU Built for Agents Lands at Top AI Labs
 
-> 📊 Level ⭐⭐⭐ | 12.0KB | `entities/blogs.nvidia.com-vera-cpu-delivery.md`
+> 📊 Level ⭐⭐⭐ | 12.0KB
 
 ## 核心要点
 - **发布背景**：NVIDIA 创始人兼 CEO Jensen Huang 在 2026 年 3 月 GTC San Jose 上正式发布 Vera CPU，这是 NVIDIA 首个独立 CPU 产品线，被定位为下一个数十亿美元业务
@@ -41,6 +41,7 @@ Vera 是 NVIDIA 极端协同设计故事的一部分，同系列产品还包括 
 ## 行业意义
 代理 AI 时代有了专用 CPU，名字叫 Vera。这标志着 NVIDIA 从 GPU 公司向全栈 AI 基础设施供应商的进一步扩展——不仅有 GPU，还有专门的 CPU 来处理 AI 代理工作中大量的编排、控制和实时处理任务。
 
+## 深度分析
 ### 架构创新的市场逻辑
 Vera CPU 的推出标志着 NVIDIA 完成了从 GPU 公司向全栈 AI 基础设施供应商的关键跨越。88 个 Olympus 核心、1.2 TB/s 内存带宽、50% 每核性能提升——这些数字背后反映的是 AI 代理工作负载与传统数据中心任务的本质差异：代理需要高并发、实时响应、长上下文检索，而非简单的吞吐量堆叠。
 NVIDIA 选择自研 Olympus 核心而非采用标准 ARM 架构，揭示了其对生态控制权的追求。通过垂直整合 CPU + GPU +互联 + 软件栈，NVIDIA 正在复制其在 GPU 领域的成功模式，试图在 CPU 领域建立类似的平台锁定。
@@ -92,7 +93,7 @@ NVLink Fusion 向第三方 XPU 开放 NVIDIA 基础设施平台，使合作伙�
 - [Nvidia Agentic Systems Extreme Co Design](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-agentic-systems-extreme-co-design.md)
 - [Sap Unveils The Autonomous Enterprise](https://github.com/QianJinGuo/wiki-public/blob/main/entities/sap-unveils-the-autonomous-enterprise.md)
 - [Nvidia Nemotron 3 Ultra Sagemaker Jumpstart Moe Agentic](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nvidia-nemotron-3-ultra-sagemaker-jumpstart-moe-agentic.md)
-- [Nemotron 3 5 Content Safety](https://github.com/QianJinGuo/wiki-public/blob/main/entities/nemotron-3-5-content-safety.md)
+- Nemotron 3 5 Content Safety
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/nvidia-gpu-acceleration.md)
 
 → [原文存档](https://blogs.nvidia.com/blog/vera-cpu-delivery/)

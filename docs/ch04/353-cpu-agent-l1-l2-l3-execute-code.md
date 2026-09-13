@@ -1,6 +1,6 @@
 # CPU 缓存类比下的 Agent 上下文管理：L1/L2/L3 层级架构与 execute_code 单工具设计
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 23.6KB | `entities/cpu-cache-analogy-agent-context-management-liwen.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 23.6KB
 
 > 本实体整理自 [原文存档](https://mp.weixin.qq.com/s/4MJ9_wqTx7ttGilKCHkX9w)。
 > 把 CPU 缓存的 L1/L2/L3 层级结构**直接迁移到 Agent 上下文管理**，配套"一个工具而不是三十个"的设计原则、读取区间的三重压缩、写入 diff 的分组采样 + 问题分类等具体工程模式。
@@ -196,6 +196,8 @@ grep -n '"isEnum": true' api-reference.json -B2 -A10  # 枚举所有枚举值
 3. **L3 是什么？** 完整的原始底层基础 + 教 Agent 如何检索的技能文件。不必设计易用，只要内容完整、可以触达、有限步骤内能找到即可
 
 三个层级到位 → **常见场景响应高效、偶发场景能力完整、罕见场景不会止步**，同时上下文控制在紧凑范围内。
+
+## 深度分析
 
 ### 1. 99% vs 95% 准确率的非线性价值
 

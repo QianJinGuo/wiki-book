@@ -1,6 +1,6 @@
 # Anthropic 14 个 Agent Skills 设计模式
 
-> 📊 Level ⭐ | 5.4KB | `entities/anthropic-agent-skills-design-patterns-14.md`
+> 📊 Level ⭐ | 5.4KB
 
 > 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.8**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/anthropic-agent-skills-design-patterns-14.md`，一手来源仍见下方 sources。
@@ -15,7 +15,7 @@
 - [Agent Skills 系统性综述：表示→获取→检索→进化](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skills-comprehensive-survey.md) — skill综述三元组
 - [Mythos for Offensive Security: XBOW's Evaluation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mythos_offensive_security_xbow_evaluatio.md) — XBOW评测6874字rv9全版：live-site悖论
 - [Skill自进化三路线：Trace2Skill归纳法 / EvoSkill验证闭环 / SkillOpt训练范式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-self-evolution-three-approaches.md) — 自进化三路线对比解析
-- [Anthropic N-days: Frontier Agent Vulnerability Research](306-anthropic-n-days-frontier-agent-vulnerability-research.html) — N-day研究
+- Anthropic N-days: Frontier Agent Vulnerability Research — N-day研究
 - [800行代码实现 Open Claw 的 Tool、消息总线、子Agent管理架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/open-claw-tool-bus-subagent-architecture.md) — 薄抽象显式控制流8802字rv9全版
 - [王云鹤眼中的Harness：复杂优化问题，AGI灵魂争夺之战](https://github.com/QianJinGuo/wiki-public/blob/main/entities/wangyunhe-harness-optimization-agentsoul.md) — Agent=Models+Harness联合优化
 - [Agent Skill 规范、构建与设计模式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-spec-building-design-patterns.md) — skill规范与模式
@@ -23,7 +23,7 @@
 ## 工程实践
 - [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](https://github.com/QianJinGuo/wiki-public/blob/main/entities/boris-cherny-新访谈开发工具正在从-ide-变成-agent-控制台.md) — Boris访谈rv10全版
 - [Claude Harness 设计：Generator-Evaluator 架构与 Context Reset 演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-generator-evaluator-anthropic.md) — Generator-Evaluator+context reset 10329字rv9全版
-- [Claude Code Openclaw Memory Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-openclaw-memory-comparison.md) — 记忆系统对比rv9
+- Claude Code Openclaw Memory Comparison — 记忆系统对比rv9
 - [Qoder Skills 完全指南 + Agent Skill 迭代式编写 — AI 按你的标准执行](https://github.com/QianJinGuo/wiki-public/blob/main/entities/qoder-skills-完全指南从零开始让-ai-按你的标准执行-v2.md) — 菜单菜谱比喻+三级渐进披露18168字rv9全版
 - [Impeccable：把 AI 前端设计变成可检查的工作流 — 33.4k Star 开源项目深度分析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/impeccable-frontend-design-skill-harness-vibecoder.md) — Impeccable四层架构9210字rv9全版
 - [Claude Code 一周年回顾：Boris Cherny + Cat Wu 的完整时间线](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-first-year-retrospective-boris-cat-2026.md) — 一周年回顾14k主版

@@ -1,6 +1,6 @@
 # Agent 记忆系统工程税：写入纪律·Prompt Cache 冲突·跨模型容量·Embedding 迁移·自产 Skill 治理
 
-> 📊 Level ⭐⭐⭐⭐ | 18.2KB | `entities/agent-memory-engineering-tax-aws-china-2026.md`
+> 📊 Level ⭐⭐⭐⭐ | 18.2KB
 
 > **背景**：本文是 [AWS China Blog](https://aws.amazon.com/cn/blogs/china/agent-system-engineering-practice/) 2026-06-05 发布的"解决 Agentic AI 应用 Token 爆炸问题"系列第三篇，由 AWS 中国架构师团队撰写。系统讨论 Agent 记忆系统在生产环境的"工程税"（每一次写入/迁移/切换/淘汰时被隐性征收的成本），并给出在 S3 Files / S3 Vectors / Bedrock AgentCore Memory 上的具体落地路径。本文与系列前两篇（《取之有度，用之有节——从 Harness 视角破解 Agent 应用 Token 爆炸难题》/《相得益彰 — 亚马逊云科技向量存储选型推荐》）形成完整覆盖：选型 → 落地 → 运行工程议题。
 
@@ -135,6 +135,8 @@ Bedrock Prompt Caching 要求 **System Prompt 前缀逐字节匹配**。记忆�
 2. 现有 memory 实体的"失效"通常只讨论概念层（什么算矛盾），本文具体到 **Prompt Cache 前缀逐字节匹配失效 / Embedding provider 替换重型工程**
 3. 本文独有的 **S3 Vectors / S3 Files / AgentCore Memory** 是 2026 新基础设施，没有其他 entity 覆盖
 
+## 深度分析
+
 ### 1. Agent 记忆的工程税
 Agent memory 不是免费的——每增加一层记忆（短期→长期→元认知）都有工程成本：存储成本、检索延迟、一致性维护、过期清理。这篇文章量化了这些"记忆工程税"。
 
@@ -166,7 +168,7 @@ AWS 中国团队在 agent memory 工程上的实践反映了中国的特殊情�
 ## 相关阅读
 
 → [原文存档](https://aws.amazon.com/cn/blogs/china/agent-system-engineering-practice/)
-→ [AI Agent Memory Systems（架构模式全景)](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-memory-systems.md)
+→ AI Agent Memory Systems（架构模式全景)
 → [Agent Memory 架构本质](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture-essence.md)
 → [Agent Memory 过去-现在-未来](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture-past-influence-future-ruofei.md)
 → [Agent-Memory 评测全景（淘天综述）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-evaluation-landscape-taobao-survey.md)

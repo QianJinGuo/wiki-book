@@ -1,6 +1,6 @@
 # Harness Engineering: 让 Coding Agent 可靠完成长程任务
 
-> 📊 Level ⭐ | 5.2KB | `entities/harness-engineering-让-coding-agent-可靠完成长程任务-v2.md`
+> 📊 Level ⭐ | 5.2KB
 
 > 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.75**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/harness-engineering-让-coding-agent-可靠完成长程任务-v2.md`，一手来源仍见下方 sources。
@@ -14,9 +14,9 @@
 - [Hugging Face AI Agent 术语表：Model / Agent / Scaffolding / Harness / Context Engineering / Policy / Tool / Skill / Sub-agent 完整区分](https://github.com/QianJinGuo/wiki-public/blob/main/entities/huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent.md) — HF术语表16399字：Scaffolding/Harness/Policy辨析
 - [State of Memory in Agent Harness — mem0 视角的九大 harness 横评](https://github.com/QianJinGuo/wiki-public/blob/main/entities/state-of-memory-in-agent-harness-mem0-2026.md) — 九大harness记忆横评
 - [Coding Harness 工程本质：从 Pi 到 OpenClaw](https://github.com/QianJinGuo/wiki-public/blob/main/entities/pi-openclaw-coding-harness.md) — Harness八能力+五工程模式：Context像投影8441字rv9
-- [Context Window Management Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-window-management-comparison.md) — 四框架对比rv9
+- Context Window Management Comparison — 四框架对比rv9
 - [Harness Engineering 综合论述：为什么 2026 年真正重要的是它（含 ECC 开源实现案例）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-paradigm-comprehensive-2026.md) — 综合论述17305字含ECC案例rv9
-- [Anthropic N-days: Frontier Agent Vulnerability Research](306-anthropic-n-days-frontier-agent-vulnerability-research.html) — N-day研究
+- Anthropic N-days: Frontier Agent Vulnerability Research — N-day研究
 - [Agentic Loop Engineering 工程手册：17 种 Loop 工程化技术的可复现实证框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentic-loop-engineering-handbook-empirical-framework.md) — 17种loop实证
 
 ## 工程实践
@@ -30,7 +30,7 @@
 - [高德 AI-Native 生产线（第 3 期）：7x24 Self-Healing Pipeline + Agent 自进化](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gaode-ai-native-7x24-pipeline-self-healing.md) — 7×24自愈生产线15428字rv9全版
 - [Harness Engineering 综合性指南（ConardLi 系列 · 含 Beautiful Article 实证 + Reacticle 协议）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-comprehensive-guide-conardli.md) — ConardLi六层架构14634字rv9
 - [Deep Agents + Bedrock AgentCore：多 Agent 编排 + 隔离基础设施的端到端研究 Agent 实战](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deep-agents-bedrock-agentcore-subagent-orchestration-aws.md) — 两层编排参考实现
-- [Orchestrating Self-Evolving Agents with CrewAI and NVIDIA NemoClaw](https://github.com/QianJinGuo/wiki-public/blob/main/entities/orchestrating-self-evolving-agents-with-crewai-and-nvidia-ne.md) — Flows/Crews双层+信任鸿沟
+- Orchestrating Self-Evolving Agents with CrewAI and NVIDIA NemoClaw — Flows/Crews双层+信任鸿沟
 - [异步调用模式：Serverless 流水线中调用 Agent（避免空闲计算成本）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/asynchronous-agent-invocation-patterns-serverless-pipelines.md) — 异步调用三模式
 
 ## 延伸导航

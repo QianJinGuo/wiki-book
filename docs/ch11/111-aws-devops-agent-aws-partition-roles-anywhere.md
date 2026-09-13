@@ -1,6 +1,6 @@
 # AWS DevOps Agent 接入 AWS 中国区系列：Partition 隔离、多账号扩展与 Roles Anywhere 认证
 
-> 📊 Level ⭐⭐⭐ | 7.6KB | `entities/aws-devops-agent-mcp-china-partition-bridge.md`
+> 📊 Level ⭐⭐⭐ | 7.6KB
 
 ## 核心要点
 

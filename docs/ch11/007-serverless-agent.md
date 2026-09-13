@@ -1,6 +1,6 @@
 # 异步调用模式：Serverless 流水线中调用 Agent（避免空闲计算成本）
 
-> 📊 Level ⭐ | 7.2KB | `entities/asynchronous-agent-invocation-patterns-serverless-pipelines.md`
+> 📊 Level ⭐ | 7.2KB
 
 > **Background**：本文基于 AWS ML Blog 对 Amazon Bedrock AgentCore 异步调用模式的系统分析建立。核心问题是通用且可迁移的——Agent 在回答前会"思考"一段时间，而阻塞式调用会让调用方在等待期间持续付费。文章给出三种异步模式（task-token 回调 / 直接服务集成 / durable function）及其与阻塞反模式的成本对比。
 
@@ -55,7 +55,7 @@ Step Functions 用 `waitForTaskToken` 集成调用 Lambda，传入 task token �
 ## 相关实体
 
 - [AgentCore Managed Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentcore-harness.md) — AgentCore 平台（Harness Engineering）本身
-- [AgentCore Web Search](../ch04/388-amazon-bedrock-agentcore-web-search-ga.html) — AgentCore 的 Web 搜索 grounding 能力
+- AgentCore Web Search — AgentCore 的 Web 搜索 grounding 能力
 - [Serverless A2A Gateway](https://github.com/QianJinGuo/wiki-public/blob/main/entities/building-serverless-a2a-gateway-agent-discovery-routing-access-control.md) — Agent 间通信网关
 - [Bedrock Serverless Async Inference](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-serverless-async-inference-sqs-lambda.md) — 同族的异步推理模式（SQS+Lambda）
 

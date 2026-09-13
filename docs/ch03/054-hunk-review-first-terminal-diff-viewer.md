@@ -1,6 +1,6 @@
 # Hunk - Review-first Terminal Diff Viewer
 
-> 📊 Level ⭐⭐⭐⭐ | 5.9KB | `entities/hunk-diff-viewer.md`
+> 📊 Level ⭐⭐⭐⭐ | 5.9KB
 
 ## 摘要
 
@@ -70,6 +70,8 @@ Hunk 在交互式 review 场景下能力最全面，但在结构化 diff（AST �
 - **安装**：`npm i -g hunkdiff` 或 `brew install modem-dev/tap/hunk`
 - **许可**：MIT
 - **构建基础**：OpenTUI + Pierre diffs
+
+## 深度分析
 
 ### 为什么 Agent 时代需要 Review-first Diff 工具？
 

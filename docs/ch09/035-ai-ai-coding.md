@@ -1,6 +1,6 @@
 # 天猫AI助手调度框架重构与AI Coding工程化
 
-> 📊 Level ⭐⭐⭐ | 10.3KB | `entities/tmall-ai-assistant-scheduler-refactor-ai-coding-engineering-2026.md`
+> 📊 Level ⭐⭐⭐ | 10.3KB
 
 → [原文存档](https://mp.weixin.qq.com/s/fhcbG2_IyDq-QuH_dBHT-g)
 
@@ -16,6 +16,8 @@
 - **工程化飞轮**：design/（设计文档）→ paradigm/（范式：步骤清单+反模式+锚点路径）→ .agent/skills/（13 Skill）→ Hook 采集（SessionStart/UserPromptSubmit/Pre/PostToolUse/Stop/PreCompact 8 个）→ analyze-skill-usage 月度 6 类报告（使用频率/意图触发/落地率/绕过率/GAP）→ 反馈调优
 - **诚实度量**：落地率（skill 启动 6h 内是否 commit）、绕过率（改了锚定路径但没启动 skill）、GAP（Edit/Write 是否落到 commit）——"模型输出 ≠ 实际落地，团队真正受益的代码量要从 commit 反推"；绕过率 8 条集中在 findDiscount/node/ 系列，GAP 显示 10 文件 agent 改过但 0 落 commit
 - **上游边界**：上游给"乐高零件"（模型/tool use/prompt cache/Skill/Hook 原语/IDE 集成，不维护）；团队组装"乐高城堡"（业务范式/Skill 内容/Hook 业务规则/观测分析/组织约定，必须自维护）——模型升级时范式+skill 是顺风车
+
+## 深度分析
 
 ### 1. Reducer/Event 写收敛：状态管理的可迁移范式
 

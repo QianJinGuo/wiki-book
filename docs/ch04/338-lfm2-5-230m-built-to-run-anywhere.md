@@ -1,6 +1,6 @@
 # LFM2.5-230M: Built to Run Anywhere
 
-> 📊 Level ⭐⭐⭐⭐ | 6.9KB | `entities/liquid-ai-lfm2-5-230m.md`
+> 📊 Level ⭐⭐⭐⭐ | 6.9KB
 
 > **Background**：Liquid AI 发布其最小模型 LFM2.5-230M，专为边缘设备和 Agent 工作流设计。基于 LFM2 架构，在 Galaxy S25 Ultra 上达到 213 tok/s 解码速度，是当前同参数量级中推理速度最快的模型之一。
 
@@ -77,6 +77,8 @@ Liquid AI 开发了内部 GPU 推理栈，实现极低延迟服务。在 SGLang 
 - **ONNX** — 跨平台推理
 - **NexaSDK** — 跨 Apple、AMD、Qualcomm、Nvidia 硬件
 
+## 深度分析
+
 ### 对边缘 Agent 生态的意义
 
 LFM2.5-230M 代表了小模型 + 高速推理这一 Agent 基础设施的关键拼图：
@@ -103,7 +105,7 @@ LFM2.5-230M 的成功验证了几个重要趋势：
 
 ## 相关实体
 
-- [Nvidia Edge First Llms Av Robotics](../ch01/192-nvidia-edge-first-llms-av-robotics.html)
+- Nvidia Edge First Llms Av Robotics
 
 → [原文存档](https://www.liquid.ai/blog/lfm2-5-230m)
 

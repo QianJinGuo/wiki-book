@@ -1,6 +1,6 @@
 # Amazon Quick ARNs: Cross-account migration and namespace permissions
 
-> 📊 Level ⭐⭐⭐ | 16.2KB | `entities/amazon-quick-arns-cross-account-namespace-permissions.md`
+> 📊 Level ⭐⭐⭐ | 16.2KB
 
 > **Source archive**: [原文存档](https://aws.amazon.com/blogs/machine-learning/amazon-quick-arns-cross-account-migration-and-namespace-permissions)
 
@@ -10,7 +10,7 @@ You migrate dashboards from development to production, but the permissions don�
 
 These are real tasks that Amazon Quick administrators tackle regularly, and getting them right requires a clear understanding of how Amazon Resource Names (ARNs) work.
 
-[Amazon Quick](<https://aws.amazon.com/quicksight/>) is a unified, AI-powered business intelligence service that helps you build interactive dashboards, query data in natural language, automate workflows, and embed analytics directly into applications. As you scale your deployments across multiple AWS accounts and namespaces, understanding how Amazon Quick identifies and secures resources through ARNs becomes critical.
+Amazon Quick is a unified, AI-powered business intelligence service that helps you build interactive dashboards, query data in natural language, automate workflows, and embed analytics directly into applications. As you scale your deployments across multiple AWS accounts and namespaces, understanding how Amazon Quick identifies and secures resources through ARNs becomes critical.
 
 In this post, we cover the structure of Amazon Quick ARNs and provide a practical mental model for working with them. By the end, you can look at an ARN and immediately understand what it means for your migration strategy, diagnose permission issues faster, and design multi-tenant architectures with confidence.
 
@@ -22,7 +22,7 @@ Throughout this post, you see ARNs like:
 
     arn:aws:quicksight:us-east-1:123456789012:dashboard/...
 
-The “quicksight” portion refers to the Quick Sight capability within Amazon Quick. Existing code, IAM policies, and CLI commands continue to work without modification for current implementations. For more information, see [Amazon Quick Sight Resource ARNs](<https://docs.aws.amazon.com/quicksight/latest/APIReference/qs-resource-arns.html>).
+The “quicksight” portion refers to the Quick Sight capability within Amazon Quick. Existing code, IAM policies, and CLI commands continue to work without modification for current implementations. For more information, see Amazon Quick Sight Resource ARNs.
 
 ## Think of ARNs as postal addresses
 
@@ -53,7 +53,7 @@ Saanvi, a data analyst at AnyCompany, builds a sales dashboard in Development:
 
     arn:aws:quicksight:us-east-1:111111111111:dashboard/sales-dash-001
 
-She uses the [Asset Bundle APIs](<https://docs.aws.amazon.com/quicksight/latest/developerguide/asset-bundle-ops.html>) to migrate it to QA. The dashboard now has a new ARN:
+She uses the Asset Bundle APIs to migrate it to QA. The dashboard now has a new ARN:
 
     arn:aws:quicksight:us-east-1:222222222222:dashboard/sales-dash-001
 
@@ -156,7 +156,7 @@ When the Asset Bundle APIs import the bundle into the target account, they autom
 - [From Siloed Data To Unified Insights Cross Account Athena Access For Amazon Quic](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-siloed-data-to-unified-insights-cross-account-athena-access-for-amazon-quic.md)
 - [Amazon Quick Research Agentic Multi Source Citation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-quick-research-agentic-multi-source-citation.md)
 - [Amazon Bedrock Cross Region Inference Cris Eu Gdpr](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-cross-region-inference-cris-eu-gdpr.md)
-- [Build Real Time Voice Applications With Amazon Sagemaker Ai](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-real-time-voice-applications-with-amazon-sagemaker-ai.md)
+- Build Real Time Voice Applications With Amazon Sagemaker Ai
 
 ---
 

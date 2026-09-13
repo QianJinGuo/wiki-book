@@ -1,6 +1,6 @@
 # OpenClaw 在电商平台的应用场景探索 | 亚马逊AWS官方博客
 
-> 📊 Level ⭐⭐ | 8.0KB | `entities/exploring-openclaw-use-cases-in-ecommerce-platforms.md`
+> 📊 Level ⭐⭐ | 8.0KB
 
 ## 概述
 OpenClaw 在电商平台的应用场景探索 by awschina on 09 3月 2026 in Artificial Intelligence Permalink Share 摘要：当 AI 助手不再只是”聊天机器人”，而是一个可以用 Markdown 文档扩展skill能力、嵌入多种工作渠道、主动推送运营洞察的智能网关——我们用 OpenClaw 在电商卖家场景做了一次从 0 到 1 的实验，讨论电商平台以大规模SaaS部署OpenClaw提供卖家助手的场景下，能够提供的开发便利、使用体验优势、部署模式和成本评估，以及使用体验 目录 01 1. 当前电商卖家助手的困境 02 2. OpenClaw：一种新的卖家助手构建范式 03 3. OpenClaw 作为电商卖家助手的价值 04 4. 从单机版个人助手到SaaS规模部署的挑战与应对 05 5. 从单机到平台：多租户实践 06 6
@@ -19,6 +19,7 @@ OpenClaw、Amazon Bedrock、Agentic AI、MCP
 - [AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第三篇 | 亚马逊AWS官方博客](https://github.com/QianJinGuo/wiki-public/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-3.md)
 
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/openclaw-architecture.md)
+## 深度分析
 ### 1. "编译型"到"解释型"：Skill 范式的本质变革
 传统卖家助手的能力扩展方式类似"编译型语言"：需求 → 工程师编码 → 定义 Function Schema → 测试 → 编译打包 → 部署上线，每个新功能都需要经过完整的开发流水线 。OpenClaw 的 Skill 方式则是"解释型"：运营人员写 SKILL.md → 放到 skills 目录 → 立即生效，周期从天级压缩到分钟级 。这一变革意味着能力构建门槛从"会写代码"降到"会写 curl + jq 即可"，从依赖工程团队排期变为运营人员自主完成。
 

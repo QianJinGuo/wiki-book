@@ -1,6 +1,6 @@
 # Building Reliable Agentic AI Systems
 
-> 📊 Level ⭐⭐⭐⭐ | 10.8KB | `entities/building-reliable-agentic-ai-systems-martinfowler.md`
+> 📊 Level ⭐⭐⭐⭐ | 10.8KB
 
 ## 摘要
 
@@ -64,6 +64,8 @@ PRINCE 的 RAG 管道展示了生产级检索系统的完整工程：
 - **用户发起重试** — 用户可手动重试失败的查询，系统利用持久化状态从失败点恢复
 - **LLM 回退** — 主 LLM 失败后自动切换到备用模型/平台
 - **评估体系** — 数据集评估（Faithfulness、Answer Relevancy、Context Relevancy、Answer Accuracy、Semantic Similarity）和实时流量评估（每日批量运行）
+
+## 深度分析
 
 ### Harness Engineering 的教科书实现
 

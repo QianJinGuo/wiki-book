@@ -1,6 +1,6 @@
 # SkillClaw × Nacos：从一次 Agent 会话到可治理 Skill Registry 的自动演化闭环
 
-> 📊 Level ⭐⭐⭐ | 6.7KB | `entities/skillclaw-nacos-evolution-registry.md`
+> 📊 Level ⭐⭐⭐ | 6.7KB
 
 → [原文存档](https://mp.weixin.qq.com/s/8rvfRULBztdhzmMycTxMAA)
 
@@ -35,6 +35,8 @@ Agent Skill 的落地面临两个核心难题：
 - Pipeline 审核、label 分发、审计、Trace
 
 这与 [Agent Capability Library](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-capability-library.md) 的设计理念相通——都需要一个中心化的 Skill 治理基础设施。
+
+## 深度分析
 
 ### 闭环运转机制
 

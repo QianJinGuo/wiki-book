@@ -1,6 +1,6 @@
 # Browser Harness — 自愈型浏览器 Agent 框架
 
-> 📊 Level ⭐⭐⭐⭐ | 7.9KB | `entities/browser-harness.md`
+> 📊 Level ⭐⭐⭐⭐ | 7.9KB
 
 ## Overview
 Browser Harness（browser-use/browser-harness，~8.9K Stars）是一个基于 Chrome DevTools Protocol (CDP) 直连的自愈型浏览器 Agent 框架，核心理念是**去框架化**：薄 CDP 桥接 + mid-task 自愈机制 + domain-skills 自动沉淀。
@@ -46,7 +46,7 @@ Agent 在处理 GitHub、LinkedIn、Amazon 等特定网站时，自动沉淀交�
 | Domain Skills | ✅ 自动沉淀 | ❌ 无 | ❌ 无 | ❌ |
 | 安装复杂度 | 低（uv install -e .） | 中等 | 高（需配置 WebDriver） | 中等 |
 | 适用场景 | Agent 原生操作浏览器 | Agent 浏览器运行时 | 测试自动化 | Agent 浏览器操作 |
-与 [CLI-Anything](../ch03/060-cli-anything.html)/[OpenCLI](https://github.com/QianJinGuo/wiki-public/blob/main/entities/opencli.md)/[AutoCLI](https://github.com/QianJinGuo/wiki-public/blob/main/entities/autocli.md) 等 CLI 化方案不同，Browser Harness 走的是**浏览器原生操作**路线而非命令行封装，二者互补而非替代。
+与 CLI-Anything/[OpenCLI](https://github.com/QianJinGuo/wiki-public/blob/main/entities/opencli.md)/[AutoCLI](https://github.com/QianJinGuo/wiki-public/blob/main/entities/autocli.md) 等 CLI 化方案不同，Browser Harness 走的是**浏览器原生操作**路线而非命令行封装，二者互补而非替代。
 
 ## 安全边界
 连接到用户真实 Chrome，遵循原则：
@@ -55,6 +55,7 @@ Agent 在处理 GitHub、LinkedIn、Amazon 等特定网站时，自动沉淀交�
 - 遇到登录墙 → 停止并询问用户
 - Agent 只在授权后的页面执行明确、可验证的任务
 
+## 深度分析
 ### 自愈机制的架构意义
 Browser Harness 的 self-healing 本质上是**将 helpers.py 视为运行时可修改的知识库而非静态 API**。传统框架把函数签名焊死，运行时遇到未知操作只能报错退出；Browser Harness 则允许 Agent 在 mid-task 过程中扩展 helpers 集合。这种设计将"框架边界"的定义权从开发者转移到了 Agent，使得系统具备了真正意义上的可进化性。
 从 CDP 视角看，Agent 修改 helpers.py 后无需重启 Daemon 进程，因为 helpers 函数最终都是调用同一套 CDP 命令——新增的 upload_file() 和内置的 click_element() 在 CDP 层面没有本质区别，都是 `Runtime.evaluate` + `DOM` 操作。这意味着自愈的开销极低，收益极高。

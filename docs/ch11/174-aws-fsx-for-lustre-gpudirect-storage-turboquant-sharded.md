@@ -1,6 +1,6 @@
 # AWS FSx for Lustre + GPUDirect Storage + TurboQuant: Sharded LLM Model Loading
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 15.1KB | `entities/aws-fsx-lustre-gpudirect-sharded-llm-loading.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 15.1KB
 
 > **Core insight**: 把 GPU 加载模型权重的瓶颈从 CPU 旁路（GPUDirect Storage 直传 HBM），配合 TurboQuant KV 压缩，把 LLM 冷启动 TTFT 从 **10-20 分钟降到秒级**。这是 2026 年超大规模 LLM 部署的工程必读。
 
@@ -108,7 +108,7 @@ lfs setstripe -c 8 -S 1m /lustre/checkpoints/llama-405b/
 
 ## 与现有实体的差异化
 
-| 维度 | 现有 [Foundation Model Building Blocks](../ch03/027-foundation-model-building-blocks.html) | 本文 |
+| 维度 | 现有 Foundation Model Building Blocks | 本文 |
 |------|----------------------------------|------|
 | 主题层级 | AWS FM 训练/推理全栈概述 | 单点优化：模型加载 |
 | 技术深度 | 概览各组件 | 4 阶段工程实施 + benchmark |
@@ -130,6 +130,8 @@ lfs setstripe -c 8 -S 1m /lustre/checkpoints/llama-405b/
 > "On a typical deployment without GDS, a single-threaded model load with CPU-side quantization takes 10–20 minutes for Llama 3.1 405B. With sharded GDS, this drops to seconds."
 
 > "TurboQuant compresses KV cache ~6x with negligible accuracy loss, enabling single H200 to host 8+ 128K-context sessions vs. 1 session with FP8 KV."
+
+## 深度分析
 
 ### 1. CPU bounce buffer 是传统加载路径的不可压缩瓶颈
 

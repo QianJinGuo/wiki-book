@@ -1,18 +1,18 @@
 # Extending MCP support for Amazon Bedrock AgentCore Gateway
 
-> 📊 Level ⭐⭐⭐⭐ | 32.6KB | `entities/amazon-bedrock-agentcore-gateway-mcp-extension.md`
+> 📊 Level ⭐⭐⭐⭐ | 32.6KB
 
 ## Unite MCP servers for enterprise through AgentCore Gateway
 
 Without a centralized gateway, every MCP server that your organization builds must independently handle credentials, policy enforcement, private connectivity, and logging. This means that your legal team’s contract review MCP server, your finance team’s data retrieval MCP server, and your operations team’s incident response MCP server each carry the same infrastructure burden. Security teams review each server individually, developers wait for approvals, and nobody has a unified view of how MCP infrastructure is being used across the organization.
 
-[AgentCore Gateway](<https://aws.amazon.com/blogs/machine-learning/transform-your-mcp-architecture-unite-mcp-servers-through-agentcore-gateway/>) helps avoid this duplication by establishing a single-entry point that MCP traffic flows through. The following diagram shows the main features for AgentCore Gateway that allow central governance and control.
+AgentCore Gateway helps avoid this duplication by establishing a single-entry point that MCP traffic flows through. The following diagram shows the main features for AgentCore Gateway that allow central governance and control.
 
-Each team builds only the business logic for their MCP server. AgentCore Gateway handles everything else. It aggregates capabilities across different target types, including [MCP servers](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-target-MCPservers.html>), [REST APIs](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-schema-openapi.html>), [AWS Lambda](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-add-target-lambda.html>) functions, and [more](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-supported-targets.html>). [Resource-based policies (RBP)](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/resource-based-policies.html>) control who can invoke AgentCore Gateway, for example, restricting invocation to an [Amazon Virtual Private Cloud (Amazon VPC)](<https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html>). [Service control policies (SCPs)](<https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html>) govern how AgentCore Gateway is maintained within your AWS organization.
+Each team builds only the business logic for their MCP server. AgentCore Gateway handles everything else. It aggregates capabilities across different target types, including MCP servers, REST APIs, AWS Lambda functions, and more. Resource-based policies (RBP) control who can invoke AgentCore Gateway, for example, restricting invocation to an Amazon Virtual Private Cloud (Amazon VPC). Service control policies (SCPs) govern how AgentCore Gateway is maintained within your AWS organization.
 
-For network isolation, [AgentCore Gateway](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/vpc-interface-endpoints.html>) supports [AWS PrivateLink](<https://aws.amazon.com/privatelink/>) for both control plane and data plane operations so that traffic stays within your Amazon VPC boundaries. You can also connect to private API endpoints or MCP servers through [managed VPC resource mode](<https://aws.amazon.com/blogs/machine-learning/configuring-amazon-bedrock-agentcore-gateway-for-secure-access-to-private-resources/>). Centralized [application](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability-gateway-metrics.html>) and [identity](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability-identity-metrics.html>) logs help you manage audit and compliance requirements.
+For network isolation, AgentCore Gateway supports AWS PrivateLink for both control plane and data plane operations so that traffic stays within your Amazon VPC boundaries. You can also connect to private API endpoints or MCP servers through managed VPC resource mode. Centralized application and identity logs help you manage audit and compliance requirements.
 
-With [interceptor](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-interceptors.html>) capability, AWS Lambda functions can customize requests and responses, enabling fine-grained access control, sanitization, custom authorization logic, and [more](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-interceptors-examples.html>). Integration with [AgentCore Policy (Preview)](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy.html>) provides agentic guardrails defined around your tools for deterministic policy enforcement at a centralized plane. AgentCore Gateway also helps facilitate the [OAuth 2.0 authorization code flow](<https://aws.amazon.com/blogs/machine-learning/connecting-mcp-servers-to-amazon-bedrock-agentcore-gateway-using-authorization-code-flow/>), where the agent authenticates on behalf of a user before invoking tools.
+With interceptor capability, AWS Lambda functions can customize requests and responses, enabling fine-grained access control, sanitization, custom authorization logic, and more. Integration with AgentCore Policy (Preview) provides agentic guardrails defined around your tools for deterministic policy enforcement at a centralized plane. AgentCore Gateway also helps facilitate the OAuth 2.0 authorization code flow, where the agent authenticates on behalf of a user before invoking tools.
 
 Now, you will walk through the new capabilities that we’re adding to AgentCore Gateway to further strengthen enterprise MCP support.
 
@@ -20,7 +20,7 @@ Now, you will walk through the new capabilities that we’re adding to AgentCore
 
 AgentCore Gateway becomes a single MCP endpoint that aggregates capabilities from every MCP server in your organization. Clients see one unified tool catalog, one prompt library, and one resource namespace, not 20 separate connections to manage. Under the hood, AgentCore Gateway supports all three MCP primitives: tools, prompts, and resources. Tool definitions in MCP include an optional `outputSchema` for defining expected output structure and `annotations` describing behavioral properties such as whether a tool is read-only or destructive, alongside the standard `name`, `icons`, `description`, and `inputSchema`. The gateway also supports prompts, resources, and resource templates through their full set of MCP methods: `tools/list`, `tools/call`, `prompts/list`, `prompts/get`, `resources/list`, `resources/read`, and `resources/templates/list`. The following architecture diagram shows how AgentCore Gateway facilitates list and invoke calls.
 
-In the default listing mode, AgentCore Gateway discovers and caches tools, prompts, and resources from connected MCP server targets. This cache is implicitly refreshed whenever you call [CreateGatewayTarget](<https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_CreateGatewayTarget.html>) or [UpdateGatewayTarget](<https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_UpdateGatewayTarget.html>), and can be explicitly refreshed using the [SynchronizeGatewayTargets](<https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_SynchronizeGatewayTargets.html>) API. When clients make list calls such as `tools/list`, `prompts/list`, or `resources/list`, AgentCore Gateway returns the response directly from this cache without invoking the MCP server target. The actual interaction with the MCP server target only happens during invoke operations: `tools/call`, `prompts/get`, and `resources/read`. At that point AgentCore Gateway routes the request to the correct target.
+In the default listing mode, AgentCore Gateway discovers and caches tools, prompts, and resources from connected MCP server targets. This cache is implicitly refreshed whenever you call CreateGatewayTarget or UpdateGatewayTarget, and can be explicitly refreshed using the SynchronizeGatewayTargets API. When clients make list calls such as `tools/list`, `prompts/list`, or `resources/list`, AgentCore Gateway returns the response directly from this cache without invoking the MCP server target. The actual interaction with the MCP server target only happens during invoke operations: `tools/call`, `prompts/get`, and `resources/read`. At that point AgentCore Gateway routes the request to the correct target.
 
 Tools and prompts returned by AgentCore Gateway are prefixed with the target name using the format `targetName___`. Unlike tools and prompts, resource URIs are returned without a target name prefix; the original URI from the downstream MCP server is passed through. When creating an MCP server target that exposes resources, you can optionally specify a `resourcePriority` value (1–1000) to control how AgentCore Gateway resolves conflicts when multiple targets expose the same resource URI. If no priority is defined, a default value of 1000 is applied. When a conflict occurs, AgentCore Gateway returns the resource from the target with the lowest `resourcePriority` value. If two conflicting resources share the same priority, the resource from the target that was synchronized first is returned.
 
@@ -32,7 +32,7 @@ Some MCP servers personalize their capabilities per user. A permissions-aware se
 
 When creating a target, you choose between two listing modes: _default_ and _dynamic_. In default listing mode, AgentCore Gateway invokes the MCP server during `CreateGatewayTarget` or `UpdateGatewayTarget` operations to discover and cache tools, prompts, and resources. This cache can be explicitly refreshed using the `SynchronizeGatewayTargets` API. When clients make list calls, AgentCore Gateway serves the response directly from this cache without contacting the backend server. In dynamic listing mode, AgentCore Gateway doesn’t invoke the MCP server during `CreateGatewayTarget` or `UpdateGatewayTarget` operations. Instead, list calls are forwarded live to the MCP server at request time, using the identity of the calling user. In both modes, invoke operations such as `tools/call`, `prompts/get`, and `resources/read` route directly to the MCP server target. The following architecture diagram illustrates how both modes work together.
 
-MCP Server 1 is configured with dynamic listing mode, while MCP Server 2 and 3 use default listing mode. The AgentCore Gateway cache contains only the capabilities from the default mode servers. During list calls, the response is paginated; the cached and MCP Server 1 primitives are returned on different pages. Because the primitives aren’t indexed at AgentCore Gateway for dynamic listing targets, the [semantic tool search](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-using-mcp-semantic-search.html>) capability can’t be used.
+MCP Server 1 is configured with dynamic listing mode, while MCP Server 2 and 3 use default listing mode. The AgentCore Gateway cache contains only the capabilities from the default mode servers. During list calls, the response is paginated; the cached and MCP Server 1 primitives are returned on different pages. Because the primitives aren’t indexed at AgentCore Gateway for dynamic listing targets, the semantic tool search capability can’t be used.
 
 This dual-mode architecture also gives you flexibility for multi-tenancy and fine-grained access control (FGAC). For both listing modes, you can enforce policies centrally using AgentCore Policy or AWS Lambda response interceptors to filter capabilities based on tenant identity. For example, you can restrict a tenant to only see read-only tools. For dynamic listing mode, you can manage access control directly at the MCP server itself, since list operations execute under the end user’s identity, and the MCP server target returns only the capabilities that user is authorized to access.
 
@@ -100,13 +100,13 @@ When your agents need to access downstream resources on behalf of authenticated 
 
 The MCP client authenticates to AgentCore Gateway with JWT A, scoped to the gateway audience (`aud: gw`), over the `/mcp` streamable HTTP connection. When AgentCore Gateway needs to call a downstream MCP server target, it calls AgentCore Identity to exchange JWT A for JWT B, now scoped to the MCP server audience (`aud: mcp`). If the MCP server in turn needs to call a further downstream API, it can use `GetResourceOAuth2Token` to obtain JWT C scoped to the downstream API audience (`aud: api`). At every hop, the original user identity (`sub: X`) is carried forward, so downstream services can enforce fine-grained, per-user authorization without triggering additional consent flows. The claims used in this flow are strictly for example purposes, and should only be used to understand this diagram.
 
-AgentCore Identity acts as the central token broker for this entire flow. It provides a secure token vault for storing OAuth credentials and client secrets so that neither AgentCore Gateway nor MCP servers need to manage credentials directly, and workload identity for service-to-service authentication using AWS workload identity rather than long-lived secrets. It supports standard token exchange ([RFC 8693](<https://www.rfc-editor.org/rfc/rfc8693.html>)) or JWT authorization grant ([RFC 7523](<https://www.rfc-editor.org/rfc/rfc7523.html>)), depending on the identity provider.
+AgentCore Identity acts as the central token broker for this entire flow. It provides a secure token vault for storing OAuth credentials and client secrets so that neither AgentCore Gateway nor MCP servers need to manage credentials directly, and workload identity for service-to-service authentication using AWS workload identity rather than long-lived secrets. It supports standard token exchange (RFC 8693) or JWT authorization grant (RFC 7523), depending on the identity provider.
 
 ## Conclusion
 
 With this release, you can build stateful multi-turn agent workflows with real-time progress streaming, human approval gates that pause and resume execution, and zero-trust identity propagation, through a single managed endpoint. No custom session stores, no hand-rolled streaming infrastructure, no shared service account credentials. Your MCP servers stay focused on business logic. AgentCore Gateway handles the rest: discovery, streaming, state, identity, and policy, centrally governed and incrementally adoptable.
 
-To get started, review the [Amazon Bedrock AgentCore Gateway documentation](<https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway.html>) for configuration details on each feature covered in this post. For hands-on examples, visit the [GitHub samples repository](<https://github.com/awslabs/agentcore-samples/tree/main/01-tutorials>). If you’re already running MCP servers behind AgentCore Gateway, you can adopt these capabilities incrementally without changes to your existing AgentCore Gateway or target configurations.
+To get started, review the Amazon Bedrock AgentCore Gateway documentation for configuration details on each feature covered in this post. For hands-on examples, visit the GitHub samples repository. If you’re already running MCP servers behind AgentCore Gateway, you can adopt these capabilities incrementally without changes to your existing AgentCore Gateway or target configurations.
 
 * * *
 
@@ -114,11 +114,11 @@ To get started, review the [Amazon Bedrock AgentCore Gateway documentation](<htt
 
 ### Anagh Agrawal
 
-[Anagh](<https://www.linkedin.com/in/anaghagrawal96/>) is a Software Engineer with Amazon Bedrock AgentCore, where he builds core Gateway infrastructure powering agentic AI experiences. He has previously worked on Amazon Bedrock Agents and brings distributed systems and cryptographic services experience from his time at AWS Key Management Service. He holds an MS in Computer Science from Stony Brook University. Outside of work, Anagh is a musician who plays piano and ukulele, and an avid hiker with a love for anything outdoors.
+Anagh is a Software Engineer with Amazon Bedrock AgentCore, where he builds core Gateway infrastructure powering agentic AI experiences. He has previously worked on Amazon Bedrock Agents and brings distributed systems and cryptographic services experience from his time at AWS Key Management Service. He holds an MS in Computer Science from Stony Brook University. Outside of work, Anagh is a musician who plays piano and ukulele, and an avid hiker with a love for anything outdoors.
 
 ### Eashan Kaushik
 
-[Eashan](<https://www.linkedin.com/in/eashan-kaushik/>) is a Specialist Solutions Architect AI/ML at Amazon Web Services. He focuses on building generative AI solutions while prioritizing a customer-centric approach to his work. Before this role, he obtained an MS in Computer Science from NYU Tandon School of Engineering. Outside of work, he enjoys sports, lifting, and running marathons.
+Eashan is a Specialist Solutions Architect AI/ML at Amazon Web Services. He focuses on building generative AI solutions while prioritizing a customer-centric approach to his work. Before this role, he obtained an MS in Computer Science from NYU Tandon School of Engineering. Outside of work, he enjoys sports, lifting, and running marathons.
 
 ### Ke Ma
 
@@ -130,7 +130,7 @@ Kyungna is a Software Engineer on Amazon Bedrock AgentCore Gateway, where she bu
 
 ### Tejas Dastane
 
-[Tejas](<https://www.linkedin.com/in/tejas-dastane>) is an experienced Software Engineer with Amazon Bedrock AgentCore Gateway, where he builds core infrastructure for creating MCP server gateways used by AI agents. Previously, he worked on the agentic infrastructure for Amazon Bedrock Agents, and also has experience working with robotics applications in the cloud and compute services such as AWS Batch.
+Tejas is an experienced Software Engineer with Amazon Bedrock AgentCore Gateway, where he builds core infrastructure for creating MCP server gateways used by AI agents. Previously, he worked on the agentic infrastructure for Amazon Bedrock Agents, and also has experience working with robotics applications in the cloud and compute services such as AWS Batch.
 
 ## 第 2 来源 — MCP 2026-07-28 规范更新
 
@@ -151,6 +151,8 @@ MCP 于 2026-07-28 发布了最大规模的协议修订，核心变化有三：�
 ### 实践启示
 
 MCP 2026-07-28 对 Agent 系统架构的影响：无状态化使 MCP 服务器层的水平扩展从"需要基础设施支持"变为"天然支持"；HTTP 标准化使标准基础设施（ALB/API Gateway/CloudFront）可直接处理 MCP 流量，无需专门中间件；缓存元数据降低了 MCP 服务器的发现请求负载。AgentCore Gateway 一直是 MCP 协议的抽象层，新版协议使这一抽象更薄、更透明——gateway 的角色从"协议翻译"向"协议路由+策略执行"演进。
+
+## 深度分析
 
 ### 1. AgentCore Gateway：AWS 的 Agent 通信基础设施
 Amazon Bedrock AgentCore Gateway 是 AWS 为 AI agent 提供的统一通信层——解决的核心问题是"agent 如何安全、可靠地调用外部工具和数据源"。MCP（Model Context Protocol）扩展使 Gateway 成为 agent 的标准工具总线。
@@ -185,9 +187,9 @@ MCP 使工具一次集成、多 agent 复用——不要为每个 agent 单独�
 Gateway 是 agent 工具调用的单点——监控其延迟、错误率和可用性，确保不影响 agent 性能。
 
 ## 相关实体
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](../ch04/148-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
+- Building A Secure Auth Code Flow Setup Using Agentcore Gatew
 - [Mcp Serveramazon Bedrock Agentcorequick Suite](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mcp-serveramazon-bedrock-agentcorequick-suite.md)
-- [Building Ai Agents For Business Support Using Amazon Bedrock](../ch04/091-building-ai-agents-for-business-support-using-amazon-bedrock.html)
+- Building Ai Agents For Business Support Using Amazon Bedrock
 - [Amazon Quick Bedrock Agentcore Finops Chat](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-quick-bedrock-agentcore-finops-chat.md)
 - [Introducing Os Level Actions In Amazon Bedrock Agentcore Browser](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-os-level-actions-in-amazon-bedrock-agentcore-browser.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/tool-use-mcp-patterns.md)

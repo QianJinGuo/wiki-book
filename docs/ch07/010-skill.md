@@ -1,6 +1,6 @@
 # Skill 版本对比五大原则：从'两个数字比大小'到工程化质量门禁
 
-> 📊 Level ⭐⭐ | 6.0KB | `entities/skill-version-comparison-five-principles-winty.md`
+> 📊 Level ⭐⭐ | 6.0KB
 
 > 原文归档：[原文归档](https://mp.weixin.qq.com/s/jbmdkP1Oj6_J_ZDRiW131w)
 
@@ -101,7 +101,7 @@ YAML 结构化模板（关键字段）：
 
 - [Skill 版本管理五大原则](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-version-management-semantic-versioning-practices-winty.md) — 同作者同系列，版本管理侧
 - [Agent Skill 写作评估](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-skill-writing-evaluation.md)
-- [Harness Engineering](../ch05/019-harness-engineering.html)
+- Harness Engineering
 - [Claw-SWE-Bench](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claw-swe-bench-harness-evaluation-benchmark-tokenrhythm.md) — harness 独立评测基准
 - [Agent Eval WalleZhang](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-eval-wallezhang-yaml-driven-agent-evaluation-framework.md) — YAML 驱动评估框架
 

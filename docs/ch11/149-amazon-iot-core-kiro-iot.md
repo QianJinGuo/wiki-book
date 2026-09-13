@@ -1,6 +1,6 @@
 # 基于 Amazon IoT Core 与 Kiro 构建可迁移的工业 IoT 数据管道
 
-> 📊 Level ⭐⭐⭐⭐ | 9.5KB | `entities/amazon-iot-core-kiro-industrial-data-pipeline.md`
+> 📊 Level ⭐⭐⭐⭐ | 9.5KB
 
 > **Background**: 智慧工厂跨账户迁移实战。从"手动步骤指南" → 幂等 boto3 编排脚本 → Kiro 包装为 AI Agent 可调用的工作流。配套源码：`mildone82/iot-migration`。
 
@@ -88,6 +88,8 @@ Amazon S3 (SSE-S3, Block Public Access)
 - Kiro 包装工作流的版本管理
 - 多账户治理下的证书轮换
 - 工业现场设备的物理安全（断电/网络中断）
+
+## 深度分析
 
 ### 1. 三层部署形态的递进本质：知识编码层级的跃迁
 

@@ -1,6 +1,6 @@
 # Code as Agent Harness 综述
 
-> 📊 Level ⭐⭐⭐⭐ | 11.8KB | `entities/code-as-agent-harness-survey.md`
+> 📊 Level ⭐⭐⭐⭐ | 11.8KB
 
 ## 核心框架
 论文（102页，UIUC+Meta+斯坦福）提出三层结构：
@@ -55,6 +55,7 @@ deep telemetry 记录：提示词、检索内容、token 成本、工具参数�
 5. 验证要有证据包：通过什么检查、没覆盖什么风险都要可追溯
 6. Harness 变化要跑回归，自我优化在可评估、可回滚时才有工程价值
 
+## 深度分析
 ### Harness 作为认知架构
 Code as Agent Harness 的本质是将代码从"工具"提升为"认知基础设施"。传统观点认为模型是智能的来源，代码只是执行载体。但这篇综述提供了一个更具工程意义的视角：模型是推理引擎，而 Harness 才是经验累积和行为约束的载体。
 这意味着 Agent 的能力边界不取决于模型有多强，而取决于 Harness 能保留多少可验证的经验。一个 7B 模型配合完善的 Harness，可能比 70B 模型配合简陋 Harness 表现更稳定。关键变量从"模型参数"转向了"Harness 设计的精密程度"。

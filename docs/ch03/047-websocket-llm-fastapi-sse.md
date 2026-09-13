@@ -1,6 +1,6 @@
 # 还在用WebSocket做LLM流式传输？FastAPI + SSE让你少踩一半坑
 
-> 📊 Level ⭐⭐⭐⭐ | 13.4KB | `entities/fastapi-sse-llm-streaming-vs-websocket-5e4a458abf18.md`
+> 📊 Level ⭐⭐⭐⭐ | 13.4KB
 
 ## 核心结论
 
@@ -113,6 +113,8 @@ async def event_stream(user_id: str):
 - **原理**：SSE 基于普通 HTTP，通过 `text/event-stream` 和分块传输实现服务器推送，EventSource 自动处理重连
 - **实践**：FastAPI `StreamingResponse` + 异步生成器，核心要点：格式组装/心跳/断开检测/代理缓冲控制
 - **避坑**：代理缓冲/超时/客户端断开检测/多进程状态共享
+
+## 深度分析
 
 ### 1. SSE 的本质是 HTTP 分块传输的协议化
 

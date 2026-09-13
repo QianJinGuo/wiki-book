@@ -1,6 +1,6 @@
 # Agent Skills vs Workflow低代码平台：选型分析
 
-> 📊 Level ⭐⭐⭐ | 8.9KB | `entities/agent-skills-vs-coze-dify-n8n-lowcode-yexiaocha.md`
+> 📊 Level ⭐⭐⭐ | 8.9KB
 
 叶小钗，HR简历筛选案例对比Skills vs Workflow实现路径。核心论断：Skill只是Workflow的另一种表达（新瓶装旧酒）；Skills不会淘汰Coze/Dify，但会倒逼升级；企业选型看场景（个人→Skills，生产→Workflow）；最终竞争本质是业务KnowHow承载方式，不是工具形态。
 
@@ -34,6 +34,7 @@
 → 没有=换什么平台都是Demo
 → 有=各平台都只是不同阶段的承载层
 
+## 深度分析
 ### 平台进化路径：双向奔赴与能力边界
 Workflow平台与Skills系统正在向彼此中间地带演进。Coze已明确转型为"AI Coding驱动的工作流搭建"——不再要求用户手动拖拉拽节点，而是用自然语言描述需求，AI生成执行路径。同时，Skills系统（如Agent Runtime）也在引入平台级治理机制：可观测性、权限管理、版本控制、团队协作。本质上，两类工具的目标一致：**让业务KnowHow能够被可靠地执行、追踪和迭代**。差异只在于入口抽象层级——Workflow擅长流程确定性，Skills擅长上下文灵活性。
 

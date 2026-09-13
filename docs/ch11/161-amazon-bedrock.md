@@ -1,6 +1,6 @@
 # Amazon Bedrock 构建货运物流双语命名实体识别系统
 
-> 📊 Level ⭐⭐⭐⭐ | 7.7KB | `entities/building-bilingual-ner-for-cargo-logistics-with-amazon-bedro.md`
+> 📊 Level ⭐⭐⭐⭐ | 7.7KB
 
 > 原文存档：[原文存档](https://aws.amazon.com/blogs/machine-learning/building-bilingual-ner-for-cargo-logistics-with-amazon-bedrock)
 
@@ -14,6 +14,8 @@ IBS Software 使用 Amazon Bedrock 的托管知识蒸馏能力，将 Amazon Nova
 - **开源方案在复杂场景下失败**：团队最初尝试 PyTorch + TextBrewer 的开源蒸馏框架，因双语数据配置复杂、缺乏托管基础设施、超参数调优困难等原因失败，最终转向 Amazon Bedrock 托管蒸馏。
 - **Token 级 KL 散度蒸馏**：使用 token_level_kl_divergence 作为损失函数，训练 4 个 epoch（70 步），损失从 0.05 降至 0.008，表明知识迁移效果显著。
 - **日语准确率存在差距**：学生模型在日语上的 F1-Score（93.635%）比英语（96.535%）低约 2.9 个百分点，主要源于复杂汉字组合、无空格文本的实体边界模糊和日语训练数据较少（150 vs 350 封邮件）。
+
+## 深度分析
 
 ### 知识蒸馏的技术实现
 

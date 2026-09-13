@@ -1,6 +1,6 @@
 # Hermes Agent 工具系统架构分析
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 8.8KB | `entities/hermes-agent-tool-system-architecture.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 8.8KB
 
 ## 核心结论
 
@@ -97,6 +97,8 @@ TOOLSETS = {
 - [Hermes Agent Memory System Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-memory-system-architecture.md)
 
 → [原文存档](https://mp.weixin.qq.com/s/ItjK7a6EoyJSidSDTnJgww)
+
+## 深度分析
 
 ### 自注册模式的工程哲学
 

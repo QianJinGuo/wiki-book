@@ -1,6 +1,6 @@
 # Thinking Machines 交互模型（Interaction Models）
 
-> 📊 Level ⭐⭐⭐ | 10.2KB | `entities/thinking-machines-interaction-models.md`
+> 📊 Level ⭐⭐⭐ | 10.2KB
 
 ## 核心定位
 Thinking Machines Lab（OpenAI 前 CTO Mira Murati 创办）发布的交互模型，旨在解决假实时问题——当前 AI 模型以轮次为单位工作，人必须等模型说完才能接话。

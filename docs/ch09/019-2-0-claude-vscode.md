@@ -1,10 +1,12 @@
 # 2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件
 
-> 📊 Level ⭐⭐ | 5.9KB | `entities/2-小时0-行手写代码我用-claude-做了一个生产级-vscode-插件.md`
+> 📊 Level ⭐⭐ | 5.9KB
 
 ## 核心摘要
 
 作者在零 VSCode 插件开发经验、零 Chrome Cookie 加密知识、零 UUAP SSO 了解的前提下，用 Claude AI 辅助在 2 小时内完成了一个生产级 VSCode 插件的开发。该插件能自动读取浏览器登录态、实时监控 Comate 模型用量、支持三色告警和失效自动恢复。
+
+## 深度分析
 
 ### 1. AI 是陌生领域的知识倍增器，而非替代者
 

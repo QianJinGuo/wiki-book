@@ -1,6 +1,6 @@
 # Spec Review Agent: Multi-Agent Code-to-Product Validation with MCP + Browser Tool
 
-> 📊 Level ⭐⭐⭐ | 10.6KB | `entities/spec-review-agent-baz-bedrock-agentcore-multi-agent.md`
+> 📊 Level ⭐⭐⭐ | 10.6KB
 
 > 本文综合提炼自 Baz 公司（[baz.co](https://baz.co/)）构建的 **Spec Review Agent** —— 用 Amazon Bedrock + AgentCore 实现"代码-产品"全栈自动验证。核心架构：**Specification Subagent 解析 Figma/Jira 需求 → Implementation Subagent 用 Browser Tool 渲染 Preview Environment 做视觉/行为验证 → Report Generator 合并发现**。量化收益：**bugs 报告减少 50%、time-to-merge 提升 30-70%**。
 
@@ -108,6 +108,8 @@ AgentCore 作为基础设施层提供：
 - [Amazon Bedrock](https://aws.amazon.com/bedrock/)
 - 架构伙伴：EKS (Application/Network Load Balancer) + GitHub webhook
 
+## 深度分析
+
 ### 1. Spec Review Agent：AI 驱动的规格审查
 Baz（Spec Review Agent）将软件规格审查从人工流程转变为 AI 辅助流程——agent 自动检测规格中的矛盾、遗漏和模糊性，人类审查者聚焦于业务逻辑和用户体验。
 
@@ -141,7 +143,7 @@ AI 可以加速审查但不是替代——业务逻辑和用户体验的判断�
 如果你的多 agent 需求涉及 AWS 生态，Bedrock AgentCore 提供了开箱即用的编排和安全。但需要评估厂商锁定风险。
 
 ## 相关实体
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](148-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html)
+- Building A Secure Auth Code Flow Setup Using Agentcore Gatew
 - [Scalable Voice Agent Design With Amazon Nova Sonic Multi Agent Tools And Session](https://github.com/QianJinGuo/wiki-public/blob/main/entities/scalable-voice-agent-design-with-amazon-nova-sonic-multi-agent-tools-and-session.md)
 - [Building Multi Tenant Agents With Amazon Bedrock Agentcore](https://github.com/QianJinGuo/wiki-public/blob/main/entities/building-multi-tenant-agents-with-amazon-bedrock-agentcore.md)
 - [Verizon Connect Agentic Ai 100K Users](https://github.com/QianJinGuo/wiki-public/blob/main/entities/verizon-connect-agentic-ai-100k-users.md)

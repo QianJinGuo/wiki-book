@@ -1,6 +1,6 @@
 # 阿里云 Agentic Cloud
 
-> 📊 Level ⭐⭐⭐ | 8.3KB | `entities/alibaba-agentic-cloud.md`
+> 📊 Level ⭐⭐⭐ | 8.3KB
 
 阿里云在520峰会上发布 Agentic Cloud 战略，将整朵云按 Agent 需求重做，目标是让 Agent 成为云的一等公民。产品、API、计费、文档、官网全部围绕 Agent 重新设计。
 
@@ -61,6 +61,8 @@
 2. **Skill 化是最大工作量**：56 款产品接口重做，比发新品难得多
 3. **结果付费是终极形态**：但需技术成熟到一定程度才能实现
 4. **Qwen 开源生态价值**：53% 全球采用率意味着大量第三方 Agent 默认接入，形成推理平台锁定
+
+## 深度分析
 
 ### Agentic Cloud 的战略意图
 

@@ -1,16 +1,17 @@
 # Intercom, now called Fin, launches an AI agent whose only job is managing another AI agent
 
-> 📊 Level ⭐⭐⭐ | 7.6KB | `entities/intercom-now-called-fin-launches-an-ai-agent-whose-only-job-is-managing-another-.md`
+> 📊 Level ⭐⭐⭐ | 7.6KB
 
 ## 核心要点
 - 来源：venturebeat
 ## 相关实体
-- [Opensquilla Launches Open Source Ai Agent To Cut Token Costs](../ch01/008-opensquilla-launches-open-source-ai-agent-to-cut-token-costs.html)
+- Opensquilla Launches Open Source Ai Agent To Cut Token Costs
 - [Introducing Seer Agent The Answer Is Already In Sentry Now You Can Ask For It](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-seer-agent-the-answer-is-already-in-sentry-now-you-can-ask-for-it.md)
 - [The 1 Ai Agent For Financial Services Fin](https://github.com/QianJinGuo/wiki-public/blob/main/entities/the-1-ai-agent-for-financial-services-fin.md)
 
 → [原文存档](https://venturebeat.com/technology/intercom-now-called-fin-launches-an-ai-agent-whose-only-job-is-managing-another-ai-agent)
 
+## 深度分析
 ### 1. 元认知型 AI Agent 的商业首例
 Fin Operator 的本质不是一个普通的功能升级，而是业界首批大规模商用的「AI 管理 AI」产品之一。它代表了一种新的架构范式：不是让人类直接操作 AI，而是让一个 AI agent 替代人类去完成对另一个 AI agent 的配置、监控与调优工作。
 

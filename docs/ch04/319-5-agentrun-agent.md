@@ -1,6 +1,6 @@
 # 5 分钟上手 AgentRun：从注册到第一个 Agent 运行
 
-> 📊 Level ⭐⭐⭐⭐ | 9.0KB | `entities/aliyun-agentrun-5min-quickstart.md`
+> 📊 Level ⭐⭐⭐⭐ | 9.0KB
 
 ## 核心定位
 阿里云 AgentRun 的定位本质是**平台与用户职责重新分工**：平台承担容器、扩缩容、网络、监控、灰度、合规等基础设施负担，用户只需聚焦模型、提示词、工具三大核心要素。
@@ -49,6 +49,7 @@
 - **Python SDK**：`pip install agentrun-sdk`
 - **MCP 工具市场**：平台已对接主流 MCP 生态
 
+## 深度分析
 ### 平台定位的战略意图
 阿里云 AgentRun 的出现并非偶然——它是 Serverless 理念向 AI Agent 领域延伸的产物。传统模式下，企业部署一个 AI Agent 需要同时运维基础设施（容器、扩缩容、监控）和业务逻辑（模型、提示词、工具），两者叠加形成高门槛。AgentRun 通过"平台兜底基础设施、用户聚焦业务逻辑"的分工，试图将 AI Agent 的部署门槛降低到"点几个按钮就能上线"的程度。
 

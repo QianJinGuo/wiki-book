@@ -1,6 +1,6 @@
 # Skill自进化三路线：Trace2Skill归纳法 / EvoSkill验证闭环 / SkillOpt训练范式
 
-> 📊 Level ⭐⭐⭐⭐ | 12.7KB | `entities/skill-self-evolution-three-approaches.md`
+> 📊 Level ⭐⭐⭐⭐ | 12.7KB
 
 ## 摘要
 
@@ -67,6 +67,8 @@ Skill 自进化是 Agent 系统从"人工调优"走向"自主优化"的关键技
 4. **验证门控 + 负反馈缓冲** — 候选 Skill 在独立验证集上得分严格高于当前最优才接受（平局也拒绝）。被拒绝编辑存入 Rejected-Edit Buffer
 5. **慢更新 + 元更新：动量机制** — 四类样本归因（Improvements / Regressions / Persistent Failures / Stable Successes），受保护区域更新，Meta-Skill 仅对优化器可见
 6. **Harness 无关部署** — 可运行于 Chat / Codex CLI / Claude Code CLI 等多种 Harness，仅产出一个 best_skill.md 文件（300~2000 Tokens）
+
+## 深度分析
 
 ### 三条路线的哲学差异
 

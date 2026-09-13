@@ -1,6 +1,6 @@
 # AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）
 
-> 📊 Level ⭐⭐⭐ | 13.3KB | `entities/aws-一周综述amazon-bedrock-agentcore-付款适用于-aws-的-agent-工具套件等2026-年-5-月-11-日.md`
+> 📊 Level ⭐⭐⭐ | 13.3KB
 
 ## 核心要点
 - AWS 技术实践，覆盖 2026 年 5 月 5 日至 11 日这一周的重要发布

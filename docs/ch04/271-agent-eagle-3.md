@@ -1,6 +1,6 @@
 # 多轮 Agent 场景下，滴滴的 EAGLE-3 训推加速实践
 
-> 📊 Level ⭐⭐⭐⭐ | 15.1KB | `entities/didi-eagle-3-speculative-decoding-agents.md`
+> 📊 Level ⭐⭐⭐⭐ | 15.1KB
 
 ## 背景：为什么 Agent 场景对推理速度要求更高
 
@@ -126,6 +126,8 @@ EAGLE-3 的平均 Accept Len 约为 MTP 的 **2.2–2.3×**，在长序列场景
 - **C**：更强表达的 Draft + 路由专精（MoE / Routing Draft）
 - **D**：面向未来范式的可插拔框架
 
+## 深度分析
+
 ### 1. TTT 机制揭示了训练-推理分布一致性问题在 Draft 模型中的核心地位
 
 传统训练以 ground truth token 为条件，而实际推理以模型自己生成的内容为条件——这个分布偏移在 Draft 模型上被放大：Draft 的输出直接影响 Accept Len，进而决定加速效果。EAGLE-3 的 TTT 机制通过多步递进训练模拟真实推理流程，使 Draft 适应自回归生成的分布。这个设计选择解释了为什么 EAGLE-3 的 Accept Len 能达到 MTP 的 2.2-2.3 倍——核心差距不在模型架构，而在于训练目标与推理目标的对齐程度。
@@ -173,7 +175,7 @@ EAGLE-3 相对 MTP 在 Mean TPOT 上有 59% 改善，但文章更强调 P95/P95 
 ## 相关实体
 - [Eagle 3 Speculative Decoding Optimization](https://github.com/QianJinGuo/wiki-public/blob/main/entities/eagle-3-speculative-decoding-optimization.md)
 - [Taobao Smart Shopping Guide Agent Evaluation Pzmx](https://github.com/QianJinGuo/wiki-public/blob/main/entities/taobao-smart-shopping-guide-agent-evaluation-pzmx.md)
-- [Gemma 4 Multi Token Prediction Drafters](../ch01/508-gemma-4-multi-token-prediction-drafters.html)
+- Gemma 4 Multi Token Prediction Drafters
 - [Mellum 2 Jetbrains Open 12B Moe Code Model](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mellum-2-jetbrains-open-12b-moe-code-model.md)
 - [Wow Harness V3 Governance Protocol](https://github.com/QianJinGuo/wiki-public/blob/main/entities/wow-harness-v3-governance-protocol.md)
 

@@ -1,6 +1,6 @@
 # Data modeling best practices for Amazon Quick Sight multi-dataset relationships
 
-> 📊 Level ⭐ | 4.1KB | `entities/data-modeling-best-practices-for-amazon-quick-sight-multi-da.md`
+> 📊 Level ⭐ | 4.1KB
 
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/data-modeling-best-practices-for-amazon-quick-sight-multi-dataset-relationships)
 
@@ -10,7 +10,7 @@ Business intelligence analysts routinely face the same challenge at the start of
 
 Until now, combining these tables in Amazon Quick Sight required pre-joining everything into wide, denormalized datasets before any analysis could begin. That approach works. But it forces data-modeling decisions up front, duplicates measures across different grains, introduces maintenance overhead, and typically produces a different dataset for almost every reporting scenario.
 
-**Today, we are excited to announce[Multi-Dataset Relationships in Amazon Quick Sight](<https://aws.amazon.com/blogs/machine-learning/build-a-unified-semantic-layer-across-datasets-with-multi-dataset-topics-in-amazon-quick/>)**. This new capability lets you define logical relationships between Quick Sight datasets and perform runtime joins at query time. Instead of flattening tables ahead of time, you keep each table as its own Quick Sight dataset and declare how those datasets relate to one another inside a Quick Sight Topic. Quick Sight then assembles precisely the join it needs for visuals, calculated fields, filters, or natural-language Q&A.
+**Today, we are excited to announceMulti-Dataset Relationships in Amazon Quick Sight**. This new capability lets you define logical relationships between Quick Sight datasets and perform runtime joins at query time. Instead of flattening tables ahead of time, you keep each table as its own Quick Sight dataset and declare how those datasets relate to one another inside a Quick Sight Topic. Quick Sight then assembles precisely the join it needs for visuals, calculated fields, filters, or natural-language Q&A.
 
 This paradigm shift brings several key advantages:
 

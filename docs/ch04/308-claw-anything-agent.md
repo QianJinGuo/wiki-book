@@ -1,6 +1,6 @@
 # Claw-Anything：首个面向个人助理 Agent 的三维上下文扩展评测基准
 
-> 📊 Level ⭐⭐⭐⭐ | 9.9KB | `entities/claw-anything-personal-assistant-agent-benchmark.md`
+> 📊 Level ⭐⭐⭐⭐ | 9.9KB
 
 ## Claw-Anything：See Anything, then Do Anything
 
@@ -77,6 +77,8 @@ CLI 任务上 GPT-5.5 和 Claude Opus 4.7 是王者（40 分档）。但 GUI+CLI
 4. **权限边界和分寸感是真实助理的必备素质**——既要算明白账，又要知道什么事不能替用户做主
 5. **自动生成训练数据 + 微调可以有效提升开源模型**——23.7% 的提升证明了数据管线的价值
 
+## 深度分析
+
 ### 上下文扩展 ≠ 上下文理解：噪声与矛盾的双刃剑
 
 Claw-Anything 最反直觉的发现是"给模型看得越多，它反而做得越差"。这揭示了一个根本性问题：当前 LLM 的长上下文能力是"能装下"而非"能理解"。191.7k 字的生活轨迹中，绝大多数信息与当前任务无关，有些甚至互相矛盾。模型需要的不是更大的上下文窗口，而是更强的信息过滤和矛盾检测能力。
@@ -110,7 +112,7 @@ Rachel 婚礼策划的例子完美展示了权限边界问题：助理需要算�
 - 论文：https://arxiv.org/pdf/2605.26086
 - 代码：https://github.com/LiberCoders/Claw-Anything
 - 数据：https://huggingface.co/datasets/LiberCoders/Claw-Anything
-- → [ProgramBench Agent Benchmark](285-programbench-agent-benchmark.html) — 程序合成能力评测
+- → ProgramBench Agent Benchmark — 程序合成能力评测
 - → [Agent 记忆评测全景](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-evaluation-landscape-taobao-survey.md) — 记忆系统评测
 - → [原文存档](https://mp.weixin.qq.com/s/rEk33ieaeX0Gg5mmb9LKZQ)
 

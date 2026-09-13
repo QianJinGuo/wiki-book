@@ -1,6 +1,6 @@
 # What is AX? John Maeda on Accessibility as Ability
 
-> 📊 Level ⭐⭐⭐ | 6.6KB | `entities/2026-06-11-what-is-ax.md`
+> 📊 Level ⭐⭐⭐ | 6.6KB
 
 → [原文存档](https://maeda.pm/2026/06/11/what-is-ax/)
 
@@ -33,6 +33,8 @@ Maeda 提出了一个精妙的设计框架：Chat 是一只手（表达意图）
 ### 5. 盲人可能是 Agent 时代的"原住民"
 
 文章最具洞察力的观点：最适应 Agent 时代的可能不是传统"高级用户"，而是那些长期通过语言、结构、序列、记忆来导航计算的人——盲人用户。他们处理合成语音的速度是普通人的 2-3 倍。法兰克福博物馆里，灯灭的那一刻，"残障"瞬间变成了"能力"。
+
+## 深度分析
 
 ### 从 UX 到 AX 的范式转移
 

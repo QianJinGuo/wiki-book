@@ -1,6 +1,6 @@
 # Stop hand-tuning kernels: How Neuron Agentic Development accelerates AWS Trainium optimizations
 
-> 📊 Level ⭐⭐⭐ | 8.6KB | `entities/stop-hand-tuning-kernels-how-neuron-agentic-development-acce.md`
+> 📊 Level ⭐⭐⭐ | 8.6KB
 
 > 原文存档：[原文存档](https://aws.amazon.com/blogs/machine-learning/stop-hand-tuning-kernels-how-neuron-agentic-development-accelerates-aws-trainium-optimizations)
 
@@ -44,6 +44,8 @@ Step 3-4 展示 SwiGLU MLP 内核的性能分析：
 - 深入调查发现：DMA 指令远低于目标大小（低效），且所有输入被重复加载 8 次（冗余）
 - 精确定位到导致次优传输的三行 NKI 代码——修复这些行可能间接减少 TE 空闲间隙并改善内核延迟
 
+## 深度分析
+
 ### Agentic Development 对硬件编程范式的重构
 
 传统内核开发要求工程师同时掌握三层知识：硬件架构约束（分区维度、内存层次）、编程模型（NKI API 语义）和性能工程（profiling + 优化循环）。这三层知识的交集极小，导致能写高性能内核的工程师稀缺。Neuron Agentic Development 的核心洞察是将这三层知识编码为 Agent 的 Skills——硬件约束嵌入 writing skill 的分块策略，API 语义编码在 docs skill 中，性能工程流程化为 profiling + querying skill 的组合。这使得 ML 工程师可以专注于"我想实现什么"而非"硬件如何限制我"。
@@ -70,7 +72,7 @@ Step 3-4 展示 SwiGLU MLP 内核的性能分析：
 
 ## 相关实体
 
-- [Building A Secure Auth Code Flow Setup Using Agentcore Gatew](148-building-a-secure-auth-code-flow-setup-using-agentcore-gatew.html) — AgentCore 安全配置
+- Building A Secure Auth Code Flow Setup Using Agentcore Gatew — AgentCore 安全配置
 - [Agentcore Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentcore-harness.md) — AgentCore 工程化
 - [Build An Ai Powered Equipment Repair Assistant Using Amazon ](https://github.com/QianJinGuo/wiki-public/blob/main/entities/build-an-ai-powered-equipment-repair-assistant-using-amazon-.md) — AgentCore + Strands 实践
 - "Agent 部署策略" — Agent 部署策略

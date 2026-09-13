@@ -1,6 +1,6 @@
 # 多 Agent 编排系统
 
-> 📊 Level ⭐⭐⭐ | 10.6KB | `entities/agent-orchestration-multi-agent-systems.md`
+> 📊 Level ⭐⭐⭐ | 10.6KB
 
 ## 摘要
 
@@ -16,6 +16,8 @@
 - **DAG 编排**：Amazon MWAA（及 Temporal、Airflow、Orkes、Prefect 等 Marketplace 工具）处理复杂多步流水线。
 - **四种编排模式**：Orchestrator-Worker 层级编排、Peer-to-Peer 对等协作、Auction-based 市场竞争、投票共识。
 - **四大设计问题**：任务分解、角色分配、通信协议、冲突消解构成编排设计的核心维度。
+
+## 深度分析
 
 ### 四种编排模式的设计哲学与取舍
 
@@ -52,7 +54,7 @@
 - **第三问·谁拍板**：分歧不是问题，"基于不同现实却被当同一份现实汇总"才是——汇总不能只做文本拼接，结论要能回到输入快照/来源/证据；结果标"候选/已验证/冲突/已否决"四态；异构输出靠版本化结果契约或接入层适配器对齐；审查只有改变后续动作才算进入系统（"没有后果的批评只是另一段文本"）。
 - **第四问·凭什么算完成**：完成由验收条件定义、由运行时留下证据——是状态机里的状态，不是 Agent 回复里的句号；写操作带幂等键，超时按"未执行/已执行/状态未知"分支处理（状态未知 ≠ 失败）；失败落在子任务层做局部重试而非整任务重跑（避免副作用重复落库）；调度器重启靠租约+心跳防双执行者。
 
-核心命题：**多 Agent 并没有绕开分布式系统的老问题，只是把执行者从服务和线程换成了会自主判断的 Agent**——模型负责判断下一步，运行时负责证明这一步确实发生过；这正是 Harness 需要承担的部分（给正确工作集/限制动作/记录真实结果/失败后带回可继续状态）。该框架与 [Anthropic 多 Agent 研究系统](223-anthropic-multi-agent-research-system.html) 的宽度优先拆分、Google Antigravity Teamwork 的审查闭环互为印证。
+核心命题：**多 Agent 并没有绕开分布式系统的老问题，只是把执行者从服务和线程换成了会自主判断的 Agent**——模型负责判断下一步，运行时负责证明这一步确实发生过；这正是 Harness 需要承担的部分（给正确工作集/限制动作/记录真实结果/失败后带回可继续状态）。该框架与 Anthropic 多 Agent 研究系统 的宽度优先拆分、Google Antigravity Teamwork 的审查闭环互为印证。
 
 ## 实践启示
 
@@ -70,9 +72,9 @@
 
 - [一个 Mission 跑 16 天、烧 7.78 亿 Token：Factory 公开了多 Agent 系统的构建哲学](https://github.com/QianJinGuo/wiki-public/blob/main/entities/factory-missions-multi-agent-shipping-for-days-luke.md)
 - [AutoResearch 异步多 Agent AI 寒武纪新阶段](https://github.com/QianJinGuo/wiki-public/blob/main/entities/autoresearch-next-phase-async-multi-agent-ai寒武纪.md)
-- [Anthropic Multi Agent Research System](223-anthropic-multi-agent-research-system.html)
+- Anthropic Multi Agent Research System
 - [Code as Agent Harness 综述](https://github.com/QianJinGuo/wiki-public/blob/main/entities/code-as-agent-harness-survey.md)
-- [Orchestrating Self-Evolving Agents with CrewAI and NVIDIA NemoClaw](https://github.com/QianJinGuo/wiki-public/blob/main/entities/orchestrating-self-evolving-agents-with-crewai-and-nvidia-ne.md)
+- Orchestrating Self-Evolving Agents with CrewAI and NVIDIA NemoClaw
 - AWS Bedrock 多智能体协作指南
 - [Multi-Agent 的四种协作模式：Supervisor、Swarm、网状、流水线，怎么选？](https://github.com/QianJinGuo/wiki-public/blob/main/entities/james-multi-agent-collaboration-modes.md)
 - [Agent vs Workflow：控制权连续谱与生产级选型框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-vs-workflow-control-continuum-framework.md)

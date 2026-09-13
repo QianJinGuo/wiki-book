@@ -1,6 +1,6 @@
 # Hermes Agent /goal 长任务运行时架构拆解：状态持久化、Judge 闭环与自主续航
 
-> 📊 Level ⭐ | 4.7KB | `entities/hermes-agent-goal-runtime-architecture-state-persistence-judge-closed-loop.md`
+> 📊 Level ⭐ | 4.7KB
 
 > 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.8**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/hermes-agent-goal-runtime-architecture-state-persistence-judge-closed-loop.md`，一手来源仍见下方 sources。
@@ -11,12 +11,12 @@
 - [AI Agent 架构设计（七）：Skills 系统设计（OpenClaw、Claude Code、Hermes Agent 对比）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-system-design-three-way-comparison.md) — 三框架skill系统设计对比
 - [Rein：4 模块 + 5 类型边界防止 agent.go 膨胀到 3000 行](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rein-go-agent-4-modules-5-type-boundaries.md) — 4模块+5类型边界+7不变量：数据契约防上帝文件
 - [Coding Harness 工程本质：从 Pi 到 OpenClaw](https://github.com/QianJinGuo/wiki-public/blob/main/entities/pi-openclaw-coding-harness.md) — Harness八能力+五工程模式：Context像投影8441字rv9
-- [Context Window Management Comparison](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-window-management-comparison.md) — 四框架对比rv9
+- Context Window Management Comparison — 四框架对比rv9
 - [800行代码实现 Open Claw 的 Tool、消息总线、子Agent管理架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/open-claw-tool-bus-subagent-architecture.md) — 薄抽象显式控制流8802字rv9全版
 - [Hermes Agent 闭环学习机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-closed-learning-loop.md) — 闭环学习飞轮+Nudge触发+spawn_background_review
 - [MIRA + MPA：深度原理 AI Scientist 递归自训练打造材料基座模型，40 项实验全面 SOTA](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mira-mpa-deep-principle-ai4s-40-sota.md) — AI Scientist递归自训练，35/40胜前SOTA
-- [The Coming Loop](../ch01/455-the-coming-loop.html) — Ronacher两种循环区分
-- [深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-prompt-context-harness.md) — 三维度源码：23模块拼装+自适应分块+双层Memory
+- The Coming Loop — Ronacher两种循环区分
+- 深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践 — 三维度源码：23模块拼装+自适应分块+双层Memory
 - [Code as Agent Harness 综述](https://github.com/QianJinGuo/wiki-public/blob/main/entities/code-as-agent-harness-survey.md) — 102页综述
 
 ## 工程实践

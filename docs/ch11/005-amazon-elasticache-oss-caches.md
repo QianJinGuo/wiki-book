@@ -1,6 +1,6 @@
 # 构建 Amazon ElastiCache OSS Caches 慢查询监控方案
 
-> 📊 Level ⭐ | 7.8KB | `entities/构建-amazon-elasticache-oss-caches-慢查询监控方案.md`
+> 📊 Level ⭐ | 7.8KB
 
 → [原文存档](https://aws.amazon.com/cn/blogs/china/build-amazon-elasticache-oss-caches-query-monitoring-solution)
 
@@ -59,7 +59,7 @@ Redis 内置 SLOWLOG 机制，由两个参数控制：
 
 ### 2.3 AWS 原生监控的局限性
 
-ElastiCache 在 [Amazon CloudWatch](<https://aws.amazon.com/cn/cloudwatch/>) 中提供了 EngineCPUUtilization、CurrConnections、CacheHits 等丰富指标，但并不存在一个开箱即用的“慢查询次数”指标。运维团队通常只能在 CPU 或延迟告警触发后，再反向排查是哪些命令导致——这是一种滞后的、被动的响应模式。我们需要的是一个能够直接量化“过去一分钟内发生了多少次慢查询”的指标，并据此提前告警。
+ElastiCache 在 Amazon CloudWatch 中提供了 EngineCPUUtilization、CurrConnections、CacheHits 等丰富指标，但并不存在一个开箱即用的“慢查询次数”指标。运维团队通常只能在 CPU 或延迟告警触发后，再反向排查是哪些命令导致——这是一种滞后的、被动的响应模式。我们需要的是一个能够直接量化“过去一分钟内发生了多少次慢查询”的指标，并据此提前告警。
 
 ### 2.4 本方案的核心价值
 

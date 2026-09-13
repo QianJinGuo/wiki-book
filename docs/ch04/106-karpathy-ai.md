@@ -1,6 +1,6 @@
 # 连Karpathy都开始恐慌：AI正在重新定义「程序员」｜硅基时间
 
-> 📊 Level ⭐⭐⭐ | 13.4KB | `entities/karpathy-vibe-engineering-silicon-era-jiangtao.md`
+> 📊 Level ⭐⭐⭐ | 13.4KB
 
 ## 核心结论
 
@@ -61,6 +61,8 @@ Codex当场揪出两个资深工程师漏掉的重大bug——这些工程师写
 
 - 低17%组：AI随便写，祈祷测试能过 → 认知卸载
 - OpenAI 7小时500行diff：大部分时间花在测试验证 → 主动验证
+
+## 深度分析
 
 ### 1. 程序员身份危机的结构性根源
 

@@ -1,6 +1,6 @@
 # Bedrock AgentCore NLP 仪表盘自动化 Agent
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 8.6KB | `entities/build-ai-powered-dashboard-automation-agents-with-nlp-on-amazon-bedrock-agentcor.md`
+> 📊 Level ⭐⭐⭐⭐⭐ | 8.6KB
 
 ## 核心要点
 
@@ -16,6 +16,8 @@
 - [Break The Context Window Barrier With Amazon Bedrock Agentcore](https://github.com/QianJinGuo/wiki-public/blob/main/entities/break-the-context-window-barrier-with-amazon-bedrock-agentcore.md)
 
 → [原文存档](https://aws.amazon.com/blogs/machine-learning/build-ai-powered-dashboard-automation-agents-with-nlp-on-amazon-bedrock-agentcore/)
+
+## 深度分析
 
 ### 架构设计：三代理协作模式
 

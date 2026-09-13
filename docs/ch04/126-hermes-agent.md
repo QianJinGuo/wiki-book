@@ -1,6 +1,6 @@
 # Hermes Agent 九模块架构解析
 
-> 📊 Level ⭐⭐⭐ | 11.5KB | `entities/hermes-9-module-architecture-winty.md`
+> 📊 Level ⭐⭐⭐ | 11.5KB
 
 ## 9 大模块
 
@@ -70,6 +70,8 @@ SQLite 存储：用户输入、每一步 reasoning、工具调用和返回值、
 
 Hermes 把"自进化"拆成 6 块工程实体：触发（Nudge）→ 审视（Review）→ 记录（Memory+Skill）→ 回放（Session）→ 加载（Prompt Assembly）→ 执行（Loop+Tool）。每一块都是真实代码、真实落盘文件、真实可复盘数据。
 
+## 深度分析
+
 ### 三线解耦架构：执行与学习的正交分离
 
 Hermes 架构最核心的设计决策是将 Agent 的行为分解为三条正交主线：执行链（Loop+Tool+Session）、学习链（Nudge+Review+Memory+Skill）和拼装链（Prompt Assembly+SOUL）。这种解耦带来的工程优势是显著的：执行链路追求低延迟、高吞吐，不需要为学习任务承担额外开销；学习链路则可以独立运行更慢但更深度的推理（如 Review Agent），不受实时性约束。更重要的是，学习链的产物（Memory 和 Skill）以 markdown 文件形式沉淀，与执行链的运行时状态完全隔离——这意味着即使 Agent 崩溃重启，积累的知识不会丢失。相比之下，许多 Agent 实现将记忆和学习混在同一个 ReAct 循环里，导致"一边干活一边反思"的效率损失。
@@ -117,7 +119,7 @@ SOUL.md 作为人格层，解决的不是"Agent 说什么"的问题，而是"Age
 
 ## 相关实体
 - [Claude Code Search Architecture Tencent 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-search-architecture-tencent-2026.md)
-- [Openclaw Prompt Context Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-prompt-context-harness.md)
+- Openclaw Prompt Context Harness
 - [Fudan Peking Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fudan-peking-ahe-agentic-harness-engineering.md)
 - [Loongsuite Genai Semconv Alibaba](https://github.com/QianJinGuo/wiki-public/blob/main/entities/loongsuite-genai-semconv-alibaba.md)
 - [Agent Evolution Four Stages Six Dimensions Aliyun](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-evolution-four-stages-six-dimensions-aliyun.md)

@@ -1,6 +1,6 @@
 # 5 Years and $5M Later: Inventing a New Programming Language for Web Development Was a Mistake (Wasp 复盘)
 
-> 📊 Level ⭐⭐⭐ | 11.5KB | `entities/5-years-and-5m-later-inventing-a-new.md`
+> 📊 Level ⭐⭐⭐ | 11.5KB
 
 ## 5 Years and $5M Later: Inventing a New Programming Language for Web Development Was a Mistake
 
@@ -25,6 +25,8 @@ Wasp 想做的是 "Rails / Laravel for JS"，但拉伸到前端——一个跨�
 - **TypeScript SDK 切换的代价**：「**只是替换了编译器的前端**」——后端、生成器、运行时一切照旧；用户从此每个编辑器都开箱即用，可以用条件、循环、import 拆分配置（如自实现 file-based routing）
 - **AI 友好性是新增价值**：AI Agent 写代码越多，开发者越需要「结构化、有意见」的框架来约束输出——这是 Django / Rails / Laravel 复兴的同一逻辑，Wasp 在 JS 生态里复刻它
 - **核心教训**：「我们当初对『语言』和『规范』几乎不区分——其实它们是两件不同的事，规范才是价值所在」
+
+## 深度分析
 
 ### DSL 的两难：技术正确不等于市场正确
 

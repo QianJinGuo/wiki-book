@@ -1,6 +1,6 @@
 # 老代码克星：36k Star的 AI 神器，跑一条命令就把项目结构整明白了！
 
-> 📊 Level ⭐⭐⭐⭐ | 9.0KB | `entities/understand-anything-code-knowledge-graph-lum-jike.md`
+> 📊 Level ⭐⭐⭐⭐ | 9.0KB
 
 > -> [原文存档](https://mp.weixin.qq.com/s/I75todL-x4myILGGbtZc4g)
 
@@ -56,7 +56,7 @@ Understand-Anything 本质上是将代码库的静态结构转化为动态交互
 - [Rag技术框架的演进方向](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag技术框架的演进方向.md)
 - [Graphify](https://github.com/QianJinGuo/wiki-public/blob/main/entities/graphify-software-engineering-knowledge-graph.md) — 同一赛道的另一款软件工程知识图谱工具
 - [Cursor.Com Composer 2 5](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cursor.com-composer-2-5.md) — 同为 AI coding 工具
-- [How Ai Agent Memory Works](../ch04/108-how-ai-agent-memory-works.html) — Agent 记忆机制
+- How Ai Agent Memory Works — Agent 记忆机制
 
 ## 第 2 来源：码途漫谈 2026-06-11 补充视角
 

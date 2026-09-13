@@ -1,6 +1,6 @@
 # Hacker News 热帖：AI 会写代码了，为啥还要用 Python？
 
-> 📊 Level ⭐⭐⭐ | 9.0KB | `entities/hackernews-ai-coding-why-python-20260513.md`
+> 📊 Level ⭐⭐⭐ | 9.0KB
 
 当 AI 能够理解自然语言并生成可执行代码时，编程语言的角色正在经历百年未有之重塑——它不再是人与机器沟通的桥梁，而是人与 AI 协作的契约。
 2026 年 5 月 12 日，一篇题为 "If AI writes your code, why use Python?" 的文章在 Hacker News 上引发剧烈讨论，迅速攀升至 526 分，评论数突破 568 条，成为当日最热门的技术话题之一。
@@ -37,7 +37,7 @@ Doocs 微信号整理：https://mp.weixin.qq.com/s/Uirhm4KubbKmhF0CQGteVQ
 - [Ai Production Development Workflow Openspec Superpowers Gstack](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-production-development-workflow-openspec-superpowers-gstack.md)
 - [Ai Era Git Version Control Agentic Coding Practices](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-era-git-version-control-agentic-coding-practices.md)
 - [Alphaevolve Deepmind Discovery Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/alphaevolve-deepmind-discovery-agent.md)
-- [Ai Coding Guide Tmall Deep Dive](061-ai-coding-guide-tmall-deep-dive.html)
+- Ai Coding Guide Tmall Deep Dive
 
 → [原文存档](https://mp.weixin.qq.com/s/Uirhm4KubbKmhF0CQGteVQ)
 

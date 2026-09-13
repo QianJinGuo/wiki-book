@@ -1,6 +1,6 @@
 # Democratizing Machine Learning at Netflix: Building the Model Lifecycle Graph
 
-> 📊 Level ⭐⭐⭐ | 8.5KB | `entities/democratizing-machine-learning-at-netflix-building-the-model.md`
+> 📊 Level ⭐⭐⭐ | 8.5KB
 
 → [原文存档](https://netflixtechblog.com/democratizing-machine-learning-at-netflix-building-the-model-lifecycle-graph-5cc6d5828bb1?source=rss----2615bd06b42e---4)
 
@@ -16,6 +16,8 @@ Netflix scaled ML from one personalization use case to four domains — Personal
 - **Central trade-off**: thin events are notifications of change, not a change log — order stops mattering and drops self-heal, at the cost of read amplification on source systems.
 - **Vocabulary and extensibility**: Component (AIP URI), Entity, Entity Type, Domain (abstract interface), Provider (concrete source) — a new registry plugs in without changing the domain interface.
 - **Storage split**: Datomic for immutable-fact navigation with reified edges; Elasticsearch for discovery, filtering, and exact-name boosting in one index plus an owners index.
+
+## 深度分析
 
 ### Why a fragmented ML landscape produces black boxes
 

@@ -1,6 +1,6 @@
 # Netflix Druid 区间感知缓存：指数 TTL + 分桶查询去重
 
-> 📊 Level ⭐⭐⭐ | 10.2KB | `entities/netflix-druid-interval-aware-caching.md`
+> 📊 Level ⭐⭐⭐ | 10.2KB
 
 > 原文存档：[原文存档](https://netflixtechblog.com/stop-answering-the-same-question-twice-interval-aware-caching-for-druid-at-netflix-scale-22fadc9b840e?source=rss----2615bd06b42e---4)
 
@@ -28,6 +28,8 @@ late-arriving data 问题导致越新鲜的数据越可能变化，越老的数�
 - 存储后端：Netflix KVDAL（Cassandra），支持独立 TTL 的内部键值对
 - 实验结果：33% Druid 查询减少，66% P90 延迟改善，部分场景 14× 结果字节压缩
 - 策略可泛化：时间序列数据库 + 频繁重叠窗口查询场景均可受益
+
+## 深度分析
 
 ### 1. 滚动窗口查询的"隐式 DDoS"本质
 Netflix 的场景揭示了一个在实时分析系统中普遍存在但很少被显式建模的问题：当多个用户查看同一滚动窗口仪表板时，查询的重复度极高但缓存命中率极低。这不是用户行为问题，而是查询语义与缓存键设计的不匹配——Druid 的全结果缓存将时间区间编码进缓存键，导致每次窗口移动（即使仅 1 秒）都产生全新键。解耦"查什么"与"查何时"是解决这一类问题的核心思路。
@@ -63,7 +65,7 @@ Netflix 选择拦截代理而非修改 Druid 源码，这是一个务实的工�
 
 ## 相关实体
 - [High Throughput Graph Abstraction At Netflix](https://github.com/QianJinGuo/wiki-public/blob/main/entities/high-throughput-graph-abstraction-at-netflix.md)
-- [High Throughput Graph Abstraction At Netflix Part I](084-high-throughput-graph-abstraction-at-netflix-part-i.html)
+- High Throughput Graph Abstraction At Netflix Part I
 - [Netflix Live Operations Human Infrastructure](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-live-operations-human-infrastructure.md)
 - [Netflix Metadata Service Model Lifecycle Graph](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-metadata-service-model-lifecycle-graph.md)
 - [Netflix Nebula Archrules](https://github.com/QianJinGuo/wiki-public/blob/main/entities/netflix-nebula-archrules.md)

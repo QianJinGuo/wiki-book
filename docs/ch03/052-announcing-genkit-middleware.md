@@ -1,6 +1,6 @@
 # Announcing Genkit Middleware
 
-> 📊 Level ⭐⭐⭐⭐ | 9.6KB | `entities/developers.googleblog-announcing-genkit-middleware-intercept-extend-and-harden-y.md`
+> 📊 Level ⭐⭐⭐⭐ | 9.6KB
 
 ## 核心架构：三层拦截体系
 Genkit 的 tool loop 每次迭代经历：模型生成输出 → 工具执行 → 结果反馈新模型调用 → 循环直到模型结束。Middleware 在此循环的三层注入钩子：
@@ -32,6 +32,7 @@ Genkit 的 tool loop 每次迭代经历：模型生成输出 → 工具执行 �
 通过注入工具（`list_files`、`read_file`、`write_file`、`edit_file`）给予模型受限的文件系统访问，路径安全强制执行防止目录遍历（directory traversal）攻击。
 **典型场景**：代码生成 Agent 的工作区隔离、文档处理应用。
 
+## 深度分析
 ### 1. Middleware 组合顺序语义
 Genkit 明确采用**从左到右的包装顺序**：第一个列出的 Middleware 是最外层包装，依次向内。示例代码中 `Retry` 包裹 `ContentFilter`，意味着重试逻辑会包含内容过滤的结果——如果内容过滤失败（forbidden term 被检测），重试会再次执行整个 `ContentFilter` 逻辑。
 这种顺序语义在设计组合时需要仔细考虑：
@@ -105,7 +106,7 @@ Middleware 链会增加每次调用的延迟：
 - [Pi Mono](https://github.com/QianJinGuo/wiki-public/blob/main/entities/pi-mono.md)
 - [Microsoft Agent Framework Structured Output](https://github.com/QianJinGuo/wiki-public/blob/main/entities/microsoft-agent-framework-structured-output.md)
 - [Agentscope Java Harness Framework Enterprise Distributed](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentscope-java-harness-framework-enterprise-distributed.md)
-- [Skillsui](033-skillsui.html)
+- Skillsui
 
 → [原文存档](https://developers.googleblog.com/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps/)
 

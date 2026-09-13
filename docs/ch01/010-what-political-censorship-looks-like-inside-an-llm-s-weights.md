@@ -1,6 +1,6 @@
 # What political censorship looks like inside an LLM's weights — a mechanistic-interpretability study of Qwen 3.5
 
-> 📊 Level ⭐ | 10.6KB | `entities/what-political-censorship-looks-like-inside-an-llm-s-weights.md`
+> 📊 Level ⭐ | 10.6KB
 
 ## What political censorship looks like inside an LLM's weights
 
@@ -17,6 +17,8 @@
 - **不对称的训练模板细胞**：只训了特定的 topic×register 组合（Tiananmen→回避、别国 PRC→宣传、有害→西式拒绝、其余→事实），多数交叉组合不存在；方向偏移只会落到已训练单元格或其邻居。
 - **中文中间表示因果惰性**：tap 24 裁决以中文 token"承诺"（Tiananmen≈100%、有害≈96%），后续层分布式译回英文；但置零所有中文 logit 不改输出——语言只是 lm_head 读出偏差，真实决策在上游信号。
 - **Brittleness——脆弱窄带**：Tiananmen 回避模板是唯一狭窄结构，大 |α| 的随机方向即可击碎它并落入 denial/不连贯；西式拒绝模板高度冗余、几乎撬不动。
+
+## 深度分析
 
 ### 从外部与内部：四个响应风格与三条轴
 

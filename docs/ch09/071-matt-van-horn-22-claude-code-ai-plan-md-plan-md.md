@@ -1,6 +1,6 @@
 # Matt Van Horn 的 22 个 Claude Code 黑客技巧：让 AI 写 plan.md 但不读 plan.md
 
-> 📊 Level ⭐⭐⭐⭐ | 13.8KB | `entities/matt-van-horn-claude-code-workflow-philosophy.md`
+> 📊 Level ⭐⭐⭐⭐ | 13.8KB
 
 ## 摘要
 
@@ -90,6 +90,8 @@ Matt Van Horn（EveryInc，Python/Go 顶级项目贡献者）的 Claude Code 22 
 - **`/last30days`**：并行 9 平台研究，决策前必跑
 
 → [原文存档](https://mp.weixin.qq.com/s/-Ok39jmFZcXO_g0Bd1ROpA)
+
+## 深度分析
 
 ### 核心观点：80% 计划 + 20% 执行是 AI 时代人机协作的结构性反转
 
