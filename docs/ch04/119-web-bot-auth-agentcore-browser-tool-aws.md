@@ -57,7 +57,7 @@ WBA 的出现将对测试生态系统产生深远影响。CAPTCHA 提供商（�
 > [AWS China Blog 原文](https://aws.amazon.com/cn/blogs/china/intelligence-agent-driven-testing-transformation-making-agents-the-first-principle-of-testing/)
 
 ## 相关实体
-- [你不知道的 Agent 原理架构与工程实践](178-agent-principle-architecture-engineering-practice.html)
+- [你不知道的 Agent 原理架构与工程实践](179-agent-principle-architecture-engineering-practice.html)
 - [AI MAP: Security Testing for AI Agent Infrastructure — Bishop Fox](https://github.com/QianJinGuo/wiki-public/blob/main/entities/introducing-aimap-security-testing-for-ai-agent-bishop-fox.md)
 
 → [原文存档](https://aws.amazon.com/cn/blogs/china/intelligence-agent-driven-testing-transformation-making-agents-the-first-principle-of-testing/)

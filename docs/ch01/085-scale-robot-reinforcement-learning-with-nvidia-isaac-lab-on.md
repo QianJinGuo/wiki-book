@@ -30,7 +30,7 @@
 - [腾讯云Agent Memory：Mermaid无限画布×上下文卸载](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tencentdb-agent-memory-context-offloading.md) — Mermaid画布上下文卸载
 - [Better decisions at scale: How mathematical optimization delivers where intuition fails](https://github.com/QianJinGuo/wiki-public/blob/main/entities/better-decisions-at-scale-how-mathematical-optimization-deli.md) — 数学优化案例borderline
 - [小刘商业 Agent 增强层通用基座](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-xiaolaoliu-business-agent-augmentation-layer-general-base-20260606.md) — 基座+增强层论点短条
-- [Giving your AI a Job Interview](../ch11/098-giving-your-ai-a-job-interview.html) — Mollick评估三重困境+三种路径
+- [Giving your AI a Job Interview](../ch11/097-giving-your-ai-a-job-interview.html) — Mollick评估三重困境+三种路径
 - [我把 Karpathy 的 AutoResearch 搬到了软件开发领域，效果炸了](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-autoresearch-software-development-niaowo.md) — AutoResearch迁移软开+交叉审核
 
 ## 延伸导航

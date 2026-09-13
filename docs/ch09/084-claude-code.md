@@ -114,7 +114,7 @@ MCP 是"连接协议"，解决的是"如何让 Claude Code talk to X"的问题�
 
 ## 相关实体
 - [Obsidian + Claude Code 集成指南](https://github.com/QianJinGuo/wiki-public/blob/main/entities/obsidian-claude-code-integration.md) — 知识管理工具集成
-- [Claude Code MCP Server](../ch07/042-claude-code-mcp-server.html) — MCP 协议集成
+- [Claude Code MCP Server](../ch07/043-claude-code-mcp-server.html) — MCP 协议集成
 - [IMClaw](https://github.com/QianJinGuo/wiki-public/blob/main/entities/imclaw通过微信飞书操控claude-code-coodex-gemini-clipi-agent蜂群.md) — IM 平台操控
 - [OpenClaw 安全增强](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-security-and-feature-enhancement-practices.md) — 自托管 Agent 平台
 - [Kiro + Claude Code](https://github.com/QianJinGuo/wiki-public/blob/main/entities/developing-flink-monitoring-system-on-amazon-emr-with-kiro-ai-ide.md) — AI IDE 协同

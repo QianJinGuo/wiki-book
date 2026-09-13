@@ -20,11 +20,11 @@
 
   <div class="home-stats">
 
-    <div class="home-stats__item"><span class="home-stats__num">1,693</span><span class="home-stats__label">编撰条目</span></div>
+    <div class="home-stats__item"><span class="home-stats__num">1,695</span><span class="home-stats__label">编撰条目</span></div>
 
     <div class="home-stats__item"><span class="home-stats__num">20 章 · 5 篇</span><span class="home-stats__label">全书结构</span></div>
 
-    <div class="home-stats__item"><span class="home-stats__num">4,266</span><span class="home-stats__label">一手原文</span></div>
+    <div class="home-stats__item"><span class="home-stats__num">4,270</span><span class="home-stats__label">一手原文</span></div>
 
     <div class="home-stats__item"><span class="home-stats__num">★ × 5</span><span class="home-stats__label">难度分级</span></div>
 
@@ -40,9 +40,9 @@
 
 <nav class="home-parts" aria-label="全书五篇导览">
 
-<a class="home-part" href="#part-1"><span class="home-part__no">第一篇</span><span class="home-part__name">入门篇</span><span class="home-part__pos">从零理解 AI</span><span class="home-part__count">615 篇 · 3 章</span></a>
+<a class="home-part" href="#part-1"><span class="home-part__no">第一篇</span><span class="home-part__name">入门篇</span><span class="home-part__pos">从零理解 AI</span><span class="home-part__count">616 篇 · 3 章</span></a>
 
-<a class="home-part" href="#part-2"><span class="home-part__no">第二篇</span><span class="home-part__name">工程师篇</span><span class="home-part__pos">构建 AI 应用</span><span class="home-part__count">714 篇 · 7 章</span></a>
+<a class="home-part" href="#part-2"><span class="home-part__no">第二篇</span><span class="home-part__name">工程师篇</span><span class="home-part__pos">构建 AI 应用</span><span class="home-part__count">715 篇 · 7 章</span></a>
 
 <a class="home-part" href="#part-3"><span class="home-part__no">第三篇</span><span class="home-part__name">专家篇</span><span class="home-part__pos">深入系统架构</span><span class="home-part__count">275 篇 · 4 章</span></a>
 
@@ -60,15 +60,15 @@
 
 <article class="chapter-card">
 
-<div class="chapter-card__head"><span class="chapter-card__no">Ch01</span><span class="chapter-card__count">529 篇</span></div>
+<div class="chapter-card__head"><span class="chapter-card__no">Ch01</span><span class="chapter-card__count">530 篇</span></div>
 
 <h3 class="chapter-card__title"><a href="ch01-ai-basics.html">AI 与 LLM 基础</a></h3>
 
 <p class="chapter-card__desc">理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:24.95%" title="⭐ 入门 · 132 篇"></i><i class="lv2" style="width:10.40%" title="⭐⭐ 工程师 · 55 篇"></i><i class="lv3" style="width:37.24%" title="⭐⭐⭐ 专家 · 197 篇"></i><i class="lv4" style="width:18.71%" title="⭐⭐⭐⭐ 科学家 · 99 篇"></i><i class="lv5" style="width:8.70%" title="⭐⭐⭐⭐⭐ 大师 · 46 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:24.91%" title="⭐ 入门 · 132 篇"></i><i class="lv2" style="width:10.38%" title="⭐⭐ 工程师 · 55 篇"></i><i class="lv3" style="width:37.36%" title="⭐⭐⭐ 专家 · 198 篇"></i><i class="lv4" style="width:18.68%" title="⭐⭐⭐⭐ 科学家 · 99 篇"></i><i class="lv5" style="width:8.68%" title="⭐⭐⭐⭐⭐ 大师 · 46 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 132 · ⭐⭐ 55 · ⭐⭐⭐ 197 · ⭐⭐⭐⭐ 99 · ⭐⭐⭐⭐⭐ 46</div>
+<div class="chapter-card__legend">⭐ 132 · ⭐⭐ 55 · ⭐⭐⭐ 198 · ⭐⭐⭐⭐ 99 · ⭐⭐⭐⭐⭐ 46</div>
 
 <ul class="chapter-card__samples">
 
@@ -80,7 +80,7 @@
 
 </ul>
 
-<a class="chapter-card__more" href="ch01-ai-basics.html">进入章节 · 共 529 篇<span class="arrow" aria-hidden="true"> →</span></a>
+<a class="chapter-card__more" href="ch01-ai-basics.html">进入章节 · 共 530 篇<span class="arrow" aria-hidden="true"> →</span></a>
 
 </article>
 
@@ -225,15 +225,15 @@
 
 <article class="chapter-card">
 
-<div class="chapter-card__head"><span class="chapter-card__no">Ch07</span><span class="chapter-card__count">59 篇</span></div>
+<div class="chapter-card__head"><span class="chapter-card__no">Ch07</span><span class="chapter-card__count">60 篇</span></div>
 
 <h3 class="chapter-card__title"><a href="ch07-skill-tool.html">技能、工具与 MCP</a></h3>
 
 <p class="chapter-card__desc">Agent 的手脚：Skill 系统、MCP 协议、Tool Use</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:8.47%" title="⭐ 入门 · 5 篇"></i><i class="lv2" style="width:13.56%" title="⭐⭐ 工程师 · 8 篇"></i><i class="lv3" style="width:28.81%" title="⭐⭐⭐ 专家 · 17 篇"></i><i class="lv4" style="width:27.12%" title="⭐⭐⭐⭐ 科学家 · 16 篇"></i><i class="lv5" style="width:22.03%" title="⭐⭐⭐⭐⭐ 大师 · 13 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:8.33%" title="⭐ 入门 · 5 篇"></i><i class="lv2" style="width:13.33%" title="⭐⭐ 工程师 · 8 篇"></i><i class="lv3" style="width:30.00%" title="⭐⭐⭐ 专家 · 18 篇"></i><i class="lv4" style="width:26.67%" title="⭐⭐⭐⭐ 科学家 · 16 篇"></i><i class="lv5" style="width:21.67%" title="⭐⭐⭐⭐⭐ 大师 · 13 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 5 · ⭐⭐ 8 · ⭐⭐⭐ 17 · ⭐⭐⭐⭐ 16 · ⭐⭐⭐⭐⭐ 13</div>
+<div class="chapter-card__legend">⭐ 5 · ⭐⭐ 8 · ⭐⭐⭐ 18 · ⭐⭐⭐⭐ 16 · ⭐⭐⭐⭐⭐ 13</div>
 
 <ul class="chapter-card__samples">
 
@@ -245,7 +245,7 @@
 
 </ul>
 
-<a class="chapter-card__more" href="ch07-skill-tool.html">进入章节 · 共 59 篇<span class="arrow" aria-hidden="true"> →</span></a>
+<a class="chapter-card__more" href="ch07-skill-tool.html">进入章节 · 共 60 篇<span class="arrow" aria-hidden="true"> →</span></a>
 
 </article>
 
@@ -344,9 +344,9 @@
 
 <p class="chapter-card__desc">Agent 上生产：Bedrock AgentCore、沙箱、多租户</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:11.05%" title="⭐ 入门 · 20 篇"></i><i class="lv2" style="width:11.60%" title="⭐⭐ 工程师 · 21 篇"></i><i class="lv3" style="width:45.86%" title="⭐⭐⭐ 专家 · 83 篇"></i><i class="lv4" style="width:22.10%" title="⭐⭐⭐⭐ 科学家 · 40 篇"></i><i class="lv5" style="width:9.39%" title="⭐⭐⭐⭐⭐ 大师 · 17 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:10.50%" title="⭐ 入门 · 19 篇"></i><i class="lv2" style="width:11.60%" title="⭐⭐ 工程师 · 21 篇"></i><i class="lv3" style="width:46.41%" title="⭐⭐⭐ 专家 · 84 篇"></i><i class="lv4" style="width:22.10%" title="⭐⭐⭐⭐ 科学家 · 40 篇"></i><i class="lv5" style="width:9.39%" title="⭐⭐⭐⭐⭐ 大师 · 17 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 20 · ⭐⭐ 21 · ⭐⭐⭐ 83 · ⭐⭐⭐⭐ 40 · ⭐⭐⭐⭐⭐ 17</div>
+<div class="chapter-card__legend">⭐ 19 · ⭐⭐ 21 · ⭐⭐⭐ 84 · ⭐⭐⭐⭐ 40 · ⭐⭐⭐⭐⭐ 17</div>
 
 <ul class="chapter-card__samples">
 
@@ -422,9 +422,9 @@
 
 <p class="chapter-card__desc">AI 的燃料：实时入湖、流处理、数据质量</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:28.00%" title="⭐ 入门 · 7 篇"></i><i class="lv2" style="width:12.00%" title="⭐⭐ 工程师 · 3 篇"></i><i class="lv3" style="width:40.00%" title="⭐⭐⭐ 专家 · 10 篇"></i><i class="lv4" style="width:16.00%" title="⭐⭐⭐⭐ 科学家 · 4 篇"></i><i class="lv5" style="width:4.00%" title="⭐⭐⭐⭐⭐ 大师 · 1 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:28.00%" title="⭐ 入门 · 7 篇"></i><i class="lv2" style="width:8.00%" title="⭐⭐ 工程师 · 2 篇"></i><i class="lv3" style="width:44.00%" title="⭐⭐⭐ 专家 · 11 篇"></i><i class="lv4" style="width:16.00%" title="⭐⭐⭐⭐ 科学家 · 4 篇"></i><i class="lv5" style="width:4.00%" title="⭐⭐⭐⭐⭐ 大师 · 1 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 7 · ⭐⭐ 3 · ⭐⭐⭐ 10 · ⭐⭐⭐⭐ 4 · ⭐⭐⭐⭐⭐ 1</div>
+<div class="chapter-card__legend">⭐ 7 · ⭐⭐ 2 · ⭐⭐⭐ 11 · ⭐⭐⭐⭐ 4 · ⭐⭐⭐⭐⭐ 1</div>
 
 <ul class="chapter-card__samples">
 
@@ -617,6 +617,6 @@
 </div>
 </section>
 
-<footer class="home-map__foot">📊 全书收录 1,693 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-09-13</span></footer>
+<footer class="home-map__foot">📊 全书收录 1,695 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-09-14</span></footer>
 
 </div>

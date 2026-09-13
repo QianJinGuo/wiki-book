@@ -94,7 +94,7 @@
 - [Tencent Vibe Coding to Agentic Engineering Backend](ch04/297-tencent-vibe-coding-to-agentic-engineering-backend.html) — 全流程串终端会话实践
 - [高德广告工程 Harness/SDD 体系演进：从\](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gaode-sdd-harness-team-ai-coding-paradigm-ibjfu.md) — SDD+Harness团队级范式11119字
 - [Build a serverless image editing agent with Amazon Bedrock AgentCore harness](ch05/012-build-a-serverless-image-editing-agent-with-amazon-bedrock-a.html) — 图像编辑agent
-- [AWS Bedrock Agentcore Quality Optimization Flywheel](ch11/096-aws-bedrock-agentcore-quality-optimization-flywheel.html) — 质量飞轮
+- [AWS Bedrock Agentcore Quality Optimization Flywheel](ch11/095-aws-bedrock-agentcore-quality-optimization-flywheel.html) — 质量飞轮
 - [AI 生产开发工作流：OpenSpec 规范驱动 + Superpowers 工具链](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-production-development-workflow-openspec-superpowers-gstack.md) — 三件套工作流
 - [2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](https://github.com/QianJinGuo/wiki-public/blob/main/entities/2-小时0-行手写代码我用-claude-做了一个生产级-vscode-插件.md) — 实践复盘有具体经验教训
 - [Claude Code 上下文工程 —— Anthropic 团队的工程实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-context-engineering-anthropic-thariq.md) — 上下文工程官方表述

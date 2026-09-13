@@ -126,7 +126,7 @@ AgentLeak benchmark 显示多智能体系统暴露面（68.9%）显著高于单�
 - [Claude Code 源码核心机制详解](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-core-internals.md)
 - [Claude Code 源码拆解：从启动到多 Agent 扩展层](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-source-architecture.md)
 - [Agent架构关键变化：Harness正在成为新后端](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-architecture-harness-new-backend.md)
-- [Claude Code MCP Server](../ch07/042-claude-code-mcp-server.html)
+- [Claude Code MCP Server](../ch07/043-claude-code-mcp-server.html)
 
 - [Harness Engineering: 让 Coding Agent 可靠完成长程任务](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-让-coding-agent-可靠完成长程任务-v2.md)
 - [Boris Cherny — 从 IDE 到 Agent 控制台](https://github.com/QianJinGuo/wiki-public/blob/main/entities/boris-cherny-ide-to-agent-console.md)

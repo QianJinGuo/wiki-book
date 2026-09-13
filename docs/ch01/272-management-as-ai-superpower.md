@@ -109,7 +109,7 @@ Mollick 的三变量公式（Human Baseline Time、Probability of Success、AI P
 - [Claude Code And What Comes Next](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-and-what-comes-next.md)
 - [Your First Ai Agent Should Do One Thing Badly](../ch04/193-your-first-ai-agent-should-do-one-thing-badly.html)
 - [Co Existence And The End Of Co Intelligence](https://github.com/QianJinGuo/wiki-public/blob/main/entities/co-existence-and-the-end-of-co-intelligence.md)
-- [Giving Your Ai A Job Interview](../ch11/098-giving-your-ai-a-job-interview.html)
+- [Giving Your Ai A Job Interview](../ch11/097-giving-your-ai-a-job-interview.html)
 - [Agentops Operationalize Agentic Ai At Scale With Amazon Bedr](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md)
 - [存之有序治之有矩Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering.md)

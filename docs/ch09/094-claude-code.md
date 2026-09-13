@@ -244,7 +244,7 @@ AHE 是通用的 Harness 工程方法论；本文是 Claude Code 的具体场景
 - [Stripe Agent Economic Infrastructure Emily Sands](https://github.com/QianJinGuo/wiki-public/blob/main/entities/stripe-agent-economic-infrastructure-emily-sands.md)
 - [Pilotdeck Data派Thu 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/pilotdeck-data派thu-2026.md)
 - [Four Sub Agent Patterns](https://github.com/QianJinGuo/wiki-public/blob/main/entities/four-sub-agent-patterns.md)
-- [A Guide To Which Ai To Use In The Agentic Era](../ch01/321-a-guide-to-which-ai-to-use-in-the-agentic-era.html)
+- [A Guide To Which Ai To Use In The Agentic Era](../ch01/323-a-guide-to-which-ai-to-use-in-the-agentic-era.html)
 - [Ai Xiaolaoliu Business Agent Augmentation Layer General Base 20260606](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-xiaolaoliu-business-agent-augmentation-layer-general-base-20260606.md)
 - [Cloud Agent Development Environments](https://github.com/QianJinGuo/wiki-public/blob/main/entities/cloud-agent-development-environments.md)
 - [Volcengine Data Agent Product Overview](https://github.com/QianJinGuo/wiki-public/blob/main/entities/volcengine-data-agent-product-overview.md)

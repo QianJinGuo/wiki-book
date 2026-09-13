@@ -190,7 +190,7 @@ SynthID 三年累计标记 1000 亿张图片/视频和约 6 万年音频，新�
 
 → [原文存档](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/)
 
-- [Introducing Gemini Omni](325-introducing-gemini-omni.html)
+- [Introducing Gemini Omni](327-introducing-gemini-omni.html)
 - [Google Pm 2026 Five Developer Skills Shubham](https://github.com/QianJinGuo/wiki-public/blob/main/entities/google-pm-2026-five-developer-skills-shubham.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/vision-multimodal.md)
 

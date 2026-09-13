@@ -8,7 +8,7 @@
 ## 机制与论文
 - [Regression Tax: 技能包导致 Agent 性能退化的系统性分析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/regression-tax-skills-hurt-llm-agents.md) — Regression Tax：5832实验，回归抵消59%毛增益
 - [AutoResearch 分类法：四种 Agent 循环设计与四维分析框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/autoresearch-taxonomy-chengzihong-chengzihong.md) — 四循环四维分类法
-- [开源模型的下一阶段：三类模型分类与生态化路径](389-what-comes-next-with-open-models.html) — 三类模型分布智能论
+- [开源模型的下一阶段：三类模型分类与生态化路径](390-what-comes-next-with-open-models.html) — 三类模型分布智能论
 - [GPT 5.4 是 Codex 的一次大跨越：四维评估视角与 Agent 战争回归](https://github.com/QianJinGuo/wiki-public/blob/main/entities/gpt-54-is-a-big-step-for-codex.md) — 四维评估+Claude/GPT哲学分歧5698字全版
 - [多轮 Agent 场景下，滴滴的 EAGLE-3 训推加速实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/taobao-smart-shopping-guide-agent-evaluation-pzmx.md) — EAGLE-3训推加速实践
 - [Google Agentic RAG 跨语料库框架：充分上下文智能体 + 5 阶段管线](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-cambrian-google-agentic-rag-sufficient-context-cross-corpus-20260606.md) — 充分上下文RAG框架
@@ -28,7 +28,7 @@
 - [Management as AI superpower](272-management-as-ai-superpower.html) — delegation三变量公式+GDPval 72%实证
 - [长期运行的 Agent 怎么管：Hermes 治理分层与 5 张卡](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-long-running-governance-five-cards-ruofei.md) — don't automate slop+5张卡治理
 - [腾讯云Agent Memory：Mermaid无限画布×上下文卸载](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tencentdb-agent-memory-context-offloading.md) — Mermaid画布上下文卸载
-- [Langsmith Trajectory Evals](356-langsmith-trajectory-evals.html) — 轨迹评估四匹配模式
+- [Langsmith Trajectory Evals](357-langsmith-trajectory-evals.html) — 轨迹评估四匹配模式
 - [Secure AI agents with Policy and Lambda interceptors in Amazon Bedrock AgentCore gateway](https://github.com/QianJinGuo/wiki-public/blob/main/entities/secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz.md) — Cedar策略+Lambda拦截器双模式
 - [Anthropic 实战分享：如何让 AI Agent 持续工作几天？](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-long-running-agent-architecture-6h-retroforge.md) — 长时运行对抗架构
 - [小刘商业 Agent 增强层通用基座](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-xiaolaoliu-business-agent-augmentation-layer-general-base-20260606.md) — 基座+增强层论点短条

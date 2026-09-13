@@ -19,7 +19,7 @@
 - [存之有序，治之有矩——Agent 记忆系统的工程实践与演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/存之有序治之有矩agent-记忆系统的工程实践与演进.md) — 写入纪律prompt cache冲突
 - [AgentOps: Operationalize agentic AI at scale with Amazon Bedrock AgentCore](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedr.md) — 四支柱解析版
 - [AWS 强化微调：LLM-as-Judge 训练范式](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-reinforcement-fine-tuning-llm-as-judge.md) — RFT judge范式
-- [AWS Bedrock Agentcore Quality Optimization Flywheel](096-aws-bedrock-agentcore-quality-optimization-flywheel.html) — 质量飞轮
+- [AWS Bedrock Agentcore Quality Optimization Flywheel](095-aws-bedrock-agentcore-quality-optimization-flywheel.html) — 质量飞轮
 - [AWS Sagemaker Capacity Aware Inference Fallback](../ch01/226-aws-sagemaker-capacity-aware-inference-fallback.html) — 容量仲裁
 - [基于 AWS 示例项目，展示如何将 OpenClaw 迁移为基于 Amazon Bedrock AgentCore 的多租户 Serverless 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/using-amazon-bedrock-agentcore-openclaw-multi-5.md) — 消息渠道验证篇
 - [Extending MCP support for Amazon Bedrock AgentCore Gateway](125-extending-mcp-support-for-amazon-bedrock-agentcore-gateway.html) — MCP三原语统一+OAuth委托网关机制
