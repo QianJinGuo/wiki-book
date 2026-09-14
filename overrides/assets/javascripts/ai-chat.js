@@ -30,17 +30,17 @@
     try { localStorage.setItem("ai-chat-config", JSON.stringify(cfg)); } catch(e) {}
   }
 
-  // ========== 站点助手形象（银月头像） ==========
+  // ========== 站点助手形象（LumiFox 网页头像） ==========
   // 从脚本自身 URL 推导 assets 目录，兼容根路径与子路径（GH Pages）部署
   var _chatScript = document.querySelector('script[src*="ai-chat.js"]');
   var ASSETS_BASE = _chatScript ? _chatScript.src.replace(/javascripts\/ai-chat\.js.*$/, "") : "assets/";
 
   function avatarHtml(cls) {
-    return '<img class="ai-chat__avatar' + (cls ? " " + cls : "") + '" src="' + ASSETS_BASE + 'images/ai-avatar.webp" alt="银月 AI 助手" aria-hidden="true">';
+    return '<img class="ai-chat__avatar' + (cls ? " " + cls : "") + '" src="' + ASSETS_BASE + 'images/lumifox-avatar.webp" alt="" aria-hidden="true">';
   }
 
-  // 流式回答期间给触发按钮和面板加 thinking 态（机器人摇摆 + 眼睛扫描）
-  function setBotThinking(on) {
+  // 流式回答期间给 LumiFox 触发按钮和面板加 thinking 态
+  function setLumiFoxThinking(on) {
     var trigger = document.querySelector(".ai-chat-trigger");
     var panel = document.querySelector(".ai-chat-panel");
     if (trigger) trigger.classList.toggle("thinking", !!on);
@@ -163,7 +163,8 @@
     var trigger = document.createElement("button");
     trigger.className = "ai-chat-trigger";
     trigger.innerHTML = avatarHtml();
-    trigger.title = "银月 · Talk to AI";
+    trigger.setAttribute("aria-label", "Open LumiFox AI Engineering Guide");
+    trigger.title = "LumiFox · AI Engineering Guide";
 
     // 面板
     var panel = document.createElement("div");
@@ -178,7 +179,7 @@
 
     panel.innerHTML =
       '<div class="ai-chat__header">' +
-        '<span class="ai-chat__title"><span class="ai-chat__title-icon">' + avatarHtml("ai-chat__avatar--sm") + '</span> Talk to AI</span>' +
+        '<span class="ai-chat__title"><span class="ai-chat__title-icon">' + avatarHtml("ai-chat__avatar--sm") + '</span> LumiFox · AI Guide</span>' +
         '<div class="ai-chat__actions">' +
           '<button class="ai-chat__btn" data-action="settings" title="设置">⚙️</button>' +
           '<button class="ai-chat__btn" data-action="clear" title="清空">🗑</button>' +
@@ -222,7 +223,7 @@
         '</div>' +
       '</div>' +
       '<div class="ai-chat__messages">' +
-        '<div class="ai-chat__welcome"><span class="ai-chat__welcome-icon">💬</span><div>我是银月，这篇文章的 AI 助手<br>可以回答关于「' + getArticleTitle().substring(0, 30) + '」的任何问题</div></div>' +
+        '<div class="ai-chat__welcome"><span class="ai-chat__welcome-icon">💬</span><div>我是 LumiFox，这个页面的 AI 工程助手<br>可以回答当前页面和站内知识相关问题</div></div>' +
       '</div>' +
       '<div class="ai-chat__input-area">' +
         '<textarea class="ai-chat__input" rows="1" placeholder="问点什么..."></textarea>' +
@@ -621,7 +622,7 @@
       // 先获取 RAG 上下文
       var bubble = addMsg("assistant", "");
       isStreaming = true;
-      setBotThinking(true);
+      setLumiFoxThinking(true);
       if (bubble) bubble.innerHTML = '<div class="ai-chat__typing"><span></span><span></span><span></span></div>';
 
       // ========== RAG 搜索：客户端优先，服务器兜底 ==========
@@ -702,7 +703,7 @@
             },
             function(fullText) {
               isStreaming = false;
-              setBotThinking(false);
+              setLumiFoxThinking(false);
               conversationHistory.push({ role: "assistant", content: fullText });
               if (bubble) {
                 bubble.innerHTML = renderMd(fullText);
@@ -725,14 +726,14 @@
             },
             function(err) {
               isStreaming = false;
-              setBotThinking(false);
+              setLumiFoxThinking(false);
               if (bubble) bubble.innerHTML = '<span style="color:#e74c3c">' + friendlyError(err) + '</span>';
             }
           );
         })
         .catch(function(err) {
           isStreaming = false;
-          setBotThinking(false);
+          setLumiFoxThinking(false);
           if (bubble) bubble.innerHTML = '<span style="color:#e74c3c">RAG 查询失败: ' + err.message + '</span>';
         });
     }

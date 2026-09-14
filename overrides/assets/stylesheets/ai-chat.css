@@ -503,7 +503,7 @@
 }
 
 /* ============================================
-   站点助手「银月」头像（触发按钮 + 标题栏）
+   LumiFox 网页助手头像（触发按钮 + 标题栏）
    ============================================ */
 .ai-chat__avatar {
   display: block;
@@ -511,6 +511,7 @@
   height: 2.2rem;
   border-radius: 50%;
   object-fit: cover;
+  background: #0d1b2a;
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.55);
   animation: ai-avatar-float 3.2s ease-in-out infinite;
 }
