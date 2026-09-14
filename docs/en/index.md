@@ -4,7 +4,7 @@ title: English
 
 # AI Engineering — English Guide
 
-**AI 工程 (AI Engineering)** is an open-source book systematically compiled from 4,000+ first-hand articles — covering LLM fundamentals, Agents, Harness engineering, MCP, RAG, security, training and inference. Every entry traces back to a primary source, carries a difficulty rating, and the corpus is re-curated daily by an automated pipeline. License: CC BY-SA 4.0.
+**AI 工程 (AI Engineering)** is an open-source book systematically compiled from 4,273 first-hand articles — covering LLM fundamentals, Agents, Harness engineering, MCP, RAG, security, training and inference. Every entry traces back to a primary source, carries a difficulty rating, and the corpus is re-curated daily by an automated pipeline. License: CC BY-SA 4.0.
 
 !!! note "What is available in English"
 
@@ -12,7 +12,7 @@ title: English
     - **This guide page.**
     - **Site-wide machine translation** — turn it on below and every page you open is translated to English in your browser, on the fly. The original Chinese content is never modified.
 
-    The curated 20-chapter course and the 1,700+ entries are written in **Chinese**; use the translate icon in the header (it becomes **中文** while the mode is on) to switch back.
+    The curated 20-chapter course and the 1,695 entries are written in **Chinese**; use the translate icon in the header (it becomes **中文** while the mode is on) to switch back.
 
 <p><a class="md-button md-button--primary" href="#" onclick="if(window.WBLiveTranslate){window.WBLiveTranslate.toggle();}return false;">🌐 Turn on site-wide English translation</a></p>
 
@@ -35,7 +35,7 @@ A hands-on handbook for senior engineers: from probability models to reliable sy
 
 ## How the site works
 
-- **Sources**: 4,000+ first-hand articles (papers, engineering blogs, post-mortems) collected and deduplicated daily; 1,700+ curated entries so far, still growing.
+- **Sources**: 4,273 first-hand articles (papers, engineering blogs, post-mortems) collected and deduplicated daily; 1,695 curated entries so far, still growing.
 - **Difficulty ratings**: every entry is graded ⭐ to ⭐⭐⭐⭐⭐, so you can read at your own level.
 - **Traceability**: every curated entry links back to its primary source — the site is a map, not a replacement.
 - **Self-evolving**: an automated loop collects, filters and re-integrates new material every day.
