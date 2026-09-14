@@ -26,12 +26,22 @@ const wide = path.join(exportDir, "ai-engineering-cover-1920x1080.png");
 const social = path.join(exportDir, "ai-engineering-cover-1200x630.png");
 const socialJpg = path.join(exportDir, "ai-engineering-cover-1200x630.jpg");
 const thumbnail = path.join(exportDir, "ai-engineering-cover-thumbnail.png");
+const portraitEn = path.join(exportDir, "ai-engineering-cover-en-1600x2400.png");
+const wideEn = path.join(exportDir, "ai-engineering-cover-en-1920x1080.png");
+const socialEn = path.join(exportDir, "ai-engineering-cover-en-1200x630.png");
+const socialEnJpg = path.join(exportDir, "ai-engineering-cover-en-1200x630.jpg");
+const thumbnailEn = path.join(exportDir, "ai-engineering-cover-en-thumbnail.png");
 
 await renderSvg("ai-engineering-cover.svg", 1600, 2400, portrait);
 await renderSvg("ai-engineering-cover-wide.svg", 1920, 1080, wide);
+await renderSvg("ai-engineering-cover-en.svg", 1600, 2400, portraitEn);
+await renderSvg("ai-engineering-cover-wide-en.svg", 1920, 1080, wideEn);
 
 execFileSync(magick, [wide, "-resize", "1200x630^", "-gravity", "center", "-extent", "1200x630", "-strip", social], { stdio: "inherit" });
 execFileSync(magick, [social, "-quality", "92", "-strip", socialJpg], { stdio: "inherit" });
 execFileSync(magick, [wide, "-resize", "400x200^", "-gravity", "center", "-extent", "400x200", "-strip", thumbnail], { stdio: "inherit" });
+execFileSync(magick, [wideEn, "-resize", "1200x630^", "-gravity", "center", "-extent", "1200x630", "-strip", socialEn], { stdio: "inherit" });
+execFileSync(magick, [socialEn, "-quality", "92", "-strip", socialEnJpg], { stdio: "inherit" });
+execFileSync(magick, [wideEn, "-resize", "400x200^", "-gravity", "center", "-extent", "400x200", "-strip", thumbnailEn], { stdio: "inherit" });
 
 console.log(`Rendered cover assets to ${exportDir}`);

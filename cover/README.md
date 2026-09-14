@@ -6,6 +6,7 @@
 
 - `ai-engineering-cover.svg`：1600×2400 竖版封面，可编辑矢量排版源文件。
 - `ai-engineering-cover-wide.svg`：1920×1080 宽版封面，可编辑矢量排版源文件。
+- `ai-engineering-cover-en.svg`、`ai-engineering-cover-wide-en.svg`：英文 README 与英文传播场景使用的对应版式。
 - `render.mjs`：使用仓库已有的 Playwright 渲染 SVG，并生成全部尺寸版本。
 - `art/portrait-art.png`、`art/wide-art.png`：无文字的主视觉图层，便于后续替换或做其他版式。
 - `exports/`：已渲染的 PNG/JPG 尺寸版本。

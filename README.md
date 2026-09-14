@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://jinguo.tech">
-    <img src="docs/assets/images/ai-engineering-cover.png" alt="AI Engineering: from LLM fundamentals to production-grade agents" width="820">
+    <img src="docs/assets/images/ai-engineering-cover-en.png" alt="AI Engineering: from LLM fundamentals to production-grade agents" width="820">
   </a>
 </p>
 
@@ -17,7 +17,7 @@
 
 <p align="center">
   <a href="https://jinguo.tech">Read online</a> ·
-  <a href="docs/assets/images/ai-engineering-cover-1600x2400.png">Portrait cover</a> ·
+  <a href="docs/assets/images/ai-engineering-cover-en-1600x2400.png">Portrait cover</a> ·
   <a href="docs/PATH.md">Learning path</a> ·
   <a href="CONTRIBUTING.md">Contributing</a>
 </p>
