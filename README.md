@@ -72,6 +72,10 @@ The cover visualizes "a knowledge system that can be engineered": modules, conne
 
 Click the cover at the top to view the **1600×2400 portrait edition**. The landscape edition is used for the site homepage, social media, and share cards; before actual printing, publisher requirements such as author credit, ISBN, barcode, copyright page, bleed lines, and CMYK files still need to be confirmed.
 
+<p align="center">
+  <img src="docs/assets/images/ai-engineering-cover-en-1600x2400.png" alt="AI Engineering portrait cover" width="360">
+</p>
+
 ![AI Engineering website homepage](docs/assets/images/screenshot-home.png)
 
 ## Quick start
