@@ -26,7 +26,7 @@ PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOCS_DIR = os.path.join(PROJECT_DIR, "docs")
 
 CHAPTER_DIRS_RE = re.compile(r"^ch\d+$")
-DUP_HEAD_RE = re.compile(r"^##\s+Ch\d+\.\d+\s+(.+?)\s*$")
+DUP_HEAD_RE = re.compile(r"^##\s+Ch\d+\.(?:S\d+|\d+)\s+(.+?)\s*$")
 H1_RE = re.compile(r"^#\s+(.+?)\s*$")
 FENCE_RE = re.compile(r"^\s*(```|~~~)")
 

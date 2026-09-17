@@ -1,237 +1,284 @@
-# Agent-Memory 评测全景：基准、评估与记忆系统
+# Agent 记忆架构：先别急着把 Memory 当数据库
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 20.2KB
+> 📊 Level ⭐⭐⭐⭐⭐ | 31.5KB
 
-## 核心定位
+> 原创 若飞 架构师（JiaGouX）2026年5月12日
+最近几篇，我们一直在绕着同一件事往下看。
+先是 Cursor 的 Harness 复盘，让我印象比较深的一点是：Agent 真进了生产，一次回答有多聪明只是表层，后面还要看能不能评估、能不能观测、出问题能不能回滚、迭代时能不能持续调优。
+然后是上下文操作权。从 Claude Code 的 agentic search，到上下文窗口、工具输出、子代理隔离，问题慢慢变成：哪些信息进当前工作集，哪些留在窗口外，什么时候再取回来。
+再往后看长周期 Agent，又多了一层：一个任务跑了几个小时，跨了几个上下文窗口，最后留下来的"现场"，能不能让下一个 Agent、下一个模型、甚至下一个人接着干。
+这条线顺下去，绕不开 Memory。
+更早一点写 Clawdbot 内存架构《记住不难，想起才难》的时候，就已经碰到过这个问题。当时的重点还落在 Markdown 文件、混合检索、压缩前刷新这些抓手上。回头看，那只是第一层。
+把 Memory 放进 Agent Harness 之后，我现在更关心另一个问题：
+过去的信息，凭什么继续影响未来？
+这听着有点绕，放到工程现场里就很具体。
+一个 Agent 记住用户喜欢 TypeScript，本身是好事。可如果这条偏好来自半年前一个原型项目，今天用户正在维护的是 Python 数据管道，它还死抱着那条记忆不放，就会坏事。
+一个 Agent 记住"上次这个方案没成"，也可能有用。但如果上次失败是环境没装好，而不是方案本身有问题，这条记忆每被读出来一次，就会把后面的任务往错路上带一次。
+Memory 做不好，很多时候并不会显式报错。
+模型还是会答得很顺，只是它已经被旧的、错的、过期的经验牵着走了。
+---
+太长不看
 
-**淘天集团 - 场景智能技术团队 2026-06-03 发布的 Agent-Memory 评测全景综述**，系统梳理长期记忆能力评测的三大核心维度：
+- 把 Agent Memory 直接理解成聊天记录、长上下文或对话摘要，都会漏掉最麻烦的一层。
+- Session 解决当前会话连续性，Memory 解决跨会话、跨任务、跨时间的可更新经验。
+- Profile 可以看成 Memory 的一个消费视图；Policy 属于外部规则，不能让 Memory 随便改写。
+- Memory 的主链路可以压成三件事：写入、管理、读取。
+- 生产级 Memory 至少要覆盖任务、环境和 Agent 自己的失败经验，用户偏好只是其中一类。
+- 写入的动作，是给某些历史分配未来影响力。
+- 读取的动作，是把合适的历史转成当前任务的约束。
+- 管理环节最容易被低估：冲突、衰减、遗忘、版本、权限、审计，最后都会找上门。
+- 对 Coding Agent 来说，最稳的第一步通常是人能读、Agent 能改、系统能审计的工作区文件。
+- Memory 一旦可写，就变成持久化攻击面。被提示注入污染的 memory，会在未来会话里继续生效。
+- 值得做的 Memory，会让 Agent 在一个具体任务域里少重复犯错，也更能理解约束变化；至于"更懂你"，反而是靠后的一层。
 
-| 维度 | 解决什么 | 代表方案 |
-|------|---------|---------|
-| **Memory Benchmark** | 评什么：任务/数据/指标口径 | MUSE、LOCOMO |
-| **Memory Evaluation** | 怎么评：评测协议/对照/消融/误差归因 | MemoryAgentBench、LONGMEMEVAL、MemBench |
-| **Memory System** | 怎么落地：存储/写入/更新/冲突/隐私/RAG 集成 | THEANINE、RMM、M3-Agent、Mem0 |
+## 先别急着把 Memory 当数据库
+很多团队第一次做 Agent Memory，第一反应是上数据库。建一张表，存用户偏好、历史对话、任务摘要，再挂一个向量检索。需要的时候搜一下，拼进 prompt，模型就"记得"了。
+这个版本能跑，也确实能解决一部分问题。但它很快会撞上几个麻烦：
+1. 存进去的不一定都该长期影响未来。用户今天随口说"先别管测试"，到底是当下赶时间，还是长期偏好？这些东西如果不带来源、作用域和时间，一旦被存成"记忆"，后面就很难再分清。
+2. 搜出来的不一定适合当前任务。用户问"帮我改缓存策略"，语义上最接近的可能是上次讨论 Redis 的对话。可最后会改变设计选择的，也许是三个月前一次大促压测失败记录。相似不代表适合拿来用。
+3. Memory 会过期。偏好会变，项目会变，团队规则会变，模型能力也会变。一个不能遗忘的系统，最后会被自己的旧经验拖住。
+后来我会把 Agent Memory 看成 Harness 里的一层控制面。只按存储层理解，会漏掉最麻烦的部分。存储只回答"东西放哪儿"。Memory 要回答的至少是这一串：什么值得写入、以什么身份写入、在什么范围内有效、什么时候降低权重、和旧记忆冲突时听谁的、被污染或写错后怎么回滚、用户能不能查看修改删除。这些问题没一个是数据库本身能回答的——都落在治理上。
 
-**核心命题**：当 Agent 从单轮对话走向长程任务与跨会话交互，**Memory 从"加分项"变成决定体验与能力上限的关键组件**——影响多轮一致性、知识与偏好的持续利用、跨任务的经验复用。
+## 先把几个边界切清楚
+### 上下文窗口只是当前工作集
+上下文窗口承担的是 Agent 当前这一轮推理的工作集。它的目标，是让这一轮模型调用可解。长期保存全部历史，不该压在这层。长上下文能提高带宽，但不会自动帮你建模。把过去几十次会话全塞进去，模型面对的就是一堆未经结构化的信号。
 
-→ [原文存档](https://mp.weixin.qq.com/s/JZhN6auXKOzEh3OHgkjrdw)
+### Session 管当前会话
+Session 管的是当前会话的连续性。对话历史、工具调用、阶段性计划、刚跑完的测试输出，都属于短期状态。它们有时会被提炼进长期记忆，但不能直接等同于长期记忆。
 
-## 9 大方案速查表
+### Profile 是一个消费视图
+Profile 里可能有名字、角色、语言偏好、常用技术栈——但只是一份低维快照。一个 Agent 真要理解你，光记住"你喜欢 Go"还不够。它还得知道这个偏好在哪类项目里成立、什么时候你会为了生态放弃它。
 
-| 类别 | 方案 | 来源 | 发表 | 被引 | 关键特点 |
-|------|------|------|------|------|---------|
-| **Benchmark** | MUSE | Northeastern University | ACL 2025 | 5 | 多模态对话推荐，服装领域，7k case / 8.3w 对话 |
-| **Benchmark** | LOCOMO | UNC | ACL 2024 | 274 | 超长对话（50 对话/300 轮/9k tokens），时间事件图 |
-| **Evaluation** | MemoryAgentBench | UC San Diego | arxiv | 43 | 4 大能力（AR/TTL/LRU/CR），引入 EventQA + FactConsolidation |
-| **Evaluation** | LONGMEMEVAL | UCLA + Tencent | arxiv | 141 | 商业聊天助手评估；会话分解+键扩展+时间感知 |
-| **Evaluation** | MemBench | Huawei | ACL 2025 | 23 | 事实/反思 × 参与/观察，4 维指标（准确性/召回/容量/效率）|
-| **System** | THEANINE & TeaFarm | Yonsei | NAACL 2025 | 23 | 时间因果记忆图 + 反事实评估基准 |
-| **System** | RMM | Google | ACL 2025 | 35 | 前瞻+回顾双反思 + 在线 RL 精炼检索 |
-| **System** | M3-Agent | ByteDance-Seed | ICLR 2026 | 29 | 多模态（视觉+听觉），强化学习优化检索 |
-| **System** | Mem0 | mem0ai | ECAI 2026 | **222** | 工业级，生产就绪；Mem0g 引入图记忆 |
+### Policy 要单独放
+Policy 管的是允许和禁止：权限、安全、合规、预算上限。Memory 可以记录"某条规则在哪儿见过"，也可以提醒当前任务要遵守它，但不能自己去改写规则。如果 Agent 的记忆能把"禁止访问生产库"悄悄改写成"必要时可以访问"，学习能力再强也没用。
 
-**Mem0 被引最高（222）**——工业级成熟度的市场信号。
+### Memory 的边界定义
+> Memory 是跨会话持续存在、可被更新和审计，并且会影响未来决策的结构化历史。
+前半句说"历史"，后半句才是麻烦所在：它会影响未来决策。
 
-## 4 大核心能力（MemoryAgentBench 定义）
+## 记忆不能只围着用户偏好转
+"Agent Memory"这个词一出来，很多人下意识会先想到用户偏好。这些当然要记。但只盯着这一类，Memory 很容易被做成一个加强版用户画像。它能让回答更贴身，未必能让 Agent 更可靠。
+放到工程任务里，至少还有三类东西，重要程度不输用户偏好：
+1. **任务记忆** — 需求已经确认了什么、哪些方案被否过、哪个文件是当前真版本、哪些承诺还没完成、哪些测试跑过。长任务经常输在这里：Agent 没有忘记用户是谁，却忘了事情已经推进到哪一步。
+2. **环境记忆** — 仓库结构、团队规则、API 约束、部署方式、CI 特点、线上事故背景。Agent 如果不记环境，每次进项目都像第一次。
+3. **自我记忆** — 它上次试过什么、哪个工具在这个仓库里不稳定、哪条推断后来被证明是错的、哪类任务最好先开一个独立的子代理。
+Memory 的目标不在于复制一个人。更朴素地看：把"用户怎么想、任务到哪了、环境怎么变、我自己哪里容易错"这几条线，整理成未来任务可以使用的约束。
+用户偏好、任务状态、环境事实、自我反省，更新机制完全不一样。把它们混在同一个 memory 字段里，后面一定难管。
 
-| 能力 | 含义 | 评估表现 |
-|------|------|---------|
-| **AR（准确检索）** | 从长对话历史中识别并检索重要信息 | RAG > GPT-4o-mini |
-| **TTL（测试时学习）** | 通过对话历史少量示例学习新任务（类 ICL）| 长上下文 LLM 最佳 |
-| **LRU（长程理解）** | 长对话中形成抽象高层次理解 | 长上下文 LLM 最佳 |
-| **CR（冲突解决）** | 检测并解决新旧信息冲突 | **所有方法都不佳**，多跳最高 6% |
+## 摘要只能算一步
+很多产品最早做 Memory 都是从 summary 开始的。但摘要只是 memory pipeline 里的一个动作，不能直接等同于 Memory。
+摘要的问题在于它天然偏向留结论，结论背后的形成过程被压掉了。"用户偏好 TypeScript"——是因为团队规范、个人习惯，还是因为当前项目已经用 React？"方案 A 失败"——是因为思路不对、实现不完整，还是环境缺依赖？
+**Memory 的最小单元，最好别只是一段自然语言摘要。再小也得带上几类元信息：**
 
-**关键洞见**：**RAG 擅长 AR，长上下文擅长 TTL/LRU，但 CR 是全行业未解难题**——冲突解决需要"识别矛盾 → 决定取舍 → 更新记忆"完整链路，当前架构都没做到。
+- 内容：这条记忆到底说了什么
+- 类型：事件、用户声明、Agent 推断、外部约束、未完成承诺
+- 来源：来自用户、工具观察、代码仓库、文档，还是 Agent 自己推断
+- 作用域：项目级、用户级、团队级、当前任务级
+- 置信度：尤其是推断类记忆，不能和用户明确声明混在一起
+- 时间：何时产生，何时被确认，多久没再用过
+- 状态：仍然有效、待确认、已过期、被撤销
 
-## 三大评估框架对比
+## 写入：给过去一张未来通行证
+Memory 的第一道关，先看什么值得存。写入这一步可以理解成一次预算分配——不光是存储空间，还包括未来的检索成本、上下文成本、注意力成本、冲突管理成本。
+写入链路最容易犯的错，是把假设写成事实。在长周期 Agent 里尤其危险：一个 Agent 误判写入，下一个 Agent 读到可能把它当成已验证的事实。再跑几轮，错误假设就长成了团队共识。
+**写入的几条规矩：**
 
-### MemoryAgentBench vs LONGMEMEVAL vs MemBench
+- 用户明确说过的话，按 assertion 存
+- 工具和环境观察到的结果，按 event 或 observation 存
+- Agent 自己归纳出来的，只能按 belief 存
+- 未验证原因必须保留"未确认"状态
+- 涉及权限、安全、预算的内容，只能引用 policy，memory 自己不能生成 policy
+- 任何标榜"长期有效"的偏好，都得带 scope
 
-| 维度 | MemoryAgentBench | LONGMEMEVAL | MemBench |
-|------|-----------------|-------------|----------|
-| **数据来源** | 重构现有数据集 + EventQA + FactConsolidation | 500 多轮对话（115k-1.5M tokens）| 用户关系图采样 + 自对话 |
-| **核心能力** | AR/TTL/LRU/CR | 信息提取/多会话/时间/知识更新/拒绝回答 | 事实/反思 × 参与/观察 |
-| **指标维度** | 代理类型对比 | 准确率（下降 30-60%）| 4 维（准确/召回/容量/效率）|
-| **时间感知** | 通过 EventQA | 显式时间感知查询扩展 | 时间推理能力 |
-| **创新点** | Agentic Memory 代理范式 | 会话分解+键扩展+查询扩展三件套 | 观察场景（创新） |
+## 读取：先找约束，再找材料
+传统 RAG 的读取方式，很容易让人以为 Memory 就等于 retrieve(query)。放在知识问答里够用，但放在 Agent Memory 里常常不够。因为该影响当前任务的那段历史，未必和用户当前的问题长得像。
+用户一句"帮我重构一下支付模块"，相似度最高的记忆可能是上次也在聊支付模块。但这次怎么做，可能要先看这些约束：团队之前明确说过不能改数据库表；上次事故和退款幂等有关；用户偏好先加测试再重构；当前仓库里支付模块由另一个团队维护。
+**读取这一步，别只从 query 出发，也要从任务上下文出发。** 先弄清当前任务受什么约束，再去找对应的记忆。
+OpenAI 的 progressive disclosure 是一个顺手的方向：先给一小段 memory summary，让 Agent 知道大概有哪些历史；跟当前任务相关，再搜索 memory index；确实需要细节，再打开对应的 rollout summary。
+Anthropic managed agents memory 把 memory store 直接挂载成 session 容器里的一个目录，Agent 用标准文件工具读写——没把 memory 做成神秘黑箱，反而让它回到工程师最熟悉的那套东西：路径、权限、版本、审计。
+> Memory 越往生产走，越像一份可逐步展开、可被工具操作、可被人审查的工作区资产。
 
-### LONGMEMEVAL 三大技术（核心创新）
+## 管理：最容易被低估，也最决定长期质量
+写进去只是开始。Memory 会冲突，会过期，会被错误总结污染，也会被提示注入攻击。
+**冲突：** 用户去年说"我不喜欢 ORM"，今年在新项目里要求用 Prisma。简单写成"以最新为准"会丢掉很多信息。更稳的处理方式是把上下文差异保留下来。
+**衰减：** 很多偏好都有半衰期。用户上个月赶 deadline 时说"少解释，直接给代码"，不等于他长期就不想看解释。遗忘也该被当成能力来设计——MemoryAgentBench 已经把 selective forgetting 当成一项能力来考，LongMemEval 也把 knowledge updates 和 abstention 放进评估里。
+**安全：** Anthropic managed agents memory 文档有句提醒：如果 agent 处理的是不可信输入，而 memory store 又是可写的，提示注入完全可能把恶意内容写进 memory。后面的 session 再读出来，就会被当成可信历史用。这比普通的 prompt injection 更麻烦——普通注入大多只污染当前会话，Memory 注入会跨会话留下来。
+Memory 一旦可写，就要按持久化数据和执行上下文来对待：
 
-1. **会话分解（Session Decomposition）**：整存检索效率低，过度压缩丢失细节 → 折中方案：拆为轮次 + 提取摘要/关键短语/用户事实
-2. **事实增强的键扩展（Fact-Augmented Key Expansion）**：键不只是会话/轮次内容，增强为摘要+关键短语+用户事实+时间戳事件
-3. **时间感知的查询扩展（Time-Aware Query Expansion）**：索引阶段提取时间戳事件；检索阶段从查询推断时间范围并过滤
+- read-only 和 read-write store 要分开
+- 共享资料库默认只读
+- 用户级、项目级、团队级 memory 分开生命周期
+- 每次写入要有版本
+- 关键 memory 要能人工 review
+- 用户能查看、修改、删除
+- 被撤销的 memory 不能继续进入默认读取链路
+- 处理网页、邮件、第三方文档等不可信输入时，默认不要让它直接写长期记忆
 
-**关键数据**：商业聊天助手和长上下文 LLM 在 LONGMEMEVAL 上**准确率下降 30%-60%**——揭示当前长期记忆机制的严重不足。
+## 几条路线，不必急着站队
+| 路线 | 强项 | 容易踩的坑 |
+|------|------|-----------|
+| Letta (core + archival memory) | 稳定、低延迟、每轮都可见 | 太大就污染上下文 |
+| Mem0 (长期记忆+衰减) | 容量大、接入快、语义召回 | 旧事实混淆、近义误召回、来源不清 |
+| Zep/Graphiti (时间知识图谱) | 擅长关系、时间和演化 | 成本、抽取质量、图维护复杂 |
+| Clawdbot (Markdown 文件) | 可读、可审计、可版本化 | 关系查询和自动整理能力弱 |
+| Self-managed memory | 能随模型能力一起进步 | 弱模型会把记忆管坏 |
+更接近工程现实的说法是：先看你的 Agent 到底要记什么。
 
-### MemBench 4 维指标
+- 只是项目规则，文件就够了
+- 是用户偏好，结构化 key-value 加版本可能更稳
+- 是客服、销售、医疗、法务这种长期关系，时间图谱会更有价值
+- 是 Coding Agent 的长任务现场，GOAL.md、PROGRESS.md、DECISIONS.md 这类工作区文件往往比接一个复杂记忆平台更有用
+架构设计别从工具清单开始——它是从信息的生命周期开始的。
 
-| 指标 | 衡量什么 |
-|------|---------|
-| **记忆准确性** | 代理选择 vs 真实选择 |
-| **记忆召回率** | 有效存储和组织记忆内容的能力 |
-| **记忆容量** | 达到一定记忆量时的表现变化 |
-| **记忆效率** | 处理记忆时的时间成本 |
+## 放到 Coding Agent 该怎么落地
+### 四层记忆结构
+1. **当前工作集**（上下文窗口）— 当前推理用。正在改的文件、当前计划、刚跑出的错误。不需要长期保存。
+2. **工作区文件** — AGENTS.md、CLAUDE.md、GOAL.md、PROGRESS.md、DECISIONS.md、KNOWN_ISSUES.md。人能读、Agent 能读、git 能追踪，最适合承载项目规则、当前目标、已确认决策、任务进度、已知坑点。
+3. **Memory store** — 跨 session、跨任务的经验：用户偏好、团队约定、工具稳定性、项目历史、常见失败路径。需要索引、权限、版本和删除机制。
+4. **事件日志** — 工具调用、测试结果、失败原因、用户反馈、回滚记录。不一定每次都读进上下文，但是复盘和评估的基础。
+**信息分类决策表：**
+| 信息类型 | 更适合放哪里 |
+|---------|------------|
+| 当前任务下一步 | 上下文窗口 / PROGRESS.md |
+| 项目长期规则 | AGENTS.md / CLAUDE.md |
+| 已确认架构取舍 | DECISIONS.md / ADR |
+| 用户长期偏好 | memory store |
+| 某次失败的完整日志 | event log / artifact |
+| 未验证猜测 | progress observation，标记未确认 |
+| 安全和权限规则 | policy 系统，只允许 memory 引用 |
+重点是让每类信息有自己的生命周期。
 
-**MemBench 创新**：**观察场景**——代理仅作为观察者，不执行动作，不影响记忆。这与参与场景形成对照，用于消融"代理决策对记忆质量的影响"。
+## 几个系统的收敛方向
+几个系统都在往同一个方向收敛：
 
-## 四大记忆系统技术机制对比
+- 只靠向量通常不够，还会混合关键词、语义、图关系、文件路径
+- 需要一小层 always-loaded context，让 Agent 知道自己大概知道什么
+- 记忆最好是人能读的，别只存在 embedding 里
+- read-write loop 要能闭上：读完、行动、评估之后，还能把经验写回去
+其中"人能读"特别容易被低估——因为 Memory 一旦出错，人要能查得动。这几年越来越偏爱 plain markdown、git history、versioned memory store 这类朴素设计。不一定最性感，但工程上好解释、好审计、好回滚。
+> Memory 系统早期，别急着追求"像人一样记忆"。先做到"像工程系统一样能查账"。
 
-### THEANINE：时间因果记忆图
+## 最难啃的是共享记忆
+到了多 Agent、团队级、组织级，事情会更麻烦。一个 Agent 写入"方案 A 失败"，另一个 Agent 可能写入"方案 A 在新约束下可行"。多个 Agent 同时读写同一份 memory store，冲突一抓一大把。
+以前团队文档写错，最多是人读错。现在 memory 写错，Agent 会跟着执行错。差别就在这里。
 
-- **核心**：构建基于**时间和因果关系**的记忆图，保留重要上下文
-- **TeaFarm 反事实评估**：通过"误导"代理生成错误响应（如"Speaker B 不拥有一辆车"），测试代理能否引用真实历史生成正确响应
-- **流程**：对话总结 → 问题生成器（LLM）按时间顺序输入 → 生成反事实问题+正确答案 → 新会话询问评估
+## 一个最小可用的 Memory 设计
+1. 把长期规则放进可版本化文件（AGENTS.md、CLAUDE.md）
+2. 把任务状态写成可接管的证据（目标、非目标、验收标准、进度、决策、验证记录）
+3. 给 memory 加类型和作用域（区分用户声明、环境观察、Agent 推断、团队规则引用、未完成承诺）
+4. 默认让共享 memory 只读（处理外部网页、邮件、issue 时，别让 Agent 随手写长期记忆）
+5. 让用户和维护者能看见（浏览、搜索、编辑、删除、追溯来源）
+6. 把错误反馈回 memory 层（如果 Agent 因为某条旧记忆做错了，要回到 memory 层标记过期）
+7. 评估别只看 recall（还要测能不能更新、能不能拒答、能不能忘掉、能不能处理偏好漂移）
 
-### RMM：双反思机制（Google）
-
-- **前瞻性反思（Prospective Reflection）**：将对话历史动态总结为**主题基础的记忆表示**，优化未来检索
-- **回顾性反思（Retrospective Reflection）**：利用**在线 RL** 基于 LLM 生成的引用证据迭代精炼检索
-- **解决问题**：固定记忆粒度无法捕捉自然语义结构；固定检索机制无法适应多样化上下文
-
-### M3-Agent：多模态记忆（ByteDance）
-
-- **多模态**：实时处理视觉 + 听觉输入
-- **双重记忆**：
-  - 情节记忆（Episodic）：具体事件
-  - 语义记忆（Semantic）：一般知识
-- **图形结构存储**：节点=独特记忆项，增量添加/更新
-- **强化学习优化**：自主决定调用哪种搜索功能检索
-- **M3-Bench**：M3-Bench-robot（100 真实视频）+ M3-Bench-web（929 网络视频）
-- **结果**：M3-Bench-robot/M3-Bench-web/VideoMME-long 准确率提升 6.7%/7.7%/5.3%
-
-### Mem0：工业级生产就绪（mem0ai）
-
-**Mem0 基础架构**：
-- **提取阶段**：接收 (用户消息, 助手响应) 对 → 用数据库摘要+最近消息建立上下文 → LLM 提取重点记忆
-- **更新阶段**：评估候选事实与现有记忆一致性 → LLM 决定 ADD/UPDATE/DELETE/NOOP
-
-**Mem0g（图记忆）**：
-- 引入**有向标记图**：节点=实体，边=关系
-- 实体提取 + 关系生成模块
-- 适合复杂查询的高级推理
-
-**LOCOMO 评估**：
-- 10 扩展对话 × 600 轮 × 26k tokens
-- 每对话 200 问题，分单跳/多跳/时间/开放域
-- 指标：F1 + BLEU + LLM 评估
-
-**4 类问题**：
-- **Single-Hop**：从单轮次检索单条事实
-- **Multi-Hop**：从多个轮次合成信息
-- **Open Domain**：结合对话 + 外部知识
-- **Temporal**：建模事件时间顺序/持续时间/相对时间
-
-**性能**：
-- Mem0：单跳/多跳最佳
-- Mem0g：时间推理/开放域最佳
-- **延迟与计算效率显著低于全上下文方法**
-
-## 4 维度统一评测框架（核心贡献）
-
-本文**最关键的洞察**——提出面向真实应用的统一评测应同时覆盖：
-
-| 维度 | 衡量什么 | 当前缺口 |
-|------|---------|---------|
-| **检索正确性** | 能否找到相关信息 | RAG 类方法成熟 |
-| **使用有效性** | 是否端到端提升任务完成度 | **指标与端到端收益脱钩** |
-| **时间维度** | 跨会话/变化/遗忘的正确处理 | 长期压力测试缺失 |
-| **成本维度** | 延迟/费用/存储/合规 | **全行业被忽视** |
-
-**现有评测的 4 大共性问题**：
-1. **增益难归因**——记忆/长上下文/RAG 常叠加，无法隔离贡献
-2. **口径不统一**——易"命中但无用"
-3. **动态更新与遗忘覆盖不足**——缺少长期压力测试
-4. **成本与约束缺位**——时延/token/调用/存储/隐私合规
-
-## 评测 vs 系统的对应关系
-
-| 系统 | 评测 | 验证方式 | 表现 |
-|------|------|---------|------|
-| THEANINE | TeaFarm（自建反事实）| 反事实问题引用真实历史 | 时序因果推理 |
-| RMM | LOCOMO（部分）+ 自有 | 主题检索 + RL 精炼 | 个性化长期对话 |
-| M3-Agent | M3-Bench（自建多模态）| 100 真实视频 + 929 网络视频 | 视觉 + 听觉记忆 |
-| Mem0 | LOCOMO（核心评估）| 10 扩展对话 × 200 问题 | 工业级 SOTA |
-
-## 工程启示
-
-### 选型决策树
-
-```
-你的场景是什么？
-│
-├── 短对话 + 单一任务 → 不需要记忆系统
-├── 长期个性化对话 + 检索为主 → Mem0（Mem0g 处理关系）
-├── 多模态输入（视频/音频）→ M3-Agent
-├── 强时间因果推理 → THEANINE
-├── 在线 RL 优化检索 → RMM
-└── 学术研究 + 4 能力评估 → MemoryAgentBench 协议
-```
-
-1. **先评测**：用 LONGMEMEVAL-M 跑基线（商业聊天助手准确率下降 30-60%）
-2. **再选型**：根据场景选 RAG / Mem0 / Mem0g / M3-Agent
-3. **后归因**：用 MemoryAgentBench 协议隔离记忆/长上下文/RAG 贡献
-4. **终监控**：用 4 维框架（检索/使用/时间/成本）持续追踪
+## 写在最后
+以前聊 Agent，我们常常从一个公式起步：模型、工具、规划、记忆、循环。这个说法有用，但现在看下来已经不够细了。这几个词每往下拆一层，都是一套系统。
+记忆往下拆，就会碰到这个问题：哪些过去可以继续进入未来。
+能记住，当然重要。但更要紧的是，记住之后还能修正、能遗忘、能追责。做不到这一点，Memory 越强，Agent 可能越固执。
 
 ## 深度分析
+### 核心命题的解构
+本文围绕"过去的信息凭什么继续影响未来"这一核心问题展开，实际上是在回答一个根本性的架构问题：**Memory 不是存储，而是治理**。
+传统理解里，Memory 被当成存储层——把历史存起来，需要时检索。但作者揭示的真正复杂度在于：存储只回答"东西放哪儿"，而 Memory 要回答的是什么值得写入、以什么身份写入、在什么范围内有效、什么时候降低权重、和旧记忆冲突时听谁的、被污染后怎么回滚。这些问题都落在治理层面。
 
-### 1. 压缩与保真的根本张力
+### 写入的本质：未来影响力的预算分配
+作者提出了一个深刻的隐喻：**写入是给某些历史分配未来影响力**。这个视角把 Memory 从被动存储提升为主动治理。
+每一次写入都在消耗"未来影响力预算"——包括检索成本、上下文成本、注意力成本、冲突管理成本。这意味着写入决策必须极其审慎：不是所有历史都值得分配未来影响力，尤其当这条历史的来源是未经验证的推断时。
+写入链路最危险的错误是把假设写成事实。在多 Agent 系统里，这种错误会呈指数级放大：一个 Agent 的误判写入，被后续 Agent 当成已验证事实，几轮之后错误假设就演化成"团队共识"。
 
-这份综述揭示了 Agent Memory 领域最深层的技术矛盾：**记忆压缩必然伴随信息损失，而不失真的全量存储又面临 context length 与成本的根本约束**。  LONGMEMEVAL 的会话分解方案代表当前工业界的主流折中——将原始对话切分为轮次后分别提取摘要/关键短语/用户事实，牺牲细粒度以换取检索效率。这一设计选择说明"记忆"在工程上从来不是存储全部历史，而是**有策略地选择性保留**。  理解这一张力，是评估任何记忆系统的前提——脱离场景谈"记忆质量"没有意义，关键在于**针对特定任务的信息保留率与召回率**。
+### 记忆类型的分层架构
+文章提出了一个容易被忽视的分类维度——**不同类型记忆的更新机制完全不同**：
 
-### 2. 检索正确性 ≠ 使用有效性：评测框架的核心缺口
+- 用户偏好：随用户声明而更新，需要带 scope 和时间戳
+- 任务状态：随任务进展而更新，需要保留完成/未完成状态
+- 环境事实：随项目演化而更新，需要和代码库保持同步
+- Agent 自我推断：最不可靠，需要标记置信度和确认状态
+把这四类混在同一个 memory 字段里，后续的冲突检测、衰减处理、过期管理都会变得极其复杂。
 
-当前行业高度关注**检索正确性**（能否找到相关信息），但 4 维度框架明确指出**使用有效性**（是否端到端提升任务完成度）与前者严重脱钩。  这意味着大量"检索指标很好看"的记忆系统，实际部署中并不能带来对应的用户体验提升。  割裂的评测设计是根本原因：Benchmark 测检索精度，Evaluation 测能力覆盖，但两者都没有与真实的端到端任务指标绑定。这一缺口对选型决策有直接影响——**不应仅凭召回率/准确率指标选择记忆系统，必须设计端到端的对照实验验证实际业务收益**。
+### 读取的逆向思考
+传统 RAG 的 retrieve(query) 模式在 Agent Memory 场景下存在根本缺陷：**影响当前任务的历史，未必和用户当前问题语义相似**。
+一个更符合实际的读取模型是：先从任务上下文出发，找出当前任务受什么约束，再去找对应的记忆。作者引用了 OpenAI 的 progressive disclosure 和 Anthropic 的文件式 memory store，都是在降低检索复杂度，让 Memory 回到工程师熟悉的工作区模式。
 
-### 3. 冲突解决是架构性缺陷，而非调优问题
-
-CR（冲突解决）在 MemoryAgentBench 上所有方法多跳最高仅 6% 的表现，不是某类模型的不足，而是整个行业的**架构性盲点**。  当前主流的记忆写入/更新机制（以 Mem0 的 ADD/UPDATE/DELETE/NOOP 决策为代表）本质上是一个**静态一致性维护**逻辑，而非动态冲突推理。  当新信息与旧记忆矛盾时，系统只能依赖 LLM 的隐含判断，无法显式建模"矛盾识别→重要性评估→选择性覆盖"的完整认知链路。  对于需要**持续学习**的电商、医疗、金融等高价值场景，这一缺陷直接限制了记忆系统的实际可用性。
-
-### 4. 工业级 vs 研究原型：采纳门槛的隐性分化
-
-Mem0（222 被引）与其余方案（最高 141）的巨大差距，不仅是学术影响力的体现，更反映了**工业采纳的成熟度鸿沟**。  THEANINE/RMM/M3-Agent 均依赖自建评估基准（TeaFarm、LOCOMO 部分、自建多模态），这意味着评测结果无法与行业其他方案横向对比，抬高了技术选型的验证成本。  而 Mem0 的 LOCOMO 评估采用业界共识的标准化基准，结果可直接对比，这使其成为企业落地的低风险选择。  **生产选型时，评测框架的可比性与生态完整性应当权重不低于技术指标本身**。
-
-### 5. 时间维度是跨会话记忆的未解题
-
-LONGMEMEVAL 的时间感知查询扩展和 Mem0g 的时序推理最优表现，共同指向一个结论：**当前记忆系统对"时间"的理解仍停留在索引层，而非认知层**。  时间戳提取和时间范围过滤是检索优化手段，但真正的长期记忆需要理解事件的时序语义（因果、持续、相对时间）。  对于淘宝客服等需要跨月甚至跨年用户交互的业务场景，这一限制意味着记忆系统无法可靠地回答"上次这个问题是什么时候解决的"这类基础问题。  时间维度的深度整合，需要从存储结构（事件图而非平铺对话）到查询推理（时序逻辑而非过滤）全链路的重新设计。
+### 安全是 Memory 特有的攻击面
+提示注入攻击如果只污染当前会话，危害有限。但 Memory 可写的情况下，注入内容会跨会话留存，变成持久化攻击面。这意味着 Memory 系统必须把输入源的可信度纳入考量——处理不可信输入（网页、邮件、第三方文档）时，默认不应该允许直接写入长期记忆。
 
 ## 实践启示
+### 从最小可行设计开始
+构建 Memory 系统时，不要一开始就追求完整的记忆体系。最小可用设计应该包含：
+1. **可版本化的规则文件**（AGENTS.md、CLAUDE.md）—— 项目长期规则
+2. **结构化任务状态文件**（GOAL.md、PROGRESS.md、DECISIONS.md）—— 当前任务上下文
+3. **带类型和作用域的 memory store** —— 跨任务经验
+4. **事件日志** —— 失败记录和复盘依据
+每新增一层，都应该因为真实的痛点驱动，而不是预见的复杂性。
 
-### 1. 优先采用生产级记忆中间件，自研仅限差异化场景
+### 信息分类决策框架
+对于 Coding Agent，信息放哪里有一个实用的决策表：
 
-Mem0 的 222 被引和 LOCOMO 标准化评估结果证明工业级成熟度，而非自建评测的研究原型不可替代。  对于大多数需要记忆能力的业务场景，直接采用 Mem0 或 Mem0g 是最快的落地路径；仅当业务对多模态（选 M3-Agent）或时序因果（选 THEANINE）有独特需求时才考虑替代方案。  自研记忆系统的成本（评测体系构建、跨方案横向对比）远高于采购或开源集成。
+- **当前任务下一步** → 上下文窗口或 PROGRESS.md
+- **项目长期规则** → AGENTS.md / CLAUDE.md
+- **已确认架构决策** → DECISIONS.md 或 ADR
+- **用户长期偏好** → memory store，带类型和版本
+- **某次失败的完整日志** → event log 或 artifact
+- **未验证猜测** → progress observation，必须标记未确认
+- **安全和权限规则** → policy 系统，memory 只允许引用
 
-### 2. 将冲突解决工作流列为记忆系统评估的核心指标
+### Memory 元信息的最小集
+每条记忆至少要携带：内容、类型（事件/声明/推断/外部约束/未完成承诺）、来源（用户/工具/代码/文档/Agent推断）、作用域（项目/用户/团队/任务）、置信度、时间、状态（有效/待确认/过期/撤销）。
+没有这些元信息，Memory 的管理（冲突、衰减、遗忘、审计）都无从谈起。
 
-鉴于 CR 能力全行业多跳仅 6% 的现实，任何涉及**动态信息更新**的生产场景都必须专项测试冲突解决。  建议设计专门的冲突测试集：向同一记忆槽位写入矛盾信息（如先记录用户偏好 A，再记录偏好 B），验证系统是否能正确检测冲突并给出合理的保留/覆盖决策。  这一测试应当在选型阶段而非上线后进行。
+### 共享 Memory 的读写策略
+多 Agent 场景下，共享 memory 应该默认只读。写入应该遵循：
 
-### 3. 评测设计必须包含端到端任务收益对照
+- 用户级 memory：用户可写，Agent 只能追加带来源标记的记录
+- 项目级 memory：需要 review 机制，Agent 写入后待确认
+- 团队级 memory：必须人工 review，Agent 不能直接写入
+关键原则：涉及权限、安全、预算的内容只能引用 policy，永远不能让 memory 自己生成 policy。
 
-不应仅依赖检索指标选型，必须设计包含记忆系统的完整任务 pipeline 与无记忆基线的对照实验，测量端到端任务完成率/时长/用户满意度等业务指标。  4 维度框架中的"使用有效性"维度目前没有标准评测基准，企业需要**自行建立这一测量能力**，才能避免"检索指标好但业务无效"的选型陷阱。
+### 评估维度不能只看 Recall
+Memory 系统的评估应该包含多个维度：
 
-### 4. 时间感知能力应在架构层而非检索层实现
+- **能不能记住**：传统的 recall 指标
+- **能不能更新**：收到新信息后能否修正旧记忆
+- **能不能拒答**：不确定时能否选择不读取某条记忆
+- **能不能遗忘**：能否主动降低过期记忆的权重
+- **能不能处理偏好漂移**：能否识别同一偏好在不同上下文下的差异
+作者引用 MemoryAgentBench 和 LongMemEval 说明 selective forgetting 已经成为评估框架的一部分。
 
-如果业务场景涉及跨会话长期交互，应当要求记忆系统支持**事件级时间戳索引与时序推理**，而非仅依赖查询阶段的过滤。  Mem0g 在时间推理上的最优表现说明图结构+时序建模是可行方向，但需确认该能力在目标数据分布上经过验证。  架构评审时应检查：时间信息是否在写入阶段被提取并结构化存储，还是仅在检索时才被附加。
+### 从工具选型回到信息生命周期
+路线之争（Letta/Mem0/Zep/Clawdbot/Self-managed）不应该从工具特性出发，而应该从你的 Agent 到底要记什么、信息的生命周期是什么来考虑：
 
-### 5. 多模态 Agent 必须分离情节记忆与语义记忆
+- 只需项目规则 → 文件系统 + git
+- 只需用户偏好 → 结构化 key-value + 版本
+- 需长期客户关系 → 时间知识图谱
+- 需 Coding Agent 长任务现场 → 工作区文件 + 轻量 memory store
 
-M3-Agent 的双重记忆设计（Episodic + Semantic）对视频/音频理解场景是必选架构。  在实际部署中，情节记忆负责具体事件（"用户上周点击了商品 X"），语义记忆负责一般知识（"该商品属于电子产品类"），两者混用会导致检索噪音增大和推理成本上升。  多模态记忆系统的评测应分别在 M3-Bench-robot 和 M3-Bench-web 上验证两类记忆的独立表现，而非仅关注整体准确率提升。
+### 朴素设计优先
+在 Memory 系统早期，"像人一样记忆"的追求往往是过早优化。更有价值的起点是"像工程系统一样能查账"：可追溯、可审计、可回滚。
+Plain markdown、git history、versioned memory store 这类朴素设计不一定最性感，但工程上好解释、好审计、好回滚。等真正碰到这些方案解决不了的痛点，再考虑引入更复杂的记忆系统。
+**参考来源**
 
+- Memory for Autonomous LLM Agents: Mechanisms, Evaluation, and Emerging Frontiers：https://arxiv.org/abs/2603.07670
+- What Happens Inside Agent Memory? Circuit Analysis from Emergence to Diagnosis：https://arxiv.org/abs/2605.03354
+- LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory：https://arxiv.org/abs/2410.10813
+- Evaluating Memory in LLM Agents via Incremental Multi-Turn Interactions：https://arxiv.org/abs/2507.05257
+- OpenAI Agents SDK: Agent memory
+- Anthropic Managed Agents: Using agent memory
+- Claude Code: How Claude remembers your project
+- Letta: Introduction to Stateful Agents
+- Letta: Archival memory
+- Mem0: Introducing Memory Decay
+- Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory
+- Zep: Understanding the Graph
+- Zep: A Temporal Knowledge Graph Architecture for Agent Memory
+- LoCoMo
+- Chappy Asel: Agent Memory, Nine Frameworks, Four Bets
 ## 相关实体
-
-- [Agent Memory Architecture Essence](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture-essence.md) — Agent 记忆架构本质
-- [Agent Memory Architecture Ruofei](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture-ruofei.md) — Agent 记忆架构（若飞）
-- [Agent Memory Modular Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-modular-framework.md) — Agent 记忆模块化框架
-- Ai Agent Memory Systems — AI Agent 记忆系统
-- Ai Memory Architecture Deep Dive — 记忆架构深度分析
-- [Memory In The Llm Era Iclr2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/memory-in-the-llm-era-iclr2026.md) — Memory in the LLM Era（架构层面四组件框架）
-- [Agentmemory Coding Agent Local Memory](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentmemory-coding-agent-local-memory.md) — Coding Agent 本地记忆
-- [Claude Code 7 Layer Memory Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-7-layer-memory-architecture.md) — Claude Code 7 层记忆架构
-- [Agent Memory Storage Six Schools Wiki Compile Vs Raw Data Debate](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-storage-six-schools-wiki-compile-vs-raw-data-debate.md) — 记忆存储六派之争
-- [Agentic Ai Infrastructure Practice Series Nine Context Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentic-ai-infrastructure-practice-series-nine-context-engineering.md) — AWS Context Engineering（基础设施层）
-- [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-eval-wallezhang-yaml-driven-agent-evaluation-framework.md) — YAML 驱动的 Agent 评测
-- [Taobao Smart Shopping Guide Agent Evaluation Pzmx](https://github.com/QianJinGuo/wiki-public/blob/main/entities/taobao-smart-shopping-guide-agent-evaluation-pzmx.md) — 淘宝导购 Agent 评测
-- [原文存档](https://mp.weixin.qq.com/s/JZhN6auXKOzEh3OHgkjrdw) → [Agent Memory Evaluation Landscape Taobao Survey](https://mp.weixin.qq.com/s/JZhN6auXKOzEh3OHgkjrdw)
-- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/evaluation-and-benchmarks.md)
+- [Claude Code 7 Layer Memory Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-7-layer-memory-architecture.md)
+- [Agent Memory Architecture Ruofei](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-architecture-ruofei.md)
+- [Memory Agent Systems Cobanov](https://github.com/QianJinGuo/wiki-public/blob/main/entities/memory-agent-systems-cobanov.md)
+- [Factory Mission Multi Agent Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/entities/factory-mission-multi-agent-architecture.md)
+- [Context Engineering Three Memory Paradigms](https://github.com/QianJinGuo/wiki-public/blob/main/entities/context-engineering-three-memory-paradigms.md)
+- [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-engineering-guide.md)
 
 ---
 

@@ -2,7 +2,7 @@
 
 > Agent 的大脑：短期/长期/工作记忆的分层架构
 
-> 本章收录 **39 篇**实体，按深度递增排列。
+> 本章收录 **42 篇**实体，按深度递增排列。
 
 ---
 
@@ -12,7 +12,7 @@
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 5 |
 | ⭐⭐ 工程师 | 需编程基础 | 3 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 10 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 13 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 11 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 10 |
 
@@ -36,6 +36,13 @@ CPU 缓存的类比特别有启发性：L1（当前上下文）→ L2（会话�
 
 ## 本章内容
 
+### 🧭 本章综合（4 篇）
+
+- [S01. Agent 记忆的演进：从检索问题到治理问题](ch06/S01-memory-evolution)
+- [S02. 向量库该不该存在于记忆层？](ch06/S02-vectordb-in-memory-debate)
+- [S03. Claude Code vs OpenClaw：两种记忆哲学](ch06/S03-cc-vs-openclaw-memory)
+- [S04. 上下文装不下时，怎么办？](ch06/S04-context-overflow-decision)
+
 ### ⭐ 入门（5 篇）
 
 - [001. 从 Claude Code 记忆系统看四层 Agent 记忆方案，一个比一个夯](ch06/001-claude-code-agent)
@@ -50,45 +57,48 @@ CPU 缓存的类比特别有启发性：L1（当前上下文）→ L2（会话�
 - [007. OpenChronicle：把AI记忆变成可复用的基础设施](ch06/007-openchronicle-ai)
 - [008. MFS：zilliztech 的 Agent 统一上下文 harness，一套动词打通 20+ 数据源](ch06/008-mfs-zilliztech-agent-harness-20)
 
-### ⭐⭐⭐ 专家（10 篇）
+### ⭐⭐⭐ 专家（13 篇）
 
 - [009. Hermes Agent 爱马仕的三级 memory，到底在记什么？](ch06/009-hermes-agent-memory)
 - [010. AI 的形状：Jagged Frontier·Bottleneck·Reverse Salient（Mollick）](ch06/010-ai-jagged-frontier-bottleneck-reverse-salient-mollick)
 - [011. Google Open Knowledge Format (OKF) v0.1：AI 知识库通用格式标准 — 让 Markdown 知识库互通](ch06/011-google-open-knowledge-format-okf-v0-1-ai-markdown)
-- [012. CrewAI Cognitive Memory: 5 认知操作的工程化设计](ch06/012-crewai-cognitive-memory-5)
-- [013. 企业级AI记忆基质三层架构：事实/交互/行动记忆](ch06/013-ai)
-- [014. Building is just the beginning: Introducing Discoverability](ch06/014-building-is-just-the-beginning-introducing-discoverability)
-- [015. 注意力塌缩与上下文管理](ch06/015-page-015)
-- [016. AI Context Layer 框架](ch06/016-ai-context-layer)
-- [017. LLM Wiki 知识管理](ch06/017-llm-wiki)
-- [018. Skill 编排的 6 种依赖关系](ch06/018-skill-6)
+- [012. Agent 记忆注入实战：5 维框架（选什么/放哪里/怎么放/放多少/何时放）+ 4 前沿论文（MemGuide/STITCH/ACE/Lost in the Middle）](ch06/012-agent-5-4-memguide-stitch-ace-lost-in-the)
+- [013. 读完 Claude Code 和 OpenClaw 的 memory 源码，我对 Agent 记忆需要向量数据库产生怀疑](ch06/013-claude-code-openclaw-memory-agent)
+- [014. CrewAI Cognitive Memory: 5 认知操作的工程化设计](ch06/014-crewai-cognitive-memory-5)
+- [015. 企业级AI记忆基质三层架构：事实/交互/行动记忆](ch06/015-ai)
+- [016. The great memory panic of 2026](ch06/016-the-great-memory-panic-of-2026)
+- [017. Building is just the beginning: Introducing Discoverability](ch06/017-building-is-just-the-beginning-introducing-discoverability)
+- [018. 注意力塌缩与上下文管理](ch06/018-page-018)
+- [019. AI Context Layer 框架](ch06/019-ai-context-layer)
+- [020. LLM Wiki 知识管理](ch06/020-llm-wiki)
+- [021. Skill 编排的 6 种依赖关系](ch06/021-skill-6)
 
 ### ⭐⭐⭐⭐ 科学家（11 篇）
 
-- [019. MiroFlow：Deep Research Agent 脚手架 —— 与 Code Agent 的 6 大工程差异](ch06/019-miroflow-deep-research-agent-code-agent-6)
-- [020. Agent Harness 上下文管理：工作集视角](ch06/020-agent-harness)
-- [021. Claude Code Openclaw Memory Comparison](ch06/021-claude-code-openclaw-memory-comparison)
-- [022. Claude Code 七层记忆架构](ch06/022-claude-code)
-- [023. ChatGPT Dreaming V3：长期记忆架构级重构（时效 75.1% / 偏好 71.3% / 算力 -80%）](ch06/023-chatgpt-dreaming-v3-75-1-71-3-80)
-- [024. knowledge-work-plugins拆解：Anthropic官方开源，4 种组件、3 级加载、2 层记忆，纯文件的 AI岗位插件集](ch06/024-knowledge-work-plugins-anthropic-4-3-2-ai)
-- [025. Memory 不是 RAG：Agent 记忆的系统性框架](ch06/025-memory-rag-agent)
-- [026. Memento-Skills — 技能外部记忆让 Agent 自进化（arXiv 2603.18743）](ch06/026-memento-skills-agent-arxiv-2603-18743)
-- [027. Qoder 团队知识引擎](ch06/027-qoder)
-- [028. 腾讯云Agent Memory：Mermaid无限画布×上下文卸载](ch06/028-agent-memory-mermaid)
-- [029. 上下文工程：三种 Agent Memory 方案对比实验](ch06/029-agent-memory)
+- [022. MiroFlow：Deep Research Agent 脚手架 —— 与 Code Agent 的 6 大工程差异](ch06/022-miroflow-deep-research-agent-code-agent-6)
+- [023. Agent Harness 上下文管理：工作集视角](ch06/023-agent-harness)
+- [024. Claude Code Openclaw Memory Comparison](ch06/024-claude-code-openclaw-memory-comparison)
+- [025. Claude Code 七层记忆架构](ch06/025-claude-code)
+- [026. ChatGPT Dreaming V3：长期记忆架构级重构（时效 75.1% / 偏好 71.3% / 算力 -80%）](ch06/026-chatgpt-dreaming-v3-75-1-71-3-80)
+- [027. knowledge-work-plugins拆解：Anthropic官方开源，4 种组件、3 级加载、2 层记忆，纯文件的 AI岗位插件集](ch06/027-knowledge-work-plugins-anthropic-4-3-2-ai)
+- [028. Memory 不是 RAG：Agent 记忆的系统性框架](ch06/028-memory-rag-agent)
+- [029. Memento-Skills — 技能外部记忆让 Agent 自进化（arXiv 2603.18743）](ch06/029-memento-skills-agent-arxiv-2603-18743)
+- [030. Qoder 团队知识引擎](ch06/030-qoder)
+- [031. 腾讯云Agent Memory：Mermaid无限画布×上下文卸载](ch06/031-agent-memory-mermaid)
+- [032. 上下文工程：三种 Agent Memory 方案对比实验](ch06/032-agent-memory)
 
 ### ⭐⭐⭐⭐⭐ 大师（10 篇）
 
-- [030. AI Memory Architecture: Deep Dive](ch06/030-ai-memory-architecture-deep-dive)
-- [031. Agent 记忆架构：先别急着把 Memory 当数据库](ch06/031-agent-memory)
-- [032. 深度拆解 Hermes Agent 记忆系统](ch06/032-hermes-agent)
-- [033. AgentMemory 源码分析：给 Coding Agent 装上本地长期记忆](ch06/033-agentmemory-coding-agent)
-- [034. Agent-Memory 评测全景：基准、评估与记忆系统](ch06/034-agent-memory)
-- [035. TencentDB Agent Memory：符号化短期记忆+分层式长期记忆](ch06/035-tencentdb-agent-memory)
-- [036. GBrain — YC CEO Garry Tan 的 Postgres-native AI 第二大脑：5 大设计决策 + 零 LLM 知识图谱 + 8 阶段检索 + Brain⊥Source 正交维度](ch06/036-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm)
-- [037. Context Window Management Comparison](ch06/037-context-window-management-comparison)
-- [038. Knowledge Base Layer Architecture: From RAG to Agent-native Knowledge Context Layer](ch06/038-knowledge-base-layer-architecture-from-rag-to-agent-native)
-- [039. MemOS Hermes 记忆插件](ch06/039-memos-hermes)
+- [033. AI Memory Architecture: Deep Dive](ch06/033-ai-memory-architecture-deep-dive)
+- [034. Agent 记忆架构：先别急着把 Memory 当数据库](ch06/034-agent-memory)
+- [035. 深度拆解 Hermes Agent 记忆系统](ch06/035-hermes-agent)
+- [036. AgentMemory 源码分析：给 Coding Agent 装上本地长期记忆](ch06/036-agentmemory-coding-agent)
+- [037. Agent-Memory 评测全景：基准、评估与记忆系统](ch06/037-agent-memory)
+- [038. TencentDB Agent Memory：符号化短期记忆+分层式长期记忆](ch06/038-tencentdb-agent-memory)
+- [039. GBrain — YC CEO Garry Tan 的 Postgres-native AI 第二大脑：5 大设计决策 + 零 LLM 知识图谱 + 8 阶段检索 + Brain⊥Source 正交维度](ch06/039-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm)
+- [040. Context Window Management Comparison](ch06/040-context-window-management-comparison)
+- [041. Knowledge Base Layer Architecture: From RAG to Agent-native Knowledge Context Layer](ch06/041-knowledge-base-layer-architecture-from-rag-to-agent-native)
+- [042. MemOS Hermes 记忆插件](ch06/042-memos-hermes)
 
 
 ---

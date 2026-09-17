@@ -2,7 +2,7 @@
 
 > Agent 权限越大，安全责任越重：凭据、审计、合规
 
-> 本章收录 **57 篇**实体，按深度递增排列。
+> 本章收录 **58 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 5 |
-| ⭐⭐ 工程师 | 需编程基础 | 5 |
+| ⭐⭐ 工程师 | 需编程基础 | 6 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 25 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 17 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 5 |
@@ -44,69 +44,70 @@ AI Agent 正在获得越来越多的权限——执行代码、访问数据库�
 - [004. Jane Street — 形式化方法与编程的未来](ch12/004-jane-street)
 - [005. 中国用户安全高性能访问海外 Bedrock](ch12/005-bedrock)
 
-### ⭐⭐ 工程师（5 篇）
+### ⭐⭐ 工程师（6 篇）
 
 - [006. OpenAI launches Daybreak to combat cyber threats](ch12/006-openai-launches-daybreak-to-combat-cyber-threats)
 - [007. Grafana GitHub Token Breach Led to Codebase Download and Extortion Attempt](ch12/007-grafana-github-token-breach-led-to-codebase-download-and-ext)
 - [008. JetBrains Marketplace Ecosystem Security Update: Malicious AI Plugins](ch12/008-jetbrains-marketplace-ecosystem-security-update-malicious-a)
 - [009. Unlocking the Cloudflare app ecosystem with OAuth for all](ch12/009-unlocking-the-cloudflare-app-ecosystem-with-oauth-for-all)
 - [010. Nikesh Arora 20VC 访谈：Token 定价、FDE、SaaS→AI 转型与记忆护城河](ch12/010-nikesh-arora-20vc-token-fde-saas-ai)
+- [011. LLMShare: using shared chatbot pages to distribute malware](ch12/011-llmshare-using-shared-chatbot-pages-to-distribute-malware)
 
 ### ⭐⭐⭐ 专家（25 篇）
 
-- [011. 飞来汇借助 AWS Security Agent 构建跨境支付应用的智能安全防线](ch12/011-aws-security-agent)
-- [012. CISA urges critical infrastructure firms to 'fortify' before it's too late | Cybersecurity Dive](ch12/012-cisa-urges-critical-infrastructure-firms-to-fortify-before)
-- [013. Disgruntled researcher releases two more Microsoft zero-days](ch12/013-disgruntled-researcher-releases-two-more-microsoft-zero-days)
-- [014. Where OpenClaw Security Is Heading — OpenClaw Blog](ch12/014-where-openclaw-security-is-heading-openclaw-blog)
-- [015. Adversaries Leverage AI for Vulnerability Exploitation, Augmented Operations, and Initial Access](ch12/015-adversaries-leverage-ai-for-vulnerability-exploitation-augm)
-- [016. 别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](ch12/016-amazon-bedrock-api)
-- [017. Canvas Hackers ShinyHunters Say Their Official Domain Was Suspended](ch12/017-canvas-hackers-shinyhunters-say-their-official-domain-was-su)
-- [018. A Framework for AI Threat Readiness](ch12/018-a-framework-for-ai-threat-readiness)
-- [019. Cyberscammers are bypassing banks' security with illicit tools sold on Telegram](ch12/019-cyberscammers-are-bypassing-banks-security-with-illicit-too)
-- [020. U of T AI Worm：CleverHans Lab 展示可自适应的 AI 蠕虫威胁](ch12/020-u-of-t-ai-worm-cleverhans-lab-ai)
-- [021. ICO 对 South Staffordshire 处以 96.3 万英镑罚款：2022 年 Cl0p 勒索软件攻击暴露的安全失败](ch12/021-ico-south-staffordshire-96-3-2022-cl0p)
-- [022. NGINX Rift: Achieving NGINX Remote Code Execution via an 18-Year-Old Vulnerability | depthfirst](ch12/022-nginx-rift-achieving-nginx-remote-code-execution-via-an-18)
-- [023. Offensive Security Blog](ch12/023-offensive-security-blog)
-- [024. Pwn2Own Berlin 2026, Day Three: DEVCORE Crowned Master of Pwn, $1.298 Million Total](ch12/024-pwn2own-berlin-2026-day-three-devcore-crowned-master-of-pw)
-- [025. TeamPCP Claims Sale of Mistral AI Repositories Amid Mini Shai-Hulud Attack](ch12/025-teampcp-claims-sale-of-mistral-ai-repositories-amid-mini-sha)
-- [026. AI Voice Cloning: The Technology Behind It, Who's Building It, and Where It's Headed](ch12/026-ai-voice-cloning-the-technology-behind-it-who-s-building-i)
-- [027. The down fall of bug bounties](ch12/027-the-down-fall-of-bug-bounties)
-- [028. Exploiting vulnerabilities in Johnson & Johnson web apps](ch12/028-exploiting-vulnerabilities-in-johnson-johnson-web-apps)
-- [029. GitHub Breached — Employee Device Hack Led to Exfiltration of 3,800+ Internal Repos](ch12/029-github-breached-employee-device-hack-led-to-exfiltration-o)
-- [030. Fedora Hummingbird brings the container security model to a Linux host OS](ch12/030-fedora-hummingbird-brings-the-container-security-model-to-a)
-- [031. Guide to Security Operations at Machine Speed](ch12/031-guide-to-security-operations-at-machine-speed)
-- [032. Forward launches Predict to verify network changes before they reach production - SiliconANGLE](ch12/032-forward-launches-predict-to-verify-network-changes-before-th)
-- [033. GitHub Breached — Employee Device Hack Led to Exfiltration](ch12/033-github-breached-employee-device-hack-led-to-exfiltration)
-- [034. AI phishing attacks are on the rise — Are you prepared? | Bitwarden](ch12/034-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi)
-- [035. CyberSecQwen-4B](ch12/035-cybersecqwen-4b)
+- [012. 飞来汇借助 AWS Security Agent 构建跨境支付应用的智能安全防线](ch12/012-aws-security-agent)
+- [013. CISA urges critical infrastructure firms to 'fortify' before it's too late | Cybersecurity Dive](ch12/013-cisa-urges-critical-infrastructure-firms-to-fortify-before)
+- [014. Disgruntled researcher releases two more Microsoft zero-days](ch12/014-disgruntled-researcher-releases-two-more-microsoft-zero-days)
+- [015. Where OpenClaw Security Is Heading — OpenClaw Blog](ch12/015-where-openclaw-security-is-heading-openclaw-blog)
+- [016. Adversaries Leverage AI for Vulnerability Exploitation, Augmented Operations, and Initial Access](ch12/016-adversaries-leverage-ai-for-vulnerability-exploitation-augm)
+- [017. 别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](ch12/017-amazon-bedrock-api)
+- [018. Canvas Hackers ShinyHunters Say Their Official Domain Was Suspended](ch12/018-canvas-hackers-shinyhunters-say-their-official-domain-was-su)
+- [019. A Framework for AI Threat Readiness](ch12/019-a-framework-for-ai-threat-readiness)
+- [020. Cyberscammers are bypassing banks' security with illicit tools sold on Telegram](ch12/020-cyberscammers-are-bypassing-banks-security-with-illicit-too)
+- [021. U of T AI Worm：CleverHans Lab 展示可自适应的 AI 蠕虫威胁](ch12/021-u-of-t-ai-worm-cleverhans-lab-ai)
+- [022. ICO 对 South Staffordshire 处以 96.3 万英镑罚款：2022 年 Cl0p 勒索软件攻击暴露的安全失败](ch12/022-ico-south-staffordshire-96-3-2022-cl0p)
+- [023. NGINX Rift: Achieving NGINX Remote Code Execution via an 18-Year-Old Vulnerability | depthfirst](ch12/023-nginx-rift-achieving-nginx-remote-code-execution-via-an-18)
+- [024. Offensive Security Blog](ch12/024-offensive-security-blog)
+- [025. Pwn2Own Berlin 2026, Day Three: DEVCORE Crowned Master of Pwn, $1.298 Million Total](ch12/025-pwn2own-berlin-2026-day-three-devcore-crowned-master-of-pw)
+- [026. TeamPCP Claims Sale of Mistral AI Repositories Amid Mini Shai-Hulud Attack](ch12/026-teampcp-claims-sale-of-mistral-ai-repositories-amid-mini-sha)
+- [027. AI Voice Cloning: The Technology Behind It, Who's Building It, and Where It's Headed](ch12/027-ai-voice-cloning-the-technology-behind-it-who-s-building-i)
+- [028. The down fall of bug bounties](ch12/028-the-down-fall-of-bug-bounties)
+- [029. Exploiting vulnerabilities in Johnson & Johnson web apps](ch12/029-exploiting-vulnerabilities-in-johnson-johnson-web-apps)
+- [030. GitHub Breached — Employee Device Hack Led to Exfiltration of 3,800+ Internal Repos](ch12/030-github-breached-employee-device-hack-led-to-exfiltration-o)
+- [031. Fedora Hummingbird brings the container security model to a Linux host OS](ch12/031-fedora-hummingbird-brings-the-container-security-model-to-a)
+- [032. Guide to Security Operations at Machine Speed](ch12/032-guide-to-security-operations-at-machine-speed)
+- [033. Forward launches Predict to verify network changes before they reach production - SiliconANGLE](ch12/033-forward-launches-predict-to-verify-network-changes-before-th)
+- [034. GitHub Breached — Employee Device Hack Led to Exfiltration](ch12/034-github-breached-employee-device-hack-led-to-exfiltration)
+- [035. AI phishing attacks are on the rise — Are you prepared? | Bitwarden](ch12/035-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi)
+- [036. CyberSecQwen-4B](ch12/036-cybersecqwen-4b)
 
 ### ⭐⭐⭐⭐ 科学家（17 篇）
 
-- [036. Mythos finds a curl vulnerability](ch12/036-mythos-finds-a-curl-vulnerability)
-- [037. LLMReaper - DOM Based AI Conversation Exfiltration via Browser Extensions](ch12/037-llmreaper-dom-based-ai-conversation-exfiltration-via-brows)
-- [038. Resecurity | CVE-2026-20182: Unauthenticated Cisco SD-WAN Control-Plane Compromise via vHub Authentication Bypass](ch12/038-resecurity-cve-2026-20182-unauthenticated-cisco-sd-wan-co)
-- [039. Static Devirtualization of Themida](ch12/039-static-devirtualization-of-themida)
-- [040. Apple corecrypto formal verification blueprint — post-quantum ML-KEM/ML-DSA in iMessage](ch12/040-apple-corecrypto-formal-verification-blueprint-post-quantu)
-- [041. OpenClaw 安全和功能增强实践](ch12/041-openclaw)
-- [042. xz-utils Backdoor 2 Years On — Maintainer Trust Hijack Pattern Beyond CVE Scanners](ch12/042-xz-utils-backdoor-2-years-on-maintainer-trust-hijack-patte)
-- [043. Token 撤销触发设备擦除的安全漏洞](ch12/043-token)
-- [044. 100万+AI服务暴露在公网——HackerNews扫描报告](ch12/044-100-ai-hackernews)
-- [045. Optimize blueprint extraction accuracy in Amazon Bedrock Data Automation](ch12/045-optimize-blueprint-extraction-accuracy-in-amazon-bedrock-dat)
-- [046. GitLab CI/CD Kill Chain Audit — Black Hills InfoSec 2026 大规模审计研究](ch12/046-gitlab-ci-cd-kill-chain-audit-black-hills-infosec-2026)
-- [047. A 0-click exploit chain for the Pixel 10: When a Door Closes, a Window Opens](ch12/047-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes)
-- [048. From SSH to REST: A Security-Driven Modernization of Slack's EMR Data Pipelines](ch12/048-from-ssh-to-rest-a-security-driven-modernization-of-slack-s)
-- [049. bagel — Fleet 级 Secret Scanning 守护开发工作站](ch12/049-bagel-fleet-secret-scanning)
-- [050. GlassWASM: WebAssembly Malware Found in Trojanized Open VSX Extensions](ch12/050-glasswasm-webassembly-malware-found-in-trojanized-open-vsx)
-- [051. Getting a CVE Without Shipping Slop](ch12/051-getting-a-cve-without-shipping-slop)
-- [052. GitHub Secret Scanning: AI/ML 驱动的大规模误报降低](ch12/052-github-secret-scanning-ai-ml)
+- [037. Mythos finds a curl vulnerability](ch12/037-mythos-finds-a-curl-vulnerability)
+- [038. LLMReaper - DOM Based AI Conversation Exfiltration via Browser Extensions](ch12/038-llmreaper-dom-based-ai-conversation-exfiltration-via-brows)
+- [039. Resecurity | CVE-2026-20182: Unauthenticated Cisco SD-WAN Control-Plane Compromise via vHub Authentication Bypass](ch12/039-resecurity-cve-2026-20182-unauthenticated-cisco-sd-wan-co)
+- [040. Static Devirtualization of Themida](ch12/040-static-devirtualization-of-themida)
+- [041. Apple corecrypto formal verification blueprint — post-quantum ML-KEM/ML-DSA in iMessage](ch12/041-apple-corecrypto-formal-verification-blueprint-post-quantu)
+- [042. OpenClaw 安全和功能增强实践](ch12/042-openclaw)
+- [043. xz-utils Backdoor 2 Years On — Maintainer Trust Hijack Pattern Beyond CVE Scanners](ch12/043-xz-utils-backdoor-2-years-on-maintainer-trust-hijack-patte)
+- [044. Token 撤销触发设备擦除的安全漏洞](ch12/044-token)
+- [045. 100万+AI服务暴露在公网——HackerNews扫描报告](ch12/045-100-ai-hackernews)
+- [046. Optimize blueprint extraction accuracy in Amazon Bedrock Data Automation](ch12/046-optimize-blueprint-extraction-accuracy-in-amazon-bedrock-dat)
+- [047. GitLab CI/CD Kill Chain Audit — Black Hills InfoSec 2026 大规模审计研究](ch12/047-gitlab-ci-cd-kill-chain-audit-black-hills-infosec-2026)
+- [048. A 0-click exploit chain for the Pixel 10: When a Door Closes, a Window Opens](ch12/048-a-0-click-exploit-chain-for-the-pixel-10-when-a-door-closes)
+- [049. From SSH to REST: A Security-Driven Modernization of Slack's EMR Data Pipelines](ch12/049-from-ssh-to-rest-a-security-driven-modernization-of-slack-s)
+- [050. bagel — Fleet 级 Secret Scanning 守护开发工作站](ch12/050-bagel-fleet-secret-scanning)
+- [051. GlassWASM: WebAssembly Malware Found in Trojanized Open VSX Extensions](ch12/051-glasswasm-webassembly-malware-found-in-trojanized-open-vsx)
+- [052. Getting a CVE Without Shipping Slop](ch12/052-getting-a-cve-without-shipping-slop)
+- [053. GitHub Secret Scanning: AI/ML 驱动的大规模误报降低](ch12/053-github-secret-scanning-ai-ml)
 
 ### ⭐⭐⭐⭐⭐ 大师（5 篇）
 
-- [053. Hermes Agent v0.14.0 核心架构与快速上手](ch12/053-hermes-agent-v0-14-0)
-- [054. Bleeding Llama：Ollama 未授权内存泄漏漏洞](ch12/054-bleeding-llama-ollama)
-- [055. SHub Reaper: macOS Stealer Spoofs Apple, Google, and Microsoft in a Single Attack Chain](ch12/055-shub-reaper-macos-stealer-spoofs-apple-google-and-microso)
-- [056. How an image could compromise your](ch12/056-how-an-image-could-compromise-your)
-- [057. Securing AI Agents and Machine Identities](ch12/057-securing-ai-agents-and-machine-identities)
+- [054. Hermes Agent v0.14.0 核心架构与快速上手](ch12/054-hermes-agent-v0-14-0)
+- [055. Bleeding Llama：Ollama 未授权内存泄漏漏洞](ch12/055-bleeding-llama-ollama)
+- [056. SHub Reaper: macOS Stealer Spoofs Apple, Google, and Microsoft in a Single Attack Chain](ch12/056-shub-reaper-macos-stealer-spoofs-apple-google-and-microso)
+- [057. How an image could compromise your](ch12/057-how-an-image-could-compromise-your)
+- [058. Securing AI Agents and Machine Identities](ch12/058-securing-ai-agents-and-machine-identities)
 
 
 ---

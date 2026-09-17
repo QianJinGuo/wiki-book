@@ -180,13 +180,13 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 
 | 主题 | entity | raw |
 |---|---|---|
-| Loop Engineering 总论 | [Loop Engineering Addy Osmani Challengehub](ch05/086-loop-engineering-19-addy-osmani-boris-cherny-pete.html) | [loop-engineering-addy-osmani-challengehub.md](https://mp.weixin.qq.com/s/vmGx9IELbWgKZqHm-M3G5w) |
+| Loop Engineering 总论 | [Loop Engineering Addy Osmani Challengehub](ch05/090-loop-engineering-19-addy-osmani-boris-cherny-pete.html) | [loop-engineering-addy-osmani-challengehub.md](https://mp.weixin.qq.com/s/vmGx9IELbWgKZqHm-M3G5w) |
 | Harness Engineering 综合论述 | [Harness Engineering Paradigm Comprehensive 2026](ch04/090-agent-harness-engineering-a-survey.html) | [harness-engineering-2026-rahul-rauhul.md](https://mp.weixin.qq.com/s/RwWfknFIFvJPIdsJMgeNiQ) |
-| 长周期 Agent / Ralph Loop | [Long Running Agent Ralph Loop Handover Harness Ruofei](ch05/057-agent-ralph-loop-harness.html) | [long-running-agent-ralph-loop-handover-harness-ruofei.md](https://mp.weixin.qq.com/s/ML5aD3f2ilHWjSB-wpBukw) |
+| 长周期 Agent / Ralph Loop | [Long Running Agent Ralph Loop Handover Harness Ruofei](ch05/058-agent-ralph-loop-harness.html) | [long-running-agent-ralph-loop-handover-harness-ruofei.md](https://mp.weixin.qq.com/s/ML5aD3f2ilHWjSB-wpBukw) |
 | Agent Harness 生产指南 | [Agent Production Harness Engineering](ch05-harness.html) | [harness-production-agent-engineering-deficit.md](https://mp.weixin.qq.com/s/HVkWNXTsFjn0HkdGyD7Tpw) |
 | 生产级 Harness 12 组件 | [Production Harness 12 Components Framework Comparison](ch05-harness.html) | [production-harness-12-components-framework-comparison.md](https://mp.weixin.qq.com/s/UwG0mEzQ0Mk7DYjPS3PFqQ) |
 | 10 步路线图 + 8 失败模式 | [Harness Engineering 10 Step Practical Guide 2026](ch05-harness.html) | [harness-engineering-10-step-practical-guide-2026.md](https://mp.weixin.qq.com/s/5GmESz1z9MCRp0KzoYUOSw) |
-| 100% Cache 命中的 Agent 设计 | [Openclacky Harness Engineering 100 Percent Cache Hit](ch05/033-harness-100-cache-agent.html) | [openclacky-harness-engineering-100-percent-cache-hit.md](https://mp.weixin.qq.com/s/5jR9MjhEERMI59iYjFIJxg) |
+| 100% Cache 命中的 Agent 设计 | [Openclacky Harness Engineering 100 Percent Cache Hit](ch05/034-harness-100-cache-agent.html) | [openclacky-harness-engineering-100-percent-cache-hit.md](https://mp.weixin.qq.com/s/5jR9MjhEERMI59iYjFIJxg) |
 | Better-Harness | [Better Harness Eval Trace Methodology](ch05-harness.html) | 先读实体页：`docs/ch05/085-better-harness-agent-harness.md` |
 
 ### 4.4 Memory 精读清单
@@ -196,7 +196,7 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 | Agent Memory 架构 | [Agent Memory Architecture Past Influence Future Ruofei](ch06-memory.html) | 先读 `docs/ch06-memory.md` |
 | Hermes Agent 记忆系统 | [Hermes Agent Memory System Openclaw Comparison](ch06-memory.html) | [hermes-agent-memory-system-openclaw-comparison.md](https://mp.weixin.qq.com/s/0n5aw2I0yoyHS7W5fQ6ydA) |
 | AgentMemory 源码分析 | [Agentmemory Source Analysis Coding Agent Local Memory](ch09/099-agentmemory-coding-agent.html) | [agentmemory-source-analysis-coding-agent-local-memory.md](https://mp.weixin.qq.com/s/L_wzXQCe3byU93fDAf_Eug) |
-| Claude Code vs OpenClaw Memory | [Claude Code Openclaw Memory Comparison](ch06/021-claude-code-openclaw-memory-comparison.html) | [claude-code-openclaw-memory-comparison.md](https://mp.weixin.qq.com/s/m4wzwXCJoW5Tu4GA5ROodw) |
+| Claude Code vs OpenClaw Memory | [Claude Code Openclaw Memory Comparison](ch06/024-claude-code-openclaw-memory-comparison.html) | [claude-code-openclaw-memory-comparison.md](https://mp.weixin.qq.com/s/m4wzwXCJoW5Tu4GA5ROodw) |
 | Memory 评测全景 | [Agent Memory Evaluation Landscape Taobao Survey](ch06-memory.html) | [agent-memory-evaluation-landscape-taobao-survey.md](https://mp.weixin.qq.com/s/JZhN6auXKOzEh3OHgkjrdw) |
 | State of Memory in Agent Harness | [State Of Memory In Agent Harness Mem0 2026](ch04/278-state-of-memory-in-agent-harness-mem0-harness.html) | [state-of-memory-in-agent-harness-mem0-2026.md](https://mp.weixin.qq.com/s/2c2MV0b1biv71WdX2gCt_A) |
 ### 4.5 Skill / Tool / MCP 精读清单
@@ -490,7 +490,7 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 
 | 主题 | entity | raw |
 |---|---|---|
-| Vibe Design ≠ Vibe Coding | [Impeccable Vibe Design Philosophy Anomaly](ch01/480-impeccable-ai-33-4k-star.html) | [impeccable-anomaly-vibe-design-vs-vibe-coding.md](https://mp.weixin.qq.com/s/4_9q9TrkVyE5a4jCfTrNgg) |
+| Vibe Design ≠ Vibe Coding | [Impeccable Vibe Design Philosophy Anomaly](ch01/470-impeccable-ai-33-4k-star.html) | [impeccable-anomaly-vibe-design-vs-vibe-coding.md](https://mp.weixin.qq.com/s/4_9q9TrkVyE5a4jCfTrNgg) |
 | Data Agent 产品设计 | [Data Agent Product Design](ch04-agent-core.html) | [volcengine-data-agent-product-overview.md](https://www.volcengine.com/docs/85637/1563626?lang=zh) |
 | 下一代企业架构：系统 CLI 化、流程 Skill 化、员工 Agent 化 | [Enterprise Next Gen Architecture System Cli Process Skill Employee Agent Zhan](ch04-agent-core.html) | [enterprise-next-gen-architecture-system-cli-process-skill-employee-agent-zhan.md](https://mp.weixin.qq.com/s/759TfOdXch5zWrT4Yo42xA) |
 | James Cowling AI 时代工程哲学 | [James Cowling Engineering Philosophy Ai Era](ch09-ai-coding.html) | [james-cowling-engineering-philosophy-ai-era.md](https://mp.weixin.qq.com/s/ZKfpdzXxN2fqANN-Nzkcjw) |
