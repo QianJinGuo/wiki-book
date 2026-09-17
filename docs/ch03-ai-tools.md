@@ -10,9 +10,9 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 4 |
+| ⭐ 入门 | 零基础可读 | 3 |
 | ⭐⭐ 工程师 | 需编程基础 | 8 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 29 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 30 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 14 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 5 |
 
@@ -36,32 +36,32 @@ AI 工具正在重新定义"开发者工具"的边界。
 
 ## 本章内容
 
-### ⭐ 入门（4 篇）
+### ⭐ 入门（3 篇）
 
 - [001. Turn repeated instructions into reusable skills in Lovable | Lovable](ch03/001-turn-repeated-instructions-into-reusable-skills-in-lovable)
 - [002. Harness Engineering 详解：如何将 AI Coding 率提升至 90%](ch03/002-harness-engineering-ai-coding-90)
-- [003. Edge AI Networking — Wi-Fi 7/8 Convergence Analysis](ch03/003-edge-ai-networking-wi-fi-7-8-convergence-analysis)
-- [004. Data Projects](ch03/004-data-projects)
+- [003. Data Projects](ch03/003-data-projects)
 
 ### ⭐⭐ 工程师（8 篇）
 
-- [005. Agent 时代的生产力悖论：协作成为新瓶颈](ch03/005-agent)
-- [006. 别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](ch03/006-page-006)
-- [007. MiniMax M2.7：开启模型的自我进化](ch03/007-minimax-m2-7)
-- [008. Nvidia Cut Checkpoint Costs Nvcomp](ch03/008-nvidia-cut-checkpoint-costs-nvcomp)
-- [009. Localmaxxing：局部最优陷阱](ch03/009-localmaxxing)
-- [010. 03—AI Skill 测试用例设计完整指南：8 种类型 + 断言自检，覆盖率从 40% 到 90%](ch03/010-03-ai-skill-8-40-90)
-- [011. A History of IDEs at Google](ch03/011-a-history-of-ides-at-google)
-- [012. Bedrock AgentCore Pool Model Multi-Tenancy](ch03/012-bedrock-agentcore-pool-model-multi-tenancy)
+- [004. Agent 时代的生产力悖论：协作成为新瓶颈](ch03/004-agent)
+- [005. 别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](ch03/005-page-005)
+- [006. MiniMax M2.7：开启模型的自我进化](ch03/006-minimax-m2-7)
+- [007. Nvidia Cut Checkpoint Costs Nvcomp](ch03/007-nvidia-cut-checkpoint-costs-nvcomp)
+- [008. Localmaxxing：局部最优陷阱](ch03/008-localmaxxing)
+- [009. 03—AI Skill 测试用例设计完整指南：8 种类型 + 断言自检，覆盖率从 40% 到 90%](ch03/009-03-ai-skill-8-40-90)
+- [010. A History of IDEs at Google](ch03/010-a-history-of-ides-at-google)
+- [011. Bedrock AgentCore Pool Model Multi-Tenancy](ch03/011-bedrock-agentcore-pool-model-multi-tenancy)
 
-### ⭐⭐⭐ 专家（29 篇）
+### ⭐⭐⭐ 专家（30 篇）
 
-- [013. NVIDIA GPU Kernel 翻译：Cute / Python / Julia](ch03/013-nvidia-gpu-kernel-cute-python-julia)
-- [014. The Interface Is No Longer the Product](ch03/014-the-interface-is-no-longer-the-product)
-- [015. How a Mid-tier Enterprise SaaS Provider Automates Cloud Support](ch03/015-how-a-mid-tier-enterprise-saas-provider-automates-cloud-supp)
-- [016. Figma Make, Now on Your Local Code: Closing the Design-to-Code Loop](ch03/016-figma-make-now-on-your-local-code-closing-the-design-to-co)
-- [017. Bedrock AgentCore 多租户 Agent 构建实践](ch03/017-bedrock-agentcore-agent)
-- [018. 如何把经验装到Skills](ch03/018-skills)
+- [012. NVIDIA GPU Kernel 翻译：Cute / Python / Julia](ch03/012-nvidia-gpu-kernel-cute-python-julia)
+- [013. The Interface Is No Longer the Product](ch03/013-the-interface-is-no-longer-the-product)
+- [014. How a Mid-tier Enterprise SaaS Provider Automates Cloud Support](ch03/014-how-a-mid-tier-enterprise-saas-provider-automates-cloud-supp)
+- [015. Figma Make, Now on Your Local Code: Closing the Design-to-Code Loop](ch03/015-figma-make-now-on-your-local-code-closing-the-design-to-co)
+- [016. Bedrock AgentCore 多租户 Agent 构建实践](ch03/016-bedrock-agentcore-agent)
+- [017. 如何把经验装到Skills](ch03/017-skills)
+- [018. Edge AI Networking — Wi-Fi 7/8 Convergence Analysis](ch03/018-edge-ai-networking-wi-fi-7-8-convergence-analysis)
 - [019. Real-Time Personalisation at Scale: How Zepto Understands What You Want, Right Now](ch03/019-real-time-personalisation-at-scale-how-zepto-understands-wh)
 - [020. 5 Years and $5M Later: Inventing a New Programming Language for Web Development Was a Mistake (Wasp 复盘)](ch03/020-5-years-and-5m-later-inventing-a-new-programming-language)
 - [021. What the design-to-code loop unlocks](ch03/021-what-the-design-to-code-loop-unlocks)

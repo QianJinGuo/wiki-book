@@ -24,7 +24,7 @@
 - [面向大型代码库的 Claude Code 团队落地经验与扩展策略（Agent Harness）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-large-codebase-team-deployment-agent-harness.md) — 13模式全版
 - [构建无服务器Kiro调度平台：用Kiro CLI + EventBridge + ECS Fargate实现定时AI任务](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建无服务器kiro调度平台用kiro-cli-eventbridge-ecs-fargate实现定时ai任务.md) — 定时AI任务7x24
 - [长期运行的 Agent 怎么管：Hermes 治理分层与 5 张卡](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-long-running-governance-five-cards-ruofei.md) — don't automate slop+5张卡治理
-- [Secure AI agents with Policy and Lambda interceptors in Amazon Bedrock AgentCore gateway](https://github.com/QianJinGuo/wiki-public/blob/main/entities/secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz.md) — Cedar策略+Lambda拦截器双模式
+- Secure AI agents with Policy and Lambda interceptors in Amazon Bedrock AgentCore gateway — Cedar策略+Lambda拦截器双模式
 - [腾讯云Agent Memory：Mermaid无限画布×上下文卸载](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tencentdb-agent-memory-context-offloading.md) — Mermaid画布上下文卸载
 - [阿里云 MSE AI 任务调度 + Agent Sandbox：动态休眠/唤醒 OpenClaw Agent 成本下降 90%+](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aliyun-mse-ai-task-scheduling-agent-sandbox-cost-90-percent.md) — 休眠唤醒短条borderline
 - [Claude Code 泄露后的漏网之鱼 claude-code-best 这两个月到底演进了什么](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-best-community-fork-evolution-vibecoder.md) — 社区fork演进短条

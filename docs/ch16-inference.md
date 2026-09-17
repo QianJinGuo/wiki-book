@@ -10,8 +10,8 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐⭐ 工程师 | 需编程基础 | 4 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 4 |
+| ⭐⭐ 工程师 | 需编程基础 | 3 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 5 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 4 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 2 |
 
@@ -35,17 +35,17 @@
 
 ## 本章内容
 
-### ⭐⭐ 工程师（4 篇）
+### ⭐⭐ 工程师（3 篇）
 
 - [001. LLM 推理流水线完整解析：Prefill-Decode 双阶段模型](ch16/001-llm-prefill-decode)
 - [002. Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP](ch16/002-profiling-in-pytorch-part-2-from-nn-linear-to-a-fused-mlp)
 - [003. Pytorch in Kernel Recsys Optimization](ch16/003-pytorch-in-kernel-recsys-optimization)
-- [004. SGLang](ch16/004-sglang)
 
-### ⭐⭐⭐ 专家（4 篇）
+### ⭐⭐⭐ 专家（5 篇）
 
-- [005. GLM-5 Scaling 痛点与推理优化](ch16/005-glm-5-scaling)
-- [006. vLLM V0→V1 迁移中的 logprob 差异修复](ch16/006-vllm-v0-v1-logprob)
+- [004. GLM-5 Scaling 痛点与推理优化](ch16/004-glm-5-scaling)
+- [005. vLLM V0→V1 迁移中的 logprob 差异修复](ch16/005-vllm-v0-v1-logprob)
+- [006. SGLang](ch16/006-sglang)
 - [007. 从 Chroma 换成 Qdrant，我踩了 100 万向量的坑](ch16/007-chroma-qdrant-100)
 - [008. How to Calculate the Inference Efficiency Ratio](ch16/008-how-to-calculate-the-inference-efficiency-ratio)
 

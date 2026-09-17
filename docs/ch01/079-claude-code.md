@@ -25,7 +25,7 @@
 - [长期运行的 Agent 怎么管：Hermes 治理分层与 5 张卡](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-long-running-governance-five-cards-ruofei.md) — don't automate slop+5张卡治理
 - [Reference your own AWS Secrets Manager secrets in Amazon Bedrock AgentCore Identity](https://github.com/QianJinGuo/wiki-public/blob/main/entities/bedrock-agentcore-secrets-manager-identity.md) — secrets引用短条
 - [Claude Code 泄露后的漏网之鱼 claude-code-best 这两个月到底演进了什么](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-best-community-fork-evolution-vibecoder.md) — 社区fork演进短条
-- [Secure AI agents with Policy and Lambda interceptors in Amazon Bedrock AgentCore gateway](https://github.com/QianJinGuo/wiki-public/blob/main/entities/secure-ai-agents-with-policy-and-lambda-interceptors-in-amaz.md) — Cedar策略+Lambda拦截器双模式
+- Secure AI agents with Policy and Lambda interceptors in Amazon Bedrock AgentCore gateway — Cedar策略+Lambda拦截器双模式
 - [阿里云 MSE AI 任务调度 + Agent Sandbox：动态休眠/唤醒 OpenClaw Agent 成本下降 90%+](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aliyun-mse-ai-task-scheduling-agent-sandbox-cost-90-percent.md) — 休眠唤醒短条borderline
 - [Amazon Quick integration with time-series databases for market intelligence using MCP](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-quick-mcp-kdbx-time-series.md) — 集成短条
 - [腾讯云Agent Memory：Mermaid无限画布×上下文卸载](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tencentdb-agent-memory-context-offloading.md) — Mermaid画布上下文卸载

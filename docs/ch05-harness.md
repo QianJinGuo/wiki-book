@@ -10,10 +10,10 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 21 |
+| ⭐ 入门 | 零基础可读 | 18 |
 | ⭐⭐ 工程师 | 需编程基础 | 13 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 22 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 29 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 24 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 30 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 17 |
 
 ---
@@ -36,7 +36,7 @@ Harness Engineering 是 2026 年冒出来的最重要工程概念之一：它回
 
 ## 本章内容
 
-### ⭐ 入门（21 篇）
+### ⭐ 入门（18 篇）
 
 - [001. Bringing more agent harnesses and frameworks to Cloudflare, starting with Flue](ch05/001-bringing-more-agent-harnesses-and-frameworks-to-cloudflare)
 - [002. Harness Engineering：快手电商用 AI 流水线重塑研发范式（需求全生命周期自动化交付）](ch05/002-harness-engineering-ai)
@@ -52,77 +52,77 @@ Harness Engineering 是 2026 年冒出来的最重要工程概念之一：它回
 - [012. Superpowers 深度解析：给 Claude Code 装上工程大脑](ch05/012-superpowers-claude-code)
 - [013. Claude Code Harness Deep Understanding](ch05/013-claude-code-harness-deep-understanding)
 - [014. Claude Code Harness 深度分析](ch05/014-claude-code-harness)
-- [015. HSCodeComp：阿里 ACL 2026 最佳资源论文——层级规则应用 Agent 基准](ch05/015-hscodecomp-acl-2026-agent)
-- [016. 去哪儿网 AI Coding 研发平台实践：L0-L5 自动化分级 + Harness 四把锁 + QunarDevCenter + 天弦 QDO](ch05/016-ai-coding-l0-l5-harness-qunardevcenter-qdo)
-- [017. MoonBit：面向 Agent 协作的编程语言（语言即工具链 + 形式化验证 + Wasm 沙箱）](ch05/017-moonbit-agent-wasm)
-- [018. Cloudflare Copy Fail Linux 内核漏洞应急响应](ch05/018-cloudflare-copy-fail-linux)
-- [019. Build a serverless image editing agent with Amazon Bedrock AgentCore harness](ch05/019-build-a-serverless-image-editing-agent-with-amazon-bedrock-a)
-- [020. Beyond Vibe Coding — Directed Generation as Design Methodology](ch05/020-beyond-vibe-coding-directed-generation-as-design-methodolo)
-- [021. Loop Engineering 半年实战拆解：claude-ship 开源自进化开发系统](ch05/021-loop-engineering-claude-ship)
+- [015. 去哪儿网 AI Coding 研发平台实践：L0-L5 自动化分级 + Harness 四把锁 + QunarDevCenter + 天弦 QDO](ch05/015-ai-coding-l0-l5-harness-qunardevcenter-qdo)
+- [016. Cloudflare Copy Fail Linux 内核漏洞应急响应](ch05/016-cloudflare-copy-fail-linux)
+- [017. Build a serverless image editing agent with Amazon Bedrock AgentCore harness](ch05/017-build-a-serverless-image-editing-agent-with-amazon-bedrock-a)
+- [018. Loop Engineering 半年实战拆解：claude-ship 开源自进化开发系统](ch05/018-loop-engineering-claude-ship)
 
 ### ⭐⭐ 工程师（13 篇）
 
-- [022. Harness Engineering for Self-Improvement — 翁荔 Lilian Weng 系统梳理 Harness 自我提升研究全景](ch05/022-harness-engineering-for-self-improvement-lilian-weng-h)
-- [023. 应用宝活动平台 Harness 工程实践——从对话式 AI Coding 到工程化系统](ch05/023-harness-ai-coding)
-- [024. 从零复刻 Claude Code：Harness 构建学习笔记](ch05/024-claude-code-harness)
-- [025. 来自字节跳动TRAE的Harness Engineering指南](ch05/025-trae-harness-engineering)
-- [026. 从渐进式 SDD 到 Lattice Harness：AI Coding 团队级闭环实践](ch05/026-sdd-lattice-harness-ai-coding)
-- [027. GSD 完胜 OpenSpec 和 Superpowers？源码拆完发现：三者防的是 context rot 的三道防线](ch05/027-gsd-openspec-superpowers-context-rot)
-- [028. 清华大学：驾驭工程 (Harness Engineering) 研究报告](ch05/028-harness-engineering)
-- [029. Superpowers 6.0 反作弊重写：reviewer 只读怀疑论者 + 上下文经济学 + progress ledger + model 纪律 —— 术哥源码级拆解 158 commits](ch05/029-superpowers-6-0-reviewer-progress-ledger-model)
-- [030. 全球首个完全AI编写的训练框架：面壁ForgeTrain速度反超英伟达Megatron，年底要把国产算力软件重写一遍](ch05/030-ai-forgetrain-megatron)
-- [031. Thin Harness, Fat Skills：AI工程架构的本质](ch05/031-thin-harness-fat-skills-ai)
-- [032. Skill Factory：三天手搓面向Harness设计的技能工厂](ch05/032-skill-factory-harness)
-- [033. 从 Prompt 到 Harness：Claude 官方学习资料](ch05/033-prompt-harness-claude)
-- [034. browser-use v0.13 Browser Harness：薄抽象层设计哲学](ch05/034-browser-use-v0-13-browser-harness)
+- [019. MoonBit：面向 Agent 协作的编程语言（语言即工具链 + 形式化验证 + Wasm 沙箱）](ch05/019-moonbit-agent-wasm)
+- [020. Harness Engineering for Self-Improvement — 翁荔 Lilian Weng 系统梳理 Harness 自我提升研究全景](ch05/020-harness-engineering-for-self-improvement-lilian-weng-h)
+- [021. 应用宝活动平台 Harness 工程实践——从对话式 AI Coding 到工程化系统](ch05/021-harness-ai-coding)
+- [022. 从零复刻 Claude Code：Harness 构建学习笔记](ch05/022-claude-code-harness)
+- [023. 来自字节跳动TRAE的Harness Engineering指南](ch05/023-trae-harness-engineering)
+- [024. 从渐进式 SDD 到 Lattice Harness：AI Coding 团队级闭环实践](ch05/024-sdd-lattice-harness-ai-coding)
+- [025. GSD 完胜 OpenSpec 和 Superpowers？源码拆完发现：三者防的是 context rot 的三道防线](ch05/025-gsd-openspec-superpowers-context-rot)
+- [026. 清华大学：驾驭工程 (Harness Engineering) 研究报告](ch05/026-harness-engineering)
+- [027. Superpowers 6.0 反作弊重写：reviewer 只读怀疑论者 + 上下文经济学 + progress ledger + model 纪律 —— 术哥源码级拆解 158 commits](ch05/027-superpowers-6-0-reviewer-progress-ledger-model)
+- [028. 全球首个完全AI编写的训练框架：面壁ForgeTrain速度反超英伟达Megatron，年底要把国产算力软件重写一遍](ch05/028-ai-forgetrain-megatron)
+- [029. Thin Harness, Fat Skills：AI工程架构的本质](ch05/029-thin-harness-fat-skills-ai)
+- [030. Skill Factory：三天手搓面向Harness设计的技能工厂](ch05/030-skill-factory-harness)
+- [031. 从 Prompt 到 Harness：Claude 官方学习资料](ch05/031-prompt-harness-claude)
 
-### ⭐⭐⭐ 专家（22 篇）
+### ⭐⭐⭐ 专家（24 篇）
 
-- [035. 缝合怪识别与减法决策论：OpenSpec + Superpowers 融合方案下线记（2 周 3 次实测 + 3 个测试 + 加法传播学 + Plan Mode + Superpowers + ASD 最终方案）](ch05/035-openspec-superpowers-2-3-3-plan-mode-s)
-- [036. Harness 工程实践复盘：100% Cache 命中的 Agent 怎么设计？](ch05/036-harness-100-cache-agent)
-- [037. Harness 到底是什么？看看 OpenClaw、Hermes、Claude Code 的演绎吧](ch05/037-harness-openclaw-hermes-claude-code)
-- [038. Martin Fowler AI 研发提醒：Harness 承重层](ch05/038-martin-fowler-ai-harness)
-- [039. MAC（multi-agent-coding）：Skills + Hooks 两层 Harness —— 完全委托 0-20% 的解法](ch05/039-mac-multi-agent-coding-skills-hooks-harness-0-20)
-- [040. 生产级 Harness 的 12 大组件以及主流框架对比](ch05/040-harness-12)
-- [041. 基于 Harness + SDD + 多仓管理模式的 AI 全栈开发实践｜得物技术](ch05/041-harness-sdd-ai)
-- [042. Harness 工程可视化：Vibe Coding 中重建工程可控性](ch05/042-harness-vibe-coding)
-- [043. EnvHarness: Awakening Static Worlds for Agent Learning](ch05/043-envharness-awakening-static-worlds-for-agent-learning)
-- [044. Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](ch05/044-harness-engineering-ai)
-- [045. Harness Engineering：AI 能在真正\"出事会炸\"的后端系统里写代码吗？](ch05/045-harness-engineering-ai)
-- [046. 场景营销前端 AI Coding — 从问题到方案](ch05/046-ai-coding)
-- [047. Spec Kit / OpenSpec / Superpowers 融合：棕地项目的三层Harness架构](ch05/047-spec-kit-openspec-superpowers-harness)
-- [048. Loop Engineering 实践指南：CodeBuddy 中的自主循环系统 — Inner/Outer Loop + /goal + /loop + Team 对抗验证 + 状态外置](ch05/048-loop-engineering-codebuddy-inner-outer-loop-goal)
-- [049. 面向大型代码库的 Claude Code 团队落地经验与扩展策略（Agent Harness）](ch05/049-claude-code-agent-harness)
-- [050. Claude Managed Agents 官方 Harness 平台指南](ch05/050-claude-managed-agents-harness)
-- [051. 规格驱动开发与 Harness](ch05/051-harness)
-- [052. Harness Engineering Deletable Worksite Ruofei](ch05/052-harness-engineering-deletable-worksite-ruofei)
-- [053. Harness进化论文 — M⋆记忆程序进化与AutoHarness动作约束](ch05/053-harness-m-autoharness)
-- [054. 从 Autoresearch 到 Better-Harness：自动优化真正难在评价信号](ch05/054-autoresearch-better-harness)
-- [055. Agent Harness Skill 系统实战指南 — Reference/Action 类型、动态注入与 frontmatter 全解](ch05/055-agent-harness-skill-reference-action-frontmatter)
-- [056. Harness 工程之道：Skill 原理与最佳实践](ch05/056-harness-skill)
+- [032. 缝合怪识别与减法决策论：OpenSpec + Superpowers 融合方案下线记（2 周 3 次实测 + 3 个测试 + 加法传播学 + Plan Mode + Superpowers + ASD 最终方案）](ch05/032-openspec-superpowers-2-3-3-plan-mode-s)
+- [033. Harness 工程实践复盘：100% Cache 命中的 Agent 怎么设计？](ch05/033-harness-100-cache-agent)
+- [034. Harness 到底是什么？看看 OpenClaw、Hermes、Claude Code 的演绎吧](ch05/034-harness-openclaw-hermes-claude-code)
+- [035. Martin Fowler AI 研发提醒：Harness 承重层](ch05/035-martin-fowler-ai-harness)
+- [036. MAC（multi-agent-coding）：Skills + Hooks 两层 Harness —— 完全委托 0-20% 的解法](ch05/036-mac-multi-agent-coding-skills-hooks-harness-0-20)
+- [037. 生产级 Harness 的 12 大组件以及主流框架对比](ch05/037-harness-12)
+- [038. 基于 Harness + SDD + 多仓管理模式的 AI 全栈开发实践｜得物技术](ch05/038-harness-sdd-ai)
+- [039. Harness 工程可视化：Vibe Coding 中重建工程可控性](ch05/039-harness-vibe-coding)
+- [040. EnvHarness: Awakening Static Worlds for Agent Learning](ch05/040-envharness-awakening-static-worlds-for-agent-learning)
+- [041. Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统](ch05/041-harness-engineering-ai)
+- [042. Beyond Vibe Coding — Directed Generation as Design Methodology](ch05/042-beyond-vibe-coding-directed-generation-as-design-methodolo)
+- [043. HSCodeComp：阿里 ACL 2026 最佳资源论文——层级规则应用 Agent 基准](ch05/043-hscodecomp-acl-2026-agent)
+- [044. Harness Engineering：AI 能在真正\"出事会炸\"的后端系统里写代码吗？](ch05/044-harness-engineering-ai)
+- [045. 场景营销前端 AI Coding — 从问题到方案](ch05/045-ai-coding)
+- [046. Spec Kit / OpenSpec / Superpowers 融合：棕地项目的三层Harness架构](ch05/046-spec-kit-openspec-superpowers-harness)
+- [047. Loop Engineering 实践指南：CodeBuddy 中的自主循环系统 — Inner/Outer Loop + /goal + /loop + Team 对抗验证 + 状态外置](ch05/047-loop-engineering-codebuddy-inner-outer-loop-goal)
+- [048. 面向大型代码库的 Claude Code 团队落地经验与扩展策略（Agent Harness）](ch05/048-claude-code-agent-harness)
+- [049. Claude Managed Agents 官方 Harness 平台指南](ch05/049-claude-managed-agents-harness)
+- [050. 规格驱动开发与 Harness](ch05/050-harness)
+- [051. Harness Engineering Deletable Worksite Ruofei](ch05/051-harness-engineering-deletable-worksite-ruofei)
+- [052. Harness进化论文 — M⋆记忆程序进化与AutoHarness动作约束](ch05/052-harness-m-autoharness)
+- [053. 从 Autoresearch 到 Better-Harness：自动优化真正难在评价信号](ch05/053-autoresearch-better-harness)
+- [054. Agent Harness Skill 系统实战指南 — Reference/Action 类型、动态注入与 frontmatter 全解](ch05/054-agent-harness-skill-reference-action-frontmatter)
+- [055. Harness 工程之道：Skill 原理与最佳实践](ch05/055-harness-skill)
 
-### ⭐⭐⭐⭐ 科学家（29 篇）
+### ⭐⭐⭐⭐ 科学家（30 篇）
 
-- [057. Harness Engineering：AI 能在真正"出事会炸"的后端系统里写代码吗？](ch05/057-harness-engineering-ai)
-- [058. 长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](ch05/058-agent-ralph-loop-harness)
-- [059. Spec as AIOS：AI-Native 全栈交付的抗熵架构（高德技术系列第二期）](ch05/059-spec-as-aios-ai-native)
-- [060. Harness Engineering 从理论到实战：行为正确性死结 + 上下文腐烂 + 可驾驭性 + Ashby 定律](ch05/060-harness-engineering-ashby)
-- [061. 高德广告工程 Harness/SDD 体系演进：从\"氛围编程\"治理到 AI Native 全流程闭环](ch05/061-harness-sdd-ai-native)
-- [062. 长时间运行应用的 Harness 设计](ch05/062-harness)
-- [063. AI Friendly 架构设计：后端系统面向无人值守开发时代的标准与路径](ch05/063-ai-friendly)
-- [064. Harness 减法工程——删掉 61% 之后什么该留（L0-L3 四层归属）](ch05/064-harness-61-l0-l3)
-- [065. Harness 模式 6-SubAgent 实战 — 17哥 versus 大模型评测平台（Git Submodule + Agent Handoff + Chrome DevTools MCP）](ch05/065-harness-6-subagent-17-versus-git-submodule-agent)
-- [066. Model-Harness Fit：Agent 脚手架适配模型](ch05/066-model-harness-fit-agent)
-- [067. 万字干货！Harness Engineering如何工程化落地？](ch05/067-harness-engineering)
-- [068. wow-harness v3：AI 开发的治理协议](ch05/068-wow-harness-v3-ai)
-- [069. SkillOpt](ch05/069-skillopt)
-- [070. DeepSeek 成本迁移：从 KV Cache 到 Harness 的系统层](ch05/070-deepseek-kv-cache-harness)
-- [071. Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](ch05/071-cursor-harness-harness)
-- [072. 王云鹤眼中的Harness：复杂优化问题，AGI灵魂争夺之战](ch05/072-harness-agi)
-- [073. Agent生产级Harness工程指南](ch05/073-agent-harness)
-- [074. 墙比模型更重要：Stripe Minions + 字节 DeerFlow 2.0 + 蚂蚁支小助 的同结论](ch05/074-stripe-minions-deerflow-2-0)
-- [075. Agent Harness Engineering: A Survey — ETCLOVG Taxonomy](ch05/075-agent-harness-engineering-a-survey-etclovg-taxonomy)
-- [076. Harness Engineering 核心模式](ch05/076-harness-engineering)
+- [056. Harness Engineering：AI 能在真正"出事会炸"的后端系统里写代码吗？](ch05/056-harness-engineering-ai)
+- [057. 长周期 Agent 详解：从 Ralph Loop 到可接管 Harness](ch05/057-agent-ralph-loop-harness)
+- [058. Spec as AIOS：AI-Native 全栈交付的抗熵架构（高德技术系列第二期）](ch05/058-spec-as-aios-ai-native)
+- [059. Harness Engineering 从理论到实战：行为正确性死结 + 上下文腐烂 + 可驾驭性 + Ashby 定律](ch05/059-harness-engineering-ashby)
+- [060. 高德广告工程 Harness/SDD 体系演进：从\"氛围编程\"治理到 AI Native 全流程闭环](ch05/060-harness-sdd-ai-native)
+- [061. 长时间运行应用的 Harness 设计](ch05/061-harness)
+- [062. AI Friendly 架构设计：后端系统面向无人值守开发时代的标准与路径](ch05/062-ai-friendly)
+- [063. Harness 减法工程——删掉 61% 之后什么该留（L0-L3 四层归属）](ch05/063-harness-61-l0-l3)
+- [064. Harness 模式 6-SubAgent 实战 — 17哥 versus 大模型评测平台（Git Submodule + Agent Handoff + Chrome DevTools MCP）](ch05/064-harness-6-subagent-17-versus-git-submodule-agent)
+- [065. Model-Harness Fit：Agent 脚手架适配模型](ch05/065-model-harness-fit-agent)
+- [066. 万字干货！Harness Engineering如何工程化落地？](ch05/066-harness-engineering)
+- [067. wow-harness v3：AI 开发的治理协议](ch05/067-wow-harness-v3-ai)
+- [068. SkillOpt](ch05/068-skillopt)
+- [069. DeepSeek 成本迁移：从 KV Cache 到 Harness 的系统层](ch05/069-deepseek-kv-cache-harness)
+- [070. Cursor 复盘 Harness：模型决定能力上限，Harness 决定生产下限](ch05/070-cursor-harness-harness)
+- [071. 王云鹤眼中的Harness：复杂优化问题，AGI灵魂争夺之战](ch05/071-harness-agi)
+- [072. Agent生产级Harness工程指南](ch05/072-agent-harness)
+- [073. 墙比模型更重要：Stripe Minions + 字节 DeerFlow 2.0 + 蚂蚁支小助 的同结论](ch05/073-stripe-minions-deerflow-2-0)
+- [074. Agent Harness Engineering: A Survey — ETCLOVG Taxonomy](ch05/074-agent-harness-engineering-a-survey-etclovg-taxonomy)
+- [075. Harness Engineering 核心模式](ch05/075-harness-engineering)
+- [076. browser-use v0.13 Browser Harness：薄抽象层设计哲学](ch05/076-browser-use-v0-13-browser-harness)
 - [077. Agent Harness 解析：智能体架构深度拆解](ch05/077-agent-harness)
 - [078. 三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战](ch05/078-gstack-superpowers-openspec-ai)
 - [079. 面向复杂算法任务的 AI Agent：高德 Long-Running Harness 架构与 Uplift 模型迭代应用](ch05/079-ai-agent-long-running-harness-uplift)

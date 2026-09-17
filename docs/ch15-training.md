@@ -2,7 +2,7 @@
 
 > 打造专属模型：PPO → DPO → GRPO，合成数据，课程学习
 
-> 本章收录 **26 篇**实体，按深度递增排列。
+> 本章收录 **27 篇**实体，按深度递增排列。
 
 ---
 
@@ -12,7 +12,7 @@
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 3 |
 | ⭐⭐ 工程师 | 需编程基础 | 2 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 13 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 14 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 4 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 4 |
 
@@ -45,7 +45,7 @@
 - [004. 不用人类手写训练框架了！AI自己写代码，训出1B端侧「小钢炮」](ch15/004-ai-1b)
 - [005. EMO: Pretraining mixture of experts for emergent modularity | Ai2](ch15/005-emo-pretraining-mixture-of-experts-for-emergent-modularity)
 
-### ⭐⭐⭐ 专家（13 篇）
+### ⭐⭐⭐ 专家（14 篇）
 
 - [006. DeepSeek V4 训练方法论深度解读](ch15/006-deepseek-v4)
 - [007. NVIDIA Blackwell MLPerf Training 6.0 基准测试结果（2026-06）](ch15/007-nvidia-blackwell-mlperf-training-6-0-2026-06)
@@ -53,27 +53,28 @@
 - [009. SFT+DPO 双阶段微调：Qwen3-1.7B Tool Calling 精度提升方案](ch15/009-sft-dpo-qwen3-1-7b-tool-calling)
 - [010. 无惧Off-Policy偏移！Bengio团队解绑后训练，大模型RL提速50倍](ch15/010-off-policy-bengio-rl-50)
 - [011. Is One Layer Enough? 单层 RL 训练可超越全参数训练](ch15/011-is-one-layer-enough-rl)
-- [012. LLM Post-Training全景指南：从RLHF到GRPO再到AgenticRL](ch15/012-llm-post-training-rlhf-grpo-agenticrl)
-- [013. What I've been building: ATOM Report, post-training course, finishing my book, and ongoing research](ch15/013-what-i-ve-been-building-atom-report-post-training-course)
-- [014. Reinforcing Recursive Language Models | alphaXiv](ch15/014-reinforcing-recursive-language-models-alphaxiv)
-- [015. 百度文心大模型后训练进化（ERNIE 3.0→5.0）](ch15/015-ernie-3-0-5-0)
-- [016. Overcoming Reward Signal Challenges: Verifiable Rewards-based RL with GRPO on SageMaker AI](ch15/016-overcoming-reward-signal-challenges-verifiable-rewards-base)
-- [017. Heidi Health 临床 AI 微调：小模型通过偏好信号达前沿水平](ch15/017-heidi-health-ai)
-- [018. Notes on pretraining parallelisms and failed training runs.](ch15/018-notes-on-pretraining-parallelisms-and-failed-training-runs)
+- [012. PhoneWorld (arxiv 2605.29486)：腾讯混元+港中深+人大+武大 规模化可训练 mock Android 环境基础设施（机器之心解读）](ch15/012-phoneworld-arxiv-2605-29486-mock-android)
+- [013. LLM Post-Training全景指南：从RLHF到GRPO再到AgenticRL](ch15/013-llm-post-training-rlhf-grpo-agenticrl)
+- [014. What I've been building: ATOM Report, post-training course, finishing my book, and ongoing research](ch15/014-what-i-ve-been-building-atom-report-post-training-course)
+- [015. Reinforcing Recursive Language Models | alphaXiv](ch15/015-reinforcing-recursive-language-models-alphaxiv)
+- [016. 百度文心大模型后训练进化（ERNIE 3.0→5.0）](ch15/016-ernie-3-0-5-0)
+- [017. Overcoming Reward Signal Challenges: Verifiable Rewards-based RL with GRPO on SageMaker AI](ch15/017-overcoming-reward-signal-challenges-verifiable-rewards-base)
+- [018. Heidi Health 临床 AI 微调：小模型通过偏好信号达前沿水平](ch15/018-heidi-health-ai)
+- [019. Notes on pretraining parallelisms and failed training runs.](ch15/019-notes-on-pretraining-parallelisms-and-failed-training-runs)
 
 ### ⭐⭐⭐⭐ 科学家（4 篇）
 
-- [019. 在线蒸馏OPD vs 离线蒸馏SFT：数学原理与实战优势](ch15/019-opd-vs-sft)
-- [020. RL Beyond the Verifiable: 当奖励信号无法自动验证时](ch15/020-rl-beyond-the-verifiable)
-- [021. ICML 2026 | PRISM: Parallel Residual Iterative Sequence Model](ch15/021-icml-2026-prism-parallel-residual-iterative-sequence-mode)
-- [022. NVIDIA-ZPPO: Zone of Proximal Policy Optimization](ch15/022-nvidia-zppo-zone-of-proximal-policy-optimization)
+- [020. 在线蒸馏OPD vs 离线蒸馏SFT：数学原理与实战优势](ch15/020-opd-vs-sft)
+- [021. RL Beyond the Verifiable: 当奖励信号无法自动验证时](ch15/021-rl-beyond-the-verifiable)
+- [022. ICML 2026 | PRISM: Parallel Residual Iterative Sequence Model](ch15/022-icml-2026-prism-parallel-residual-iterative-sequence-mode)
+- [023. NVIDIA-ZPPO: Zone of Proximal Policy Optimization](ch15/023-nvidia-zppo-zone-of-proximal-policy-optimization)
 
 ### ⭐⭐⭐⭐⭐ 大师（4 篇）
 
-- [023. Generalization Dynamics of LM Pre-training — Jiaxin Wen](ch15/023-generalization-dynamics-of-lm-pre-training-jiaxin-wen)
-- [024. Mind Lab LoRA 持续学习体系：δ-mem + MinT + LoRA Scaling Law + Macaron-A2UI](ch15/024-mind-lab-lora-mem-mint-lora-scaling-law-macaron-a2)
-- [025. Fine-Tuning Cosmos](ch15/025-fine-tuning-cosmos)
-- [026. SFT, RL, and On-Policy Distillation Through a Distributional Lens](ch15/026-sft-rl-and-on-policy-distillation-through-a-distributional)
+- [024. Generalization Dynamics of LM Pre-training — Jiaxin Wen](ch15/024-generalization-dynamics-of-lm-pre-training-jiaxin-wen)
+- [025. Mind Lab LoRA 持续学习体系：δ-mem + MinT + LoRA Scaling Law + Macaron-A2UI](ch15/025-mind-lab-lora-mem-mint-lora-scaling-law-macaron-a2)
+- [026. Fine-Tuning Cosmos](ch15/026-fine-tuning-cosmos)
+- [027. SFT, RL, and On-Policy Distillation Through a Distributional Lens](ch15/027-sft-rl-and-on-policy-distillation-through-a-distributional)
 
 
 ---

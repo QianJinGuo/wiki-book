@@ -10,9 +10,9 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐⭐ 工程师 | 需编程基础 | 3 |
+| ⭐⭐ 工程师 | 需编程基础 | 2 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 6 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 10 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 11 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 2 |
 
 ---
@@ -37,30 +37,30 @@ RAG 不只是"检索 + 拼接"——它是知识管理的入口。
 
 ## 本章内容
 
-### ⭐⭐ 工程师（3 篇）
+### ⭐⭐ 工程师（2 篇）
 
 - [001. 【实践教程】真实AI客服落地全流程：意图识别、混合检索到数据飞轮](ch10/001-ai)
 - [002. Google出手统一全模态检索：Gemini Embedding 2把文本、图片、音频和视频压进同一向量空间](ch10/002-google-gemini-embedding-2)
-- [003. PixelRAG：用截图替代文本解析的视觉 RAG 范式](ch10/003-pixelrag-rag)
 
 ### ⭐⭐⭐ 专家（6 篇）
 
-- [004. Nvidia Multimodal RAG Knowledge Systems](ch10/004-nvidia-multimodal-rag-knowledge-systems)
-- [005. Manufacturing Intelligence with Amazon Nova Multimodal Embeddings](ch10/005-manufacturing-intelligence-with-amazon-nova-multimodal-embed)
-- [006. SkillCorpus: 大规模社区 Skill 生态的筛选、评测与边界分析](ch10/006-skillcorpus-skill)
-- [007. 视频 RAG 分块策略：停顿 / 滑动窗口 / LLM 主题分块](ch10/007-rag-llm)
-- [008. 怎么短平快地把RAG做好：厦门国际银行数创金融杯RAG初赛方案](ch10/008-rag-rag)
-- [009. 知识库构建方法论](ch10/009-page-009)
+- [003. Nvidia Multimodal RAG Knowledge Systems](ch10/003-nvidia-multimodal-rag-knowledge-systems)
+- [004. Manufacturing Intelligence with Amazon Nova Multimodal Embeddings](ch10/004-manufacturing-intelligence-with-amazon-nova-multimodal-embed)
+- [005. SkillCorpus: 大规模社区 Skill 生态的筛选、评测与边界分析](ch10/005-skillcorpus-skill)
+- [006. 视频 RAG 分块策略：停顿 / 滑动窗口 / LLM 主题分块](ch10/006-rag-llm)
+- [007. 怎么短平快地把RAG做好：厦门国际银行数创金融杯RAG初赛方案](ch10/007-rag-rag)
+- [008. 知识库构建方法论](ch10/008-page-008)
 
-### ⭐⭐⭐⭐ 科学家（10 篇）
+### ⭐⭐⭐⭐ 科学家（11 篇）
 
-- [010. 向量库是RAG的前菜，知识图谱是答案，本体论是灵魂](ch10/010-rag)
-- [011. RAG技术框架的演进方向](ch10/011-rag)
-- [012. RAG 分块优化 2025：策略选择与工程实践](ch10/012-rag-2025)
-- [013. RAG Chunk Embedding Rerank Pipeline](ch10/013-rag-chunk-embedding-rerank-pipeline)
-- [014. RAG 全链路技术详解：从文档加载到 Ragas 评估](ch10/014-rag-ragas)
-- [015. Karpathy LLM Wiki V2：记忆生命周期 + 知识图谱 + 混合检索 + 落地路线图](ch10/015-karpathy-llm-wiki-v2)
-- [016. MRAgent：记忆是重建的，不是检索的](ch10/016-mragent)
+- [009. 向量库是RAG的前菜，知识图谱是答案，本体论是灵魂](ch10/009-rag)
+- [010. RAG技术框架的演进方向](ch10/010-rag)
+- [011. RAG 分块优化 2025：策略选择与工程实践](ch10/011-rag-2025)
+- [012. RAG Chunk Embedding Rerank Pipeline](ch10/012-rag-chunk-embedding-rerank-pipeline)
+- [013. RAG 全链路技术详解：从文档加载到 Ragas 评估](ch10/013-rag-ragas)
+- [014. Karpathy LLM Wiki V2：记忆生命周期 + 知识图谱 + 混合检索 + 落地路线图](ch10/014-karpathy-llm-wiki-v2)
+- [015. MRAgent：记忆是重建的，不是检索的](ch10/015-mragent)
+- [016. PixelRAG：用截图替代文本解析的视觉 RAG 范式](ch10/016-pixelrag-rag)
 - [017. RAG vs LLM Wiki 深度对比：企业知识库架构选型指南](ch10/017-rag-vs-llm-wiki)
 - [018. Instacart 广告检索架构演进：从 BERT 打分到生成式 token-by-token 检索](ch10/018-instacart-bert-token-by-token)
 - [019. Fragnesia: Linux Kernel Local Privilege Escalation via ESP-in-TCP](ch10/019-fragnesia-linux-kernel-local-privilege-escalation-via-esp-i)

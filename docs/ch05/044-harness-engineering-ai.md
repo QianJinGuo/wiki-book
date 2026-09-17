@@ -1,73 +1,44 @@
-# Harness Engineering实践做了一个平台让AI一晚上自动评测和优化你的系统
+# Harness Engineering：AI 能在真正\"出事会炸\"的后端系统里写代码吗？
 
-> 📊 Level ⭐⭐⭐ | 10.6KB
+> 📊 Level ⭐⭐⭐ | 9.7KB
 
-## 核心要点
-- AI First 评测理念：只允许 AI 操作，人无法操作，从入口层面杜绝人工苦力
-- 平台核心能力：AI 自主创建评测任务、生成评测集、执行评测、提交评测报告
-- 评测集分两种模式：标准评测（有明确成功/失败状态）和 Rubrics 评测（内容质量等级评定）
-- 自动化优化循环：评测 → 生成改进建议 → 优化 → 下一轮评测，三轮往复分数从 90.7 → 97.4 → 99.1
-- 案例覆盖：无 UI 纯终端评测、带 UI 的浏览器自动化评测、以及系统级自动优化
-- 关键前提：系统本身 AI Coding 含量要高，老系统到处断头路难以自动化
-- 一晚上全自动优化：人花 3-4 分钟描述任务，其余全由 AI 完成 
-
-## 深度分析
-### 从"人做评测"到"AI 全自动评测"的核心跃迁
-传统评测流程的痛点不是流程本身，而是人在其中的不可扩展性：评测集收集耗时、评测执行烧时间、评测人员意愿低 。作者提出的 AI First 理念将这一矛盾彻底反转——不是让 AI 辅助人做评测，而是从入口层面就让人无法干预，所有评测动作由 AI 自主完成。
-这个转变的关键在于"评测任务描述"的范式转变：人只需描述评测目标（"全方位测试钉钉文档 MCP"），AI 负责拆解成具体的评测用例、生成验收标准、执行测试、分析结果。全程人不需要知道"用什么工具测"、"覆盖哪些场景"，AI 自己判断 。
-
-### Rubrics 评测：解决 AI 质量评估难题的关键创新
-传统的自动化测试只能判断"功能是否工作"——API 返回 200 就是成功，超时就是失败。但 AI 系统的输出往往是内容质量、表达流畅度、策略合理性等无法用二元判断衡量维度。作者引入了 Rubrics 概念：针对内容质量评测场景，生成一系列不同等级的评测用例（如 OKR 查询场景中"查没查出来是欠点意思的，但可以生成出一系列不同等级"） 。
-这一设计解决了 AI 评测的核心难题：用规则化、结构化的评测集替代主观判断。每个 Rubrics 维度有明确定义的评分标准，AI 评测时只需判断"当前输出对应哪个等级"——这比直接输出"内容好不好"更可靠、更可解释。
-
-### 三轮优化循环的工程价值
-从 90.7 → 97.4 → 99.1 的三轮优化曲线揭示了一个重要规律：AI 自动化优化的边际收益递减，但绝对值持续提升 。这意味着：
-第一轮优化解决最明显的问题（边界条件未处理、错误处理缺失等），收益最大；第二轮处理场景覆盖不足和策略合理性；第三轮进入细节打磨。这种分层优化模式与人类专家的调试思路一致，但 AI 的优势在于可以 24 小时不间断运行、每次迭代都有完整的评测记录和对比。
-
-### 系统自动优化的前提条件
-作者坦承，这一实践有效的前提相当苛刻 ：
-
-**系统本身的 UI 规范和基础设施要达标**——UI 测试中如果 UI 不规范，AI 会在 UI 里迷路，连测试路径都无法完成。这意味着 AI 自动化测试的前提是系统本身已经具备基本的可测试性（清晰的 UI 结构、规范的命名、完整的错误提示）。这个警示很重要：AI 评测能力再强，也无法弥补系统本身的可测试性缺陷。
-**系统本身 AI Coding 含量要高**——一个人工做的老系统，约定大于配置的内容太多，AI 很难进行功能跑通和优化，经常在一个地方断掉。AI Coding 含量高的系统（通常是 AI 辅助开发的、遵循规范架构的现代系统）才具备持续自动化测试的前提。
-
-### QoderWork + 评测平台的双 Agent 协作模式
-案例中出现了两个 Agent 的协作模式：QoderWork（AI Coding Agent）负责连接评测平台、生成评测集、执行测试、读取评测报告；而评测平台本身也是 Agent 驱动的，负责管理评测任务和评测集的生命周期 。这种模式本质上是元编程思想在 AI 评测领域的应用：AI 写测试、AI 跑测试、AI 分析结果、AI 改进代码。
-
-## 实践启示
-**1. 从"评测即规范"开始建立可测试性**
-
-如果你的系统最终要接入自动化 AI 评测，那么系统设计阶段就需要考虑可测试性：清晰的 API 契约、完整的错误码、规范的 UI 元素命名。评测即规范——当你知道 AI 要对你的系统打分，就会自然地把系统做成 AI 友好 。
-**2. 先用无 UI 纯终端评测验证流程，再用 UI 自动化扩展**
-
-建议落地路径：从 API/CLI 层面的评测开始（复杂度低、稳定性高），验证"AI 生成评测集 → 执行 → 出报告"的全流程；再逐步扩展到 UI 自动化测试；最后才考虑内容质量 Rubrics 评测。这样可以逐步建立对 AI 评测能力的信任，同时识别流程中的断点 。
-**3. Rubrics 设计是 AI 质量评测的核心工作**
-
-内容质量的 Rubrics 设计需要领域专家参与：定义每个评分维度的等级描述（1-5 分的区分标准）、提供每个等级的正反例。Rubrics 质量直接决定 AI 评测的可靠性。建议从小范围开始（3-5 个核心维度），逐步扩展，避免一开始就设计过于复杂的评分体系 。
-**4. 对老系统的 AI 评测：先做可行性评估**
-
-AI Coding 含量低的老系统不一定适合全自动 AI 优化。建议先用小样本（10-20 个评测用例）验证 AI 跑通率，如果断点率超过 30%，优先投入系统可测试性改造，而非盲目上自动化优化循环 。
-**5. 评测报告是团队的认知资产**
-评测报告不只是分数，而是系统行为的完整记录——包括每个用例的评测过程、失败原因、优化建议。这些报告可以成为新员工的培训材料、故障排查的参考文档、以及架构演进的决策依据。建议将评测报告纳入知识管理体系，而不仅仅是质量门禁的通过条件 。
-
-## 相关资源
-- [原文存档](https://mp.weixin.qq.com/s/UhWYE_XTQcFVmoSt8aosyg)
+## Harness Engineering：AI 能在真正"出事会炸"的后端系统里写代码吗？
+当 AI Coding 的聚光灯几乎全部打在前端和客户端——生成一个页面、写一个 App......的时候，一个重要的问题却似乎被回避了：AI 能在真正"出事会炸"的后端系统里写代码吗？
+腾讯CDN LEGO项目就是这样一个系统。100万行核心代码、300万行深度改造的第三方库，服务亿级用户，承担流量调度、协议解析、安全防护、缓存加速等关键职责。它面对的不是确定性的输入输出，而是不可控的客户端、不可控的源站、多协议、多配置、公网全量攻击面——这些因素维度的叠加不是简单相加，而是乘积式的复杂度爆炸，理论组合路径高达 13,824 × N 种。在这样的复杂的系统里让 AI 写代码，一行失误就可能是一场全网事故。
+但正因为难，才值得做。  我们系统性地探索了 AI Coding 在高风险后端场景的落地路径：一方面，用 AI 零人工代码实现了一个 Rust 版 Nonstop 代理框架，以此探测 AI 编码的能力边界与行为特性；另一方面，在超大规模 C++ LEGO项目中构建了 Harness Engineering 五层架构和多模型对抗式CR，为 AI 产出的每一行代码建立从生成到上线的完整质量屏障。
 
 ## 相关实体
-- [LLM-as-a-Verifier: A General-Purpose Verification Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-as-a-verifierageneral-purposeverific.md)
-- [你不知道的 Agent：原理、架构与工程实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/你不知道的-agent原理架构与工程实践.md)
-- [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/告别氛围编程基于-harness-治理和-sdd-的团队级-ai-研发范式演进与实践.md)
-- [看 AgentRun 如何玩转记忆存储，最佳实践来了！](https://github.com/QianJinGuo/wiki-public/blob/main/entities/看-agentrun-如何玩转记忆存储最佳实践来了.md)
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-to-agentic-engineering.md)
-- [RAG深度解析：分块、向量化、召回、重排，才是"蒸馏同事skill"的关键](https://github.com/QianJinGuo/wiki-public/blob/main/entities/rag深度解析分块向量化召回重排才是蒸馏同事skill的关键.md)
-- [别再把上下文当聊天记录](https://github.com/QianJinGuo/wiki-public/blob/main/entities/别再把上下文当聊天记录.md)
-- 一文带你弄懂 AI 圈爆火的新概念：Harness Engineering
-- [龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](https://github.com/QianJinGuo/wiki-public/blob/main/entities/龙虾装上了可以用来干啥分享下我的-openclaw-多智能体团队搭建经验.md)
+- [Harness Engineeringai 能在真正出事会炸的后端系统里写代码吗 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineeringai-能在真正出事会炸的后端系统里写代码吗-v2.md)
+- [Fudan Peking Ahe Agentic Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fudan-peking-ahe-agentic-harness-engineering.md)
+- [Fudan Agentic Harness Engineering Ahe Gpt54 7Points](https://github.com/QianJinGuo/wiki-public/blob/main/entities/fudan-agentic-harness-engineering-ahe-gpt54-7points.md)
+- [Harness Engineering Reliable Long Term Agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-reliable-long-term-agent.md)
+- [Harness Engineering Long Term Agent Tasks](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-long-term-agent-tasks.md)
 
-- [Hermes Agent /goal 长任务运行时架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-goal-runtime-architecture.md)
-- [LLM agent脚手架如何具备自进化能力？——以hermes agent为例](https://github.com/QianJinGuo/wiki-public/blob/main/entities/llm-agent脚手架如何具备自进化能力以hermes-agent为例.md)
-- [LoongSuite GenAI 可观测语义规范](https://github.com/QianJinGuo/wiki-public/blob/main/entities/loongsuite-genai-semconv.md)
-- [低代码 Agent、框架 Agent、自研 Agent 决策框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/lowcode-framework-custom-agent-decision-framework-hello-agents.md)
-- [三器合一：gstack + Superpowers + OpenSpec 工程化 AI 编程实战](https://github.com/QianJinGuo/wiki-public/blob/main/entities/three-tools-in-one-gstack-superpowers-openspec-engineering-ai-coding.md)
+→ [原文存档](https://mp.weixin.qq.com/s/VJgVPeJ5GZhVwbRtneEk_Q)
+
+## 深度分析
+
+腾讯 LEGO 项目的实践首次系统性地回答了"AI 能否在真正高风险后端系统中写代码"这个问题。答案是"能，但有严格条件"。LEGO 项目的 13,824 × N 组合复杂度是一个关键指标：它意味着在任何一次代码修改后，系统需要在如此多的维度组合中保持正确性，单靠人工 code review 几乎不可能覆盖完全。传统的开发流程（人写代码 → 人 review → 人测试）在面对这种复杂度时存在根本性的盲区——人类 reviewer 无法在有限时间内穷举所有可能的交互路径。AI 的价值恰恰在于：它可以对每一个变更进行穷举式风险分析，把"我漏查了什么"这个人类 reviewer 的终极局限，变成 AI 可以系统性解决的问题。然而 LEGO 的实践也揭示了前提条件：AI 必须被严格 harness 在"上下文、约束和反馈"的三要素框架内，否则其能力反而会成为风险的来源。
+
+对抗式 Code Review（对抗式 CR）是 LEGO 最重要的方法论创新之一。单模型 CR 存在三个本质性盲区：知识盲区（不同模型的训练数据不同，导致对同一代码段的理解存在差异）、注意力盲区（500 行以上的 diff 后半部分审查质量显著下降）、确认偏差（发现一个问题后倾向于沿同一方向继续找）。对抗式 CR 的核心思想是用并行多模型独立审查来对抗单模型的系统性偏差——模型 A 发现 {a1, a2, a3}，模型 B 发现 {b1, b2, a2}，模型 C 发现 {c1, a1, b1}，交叉验证后 a2 被 A 和 B 同时发现，成为高置信度问题。这比让单个模型反复 review 效果要好得多，而且收敛机制（全员无新发现自动停止）比固定轮数更科学。更值得注意的是其"辩论式"交互设计——每个审查者不仅给出结论，还说明同意/反对/维持，这种机制比静态扫描更能暴露模型的思维盲区。
+
+Harness Engineering 的五层架构将"工程体系才是核心资产"这一理念落到了具体可操作的层面。三层约束架构（权限安全基座 → 代码规则即编译器 → 流程约束）构建了一个从基础设施到操作规程的纵深防御：Layer 1 的权限安全基座防止 AI 做出超越权限的操作（如网络访问），Layer 2 的代码规则即编译器将规则编码为可自动检查的约束（而非自然语言描述的期望），Layer 3 的流程约束确保测试不可跳过。关键洞察在于：当 AI 被 harness 在单个模块、单个文件、单个函数内实现时，其犯错的影响范围是可控的；但当 AI 需要理解跨模块、跨层次的影响时，错误率会急剧上升。这解释了为什么 LEGO 的五条核心约束（如"严禁网络操作"、"本地不存在则跳过"）看起来像"限制"，实际上却是 AI 在复杂系统中安全工作的必要条件。
+
+上下文建设是消除 AI"记忆偏差"的核心手段。LEGO 的四层递进体系（Agent.md 项目宪法 → 安全纪律 → 领域知识模式库 → 专业 Skill）揭示了一个重要规律：AI 的上下文不足不是简单"多喂点文档"就能解决的，而是需要针对 AI 的认知弱点进行结构化设计。"安全纪律"层用"反例免疫"替代"正面说教"的思路尤其值得借鉴——与其告诉 AI"要防止时序攻击"，不如直接展示"错误写法（使用 == 比较密码）"和"正确写法（使用常量时间比较）"的对比，让 AI 在具体案例中建立安全意识。技术决策三问（RFC 怎么说？业界怎么做？LEGO 有什么差别？）则为 AI 提供了一个标准化的决策框架，确保 AI 的输出不是随机的"最佳实践堆砌"，而是真正考虑了项目具体约束的定制化方案。
+
+AI Coding 在后台开发中的角色演变揭示了人机协作的深层变革。初级开发→操作员、高级开发→Harness 工程师、架构师→人机协作架构师、测试/安全工程师→AI 质量/安全专家，这一角色演变路径的深层逻辑是：AI 接管了"执行"层面的工作，而人类负责"定义约束"和"验证结果"。最关键的能力转型是从"写代码"到"写约束"——约束的本质是把人类的工程判断和领域知识编码为 AI 可以理解、执行和遵守的规则。这种转型对工程教育提出了根本性挑战：当"写代码"不再是核心技能时，什么才是工程师的核心能力？LEGO 的答案是"防止问题"而非"解决问题"——这意味着工程师的价值越来越体现在上游的设计和约束定义，而非下游的实现和调试。
+
+## 实践启示
+
+1. **在高复杂度后端系统中，必须为 AI Coding 设计纵深防御体系，而非依赖单一 AI 能力**。LEGO 的三层约束架构（权限安全基座 → 代码规则编译器 → 流程阻塞机制）提供了一个可直接借鉴的模板。AI 在复杂系统中出错是确定的，关键是建立多层质量屏障，确保 AI 的错误不会直接穿透到生产环境。单点 AI 能力（如模型很强或 prompt 很好）无法替代体系化的安全网络。
+
+2. **建立"踩坑→规则→Skill"的进化闭环是 AI Coding 持续改进的核心机制**。LEGO 的 Pitfall Journal 机制将每一次 AI 犯错转化为可复用的规则，例如 PIT-001（mmap 返回 NULL 导致 SIGSEGV）被编码为 R2 规则后，AI 此后会自动使用 MAP_FAILED 进行空指针检查。这种闭环的价值在于：AI 的每一次失误都是对规则库的一次贡献，规则库越完善，AI 未来的犯错概率越低。这要求团队建立系统化的坑记录和分析流程，而不仅仅是修复单个错误。
+
+3. **对抗式 Code Review 是提升 AI 代码审查质量的必选项**。单模型 CR 的知识盲区、注意力盲区和确认偏差是结构性问题，无法通过改进 prompt 彻底解决。并行多模型独立审查 + 交叉验证 + 辩论式交互，能显著提升高风险代码的审查质量。在实践中，可以选择能力互补的不同模型（如 Claude + GPT + Gemini）进行并行审查，并对争议问题进行专项讨论。
+
+4. **约束设计应优先选择结构化、机器可执行的格式，而非自然语言描述**。LEGO 的"代码规则即编译器"原则揭示了一个常见误区：用自然语言写规则（如"确保代码是线程安全的"）看似清晰，实际上 AI 理解和执行的一致性高度依赖 prompt 质量。将规则转化为机器可检查的格式（如代码检查规则、测试用例、类型约束）能显著降低 AI 的理解偏差。
+
+5. **在后端 AI Coding 项目中，必须建立专门的 Skill 体系来沉淀领域知识**。LEGO 的 86,422 行代码、31 个 Skill、34 条踩坑规则构成了项目的核心知识资产。这些不是 prompt 的简单堆砌，而是经过 A/B 验证的、可复用的最佳实践。团队应该从第一个 AI Coding 项目开始积累 Skill，随着项目增多，AI 的平均输出质量会持续提升，最终形成"AI 能力 = 团队 Skill 积累"的正向循环。
 
 ---
 
