@@ -10,9 +10,9 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 3 |
+| ⭐ 入门 | 零基础可读 | 2 |
 | ⭐⭐ 工程师 | 需编程基础 | 8 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 30 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 31 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 14 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 5 |
 
@@ -36,45 +36,45 @@ AI 工具正在重新定义"开发者工具"的边界。
 
 ## 本章内容
 
-### ⭐ 入门（3 篇）
+### ⭐ 入门（2 篇）
 
-- [001. Turn repeated instructions into reusable skills in Lovable | Lovable](ch03/001-turn-repeated-instructions-into-reusable-skills-in-lovable)
-- [002. Harness Engineering 详解：如何将 AI Coding 率提升至 90%](ch03/002-harness-engineering-ai-coding-90)
-- [003. Data Projects](ch03/003-data-projects)
+- [001. Harness Engineering 详解：如何将 AI Coding 率提升至 90%](ch03/001-harness-engineering-ai-coding-90)
+- [002. Data Projects](ch03/002-data-projects)
 
 ### ⭐⭐ 工程师（8 篇）
 
-- [004. Agent 时代的生产力悖论：协作成为新瓶颈](ch03/004-agent)
-- [005. 别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](ch03/005-page-005)
-- [006. MiniMax M2.7：开启模型的自我进化](ch03/006-minimax-m2-7)
-- [007. Nvidia Cut Checkpoint Costs Nvcomp](ch03/007-nvidia-cut-checkpoint-costs-nvcomp)
-- [008. Localmaxxing：局部最优陷阱](ch03/008-localmaxxing)
-- [009. 03—AI Skill 测试用例设计完整指南：8 种类型 + 断言自检，覆盖率从 40% 到 90%](ch03/009-03-ai-skill-8-40-90)
-- [010. A History of IDEs at Google](ch03/010-a-history-of-ides-at-google)
-- [011. Bedrock AgentCore Pool Model Multi-Tenancy](ch03/011-bedrock-agentcore-pool-model-multi-tenancy)
+- [003. Agent 时代的生产力悖论：协作成为新瓶颈](ch03/003-agent)
+- [004. 别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](ch03/004-page-004)
+- [005. MiniMax M2.7：开启模型的自我进化](ch03/005-minimax-m2-7)
+- [006. Nvidia Cut Checkpoint Costs Nvcomp](ch03/006-nvidia-cut-checkpoint-costs-nvcomp)
+- [007. Localmaxxing：局部最优陷阱](ch03/007-localmaxxing)
+- [008. 03—AI Skill 测试用例设计完整指南：8 种类型 + 断言自检，覆盖率从 40% 到 90%](ch03/008-03-ai-skill-8-40-90)
+- [009. A History of IDEs at Google](ch03/009-a-history-of-ides-at-google)
+- [010. Bedrock AgentCore Pool Model Multi-Tenancy](ch03/010-bedrock-agentcore-pool-model-multi-tenancy)
 
-### ⭐⭐⭐ 专家（30 篇）
+### ⭐⭐⭐ 专家（31 篇）
 
-- [012. NVIDIA GPU Kernel 翻译：Cute / Python / Julia](ch03/012-nvidia-gpu-kernel-cute-python-julia)
-- [013. The Interface Is No Longer the Product](ch03/013-the-interface-is-no-longer-the-product)
-- [014. How a Mid-tier Enterprise SaaS Provider Automates Cloud Support](ch03/014-how-a-mid-tier-enterprise-saas-provider-automates-cloud-supp)
-- [015. Figma Make, Now on Your Local Code: Closing the Design-to-Code Loop](ch03/015-figma-make-now-on-your-local-code-closing-the-design-to-co)
-- [016. Bedrock AgentCore 多租户 Agent 构建实践](ch03/016-bedrock-agentcore-agent)
-- [017. 如何把经验装到Skills](ch03/017-skills)
-- [018. Edge AI Networking — Wi-Fi 7/8 Convergence Analysis](ch03/018-edge-ai-networking-wi-fi-7-8-convergence-analysis)
-- [019. Real-Time Personalisation at Scale: How Zepto Understands What You Want, Right Now](ch03/019-real-time-personalisation-at-scale-how-zepto-understands-wh)
-- [020. 5 Years and $5M Later: Inventing a New Programming Language for Web Development Was a Mistake (Wasp 复盘)](ch03/020-5-years-and-5m-later-inventing-a-new-programming-language)
-- [021. What the design-to-code loop unlocks](ch03/021-what-the-design-to-code-loop-unlocks)
-- [022. Choosing to Stay Human](ch03/022-choosing-to-stay-human)
-- [023. IC work is the new career flex](ch03/023-ic-work-is-the-new-career-flex)
-- [024. Obsidian + Claude Code 完整集成指南：五种知识管理策略](ch03/024-obsidian-claude-code)
-- [025. 龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](ch03/025-openclaw)
-- [026. Claude Code 实践：token 效率提高 71.5 倍的工作流](ch03/026-claude-code-token-71-5)
-- [027. Foundation Model Building Blocks](ch03/027-foundation-model-building-blocks)
-- [028. Unlocking asynchronicity in continuous batching](ch03/028-unlocking-asynchronicity-in-continuous-batching)
-- [029. Designing Small Is Harder than Designing Big - UX Magazine](ch03/029-designing-small-is-harder-than-designing-big-ux-magazine)
-- [030. Against \"Brain Damage\](ch03/030-against-brain-damage)
-- [031. 4 ways we’re using our MCP server at Figma](ch03/031-4-ways-we-re-using-our-mcp-server-at-figma)
+- [011. NVIDIA GPU Kernel 翻译：Cute / Python / Julia](ch03/011-nvidia-gpu-kernel-cute-python-julia)
+- [012. The Interface Is No Longer the Product](ch03/012-the-interface-is-no-longer-the-product)
+- [013. How a Mid-tier Enterprise SaaS Provider Automates Cloud Support](ch03/013-how-a-mid-tier-enterprise-saas-provider-automates-cloud-supp)
+- [014. Figma Make, Now on Your Local Code: Closing the Design-to-Code Loop](ch03/014-figma-make-now-on-your-local-code-closing-the-design-to-co)
+- [015. Bedrock AgentCore 多租户 Agent 构建实践](ch03/015-bedrock-agentcore-agent)
+- [016. 如何把经验装到Skills](ch03/016-skills)
+- [017. Edge AI Networking — Wi-Fi 7/8 Convergence Analysis](ch03/017-edge-ai-networking-wi-fi-7-8-convergence-analysis)
+- [018. Real-Time Personalisation at Scale: How Zepto Understands What You Want, Right Now](ch03/018-real-time-personalisation-at-scale-how-zepto-understands-wh)
+- [019. 5 Years and $5M Later: Inventing a New Programming Language for Web Development Was a Mistake (Wasp 复盘)](ch03/019-5-years-and-5m-later-inventing-a-new-programming-language)
+- [020. What the design-to-code loop unlocks](ch03/020-what-the-design-to-code-loop-unlocks)
+- [021. Choosing to Stay Human](ch03/021-choosing-to-stay-human)
+- [022. IC work is the new career flex](ch03/022-ic-work-is-the-new-career-flex)
+- [023. Obsidian + Claude Code 完整集成指南：五种知识管理策略](ch03/023-obsidian-claude-code)
+- [024. 龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](ch03/024-openclaw)
+- [025. Claude Code 实践：token 效率提高 71.5 倍的工作流](ch03/025-claude-code-token-71-5)
+- [026. Foundation Model Building Blocks](ch03/026-foundation-model-building-blocks)
+- [027. Unlocking asynchronicity in continuous batching](ch03/027-unlocking-asynchronicity-in-continuous-batching)
+- [028. Designing Small Is Harder than Designing Big - UX Magazine](ch03/028-designing-small-is-harder-than-designing-big-ux-magazine)
+- [029. Against \"Brain Damage\](ch03/029-against-brain-damage)
+- [030. 4 ways we’re using our MCP server at Figma](ch03/030-4-ways-we-re-using-our-mcp-server-at-figma)
+- [031. Turn repeated instructions into reusable skills in Lovable | Lovable](ch03/031-turn-repeated-instructions-into-reusable-skills-in-lovable)
 - [032. 10 Common Component Architecture Mistakes in Figma Design Systems](ch03/032-10-common-component-architecture-mistakes-in-figma-design-sy)
 - [033. SkillsUI](ch03/033-skillsui)
 - [034. Who Winning Enterprise AI Now](ch03/034-who-winning-enterprise-ai-now)

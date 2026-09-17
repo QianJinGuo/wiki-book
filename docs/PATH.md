@@ -92,12 +92,12 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 | 主题 | entity | raw |
 |---|---|---|
 | Agent 术语表 | [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04-agent-core.html) | [huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent.md](https://mp.weixin.qq.com/s/RCEGqAvfJxbzaPJIJDOKwA) |
-| 从 Vibe Coding 到 Agentic Engineering | [Karpathy Vibe Coding Agentic Engineering V4](ch04/008-karpathy-vibe-coding-agentic-engineering.html) | [karpathy-vibe-coding-agentic-engineering-v4.md](https://mp.weixin.qq.com/s/HTFcXBzYUVHvwShu3Zp-EA) |
+| 从 Vibe Coding 到 Agentic Engineering | [Karpathy Vibe Coding Agentic Engineering V4](ch04/007-karpathy-vibe-coding-agentic-engineering.html) | [karpathy-vibe-coding-agentic-engineering-v4.md](https://mp.weixin.qq.com/s/HTFcXBzYUVHvwShu3Zp-EA) |
 | AI Agent 工程师能力地图 | [Ai Agent Engineer Capability Map](ch04-agent-core.html) | [ai-agent-engineer-learning-roadmap-backend-2026.md](https://mp.weixin.qq.com/s/HWdqrPP1IFdex33afqQEeQ) |
 | 250 行 CLI Agent | [Minimal Cli Agent 250 Line Python Ollama 7 Stages](ch04/366-ai-agent-250-while-python-ollama-cli-agent-7.html) | [minimal-cli-agent-250-line-python-ollama-7-stages.md](https://mp.weixin.qq.com/s/axLHmFoNretapSPCUP68PQ) |
 | Agent Runtime 7 大职责 | [Agent Runtime 7 Responsibilities Secondcurve 2026](ch04/361-agent-agent-runtime-7-3-langgraph-openai-agents-s.html) | [agent-runtime-7-responsibilities-secondcurve-2026.md](https://mp.weixin.qq.com/s/5sftvwAZL4Hj5v40HZ1rVw) |
 | Design Patterns for AI Agents | [Design Patterns For Ai Agents 2026](ch04/367-design-patterns-for-ai-agents-2026-4-5-reflection.html) | 先读实体页：`docs/ch04/083-design-patterns-for-ai-agents-2026-4-5-reflection.md` |
-| 从零设计准生产级 LLM Agent | [Thinkingagent From Scratch Reliability Context Recovery 2026 06 02](ch04/093-llm-agent-thinkingagent.html) | [thinkingagent-from-scratch-reliability-context-recovery-2026-06-02.md](https://mp.weixin.qq.com/s/UTEdhrkV3G3Ycfrg0Jng_A) |
+| 从零设计准生产级 LLM Agent | [Thinkingagent From Scratch Reliability Context Recovery 2026 06 02](ch04/092-llm-agent-thinkingagent.html) | [thinkingagent-from-scratch-reliability-context-recovery-2026-06-02.md](https://mp.weixin.qq.com/s/UTEdhrkV3G3Ycfrg0Jng_A) |
 ### 3.4 入门期作业
 
 #### 作业 A：画一张 Agent 总架构图
@@ -181,7 +181,7 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 | 主题 | entity | raw |
 |---|---|---|
 | Loop Engineering 总论 | [Loop Engineering Addy Osmani Challengehub](ch05/086-loop-engineering-19-addy-osmani-boris-cherny-pete.html) | [loop-engineering-addy-osmani-challengehub.md](https://mp.weixin.qq.com/s/vmGx9IELbWgKZqHm-M3G5w) |
-| Harness Engineering 综合论述 | [Harness Engineering Paradigm Comprehensive 2026](ch04/091-agent-harness-engineering-a-survey.html) | [harness-engineering-2026-rahul-rauhul.md](https://mp.weixin.qq.com/s/RwWfknFIFvJPIdsJMgeNiQ) |
+| Harness Engineering 综合论述 | [Harness Engineering Paradigm Comprehensive 2026](ch04/090-agent-harness-engineering-a-survey.html) | [harness-engineering-2026-rahul-rauhul.md](https://mp.weixin.qq.com/s/RwWfknFIFvJPIdsJMgeNiQ) |
 | 长周期 Agent / Ralph Loop | [Long Running Agent Ralph Loop Handover Harness Ruofei](ch05/057-agent-ralph-loop-harness.html) | [long-running-agent-ralph-loop-handover-harness-ruofei.md](https://mp.weixin.qq.com/s/ML5aD3f2ilHWjSB-wpBukw) |
 | Agent Harness 生产指南 | [Agent Production Harness Engineering](ch05-harness.html) | [harness-production-agent-engineering-deficit.md](https://mp.weixin.qq.com/s/HVkWNXTsFjn0HkdGyD7Tpw) |
 | 生产级 Harness 12 组件 | [Production Harness 12 Components Framework Comparison](ch05-harness.html) | [production-harness-12-components-framework-comparison.md](https://mp.weixin.qq.com/s/UwG0mEzQ0Mk7DYjPS3PFqQ) |
@@ -219,7 +219,7 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 |---|---|---|
 | RAG 到知识图谱到本体论 | [向量库是Rag的前菜知识图谱是答案本体论是灵魂](ch10-rag.html) | [向量库是rag的前菜知识图谱是答案本体论是灵魂.md](https://mp.weixin.qq.com/s/2pk4Mhr4nLMapJrTqpYX6Q) |
 | Google Agentic RAG 5 阶段 | [Ai Cambrian Google Agentic Rag Sufficient Context Cross Corpus 20260606](ch04/375-google-agentic-rag-5.html) | [ai-cambrian-google-agentic-rag-sufficient-context-cross-corpus-20260606.md](https://mp.weixin.qq.com/s/8PdVIubBGWKtMMyCb0pc3g) |
-| Protocol H 分层 Agentic RAG | [Protocol H Hierarchical Agentic Rag Enterprise](ch04/092-protocol-h-agentic-rag.html) | [protocol-h-hierarchical-agentic-rag-enterprise.md](https://mp.weixin.qq.com/s/P-MnmnREgtiOq-DbHfDuVA) |
+| Protocol H 分层 Agentic RAG | [Protocol H Hierarchical Agentic Rag Enterprise](ch04/091-protocol-h-agentic-rag.html) | [protocol-h-hierarchical-agentic-rag-enterprise.md](https://mp.weixin.qq.com/s/P-MnmnREgtiOq-DbHfDuVA) |
 | Chroma 到 Qdrant 迁移 | [Chroma To Qdrant 1M Vector Migration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/chroma-to-qdrant-1m-vector-migration.md) | [chroma-to-qdrant-1m-vector-migration.md](https://mp.weixin.qq.com/s/Aovqh95_LBYtVOj8_tTD_w) |
 | RAG vs LLM Wiki | `docs/ch01/037-rag-vs-llm-wiki.md` | 先读实体页 |
 
@@ -342,7 +342,7 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 | OpenClaw 安全增强 | [Openclaw Security And Feature Enhancement Practices](ch12-security.html) | [openclaw-security-and-feature-enhancement-practices.md](https://aws.amazon.com/cn/blogs/china/openclaw-security-and-feature-enhancement-practices/) |
 | OpenClaw Security Roadmap | [Where Openclaw Security Is Heading Openclaw Blog](ch12-security.html) | [where-openclaw-security-is-heading-openclaw-blog.md](https://openclaw.ai/blog/where-openclaw-security-is-heading) |
 | AI Agent 机器身份安全 | [1Password Securing Ai Agents Machine Identities](ch12-security.html) | [1password-securing-ai-agents-machine-identities.md](https://1password.com/webinars/solving-the-access-trust-gap-in-the-age-of-ai-and-automation) |
-| Autonomous Vulnerability Hunting with MCP | [Bullyingllms](ch07/020-autonomous-vulnerability-hunting-with-mcp.html) | [bullyingllms.md](https://blog.zsec.uk/bullyingllms/) |
+| Autonomous Vulnerability Hunting with MCP | [Bullyingllms](ch07/019-autonomous-vulnerability-hunting-with-mcp.html) | [bullyingllms.md](https://blog.zsec.uk/bullyingllms/) |
 | AI Detection and Response | [Ai Detection And Response Aidr A Zero Impact Operating Model](ch09-ai-coding.html) | [ai-detection-and-response-aidr-a-zero-impact-operating-model.md](https://www.mitiga.io/resources/ai-detection-and-response-aidr-a-zero-impact-operating-model-for-cloud-saas-ai-and-identity) |
 | LLMReaper 对话窃取攻击 | [Llmreaper Dom Conversation Exfiltration](ch12-security.html) | [llmreaper-dom-based-ai-conversation-exfiltration-via-browser-5ee512.md](https://thewhiteh4t.github.io/blog/ai-chat-llmreaper/) |
 | OpenSandbox 安全沙箱 | [Opensandbox Aliyun Cloud Agent Sandbox Vibecoder](ch04-agent-core.html) | 先读实体页：`docs/ch12/119-opensandbox-agent-vault-egress-sidecar.md` |

@@ -288,8 +288,17 @@ def main():
     # legitimately cite the archive URL of every source they aggregate.
     # Dedupe file lists first: a URL repeated inside one file (multi-source
     # section) is not a cross-file duplicate.
+    allowlist = set()
+    allow_file = pathlib.Path(__file__).parent / "qc-mdup-allowlist.txt"
+    if allow_file.exists():
+        for ln in allow_file.read_text("utf-8").splitlines():
+            ln = ln.strip()
+            if ln and not ln.startswith("#"):
+                allowlist.add(ln)
     if not args.skip_archive_dedup:
         for url, files in sorted(archive_map.items()):
+            if url in allowlist:
+                continue
             unique_files = sorted({f for f in files if "/" in f})
             if len(unique_files) > 1:
                 all_issues.append({

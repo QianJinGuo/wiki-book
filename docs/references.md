@@ -5,7 +5,7 @@
 ## 主要来源
 | 来源 | 文章数 |
 |---|---|
-| mp.weixin.qq.com | 1673 |
+| mp.weixin.qq.com | 1651 |
 | aws.amazon.com | 384 |
 | huggingface.co | 36 |
 | www.interconnects.ai | 35 |
@@ -13,7 +13,7 @@
 | arxiv.org | 23 |
 | www.oneusefulthing.org | 23 |
 | netflixtechblog.com | 21 |
-| www.theregister.com | 20 |
+| www.theregister.com | 19 |
 | unknown | 15 |
 | developer.nvidia.com | 15 |
 | thehackernews.com | 13 |
@@ -28,13 +28,13 @@
 | claude.com | 6 |
 | www.infoworld.com | 6 |
 | github.com | 6 |
-| www.a16z.news | 6 |
 | cursor.com | 6 |
 | www.ciodive.com | 6 |
 | pytorch.org | 6 |
 | www.microsoft.com | 6 |
 | github.blog | 5 |
 | blog.google | 5 |
+| stochasticparrot.substack.com | 5 |
 
 ---
 > 共 368 个来源，1704 篇编撰实体。

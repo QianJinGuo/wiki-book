@@ -1,0 +1,41 @@
+# M-duplicate allowlist — adjudicated 2026-09-14 by content-overlap audit.
+# All 58 cross-file pairs sharing these URLs were verified DISTINCT articles
+# (body similarity <=0.5; mp.weixin digest / blog-root URL collisions).
+# A true duplicate of these URLs would still be caught by the compiler's
+# same-source dedup (title sim >=0.85 quarantines the twin).
+# New collisions not listed here keep raising QC warnings for review.
+https://asymco.com/2026/05/11/the-great-memory-panic-of-2026/
+https://aws.amazon.com/cn/blogs/china/amazon-cloudfront-deploy-guide-cloudfront-domain-multi-tenant-architecture/
+https://back.engineering/blog/09/05/2026/
+https://developer.nvidia.com/blog/building-for-the-rising-complexity-of-agentic-systems-with-extreme-co-design/
+https://huggingface.co/blog/amazon/foundation-model-building-blocks
+https://memory.cobanov.dev/
+https://mp.weixi
+https://mp.weixin.qq.com/s/-_IBJFuXpvoqMJxL9oaEJQ
+https://mp.weixin.qq.com/s/2pk4Mhr4nLMapJrTqpYX6Q
+https://mp.weixin.qq.com/s/2xFei8dMx99lc-iyrZZrww
+https://mp.weixin.qq.com/s/70hz6sYNwxErRkP7dkY8-Q
+https://mp.weixin.qq.com/s/99QSrB_bwEOcVo0_rd6iSg
+https://mp.weixin.qq.com/s/BELLFDV6hlmmFoAcJy1RZg
+https://mp.weixin.qq.com/s/FzTyopCXH-IVSYJyTMjWxA
+https://mp.weixin.qq.com/s/GPoQnFsXnnNpKdefWWiKRw
+https://mp.weixin.qq.com/s/TIL7o92f71DsPPLWT4_37A
+https://mp.weixin.qq.com/s/UNAD6ZS5p0eofHdSwaZvvg
+https://mp.weixin.qq.com/s/VYZq3CzaQ72-gq1FlzniMw
+https://mp.weixin.qq.com/s/WVDb6npWAxhgQ0V9dc6GFg
+https://mp.weixin.qq.com/s/bMjXlD-OcnFW-wuN1yW8FA
+https://mp.weixin.qq.com/s/fLiyW2t4CBOnWjx2Km8d8g
+https://mp.weixin.qq.com/s/lIj91GGx1SuLVeFOLHPKtw
+https://mp.weixin.qq.com/s/m4wzwXCJoW5Tu4GA5ROodw
+https://mp.weixin.qq.com/s/n4iqEWPfrok91b692nFTJw
+https://mp.weixin.qq.com/s/ub1ZOzpjImpVc8plcsMA4w
+https://mp.weixin.qq.com/s/w9SWYuM7d_rI1GBYdXJyeA
+https://netflixtechblog.com/democratizing-machine-learning-at-netflix-building-the-model-lifecycle-graph-5cc6d5828bb1?source=rss----2615bd06b42e---4
+https://netflixtechblog.com/state-of-routing-in-model-serving-16e22fe18741?source=rss----2615bd06b42e---4
+https://www.cio.com/article/4171054/ai-driven-layoffs-arent-making-business-sense.html
+https://aws.amazon.com/blogs/machine-learning/build/custom/code/based/evaluators/in/amazon/bedrock/agentco.html
+https://mp.weixin.qq.com/s/aA2PFaabKNlDq96jhAdDkQ
+# 2026-09-14 round-3 adjudication: multi-source merged entities legitimately
+# cite the archive URL of another dedicated entity (cross-reference, not dupe).
+https://mp.weixin.qq.com/s/xWeppFmwJaqTXmMd-4LI3Q
+https://thehackernews.com/2026/05/we-scanned-1-million-exposed-ai.html

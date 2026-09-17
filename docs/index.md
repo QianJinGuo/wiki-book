@@ -24,7 +24,7 @@
 
     <div class="home-stats__item"><span class="home-stats__num">20 章 · 5 篇</span><span class="home-stats__label">全书结构</span></div>
 
-    <div class="home-stats__item"><span class="home-stats__num">4,298</span><span class="home-stats__label">一手原文</span></div>
+    <div class="home-stats__item"><span class="home-stats__num">4,270</span><span class="home-stats__label">一手原文</span></div>
 
     <div class="home-stats__item"><span class="home-stats__num">★ × 5</span><span class="home-stats__label">难度分级</span></div>
 
@@ -66,17 +66,17 @@
 
 <p class="chapter-card__desc">理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:23.79%" title="⭐ 入门 · 118 篇"></i><i class="lv2" style="width:9.27%" title="⭐⭐ 工程师 · 46 篇"></i><i class="lv3" style="width:39.31%" title="⭐⭐⭐ 专家 · 195 篇"></i><i class="lv4" style="width:18.75%" title="⭐⭐⭐⭐ 科学家 · 93 篇"></i><i class="lv5" style="width:8.87%" title="⭐⭐⭐⭐⭐ 大师 · 44 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:18.55%" title="⭐ 入门 · 92 篇"></i><i class="lv2" style="width:9.68%" title="⭐⭐ 工程师 · 48 篇"></i><i class="lv3" style="width:43.15%" title="⭐⭐⭐ 专家 · 214 篇"></i><i class="lv4" style="width:19.76%" title="⭐⭐⭐⭐ 科学家 · 98 篇"></i><i class="lv5" style="width:8.87%" title="⭐⭐⭐⭐⭐ 大师 · 44 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 118 · ⭐⭐ 46 · ⭐⭐⭐ 195 · ⭐⭐⭐⭐ 93 · ⭐⭐⭐⭐⭐ 44</div>
+<div class="chapter-card__legend">⭐ 92 · ⭐⭐ 48 · ⭐⭐⭐ 214 · ⭐⭐⭐⭐ 98 · ⭐⭐⭐⭐⭐ 44</div>
 
 <ul class="chapter-card__samples">
 
-<li><span class="stars">⭐</span><span class="sample-title">🧠 The Token Economy pt2: The Intelligence Company Gets Built</span></li>
+<li><span class="stars">⭐</span><span class="sample-title">**一、关于 Kollab**</span></li>
 
-<li><span class="stars">⭐</span><span class="sample-title">The Google Capital Company</span></li>
+<li><span class="stars">⭐</span><span class="sample-title">GPT-5.6 Preview System Card — Community Detection &amp; Benchmarks</span></li>
 
-<li><span class="stars">⭐</span><span class="sample-title">滴滴国际化客服质检智能化之路：基于 Amazon Bedrock 的多语种多业务线质检实践</span></li>
+<li><span class="stars">⭐</span><span class="sample-title">Linux Foundation and Industry Leaders Launch Akrites to Defend Critical Open Source Software Against AI-Enabled Cyber Threats</span></li>
 
 </ul>
 
@@ -118,17 +118,17 @@
 
 <p class="chapter-card__desc">2024-2026 AI 工具生态：从 IDE 到 Agent 平台</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:5.00%" title="⭐ 入门 · 3 篇"></i><i class="lv2" style="width:13.33%" title="⭐⭐ 工程师 · 8 篇"></i><i class="lv3" style="width:50.00%" title="⭐⭐⭐ 专家 · 30 篇"></i><i class="lv4" style="width:23.33%" title="⭐⭐⭐⭐ 科学家 · 14 篇"></i><i class="lv5" style="width:8.33%" title="⭐⭐⭐⭐⭐ 大师 · 5 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:3.33%" title="⭐ 入门 · 2 篇"></i><i class="lv2" style="width:13.33%" title="⭐⭐ 工程师 · 8 篇"></i><i class="lv3" style="width:51.67%" title="⭐⭐⭐ 专家 · 31 篇"></i><i class="lv4" style="width:23.33%" title="⭐⭐⭐⭐ 科学家 · 14 篇"></i><i class="lv5" style="width:8.33%" title="⭐⭐⭐⭐⭐ 大师 · 5 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 3 · ⭐⭐ 8 · ⭐⭐⭐ 30 · ⭐⭐⭐⭐ 14 · ⭐⭐⭐⭐⭐ 5</div>
+<div class="chapter-card__legend">⭐ 2 · ⭐⭐ 8 · ⭐⭐⭐ 31 · ⭐⭐⭐⭐ 14 · ⭐⭐⭐⭐⭐ 5</div>
 
 <ul class="chapter-card__samples">
-
-<li><span class="stars">⭐</span><span class="sample-title">Turn repeated instructions into reusable skills in Lovable | Lovable</span></li>
 
 <li><span class="stars">⭐</span><span class="sample-title">Harness Engineering 详解：如何将 AI Coding 率提升至 90%</span></li>
 
 <li><span class="stars">⭐</span><span class="sample-title">Data Projects</span></li>
+
+<li><span class="stars">⭐⭐</span><span class="sample-title">Agent 时代的生产力悖论：协作成为新瓶颈</span></li>
 
 </ul>
 
@@ -153,17 +153,17 @@
 
 <p class="chapter-card__desc">什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:10.33%" title="⭐ 入门 · 41 篇"></i><i class="lv2" style="width:10.58%" title="⭐⭐ 工程师 · 42 篇"></i><i class="lv3" style="width:36.02%" title="⭐⭐⭐ 专家 · 143 篇"></i><i class="lv4" style="width:29.22%" title="⭐⭐⭐⭐ 科学家 · 116 篇"></i><i class="lv5" style="width:13.85%" title="⭐⭐⭐⭐⭐ 大师 · 55 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:10.08%" title="⭐ 入门 · 40 篇"></i><i class="lv2" style="width:10.58%" title="⭐⭐ 工程师 · 42 篇"></i><i class="lv3" style="width:36.27%" title="⭐⭐⭐ 专家 · 144 篇"></i><i class="lv4" style="width:29.22%" title="⭐⭐⭐⭐ 科学家 · 116 篇"></i><i class="lv5" style="width:13.85%" title="⭐⭐⭐⭐⭐ 大师 · 55 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 41 · ⭐⭐ 42 · ⭐⭐⭐ 143 · ⭐⭐⭐⭐ 116 · ⭐⭐⭐⭐⭐ 55</div>
+<div class="chapter-card__legend">⭐ 40 · ⭐⭐ 42 · ⭐⭐⭐ 144 · ⭐⭐⭐⭐ 116 · ⭐⭐⭐⭐⭐ 55</div>
 
 <ul class="chapter-card__samples">
 
 <li><span class="stars">⭐</span><span class="sample-title">Agent 时间性策略（Temporal Policies）：基于轨迹的有状态授权架构</span></li>
 
-<li><span class="stars">⭐</span><span class="sample-title">Building AI Agents in Accounting</span></li>
-
 <li><span class="stars">⭐</span><span class="sample-title">Agentic Robot Policy Self-Improvement in the Real World</span></li>
+
+<li><span class="stars">⭐</span><span class="sample-title">Introducing OS Level Actions in Amazon Bedrock AgentCore Browser</span></li>
 
 </ul>
 
@@ -231,17 +231,17 @@
 
 <p class="chapter-card__desc">Agent 的手脚：Skill 系统、MCP 协议、Tool Use</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:8.33%" title="⭐ 入门 · 5 篇"></i><i class="lv2" style="width:13.33%" title="⭐⭐ 工程师 · 8 篇"></i><i class="lv3" style="width:30.00%" title="⭐⭐⭐ 专家 · 18 篇"></i><i class="lv4" style="width:26.67%" title="⭐⭐⭐⭐ 科学家 · 16 篇"></i><i class="lv5" style="width:21.67%" title="⭐⭐⭐⭐⭐ 大师 · 13 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:6.67%" title="⭐ 入门 · 4 篇"></i><i class="lv2" style="width:13.33%" title="⭐⭐ 工程师 · 8 篇"></i><i class="lv3" style="width:31.67%" title="⭐⭐⭐ 专家 · 19 篇"></i><i class="lv4" style="width:26.67%" title="⭐⭐⭐⭐ 科学家 · 16 篇"></i><i class="lv5" style="width:21.67%" title="⭐⭐⭐⭐⭐ 大师 · 13 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 5 · ⭐⭐ 8 · ⭐⭐⭐ 18 · ⭐⭐⭐⭐ 16 · ⭐⭐⭐⭐⭐ 13</div>
+<div class="chapter-card__legend">⭐ 4 · ⭐⭐ 8 · ⭐⭐⭐ 19 · ⭐⭐⭐⭐ 16 · ⭐⭐⭐⭐⭐ 13</div>
 
 <ul class="chapter-card__samples">
-
-<li><span class="stars">⭐</span><span class="sample-title">Create Custom MCP Catalogs and Profiles</span></li>
 
 <li><span class="stars">⭐</span><span class="sample-title">高德交易 VOC 自动排查：基于 Hermes 的多 Agent 架构实践</span></li>
 
 <li><span class="stars">⭐</span><span class="sample-title">腾讯企业微信团队 Skill 流水线：AI代码生成率94%的需求开发全流程</span></li>
+
+<li><span class="stars">⭐</span><span class="sample-title">重新定义Skill开发：保姆级教程&amp;一站式开发助手发布</span></li>
 
 </ul>
 
@@ -370,17 +370,17 @@
 
 <p class="chapter-card__desc">Agent 权限越大，安全责任越重：凭据、审计、合规</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:17.54%" title="⭐ 入门 · 10 篇"></i><i class="lv2" style="width:8.77%" title="⭐⭐ 工程师 · 5 篇"></i><i class="lv3" style="width:38.60%" title="⭐⭐⭐ 专家 · 22 篇"></i><i class="lv4" style="width:26.32%" title="⭐⭐⭐⭐ 科学家 · 15 篇"></i><i class="lv5" style="width:8.77%" title="⭐⭐⭐⭐⭐ 大师 · 5 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:8.77%" title="⭐ 入门 · 5 篇"></i><i class="lv2" style="width:8.77%" title="⭐⭐ 工程师 · 5 篇"></i><i class="lv3" style="width:43.86%" title="⭐⭐⭐ 专家 · 25 篇"></i><i class="lv4" style="width:29.82%" title="⭐⭐⭐⭐ 科学家 · 17 篇"></i><i class="lv5" style="width:8.77%" title="⭐⭐⭐⭐⭐ 大师 · 5 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 10 · ⭐⭐ 5 · ⭐⭐⭐ 22 · ⭐⭐⭐⭐ 15 · ⭐⭐⭐⭐⭐ 5</div>
+<div class="chapter-card__legend">⭐ 5 · ⭐⭐ 5 · ⭐⭐⭐ 25 · ⭐⭐⭐⭐ 17 · ⭐⭐⭐⭐⭐ 5</div>
 
 <ul class="chapter-card__samples">
 
-<li><span class="stars">⭐</span><span class="sample-title">CISA urges critical infrastructure firms to &#x27;fortify&#x27; before it&#x27;s too late | Cybersecurity Dive</span></li>
+<li><span class="stars">⭐</span><span class="sample-title">Malware crew TeamPCP open-sources its Shai-Hulud worm on GitHub</span></li>
 
-<li><span class="stars">⭐</span><span class="sample-title">Where OpenClaw Security Is Heading — OpenClaw Blog</span></li>
+<li><span class="stars">⭐</span><span class="sample-title">peerd: 浏览器原生的 AI Agent Harness</span></li>
 
-<li><span class="stars">⭐</span><span class="sample-title">Token 撤销触发设备擦除的安全漏洞</span></li>
+<li><span class="stars">⭐</span><span class="sample-title">How Semgrep Cut Taint Analysis Time by 75%</span></li>
 
 </ul>
 
@@ -617,6 +617,6 @@
 </div>
 </section>
 
-<footer class="home-map__foot">📊 全书收录 1,704 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-09-17</span></footer>
+<footer class="home-map__foot">📊 全书收录 1,704 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-09-18</span></footer>
 
 </div>
