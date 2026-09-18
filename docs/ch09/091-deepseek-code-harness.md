@@ -1,6 +1,6 @@
 # DeepSeek Code Harness
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 71.8KB
+> 📊 Level ⭐⭐⭐⭐⭐ | 77.3KB
 
 ## Overview
 DeepSeek 正在组建团队，从零开始构建对标 Claude Code 的代码智能体产品。核心公式：**Model + Harness = Agent**。除模型本身以外的所有工作，都属于 Harness 的范畴。官网职位描述明确："他们正在把 DeepSeek 的前沿模型能力转化为领先的 Agent 产品。"
@@ -364,6 +364,20 @@ DSH 最值得注意的 @deepseek-ai/dsh-tool-cordis"自指的 Cordis 工具集"�
 **Session 未知态边界**：tool/call 已记录而进程在 tool/result 写入前崩溃 → 恢复逻辑只能确认"调用已发出"，不能确认外部世界是否改变——既非失败也非可重试，是需要人工或恢复策略的**未知态**；读/幂等操作可重试，写入/扣款/发信先核对外部状态。**Model-visible ⟺ logged**：模型看过的每条消息必须能从 Session 日志派生。
 
 **能力接缝（capability seam）三件套与 Dynamic Cordis 边界**：能力 = Service Definition（声明接口）+ Provider（实现）+ Consumer（消费）；"换文件系统为远程沙箱"影响的是 Bash/PTY/LSP/子 Agent 依赖的同一组文件进程边界，不是换一个读取函数。Dynamic Cordis（define→run→stop→undefine）改变后续运行图但：动态定义存进程内存，重启不自动持久化（无评测/发布/迁移/回滚=还不是自进化闭环）；切换插件≠热迁移运行中任务（Loop 取消信号/inbox/已发调用/Session 游标交接需专门协议）。作者结论：DSH 是"为复杂运行场景预留位置的 Agent Runtime"——把能力装配、事件记录、运行时替换放到明确位置，但自进化最难的部分（独立评测/权限控制/版本记录/可回滚发布）仍未完成。
+
+## 2026-09-18 Agent Loop 插件化与自进化边界（SUPP 追加，若飞 v0.1.1-rc.2 源码拆解）
+
+若飞对照 2026-08-25 源码（基线 b150a551b8d4，标签 dsh-v0.1.1-rc.2）回答两个问题：Agent Loop 为什么值得进入插件树？这份灵活性何时不算过度工程？核心结论：**DSH 把服务契约、生命周期和组装关系摆到明面，是为运行时变化付成本；但这仍只是"让组件可替换"，还不是"让 Agent 能安全地改造自己"**。
+
+**Agent Loop 不是随手替换的 while 循环**：`AgentLoop` 实现 `AgentFactory` 并通过 `ctx.agents.setFactory(this)` 注册给 Agent 服务，承担创建/恢复 `ReactLoopAgent`、接回持久化 Session、工具并发控制、取消与销毁；`FactoryOwnership` 跟踪正在启动与活动的 Agent，销毁顺序=取消状态机→等空闲→释放作用域→从 Agent/Session 注册表移除→清所有权记录——这段清理顺序是远程沙箱切换的关键（旧 Loop 还有命令在跑、新实现已接管同一 Session 时，两个执行者都可能认为自己拥有下一步）。Cordis HMR（卸载旧 fiber/逆序撤销 effect/启动新 fiber/依赖级联重载）解决插件注册与服务关系清理，但活动 Loop 正在执行的 turn、Session 检查点和资源所有权交接是更高一层问题——**组件出现在插件树里 ≠ 带状态组件支持在线迁移**（`ctx.agentLoop` 标为 bundle 且当前仓库仅一个 Loop 实现，不足以证明任意第三方 Loop 可无损接管）。
+
+**Session 记录事实 + 检查点先于副作用**：Session 是只追加 `SessionEvent` 日志，`deriveMessages()` 投影模型历史；源码约束 **"Model-visible means logged"**（模型看得到的内容应能从 Session 日志重新得到，assistant/chunk 也保留供流式回放）；`session-checkpoint-policy` 在三个关键位置强制 flush（模型适配器收请求前/顶层工具正文可能产生副作用前/下一次 agent/pre-step 开始前），检查点失败则后续不继续——不让外部动作越过没写稳的记录。冷恢复只补缺失的 step/end、turn/end，日志有工具调用无对应结果时生成 **`TOOL_OUTCOME_UNKNOWN`** 明确告诉后续流程"这个动作可能发生也可能没发生"——只读/幂等可重试，发版/删除/退款要先查外部系统或人工确认（DSH 能记录"不知道"但不能替远端系统提供 exactly-once）。权限判断与事实核验分离：tools/pre-execute 过了权限检查不代表真完成，tools/post-execute 拿到结果要再查测试/文件/远端状态。
+
+**两条变化路径的区分（本文最有价值的架构边界）**：①Profile/Bundle/Patch 组装路径——决定启动或重新组装时某能力位置加载哪个实现（bundle 清单：dsh-base 78 行/headless +3 行/web-app +57 行，Web 与 headless 来自同一棵插件树不同清单而非两套核心代码）；②Dynamic Cordis 进程内动态路径——cordis_define/cordis_run/cordis_stop/cordis_undefine，`currentPackageId` 指向上次成功运行版本、`nextPackageId` 保存候选，define 只登记不执行，动态注册表仅存内存（重启消失，长期能力须写入 Preset）。**源码没有把两件事自动接成"活动 Loop 的状态迁移协议"**。安全事实：Host 代码经 node:vm 执行但 vm 不是不可信代码的安全边界，动态代码能调用哪些服务取决于系统授权——应按 Shell 同级别动态代码管理。
+
+**自进化的四层深度与缺失链路**：改提示词/记忆→影响后续请求；改上下文/工具描述/工作流→改变模型看到什么；改 Harness 组件→碰到 Loop/Session/工具执行/资源所有权；改优化器→连提出与评测改动的机制也改。前两层下一轮即可生效，后两层要面对版本/生命周期/状态迁移/回滚——**改动越靠近执行内核，越需要先证明没把事实和安全边界一起改掉**。DSH 解决的是"候选实现怎样进入运行时"，没回答"什么改动值得留下"；完整自进化链路=提出候选改动→固定版本隔离运行→回放任务/独立评测→审批或自动门禁→激活→观察运行证据→失败回滚，评测器/验证集/预算/审计应由提案方之外的边界维护（否则 Agent 既改执行器又改评分标准，分数再漂亮也说不清系统真的变好了）。呼应 Lilian Weng 可优化对象递进（Prompt→Context→Workflow→Harness Code→Optimizer Code）中"验证者独立于修改者"原则。
+
+**三套 Harness 对照**（同一组改动测边界：本地 Bash→远程沙箱+请求前脱敏+执行前检查+执行后核验）：Pi 代码离问题近/复杂度放外围持久化与恢复协议（Harness v2）；Codex Core 守统一执行语义（CLI/IDE 同一种行为，代价是公开边界之外的需求难外挂）；DSH 把运行时组装关系纳入管理（复杂度放在配置分层与依赖声明）。用同一组改动测架构比数 Tool/Hook 数量更有用。
 
 ---
 

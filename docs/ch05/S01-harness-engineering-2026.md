@@ -8,7 +8,7 @@
 
 ## 三次重心迁移
 
-站内被引用最多的一篇 [Harness 架构深度拆解](../ch04/130-agent-harness) 给出了被广泛转述的三段划分，本章的其他信源从各自角度印证了它：
+站内被引用最多的一篇 [Harness 架构深度拆解](../ch04/128-agent-harness) 给出了被广泛转述的三段划分，本章的其他信源从各自角度印证了它：
 
 | 阶段 | 核心问题 | 工程重点 |
 |------|---------|---------|
@@ -20,9 +20,9 @@
 
 ## 2026 年的三个收敛点
 
-**第一，循环先于智能。** [Loop Engineering 半年实战](018-loop-engineering-claude-ship)与 [核心模式梳理](005-harness-engineering)都把"设计替你写提示词的循环"放在收益第一位：先写刹车（验证、预算、人工接管点），再写循环体。顺序相反的团队（先堆智能再补刹车）在本章案例里反复付出返工代价。
+**第一，循环先于智能。** [Loop Engineering 半年实战](049-loop-engineering-claude-ship)与 [核心模式梳理](005-harness-engineering)都把"设计替你写提示词的循环"放在收益第一位：先写刹车（验证、预算、人工接管点），再写循环体。顺序相反的团队（先堆智能再补刹车）在本章案例里反复付出返工代价。
 
-**第二，规格成为控制面。** [Claude 官方学习资料](032-prompt-harness-claude)与 [TRAE 的 Harness 指南](024-trae-harness-engineering)不约而同把规格（spec / SDD）当作 Harness 的静态一半：提示词负责"这一次怎么做"，规格负责"这类任务永远怎么做"。动态循环 + 静态规格，构成运行时控制的两个把手。
+**第二，规格成为控制面。** [Claude 官方学习资料](031-prompt-harness-claude)与 [TRAE 的 Harness 指南](023-trae-harness-engineering)不约而同把规格（spec / SDD）当作 Harness 的静态一半：提示词负责"这一次怎么做"，规格负责"这类任务永远怎么做"。动态循环 + 静态规格，构成运行时控制的两个把手。
 
 **第三，分类学开始出现。** [A Survey — ETCLOVG 分类学](077-agent-harness-engineering-a-survey-etclovg-taxonomy)试图给这个野蛮生长的领域建立坐标系——一个领域开始出分类学，通常意味着它的低垂果实已被摘完，剩下的分歧需要精确的词汇才能讨论。
 

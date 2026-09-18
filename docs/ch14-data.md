@@ -10,9 +10,9 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 7 |
+| ⭐ 入门 | 零基础可读 | 6 |
 | ⭐⭐ 工程师 | 需编程基础 | 2 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 12 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 13 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 4 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 1 |
 
@@ -36,7 +36,7 @@
 
 ## 本章内容
 
-### ⭐ 入门（7 篇）
+### ⭐ 入门（6 篇）
 
 - [001. 使用 Amazon S3 Tables 优化数据湖：从Hudi 迁移到托管 Iceberg](ch14/001-amazon-s3-tables-hudi-iceberg)
 - [002. Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions](ch14/002-amazon-quick-accelerating-the-path-from-enterprise-data-to)
@@ -44,19 +44,19 @@
 - [004. Metric Semantic Layer: How Lyft Governs and Scales Key Data Definitions](ch14/004-metric-semantic-layer-how-lyft-governs-and-scales-key-data)
 - [005. Write-Ahead Intent Log: a Foundation for Efficient CDC at Scale](ch14/005-write-ahead-intent-log-a-foundation-for-efficient-cdc-at-sc)
 - [006. The Data Operating System for the Foundation Model Era — Data Juicer](ch14/006-the-data-operating-system-for-the-foundation-model-era-dat)
-- [007. ClickHouse Ingestion at Scale: An Open-Source Zepto Engineering Story](ch14/007-clickhouse-ingestion-at-scale-an-open-source-zepto-engineer)
 
 ### ⭐⭐ 工程师（2 篇）
 
-- [008. 构建 AI 时代的知识底座：直播数据 LLM Wiki 实践](ch14/008-ai-llm-wiki)
-- [009. GitHub Multilingual Repositories Dataset — 4000 万仓库多语言元数据](ch14/009-github-multilingual-repositories-dataset-4000)
+- [007. 构建 AI 时代的知识底座：直播数据 LLM Wiki 实践](ch14/007-ai-llm-wiki)
+- [008. GitHub Multilingual Repositories Dataset — 4000 万仓库多语言元数据](ch14/008-github-multilingual-repositories-dataset-4000)
 
-### ⭐⭐⭐ 专家（12 篇）
+### ⭐⭐⭐ 专家（13 篇）
 
-- [010. ai 驱动的大数据工程 从平台驱动到 aidlc 的范式迁移](ch14/010-ai-aidlc)
-- [011. Kimi K2.6背后的Agent Database：Agent-native 时代的数据Infra竞争，跟过去30年有何不同](ch14/011-kimi-k2-6-agent-database-agent-native-infra-30)
-- [012. Databricks Storage Ecosystem & OpenSharing：企业数据治理从 Migrate Everything 到 Govern Everything 的范式转变](ch14/012-databricks-storage-ecosystem-opensharing-migrate-everyth)
-- [013. Can We Agree on a Storage/Workload Architecture Taxonomy? — Jack Vanlightly](ch14/013-can-we-agree-on-a-storage-workload-architecture-taxonomy)
+- [009. ai 驱动的大数据工程 从平台驱动到 aidlc 的范式迁移](ch14/009-ai-aidlc)
+- [010. Kimi K2.6背后的Agent Database：Agent-native 时代的数据Infra竞争，跟过去30年有何不同](ch14/010-kimi-k2-6-agent-database-agent-native-infra-30)
+- [011. Databricks Storage Ecosystem & OpenSharing：企业数据治理从 Migrate Everything 到 Govern Everything 的范式转变](ch14/011-databricks-storage-ecosystem-opensharing-migrate-everyth)
+- [012. Can We Agree on a Storage/Workload Architecture Taxonomy? — Jack Vanlightly](ch14/012-can-we-agree-on-a-storage-workload-architecture-taxonomy)
+- [013. ClickHouse Ingestion at Scale: An Open-Source Zepto Engineering Story](ch14/013-clickhouse-ingestion-at-scale-an-open-source-zepto-engineer)
 - [014. Amazon Quick integration with time-series databases for market intelligence using MCP](ch14/014-amazon-quick-integration-with-time-series-databases-for-mark)
 - [015. verify-data：一个端到端的数据验数 Agent Skill](ch14/015-verify-data-agent-skill)
 - [016. LiveKit Agents：给大模型接上麦克风，没你想的那么简单](ch14/016-livekit-agents)
