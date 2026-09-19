@@ -1,12 +1,12 @@
 # 参考文献
-> 本书基于 **1704** 篇编撰实体，覆盖 **368** 个来源站点。
+> 本书基于 **1706** 篇编撰实体，覆盖 **368** 个来源站点。
 
 ---
 ## 主要来源
 | 来源 | 文章数 |
 |---|---|
-| mp.weixin.qq.com | 1667 |
-| aws.amazon.com | 385 |
+| mp.weixin.qq.com | 1669 |
+| aws.amazon.com | 386 |
 | huggingface.co | 36 |
 | www.interconnects.ai | 35 |
 | www.xiaohongshu.com | 27 |
@@ -37,4 +37,4 @@
 | stochasticparrot.substack.com | 5 |
 
 ---
-> 共 368 个来源，1704 篇编撰实体。
+> 共 368 个来源，1706 篇编撰实体。

@@ -10,9 +10,9 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 6 |
+| ⭐ 入门 | 零基础可读 | 5 |
 | ⭐⭐ 工程师 | 需编程基础 | 3 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 9 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 10 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 5 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 4 |
 
@@ -36,28 +36,28 @@
 
 ## 本章内容
 
-### ⭐ 入门（6 篇）
+### ⭐ 入门（5 篇）
 
 - [001. NetCanvas：用「可交互视觉拓扑」给运维 Agent 造一张外部工作记忆](ch02/001-netcanvas-agent)
 - [002. Hermes Agent 自进化机制源码解析](ch02/002-hermes-agent)
 - [003. Claude Code Prompt 与上下文 Harness 设计](ch02/003-claude-code-prompt-harness)
 - [004. Agent Skill 编写指南](ch02/004-agent-skill)
-- [005. Skills 重新定义 Agent 喂知识：从'提前给'到'按需取'的范式反转](ch02/005-skills-agent)
-- [006. Enrich your datasets with business context](ch02/006-enrich-your-datasets-with-business-context)
+- [005. Enrich your datasets with business context](ch02/005-enrich-your-datasets-with-business-context)
 
 ### ⭐⭐ 工程师（3 篇）
 
-- [007. AINMM：存量生产级工程向 AI Native 演进的五级成熟度模型](ch02/007-ainmm-ai-native)
-- [008. 新程Alpha认知模型：4B参数端侧部署，群体智能以小搏大比肩GPT-5.4](ch02/008-alpha-4b-gpt-5-4)
-- [009. AI 导购在 vivo 官网的落地实践](ch02/009-ai-vivo)
+- [006. AINMM：存量生产级工程向 AI Native 演进的五级成熟度模型](ch02/006-ainmm-ai-native)
+- [007. 新程Alpha认知模型：4B参数端侧部署，群体智能以小搏大比肩GPT-5.4](ch02/007-alpha-4b-gpt-5-4)
+- [008. AI 导购在 vivo 官网的落地实践](ch02/008-ai-vivo)
 
-### ⭐⭐⭐ 专家（9 篇）
+### ⭐⭐⭐ 专家（10 篇）
 
-- [010. Using Claude](ch02/010-using-claude)
-- [011. Development environments for your cloud agents](ch02/011-development-environments-for-your-cloud-agents)
-- [012. Claude Fable 5 提示词泄漏 — 1585 行 120K 字符的产品运行时控制平面与安全工程启示](ch02/012-claude-fable-5-1585-120k)
-- [013. AE 到可运行代码：大淘宝 AI 动画全链路方案（实践篇）](ch02/013-ae-ai)
-- [014. Superpowers 6.0 跑了 25 个实验才发现：prompt 里写的每一条\"不要\"，可能都在帮倒忙](ch02/014-superpowers-6-0-25-prompt)
+- [009. Using Claude](ch02/009-using-claude)
+- [010. Development environments for your cloud agents](ch02/010-development-environments-for-your-cloud-agents)
+- [011. Claude Fable 5 提示词泄漏 — 1585 行 120K 字符的产品运行时控制平面与安全工程启示](ch02/011-claude-fable-5-1585-120k)
+- [012. AE 到可运行代码：大淘宝 AI 动画全链路方案（实践篇）](ch02/012-ae-ai)
+- [013. Superpowers 6.0 跑了 25 个实验才发现：prompt 里写的每一条\"不要\"，可能都在帮倒忙](ch02/013-superpowers-6-0-25-prompt)
+- [014. Skills 重新定义 Agent 喂知识：从'提前给'到'按需取'的范式反转](ch02/014-skills-agent)
 - [015. 深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](ch02/015-openclaw-prompt-context-harness)
 - [016. Prompt Context Harness 三次演进](ch02/016-prompt-context-harness)
 - [017. System Prompt vs Post-Training：行为约束该写还是该训？](ch02/017-system-prompt-vs-post-training)

@@ -10,8 +10,7 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 1 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 6 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 7 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 5 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 2 |
 
@@ -37,16 +36,13 @@
 
 ## 本章内容
 
-### ⭐ 入门（1 篇）
+### ⭐⭐⭐ 专家（7 篇）
 
-- [001. Workday Inference Engine Built-in Guardrails - Enterprise AI Safety Infrastructure Path](ch20/001-workday-inference-engine-built-in-guardrails-enterprise-ai)
-
-### ⭐⭐⭐ 专家（6 篇）
-
-- [002. James Cowling AI 时代工程哲学访谈（Dropbox 前首席工程师 / Convex CTO）](ch20/002-james-cowling-ai-dropbox-convex-cto)
-- [003. Dario Amodei: AI 指数发展与政策制定的时序鸿沟](ch20/003-dario-amodei-ai)
-- [004. GitLab employees are the latest to face layoffs limbo. Read the CEO's memo about restructuring 'openly.](ch20/004-gitlab-employees-are-the-latest-to-face-layoffs-limbo-read)
-- [005. Nemotron 3.5 Content Safety](ch20/005-nemotron-3-5-content-safety)
+- [001. James Cowling AI 时代工程哲学访谈（Dropbox 前首席工程师 / Convex CTO）](ch20/001-james-cowling-ai-dropbox-convex-cto)
+- [002. Dario Amodei: AI 指数发展与政策制定的时序鸿沟](ch20/002-dario-amodei-ai)
+- [003. GitLab employees are the latest to face layoffs limbo. Read the CEO's memo about restructuring 'openly.](ch20/003-gitlab-employees-are-the-latest-to-face-layoffs-limbo-read)
+- [004. Nemotron 3.5 Content Safety](ch20/004-nemotron-3-5-content-safety)
+- [005. Workday Inference Engine Built-in Guardrails - Enterprise AI Safety Infrastructure Path](ch20/005-workday-inference-engine-built-in-guardrails-enterprise-ai)
 - [006. Nearly every enterprise is investing in AI, but only 5% say their data is ready](ch20/006-nearly-every-enterprise-is-investing-in-ai-but-only-5-say)
 - [007. AI 生产力悖论：你变快了，公司没有](ch20/007-ai)
 
