@@ -1,6 +1,6 @@
 # 多 Agent 编排系统
 
-> 📊 Level ⭐⭐⭐ | 10.6KB
+> 📊 Level ⭐⭐⭐ | 13.7KB
 
 ## 摘要
 
@@ -67,6 +67,14 @@
 4. **关键决策挂审批门**：把需要人类签核的步骤显式建模为 approval gate，执行在此暂停直到人工确认，避免「无人负责的自动化」与高风险决策的静默放行。
 
 5. **为故障建重试与 DAG**：用确定性工作流承载跨 Agent 的流水线，让重试、分支与并行执行成为编排层的内建语义，防止单 Agent 故障静默级联成整体失败。
+
+## Workflow 架构详解：控制权归属与可回放系统（若飞 2026-09-20 SUPP）
+
+若飞四大多 Agent 架构系列首篇，回答系列总纲问题「谁来决定下一步」的 Workflow 答案：**路径本来就稳定时，代码掌握路由权，Agent 负责节点内工作**。三层职责切分：Agent 节点（检索/分析/生成/调工具，不决定全局路由不跳过检查点）、Workflow 控制流（顺序/条件/重试/超时/终止，不替代节点内推理）、运行时状态（当前节点/结果版本/证据/恢复点，不等于聊天历史）。四架构控制权对照：Workflow=代码和规则（规则变化需改流程）、Supervisor=中央 Agent（中央上下文与决策成瓶颈）、Hierarchical=多层 Supervisor（跨层调试与权限边界复杂）、Swarm/Handoff=当前 Agent（路由依据难统一审计）——可组合但控制权归属不能含糊。
+
+**节点结果契约与事件链（全库零覆盖）**：节点间传带版本与证据的结果而非「测试完成」一句话，节点字段契约 input_ref/node/attempt/output_ref/quality_status(passed|failed|pending)/next_action 六字段——next_action 不由 Agent 随口写「建议继续」，节点结果先落库、运行时按检查点/重试预算/权限规则计算，以区分「Agent 没完成」与「运行时没放行」。事件链 node_started→tool_called→artifact_written→quality_checked→node_succeeded/node_failed→retry_scheduled→workflow_paused：排查与恢复的抓手，重放从最近稳定节点继续而非全量重跑。
+
+**检查点放节点边界**：每节点带最低完成条件（资料收集=来源可访问版本已记录；基准测试=环境/数据切片/结果可复现；安全审查=风险项有证据阻断已处理；方案成稿=只引用通过检查点的结果，不生成发布结论），错误停在靠近源头处——上游错误进入下游后 Agent 只会写得更完整未必能重新核实。失败分支都可检查：重试从哪版输入开始/暂停留下什么证据/人工处理后从哪个稳定节点恢复，「没有这些记录，所谓恢复通常只是重新跑一遍」。**框架表达差异**：LangGraph=StateGraph+条件边+显式状态、CrewAI=角色任务+Flow、MS Agent Framework=应用代码组合步骤、OpenAI Agents SDK=应用代码控序+agents-as-tools（控制权留外层，与 handoff 交控制权不可混写）、Claude Agent SDK=执行节点但固定顺序需外部调度层（框架提供 Agent Loop ≠ 自动提供业务 Workflow）。**「代码模拟 Supervisor」信号**：运行时反复问模型「调哪个 Agent/是否跳这步/失败回哪里」=已在模拟 Supervisor，继续塞条件不如承认需要动态调度。Google Research scaling 研究结论：任务依赖结构应先于 Agent 数量进入架构选择。
 
 ## 相关实体
 

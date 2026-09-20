@@ -1,6 +1,6 @@
 # 高德Proactive Agent — LBS场景时空思考型主动服务Agent
 
-> 📊 Level ⭐⭐⭐ | 10.2KB
+> 📊 Level ⭐⭐⭐ | 10.6KB
 
 ## 核心定位
 高德地图 Proactive Agent：将传统"搜与推"升级为**会思考、会主动决策**的时空思考型 Agent，在用户开口之前就提供量身定制的贴心服务。
@@ -65,6 +65,7 @@ GenUI（Generated UI）是一个常被忽视但至关重要的设计理念。传
 3. **全生命周期管理思维**：需求预估不是单点判断，而是对用户"出行前→出行中→出行后"全链路的覆盖，同一用户在不同生命周期节点的需求预估逻辑需要连贯。
 ## 相关实体
 - [Lbs Intent Bench Lbs Intentbench](https://github.com/QianJinGuo/wiki-public/blob/main/entities/lbs-intent-bench-lbs-intentbench.md)
+- [高德导航Live模式：时空Agent架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amap-navigation-live-mode-spacetime-agent-2026-09-20.md)：姊妹线。本文实体聚焦 Proactive Agent 范式跃迁与 Where-When-Who 信号放大（方法论视角）；Live 模式实体是驾车场景的完整架构落地（POI-Explore/LightSearch/长程任务/Agentic Memory/反事实干预/低时延 Harness）。
 
 → [原文存档](https://mp.weixin.qq.com/s/hfFsDBBEmiWsXpa61a5ygw)
 

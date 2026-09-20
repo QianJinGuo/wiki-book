@@ -10,10 +10,10 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 10 |
-| ⭐⭐ 工程师 | 需编程基础 | 12 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 35 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 33 |
+| ⭐ 入门 | 零基础可读 | 9 |
+| ⭐⭐ 工程师 | 需编程基础 | 11 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 36 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 34 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 17 |
 
 ---
@@ -36,7 +36,7 @@ AI 编程是 Agent 最早成熟的品类，也是理解 Agent 工程的最佳窗
 
 ## 本章内容
 
-### ⭐ 入门（10 篇）
+### ⭐ 入门（9 篇）
 
 - [001. AI Coding 的底层框架：一切优化都是在对抗熵增——信息论视角](ch09/001-ai-coding)
 - [002. Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](ch09/002-claude-code-anthropic)
@@ -44,82 +44,82 @@ AI 编程是 Agent 最早成熟的品类，也是理解 Agent 工程的最佳窗
 - [004. Harness Engineering - 让 Coding Agent 可靠完成长程任务](ch09/004-harness-engineering-coding-agent)
 - [005. Prompt Caching 工程实践 — Anthropic Claude Code 经验总结](ch09/005-prompt-caching-anthropic-claude-code)
 - [006. The Data Canary](ch09/006-the-data-canary)
-- [007. The New Bottleneck: Theory of Constraints in the Age of AI Coding](ch09/007-the-new-bottleneck-theory-of-constraints-in-the-age-of-ai-c)
-- [008. CLAUDE.md 12 条规则：Karpathy 扩展模板](ch09/008-claude-md-12-karpathy)
-- [009. Loop 的产品视角——项目中心从人挪到 Agent 系统](ch09/009-loop-agent)
-- [010. 用 Kiro 构建行业专业软件：Spec vs Vibe Coding 的分层结论](ch09/010-kiro-spec-vs-vibe-coding)
+- [007. CLAUDE.md 12 条规则：Karpathy 扩展模板](ch09/007-claude-md-12-karpathy)
+- [008. Loop 的产品视角——项目中心从人挪到 Agent 系统](ch09/008-loop-agent)
+- [009. 用 Kiro 构建行业专业软件：Spec vs Vibe Coding 的分层结论](ch09/009-kiro-spec-vs-vibe-coding)
 
-### ⭐⭐ 工程师（12 篇）
+### ⭐⭐ 工程师（11 篇）
 
-- [011. Claude Code Loop Types — 官方四种循环模式分类法](ch09/011-claude-code-loop-types)
-- [012. Claude Dispatch + 接口力量：AI 从 Chatbot 到 Agent Interface 的转变](ch09/012-claude-dispatch-ai-chatbot-agent-interface)
-- [013. Notes Inside China AI Labs Lambert](ch09/013-notes-inside-china-ai-labs-lambert)
-- [014. 7个月，234次提交，1690行代码：AI编程大型翻车现场：我决定全部作废，手动重写！](ch09/014-7-234-1690-ai)
-- [015. Superpowers 深度解读（2）：Rule/Gate/Hook 与 Iron Law 方法论](ch09/015-superpowers-2-rule-gate-hook-iron-law)
-- [016. 场景营销前端 AI Coding — AI Native 的视觉稿还原](ch09/016-ai-coding-ai-native)
-- [017. 让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](ch09/017-kiro-claude-code-im-acp-bridge-ai-aws)
-- [018. 2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](ch09/018-2-0-claude-vscode)
-- [019. Vibe Coding in Production — Erik Schluntz / Anthropic](ch09/019-vibe-coding-in-production-erik-schluntz-anthropic)
-- [020. Claude Code 为什么会忽略指令：四类失效原因 + 五层规则框架](ch09/020-claude-code)
-- [021. Introducing deepsec: The security harness for finding vulnerabilities in your codebase](ch09/021-introducing-deepsec-the-security-harness-for-finding-vulner)
-- [022. Automate progressive rollouts with Vercel Flags - Vercel](ch09/022-automate-progressive-rollouts-with-vercel-flags-vercel)
+- [010. Claude Code Loop Types — 官方四种循环模式分类法](ch09/010-claude-code-loop-types)
+- [011. Claude Dispatch + 接口力量：AI 从 Chatbot 到 Agent Interface 的转变](ch09/011-claude-dispatch-ai-chatbot-agent-interface)
+- [012. Notes Inside China AI Labs Lambert](ch09/012-notes-inside-china-ai-labs-lambert)
+- [013. 7个月，234次提交，1690行代码：AI编程大型翻车现场：我决定全部作废，手动重写！](ch09/013-7-234-1690-ai)
+- [014. Superpowers 深度解读（2）：Rule/Gate/Hook 与 Iron Law 方法论](ch09/014-superpowers-2-rule-gate-hook-iron-law)
+- [015. 场景营销前端 AI Coding — AI Native 的视觉稿还原](ch09/015-ai-coding-ai-native)
+- [016. 让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](ch09/016-kiro-claude-code-im-acp-bridge-ai-aws)
+- [017. 2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](ch09/017-2-0-claude-vscode)
+- [018. Vibe Coding in Production — Erik Schluntz / Anthropic](ch09/018-vibe-coding-in-production-erik-schluntz-anthropic)
+- [019. Introducing deepsec: The security harness for finding vulnerabilities in your codebase](ch09/019-introducing-deepsec-the-security-harness-for-finding-vulner)
+- [020. Automate progressive rollouts with Vercel Flags - Vercel](ch09/020-automate-progressive-rollouts-with-vercel-flags-vercel)
 
-### ⭐⭐⭐ 专家（35 篇）
+### ⭐⭐⭐ 专家（36 篇）
 
-- [023. 使用Claude Code：session管理与1M上下文](ch09/023-claude-code-session-1m)
-- [024. Cheap code means formal verification is reasonable now — Antfly Blog](ch09/024-cheap-code-means-formal-verification-is-reasonable-now-ant)
-- [025. It’s safe to close your laptop now: Hosting coding agents on Amazon Bedrock AgentCore](ch09/025-it-s-safe-to-close-your-laptop-now-hosting-coding-agents-on)
-- [026. OpenAI models and Codex on Amazon Bedrock are now generally available](ch09/026-openai-models-and-codex-on-amazon-bedrock-are-now-generally)
-- [027. DeepSeek V4 DS4C Antirez 本地推理实践](ch09/027-deepseek-v4-ds4c-antirez)
-- [028. Coding Agent在百度的落地实践：从反馈闭环到工程范式重构](ch09/028-coding-agent)
-- [029. Cat Wu: Anthropic Claude Code/Cowork 产品负责人访谈](ch09/029-cat-wu-anthropic-claude-code-cowork)
-- [030. Claude Code 黑客松：技艺数字化六项目](ch09/030-claude-code)
-- [031. 1-Click GitHub Token Stealing via a VSCode Bug — ammaraskar 2026](ch09/031-1-click-github-token-stealing-via-a-vscode-bug-ammaraskar)
-- [032. Open Code Review：阿里开源的 AI 代码评审 CLI 工具](ch09/032-open-code-review-ai-cli)
-- [033. 天猫AI助手调度框架重构与AI Coding工程化](ch09/033-ai-ai-coding)
-- [034. Hacker News 热帖：AI 会写代码了，为啥还要用 Python？](ch09/034-hacker-news-ai-python)
-- [035. Claw Chain: Cyera Research Unveil Four Chainable Vulnerabilities in OpenClaw](ch09/035-claw-chain-cyera-research-unveil-four-chainable-vulnerabili)
-- [036. Claude Code团队10个使用技巧（Boris二刷）](ch09/036-claude-code-10-boris)
-- [037. Claude Code 官方插件系统 (claude-plugins-official)](ch09/037-claude-code-claude-plugins-official)
-- [038. 从提需求到部署发布，全AI全自动化后，研发效能全面跃升](ch09/038-ai)
-- [039. BlueCode 0 行手写代码重构 2 万行 Vue：约束体系驱动 AI 大规模重构](ch09/039-bluecode-0-2-vue-ai)
-- [040. Claude Code 可控性：软规则无法变成硬约束](ch09/040-claude-code)
-- [041. Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](ch09/041-claude-code-aws)
-- [042. AI 原生开发工作流](ch09/042-ai)
-- [043. 停止编码的那天，就是失去架构判断力的开始：一位 30 年架构师的 AI 生存指南](ch09/043-30-ai)
-- [044. Device Code Phishing Forensics: What We Learned from BEC Investigations in the Wild](ch09/044-device-code-phishing-forensics-what-we-learned-from-bec-inv)
-- [045. AI 编码效率分析方法论](ch09/045-ai)
-- [046. Codex Discovered a Hidden HTTP/2 Bomb](ch09/046-codex-discovered-a-hidden-http-2-bomb)
-- [047. Engineering roles shift from developing code to managing AI | CIO Dive](ch09/047-engineering-roles-shift-from-developing-code-to-managing-ai)
-- [048. When I reject AI code even if it works](ch09/048-when-i-reject-ai-code-even-if-it-works)
-- [049. 腾讯 AI 编码实践](ch09/049-ai)
-- [050. Sakana Fugu 发布：Claude 禁令后的多 Agent 编排 API，LiveCodeBench 93.2](ch09/050-sakana-fugu-claude-agent-api-livecodebench-93-2)
-- [051. AI can write code, but the CIOs still owns the operating model](ch09/051-ai-can-write-code-but-the-cios-still-owns-the-operating-mod)
-- [052. How to Avoid AI Code Slop](ch09/052-how-to-avoid-ai-code-slop)
-- [053. Skill Issues: Compromising Claude Code with malicious skills & agents — Part 1](ch09/053-skill-issues-compromising-claude-code-with-malicious-skills)
-- [054. The text in Claude Code’s “Extended Thinking” output is not authentic. – blog](ch09/054-the-text-in-claude-code-s-extended-thinking-output-is-not)
-- [055. 复制这套神仙配置，让Claude Code全自动修Bug！告别每天重复教AI写代码](ch09/055-claude-code-bug-ai)
-- [056. Codex can now control other desktop devices via Computer Use](ch09/056-codex-can-now-control-other-desktop-devices-via-computer-use)
-- [057. Dockerless: 免环境补丁验证器](ch09/057-dockerless)
+- [021. 使用Claude Code：session管理与1M上下文](ch09/021-claude-code-session-1m)
+- [022. Cheap code means formal verification is reasonable now — Antfly Blog](ch09/022-cheap-code-means-formal-verification-is-reasonable-now-ant)
+- [023. It’s safe to close your laptop now: Hosting coding agents on Amazon Bedrock AgentCore](ch09/023-it-s-safe-to-close-your-laptop-now-hosting-coding-agents-on)
+- [024. OpenAI models and Codex on Amazon Bedrock are now generally available](ch09/024-openai-models-and-codex-on-amazon-bedrock-are-now-generally)
+- [025. DeepSeek V4 DS4C Antirez 本地推理实践](ch09/025-deepseek-v4-ds4c-antirez)
+- [026. Coding Agent在百度的落地实践：从反馈闭环到工程范式重构](ch09/026-coding-agent)
+- [027. Cat Wu: Anthropic Claude Code/Cowork 产品负责人访谈](ch09/027-cat-wu-anthropic-claude-code-cowork)
+- [028. Claude Code 黑客松：技艺数字化六项目](ch09/028-claude-code)
+- [029. The New Bottleneck: Theory of Constraints in the Age of AI Coding](ch09/029-the-new-bottleneck-theory-of-constraints-in-the-age-of-ai-c)
+- [030. 1-Click GitHub Token Stealing via a VSCode Bug — ammaraskar 2026](ch09/030-1-click-github-token-stealing-via-a-vscode-bug-ammaraskar)
+- [031. Open Code Review：阿里开源的 AI 代码评审 CLI 工具](ch09/031-open-code-review-ai-cli)
+- [032. 天猫AI助手调度框架重构与AI Coding工程化](ch09/032-ai-ai-coding)
+- [033. Hacker News 热帖：AI 会写代码了，为啥还要用 Python？](ch09/033-hacker-news-ai-python)
+- [034. Claw Chain: Cyera Research Unveil Four Chainable Vulnerabilities in OpenClaw](ch09/034-claw-chain-cyera-research-unveil-four-chainable-vulnerabili)
+- [035. Claude Code团队10个使用技巧（Boris二刷）](ch09/035-claude-code-10-boris)
+- [036. Claude Code 官方插件系统 (claude-plugins-official)](ch09/036-claude-code-claude-plugins-official)
+- [037. 从提需求到部署发布，全AI全自动化后，研发效能全面跃升](ch09/037-ai)
+- [038. BlueCode 0 行手写代码重构 2 万行 Vue：约束体系驱动 AI 大规模重构](ch09/038-bluecode-0-2-vue-ai)
+- [039. Claude Code 可控性：软规则无法变成硬约束](ch09/039-claude-code)
+- [040. Claude Code 接入自建开源模型：企业私有化与降本实践 | 亚马逊AWS官方博客](ch09/040-claude-code-aws)
+- [041. AI 原生开发工作流](ch09/041-ai)
+- [042. 停止编码的那天，就是失去架构判断力的开始：一位 30 年架构师的 AI 生存指南](ch09/042-30-ai)
+- [043. Device Code Phishing Forensics: What We Learned from BEC Investigations in the Wild](ch09/043-device-code-phishing-forensics-what-we-learned-from-bec-inv)
+- [044. AI 编码效率分析方法论](ch09/044-ai)
+- [045. Codex Discovered a Hidden HTTP/2 Bomb](ch09/045-codex-discovered-a-hidden-http-2-bomb)
+- [046. Engineering roles shift from developing code to managing AI | CIO Dive](ch09/046-engineering-roles-shift-from-developing-code-to-managing-ai)
+- [047. When I reject AI code even if it works](ch09/047-when-i-reject-ai-code-even-if-it-works)
+- [048. 腾讯 AI 编码实践](ch09/048-ai)
+- [049. Sakana Fugu 发布：Claude 禁令后的多 Agent 编排 API，LiveCodeBench 93.2](ch09/049-sakana-fugu-claude-agent-api-livecodebench-93-2)
+- [050. AI can write code, but the CIOs still owns the operating model](ch09/050-ai-can-write-code-but-the-cios-still-owns-the-operating-mod)
+- [051. How to Avoid AI Code Slop](ch09/051-how-to-avoid-ai-code-slop)
+- [052. Skill Issues: Compromising Claude Code with malicious skills & agents — Part 1](ch09/052-skill-issues-compromising-claude-code-with-malicious-skills)
+- [053. The text in Claude Code’s “Extended Thinking” output is not authentic. – blog](ch09/053-the-text-in-claude-code-s-extended-thinking-output-is-not)
+- [054. 复制这套神仙配置，让Claude Code全自动修Bug！告别每天重复教AI写代码](ch09/054-claude-code-bug-ai)
+- [055. Codex can now control other desktop devices via Computer Use](ch09/055-codex-can-now-control-other-desktop-devices-via-computer-use)
+- [056. Dockerless: 免环境补丁验证器](ch09/056-dockerless)
 
-### ⭐⭐⭐⭐ 科学家（33 篇）
+### ⭐⭐⭐⭐ 科学家（34 篇）
 
-- [058. 小米 MiMo Code — 长程编程 Agent 三大主线（计算/记忆/进化）+ 与 Claude Code 工程分化](ch09/058-mimo-code-agent-claude-code)
-- [059. AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](ch09/059-ai-claude-code-kiro-cli-aws-ipsec-vpn-aws)
-- [060. AI Coding Guide Tmall Deep Dive](ch09/060-ai-coding-guide-tmall-deep-dive)
-- [061. How Claude Code works in large codebases: Best practices and where to start](ch09/061-how-claude-code-works-in-large-codebases-best-practices-and)
-- [062. OpenAI Symphony：Linear 即 Codex Agent 控制平面](ch09/062-openai-symphony-linear-codex-agent)
-- [063. AI 编程智能体的质量防线：5 个代码质量控制机制（反馈传感器 / 语义评估 / 重构边界 / 来源追溯 / 智能体攻击面清单）](ch09/063-ai-5)
-- [064. Ethan Mollick: Claude Code and What Comes Next (Practitioner View)](ch09/064-ethan-mollick-claude-code-and-what-comes-next-practitioner)
-- [065. Thought-Aligner：智能体行为安全新范式——可插拔思维校正层（ICML 2026）](ch09/065-thought-aligner-icml-2026)
-- [066. CLAUDE.md 规则从 Karpathy 的 4 条增加到 12 条](ch09/066-claude-md-karpathy-4-12)
-- [067. AutoResearch：多 Agent 自动化软件开发](ch09/067-autoresearch-agent)
-- [068. HTTP/2 HPACK Bomb — Codex Discovered AI-Discovered DoS](ch09/068-http-2-hpack-bomb-codex-discovered-ai-discovered-dos)
-- [069. gpt-54-烧完额度后我把七家国产-ai-公司-coding-plan-对比了一遍想不到最应该买的竟然是这家](ch09/069-gpt-54-ai-coding-plan)
-- [070. Matt Van Horn 的 22 个 Claude Code 黑客技巧：让 AI 写 plan.md 但不读 plan.md](ch09/070-matt-van-horn-22-claude-code-ai-plan-md-plan-md)
-- [071. Anthropic Coding Agent 社会科学家采用调查](ch09/071-anthropic-coding-agent)
-- [072. Claude Code 18个隐藏设置](ch09/072-claude-code-18)
-- [073. FastContext（微软开源 Coding Agent 仓库探索子代理）](ch09/073-fastcontext-coding-agent)
+- [057. 小米 MiMo Code — 长程编程 Agent 三大主线（计算/记忆/进化）+ 与 Claude Code 工程分化](ch09/057-mimo-code-agent-claude-code)
+- [058. AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](ch09/058-ai-claude-code-kiro-cli-aws-ipsec-vpn-aws)
+- [059. AI Coding Guide Tmall Deep Dive](ch09/059-ai-coding-guide-tmall-deep-dive)
+- [060. How Claude Code works in large codebases: Best practices and where to start](ch09/060-how-claude-code-works-in-large-codebases-best-practices-and)
+- [061. OpenAI Symphony：Linear 即 Codex Agent 控制平面](ch09/061-openai-symphony-linear-codex-agent)
+- [062. AI 编程智能体的质量防线：5 个代码质量控制机制（反馈传感器 / 语义评估 / 重构边界 / 来源追溯 / 智能体攻击面清单）](ch09/062-ai-5)
+- [063. Ethan Mollick: Claude Code and What Comes Next (Practitioner View)](ch09/063-ethan-mollick-claude-code-and-what-comes-next-practitioner)
+- [064. Thought-Aligner：智能体行为安全新范式——可插拔思维校正层（ICML 2026）](ch09/064-thought-aligner-icml-2026)
+- [065. CLAUDE.md 规则从 Karpathy 的 4 条增加到 12 条](ch09/065-claude-md-karpathy-4-12)
+- [066. AutoResearch：多 Agent 自动化软件开发](ch09/066-autoresearch-agent)
+- [067. HTTP/2 HPACK Bomb — Codex Discovered AI-Discovered DoS](ch09/067-http-2-hpack-bomb-codex-discovered-ai-discovered-dos)
+- [068. gpt-54-烧完额度后我把七家国产-ai-公司-coding-plan-对比了一遍想不到最应该买的竟然是这家](ch09/068-gpt-54-ai-coding-plan)
+- [069. Matt Van Horn 的 22 个 Claude Code 黑客技巧：让 AI 写 plan.md 但不读 plan.md](ch09/069-matt-van-horn-22-claude-code-ai-plan-md-plan-md)
+- [070. Anthropic Coding Agent 社会科学家采用调查](ch09/070-anthropic-coding-agent)
+- [071. Claude Code 18个隐藏设置](ch09/071-claude-code-18)
+- [072. FastContext（微软开源 Coding Agent 仓库探索子代理）](ch09/072-fastcontext-coding-agent)
+- [073. Claude Code 为什么会忽略指令：四类失效原因 + 五层规则框架](ch09/073-claude-code)
 - [074. Chromium AI Coding 开发体系](ch09/074-chromium-ai-coding)
 - [075. Code as Agent Harness 综述](ch09/075-code-as-agent-harness)
 - [076. Claw-SWE-Bench：首个独立测量Harness对编程Agent影响的基准](ch09/076-claw-swe-bench-harness-agent)
