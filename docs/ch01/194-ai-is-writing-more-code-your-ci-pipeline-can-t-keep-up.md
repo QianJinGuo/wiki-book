@@ -1,6 +1,6 @@
 # AI Is Writing More Code. Your CI Pipeline Can't Keep Up
 
-> 📊 Level ⭐⭐⭐ | 5.7KB
+> 📊 Level ⭐⭐⭐ | 10.8KB
 
 ## 核心要点
 - AI 工具正加速代码生成，CI 流水线面临吞吐量压力
@@ -42,6 +42,29 @@ AI 辅助开发正在从根本上改变代码生产节奏。Stack Overflow 2025 
 - [Npm Supply Chain Compromise Postmortem](https://github.com/QianJinGuo/wiki-public/blob/main/entities/npm-supply-chain-compromise-postmortem.md)
 
 → [原文存档](https://www.cloudbees.com/blog/ai-is-writing-more-code-your-ci-pipeline-cant-keep-up)
+
+## 第 2 来源 — Anthropic 内部 CI 过载事故（Agentic coding 撑爆测试影响分析服务）
+
+**第一方数据：80% 代码由 Claude 写、人均交付 8 倍、CI 任务半年 25 倍。** Anthropic 在官方博客中披露内部真实数据：全公司 **80% 的代码由 Claude 编写**，工程师平均每季度交付的代码量达到 2021—2025 年平均水平的 **8 倍**；Claude 不只在写代码，还在 PR 审查与合并批准环节承担大量主力工作，测试用例规模半年内激增 **10 倍**、CI 运行任务量飙涨 **25 倍**。
+
+**行为模式差异是根因，而不是工具不好用。** 人类工程师一天能提交的 PR 数量有限、倾向把相关改动打包成中大型 PR，且有休息低谷期让 CI 集群消化任务；Claude 偏爱粒度极细、体量更小的 PR（一个小修改就是一个 PR），且 24×7 不间断地跑任务、提代码、做重构，把原本的系统低谷期彻底抹平。
+
+**三次「快速止血」一次比一次短命。** 团队打造了确定性测试影响分析服务，核心是两个组件：**Listener**（记录每次 CI 运行的测试结果）与 **Selector**（根据历史结果决定每个 PR 该跑哪些测试）。为保证测试历史严格按时序记录，系统最初设计为**单进程写入（Singleton）**，但面对每秒倾泻而来的数千上万并发任务，Listener 开始严重滞后——在 AI 原生开发周期里哪怕落后 20 分钟，就会导致数万次测试状态无法同步给 Selector，进而错误代码被合并、偶发失败阻塞合流、新增/修复的测试无法及时生效。止血动作依次是：Patch 1 换更大的机器（核数翻倍，撑了 **70 天**）、Patch 2 分片（每个 package 一个独立 shard worker，撑了 **29 天**）、Patch 3 每日定时重启（2026 年 3 月单体服务每个工作日午后触发内存上限 OOM，团队只找到 4 个微小 Bug、替换 Go/Rust 内存分配器优化 GC 也无效，且在不敢做生产环境内存分析的前提下启用每日重启，结果连一天都没撑住，造成任务数据丢包、Listener 落后 1 小时以上、全公司 CI 大面积瘫痪）。
+
+**推倒重来：剥离单体内存状态，转向分布式无状态。** 最终团队听从 Claude 几个月前的建议，彻底推倒重来：引入内存数据存储 —— 异步轻量汇聚 —— Selector 秒级只读解耦；上线切换并完成调优后，此前每周疯狂攀升、动辄堆积数十万的未处理事件队列瞬间被拉成一条贴地的水平直线。
+
+**结论 pivot：从「程序员会不会失业」到「整套软件工程体系会不会过载」。** 这次事故的意义在于验证了一个更根本的判断——AI 编程真正带来的冲击，已经从「程序员会不会失业」进入「整套软件工程体系会不会过载」；一个过去不起眼的单实例服务，完全可能成为整个团队等待的地方；AI 编程的竞争正在从代码生成能力延伸到整套工程体系的承载能力。换言之，代码可以一夜暴增，交付能力必须跟上。
+
+- （heuristic，落入已文档化的 semi_technical 天花板——tech_hits∈[3,4] 系统性低估；人工 domain gate 判为**可迁移的工程体系容量问题**，与本文第 1 来源同题互补）
+- 互补角度 5 条：
+  1. **第一方量化数据**：80% 代码由 AI 编写 / 人均交付 8× / CI 任务 25× / 测试用例 10×（第 1 来源为供应商视角的行业推算，无第一方事故数据）
+  2. **失败时间线**：三次补丁生存期 70 天 → 29 天 → 不足 1 天（换机器 / 分片 / 每日重启），以及每工作日午后 OOM 的崩溃形态
+  3. **根因机制**：单点写入 Listener 在 AI 高并发下的**滞后语义**（落后 20 分钟 = 数万测试状态不同步 = 错误代码被合并）
+  4. **架构解法**：剥离单体内存状态 → 内存数据存储 + 异步轻量汇聚 + Selector 秒级只读解耦，未处理事件队列从数十万降到贴地水平
+  5. **叙事 pivot**：把问题从「程序员是否失业」重新定义为「工程体系承载能力」，与第 1 来源的「智能测试选择降本」视角互为表里
+- 一手来源：Anthropic 官方博客《Agentic coding is straining CI — here's how we scaled test impact analysis at Anthropic》<https://claude.com/blog/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic>（经新智元 2026-09-18 报道；另参考 Addy Osmani <https://x.com/addyosmani/status/2099577600159158765>）
+
+→ [第 2 来源原文](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652727030&idx=2&sn=7d889f9e50e3d7b224d31b211d9a1d9c)
 
 ---
 

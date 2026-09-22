@@ -1,6 +1,6 @@
 # Loop Engineering:不再写提示词,而是设计替你写提示词的循环——先写刹车再写循环（19 来源深度合并：Addy Osmani / Boris Cherny+Peter Steinberger / 教科书 / 若飞 工程现场 / TechFarrari 批判 / 若飞 实用指南 / 爱范儿 科普批判 / AllenTang Karpathy 尺子 / winty 7架构中文主流视角 / AutoResearch 5 决策 / 三层结构 + 三款产品对比 + Ralph Loop + 准备度总表 / Shubham Saboo PM 视角 / 若飞 吴恩达三层Loop）
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 134.5KB
+> 📊 Level ⭐⭐⭐⭐⭐ | 137.7KB
 
 > 原文存档：[原文存档](https://mp.weixin.qq.com/s/vmGx9IELbWgKZqHm-M3G5w)
 
@@ -1043,6 +1043,21 @@ Karpathy 的核心解法: 把**"什么时候停、凭什么算成功"这件事,�
 - ✅ **Loop 适用范围边界**：可验证短寿命任务优先，核心链路/权限/计费系统由人把关——与第 18 来源的 SRE 状态机视角互补
 
 → [第19原文存档](https://mp.weixin.qq.com/s/PGpe6EnVNnig2cuZ9VbnuA)
+
+## 第 20 来源 — 大淘宝技术（苏雄）：把 agent 放进工程循环（2026-09-21，SUPP）
+
+大淘宝技术会员技术团队苏雄的工程化综述，六动作循环定义 + 六组件系统 + 失败模式与责任边界。与既有 19 来源的增量维度（grep 全库零覆盖）：
+
+1. **循环六动作（步骤级定义）** — 读取外部状态→判断下一步→执行任务→验证结果→写入状态→判断停止条件；"少了第 5 步只是一次会话，少了第 6 步就是烧 token 的定时器"——比既有六组件解剖更前一步，定义了 loop 与会话/定时器的分界
+2. **Harness maintenance loop（元循环）** — 每周读取 agent PR 与 review comments，把重复失败模式转为确定性控制件（lint/类型检查/架构规则）或语义控制件（review skill/verifier prompt），每次只改一个控制件并记录拦截与误报；"不直接交付功能，但让后面的功能 loop 更稳"——库内首次出现修复 harness 的循环本身
+3. **自动化判定第六条件：产物能不能沉淀** — 输入稳定/输出可 review/验证明确/权限可控/失败可恢复之外的加项：好的 loop 失败应留下更好的 fixture/rule/skill/workflow，"否则你只是在反复购买同一份现场发挥"
+4. **权限四层阶梯 observe→propose→act with approval→autonomous** — 每层给明确动作边界（只读总结/生成 patch 不合并/外部动作需人批/低风险可回滚可验证才 autonomous）；"大多数团队不应该一开始就追求 autonomous"
+5. **Plugin / Connector / MCP 三层区分** — MCP=工具接入协议，Connector=面向外部系统的具体连接，Plugin=分发打包机制；"装了一个包不等于有了完整控制面"——纠正把三层混写的常见误导
+6. **两篇论文引入** — AI Workflow Store（arXiv 2605.10907，把可靠流程沉淀成可复用受约束 workflow，修正 on-the-fly loop 跳过迭代设计/严格测试/分阶段发布的弱点）与 EurekAgent（权限/artifact/预算/HITL 直接改变 agent 做事方式）——库内零覆盖
+
+与其他来源的关系：六动作与第 12 来源六组件解剖互补（前者定义循环边界，后者拆解组件内部）；权限阶梯与 Claude Code 四档控制权（Turn/Goal/Time/Proactive）不同轴——前者是团队授权分级，后者是产品能力分层；"理解债"（8 个 agent 开 PR 但人只能读 2 个 diff = 吞吐假象）与既有 comprehension-debt 标签同源但给出了 review 带宽的量化表述。
+
+→ [第20原文存档](https://mp.weixin.qq.com/s/RxRzTsRvmZJMmtQjQM79_g)
 
 ---
 

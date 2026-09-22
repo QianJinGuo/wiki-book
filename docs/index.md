@@ -20,11 +20,11 @@
 
   <div class="home-stats">
 
-    <div class="home-stats__item"><span class="home-stats__num">1,707</span><span class="home-stats__label">编撰条目</span></div>
+    <div class="home-stats__item"><span class="home-stats__num">1,709</span><span class="home-stats__label">编撰条目</span></div>
 
     <div class="home-stats__item"><span class="home-stats__num">20 章 · 5 篇</span><span class="home-stats__label">全书结构</span></div>
 
-    <div class="home-stats__item"><span class="home-stats__num">4,300</span><span class="home-stats__label">一手原文</span></div>
+    <div class="home-stats__item"><span class="home-stats__num">4,338</span><span class="home-stats__label">一手原文</span></div>
 
     <div class="home-stats__item"><span class="home-stats__num">★ × 5</span><span class="home-stats__label">难度分级</span></div>
 
@@ -40,9 +40,9 @@
 
 <nav class="home-parts" aria-label="全书五篇导览">
 
-<a class="home-part" href="#part-1"><span class="home-part__no">第一篇</span><span class="home-part__name">入门篇</span><span class="home-part__pos">从零理解 AI</span><span class="home-part__count">574 篇 · 3 章</span></a>
+<a class="home-part" href="#part-1"><span class="home-part__no">第一篇</span><span class="home-part__name">入门篇</span><span class="home-part__pos">从零理解 AI</span><span class="home-part__count">575 篇 · 3 章</span></a>
 
-<a class="home-part" href="#part-2"><span class="home-part__no">第二篇</span><span class="home-part__name">工程师篇</span><span class="home-part__pos">构建 AI 应用</span><span class="home-part__count">763 篇 · 7 章</span></a>
+<a class="home-part" href="#part-2"><span class="home-part__no">第二篇</span><span class="home-part__name">工程师篇</span><span class="home-part__pos">构建 AI 应用</span><span class="home-part__count">764 篇 · 7 章</span></a>
 
 <a class="home-part" href="#part-3"><span class="home-part__no">第三篇</span><span class="home-part__name">专家篇</span><span class="home-part__pos">深入系统架构</span><span class="home-part__count">279 篇 · 4 章</span></a>
 
@@ -60,27 +60,27 @@
 
 <article class="chapter-card">
 
-<div class="chapter-card__head"><span class="chapter-card__no">Ch01</span><span class="chapter-card__count">487 篇</span></div>
+<div class="chapter-card__head"><span class="chapter-card__no">Ch01</span><span class="chapter-card__count">488 篇</span></div>
 
 <h3 class="chapter-card__title"><a href="ch01-ai-basics.html">AI 与 LLM 基础</a></h3>
 
 <p class="chapter-card__desc">理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:17.86%" title="⭐ 入门 · 87 篇"></i><i class="lv2" style="width:9.03%" title="⭐⭐ 工程师 · 44 篇"></i><i class="lv3" style="width:44.35%" title="⭐⭐⭐ 专家 · 216 篇"></i><i class="lv4" style="width:19.71%" title="⭐⭐⭐⭐ 科学家 · 96 篇"></i><i class="lv5" style="width:9.03%" title="⭐⭐⭐⭐⭐ 大师 · 44 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:17.62%" title="⭐ 入门 · 86 篇"></i><i class="lv2" style="width:9.02%" title="⭐⭐ 工程师 · 44 篇"></i><i class="lv3" style="width:44.47%" title="⭐⭐⭐ 专家 · 217 篇"></i><i class="lv4" style="width:19.88%" title="⭐⭐⭐⭐ 科学家 · 97 篇"></i><i class="lv5" style="width:9.02%" title="⭐⭐⭐⭐⭐ 大师 · 44 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 87 · ⭐⭐ 44 · ⭐⭐⭐ 216 · ⭐⭐⭐⭐ 96 · ⭐⭐⭐⭐⭐ 44</div>
+<div class="chapter-card__legend">⭐ 86 · ⭐⭐ 44 · ⭐⭐⭐ 217 · ⭐⭐⭐⭐ 97 · ⭐⭐⭐⭐⭐ 44</div>
 
 <ul class="chapter-card__samples">
 
 <li><span class="stars">⭐</span><span class="sample-title">**一、关于 Kollab**</span></li>
 
-<li><span class="stars">⭐</span><span class="sample-title">GPT-5.6 Preview System Card — Community Detection &amp; Benchmarks</span></li>
+<li><span class="stars">⭐</span><span class="sample-title">DeepSeek-V4.1-Flash：把 KV Cache 压缩到极限的百万上下文 MoE（技术报告全系统解读）</span></li>
 
-<li><span class="stars">⭐</span><span class="sample-title">Linux Foundation and Industry Leaders Launch Akrites to Defend Critical Open Source Software Against AI-Enabled Cyber Threats</span></li>
+<li><span class="stars">⭐</span><span class="sample-title">GPT-5.6 Preview System Card — Community Detection &amp; Benchmarks</span></li>
 
 </ul>
 
-<a class="chapter-card__more" href="ch01-ai-basics.html">进入章节 · 共 487 篇<span class="arrow" aria-hidden="true"> →</span></a>
+<a class="chapter-card__more" href="ch01-ai-basics.html">进入章节 · 共 488 篇<span class="arrow" aria-hidden="true"> →</span></a>
 
 </article>
 
@@ -153,9 +153,9 @@
 
 <p class="chapter-card__desc">什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:8.77%" title="⭐ 入门 · 35 篇"></i><i class="lv2" style="width:10.28%" title="⭐⭐ 工程师 · 41 篇"></i><i class="lv3" style="width:37.59%" title="⭐⭐⭐ 专家 · 150 篇"></i><i class="lv4" style="width:29.57%" title="⭐⭐⭐⭐ 科学家 · 118 篇"></i><i class="lv5" style="width:13.78%" title="⭐⭐⭐⭐⭐ 大师 · 55 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:8.27%" title="⭐ 入门 · 33 篇"></i><i class="lv2" style="width:10.03%" title="⭐⭐ 工程师 · 40 篇"></i><i class="lv3" style="width:37.59%" title="⭐⭐⭐ 专家 · 150 篇"></i><i class="lv4" style="width:30.33%" title="⭐⭐⭐⭐ 科学家 · 121 篇"></i><i class="lv5" style="width:13.78%" title="⭐⭐⭐⭐⭐ 大师 · 55 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 35 · ⭐⭐ 41 · ⭐⭐⭐ 150 · ⭐⭐⭐⭐ 118 · ⭐⭐⭐⭐⭐ 55</div>
+<div class="chapter-card__legend">⭐ 33 · ⭐⭐ 40 · ⭐⭐⭐ 150 · ⭐⭐⭐⭐ 121 · ⭐⭐⭐⭐⭐ 55</div>
 
 <ul class="chapter-card__samples">
 
@@ -173,15 +173,15 @@
 
 <article class="chapter-card">
 
-<div class="chapter-card__head"><span class="chapter-card__no">Ch05</span><span class="chapter-card__count">106 篇</span></div>
+<div class="chapter-card__head"><span class="chapter-card__no">Ch05</span><span class="chapter-card__count">107 篇</span></div>
 
 <h3 class="chapter-card__title"><a href="ch05-harness.html">Harness 工程</a></h3>
 
 <p class="chapter-card__desc">给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:15.09%" title="⭐ 入门 · 16 篇"></i><i class="lv2" style="width:13.21%" title="⭐⭐ 工程师 · 14 篇"></i><i class="lv3" style="width:24.53%" title="⭐⭐⭐ 专家 · 26 篇"></i><i class="lv4" style="width:31.13%" title="⭐⭐⭐⭐ 科学家 · 33 篇"></i><i class="lv5" style="width:16.04%" title="⭐⭐⭐⭐⭐ 大师 · 17 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:12.15%" title="⭐ 入门 · 13 篇"></i><i class="lv2" style="width:14.02%" title="⭐⭐ 工程师 · 15 篇"></i><i class="lv3" style="width:27.10%" title="⭐⭐⭐ 专家 · 29 篇"></i><i class="lv4" style="width:30.84%" title="⭐⭐⭐⭐ 科学家 · 33 篇"></i><i class="lv5" style="width:15.89%" title="⭐⭐⭐⭐⭐ 大师 · 17 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 16 · ⭐⭐ 14 · ⭐⭐⭐ 26 · ⭐⭐⭐⭐ 33 · ⭐⭐⭐⭐⭐ 17</div>
+<div class="chapter-card__legend">⭐ 13 · ⭐⭐ 15 · ⭐⭐⭐ 29 · ⭐⭐⭐⭐ 33 · ⭐⭐⭐⭐⭐ 17</div>
 
 <ul class="chapter-card__samples">
 
@@ -193,7 +193,7 @@
 
 </ul>
 
-<a class="chapter-card__more" href="ch05-harness.html">进入章节 · 共 106 篇<span class="arrow" aria-hidden="true"> →</span></a>
+<a class="chapter-card__more" href="ch05-harness.html">进入章节 · 共 107 篇<span class="arrow" aria-hidden="true"> →</span></a>
 
 </article>
 
@@ -570,17 +570,17 @@
 
 <p class="chapter-card__desc">Scaling Law、涌现能力、世界模型、自我博弈</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:8.33%" title="⭐ 入门 · 1 篇"></i><i class="lv2" style="width:8.33%" title="⭐⭐ 工程师 · 1 篇"></i><i class="lv3" style="width:33.33%" title="⭐⭐⭐ 专家 · 4 篇"></i><i class="lv4" style="width:33.33%" title="⭐⭐⭐⭐ 科学家 · 4 篇"></i><i class="lv5" style="width:16.67%" title="⭐⭐⭐⭐⭐ 大师 · 2 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:0.00%" title="⭐ 入门 · 0 篇"></i><i class="lv2" style="width:8.33%" title="⭐⭐ 工程师 · 1 篇"></i><i class="lv3" style="width:33.33%" title="⭐⭐⭐ 专家 · 4 篇"></i><i class="lv4" style="width:41.67%" title="⭐⭐⭐⭐ 科学家 · 5 篇"></i><i class="lv5" style="width:16.67%" title="⭐⭐⭐⭐⭐ 大师 · 2 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 1 · ⭐⭐ 1 · ⭐⭐⭐ 4 · ⭐⭐⭐⭐ 4 · ⭐⭐⭐⭐⭐ 2</div>
+<div class="chapter-card__legend">⭐⭐ 1 · ⭐⭐⭐ 4 · ⭐⭐⭐⭐ 5 · ⭐⭐⭐⭐⭐ 2</div>
 
 <ul class="chapter-card__samples">
-
-<li><span class="stars">⭐</span><span class="sample-title">Lean Software Scaling Laws</span></li>
 
 <li><span class="stars">⭐⭐</span><span class="sample-title">The Complexity of Simplicity | Jim Nielsen&#x27;s Notes</span></li>
 
 <li><span class="stars">⭐⭐⭐</span><span class="sample-title">世界模型的DeepSeek时刻！魔芯Flash World Model降本70%，跑出50FPS实时交互</span></li>
+
+<li><span class="stars">⭐⭐⭐</span><span class="sample-title">Prompt Injection 的机制解释：基于角色感知的 LLM 安全分析</span></li>
 
 </ul>
 
@@ -617,6 +617,6 @@
 </div>
 </section>
 
-<footer class="home-map__foot">📊 全书收录 1,707 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-09-21</span></footer>
+<footer class="home-map__foot">📊 全书收录 1,709 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-09-23</span></footer>
 
 </div>

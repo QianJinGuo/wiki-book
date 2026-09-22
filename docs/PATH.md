@@ -92,12 +92,12 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 | 主题 | entity | raw |
 |---|---|---|
 | Agent 术语表 | [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04-agent-core.html) | [huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent.md](https://mp.weixin.qq.com/s/RCEGqAvfJxbzaPJIJDOKwA) |
-| 从 Vibe Coding 到 Agentic Engineering | [Karpathy Vibe Coding Agentic Engineering V4](ch04/267-karpathy-vibe-coding-agentic-engineering.html) | [karpathy-vibe-coding-agentic-engineering-v4.md](https://mp.weixin.qq.com/s/HTFcXBzYUVHvwShu3Zp-EA) |
+| 从 Vibe Coding 到 Agentic Engineering | [Karpathy Vibe Coding Agentic Engineering V4](ch04/264-karpathy-vibe-coding-agentic-engineering.html) | [karpathy-vibe-coding-agentic-engineering-v4.md](https://mp.weixin.qq.com/s/HTFcXBzYUVHvwShu3Zp-EA) |
 | AI Agent 工程师能力地图 | [Ai Agent Engineer Capability Map](ch04-agent-core.html) | [ai-agent-engineer-learning-roadmap-backend-2026.md](https://mp.weixin.qq.com/s/HWdqrPP1IFdex33afqQEeQ) |
 | 250 行 CLI Agent | [Minimal Cli Agent 250 Line Python Ollama 7 Stages](ch04/368-ai-agent-250-while-python-ollama-cli-agent-7.html) | [minimal-cli-agent-250-line-python-ollama-7-stages.md](https://mp.weixin.qq.com/s/axLHmFoNretapSPCUP68PQ) |
 | Agent Runtime 7 大职责 | [Agent Runtime 7 Responsibilities Secondcurve 2026](ch04/363-agent-agent-runtime-7-3-langgraph-openai-agents-s.html) | [agent-runtime-7-responsibilities-secondcurve-2026.md](https://mp.weixin.qq.com/s/5sftvwAZL4Hj5v40HZ1rVw) |
 | Design Patterns for AI Agents | [Design Patterns For Ai Agents 2026](ch04/369-design-patterns-for-ai-agents-2026-4-5-reflection.html) | 先读实体页：`docs/ch04/083-design-patterns-for-ai-agents-2026-4-5-reflection.md` |
-| 从零设计准生产级 LLM Agent | [Thinkingagent From Scratch Reliability Context Recovery 2026 06 02](ch04/087-llm-agent-thinkingagent.html) | [thinkingagent-from-scratch-reliability-context-recovery-2026-06-02.md](https://mp.weixin.qq.com/s/UTEdhrkV3G3Ycfrg0Jng_A) |
+| 从零设计准生产级 LLM Agent | [Thinkingagent From Scratch Reliability Context Recovery 2026 06 02](ch04/084-llm-agent-thinkingagent.html) | [thinkingagent-from-scratch-reliability-context-recovery-2026-06-02.md](https://mp.weixin.qq.com/s/UTEdhrkV3G3Ycfrg0Jng_A) |
 ### 3.4 入门期作业
 
 #### 作业 A：画一张 Agent 总架构图
@@ -180,13 +180,13 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 
 | 主题 | entity | raw |
 |---|---|---|
-| Loop Engineering 总论 | [Loop Engineering Addy Osmani Challengehub](ch05/090-loop-engineering-19-addy-osmani-boris-cherny-pete.html) | [loop-engineering-addy-osmani-challengehub.md](https://mp.weixin.qq.com/s/vmGx9IELbWgKZqHm-M3G5w) |
-| Harness Engineering 综合论述 | [Harness Engineering Paradigm Comprehensive 2026](ch04/085-agent-harness-engineering-a-survey.html) | [harness-engineering-2026-rahul-rauhul.md](https://mp.weixin.qq.com/s/RwWfknFIFvJPIdsJMgeNiQ) |
-| 长周期 Agent / Ralph Loop | [Long Running Agent Ralph Loop Handover Harness Ruofei](ch05/058-agent-ralph-loop-harness.html) | [long-running-agent-ralph-loop-handover-harness-ruofei.md](https://mp.weixin.qq.com/s/ML5aD3f2ilHWjSB-wpBukw) |
+| Loop Engineering 总论 | [Loop Engineering Addy Osmani Challengehub](ch05/091-loop-engineering-19-addy-osmani-boris-cherny-pete.html) | [loop-engineering-addy-osmani-challengehub.md](https://mp.weixin.qq.com/s/vmGx9IELbWgKZqHm-M3G5w) |
+| Harness Engineering 综合论述 | [Harness Engineering Paradigm Comprehensive 2026](ch04/082-agent-harness-engineering-a-survey.html) | [harness-engineering-2026-rahul-rauhul.md](https://mp.weixin.qq.com/s/RwWfknFIFvJPIdsJMgeNiQ) |
+| 长周期 Agent / Ralph Loop | [Long Running Agent Ralph Loop Handover Harness Ruofei](ch05/059-agent-ralph-loop-harness.html) | [long-running-agent-ralph-loop-handover-harness-ruofei.md](https://mp.weixin.qq.com/s/ML5aD3f2ilHWjSB-wpBukw) |
 | Agent Harness 生产指南 | [Agent Production Harness Engineering](ch05-harness.html) | [harness-production-agent-engineering-deficit.md](https://mp.weixin.qq.com/s/HVkWNXTsFjn0HkdGyD7Tpw) |
 | 生产级 Harness 12 组件 | [Production Harness 12 Components Framework Comparison](ch05-harness.html) | [production-harness-12-components-framework-comparison.md](https://mp.weixin.qq.com/s/UwG0mEzQ0Mk7DYjPS3PFqQ) |
 | 10 步路线图 + 8 失败模式 | [Harness Engineering 10 Step Practical Guide 2026](ch05-harness.html) | [harness-engineering-10-step-practical-guide-2026.md](https://mp.weixin.qq.com/s/5GmESz1z9MCRp0KzoYUOSw) |
-| 100% Cache 命中的 Agent 设计 | [Openclacky Harness Engineering 100 Percent Cache Hit](ch05/032-harness-100-cache-agent.html) | [openclacky-harness-engineering-100-percent-cache-hit.md](https://mp.weixin.qq.com/s/5jR9MjhEERMI59iYjFIJxg) |
+| 100% Cache 命中的 Agent 设计 | [Openclacky Harness Engineering 100 Percent Cache Hit](ch05/030-harness-100-cache-agent.html) | [openclacky-harness-engineering-100-percent-cache-hit.md](https://mp.weixin.qq.com/s/5jR9MjhEERMI59iYjFIJxg) |
 | Better-Harness | [Better Harness Eval Trace Methodology](ch05-harness.html) | 先读实体页：`docs/ch05/085-better-harness-agent-harness.md` |
 
 ### 4.4 Memory 精读清单
@@ -198,7 +198,7 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 | AgentMemory 源码分析 | [Agentmemory Source Analysis Coding Agent Local Memory](ch09/099-agentmemory-coding-agent.html) | [agentmemory-source-analysis-coding-agent-local-memory.md](https://mp.weixin.qq.com/s/L_wzXQCe3byU93fDAf_Eug) |
 | Claude Code vs OpenClaw Memory | [Claude Code Openclaw Memory Comparison](ch06/023-claude-code-openclaw-memory-comparison.html) | [claude-code-openclaw-memory-comparison.md](https://mp.weixin.qq.com/s/m4wzwXCJoW5Tu4GA5ROodw) |
 | Memory 评测全景 | [Agent Memory Evaluation Landscape Taobao Survey](ch06-memory.html) | [agent-memory-evaluation-landscape-taobao-survey.md](https://mp.weixin.qq.com/s/JZhN6auXKOzEh3OHgkjrdw) |
-| State of Memory in Agent Harness | [State Of Memory In Agent Harness Mem0 2026](ch04/278-state-of-memory-in-agent-harness-mem0-harness.html) | [state-of-memory-in-agent-harness-mem0-2026.md](https://mp.weixin.qq.com/s/2c2MV0b1biv71WdX2gCt_A) |
+| State of Memory in Agent Harness | [State Of Memory In Agent Harness Mem0 2026](ch04/275-state-of-memory-in-agent-harness-mem0-harness.html) | [state-of-memory-in-agent-harness-mem0-2026.md](https://mp.weixin.qq.com/s/2c2MV0b1biv71WdX2gCt_A) |
 ### 4.5 Skill / Tool / MCP 精读清单
 
 | 主题 | entity | raw |
@@ -219,7 +219,7 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 |---|---|---|
 | RAG 到知识图谱到本体论 | [向量库是Rag的前菜知识图谱是答案本体论是灵魂](ch10-rag.html) | [向量库是rag的前菜知识图谱是答案本体论是灵魂.md](https://mp.weixin.qq.com/s/2pk4Mhr4nLMapJrTqpYX6Q) |
 | Google Agentic RAG 5 阶段 | [Ai Cambrian Google Agentic Rag Sufficient Context Cross Corpus 20260606](ch04/377-google-agentic-rag-5.html) | [ai-cambrian-google-agentic-rag-sufficient-context-cross-corpus-20260606.md](https://mp.weixin.qq.com/s/8PdVIubBGWKtMMyCb0pc3g) |
-| Protocol H 分层 Agentic RAG | [Protocol H Hierarchical Agentic Rag Enterprise](ch04/086-protocol-h-agentic-rag.html) | [protocol-h-hierarchical-agentic-rag-enterprise.md](https://mp.weixin.qq.com/s/P-MnmnREgtiOq-DbHfDuVA) |
+| Protocol H 分层 Agentic RAG | [Protocol H Hierarchical Agentic Rag Enterprise](ch04/083-protocol-h-agentic-rag.html) | [protocol-h-hierarchical-agentic-rag-enterprise.md](https://mp.weixin.qq.com/s/P-MnmnREgtiOq-DbHfDuVA) |
 | Chroma 到 Qdrant 迁移 | [Chroma To Qdrant 1M Vector Migration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/chroma-to-qdrant-1m-vector-migration.md) | [chroma-to-qdrant-1m-vector-migration.md](https://mp.weixin.qq.com/s/Aovqh95_LBYtVOj8_tTD_w) |
 | RAG vs LLM Wiki | `docs/ch01/037-rag-vs-llm-wiki.md` | 先读实体页 |
 
@@ -418,7 +418,7 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 | Chroma → Qdrant | [Chroma To Qdrant 1M Vector Migration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/chroma-to-qdrant-1m-vector-migration.md) | [chroma-to-qdrant-1m-vector-migration.md](https://mp.weixin.qq.com/s/Aovqh95_LBYtVOj8_tTD_w) |
 | 实时语音推理 vLLM + SageMaker | [Build Real Time Voice Applications With Amazon Sagemaker Ai](ch09-ai-coding.html) | [build-real-time-voice-applications-with-amazon-sagemaker-ai.md](https://aws.amazon.com/blogs/machine-learning/build-real-time-voice-applications-with-amazon-sagemaker-ai-and-vllm/) |
 | Apple Private Inference | [Apple Siri Private Inference — Lethal Trifecta](https://github.com/QianJinGuo/wiki-public/blob/main/entities/apple-siri-private-inference-lethal-trifecta-matthew-green.md) | [apple-siri-private-inference-cryptography-green.md](https://blog.cryptographyengineering.com/2026/06/09/apples-siri-ai-or-more-shouting-into-the-void-about-private-agents/) |
-| Didi EAGLE-3 投机解码 | [Didi Eagle 3 Speculative Decoding Agents](ch04/270-agent-eagle-3.html) | [didi-eagle-3-speculative-decoding-agents.md](https://mp.weixin.qq.com/s/PZMX-55W_gqJKtHIYXJVyA) |
+| Didi EAGLE-3 投机解码 | [Didi Eagle 3 Speculative Decoding Agents](ch04/267-agent-eagle-3.html) | [didi-eagle-3-speculative-decoding-agents.md](https://mp.weixin.qq.com/s/PZMX-55W_gqJKtHIYXJVyA) |
 ### 6.4 前沿研究精读清单
 
 | 主题 | entity | raw |
@@ -490,7 +490,7 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 
 | 主题 | entity | raw |
 |---|---|---|
-| Vibe Design ≠ Vibe Coding | [Impeccable Vibe Design Philosophy Anomaly](ch01/471-impeccable-ai-33-4k-star.html) | [impeccable-anomaly-vibe-design-vs-vibe-coding.md](https://mp.weixin.qq.com/s/4_9q9TrkVyE5a4jCfTrNgg) |
+| Vibe Design ≠ Vibe Coding | [Impeccable Vibe Design Philosophy Anomaly](ch01/472-impeccable-ai-33-4k-star.html) | [impeccable-anomaly-vibe-design-vs-vibe-coding.md](https://mp.weixin.qq.com/s/4_9q9TrkVyE5a4jCfTrNgg) |
 | Data Agent 产品设计 | [Data Agent Product Design](ch04-agent-core.html) | [volcengine-data-agent-product-overview.md](https://www.volcengine.com/docs/85637/1563626?lang=zh) |
 | 下一代企业架构：系统 CLI 化、流程 Skill 化、员工 Agent 化 | [Enterprise Next Gen Architecture System Cli Process Skill Employee Agent Zhan](ch04-agent-core.html) | [enterprise-next-gen-architecture-system-cli-process-skill-employee-agent-zhan.md](https://mp.weixin.qq.com/s/759TfOdXch5zWrT4Yo42xA) |
 | James Cowling AI 时代工程哲学 | [James Cowling Engineering Philosophy Ai Era](ch09-ai-coding.html) | [james-cowling-engineering-philosophy-ai-era.md](https://mp.weixin.qq.com/s/ZKfpdzXxN2fqANN-Nzkcjw) |
