@@ -1,6 +1,6 @@
 # 多 Agent 编排系统
 
-> 📊 Level ⭐⭐⭐ | 13.7KB
+> 📊 Level ⭐⭐⭐⭐ | 15.7KB
 
 ## 摘要
 
@@ -75,6 +75,10 @@
 **节点结果契约与事件链（全库零覆盖）**：节点间传带版本与证据的结果而非「测试完成」一句话，节点字段契约 input_ref/node/attempt/output_ref/quality_status(passed|failed|pending)/next_action 六字段——next_action 不由 Agent 随口写「建议继续」，节点结果先落库、运行时按检查点/重试预算/权限规则计算，以区分「Agent 没完成」与「运行时没放行」。事件链 node_started→tool_called→artifact_written→quality_checked→node_succeeded/node_failed→retry_scheduled→workflow_paused：排查与恢复的抓手，重放从最近稳定节点继续而非全量重跑。
 
 **检查点放节点边界**：每节点带最低完成条件（资料收集=来源可访问版本已记录；基准测试=环境/数据切片/结果可复现；安全审查=风险项有证据阻断已处理；方案成稿=只引用通过检查点的结果，不生成发布结论），错误停在靠近源头处——上游错误进入下游后 Agent 只会写得更完整未必能重新核实。失败分支都可检查：重试从哪版输入开始/暂停留下什么证据/人工处理后从哪个稳定节点恢复，「没有这些记录，所谓恢复通常只是重新跑一遍」。**框架表达差异**：LangGraph=StateGraph+条件边+显式状态、CrewAI=角色任务+Flow、MS Agent Framework=应用代码组合步骤、OpenAI Agents SDK=应用代码控序+agents-as-tools（控制权留外层，与 handoff 交控制权不可混写）、Claude Agent SDK=执行节点但固定顺序需外部调度层（框架提供 Agent Loop ≠ 自动提供业务 Workflow）。**「代码模拟 Supervisor」信号**：运行时反复问模型「调哪个 Agent/是否跳这步/失败回哪里」=已在模拟 Supervisor，继续塞条件不如承认需要动态调度。Google Research scaling 研究结论：任务依赖结构应先于 Agent 数量进入架构选择。
+
+## Supervisor 架构详解：动态派工与瓶颈（若飞 2026-09-23 SUPP）
+
+系列第二篇，回答「谁来决定下一步」的 Supervisor 答案：**下一步跟着当前证据走，由中央 Agent 动态路由**——价值与风险在同一个地方：主管同时承担派工、上下文管理和最终收口。核心框架维度：①**派活两种控制权形态**——agents-as-tools（中央持控制权，受控函数调用，守输入输出契约）vs handoff（交接后谁拥有下一步决定权；handoff 回交 Supervisor 仍是中心调度，子 Agent 自选同级即滑向 Swarm，判断标准不在工具名）；②**派工日志四字段**（subtask/reason/input_ref/stop_condition）——reason 记当时看见的证据、input_ref 记子 Agent 实际读取的版本，两者缺一回放只能靠猜，与首篇节点结果契约互补；③**可回放中心状态八字段**（task_id/goal/dispatch_history[]/subtask_results[]/evidence_refs[]/budget_remaining/quality_status/**termination_reason**）——termination_reason 区分证据满足/预算耗尽/风险阻断/超时/人工接管，「没有这个字段，成功和放弃在最终文本里长得一样」；④**收口三核对**（证据齐全/阻断条件处理/预算边界）——主管生成的文字只是交付物不是系统状态，不能靠总结语气把风险覆盖掉；⑤**Meta Agents Rule of Two 引入编排语境**——单次会话不同时拥有不可信输入处理+敏感系统访问+状态改变/对外通信三能力，Supervisor 汇总风险但不能替代权限隔离；⑥**瓶颈的量化注解**——Google Research 180 配置：Finance-Agent centralized +80.9% vs PlanCraft 顺序任务 -39%~-70%；独立并行错误放大 17.2 倍 vs 中心协调 4.4 倍（中心须真检查而非拼接）。适用判据：子任务边界可写清+下一步取决于中间发现+需统一收口+子 Agent 间不需持续直接交换中间状态。
 
 ## 相关实体
 
