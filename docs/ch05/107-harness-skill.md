@@ -1,6 +1,6 @@
 # Harness 工程之道：Skill 原理与最佳实践
 
-> 📊 Level ⭐⭐⭐ | 5.1KB
+> 📊 Level ⭐⭐⭐⭐⭐ | 9.9KB
 
 > **Background**<br>
 > 本文来自阿里云开发者公众号，作者结合真实工程化项目 trade-ab-skill，系统性讲解了 Agent Skill 的结构规范、触发机制、作用域优先级以及最佳实践。Skill 格式已被 Claude Code、Cursor、GitHub Copilot、Gemini CLI 等 40+ 主流 Agent 产品采纳。
@@ -82,6 +82,31 @@ description: 为用户提供 AB 实验的创建与修改能力，支持实验创
 ---
 
 → [原文存档](https://mp.weixin.qq.com/s/yo2f5edeNNkYtCte9P0yhQ)
+
+---
+
+## 深度分析
+
+### 渐进性披露的上下文经济学
+
+渐进性披露本质上是一套上下文经济的分层定价机制：Discovery 阶段的 name + description 是"货架成本"——常驻上下文、持续付费；Activation 阶段的完整 SKILL.md 是"进店成本"——语义命中时一次性支付；Execution 阶段的模块文件才是"消费成本"——按任务真实需求逐层加载。 其巧妙之处在于：Skill 数量增长时唯一线性膨胀的只有 description 索引，而单条成本被 1024 字符上限锁死。 这与传统 Prompt 工程"全量塞入导致注意力稀释、关键信息被淹没"的失败模式形成对比。
+
+### SKILL.md 的结构工程学：路由器而非知识仓库
+
+本文最有价值的洞见是把 SKILL.md 正文定义为"路由器"而非"知识仓库"：只保留意图路由表和全局安全红线，业务细节全部下沉到模块文件，总量控制在 500 行（约 2000-3000 token）。 这实质是对 Agent 注意力的架构约束——文件超 300 行、单 Step 规则超 100 行就是拆分信号。 配套原则是知识按使用频率分层：越常用离入口越近，trade-ab-skill 的 creator 模块细化到"参数清单仅 Step 2 读、校验规则仅 Step 3 读"。 触发层面，description 是 Skill 唯一的触发器，需同时回答 WHAT 和 WHEN、枚举口语化触发词、用第三人称描述——触发质量甚至比内容更重要。
+
+### 阿里 trade-ab-skill 的工程化护栏
+
+trade-ab-skill 把 Skill 从"文档"升级为"有护栏的工程系统"。其一是模块级工具隔离：每模块 tools.md 白名单制，创建接口仅在 creator 白名单，modifier 只能用修改接口，审批/发布接口全局禁止，直接 HTTP 等万能工具被封杀。 其二是脚本增强：确定性逻辑（MCP 预检、日志采集）封装为脚本而非让 Agent 推导，遵循自愈、JSON 输出、幂等、安全边界四原则。 其三是快照参数传递：各阶段产出写入 Snapshot、下阶段读取，配门卡校验完整性，关键参数持久化到 user-prefs.json 实现跨会话注入。 结论：生产级 Skill 的难点不在知识写作，而在触发精度、权限边界和状态管理的工程化。这些思想与 [Skill Engineering Principles](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/skill-engineering-principles.md) 印证，也符合 [Context Window Economics](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/context-window-economics.md) 的成本约束。
+
+## 实践启示
+
+1. **先写触发器，再写内容。** description 用"功能定义 + 触发场景 + 核心能力"公式，回答 WHAT 和 WHEN 并枚举口语化触发词；准备约 10 个变体做触发测试，同时验证不相关输入不误触发。
+2. **把 SKILL.md 当路由器管理。** 正文只留意图路由表和全局安全红线；引用辅助文件时写明"触发时机 + 资源位置 + 预期产出"的契约，不能只给路径。
+3. **用行数预算约束拆分。** 单文件超 300 行或单 Step 规则超 100 行即拆分；SKILL.md 控制在 500 行以内，把上下文窗口留给任务本身。
+4. **确定性逻辑一律下沉为脚本。** "LLM 做有概率出错、脚本做 100% 完成"的逻辑（格式读写、环境检测、复杂计算）封装为脚本，要求自愈、JSON 输出、幂等、限定操作边界。
+5. **跨阶段状态用快照 + 门卡管理。** 每阶段产出写入 Snapshot、下阶段读取，门卡校验完整性；关键参数持久化为偏好文件，下次自动注入。
+6. **测试别只跑 happy path。** "无 Skill vs 有 Skill"各跑 5 次对比 Token 与质量，故意输入边界值、模拟工具不可用、尝试禁止接口来暴露问题；迭代用日志埋点做观测驱动。
 
 ---
 ## 关联

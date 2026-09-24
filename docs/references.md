@@ -5,9 +5,9 @@
 ## 主要来源
 | 来源 | 文章数 |
 |---|---|
-| mp.weixin.qq.com | 1737 |
-| aws.amazon.com | 387 |
-| huggingface.co | 37 |
+| mp.weixin.qq.com | 1749 |
+| aws.amazon.com | 388 |
+| huggingface.co | 38 |
 | www.interconnects.ai | 35 |
 | www.xiaohongshu.com | 27 |
 | arxiv.org | 24 |
