@@ -1,11 +1,11 @@
 # 参考文献
-> 本书基于 **1709** 篇编撰实体，覆盖 **369** 个来源站点。
+> 本书基于 **1709** 篇编撰实体，覆盖 **372** 个来源站点。
 
 ---
 ## 主要来源
 | 来源 | 文章数 |
 |---|---|
-| mp.weixin.qq.com | 1749 |
+| mp.weixin.qq.com | 1750 |
 | aws.amazon.com | 388 |
 | huggingface.co | 38 |
 | www.interconnects.ai | 35 |
@@ -17,7 +17,7 @@
 | unknown | 15 |
 | developer.nvidia.com | 15 |
 | thehackernews.com | 13 |
-| www.anthropic.com | 12 |
+| www.anthropic.com | 13 |
 | www.cio.com | 9 |
 | blog.crewai.com | 9 |
 | deepmind.google | 9 |
@@ -37,4 +37,4 @@
 | blog.google | 5 |
 
 ---
-> 共 369 个来源，1709 篇编撰实体。
+> 共 372 个来源，1709 篇编撰实体。

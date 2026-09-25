@@ -1,6 +1,6 @@
 # Agent 长程任务断点续传：框架层 Checkpoint + 上层调度跨进程恢复
 
-> 📊 Level ⭐ | 5.3KB
+> 📊 Level ⭐⭐⭐ | 10.8KB
 
 淘天集团-直播技术团队（绍清）基于 Spring AI Alibaba（SAA 1.1.2.0）的长程任务断点续传完整实践。方案采用"框架层 Checkpoint + 上层任务调度"两层架构，**不改框架源码**（公共依赖，改源码=维护私有 fork 升级成本极高），通过扩展 InterruptableAction + Hook 注入自定义逻辑实现进程内状态保存恢复，上层调度通过 MQ 摘流 + 任务表协调跨进程恢复。
 
@@ -27,6 +27,33 @@ SAA 每节点正常执行完毕自动保存 Checkpoint（不保存 __END__ 和�
 
 ## 与主播 Agent Harness 的关系
 这是 [主播 Agent Harness 六元组](https://github.com/QianJinGuo/wiki-public/blob/main/entities/taobao-live-anchor-agent-harness-engineering-2026.md) 中"长程可中断要恢复"维度的独立深化专题：主播实体侧重 DAG PlanEngine 三层 Checkpoint（每轮/每子任务/计划变更），本文侧重 SAA 框架层 Checkpoint 深度利用 + 上层调度跨进程恢复的完整工程方法（覆盖系统重启/机器下线场景），两者互补。
+
+## 深度分析
+
+### 框架层 Checkpoint 与上层调度恢复的职责边界
+
+框架层 Checkpoint 只解决**进程内**的状态保存恢复——节点执行完毕自动保存、GraphRunnerContext 构造函数自动触发恢复，上层无需感知。一旦故障越过进程边界（应用重启、机器下线），框架层机制失效，须由上层调度接管：任务表（agent_task）记住被中断的任务，MQ 摘流阻止故障机器产生新状态。判定标准是**故障半径**：协作式中断可同步保存，框架层足够；非协作式中断进程随时消失，只能靠进程外 DB + MQ 兜底。 任务表只服务复杂长程任务与 A2A 多 Agent，简单单轮交互直接依赖框架层 Checkpoint，为所有任务建表是过度设计。
+
+### 跨进程恢复的三层中断场景覆盖
+
+**用户主动中断**与**工具执行中断**是协作式的，Hook 在节点前后检测即保存 Checkpoint，恢复完全在框架层；**系统级中断**是非协作式的——下线脚本先 HTTP 调 /check/shutdown/signal 置共享变量，让 Agent 在当前节点完成后主动中断保存，把非协作中断"软化"为协作中断；软不化的部分（已消费未执行的 MQ 消息、WORKING 任务）由新实例重新消费恢复。 "尽力协作化 + 摘流防孤儿 + MQ 重消费兜底"，覆盖人机协作、多 Agent 协同到系统重启的完整中断谱系。
+
+### 为什么长程任务必须把"可恢复"作为一等公民
+
+对蓝绿方案的本质批评是"避免中断"策略的失效：长程任务时间不可控，蓝绿等待让发布周期被任务绑架、资源成本翻倍，且非发布场景中断无法覆盖。 更深一层：长程任务上下文庞大，中断后**无法简单重试**——重试等于从头执行，多步骤产出全部作废，必须断点续传；而稳定中断是断点续传的前提，未在合适拦截点稳定中断则状态不一致，恢复时无法判断已完成与待重试的边界。 ToolRecordInterceptor 的 mock 折中是该原则的体现——多工具 for 循环中间无法保存 Checkpoint，就让未执行工具返回 mock（status=error）经 Checkpoint 持久化，恢复时已完成不重复、mock 的重新执行。
+
+### 与主流框架 checkpoint 机制的对比
+
+SAA 与 LangGraph 同属"图节点边界保存"范式：每节点正常执行完毕自动保存（__END__ 与异常场景除外），恢复时通过 threadId 关联最新记录自动还原完整执行上下文，无需额外传 ID。 本文暴露该范式的两个共性盲区：**节点内多工具循环不可恢复**——for 循环中间不落盘，toolA 完 toolB 崩则三个全重跑；**嵌套子图 ID 失配**——父图子图共用同一 CheckpointSaver 时子图 threadId 被自动加 _subgraph 后缀，中断、恢复、日志三处失配，需 Hook 把原始 threadId 记入 metadata 修复。 任何"节点边界 + threadId 关联"模型的框架在多工具与嵌套图场景都会遇到同构问题，Hook 外挂解法可直接迁移。
+
+## 实践启示
+
+1. **不改框架源码是硬约束**：改源码等于维护私有 fork，升级成本极高；定制通过扩展 InterruptableAction + Hook 注入，框架 bug（如消息顺序 #4662）优先升级版本而非长期保留 Hook。
+2. **下线流程顺序不可颠倒**：摘负载均衡流量 → offline_rpc → offline_mq（消费者从消费组移除）→ 停止应用；摘流必须在关机前完成，否则下线机器会消费新恢复任务变成孤儿。
+3. **人工介入用异常快速跳出循环**：需中断（权限/表单/对话框确认）时抛 HumanInterventionException，ObservationInterceptor 捕获后设中断标记 + SSE 通知 + 返回 mock，后续工具检测到标记直接跳过，状态经 Checkpoint 保存。
+4. **子图 threadId 一致性要主动防御**：CheckpointAgentHook.beforeAgent() 把原始 threadId 记入 metadata，统一经 ITool.getActualThreadId() 获取并加 try-catch 兜底。
+5. **恢复触发走 MQ 而非定时扫描**：恢复由外部 MQ 消息触发（读 DB 状态 → 恢复框架状态 → 从中断节点继续执行），与新实例消费路径统一，无需额外扫描协调器。
+6. **恢复策略按交互模式差异化**：人机交互用户触发（可见可控）、A2A 协同系统自动恢复、长程任务断点续传——同一套 Checkpoint 设施按场景选择触发方式。
 
 ## 相关实体
 - [主播 Agent Harness 工程（六元组 + DAG PlanEngine）](https://github.com/QianJinGuo/wiki-public/blob/main/entities/taobao-live-anchor-agent-harness-engineering-2026.md)
