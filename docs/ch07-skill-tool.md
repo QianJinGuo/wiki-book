@@ -10,9 +10,9 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 4 |
+| ⭐ 入门 | 零基础可读 | 3 |
 | ⭐⭐ 工程师 | 需编程基础 | 8 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 19 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 20 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 16 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 13 |
 
@@ -36,30 +36,30 @@ Agent 能不能"动手做事"，取决于它有什么工具。
 
 ## 本章内容
 
-### ⭐ 入门（4 篇）
+### ⭐ 入门（3 篇）
 
 - [001. 高德交易 VOC 自动排查：基于 Hermes 的多 Agent 架构实践](ch07/001-voc-hermes-agent)
-- [002. 腾讯企业微信团队 Skill 流水线：AI代码生成率94%的需求开发全流程](ch07/002-skill-ai-94)
-- [003. 重新定义Skill开发：保姆级教程&一站式开发助手发布](ch07/003-skill)
-- [004. Building and connecting a production-ready ecommerce MCP server using Amazon Bedrock AgentCore and Mistral AI Studio](ch07/004-building-and-connecting-a-production-ready-ecommerce-mcp-ser)
+- [002. 重新定义Skill开发：保姆级教程&一站式开发助手发布](ch07/002-skill)
+- [003. Building and connecting a production-ready ecommerce MCP server using Amazon Bedrock AgentCore and Mistral AI Studio](ch07/003-building-and-connecting-a-production-ready-ecommerce-mcp-ser)
 
 ### ⭐⭐ 工程师（8 篇）
 
-- [005. 电商 AI 操作系统崛起：从「工具人」到「All in One」+ 行业 KnowHow Skill 化 + 5 巨头 Headless 布局](ch07/005-ai-all-in-one-knowhow-skill-5-headless)
-- [006. Agent Loop 架构三层模型：Loop + Skill + Orchestrator](ch07/006-agent-loop-loop-skill-orchestrator)
-- [007. 你写的 Skill，及格了吗？](ch07/007-skill)
-- [008. 我用 SKILL.md 做了一个简历生成器](ch07/008-skill-md)
-- [009. Skill 版本对比五大原则：从'两个数字比大小'到工程化质量门禁](ch07/009-skill)
-- [010. 如何构建生产准备的AI代理：MCP、CLI与技能——适合合适的工作的工具](ch07/010-ai-mcp-cli)
-- [011. Introducing the MDN MCP server](ch07/011-introducing-the-mdn-mcp-server)
-- [012. 当我把AI变成一个\"算法\"：Skill工程化设计的心路历程](ch07/012-ai-skill)
+- [004. 电商 AI 操作系统崛起：从「工具人」到「All in One」+ 行业 KnowHow Skill 化 + 5 巨头 Headless 布局](ch07/004-ai-all-in-one-knowhow-skill-5-headless)
+- [005. Agent Loop 架构三层模型：Loop + Skill + Orchestrator](ch07/005-agent-loop-loop-skill-orchestrator)
+- [006. 你写的 Skill，及格了吗？](ch07/006-skill)
+- [007. 我用 SKILL.md 做了一个简历生成器](ch07/007-skill-md)
+- [008. Skill 版本对比五大原则：从'两个数字比大小'到工程化质量门禁](ch07/008-skill)
+- [009. 如何构建生产准备的AI代理：MCP、CLI与技能——适合合适的工作的工具](ch07/009-ai-mcp-cli)
+- [010. Introducing the MDN MCP server](ch07/010-introducing-the-mdn-mcp-server)
+- [011. 当我把AI变成一个\"算法\"：Skill工程化设计的心路历程](ch07/011-ai-skill)
 
-### ⭐⭐⭐ 专家（19 篇）
+### ⭐⭐⭐ 专家（20 篇）
 
-- [013. Embabel](ch07/013-embabel)
-- [014. SkillComposer: 生成式技能组合](ch07/014-skillcomposer)
-- [015. 微信读书官方skill与huashu-weread增强版](ch07/015-skill-huashu-weread)
-- [016. Securing AI Agents: AWS × Cisco AI Defense 给 MCP / A2A 加上企业级护栏](ch07/016-securing-ai-agents-aws-cisco-ai-defense-mcp-a2a)
+- [012. Embabel](ch07/012-embabel)
+- [013. SkillComposer: 生成式技能组合](ch07/013-skillcomposer)
+- [014. 微信读书官方skill与huashu-weread增强版](ch07/014-skill-huashu-weread)
+- [015. Securing AI Agents: AWS × Cisco AI Defense 给 MCP / A2A 加上企业级护栏](ch07/015-securing-ai-agents-aws-cisco-ai-defense-mcp-a2a)
+- [016. 腾讯企业微信团队 Skill 流水线：AI代码生成率94%的需求开发全流程](ch07/016-skill-ai-94)
 - [017. OpenClaw 深度架构分析：Agent 引擎、多源 Skill 系统、子 Agent steer 重定向、五层容错](ch07/017-openclaw-agent-skill-agent-steer)
 - [018. MapSatisfyBench：首个以满意度为核心目标的地图智能体评测基准](ch07/018-mapsatisfybench)
 - [019. AI-Infra-Auto-Driven-SKILLS v0.1.0：给 Codex / Claude Code 的推理框架工作流](ch07/019-ai-infra-auto-driven-skills-v0-1-0-codex-claude-code)

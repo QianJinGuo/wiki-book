@@ -24,7 +24,7 @@
 
     <div class="home-stats__item"><span class="home-stats__num">20 章 · 5 篇</span><span class="home-stats__label">全书结构</span></div>
 
-    <div class="home-stats__item"><span class="home-stats__num">4,417</span><span class="home-stats__label">一手原文</span></div>
+    <div class="home-stats__item"><span class="home-stats__num">4,420</span><span class="home-stats__label">一手原文</span></div>
 
     <div class="home-stats__item"><span class="home-stats__num">★ × 5</span><span class="home-stats__label">难度分级</span></div>
 
@@ -66,9 +66,9 @@
 
 <p class="chapter-card__desc">理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:16.60%" title="⭐ 入门 · 81 篇"></i><i class="lv2" style="width:9.02%" title="⭐⭐ 工程师 · 44 篇"></i><i class="lv3" style="width:45.49%" title="⭐⭐⭐ 专家 · 222 篇"></i><i class="lv4" style="width:19.88%" title="⭐⭐⭐⭐ 科学家 · 97 篇"></i><i class="lv5" style="width:9.02%" title="⭐⭐⭐⭐⭐ 大师 · 44 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:16.19%" title="⭐ 入门 · 79 篇"></i><i class="lv2" style="width:9.02%" title="⭐⭐ 工程师 · 44 篇"></i><i class="lv3" style="width:45.90%" title="⭐⭐⭐ 专家 · 224 篇"></i><i class="lv4" style="width:19.88%" title="⭐⭐⭐⭐ 科学家 · 97 篇"></i><i class="lv5" style="width:9.02%" title="⭐⭐⭐⭐⭐ 大师 · 44 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 81 · ⭐⭐ 44 · ⭐⭐⭐ 222 · ⭐⭐⭐⭐ 97 · ⭐⭐⭐⭐⭐ 44</div>
+<div class="chapter-card__legend">⭐ 79 · ⭐⭐ 44 · ⭐⭐⭐ 224 · ⭐⭐⭐⭐ 97 · ⭐⭐⭐⭐⭐ 44</div>
 
 <ul class="chapter-card__samples">
 
@@ -179,9 +179,9 @@
 
 <p class="chapter-card__desc">给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:12.15%" title="⭐ 入门 · 13 篇"></i><i class="lv2" style="width:14.02%" title="⭐⭐ 工程师 · 15 篇"></i><i class="lv3" style="width:26.17%" title="⭐⭐⭐ 专家 · 28 篇"></i><i class="lv4" style="width:30.84%" title="⭐⭐⭐⭐ 科学家 · 33 篇"></i><i class="lv5" style="width:16.82%" title="⭐⭐⭐⭐⭐ 大师 · 18 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:11.21%" title="⭐ 入门 · 12 篇"></i><i class="lv2" style="width:14.02%" title="⭐⭐ 工程师 · 15 篇"></i><i class="lv3" style="width:27.10%" title="⭐⭐⭐ 专家 · 29 篇"></i><i class="lv4" style="width:30.84%" title="⭐⭐⭐⭐ 科学家 · 33 篇"></i><i class="lv5" style="width:16.82%" title="⭐⭐⭐⭐⭐ 大师 · 18 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 13 · ⭐⭐ 15 · ⭐⭐⭐ 28 · ⭐⭐⭐⭐ 33 · ⭐⭐⭐⭐⭐ 18</div>
+<div class="chapter-card__legend">⭐ 12 · ⭐⭐ 15 · ⭐⭐⭐ 29 · ⭐⭐⭐⭐ 33 · ⭐⭐⭐⭐⭐ 18</div>
 
 <ul class="chapter-card__samples">
 
@@ -231,17 +231,17 @@
 
 <p class="chapter-card__desc">Agent 的手脚：Skill 系统、MCP 协议、Tool Use</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:6.67%" title="⭐ 入门 · 4 篇"></i><i class="lv2" style="width:13.33%" title="⭐⭐ 工程师 · 8 篇"></i><i class="lv3" style="width:31.67%" title="⭐⭐⭐ 专家 · 19 篇"></i><i class="lv4" style="width:26.67%" title="⭐⭐⭐⭐ 科学家 · 16 篇"></i><i class="lv5" style="width:21.67%" title="⭐⭐⭐⭐⭐ 大师 · 13 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:5.00%" title="⭐ 入门 · 3 篇"></i><i class="lv2" style="width:13.33%" title="⭐⭐ 工程师 · 8 篇"></i><i class="lv3" style="width:33.33%" title="⭐⭐⭐ 专家 · 20 篇"></i><i class="lv4" style="width:26.67%" title="⭐⭐⭐⭐ 科学家 · 16 篇"></i><i class="lv5" style="width:21.67%" title="⭐⭐⭐⭐⭐ 大师 · 13 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 4 · ⭐⭐ 8 · ⭐⭐⭐ 19 · ⭐⭐⭐⭐ 16 · ⭐⭐⭐⭐⭐ 13</div>
+<div class="chapter-card__legend">⭐ 3 · ⭐⭐ 8 · ⭐⭐⭐ 20 · ⭐⭐⭐⭐ 16 · ⭐⭐⭐⭐⭐ 13</div>
 
 <ul class="chapter-card__samples">
 
 <li><span class="stars">⭐</span><span class="sample-title">高德交易 VOC 自动排查：基于 Hermes 的多 Agent 架构实践</span></li>
 
-<li><span class="stars">⭐</span><span class="sample-title">腾讯企业微信团队 Skill 流水线：AI代码生成率94%的需求开发全流程</span></li>
-
 <li><span class="stars">⭐</span><span class="sample-title">重新定义Skill开发：保姆级教程&amp;一站式开发助手发布</span></li>
+
+<li><span class="stars">⭐</span><span class="sample-title">Building and connecting a production-ready ecommerce MCP server using Amazon Bedrock AgentCore and Mistral AI Studio</span></li>
 
 </ul>
 
@@ -617,6 +617,6 @@
 </div>
 </section>
 
-<footer class="home-map__foot">📊 全书收录 1,709 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-09-26</span></footer>
+<footer class="home-map__foot">📊 全书收录 1,709 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-09-27</span></footer>
 
 </div>
