@@ -41,35 +41,35 @@
     {
      "role": "核心原理",
      "title": "Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention",
-     "file": "ch01/247-recent-developments-in-llm-architectures-kv-sharing-mhc-a.md",
-     "url": "/ch01/247-recent-developments-in-llm-architectures-kv-sharing-mhc-a.html",
+     "file": "ch01/246-recent-developments-in-llm-architectures-kv-sharing-mhc-a.md",
+     "url": "/ch01/246-recent-developments-in-llm-architectures-kv-sharing-mhc-a.html",
      "chapter": "ch01",
      "chapterName": "AI 与 LLM 基础",
      "essence": "Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention；2026年4-5月推出的主要开源权重模型（Gemma 4、Laguna XS.2、ZAYA1-8B、DeepSeek V4）共同指向一个核心趋势：长上下文效率优化。随着推理模型和 Agent 工作流需要保留更多 token，KV-cache 大小、内存带宽和注意力计算成本成为主要瓶颈，各大厂商纷纷引入架构层面的 trick 来降低这些成本",
      "words": 4041,
-     "level": 3
+     "level": 1
     },
     {
      "role": "工程案例",
      "title": "How LLMs Actually Work: 0xkato Transformer Walkthrough",
-     "file": "ch01/244-how-llms-actually-work-0xkato-transformer-walkthrough.md",
-     "url": "/ch01/244-how-llms-actually-work-0xkato-transformer-walkthrough.html",
+     "file": "ch01/243-how-llms-actually-work-0xkato-transformer-walkthrough.md",
+     "url": "/ch01/243-how-llms-actually-work-0xkato-transformer-walkthrough.html",
      "chapter": "ch01",
      "chapterName": "AI 与 LLM 基础",
      "essence": "How LLMs Actually Work: 0xkato Transformer Walkthrough；0xkato 2026-06-01 发布的 transformer 完整 walkthrough 长文，9 节系统覆盖 LLM 内部机制，避免数学但保留工程准确性。目标读者：能读 modern LLM papers 和 model cards 的人",
      "words": 4780,
-     "level": 3
+     "level": 1
     },
     {
      "role": "延伸阅读",
      "title": "TokenSpeed: A Speed-of-Light LLM Inference Engine for AI Agents",
-     "file": "ch01/287-tokenspeed-a-speed-of-light-llm-inference-engine-for-ai-age.md",
-     "url": "/ch01/287-tokenspeed-a-speed-of-light-llm-inference-engine-for-ai-age.html",
+     "file": "ch01/286-tokenspeed-a-speed-of-light-llm-inference-engine-for-ai-age.md",
+     "url": "/ch01/286-tokenspeed-a-speed-of-light-llm-inference-engine-for-ai-age.html",
      "chapter": "ch01",
      "chapterName": "AI 与 LLM 基础",
      "essence": "TokenSpeed 是 LightSeek Foundation 开发的开源 LLM 推理引擎，专为 Agentic 工作负载（如 Claude Code、Codex、Cursor 等 Coding Agent）从第一性原理设计。其核心创新包括：编译器支持的并行建模机制、C++/Python 混合的高性能调度器、编译时 KV 缓存安全管理、可插拔分层内核系统，以及与 SMG 集成的低开销 CPU 请求入口。在 NVIDIA Blackwell 上，TokenSpeed 对标 TensorRT-LLM，在 Coding Agent 场景下 Pareto 前沿全面领先约 9-11%。；推理优化是 Agent 落地的关键瓶颈：选择 LLM 服务商或部署方案时，推理延迟应作为核心评估维度，尤其在 Coding Age。",
      "words": 4064,
-     "level": 3
+     "level": 1
     }
    ],
    "lab": {
@@ -781,13 +781,13 @@
     {
      "role": "延伸阅读",
      "title": "让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客",
-     "file": "ch09/016-kiro-claude-code-im-acp-bridge-ai-aws.md",
-     "url": "/ch09/016-kiro-claude-code-im-acp-bridge-ai-aws.html",
+     "file": "ch09/015-kiro-claude-code-im-acp-bridge-ai-aws.md",
+     "url": "/ch09/015-kiro-claude-code-im-acp-bridge-ai-aws.html",
      "chapter": "ch09",
      "chapterName": "AI 编程",
      "essence": "让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客；让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 by awschina on 17 3月 2026 in How-To Permalink Share 摘要：AI 编程助手如 Kiro CLI、Claude Code 能力日益强大，但使用场景局限于本地终端，难以满足移动办公和团队协作需求。本文介绍 ACP Bridge——一个将本地 CLI 编程助手通过 ACP 协议暴露为 HTTP 服务的桥接工具，结合 OpenClaw Gateway 和 AWS 基础设施，实现从 Discord 消息触发异步 AI 编程。",
      "words": 3193,
-     "level": 2
+     "level": 1
     }
    ],
    "lab": {
@@ -911,13 +911,13 @@
     {
      "role": "核心原理",
      "title": "Pathfinding Labs: Deploy, test, and learn from 100+ intentional security bad code",
-     "file": "ch11/064-pathfinding-labs-deploy-test-and-learn-from-100-intentio.md",
-     "url": "/ch11/064-pathfinding-labs-deploy-test-and-learn-from-100-intentio.html",
+     "file": "ch11/062-pathfinding-labs-deploy-test-and-learn-from-100-intentio.md",
+     "url": "/ch11/062-pathfinding-labs-deploy-test-and-learn-from-100-intentio.html",
      "chapter": "ch11",
      "chapterName": "云基础设施",
      "essence": "Pathfinding Labs 的核心创新在于将 Terraform 模块封装为可一键部署的攻击实验环境，这种\"验证驱动生成\"的模式解决了云安全知识共享中长期存在的一个根本矛盾：文档描述的攻击路径与实际可利用环境之间存在巨大鸿沟。在 pathfinding.cloud 诞生初期，团队为每一条 IAM 权限提升路径编写 Terraform 模块来验证其可行性，这一被动验证步骤最终演变为拥有 100+ 独立实验的完整平台，说明真正可复现的安全知识必须经过工程化验证才能交付信任。；项目名称直接引用 John Lambert 的经典格言，揭示了云安全攻防不对等的技术根源：防御者以资产和身份列表组织视图，而真实攻击者构建的是一张权限关系图。当一个攻击者从初始 foothold 经过多跳角色链到达目标数据时，他所穿越的每。",
      "words": 6090,
-     "level": 3
+     "level": 1
     },
     {
      "role": "工程案例",
@@ -1079,17 +1079,6 @@
     },
     {
      "role": "工程案例",
-     "title": "MosaicLeaks: Can your research agent keep a secret?",
-     "file": "ch04/093-mosaicleaks-can-your-research-agent-keep-a-secret.md",
-     "url": "/ch04/093-mosaicleaks-can-your-research-agent-keep-a-secret.html",
-     "chapter": "ch04",
-     "chapterName": "Agent 核心架构",
-     "essence": "把 query log 当作与私有文档同级的敏感资产治理。 mosaic 泄漏的载体是外发查询的累积日志，不是某条回复。多步检索/研究 Agent 应默认记录完整 query log，并纳入访问控制、留存期限与审计范围，而不是只盯着最终答案的脱敏。；不要用免责式 prompt 兜底。 \"不要泄漏\"这类 Plan prompt 收益不稳定且带能力代价（泄漏 34.0%→25.5% 换来成功率 48.7%→44.5%）。若必须用，只能算纵深防御的一层，不能当作合规依据",
-     "words": 5799,
-     "level": 3
-    },
-    {
-     "role": "延伸阅读",
      "title": "五款浏览器自动化工具横向对比：browser-use / Playwright / chrome-devtools-mcp / agent-browser / BrowserAct",
      "file": "ch04/290-browser-use-playwright-chrome-devtools-mcp-agent-bro.md",
      "url": "/ch04/290-browser-use-playwright-chrome-devtools-mcp-agent-bro.html",
@@ -1097,6 +1086,17 @@
      "chapterName": "Agent 核心架构",
      "essence": "五款浏览器自动化工具横向对比：browser-use / Playwright / chrome-devtools-mcp / agent-browser / BrowserAct；| 维度 | chrome-devtools-mcp | Playwright | agent-browser | browser-use | BrowserAct |。",
      "words": 6211,
+     "level": 3
+    },
+    {
+     "role": "延伸阅读",
+     "title": "Browser Harness — 自愈型浏览器 Agent 框架",
+     "file": "ch04/338-browser-harness-agent.md",
+     "url": "/ch04/338-browser-harness-agent.html",
+     "chapter": "ch04",
+     "chapterName": "Agent 核心架构",
+     "essence": "Browser Harness（browser-use/browser-harness，~8.9K Stars）是一个基于 Chrome DevTools Protocol (CDP) 直连的自愈型浏览器 Agent 框架，核心理念是去框架化：薄 CDP 桥接 + mid-task 自愈机制 + domain-skills 自动沉淀。；与 AgentBrowser、Playwright/Selenium 等方案不同，Browser Harness 不构建厚重抽象层，而是让 Agent 直接通过 CDP WebSocket 与浏览器原生状态交互",
+     "words": 3937,
      "level": 3
     }
    ],
