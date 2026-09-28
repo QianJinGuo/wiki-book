@@ -10,9 +10,9 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 4 |
+| ⭐ 入门 | 零基础可读 | 3 |
 | ⭐⭐ 工程师 | 需编程基础 | 2 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 14 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 15 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 12 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 10 |
 
@@ -43,24 +43,24 @@ CPU 缓存的类比特别有启发性：L1（当前上下文）→ L2（会话�
 - [S03. Claude Code vs OpenClaw：两种记忆哲学](ch06/S03-cc-vs-openclaw-memory)
 - [S04. 上下文装不下时，怎么办？](ch06/S04-context-overflow-decision)
 
-### ⭐ 入门（4 篇）
+### ⭐ 入门（3 篇）
 
 - [001. 从 Claude Code 记忆系统看四层 Agent 记忆方案，一个比一个夯](ch06/001-claude-code-agent)
-- [002. AML（Agent Memory Leaderboard）：机制级 Agent 记忆评测榜单](ch06/002-aml-agent-memory-leaderboard-agent)
-- [003. Hermes Agent 记忆系统 vs OpenClaw 记忆观](ch06/003-hermes-agent-vs-openclaw)
-- [004. Claude Code Agent Memory Systems — L0~L3 四层记忆方案](ch06/004-claude-code-agent-memory-systems-l0-l3)
+- [002. Hermes Agent 记忆系统 vs OpenClaw 记忆观](ch06/002-hermes-agent-vs-openclaw)
+- [003. Claude Code Agent Memory Systems — L0~L3 四层记忆方案](ch06/003-claude-code-agent-memory-systems-l0-l3)
 
 ### ⭐⭐ 工程师（2 篇）
 
-- [005. ChatGPT默认模型大升级，GPT-5.5 Instant正式上线：新增记忆来源功能](ch06/005-chatgpt-gpt-5-5-instant)
-- [006. OpenChronicle：把AI记忆变成可复用的基础设施](ch06/006-openchronicle-ai)
+- [004. ChatGPT默认模型大升级，GPT-5.5 Instant正式上线：新增记忆来源功能](ch06/004-chatgpt-gpt-5-5-instant)
+- [005. OpenChronicle：把AI记忆变成可复用的基础设施](ch06/005-openchronicle-ai)
 
-### ⭐⭐⭐ 专家（14 篇）
+### ⭐⭐⭐ 专家（15 篇）
 
-- [007. Hermes Agent 爱马仕的三级 memory，到底在记什么？](ch06/007-hermes-agent-memory)
-- [008. AI 的形状：Jagged Frontier·Bottleneck·Reverse Salient（Mollick）](ch06/008-ai-jagged-frontier-bottleneck-reverse-salient-mollick)
-- [009. Google Open Knowledge Format (OKF) v0.1：AI 知识库通用格式标准 — 让 Markdown 知识库互通](ch06/009-google-open-knowledge-format-okf-v0-1-ai-markdown)
-- [010. Agent 记忆注入实战：5 维框架（选什么/放哪里/怎么放/放多少/何时放）+ 4 前沿论文（MemGuide/STITCH/ACE/Lost in the Middle）](ch06/010-agent-5-4-memguide-stitch-ace-lost-in-the)
+- [006. Hermes Agent 爱马仕的三级 memory，到底在记什么？](ch06/006-hermes-agent-memory)
+- [007. AI 的形状：Jagged Frontier·Bottleneck·Reverse Salient（Mollick）](ch06/007-ai-jagged-frontier-bottleneck-reverse-salient-mollick)
+- [008. Google Open Knowledge Format (OKF) v0.1：AI 知识库通用格式标准 — 让 Markdown 知识库互通](ch06/008-google-open-knowledge-format-okf-v0-1-ai-markdown)
+- [009. Agent 记忆注入实战：5 维框架（选什么/放哪里/怎么放/放多少/何时放）+ 4 前沿论文（MemGuide/STITCH/ACE/Lost in the Middle）](ch06/009-agent-5-4-memguide-stitch-ace-lost-in-the)
+- [010. AML（Agent Memory Leaderboard）：机制级 Agent 记忆评测榜单](ch06/010-aml-agent-memory-leaderboard-agent)
 - [011. 读完 Claude Code 和 OpenClaw 的 memory 源码，我对 Agent 记忆需要向量数据库产生怀疑](ch06/011-claude-code-openclaw-memory-agent)
 - [012. CrewAI Cognitive Memory: 5 认知操作的工程化设计](ch06/012-crewai-cognitive-memory-5)
 - [013. Powering scientific discovery](ch06/013-powering-scientific-discovery)

@@ -10,8 +10,8 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 79 |
-| ⭐⭐ 工程师 | 需编程基础 | 43 |
+| ⭐ 入门 | 零基础可读 | 78 |
+| ⭐⭐ 工程师 | 需编程基础 | 44 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 224 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 98 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 44 |
@@ -38,7 +38,7 @@
 
 ## 本章内容
 
-### ⭐ 入门（79 篇）
+### ⭐ 入门（78 篇）
 
 - [001. **一、关于 Kollab**](ch01/001-kollab)
 - [002. DeepSeek-V4.1-Flash：把 KV Cache 压缩到极限的百万上下文 MoE（技术报告全系统解读）](ch01/002-deepseek-v4-1-flash-kv-cache-moe)
@@ -86,44 +86,44 @@
 - [044. Intelligence Per Dollar](ch01/044-intelligence-per-dollar)
 - [045. DiffusionGemma：扩散式文本生成模型（Google 26B MoE，4× 推理加速）](ch01/045-diffusiongemma-google-26b-moe-4)
 - [046. White House cyber official: identity security matters more](ch01/046-white-house-cyber-official-identity-security-matters-more)
-- [047. Moondream Photon: Pipelined Decoding for VLM Inference Optimization](ch01/047-moondream-photon-pipelined-decoding-for-vlm-inference-optim)
-- [048. olmo-eval: An evaluation workbench for the model development](ch01/048-olmo-eval-an-evaluation-workbench-for-the-model-development)
-- [049. LLM RL中的熵 part 1: 熵的调控](ch01/049-llm-rl-part-1)
+- [047. olmo-eval: An evaluation workbench for the model development](ch01/047-olmo-eval-an-evaluation-workbench-for-the-model-development)
+- [048. LLM RL中的熵 part 1: 熵的调控](ch01/048-llm-rl-part-1)
+- [049. OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](ch01/049-openclaw-3-2w)
 - [050. OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](ch01/050-openclaw-3-2w)
-- [051. OpenClaw 完全指南：这可能是全网最新最全的系统化教程了！（3.2W字，建议收藏）](ch01/051-openclaw-3-2w)
-- [052. Announcing Claude Managed Agents on Cloudflare](ch01/052-announcing-claude-managed-agents-on-cloudflare)
-- [053. Scale Robot Reinforcement Learning with NVIDIA Isaac Lab on Amazon SageMaker AI](ch01/053-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on)
-- [054. 两万字详解Claude Code源码核心机制](ch01/054-claude-code)
-- [055. Ethan He：Cosmos Grok Imagine 潜空间视频 Agent](ch01/055-ethan-he-cosmos-grok-imagine-agent)
-- [056. Anthropic 博客：Claude Code 大型代码库最佳实践](ch01/056-anthropic-claude-code)
-- [057. Claude Managed Agents 开发者指南](ch01/057-claude-managed-agents)
-- [058. From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](ch01/058-from-siloed-data-to-unified-insights-cross-account-athena-a)
-- [059. Gemini 3.5 Flash: more expensive, but Google plan to use it for everything](ch01/059-gemini-3-5-flash-more-expensive-but-google-plan-to-use-it)
-- [060. Dumb Ways for an Open Source Project to Die](ch01/060-dumb-ways-for-an-open-source-project-to-die)
-- [061. The Unbearable Cheapness of Open Weight Models – James O'Claire](ch01/061-the-unbearable-cheapness-of-open-weight-models-james-o-cla)
-- [062. 你不知道的 Agent：原理、架构与工程实践](ch01/062-agent)
-- [063. 打造可靠的 AI 编程环境：Claude Code Hooks 完整开发者指南](ch01/063-ai-claude-code-hooks)
-- [064. AI Skill 测评指标体系](ch01/064-ai-skill)
-- [065. From Doer To Director: The AI Mindset Shift](ch01/065-from-doer-to-director-the-ai-mindset-shift)
-- [066. LLM Wiki / Obsidian Wiki / GBrain 自组织与自进化](ch01/066-llm-wiki-obsidian-wiki-gbrain)
-- [067. SkillOS: Learning Skill Curation for Self-Evolving Agents](ch01/067-skillos-learning-skill-curation-for-self-evolving-agents)
-- [068. Agent orchestration](ch01/068-agent-orchestration)
-- [069. Opus 4.7 发布：相比 4.6 核心变化与 Claude Code 搭配最佳实践](ch01/069-opus-4-7-4-6-claude-code)
-- [070. OpenAI buys AI consultancy to sell enterprises on its models](ch01/070-openai-buys-ai-consultancy-to-sell-enterprises-on-its-models)
-- [071. Streaming benchmark and recommendation results to MLflow with Amazon SageMaker AI](ch01/071-streaming-benchmark-and-recommendation-results-to-mlflow-wit)
-- [072. Apple Foundation Models](ch01/072-apple-foundation-models)
-- [073. How Dropbox uses MCP and Dash to close the design-to-code security gap](ch01/073-how-dropbox-uses-mcp-and-dash-to-close-the-design-to-code-se)
-- [074. A backdoor in a LinkedIn job offer](ch01/074-a-backdoor-in-a-linkedin-job-offer)
-- [075. What Job Interviews Taught Me About Kubernetes](ch01/075-what-job-interviews-taught-me-about-kubernetes)
-- [076. Agentic Code Review](ch01/076-agentic-code-review)
-- [077. Why Use App-Level Auth When Every Database Has Auth? (Splunk CVE-2026-20253)](ch01/077-why-use-app-level-auth-when-every-database-has-auth-splunk)
-- [078. Anthropic's Zero Trust for AI Agents Sets the Right Test. The Bearer Token Fails It](ch01/078-anthropic-s-zero-trust-for-ai-agents-sets-the-right-test-th)
-- [079. LFM2.5-Encoders: Fast Long-Context Inference on CPU](ch01/079-lfm2-5-encoders-fast-long-context-inference-on-cpu)
+- [051. Announcing Claude Managed Agents on Cloudflare](ch01/051-announcing-claude-managed-agents-on-cloudflare)
+- [052. Scale Robot Reinforcement Learning with NVIDIA Isaac Lab on Amazon SageMaker AI](ch01/052-scale-robot-reinforcement-learning-with-nvidia-isaac-lab-on)
+- [053. 两万字详解Claude Code源码核心机制](ch01/053-claude-code)
+- [054. Ethan He：Cosmos Grok Imagine 潜空间视频 Agent](ch01/054-ethan-he-cosmos-grok-imagine-agent)
+- [055. Anthropic 博客：Claude Code 大型代码库最佳实践](ch01/055-anthropic-claude-code)
+- [056. Claude Managed Agents 开发者指南](ch01/056-claude-managed-agents)
+- [057. From siloed data to unified insights: Cross-account Athena Access for Amazon Quick](ch01/057-from-siloed-data-to-unified-insights-cross-account-athena-a)
+- [058. Gemini 3.5 Flash: more expensive, but Google plan to use it for everything](ch01/058-gemini-3-5-flash-more-expensive-but-google-plan-to-use-it)
+- [059. Dumb Ways for an Open Source Project to Die](ch01/059-dumb-ways-for-an-open-source-project-to-die)
+- [060. The Unbearable Cheapness of Open Weight Models – James O'Claire](ch01/060-the-unbearable-cheapness-of-open-weight-models-james-o-cla)
+- [061. 你不知道的 Agent：原理、架构与工程实践](ch01/061-agent)
+- [062. 打造可靠的 AI 编程环境：Claude Code Hooks 完整开发者指南](ch01/062-ai-claude-code-hooks)
+- [063. AI Skill 测评指标体系](ch01/063-ai-skill)
+- [064. From Doer To Director: The AI Mindset Shift](ch01/064-from-doer-to-director-the-ai-mindset-shift)
+- [065. LLM Wiki / Obsidian Wiki / GBrain 自组织与自进化](ch01/065-llm-wiki-obsidian-wiki-gbrain)
+- [066. SkillOS: Learning Skill Curation for Self-Evolving Agents](ch01/066-skillos-learning-skill-curation-for-self-evolving-agents)
+- [067. Agent orchestration](ch01/067-agent-orchestration)
+- [068. Opus 4.7 发布：相比 4.6 核心变化与 Claude Code 搭配最佳实践](ch01/068-opus-4-7-4-6-claude-code)
+- [069. OpenAI buys AI consultancy to sell enterprises on its models](ch01/069-openai-buys-ai-consultancy-to-sell-enterprises-on-its-models)
+- [070. Streaming benchmark and recommendation results to MLflow with Amazon SageMaker AI](ch01/070-streaming-benchmark-and-recommendation-results-to-mlflow-wit)
+- [071. Apple Foundation Models](ch01/071-apple-foundation-models)
+- [072. How Dropbox uses MCP and Dash to close the design-to-code security gap](ch01/072-how-dropbox-uses-mcp-and-dash-to-close-the-design-to-code-se)
+- [073. A backdoor in a LinkedIn job offer](ch01/073-a-backdoor-in-a-linkedin-job-offer)
+- [074. What Job Interviews Taught Me About Kubernetes](ch01/074-what-job-interviews-taught-me-about-kubernetes)
+- [075. Agentic Code Review](ch01/075-agentic-code-review)
+- [076. Why Use App-Level Auth When Every Database Has Auth? (Splunk CVE-2026-20253)](ch01/076-why-use-app-level-auth-when-every-database-has-auth-splunk)
+- [077. Anthropic's Zero Trust for AI Agents Sets the Right Test. The Bearer Token Fails It](ch01/077-anthropic-s-zero-trust-for-ai-agents-sets-the-right-test-th)
+- [078. LFM2.5-Encoders: Fast Long-Context Inference on CPU](ch01/078-lfm2-5-encoders-fast-long-context-inference-on-cpu)
 
-### ⭐⭐ 工程师（43 篇）
+### ⭐⭐ 工程师（44 篇）
 
-- [080. 滴滴国际化客服质检智能化之路：基于 Amazon Bedrock 的多语种多业务线质检实践](ch01/080-amazon-bedrock)
-- [081. Evaluating Netflix Show Synopses with LLM-as-a-Judge](ch01/081-evaluating-netflix-show-synopses-with-llm-as-a-judge)
+- [079. 滴滴国际化客服质检智能化之路：基于 Amazon Bedrock 的多语种多业务线质检实践](ch01/079-amazon-bedrock)
+- [080. Evaluating Netflix Show Synopses with LLM-as-a-Judge](ch01/080-evaluating-netflix-show-synopses-with-llm-as-a-judge)
+- [081. Moondream Photon: Pipelined Decoding for VLM Inference Optimization](ch01/081-moondream-photon-pipelined-decoding-for-vlm-inference-optim)
 - [082. 全网最全的Claude Fable 5 省钱攻略都在这了](ch01/082-claude-fable-5)
 - [083. Inference cost at scale with napkin math](ch01/083-inference-cost-at-scale-with-napkin-math)
 - [084. AlphaEvolve: A coding agent for scientific and algorithmic discovery](ch01/084-alphaevolve-a-coding-agent-for-scientific-and-algorithmic-d)

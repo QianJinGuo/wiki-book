@@ -1,6 +1,6 @@
 # Harness Engineering: 让 Coding Agent 可靠完成长程任务
 
-> 📊 Level ⭐⭐⭐ | 11.4KB
+> 📊 Level ⭐⭐⭐ | 11.8KB
 
 > 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.75**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/harness-engineering-让-coding-agent-可靠完成长程任务-v2.md`，一手来源仍见下方 sources。

@@ -51,8 +51,8 @@
 
 - [006. 从多智能体编排到AI自主决策：资损防控体系的架构演进](ch08/006-ai)
 - [007. Scalable voice agent design with Amazon Nova Sonic: multi-agent, tools, and session segmentation](ch08/007-scalable-voice-agent-design-with-amazon-nova-sonic-multi-ag)
-- [008. Thousand Token Wood v2: Multi-Model Heterogeneous Agent Council](ch08/008-thousand-token-wood-v2-multi-model-heterogeneous-agent-coun)
-- [009. OpenClaw 多智能体团队搭建实战经验](ch08/009-openclaw)
+- [008. OpenClaw 多智能体团队搭建实战经验](ch08/008-openclaw)
+- [009. Thousand Token Wood v2: Multi-Model Heterogeneous Agent Council](ch08/009-thousand-token-wood-v2-multi-model-heterogeneous-agent-coun)
 - [010. 多智能体上下文隔离机制](ch08/010-page-010)
 - [011. 对抗式验证：多 Agent 交叉校验设计哲学](ch08/011-agent)
 - [012. Cost of Consensus](ch08/012-cost-of-consensus)

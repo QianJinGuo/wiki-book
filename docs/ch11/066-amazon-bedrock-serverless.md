@@ -1,6 +1,6 @@
 # Amazon Bedrock 模型推理 Serverless 架构案例
 
-> 📊 Level ⭐⭐⭐ | 9.8KB
+> 📊 Level ⭐⭐⭐ | 10.3KB
 
 > 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.8**，已按导航页（MOC）重建；
 > 原文备份见 `_archive/hub-rewrite-2026-09-07/amazon-bedrock-model-inference-serverless-architecture-case-study.md`，一手来源仍见下方 sources。

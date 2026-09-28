@@ -20,11 +20,11 @@
 
   <div class="home-stats">
 
-    <div class="home-stats__item"><span class="home-stats__num">1,709</span><span class="home-stats__label">编撰条目</span></div>
+    <div class="home-stats__item"><span class="home-stats__num">1,710</span><span class="home-stats__label">编撰条目</span></div>
 
     <div class="home-stats__item"><span class="home-stats__num">20 章 · 5 篇</span><span class="home-stats__label">全书结构</span></div>
 
-    <div class="home-stats__item"><span class="home-stats__num">4,424</span><span class="home-stats__label">一手原文</span></div>
+    <div class="home-stats__item"><span class="home-stats__num">4,431</span><span class="home-stats__label">一手原文</span></div>
 
     <div class="home-stats__item"><span class="home-stats__num">★ × 5</span><span class="home-stats__label">难度分级</span></div>
 
@@ -42,7 +42,7 @@
 
 <a class="home-part" href="#part-1"><span class="home-part__no">第一篇</span><span class="home-part__name">入门篇</span><span class="home-part__pos">从零理解 AI</span><span class="home-part__count">575 篇 · 3 章</span></a>
 
-<a class="home-part" href="#part-2"><span class="home-part__no">第二篇</span><span class="home-part__name">工程师篇</span><span class="home-part__pos">构建 AI 应用</span><span class="home-part__count">764 篇 · 7 章</span></a>
+<a class="home-part" href="#part-2"><span class="home-part__no">第二篇</span><span class="home-part__name">工程师篇</span><span class="home-part__pos">构建 AI 应用</span><span class="home-part__count">765 篇 · 7 章</span></a>
 
 <a class="home-part" href="#part-3"><span class="home-part__no">第三篇</span><span class="home-part__name">专家篇</span><span class="home-part__pos">深入系统架构</span><span class="home-part__count">279 篇 · 4 章</span></a>
 
@@ -66,9 +66,9 @@
 
 <p class="chapter-card__desc">理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:16.19%" title="⭐ 入门 · 79 篇"></i><i class="lv2" style="width:8.81%" title="⭐⭐ 工程师 · 43 篇"></i><i class="lv3" style="width:45.90%" title="⭐⭐⭐ 专家 · 224 篇"></i><i class="lv4" style="width:20.08%" title="⭐⭐⭐⭐ 科学家 · 98 篇"></i><i class="lv5" style="width:9.02%" title="⭐⭐⭐⭐⭐ 大师 · 44 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:15.98%" title="⭐ 入门 · 78 篇"></i><i class="lv2" style="width:9.02%" title="⭐⭐ 工程师 · 44 篇"></i><i class="lv3" style="width:45.90%" title="⭐⭐⭐ 专家 · 224 篇"></i><i class="lv4" style="width:20.08%" title="⭐⭐⭐⭐ 科学家 · 98 篇"></i><i class="lv5" style="width:9.02%" title="⭐⭐⭐⭐⭐ 大师 · 44 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 79 · ⭐⭐ 43 · ⭐⭐⭐ 224 · ⭐⭐⭐⭐ 98 · ⭐⭐⭐⭐⭐ 44</div>
+<div class="chapter-card__legend">⭐ 78 · ⭐⭐ 44 · ⭐⭐⭐ 224 · ⭐⭐⭐⭐ 98 · ⭐⭐⭐⭐⭐ 44</div>
 
 <ul class="chapter-card__samples">
 
@@ -147,15 +147,15 @@
 
 <article class="chapter-card">
 
-<div class="chapter-card__head"><span class="chapter-card__no">Ch04</span><span class="chapter-card__count">399 篇</span></div>
+<div class="chapter-card__head"><span class="chapter-card__no">Ch04</span><span class="chapter-card__count">400 篇</span></div>
 
 <h3 class="chapter-card__title"><a href="ch04-agent-core.html">Agent 核心架构</a></h3>
 
 <p class="chapter-card__desc">什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:6.27%" title="⭐ 入门 · 25 篇"></i><i class="lv2" style="width:9.77%" title="⭐⭐ 工程师 · 39 篇"></i><i class="lv3" style="width:39.35%" title="⭐⭐⭐ 专家 · 157 篇"></i><i class="lv4" style="width:30.83%" title="⭐⭐⭐⭐ 科学家 · 123 篇"></i><i class="lv5" style="width:13.78%" title="⭐⭐⭐⭐⭐ 大师 · 55 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:6.25%" title="⭐ 入门 · 25 篇"></i><i class="lv2" style="width:9.75%" title="⭐⭐ 工程师 · 39 篇"></i><i class="lv3" style="width:39.50%" title="⭐⭐⭐ 专家 · 158 篇"></i><i class="lv4" style="width:30.75%" title="⭐⭐⭐⭐ 科学家 · 123 篇"></i><i class="lv5" style="width:13.75%" title="⭐⭐⭐⭐⭐ 大师 · 55 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 25 · ⭐⭐ 39 · ⭐⭐⭐ 157 · ⭐⭐⭐⭐ 123 · ⭐⭐⭐⭐⭐ 55</div>
+<div class="chapter-card__legend">⭐ 25 · ⭐⭐ 39 · ⭐⭐⭐ 158 · ⭐⭐⭐⭐ 123 · ⭐⭐⭐⭐⭐ 55</div>
 
 <ul class="chapter-card__samples">
 
@@ -167,7 +167,7 @@
 
 </ul>
 
-<a class="chapter-card__more" href="ch04-agent-core.html">进入章节 · 共 399 篇<span class="arrow" aria-hidden="true"> →</span></a>
+<a class="chapter-card__more" href="ch04-agent-core.html">进入章节 · 共 400 篇<span class="arrow" aria-hidden="true"> →</span></a>
 
 </article>
 
@@ -205,17 +205,17 @@
 
 <p class="chapter-card__desc">Agent 的大脑：短期/长期/工作记忆的分层架构</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:9.52%" title="⭐ 入门 · 4 篇"></i><i class="lv2" style="width:4.76%" title="⭐⭐ 工程师 · 2 篇"></i><i class="lv3" style="width:33.33%" title="⭐⭐⭐ 专家 · 14 篇"></i><i class="lv4" style="width:28.57%" title="⭐⭐⭐⭐ 科学家 · 12 篇"></i><i class="lv5" style="width:23.81%" title="⭐⭐⭐⭐⭐ 大师 · 10 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:7.14%" title="⭐ 入门 · 3 篇"></i><i class="lv2" style="width:4.76%" title="⭐⭐ 工程师 · 2 篇"></i><i class="lv3" style="width:35.71%" title="⭐⭐⭐ 专家 · 15 篇"></i><i class="lv4" style="width:28.57%" title="⭐⭐⭐⭐ 科学家 · 12 篇"></i><i class="lv5" style="width:23.81%" title="⭐⭐⭐⭐⭐ 大师 · 10 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 4 · ⭐⭐ 2 · ⭐⭐⭐ 14 · ⭐⭐⭐⭐ 12 · ⭐⭐⭐⭐⭐ 10</div>
+<div class="chapter-card__legend">⭐ 3 · ⭐⭐ 2 · ⭐⭐⭐ 15 · ⭐⭐⭐⭐ 12 · ⭐⭐⭐⭐⭐ 10</div>
 
 <ul class="chapter-card__samples">
 
 <li><span class="stars">⭐</span><span class="sample-title">从 Claude Code 记忆系统看四层 Agent 记忆方案，一个比一个夯</span></li>
 
-<li><span class="stars">⭐</span><span class="sample-title">AML（Agent Memory Leaderboard）：机制级 Agent 记忆评测榜单</span></li>
-
 <li><span class="stars">⭐</span><span class="sample-title">Hermes Agent 记忆系统 vs OpenClaw 记忆观</span></li>
+
+<li><span class="stars">⭐</span><span class="sample-title">Claude Code Agent Memory Systems — L0~L3 四层记忆方案</span></li>
 
 </ul>
 
@@ -617,6 +617,6 @@
 </div>
 </section>
 
-<footer class="home-map__foot">📊 全书收录 1,709 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-09-28</span></footer>
+<footer class="home-map__foot">📊 全书收录 1,710 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-09-29</span></footer>
 
 </div>
