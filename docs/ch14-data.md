@@ -11,8 +11,8 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 3 |
-| ⭐⭐ 工程师 | 需编程基础 | 2 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 16 |
+| ⭐⭐ 工程师 | 需编程基础 | 1 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 17 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 4 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 1 |
 
@@ -42,18 +42,18 @@
 - [002. Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions](ch14/002-amazon-quick-accelerating-the-path-from-enterprise-data-to)
 - [003. nOps FinOps Agent 架构：语义层驱动的数据分析 Agent 设计](ch14/003-nops-finops-agent-agent)
 
-### ⭐⭐ 工程师（2 篇）
+### ⭐⭐ 工程师（1 篇）
 
 - [004. 构建 AI 时代的知识底座：直播数据 LLM Wiki 实践](ch14/004-ai-llm-wiki)
-- [005. GitHub Multilingual Repositories Dataset — 4000 万仓库多语言元数据](ch14/005-github-multilingual-repositories-dataset-4000)
 
-### ⭐⭐⭐ 专家（16 篇）
+### ⭐⭐⭐ 专家（17 篇）
 
-- [006. ai 驱动的大数据工程 从平台驱动到 aidlc 的范式迁移](ch14/006-ai-aidlc)
-- [007. Kimi K2.6背后的Agent Database：Agent-native 时代的数据Infra竞争，跟过去30年有何不同](ch14/007-kimi-k2-6-agent-database-agent-native-infra-30)
-- [008. Databricks Storage Ecosystem & OpenSharing：企业数据治理从 Migrate Everything 到 Govern Everything 的范式转变](ch14/008-databricks-storage-ecosystem-opensharing-migrate-everyth)
-- [009. Can We Agree on a Storage/Workload Architecture Taxonomy? — Jack Vanlightly](ch14/009-can-we-agree-on-a-storage-workload-architecture-taxonomy)
-- [010. ClickHouse Ingestion at Scale: An Open-Source Zepto Engineering Story](ch14/010-clickhouse-ingestion-at-scale-an-open-source-zepto-engineer)
+- [005. ai 驱动的大数据工程 从平台驱动到 aidlc 的范式迁移](ch14/005-ai-aidlc)
+- [006. Kimi K2.6背后的Agent Database：Agent-native 时代的数据Infra竞争，跟过去30年有何不同](ch14/006-kimi-k2-6-agent-database-agent-native-infra-30)
+- [007. Databricks Storage Ecosystem & OpenSharing：企业数据治理从 Migrate Everything 到 Govern Everything 的范式转变](ch14/007-databricks-storage-ecosystem-opensharing-migrate-everyth)
+- [008. Can We Agree on a Storage/Workload Architecture Taxonomy? — Jack Vanlightly](ch14/008-can-we-agree-on-a-storage-workload-architecture-taxonomy)
+- [009. ClickHouse Ingestion at Scale: An Open-Source Zepto Engineering Story](ch14/009-clickhouse-ingestion-at-scale-an-open-source-zepto-engineer)
+- [010. GitHub Multilingual Repositories Dataset — 4000 万仓库多语言元数据](ch14/010-github-multilingual-repositories-dataset-4000)
 - [011. Write-Ahead Intent Log: a Foundation for Efficient CDC at Scale](ch14/011-write-ahead-intent-log-a-foundation-for-efficient-cdc-at-sc)
 - [012. The Data Operating System for the Foundation Model Era — Data Juicer](ch14/012-the-data-operating-system-for-the-foundation-model-era-dat)
 - [013. Amazon Quick integration with time-series databases for market intelligence using MCP](ch14/013-amazon-quick-integration-with-time-series-databases-for-mark)

@@ -10,10 +10,10 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 5 |
-| ⭐⭐ 工程师 | 需编程基础 | 3 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 10 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 5 |
+| ⭐ 入门 | 零基础可读 | 4 |
+| ⭐⭐ 工程师 | 需编程基础 | 2 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 11 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 6 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 4 |
 
 ---
@@ -36,38 +36,38 @@
 
 ## 本章内容
 
-### ⭐ 入门（5 篇）
+### ⭐ 入门（4 篇）
 
 - [001. NetCanvas：用「可交互视觉拓扑」给运维 Agent 造一张外部工作记忆](ch02/001-netcanvas-agent)
 - [002. Hermes Agent 自进化机制源码解析](ch02/002-hermes-agent)
 - [003. Claude Code Prompt 与上下文 Harness 设计](ch02/003-claude-code-prompt-harness)
-- [004. Agent Skill 编写指南](ch02/004-agent-skill)
-- [005. Enrich your datasets with business context](ch02/005-enrich-your-datasets-with-business-context)
+- [004. Enrich your datasets with business context](ch02/004-enrich-your-datasets-with-business-context)
 
-### ⭐⭐ 工程师（3 篇）
+### ⭐⭐ 工程师（2 篇）
 
-- [006. AINMM：存量生产级工程向 AI Native 演进的五级成熟度模型](ch02/006-ainmm-ai-native)
-- [007. 新程Alpha认知模型：4B参数端侧部署，群体智能以小搏大比肩GPT-5.4](ch02/007-alpha-4b-gpt-5-4)
-- [008. AI 导购在 vivo 官网的落地实践](ch02/008-ai-vivo)
+- [005. 新程Alpha认知模型：4B参数端侧部署，群体智能以小搏大比肩GPT-5.4](ch02/005-alpha-4b-gpt-5-4)
+- [006. AI 导购在 vivo 官网的落地实践](ch02/006-ai-vivo)
 
-### ⭐⭐⭐ 专家（10 篇）
+### ⭐⭐⭐ 专家（11 篇）
 
-- [009. Using Claude](ch02/009-using-claude)
-- [010. Development environments for your cloud agents](ch02/010-development-environments-for-your-cloud-agents)
-- [011. Claude Fable 5 提示词泄漏 — 1585 行 120K 字符的产品运行时控制平面与安全工程启示](ch02/011-claude-fable-5-1585-120k)
-- [012. AE 到可运行代码：大淘宝 AI 动画全链路方案（实践篇）](ch02/012-ae-ai)
-- [013. Superpowers 6.0 跑了 25 个实验才发现：prompt 里写的每一条\"不要\"，可能都在帮倒忙](ch02/013-superpowers-6-0-25-prompt)
-- [014. Skills 重新定义 Agent 喂知识：从'提前给'到'按需取'的范式反转](ch02/014-skills-agent)
-- [015. 深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](ch02/015-openclaw-prompt-context-harness)
-- [016. Prompt Context Harness 三次演进](ch02/016-prompt-context-harness)
-- [017. System Prompt vs Post-Training：行为约束该写还是该训？](ch02/017-system-prompt-vs-post-training)
-- [018. 深度解析 Hermes Agent 如何实现自进化及其 Prompt / Context / Harness 的设计实践](ch02/018-hermes-agent-prompt-context-harness)
+- [007. Using Claude](ch02/007-using-claude)
+- [008. Development environments for your cloud agents](ch02/008-development-environments-for-your-cloud-agents)
+- [009. Claude Fable 5 提示词泄漏 — 1585 行 120K 字符的产品运行时控制平面与安全工程启示](ch02/009-claude-fable-5-1585-120k)
+- [010. AE 到可运行代码：大淘宝 AI 动画全链路方案（实践篇）](ch02/010-ae-ai)
+- [011. Superpowers 6.0 跑了 25 个实验才发现：prompt 里写的每一条\"不要\"，可能都在帮倒忙](ch02/011-superpowers-6-0-25-prompt)
+- [012. Agent Skill 编写指南](ch02/012-agent-skill)
+- [013. Skills 重新定义 Agent 喂知识：从'提前给'到'按需取'的范式反转](ch02/013-skills-agent)
+- [014. 深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践](ch02/014-openclaw-prompt-context-harness)
+- [015. Prompt Context Harness 三次演进](ch02/015-prompt-context-harness)
+- [016. System Prompt vs Post-Training：行为约束该写还是该训？](ch02/016-system-prompt-vs-post-training)
+- [017. 深度解析 Hermes Agent 如何实现自进化及其 Prompt / Context / Harness 的设计实践](ch02/017-hermes-agent-prompt-context-harness)
 
-### ⭐⭐⭐⭐ 科学家（5 篇）
+### ⭐⭐⭐⭐ 科学家（6 篇）
 
-- [019. Codex 上下文工程 — Prompt Layout + Append-only + Latent Space Moat（LastWhisper 解读）](ch02/019-codex-prompt-layout-append-only-latent-space-moat-la)
-- [020. Headroom：上下文压缩与缓存稳定化框架（live zone + CCR + RawValue 字节级 patch）](ch02/020-headroom-live-zone-ccr-rawvalue-patch)
-- [021. 视觉 AI 的下一前沿是代码：a16z 关于视觉生成范式转移的论述](ch02/021-ai-a16z)
+- [018. Codex 上下文工程 — Prompt Layout + Append-only + Latent Space Moat（LastWhisper 解读）](ch02/018-codex-prompt-layout-append-only-latent-space-moat-la)
+- [019. Headroom：上下文压缩与缓存稳定化框架（live zone + CCR + RawValue 字节级 patch）](ch02/019-headroom-live-zone-ccr-rawvalue-patch)
+- [020. 视觉 AI 的下一前沿是代码：a16z 关于视觉生成范式转移的论述](ch02/020-ai-a16z)
+- [021. AINMM：存量生产级工程向 AI Native 演进的五级成熟度模型](ch02/021-ainmm-ai-native)
 - [022. LLM Wiki 架构](ch02/022-llm-wiki)
 - [023. OneReason：快手将推理注入推荐基模的系统性尝试](ch02/023-onereason)
 

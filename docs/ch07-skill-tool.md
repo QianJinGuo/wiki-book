@@ -11,9 +11,9 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 3 |
-| ⭐⭐ 工程师 | 需编程基础 | 8 |
+| ⭐⭐ 工程师 | 需编程基础 | 7 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 20 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 16 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 17 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 13 |
 
 ---
@@ -42,51 +42,51 @@ Agent 能不能"动手做事"，取决于它有什么工具。
 - [002. 重新定义Skill开发：保姆级教程&一站式开发助手发布](ch07/002-skill)
 - [003. Building and connecting a production-ready ecommerce MCP server using Amazon Bedrock AgentCore and Mistral AI Studio](ch07/003-building-and-connecting-a-production-ready-ecommerce-mcp-ser)
 
-### ⭐⭐ 工程师（8 篇）
+### ⭐⭐ 工程师（7 篇）
 
 - [004. 电商 AI 操作系统崛起：从「工具人」到「All in One」+ 行业 KnowHow Skill 化 + 5 巨头 Headless 布局](ch07/004-ai-all-in-one-knowhow-skill-5-headless)
 - [005. Agent Loop 架构三层模型：Loop + Skill + Orchestrator](ch07/005-agent-loop-loop-skill-orchestrator)
 - [006. 你写的 Skill，及格了吗？](ch07/006-skill)
 - [007. 我用 SKILL.md 做了一个简历生成器](ch07/007-skill-md)
-- [008. Skill 版本对比五大原则：从'两个数字比大小'到工程化质量门禁](ch07/008-skill)
-- [009. 如何构建生产准备的AI代理：MCP、CLI与技能——适合合适的工作的工具](ch07/009-ai-mcp-cli)
-- [010. Introducing the MDN MCP server](ch07/010-introducing-the-mdn-mcp-server)
-- [011. 当我把AI变成一个\"算法\"：Skill工程化设计的心路历程](ch07/011-ai-skill)
+- [008. 如何构建生产准备的AI代理：MCP、CLI与技能——适合合适的工作的工具](ch07/008-ai-mcp-cli)
+- [009. Introducing the MDN MCP server](ch07/009-introducing-the-mdn-mcp-server)
+- [010. 当我把AI变成一个\"算法\"：Skill工程化设计的心路历程](ch07/010-ai-skill)
 
 ### ⭐⭐⭐ 专家（20 篇）
 
-- [012. Embabel](ch07/012-embabel)
-- [013. SkillComposer: 生成式技能组合](ch07/013-skillcomposer)
-- [014. 微信读书官方skill与huashu-weread增强版](ch07/014-skill-huashu-weread)
-- [015. Securing AI Agents: AWS × Cisco AI Defense 给 MCP / A2A 加上企业级护栏](ch07/015-securing-ai-agents-aws-cisco-ai-defense-mcp-a2a)
-- [016. 腾讯企业微信团队 Skill 流水线：AI代码生成率94%的需求开发全流程](ch07/016-skill-ai-94)
-- [017. OpenClaw 深度架构分析：Agent 引擎、多源 Skill 系统、子 Agent steer 重定向、五层容错](ch07/017-openclaw-agent-skill-agent-steer)
-- [018. MapSatisfyBench：首个以满意度为核心目标的地图智能体评测基准](ch07/018-mapsatisfybench)
-- [019. AI-Infra-Auto-Driven-SKILLS v0.1.0：给 Codex / Claude Code 的推理框架工作流](ch07/019-ai-infra-auto-driven-skills-v0-1-0-codex-claude-code)
-- [020. Autonomous Vulnerability Hunting with MCP](ch07/020-autonomous-vulnerability-hunting-with-mcp)
-- [021. 高德扫街榜 HermesAgent 配图系统：VLM + Skill + 语言驱动的生产级 Agent 架构](ch07/021-hermesagent-vlm-skill-agent)
-- [022. AWS DevOps Agent × MCP Server：打通混合云网络排障的最后一公里](ch07/022-aws-devops-agent-mcp-server)
-- [023. skill-up: 阿里开源 Agent Skill 评测框架](ch07/023-skill-up-agent-skill)
-- [024. Create Custom MCP Catalogs and Profiles](ch07/024-create-custom-mcp-catalogs-and-profiles)
-- [025. 李继刚 ljg Skills 系列（四）：表达写作类 Skill](ch07/025-ljg-skills-skill)
-- [026. 让 Amazon Quick 操作飞书：构建远程 MCP 服务的设计实践](ch07/026-amazon-quick-mcp)
-- [027. SkillX — 层次化技能知识库](ch07/027-skillx)
-- [028. Anthropic Claude Skill 9 类任务分类法](ch07/028-anthropic-claude-skill-9)
-- [029. 李继刚 23 个 Skills 深度拆解——认知工序流水线](ch07/029-23-skills)
-- [030. Multica — 开源 Managed Agents 平台](ch07/030-multica-managed-agents)
-- [031. 龙虾之父教你省钱：开源Skill给你的Skill减肥](ch07/031-skill-skill)
+- [011. Embabel](ch07/011-embabel)
+- [012. SkillComposer: 生成式技能组合](ch07/012-skillcomposer)
+- [013. 微信读书官方skill与huashu-weread增强版](ch07/013-skill-huashu-weread)
+- [014. Securing AI Agents: AWS × Cisco AI Defense 给 MCP / A2A 加上企业级护栏](ch07/014-securing-ai-agents-aws-cisco-ai-defense-mcp-a2a)
+- [015. 腾讯企业微信团队 Skill 流水线：AI代码生成率94%的需求开发全流程](ch07/015-skill-ai-94)
+- [016. OpenClaw 深度架构分析：Agent 引擎、多源 Skill 系统、子 Agent steer 重定向、五层容错](ch07/016-openclaw-agent-skill-agent-steer)
+- [017. MapSatisfyBench：首个以满意度为核心目标的地图智能体评测基准](ch07/017-mapsatisfybench)
+- [018. AI-Infra-Auto-Driven-SKILLS v0.1.0：给 Codex / Claude Code 的推理框架工作流](ch07/018-ai-infra-auto-driven-skills-v0-1-0-codex-claude-code)
+- [019. Autonomous Vulnerability Hunting with MCP](ch07/019-autonomous-vulnerability-hunting-with-mcp)
+- [020. 高德扫街榜 HermesAgent 配图系统：VLM + Skill + 语言驱动的生产级 Agent 架构](ch07/020-hermesagent-vlm-skill-agent)
+- [021. AWS DevOps Agent × MCP Server：打通混合云网络排障的最后一公里](ch07/021-aws-devops-agent-mcp-server)
+- [022. skill-up: 阿里开源 Agent Skill 评测框架](ch07/022-skill-up-agent-skill)
+- [023. Create Custom MCP Catalogs and Profiles](ch07/023-create-custom-mcp-catalogs-and-profiles)
+- [024. 李继刚 ljg Skills 系列（四）：表达写作类 Skill](ch07/024-ljg-skills-skill)
+- [025. 让 Amazon Quick 操作飞书：构建远程 MCP 服务的设计实践](ch07/025-amazon-quick-mcp)
+- [026. SkillX — 层次化技能知识库](ch07/026-skillx)
+- [027. Anthropic Claude Skill 9 类任务分类法](ch07/027-anthropic-claude-skill-9)
+- [028. 李继刚 23 个 Skills 深度拆解——认知工序流水线](ch07/028-23-skills)
+- [029. Multica — 开源 Managed Agents 平台](ch07/029-multica-managed-agents)
+- [030. 龙虾之父教你省钱：开源Skill给你的Skill减肥](ch07/030-skill-skill)
 
-### ⭐⭐⭐⭐ 科学家（16 篇）
+### ⭐⭐⭐⭐ 科学家（17 篇）
 
-- [032. 我把 Claude Design 做成了 Skill，人人都能成为顶级网站设计师](ch07/032-claude-design-skill)
-- [033. ai-skill-evolution底层逻辑](ch07/033-ai-skill-evolution)
-- [034. 网盘存量代码迁移实战：我们如何用三层架构管住 AI 的输出](ch07/034-ai)
-- [035. Skill 产品哲学：歸藏做了爆款 Skill 后的产品反思](ch07/035-skill-skill)
-- [036. Anthropic 最新博客：MCP 没死，它又来了](ch07/036-anthropic-mcp)
-- [037. Hermes自进化完整闭环：Skill创建复用修补链路](ch07/037-hermes-skill)
-- [038. Skill自进化三路线：Trace2Skill归纳法 / EvoSkill验证闭环 / SkillOpt训练范式](ch07/038-skill-trace2skill-evoskill-skillopt)
-- [039. MCP-based Interactive PDF Text Extraction from Amazon S3](ch07/039-mcp-based-interactive-pdf-text-extraction-from-amazon-s3)
-- [040. Matt Pocock Skills — AI编程技能集合](ch07/040-matt-pocock-skills-ai)
+- [031. 我把 Claude Design 做成了 Skill，人人都能成为顶级网站设计师](ch07/031-claude-design-skill)
+- [032. ai-skill-evolution底层逻辑](ch07/032-ai-skill-evolution)
+- [033. 网盘存量代码迁移实战：我们如何用三层架构管住 AI 的输出](ch07/033-ai)
+- [034. Skill 产品哲学：歸藏做了爆款 Skill 后的产品反思](ch07/034-skill-skill)
+- [035. Anthropic 最新博客：MCP 没死，它又来了](ch07/035-anthropic-mcp)
+- [036. Hermes自进化完整闭环：Skill创建复用修补链路](ch07/036-hermes-skill)
+- [037. Skill自进化三路线：Trace2Skill归纳法 / EvoSkill验证闭环 / SkillOpt训练范式](ch07/037-skill-trace2skill-evoskill-skillopt)
+- [038. MCP-based Interactive PDF Text Extraction from Amazon S3](ch07/038-mcp-based-interactive-pdf-text-extraction-from-amazon-s3)
+- [039. Matt Pocock Skills — AI编程技能集合](ch07/039-matt-pocock-skills-ai)
+- [040. Skill 版本对比五大原则：从'两个数字比大小'到工程化质量门禁](ch07/040-skill)
 - [041. Meta Skill](ch07/041-meta-skill)
 - [042. 京东健康 OPC 团队产品全流程 Skill 探索](ch07/042-opc-skill)
 - [043. Claude Code MCP Server](ch07/043-claude-code-mcp-server)

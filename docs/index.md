@@ -24,7 +24,7 @@
 
     <div class="home-stats__item"><span class="home-stats__num">20 章 · 5 篇</span><span class="home-stats__label">全书结构</span></div>
 
-    <div class="home-stats__item"><span class="home-stats__num">4,431</span><span class="home-stats__label">一手原文</span></div>
+    <div class="home-stats__item"><span class="home-stats__num">4,435</span><span class="home-stats__label">一手原文</span></div>
 
     <div class="home-stats__item"><span class="home-stats__num">★ × 5</span><span class="home-stats__label">难度分级</span></div>
 
@@ -92,9 +92,9 @@
 
 <p class="chapter-card__desc">与 AI 高效对话的科学与艺术：Prompt、CoT、Context Engineering</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:18.52%" title="⭐ 入门 · 5 篇"></i><i class="lv2" style="width:11.11%" title="⭐⭐ 工程师 · 3 篇"></i><i class="lv3" style="width:37.04%" title="⭐⭐⭐ 专家 · 10 篇"></i><i class="lv4" style="width:18.52%" title="⭐⭐⭐⭐ 科学家 · 5 篇"></i><i class="lv5" style="width:14.81%" title="⭐⭐⭐⭐⭐ 大师 · 4 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:14.81%" title="⭐ 入门 · 4 篇"></i><i class="lv2" style="width:7.41%" title="⭐⭐ 工程师 · 2 篇"></i><i class="lv3" style="width:40.74%" title="⭐⭐⭐ 专家 · 11 篇"></i><i class="lv4" style="width:22.22%" title="⭐⭐⭐⭐ 科学家 · 6 篇"></i><i class="lv5" style="width:14.81%" title="⭐⭐⭐⭐⭐ 大师 · 4 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 5 · ⭐⭐ 3 · ⭐⭐⭐ 10 · ⭐⭐⭐⭐ 5 · ⭐⭐⭐⭐⭐ 4</div>
+<div class="chapter-card__legend">⭐ 4 · ⭐⭐ 2 · ⭐⭐⭐ 11 · ⭐⭐⭐⭐ 6 · ⭐⭐⭐⭐⭐ 4</div>
 
 <ul class="chapter-card__samples">
 
@@ -153,9 +153,9 @@
 
 <p class="chapter-card__desc">什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:6.25%" title="⭐ 入门 · 25 篇"></i><i class="lv2" style="width:9.75%" title="⭐⭐ 工程师 · 39 篇"></i><i class="lv3" style="width:39.50%" title="⭐⭐⭐ 专家 · 158 篇"></i><i class="lv4" style="width:30.75%" title="⭐⭐⭐⭐ 科学家 · 123 篇"></i><i class="lv5" style="width:13.75%" title="⭐⭐⭐⭐⭐ 大师 · 55 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:5.75%" title="⭐ 入门 · 23 篇"></i><i class="lv2" style="width:9.75%" title="⭐⭐ 工程师 · 39 篇"></i><i class="lv3" style="width:40.00%" title="⭐⭐⭐ 专家 · 160 篇"></i><i class="lv4" style="width:30.75%" title="⭐⭐⭐⭐ 科学家 · 123 篇"></i><i class="lv5" style="width:13.75%" title="⭐⭐⭐⭐⭐ 大师 · 55 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 25 · ⭐⭐ 39 · ⭐⭐⭐ 158 · ⭐⭐⭐⭐ 123 · ⭐⭐⭐⭐⭐ 55</div>
+<div class="chapter-card__legend">⭐ 23 · ⭐⭐ 39 · ⭐⭐⭐ 160 · ⭐⭐⭐⭐ 123 · ⭐⭐⭐⭐⭐ 55</div>
 
 <ul class="chapter-card__samples">
 
@@ -205,17 +205,17 @@
 
 <p class="chapter-card__desc">Agent 的大脑：短期/长期/工作记忆的分层架构</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:7.14%" title="⭐ 入门 · 3 篇"></i><i class="lv2" style="width:4.76%" title="⭐⭐ 工程师 · 2 篇"></i><i class="lv3" style="width:35.71%" title="⭐⭐⭐ 专家 · 15 篇"></i><i class="lv4" style="width:28.57%" title="⭐⭐⭐⭐ 科学家 · 12 篇"></i><i class="lv5" style="width:23.81%" title="⭐⭐⭐⭐⭐ 大师 · 10 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:4.76%" title="⭐ 入门 · 2 篇"></i><i class="lv2" style="width:4.76%" title="⭐⭐ 工程师 · 2 篇"></i><i class="lv3" style="width:38.10%" title="⭐⭐⭐ 专家 · 16 篇"></i><i class="lv4" style="width:28.57%" title="⭐⭐⭐⭐ 科学家 · 12 篇"></i><i class="lv5" style="width:23.81%" title="⭐⭐⭐⭐⭐ 大师 · 10 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 3 · ⭐⭐ 2 · ⭐⭐⭐ 15 · ⭐⭐⭐⭐ 12 · ⭐⭐⭐⭐⭐ 10</div>
+<div class="chapter-card__legend">⭐ 2 · ⭐⭐ 2 · ⭐⭐⭐ 16 · ⭐⭐⭐⭐ 12 · ⭐⭐⭐⭐⭐ 10</div>
 
 <ul class="chapter-card__samples">
 
 <li><span class="stars">⭐</span><span class="sample-title">从 Claude Code 记忆系统看四层 Agent 记忆方案，一个比一个夯</span></li>
 
-<li><span class="stars">⭐</span><span class="sample-title">Hermes Agent 记忆系统 vs OpenClaw 记忆观</span></li>
-
 <li><span class="stars">⭐</span><span class="sample-title">Claude Code Agent Memory Systems — L0~L3 四层记忆方案</span></li>
+
+<li><span class="stars">⭐⭐</span><span class="sample-title">ChatGPT默认模型大升级，GPT-5.5 Instant正式上线：新增记忆来源功能</span></li>
 
 </ul>
 
@@ -231,9 +231,9 @@
 
 <p class="chapter-card__desc">Agent 的手脚：Skill 系统、MCP 协议、Tool Use</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:5.00%" title="⭐ 入门 · 3 篇"></i><i class="lv2" style="width:13.33%" title="⭐⭐ 工程师 · 8 篇"></i><i class="lv3" style="width:33.33%" title="⭐⭐⭐ 专家 · 20 篇"></i><i class="lv4" style="width:26.67%" title="⭐⭐⭐⭐ 科学家 · 16 篇"></i><i class="lv5" style="width:21.67%" title="⭐⭐⭐⭐⭐ 大师 · 13 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:5.00%" title="⭐ 入门 · 3 篇"></i><i class="lv2" style="width:11.67%" title="⭐⭐ 工程师 · 7 篇"></i><i class="lv3" style="width:33.33%" title="⭐⭐⭐ 专家 · 20 篇"></i><i class="lv4" style="width:28.33%" title="⭐⭐⭐⭐ 科学家 · 17 篇"></i><i class="lv5" style="width:21.67%" title="⭐⭐⭐⭐⭐ 大师 · 13 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 3 · ⭐⭐ 8 · ⭐⭐⭐ 20 · ⭐⭐⭐⭐ 16 · ⭐⭐⭐⭐⭐ 13</div>
+<div class="chapter-card__legend">⭐ 3 · ⭐⭐ 7 · ⭐⭐⭐ 20 · ⭐⭐⭐⭐ 17 · ⭐⭐⭐⭐⭐ 13</div>
 
 <ul class="chapter-card__samples">
 
@@ -283,9 +283,9 @@
 
 <p class="chapter-card__desc">最成熟的 Agent 品类：Claude Code、OpenClaw、Codex 深度拆解</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:7.48%" title="⭐ 入门 · 8 篇"></i><i class="lv2" style="width:10.28%" title="⭐⭐ 工程师 · 11 篇"></i><i class="lv3" style="width:34.58%" title="⭐⭐⭐ 专家 · 37 篇"></i><i class="lv4" style="width:31.78%" title="⭐⭐⭐⭐ 科学家 · 34 篇"></i><i class="lv5" style="width:15.89%" title="⭐⭐⭐⭐⭐ 大师 · 17 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:6.54%" title="⭐ 入门 · 7 篇"></i><i class="lv2" style="width:10.28%" title="⭐⭐ 工程师 · 11 篇"></i><i class="lv3" style="width:35.51%" title="⭐⭐⭐ 专家 · 38 篇"></i><i class="lv4" style="width:31.78%" title="⭐⭐⭐⭐ 科学家 · 34 篇"></i><i class="lv5" style="width:15.89%" title="⭐⭐⭐⭐⭐ 大师 · 17 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 8 · ⭐⭐ 11 · ⭐⭐⭐ 37 · ⭐⭐⭐⭐ 34 · ⭐⭐⭐⭐⭐ 17</div>
+<div class="chapter-card__legend">⭐ 7 · ⭐⭐ 11 · ⭐⭐⭐ 38 · ⭐⭐⭐⭐ 34 · ⭐⭐⭐⭐⭐ 17</div>
 
 <ul class="chapter-card__samples">
 
@@ -370,9 +370,9 @@
 
 <p class="chapter-card__desc">Agent 权限越大，安全责任越重：凭据、审计、合规</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:5.17%" title="⭐ 入门 · 3 篇"></i><i class="lv2" style="width:10.34%" title="⭐⭐ 工程师 · 6 篇"></i><i class="lv3" style="width:44.83%" title="⭐⭐⭐ 专家 · 26 篇"></i><i class="lv4" style="width:31.03%" title="⭐⭐⭐⭐ 科学家 · 18 篇"></i><i class="lv5" style="width:8.62%" title="⭐⭐⭐⭐⭐ 大师 · 5 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:5.17%" title="⭐ 入门 · 3 篇"></i><i class="lv2" style="width:8.62%" title="⭐⭐ 工程师 · 5 篇"></i><i class="lv3" style="width:44.83%" title="⭐⭐⭐ 专家 · 26 篇"></i><i class="lv4" style="width:32.76%" title="⭐⭐⭐⭐ 科学家 · 19 篇"></i><i class="lv5" style="width:8.62%" title="⭐⭐⭐⭐⭐ 大师 · 5 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 3 · ⭐⭐ 6 · ⭐⭐⭐ 26 · ⭐⭐⭐⭐ 18 · ⭐⭐⭐⭐⭐ 5</div>
+<div class="chapter-card__legend">⭐ 3 · ⭐⭐ 5 · ⭐⭐⭐ 26 · ⭐⭐⭐⭐ 19 · ⭐⭐⭐⭐⭐ 5</div>
 
 <ul class="chapter-card__samples">
 
@@ -422,9 +422,9 @@
 
 <p class="chapter-card__desc">AI 的燃料：实时入湖、流处理、数据质量</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:11.54%" title="⭐ 入门 · 3 篇"></i><i class="lv2" style="width:7.69%" title="⭐⭐ 工程师 · 2 篇"></i><i class="lv3" style="width:61.54%" title="⭐⭐⭐ 专家 · 16 篇"></i><i class="lv4" style="width:15.38%" title="⭐⭐⭐⭐ 科学家 · 4 篇"></i><i class="lv5" style="width:3.85%" title="⭐⭐⭐⭐⭐ 大师 · 1 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:11.54%" title="⭐ 入门 · 3 篇"></i><i class="lv2" style="width:3.85%" title="⭐⭐ 工程师 · 1 篇"></i><i class="lv3" style="width:65.38%" title="⭐⭐⭐ 专家 · 17 篇"></i><i class="lv4" style="width:15.38%" title="⭐⭐⭐⭐ 科学家 · 4 篇"></i><i class="lv5" style="width:3.85%" title="⭐⭐⭐⭐⭐ 大师 · 1 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 3 · ⭐⭐ 2 · ⭐⭐⭐ 16 · ⭐⭐⭐⭐ 4 · ⭐⭐⭐⭐⭐ 1</div>
+<div class="chapter-card__legend">⭐ 3 · ⭐⭐ 1 · ⭐⭐⭐ 17 · ⭐⭐⭐⭐ 4 · ⭐⭐⭐⭐⭐ 1</div>
 
 <ul class="chapter-card__samples">
 
@@ -617,6 +617,6 @@
 </div>
 </section>
 
-<footer class="home-map__foot">📊 全书收录 1,710 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-09-29</span></footer>
+<footer class="home-map__foot">📊 全书收录 1,710 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-09-30</span></footer>
 
 </div>
