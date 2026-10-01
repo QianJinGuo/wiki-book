@@ -24,7 +24,7 @@
 
     <div class="home-stats__item"><span class="home-stats__num">20 章 · 5 篇</span><span class="home-stats__label">全书结构</span></div>
 
-    <div class="home-stats__item"><span class="home-stats__num">4,441</span><span class="home-stats__label">一手原文</span></div>
+    <div class="home-stats__item"><span class="home-stats__num">4,442</span><span class="home-stats__label">一手原文</span></div>
 
     <div class="home-stats__item"><span class="home-stats__num">★ × 5</span><span class="home-stats__label">难度分级</span></div>
 
@@ -153,9 +153,9 @@
 
 <p class="chapter-card__desc">什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:5.75%" title="⭐ 入门 · 23 篇"></i><i class="lv2" style="width:9.50%" title="⭐⭐ 工程师 · 38 篇"></i><i class="lv3" style="width:40.00%" title="⭐⭐⭐ 专家 · 160 篇"></i><i class="lv4" style="width:31.00%" title="⭐⭐⭐⭐ 科学家 · 124 篇"></i><i class="lv5" style="width:13.75%" title="⭐⭐⭐⭐⭐ 大师 · 55 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:5.25%" title="⭐ 入门 · 21 篇"></i><i class="lv2" style="width:9.50%" title="⭐⭐ 工程师 · 38 篇"></i><i class="lv3" style="width:40.50%" title="⭐⭐⭐ 专家 · 162 篇"></i><i class="lv4" style="width:31.00%" title="⭐⭐⭐⭐ 科学家 · 124 篇"></i><i class="lv5" style="width:13.75%" title="⭐⭐⭐⭐⭐ 大师 · 55 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 23 · ⭐⭐ 38 · ⭐⭐⭐ 160 · ⭐⭐⭐⭐ 124 · ⭐⭐⭐⭐⭐ 55</div>
+<div class="chapter-card__legend">⭐ 21 · ⭐⭐ 38 · ⭐⭐⭐ 162 · ⭐⭐⭐⭐ 124 · ⭐⭐⭐⭐⭐ 55</div>
 
 <ul class="chapter-card__samples">
 
@@ -257,9 +257,9 @@
 
 <p class="chapter-card__desc">从单兵到团队：编排、通信、治理</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:11.54%" title="⭐ 入门 · 3 篇"></i><i class="lv2" style="width:7.69%" title="⭐⭐ 工程师 · 2 篇"></i><i class="lv3" style="width:38.46%" title="⭐⭐⭐ 专家 · 10 篇"></i><i class="lv4" style="width:34.62%" title="⭐⭐⭐⭐ 科学家 · 9 篇"></i><i class="lv5" style="width:7.69%" title="⭐⭐⭐⭐⭐ 大师 · 2 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:7.69%" title="⭐ 入门 · 2 篇"></i><i class="lv2" style="width:7.69%" title="⭐⭐ 工程师 · 2 篇"></i><i class="lv3" style="width:42.31%" title="⭐⭐⭐ 专家 · 11 篇"></i><i class="lv4" style="width:34.62%" title="⭐⭐⭐⭐ 科学家 · 9 篇"></i><i class="lv5" style="width:7.69%" title="⭐⭐⭐⭐⭐ 大师 · 2 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 3 · ⭐⭐ 2 · ⭐⭐⭐ 10 · ⭐⭐⭐⭐ 9 · ⭐⭐⭐⭐⭐ 2</div>
+<div class="chapter-card__legend">⭐ 2 · ⭐⭐ 2 · ⭐⭐⭐ 11 · ⭐⭐⭐⭐ 9 · ⭐⭐⭐⭐⭐ 2</div>
 
 <ul class="chapter-card__samples">
 
@@ -267,7 +267,7 @@
 
 <li><span class="stars">⭐</span><span class="sample-title">构建基于多智能体架构的深度思考交易系统</span></li>
 
-<li><span class="stars">⭐</span><span class="sample-title">Multi-Agent AI Safety Research Funding Call（DeepMind 主导，1000 万美元，四大方向）</span></li>
+<li><span class="stars">⭐⭐</span><span class="sample-title">Graph Engineering：从单循环到多节点编排</span></li>
 
 </ul>
 
@@ -617,6 +617,6 @@
 </div>
 </section>
 
-<footer class="home-map__foot">📊 全书收录 1,710 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-10-01</span></footer>
+<footer class="home-map__foot">📊 全书收录 1,710 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-10-02</span></footer>
 
 </div>

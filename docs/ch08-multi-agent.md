@@ -10,9 +10,9 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 3 |
+| ⭐ 入门 | 零基础可读 | 2 |
 | ⭐⭐ 工程师 | 需编程基础 | 2 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 10 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 11 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 9 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 2 |
 
@@ -36,24 +36,24 @@
 
 ## 本章内容
 
-### ⭐ 入门（3 篇）
+### ⭐ 入门（2 篇）
 
 - [001. 龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](ch08/001-openclaw)
 - [002. 构建基于多智能体架构的深度思考交易系统](ch08/002-page-002)
-- [003. Multi-Agent AI Safety Research Funding Call（DeepMind 主导，1000 万美元，四大方向）](ch08/003-multi-agent-ai-safety-research-funding-call-deepmind-1000)
 
 ### ⭐⭐ 工程师（2 篇）
 
-- [004. Graph Engineering：从单循环到多节点编排](ch08/004-graph-engineering)
-- [005. 微软 Agent Framework 全栈指南（Python）](ch08/005-agent-framework-python)
+- [003. Graph Engineering：从单循环到多节点编排](ch08/003-graph-engineering)
+- [004. 微软 Agent Framework 全栈指南（Python）](ch08/004-agent-framework-python)
 
-### ⭐⭐⭐ 专家（10 篇）
+### ⭐⭐⭐ 专家（11 篇）
 
-- [006. 从多智能体编排到AI自主决策：资损防控体系的架构演进](ch08/006-ai)
-- [007. Scalable voice agent design with Amazon Nova Sonic: multi-agent, tools, and session segmentation](ch08/007-scalable-voice-agent-design-with-amazon-nova-sonic-multi-ag)
-- [008. OpenClaw 多智能体团队搭建实战经验](ch08/008-openclaw)
-- [009. Thousand Token Wood v2: Multi-Model Heterogeneous Agent Council](ch08/009-thousand-token-wood-v2-multi-model-heterogeneous-agent-coun)
-- [010. 多智能体上下文隔离机制](ch08/010-page-010)
+- [005. 从多智能体编排到AI自主决策：资损防控体系的架构演进](ch08/005-ai)
+- [006. Scalable voice agent design with Amazon Nova Sonic: multi-agent, tools, and session segmentation](ch08/006-scalable-voice-agent-design-with-amazon-nova-sonic-multi-ag)
+- [007. OpenClaw 多智能体团队搭建实战经验](ch08/007-openclaw)
+- [008. Thousand Token Wood v2: Multi-Model Heterogeneous Agent Council](ch08/008-thousand-token-wood-v2-multi-model-heterogeneous-agent-coun)
+- [009. 多智能体上下文隔离机制](ch08/009-page-009)
+- [010. Multi-Agent AI Safety Research Funding Call（DeepMind 主导，1000 万美元，四大方向）](ch08/010-multi-agent-ai-safety-research-funding-call-deepmind-1000)
 - [011. 对抗式验证：多 Agent 交叉校验设计哲学](ch08/011-agent)
 - [012. Cost of Consensus](ch08/012-cost-of-consensus)
 - [013. 这篇52页综述把AI做科研这件事，明明白白划成了L0到L4五个等级](ch08/013-52-ai-l0-l4)
