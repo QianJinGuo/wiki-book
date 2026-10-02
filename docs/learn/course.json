@@ -835,13 +835,13 @@
     {
      "role": "核心原理",
      "title": "Kimi K2.6背后的Agent Database：Agent-native 时代的数据Infra竞争，跟过去30年有何不同",
-     "file": "ch14/006-kimi-k2-6-agent-database-agent-native-infra-30.md",
-     "url": "/ch14/006-kimi-k2-6-agent-database-agent-native-infra-30.html",
+     "file": "ch14/005-kimi-k2-6-agent-database-agent-native-infra-30.md",
+     "url": "/ch14/005-kimi-k2-6-agent-database-agent-native-infra-30.html",
      "chapter": "ch14",
      "chapterName": "数据工程",
      "essence": "黄东旭这篇文章揭示了 Agent-native 时代基础设施竞争的根本逻辑转变：从\"单点性能竞争\"到\"海量长尾租户的服务连续性竞争\"。；核心洞察一：hosting 成本是 Agent 建站场景的决定性瓶颈。Kimi K2.6 的建站场景与传统 SaaS 完全不同——用户无技术背景、创建频率极高（周级千万站点）、每个站点都需要独立的数据库实例但运行时长不确定。传统云数据库的\"一个站点一个实例\"模式在成本模型上完全不可行",
      "words": 4410,
-     "level": 3
+     "level": 1
     },
     {
      "role": "工程案例",
@@ -1079,6 +1079,17 @@
     },
     {
      "role": "工程案例",
+     "title": "MosaicLeaks: Can your research agent keep a secret?",
+     "file": "ch04/086-mosaicleaks-can-your-research-agent-keep-a-secret.md",
+     "url": "/ch04/086-mosaicleaks-can-your-research-agent-keep-a-secret.html",
+     "chapter": "ch04",
+     "chapterName": "Agent 核心架构",
+     "essence": "把 query log 当作与私有文档同级的敏感资产治理。 mosaic 泄漏的载体是外发查询的累积日志，不是某条回复。多步检索/研究 Agent 应默认记录完整 query log，并纳入访问控制、留存期限与审计范围，而不是只盯着最终答案的脱敏。；不要用免责式 prompt 兜底。 \"不要泄漏\"这类 Plan prompt 收益不稳定且带能力代价（泄漏 34.0%→25.5% 换来成功率 48.7%→44.5%）。若必须用，只能算纵深防御的一层，不能当作合规依据",
+     "words": 5799,
+     "level": 3
+    },
+    {
+     "role": "延伸阅读",
      "title": "五款浏览器自动化工具横向对比：browser-use / Playwright / chrome-devtools-mcp / agent-browser / BrowserAct",
      "file": "ch04/290-browser-use-playwright-chrome-devtools-mcp-agent-bro.md",
      "url": "/ch04/290-browser-use-playwright-chrome-devtools-mcp-agent-bro.html",
@@ -1086,17 +1097,6 @@
      "chapterName": "Agent 核心架构",
      "essence": "五款浏览器自动化工具横向对比：browser-use / Playwright / chrome-devtools-mcp / agent-browser / BrowserAct；| 维度 | chrome-devtools-mcp | Playwright | agent-browser | browser-use | BrowserAct |。",
      "words": 6211,
-     "level": 3
-    },
-    {
-     "role": "延伸阅读",
-     "title": "Browser Harness — 自愈型浏览器 Agent 框架",
-     "file": "ch04/339-browser-harness-agent.md",
-     "url": "/ch04/339-browser-harness-agent.html",
-     "chapter": "ch04",
-     "chapterName": "Agent 核心架构",
-     "essence": "Browser Harness（browser-use/browser-harness，~8.9K Stars）是一个基于 Chrome DevTools Protocol (CDP) 直连的自愈型浏览器 Agent 框架，核心理念是去框架化：薄 CDP 桥接 + mid-task 自愈机制 + domain-skills 自动沉淀。；与 AgentBrowser、Playwright/Selenium 等方案不同，Browser Harness 不构建厚重抽象层，而是让 Agent 直接通过 CDP WebSocket 与浏览器原生状态交互",
-     "words": 3937,
      "level": 3
     }
    ],
@@ -1215,7 +1215,7 @@
      "chapterName": "Agent 核心架构",
      "essence": "复利的真正来源是「负结果资本化」。WikiSkill 最被低估的设计不是 pattern 目录，而是 skill-impact.md 对被拒提案的保留：门控回滚技能集，但 diff、验证分数与拒绝理由永久留在 wiki 里（wiki 永不因接受/拒绝回滚）。ALFWorld 案例中，Iteration 0 的 goal-directed-action 提案因过抽象被拒（验证 0.72），Iteration 1 的 Proposer 正是参考这条拒绝历史，才写出具体可执行的「Never Return an Item to Its Origin Location」（0.78 接受）。大多数自进化框架把被拒提案当作噪音丢弃，等于每轮都从零开始；WikiSkill 把失败预算变成可复用资产，这是「失败沉淀借鉴再失败」链。",
      "words": 5504,
-     "level": 1
+     "level": 3
     }
    ],
    "lab": {

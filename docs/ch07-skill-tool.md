@@ -48,9 +48,9 @@ Agent 能不能"动手做事"，取决于它有什么工具。
 - [005. Agent Loop 架构三层模型：Loop + Skill + Orchestrator](ch07/005-agent-loop-loop-skill-orchestrator)
 - [006. 你写的 Skill，及格了吗？](ch07/006-skill)
 - [007. 我用 SKILL.md 做了一个简历生成器](ch07/007-skill-md)
-- [008. 如何构建生产准备的AI代理：MCP、CLI与技能——适合合适的工作的工具](ch07/008-ai-mcp-cli)
-- [009. Introducing the MDN MCP server](ch07/009-introducing-the-mdn-mcp-server)
-- [010. 当我把AI变成一个\"算法\"：Skill工程化设计的心路历程](ch07/010-ai-skill)
+- [008. 当我把AI变成一个\"算法\"：Skill工程化设计的心路历程](ch07/008-ai-skill)
+- [009. 如何构建生产准备的AI代理：MCP、CLI与技能——适合合适的工作的工具](ch07/009-ai-mcp-cli)
+- [010. Introducing the MDN MCP server](ch07/010-introducing-the-mdn-mcp-server)
 
 ### ⭐⭐⭐ 专家（20 篇）
 

@@ -1,5 +1,5 @@
 # 参考文献
-> 本书基于 **1710** 篇编撰实体，覆盖 **373** 个来源站点。
+> 本书基于 **1710** 篇编撰实体，覆盖 **374** 个来源站点。
 
 ---
 ## 主要来源
@@ -16,8 +16,8 @@
 | www.theregister.com | 20 |
 | unknown | 15 |
 | developer.nvidia.com | 15 |
+| www.anthropic.com | 14 |
 | thehackernews.com | 13 |
-| www.anthropic.com | 13 |
 | www.cio.com | 9 |
 | blog.crewai.com | 9 |
 | deepmind.google | 9 |
@@ -37,4 +37,4 @@
 | blog.google | 5 |
 
 ---
-> 共 373 个来源，1710 篇编撰实体。
+> 共 374 个来源，1710 篇编撰实体。

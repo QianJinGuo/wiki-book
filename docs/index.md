@@ -24,7 +24,7 @@
 
     <div class="home-stats__item"><span class="home-stats__num">20 章 · 5 篇</span><span class="home-stats__label">全书结构</span></div>
 
-    <div class="home-stats__item"><span class="home-stats__num">4,442</span><span class="home-stats__label">一手原文</span></div>
+    <div class="home-stats__item"><span class="home-stats__num">4,444</span><span class="home-stats__label">一手原文</span></div>
 
     <div class="home-stats__item"><span class="home-stats__num">★ × 5</span><span class="home-stats__label">难度分级</span></div>
 
@@ -66,9 +66,9 @@
 
 <p class="chapter-card__desc">理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:15.78%" title="⭐ 入门 · 77 篇"></i><i class="lv2" style="width:9.02%" title="⭐⭐ 工程师 · 44 篇"></i><i class="lv3" style="width:46.11%" title="⭐⭐⭐ 专家 · 225 篇"></i><i class="lv4" style="width:20.08%" title="⭐⭐⭐⭐ 科学家 · 98 篇"></i><i class="lv5" style="width:9.02%" title="⭐⭐⭐⭐⭐ 大师 · 44 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:15.57%" title="⭐ 入门 · 76 篇"></i><i class="lv2" style="width:9.02%" title="⭐⭐ 工程师 · 44 篇"></i><i class="lv3" style="width:46.31%" title="⭐⭐⭐ 专家 · 226 篇"></i><i class="lv4" style="width:20.08%" title="⭐⭐⭐⭐ 科学家 · 98 篇"></i><i class="lv5" style="width:9.02%" title="⭐⭐⭐⭐⭐ 大师 · 44 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 77 · ⭐⭐ 44 · ⭐⭐⭐ 225 · ⭐⭐⭐⭐ 98 · ⭐⭐⭐⭐⭐ 44</div>
+<div class="chapter-card__legend">⭐ 76 · ⭐⭐ 44 · ⭐⭐⭐ 226 · ⭐⭐⭐⭐ 98 · ⭐⭐⭐⭐⭐ 44</div>
 
 <ul class="chapter-card__samples">
 
@@ -179,9 +179,9 @@
 
 <p class="chapter-card__desc">给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:11.21%" title="⭐ 入门 · 12 篇"></i><i class="lv2" style="width:14.02%" title="⭐⭐ 工程师 · 15 篇"></i><i class="lv3" style="width:27.10%" title="⭐⭐⭐ 专家 · 29 篇"></i><i class="lv4" style="width:30.84%" title="⭐⭐⭐⭐ 科学家 · 33 篇"></i><i class="lv5" style="width:16.82%" title="⭐⭐⭐⭐⭐ 大师 · 18 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:10.28%" title="⭐ 入门 · 11 篇"></i><i class="lv2" style="width:14.02%" title="⭐⭐ 工程师 · 15 篇"></i><i class="lv3" style="width:28.04%" title="⭐⭐⭐ 专家 · 30 篇"></i><i class="lv4" style="width:30.84%" title="⭐⭐⭐⭐ 科学家 · 33 篇"></i><i class="lv5" style="width:16.82%" title="⭐⭐⭐⭐⭐ 大师 · 18 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 12 · ⭐⭐ 15 · ⭐⭐⭐ 29 · ⭐⭐⭐⭐ 33 · ⭐⭐⭐⭐⭐ 18</div>
+<div class="chapter-card__legend">⭐ 11 · ⭐⭐ 15 · ⭐⭐⭐ 30 · ⭐⭐⭐⭐ 33 · ⭐⭐⭐⭐⭐ 18</div>
 
 <ul class="chapter-card__samples">
 
@@ -189,7 +189,7 @@
 
 <li><span class="stars">⭐</span><span class="sample-title">Harness Engineering：快手电商用 AI 流水线重塑研发范式（需求全生命周期自动化交付）</span></li>
 
-<li><span class="stars">⭐</span><span class="sample-title">Cloud Use 框架：Agent 作为云上受治理主体的四层模型</span></li>
+<li><span class="stars">⭐</span><span class="sample-title">深入理解 Claude Code 源码中的 Agent Harness 构建之道</span></li>
 
 </ul>
 
@@ -422,9 +422,9 @@
 
 <p class="chapter-card__desc">AI 的燃料：实时入湖、流处理、数据质量</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:11.54%" title="⭐ 入门 · 3 篇"></i><i class="lv2" style="width:3.85%" title="⭐⭐ 工程师 · 1 篇"></i><i class="lv3" style="width:65.38%" title="⭐⭐⭐ 专家 · 17 篇"></i><i class="lv4" style="width:15.38%" title="⭐⭐⭐⭐ 科学家 · 4 篇"></i><i class="lv5" style="width:3.85%" title="⭐⭐⭐⭐⭐ 大师 · 1 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:7.69%" title="⭐ 入门 · 2 篇"></i><i class="lv2" style="width:3.85%" title="⭐⭐ 工程师 · 1 篇"></i><i class="lv3" style="width:69.23%" title="⭐⭐⭐ 专家 · 18 篇"></i><i class="lv4" style="width:15.38%" title="⭐⭐⭐⭐ 科学家 · 4 篇"></i><i class="lv5" style="width:3.85%" title="⭐⭐⭐⭐⭐ 大师 · 1 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 3 · ⭐⭐ 1 · ⭐⭐⭐ 17 · ⭐⭐⭐⭐ 4 · ⭐⭐⭐⭐⭐ 1</div>
+<div class="chapter-card__legend">⭐ 2 · ⭐⭐ 1 · ⭐⭐⭐ 18 · ⭐⭐⭐⭐ 4 · ⭐⭐⭐⭐⭐ 1</div>
 
 <ul class="chapter-card__samples">
 
@@ -432,7 +432,7 @@
 
 <li><span class="stars">⭐</span><span class="sample-title">Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions</span></li>
 
-<li><span class="stars">⭐</span><span class="sample-title">nOps FinOps Agent 架构：语义层驱动的数据分析 Agent 设计</span></li>
+<li><span class="stars">⭐⭐</span><span class="sample-title">构建 AI 时代的知识底座：直播数据 LLM Wiki 实践</span></li>
 
 </ul>
 
@@ -617,6 +617,6 @@
 </div>
 </section>
 
-<footer class="home-map__foot">📊 全书收录 1,710 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-10-02</span></footer>
+<footer class="home-map__foot">📊 全书收录 1,710 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-10-03</span></footer>
 
 </div>
