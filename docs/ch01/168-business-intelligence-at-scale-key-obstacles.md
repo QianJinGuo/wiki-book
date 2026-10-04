@@ -1,6 +1,6 @@
 # Business intelligence at scale: Key obstacles
 
-> 📊 Level ⭐ | 6.5KB
+> 📊 Level ⭐⭐⭐ | 12.0KB
 
 ## How AWS SMGS uses an AI-powered conversational assistant to transform business management with Amazon Bedrock AgentCore
 
@@ -42,6 +42,33 @@ NarrateAI batch-generates comprehensive persona-based narratives for each user t
 3.  **Narrative rendering** — Jinja templates (a widely used Python templating engine) render human-readable narratives from the structured data. A hierarchical, business domain-aware chunking strategy handles large datasets efficiently. The system stores each user’s narrative as a text file in [Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3/), supporting row-level security through full data isolation.
 
 ### Conversational AI
+
+## 深度分析
+
+### The two-layer split is a latency/freshness tradeoff
+
+NarrateAI's batch/real-time separation is pre-computation applied to BI: the expensive work (Redshift SQL extraction, Lambda transformation, Jinja rendering) runs offline in a three-stage pipeline, so the interactive layer only retrieves from pre-generated persona narrative files in S3. This mirrors the pre-generated knowledge pattern in [RAG](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/retrieval-augmented-generation-rag.md) — retrieval works over curated, structured knowledge, which is why a table-of-contents (TOC) extractor pulls only relevant narrative sections without scanning whole files. The cost is freshness: answers are only as current as the Data Refresh Scheduler's cadence.
+
+### Row-level security enforced at generation time, not query time
+
+Permissions are applied during transformation, and each user's narrative file in S3 is fully isolated — access control is baked into data processing rather than guarded at query time. This "enforce access at the source" philosophy eliminates a class of RAG failure modes (retrieval-layer leaks, prompt-injection exfiltration, filter-bypass bugs) because unauthorized data never enters the artifact. The trade-off is refresh fan-out: 4,000+ users means one isolated narrative per user, regenerated across the permission matrix on each refresh. Context-awareness falls out of the same mechanism — the Persona Knowledge Identifier maps who is asking to which file.
+
+### Hallucination defense is layered and deterministic-first
+
+Because output drives executive decisions, model output is treated as untrusted: LLM involvement in numeric calculation is deliberately limited — numbers come from deterministic SQL and templates — and every response passes an Online Evaluator that cross-references figures against source data before delivery. Bedrock Guardrails add content filtering, PII redaction, and tone controls. The stated lesson: the LLM handles language and synthesis; computation and validation stay deterministic.
+
+### Managed agent infrastructure compressed the build from months to weeks
+
+Amazon Bedrock AgentCore replaced custom orchestration with serverless runtime, built-in auth, and native memory — the team migrated conversation history off a hand-rolled DynamoDB session store, deleting custom session code. OpenTelemetry-based observability cut troubleshooting from hours to minutes, and model flexibility (upgrading Claude versions without architectural change) pays dividends past initial deployment. What was NOT outsourced: domain logic — institutional knowledge encoded with domain experts through standardized templates.
+
+## 实践启示
+
+1. **Precompute what is asked often.** If most queries hit a known, role-shaped slice of data, batch-generating narrative artifacts offline beats answering live against the warehouse — latency collapses and answers become consistent. Manage the freshness lag with scheduled refresh.
+2. **Enforce permissions during data preparation, not at query time.** Baking row-level access into per-user artifacts is structurally safer than filtering retrieved results, and persona-based personalization falls out of the same mechanism.
+3. **Keep the LLM away from arithmetic.** Deterministic pipelines compute the numbers; the model only synthesizes language — then every response is validated before it reaches a decision-maker.
+4. **Route by complexity.** Simple questions take a fast path; only multi-part questions get decomposed into parallel sub-tasks. This routing plus pre-analyzing document structure at ingestion fixed early latency problems and low adoption.
+5. **Buy orchestration, build domain logic.** Managed agent infrastructure moved this project from months to weeks, but encoding institutional knowledge with domain experts remains the differentiating, manual work.
+6. **Watch the pre-computation tax.** Per-user artifact generation scales storage and refresh cost linearly with user count; confirm your permission matrix and refresh cadence don't make regeneration the new bottleneck. The roadmap points the other way — event-driven, proactive delivery triggered by data changes.
 
 ## 相关实体
 - [滴滴国际化客服质检智能化之路基于 Amazon Bedrock 的多语种多业务线质检实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/滴滴国际化客服质检智能化之路基于-amazon-bedrock-的多语种多业务线质检实践.md)

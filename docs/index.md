@@ -66,9 +66,9 @@
 
 <p class="chapter-card__desc">理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:15.57%" title="⭐ 入门 · 76 篇"></i><i class="lv2" style="width:9.02%" title="⭐⭐ 工程师 · 44 篇"></i><i class="lv3" style="width:46.31%" title="⭐⭐⭐ 专家 · 226 篇"></i><i class="lv4" style="width:20.08%" title="⭐⭐⭐⭐ 科学家 · 98 篇"></i><i class="lv5" style="width:9.02%" title="⭐⭐⭐⭐⭐ 大师 · 44 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:14.96%" title="⭐ 入门 · 73 篇"></i><i class="lv2" style="width:9.02%" title="⭐⭐ 工程师 · 44 篇"></i><i class="lv3" style="width:46.93%" title="⭐⭐⭐ 专家 · 229 篇"></i><i class="lv4" style="width:20.08%" title="⭐⭐⭐⭐ 科学家 · 98 篇"></i><i class="lv5" style="width:9.02%" title="⭐⭐⭐⭐⭐ 大师 · 44 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 76 · ⭐⭐ 44 · ⭐⭐⭐ 226 · ⭐⭐⭐⭐ 98 · ⭐⭐⭐⭐⭐ 44</div>
+<div class="chapter-card__legend">⭐ 73 · ⭐⭐ 44 · ⭐⭐⭐ 229 · ⭐⭐⭐⭐ 98 · ⭐⭐⭐⭐⭐ 44</div>
 
 <ul class="chapter-card__samples">
 
@@ -153,9 +153,9 @@
 
 <p class="chapter-card__desc">什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:5.25%" title="⭐ 入门 · 21 篇"></i><i class="lv2" style="width:9.50%" title="⭐⭐ 工程师 · 38 篇"></i><i class="lv3" style="width:40.50%" title="⭐⭐⭐ 专家 · 162 篇"></i><i class="lv4" style="width:31.00%" title="⭐⭐⭐⭐ 科学家 · 124 篇"></i><i class="lv5" style="width:13.75%" title="⭐⭐⭐⭐⭐ 大师 · 55 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:5.25%" title="⭐ 入门 · 21 篇"></i><i class="lv2" style="width:9.00%" title="⭐⭐ 工程师 · 36 篇"></i><i class="lv3" style="width:40.75%" title="⭐⭐⭐ 专家 · 163 篇"></i><i class="lv4" style="width:31.25%" title="⭐⭐⭐⭐ 科学家 · 125 篇"></i><i class="lv5" style="width:13.75%" title="⭐⭐⭐⭐⭐ 大师 · 55 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 21 · ⭐⭐ 38 · ⭐⭐⭐ 162 · ⭐⭐⭐⭐ 124 · ⭐⭐⭐⭐⭐ 55</div>
+<div class="chapter-card__legend">⭐ 21 · ⭐⭐ 36 · ⭐⭐⭐ 163 · ⭐⭐⭐⭐ 125 · ⭐⭐⭐⭐⭐ 55</div>
 
 <ul class="chapter-card__samples">
 
@@ -617,6 +617,6 @@
 </div>
 </section>
 
-<footer class="home-map__foot">📊 全书收录 1,710 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-10-03</span></footer>
+<footer class="home-map__foot">📊 全书收录 1,710 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-10-05</span></footer>
 
 </div>

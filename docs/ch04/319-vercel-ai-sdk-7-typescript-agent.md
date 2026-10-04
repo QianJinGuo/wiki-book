@@ -1,6 +1,6 @@
 # Vercel AI SDK 7 — TypeScript Agent 开发框架全面升级
 
-> 📊 Level ⭐⭐ | 6.5KB
+> 📊 Level ⭐⭐⭐⭐ | 9.4KB
 
 > **Background**：Vercel AI SDK 是 TypeScript 生态中最流行的 AI 应用开发 SDK（周下载量 1600 万+），AI SDK 7 是其重大版本更新，聚焦 Agent 开发的生产化能力。
 
@@ -98,6 +98,28 @@ AI SDK 7 在 Agent 开发生态中的位置：
 | 运行时 | Node.js、Bun、Deno | AI SDK 运行于其上 |
 
 **差异化**：与 LangChain.js 等竞品相比，AI SDK 7 的核心优势是 **Vercel 生态整合**（Next.js、Edge Runtime）和 **TypeScript 原生类型安全**（tool context、runtime context 全链路类型推导）。
+
+## 深度分析
+
+### 生产化主轴：五域划分是对"Demo 到生产"鸿沟的系统性回应
+
+前代 AI SDK 的重心在生成 API 的统一与流式体验，而 7.0 的五大能力域（开发/运行/集成/观测/多模态）几乎全部指向 Agent 进入生产环境后的真实痛点：审批、持久化、超时、沙箱、遥测。这种能力划分方式本身就是信号——TypeScript 生态对 Agent 的期待已从"能调通模型"转向"能扛住生产环境的不确定性"。
+
+### 双上下文分离：安全边界与状态传递是两个正交问题
+
+Tool Context 与 Runtime Context 虽同属"上下文"，但解决的是正交问题：前者是安全边界——通过 `contextSchema` 声明式最小权限，第三方工具拿不到声明之外的字段；后者是执行状态——在 `prepareStep` 中跨步骤读写类型化变量，服务复杂的 Agent 决策逻辑。把两者拆成独立机制而非一个"万能 context"对象，避免了安全敏感数据（如 API Key）与普通运行状态混用带来的泄漏风险。
+
+### 审批即攻击面：HMAC 签名与重放防御
+
+对高风险工作流，AI SDK 7 提供可选择的 HMAC 签名工具审批，并在恢复执行前重新校验工具输入与策略。这暗示设计者已把 Human-in-the-Loop 中"审批消息本身"视为可伪造、可重放的攻击面——审批不只是 UI 交互，而是一个协议级安全问题。它与 WorkflowAgent 的持久化/恢复能力互为表里：一旦执行状态可序列化、可跨进程恢复，审批凭证也必须可验证，否则恢复路径就成了绕过审批的后门。
+
+### 资源引用化：从"内联载荷"到"上传一次、传递引用"
+
+`uploadFile` 与 `uploadSkill` 共享同一个设计模式：大体积输入（文件、技能包）不再随每次推理请求内联传输，而是上传一次后以 provider reference 在后续调用间复用。对无状态、多步骤的 Agent 运行而言，这直接削减了重复传输的带宽与延迟成本；而 reference 可跨提供商迁移的设定，则维持了 SDK 一贯的 provider-agnostic 立场。
+
+### 可观测性重构：一次注册、全链路生效
+
+7.0 将遥测从"每个 `generateText` 调用单独挂回调"改为应用启动时 `registerTelemetry` 一次、全局覆盖全部 SDK 函数，并借助 Node.js tracing channel（`ai:telemetry`）让观测厂商订阅一次即可拿到结构化事件、自动转换为 trace。配合逐步骤的性能统计（首响应时间、token 吞吐、最慢工具），观测从可选的胶水代码升级为 SDK 的一等公民——这与"Agent 运行跨越多个进程与部署周期"的生产现实相匹配。
 
 ## 相关主题
 

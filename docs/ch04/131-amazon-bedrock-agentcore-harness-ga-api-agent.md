@@ -1,6 +1,6 @@
 # Amazon Bedrock AgentCore Harness GA：两 API 调用生产级 Agent 基础设施
 
-> 📊 Level ⭐⭐ | 6.2KB
+> 📊 Level ⭐⭐⭐ | 10.2KB
 
 ## Amazon Bedrock AgentCore Harness GA
 
@@ -86,6 +86,28 @@ Skills 元数据在会话启动时加载，完整内容仅在任务实际需要�
 | 时间 | 2026-05（preview） | 2026-06-18（GA） |
 
 AgentCore Harness GA 是平台级公告，Doris MCP 是具体应用案例。两者互补而非重叠。
+
+## 深度分析
+
+### 抽象层定位：harness 的赌注是"接线"而非"智能"
+
+GA 公告最有信息量的判断藏在开篇：Agent loop 从来不是难点（一年前 Simon Willison 的定义至今够用），难点是 loop 周围的一切——沙箱、存储、secrets、网络、Memory 归属、可观测性。harness 的产品赌注因此不是"更聪明的编排"，而是把 AgentCore 六大原语的接线工作从每次新用例的重复劳动降级为配置项。这与 [harness 作为产品表面](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-as-product-surface.md) 的判断一致：当基础设施可配置化，团队的迭代瓶颈就从工程迁移到决策。
+
+### 模型可移植性是架构约束，不是功能列表
+
+mid-session 无感切换四种 provider，表面是便利功能，实质上约束了整个 harness 的内部架构：会话上下文必须与 provider 的对话格式解耦并独立序列化，否则切换即断代。值得注意的配套设计是凭证隔离——provider API key 全部收进 AgentCore Identity 的 token vault，Agent 进程永远见不到原始凭证（参见 [Aws Bedrock Agentcore Identity Security](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-agentcore-identity-security.md)）。这意味着"用哪个模型"从架构决策降格为运营决策：做价格对比测试、逃离回归版本、规划-执行分模型，都不再触发重写。
+
+### GA 相对 preview 的实质变化：从"能用"到"有运营闭环"
+
+preview 时期的 harness 只解决"定义和运行"；GA 补齐的是运营闭环。最典型的证据是 Memory：preview 需要单独预配 Memory 资源再传 ARN（"多一次 API 调用、容易在上生产路上忘掉"），GA 改为缺省自动托管且可一键切换 BYO——细节是托管 Memory 并非黑盒状态，而是账户里可查询、可审计、可挂到其他 Agent 的真实 AWS 资源。再加上统一可观测性面板（一条 invocation 跨 runtime/memory/gateway/工具，过去要开五个 tab 拼图）、Evaluations 打分、optimization 基于分数生成 prompt/工具描述建议并用 Gateway 做 A/B 流量验证（呼应 [Eval Optimizer Firewall](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/eval-optimizer-firewall.md)）、immutable version + 端点回滚——公告把问题从"does it work"正式推进到"is it improving"。
+
+### Export to code：对锁定效应的结构性回答
+
+配置化平台最常见的质疑是锁定。GA 的答案是 `agentcore export harness`：一条命令把 harness 导出为 Strands 代码，模型、prompt、工具、Memory 接线、skills、容器环境全部保留，计算路径与可观测性不变。公告自己强调的措辞很准确——"这是 config-to-code 翻译，不是架构切换"。Claude Agent SDK 作为第二个导出目标在路上。结合 `InvokeAgentRuntimeCommand`（不经模型、不耗 token 的确定性 shell 通道），harness 实际上给了两条逃生通道：确定性操作下沉到 shell API，复杂编排整体迁出为代码。托管 Memory 默认级联删除、`deleteManagedMemory: false` 可保留的设计，则体现了类似的"资源归用户"取向。
+
+### 定价模型透露的产品哲学
+
+无 harness 附加费，全部按底层能力实际消费计费：Runtime 按 vCPU/GB 小时的 active-consumption（模型和工具 I/O 等待期不计费）、Gateway 按千次调用、Memory 按千次事件/检索。这个模型与 [Agent Memory 架构](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-architecture.md) 中"Memory 是可计价的独立资源层"的判断互相印证——harness 不打包溢价，意味着它卖的是集成而不是资源本身。对使用者的推论是：成本优化点回到了单原语层面（比如用 `InvokeAgentRuntimeCommand` 替代让模型"想"一遍 git 操作），而非寻找 harness 之外的替代品。
 
 ## 相关主题
 
