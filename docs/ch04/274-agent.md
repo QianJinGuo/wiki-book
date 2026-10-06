@@ -1,6 +1,6 @@
 # Agent 可观测体系五层架构
 
-> 📊 Level ⭐⭐ | 7.8KB
+> 📊 Level ⭐⭐⭐⭐ | 13.5KB
 
 ## 摘要
 
@@ -97,6 +97,44 @@ Agent 不是普通服务，每一次推理、工具调用、检索、子 Agent �
 **三层 Span 模型**：Agent Span（一次业务请求）/ Model Span（一次模型调用）/ Tool Span（一次工具执行）；Session（用户会话，含多个 Trace）→ Trace（一次请求/一轮对话）→ Span（执行阶段）。工具调用 Trace 可还原模型决策/工具执行/最终回答，实现"会话透明复盘"。
 
 **敏感内容治理**：TLS_TRACE_CAPTURE_CONTENT 开关控制是否采集 Input/Output/工具参数/工具结果；关闭后模型/Token/耗时/状态观测信息仍保留——生产环境结合业务数据治理要求配置采集范围，避免密码/AK/SK/API Key 进 Trace。
+
+## 深度分析
+
+### 为什么 Agent 可观测 ≠ 传统 APM/Tracing
+
+传统 APM 的对象是确定性服务：请求路径固定，latency / error rate / QPS 足以判定健康。Agent 系统则不同——每一次推理、工具调用、检索、子 Agent 协作都是动态分支，且"请求成功"（HTTP 200）不等于"回答正确"。幻觉、工具选择错误、计划走偏都属于业务层失败，基础设施指标完全看不到；这正是"回答错位时难以区分 RAG 召回失败还是模型幻觉"的根源。因此五层架构必须把评测层（LLM-as-a-Judge 五维评分）作为一等公民，而不能像传统 APM 那样止步于 trace 与 metrics。相关分层对比见 [LLM 可观测四层模型](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/llm-observability-4-layer-model.md)。
+
+火山引擎的四层堆栈（业务应用 / Agent 框架 / 大模型推理服务 / 云基础设施）进一步暴露了传统 APM 的盲区：链路断（跨层上下文透传丢失）、语义断（供应商链路标准语义不对齐）、因果断（底层硬件指标与上层推理逻辑脱节）——这三类断层在经典 distributed tracing 里没有对应物，需要框架原生的遥测埋点才能弥合。
+
+### 五层如何映射到 trace → metrics → eval → drift → cost
+
+- **运行层 + 遥测采集层 → trace / metrics 源头**：无侵入采集（OpenTelemetry 标准、零代码埋点）决定后续一切数据的完整性；采集必须在框架内原生内置，而非事后打补丁。
+- **数据处理管道 → metrics / eval 的质量前提**：脱敏、清洗、聚合三步过滤三类污染源（用户隐私、模型杂乱输出、工具冗余 JSON），未治理的 trace 会直接污染下游评测与告警的置信度。
+- **评测层 + 评测引擎 → eval**：正确性 / 相关性 / 幻觉检测 / 工具选择 / 计划质量五维评分，把"回答是否正确"变成可持续测量的指标。
+- **数据存储与处理层 → drift / cost 的账本**：ClickHouse 按 trace_id 点查、PostgreSQL 的 score + model_name + version 复合索引，是检测相对退化和按子 Agent 归因成本的数据基础。
+- **可视化与消费层 → 分角色消费闭环**：开发看 trace 详情与单步耗时，运维看告警（幻觉率 >5% / 单次 cost >$0.5），产品看成本趋势与质量分数——同一份数据在不同角色那里收敛为不同的"真相"。
+
+### 评测基准漂移：整个体系中最难的问题
+
+漂移有两个来源：一是 **Judge 模型漂移**——LLM-as-a-Judge 认可的答案，换一个 Judge 模型后不再认可；二是 **指标互损**——优化 Correlation（相关性）却伤害 Plan Quality（计划质量）。深一层看，绝对分数的效度完全依赖评测器的稳定性，而 Judge 本身就是 LLM，随版本、采样参数、prompt 措辞而变化；所以严格地说，被监控的不只是 Agent，还有评测器自己。工程上的对策是固定黄金评测集（内容永不变化）、每次同时跑黄金集 + 生产采样、以相对退化而非绝对分数作为决策依据。这与 [Agent 评测基准框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-evaluation-benchmark-frameworks.md) 中的基准维护思路一致，也呼应 [Eval Surface Rotation](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/eval-surface-rotation.md) 对评测面轮换的处理。
+
+### 火山引擎 SUPP 案例的运营层补充
+
+两份 SUPP 材料把架构图落成了运营细节：
+
+1. **采集性能是规模化前提**：OneAgent 统一采集器在 200K QPS 下吞吐比 OTel Collector 高一倍、重载节点负载降 50% 以上，靠的是发送并发度自适应、sortable slice 预排序、内存预分配/对象池——可观测自身的开销必须被当作一等工程问题。
+2. **观测→评测闭环的具体流程**：定位高价值 Trace（失败异常 + 高频典型链路）→ 回流成评测集 → 离线版本回归对比 + 在线误答率/Token 波动监控 → 沉淀提示词/检索/路由优化动作。
+3. **分层 SLI 直接对应 MTTR**：OpenClaw 六层 SLI（Channel 北极星 → Message/Session → 调度 → 执行 → 大模型工具 → 缓存命中），自研 Hook 在关键点采集，MTTR 整体降 80% 以上。
+4. **观测与推理解耦 + 采集合规**：TLS AgentLoop 的 LLM Observer SDK 不拦截调用，应用照常走 OpenAI 兼容客户端；Agent / Model / Tool 三层 Span 支持会话透明复盘；TLS_TRACE_CAPTURE_CONTENT 开关显式控制 Input/Output/工具参数是否进 Trace，防止密码/AK/SK 泄漏。
+
+## 实践启示
+
+1. **埋点进框架，不做事后补丁**：Agent 框架应原生内置遥测（OTel 兼容、零代码埋点），事后注入几乎必然丢失跨层上下文。
+2. **先治理再入库**：脱敏、清洗、聚合是评测可信的前提；用采集开关（如 TLS_TRACE_CAPTURE_CONTENT）显式划定敏感内容边界。
+3. **评测只信相对退化**：固定黄金评测集，同时跑黄金集 + 生产采样，警惕 Judge 模型漂移与指标互损，绝不用裸绝对分数做回归判断。
+4. **存储按查询模式选型**：Trace 用 ClickHouse（点查快）、评测结果用 PostgreSQL（复合索引）、日志用 Loki——选错的代价是查一次 Trace 3 分钟。
+5. **把 trace 变成评测集**：定期将失败异常 + 高频典型链路回流为评测数据，驱动提示词/检索/路由迭代，形成观测→评测→优化的闭环，而非只把 trace 当排障工具。
+6. **成本观测下钻到子 Agent 并设阈值**：单次 cost >$0.5 即告警、按子 Agent 归因烧钱点，否则"成本黑洞"只能靠月账单事后发现；可参考 [AI 成本优化框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/ai-cost-optimization-framework.md) 与 [阿里云 Agent 可观测优化综述](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-observability-optimization-survey-aliyun-2026-09.md)。
 
 ## 关联
 - 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)

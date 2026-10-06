@@ -1,6 +1,6 @@
 # AWS WAF AI Traffic Monetization — 内容所有者向 AI 收费的网络层基础设施
 
-> 📊 Level ⭐ | 5.7KB
+> 📊 Level ⭐⭐⭐ | 8.5KB
 
 > Source: [原文存档](https://aws.amazon.com/blogs/aws/aws-waf-adds-ai-traffic-monetization-capability-to-help-content-owners-charge-ai-bots-for-content-access/)
 
@@ -80,6 +80,20 @@ WAF Bot Control 必须**先启用**（Common 或 Targeted level），monetizatio
 - 出版商可立即把 AI bot 流量**从成本中心转为收入中心**
 - 与传统广告 + 订阅模式形成**第三条变现路径**
 - 适用于：新闻网站、技术文档站、API 内容、付费数据库
+
+## 深度分析
+
+### x402 计费闭环：HTTP 402 首次成为可运营的边缘组件
+
+HTTP 402 Payment Required 在 HTTP 规范中沉睡三十余年，本能力第一次把它变成可运营的计费组件。当 Monetize 规则命中请求，AWS WAF 在边缘直接返回 402，响应体是符合 x402 开放协议的机器可读 JSON 价格清单——包含 USDC 标价、接受的区块链网络（如 Base、Solana）、目标钱包地址、最大支付超时与 payment scheme。任何 x402 兼容的 agent runtime 都能自治完成整个流程：客户端提交签名支付授权 → WAF 验证授权 → 拉取源内容 → 通过第三方 facilitator 在链上结算 → 返回响应。关键在于：这套流程对 bot 是协议级的，对出版商是零代码的，双方都不需要定制集成。
+
+### 验证分层 × 动作矩阵：识别与计价的解耦点
+
+Bot Control 对 650+ 种 AI bot/agent 类型分类（GPTBot、Claude-Web、Perplexity-Bot 等），并归入两个验证层级：**Verified**（通过 Web Bot Auth 的 Ed25519 密码学签名确认，或来自有已知 user-agent 与域名集合的公开 IP 段）与 **Unverified**（仅靠 user-agent 匹配、行为指纹与 IP 信誉识别）。每个验证层级可独立配置六种动作：Monetize（返回 402 报价）、Allow（免费放行）、Block、Count（仅记录）、CAPTCHA、Challenge。 这个设计把"我是谁"（验证）与"我付多少"（计价）拆成两个正交维度——同一站点可以对 Verified agent 免费放行、对 Unverified agent 收费，这是传统 robots.txt 和 block 列表在表达能力上无法企及的治理粒度。
+
+### 边界与风险：范围、资金与灰度路径
+
+能力有明确的技术边界：Monetize 动作**仅支持关联 CloudFront distribution 的 web ACL**，regional web ACL 不支持；结算只走稳定币（USDC），AWS 不经手资金、不抽成，钱包由内容方自管或托管。上线路径内置了灰度机制：先用 Test 模式在 Base Sepolia / Solana Devnet 用水龙头测试资金跑完整 x402 流程（仍强制真实支付流程，仅换测试链，事件标记 `CurrencyMode: TEST`），再切回 Real 模式——而 AI access monetization 收入看板只统计 Real 模式活动。风险在于定价决策依赖 AI traffic analysis dashboard 的流量画像：per-path 热力图与带宽/成本指标决定每条路径的 Base price per page，定价过高会把 agent 逼向无授权爬取，定价过低则只是把基础设施成本转成微薄收入——价格发现本身没有协议解法，仍靠出版商迭代。
 
 ## 实践启示
 
