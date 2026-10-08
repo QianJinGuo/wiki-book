@@ -1,6 +1,6 @@
 # 高德交易 VOC 自动排查：基于 Hermes 的多 Agent 架构实践
 
-> 📊 Level ⭐ | 7.1KB
+> 📊 Level ⭐⭐⭐ | 12.2KB
 
 高德技术使用 Hermes Agent 构建多 Agent 架构实现交易 VOC（Voice of Customer）自动排查系统。系统由主调度 Agent（首席调度官）+ 多个领域专家 Agent 构成，实现"零后端编排代码"的纯 Agent 生产级系统，诊断准确率 **86%**，排查效率从小时/天级→分钟级。
 
@@ -70,6 +70,34 @@ Hermes slash 命令访问控制：管理员白名单 vs 普通用户白名单。
 - **自进化闭环**：Memory+Curator 机制与 [Hermes Memory 系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-memory-system.md) 一致——管理员纠正→写入 Memory→Curator 整理→下次更新
 - **Hook 扩展**：无侵入定制策略与 [Hermes SOUL.md 人设系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-soul-md-personality-shugex.md) 互补——SOUL 定义行为，Hook 定义自定义逻辑
 - **路由精细化**：主调度 Agent 的模糊描述→精确领域映射，与 [Flow2Spec 结构化知识路由](https://github.com/QianJinGuo/wiki-public/blob/main/entities/flow2spec-structured-knowledge-routing-ctrip-2026.md) 的路由思想一脉相承
+
+## 深度分析
+
+### 主从分离为什么在 VOC 场景成立
+
+VOC 输入的本质是非标准化的模糊人类语言——"看不到""订不了""信息不对"这类描述，既缺少技术上下文也缺少领域术语。原文给出的酒店路由精细化案例（"看不到/进不去/订不了"→货架、"信息不对"→商品、"下单/支付失败"→交易）说明分诊本身就是一项需要经验积累的判断工作，而这正是传统 VOC 排查"分诊靠经验"困境的根源。
+
+主调度 Agent"只路由不推断根因"的约束，本质上是对 [编排者-工作者架构](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/orchestrator-worker-architecture.md) 的一次任务域适配：VOC 排查的根因知识深嵌在各交易子领域（供应链状态机、支付渠道、营销规则）中，任何单一 Agent 都不可能同时持有全部领域的排查工具链。把路由与根因推断切开，意味着每次演进只需修改一个局部——路由规则变了不动专家，专家工具链升级了不动路由。这与 [Agent 角色专业化](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-role-specialization.md) 中"角色边界即演进边界"的判断一致。主从架构的落地载体是 SOUL.md + voc-troubleshooting Skill，路由规则因此成为可版本化、可被案例反推修正的知识资产而非硬编码逻辑。
+
+值得注意的一个结构性信号：诊断准确率 86% 的上限主要由路由质量而非专家能力决定——分错了领域，再强的专家也无力回天。这解释了为什么系统把最多的自进化投资放在路由层（真实案例反推修正路由规则），而不是放在专家侧。
+
+### 自进化闭环：案例库、路由规则与 Memory 的三层分工
+
+原文描述的三层自进化并非平行的三条路径，而是对应三种不同时间尺度的记忆形态：
+
+1. **案例库（references/ 下数十个真实案例文档）是"慢层"**——它以文档形式固化单次排查的完整路径，价值在于可复现性：同类问题再次出现时按需加载即命中历史结论。但系统明确约束"知识库命中不等于跳过专家"，必须仍调用专家 Agent 给出本次结论——这是一条防御性设计，防止案例库退化为过时结论的复读机。
+2. **路由规则进化是"中层"**——以真实案例为输入反推修正（预付退款延迟、供应商类目混淆），节奏以周/月计，直接决定分诊准确率的爬升曲线。
+3. **Memory+Curator 闭环是"快层"**——管理员的一次纠正写入 Memory、Curator 整理后下次生效，这是天级的反馈回路，与 [Hermes Memory 系统](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-memory-system.md) 的设计直接对应。
+
+这个三层分工与 [Agent 自我改进循环](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-self-improvement-loops.md) 的通用框架相互印证：自进化系统的关键不是"有没有学习机制"，而是不同粒度的知识是否落在正确的更新通道上——把一次纠正塞进案例文档会太慢，把领域负责人名单写进路由规则又会太脆。
+
+### Hook 非侵入定制与两级管控：企业采纳的工程与治理底座
+
+"严禁直接修改 Hermes 源码、所有定制优先通过 Hook 实现"是一条团队纪律而非框架限制。其工程逻辑在于：Agent 框架本身在快速迭代，fork 源码意味着每次上游升级都要重新合并补丁；Hook（topic-reset、auto-sethome）把定制逻辑放在框架版本演进的正交面上，维护成本从随升级次数线性增长降为常数级。唯一的例外通道 platform-ack 也被设计为 gateway:startup 时执行幂等 patch——即便不得不动源码，也要把改动收敛为可重放、可审计的脚本而非手工散改。这种"Hook 优先、幂等 patch 兜底"的分层策略对任何在快速演进框架上构建生产系统的团队都有借鉴意义。
+
+两级角色管控（管理员白名单 vs 普通用户白名单的 slash 命令拦截）则回答了 Agent 系统进入企业的一个治理前提：普通问答不受影响，只有具备副作用的命令（开新会话、写配置、触发排查）才被权限分层——这是以最小侵入换取可部署性的典型取舍，与 [Agent 安全架构](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-security-architecture.md) 中"按能力而非按身份控权"的思路同源。配合一专家一密钥的最小权限隔离，系统把"谁能做什么"约束在了配置层而非代码层。
+
+最后，运维三件套（30 分钟 cron 健康巡检告警、全链路 sessions 审计保留 90 天、结论自动 @ 领域负责人闭环）说明：纯 Agent 系统要成为生产系统，信任不是来自模型能力，而是来自可观测、可审计、责任到人的外围基础设施——这部分恰恰是最传统的工程，也是零代码编排得以被组织接受的前提。
 
 ## 实践启示
 

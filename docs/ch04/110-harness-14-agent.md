@@ -1,6 +1,6 @@
 # Harness 工程 14 步路线图：从单 Agent 到自改进系统
 
-> 📊 Level ⭐⭐ | 7.0KB
+> 📊 Level ⭐⭐⭐ | 11.2KB
 
 ## Harness 工程 14 步路线图
 
@@ -99,6 +99,28 @@ Agent 即时编写 JavaScript 编排逻辑：`agent()` 生成子进程、`parall
 - [软规则 vs 硬约束](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-governance-soft-rules.md)：深入分析 CLAUDE.md 软规则的治理陷阱
 
 → [原文存档](https://mp.weixin.qq.com/s/p1OeUgazStV_LL56zUfRfA)
+
+## 深度分析
+
+### 1. "自改进"的外置化：学习从权重转移到环境
+
+这篇路线图最反直觉的论断是"不是模型在学习，而是 harness 在积累"。它把自改进的定义权从模型层挪走：模型权重冻结，改进以教训、技能、状态文件的形式沉淀在环境里。这与 [Agent Self Improvement Loops](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-self-improvement-loops.md) 中常见的权重更新路线形成方法论分叉。外置学习的独特优势是可审计、可版本控制、可团队共享——harness 的每次改进都是 git 里的一次 diff，而权重学习是黑箱。代价同样明显：harness 积累的是碎片化启发式（"Windows runner 用 bash"、"大表迁移分批"），依赖"状态文件→技能"的毕业机制做抽象，而这条提炼链的上限取决于审查者的判断力，不具备模型参数化知识那种泛化能力。自改进的复利在这里是记账式的，不是涌现式的。
+
+### 2. 撤回难度作为权限设计的第一性原理
+
+第 6 步把"出了问题撤回有多难"作为 autoApprove/deny 的唯一判据，这比常见的"风险等级"分级更根本：它衡量的是不可逆性，而非事故概率。这与分布式系统里"可补偿操作乐观执行、不可补偿操作悲观拒绝"的思想同源。更非显然的一点是：中间地带"如果有日志记录，也可以自动批准"——意味着可逆性不是操作的固有属性，而是基础设施投资建构出来的属性。审计日志越完善，可自动化的边界越宽。这条原理可以推广：harness 工程的很大一部分工作，本质是在为"让更多操作变得可撤回"购买基础设施。
+
+### 3. 写作者 vs 检查者：独立性是一种会衰减的稀缺资源
+
+第 7 步的核心机制是全新上下文窗口的审查子 Agent 能发现写作者自己看不到的问题——根因是模型对共享上下文中的自身产出过度宽容，分离上下文等于做一次无偏采样。这与 [Loop Engineering Methodology](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/loop-engineering-methodology.md) 中的对抗性验证、generator-critic 模式同构，也和 [Agentic Code Review Addyosmani](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentic-code-review-addyosmani.md) 的实践一致。但路线图没有展开一个隐含问题：审查者的独立性不是一次性的，而是随使用衰减的资源——审查子 Agent 若长期积累记忆、规则或偏好，它会逐渐与主 Agent 的产出分布趋同，"全新视角"的增益随之稀释。长期运行的自改进系统是否需要定期重置审查者、或在多个审查者之间轮换，是一个值得追踪的开放问题。
+
+### 4. 循环是增益系数而非增量：放大的非对称性
+
+"好 harness 上的循环会复利增长，差 harness 上的循环只会更快地消耗资源"——这句话的数学结构比修辞更重要：循环不添加任何智能（第 10 步明言"循环不增加智能"），它只是把 harness 质量×时间。因此循环是乘法算子，harness 质量为负时自动化的产出就是负复利。这解释了为什么构建顺序（先手动可靠、再配置、再记忆、最后套循环）是硬约束而非最佳实践建议：在未验证的系统上自动化，等于把错误锁定在定时器里。[When Not To Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/when-not-to-harness-engineering.md) 讨论的边界条件正是这一非对称性的另一面。
+
+### 5. Harness 即配置即代码：从个人习惯到组织基础设施
+
+第 14 步的深层含义常被"打包分享"一句带过：harness 把工程规范从口口相传的团队文化变成了可执行的工件——钩子是规范中不可协商部分的"编译产物"（模型无法绕过退出码），技能是最佳实践的打包分发，rules/ 是作用域化的编码规范。这与 [Claude Code Governance Soft Rules](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-governance-soft-rules.md) 的软规则治理形成互补：软规则负责判断性约束，硬约束交给钩子。与 [Claude Code Large Codebase Harness Configuration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-large-codebase-harness-configuration.md) 的企业实践对照可见，真正的开放问题在组织层：各团队 fork 插件后 harness 会漂移，规范一致性如何长期维持；harness 作为共享资产的版本管理、兼容性和安全审计（路线图已警告"不扫描就发布"）都还没有成熟答案。harness 工程正在重复 DevOps 走过的路：先个人脚本，后基础设施即代码。
 
 ## 相关实体
 

@@ -1,6 +1,6 @@
 # Superpowers 深度解读（2）：Rule/Gate/Hook 与 Iron Law 方法论
 
-> 📊 Level ⭐⭐ | 6.8KB
+> 📊 Level ⭐⭐⭐⭐ | 12.2KB
 
 > 原文归档：[原文归档](https://mp.weixin.qq.com/s/tUstpkIRaD71YYfanBSANA)
 
@@ -101,6 +101,36 @@ Jesse 自觉用 Cialdini《影响力》六原则（authority/commitment/liking/r
 **不适合**：一次性脚本 / 极小 bug fix / 架构已了然只需"打字员" / 模型能力不够
 
 Jesse 探索第二种 mode："iterative greenfield"——不走 spec-first，从行为示例反向生成 spec 再 clean reimplement
+
+## 深度分析
+
+### 三层控制栈：Hook 是地基，Gate 是骨架，说服是缓冲层
+
+把 Rule/Gate/Hook 分类学、Iron Law 和 Cialdini 说服原则放在一起看，Superpowers 实际上构建了一个三层控制栈：最底层是 SessionStart Hook 这样的确定性软件，行为可预测、完全不可协商；中间层是 HARD-GATE，把关键转换（先有 design doc 才能 brainstorm、先看到测试失败才能写实现、先跑命令才能宣称完成）做成阻塞式检查点；最上层才是 Cialdini 式的说服性措辞，用来覆盖 gate 无法穷尽的情境判断。三层各司其职——能用确定性解决的绝不交给提示词，能用 gate 锁死的才 fallback 到说服。
+
+Iron Law 是这个栈里最极端的 gate 实例：它的惩罚不是"重来"而是"删除"——代码在测试之前写出来就必须删掉从头实现，连"参考着改"都不允许。这种不可逆性正是 gate 区别于 rule 的本质：rule 的违抗成本接近零（"这次先跳过"），而 Iron Law 把违抗成本设为全损，使 rationalize 在经济上不再划算。
+
+### enforcement 与 knowledge transfer 的自举闭环
+
+社区批评中最尖锐的一条是："模型已读过 100 本 TDD 的书，再喂 SKILL.md 能加什么？"文章的回答是价值在 enforcement 而非 knowledge transfer——但更深一层的综合是：Superpowers 把"纪律"本身当成了一个独立的、可测试的工程对象。writing-skills 的 RED-GREEN-REFACTOR 循环本质上是给 prompt 写测试：先记录 agent 如何 rationalize 出捷径（RED），再针对观察到的借口写反驳（GREEN），重跑看它找什么新借口（REFACTOR）。
+
+这构成一个自举（self-hosting）结构：写 skill 的方法论本身就是被这套方法论约束的产物。$5k/分钟宕机案例里 agent 在金钱压力下选 A、暴露 skill 不够硬，随后加更强的优先级——这是对"纪律工件"的一次完整 TDD 迭代。纪律不再是文档，而是和代码一样经历失败观察、修复、回归测试的活体资产。
+
+### 三重嵌套的对抗式验证体系
+
+对抗式测试在框架里出现了三个层级，共享同一个 RED→GREEN 哲学：代码层的 Iron Law TDD（测试先行且必须观察到失败）、skill 层的 prompt TDD（没有看过 agent 失败就不写 skill）、以及社区层面的 A/B 验收（12-session 对照：6 次带框架 vs 6 次不带，token 反而省 14%）。三个层级互相补位——代码测试验证实现正确性，skill 测试验证纪律有效性，A/B 验证整套流程的净收益。这回应了"无 benchmark"的批评：虽然不是严格对照实验，但验证的粒度从单点行为一直延伸到端到端成本。
+
+### 失败路径是设计出来的，不是发生了再说
+
+这套体系的隐含假设是 agent 一定会失败，所以失败路径被预先编码：Phase 4.5 规定 3 次 fix 失败即 STOP 回到根因调查（"不是假设失败，是架构错误"）；用户的 redirect signals（"Stop guessing"/"Ultrathink this"）被定义为必须触发回到 Phase 1 的硬信号；receiving-code-review 规定 6 条意见只懂 4 条必须停下问清楚；finishing-a-development-branch 把开放式问题压缩成四选一。整个设计把"卡住"从异常变成预期事件，每个卡点都有预设的退路和升级规则。
+
+## 实践启示
+
+- **改造自己的 agent 约束时，先问"这是 Rule 还是 Gate"**：凡是带"以后记得"字样的指令都是可 rationalize 的 rule；改写模板是 "Before you do X, verify Y. The next action is blocked until Y holds."——把检查点前移到动作之前，让绕行在物理上不可能。
+- **写任何 skill 之前先跑一次"无 skill 实验"**：观察 agent 在没有该 skill 时如何抄捷径、记录它的原始借口，再针对这些借口逐条写反驳。没看过失败就写出来的 skill，教的可能根本不是对的东西。
+- **维护一张持续追加的 anti-rationalization 表**："Skip just this once"/"sunk cost"/"manual testing is enough" 这类借口会换马甲重现——每当观察到新借口，把它和反驳一起写进 skill，就像修 bug 一样修纪律。
+- **按任务等级决定流程重量**：gate 体系在 15 秒能糊出原型、25 分钟跑完五阶段的项目上收益最大（"看着像"变"重启能保存"），但对一次性脚本和"打字员式"任务是纯开销。先估任务等级再决定上不上全套流程，弱模型（会跳步骤的那类）直接不用。
+- **把失败预算写进工作流**：给自己设定硬性 STOP 触发器（如 3 次修复失败强制回根因），并把开放式收尾问题结构化成有限选项——这两条成本极低，却把最常见的两类 agent 失控（无限打转、自由发挥）关进了笼子。
 
 ## 相关实体
 

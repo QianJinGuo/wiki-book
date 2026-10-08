@@ -1,6 +1,6 @@
 # 异步调用模式：Serverless 流水线中调用 Agent（避免空闲计算成本）
 
-> 📊 Level ⭐ | 7.2KB
+> 📊 Level ⭐⭐⭐ | 11.4KB
 
 > **Background**：本文基于 AWS ML Blog 对 Amazon Bedrock AgentCore 异步调用模式的系统分析建立。核心问题是通用且可迁移的——Agent 在回答前会"思考"一段时间，而阻塞式调用会让调用方在等待期间持续付费。文章给出三种异步模式（task-token 回调 / 直接服务集成 / durable function）及其与阻塞反模式的成本对比。
 
@@ -51,6 +51,33 @@ Step Functions 用 `waitForTaskToken` 集成调用 Lambda，传入 task token �
 - **Pattern 3 durable function**：希望在一个函数里表达复杂异步工作流时。
 
 核心结论：把 Agent 放进流水线是简单部分，**经济地调用它才是原型与生产设计的区别**。一个阻塞在 Agent 上的 Lambda 实现简单但悄悄昂贵——大部分计费时间都在空等。
+
+## 深度分析
+
+### 成本归属的不对称性：账单落在调用方一侧
+
+AgentCore runtime 是消耗型计费：Agent 等待 LLM 生成、等待 tool/MCP 返回时只收内存费、不收 CPU 费；而发出同步调用的 Lambda/容器/EC2 全程持有并支付完整计算配额。这种计费不对称决定了"浪费"永远落在空等的一侧——调用方的计费时长约等于 Agent 的整个处理时间，Agent 侧却对思考时间几乎无感。[AI 成本优化框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/ai-cost-optimization-framework.md)中"先定位谁在付费、再谈优化"的思路在此直接适用。
+
+### 换编排不用改 Agent：return-of-control 作为解耦契约
+
+三种异步模式能共享同一个 Agent，靠的是 Agent 内部的 return-of-control action：收到 task token 就唤醒 Step Functions 执行，收到 durable-function callback ID 就唤醒 durable function，两者都没有就同步内联返回。这是个干净的契约设计——调用协议由 Agent 运行时探测而非部署时绑定，编排层可独立演进（阻塞原型 → task-token → 直接集成）而 Agent 零改动、零重部署。
+
+### 度量陷阱：总时长不是指标，billed duration 才是
+
+总流水线时长被 Agent 自身推理时间主导、每次运行都不同，用它比较模式毫无意义；有意义的只有两个值的关系——task-token 模式下 Validate state 活跃 19.6s，dispatcher 函数只计费 4.8s，中间 ~14.8s 等待期没有任何 Lambda 在运行。验证很具体：Step Functions 事件历史里 `TaskSubmitted` 与 `TaskSucceeded` 的间隔就是释放掉的等待期，X-Ray 把"Agent 思考 vs 调用方等待"直接可视化。
+
+### 复杂度与成本的真实权衡
+
+三种模式都消除空闲计算，但代价分布不同：Pattern 2（直接集成）最简单、调用方成本为零，但业务逻辑只能写进 ASL intrinsic functions；Pattern 1/3 保留自定义逻辑，代价分别是 token/callback IAM 配置和 checkpoint/replay 心智模型。模式选择的实质不是"哪个省成本"（三个都省），而是**业务逻辑住在哪一层**——Lambda、状态机定义、还是单个 durable function 的顺序代码。
+
+## 实践启示
+
+1. **改造前先算一笔"空等账"**：用 X-Ray 或 CloudWatch REPORT 读出阻塞 Lambda 的 billed duration，对照 Agent 实际处理时长——差值就是切换异步模式能省下的部分，也是证明改造值得做的最直接证据。
+2. **把 `sessionId` 派生自执行上下文**（如 Step Functions 执行名）而非随机生成：重试时恢复同一 Agent 会话，避免重复付费重新推理。
+3. **每个 `waitForTaskToken` state 必须配 `TimeoutSeconds`**（Agent 发心跳则加 `HeartbeatSeconds`）：静默 Agent 应以 `States.Timeout` 干净失败并路由到失败/人工审查路径，而非永久挂起。
+4. **dispatcher 按速度配，不按 Agent 负载配**：它只序列化并发起调用，256MB + 30s 超时通常足够——过度配置是把阻塞模式的容量思维带进了异步模式。
+5. **优先考虑 Pattern 2 直接集成**：只要不需要调用点自定义代码，删掉 dispatcher 让 Step Functions 直接调 AgentCore，维护面最小、调用方成本恰好为零；确有 pre/post 逻辑才引入 Lambda。
+6. **总时长不是验收指标**：用"state 活跃时长 vs 函数计费时长"的比值验收；文章的 19.6s/4.8s 只是单次运行的关系示例，须在自己的工作负载上复测。
 
 ## 相关实体
 

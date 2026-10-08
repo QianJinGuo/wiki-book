@@ -1,6 +1,6 @@
 # How we built an internal data analytics agent
 
-> 📊 Level ⭐ | 7.0KB
+> 📊 Level ⭐⭐ | 10.8KB
 
 > 原文存档：[原文存档](https://github.blog/ai-and-ml/github-copilot/how-we-built-an-internal-data-analytics-agent/)
 
@@ -64,6 +64,24 @@ The benchmarking framework for evaluating Qubot across structured test cases has
 *   **Stats aggregation**: A reportin
 
 ---
+## 深度分析
+
+### 为什么内部数据分析 Agent 是高 ROI 的首选落地场景
+
+Qubot 的成功并非偶然：数据分析是大型工程组织里风险结构最友好的 Agent 部署场景之一。首先是权限面窄——它只读数据仓库（Trino/Kusto），不写生产代码、不碰用户数据、不触发外部副作用，blast radius 天然受控。其次是任务"模糊但宽容"：探索性问题（"哪个用户群留存最高"）没有唯一正确答案，答错不会造成损害，只会引导用户继续追问。第三是需求密度高：数十个产品团队各自为战地找数据分析师写 SQL，长尾需求根本排不过队；一个让任何员工用自然语言提问的入口，把分析师从重复劳动中解放出来，同时让从未敢碰数据仓库的人第一次获得了数据决策能力。零边际成本 + 立即可感的效率收益，使它成为向组织证明 Agent 价值的理想楔子。
+
+### Harness 设计取舍：为什么不用语义层，也不做裸 text-to-SQL
+
+Qubot 的架构走了第三条路：不做语义层（semantic layer）的重量级抽象，也不做直接把 schema 塞给模型的裸 text-to-SQL，而是把"领域知识"做成一个联邦化的上下文层（context layer），按数据仓库 bronze/silver/gold 的成熟度分级维护——产品团队贡献 schema 元数据，数据分析团队维护查询示例和强制过滤条件，业务团队贡献指标定义。运行时通过 MCP Server 按需加载。这个设计的深意在于：text-to-SQL 的瓶颈从来不在"生成 SQL"，而在知道该查哪个模型、哪个粒度、哪些过滤器——这些隐性知识被显式化成 markdown 文档并由 context agent 统一归一化。实验证明，结构化且精心策展的上下文不仅提升准确率，还让命中正确答案的速度快了三倍。这正是 [Context Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/context-engineering.md) 在数据分析域的实证，也呼应 [Harness Long Running Task](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-long-running-task.md) 中"知识资产沉淀在 harness 而非模型"的立场。
+
+### 数值答案的信任与校准机制
+
+数据分析 Agent 的独特难题是"答案看起来都对，数字可能错了"。Qubot 用三层机制建立信任：其一，评测框架把每一次上下文或配置变更都当作一次发布——PR 触发离线评测，用带 ground-truth SQL 的结构化测试集跑多轮并行试验，聚合完成率、准确率和延迟指标，回归在到达用户之前被拦截。其二，答案透明可追溯：结果以 markdown 报告落进 PR，用户能看到并微调底层查询，把"信任黑盒输出"变成"信任可检验的过程"。其三，双引擎路由（默认 Kusto 处理近期事件的探索性查询，需要复杂 join 和历史深挖时自动切 Trino）让用户无需理解引擎差异，降低了因选错引擎导致的隐性错误。这套"评测即发布门禁"的机制，本质上是 [Verifier Paradox](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/verifier-paradox.md) 所揭示问题的工程化对策。
+
+### 对大型工程组织 Agent 落地的启示
+
+Qubot 的部署路径给组织级 Agent 推广提供了可复制的模板：入口零门槛（Slack 零配置即用，VS Code/CLI 一条命令安装）照顾了不同技术水平的用户；分发即协作（Slack 线程里追问、报告进 PR）让每次提问都成为组织知识的一部分；而最关键的治理设计是把"教 Agent"变成各团队的日常贡献——团队用模板提交上下文知识，就像提交代码一样走 PR + 评测。这打破了"中心化平台团队养 Agent、业务团队观望"的常见困局，把 Agent 迭代变成联邦式活动，也符合 [Agent Engineering Capability Map](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-engineering-capability-map.md) 中能力分层由多角色共同承担的图景。另一个反直觉的经验：上线后专家渠道的提问量骤降但并未消失——Agent 处理长尾，人类专家留给了真正的难题，这是人机分工而非替代。
+
 ## 关联
 - 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 

@@ -1,6 +1,6 @@
 # DeepSeek-V4深度拆解：一篇论文同时做了五件大事
 
-> 📊 Level ⭐ | 7.4KB
+> 📊 Level ⭐⭐⭐ | 10.8KB
 
 > -> [原文存档](https://mp.weixin.qq.com/s/BELLFDV6hlmmFoAcJy1RZg)
 
@@ -57,6 +57,23 @@ DeepSeek与华为昇腾的深度合作是3-5年以上的战略计划。论文中
 ### 5. 生态系统动态的浮现
 DeepSeek与Moonshot的深度协作关系，暗示一种生态系统分工正在形成：DeepSeek专注硬核基础设施问题，其他方向由生态伙伴分头推进。32T token训练数据中约50%可能是合成数据，但这次DeepSeek将精力集中在基础设施、架构和规模化上，系统性重训练留到后续。
 
+## 深度分析
+
+### 三处大改：infra-first 的最短路径
+
+V4 没有推倒 V3 重来：MoE 框架沿用，动刀只有三处——残差升级 mHC、注意力拆成 CSA+HCA、优化器换 Muon。 三处各对应一个 V3 瓶颈：mHC 管深度稳定，CSA+HCA 管上下文算力，Muon 管训练效率。 这印证了 DeepSeek 的 infra-first 哲学：创新不在高层架构，而在信号流动与梯度更新两个底座上。背景见 [DeepSeek-V3 MoE 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-v3-moe-architecture.md)、[MoE 混合专家](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/moe-mixture-of-experts-2025.md)。
+
+### 算力受限下的效率押注
+
+训练方法论透着同一张底牌：算力受限，每 FLOP 的边际收益必须最大化。稳定性侧，1.6T 的 loss spike 连回滚都救不回来，最终靠 Anticipatory Routing 与 SwiGLU Clamping 救场，且 DeepSeek 坦承原理未完全理解。 推理侧，1M 上下文单次成本比 4K 高约 6 万倍，CSA+HCA 把 KV cache 压到传统 baseline 的约 2%，成本降至 V3.2 的约 1/4。 后训练侧，混合 RL 被整体替换为 On-Policy Distillation：分领域训专家、反向 KL 蒸馏合并，把 RL 的不稳定隔离在专家内部。 三层指向同一判断，详见 [DeepSeek-V4 训练方法论](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-v4-training-methodology.md)、[模型蒸馏与压缩](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/model-distillation-compression.md)。
+
+### 适用边界：偏科模式与工程代价
+
+评测呈清晰偏科：有明确答案的任务顶尖（Putnam 满分、Codeforces 3206），品味型任务掉档——Agent 落后闭源，工程编程距 Opus 4.6 差 13 分。 可信解释是招聘结构：竞赛选手主导的团队，品味直接塑造模型性格。 另有两点边界：128K 内性能稳定，1M 处降至 0.59、勉强可用； V4-Pro 因吞吐受限定价暂不便宜，性价比主要在 Flash 档。 "百万上下文 + 可接受价格"今天实际兑现的是 128K 级 Agent 场景，而非全量 1M。
+
+### OPD 的外溢价值与下一代伏笔
+
+OPD 的意义可能超出 V4：MoE 是推理时混合，OPD 是训练时混合，组合空间大得多——小团队可先训专家再蒸馏合并，新增能力只需训新专家入池，不必重跑 RLHF。 论文还把继续稀疏化（Engram 一脉）与原生多模态列入路线图，下一代轮廓是查找式记忆、多模态、更低延迟的 agentic。 换言之，V4 是基础设施级更新而非天花板突破：闭源卷上限，开源卷地板，地板抬高速度决定 AI 应用爆发的规模。
 ## 实践启示
 ### 对AI基础设施团队
 1. **重新审视通信与计算的重叠调度**：DeepSeek-V4展示了精细调度互联网络隐藏延迟的可行性。对于团队而言，这意味着在设计分布式训练框架时，需要将通信调度作为一等公民来考虑，而非事后优化。

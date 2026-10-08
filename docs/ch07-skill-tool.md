@@ -10,9 +10,9 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 3 |
+| ⭐ 入门 | 零基础可读 | 2 |
 | ⭐⭐ 工程师 | 需编程基础 | 7 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 20 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 21 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 17 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 13 |
 
@@ -36,24 +36,24 @@ Agent 能不能"动手做事"，取决于它有什么工具。
 
 ## 本章内容
 
-### ⭐ 入门（3 篇）
+### ⭐ 入门（2 篇）
 
-- [001. 高德交易 VOC 自动排查：基于 Hermes 的多 Agent 架构实践](ch07/001-voc-hermes-agent)
-- [002. 重新定义Skill开发：保姆级教程&一站式开发助手发布](ch07/002-skill)
-- [003. Building and connecting a production-ready ecommerce MCP server using Amazon Bedrock AgentCore and Mistral AI Studio](ch07/003-building-and-connecting-a-production-ready-ecommerce-mcp-ser)
+- [001. 重新定义Skill开发：保姆级教程&一站式开发助手发布](ch07/001-skill)
+- [002. Building and connecting a production-ready ecommerce MCP server using Amazon Bedrock AgentCore and Mistral AI Studio](ch07/002-building-and-connecting-a-production-ready-ecommerce-mcp-ser)
 
 ### ⭐⭐ 工程师（7 篇）
 
-- [004. 电商 AI 操作系统崛起：从「工具人」到「All in One」+ 行业 KnowHow Skill 化 + 5 巨头 Headless 布局](ch07/004-ai-all-in-one-knowhow-skill-5-headless)
-- [005. Agent Loop 架构三层模型：Loop + Skill + Orchestrator](ch07/005-agent-loop-loop-skill-orchestrator)
-- [006. 你写的 Skill，及格了吗？](ch07/006-skill)
-- [007. 我用 SKILL.md 做了一个简历生成器](ch07/007-skill-md)
-- [008. 当我把AI变成一个\"算法\"：Skill工程化设计的心路历程](ch07/008-ai-skill)
-- [009. 如何构建生产准备的AI代理：MCP、CLI与技能——适合合适的工作的工具](ch07/009-ai-mcp-cli)
-- [010. Introducing the MDN MCP server](ch07/010-introducing-the-mdn-mcp-server)
+- [003. 电商 AI 操作系统崛起：从「工具人」到「All in One」+ 行业 KnowHow Skill 化 + 5 巨头 Headless 布局](ch07/003-ai-all-in-one-knowhow-skill-5-headless)
+- [004. Agent Loop 架构三层模型：Loop + Skill + Orchestrator](ch07/004-agent-loop-loop-skill-orchestrator)
+- [005. 你写的 Skill，及格了吗？](ch07/005-skill)
+- [006. 我用 SKILL.md 做了一个简历生成器](ch07/006-skill-md)
+- [007. 当我把AI变成一个\"算法\"：Skill工程化设计的心路历程](ch07/007-ai-skill)
+- [008. 如何构建生产准备的AI代理：MCP、CLI与技能——适合合适的工作的工具](ch07/008-ai-mcp-cli)
+- [009. Introducing the MDN MCP server](ch07/009-introducing-the-mdn-mcp-server)
 
-### ⭐⭐⭐ 专家（20 篇）
+### ⭐⭐⭐ 专家（21 篇）
 
+- [010. 高德交易 VOC 自动排查：基于 Hermes 的多 Agent 架构实践](ch07/010-voc-hermes-agent)
 - [011. Embabel](ch07/011-embabel)
 - [012. SkillComposer: 生成式技能组合](ch07/012-skillcomposer)
 - [013. 微信读书官方skill与huashu-weread增强版](ch07/013-skill-huashu-weread)

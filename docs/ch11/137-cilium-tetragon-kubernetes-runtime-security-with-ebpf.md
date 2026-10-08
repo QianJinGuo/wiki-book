@@ -1,6 +1,6 @@
 # Cilium Tetragon — Kubernetes Runtime Security with eBPF
 
-> 📊 Level ⭐⭐ | 6.3KB
+> 📊 Level ⭐⭐⭐⭐ | 11.1KB
 
 > **Background**：本文档基于 Cilium 团队 2026-06-07 发布的官方技术长文整理，结构化提炼了 K8s 运行时安全威胁模型、Tetragon 的 eBPF 内核级执行机制、与传统容器隔离/镜像扫描的根本区别，以及 5 类典型威胁向量的应对思路。原文 35KB，发布在 cilium.io/blog。
 
@@ -57,6 +57,28 @@ Tetragon Agent (per-node)
         ↓
 Hubble Relay / Grafana / Falco Sidecar
 ```
+
+## 深度分析
+
+### eBPF 传感器 vs 传统安全探针：为什么"在哪观测"决定了上限
+
+原文反复强调一个结构性事实：Linux 上一切行为（网络、文件、进程）都必须经由 syscall 请求内核，因此内核是唯一无法被绕过的观测点；而用户态安全 agent 一旦面对拿到 root 的失控容器，可以被"致盲、绕过甚至杀死"。 这不是产品营销话术，而是观测者与被观测者的权限拓扑问题——**sensor 的权限层级必须严格高于 workload**，否则检测逻辑本身就在攻击者的攻击面之内。传统 rootkit 检测的困境正在于此。
+
+代价同样真实：eBPF 程序以 kprobes（动态挂任意内核函数）、tracepoints（静态标记、跨内核版本稳定）、uprobes（挂用户态库如 OpenSSL，在加密前看到明文）三类探针工作， enforcement 则走 LSM hooks。 这意味着 Tetragon 的能力边界与 Linux 内核版本强耦合——kprobe 挂载点的签名随内核演进漂移，跨异构集群的 policy 可移植性是工程上必须直面的成本，而这部分成本原文并未展开。
+
+### 观测与执行耦合在同一个内核循环里：性能模型与规则引擎范式的分野
+
+Tetragon 的性能故事本质上是**过滤下推（filter pushdown）到内核**：selector 在内核内丢弃无关事件，eBPF Maps 提供 O(1) 常数时间查找，对比 iptables 逐条匹配的 O(n) 顺序扫描；网络可见性也不抓包，而是 hook `tcp_connect`/`tcp_close` 生命周期函数，规避 tcpdump/DPI 的 CPU 开销。 换句话说，它把"收集全部数据再去分析"的 SIEM 模型倒转为"在数据源头只让该动的数据动"。
+
+这也解释了它与 Falco 式规则引擎的根本范式差异：Falco 类工具在用户态消费事件流再匹配规则，规则语言表达力强但**响应是异步的**；Tetragon 的 TracingPolicy 把 Hook Point → Selectors → Actions 三段式编译进内核，eBPF 程序同步运行，Sigkill/Override（改写 syscall 返回值为 EPERM）在系统调用完成之前生效。 表达力与实时性构成权衡：内核 eBPF 校验器限制了策略逻辑的复杂度，换来的是"攻击在完成前被终止"这一用户态引擎无法企及的时序保证。
+
+不过原文给出的 rollout 策略——新 policy 先 POST 检测模式观察、确认合法行为后再切 enforcement——暗示了另一个隐性约束： **inline kill 是一把高误伤风险的武器**。误 kill 生产进程的爆炸半径远大于误报告警，所以检测先行不是流程仪式，而是把"误报成本"前置消化的必要阶段。任何把 Sigkill 当默认动作的部署都误解了这套模型。
+
+### 部署拓扑启示：进程层 enforcement 是 Network Policy 的补集而非替代
+
+值得注意的层次区分：Cilium Network Policy 工作在网络层（pod-to-pod），Tetragon 运行时 enforcement 工作在进程层（哪个二进制发起的连接）；攻击者从被攻陷的 Pod A 用 netcat 连 Pod B 时，即使 CNP 允许 pod 间流量，进程层策略也能拦下——两者叠加才构成零信任。 部署上这意味着：装了 Cilium CNI 的集群，Tetragon 补的是"合法网络身份下的非法进程"这条盲区；而 Tetragon 也可以脱离 Cilium 独立运行（DaemonSet 逐节点加载 eBPF），此时它同时承担了部分网络可见性职责，观测数据流可以与 [OBI 等零代码 eBPF 观测方案](https://github.com/QianJinGuo/wiki-public/blob/main/entities/open-telemetry-ebpf-instrumentation-obi-zero-code-observability-aliyun-2026.md) 互补归流。
+
+对于合规驱动的组织，这套内核级审计 trail 的价值在于其**不可篡改性来自物理位置而非加密**：事件在内核产生，被攻陷的用户态进程无法回头抹掉。原文将其对应到 NIST SP 800-190（二进制 allow-list、敏感 syscall 限制）和 CIS Benchmark 作为 legacy 特权容器的 compensating control。 这提示一条演进路径：runtime eBPF 层最终会成为与镜像扫描、admission control 并列的第三根合规支柱——[安全观测与可观测性正在收敛为同一套内核基础设施](https://github.com/QianJinGuo/wiki-public/blob/main/moc/observability-monitoring.md)。
 
 ## 六、实践启示
 

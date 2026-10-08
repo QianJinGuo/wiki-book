@@ -1,6 +1,6 @@
 # Higress Qwen3Guard Wasm 插件：把 AI 内容安全做进网关数据面
 
-> 📊 Level ⭐ | 7.4KB
+> 📊 Level ⭐⭐⭐ | 14.2KB
 
 ## 概述
 
@@ -40,6 +40,33 @@ Qwen3Guard 推理服务不嵌入网关进程，插件经 Higress Wasm Go SDK 构
 - 三个 JsonPath 字段实为 GJSON Path 语法（不加 `$` 前缀）；apiKey 填原始值（插件自动加 Bearer 前缀）。
 - 上线前按「安全服务 → 网关外呼 → 插件策略 → 业务协议」四层逐级检查；调参顺序先内容路径/网络链路 → 阈值策略 → streamBufferChars/maxBodyBytes → timeoutMs。
 - 安全配置可能含 apiKey，勿提交仓库；HTTP wrapper 在特定日志级别可能打印外呼 headers，生产需日志脱敏或组件日志控制在 warn。
+
+## 深度分析
+
+### 为什么内容安全属于网关数据面，而不是应用层
+
+文章给出的核心论据是经济性而非技术炫耀：风险来源是双向的（用户输入 + 模型输出），如果每个应用各自维护审核 SDK、阈值和拒答逻辑，安全策略会散落在多个代码仓库，模型切换或策略升级时业务需要重复改造。网关是调用者与模型服务之间的必经路径，把审核放在这里意味着多个应用复用同一套接入与阈值，且业务零改造——不改应用代码、不改上游模型服务、沿用 Chat Completions 协议。这与 [安全护栏的三域演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aliyun-cloud-native-safety-guardrails-three-domains.md) 中"分层继承"的原则形成闭环：原则层说明为什么要收口，本文则展示了收口点具体选在 Envoy 过滤器链的哪个位置。选择 Wasm 插件而非修改 Envoy C++ 核心，是数据面扩展性的标准折衷——获得动态下发（WasmPlugin CR、matchRules 按路由生效）的能力，代价是受限于 Proxy-Wasm ABI 版本（0.2.100）。
+
+### 流式审核的时延/覆盖权衡：窗口大小的三重代价
+
+`streamBufferChars`（默认每 1000 个 Unicode 字符）的取值不是性能调优细节，而是三重权衡的支点：窗口越小，检查越频繁、Qwen3Guard 调用次数越多、端到端时延越高，但风险暴露的字节数越少；窗口越大则调用下降、吞吐更好，但两次检查之间可能有更多风险内容已经流出网关。文章没有回避这个方案的另一半代价：当前实现是"网关分段缓冲 SSE + 重复调用 Gen 审核累计文本"，Gen 模型反复处理累计文本产生重复计算，与 Qwen3Guard-Stream 原生逐 token 分类（专用分类头 + 流状态，避免重复处理历史 token）在计算复杂度上不可同日而语——作者明确拒绝把 Gen 能力包装成 Stream。这本质上是把"截断不可撤销"的流式语义强行套进"整体判断"的审核模型：命中风险后只能丢弃未释放数据并追加拒答 SSE，已发出的状态码和历史片段无法追回，所以流式拦截时 denyCode 根本不生效。同类"guardrail 放置位置 vs 流式时延"的权衡在 [LiteLLM + Bedrock Guardrail 的放置与流式时延分析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/litellm-bedrock-guardrail-placement-streaming-latency-2026.md) 中独立出现过，说明这是流式安全审核的通用难题，而非 Higress 特有缺陷。
+
+### fail-open 是策略决策，不是工程默认
+
+插件在安全服务超时/不可达/异常格式时 fail-open（记录警告并放行），理由是避免 Qwen3Guard 故障阻断全部 AI 业务。但文章的措辞值得注意："降低了对可用性的影响"被陈述为事实，而"失败窗口内不产生拦截"被同样诚实地列为后果，强制 fail-close 的合规场景当前版本不满足。这说明 fail-open 在这里是**显式的可用性优先决策**，附带一个隐含契约：运维必须用监控补上风险窗口——Qwen3Guard 可用率/时延/非 200/插件警告日志缺一不可。一个容易忽视的设计细节强化了这个立场：Safety 字段为未知字符串时应解析失败并 fail-open，而不是把未知标签猜成风险结果——宁可放行也不基于捏造的判断拦截，这是"不猜测模型结果"原则在失败路径上的对称应用。
+
+### 能力边界：插件解决"执行"，不解决"策略"
+
+当前插件可解析 Safety/Categories/Refusal 三级结果，但真正参与放行决策的只有 Safety 与 riskLevelBar，尚未实现按类别（暴力/PII/政治敏感等）配置不同动作。也就是说，这个方案把"判断"外包给了 Qwen3Guard，把"执行"收进了网关，而"差异化策略"仍然是空白——所有命中一律同等处理。对需要梯度响应（不同风险等级不同动作）的场景，[三域演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aliyun-cloud-native-safety-guardrails-three-domains.md) 中抽象出的梯度响应模式在此实现中尚未落地，这是评估该方案能否直接复用时的关键检查项。
+
+## 实践启示
+
+1. **安全策略收口到网关，而不是复制到每个应用**：只要团队有多个应用调用 LLM，把审核放数据面的边际成本就低于逐应用维护 SDK——前提是流量走网关这一假设成立。
+2. **流式审核不存在"免费"方案**：`streamBufferChars` 调小换覆盖、调大换时延，Gen 重复送检还有额外算力成本；对逐 token 级安全要求，应评估 Qwen3Guard-Stream 路线而非调参 Gen。
+3. **接受 fail-open 就必须监控风险窗口**：上线时同步建立 Qwen3Guard 可用率/时延/非 200/插件警告日志的监控；合规要求 fail-close 的业务当前版本直接不满足，别硬套。
+4. **插件 phase/priority 必须在 CR 显式声明**：推荐默认阶段 + priority 300，让请求侧先于 ai-proxy（看到原始 OpenAI 请求体）、响应侧在其后（看到归一化响应）；调整顺序就要同步调整三个 GJSON Path，否则提取静默失败。
+5. **验收只看客户端 200 会得出错误结论**：默认拒答状态码本身也是 200，必须交叉验证原模型是否真的收到请求、Qwen3Guard 调用次数和 Wasm 警告日志。
+6. **安全模型的故障域要与业务隔离**：Qwen3Guard 独立部署、独立扩缩容（四种 serviceSource），"服务已启动"≠"网关数据面已可达"，网络可达性要从 Envoy 所在网络验证而非开发机。
 
 ## 关系
 

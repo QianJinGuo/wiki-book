@@ -24,7 +24,7 @@
 
     <div class="home-stats__item"><span class="home-stats__num">20 章 · 5 篇</span><span class="home-stats__label">全书结构</span></div>
 
-    <div class="home-stats__item"><span class="home-stats__num">4,459</span><span class="home-stats__label">一手原文</span></div>
+    <div class="home-stats__item"><span class="home-stats__num">4,461</span><span class="home-stats__label">一手原文</span></div>
 
     <div class="home-stats__item"><span class="home-stats__num">★ × 5</span><span class="home-stats__label">难度分级</span></div>
 
@@ -66,9 +66,9 @@
 
 <p class="chapter-card__desc">理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:14.96%" title="⭐ 入门 · 73 篇"></i><i class="lv2" style="width:9.02%" title="⭐⭐ 工程师 · 44 篇"></i><i class="lv3" style="width:46.93%" title="⭐⭐⭐ 专家 · 229 篇"></i><i class="lv4" style="width:20.08%" title="⭐⭐⭐⭐ 科学家 · 98 篇"></i><i class="lv5" style="width:9.02%" title="⭐⭐⭐⭐⭐ 大师 · 44 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:14.14%" title="⭐ 入门 · 69 篇"></i><i class="lv2" style="width:9.43%" title="⭐⭐ 工程师 · 46 篇"></i><i class="lv3" style="width:47.13%" title="⭐⭐⭐ 专家 · 230 篇"></i><i class="lv4" style="width:20.29%" title="⭐⭐⭐⭐ 科学家 · 99 篇"></i><i class="lv5" style="width:9.02%" title="⭐⭐⭐⭐⭐ 大师 · 44 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 73 · ⭐⭐ 44 · ⭐⭐⭐ 229 · ⭐⭐⭐⭐ 98 · ⭐⭐⭐⭐⭐ 44</div>
+<div class="chapter-card__legend">⭐ 69 · ⭐⭐ 46 · ⭐⭐⭐ 230 · ⭐⭐⭐⭐ 99 · ⭐⭐⭐⭐⭐ 44</div>
 
 <ul class="chapter-card__samples">
 
@@ -153,9 +153,9 @@
 
 <p class="chapter-card__desc">什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:5.25%" title="⭐ 入门 · 21 篇"></i><i class="lv2" style="width:8.75%" title="⭐⭐ 工程师 · 35 篇"></i><i class="lv3" style="width:40.75%" title="⭐⭐⭐ 专家 · 163 篇"></i><i class="lv4" style="width:31.50%" title="⭐⭐⭐⭐ 科学家 · 126 篇"></i><i class="lv5" style="width:13.75%" title="⭐⭐⭐⭐⭐ 大师 · 55 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:5.00%" title="⭐ 入门 · 20 篇"></i><i class="lv2" style="width:8.75%" title="⭐⭐ 工程师 · 35 篇"></i><i class="lv3" style="width:41.00%" title="⭐⭐⭐ 专家 · 164 篇"></i><i class="lv4" style="width:31.50%" title="⭐⭐⭐⭐ 科学家 · 126 篇"></i><i class="lv5" style="width:13.75%" title="⭐⭐⭐⭐⭐ 大师 · 55 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 21 · ⭐⭐ 35 · ⭐⭐⭐ 163 · ⭐⭐⭐⭐ 126 · ⭐⭐⭐⭐⭐ 55</div>
+<div class="chapter-card__legend">⭐ 20 · ⭐⭐ 35 · ⭐⭐⭐ 164 · ⭐⭐⭐⭐ 126 · ⭐⭐⭐⭐⭐ 55</div>
 
 <ul class="chapter-card__samples">
 
@@ -179,17 +179,17 @@
 
 <p class="chapter-card__desc">给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:10.28%" title="⭐ 入门 · 11 篇"></i><i class="lv2" style="width:13.08%" title="⭐⭐ 工程师 · 14 篇"></i><i class="lv3" style="width:28.04%" title="⭐⭐⭐ 专家 · 30 篇"></i><i class="lv4" style="width:31.78%" title="⭐⭐⭐⭐ 科学家 · 34 篇"></i><i class="lv5" style="width:16.82%" title="⭐⭐⭐⭐⭐ 大师 · 18 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:9.35%" title="⭐ 入门 · 10 篇"></i><i class="lv2" style="width:12.15%" title="⭐⭐ 工程师 · 13 篇"></i><i class="lv3" style="width:28.97%" title="⭐⭐⭐ 专家 · 31 篇"></i><i class="lv4" style="width:32.71%" title="⭐⭐⭐⭐ 科学家 · 35 篇"></i><i class="lv5" style="width:16.82%" title="⭐⭐⭐⭐⭐ 大师 · 18 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 11 · ⭐⭐ 14 · ⭐⭐⭐ 30 · ⭐⭐⭐⭐ 34 · ⭐⭐⭐⭐⭐ 18</div>
+<div class="chapter-card__legend">⭐ 10 · ⭐⭐ 13 · ⭐⭐⭐ 31 · ⭐⭐⭐⭐ 35 · ⭐⭐⭐⭐⭐ 18</div>
 
 <ul class="chapter-card__samples">
 
 <li><span class="stars">⭐</span><span class="sample-title">Bringing more agent harnesses and frameworks to Cloudflare, starting with Flue</span></li>
 
-<li><span class="stars">⭐</span><span class="sample-title">Harness Engineering：快手电商用 AI 流水线重塑研发范式（需求全生命周期自动化交付）</span></li>
-
 <li><span class="stars">⭐</span><span class="sample-title">深入理解 Claude Code 源码中的 Agent Harness 构建之道</span></li>
+
+<li><span class="stars">⭐</span><span class="sample-title">深入浅出 Harness Engineering 之核心模式与理念</span></li>
 
 </ul>
 
@@ -231,17 +231,17 @@
 
 <p class="chapter-card__desc">Agent 的手脚：Skill 系统、MCP 协议、Tool Use</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:5.00%" title="⭐ 入门 · 3 篇"></i><i class="lv2" style="width:11.67%" title="⭐⭐ 工程师 · 7 篇"></i><i class="lv3" style="width:33.33%" title="⭐⭐⭐ 专家 · 20 篇"></i><i class="lv4" style="width:28.33%" title="⭐⭐⭐⭐ 科学家 · 17 篇"></i><i class="lv5" style="width:21.67%" title="⭐⭐⭐⭐⭐ 大师 · 13 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:3.33%" title="⭐ 入门 · 2 篇"></i><i class="lv2" style="width:11.67%" title="⭐⭐ 工程师 · 7 篇"></i><i class="lv3" style="width:35.00%" title="⭐⭐⭐ 专家 · 21 篇"></i><i class="lv4" style="width:28.33%" title="⭐⭐⭐⭐ 科学家 · 17 篇"></i><i class="lv5" style="width:21.67%" title="⭐⭐⭐⭐⭐ 大师 · 13 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 3 · ⭐⭐ 7 · ⭐⭐⭐ 20 · ⭐⭐⭐⭐ 17 · ⭐⭐⭐⭐⭐ 13</div>
+<div class="chapter-card__legend">⭐ 2 · ⭐⭐ 7 · ⭐⭐⭐ 21 · ⭐⭐⭐⭐ 17 · ⭐⭐⭐⭐⭐ 13</div>
 
 <ul class="chapter-card__samples">
-
-<li><span class="stars">⭐</span><span class="sample-title">高德交易 VOC 自动排查：基于 Hermes 的多 Agent 架构实践</span></li>
 
 <li><span class="stars">⭐</span><span class="sample-title">重新定义Skill开发：保姆级教程&amp;一站式开发助手发布</span></li>
 
 <li><span class="stars">⭐</span><span class="sample-title">Building and connecting a production-ready ecommerce MCP server using Amazon Bedrock AgentCore and Mistral AI Studio</span></li>
+
+<li><span class="stars">⭐⭐</span><span class="sample-title">电商 AI 操作系统崛起：从「工具人」到「All in One」+ 行业 KnowHow Skill 化 + 5 巨头 Headless 布局</span></li>
 
 </ul>
 
@@ -283,9 +283,9 @@
 
 <p class="chapter-card__desc">最成熟的 Agent 品类：Claude Code、OpenClaw、Codex 深度拆解</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:6.54%" title="⭐ 入门 · 7 篇"></i><i class="lv2" style="width:10.28%" title="⭐⭐ 工程师 · 11 篇"></i><i class="lv3" style="width:35.51%" title="⭐⭐⭐ 专家 · 38 篇"></i><i class="lv4" style="width:31.78%" title="⭐⭐⭐⭐ 科学家 · 34 篇"></i><i class="lv5" style="width:15.89%" title="⭐⭐⭐⭐⭐ 大师 · 17 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:6.54%" title="⭐ 入门 · 7 篇"></i><i class="lv2" style="width:9.35%" title="⭐⭐ 工程师 · 10 篇"></i><i class="lv3" style="width:35.51%" title="⭐⭐⭐ 专家 · 38 篇"></i><i class="lv4" style="width:32.71%" title="⭐⭐⭐⭐ 科学家 · 35 篇"></i><i class="lv5" style="width:15.89%" title="⭐⭐⭐⭐⭐ 大师 · 17 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 7 · ⭐⭐ 11 · ⭐⭐⭐ 38 · ⭐⭐⭐⭐ 34 · ⭐⭐⭐⭐⭐ 17</div>
+<div class="chapter-card__legend">⭐ 7 · ⭐⭐ 10 · ⭐⭐⭐ 38 · ⭐⭐⭐⭐ 35 · ⭐⭐⭐⭐⭐ 17</div>
 
 <ul class="chapter-card__samples">
 
@@ -344,9 +344,9 @@
 
 <p class="chapter-card__desc">Agent 上生产：Bedrock AgentCore、沙箱、多租户</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:7.14%" title="⭐ 入门 · 13 篇"></i><i class="lv2" style="width:9.89%" title="⭐⭐ 工程师 · 18 篇"></i><i class="lv3" style="width:50.00%" title="⭐⭐⭐ 专家 · 91 篇"></i><i class="lv4" style="width:23.63%" title="⭐⭐⭐⭐ 科学家 · 43 篇"></i><i class="lv5" style="width:9.34%" title="⭐⭐⭐⭐⭐ 大师 · 17 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:5.49%" title="⭐ 入门 · 10 篇"></i><i class="lv2" style="width:9.89%" title="⭐⭐ 工程师 · 18 篇"></i><i class="lv3" style="width:51.10%" title="⭐⭐⭐ 专家 · 93 篇"></i><i class="lv4" style="width:24.18%" title="⭐⭐⭐⭐ 科学家 · 44 篇"></i><i class="lv5" style="width:9.34%" title="⭐⭐⭐⭐⭐ 大师 · 17 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 13 · ⭐⭐ 18 · ⭐⭐⭐ 91 · ⭐⭐⭐⭐ 43 · ⭐⭐⭐⭐⭐ 17</div>
+<div class="chapter-card__legend">⭐ 10 · ⭐⭐ 18 · ⭐⭐⭐ 93 · ⭐⭐⭐⭐ 44 · ⭐⭐⭐⭐⭐ 17</div>
 
 <ul class="chapter-card__samples">
 
@@ -617,6 +617,6 @@
 </div>
 </section>
 
-<footer class="home-map__foot">📊 全书收录 1,710 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-10-07</span></footer>
+<footer class="home-map__foot">📊 全书收录 1,710 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-10-09</span></footer>
 
 </div>
