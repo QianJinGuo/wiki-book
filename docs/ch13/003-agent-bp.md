@@ -1,6 +1,6 @@
 # Agent 评测方法论——美团图灵两年 BP 实践（人人一致/人机一致 + 桥梁指标 + 长程范式）
 
-> 📊 Level ⭐⭐⭐⭐ | 29.3KB
+> 📊 Level ⭐⭐⭐⭐ | 33.0KB
 
 ## Agent 评测方法论——美团图灵两年 BP 实践
 
@@ -118,6 +118,20 @@ ChatAgent 时代：核心评测员对齐 → 外包对齐 → 机评对齐。长
 **成熟度自查表与「三种部分完备」形态。** 白皮书给出可直接打分的 L0-L3 成熟度自查表，并按业务阶段定合理水位：冷启动=观测 L1 + 评测集 L1 + 回测门禁 L1（最小闭环）；扩量=评测标准与在线评测推到 L2、少量指标 L3；全量运营才考虑 L3 自动化与规模化。核心用法是看**短板与错配**——「体系的能力上限由最短的那块板决定」，例如评测标准已 L3（机评规模化）但 Case 挖掘仍 L0（靠用户投诉），则投入应转向补齐挖掘能力。三种「部分完备」形态中，第三种最值得警惕：既有评测集又有监控看板、汇报数据齐全，但缺中间枢纽导致两套体系割裂（线上问题回不到评测集，评测集解释不了线上现象），投入多而收效有限。
 
 **FAQ：Agent 为什么不打榜，以及必过集 vs 挑战集。** 本篇 FAQ 补充了一个与基座模型评测的分野判断：基座模型提供通用能力、可拆解出通用指标（其评价体系是三年论文堆砌而来），而 Agent 服务于垂直业务，「最佳的 Agent 指标就是业务指标」，故上线 AB 看业务指标才是评价 Agent 能力的黄金标准。评测集拆为必过集（核心功能，已知问题必须尽可能解决才可上线）与挑战集（垂直领域构建极难、极易跟不上版本迭代）；实践中常见「必考题都会了、难题又见不到」，所以离线评测更多用于回测，真实效果由线上 AB 判定；另附警告：设了挑战集就必须及时更新以拟合线上真实分布，否则评测集不置信。
+
+### 第 4 来源：工程范式系统拆解（WOWService 判分管线 + KuiTest + ICML 基准矩阵，2026-10-10）
+
+第三方拆解文（基于评测白皮书、WOWService 技术报告 arXiv:2510.13291、KuiTest ICSE 2025 论文等公开资料）把美团近 200 个评测指标的工程范式收敛为可迁移结构，带来四块此前零覆盖的角度：
+
+**① 评测对象的形式化分层。** Agent 评测对象是耦合系统 System = Model + Prompt + Skill/Tool + Memory + State + Business Flow，传统「单跑一次比对 ground truth」在统计上不成立（Temperature 采样 + Tool 非确定性 + 多轮上下文漂移）。评测目标四层：Result（交付物）/ Trajectory（执行过程）/ Efficiency（资源）/ Risk（安全越权，一票否决）。关键论断：两个 Agent 终态都正确，但一个路径收敛可复现、一个靠搜索空间暴力采样命中——Result 层不可区分、Trajectory 层差异巨大，这是 **Trajectory Evaluation 取代 Response Evaluation 的根本动因**。
+
+**② WOWService 四步判分管线。** 工单场景的判分流水线（技术报告 arXiv:2510.13291）是白皮书方法论在具体业务的实例化，与前文「环境终态判定」互证：文本声明「已预订」不算通过，数据库存在对应记录才算。
+
+**③ KuiTest：LLM 当 UI 测试 Oracle 的两阶段方案。** Stage 1（截图 + View Hierarchy + SoM 标记 + OCR + 图标库检索 → 组件功能描述 + 预测点击后 UI 状态）→ Stage 2 交互响应验证（先像素 diff——无变化直接标「UI 无响应」省 LLM 调用，再让 LLM 判断实际响应 vs 预测响应）。美团 10 业务线实测：两阶段准确率 86%/召回 85%，**三阶段反而下降**（额外语义提取让模型忽略 icon 颜色变化等细粒度 bug）；组件识别整体 95.5%，无文本 icon 纯 LLM 只有 13%、加图标库拉到 95%。工业落地：6 个月 20 业务线 21 万+ Cases、鸿蒙 NEXT 1230 小时遍历检出 34 个有效异常、大前端回归巡检一年 140+。任务分解（预测→验证）+ 廉价前置检查（像素 diff）是 LLM-as-Oracle 降本的通用模式。
+
+**④ ICML 2026 基准矩阵。** 六个基准覆盖裁判/噪声/长程/环境合成四方向：AJ-Bench（Agent-as-a-Judge 裁判能力，155 task/516 annotated traces，搜索/数据/GUI 三域）、AgentNoiseBench（25 models，结论：**工具侧噪声影响大于用户侧指令噪声**）、TRIP-Bench（18 tools/40+ 约束类，hard instance 15 轮对话/150+ tool calls/200k+ context）、ScaleEnv（程序化合成可验证任务环境）、VitaBench 2.0（56 名长期动态用户，rubric 滑动窗口 evaluator，见 [LongCat VitaBench](https://github.com/QianJinGuo/wiki-public/blob/main/entities/meituan-longcat-vitabench-20-long-term-dynamic-agent-benchmark.md)）、EvoCUA（OSWorld 56.7% 开源 SOTA，生成即验证 + 语义/配置/验证器三重去污）。
+
+**8 条工程启示（可直接迁移）**：Rubric 二元化是人机一致前提 / Pass@k 是长程评测统计基线（单次结果不可作门禁）/ E2E 与 Process 双轨（单轨必在「知坏不知哪坏」或「模块全绿但业务崩」间翻车）/ 归因双路径防 reward hacking / 环境终态判定 / LLM-as-Oracle 要任务分解 / 门禁必须嵌 CI/CD（脱离流程的门禁没有约束力）/ 冷启动按最小闭环（观测 L1 + 评测集 L1 + 回测 L1，成熟度由最短板决定）。
 
 ## 深度分析
 
