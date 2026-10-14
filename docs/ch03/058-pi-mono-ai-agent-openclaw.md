@@ -1,6 +1,6 @@
 # pi-mono — 模块化 AI Agent 构建平台（OpenClaw 执行引擎核心）
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 14.4KB
+> 📊 Level ⭐⭐⭐⭐⭐ | 18.7KB
 
 ## 项目信息
 | 维度 | 数值 |
@@ -180,6 +180,19 @@ pi-mono 的流式事件架构天然支持实时 UI 更新（如终端差分渲�
 → [原文存档](https://github.com/badlogic/pi-mono)
 
 - [Agentcore Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentcore-harness.md) — AWS 托管 Harness 平台
+## 若飞第 2 次拆解：主路径与边界（2026-10-11，/48 SUPP）
+
+若飞重读 Pi 仓库（main 分支 commit 96abe9a，2026-10-11，包版本 1.1.0），从"四个默认工具"转向**主路径最短化 + 边界接口**视角。与第 2 来源（9-08 runtime 拆解）互补，本次增量框架全库零覆盖：
+
+- **分层与主循环**：pi-ai（抹平模型供应商差异）/ pi-agent-core（Agent 循环，不知 Git/Markdown/MCP/TUI）/ pi-coding-agent（文件工具/会话/压缩/扩展/TUI）；主路径 = 用户消息→模型响应→工具调用→工具结果→再问模型→结束。同回复多工具调用默认并行、声明串行则按序，写回按原调用顺序（并发完成顺序不改变模型意图）；截断回复的残缺 JSON 参数标失败交还模型而非碰文件。
+- **steering vs follow-up 双插话语义**：任务中途纠偏（steering message，一轮工具执行结束后插入）vs 收尾追加（follow-up message，任务自然停止后开新轮）；核心循环只留 prepareRequest()/prepareNextTurn()/finishTurn() 三个位置清楚的接口，压缩/模型切换/扩展从接口接入。
+- **工具集合是会话状态**：8 内置工具（read/bash/powershell/edit/write/grep/find/ls），日常默认 4+只读集合；declareToolChanges() 把工具增删作为会话记录写下，恢复会话沿记录还原当时工具状态——"工具不是启动时塞进系统提示词的静态文本，是任务状态的一部分"。
+- **MCP 四种暴露方式（零覆盖）**：direct（直接声明）/ deferred（搜索后加载）/ **codemode（默认，脚本内调用）** / hidden（接运行时不对模型开放）——"接入 MCP ≠ 把整个工具箱摊在上下文里"；MCP 文本结果 >20KB 截中间留头尾、完整结果另存临时文件，Codemode 拿完整返回值在脚本里筛聚只交回几行。
+- **会话树 + projection（零覆盖）**：append-only JSONL 树，每条记录 id+parentId，分支=新叶子；**buildSessionProjection()** 沿当前叶子回溯、识别最近一次 compaction、把摘要+保留消息+压缩后新消息拼成模型上下文——"会话负责留下事实，projection 负责服务当下"；纠正不用改原记录而是追加 context edit；压缩摘要保存读过/改过的文件列表（旧工具输出可不带但不失忆）；溢出自动 compact 后重试一次，再失败明确结束。系统提示词分 section 记 patch 从当前状态组装（最终仍发完整上下文，压缩的是模型眼前的接口不是宿主能力）。
+- **Codemode 边界澄清（零覆盖）**：模型生成 JS 在 QuickJS VM 完成多次工具调用+筛选汇总，嵌套调用只存名称/参数/状态/耗时/错误等有上限元数据；VM 无 Node API/fetch/process/require/WASM，过界走 JSON 序列化，有限时/内存/中断——**但 QuickJS 解决的是编排与上下文污染，不是安全沙箱**：脚本调 bash 时真正执行的是宿主侧工具，权限取决于 Pi 进程；Pi 默认无逐工具确认/无目录级权限系统，project trust 只管"陌生仓库能否加载自己的扩展/Skill/配置"，且 AGENTS.md/CLAUDE.md 默认不受 trust 控制（trust 是加载策略不是安全边界）；隔离交给 Plain Docker/Docker Sandboxes/OpenShell/Gondolin 由使用者选择。
+- **极简重定义**：极简不是代码少/提示词短/工具少，而是**核心路径替上层做了多少决定**——主循环只守模型/工具/结果循环，durable 运行时放 experimental 不压进主链路；"仓库长大了，主循环依然能顺着读下来"。
+
+→ [原文存档（若飞第 2 次拆解）](https://mp.weixin.qq.com/s/xa2xrK-LyM5Ktow2hq1vWQ)
 
 ---
 

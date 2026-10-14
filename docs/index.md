@@ -24,7 +24,7 @@
 
     <div class="home-stats__item"><span class="home-stats__num">20 章 · 5 篇</span><span class="home-stats__label">全书结构</span></div>
 
-    <div class="home-stats__item"><span class="home-stats__num">4,472</span><span class="home-stats__label">一手原文</span></div>
+    <div class="home-stats__item"><span class="home-stats__num">4,509</span><span class="home-stats__label">一手原文</span></div>
 
     <div class="home-stats__item"><span class="home-stats__num">★ × 5</span><span class="home-stats__label">难度分级</span></div>
 
@@ -66,9 +66,9 @@
 
 <p class="chapter-card__desc">理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:14.31%" title="⭐ 入门 · 70 篇"></i><i class="lv2" style="width:9.41%" title="⭐⭐ 工程师 · 46 篇"></i><i class="lv3" style="width:47.03%" title="⭐⭐⭐ 专家 · 230 篇"></i><i class="lv4" style="width:20.25%" title="⭐⭐⭐⭐ 科学家 · 99 篇"></i><i class="lv5" style="width:9.00%" title="⭐⭐⭐⭐⭐ 大师 · 44 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:13.50%" title="⭐ 入门 · 66 篇"></i><i class="lv2" style="width:9.41%" title="⭐⭐ 工程师 · 46 篇"></i><i class="lv3" style="width:47.85%" title="⭐⭐⭐ 专家 · 234 篇"></i><i class="lv4" style="width:20.25%" title="⭐⭐⭐⭐ 科学家 · 99 篇"></i><i class="lv5" style="width:9.00%" title="⭐⭐⭐⭐⭐ 大师 · 44 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 70 · ⭐⭐ 46 · ⭐⭐⭐ 230 · ⭐⭐⭐⭐ 99 · ⭐⭐⭐⭐⭐ 44</div>
+<div class="chapter-card__legend">⭐ 66 · ⭐⭐ 46 · ⭐⭐⭐ 234 · ⭐⭐⭐⭐ 99 · ⭐⭐⭐⭐⭐ 44</div>
 
 <ul class="chapter-card__samples">
 
@@ -153,9 +153,9 @@
 
 <p class="chapter-card__desc">什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:5.47%" title="⭐ 入门 · 22 篇"></i><i class="lv2" style="width:8.71%" title="⭐⭐ 工程师 · 35 篇"></i><i class="lv3" style="width:40.80%" title="⭐⭐⭐ 专家 · 164 篇"></i><i class="lv4" style="width:31.34%" title="⭐⭐⭐⭐ 科学家 · 126 篇"></i><i class="lv5" style="width:13.68%" title="⭐⭐⭐⭐⭐ 大师 · 55 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:4.98%" title="⭐ 入门 · 20 篇"></i><i class="lv2" style="width:8.96%" title="⭐⭐ 工程师 · 36 篇"></i><i class="lv3" style="width:41.04%" title="⭐⭐⭐ 专家 · 165 篇"></i><i class="lv4" style="width:31.34%" title="⭐⭐⭐⭐ 科学家 · 126 篇"></i><i class="lv5" style="width:13.68%" title="⭐⭐⭐⭐⭐ 大师 · 55 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 22 · ⭐⭐ 35 · ⭐⭐⭐ 164 · ⭐⭐⭐⭐ 126 · ⭐⭐⭐⭐⭐ 55</div>
+<div class="chapter-card__legend">⭐ 20 · ⭐⭐ 36 · ⭐⭐⭐ 165 · ⭐⭐⭐⭐ 126 · ⭐⭐⭐⭐⭐ 55</div>
 
 <ul class="chapter-card__samples">
 
@@ -179,17 +179,17 @@
 
 <p class="chapter-card__desc">给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:9.35%" title="⭐ 入门 · 10 篇"></i><i class="lv2" style="width:12.15%" title="⭐⭐ 工程师 · 13 篇"></i><i class="lv3" style="width:28.97%" title="⭐⭐⭐ 专家 · 31 篇"></i><i class="lv4" style="width:32.71%" title="⭐⭐⭐⭐ 科学家 · 35 篇"></i><i class="lv5" style="width:16.82%" title="⭐⭐⭐⭐⭐ 大师 · 18 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:8.41%" title="⭐ 入门 · 9 篇"></i><i class="lv2" style="width:12.15%" title="⭐⭐ 工程师 · 13 篇"></i><i class="lv3" style="width:29.91%" title="⭐⭐⭐ 专家 · 32 篇"></i><i class="lv4" style="width:32.71%" title="⭐⭐⭐⭐ 科学家 · 35 篇"></i><i class="lv5" style="width:16.82%" title="⭐⭐⭐⭐⭐ 大师 · 18 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 10 · ⭐⭐ 13 · ⭐⭐⭐ 31 · ⭐⭐⭐⭐ 35 · ⭐⭐⭐⭐⭐ 18</div>
+<div class="chapter-card__legend">⭐ 9 · ⭐⭐ 13 · ⭐⭐⭐ 32 · ⭐⭐⭐⭐ 35 · ⭐⭐⭐⭐⭐ 18</div>
 
 <ul class="chapter-card__samples">
-
-<li><span class="stars">⭐</span><span class="sample-title">Bringing more agent harnesses and frameworks to Cloudflare, starting with Flue</span></li>
 
 <li><span class="stars">⭐</span><span class="sample-title">深入理解 Claude Code 源码中的 Agent Harness 构建之道</span></li>
 
 <li><span class="stars">⭐</span><span class="sample-title">深入浅出 Harness Engineering 之核心模式与理念</span></li>
+
+<li><span class="stars">⭐</span><span class="sample-title">Harness Engineering 系统梳理</span></li>
 
 </ul>
 
@@ -283,9 +283,9 @@
 
 <p class="chapter-card__desc">最成熟的 Agent 品类：Claude Code、OpenClaw、Codex 深度拆解</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:8.26%" title="⭐ 入门 · 9 篇"></i><i class="lv2" style="width:9.17%" title="⭐⭐ 工程师 · 10 篇"></i><i class="lv3" style="width:34.86%" title="⭐⭐⭐ 专家 · 38 篇"></i><i class="lv4" style="width:32.11%" title="⭐⭐⭐⭐ 科学家 · 35 篇"></i><i class="lv5" style="width:15.60%" title="⭐⭐⭐⭐⭐ 大师 · 17 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:6.42%" title="⭐ 入门 · 7 篇"></i><i class="lv2" style="width:10.09%" title="⭐⭐ 工程师 · 11 篇"></i><i class="lv3" style="width:35.78%" title="⭐⭐⭐ 专家 · 39 篇"></i><i class="lv4" style="width:32.11%" title="⭐⭐⭐⭐ 科学家 · 35 篇"></i><i class="lv5" style="width:15.60%" title="⭐⭐⭐⭐⭐ 大师 · 17 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 9 · ⭐⭐ 10 · ⭐⭐⭐ 38 · ⭐⭐⭐⭐ 35 · ⭐⭐⭐⭐⭐ 17</div>
+<div class="chapter-card__legend">⭐ 7 · ⭐⭐ 11 · ⭐⭐⭐ 39 · ⭐⭐⭐⭐ 35 · ⭐⭐⭐⭐⭐ 17</div>
 
 <ul class="chapter-card__samples">
 
@@ -309,17 +309,17 @@
 
 <p class="chapter-card__desc">让 Agent 拥有外部知识：从向量检索到知识图谱</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:8.33%" title="⭐ 入门 · 2 篇"></i><i class="lv2" style="width:8.33%" title="⭐⭐ 工程师 · 2 篇"></i><i class="lv3" style="width:29.17%" title="⭐⭐⭐ 专家 · 7 篇"></i><i class="lv4" style="width:45.83%" title="⭐⭐⭐⭐ 科学家 · 11 篇"></i><i class="lv5" style="width:8.33%" title="⭐⭐⭐⭐⭐ 大师 · 2 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:4.17%" title="⭐ 入门 · 1 篇"></i><i class="lv2" style="width:8.33%" title="⭐⭐ 工程师 · 2 篇"></i><i class="lv3" style="width:33.33%" title="⭐⭐⭐ 专家 · 8 篇"></i><i class="lv4" style="width:45.83%" title="⭐⭐⭐⭐ 科学家 · 11 篇"></i><i class="lv5" style="width:8.33%" title="⭐⭐⭐⭐⭐ 大师 · 2 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 2 · ⭐⭐ 2 · ⭐⭐⭐ 7 · ⭐⭐⭐⭐ 11 · ⭐⭐⭐⭐⭐ 2</div>
+<div class="chapter-card__legend">⭐ 1 · ⭐⭐ 2 · ⭐⭐⭐ 8 · ⭐⭐⭐⭐ 11 · ⭐⭐⭐⭐⭐ 2</div>
 
 <ul class="chapter-card__samples">
-
-<li><span class="stars">⭐</span><span class="sample-title">OpenViking 三论文：VikingMem 记忆管理 + TrieHI 目录感知向量检索 + VikingRAG 分层按需读取</span></li>
 
 <li><span class="stars">⭐</span><span class="sample-title">DREAM：用冻结 LLM 的自回归预测训练稠密检索器，无需标注正负样本</span></li>
 
 <li><span class="stars">⭐⭐</span><span class="sample-title">【实践教程】真实AI客服落地全流程：意图识别、混合检索到数据飞轮</span></li>
+
+<li><span class="stars">⭐⭐</span><span class="sample-title">Google出手统一全模态检索：Gemini Embedding 2把文本、图片、音频和视频压进同一向量空间</span></li>
 
 </ul>
 
@@ -617,6 +617,6 @@
 </div>
 </section>
 
-<footer class="home-map__foot">📊 全书收录 1,716 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-10-12</span></footer>
+<footer class="home-map__foot">📊 全书收录 1,716 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-10-14</span></footer>
 
 </div>

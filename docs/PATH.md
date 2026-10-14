@@ -97,7 +97,7 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 | 250 行 CLI Agent | [Minimal Cli Agent 250 Line Python Ollama 7 Stages](ch04/371-ai-agent-250-while-python-ollama-cli-agent-7.html) | [minimal-cli-agent-250-line-python-ollama-7-stages.md](https://mp.weixin.qq.com/s/axLHmFoNretapSPCUP68PQ) |
 | Agent Runtime 7 大职责 | [Agent Runtime 7 Responsibilities Secondcurve 2026](ch04/366-agent-agent-runtime-7-3-langgraph-openai-agents-s.html) | [agent-runtime-7-responsibilities-secondcurve-2026.md](https://mp.weixin.qq.com/s/5sftvwAZL4Hj5v40HZ1rVw) |
 | Design Patterns for AI Agents | [Design Patterns For Ai Agents 2026](ch04/372-design-patterns-for-ai-agents-2026-4-5-reflection.html) | 先读实体页：`docs/ch04/083-design-patterns-for-ai-agents-2026-4-5-reflection.md` |
-| 从零设计准生产级 LLM Agent | [Thinkingagent From Scratch Reliability Context Recovery 2026 06 02](ch04/068-llm-agent-thinkingagent.html) | [thinkingagent-from-scratch-reliability-context-recovery-2026-06-02.md](https://mp.weixin.qq.com/s/UTEdhrkV3G3Ycfrg0Jng_A) |
+| 从零设计准生产级 LLM Agent | [Thinkingagent From Scratch Reliability Context Recovery 2026 06 02](ch04/067-llm-agent-thinkingagent.html) | [thinkingagent-from-scratch-reliability-context-recovery-2026-06-02.md](https://mp.weixin.qq.com/s/UTEdhrkV3G3Ycfrg0Jng_A) |
 ### 3.4 入门期作业
 
 #### 作业 A：画一张 Agent 总架构图
@@ -181,12 +181,12 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 | 主题 | entity | raw |
 |---|---|---|
 | Loop Engineering 总论 | [Loop Engineering Addy Osmani Challengehub](ch05/090-loop-engineering-19-addy-osmani-boris-cherny-pete.html) | [loop-engineering-addy-osmani-challengehub.md](https://mp.weixin.qq.com/s/vmGx9IELbWgKZqHm-M3G5w) |
-| Harness Engineering 综合论述 | [Harness Engineering Paradigm Comprehensive 2026](ch04/066-agent-harness-engineering-a-survey.html) | [harness-engineering-2026-rahul-rauhul.md](https://mp.weixin.qq.com/s/RwWfknFIFvJPIdsJMgeNiQ) |
+| Harness Engineering 综合论述 | [Harness Engineering Paradigm Comprehensive 2026](ch04/065-agent-harness-engineering-a-survey.html) | [harness-engineering-2026-rahul-rauhul.md](https://mp.weixin.qq.com/s/RwWfknFIFvJPIdsJMgeNiQ) |
 | 长周期 Agent / Ralph Loop | [Long Running Agent Ralph Loop Handover Harness Ruofei](ch05/056-agent-ralph-loop-harness.html) | [long-running-agent-ralph-loop-handover-harness-ruofei.md](https://mp.weixin.qq.com/s/ML5aD3f2ilHWjSB-wpBukw) |
 | Agent Harness 生产指南 | [Agent Production Harness Engineering](ch05-harness.html) | [harness-production-agent-engineering-deficit.md](https://mp.weixin.qq.com/s/HVkWNXTsFjn0HkdGyD7Tpw) |
 | 生产级 Harness 12 组件 | [Production Harness 12 Components Framework Comparison](ch05-harness.html) | [production-harness-12-components-framework-comparison.md](https://mp.weixin.qq.com/s/UwG0mEzQ0Mk7DYjPS3PFqQ) |
 | 10 步路线图 + 8 失败模式 | [Harness Engineering 10 Step Practical Guide 2026](ch05-harness.html) | [harness-engineering-10-step-practical-guide-2026.md](https://mp.weixin.qq.com/s/5GmESz1z9MCRp0KzoYUOSw) |
-| 100% Cache 命中的 Agent 设计 | [Openclacky Harness Engineering 100 Percent Cache Hit](ch05/025-harness-100-cache-agent.html) | [openclacky-harness-engineering-100-percent-cache-hit.md](https://mp.weixin.qq.com/s/5jR9MjhEERMI59iYjFIJxg) |
+| 100% Cache 命中的 Agent 设计 | [Openclacky Harness Engineering 100 Percent Cache Hit](ch05/024-harness-100-cache-agent.html) | [openclacky-harness-engineering-100-percent-cache-hit.md](https://mp.weixin.qq.com/s/5jR9MjhEERMI59iYjFIJxg) |
 | Better-Harness | [Better Harness Eval Trace Methodology](ch05-harness.html) | 先读实体页：`docs/ch05/085-better-harness-agent-harness.md` |
 
 ### 4.4 Memory 精读清单
@@ -209,7 +209,7 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 | 企业级 Skill 8 块骨架 | [Skill Design Spec 8 Block Checklist Winty](ch07/051-skill-8-8-checklist.html) | [skill-design-spec-8-block-checklist-winty.md](https://mp.weixin.qq.com/s/pwm9e_wMhqlbBh8ICWJWxQ) |
 | Claude Code Skills / MCP / Rules 源码 | [Claude Code Skills Mcp Rules Source Analysis](ch07/053-claude-code-skills-mcp-rules.html) | [claude-code-skills-mcp-rules-source-analysis.md](https://mp.weixin.qq.com/s/FzTyopCXH-IVSYJyTMjWxA) |
 | 三层 Agent 架构 | [Baidu Netdisk Three Layer Agent Architecture](ch04-agent-core.html) | [baidu-netdisk-kmp-migration-three-layer-agent-architecture.md](https://mp.weixin.qq.com/s/z2QWu5hE5TAZifqT4jYzVw) |
-| CLI / MCP / CLI+Skill 选型 | [Cli Mcp Skill Architecture Decision Vibecoder](ch07/045-cli-mcp-cli-skill.html) | [cli-mcp-skill-architecture-decision-vibecoder.md](https://mp.weixin.qq.com/s/cijQOCOZQMcbldyAmQ8CZA) |
+| CLI / MCP / CLI+Skill 选型 | [Cli Mcp Skill Architecture Decision Vibecoder](ch07/038-cli-mcp-cli-skill.html) | [cli-mcp-skill-architecture-decision-vibecoder.md](https://mp.weixin.qq.com/s/cijQOCOZQMcbldyAmQ8CZA) |
 | Skill 版本管理 | [Skill Version Management Semantic Versioning Practices Winty](ch07-skill-tool.html) | [skill-version-management-semantic-versioning-practices-winty.md](https://mp.weixin.qq.com/s/weA8CMZBI9B295tNft10WQ) |
 | Anthropic 12 个 MCP 模式 | [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](ch04-agent-core.html) | [anthropic-官方生产级-agent-最佳实践12-个可复用的-mcp-设计模式-v2.md](https://mp.weixin.qq.com/s/dd_yVuyLiO5avvivvFl5Zw) |
 | Microsoft Agent Framework Tools | [Microsoft Agent Framework Tools Overview Provider Matrix](ch07/049-microsoft-agent-framework-tools-4-provider-tool-ap.html) | [microsoft-agent-framework-tools-overview-provider-matrix.md](https://mp.weixin.qq.com/s/0vIV3VJIgwf1FRwDWNzYpw) |
@@ -219,7 +219,7 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 |---|---|---|
 | RAG 到知识图谱到本体论 | [向量库是Rag的前菜知识图谱是答案本体论是灵魂](ch10-rag.html) | [向量库是rag的前菜知识图谱是答案本体论是灵魂.md](https://mp.weixin.qq.com/s/2pk4Mhr4nLMapJrTqpYX6Q) |
 | Google Agentic RAG 5 阶段 | [Ai Cambrian Google Agentic Rag Sufficient Context Cross Corpus 20260606](ch04/380-google-agentic-rag-5.html) | [ai-cambrian-google-agentic-rag-sufficient-context-cross-corpus-20260606.md](https://mp.weixin.qq.com/s/8PdVIubBGWKtMMyCb0pc3g) |
-| Protocol H 分层 Agentic RAG | [Protocol H Hierarchical Agentic Rag Enterprise](ch04/067-protocol-h-agentic-rag.html) | [protocol-h-hierarchical-agentic-rag-enterprise.md](https://mp.weixin.qq.com/s/P-MnmnREgtiOq-DbHfDuVA) |
+| Protocol H 分层 Agentic RAG | [Protocol H Hierarchical Agentic Rag Enterprise](ch04/066-protocol-h-agentic-rag.html) | [protocol-h-hierarchical-agentic-rag-enterprise.md](https://mp.weixin.qq.com/s/P-MnmnREgtiOq-DbHfDuVA) |
 | Chroma 到 Qdrant 迁移 | [Chroma To Qdrant 1M Vector Migration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/chroma-to-qdrant-1m-vector-migration.md) | [chroma-to-qdrant-1m-vector-migration.md](https://mp.weixin.qq.com/s/Aovqh95_LBYtVOj8_tTD_w) |
 | RAG vs LLM Wiki | `docs/ch01/037-rag-vs-llm-wiki.md` | 先读实体页 |
 

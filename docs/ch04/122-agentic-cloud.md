@@ -1,6 +1,6 @@
 # 阿里云 Agentic Cloud
 
-> 📊 Level ⭐⭐⭐ | 8.3KB
+> 📊 Level ⭐⭐⭐ | 10.7KB
 
 阿里云在520峰会上发布 Agentic Cloud 战略，将整朵云按 Agent 需求重做，目标是让 Agent 成为云的一等公民。产品、API、计费、文档、官网全部围绕 Agent 重新设计。
 
@@ -112,6 +112,17 @@ FY26 Q4 数据显示 AI 收入占比首破 30%、年化 AI 收入 358 亿，这�
 - [从 Anthropic 到 Googleagent Skills 正在进入设计模式阶段](https://github.com/QianJinGuo/wiki-public/blob/main/entities/从-anthropic-到-googleagent-skills-正在进入设计模式阶段.md)
 
 → [原文存档](https://mp.weixin.qq.com/s/zYvl-XjdcW2Sx2XDNGJ2mQ)
+
+## STAROps Agentic Ops 闭环升级（阿里云云原生 2026-10-13，/54 SUPP）
+
+STAROps 全域智能运维平台升级公告（第一方，无量化 benchmark）：把**统一运维上下文、跨域分析诊断、持续闭环处置**结合，运维模式从「人不断提问推进」走向「Agent 围绕目标持续工作、人负责关键决策」。
+
+- **统一运维上下文（Connector+Fabric，零覆盖）**：Connector 统一连接（云上直连+Satellite 代理；鉴权/资源发现/健康检查；范围到代码/CI-CD/工单/自动化）；Fabric 统一建模（指标/日志/链路 ↔ 应用/实例/容器/数据库实体关系+动态拓扑——接口出错须知道所属服务/实例/依赖库/最近变更）。
+- **闭环执行层（零覆盖）**：长期任务 **Missions**（设定业务范围与策略后持续观察→调查→产生 Finding，不依赖用户新提问）+ 问题发现 **Findings**（现象/证据/影响/根因/处置建议/进展/结果在同一问题对象持续更新，多轮介入后沿同一上下文推进）+ 经验沉淀（工具调用成功≠问题解决，处置轨迹与验证结果供复用）。
+- **分级执行**：自动执行（低风险查询/分析/报告）/ 人工确认（配置修改/重启/扩缩容）/ 强制拦截（禁止规则）；执行前再校验策略与资源权限，人工确认不能突破原权限边界；执行后验证恢复，未达预期按预设方案回退或转人工。
+- 与姊妹能力层的关系：本文是平台级闭环层（[主机巡检](https://github.com/QianJinGuo/wiki-public/blob/main/entities/starops-host-intelligent-inspection.md) 基础设施层、[RUM 体验层](https://github.com/QianJinGuo/wiki-public/blob/main/entities/starops-rum-intelligent-inspection.md)、[UModel 数字孪生层](https://github.com/QianJinGuo/wiki-public/blob/main/entities/starops-umodel-digital-twin-openapi-embedding-jingchen-2026-08-04.md) 之上的执行与处置编排）。诊断输出=根因+业务影响+传播路径+证据+处置建议。
+
+→ [原文存档](https://mp.weixin.qq.com/s/NtsOAsHE38kHkGaFLXZJiw)
 
 ---
 

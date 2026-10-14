@@ -1,6 +1,6 @@
 # How to Write an Effective Software Design Document
 
-> 📊 Level ⭐ | 7.2KB
+> 📊 Level ⭐⭐⭐ | 12.9KB
 
 > **来源**: [How to Write an Effective Software Design Document](https://refactoringenglish.com/excerpts/write-an-effective-design-doc/)
 
@@ -67,6 +67,37 @@ Consider these questions:
 *   Will the implementation run in production for several years?
 
 → [原文存档](https://refactoringenglish.com/excerpts/write-an-effective-design-doc/)
+
+## 深度分析
+
+### A design doc is a forcing function, not paperwork
+
+The article's core claim is economic, not bureaucratic: writing the doc forces you to think through important decisions *before* you waste time on the wrong implementation or paint yourself into a corner, and a good doc "can save you years of development time". Its second function is coordination — the doc is the best way to align design decisions among teammates and partner teams, which is why the author (a design-doc veteran of Google, Microsoft, and his own companies) treats it as the interface through which teammates give feedback, not an artifact for its own sake.
+
+### Effort scales with risk, and zero is a valid answer
+
+The triage is a six-question checklist: will multiple people coordinate the work, will it take more than three months of full-time dev, will it run in production for years, does it involve cross-team collaboration, are goals and requirements ambiguous, and are there catastrophic risks (security flaws, legal exposure) preventable at design time. One "yes" makes a doc likely worth the effort; two or more makes it almost certain. Investment itself has no universal rule — anything from a one-pager to a 50-page document requiring signoff from five teams — and sometimes the right amount to invest is zero.
+
+### The "cost of getting it wrong" filter decides what belongs in the doc
+
+The central heuristic for content selection is a single question: *what's the penalty for being wrong?* Specifying every possible detail would mean writing the implementation during the design phase, defeating the doc's purpose. Decisions split by reversibility: building a web app in C++ and realizing 200k lines later that Ruby on Rails was the better choice leaves you stuck, because a from-scratch rewrite would never work; a "load more" pagination button, by contrast, is fixable in a few hours if user feedback disagrees, so it deserves neither doc space nor review cycles. The doc exists for the irreversible, high-penalty choices.
+
+### The component list is a menu to prune, not a template to fill
+
+The 23 listed components (title, metadata, objective, background, related documents, goals, non-goals, scenarios, diagrams, glossary, constraints, SLOs, monitoring/alerting, timeline, interfaces, dependencies, security, privacy, legal, logging, open/resolved issues, alternatives considered) form a menu — you generally don't need every section, so choose the subset that makes sense. Underneath, the sections cluster by job: context sections (objective, background) exist so the doc makes sense to a reader who never heard your verbal explanation, which is why that context belongs on the first page; scope sections (goals, non-goals, scenarios) head off mistaken assumptions about what the project covers; SLOs convert vague adjectives like "performant" into concrete numbers before code-complete; and the dependencies section isolates choices that are hard to change later (languages, storage backends) from the ones that swap out in an afternoon (third-party email providers).
+
+### Honest uncertainty is a first-class part of the document
+
+Open Issues record design flaws you can't yet solve, options you're torn between, and gaps awaiting information — each with the problem, candidate resolutions, and an immediate next step (e.g., the RAM-sizing issue that prices a test simulation at 3.0 dev days and proposes 128 GB untested because dev time costs more than RAM). Resolved issues move to a separate section with the decision summarized and the full discussion retained for posterity, and "alternatives considered" proactively answers "why didn't you do X?" in a few brief lines rather than an exhaustive log of every rejected idea. The doc thereby doubles as a decision ledger: reviewers see not just the design but the boundary between what is decided and what remains open.
+
+## 实践启示
+
+1. Triage before writing anything: run the six questions (coordination, duration, production lifespan, cross-team work, ambiguity, catastrophic risk); for low-risk solo work, a zero-investment decision is legitimate.
+2. Filter every candidate decision through "what's the penalty for being wrong?": document the irreversible choices (language, storage engine, trust boundaries), and leave reversible UI details out of the doc and out of review entirely.
+3. Write the objective and background so a reader with no verbal context from you can understand them, and put that context on the first page of the doc.
+4. Build diagrams in editable tools (Excalidraw, draw.io, Mermaid, D2, Graphviz) and link the drawing source; never freeze a photographed whiteboard into the doc, because the first draft is never the last.
+5. Replace vague quality words ("performant on mobile") with numeric SLOs across uptime, latency, and scale, then define monitoring and alerting thresholds that measure those SLOs in production.
+6. Surface unknowns in an Open Issues appendix with options and a next step, move resolved ones onward with the decision and discussion retained, and answer "why not X?" proactively and briefly under alternatives considered.
 
 ---
 ## 关联

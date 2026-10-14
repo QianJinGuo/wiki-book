@@ -1,6 +1,6 @@
 # Why Drizzle ORM couldn't publish new releases on NPM for a month | vlt /vōlt/
 
-> 📊 Level ⭐ | 7.4KB
+> 📊 Level ⭐⭐⭐ | 10.7KB
 
 > **来源**: [Why Drizzle ORM couldn't publish new releases on NPM for a month | vlt /vōlt/](https://vlt.io/blog/packument-size-limits)
 
@@ -79,6 +79,28 @@ This could be implemented as a query parameter in a backwards-compatible way. If
 While Drizzle's packument is now back to 61 MiB, our NPM mirror is taking a slightly different approach. We work of an allow-list to only add things to the packument that we know is needed for installs.
 
 So, running that same curl command on our mirror only has Drizzle at **1.7 MiB** so far. Lots of room to grow!
+
+## 深度分析
+
+### Packument 的累积式设计
+NPM 早期构建于 CouchDB 文档存储之上，为了让 CLI 一次拿到包的全部版本元数据，设计出 packument——一个聚合了每个已发布版本 manifest 的巨型 JSON 文档。所有非 lockfile 的全新安装都要完整下载它，包的历史越"重"，全体用户的安装成本越高。Drizzle 单版本 manifest 因大量 ESM exports 达到 131 KB，按此规模约 763 个版本即触顶 100 MB。
+
+### 100 MB 限制的合理性与刚性
+上限本身有正当理由：packument 会被各类工具 JSON.parse()，也需要防滥用。问题在刚性：NPM 的 72 小时 unpublish 政策禁止删除旧版本，作者失去自我清理能力；而 Drizzle 从 git commit 自动发布 snapshot 的做法进一步加速触顶，最终只能求助人手不足的 NPM 团队人工删除。
+
+### 治理路径的三层分解
+文章给出的对策可分三层：发布方自律（不发布 dev build，它们永久推高每次全新安装的体积）；监控（用 curl+wc 定期检测 packument 大小，触顶前主动干预）；注册表侧重构（vlt 镜像用 allow-list 只保留安装所需条目，把 Drizzle packument 从 61 MiB 压到 1.7 MiB）。最根本的是第三层：客户端声明所需版本范围、服务端按需返回，可经向后兼容的 query parameter 实现。
+
+### 自动化发布的放大效应
+当版本发布从人工决策变成 CI 默认动作，累积速率就脱离人的直觉——这正是 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 所说"自动化管道必须为系统性资源上限设预算"的典型案例。它与 [npm 供应链事故](https://github.com/QianJinGuo/wiki-public/blob/main/entities/npm-supply-chain-compromise-postmortem.md) 同属 npm 注册表生态的系统性风险，只是表现形式从安全转向容量。
+
+## 实践启示
+1. 不要把 dev/snapshot build 发布到主 registry——它们永久计入每次全新安装的下载量。
+2. 用 `curl -s https://registry.npmjs.org/<pkg> | wc -c` 定期检查 packument 大小，建立触顶预警。
+3. 收敛 package.json 体积与 ESM exports 粒度——单版本 manifest 越大，可发布版本数上限越低。
+4. 优先选用 allow-list 型镜像注册表：61 MiB 压到 1.7 MiB 说明裁剪空间巨大。
+5. 自动发布流水线必须评估版本累积速率，把 registry 配额当作与 CI 时长同类的资源预算。
+6. 注册表协议设计优先向后兼容的按需查询参数，从源头消除 packument 膨胀。
 
 → [原文存档](https://vlt.io/blog/packument-size-limits)
 

@@ -1,6 +1,6 @@
 # OpenViking 三论文：VikingMem 记忆管理 + TrieHI 目录感知向量检索 + VikingRAG 分层按需读取
 
-> 📊 Level ⭐ | 6.2KB
+> 📊 Level ⭐⭐⭐ | 10.9KB
 
 ## OpenViking 三论文：VikingMem + TrieHI + VikingRAG
 
@@ -37,6 +37,35 @@ OpenViking 实现为 `viking://` 统一 URI：`ov find viking://projects/项目A
 
 与库内 [OpenViking 经验记忆](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openviking-experience-memory-agent-evolution-loop-2026.md) 的关系：那篇讲 **Experience 层**（Session→Trajectory→Experience 进化闭环，跨会话学习"怎么做"）；本篇三论文讲 **基础设施层**（记忆怎么存对、目录怎么圈范围、文档怎么按需读），两篇互补构成 OpenViking 完整记忆/检索栈。Event/Entity 双层与 [Context Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/context-engineering.md) 的分层上下文思想互证。
 
+## 深度分析
+
+### 三篇论文是同一条"上下文供应链"的三道工序
+
+开头的三个故障场景——预算数字过期、拿错同名文档、把几十份文档重读一遍——并非三个孤立的痛点，而是一次自上而下的问题分解：**怎么记**对应记忆的写入治理，**怎么存**对应检索的边界圈定，**怎么读**对应读取的下钻与停止策略。三篇论文各卡住供应链的一道工序，组合评测（LoCoMo 接入后 24%–57% → 80%–83%）证明三者收益可叠加而非互相替代。
+
+### 与传统 RAG 栈的分野：治理、边界、停止条件
+
+- **信息过载是准确性问题，不只是成本问题**：把全部聊天历史塞给模型只得 77.47，低于 VikingMem 的 88.83——信息最全分数反而更低，无关内容会把模型带偏。这与 [上下文窗口经济学](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/context-window-economics.md) 的判断互证。
+- **传统 RAG 只优化相似度召回这一个变量**；TrieHI 补上结构硬边界（目录树 + 清单，定位 365ms → 273μs），VikingRAG 补上停止条件（证据足够即停）。token 降到高准确率基线的 11.6%–51.9%，说明准确率持平时大部分 token 花在"不知道该在哪停"上。
+- **Experience Edge 是以查询为中心的记忆**：知识图谱记"A 与 B 有什么关系"，它记"上次问这类问题最后在哪儿找到的"——不建模世界结构，只建模检索路径的复用，比 KG 轻且更贴近 Agent 实际工作流。
+
+### 工程经济学：把大模型调用从热路径上摘掉
+
+全文反复出现同一个原则：**大模型只出现在必须理解语义的地方，其余退回确定性计算**。能计数的直接计数；档案更新让模型只输出"旧文字→新文字"的改动，系统按编辑距离定位原地替换，$0.35 → $0.07（-80%）而得分基本不变；向量写入时预计算并压缩，精排压在百毫秒级；目录清单定位到微秒级。而影响最大的单点反而是写入时的语义合并（去掉它 LoCoMo 掉 5.32 分）——成本要前移到写入端花在刀刃上，而非均匀摊在每次查询。这与 [Context Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/context-engineering.md) 的分层思想一致。
+
+### 成熟度梯度本身就是工程判断信号
+
+三个组件的落地状态明显分层：VikingMem 的 Event/Entity 方案已在 100+ 真实企业应用上线；L0/L1/L2 分层与经验记忆已上线；自适应先快后全仍在实验阶段，且"数据足够可以停"的判断仍有超过 5% 的误判。这条梯度把"已被生产验证"与"仍在验证"的边界直接画进了论文叙述，接入方可据此分配信任。与库内 [OpenViking 经验记忆](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openviking-experience-memory-agent-evolution-loop-2026.md) 对照：那篇覆盖 Experience 层的跨会话进化闭环，本篇覆盖其下的基础设施层，两者叠加才是完整记忆/检索栈。
+
+## 实践启示
+
+1. **记忆系统先做减法再做加法**：写入时合并/去闲聊是全链路影响最大的单点（去掉它 88.83 → 83.51），优先投资写入端治理，再谈检索优化。
+2. **不要用"塞更多上下文"来提准确率**：全历史召回 77.47 低于治理后的 88.83，过时与无关内容是负资产，旧事衰减和归档不是可选项。
+3. **给向量检索加结构硬边界，而不是靠标签过滤**：标签要人工预打、条件一宽就漏；目录树 + 清单把"只在此文件夹内搜"做成数据库层能力（273μs），且移动/合并文件夹只需更新沿路清单。
+4. **为检索设显式停止条件**：每读完一段检查证据是否足够，够即停——这是 token 降至 11.6%–51.9% 的主要来源之一，也顺带减轻无关内容带偏。
+5. **记"查找路线"而不只记"事实"**：Experience Edge 让第二次相似查询免于从头翻目录，是低成本高杠杆的经验复用形态，可迁移到任何 Agent 检索系统设计。
+6. **把模型调用限制在语义判断处**：计数、编辑距离定位、预计算向量都用确定性计算替代，单次抽取成本 -80% 而得分不变——每接一次模型前先问"这一步真的需要理解语义吗"。
+7. **接入前按成熟度分配信任**：L0/L1/L2、按需读取、经验记忆已上线可依赖；自适应先快后全仍在实验，停止判断有 >5% 误判，关键链路要保留人工核对出口。
 ## 相关实体
 
 - [OpenViking 经验记忆进化闭环](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openviking-experience-memory-agent-evolution-loop-2026.md)

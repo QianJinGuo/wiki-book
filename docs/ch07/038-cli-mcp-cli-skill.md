@@ -1,6 +1,6 @@
 # CLI、MCP 和 CLI+Skill，应该如何选？
 
-> 📊 Level ⭐⭐⭐⭐ | 9.8KB
+> 📊 Level ⭐⭐⭐⭐ | 12.0KB
 
 > -> [原文存档](https://mp.weixin.qq.com/s/cijQOCOZQMcbldyAmQ8CZA)
 
@@ -124,6 +124,16 @@ Skill 是组织经验和方法论的载体。不要把 Skill 看作"让 Agent �
 - [Staragent Webterminal Cli Ali Infra Cli As Agent Hands](https://github.com/QianJinGuo/wiki-public/blob/main/entities/staragent-webterminal-cli-ali-infra-cli-as-agent-hands.md)
 - [Agentscope Java Harness Framework Enterprise Distributed](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentscope-java-harness-framework-enterprise-distributed.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/tool-use-mcp-patterns.md)
+
+## 第 2 来源：老系统接入 AI 的概念地图与三条路径（腾讯技术工程 2026-10-12，/54 SUPP）
+
+腾讯智慧出行 FDE 面向整车集团研究院 IT 团队的落地方法论（42 页交流成文）。与本文第 1 来源（绿地企业 Agent 平台的三层推荐架构）互补——本文增量是**存量系统改造路径学**。
+
+- **体检四维度 + 三路径决策树（零覆盖）**：先体检 API 开放程度/文档完整性/鉴权体系/变更风险承受度，再走决策树——①API 封装为 MCP（首选，封装层只做协议转换不碰业务逻辑）②CLI 包装（无 API 有脚本，输出结构化 JSON 再包 MCP）③浏览器自动化/RPA（兜底，过渡方案非终态）；改造深度递减、脆弱性递增。安全一案一议（身份传递/权限最小化/审计/敏感动作人工确认），无通用标准。排序用「使用频次-业务价值」四象限，高频低风险有 API 的先动手。
+- **MCP 传输四类版图（零覆盖）**：官方标准仅 stdio 与 Streamable HTTP 两种（SSE 自 2025-03 被取代，只做存量迁移）；社区扩展（WebSocket/WebRTC/进程内 RPC）按需；MCP Gateway/Proxy/托管属部署架构而非传输方式——MCP 是传输无关的。选型：本地 stdio / 企业共享 Streamable HTTP+OAuth / WebSocket 留实时与浏览器桥接。
+- **双案例**：BS 架构车企请假销假系统（REST API+MCP Server 薄封装，SSO 对接，老系统零改动，五步查假期变一句话）；CS 架构欧洲商用车企 PLM 桌面客户端（客户端 API→本地封装服务→结构化接口→MCP，沿用客户端登录态，解决 BOM/图纸人工搬运）。复用三经验：先体检再选路径/封装要薄（封装层越薄项目死得越慢）/鉴权写进项目计划。
+
+→ [原文存档](https://mp.weixin.qq.com/s/mUA-UziZPe0L1IfiMBss8w)
 
 ---
 
