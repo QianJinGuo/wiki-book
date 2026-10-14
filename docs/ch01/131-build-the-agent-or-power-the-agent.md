@@ -1,6 +1,6 @@
 # Build the Agent or Power the Agent?
 
-> 📊 Level ⭐ | 7.9KB
+> 📊 Level ⭐⭐⭐ | 14.2KB
 
 > **来源**: [Build the Agent or Power the Agent?](https://tanayj.com/p/build-the-agent-or-power-the-agent)
 
@@ -65,6 +65,36 @@ I think there are a few considerations for founders/builders to decide whether t
 → [原文存档](https://tanayj.com/p/build-the-agent-or-power-the-agent)
 
 ---
+## 深度分析
+
+### The fork is a distribution decision disguised as a product decision
+
+"Build or power" reads like an architecture question, but the article frames it as a question about where the customer's day starts. For a growing number of people that place is now a horizontal agent — Claude Code/Cowork, Codex, Copilot — and the founder's fork follows from that fact: either become the agent some users open instead of the horizontal one, or accept where they already live and show up inside it. Building means being the core interface, not a connector inside Claude or ChatGPT, which buys you the usage across all of a user's jobs-to-be-done — at the price of higher adoption friction and a head-to-head fight with the best-funded platforms in software. The asymmetry is strategic: building bets you can change user behavior, powering bets on riding behavior that already exists.
+
+### What makes "build" defensible — and how long it stays defensible
+
+The article names two cases where building the agent makes sense: when you are already the system of record (and/or the action/engagement layer), so a native agent inside your product beats sending users elsewhere; and when the domain reasoning itself is the product, specialized enough that a horizontal agent cannot do the work well. Harvey is the archetype — betting that for lawyers the work is specific enough to justify a dedicated core agent. But the moat has a half-life: as general harnesses improve, a competitor in the same vertical can take the power path and meet your customers inside a horizontal agent instead. If a general agent already does most of someone's job, convincing them to switch to yours for one slice of it is a hard sell. A build decision therefore needs an answer not just to "why us" but to "why still us in two years".
+
+### Powering is building an agent-native product, not porting the old one
+
+Powering does not mean shrinking your product into a plugin; it means building a version of it meant to be consumed by an agent — usually via an [MCP server](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/model-context-protocol-mcp.md), sometimes a clean CLI or an [agent-ready API](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-ready-api-design-patterns-2026.md). The article splits the value you can add into two levers: **data and context** (expose what you sit on wherever the customer already is — Granola's MCP lets agents consume its meeting context) and **capabilities and actions** (broaden what the horizontal agent can do — Higgsfield ships an MCP so agents can lean on its rendering expertise). Most players will need both levers. The strongest validation is that incumbents are moving first: Salesforce's Headless 360 exposes the whole platform as APIs, MCP tools and CLI commands under "the API is the UI", and HubSpot followed with a remote MCP server for CRM read/write — the interface stops being the moat exactly when powering stops being a niche play. Getting the tool surface right is its own discipline; [MCP tool design tradeoffs](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mcp-tool-design-tradeoffs-anthropic-2026.md) matter more than raw API coverage.
+
+### Four questions, and the reality that most companies do both
+
+The article's decision matrix asks: where does your customer already work, do you own the whole dataset/workflow or a slice, where does the value live (domain reasoning vs data and actions), and how much of the work stays inside one app? The predictive pattern: slices that only become useful when combined with other data get orchestrated up in the agent, so you almost have to power it; high-control, regulated, multi-step judgment leans build. The realistic end state for most companies is both, on two surfaces aimed at two audiences: an embedded agent for power users who live in your product, and a headless MCP layer for everyone on the edges who calls you from whatever agent they already run. Powering also quietly solves distribution: users who would never pay the learning cost of your UI can now call your product directly, expanding the audience to people your interface was previously inaccessible to. This two-surface playbook is now being written up as production doctrine elsewhere in the wiki ([vertical agent playbook](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vertical-domain-production-agent-playbook-alibaba-2026.md)), and the incumbent-side dynamics line up with broader [enterprise AI adoption](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/enterprise-ai-adoption.md) patterns.
+
+## 实践启示
+
+1. **Default to powering when you own a slice.** If your data only becomes useful combined with other systems, orchestration happens up in the agent — build the agent-native surface instead of fighting for the core interface.
+
+2. **Treat the MCP/CLI/API surface as a product, not a port.** Design tools, descriptions and actions for how an agent reasons and selects; an agent-consumable interface is a distinct artifact from your GUI, and its quality is the whole product for powered users.
+
+3. **If you do both, segment the audiences deliberately.** The embedded agent serves power users who live in your product; the headless layer serves everyone who only needs you for a slice of their job. Same backend, different surfaces, different metrics.
+
+4. **Re-justify build-side moats on a harness-improvement clock.** Every quarter the horizontal agents get more capable, so "the domain reasoning is the product" needs fresh evidence — a competitor powering the agent can meet your customers without you.
+
+5. **Use powering as audience expansion, not just retention.** Calling your product from a horizontal agent removes the learning cost entirely, reaching users your interface never would have — measure that as new reachable market, not cannibalization.
+
 ## 关联
 - 相关概念: [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)
 

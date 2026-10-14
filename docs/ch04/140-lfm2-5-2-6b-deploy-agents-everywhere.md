@@ -1,6 +1,6 @@
 # LFM2.5-2.6B: Deploy Agents Everywhere
 
-> 📊 Level ⭐⭐⭐ | 9.6KB
+> 📊 Level ⭐⭐⭐ | 9.8KB
 
 > **Background**：Liquid AI 于 2026-08-04 发布 LFM2.5-2.6B，定位端侧（on-device）Agentic 模型：小到可跑在手机上、CPU 上保持响应、能力足以支撑 Agentic 工作流（规划、工具调用、多步任务）。与同系列 [LFM2.5-230M](https://github.com/QianJinGuo/wiki-public/blob/main/entities/liquid-ai-lfm2-5-230m.md)（边缘小模型）和 [LFM2.5 Encoders](https://github.com/QianJinGuo/wiki-public/blob/main/entities/liquid-ai-lfm2-5-encoders-fast-long-context-cpu.md)（长上下文编码器）形成互补。
 
@@ -60,6 +60,7 @@ LFM2.5-2.6B 的核心论点：**移除 per-token 成本会改变开发者构建�
 - **Agentic RL 数据路线**：在真实 harness（Hermes/OpenClaw）内训练是「让模型适应 Agent 环境」的务实路径，与 Harness Engineering 领域关注点一致——环境即训练数据
 - **on-policy 蒸馏的价值**：MOPD 解决 off-policy 蒸馏的分布漂移问题，teacher/student 同源是稳定性关键——对多领域能力融合有参考价值
 - **端侧 Agent 的成本论**：本地推理免除 per-token 成本 → Agent 可并行常驻，是 edge Agent 产品设计的经济学依据
+- **姊妹档**：[LFM2.5-24B-A2B](https://github.com/QianJinGuo/wiki-public/blob/main/entities/liquid-lfm2-5-24b-a2b-agentic-moe-2026.md) 为同家族旗舰档（24B/2B 激活，131K context，含完整五阶段训练管线与沙箱 reward-hacking 案例）
 
 → [原文存档](https://www.liquid.ai/blog/lfm2-5-2-6b)
 

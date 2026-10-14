@@ -10,9 +10,8 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 1 |
 | ⭐⭐ 工程师 | 需编程基础 | 2 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 8 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 9 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 11 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 2 |
 
@@ -38,22 +37,19 @@ RAG 不只是"检索 + 拼接"——它是知识管理的入口。
 
 ## 本章内容
 
-### ⭐ 入门（1 篇）
-
-- [001. DREAM：用冻结 LLM 的自回归预测训练稠密检索器，无需标注正负样本](ch10/001-dream-llm)
-
 ### ⭐⭐ 工程师（2 篇）
 
-- [002. 【实践教程】真实AI客服落地全流程：意图识别、混合检索到数据飞轮](ch10/002-ai)
-- [003. Google出手统一全模态检索：Gemini Embedding 2把文本、图片、音频和视频压进同一向量空间](ch10/003-google-gemini-embedding-2)
+- [001. 【实践教程】真实AI客服落地全流程：意图识别、混合检索到数据飞轮](ch10/001-ai)
+- [002. Google出手统一全模态检索：Gemini Embedding 2把文本、图片、音频和视频压进同一向量空间](ch10/002-google-gemini-embedding-2)
 
-### ⭐⭐⭐ 专家（8 篇）
+### ⭐⭐⭐ 专家（9 篇）
 
-- [004. Nvidia Multimodal RAG Knowledge Systems](ch10/004-nvidia-multimodal-rag-knowledge-systems)
-- [005. Manufacturing Intelligence with Amazon Nova Multimodal Embeddings](ch10/005-manufacturing-intelligence-with-amazon-nova-multimodal-embed)
-- [006. 向量数据库已死，Claude Code、Cursor 为什么集体抛弃 RAG？](ch10/006-claude-code-cursor-rag)
-- [007. OpenViking 三论文：VikingMem 记忆管理 + TrieHI 目录感知向量检索 + VikingRAG 分层按需读取](ch10/007-openviking-vikingmem-triehi-vikingrag)
-- [008. 知识库构建方法论](ch10/008-page-008)
+- [003. Nvidia Multimodal RAG Knowledge Systems](ch10/003-nvidia-multimodal-rag-knowledge-systems)
+- [004. Manufacturing Intelligence with Amazon Nova Multimodal Embeddings](ch10/004-manufacturing-intelligence-with-amazon-nova-multimodal-embed)
+- [005. 向量数据库已死，Claude Code、Cursor 为什么集体抛弃 RAG？](ch10/005-claude-code-cursor-rag)
+- [006. OpenViking 三论文：VikingMem 记忆管理 + TrieHI 目录感知向量检索 + VikingRAG 分层按需读取](ch10/006-openviking-vikingmem-triehi-vikingrag)
+- [007. 知识库构建方法论](ch10/007-page-007)
+- [008. DREAM：用冻结 LLM 的自回归预测训练稠密检索器，无需标注正负样本](ch10/008-dream-llm)
 - [009. SkillCorpus: 大规模社区 Skill 生态的筛选、评测与边界分析](ch10/009-skillcorpus-skill)
 - [010. 视频 RAG 分块策略：停顿 / 滑动窗口 / LLM 主题分块](ch10/010-rag-llm)
 - [011. 怎么短平快地把RAG做好：厦门国际银行数创金融杯RAG初赛方案](ch10/011-rag-rag)

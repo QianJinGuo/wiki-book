@@ -41,34 +41,34 @@
     {
      "role": "核心原理",
      "title": "Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention",
-     "file": "ch01/247-recent-developments-in-llm-architectures-kv-sharing-mhc-a.md",
-     "url": "/ch01/247-recent-developments-in-llm-architectures-kv-sharing-mhc-a.html",
+     "file": "ch01/246-recent-developments-in-llm-architectures-kv-sharing-mhc-a.md",
+     "url": "/ch01/246-recent-developments-in-llm-architectures-kv-sharing-mhc-a.html",
      "chapter": "ch01",
      "chapterName": "AI 与 LLM 基础",
      "essence": "Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention；2026年4-5月推出的主要开源权重模型（Gemma 4、Laguna XS.2、ZAYA1-8B、DeepSeek V4）共同指向一个核心趋势：长上下文效率优化。随着推理模型和 Agent 工作流需要保留更多 token，KV-cache 大小、内存带宽和注意力计算成本成为主要瓶颈，各大厂商纷纷引入架构层面的 trick 来降低这些成本",
      "words": 4041,
-     "level": 3
+     "level": 1
     },
     {
      "role": "工程案例",
-     "title": "TokenSpeed: A Speed-of-Light LLM Inference Engine for AI Agents",
-     "file": "ch01/287-tokenspeed-a-speed-of-light-llm-inference-engine-for-ai-age.md",
-     "url": "/ch01/287-tokenspeed-a-speed-of-light-llm-inference-engine-for-ai-age.html",
-     "chapter": "ch01",
-     "chapterName": "AI 与 LLM 基础",
-     "essence": "TokenSpeed 是 LightSeek Foundation 开发的开源 LLM 推理引擎，专为 Agentic 工作负载（如 Claude Code、Codex、Cursor 等 Coding Agent）从第一性原理设计。其核心创新包括：编译器支持的并行建模机制、C++/Python 混合的高性能调度器、编译时 KV 缓存安全管理、可插拔分层内核系统，以及与 SMG 集成的低开销 CPU 请求入口。在 NVIDIA Blackwell 上，TokenSpeed 对标 TensorRT-LLM，在 Coding Agent 场景下 Pareto 前沿全面领先约 9-11%。；推理优化是 Agent 落地的关键瓶颈：选择 LLM 服务商或部署方案时，推理延迟应作为核心评估维度，尤其在 Coding Age。",
-     "words": 4064,
-     "level": 3
-    },
-    {
-     "role": "延伸阅读",
      "title": "How LLMs Actually Work: 0xkato Transformer Walkthrough",
-     "file": "ch01/243-how-llms-actually-work-0xkato-transformer-walkthrough.md",
-     "url": "/ch01/243-how-llms-actually-work-0xkato-transformer-walkthrough.html",
+     "file": "ch01/242-how-llms-actually-work-0xkato-transformer-walkthrough.md",
+     "url": "/ch01/242-how-llms-actually-work-0xkato-transformer-walkthrough.html",
      "chapter": "ch01",
      "chapterName": "AI 与 LLM 基础",
      "essence": "How LLMs Actually Work: 0xkato Transformer Walkthrough；0xkato 2026-06-01 发布的 transformer 完整 walkthrough 长文，9 节系统覆盖 LLM 内部机制，避免数学但保留工程准确性。目标读者：能读 modern LLM papers 和 model cards 的人",
      "words": 4780,
+     "level": 1
+    },
+    {
+     "role": "延伸阅读",
+     "title": "TokenSpeed: A Speed-of-Light LLM Inference Engine for AI Agents",
+     "file": "ch01/286-tokenspeed-a-speed-of-light-llm-inference-engine-for-ai-age.md",
+     "url": "/ch01/286-tokenspeed-a-speed-of-light-llm-inference-engine-for-ai-age.html",
+     "chapter": "ch01",
+     "chapterName": "AI 与 LLM 基础",
+     "essence": "TokenSpeed 是 LightSeek Foundation 开发的开源 LLM 推理引擎，专为 Agentic 工作负载（如 Claude Code、Codex、Cursor 等 Coding Agent）从第一性原理设计。其核心创新包括：编译器支持的并行建模机制、C++/Python 混合的高性能调度器、编译时 KV 缓存安全管理、可插拔分层内核系统，以及与 SMG 集成的低开销 CPU 请求入口。在 NVIDIA Blackwell 上，TokenSpeed 对标 TensorRT-LLM，在 Coding Agent 场景下 Pareto 前沿全面领先约 9-11%。；推理优化是 Agent 落地的关键瓶颈：选择 LLM 服务商或部署方案时，推理延迟应作为核心评估维度，尤其在 Coding Age。",
+     "words": 4064,
      "level": 1
     }
    ],
@@ -332,7 +332,7 @@
      "chapterName": "技能、工具与 MCP",
      "essence": "CLI、MCP 和 Skill 代表了三个不同层次的抽象：；CLI 是执行原语，负责在特定运行环境里完成具体操作。",
      "words": 5166,
-     "level": 1
+     "level": 3
     },
     {
      "role": "延伸阅读",
@@ -466,8 +466,8 @@
     {
      "role": "工程案例",
      "title": "Google出手统一全模态检索：Gemini Embedding 2把文本、图片、音频和视频压进同一向量空间",
-     "file": "ch10/003-google-gemini-embedding-2.md",
-     "url": "/ch10/003-google-gemini-embedding-2.html",
+     "file": "ch10/002-google-gemini-embedding-2.md",
+     "url": "/ch10/002-google-gemini-embedding-2.html",
      "chapter": "ch10",
      "chapterName": "RAG 与知识检索",
      "essence": "架构决策：双向注意力是关键。 生成式 Gemini 模型使用单向注意力，而 embedding 任务需要双向上下文来完整理解输入。Gemini Embedding 2 通过双向 Transformer 结构解决这一问题，配合 Mean Pooling + 线性投影输出 3072 维向量，并通过 Matryoshka Representation Learning 支持 768/1536/3072 维自适应压缩，兼顾精度与效率。；两阶段训练：先拉方向，再精修。 PFT 阶段用大 batch 把模型从「偏生成」往「偏编码」拉；FT 阶段带 hard negative 精修真正的多模态统一空间。NCE 风格对比学习 + batch 内负例的设计使跨模态对齐更紧密。Model Soup 权重平均多任务结果，有效对冲多任。",
@@ -477,8 +477,8 @@
     {
      "role": "延伸阅读",
      "title": "OpenViking 三论文：VikingMem 记忆管理 + TrieHI 目录感知向量检索 + VikingRAG 分层按需读取",
-     "file": "ch10/007-openviking-vikingmem-triehi-vikingrag.md",
-     "url": "/ch10/007-openviking-vikingmem-triehi-vikingrag.html",
+     "file": "ch10/006-openviking-vikingmem-triehi-vikingrag.md",
+     "url": "/ch10/006-openviking-vikingmem-triehi-vikingrag.html",
      "chapter": "ch10",
      "chapterName": "RAG 与知识检索",
      "essence": "记忆系统先做减法再做加法：写入时合并/去闲聊是全链路影响最大的单点（去掉它 88.83 → 83.51），优先投资写入端治理，再谈检索优化。；不要用\"塞更多上下文\"来提准确率：全历史召回 77.47 低于治理后的 88.83，过时与无关内容是负资产，旧事衰减和归档不是可选项",
@@ -781,8 +781,8 @@
     {
      "role": "延伸阅读",
      "title": "让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客",
-     "file": "ch09/014-kiro-claude-code-im-acp-bridge-ai-aws.md",
-     "url": "/ch09/014-kiro-claude-code-im-acp-bridge-ai-aws.html",
+     "file": "ch09/013-kiro-claude-code-im-acp-bridge-ai-aws.md",
+     "url": "/ch09/013-kiro-claude-code-im-acp-bridge-ai-aws.html",
      "chapter": "ch09",
      "chapterName": "AI 编程",
      "essence": "让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客；让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 by awschina on 17 3月 2026 in How-To Permalink Share 摘要：AI 编程助手如 Kiro CLI、Claude Code 能力日益强大，但使用场景局限于本地终端，难以满足移动办公和团队协作需求。本文介绍 ACP Bridge——一个将本地 CLI 编程助手通过 ACP 协议暴露为 HTTP 服务的桥接工具，结合 OpenClaw Gateway 和 AWS 基础设施，实现从 Discord 消息触发异步 AI 编程。",
@@ -1079,6 +1079,17 @@
     },
     {
      "role": "工程案例",
+     "title": "MosaicLeaks: Can your research agent keep a secret?",
+     "file": "ch04/084-mosaicleaks-can-your-research-agent-keep-a-secret.md",
+     "url": "/ch04/084-mosaicleaks-can-your-research-agent-keep-a-secret.html",
+     "chapter": "ch04",
+     "chapterName": "Agent 核心架构",
+     "essence": "把 query log 当作与私有文档同级的敏感资产治理。 mosaic 泄漏的载体是外发查询的累积日志，不是某条回复。多步检索/研究 Agent 应默认记录完整 query log，并纳入访问控制、留存期限与审计范围，而不是只盯着最终答案的脱敏。；不要用免责式 prompt 兜底。 \"不要泄漏\"这类 Plan prompt 收益不稳定且带能力代价（泄漏 34.0%→25.5% 换来成功率 48.7%→44.5%）。若必须用，只能算纵深防御的一层，不能当作合规依据",
+     "words": 5799,
+     "level": 3
+    },
+    {
+     "role": "延伸阅读",
      "title": "五款浏览器自动化工具横向对比：browser-use / Playwright / chrome-devtools-mcp / agent-browser / BrowserAct",
      "file": "ch04/291-browser-use-playwright-chrome-devtools-mcp-agent-bro.md",
      "url": "/ch04/291-browser-use-playwright-chrome-devtools-mcp-agent-bro.html",
@@ -1086,17 +1097,6 @@
      "chapterName": "Agent 核心架构",
      "essence": "五款浏览器自动化工具横向对比：browser-use / Playwright / chrome-devtools-mcp / agent-browser / BrowserAct；| 维度 | chrome-devtools-mcp | Playwright | agent-browser | browser-use | BrowserAct |。",
      "words": 6211,
-     "level": 3
-    },
-    {
-     "role": "延伸阅读",
-     "title": "Browser Harness — 自愈型浏览器 Agent 框架",
-     "file": "ch04/341-browser-harness-agent.md",
-     "url": "/ch04/341-browser-harness-agent.html",
-     "chapter": "ch04",
-     "chapterName": "Agent 核心架构",
-     "essence": "Browser Harness（browser-use/browser-harness，~8.9K Stars）是一个基于 Chrome DevTools Protocol (CDP) 直连的自愈型浏览器 Agent 框架，核心理念是去框架化：薄 CDP 桥接 + mid-task 自愈机制 + domain-skills 自动沉淀。；与 AgentBrowser、Playwright/Selenium 等方案不同，Browser Harness 不构建厚重抽象层，而是让 Agent 直接通过 CDP WebSocket 与浏览器原生状态交互",
-     "words": 3937,
      "level": 3
     }
    ],
@@ -1215,7 +1215,7 @@
      "chapterName": "Agent 核心架构",
      "essence": "复利的真正来源是「负结果资本化」。WikiSkill 最被低估的设计不是 pattern 目录，而是 skill-impact.md 对被拒提案的保留：门控回滚技能集，但 diff、验证分数与拒绝理由永久留在 wiki 里（wiki 永不因接受/拒绝回滚）。ALFWorld 案例中，Iteration 0 的 goal-directed-action 提案因过抽象被拒（验证 0.72），Iteration 1 的 Proposer 正是参考这条拒绝历史，才写出具体可执行的「Never Return an Item to Its Origin Location」（0.78 接受）。大多数自进化框架把被拒提案当作噪音丢弃，等于每轮都从零开始；WikiSkill 把失败预算变成可复用资产，这是「失败沉淀借鉴再失败」链。",
      "words": 5504,
-     "level": 1
+     "level": 3
     }
    ],
    "lab": {

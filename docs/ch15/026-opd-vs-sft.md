@@ -1,6 +1,6 @@
 # 在线蒸馏OPD vs 离线蒸馏SFT：数学原理与实战优势
 
-> 📊 Level ⭐⭐⭐⭐ | 14.8KB
+> 📊 Level ⭐⭐⭐⭐⭐ | 16.0KB
 
 ## 核心定义
 **离线蒸馏（SFT/Off-Policy）**：Teacher生成固定数据，Student通过SFT模仿。暴露偏差+复合误差+Mode-Covering导致小模型学到"平均值"幻觉。
@@ -143,6 +143,14 @@ OPD虽然解决了Mode-Covering问题，但引入了自己的隐患：Mode Colla
   - Special-token masking（修补 tokenizer mismatch 的正交手段）
 - **实验验证**：Qwen2.5-7B-Instruct + OpenThinker3-7B teacher，多任务（数学推理+智能体），Teacher Top-K 方法在 MATH500/AIME24/AIME25 等基准稳定优于 sampled-token OPD
 **合并判断：** 现有 entity 覆盖 OPD 基础理论（Forward KL vs Reverse KL、数学原理、Mode Seeking/Covering），本篇补充工程实践中的失败模式与解决方案，merge 后覆盖"理论 + 失败分析 + 修复方案"完整闭环。
+## NVIDIA 实证研究：Semi-OPD（离线学生 rollout 蒸馏常更优）【第3来源，2026-10-14】
+
+NVIDIA Research 系统性研究（17 组 teacher-student 配对，1.5B-235B）给出与 OPD 主线**方向相反的经验结论**：在多数配对上，**在离线学生 rollout 上蒸馏（Semi-OPD）往往优于严格 on-policy 蒸馏**——学生 rollout 保留自身分布的可达性，同时避免在线蒸馏的算力开销。
+
+> [!contradiction] 与主线「OPD 优于 SFT」结论存在张力：本实证研究支持按配对条件选择 Semi-OPD 而非全量 on-policy。两结论并非直接矛盾——主线对比的是「教师生成的离线数据（SFT）」vs「学生自己生成 + 教师逐步打分（OPD）」，NVIDIA 研究对比的是「教师生成数据」vs「学生生成 + 教师打分但批量离线进行」，边界条件（数据来源已含学生分布）不同。
+
+该研究把「何时需要 on-policy」变成一个可实证回答的配对级问题，与上方 Teacher Top-K 修复方案共同指向：OPD 的收益依赖分布对齐的工程细节，而非原则性优势。
+
 ## 相关实体
 - [Yann Dubois Openai Post Training Interview](https://github.com/QianJinGuo/wiki-public/blob/main/entities/yann-dubois-openai-post-training-interview.md)
 - Ettin Reranker Family

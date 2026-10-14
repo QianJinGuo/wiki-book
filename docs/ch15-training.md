@@ -13,8 +13,8 @@
 | ⭐ 入门 | 零基础可读 | 3 |
 | ⭐⭐ 工程师 | 需编程基础 | 2 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 14 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 4 |
-| ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 4 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 3 |
+| ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 5 |
 
 ---
 
@@ -62,18 +62,18 @@
 - [018. Heidi Health 临床 AI 微调：小模型通过偏好信号达前沿水平](ch15/018-heidi-health-ai)
 - [019. Notes on pretraining parallelisms and failed training runs.](ch15/019-notes-on-pretraining-parallelisms-and-failed-training-runs)
 
-### ⭐⭐⭐⭐ 科学家（4 篇）
+### ⭐⭐⭐⭐ 科学家（3 篇）
 
-- [020. 在线蒸馏OPD vs 离线蒸馏SFT：数学原理与实战优势](ch15/020-opd-vs-sft)
-- [021. RL Beyond the Verifiable: 当奖励信号无法自动验证时](ch15/021-rl-beyond-the-verifiable)
-- [022. ICML 2026 | PRISM: Parallel Residual Iterative Sequence Model](ch15/022-icml-2026-prism-parallel-residual-iterative-sequence-mode)
-- [023. NVIDIA-ZPPO: Zone of Proximal Policy Optimization](ch15/023-nvidia-zppo-zone-of-proximal-policy-optimization)
+- [020. RL Beyond the Verifiable: 当奖励信号无法自动验证时](ch15/020-rl-beyond-the-verifiable)
+- [021. ICML 2026 | PRISM: Parallel Residual Iterative Sequence Model](ch15/021-icml-2026-prism-parallel-residual-iterative-sequence-mode)
+- [022. NVIDIA-ZPPO: Zone of Proximal Policy Optimization](ch15/022-nvidia-zppo-zone-of-proximal-policy-optimization)
 
-### ⭐⭐⭐⭐⭐ 大师（4 篇）
+### ⭐⭐⭐⭐⭐ 大师（5 篇）
 
-- [024. Generalization Dynamics of LM Pre-training — Jiaxin Wen](ch15/024-generalization-dynamics-of-lm-pre-training-jiaxin-wen)
-- [025. Mind Lab LoRA 持续学习体系：δ-mem + MinT + LoRA Scaling Law + Macaron-A2UI](ch15/025-mind-lab-lora-mem-mint-lora-scaling-law-macaron-a2)
-- [026. Fine-Tuning Cosmos](ch15/026-fine-tuning-cosmos)
+- [023. Generalization Dynamics of LM Pre-training — Jiaxin Wen](ch15/023-generalization-dynamics-of-lm-pre-training-jiaxin-wen)
+- [024. Mind Lab LoRA 持续学习体系：δ-mem + MinT + LoRA Scaling Law + Macaron-A2UI](ch15/024-mind-lab-lora-mem-mint-lora-scaling-law-macaron-a2)
+- [025. Fine-Tuning Cosmos](ch15/025-fine-tuning-cosmos)
+- [026. 在线蒸馏OPD vs 离线蒸馏SFT：数学原理与实战优势](ch15/026-opd-vs-sft)
 - [027. SFT, RL, and On-Policy Distillation Through a Distributional Lens](ch15/027-sft-rl-and-on-policy-distillation-through-a-distributional)
 
 

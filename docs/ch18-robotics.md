@@ -10,8 +10,7 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 1 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 2 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 3 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
 
 ---
@@ -34,12 +33,9 @@ AI 最终要从屏幕走进物理世界。
 
 ## 本章内容
 
-### ⭐ 入门（1 篇）
+### ⭐⭐⭐ 专家（3 篇）
 
 - [001. NVIDIA Isaac Lab + Amazon SageMaker AI：机器人强化学习训练基础设施（Humanoid RL Scale-up）](ch18/001-nvidia-isaac-lab-amazon-sagemaker-ai-humanoid-rl-scale-u)
-
-### ⭐⭐⭐ 专家（2 篇）
-
 - [002. Unitree's IPO Filing: The State of the Robotics Market](ch18/002-unitree-s-ipo-filing-the-state-of-the-robotics-market)
 - [003. 蔚蓝BabyAlpha A3消费级机器狗](ch18/003-babyalpha-a3)
 
