@@ -203,16 +203,16 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 
 | 主题 | entity | raw |
 |---|---|---|
-| Skill Hub 组织资产化 | [Skill Hub Organization Asset Winty](ch07/048-skill-hub-ai-winty-q-3-4-6.html) | [skill-hub-organization-asset-winty.md](https://mp.weixin.qq.com/s/MDyTPOVEHpu-ocrpBENdLg) |
+| Skill Hub 组织资产化 | [Skill Hub Organization Asset Winty](ch07/047-skill-hub-ai-winty-q-3-4-6.html) | [skill-hub-organization-asset-winty.md](https://mp.weixin.qq.com/s/MDyTPOVEHpu-ocrpBENdLg) |
 | Skill 设计模式 | [Skill Design Patterns](ch07-skill-tool.html) | [anthropic-14-skill-patterns-best-practices.md](https://mp.weixin.qq.com/s/x7IhRhK4Ndmlg6d61PyKuw) |
 | Workflow Skill 写法 | [Skill Writing Patterns Best Practices](ch07-skill-tool.html) | [skill-writing-patterns-best-practices.md](https://mp.weixin.qq.com/s/aoNwyY5ZkCRMkZirn1rElQ) |
-| 企业级 Skill 8 块骨架 | [Skill Design Spec 8 Block Checklist Winty](ch07/051-skill-8-8-checklist.html) | [skill-design-spec-8-block-checklist-winty.md](https://mp.weixin.qq.com/s/pwm9e_wMhqlbBh8ICWJWxQ) |
-| Claude Code Skills / MCP / Rules 源码 | [Claude Code Skills Mcp Rules Source Analysis](ch07/053-claude-code-skills-mcp-rules.html) | [claude-code-skills-mcp-rules-source-analysis.md](https://mp.weixin.qq.com/s/FzTyopCXH-IVSYJyTMjWxA) |
+| 企业级 Skill 8 块骨架 | [Skill Design Spec 8 Block Checklist Winty](ch07/050-skill-8-8-checklist.html) | [skill-design-spec-8-block-checklist-winty.md](https://mp.weixin.qq.com/s/pwm9e_wMhqlbBh8ICWJWxQ) |
+| Claude Code Skills / MCP / Rules 源码 | [Claude Code Skills Mcp Rules Source Analysis](ch07/052-claude-code-skills-mcp-rules.html) | [claude-code-skills-mcp-rules-source-analysis.md](https://mp.weixin.qq.com/s/FzTyopCXH-IVSYJyTMjWxA) |
 | 三层 Agent 架构 | [Baidu Netdisk Three Layer Agent Architecture](ch04-agent-core.html) | [baidu-netdisk-kmp-migration-three-layer-agent-architecture.md](https://mp.weixin.qq.com/s/z2QWu5hE5TAZifqT4jYzVw) |
-| CLI / MCP / CLI+Skill 选型 | [Cli Mcp Skill Architecture Decision Vibecoder](ch07/038-cli-mcp-cli-skill.html) | [cli-mcp-skill-architecture-decision-vibecoder.md](https://mp.weixin.qq.com/s/cijQOCOZQMcbldyAmQ8CZA) |
+| CLI / MCP / CLI+Skill 选型 | [Cli Mcp Skill Architecture Decision Vibecoder](ch07/037-cli-mcp-cli-skill.html) | [cli-mcp-skill-architecture-decision-vibecoder.md](https://mp.weixin.qq.com/s/cijQOCOZQMcbldyAmQ8CZA) |
 | Skill 版本管理 | [Skill Version Management Semantic Versioning Practices Winty](ch07-skill-tool.html) | [skill-version-management-semantic-versioning-practices-winty.md](https://mp.weixin.qq.com/s/weA8CMZBI9B295tNft10WQ) |
 | Anthropic 12 个 MCP 模式 | [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](ch04-agent-core.html) | [anthropic-官方生产级-agent-最佳实践12-个可复用的-mcp-设计模式-v2.md](https://mp.weixin.qq.com/s/dd_yVuyLiO5avvivvFl5Zw) |
-| Microsoft Agent Framework Tools | [Microsoft Agent Framework Tools Overview Provider Matrix](ch07/049-microsoft-agent-framework-tools-4-provider-tool-ap.html) | [microsoft-agent-framework-tools-overview-provider-matrix.md](https://mp.weixin.qq.com/s/0vIV3VJIgwf1FRwDWNzYpw) |
+| Microsoft Agent Framework Tools | [Microsoft Agent Framework Tools Overview Provider Matrix](ch07/048-microsoft-agent-framework-tools-4-provider-tool-ap.html) | [microsoft-agent-framework-tools-overview-provider-matrix.md](https://mp.weixin.qq.com/s/0vIV3VJIgwf1FRwDWNzYpw) |
 ### 4.6 RAG 精读清单
 
 | 主题 | entity | raw |

@@ -47,7 +47,7 @@
      "chapterName": "AI 与 LLM 基础",
      "essence": "Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention；2026年4-5月推出的主要开源权重模型（Gemma 4、Laguna XS.2、ZAYA1-8B、DeepSeek V4）共同指向一个核心趋势：长上下文效率优化。随着推理模型和 Agent 工作流需要保留更多 token，KV-cache 大小、内存带宽和注意力计算成本成为主要瓶颈，各大厂商纷纷引入架构层面的 trick 来降低这些成本",
      "words": 4041,
-     "level": 1
+     "level": 3
     },
     {
      "role": "工程案例",
@@ -58,7 +58,7 @@
      "chapterName": "AI 与 LLM 基础",
      "essence": "How LLMs Actually Work: 0xkato Transformer Walkthrough；0xkato 2026-06-01 发布的 transformer 完整 walkthrough 长文，9 节系统覆盖 LLM 内部机制，避免数学但保留工程准确性。目标读者：能读 modern LLM papers 和 model cards 的人",
      "words": 4780,
-     "level": 1
+     "level": 3
     },
     {
      "role": "延伸阅读",
@@ -69,7 +69,7 @@
      "chapterName": "AI 与 LLM 基础",
      "essence": "TokenSpeed 是 LightSeek Foundation 开发的开源 LLM 推理引擎，专为 Agentic 工作负载（如 Claude Code、Codex、Cursor 等 Coding Agent）从第一性原理设计。其核心创新包括：编译器支持的并行建模机制、C++/Python 混合的高性能调度器、编译时 KV 缓存安全管理、可插拔分层内核系统，以及与 SMG 集成的低开销 CPU 请求入口。在 NVIDIA Blackwell 上，TokenSpeed 对标 TensorRT-LLM，在 Coding Agent 场景下 Pareto 前沿全面领先约 9-11%。；推理优化是 Agent 落地的关键瓶颈：选择 LLM 服务商或部署方案时，推理延迟应作为核心评估维度，尤其在 Coding Age。",
      "words": 4064,
-     "level": 1
+     "level": 3
     }
    ],
    "lab": {
@@ -315,24 +315,24 @@
     {
      "role": "核心原理",
      "title": "Claude Code Skills / MCP / Rules 源码分析",
-     "file": "ch07/053-claude-code-skills-mcp-rules.md",
-     "url": "/ch07/053-claude-code-skills-mcp-rules.html",
+     "file": "ch07/052-claude-code-skills-mcp-rules.md",
+     "url": "/ch07/052-claude-code-skills-mcp-rules.html",
      "chapter": "ch07",
      "chapterName": "技能、工具与 MCP",
      "essence": "\"注入位置\"是理解 Rules/MCP/Skills 本质差异的第一性原理；源码分析揭示的底层逻辑远比表面功能描述更清晰：Rules、MCP、Skills 的核心区别不在于\"能做什么\"（功能层面），而在于\"信息在 API 请求中占据什么位置\"（架构层面）。Rules 通过 prependUserContext() 注入 messages（被动，每次 API 调用自动携带）；MCP 同时占据 tools[] 和 system 两个位置（主动调用，Server 级指南在 system 动态区）；Skills 通过 tooluse 触发后在 Inline 模式下注入 messages（主动调用但执行是提示词注入）。这三个位置（messages、tools[]、system）的组合差异，导致了完全不同的工程特性：Rul。",
      "words": 10462,
-     "level": 3
+     "level": 1
     },
     {
      "role": "工程案例",
      "title": "CLI、MCP 和 CLI+Skill，应该如何选？",
-     "file": "ch07/038-cli-mcp-cli-skill.md",
-     "url": "/ch07/038-cli-mcp-cli-skill.html",
+     "file": "ch07/037-cli-mcp-cli-skill.md",
+     "url": "/ch07/037-cli-mcp-cli-skill.html",
      "chapter": "ch07",
      "chapterName": "技能、工具与 MCP",
      "essence": "CLI、MCP 和 Skill 代表了三个不同层次的抽象：；CLI 是执行原语，负责在特定运行环境里完成具体操作。",
      "words": 5166,
-     "level": 3
+     "level": 1
     },
     {
      "role": "延伸阅读",
@@ -472,7 +472,7 @@
      "chapterName": "RAG 与知识检索",
      "essence": "架构决策：双向注意力是关键。 生成式 Gemini 模型使用单向注意力，而 embedding 任务需要双向上下文来完整理解输入。Gemini Embedding 2 通过双向 Transformer 结构解决这一问题，配合 Mean Pooling + 线性投影输出 3072 维向量，并通过 Matryoshka Representation Learning 支持 768/1536/3072 维自适应压缩，兼顾精度与效率。；两阶段训练：先拉方向，再精修。 PFT 阶段用大 batch 把模型从「偏生成」往「偏编码」拉；FT 阶段带 hard negative 精修真正的多模态统一空间。NCE 风格对比学习 + batch 内负例的设计使跨模态对齐更紧密。Model Soup 权重平均多任务结果，有效对冲多任。",
      "words": 3202,
-     "level": 1
+     "level": 2
     },
     {
      "role": "延伸阅读",
@@ -483,7 +483,7 @@
      "chapterName": "RAG 与知识检索",
      "essence": "记忆系统先做减法再做加法：写入时合并/去闲聊是全链路影响最大的单点（去掉它 88.83 → 83.51），优先投资写入端治理，再谈检索优化。；不要用\"塞更多上下文\"来提准确率：全历史召回 77.47 低于治理后的 88.83，过时与无关内容是负资产，旧事衰减和归档不是可选项",
      "words": 4992,
-     "level": 1
+     "level": 3
     }
    ],
    "lab": {
@@ -552,13 +552,13 @@
     },
     {
      "role": "延伸阅读",
-     "title": "Microsoft Agent Framework Tools 总览：4 类工具 + Provider 矩阵 + Tool Approval",
-     "file": "ch07/049-microsoft-agent-framework-tools-4-provider-tool-ap.md",
-     "url": "/ch07/049-microsoft-agent-framework-tools-4-provider-tool-ap.html",
-     "chapter": "ch07",
-     "chapterName": "技能、工具与 MCP",
-     "essence": "Microsoft Agent Framework Tools 总览：4 类工具 + Provider 矩阵 + Tool Approval；Microsoft Agent Framework Tools 总览。",
-     "words": 14404,
+     "title": "Agent Harness 架构设计与实现：生产级 Agent 系统落地指南",
+     "file": "ch04/348-agent-harness-agent.md",
+     "url": "/ch04/348-agent-harness-agent.html",
+     "chapter": "ch04",
+     "chapterName": "Agent 核心架构",
+     "essence": "Agent Harness 架构设计与实现：生产级 Agent 系统落地指南；AI 工程领域过去两年经历了三次重心迁移，层层递进而非替代：。",
+     "words": 16912,
      "level": 3
     }
    ],
@@ -787,7 +787,7 @@
      "chapterName": "AI 编程",
      "essence": "让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客；让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 by awschina on 17 3月 2026 in How-To Permalink Share 摘要：AI 编程助手如 Kiro CLI、Claude Code 能力日益强大，但使用场景局限于本地终端，难以满足移动办公和团队协作需求。本文介绍 ACP Bridge——一个将本地 CLI 编程助手通过 ACP 协议暴露为 HTTP 服务的桥接工具，结合 OpenClaw Gateway 和 AWS 基础设施，实现从 Discord 消息触发异步 AI 编程。",
      "words": 3193,
-     "level": 1
+     "level": 2
     }
    ],
    "lab": {

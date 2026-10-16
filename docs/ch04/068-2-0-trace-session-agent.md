@@ -1,6 +1,6 @@
 # 云监控 2.0 智能聚类：Trace 意图聚类与 Session 任务聚类的 Agent 可观测分析层
 
-> 📊 Level ⭐⭐⭐ | 13.2KB
+> 📊 Level ⭐⭐⭐ | 16.0KB
 
 阿里云云原生「云监控 2.0」AI Agent 可观测推出的智能聚类能力，解决的核心问题是：**指标与 Trace 已具备，但单凭汇总指标难以定位变化集中在哪类用户任务、难以解释原因**——总 Token 上涨可能是请求量增加、复杂任务变多或重复调用/上下文冗余，混在一起统计无法区分业务需求变化与执行效率问题，且某一类任务的恶化会被平均值掩盖。该能力把运行指标与用户实际执行的任务联系起来，先归纳主题、再按主题观察规模/资源/交互表现，从整体波动收敛到具体场景后下钻 Trace 与 Session。
 
@@ -58,6 +58,17 @@ Session 层的核心概念是**用户任务**：一项有明确目标的工作�
 ## 定位与评价
 
 这是阿里云 AgentOps 版图上**可观测分析层**的产品化能力：[700+ 开发者摸底](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-observability-optimization-survey-aliyun-2026-09.md) 显示 46.7% 团队没有专门可观测工具、52.6% 无数据回灌闭环，智能聚类正是"观测→定位→改进→验证"闭环中把原始轨迹变成可分析场景的中间层。与阿里自家 [AgentLoop 数据飞轮](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aliyun-agentloop-enterprise-agent-self-evolution-flywheel.md)（失败模式聚类是优化路径一的环节）相比，本文把聚类从优化侧的辅助环节独立为可观测产品能力，并给出**意图/任务双层 + 交互摩擦信号**的完整方法栈；HDBSCAN 免指定簇数的设计使主题体系可随需求演化（自动发现→沉淀预定义主题）而非静态标签集。→ [原文存档](https://mp.weixin.qq.com/s/IMCmuAZlNxdRXDRquGlWWg)
+
+## 云栖升级：云监控 2.0 Agentic Observability 平台级全景（阿里云云原生 2026-10-15，/54 SUPP）
+
+云栖大会实录把本 entity 的聚类能力放回**平台级底座**：云监控 2.0 双含义框架——**Observability by Agents**（让 Agent 看懂系统）+ **Observability of Agents**（看懂 Agent），因果起点 = IDC 预测 2029 年活跃 Agent 超 10 亿、token/API 负载增 1000 倍（读数主体变了需要 by，Agent 自己成为新故障来源需要 of）。
+
+- **by Agents：展示系统→事实供给系统（零覆盖）**：三问题=看得全看得真/看得懂（语义与依赖从人脑沉淀到平台）/拿得到用得了（任务级机器接口）；责任边界="事实和接口属于云监控 2.0，模型和执行编排属于外部 Agent"。接入 500+ 组件（+150%）多云全栈（含 AI Agent 场景 OpenClaw/Hermes/Codex/Qoder/Claude Code 直连）；**意图式接入五步闭环**（描述目标→智能发现→生成方案→Preview 授权[变更前可见]→真实样本验证才算接入完成）；数据治理 Pipeline（统一接入/治理加工/成本路由）产出 Actionable Telemetry。
+- **UModel 扩容（零覆盖）**：内置 3,300+ 模型定义（10 观测域/214 分组，+85%）、数据源自定义建模、结合 STAROps 智能建模（AI 自动识别数据源/预填语义/推荐关系，人工确认一键发布）；五维语义网络（实体/数据/关系/知识/操作）。
+- **三大入口（零覆盖）**：Skill（方法层，怎么做）/ CMS2 CLI（执行层，本地确定性调用可审计）/ Cloud MCP（连接层，标准协议托管）——200+ 工具/21 一级域/覆盖 95% 功能。
+- **of Agents：故障不会尖叫（零覆盖）**：三困难=链路难贯通/**全绿不等于正确**/根因在 GPU 层；AI 全栈五层（用户端→Runtime→推理→PaaS→Infra）；四个串联功能=Session Replay 现场还原/端到端轨迹+全栈拓扑（任意一跳下钻到 GPU）/**多维分析**（Token 用量/成本/模型性能，工具/技能/记忆/RAG 开箱大盘）/**智能聚类归因**（语义聚类+四类归因——即本 entity 原有能力在平台中的位置）。本文与原聚类能力=平台底座与其中一环的关系。
+
+→ [原文存档](https://mp.weixin.qq.com/s/yUm_QwpFfaBGUcgUHQ8JBQ)
 
 ---
 

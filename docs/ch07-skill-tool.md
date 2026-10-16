@@ -12,9 +12,9 @@
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 2 |
 | ⭐⭐ 工程师 | 需编程基础 | 7 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 21 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 20 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 17 |
-| ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 13 |
+| ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 14 |
 
 ---
 
@@ -51,7 +51,7 @@ Agent 能不能"动手做事"，取决于它有什么工具。
 - [008. 如何构建生产准备的AI代理：MCP、CLI与技能——适合合适的工作的工具](ch07/008-ai-mcp-cli)
 - [009. Introducing the MDN MCP server](ch07/009-introducing-the-mdn-mcp-server)
 
-### ⭐⭐⭐ 专家（21 篇）
+### ⭐⭐⭐ 专家（20 篇）
 
 - [010. 高德交易 VOC 自动排查：基于 Hermes 的多 Agent 架构实践](ch07/010-voc-hermes-agent)
 - [011. Embabel](ch07/011-embabel)
@@ -65,49 +65,49 @@ Agent 能不能"动手做事"，取决于它有什么工具。
 - [019. Autonomous Vulnerability Hunting with MCP](ch07/019-autonomous-vulnerability-hunting-with-mcp)
 - [020. 高德扫街榜 HermesAgent 配图系统：VLM + Skill + 语言驱动的生产级 Agent 架构](ch07/020-hermesagent-vlm-skill-agent)
 - [021. AWS DevOps Agent × MCP Server：打通混合云网络排障的最后一公里](ch07/021-aws-devops-agent-mcp-server)
-- [022. skill-up: 阿里开源 Agent Skill 评测框架](ch07/022-skill-up-agent-skill)
-- [023. Create Custom MCP Catalogs and Profiles](ch07/023-create-custom-mcp-catalogs-and-profiles)
-- [024. 李继刚 ljg Skills 系列（四）：表达写作类 Skill](ch07/024-ljg-skills-skill)
-- [025. 让 Amazon Quick 操作飞书：构建远程 MCP 服务的设计实践](ch07/025-amazon-quick-mcp)
-- [026. SkillX — 层次化技能知识库](ch07/026-skillx)
-- [027. Anthropic Claude Skill 9 类任务分类法](ch07/027-anthropic-claude-skill-9)
-- [028. 李继刚 23 个 Skills 深度拆解——认知工序流水线](ch07/028-23-skills)
-- [029. Multica — 开源 Managed Agents 平台](ch07/029-multica-managed-agents)
-- [030. 龙虾之父教你省钱：开源Skill给你的Skill减肥](ch07/030-skill-skill)
+- [022. Create Custom MCP Catalogs and Profiles](ch07/022-create-custom-mcp-catalogs-and-profiles)
+- [023. 李继刚 ljg Skills 系列（四）：表达写作类 Skill](ch07/023-ljg-skills-skill)
+- [024. 让 Amazon Quick 操作飞书：构建远程 MCP 服务的设计实践](ch07/024-amazon-quick-mcp)
+- [025. SkillX — 层次化技能知识库](ch07/025-skillx)
+- [026. Anthropic Claude Skill 9 类任务分类法](ch07/026-anthropic-claude-skill-9)
+- [027. 李继刚 23 个 Skills 深度拆解——认知工序流水线](ch07/027-23-skills)
+- [028. Multica — 开源 Managed Agents 平台](ch07/028-multica-managed-agents)
+- [029. 龙虾之父教你省钱：开源Skill给你的Skill减肥](ch07/029-skill-skill)
 
 ### ⭐⭐⭐⭐ 科学家（17 篇）
 
-- [031. 我把 Claude Design 做成了 Skill，人人都能成为顶级网站设计师](ch07/031-claude-design-skill)
-- [032. ai-skill-evolution底层逻辑](ch07/032-ai-skill-evolution)
-- [033. 网盘存量代码迁移实战：我们如何用三层架构管住 AI 的输出](ch07/033-ai)
-- [034. Skill 产品哲学：歸藏做了爆款 Skill 后的产品反思](ch07/034-skill-skill)
-- [035. Anthropic 最新博客：MCP 没死，它又来了](ch07/035-anthropic-mcp)
-- [036. Hermes自进化完整闭环：Skill创建复用修补链路](ch07/036-hermes-skill)
-- [037. Skill自进化三路线：Trace2Skill归纳法 / EvoSkill验证闭环 / SkillOpt训练范式](ch07/037-skill-trace2skill-evoskill-skillopt)
-- [038. CLI、MCP 和 CLI+Skill，应该如何选？](ch07/038-cli-mcp-cli-skill)
-- [039. MCP-based Interactive PDF Text Extraction from Amazon S3](ch07/039-mcp-based-interactive-pdf-text-extraction-from-amazon-s3)
-- [040. Matt Pocock Skills — AI编程技能集合](ch07/040-matt-pocock-skills-ai)
-- [041. Skill 版本对比五大原则：从'两个数字比大小'到工程化质量门禁](ch07/041-skill)
-- [042. Meta Skill](ch07/042-meta-skill)
-- [043. 京东健康 OPC 团队产品全流程 Skill 探索](ch07/043-opc-skill)
-- [044. Claude Code MCP Server](ch07/044-claude-code-mcp-server)
-- [045. Claude Code Skills 实战指南 — 发现机制、编写与安全](ch07/045-claude-code-skills)
-- [046. Skill 版本管理五大原则：从越改越差到持续演进](ch07/046-skill)
-- [047. Skill Craft — Claude Skill 质量工程框架](ch07/047-skill-craft-claude-skill)
+- [030. 我把 Claude Design 做成了 Skill，人人都能成为顶级网站设计师](ch07/030-claude-design-skill)
+- [031. ai-skill-evolution底层逻辑](ch07/031-ai-skill-evolution)
+- [032. 网盘存量代码迁移实战：我们如何用三层架构管住 AI 的输出](ch07/032-ai)
+- [033. Skill 产品哲学：歸藏做了爆款 Skill 后的产品反思](ch07/033-skill-skill)
+- [034. Anthropic 最新博客：MCP 没死，它又来了](ch07/034-anthropic-mcp)
+- [035. Hermes自进化完整闭环：Skill创建复用修补链路](ch07/035-hermes-skill)
+- [036. Skill自进化三路线：Trace2Skill归纳法 / EvoSkill验证闭环 / SkillOpt训练范式](ch07/036-skill-trace2skill-evoskill-skillopt)
+- [037. CLI、MCP 和 CLI+Skill，应该如何选？](ch07/037-cli-mcp-cli-skill)
+- [038. MCP-based Interactive PDF Text Extraction from Amazon S3](ch07/038-mcp-based-interactive-pdf-text-extraction-from-amazon-s3)
+- [039. Matt Pocock Skills — AI编程技能集合](ch07/039-matt-pocock-skills-ai)
+- [040. Skill 版本对比五大原则：从'两个数字比大小'到工程化质量门禁](ch07/040-skill)
+- [041. Meta Skill](ch07/041-meta-skill)
+- [042. 京东健康 OPC 团队产品全流程 Skill 探索](ch07/042-opc-skill)
+- [043. Claude Code MCP Server](ch07/043-claude-code-mcp-server)
+- [044. Claude Code Skills 实战指南 — 发现机制、编写与安全](ch07/044-claude-code-skills)
+- [045. Skill 版本管理五大原则：从越改越差到持续演进](ch07/045-skill)
+- [046. Skill Craft — Claude Skill 质量工程框架](ch07/046-skill-craft-claude-skill)
 
-### ⭐⭐⭐⭐⭐ 大师（13 篇）
+### ⭐⭐⭐⭐⭐ 大师（14 篇）
 
-- [048. Skill Hub：企业级 AI 经验资产化的关键（组织能力视角）— winty 前端Q 3 篇合集：组织资产 + 质量门禁 4 关 + 生命周期 6 阶段治理](ch07/048-skill-hub-ai-winty-q-3-4-6)
-- [049. Microsoft Agent Framework Tools 总览：4 类工具 + Provider 矩阵 + Tool Approval](ch07/049-microsoft-agent-framework-tools-4-provider-tool-ap)
-- [050. Skill 设计模式](ch07/050-skill)
-- [051. 企业级 Skill 8 块最小骨架 + 8 条 checklist 设计规范](ch07/051-skill-8-8-checklist)
-- [052. AI Agents Security Survey: Attack and Defense](ch07/052-ai-agents-security-survey-attack-and-defense)
-- [053. Claude Code Skills / MCP / Rules 源码分析](ch07/053-claude-code-skills-mcp-rules)
-- [054. Hermes Agent 满配 12 层配置完整指南（从裸装到 24h Agent 团队）](ch07/054-hermes-agent-12-24h-agent)
-- [055. 重新定义Skill开发：保姆级教程&一站式开发助手](ch07/055-skill)
-- [056. StarAgent/Drogo WebTerminal CLI：阿里基础设施把 WebTerminal 变成 Agent 手脚（CLI 才是 Skill 的执行面）](ch07/056-staragent-drogo-webterminal-cli-webterminal-agent-cli)
-- [057. Agent 记忆存储方案深度洞察：6 大流派分歧、Wiki 编译 vs 原始数据之争、Hermes Agent 启示](ch07/057-agent-6-wiki-vs-hermes-agent)
-- [058. Wiki Evolver](ch07/058-wiki-evolver)
+- [047. Skill Hub：企业级 AI 经验资产化的关键（组织能力视角）— winty 前端Q 3 篇合集：组织资产 + 质量门禁 4 关 + 生命周期 6 阶段治理](ch07/047-skill-hub-ai-winty-q-3-4-6)
+- [048. Microsoft Agent Framework Tools 总览：4 类工具 + Provider 矩阵 + Tool Approval](ch07/048-microsoft-agent-framework-tools-4-provider-tool-ap)
+- [049. Skill 设计模式](ch07/049-skill)
+- [050. 企业级 Skill 8 块最小骨架 + 8 条 checklist 设计规范](ch07/050-skill-8-8-checklist)
+- [051. AI Agents Security Survey: Attack and Defense](ch07/051-ai-agents-security-survey-attack-and-defense)
+- [052. Claude Code Skills / MCP / Rules 源码分析](ch07/052-claude-code-skills-mcp-rules)
+- [053. Hermes Agent 满配 12 层配置完整指南（从裸装到 24h Agent 团队）](ch07/053-hermes-agent-12-24h-agent)
+- [054. 重新定义Skill开发：保姆级教程&一站式开发助手](ch07/054-skill)
+- [055. StarAgent/Drogo WebTerminal CLI：阿里基础设施把 WebTerminal 变成 Agent 手脚（CLI 才是 Skill 的执行面）](ch07/055-staragent-drogo-webterminal-cli-webterminal-agent-cli)
+- [056. Agent 记忆存储方案深度洞察：6 大流派分歧、Wiki 编译 vs 原始数据之争、Hermes Agent 启示](ch07/056-agent-6-wiki-vs-hermes-agent)
+- [057. Wiki Evolver](ch07/057-wiki-evolver)
+- [058. skill-up: 阿里开源 Agent Skill 评测框架](ch07/058-skill-up-agent-skill)
 - [059. Perplexity 内部 Skill 设计指南：四维体系与维护方法论](ch07/059-perplexity-skill)
 - [060. Claude Code SKILL.md 写作指南](ch07/060-claude-code-skill-md)
 
