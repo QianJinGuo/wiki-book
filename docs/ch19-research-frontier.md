@@ -2,7 +2,7 @@
 
 > Scaling Law、涌现能力、世界模型、自我博弈
 
-> 本章收录 **12 篇**实体，按深度递增排列。
+> 本章收录 **13 篇**实体，按深度递增排列。
 
 ---
 
@@ -10,7 +10,7 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐⭐ 工程师 | 需编程基础 | 1 |
+| ⭐⭐ 工程师 | 需编程基础 | 2 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 4 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 5 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 2 |
@@ -35,29 +35,30 @@
 
 ## 本章内容
 
-### ⭐⭐ 工程师（1 篇）
+### ⭐⭐ 工程师（2 篇）
 
-- [001. The Complexity of Simplicity | Jim Nielsen's Notes](ch19/001-the-complexity-of-simplicity-jim-nielsen-s-notes)
+- [001. PoS：用显式信念状态识别并打破 Belief Trapping](ch19/001-pos-belief-trapping)
+- [002. The Complexity of Simplicity | Jim Nielsen's Notes](ch19/002-the-complexity-of-simplicity-jim-nielsen-s-notes)
 
 ### ⭐⭐⭐ 专家（4 篇）
 
-- [002. 世界模型的DeepSeek时刻！魔芯Flash World Model降本70%，跑出50FPS实时交互](ch19/002-deepseek-flash-world-model-70-50fps)
-- [003. Prompt Injection 的机制解释：基于角色感知的 LLM 安全分析](ch19/003-prompt-injection-llm)
-- [004. Count Anything - 文本引导的通用目标计数框架](ch19/004-count-anything)
-- [005. From AGI to ASI](ch19/005-from-agi-to-asi)
+- [003. 世界模型的DeepSeek时刻！魔芯Flash World Model降本70%，跑出50FPS实时交互](ch19/003-deepseek-flash-world-model-70-50fps)
+- [004. Prompt Injection 的机制解释：基于角色感知的 LLM 安全分析](ch19/004-prompt-injection-llm)
+- [005. Count Anything - 文本引导的通用目标计数框架](ch19/005-count-anything)
+- [006. From AGI to ASI](ch19/006-from-agi-to-asi)
 
 ### ⭐⭐⭐⭐ 科学家（5 篇）
 
-- [006. 推荐系统进入大模型时刻：昇腾 NPU 如何支撑千亿级生成式推荐落地](ch19/006-npu)
-- [007. NeurIPS 2026 Pangram 事件：闭源 AI 检测器用于学术 desk-reject 的方法论争议](ch19/007-neurips-2026-pangram-ai-desk-reject)
-- [008. Lean Software Scaling Laws](ch19/008-lean-software-scaling-laws)
-- [009. Recursive First Steps Toward Automated AI Research：SOTA 三基准自动化研究系统](ch19/009-recursive-first-steps-toward-automated-ai-research-sota)
-- [010. Qwen-AgentWorld: Language World Models for General Agents](ch19/010-qwen-agentworld-language-world-models-for-general-agents)
+- [007. 推荐系统进入大模型时刻：昇腾 NPU 如何支撑千亿级生成式推荐落地](ch19/007-npu)
+- [008. NeurIPS 2026 Pangram 事件：闭源 AI 检测器用于学术 desk-reject 的方法论争议](ch19/008-neurips-2026-pangram-ai-desk-reject)
+- [009. Lean Software Scaling Laws](ch19/009-lean-software-scaling-laws)
+- [010. Recursive First Steps Toward Automated AI Research：SOTA 三基准自动化研究系统](ch19/010-recursive-first-steps-toward-automated-ai-research-sota)
+- [011. Qwen-AgentWorld: Language World Models for General Agents](ch19/011-qwen-agentworld-language-world-models-for-general-agents)
 
 ### ⭐⭐⭐⭐⭐ 大师（2 篇）
 
-- [011. Visual Para-Thinker: 视觉并行思考框架 (arxiv 2602.13310)](ch19/011-visual-para-thinker-arxiv-2602-13310)
-- [012. Video Agent 范式迁移与算力-人才飞轮：Ethan He 从 Cosmos 到 Grok Imagine 的第一手洞见](ch19/012-video-agent-ethan-he-cosmos-grok-imagine)
+- [012. Visual Para-Thinker: 视觉并行思考框架 (arxiv 2602.13310)](ch19/012-visual-para-thinker-arxiv-2602-13310)
+- [013. Video Agent 范式迁移与算力-人才飞轮：Ethan He 从 Cosmos 到 Grok Imagine 的第一手洞见](ch19/013-video-agent-ethan-he-cosmos-grok-imagine)
 
 
 ---

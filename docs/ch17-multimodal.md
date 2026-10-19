@@ -10,9 +10,9 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 2 |
+| ⭐ 入门 | 零基础可读 | 1 |
 | ⭐⭐ 工程师 | 需编程基础 | 1 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 14 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 15 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 3 |
 
 ---
@@ -35,18 +35,18 @@
 
 ## 本章内容
 
-### ⭐ 入门（2 篇）
+### ⭐ 入门（1 篇）
 
-- [001. How transparent is DiffusionGemma (and why it matters)](ch17/001-how-transparent-is-diffusiongemma-and-why-it-matters)
-- [002. Mistral Shieldstral — Policy-Adaptive Multimodal Safety Classifier](ch17/002-mistral-shieldstral-policy-adaptive-multimodal-safety-clas)
+- [001. Mistral Shieldstral — Policy-Adaptive Multimodal Safety Classifier](ch17/001-mistral-shieldstral-policy-adaptive-multimodal-safety-clas)
 
 ### ⭐⭐ 工程师（1 篇）
 
-- [003. SunFinance: Textract+Claude准确率90.8%的ID提取方案](ch17/003-sunfinance-textract-claude-90-8-id)
+- [002. SunFinance: Textract+Claude准确率90.8%的ID提取方案](ch17/002-sunfinance-textract-claude-90-8-id)
 
-### ⭐⭐⭐ 专家（14 篇）
+### ⭐⭐⭐ 专家（15 篇）
 
-- [004. Pixelle-Video — 阿里国际 AIDC 开源的全自动视频生成 pipeline 装配工](ch17/004-pixelle-video-aidc-pipeline)
+- [003. Pixelle-Video — 阿里国际 AIDC 开源的全自动视频生成 pipeline 装配工](ch17/003-pixelle-video-aidc-pipeline)
+- [004. How transparent is DiffusionGemma (and why it matters)](ch17/004-how-transparent-is-diffusiongemma-and-why-it-matters)
 - [005. TimeLens2: Generalist Video Temporal Grounding with Multimodal LLMs](ch17/005-timelens2-generalist-video-temporal-grounding-with-multimod)
 - [006. CVPR 2026 Highlight | 清华打破多模态音频生成的「通才困境」：Omni2Sound 音频基础模型开源！](ch17/006-cvpr-2026-highlight-omni2sound)
 - [007. 高德 ABot-Earth 0.5：全球首个 3D 原生城市世界模型（1% 成本 + 千倍提效）](ch17/007-abot-earth-0-5-3d-1)
