@@ -11,8 +11,8 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 7 |
-| ⭐⭐ 工程师 | 需编程基础 | 11 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 40 |
+| ⭐⭐ 工程师 | 需编程基础 | 10 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 41 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 35 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 17 |
 
@@ -46,26 +46,26 @@ AI 编程是 Agent 最早成熟的品类，也是理解 Agent 工程的最佳窗
 - [006. Loop 的产品视角——项目中心从人挪到 Agent 系统](ch09/006-loop-agent)
 - [007. 用 Kiro 构建行业专业软件：Spec vs Vibe Coding 的分层结论](ch09/007-kiro-spec-vs-vibe-coding)
 
-### ⭐⭐ 工程师（11 篇）
+### ⭐⭐ 工程师（10 篇）
 
-- [008. Claude Code Loop Types — 官方四种循环模式分类法](ch09/008-claude-code-loop-types)
-- [009. Kitta：领域深度定制的 Code Review Agent（阿里云龙蜥社区实践）](ch09/009-kitta-code-review-agent)
-- [010. Claude Dispatch + 接口力量：AI 从 Chatbot 到 Agent Interface 的转变](ch09/010-claude-dispatch-ai-chatbot-agent-interface)
-- [011. Notes Inside China AI Labs Lambert](ch09/011-notes-inside-china-ai-labs-lambert)
-- [012. 7个月，234次提交，1690行代码：AI编程大型翻车现场：我决定全部作废，手动重写！](ch09/012-7-234-1690-ai)
-- [013. 场景营销前端 AI Coding — AI Native 的视觉稿还原](ch09/013-ai-coding-ai-native)
-- [014. 让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](ch09/014-kiro-claude-code-im-acp-bridge-ai-aws)
-- [015. 2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](ch09/015-2-0-claude-vscode)
-- [016. Vibe Coding in Production — Erik Schluntz / Anthropic](ch09/016-vibe-coding-in-production-erik-schluntz-anthropic)
-- [017. Introducing deepsec: The security harness for finding vulnerabilities in your codebase](ch09/017-introducing-deepsec-the-security-harness-for-finding-vulner)
-- [018. Automate progressive rollouts with Vercel Flags - Vercel](ch09/018-automate-progressive-rollouts-with-vercel-flags-vercel)
+- [008. Kitta：领域深度定制的 Code Review Agent（阿里云龙蜥社区实践）](ch09/008-kitta-code-review-agent)
+- [009. Claude Dispatch + 接口力量：AI 从 Chatbot 到 Agent Interface 的转变](ch09/009-claude-dispatch-ai-chatbot-agent-interface)
+- [010. Notes Inside China AI Labs Lambert](ch09/010-notes-inside-china-ai-labs-lambert)
+- [011. 7个月，234次提交，1690行代码：AI编程大型翻车现场：我决定全部作废，手动重写！](ch09/011-7-234-1690-ai)
+- [012. 场景营销前端 AI Coding — AI Native 的视觉稿还原](ch09/012-ai-coding-ai-native)
+- [013. 让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](ch09/013-kiro-claude-code-im-acp-bridge-ai-aws)
+- [014. 2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](ch09/014-2-0-claude-vscode)
+- [015. Vibe Coding in Production — Erik Schluntz / Anthropic](ch09/015-vibe-coding-in-production-erik-schluntz-anthropic)
+- [016. Introducing deepsec: The security harness for finding vulnerabilities in your codebase](ch09/016-introducing-deepsec-the-security-harness-for-finding-vulner)
+- [017. Automate progressive rollouts with Vercel Flags - Vercel](ch09/017-automate-progressive-rollouts-with-vercel-flags-vercel)
 
-### ⭐⭐⭐ 专家（40 篇）
+### ⭐⭐⭐ 专家（41 篇）
 
-- [019. 使用Claude Code：session管理与1M上下文](ch09/019-claude-code-session-1m)
-- [020. Cheap code means formal verification is reasonable now — Antfly Blog](ch09/020-cheap-code-means-formal-verification-is-reasonable-now-ant)
-- [021. It’s safe to close your laptop now: Hosting coding agents on Amazon Bedrock AgentCore](ch09/021-it-s-safe-to-close-your-laptop-now-hosting-coding-agents-on)
-- [022. OpenAI models and Codex on Amazon Bedrock are now generally available](ch09/022-openai-models-and-codex-on-amazon-bedrock-are-now-generally)
+- [018. 使用Claude Code：session管理与1M上下文](ch09/018-claude-code-session-1m)
+- [019. Cheap code means formal verification is reasonable now — Antfly Blog](ch09/019-cheap-code-means-formal-verification-is-reasonable-now-ant)
+- [020. It’s safe to close your laptop now: Hosting coding agents on Amazon Bedrock AgentCore](ch09/020-it-s-safe-to-close-your-laptop-now-hosting-coding-agents-on)
+- [021. OpenAI models and Codex on Amazon Bedrock are now generally available](ch09/021-openai-models-and-codex-on-amazon-bedrock-are-now-generally)
+- [022. Claude Code Loop Types — 官方四种循环模式分类法](ch09/022-claude-code-loop-types)
 - [023. DeepSeek V4 DS4C Antirez 本地推理实践](ch09/023-deepseek-v4-ds4c-antirez)
 - [024. Coding Agent在百度的落地实践：从反馈闭环到工程范式重构](ch09/024-coding-agent)
 - [025. Cat Wu: Anthropic Claude Code/Cowork 产品负责人访谈](ch09/025-cat-wu-anthropic-claude-code-cowork)

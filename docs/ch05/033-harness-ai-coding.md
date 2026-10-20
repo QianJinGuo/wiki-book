@@ -1,6 +1,6 @@
 # 应用宝活动平台 Harness 工程实践——从对话式 AI Coding 到工程化系统
 
-> 📊 Level ⭐⭐ | 8.8KB
+> 📊 Level ⭐⭐⭐ | 13.0KB
 
 > 原文归档：原文归档
 
@@ -116,6 +116,28 @@ TDD 落地不在代码层面，而是在接口测试用例上——一开始生�
 核心立场：**核心在线业务系统仍需要人守住架构这条线**——AI 代码腐化速度快、高质量代码和架构会反哺 AI、人对代码失去掌控后线上问题只能靠 AI 排查。但结果导向/容错率高的系统（如运营看板）适合 vibe coding 黑盒化。
 
 > 参见 [Code is cheap: Harness 方法论——水流理论、最小混沌单元与反 slop](https://github.com/QianJinGuo/wiki-public/blob/main/entities/code-is-cheap-harness-water-flow-wuyue-aliyun-2026.md)——前者从第一性原理推导 Harness 方法论，本文提供生产级实现细节，两者互补。本文也补充了 [腾讯技术工程 Harness 探索之旅](https://github.com/QianJinGuo/wiki-public/blob/main/entities/harness-engineering-exploration-journey-tencent.md) 中缺失的工程细节。
+
+## 深度分析
+
+### 状态即契约，而非进度日志
+
+状态化起作用的不是落盘，而是把阶段变成可判定的契约：`e2e-state.json` 的 Phase 0-7 与 `product-state.json` 的 breakdown/forking/joining 构成两级状态机，子需求数 × 阶段数即状态爆炸。原文未定义状态守卫，把确定性押在 Agent 的确定性 IO 与 Stop hook 拦截"偷懒式停止"上——Hook 是兜底，schema 才是主约束；缺强类型状态，"这阶段算不算完成"的判定权就回到模型。故必须禁用项目级 Memory：它是第二份不受版本控制的状态，与状态文件争同一事实。这套 Harness 用放弃跨任务学习，换单次运行的可重放。
+
+### 幂等边界按不可逆性划分
+
+worktree 隔离先解决的是回滚：分支失败可整棵丢弃，爆炸半径压在一个任务内；代价是合并成为唯一不可幂等的步骤，Join 必须串行。冲突四策略的排序同理——事前文件隔离、收口串行、proto 前置单一写者、DB/配置一次性前置确认——判据是不可逆性而非实现难度，最后一项已无法回滚，只能交人。Mock 再把调度与生成耗时解耦，状态机可脱模重跑，这是重放便宜的前提。
+
+### 专家 Agent 赢在控制流外置
+
+长 prompt 只有一次有损压缩的机会。专家 Agent 的价值不在切得细，而在边界由工具最小权限划定：通用 Agent 握着全部工具，第 3 阶段的越权与第 5 阶段的正常操作在日志上无法区分，故障不可归因。更硬的证据是调度层回退——弃用主子 Agent，改由外部程序编排全局流程，驱动层从 LLM 生成的 Shell 重写为 Go。**胜利的本质是把控制流从模型里拿出来，让 Agent 退化为纯函数**。
+
+### 重放要四个版本号，原文只钉住两个
+
+状态落盘只给了可中断、可恢复、可观测的骨架，真重放还需脚本、知识库、模型三个版本坐标。meta.yaml 的 git_hash 对比 HEAD 服务于生成文档，不服务于执行需求：跑到 Phase 5 时知识库被增量更新，同一份状态会走岔；log.md 只审计知识生成。原文把评估体系列为下一步——缺口不在指标，而在"状态迁移→模型调用→产物"的三元组绑定，参见 [Harness 可观测性的生产要求](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-observability-production.md)。
+
+### 可迁移的是约束结构，不可迁移的是强类型 RPC 文化
+
+可迁移的部分很硬：状态即接口、确定性下沉为脚本、worktree 限爆炸半径、按不可逆性排冲突、渐进式 grep 替代向量 RAG。不可迁移两处：proto-first 才使"前置串行、统一生成桩代码"成立，REST/GraphQL 团队得先自造契约工件；800+ 文档、90+ 服务摊薄了冷启成本，五个服务时三层目录先成负债。更隐蔽的是组织前提：能禁用 Memory、能前置确认 DB 变更的是全栈平台团队；跨团队只能协商接入点——**结构可抄，约束不可抄**。
 
 ## 标签
 

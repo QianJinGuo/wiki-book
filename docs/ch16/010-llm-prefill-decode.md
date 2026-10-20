@@ -1,6 +1,6 @@
 # LLM 推理流水线完整解析：Prefill-Decode 双阶段模型
 
-> 📊 Level ⭐⭐ | 8.7KB
+> 📊 Level ⭐⭐⭐⭐ | 12.9KB
 
 > -> [原文存档](https://mp.weixin.qq.com/s/1zZ0UXCNUA1UJ39gJNDQjg)
 
@@ -107,6 +107,39 @@ DeepSeek V4 Preview（2026-04-24）没有把 KV cache 当固定成本管理，�
 2. **上下文长度不免费**——膨胀 KV cache，直接降低 batch capacity
 3. **decode 阶段 GPU 利用率可能仅 30%**——瓶颈在内存带宽不在算术计算
 4. **解决方向**：更快的内存 + 更小的缓存 + 更好的 batching，而非更多算力
+
+## 深度分析
+
+### TTFT 与 ITL：两条斜率不同的曲线
+
+Prefill 随 prompt 线性增长、可完全并行；decode 单步恒定、必须串行。混在一张卡上，长 prompt 抬高全批 TTFT，为压 ITL 收紧 batch 又浪费 prefill 算力，两者资源配比还不兼得（FLOPS vs 带宽）。PD 分离的价值是让两类负载按各自瓶颈独立扩缩，代价是 KV 跨节点搬运——只有迁移成本低于调度损耗时才划算，KV 更小的架构因此让 PD 更便宜。
+
+### KV Cache 才是真正的容量约束
+
+decode 每步搬全部权重加整条 KV，算术强度极低，token/s ≈ 每步字节 ÷ 带宽——加算力无用。字节里权重恒定、KV 随上下文线性涨，延迟与容量在长上下文下合成一个问题：装得下多少序列就有多少并发。分页治碎片（浪费从"预留到最大长度"降为尾块残余），前缀复用治计算侧（公共前缀 KV 从私有开销变成共享资产，故缓存须先分层再路由）。
+
+### 量化收益为何非线性
+
+位宽与显存线性，延迟不是。权重降位宽直接减少搬运字节，带宽受限的 decode 近等比例受益；权重一旦能留在片上或改由低精度张量核心执行，收益即被别的瓶颈吃掉。激活的离群通道让 per-tensor scale 失效、误差沿层累积，最先伤工具调用与复杂推理。KV 量化只压随序列增长的那项，收益随上下文放大。故"INT8 延迟减半"只在权重量化 + 带宽受限 + 长 decode 时成立。
+
+### 投机解码的接受率经济学
+
+收益 ≈ 期望接受数 ÷（草稿成本 + 验证成本）。草稿越强，接受率 α 越高但单步越贵，最优推测长度在两条曲线交点而非越大越好。难点是分布匹配：草稿偏移让 α 在代码、结构化输出、罕见语言上骤降；验证仍要为目标模型预留整批显存——省时间不省显存，KV 紧张时先撞容量墙。
+
+### 公平性代价与 kLLM 数字的边界
+
+continuous batching 把延迟问题变成排队问题：长 prefill 阻塞同批 ITL，只能靠调度显式纠正（chunk 切分、短请求优先、让出补偿防饿死），收益因此是分布性的——均值改善常伴随尾部恶化。kLLM 的 7.3× KV 容量、-25% TTFT、启动 10min→10s 同样绑定在 MLA cKV 跨 head 共享、8 卡节点、稀疏+压缩注意力与快手自身流量形状上；换 MHA 小模型或短对话流量多半不成立，可迁移的只是方法论。
+
+## 实践启示
+
+1. **先分诊再优化。** 启动慢查 prefill（prompt 长度、前缀命中、chunk 策略），流式慢查 decode（带宽、KV 读放大、batch 效率）；混看平均延迟必然误判。
+2. **先算容量上限再谈吞吐。** 用"每 token KV 字节 × 上下文 × 并发"估显存墙；容量不足时 KV 量化、GQA/MLA、前缀复用优先级高于加卡。
+3. **把前缀命中率当一级 SLO。** 命中一档即省一次 prefill；再配 cache-aware 路由送到已持有该前缀的实例。
+4. **量化分部件决策。** 权重先量化（收益稳定），激活谨慎（离群值 + 累积误差），KV 长上下文优先；用真实长尾流量验收而非只看 benchmark。
+5. **投机解码只在"接受率高 + 显存有余"时上。** 先在自己流量上实测 α，偏低时草稿成本吃掉全部收益。
+6. **用 P99 与 SLO 达成率验收。** chunk prefill、公平调度、PD 分离都是均值与尾部的交换，收益须放回自己的流量分布重算。
+
+**延伸**：[分级 KV Cache](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tiered-kv-cache-large-llms-sagemaker-hyperpod-curvine.md)、[PD 分离](https://github.com/QianJinGuo/wiki-public/blob/main/entities/disaggregated-prefill-decode-llm-inference-sagemaker.md)、[投机解码](https://github.com/QianJinGuo/wiki-public/blob/main/entities/speculative-decoding.md)。
 
 ## 与现有知识的关联
 

@@ -1,6 +1,6 @@
 # Building Jaeger’s ClickHouse backend: 8.6× compression on 10 million spans
 
-> 📊 Level ⭐⭐⭐ | 12.4KB
+> 📊 Level ⭐⭐⭐ | 13.8KB
 
 *Mahad Zaryab (Jaeger maintainer, Software Engineer at Meta) · CNCF blog · 2026-06-23. ClickHouse ships as an alpha storage backend in Jaeger v2.18.0.*
 

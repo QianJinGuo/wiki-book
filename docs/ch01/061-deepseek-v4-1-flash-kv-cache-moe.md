@@ -1,6 +1,6 @@
 # DeepSeek-V4.1-Flash：把 KV Cache 压缩到极限的百万上下文 MoE（技术报告全系统解读）
 
-> 📊 Level ⭐ | 11.8KB
+> 📊 Level ⭐⭐ | 14.7KB
 
 ## DeepSeek-V4.1-Flash：把 KV Cache 压缩到极限的百万上下文 MoE
 
@@ -67,6 +67,30 @@ Decoder 第一个 Full 层构建块级候选池（最多 2048 块×8 位置 = 16
 ## 方法论总结
 
 文章提炼的工程方法论：**把存储、带宽、计算放进同一乘积框架联合优化，且每个近似（跨层复用、FP4、有界重放、错开一拍的系数）都经过"训练感知 + 实验验证"背书**——这是 "Flash" 后缀的真正含义。边界坦承：CSA2 选择误差与 Bounded Replay 近似重建在极端边界可能掉点；基准接近不等于在最难推理任务追平 Fable-5、GPT-6 Astra 等前沿系统
+
+## 1017 小版本更新的官方基准（第 2 来源：官方模型卡）
+
+2026-10-17 DeepSeek 发布 **DeepSeek-V4.1-Flash-1017**（MIT License），定位为 V4.1-Flash 的小版本更新：推理、编码、agentic 任务与视觉基准全面提升，同时**压缩任务执行时间与输出长度**，即在多个 agent harness 上推进「性能—成本」帕累托前沿，而不是单纯堆绝对分数。
+
+| Benchmark | 1017 | V4.1-Flash（基线） | K3 | GLM-5.3 | GPT-5.6 Sol | Opus 5 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| HLE w/o tools | 42.6 (44.0†) | 36.8 (39.1†) | 43.5 | 42.0† | 44.5 | 56.3 |
+| Terminal-Bench 4.0 | 42.3 | 31.2 | 12.6 | 37.9 | 39.9 | 51.8 |
+| DeepSWE v1.1 | 77.0 | 74.2 | 67.5 | 66.9 | 73.0 | 74.0 |
+| ProgramBench | 29.1 | 20.3 | 17.5 | 19.0 | 23.0 | 37.0 |
+| NL2Repo-Bench | 68.2 | 65.4 | 58.0 | 58.0 | 56.8 | 75.3 |
+| Automation-Bench v1.0.6 | 60.5 | 54.8 | 46.7 | 48.8 | 45.8 | 50.3 |
+| Agents' Last Exam | 35.4 | 31.8 | 27.6 | 28.5 | 26.7 | 28.6 |
+| Apex Bench v1.1 | 72.1 | 64.6 | 47.8 | 56.6 | 54.3 | 65.8 |
+| Chartography (w/tools) | 83.0 | 78.9 | 68.1 | — | 79.9 | 84.0 |
+| BabyVision (w/tools) | 92.5 | 89.6 | 85.7 | — | 88.9 | 94.1 |
+| ZeroBench-main (w/tools) | 51.0 | 49.0 | 41.0 | — | 53.0 | 52.0 |
+
+† HLE 纯文本子集。**harness 条件必须一起读**：Terminal-Bench 4.0 用 Claude Code harness、DeepSWE v1.1 用 Mini-SWE-V2 harness——这正是前文「跨脚手架迁移」结论的延伸，分数是「模型 × harness」联合产物而非模型单独属性。
+
+增量最大的四项：Terminal-Bench 4.0 31.2→42.3（+11.1，与前文"专家级科学任务落后 Opus-5"的判断一致地缩小但未消除差距，仍 42.3 vs 51.8）、ProgramBench 20.3→29.1、Apex Bench 64.6→72.1、Automation-Bench 54.8→60.5；HLE 36.8→42.6 但仍显著低于 Opus 5 的 56.3。DeepSWE v1.1 77.0 继续压过 Opus 5（74.0）与 GPT-5.6 Sol（73.0），是本代最强项。
+
+工程接口有两处变化值得记：其一，**本版不再附带 Jinja 格式 chat template**，改为仓库内自包含 Python 参考实现 `encoding.py`（覆盖多轮、工具调用、thinking、数值化 reasoning effort、对话中途 system message、交错图像）+ 单独发布的 **deepseek-recipe**（Rust 库 + Python 绑定，协议感知地把 Messages/Chat Completions/Responses 请求统一编码为 DeepSeek V4/V4.1 prompt 或 token IDs，并解析回完整/流式响应，推理与工具执行留给调用方）；其二，推荐采样为 temperature 1.0 / top_p 1.0 / **context 1M tokens / max_tokens ≥256K**——「长输出预算」被写进默认配置，与官方的 harness 场景定位吻合。
 
 ## 与已有实体的关系
 
