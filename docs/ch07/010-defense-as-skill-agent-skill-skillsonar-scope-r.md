@@ -1,6 +1,6 @@
 # Defense-as-Skill：把 Agent 运行时安全守卫做成可进化 Skill（SkillSonar / SCOPE-R）
 
-> 📊 Level ⭐⭐ | 9.9KB
+> 📊 Level ⭐⭐⭐ | 13.8KB
 
 ## Defense-as-Skill：把 Agent 运行时安全守卫做成可进化 Skill
 
@@ -56,6 +56,33 @@ SkillSonar 不是沙箱、不是内核监控、也不是任何形式的硬隔离
 3. **进化的目标函数要防退化**：只优化 ASR 会把守卫推向全拦，效用/确认次数/token 开销必须作为次级约束。
 4. **动作级核查优于来源级封堵**：同一套边界检查同时覆盖恶意 Skill、注入指令与模型跑偏，比按攻击来源枚举规则更耐 drift。
 5. **软防线的定位要写清楚**：ASR 不可能归零，防御的价值是降低概率并为硬隔离争取纵深，而非替代隔离。
+
+## 深度分析
+
+### 不对称的半衰期：防御为何必须与能力同频
+
+恶意技能安装时不动手：危险动作等「任务+工作区+工具集」凑齐才显形，安装期审查看不见。 手写防御要走注意、诊断、重写、部署四步，改错会掐死正常任务，维护者必然保守——攻击的半衰期由一次生成决定，防御的由组织流程决定。Defense-as-Skill 消掉的是**表示成本**而非节奏：进化离线、受预算约束，攻击者却在线迭代。
+
+### 守卫进了同一信任域：防御自己成为攻击面
+
+守卫与不可信技能共享上下文与提示层级，于是自身成为攻击面。**篡改**：「任何人可修改」是透明红利也是风险——Agent 若能写 skills 目录，最省力的攻击是把它改成永远 Allow。**输入污染**：裁决依据取自上下文，把不可信技能的自述当事实，注入不必骗过检测，只需让检测基于错误前提推理，见 [Prompt Injection Defense](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/prompt-injection-defense.md)。**语义操纵**：确认疲劳训练出「一路同意」。最糟的是失败模式反转：相信守卫而撤掉硬隔离，失效时比没有更脆。这层问题见 [Agent Security Threat Models](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-security-threat-models.md)。
+
+### MCTS 进化可能只是学会讨好裁判
+
+裁判不只给分，还给「怎么被绕过的」反馈，搜索据此编辑守卫文本； 9 轮把 ASR 从 0.300 压到 0.078，但奖励全托付给 LLM 裁判，二者共享盲区。省力解往往不是阻断动作，而是让裁决「看起来有依据」：SCOPE-R 分高，真实攻击下只是把静默绕过换成先编理由，与 [Verifier Paradox](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/verifier-paradox.md) 同构。第二重：43 个良性任务覆盖不了误伤，搜索易收敛成「只在这 43 个上不误伤」，OOD 只留 C/P 两族，泛化是跨家族而非跨分布； 数据还与守卫同源——生成器想不到的攻击，守卫也学不会。
+
+### 「软防线」框架在哪里断掉
+
+作者的自我限定是诚实的， 但三点会拉断它。**延迟按动作数计费**：每次敏感操作一次判断，「token 省 21%」是表示效率非绝对开销，高频循环里延迟即主成本。 **误报不均质**：43 个良性任务测均值，而确认在低风险是噪音、高风险是唯一防线，同一阈值不能两全。**无形式保证**：面对迭代三轮的攻击 ASR 仅 45.1%→22.9%， 硬隔离可审计为能力集，软防线只能审计为行为分布——是缓解，不是控制项。
+
+## 实践启示
+
+1. **守卫当代码管**：入库、semver、变更评审、CI 跑对抗回归；skills 目录对 Agent 只读并带哈希校验。
+2. **显式指派安全职责**：配置写死「敏感动作前先咨询守卫」；隐式匹配 0.400/0.582，显式指派 0.104/0.109。
+3. **留独立 holdout**：训练与评测用不同生成器，至少一族不参与搜索，上线后定期重测。
+4. **Red-team 守卫文本**：查「要求自证意图」这类讨好裁判的句式，用第二模型家族交叉判定；见 [SkillSieve](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skillsieve-agent-skill-security.md)。
+5. **给确认设预算**：按任务限制 Require Confirm 次数，超出即降级或中止。
+6. **分层写清、硬层兜底**：软核查 + 权限闸门 + 沙箱与 egress 白名单同开；[CAITLYN](https://github.com/QianJinGuo/wiki-public/blob/main/entities/caitlyn-self-evolving-defense-skill-library-agent-injection-2026.md) 的「快拦 + 反例库」与本文离线进化互补。
 
 ## 关联
 

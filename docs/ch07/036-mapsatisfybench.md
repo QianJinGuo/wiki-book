@@ -1,6 +1,6 @@
 # MapSatisfyBench：首个以满意度为核心目标的地图智能体评测基准
 
-> 📊 Level ⭐⭐⭐ | 9.2KB
+> 📊 Level ⭐⭐⭐⭐ | 12.8KB
 
 > 原文存档：[原文存档](https://mp.weixin.qq.com/s/HNQFGzcRkB16ZbdvF7op9g)
 
@@ -100,6 +100,34 @@
 - "隐式决策因素"概念与 [Agent 编排范式](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-orchestration-patterns.md) 中"意图恢复"问题呼应——Agent 不应仅执行显式指令，还需主动推断未言明的约束
 - AR = ECR × IISR 的"乘法衰减"设计与 [Agent 可靠性](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-reliability-context-drift-tool-hallucination.md) 的"单点失败传播"模式一致
 - 12 模型的 ECR vs IISR 差距（任务完成 vs 隐式需求）与 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 中"验证 ≠ 满意"的核心命题呼应
+
+## 深度分析
+
+### 为什么评"满意度"而非"任务完成"
+
+地图 query 只界定可行解空间，里面还有一层偏好子空间。ECR 测"是否进入可行空间"，IISR 测"是否进入偏好子空间"——前者规则可判，后者只能估概率。范式转移的分量在此：评测对象从"输出对不对"换成"人愿不愿接受"。
+
+代价是放弃标准答案后，真值退化为"因素+权重+证据链"，引入标注噪声与难消除的主观性；"过滤"环节即补偿机制，只留决策时刻有据可查的因素，剔掉不公平的隐式要求。 分母更严，12 模型分数偏低，部分是尺子较真，不全怪能力。
+
+### AR = ECR × IISR：把"不可补偿"写进指标
+
+ECR 0.9 配 IISR 0.5，算术均值 0.70 显得体面，乘法只剩 0.45。设计者只是把一句产品常识形式化了：任务做完，抵不掉"没猜中你"。
+
+乘法等价于取几何平均（对数域等权求和）：对短板极敏感，对长板收益递减，与"可靠性是串联系统"同构。副作用有二：零点被放大，"部分正确记 0"的硬阈值会让 AR 剧烈跳动，故 IISR 必须允许部分满足。SES 再乘效率项成三层串联，任一层塌陷即吞掉其余努力，0.2755 的天花板由此而来。把不可补偿写进指标是价值声明而非技术中立：先答"哪些能力不许交易"，再定用乘用加。
+
+### 思考模式是"补课"不是"取证"
+
+ECR 0.93 对 IISR 0.72，说明瓶颈不在知识与规划，而在"该去看什么"。POI 搜索对特征总结 23:1（16,061 对 691）是行为层证据：模型把工具当"查事实"通道，不当"查偏好"通道。
+
+思考模式提升了 IISR 却未改变调用结构，说明它增强的是"在已有信息上多推几步"，而非"主动去取没喂进来的证据"。前者是推理预算，后者是策略问题，test-time compute 解决不了。 可判伪的后续实验：加显式流程约束（先读偏好摘要再规划），若 IISR 出现推理预算无法解释的跃升，瓶颈在策略；否则在工具可发现性。
+
+### 对 Agent 评测设计的启示
+
+显式指令类基准已近饱和，区分度转向"用户没说但会介意"的约束。推荐、搜索、客服、行程规划都可复用 还原-识别-过滤 路径；可与 [Agent Evaluation Benchmark Frameworks](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-evaluation-benchmark-frameworks.md) 的决策层指标并置，把满意度定位在决策层而非结果层。
+
+多轮评测的价值不在轮数，而在"每轮是否有新证据进入"。UserAgent 只给最小充分回答，实际在测提问效率——把澄清当资源消耗而非能力展示。
+
+泄漏风险被"因素+权重"设计部分规避，但权重一旦公开，模型可针对高权重因素过拟合，"满意度"退化为"命中清单"，故需私有测试分片与权重轮换，同 [Evaluation Harness Design](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/evaluation-harness-design.md) 的防过拟合原则。沙箱债务：缓存 22 个工具响应保证可复现，也把工具世界冻成有限状态，真实服务的长尾（新店、封路）不在其中——越像真实越难复现，越可复现越易被针对性优化。
 
 ## 实践启示
 

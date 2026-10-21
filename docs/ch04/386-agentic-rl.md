@@ -1,6 +1,6 @@
 # Agentic RL 六框架实践地图：从算法到系统的长程智能体训练
 
-> 📊 Level ⭐⭐⭐ | 10.5KB
+> 📊 Level ⭐⭐⭐⭐⭐ | 13.9KB
 
 ## 核心概述
 
@@ -116,6 +116,35 @@ Wolfe 框架未深入讨论的治理层问题：训练分数上升不能直接�
 - **规模与收益**：5,018 个可执行有状态环境、255,375 个工具、52,361 个任务，基于 Qwen3-30B-A3B-Thinking-2507；OmniaBench 挑战集 9.16% → 37.11%，四项 benchmark 宏平均 22.86% → 41.69%，76/90 个一级领域提升，全部 10 类能力与 8 类原子难度因素提升
 
 与 Wolfe 综述的关系：Wolfe 聚焦六框架的算法机制与失稳模式（echo trap/template collapse）对比；AgentOmnia 展示同一目标（Agentic RL 全场景扩展）在生产侧的工程化路径——任务空间设计、数据管线与评测闭环，两者构成算法-系统互补视角。
+
+## 深度分析
+
+### 瓶颈是基础设施，不是算法
+长程任务把一次生成换成几十上百次调用，单步跨秒到分钟，还会真改外部状态。Wolfe 的对照表给出后果：rollout 成本与方差显著上升，必需环境隔离与并行部署。 八条原则里只有异步 rollout 指向系统。若飞更直白：当前结果很好打分，累积后果却难被一个分数概括。 归一化只动百分点，环境能否重置、token 能否对齐才决定实验跑不跑得完。
+
+### 六框架真正分歧在哪
+分歧不在要不要 RL，而在三处成本由谁承担：
+
+- **off-policy 复用**：AgentRL 完全异步，同一轨迹不同步骤由不同历史版本采样；Agent-R1 坚持 step-level 原始 token，本质是拒绝这种漂移。
+- **环境来源**：AgentGym-RL 环境服务化、统一 HTTP，接入既有环境；AutoForge 从工具文档合成状态空间与 golden state，生成环境。
+- **验证器强度**：ToRL 发现显式代码错误惩罚反而抑制探索，认为 outcome reward 已够用。
+
+三者都在挪成本：异步换吞吐要容忍策略滞后，on-policy 换稳定但牺牲吞吐，合成环境换规模但验证器成瓶颈。没有免费选项。
+
+### 三循环与泄漏边界
+执行按秒、学习按天、治理按周，转速不同是设计约束。 泄漏有四处：环境镜像在 rollout 期间漂移，episode 间不再可比；评估集与阈值被学习循环顺手改；摘要压缩后 token 前缀失配；过程奖励由被训练的同一模型产生。四条里三条不是算法问题。参见 [Harness Loop 架构](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-loop-architecture.md)。
+
+### Benchmark horizon 与生产 horizon 的落差
+benchmark 用调用次数衡量跨度，生产用后果能否撤销衡量。放大后仍成立的是结构性原则：模块化接口、轨迹显式、action mask、异步 rollout。更像 artifact 的是课程节奏与归一化粒度，二者依赖奖励尺度分布，换域即失效。需要新增的是治理与多维评估：短 horizon 可省，长 horizon 不可省。
+
+## 实践启示
+
+1. **先修环境再调算法**：四问筛任务，两三个说不清就先收窄。
+2. **轨迹当数据资产**：原始 token、步骤边界、环境版本、终止原因对齐，摘要保留前缀匹配。契约参照 [AgentEnv](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentenv-agentic-rl-execution-environment.md)。
+3. **异步优先但标注滞后**：cross-policy 采样打版本标签，按滞后步数分层报告。
+4. **奖励从 outcome 起步**：能定位到出错步骤时才加过程信号，别对错误形态做显式惩罚。
+5. **评估五维起步**：成功率、回归逃逸率、副作用、成本、验证分歧；扩 horizon 前先扩评估。
+6. **治理循环单独建**：影子运行 → 有限灰度 → 独立审计 → 快速回滚，评估集与阈值不归学习循环管。
 
 ## 关联
 

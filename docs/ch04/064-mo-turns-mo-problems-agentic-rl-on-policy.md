@@ -1,6 +1,6 @@
 # Mo' turns, mo' problems：agentic RL 后训练的 on-policy 完整性三重撕裂
 
-> 📊 Level ⭐ | 11.4KB
+> 📊 Level ⭐⭐⭐ | 16.9KB
 
 > 来源：Ian Barber 个人博客（2026-10-15），（/s=4）→ NEW Entity。原文以业界（Alibaba、DeepSeek、QwenGyre、Prime Intellect、Colfax）公开材料的二次梳理为主，属"把散落的工程经验收拢成一条失效链"的分析文，非一手实验报告——因此 confidence 按 7 记（有具体机制与数字，但无本文自产 benchmark）。
 
@@ -49,6 +49,33 @@ DeepSeek 走的是相反方向：**用自己的 harness，所以可以整体暂�
 - **可迁移**（工程模式）：①"训练/推理共用 harness"与"自研 harness 以换取可暂停性"是一组明确的架构取舍轴，判据是**harness 是否属于自己**；②长会话 rollout 的**状态冻结粒度**（DRAM + 可写层）是可复用的设计点；③树状 rollout → 按分支历史比例加权 + 路径上限 → 跨 rollout 权重平均，是通用 credit assignment 折中；④**tool-call payload 原样缓存**是应对 harness 重排格式的最小成本手段；⑤kernel 级不一致的三种处理（重算/校正/位级一致）与各自 10-20%、1.13×/1.05× 的代价数字可直接作为方案选型依据。
 - **不可迁移**：Alibaba / DeepSeek / QwenGyre / Prime Intellect 的**具体实现细节与内部数字**（122B 与 2.4T 的 rollout 时长、cell 翻转策略、代理实现）属于厂商内部工程，只能当参照量级，不能当结论复现。
 - **与既有实体的分工**：本篇的定位是**"失效模式地图"**，补齐 wiki 中 [Harness 作为产品面](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-as-product-surface.md)、[编码 Harness 工程](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/coding-harness-engineering.md) 与 RL 训练基础设施类实体之间的缺口——后者多讲"如何训练得更好"，本篇讲"训练信号在哪些环节被静默污染"。
+
+## 深度分析
+
+### 三层彼此独立：撕裂落在三个不同的所有权边界上
+
+三层的区别不在技术栈位置，而在**谁拥有那块状态、修复由谁付费**：基础设施层是沙箱与调度器的所有权（会话能否暂停、KV 能否跨 cell 搬），轨迹层是数据管道的所有权（哪些 token 进梯度、树怎么序列化），数值层是 kernel 的所有权（同一算子落到哪段代码）。修复者与发布周期都不同，所以修好一层不会顺带修好另两层——代理改派再正确，也不会让被 harness 重排过的工具参数回到原始字节；缓存了 payload，也不会让 SGLang 与 Megatron 的归约顺序一致。三层还有检测上的偏序，不可倒着查：状态不一致时位级一致无从谈起，token 不可靠时"比值应为 1"的诊断也失效。
+
+### 吞吐与策略新鲜度：阿里与 DeepSeek 是一枚硬币的两面
+
+两条路线常被读成"谁的基础设施更强"，实质是一次**风险归属的交换**。阿里让沙箱常驻、推理走代理、GPU 按 cell 快速翻转、KV 跨 cell 转运：多养一层代理与一次迁移，换会话永不中断——训练目标就是闭源 harness 里的真实能力，一旦停住 harness，产出差异便"与模型无关"，恰是最脏的一类 off-policy。
+
+DeepSeek 反向：自研 harness 换"整体冻结"的权力，冻结 DRAM 与文件系统可写层，于是敢常规抢占长跑 rollout 榨吞吐；它付的不是工程正确性而是**分布真实性**——自研与目标 harness 的行为差无法被单测覆盖。判据因此不是吞吐数字，而是**你能否测试自己的失败模式**；两者都不占的团队只剩第三条路——缩短会话、提高同步频率，用会话长度换一致性。
+
+### 树状 rollout：credit assignment 从序列问题变成图问题
+
+子智能体、并行工具调用与会话压缩把一次 rollout 变成一棵树，而训练器要的是定长序列加逐 token 权重。QwenGyre 的"序列化 + 按历史含该 token 的分支比例加权 + 路径上限 + 跨 rollout 权重平均"是务实降维，但引入的 off-policy 是**语义性的而非数值性的**：同一 token 在不同分支里条件上下文不同，压成一条流必然丢掉分支条件；按比例加权又把"出现在多少种上下文里"折叠成标量，映射不可逆。对照之下，**缓存原始 tool-call payload** 是全篇性价比最高的手段——重排是确定性变换，存原始字节即可无损复原。这也让 [上下文窗口管理](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-context-window-management.md) 多一层含义：压缩既已进入训练轨迹，压缩质量就从推理期优化变成后训练目标。
+
+### 三种数值修法：运行时补丁与资本支出
+
+重算、校正、位级一致不是同层级选项。重算即在训练器上重算 old log-probs，正确性最高（以训练侧为唯一真相），代价是每条 rollout 多一次前向。校正是零额外算力的软化：裁剪比值、给每 token 权重设上限；如 Megatron 一方所指，它"把不匹配藏起来而非消掉"，副作用是连真实策略漂移一起压平，ratio 失去诊断价值。位级一致一次付清、永久免修，来源主要是归约顺序，其次部分和精度、FMA 与舍入位置；固定顺序要付 10-20% 性能，Colfax 训练侧的数字是 head-dim-64 反向 1.13×、改用确定性累加后 1.05×。模型越大、rollout 越长（本已 2-4 小时量级），重算摊销越贵、位级一致越划算。真正该带走的是方法论：**on-policy 不是训练前的声明，而是全程需持续测量的量**——契约由第三方 harness 持有时，训练系统就失去了对数据来源的完整性担保。
+
+## 实践启示
+
+1. **把 importance ratio 做成第一步诊断。** 首次更新前打印其均值与分布：同权重同 token 下应恰为 1；均值偏离且方差随轮次增长时，先查基础设施（会话是否被暂停/迁移），再查 kernel，最后才怀疑模型。
+2. **三处埋点，缺一处无法定责。** payload 级原样落盘 tool-call 原始字节（不存重排后文本）；token 级记录每轮 mask 掉的 token 数与总量；logprob 级同时存 sampler 值与 trainer 重算值并逐 token 求差。
+3. **冻结策略按"harness 是否属于自己"定。** 闭源 → 沙箱常驻 + 代理改派 + KV 跨 cell 转运；自研 → 整体冻结并把抢占做成常规；两者都不占 → 缩短会话、提高同步频率。
+4. **最小可行验证只要三次运行。** 同 prompt 同权重连跑两次 rollout，比 token 序列与 logprob（查基础设施与采样确定性）；再在训练器上对同一序列重算一次前向（查 kernel）。三者差值为 0 才叫 on-policy，任一非 0 即得可回归的用例；数值一致要按资本支出立项（5-20% 折价 vs 每条 rollout 一次前向），而不是按 bug 修。
 
 ## 关联
 

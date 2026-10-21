@@ -5,7 +5,7 @@
 ## 主要来源
 | 来源 | 文章数 |
 |---|---|
-| mp.weixin.qq.com | 1804 |
+| mp.weixin.qq.com | 1808 |
 | aws.amazon.com | 388 |
 | huggingface.co | 39 |
 | www.interconnects.ai | 35 |

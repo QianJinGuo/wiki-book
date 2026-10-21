@@ -1,6 +1,6 @@
 # OpenClaw 深度架构分析：Agent 引擎、多源 Skill 系统、子 Agent steer 重定向、五层容错
 
-> 📊 Level ⭐⭐⭐ | 9.2KB
+> 📊 Level ⭐⭐⭐⭐ | 13.9KB
 
 > 京东技术发布的 OpenClaw 源码深度分析，聚焦 Agent 执行引擎、Skill 系统、子 Agent 架构和容错机制——与 [OpenClaw 与 Hermes 源码架构对比](https://github.com/QianJinGuo/wiki-public/blob/main/entities/openclaw-hermes-source-code-agent-architecture-review.md)（Gateway/Channel/Dreaming 记忆视角）互补。
 
@@ -102,6 +102,32 @@ runSubagentAnnounceFlow()：逐个推送。先完成的先处理→发现答案�
 > "叶子节点判断：当子 Agent 的 spawnDepth >= maxSpawnDepth 时，被视为叶子节点，不能再创建自己的子 Agent，从而防止无限递归。"
 
 > "推送式结果返回的优势：提前处理、提前终止（发现答案后可以 kill 其余子 Agent）、渐进式反馈、部分失败处理、精细超时。"
+
+## 深度分析
+
+这套架构值得注意的不是它列了多少机制，而是每处取舍背后的成本转移方向。下面从 Token 经济、编排时延、故障分层与权限边界四个角度各切一刀，最后标出它没有覆盖的部分。结构上它由 pi-mono 提供 ReAct 循环、OpenClaw 提供路由与容错，因此这些取舍大多落在平台层而非引擎层。
+
+### 菜单注入的赌注：把不可逆的 Token 超支换成可修复的选择错误
+
+全量注入 Skill 的成本随语料总量线性增长，且每一轮都要重付；菜单注入把它压到「名称+描述+位置」这一常量级，省下的部分赌在 LLM 的按需检索上。两类失败并不对称：Prompt 膨胀一旦发生，本轮预算已经花掉，无法回收；选错 Skill 只多一次文件读取，下一轮即可纠正。所以「每次最多读一个」不是省钱技巧，而是把错误放在可回滚的一侧——代价是选择质量被 description 的写法完全决定，这也解释了 Skill 写作规范为何反复强调 description 是最重要的字段。参见 [上下文窗口经济学](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/context-window-economics.md)。
+
+### steer 与推送式返回：把编排成本从轮询搬到事件
+
+轮询模型下，主 Agent 的等待等于最慢子 Agent 的耗时，且必须持续持有全部子任务状态；推送模型让主 Agent 在第一个结果到达时就能决策——发现答案即 kill 其余，总耗时收敛到「第一个成功者」而非「最慢者」。steer 则把纠错成本从「杀掉重建」降到「中断、清空队列、注入新指令、重启」，保留已积累的上下文。代价是顺序不再保证、重复投递需要幂等，主 Agent 必须能消费乱序到达的部分结果。这套组合更像 [编排者-工作者架构](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/orchestrator-worker-architecture.md) 的事件化版本。
+
+### 五层容错按「对状态的侵入程度」排序，而非按重要性
+
+第 1 层只做归一化（20+ 提供商的错误格式统一），零副作用；第 2 层对同一目标重试（250ms 起步、上限 1.5s、抖动 0.2、最多 3 次），只治瞬时故障；第 3 层换 Key 不换模型，治配额与鉴权，能力不变；第 4 层跨提供商换模型，能力已经改变，属最后手段；第 5 层压缩上下文，改动的是输入本身，代价最深。判据是每层对系统状态的侵入程度：越往后，恢复越贵、越难回退。spawnDepth 上限不在这条链上，它约束的是结构而非故障。
+
+### 两级拒绝列表：能力由「在树中的位置」决定，而不是 Agent 身份
+
+第一级对所有子 Agent 生效的禁令（gateway、cron、memory_search、sessions_send）针对爆炸半径——这些工具要么改动全局状态，要么跨会话读取记忆，被并行子 Agent 滥用后无法收敛。第二级对叶子额外禁止 subagents、sessions_list、sessions_spawn，针对控制面——叶子若仍握有派生能力，递归上限就形同虚设。两者合起来的含义是：同一份 Agent 配置在不同深度会得到不同能力集，权限是算出来的，不是声明出来的；反过来，这也解释了这些禁令为何不做成参数开关——一旦允许调用方自行声明权限，越权就退化成配置问题，而在多层派生中没有人审计配置。参见 [子 Agent 派生模式](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/subagent-spawning-pattern.md)。
+
+### 边界：这是可用性架构，不是正确性架构
+
+推送式返回只报告完成、失败或被杀，不校验结论是否成立；steer 纠正的是方向，不是质量。Skill 选择虽由 LLM 自主完成，但文中没有给出选择是否正确的事后度量，因此「自主」实际上不可审计。模型回退跨提供商时，同一份 Prompt 会落到能力不同的模型上，原有计划不会重新验证。可迁移的判断是：这套设计把「跑不完」的概率压到很低，对「跑完了但是错的」几乎不设防；正确性只能靠外部评测补齐，上下文隔离也只是缩小污染面，不等于结论可信。参见 [多 Agent 上下文隔离](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/multi-agent-context-isolation.md)。
+
+一句话概括：OpenClaw 在这里展示的不是功能清单，而是一套把成本、时延与故障都显式定价的工程选择；凡是没有被定价的部分（结论正确性、Skill 选择质量），就是它留给上层评测与人工复核的空间。
 
 ## 实践启示
 

@@ -1,6 +1,6 @@
 # AI 的形状：Jagged Frontier·Bottleneck·Reverse Salient（Mollick）
 
-> 📊 Level ⭐⭐⭐ | 12.2KB
+> 📊 Level ⭐⭐⭐ | 14.0KB
 
 > 2026-06-07 引用自 Ethan Mollick《The Shape of AI: Jaggedness, Bottlenecks and Salients》，One Useful Thing，2025-12-20。
 

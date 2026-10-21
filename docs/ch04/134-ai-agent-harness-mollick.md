@@ -1,6 +1,6 @@
 # AI Agent 时代选型指南：模型·应用· Harness（Mollick）
 
-> 📊 Level ⭐⭐⭐ | 9.1KB
+> 📊 Level ⭐⭐⭐ | 10.1KB
 
 > 2026-06-07 引用自 Ethan Mollick《A Guide to Which AI to Use in the Agentic Era》，One Useful Thing，2026-02-18。
 

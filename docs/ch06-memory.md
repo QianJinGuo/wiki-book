@@ -55,8 +55,8 @@ CPU 缓存的类比特别有启发性：L1（当前上下文）→ L2（会话�
 
 ### ⭐⭐⭐ 专家（16 篇）
 
-- [005. Hermes Agent 爱马仕的三级 memory，到底在记什么？](ch06/005-hermes-agent-memory)
-- [006. AI 的形状：Jagged Frontier·Bottleneck·Reverse Salient（Mollick）](ch06/006-ai-jagged-frontier-bottleneck-reverse-salient-mollick)
+- [005. AI 的形状：Jagged Frontier·Bottleneck·Reverse Salient（Mollick）](ch06/005-ai-jagged-frontier-bottleneck-reverse-salient-mollick)
+- [006. Hermes Agent 爱马仕的三级 memory，到底在记什么？](ch06/006-hermes-agent-memory)
 - [007. Google Open Knowledge Format (OKF) v0.1：AI 知识库通用格式标准 — 让 Markdown 知识库互通](ch06/007-google-open-knowledge-format-okf-v0-1-ai-markdown)
 - [008. Hermes Agent 记忆系统 vs OpenClaw 记忆观](ch06/008-hermes-agent-vs-openclaw)
 - [009. Agent 记忆注入实战：5 维框架（选什么/放哪里/怎么放/放多少/何时放）+ 4 前沿论文（MemGuide/STITCH/ACE/Lost in the Middle）](ch06/009-agent-5-4-memguide-stitch-ace-lost-in-the)

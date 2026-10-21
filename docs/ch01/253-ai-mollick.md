@@ -1,6 +1,6 @@
 # 给 AI 做工作面试：Mollick 的模型评估方法论
 
-> 📊 Level ⭐⭐⭐ | 7.7KB
+> 📊 Level ⭐⭐⭐ | 8.6KB
 
 > 2026-06-07 引用自 Ethan Mollick《Giving your AI a Job Interview》，One Useful Thing，2025-11-12。
 

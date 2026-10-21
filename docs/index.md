@@ -24,7 +24,7 @@
 
     <div class="home-stats__item"><span class="home-stats__num">20 章 · 5 篇</span><span class="home-stats__label">全书结构</span></div>
 
-    <div class="home-stats__item"><span class="home-stats__num">4,564</span><span class="home-stats__label">一手原文</span></div>
+    <div class="home-stats__item"><span class="home-stats__num">4,573</span><span class="home-stats__label">一手原文</span></div>
 
     <div class="home-stats__item"><span class="home-stats__num">★ × 5</span><span class="home-stats__label">难度分级</span></div>
 
@@ -153,17 +153,17 @@
 
 <p class="chapter-card__desc">什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:5.19%" title="⭐ 入门 · 21 篇"></i><i class="lv2" style="width:8.89%" title="⭐⭐ 工程师 · 36 篇"></i><i class="lv3" style="width:40.99%" title="⭐⭐⭐ 专家 · 166 篇"></i><i class="lv4" style="width:31.36%" title="⭐⭐⭐⭐ 科学家 · 127 篇"></i><i class="lv5" style="width:13.58%" title="⭐⭐⭐⭐⭐ 大师 · 55 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:4.44%" title="⭐ 入门 · 18 篇"></i><i class="lv2" style="width:8.64%" title="⭐⭐ 工程师 · 35 篇"></i><i class="lv3" style="width:41.48%" title="⭐⭐⭐ 专家 · 168 篇"></i><i class="lv4" style="width:31.60%" title="⭐⭐⭐⭐ 科学家 · 128 篇"></i><i class="lv5" style="width:13.83%" title="⭐⭐⭐⭐⭐ 大师 · 56 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 21 · ⭐⭐ 36 · ⭐⭐⭐ 166 · ⭐⭐⭐⭐ 127 · ⭐⭐⭐⭐⭐ 55</div>
+<div class="chapter-card__legend">⭐ 18 · ⭐⭐ 35 · ⭐⭐⭐ 168 · ⭐⭐⭐⭐ 128 · ⭐⭐⭐⭐⭐ 56</div>
 
 <ul class="chapter-card__samples">
 
 <li><span class="stars">⭐</span><span class="sample-title">HybridAgent：潜空间思考 + 文本行动的统一 Agent</span></li>
 
-<li><span class="stars">⭐</span><span class="sample-title">Mo&#x27; turns, mo&#x27; problems：agentic RL 后训练的 on-policy 完整性三重撕裂</span></li>
+<li><span class="stars">⭐</span><span class="sample-title">Introducing OS Level Actions in Amazon Bedrock AgentCore Browser</span></li>
 
-<li><span class="stars">⭐</span><span class="sample-title">Agent 时间性策略（Temporal Policies）：基于轨迹的有状态授权架构</span></li>
+<li><span class="stars">⭐</span><span class="sample-title">Amazon Quick 飞书SSO对接指南</span></li>
 
 </ul>
 
@@ -179,9 +179,9 @@
 
 <p class="chapter-card__desc">给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:9.26%" title="⭐ 入门 · 10 篇"></i><i class="lv2" style="width:11.11%" title="⭐⭐ 工程师 · 12 篇"></i><i class="lv3" style="width:30.56%" title="⭐⭐⭐ 专家 · 33 篇"></i><i class="lv4" style="width:32.41%" title="⭐⭐⭐⭐ 科学家 · 35 篇"></i><i class="lv5" style="width:16.67%" title="⭐⭐⭐⭐⭐ 大师 · 18 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:9.26%" title="⭐ 入门 · 10 篇"></i><i class="lv2" style="width:10.19%" title="⭐⭐ 工程师 · 11 篇"></i><i class="lv3" style="width:30.56%" title="⭐⭐⭐ 专家 · 33 篇"></i><i class="lv4" style="width:33.33%" title="⭐⭐⭐⭐ 科学家 · 36 篇"></i><i class="lv5" style="width:16.67%" title="⭐⭐⭐⭐⭐ 大师 · 18 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 10 · ⭐⭐ 12 · ⭐⭐⭐ 33 · ⭐⭐⭐⭐ 35 · ⭐⭐⭐⭐⭐ 18</div>
+<div class="chapter-card__legend">⭐ 10 · ⭐⭐ 11 · ⭐⭐⭐ 33 · ⭐⭐⭐⭐ 36 · ⭐⭐⭐⭐⭐ 18</div>
 
 <ul class="chapter-card__samples">
 
@@ -231,9 +231,9 @@
 
 <p class="chapter-card__desc">Agent 的手脚：Skill 系统、MCP 协议、Tool Use</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:3.28%" title="⭐ 入门 · 2 篇"></i><i class="lv2" style="width:13.11%" title="⭐⭐ 工程师 · 8 篇"></i><i class="lv3" style="width:31.15%" title="⭐⭐⭐ 专家 · 19 篇"></i><i class="lv4" style="width:29.51%" title="⭐⭐⭐⭐ 科学家 · 18 篇"></i><i class="lv5" style="width:22.95%" title="⭐⭐⭐⭐⭐ 大师 · 14 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:3.28%" title="⭐ 入门 · 2 篇"></i><i class="lv2" style="width:11.48%" title="⭐⭐ 工程师 · 7 篇"></i><i class="lv3" style="width:29.51%" title="⭐⭐⭐ 专家 · 18 篇"></i><i class="lv4" style="width:32.79%" title="⭐⭐⭐⭐ 科学家 · 20 篇"></i><i class="lv5" style="width:22.95%" title="⭐⭐⭐⭐⭐ 大师 · 14 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 2 · ⭐⭐ 8 · ⭐⭐⭐ 19 · ⭐⭐⭐⭐ 18 · ⭐⭐⭐⭐⭐ 14</div>
+<div class="chapter-card__legend">⭐ 2 · ⭐⭐ 7 · ⭐⭐⭐ 18 · ⭐⭐⭐⭐ 20 · ⭐⭐⭐⭐⭐ 14</div>
 
 <ul class="chapter-card__samples">
 
@@ -617,6 +617,6 @@
 </div>
 </section>
 
-<footer class="home-map__foot">📊 全书收录 1,723 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-10-21</span></footer>
+<footer class="home-map__foot">📊 全书收录 1,723 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-10-22</span></footer>
 
 </div>
