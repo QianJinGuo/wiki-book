@@ -11,8 +11,8 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 2 |
-| ⭐⭐ 工程师 | 需编程基础 | 7 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 31 |
+| ⭐⭐ 工程师 | 需编程基础 | 6 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 32 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 15 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 5 |
 
@@ -41,18 +41,18 @@ AI 工具正在重新定义"开发者工具"的边界。
 - [001. Harness Engineering 详解：如何将 AI Coding 率提升至 90%](ch03/001-harness-engineering-ai-coding-90)
 - [002. Data Projects](ch03/002-data-projects)
 
-### ⭐⭐ 工程师（7 篇）
+### ⭐⭐ 工程师（6 篇）
 
-- [003. Agent 时代的生产力悖论：协作成为新瓶颈](ch03/003-agent)
-- [004. 别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](ch03/004-page-004)
-- [005. MiniMax M2.7：开启模型的自我进化](ch03/005-minimax-m2-7)
-- [006. Nvidia Cut Checkpoint Costs Nvcomp](ch03/006-nvidia-cut-checkpoint-costs-nvcomp)
-- [007. Localmaxxing：局部最优陷阱](ch03/007-localmaxxing)
-- [008. 03—AI Skill 测试用例设计完整指南：8 种类型 + 断言自检，覆盖率从 40% 到 90%](ch03/008-03-ai-skill-8-40-90)
-- [009. A History of IDEs at Google](ch03/009-a-history-of-ides-at-google)
+- [003. 别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](ch03/003-page-003)
+- [004. MiniMax M2.7：开启模型的自我进化](ch03/004-minimax-m2-7)
+- [005. Nvidia Cut Checkpoint Costs Nvcomp](ch03/005-nvidia-cut-checkpoint-costs-nvcomp)
+- [006. Localmaxxing：局部最优陷阱](ch03/006-localmaxxing)
+- [007. 03—AI Skill 测试用例设计完整指南：8 种类型 + 断言自检，覆盖率从 40% 到 90%](ch03/007-03-ai-skill-8-40-90)
+- [008. A History of IDEs at Google](ch03/008-a-history-of-ides-at-google)
 
-### ⭐⭐⭐ 专家（31 篇）
+### ⭐⭐⭐ 专家（32 篇）
 
+- [009. Agent 时代的生产力悖论：协作成为新瓶颈](ch03/009-agent)
 - [010. NVIDIA GPU Kernel 翻译：Cute / Python / Julia](ch03/010-nvidia-gpu-kernel-cute-python-julia)
 - [011. The Interface Is No Longer the Product](ch03/011-the-interface-is-no-longer-the-product)
 - [012. How a Mid-tier Enterprise SaaS Provider Automates Cloud Support](ch03/012-how-a-mid-tier-enterprise-saas-provider-automates-cloud-supp)

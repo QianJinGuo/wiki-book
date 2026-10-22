@@ -13,8 +13,8 @@
 | ⭐ 入门 | 零基础可读 | 2 |
 | ⭐⭐ 工程师 | 需编程基础 | 7 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 18 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 20 |
-| ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 14 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 19 |
+| ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 15 |
 
 ---
 
@@ -72,7 +72,7 @@ Agent 能不能"动手做事"，取决于它有什么工具。
 - [026. Multica — 开源 Managed Agents 平台](ch07/026-multica-managed-agents)
 - [027. 龙虾之父教你省钱：开源Skill给你的Skill减肥](ch07/027-skill-skill)
 
-### ⭐⭐⭐⭐ 科学家（20 篇）
+### ⭐⭐⭐⭐ 科学家（19 篇）
 
 - [028. 我把 Claude Design 做成了 Skill，人人都能成为顶级网站设计师](ch07/028-claude-design-skill)
 - [029. ai-skill-evolution底层逻辑](ch07/029-ai-skill-evolution)
@@ -85,28 +85,28 @@ Agent 能不能"动手做事"，取决于它有什么工具。
 - [036. MapSatisfyBench：首个以满意度为核心目标的地图智能体评测基准](ch07/036-mapsatisfybench)
 - [037. Skill自进化三路线：Trace2Skill归纳法 / EvoSkill验证闭环 / SkillOpt训练范式](ch07/037-skill-trace2skill-evoskill-skillopt)
 - [038. CLI、MCP 和 CLI+Skill，应该如何选？](ch07/038-cli-mcp-cli-skill)
-- [039. MCP-based Interactive PDF Text Extraction from Amazon S3](ch07/039-mcp-based-interactive-pdf-text-extraction-from-amazon-s3)
-- [040. Matt Pocock Skills — AI编程技能集合](ch07/040-matt-pocock-skills-ai)
-- [041. Skill 版本对比五大原则：从'两个数字比大小'到工程化质量门禁](ch07/041-skill)
-- [042. Meta Skill](ch07/042-meta-skill)
-- [043. 京东健康 OPC 团队产品全流程 Skill 探索](ch07/043-opc-skill)
-- [044. Claude Code MCP Server](ch07/044-claude-code-mcp-server)
-- [045. Claude Code Skills 实战指南 — 发现机制、编写与安全](ch07/045-claude-code-skills)
-- [046. Skill 版本管理五大原则：从越改越差到持续演进](ch07/046-skill)
-- [047. Skill Craft — Claude Skill 质量工程框架](ch07/047-skill-craft-claude-skill)
+- [039. Matt Pocock Skills — AI编程技能集合](ch07/039-matt-pocock-skills-ai)
+- [040. Skill 版本对比五大原则：从'两个数字比大小'到工程化质量门禁](ch07/040-skill)
+- [041. Meta Skill](ch07/041-meta-skill)
+- [042. 京东健康 OPC 团队产品全流程 Skill 探索](ch07/042-opc-skill)
+- [043. Claude Code MCP Server](ch07/043-claude-code-mcp-server)
+- [044. Claude Code Skills 实战指南 — 发现机制、编写与安全](ch07/044-claude-code-skills)
+- [045. Skill 版本管理五大原则：从越改越差到持续演进](ch07/045-skill)
+- [046. Skill Craft — Claude Skill 质量工程框架](ch07/046-skill-craft-claude-skill)
 
-### ⭐⭐⭐⭐⭐ 大师（14 篇）
+### ⭐⭐⭐⭐⭐ 大师（15 篇）
 
-- [048. Skill Hub：企业级 AI 经验资产化的关键（组织能力视角）— winty 前端Q 3 篇合集：组织资产 + 质量门禁 4 关 + 生命周期 6 阶段治理](ch07/048-skill-hub-ai-winty-q-3-4-6)
-- [049. Microsoft Agent Framework Tools 总览：4 类工具 + Provider 矩阵 + Tool Approval](ch07/049-microsoft-agent-framework-tools-4-provider-tool-ap)
-- [050. Skill 设计模式](ch07/050-skill)
-- [051. 企业级 Skill 8 块最小骨架 + 8 条 checklist 设计规范](ch07/051-skill-8-8-checklist)
-- [052. AI Agents Security Survey: Attack and Defense](ch07/052-ai-agents-security-survey-attack-and-defense)
-- [053. Claude Code Skills / MCP / Rules 源码分析](ch07/053-claude-code-skills-mcp-rules)
-- [054. Hermes Agent 满配 12 层配置完整指南（从裸装到 24h Agent 团队）](ch07/054-hermes-agent-12-24h-agent)
-- [055. 重新定义Skill开发：保姆级教程&一站式开发助手](ch07/055-skill)
-- [056. StarAgent/Drogo WebTerminal CLI：阿里基础设施把 WebTerminal 变成 Agent 手脚（CLI 才是 Skill 的执行面）](ch07/056-staragent-drogo-webterminal-cli-webterminal-agent-cli)
-- [057. Agent 记忆存储方案深度洞察：6 大流派分歧、Wiki 编译 vs 原始数据之争、Hermes Agent 启示](ch07/057-agent-6-wiki-vs-hermes-agent)
+- [047. Skill Hub：企业级 AI 经验资产化的关键（组织能力视角）— winty 前端Q 3 篇合集：组织资产 + 质量门禁 4 关 + 生命周期 6 阶段治理](ch07/047-skill-hub-ai-winty-q-3-4-6)
+- [048. Microsoft Agent Framework Tools 总览：4 类工具 + Provider 矩阵 + Tool Approval](ch07/048-microsoft-agent-framework-tools-4-provider-tool-ap)
+- [049. Skill 设计模式](ch07/049-skill)
+- [050. 企业级 Skill 8 块最小骨架 + 8 条 checklist 设计规范](ch07/050-skill-8-8-checklist)
+- [051. AI Agents Security Survey: Attack and Defense](ch07/051-ai-agents-security-survey-attack-and-defense)
+- [052. Claude Code Skills / MCP / Rules 源码分析](ch07/052-claude-code-skills-mcp-rules)
+- [053. Hermes Agent 满配 12 层配置完整指南（从裸装到 24h Agent 团队）](ch07/053-hermes-agent-12-24h-agent)
+- [054. 重新定义Skill开发：保姆级教程&一站式开发助手](ch07/054-skill)
+- [055. StarAgent/Drogo WebTerminal CLI：阿里基础设施把 WebTerminal 变成 Agent 手脚（CLI 才是 Skill 的执行面）](ch07/055-staragent-drogo-webterminal-cli-webterminal-agent-cli)
+- [056. Agent 记忆存储方案深度洞察：6 大流派分歧、Wiki 编译 vs 原始数据之争、Hermes Agent 启示](ch07/056-agent-6-wiki-vs-hermes-agent)
+- [057. MCP-based Interactive PDF Text Extraction from Amazon S3](ch07/057-mcp-based-interactive-pdf-text-extraction-from-amazon-s3)
 - [058. Wiki Evolver](ch07/058-wiki-evolver)
 - [059. skill-up: 阿里开源 Agent Skill 评测框架](ch07/059-skill-up-agent-skill)
 - [060. Perplexity 内部 Skill 设计指南：四维体系与维护方法论](ch07/060-perplexity-skill)

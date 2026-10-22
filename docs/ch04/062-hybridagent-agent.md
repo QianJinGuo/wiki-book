@@ -1,6 +1,6 @@
 # HybridAgent：潜空间思考 + 文本行动的统一 Agent
 
-> 📊 Level ⭐ | 12.5KB
+> 📊 Level ⭐⭐⭐ | 18.9KB
 
 ## 核心命题：让同一个模型在一次生成中自主切换"想"与"说/做"
 
@@ -47,6 +47,48 @@ Stanford、UIUC、Together AI、Meta 的工作要填的是一道老鸿沟：**ag
 ## 三条理论保证与边界
 
 ①无损多轮工作记忆（缓存前向 ≡ 完整前缀前向，逐位等价）；②混合策略分解（似然只落在采样文本位置，重要性比率良定义）；③梯度等价（回放点逐 token clip 梯度 = 完整轨迹 advantage 加权似然梯度）。三者把"混合轨迹上做 RL"从工程 hack 变成有理论依据的算法。**边界**：latent 只能经提供方持有的 HybridLink 读出，**天然形成一种专有推理保护机制**（无文本可泄漏，且提供方可在用户看不到的部分做安全监控）——对前沿模型 API 部署有启发；未来可围绕"latent 工作记忆是一等公民"构建新型 harness（直接对 KV 做上下文管理、按模式调度工作流、Agent 间用混合轨迹通信），并用 latent 可审计性做步级信用分配与坏轨迹剪枝；当前仅在 Qwen3-Base（≤14B）验证。
+
+## 深度分析
+
+### 两种"语言"共用一条自回归流，边界点落在词表里
+
+机关不是拼接而是分工：**边界投影到词表、内容留在连续空间**。生成 `<latent>` 后前向绕过 LM head 与 embedding 层，HybridLink 直接把 h_t 送进下一层——latent 段内推理**从不经过离散瓶颈**，纯文本 Agent 的表达代价被整段跳过；退出判据是"最近邻等于 `</latent>`"，退出后照常采样、tool call 仍为真文本，纯 latent 的"没有工具接口"因此不成立：**接口没消失，消失的只是"思考必须借道接口"**。与 [Tool Use Reasoning](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/tool-use-reasoning.md) 的"推理与调用同源"相比，此处推理可脱离调用面独立存在，切换即生成过程的一段，无需独立 router。
+
+### 开关的实质：熵只做标注，推理期是最近邻 + RL 隐式定价
+
+**token 级熵只出现在 Mode Assignment**，是离线标注信号而非门控函数；推理期只有"最近邻命中 `</latent>` 就退出"，而奖励只有正确性、格式、多工具三项，**没有任何模式使用项**。
+
+故开关学到的是**由任务奖励间接定价的 token 偏好**：进 latent 的唯一理由是让后续文本位置更易拿到高 advantage——"份额转向 latent"与"奖励上升"同步，不是被塑形而是被**筛选**。`禁止 latent` 仅掉到 80.4/78.8（无干预 84.6/88.2），边际贡献约 **4.6–9.4 点**：真实但不占主导，是"latent 是加速器而非能力来源"的量化版。
+
+### 没有 token 似然的信用分配：迟到的梯度
+
+**混合策略分解**把概率恒为 1 的 latent 转移从链式法则消元，使重要性比率良定义；**精确回放**钉住 latent 输入、重算文本似然，使梯度可算。梯度等价定理暴露的**信用通道形状**是：latent 输入固定而 hidden state 仍依赖参数，轨迹级 advantage 沿链式法则传回 backbone 对完整混合上下文的处理——latent 步的信用**经下游文本位置间接到达**。
+
+由此**无下游影响的 latent 步梯度趋近零**，且**回放点天然 off-policy**（定理只述回放点的一阶局部等价）。这套 RL 实为**以文本为观测面、latent 为隐变量**的部分可观测策略，却视隐变量为给定输入——能训起来靠它，难精调"思考质量"也因它。与 [Rlvr Reinforcement Learning Verified Reasoning](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/rlvr-reinforcement-learning-verified-reasoning.md) 同受一约束：可验证奖励只落在答案上。
+
+### KV 与审计的经济学：省的是词表投影，不是记忆
+
+**每个 latent step 仍是一次完整前向**，只省词表投影与逐 token 串行解码，故收益是"token -2.7×、步数 -54%、墙钟 2.1×、成本 2.7–3.7×"。对 [Agent Memory Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-architecture.md) 更要紧的是记忆账：302/284 个文本 token 对应 170/183 个 latent 步，latent 在 KV 里**一比一占位、并不压缩**，经济性来自密度而非压缩。**latent 是计算密度的优化，不是上下文长度的优化。**
+
+审计侧同构：暴露文本少 43%–49% 而关键步密度反增 26%–28%、弱监视器 AUROC 0.840 vs 0.772，但**14B 强监视器 0.989 vs 0.990 打平**——强审计者用文本 Agent 已近天花板，增益集中在弱一侧。即混合推理**没让审计变强，只让审计对审计者能力更不敏感**。不对称在通道：伪文本由"latent 步→最近 token embedding"生成，**该映射要求持有 HybridLink**——提供方审计面扩大，第三方退化为"读输出 + 少量文本步"。
+
+### 三条保证失效的位置
+
+**无损工作记忆**要求固定模型、固定 HybridLink、确定性推理：latent 段任何采样、中途换 adapter、KV 量化都打破逐位等价，而三者在生产里是常态。**混合策略分解**依赖"latent 转移概率恒为 1"，仅在 HybridLink 冻结时成立；一旦让它参与训练（自我条件化已在动它），确定性从结构性质退化为训练假设。**梯度等价**只在回放点且以 latent 输入固定为前提，保证"回放正确"而非"梯度正确"。
+
+最结构性的边界是**环境永远看不到 latent**：结果全在 ≤14B 的 Qwen3-Base 上，而模型可在 latent 里形成与观测相悖的信念并带着它行动，环境毫无纠正机会——纯文本 Agent 至少会把错误想法写出来，让一次失败调用撞碎它。这是效率换来的**接地缺口**，也是 [Agent Harness 演化论](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-evolution-from-llm-call-to-harness-tencent-2026.md)所谓"运行时缺一层语义校验"在模型内部的具体投影。
+
+## 实践启示
+
+1. **先判断瓶颈是不是解码开销。** 收益前提是"中间步多、且大多不必被外部看到"：长链检索综合（GAIA/WebWalker）符合，工具密集、每步据 observation 改计划的场景不符合——那里文本曝光本身就是控制回路。粗判据：轨迹中"想了却没落进 tool call"的 token 占比高 → 值得试。
+
+2. **当训练问题处理，别自造推理期路由器。** 熵只是标注信号，真开关是"格式激活 + 自我条件化 + RL 隐式定价"的产物；自加熵阈值会破坏锚点因果性并引入训练-推理不匹配。先跑 `禁止 latent` 对照，差距不显著则整链重构不值。
+
+3. **预算按前向次数算。** latent step 照计一次前向，压成本要压总步数；只看 output token 会高估收益 3–4 倍，也解释不了 4B 降幅（3.7×）为何大于 14B（2.7×）。
+
+4. **提前回答"谁能读 latent"。** 合规叙事若依赖第三方复核推理过程，混合轨迹直接打破它：伪文本只有持有 HybridLink 的一方能生成。替代是把审计锚点结构化：调用序列、关键决策文本摘要、按需导出的 pseudo-text 快照。
+
+5. **KV 可当状态，但接受其脆弱前提。** 等价性要求确定性推理与固定 adapter：不在 KV 复用路径上开 latent 采样，不中途热换 adapter 版本；评测须并列 `禁止 latent` 与强监视器对照，否则会把"对弱审计者更友好"误读成"更可审计"。
 
 ## 与相关实体的关系
 

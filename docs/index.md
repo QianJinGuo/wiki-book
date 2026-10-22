@@ -20,11 +20,11 @@
 
   <div class="home-stats">
 
-    <div class="home-stats__item"><span class="home-stats__num">1,723</span><span class="home-stats__label">编撰条目</span></div>
+    <div class="home-stats__item"><span class="home-stats__num">1,724</span><span class="home-stats__label">编撰条目</span></div>
 
     <div class="home-stats__item"><span class="home-stats__num">20 章 · 5 篇</span><span class="home-stats__label">全书结构</span></div>
 
-    <div class="home-stats__item"><span class="home-stats__num">4,573</span><span class="home-stats__label">一手原文</span></div>
+    <div class="home-stats__item"><span class="home-stats__num">4,584</span><span class="home-stats__label">一手原文</span></div>
 
     <div class="home-stats__item"><span class="home-stats__num">★ × 5</span><span class="home-stats__label">难度分级</span></div>
 
@@ -42,7 +42,7 @@
 
 <a class="home-part" href="#part-1"><span class="home-part__no">第一篇</span><span class="home-part__name">入门篇</span><span class="home-part__pos">从零理解 AI</span><span class="home-part__count">576 篇 · 3 章</span></a>
 
-<a class="home-part" href="#part-2"><span class="home-part__no">第二篇</span><span class="home-part__name">工程师篇</span><span class="home-part__pos">构建 AI 应用</span><span class="home-part__count">776 篇 · 7 章</span></a>
+<a class="home-part" href="#part-2"><span class="home-part__no">第二篇</span><span class="home-part__name">工程师篇</span><span class="home-part__pos">构建 AI 应用</span><span class="home-part__count">777 篇 · 7 章</span></a>
 
 <a class="home-part" href="#part-3"><span class="home-part__no">第三篇</span><span class="home-part__name">专家篇</span><span class="home-part__pos">深入系统架构</span><span class="home-part__count">279 篇 · 4 章</span></a>
 
@@ -66,17 +66,17 @@
 
 <p class="chapter-card__desc">理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:12.07%" title="⭐ 入门 · 59 篇"></i><i class="lv2" style="width:9.61%" title="⭐⭐ 工程师 · 47 篇"></i><i class="lv3" style="width:48.88%" title="⭐⭐⭐ 专家 · 239 篇"></i><i class="lv4" style="width:20.45%" title="⭐⭐⭐⭐ 科学家 · 100 篇"></i><i class="lv5" style="width:9.00%" title="⭐⭐⭐⭐⭐ 大师 · 44 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:11.66%" title="⭐ 入门 · 57 篇"></i><i class="lv2" style="width:9.61%" title="⭐⭐ 工程师 · 47 篇"></i><i class="lv3" style="width:49.28%" title="⭐⭐⭐ 专家 · 241 篇"></i><i class="lv4" style="width:20.45%" title="⭐⭐⭐⭐ 科学家 · 100 篇"></i><i class="lv5" style="width:9.00%" title="⭐⭐⭐⭐⭐ 大师 · 44 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 59 · ⭐⭐ 47 · ⭐⭐⭐ 239 · ⭐⭐⭐⭐ 100 · ⭐⭐⭐⭐⭐ 44</div>
+<div class="chapter-card__legend">⭐ 57 · ⭐⭐ 47 · ⭐⭐⭐ 241 · ⭐⭐⭐⭐ 100 · ⭐⭐⭐⭐⭐ 44</div>
 
 <ul class="chapter-card__samples">
 
 <li><span class="stars">⭐</span><span class="sample-title">**一、关于 Kollab**</span></li>
 
-<li><span class="stars">⭐</span><span class="sample-title">GPT-5.6 Preview System Card — Community Detection &amp; Benchmarks</span></li>
-
 <li><span class="stars">⭐</span><span class="sample-title">Linux Foundation and Industry Leaders Launch Akrites to Defend Critical Open Source Software Against AI-Enabled Cyber Threats</span></li>
+
+<li><span class="stars">⭐</span><span class="sample-title">用 LiteLLM WebSearch Interception 集成 AWS 托管的 Amazon Bedrock AgentCore Web Search 能力</span></li>
 
 </ul>
 
@@ -118,9 +118,9 @@
 
 <p class="chapter-card__desc">2024-2026 AI 工具生态：从 IDE 到 Agent 平台</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:3.33%" title="⭐ 入门 · 2 篇"></i><i class="lv2" style="width:11.67%" title="⭐⭐ 工程师 · 7 篇"></i><i class="lv3" style="width:51.67%" title="⭐⭐⭐ 专家 · 31 篇"></i><i class="lv4" style="width:25.00%" title="⭐⭐⭐⭐ 科学家 · 15 篇"></i><i class="lv5" style="width:8.33%" title="⭐⭐⭐⭐⭐ 大师 · 5 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:3.33%" title="⭐ 入门 · 2 篇"></i><i class="lv2" style="width:10.00%" title="⭐⭐ 工程师 · 6 篇"></i><i class="lv3" style="width:53.33%" title="⭐⭐⭐ 专家 · 32 篇"></i><i class="lv4" style="width:25.00%" title="⭐⭐⭐⭐ 科学家 · 15 篇"></i><i class="lv5" style="width:8.33%" title="⭐⭐⭐⭐⭐ 大师 · 5 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 2 · ⭐⭐ 7 · ⭐⭐⭐ 31 · ⭐⭐⭐⭐ 15 · ⭐⭐⭐⭐⭐ 5</div>
+<div class="chapter-card__legend">⭐ 2 · ⭐⭐ 6 · ⭐⭐⭐ 32 · ⭐⭐⭐⭐ 15 · ⭐⭐⭐⭐⭐ 5</div>
 
 <ul class="chapter-card__samples">
 
@@ -128,7 +128,7 @@
 
 <li><span class="stars">⭐</span><span class="sample-title">Data Projects</span></li>
 
-<li><span class="stars">⭐⭐</span><span class="sample-title">Agent 时代的生产力悖论：协作成为新瓶颈</span></li>
+<li><span class="stars">⭐⭐</span><span class="sample-title">别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个</span></li>
 
 </ul>
 
@@ -147,27 +147,27 @@
 
 <article class="chapter-card">
 
-<div class="chapter-card__head"><span class="chapter-card__no">Ch04</span><span class="chapter-card__count">405 篇</span></div>
+<div class="chapter-card__head"><span class="chapter-card__no">Ch04</span><span class="chapter-card__count">406 篇</span></div>
 
 <h3 class="chapter-card__title"><a href="ch04-agent-core.html">Agent 核心架构</a></h3>
 
 <p class="chapter-card__desc">什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:4.44%" title="⭐ 入门 · 18 篇"></i><i class="lv2" style="width:8.64%" title="⭐⭐ 工程师 · 35 篇"></i><i class="lv3" style="width:41.48%" title="⭐⭐⭐ 专家 · 168 篇"></i><i class="lv4" style="width:31.60%" title="⭐⭐⭐⭐ 科学家 · 128 篇"></i><i class="lv5" style="width:13.83%" title="⭐⭐⭐⭐⭐ 大师 · 56 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:4.19%" title="⭐ 入门 · 17 篇"></i><i class="lv2" style="width:8.62%" title="⭐⭐ 工程师 · 35 篇"></i><i class="lv3" style="width:41.87%" title="⭐⭐⭐ 专家 · 170 篇"></i><i class="lv4" style="width:31.53%" title="⭐⭐⭐⭐ 科学家 · 128 篇"></i><i class="lv5" style="width:13.79%" title="⭐⭐⭐⭐⭐ 大师 · 56 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 18 · ⭐⭐ 35 · ⭐⭐⭐ 168 · ⭐⭐⭐⭐ 128 · ⭐⭐⭐⭐⭐ 56</div>
+<div class="chapter-card__legend">⭐ 17 · ⭐⭐ 35 · ⭐⭐⭐ 170 · ⭐⭐⭐⭐ 128 · ⭐⭐⭐⭐⭐ 56</div>
 
 <ul class="chapter-card__samples">
-
-<li><span class="stars">⭐</span><span class="sample-title">HybridAgent：潜空间思考 + 文本行动的统一 Agent</span></li>
 
 <li><span class="stars">⭐</span><span class="sample-title">Introducing OS Level Actions in Amazon Bedrock AgentCore Browser</span></li>
 
 <li><span class="stars">⭐</span><span class="sample-title">Amazon Quick 飞书SSO对接指南</span></li>
 
+<li><span class="stars">⭐</span><span class="sample-title">Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering</span></li>
+
 </ul>
 
-<a class="chapter-card__more" href="ch04-agent-core.html">进入章节 · 共 405 篇<span class="arrow" aria-hidden="true"> →</span></a>
+<a class="chapter-card__more" href="ch04-agent-core.html">进入章节 · 共 406 篇<span class="arrow" aria-hidden="true"> →</span></a>
 
 </article>
 
@@ -231,9 +231,9 @@
 
 <p class="chapter-card__desc">Agent 的手脚：Skill 系统、MCP 协议、Tool Use</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:3.28%" title="⭐ 入门 · 2 篇"></i><i class="lv2" style="width:11.48%" title="⭐⭐ 工程师 · 7 篇"></i><i class="lv3" style="width:29.51%" title="⭐⭐⭐ 专家 · 18 篇"></i><i class="lv4" style="width:32.79%" title="⭐⭐⭐⭐ 科学家 · 20 篇"></i><i class="lv5" style="width:22.95%" title="⭐⭐⭐⭐⭐ 大师 · 14 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:3.28%" title="⭐ 入门 · 2 篇"></i><i class="lv2" style="width:11.48%" title="⭐⭐ 工程师 · 7 篇"></i><i class="lv3" style="width:29.51%" title="⭐⭐⭐ 专家 · 18 篇"></i><i class="lv4" style="width:31.15%" title="⭐⭐⭐⭐ 科学家 · 19 篇"></i><i class="lv5" style="width:24.59%" title="⭐⭐⭐⭐⭐ 大师 · 15 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 2 · ⭐⭐ 7 · ⭐⭐⭐ 18 · ⭐⭐⭐⭐ 20 · ⭐⭐⭐⭐⭐ 14</div>
+<div class="chapter-card__legend">⭐ 2 · ⭐⭐ 7 · ⭐⭐⭐ 18 · ⭐⭐⭐⭐ 19 · ⭐⭐⭐⭐⭐ 15</div>
 
 <ul class="chapter-card__samples">
 
@@ -617,6 +617,6 @@
 </div>
 </section>
 
-<footer class="home-map__foot">📊 全书收录 1,723 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-10-22</span></footer>
+<footer class="home-map__foot">📊 全书收录 1,724 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-10-23</span></footer>
 
 </div>

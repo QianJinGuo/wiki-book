@@ -1,6 +1,6 @@
 # MCP-based Interactive PDF Text Extraction from Amazon S3
 
-> 📊 Level ⭐⭐⭐⭐ | 12.0KB
+> 📊 Level ⭐⭐⭐⭐⭐ | 17.8KB
 
 AWS 推出的基于 Model Context Protocol (MCP) 的交互式 PDF 文本提取方案，让 AI Agent 能够实时从 Amazon S3 存储的 PDF 文档中提取文本内容，无需等待批量处理管道。
 
@@ -190,6 +190,40 @@ extract text from s3://your-bucket-name/sample.pdf
 - **向量搜索**：集成 Amazon OpenSearch Service 实现语义文档发现
 - **混合工作流**：自动将复杂文档路由到 Amazon Textract
 - **监控**：使用 Amazon CloudWatch 跟踪使用模式和错误率
+
+## 深度分析
+
+### 为什么是协议而不是胶水：MCP 作为工具契约
+
+四组件架构里最易被低估的是 MCP 层：它解决的不是"怎么调 S3"，而是工具契约放在哪里。定制 Lambda 胶水的路线上，每新增一个文档操作都要在 handler、API 定义、prompt 里的工具说明三处同步修改，一处漂移模型便去调不存在的参数。MCP 把 `list_tools` 的 name / description / inputSchema 变成运行时产物：schema 即契约，服务端只在 `call_tool` 上分支，新增能力退化成"一条 Tool 描述 + 一个 if"。参见 [MCP](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/model-context-protocol-mcp.md)。
+
+代价是绑定部署形态。`server.run()` 加 `"command": "python"` 的配置说明它是本地 stdio 长驻进程：没有 Lambda 式冷启动（PyPDF2 与 boto3 的 import 只在启动付一次），但并发实质为 1：单进程、阻塞式 `download_file`、`PdfReader` 全量载入，两个请求只能串行。
+
+### 无状态调用：分页与分块在资源模型里没有位置
+
+`inputSchema` 只有 `bucket` 和 `key`，没有 offset、page 或游标，这决定了它是"整文档一次吐完"而非可寻址资源。文章开头举的恰是"200 页政策文件里找一条条款"——全量文本压进单次响应，token 与体积随页数线性膨胀，模型却往往只需两页。
+
+资源模型本可表达 `s3://bucket/key#page=37` 这类子资源，配合游标做成"先检索、后取页"；当前没走这条路，chunking 便全部下沉到客户端：让 LLM 在大段文本里自己定位（烧 context），或外挂向量检索——文章把 OpenSearch 列为扩展项，恰好承认了这个缺口。被丢掉的还有页边界：`text += page.extract_text()` 返回无标记的连续文本，而法务、合规的核心价值正是引用到具体条款与具体页。最小修补是每页前插 `[p.N]`，成本近乎为零，却把可回溯性还给下游。
+
+### 预签名 URL 还是代理转发：凭证位置决定爆炸半径
+
+当前实现是代理转发：凭证始终留在 server 进程内，agent 只看到两个字符串。优势是凭证不出进程；代价是数据平面穿过 server（临时文件落盘、`finally` 里 unlink），且该进程须有权读所有传入的 bucket。关键是 bucket 在 schema 里是自由字符串——不做白名单，per-tool 最小权限最终只能落在 IAM policy 的 resource ARN 上，那是方案里唯一真正的闸门。
+
+presigned URL 正好反过来：server 不碰字节，egress 转移到客户端、S3 直连；但 URL 本身是 bearer token，进入模型上下文、trace 或日志就等于把对象访问权交给所有读得到它的人。TTL 是唯一止损阀门，而它必须长到覆盖多轮推理，两者天然冲突。文章选代理转发，判断很清楚：文档是敏感资产，凭证关在进程内比省一段 egress 更值钱。
+
+### 文本层与 OCR 的边界：保真度断在哪里
+
+`extract_text` 读的是 PDF 内容流里的文本对象，判定边界很干脆：有文本层就能读，没有就一个字都读不到。真正的陷阱不是纯扫描件（一眼可辨、直接路由 Textract），而是混合 PDF：200 页合同里夹了三页扫描附件。该页返回空串却不抛异常，代码走到 `logger.info("Successfully extracted ...")` 正常返回。静默成功是最坏的失败模式——下游 LLM 会把"提取为空"读成"文档中没有该条款"。
+
+保真度还有三处断点：多栏按内容流而非视觉顺序拼接，两栏交错读串；表格被拍平成单元格文本，行列与表头一起丢失；AcroForm 表单域不在视野内——这正是 forms / tables / complex layouts 被划给 Textract 的分工边界。近乎免费的路由启发式：循环本就逐页，顺手统计每页字符数，低于阈值（如 50 字符）即标记需 OCR，只送这几页去 Textract——约 $0.0015/页，混合文档通常只有个位数比例需要，总成本仍远低于全量 OCR。
+
+### 运行包络：成本结构、并发上限与审计
+
+成本表里 $2.50 = S3 存储 $2 + 数据传输 $0.50，边际成本几乎全是 egress，无按页计费调用——这是相对 Textract $23-28 的全部价差来源，也意味着账单随"读了多少 GB"而非"处理多少页"增长。容量规划该估平均文档大小乘查询次数；重复查询时 DynamoDB 缓存省的是出口流量，不是算力。
+
+并发受三条物理约束：单进程串行、临时文件占磁盘、`PdfReader` 全量载入内存。文章的经验值——100 页以内落在开发机内存限制内、耗时随页数线性（10 页约比 50 页快 5 倍）——意味着延迟由页数决定，吞吐由"能否多开进程"决定；多开进程会同时放大临时文件竞争与内存占用。这才是它被定位在 PoC 而非生产 SLA 的技术原因，与功能缺失无关。
+
+安全五条里真正承重的是第一条与第五条：复用 IAM 意味着没有第二套密钥可泄露；CloudTrail 记录 GetObject，每次提取都留下"谁、何时、读了哪个 object"，这是审计型用例能接受该方案的前提。租户隔离不在方案内：一个进程、一套凭证、所有 bucket 平权。补法是每租户一个 server 实例加一份只含该租户前缀的 IAM policy，让隔离落在进程与 ARN 上，而非在 `call_tool` 里写 if。延伸阅读：[Agent 安全架构](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-security-architecture.md)、[MCP 无状态扩展](https://github.com/QianJinGuo/wiki-public/blob/main/entities/mcp-2026-07-28-stateless-extensions-ema.md)。
 
 ## 实践启示
 
