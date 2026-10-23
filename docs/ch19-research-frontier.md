@@ -10,9 +10,9 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐⭐ 工程师 | 需编程基础 | 2 |
+| ⭐⭐ 工程师 | 需编程基础 | 1 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 4 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 5 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 6 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 2 |
 
 ---
@@ -35,20 +35,20 @@
 
 ## 本章内容
 
-### ⭐⭐ 工程师（2 篇）
+### ⭐⭐ 工程师（1 篇）
 
-- [001. PoS：用显式信念状态识别并打破 Belief Trapping](ch19/001-pos-belief-trapping)
-- [002. The Complexity of Simplicity | Jim Nielsen's Notes](ch19/002-the-complexity-of-simplicity-jim-nielsen-s-notes)
+- [001. The Complexity of Simplicity | Jim Nielsen's Notes](ch19/001-the-complexity-of-simplicity-jim-nielsen-s-notes)
 
 ### ⭐⭐⭐ 专家（4 篇）
 
-- [003. 世界模型的DeepSeek时刻！魔芯Flash World Model降本70%，跑出50FPS实时交互](ch19/003-deepseek-flash-world-model-70-50fps)
-- [004. Prompt Injection 的机制解释：基于角色感知的 LLM 安全分析](ch19/004-prompt-injection-llm)
-- [005. Count Anything - 文本引导的通用目标计数框架](ch19/005-count-anything)
-- [006. From AGI to ASI](ch19/006-from-agi-to-asi)
+- [002. 世界模型的DeepSeek时刻！魔芯Flash World Model降本70%，跑出50FPS实时交互](ch19/002-deepseek-flash-world-model-70-50fps)
+- [003. Prompt Injection 的机制解释：基于角色感知的 LLM 安全分析](ch19/003-prompt-injection-llm)
+- [004. Count Anything - 文本引导的通用目标计数框架](ch19/004-count-anything)
+- [005. From AGI to ASI](ch19/005-from-agi-to-asi)
 
-### ⭐⭐⭐⭐ 科学家（5 篇）
+### ⭐⭐⭐⭐ 科学家（6 篇）
 
+- [006. PoS：用显式信念状态识别并打破 Belief Trapping](ch19/006-pos-belief-trapping)
 - [007. 推荐系统进入大模型时刻：昇腾 NPU 如何支撑千亿级生成式推荐落地](ch19/007-npu)
 - [008. NeurIPS 2026 Pangram 事件：闭源 AI 检测器用于学术 desk-reject 的方法论争议](ch19/008-neurips-2026-pangram-ai-desk-reject)
 - [009. Lean Software Scaling Laws](ch19/009-lean-software-scaling-laws)

@@ -1,6 +1,6 @@
 # DeepSeek-V4.1-Flash：把 KV Cache 压缩到极限的百万上下文 MoE（技术报告全系统解读）
 
-> 📊 Level ⭐⭐ | 14.7KB
+> 📊 Level ⭐⭐⭐⭐ | 25.4KB
 
 ## DeepSeek-V4.1-Flash：把 KV Cache 压缩到极限的百万上下文 MoE
 
@@ -91,6 +91,47 @@ Decoder 第一个 Full 层构建块级候选池（最多 2048 块×8 位置 = 16
 增量最大的四项：Terminal-Bench 4.0 31.2→42.3（+11.1，与前文"专家级科学任务落后 Opus-5"的判断一致地缩小但未消除差距，仍 42.3 vs 51.8）、ProgramBench 20.3→29.1、Apex Bench 64.6→72.1、Automation-Bench 54.8→60.5；HLE 36.8→42.6 但仍显著低于 Opus 5 的 56.3。DeepSWE v1.1 77.0 继续压过 Opus 5（74.0）与 GPT-5.6 Sol（73.0），是本代最强项。
 
 工程接口有两处变化值得记：其一，**本版不再附带 Jinja 格式 chat template**，改为仓库内自包含 Python 参考实现 `encoding.py`（覆盖多轮、工具调用、thinking、数值化 reasoning effort、对话中途 system message、交错图像）+ 单独发布的 **deepseek-recipe**（Rust 库 + Python 绑定，协议感知地把 Messages/Chat Completions/Responses 请求统一编码为 DeepSeek V4/V4.1 prompt 或 token IDs，并解析回完整/流式响应，推理与工具执行留给调用方）；其二，推荐采样为 temperature 1.0 / top_p 1.0 / **context 1M tokens / max_tokens ≥256K**——「长输出预算」被写进默认配置，与官方的 harness 场景定位吻合。
+
+## 深度分析
+
+### 1/8 是缓存分层的复利，不是压缩算法的胜利
+
+把「持久化 KV 降到 1/8」拆开，两个因子的性质完全不同：第一个是**要不要存**——SWA KV 从持久缓存里整个移出，省掉近一半；第二个是**存得多省**——全局 KV 经架构与 FP4 再压到 1/4。前者没有改动任何模型数学，只是把「分钟级有用的数据」从「72 小时留存的数据库」里分出去。报告给出的理由也不是什么理论最优，而是访问模式不匹配：全局 KV 有长尾复用价值，SWA KV 会话一结束就是死数据。这是对自家 workload 的统计判断，不是注意力的数学定理。
+
+所以这个数字的可迁移性必须分开评估。FP4 的那一半依赖 RMSNorm 下的动态范围分析与 QAT，是模型侧的硬功夫，抄不走；缓存分层的那一半依赖「知道自己的流量在什么时间尺度上复用」，任何自建推理栈都能照搬，但前提是先有 prefix 命中率与 SWA 窗口命中的遥测。把它读成「算法胜利」，行动项会变成去追更激进的压缩格式；读成「分层复利」，才会先去补遥测——而后者才是这条 1/8 的真正前置条件。同类思路在 [分层 KV 缓存的托管实现](https://github.com/QianJinGuo/wiki-public/blob/main/entities/tiered-kv-cache-large-llms-sagemaker-hyperpod-curvine.md) 中也能看到，差别只在 DeepSeek 把 TTL 语义写进了架构本身。
+
+### 三条压缩路径的取舍：条目、序列、层，外加一条绕开 attention 的旁路
+
+条目维度（GQA 减头、MLA 在头间共享 latent）已是上一代的红海；CSA2 的增量在序列维度（每 k 个 token 压一条）与层维度（跨层复用 cache 与索引）的**联合**，而它真正的手法是给两个原本耦合的代价分开定价：Reuse 模式 KV 与索引全复用，Reindex 模式只复用 KV、用自己的 indexer Q 重新打分产出新 Top-K。这一步的含义是「缓存共享」不必以「稀疏选择退化成全网一致」为代价——此前只复用索引的省不下主 KV，全网共享路由的会掉点，混合设计还留着全注意力层。[HySparse2 的混合 KV 共享](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hysparse2-mimo-v3-hybrid-kv-sharing-2026.md) 正是这条路线上的同期对照。
+
+第二条旁路更值得注意：196B 参数的条件记忆把「记忆」搬出 attention/KV，落到确定性寻址的嵌入表上，因此可以后台 RDMA 从主机内存预取。也就是说 DeepSeek 没有把所有信息都硬塞进 KV 去压，而是按信息性质分流：需要逐 token 精确回溯的进 KV，可哈希寻址的进参数化记忆，只在一小段窗口内有效的进重算。三条路的账单分别落在 HBM、主机内存与算力上——这才是「组合式取舍」的实际形态，不是把三个压缩率相乘，而是让三种介质各自承担最擅长的那部分。同期架构综述把这个方向概括为「KV 共享 + mHC + 压缩注意力」三线并进，见 [近期 LLM 架构进展](https://github.com/QianJinGuo/wiki-public/blob/main/entities/recent-developments-in-llm-architectures-kv-sharing-mhc-and-compressed-attention.md)。
+
+而所有近似都配了训练侧兜底：Bounded Replay 在后训练阶段模拟同样的重放做训练感知适配，FP4 走 QAT，分层索引器在后训练引入并保持训练/推理同一搜索域。这是全文最硬的一条工程纪律——**近似要进训练分布，而不是留给推理时靠精度补救**。
+
+### 成本曲线平的是 FLOPs，不是账单
+
+官方叙事里最漂亮的一条曲线：上下文 4K→1M（256 倍），单 token decode FLOPs 只涨约 1/4。但这条曲线画的是计算，不是账单。存储侧依然线性：890 字节/token × 1M token 约 890 MB/请求，单个请求的运行时 KV 就吃掉一张 80GB 卡 1% 出头的显存——并发一上来，排队理由是 HBM 容量而不是算力，这正是报告开头要把 runtime KV 与 persistent KV 分开定义的原因。带宽同理：prefill 被 CED 砍到近乎减半，但仍是 O(n)，输入重的 agent workload 不会因为稀疏注意力变成常数成本。这条「平曲线」在 [上下文窗口经济学](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/context-window-economics.md) 里应该配上容量轴才有意义。
+
+真实的失效边界有三处，都能从报告里读出来。其一是**索引 recall 被池子钉住**：分层索引把深层打分从随上下文线性增长变成常数，代价是候选池固定为最多 2048 块 × 8 位置 = 16384 个候选位置，上下文再长，索引能看到的范围也不会自动变大。其二是**近似状态在极端边界掉点**：报告自己承认 CSA2 的选择误差与 Bounded Replay 的近似重建，在未经测试的极端情况下仍可能掉分。其三是**窗口容量与长上下文能力不是一回事**：V4.1-Flash-Base 在 LongBench-V2 上是 45.2，略高于 V4-Flash-Base 的 44.7，却明显低于 V4-Pro-Base 的 51.5。把窗口做大与把窗口里的信息用好，是两件不同的事：前者这条曲线已经解决，后者这条曲线还没画出来。
+
+对选型而言这条边界很直接：任务是「把大量文档塞进去做一次性抽取」，1M 窗口加 890 字节/token 是净收益；任务是「跨几十万 token 维持一致性推理」，LongBench-V2 这类分数提醒你别把窗口当能力。
+
+### 与同期前沿模型的分歧：效率优先的性能形状
+
+同一张 Max 力度评测表读起来是有形状的。V4.1-Flash 在**短程、工具密集、可自动验证**的 agent 任务上领先或追平最贵的前沿模型：DeepSWE v1.1 74.2 压过 Opus-5 的 74.0 与 GPT-5.6 Sol 的 73.0，Terminal-Bench 2.1 90.6 全场最高，CyberGym 88.1 拿到开源 SOTA；但在**需要长程规划与专家知识**的任务上明显落后：Terminal-Bench 3.0 只有 30.0 对 Opus-5 的 43.3，即使 1017 版本把 Terminal-Bench 4.0 从 31.2 补到 42.3，仍低于 51.8，HLE 42.6 也低于 56.3。
+
+这不是「小模型追平大模型」的故事，而是两条路线的成绩单形状不同：一条买参数与 RL 算力，在需要深度知识与长程一致性的任务上收租；另一条买单位 token 的边际成本，先把输入重、工具密集、可验证的 workload 吃干净。DeepSeek 还刻意把后训练算法留白，把资源全押在数据与环境管线（多脚手架异构联训、DSec 百万并发沙箱）——这本身就是路线选择的一部分：它赌的是 harness 多样性与环境规模，而不是新的 RL 目标函数。
+
+对第三方最实用的推论是：这两条曲线的交点随任务象限移动，选型该按「任务落在哪个象限」而不是按总分。而且同一 checkpoint 在六个脚手架家族八种配置下 DeepSWE 从 65.5 到 74.2，harness 带来的 8.7 分方差，与 V4-Flash 到 V4.1 的代际跃升（54.4→74.2）并非不在同一量级——低估 harness 的团队，等于把一次架构升级的收益丢在了接入层。
+
+## 实践启示
+
+1. **先分账，再压缩。** 长上下文成本是三张账单的乘积：存储、带宽、计算。先量出自家 agent 的 prefix 复用率、上下文长度分布、SWA 窗口命中率，再决定压哪一项；只盯 FLOPs 会漏掉 HBM 容量与 SSD I/O 这两个真正排队的地方。
+2. **缓存按「复用价值半衰期」分层，而不是按数据类型分层。** 长尾复用的全局 KV 落 SSD（至少 72 小时），分钟级有效的 SWA KV 落分布式 DRAM 池（TTL 分钟级、每机 10% 主机内存），miss 用有界重放优雅降级而不是精确重建。这套三级结构不依赖 DeepSeek 的模型，任何前缀缓存系统都能照搬。
+3. **任何近似都要进训练。** 有界重放、FP4、跨层复用三者在本文里都做了训练感知适配；反过来说，只在推理侧做的量化与层间 cache 共享，掉点几乎是必然的——这是判断一份「压缩方案」是否可信的最快标尺。
+4. **把长输出预算写进默认配置。** 官方推荐 context 1M / max_tokens ≥256K，并把 chat template 换成 `encoding.py` 参考实现加 deepseek-recipe 库。自建 agent 应直接吃 recipe 做协议编码，别手写 prompt 拼装：多轮、工具调用、thinking、对话中途 system message、交错图像这些边界，比自家 switch 分支多得多。
+5. **评测锁 harness 并跨 harness 复测。** 分数是「模型 × harness」的联合产物：同一 checkpoint 在六个脚手架上是 65.5-74.2，Terminal-Bench 4.0 用 Claude Code harness、DeepSWE 用 Mini-SWE-V2。报一个数字而不报 harness 与力度档位，等于没报。
+6. **窗口与力度是最容易过度购买的两样东西。** LongBench-V2 的 45.2 对 51.5 说明窗口变大不等于长上下文理解变强；力度从 60-80 区间继续拉到 100，Agent 轨迹会变长 1.6-1.8 倍却只换边际提升，而整体代价可达 2.5 倍输出 token。默认配置应是「够用的窗口 + 中间力度」，把预算留给验证与重试。
 
 ## 与已有实体的关系
 

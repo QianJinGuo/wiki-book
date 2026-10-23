@@ -20,11 +20,11 @@
 
   <div class="home-stats">
 
-    <div class="home-stats__item"><span class="home-stats__num">1,724</span><span class="home-stats__label">编撰条目</span></div>
+    <div class="home-stats__item"><span class="home-stats__num">1,725</span><span class="home-stats__label">编撰条目</span></div>
 
     <div class="home-stats__item"><span class="home-stats__num">20 章 · 5 篇</span><span class="home-stats__label">全书结构</span></div>
 
-    <div class="home-stats__item"><span class="home-stats__num">4,584</span><span class="home-stats__label">一手原文</span></div>
+    <div class="home-stats__item"><span class="home-stats__num">4,598</span><span class="home-stats__label">一手原文</span></div>
 
     <div class="home-stats__item"><span class="home-stats__num">★ × 5</span><span class="home-stats__label">难度分级</span></div>
 
@@ -42,7 +42,7 @@
 
 <a class="home-part" href="#part-1"><span class="home-part__no">第一篇</span><span class="home-part__name">入门篇</span><span class="home-part__pos">从零理解 AI</span><span class="home-part__count">576 篇 · 3 章</span></a>
 
-<a class="home-part" href="#part-2"><span class="home-part__no">第二篇</span><span class="home-part__name">工程师篇</span><span class="home-part__pos">构建 AI 应用</span><span class="home-part__count">777 篇 · 7 章</span></a>
+<a class="home-part" href="#part-2"><span class="home-part__no">第二篇</span><span class="home-part__name">工程师篇</span><span class="home-part__pos">构建 AI 应用</span><span class="home-part__count">778 篇 · 7 章</span></a>
 
 <a class="home-part" href="#part-3"><span class="home-part__no">第三篇</span><span class="home-part__name">专家篇</span><span class="home-part__pos">深入系统架构</span><span class="home-part__count">279 篇 · 4 章</span></a>
 
@@ -66,17 +66,17 @@
 
 <p class="chapter-card__desc">理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:11.66%" title="⭐ 入门 · 57 篇"></i><i class="lv2" style="width:9.61%" title="⭐⭐ 工程师 · 47 篇"></i><i class="lv3" style="width:49.28%" title="⭐⭐⭐ 专家 · 241 篇"></i><i class="lv4" style="width:20.45%" title="⭐⭐⭐⭐ 科学家 · 100 篇"></i><i class="lv5" style="width:9.00%" title="⭐⭐⭐⭐⭐ 大师 · 44 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:11.45%" title="⭐ 入门 · 56 篇"></i><i class="lv2" style="width:9.20%" title="⭐⭐ 工程师 · 45 篇"></i><i class="lv3" style="width:49.28%" title="⭐⭐⭐ 专家 · 241 篇"></i><i class="lv4" style="width:20.86%" title="⭐⭐⭐⭐ 科学家 · 102 篇"></i><i class="lv5" style="width:9.20%" title="⭐⭐⭐⭐⭐ 大师 · 45 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 57 · ⭐⭐ 47 · ⭐⭐⭐ 241 · ⭐⭐⭐⭐ 100 · ⭐⭐⭐⭐⭐ 44</div>
+<div class="chapter-card__legend">⭐ 56 · ⭐⭐ 45 · ⭐⭐⭐ 241 · ⭐⭐⭐⭐ 102 · ⭐⭐⭐⭐⭐ 45</div>
 
 <ul class="chapter-card__samples">
-
-<li><span class="stars">⭐</span><span class="sample-title">**一、关于 Kollab**</span></li>
 
 <li><span class="stars">⭐</span><span class="sample-title">Linux Foundation and Industry Leaders Launch Akrites to Defend Critical Open Source Software Against AI-Enabled Cyber Threats</span></li>
 
 <li><span class="stars">⭐</span><span class="sample-title">用 LiteLLM WebSearch Interception 集成 AWS 托管的 Amazon Bedrock AgentCore Web Search 能力</span></li>
+
+<li><span class="stars">⭐</span><span class="sample-title">You Must Fix Your Asserts</span></li>
 
 </ul>
 
@@ -147,15 +147,15 @@
 
 <article class="chapter-card">
 
-<div class="chapter-card__head"><span class="chapter-card__no">Ch04</span><span class="chapter-card__count">406 篇</span></div>
+<div class="chapter-card__head"><span class="chapter-card__no">Ch04</span><span class="chapter-card__count">407 篇</span></div>
 
 <h3 class="chapter-card__title"><a href="ch04-agent-core.html">Agent 核心架构</a></h3>
 
 <p class="chapter-card__desc">什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:4.19%" title="⭐ 入门 · 17 篇"></i><i class="lv2" style="width:8.62%" title="⭐⭐ 工程师 · 35 篇"></i><i class="lv3" style="width:41.87%" title="⭐⭐⭐ 专家 · 170 篇"></i><i class="lv4" style="width:31.53%" title="⭐⭐⭐⭐ 科学家 · 128 篇"></i><i class="lv5" style="width:13.79%" title="⭐⭐⭐⭐⭐ 大师 · 56 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:4.18%" title="⭐ 入门 · 17 篇"></i><i class="lv2" style="width:8.11%" title="⭐⭐ 工程师 · 33 篇"></i><i class="lv3" style="width:42.51%" title="⭐⭐⭐ 专家 · 173 篇"></i><i class="lv4" style="width:31.20%" title="⭐⭐⭐⭐ 科学家 · 127 篇"></i><i class="lv5" style="width:14.00%" title="⭐⭐⭐⭐⭐ 大师 · 57 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 17 · ⭐⭐ 35 · ⭐⭐⭐ 170 · ⭐⭐⭐⭐ 128 · ⭐⭐⭐⭐⭐ 56</div>
+<div class="chapter-card__legend">⭐ 17 · ⭐⭐ 33 · ⭐⭐⭐ 173 · ⭐⭐⭐⭐ 127 · ⭐⭐⭐⭐⭐ 57</div>
 
 <ul class="chapter-card__samples">
 
@@ -167,7 +167,7 @@
 
 </ul>
 
-<a class="chapter-card__more" href="ch04-agent-core.html">进入章节 · 共 406 篇<span class="arrow" aria-hidden="true"> →</span></a>
+<a class="chapter-card__more" href="ch04-agent-core.html">进入章节 · 共 407 篇<span class="arrow" aria-hidden="true"> →</span></a>
 
 </article>
 
@@ -570,17 +570,17 @@
 
 <p class="chapter-card__desc">Scaling Law、涌现能力、世界模型、自我博弈</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:0.00%" title="⭐ 入门 · 0 篇"></i><i class="lv2" style="width:15.38%" title="⭐⭐ 工程师 · 2 篇"></i><i class="lv3" style="width:30.77%" title="⭐⭐⭐ 专家 · 4 篇"></i><i class="lv4" style="width:38.46%" title="⭐⭐⭐⭐ 科学家 · 5 篇"></i><i class="lv5" style="width:15.38%" title="⭐⭐⭐⭐⭐ 大师 · 2 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:0.00%" title="⭐ 入门 · 0 篇"></i><i class="lv2" style="width:7.69%" title="⭐⭐ 工程师 · 1 篇"></i><i class="lv3" style="width:30.77%" title="⭐⭐⭐ 专家 · 4 篇"></i><i class="lv4" style="width:46.15%" title="⭐⭐⭐⭐ 科学家 · 6 篇"></i><i class="lv5" style="width:15.38%" title="⭐⭐⭐⭐⭐ 大师 · 2 篇"></i></div>
 
-<div class="chapter-card__legend">⭐⭐ 2 · ⭐⭐⭐ 4 · ⭐⭐⭐⭐ 5 · ⭐⭐⭐⭐⭐ 2</div>
+<div class="chapter-card__legend">⭐⭐ 1 · ⭐⭐⭐ 4 · ⭐⭐⭐⭐ 6 · ⭐⭐⭐⭐⭐ 2</div>
 
 <ul class="chapter-card__samples">
-
-<li><span class="stars">⭐⭐</span><span class="sample-title">PoS：用显式信念状态识别并打破 Belief Trapping</span></li>
 
 <li><span class="stars">⭐⭐</span><span class="sample-title">The Complexity of Simplicity | Jim Nielsen&#x27;s Notes</span></li>
 
 <li><span class="stars">⭐⭐⭐</span><span class="sample-title">世界模型的DeepSeek时刻！魔芯Flash World Model降本70%，跑出50FPS实时交互</span></li>
+
+<li><span class="stars">⭐⭐⭐</span><span class="sample-title">Prompt Injection 的机制解释：基于角色感知的 LLM 安全分析</span></li>
 
 </ul>
 
@@ -617,6 +617,6 @@
 </div>
 </section>
 
-<footer class="home-map__foot">📊 全书收录 1,724 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-10-23</span></footer>
+<footer class="home-map__foot">📊 全书收录 1,725 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-10-24</span></footer>
 
 </div>

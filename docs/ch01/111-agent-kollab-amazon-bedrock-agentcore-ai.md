@@ -1,6 +1,8 @@
-# **一、关于 Kollab**
+# 对抗 Agent 遗忘：Kollab 基于 Amazon Bedrock AgentCore 的团队 AI 工作空间实践
 
-> 📊 Level ⭐ | 12.6KB
+> 📊 Level ⭐⭐⭐ | 18.0KB
+
+## **一、关于 Kollab**
 
 ## 对抗 Agent 遗忘：Kollab 基于Amazon Bedrock AgentCore 的团队AI工作空间实践
 
@@ -90,6 +92,36 @@ S3 作为真值源，Runtime 与 S3 之间的同步是由两个动作构成：hy
 在 Kollab，一个定时任务从首次触发开始就绑定到固定的 conversation（source_conversation_id）。每次到点，新 Runtime 从 S3 恢复这个conversation 的工作区，昨天写到一半的 Markdown、上周比对过的 Issue 列表都还在。
 
 举个例子。用户配置一个每天早 8 点的 cron 任务：“汇总过去 24 小时的 GitHub Issue 进展，写到团队 Notion 周报草稿”。第一次执行时工作区是空的，Agent 建立基础结构，写入第一次记录。第二次执行时
+
+## 深度分析
+
+### 遗忘的根因是状态所有权，而非上下文长度
+
+原文归因很干脆：弹性 Runtime 会因空闲回收、扩缩容与节点调度被随时启停，会话上下文、中间文件、工具调用记录随之消失。这与上下文窗口长短无关——塞满 prompt 也救不回只存在实例硬盘上的状态。Kollab 不是让 Agent"记得更多"，而是换了状态的所有者：Runtime 本地只留可重建副本，真值放到进程生命周期之外的 S3。前提一变，遗忘就从"要靠模型能力硬扛的缺陷"降级为"一次正常的加载动作"。团队知识沉淀卡在这里：记忆必须比任何一次执行活得更久，而这只有存储层给得了。
+
+### runtime／memory／identity 被拆给三个不同组件
+
+AgentCore 以 session 为边界、按虚拟化级别隔离并按需创建销毁，回答"多个团队并发跑如何互不污染"；S3 用 prefix 承载记忆与产物，配 IAM 按前缀授权、静态 SSE-KMS 与传输 TLS，回答"谁能读哪一段"。identity 因此不是运行时开关，而是沿存储路径分摊实现的；能否与平台自带身份模型对齐，是选型最该追问的一点 [AgentCore 身份与安全](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-agentcore-identity-security.md)。取舍很清楚：组件变多、hydrate／sync 协议得自己写；换来每层可独立演进与审计，安全模型不绑死在某个托管抽象上。热缓存压在哪一层同样是取舍 [AgentCore 数据持久化与 Session Storage](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-agentcore-data-persistence-file-system-session-storage-efs-s3.md)。
+
+### 瓶颈在同步协议，不在模型与算力
+
+稳定性失败面几乎都落在状态迁移而非推理质量上：session 被回收、hydrate 与 sync 的时机、跨设备续跑的一致性。做法是把 sync 绑在"重要事件"上——工具调用完成、产物生成、会话段落结束——而非定时全量快照；hydrate 先恢复对话历史让人能接着交互，大文件后台并行补齐。Session Storage 再吸收"刚被回收又立刻回来"的抖动。难点在事件粒度：太粗，崩溃丢进度；太细，同步本身变成延迟与账单。原文没给阈值，说明它是按负载调出的经验参数，不是可照抄的常数。Runtime 侧其他可调项见 [AgentCore Runtime 深入解析](https://github.com/QianJinGuo/wiki-public/blob/main/entities/amazon-bedrock-agentcore-runtime-deep-dive-and-scenario-analysis.md)。
+
+### 幂等是持久化的兜底，不是可选项
+
+两条设计原则里，第二条要求 Agent 代码按"可能被重放或被中断"来写。落地样本在 Notion 写入：按 Issue ID 幂等判重，重放不产生重复页面。只要 sync 是至少一次语义，下游副作用就必须可去重，否则恢复越积极、脏数据越多；续跑也要从"上一次成功的 sync 点"接上，而不是从对话第一句重来。这类约束不画在架构图上，却决定能否上生产。保真度是否达标，已有评测维度可对照 [Agent 记忆评测榜单](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-memory-leaderboard-aml-2026.md)。
+
+### 路线差异与不适用场景
+
+多数 multi-agent 框架重心在编排：谁调谁、消息怎么传、结果怎么汇总。Kollab 的重心是"空间"——项目、文档、知识库与 Agent 同处一处，重复工作沉淀为 Skills 稳定复跑，Bot 入口复用团队已在用的 Slack、飞书，用户不必改工作习惯。代价是状态一旦落到对象存储，schema 演进、并发写冲突、跨 prefix 权限收敛全要自建；强依赖 MCP 与 OAuth 2.1 的接入路径，也把能力边界交给了外部生态。三类场景不必照搬：单轮无状态问答，持久化纯属浪费；需要跨库原子事务的写入，对象语义给不了强一致；数据不得出境的团队——真值源放哪里本身就是合规决策。
+
+## 实践启示
+
+1. 先定真值源，再写 Agent 代码。Runtime 本地状态一律视为可丢弃缓存，凡只活在实例里的数据都按"已丢失"设计。
+2. 把 sync 绑在业务事件上，不要绑在时钟上。写明至少一次语义与去重键，否则事件触发越勤、重复写得越多。
+3. 下游副作用先做幂等，再谈自动恢复。恢复越积极、重放越频繁；无去重键的写操作迟早把脏数据带进团队空间。
+4. 分层设计恢复速度：对话历史同步加载保证"能接着聊"，大文件后台补齐，短期热缓存吸收抖动，别让用户等全量 hydrate。
+5. 定时任务绑定固定会话，让状态跨触发累积。按 Space 而非按人做隔离与配额，凭据留在服务端、按 prefix 授权。
 
 ## 相关实体
 - [How Aws Smgs Uses An Ai Powered Conversational Assistant To ](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-aws-smgs-uses-an-ai-powered-conversational-assistant-to-.md)
