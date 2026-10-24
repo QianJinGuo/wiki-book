@@ -1,6 +1,6 @@
 # 阿里Qwen提出Skill-RM：把奖励模型做成可复用Agent Skill
 
-> 📊 Level ⭐⭐⭐ | 12.4KB
+> 📊 Level ⭐⭐⭐⭐ | 16.5KB
 
 >原文存档：[原文存档](https://mp.weixin.qq.com/s/K92ZQp1PnVQq1UPOes9rtA)
 
@@ -66,9 +66,7 @@ Skill-RM端到端接入 RL奖励链路，IFEval +1.1、AdvancedIF +2.6、IFBench
 
 标量 RM（Skywork）在 IF场景几乎失灵；Skill-RM 平均0.524最高。System-Prompt 子集0.413仍落后 Gemini-3-Flash 的0.489——长系统提示是指令遵循 judge 的硬骨头。
 
-##深度分析
-
-### Skill-RM vs 同类方案
+## 与同类方案的定位辨析
 
 |方案 |资源类型 |样本级资源 |编排机制 |跨任务泛化 |
 |------|----------|------------|----------|------------|
@@ -100,6 +98,28 @@ TIR-Judge-Zero、OpenRS 等已有 agentic judge路线，但 Skill-RM 的差异�
 - **证据 schema**：每条证据 `(c_i, o_i, d_i)`标准化，事后可审计、可复用
 
 这是把 RM 从「模型」变成「评估基础设施」的关键一步。
+
+## 深度分析
+
+### 把 reward model 从「一个模型」重构为「一套评估基础设施」
+
+标量 RM 的失效方式可预测：`r = RM(x,y)` 把正确性、格式、安全压成一个实数，下游只看得到分数，看不到分数从哪来。LLM-as-judge 补回了理由文本，但理由是非结构化生成，用哪些资源、采信哪条证据藏在一次前向里——可读，不可复算。rubric 条件化拆开了维度，却一次只暴露一种模态，遇到复合题仍靠 prompt 硬塞。三者共同短板不是判得不准，而是缺一层承接判断过程的接口。Skill-RM 不追更强骨干，把评估拆成规格 I、资源库 R、证据 E 与确定性读出 f，判分质量于是成为可单独替换、可回归的组件。基础设施的验收标准不是峰值分数，而是坏了好定位、换了不牵动全局。
+
+### 为什么 append 掉分、编排涨分：注意力的预算分配
+
+消融里最反直觉的一行是 -2.9：参考答案和 verifier 一个没少，分数反而低于裸 judge。原因在暴露顺序而非材料。append 模式下 rubric、checklist、verifier 说明与答案等权平铺，注意力没有优先级可依——`parse_json: pass` 只是长 prompt 中间一行字，和「语气是否友好」同权。Skill 协议反过来：先诊断任务类型，再按结论取资源，资源默认潜伏。判断链变成条件式的，关键观测出现在该出现的位置。这正是 progressive disclosure 的实质——文件组织方式决定注意力预算如何分配。+2.3 是顺序赢来的；单挂 Python 工具只有 -0.3，说明多一件工具本身几乎不值钱。
+
+### 证据 schema 的工程价值：可审计、可复用、可归因
+
+`e_i = (c_i, o_i, d_i)` 只是三个字段，实际把判分从叙述变成记录：c_i 锚定判据，o_i 是可外部复核的事实（verifier 输出、检索段落、格式检查），d_i 只对这条准则负责。三种能力随之落地。可审计——最终分数能回指到具体观测，而非一段听起来合理的推理；可复用——证据与聚合解耦，同一份观测可在不同准则下重新解读；可归因——分数错了能定位到哪条准则、哪个 verifier、哪次观测出错，修局部而不必重训 RM。这与 agent trace 同构：把评估轨迹当一等制品而非日志副产品，[Token-in-Token-out Agentic RL](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentic-rl-token-in-token-out.md) 要的奖励可复现性，只有落到 schema 层才可操作。
+
+### Agentic judge 的成本结构：什么任务值得付
+
+多步评估的成本是两项相乘：每样本若干轮评估 token 乘以 Best-of-N 的 N，且评估串行落在关键路径。既然贵，判据就不是「平均分涨没涨」，而是「重排能否逼近 Oracle@10」。GSM8K 上界 97.9、baseline 已 97.7，重排空间只剩 0.2，付 N 倍延迟换 0.1 分不成立；IFEval、HumanEval+ 上 baseline 与上界差距大，重排才有真实收益。BigCodeBench 居中：有提升却够不到上界，说明瓶颈已从「judge 不够努力」转到「复杂代码的可验证面不够宽」。离线 RL 链路里成本可摊到训练吞吐；在线逐 token 打分基本不可能回本。
+
+### 迁移含义：技能是给 agent 的说明书，也是给评估器的证据合同
+
+技能通常被读作写给执行者的手册。Skill-RM 给了第二种读法：同一份 `SKILL.md` 既回答「怎么做」，也回答「怎么算做对」。后果有二。其一，技能复用边界从「跨 agent」扩到「跨阶段」——同一份定义同时服务采样、判分与回归，[Skill 系统设计](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-system-design-three-way-comparison.md) 的抽象因此多了一条被训练回路直接消费的出口。其二，技能质量有了可度量的下游：写得含糊的 skill 会在评估端表现为证据缺项。反过来，能被当合同用的技能，必须把准则写成可检查项，而不是形容词。
 
 ## 工程启示
 

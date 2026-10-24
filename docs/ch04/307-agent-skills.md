@@ -1,6 +1,6 @@
 # Agent Skills 系统性综述：表示→获取→检索→进化
 
-> 📊 Level ⭐⭐⭐ | 7.7KB
+> 📊 Level ⭐⭐⭐⭐ | 10.8KB
 
 ## 核心问题
 你让 AI Agent 帮你写一段代码，它做得很好。第二天你让它做一件几乎一样的事，它又从头推理一遍——卡住、报错、重试。就好像它完全没做过上一次。**这不是模型不够聪明。而是它缺了一种人类天然具备的能力：把重复经验变成可复用的肌肉记忆。**
@@ -80,15 +80,20 @@
 技能正在成为独立的基础设施层，而非附属在某个 Agent 产品里的次要功能。
 
 ## 深度分析
-### 模型是大脑，技能是肌肉记忆
-这篇综述的核心观点 ：Agent 的下一个关键竞争力不是模型更强，而是**技能管理能力**更强。大脑再聪明，没有肌肉记忆也快不起来。
+### 三元组的边界：什么能写成技能，什么必须留在权重里
+判断标准不是"内容能不能写成文字"，而是**失效方式是否可枚举**。M 与 R 承载的是流程性知识：按步骤展开、错误能定位到某一步、改一步只影响这一步，这种知识外置成文档才划算；而感知精度、风格一致性、语言流畅度写下来只是"描述"，不是参数，仍须留在权重里。C 是第三种东西——它不是技能本体而是路由器，写错的代价常比 M 正文更大：技能再好，触发条件不动它就不会登场。最危险的中间地带是"何时该跳出技能自由推理"这类元知识，它既不适合写进技能（自我指涉），也难进权重，只能留在 harness 的调度逻辑中。见 [Thin Harness Fat Skills](https://github.com/QianJinGuo/wiki-public/blob/main/entities/thin-harness-fat-skills.md)。
 
-### 技能生命周期管理比技能本身更重要
-技能不是存了就完，需要持续检索、验证、进化、治理。这个生命周期视角直接影响了产品架构——需要的不只是技能存储，还需要检索系统、测试框架、版本管理和安全审核。
+### 召回、采用、成功：三段链条要分开计数
+"召回率 ≠ 执行成功率"压缩了三段：任务出现→技能被召回→被模型采纳→执行成功。三段的失败彼此独立：向量检索把"听起来像"的排在前面是召回错；候选正确却仍按自己方式做是采用错；采纳后因缺依赖、无权限而中断是执行错。只盯召回率，后两类失败会被全部记到"模型不够强"账上，真正可修的环节反而被掩盖。可观测性因此至少要采三个量：正解在候选集中的排名、被采纳技能与实际动作是否一致、失败时的错误分类（文档错/触发错/环境错）——三者合起来才能回答"该改技能、改路由，还是改运行时"。
 
-### 与清华 SkillEvolver/EmbodiSkill 的关系
-清华的 SkillEvolver 和 EmbodiSkill 分别对应进化五环节中的**修订+验证**（SkillEvolver 的 Validator 机制）和**修订前的归因**（EmbodiSkill 的四种反思类型）。这篇综述把它们放在了更大的技能生命周期框架中。
+### 瓶颈在验证环，不在构建环
+五环节里修订最容易被自动化：给一条失败轨迹让模型重写指令，几乎总能产出"看起来更好"的版本。难的是判定新版本是否真的更好——没有稳定回归用例时，"改好了"只是自我感觉。验证之所以昂贵，是因为它需要**与作者无关的判定器**；若判分仍由同一个模型承担，它就共享同一套盲区，通过也不构成证据。策展（收不收）与回滚（改坏怎么退）反倒更工程化，靠版本化和审批即可解决 [Skill Hub Mvp Evaluation Rollback Release](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-hub-mvp-evaluation-rollback-release.md)。于是典型病态不是"生不出技能"，而是候选堆满仓库、规模上去了而可信度下来了 [Agent Self Evolution Evaluator Bottleneck](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-self-evolution-evaluator-bottleneck.md)。
 
+### 复利与债务：技能库需要上限与淘汰
+收益是复利的：越常用越准，越准越被用。成本也是复利的：每加一个技能，路由的候选空间、触发条件之间的冲突面、版本漂移的概率同步上涨。到七十万级规模，检索时延本身成为瓶颈，而"两个技能都声称覆盖同一任务"的冲突只能人工消解。因此组织层面要有显式预算：按域设技能数量上限、给每个技能记最后验证时间、把长期零召回的降级归档。淘汰比新增更难，因为没人愿意删别人的经验；但缺淘汰的技能库会退化成没人敢用的文档集合——技能越多，选错概率越高，回归风险随之上升 [Regression Tax Skills Hurt Llm Agents](https://github.com/QianJinGuo/wiki-public/blob/main/entities/regression-tax-skills-hurt-llm-agents.md)。
+
+### 与 SKILL.md 生态的同构与分岔
+综述的抽象层与实践层几乎同构：指令正文、附带脚本与模板、description 里的触发说明，正好一一对应 M/R/C。重心不同——工程生态关心"单个技能怎么写好"（粒度、示例、渐进披露），综述关心"技能库作为系统如何演化"。两者在验证环汇合：SKILL.md 生态目前最缺的同样是可信回归测试与版本治理 [Skill Engineering Principles](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/skill-engineering-principles.md) [Skill Version Management Semantic Versioning Practices Winty](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-version-management-semantic-versioning-practices-winty.md)。开放问题集中在三处：技能间的组合契约（A 调用 B 时谁保证接口）、跨 harness 可移植性（触发条件强依赖具体提示词环境）、以及信任模型（第三方技能本质是代码分发，需要签名与权限边界）。
 ## 实践启示
 **1. 构建技能库时从"种子层"开始。** 人类专家手写的技能作为种子，保证核心领域精确性，后续靠自动化补充规模。
 

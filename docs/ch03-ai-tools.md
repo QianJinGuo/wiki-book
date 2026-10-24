@@ -13,8 +13,8 @@
 | ⭐ 入门 | 零基础可读 | 2 |
 | ⭐⭐ 工程师 | 需编程基础 | 6 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 32 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 15 |
-| ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 5 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 14 |
+| ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 6 |
 
 ---
 
@@ -85,7 +85,7 @@ AI 工具正在重新定义"开发者工具"的边界。
 - [039. Enterprise AI Agent Development Tools (n8n Report 2026)](ch03/039-enterprise-ai-agent-development-tools-n8n-report-2026)
 - [040. Activity-Focused Design](ch03/040-activity-focused-design)
 
-### ⭐⭐⭐⭐ 科学家（15 篇）
+### ⭐⭐⭐⭐ 科学家（14 篇）
 
 - [041. AI Native 公司 Dan Shipper 30 人做出 100 人产出：层次化思维 + SaaS 6 维能力框架](ch03/041-ai-native-dan-shipper-30-100-saas-6)
 - [042. YC CEO Garry Tan：200美元重构400万美元项目，AI Agent协作开发实践](ch03/042-yc-ceo-garry-tan-200-400-ai-agent)
@@ -101,13 +101,13 @@ AI 工具正在重新定义"开发者工具"的边界。
 - [052. Announcing Genkit Middleware](ch03/052-announcing-genkit-middleware)
 - [053. What Figma Made Visible: Component Model Bridging Design and Engineering](ch03/053-what-figma-made-visible-component-model-bridging-design-and)
 - [054. Hunk - Review-first Terminal Diff Viewer](ch03/054-hunk-review-first-terminal-diff-viewer)
-- [055. Microsoft Agent Framework 结构化输出：response_format 与 response.value](ch03/055-microsoft-agent-framework-response-format-response-value)
 
-### ⭐⭐⭐⭐⭐ 大师（5 篇）
+### ⭐⭐⭐⭐⭐ 大师（6 篇）
 
-- [056. AgentScope Java Harness Framework 2.0 — 企业级 Agent 分布式场景的 Harness 实现 (Java 2.0 重大升级)](ch03/056-agentscope-java-harness-framework-2-0-agent-harness)
-- [057. Hermes-Wiki 实战 — Obsidian + Hermes Agent 自动生长知识网络的 9 步搭建法](ch03/057-hermes-wiki-obsidian-hermes-agent-9)
-- [058. pi-mono — 模块化 AI Agent 构建平台（OpenClaw 执行引擎核心）](ch03/058-pi-mono-ai-agent-openclaw)
+- [055. AgentScope Java Harness Framework 2.0 — 企业级 Agent 分布式场景的 Harness 实现 (Java 2.0 重大升级)](ch03/055-agentscope-java-harness-framework-2-0-agent-harness)
+- [056. Hermes-Wiki 实战 — Obsidian + Hermes Agent 自动生长知识网络的 9 步搭建法](ch03/056-hermes-wiki-obsidian-hermes-agent-9)
+- [057. pi-mono — 模块化 AI Agent 构建平台（OpenClaw 执行引擎核心）](ch03/057-pi-mono-ai-agent-openclaw)
+- [058. Microsoft Agent Framework 结构化输出：response_format 与 response.value](ch03/058-microsoft-agent-framework-response-format-response-value)
 - [059. Hermes Agent 工具系统架构分析](ch03/059-hermes-agent)
 - [060. CLI-Anything](ch03/060-cli-anything)
 

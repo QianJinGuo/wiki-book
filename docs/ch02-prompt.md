@@ -10,9 +10,9 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 4 |
+| ⭐ 入门 | 零基础可读 | 3 |
 | ⭐⭐ 工程师 | 需编程基础 | 2 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 11 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 12 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 6 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 4 |
 
@@ -36,22 +36,22 @@
 
 ## 本章内容
 
-### ⭐ 入门（4 篇）
+### ⭐ 入门（3 篇）
 
-- [001. NetCanvas：用「可交互视觉拓扑」给运维 Agent 造一张外部工作记忆](ch02/001-netcanvas-agent)
-- [002. Hermes Agent 自进化机制源码解析](ch02/002-hermes-agent)
-- [003. Claude Code Prompt 与上下文 Harness 设计](ch02/003-claude-code-prompt-harness)
-- [004. Enrich your datasets with business context](ch02/004-enrich-your-datasets-with-business-context)
+- [001. Hermes Agent 自进化机制源码解析](ch02/001-hermes-agent)
+- [002. Claude Code Prompt 与上下文 Harness 设计](ch02/002-claude-code-prompt-harness)
+- [003. Enrich your datasets with business context](ch02/003-enrich-your-datasets-with-business-context)
 
 ### ⭐⭐ 工程师（2 篇）
 
-- [005. 新程Alpha认知模型：4B参数端侧部署，群体智能以小搏大比肩GPT-5.4](ch02/005-alpha-4b-gpt-5-4)
-- [006. AI 导购在 vivo 官网的落地实践](ch02/006-ai-vivo)
+- [004. 新程Alpha认知模型：4B参数端侧部署，群体智能以小搏大比肩GPT-5.4](ch02/004-alpha-4b-gpt-5-4)
+- [005. AI 导购在 vivo 官网的落地实践](ch02/005-ai-vivo)
 
-### ⭐⭐⭐ 专家（11 篇）
+### ⭐⭐⭐ 专家（12 篇）
 
-- [007. Using Claude](ch02/007-using-claude)
-- [008. Development environments for your cloud agents](ch02/008-development-environments-for-your-cloud-agents)
+- [006. Using Claude](ch02/006-using-claude)
+- [007. Development environments for your cloud agents](ch02/007-development-environments-for-your-cloud-agents)
+- [008. NetCanvas：用「可交互视觉拓扑」给运维 Agent 造一张外部工作记忆](ch02/008-netcanvas-agent)
 - [009. Claude Fable 5 提示词泄漏 — 1585 行 120K 字符的产品运行时控制平面与安全工程启示](ch02/009-claude-fable-5-1585-120k)
 - [010. AE 到可运行代码：大淘宝 AI 动画全链路方案（实践篇）](ch02/010-ae-ai)
 - [011. Superpowers 6.0 跑了 25 个实验才发现：prompt 里写的每一条\"不要\"，可能都在帮倒忙](ch02/011-superpowers-6-0-25-prompt)
