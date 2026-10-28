@@ -2,7 +2,7 @@
 
 > Scaling Law、涌现能力、世界模型、自我博弈
 
-> 本章收录 **13 篇**实体，按深度递增排列。
+> 本章收录 **14 篇**实体，按深度递增排列。
 
 ---
 
@@ -12,7 +12,7 @@
 |-------|------|------|
 | ⭐⭐ 工程师 | 需编程基础 | 1 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 4 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 6 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 7 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 2 |
 
 ---
@@ -46,19 +46,20 @@
 - [004. Count Anything - 文本引导的通用目标计数框架](ch19/004-count-anything)
 - [005. From AGI to ASI](ch19/005-from-agi-to-asi)
 
-### ⭐⭐⭐⭐ 科学家（6 篇）
+### ⭐⭐⭐⭐ 科学家（7 篇）
 
 - [006. PoS：用显式信念状态识别并打破 Belief Trapping](ch19/006-pos-belief-trapping)
 - [007. 推荐系统进入大模型时刻：昇腾 NPU 如何支撑千亿级生成式推荐落地](ch19/007-npu)
-- [008. NeurIPS 2026 Pangram 事件：闭源 AI 检测器用于学术 desk-reject 的方法论争议](ch19/008-neurips-2026-pangram-ai-desk-reject)
-- [009. Lean Software Scaling Laws](ch19/009-lean-software-scaling-laws)
-- [010. Recursive First Steps Toward Automated AI Research：SOTA 三基准自动化研究系统](ch19/010-recursive-first-steps-toward-automated-ai-research-sota)
-- [011. Qwen-AgentWorld: Language World Models for General Agents](ch19/011-qwen-agentworld-language-world-models-for-general-agents)
+- [008. Softmax 与交叉熵的隐藏精度 Bug：Precision Cliff 与官方修法（DeepMind 2026）](ch19/008-softmax-bug-precision-cliff-deepmind-2026)
+- [009. NeurIPS 2026 Pangram 事件：闭源 AI 检测器用于学术 desk-reject 的方法论争议](ch19/009-neurips-2026-pangram-ai-desk-reject)
+- [010. Lean Software Scaling Laws](ch19/010-lean-software-scaling-laws)
+- [011. Recursive First Steps Toward Automated AI Research：SOTA 三基准自动化研究系统](ch19/011-recursive-first-steps-toward-automated-ai-research-sota)
+- [012. Qwen-AgentWorld: Language World Models for General Agents](ch19/012-qwen-agentworld-language-world-models-for-general-agents)
 
 ### ⭐⭐⭐⭐⭐ 大师（2 篇）
 
-- [012. Visual Para-Thinker: 视觉并行思考框架 (arxiv 2602.13310)](ch19/012-visual-para-thinker-arxiv-2602-13310)
-- [013. Video Agent 范式迁移与算力-人才飞轮：Ethan He 从 Cosmos 到 Grok Imagine 的第一手洞见](ch19/013-video-agent-ethan-he-cosmos-grok-imagine)
+- [013. Visual Para-Thinker: 视觉并行思考框架 (arxiv 2602.13310)](ch19/013-visual-para-thinker-arxiv-2602-13310)
+- [014. Video Agent 范式迁移与算力-人才飞轮：Ethan He 从 Cosmos 到 Grok Imagine 的第一手洞见](ch19/014-video-agent-ethan-he-cosmos-grok-imagine)
 
 
 ---

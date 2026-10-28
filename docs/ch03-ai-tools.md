@@ -2,7 +2,7 @@
 
 > 2024-2026 AI 工具生态：从 IDE 到 Agent 平台
 
-> 本章收录 **60 篇**实体，按深度递增排列。
+> 本章收录 **61 篇**实体，按深度递增排列。
 
 ---
 
@@ -12,7 +12,7 @@
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 2 |
 | ⭐⭐ 工程师 | 需编程基础 | 6 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 32 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 33 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 14 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 6 |
 
@@ -38,8 +38,8 @@ AI 工具正在重新定义"开发者工具"的边界。
 
 ### ⭐ 入门（2 篇）
 
-- [001. Harness Engineering 详解：如何将 AI Coding 率提升至 90%](ch03/001-harness-engineering-ai-coding-90)
-- [002. Data Projects](ch03/002-data-projects)
+- [001. AI Native 回忆录：稳定性前端 S1 实践复盘](ch03/001-ai-native-s1)
+- [002. Harness Engineering 详解：如何将 AI Coding 率提升至 90%](ch03/002-harness-engineering-ai-coding-90)
 
 ### ⭐⭐ 工程师（6 篇）
 
@@ -50,7 +50,7 @@ AI 工具正在重新定义"开发者工具"的边界。
 - [007. 03—AI Skill 测试用例设计完整指南：8 种类型 + 断言自检，覆盖率从 40% 到 90%](ch03/007-03-ai-skill-8-40-90)
 - [008. A History of IDEs at Google](ch03/008-a-history-of-ides-at-google)
 
-### ⭐⭐⭐ 专家（32 篇）
+### ⭐⭐⭐ 专家（33 篇）
 
 - [009. Agent 时代的生产力悖论：协作成为新瓶颈](ch03/009-agent)
 - [010. NVIDIA GPU Kernel 翻译：Cute / Python / Julia](ch03/010-nvidia-gpu-kernel-cute-python-julia)
@@ -65,51 +65,52 @@ AI 工具正在重新定义"开发者工具"的边界。
 - [019. What the design-to-code loop unlocks](ch03/019-what-the-design-to-code-loop-unlocks)
 - [020. Choosing to Stay Human](ch03/020-choosing-to-stay-human)
 - [021. IC work is the new career flex](ch03/021-ic-work-is-the-new-career-flex)
-- [022. Obsidian + Claude Code 完整集成指南：五种知识管理策略](ch03/022-obsidian-claude-code)
-- [023. 龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](ch03/023-openclaw)
-- [024. Claude Code 实践：token 效率提高 71.5 倍的工作流](ch03/024-claude-code-token-71-5)
-- [025. Foundation Model Building Blocks](ch03/025-foundation-model-building-blocks)
-- [026. Unlocking asynchronicity in continuous batching](ch03/026-unlocking-asynchronicity-in-continuous-batching)
-- [027. Designing Small Is Harder than Designing Big - UX Magazine](ch03/027-designing-small-is-harder-than-designing-big-ux-magazine)
-- [028. Against \"Brain Damage\](ch03/028-against-brain-damage)
-- [029. 4 ways we’re using our MCP server at Figma](ch03/029-4-ways-we-re-using-our-mcp-server-at-figma)
-- [030. Turn repeated instructions into reusable skills in Lovable | Lovable](ch03/030-turn-repeated-instructions-into-reusable-skills-in-lovable)
-- [031. 10 Common Component Architecture Mistakes in Figma Design Systems](ch03/031-10-common-component-architecture-mistakes-in-figma-design-sy)
-- [032. SkillsUI](ch03/032-skillsui)
-- [033. Who Winning Enterprise AI Now](ch03/033-who-winning-enterprise-ai-now)
-- [034. AI-driven layoffs aren't making business sense](ch03/034-ai-driven-layoffs-aren-t-making-business-sense)
-- [035. Designers are a rare breed](ch03/035-designers-are-a-rare-breed)
-- [036. 10x Is a Lot](ch03/036-10x-is-a-lot)
-- [037. What is AX? John Maeda on Accessibility as Ability](ch03/037-what-is-ax-john-maeda-on-accessibility-as-ability)
-- [038. Form-Over-Function Mistakes, or How Not to Harm Your Business With a Pretty Interface.](ch03/038-form-over-function-mistakes-or-how-not-to-harm-your-busines)
-- [039. Enterprise AI Agent Development Tools (n8n Report 2026)](ch03/039-enterprise-ai-agent-development-tools-n8n-report-2026)
-- [040. Activity-Focused Design](ch03/040-activity-focused-design)
+- [022. Data Projects](ch03/022-data-projects)
+- [023. Obsidian + Claude Code 完整集成指南：五种知识管理策略](ch03/023-obsidian-claude-code)
+- [024. 龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](ch03/024-openclaw)
+- [025. Claude Code 实践：token 效率提高 71.5 倍的工作流](ch03/025-claude-code-token-71-5)
+- [026. Foundation Model Building Blocks](ch03/026-foundation-model-building-blocks)
+- [027. Unlocking asynchronicity in continuous batching](ch03/027-unlocking-asynchronicity-in-continuous-batching)
+- [028. Designing Small Is Harder than Designing Big - UX Magazine](ch03/028-designing-small-is-harder-than-designing-big-ux-magazine)
+- [029. Against \"Brain Damage\](ch03/029-against-brain-damage)
+- [030. 4 ways we’re using our MCP server at Figma](ch03/030-4-ways-we-re-using-our-mcp-server-at-figma)
+- [031. Turn repeated instructions into reusable skills in Lovable | Lovable](ch03/031-turn-repeated-instructions-into-reusable-skills-in-lovable)
+- [032. 10 Common Component Architecture Mistakes in Figma Design Systems](ch03/032-10-common-component-architecture-mistakes-in-figma-design-sy)
+- [033. SkillsUI](ch03/033-skillsui)
+- [034. Who Winning Enterprise AI Now](ch03/034-who-winning-enterprise-ai-now)
+- [035. AI-driven layoffs aren't making business sense](ch03/035-ai-driven-layoffs-aren-t-making-business-sense)
+- [036. Designers are a rare breed](ch03/036-designers-are-a-rare-breed)
+- [037. 10x Is a Lot](ch03/037-10x-is-a-lot)
+- [038. What is AX? John Maeda on Accessibility as Ability](ch03/038-what-is-ax-john-maeda-on-accessibility-as-ability)
+- [039. Form-Over-Function Mistakes, or How Not to Harm Your Business With a Pretty Interface.](ch03/039-form-over-function-mistakes-or-how-not-to-harm-your-busines)
+- [040. Enterprise AI Agent Development Tools (n8n Report 2026)](ch03/040-enterprise-ai-agent-development-tools-n8n-report-2026)
+- [041. Activity-Focused Design](ch03/041-activity-focused-design)
 
 ### ⭐⭐⭐⭐ 科学家（14 篇）
 
-- [041. AI Native 公司 Dan Shipper 30 人做出 100 人产出：层次化思维 + SaaS 6 维能力框架](ch03/041-ai-native-dan-shipper-30-100-saas-6)
-- [042. YC CEO Garry Tan：200美元重构400万美元项目，AI Agent协作开发实践](ch03/042-yc-ceo-garry-tan-200-400-ai-agent)
-- [043. Stripe Agent 经济基础设施 5 套图谱：MPP + Link + Projects + Metronome/Tempo + Radar](ch03/043-stripe-agent-5-mpp-link-projects-metronome-tempo)
-- [044. Obsidian + Claude Code 集成指南](ch03/044-obsidian-claude-code)
-- [045. gstack — AI协作开发工作流 & 复杂度棘轮](ch03/045-gstack-ai)
-- [046. Bedrock AgentCore Pool Model Multi-Tenancy](ch03/046-bedrock-agentcore-pool-model-multi-tenancy)
-- [047. 还在用WebSocket做LLM流式传输？FastAPI + SSE让你少踩一半坑](ch03/047-websocket-llm-fastapi-sse)
-- [048. Qoder Skill UI — Agent 与人类的协作界面层](ch03/048-qoder-skill-ui-agent)
-- [049. 花叔的 Claude Code 多 Agent 用量画像](ch03/049-claude-code-agent)
-- [050. Claude Code 命令完全指南](ch03/050-claude-code)
-- [051. Amazon Quick + Cisco Webex MCP 会议准备与跟进助手：meeting-lifecycle MCP 编排实战](ch03/051-amazon-quick-cisco-webex-mcp-meeting-lifecycle-mcp)
-- [052. Announcing Genkit Middleware](ch03/052-announcing-genkit-middleware)
-- [053. What Figma Made Visible: Component Model Bridging Design and Engineering](ch03/053-what-figma-made-visible-component-model-bridging-design-and)
-- [054. Hunk - Review-first Terminal Diff Viewer](ch03/054-hunk-review-first-terminal-diff-viewer)
+- [042. AI Native 公司 Dan Shipper 30 人做出 100 人产出：层次化思维 + SaaS 6 维能力框架](ch03/042-ai-native-dan-shipper-30-100-saas-6)
+- [043. YC CEO Garry Tan：200美元重构400万美元项目，AI Agent协作开发实践](ch03/043-yc-ceo-garry-tan-200-400-ai-agent)
+- [044. Stripe Agent 经济基础设施 5 套图谱：MPP + Link + Projects + Metronome/Tempo + Radar](ch03/044-stripe-agent-5-mpp-link-projects-metronome-tempo)
+- [045. Obsidian + Claude Code 集成指南](ch03/045-obsidian-claude-code)
+- [046. gstack — AI协作开发工作流 & 复杂度棘轮](ch03/046-gstack-ai)
+- [047. Bedrock AgentCore Pool Model Multi-Tenancy](ch03/047-bedrock-agentcore-pool-model-multi-tenancy)
+- [048. 还在用WebSocket做LLM流式传输？FastAPI + SSE让你少踩一半坑](ch03/048-websocket-llm-fastapi-sse)
+- [049. Qoder Skill UI — Agent 与人类的协作界面层](ch03/049-qoder-skill-ui-agent)
+- [050. 花叔的 Claude Code 多 Agent 用量画像](ch03/050-claude-code-agent)
+- [051. Claude Code 命令完全指南](ch03/051-claude-code)
+- [052. Amazon Quick + Cisco Webex MCP 会议准备与跟进助手：meeting-lifecycle MCP 编排实战](ch03/052-amazon-quick-cisco-webex-mcp-meeting-lifecycle-mcp)
+- [053. Announcing Genkit Middleware](ch03/053-announcing-genkit-middleware)
+- [054. What Figma Made Visible: Component Model Bridging Design and Engineering](ch03/054-what-figma-made-visible-component-model-bridging-design-and)
+- [055. Hunk - Review-first Terminal Diff Viewer](ch03/055-hunk-review-first-terminal-diff-viewer)
 
 ### ⭐⭐⭐⭐⭐ 大师（6 篇）
 
-- [055. AgentScope Java Harness Framework 2.0 — 企业级 Agent 分布式场景的 Harness 实现 (Java 2.0 重大升级)](ch03/055-agentscope-java-harness-framework-2-0-agent-harness)
-- [056. Hermes-Wiki 实战 — Obsidian + Hermes Agent 自动生长知识网络的 9 步搭建法](ch03/056-hermes-wiki-obsidian-hermes-agent-9)
-- [057. pi-mono — 模块化 AI Agent 构建平台（OpenClaw 执行引擎核心）](ch03/057-pi-mono-ai-agent-openclaw)
-- [058. Microsoft Agent Framework 结构化输出：response_format 与 response.value](ch03/058-microsoft-agent-framework-response-format-response-value)
-- [059. Hermes Agent 工具系统架构分析](ch03/059-hermes-agent)
-- [060. CLI-Anything](ch03/060-cli-anything)
+- [056. AgentScope Java Harness Framework 2.0 — 企业级 Agent 分布式场景的 Harness 实现 (Java 2.0 重大升级)](ch03/056-agentscope-java-harness-framework-2-0-agent-harness)
+- [057. Hermes-Wiki 实战 — Obsidian + Hermes Agent 自动生长知识网络的 9 步搭建法](ch03/057-hermes-wiki-obsidian-hermes-agent-9)
+- [058. pi-mono — 模块化 AI Agent 构建平台（OpenClaw 执行引擎核心）](ch03/058-pi-mono-ai-agent-openclaw)
+- [059. Microsoft Agent Framework 结构化输出：response_format 与 response.value](ch03/059-microsoft-agent-framework-response-format-response-value)
+- [060. Hermes Agent 工具系统架构分析](ch03/060-hermes-agent)
+- [061. CLI-Anything](ch03/061-cli-anything)
 
 
 ---

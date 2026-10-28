@@ -1,6 +1,6 @@
 # Claude Code 团队的代码审查流水线：当 agent 写 90% 的代码
 
-> 📊 Level ⭐ | 13.9KB
+> 📊 Level ⭐⭐ | 16.6KB
 
 Anthropic Claude Code 团队（Addy Osmani、Morgan Westlee Lunt、Qing Wang，2026-10-15）第一次完整公开了他们内部的 code review 流程：Claude 写了 Claude Code 自身约 90% 的代码，Anthropic monorepo 的每日变更量从 5 月的约 2,500 涨到 9 月的 30,000+，而 Claude Code 仓库在 6–9 月间合并的 PR 数量翻倍以上、需要 revert 的比例反而下降 40%+。他们的答案不是取消审查，而是**把「读 diff」这件事大部分交给机器，把人的时间留给机器做不好的判断，并把「快速撤销」做成一等公民**。
 
@@ -55,6 +55,16 @@ Anthropic Claude Code 团队（Addy Osmani、Morgan Westlee Lunt、Qing Wang，2
 ## 对 harness 工程的含义
 
 这篇一手材料把「harness 工程」里几个常被口号化的东西落到了可验证的机制上：**verification 前置**（先给 agent 可运行的验证物，再让它声称完成）、**审查即多层互补而非单门**、**审批权不可由 agent 代持且绑定到具体 commit**、**reviewer 自己要有 eval 集与噪声度量**、**收敛性（轮数上限 / 只审新 diff / 按类修复）是 agent 间互相喂活的必要刹车**。它同时印证了 [Verifier-Driven Development](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/verifier-driven-development.md) 的主线：真正决定产出质量的不是模型多强，而是「谁来验、验什么、验不过怎么办」这套制度设计。与 [Agentic Code Review](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentic-code-review-addyosmani.md)（同一作者更早的方法论文章）、[Baz 提升 AI code review 准确率的实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/how-baz-improved-its-ai-agent-code-review-accuracy-using-ama.md)、[百度 AICR](https://github.com/QianJinGuo/wiki-public/blob/main/entities/baidu-aicr-ai-code-review-ci-cd.md)、[Kitta 领域定制 code review agent](https://github.com/QianJinGuo/wiki-public/blob/main/entities/kitta-domain-customized-code-review-agent-aliyun-2026-10-09.md) 相比，本篇的独特价值在于**第一方、带指标、覆盖到审批与发布后半段**。
+
+## 第 2 来源补充：中文报道披露的运营指标（2026-10-19）
+
+新智元对同一篇 Anthropic 博客的报道补充了一批原文口径的**运营数字与两个反直觉细节**，可作为上述机制的量化底座：Claude Code 目前约 **90% 的代码由 Claude 自己写**，审查大部分也由 AI 完成；6 月到 9 月合入的 PR 翻了一倍多，**需回滚的反而少了四成多**；Anthropic 大仓库日合入量从 5 月约 2500 个涨到 9 月 3 万多个。团队明确把"人有没有看"降级为**不太准的替代指标**，真正要问的是"这次改动万一出事会怎么出，让最合适的那道检查去拦它"。
+
+三层机制的具体数字：PR 提交前 Claude 必须先交证据（测试结果、Build、界面改动附截图对设计稿）；提交后先过 AI 关——多个 Agent 分头找 Bug、另一拨 Agent 投票，票不够不发、纯风格灌水不发，**内部有实质性审查意见的 PR 占比从 16% 升到 54%**，每条意见带 Pre-existing 标签以区分"不是本次引入"；最后才是人，且**Agent 点的 Approve 不算数**，谁让 Agent 写的代码谁计入审批人，风险分级（低风险双绿即可合并／普通一人／关键两人）由分类器看改动本身判定而非看提交者。这被类比为航空与医疗的"瑞士奶酪模型"，底下还有 Feature Flag 与一键回滚兜底。
+
+两个反直觉细节值得单独记：**其一，双 Agent 互审会失控**——一个 CLI 的 PR 由 Agent 写、Agent 审，一晚上来回拉扯 **50 多轮**，最后由 PR 主人手动叫停；根因是 Agent 对可改可不改的 Nit 也较真，一改就多一个 commit，新 commit 又唤醒 review。事后用 Git Blame 回查发现 **59% 的问题在第一轮审查时就已经存在**，说明多轮并未带来新发现。**其二，修复是对"轮数"设硬闸**——改为最多三轮，过不去就让作者退回方案层面思考，PR 平均审查轮数从 **2.08 降到 1.32**，需审五轮以上的从约 1/11 降到不足 2%。
+
+人剩下的活也被重新定义：判断"该不该做"（外部提交仍保留人工审，只为有人能问一句"这事真有必要做吗"）、盯计费/自动更新器/CI 这类出事即重大事故的代码、以及会被当模板抄的架构。这与上文"审批权不可由 agent 代持"的结论形成闭环：**自动化抬高的是吞吐，人类的职责向风险定级与方向判断收敛**。
 
 ## 关联
 

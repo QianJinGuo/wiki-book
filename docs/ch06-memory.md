@@ -10,9 +10,8 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 2 |
 | ⭐⭐ 工程师 | 需编程基础 | 2 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 16 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 18 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 12 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 10 |
 
@@ -43,20 +42,17 @@ CPU 缓存的类比特别有启发性：L1（当前上下文）→ L2（会话�
 - [S03. Claude Code vs OpenClaw：两种记忆哲学](ch06/S03-cc-vs-openclaw-memory)
 - [S04. 上下文装不下时，怎么办？](ch06/S04-context-overflow-decision)
 
-### ⭐ 入门（2 篇）
-
-- [001. 从 Claude Code 记忆系统看四层 Agent 记忆方案，一个比一个夯](ch06/001-claude-code-agent)
-- [002. Claude Code Agent Memory Systems — L0~L3 四层记忆方案](ch06/002-claude-code-agent-memory-systems-l0-l3)
-
 ### ⭐⭐ 工程师（2 篇）
 
-- [003. ChatGPT默认模型大升级，GPT-5.5 Instant正式上线：新增记忆来源功能](ch06/003-chatgpt-gpt-5-5-instant)
-- [004. OpenChronicle：把AI记忆变成可复用的基础设施](ch06/004-openchronicle-ai)
+- [001. ChatGPT默认模型大升级，GPT-5.5 Instant正式上线：新增记忆来源功能](ch06/001-chatgpt-gpt-5-5-instant)
+- [002. OpenChronicle：把AI记忆变成可复用的基础设施](ch06/002-openchronicle-ai)
 
-### ⭐⭐⭐ 专家（16 篇）
+### ⭐⭐⭐ 专家（18 篇）
 
-- [005. AI 的形状：Jagged Frontier·Bottleneck·Reverse Salient（Mollick）](ch06/005-ai-jagged-frontier-bottleneck-reverse-salient-mollick)
-- [006. Hermes Agent 爱马仕的三级 memory，到底在记什么？](ch06/006-hermes-agent-memory)
+- [003. 从 Claude Code 记忆系统看四层 Agent 记忆方案，一个比一个夯](ch06/003-claude-code-agent)
+- [004. AI 的形状：Jagged Frontier·Bottleneck·Reverse Salient（Mollick）](ch06/004-ai-jagged-frontier-bottleneck-reverse-salient-mollick)
+- [005. Hermes Agent 爱马仕的三级 memory，到底在记什么？](ch06/005-hermes-agent-memory)
+- [006. Claude Code Agent Memory Systems — L0~L3 四层记忆方案](ch06/006-claude-code-agent-memory-systems-l0-l3)
 - [007. Google Open Knowledge Format (OKF) v0.1：AI 知识库通用格式标准 — 让 Markdown 知识库互通](ch06/007-google-open-knowledge-format-okf-v0-1-ai-markdown)
 - [008. Hermes Agent 记忆系统 vs OpenClaw 记忆观](ch06/008-hermes-agent-vs-openclaw)
 - [009. Agent 记忆注入实战：5 维框架（选什么/放哪里/怎么放/放多少/何时放）+ 4 前沿论文（MemGuide/STITCH/ACE/Lost in the Middle）](ch06/009-agent-5-4-memguide-stitch-ace-lost-in-the)

@@ -10,9 +10,9 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 10 |
+| ⭐ 入门 | 零基础可读 | 9 |
 | ⭐⭐ 工程师 | 需编程基础 | 17 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 93 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 94 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 45 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 18 |
 
@@ -36,7 +36,7 @@ Agent 在笔记本上跑得好不代表能在生产环境中跑得好。
 
 ## 本章内容
 
-### ⭐ 入门（10 篇）
+### ⭐ 入门（9 篇）
 
 - [001. 如何保护 EC2 实例存储（Instance Store）数据不丢失：场景分析与自动化防护实践](ch11/001-ec2-instance-store)
 - [002. AWS Glue 3.0 到 5.0 版本升级实践：中国区大规模 ETL 平台的迁移方法论](ch11/002-aws-glue-3-0-5-0-etl)
@@ -44,52 +44,52 @@ Agent 在笔记本上跑得好不代表能在生产环境中跑得好。
 - [004. Amazon VPC Regional NAT Gateway 与 AZ NAT Gateway 全面对比](ch11/004-amazon-vpc-regional-nat-gateway-az-nat-gateway)
 - [005. 构建 Amazon ElastiCache OSS Caches 慢查询监控方案](ch11/005-amazon-elasticache-oss-caches)
 - [006. AWS Bedrock Serverless 异步推理：SQS + Lambda](ch11/006-aws-bedrock-serverless-sqs-lambda)
-- [007. Data modeling patterns for Amazon Quick Sight multi-dataset relationships](ch11/007-data-modeling-patterns-for-amazon-quick-sight-multi-dataset)
-- [008. Build an AI-powered AWS support companion with Amazon Bedrock AgentCore](ch11/008-build-an-ai-powered-aws-support-companion-with-amazon-bedroc)
-- [009. Data modeling best practices for Amazon Quick Sight multi-dataset relationships](ch11/009-data-modeling-best-practices-for-amazon-quick-sight-multi-da)
-- [010. Cloudflare Turnstile requiring fingerprintable WebGL](ch11/010-cloudflare-turnstile-requiring-fingerprintable-webgl)
+- [007. Build an AI-powered AWS support companion with Amazon Bedrock AgentCore](ch11/007-build-an-ai-powered-aws-support-companion-with-amazon-bedroc)
+- [008. Data modeling best practices for Amazon Quick Sight multi-dataset relationships](ch11/008-data-modeling-best-practices-for-amazon-quick-sight-multi-da)
+- [009. Cloudflare Turnstile requiring fingerprintable WebGL](ch11/009-cloudflare-turnstile-requiring-fingerprintable-webgl)
 
 ### ⭐⭐ 工程师（17 篇）
 
-- [011. Introducing Claude apps gateway for AWS](ch11/011-introducing-claude-apps-gateway-for-aws)
-- [012. AWS 正式发布 Lambda MicroVMs：面向 AI 时代的无服务器安全代码执行环境](ch11/012-aws-lambda-microvms-ai)
-- [013. OpenClaw 在电商平台的应用场景探索 | 亚马逊AWS官方博客](ch11/013-openclaw-aws)
-- [014. AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](ch11/014-ai-agent-amazon-bedrock-agentcore-openclaw-serverl)
-- [015. 基于Bedrock AgentCore+Strands构建企业级智能搜索平台实践 | 亚马逊AWS官方博客](ch11/015-bedrock-agentcore-strands-aws)
-- [016. ingress-nginx已退役higress如何平滑替代](ch11/016-ingress-nginx-higress)
-- [017. 将 AWS DevOps Agent 智能运维能力延伸到中国区](ch11/017-aws-devops-agent)
-- [018. 基于Strands SDK 构建的企业智能问数解决方案实践 | 亚马逊AWS官方博客](ch11/018-strands-sdk-aws)
-- [019. 使用Amazon EMR Serverless Storage简化运维节省成本 | 亚马逊AWS官方博客](ch11/019-amazon-emr-serverless-storage-aws)
-- [020. AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇 | 亚马逊AWS官方博客](ch11/020-ai-agent-amazon-bedrock-agentcore-openclaw-serverl)
-- [021. 使用 Kiro 规范驱动开发加速数据质量建设 | 亚马逊AWS官方博客](ch11/021-kiro-aws)
-- [022. AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第三篇 | 亚马逊AWS官方博客](ch11/022-ai-agent-amazon-bedrock-agentcore-openclaw-serverl)
-- [023. 把 Kiro CLI 当作 Agent SDK：一键订阅即可构建你的Agent应用 | 亚马逊AWS官方博客](ch11/023-kiro-cli-agent-sdk-agent-aws)
-- [024. 记忆体系工程实战：从设计选型到生产落地 — 存储分层、诊断框架与架构模式](ch11/024-page-024)
-- [025. 用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](ch11/025-strands-agents-sdk-vqr-amazon-bedrock-aws)
-- [026. AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](ch11/026-ai-agent-amazon-bedrock-agentcore-openclaw-serverl)
-- [027. 使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊AWS官方博客](ch11/027-kiro-cli-agent-client-protocol-ai-aws)
+- [010. Introducing Claude apps gateway for AWS](ch11/010-introducing-claude-apps-gateway-for-aws)
+- [011. AWS 正式发布 Lambda MicroVMs：面向 AI 时代的无服务器安全代码执行环境](ch11/011-aws-lambda-microvms-ai)
+- [012. OpenClaw 在电商平台的应用场景探索 | 亚马逊AWS官方博客](ch11/012-openclaw-aws)
+- [013. AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第一篇 | 亚马逊AWS官方博客](ch11/013-ai-agent-amazon-bedrock-agentcore-openclaw-serverl)
+- [014. 基于Bedrock AgentCore+Strands构建企业级智能搜索平台实践 | 亚马逊AWS官方博客](ch11/014-bedrock-agentcore-strands-aws)
+- [015. ingress-nginx已退役higress如何平滑替代](ch11/015-ingress-nginx-higress)
+- [016. 将 AWS DevOps Agent 智能运维能力延伸到中国区](ch11/016-aws-devops-agent)
+- [017. 基于Strands SDK 构建的企业智能问数解决方案实践 | 亚马逊AWS官方博客](ch11/017-strands-sdk-aws)
+- [018. 使用Amazon EMR Serverless Storage简化运维节省成本 | 亚马逊AWS官方博客](ch11/018-amazon-emr-serverless-storage-aws)
+- [019. AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第六篇 | 亚马逊AWS官方博客](ch11/019-ai-agent-amazon-bedrock-agentcore-openclaw-serverl)
+- [020. 使用 Kiro 规范驱动开发加速数据质量建设 | 亚马逊AWS官方博客](ch11/020-kiro-aws)
+- [021. AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第三篇 | 亚马逊AWS官方博客](ch11/021-ai-agent-amazon-bedrock-agentcore-openclaw-serverl)
+- [022. 把 Kiro CLI 当作 Agent SDK：一键订阅即可构建你的Agent应用 | 亚马逊AWS官方博客](ch11/022-kiro-cli-agent-sdk-agent-aws)
+- [023. 记忆体系工程实战：从设计选型到生产落地 — 存储分层、诊断框架与架构模式](ch11/023-page-023)
+- [024. 用 Strands Agents SDK 构建确定性数据分析：语义层 + VQR 在 Amazon Bedrock 上的实践 | 亚马逊AWS官方博客](ch11/024-strands-agents-sdk-vqr-amazon-bedrock-aws)
+- [025. AI Agent 的迁移与现代化 — 使用 Amazon Bedrock AgentCore 将 OpenClaw 从单机改造为多租户 Serverless 架构 第四篇 | 亚马逊AWS官方博客](ch11/025-ai-agent-amazon-bedrock-agentcore-openclaw-serverl)
+- [026. 使用 Kiro CLI 和 Agent Client Protocol 构建飞书 AI 聊天机器人 | 亚马逊AWS官方博客](ch11/026-kiro-cli-agent-client-protocol-ai-aws)
 
-### ⭐⭐⭐ 专家（93 篇）
+### ⭐⭐⭐ 专家（94 篇）
 
-- [028. From silos to service topology: why Netflix built a real-time architecture](ch11/028-from-silos-to-service-topology-why-netflix-built-a-real-tim)
-- [029. Scaling Camera File Processing at Netflix](ch11/029-scaling-camera-file-processing-at-netflix)
-- [030. Dify集成Amazon Bedrock AgentCore Browser  实现更强大的信息获取和分析能力 | 亚马逊AWS官方博客](ch11/030-dify-amazon-bedrock-agentcore-browser-aws)
-- [031. 构建无服务器Kiro调度平台：用Kiro CLI + EventBridge + ECS Fargate实现定时AI任务](ch11/031-kiro-kiro-cli-eventbridge-ecs-fargate-ai)
-- [032. Amazon Quick ARNs: Cross-account migration and namespace permissions](ch11/032-amazon-quick-arns-cross-account-migration-and-namespace-per)
-- [033. LiteLLM 两度被投毒与 Higress 的 Wasm 沙箱防线：LLM 代理的爆炸半径设计](ch11/033-litellm-higress-wasm-llm)
-- [034. Netflix Metadata Service and Model Lifecycle Graph](ch11/034-netflix-metadata-service-and-model-lifecycle-graph)
-- [035. Evaluate your Amazon Nova Sonic voice agent at scale, no microphone required](ch11/035-evaluate-your-amazon-nova-sonic-voice-agent-at-scale-no-mic)
-- [036. 基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch11/036-prowler-genai-alt)
-- [037. Higress Qwen3Guard Wasm 插件：把 AI 内容安全做进网关数据面](ch11/037-higress-qwen3guard-wasm-ai)
-- [038. 从手动到智能：用 Kiro CLI + OpenSearch MCP 让每个人都成为 OpenSearch 专家 | 亚马逊AWS官方博客](ch11/038-kiro-cli-opensearch-mcp-opensearch-aws)
-- [039. End-to-end encrypted ML inference with Amazon SageMaker AI and FHE](ch11/039-end-to-end-encrypted-ml-inference-with-amazon-sagemaker-ai-a)
-- [040. AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch11/040-aws-amazon-bedrock-agentcore-aws-agent-2026-5)
-- [041. Amazon Bedrock AgentCore 为部署可信人工智能代理增加了质量评估和策略控制 | 亚马逊AWS官方博客](ch11/041-amazon-bedrock-agentcore-aws)
-- [042. TiDB Cloud — Agent-native 数据库与 Kimi K2.6 合作](ch11/042-tidb-cloud-agent-native-kimi-k2-6)
-- [043. OpenClaw + Amazon Bedrock + Amazon EKS 联动实践：打印机包装质检助手实战](ch11/043-openclaw-amazon-bedrock-amazon-eks)
-- [044. 基于 MIG 技术在 Amazon SageMaker HyperPod 上实现 GPU 虚拟化的最佳实践 | 亚马逊AWS官方博客](ch11/044-mig-amazon-sagemaker-hyperpod-gpu-aws)
-- [045. IBM Forward Deployed Units (FDU) AI 部署模型](ch11/045-ibm-forward-deployed-units-fdu-ai)
-- [046. Bedrock AgentCore 自定义代码评估器](ch11/046-bedrock-agentcore)
+- [027. From silos to service topology: why Netflix built a real-time architecture](ch11/027-from-silos-to-service-topology-why-netflix-built-a-real-tim)
+- [028. Scaling Camera File Processing at Netflix](ch11/028-scaling-camera-file-processing-at-netflix)
+- [029. Dify集成Amazon Bedrock AgentCore Browser  实现更强大的信息获取和分析能力 | 亚马逊AWS官方博客](ch11/029-dify-amazon-bedrock-agentcore-browser-aws)
+- [030. 构建无服务器Kiro调度平台：用Kiro CLI + EventBridge + ECS Fargate实现定时AI任务](ch11/030-kiro-kiro-cli-eventbridge-ecs-fargate-ai)
+- [031. Amazon Quick ARNs: Cross-account migration and namespace permissions](ch11/031-amazon-quick-arns-cross-account-migration-and-namespace-per)
+- [032. LiteLLM 两度被投毒与 Higress 的 Wasm 沙箱防线：LLM 代理的爆炸半径设计](ch11/032-litellm-higress-wasm-llm)
+- [033. Netflix Metadata Service and Model Lifecycle Graph](ch11/033-netflix-metadata-service-and-model-lifecycle-graph)
+- [034. Evaluate your Amazon Nova Sonic voice agent at scale, no microphone required](ch11/034-evaluate-your-amazon-nova-sonic-voice-agent-at-scale-no-mic)
+- [035. 基于 Prowler 与 GenAI 构建金融行业智能合规中枢（Alt）](ch11/035-prowler-genai-alt)
+- [036. Higress Qwen3Guard Wasm 插件：把 AI 内容安全做进网关数据面](ch11/036-higress-qwen3guard-wasm-ai)
+- [037. 从手动到智能：用 Kiro CLI + OpenSearch MCP 让每个人都成为 OpenSearch 专家 | 亚马逊AWS官方博客](ch11/037-kiro-cli-opensearch-mcp-opensearch-aws)
+- [038. End-to-end encrypted ML inference with Amazon SageMaker AI and FHE](ch11/038-end-to-end-encrypted-ml-inference-with-amazon-sagemaker-ai-a)
+- [039. AWS 一周综述：Amazon Bedrock AgentCore 付款、适用于 AWS 的 Agent 工具套件等（2026 年 5 月 11 日）](ch11/039-aws-amazon-bedrock-agentcore-aws-agent-2026-5)
+- [040. Amazon Bedrock AgentCore 为部署可信人工智能代理增加了质量评估和策略控制 | 亚马逊AWS官方博客](ch11/040-amazon-bedrock-agentcore-aws)
+- [041. TiDB Cloud — Agent-native 数据库与 Kimi K2.6 合作](ch11/041-tidb-cloud-agent-native-kimi-k2-6)
+- [042. OpenClaw + Amazon Bedrock + Amazon EKS 联动实践：打印机包装质检助手实战](ch11/042-openclaw-amazon-bedrock-amazon-eks)
+- [043. 基于 MIG 技术在 Amazon SageMaker HyperPod 上实现 GPU 虚拟化的最佳实践 | 亚马逊AWS官方博客](ch11/043-mig-amazon-sagemaker-hyperpod-gpu-aws)
+- [044. IBM Forward Deployed Units (FDU) AI 部署模型](ch11/044-ibm-forward-deployed-units-fdu-ai)
+- [045. Bedrock AgentCore 自定义代码评估器](ch11/045-bedrock-agentcore)
+- [046. Data modeling patterns for Amazon Quick Sight multi-dataset relationships](ch11/046-data-modeling-patterns-for-amazon-quick-sight-multi-dataset)
 - [047. 基于 Amazon EKS 和 Graviton 构建多租户 AI Agent 平台：OpenClaw on Kubernetes 实践 | 亚马逊AWS官方博客](ch11/047-amazon-eks-graviton-ai-agent-openclaw-on-kubernetes)
 - [048. GitHub + AWS 多云转折：AI 编码激增 14B commits 压垮 GitHub，Microsoft 跨云买 AWS 容量](ch11/048-github-aws-ai-14b-commits-github-microsoft-aws)
 - [049. 当 OpenClaw 学会”团队记忆”：一个面向多客户服务的企业级共享记忆系统设计 | 亚马逊AWS官方博客](ch11/049-openclaw-aws)

@@ -10,9 +10,9 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 3 |
+| ⭐ 入门 | 零基础可读 | 2 |
 | ⭐⭐ 工程师 | 需编程基础 | 5 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 26 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 27 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 19 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 5 |
 
@@ -36,24 +36,24 @@ AI Agent 正在获得越来越多的权限——执行代码、访问数据库�
 
 ## 本章内容
 
-### ⭐ 入门（3 篇）
+### ⭐ 入门（2 篇）
 
 - [001. Malware crew TeamPCP open-sources its Shai-Hulud worm on GitHub](ch12/001-malware-crew-teampcp-open-sources-its-shai-hulud-worm-on-git)
 - [002. peerd: 浏览器原生的 AI Agent Harness](ch12/002-peerd-ai-agent-harness)
-- [003. Jane Street — 形式化方法与编程的未来](ch12/003-jane-street)
 
 ### ⭐⭐ 工程师（5 篇）
 
+- [003. Jane Street — 形式化方法与编程的未来](ch12/003-jane-street)
 - [004. OpenAI launches Daybreak to combat cyber threats](ch12/004-openai-launches-daybreak-to-combat-cyber-threats)
 - [005. Grafana GitHub Token Breach Led to Codebase Download and Extortion Attempt](ch12/005-grafana-github-token-breach-led-to-codebase-download-and-ext)
 - [006. JetBrains Marketplace Ecosystem Security Update: Malicious AI Plugins](ch12/006-jetbrains-marketplace-ecosystem-security-update-malicious-a)
-- [007. Unlocking the Cloudflare app ecosystem with OAuth for all](ch12/007-unlocking-the-cloudflare-app-ecosystem-with-oauth-for-all)
-- [008. LLMShare: using shared chatbot pages to distribute malware](ch12/008-llmshare-using-shared-chatbot-pages-to-distribute-malware)
+- [007. LLMShare: using shared chatbot pages to distribute malware](ch12/007-llmshare-using-shared-chatbot-pages-to-distribute-malware)
 
-### ⭐⭐⭐ 专家（26 篇）
+### ⭐⭐⭐ 专家（27 篇）
 
-- [009. 飞来汇借助 AWS Security Agent 构建跨境支付应用的智能安全防线](ch12/009-aws-security-agent)
-- [010. CISA urges critical infrastructure firms to 'fortify' before it's too late | Cybersecurity Dive](ch12/010-cisa-urges-critical-infrastructure-firms-to-fortify-before)
+- [008. 飞来汇借助 AWS Security Agent 构建跨境支付应用的智能安全防线](ch12/008-aws-security-agent)
+- [009. CISA urges critical infrastructure firms to 'fortify' before it's too late | Cybersecurity Dive](ch12/009-cisa-urges-critical-infrastructure-firms-to-fortify-before)
+- [010. Unlocking the Cloudflare app ecosystem with OAuth for all](ch12/010-unlocking-the-cloudflare-app-ecosystem-with-oauth-for-all)
 - [011. Disgruntled researcher releases two more Microsoft zero-days](ch12/011-disgruntled-researcher-releases-two-more-microsoft-zero-days)
 - [012. Where OpenClaw Security Is Heading — OpenClaw Blog](ch12/012-where-openclaw-security-is-heading-openclaw-blog)
 - [013. Adversaries Leverage AI for Vulnerability Exploitation, Augmented Operations, and Initial Access](ch12/013-adversaries-leverage-ai-for-vulnerability-exploitation-augm)

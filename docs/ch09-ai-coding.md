@@ -10,8 +10,8 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 7 |
-| ⭐⭐ 工程师 | 需编程基础 | 10 |
+| ⭐ 入门 | 零基础可读 | 6 |
+| ⭐⭐ 工程师 | 需编程基础 | 11 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 41 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 35 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 17 |
@@ -36,18 +36,18 @@ AI 编程是 Agent 最早成熟的品类，也是理解 Agent 工程的最佳窗
 
 ## 本章内容
 
-### ⭐ 入门（7 篇）
+### ⭐ 入门（6 篇）
 
-- [001. Claude Code 团队的代码审查流水线：当 agent 写 90% 的代码](ch09/001-claude-code-agent-90)
-- [002. Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](ch09/002-claude-code-anthropic)
-- [003. Harness Engineering - 让 Coding Agent 可靠完成长程任务](ch09/003-harness-engineering-coding-agent)
-- [004. The Data Canary](ch09/004-the-data-canary)
-- [005. CLAUDE.md 12 条规则：Karpathy 扩展模板](ch09/005-claude-md-12-karpathy)
-- [006. Loop 的产品视角——项目中心从人挪到 Agent 系统](ch09/006-loop-agent)
-- [007. 用 Kiro 构建行业专业软件：Spec vs Vibe Coding 的分层结论](ch09/007-kiro-spec-vs-vibe-coding)
+- [001. Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](ch09/001-claude-code-anthropic)
+- [002. Harness Engineering - 让 Coding Agent 可靠完成长程任务](ch09/002-harness-engineering-coding-agent)
+- [003. The Data Canary](ch09/003-the-data-canary)
+- [004. CLAUDE.md 12 条规则：Karpathy 扩展模板](ch09/004-claude-md-12-karpathy)
+- [005. Loop 的产品视角——项目中心从人挪到 Agent 系统](ch09/005-loop-agent)
+- [006. 用 Kiro 构建行业专业软件：Spec vs Vibe Coding 的分层结论](ch09/006-kiro-spec-vs-vibe-coding)
 
-### ⭐⭐ 工程师（10 篇）
+### ⭐⭐ 工程师（11 篇）
 
+- [007. Claude Code 团队的代码审查流水线：当 agent 写 90% 的代码](ch09/007-claude-code-agent-90)
 - [008. Kitta：领域深度定制的 Code Review Agent（阿里云龙蜥社区实践）](ch09/008-kitta-code-review-agent)
 - [009. Claude Dispatch + 接口力量：AI 从 Chatbot 到 Agent Interface 的转变](ch09/009-claude-dispatch-ai-chatbot-agent-interface)
 - [010. Notes Inside China AI Labs Lambert](ch09/010-notes-inside-china-ai-labs-lambert)
