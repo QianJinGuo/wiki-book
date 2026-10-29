@@ -2,7 +2,7 @@
 
 > 最成熟的 Agent 品类：Claude Code、OpenClaw、Codex 深度拆解
 
-> 本章收录 **110 篇**实体，按深度递增排列。
+> 本章收录 **111 篇**实体，按深度递增排列。
 
 ---
 
@@ -13,7 +13,7 @@
 | ⭐ 入门 | 零基础可读 | 6 |
 | ⭐⭐ 工程师 | 需编程基础 | 11 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 41 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 35 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 36 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 17 |
 
 ---
@@ -103,63 +103,64 @@ AI 编程是 Agent 最早成熟的品类，也是理解 Agent 工程的最佳窗
 - [057. Codex can now control other desktop devices via Computer Use](ch09/057-codex-can-now-control-other-desktop-devices-via-computer-use)
 - [058. Dockerless: 免环境补丁验证器](ch09/058-dockerless)
 
-### ⭐⭐⭐⭐ 科学家（35 篇）
+### ⭐⭐⭐⭐ 科学家（36 篇）
 
 - [059. 小米 MiMo Code — 长程编程 Agent 三大主线（计算/记忆/进化）+ 与 Claude Code 工程分化](ch09/059-mimo-code-agent-claude-code)
 - [060. AI 驱动的跨云网络搭建：用 Claude Code 和 Kiro CLI 实现 AWS-腾讯云 IPSec VPN 双隧道互联 | 亚马逊AWS官方博客](ch09/060-ai-claude-code-kiro-cli-aws-ipsec-vpn-aws)
-- [061. AI Coding Guide Tmall Deep Dive](ch09/061-ai-coding-guide-tmall-deep-dive)
-- [062. How Claude Code works in large codebases: Best practices and where to start](ch09/062-how-claude-code-works-in-large-codebases-best-practices-and)
-- [063. OpenAI Symphony：Linear 即 Codex Agent 控制平面](ch09/063-openai-symphony-linear-codex-agent)
-- [064. AI 编程智能体的质量防线：5 个代码质量控制机制（反馈传感器 / 语义评估 / 重构边界 / 来源追溯 / 智能体攻击面清单）](ch09/064-ai-5)
-- [065. Ethan Mollick: Claude Code and What Comes Next (Practitioner View)](ch09/065-ethan-mollick-claude-code-and-what-comes-next-practitioner)
-- [066. Thought-Aligner：智能体行为安全新范式——可插拔思维校正层（ICML 2026）](ch09/066-thought-aligner-icml-2026)
-- [067. CLAUDE.md 规则从 Karpathy 的 4 条增加到 12 条](ch09/067-claude-md-karpathy-4-12)
-- [068. AutoResearch：多 Agent 自动化软件开发](ch09/068-autoresearch-agent)
-- [069. HTTP/2 HPACK Bomb — Codex Discovered AI-Discovered DoS](ch09/069-http-2-hpack-bomb-codex-discovered-ai-discovered-dos)
-- [070. gpt-54-烧完额度后我把七家国产-ai-公司-coding-plan-对比了一遍想不到最应该买的竟然是这家](ch09/070-gpt-54-ai-coding-plan)
-- [071. Matt Van Horn 的 22 个 Claude Code 黑客技巧：让 AI 写 plan.md 但不读 plan.md](ch09/071-matt-van-horn-22-claude-code-ai-plan-md-plan-md)
-- [072. Anthropic Coding Agent 社会科学家采用调查](ch09/072-anthropic-coding-agent)
-- [073. Claude Code 18个隐藏设置](ch09/073-claude-code-18)
-- [074. FastContext（微软开源 Coding Agent 仓库探索子代理）](ch09/074-fastcontext-coding-agent)
-- [075. Claude Code 为什么会忽略指令：四类失效原因 + 五层规则框架](ch09/075-claude-code)
-- [076. Superpowers 深度解读（2）：Rule/Gate/Hook 与 Iron Law 方法论](ch09/076-superpowers-2-rule-gate-hook-iron-law)
-- [077. Chromium AI Coding 开发体系](ch09/077-chromium-ai-coding)
-- [078. Code as Agent Harness 综述](ch09/078-code-as-agent-harness)
-- [079. Claw-SWE-Bench：首个独立测量Harness对编程Agent影响的基准](ch09/079-claw-swe-bench-harness-agent)
-- [080. Codex Goal Six Hour Run](ch09/080-codex-goal-six-hour-run)
-- [081. Claude Code 七种自定义方法：官方全景指南](ch09/081-claude-code)
-- [082. AI Coding Agent Token 成本控制五层模型](ch09/082-ai-coding-agent-token)
-- [083. MiniMax M3 开源 Frontier 模型](ch09/083-minimax-m3-frontier)
-- [084. Claude Code Routines：从工具到队友的主动 Agent 模式](ch09/084-claude-code-routines-agent)
-- [085. OpenAI秘密矩阵曝光：Codex将所有设备连成超级电脑](ch09/085-openai-codex)
-- [086. Spec-Driven AI 编程半年实战 — 有损管道、三工具比较与三大认知陷阱](ch09/086-spec-driven-ai)
-- [087. Claude Code 集成其他工具指南](ch09/087-claude-code)
-- [088. 老代码克星：36k Star的 AI 神器，跑一条命令就把项目结构整明白了！](ch09/088-36k-star-ai)
-- [089. An Opinionated Guide to Using AI Right Now](ch09/089-an-opinionated-guide-to-using-ai-right-now)
-- [090. Codex 5.21 更新：AI 编程助手开始变成电脑工作代理](ch09/090-codex-5-21-ai)
-- [091. Claude Code Dynamic Workflows 实战模式与构建技巧](ch09/091-claude-code-dynamic-workflows)
-- [092. 百度网盘主端 FE AICR：AI Code Review 准入实践](ch09/092-fe-aicr-ai-code-review)
-- [093. Reward hacking is swamping model intelligence gains](ch09/093-reward-hacking-is-swamping-model-intelligence-gains)
+- [061. 在「不能出错」的系统里用 AI Coding：四层证据、红绿闭环与分层授权](ch09/061-ai-coding)
+- [062. AI Coding Guide Tmall Deep Dive](ch09/062-ai-coding-guide-tmall-deep-dive)
+- [063. How Claude Code works in large codebases: Best practices and where to start](ch09/063-how-claude-code-works-in-large-codebases-best-practices-and)
+- [064. OpenAI Symphony：Linear 即 Codex Agent 控制平面](ch09/064-openai-symphony-linear-codex-agent)
+- [065. AI 编程智能体的质量防线：5 个代码质量控制机制（反馈传感器 / 语义评估 / 重构边界 / 来源追溯 / 智能体攻击面清单）](ch09/065-ai-5)
+- [066. Ethan Mollick: Claude Code and What Comes Next (Practitioner View)](ch09/066-ethan-mollick-claude-code-and-what-comes-next-practitioner)
+- [067. Thought-Aligner：智能体行为安全新范式——可插拔思维校正层（ICML 2026）](ch09/067-thought-aligner-icml-2026)
+- [068. CLAUDE.md 规则从 Karpathy 的 4 条增加到 12 条](ch09/068-claude-md-karpathy-4-12)
+- [069. AutoResearch：多 Agent 自动化软件开发](ch09/069-autoresearch-agent)
+- [070. HTTP/2 HPACK Bomb — Codex Discovered AI-Discovered DoS](ch09/070-http-2-hpack-bomb-codex-discovered-ai-discovered-dos)
+- [071. gpt-54-烧完额度后我把七家国产-ai-公司-coding-plan-对比了一遍想不到最应该买的竟然是这家](ch09/071-gpt-54-ai-coding-plan)
+- [072. Matt Van Horn 的 22 个 Claude Code 黑客技巧：让 AI 写 plan.md 但不读 plan.md](ch09/072-matt-van-horn-22-claude-code-ai-plan-md-plan-md)
+- [073. Anthropic Coding Agent 社会科学家采用调查](ch09/073-anthropic-coding-agent)
+- [074. Claude Code 18个隐藏设置](ch09/074-claude-code-18)
+- [075. FastContext（微软开源 Coding Agent 仓库探索子代理）](ch09/075-fastcontext-coding-agent)
+- [076. Claude Code 为什么会忽略指令：四类失效原因 + 五层规则框架](ch09/076-claude-code)
+- [077. Superpowers 深度解读（2）：Rule/Gate/Hook 与 Iron Law 方法论](ch09/077-superpowers-2-rule-gate-hook-iron-law)
+- [078. Chromium AI Coding 开发体系](ch09/078-chromium-ai-coding)
+- [079. Code as Agent Harness 综述](ch09/079-code-as-agent-harness)
+- [080. Claw-SWE-Bench：首个独立测量Harness对编程Agent影响的基准](ch09/080-claw-swe-bench-harness-agent)
+- [081. Codex Goal Six Hour Run](ch09/081-codex-goal-six-hour-run)
+- [082. Claude Code 七种自定义方法：官方全景指南](ch09/082-claude-code)
+- [083. AI Coding Agent Token 成本控制五层模型](ch09/083-ai-coding-agent-token)
+- [084. MiniMax M3 开源 Frontier 模型](ch09/084-minimax-m3-frontier)
+- [085. Claude Code Routines：从工具到队友的主动 Agent 模式](ch09/085-claude-code-routines-agent)
+- [086. OpenAI秘密矩阵曝光：Codex将所有设备连成超级电脑](ch09/086-openai-codex)
+- [087. Spec-Driven AI 编程半年实战 — 有损管道、三工具比较与三大认知陷阱](ch09/087-spec-driven-ai)
+- [088. Claude Code 集成其他工具指南](ch09/088-claude-code)
+- [089. 老代码克星：36k Star的 AI 神器，跑一条命令就把项目结构整明白了！](ch09/089-36k-star-ai)
+- [090. An Opinionated Guide to Using AI Right Now](ch09/090-an-opinionated-guide-to-using-ai-right-now)
+- [091. Codex 5.21 更新：AI 编程助手开始变成电脑工作代理](ch09/091-codex-5-21-ai)
+- [092. Claude Code Dynamic Workflows 实战模式与构建技巧](ch09/092-claude-code-dynamic-workflows)
+- [093. 百度网盘主端 FE AICR：AI Code Review 准入实践](ch09/093-fe-aicr-ai-code-review)
+- [094. Reward hacking is swamping model intelligence gains](ch09/094-reward-hacking-is-swamping-model-intelligence-gains)
 
 ### ⭐⭐⭐⭐⭐ 大师（17 篇）
 
-- [094. DeepSeek Code Harness](ch09/094-deepseek-code-harness)
-- [095. Anthropic 内部 95% 数据分析自动化：分析 Agent 技术栈 + Skill 框架（21%→95% 准确率）](ch09/095-anthropic-95-agent-skill-21-95)
-- [096. 让 Coding Agent 从黑盒到透明：阿里云 Agent 观测审计数据采集实践（LoongSuite Pilot 端侧平台 + 3 类 Agent 形态 + 4 大观测审计能力）](ch09/096-coding-agent-agent-loongsuite-pilot-3-agent)
-- [097. Claude Code 在大型代码库中的实战经验：从哪里入手？怎么做对？](ch09/097-claude-code)
-- [098. 业务 Agent 增强层架构：复用通用 Agent 基座，把业务能力做成可验证增强层](ch09/098-agent-agent)
-- [099. Claude Code 一周年回顾：Boris Cherny + Cat Wu 的完整时间线](ch09/099-claude-code-boris-cherny-cat-wu)
-- [100. Gene/GEP — EvoMap×清华 提出的「策略基因」经验对象框架（arXiv 2604.15097）](ch09/100-gene-gep-evomap-arxiv-2604-15097)
-- [101. Claude Code 从 Demo 到产线 · 企业 Harness 工程化的 8 道关卡（黄佳/咖哥 CSDN）](ch09/101-claude-code-demo-harness-8-csdn)
-- [102. AgentMemory：Coding Agent 本地记忆系统](ch09/102-agentmemory-coding-agent)
-- [103. 采用 AI 编码智能体的六条经验](ch09/103-ai)
-- [104. 基于浏览器请求录制与AI代码生成的E2E接口自动化测试实践](ch09/104-ai-e2e)
-- [105. 天猫新品营销技术团队AI编码实战指南（上）](ch09/105-ai)
-- [106. Claude Code 性能基准评测](ch09/106-claude-code)
-- [107. Claude Code Openclaw Usage Ettin](ch09/107-claude-code-openclaw-usage-ettin)
-- [108. Claude Code Agent Teams 架构分析](ch09/108-claude-code-agent-teams)
-- [109. Codex /goal 源码深度解析：状态表 + 续跑条件 + 预算账本](ch09/109-codex-goal)
-- [110. Codex 五层架构：记忆/知识/护栏/委派/分发](ch09/110-codex)
+- [095. DeepSeek Code Harness](ch09/095-deepseek-code-harness)
+- [096. Anthropic 内部 95% 数据分析自动化：分析 Agent 技术栈 + Skill 框架（21%→95% 准确率）](ch09/096-anthropic-95-agent-skill-21-95)
+- [097. 让 Coding Agent 从黑盒到透明：阿里云 Agent 观测审计数据采集实践（LoongSuite Pilot 端侧平台 + 3 类 Agent 形态 + 4 大观测审计能力）](ch09/097-coding-agent-agent-loongsuite-pilot-3-agent)
+- [098. Claude Code 在大型代码库中的实战经验：从哪里入手？怎么做对？](ch09/098-claude-code)
+- [099. 业务 Agent 增强层架构：复用通用 Agent 基座，把业务能力做成可验证增强层](ch09/099-agent-agent)
+- [100. Claude Code 一周年回顾：Boris Cherny + Cat Wu 的完整时间线](ch09/100-claude-code-boris-cherny-cat-wu)
+- [101. Gene/GEP — EvoMap×清华 提出的「策略基因」经验对象框架（arXiv 2604.15097）](ch09/101-gene-gep-evomap-arxiv-2604-15097)
+- [102. Claude Code 从 Demo 到产线 · 企业 Harness 工程化的 8 道关卡（黄佳/咖哥 CSDN）](ch09/102-claude-code-demo-harness-8-csdn)
+- [103. AgentMemory：Coding Agent 本地记忆系统](ch09/103-agentmemory-coding-agent)
+- [104. 采用 AI 编码智能体的六条经验](ch09/104-ai)
+- [105. 基于浏览器请求录制与AI代码生成的E2E接口自动化测试实践](ch09/105-ai-e2e)
+- [106. 天猫新品营销技术团队AI编码实战指南（上）](ch09/106-ai)
+- [107. Claude Code 性能基准评测](ch09/107-claude-code)
+- [108. Claude Code Openclaw Usage Ettin](ch09/108-claude-code-openclaw-usage-ettin)
+- [109. Claude Code Agent Teams 架构分析](ch09/109-claude-code-agent-teams)
+- [110. Codex /goal 源码深度解析：状态表 + 续跑条件 + 预算账本](ch09/110-codex-goal)
+- [111. Codex 五层架构：记忆/知识/护栏/委派/分发](ch09/111-codex)
 
 
 ---

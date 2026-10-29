@@ -227,7 +227,7 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 
 | 主题 | entity | raw |
 |---|---|---|
-| Anthropic 95% 数据分析自动化 | [Anthropic 95Pct Data Analysis Skill Stack Architecture](ch09/095-anthropic-95-agent-skill-21-95.html) | [anthropic-95pct-data-analysis-skill-stack-architecture.md](https://mp.weixin.qq.com/s/Y0DoUjK_eHdDNwLLDHcJTg) |
+| Anthropic 95% 数据分析自动化 | [Anthropic 95Pct Data Analysis Skill Stack Architecture](ch09/096-anthropic-95-agent-skill-21-95.html) | [anthropic-95pct-data-analysis-skill-stack-architecture.md](https://mp.weixin.qq.com/s/Y0DoUjK_eHdDNwLLDHcJTg) |
 | Data Agent 产品设计 | [Data Agent Product Design](ch04-agent-core.html) | [volcengine-data-agent-product-overview.md](https://www.volcengine.com/docs/85637/1563626?lang=zh) |
 | 智能问数 Agent | [Data Agent Product Design](ch04-agent-core.html) | [volcengine-data-agent-intelligent-query-agent.md](https://www.volcengine.com/docs/85637/1544066?lang=zh) |
 | 营销策略 Agent | [Data Agent Product Design](ch04-agent-core.html) | [volcengine-data-agent-marketing-strategy-agent.md](https://www.volcengine.com/docs/85637/1587862?lang=zh) |
@@ -355,7 +355,7 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 | LoongSuite GenAI 可观测语义规范 | [阿里巴巴蚂蚁 Loongsuite Genai 可观测语义规范从统一数据语言到规模化落地](ch09-ai-coding.html) | [阿里巴巴蚂蚁-loongsuite-genai-可观测语义规范从统一数据语言到规模化落地.md](https://mp.weixin.qq.com/s/X6lh1LuOJgbkJQ8t0Zky1g) |
 | Agent-EvalKit | [Agent Evalkit Aws Opensource Cli Agent Eval Toolkit](ch11/127-agent-evalkit-aws-cli-agent.html) | [evaluate-ai-agents-systematically-with-agent-evalkit.md](https://aws.amazon.com/blogs/machine-learning/evaluate-ai-agents-systematically-with-agent-evalkit) |
 | AgentEval YAML | [Agent Eval Wallezhang Yaml Driven Agent Evaluation Framework](ch04/393-agenteval-yaml-agent.html) | 先读实体页：`docs/ch04/141-agenteval-yaml-agent.md` |
-| Claw-SWE-Bench | [Claw Swe Bench Harness Evaluation Benchmark Tokenrhythm](ch09/079-claw-swe-bench-harness-agent.html) | [claw-swe-bench-harness-evaluation-benchmark-tokenrhythm.md](https://mp.weixin.qq.com/s/iCty7MvtQDZzJNhV9nCZIA) |
+| Claw-SWE-Bench | [Claw Swe Bench Harness Evaluation Benchmark Tokenrhythm](ch09/080-claw-swe-bench-harness-agent.html) | [claw-swe-bench-harness-evaluation-benchmark-tokenrhythm.md](https://mp.weixin.qq.com/s/iCty7MvtQDZzJNhV9nCZIA) |
 ### 5.5 专家期系统设计题库
 
 你必须能白板讲清楚以下系统：
@@ -490,7 +490,7 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 
 | 主题 | entity | raw |
 |---|---|---|
-| Vibe Design ≠ Vibe Coding | [Impeccable Vibe Design Philosophy Anomaly](ch01/474-impeccable-ai-33-4k-star.html) | [impeccable-anomaly-vibe-design-vs-vibe-coding.md](https://mp.weixin.qq.com/s/4_9q9TrkVyE5a4jCfTrNgg) |
+| Vibe Design ≠ Vibe Coding | [Impeccable Vibe Design Philosophy Anomaly](ch01/475-impeccable-ai-33-4k-star.html) | [impeccable-anomaly-vibe-design-vs-vibe-coding.md](https://mp.weixin.qq.com/s/4_9q9TrkVyE5a4jCfTrNgg) |
 | Data Agent 产品设计 | [Data Agent Product Design](ch04-agent-core.html) | [volcengine-data-agent-product-overview.md](https://www.volcengine.com/docs/85637/1563626?lang=zh) |
 | 下一代企业架构：系统 CLI 化、流程 Skill 化、员工 Agent 化 | [Enterprise Next Gen Architecture System Cli Process Skill Employee Agent Zhan](ch04-agent-core.html) | [enterprise-next-gen-architecture-system-cli-process-skill-employee-agent-zhan.md](https://mp.weixin.qq.com/s/759TfOdXch5zWrT4Yo42xA) |
 | James Cowling AI 时代工程哲学 | [James Cowling Engineering Philosophy Ai Era](ch09-ai-coding.html) | [james-cowling-engineering-philosophy-ai-era.md](https://mp.weixin.qq.com/s/ZKfpdzXxN2fqANN-Nzkcjw) |
