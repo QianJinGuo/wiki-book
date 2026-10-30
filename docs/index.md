@@ -20,11 +20,11 @@
 
   <div class="home-stats">
 
-    <div class="home-stats__item"><span class="home-stats__num">1,740</span><span class="home-stats__label">编撰条目</span></div>
+    <div class="home-stats__item"><span class="home-stats__num">1,743</span><span class="home-stats__label">编撰条目</span></div>
 
     <div class="home-stats__item"><span class="home-stats__num">20 章 · 5 篇</span><span class="home-stats__label">全书结构</span></div>
 
-    <div class="home-stats__item"><span class="home-stats__num">4,662</span><span class="home-stats__label">一手原文</span></div>
+    <div class="home-stats__item"><span class="home-stats__num">4,666</span><span class="home-stats__label">一手原文</span></div>
 
     <div class="home-stats__item"><span class="home-stats__num">★ × 5</span><span class="home-stats__label">难度分级</span></div>
 
@@ -44,11 +44,11 @@
 
 <a class="home-part" href="#part-2"><span class="home-part__no">第二篇</span><span class="home-part__name">工程师篇</span><span class="home-part__pos">构建 AI 应用</span><span class="home-part__count">786 篇 · 7 章</span></a>
 
-<a class="home-part" href="#part-3"><span class="home-part__no">第三篇</span><span class="home-part__name">专家篇</span><span class="home-part__pos">深入系统架构</span><span class="home-part__count">281 篇 · 4 章</span></a>
+<a class="home-part" href="#part-3"><span class="home-part__no">第三篇</span><span class="home-part__name">专家篇</span><span class="home-part__pos">深入系统架构</span><span class="home-part__count">283 篇 · 4 章</span></a>
 
 <a class="home-part" href="#part-4"><span class="home-part__no">第四篇</span><span class="home-part__name">科学家篇</span><span class="home-part__pos">研究与创新</span><span class="home-part__count">66 篇 · 4 章</span></a>
 
-<a class="home-part" href="#part-5"><span class="home-part__no">第五篇</span><span class="home-part__name">大师篇</span><span class="home-part__pos">哲学、安全与未来</span><span class="home-part__count">28 篇 · 2 章</span></a>
+<a class="home-part" href="#part-5"><span class="home-part__no">第五篇</span><span class="home-part__name">大师篇</span><span class="home-part__pos">哲学、安全与未来</span><span class="home-part__count">29 篇 · 2 章</span></a>
 
 </nav>
 
@@ -364,15 +364,15 @@
 
 <article class="chapter-card">
 
-<div class="chapter-card__head"><span class="chapter-card__no">Ch12</span><span class="chapter-card__count">58 篇</span></div>
+<div class="chapter-card__head"><span class="chapter-card__no">Ch12</span><span class="chapter-card__count">59 篇</span></div>
 
 <h3 class="chapter-card__title"><a href="ch12-security.html">安全与治理</a></h3>
 
 <p class="chapter-card__desc">Agent 权限越大，安全责任越重：凭据、审计、合规</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:3.45%" title="⭐ 入门 · 2 篇"></i><i class="lv2" style="width:8.62%" title="⭐⭐ 工程师 · 5 篇"></i><i class="lv3" style="width:46.55%" title="⭐⭐⭐ 专家 · 27 篇"></i><i class="lv4" style="width:32.76%" title="⭐⭐⭐⭐ 科学家 · 19 篇"></i><i class="lv5" style="width:8.62%" title="⭐⭐⭐⭐⭐ 大师 · 5 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:3.39%" title="⭐ 入门 · 2 篇"></i><i class="lv2" style="width:8.47%" title="⭐⭐ 工程师 · 5 篇"></i><i class="lv3" style="width:45.76%" title="⭐⭐⭐ 专家 · 27 篇"></i><i class="lv4" style="width:33.90%" title="⭐⭐⭐⭐ 科学家 · 20 篇"></i><i class="lv5" style="width:8.47%" title="⭐⭐⭐⭐⭐ 大师 · 5 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 2 · ⭐⭐ 5 · ⭐⭐⭐ 27 · ⭐⭐⭐⭐ 19 · ⭐⭐⭐⭐⭐ 5</div>
+<div class="chapter-card__legend">⭐ 2 · ⭐⭐ 5 · ⭐⭐⭐ 27 · ⭐⭐⭐⭐ 20 · ⭐⭐⭐⭐⭐ 5</div>
 
 <ul class="chapter-card__samples">
 
@@ -384,21 +384,21 @@
 
 </ul>
 
-<a class="chapter-card__more" href="ch12-security.html">进入章节 · 共 58 篇<span class="arrow" aria-hidden="true"> →</span></a>
+<a class="chapter-card__more" href="ch12-security.html">进入章节 · 共 59 篇<span class="arrow" aria-hidden="true"> →</span></a>
 
 </article>
 
 <article class="chapter-card">
 
-<div class="chapter-card__head"><span class="chapter-card__no">Ch13</span><span class="chapter-card__count">13 篇</span></div>
+<div class="chapter-card__head"><span class="chapter-card__no">Ch13</span><span class="chapter-card__count">14 篇</span></div>
 
 <h3 class="chapter-card__title"><a href="ch13-mlops.html">MLOps 与评估</a></h3>
 
 <p class="chapter-card__desc">不能观测就不能改进：评估体系、基准测试、实验追踪</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:0.00%" title="⭐ 入门 · 0 篇"></i><i class="lv2" style="width:0.00%" title="⭐⭐ 工程师 · 0 篇"></i><i class="lv3" style="width:15.38%" title="⭐⭐⭐ 专家 · 2 篇"></i><i class="lv4" style="width:53.85%" title="⭐⭐⭐⭐ 科学家 · 7 篇"></i><i class="lv5" style="width:30.77%" title="⭐⭐⭐⭐⭐ 大师 · 4 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:0.00%" title="⭐ 入门 · 0 篇"></i><i class="lv2" style="width:0.00%" title="⭐⭐ 工程师 · 0 篇"></i><i class="lv3" style="width:14.29%" title="⭐⭐⭐ 专家 · 2 篇"></i><i class="lv4" style="width:57.14%" title="⭐⭐⭐⭐ 科学家 · 8 篇"></i><i class="lv5" style="width:28.57%" title="⭐⭐⭐⭐⭐ 大师 · 4 篇"></i></div>
 
-<div class="chapter-card__legend">⭐⭐⭐ 2 · ⭐⭐⭐⭐ 7 · ⭐⭐⭐⭐⭐ 4</div>
+<div class="chapter-card__legend">⭐⭐⭐ 2 · ⭐⭐⭐⭐ 8 · ⭐⭐⭐⭐⭐ 4</div>
 
 <ul class="chapter-card__samples">
 
@@ -410,7 +410,7 @@
 
 </ul>
 
-<a class="chapter-card__more" href="ch13-mlops.html">进入章节 · 共 13 篇<span class="arrow" aria-hidden="true"> →</span></a>
+<a class="chapter-card__more" href="ch13-mlops.html">进入章节 · 共 14 篇<span class="arrow" aria-hidden="true"> →</span></a>
 
 </article>
 
@@ -564,15 +564,15 @@
 
 <article class="chapter-card">
 
-<div class="chapter-card__head"><span class="chapter-card__no">Ch19</span><span class="chapter-card__count">14 篇</span></div>
+<div class="chapter-card__head"><span class="chapter-card__no">Ch19</span><span class="chapter-card__count">15 篇</span></div>
 
 <h3 class="chapter-card__title"><a href="ch19-research-frontier.html">前沿研究与理论</a></h3>
 
 <p class="chapter-card__desc">Scaling Law、涌现能力、世界模型、自我博弈</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:0.00%" title="⭐ 入门 · 0 篇"></i><i class="lv2" style="width:7.14%" title="⭐⭐ 工程师 · 1 篇"></i><i class="lv3" style="width:28.57%" title="⭐⭐⭐ 专家 · 4 篇"></i><i class="lv4" style="width:50.00%" title="⭐⭐⭐⭐ 科学家 · 7 篇"></i><i class="lv5" style="width:14.29%" title="⭐⭐⭐⭐⭐ 大师 · 2 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:0.00%" title="⭐ 入门 · 0 篇"></i><i class="lv2" style="width:6.67%" title="⭐⭐ 工程师 · 1 篇"></i><i class="lv3" style="width:26.67%" title="⭐⭐⭐ 专家 · 4 篇"></i><i class="lv4" style="width:53.33%" title="⭐⭐⭐⭐ 科学家 · 8 篇"></i><i class="lv5" style="width:13.33%" title="⭐⭐⭐⭐⭐ 大师 · 2 篇"></i></div>
 
-<div class="chapter-card__legend">⭐⭐ 1 · ⭐⭐⭐ 4 · ⭐⭐⭐⭐ 7 · ⭐⭐⭐⭐⭐ 2</div>
+<div class="chapter-card__legend">⭐⭐ 1 · ⭐⭐⭐ 4 · ⭐⭐⭐⭐ 8 · ⭐⭐⭐⭐⭐ 2</div>
 
 <ul class="chapter-card__samples">
 
@@ -584,7 +584,7 @@
 
 </ul>
 
-<a class="chapter-card__more" href="ch19-research-frontier.html">进入章节 · 共 14 篇<span class="arrow" aria-hidden="true"> →</span></a>
+<a class="chapter-card__more" href="ch19-research-frontier.html">进入章节 · 共 15 篇<span class="arrow" aria-hidden="true"> →</span></a>
 
 </article>
 
@@ -617,6 +617,6 @@
 </div>
 </section>
 
-<footer class="home-map__foot">📊 全书收录 1,740 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-10-30</span></footer>
+<footer class="home-map__foot">📊 全书收录 1,743 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-10-31</span></footer>
 
 </div>
