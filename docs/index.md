@@ -24,7 +24,7 @@
 
     <div class="home-stats__item"><span class="home-stats__num">20 章 · 5 篇</span><span class="home-stats__label">全书结构</span></div>
 
-    <div class="home-stats__item"><span class="home-stats__num">4,668</span><span class="home-stats__label">一手原文</span></div>
+    <div class="home-stats__item"><span class="home-stats__num">4,670</span><span class="home-stats__label">一手原文</span></div>
 
     <div class="home-stats__item"><span class="home-stats__num">★ × 5</span><span class="home-stats__label">难度分级</span></div>
 
@@ -153,9 +153,9 @@
 
 <p class="chapter-card__desc">什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:4.37%" title="⭐ 入门 · 18 篇"></i><i class="lv2" style="width:7.77%" title="⭐⭐ 工程师 · 32 篇"></i><i class="lv3" style="width:42.96%" title="⭐⭐⭐ 专家 · 177 篇"></i><i class="lv4" style="width:31.07%" title="⭐⭐⭐⭐ 科学家 · 128 篇"></i><i class="lv5" style="width:13.83%" title="⭐⭐⭐⭐⭐ 大师 · 57 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:4.37%" title="⭐ 入门 · 18 篇"></i><i class="lv2" style="width:7.77%" title="⭐⭐ 工程师 · 32 篇"></i><i class="lv3" style="width:42.72%" title="⭐⭐⭐ 专家 · 176 篇"></i><i class="lv4" style="width:31.31%" title="⭐⭐⭐⭐ 科学家 · 129 篇"></i><i class="lv5" style="width:13.83%" title="⭐⭐⭐⭐⭐ 大师 · 57 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 18 · ⭐⭐ 32 · ⭐⭐⭐ 177 · ⭐⭐⭐⭐ 128 · ⭐⭐⭐⭐⭐ 57</div>
+<div class="chapter-card__legend">⭐ 18 · ⭐⭐ 32 · ⭐⭐⭐ 176 · ⭐⭐⭐⭐ 129 · ⭐⭐⭐⭐⭐ 57</div>
 
 <ul class="chapter-card__samples">
 
@@ -617,6 +617,6 @@
 </div>
 </section>
 
-<footer class="home-map__foot">📊 全书收录 1,744 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-11-01</span></footer>
+<footer class="home-map__foot">📊 全书收录 1,744 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-11-02</span></footer>
 
 </div>
