@@ -2,7 +2,7 @@
 
 > Agent 的大脑：短期/长期/工作记忆的分层架构
 
-> 本章收录 **42 篇**实体，按深度递增排列。
+> 本章收录 **43 篇**实体，按深度递增排列。
 
 ---
 
@@ -12,7 +12,7 @@
 |-------|------|------|
 | ⭐⭐ 工程师 | 需编程基础 | 2 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 18 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 12 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 13 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 10 |
 
 ---
@@ -68,33 +68,34 @@ CPU 缓存的类比特别有启发性：L1（当前上下文）→ L2（会话�
 - [019. LLM Wiki 知识管理](ch06/019-llm-wiki)
 - [020. Skill 编排的 6 种依赖关系](ch06/020-skill-6)
 
-### ⭐⭐⭐⭐ 科学家（12 篇）
+### ⭐⭐⭐⭐ 科学家（13 篇）
 
 - [021. MiroFlow：Deep Research Agent 脚手架 —— 与 Code Agent 的 6 大工程差异](ch06/021-miroflow-deep-research-agent-code-agent-6)
 - [022. Agent Harness 上下文管理：工作集视角](ch06/022-agent-harness)
 - [023. Claude Code Openclaw Memory Comparison](ch06/023-claude-code-openclaw-memory-comparison)
-- [024. Claude Code 七层记忆架构](ch06/024-claude-code)
-- [025. ChatGPT Dreaming V3：长期记忆架构级重构（时效 75.1% / 偏好 71.3% / 算力 -80%）](ch06/025-chatgpt-dreaming-v3-75-1-71-3-80)
-- [026. knowledge-work-plugins拆解：Anthropic官方开源，4 种组件、3 级加载、2 层记忆，纯文件的 AI岗位插件集](ch06/026-knowledge-work-plugins-anthropic-4-3-2-ai)
-- [027. Memory 不是 RAG：Agent 记忆的系统性框架](ch06/027-memory-rag-agent)
-- [028. Memento-Skills — 技能外部记忆让 Agent 自进化（arXiv 2603.18743）](ch06/028-memento-skills-agent-arxiv-2603-18743)
-- [029. MFS：zilliztech 的 Agent 统一上下文 harness，一套动词打通 20+ 数据源](ch06/029-mfs-zilliztech-agent-harness-20)
-- [030. Qoder 团队知识引擎](ch06/030-qoder)
-- [031. 腾讯云Agent Memory：Mermaid无限画布×上下文卸载](ch06/031-agent-memory-mermaid)
-- [032. 上下文工程：三种 Agent Memory 方案对比实验](ch06/032-agent-memory)
+- [024. Personal Agent 记忆设计：六层记忆、五问筛选、三种遗忘与三种价值](ch06/024-personal-agent)
+- [025. Claude Code 七层记忆架构](ch06/025-claude-code)
+- [026. ChatGPT Dreaming V3：长期记忆架构级重构（时效 75.1% / 偏好 71.3% / 算力 -80%）](ch06/026-chatgpt-dreaming-v3-75-1-71-3-80)
+- [027. knowledge-work-plugins拆解：Anthropic官方开源，4 种组件、3 级加载、2 层记忆，纯文件的 AI岗位插件集](ch06/027-knowledge-work-plugins-anthropic-4-3-2-ai)
+- [028. Memory 不是 RAG：Agent 记忆的系统性框架](ch06/028-memory-rag-agent)
+- [029. Memento-Skills — 技能外部记忆让 Agent 自进化（arXiv 2603.18743）](ch06/029-memento-skills-agent-arxiv-2603-18743)
+- [030. MFS：zilliztech 的 Agent 统一上下文 harness，一套动词打通 20+ 数据源](ch06/030-mfs-zilliztech-agent-harness-20)
+- [031. Qoder 团队知识引擎](ch06/031-qoder)
+- [032. 腾讯云Agent Memory：Mermaid无限画布×上下文卸载](ch06/032-agent-memory-mermaid)
+- [033. 上下文工程：三种 Agent Memory 方案对比实验](ch06/033-agent-memory)
 
 ### ⭐⭐⭐⭐⭐ 大师（10 篇）
 
-- [033. AI Memory Architecture: Deep Dive](ch06/033-ai-memory-architecture-deep-dive)
-- [034. Agent 记忆架构：先别急着把 Memory 当数据库](ch06/034-agent-memory)
-- [035. 深度拆解 Hermes Agent 记忆系统](ch06/035-hermes-agent)
-- [036. AgentMemory 源码分析：给 Coding Agent 装上本地长期记忆](ch06/036-agentmemory-coding-agent)
-- [037. Agent-Memory 评测全景：基准、评估与记忆系统](ch06/037-agent-memory)
-- [038. TencentDB Agent Memory：符号化短期记忆+分层式长期记忆](ch06/038-tencentdb-agent-memory)
-- [039. GBrain — YC CEO Garry Tan 的 Postgres-native AI 第二大脑：5 大设计决策 + 零 LLM 知识图谱 + 8 阶段检索 + Brain⊥Source 正交维度](ch06/039-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm)
-- [040. Context Window Management Comparison](ch06/040-context-window-management-comparison)
-- [041. Knowledge Base Layer Architecture: From RAG to Agent-native Knowledge Context Layer](ch06/041-knowledge-base-layer-architecture-from-rag-to-agent-native)
-- [042. MemOS Hermes 记忆插件](ch06/042-memos-hermes)
+- [034. AI Memory Architecture: Deep Dive](ch06/034-ai-memory-architecture-deep-dive)
+- [035. Agent 记忆架构：先别急着把 Memory 当数据库](ch06/035-agent-memory)
+- [036. 深度拆解 Hermes Agent 记忆系统](ch06/036-hermes-agent)
+- [037. AgentMemory 源码分析：给 Coding Agent 装上本地长期记忆](ch06/037-agentmemory-coding-agent)
+- [038. Agent-Memory 评测全景：基准、评估与记忆系统](ch06/038-agent-memory)
+- [039. TencentDB Agent Memory：符号化短期记忆+分层式长期记忆](ch06/039-tencentdb-agent-memory)
+- [040. GBrain — YC CEO Garry Tan 的 Postgres-native AI 第二大脑：5 大设计决策 + 零 LLM 知识图谱 + 8 阶段检索 + Brain⊥Source 正交维度](ch06/040-gbrain-yc-ceo-garry-tan-postgres-native-ai-5-llm)
+- [041. Context Window Management Comparison](ch06/041-context-window-management-comparison)
+- [042. Knowledge Base Layer Architecture: From RAG to Agent-native Knowledge Context Layer](ch06/042-knowledge-base-layer-architecture-from-rag-to-agent-native)
+- [043. MemOS Hermes 记忆插件](ch06/043-memos-hermes)
 
 
 ---
