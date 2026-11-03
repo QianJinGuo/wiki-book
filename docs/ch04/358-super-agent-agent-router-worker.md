@@ -1,6 +1,6 @@
 # Super-agent：把 Agent 从单会话里放出来——Router/Worker 双层、事件驱动与存算分离
 
-> 📊 Level ⭐⭐⭐⭐ | 29.4KB
+> 📊 Level ⭐⭐⭐⭐⭐ | 38.6KB
 
 ## 问题：单任务的上限取决于模型，多任务的上限取决于人的注意力
 
@@ -184,6 +184,87 @@ Worker 挂载完整执行工具、在独立上下文里专注单一任务，**�
 4. **投机执行改变的是准备的时机，不改变谁有权做决定**：后台准备的内容在确认前只是草稿，**不能当作正式要求去改动交付物**。
 
 另有两处类比值得记住：端侧 daemon 像 **CI 的 Runner**（调度在中心、活在各台机器上跑、Runner 不记得流水线走到哪一步）；Watchdog 像 **Kubernetes 的控制循环**（对比期望态与实际态），区别是 K8s 看的是副本数、健康检查这类程序可判断的指标，而"有没有实质进展、方向偏没偏"**必须由模型判断**。
+
+## 附四：从设计到可运行的部署链路（架构师 JiaGouX 实操版，2026-11-02）
+
+前四份来源都在讲**这套架构是什么**；这一份讲**怎么把它跑起来**——把一条 GitHub Issue 交给 Agent，让它读讨论与代码、修复、在原讨论里回复并提 PR，人在澄清、确认与合并处参与。作者明确标注 **"操作依据官方文档和源码，尚未独立部署跑通"**，案例（`acme/widgets`、Issue `#42`、`@csv-fix-agent`、CSV 字段转义）为教学示例。
+
+### 环境与身份的四个硬约束
+
+| 项 | 要求 | 为什么 |
+|---|---|---|
+| Node / 包管理 | `^22.19.0 || >=24.0.0`，`pnpm@11.7.0` | 该提交的 `packageManager` 指定 |
+| 依赖 | git 2.32+、Python 3.8+、tmux、GitHub CLI 2.48+ | prepare 与执行链路需要 |
+| GitHub 身份 | **专用用户账号**（接受仓库邀请 + 写权限），**不能用 GitHub App** | 原型要**读这个账号的通知**，App 没有通知流 |
+| 范围 | 公开原型围绕**一个 github.com 仓库**，可选接飞书，**不支持 GHES** | 当前实现边界 |
+
+**凭据隔离只做到 wrapper 层**：用 `GH_CONFIG_DIR` 单独装一套 `gh` 凭据（`~/.local/bin/gh-agent`），面板里填这个 wrapper 的**绝对路径**；但**运行命令的 OS 用户仍是部署者**，权限预设 `danger-full-access`，独立 worktree 也只隔离代码目录。要真正隔离文件与系统权限，得按官方建议用独立 OS 账号——**这是最容易高估安全边界的地方**。
+
+### 安装与配置：两处"只能跑一次"的坑
+
+```bash
+npm install -g @deepseek-ai/dsh@0.2.1-rc.3
+git clone https://github.com/deepseek-ai/dsh-superagent-prototype.git dsh-superagent
+cd dsh-superagent && git checkout 6337fc823ce20251c8de8085948165c81aaa701e
+pnpm install && pnpm build
+dsh superagent --from-default-profile web --dump-config > /dev/null   # ⚠ 仅新装
+dsh plugin --profile superagent add "link:$PWD"
+cp examples/profile.cordis.patch.yml "$HOME/.dsh/profiles/superagent/cordis.patch.yml"  # ⚠ 仅新装
+```
+
+两个⚠：**已有 profile 时不要重跑 `--from-default-profile`**（会替换已有配置并删掉 `cordis.patch.yml`），**已有配置文件不要覆盖**（升级走部署文档流程）。`cordis.patch.yml` 里 `stateDir` 必须换成真实绝对路径（数据库、执行用 Git 配置等持久状态都在这里，默认任务目录是它的 `work` 子目录），端口示例 `127.0.0.1:3082`。Super-agent 使用**独立 profile**，可独立启停。
+
+### Settings 三层：谁能让它做事、在哪个目录改、按什么规矩交付
+
+1. **Sources → GitHub**：填 `owner/name` 与实际 wrapper 绝对路径；**receive-all 先关**，只靠明确 `@` 触发。
+2. **Eval → On each Source → GitHub**：allowed list 填**发请求的人**的登录名——注意这里有两个账号，**wrapper 登录的是 Agent，允许名单填的是请它做事的人**，名单为空则请求不被接下。mode 先留默认 `observe`。
+3. **Execution**：`directory root` 填 `.../superagent/work`，`prepare` 用官方示例命令从本地 clone 建独立分支与 worktree（`DSH_SUPERAGENT_*` 变量由原型注入，**必须填进面板、不要在终端试跑未展开的命令**）；并发先设 1。不配 prepare 的话，Agent 启动时只有空目录，找不到要改的项目。
+4. **Prompts**：要求用 Agent 自己的提交身份、说明实际运行过的检查；按 `SETUP.md` 移除 auto-merge 段落、不配另一账号的 merge CLI —— **合并权留在人手里**。
+
+另有一条省事路径：让编码 Agent 读原型目录的 `SETUP.md`，按仓库/账号/允许名单/本地 clone/提交身份收集配置后操作，但**账号登录与密钥输入仍在人自己的终端完成**。
+
+### off / observe / auto：区分的是"没被明确委派时能否自己接单"
+
+| mode | 对**推断接单**的影响 |
+|---|---|
+| `off` | 不产生推断候选 |
+| `observe`（默认） | 评估候选；即使认为可接，**只记录 `would_accept`，不据此执行** |
+| `auto` | 评估通过**且**匹配至少一条启用规则，才可接单 |
+
+关键点：**允许名单里的用户明确 `@`，在三种 mode 下都能让它做事**——mode 只约束"没有明确委派时的自主发现"。要让它在无 `@` 的新 Issue 里主动找活，还得打开 receive-all 并按规则过滤；且该版本默认主动规则只有 `copy` 和 `visual`，**并不覆盖所有代码缺陷**。
+
+### Ticket 四状态与范围边界
+
+**Queued**（排队等执行名额）/ **Working** / **Awaiting answer**（详情里列问题，回答仍写在原 Issue）/ **Awaiting review**（Agent 报 `ready` 且有跟踪中的 PR，等人评审——`ready` 只表示"可评审"，不等于合并）。成功接单的判据是 Overview 里出现 Ticket，默认轮询间隔 **60 秒**。
+
+**范围内的追加**（如"再覆盖空字段、检查编码兼容"）会沿原任务继续：评论直接送给负责修复的 Agent，Trigger 显示 **Delivered to Ticket 但不产生新 Eval**。**超出范围**（"顺便重做整个导出页面"）应被交回系统重新判断是否作为新工作。只有背景订阅的 Issue/PR，其评论**只提供上下文**，不扩大范围、也不唤醒已结束的任务。
+
+### 故障恢复：先分清"消息没进来"还是"进来没开工"
+
+| 症状 | 排查顺序 |
+|---|---|
+| 发了 `@` 无 Ticket | 确认是**新评论**（仅编辑旧正文补 `@` 不产生新通知）→ 作者在 allowed list → Sources 已启用 → 未 Pause → 看 Source 凭据 → Trigger 搜评论 → Eval 看为何未接。**不要先把 `observe` 改 `auto`** |
+| prepare 失败 | 看 Ticket 命令输出，检查本地 clone 绝对路径、Agent 仓库权限；修好后 **Retry**，或补一条说明让它重试。**prepare 失败不会像模型网络错误那样自动退避重试** |
+| Blocked / Failed / Input undelivered | Retry 只用于未结束且处于投递失败/blocked/failed 的 Ticket；它沿用原会话、目录、分支与 PR。人在 blocked 任务里补的消息若已送达，会继续或重新排队，此时面板不再提供 Retry |
+| 服务重启 | 会话与目录保留，运行中的 Agent 重新启动并收到恢复提示——**它要先查工作目录、Git 历史与 GitHub，尤其确认远端是否已有提交或 PR，避免重复创建** |
+| `status` 退出码 | 1=查服务与启动日志；2=看部件错误；3=补待配置项（后两者反复重启无益）。日志在 `.artifacts/dsh-superagent-superagent-*.log` |
+| 不想继续 | 面板 **Stop** 直接撤回授权；与 Retry 不同，**Stop 后评论不会自动恢复原任务**，需重新接单。"在评论里写停止"仍只是一条待判断的消息 |
+
+### 评审清单：四条可迁移的判据
+
+1. **PR 必须写明**哪里转义错、怎么改、补了哪些用例、**实际运行过哪些检查**，以及失败或未运行的检查。
+2. **新测试要能抓住原错误**：临时换回修复前实现，它应当失败；恢复修复后通过。**"编译通过"不算复现，"测试被跳过"更不算。**
+3. **字段转义与编码分别查**：先确认原实现/文档的编码与是否带 BOM，再用含中文的固定样本核对导出字节——**不能只看读回后文字相同**。
+4. **检查要对应当前 PR 的提交 SHA**：Agent 根据评审又推了提交，就重新核对受影响的检查，**不能沿用旧提交的通过结论**；diff 若带来大面积 UI 改动或无关依赖升级，要问清原因。
+
+另外两点收尾习惯：补出的空字段用例要留在回归测试里；确认稳定的约定可补进项目规则（作者以 Magpie 的 `LESSONS.md` 为例），让下一次修改先读这些约束。
+
+### 这套用法的边界（作者自己划的）
+
+- **只接一个 GitHub 仓库**（+可选飞书），不支持 GHES；其他事件入口需按 `008 Cookbook` 自己开发 Source。
+- **生产发布、重启、回滚由人决定**，不是原型默认会做的事。
+- 延展场景（CI 失败跟进、接口延迟排查、版本与勘误跟踪、家庭维修报价比较）都是**人工先把材料追加到同一话题**；要自动采集日志/监控、接日历与交易工具，需另接工具并单独授权；现场诊断仍靠人。
+- 一句提醒：**"某次变更与异常同时出现，只能作为排查线索，不能据此认定根因。"**
 
 ---
 

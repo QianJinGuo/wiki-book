@@ -2,7 +2,7 @@
 
 > 超级智能、存在风险、AI 治理、人类命运
 
-> 本章收录 **14 篇**实体，按深度递增排列。
+> 本章收录 **15 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐⭐⭐ 专家 | 需ML基础 | 7 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 5 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 6 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 2 |
 
 ---
@@ -46,18 +46,19 @@
 - [006. Nearly every enterprise is investing in AI, but only 5% say their data is ready](ch20/006-nearly-every-enterprise-is-investing-in-ai-but-only-5-say)
 - [007. AI 生产力悖论：你变快了，公司没有](ch20/007-ai)
 
-### ⭐⭐⭐⭐ 科学家（5 篇）
+### ⭐⭐⭐⭐ 科学家（6 篇）
 
-- [008. Dario Amodei 2026 Policy on the AI Exponential](ch20/008-dario-amodei-2026-policy-on-the-ai-exponential)
-- [009. Multilingual AI](ch20/009-multilingual-ai)
-- [010. Token 经济学与 AI 效率](ch20/010-token-ai)
-- [011. Vibe Design ≠ Vibe Coding —— 资深设计师对 AI 前端工作流的哲学批判](ch20/011-vibe-design-vibe-coding-ai)
-- [012. Reinforcement learning towards broadly and persistently beneficial models](ch20/012-reinforcement-learning-towards-broadly-and-persistently-bene)
+- [008. Harmony Harness：把 harness 自进化变成功能与安全的双目标搜索](ch20/008-harmony-harness-harness)
+- [009. Dario Amodei 2026 Policy on the AI Exponential](ch20/009-dario-amodei-2026-policy-on-the-ai-exponential)
+- [010. Multilingual AI](ch20/010-multilingual-ai)
+- [011. Token 经济学与 AI 效率](ch20/011-token-ai)
+- [012. Vibe Design ≠ Vibe Coding —— 资深设计师对 AI 前端工作流的哲学批判](ch20/012-vibe-design-vibe-coding-ai)
+- [013. Reinforcement learning towards broadly and persistently beneficial models](ch20/013-reinforcement-learning-towards-broadly-and-persistently-bene)
 
 ### ⭐⭐⭐⭐⭐ 大师（2 篇）
 
-- [013. Data Agent 产品设计文档](ch20/013-data-agent)
-- [014. 下一代企业数字化架构：系统CLI化、流程Skill化、员工Agent化](ch20/014-cli-skill-agent)
+- [014. Data Agent 产品设计文档](ch20/014-data-agent)
+- [015. 下一代企业数字化架构：系统CLI化、流程Skill化、员工Agent化](ch20/015-cli-skill-agent)
 
 
 ---

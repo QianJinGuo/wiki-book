@@ -2,7 +2,7 @@
 
 > 从数字到物理：强化学习、仿真、人形机器人
 
-> 本章收录 **4 篇**实体，按深度递增排列。
+> 本章收录 **5 篇**实体，按深度递增排列。
 
 ---
 
@@ -11,7 +11,7 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐⭐⭐ 专家 | 需ML基础 | 3 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 1 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 2 |
 
 ---
 
@@ -39,9 +39,10 @@ AI 最终要从屏幕走进物理世界。
 - [002. Unitree's IPO Filing: The State of the Robotics Market](ch18/002-unitree-s-ipo-filing-the-state-of-the-robotics-market)
 - [003. 蔚蓝BabyAlpha A3消费级机器狗](ch18/003-babyalpha-a3)
 
-### ⭐⭐⭐⭐ 科学家（1 篇）
+### ⭐⭐⭐⭐ 科学家（2 篇）
 
-- [004. 蚂蚁灵波 LingBot-Vision — 空间原生视觉基础模型 & LingBot-Depth 2.0](ch18/004-lingbot-vision-lingbot-depth-2-0)
+- [004. RSI 与持续学习是两件事：智能复利的两个飞轮](ch18/004-rsi)
+- [005. 蚂蚁灵波 LingBot-Vision — 空间原生视觉基础模型 & LingBot-Depth 2.0](ch18/005-lingbot-vision-lingbot-depth-2-0)
 
 
 ---
