@@ -2,7 +2,7 @@
 
 > 与 AI 高效对话的科学与艺术：Prompt、CoT、Context Engineering
 
-> 本章收录 **27 篇**实体，按深度递增排列。
+> 本章收录 **28 篇**实体，按深度递增排列。
 
 ---
 
@@ -13,7 +13,7 @@
 | ⭐ 入门 | 零基础可读 | 3 |
 | ⭐⭐ 工程师 | 需编程基础 | 2 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 12 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 6 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 7 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 4 |
 
 ---
@@ -62,21 +62,22 @@
 - [016. System Prompt vs Post-Training：行为约束该写还是该训？](ch02/016-system-prompt-vs-post-training)
 - [017. 深度解析 Hermes Agent 如何实现自进化及其 Prompt / Context / Harness 的设计实践](ch02/017-hermes-agent-prompt-context-harness)
 
-### ⭐⭐⭐⭐ 科学家（6 篇）
+### ⭐⭐⭐⭐ 科学家（7 篇）
 
-- [018. Codex 上下文工程 — Prompt Layout + Append-only + Latent Space Moat（LastWhisper 解读）](ch02/018-codex-prompt-layout-append-only-latent-space-moat-la)
-- [019. Headroom：上下文压缩与缓存稳定化框架（live zone + CCR + RawValue 字节级 patch）](ch02/019-headroom-live-zone-ccr-rawvalue-patch)
-- [020. 视觉 AI 的下一前沿是代码：a16z 关于视觉生成范式转移的论述](ch02/020-ai-a16z)
-- [021. AINMM：存量生产级工程向 AI Native 演进的五级成熟度模型](ch02/021-ainmm-ai-native)
-- [022. LLM Wiki 架构](ch02/022-llm-wiki)
-- [023. OneReason：快手将推理注入推荐基模的系统性尝试](ch02/023-onereason)
+- [018. 速卖通选搭投：用自动驾驶分级做多 Agent 运营系统的成熟度标尺](ch02/018-agent)
+- [019. Codex 上下文工程 — Prompt Layout + Append-only + Latent Space Moat（LastWhisper 解读）](ch02/019-codex-prompt-layout-append-only-latent-space-moat-la)
+- [020. Headroom：上下文压缩与缓存稳定化框架（live zone + CCR + RawValue 字节级 patch）](ch02/020-headroom-live-zone-ccr-rawvalue-patch)
+- [021. 视觉 AI 的下一前沿是代码：a16z 关于视觉生成范式转移的论述](ch02/021-ai-a16z)
+- [022. AINMM：存量生产级工程向 AI Native 演进的五级成熟度模型](ch02/022-ainmm-ai-native)
+- [023. LLM Wiki 架构](ch02/023-llm-wiki)
+- [024. OneReason：快手将推理注入推荐基模的系统性尝试](ch02/024-onereason)
 
 ### ⭐⭐⭐⭐⭐ 大师（4 篇）
 
-- [024. Hugging Face AI Agent 术语表：Model / Agent / Scaffolding / Harness / Context Engineering / Policy / Tool / Skill / Sub-agent 完整区分](ch02/024-hugging-face-ai-agent-model-agent-scaffolding-harnes)
-- [025. 反向审计 Prompt 范式 — 从 VB 50 行 Codex 自我蒸馏到 5 行核心](ch02/025-prompt-vb-50-codex-5)
-- [026. Hermes Agent 深度解析（阿里云/飞樰）](ch02/026-hermes-agent)
-- [027. Claude Code Prompt 提示词体系源码解析](ch02/027-claude-code-prompt)
+- [025. Hugging Face AI Agent 术语表：Model / Agent / Scaffolding / Harness / Context Engineering / Policy / Tool / Skill / Sub-agent 完整区分](ch02/025-hugging-face-ai-agent-model-agent-scaffolding-harnes)
+- [026. 反向审计 Prompt 范式 — 从 VB 50 行 Codex 自我蒸馏到 5 行核心](ch02/026-prompt-vb-50-codex-5)
+- [027. Hermes Agent 深度解析（阿里云/飞樰）](ch02/027-hermes-agent)
+- [028. Claude Code Prompt 提示词体系源码解析](ch02/028-claude-code-prompt)
 
 
 ---

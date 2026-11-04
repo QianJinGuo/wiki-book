@@ -2,7 +2,7 @@
 
 > 不能观测就不能改进：评估体系、基准测试、实验追踪
 
-> 本章收录 **14 篇**实体，按深度递增排列。
+> 本章收录 **15 篇**实体，按深度递增排列。
 
 ---
 
@@ -12,7 +12,7 @@
 |-------|------|------|
 | ⭐⭐⭐ 专家 | 需ML基础 | 2 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 8 |
-| ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 4 |
+| ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 5 |
 
 ---
 
@@ -50,12 +50,13 @@ MLOps 是 AI 系统从"Demo"到"产品"的分水岭。
 - [009. 用 Amazon SageMaker AI 与 Qualcomm AI Hub 打通从云端训练到端侧 NPU 的交付闭环](ch13/009-amazon-sagemaker-ai-qualcomm-ai-hub-npu)
 - [010. SaaS-Bench：浙大阿里 Steering Computer-Use Agent 真实系统评测（3.8% 通过率暴露范式天花板）](ch13/010-saas-bench-steering-computer-use-agent-3-8)
 
-### ⭐⭐⭐⭐⭐ 大师（4 篇）
+### ⭐⭐⭐⭐⭐ 大师（5 篇）
 
-- [011. ai-skill-测评指标体系](ch13/011-ai-skill)
-- [012. 07—AI Skill 测评体系完整进阶指南：5 大能力缺口与填补路径](ch13/012-07-ai-skill-5)
-- [013. Agent Skill 评估与迭代](ch13/013-agent-skill)
-- [014. 06—看懂 AI Skill 测评报告：PASS / FAIL / INCONCLUSIVE 背后的发布决策逻辑](ch13/014-06-ai-skill-pass-fail-inconclusive)
+- [011. PM 视角的 Agent Harness：把需求写成任务卡、工具契约与验收反例](ch13/011-pm-agent-harness)
+- [012. ai-skill-测评指标体系](ch13/012-ai-skill)
+- [013. 07—AI Skill 测评体系完整进阶指南：5 大能力缺口与填补路径](ch13/013-07-ai-skill-5)
+- [014. Agent Skill 评估与迭代](ch13/014-agent-skill)
+- [015. 06—看懂 AI Skill 测评报告：PASS / FAIL / INCONCLUSIVE 背后的发布决策逻辑](ch13/015-06-ai-skill-pass-fail-inconclusive)
 
 
 ---

@@ -2,7 +2,7 @@
 
 > 给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration
 
-> 本章收录 **111 篇**实体，按深度递增排列。
+> 本章收录 **112 篇**实体，按深度递增排列。
 
 ---
 
@@ -14,7 +14,7 @@
 | ⭐⭐ 工程师 | 需编程基础 | 10 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 34 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 39 |
-| ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 18 |
+| ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 19 |
 
 ---
 
@@ -146,7 +146,7 @@ Harness Engineering 是 2026 年冒出来的最重要工程概念之一：它回
 - [092. Superpowers 6.0 SDD 评审重写：文件交接 + 多平台支持](ch05/092-superpowers-6-0-sdd)
 - [093. Harness Engineering 的未来——什么会消失，什么不会](ch05/093-harness-engineering)
 
-### ⭐⭐⭐⭐⭐ 大师（18 篇）
+### ⭐⭐⭐⭐⭐ 大师（19 篇）
 
 - [094. Loop Engineering:不再写提示词,而是设计替你写提示词的循环——先写刹车再写循环（19 来源深度合并：Addy Osmani / Boris Cherny+Peter Steinberger / 教科书 / 若飞 工程现场 / TechFarrari 批判 / 若飞 实用指南 / 爱范儿 科普批判 / AllenTang Karpathy 尺子 / winty 7架构中文主流视角 / AutoResearch 5 决策 / 三层结构 + 三款产品对比 + Ralph Loop + 准备度总表 / Shubham Saboo PM 视角 / 若飞 吴恩达三层Loop）](ch05/094-loop-engineering-19-addy-osmani-boris-cherny-pete)
 - [095. Harness Engineering：AI 从"聪明"到"可靠"的第三代工程范式](ch05/095-harness-engineering-ai)
@@ -165,7 +165,8 @@ Harness Engineering 是 2026 年冒出来的最重要工程概念之一：它回
 - [108. AI 生产开发工作流：OpenSpec 规范驱动 + Superpowers 工具链](ch05/108-ai-openspec-superpowers)
 - [109. Harness不是目的，知识才是护城河 —— 一个AI工程交付团队的知识沉淀实践](ch05/109-harness-ai)
 - [110. Coding Harness 工程本质：从 Pi 到 OpenClaw](ch05/110-coding-harness-pi-openclaw)
-- [111. Harness 工程之道：Skill 原理与最佳实践](ch05/111-harness-skill)
+- [111. SLF：Loop 会随项目线性增长，所以要按 Sprint 切开](ch05/111-slf-loop-sprint)
+- [112. Harness 工程之道：Skill 原理与最佳实践](ch05/112-harness-skill)
 
 
 ---

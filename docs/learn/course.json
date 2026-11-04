@@ -111,27 +111,16 @@
     {
      "role": "核心原理",
      "title": "Claude Code Prompt 提示词体系源码解析",
-     "file": "ch02/027-claude-code-prompt.md",
-     "url": "/ch02/027-claude-code-prompt.html",
+     "file": "ch02/028-claude-code-prompt.md",
+     "url": "/ch02/028-claude-code-prompt.html",
      "chapter": "ch02",
      "chapterName": "提示词与上下文工程",
      "essence": "FanOne 从源码角度解析 Claude Code 的 Prompt 提示词模块六大分层体系：Core System（静态/动态分离 + 优先级策略树）、Tool（自然语言行为协议）、Skill（渐进式加载 + Reading Guide）、Agent（强角色边界 SOP）、Context Management、Memory（四类分级存储）。与 Claude Code 架构解析 构成完整源码解读系列。；| Core System Prompt | 角色/边界/风格/风险原则 | 静态/动态分离 + P0-P4 优先级树 |。",
      "words": 8585,
-     "level": 3
+     "level": 1
     },
     {
      "role": "工程案例",
-     "title": "Codex 上下文工程 — Prompt Layout + Append-only + Latent Space Moat（LastWhisper 解读）",
-     "file": "ch02/018-codex-prompt-layout-append-only-latent-space-moat-la.md",
-     "url": "/ch02/018-codex-prompt-layout-append-only-latent-space-moat-la.html",
-     "chapter": "ch02",
-     "chapterName": "提示词与上下文工程",
-     "essence": "将 Prompt 排序视为工程约束而非实现细节：在设计任何 Agent 上下文架构时，先确定变化频率梯度——低变化内容（System Prompt、工具定义）置顶，高变化内容（对话历史）置底。任何动态工具列表（如 MCP notifications/tools/listchanged）的处理都需要特别设计以保护前缀稳定。；状态变化优先 Append-only 策略：当 Agent 状态变化时（切换目录、审批模式、权限配置），追加新消息而非修改现有消息。这最大化 Prompt Cache 命中，同时保留完整因果链用于意图推断。结合 Agent Harness Context Management Working Set 中的工作集管理实践，Append-only 是生产级 Agent 状态管理的推荐方案",
-     "words": 8993,
-     "level": 3
-    },
-    {
-     "role": "延伸阅读",
      "title": "深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践",
      "file": "ch02/014-openclaw-prompt-context-harness.md",
      "url": "/ch02/014-openclaw-prompt-context-harness.html",
@@ -140,6 +129,17 @@
      "essence": "Prompt/Context/Harness三层分离本质上是AI工程化的三次关键抽象。第一次抽象在\"说\"的层面——将Prompt的静态模板升级为动态组装的模块系统；第二次抽象在\"看\"的层面——通过渐进式披露和分层压缩解决上下文无限膨胀的根本矛盾；第三次抽象在\"运行\"的层面——用Hook机制和安全沙箱在保持AI自主性的同时建立可控边界。这三次抽象反映了从\"如何用好AI\"到\"如何管好AI\"的认知跃迁。；AGENTS.md/SOUL.md/IDENTITY.md等核心文件将Prompt的\"灵魂\"与代码解耦，这种做法解决了三个实际问题：1）非工程师也能修改Agent行为；2）同一套代码可以加载不同性格的Agent；3）运行时可以动态切换身份而不重启进程。Markdown作为配置载体的选择体现了\"最小化依赖\"原则——不需。",
      "words": 6386,
      "level": 3
+    },
+    {
+     "role": "延伸阅读",
+     "title": "Codex 上下文工程 — Prompt Layout + Append-only + Latent Space Moat（LastWhisper 解读）",
+     "file": "ch02/019-codex-prompt-layout-append-only-latent-space-moat-la.md",
+     "url": "/ch02/019-codex-prompt-layout-append-only-latent-space-moat-la.html",
+     "chapter": "ch02",
+     "chapterName": "提示词与上下文工程",
+     "essence": "将 Prompt 排序视为工程约束而非实现细节：在设计任何 Agent 上下文架构时，先确定变化频率梯度——低变化内容（System Prompt、工具定义）置顶，高变化内容（对话历史）置底。任何动态工具列表（如 MCP notifications/tools/listchanged）的处理都需要特别设计以保护前缀稳定。；状态变化优先 Append-only 策略：当 Agent 状态变化时（切换目录、审批模式、权限配置），追加新消息而非修改现有消息。这最大化 Prompt Cache 命中，同时保留完整因果链用于意图推断。结合 Agent Harness Context Management Working Set 中的工作集管理实践，Append-only 是生产级 Agent 状态管理的推荐方案",
+     "words": 8993,
+     "level": 1
     }
    ],
    "lab": {
@@ -174,6 +174,17 @@
    "lessons": [
     {
      "role": "核心原理",
+     "title": "Design Patterns for AI Agents 2026：4 大执行模式 + 5 步选型决策树 + Reflection 完整 Demo",
+     "file": "ch04/383-design-patterns-for-ai-agents-2026-4-5-reflection.md",
+     "url": "/ch04/383-design-patterns-for-ai-agents-2026-4-5-reflection.html",
+     "chapter": "ch04",
+     "chapterName": "Agent 核心架构",
+     "essence": "Harness 模式正在成为 Agent 架构的\"操作系统层\"。传统的 Agent 实现将工具调用、知识检索、输出验证都耦合在 prompt 和代码中；Harness 模式将这些能力抽象为可配置组件，Agent 本身变成声明式描述而非过程式代码。这一转变使得 Agent 的能力升级可以从\"重写 Agent\"变为\"更新 Harness 配置\"，大幅提升迭代效率。；Multi-Agent 协作模式从\"固定流水线\"演进到\"动态组织\"。2025 年的 Multi-Agent 主要是固定角色（研究员、写作、审核）的顺序 pipeline；2026 年的新模式允许 Agent 根据任务动态决定角色数量、协作拓扑和消息协议。这带来更高的灵活性的同时，也引入了协调复杂性和通信开销的新挑战",
+     "words": 7222,
+     "level": 3
+    },
+    {
+     "role": "工程案例",
      "title": "阿里云 AgentLoop：企业级智能体自进化飞轮（4 环闭环 + LoongSuite 84% 字段覆盖 + Trace2Dataset 90% 节省 + Agent-as-a-Judge 90% 一致 + 记忆库/经验库）",
      "file": "ch04/229-agentloop-4-loongsuite-84-trace2dataset-90.md",
      "url": "/ch04/229-agentloop-4-loongsuite-84-trace2dataset-90.html",
@@ -184,25 +195,14 @@
      "level": 3
     },
     {
-     "role": "工程案例",
-     "title": "Design Patterns for AI Agents 2026：4 大执行模式 + 5 步选型决策树 + Reflection 完整 Demo",
-     "file": "ch04/383-design-patterns-for-ai-agents-2026-4-5-reflection.md",
-     "url": "/ch04/383-design-patterns-for-ai-agents-2026-4-5-reflection.html",
-     "chapter": "ch04",
-     "chapterName": "Agent 核心架构",
-     "essence": "Harness 模式正在成为 Agent 架构的\"操作系统层\"。传统的 Agent 实现将工具调用、知识检索、输出验证都耦合在 prompt 和代码中；Harness 模式将这些能力抽象为可配置组件，Agent 本身变成声明式描述而非过程式代码。这一转变使得 Agent 的能力升级可以从\"重写 Agent\"变为\"更新 Harness 配置\"，大幅提升迭代效率。；Multi-Agent 协作模式从\"固定流水线\"演进到\"动态组织\"。2025 年的 Multi-Agent 主要是固定角色（研究员、写作、审核）的顺序 pipeline；2026 年的新模式允许 Agent 根据任务动态决定角色数量、协作拓扑和消息协议。这带来更高的灵活性的同时，也引入了协调复杂性和通信开销的新挑战",
-     "words": 7222,
-     "level": 1
-    },
-    {
      "role": "延伸阅读",
-     "title": "Agentic Loop Engineering 工程手册：17 种 Loop 工程化技术的可复现实证框架",
-     "file": "ch04/311-agentic-loop-engineering-17-loop.md",
-     "url": "/ch04/311-agentic-loop-engineering-17-loop.html",
+     "title": "Agent Loop 源码导读：一次 Hermes 任务的完整生命周期",
+     "file": "ch04/374-agent-loop-hermes.md",
+     "url": "/ch04/374-agent-loop-hermes.html",
      "chapter": "ch04",
      "chapterName": "Agent 核心架构",
-     "essence": "可验证性是唯一有效的信号类型：17 种技术全部可以归结为一个二分法——接入 execution feedback、schema、检索事实或评分 harness 的技术产生可测量提升，而接入模型自我意见（self-assess、无信号 retry）的技术增益近乎为零。Self-Assess 77% 误接受率与 Self-Assess 的 1.7 pts 增益互为印证：实现者与验证者共享同一盲点时，闭环是空转的。；验证信号存在「一份就够」的边际递减：Skill 注入实验里，一个 CREATE TABLE schema 把可执行率从 0% 拉到 95%，再加 few-shot 仍停在 95%——承重知识点只有那一个，瓶颈移除后上下文继续堆叠无增益。这与 Best-of-N 对 32B 模型近乎无效（temperatu。",
-     "words": 5251,
+     "essence": "Insight 1: Agent Loop 的 5 阶段抽象揭示了当前主流框架的共同范式；不同框架（Hermes、LangGraph、Cursor、Claude Code）命名不同，但本质都是这 5 个阶段：接收输入、拼装 Prompt、调用模型、执行工具、检查退出。这种一致性说明当前的 Agent 设计已经形成了相对稳定的设计模式",
+     "words": 12644,
      "level": 3
     }
    ],
@@ -251,7 +251,7 @@
      "chapterName": "Agent 核心架构",
      "essence": "Browser Use：为 Agent 构建 Runtime Harness；Browser Use 是百度工程师开源的运行时验证框架，旨在解决 Agent 生成前端代码后的「最后一公里」验证问题。核心洞察是：代码正确 ≠ 界面正确——前端最终结果是组件代码、CSS cascade、运行时数据、容器尺寸、异步状态等因素共同作用的组合结果，只有渲染出来才能确认是否正确",
      "words": 6693,
-     "level": 1
+     "level": 3
     },
     {
      "role": "工程案例",
@@ -262,7 +262,7 @@
      "chapterName": "Harness 工程",
      "essence": "先定事实来源：日志/DB 投影（可回放、可 fork）还是内存 + Thread（轻量、快），这是最早要做的架构决定。；并发语义要么框架判定，要么工具自报——但回填必须有序；自报方案要给\"声明错了\"留兜底",
      "words": 9310,
-     "level": 1
+     "level": 3
     },
     {
      "role": "延伸阅读",
@@ -321,7 +321,7 @@
      "chapterName": "技能、工具与 MCP",
      "essence": "\"注入位置\"是理解 Rules/MCP/Skills 本质差异的第一性原理；源码分析揭示的底层逻辑远比表面功能描述更清晰：Rules、MCP、Skills 的核心区别不在于\"能做什么\"（功能层面），而在于\"信息在 API 请求中占据什么位置\"（架构层面）。Rules 通过 prependUserContext() 注入 messages（被动，每次 API 调用自动携带）；MCP 同时占据 tools[] 和 system 两个位置（主动调用，Server 级指南在 system 动态区）；Skills 通过 tooluse 触发后在 Inline 模式下注入 messages（主动调用但执行是提示词注入）。这三个位置（messages、tools[]、system）的组合差异，导致了完全不同的工程特性：Rul。",
      "words": 10462,
-     "level": 1
+     "level": 3
     },
     {
      "role": "工程案例",
@@ -343,7 +343,7 @@
      "chapterName": "技能、工具与 MCP",
      "essence": "CLI、MCP 和 Skill 代表了三个不同层次的抽象：；CLI 是执行原语，负责在特定运行环境里完成具体操作。",
      "words": 5166,
-     "level": 1
+     "level": 3
     }
    ],
    "lab": {
@@ -537,7 +537,7 @@
      "chapterName": "Agent 核心架构",
      "essence": "Agent 的骨架:Agent Runtime 7 大职责 + 3 主流框架对比 (LangGraph / OpenAI Agents SDK / 自研)；Agent 的骨架：Agent Runtime 7 大职责 + 3 主流框架对比。",
      "words": 11587,
-     "level": 1
+     "level": 3
     },
     {
      "role": "工程案例",
@@ -548,17 +548,17 @@
      "chapterName": "Agent 核心架构",
      "essence": "Fable 5 的信号:Agent 开始拼 Runtime — 架构师若飞的 Runtime Contract 工程化拆解；Fable 5 的信号：Agent 开始拼 Runtime — 架构师若飞的 Runtime Contract 工程化拆解。",
      "words": 11687,
-     "level": 1
+     "level": 3
     },
     {
      "role": "延伸阅读",
-     "title": "Agent Harness 架构设计与实现：生产级 Agent 系统落地指南",
-     "file": "ch04/357-agent-harness-agent.md",
-     "url": "/ch04/357-agent-harness-agent.html",
-     "chapter": "ch04",
-     "chapterName": "Agent 核心架构",
-     "essence": "Agent Harness 架构设计与实现：生产级 Agent 系统落地指南；AI 工程领域过去两年经历了三次重心迁移，层层递进而非替代：。",
-     "words": 18645,
+     "title": "Microsoft Agent Framework Tools 总览：4 类工具 + Provider 矩阵 + Tool Approval",
+     "file": "ch07/050-microsoft-agent-framework-tools-4-provider-tool-ap.md",
+     "url": "/ch07/050-microsoft-agent-framework-tools-4-provider-tool-ap.html",
+     "chapter": "ch07",
+     "chapterName": "技能、工具与 MCP",
+     "essence": "Microsoft Agent Framework Tools 总览：4 类工具 + Provider 矩阵 + Tool Approval；Microsoft Agent Framework Tools 总览。",
+     "words": 14404,
      "level": 3
     }
    ],
@@ -682,6 +682,17 @@
    "lessons": [
     {
      "role": "核心原理",
+     "title": "AI Agent 落地：如何攻克稳定性、成本与评估难题？ — Trace即Evals",
+     "file": "ch04/254-ai-agent-trace-evals.md",
+     "url": "/ch04/254-ai-agent-trace-evals.html",
+     "chapter": "ch04",
+     "chapterName": "Agent 核心架构",
+     "essence": "张雁飞在 Databend Meetup 2026 北京站的演讲，提出\"Trace 即 Evals\"的核心主张 — AI Agent 的稳定性、成本归因和效果评估，必须建立在完整执行轨迹之上。文章用 Claude Code、Evot、Pi 等 Agent 对比案例，梳理了从 Prompt Engineering、Context Engineering 到 Harness Engineering 的演进。；AI Agent 落地的三大难题：稳定性（相同输入不同输出）、成本归因（无法追踪 Token 去向）、效果评估（缺乏可复现的基准）。",
+     "words": 7290,
+     "level": 3
+    },
+    {
+     "role": "工程案例",
      "title": "CMU PACE — Proxy for Agentic Capability Evaluation",
      "file": "ch04/214-cmu-pace-proxy-for-agentic-capability-evaluation.md",
      "url": "/ch04/214-cmu-pace-proxy-for-agentic-capability-evaluation.html",
@@ -692,7 +703,7 @@
      "level": 3
     },
     {
-     "role": "工程案例",
+     "role": "延伸阅读",
      "title": "Agent 自进化评估瓶颈 — 外置 evaluator 是自动自进化的前提条件",
      "file": "ch04/331-agent-evaluator.md",
      "url": "/ch04/331-agent-evaluator.html",
@@ -701,17 +712,6 @@
      "essence": "主分必须来自被优化对象之外的系统。 任何 agent 能写、能改、能影响的信号（自评、自生成测试、可编辑日志/环境）都不是主分。列出 agent 全部写权限，凡能间接改变自己分数的要么移除、要么纳入审计。；evaluator 需要独立的变更审计。 打分逻辑、测试用例、评测数据集与阈值要像生产代码一样版本化 + 留痕 + 双人复核，修改权限不得落入被优化的 agent 或优化团队",
      "words": 4621,
      "level": 3
-    },
-    {
-     "role": "延伸阅读",
-     "title": "AI Agent 落地：如何攻克稳定性、成本与评估难题？ — Trace即Evals",
-     "file": "ch04/254-ai-agent-trace-evals.md",
-     "url": "/ch04/254-ai-agent-trace-evals.html",
-     "chapter": "ch04",
-     "chapterName": "Agent 核心架构",
-     "essence": "张雁飞在 Databend Meetup 2026 北京站的演讲，提出\"Trace 即 Evals\"的核心主张 — AI Agent 的稳定性、成本归因和效果评估，必须建立在完整执行轨迹之上。文章用 Claude Code、Evot、Pi 等 Agent 对比案例，梳理了从 Prompt Engineering、Context Engineering 到 Harness Engineering 的演进。；AI Agent 落地的三大难题：稳定性（相同输入不同输出）、成本归因（无法追踪 Token 去向）、效果评估（缺乏可复现的基准）。",
-     "words": 7290,
-     "level": 1
     }
    ],
    "lab": {
@@ -770,13 +770,13 @@
     {
      "role": "工程案例",
      "title": "Codex 5.21 更新：AI 编程助手开始变成电脑工作代理",
-     "file": "ch09/091-codex-5-21-ai.md",
-     "url": "/ch09/091-codex-5-21-ai.html",
+     "file": "ch09/092-codex-5-21-ai.md",
+     "url": "/ch09/092-codex-5-21-ai.html",
      "chapter": "ch09",
      "chapterName": "AI 编程",
      "essence": "Codex 5.21 把 Appshots（Mac 窗口截图直传）、/goal 目标模式、浏览器标注增强、锁屏后继续工作四块拼图连成完整链路。AI 编程助手的角色从\"代码生成器\"切换到\"电脑工作代理\"——人从\"逐步指挥\"变成\"设目标和把关\"，AI 负责执行、试错、长任务推进。；Appshots 把\"看见现场\"成本降到几乎为零：Mac 当前窗口截图 + 可读取文本一键发给 Codex，省去\"截图-复制-文字解释\"三步。",
      "words": 3900,
-     "level": 3
+     "level": 1
     },
     {
      "role": "延伸阅读",
@@ -845,6 +845,17 @@
     },
     {
      "role": "工程案例",
+     "title": "高德 Data Agent：分析是两段翻译，可靠性却沿链路连乘",
+     "file": "ch14/024-data-agent.md",
+     "url": "/ch14/024-data-agent.html",
+     "chapter": "ch14",
+     "chapterName": "数据工程",
+     "essence": "先定义\"翻译\"再拆模块：降维（问题→查询）与升维（数字→结论）分开设计，各自的失败模式不同。；算一遍可靠性连乘：链路有几步、每步准确率多少，先算出端到端上限，再决定要不要加检查点",
+     "words": 6748,
+     "level": 1
+    },
+    {
+     "role": "延伸阅读",
      "title": "Stop Giving Your Agents Database Credentials — Agent Data Governance Patterns",
      "file": "ch14/020-stop-giving-your-agents-database-credentials-agent-data-go.md",
      "url": "/ch14/020-stop-giving-your-agents-database-credentials-agent-data-go.html",
@@ -852,17 +863,6 @@
      "chapterName": "数据工程",
      "essence": "Agent 的工具调用能力 ≠ Agent 应该拥有底层资源的直接访问权限；数据治理是 Agent 安全的\"最后一公里\"——即使 Agent 本身被精心设计，错误的数据访问模式仍会导致安全事件。",
      "words": 3116,
-     "level": 3
-    },
-    {
-     "role": "延伸阅读",
-     "title": "Amazon Quick integration with time-series databases for market intelligence using MCP",
-     "file": "ch14/014-amazon-quick-integration-with-time-series-databases-for-mark.md",
-     "url": "/ch14/014-amazon-quick-integration-with-time-series-databases-for-mark.html",
-     "chapter": "ch14",
-     "chapterName": "数据工程",
-     "essence": "Amazon Quick's Model Context Protocol (MCP) support lets financial analysts query KDB-X time-series market data in natural language instead of writing q or SQL by hand, with Bedrock AgentCore Gateway as the authenticated routing layer between the Quick chat agent and a self-hosted KDB-X MCP server on EC2. The walkthrough covers the full path — hardened syste。",
-     "words": 8006,
      "level": 3
     }
    ],
@@ -1075,7 +1075,7 @@
      "chapterName": "Agent 核心架构",
      "essence": "Amazon Bedrock AgentCore Web Search 以全托管 MCP 兼容方式为 AI Agent 提供实时网页搜索能力。底层是 Amazon 自建的数百亿文档索引，持续分钟级刷新，查询流量不离开 AWS。定价 $7/1,000 次查询。；→ 原文存档 (GA 公告) | → 原文存档 (中国区实战教程)。",
      "words": 5609,
-     "level": 1
+     "level": 3
     },
     {
      "role": "工程案例",
@@ -1231,7 +1231,7 @@
   }
  ],
  "stats": {
-  "scannedArticles": 1760,
+  "scannedArticles": 1767,
   "moduleCount": 16,
   "lessonsPerModule": 3
  }

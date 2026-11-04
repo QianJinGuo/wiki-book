@@ -2,7 +2,7 @@
 
 > AI 的燃料：实时入湖、流处理、数据质量
 
-> 本章收录 **27 篇**实体，按深度递增排列。
+> 本章收录 **28 篇**实体，按深度递增排列。
 
 ---
 
@@ -13,7 +13,7 @@
 | ⭐ 入门 | 零基础可读 | 3 |
 | ⭐⭐ 工程师 | 需编程基础 | 1 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 18 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 4 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 5 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 1 |
 
 ---
@@ -67,16 +67,17 @@
 - [021. Amazon Redshift 推出集成数据湖查询引擎的 Graviton RG 实例](ch14/021-amazon-redshift-graviton-rg)
 - [022. SQL NOT IN 与 NULL 的经典陷阱：De Morgan 定律到解析器行为](ch14/022-sql-not-in-null-de-morgan)
 
-### ⭐⭐⭐⭐ 科学家（4 篇）
+### ⭐⭐⭐⭐ 科学家（5 篇）
 
 - [023. Data for AI：明其所耗，知其所因！让每一分 Token 消耗都可量化的全栈实践](ch14/023-data-for-ai-token)
-- [024. Good QC for RL Data](ch14/024-good-qc-for-rl-data)
-- [025. EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios](ch14/025-eva-bench-data-2-0-3-domains-121-tools-213-scenarios)
-- [026. Moneyball for Physical AI](ch14/026-moneyball-for-physical-ai)
+- [024. 高德 Data Agent：分析是两段翻译，可靠性却沿链路连乘](ch14/024-data-agent)
+- [025. Good QC for RL Data](ch14/025-good-qc-for-rl-data)
+- [026. EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios](ch14/026-eva-bench-data-2-0-3-domains-121-tools-213-scenarios)
+- [027. Moneyball for Physical AI](ch14/027-moneyball-for-physical-ai)
 
 ### ⭐⭐⭐⭐⭐ 大师（1 篇）
 
-- [027. 阿里云 Kafka × Iceberg 零 ETL 实时入湖：ApsaraMQ for Kafka × OSS Tables 架构减法](ch14/027-kafka-iceberg-etl-apsaramq-for-kafka-oss-tables)
+- [028. 阿里云 Kafka × Iceberg 零 ETL 实时入湖：ApsaraMQ for Kafka × OSS Tables 架构减法](ch14/028-kafka-iceberg-etl-apsaramq-for-kafka-oss-tables)
 
 
 ---
