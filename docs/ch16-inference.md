@@ -2,7 +2,7 @@
 
 > 让模型跑得更快：投机解码、MoE、PD 分离、量化
 
-> 本章收录 **15 篇**实体，按深度递增排列。
+> 本章收录 **16 篇**实体，按深度递增排列。
 
 ---
 
@@ -13,7 +13,7 @@
 | ⭐⭐ 工程师 | 需编程基础 | 2 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 6 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 5 |
-| ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 2 |
+| ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 3 |
 
 ---
 
@@ -57,10 +57,11 @@
 - [012. PithTrain：陈天奇 + CMU Flame Center 推出的 agent-native MoE 训练框架（11K Python / 双重效率）](ch16/012-pithtrain-cmu-flame-center-agent-native-moe-11k-pyth)
 - [013. 具身智能 Sim-to-Real 迁移：主动推理、行为树与内在动机引擎的工程化方案](ch16/013-sim-to-real)
 
-### ⭐⭐⭐⭐⭐ 大师（2 篇）
+### ⭐⭐⭐⭐⭐ 大师（3 篇）
 
-- [014. Build real-time voice applications with Amazon SageMaker AI and vLLM](ch16/014-build-real-time-voice-applications-with-amazon-sagemaker-ai)
-- [015. The next generation of speculative decoding: DFlash and Spec V2 - LMSYS Blog](ch16/015-the-next-generation-of-speculative-decoding-dflash-and-spec)
+- [014. 手机应用原生大模型：先定预算，再定架构](ch16/014-page-014)
+- [015. Build real-time voice applications with Amazon SageMaker AI and vLLM](ch16/015-build-real-time-voice-applications-with-amazon-sagemaker-ai)
+- [016. The next generation of speculative decoding: DFlash and Spec V2 - LMSYS Blog](ch16/016-the-next-generation-of-speculative-decoding-dflash-and-spec)
 
 
 ---
