@@ -66,9 +66,9 @@
 
 <p class="chapter-card__desc">理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:10.24%" title="⭐ 入门 · 51 篇"></i><i class="lv2" style="width:8.84%" title="⭐⭐ 工程师 · 44 篇"></i><i class="lv3" style="width:49.80%" title="⭐⭐⭐ 专家 · 248 篇"></i><i class="lv4" style="width:21.89%" title="⭐⭐⭐⭐ 科学家 · 109 篇"></i><i class="lv5" style="width:9.24%" title="⭐⭐⭐⭐⭐ 大师 · 46 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:10.04%" title="⭐ 入门 · 50 篇"></i><i class="lv2" style="width:8.84%" title="⭐⭐ 工程师 · 44 篇"></i><i class="lv3" style="width:49.80%" title="⭐⭐⭐ 专家 · 248 篇"></i><i class="lv4" style="width:21.89%" title="⭐⭐⭐⭐ 科学家 · 109 篇"></i><i class="lv5" style="width:9.44%" title="⭐⭐⭐⭐⭐ 大师 · 47 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 51 · ⭐⭐ 44 · ⭐⭐⭐ 248 · ⭐⭐⭐⭐ 109 · ⭐⭐⭐⭐⭐ 46</div>
+<div class="chapter-card__legend">⭐ 50 · ⭐⭐ 44 · ⭐⭐⭐ 248 · ⭐⭐⭐⭐ 109 · ⭐⭐⭐⭐⭐ 47</div>
 
 <ul class="chapter-card__samples">
 
@@ -153,9 +153,9 @@
 
 <p class="chapter-card__desc">什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:4.34%" title="⭐ 入门 · 18 篇"></i><i class="lv2" style="width:7.71%" title="⭐⭐ 工程师 · 32 篇"></i><i class="lv3" style="width:42.41%" title="⭐⭐⭐ 专家 · 176 篇"></i><i class="lv4" style="width:31.57%" title="⭐⭐⭐⭐ 科学家 · 131 篇"></i><i class="lv5" style="width:13.98%" title="⭐⭐⭐⭐⭐ 大师 · 58 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:4.34%" title="⭐ 入门 · 18 篇"></i><i class="lv2" style="width:7.71%" title="⭐⭐ 工程师 · 32 篇"></i><i class="lv3" style="width:42.17%" title="⭐⭐⭐ 专家 · 175 篇"></i><i class="lv4" style="width:31.81%" title="⭐⭐⭐⭐ 科学家 · 132 篇"></i><i class="lv5" style="width:13.98%" title="⭐⭐⭐⭐⭐ 大师 · 58 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 18 · ⭐⭐ 32 · ⭐⭐⭐ 176 · ⭐⭐⭐⭐ 131 · ⭐⭐⭐⭐⭐ 58</div>
+<div class="chapter-card__legend">⭐ 18 · ⭐⭐ 32 · ⭐⭐⭐ 175 · ⭐⭐⭐⭐ 132 · ⭐⭐⭐⭐⭐ 58</div>
 
 <ul class="chapter-card__samples">
 
@@ -283,9 +283,9 @@
 
 <p class="chapter-card__desc">最成熟的 Agent 品类：Claude Code、OpenClaw、Codex 深度拆解</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:5.36%" title="⭐ 入门 · 6 篇"></i><i class="lv2" style="width:9.82%" title="⭐⭐ 工程师 · 11 篇"></i><i class="lv3" style="width:36.61%" title="⭐⭐⭐ 专家 · 41 篇"></i><i class="lv4" style="width:33.04%" title="⭐⭐⭐⭐ 科学家 · 37 篇"></i><i class="lv5" style="width:15.18%" title="⭐⭐⭐⭐⭐ 大师 · 17 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:4.46%" title="⭐ 入门 · 5 篇"></i><i class="lv2" style="width:9.82%" title="⭐⭐ 工程师 · 11 篇"></i><i class="lv3" style="width:37.50%" title="⭐⭐⭐ 专家 · 42 篇"></i><i class="lv4" style="width:33.04%" title="⭐⭐⭐⭐ 科学家 · 37 篇"></i><i class="lv5" style="width:15.18%" title="⭐⭐⭐⭐⭐ 大师 · 17 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 6 · ⭐⭐ 11 · ⭐⭐⭐ 41 · ⭐⭐⭐⭐ 37 · ⭐⭐⭐⭐⭐ 17</div>
+<div class="chapter-card__legend">⭐ 5 · ⭐⭐ 11 · ⭐⭐⭐ 42 · ⭐⭐⭐⭐ 37 · ⭐⭐⭐⭐⭐ 17</div>
 
 <ul class="chapter-card__samples">
 
@@ -617,6 +617,6 @@
 </div>
 </section>
 
-<footer class="home-map__foot">📊 全书收录 1,774 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-11-08</span></footer>
+<footer class="home-map__foot">📊 全书收录 1,774 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-11-09</span></footer>
 
 </div>

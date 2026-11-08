@@ -10,9 +10,9 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 6 |
+| ⭐ 入门 | 零基础可读 | 5 |
 | ⭐⭐ 工程师 | 需编程基础 | 11 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 41 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 42 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 37 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 17 |
 
@@ -36,44 +36,44 @@ AI 编程是 Agent 最早成熟的品类，也是理解 Agent 工程的最佳窗
 
 ## 本章内容
 
-### ⭐ 入门（6 篇）
+### ⭐ 入门（5 篇）
 
 - [001. Claude Code 大型代码库最佳实践 — Anthropic 企业级部署指南](ch09/001-claude-code-anthropic)
 - [002. Harness Engineering - 让 Coding Agent 可靠完成长程任务](ch09/002-harness-engineering-coding-agent)
 - [003. The Data Canary](ch09/003-the-data-canary)
 - [004. CLAUDE.md 12 条规则：Karpathy 扩展模板](ch09/004-claude-md-12-karpathy)
-- [005. Loop 的产品视角——项目中心从人挪到 Agent 系统](ch09/005-loop-agent)
-- [006. 用 Kiro 构建行业专业软件：Spec vs Vibe Coding 的分层结论](ch09/006-kiro-spec-vs-vibe-coding)
+- [005. 用 Kiro 构建行业专业软件：Spec vs Vibe Coding 的分层结论](ch09/005-kiro-spec-vs-vibe-coding)
 
 ### ⭐⭐ 工程师（11 篇）
 
-- [007. Claude Code 团队的代码审查流水线：当 agent 写 90% 的代码](ch09/007-claude-code-agent-90)
-- [008. Kitta：领域深度定制的 Code Review Agent（阿里云龙蜥社区实践）](ch09/008-kitta-code-review-agent)
-- [009. Claude Dispatch + 接口力量：AI 从 Chatbot 到 Agent Interface 的转变](ch09/009-claude-dispatch-ai-chatbot-agent-interface)
-- [010. Notes Inside China AI Labs Lambert](ch09/010-notes-inside-china-ai-labs-lambert)
-- [011. 7个月，234次提交，1690行代码：AI编程大型翻车现场：我决定全部作废，手动重写！](ch09/011-7-234-1690-ai)
-- [012. 场景营销前端 AI Coding — AI Native 的视觉稿还原](ch09/012-ai-coding-ai-native)
-- [013. 让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](ch09/013-kiro-claude-code-im-acp-bridge-ai-aws)
-- [014. 2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](ch09/014-2-0-claude-vscode)
-- [015. Vibe Coding in Production — Erik Schluntz / Anthropic](ch09/015-vibe-coding-in-production-erik-schluntz-anthropic)
-- [016. Introducing deepsec: The security harness for finding vulnerabilities in your codebase](ch09/016-introducing-deepsec-the-security-harness-for-finding-vulner)
-- [017. Automate progressive rollouts with Vercel Flags - Vercel](ch09/017-automate-progressive-rollouts-with-vercel-flags-vercel)
+- [006. Claude Code 团队的代码审查流水线：当 agent 写 90% 的代码](ch09/006-claude-code-agent-90)
+- [007. Kitta：领域深度定制的 Code Review Agent（阿里云龙蜥社区实践）](ch09/007-kitta-code-review-agent)
+- [008. Claude Dispatch + 接口力量：AI 从 Chatbot 到 Agent Interface 的转变](ch09/008-claude-dispatch-ai-chatbot-agent-interface)
+- [009. Notes Inside China AI Labs Lambert](ch09/009-notes-inside-china-ai-labs-lambert)
+- [010. 7个月，234次提交，1690行代码：AI编程大型翻车现场：我决定全部作废，手动重写！](ch09/010-7-234-1690-ai)
+- [011. 场景营销前端 AI Coding — AI Native 的视觉稿还原](ch09/011-ai-coding-ai-native)
+- [012. 让 Kiro 和 Claude Code 响应 IM 消息：用 ACP Bridge 打造异步 AI 编程工作流 | 亚马逊AWS官方博客](ch09/012-kiro-claude-code-im-acp-bridge-ai-aws)
+- [013. 2 小时，0 行手写代码，我用 Claude 做了一个生产级 VSCode 插件](ch09/013-2-0-claude-vscode)
+- [014. Vibe Coding in Production — Erik Schluntz / Anthropic](ch09/014-vibe-coding-in-production-erik-schluntz-anthropic)
+- [015. Introducing deepsec: The security harness for finding vulnerabilities in your codebase](ch09/015-introducing-deepsec-the-security-harness-for-finding-vulner)
+- [016. Automate progressive rollouts with Vercel Flags - Vercel](ch09/016-automate-progressive-rollouts-with-vercel-flags-vercel)
 
-### ⭐⭐⭐ 专家（41 篇）
+### ⭐⭐⭐ 专家（42 篇）
 
-- [018. 使用Claude Code：session管理与1M上下文](ch09/018-claude-code-session-1m)
-- [019. Cheap code means formal verification is reasonable now — Antfly Blog](ch09/019-cheap-code-means-formal-verification-is-reasonable-now-ant)
-- [020. It’s safe to close your laptop now: Hosting coding agents on Amazon Bedrock AgentCore](ch09/020-it-s-safe-to-close-your-laptop-now-hosting-coding-agents-on)
-- [021. OpenAI models and Codex on Amazon Bedrock are now generally available](ch09/021-openai-models-and-codex-on-amazon-bedrock-are-now-generally)
-- [022. Claude Code Loop Types — 官方四种循环模式分类法](ch09/022-claude-code-loop-types)
-- [023. DeepSeek V4 DS4C Antirez 本地推理实践](ch09/023-deepseek-v4-ds4c-antirez)
-- [024. Coding Agent在百度的落地实践：从反馈闭环到工程范式重构](ch09/024-coding-agent)
-- [025. Cat Wu: Anthropic Claude Code/Cowork 产品负责人访谈](ch09/025-cat-wu-anthropic-claude-code-cowork)
-- [026. 无障碍设计师 vibe coding：当所有同事都在用 AI 写代码时](ch09/026-vibe-coding-ai)
-- [027. Claude Code 黑客松：技艺数字化六项目](ch09/027-claude-code)
-- [028. The New Bottleneck: Theory of Constraints in the Age of AI Coding](ch09/028-the-new-bottleneck-theory-of-constraints-in-the-age-of-ai-c)
-- [029. 1-Click GitHub Token Stealing via a VSCode Bug — ammaraskar 2026](ch09/029-1-click-github-token-stealing-via-a-vscode-bug-ammaraskar)
-- [030. Open Code Review：阿里开源的 AI 代码评审 CLI 工具](ch09/030-open-code-review-ai-cli)
+- [017. 使用Claude Code：session管理与1M上下文](ch09/017-claude-code-session-1m)
+- [018. Cheap code means formal verification is reasonable now — Antfly Blog](ch09/018-cheap-code-means-formal-verification-is-reasonable-now-ant)
+- [019. It’s safe to close your laptop now: Hosting coding agents on Amazon Bedrock AgentCore](ch09/019-it-s-safe-to-close-your-laptop-now-hosting-coding-agents-on)
+- [020. OpenAI models and Codex on Amazon Bedrock are now generally available](ch09/020-openai-models-and-codex-on-amazon-bedrock-are-now-generally)
+- [021. Claude Code Loop Types — 官方四种循环模式分类法](ch09/021-claude-code-loop-types)
+- [022. DeepSeek V4 DS4C Antirez 本地推理实践](ch09/022-deepseek-v4-ds4c-antirez)
+- [023. Coding Agent在百度的落地实践：从反馈闭环到工程范式重构](ch09/023-coding-agent)
+- [024. Cat Wu: Anthropic Claude Code/Cowork 产品负责人访谈](ch09/024-cat-wu-anthropic-claude-code-cowork)
+- [025. 无障碍设计师 vibe coding：当所有同事都在用 AI 写代码时](ch09/025-vibe-coding-ai)
+- [026. Claude Code 黑客松：技艺数字化六项目](ch09/026-claude-code)
+- [027. The New Bottleneck: Theory of Constraints in the Age of AI Coding](ch09/027-the-new-bottleneck-theory-of-constraints-in-the-age-of-ai-c)
+- [028. 1-Click GitHub Token Stealing via a VSCode Bug — ammaraskar 2026](ch09/028-1-click-github-token-stealing-via-a-vscode-bug-ammaraskar)
+- [029. Open Code Review：阿里开源的 AI 代码评审 CLI 工具](ch09/029-open-code-review-ai-cli)
+- [030. Loop 的产品视角——项目中心从人挪到 Agent 系统](ch09/030-loop-agent)
 - [031. 天猫AI助手调度框架重构与AI Coding工程化](ch09/031-ai-ai-coding)
 - [032. Prompt Caching 工程实践 — Anthropic Claude Code 经验总结](ch09/032-prompt-caching-anthropic-claude-code)
 - [033. AI Coding 的底层框架：一切优化都是在对抗熵增——信息论视角](ch09/033-ai-coding)

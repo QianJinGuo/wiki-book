@@ -1,6 +1,6 @@
 # 750B MoE PD 分离推理：AWS EFA vs 自建 RoCE 通信架构实战对比
 
-> 📊 Level ⭐⭐⭐⭐ | 18.5KB
+> 📊 Level ⭐⭐⭐⭐⭐ | 25.5KB
 
 ## 概述
 
@@ -157,6 +157,36 @@ EFA 在用户态暴露两套接口，这些通信库分别走不同路径：
 2. **Max ITL 改善 73% 的根因** — SRD 多路径 spray vs RoCE 单路径 ECMP 的结构差异，附 AWS 原始 IEEE Micro 2020 论文引用
 3. **2P2D 分离推理完整通信栈分层** — Attention/MoE/PP/KV Cache 五种通信模式的物理路径与库映射，从节点内 NVLink 到节点间 EFA 完整拆解
 
+## 深度分析
+
+### 一、切分决策是"因"：并行策略先于网络选型决定流量拓扑
+
+本次验证最容易被误读之处，是把 31% 的 TPOT 差距直接归因于"EFA 比 RoCE 慢"。实际上流量拓扑首先由切分设计决定：750B MoE 混合部署代价远大于收益，且最关键的并非调度问题而是物理冲突——Prefill 要 Expert 集中在节点内（EP=8，走 NVLink），Decode 要 Expert 分散到跨节点 16 卡（EP=16），同一组 GPU 无法兼顾。 这个冲突决定了 Decode 每生成一个 token 要触发 75 层 × 2 次 = 150 次跨节点小消息，统计上约一半 Expert 在对端节点，单次 per-message 延迟因此被 150 次累积放大。
+
+Prefill 侧的两个选择同样自洽：长上下文 Attention 走 CP=8 切序列而非切 head 的 TP——120K 输入下瓶颈在序列维，且 MLA 把 KV 压成共享 latent 后"按 head 切"省不了 KV； Decode 的 dp-attention 则用"每卡复制完整权重"换取层内零通信，代价是显存。 换言之，EFA 只在 Decode MoE All-to-All 这一条路径上承压，其余高频通信全部被切分设计锁定在 NVLink 内——网络对比的结论边界是由架构划定的。
+
+### 二、~28us/次：CPU Proxy 是"控制面税"，不是带宽瓶颈
+
+ConnectX 上 DeepEP 的 IBGDA 由 GPU kernel 直接写 NIC doorbell 寄存器，零 CPU 参与硬件闭环；EFA NIC 尚未向 GPU 暴露 doorbell，UCCL-EP 只能用 CPU Proxy 中转：GPU 写显存 FIFO → CPU busy-poll 解析 → 调 libibverbs 提交发送 → NIC 经 GPUDirect RDMA 直接 DMA GPU 显存。 注意数据面不过 CPU 内存，被拉长的是控制面：指令到达 NIC 与接收端处理各加 3-10us，单次合计 ~20-40us，对比 IBGDA 的 ~5-15us。 用实测反推：TPOT 差 4.25ms ÷ 150 次 ≈ 28us/次，与路径分析完全吻合——这是固定开销 × 高频的乘法效应，3,200 Gbps 带宽绰绰有余。 UCCL-EP 之所以绕开 libfabric 直接走底层 Verbs，正是为了在这条延迟命门上省去抽象层开销。
+
+### 三、SRD 的收益长在尾部分布，不在平均值
+
+三个延迟指标的方向性分裂是本次数据最有信息量的部分：Mean ITL EFA 高 28%、P99 高 19%、Max ITL 反而低 73%（434.30ms → 116.99ms）。 根因在协议层：RoCE per-QP 有序交付意味着一条链路拥塞就队头阻塞整个 QP，产生极端毛刺；SRD 放弃有序，把一块数据的包同时 spray 到 64 条路径，单路径拥塞不拖累其余包，AWS 实测 P99 尾延迟下降约 10 倍。 该设计出自 AWS 的 SRD 论文（IEEE Micro 2020）。 对在线服务而言，用户感知的是"最慢的那个 token"，尾延迟稳定性比中位延迟更关键。
+
+### 四、两种网络哲学：为共享弹性云而生 vs 为专用集群而生
+
+EFA 不追单包极限延迟，追大规模稳定性。AWS 自研的三条理由：云上"不能搞特殊连接的孤岛"，SRD 与普通 VPC 流量共享统一以太网 Fabric；用放弃有序换尾延迟；PFC 无损机制大规模下易拥塞扩散、InfiniBand 依赖统一 Subnet Manager，对"始终在线"的多租户云都是负担。 落到部署上是复杂度反转：RoCE 需要 PFC+ECN 专用交换机且错配风险高，SRD 跑标准 UDP/IP 以太网、零配置依赖。 结论不是谁更好，而是约束不同：专用固定拓扑集群选 IB/RoCE，共享弹性云选 SRD。
+
+## 实践启示
+
+1. **迁移评估按通信模式分桶，别看端到端单一指标。** TTFT 差 9%（Prefill 网络非瓶颈）、TPOT 差 31%（CPU Proxy per-message 开销）、Max ITL 好 73%（SRD 多路径）三向分裂，任何单一数字都会导向错误结论。
+2. **切分设计先于硬件选型。** Expert 集中/分散的物理冲突决定跨节点流量总量；Decode 若能容忍节点内 EP，per-message 差距的大头自然消失。
+3. **把 CPU Proxy 开销当临时成本建模，而非永久上限。** 这是折中方案而非 EFA 带宽/协议短板，随 EFA 软硬件与 GPU 间通信路径演进有望逐步收窄。
+4. **拓扑要验证不要假设。** 用 DescribeInstanceTopology 从底层向上比较 NetworkNodes，共享 Layer ii 即 3 跳最短路径；申请量大、难以同时满足数量与 CPG 约束时，先拿容量再按拓扑数据分配对延迟敏感的工作负载。
+5. **在线 SLA 把 P99/Max ITL 当一等指标。** SRD 多路径 spray 在共享拥塞环境天然免疫单点阻塞，"最慢 token"改善 3.7 倍直接转化为用户体验下限。
+6. **软件栈分层可复用："内核态在 AMI、用户态在容器"。** efa.ko/NVIDIA 驱动随宿主机 AMI，libfabric/aws-ofi-nccl/UCCL 等用户态库随容器镜像走，保证通信库与应用版本精确对齐、镜像可移植。
+
+**延伸阅读**：[DeepSeek MoE 并行策略](https://github.com/QianJinGuo/wiki-public/blob/main/entities/deepseek-moe-parallel-strategy.md) · SGLang · [MoE 混合专家](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/moe-mixture-of-experts-2025.md) · [vLLM Push-based KV Transfer](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vllm-push-based-kv-transfer-disaggregated-inference-2026.md)
 ## 相关主题
 
 - [AWS FSx Lustre GPUDirect 加载](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-fsx-lustre-gpudirect-sharded-llm-loading.md) — AWS 训练/推理数据加载栈
