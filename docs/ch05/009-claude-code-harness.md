@@ -1,44 +1,94 @@
-# Claude Code Harness 深度分析
+# 从零复刻 Claude Code：Harness 构建学习笔记
 
-> 📊 Level ⭐ | 4.7KB
+> 📊 Level ⭐⭐ | 7.5KB
 
-> 本页原内容在 2026-09-07 质量闭环中判定为 **dup-0.75**，已按导航页（MOC）重建；
-> 原文备份见 `_archive/hub-rewrite-2026-09-07/claude-code-harness-deep-dive-founder-park.md`，一手来源仍见下方 sources。
+## 准备开一个新坑：从零复刻一个 Claude Code。
 
-## 机制与论文
-- [AgentScope Java Harness Framework 2.0 — 企业级 Agent 分布式场景的 Harness 实现 (Java 2.0 重大升级)](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentscope-java-harness-framework-enterprise-distributed.md) — AgentScope Java全版
-- [晓斌：从 People-Oriented 到 Agent-Oriented Infra —— 意图驱动 + 代码沉淀的进化体](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-oriented-infra-intent-driven-code-sedimentation.md) — Agent-Oriented Infra长文
-- Context Window Management Comparison — 四框架对比rv9
-- Anthropic N-days: Frontier Agent Vulnerability Research — N-day研究
-- [Rethinking Search as Code Generation](https://github.com/QianJinGuo/wiki-public/blob/main/entities/perplexity-search-as-code-generation.md) — Search as Code：查询变可执行代码对象7660字rv9
-- [一篇看懂 Agent Harness 的结构！ — 12组件+7决策完整框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-harness-12-components-7-decisions.md) — harness 12组件框架
-- 深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践 — 三维度源码：23模块拼装+自适应分块+双层Memory
-- [Code as Agent Harness 综述](https://github.com/QianJinGuo/wiki-public/blob/main/entities/code-as-agent-harness-survey.md) — 102页综述
-- [深入理解 Claude Code 源码中的 Agent Harness 构建之道](https://github.com/QianJinGuo/wiki-public/blob/main/entities/深入理解-claude-code-源码中的-agent-harness-构建之道.md) — 16095字源码8步循环
-- [从 Prompt 到 Harness：Claude 官方学习资料](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-prompt-to-harness-claude-official.md) — Harness五子系统闭环解读
-- [原始文章存档](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-search-architecture-tencent-2026.md) — ripgrep五层过滤
-- [Claude Code and What Comes Next](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-and-what-comes-next.md) — 压缩/Skills/Subagents
-- [全网骂Claude变笨，Anthropic下场揭秘：坑你的不是模型](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-perceived-degradation-anthropic-effort-model-explanation-2026.md) — Model vs Effort框架
+目标是在这个过程中和大家一起学习 Claude Code 的 Harness 是如何做的。
 
-## 工程实践
-- [Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/entities/karpathy-vibe-coding-agentic-engineering-v4.md) — v4 8090字rv10：可验证性上限+MenuGen警示
-- [最佳 Claude Code 配置：Andrej Karpathy 的 CLAUDE.md，134+k star了！](https://github.com/QianJinGuo/wiki-public/blob/main/entities/andrej-karpathy-claude-md-134k-stars-2026.md) — CLAUDE.md四规则解析
-- [数据级 Harness：架构师 JiaGouX 解读 Anthropic 95% 数据分析与 5 个反直觉边界](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-95pct-data-analysis-jiagoux-data-level-harness-20260606.md) — 数据级harness解读
-- [vivo Agent 系统分析：大模型是大脑不是马，Harness 是 ICU 不是马鞍](https://github.com/QianJinGuo/wiki-public/blob/main/entities/vivo-agent-brain-body-icu-harness-evolutionary-framework-2026.md) — 大脑身体ICU隐喻框架
-- [高德 Marketing AutoResearch：AI Native 营销增长经营托管框架](https://github.com/QianJinGuo/wiki-public/blob/main/entities/autoresearch-marketing-growth-amap-ai-native.md) — 营销经营托管
-- [Claude Code 上下文工程 —— Anthropic 团队的工程实践](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-context-engineering-anthropic-thariq.md) — 上下文工程官方表述
-- [Anthropic Managed Agents：用 K8s 思路虚拟化 Agent 组件](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-managed-agents-scaling.md) — 宠物到牛群
-- [Claude Code 泄露后的漏网之鱼 claude-code-best 这两个月到底演进了什么](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-best-community-fork-evolution-vibecoder.md) — 社区fork演进短条
-- [扣子 3.0 离谱更新：把 Codex、Claude Code 拉进一个项目工作？](https://github.com/QianJinGuo/wiki-public/blob/main/entities/coze-3-0-local-agent-codex-claude-code-project.md) — coze-bridge本地接入
-- [Skills：让 Claude 记住「怎么做」，告别重复教学](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-skills-workflow-encapsulation-costa-long.md) — context:fork隔离
-- [Boris Cherny 新访谈：开发工具正在从 IDE 变成 Agent 控制台](https://github.com/QianJinGuo/wiki-public/blob/main/entities/iqsixinp9lxnkg7avfhfcq.md) — Boris新访谈：IDE→Agent控制台控制点迁移
+Claude Code 源码泄漏后本来想根据它的代码直接出一个分析解读的内容，但是写着写着感觉太干了，对小白可能不太友好。
 
-## 延伸导航
-- [Agent 工程全景指南](https://github.com/QianJinGuo/wiki-public/blob/main/moc/agent-engineering-guide.md)
+既然有了源码，不如我们直接从零一步步复刻一个，我们在复刻的过程中可以逐步去学习如何实现一个企业级的 Agent。
+
+最终目标是要复刻出 Claude Code 大部分的核心功能。
+
+同时我会把实现的整个过程沉淀为一套完整的技术教程，每个章节都包含详细的实现步骤和可复现的代码。
+
+大家也可以跟着这个这个教程（直接把每个章节的内容和关键代码发给你的 Coding Agent）从零完成复刻，你也能一步步实现一个完整的企业级 Agent。
+
+仓库在这：https://github.com/ConardLi/easy-agent
+
+大家感兴趣可以提前 Star 支持一下。
+
+预计前期会先实现下面的功能，后面会根据这些功能的实现情况再逐步完善更多功能：
+
+0. 项目脚手架搭建
+1. 最简 LLM 通信层
+2. React/Ink 终端交互界面
+3. Tool 接口设计与第一个工具
+4. 核心 Agentic Loop
+5. 完善工具集
+6. System Prompt 与上下文工程
+7. 权限控制系统
+8. QueryEngine 多轮编排
+9. 会话持久化与恢复
+10. 项目记忆系统
+11. 上下文压缩
+12. Token 预算精细管理
+13. Plan Mode（计划模式）
+14. 任务管理系统
+15. MCP 协议支持
+16. Skills 技能系统
+17. 沙箱机制（Sandbox）
+18. Sub-Agent
+19. 自定义 Agent 系统
+20. 多 Agent 协作（进阶）
+21. Hooks 生命周期系统
+22. 终端 UI 升级
+23. 配置系统完善
+24. 文件历史与回滚
+25. 错误处理与韧性
+26. 管道模式（非交互式）
+27. Auto Mode（AI 分类器自动执行）
+28. 多 Provider 支持
+29. 打包发布与文档
+
+大家感兴趣的话可以点个 Star：https://github.com/ConardLi/easy-agent
+
+## 深度分析
+
+本文作者选择了一条独特的学习路径：不是被动地阅读源码，而是通过主动复刻来深入理解 Claude Code 的 Harness 设计。 这种"Learning by building"的方法论在技术学习中一直被推崇，但在 Agent 开发领域尤其有价值，因为 Agent 的 Harness 涉及多个复杂子系统的协同工作。
+
+从作者规划的 30 个功能模块来看，Claude Code 的 Harness 可以被解构为几个核心层次：基础设施层（项目脚手架、LLM 通信层、终端 UI）、Agent 核心层（Agentic Loop、Tool 接口、权限控制、Sub-Agent）、认知增强层（记忆系统、上下文压缩、Token 预算管理）、系统扩展层（MCP 协议支持、Skills 系统、沙箱机制）。 这种分层架构的设计思想体现了工程化 Agent 的成熟度。
+
+作者强调每个章节都包含"可复现的代码"，并建议读者"直接把每个章节的内容和关键代码发给你的 Coding Agent"从零完成复刻。 这揭示了 AI 时代技术传播范式的转变——人类不仅可以利用 AI 来学习，AI 本身也可以作为学习过程的协作伙伴。
+
+值得注意的是，作者规划的 30 个功能点覆盖了从"多 Agent 协作"到"多 Provider 支持"的广泛范围，这暗示了企业级 Agent 系统的核心挑战不在于单个功能的实现，而在于如何设计一个可扩展、可组合的架构来容纳多元化的功能需求。 这种"功能清单即架构视图"的方法值得借鉴。
+
+## 实践启示
+
+1. **采用"Learning by Building"学习 Agent 开发**：与其被动阅读源码或文档，不如设定一个复刻目标，在实现过程中遇到的具体问题会倒逼你深入理解每个模块的设计原理。
+
+2. **优先掌握 Agentic Loop 和 Tool 接口设计**：这两个模块是 Agent Harness 的心脏，决定了 Agent 与外界交互的基本模式。建议在前几个功能点就聚焦于此，而非被周边功能（如 UI、配置系统）分散注意力。
+
+3. **利用 AI 作为学习协作伙伴**：将教程内容直接输入给 Coding Agent，让 AI 协助你完成代码编写，同时通过提问来验证你对每一行代码的理解。这种"与 AI 结对编程"的学习方式能同时提升你对 Agent 原理的理解和 AI 工具使用熟练度。
+
+4. **关注系统的可扩展性设计**：从 30 个功能模块的规划可以看出，优秀的 Agent Harness 应该在架构层面支持功能扩展。在复刻学习过程中，应该思考每个模块如何与其他模块解耦，以及新增功能如何不影响既有系统。
+
+5. **分阶段验收，循序渐进**：作者列出的 30 个功能点并非随意排列，而是遵循从基础到高级的递进关系。建议学习者也按此顺序分阶段验收自己的实现成果，每完成一个阶段就进行测试和总结，确保基础稳固后再进入复杂功能。
+
+## 相关实体
+- Claude Code Harness Deep Understanding
+- [Claude Code Harness Deep Dive Founder Park](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-harness-deep-dive-founder-park.md)
+- [Claude Code Founder Harness 100 Lines](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-founder-harness-100-lines.md)
+- [Anthropic Claude Code Large Codebase Best Practices 50002A089323](https://github.com/QianJinGuo/wiki-public/blob/main/entities/anthropic-claude-code-large-codebase-best-practices-50002a089323.md)
+- [From Prompt To Harness Claude Official](https://github.com/QianJinGuo/wiki-public/blob/main/entities/from-prompt-to-harness-claude-official.md)
+
+→ [原文存档](https://mp.weixin.qq.com/s/l2HTDuqFJXI7F2Yz8eOLyQ)
 
 ## 关联
 
-- 同题异语种孪生页：[深入理解 Claude Code 源码中的 Agent Harness 构建之道 V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/深入理解-claude-code-源码中的-agent-harness-构建之道-v2.md)（归并候选，提案卡 #11 批1）
+- 同题异语种孪生页：[Claude Code Large Codebase Team Deployment Agent Harness](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-large-codebase-team-deployment-agent-harness.md)（归并候选，提案卡 #11 批1）
 
 ---
 

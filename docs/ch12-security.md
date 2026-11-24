@@ -10,10 +10,10 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 2 |
-| ⭐⭐ 工程师 | 需编程基础 | 5 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 27 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 20 |
+| ⭐ 入门 | 零基础可读 | 1 |
+| ⭐⭐ 工程师 | 需编程基础 | 4 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 28 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 21 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 5 |
 
 ---
@@ -36,36 +36,36 @@ AI Agent 正在获得越来越多的权限——执行代码、访问数据库�
 
 ## 本章内容
 
-### ⭐ 入门（2 篇）
+### ⭐ 入门（1 篇）
 
 - [001. Malware crew TeamPCP open-sources its Shai-Hulud worm on GitHub](ch12/001-malware-crew-teampcp-open-sources-its-shai-hulud-worm-on-git)
-- [002. peerd: 浏览器原生的 AI Agent Harness](ch12/002-peerd-ai-agent-harness)
 
-### ⭐⭐ 工程师（5 篇）
+### ⭐⭐ 工程师（4 篇）
 
-- [003. Jane Street — 形式化方法与编程的未来](ch12/003-jane-street)
-- [004. OpenAI launches Daybreak to combat cyber threats](ch12/004-openai-launches-daybreak-to-combat-cyber-threats)
-- [005. Grafana GitHub Token Breach Led to Codebase Download and Extortion Attempt](ch12/005-grafana-github-token-breach-led-to-codebase-download-and-ext)
-- [006. JetBrains Marketplace Ecosystem Security Update: Malicious AI Plugins](ch12/006-jetbrains-marketplace-ecosystem-security-update-malicious-a)
-- [007. LLMShare: using shared chatbot pages to distribute malware](ch12/007-llmshare-using-shared-chatbot-pages-to-distribute-malware)
+- [002. Jane Street — 形式化方法与编程的未来](ch12/002-jane-street)
+- [003. OpenAI launches Daybreak to combat cyber threats](ch12/003-openai-launches-daybreak-to-combat-cyber-threats)
+- [004. Grafana GitHub Token Breach Led to Codebase Download and Extortion Attempt](ch12/004-grafana-github-token-breach-led-to-codebase-download-and-ext)
+- [005. JetBrains Marketplace Ecosystem Security Update: Malicious AI Plugins](ch12/005-jetbrains-marketplace-ecosystem-security-update-malicious-a)
 
-### ⭐⭐⭐ 专家（27 篇）
+### ⭐⭐⭐ 专家（28 篇）
 
-- [008. 飞来汇借助 AWS Security Agent 构建跨境支付应用的智能安全防线](ch12/008-aws-security-agent)
-- [009. CISA urges critical infrastructure firms to 'fortify' before it's too late | Cybersecurity Dive](ch12/009-cisa-urges-critical-infrastructure-firms-to-fortify-before)
-- [010. Unlocking the Cloudflare app ecosystem with OAuth for all](ch12/010-unlocking-the-cloudflare-app-ecosystem-with-oauth-for-all)
-- [011. Disgruntled researcher releases two more Microsoft zero-days](ch12/011-disgruntled-researcher-releases-two-more-microsoft-zero-days)
-- [012. Where OpenClaw Security Is Heading — OpenClaw Blog](ch12/012-where-openclaw-security-is-heading-openclaw-blog)
-- [013. Adversaries Leverage AI for Vulnerability Exploitation, Augmented Operations, and Initial Access](ch12/013-adversaries-leverage-ai-for-vulnerability-exploitation-augm)
-- [014. 别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](ch12/014-amazon-bedrock-api)
-- [015. Canvas Hackers ShinyHunters Say Their Official Domain Was Suspended](ch12/015-canvas-hackers-shinyhunters-say-their-official-domain-was-su)
-- [016. A Framework for AI Threat Readiness](ch12/016-a-framework-for-ai-threat-readiness)
-- [017. Cyberscammers are bypassing banks' security with illicit tools sold on Telegram](ch12/017-cyberscammers-are-bypassing-banks-security-with-illicit-too)
-- [018. How Semgrep Cut Taint Analysis Time by 75%](ch12/018-how-semgrep-cut-taint-analysis-time-by-75)
-- [019. U of T AI Worm：CleverHans Lab 展示可自适应的 AI 蠕虫威胁](ch12/019-u-of-t-ai-worm-cleverhans-lab-ai)
-- [020. ICO 对 South Staffordshire 处以 96.3 万英镑罚款：2022 年 Cl0p 勒索软件攻击暴露的安全失败](ch12/020-ico-south-staffordshire-96-3-2022-cl0p)
-- [021. NGINX Rift: Achieving NGINX Remote Code Execution via an 18-Year-Old Vulnerability | depthfirst](ch12/021-nginx-rift-achieving-nginx-remote-code-execution-via-an-18)
-- [022. Offensive Security Blog](ch12/022-offensive-security-blog)
+- [006. CISA urges critical infrastructure firms to 'fortify' before it's too late | Cybersecurity Dive](ch12/006-cisa-urges-critical-infrastructure-firms-to-fortify-before)
+- [007. Unlocking the Cloudflare app ecosystem with OAuth for all](ch12/007-unlocking-the-cloudflare-app-ecosystem-with-oauth-for-all)
+- [008. Disgruntled researcher releases two more Microsoft zero-days](ch12/008-disgruntled-researcher-releases-two-more-microsoft-zero-days)
+- [009. Where OpenClaw Security Is Heading — OpenClaw Blog](ch12/009-where-openclaw-security-is-heading-openclaw-blog)
+- [010. LLMShare: using shared chatbot pages to distribute malware](ch12/010-llmshare-using-shared-chatbot-pages-to-distribute-malware)
+- [011. Adversaries Leverage AI for Vulnerability Exploitation, Augmented Operations, and Initial Access](ch12/011-adversaries-leverage-ai-for-vulnerability-exploitation-augm)
+- [012. 别让你的 Amazon Bedrock 模型为他人打工——API 调用安全防护指南](ch12/012-amazon-bedrock-api)
+- [013. Canvas Hackers ShinyHunters Say Their Official Domain Was Suspended](ch12/013-canvas-hackers-shinyhunters-say-their-official-domain-was-su)
+- [014. A Framework for AI Threat Readiness](ch12/014-a-framework-for-ai-threat-readiness)
+- [015. CyberSecQwen-4B](ch12/015-cybersecqwen-4b)
+- [016. Cyberscammers are bypassing banks' security with illicit tools sold on Telegram](ch12/016-cyberscammers-are-bypassing-banks-security-with-illicit-too)
+- [017. How Semgrep Cut Taint Analysis Time by 75%](ch12/017-how-semgrep-cut-taint-analysis-time-by-75)
+- [018. U of T AI Worm：CleverHans Lab 展示可自适应的 AI 蠕虫威胁](ch12/018-u-of-t-ai-worm-cleverhans-lab-ai)
+- [019. ICO 对 South Staffordshire 处以 96.3 万英镑罚款：2022 年 Cl0p 勒索软件攻击暴露的安全失败](ch12/019-ico-south-staffordshire-96-3-2022-cl0p)
+- [020. NGINX Rift: Achieving NGINX Remote Code Execution via an 18-Year-Old Vulnerability | depthfirst](ch12/020-nginx-rift-achieving-nginx-remote-code-execution-via-an-18)
+- [021. Offensive Security Blog](ch12/021-offensive-security-blog)
+- [022. peerd: 浏览器原生的 AI Agent Harness](ch12/022-peerd-ai-agent-harness)
 - [023. Pwn2Own Berlin 2026, Day Three: DEVCORE Crowned Master of Pwn, $1.298 Million Total](ch12/023-pwn2own-berlin-2026-day-three-devcore-crowned-master-of-pw)
 - [024. TeamPCP Claims Sale of Mistral AI Repositories Amid Mini Shai-Hulud Attack](ch12/024-teampcp-claims-sale-of-mistral-ai-repositories-amid-mini-sha)
 - [025. AI Voice Cloning: The Technology Behind It, Who's Building It, and Where It's Headed](ch12/025-ai-voice-cloning-the-technology-behind-it-who-s-building-i)
@@ -77,11 +77,11 @@ AI Agent 正在获得越来越多的权限——执行代码、访问数据库�
 - [031. Forward launches Predict to verify network changes before they reach production - SiliconANGLE](ch12/031-forward-launches-predict-to-verify-network-changes-before-th)
 - [032. GitHub Breached — Employee Device Hack Led to Exfiltration](ch12/032-github-breached-employee-device-hack-led-to-exfiltration)
 - [033. AI phishing attacks are on the rise — Are you prepared? | Bitwarden](ch12/033-ai-phishing-attacks-are-on-the-rise-are-you-prepared-bi)
-- [034. CyberSecQwen-4B](ch12/034-cybersecqwen-4b)
 
-### ⭐⭐⭐⭐ 科学家（20 篇）
+### ⭐⭐⭐⭐ 科学家（21 篇）
 
-- [035. Mythos finds a curl vulnerability](ch12/035-mythos-finds-a-curl-vulnerability)
+- [034. Mythos finds a curl vulnerability](ch12/034-mythos-finds-a-curl-vulnerability)
+- [035. 飞来汇借助 AWS Security Agent 构建跨境支付应用的智能安全防线](ch12/035-aws-security-agent)
 - [036. AI Friendly 架构与可复制的 AI 迁移：淘宝直播搜推 Emeya 重构的三阶段与三层验证](ch12/036-ai-friendly-ai-emeya)
 - [037. LLMReaper - DOM Based AI Conversation Exfiltration via Browser Extensions](ch12/037-llmreaper-dom-based-ai-conversation-exfiltration-via-brows)
 - [038. Resecurity | CVE-2026-20182: Unauthenticated Cisco SD-WAN Control-Plane Compromise via vHub Authentication Bypass](ch12/038-resecurity-cve-2026-20182-unauthenticated-cisco-sd-wan-co)

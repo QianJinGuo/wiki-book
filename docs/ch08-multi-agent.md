@@ -2,7 +2,7 @@
 
 > 从单兵到团队：编排、通信、治理
 
-> 本章收录 **27 篇**实体，按深度递增排列。
+> 本章收录 **28 篇**实体，按深度递增排列。
 
 ---
 
@@ -13,7 +13,7 @@
 | ⭐ 入门 | 零基础可读 | 2 |
 | ⭐⭐ 工程师 | 需编程基础 | 1 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 12 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 10 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 11 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 2 |
 
 ---
@@ -60,23 +60,24 @@
 - [014. Routa 多智能体协同交付平台](ch08/014-routa)
 - [015. Nature丨Google和FutureHouse同日登刊，把AI科学助理推到科研前线](ch08/015-nature-google-futurehouse-ai)
 
-### ⭐⭐⭐⭐ 科学家（10 篇）
+### ⭐⭐⭐⭐ 科学家（11 篇）
 
-- [016. JiuwenSwarm — Coordination Engineering 多智能体协作框架（含 SwarmFlow 可控编排 + Jiuwen Symphony 技能编排与分发）](ch08/016-jiuwenswarm-coordination-engineering-swarmflow-jiu)
-- [017. Graph Engineering：从单循环到多节点编排](ch08/017-graph-engineering)
-- [018. AI Agent Memory Systems](ch08/018-ai-agent-memory-systems)
-- [019. How Grab is Using AI Agents to Boost Team Productivity](ch08/019-how-grab-is-using-ai-agents-to-boost-team-productivity)
-- [020. Factory Missions](ch08/020-factory-missions)
-- [021. Oz Multi-Harness Cloud Agent Orchestration (Warp)](ch08/021-oz-multi-harness-cloud-agent-orchestration-warp)
-- [022. 扣子 3.0 协作系统：项目化 + Agent 编排 + 工具链打通](ch08/022-3-0-agent)
-- [023. AgentRun：阿里云多 Agent 生产级协作方案（A2A 开放协议）](ch08/023-agentrun-agent-a2a)
-- [024. Orchestrating Self-Evolving Agents with CrewAI and NVIDIA NemoClaw](ch08/024-orchestrating-self-evolving-agents-with-crewai-and-nvidia-ne)
-- [025. AP2 协议实测：Mandate 机制、Task 状态机与多 Agent 支付](ch08/025-ap2-mandate-task-agent)
+- [016. 阿里云 Flock 协同空间：一群人、一群 Agent 对一件事负责到底](ch08/016-flock-agent)
+- [017. JiuwenSwarm — Coordination Engineering 多智能体协作框架（含 SwarmFlow 可控编排 + Jiuwen Symphony 技能编排与分发）](ch08/017-jiuwenswarm-coordination-engineering-swarmflow-jiu)
+- [018. Graph Engineering：从单循环到多节点编排](ch08/018-graph-engineering)
+- [019. AI Agent Memory Systems](ch08/019-ai-agent-memory-systems)
+- [020. How Grab is Using AI Agents to Boost Team Productivity](ch08/020-how-grab-is-using-ai-agents-to-boost-team-productivity)
+- [021. Factory Missions](ch08/021-factory-missions)
+- [022. Oz Multi-Harness Cloud Agent Orchestration (Warp)](ch08/022-oz-multi-harness-cloud-agent-orchestration-warp)
+- [023. 扣子 3.0 协作系统：项目化 + Agent 编排 + 工具链打通](ch08/023-3-0-agent)
+- [024. AgentRun：阿里云多 Agent 生产级协作方案（A2A 开放协议）](ch08/024-agentrun-agent-a2a)
+- [025. Orchestrating Self-Evolving Agents with CrewAI and NVIDIA NemoClaw](ch08/025-orchestrating-self-evolving-agents-with-crewai-and-nvidia-ne)
+- [026. AP2 协议实测：Mandate 机制、Task 状态机与多 Agent 支付](ch08/026-ap2-mandate-task-agent)
 
 ### ⭐⭐⭐⭐⭐ 大师（2 篇）
 
-- [026. Claude Code Dynamic Workflows 多Agent编排](ch08/026-claude-code-dynamic-workflows-agent)
-- [027. 古法程序员复杂任务 Spec 写作：多 Agent 编排 + Skill 三层架构 + Gate 四态](ch08/027-spec-agent-skill-gate)
+- [027. Claude Code Dynamic Workflows 多Agent编排](ch08/027-claude-code-dynamic-workflows-agent)
+- [028. 古法程序员复杂任务 Spec 写作：多 Agent 编排 + Skill 三层架构 + Gate 四态](ch08/028-spec-agent-skill-gate)
 
 
 ---

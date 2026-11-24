@@ -2,7 +2,7 @@
 
 > 让模型跑得更快：投机解码、MoE、PD 分离、量化
 
-> 本章收录 **16 篇**实体，按深度递增排列。
+> 本章收录 **17 篇**实体，按深度递增排列。
 
 ---
 
@@ -10,8 +10,8 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐⭐ 工程师 | 需编程基础 | 2 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 6 |
+| ⭐⭐ 工程师 | 需编程基础 | 1 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 8 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 5 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 3 |
 
@@ -35,33 +35,34 @@
 
 ## 本章内容
 
-### ⭐⭐ 工程师（2 篇）
+### ⭐⭐ 工程师（1 篇）
 
-- [001. Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP](ch16/001-profiling-in-pytorch-part-2-from-nn-linear-to-a-fused-mlp)
-- [002. Pytorch in Kernel Recsys Optimization](ch16/002-pytorch-in-kernel-recsys-optimization)
+- [001. Pytorch in Kernel Recsys Optimization](ch16/001-pytorch-in-kernel-recsys-optimization)
 
-### ⭐⭐⭐ 专家（6 篇）
+### ⭐⭐⭐ 专家（8 篇）
 
+- [002. 淘小蜜分流模型：把四分类做成候选 logits 选择（Jev 与 System One 的生产对照）](ch16/002-logits-jev-system-one)
 - [003. GLM-5 Scaling 痛点与推理优化](ch16/003-glm-5-scaling)
 - [004. 线性注意力到 KDA：固定状态如何演进，以及它在 vLLM 里怎么跑](ch16/004-kda-vllm)
-- [005. vLLM V0→V1 迁移中的 logprob 差异修复](ch16/005-vllm-v0-v1-logprob)
-- [006. SGLang](ch16/006-sglang)
-- [007. 从 Chroma 换成 Qdrant，我踩了 100 万向量的坑](ch16/007-chroma-qdrant-100)
-- [008. How to Calculate the Inference Efficiency Ratio](ch16/008-how-to-calculate-the-inference-efficiency-ratio)
+- [005. Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP](ch16/005-profiling-in-pytorch-part-2-from-nn-linear-to-a-fused-mlp)
+- [006. vLLM V0→V1 迁移中的 logprob 差异修复](ch16/006-vllm-v0-v1-logprob)
+- [007. SGLang](ch16/007-sglang)
+- [008. 从 Chroma 换成 Qdrant，我踩了 100 万向量的坑](ch16/008-chroma-qdrant-100)
+- [009. How to Calculate the Inference Efficiency Ratio](ch16/009-how-to-calculate-the-inference-efficiency-ratio)
 
 ### ⭐⭐⭐⭐ 科学家（5 篇）
 
-- [009. Apple Siri 私有推理（Private Inference）不私有：三个对抗者都不受加密学保护](ch16/009-apple-siri-private-inference)
-- [010. EAGLE-3 投机解码与 USP 长序列训练优化](ch16/010-eagle-3-usp)
-- [011. LLM 推理流水线完整解析：Prefill-Decode 双阶段模型](ch16/011-llm-prefill-decode)
-- [012. PithTrain：陈天奇 + CMU Flame Center 推出的 agent-native MoE 训练框架（11K Python / 双重效率）](ch16/012-pithtrain-cmu-flame-center-agent-native-moe-11k-pyth)
-- [013. 具身智能 Sim-to-Real 迁移：主动推理、行为树与内在动机引擎的工程化方案](ch16/013-sim-to-real)
+- [010. Apple Siri 私有推理（Private Inference）不私有：三个对抗者都不受加密学保护](ch16/010-apple-siri-private-inference)
+- [011. EAGLE-3 投机解码与 USP 长序列训练优化](ch16/011-eagle-3-usp)
+- [012. LLM 推理流水线完整解析：Prefill-Decode 双阶段模型](ch16/012-llm-prefill-decode)
+- [013. PithTrain：陈天奇 + CMU Flame Center 推出的 agent-native MoE 训练框架（11K Python / 双重效率）](ch16/013-pithtrain-cmu-flame-center-agent-native-moe-11k-pyth)
+- [014. 具身智能 Sim-to-Real 迁移：主动推理、行为树与内在动机引擎的工程化方案](ch16/014-sim-to-real)
 
 ### ⭐⭐⭐⭐⭐ 大师（3 篇）
 
-- [014. 手机应用原生大模型：先定预算，再定架构](ch16/014-page-014)
-- [015. Build real-time voice applications with Amazon SageMaker AI and vLLM](ch16/015-build-real-time-voice-applications-with-amazon-sagemaker-ai)
-- [016. The next generation of speculative decoding: DFlash and Spec V2 - LMSYS Blog](ch16/016-the-next-generation-of-speculative-decoding-dflash-and-spec)
+- [015. 手机应用原生大模型：先定预算，再定架构](ch16/015-page-015)
+- [016. Build real-time voice applications with Amazon SageMaker AI and vLLM](ch16/016-build-real-time-voice-applications-with-amazon-sagemaker-ai)
+- [017. The next generation of speculative decoding: DFlash and Spec V2 - LMSYS Blog](ch16/017-the-next-generation-of-speculative-decoding-dflash-and-spec)
 
 
 ---

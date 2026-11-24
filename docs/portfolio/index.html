@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23b54a26'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-size='34' font-family='serif' font-weight='700' fill='white'%3EQ%3C/text%3E%3C/svg%3E">
+<meta name="description" content="钱金国（Jinguo Qian）Applied AI 作品集：将推荐、VLM 评测、证据型 Agent 与智能决策系统从验证推进到生产。">
+<meta property="og:title" content="钱金国 · Applied AI Portfolio">
+<meta property="og:description" content="把高风险 AI 系统从验证推进到生产：推荐、风险研判、评测、证据型 Agent。">
+<meta property="og:type" content="website">
+<title>钱金国 · Applied AI Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700;900&family=Noto+Sans+SC:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f4f1ea;--paper-2:#faf8f3;--ink:#181c22;--muted:#606873;--faint:#858c95;
+  --line:#d8d1c4;--line-2:#c5bdaD;--accent:#b54a26;--accent-2:#7d2b15;
+  --green:#146b5b;--green-soft:#dae9e4;--orange-soft:#f3dfd5;--slate:#171d25;
+  --slate-2:#0e1319;--slate-ink:#f0ece2;--slate-muted:#aeb7c0;--slate-line:#343c47;
+  --radius:18px;--shadow:0 1px 2px rgba(20,24,30,.05),0 18px 52px -28px rgba(20,24,30,.24);
+}
+@media(prefers-color-scheme:dark){
+  :root{--paper:#101419;--paper-2:#171c23;--ink:#eeeae1;--muted:#b2bac3;--faint:#87919d;
+  --line:#2c343e;--line-2:#404957;--accent:#e4774d;--accent-2:#f19874;
+  --green:#52bea8;--green-soft:#15362f;--orange-soft:#3b281f;--slate:#090d11;--slate-2:#06090c;
+  --slate-ink:#eeeae1;--slate-muted:#9da8b3;--slate-line:#2c343e;
+  --shadow:0 1px 2px rgba(0,0,0,.35),0 22px 60px -30px rgba(0,0,0,.7)}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:82px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Sans SC",system-ui,-apple-system,"PingFang SC",sans-serif;font-size:16px;line-height:1.72;-webkit-font-smoothing:antialiased}
+::selection{background:var(--orange-soft);color:var(--ink)}
+a{color:inherit;text-decoration:none}a:hover{color:var(--accent)}
+button{font:inherit}
+.mono{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace}
+.wrap{width:min(1180px,calc(100% - 44px));margin:auto}
+.skip{position:fixed;left:12px;top:-60px;z-index:200;background:var(--ink);color:var(--paper);padding:10px 16px;border-radius:8px}
+.skip:focus{top:12px}
+.top{position:sticky;top:0;z-index:50;border-bottom:1px solid color-mix(in srgb,var(--line) 90%,transparent);background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.top-in{height:66px;display:flex;align-items:center;gap:28px}
+.brand{display:flex;align-items:baseline;gap:9px;font-weight:700;letter-spacing:.01em;white-space:nowrap}
+.brand strong{font-family:"Noto Serif SC",serif;font-size:17px;font-weight:900}.brand span{font:500 11px/1 "IBM Plex Mono",monospace;letter-spacing:.09em;color:var(--accent)}
+.nav{margin-left:auto;display:flex;align-items:center;gap:3px}
+.nav a{font-size:13px;font-weight:600;color:var(--muted);padding:7px 11px;border-radius:8px}.nav a:hover{background:var(--paper-2);color:var(--ink)}
+.top-cta{margin-left:6px;border:1px solid var(--ink);border-radius:9px;padding:8px 15px!important;color:var(--paper)!important;background:var(--ink)}.top-cta:hover{background:var(--accent)!important;border-color:var(--accent)!important;color:#fff!important}
+.menu{display:none;margin-left:auto;background:none;border:1px solid var(--line);border-radius:8px;padding:6px 10px;color:var(--ink)}
+.hero{padding:72px 0 0;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:640px;height:640px;border-radius:50%;border:1px solid color-mix(in srgb,var(--line) 45%,transparent);right:-350px;top:10px;pointer-events:none}
+.hero:after{content:"";position:absolute;width:350px;height:350px;border-radius:50%;border:1px solid color-mix(in srgb,var(--line) 55%,transparent);right:-205px;top:155px;pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(300px,.7fr);gap:70px;align-items:end;position:relative;z-index:1}
+.kicker{display:flex;align-items:center;gap:10px;font:600 12px/1.5 "IBM Plex Mono",monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.kicker:before{content:"";display:block;width:28px;height:1px;background:currentColor}
+h1{font-family:"Noto Serif SC",serif;font-size:clamp(48px,7vw,84px);font-weight:900;line-height:1.12;letter-spacing:-.018em;margin:20px 0 16px;max-width:840px}
+h1 em{font-style:normal;color:var(--accent)}
+.hero-lead{font-size:clamp(19px,2.2vw,24px);line-height:1.62;font-weight:500;max-width:760px;margin:0;color:var(--ink)}
+.hero-lead strong{font-weight:700;border-bottom:2px solid var(--accent);padding-bottom:1px}
+.hero-note{font-size:14px;color:var(--muted);margin:20px 0 0;max-width:720px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid var(--line-2);border-radius:10px;background:var(--paper-2);color:var(--ink);padding:11px 17px;font-weight:650;font-size:14px;cursor:pointer;transition:.18s ease}
+.btn:hover{border-color:var(--accent);color:var(--accent);text-decoration:none;transform:translateY(-1px)}
+.btn.primary{background:var(--ink);color:var(--paper);border-color:var(--ink)}.btn.primary:hover{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn svg{width:15px;height:15px}
+.hero-aside{position:relative;padding:24px;border:1px solid var(--line);border-radius:var(--radius);background:color-mix(in srgb,var(--paper-2) 92%,transparent);box-shadow:var(--shadow)}
+.aside-label{font:600 10px/1.4 "IBM Plex Mono",monospace;letter-spacing:.13em;color:var(--faint);text-transform:uppercase}
+.aside-title{font-family:"Noto Serif SC",serif;font-weight:900;font-size:18px;margin:9px 0 19px}
+.pipeline{display:grid;gap:0}
+.pipe{display:grid;grid-template-columns:28px 1fr auto;gap:11px;align-items:center;padding:10px 0;border-top:1px solid var(--line)}
+.pipe:first-child{border-top:none}.pipe .n{font:500 10px "IBM Plex Mono",monospace;color:var(--accent)}.pipe .name{font-size:13.5px;font-weight:650}.pipe .st{font:500 9px "IBM Plex Mono",monospace;letter-spacing:.08em;color:var(--green)}
+.hero-aside p{font-size:12.5px;line-height:1.65;color:var(--muted);margin:17px 0 0;padding-top:16px;border-top:1px solid var(--line)}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:58px;background:var(--slate-line);border:1px solid var(--slate-line);border-radius:var(--radius);overflow:hidden;position:relative;z-index:1}
+.metric{background:var(--slate);color:var(--slate-ink);padding:27px 25px 24px;min-height:150px;display:flex;flex-direction:column}
+.metric .v{font:600 clamp(25px,3vw,35px)/1.15 "IBM Plex Mono",monospace;letter-spacing:-.04em}.metric .v em{font-style:normal;color:#ef8159}.metric .k{font-size:12px;line-height:1.55;color:var(--slate-muted);margin-top:13px}.metric .scope{font:500 9px/1.45 "IBM Plex Mono",monospace;color:#8f9aa6;margin-top:auto;padding-top:10px;letter-spacing:.045em}
+.metric-note{grid-column:1/-1;background:var(--slate-2);padding:14px 24px;color:var(--slate-muted);font-size:12px;line-height:1.65}.metric-note strong{color:var(--slate-ink)}
+section{padding:88px 0 0}
+.section-head{display:grid;grid-template-columns:82px 1fr auto;gap:20px;align-items:end;border-bottom:1px solid var(--ink);padding-bottom:13px;margin-bottom:30px}
+.section-no{font:600 11px/1 "IBM Plex Mono",monospace;color:var(--accent);letter-spacing:.1em;padding-bottom:4px}
+.section-head h2{font-family:"Noto Serif SC",serif;font-size:clamp(27px,4vw,38px);font-weight:900;line-height:1.2;margin:0}
+.section-head p{font-size:13px;color:var(--faint);margin:0 0 3px;text-align:right}
+.thesis{display:grid;grid-template-columns:1.12fr .88fr;gap:44px;align-items:start;margin-bottom:28px}
+.thesis-copy{font-family:"Noto Serif SC",serif;font-size:clamp(22px,3vw,31px);font-weight:700;line-height:1.55;margin:0}.thesis-copy span{color:var(--accent)}
+.thesis-side{border-left:1px solid var(--line);padding-left:28px;color:var(--muted);font-size:14px}.thesis-side strong{color:var(--ink)}
+.value-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--paper-2)}
+.value{padding:27px 27px 29px;border-left:1px solid var(--line)}.value:first-child{border-left:none}.value .num{font:600 10px/1 "IBM Plex Mono",monospace;color:var(--accent);letter-spacing:.1em}.value h3{font-size:17px;margin:15px 0 9px}.value p{font-size:13.5px;color:var(--muted);margin:0}.value .proof{display:block;font-size:12px;color:var(--ink);margin-top:17px;padding-top:13px;border-top:1px dashed var(--line)}
+.filters{display:flex;gap:7px;flex-wrap:wrap;margin:0 0 20px}
+.filter{border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:999px;padding:7px 13px;font-size:12px;font-weight:650;cursor:pointer}.filter:hover{border-color:var(--accent)}.filter.active{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.projects{display:grid;gap:16px}.project{background:var(--paper-2);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;transition:.2s ease}.project:hover{border-color:var(--line-2);transform:translateY(-2px)}.project[hidden]{display:none}
+.project-main{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(260px,.75fr)}
+.project-copy{padding:30px 32px 26px}.project-meta{display:flex;align-items:center;gap:9px 13px;flex-wrap:wrap;margin-bottom:14px}.status{font:600 9.5px/1.4 "IBM Plex Mono",monospace;letter-spacing:.07em;background:var(--green-soft);color:var(--green);padding:5px 8px;border-radius:5px;text-transform:uppercase}.status.lab{background:var(--orange-soft);color:var(--accent)}.status.design{background:var(--paper);color:var(--muted);border:1px solid var(--line)}.project-meta .date{font:500 10.5px "IBM Plex Mono",monospace;color:var(--faint)}
+.project h3{font-family:"Noto Serif SC",serif;font-size:clamp(21px,2.5vw,26px);font-weight:900;line-height:1.42;margin:0}
+.project .en{display:block;font:600 10px/1.4 "IBM Plex Mono",monospace;letter-spacing:.08em;color:var(--faint);margin-bottom:5px}
+.project-summary{font-size:14.5px;color:var(--muted);margin:12px 0 0;max-width:64em}.project-summary strong{color:var(--ink)}
+.evidence-list{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:8px}.evidence-list li{position:relative;padding-left:18px;font-size:13.5px;color:var(--muted)}.evidence-list li:before{content:"";position:absolute;left:1px;top:.72em;width:5px;height:5px;border-radius:50%;background:var(--accent)}.evidence-list strong{color:var(--ink)}
+.project-side{border-left:1px solid var(--line);background:color-mix(in srgb,var(--paper) 56%,var(--paper-2));padding:29px 26px;display:flex;flex-direction:column}.side-label{font:600 9px/1.3 "IBM Plex Mono",monospace;letter-spacing:.11em;color:var(--faint);text-transform:uppercase}.outcomes{display:grid;grid-template-columns:1fr 1fr;gap:17px 15px;margin:14px 0 20px}.outcome .ov{font:600 16px/1.3 "IBM Plex Mono",monospace;color:var(--ink)}.outcome .ok{font-size:10.5px;line-height:1.45;color:var(--muted);margin-top:4px}
+.side-boundary{font-size:11.5px;line-height:1.65;color:var(--muted);margin:auto 0 0;padding-top:15px;border-top:1px dashed var(--line)}.side-boundary strong{color:var(--ink)}
+.stack{font:500 10px/1.65 "IBM Plex Mono",monospace;color:var(--faint);margin-top:14px}
+.project-wide{display:grid;grid-template-columns:1.25fr .75fr}.project-wide .project-side{border-left:1px solid var(--line)}
+.method{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--paper-2);margin-top:8px}.method-step{padding:22px 20px 25px;border-left:1px solid var(--line)}.method-step:first-child{border-left:none}.method-step .idx{font:500 10px "IBM Plex Mono",monospace;color:var(--accent)}.method-step h3{font-size:15px;margin:12px 0 4px}.method-step .lab{font:500 9px "IBM Plex Mono",monospace;letter-spacing:.06em;color:var(--faint);text-transform:uppercase}.method-step p{font-size:12.5px;color:var(--muted);line-height:1.6;margin:10px 0 0}
+.ledger{margin-top:26px;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--paper-2)}
+.ledger-row{display:grid;grid-template-columns:1.05fr 1.5fr 1.1fr;border-top:1px solid var(--line)}.ledger-row:first-child{border-top:none}.ledger-head{background:var(--slate);color:var(--slate-muted);font:600 9.5px/1.3 "IBM Plex Mono",monospace;letter-spacing:.09em;text-transform:uppercase}.ledger-cell{padding:18px 22px;border-left:1px solid var(--line);font-size:13px;color:var(--muted)}.ledger-cell:first-child{border-left:none}.ledger-head .ledger-cell{border-color:var(--slate-line);padding:11px 22px}.ledger-cell strong{display:block;color:var(--ink);font-size:13.5px;margin-bottom:2px}.ledger-head .ledger-cell{color:var(--slate-muted)}
+.timeline{margin-top:5px}.xp{display:grid;grid-template-columns:150px 1fr;gap:30px;padding:25px 0;border-top:1px solid var(--line)}.xp:last-child{border-bottom:1px solid var(--line)}.xp-date{font:500 11px/1.7 "IBM Plex Mono",monospace;color:var(--faint)}.xp h3{font-size:18px;line-height:1.5;margin:0}.xp h3 .role{color:var(--accent);font-size:14px;font-weight:650}.xp p{font-size:13.5px;color:var(--muted);margin:7px 0 0}.xp .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}.tag{font-size:11px;background:color-mix(in srgb,var(--paper) 60%,var(--paper-2));border:1px solid var(--line);border-radius:5px;padding:3px 7px;color:var(--muted)}
+.principles{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--paper-2)}.principle{padding:25px 27px;border-top:1px solid var(--line)}.principle:nth-child(-n+2){border-top:none}.principle:nth-child(even){border-left:1px solid var(--line)}.principle .num{font:600 10px "IBM Plex Mono",monospace;color:var(--accent)}.principle h3{font-size:16px;margin:11px 0 5px}.principle p{font-size:13px;color:var(--muted);margin:0}
+.contact{margin-top:92px;background:var(--slate);color:var(--slate-ink);border-radius:24px;padding:46px 48px;display:grid;grid-template-columns:1.45fr .75fr;gap:52px;position:relative;overflow:hidden}.contact:after{content:"FELIX";position:absolute;right:-22px;bottom:-73px;color:#fff;opacity:.025;font:900 140px/1 "IBM Plex Mono",monospace;letter-spacing:-.08em;pointer-events:none}.contact h2{font-family:"Noto Serif SC",serif;font-size:clamp(30px,4vw,43px);line-height:1.32;font-weight:900;margin:10px 0 13px}.contact p{color:var(--slate-muted);font-size:14px;max-width:700px;margin:0}.contact .contact-actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:25px}.contact .btn{background:transparent;border-color:var(--slate-line);color:var(--slate-ink)}.contact .btn:hover{border-color:#ef8159;color:#fff}.contact .btn.primary{background:var(--slate-ink);border-color:var(--slate-ink);color:var(--slate)}.contact .btn.primary:hover{background:#ef8159;border-color:#ef8159;color:#fff}.contact-side{align-self:end;position:relative;z-index:1;border-left:1px solid var(--slate-line);padding-left:26px}.contact-side .label{font:600 9.5px "IBM Plex Mono",monospace;color:#8f9aa6;letter-spacing:.12em}.contact-side a{display:block;margin-top:11px;color:var(--slate-ink);font:500 12px/1.55 "IBM Plex Mono",monospace}.contact-side a:hover{color:#ef8159}
+footer{padding:30px 0 42px;color:var(--faint);font-size:11.5px}.foot{display:flex;gap:22px;align-items:flex-start}.foot .copy{margin-left:auto;text-align:right}
+.small{font-size:12px;color:var(--faint)}.nowrap{white-space:nowrap}
+@media(max-width:930px){
+  .nav a:not(.top-cta){display:none}.nav{margin-left:auto}.hero-grid{grid-template-columns:1fr;gap:34px}.hero-aside{max-width:520px;grid-row:2}.metrics{grid-template-columns:1fr 1fr}.value-grid{grid-template-columns:1fr}.value{border-left:none;border-top:1px solid var(--line)}.value:first-child{border-top:none}.thesis{grid-template-columns:1fr;gap:20px}.thesis-side{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:18px}.project-main,.project-wide{grid-template-columns:1fr}.project-side{border-left:none;border-top:1px solid var(--line)}.method{grid-template-columns:1fr 1fr}.method-step{border-top:1px solid var(--line)}.method-step:nth-child(odd){border-left:none}.method-step:nth-child(-n+2){border-top:none}.ledger-row{grid-template-columns:1fr}.ledger-cell{border-left:none;border-top:1px dashed var(--line)}.ledger-row:first-child .ledger-cell:first-child{border-top:none}.contact{grid-template-columns:1fr;gap:32px}.contact-side{border-left:none;border-top:1px solid var(--slate-line);padding-left:0;padding-top:23px}.section-head{grid-template-columns:60px 1fr}.section-head p{display:none}
+}
+@media(max-width:640px){
+  h1{font-size:clamp(34px,10.1vw,48px);letter-spacing:-.025em}
+  .wrap{width:min(100% - 28px,1180px)}.top-in{height:58px}.brand span{display:none}.nav{gap:0}.hero{padding-top:48px}h1{font-size:clamp(34px,10.1vw,48px);letter-spacing:-.025em}.hero-lead{font-size:18px}.hero-actions{display:grid;grid-template-columns:1fr}.hero-actions .btn{width:100%}.hero-aside{padding:20px}.metrics{margin-top:42px}.metric{padding:21px 18px;min-height:137px}.metric-note{padding:13px 18px}section{padding-top:68px}.section-head{grid-template-columns:42px 1fr;gap:10px}.project-copy{padding:24px 20px}.project-side{padding:22px 20px}.outcomes{gap:15px}.method{grid-template-columns:1fr}.method-step{border-left:none;border-top:1px solid var(--line)}.method-step:nth-child(2){border-top:1px solid var(--line)}.method-step:first-child{border-top:none}.xp{grid-template-columns:1fr;gap:8px}.principles{grid-template-columns:1fr}.principle:nth-child(even){border-left:none}.principle:nth-child(2){border-top:1px solid var(--line)}.contact{padding:32px 23px;margin-top:72px;border-radius:18px}.foot{display:block}.foot .copy{text-align:left;margin-top:14px}
+}
+@media(max-width:420px){.metrics{grid-template-columns:1fr}.metric{min-height:auto}.metric .scope{padding-top:9px}.project-meta .date{width:100%}.outcomes{grid-template-columns:1fr 1fr}.nav .top-cta{padding:7px 10px!important;font-size:12px!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="/" aria-label="返回 jinguo.tech"><strong>钱金国</strong><span>APPLIED AI</span></a>
+    <nav class="nav" aria-label="作品集导航">
+      <a href="#value">价值</a><a href="#projects">项目</a><a href="#method">方法</a><a href="#experience">经历</a>
+      <a class="top-cta" href="mailto:geekqjg@outlook.com">联系我</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <div class="wrap">
+    <section class="hero" aria-labelledby="hero-title" style="padding-top:72px">
+      <div class="hero-grid">
+        <div>
+          <div class="kicker">Applied AI · Production LLM Systems</div>
+          <h1 id="hero-title">把高风险 AI 系统<br><em>从验证推进到生产</em></h1>
+          <p class="hero-lead"><strong>7 年全栈与大数据系统经验，近 2 年专注生产级 Applied AI。</strong> 在 eBay Payments &amp; Risk，把推荐、VLM 评测、证据调查和智能决策工作流，做成可上线、可评测、可度量的系统。</p>
+          <p class="hero-note">上海 · 目标岗位：Applied AI / LLM Systems / Forward Deployed Engineer · eBay Payments &amp; Risk（2024.07 — 至今）</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">查看项目证据
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn" href="https://muse.ai/s/qian-jin-guo-applied-ai-portfolio-uxc6xpxrxvxfvxuog/e-sP3fy7Q_gfehr3XqYjQOK1K1icRrXnaRnDcCM6kxY" target="_blank" rel="noopener">互动版作品集 ↗</a>
+            <a class="btn" href="/assets/portfolio/Jinguo-Qian-Resume-ZH.pdf" target="_blank">下载中文简历</a>
+          </div>
+        </div>
+        <aside class="hero-aside" aria-label="交付框架">
+          <div class="aside-label">How I create value</div>
+          <div class="aside-title">生产 AI 的交付框架</div>
+          <div class="pipeline">
+            <div class="pipe"><span class="n">01</span><span class="name">业务问题与损失量化</span><span class="st">FRAME</span></div>
+            <div class="pipe"><span class="n">02</span><span class="name">模型、规则与数据分工</span><span class="st">DESIGN</span></div>
+            <div class="pipe"><span class="n">03</span><span class="name">低延迟服务与系统集成</span><span class="st">BUILD</span></div>
+            <div class="pipe"><span class="n">04</span><span class="name">评测、回归与风险门禁</span><span class="st">PROVE</span></div>
+            <div class="pipe"><span class="n">05</span><span class="name">灰度上线与业务度量</span><span class="st">SHIP</span></div>
+          </div>
+          <p>我的差异化来自四种经验的组合：支付风控的责任边界、全栈系统的落地能力、评测研究的证据意识，以及把新模型快速做成可运行原型的工程速度。</p>
+        </aside>
+      </div>
+      <div class="metrics" aria-label="关键生产证据">
+        <div class="metric"><div class="v">25.8<em>万</em>/日</div><div class="k">Checkout 推荐系统日均 API 请求</div><div class="scope">STABLE PERIOD · SYSTEM LEVEL</div></div>
+        <div class="metric"><div class="v">P99&lt;100<em>ms</em></div><div class="k">全站点 Web / App 推荐服务延迟</div><div class="scope">ONLINE SERVICE · SHIPPED</div></div>
+        <div class="metric"><div class="v">$30<em>万</em>/日</div><div class="k">稳定期生产看板观测的增量 GMV</div><div class="scope">SYSTEM IMPACT · NOT INDIVIDUAL ATTRIBUTION</div></div>
+        <div class="metric"><div class="v">3<em>万</em></div><div class="k">商品质量评测复核样本</div><div class="scope">LLM-AS-JUDGE · GEPA · REVIEW</div></div>
+        <div class="metric-note"><strong>口径先行：</strong>业务结果标为生产看板记录的系统级结果，不包装成个人归因；目标设计、离线实验与已上线能力分别标注。</div>
+      </div>
+    </section>
+
+    <section id="value" aria-labelledby="value-title">
+      <div class="section-head"><span class="section-no">01 / VALUE</span><h2 id="value-title">我能解决的问题</h2><p>不是“会用什么”，而是“能交付什么”</p></div>
+      <div class="thesis">
+        <p class="thesis-copy">AI 进入交易、支付和风控后，真正稀缺的能力不是调用模型，而是<span>把不确定性纳入可验证、可回退的系统边界。</span></p>
+        <div class="thesis-side">我适合需要同时面对<strong>业务损失、复杂系统、效果评测和上线责任</strong>的团队。技术栈只是实现方式；核心价值是把模糊问题变成可执行、可解释、可度量的闭环。</div>
+      </div>
+      <div class="value-grid">
+        <article class="value"><div class="num">01 / SHIP</div><h3>从模型能力到业务结果</h3><p>识别真实损失与干预点，组合模型、规则、数据和产品入口，把原型推进为全量服务。</p><div class="proof">Checkout 推荐：全站点 Web / App 全量上线</div></article>
+        <article class="value"><div class="num">02 / EVALUATE</div><h3>从“看起来不错”到可信证据</h3><p>先定标签、切分与验收口径，再设计模型、评测数据集和回归门槛，主动暴露失败边界。</p><div class="proof">商品质量：3 万样本复核 + GEPA + 风险分档</div></article>
+        <article class="value"><div class="num">03 / CONSTRAIN</div><h3>从自由生成到高可信工作流</h3><p>用时间截断、权限、引用校验、弃答和 HITL 建立责任边界，让 AI 增强流程而不接管所有决策。</p><div class="proof">证据 RAG：可运行原型 + 5/5 合同自测</div></article>
+      </div>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-title">
+      <div class="section-head"><span class="section-no">02 / WORK</span><h2 id="projects-title">精选项目证据</h2><p>生产交付 · 前沿实验 · 可追问的实现</p></div>
+      <div class="filters" aria-label="筛选项目">
+        <button class="filter active" type="button" data-filter="all">全部</button>
+        <button class="filter" type="button" data-filter="shipped">已上线</button>
+        <button class="filter" type="button" data-filter="built">个人构建</button>
+        <button class="filter" type="button" data-filter="explored">探索研究</button>
+      </div>
+      <div class="projects">
+        <article class="project" data-kind="shipped">
+          <div class="project-main">
+            <div class="project-copy">
+              <div class="project-meta"><span class="status">已全量上线 · 2025.07</span><span class="date">2024.07 — 2025.07</span></div>
+              <h3><span class="en">01 / CHECKOUT RECOMMENDATION</span>结算错误页相似商品推荐</h3>
+              <p class="project-summary">用户结算失败时，原路径几乎只有流失。我在错误页构建“相似且买得到”的替代商品推荐，把失败点变成可恢复的交易机会。负责服务集成、异步编排与上线推进，搜索科学团队负责模型训练。</p>
+              <ul class="evidence-list">
+                <li><strong>决策：</strong>从物流拦截损失、可配送替代品与优惠/重试路径中选择可闭环的产品干预。</li>
+                <li><strong>构建：</strong>Java + GraphQL + CompletableFuture 并行编排；向量、BM25 与多模态召回融合；库存硬过滤后按相关性排序。</li>
+                <li><strong>结果：</strong>推动全站点、桌面/移动 Web 与 App 全量上线；P99 &lt; 100ms。</li>
+              </ul>
+            </div>
+            <aside class="project-side"><div class="side-label">Evidence / Outcome</div><div class="outcomes"><div class="outcome"><div class="ov">25.8万</div><div class="ok">日均 API 请求（稳定期）</div></div><div class="outcome"><div class="ov">$30万/日</div><div class="ok">系统级增量 GMV</div></div><div class="outcome"><div class="ov">2.65%</div><div class="ok">推荐漏斗转化率</div></div><div class="outcome"><div class="ov">0.70→0.90</div><div class="ok">离线 Top-10 同款命中率</div></div></div><div class="side-boundary"><strong>我的边界：</strong>产品集成、服务开发与上线推进；V1→V2 模型训练由搜索科学负责。GMV 为生产看板系统结果。</div><div class="stack">Java · GraphQL · OpenSearch · BM25 · HNSW ANN</div></aside>
+          </div>
+        </article>
+
+        <article class="project" data-kind="shipped explored">
+          <div class="project-main">
+            <div class="project-copy">
+              <div class="project-meta"><span class="status">生产运行中</span><span class="status design">扩展设计中</span><span class="date">2026.01 — 至今</span></div>
+              <h3><span class="en">02 / RULE ALERTING</span>风控规则异常智能研判</h3>
+              <p class="project-summary">把规则命中、时序异常与趋势图理解组合成可执行的风险证据，只把高可信候选送入既有告警链路。生产基线与证据型 RAG / Agent 扩展严格分开呈现。</p>
+              <ul class="evidence-list">
+                <li><strong>生产基线：</strong>Rule / Rule+Flow 双粒度，融合 Hive 规则、49 天 Prophet 残差与趋势图 VLM，生成 P0/P1/P2 证据标签。</li>
+                <li><strong>扩展设计：</strong>事件时间截断、权限过滤、混合检索、引用校验与模型外 Policy Gate；只允许 advisory、abstain 或 HITL。</li>
+                <li><strong>工程原则：</strong>新链路失败不阻断既有告警；先做 Gold / Shadow / Canary，再讨论生产接管。</li>
+              </ul>
+            </div>
+            <aside class="project-side"><div class="side-label">Architecture / Responsibility</div><div class="outcomes"><div class="outcome"><div class="ov">2 路</div><div class="ok">生产粒度</div></div><div class="outcome"><div class="ov">3 路</div><div class="ok">规则 × 时序 × VLM 研判</div></div><div class="outcome"><div class="ov">3 态</div><div class="ok">建议 / 弃答 / 人工复核</div></div><div class="outcome"><div class="ov">Fail-open</div><div class="ok">不阻断既有告警</div></div></div><div class="side-boundary"><strong>我的边界：</strong>生产研判已运行；证据 RAG 与有界 Agent 是目标设计 / 原型阶段，未包装成已上线能力。</div><div class="stack">Python · Spark · Prophet · VLM · LangGraph · Hybrid RAG</div></aside>
+          </div>
+        </article>
+
+        <article class="project" data-kind="built explored">
+          <div class="project-main">
+            <div class="project-copy">
+              <div class="project-meta"><span class="status lab">个人可运行原型</span><span class="date">2026.11</span></div>
+              <h3><span class="en">03 / EVIDENCE RAG CONSOLE</span>证据调查与人工复核工作台</h3>
+              <p class="project-summary">把“让 Agent 解释告警”做成可复现的证据链：事件进入队列，经过实体、时间、ACL 与症状过滤，再完成 BM25 召回、角色化证据包、引用校验、策略门禁和审批审计。</p>
+              <ul class="evidence-list">
+                <li><strong>真实闭环：</strong>webhook → queue → worker → EvidencePack → citation gate → HITL → artifact + audit JSONL。</li>
+                <li><strong>失败语义：</strong>无授权来源时强制弃答；实体隔离；重复事件幂等去重；只追加 advisory，不抑制生产基线。</li>
+                <li><strong>验证：</strong>5 个合同用例自测 5/5 通过；面谈可现场运行并解释未实现边界。</li>
+              </ul>
+            </div>
+            <aside class="project-side"><div class="side-label">Proof / Demo</div><div class="outcomes"><div class="outcome"><div class="ov">5/5</div><div class="ok">合同级自测通过</div></div><div class="outcome"><div class="ov">4 重</div><div class="ok">实体 / 时间 / ACL / 症状过滤</div></div><div class="outcome"><div class="ov">AUDIT</div><div class="ok">JSONL 审计记录</div></div><div class="outcome"><div class="ov">HITL</div><div class="ok">人工决策闭环</div></div></div><div class="side-boundary"><strong>演示口径：</strong>合成语料、本地单进程、无生产模型与 SLA；价值在于可运行、可解释、失败可复现。</div><div class="stack">Node · BM25 · EvidencePack · Policy Gate · HITL</div><a class="btn" style="margin-top:15px" href="mailto:geekqjg@outlook.com?subject=预约%20Evidence%20RAG%20原型演示">预约现场演示</a></aside>
+          </div>
+        </article>
+
+        <article class="project" data-kind="explored">
+          <div class="project-main">
+            <div class="project-copy">
+              <div class="project-meta"><span class="status lab">离线 PoC</span><span class="date">2026.11</span></div>
+              <h3><span class="en">04 / VLM JUDGE</span>商品图文一致性：剪枝、蒸馏与成本实验</h3>
+              <p class="project-summary">围绕 267 张真实商品图，比较纯文本、纯图像和图文输入，研究视觉 token、输出预算、服务并发，以及从 7B 教师到剪枝 + LoRA 学生模型的成本与可靠性。</p>
+              <ul class="evidence-list">
+                <li><strong>实验设计：</strong>固定正样本、跨类负样本、hard 子集与边界样本；从原始输出复算“正确 / 可解析 / 覆盖”三套口径。</li>
+                <li><strong>关键发现：</strong>文本臂在 hard 形态判别为 29/47，图像臂为 48/48；提示模型在部分样本上受标题文本偏见影响。</li>
+                <li><strong>工程结论：</strong>剪枝零样本解析率 0/267；教师响应蒸馏后恢复任务输出，但缺少 GT-only 对照，不能把收益全部归因给蒸馏。</li>
+              </ul>
+            </div>
+            <aside class="project-side"><div class="side-label">Experiment / Caveat</div><div class="outcomes"><div class="outcome"><div class="ov">267</div><div class="ok">真实商品图样本</div></div><div class="outcome"><div class="ov">16/28</div><div class="ok">保留 decoder 层数</div></div><div class="outcome"><div class="ov">254/255</div><div class="ok">16 层学生 batch 8 可解析样本正确数</div></div><div class="outcome"><div class="ov">1.99%</div><div class="ok">严格 JSON 解析失败率</div></div></div><div class="side-boundary"><strong>未验证：</strong>真实流量、跨品类泛化、独立测试集与生产 SLA。定位是暴露评测与工程问题的离线 PoC。</div><div class="stack">Qwen2.5-VL · LoRA · Response Distillation · DCU · Python</div></aside>
+          </div>
+        </article>
+
+        <article class="project" data-kind="shipped explored">
+          <div class="project-main">
+            <div class="project-copy">
+              <div class="project-meta"><span class="status">并行专项</span><span class="date">2026.01 — 2026.03</span></div>
+              <h3><span class="en">05 / MARKETPLACE QUALITY</span>商品内容质量评测与风险分档</h3>
+              <p class="project-summary">不是只统计“有多少错”，而是判断哪些错更可能造成业务损失。构建两阶段跨模型 LLM-as-Judge 流程、复核 3 万样本，并把精度问题与治理优先级分开。</p>
+              <ul class="evidence-list">
+                <li><strong>评测：</strong>跨模型复核、GEPA 优化 Judge Skill / Prompt；VLM 用于标题、属性、成色与图片的跨来源冲突分析。</li>
+                <li><strong>风险：</strong>按相对索赔风险 lift 排序治理对象，处理风险倍数而不是简单命中量。</li>
+                <li><strong>闭环：</strong>参与 AgentGan-RL 难例研究，用 LLM 生成、BERT 评分、Precision / Recall 诊断与分歧筛选迭代数据。</li>
+              </ul>
+            </div>
+            <aside class="project-side"><div class="side-label">Quality / Prioritization</div><div class="outcomes"><div class="outcome"><div class="ov">3 万</div><div class="ok">复核样本</div></div><div class="outcome"><div class="ov">≈0.85%</div><div class="ok">确认错类率</div></div><div class="outcome"><div class="ov">≈1/3</div><div class="ok">原判正确样本存在粒度问题</div></div><div class="outcome"><div class="ov">Lift</div><div class="ok">按相对风险排序</div></div></div><div class="side-boundary"><strong>关注点：</strong>评测指标必须连接人审成本、误判代价与治理收益，离线 Judge 分数本身不是业务结果。</div><div class="stack">VLM · LLM-as-Judge · GEPA · BERT · AgentGan-RL</div></aside>
+          </div>
+        </article>
+      </div>
+
+      <div class="ledger" aria-label="项目证据台账">
+        <div class="ledger-row ledger-head"><div class="ledger-cell">Project</div><div class="ledger-cell">Strongest evidence</div><div class="ledger-cell">What I owned</div></div>
+        <div class="ledger-row"><div class="ledger-cell"><strong>Checkout Recommendation</strong>商业结果</div><div class="ledger-cell">全量上线；25.8 万请求/日；P99 &lt; 100ms；≈$30 万/日系统级 GMV</div><div class="ledger-cell">服务集成、异步编排、产品与上线推进</div></div>
+        <div class="ledger-row"><div class="ledger-cell"><strong>Rule Alerting</strong>生产与设计</div><div class="ledger-cell">小时级规则 + Prophet + VLM 生产研判；带门禁的 RAG / Agent 目标设计</div><div class="ledger-cell">方案设计、系统实现与边界定义</div></div>
+        <div class="ledger-row"><div class="ledger-cell"><strong>Evidence RAG</strong>可运行原型</div><div class="ledger-cell">5/5 合同自测；HITL、引用门禁、幂等与审计闭环</div><div class="ledger-cell">问题定义、系统设计与 AI 辅助实现</div></div>
+        <div class="ledger-row"><div class="ledger-cell"><strong>VLM Judge</strong>前沿实验</div><div class="ledger-cell">267 张真实图；剪枝 + LoRA 响应蒸馏；成本与解析率实验</div><div class="ledger-cell">实验设计、口径、badcase 复核与结果验收</div></div>
+      </div>
+    </section>
+
+    <section id="method" aria-labelledby="method-title">
+      <div class="section-head"><span class="section-no">03 / METHOD</span><h2 id="method-title">我的工作方式</h2><p>从问题发现到生产证据</p></div>
+      <div class="method">
+        <div class="method-step"><div class="idx">01</div><h3>定义损失</h3><div class="lab">Frame</div><p>先找真实摩擦、金额、频率与可干预点，避免先选模型再找场景。</p></div>
+        <div class="method-step"><div class="idx">02</div><h3>划分责任</h3><div class="lab">Design</div><p>决定哪些交给模型、规则、检索或人工，明确失败时系统怎么处理。</p></div>
+        <div class="method-step"><div class="idx">03</div><h3>构建闭环</h3><div class="lab">Build</div><p>把能力接入交易、风险或数据链路，处理延迟、幂等、权限与回退。</p></div>
+        <div class="method-step"><div class="idx">04</div><h3>建立证据</h3><div class="lab">Prove</div><p>固定标签与切分，做回归、失败归因和消融；主动写清不能证明什么。</p></div>
+        <div class="method-step"><div class="idx">05</div><h3>推进上线</h3><div class="lab">Ship</div><p>从 Shadow / Canary 到全量，用业务指标、SLA 和运维成本做验收。</p></div>
+      </div>
+      <div class="principles" style="margin-top:24px">
+        <div class="principle"><div class="num">01</div><h3>先写口径，再报结果</h3><p>分母、可解析率、系统级结果与个人贡献分别说清楚，避免漂亮数字脱离证据。</p></div>
+        <div class="principle"><div class="num">02</div><h3>把失败当成产品需求</h3><p>弃答、HITL、降级和审计不是补丁，而是高风险 AI 正常工作的一部分。</p></div>
+        <div class="principle"><div class="num">03</div><h3>保持模型外围的控制权</h3><p>关键策略门禁留在模型外；模型输出建议，系统负责权限、约束和最终路由。</p></div>
+        <div class="principle"><div class="num">04</div><h3>用快速原型降低不确定性</h3><p>先用可运行切片验证合同，再根据真实失败扩展复杂度，减少大架构先行。</p></div>
+      </div>
+    </section>
+
+    <section id="experience" aria-labelledby="experience-title">
+      <div class="section-head"><span class="section-no">04 / EXPERIENCE</span><h2 id="experience-title">经历与能力底座</h2><p>7 年复杂系统经验</p></div>
+      <div class="timeline">
+        <div class="xp"><div class="xp-date">2024.07 — 至今<br>上海</div><div><h3>eBay ｜ AI Full Stack Engineer<br><span class="role">Payments &amp; Risk · 签约主体 CLPS</span></h3><p>推荐、风控研判、商品质量、反事实决策与评测系统。与搜索科学、产品、风控和数据团队协作，把 AI 能力接入真实业务流程。</p><div class="tags"><span class="tag">Applied AI</span><span class="tag">Payments &amp; Risk</span><span class="tag">推荐集成</span><span class="tag">VLM / LLM Judge</span><span class="tag">HITL</span></div></div></div>
+        <div class="xp"><div class="xp-date">2022.02 — 2024.05<br>上海</div><div><h3>花旗集团 Citi ｜ Java 开发工程师<br><span class="role">个人银行与财富管理风险团队 · FTE</span></h3><p>响应监管要求，将 Excel 人工验证数字化；交付覆盖 40+ 国家、200+ 投资组合的 Camunda BPMN Maker-Checker 审批平台。代码覆盖率 &gt;95%，安全与开源扫描零问题。</p><div class="tags"><span class="tag">监管风控</span><span class="tag">Camunda BPMN</span><span class="tag">Java</span><span class="tag">Maker-Checker</span></div></div></div>
+        <div class="xp"><div class="xp-date">2019.07 — 2021.12<br>苏州</div><div><h3>巴士管家 ｜ Java 开发工程师<br><span class="role">基础架构研发部 · 管理培训生</span></h3><p>建设元数据、表级血缘、质量告警与权限治理；用 Impala/Hive + Redis Bitmap 支撑画像营销；用 Dubbo/RocketMQ 支撑高峰交易。</p><div class="tags"><span class="tag">数据平台</span><span class="tag">Spark / Hive</span><span class="tag">Kafka</span><span class="tag">分布式系统</span></div></div></div>
+      </div>
+      <div class="value-grid" style="margin-top:26px">
+        <article class="value"><div class="num">A / SYSTEMS</div><h3>服务与数据</h3><p>Java · Python · GraphQL · Spring Boot · Spark/Hive · Kafka · Ray</p><div class="proof">低延迟服务、异步编排、数据链路与可观测性</div></article>
+        <article class="value"><div class="num">B / AI</div><h3>模型与评测</h3><p>VLM · LLM-as-Judge · GEPA · LoRA · Response Distillation · Structured Outputs</p><div class="proof">标签设计、难例分析、预算控制与回归验证</div></article>
+        <article class="value"><div class="num">C / AGENTS</div><h3>证据与责任</h3><p>Hybrid RAG · LangGraph · Tool Use · Citation Gate · Policy Gate · HITL</p><div class="proof">可追溯证据、失败语义、人工复核与审计</div></article>
+      </div>
+    </section>
+
+    <section class="contact" aria-labelledby="contact-title">
+      <div><div class="kicker" style="color:#ef8159">Ready for the next hard problem</div><h2 id="contact-title">找一个能把 AI 真正带进生产的人？</h2><p>我关注需要强业务约束、跨团队集成、严谨评测与上线责任的机会。欢迎直接交流项目细节、追问实验口径，或预约 Evidence RAG 原型演示。</p><div class="contact-actions"><a class="btn primary" href="mailto:geekqjg@outlook.com">geekqjg@outlook.com</a><button class="btn" type="button" id="copy-email" data-copy="geekqjg@outlook.com">复制邮箱</button><a class="btn" href="https://www.linkedin.com/in/jinguoqian" target="_blank" rel="noopener">LinkedIn ↗</a></div></div>
+      <div class="contact-side"><div class="label">DIRECT LINKS</div><a href="/assets/portfolio/Jinguo-Qian-Resume-ZH.pdf" target="_blank">中文简历 PDF ↗</a><a href="/assets/portfolio/Jinguo-Qian-Resume-EN.pdf" target="_blank">English Resume PDF ↗</a><a href="https://github.com/QianJinGuo/wiki-book" target="_blank" rel="noopener">开源 AI 工程读物 ↗</a><a href="tel:+8618913133692">+86 189 1313 3692</a></div>
+    </section>
+    <footer><div class="foot"><div>© 2026 钱金国 Jinguo Qian · Applied AI Portfolio</div><div class="copy">生产数据截至 2026 年 11 月。所有边界与口径以项目页说明为准。<br>Built as a living portfolio, not a static résumé.</div></div></footer>
+  </div>
+</main>
+<div role="status" aria-live="polite" id="toast" style="position:fixed;left:50%;bottom:24px;transform:translate(-50%,12px);opacity:0;pointer-events:none;background:var(--ink);color:var(--paper);padding:10px 17px;border-radius:999px;font-size:13px;font-weight:650;z-index:100;transition:.2s;box-shadow:var(--shadow)">已复制</div>
+<script>
+(function(){
+  var filters=document.querySelectorAll('[data-filter]');
+  var projects=document.querySelectorAll('.project');
+  filters.forEach(function(btn){
+    btn.addEventListener('click',function(){
+      filters.forEach(function(b){b.classList.toggle('active',b===btn)});
+      var f=btn.getAttribute('data-filter');
+      projects.forEach(function(p){
+        p.hidden=f!=='all' && !p.getAttribute('data-kind').split(' ').includes(f);
+      });
+    });
+  });
+  var toast=document.getElementById('toast'),timer;
+  function show(msg){toast.textContent=msg;toast.style.opacity='1';toast.style.transform='translate(-50%,0)';clearTimeout(timer);timer=setTimeout(function(){toast.style.opacity='0';toast.style.transform='translate(-50%,12px)'},1400)}
+  function copy(text){
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(function(){show('已复制邮箱')},fallback)}else{fallback()}
+    function fallback(){var t=document.createElement('textarea');t.value=text;t.style.position='fixed';t.style.opacity='0';document.body.appendChild(t);t.select();document.execCommand('copy');document.body.removeChild(t);show('已复制邮箱')}
+  }
+  var cp=document.getElementById('copy-email');if(cp){cp.addEventListener('click',function(){copy(cp.getAttribute('data-copy'))})}
+})();
+</script>
+</body>
+</html>

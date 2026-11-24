@@ -10,11 +10,11 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 2 |
+| ⭐ 入门 | 零基础可读 | 1 |
 | ⭐⭐ 工程师 | 需编程基础 | 1 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 19 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 5 |
-| ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 1 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 18 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 6 |
+| ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 2 |
 
 ---
 
@@ -36,18 +36,18 @@
 
 ## 本章内容
 
-### ⭐ 入门（2 篇）
+### ⭐ 入门（1 篇）
 
-- [001. 使用 Amazon S3 Tables 优化数据湖：从Hudi 迁移到托管 Iceberg](ch14/001-amazon-s3-tables-hudi-iceberg)
-- [002. Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions](ch14/002-amazon-quick-accelerating-the-path-from-enterprise-data-to)
+- [001. Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions](ch14/001-amazon-quick-accelerating-the-path-from-enterprise-data-to)
 
 ### ⭐⭐ 工程师（1 篇）
 
-- [003. 构建 AI 时代的知识底座：直播数据 LLM Wiki 实践](ch14/003-ai-llm-wiki)
+- [002. 构建 AI 时代的知识底座：直播数据 LLM Wiki 实践](ch14/002-ai-llm-wiki)
 
-### ⭐⭐⭐ 专家（19 篇）
+### ⭐⭐⭐ 专家（18 篇）
 
-- [004. ai 驱动的大数据工程 从平台驱动到 aidlc 的范式迁移](ch14/004-ai-aidlc)
+- [003. ai 驱动的大数据工程 从平台驱动到 aidlc 的范式迁移](ch14/003-ai-aidlc)
+- [004. 使用 Amazon S3 Tables 优化数据湖：从Hudi 迁移到托管 Iceberg](ch14/004-amazon-s3-tables-hudi-iceberg)
 - [005. Kimi K2.6背后的Agent Database：Agent-native 时代的数据Infra竞争，跟过去30年有何不同](ch14/005-kimi-k2-6-agent-database-agent-native-infra-30)
 - [006. Databricks Storage Ecosystem & OpenSharing：企业数据治理从 Migrate Everything 到 Govern Everything 的范式转变](ch14/006-databricks-storage-ecosystem-opensharing-migrate-everyth)
 - [007. Can We Agree on a Storage/Workload Architecture Taxonomy? — Jack Vanlightly](ch14/007-can-we-agree-on-a-storage-workload-architecture-taxonomy)
@@ -60,23 +60,23 @@
 - [014. Amazon Quick integration with time-series databases for market intelligence using MCP](ch14/014-amazon-quick-integration-with-time-series-databases-for-mark)
 - [015. Metric Semantic Layer: How Lyft Governs and Scales Key Data Definitions](ch14/015-metric-semantic-layer-how-lyft-governs-and-scales-key-data)
 - [016. verify-data：一个端到端的数据验数 Agent Skill](ch14/016-verify-data-agent-skill)
-- [017. LiveKit Agents：给大模型接上麦克风，没你想的那么简单](ch14/017-livekit-agents)
-- [018. DDoSing Software Delivery Pipelines](ch14/018-ddosing-software-delivery-pipelines)
-- [019. Goodfire Predictive Data Debugging：可解释性指导 Post-Training 数据塑形](ch14/019-goodfire-predictive-data-debugging-post-training)
-- [020. Stop Giving Your Agents Database Credentials — Agent Data Governance Patterns](ch14/020-stop-giving-your-agents-database-credentials-agent-data-go)
-- [021. Amazon Redshift 推出集成数据湖查询引擎的 Graviton RG 实例](ch14/021-amazon-redshift-graviton-rg)
-- [022. SQL NOT IN 与 NULL 的经典陷阱：De Morgan 定律到解析器行为](ch14/022-sql-not-in-null-de-morgan)
+- [017. DDoSing Software Delivery Pipelines](ch14/017-ddosing-software-delivery-pipelines)
+- [018. Goodfire Predictive Data Debugging：可解释性指导 Post-Training 数据塑形](ch14/018-goodfire-predictive-data-debugging-post-training)
+- [019. Stop Giving Your Agents Database Credentials — Agent Data Governance Patterns](ch14/019-stop-giving-your-agents-database-credentials-agent-data-go)
+- [020. Amazon Redshift 推出集成数据湖查询引擎的 Graviton RG 实例](ch14/020-amazon-redshift-graviton-rg)
 
-### ⭐⭐⭐⭐ 科学家（5 篇）
+### ⭐⭐⭐⭐ 科学家（6 篇）
 
-- [023. Data for AI：明其所耗，知其所因！让每一分 Token 消耗都可量化的全栈实践](ch14/023-data-for-ai-token)
-- [024. 高德 Data Agent：分析是两段翻译，可靠性却沿链路连乘](ch14/024-data-agent)
-- [025. Good QC for RL Data](ch14/025-good-qc-for-rl-data)
-- [026. EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios](ch14/026-eva-bench-data-2-0-3-domains-121-tools-213-scenarios)
-- [027. Moneyball for Physical AI](ch14/027-moneyball-for-physical-ai)
+- [021. 高德 Data Agent：分析是两段翻译，可靠性却沿链路连乘](ch14/021-data-agent)
+- [022. Good QC for RL Data](ch14/022-good-qc-for-rl-data)
+- [023. EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios](ch14/023-eva-bench-data-2-0-3-domains-121-tools-213-scenarios)
+- [024. LiveKit Agents：给大模型接上麦克风，没你想的那么简单](ch14/024-livekit-agents)
+- [025. SQL NOT IN 与 NULL 的经典陷阱：De Morgan 定律到解析器行为](ch14/025-sql-not-in-null-de-morgan)
+- [026. Moneyball for Physical AI](ch14/026-moneyball-for-physical-ai)
 
-### ⭐⭐⭐⭐⭐ 大师（1 篇）
+### ⭐⭐⭐⭐⭐ 大师（2 篇）
 
+- [027. Data for AI：明其所耗，知其所因！让每一分 Token 消耗都可量化的全栈实践](ch14/027-data-for-ai-token)
 - [028. 阿里云 Kafka × Iceberg 零 ETL 实时入湖：ApsaraMQ for Kafka × OSS Tables 架构减法](ch14/028-kafka-iceberg-etl-apsaramq-for-kafka-oss-tables)
 
 

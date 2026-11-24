@@ -2,7 +2,7 @@
 
 > 2024-2026 AI 工具生态：从 IDE 到 Agent 平台
 
-> 本章收录 **61 篇**实体，按深度递增排列。
+> 本章收录 **62 篇**实体，按深度递增排列。
 
 ---
 
@@ -10,9 +10,8 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 2 |
 | ⭐⭐ 工程师 | 需编程基础 | 6 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 33 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 36 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 14 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 6 |
 
@@ -36,81 +35,79 @@ AI 工具正在重新定义"开发者工具"的边界。
 
 ## 本章内容
 
-### ⭐ 入门（2 篇）
-
-- [001. AI Native 回忆录：稳定性前端 S1 实践复盘](ch03/001-ai-native-s1)
-- [002. Harness Engineering 详解：如何将 AI Coding 率提升至 90%](ch03/002-harness-engineering-ai-coding-90)
-
 ### ⭐⭐ 工程师（6 篇）
 
-- [003. 别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](ch03/003-page-003)
-- [004. MiniMax M2.7：开启模型的自我进化](ch03/004-minimax-m2-7)
-- [005. Nvidia Cut Checkpoint Costs Nvcomp](ch03/005-nvidia-cut-checkpoint-costs-nvcomp)
-- [006. Localmaxxing：局部最优陷阱](ch03/006-localmaxxing)
-- [007. 03—AI Skill 测试用例设计完整指南：8 种类型 + 断言自检，覆盖率从 40% 到 90%](ch03/007-03-ai-skill-8-40-90)
-- [008. A History of IDEs at Google](ch03/008-a-history-of-ides-at-google)
+- [001. 别为了用龙虾而用龙虾一个技术管理者折腾三周唯一留下的场景却是这个](ch03/001-page-001)
+- [002. MiniMax M2.7：开启模型的自我进化](ch03/002-minimax-m2-7)
+- [003. Nvidia Cut Checkpoint Costs Nvcomp](ch03/003-nvidia-cut-checkpoint-costs-nvcomp)
+- [004. Localmaxxing：局部最优陷阱](ch03/004-localmaxxing)
+- [005. 03—AI Skill 测试用例设计完整指南：8 种类型 + 断言自检，覆盖率从 40% 到 90%](ch03/005-03-ai-skill-8-40-90)
+- [006. A History of IDEs at Google](ch03/006-a-history-of-ides-at-google)
 
-### ⭐⭐⭐ 专家（33 篇）
+### ⭐⭐⭐ 专家（36 篇）
 
-- [009. Agent 时代的生产力悖论：协作成为新瓶颈](ch03/009-agent)
-- [010. NVIDIA GPU Kernel 翻译：Cute / Python / Julia](ch03/010-nvidia-gpu-kernel-cute-python-julia)
-- [011. The Interface Is No Longer the Product](ch03/011-the-interface-is-no-longer-the-product)
-- [012. How a Mid-tier Enterprise SaaS Provider Automates Cloud Support](ch03/012-how-a-mid-tier-enterprise-saas-provider-automates-cloud-supp)
+- [007. NVIDIA GPU Kernel 翻译：Cute / Python / Julia](ch03/007-nvidia-gpu-kernel-cute-python-julia)
+- [008. Agent 时代的生产力悖论：协作成为新瓶颈](ch03/008-agent)
+- [009. 快手电商智能补贴：大模型保覆盖、小模型保效果、Agent 保效率](ch03/009-agent)
+- [010. The Interface Is No Longer the Product](ch03/010-the-interface-is-no-longer-the-product)
+- [011. How a Mid-tier Enterprise SaaS Provider Automates Cloud Support](ch03/011-how-a-mid-tier-enterprise-saas-provider-automates-cloud-supp)
+- [012. Harness Engineering 详解：如何将 AI Coding 率提升至 90%](ch03/012-harness-engineering-ai-coding-90)
 - [013. Figma Make, Now on Your Local Code: Closing the Design-to-Code Loop](ch03/013-figma-make-now-on-your-local-code-closing-the-design-to-co)
 - [014. Bedrock AgentCore 多租户 Agent 构建实践](ch03/014-bedrock-agentcore-agent)
 - [015. 如何把经验装到Skills](ch03/015-skills)
 - [016. Edge AI Networking — Wi-Fi 7/8 Convergence Analysis](ch03/016-edge-ai-networking-wi-fi-7-8-convergence-analysis)
 - [017. Real-Time Personalisation at Scale: How Zepto Understands What You Want, Right Now](ch03/017-real-time-personalisation-at-scale-how-zepto-understands-wh)
-- [018. 5 Years and $5M Later: Inventing a New Programming Language for Web Development Was a Mistake (Wasp 复盘)](ch03/018-5-years-and-5m-later-inventing-a-new-programming-language)
-- [019. What the design-to-code loop unlocks](ch03/019-what-the-design-to-code-loop-unlocks)
-- [020. Choosing to Stay Human](ch03/020-choosing-to-stay-human)
-- [021. IC work is the new career flex](ch03/021-ic-work-is-the-new-career-flex)
-- [022. Data Projects](ch03/022-data-projects)
-- [023. Obsidian + Claude Code 完整集成指南：五种知识管理策略](ch03/023-obsidian-claude-code)
-- [024. 龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](ch03/024-openclaw)
-- [025. Claude Code 实践：token 效率提高 71.5 倍的工作流](ch03/025-claude-code-token-71-5)
-- [026. Foundation Model Building Blocks](ch03/026-foundation-model-building-blocks)
-- [027. Unlocking asynchronicity in continuous batching](ch03/027-unlocking-asynchronicity-in-continuous-batching)
-- [028. Designing Small Is Harder than Designing Big - UX Magazine](ch03/028-designing-small-is-harder-than-designing-big-ux-magazine)
-- [029. Against \"Brain Damage\](ch03/029-against-brain-damage)
-- [030. 4 ways we’re using our MCP server at Figma](ch03/030-4-ways-we-re-using-our-mcp-server-at-figma)
-- [031. Turn repeated instructions into reusable skills in Lovable | Lovable](ch03/031-turn-repeated-instructions-into-reusable-skills-in-lovable)
-- [032. 10 Common Component Architecture Mistakes in Figma Design Systems](ch03/032-10-common-component-architecture-mistakes-in-figma-design-sy)
-- [033. SkillsUI](ch03/033-skillsui)
-- [034. Who Winning Enterprise AI Now](ch03/034-who-winning-enterprise-ai-now)
-- [035. AI-driven layoffs aren't making business sense](ch03/035-ai-driven-layoffs-aren-t-making-business-sense)
-- [036. Designers are a rare breed](ch03/036-designers-are-a-rare-breed)
-- [037. 10x Is a Lot](ch03/037-10x-is-a-lot)
-- [038. What is AX? John Maeda on Accessibility as Ability](ch03/038-what-is-ax-john-maeda-on-accessibility-as-ability)
-- [039. Form-Over-Function Mistakes, or How Not to Harm Your Business With a Pretty Interface.](ch03/039-form-over-function-mistakes-or-how-not-to-harm-your-busines)
-- [040. Enterprise AI Agent Development Tools (n8n Report 2026)](ch03/040-enterprise-ai-agent-development-tools-n8n-report-2026)
-- [041. Activity-Focused Design](ch03/041-activity-focused-design)
+- [018. AI Native 回忆录：稳定性前端 S1 实践复盘](ch03/018-ai-native-s1)
+- [019. 5 Years and $5M Later: Inventing a New Programming Language for Web Development Was a Mistake (Wasp 复盘)](ch03/019-5-years-and-5m-later-inventing-a-new-programming-language)
+- [020. What the design-to-code loop unlocks](ch03/020-what-the-design-to-code-loop-unlocks)
+- [021. Choosing to Stay Human](ch03/021-choosing-to-stay-human)
+- [022. IC work is the new career flex](ch03/022-ic-work-is-the-new-career-flex)
+- [023. Data Projects](ch03/023-data-projects)
+- [024. Obsidian + Claude Code 完整集成指南：五种知识管理策略](ch03/024-obsidian-claude-code)
+- [025. 龙虾装上了，可以用来干啥？分享下我的 OpenClaw 多智能体团队搭建经验！](ch03/025-openclaw)
+- [026. Claude Code 实践：token 效率提高 71.5 倍的工作流](ch03/026-claude-code-token-71-5)
+- [027. Foundation Model Building Blocks](ch03/027-foundation-model-building-blocks)
+- [028. Unlocking asynchronicity in continuous batching](ch03/028-unlocking-asynchronicity-in-continuous-batching)
+- [029. Designing Small Is Harder than Designing Big - UX Magazine](ch03/029-designing-small-is-harder-than-designing-big-ux-magazine)
+- [030. Against \"Brain Damage\](ch03/030-against-brain-damage)
+- [031. 4 ways we’re using our MCP server at Figma](ch03/031-4-ways-we-re-using-our-mcp-server-at-figma)
+- [032. Turn repeated instructions into reusable skills in Lovable | Lovable](ch03/032-turn-repeated-instructions-into-reusable-skills-in-lovable)
+- [033. 10 Common Component Architecture Mistakes in Figma Design Systems](ch03/033-10-common-component-architecture-mistakes-in-figma-design-sy)
+- [034. SkillsUI](ch03/034-skillsui)
+- [035. Who Winning Enterprise AI Now](ch03/035-who-winning-enterprise-ai-now)
+- [036. AI-driven layoffs aren't making business sense](ch03/036-ai-driven-layoffs-aren-t-making-business-sense)
+- [037. Designers are a rare breed](ch03/037-designers-are-a-rare-breed)
+- [038. 10x Is a Lot](ch03/038-10x-is-a-lot)
+- [039. What is AX? John Maeda on Accessibility as Ability](ch03/039-what-is-ax-john-maeda-on-accessibility-as-ability)
+- [040. Form-Over-Function Mistakes, or How Not to Harm Your Business With a Pretty Interface.](ch03/040-form-over-function-mistakes-or-how-not-to-harm-your-busines)
+- [041. Enterprise AI Agent Development Tools (n8n Report 2026)](ch03/041-enterprise-ai-agent-development-tools-n8n-report-2026)
+- [042. Activity-Focused Design](ch03/042-activity-focused-design)
 
 ### ⭐⭐⭐⭐ 科学家（14 篇）
 
-- [042. AI Native 公司 Dan Shipper 30 人做出 100 人产出：层次化思维 + SaaS 6 维能力框架](ch03/042-ai-native-dan-shipper-30-100-saas-6)
-- [043. YC CEO Garry Tan：200美元重构400万美元项目，AI Agent协作开发实践](ch03/043-yc-ceo-garry-tan-200-400-ai-agent)
-- [044. Stripe Agent 经济基础设施 5 套图谱：MPP + Link + Projects + Metronome/Tempo + Radar](ch03/044-stripe-agent-5-mpp-link-projects-metronome-tempo)
-- [045. Obsidian + Claude Code 集成指南](ch03/045-obsidian-claude-code)
-- [046. gstack — AI协作开发工作流 & 复杂度棘轮](ch03/046-gstack-ai)
-- [047. Bedrock AgentCore Pool Model Multi-Tenancy](ch03/047-bedrock-agentcore-pool-model-multi-tenancy)
-- [048. 还在用WebSocket做LLM流式传输？FastAPI + SSE让你少踩一半坑](ch03/048-websocket-llm-fastapi-sse)
-- [049. Qoder Skill UI — Agent 与人类的协作界面层](ch03/049-qoder-skill-ui-agent)
-- [050. 花叔的 Claude Code 多 Agent 用量画像](ch03/050-claude-code-agent)
-- [051. Claude Code 命令完全指南](ch03/051-claude-code)
-- [052. Amazon Quick + Cisco Webex MCP 会议准备与跟进助手：meeting-lifecycle MCP 编排实战](ch03/052-amazon-quick-cisco-webex-mcp-meeting-lifecycle-mcp)
-- [053. Announcing Genkit Middleware](ch03/053-announcing-genkit-middleware)
-- [054. What Figma Made Visible: Component Model Bridging Design and Engineering](ch03/054-what-figma-made-visible-component-model-bridging-design-and)
-- [055. Hunk - Review-first Terminal Diff Viewer](ch03/055-hunk-review-first-terminal-diff-viewer)
+- [043. AI Native 公司 Dan Shipper 30 人做出 100 人产出：层次化思维 + SaaS 6 维能力框架](ch03/043-ai-native-dan-shipper-30-100-saas-6)
+- [044. YC CEO Garry Tan：200美元重构400万美元项目，AI Agent协作开发实践](ch03/044-yc-ceo-garry-tan-200-400-ai-agent)
+- [045. Stripe Agent 经济基础设施 5 套图谱：MPP + Link + Projects + Metronome/Tempo + Radar](ch03/045-stripe-agent-5-mpp-link-projects-metronome-tempo)
+- [046. Obsidian + Claude Code 集成指南](ch03/046-obsidian-claude-code)
+- [047. gstack — AI协作开发工作流 & 复杂度棘轮](ch03/047-gstack-ai)
+- [048. Bedrock AgentCore Pool Model Multi-Tenancy](ch03/048-bedrock-agentcore-pool-model-multi-tenancy)
+- [049. 还在用WebSocket做LLM流式传输？FastAPI + SSE让你少踩一半坑](ch03/049-websocket-llm-fastapi-sse)
+- [050. Qoder Skill UI — Agent 与人类的协作界面层](ch03/050-qoder-skill-ui-agent)
+- [051. 花叔的 Claude Code 多 Agent 用量画像](ch03/051-claude-code-agent)
+- [052. Claude Code 命令完全指南](ch03/052-claude-code)
+- [053. Amazon Quick + Cisco Webex MCP 会议准备与跟进助手：meeting-lifecycle MCP 编排实战](ch03/053-amazon-quick-cisco-webex-mcp-meeting-lifecycle-mcp)
+- [054. Announcing Genkit Middleware](ch03/054-announcing-genkit-middleware)
+- [055. What Figma Made Visible: Component Model Bridging Design and Engineering](ch03/055-what-figma-made-visible-component-model-bridging-design-and)
+- [056. Hunk - Review-first Terminal Diff Viewer](ch03/056-hunk-review-first-terminal-diff-viewer)
 
 ### ⭐⭐⭐⭐⭐ 大师（6 篇）
 
-- [056. AgentScope Java Harness Framework 2.0 — 企业级 Agent 分布式场景的 Harness 实现 (Java 2.0 重大升级)](ch03/056-agentscope-java-harness-framework-2-0-agent-harness)
-- [057. Hermes-Wiki 实战 — Obsidian + Hermes Agent 自动生长知识网络的 9 步搭建法](ch03/057-hermes-wiki-obsidian-hermes-agent-9)
-- [058. pi-mono — 模块化 AI Agent 构建平台（OpenClaw 执行引擎核心）](ch03/058-pi-mono-ai-agent-openclaw)
-- [059. Microsoft Agent Framework 结构化输出：response_format 与 response.value](ch03/059-microsoft-agent-framework-response-format-response-value)
-- [060. Hermes Agent 工具系统架构分析](ch03/060-hermes-agent)
-- [061. CLI-Anything](ch03/061-cli-anything)
+- [057. AgentScope Java Harness Framework 2.0 — 企业级 Agent 分布式场景的 Harness 实现 (Java 2.0 重大升级)](ch03/057-agentscope-java-harness-framework-2-0-agent-harness)
+- [058. Hermes-Wiki 实战 — Obsidian + Hermes Agent 自动生长知识网络的 9 步搭建法](ch03/058-hermes-wiki-obsidian-hermes-agent-9)
+- [059. pi-mono — 模块化 AI Agent 构建平台（OpenClaw 执行引擎核心）](ch03/059-pi-mono-ai-agent-openclaw)
+- [060. Microsoft Agent Framework 结构化输出：response_format 与 response.value](ch03/060-microsoft-agent-framework-response-format-response-value)
+- [061. Hermes Agent 工具系统架构分析](ch03/061-hermes-agent)
+- [062. CLI-Anything](ch03/062-cli-anything)
 
 
 ---

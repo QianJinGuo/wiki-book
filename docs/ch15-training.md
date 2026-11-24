@@ -10,9 +10,8 @@
 
 | Level | 含义 | 篇数 |
 |-------|------|------|
-| ⭐ 入门 | 零基础可读 | 3 |
 | ⭐⭐ 工程师 | 需编程基础 | 2 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 14 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 17 |
 | ⭐⭐⭐⭐ 科学家 | 需研究背景 | 4 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 6 |
 
@@ -34,22 +33,19 @@
 
 ## 本章内容
 
-### ⭐ 入门（3 篇）
-
-- [001. 2026 年面向 LLM 的 RL 方法总结：从 PPO 到 DPO 到 GRPO，再到多智能体 RL](ch15/001-2026-llm-rl-ppo-dpo-grpo-rl)
-- [002. Predicting Risk in Content Launches](ch15/002-predicting-risk-in-content-launches)
-- [003. 多模态预训练物理：知识流、模态协同、早期统一与高效配方（arXiv 2608.05000）](ch15/003-arxiv-2608-05000)
-
 ### ⭐⭐ 工程师（2 篇）
 
-- [004. 不用人类手写训练框架了！AI自己写代码，训出1B端侧「小钢炮」](ch15/004-ai-1b)
-- [005. EMO: Pretraining mixture of experts for emergent modularity | Ai2](ch15/005-emo-pretraining-mixture-of-experts-for-emergent-modularity)
+- [001. 不用人类手写训练框架了！AI自己写代码，训出1B端侧「小钢炮」](ch15/001-ai-1b)
+- [002. EMO: Pretraining mixture of experts for emergent modularity | Ai2](ch15/002-emo-pretraining-mixture-of-experts-for-emergent-modularity)
 
-### ⭐⭐⭐ 专家（14 篇）
+### ⭐⭐⭐ 专家（17 篇）
 
-- [006. DeepSeek V4 训练方法论深度解读](ch15/006-deepseek-v4)
-- [007. NVIDIA Blackwell MLPerf Training 6.0 基准测试结果（2026-06）](ch15/007-nvidia-blackwell-mlperf-training-6-0-2026-06)
-- [008. Yann Dubois（OpenAI Post-Training）× Matt Turck 深度访谈：GPT-5.5、RL 突破、后训练流水线](ch15/008-yann-dubois-openai-post-training-matt-turck-gpt-5-5-rl)
+- [003. DeepSeek V4 训练方法论深度解读](ch15/003-deepseek-v4)
+- [004. NVIDIA Blackwell MLPerf Training 6.0 基准测试结果（2026-06）](ch15/004-nvidia-blackwell-mlperf-training-6-0-2026-06)
+- [005. Yann Dubois（OpenAI Post-Training）× Matt Turck 深度访谈：GPT-5.5、RL 突破、后训练流水线](ch15/005-yann-dubois-openai-post-training-matt-turck-gpt-5-5-rl)
+- [006. 2026 年面向 LLM 的 RL 方法总结：从 PPO 到 DPO 到 GRPO，再到多智能体 RL](ch15/006-2026-llm-rl-ppo-dpo-grpo-rl)
+- [007. Predicting Risk in Content Launches](ch15/007-predicting-risk-in-content-launches)
+- [008. 多模态预训练物理：知识流、模态协同、早期统一与高效配方（arXiv 2608.05000）](ch15/008-arxiv-2608-05000)
 - [009. SFT+DPO 双阶段微调：Qwen3-1.7B Tool Calling 精度提升方案](ch15/009-sft-dpo-qwen3-1-7b-tool-calling)
 - [010. 无惧Off-Policy偏移！Bengio团队解绑后训练，大模型RL提速50倍](ch15/010-off-policy-bengio-rl-50)
 - [011. Is One Layer Enough? 单层 RL 训练可超越全参数训练](ch15/011-is-one-layer-enough-rl)
