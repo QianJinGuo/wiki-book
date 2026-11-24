@@ -92,12 +92,12 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 | 主题 | entity | raw |
 |---|---|---|
 | Agent 术语表 | [Huggingface Ai Agent Glossary Model Scaffolding Harness Tool Skill Subagent](ch04-agent-core.html) | [huggingface-ai-agent-glossary-model-scaffolding-harness-tool-skill-subagent.md](https://mp.weixin.qq.com/s/RCEGqAvfJxbzaPJIJDOKwA) |
-| 从 Vibe Coding 到 Agentic Engineering | [Karpathy Vibe Coding Agentic Engineering V4](ch04/265-karpathy-vibe-coding-agentic-engineering.html) | [karpathy-vibe-coding-agentic-engineering-v4.md](https://mp.weixin.qq.com/s/HTFcXBzYUVHvwShu3Zp-EA) |
+| 从 Vibe Coding 到 Agentic Engineering | [Karpathy Vibe Coding Agentic Engineering V4](ch04/266-karpathy-vibe-coding-agentic-engineering.html) | [karpathy-vibe-coding-agentic-engineering-v4.md](https://mp.weixin.qq.com/s/HTFcXBzYUVHvwShu3Zp-EA) |
 | AI Agent 工程师能力地图 | [Ai Agent Engineer Capability Map](ch04-agent-core.html) | [ai-agent-engineer-learning-roadmap-backend-2026.md](https://mp.weixin.qq.com/s/HWdqrPP1IFdex33afqQEeQ) |
 | 250 行 CLI Agent | [Minimal Cli Agent 250 Line Python Ollama 7 Stages](ch04/383-ai-agent-250-while-python-ollama-cli-agent-7.html) | [minimal-cli-agent-250-line-python-ollama-7-stages.md](https://mp.weixin.qq.com/s/axLHmFoNretapSPCUP68PQ) |
 | Agent Runtime 7 大职责 | [Agent Runtime 7 Responsibilities Secondcurve 2026](ch04/377-agent-agent-runtime-7-3-langgraph-openai-agents-s.html) | [agent-runtime-7-responsibilities-secondcurve-2026.md](https://mp.weixin.qq.com/s/5sftvwAZL4Hj5v40HZ1rVw) |
 | Design Patterns for AI Agents | [Design Patterns For Ai Agents 2026](ch04/384-design-patterns-for-ai-agents-2026-4-5-reflection.html) | 先读实体页：`docs/ch04/083-design-patterns-for-ai-agents-2026-4-5-reflection.md` |
-| 从零设计准生产级 LLM Agent | [Thinkingagent From Scratch Reliability Context Recovery 2026 06 02](ch04/230-llm-agent-thinkingagent.html) | [thinkingagent-from-scratch-reliability-context-recovery-2026-06-02.md](https://mp.weixin.qq.com/s/UTEdhrkV3G3Ycfrg0Jng_A) |
+| 从零设计准生产级 LLM Agent | [Thinkingagent From Scratch Reliability Context Recovery 2026 06 02](ch04/231-llm-agent-thinkingagent.html) | [thinkingagent-from-scratch-reliability-context-recovery-2026-06-02.md](https://mp.weixin.qq.com/s/UTEdhrkV3G3Ycfrg0Jng_A) |
 ### 3.4 入门期作业
 
 #### 作业 A：画一张 Agent 总架构图
@@ -198,7 +198,7 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 | AgentMemory 源码分析 | [Agentmemory Source Analysis Coding Agent Local Memory](ch06/037-agentmemory-coding-agent.html) | [agentmemory-source-analysis-coding-agent-local-memory.md](https://mp.weixin.qq.com/s/L_wzXQCe3byU93fDAf_Eug) |
 | Claude Code vs OpenClaw Memory | [Claude Code Openclaw Memory Comparison](ch06/023-claude-code-openclaw-memory-comparison.html) | [claude-code-openclaw-memory-comparison.md](https://mp.weixin.qq.com/s/m4wzwXCJoW5Tu4GA5ROodw) |
 | Memory 评测全景 | [Agent Memory Evaluation Landscape Taobao Survey](ch06-memory.html) | [agent-memory-evaluation-landscape-taobao-survey.md](https://mp.weixin.qq.com/s/JZhN6auXKOzEh3OHgkjrdw) |
-| State of Memory in Agent Harness | [State Of Memory In Agent Harness Mem0 2026](ch04/277-state-of-memory-in-agent-harness-mem0-harness.html) | [state-of-memory-in-agent-harness-mem0-2026.md](https://mp.weixin.qq.com/s/2c2MV0b1biv71WdX2gCt_A) |
+| State of Memory in Agent Harness | [State Of Memory In Agent Harness Mem0 2026](ch04/279-state-of-memory-in-agent-harness-mem0-harness.html) | [state-of-memory-in-agent-harness-mem0-2026.md](https://mp.weixin.qq.com/s/2c2MV0b1biv71WdX2gCt_A) |
 ### 4.5 Skill / Tool / MCP 精读清单
 
 | 主题 | entity | raw |
@@ -209,7 +209,7 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 | 企业级 Skill 8 块骨架 | [Skill Design Spec 8 Block Checklist Winty](ch07/051-skill-8-8-checklist.html) | [skill-design-spec-8-block-checklist-winty.md](https://mp.weixin.qq.com/s/pwm9e_wMhqlbBh8ICWJWxQ) |
 | Claude Code Skills / MCP / Rules 源码 | [Claude Code Skills Mcp Rules Source Analysis](ch07/053-claude-code-skills-mcp-rules.html) | [claude-code-skills-mcp-rules-source-analysis.md](https://mp.weixin.qq.com/s/FzTyopCXH-IVSYJyTMjWxA) |
 | 三层 Agent 架构 | [Baidu Netdisk Three Layer Agent Architecture](ch04-agent-core.html) | [baidu-netdisk-kmp-migration-three-layer-agent-architecture.md](https://mp.weixin.qq.com/s/z2QWu5hE5TAZifqT4jYzVw) |
-| CLI / MCP / CLI+Skill 选型 | [Cli Mcp Skill Architecture Decision Vibecoder](ch07/038-cli-mcp-cli-skill.html) | [cli-mcp-skill-architecture-decision-vibecoder.md](https://mp.weixin.qq.com/s/cijQOCOZQMcbldyAmQ8CZA) |
+| CLI / MCP / CLI+Skill 选型 | [Cli Mcp Skill Architecture Decision Vibecoder](ch07/039-cli-mcp-cli-skill.html) | [cli-mcp-skill-architecture-decision-vibecoder.md](https://mp.weixin.qq.com/s/cijQOCOZQMcbldyAmQ8CZA) |
 | Skill 版本管理 | [Skill Version Management Semantic Versioning Practices Winty](ch07-skill-tool.html) | [skill-version-management-semantic-versioning-practices-winty.md](https://mp.weixin.qq.com/s/weA8CMZBI9B295tNft10WQ) |
 | Anthropic 12 个 MCP 模式 | [Anthropic 官方生产级 Agent 最佳实践12 个可复用的 Mcp 设计模式 V2](ch04-agent-core.html) | [anthropic-官方生产级-agent-最佳实践12-个可复用的-mcp-设计模式-v2.md](https://mp.weixin.qq.com/s/dd_yVuyLiO5avvivvFl5Zw) |
 | Microsoft Agent Framework Tools | [Microsoft Agent Framework Tools Overview Provider Matrix](ch07/049-microsoft-agent-framework-tools-4-provider-tool-ap.html) | [microsoft-agent-framework-tools-overview-provider-matrix.md](https://mp.weixin.qq.com/s/0vIV3VJIgwf1FRwDWNzYpw) |
@@ -418,7 +418,7 @@ Agent 方向不是单一岗位。学习前先明确你要同时构建四种能�
 | Chroma → Qdrant | [Chroma To Qdrant 1M Vector Migration](https://github.com/QianJinGuo/wiki-public/blob/main/entities/chroma-to-qdrant-1m-vector-migration.md) | [chroma-to-qdrant-1m-vector-migration.md](https://mp.weixin.qq.com/s/Aovqh95_LBYtVOj8_tTD_w) |
 | 实时语音推理 vLLM + SageMaker | [Build Real Time Voice Applications With Amazon Sagemaker Ai](ch09-ai-coding.html) | [build-real-time-voice-applications-with-amazon-sagemaker-ai.md](https://aws.amazon.com/blogs/machine-learning/build-real-time-voice-applications-with-amazon-sagemaker-ai-and-vllm/) |
 | Apple Private Inference | [Apple Siri Private Inference — Lethal Trifecta](https://github.com/QianJinGuo/wiki-public/blob/main/entities/apple-siri-private-inference-lethal-trifecta-matthew-green.md) | [apple-siri-private-inference-cryptography-green.md](https://blog.cryptographyengineering.com/2026/06/09/apples-siri-ai-or-more-shouting-into-the-void-about-private-agents/) |
-| Didi EAGLE-3 投机解码 | [Didi Eagle 3 Speculative Decoding Agents](ch04/269-agent-eagle-3.html) | [didi-eagle-3-speculative-decoding-agents.md](https://mp.weixin.qq.com/s/PZMX-55W_gqJKtHIYXJVyA) |
+| Didi EAGLE-3 投机解码 | [Didi Eagle 3 Speculative Decoding Agents](ch04/270-agent-eagle-3.html) | [didi-eagle-3-speculative-decoding-agents.md](https://mp.weixin.qq.com/s/PZMX-55W_gqJKtHIYXJVyA) |
 ### 6.4 前沿研究精读清单
 
 | 主题 | entity | raw |

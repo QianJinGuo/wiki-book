@@ -1,6 +1,6 @@
 # Agent Skill 评估与迭代
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 15.2KB
+> 📊 Level ⭐⭐⭐⭐⭐ | 17.8KB
 
 ## 优化 description 的系统性方法
 1. 准备 20 个提示词（一半触发 / 一半不触发）
@@ -122,9 +122,15 @@ Agent 可能第一轮没加载 Skill、第五轮才加载但最终完成任务�
 该文给出的「周一就能开始」最小行动八步：写五条来自真实使用的测试提示 → 补上该触发与不该触发的边界 → 删除不改变行为的 no-op → 用 JSON/YAML 保存测试声明 → 写一个最小 Runner 并优先加入确定性断言 → 在隔离环境重复运行 → 比较 Skill ON 与 OFF 的结果 → 把第一次失败变成第一条回归用例。核心立场句：**「没有 eval 的 Skill，不是可靠能力，只是未经验证的行为。」**
 
 ## 深度分析
-评估的本质是**建立因果链**：Skill 带来的改变是否可归因于 Skill 本身，而非随机波动或测试偏差。三类测试构成递进防线——触发测试验证「该不该用」，功能测试验证「用对了吗」，基线对比验证「用了有多大价值」。其中触发测试最易被忽视，却最能暴露 description 关键词的遗漏或歧义。
-迭代的核心不在于修复单个失败用例，而在于**从错误模式中提炼通用约束**。一个断言失败背后往往是一个隐含假设——要么指令太模糊，要么边界条件未被显式声明。将每次修正视为 Skill 边界的一次微调，而非对一个偶然错误的补丁。
-delta 指标（pass_rate / time_seconds / tokens）的标准差同样携带信息：高标准差意味着 Skill 在不同输入上的表现不稳定，反映的是指令中存在未被约束的模糊性，需要通过收紧条件或增加示例来消除。
+**评测对象是行为依赖而非文档。** Skill 一旦加载就占用上下文并影响 Agent 决策，是运行链路中的行为依赖，须像代码一样受测——这是两文共同立场。旧指南的 with_skill vs without_skill 双臂设计与 delta（pass_rate / time_seconds / tokens）本质是对「Skill 增量」的差分测量；SkillHub/DeepMind 实践将其显式化：SkillsBench 约五万个 Skill 几乎无完整 eval，而约一百个编码与生产力任务的数据显示平均约 15% 提升、人工编写最好、AI 生成的有时反而降分。未经差分测量，Skill 的默认价值不是中性而是未知。
+
+**触发是因果链最上游关口，description 是分类器而非简介。** 三层渐进披露（名称+描述→正文→按需参考）使模型在读取正文前只凭描述决策；开发者能手动补提示，产品最终用户不会——故约一半失败源于未正确触发。旧指南的双向诊断正对此设计：应触发未触发→描述太窄，不该触发却触发→描述太宽。可测试描述须覆盖用户真实说法而非 API 术语，且写指令而非背景：「构建多轮聊天应用时使用 Interactions API」可执行，「适合多轮聊天」仍把推断留给模型。
+
+**断言体系：确定性优先，且能自我清理。** 旧指南三原则（可编程验证 / 具体可观察 / 可计数）在 SkillHub 落成检查分层：regex 与普通断言管可确定部分（SDK / 模型 / 方法 / 无淘汰旧模式），带 rubric 的 LLM-as-a-Judge 只是较小的补充层。四象限聚合分析则提供断言集合的自我清理：两配置皆过→移除（无信息），皆败→修断言，仅带 Skill 过→价值点，高标准差→收紧指令；断言集随迭代收敛到「Skill 特有信息」。
+
+**回归门禁把一次性评测变成工程约束。** 测试集以 5 条 happy path + 5 条 negative case 起步，每例记录提示 / 语言 / should_trigger / expected_checks，负例专防过度触发；每个真实失败沉淀为永久回归用例——Interactions API 案例的 117 条用例与近 90% 的有效代码表现，靠的正是这个闭环而非神奇提示。合并门槛：变更要么改善结果、要么为新失败新增 eval。每例跑 3–5 次，区分「至少成功一次」（能力上限）与「连续稳定成功」（用户体感）；隔离运行防「偷答案」；评最终结果不锁执行路径；跨模型 / Harness 测试的产出是「何组合可靠、何组合不应发布」的矩阵，而非统一分数。
+
+**消融退休是体系出口。** 能力型 Skill 补训练截止后的能力缺口，模型升级后可退休；偏好型承载组织约定，需长期存在——两者的 eval 目标因此不同。消融判据与旧指南双臂完全同构：同测试集、同模型、同 Harness 的 ON/OFF 差分，只是时间尺度拉长为全生命周期持续测量。最反直觉的是退休不等于删除 eval：留存的 eval 既是退休决策的证据存档，也是模型 / Harness 未来退化时的哨兵。eval 由此从上线成绩单变成定义维护周期的行为规格：「没有 eval 的 Skill，不是可靠能力，只是未经验证的行为。」参见 [Skill 税](https://github.com/QianJinGuo/wiki-public/blob/main/entities/regression-tax-skills-hurt-llm-agents.md)、[触发路由自进化](https://github.com/QianJinGuo/wiki-public/blob/main/entities/skill-routing-description-self-evolution-qwen-platform-2026-11-03.md)、[Langfuse 评测洞察](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-eval-counterintuitive-insights-langfuse.md)。
 
 ## 实践启示
 1. **先触发，后功能**：写 Skill 时优先打磨 description，确保激活条件准确，再投入精力在执行逻辑和 Gotchas 上。触发错了，功能再完美也白费。

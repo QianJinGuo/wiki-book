@@ -1,6 +1,6 @@
 # OpenClaw 与 Claude Code 的 Agent Loop 设计范式
 
-> 📊 Level ⭐⭐⭐ | 10.1KB
+> 📊 Level ⭐⭐⭐ | 14.6KB
 
 > 原文归档：[原文归档](https://mp.weixin.qq.com/s/5Hy4ctKOq8Iq7m2bqy45zQ)
 
@@ -93,14 +93,35 @@ Matt Van Horn 总结了这次研究发现的重要模式：
 
 ## 深度分析
 
-### 1. Agent Loop：AI agent 的核心执行模式
-OpenClaw 的 agent loop 设计模式总结了 AI agent 执行任务的核心循环：感知→推理→行动→观察。不同 loop 模式（单步、多步、递归、并行）适用于不同场景。
+把原文的五级演进、成本论与技能论放进同一个框架看，循环设计的历史是一条"失控—约束"的博弈曲线：每一代循环都因放权产生新的失控面，又靠新的工程约束重新收敛。
 
-### 2. 与 Claude Code loop 的对比
-Claude Code 的 agent loop 遵循"tool call → observation → reasoning → next tool call"模式，与 OpenClaw 的设计模式有相同基础但增加了 task boundary 检测和自动压缩。
+### 1. 纪律性是循环成败的分水岭：AutoGPT 与 Ralph 的对照
 
-### 3. 递归 loop 的风险
-递归 loop（agent 调用自身）存在无限循环风险——需要设置递归深度限制和超时机制。与 `Agent Security Three Step Sequence Harness Governance Identity Crewai` 的 harness 约束对齐。
+AutoGPT（2023）被赋予目标并允许自行生成提示词，却因持续"空转"而失败，埋下"智能体是玩具"的偏见；Ralph 循环（2025）只是一行把同一提示文件反复管道传给 Agent 的 Bash 命令，却让 Huntley 仅花约 297 美元就构建出一整套编程语言。两者结局相反，差异不在模型智能，而在纪律性：Ralph 每次迭代都把上下文重置回固定的锚定文件，掐断了对话漂移与上下文膨胀。可见循环的可靠性主要来自工程约束（固定上下文锚点、确定性重放），而非模型的自主规划能力。
+
+### 2. 控制权反转：工程师从"写提示"变成"写循环"
+
+Boris Cherny 的自述标志人机分工的倒转：他不再亲自向 Claude 下指令，而是编写持续运行的循环，由循环发提示、读输出、判断是否完成并决定下一步，模型退化为循环体内的子程序。他的三阶段演进——手写代码加自动补全、并行运行五到十个会话、编写驱动几百个 Agent 读取 GitHub、Slack 和 Twitter 并决定下一步的循环——刻画了控制权逐级上移的路径。工程师的稀缺技能随之从"会提问"转移为"会设计能自行停止的循环"。
+
+### 3. 循环 = Cron + 决策机制：决策权移到了循环手里
+
+Cron 在固定时间执行写死的脚本；循环在每个时间点由模型观察状态、决定下一步操作。把这种决策循环堆叠成"监督循环的循环"，配上计划调度与基于 Git 的状态管理和崩溃恢复机制，就得到 Cron 结构上无法表达的系统——这正是第五阶段与 Ralph 的分界线：循环从单任务重放升级为并行运行、按计划互相监督的基本工作单元。对照 [Agent 架构演进](https://github.com/QianJinGuo/wiki-public/blob/main/entities/17-agent-architectures-evolution.md)，这一步的本质是编排权从"人驱动"迁往"基础设施驱动"。
+
+### 4. 成本重心迁移：贵的不再是模型调用，而是让循环停得住
+
+一旦模型编写代码几乎不花费什么，预算约束就整体移到循环运营层：Uber 四个月耗尽年度 AI 预算，被迫限制 Claude Code 与 Cursor（每工程师每工具每月 1500 美元）。2026 年所有严肃的循环论述收敛到同一组硬性限制——最大迭代次数、无进展检测、Token 或资金预算上限。原文的概括很锋利：浪漫版本是一千个智能体一夜建起公司，现实版本是大部分工作花在确保它们及时停止。停止问题因此是循环工程的第一性问题，其退出条件设计与 [harness 治理序列](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-security-three-step-sequence-harness-governance-identity-crewai.md) 的约束思路同构。
+
+### 5. 技能是循环的唯一资产：空转与复利的分界
+
+Steinberger 的判据朴素而严格：重复做的事做成自动化技能，困难的事事后沉淀为技能。循环本身只是管道，它调用的明确命名的技能库才是资产——内部无可复用技能的循环只是空转的 while-true；在循环里重新生成一切只是燃烧金钱，调用打磨过、经过测试的命名技能才产生复合效益。这条分界把"循环设计"落成可积累的工程资产问题，与 [Agentic 工作流](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agentic-workflow-patterns.md) 的工作流复用思想互相印证。
+
+### 6. 综合研判：三条跨阶段结论
+
+落到本 wiki 的实现样本上，[Hermes Agent 0.14 架构](https://github.com/QianJinGuo/wiki-public/blob/main/entities/hermes-agent-v014-core-architecture-shugex.md) 展示了循环机制在实现层的形态；Boris 的五条实操技巧（auto mode、动态工作流、/goal 或 /loop、云端运行、端到端自验证）则是把循环跑上数小时到数天的操作面配置。
+
+1. **五级跃迁是一条基础设施成熟度曲线**：每阶段以解决上一阶段的失控问题为标志——AutoGPT 的空转由 Ralph 的上下文纪律修复，单机循环由产品化验证闭环修复，人工启动由调度与 Git 状态管理修复，而非由模型能力跃迁驱动。
+2. **循环范式成立的前提是端到端自我验证**：五条技巧以"确保 Claude 能够对工作进行端到端的自我验证"收尾，没有可靠自检验的并行化只是加速燃烧预算。
+3. **循环管控是当前循环论述的公共收敛点**：最大迭代次数、无进展检测、Token 或资金预算上限三项限制出现在所有严肃论述中；Uber 四个月耗尽年度预算并按人设限，是成本重心已经迁移的最早实证。
 
 ## 实践启示
 

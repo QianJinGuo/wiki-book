@@ -46,16 +46,16 @@
 - [005. CVPR 2026 Highlight | 清华打破多模态音频生成的「通才困境」：Omni2Sound 音频基础模型开源！](ch17/005-cvpr-2026-highlight-omni2sound)
 - [006. 高德 ABot-Earth 0.5：全球首个 3D 原生城市世界模型（1% 成本 + 千倍提效）](ch17/006-abot-earth-0-5-3d-1)
 - [007. Gemma 4 12B：Google 多模态本地模型 —— 扔掉编码器](ch17/007-gemma-4-12b-google)
-- [008. ICRDrag：ECCV 2026 首个上下文区域拖拽图像编辑模型](ch17/008-icrdrag-eccv-2026)
-- [009. Perceptron Mk1 shocks with highly performant video analysis AI model 80-90% cheaper than Anthropic, OpenAI & Google](ch17/009-perceptron-mk1-shocks-with-highly-performant-video-analysis)
-- [010. Mistral Shieldstral — Policy-Adaptive Multimodal Safety Classifier](ch17/010-mistral-shieldstral-policy-adaptive-multimodal-safety-clas)
-- [011. 商汤SenseNova U1深度拆解，原生统一架构终结缝合时代](ch17/011-sensenova-u1)
+- [008. 商汤SenseNova U1深度拆解，原生统一架构终结缝合时代](ch17/008-sensenova-u1)
+- [009. ICRDrag：ECCV 2026 首个上下文区域拖拽图像编辑模型](ch17/009-icrdrag-eccv-2026)
+- [010. Perceptron Mk1 shocks with highly performant video analysis AI model 80-90% cheaper than Anthropic, OpenAI & Google](ch17/010-perceptron-mk1-shocks-with-highly-performant-video-analysis)
+- [011. Mistral Shieldstral — Policy-Adaptive Multimodal Safety Classifier](ch17/011-mistral-shieldstral-policy-adaptive-multimodal-safety-clas)
 - [012. Netflix 可控 AI 视频编辑：Vera 与 VOID 模型](ch17/012-netflix-ai-vera-void)
 - [013. MolmoMotion：语言引导的 3D 运动预测模型](ch17/013-molmomotion-3d)
 - [014. FLAT: Feedforward Latent Triangle Splatting](ch17/014-flat-feedforward-latent-triangle-splatting)
-- [015. Multimodal AI for Searchable Aerial Imagery at Scale](ch17/015-multimodal-ai-for-searchable-aerial-imagery-at-scale)
-- [016. Moebius: 0.2B Lightweight Image Inpainting with 10B-Level Performance](ch17/016-moebius-0-2b-lightweight-image-inpainting-with-10b-level-pe)
-- [017. PersonaVLM — 长期个性化多模态大模型](ch17/017-personavlm)
+- [015. PersonaVLM — 长期个性化多模态大模型](ch17/015-personavlm)
+- [016. Multimodal AI for Searchable Aerial Imagery at Scale](ch17/016-multimodal-ai-for-searchable-aerial-imagery-at-scale)
+- [017. Moebius: 0.2B Lightweight Image Inpainting with 10B-Level Performance](ch17/017-moebius-0-2b-lightweight-image-inpainting-with-10b-level-pe)
 
 ### ⭐⭐⭐⭐ 科学家（3 篇）
 

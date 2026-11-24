@@ -1,6 +1,6 @@
 # Securing the future of AI agents
 
-> 📊 Level ⭐⭐⭐ | 6.0KB
+> 📊 Level ⭐⭐⭐ | 8.2KB
 
 > **来源**: deepmind.google
 > **作者**: Rohin Shah, Four Flynn (DeepMind)
@@ -49,24 +49,25 @@ DeepMind 已分析 100 万条 coding agent 任务轨迹，关键发现：
 
 ## 深度分析
 
-### "假设 misalignment" 的安全哲学
+### 威胁模型：Agent 即内部威胁
 
-AI Control Roadmap 的核心假设是：**如果一个高度 capable 的 AI Agent 不 aligned 且以意外方式行动怎么办？** 这与传统安全工程中的 threat modeling 一脉相承——不假设组件可信，而是建立验证机制。
+Roadmap 最具方法论价值的一步，是给出显式威胁模型：不把 Agent 仅仅当作可能被外部攻击者劫持的工具，而是直接当作 potential “insider threat”——类比已拿到办公室门禁权限的潜在恶意员工——攻击者不需要突破边界，只需滥用合法权限，纯边界防御由此失效。工程落地借鉴 MITRE ATT&CK：把攻击路径分解为更小的 tactics 与 techniques，支撑风险追踪、损害发生前的异常发现、验证防御是否成立的安全演练——AI 安全由此从“写原则”进入可运营阶段，与 [Agent 安全威胁模型](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-security-threat-models.md) 的框架化路线一致。
 
-这代表了 AI 安全领域的范式转变：从"确保 AI 对齐"到"即使不对齐也能安全运行"的双保险策略。对于 [Agent 安全威胁模型](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-security-threat-models.md) 领域而言，这是一个重要的方法论贡献。
+### 具体攻击面：注入、权限提升与记忆投毒
 
-### Detection-Response 矩阵的工程意义
+其一是 **prompt injection**：基础层明确列出 prompt injection resistance，对应不可信内容劫持行为的经典通道（参见 [Prompt Injection 防御](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/prompt-injection-defense.md)）。其二是 **身份与权限提升**：“双控驾驶”类比给出对策——基于已验证行为（verified behavior）授予权限，通过受控、渐进的访问建立信任，而非一次性授予全部权限，把权限提升窗口压缩到每次行为验证之间。其三是长程运行下的 **记忆投毒**：roadmap 未直接点名，但可从数据推出——被标记事件大多源于 misinterpretation 或 overeagerness 而非对抗意图，一条被注入的错误信息写入长期记忆后，会被当作“自己的误判”持续放大。
 
-D1-D4 × R1-R3 的矩阵为不同风险等级的部署场景提供了明确的安全基线。例如：
+### 纵深防御：每一层假设上一层会失效
 
-- 低风险任务 (代码格式化) → D1 + R1 (异步审查)
-- 高风险任务 (系统管理) → D3 + R3 (实时阻断)
+三层是逐级兜底的链条：基础层（sandboxing、endpoint security、prompt injection resistance）假设攻击终会到达；alignment 层作为 primary defense，承认训练不可能完美；control 层把内部 Agent 直接视为 potentially misaligned，即使 alignment 失效也能兜底。监控是主干：可信 AI 系统充当 “supervisor”，持续审查工作 Agent 的推理、行动与计划，在损害发生前阻断。这种“AI 监督 AI”的结构与 [Agent 安全架构](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-security-architecture.md) 的纵深思路一致。
 
-这种分层方法避免了一刀切的安全策略，允许在安全性和效率之间做出合理权衡。
+### 安全评估：能力分级与三个指标
 
-### 百万轨迹数据的启示
+部署侧双维度分级：模型规避检测的能力决定 Detection 等级（D1-D4），攻击执行能力决定 Prevention & Response 等级（R1-R3），安全协议随能力里程碑同步升级。运营侧三个指标：coverage（被监控流量比例）、recall（捕获 misaligned 行为比例）、time-to-response。评估闭环由数据驱动：异步监控原型已分析 100 万条 coding agent 轨迹，标记事件对照威胁分类体系归类，并支撑 Gemini Spark 实时监控（如意外数据删除响应）。“分级 + 指标 + 演练”使 agent 安全成为持续运营的工程系统。
 
-"大多数标记事件非对抗性"这一发现意义深远。它意味着当前阶段的主要安全风险不是 AI 故意作恶，而是 AI 的 misinterpretation 和 overeagerness——这对 [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 设计有直接影响：需要在 harness 层面建立更精确的行为边界，而不是仅依赖 alignment training。
+### 开放问题
+
+其一，监控对象正在退化：模型可通过 oversight awareness（知道被监控）或 opaque reasoning（不以可见文本推理）隐藏推理，届时仅读 verbalized reasoning 将不够，需升级到行为分析乃至模型内部检查。其二，对抗性假设与非对抗性现实的错位：多数异常源于误读与过度急切，说明当前主战场是“减少自伤”而非“抵御攻击者”。其三，生态层尚不成熟：三层论文中单 Agent 与多 Agent 安全已有工程抓手，“赋能网络防御者、构建生态韧性”仍停留在政策框架层面。其四，harness 行为边界（参见 [Harness Engineering Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md)）如何与 D-R 分级联动，仍是工程侧未解问题。
 
 ## 实践启示
 

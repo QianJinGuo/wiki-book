@@ -1,6 +1,6 @@
 # Meta Skill
 
-> 📊 Level ⭐⭐⭐⭐ | 10.7KB
+> 📊 Level ⭐⭐⭐⭐ | 13.6KB
 
 > "Skill 的 Skill" —— 多个原子 Skill 的"项目经理操作手册"。当员工（Agent）变多、业务（Skill）变多，必然遇到指数级放大的噪音；Meta Skill 是用来指导 Agent 三省六部的白皮书。
 
@@ -117,6 +117,18 @@
 - **三大基础设施协同**：路由（预算分配）+ 编排（步骤调度）+ 创建（Meta-skill-creator 辅助生成）构成缺一不可的闭环，单一层面的优化无法实现真正的 Skill 2.0 
 - **Token 效率验证**：实测省 60-80% 成本，弱智问题用小模型搞定（3 分钱），复杂安全审查才动用大模型 —— 智能路由的经济价值在实践中得到验证 
 - **多 Agent 收敛趋势**：Meta Skill 与 [Minimax Mavis](https://github.com/QianJinGuo/wiki-public/blob/main/entities/minimax-agent-team-mavis.md) 等 Agent 团队架构在"编排层"形成技术收敛，从单兵作战走向团队协作是 Agent 发展的必然方向 
+
+### 编排是独立于模型与工具生态的第三层基础设施
+三条线交点的深层含义：编排能力无法从模型能力里"免费"长出来。模型线解决复杂多步骤指令理解，生态线解决原子 Skill 供给，成本线倒逼把 trial-and-error 的 token 消耗从运行期前置到 Skill 创作层——三者缺一，"Skill 自我编排"就只是口号。 这也解释了 [Skill 工程](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/skill-engineering-principles.md) 与工作流编排为何是两个独立演化的学科：前者决定"单次调用质量"，后者决定"何时调用什么"，Meta Skill 首次把后者也做成一份可版本管理、可审计的文档资产。
+
+### 心跳机制把长程任务从"对话"变成"可恢复进程"
+meta-kid-project-planner 的内部循环：自动判断当前阶段 → 调用对应子 Skill 交付 → 心跳机制定时查状态文档。 实测中该循环零介入自行运转 20+ 分钟，交付 3000 字规划 md 之后，才单独调用 Claude Opus 4.7 把上下文搓成带翻页动画的交互式 HTML。 状态文档在此充当进度的单一真相源——长程 Workflow 的可靠性不靠模型"记住"全程，而靠外部状态可查询、可恢复，与 [agentic 工作流](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agentic-workflow-patterns.md) 中的检查点思想同构：模型只负责当前步，进程状态外置到文档。
+
+### 智能路由的分档定价带有显式逃生口
+路由经济学不止"省 60-80%"的头条数字：子任务按复杂度分档定价——提取孩子年龄/偏好这类简单子任务用小模型即可，安全审查与 14 天规划才动用大模型；且路由可以整体关闭，也可以用 Prompt 锁定特定模型，自动化程度是可调滑块而非二选一。 结合创作期把试错成本前置，Meta Skill 实际上把 token 预算从"不可预测的运行期开销"搬进了"可预算的创作期投入"——对企业级落地而言，可预算性比省钱本身更重要。
+
+### 可复制性的边界：SOP 清晰度约束与社会化发现
+Meta Skill 工业化的前提是"脑中已有清晰 SOP"——它放大已经想清楚的流程，不能替你想清楚；跨行业专家经验的排列组合被原文直判"不可行"。 而上百个 Meta Skill 涌现之后"选哪个"的问题，原文给出的答案是社会性方案——个人使用信号 × 社区 Skill 库自动缝合——而非更聪明的搜索算法：编排问题用文档解决，发现问题用协议解决，这一分工正是 [OpenSquilla](https://github.com/QianJinGuo/wiki-public/blob/main/entities/opensquilla.md) 产品形态的深层逻辑。
 
 ## 实践启示
 - **先有清晰 SOP 再谈 Meta Skill**：单个 Meta Skill 需 400+ 行 SKILL.md 和约 30 分钟迭代，没有清晰的流程定义就无法有效抽象，先在业务层把 SOP 跑通是前置条件 

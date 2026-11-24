@@ -1,6 +1,6 @@
 # Gemini 3.5: frontier intelligence with action
 
-> 📊 Level ⭐⭐⭐⭐ | 9.0KB
+> 📊 Level ⭐⭐⭐⭐ | 10.7KB
 
 ## 发布概览
 
@@ -119,19 +119,23 @@ Gemini 3.5 的开发遵循 Google 的 **Frontier Safety Framework**（前沿安�
 
 ## 深度分析
 
-本文揭示了 {DOMAIN} 领域的核心发展趋势，对理解技术演进方向具有重要参考价值。
+这篇发布文最值得注意的信号是发布次序的反转：Google 先以 Flash 档位全面 GA，旗舰 Pro 反而只做内部使用。当 Flash 在 agentic 与 coding 基准上超越自家上代旗舰（Terminal-Bench 2.1 76.2% 胜过 Gemini 3.1 Pro），「Flash＝便宜低配」的行业默认等式被改写。
 
-### 关键洞察
+### 次序反转：速度成为产品主轴
 
-1. **核心趋势**：从多个维度的分析可以看出，行业正在经历从传统架构向智能系统的根本性转变
+3.5 Flash 以 4 倍于其他 frontier 模型的输出速度进入 Artificial Analysis 指数右上象限，官方表述是「不再用质量换延迟」。次序反转正是这一承诺的结构化表达：智能最强的 Flash 档先推给数十亿用户，Pro 补位旗舰叙事——发布节奏服从 agent 场景对延迟与成本的刚性约束，而非传统档位递进。
 
-2. **技术驱动因素**：新型 AI 能力的引入正在重新定义产品形态和用户体验
+### Agentic 经济学：对时间与成本重定价
 
-3. **商业影响**：这一转变对现有市场格局和竞争态势产生深远影响
+原文度量 agentic 价值的单位不是基准分而是「开发者的数天、审计员的数周」——3.5 Flash 以不到其他 frontier 模型一半的成本完成同类工作。案例全部落在「压缩时间×降低成本」象限：Shopify 并行 subagent 跑长周期数据做全球商户增长预测，银行与金融科技将数周级工作流自动化。
 
-### 与行业整体趋势的关联
+### Harness 与分发：乘积型竞争力
 
-本文与同期发表的 System of Record→Intelligence 等文章共同构成了对 AI Native 时代企业软件演进的系统性分析框架
+Antigravity harness 被明确为能力放大器：配合更新后的 harness，3.5 Flash 可部署协作式 subagent，在监督下可靠执行多步工作流。模型、harness、分发渠道（消费端 App/Search、开发端 AI Studio 与 Android Studio、企业端 Agent Platform）同日全部就位，垂直一体化构成单点模型厂商难以复制的优势——agent 时代的竞争力是「模型×运行环境×触达面」的乘积。
+
+### 安全前置：可解释性进入发布主线
+
+Frontier Safety Framework 在文中获得与性能并列的版面：强化 cyber 与 CBRN 防护，并以可解释性工具在模型响应前检查内部推理。当模型被授权 24/7 代理用户行动（Gemini Spark），「响应前检查内部推理」从研究议题变成 agentic 产品的安全前置条件，而非外部约束。
 
 ## 实践启示
 

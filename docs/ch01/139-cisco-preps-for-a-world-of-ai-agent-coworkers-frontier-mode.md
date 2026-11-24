@@ -1,19 +1,28 @@
 # Cisco Preps For A World Of AI Agent Coworkers, Frontier Model Threats
 
-> 📊 Level ⭐⭐⭐ | 8.7KB
+> 📊 Level ⭐⭐⭐ | 11.9KB
 
 URL: https://www.nextplatform.com/ai/2026/06/03/cisco-preps-for-a-world-of-ai-agent-coworkers-frontier-model-threats/5250406
 
 ## 深度分析
 
 ### 1. AI Agent 作为同事：企业基础设施的准备
-Cisco 预见 AI agent 成为"数字同事"——企业需要为 agent 准备身份管理、权限控制、审计日志等基础设施，就像为新员工准备工位一样。
+Cisco 将 AI agent 看作从 chatbot 演化而来的"数字同事"：AI Software and Platform Group 高级副总裁 DJ Sampath 描述的协作模型是——像新员工一样 onboarding agent，agent 承担繁重工作、人类持续掌控关键事务，取代"人类点遍一堆 dashboard 盯着 agent"的旧模式。 企业需要为 agent 准备身份管理、权限控制、审计日志等基础设施，就像为新员工准备工位一样。
 
 ### 2. Frontier model 的安全威胁
-前沿模型的能力提升带来新的安全威胁——更强的模型可能被滥用于社会工程、代码漏洞利用和信息操纵。
+前沿模型的能力提升带来新的安全威胁。Infrastructure and Security Group 高级副总裁 Tom Gillis 指出：agent 自主运行任务、深入企业数据与基础设施，而 frontier 模型不仅能快速检测软件漏洞，还能迅速生成 exploit。 传统"加固后一至两年不动"的补丁节奏，在 Mythos 类模型面前形成了从漏洞被发现并利用到补丁部署之间的巨大时间差。 Anthropic 的 Project Glasswing（限制 Mythos 供给以防止攻击者滥用）在一个月内发现了超过 1 万个漏洞，印证了威胁规模。
 
 ### 3. 企业网络的 agent 准备度
-企业网络当前设计假设所有流量来自人类用户——agent 流量有不同的模式（高频、自动化、批量），需要不同的监控和安全策略。
+企业网络当前设计假设所有流量来自人类用户，而 agent 流量呈现高频、自动化、批量的不同模式。Cisco《AI Impact on Wide Area Networks》报告量化了差异：agent 每个任务产生的流量比传统工具高 450%；同时 AI 与自动化把平均 breakout time（从初始入侵到攻击者开始横向移动）压到 29 分钟，Claude Mythos Preview 等 frontier 模型可能把它压得更低。
+
+### 4. Cloud Control 与 AgenticOps：人与 agent 的共同工作台
+Cloud Control 是 AgenticOps 的落地平台：AI Assistant 以自然语言横跨 Meraki、Webex、Security Cloud Control 等产品，简化 IT 运维与安全操作；AI Canvas 则是人类与 agent 实时协作调查并解决问题的共同工作区。 Studio 提供环境定制工具：Agent Builder 可创建贴合自身工作流的 agent，经 connector 或 MCP 连接 30 多个第三方平台；App Builder 通过自然语言提示构建并发布应用，内置 OpenAI Codex 编码平台。 Cloud Control Marketplace 则承放第三方与用户自建的 app、集成与 agent。
+
+### 5. Live Protect："数字免疫系统"填补补丁真空
+Live Protect 首发于 N9000 系列交换机并将扩展到更多 Cisco 系统，定位不是虚拟补丁：Gillis 将其称为"数字免疫系统"——在维护窗口与补丁周期之间"堵漏的手指"。 今年夏天内还将进入 smart switches、路由器上的 Cisco 防火墙，并为 SD-WAN 设备加入后量子密码。
+
+### 6. 硅-网-安全协同设计的全栈优势
+Sampath 强调 Cisco 自研 silicon 带来独有的协同设计能力：从 silicon 到网络、把安全直接融合进网络，再以数据平台汇聚全部 telemetry，最后用 AgenticOps 让跨域运维变得简单——竞争对手难以复制的"very unique advantage"。
 
 ## 实践启示
 

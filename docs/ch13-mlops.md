@@ -54,9 +54,9 @@ MLOps 是 AI 系统从"Demo"到"产品"的分水岭。
 ### ⭐⭐⭐⭐⭐ 大师（5 篇）
 
 - [012. PM 视角的 Agent Harness：把需求写成任务卡、工具契约与验收反例](ch13/012-pm-agent-harness)
-- [013. ai-skill-测评指标体系](ch13/013-ai-skill)
-- [014. 07—AI Skill 测评体系完整进阶指南：5 大能力缺口与填补路径](ch13/014-07-ai-skill-5)
-- [015. Agent Skill 评估与迭代](ch13/015-agent-skill)
+- [013. Agent Skill 评估与迭代](ch13/013-agent-skill)
+- [014. ai-skill-测评指标体系](ch13/014-ai-skill)
+- [015. 07—AI Skill 测评体系完整进阶指南：5 大能力缺口与填补路径](ch13/015-07-ai-skill-5)
 - [016. 06—看懂 AI Skill 测评报告：PASS / FAIL / INCONCLUSIVE 背后的发布决策逻辑](ch13/016-06-ai-skill-pass-fail-inconclusive)
 
 
