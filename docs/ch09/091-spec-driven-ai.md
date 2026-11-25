@@ -1,6 +1,6 @@
 # Spec-Driven AI 编程半年实战 — 有损管道、三工具比较与三大认知陷阱
 
-> 📊 Level ⭐⭐⭐⭐ | 9.5KB
+> 📊 Level ⭐⭐⭐⭐ | 9.6KB
 
 > 百人级互联网前后端团队半年 SDD 实践。核心洞察：**"有损管道"** 框架 + 三大工具的 **结构性代价** 对比 + **认知陷阱**。[^1]
 
@@ -99,7 +99,7 @@ Spec Kit 四层管道每层约 15% 损耗，累积对齐度约 52%（0.85⁴ ≈
 
 ## 参考
 
-→ [raw/articles/d4MCEB91ppMVrNO4JQaI7Q|原文存档]
+→ 原文存档：`raw/articles/d4MCEB91ppMVrNO4JQaI7Q/article.md`
 
 [^1]: raw/articles/d4MCEB91ppMVrNO4JQaI7Q
 

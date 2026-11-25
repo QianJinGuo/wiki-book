@@ -11,8 +11,8 @@
 | Level | 含义 | 篇数 |
 |-------|------|------|
 | ⭐⭐ 工程师 | 需编程基础 | 5 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 22 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 20 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 21 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 21 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 16 |
 
 ---
@@ -43,7 +43,7 @@ Agent 能不能"动手做事"，取决于它有什么工具。
 - [004. 当我把AI变成一个\"算法\"：Skill工程化设计的心路历程](ch07/004-ai-skill)
 - [005. 如何构建生产准备的AI代理：MCP、CLI与技能——适合合适的工作的工具](ch07/005-ai-mcp-cli)
 
-### ⭐⭐⭐ 专家（22 篇）
+### ⭐⭐⭐ 专家（21 篇）
 
 - [006. 电商 AI 操作系统崛起：从「工具人」到「All in One」+ 行业 KnowHow Skill 化 + 5 巨头 Headless 布局](ch07/006-ai-all-in-one-knowhow-skill-5-headless)
 - [007. Defense-as-Skill：把 Agent 运行时安全守卫做成可进化 Skill（SkillSonar / SCOPE-R）](ch07/007-defense-as-skill-agent-skill-skillsonar-scope-r)
@@ -65,30 +65,30 @@ Agent 能不能"动手做事"，取决于它有什么工具。
 - [023. SkillX — 层次化技能知识库](ch07/023-skillx)
 - [024. Anthropic Claude Skill 9 类任务分类法](ch07/024-anthropic-claude-skill-9)
 - [025. 李继刚 23 个 Skills 深度拆解——认知工序流水线](ch07/025-23-skills)
-- [026. Multica — 开源 Managed Agents 平台](ch07/026-multica-managed-agents)
-- [027. 龙虾之父教你省钱：开源Skill给你的Skill减肥](ch07/027-skill-skill)
+- [026. 龙虾之父教你省钱：开源Skill给你的Skill减肥](ch07/026-skill-skill)
 
-### ⭐⭐⭐⭐ 科学家（20 篇）
+### ⭐⭐⭐⭐ 科学家（21 篇）
 
-- [028. Skill 路由优化：用 description 自进化修「能力越界」](ch07/028-skill-description)
-- [029. 我把 Claude Design 做成了 Skill，人人都能成为顶级网站设计师](ch07/029-claude-design-skill)
-- [030. ai-skill-evolution底层逻辑](ch07/030-ai-skill-evolution)
-- [031. 网盘存量代码迁移实战：我们如何用三层架构管住 AI 的输出](ch07/031-ai)
-- [032. Anthropic 最新博客：MCP 没死，它又来了](ch07/032-anthropic-mcp)
-- [033. OpenClaw 深度架构分析：Agent 引擎、多源 Skill 系统、子 Agent steer 重定向、五层容错](ch07/033-openclaw-agent-skill-agent-steer)
-- [034. Meta Skill](ch07/034-meta-skill)
-- [035. Hermes自进化完整闭环：Skill创建复用修补链路](ch07/035-hermes-skill)
-- [036. 高德扫街榜 HermesAgent 配图系统：VLM + Skill + 语言驱动的生产级 Agent 架构](ch07/036-hermesagent-vlm-skill-agent)
-- [037. MapSatisfyBench：首个以满意度为核心目标的地图智能体评测基准](ch07/037-mapsatisfybench)
-- [038. Skill自进化三路线：Trace2Skill归纳法 / EvoSkill验证闭环 / SkillOpt训练范式](ch07/038-skill-trace2skill-evoskill-skillopt)
-- [039. CLI、MCP 和 CLI+Skill，应该如何选？](ch07/039-cli-mcp-cli-skill)
-- [040. Matt Pocock Skills — AI编程技能集合](ch07/040-matt-pocock-skills-ai)
-- [041. Agent Loop 架构三层模型：Loop + Skill + Orchestrator](ch07/041-agent-loop-loop-skill-orchestrator)
-- [042. Skill 版本对比五大原则：从'两个数字比大小'到工程化质量门禁](ch07/042-skill)
-- [043. 京东健康 OPC 团队产品全流程 Skill 探索](ch07/043-opc-skill)
-- [044. Claude Code MCP Server](ch07/044-claude-code-mcp-server)
-- [045. Claude Code Skills 实战指南 — 发现机制、编写与安全](ch07/045-claude-code-skills)
-- [046. Skill 版本管理五大原则：从越改越差到持续演进](ch07/046-skill)
+- [027. Skill 路由优化：用 description 自进化修「能力越界」](ch07/027-skill-description)
+- [028. 我把 Claude Design 做成了 Skill，人人都能成为顶级网站设计师](ch07/028-claude-design-skill)
+- [029. ai-skill-evolution底层逻辑](ch07/029-ai-skill-evolution)
+- [030. 网盘存量代码迁移实战：我们如何用三层架构管住 AI 的输出](ch07/030-ai)
+- [031. Anthropic 最新博客：MCP 没死，它又来了](ch07/031-anthropic-mcp)
+- [032. OpenClaw 深度架构分析：Agent 引擎、多源 Skill 系统、子 Agent steer 重定向、五层容错](ch07/032-openclaw-agent-skill-agent-steer)
+- [033. Meta Skill](ch07/033-meta-skill)
+- [034. Hermes自进化完整闭环：Skill创建复用修补链路](ch07/034-hermes-skill)
+- [035. 高德扫街榜 HermesAgent 配图系统：VLM + Skill + 语言驱动的生产级 Agent 架构](ch07/035-hermesagent-vlm-skill-agent)
+- [036. MapSatisfyBench：首个以满意度为核心目标的地图智能体评测基准](ch07/036-mapsatisfybench)
+- [037. Skill自进化三路线：Trace2Skill归纳法 / EvoSkill验证闭环 / SkillOpt训练范式](ch07/037-skill-trace2skill-evoskill-skillopt)
+- [038. CLI、MCP 和 CLI+Skill，应该如何选？](ch07/038-cli-mcp-cli-skill)
+- [039. Matt Pocock Skills — AI编程技能集合](ch07/039-matt-pocock-skills-ai)
+- [040. Agent Loop 架构三层模型：Loop + Skill + Orchestrator](ch07/040-agent-loop-loop-skill-orchestrator)
+- [041. Skill 版本对比五大原则：从'两个数字比大小'到工程化质量门禁](ch07/041-skill)
+- [042. 京东健康 OPC 团队产品全流程 Skill 探索](ch07/042-opc-skill)
+- [043. Claude Code MCP Server](ch07/043-claude-code-mcp-server)
+- [044. Claude Code Skills 实战指南 — 发现机制、编写与安全](ch07/044-claude-code-skills)
+- [045. Skill 版本管理五大原则：从越改越差到持续演进](ch07/045-skill)
+- [046. Multica — 开源 Managed Agents 平台](ch07/046-multica-managed-agents)
 - [047. Skill Craft — Claude Skill 质量工程框架](ch07/047-skill-craft-claude-skill)
 
 ### ⭐⭐⭐⭐⭐ 大师（16 篇）

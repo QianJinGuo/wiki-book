@@ -1,6 +1,6 @@
 # Claude Code 集成其他工具指南
 
-> 📊 Level ⭐⭐⭐⭐ | 9.4KB
+> 📊 Level ⭐⭐⭐⭐ | 13.5KB
 
 ## 概述
 本文系统性整理 Claude Code 与 **Obsidian 以外**的各种工具集成方案，涵盖 MCP 协议扩展、IM 平台操控、IDE 协同、企业级部署集成等多个维度。核心价值在于帮助开发者了解 Claude Code 的生态广度，根据自身场景选择最适合的集成路径。
@@ -97,6 +97,26 @@ Skills 适合封装复杂的工作流经验，如：    ^[entities/obsidian-clau
 MCP 是"连接协议"，解决的是"如何让 Claude Code talk to X"的问题。Skills 是"经验封装"，解决的是"如何让 Claude Code 更好地做 Y"的问题。
 一个好的 MCP Server 应该是无状态的、幂等的、安全的。一个好的 Skill 应该是包含上下文、示例、错误处理的完整工作单元。
 
+### 接入层级：一种能力，三种成本
+Obsidian 生态把接入拆成三层，速度与 token 成本各异：CLI 直连最快最省，REST API 灵活但多一层调用开销，文件系统 grep/glob 硬扫最慢最耗 token。实测中（4000+ 文件 16GB 仓库），索引路径把找孤立笔记从十几秒压到 1 秒内（约 50 倍）。它是集成决策模板：任何"AI 调用外部系统"方案都应先算哪条路径的 token 与延迟最便宜。
+它与 MCP 祛魅同源：CLI 把"硬扫文件"升级为"查索引"，`gh` 把"模型拼参数"降为一次结构化调用——接入层级越高，模型浪费在搬运数据上的 token 越少。
+
+### 人机写入边界的架构含义
+社区原则"AI 负责读取，人负责书写"实质是权限与数据所有权设计：vault 记录人的思考，AI 输出（计划、会话、记忆）沉淀在 `~/.claude/`，两边物理隔离，AI 读写权限也天然被限定在辅助位置。
+这个边界与供应链风险互为镜像：AI 可写入 vault（或 `.claude/` 配置目录）时，写入的不只是笔记，还有未来会话的行为规则——写入面即攻击面。
+
+### 扩展的信任模型：Skills/Agents 是可执行的 Markdown
+Skills/Agents 研究的关键认知：`.md` 扩展文件本质是"可执行的 Markdown"，威胁模型等价于安装不可信 pip/npm 包——且更隐蔽：PyPI 有审计而随机 SKILL.md 没有。
+核心机制三层：
+1. **LLM 推理是软防线**：模型能识别拒绝明显恶意命令（如 socat 反弹 shell），但跨会话失效——新会话同样命令照常执行（仍被权限拦截）。
+2. **动态上下文是硬通道**：skill frontmatter 的 `` !`cmd` `` 注入在 LLM 看到前即被执行，完全跳过推理；配合 `allowed-tools: Bash(*)`，单个 `.md` 文件默认配置下即可静默拿到反弹 shell。
+3. **Sub-agent 是权限旁路**：agent 定义文件的 `permissionMode: bypassPermissions` 来自下载目录时是攻击者可控的，可覆盖用户默认模式；更隐蔽的是让 agent"安装并运行 npm 包"，用合理封面故事骗 LLM 交出执行权。
+
+### 防线的真正位置：设置层而非模型层
+最重要的结论是防御不对称：**所有绕过最终都被 deny 设置拦住**。settings 里 `"deny": ["Bash(*)"]` 能同时压制 skill 的 `allowed-tools` 声明和 agent 的 `bypassPermissions`——settings 优先级高于扩展文件的一切声明。
+这也解释了矩阵中"简单 CLI 直接用 Bash"的逻辑：扩展机制每多一种，权限模型多一个需审计的声明面。企业级部署（Bedrock AgentCore）的价值在此——settings 管理与沙箱隔离上收到平台层，不依赖开发者本机配置。
+防御清单：不运行不可信 skills/agents；审查下载仓库的 Skill/Agent/CLAUDE.md；建内部可信源与审批流程；企业层统一管控工具与文件系统限制；尽可能将 agent 与宿主机、互联网沙箱隔离。
+
 ### IM 操控 Agent 的适用边界
 通过 IM 操控 Agent 听起来很美好，但有几个现实约束：    ^[entities/obsidian-claude-code-integration]
 
@@ -122,6 +142,8 @@ MCP 是"连接协议"，解决的是"如何让 Claude Code talk to X"的问题�
 - [企业级 Agentic AI](https://github.com/QianJinGuo/wiki-public/blob/main/entities/building-enterprise-agentic-ai-with-kiro-on-aws.md) — AWS 集成
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/tool-use-mcp-patterns.md)
 > 本页整合来源：Claude Code 官方文档、Anthropic 源码分析、AWS China Blog、OpenClaw 社区实践
+
+→ [原文存档](https://mp.weixin.qq.com/s/57U6XeKCGtVkQXnNqg9DJQ)
 
 ---
 

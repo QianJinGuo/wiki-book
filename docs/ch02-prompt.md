@@ -71,8 +71,8 @@
 - [022. Headroom：上下文压缩与缓存稳定化框架（live zone + CCR + RawValue 字节级 patch）](ch02/022-headroom-live-zone-ccr-rawvalue-patch)
 - [023. 视觉 AI 的下一前沿是代码：a16z 关于视觉生成范式转移的论述](ch02/023-ai-a16z)
 - [024. AINMM：存量生产级工程向 AI Native 演进的五级成熟度模型](ch02/024-ainmm-ai-native)
-- [025. OneReason：快手将推理注入推荐基模的系统性尝试](ch02/025-onereason)
-- [026. LLM Wiki 架构](ch02/026-llm-wiki)
+- [025. LLM Wiki 架构](ch02/025-llm-wiki)
+- [026. OneReason：快手将推理注入推荐基模的系统性尝试](ch02/026-onereason)
 
 ### ⭐⭐⭐⭐⭐ 大师（4 篇）
 

@@ -1,6 +1,6 @@
 # Harness Engineering for Self-Improvement — 翁荔 Lilian Weng 系统梳理 Harness 自我提升研究全景
 
-> 📊 Level ⭐⭐⭐⭐ | 14.6KB
+> 📊 Level ⭐⭐⭐⭐ | 14.7KB
 
 ## Harness Engineering for Self-Improvement — 翁荔系统梳理 Harness 自我提升研究全景
 
@@ -115,7 +115,7 @@ Karpathy's autoresearch: 规划 → 执行 → 观察/测试 → 改进 的目�
 
 ## 参考
 
-→ [raw/articles/kZrryL8_fxfq2pSFw6LSqg|原文存档]
+→ 原文存档：`raw/articles/kZrryL8_fxfq2pSFw6LSqg/article.md`
 → [Lilian Weng 原博客](https://lilianweng.github.io/posts/2026-07-04-harness/)
 
 [^1]: raw/articles/kZrryL8_fxfq2pSFw6LSqg

@@ -94,7 +94,7 @@
 
 ## 参考
 
-→ [raw/articles/tzxbqmBhPlQOarakeeMQaQ|原文存档]
+→ 原文存档：`raw/articles/tzxbqmBhPlQOarakeeMQaQ/article.md`
 
 [^1]: raw/articles/tzxbqmBhPlQOarakeeMQaQ
 

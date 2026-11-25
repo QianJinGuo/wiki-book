@@ -141,7 +141,7 @@ Skill 注入主 Agent 上下文、与主对话共享 token 预算；Subagent 独
 
 ## 参考
 
-→ [raw/articles/gaLEAjOz8xLAi8ABnG855g|原文存档]
+→ 原文存档：`raw/articles/gaLEAjOz8xLAi8ABnG855g/article.md`
 
 [^1]: raw/articles/gaLEAjOz8xLAi8ABnG855g
 

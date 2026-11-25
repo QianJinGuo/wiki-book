@@ -1,6 +1,6 @@
 # LFM2.5-230M: Built to Run Anywhere
 
-> 📊 Level ⭐⭐⭐⭐ | 6.9KB
+> 📊 Level ⭐⭐⭐⭐ | 10.2KB
 
 > **Background**：Liquid AI 发布其最小模型 LFM2.5-230M，专为边缘设备和 Agent 工作流设计。基于 LFM2 架构，在 Galaxy S25 Ultra 上达到 213 tok/s 解码速度，是当前同参数量级中推理速度最快的模型之一。
 
@@ -79,22 +79,21 @@ Liquid AI 开发了内部 GPU 推理栈，实现极低延迟服务。在 SGLang 
 
 ## 深度分析
 
-### 对边缘 Agent 生态的意义
+### 230M 的定位逻辑：Agent 流水线中的专用环节模型
 
-LFM2.5-230M 代表了小模型 + 高速推理这一 Agent 基础设施的关键拼图：
+Liquid AI 把 230M 这个量级当作严肃产品而非技术演示，背后是对 Agent 工作流 token 分布的判断：一次 agent 运行中，大部分推理开销消耗在结构化、延迟敏感的环节——路由决策、字段抽取、工具调用格式化——而不是深度推理。把这些环节交给专用小模型，让更大的模型专注真正需要推理的步骤，是分层 Agent 架构的成本/延迟经济学基础。Raw 中两处细节说明这一定位是有意为之：官方明确不建议将模型用于 advanced math、code generation、creative writing 等推理密集型任务，划出了清晰的能力边界；Unitree G1 上的 skill-selection layer 则是这种分工的具象化——模型只负责把自然语言指令分解为工具调用序列，底层技能执行交给 NVIDIA SONIC 框架的预训练技能。 换言之，230M 不是"缩小版通用模型"，而是 Agent 栈中成本/延迟敏感环节的专用组件。
 
-1. **本地 Agent 闭环**：无需云端 API，本地完成工具调用和决策推理，消除了网络延迟和 API 成本
-2. **实时交互**：213 tok/s 的解码速度满足人机实时对话需求
-3. **隐私保障**：数据不出设备，适用于医疗、金融等敏感场景
-4. **规模化部署**：230M 参数的极小体积使得大规模端侧部署在经济上可行
+### 边缘推理经济学：213 tok/s 的工程含义
 
-### 技术路线意义
+213 tok/s（Galaxy S25 Ultra 解码）与 42 tok/s（Raspberry Pi 5）这组数字值得拆开看：旗舰手机上，一段 200 token 的工具调用计划约 1 秒解码完成，足以支撑闭环的本地 Agent 交互；而在无 GPU 的低成本单板计算机上，42 tok/s 仍高于人类阅读速度，意味着数据抽取管线可以实时运行。更关键的是对比基线——在两类设备上，LFM2.5-230M 都取得同级最高的 prefill 与 decode 吞吐，同时保持最小内存占用，对比对象包括同尺寸的 SSM hybrid 与 Gated Delta Networks。 另一个容易被忽略的信号是 flash-attention 标志的按设备调优：Raspberry Pi 5 启用（-fa 1）、Snapdragon Gen4 禁用（-fa 0）。在 230M 量级，推理性能已经不是单纯的模型属性，而是模型与具体平台的协同工程——这类 per-platform tuning 通常是边缘部署团队自行承担的成本，Liquid AI 把它前置到了发布环节。
 
-LFM2.5-230M 的成功验证了几个重要趋势：
+### 三阶段后训练在超小模型上为什么有效
 
-- **架构效率比参数量更重要**：LFM2 的 SSM 混合架构在极小参数量下仍保持强竞争力
-- **蒸馏 + RL 的后训练配方**：从 350M 模型蒸馏到 230M 模型的有效性表明，小模型可以通过精心设计的训练流程获得远超其体量的能力
-- **端到端 Agent 链路**：从自然语言理解到工具调用的完整链路可以在 230M 参数上实现
+SFT 蒸馏（教师为 LFM2.5-350M，约 1.5 倍参数）→ DPO → 多领域 RL 的三阶段配方，针对的正是超小模型的两个典型短板：能力缺口与泛化脆弱。从"近亲"教师蒸馏比从大得多的模型蒸馏更可控，知识落差小、风格一致；多领域 RL 则专攻工具调用这类格式敏感任务。同样值得注意的是配方的"轻量"定位——官方明确其设计目标是 preserve flexibility for developers，即最终 checkpoint 刻意保留对下游专项微调的适应性，而非把开箱即用能力推到极致，因为开发者的领域微调才是这一产品的主要使用方式。 世代对比提供了配方有效性的最硬证据：上一代 LFM2-350M 在 CaseReportBench 仅得 11.67、BFCLv3 仅 22.95，而新一代的 230M 分别达到 22.51 与 43.26——参数量缩小约三分之一，应用类任务分数接近翻倍，说明增益主要来自 LFM2.5 训练配方而非规模。
+
+### 19T tokens + 32K 上下文：预训练侧的 scaling 取舍
+
+19T tokens 对 230M 参数约为 8.3 万:1 的 tokens-per-parameter 比例——把算力投向数据量而非宽度，是小模型对抗容量劣势的经典对冲；在 32K 上下文扩展阶段单独投入算力，在这个尺寸级并不多见，但恰好对准 Agent 工作负载的真实形态（长工具调用历史、多轮结构化交互）。这种取舍在 benchmark 上的投影相当清晰：instruction following（IFEval 71.71、IFBench 38.40）大幅领先参数量 3 倍以上的 Qwen3.5-0.8B（59.94 / 22.87），因为指令遵循更依赖训练数据覆盖而非性能容量；知识类任务（MMLU-Pro 20.25 vs Qwen 的 37.42）则是诚实的缺口。τ²-Bench Telecom 仅 5.26 同样说明多轮 Agent 编排在 230M 上仍然吃力——它是 Agent 栈的入口与抽取层，不是编排核心。 家族内不同规模的分工参见 [Liquid Ai Lfm2 5 2 6B Agentic On Device](https://github.com/QianJinGuo/wiki-public/blob/main/entities/liquid-ai-lfm2-5-2-6b-agentic-on-device.md) 与 [Liquid Lfm2 5 24B A2B Agentic Moe 2026](https://github.com/QianJinGuo/wiki-public/blob/main/entities/liquid-lfm2-5-24b-a2b-agentic-moe-2026.md)。
 
 ## 实践启示
 

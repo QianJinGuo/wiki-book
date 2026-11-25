@@ -67,9 +67,9 @@ Harness Engineering 是 2026 年冒出来的最重要工程概念之一：它回
 - [016. Harness 工程实践复盘：100% Cache 命中的 Agent 怎么设计？](ch05/016-harness-100-cache-agent)
 - [017. Harness 到底是什么？看看 OpenClaw、Hermes、Claude Code 的演绎吧](ch05/017-harness-openclaw-hermes-claude-code)
 - [018. Martin Fowler AI 研发提醒：Harness 承重层](ch05/018-martin-fowler-ai-harness)
-- [019. 验证 Harness：登录系统改造中 AI 润滑验证链路的工程实录（腾讯云开发者）](ch05/019-harness-ai)
-- [020. MAC（multi-agent-coding）：Skills + Hooks 两层 Harness —— 完全委托 0-20% 的解法](ch05/020-mac-multi-agent-coding-skills-hooks-harness-0-20)
-- [021. 生产级 Harness 的 12 大组件以及主流框架对比](ch05/021-harness-12)
+- [019. 生产级 Harness 的 12 大组件以及主流框架对比](ch05/019-harness-12)
+- [020. 验证 Harness：登录系统改造中 AI 润滑验证链路的工程实录（腾讯云开发者）](ch05/020-harness-ai)
+- [021. MAC（multi-agent-coding）：Skills + Hooks 两层 Harness —— 完全委托 0-20% 的解法](ch05/021-mac-multi-agent-coding-skills-hooks-harness-0-20)
 - [022. 基于 Harness + SDD + 多仓管理模式的 AI 全栈开发实践｜得物技术](ch05/022-harness-sdd-ai)
 - [023. Distilling Agentic Systems：Agent 蒸馏系统级综述（模型 / 可复用资源 / Harness 三条主线）](ch05/023-distilling-agentic-systems-agent-harness)
 - [024. Bringing more agent harnesses and frameworks to Cloudflare, starting with Flue](ch05/024-bringing-more-agent-harnesses-and-frameworks-to-cloudflare)
@@ -140,9 +140,9 @@ Harness Engineering 是 2026 年冒出来的最重要工程概念之一：它回
 - [086. Is Grep All You Need? — 检索 × Harness × 交付方式耦合三元组（PwC 论文 arXiv 2605.15184 解读）](ch05/086-is-grep-all-you-need-harness-pwc-arxiv-2605-151)
 - [087. SSD Spec 驱动开发实战：从四条约束到 ASD Harness 的工程落地](ch05/087-ssd-spec-asd-harness)
 - [088. OpenSpec 四步法深度复盘：流程完整 ≠ 代码正确](ch05/088-openspec)
-- [089. 12 个 Agent 工程设计底层逻辑：脚手架 vs 承重墙](ch05/089-12-agent-vs)
-- [090. Superpowers 6.0 SDD 评审重写：文件交接 + 多平台支持](ch05/090-superpowers-6-0-sdd)
-- [091. Harness Engineering 的未来——什么会消失，什么不会](ch05/091-harness-engineering)
+- [089. Harness Engineering 的未来——什么会消失，什么不会](ch05/089-harness-engineering)
+- [090. 12 个 Agent 工程设计底层逻辑：脚手架 vs 承重墙](ch05/090-12-agent-vs)
+- [091. Superpowers 6.0 SDD 评审重写：文件交接 + 多平台支持](ch05/091-superpowers-6-0-sdd)
 
 ### ⭐⭐⭐⭐⭐ 大师（23 篇）
 

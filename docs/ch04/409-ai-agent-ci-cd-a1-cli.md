@@ -123,7 +123,7 @@ a1 CLI 的做法带一层漂亮的自我指涉：工具在自己的 CI 流水线
 
 ## 参考
 
-→ [raw/articles/0NuS75Bcys0xNCp9wNl8aw|原文存档]
+→ 原文存档：`raw/articles/0NuS75Bcys0xNCp9wNl8aw/article.md`
 
 [^1]: raw/articles/0NuS75Bcys0xNCp9wNl8aw
 

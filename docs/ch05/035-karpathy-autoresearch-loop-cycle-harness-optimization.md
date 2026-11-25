@@ -105,7 +105,7 @@ Niklaus 实验最有战略含义的一点，是把"性能提升"从资本密集�
 
 ## 参考
 
-→ [raw/articles/karpathy-autoresearch-loop-harness-76pct-agent-misconception|原文存档]
+→ [原文存档](https://mp.weixin.qq.com/s/BZOvL_4Uei-zFGY3Ossi9w)
 
 ---
 

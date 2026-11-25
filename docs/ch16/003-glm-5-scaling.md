@@ -1,6 +1,6 @@
 # GLM-5 Scaling 痛点与推理优化
 
-> 📊 Level ⭐⭐⭐ | 14.7KB
+> 📊 Level ⭐⭐⭐ | 18.2KB
 
 ## glm5-scaling-pain-inference
 对 Scaling Law 的信仰不仅驱动着我们在模型参数与数据规模上不断突破，也同样在不断逼近 Infra 工程的极限，这一过程伴随着不可避免的阵痛，我们称之为" Scaling Pain "。
@@ -84,6 +84,15 @@ GLM-5的Scaling Pain案例揭示了高并发Coding Agent场景下推理系统面
 **2. 竞态Bug的隐蔽性与系统性**：两个Bug（PD分离KV Cache竞态、HiCache加载时序）都是典型的分布式系统状态一致性问题的不同表现形式。它们的共同特征是：只在高负载、长上下文场景下触发，难以本地稳定复现，根因隐藏在对时序敏感的状态管理中。
 **3. 系统瓶颈的根源**：两个Bug的修复揭示了共同的系统瓶颈——Prefill阶段主导了Coding Agent场景的系统性能。LayerSplit优化正是针对这一瓶颈的根本性解决方案，通过KV Cache分层存储降低单卡显存压力。
 
+### 4. 优化手段互为因果：每个性能优化都在制造新的故障面
+超时 Abort 最初是为控制 TTFT 而引入的尾延迟治理手段，HiCache 是为缓解 KV Cache 容量压力而引入的分层缓存——但事后复盘，正是这两项优化各自打开了新的竞态窗口：Abort 信号未传播至 Prefill 侧、Decode 侧又缺乏判断槽位可否安全复用的充分信息，旧请求的 RDMA 写入因此得以继续覆盖已分配给新请求的显存区域；而 HiCache 的 Load/Forward Stream 重叠执行，则因数据依赖未被显式表达而出现 Read-before-Ready 访问。 由此可提炼一条普适判断：在[推理优化](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/inference-optimization.md)与 PD 分离（参见 [PD 分离推理](https://github.com/QianJinGuo/wiki-public/blob/main/entities/disaggregated-prefill-decode-llm-inference-sagemaker.md)）这类分布式架构中，每引入一个性能优化机制，就等于向系统注入一组新的异步状态迁移；任何没有配套一致性契约的优化，都会在足够高的负载下以输出质量异常的形式"退货"。优化与故障不是对立面，而是同一枚硬币的两面。
+
+### 5. 两处修复共享同一模式：把隐式时序假设升级为显式同步契约
+BugFix #1 的修复本质是一条资源释放契约：Decode 触发 Abort 后向 Prefill 发送通知，Prefill 仅在"RDMA 写入尚未开始，或所有已提交写入均已完成"时才返回可释放信号，Decode 收到确认后才允许回收并复用 KV Cache 槽位——异常输出发生率随之从约万分之十几降至万分之三以下。 BugFix #2 的修复同理：在 Indexer 算子启动前显式建立与 Load Stream 的同步点，Forward Stream 只在对应层级的 Cache 数据就绪后才启动计算。 两处修复都没有引入新的组件或调度策略，只是把原本"默认成立"的时序假设改写为可执行的等待/确认协议，并将修复成果回灌 SGLang 开源社区。这提示：竞态类 Bug 的正解往往不是"更复杂的调度"，而是为跨节点、跨流的数据依赖补上缺失的显式同步原语。
+
+### 6. LayerSplit：把容量瓶颈转化为可被计算掩盖的通信成本
+Coding Agent 负载的 Prefill 节点普遍采用 Context Parallel 并行策略，而开源实现中每张 GPU 冗余保存全部层的 KV Cache，使显存容量反过来成为 GPU 算力利用率的限制项。LayerSplit 的解法是按层切分存储、按需广播：持有某一层 Cache 的 rank 在 Attention 计算前把该层广播给其他相关 rank，并将广播与 Indexer 计算在时间上重叠，额外通信只剩约 1/8 于 KV Cache 体量的 Indexer Cache 广播。 在 90% Cache 命中率、40k-120k 请求长度下吞吐提升 10%-132%，且上下文越长收益越显著——这与 Coding Agent 平均超过 70K tokens 的输入特征正好同向。 其方法论可迁移到 [推理优化](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/inference-optimization.md) 的其他场景：当存储成为瓶颈时，优先考虑"用可被现有计算掩盖的结构化通信"置换"全量冗余存储"，而不是单纯堆显存；收益随负载特征（更长上下文）放大，说明优化应瞄准目标负载的分布而非平均情况。
+
 ## 实践启示
 1. **利用性能优化技术的副产物进行异常检测**：投机采样原本是性能优化手段，但其指标（spec_accept_length、spec_accept_rate）在异常时呈现稳定模式，可作为在线监控的锚点。这种"用优化技术的副产物做可观测性"的思路值得借鉴。
 2. **高负载压测是暴露隐式Bug的必要条件**：本地回放无法稳定复现异常，只有在接近真实负载的条件下（调整PD分离比例、持续提高系统负载）才能稳定触发。线上问题排查需要构建压力环境模拟能力。
@@ -93,6 +102,8 @@ GLM-5的Scaling Pain案例揭示了高并发Coding Agent场景下推理系统面
 
 - [lightseek token speed inference](https://github.com/QianJinGuo/wiki-public/blob/main/entities/lightseek-token-speed-inference.md)
 - [MOC](https://github.com/QianJinGuo/wiki-public/blob/main/moc/wiki-master-map.md)
+
+→ [原文存档](https://mp.weixin.qq.com/s/9YdGXrqCPr90yDpdFf5Txg)
 
 ---
 

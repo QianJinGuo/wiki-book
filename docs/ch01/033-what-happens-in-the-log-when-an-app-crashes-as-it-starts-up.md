@@ -1,6 +1,6 @@
 # What happens in the log when an app crashes as it starts up?
 
-> 📊 Level ⭐⭐ | 11.0KB
+> 📊 Level ⭐⭐ | 13.1KB
 
 ## 核心要点
 
@@ -12,17 +12,21 @@ Practical and specific macOS debugging guide from a trusted source, with actiona
 
 本篇来自 TLDR AI Newsletter 推荐。
 
-### 错误码语义：从码表反推具体缺陷
+### 崩溃瞬间的日志子系统解剖
 
-日志最有诊断价值的产出之一是签名验证返回的错误码本身。原文整理的常见错误码表中，-67062（代码完全未签名）最为常见；-67030 表示 Info.plist 或签名被修改过，-67054 指向某个 sealed 资源缺失或失效，-67021 则对应嵌套代码被改动。这些码的粒度足够细，能把"签名坏了"缩小到具体缺陷类别：作者仅改动 Info.plist 里的一个字符，破坏了 CDHashes，日志便准确报出 -67030。掌握这张对照表后，看到错误码即可直接反推排查方向——重新签名、修复 plist，还是检查资源文件。
+以签名验证失败为例，从双击到内核裁决的全部发言被压缩在约 110 毫秒内（00.940943 → 01.053627）：Finder 记录动作后，syspolicyd 发起 SecTrustEvaluateIfNecessary 策略评估，trustd 执行 SecKeyVerifySignature 密码学验证，lsd 以同一错误码反复报错，launchservices 给出带架构细节的正式错误描述，amfid 再独立复验一遍，最后由内核 AMFI 做出裁决。结构性事实是：应用代码从未获得运行机会——内核在 hook..execve 阶段直接杀死 xpcproxy，整条故障叙事完全由系统守护进程书写。因此对签名类崩溃取证，应在系统进程名下检索条目，而不是到应用名下找日志。
 
-### 日志的多进程接力叙事
+### 同一缺陷的三层编码：错误码、内核错误号与进程控制语义
 
-启动崩溃日志在结构上是一份多进程接力记录：Finder 报告双击动作，syspolicyd 与 trustd 先行发起签名验证，lsd 反复抛出同一个错误码，launchservices 随后给出更详细的错误描述，amfid 再次独立验证一遍，最后由内核执行裁决并以 `kernel ASP: Security policy would not allow process` 收尾。同一个错误在链条上被多个子系统重复确认，由此可得两个推论：单看某一层的一条记录容易误判，必须读完整链条才能定位失败真正发生在哪一层；各条目的"证词"来自不同进程视角，交叉比对能还原出比任何单条记录都完整的故障图像。
+日志里的数字是三层并行编码，混读必然误诊。第一层是签名验证错误码（-67030、-67054、-67062 等），出自 securityd/lsd/amfid，粒度最细，对照码表即可反推缺陷类别；-67062（完全未签名）最常见，-2147409652 指证书被吊销，-67007/-67013 表示 envelope 过时，可见码表横跨签名格式与证书生命周期两族缺陷。第二层是内核内部错误号（load code signature error 4、MACF policy: 1），只表达策略拒绝这一事实，不解释原因。第三层是进程控制语义：被 hook..execve 杀死的是 xpcproxy 而非应用本体，最终落到 Security policy would not allow process 的终局。同一个"改了 Info.plist 一个字符"的缺陷，amfid 层先报 -67030，随后又报 -420（签名无效），码值不同却指向同一处 CDHashes 破坏。正确读法是先用第一层定位缺陷类别，再用第二、三层确认系统确实因此拒绝执行；拿内核错误号去查码表是方向性错误。
 
-### 可观测性的不对称分布
+### 从日志条目回溯根因的五步取证链
 
-四种常见崩溃原因在日志中留下的痕迹量差异极大，这决定了取证策略必须分层。代码签名错误和 translocation 由系统组件多层记录，几乎不可能漏掉；偏好设置问题只有在应用使用标准 `cfprefsd` 机制时才有 XPC 连接与 Loading Preferences 条目可循，而使用自定义偏好机制的应用（`cfprefsd` 与 `defaults` 命令均不覆盖）几乎不留任何痕迹；文档打开失败最隐蔽，唯一知道真相的进程是应用自身，第三方应用又很少往日志写入有用信息。换言之，日志的可观测性由"谁负责记录"决定：系统层故障天然自带证人，应用内部故障则依赖开发者自己的日志意识，痕迹稀薄的类型只能靠排除法间接推断。
+原文实践可提炼为一条五步取证链。第一步锚定时间窗口：时钟显示秒数，约 45 秒选中应用、00 秒整双击、至少 5 秒不碰键鼠，LogUI 新窗口会预设起始时间。第二步定位锚点：双击在日志中表现为四条几乎相同的 softball sendAction 条目，第四条之后的第一条记录即崩溃链起点。第三步按词汇指纹归入故障家族：出现 SecTrustEvaluate/SecKeyVerifySignature 属签名类，出现 SecTranslocateCreateSecureDirectoryForURL 与 AppTranslocation 长路径属 translocation 类，出现 com.apple.cfprefsd.daemon/agent 的 XPC 连接属偏好类，三者皆无则大概率是文档打开失败。第四步用工具栏右侧 Messages/Processes 菜单按应用名过滤，收窄条目集。第五步追到 kernel ASP: Security policy would not allow process 终局行确认裁决确实发生，再回码表把错误码翻译成可执行的修复动作。链条要害在双端确认：起点锚在用户动作，终点锚在内核裁决，中间各层互为印证，只看单层极易误判。
+
+### 可观测性的不对称分布与分层取证策略
+
+四种崩溃原因在日志中的痕迹量呈极端不对称，这决定取证顺序必须分层。签名错误与 translocation 由系统组件多层记录，几乎不可能漏看；偏好设置问题只有在应用走标准 cfprefsd 机制时才有 XPC 连接与 Loading Preferences 条目可循，而使用自定义偏好机制的应用 cfprefsd 与 defaults 均不覆盖，几乎不留任何痕迹；文档打开失败最隐蔽，唯一知道真相的是应用自身，第三方应用又很少往日志写入有用信息。背后的规律是可观测性由"谁有义务记录"决定：系统层的失败自带证人，应用内部的失败只能依赖开发者自己的日志意识。对痕迹稀薄的类型则反向走排除法：先排除签名、translocation、偏好三类，余下假设借助崩溃报告而非日志验证。
 
 ## 扩展内容
 

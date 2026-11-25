@@ -1,6 +1,6 @@
 # 生产级 Harness 的 12 大组件以及主流框架对比
 
-> 📊 Level ⭐⭐⭐ | 15.8KB
+> 📊 Level ⭐⭐⭐ | 18.9KB
 
 [Production Harness 12 Components Framework Comparison](https://mp.weixin.qq.com/s/UwG0mEzQ0Mk7DYjPS3PFqQ)
 
@@ -114,6 +114,15 @@ CrewAI 和 AutoGen 将多 Agent 协作作为第一公民设计，但实际落地
 ### 验证闭环为何被反复强调
 文章指出"好的验证路径质量提升 2-3 倍"，但验证本身引入的复杂度往往被低估。规则型反馈（tests/linters）稳定但覆盖范围有限；LLM-as-judge 灵活但引入新的不确定性；视觉型反馈适合 UI 但不适合底层逻辑。生产系统通常需要三者混合，且验证逻辑本身也需要被验证。
 
+### 12 组件到框架能力的映射
+12 个组件不是抽象清单，而是可以对着框架逐一核对的验收项。Claude Agent SDK 用 query() 入口把编排循环、工具调度、权限检查封装在 async iterator 之后——组件内聚、接口极薄；OpenAI Agents SDK 拆得更开：function/hosted/MCP 三类工具对应工具系统的注册分类，session 与服务端 conversation 对应状态持久化，handoff 对应 sub-agent 委派；LangGraph 则把编排循环本身暴露为图结构，llm_call 与 tool_node 之间的条件边就是 ReAct 循环的显式化，checkpoint 直接绑定在图节点边界上。对照清单会发现没有哪个框架覆盖全部 12 项：每家都在自己最擅长的组件上做深，其余留给开发者补齐。选框架因此变成一个映射问题——先列出你的场景对 12 个组件的敏感度排序，再看哪家框架的强项恰好落在最敏感的几项上。 [Agent Harness Engineering Paradigm](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-harness-engineering-paradigm.md)
+
+### 7 个选择背后的权衡逻辑
+这 7 个选择不是并列的技术选型，而是有依赖顺序的决策链。单 Agent vs Multi-Agent 是根决策，决定后续所有协调成本；ReAct vs Plan-and-Execute 在其上决定循环形态——Plan-Execute 快 3.6x，但前提是任务能被预先分解；上下文管理策略（ [Harness Context Window Management](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-context-window-management.md) ）取决于前两个选择产生的轨迹长度。验证闭环、权限松紧、工具暴露这三个选择本质上是同一枚硬币的三面：都在回答"用确定性代码能兜住多少模型的不确定性"。最后的 Harness 厚度并不是独立选项，而是前六个选择的累积结果——每一步都加显式控制，harness 自然变厚；每一步都信任模型，harness 自然变薄。
+
+### 脚手架隐喻的架构含义
+脚手架隐喻最有价值的部分是它给出了一条可判定的设计标准：那个半年重写五次的团队，每次重写都在删复杂度——复杂工具定义退化为通用 shell execution，management agents 退化为直接 structured handoff。这说明复杂度应该只长在模型能力够不着的地方，而不是预防性地堆在 harness 里。更深一层，模型在后训练阶段已经带着特定 harness 一起训练，工具实现一改性能就掉，意味着 harness 与模型之间存在隐式耦合契约。Future-proofing test 把这个隐式契约显式化成一条回归测试：换上更强模型，harness 不变厚就能自然变好 → 设计健全；反之则说明你把本该由模型承担的复杂度固化进了代码，需要像还技术债一样把它们删回去。
+
 ## 实践启示
 ### 从单 Agent 开始，不要过度设计
 Anthropic 和 OpenAI 都建议先把单 Agent 做到极限。过度设计多 Agent 架构在初期会浪费大量工程资源，而且多 Agent 引入的复杂性会掩盖原本更容易发现的基础设施问题。
@@ -135,6 +144,7 @@ Anthropic 和 OpenAI 都建议先把单 Agent 做到极限。过度设计多 Age
 - [Memory Agent Systems Cobanov](https://github.com/QianJinGuo/wiki-public/blob/main/entities/memory-agent-systems-cobanov.md)
 - [一文带你弄懂 Ai 圈爆火的新概念Harness Engineering V2](https://github.com/QianJinGuo/wiki-public/blob/main/entities/一文带你弄懂-ai-圈爆火的新概念harness-engineering-v2.md)
 - [Agentscope Java Harness Framework](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentscope-java-harness-framework.md)
+→ [原文存档](https://mp.weixin.qq.com/s/UwG0mEzQ0Mk7DYjPS3PFqQ)
 
 ---
 

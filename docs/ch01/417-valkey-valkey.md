@@ -1,6 +1,6 @@
 # Valkey 为什么这么快？盘点 Valkey 中提升性能的黑科技
 
-> 📊 Level ⭐⭐⭐⭐ | 6.9KB
+> 📊 Level ⭐⭐⭐⭐ | 10.5KB
 
 → [原文存档](https://aws.amazon.com/cn/blogs/china/valkey-why-valkey-performance/)
 
@@ -96,6 +96,28 @@ Valkey 的优化策略遵循"分层解耦，逐层突破"的原则：
 ### GLIDE 客户端的战略意义
 
 GLIDE（General Language Independent Driver for the Enterprise）由 AWS、Google 和 Valkey 社区联合开发，Rust Core 底层 + 多语言上层。内置连接管理、重试、故障转移、集群拓扑感知、AZ 亲和路由等生产级特性。这标志着 Valkey 生态从服务端扩展到客户端标准化，类似 JDBC/ODBC 在数据库领域的角色。
+
+### 异步 I/O 线程：从同步交替到真正并发
+
+Valkey 8.0 之前的多线程 I/O 是同步模式：主线程与 I/O 线程交替工作，高并发下 epoll_wait 和数据读写占用主线程 20% 以上时间。8.0 引入 AWS 贡献的异步并发架构——把读取请求、解析协议、发送响应、轮询事件等纯 I/O 操作卸载到 Worker 线程池，主线程专心执行命令；配合线程亲和性、动态伸缩、零竞争（事件通知、无锁）。实测 8 个 I/O 线程吞吐从 360K 提到 1.19M RPS，平均延迟从 1.792ms 降到 0.542ms（-69.8%）。
+
+配套的 9.0 零拷贝响应进一步消除大对象阻塞：主线程不再 memcpy 大对象，只写入 16 字节指针引用，I/O 线程经 writev()/iovec 直接从原始内存位置发送；1KB 请求 + 10MB 大对象混合负载下，p99 延迟从 8.1 的 26.2ms 降到 9.0 的 8ms。这类劣化可用 [ElastiCache 慢查询监控](https://github.com/QianJinGuo/wiki-public/blob/main/entities/构建-amazon-elasticache-oss-caches-慢查询监控方案.md) 捕获。
+
+### CPU 微架构层：内存访问摊销与 SIMD
+
+Profiling 显示主线程 40% 以上时间花在 lookupKey 上：指针 chase 串行依赖，key 集合一大便大量 cache miss，CPU 表面满载、实际在等内存。内存访问摊销即"交错执行 + 预取"：同时发起 N 个内存请求，把 N × 100ns 的等待摊销成接近 1 × 100ns。9.0 的管道内存预取在解析阶段就对所有 key 计算 hash、定位 bucket 并发出 prefetch，执行时数据已在 L1/L2 缓存；批量读负载下相对 8.2 吞吐提升约 50–56%。SIMD 用于 BITCOUNT 和 HyperLogLog（PFCOUNT/PFMERGE），吞吐最高 +200%，自动选 AVX2/NEON 路径。
+
+### 数据结构重写：64 字节缓存行哈希表与 Fenwick 树
+
+8.1 完全重写哈希表：每桶精确 64 字节匹配一个缓存行，把查找从"追指针链"变成"扫描本地缓存"，内存访问从 4+ 次降到 2 次，每 key 省约 20 字节。按 1 亿用户 Session 估算，纯结构开销从约 5.2GB 降到约 1.8GB，可降一级实例规格。
+
+集群模式下，8.0 改为每槽独立字典，消除旧方案每 key 额外 16 字节的双向链表指针；代价是要在 16384 个字典上快速做全局操作（遍历、加权随机淘汰、迁移规划）。Valkey 维护一棵大小 16384 的 Fenwick 树，BIT[slot] = 该槽 key 数，单点更新与前缀和查询均 O(log 16384) ≈ 14 次加法、纳秒级，总开销仅 128K。
+
+### 集群与网络的极限优化：RDMA、MPTCP 与原子 Slot 迁移
+
+网络传输层还有两条差异化路线：RDMA 经 valkey-rdma.so 支持，零拷贝 + 内核旁路 + CPU 卸载，约 2 倍 QPS，但仍是实验性技术，ElastiCache 未启用；MPTCP 把一个 TCP 连接分散到多条子流，自动负载均衡与故障切换、对应用透明，约 -25% 延迟，ElastiCache 9.0 已支持，适合不能中断的跨 AZ 场景。
+
+集群扩缩容方面，9.0 的原子 Slot 迁移"像复制一样迁移，最后原子切换所有权"：快照（子进程异步把迁移槽数据快照化为命令流发往目标）→ 流传输（持续跟踪增量变更）→ 最终化（目标完全处理完才接管所有权并广播）；100 万 key 迁移 4096 槽约 4GB 的测试提速 7 倍以上，客户端无感知。
 
 ## 实践启示
 
