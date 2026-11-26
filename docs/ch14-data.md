@@ -12,8 +12,8 @@
 |-------|------|------|
 | ⭐ 入门 | 零基础可读 | 1 |
 | ⭐⭐ 工程师 | 需编程基础 | 1 |
-| ⭐⭐⭐ 专家 | 需ML基础 | 18 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 6 |
+| ⭐⭐⭐ 专家 | 需ML基础 | 17 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 7 |
 | ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 2 |
 
 ---
@@ -44,7 +44,7 @@
 
 - [002. 构建 AI 时代的知识底座：直播数据 LLM Wiki 实践](ch14/002-ai-llm-wiki)
 
-### ⭐⭐⭐ 专家（18 篇）
+### ⭐⭐⭐ 专家（17 篇）
 
 - [003. ai 驱动的大数据工程 从平台驱动到 aidlc 的范式迁移](ch14/003-ai-aidlc)
 - [004. 使用 Amazon S3 Tables 优化数据湖：从Hudi 迁移到托管 Iceberg](ch14/004-amazon-s3-tables-hudi-iceberg)
@@ -59,16 +59,16 @@
 - [013. The Data Operating System for the Foundation Model Era — Data Juicer](ch14/013-the-data-operating-system-for-the-foundation-model-era-dat)
 - [014. Amazon Quick integration with time-series databases for market intelligence using MCP](ch14/014-amazon-quick-integration-with-time-series-databases-for-mark)
 - [015. Metric Semantic Layer: How Lyft Governs and Scales Key Data Definitions](ch14/015-metric-semantic-layer-how-lyft-governs-and-scales-key-data)
-- [016. verify-data：一个端到端的数据验数 Agent Skill](ch14/016-verify-data-agent-skill)
-- [017. DDoSing Software Delivery Pipelines](ch14/017-ddosing-software-delivery-pipelines)
-- [018. Goodfire Predictive Data Debugging：可解释性指导 Post-Training 数据塑形](ch14/018-goodfire-predictive-data-debugging-post-training)
-- [019. Stop Giving Your Agents Database Credentials — Agent Data Governance Patterns](ch14/019-stop-giving-your-agents-database-credentials-agent-data-go)
-- [020. Amazon Redshift 推出集成数据湖查询引擎的 Graviton RG 实例](ch14/020-amazon-redshift-graviton-rg)
+- [016. DDoSing Software Delivery Pipelines](ch14/016-ddosing-software-delivery-pipelines)
+- [017. Goodfire Predictive Data Debugging：可解释性指导 Post-Training 数据塑形](ch14/017-goodfire-predictive-data-debugging-post-training)
+- [018. Stop Giving Your Agents Database Credentials — Agent Data Governance Patterns](ch14/018-stop-giving-your-agents-database-credentials-agent-data-go)
+- [019. Amazon Redshift 推出集成数据湖查询引擎的 Graviton RG 实例](ch14/019-amazon-redshift-graviton-rg)
 
-### ⭐⭐⭐⭐ 科学家（6 篇）
+### ⭐⭐⭐⭐ 科学家（7 篇）
 
-- [021. 高德 Data Agent：分析是两段翻译，可靠性却沿链路连乘](ch14/021-data-agent)
-- [022. Good QC for RL Data](ch14/022-good-qc-for-rl-data)
+- [020. 高德 Data Agent：分析是两段翻译，可靠性却沿链路连乘](ch14/020-data-agent)
+- [021. Good QC for RL Data](ch14/021-good-qc-for-rl-data)
+- [022. verify-data：一个端到端的数据验数 Agent Skill](ch14/022-verify-data-agent-skill)
 - [023. EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios](ch14/023-eva-bench-data-2-0-3-domains-121-tools-213-scenarios)
 - [024. LiveKit Agents：给大模型接上麦克风，没你想的那么简单](ch14/024-livekit-agents)
 - [025. SQL NOT IN 与 NULL 的经典陷阱：De Morgan 定律到解析器行为](ch14/025-sql-not-in-null-de-morgan)

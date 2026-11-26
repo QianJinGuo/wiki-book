@@ -67,7 +67,6 @@ harness 由五个扩展点构成（CLAUDE.md、钩子、技能、插件、MCP �
 ## 关联
 
 - 同题异语种孪生页：[两万字详解Claude Code源码核心机制](https://github.com/QianJinGuo/wiki-public/blob/main/entities/两万字详解claude-code源码核心机制.md)（归并候选，提案卡 #11 批1）
-→ [原文存档](https://mp.weixin.qq.com/s/w38wMfQpOmcIJ53g5EfoVQ)
 
 ---
 

@@ -1,6 +1,6 @@
 # Anthropic 实战分享：如何让 AI Agent 持续工作几天？
 
-> 📊 Level ⭐⭐⭐⭐ | 10.6KB
+> 📊 Level ⭐⭐⭐⭐⭐ | 15.4KB
 
 → [原文存档](https://mp.weixin.qq.com/s/NNbzBdc4SkxoWIuUdqPcFA)
 
@@ -74,6 +74,35 @@ Anthropic 的方案本质上是在 Agent 系统中引入了三个工程原则：
 3. **对抗性验证**：通过制度化的批评机制防止自我欺骗，类似于传统软件工程中的代码审查
 
 这与 [Claude Code 大型代码库团队部署](https://github.com/QianJinGuo/wiki-public/blob/main/entities/claude-code-large-codebase-team-deployment-agent-harness.md) 中讨论的 Harness 工程实践高度互补。
+
+### 循环设计的进化：初始化—验证—沉淀
+
+把两个 raws 的循环并置，可抽象出同一个三相位循环：
+
+1. **初始化（init）**：开工前把契约固化到磁盘。RetroForge 侧是生成器与评估器的合同谈判，「功能完成」须书面一致后才许构建；Rakuten 侧是睡前任务契约（目标、证据、不变量、预算）。本质都是把「完成」的定义搬到磁盘，杜绝中途被重新解释。
+2. **验证（verify）**：每轮产物过外部检查点。RetroForge 评估器拿严格评分表并用 Playwright 启动应用验证；Rakuten 要求外部验证通过才写入 verified checkpoint。关键是 Self-reflection 与 Verification 分离——模型自省再好，也可能拿同一套错误标准给自己判分。
+3. **沉淀（consolidate）**：已验证状态写回文件系统而非上下文；夜间运行进一步沉淀为早晨交接包。Anthropic 自己的长程 harness 实验同样采用任务清单、增量执行、进度文件、Git 提交与端到端测试，说明这是收敛中的模式。
+
+两个数字由此得到解释：自主运行 1→12 小时（Opus 3.7→4.6）的 10 倍跃升，以及 Rakuten「睡觉时继续干、凌晨前自己发现跑偏」——都不靠更长上下文，而靠相位间的状态外置与独立裁决。两种架构分别是该循环在构建型与运维型任务上的实例；[Ralph 循环失控案例](https://github.com/QianJinGuo/wiki-public/blob/main/entities/long-running-agent-ralph-loop-harness-takeover.md)则提示：缺这两相，循环退化为空转。
+
+### 为什么任务必须可验证、可回滚
+
+夜间运行用墙钟预算换并行车道，车道能否安全铺开取决于两个属性：
+
+- **可验证**：没有外部证据标准，并行只会放大错误假设级联——第一轮的错误假设被后续计划继承，终点离目标越来越远。串行时还有人盯着，并行时只有 verified checkpoint 能兜底。
+- **可回滚**：一次一个可回滚工作包、每轮保存假设与证据、相同失败两次即暂停——失败半径被压到「上一个安全点」，多车道才不互相污染。
+
+由此得到任务分级：可验证可回滚的夜间开放并行；偏主观可撤销的只做草案；不可逆动作留给人审批。模型路由按 task completion ratio 与 cost per task 分配。并行化的前提不是数量，而是每条车道的证据标准与失败半径。
+
+RetroForge 侧印证：宏观规划者的冲刺（Sprints）把长任务切成可独立验收的段，逐段谈判验收。
+
+### 审阅队列瓶颈：人类判断成为限速器
+
+RetroForge 把验证做进 Agent 内部，Rakuten 案例则揭示其外部极限：Agent 扩大执行供给的速度远超人类判断的扩容，平台不仅要管 execution queue 还要管 review queue——产出多、接受率低只会制造库存。
+
+仪表盘是四个指标：验收通过率与 silent failure、错误发现前的步骤数、晨间审阅与返工分钟、每个被接受任务的总成本。「错误发现延迟」对应 RetroForge 的教训——自我评判失灵使错误在模型眼里不可见，只有外部验证闭环能缩短它；发现越晚，单件返工越贵。评估器吸收的验收越多，人类队列越短，这是对抗架构在组织层面的第二重价值。
+
+组织解法与 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-framework.md) 一致：委派单位上移到决策级，人收缩到目标设定、边界控制与最终签字。Rakuten 与 Cognition 的差异说明边界画在哪取决于自动验收强度——Cognition 有独立 VM 与代码审阅兜底；Rakuten 扩到销售/营销/财务后模糊判断更多，人必须留在签字位。
 
 ## 实践启示
 

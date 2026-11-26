@@ -68,9 +68,9 @@
 
 <p class="chapter-card__desc">理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:6.43%" title="⭐ 入门 · 32 篇"></i><i class="lv2" style="width:8.03%" title="⭐⭐ 工程师 · 40 篇"></i><i class="lv3" style="width:53.82%" title="⭐⭐⭐ 专家 · 268 篇"></i><i class="lv4" style="width:21.89%" title="⭐⭐⭐⭐ 科学家 · 109 篇"></i><i class="lv5" style="width:9.84%" title="⭐⭐⭐⭐⭐ 大师 · 49 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:6.43%" title="⭐ 入门 · 32 篇"></i><i class="lv2" style="width:8.03%" title="⭐⭐ 工程师 · 40 篇"></i><i class="lv3" style="width:53.82%" title="⭐⭐⭐ 专家 · 268 篇"></i><i class="lv4" style="width:21.69%" title="⭐⭐⭐⭐ 科学家 · 108 篇"></i><i class="lv5" style="width:10.04%" title="⭐⭐⭐⭐⭐ 大师 · 50 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 32 · ⭐⭐ 40 · ⭐⭐⭐ 268 · ⭐⭐⭐⭐ 109 · ⭐⭐⭐⭐⭐ 49</div>
+<div class="chapter-card__legend">⭐ 32 · ⭐⭐ 40 · ⭐⭐⭐ 268 · ⭐⭐⭐⭐ 108 · ⭐⭐⭐⭐⭐ 50</div>
 
 <ul class="chapter-card__samples">
 
@@ -155,17 +155,17 @@
 
 <p class="chapter-card__desc">什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:2.88%" title="⭐ 入门 · 12 篇"></i><i class="lv2" style="width:6.25%" title="⭐⭐ 工程师 · 26 篇"></i><i class="lv3" style="width:43.51%" title="⭐⭐⭐ 专家 · 181 篇"></i><i class="lv4" style="width:31.97%" title="⭐⭐⭐⭐ 科学家 · 133 篇"></i><i class="lv5" style="width:15.38%" title="⭐⭐⭐⭐⭐ 大师 · 64 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:1.68%" title="⭐ 入门 · 7 篇"></i><i class="lv2" style="width:6.25%" title="⭐⭐ 工程师 · 26 篇"></i><i class="lv3" style="width:44.47%" title="⭐⭐⭐ 专家 · 185 篇"></i><i class="lv4" style="width:32.21%" title="⭐⭐⭐⭐ 科学家 · 134 篇"></i><i class="lv5" style="width:15.38%" title="⭐⭐⭐⭐⭐ 大师 · 64 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 12 · ⭐⭐ 26 · ⭐⭐⭐ 181 · ⭐⭐⭐⭐ 133 · ⭐⭐⭐⭐⭐ 64</div>
+<div class="chapter-card__legend">⭐ 7 · ⭐⭐ 26 · ⭐⭐⭐ 185 · ⭐⭐⭐⭐ 134 · ⭐⭐⭐⭐⭐ 64</div>
 
 <ul class="chapter-card__samples">
-
-<li><span class="stars">⭐</span><span class="sample-title">Introducing OS Level Actions in Amazon Bedrock AgentCore Browser</span></li>
 
 <li><span class="stars">⭐</span><span class="sample-title">Karpathy 最新访谈：从 Vibe Coding 到 Agentic Engineering</span></li>
 
 <li><span class="stars">⭐</span><span class="sample-title">从氛围编程到智能体工程</span></li>
+
+<li><span class="stars">⭐</span><span class="sample-title">Building the agentic</span></li>
 
 </ul>
 
@@ -346,9 +346,9 @@
 
 <p class="chapter-card__desc">Agent 上生产：Bedrock AgentCore、沙箱、多租户</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:0.54%" title="⭐ 入门 · 1 篇"></i><i class="lv2" style="width:7.61%" title="⭐⭐ 工程师 · 14 篇"></i><i class="lv3" style="width:57.07%" title="⭐⭐⭐ 专家 · 105 篇"></i><i class="lv4" style="width:25.00%" title="⭐⭐⭐⭐ 科学家 · 46 篇"></i><i class="lv5" style="width:9.78%" title="⭐⭐⭐⭐⭐ 大师 · 18 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:0.54%" title="⭐ 入门 · 1 篇"></i><i class="lv2" style="width:7.07%" title="⭐⭐ 工程师 · 13 篇"></i><i class="lv3" style="width:57.61%" title="⭐⭐⭐ 专家 · 106 篇"></i><i class="lv4" style="width:25.00%" title="⭐⭐⭐⭐ 科学家 · 46 篇"></i><i class="lv5" style="width:9.78%" title="⭐⭐⭐⭐⭐ 大师 · 18 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 1 · ⭐⭐ 14 · ⭐⭐⭐ 105 · ⭐⭐⭐⭐ 46 · ⭐⭐⭐⭐⭐ 18</div>
+<div class="chapter-card__legend">⭐ 1 · ⭐⭐ 13 · ⭐⭐⭐ 106 · ⭐⭐⭐⭐ 46 · ⭐⭐⭐⭐⭐ 18</div>
 
 <ul class="chapter-card__samples">
 
@@ -424,9 +424,9 @@
 
 <p class="chapter-card__desc">AI 的燃料：实时入湖、流处理、数据质量</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:3.57%" title="⭐ 入门 · 1 篇"></i><i class="lv2" style="width:3.57%" title="⭐⭐ 工程师 · 1 篇"></i><i class="lv3" style="width:64.29%" title="⭐⭐⭐ 专家 · 18 篇"></i><i class="lv4" style="width:21.43%" title="⭐⭐⭐⭐ 科学家 · 6 篇"></i><i class="lv5" style="width:7.14%" title="⭐⭐⭐⭐⭐ 大师 · 2 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:3.57%" title="⭐ 入门 · 1 篇"></i><i class="lv2" style="width:3.57%" title="⭐⭐ 工程师 · 1 篇"></i><i class="lv3" style="width:60.71%" title="⭐⭐⭐ 专家 · 17 篇"></i><i class="lv4" style="width:25.00%" title="⭐⭐⭐⭐ 科学家 · 7 篇"></i><i class="lv5" style="width:7.14%" title="⭐⭐⭐⭐⭐ 大师 · 2 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 1 · ⭐⭐ 1 · ⭐⭐⭐ 18 · ⭐⭐⭐⭐ 6 · ⭐⭐⭐⭐⭐ 2</div>
+<div class="chapter-card__legend">⭐ 1 · ⭐⭐ 1 · ⭐⭐⭐ 17 · ⭐⭐⭐⭐ 7 · ⭐⭐⭐⭐⭐ 2</div>
 
 <ul class="chapter-card__samples">
 
@@ -619,6 +619,6 @@
 </div>
 </section>
 
-<footer class="home-map__foot">📊 全书收录 1,780 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-11-26</span></footer>
+<footer class="home-map__foot">📊 全书收录 1,780 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-11-27</span></footer>
 
 </div>

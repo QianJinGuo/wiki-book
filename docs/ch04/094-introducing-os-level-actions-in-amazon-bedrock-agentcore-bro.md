@@ -1,6 +1,6 @@
 # Introducing OS Level Actions in Amazon Bedrock AgentCore Browser
 
-> 📊 Level ⭐ | 7.7KB
+> 📊 Level ⭐⭐⭐ | 11.9KB
 
 > -> [原文存档](https://aws.amazon.com/blogs/machine-learning/introducing-os-level-actions-in-amazon-bedrock-agentcore-browser/)
 
@@ -8,14 +8,34 @@
 <p>AI agents that automate web workflows operate within the browser’s web layer, the DOM that Playwright and the Chrome DevTools Protocol (CDP) expose. AgentCore Browser provides a secure, isolated browser environment for this, and it works well for the vast majority of automation: navigating pages,...</p>
 
 ## 深度分析
-OS Level Actions 的发布标志着**浏览器自动化能力的最后一次关键补全**。在 AgentCore Browser 之前，浏览器自动化经历了三个阶段：DOM 操作（Playwright/CDP）→ 视觉理解（Vision Model）→ OS 层交互（现在）。
-**核心突破**：原生操作系统 UI（对话框、安全提示、证书选择器、右键菜单）是 DOM 层无法触及的"盲区"。OS Level Actions 通过 `InvokeBrowser` API 将控制力延伸到这个盲区，形成了**完整的 Action-Screenshot-Reaction 闭环**。
-**架构设计的关键选择**：
-1. **无额外设置**：所有操作通过现有的 `InvokeBrowser` API 暴露，这意味着已有 AgentCore Browser 集成的系统可以零成本获得 OS 层能力。
-2. **全桌面截图**：与 DOM 截图不同，OS 截图捕获整个屏幕，包括原生 UI 元素。这是 Vision Model 能够"看见"对话框的前提。
-3. **单 Action 模式**：每次调用只执行一个 Action（click/move/type），这符合 Agent 的决策-执行循环设计原则，降低了状态复杂度。
-**竞争格局**：传统 RPA（UiPath、Automation Anywhere）依赖本地安装的 Agent，需要处理复杂的兼容性问题。AgentCore Browser 的云托管 + OS Actions 组合提供了一个纯云端的替代方案。
 
+### DOM 层的硬边界：OS Level Actions 要解决的问题
+
+Playwright 与 CDP 的作用域被严格限定在浏览器的 web 层——DOM 所暴露的世界。页面导航、表单填写、元素点击、内容提取这些主流自动化任务在这一层运转良好，但操作系统渲染的一切（原生对话框、安全提示、证书选择器、右键菜单、甚至 Chrome 自身的设置界面）完全位于 DOM 之外：CDP 看不见，Playwright 也无从交互。
+
+关键在于这些场景几乎只在生产环境暴露：`window.print()` 触发的系统打印对话框、macOS 隐私对话框、Windows 安全提示，都由特定的应用状态、OS 配置或用户权限触发；测试环境的 web 内容往往"可预期到足以做验证"，因此问题不会在测试期浮出水面。 对视觉驱动的 Agent（截图→模型推理→坐标执行）来说这尤其致命：截图能捕获原生 UI，模型也能推理出该做什么，但执行环节没有任何工具可达 OS 渲染的内容——Agent "看得见却动不了"。
+
+### Action-Screenshot-Reaction 闭环：API 形状与交互协议
+
+OS Level Actions 的接入刻意保持零增量：对新旧 browser 配置均无需额外设置，全部能力经由既有的 `InvokeBrowser` API 暴露，每次调用携带恰好一个 action，返回 SUCCESS 或 FAILED 状态，会话通过 `x-amzn-browser-session-id` header 绑定。 预期交互模式是一个六步循环：发送 action → AgentCore 在完整 OS 桌面上执行并返回状态 → 请求截图 → 捕获包含原生对话框、OS 模态框、浏览器窗口之外 UI 的全桌面 base64 PNG → 交视觉模型推理 → 发出下一个 action，如此往复。
+
+八个 action 分为鼠标（mouseClick / mouseMove / mouseDrag / mouseScroll）、键盘（keyType / keyPress / keyShortcut）与视觉捕获（screenshot）三类。 几个容易忽略的设计细节：
+
+- `mouseClick` 的坐标字段全部可选，缺省在当前光标位置执行左键单击——与先行的 `mouseMove` 配合可把"定位"与"触发"拆成两步；`clickCount` 支持 1–10 连击。
+- `mouseScroll` 的 deltaY 负值向下滚动，取值范围 -1000 到 1000；`mouseDrag` 需要起点和终点四个坐标。
+- `keyType` 直接发送字符，上限 10,000 字符；`keyPress` 的 `presses` 参数支持 1–100 次重复（如用 tab 逐个跳过表单字段、用 escape 关模态框）；`keyShortcut` 接受最多 5 个键的数组，键名必须小写（如 `["ctrl", "a"]` 全选）。
+- `screenshot` 是唯一返回数据的 action，其余 action 只回状态与错误字段。
+- 官方明确提醒：浏览器会话运行在虚拟化环境中，部分右键菜单项可能行为不符合预期——这是云托管方案的固有代价。
+
+### viewPort 坐标系统与控制面/数据面边界
+
+session 的 `viewPort` 决定两件事：鼠标 action 的坐标空间与截图尺寸。viewport 为 1920×1080 时 x 有效范围 0–1919、y 0–1079，越界坐标直接返回 `ValidationException`——这意味着坐标校验完全可以在客户端前置完成。 工程上需要区分两个 client：控制面（`bedrock-agentcore-control`）负责创建/删除 browser 资源，数据面（`bedrock-agentcore`）负责会话内派发 action；执行角色需要 `bedrock-agentcore:InvokeBrowser`、`StartBrowserSession`、`StopBrowserSession` 三个权限。
+
+官方的打印对话框示例完整走了一遍闭环：先截图看到当前状态 → 视觉模型识别出打印对话框并返回 Cancel 按钮坐标 → `mouseClick(410, 535)` → 再次截图确认对话框已消失 → 工作流继续。 截图确认不是可选的调试步骤，而是这个循环里与 action 等权的一环。
+
+### 定位：浏览器自动化版图的"最后一块"
+
+结论部分把 OS Level Actions 定位为 AgentCore Browser 能力边界的延伸：从"通过 Playwright 和 CDP 在规模上导航页面、提取内容、自动化工作流"，扩展到"观察、推理并作用于完整 OS 桌面"，且与既有的视觉理解能力、Playwright 与 Amazon Nova Act 的框架集成并存——官方称其"补上了浏览器自动化覆盖的最后一个缺口"。 与 [Aws Bedrock Agentcore Os Level Actions Browser](https://github.com/QianJinGuo/wiki-public/blob/main/entities/aws-bedrock-agentcore-os-level-actions-browser.md) 描述的闭环一致，这一模式本质上是把 [Harness Loop Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-loop-architecture.md) 中"感知-决策-执行"的循环下沉到了 OS 输入层；放在更广的工具调用视角下，它也是 [Tool Use Patterns Ai Agents](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/tool-use-patterns-ai-agents.md) 的一个极端案例——当 DOM 接口缺失时，屏幕像素本身就是接口。
 ## 实践启示
 1. **处理生产环境中的边缘场景**：当你的 Agent 遇到 `window.print()` 触发的系统打印对话框、`window.showModalDialog()`、或 macOS 隐私对话框时，OS Level Actions 是唯一可靠的自动化手段。
 2. **右击上下文菜单的自动化**：需要通过右键菜单执行操作时，使用 `mouseClick` + `button: "RIGHT"` 组合。
