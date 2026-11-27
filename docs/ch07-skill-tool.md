@@ -45,11 +45,11 @@ Agent 能不能"动手做事"，取决于它有什么工具。
 
 ### ⭐⭐⭐ 专家（21 篇）
 
-- [006. 电商 AI 操作系统崛起：从「工具人」到「All in One」+ 行业 KnowHow Skill 化 + 5 巨头 Headless 布局](ch07/006-ai-all-in-one-knowhow-skill-5-headless)
-- [007. Defense-as-Skill：把 Agent 运行时安全守卫做成可进化 Skill（SkillSonar / SCOPE-R）](ch07/007-defense-as-skill-agent-skill-skillsonar-scope-r)
-- [008. Agent、MCP、Skill、CLI、Model 一次讲透：老系统接入 AI 的概念地图与三条路径](ch07/008-agent-mcp-skill-cli-model-ai)
-- [009. 高德交易 VOC 自动排查：基于 Hermes 的多 Agent 架构实践](ch07/009-voc-hermes-agent)
-- [010. Embabel](ch07/010-embabel)
+- [006. Embabel](ch07/006-embabel)
+- [007. 电商 AI 操作系统崛起：从「工具人」到「All in One」+ 行业 KnowHow Skill 化 + 5 巨头 Headless 布局](ch07/007-ai-all-in-one-knowhow-skill-5-headless)
+- [008. Defense-as-Skill：把 Agent 运行时安全守卫做成可进化 Skill（SkillSonar / SCOPE-R）](ch07/008-defense-as-skill-agent-skill-skillsonar-scope-r)
+- [009. Agent、MCP、Skill、CLI、Model 一次讲透：老系统接入 AI 的概念地图与三条路径](ch07/009-agent-mcp-skill-cli-model-ai)
+- [010. 高德交易 VOC 自动排查：基于 Hermes 的多 Agent 架构实践](ch07/010-voc-hermes-agent)
 - [011. SkillComposer: 生成式技能组合](ch07/011-skillcomposer)
 - [012. 微信读书官方skill与huashu-weread增强版](ch07/012-skill-huashu-weread)
 - [013. Securing AI Agents: AWS × Cisco AI Defense 给 MCP / A2A 加上企业级护栏](ch07/013-securing-ai-agents-aws-cisco-ai-defense-mcp-a2a)

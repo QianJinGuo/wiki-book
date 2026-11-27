@@ -1,6 +1,6 @@
 # Open and Closed Models Are on Different Exponentials
 
-> 📊 Level ⭐⭐⭐ | 6.8KB
+> 📊 Level ⭐⭐⭐⭐ | 11.2KB
 
 → [原文存档](https://www.interconnects.ai/p/open-and-closed-models-are-on-different)
 
@@ -76,6 +76,30 @@ Lambert 明确反驳了"递归自我改进（RSI）将给闭源实验室带来�
 ### 对 AI Agent 生态的影响
 
 coding agent 是当前唯一明确展示"用户愿意为更好智能支付大幅溢价"的领域。这验证了前沿实验室"追求绝对智能"的策略。但开源模型在 agent 领域的机会在于：大量企业需要的是"够用且可控"的 agent 方案，而非最强但最贵的方案。
+
+### 溢价的经济学根基：为什么闭源模型敢于定价
+
+Lambert 把争论起点放在经济学而非技术：决定开放与封闭生态力量对比的核心，是用户是否继续为顶级闭源模型支付大幅溢价。2026 年初是分水岭，因为 coding agent 首次证明巨大市场愿为"更好的智能"持续付费——净产出提升可感知，故永远选最强而非"够用"。
+
+与溢价共存的是 API 业务的必然衰落：为保护 token 供应、避免蒸馏、聚焦高利润率用例，最佳模型会被延迟接入 API。一张一弛构成闭源侧的商业发动机：前端向最高价值用户收溢价，后端收缩低价分发。
+
+### 集成化与分散化：两种组织智能生产的方式
+
+闭源前沿实验室的本质优势是**集成**：模型权重、harness、工具与推理基础设施作为资本密集系统（人才、数据、算力的大投入），回报来自深度整合——软硬件耦合可体现在任何改进方向。即使 benchmark 饱和，实验室也会转向优化"每秒/每瓦的智能"，继续榨取未封顶的性能空间。
+
+开源模型则天然**非集成**：它必须在多家公司协调下才能被服务，每一层都有替代品，价格因此被压到 commodity 水平。这看似劣势，实则是另一条曲线的起点：低且可预测的价格成为企业进入的入口，找到达标模型后便不再更换（设置成本高），而 Tinker、Fireworks、Prime Intellect 等微调栈的成熟会进一步放大市场。
+
+### 对格局预测的含义：寡头与长尾并存
+
+框架直接导出两个预测。其一，闭源侧收敛为类云计算市场的寡头：前沿实验室同时像 Apple（卖难复制的集成技术）和 Microsoft（卖高杠杆订阅），5-10 年内 OpenAI 与 Anthropic 估值达 $2-10T。 其二，开源生态总价值将远超两家之和，但分散在整个技术栈——其推理份额将在超大规模云与 Together/Fireworks/OpenRouter 等新基础设施公司中稳步上升。
+
+关键在于这不是零和判断：开源模型的分叉由经济（研发成本难以为继）或需求（某些方案只存在于低价点）驱动，从追赶 Claude/GPT 的 benchmark 转向填补利基。两条曲线节奏也不同——闭源已借 coding agent 的产品市场契合启动集成化指数，开源经济更慢，但它追踪的是 AI 向整个经济的扩散，因而"更值得跟随"。
+
+### 这个框架对预测方法论本身的启示
+
+"不同指数"的框架优于单一叙事，在于把常见误判显式化。第一，"递归自我改进（RSI）将给闭源实验室不可逾越优势"的说法被作者判定为过度放大——进步持续出现在整个生态，后台 agent 等新产品可同时服务两类模型。 第二，近期市场的价格、利润率与需求由算力快速扩建（短期供给受限）和 token 补贴扭曲，这意味着任何基于当前定价的判断都混杂了周期性因素，只有拉到 5-10 年的时间线上才能看清结构性趋势。 第三，衡量标准不应统一：闭源看绝对智能前沿与每瓦效用，开源看渗透广度与利基覆盖率——用 benchmark 排名评判开源模型正是该框架要纠正的观测错误。
+
+交叉印证：开源侧的分散化价值捕获与 [开源 AI 生态](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/open-source-ai-ecosystem.md) 一致，闭源侧的集成回报以 [Scaling Laws](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/scaling-laws.md) 持续有效为前提；蒸馏风险（API 收缩动机）参照 [模型蒸馏与压缩](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/model-distillation-compression.md)，开源窗口期的时间压力则与 [6 Months to Live for Open Models](https://github.com/QianJinGuo/wiki-public/blob/main/entities/6-months-to-live-for-open-models.md) 相呼应。
 
 ## 实践启示
 

@@ -1,6 +1,6 @@
 # Chromium AI Coding 开发体系
 
-> 📊 Level ⭐⭐⭐⭐ | 11.9KB
+> 📊 Level ⭐⭐⭐⭐⭐ | 16.4KB
 
 > [!summary] 核心洞察
 > Chromium（3500 万行 C++ 代码）在源码仓库中构建了完整的 AI Agent 基础设施：AI Policy（人类全责）+ 四层 Prompt 分层组合 + 18+ Skills 按需激活 + 三层 Agentic RAG（静态路由表+动态搜索+MCP）+ Eval 回归测试 + Projects 大规模自动化。跨工具复用（Gemini CLI、Claude Code、GitHub Copilot）。
@@ -165,20 +165,23 @@ Chromium 的文档从 2015 年开始积累，跨越 11 年，总计 6445 次提�
 
 ## 深度分析
 
-### 1. Chromium 集成 AI 编码：浏览器作为开发环境
-Chromium 的 AI 编码开发系统代表了一个趋势：浏览器从内容消费工具转变为开发环境——AI 编码助手直接嵌入浏览器，无需 IDE。
+这套体系的真正价值不在六个支柱各自的设计，而在支柱互相兜底的方式：Prompt 管"怎么做事"，Knowledge 管"去哪找依据"，Skills 管"特定任务的专业流程"，Eval 管"改了之后没退化"，Policy 管住人在闭环里的位置。以下按跨支柱机制拆解。
 
-### 2. 对传统 IDE 的冲击
-如果浏览器可以成为开发环境，传统 IDE 的差异化价值需要重新定义——调试器、Git 集成、插件生态仍需 IDE 级别的深度，但编码/测试/部署的轻量级工作流可能迁移到浏览器。
+### 分层 Prompt 的抗失败逻辑
 
-### 3. Web 标准对 AI 编码的影响
-Chromium 作为 Web 标准的主要实现者，其 AI 编码系统可能影响 Web 标准本身——如 WebGPU for AI inference、WebAssembly for model serving。
+四层结构里每一层都在封堵一类具体的失败模式。第一层 common.minimal.md 针对"AI 自作主张"：构建前必须先确认构建目录（猜错的代价太大）、测试走 tools/autotest.py 而非提前调 autoninja、Stay on task 禁止顺手修无关的 TODO 和 code health、预提交只修自己改动引入的问题。第二层 8 步工作流封堵"投机性修复"：每遇到一个编译错误至少读取一个新文件，绝不做投机性修复，与"强制第一步完整审计源码并向开发者确认"一起，构成对幻觉的主要抑制手段。第三层平台模板封堵"上下文缺失"：桌面模板强制 AI 在动手前先读平台架构文档，理解 Views 框架的 Widget/View 层级与 Browser/Profile 所有权模型。第四层 Task Prompts 把高频环节封装成命令，降低现编指令的方差。维护机制服务于一致性：源文件 .tmpl.md 用 HTML 注释记录每条规则的设计意图，process_prompts.py 生成最终 .md，PRESUBMIT 检查确保两者同步——prompt 漂移在这里被当作构建失败处理，而不是文档债。这与 [Prompt Engineering Fundamentals](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/prompt-engineering-fundamentals.md) 的原则同源，但 Chromium 推进到了 PRESUBMIT 强制同步的工程强度。
 
-### 4. 安全模型：浏览器沙箱中的 AI
-浏览器沙箱为 AI 编码提供了天然的安全边界——AI 生成的代码在沙箱中执行，无法访问本地文件系统或网络。这与 Claude Cowork 的虚拟机隔离思路类似但更轻量。
+### Skills 激活协议与 Projects 的工程化升级
 
-### 5. 从本地优先到浏览器优先的范式
-传统开发是"本地优先"（IDE 在本地），Chromium AI 编码是"浏览器优先"——代码在云端执行，浏览器仅做渲染和交互。这一范式对远程开发和协作场景更友好。
+Prompts 常驻加载、Skills 按需激活是核心的资源分配决策：只有用户请求命中某个 Skill 时才自动加载对应 SKILL.md，本质是把专家经验编译成可复用的 checklist——feature-flag-removal 就有 17 步完整流程。Projects 是 Skills 的长期工程化形态：modularize-chrome-browser 以 6 阶段流程（盘点→选择构建模式→生成 BUILD.gn→更新父级 BUILD→修复 include→验证提交）承载 344 行的 SKILL.md；code-health 用 Hub 调度子任务，走"自动发现→置信度评估→创建分支→修改→验证→提交 Gerrit"的流水线；modernization 的 AutoFixer 把错误信息喂给模型、验证后重试、最多 3 轮循环——修复循环的边界被显式写死，防止无限重试。跨支柱协同在官方拆解的分屏案例里最直观：一个功能拆成 6 个 CL，静态路由表触发平台规范、chromium-docs 动态搜索、8 步工作流与 histograms Skill 在不同 CL 中各自接管。"任务粒度 vs 工程粒度"的这层区分，与 [Skill Engineering Principles](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/skill-engineering-principles.md) 的设计原则互为印证。
+
+### Eval 基础设施：把非确定性当工程常量处理
+
+评估层回答的问题是：prompt 或 skill 改动后，如何确认基础设施没有退化。agents/prompts/eval/ 下 15 个用例各自独立成目录：prompt.md 模拟用户任务指令，eval.md 或 eval.promptfoo.yaml 写自动化断言，覆盖构建配置、测试生成、重构、修复测试、Fuzz、CL 描述、Feature Flag、代码搜索等日常场景。对 LLM 输出抖动的处理是关键设计：Pass@K 机制让同一用例运行 N 次、K 次通过即算成功，用统计口径消化非确定性；隔离执行靠 workers.py 用 btrfs 快照秒级创建独立 WorkDir，上层接 Swarming 分片、Docker 沙箱、ResultDB 上报与 Skia Perf 看板；Telemetry 从 Gemini CLI 的 OpenTelemetry 输出提取 token 用量与工具调用记录。prompt 改动在这里等价于代码改动——必须过 eval 才算完成，这套"评估先于迭代"的立场与 [Evaluation Harness Design](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/evaluation-harness-design.md) 一致。
+
+### Agentic RAG 的检索取舍与落地节奏
+
+检索层的工程取舍：chromium_docs.py 先用 keyword_index 倒排定位候选文档，再只读取候选的元信息打分，内存占用减少 90%+；打分权重为标题×4.0、路径×2.5、关键词×2.0、内容×1.0-1.5，近期修改文档小幅加分；索引"一次构建、持久复用"，只在不存在时才重建，覆盖 2000+ markdown 文件、首次构建约 30 秒。文档活在源码树里随代码同步版本化，与传统向量 RAG"预构建数据库+重新 embedding"的更新成本形成对照，也印证了 [Retrieval Augmented Generation Rag](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/retrieval-augmented-generation-rag.md) 中"检索层跟着知识载体走"的判断。时间线揭示了真实依赖：文档自 2015 年开始积累、跨越 11 年总计 6445 次提交，而 agents/ 目录 2025 年 7 月 10 日才创建，核心的 chromium-docs Skill 到 2026 年 1 月才由一位微软工程师提交——三层知识增强之所以可能，是因为权威文档文化早已存在，AI 层是其放大器而非替代品。同一套 Prompts/Skills 跨 Gemini CLI、Claude Code、GitHub Copilot 复用，从第一天起就是工具无关的。
 
 ## 实践启示
 
@@ -206,6 +209,7 @@ WebGPU 使浏览器可以直接运行 AI 模型——这可能改变"AI 编码�
 - Agent 编排框架
 - MCP 协议
 - AI 安全与责任
+→ [原文存档](https://mp.weixin.qq.com/s/sCmRKJjTpdB4k3145OzZMg)
 
 ---
 

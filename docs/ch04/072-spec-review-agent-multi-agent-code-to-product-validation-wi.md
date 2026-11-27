@@ -1,6 +1,6 @@
 # Spec Review Agent: Multi-Agent Code-to-Product Validation with MCP + Browser Tool
 
-> 📊 Level ⭐⭐⭐ | 10.6KB
+> 📊 Level ⭐⭐⭐ | 13.4KB
 
 > 本文综合提炼自 Baz 公司（[baz.co](https://baz.co/)）构建的 **Spec Review Agent** —— 用 Amazon Bedrock + AgentCore 实现"代码-产品"全栈自动验证。核心架构：**Specification Subagent 解析 Figma/Jira 需求 → Implementation Subagent 用 Browser Tool 渲染 Preview Environment 做视觉/行为验证 → Report Generator 合并发现**。量化收益：**bugs 报告减少 50%、time-to-merge 提升 30-70%**。
 
@@ -124,6 +124,21 @@ Spec Review 使用多个专化 agent（一致性检查、完整性检查、可�
 
 ### 5. 从规格审查到规格生成
 AI 审查规格的下一步是 AI 生成规格——从需求描述自动生成完整的技术规格文档。这将进一步压缩从需求到实现的周期。
+
+### 6. 「意图-行为-实现」三层验证填补 diff-only review 的结构性盲区
+传统 diff-only review 在结构上只能回答"代码能否编译运行"，而"是否匹配 spec""是否按预期行为"这类问题只能靠 QA 在流程末端手工回答——验证成本高且反馈延迟。Baz 的方案把 feature verification 从 QA 阶段左移到 PR 阶段：每次 pull request 自动触发全栈验证，使"意图（Figma/Jira）- 行为（Browser 渲染）- 实现（源码）"三个维度在同一评审工作流中收敛。
+
+### 7. 按需求粒度并发 spawn 子 agent：隔离换速度与准确性
+流水线不是按文件或按 diff 拆分任务，而是按"离散需求"拆分——每个 requirement 一个独立 Implementation Subagent，拥有独立 context 与独立隔离浏览器会话。这种设计使并行度随需求数量而非代码量扩展，同时单点验证失败不会污染其他需求的验证结果，减少了错误传播与幻觉叠加。
+
+### 8. 推理与执行解耦：Bedrock 负责判断，AgentCore 负责接触真实世界
+架构的关键分层在于：Amazon Bedrock 托管模型承担推理与决策（解读需求、理解设计意图、评估浏览器观察到的行为相关性），AgentCore 则以安全、隔离、serverless 的浏览器会话承担与真实 preview environment 的交互。Baz 因此无需自建任何浏览器基础设施或自定义编排层，AgentCore 的沙箱隔离与可观测性使多个 MCP server 并行运行全栈验证达到 production-grade。
+
+### 9. 验证产出接入现有工程工作流，形成发现-跟踪闭环
+Report Generator 把所有子 agent 的发现合并为一份连贯评审摘要后，按既有渠道分发：GitHub PR 评论直达开发者上下文，Slack 通知提供团队可见性，识别出的问题自动回链 Jira issue 进入跟踪与解决流程。验证结果不是停在报告里，而是变成已有工程协作系统中的可追踪工单。
+
+### 10. 收益的因果链：验证左移 → 更少 bug 报告与更快合并
+Baz 报告的量化收益（reported bugs 减少最多 50%、time-to-merge 提升 30-70%）并非来自更快的代码审查本身，而是来自验证时点的左移：feature verification 在 PR 阶段自动完成，回归在设计不一致阶段就被拦截，团队在 merge 前即确认变更符合 requirement。客户侧的反馈是评审更快、回归更少、合并信心更高。
 
 ## 实践启示（续）
 

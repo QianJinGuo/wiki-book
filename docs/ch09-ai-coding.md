@@ -12,8 +12,8 @@
 |-------|------|------|
 | ⭐⭐ 工程师 | 需编程基础 | 9 |
 | ⭐⭐⭐ 专家 | 需ML基础 | 49 |
-| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 38 |
-| ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 17 |
+| ⭐⭐⭐⭐ 科学家 | 需研究背景 | 37 |
+| ⭐⭐⭐⭐⭐ 大师 | 前沿/哲学 | 18 |
 
 ---
 
@@ -99,7 +99,7 @@ AI 编程是 Agent 最早成熟的品类，也是理解 Agent 工程的最佳窗
 - [057. The text in Claude Code’s “Extended Thinking” output is not authentic. – blog](ch09/057-the-text-in-claude-code-s-extended-thinking-output-is-not)
 - [058. 复制这套神仙配置，让Claude Code全自动修Bug！告别每天重复教AI写代码](ch09/058-claude-code-bug-ai)
 
-### ⭐⭐⭐⭐ 科学家（38 篇）
+### ⭐⭐⭐⭐ 科学家（37 篇）
 
 - [059. 不只是 Memory：Ontology 如何让 Coding Agent 越用越懂项目](ch09/059-memory-ontology-coding-agent)
 - [060. 小米 MiMo Code — 长程编程 Agent 三大主线（计算/记忆/进化）+ 与 Claude Code 工程分化](ch09/060-mimo-code-agent-claude-code)
@@ -120,10 +120,10 @@ AI 编程是 Agent 最早成熟的品类，也是理解 Agent 工程的最佳窗
 - [075. Claude Code 集成其他工具指南](ch09/075-claude-code)
 - [076. Anthropic Coding Agent 社会科学家采用调查](ch09/076-anthropic-coding-agent)
 - [077. Claude Code 18个隐藏设置](ch09/077-claude-code-18)
-- [078. FastContext（微软开源 Coding Agent 仓库探索子代理）](ch09/078-fastcontext-coding-agent)
-- [079. Claude Code 为什么会忽略指令：四类失效原因 + 五层规则框架](ch09/079-claude-code)
-- [080. Superpowers 深度解读（2）：Rule/Gate/Hook 与 Iron Law 方法论](ch09/080-superpowers-2-rule-gate-hook-iron-law)
-- [081. Chromium AI Coding 开发体系](ch09/081-chromium-ai-coding)
+- [078. 老代码克星：36k Star的 AI 神器，跑一条命令就把项目结构整明白了！](ch09/078-36k-star-ai)
+- [079. FastContext（微软开源 Coding Agent 仓库探索子代理）](ch09/079-fastcontext-coding-agent)
+- [080. Claude Code 为什么会忽略指令：四类失效原因 + 五层规则框架](ch09/080-claude-code)
+- [081. Superpowers 深度解读（2）：Rule/Gate/Hook 与 Iron Law 方法论](ch09/081-superpowers-2-rule-gate-hook-iron-law)
 - [082. Code as Agent Harness 综述](ch09/082-code-as-agent-harness)
 - [083. Reward hacking is swamping model intelligence gains](ch09/083-reward-hacking-is-swamping-model-intelligence-gains)
 - [084. Claw-SWE-Bench：首个独立测量Harness对编程Agent影响的基准](ch09/084-claw-swe-bench-harness-agent)
@@ -134,25 +134,25 @@ AI 编程是 Agent 最早成熟的品类，也是理解 Agent 工程的最佳窗
 - [089. Claude Code Routines：从工具到队友的主动 Agent 模式](ch09/089-claude-code-routines-agent)
 - [090. OpenAI秘密矩阵曝光：Codex将所有设备连成超级电脑](ch09/090-openai-codex)
 - [091. Spec-Driven AI 编程半年实战 — 有损管道、三工具比较与三大认知陷阱](ch09/091-spec-driven-ai)
-- [092. 老代码克星：36k Star的 AI 神器，跑一条命令就把项目结构整明白了！](ch09/092-36k-star-ai)
-- [093. An Opinionated Guide to Using AI Right Now](ch09/093-an-opinionated-guide-to-using-ai-right-now)
-- [094. Codex 5.21 更新：AI 编程助手开始变成电脑工作代理](ch09/094-codex-5-21-ai)
-- [095. Claude Code Dynamic Workflows 实战模式与构建技巧](ch09/095-claude-code-dynamic-workflows)
-- [096. 百度网盘主端 FE AICR：AI Code Review 准入实践](ch09/096-fe-aicr-ai-code-review)
+- [092. An Opinionated Guide to Using AI Right Now](ch09/092-an-opinionated-guide-to-using-ai-right-now)
+- [093. Codex 5.21 更新：AI 编程助手开始变成电脑工作代理](ch09/093-codex-5-21-ai)
+- [094. Claude Code Dynamic Workflows 实战模式与构建技巧](ch09/094-claude-code-dynamic-workflows)
+- [095. 百度网盘主端 FE AICR：AI Code Review 准入实践](ch09/095-fe-aicr-ai-code-review)
 
-### ⭐⭐⭐⭐⭐ 大师（17 篇）
+### ⭐⭐⭐⭐⭐ 大师（18 篇）
 
-- [097. DeepSeek Code Harness](ch09/097-deepseek-code-harness)
-- [098. Anthropic 内部 95% 数据分析自动化：分析 Agent 技术栈 + Skill 框架（21%→95% 准确率）](ch09/098-anthropic-95-agent-skill-21-95)
-- [099. 让 Coding Agent 从黑盒到透明：阿里云 Agent 观测审计数据采集实践（LoongSuite Pilot 端侧平台 + 3 类 Agent 形态 + 4 大观测审计能力）](ch09/099-coding-agent-agent-loongsuite-pilot-3-agent)
-- [100. Claude Code 在大型代码库中的实战经验：从哪里入手？怎么做对？](ch09/100-claude-code)
-- [101. 业务 Agent 增强层架构：复用通用 Agent 基座，把业务能力做成可验证增强层](ch09/101-agent-agent)
-- [102. Claude Code 一周年回顾：Boris Cherny + Cat Wu 的完整时间线](ch09/102-claude-code-boris-cherny-cat-wu)
-- [103. Gene/GEP — EvoMap×清华 提出的「策略基因」经验对象框架（arXiv 2604.15097）](ch09/103-gene-gep-evomap-arxiv-2604-15097)
-- [104. Claude Code 从 Demo 到产线 · 企业 Harness 工程化的 8 道关卡（黄佳/咖哥 CSDN）](ch09/104-claude-code-demo-harness-8-csdn)
-- [105. AgentMemory：Coding Agent 本地记忆系统](ch09/105-agentmemory-coding-agent)
-- [106. 采用 AI 编码智能体的六条经验](ch09/106-ai)
-- [107. 基于浏览器请求录制与AI代码生成的E2E接口自动化测试实践](ch09/107-ai-e2e)
+- [096. DeepSeek Code Harness](ch09/096-deepseek-code-harness)
+- [097. Anthropic 内部 95% 数据分析自动化：分析 Agent 技术栈 + Skill 框架（21%→95% 准确率）](ch09/097-anthropic-95-agent-skill-21-95)
+- [098. 让 Coding Agent 从黑盒到透明：阿里云 Agent 观测审计数据采集实践（LoongSuite Pilot 端侧平台 + 3 类 Agent 形态 + 4 大观测审计能力）](ch09/098-coding-agent-agent-loongsuite-pilot-3-agent)
+- [099. Claude Code 在大型代码库中的实战经验：从哪里入手？怎么做对？](ch09/099-claude-code)
+- [100. 业务 Agent 增强层架构：复用通用 Agent 基座，把业务能力做成可验证增强层](ch09/100-agent-agent)
+- [101. Claude Code 一周年回顾：Boris Cherny + Cat Wu 的完整时间线](ch09/101-claude-code-boris-cherny-cat-wu)
+- [102. Gene/GEP — EvoMap×清华 提出的「策略基因」经验对象框架（arXiv 2604.15097）](ch09/102-gene-gep-evomap-arxiv-2604-15097)
+- [103. Claude Code 从 Demo 到产线 · 企业 Harness 工程化的 8 道关卡（黄佳/咖哥 CSDN）](ch09/103-claude-code-demo-harness-8-csdn)
+- [104. AgentMemory：Coding Agent 本地记忆系统](ch09/104-agentmemory-coding-agent)
+- [105. 采用 AI 编码智能体的六条经验](ch09/105-ai)
+- [106. 基于浏览器请求录制与AI代码生成的E2E接口自动化测试实践](ch09/106-ai-e2e)
+- [107. Chromium AI Coding 开发体系](ch09/107-chromium-ai-coding)
 - [108. 天猫新品营销技术团队AI编码实战指南（上）](ch09/108-ai)
 - [109. Claude Code 性能基准评测](ch09/109-claude-code)
 - [110. Claude Code Openclaw Usage Ettin](ch09/110-claude-code-openclaw-usage-ettin)

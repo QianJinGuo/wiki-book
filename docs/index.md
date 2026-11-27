@@ -68,9 +68,9 @@
 
 <p class="chapter-card__desc">理解大语言模型的内部机制：从 Token 到 Transformer，从预训练到推理</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:6.43%" title="⭐ 入门 · 32 篇"></i><i class="lv2" style="width:8.03%" title="⭐⭐ 工程师 · 40 篇"></i><i class="lv3" style="width:53.82%" title="⭐⭐⭐ 专家 · 268 篇"></i><i class="lv4" style="width:21.69%" title="⭐⭐⭐⭐ 科学家 · 108 篇"></i><i class="lv5" style="width:10.04%" title="⭐⭐⭐⭐⭐ 大师 · 50 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:6.22%" title="⭐ 入门 · 31 篇"></i><i class="lv2" style="width:7.83%" title="⭐⭐ 工程师 · 39 篇"></i><i class="lv3" style="width:53.61%" title="⭐⭐⭐ 专家 · 267 篇"></i><i class="lv4" style="width:22.29%" title="⭐⭐⭐⭐ 科学家 · 111 篇"></i><i class="lv5" style="width:10.04%" title="⭐⭐⭐⭐⭐ 大师 · 50 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 32 · ⭐⭐ 40 · ⭐⭐⭐ 268 · ⭐⭐⭐⭐ 108 · ⭐⭐⭐⭐⭐ 50</div>
+<div class="chapter-card__legend">⭐ 31 · ⭐⭐ 39 · ⭐⭐⭐ 267 · ⭐⭐⭐⭐ 111 · ⭐⭐⭐⭐⭐ 50</div>
 
 <ul class="chapter-card__samples">
 
@@ -155,9 +155,9 @@
 
 <p class="chapter-card__desc">什么是 Agent？从 ReAct 到 Agentic Engineering 的范式跃迁</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:1.68%" title="⭐ 入门 · 7 篇"></i><i class="lv2" style="width:6.25%" title="⭐⭐ 工程师 · 26 篇"></i><i class="lv3" style="width:44.47%" title="⭐⭐⭐ 专家 · 185 篇"></i><i class="lv4" style="width:32.21%" title="⭐⭐⭐⭐ 科学家 · 134 篇"></i><i class="lv5" style="width:15.38%" title="⭐⭐⭐⭐⭐ 大师 · 64 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:1.68%" title="⭐ 入门 · 7 篇"></i><i class="lv2" style="width:6.25%" title="⭐⭐ 工程师 · 26 篇"></i><i class="lv3" style="width:44.23%" title="⭐⭐⭐ 专家 · 184 篇"></i><i class="lv4" style="width:32.21%" title="⭐⭐⭐⭐ 科学家 · 134 篇"></i><i class="lv5" style="width:15.62%" title="⭐⭐⭐⭐⭐ 大师 · 65 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 7 · ⭐⭐ 26 · ⭐⭐⭐ 185 · ⭐⭐⭐⭐ 134 · ⭐⭐⭐⭐⭐ 64</div>
+<div class="chapter-card__legend">⭐ 7 · ⭐⭐ 26 · ⭐⭐⭐ 184 · ⭐⭐⭐⭐ 134 · ⭐⭐⭐⭐⭐ 65</div>
 
 <ul class="chapter-card__samples">
 
@@ -181,9 +181,9 @@
 
 <p class="chapter-card__desc">给 Agent 装上骨架：Loop、Workflow、Dynamic Orchestration</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:4.39%" title="⭐ 入门 · 5 篇"></i><i class="lv2" style="width:8.77%" title="⭐⭐ 工程师 · 10 篇"></i><i class="lv3" style="width:31.58%" title="⭐⭐⭐ 专家 · 36 篇"></i><i class="lv4" style="width:35.09%" title="⭐⭐⭐⭐ 科学家 · 40 篇"></i><i class="lv5" style="width:20.18%" title="⭐⭐⭐⭐⭐ 大师 · 23 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:4.39%" title="⭐ 入门 · 5 篇"></i><i class="lv2" style="width:7.89%" title="⭐⭐ 工程师 · 9 篇"></i><i class="lv3" style="width:32.46%" title="⭐⭐⭐ 专家 · 37 篇"></i><i class="lv4" style="width:35.09%" title="⭐⭐⭐⭐ 科学家 · 40 篇"></i><i class="lv5" style="width:20.18%" title="⭐⭐⭐⭐⭐ 大师 · 23 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 5 · ⭐⭐ 10 · ⭐⭐⭐ 36 · ⭐⭐⭐⭐ 40 · ⭐⭐⭐⭐⭐ 23</div>
+<div class="chapter-card__legend">⭐ 5 · ⭐⭐ 9 · ⭐⭐⭐ 37 · ⭐⭐⭐⭐ 40 · ⭐⭐⭐⭐⭐ 23</div>
 
 <ul class="chapter-card__samples">
 
@@ -285,9 +285,9 @@
 
 <p class="chapter-card__desc">最成熟的 Agent 品类：Claude Code、OpenClaw、Codex 深度拆解</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:0.00%" title="⭐ 入门 · 0 篇"></i><i class="lv2" style="width:7.96%" title="⭐⭐ 工程师 · 9 篇"></i><i class="lv3" style="width:43.36%" title="⭐⭐⭐ 专家 · 49 篇"></i><i class="lv4" style="width:33.63%" title="⭐⭐⭐⭐ 科学家 · 38 篇"></i><i class="lv5" style="width:15.04%" title="⭐⭐⭐⭐⭐ 大师 · 17 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:0.00%" title="⭐ 入门 · 0 篇"></i><i class="lv2" style="width:7.96%" title="⭐⭐ 工程师 · 9 篇"></i><i class="lv3" style="width:43.36%" title="⭐⭐⭐ 专家 · 49 篇"></i><i class="lv4" style="width:32.74%" title="⭐⭐⭐⭐ 科学家 · 37 篇"></i><i class="lv5" style="width:15.93%" title="⭐⭐⭐⭐⭐ 大师 · 18 篇"></i></div>
 
-<div class="chapter-card__legend">⭐⭐ 9 · ⭐⭐⭐ 49 · ⭐⭐⭐⭐ 38 · ⭐⭐⭐⭐⭐ 17</div>
+<div class="chapter-card__legend">⭐⭐ 9 · ⭐⭐⭐ 49 · ⭐⭐⭐⭐ 37 · ⭐⭐⭐⭐⭐ 18</div>
 
 <ul class="chapter-card__samples">
 
@@ -346,9 +346,9 @@
 
 <p class="chapter-card__desc">Agent 上生产：Bedrock AgentCore、沙箱、多租户</p>
 
-<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:0.54%" title="⭐ 入门 · 1 篇"></i><i class="lv2" style="width:7.07%" title="⭐⭐ 工程师 · 13 篇"></i><i class="lv3" style="width:57.61%" title="⭐⭐⭐ 专家 · 106 篇"></i><i class="lv4" style="width:25.00%" title="⭐⭐⭐⭐ 科学家 · 46 篇"></i><i class="lv5" style="width:9.78%" title="⭐⭐⭐⭐⭐ 大师 · 18 篇"></i></div>
+<div class="lvbar" aria-hidden="true"><i class="lv1" style="width:0.54%" title="⭐ 入门 · 1 篇"></i><i class="lv2" style="width:6.52%" title="⭐⭐ 工程师 · 12 篇"></i><i class="lv3" style="width:57.61%" title="⭐⭐⭐ 专家 · 106 篇"></i><i class="lv4" style="width:25.54%" title="⭐⭐⭐⭐ 科学家 · 47 篇"></i><i class="lv5" style="width:9.78%" title="⭐⭐⭐⭐⭐ 大师 · 18 篇"></i></div>
 
-<div class="chapter-card__legend">⭐ 1 · ⭐⭐ 13 · ⭐⭐⭐ 106 · ⭐⭐⭐⭐ 46 · ⭐⭐⭐⭐⭐ 18</div>
+<div class="chapter-card__legend">⭐ 1 · ⭐⭐ 12 · ⭐⭐⭐ 106 · ⭐⭐⭐⭐ 47 · ⭐⭐⭐⭐⭐ 18</div>
 
 <ul class="chapter-card__samples">
 
@@ -619,6 +619,6 @@
 </div>
 </section>
 
-<footer class="home-map__foot">📊 全书收录 1,780 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-11-27</span></footer>
+<footer class="home-map__foot">📊 全书收录 1,780 篇编撰条目 · 20 章 · 5 篇 · 开源 · 每日更新<span>最近同步：2026-11-28</span></footer>
 
 </div>

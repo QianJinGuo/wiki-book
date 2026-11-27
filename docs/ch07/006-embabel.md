@@ -1,6 +1,6 @@
 # Embabel
 
-> 📊 Level ⭐⭐⭐ | 11.5KB
+> 📊 Level ⭐⭐⭐ | 15.0KB
 
 > "这可能已经是'最后一代由人类主动选择的框架'了。以后越来越多的技术选型，都会由我们的工具替我们完成。" —— Rod Johnson（Spring 创造者，Embabel 创始人）
 
@@ -112,15 +112,17 @@
 
 ## 深度分析
 
-- **GOAP 作为游戏 NPC 算法的企业级迁移**：Rod Johnson 选择 GOAP（Goal-Oriented-Action-Planning）不是拍脑袋，而是看中了游戏行业多年验证的确定性规划能力。企业 AI 应用需要可解释、可审计的流程，而 GOAP 的运行时动态规划 + 类型系统完全集成，刚好满足这个需求 
+### 确定性规划是企业 AI 的第一性约束，而非性能优化
+Rod 对企业 AI 的基本判断是：瓶颈不在模型的聪明程度，而在流程的可控性。「扔 30 个工具给模型循环跑」的架构把控制流交给概率系统，注定满足不了企业对一致性、可解释、可审计的硬性要求。Embabel 的回应是把「决定下一步」这件事从模型手里拿回来：GOAP 在运行时根据当前世界状态寻路，相同状态产生相同计划，规划器与框架层面持续发出事件供监听和持久化——可解释、可审计、可预测其实是同一设计决策的三个侧面，而不是三个独立特性。访谈里澳大利亚客户的案例把这一原则推向极致：95% 的表单提交用正则处理，只有 5% 真正需要模型——「适度用 LLM」意味着先用确定性手段收窄问题空间，模型只负责剩余的模糊地带。A* 寻路还有一个常被忽略的细节：「不存在可行动路径」本身就是有用信息，规划器可以显式报告失败，而不是让模型在循环里无声耗尽预算；再叠加动作级 cost 分配与高负载动作动态涨价，规划器会自动绕开拥堵路径，确定性规划因此同时具备了对现实负载的适应性 [Langgraph State Machine](https://github.com/QianJinGuo/wiki-public/blob/main/entities/langgraph-state-machine.md)。
 
-- **Alien Stack 是双向陷阱**：访谈中提到的真实案例——Python 首席 AI 架构师入职一年不知道公司 70% Java 技术栈——揭示了 Alien Stack 的核心危害：技术邻接性断裂导致战略决策权落入不懂核心业务的人手中。这不是技术债问题，而是技术战略主导权的错位 
+### 类型系统被重新定位为规划引擎的骨架
+Embabel 最反直觉的设计，是把类型系统从「编译期安全网」提升为「运行时路由结构」：动作的排序由 Java/Kotlin 方法的参数类型和返回类型决定，用户只需用注解标记方法即可声明动作，框架保证动作永远不会在缺少所需参数的上下文里被调用。相比之下，用 prompt 约束模型「永远用某类型」「永远遵守某规范」存在天然的对抗趋势——访谈明确指出训练数据体量太大，模型默认并不遵守这类指令。类型签名是机器强制执行的，prompt 约束是统计意义上大概率遵守的，两者的可靠性不在同一量级；这也解释了为什么「注解声明动作」比「prompt 工程堆约束」更值得作为企业 Agent 的默认手段。另一个反直觉发现是 Kotlin：语料虽少但质量高，反而成为 Coding Agent 表现最好的语言——说明训练数据量并不决定一门语言的工程可用性，热门语言不会因数据体量被固化，这反过来支撑了 Embabel「核心 Kotlin、对 Java 用户无缝」的选型逻辑 [Agentscope Java Harness Framework Enterprise Distributed](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agentscope-java-harness-framework-enterprise-distributed.md)。
 
-- **MCP 的局限性被低估**：Rod 指出"完美适合某 Agent 的工具很可能就是该 Agent 独有的"——这意味着 MCP 作为跨 Agent 共享工具规范的前提本身可能不成立。工具和 Agent 的紧耦合才是常态，MCP 作为催化剂而非一刀切方案的判断是务实的 
+### Alien Stack 与邻接性：选型是治理问题而非技术问题
+Rod 把语言之争的终结归结为「邻接性」原则：LLM 只是一次 HTTP 调用，在什么技术栈里就在什么栈里调用。真正的危险不是「用错语言」，而是为赶 AI 潮流引入 Alien Stack——真实案例里，Python 首席 AI 架构师入职一年都不知道公司 70% 的代码是 Java、30% 是 .NET。这里的伤害是双向的：工程上所有事情都变难，战略上核心业务的决策权被交到根本不懂业务的人手里，问题从技术债升级为治理结构错位。更深一层是那句「这可能已经是最后一代由人类主动选择的框架」：当技术选型越来越多由工具替人完成，你的代码库长什么样，将决定未来的 Agent 自动选中哪条技术路线——今天每一次邻接性选择，都会通过代码库这份「遗产」被后续的自动化选型指数级放大 [Agent Architecture Harness New Backend](https://github.com/QianJinGuo/wiki-public/blob/main/entities/agent-architecture-harness-new-backend.md)。
 
-- **规划层与 LLM 层的关注点分离**：Semantic Kernel、Crew.ai 让 LLM 决定下一步（弱类型集成，不可预测），而 Embabel 让 GOAP 规划器决定（类型安全，运行时决定性）——这代表了两种不同的架构哲学：LLM-as-controller vs LLM-as-step-executor 
-
-- **模型变强 ≠ harness 变弱**：11/12 月的模型跃迁是真实的，但 Rod 强调"模型变聪明 vs harness 变聪明不是冲突，是两个地方同时推进"——这意味着即使模型能力持续提升，确定性的规划层（Harness）依然有其不可替代的价值，尤其在企业级业务流程中 
+### 模型吃掉 harness 的边界，与 MCP 的真实定位
+面对「模型变强会不会消灭框架」的追问，Rod 的回答是把问题拆成两条并行推进的线：11/12 月那波剧烈跃迁是真实的，Claude Code 相比 4-5 个月前的工作方式也完全不同——「模型变聪明 vs harness 变聪明不是冲突，是两个地方同时推进」。但在自动化业务流程里，把规划从模型控制中外移出来仍有不可替代的价值；harness 侧的具体教训同样成立：Skills + CLAUDE.md 有效，但上下文膨胀到 50% 附近会出现注意力衰减，大上下文并不等于强遵循。对 MCP 的怀疑与这一逻辑同构：既然用 Java 方法暴露工具已经足够容易、行业已有 OpenAPI/Swagger/GraphQL 这类 API 规范，跨 Agent 的通用工具协议就未必是默认解——完美适合某 Agent 的工具很可能恰恰是该 Agent 独有的，MCP 是催化剂而非一刀切。这与他对 AI 能力边界的判断一致：模型擅长当批评者（来回讨论时能提出人没想到的问题），不擅长原创设计；5% 手写 + 95% AI 生成的公式能够成立，前提是人类牢牢掌握架构控制权，否则 Agent 会「愉快地加功能」直到设计退化。开源层面的推论同样冷静：纯支持模式一直困难，Coding Agent 时代会更难，Spring 挺过三轮收购靠的是「全职开发者修所有 boring bug」的完整产品式开发——这也是 Embabel「Apache 框架 + 上层知识工作者产品」路线的底层依据 [Model Context Protocol Mcp](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/model-context-protocol-mcp.md) [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering.md)。
 
 ## 实践启示
 

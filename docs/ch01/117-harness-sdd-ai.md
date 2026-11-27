@@ -1,8 +1,7 @@
 # 告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践
 
-> 📊 Level ⭐⭐⭐ | 8.7KB
+> 📊 Level ⭐⭐⭐ | 12.9KB
 
-> -> [原文存档](https://mp.weixin.qq.com/s/-_IBJFuXpvoqMJxL9oaEJQ)
 从微信文章 [告别“氛围编程”：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践](https://mp.weixin.qq.com/s/-_IBJFuXpvoqMJxL9oaEJQ) 提取。
 
 ### 主要章节
@@ -16,9 +15,26 @@
 - ####  步骤4：任务部署
 
 ## 深度分析
-「氛围编程」（Vibe Coding）的本质是用自然语言模糊了需求和实现之间的边界，这在探索性、原型化阶段有巨大价值，但当系统进入存量维护和复杂需求阶段时，这种模糊性就成了风险本身。Harness Engineering 和 SDD 的提出，本质上是在说：AI 辅助开发需要一套结构化的「确定性承重层」（Deterministic Load-Bearing Layer），而不能把所有决策都推给模型的随机生成能力。
-文章中「存量应用进行 Vibe Coding 风险非常高」这一判断揭示了一个被忽视的工程现实：对于已有大量业务逻辑、边界条件和异常处理的历史系统，AI 的介入必须非常谨慎。一个 5 万行的遗留系统，其「隐性规则」数量远超显式代码，任何未经 Harness 过滤的 AI 生成代码都可能与这些隐性规则产生冲突，结果是系统性的、难以追踪的回归 Bug。
-SDD（规范驱动开发）和 Harness Engineering 的关系值得深究：SDD 提供的是需求到规范的转化层（PRD → 设计知识库），而 Harness Engineering 提供的是规范到代码的治理层（设计知识库 → AI 执行）。这两者合在一起，构成了一条从业务需求到 AI 生成结果的完整链路。
+
+### 一、范式演进的真实动因：出码率幻觉与存量风险
+
+本文最有价值之处是诚实记录了一次“指标悖论”：团队半年内把 AI 出码率从 53% 提到 80%-90%，但访谈团队、核对 PMO 数据后发现提效并不明显——交付周期未缩短，开发者工作量也未减少。 作者借《人月神话》“没有银弹”解释：研发是提需、评审、设计、开发、测试、联调、上线的全链路过程，编码只占一段，优化编码 50% 或只带来 15% 整体提效，何况 AI 代码还会增加评审、调试与返工时间。 解法因此不是继续优化写码，而是让 AI 跨越环节边界、打通需求到部署的闭环。
+
+更直接的推动力是失败案例：AI 修改核心接口参数顺序，单测全过，上线后三个下游服务报错，排查一整天。 单测通过不等于系统正确——存量应用的隐式依赖与沉淀在代码里的业务知识不在测试覆盖内，这正是氛围编程的结构性风险，也解释了为何涉及十几个模块的重构超出了单次对话的能力边界。 加上自由发挥、多轮拉扯、长对话遗忘约束三类问题， 结论是：AI 编程必须从“个人技能”升级为“团队级工程能力”。
+
+### 二、SDD：规范成为唯一真实来源
+
+SDD 的颠覆点是文档与代码关系倒转：传统开发中 PRD 只是“指导书”、代码是唯一真理之源，文档注定过期脱节；SDD 中规范成为唯一真实来源，且被定义为可被 Agent 精确理解和执行的“意图代码”。工作流是四阶段闭环：Specify（结构化规范）→ Plan（AI 像编译器一样把规范“编译”成技术方案与任务拆解）→ Implement（Agent 逐任务生成代码）→ Validate（按规范自动生成并执行测试）。 落地细节里，Spec 生成刻意保留 HITL 干预——AI 主动提问澄清“用户登录”背后的登录方式、登录态、密码强度、失败处理等隐性知识；而验收标准必须可测试、无歧义：“3 秒内跳转首页并显示用户昵称”才算合格。 质量锚点由此从“AI 写得像不像”移到“规范是否可判定”。
+
+### 三、Harness：确定性治理层的四支柱
+
+Harness 的角色是不改变马的基因（模型本身），而是为它设计精密控制系统。四支柱中最“硬”的是架构约束：用物理手段强制分层——UI 层代码绝对禁止访问数据库层，违规代码连语法检查都过不了、提交前即被拦截，治理从提示词等“软约束”升级为“硬门禁”。 反馈回路与熵管理则坦承“AI 一定会犯错”，建设测试沙箱循环（写码→测试→失败→读日志→自我修正），并把人类修复错误的经验固化为新规则，确保同样的错误不犯第二次；人类监督完成角色迁移——审核员与环境设计师，处理那 5% AI 无法判断的模糊逻辑。 作者将其总结为范式转移：从“怎么跟 AI 说话”，到“AI 应该看到什么”，再到“AI 如何在受控环境中运行”。
+
+### 四、团队级落地：三层知识库与专家团执行
+
+落地骨架是三层知识库：项目层（架构、目录、技术选型，以顶层 README.md 为“单一事实来源”——不在文档里的信息对 AI 即不存在）、技术层（编码规范、最佳实践等跨项目沉淀）、资产层（可复用组件、历史 PRD、归档测试 Case），经 README 索引按需加载避免上下文过载；Memory 解决长周期开发的“上下文焦虑”。 执行采用专家团模式：按 Spec 拆解出有明确输入输出和验收标准的小任务，分配给五类内置角色 Agent；用户随时可介入，由 Experts Leader 在下一轮循环调整方向或取消任务。 部署经 Aone 的 MCP 工具由运维 Agent 触发 CI/CD、查询状态、处理异常，辅以数据库 Skill 做数据验证，打通“PRD→Spec→拆解→生成→测试→部署”全自动链路；结尾给出三个演进方向：更智能的 Spec 生成、更强的 Agent Teams、更完善的知识管理。
+
+**延伸阅读**：[Sdd Specification Driven Development Harness](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/sdd-specification-driven-development-harness.md)、[Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering.md)、[Vibe Coding Paradigm](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/vibe-coding-paradigm.md)、[从Vibe Coding到Agentic Engineering重构后台开发全流程](https://github.com/QianJinGuo/wiki-public/blob/main/entities/从vibe-coding到agentic-engineering重构后台开发全流程.md)
 
 ## 实践启示
 **团队引入 AI 辅助开发时**：第一步不是让所有人开始用 AI 写代码，而是建立设计知识库——把团队的设计决策、业务规则、边界条件用 AI 可消费的格式（而非自然语言文档）结构化存储。没有这个基础层，AI 生成的代码质量完全依赖模型能力，无法进行有针对性的治理。
@@ -59,6 +75,8 @@ SDD（规范驱动开发）和 Harness Engineering 的关系值得深究：SDD �
 - [深入理解 Claude Code 源码中的 Agent Harness 构建之道](https://github.com/QianJinGuo/wiki-public/blob/main/entities/深入理解-claude-code-源码中的-agent-harness-构建之道-v2.md)
 - [从Vibe Coding到Agentic Engineering：重构后台开发全流程](https://github.com/QianJinGuo/wiki-public/blob/main/entities/从vibe-coding到agentic-engineering重构后台开发全流程.md)
 - [AI Agent 工程师能力地图](https://github.com/QianJinGuo/wiki-public/blob/main/entities/ai-agent-engineer-capability-map.md)
+
+→ [原文存档](https://mp.weixin.qq.com/s/-_IBJFuXpvoqMJxL9oaEJQ)
 
 ---
 

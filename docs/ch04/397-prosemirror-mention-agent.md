@@ -1,6 +1,6 @@
 # ProseMirror @文档 mention：知识库 Agent 输入框的工程化实现
 
-> 📊 Level ⭐⭐⭐⭐⭐ | 10.3KB
+> 📊 Level ⭐⭐⭐⭐⭐ | 14.6KB
 
 > "对于知识库 agent 来说，@ 能力就好似厨师的调味盘 —— 允许用户在和 AI 协作时自由组织意图和上下文" —— vivo 互联网项目团队 Ding Junjie
 
@@ -120,6 +120,27 @@ Decoration.inline(range.from, range.to, {
 - **Suggestion 插件的组合层模式具有跨场景复用价值**：`createMentionPlugin`（业务组合层）+ `SuggestRenderer`（渲染层）的分离，让弹窗样式和交互逻辑与核心编辑器完全解耦。这套模式可以迁移到任何 @mentions、#tags、`{{var}}` 等触发式输入场景。 
 
 - **事务边界内完成确认是稳定性的最终保障**：`insertDocRef` 必须一次事务内完成"插入节点 + 移动光标"，不能拆分。任何跨事务的部分状态都会导致 undo/redo 错乱或光标丢失——这在复杂编辑器里是灾难性的。 
+
+### 复杂度的层级归属：DOM 方案为何规模化即失效
+
+四个坑并非孤立 bug，而是同一病灶的四个症状：状态没有权威模型、全部寄居在 DOM，"文档长什么样"只能靠反推获得。 `innerHTML` 纠正是破坏性重写，必然污染 undo/redo 栈； 光标与 IME 问题则源于外部表示和用户输入意图之间缺乏同步契约。 这类复杂度不会因换更顺手的 DOM 库而消失，只会在"状态散落"的前提下相互耦合、随规模放大——选型标准不是"能不能实现"，而是"复杂度被安放在哪一层"：抽象升级的本质是收回状态所有权。
+
+### 三个设计决策的共同形状：不变量声明进结构层
+
+三个决策共享同一结构：把不变量声明进模型，让框架强制执行，而非靠开发者运行时自觉。
+
+- **Schema 穷尽性**：`hardBreakNode` 被遗漏即换行不可预期，未声明的合法结构都是长期 bug 源——合法结构必须一次性声明完毕，不留运行时补丁余地。
+- **`atom: true`** 把"光标不得进入引用内部"升级为框架级强制，原子节点因此成为 docref 的安全边界。
+- **attrs 三元组是向前兼容设计**：`mtype` 当下只服务 doc 类型，却为 @任务/@VAPD 预留样式分发钩子，扩展 mention 类型时不必改动 schema。
+- **`parseDOM` 的 no-access 降级**把权限边界编码进序列化层：无权限时 id 留空、仅展示 label，引用不会出现"看着有效实则不可达"的悬空态。
+
+### 交互三阶段：被事务边界约束的状态机
+
+三阶段各自使用不同的持久层，恰好对应"越靠近用户越易变、越靠近文档越持久"的梯度。触发阶段在 `state.apply` 内跑 `findSuggestionMatch`，查询串（range/query/text）是纯内存态； 显示阶段用 `Decoration.inline` 把查询高亮挂在渲染层，`data-decoration-id` 双向绑定装饰与插件状态以锚定弹窗； 直到确认阶段才第一次触碰持久层：一次事务内插入原子节点并落定光标，两者不可拆分。 异步竞态（连续输入时旧响应晚到）同样收敛在事务边界内：debounce + 请求 token 校验 + 边界内更新，已收敛状态不被过期响应改写。
+
+### 插件中的插件：能力分层的最小完备切片
+
+Suggestion 不是编辑器核心能力，而是 `Plugin` 之上的二次组合：Plugin 出匹配与装饰，`createMentionPlugin` 做业务编排，`SuggestRenderer` 以一组生命周期回调（onStart/onUpdate/onExit/onKeyDown 等）承接弹窗 UI，两层间唯一几何接口是 `clientRect()`。 由此形成三层契约：核心机制（Plugin）/ 业务组合（mentionPlugin）/ 框架无关渲染（renderer）。 5 条教训据此泛化为任何输入层 harness 的通用检查单：原子节点+不可变事务防非法编辑， IME 组合期冻结底层写入， 临时态永不持久化， 竞态在边界内收敛， 易变态与持久态物理分层。 与 [Harness 工程 7 层框架](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering-7-layers-framework.md) 对照，这正是分层原则在输入层的最小完备切片：每一层只对相邻层负责。
 
 ## 实践启示
 - **构建 Agent 输入层时，Schema 设计优先于交互实现**：先穷举所有合法节点类型（textNode / 原子引用节点 / hardBreakNode），再实现交互。先把"能放什么"定义清楚，再解决"怎么放进去"的问题。这个顺序反了会导致严重的运行时稳定性问题。 

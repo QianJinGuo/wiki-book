@@ -1,6 +1,6 @@
 # How LLMs Actually Work: 0xkato Transformer Walkthrough
 
-> 📊 Level ⭐⭐⭐ | 8.9KB
+> 📊 Level ⭐⭐⭐ | 11.9KB
 
 > 原文存档：[原文存档](https://www.0xkato.xyz/how-llms-actually-work/)
 
@@ -89,20 +89,17 @@
 
 ## 深度分析
 
-### 1. "LLM 如何工作"的教育必要性
-在 LLM 被广泛使用但很少被理解的当下，0xKato 的拆解填补了一个关键空白：大多数 LLM 用户不了解 tokenization、attention、sampling 的工作原理，导致错误的使用预期和不合理的信任/不信任。
+### 1. 从 token ID 到语义几何：两步"赋予意义"的机制链
+0xkato 的 walkthrough 把"模型如何理解文字"拆成两个可分离的步骤，这条机制链是全文的主轴。第一步是 tokenization：模型从不直接读文字，读的是整数 ID，每个 ID 指向固定 vocabulary 中的一个条目，现代 LLM 的 vocabulary 通常在数万到数十万条目之间。token 通常不是整词而是 subword——整词 vocabulary 太大且无法泛化到新词，字符级 vocabulary 太小、迫使模型从零学习最简单的模式，subword 是两者之间的效率折中，最常见的片段成为单 token，罕见词由小片段组合。第二步是 embedding：ID 本身只是 embedding matrix 的行索引，本身无任何含义；模型查表取出一行 hidden size 长度的向量（7B 级模型每 token 4096 个数），语义相近的 token（king 与 queen、Paris 与 France）在这个空间中彼此邻近，而这种几何结构不是硬编码的，完全从"预测文本"这一训练目标中涌现。值得注意的是查表是逐 token 独立进行的：每行向量只由该 token 的 ID 决定，与序列中的邻居无关，这一设计为下一步的位置缺口埋下伏笔。向量算术（king − man + woman ≈ queen）只是"有时"有效——几何携带真实语义结构，但不是可靠的推理接口。
 
-### 2. Tokenization 是理解 LLM 行为的第一把钥匙
-LLM 不是"读文字"而是"读 token"——这一事实解释了 LLM 的许多"奇怪"行为：对拼写变化的敏感度、对某些语言的处理劣势、对重复 token 的偏好。理解 tokenization 是理解 LLM 能力边界的前提。
+### 2. 位置缺口：attention 天生不知道词序
+walkthrough 最精确的一处澄清是：embedding 阶段的向量与位置完全无关——"dog" 的向量无论出现在 prompt 第一个词还是第五个词都相同，这是结构性缺陷而非实现细节，原文明确称之为 "a problem"。plain self-attention 没有内置的词序表示，没有位置信号就无法知道 "dog" 在 "bites" 之前还是之后，因此必须把每个 token 的位置注入计算过程。Vaswani 2017 的方案是给每个 position 分配独立的数字模式（由不同频率的 sine/cosine 波生成），在其余处理开始前直接加到 embedding 上，使 "dog" 在位置 1 和位置 100 的表示不再相同。原始存档恰好在此处截断（86 行）；RoPE 等现代旋转方案仅记载于本实体上文精要，本节不对存档之外的细节作引证。
 
-### 3. Sampling 温度的工程含义
-温度参数不只是"创造性旋钮"——它控制的是概率分布的熵，直接影响输出的多样性和可重复性。温度=0 时输出确定但保守，温度高时输出多样但不可控。工程实践中应根据任务类型而非"感觉"设定温度。
+### 3. 随文澄清的三个常见误解
+其一是 strawberry 计数失败：LLM 数错 "strawberry" 里 R 的个数，不是 counting 能力缺陷，而是模型只操作恰好拼出该词的 token ID、从不直接接触字母。其二是"模型读文字"的直觉：从 tokenizer 到 embedding 的整条链路都建立在整数与查表之上，这是解释模型对拼写变化与多语言覆盖差异的前提。其三是"所有模型 tokenizer 相同"：GPT 系用 BPE 变种、LLaMA 系用 SentencePiece，选择影响 compute 成本（更少 token = 更少计算）与多语言覆盖，但基本形态一致——文本进、整数出。三个误解共享同一个根源——模型的全部操作对象是整数 ID 而非字符串——这也是 walkthrough 选择以 tokenization 作为叙事起点的深层理由：起点选错，后续每一层的直觉都会偏。
 
-### 4. Attention 机制的可解释性价值
-Attention 权重的可视化是理解"模型在看什么"的最佳工具——它不是黑箱，而是可审查的加权图。对安全敏感场景，attention 热力图可以揭示模型是否在关注正确的输入部分。
-
-### 5. 从机制理解到使用策略
-理解 LLM 的工作机制直接导向更好的使用策略：知道 tokenization 的特性后可以优化提示词格式、知道 sampling 的特性后可以调参、知道 attention 的特性后可以设计上下文结构。
+### 4. 对上下文长度行为的含义
+把机制链接到 context 行为上：由于 attention 本身无序、位置完全依赖注入的 per-position 模式，模型在长序列上的表现由位置编码方案的外推特性决定——这是位置编码一节与 context window 议题的直接接口，也解释了为何不同模型在长上下文下表现分化。同时，pipeline 后段在原文目录中只有定位性描述——multi-head 并行追踪多种关系、FFN 承载大部分存储结构、residual stream + layer norm 使深层堆叠可训练——说明该文的核心价值是建立"每一节对应模型哪个部件"的心智地图而非逐机制展开；读者据此可对照 model cards，把各家模型的差异归位到训练数据、scale、configuration 与 post-training。
 
 ## 实践启示
 

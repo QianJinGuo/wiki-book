@@ -1,6 +1,6 @@
 # Intelligence Per Dollar
 
-> 📊 Level ⭐ | 6.2KB
+> 📊 Level ⭐⭐⭐ | 8.4KB
 
 ## 概要
 
@@ -36,13 +36,21 @@ Every layer in the stack now has to price the same way the customer thinks : per
 
 ## 深度分析
 
-- **双维度基准测试正在成为行业标准** — Microsoft 在模型发布卡片上新增"平均 token 用量"指标，标志着基准测试从单一性能维度转向"性能 + 成本"双维度评估。这一转变意味着模型评估范式的根本性变化：不再仅问"哪个模型最强"，而是同时问"哪个模型性价比最高"。
+### 基准测试的双维度化：从"性能单维"到"性能×成本"矩阵
 
-- **补贴时代终结，效率竞争开启** — 文章指出 AI 补贴时代（token 价格人为压低）已结束，tokenmaxxing（通过超额 token 消耗换取基准测试高分）的策略正在失效。即使是最有价值的企业（Uber、Salesforce）也已感受到 AI 成本的压力，被迫限制使用量或冻结招聘。这标志着 AI 应用从"技术领先"向"经济理性"的转型。
+Microsoft 在模型发布卡片上新增"平均 token 用量"指标，是基准测试范式转变的标志性事件：模型评估不再只有"谁跑分最高"一条坐标轴，而是同时回答"达到这个智能水平付出了多少 token 代价"，且这一指标大概率会扩散为行业标准。其新模型 MAI-Code-1-Flash 在 SWE-Bench Verified 上拿到 71.6 分，消耗的 token 却仅约为 Claude Haiku 4.5 的三分之一——同等智能、约三倍效率。基准测试从此被放到两个维度上度量：整体性能，以及达成该智能的成本。厂商自报指标并非孤例，独立基准平台 Artificial Analysis 事实上已经在按这一逻辑给模型排名，"性能×成本"的二维读法与 [Agent Evaluation Benchmark Frameworks](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-evaluation-benchmark-frameworks.md) 的评估框架演化方向一致：成本效率正在成为评估体系的一等公民维度。
 
-- **智能单价成为买方核心决策维度** — 文章揭示了一个关键转变：企业不再询问"模型性能如何"，而是问"每美元能买到多少智能"。Artificial Analysis 的 Intelligence Index 显示，GPT 5.5 和 Claude Opus 4.8 在性能指数上仅差 1 分（约 60 分），但运行成本相差 40%（$3,357 vs $4,685）。这意味着同等的智能输出，更便宜的模型将获得更大市场份额。
+### 补贴时代终结：tokenmaxxing 失效与头部企业的成本硬约束
 
-- **层级定价逻辑的根本性重构** — 从模型层到应用层，定价逻辑正在从"按 token 计费"向"按结果计费"转变。模型公司竞争两个维度，应用层则进一步竞争"每个关闭的工单、每个合并的 PR、每个解决的客服案例"的实际成本。这种转变要求整个技术栈重新思考其商业模式。
+文章把"平均 token 用量"的出现解读为补贴时代（token 价格被人为压低）终结的又一个信号：靠超额 token 消耗刷高基准分的 tokenmaxxing 策略正在失去空间。成本约束已经真实作用于最有实力的企业——Uber 在四个月内烧穿员工 AI 预算后被迫封顶支出，Salesforce 为 Anthropic token 支出 $300M 并冻结工程招聘；Microsoft 内部部门的 Claude Code 用量超出预算后，直接取消了许可证并把开发者转向 GitHub Copilot CLI。三个案例指向同一结论：即便全球市值最高的公司，也无法为每一个可以想到的使用场景采购最先进的智能。这意味着 AI 应用正从"技术领先"叙事转向经济理性，[Ai Cost Optimization Framework](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/ai-cost-optimization-framework.md) 所主张的成本治理思路由此从可选优化变为生存必需。
+
+### 智能单价：买方唯一真正关心的问题
+
+双维度基准回答的是买方的唯一核心问题："我的每一美元能买到多少智能？"。Artificial Analysis 的 Intelligence Index 提供了一个干净的对照实验：GPT 5.5 与 Claude Opus 4.8 的智能指数都落在 60 分上下、彼此相差不到 1 分，但跑完同一指数分别花费 $3,357 与 $4,685——同样的答案，后者贵 40%。当性能不可区分时，价格就成了唯一的区分维度：同等智能输出下，更便宜的模型将系统性地拿走市场份额。模型选型因此从"跑分对比"重构为"每美元智能"的性价比计算，这与 [Context Window Economics](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/context-window-economics.md) 的 token 经济学视角同构——单价乘以用量才是真实总成本，只看单价或只看跑分都会误判。
+
+### 定价逻辑沿技术栈逐层重构
+
+竞争压力正沿技术栈向上传导：模型公司必须在性能与成本两个维度上同时竞争；应用层则上升一级，按"每个结果"竞争——关闭一张工单、合并一个 PR、解决一个客服案例各自的真实美元成本。换句话说，栈中每一层都必须用客户思考的方式定价：按结果计费，而不是按 token 计费。按结果定价对买方而言是把 token 效率的不确定性转移给供应商，对供应商而言则是把"模型用得是否高效"内化为自身的毛利问题——整个技术栈的商业模式因此被重新定价，效率竞争取代补贴竞争成为主旋律。
 
 ## 实践启示
 

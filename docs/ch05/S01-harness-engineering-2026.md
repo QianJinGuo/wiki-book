@@ -20,7 +20,7 @@
 
 ## 2026 年的三个收敛点
 
-**第一，循环先于智能。** [Loop Engineering 半年实战](046-loop-engineering-claude-ship)与 [核心模式梳理](032-harness-engineering)都把"设计替你写提示词的循环"放在收益第一位：先写刹车（验证、预算、人工接管点），再写循环体。顺序相反的团队（先堆智能再补刹车）在本章案例里反复付出返工代价。
+**第一，循环先于智能。** [Loop Engineering 半年实战](046-loop-engineering-claude-ship)与 [核心模式梳理](031-harness-engineering)都把"设计替你写提示词的循环"放在收益第一位：先写刹车（验证、预算、人工接管点），再写循环体。顺序相反的团队（先堆智能再补刹车）在本章案例里反复付出返工代价。
 
 **第二，规格成为控制面。** [Claude 官方学习资料](008-prompt-harness-claude)与 [TRAE 的 Harness 指南](011-trae-harness-engineering)不约而同把规格（spec / SDD）当作 Harness 的静态一半：提示词负责"这一次怎么做"，规格负责"这类任务永远怎么做"。动态循环 + 静态规格，构成运行时控制的两个把手。
 
@@ -28,7 +28,7 @@
 
 ## 悬而未决
 
-- **Harness 会不会被模型吸收？** [Claude Code 深度理解](004-claude-code-harness-deep-understanding)记录了一种预期：上下文工程终将内化到模型里，Harness 退化为薄壳。而 [Cloudflare Flue 平台](024-bringing-more-agent-harnesses-and-frameworks-to-cloudflare)的实践走向反面——Harness 组件化、平台化，越做越厚。本章编者按当前的证据倾向前者影响小模型、后者影响生产系统，两条线将长期并行。
+- **Harness 会不会被模型吸收？** [Claude Code 深度理解](004-claude-code-harness-deep-understanding)记录了一种预期：上下文工程终将内化到模型里，Harness 退化为薄壳。而 [Cloudflare Flue 平台](023-bringing-more-agent-harnesses-and-frameworks-to-cloudflare)的实践走向反面——Harness 组件化、平台化，越做越厚。本章编者按当前的证据倾向前者影响小模型、后者影响生产系统，两条线将长期并行。
 - **评测缺位**：各信源都声称自己的循环更好，但没有一个跨 Harness 的公共基准。谁先补上这一块，谁就定义下一阶段的议程。
 
 ---

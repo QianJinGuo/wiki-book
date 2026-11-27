@@ -1,6 +1,6 @@
 # MAC（multi-agent-coding）：Skills + Hooks 两层 Harness —— 完全委托 0-20% 的解法
 
-> 📊 Level ⭐⭐⭐ | 16.9KB
+> 📊 Level ⭐⭐⭐ | 21.6KB
 
 ## MAC（multi-agent-coding）：Skills + Hooks 两层 Harness
 > "**完全委托的前提，不是更强的模型，是更可靠的环境。**"
@@ -196,15 +196,21 @@
 
 ## 深度分析
 
-- **MAC 的本质是"概率+确定"双层叠加架构**：Skills（20 个工作流 SOP）负责引导 AI 做正确的事，但这是概率性的——AI 会按 SOP 走，但不是每次都完美；Hooks（挂在固定事件上的触发机制）则保证关键的事一定发生（上下文必须在 / 失败必须被记录 / 知识必须积累），两者缺一不可 
+### 双层分工：Skills 给工作流以形状，Hooks 给 Harness 以地基
 
-- **"完全委托 0-20%"的根因是信任缺失，不是模型能力**：Anthropic 报告显示工程师已用 AI 处理 60% 工作，但能完全委托的只有 0-20%——差距在于人不知道 AI 在没人盯着时会做什么、会不会踩之前踩过的坑、出了问题能不能找到。MAC 的解法不是提升模型能力，而是建立有迹可循的基础设施 
+MAC 的架构判断首先把"引导"与"保证"拆成正交的两层，两者回答的是不同的问题。Skills 侧是 20 个按场景覆盖完整 PDCA 循环的工作流 SOP：任务从哪来、怎么拆解、谁执行、怎么验收、失败怎么修正、最终怎么合并——这条链上每一步都有逻辑、有判断、有需要人出现的节点，不是几行规则能写清楚的。所以它以文档形态存在，靠 AI 理解后跟随执行，人只在 Planning（决定做什么，写验收标准，这一步不交给 AI）与 Verify（逐条核对验收标准，输出 PASS 或 FAIL 的确定结论）两个节点保留判断。Hooks 侧则完全脱离语言通道：session 打开注入上下文、工具失败落地记录、session 关闭提炼知识——三者都是挂在固定事件上绕过 AI 直接运行的代码，触发与否和 AI 当次表现无关。于是 Skills 回答"做什么、按什么顺序做"，Hooks 回答"哪些状态转换必须无条件发生"。这个分工解释了为什么文章把 Skills 称为"工作流的形状"而把 Hooks 称为"Harness 的地基"：形状可以被遵循得时好时坏，地基必须永远在。这也是 [Coding Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/coding-harness-engineering.md) 中"流程文档化 + 事件代码化"组合的具体形态——SOP 管认知路径，事件钩子管状态一致性。
 
-- **Hooks 改变了委托的性质**：不是"赌 AI 这次会不会跑偏"，而是"有能力在它跑偏的时候发现，并且不重蹈覆辙"——失败有自动捕获，上下文有跨 session 持久，每次 session 结束都有活动记录，AI 在透明的基础设施里运行 
+### 叠加的必然性：在概率之上封一层确定性
 
-- **MAC 框架与项目知识分离是关键设计**：MAC 本身不知道任何项目业务细节，所有项目状态存在项目自己的 `.claude/context/` 目录里——框架升级时项目知识不受影响，项目迁移时框架不需要跟着走，这让 MAC 成为真正可复用的 Harness，而非某个项目的专属脚手架 
+两层不是并列的两个选项，而是互补的依赖关系，文章用一句话给出论证核心：LLM 的指令遵从是概率性的，在概率性之上堆更好的 prompt，得到的还是概率性的可靠——必须转向在 prompt 层之上加确定性约束。Skills 的实际表现恰好是这一论断的实证："每次 session 开始先读任务列表"它会做，但不是每次；"出了问题记录一下"状态好的时候记、状态差的时候忘；用语言让 AI 记住一件事，得到的是概率而非保证。反方向同样成立：Hooks 只有确定性而没有判断力，它能保证上下文注入一定发生，却无法替 AI 决定今天做什么、模块怎么拆——确定性机制天然不适合承载含判断的工作流。因此单用 Skills 得到"通常正确但偶有遗漏"，单用 Hooks 得到"必然发生但不知道该发生什么"，只有 Skills 引方向、Hooks 兜住关键状态转换，两层叠在一起 Harness 才成立。值得注意的是两层的失效模式不对称：Skills 的失效是"这次没做，下次可能做"（可重试、可被 Hooks 的记录捕获），Hooks 的失效是代码 bug（确定性的坏，必须靠测试与版本管理治理）——所以 MAC 把 Hooks 事件面刻意收窄到三件不能靠概率的事（上下文必须在 / 失败必须被记录 / 知识必须积累），用最小确定性面换取最大可靠度。这是 [Harness Engineering](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/harness-engineering.md) 一般原则在 MAC 上的具体化，也是 [100 Line Vs Managed Harness Tradeoff](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/100-line-vs-managed-harness-tradeoff.md) 权衡的一个实例：确定性覆盖面越大，维护成本越高。
 
-- **Planning + Verify 是人在环上的两个节点**：人只在"决定做什么"和"确认做对了"两个节点出现，中间全部 AI 自驱——这体现了 Orchestrator（编排者）模式，人从 Implementer（实现者）转向协调者角色 
+### 委托经济学：0-20% 是信任折价，Hooks 改变折价的性质
+
+报告的数据结构值得细读：工程师已经在用 AI 处理 60% 的工作，能"完全委托"的却只有 0-20%——中间的巨大缺口不是能力缺口，而是"不敢离开"的信任折价：不知道 AI 在没人盯着时会做什么、会不会踩之前踩过的坑、出了问题能不能找到在哪。MAC 的策略不是试图一次性消除这个折价——文章明说"这不会让 0-20% 一夜变成 100%"——而是改变折价的性质。失败自动捕获、上下文跨 session 持久、session 关闭留活动记录之后，委托从"赌 AI 这次会不会跑偏"变成"有能力在它跑偏的时候发现，并且不重蹈覆辙"。用委托经济学表述：Hooks 把单次委托的风险敞口从不可观测的整体失败，压缩为可观测、可归因、不重复的失败；信任因此不再依赖对模型每次输出的预判，而是建立在对基础设施的机制性信心上。连带效应是人的审计成本结构改变：Verify 从全程盯梢降为对 PASS/FAIL 确定结论的核对，参与方式从"人在环中"变为"人在环上"——这正是 [Orchestrator Worker Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/orchestrator-worker-architecture.md) 编排者模式的经济学含义，人退出执行循环、保留判断与验收，单位监督成本随自动化记录基础设施的完善而下降。
+
+### 框架无状态：Harness 与项目知识分离的设计收益
+
+MAC 本身不知道任何项目的业务细节，也不存储任何项目状态：当日任务、模块边界、历史踩坑、技术约定全部放在项目自己的 `.claude/context/` 目录里，MAC 的 Hooks 和 Skills 读的是这些文件，干的是这些文件描述的事情。这个分离同时解开两个耦合：框架升级时项目知识不受影响，项目迁移时框架不需要跟着走——MAC 由此从某个项目的专属脚手架变成真正可复用的 Harness。从知识架构角度看，这是"框架 = 机制，项目 = 记忆"的切分：机制承载"事情怎么被保证"，记忆承载"这个项目 specific 的事实与历史"，两者变化节奏不同（框架随工程实践演化，项目知识随业务演化），耦死在一起会让任何一方升级都拖累另一方。这与 [Agent Memory Architecture](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-architecture.md) 的记忆外置思路和 [Agent Memory Substrate Three Layer](https://github.com/QianJinGuo/wiki-public/blob/main/concepts/agent-memory-substrate-three-layer.md) 的分层承载相呼应——项目目录成为 agent 的持久记忆层，session 则是无状态的消费者。局限同样要记下：20 个 SOP 的具体内容、Hooks 的事件类型与触发器接口、0-20% 实际提升到多少，文章均未展开，报告引用本身也待验证。
 
 ## 实践启示
 
